@@ -1,7 +1,7 @@
 ---
 title: Tencent Hy3 Preview
 created: 2026-05-25
-updated: 2026-05-27
+updated: 2026-07-07
 type: entity
 tags:
   - entity
@@ -16,7 +16,7 @@ tags:
   - coding-agents
   - openrouter
   - economics
-sources: [raw/articles/2026-05-20_tencent-hy3-preview.md, https://www.tencent.com/en-us/articles/2202320.html, raw/articles/minimaxir.com--2026-05-openrouter-hy3--e38b0f2d.md]
+sources: [raw/articles/2026-05-20_tencent-hy3-preview.md, https://www.tencent.com/en-us/articles/2202320.html, raw/articles/minimaxir.com--2026-05-openrouter-hy3--e38b0f2d.md, raw/newsletters/2026-07-06-tencent-s-open-model-crashes-the-frontier.md]
 ---
 
 # Tencent Hy3 Preview
@@ -109,6 +109,36 @@ By May 2026, aggregate token consumption on OpenRouter was **98% input tokens, 2
 - **Who is driving Hy3 usage?** No app, no community, no public discourse — yet top of the rankings for weeks
 - **Why SiliconFlow only?** Despite open weights, no other providers have picked up Hy3
 - **Will DeepSeek's cache advantage shift usage patterns?** The gap between stated and effective pricing is unusually large
+
+## July 2026 Update: Hy3 Goes Open Frontier
+
+Tencent released the official Hy3 model under **Apache 2.0** license in July 2026, with significant enhancements:
+
+### Technical Specifications
+
+| Feature | Specification |
+|---------|---------------|
+| Architecture | Mixture-of-Experts (MoE) |
+| Total parameters | 295B |
+| Active per token | 21B |
+| Experts | 192 / top-8 routing |
+| GQA | Yes |
+| Context window | 256K tokens |
+| MTP layer | 3.8B |
+| License | Apache 2.0 |
+
+### Inference Optimization
+
+- **Day-0 vLLM support**: Tencent production kernels upstreamed to vLLM for immediate availability
+- **Mixed-length decode acceleration**: Up to **2.95×** speedup on mixed-length batches
+- **Nous Portal**: 2 weeks free access via Nous Portal for evaluation
+- Available through OpenRouter and other inference providers
+
+### Significance
+
+Hy3 is the first open-weight model to reach near-frontier capability levels, competing with Claude Opus 4.8 and DeepSeek V4 Pro on agentic tasks. The Apache 2.0 license and day-0 vLLM support signal Tencent's strategy of positioning Hy3 as an infrastructure foundation model rather than a proprietary product.
+
+Source: raw/newsletters/2026-07-06-tencent-s-open-model-crashes-the-frontier.md
 
 ## Related
 

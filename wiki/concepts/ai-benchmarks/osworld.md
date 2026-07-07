@@ -2,7 +2,7 @@
 title: "OSWorld"
 type: concept
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-07
 tags:
   - benchmark
   - evaluation
@@ -10,6 +10,8 @@ tags:
   - multimodal
 sources:
   - https://arxiv.org/abs/2404.07972
+  - https://osworld-v2.xlang.ai/
+  - raw/newsletters/2026-07-06-import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation.md
 related_concepts:
   - concepts/ai-benchmarks/windowsagentarena
   - concepts/ai-benchmarks/androidworld
@@ -53,7 +55,19 @@ OSWorld comprises **369 tasks** across three operating system environments:
 - **Human performance**: ~72% accuracy
 - **Best agent performance**: ~12% accuracy (as of initial publication)
 - **Massive human-agent gap**: The 60-point gap between human (72%) and best agent (12%) performance established OSWorld as one of the most challenging computer-use benchmarks
-- **Multimodal requirement**: Agents must process real desktop screenshots, making this a true multimodal evaluation
+|- **Multimodal requirement**: Agents must process real desktop screenshots, making this a true multimodal evaluation
+
+## OSWorld 2.0
+
+In July 2026, OSWorld 2.0 was released with significant updates:
+
+- **108 long-horizon tasks** with a median completion time of **1.6 hours** for skilled humans
+- **31 self-hosted websites** enabling realistic web application testing
+- **69.6%** of tasks estimated to take a skilled human user more than **one hour**
+- Real-world software integrations: **Slack, LinkedIn, Shortcut, REAPER, MuseScore, WPS, GitLab, Overleaf, LabPlot, Zotero, AWS**
+- Best agent performance: **Claude Opus 4.8** reaches only **20.6% binary accuracy** — demonstrating the massive gap between human and AI capability on long-horizon computer tasks
+
+Source: [osworld-v2.xlang.ai](https://osworld-v2.xlang.ai/), raw/newsletters/2026-07-06-import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation.md
 
 ## Related Benchmarks
 

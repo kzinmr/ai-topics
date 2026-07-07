@@ -2,12 +2,13 @@
 title: "Remote Labor Index"
 type: concept
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-07
 tags: [benchmark, evaluation, ai-agents]
 sources:
   - title: "Remote Labor Index: Measuring AI Automation of Remote Work"
     arxiv: "2510.26787"
     year: 2025
+  - raw/newsletters/2026-07-06-import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation.md
 related_concepts:
   - "[[gdpval]]"
   - "[[theagentcompany]]"
@@ -49,7 +50,21 @@ The Remote Labor Index is built around real remote job specifications:
 - Jobs requiring sustained interpersonal interaction, creative judgment, or deep domain expertise remain the most resistant to automation
 - The trajectory of automation capability is not uniform across occupations — some are improving rapidly while others show slow progress
 - Partial automation (AI assists human workers) is achievable across a much broader range of occupations than full automation
-- The benchmark reveals that the gap between AI capability on standardized tests and real job performance remains significant
+|- The benchmark reveals that the gap between AI capability on standardized tests and real job performance remains significant
+
+## July 2026 Update
+
+CAIS and Scale Labs published the July 2026 Remote Labor Index results, detecting a significant increase in AI automation capability:
+
+| Model | Success Rate |
+|-------|-------------|
+| **Claude Fable 5** | **16.1%** |
+| Opus 4.8 | 8.3% |
+| GPT-5.5 | 6.3% |
+
+- The frontier has more than **quadrupled** (from 2.5% at launch in October 2025 to 16.1% in July 2026) in under **eight months**
+- Tasks include ring design, advertisement video creation, floor plan & rendering
+- Source: raw/newsletters/2026-07-06-import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation.md
 
 ## Related Benchmarks
 

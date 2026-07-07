@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-07-05
+updated: 2026-07-07
 tags:
   - model
   - claude-fable-5
@@ -32,6 +32,9 @@ sources:
   - raw/articles/2026-06-12_anthropic_fable-mythos-access-suspension.md
   - raw/articles/simonwillison.net--2026-jun-26-dean-w-ball--bd13fd7b.md
   - raw/articles/2026-06-27_getsuperintel_fable-5-kill-switch-two-weeks-on.md
+  - raw/newsletters/2026-07-06-import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation.md
+  - raw/newsletters/2026-07-06-fable-5-is-back-stop-wasting-it-on-tasks-sonnet-can-do.md
+  - raw/newsletters/2026-07-07-ainews-the-field-guide-to-fable.md
 ---
 
 # Claude Fable 5
@@ -411,6 +414,121 @@ The Fable 5 redeployment marks the end of an ~18-day global suspension — the f
 The redeployment also highlighted the tension between safety-driven false-positive costs and developer productivity — a trade-off that Anthropic acknowledged will require ongoing attention.
 
 Source: raw/articles/simonwillison.net--2026-jun-30-anthropic--7acc1e0a.md and the Anthropic official statement (https://www.anthropic.com/news/redeploying-fable-5).
+
+## Post-Redeployment: GPU Kernel Generation
+
+Fable 5 demonstrated a remarkable capability to generate GPU kernels via its own code generation, achieving an **18.71× CUDA speedup** on the KernelBench-Mega benchmark running on an RTX PRO 6000 Blackwell GPU, compared to an optimized PyTorch baseline.
+
+| Model | Speedup | Language |
+|-------|---------|----------|
+| **Fable 5** | **18.71×** | CUDA |
+| Opus 4.8 | 14.4× | Triton |
+| GLM-5.2 | 11.14× | Triton |
+| GPT 5.5 | 4.34× | Triton |
+
+Key technical details:
+
+- **`torch.profiler` analysis** shows exactly **one cooperative kernel launch** per decoded token — an unprecedented degree of kernel fusion
+- This is the **first genuine megakernel** ever submitted to KernelBench-Mega, and the **fastest** on the leaderboard
+- The megakernel approach fuses operations that would normally require dozens of separate kernel launches into a single, optimized GPU kernel
+
+**Implications for RSI (Recursive Self-Improvement):**
+
+- The ability to write optimized GPU kernels creates a path for the model to **optimize its own inference path**
+- A model that can generate CUDA kernels for matrix operations, attention mechanisms, and activation functions can potentially accelerate its own forward pass
+- This closes one of the key loops needed for genuine recursive self-improvement: the model can now improve the hardware-level efficiency of its own computation
+- Combined with Fable 5's existing software engineering capabilities, this represents a significant step toward self-improving AI systems
+
+*Source: [Import AI 464](raw/newsletters/2026-07-06-import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation.md)*
+
+## Post-Redeployment: Thariq Shihipar's Field Guide to Fable
+
+Thariq Shihipar delivered a keynote at AINews titled *"The Field Guide to Fable"*, providing practical guidance for developers working with Fable 5 based on extensive hands-on experience. The talk covers several key insights:
+
+### Unhobbling Claude
+
+The single most important insight: **constraints are often imposed by the harness/tooling, not the model itself.** Removing unnecessary constraints unlocks dramatically better performance:
+
+- **Context limits**: Many developers artificially restrict context, assuming the model can't handle large contexts. Fable 5 thrives with full context
+- **Restrictive system prompts**: Overly narrow system prompts that micromanage behavior can actually reduce output quality
+- **Overly narrow tool definitions**: Giving the model too few or too restricted tools prevents it from showing its full capability
+
+The key principle: identify what constraints come from the user/tooling versus what the model genuinely needs, and remove the former.
+
+### Finding Your Unknowns (Blindspot Pass)
+
+Shihipar recommends a technique called the **Blindspot Pass**: explicitly tell Claude to analyze what it's **NOT** doing — what approaches, design directions, or possibilities it hasn't considered. This reveals:
+
+- Alternative implementation strategies the user hadn't thought of
+- Entirely different design directions that might be more effective
+- Edge cases and failure modes that were invisible during initial planning
+
+This technique is particularly effective with Fable 5 because the model's broader knowledge base means its "blindspot analysis" draws from a wider range of possible approaches.
+
+### Dealing with Grief
+
+A notable psychological observation: **what used to take weeks is now done in hours.** This creates a form of grief for developers who derived satisfaction from solving hard problems manually:
+
+- The traditional satisfaction of overcoming complex technical challenges through sustained effort is diminished
+- Developers must psychologically adapt to the loss of the struggle that made hard-won solutions meaningful
+- The role shifts from "solver of hard problems" to "director of automated solutions"
+- This is a genuine emotional challenge that the industry has not yet openly addressed
+
+### "Tradeoffs Are Not Real"
+
+With Fable 5's advanced capabilities, **traditional engineering tradeoffs no longer apply** in many cases. The common belief that you must choose between quality, speed, cost, and user experience is often false:
+
+- **Higher quality** and **faster delivery** can be achieved simultaneously
+- Better user experience often costs **less** (fewer iterations, less rework)
+- The model's capability lets you escape the zero-sum thinking of traditional software engineering
+
+Shihipar's advice: stop optimizing for tradeoffs — optimize for what the model can actually do, and let the tradeoffs resolve themselves.
+
+### HTML's Unreasonable Effectiveness
+
+HTML rendering as a **universal output format for agents** offers surprising advantages:
+
+- HTML is the most widely supported rendering format across platforms
+- It combines structure, styling, and interactivity in a single document
+- Agents can render complex visual layouts, data visualizations, and interactive UIs without specialized tooling
+- HTML output is debuggable, inspectable, and modifiable by both humans and AI
+
+*Source: [AINews: The Field Guide to Fable](raw/newsletters/2026-07-07-ainews-the-field-guide-to-fable.md) — YouTube keynote by Thariq Shihipar*
+
+## Post-Redeployment: Fable 5 Return Aftermath & Sonnet Guidance
+
+Following the redeployment of Fable 5 on July 1, 2026, several important developments emerged regarding the model's positioning and usage guidance:
+
+### Updated Safety Filter
+
+The redeployed Fable 5 includes an updated safety classifier with a **99% block rate** for the bypass technique reported during the suspension. When triggered, the safety filter falls back to **Opus 4.8** — providing a downgraded but functional experience rather than an outright refusal.
+
+### US Government Pre-Release Access Deal
+
+As part of the redeployment terms, Anthropic agreed to an **industry-first pre-release access deal** with the US government. This arrangement provides government agencies with early access to future model capabilities before public deployment — a significant structural change in how frontier AI models are governed.
+
+### Model Usage Guidance
+
+Per Aakash's analysis, the model landscape after redeployment has shifted:
+
+- **Sonnet 5 is now the default for free accounts** — Anthropic's most cost-efficient frontier model
+- **Recommendation for developers:**
+  - Use **Sonnet 5** for everyday agent work and general-purpose tasks
+  - Use **Sonnet 4.6** for daily agentic coding — currently the most cost-effective option for routine development
+  - Reserve **Fable 5** for tasks that genuinely need its frontier capabilities
+
+### "Stop Wasting Fable 5"
+
+The central advice: **"stop wasting Fable 5 on tasks Sonnet can do."** Fable 5's higher cost ($10/$50 per MTok) and capacity constraints mean it should be reserved for:
+
+- Complex multi-step reasoning tasks
+- Long-horizon problems requiring sustained attention
+- Research and exploration where frontier capability is critical
+- Tasks that have actually failed on Sonnet-class models
+
+Using Fable 5 for simple code completion, basic Q&A, or routine agent tasks is economically inefficient and consumes capacity that could be used for genuinely frontier-level work.
+
+*Source: [AI by Aakash](raw/newsletters/2026-07-06-fable-5-is-back-stop-wasting-it-on-tasks-sonnet-can-do.md)*
 
 ## Related
 

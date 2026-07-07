@@ -2,7 +2,7 @@
 title: "Claude Sonnet 5"
 type: concept
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-07
 tags:
   - claude
   - anthropic
@@ -13,6 +13,7 @@ sources:
   - raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md
   - raw/articles/2026-07-01_harvey_sonnet-5-in-harvey.md
   - raw/newsletters/2026-07-01-ainews-sonnet-5-today-and-fable-5-tomorrow.md
+  - raw/newsletters/2026-07-06-how-i-ai-sonnet-5-review-how-to-run-autonomous-coding-agents-from-your-phone.md
 ---
 
 # Claude Sonnet 5
@@ -101,6 +102,29 @@ Limitations noted: dense specialized analytical tasks (tax, structured finance) 
 - Performance is "close to that of Opus 4.8, but at lower prices"
 - The new tokenizer creates a significant effective price increase for English text
 - The removal of sampling parameters represents a philosophical shift toward adaptive defaults
+
+## How I AI Bench Blind Test
+
+Claire (chatprd.ai) built a custom benchmark called How I AI Bench using Claude Code, then blind-tested Sonnet 5 against Sonnet 4.6, Opus 4.8, GPT-5.5, and Gemini 3 Pro across **64 generations** covering PRDs, prototypes, agentic tasks, and agent personality assessment.
+
+### Key Findings
+
+- **Sonnet 5 finished near the bottom** of Claire's personal preference ranking (out of the 5 models tested)
+- **Codebase navigation**: Sonnet 5 performed at Opus 4.8 level — significantly better than Sonnet 4.6
+- **LLM-as-Judge methodology limitations revealed**:
+  - LLM-as-judge evaluations tend to be **too generous** across all models, inflating scores
+  - LLM-as-judge scores **cluster toward the middle**, failing to distinguish real quality differences
+  - Human preference scoring showed much wider variance between models
+- **Cost-performance tradeoff**: At $2/$10M tokens, Sonnet 5 is competitive with Opus 4.8 but Claire's blind preference metrics ranked it behind Gemini 3 Pro and Opus 4.8
+
+### Methodology
+
+- 64 generations across multiple task categories
+- Human scoring (Claire) vs LLM-as-Judge scoring for comparison
+- Tasks: PRD writing, prototype building, agentic multi-step tasks, agent personality/behavior assessment
+- Price at time of test: $2/$10M per token (intro pricing)
+
+Source: raw/newsletters/2026-07-06-how-i-ai-sonnet-5-review-how-to-run-autonomous-coding-agents-from-your-phone.md
 
 ## Safety
 

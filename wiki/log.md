@@ -1,3 +1,14 @@
+## [2026-07-07 07:40 UTC] newsletter-wiki-ingest | 7 pages enriched from 6 newsletters
+
+- **Enriched** [[concepts/claude/fable-5]] — 425→543 lines. Added 3 new Post-Redeployment sections: GPU Kernel Generation (18.71× CUDA speedup on KernelBench-Mega), Thariq Shihipar's Field Guide (unhobbling, blindspot passes, grief management, "tradeoffs are not real"), Fable 5 Return Aftermath & Sonnet Guidance (99% blocker, government pre-release deal). Sources: Import AI 464, AI by Aakash, AINews.
+- **Enriched** [[concepts/ai-benchmarks/remote-labor-index]] — 63→78 lines. Added July 2026 Update: Fable 5 16.1% success rate (up from 2.5% in Oct 2025), quadrupling in under 8 months. Source: Import AI 464.
+- **Enriched** [[concepts/ai-benchmarks/osworld]] — 67→81 lines. Added OSWorld 2.0 section: 108 long-horizon tasks (1.6hr median), 31 self-hosted websites, Slack/REAPER/MuseScore/Overleaf integrations. Source: Import AI 464.
+- **Enriched** [[concepts/claude/sonnet-5]] — 116→140 lines. Added How I AI Bench section: 64-generation blind test, Sonnet 5 near-bottom in preference ranking but Opus-level codebase navigation, LLM-as-Judge methodology limitations. Source: How I AI.
+- **Stub→Full** [[concepts/symphony]] — 25→207 lines. Fully expanded from stub: architecture (WORKFLOW.md, SKILL.md, context compaction, sidecar proxy), Symphony from Phone (Alessio Fanelli pattern: Agent Prompter→Manager, token cost tracking 15M-221M, skills maintenance, Glimpse extension), comparison with Anthropic Managed Agents. Source: How I AI.
+- **Enriched** [[entities/tencent-hy3]] — 123→153 lines. Added July 2026 Update: Apache 2.0, 192 experts/top-8 routing, vLLM day-0 support with Tencent production kernels upstreamed, 2.95× mixed-length decode. Source: AI by Aakash.
+- **Enriched** [[entities/semianalysis]] — 197→243 lines. Added GPU Debt Backstop: AI Project Trinity analysis — $7.1T AI debt by 2029, NVIDIA minimum revenue guarantees, GPU-backed securities as new asset class, three obstacles to market maturity. Source: SemiAnalysis.
+- Updated index.md and log.md for all changes.
+
 ## [2026-07-07 00:01 UTC] raw-backlog-ingest | Enriched MAI-Thinking-1 entity + BenchFlow Awesome Agent Evals
 
 - **Enriched** [[entities/mai-thinking-1]] — From 55-line entity to 147-line comprehensive page. Added: Architecture section (periodic local/global attention, LatentMoE, model specifications table, scaling ladder), extended benchmark comparison tables (STEM/Agentic Coding, General Capabilities, Human Side-by-Side), modified GRPO section (adaptive entropy control, outer ratio clip, reward decomposition), total training overhead metrics (51 hours). Sources include the full 109-page tech report.
