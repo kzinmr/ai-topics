@@ -2,17 +2,21 @@
 title: BenchFlow
 type: concept
 created: 2026-06-26
-updated: 2026-07-06
+updated: 2026-07-07
 tags:
   - benchmark
   - evaluation
   - ai-agents
+  - curated-list
 sources:
   - https://github.com/benchflow-ai/benchflow
+  - https://github.com/benchflow-ai/awesome-agent-evals
   - raw/articles/benchflow-awesome-evals-2025.md
 related_concepts:
   - agent-evaluation
   - ai-agents
+  - llm-as-judge
+  - coding-agents/evaluation-coding-agents
 ---
 
 # BenchFlow
@@ -69,7 +73,45 @@ BenchFlow maintains the **[Awesome Agent Evals](https://github.com/benchflow-ai/
 | 9. Agent-specific evaluation | Trajectories, tool use, multi-turn, world state |
 | 10. Safety / adversarial evaluation | Injection, jailbreaks, action-authorization |
 
-Includes a [PATTERNS.md](https://github.com/benchflow-ai/awesome-agent-evals/blob/main/PATTERNS.md) playbook with runnable code for LLM-as-judge, pass@k, error analysis, trajectory grading, CI gating, and verifiable rewards.
+Includes a [PATTERNS.md](https://github.com/benchflow-ai/awesome-agent-evals/blob/main/PATTERNS.md) playbook with runnable code for LLM-as-judge (aligned to humans), pass@k/pass^k, error analysis, trajectory & world-state grading, CI gating, verifiable rewards, and more. Compiled via 146 deep reading notes (see `notes/` directory).
+
+### Compilation Methodology
+
+The list was assembled through three parallel discovery channels:
+- **Depth-4 recursive citation crawl**: 11.6k papers ranked by in-degree to surface the academic canon
+- **Targeted practitioner-web discovery**: Industry sources citation graphs miss (Eugene Yan, Han-Chung Lee, Hamel Husain, Shreya Shankar, Nathan Lambert, etc.)
+- **47 talks & podcasts transcribed and deep-noted**: Verbatim with timestamps
+- Per-section gap audits with adversarial verification
+
+Every entry is annotated with *what it is and why it belongs*, URLs are verified, and dead/abandoned tools are pruned. Markers: 🆕 = released/updated 2025-2026, ⚠️ = caveat.
+
+### Must-Read Starter Set
+
+The list identifies 12 must-read resources as the entry point for anyone building evals:
+
+| # | Resource | Author | Type | Core Thesis |
+|---|----------|--------|------|-------------|
+| 1 | The Second Half | Shunyu Yao | blog | "Evaluation becomes more important than training" |
+| 2 | An LLM-as-Judge Won't Save the Product | Eugene Yan | blog | Process over tooling; evals as scientific method |
+| 3 | Hidden Technical Debt: Agent Evaluation Infrastructure | Han-Chung Lee | blog | Control/data plane, five eval surfaces, state deltas |
+| 4 | LLM Evals FAQ | Hamel Husain & Shreya Shankar | blog | Densest operational Q&A: error analysis, binary judgments |
+| 5 | Asymmetry of Verification and Verifier's Law | Jason Wei | blog | "Ability to verify == ability to create an RL environment" |
+| 6 | Demystifying Evals for AI Agents | Anthropic Engineering | blog | Task design, outcome vs trajectory, pass@k vs pass^k |
+| 7 | How to Build Good Language Modeling Benchmarks | Ofir Press | blog | Natural/auto-evaluatable/challenging; -200% difficulty target |
+| 8 | AI Agents That Matter | Kapoor et al. (Princeton) | paper | Cost as first-class metric; missing holdouts breed overfitting |
+| 9 | Building on Evaluation Quicksand | Nathan Lambert | blog | LLM eval has no ground truth; contamination; eval-training coupling |
+| 10 | Who Validates the Validators? (EvalGen) | Shankar et al. (UIST '24) | paper | "Criteria drift": can't write rubric before grading |
+| 11 | Benches 2026 — LLM benchmarks in the era of agents | Florian Brand (Prime Intellect) | blog+talk | Why benchmarks break in the agent era |
+| 12 | A Shared Playbook for Trustworthy Third-Party Evaluations | OpenAI | blog | Harness selection, validity hazards for independent evals |
+
+### Eval / RL-Environment Companies Landscape
+
+The list catalogs the emerging "environments are the new data" venture wave:
+
+- **[pavlovslist.com](https://pavlovslist.com/)** — The RL-environment / eval startups directory
+- **Environment labs**: BenchFlow (SkillsBench, ClawsBench), Prime Intellect (verifiers, Environments Hub), HUD, Mechanize, Plato, AfterQuery, Halluminate, Surge AI, Scale, Mercor
+- **Eval/RL platforms**: Braintrust, Arize (Phoenix/AX), Galileo, LangChain/LangSmith (agentevals), Sierra (tau-bench), Core Automation (Kanav Garg)
+- **Benchmark/audit orgs**: Epoch AI (benchmark audits), METR (autonomy/horizon), FutureHouse (HLE audit), UK AISI (Inspect)
 
 ## Connections to Other Wiki Concepts
 
