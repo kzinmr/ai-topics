@@ -1333,3 +1333,17 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 **Sources:**
 - https://arxiv.org/abs/2607.02770 (Gemma 4 Technical Report, July 2, 2026)
 - PDF saved to `raw/papers/gemma4-technical-report.pdf`
+
+## [2026-07-07] wiki: Ingested Harrison Chase "Wiki Memory" X Article
+
+**Created:**
+- `concepts/wiki-memory.md` — New concept page for the wiki memory agent memory pattern. Covers the core idea (agent-maintained file-based knowledge layer), distinction from RAG, "brain clone" motivation, examples (DeepWiki, Karpathy's LLM Wiki, Factory AutoWiki), open questions, and relationship to the Two Camps memory taxonomy. Maps to Camp 2: Context Substrates.
+
+**Updated:**
+- `entities/harrison-chase.md` — Added "Wiki Memory" thesis section (June 2026) with key arguments and link to concept page. Added source URL.
+- `entities/langchain.md` — Added wiki-memory cross-reference in Memory section.
+- `index.md` — Added `concepts/wiki-memory` entry after `ai-agent-memory-two-camps`.
+- `raw/articles/2026-06-30_langchain-wiki-memory.md` — Raw X Article text saved.
+
+**Sources:**
+- https://x.com/hwchase17/status/2071963622298050997 (Harrison Chase, "Wiki Memory", 2026-06-30, 1114 bookmarks)

@@ -15,6 +15,7 @@ sources:
   - "https://www.langchain.com/blog/your-harness-your-memory"
   - "https://www.langchain.com/blog/agent-observability-needs-feedback-to-power-learning"
   - "https://www.langchain.com/blog/the-agent-development-lifecycle"
+  - "https://x.com/hwchase17/status/2071963622298050997"
   - "https://github.com/langchain-ai/langchain"
   - "https://www.linkedin.com/in/harrison-chase-961287118"
 related:
@@ -75,6 +76,22 @@ Chase published a key thesis: **agent memory is inextricably linked to the harne
 - Memory should be open, owned by the agent builder
 - Harnesses should be model-agnostic to preserve optionality
 - Deep Agents uses open standards (AGENTS.md, Agent Skills) and supports pluggable memory backends (Mongo, Postgres, Redis)
+
+## "Wiki Memory" Thesis (June 2026)
+
+Chase published an X Article proposing **wiki memory** as an emerging agent memory pattern: use an agent to transform raw source data into a compact, persistent, agent-readable knowledge layer of files. Key arguments:
+
+- **Different from RAG**: RAG retrieves raw chunks at query time; wiki memory precomputes and maintains higher-level synthesis
+- **"Brain clone" motivation**: Preserve organizational knowledge by compressing what matters into a reusable knowledge base
+- **Files as substrate**: Inspectable, editable, versionable, easy for agents to read/write
+- **Agent-maintained**: Both compression and ongoing maintenance are done by agents
+- **Best for durable domain knowledge** — not conversation state, preferences, or event logs
+
+Chase frames wiki memory as adjacent to systems like LangMem, Letta, Mem0, and Zep, but notable for its simplicity. Cites DeepWiki (Cognition), Karpathy's LLM Wiki, and Factory AutoWiki as existing implementations.
+
+Source: [x.com/hwchase17/status/2071963622298050997](https://x.com/hwchase17/status/2071963622298050997)
+
+See [[concepts/wiki-memory]] for the full concept page.
 
 ## Agent Observability & Feedback Loop Thesis (May 2026)
 

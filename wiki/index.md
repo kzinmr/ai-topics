@@ -917,6 +917,7 @@
 - [[concepts/ai-agent-memory]] — AI Agent Memory
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
+- [[concepts/wiki-memory]] — Wiki Memory — Agent-maintained file-based knowledge layer pattern (Harrison Chase, 2026)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-World Failures in Autonomous Systems
 - [[concepts/ai-agent-security]] — AI Agent Security
 - [[concepts/ai-agent-traps]] — AI Agent Traps

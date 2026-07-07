@@ -74,6 +74,7 @@ LangChain is built on a modular, layered architecture with the following core co
 ### Memory
 - Conversation buffer, summary, vector store, and knowledge graph memory backends
 - Persistent session state across agent iterations
+- See also [[concepts/wiki-memory]] — Chase's thesis on file-based agent memory (June 2026)
 
 ### Callbacks
 - Observability hooks for logging, monitoring, tracing, and streaming
