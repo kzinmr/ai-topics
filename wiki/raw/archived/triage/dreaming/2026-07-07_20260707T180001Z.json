@@ -1,57 +1,9 @@
 {
-  "archived_at": "2026-07-07T18:13:51.287260+00:00",
+  "archived_at": "2026-07-07T18:21:28.769886+00:00",
   "triage_run_id": "20260707T180001Z",
   "source": "dreaming",
   "summary_ja": "2026-07-07のdreaming cycle: RSS記事1件（ATP podcast、非AI）+ raw記事162件をスキャン。全パイプラインが飽和状態 — raw-backlog-ingest（00:01）、newsletter-wiki-ingest（07:40、7ページ）、blog-wiki-ingest（07:50、2ページ）、active-crawl（11:00、4ページ新規作成）が本日のAI記事を全て処理済み。Anthropic Global Workspace（386pt）、AMD Ryzen AI Halo（342pt）、Code Cleanliness（198pt）、Browser-Integrated AI（78pt）の4件はactive-crawlが概念・エンティティページ作成済み。Prior dreaming triage（07/06）はconsumed済み。Takes=0、references=0、skips=12。",
   "decisions": [
-    {
-      "item_id": "dreaming-skip-already-processed-anthropic-global-workspace",
-      "source": "dreaming",
-      "source_name": "anthropic.com",
-      "title": "A global workspace in language models",
-      "url": "https://www.anthropic.com/research/global-workspace",
-      "raw_path": "wiki/raw/articles/2026-07-07_anthropic_global-workspace-language-models.md",
-      "recommended_action": "skip",
-      "reason_ja": "★★★★★ active-crawl（11:00 UTC）が [[concepts/anthropic-global-workspace]] を本日作成済み（74行、HN 386pt）。解釈可能性研究の包括的ページ。重複回避のためスキップ。",
-      "candidate_wiki_path": "concepts/anthropic-global-workspace.md",
-      "body_excerpt": "# A Global Workspace in Language Models\n*Interpretability research on Claude's internal thoughts.*\n**Source**: Anthropic Research, July 2026\n**HN Discussion**: 386 points, 145 comments\n## OG Metadata\n- **Title**: A global workspace in language models\n- **Description**: Interpretability research on C"
-    },
-    {
-      "item_id": "dreaming-skip-already-processed-amd-ryzen-halo",
-      "source": "dreaming",
-      "source_name": "lttlabs.com",
-      "title": "AI Dev Kit, Batteries Included - AMD Ryzen AI Halo",
-      "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
-      "raw_path": "wiki/raw/articles/2026-07-07_lttlabs_amd-ryzen-ai-halo-dev-kit.md",
-      "recommended_action": "skip",
-      "reason_ja": "★★★★☆ active-crawl（11:00 UTC）が [[entities/amd-ryzen-ai-halo]] を本日作成済み。$4,000 AI 開発キット、統合メモリアーキテクチャ、ローカル LLM 推論向け（HN 342pt）。",
-      "candidate_wiki_path": "entities/amd-ryzen-ai-halo.md",
-      "body_excerpt": "# AI Dev Kit, Batteries Included - AMD Ryzen AI Halo\n**Source**: LTT Labs, July 6, 2026\n**HN Discussion**: 342 points\n## OG Metadata\n- **Title**: AI Dev Kit, Batteries Included - AMD Ryzen AI Halo | LTT Labs\n- **Description**: Welcome to LTT Labs - your go-to destination for all things tech. Explore"
-    },
-    {
-      "item_id": "dreaming-skip-already-processed-code-cleanliness",
-      "source": "dreaming",
-      "source_name": "arxiv.org",
-      "title": "Does Code Cleanliness Affect Coding Agents?",
-      "url": "https://arxiv.org/abs/2605.20049",
-      "raw_path": "wiki/raw/articles/2026-05-19_arxiv_2605.20049_code-cleanliness-coding-agents.md",
-      "recommended_action": "skip",
-      "reason_ja": "★★★★☆ active-crawl（11:00 UTC）が [[concepts/code-cleanliness-coding-agents]] を本日作成済み。660 trials Claude Code でトークン7-8%削減、file revisitation 34%削減を実証（HN 198pt）。",
-      "candidate_wiki_path": "concepts/code-cleanliness-coding-agents.md",
-      "body_excerpt": "# Does Code Cleanliness Affect Coding Agents? A Controlled Minimal-Pair Study\n**arXiv**: [2605.20049](https://arxiv.org/abs/2605.20049)\n**Submitted**: May 19, 2026\n**First surfaced on HN**: July 5, 2026 (198 points)\n## Abstract\nAs autonomous coding agents see rapid adoption, their evaluation has pri"
-    },
-    {
-      "item_id": "dreaming-skip-already-processed-browser-ai",
-      "source": "dreaming",
-      "source_name": "oztalking.com",
-      "title": "Google Chrome Secretly Installed a 4GB AI Model",
-      "url": "https://oztalking.com/en/issues/hidden-4gb-ai-model",
-      "raw_path": "wiki/raw/articles/2026-05-16_oztalking_chrome-hidden-4gb-ai-model.md",
-      "recommended_action": "skip",
-      "reason_ja": "★★★☆☆ active-crawl（11:00 UTC）が [[concepts/browser-integrated-ai]] を本日作成済み。Chrome の Gemini Nano 4GB サイレントインストール問題（HN 78pt）。",
-      "candidate_wiki_path": "concepts/browser-integrated-ai.md",
-      "body_excerpt": "# Google Chrome Secretly Installed a 4GB AI Model on Your PC\n*An AI installed to protect your privacy never asked for your consent — here's what that paradox reveals.*\n**Source**: OZ Talking, Issue #103, May 16, 2026\n**HN Discussion**: 78 points (July 6, 2026)\n## OG Metadata\n- **Title**: Google Chro"
-    },
     {
       "item_id": "dreaming-skip-already-processed-newsletter-pages",
       "source": "dreaming",
