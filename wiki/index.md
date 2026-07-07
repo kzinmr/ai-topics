@@ -442,7 +442,7 @@
 - [[entities/letta]] — Letta (Letta AI)
 - [[entities/levelsio]] — @levelsio (Pieter Levels)
 - [[entities/lighton]] — LightOn
-- [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, training (June 26)
+- [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, harness engineering for RSI, training (Jul 26)
 - [[entities/lilianweng]] — Lilian Weng
 - [[entities/linear]] — Linear
 - [[entities/ling-2-6-1t]] — Ling 2.6-1T

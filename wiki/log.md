@@ -1,3 +1,15 @@
+## [2026-07-07] wiki: Ingested Lilian Weng "Harness Engineering for Self-Improvement"
+
+**Ingested:**
+- `raw/articles/2026-07-04_lilianweng-harness-engineering-self-improvement.md` — New raw article (Lilian Weng, July 4, 2026)
+
+**Updated:**
+- `entities/lilian-weng.md` — Added Jul 2026 timeline entry, "Harness engineering for RSI" theme, related concept link, source URL
+- `concepts/harness-engineering.md` — Added RSI section (design patterns, optimization progression, self-improving harnesses, evolutionary search, auto-research workflows, open challenges); added new tags and source
+- `wiki/index.md` — Updated lilian-weng entry description
+
+---
+
 ## [2026-07-07 17:50 UTC] health-fix | Auto-fix: orphan index registration
 
 **Auto-fixed:**

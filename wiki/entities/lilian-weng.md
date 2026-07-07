@@ -8,7 +8,7 @@ title: "Lilian Weng (@lilianweng)"
 tags: [entity]
 sources: []
 created: 2026-04-24
-updated: 2026-06-26
+updated: 2026-07-07
 type: entity
 ---
 
@@ -59,6 +59,7 @@ Her intellectual identity is shaped by two core traits she has named herself: **
 | 2025 | Thinking Machines Lab raised record $2B seed round at $12B valuation |
 | May 2025 | Published "Why We Think" — comprehensive survey on test-time compute and chain-of-thought reasoning |
 | Jun 2026 | Published "Scaling Laws, Carefully" — comprehensive survey of scaling law research from Amari (1992) through Lovelace et al. (2026) |
+| Jul 2026 | Published "Harness Engineering for Self-Improvement" — comprehensive survey of harness engineering for recursive self-improvement (RSI), covering context engineering, evolutionary search, self-improving harnesses, and auto-research workflows |
 
 ## Core Ideas
 
@@ -140,11 +141,13 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - **Adversarial attacks on LLMs**: Taxonomy of jailbreak methods and defense strategies
 - **Diffusion models for video**: Extending diffusion model research from image synthesis to temporal generation
 - **Scaling laws**: Comprehensive survey "Scaling Laws, Carefully" (June 2026) — Kaplan vs Chinchilla reconciliation, data-limited scaling, practical fitting challenges
+- **Harness engineering for RSI**: "Harness Engineering for Self-Improvement" (July 2026) — comprehensive survey of harness design patterns, context engineering (ACE, MCE, Meta-Harness), self-improving harnesses (STOP, Self-Harness, Darwin Gödel Machine), evolutionary search (AlphaEvolve, AFlow, ADAS), and auto-research workflows (AI Scientist, Autodata)
 
 ## Related Concepts
 
 - [[concepts/security-and-governance/ai-safety-and-alignment]] — Her primary research focus at OpenAI
 - [[concepts/scaling-laws]] — Her June 2026 comprehensive survey of scaling law research
+- [[concepts/harness-engineering]] — Her July 2026 survey on harness engineering for recursive self-improvement
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Frameworks she analyzed in "LLM Powered Autonomous Agents"
 - [[concepts/test-time-compute]] — The "thinking time" paradigm she surveyed in "Why We Think"
 - [[concepts/evaluation/reward-hacking]] — Her November 2024 deep-dive topic
@@ -176,6 +179,7 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - https://lilianweng.github.io/posts/2023-06-23-agent/ — "LLM Powered Autonomous Agents"
 - https://lilianweng.github.io/posts/2025-05-01-thinking/ — "Why We Think"
 - https://lilianweng.github.io/posts/2026-06-24-scaling-laws/ — "Scaling Laws, Carefully" (June 2026)
+- https://lilianweng.github.io/posts/2026-07-04-harness/ — "Harness Engineering for Self-Improvement" (July 2026)
 - https://openai.com/index/the-power-of-continuous-learning/ — OpenAI profile (Dec 2022)
 - https://techcrunch.com/2024/11/08/openai-loses-another-lead-safety-researcher-lilian-weng/ — Departure announcement
 - https://www.businessinsider.com/lilian-weng-openai-ai-power-list-2024 — Business Insider AI Power List 2024
