@@ -1,3 +1,15 @@
+## [2026-07-07] wiki: Split RSI into standalone concept page
+
+**Created:**
+- `concepts/recursive-self-improvement.md` — Standalone RSI page (21 references, benchmarks, open challenges)
+
+**Updated:**
+- `concepts/harness-engineering.md` — RSI section replaced with concise summary + link to standalone page; added RSI to Related Concepts
+- `entities/lilian-weng.md` — Added RSI concept link
+- `wiki/index.md` — Updated recursive-self-improvement entry description
+
+---
+
 ## [2026-07-07] wiki: Ingested Lilian Weng "Harness Engineering for Self-Improvement"
 
 **Ingested:**

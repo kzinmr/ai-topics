@@ -148,6 +148,7 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - [[concepts/security-and-governance/ai-safety-and-alignment]] — Her primary research focus at OpenAI
 - [[concepts/scaling-laws]] — Her June 2026 comprehensive survey of scaling law research
 - [[concepts/harness-engineering]] — Her July 2026 survey on harness engineering for recursive self-improvement
+- [[concepts/recursive-self-improvement]] — RSI through harness engineering: self-improving harnesses, evolutionary search, auto-research
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Frameworks she analyzed in "LLM Powered Autonomous Agents"
 - [[concepts/test-time-compute]] — The "thinking time" paradigm she surveyed in "Why We Think"
 - [[concepts/evaluation/reward-hacking]] — Her November 2024 deep-dive topic

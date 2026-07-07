@@ -427,6 +427,7 @@ Each single harness failure creates a **trajectory cascade** — the failure at 
 - [[concepts/service-as-software]] — Business model thesis behind Sierra
 - [[entities/warp-terminal]] — Multi-harness control plane for cloud agents; Oz sits a layer above individual harnesses
 - [[concepts/etclovg-taxonomy]] — The seven-layer taxonomy (Execution, Tooling, Context, Lifecycle, Observability, Verification, Governance) for agent harness engineering, proposed by Li et al. (2026)
+- [[concepts/recursive-self-improvement]] — RSI through harness engineering: self-improving harnesses, evolutionary search, auto-research (Weng, July 2026)
 - [[raw/articles/2026-05-28_li-et-al_agent-harness-engineering-survey]] — Full survey paper mapping 138+ projects
 
 ## ETCLOVG Taxonomy & The Systems View (Li et al., 2026)
@@ -510,61 +511,23 @@ This validates the platform thesis: participants with zero coding experience can
 
 ## Harness Engineering for Recursive Self-Improvement (Weng, July 2026)
 
-[[entities/lilian-weng|Lilian Weng]] published a comprehensive survey framing harness engineering through the lens of **recursive self-improvement (RSI)** — the feedback loop where an AI improves the cognitive machinery that produces its intelligence. The key insight: the near-term path to RSI runs through harness engineering, not direct weight rewriting.
+[[entities/lilian-weng|Lilian Weng]]'s comprehensive survey frames harness engineering through the lens of **[[concepts/recursive-self-improvement|recursive self-improvement (RSI)]]** — the feedback loop where an AI improves the machinery that produces its intelligence. The key insight: the near-term path to RSI runs through harness engineering, not direct weight rewriting.
 
-### RSI Through the Harness
+**Three RSI-enabling harness patterns**: workflow automation (goal-oriented loops), file system as persistent memory (durable state beyond context), and sub-agent orchestration (parallel inspectable execution).
 
-Weng defines a harness as "the system surrounding a base model that orchestrates execution and decides how the model thinks and plans, calls tools and acts, perceives and manages context, stores artifacts, and evaluates results." Compared to early agent frameworks (`agent = LLM + memory + tools + planning + action`), harness engineering additionally includes **workflow design, evaluation, permission controls, and persistent state management** — closer to runtime and software system design.
+**Optimization progression**: instruction prompts → structured context → workflow → harness code → optimizer code. Key systems: ACE (context as evolving playbook), MCE (bi-level skill + context optimization), Meta-Harness (optimize the code that manages information).
 
-Three core design patterns:
+**Self-improving harnesses**: STOP (improve the improver), Self-Harness (weakness mining → bounded proposal → validation), Darwin Gödel Machine (evolutionary harness-code evolution, 20%→50% on SWE-bench).
 
-| Pattern | Description | Key Insight |
-|---------|-------------|-------------|
-| **Workflow Automation** | Goal-oriented loops (plan → execute → observe → improve → repeat) | Model analyzes its own trajectories and failure cases via agent runtime |
-| **File System as Persistent Memory** | Durable state in files, not context window | File read/write/edit via bash benefits from core model capability improvements |
-| **Sub-agent & Backend Jobs** | Parallel subagent execution with inspectable outputs | Outputs stored as files/logs/status records enable recovery after interruptions |
+**Evolutionary search**: Promptbreeder, AlphaEvolve, ShinkaEvolve, AFlow, ADAS — harness design as executable search space.
 
-### Harness Optimization Progression
+**Auto-research workflows**: AI Scientist (Nature 2026), ScientistOne (Chain-of-Evidence), Autodata (challenger/solver/verifier roles).
 
-The optimization target evolves with model capability: **instruction prompts → structured context → workflow → harness code → optimizer code**. Key systems in this progression:
+**Open challenges**: weak evaluators, context/memory lifecycle, negative results bias, diversity collapse, reward hacking, long-term repo health, human oversight role.
 
-- **ACE (Agentic Context Engineering)** — Context as evolving structured playbook (generator/reflector/curator loop)
-- **MCE (Meta Context Engineering)** — Bi-level optimization: meta-level skill evolution + base-level context optimization
-- **Meta-Harness** — Optimizes the code that determines what information is stored/retrieved; output is Pareto frontier of harness candidates
+→ **Full details**: [[concepts/recursive-self-improvement]]
 
-### Self-Improving Harnesses
-
-- **STOP (Self-Taught Optimizer)** — Improves the improver, not the solution. Discovered strategies: genetic algorithms, simulated annealing, beam search. *Caution: only works with capable base models* (GPT-4 yes, GPT-3.5/Mixtral no).
-- **Self-Harness** — Propose-evaluate-accept loop: weakness mining → harness proposal → validation. Learns model-specific harness instructions.
-- **Darwin Gödel Machine** — LLM-based coding agent modifies its own harness code via evolutionary search. DGM-discovered agents achieve 20%→50% on SWE-bench Verified.
-
-### Evolutionary Search for Harnesses
-
-| System | Key Innovation |
-|--------|---------------|
-| **Promptbreeder** | Evolution of task prompts AND mutation prompts |
-| **AlphaEvolve** | Coding-agent evolutionary search with EVOLVE-BLOCK markers; meta-prompt co-evolution |
-| **ShinkaEvolve** | Sample-efficient exploration + code-novelty rejection + meta-scratchpad |
-| **AFlow** | MCTS-based workflow optimization over graph representations |
-| **ADAS** | Meta-agent search over agentic workflow code |
-
-### Auto-Research Workflows
-
-- **AI Scientist** (Nature, 2026) — Full pipeline: propose ideas → write code → run experiments → analyze → write manuscript → peer review
-- **ScientistOne** — Chain-of-Evidence checks for verifiability
-- **Autodata** — Challenger/weak solver/strong solver/verifier roles for synthetic data
-
-### Open Challenges for RSI
-
-1. **Weak evaluators** — Many tasks lack fast/precise verifiers
-2. **Context/memory lifecycle** — Context engineering as core intelligence, not just software layer
-3. **Negative results** — Literature biased toward successes; LLMs may be bad at abandoning hypotheses
-4. **Diversity collapse** — Evolutionary/RL loops exploit known high-reward patterns
-5. **Reward hacking** — Self-improvement optimizes whatever signal it is given
-6. **Long-term success** — Coding agents optimize short-term; repo maintainability neglected
-7. **Human role** — Provide oversight at right time/abstraction level
-
-**Source**: [[entities/lilian-weng]]'s [Harness Engineering for Self-Improvement](https://lilianweng.github.io/posts/2026-07-04-harness/) (July 2026). See [[raw/articles/2026-07-04_lilianweng-harness-engineering-self-improvement]] for full summary.
+**Source**: Weng, L. ["Harness Engineering for Self-Improvement"](https://lilianweng.github.io/posts/2026-07-04-harness/) (Jul 2026).
 
 ## References
 

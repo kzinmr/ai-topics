@@ -2342,7 +2342,7 @@
 - [[concepts/recommendation-systems]] — recommendation-systems
 - [[concepts/recurse-center]] — Recurse Center
 - [[concepts/recursive-language-models]] — Recursive Language Models → Redirect
-- [[concepts/recursive-self-improvement]] — Recursive Self-Improvement
+- [[concepts/recursive-self-improvement]] — Recursive Self-Improvement (RSI) — AI improving its own machinery via harness engineering: self-improving harnesses, evolutionary search, auto-research workflows (Weng, Jul 2026)
 - [[concepts/red-green-tdd]] — Moved to concepts/harness-engineering/agentic-workflows/red-green-tdd.md
 - [[concepts/red/green-tdd]] — Red/Green TDD
 - [[concepts/redis]] — Redis
