@@ -1312,3 +1312,12 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 - **orphan page fix** — Added inbound links from concepts/harness-engineering.md to 3 orphan pages (claude-code-best-practices, writing-tools-for-agents, context-engineering). Orphans reduced from 5 to 2 (archive pages only).
 - 2026-07-06 llm-pricing-monitor: Updated OpenAI deep-research pricing (o3-deep-research $5→$10/$20→$40; o4-mini-deep-research $1→$2/$4→$8); added Claude Sonnet 5 ($2/$10 intro, $3/$15 std); updated cache/batch/trend tables
+
+## [2026-07-07] wiki: Ingested Gemma 4 Technical Report (arXiv:2607.02770)
+
+**Updated:**
+- `entities/gemma-4.md` — Added Technical Report section with full benchmark tables (Arena Elo, thinking mode, vision, long-context, audio), detailed parameter breakdown, pre-training infrastructure, architecture highlights, quantization details, safety evaluation. Updated sources with arxiv link and raw PDF.
+
+**Sources:**
+- https://arxiv.org/abs/2607.02770 (Gemma 4 Technical Report, July 2, 2026)
+- PDF saved to `raw/papers/gemma4-technical-report.pdf`

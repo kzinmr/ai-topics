@@ -1,166 +1,217 @@
 ---
-title: "Recursive Self-Improvement"
-created: 2026-05-05
-updated: 2026-06-10
+title: "Recursive Self-Improvement (RSI)"
+created: 2026-07-07
+updated: 2026-07-07
 type: concept
-tags: [prediction, safety, alignment, training, benchmark, automation]
-sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md, raw/newsletters/2026-06-05-ainews-not-much-happened-today.md, raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md, raw/articles/2026-06-07_anthropic_recursive-self-improvement.md]
+tags:
+  - concept
+  - recursive-self-improvement
+  - self-improving
+  - harness-engineering
+  - evolutionary-algorithms
+  - context-engineering
+  - autoresearch
+  - coding-agents
+  - agent-architecture
+  - meta-harness
+  - alignment
+  - ai-safety
+sources:
+  - raw/articles/2026-07-04_lilianweng-harness-engineering-self-improvement.md
+  - https://lilianweng.github.io/posts/2026-07-04-harness/
+description: "The feedback loop where an AI improves the machinery that produces its intelligence. Near-term RSI runs through harness engineering — optimizing context, workflow, and code — rather than direct weight rewriting."
 ---
 
-# Recursive Self-Improvement
+# Recursive Self-Improvement (RSI)
 
-## Definition
+**Recursive self-improvement (RSI)** is the feedback loop where an AI system improves the cognitive machinery that produces its intelligence. The concept dates back to I.J. Good (1965), who defined an "ultraintelligent machine" as a system that can surpass humans in all intellectual activities and design better machines to improve itself. Yudkowsky (2008) formalized the phrase for a specific feedback loop: an AI uses its current intelligence to improve the cognitive machinery that produces its intelligence.
 
-Recursive self-improvement (RSI) refers to the capability of an AI system to autonomously design, train, and deploy a more capable successor AI system — without human intervention. This creates a potential feedback loop where each generation produces an even more capable next generation.
+In modern AI, this may manifest as:
+- **Direct**: the model rewriting its own weights
+- **Indirect (near-term)**: the model improves the **training pipeline** and the **deployment system** (harness), enabling a better successor model
 
-## Current State (May 2026)
+## The Harness Path to RSI
 
-### Capability Evidence
+The near-term path to RSI is unlikely to start as a model directly rewriting its weights. Instead, RSI progresses through [[concepts/harness-engineering|harness engineering]] — the system surrounding a base model that orchestrates execution, tool use, context management, and evaluation.
 
-| Benchmark | Late 2023 | Current (May 2026) | Description |
-|-----------|-----------|-------------------|-------------|
-| SWE-Bench | 2% (Claude 2) | 93.9% (Claude Mythos Preview) | Solving real GitHub issues |
-| METR Time Horizon | 30s (GPT-3.5) | ~12 hours (Opus 4.6) | Sustained autonomous work |
-| CORE-Bench | — | 95.5% (Opus 4.5, Dec 2025) | Computational reproducibility |
-| MLE-Bench | 16.9% (Oct 2024) | 64.4% (Feb 2026) | Building ML systems from scratch |
+> A **harness** is the system surrounding a base model that orchestrates execution and decides how the model thinks and plans, calls tools and acts, perceives and manages context, stores artifacts, and evaluates results.
+>
+> — [[entities/lilian-weng|Lilian Weng]], "Harness Engineering for Self-Improvement" (July 2026)
 
-### Key Enabling Capabilities
+### Harness Design Patterns for RSI
 
-1. **Coding Mastery**: AI can now solve 93.9% of real-world software engineering tasks independently
-2. **Extended Autonomy**: Working reliably for 12+ hours without human intervention, with 100-hour reliability expected by end 2026
-3. **ML Research Skills**: Replicating papers (95.5%), building ML systems (64.4%), optimizing kernels
-4. **Training Optimization**: Claude Mythos Preview achieved 52x speedup on CPU-only training implementation (4x expected from a human)
-5. **Agent Orchestration**: "Manager" AI can supervise multiple specialized sub-agents
+Three core patterns enable agents to improve themselves:
 
-### Industry Targets
+| Pattern | Description | RSI Implication |
+|---------|-------------|-----------------|
+| **Workflow Automation** | Goal-oriented loops (plan → execute → observe → improve → repeat) | Model analyzes its own trajectories and failure cases, iterating on progress |
+| **File System as Persistent Memory** | Durable state in files, not context window | Artifacts (logs, diffs, error traces) persist beyond context limits; file ops benefit from model capability improvements |
+| **Sub-agent & Backend Jobs** | Parallel subagent execution with inspectable outputs | Hypothesis search, concurrent experiments; outputs as files enable recovery and reasoning over execution history |
 
-| Lab | Goal | Timeline |
-|-----|------|----------|
-| OpenAI | "Automated AI research intern" | Sept 2026 |
-| Anthropic | "Automated Alignment Researchers" | Ongoing |
-| Sakana AI | RSI Lab Tokyo — sample-efficiency-focused RSI | June 2026 |
-| Mirendil | Dedicated RSI startup | Active |
+### Harness Optimization Progression
 
-## Jack Clark's Probabilistic Forecast
+The optimization target evolves as models become more capable:
 
-From Import AI 455 (May 4, 2026):
-- **30%** probability of automated AI R&D by end of 2027
-- **60%** probability by end of 2028
-- Failure condition: If not achieved by 2028, suggests a fundamental deficiency in current paradigm
+**instruction prompts → structured context → workflow → harness code → optimizer code**
 
-## The Alignment Challenge
+Key systems along this progression:
 
-### Compounding Error Problem
+- **ACE (Agentic Context Engineering)** — Zhang et al. 2025. Context as an evolving playbook of structured bullets (identifier, description). Generator/Reflector/Curator loop. Deterministic merge prevents context collapse during iterative rewrites.
+- **MCE (Meta Context Engineering)** — Ye et al. 2026. Bi-level optimization: meta-level skill evolution searches over context-management mechanisms, base-level optimizes task context. Skills defined as context functions with static (prompts, knowledge) and dynamic (search, filtering) components. Implemented as files in a directory (skill.md + data rollouts).
+- **Meta-Harness** — Lee et al. 2026. Optimizes the *code* that determines what information is stored/retrieved/presented to the model. The proposer is itself a coding agent; output is a collection of harness candidates on the Pareto frontier. Execution history accessed via file system (`grep`, `cat`) rather than prompt context.
 
-Recursive self-improvement turns alignment from a binary problem into a compounding one:
+## Self-Improving Harnesses
 
-> "Unless your alignment approach is '100% accurate'... things can go wrong quite quickly. For example, your technique is 99.9% accurate, then that becomes 95.12% accurate after 50 generations, and 60.5% accurate after 500 generations." — Jack Clark
+Systems that improve their own harness code:
 
-This means even near-perfect alignment techniques become dangerously degraded across multiple self-improvement cycles.
+### STOP (Self-Taught Optimizer)
+Zelikman et al. 2023. A seed improver takes a solution, utility function, and LLM, and returns an improved solution. STOP's goal is not to improve the solution but **to improve the improver itself** via recursive meta-utility optimization.
 
-### Key Risks
-- **Fake Alignment**: AI systems may learn to appear aligned on tests while pursuing different goals
-- **Goal Drift**: Small imperfections compound into unrecognizable objectives
-- **Capability Explosion**: Each generation may be significantly more capable than its predecessor, making correction impossible
-- **Instrumental Convergence**: Aligned intent may still produce dangerous instrumental behaviors
+Discovered strategies: genetic algorithms, decomposing and improving parts, multi-armed prompt bandits, simulated annealing, varying temperature, beam/tree search.
 
-## Engineering vs. Creativity
+> ⚠️ **Caution**: STOP improved mean downstream performance with GPT-4 but *degraded* with weaker models (GPT-3.5, Mixtral). Recursive structure alone is not enough — the base model must be capable enough to improve the mechanism.
 
-Clark distinguishes between "meat and potatoes" engineering and radical paradigm shifts:
-- **What AI can do**: Massive-scale experimentation, hyperparameter tuning, neural architecture search — the "99% perspiration"
-- **What AI may lack**: The "1% inspiration" that produced breakthroughs like Transformers
-- **The bet**: Even without creative genius, sheer volume and speed of experimentation can push the frontier forward
+### Self-Harness
+Zhang et al. 2026. A propose-evaluate-accept loop with three stages:
 
-## Economic Implications
+1. **Weakness mining** — Cluster failures into verifier-grounded failure patterns. Rich failure records (terminal cause, causal status of agent behavior, abstract mechanism) uncover root causes.
+2. **Harness proposal** — Bounded edits based on mined patterns. Prefer recurrent, addressable errors resolvable by narrow changes. Candidates should be distinct and diverse.
+3. **Proposal validation** — Regression tests on held-in (weakness resolved?) and held-out (no new issues?). Accepted candidates merged; rejected ones logged.
 
-### The Amdahl's Law Economy
-As AI accelerates digital work, physical-world bottlenecks (drug trials, manufacturing) become the primary growth constraints. The economy becomes increasingly gated by physical processes rather than cognitive ones.
+Self-Harness learns model-specific harness instructions targeting different weaknesses of different base models.
 
-### The Machine Economy
-Potential emergence of capital-heavy, human-light corporations where AI-run entities trade with each other, creating a parallel economy challenging traditional governance and redistribution models.
+> ⚠️ If a program is allowed to edit the OS system, abstraction boundaries break. Editable surfaces need proper design; permission control and security layers must live outside the improvement loop.
 
-## Industry Evidence (June 2026)
+### Darwin Gödel Machine (DGM)
+Zhang et al. 2025. An LLM-based coding agent explicitly targets the evolution of its own editable harness-code repository:
 
-### Claude Self-Writes >80% of Code
+1. Start with one coding agent in the pool
+2. Pick parent proportional to performance (inversely to children count)
+3. Parent examines its own eval log, proposes improvements to its harness codebase
+4. New agents evaluated; high performers added back to pool
+5. Repeat
 
-In June 2026, Anthropic revealed that **Claude now writes more than 80% of the code merged into its own codebase** — a milestone in recursive self-improvement. The company's internal data shows Claude is accelerating AI development along a "possible path to recursive self-improvement, or AI autonomously building a more capable successor" ([[entities/anthropic]], June 4, 2026).
+DGM-discovered agents are comparable to or outperform handcrafted agents on SWE-bench Verified (20%→50%) and Polyglot (14.2%→30.7%).
 
-### RSI Three-Stage Classification
+Follow-up: **Hyperagents** (Zhang et al. 2026) introduced a meta-agent to control how to modify existing task agents to create new ones.
 
-The Superintelligence newsletter (Kim Isenberg, June 6, 2026) proposes a three-stage taxonomy for understanding RSI progress:
+## Evolutionary Search
 
-| Stage | Name | Status | Description |
-|-------|------|--------|-------------|
-| **Broad RSI** | AI-assisted AI development | Already mainstream | Humans use AI tools (Claude Code, Codex) to accelerate AI research and engineering — the current reality |
-| **Middle RSI** | AI-automated AI R&D | **2026's critical frontier** | AI systems autonomously conduct the majority of AI research and engineering tasks, with humans in supervisory roles |
-| **Hard RSI** | Fully autonomous self-improvement | **Not yet demonstrated** | AI designs and deploys its own successor without meaningful human involvement |
+Evolutionary search is well-suited for harness optimization when: (1) the search space is extensive or weirdly shaped; (2) gradients are hard to compute but solutions are easy to evaluate.
 
-Middle RSI is identified as the most consequential threshold for 2026 — the point at which AI development transitions from human-driven to AI-driven acceleration.
+| System | Year | Key Innovation |
+|--------|------|---------------|
+| **Promptbreeder** | 2023 | Evolution of task prompts AND mutation prompts (self-referential) |
+| **GEPA** | 2025 | Reflection-based prompting + evolutionary search over trajectories |
+| **AlphaEvolve** | 2025 | Coding-agent evolutionary search; `EVOLVE-BLOCK-START/END` markers; meta-prompt co-evolution |
+| **ThetaEvolve** | 2025 | Evolutionary search + RL + in-context learning |
+| **ShinkaEvolve** | 2025 | Sample-efficient parent sampling; code-novelty rejection (cosine similarity); meta-scratchpad for good patterns |
+| **AFlow** | 2025 | MCTS-based workflow optimization over graph representations of agentic workflows |
+| **ADAS** | 2025 | Meta-agent search: meta-agent programs new agent workflows in code, inspired by archive of existing solutions |
 
-### Anthropic's "When AI builds itself" (June 4, 2026)
+### AlphaEvolve Design Details
+Novikov et al. 2025. Key design choices:
+- Prompt includes parent programs, results, instructions, and meta information
+- Code regions for improvement marked with `# EVOLVE-BLOCK-START` and `# EVOLVE-BLOCK-END`
+- Meta-prompt co-evolves with instructions and context
+- Ablations show value of evolution procedure, context, meta-prompts, full-file evolution, and stronger LLMs
 
-Anthropic published a post through their official account (June 4, 2026, 238K views) stating:
+## Auto-Research Workflows
 
-> "Our internal data shows Claude is accelerating AI development — a possible path to recursive self-improvement, or AI autonomously building a more capable successor."
+Expert-designed harnesses coordinating large portions of the research loop:
 
-The post sparked significant debate, with [[entities/gary-marcus]] arguing that the results demonstrated "faster coding — entirely under human control" rather than true AGI, and that "AGI is harder than recursive self-improvement."
+### AI Scientist
+Lu et al. 2026 (Nature). End-to-end pipeline: **propose research ideas → write code → run experiments → analyze results → write manuscript → perform peer review**. Strong demonstration that an expert-designed harness can coordinate auto-research.
 
-### Sam Altman's "The Gentle Singularity" (June 2025)
+### ScientistOne
+Meng et al. 2026. Makes verifiability the central design constraint. Every claim (citation, numerical, methodological, conclusion) must trace to an evidence source and is audited by Chain-of-Evidence checks.
 
-[[entities/openai]] CEO Sam Altman referenced a "larval version of recursive self-improvement" in his essay "The Gentle Singularity" (June 2025), describing early signs of AI systems accelerating AI development before the phenomenon became widely recognized.
+### Autodata
+Kulikov et al. 2026. An agentic data scientist with four roles:
+- **Challenger** — proposes problems (prompt updated iteratively)
+- **Weak solver** — attempts problems
+- **Strong solver** — attempts problems
+- **Verifier/judge** — validates difficulty level
 
-### Historical Context
+Aims to synthesize data at "just right" difficulty (strong solver succeeds, weak solver fails).
 
-The concept of an "intelligence explosion" was first formalized by I.J. Good in 1965:
+> Limitation: synthesized tasks fine-tune weak solvers but not strong solvers — more like indirect distillation than true RSI.
 
-> "Let an ultraintelligent machine be defined as a machine that can far surpass all the intellectual activities of any man however clever. Since the design of machines is one of these intellectual activities, an ultraintelligent machine could design even better machines; there would then unquestionably be an 'intelligence explosion,' and the intelligence of man would be left far behind."
+## Joint Optimization with Model Weights
 
-The 80% code self-writing milestone represents the most concrete empirical evidence to date that Good's theoretical framework may be materializing in practice, at least for the first several iterations of the loop.
+### SIA (Self Improving AI)
+Hebbar et al. 2026. Combines harness improvement and model-parameter updates in the same loop:
+- **Meta-Agent** — proposes initial harness
+- **Task-Specific Agent** — executes tasks
+- **Feedback-Agent** — chooses whether to update harness or model weights based on recent trajectories
 
-## Anthropic Official Declaration (June 2026)
+Direction interesting but evidence provisional (confounded model choices, weak baselines).
 
-On June 4, 2026, the Anthropic Institute published "When AI builds itself" — an official declaration of their stance on recursive self-improvement as their path forward. Authored by Marina Favaro and Jack Clark, the article represents the first time a frontier AI lab has publicly and comprehensively framed RSI as both a strategic imperative and a near-term trajectory.
+## Open Challenges
 
-### Key Declarations
+### 1. Weak and Fuzzy Evaluators
+Many research claims lack fast, precise verifiers. Self-improvement loops work best for tasks with measurable, objective metrics. Research taste, novelty, and long-term scientific value are much harder to measure.
 
-1. **RSI as official path forward**: Anthropic explicitly states it is "delegating a growing share of AI development to AI systems themselves" and frames this as a trend pointing toward "an AI system capable of fully autonomously designing and developing its own successor." While noting RSI is "not inevitable," they argue "it could come sooner than most institutions are prepared for."
+### 2. Context and Memory Lifecycle
+Memory grows as agents become more autonomous. Context engineering will and should become a core part of intelligence, not just a software system layer.
 
-2. **8x code output with Claude's autonomous help**: Engineers now ship 8x as much code per quarter compared to 2021-2025. More than 80% of code merged into Anthropic's codebase is authored by Claude (May 2026). Internal polling of 130 researchers found median estimated 4x productivity gain with Mythos Preview. Claude shipped over 800 bug fixes in one month that reduced a class of API errors 10-fold.
+### 3. Negative Results
+Literature is biased toward successes. LLMs trained on mostly success-heavy data may be bad at deciding when to abandon a hypothesis or report a failure. Research harnesses should make failed attempts easy to preserve — learning from failure trims the task search space.
 
-3. **Research automation advancing**: Claude's success rate on open-ended engineering tasks reached 76% in May 2026 (up 50pp in six months). In April 2026, Anthropic published the first demonstration of a Claude-powered agent running an open-ended research project end-to-end in AI safety. Claude judged better than human researchers at steering ~40% of research decision points.
+### 4. Diversity Collapse
+Evolutionary and RL loops tend to exploit known high-reward patterns. Mechanisms needed to prevent population collapse into variants of the same solution. Critical for open-ended research where the best path may initially look worse under current evaluators.
 
-4. **Trillion-dollar valuation narrative**: The article's framing serves dual purposes — it is simultaneously a technical roadmap and a valuation narrative supporting Anthropic's ~$1T valuation target and imminent IPO (S-1 filed June 2026). By articulating RSI as their explicit strategy, Anthropic positions itself as the lab best positioned to capture the compounding returns of AI-accelerated AI development.
+### 5. Reward Hacking
+A self-improvement loop optimizes whatever signal it is given. If reward comes from unit tests → overfit to tests; from judge model → learn judge-specific tricks; from benchmarks → exploit benchmark artifacts. Evaluator and permission control should sit outside the evolution loop.
 
-5. **AGI-timeline accelerator**: The evidence presented collapses timelines. METR task horizons show doubling every 4 months (up from 7 months). If sustained, AI systems could handle tasks taking a skilled person *weeks* by 2027. The article outlines three scenarios: Continuation (steady acceleration), Acceleration (fast takeoff surpassing human AI R&D), and Failure (plateau from fundamental limitations).
+### 6. Long-Term Success
+Coding agents complete the task at hand but rarely protect long-term repo health (maintainability, ownership boundaries, migration cost, backwards compatibility). Sandbox-based RLVR training rarely captures these concerns.
 
-6. **Policy stance on pausing**: Anthropic expresses desire for a "meaningful slowdown or pause" option but acknowledges practical barriers — requiring multiple well-resourced labs in multiple countries agreeing to stop under verifiable conditions. AI training runs are far easier to conceal than missile silos or centrifuges, making detectability much harder than with other technologies. The world has built verification regimes for other complex technologies (e.g., INF Treaty), but those took decades — "we don't have that long." A unilateral pause is achievable immediately but accomplishes much less. They commit to organizing conversations with policymakers, researchers, and civil society.
+### 7. The Role of Humans
+Humans should move up the stack, not be removed from the loop — providing oversight at the right time and abstraction level.
 
-7. **The narrowing human role**: As AI capabilities advance, the human role narrows at each step — from writing code to reviewing it to choosing which experiments to run. Human review may become the bottleneck as Claude generates code faster than humans can review it. Research taste and judgment (choosing which problems matter, which results to trust) remains a human comparative advantage, but even this may improve in AI systems over time.
+## Benchmarks for RSI Evaluation
 
-8. **Code quality approaching parity**: Claude's success rate on open-ended tasks reached 76% (May 2026, up 50pp in 6 months). Many Anthropic staff believe Claude-written code quality was worse than human in late 2025 but is roughly at parity today, expected to surpass within the year. An automated Claude code reviewer would have caught roughly a third of bugs behind past incidents on claude.ai before production.
+| Benchmark | Task | Current Best |
+|-----------|------|-------------|
+| **PaperBench** | Replicate ICML 2024 papers from scratch | Claude 3.5 Sonnet ~21% |
+| **CORE-Bench** | Computational reproducibility of published research | GPT-4o ~21% (hardest) |
+| **ScienceAgentBench** | Data-driven scientific discovery (102 tasks) | — |
+| **RE-Bench** | ML research-engineering vs human experts (7 envs) | AI 4× higher at 2h; humans better at 8h+ |
+| **MLE-bench** | Kaggle ML competitions (75 tasks) | o1-preview + AIDE: 16.9% bronze |
+| **KernelBench** | GPU kernel generation (250 tasks) | — |
+| **TerminalBench-2** | Coding agent benchmark | — |
 
-9. **Training speedup capability**: Claude Mythos Preview achieved ~52x speedup on CPU-only training implementation (vs. ~4x from a skilled human in 4-8 hours). Like-for-like improvement across models: ~3x to ~52x over the past year.
+## Related Concepts
 
-10. **Infrastructure strain**: GitHub saw ~1 billion commits in all of 2025; by mid-2026 it saw 275 million per week (~14 billion/year pace), "pushing incredibly hard" on capacity.
+- [[concepts/harness-engineering]] — The broader harness engineering discipline; RSI is the frontier where harnesses improve themselves
+- [[concepts/context-engineering]] — Context optimization as a core RSI capability
+- [[concepts/evaluation/reward-hacking]] — Key challenge for self-improvement loops
+- [[concepts/evolutionary-algorithms]] — Optimization method underlying many RSI systems
+- [[concepts/test-time-compute]] — Complementary scaling dimension to harness-based RSI
+- [[concepts/security-and-governance/ai-safety-and-alignment]] — RSI raises fundamental safety concerns (permission control, abstraction boundaries)
+- [[entities/lilian-weng]] — Author of the comprehensive RSI-through-harness survey
 
-### Community Response
+## Sources
 
-The article sparked a **692-comment Hacker News discussion** ([thread](https://news.ycombinator.com/item?id=...)), indicating the scale of community engagement and concern. Key themes included:
-
-- **Skepticism about "8x"**: Many commenters questioned whether lines-of-code is a meaningful productivity metric, noting that AI-generated code may require more review and refactoring
-- **Gary Marcus's critique**: Characterized the capability as "faster coding — entirely under human control," arguing true AGI/RSI requires more than code generation speed
-- **Safety concerns**: Debates about whether Anthropic's safety-first framing is genuine or a competitive positioning strategy
-- **Governance urgency**: Recognition that verification regimes (like INF Treaty) took decades to build — time the AI community may not have
-
-This official declaration elevates RSI from a theoretical concept discussed by researchers to a stated corporate strategy with trillions of dollars of capital aligned behind it.
-
-
-## Related
-
-- [[entities/jack-clark]] — Key source, 60% prediction by end 2028
-- [[entities/anthropic]] — Automated Alignment Researchers initiative
-- [[concepts/security-and-governance/ai-safety]] — Alignment risks
-- [[concepts/automated-alignment-research]] — Anthropic's AAR program
-- [[concepts/model-distillation]] — Related capability advancement pathway
-- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration as enabling capability
-- [[entities/openai]] — "Automated AI research intern" target
+- [1] Good, I.J. "Speculations Concerning the First Ultraintelligent Machine." *Advances in Computers*, 1965.
+- [2] Yudkowsky, Eliezer. "Recursive Self-Improvement." LessWrong, 2008.
+- [3] Weng, Lilian. ["Harness Engineering for Self-Improvement"](https://lilianweng.github.io/posts/2026-07-04-harness/). Lil'Log, Jul 2026. — Primary survey source.
+- [4] Zhang et al. "ACE: Agentic Context Engineering." ICLR 2026.
+- [5] Ye et al. "Meta Context Engineering via Agentic Skill Evolution." arXiv 2026.
+- [6] Lee et al. "Meta-Harness: End-to-End Optimization of Model Harnesses." arXiv 2026.
+- [7] Zelikman et al. "STOP: Recursively Self-Improving Code Generation." COLM 2024.
+- [8] Zhang et al. "Self-Harness: Harnesses That Improve Themselves." arXiv 2026.
+- [9] Zhang et al. "Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents." arXiv 2025.
+- [10] Novikov et al. "AlphaEvolve: A coding agent for scientific and algorithmic discovery." arXiv 2025.
+- [11] Lu et al. "Towards end-to-end automation of AI research." *Nature*, 2026.
+- [12] Meng et al. "ScientistOne: Towards Human-Level Autonomous Research via Chain-of-Evidence." arXiv 2026.
+- [13] Kulikov et al. "Autodata: An agentic data scientist to create high quality synthetic data." arXiv 2026.
+- [14] Hu, Lu, and Clune. "Automated Design of Agentic Systems." ICLR 2025.
+- [15] Zhang et al. "AFlow: Automating Agentic Workflow Generation." ICLR 2025.
+- [16] Hebbar et al. "SIA: Self Improving AI with Harness & Weight Updates." arXiv 2026.
+- [17] Fernando et al. "Promptbreeder: Self-Referential Self-Improvement Via Prompt Evolution." arXiv 2023.
+- [18] Agrawal et al. "GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning." arXiv 2025.
+- [19] Zhang et al. "Hyperagents." arXiv 2026.
+- [20] Wang et al. "ThetaEvolve: Test-time Learning on Open Problems." arXiv 2025.
+- [21] Lange et al. "ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution." arXiv 2025.

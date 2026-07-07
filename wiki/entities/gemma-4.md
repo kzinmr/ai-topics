@@ -2,7 +2,7 @@
 title: Google Gemma 4
 type: entity
 created: 2026-04-10
-updated: 2026-06-13
+updated: 2026-07-07
 tags:
   - entity
   - model
@@ -25,6 +25,8 @@ related:
 sources:
 - raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
 - raw/articles/2026-06-07_xeophon_gemma-4-e4b-daily-local-model.md
+- https://arxiv.org/abs/2607.02770
+- raw/papers/gemma4-technical-report.pdf
 - https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/
 - https://huggingface.co/google/gemma-4-E4B-it
 - https://huggingface.co/lmstudio-community/gemma-4-E4B-it-GGUF
@@ -291,6 +293,119 @@ Gemma 4 uses standard MoE with **per-token routing** — all 26B weights must re
 Apple's evaluation uses human graders only (no public benchmarks like MMLU or HumanEval), making direct benchmark comparison impossible. A summer 2026 technical report may provide more data.
 
 See also: [[concepts/apple-foundation-models]]
+
+## Technical Report (arXiv:2607.02770, July 2026)
+
+The official [Gemma 4 Technical Report](https://arxiv.org/abs/2607.02770) (17 pages, 300+ authors from Google DeepMind) was published on July 2, 2026. Key findings not covered elsewhere in this page:
+
+### Detailed Parameter Breakdown (Table 1)
+
+| Component | E2B | E4B | 12B | 26B-A4B* | 31B |
+|-----------|-----|-----|-----|----------|-----|
+| Audio Encoder | 305M | 305M | — | — | — |
+| Vision Encoder | 150M | 150M | — | 550M | 550M |
+| Embedder | 400M + 2,340M | 670M + 2,820M | 1,000M | 740M | 1,410M |
+| Einsums (Transformer) | 1,870M | 3,940M | 10,890M | 24,500M / 2,800M (active) | 29,290M |
+| Drafter (MTP) | 76M | 77M | 400M | 430M | 500M |
+| Vocabulary | 262K entries | 262K entries | 262K entries | 262K entries | 262K entries |
+
+### Arena Text Elo Rankings (Table 4, as of June 19, 2026)
+
+Gemma 4 models on [Chatbot Arena](https://lmarena.ai/) human evaluations:
+
+| Model | Elo | Type | Params |
+|-------|-----|------|--------|
+| Gemma 4 31B | 1451 ± 8 | Dense | 31B |
+| Gemma 4 26B-A4B | 1438 ± 8 | MoE | 26B/4B |
+| Gemma 3 27B | 1366 ± 4 | Dense | 27B |
+
+Gemma 4 31B is the **leading dense open model** on Arena. Both Gemma 4 models rival much larger open models (e.g., DeepSeek V4 Pro Thinking 1458, GLM 5 1457, Kimi K2.5 Thinking 1450).
+
+### Thinking Mode Benchmarks (Table 5)
+
+Full performance comparison in thinking mode (unless noted):
+
+| Benchmark | 31B | 26B-A4B | 12B | E4B | E2B | Gemma 3 27B (non-thinking) |
+|-----------|-----|---------|-----|-----|-----|---------------------------|
+| MMLU Pro | 85.2 | 82.6 | 77.2 | 69.4 | 60.0 | 67.6 |
+| AIME 2026 (no tools) | 89.2 | 88.3 | 77.5 | 42.5 | 37.5 | 20.8 |
+| LiveCodeBench v6 | 80.0 | 77.1 | 72.0 | 52.0 | 44.0 | 29.1 |
+| Codeforces Elo | 2150 | 1718 | 1659 | 940 | 633 | 110 |
+| GPQA Diamond | 84.3 | 82.3 | 78.8 | 58.6 | 43.4 | 42.4 |
+| BB Extra Hard | 74.4 | 64.8 | 53.0 | 33.1 | 21.9 | 19.3 |
+| HLE | 19.5 | 8.7 | 5.2 | — | — | — |
+| HLE w/ search | 26.5 | 17.2 | — | — | — | — |
+| IFEval | 98.9 | 98.5 | 97.2 | 96.7 | 94.6 | 90.4 |
+| MMMLU | 88.4 | 86.3 | 83.4 | 76.6 | 67.4 | 70.7 |
+| MRCR v2 128k (8-needle) | 66.4 | 44.1 | 43.4 | 25.4 | 19.1 | 13.5 |
+| Terminal Bench Hard | 36.0 | 14.0 | 18.0 | 8.0 | 3.0 | 4.0 |
+| Tau2 – airline | 75.0 | 76.0 | 75.0 | 52.0 | 31.0 | 39.0 |
+| Tau2 – retail | 86.4 | 85.5 | 77.6 | 67.1 | 34.6 | 6.6 |
+| Tau2 – telecom | 69.3 | 43.0 | 54.4 | 18.4 | 19.7 | 3.1 |
+
+### Vision Benchmarks (Table 6, thinking mode, max resolution 1120 tokens)
+
+| Benchmark | 31B | 26B-A4B | 12B | E4B | E2B | Gemma 3 27B |
+|-----------|-----|---------|-----|-----|-----|-------------|
+| MMMU Pro | 76.9 | 73.8 | 69.1 | 52.6 | 44.2 | 49.7 |
+| MATH-Vision | 85.6 | 82.4 | 79.7 | 59.5 | 52.4 | 46.0 |
+| MedXPertQA MM | 61.3 | 58.1 | 48.7 | 28.7 | 23.5 | — |
+| InfographicVQA | 92.0 | 89.3 | 88.4 | 70.0 | 63.9 | 70.6 |
+| OmniDocBench 1.5 ↓ | 0.131 | 0.149 | 0.164 | 0.181 | 0.290 | 0.365 |
+
+### Long-Context Performance (Table 9, non-thinking)
+
+| Benchmark | Context | 31B | 26B-A4B | 12B | E4B | E2B | Gemma 3 27B |
+|-----------|---------|-----|---------|-----|-----|-----|-------------|
+| RULER Accuracy | 32k | 96.8 | 97.3 | 96.4 | 95.2 | 83.0 | 91.1 |
+| RULER Accuracy | 128k | 96.4 | 89.8 | 91.2 | 86.6 | 70.4 | 66.0 |
+| LOFT Text Retrieval | 128k | 79.5 | 66.3 | 66.4 | 58.5 | 50.5 | 8.6 |
+| GraphWalks F1 | <128k | 82.3 | 72.6 | 71.0 | 50.9 | 4.1 | 32.8 |
+| MTOB (eng→kgv) | ~128k | 52.9 | 50.0 | 45.1 | 37.8 | 15.4 | 41.0 |
+| MTOB (eng→kgv) | ~256k | 54.3 | 48.9 | 41.9 | — | — | — |
+
+### Audio Performance (E2B/E4B, Table 7)
+
+- **CoVoST translation** (XX→EN): Gemma 4 E2B averages 35.4 BLEU, E4B averages 38.2 BLEU — 12%/10% relative improvement over Gemma 3n
+- **FLEURS ASR**: E2B averages 0.090 WER, E4B averages 0.075 — 17%/12% relative improvement over Gemma 3n
+- Audio encoder reduced from 390 MB to **87 MB** (78% on-disk reduction) via quantization
+
+### Pre-training Infrastructure (Table 2)
+
+| Model | TPU | Chips | Data Shards | Seq Shards | Replica Shards |
+|-------|-----|-------|-------------|------------|----------------|
+| E2B | v6e | 4,096 | 16 | 8 | 32 |
+| E4B | v6e | 6,144 | 16 | 16 | 24 |
+| 12B | v5p | 12,288 | 16 | 16 | 48 |
+| 26B-A4B | v6e | 6,144 | 16 | 16 | 24 |
+| 31B | v6e | 10,240 | 16 | 16 | 40 |
+
+Uses ZeRO-3 optimizer sharding, Pathways distributed dataflow, JAX single-controller paradigm, GSPMD partitioner, and MegaScale XLA compiler. Slice-Granularity Elasticity enables continuous training despite TPU chip failures.
+
+### Architecture Highlights
+
+- **Attention pattern**: 5:1 local-to-global ratio (4:1 for E2B), with KV cache sharing (20/35 for E2B, 18/42 for E4B)
+- **Positional encoding**: p-RoPE (p=0.25) on global layers, RoPE on local layers — reduces global KV cache by **37.5%**
+- **Key reuse**: values = keys in global attention layers (except E2B/E4B), further reducing memory
+- **RoPE frequencies**: 1M (global), 10k (local)
+- **Pre/post-norm**: RMSNorm with QKNorm
+- **Tokenizer**: SentencePiece with 262K vocabulary (same as Gemini 2.5)
+
+### Quantization (Table 3)
+
+| Model | bf16 (GB) | Quantized (GB) | + KV Cache 32k |
+|-------|-----------|----------------|-----------------|
+| E2B | 4.6 | 0.8 (mobile) | +0.05 |
+| E4B | 9.0 | 2.3 (mobile) | +0.14 |
+| 12B | 24.0 | 7.65 (Q4_0) | +0.28 |
+| 26B-A4B | 52.0 / 7.6 active | 16.2/2.8 (Q4_0) | +0.28 |
+| 31B | 64.0 | 19.2 (Q4_0) | +1.10 |
+
+Two quantization formats: **mobile** (per-channel int2/int4 weights, int8 activations) and **Q4_0** (blockwise). Vision encoder W8A8 yields 2× memory reduction, 44% latency reduction. Audio encoder achieves 78% on-disk footprint reduction.
+
+### Safety & Responsibility
+
+Gemma 4 underwent the same rigorous safety evaluations as Gemini models. Key policies: CSAM prevention, dangerous content blocking, hate speech filtering, harassment prevention, sexually explicit content filtering. All testing conducted **without safety filters** to evaluate inherent model behavior. Significant improvements over Gemma 3/3n in all safety categories with low unjustified refusals.
 
 ## Sources
 |- raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
