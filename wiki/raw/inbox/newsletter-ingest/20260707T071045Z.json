@@ -1,0 +1,210 @@
+{
+  "run_id": "20260707T071045Z",
+  "triaged_at": "2026-07-07T07:15:00Z",
+  "processed_count": 6,
+  "summary": "6 newsletters ingested. Dominant theme: Fable 5 coverage across 3 independent sources (Import AI, AI by Aakash, AINews/Swyx). Secondary: Tencent open frontier model, NVIDIA GPU debt/infrastructure economics. All raw digests contain only redirect URLs (substack/beehiiv) — no inline article text. Downstream wiki-ingest should resolve primary article URLs via open.substack.com direct links where available.",
+
+  "newsletters": [
+    {
+      "uid": "331",
+      "subject": "Import AI 464: Fables writes GPU kernels; AI automation; and analog computation",
+      "source": "Import AI (Jack Clark)",
+      "date": "2026-07-06",
+      "raw_path": "wiki/raw/newsletters/2026-07-06-import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation.md",
+      "primary_url": "https://open.substack.com/pub/importai/p/import-ai-464-fables-writes-gpu-kernels",
+      "classification": "high",
+      "wiki_relevance": [
+        {
+          "topic": "Fable 5 writes GPU kernels",
+          "importance": "critical",
+          "existing_pages": ["concepts/claude/fable-5", "comparisons/claude-mythos-preview-vs-mythos5-fable5"],
+          "action": "update",
+          "notes": "New capability: AI-generated GPU kernels. Update fable-5.md with kernel-writing capability. Potential new concept page for AI-generated code at the systems/infra level (beyond application code)."
+        },
+        {
+          "topic": "AI automation",
+          "importance": "high",
+          "existing_pages": ["concepts/ai-agents", "concepts/ai-coding-agents"],
+          "action": "update",
+          "notes": "Broad topic — need article content to determine specifics. Likely agent/workflow automation developments."
+        },
+        {
+          "topic": "Analog computation for AI",
+          "importance": "medium",
+          "existing_pages": [],
+          "action": "new_concept_candidate",
+          "notes": "Emerging topic: analog/neuromorphic compute for AI workloads. If substantiated, create concept page under concepts/."
+        }
+      ]
+    },
+    {
+      "uid": "332",
+      "subject": "🎙️ How I AI: Sonnet 5 review & How to run autonomous coding agents from your phone",
+      "source": "Lenny's Newsletter (How I AI)",
+      "date": "2026-07-06",
+      "raw_path": "wiki/raw/newsletters/2026-07-06-how-i-ai-sonnet-5-review-how-to-run-autonomous-coding-agents-from-your-phone.md",
+      "primary_url": "https://open.substack.com/pub/lenny/p/how-i-ai-sonnet-5-review-and-how",
+      "classification": "high",
+      "wiki_relevance": [
+        {
+          "topic": "Sonnet 5 review",
+          "importance": "high",
+          "existing_pages": ["concepts/claude/fable-5", "entities/anthropic"],
+          "action": "new_or_update",
+          "notes": "Sonnet 5 likely refers to Claude Sonnet 5 (Anthropic). If distinct model from Fable 5/Mythos 5, may need new entity page. Otherwise update existing Claude model hierarchy."
+        },
+        {
+          "topic": "Autonomous coding agents from phone",
+          "importance": "high",
+          "existing_pages": ["concepts/ai-coding-agents"],
+          "action": "update",
+          "notes": "Mobile-first autonomous coding agent workflow. Relevant to coding agent accessibility and remote development patterns."
+        }
+      ]
+    },
+    {
+      "uid": "333",
+      "subject": "🐉 Tencent's Open Model Crashes the Frontier",
+      "source": "AI by Aakash (beehiiv)",
+      "date": "2026-07-06",
+      "raw_path": "wiki/raw/newsletters/2026-07-06-tencent-s-open-model-crashes-the-frontier.md",
+      "primary_url": null,
+      "classification": "critical",
+      "wiki_relevance": [
+        {
+          "topic": "Tencent open model reaches frontier",
+          "importance": "critical",
+          "existing_pages": ["entities/tencent", "entities/tencent-hy3", "concepts/open-source-ai"],
+          "action": "update",
+          "notes": "Tencent releasing an open model that competes at frontier level. Major event for open-source AI and Chinese AI competitiveness. Update tencent.md and potentially create event page. beehiiv links need resolution — no direct article URL available from digest."
+        }
+      ]
+    },
+    {
+      "uid": "334",
+      "subject": "Fable 5 is back. Stop Wasting It on Tasks Sonnet Can Do",
+      "source": "AI by Aakash (Substack)",
+      "date": "2026-07-06",
+      "raw_path": "wiki/raw/newsletters/2026-07-06-fable-5-is-back-stop-wasting-it-on-tasks-sonnet-can-do.md",
+      "primary_url": "https://open.substack.com/pub/aibyaakash/p/fable-5",
+      "classification": "high",
+      "wiki_relevance": [
+        {
+          "topic": "Fable 5 vs Sonnet task allocation",
+          "importance": "high",
+          "existing_pages": ["concepts/claude/fable-5"],
+          "action": "update",
+          "notes": "Practical guidance on model selection: when to use Fable 5 vs cheaper Sonnet models. Update fable-5.md with usage best practices / cost-efficiency guidance."
+        }
+      ]
+    },
+    {
+      "uid": "335",
+      "subject": "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity: Capital, Offtake and Datacenters",
+      "source": "SemiAnalysis (Substack)",
+      "date": "2026-07-06",
+      "raw_path": "wiki/raw/newsletters/2026-07-06-nvidia-gpu-debt-backstop-unleashes-the-ai-project-trinity-capital-offtake-and-da.md",
+      "primary_url": "https://open.substack.com/pub/semianalysis/p/nvidia-gpu-debt-backstop-unleashes",
+      "classification": "high",
+      "wiki_relevance": [
+        {
+          "topic": "NVIDIA GPU debt backstop financing model",
+          "importance": "high",
+          "existing_pages": ["entities/semianalysis", "entities/nvidia", "concepts/gpu-cloud-rankings", "concepts/compute-scaling-bottlenecks"],
+          "action": "update",
+          "notes": "NVIDIA's financial engineering: debt backstop for AI infrastructure projects. The 'Trinity' = capital + offtake + datacenters. Significant for AI infrastructure economics. Update semianalysis.md and relevant infrastructure concept pages."
+        }
+      ]
+    },
+    {
+      "uid": "336",
+      "subject": "[AINews] The Field Guide to Fable",
+      "source": "AINews (swyx)",
+      "date": "2026-07-07",
+      "raw_path": "wiki/raw/newsletters/2026-07-07-ainews-the-field-guide-to-fable.md",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-the-field-guide-to-fable",
+      "classification": "critical",
+      "wiki_relevance": [
+        {
+          "topic": "Comprehensive Fable field guide",
+          "importance": "critical",
+          "existing_pages": ["concepts/claude/fable-5", "concepts/claude/designing-loops-with-fable-5"],
+          "action": "update",
+          "notes": "AINews comprehensive guide to Fable. High signal — swyx's AINews typically includes curated links, technical deep-dives, and community reactions. Core article for Fable 5 wiki page enrichment."
+        }
+      ]
+    }
+  ],
+
+  "top_entities_to_update": [
+    {
+      "entity": "concepts/claude/fable-5",
+      "priority": "critical",
+      "reason": "3 out of 6 newsletters cover Fable 5: Import AI (GPU kernels), AINews (field guide), AI by Aakash (task allocation). Major capability update and ecosystem maturation.",
+      "suggested_updates": [
+        "Add GPU kernel writing capability",
+        "Add model selection guidance (Fable 5 vs Sonnet)",
+        "Add links to field guide resources",
+        "Check if export controls status has changed since last update"
+      ]
+    },
+    {
+      "entity": "entities/tencent",
+      "priority": "critical",
+      "reason": "Tencent open model reaching frontier level — major open-source AI milestone.",
+      "suggested_updates": [
+        "Add new frontier model details once article content is resolved",
+        "Update open-source-ai concept page",
+        "Potentially create event page for this release"
+      ]
+    },
+    {
+      "entity": "entities/semianalysis",
+      "priority": "high",
+      "reason": "New SemiAnalysis analysis on NVIDIA GPU financing.",
+      "suggested_updates": [
+        "Add NVIDIA GPU debt backstop analysis to semianalysis.md",
+        "Update compute-scaling-bottlenecks concept with financing angle",
+        "Potentially create concept page for AI infrastructure financing models"
+      ]
+    }
+  ],
+
+  "new_concept_candidates": [
+    {
+      "topic": "Analog computation for AI",
+      "source_uid": "331",
+      "description": "Import AI covers analog computation — could be neuromorphic, in-memory compute, or hybrid analog-digital approaches for AI inference.",
+      "threshold": "Needs article content to determine if concept page is warranted"
+    },
+    {
+      "topic": "AI GPU kernel generation",
+      "source_uid": "331",
+      "description": "AI models writing GPU kernels (Triton, CUDA) as a capability milestone. Distinct from general code generation.",
+      "threshold": "Likely warrants concept page if Fable 5 kernel writing is verified and benchmarked"
+    },
+    {
+      "topic": "AI infrastructure financing",
+      "source_uid": "335",
+      "description": "NVIDIA debt backstop model, GPU-as-collateral, offtake agreements for AI compute.",
+      "threshold": "Warrants concept page if this is a new financing pattern in the industry"
+    }
+  ],
+
+  "cross_newsletter_theme": {
+    "dominant": "Fable 5 ecosystem maturation",
+    "description": "3/6 newsletters focus on Fable 5 — capability expansion (GPU kernels), practical usage guides (task allocation), and comprehensive field guides. This signals Fable 5 has moved from initial release (June 2026) to ecosystem adoption phase.",
+    "wiki_implications": [
+      "fable-5.md needs a significant update with multiple new sections",
+      "Consider creating a dedicated comparison: fable-5-vs-sonnet-for-tasks",
+      "GPU kernel writing may warrant its own concept page under concepts/ai-code-generation/"
+    ]
+  },
+
+  "downstream_notes": [
+    "All 6 newsletters are redirect-only (substack/beehiiv tracking URLs). The newsletter-wiki-ingest step must resolve primary article URLs to scrape full content.",
+    "Primary URLs (open.substack.com direct links) are available for 5/6 newsletters and should be used instead of redirect links.",
+    "Beehiiv newsletter (uid=333) has no direct URL — all links are beehiiv tracking redirects. Need alternative resolution.",
+    "Total unique articles to resolve: ~118 links, but many are substack infrastructure (like/share/comment/reaction links). Effective unique content articles estimated at ~15-20."
+  ]
+}

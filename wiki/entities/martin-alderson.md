@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-06-23
+updated: 2026-07-07
 tags:
   - person
   - blogger
@@ -20,6 +20,7 @@ sources:
   - raw/articles/martinalderson.com--posts-xais-new-rental-business--bb5df5aa.md
   - raw/articles/martinalderson.com--posts-a-brief-history-of-kv-cache-compression-developments--c7414ee7.md
   - raw/articles/martinalderson.com--posts-expert-aware-quantisation--532b8e2a.md
+  - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-1-glm-5-2--20d7e445.md
 ---
 
 
@@ -75,6 +76,19 @@ Martin consistently applies rigorous arithmetic to debunk AI hype and uncover ge
 - **"The Coming AI Compute Crunch"** — argued DRAM shortages (not capital expenditure) will define AI infrastructure growth through 2027
 - **"Are we really repeating the telecoms crash with AI datacenters?"** — compared token demand growth and capacity utilization to the 2000s telecom bubble, finding the economics don't match
 - **"Are OpenAI and Anthropic Really Losing Money on Inference?"** — deconstructed real costs, suggesting economics may be far more profitable than commonly claimed
+
+#### Open-Weight Margin Collapse (July 2026)
+
+Martin's July 2026 analysis of GLM 5.2 as the first open-weights model reaching Opus/GPT quality in practice, with significant implications for frontier lab inference margins:
+
+- **GLM 5.2 breakthrough**: The first open-weights model that genuinely reaches Opus/GPT quality for everyday use, making it a credible drop-in replacement for frontier API inference
+- **Frontier inference margins**: Analysis suggesting frontier labs operate at ~90% gross margin on API inference — the core business model is training once, then amortising over very profitable inference
+- **Drop-in replacement viability**: Both Z.ai and Fireworks offer OpenAI/Anthropic compatible endpoints, making migration trivial — just change the base URL. Switching costs far lower than keeping up with frontier lab policy changes
+- **Cost analysis**: GLM 5.2 at ~$4.40/MTok vs Opus at ~$25/MTok (~20% cost), potentially 50%+ cheaper after accounting for GLM's longer thinking token usage, for very similar quality
+- **AMD inference efficiency**: Wafer/Zenith's analysis showing 2.75x cheaper per token on AMD vs Nvidia Blackwell for running GLM 5.2
+- **Structural thesis**: Open weights fundamentally break the frontier inference margin moat — when a drop-in replacement exists at 20% of the cost, the ~90% gross margins on frontier API inference are unsustainable
+
+Source: [[raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-1-glm-5-2--20d7e445.md]]
 
 ### xAI as Datacentre REIT (June 2026)
 

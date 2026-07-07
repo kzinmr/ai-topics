@@ -1,3 +1,9 @@
+## [2026-07-07 07:50 UTC] blog-wiki-ingest | 2 pages enriched from 1 blog take
+
+- **Enriched** [[concepts/ai-industry-economics]] — 137→186 lines. Added Open-Weight Margin Collapse section: GLM 5.2 as open-weights Opus competitor, ~90% gross inference margin analysis, drop-in replacement migration, cost comparison ($4.40 vs $25/MTok), AMD 2.75x inference efficiency, structural implications. Source: Martin Alderson margin collapse part 1.
+- **Enriched** [[entities/martin-alderson]] — 288→302 lines. Added Open-Weight Margin Collapse subsection under AI Compute Economics. GLM 5.2 breakthrough, frontier margin analysis, cost comparison, AMD efficiency, structural thesis.
+- Updated index.md and log.md for all changes.
+
 ## [2026-07-07 07:40 UTC] newsletter-wiki-ingest | 7 pages enriched from 6 newsletters
 
 - **Enriched** [[concepts/claude/fable-5]] — 425→543 lines. Added 3 new Post-Redeployment sections: GPU Kernel Generation (18.71× CUDA speedup on KernelBench-Mega), Thariq Shihipar's Field Guide (unhobbling, blindspot passes, grief management, "tradeoffs are not real"), Fable 5 Return Aftermath & Sonnet Guidance (99% blocker, government pre-release deal). Sources: Import AI 464, AI by Aakash, AINews.

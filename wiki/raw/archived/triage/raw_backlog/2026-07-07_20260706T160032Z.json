@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-07-07T04:10:51.562918+00:00",
+  "triage_run_id": "20260706T160032Z",
+  "source": "raw_backlog",
+  "summary_ja": "5件全て既存Wikiでカバー済み。Takes=0のため新規ページ作成・更新なし。内訳：既存エンティティ/概念ページで完全捕捉4件（Drexler/CAIS、MAI-Thinking-1、BenchFlow/Awesome Evals、Grant Sanderson）、非AIスキップ1件（WebKit/Safari 27）。うち3件は既にアーカイブ済み。",
+  "decisions": [
+    {
+      "item_id": "raw-2",
+      "source": "raw_backlog",
+      "source_name": "Microsoft AI Team",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report",
+      "url": null,
+      "raw_path": "wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ 既存Wikiで完全カバー済み。MAI-Thinking-1エンティティページ(55行)がベンチマーク・訓練インフラ・安全性を網羅、MAI-Thinking-1 Tech Report概念ページ(227行)がアーキテクチャ詳細・スケーリングラダー・GRPO訓練を詳細記述。本日2026-07-06にエンティティページ拡充済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-"
+    },
+    {
+      "item_id": "raw-3",
+      "source": "raw_backlog",
+      "source_name": "BenchFlow",
+      "title": "Awesome Agent Evals — Curated Library of Agent Evaluation Resources",
+      "url": null,
+      "raw_path": "wiki/raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 既存Wikiでカバー済み。BenchFlow概念ページ(76行)にAwesome Agent Evals一覧の10セクション要約表、PATTERNS.md、agent-evaluationへの接続を記載。443+リンクの厳選リストの核は捕捉済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Awesome Agent Evals [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n> A curated, opinionated, **non-BS** library of the best resources for **building and evaluating AI agents** — papers, blog posts, talks, courses, tools, and benchmarks.\nMaintained by [**BenchFlow**](https://benchfl"
+    }
+  ]
+}

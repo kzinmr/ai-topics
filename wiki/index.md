@@ -469,7 +469,7 @@
 - [[entities/mark-chen]] — Mark Chen
 - [[entities/mark-mcquade]] — Mark McQuade
 - [[entities/mark-saroufim]] — Mark Saroufim
-- [[entities/martin-alderson]] — Martin Alderson; added Machine Learning Research section with expert-aware quantization for MoE models (June 23)
+- [[entities/martin-alderson]] — Martin Alderson; ML Research + Open-Weight Margin Collapse section (July 7)
 - [[entities/martin-fowler]] — Martin Fowler (redirect)
 - [[entities/martin-kleppmann]] — Martin Kleppmann
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
@@ -1068,7 +1068,7 @@
 - [[concepts/ai-image-generation]] — AI Image Generation
 - [[concepts/ai-in-military-wargames]] — AI in Military Wargames
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
-- [[concepts/ai-industry-economics]] — AI Industry Economics — The June 2026 Financial Reckoning
+- [[concepts/ai-industry-economics]] — AI Industry Economics — The June 2026 Financial Reckoning + GLM 5.2 margin collapse (2026-07-07)
 - [[concepts/ai-industry-financial-sustainability]] — AI Industry Financial Sustainability
 - [[concepts/ai-industry-news]] — AI Industry News (The Signal — Apr 26)
 - [[concepts/ai-inventorship-patent-law]] — AI Inventorship & Patent Law — Legal status of AI as inventor on patent applications; Japan Supreme Court 2026 ruling, DABUS cases, international comparison
