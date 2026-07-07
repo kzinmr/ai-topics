@@ -1,3 +1,22 @@
+## [2026-07-07 17:35 UTC] watchdog | Auto-fix and health report
+
+**Auto-fixed (2):**
+- `entities/armin-ronacher.md` — Fixed pipe-prefixed (`|-`) list item on line 256 → normalized to `-`
+- `queries/wiki-graph-analysis-weekly-2026-07-05.md` — Fixed 15 quadruple-bracket (`[[[[`) wikilinks → normalized to `[[`
+
+**Verified clean (no action needed):**
+- `index.md` — 0 corruption (validate_index.py ✅, 2703 lines)
+- Tag violations — 0 (tag taxonomy clean)
+- Missing `sources` field — 0 (down from 684 in earlier reports)
+- Stale/ghost index entries — 0 (subdirectory files confirmed)
+- Active wiki pages — 0 residual corruption after fixes
+
+**Needs attention (2):**
+- **Subdirectory concept index gap**: 41 subdirectory concept pages (`harness-engineering/agentic-workflows/*`, `harness-engineering/system-architecture/*`, etc.) exist on disk but aren't in `index.md`. They're navigable via `_index.md` subdirectory files. Needs human decision on whether to add to main index.
+- **Pipeline: x-accounts-scan stale (~26h)**: Reported stale by pipeline watchdog. Job runs every 2 days — likely within normal schedule.
+
+---
+
 ## [2026-07-07 11:00 UTC] active-crawl | 4 new pages from trending HN/X topics
 
 **active-crawl**: Created 4 new wiki pages from trending topics (July 3-7, 2026):

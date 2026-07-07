@@ -72,21 +72,21 @@ sources: []
 
 ### Top Broken Targets (pages that need creating)
 
-- [[[[concepts/context-engineering]]]] — 120 references
-- [[[[concepts/security-and-governance/ai-safety]]]] — 67 references
-- [[[[concepts/harness-engineering/agent-harness]]]] — 60 references
-- [[[[concepts/coding-agents/coding-agents]]]] — 46 references
-- [[[[concepts/post-training/grpo-rl-training]]]] — 34 references
-- [[[[concepts/security-and-governance/agent-sandboxing]]]] — 33 references
-- [[[[concepts/post-training/grpo]]]] — 31 references
-- [[[[concepts/local-llm/_index]]]] — 30 references
-- [[[[concepts/anthropic/managed-agents]]]] — 30 references
-- [[[[concepts/post-training/rlhf]]]] — 30 references
-- [[[[concepts/security-and-governance/agent-governance]]]] — 29 references
-- [[[[concepts/evaluation/ai-evals]]]] — 26 references
-- [[[[concepts/claude/mythos]]]] — 23 references
-- [[[[concepts/claude-code/claude-code]]]] — 23 references
-- [[[[concepts/claude/fable-5]]]] — 21 references
+- [[concepts/context-engineering]] — 120 references
+- [[concepts/security-and-governance/ai-safety]] — 67 references
+- [[concepts/harness-engineering/agent-harness]] — 60 references
+- [[concepts/coding-agents/coding-agents]] — 46 references
+- [[concepts/post-training/grpo-rl-training]] — 34 references
+- [[concepts/security-and-governance/agent-sandboxing]] — 33 references
+- [[concepts/post-training/grpo]] — 31 references
+- [[concepts/local-llm/_index]] — 30 references
+- [[concepts/anthropic/managed-agents]] — 30 references
+- [[concepts/post-training/rlhf]] — 30 references
+- [[concepts/security-and-governance/agent-governance]] — 29 references
+- [[concepts/evaluation/ai-evals]] — 26 references
+- [[concepts/claude/mythos]] — 23 references
+- [[concepts/claude-code/claude-code]] — 23 references
+- [[concepts/claude/fable-5]] — 21 references
 
 ### Fixable Links (sample)
 

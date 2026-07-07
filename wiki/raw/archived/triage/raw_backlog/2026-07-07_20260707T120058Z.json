@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-07-07T12:12:23.480393+00:00",
+  "triage_run_id": "20260707T120058Z",
+  "source": "raw_backlog",
+  "summary_ja": "5件全て前回パイプライン(2026-07-07 00:01 UTC)で処理済み。MAI-Thinking-1技術レポートはentities/mai-thinking-1.md(147行)で完全カバー、BenchFlow Awesome Agent Evalsはconcepts/ai-benchmarks/benchflow-tool.mdに取り込み済み。残り3件はアーカイブ済み。Takes=0。",
+  "decisions": [
+    {
+      "item_id": "backlog-1",
+      "source": "raw_backlog",
+      "source_name": "Microsoft MAI-Thinking-1 Tech Report",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 本日2026-07-07 00:01 UTCにentities/mai-thinking-1(55→147行)へ拡充完了。アーキテクチャ(periodic local/global attention, LatentMoE)、ベンチマーク比較表、modified GRPO訓練詳細、総訓練オーバーヘッド51時間まで完全カバー。重複不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-"
+    },
+    {
+      "item_id": "backlog-2",
+      "source": "raw_backlog",
+      "source_name": "BenchFlow Awesome Agent Evals",
+      "title": "Awesome Agent Evals",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 本日2026-07-07 00:01 UTCにconcepts/ai-benchmarks/benchflow-toolへ拡充済み。コンパイル方法論(11.6k論文、47トーク文字起こし、146深層ノート)、12アイテムMust-Readスターターセット、評価/RL環境企業ランドスケープを網羅。重複不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Awesome Agent Evals [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n> A curated, opinionated, **non-BS** library of the best resources for **building and evaluating AI agents** — papers, blog posts, talks, courses, tools, and benchmarks.\nMaintained by [**BenchFlow**](https://benchfl"
+    }
+  ]
+}
