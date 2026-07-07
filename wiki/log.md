@@ -1,3 +1,10 @@
+## [2026-07-07 17:50 UTC] health-fix | Auto-fix: orphan index registration
+
+**Auto-fixed:**
+- `wiki/index.md` — Added 20 harness-engineering/agentic-workflows sub-pages to Concepts section (orphan index registration)
+
+---
+
 ## [2026-07-07 17:35 UTC] watchdog | Auto-fix and health report
 
 **Auto-fixed (2):**

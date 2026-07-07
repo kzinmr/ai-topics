@@ -1769,6 +1769,26 @@
 - [[concepts/harness-engineering/agentic-engineering-patterns]] — Agentic Engineering Patterns
 - [[concepts/harness-engineering/agentic-loop]] — Agentic Loop — The Canonical AI Agent Execution Pattern
 - [[concepts/harness-engineering/agentic-sysadmin]] — Agentic Sysadmin Pattern
+- [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Agent-First Codebase Design
+- [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — Agentic Manual Testing
+- [[concepts/harness-engineering/agentic-workflows/anti-patterns]] — Anti-patterns in Agentic Engineering
+- [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — CLI-First Development
+- [[concepts/harness-engineering/agentic-workflows/code-hoarding]] — Code Hoarding / Knowledge Accumulation
+- [[concepts/harness-engineering/agentic-workflows/cognitive-debt]] — Cognitive Debt
+- [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] — Compound Engineering Loop
+- [[concepts/harness-engineering/agentic-workflows/context-window-management]] — Context Window Management
+- [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] — First Run the Tests
+- [[concepts/harness-engineering/agentic-workflows/hoard-things-you-know]] — Hoard Things You Know How to Do
+- [[concepts/harness-engineering/agentic-workflows/how-agents-work]] — How Coding Agents Work
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — Interactive Explanations
+- [[concepts/harness-engineering/agentic-workflows/karpathy-rl-agents]] — Karpathy RL Agents — Agentic Research Loop
+- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — Linear Walkthroughs
+- [[concepts/harness-engineering/agentic-workflows/prompt-driven-development]] — Prompt-Driven Development
+- [[concepts/harness-engineering/agentic-workflows/red-green-tdd]] — Red/Green TDD
+- [[concepts/harness-engineering/agentic-workflows/rodney]] — Rodney — Browser Automation CLI for Agents
+- [[concepts/harness-engineering/agentic-workflows/showboat]] — Showboat
+- [[concepts/harness-engineering/agentic-workflows/subagents]] — Subagents — Parallel AI Agent Delegation
+- [[concepts/harness-engineering/agentic-workflows/throw-away-draft-pattern]] — Throw-Away First Draft Pattern
 - [[concepts/harness-engineering/context-engineering]] — Context Engineering — Unified Framework for Context Optimization
 - [[concepts/harness-profiles]] — Harness Profiles
 - [[concepts/haskell]] — Haskell
