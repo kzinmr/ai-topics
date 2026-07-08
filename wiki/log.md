@@ -1,3 +1,26 @@
+## [2026-07-08] Active Crawl — Agent Security & Claude Code History
+
+### Created
+- **`concepts/security-and-governance/gitlost-agent-prompt-injection.md`** — GitLost: GitHub AI agent prompt injection attack by Noma Security. First major public demo of prompt injection in a platform-integrated coding agent. 218 HN points. Disclosed to GitHub.
+- **`entities/halo-tamper-evident-agent-runtime.md`** — Halo: open-source (Apache-2.0) tamper-evident runtime evidence for AI agents. Append-only hash-chained log, zero runtime dependencies, ~4,300 lines of auditable Python.
+
+### Enriched
+- **`entities/claude-code--history.md`** — Added Origins section from Anthropic's "The Making of Claude Code" blog (July 2026). Internal CLI was originally called "clide". Core design bet on read/edit/bash primitives. Updated tags and sources.
+- **`concepts/ai-agent-safety-incidents.md`** — Added GitLost incident section. Updated tags (prompt-injection, agent-security, incident, github) and sources.
+
+### Raw Articles
+- [[raw/articles/2026-07-07_anthropic-making-of-claude-code]] — The Making of Claude Code (Anthropic Blog)
+- [[raw/articles/2026-07-08_noma-security-gitlost-github-agent-leak]] — GitLost (Noma Security Blog)
+- [[raw/articles/2026-07-07_bkuan001-halo-tamper-evident-runtime-evidence]] — Halo README (GitHub)
+
+### Sources
+- HN Algolia API search (15 trending AI stories)
+- xurl X/Twitter search (12 substantive AI results)
+- Blogwatcher DB query (30 articles from last 3 days, 6,826 total)
+- Wiki gap analysis across 10 key areas (2,701 pages scanned)
+
+---
+
 
 ## [2026-07-08 08:00 UTC] raw-backlog-ingest | Archived 2 unprocessed raw articles (5 candidates: 3 already archived, 2 content-already-captured)
 

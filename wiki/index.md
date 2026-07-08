@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities
+## Entities (842 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -340,6 +340,7 @@
 - [[entities/harrison-chase]] — Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framewor...
 - [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24)
 - [[entities/hearth-ai]] — Hearth AI
+- [[entities/halo-tamper-evident-agent-runtime]] — Open-source tamper-evident runtime evidence for AI agents; append-only hash-chained log (Apache-2.0)
 - [[entities/hebbia]] — Hebbia
 - [[entities/herman-s-blog]] — Herman Martinus
 - [[entities/hermes-4]] — Hermes 4
@@ -845,7 +846,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts
+## Concepts (1861 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2427,6 +2428,7 @@
 - [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — Ai Safety Alignment Rlhf Scalable Oversight Interpretability
 - [[concepts/security-and-governance/ai-safety-and-alignment]] — ai-safety-and-alignment
 - [[concepts/security-and-governance/ai-safety-military-governance-claude]] — Ai Safety Military Governance Claude
+- [[concepts/security-and-governance/gitlost-agent-prompt-injection]] — GitLost: prompt injection attack against GitHub AI agent leaking private repos (Noma Security, July 2026)
 - [[concepts/security-and-governance/model-cards-system-cards]] — Model Cards and System Cards
 - [[concepts/security-and-governance/open-model-safety]] — Open Model Safety
 - [[concepts/self-driving-codebases]] — Self-Driving Codebases
@@ -2662,7 +2664,7 @@
 - [[concepts/zig]] — zig
 - [[concepts/zjit]] — ZJIT
 - [[concepts/zombie-internet]] — Zombie Internet
-## Comparisons
+## Comparisons (34 pages)
 
 - [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes vs ChatGPT Dreaming
@@ -2702,7 +2704,7 @@
 - [[concepts/evals-skills]] — Evals Skills for Coding Agents
 - [[concepts/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
 
-## Events
+## Events (13 pages)
 
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan
 - [[events/2026-06-24-qualcomm-acquires-modular]] — Qualcomm Acquires Modular — Qualcomm acquires AI infrastructure startup Modular (~$4B); implications for Mojo language, MAX platform, and AI chip-software consolidation; 238 HN pts, 125 comments (June 24, 2026)
@@ -2718,7 +2720,7 @@
 - [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk Trial Verdict (May 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries
+## Queries (4 pages)
 
 - [[queries/data-analysis-open-harness]] — データ分析に適したOpen Harnessはあるか？
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era

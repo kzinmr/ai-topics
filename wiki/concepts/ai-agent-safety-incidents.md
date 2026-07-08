@@ -1,7 +1,7 @@
 ---
 title: "AI Agent Safety Incidents — Real-World Failures in Autonomous Systems"
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-08
 type: concept
 tags:
   - ai-agents
@@ -10,9 +10,15 @@ tags:
   - sandbox
   - architecture
   - developer-tooling
+  - prompt-injection
+  - agent-security
+  - incident
+  - github
 sources:
   - "https://lwn.net/Articles/1077035/"
   - "https://lwn.net/Articles/ (general security coverage)"
+  - "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/"
+  - [[raw/articles/2026-07-08_noma-security-gitlost-github-agent-leak]]
 ---
 
 # AI Agent Safety Incidents — Real-World Failures in Autonomous Systems
@@ -87,6 +93,15 @@ Different Linux distributions have different security postures. Fedora's more pe
 - [[concepts/active-observability]] — Real-time monitoring and anomaly detection
 - [[concepts/agent-harness-primitives]] — Foundational agent architecture components
 - [[concepts/agent-loop-orchestration]] — Execution loop safety considerations
+
+## GitLost — GitHub AI Agent Prompt Injection (July 2026)
+- Attacker tricks GitHub's AI agent into leaking contents of private repositories
+- Prompt injection attack via public-facing surfaces (issues, PRs, comments)
+- Agent doesn't run with user's permissions — IDOR-like trust boundary failure
+- Disclosed to GitHub through responsible disclosure; fix status not publicly confirmed as of July 8, 2026
+- First major public demonstration of prompt injection in a platform-integrated coding agent
+- See [[concepts/security-and-governance/gitlost-agent-prompt-injection]] for full details
+- 218 points on HN, 89 comments — significant industry attention
 
 ## Ongoing Research
 

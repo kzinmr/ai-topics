@@ -3,21 +3,34 @@ title: "Claude Code — Development History"
 type: entity
 parent: claude-code
 created: 2026-04-28
-updated: 2026-05-27
+updated: 2026-07-08
 tags:
   - product
   - timeline
+  - claude-code
+  - coding-agents
 sources:
   - https://www.claudecodecamp.com/p/how-the-claude-code-team-really-works
   - https://www.theregister.com/2026/03/31/anthropic_claude_code_source_code/
+  - https://www.anthropic.com/features/making-of-claude-code
+  - [[raw/articles/2026-07-07_anthropic-making-of-claude-code]]
 ---
 
 # Claude Code: Development History
 
 Back to main profile: [[entities/claude-code]]
 
-## Origins (Sep 2024)
-[[entities/boris-cherny]] joined Anthropic and began prototyping with the Claude 3.6 model. The first prototype was a CLI tool that identified and modified music via AppleScript.
+## Origins — Internal CLI "Clide" (Sep 2024)
+
+The Making of Claude Code, an Anthropic blog post published July 2026, reveals the original internal name was **"clide"** before it became Claude Code. [[entities/boris-cherny]] joined Anthropic and began prototyping with the Claude 3.6 model. The first prototype was a CLI tool that identified and modified music via AppleScript.
+
+Key origin story details from the Anthropic team:
+- **Adam rejected a hand-written PR**: "Actually, you should use clide for this" — the moment Claude Code transitioned from prototype to internal dependency
+- The core design bet was on **three primitives: read, edit, bash** — betting that future model improvements would make these sufficient
+- The lineage was framed as: **punch cards → ed → modern editors → AI agents**
+- Team members describe reaching a point where they "no longer write any code by hand"
+
+> Source: [The Making of Claude Code](https://www.anthropic.com/features/making-of-claude-code), Anthropic Blog, July 2026. [[raw/articles/2026-07-07_anthropic-making-of-claude-code]]
 
 ## Internal Dogfooding (Nov 2024)
 - **20% of engineers** adopted it on day one
