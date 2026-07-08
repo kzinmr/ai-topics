@@ -1,3 +1,9 @@
+## [2026-07-08] daily-skeleton-enrichment | Entity enrichment — 2 small entity pages enriched
+
+### Changes
+- Enriched entities/parsagon.md — Rewrote from generic stub (37 lines) to comprehensive entity page (2.6KB). Added: creator info (Sandy Suh, sand1929), CLI/Python API details, natural language browser automation description, PyPI package details (v1.0.1, Jun 2026), note about platform pivot to Global Policy Intelligence. Corrected previous mischaracterization as generic web scraping platform.
+- Enriched entities/exa.md — Expanded from skeleton (38 lines, 1.1KB) to full entity (96 lines, ~4KB). Added: founders (Will Bryk CEO, Jeff Wang co-founder), product suite (Search, Contents, Deep, Agent, Monitors, Exa Connect), technical architecture (500B+ webpages, H200 cluster), customer references (Cursor, Cognition, HubSpot, OpenRouter, 400K+ developers), advisor info (Tal Broda).
+
 ## [2026-07-08] dreaming | Knowledge consolidation — 2 reference enrichments
 
 ### Changes
