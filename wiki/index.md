@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (842 pages)
+## Entities (841 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -846,7 +846,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1861 pages)
+## Concepts (1841 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1551,6 +1551,7 @@
 - [[concepts/eu-ai-act]] — EU AI Act
 - [[concepts/eureka-labs]] — eureka-labs
 - [[concepts/evals-skills-for-coding-agents]] — Evals Skills for Coding Agents
+- [[concepts/evals-skills]] — Evals Skills for Coding Agents
 - [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]] — Evaluation Coding Agents Mcp Automation Harness Engineering
 - [[concepts/evaluation-development-process-quality]] — Evaluation Development Process Quality
 - [[concepts/evaluation/agent-evaluation-methodology]] — Agent Evaluation Methodology — Floor Raising vs Benchmark Maxxing
@@ -1928,6 +1929,7 @@
 - [[concepts/llm-evaluation]] — LLM Evaluation
 - [[concepts/llm-inference]] — LLM Inference
 - [[concepts/llm-inference-optimization-performance]] — Llm Inference Optimization Performance
+- [[concepts/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
 - [[concepts/llm-landscape-nov-2025-to-may-2026]] — LLM Landscape: November 2025 – May 2026
 - [[concepts/llm-memory-architecture]] — LLM Memory Architecture
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
@@ -2700,9 +2702,6 @@
 - [[comparisons/palantir-platform-family]] — Palantir Platform Family
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
-- [[concepts/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses
-- [[concepts/evals-skills]] — Evals Skills for Coding Agents
-- [[concepts/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
 
 ## Events (13 pages)
 

@@ -1,3 +1,18 @@
+## [2026-07-08] watchdog | Auto-fix index issues
+
+### Changes
+- Removed duplicate `concepts/agent-harnesses` entry at comparisons section boundary
+- Restored misplaced `concepts/evals-skills` and `concepts/llm-integration-patterns` entries to correct alphabetical position
+- Fixed Entities header count: 842 → 841 (actual files)
+- Fixed Concepts header count: 1,861 → 1,841 (actual files)
+- Verified: 0 tag violations, 0 source field gaps on knowledge pages, 0 orphan timestamps in log.md
+
+### Issues requiring attention
+- **78 file orphans**: Subdirectory pages (harness-engineering/system-architecture/, etc.) not in index — needs human review
+- **684 pages missing sources field** (per graph analysis) — pipeline is addressing incrementally
+
+---
+
 ## [2026-07-08] Active Crawl — Agent Security & Claude Code History
 
 ### Created
