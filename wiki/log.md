@@ -1,3 +1,15 @@
+## [2026-07-08] health-fix | Register 20 orphan concept pages in index.md
+
+### Changes
+- Added 19 concept pages from concepts/harness-engineering/system-architecture/ to index.md
+- Added 1 concept page from concepts/harness-engineering/agentic-workflows/using-git-with-agents to index.md
+- Corrected Concepts section count from 1841 to 1838 (actual entry count)
+- No index corruption detected (pipe, line-number, triple-bracket, space-prefix all clean)
+- 0 ghost entries (all index wikilinks resolve to existing files)
+- validate_index.py: clean (2747 lines)
+
+---
+
 ## [2026-07-08] watchdog | Auto-fix index issues
 
 ### Changes

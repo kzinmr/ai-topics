@@ -846,7 +846,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1841 pages)
+## Concepts (1838 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1793,7 +1793,27 @@
 - [[concepts/harness-engineering/agentic-workflows/showboat]] — Showboat
 - [[concepts/harness-engineering/agentic-workflows/subagents]] — Subagents — Parallel AI Agent Delegation
 - [[concepts/harness-engineering/agentic-workflows/throw-away-draft-pattern]] — Throw-Away First Draft Pattern
+- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — Using Git with Coding Agents
 - [[concepts/harness-engineering/context-engineering]] — Context Engineering — Unified Framework for Context Optimization
+- [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — Advanced Tool Use
+- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — Agent Loop Orchestration
+- [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — Agent Security Patterns
+- [[concepts/harness-engineering/system-architecture/agent-skills]] — Agent Skills (SKILL.md)
+- [[concepts/harness-engineering/system-architecture/ai-memory-systems]] — AI Memory Systems — ChatGPT vs Claude vs Cognition
+- [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Anthropic's Memory Tool — Cognition's Strategic Follow-Up
+- [[concepts/harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents
+- [[concepts/harness-engineering/system-architecture/claude-code-best-practices]] — Claude Code Best Practices
+- [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Code Execution with MCP
+- [[concepts/harness-engineering/system-architecture/container-context]] — Container Context
+- [[concepts/harness-engineering/system-architecture/context-anxiety]] — Context Anxiety
+- [[concepts/harness-engineering/system-architecture/context-compaction]] — Context Compaction
+- [[concepts/harness-engineering/system-architecture/context-engineering]] — harness-engineering/system-architecture/context-engineering
+- [[concepts/harness-engineering/system-architecture/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents
+- [[concepts/harness-engineering/system-architecture/evals-for-ai-agents]] — Evals for AI Agents
+- [[concepts/harness-engineering/system-architecture/harness-design-long-running-apps]] — Harness Design for Long-Running Application Development
+- [[concepts/harness-engineering/system-architecture/infrastructure-noise]] — Quantifying Infrastructure Noise in Agentic Coding Evals
+- [[concepts/harness-engineering/system-architecture/multi-agent-research-system]] — Multi-Agent Research System
+- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Writing Effective Tools for AI Agents
 - [[concepts/harness-profiles]] — Harness Profiles
 - [[concepts/haskell]] — Haskell
 - [[concepts/have-i-been-pwned]] — Have I Been Pwned
