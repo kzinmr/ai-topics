@@ -442,6 +442,9 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 - [[concepts/sandbox]] — AI agent sandbox isolation technologies
 - [[concepts/gpt/chatgpt-images-2-0]] — GPT Image 2 image generation
 - [[concepts/nano-banana-2]] — Google's NB2 image generation competitor
+- [[concepts/ai-industry-economics]] — AI industry financials and unit economics (includes leaked OpenAI 2024–2025 data)
+- [[concepts/token-economics]] — Token pricing, cost structures, and billing models
+- [[entities/anthropic]] — Primary competitor in frontier AI and enterprise deployments
 
 ### OpenAI-related articles
 - [2026-04-06-openai-anthropic-google-distillation-alliance](2026-04-06-openai-anthropic-google-distillation-alliance.md)

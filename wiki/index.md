@@ -573,7 +573,7 @@
 - [[entities/omar-khattab/rlm]] — RLM — Recursive Language Models
 - [[entities/omri-weinstein]] — Omri Weinstein
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
-- [[entities/openai]] — OpenAI; added GPT-5.5 Instant revision (June 2026) — improved intent understanding, constraint handling, conversational style (June 25); HP Frontier Partnership section (June 30)
+- [[entities/openai]] — OpenAI; added Australian Payments Plus enterprise adoption case study (80% employees more creative, 300+ custom GPTs, Codex for reconciliation) — July 8
 - [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo)

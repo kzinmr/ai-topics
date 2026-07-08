@@ -1,3 +1,13 @@
+## [2026-07-08] wiki: Add LLM gateways comparison page
+
+**Created:**
+- `comparisons/llm-gateways.md` — LLM Gateways Comparison (Eden AI, Merge Gateway, OpenRouter, LiteLLM, Portkey); features, pricing, self-hosting, governance, observability, use-case recommendations
+
+**Updated:**
+- `wiki/index.md` — Added llm-gateways entry in Comparisons section (alphabetical)
+
+---
+
 ## [2026-07-07] wiki: Added Anthropic RSI evidence to recursive-self-improvement
 
 **Updated:**
