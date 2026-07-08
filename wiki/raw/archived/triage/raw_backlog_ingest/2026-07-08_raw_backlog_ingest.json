@@ -1,0 +1,67 @@
+{
+  "archive_date": "2026-07-08",
+  "run_id": "20260708T120055Z",
+  "total_candidates": 5,
+  "items": [
+    {
+      "item_id": "20260708-1",
+      "source": "raw_article",
+      "source_name": "FHI Technical Report #2019-1",
+      "title": "Reframing Superintelligence: Comprehensive AI Services as General Intelligence",
+      "url": "https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf",
+      "raw_path": "raw/articles/reframing-superintelligence-fhi-2019.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にアーカイブ済み。CAIS概念はconcepts/cais, concepts/comprehensive-ai-services, entities/k-eric-drexlerで詳細カバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "K. Eric Drexler's 210-page FHI tech report framing superintelligence as distributed CAIS rather than monolithic agents."
+    },
+    {
+      "item_id": "20260708-2",
+      "source": "raw_article",
+      "source_name": "Microsoft AI Team",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Technical Report",
+      "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+      "raw_path": "raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "既存Wikiで完全カバー済み。entities/mai-thinking-1 (148行), concepts/mai-thinking-1-tech-report (227行), concepts/microsoft-mai-models (71行) にてアーキテクチャ・訓練・ベンチマークが詳細に記述済み。raw articleは全ページのsourcesに登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "MAI-Thinking-1: 35B active/1T total MoE reasoning model. 30T tokens pre-training from scratch, no distillation. Modified GRPO with adaptive entropy control, 256K context. 52.8% SWE-Bench Pro, 97.0% AIME 2025, 87.7% LiveCodeBench v6."
+    },
+    {
+      "item_id": "20260708-3",
+      "source": "raw_article",
+      "source_name": "BenchFlow",
+      "title": "Awesome Agent Evals — curated list (443+ resources)",
+      "url": "https://github.com/benchflow-ai/awesome-agent-evals",
+      "raw_path": "raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "既存Wikiで完全カバー済み。concepts/ai-benchmarks/benchflow-tool (118行) にてフレームワーク・Awesome Agent Evals一覧・12のMust-Read・企業ランドスケープが詳細に記述済み。raw articleはsourcesに登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "443+ curated links for building and evaluating AI agents. 12 must-read starter set (Shunyu Yao, Eugene Yan, Han-Chung Lee, Hamel Husain, Jason Wei, etc.). Depth-4 citation crawl (11.6K papers), 47 talks transcribed."
+    },
+    {
+      "item_id": "20260708-4",
+      "source": "raw_article",
+      "source_name": "Dwarkesh Podcast",
+      "title": "Grant Sanderson — AI and the future of math",
+      "url": "https://www.dwarkesh.com/p/grant-sanderson-2",
+      "raw_path": "raw/articles/dwarkesh.com--p-grant-sanderson-2--960d89cd.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にアーカイブ済み。entities/grant-sanderson (141行) にてSandersonのAI×数学に関する見解をカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Dwarkesh Patel interviews Grant Sanderson (3Blue1Brown) on AI progress in mathematics. Topics: IMO benchmarks, conceptual breakthroughs, Riemann hypothesis, hidden bridges between fields."
+    },
+    {
+      "item_id": "20260708-5",
+      "source": "raw_article",
+      "source_name": "WebKit Blog",
+      "title": "News from WWDC26: WebKit in Safari 27 beta",
+      "url": "https://webkit.org/blog/17967/news-from-wwdc26-webkit-in-safari-27-beta/",
+      "raw_path": "raw/articles/webkit.org--blog-17967-news-from-wwdc26-webkit-in-safari-27-beta--c116f751.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にアーカイブ済み。AIトピック非該当（WebKitブラウザエンジンの機能更新 — CSS/HTML/WASMの525の修正）。concepts/safari-mcp-serverは別トピックのMCP関連ページ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Safari 27 beta: 58 new features, 525 fixes. Customizable <select>, scroll anchoring, WASM JSPI, anchor positioning, CSS features. WebKit engine quality improvements."
+    }
+  ]
+}
