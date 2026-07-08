@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-07-01
+updated: 2026-07-08
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -39,6 +39,7 @@ sources:
   - raw/articles/wheresyoured.at--premium-the-silicon-valley-bubble-part-2--e0d362d8.md
   - raw/articles/wheresyoured.at--brokenomics--662a8e19.md
   - raw/articles/wheresyoured.at--the-ai-industry-is-losing--a92f13ac.md
+  - raw/articles/wheresyoured.at--let-ai-burn--bdeb31fe.md
 ---
 
 # Ed Zitron
@@ -94,6 +95,7 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | Jun 2026 | Exclusive: OpenAI 2025 Audited Financials | OpenAI lost $38.5B in 2025; $34B total costs; paid Microsoft $17.2B. FT-verified. |
 | Jun 2026 | Premium: The Silicon Valley Bubble (Part 1) | IPO race, $35B Broadcom Anthropic deal with SPV structure, $4.4B pure Anthropic notes |
 | Jun 2026 | Premium: The Silicon Valley Bubble (Part 2) | OpenAI lost $21B in 2025, $34B spend / $13B revenue, SoftBank dependency, Cal Newport comparison, 4-part bubble thesis |
+| Jul 2026 | Let AI Burn | AI bubble collapse thesis; OpenAI/Anthropic 70% revenue from circular compute spend; $765B+ capex declared worthless; industry told to "go fuck itself" |
 
 ## AI Is Too Expensive (May 2026)
 

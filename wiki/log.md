@@ -1,3 +1,11 @@
+## [2026-07-08] dreaming | Knowledge consolidation — 2 reference enrichments
+
+### Changes
+- Enriched entities/ed-zitron.md — added "Let AI Burn" (Jul 2026) to Notable Articles table + sources
+- Enriched entities/fireworks-ai.md — added GLM 5.2 Fast GPU Scheduler Reclaim case study under Enterprise Case Studies
+- Source: dreaming-group triage (filesystem scan of 156 raw articles)
+- Takes: 0 | References: 2 | Skips: 13
+
 ## [2026-07-08] health-fix | Register 20 orphan concept pages in index.md
 
 ### Changes

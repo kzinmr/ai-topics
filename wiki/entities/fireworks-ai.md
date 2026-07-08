@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-07-01
+updated: 2026-07-08
 tags:
   - entity
   - company
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-06-25_fireworks-ai_frontier-open-source-worker-with-closed-source-advisor.md
   - raw/articles/2026-06-27_fireworks-ai_Cursor-Composer-2.md
   - raw/articles/2026-07-01_fireworks-ai_glm-5p2-fast.md
+  - raw/articles/2026-07-08_fireworks-ai_glm5p2-fast-an-engineering-productivity-story.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -123,6 +124,28 @@ The case study also includes comparisons to [[entities/cerebras-systems]] and [[
 This partnership builds on an earlier Fireworks × Cursor collaboration and validates a broader shift: frontier coding performance is increasingly a function of **RL systems**, not just model scale. Cursor combined continual pre-training with large-scale RL and production feedback, with Fireworks providing the critical distributed infrastructure layer.
 
 **Source:** [[raw/articles/2026-06-27_fireworks-ai_Cursor-Composer-2]]
+
+### GLM 5.2 Fast — GPU Scheduler Reclaim (July 2026)
+
+Fireworks engineer **Rif Rafiq** documented a case study of shipping a GPU scheduler **reclaim capability** using GLM 5.2 Fast via FireConnect on Claude Code. The project delivered what would normally be an **engineer-month** of work in **4 days at $218 inference cost**.
+
+**Workflow breakdown:**
+- **Day 1 (0.5 day)**: Design doc — architecture review, GC complexity analysis, KV-aware paging design
+- **Day 2 (0.5 day)**: Implementation plan — granular CLs, test strategy, safety rollout
+- **Days 3-4 (1.5 days)**: Implementation — 4 PRs, ~3,000 lines, 16 unit tests + 18 integration tests
+
+**Key engineering choices:**
+- **CL size discipline**: 4 granular PRs vs one monolith (defeats 80% of agent failure modes per author)
+- **Playground-first test pattern**: Unit tests first via CLI, then integrated into full harness
+- **Design doc in committed Markdown**: Enabled Claude Code to reference the design throughout implementation without losing context
+- **KV-aware preemption**: Thread-level memory accounting before GPU memory preemption — ensures the victim task's KV cache is fully written back before eviction
+
+**Observations:**
+- GLM 5.2 Fast at $2.80/$8.80 per 1M tokens (input/output) made 50+ agent iterations economical at $218 total
+- Author noted that **greenfield projects** (new features like this) have higher agent success rate than rewrites (distinct from [[entities/eli-thegreenplace-net]]'s literature review about rewrite vs greenfield)
+- Go as an agent language: 99% reading / 1% writing — the language's simplicity means agents spend more time reasoning about the problem than parsing syntax
+
+**Source:** [[raw/articles/2026-07-08_fireworks-ai_glm5p2-fast-an-engineering-productivity-story]]
 
 ## Coding Benchmarks & Model Comparison (March 2026)
 
