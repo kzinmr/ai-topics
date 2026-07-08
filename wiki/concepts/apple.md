@@ -4,9 +4,10 @@ type: concept
 aliases:
   - apple
 created: 2026-04-25
-updated: 2026-06-09
+updated: 2026-07-08
 tags:
-sources: []
+sources:
+  - raw/articles/techcrunch.com--2026-07-06-you-can-now-customize-siris-pace-and-expressivity--0f64c66e.md
   - concept
   - company
 ---
@@ -77,6 +78,8 @@ Key highlights:
 - Vision LLMs extract information from user's screen — sidesteps need for per-app integration code
 - Vision LLMs were much less mature at 2024 WWDC; now feasible
 - iOS 27 Developer Beta available with waitlist for new Siri AI access
+- **iOS 27 beta 3 (July 2026)** enables **Pace** and **Expressivity** sliders for Siri's voice — users can adjust speaking speed and emotional expressiveness, switching between voices with different accents beyond traditional male/female options
+- Part of Apple's broader AI-powered Siri rebuild announced at WWDC 26; ChatGPT voice customization offers similar features (warmth, enthusiasm, style/tone options) since December 2025
 
 ### Private Cloud Compute on Google Cloud
 - PCC extended to Google Cloud systems using NVIDIA GPUs

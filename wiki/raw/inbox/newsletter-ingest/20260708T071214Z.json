@@ -1,0 +1,67 @@
+{
+  "checkpoint_run_id": "20260708T071214Z",
+  "triaged_at": "2026-07-08T07:15:00Z",
+  "summary_ja": "5ニュースレターをトリアージ。★★★★★: Latent.Space（Lilian WengのRSI論文サマリー）がAI Agent研究の最前線を包括的にカバー。★★★★☆: Ben's Bites（Fableハーネス考察）、SemiAnalysis（Anthropic IPO財務分析）、Super Intel（Stochastic Parrots論文の再解釈）の3件がwiki更新候補。★★☆☆☆: Lenny's Newsletter（tech worker sentiment）はAI産業の背景情報だが直接的なwikiアクションなし。",
+  "decisions": [
+    {
+      "item_id": "<20260708022026.3.2f64480b275b33b4@mg-d1.substack.com>",
+      "source": "newsletter",
+      "source_name": "Latent.Space (AINews)",
+      "title": "Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-lilian-weng-summarizes-35",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-08-ainews-lilian-weng-summarizes-35-papers-on-harness-engineering-for-rsi.md",
+      "recommended_action": "take",
+      "reason_ja": "★★★★★ Lilian Weng（OpenAI）による35論文のサマリー。Harness Engineering（ハーネス設計手法）とRSI（Recursive Self-Improvement）というAI Agent研究の最重要トピックを体系的にカバー。wiki概念ページ新規作成の最高優先度。paywallだがメタデータと既存知識で分類可能。Lilian Weng entityページのenrichment、ai-agent-harnesses概念ページ、recursive-self-improvement概念ページの作成・更新候補。",
+      "candidate_wiki_path": "concepts/harness-engineering.md",
+      "body_excerpt": "Lilian Weng（OpenAI研究者）が35本の論文を体系的にサマリー。Harness Engineering（AIエージェントのハーネス設計手法）とRSI（Recursive Self-Improvement/自己再帰的改善）に焦点。AI Agentの能力向上におけるハーネス設計の重要性を包括的に解説。"
+    },
+    {
+      "item_id": "<20260707130410.3.dde440a636ae8f6c@mg-d1.substack.com>",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "My thoughts on Fable — what I want from a harness",
+      "url": "https://open.substack.com/pub/bensbites/p/my-thoughts-on-fable",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-07-my-thoughts-on-fable.md",
+      "recommended_action": "take",
+      "reason_ja": "★★★★☆ Ben's Bites著者によるAIコーディングハーネス「Fable」の考察。description「what I want from a harness」は、AI Agentハーネス設計の要件定義としてwiki価値が高い。Fable entityページ作成、ai-coding-harnesses概念ページ更新の候補。無料公開。ハーネス設計のUX要件、期待される機能を網羅的に記述している可能性。",
+      "candidate_wiki_path": "entities/fable.md",
+      "body_excerpt": "AIコーディングハーネス「Fable」についての個人的考察。ハーネスに求める要件・期待機能を定義。AI Agent開発ツールとしてのFableの位置づけと改善要望。"
+    },
+    {
+      "item_id": "<20260708060428.3.1a5337b6f31b8512@mg-d0.substack.com>",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "Anthropic 3Q26 Profit Over $1B: The Anthropic IPO Financials Sneak Peak",
+      "url": "https://newsletter.semianalysis.com/p/anthropic-3q26-profit-over-1b-the",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-08-anthropic-3q26-profit-over-1b-the-anthropic-ipo-financials-sneak-peak.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ SemiAnalysisによるAnthropic IPO財務分析。3Q26黒字転換（$1B超）という重要なマイルストーン。Anthropic entityページのenrichment候補。paywallだがメタデータで十分。AI企業の財務健全性・成長軌道を示す重要データポイント。Dylan Patel（SemiAnalysis）による信頼性の高い産業分析。",
+      "candidate_wiki_path": "entities/anthropic.md",
+      "body_excerpt": "Anthropicの2026年第3四半期における$1B超の利益を予測。IPO財務のスニークピーク。Anthropicのビジネス機会と成長戦略を分析。著者: Joey Brookhart, Crystal Huang, Dylan Patel。"
+    },
+    {
+      "item_id": "<20260707.145214.27981278@mta10>",
+      "source": "newsletter",
+      "source_name": "Super Intel",
+      "title": "What 'Stochastic Parrots' Really Meant",
+      "url": "https://getsuperintel.site/p/what-stochastic-parrots-really-meant",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-07-what-stochastic-parrots-really-meant.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AI論文「Stochastic Parrots」（Bender et al., 2021）の再解釈ニュースレター。AI safety、LLM批判理論の概念ページenrichment候補。beehiiv Cloudflare保護で本文取得不可。概念の正確な歴史的文脈を提供するが、wiki直接アクションは限定的。stochastic-parrots概念ページまたはai-safetyページへの追記候補。",
+      "candidate_wiki_path": "concepts/stochastic-parrots.md",
+      "body_excerpt": "「Stochastic Parrots」論文（Bender et al., 2021）の本来の意図を再解釈。LLMの本質と限界に関する議論。beehiiv Cloudflare保護により本文取得不可。"
+    },
+    {
+      "item_id": "<20260707130423.3.9057e5acdfaab511@mg2.substack.com>",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter",
+      "title": "How tech workers are feeling in 2026: a workforce splitting in two",
+      "url": "https://open.substack.com/pub/lenny/p/how-tech-workers-are-feeling-in-2026",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-07-how-tech-workers-are-feeling-in-2026-a-workforce-splitting-in-two.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ tech worker sentiment調査。AI/LLM技術への直接言及はあるかもしれないが、主テーマはワークフォースの二極化。wiki直接アクションなし。背景情報として参照可能だが、AI技術ページへの追記価値は低い。Noam Segal & Lenny Rachitsky著。無料公開。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "2回目となるtech worker sentiment調査結果。テックワーカーの感情が二極化する現状を分析。AI時代のワークフォース変化に関する定量データ。"
+    }
+  ]
+}

@@ -3,11 +3,11 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-07-05
+updated: 2026-07-08
 status: L3
   sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
-sources: []
+sources: [raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md, raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md]
 ---
 
 # Simon Willison
@@ -511,6 +511,18 @@ This exemplifies [[concepts/agentic-engineering]] patterns: sub-agent delegation
 
 Source: [[raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md]]
 
+**sqlite-utils 4.0 — Database Migrations, Nested Transactions, Compound Foreign Keys** (July 7, 2026): Simon shipped sqlite-utils 4.0 final, released just two days after 4.0rc2. The final release adds three major features:
+
+- **Database migrations**: A new `sqlite-utils migrate` command and migration framework, enabling schema evolution with up/down migration files
+- **Nested transactions via `db.atomic()`**: The new `atomic()` context manager supports nesting — inner `atomic()` blocks participate in the outer transaction rather than creating independent transactions
+- **Compound foreign keys**: Support for foreign key constraints spanning multiple columns, filling a long-standing gap in sqlite-utils
+
+**Claude Fable 5's critical role**: Fable 5 identified **10 bugs** in the RC2 code that needed fixing before the final release. Simon credits Fable 5's thorough code review and debugging as instrumental in making the final release stable.
+
+**The upgrade guide**: The comprehensive upgrade guide documenting migration paths from earlier versions was collaboratively written by three frontier models — **Claude Fable 5, Claude Opus 4.8, and GPT-5.5** — an unusual cross-model collaboration on documentation.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md]]
+
 **Better Models: Worse Tools — Quote Post** (July 4, 2026): Simon quoted [[entities/armin-ronacher]]'s analysis of Claude Opus 4.8/Sonnet 5 tool schema regression on Pi. Emphasizes Anthropic's RL training optimized for Claude Code's forgiving harness, raising questions about capability portability across harness architectures.
 
 Source: [[raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md]]
@@ -522,3 +534,7 @@ Source: [[raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md]]
 **llm-coding-agent 0.1a0 — Fable 5 Coding Agent Experiment (July 2, 2026)**: Simon built a coding agent on his LLM library using Fable 5. Uses Red/Green TDD methodology. Shipped as `uvx --prerelease=allow --with llm-coding-agent llm code`. Tools: CodingTools_edit_file, CodingTools_execute_command. Python API: `CodingAgent(model="gpt-5.5", root="/path", approve=True).run(...)`. Includes a `--yolo` mode and allow-listing pattern.
 
 Source: [[raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]]
+
+**github-code Web Component — Built with a Single GPT-5.5 Prompt** (July 8, 2026): Simon created an experimental Web Component called `github-code` for embedding GitHub code snippets directly in web pages. The entire component was built with a **single GPT-5.5 prompt** — Simon provided the specification and GPT-5.5 generated the complete Web Component implementation in one shot. The component uses the GitHub API to fetch file contents and renders them as syntax-highlighted code blocks within the shadow DOM, providing a self-contained, framework-agnostic way to embed GitHub source code in blog posts, documentation, and other web pages.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md]]

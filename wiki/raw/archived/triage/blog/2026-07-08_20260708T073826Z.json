@@ -1,0 +1,178 @@
+{
+  "archived_at": "2026-07-08T07:38:26.722993+00:00",
+  "triage_run_id": "20260708T073826Z",
+  "source": "blog",
+  "summary_ja": "",
+  "decisions": [
+    {
+      "title": "How to connect a Notion MCP with Codex (4 steps)",
+      "url": "https://www.merge.dev/blog/notion-mcp-codex",
+      "blog": "merge.dev",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/merge.dev--blog-notion-mcp-codex--377672e7.md",
+      "recommended_action": "reference",
+      "star_rating": 3,
+      "reason": "MCP integration tutorial (Merge Agent Handler → Notion → Codex). Shows MCP ecosystem growth with third-party tooling. Good for enriching MCP concept page or notion-mcp entity.",
+      "target_pages": [
+        "concepts/mcp",
+        "entities/notion-mcp"
+      ],
+      "body_excerpt": "# How to connect a Notion MCP with Codex (4 steps)\nSource: https://www.merge.dev/blog/notion-mcp-codex\nWhen you hand Codex a task, you usually paraphrase what's in Notion into the task description.\nCodex then works from your interpretation instead of the spec itself.\nSmall omissions turn into wrong "
+    },
+    {
+      "title": "How to connect a Notion MCP to Cursor (4 steps)",
+      "url": "https://www.merge.dev/blog/notion-mcp-cursor",
+      "blog": "merge.dev",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/merge.dev--blog-notion-mcp-cursor--53090c10.md",
+      "recommended_action": "reference",
+      "star_rating": 3,
+      "reason": "MCP integration tutorial (Merge Agent Handler → Notion → Cursor). Companion to Codex version. Shows MCP adoption across multiple coding agents.",
+      "target_pages": [
+        "concepts/mcp",
+        "entities/notion-mcp"
+      ],
+      "body_excerpt": "# How to connect a Notion MCP to Cursor (4 steps)\nSource: https://www.merge.dev/blog/notion-mcp-cursor\nConnecting to Notion's API requires understanding its data models, and every question about them pulls you out of Cursor.\nEach lookup means leaving the editor, hitting Notion's API explorer or a sc"
+    },
+    {
+      "title": "Pluralistic: How US states and international trustbusters can beat Big Tech",
+      "url": "https://pluralistic.net/2026/07/07/going-global/",
+      "blog": "pluralistic.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-07-07-going-global--e232f95f.md",
+      "recommended_action": "reference",
+      "star_rating": 3,
+      "reason": "Cory Doctorow on Big Tech antitrust, Trump-Tech fusion, international enforcement retreat. Relevant to AI regulation/policy but mostly about general Big Tech monopoly dynamics.",
+      "target_pages": [
+        "concepts/ai-governance"
+      ],
+      "body_excerpt": "# Pluralistic: How US states and international trustbusters can beat Big Tech (07 Jul 2026)\nSource: https://pluralistic.net/2026/07/07/going-global/\nToday's links\nHow US states and international trustbusters can beat Big Tech\n: Their common enemies are Trump and his tech giants.\nHey look at this\n: D"
+    },
+    {
+      "title": "You can now customize Siri's pace and expressivity in the latest iOS 27 beta",
+      "url": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/",
+      "blog": "daringfireball.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/techcrunch.com--2026-07-06-you-can-now-customize-siris-pace-and-expressivity--0f64c66e.md",
+      "recommended_action": "reference",
+      "star_rating": 3,
+      "reason": "Apple's AI-powered Siri voice customization in iOS 27 beta 3 (pace, expressivity sliders). Relevant to voice-ai and Apple's AI strategy. Short article.",
+      "target_pages": [
+        "entities/apple"
+      ],
+      "body_excerpt": "# You can now customize Siri's pace and expressivity in the latest iOS 27 beta\nSource: https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/\nWith the latest iOS 27 developer beta, Apple is giving testers an early look at one of the upcoming im"
+    },
+    {
+      "title": "sqlite-utils 4.0, now with database schema migrations",
+      "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/",
+      "blog": "simonwillison.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4--b5e587dd.md",
+      "recommended_action": "reference",
+      "star_rating": 2,
+      "reason": "Simon Willison's sqlite-utils 4.0 release (migrations, nested transactions, compound FKs). Indirectly relevant — sqlite-utils is widely used in AI data pipelines and Datasette ecosystem.",
+      "target_pages": [
+        "entities/simon-willison"
+      ],
+      "body_excerpt": "# sqlite-utils 4.0, now with database schema migrations\nSource: https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything\nsqlite-utils 4.0, now with database schema migrations\n7th July 2026\nThis morning I released\nsqlite-utils 4.0\n, the 124th release of that project and the first major ve"
+    },
+    {
+      "title": "github-code Web Component",
+      "url": "https://simonwillison.net/2026/Jul/7/github-code-component/",
+      "blog": "simonwillison.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-7-github-code-component--6c92c317.md",
+      "recommended_action": "reference",
+      "star_rating": 2,
+      "reason": "Web Component built with GPT-5.5. Short post, shows AI-assisted coding workflow but not substantive enough for wiki page.",
+      "target_pages": [
+        "entities/simon-willison"
+      ],
+      "body_excerpt": "# github-code Web Component\nSource: https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything\nAn experimental Web Component built using GPT-5.5 and\nthe following prompt\n:\nlet's build a Web Component for embedding code from GitHub\n<github-code href=\"https://github.com/simonw/sqlite-"
+    },
+    {
+      "title": "You shouldn't trust trusted publishing",
+      "url": "https://lwn.net/Articles/1081690/",
+      "blog": "LWN.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/lwn.net--articles-1081690--03d5fb92.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Supply chain security (PyPI trusted publishing). Not AI-specific. Short LWN summary post.",
+      "body_excerpt": "# Woodruff: You shouldn't trust trusted publishing\nSource: https://lwn.net/Articles/1081690/\nWoodruff: You shouldn't trust trusted publishing\n[Posted July 7, 2026 by jzb]\nWilliam Woodruff, better known online as \"yossarian\", has\npublished\na blog post to make the case that users should not place thei"
+    },
+    {
+      "title": "Content addressing in package managers",
+      "url": "https://nesbitt.io/2026/07/07/content-addressing-in-package-managers.html",
+      "blog": "nesbitt.io",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/nesbitt.io--2026-07-07-content-addressing-in-package-managers-html--41e52f9a.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Package manager content addressing survey (OCI, Nix, pnpm). Infrastructure topic, not AI-specific.",
+      "body_excerpt": "# Content addressing in package managers\nSource: https://nesbitt.io/2026/07/07/content-addressing-in-package-managers.html\nContent addressing identifies a piece of data by a cryptographic hash of its contents rather than by a name or a location. Two copies of the same bytes get the same identifier w"
+    },
+    {
+      "title": "Blog about things you don't understand yet",
+      "url": "https://seangoedecke.com/blog-about-things-you-dont-understand-yet/",
+      "blog": "seangoedecke.com",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/seangoedecke.com--blog-about-things-you-dont-understand-yet--bbb646d8.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "General blogging/writing advice. Mentions LLM steering and C2PA in passing but not substantive enough.",
+      "body_excerpt": "# Blog about things you don't understand yet\nSource: https://seangoedecke.com/blog-about-things-you-dont-understand-yet/\nEvery post I publish represents at least two things I’ve learned: the thing that prompted me to write the post, and the thing I learned in the course of writing it. If I don’t lea"
+    },
+    {
+      "title": "sqlite-migrate 0.2",
+      "url": "https://simonwillison.net/2026/Jul/7/sqlite-migrate/",
+      "blog": "simonwillison.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-7-sqlite-migrate--4d9c06cb.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "One-liner: sqlite-migrate retired in favor of sqlite-utils 4.0 built-in migrations. Too thin.",
+      "body_excerpt": "# sqlite-migrate 0.2\nSource: https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything\nThe version that retires the library, instead implementing a compatibility shim against the new sqlite-utils 4.0 dependency."
+    },
+    {
+      "title": "sqlite-utils 4.0rc4",
+      "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-2/",
+      "blog": "simonwillison.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-2--697d4610.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Pre-release announcement, superseded by the 4.0 final release article.",
+      "body_excerpt": "# sqlite-utils 4.0rc4\nSource: https://simonwillison.net/2026/Jul/7/sqlite-utils-2/#atom-everything\nThe last RC before the 4.0 stable release. Mainly\nimplements feedback\nfrom a detailed review by Claude Fable 5."
+    },
+    {
+      "title": "Kort geding aandeelhouders Solvinity",
+      "url": "https://berthub.eu/articles/posts/kort-geding-aandeelhouder-solvinity/",
+      "blog": "berthub.eu",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/berthub.eu--articles-posts-kort-geding-aandeelhouder-solvinity--329ee9f7.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Dutch-language shareholder lawsuit. Not AI-relevant.",
+      "body_excerpt": "# Kort geding aandeelhouders Solvinity\nSource: https://berthub.eu/articles/posts/kort-geding-aandeelhouder-solvinity/\nGisteren\ndeed ik op Mastodon live verslag\nvan het kort geding van de aandeelhouders van Solvinity tegen de staatssecretaris van Digitale Economie en Soevereiniteit. Gek genoeg zag ik"
+    },
+    {
+      "title": "A full body MRI earns you a year of smoking",
+      "url": "https://entropicthoughts.com/full-body-mri-earns-you-a-base-jump",
+      "blog": "entropicthoughts.com",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/entropicthoughts.com--full-body-mri-earns-you-a-base-jump--c825555d.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Medical risk/statistics analysis. Not AI-relevant.",
+      "body_excerpt": "# A full body MRI earns you a year of smoking\nSource: https://entropicthoughts.com/full-body-mri-earns-you-a-base-jump\nAlternative titles:\n… earns you a high-risk pregnancy\n… earns you an ascent of Matterhorn\n… earns you 10,000 km on a motorcycle\n… earns you two\nbase\njumps\n… earns you a day on the f"
+    },
+    {
+      "title": "Ray Kassar, former Atari CEO",
+      "url": "https://dfarq.homeip.net/ray-kassar-former-atari-ceo/",
+      "blog": "dfarq.homeip.net",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--ray-kassar-former-atari-ceo--b970bb1a.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Tech history (Atari CEO biography). Not AI-relevant.",
+      "body_excerpt": "# Ray Kassar, former Atari CEO\nSource: https://dfarq.homeip.net/ray-kassar-former-atari-ceo/?utm_source=rss&utm_medium=rss&utm_campaign=ray-kassar-former-atari-ceo\nRaymond Edward Kassar was born January 2, 1928 and died December 10, 2017, aged 89, in Vero Beach, Florida. Ray Kassar was president, an"
+    },
+    {
+      "title": "How did Windows 95 decide that a setup program ran?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260707-00/?p=112508",
+      "blog": "devblogs.microsoft.com/oldnewthing",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/devblogs.microsoft.com--oldnewthing-20260707-00--2412d27f.md",
+      "recommended_action": "skip",
+      "star_rating": 1,
+      "reason": "Windows 95 internals. Not AI-relevant.",
+      "body_excerpt": "# How did Windows 95 decide that a setup program ran?\nSource: https://devblogs.microsoft.com/oldnewthing/20260707-00/?p=112508\nA little while ago, I mentioned that\nWindows 95 had some defenses against installers that overwrite a file with an older version\n. These defenses kicked in whenever it detec"
+    }
+  ]
+}

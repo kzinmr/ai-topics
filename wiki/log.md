@@ -1,3 +1,13 @@
+## [2026-07-08] wiki: Blog-wiki-ingest - LLM gateways enrichment, reference items
+
+**Blog triage recovered from checkpoint (20 decisions: 3 takes, 6 references, 11 skips). All 3 takes already processed by other pipelines (comparisons/llm-gateways created, concepts/ai-industry-economics enriched, entities/openai AP+ case study added). Processed 4 reference enrichments.**
+
+**Pages updated:**
+- entities/simon-willison.md — sqlite-utils 4.0 final release entry (migrations, nested transactions, compound FKs); github-code Web Component entry
+- concepts/notion-mcp.md — Merge Agent Handler third-party Notion MCP integration section
+- concepts/ai-governance-political-pressure.md — Doctorow antitrust enforcement reference added
+- concepts/apple.md — Siri iOS 27 beta 3 voice customization (Pace/Expressivity sliders)
+
 ## [2026-07-08] wiki: Newsletter-wiki-ingest - Fable entity, enrichments
 
 **Newsletter triage recovered from checkpoint (5 newsletters: Ben's Bites, AINews, SemiAnalysis, Super Intel, Lenny's Newsletter)**

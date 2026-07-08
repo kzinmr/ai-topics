@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-07-08T07:23:41.763711+00:00",
+  "triage_run_id": "20260708T072341Z",
+  "source": "newsletter",
+  "summary_ja": "5ニュースレターをトリアージ。★★★★☆ Ben's Bites（Fableハーネス考察）→ entities/fable.md作成候補（★take）。★★★★☆ AINews（Lilian Weng 35論文ダイジェスト）→ entities/lilian-weng.md追記候補（★reference）。★★★☆☆ SemiAnalysis（Anthropic IPO財務）→ entities/anthropic.md軽微追記候補（★reference）。★★☆☆☆ Super Intel（Stochastic Parrots再解釈）→ beehiiv Cloudflare保護でスキップ。★★☆☆☆ Lenny's Newsletter（Tech worker sentiment）→ AI以外の話題でスキップ。既存Wikiカバレッジ確認済み：harness-engineering.md（536行）・RSI（314行）は既にWeng論文を包括カバー。Ben's Bites Fable記事が唯一の未カバー領域。",
+  "decisions": [
+    {
+      "item_id": "<20260708022026.3.2f64480b275b33b4@mg-d1.substack.com>-group",
+      "source": "newsletter",
+      "source_name": "AINews / Latent Space",
+      "title": "Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-lilian-weng-summarizes-35",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-08-ainews-lilian-weng-summarizes-35-papers-on-harness-engineering-for-rsi.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ AINewsによるLilian WengのHarness Engineering×RSI論文サマリーダイジェスト。本文33段落で、Wengの35論文レビューに加え、Anthropic Cowork/Claude Cowork mobile、Codex Mobile iOS等の最新プロダクト動向とハーネス工学の接続を解説。既存concepts/harness-engineering.md（536行）とconcepts/recursive-self-improvement.md（314行）はWengの原文を既に包括カバー。本記事の付加価値は、学術的枠組みを現行プロダクトに適用する文脈。entities/lilian-weng.md（197行、西暦2026年7月投稿済）へのAdded Context追記候補。isAccessibleForFree: falseだが実質フルアクセス可能。",
+      "candidate_wiki_path": "entities/lilian-weng.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-08\n**Subject:** [AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI\n**Collected:** 2026-07-08T07:12:08.381472+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT9"
+    },
+    {
+      "item_id": "<20260708060428.3.1a5337b6f31b8512@mg-d0.substack.com>-group",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "Anthropic 3Q26 Profit Over $1B: The Anthropic IPO Financials Sneak Peak",
+      "url": "https://open.substack.com/pub/semianalysis/p/anthropic-3q26-profit-over-1b-the",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-08-anthropic-3q26-profit-over-1b-the-anthropic-ipo-financials-sneak-peak.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ SemiAnalysisによるAnthropic IPO財務分析。isAccessibleForFree: false、実質ペイウォール付き（本文5段落のみアクセス可）。主要主張は「3Q26利益$1B超」「6月1日機密IPO申請」「Zhipu・Minimaxが中国で既にIPO」。entities/anthropic.md（703行）は既にWSJのQ2収益性分析、Ed Zitronの批判的分析、IPO準備（機密S-1提出、2026年10月$400-500B目標）を包括カバー。本記事の独自情報「3Q26 $1B利益予測」「Tokenomics Model」は未カバーだが、ペイウォールのため一次検証不可。軽微な追記候補（Qualifier付き）。",
+      "candidate_wiki_path": "entities/anthropic.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-08\n**Subject:** Anthropic 3Q26 Profit Over $1B: The Anthropic IPO Financials Sneak Peak\n**Collected:** 2026-07-08T07:12:11.493429+00:00\n**Articles linked:** 15\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20v"
+    },
+    {
+      "item_id": "<20260707.145214.27981278@mta10>-group",
+      "source": "newsletter",
+      "source_name": "Super Intel",
+      "title": "What Stochastic Parrots Really Meant",
+      "url": "https://getsuperintel.site/p/what-stochastic-parrots-really-meant",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-07-what-stochastic-parrots-really-meant.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Super IntelによるBender et al.(2021)「Stochastic Parrots」論文の再解釈。全20リンクがbeehiivトラッキングURL。2026年7月7日配信のため8日トリアージ時点でトラッキングトークン期限切れの可能性大。inbox要約は「beehiiv Cloudflare保護で本文取得不可」と報告。concepts/stochastic-parrots.md未作成だが、本文が完全に到達不能なため内容評価不可。2021年論文の再解釈という主題はWiki優先度が低い。スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-07\n**Subject:** 🦜 What \"Stochastic Parrots\" Really Meant\n**Collected:** 2026-07-08T07:12:05.218231+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/qYThwm2QLiS5IqOMEug517j5mHKGjEX1JuDpg0G5EYUB5AVgkFHNMJRd9V6e%0AfSGVqCwd3ccyytZstxsqu"
+    },
+    {
+      "item_id": "<20260707130423.3.9057e5acdfaab511@mg2.substack.com>-group",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter",
+      "title": "How tech workers are feeling in 2026: a workforce splitting in two",
+      "url": "https://open.substack.com/pub/lenny/p/how-tech-workers-are-feeling-in-2026",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-07-how-tech-workers-are-feeling-in-2026-a-workforce-splitting-in-two.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Lenny's Newsletter（Noam Segal & Lenny Rachitsky）によるTechワーカーセンチメント調査第2弾。主テーマはAIではなくワークフォースの二極化。テック業界の背景情報として参照可能だが、AI/LLM技術ページへの直接的な追記価値は低い。isAccessibleForFree: trueだがトリアージ不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-07\n**Subject:** How tech workers are feeling in 2026: a workforce splitting in two\n**Collected:** 2026-07-08T07:11:59.182668+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20vc3Vic2Nya"
+    }
+  ]
+}

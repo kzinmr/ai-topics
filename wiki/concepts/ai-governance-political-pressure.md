@@ -80,3 +80,4 @@ In June 2026, a significant governance crisis emerged when Anthropic employees a
 - [HN Discussion — NYT Report (184 pts)](https://news.ycombinator.com/item?id=48582327)
 - [HN Discussion — SK Telecom / Mythos (115 pts)](https://news.ycombinator.com/item?id=48584484)
 - [Raw research note](raw/articles/2026-06-17_anthropic_trump-administration-political-pressure.md)
+- Cory Doctorow, \"How US states and international trustbusters can beat Big Tech\" (July 7, 2026) — [[raw/articles/pluralistic.net--2026-07-07-going-global--e232f95f.md]]
