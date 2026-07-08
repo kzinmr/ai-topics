@@ -51,4 +51,4 @@ Choose when you need **LLMOps tooling bundled with routing** — guardrails, pro
 
 - [[concepts/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
 - [[comparisons/llm-api-pricing]] — LLM API Pricing Comparison — US vs China Providers
-- [[concepts/model-routing]] — Model Routing (concept)
+- [[concepts/coding-agents/model-routing]] — Model Routing (concept)
