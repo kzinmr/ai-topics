@@ -1,3 +1,8 @@
+## [2026-07-08] wiki: Enrich OpenAI entity with Australian Payments Plus case study
+
+**Updated:**
+- `entities/openai.md` — Added Australian Payments Plus enterprise adoption case study (80% employees more creative, 300+ custom GPTs, 1000+ Projects, Codex for reconciliation/investigation, simulations in 1 day vs weeks); added tags (enterprise-ai, chatgpt, codex, llm, case-study); added related wikilinks to concepts/ai-industry-economics, concepts/token-economics, entities/anthropic
+
 ## [2026-07-08] wiki: Add LLM gateways comparison page
 
 **Created:**
