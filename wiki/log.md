@@ -1,3 +1,11 @@
+## [2026-07-07] wiki: Added Anthropic RSI evidence to recursive-self-improvement
+
+**Updated:**
+- `concepts/recursive-self-improvement.md` — Added "Industry Evidence: Anthropic's RSI Trajectory" (metrics, benchmarks, task horizon doubling, narrowing human role) + "Safety & Governance Concerns" (safety interventions, reward hacking, verification, dual framing); added 2 new sources
+- `entities/anthropic.md` — Added cross-reference to RSI concept page
+
+---
+
 ## [2026-07-07] wiki: Split RSI into standalone concept page
 
 **Created:**

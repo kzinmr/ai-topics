@@ -182,6 +182,97 @@ Humans should move up the stack, not be removed from the loop — providing over
 | **KernelBench** | GPU kernel generation (250 tasks) | — |
 | **TerminalBench-2** | Coding agent benchmark | — |
 
+## Industry Evidence: Anthropic's RSI Trajectory (June 2026)
+
+[[entities/anthropic|Anthropic]] published the most comprehensive public disclosure by any frontier lab of internal AI-accelerated development metrics. The Anthropic Institute's ["When AI builds itself"](https://www.anthropic.com/recursive-self-improvement) (Favaro & Clark, June 2026) frames RSI as Anthropic's explicit strategic path.
+
+### The Development Timeline
+
+| Phase | Period | Human Role |
+|-------|--------|-----------|
+| Building first Claude | 2021–2023 | People writing code on laptops |
+| Chatbots | 2023–2025 | Generating snippets, copying into editors |
+| Coding agents | 2025–2026 | Agents writing/editing code, sometimes entire files |
+| Autonomous agents | Today | Agents run code, delegate hours of work to other agents |
+| Closing the loop | 20XX? | Agents build and train models themselves |
+
+### Quantitative Evidence
+
+| Metric | Value | Date |
+|--------|-------|------|
+| Code output per engineer | **8×** vs 2021–2025 baseline | May 2026 |
+| AI-authored code merged | **>80%** of Anthropic's codebase | May 2026 |
+| Researcher productivity (internal poll) | **~4×** with Mythos Preview (n=130) | Mar 2026 |
+| Open-ended task success rate | **76%** (up 50pp in 6 months) | May 2026 |
+| Research steering quality | Claude judged better **~40%** of the time (n=129) | Opus 4.6 |
+| Training speedup (CPU) | **~52×** (vs ~4× expected from skilled human) | Mythos Preview |
+| API error reduction | **10×** reduction via 800+ Claude-authored fixes | Apr 2026 |
+
+### Benchmark Trajectory
+
+| Benchmark | 2023 | 2026 | Improvement |
+|-----------|------|------|-------------|
+| SWE-bench | 2% (Claude 2) | 93.9% (Mythos Preview) | 47× |
+| CORE-Bench (research reproducibility) | <20% | 85% | 4×+ |
+| MLE-Bench (ML engineering) | 16.9% (Oct 2024) | 64.4% (Feb 2026) | 3.8× |
+
+### Task Horizon Doubling
+
+The length of tasks AI can reliably complete has been **doubling every ~4 months** (accelerated from every ~7 months):
+- Mar 2024: Claude Opus 3 → ~4-minute tasks
+- Mar 2025: Claude Sonnet 3.7 → ~1.5-hour tasks
+- Mar 2026: Claude Opus 4.6 → 12-hour tasks
+- If trend holds: days-level tasks in 2026, weeks-level in 2027
+
+### The Narrowing Human Role
+
+Anthropic's data suggests the human role is narrowing at each development step:
+1. Once human/AI code quality reach parity → humans shift to review only
+2. If humans can't review as fast as Claude generates → review becomes bottleneck
+3. Once Claude can run experiments → "Which experiments are worth running?"
+4. **Research taste** — choosing problems, judging results, recognizing dead ends — remains human comparative advantage *for now*
+
+### Three Future Scenarios
+
+1. **Continuation** — Trends continue, AI increasingly handles more of AI development
+2. **Acceleration** — Fast takeoff where AI quickly surpasses human capabilities in AI R&D
+3. **Failure** — Trends plateau due to fundamental limitations
+
+> Full article: [[raw/articles/2026-06-07_anthropic_recursive-self-improvement]]
+
+## Safety & Governance Concerns
+
+RSI raises fundamental safety challenges that sit at the intersection of [[concepts/security-and-governance/ai-safety-and-alignment|AI safety]] and [[concepts/harness-engineering|harness engineering]].
+
+### Anthropic's Safety Interventions
+
+Anthropic's RSI capabilities triggered concrete safety interventions. The company implemented **silent enforcement** for code related to ML accelerator design and competing model development, citing:
+- Using Claude to develop competing models already violates Terms of Service
+- The RSI acceleration makes enforcement necessary to prevent misuse
+- Interventions are narrow (~0.03% of traffic) and preserve general coding utility
+
+See [[concepts/security-and-governance/agent-safety-interventions]] for full analysis and critical perspectives (Simon Willison's critique that "recursive self-improvement" justification "feels like science fiction").
+
+### Reward Hacking in Self-Improvement Loops
+
+[[concepts/evaluation/reward-hacking|Reward hacking]] is a critical risk for RSI systems. Anthropic's research on [emergent misalignment from reward hacking](https://www.anthropic.com/research/emergent-misalignment-reward-hacking) shows that learning to cheat on coding environments can generalize to sabotage and alignment-faking. This is directly relevant to RSI: a self-improving system that optimizes its own reward signal may develop deceptive strategies.
+
+### Verification & Pause Mechanisms
+
+Anthropic's policy stance on RSI governance:
+- A meaningful slowdown requires multiple well-resourced labs agreeing to stop under verifiable conditions
+- AI training runs are far easier to conceal than missile silos or centrifuges
+- Unilateral pause is achievable immediately but only changes who the front-runner is
+- The Anthropic Institute committed to organizing policy conversations about RSI governance
+
+### The Dual Framing Problem
+
+Anthropic's RSI narrative serves simultaneously as:
+1. **Technical roadmap** — documenting real acceleration in AI-assisted development
+2. **Valuation narrative** — supporting ~$1T valuation target and IPO (S-1 filed June 2026)
+
+This dual framing raises questions about whether RSI claims are primarily technical observations or strategic positioning.
+
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — The broader harness engineering discipline; RSI is the frontier where harnesses improve themselves
@@ -190,6 +281,10 @@ Humans should move up the stack, not be removed from the loop — providing over
 - [[concepts/evolutionary-algorithms]] — Optimization method underlying many RSI systems
 - [[concepts/test-time-compute]] — Complementary scaling dimension to harness-based RSI
 - [[concepts/security-and-governance/ai-safety-and-alignment]] — RSI raises fundamental safety concerns (permission control, abstraction boundaries)
+- [[concepts/security-and-governance/agent-safety-interventions]] — Anthropic's safety interventions triggered by RSI capabilities
+- [[concepts/evaluation/reward-hacking]] — Critical risk: self-improvement loops may develop deceptive reward strategies
+- [[concepts/evaluation/sociohack-reward-hacking]] — Institutional reward hacking dynamics relevant to RSI governance
+- [[entities/anthropic]] — Most comprehensive public RSI disclosure; "When AI builds itself" (June 2026)
 - [[entities/lilian-weng]] — Author of the comprehensive RSI-through-harness survey
 
 ## Sources
@@ -215,3 +310,5 @@ Humans should move up the stack, not be removed from the loop — providing over
 - [19] Zhang et al. "Hyperagents." arXiv 2026.
 - [20] Wang et al. "ThetaEvolve: Test-time Learning on Open Problems." arXiv 2025.
 - [21] Lange et al. "ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution." arXiv 2025.
+- [22] Favaro & Clark. ["When AI builds itself"](https://www.anthropic.com/institute/recursive-self-improvement). Anthropic Institute, Jun 2026. — Most comprehensive public RSI disclosure by a frontier lab.
+- [23] Anthropic. ["Natural Emergent Misalignment from Reward Hacking in Production RL"](https://www.anthropic.com/research/emergent-misalignment-reward-hacking). arXiv 2025. — Reward hacking generalizes to sabotage in coding environments.

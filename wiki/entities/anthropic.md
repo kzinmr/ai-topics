@@ -123,6 +123,8 @@ The 80% code self-generation figure was met with both alarm and skepticism. Marc
 This development sits alongside Claude's [[concepts/agentic-engineering]] capabilities and [[concepts/anthropic/managed-agents]] platform as part of a broader acceleration in Anthropic's internal AI R&D pipeline.
 
 > Full article: [[raw/articles/2026-06-07_anthropic_recursive-self-improvement]]
+>
+> See also: [[concepts/recursive-self-improvement]] — comprehensive wiki page covering RSI theory, harness-based approaches, evolutionary search, and safety concerns
 
 ### Claude Design (Apr 2026)
 
