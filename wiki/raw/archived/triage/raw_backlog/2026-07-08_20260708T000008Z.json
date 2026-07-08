@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-07-08T04:10:04.778152+00:00",
+  "triage_run_id": "20260708T000008Z",
+  "source": "raw_backlog",
+  "summary_ja": "5件全て事前処理済み。MAI-Thinking-1技術レポート(372KB)はentities/mai-thinking-1(148行)+concepts/mai-thinking-1-tech-report(227行)で完全カバー。BenchFlow Awesome Evals(175KB)はconcepts/ai-benchmarks/benchflow-toolへ拡充済み。残り3件は既アーカイブ済み。Takes=0。",
+  "decisions": [
+    {
+      "item_id": "backlog-1",
+      "source": "raw_backlog",
+      "source_name": "Microsoft MAI-Thinking-1 Tech Report",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 2026-07-07にentities/mai-thinking-1(148行)とconcepts/mai-thinking-1-tech-report(227行)へ完全拡充済み。アーキテクチャ、ベンチマーク、GRPO訓練詳細、YOLO分散インフラまで網羅。重複不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-"
+    },
+    {
+      "item_id": "backlog-2",
+      "source": "raw_backlog",
+      "source_name": "BenchFlow Awesome Agent Evals",
+      "title": "Awesome Agent Evals",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 2026-07-07にconcepts/ai-benchmarks/benchflow-toolへ拡充済み。443+リンク、12アイテムMust-Readスターターセット、コンパイル方法論(11.6k論文、47トーク文字起こし)、評価/RL環境企業ランドスケープを網羅。重複不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Awesome Agent Evals [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n> A curated, opinionated, **non-BS** library of the best resources for **building and evaluating AI agents** — papers, blog posts, talks, courses, tools, and benchmarks.\nMaintained by [**BenchFlow**](https://benchfl"
+    },
+    {
+      "item_id": "backlog-3",
+      "source": "raw_backlog",
+      "source_name": "Reframing Superintelligence (Drexler) — FHI Technical Report #2019-1",
+      "title": "Reframing Superintelligence: Comprehensive AI Services as General Intelligence",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/reframing-superintelligence-fhi-2019.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ すでにアーカイブ済み。CAISモデル(Comprehensive AI Services)を提案するDrexlerのFHIテクニカルレポート。AGI/シンギュラリティ議論の基礎文献。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Reframing Superintelligence: Comprehensive AI Services as General Intelligence\n**K. Eric Drexler** — Future of Humanity Institute, University of Oxford\nTechnical Report #2019-1\n<!-- Page 1 -->\n> FHI TECHNICAL REPORT <\nReframing Superintelligence\nComprehensive AI Services\nas General Intelligence\nK."
+    },
+    {
+      "item_id": "backlog-4",
+      "source": "raw_backlog",
+      "source_name": "Dwarkesh Patel - Grant Sanderson podcast",
+      "title": "Grant Sanderson - AI and the future of math",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dwarkesh.com--p-grant-sanderson-2--960d89cd.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ すでにアーカイブ済み。3Blue1BrownのGrant SandersonとDwarkesh Patelの対談。AIの数学進歩と他の分野への示唆。数学的ブレークスルーの検証サイクル、RL環境の限界。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Grant Sanderson - AI and the future of math\nSource: https://www.dwarkesh.com/p/grant-sanderson-2\nAlways so much fun to chat with\nGrant\n.\nAI has been making much faster progress in math than in other fields. As a result, mathematics is showing us, very concretely, what AI progress in other fields w"
+    },
+    {
+      "item_id": "backlog-5",
+      "source": "raw_backlog",
+      "source_name": "WebKit Safari 27 beta — WWDC26",
+      "title": "News from WWDC26: WebKit in Safari 27 beta",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/webkit.org--blog-17967-news-from-wwdc26-webkit-in-safari-27-beta--c116f751.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ すでにアーカイブ済み。WebKitのSafari 27βリリース。58新機能、525修正。ブラウザエンジンのWebプラットフォーム改善。AI/LLMトピックと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# News from WWDC26: WebKit in Safari 27 beta\nSource: https://webkit.org/blog/17967/news-from-wwdc26-webkit-in-safari-27-beta/\nContents\nSafari 27 beta is here. Don’t miss our\nWWDC26 sessions on web technology\n, including\nWhat’s new in WebKit for Safari 27\n, to go deeper on our work in this release. N"
+    }
+  ]
+}

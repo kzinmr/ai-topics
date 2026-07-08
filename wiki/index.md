@@ -2686,6 +2686,7 @@
 - [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison
 - [[comparisons/lambda-microvms-vs-agentcore]] — AWS Lambda MicroVMs vs Amazon Bedrock AgentCore — Isolation Primitive vs Managed Platform
+- [[comparisons/llm-gateways]] — LLM Gateways Comparison — Eden AI vs Merge Gateway vs OpenRouter vs LiteLLM vs Portkey
 - [[comparisons/llm-api-pricing]] — LLM API Pricing Comparison — US vs China Providers
 - [[comparisons/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
 - [[comparisons/local-llm-models-april-2026]] — Local LLM Models Comparison — April 2026

@@ -1,7 +1,7 @@
 ---
 title: "AI Industry Economics — The June 2026 Financial Reckoning"
 created: 2026-06-21
-updated: 2026-07-07
+updated: 2026-07-08
 type: concept
 tags:
   - economics
@@ -18,6 +18,7 @@ sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-18-prices-cant-go-down-html--356e1e6b.md
   - raw/articles/2026-06-03_simonwillison_uber-caps-ai-tool-costs.md
   - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-1-glm-5-2--20d7e445.md
+  - raw/articles/wheresyoured.at--let-ai-burn--bdeb31fe.md
 ---
 
 # AI Industry Economics — The June 2026 Financial Reckoning
@@ -172,6 +173,54 @@ If inference margins collapse:
 - Open-weight providers can compete on price from day one, without the sunk cost of $10B+ training runs
 
 As Alderson notes, Bezos's famous line applies: **"Your margin is my opportunity."** Part 2 of the series explores who wins and loses in a margin-collapse scenario.
+
+## The "Let AI Burn" Reckoning (July 2026)
+
+On July 7, 2026, Ed Zitron published "[Let AI Burn](https://www.wheresyoured.at/let-ai-burn/)" — a sweeping synthesis arguing that the AI bubble is structurally different from prior tech bubbles, is not "too big to fail," and must be allowed to collapse without government intervention. The piece draws on months of prior financial analysis and delivers the starkest framing yet of the industry's economic fragility.
+
+### The Capex Abyss
+
+Microsoft, [[entities/google|Google]], [[entities/meta|Meta]], and [[entities/amazon|Amazon]] are on track to spend **more than $765 billion in capital expenditures in 2026**, with **a trillion more planned for 2027**. None of these companies break out their actual AI revenues — a conspicuous omission given the scale of investment. As Zitron argues, Google does not have the next Google Search, Microsoft does not have the next Microsoft Office, Meta does not have the next Facebook, and Amazon does not have the new AWS. The capex exists because these companies have no other hypergrowth ideas, not because generative AI has demonstrated meaningful revenue potential.
+
+### Revenue Concentration: The Two-Company Problem
+
+**89% of the largest AI companies' revenues come from [[entities/openai|OpenAI]] and [[entities/anthropic|Anthropic]]**. Without those two, the AI industry pulls in at most **~$20 billion in annual revenue** — a trivial sum against the trillions being invested. Even with them, combined 2026 revenue is estimated at roughly $60 billion against $765B+ in capex. Both companies are "horrendously unprofitable," meaning the AI industry is, for the most part, venture capitalists funnelling money to hyperscalers so they can funnel it to [[entities/nvidia|NVIDIA]] or data center capex.
+
+### Enterprise Spend Pullback
+
+A critical signal: companies that were "burning AI tokens at a horrendous rate" because they had just been forced to pay the actual cost of AI are **now pulling back on that spend**. This connects directly to the [[concepts/ai-industry-economics#Enterprise Cost Management: The Uber Example|Uber spending cap]] documented earlier — enterprise rationalization is accelerating, not slowing.
+
+### The "Inessential Industry" Argument
+
+Zitron draws a sharp distinction between the AI industry and the financial industry that was bailed out in 2008:
+
+> The AI industry is very different to the financial industry. It is inessential to the economy, and its relevance is only as large as the hype campaign that sits behind it.
+
+Unlike financial services — which underpins the entire economy's payment, lending, and risk infrastructure — generative AI's presence in the economy is driven entirely by artificial demand manufactured through media hype, venture capital circular financing, and hyperscaler capex commitments. Once the incentive to hype disappears, the actual demand will be revealed as weak.
+
+### Generative AI Will Not Bring AGI
+
+Zitron states plainly what many in the field acknowledge privately:
+
+> Generative AI will not bring us AGI, nor does it do much of what we associate with artificial intelligence. It is not autonomous. It is not "intelligent." It does not have thoughts, or "knowledge," and no matter how many layers of harnesses and scripts you put on top of it, it is still (per OpenAI) mathematically certain to hallucinate.
+
+This is not a fringe position — it follows from [[entities/openai|OpenAI]]'s own admissions and from the mathematical properties of autoregressive token prediction. The gap between what LLMs are and what they are marketed as remains vast.
+
+### The Media/Industry Manufactured Consent Cycle
+
+A central thesis of the piece is that the AI bubble is maintained by a **manufactured consent cycle** involving Silicon Valley, mainstream media, and an "enshittified stock market that rewards grifting and circular financing." AI boosters deliberately speak in the future tense ("we're early," "most people haven't even tried agents") because nothing in the present justifies the investment. The media cycle ensures that every outlet covers AI constantly, creating the illusion of inevitability and suppressing critical analysis. When the stock market and investors cease incentivizing this coverage, the manufactured demand will evaporate.
+
+### GPUs Are Not Dark Fiber
+
+Zitron explicitly rejects the popular "this is just like the Dot Com Bubble" comparison. During the Dot Com era, there was **real consumer demand** for internet access — in 2000, only 52% of American adults were online at 56k speeds. The overbuilt fiber infrastructure had an obvious post-bubble use case. By contrast, generative AI is "everywhere" — everyone has already tried it — and the tepid adoption is the actual demand signal. **AI GPUs are useful for generative AI and not much else.** When the bubble bursts, NVIDIA chips will sit in corporate coffers or be auctioned at steep discounts, not repurposed the way fiber was.
+
+### The Bailout Question
+
+Zitron argues forcefully that the AI industry must not be bailed out:
+
+> No bailouts, no handouts, no special treatment, no tax breaks, no CHIPS act, and no sovereign wealth fund.
+
+OpenAI and Anthropic are "systemically irrelevant" compared to the 2008 financial system — they have limited debt, and their failure would not freeze the payments system or commercial paper market. Even Sam Altman's floated idea of giving 5% of OpenAI to the US government (a "sovereign AI fund") would only cover ~$42 billion — less than OpenAI's 2026 compute spend, and a fraction of the $852 billion OpenAI projects it will burn through by 2030.
 
 ## Related Pages
 

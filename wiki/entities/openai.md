@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-06-30
+updated: 2026-07-08
 tags:
   - company
   - model
@@ -13,6 +13,11 @@ tags:
   - hardware
   - inference
   - infrastructure
+  - enterprise-ai
+  - chatgpt
+  - codex
+  - llm
+  - case-study
 aliases: ["OpenAI Inc."]
 sources:
   - raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md
@@ -39,6 +44,7 @@ sources:
   - raw/articles/openai.com--gpt-5-immunology-mystery--1948945e.md
   - raw/articles/openai.com--index-openai-broadcom-jalapeno-inference-chip--f8a3b2c1.md
   - raw/articles/2026-06-28_openai_hp-frontier-partnership.md
+  - raw/articles/openai.com--index-australian-payments-plus--241bab22.md
 ---
 
 # OpenAI
@@ -355,6 +361,34 @@ Samsung plans to use ChatGPT for knowledge-based tasks (search, analysis, drafti
 Related Korea deployments: Seoul National University deployed ChatGPT Edu to all 47,000 members; Kakao integrated ChatGPT into KakaoTalk group chats. Other Korean enterprises using OpenAI products include LG Electronics, LG Uplus, LG CNS, Samsung SDS, Krafton, Toss, and Korea Zinc.
 
 Source: [[raw/articles/openai.com--index-samsung-electronics-chatgpt-codex-deployment--663d8726.md]]
+
+### Australian Payments Plus Enterprise Adoption
+
+Australian Payments Plus (AP+) operates payments and identity infrastructure across Australia. AP+ deployed **ChatGPT Enterprise** across the company, with **Codex** emerging as the next stage for product, engineering, and technical workflows.
+
+**Key adoption metrics** (AP+ internal data):
+- **80% of employees** reported being more creative or improving work quality with ChatGPT
+- **300+ custom GPTs** created by employees across the organization
+- **1,000+ Projects** created, reflecting broad adoption
+- **Codex** used for reconciliation and investigation — reduced days of manual investigation to minutes in one reconciliation instance (tracing a timestamp inconsistency across system logs)
+- **Working simulations built in 1 day** (down from days to weeks) — Codex used to build payment journey simulations, mobile interactions, authentication flows, and checkout experiences
+
+**Use cases:**
+- Summarizing complex scheme rules and technical specifications
+- Drafting data-driven member communications
+- Structuring ambiguous problems and turning rough inputs into decision-ready work
+- Security teams exploring threat modeling, vulnerability analysis, and alert triage
+- Product teams simulating payment journeys and authentication flows
+
+**Lessons for regulated organizations:**
+- Make the secure path the easy path — governed tools with clear boundaries
+- Governance as a launch partner — early conversations across privacy, security, and operational risk teams
+- Let teams learn in context — relevant examples from own teams, not generic training
+- Use champions to make change tangible — AI champions embedded in existing team rhythms
+
+> *"With AI, the goal is not simply greater efficiency, it is also about helping our people to do their best work."* — Steve Reid, Chief People and Culture Officer, AP+
+
+Source: [[raw/articles/openai.com--index-australian-payments-plus--241bab22.md]]
 
 ### HP Frontier Partnership (June 2026)
 
