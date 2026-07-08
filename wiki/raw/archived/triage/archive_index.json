@@ -2,7 +2,7 @@
   "urls": [
     "...",
     "N/A",
-    "N/A \u2014 20 beehiiv tracking URLs all return 403 expired token",
+    "N/A — 20 beehiiv tracking URLs all return 403 expired token",
     "See raw newsletter file for individual URLs",
     "http://workos.com/auth-md?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026",
     "http://www.paulgraham.com/popular.html",
@@ -277,6 +277,7 @@
     "https://fireworks.ai/blog/Trilogy",
     "https://fireworks.ai/blog/cursor-composer-2",
     "https://fireworks.ai/blog/glm-5p2",
+    "https://fireworks.ai/blog/glm5p2-fast-an-engineering-productivity-story",
     "https://fireworks.ai/blog/kimi-k2-7-code",
     "https://fireworks.ai/blog/minimax-m3",
     "https://fireworks.ai/blog/minimax-m3-launch",
@@ -994,13 +995,13 @@
     "https://steveblank.com/2026/06/16/lean-launch-pad-2026-stanford-lessons-learned-presentations/",
     "https://steveblank.com/2026/06/16/lean-launch-pad-2026-stanford-lessons-learned/",
     "https://substack.com/...",
-    "https://substack.com/.../OAuth\u30ea\u30c0\u30a4\u30ec\u30af\u30c8",
-    "https://substack.com/.../UUID\u30ea\u30c0\u30a4\u30ec\u30af\u30c8",
-    "https://substack.com/.../\u3044\u3044\u306d\u30dc\u30bf\u30f3UI",
-    "https://substack.com/.../\u30a2\u30d7\u30ea\u30b9\u30c8\u30a2",
-    "https://substack.com/.../\u30b3\u30e1\u30f3\u30c8UI",
-    "https://substack.com/.../\u30b7\u30a7\u30a2UI",
-    "https://substack.com/.../\u30cb\u30e5\u30fc\u30b9\u30ec\u30bf\u30fc\u672c\u4f53URL\uff08\u30ea\u30f3\u30af\u30c0\u30a4\u30b8\u30a7\u30b9\u30c8\uff09",
+    "https://substack.com/.../OAuthリダイレクト",
+    "https://substack.com/.../UUIDリダイレクト",
+    "https://substack.com/.../いいねボタンUI",
+    "https://substack.com/.../アプリストア",
+    "https://substack.com/.../コメントUI",
+    "https://substack.com/.../シェアUI",
+    "https://substack.com/.../ニュースレター本体URL（リンクダイジェスト）",
     "https://substack.com/@alexbanks",
     "https://substack.com/@aurielwright786950",
     "https://substack.com/@cheangkangwen",
@@ -1387,6 +1388,7 @@
     "https://www.wheresyoured.at/anthropics-profitability-swindle/",
     "https://www.wheresyoured.at/brokenomics/",
     "https://www.wheresyoured.at/cargo-culture/",
+    "https://www.wheresyoured.at/let-ai-burn/",
     "https://www.wheresyoured.at/premium-notes-from-the-bubble-volume-1/",
     "https://www.wheresyoured.at/premium-the-haters-guide-to-softbank/",
     "https://www.wheresyoured.at/premium-the-haters-guide-to-the-ai-bubble-3-0/",
@@ -1436,5 +1438,5 @@
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-redhat-javascript-clients/",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "total": 1435
+  "updated": "2026-07-08T18:14:19.625145+00:00"
 }

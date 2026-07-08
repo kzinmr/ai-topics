@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-07-08T18:14:19.624760+00:00",
+  "triage_run_id": "20260708T180003Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming-group 2026-07-08: チェックポイント1件（RSS）、156件のraw articlesをスキャン。Daily pipelineが大半を処理済み（active-crawl 3件、blog-wiki-ingest、newsletter-wiki-ingest）。Filesystem scanで2件のenrichment候補を発見: Ed Zitron「Let AI Burn」（45K記事、AIバブル論、entity page未掲載）とFireworks AI GLM 5.2 Fast事例（$218/月のエンジニアリング生産性事例）。全15件をトリアージ。",
+  "decisions": [
+    {
+      "item_id": "dreaming-fs-1",
+      "source": "dreaming",
+      "source_name": "wheresyoured.at",
+      "title": "Let AI Burn",
+      "url": "https://www.wheresyoured.at/let-ai-burn/",
+      "raw_path": "wiki/raw/articles/wheresyoured.at--let-ai-burn--bdeb31fe.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ Ed Zitronの最新45K記事。AI産業のバブル崩壊論を展開し、OpenAI/Anthropicの収益の70%が相互compute spend由来、765Bドルの資本支出の無意味さを主張。entities/ed-zitron.mdに「Let AI Burn」の記載なし（2026-07-01更新、ソースリストに未掲載）。エンティティページのenrichment候補。",
+      "candidate_wiki_path": "entities/ed-zitron.md",
+      "body_excerpt": "# Let AI Burn\nSource: https://www.wheresyoured.at/let-ai-burn/\nIf you liked this piece, you should subscribe to my premium newsletter. It’s $70 a year, or $7 a month, and in return you get a weekly newsletter that’s usually anywhere from 5,000 to 18,000 words, including vast, detailed analyses of\nNV"
+    },
+    {
+      "item_id": "dreaming-fs-2",
+      "source": "dreaming",
+      "source_name": "fireworks.ai",
+      "title": "How I shipped a month of engineering work in four days with GLM 5.2 Fast",
+      "url": "https://fireworks.ai/blog/glm5p2-fast-an-engineering-productivity-story",
+      "raw_path": "wiki/raw/articles/2026-07-08_fireworks-ai_glm5p2-fast-an-engineering-productivity-story.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ FireworksのエンジニアがGLM 5.2 FastでGPUスケジューラのreclaim機能を開発。通常1ヶ月の作業を4日・$218の推論コストで完了。entities/fireworks-ai.mdにはGLM 5.2のベンチマークとRL trainingが記載されているが、この具体的なエンジニアリング事例（設計1日+計画0.5日+実装1.5日、3000行/34テスト）は未記載。",
+      "candidate_wiki_path": "entities/fireworks-ai.md",
+      "body_excerpt": "# How I shipped a month of engineering work in four days with GLM 5.2 Fast\n**Source**: [https://fireworks.ai/blog/glm5p2-fast-an-engineering-productivity-story](https://fireworks.ai/blog/glm5p2-fast-an-engineering-productivity-story)\nGLM 5.2 Fast is available! Opus-level intelligence at open-source "
+    },
+    {
+      "item_id": "dreaming-skip-batch-1",
+      "source": "dreaming",
+      "source_name": "multiple",
+      "title": "Batch skip: Non-AI and already-processed articles",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 以下はdaily pipelineで処理済みまたはwiki範囲外: (1) GitLost agent prompt injection → active-crawlでconcepts/ページ作成済み, (2) Halo tamper-evident runtime → active-crawlでentities/ページ作成済み, (3) Making of Claude Code → active-crawlでentities/claude-code--history.md作成済み, (4) OpenAI Australian Payments Plus → newsletter-wiki-ingestでenrichment済み, (5) LLM gateways comparison → blog-wiki-ingestで作成済み, (6) Martin Alderson GLM 5.2 margin collapse → entities/martin-alderson.mdにソース掲載済み, (7) merge.dev Notion MCP tutorials ×3 → マーケティング記事, (8) ElevenLabs ×3 → 地域パートナーシップ, (9) Cohere Arabic transcription → 言語サポート拡張, (10) Harvey legal drafting → プロダクトページ, (11) ATP podcast Mac apps → 非AI, (12) Pluralistic antitrust → 非AI, (13) shkspr.mobi AI boredom → 意見記事, (14) simonwillison.net SQLite ×3 → ツール記事（AI直接関連なし）, (15) various non-AI blog articles",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（バッチスキップ — 詳細は各記事のraw/articles/参照）"
+    }
+  ]
+}
