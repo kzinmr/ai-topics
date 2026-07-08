@@ -6,9 +6,10 @@
 - [[entities/will-brown]]
 title: "Lilian Weng (@lilianweng)"
 tags: [entity]
-sources: []
+sources:
+  - raw/newsletters/2026-07-08-ainews-lilian-weng-summarizes-35-papers-on-harness-engineering-for-rsi.md
 created: 2026-04-24
-updated: 2026-07-07
+updated: 2026-07-08
 type: entity
 ---
 
@@ -141,7 +142,11 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - **Adversarial attacks on LLMs**: Taxonomy of jailbreak methods and defense strategies
 - **Diffusion models for video**: Extending diffusion model research from image synthesis to temporal generation
 - **Scaling laws**: Comprehensive survey "Scaling Laws, Carefully" (June 2026) — Kaplan vs Chinchilla reconciliation, data-limited scaling, practical fitting challenges
-- **Harness engineering for RSI**: "Harness Engineering for Self-Improvement" (July 2026) — comprehensive survey of harness design patterns, context engineering (ACE, MCE, Meta-Harness), self-improving harnesses (STOP, Self-Harness, Darwin Gödel Machine), evolutionary search (AlphaEvolve, AFlow, ADAS), and auto-research workflows (AI Scientist, Autodata)
+|- **Harness engineering for RSI**: "Harness Engineering for Self-Improvement" (July 2026) — comprehensive survey of harness design patterns, context engineering (ACE, MCE, Meta-Harness), self-improving harnesses (STOP, Self-Harness, Darwin Gödel Machine), evolutionary search (AlphaEvolve, AFlow, ADAS), and auto-research workflows (AI Scientist, Autodata)
+
+### Added Context: AINews Synthesis (July 2026)
+
+AINews/Latent Space contextualized Weng's Harness Engineering survey within the current product landscape, connecting academic frameworks to Anthropic's Cowork agent UX extension, Claude Cowork mobile launch, and Codex Mobile iOS. The synthesis position: "Harness engineering is increasingly the center of agent design" — a framing that bridges Weng's 35-paper survey with practical product development across the Anthropic and OpenAI ecosystems. This reinforces Weng's role not just as a research synthesizer but as a reference point for product-direction decisions in the agent engineering space.
 
 ## Related Concepts
 

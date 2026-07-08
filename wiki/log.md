@@ -1,3 +1,16 @@
+## [2026-07-08] wiki: Newsletter-wiki-ingest - Fable entity, enrichments
+
+**Newsletter triage recovered from checkpoint (5 newsletters: Ben's Bites, AINews, SemiAnalysis, Super Intel, Lenny's Newsletter)**
+
+**Created:**
+- `entities/fable.md` — Anthropic Fable coding harness entity page (creative thinking partner use case, "square peg for a round hole" harness design tension, Opus-like interaction traits, subagent orchestration, memory compaction); tags: entity, product, anthropic, agent-harness, coding-agent
+
+**Updated:**
+- `entities/lilian-weng.md` — Added "Added Context: AINews Synthesis (July 2026)" subsection connecting Weng's Harness Engineering survey to current product landscape (Cowork UX, Claude Cowork mobile, Codex Mobile iOS); "Harness engineering is increasingly the center of agent design" framing
+- `entities/anthropic.md` — Added "SemiAnalysis IPO Financial Projection (July 2026)" subsection: 3Q26 $1B profit projection, June 1 confidential IPO filing (both paywalled/qualifier-appended)
+- `concepts/harness-engineering.md` — Added "Cognitive UX in Harness Design" section: creative partner vs coding assistant design tension, Opus-like interaction traits, system prompt plasticity; cross-links to agentic-engineering and entities/fable
+- `wiki/index.md` — Added entities/fable entry
+
 ## [2026-07-08] wiki: Enrich OpenAI entity with Australian Payments Plus case study
 
 **Updated:**

@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-06-07
+updated: 2026-07-08
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -33,6 +33,7 @@ sources: [
   - raw/newsletters/2026-05-26-the-pope-and-anthropic-partner-on-the-ai-ethics-debate.md
   - raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md
   - raw/articles/2026-06-07_anthropic_recursive-self-improvement.md
+  - raw/newsletters/2026-07-08-anthropic-3q26-profit-over-1b-the-anthropic-ipo-financials-sneak-peak.md
 ]
 related: []
 ---
@@ -121,6 +122,10 @@ On June 4, 2026, the Anthropic Institute published **"When AI builds itself"** �
 The 80% code self-generation figure was met with both alarm and skepticism. Marcus argued the results demonstrate RSI (AI as a useful coding tool) rather than AGI. The internal data suggests Claude's role in Anthropic's own development pipeline has crossed a critical threshold where the majority of code contributions are now AI-generated.
 
 This development sits alongside Claude's [[concepts/agentic-engineering]] capabilities and [[concepts/anthropic/managed-agents]] platform as part of a broader acceleration in Anthropic's internal AI R&D pipeline.
+
+### SemiAnalysis IPO Financial Projection (July 2026)
+
+SemiAnalysis, citing their proprietary Tokenomics Model, projected Anthropic would achieve **over $1B in profit by 3Q26** and noted the company confidentially filed for IPO on **June 1, 2026**. These claims supplement earlier reporting on the $400-500B October 2026 IPO target. **⚠️ Caveat**: The SemiAnalysis article is behind a full paywall; the profit projection and filing date are sourced from a 5-paragraph free preview and should be treated as unverified secondary reports. The existing IPO target (October 2026, $400-500B from earlier WSJ reporting) remains the most substantiated timeline.
 
 > Full article: [[raw/articles/2026-06-07_anthropic_recursive-self-improvement]]
 >
@@ -690,6 +695,7 @@ Training philosophy: train models to avoid unsupported claims and flag uncertain
 - [[entities/claude-code]] — Claude Code CLI agent
 - [[concepts/claude/mythos]] — Claude Mythos model (used by Claude Security)
 - [[entities/foundation-capital]] — Partner in Claude Managed Agents
+- [[entities/fable]] — Fable coding harness (links to harness engineering + cognitive UX design patterns)
 - [[entities/sap-business-ai-platform]] — SAP partnership (May 2026)
 - [[concepts/anthropic/managed-agents]] — Managed Agents platform details
 - [[entities/project-glasswing]] — Defensive security initiative

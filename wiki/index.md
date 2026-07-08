@@ -269,6 +269,7 @@
 - [[entities/evis-drenova]] — Evis Drenova
 - [[entities/exa]] — Exa
 - [[entities/fabiensanglard-net]] — Fabien Sanglard
+- [[entities/fable]] — Fable (Anthropic coding harness); creative thinking partner use case; "square peg for a round hole" tension in harness design 🆕
 - [[entities/factory]] — San Francisco-based startup building autonomous AI coding agents ('Droids') for enterprise software development. $1.5...
 - [[entities/factory-ai]] — Factory.ai
 - [[entities/faire]] — Faire

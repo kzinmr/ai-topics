@@ -529,6 +529,18 @@ This validates the platform thesis: participants with zero coding experience can
 
 **Source**: Weng, L. ["Harness Engineering for Self-Improvement"](https://lilianweng.github.io/posts/2026-07-04-harness/) (Jul 2026).
 
+## Cognitive UX in Harness Design
+
+A recurring tension in harness engineering is the mismatch between **coding-optimized harness design** and **creative/thinking use cases**. Early user reports (notably Ben's Bites, July 2026) describe using coding harnesses like Anthropic's [[entities/fable]] as "thinking partners" rather than code generators — a "square peg for a round hole" dynamic where users repurpose developer tools for general cognitive augmentation.
+
+Key design questions emerging from this pattern:
+
+- **Creative partner vs coding assistant**: How should a harness's interaction model differ when the primary task is creative brainstorming vs software development? Current harnesses optimize for code generation (tab-complete, file write, terminal commands) rather than reflective dialogue.
+- **Opus-like interaction traits**: Users report preferring harnesses that exhibit patience, resourcefulness, and creative engagement over pure coding speed. This suggests an untapped design space for "cognitive harnesses" distinct from developer-facing products.
+- **System prompt plasticity**: The ability to override default coding-centric system prompts is emerging as a critical UX feature — users who modify prompts away from developer-centric framing report significantly different (and more creative) interaction patterns.
+
+This design dimension connects [[concepts/agentic-engineering]] (how humans use agents) with AI agent engineering (how harness execution loops are built), suggesting harness design must consider not just execution efficiency but cognitive ergonomics.
+
 ## References
 
 - Husain, H. (2024). ["The Revenge of the Data Scientist"](https://hamel.dev/blog/posts/revenge/) — Foundational essay arguing the harness is data science.
