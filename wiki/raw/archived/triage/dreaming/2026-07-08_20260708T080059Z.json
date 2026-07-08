@@ -1,0 +1,24 @@
+{
+  "archived_at": "2026-07-08T08:09:43.622931+00:00",
+  "triage_run_id": "20260708T080059Z",
+  "source": "dreaming",
+  "summary_ja": "raw-backlog-ingest（5記事）: 3記事は既にアーカイブ済み。2記事（MAI-Thinking-1技術報告書、BenchFlow Awesome Agent Evals）は既存Wikiページで完全にカバーされており追加処理不要。全5件をskipとしてアーカイブ。",
+  "decisions": [
+    {
+      "item_id": "raw-2",
+      "filename": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "url": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ 既存ページで完全カバー済み。entities/mai-thinking-1（148行）、concepts/mai-thinking-1-tech-report（227行）、concepts/microsoft-mai-models（71行）の3ページがこのraw記事をソースとして参照し、アーキテクチャ・ベンチマーク・RL訓練・戦略的文脈を詳細に記録。新規追加すべき内容なし。",
+      "body_excerpt": "MAI-Thinking-1: Building a Hill-Climbing Machine — 35B active/1T total MoE, 30T tokens, from-scratch training, AIME 2025 97.0%, SWE-Bench Pro 52.8%"
+    },
+    {
+      "item_id": "raw-3",
+      "filename": "benchflow-awesome-evals-2025.md",
+      "url": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ 既存ページで完全カバー済み。concepts/ai-benchmarks/benchflow-tool（118行）がAwesome Agent Evals専用セクションを持ち、443+リソース・12のmust-read・セクション構成・コンパイル方法論を詳細に記録。新規追加すべき内容なし。",
+      "body_excerpt": "Awesome Agent Evals — curated annotated library of 443+ resources for building and evaluating AI agents, depth-4 citation crawl (11.6k papers), 47 talks transcribed"
+    }
+  ]
+}

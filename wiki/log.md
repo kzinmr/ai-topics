@@ -1,3 +1,16 @@
+
+## [2026-07-08 08:00 UTC] raw-backlog-ingest | Archived 2 unprocessed raw articles (5 candidates: 3 already archived, 2 content-already-captured)
+
+**Processed 5 candidates from backlog (ai-hint sorted):**
+- `reframing-superintelligence-fhi-2019.md` — Already archived (Drexler CAS report 2019)
+- `2026-06-03_microsoft-mai-thinking-1-tech-report.md` — Skip, content fully covered in entities/mai-thinking-1 + concepts/mai-thinking-1-tech-report + concepts/microsoft-mai-models
+- `benchflow-awesome-evals-2025.md` — Skip, content fully covered in concepts/ai-benchmarks/benchflow-tool
+- `dwarkesh.com--p-grant-sanderson-2--960d89cd.md` — Already archived (Grant Sanderson math interview)
+- `webkit.org--blog-17967-news-from-wwdc26-webkit-in-safari-27-beta--c116f751.md` — Already archived (Safari 27 beta release notes)
+
+**Newly archived:** 2 articles (MAI-Thinking-1 tech report, BenchFlow Awesome Agent Evals)
+**Total archive URLs:** 1,434
+
 ## [2026-07-08] wiki: Blog-wiki-ingest - LLM gateways enrichment, reference items
 
 **Blog triage recovered from checkpoint (20 decisions: 3 takes, 6 references, 11 skips). All 3 takes already processed by other pipelines (comparisons/llm-gateways created, concepts/ai-industry-economics enriched, entities/openai AP+ case study added). Processed 4 reference enrichments.**
