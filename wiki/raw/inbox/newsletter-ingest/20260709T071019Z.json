@@ -1,0 +1,81 @@
+{
+  "run_id": "20260709T071019Z",
+  "triaged_at": "2026-07-09T07:10:19+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 4,
+  "classifications": [
+    {
+      "message_id": "<20260709060541.3.d72ceda979cd8ffe@mg-d0.substack.com>",
+      "subject": "[AINews] SpaceXAI launches Grok 4.5, first Opus-class model post Cursor acquisition",
+      "date": "2026-07-09",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-09-ainews-spacexai-launches-grok-4-5-first-opus-class-model-post-cursor-acquisition.md",
+      "source": "swyx / AINews (publication_id=1084089)",
+      "importance": "critical",
+      "wiki_targets": [
+        {"type": "entity", "name": "spacexai", "action": "create_or_update", "reason": "New AI org launching flagship model"},
+        {"type": "entity", "name": "grok", "action": "update", "reason": "Grok 4.5 model launch — major version bump"},
+        {"type": "event", "name": "grok-4-5-launch", "action": "create", "reason": "First Opus-class model from SpaceXAI post Cursor acquisition"},
+        {"type": "entity", "name": "cursor", "action": "update", "reason": "Cursor acquisition referenced — verify details"},
+        {"type": "concept", "name": "ai-industry-consolidation", "action": "update", "reason": "SpaceXAI + Cursor acquisition trend"}
+      ],
+      "primary_article_url": "https://open.substack.com/pub/swyx/p/ainews-spacexai-launches-grok-45",
+      "notes": "Major model launch. Substack redirect links — need to resolve to find external sources. Claims 'Opus-class' performance post Cursor acquisition by SpaceXAI."
+    },
+    {
+      "message_id": "<20260708225507.3.68ba4cebc218c8b2@mg-d0.substack.com>",
+      "subject": "Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO",
+      "date": "2026-07-08",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-08-why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto.md",
+      "source": "swyx (publication_id=1084089)",
+      "importance": "critical",
+      "wiki_targets": [
+        {"type": "entity", "name": "modal", "action": "create_or_update", "reason": "Modal AI infrastructure company — CTO interview"},
+        {"type": "entity", "name": "akshat-bubna", "action": "create_or_update", "reason": "Modal CTO — opinion leader in AI infra"},
+        {"type": "concept", "name": "agent-experience", "action": "create", "reason": "New concept: infrastructure optimized for agent workloads (AX parallels DX)"},
+        {"type": "concept", "name": "ai-infrastructure", "action": "update", "reason": "Evolving requirements for agent-era compute"}
+      ],
+      "primary_article_url": "https://open.substack.com/pub/swyx/p/modal2026",
+      "notes": "Directly addresses wiki core topic: AI infrastructure for agents. Podcast format — may need transcript extraction. Publication_id=1084089 is swyx's AINews/latentspace."
+    },
+    {
+      "message_id": "<20260708092244.3.055e62e9e45bdbf5@mg2.substack.com>",
+      "subject": "What Claude Fable Means for Coding Agents",
+      "date": "2026-07-08",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-08-what-claude-fable-means-for-coding-agents.md",
+      "source": "hugobowne (publication_id=2632531)",
+      "importance": "high",
+      "wiki_targets": [
+        {"type": "entity", "name": "claude", "action": "update", "reason": "Claude Fable — new capability/feature from Anthropic"},
+        {"type": "concept", "name": "coding-agents", "action": "update", "reason": "Claude Fable implications for coding agent workflows"},
+        {"type": "entity", "name": "hugobowne", "action": "create_or_update", "reason": "Newsletter source — AI/coding commentary"}
+      ],
+      "primary_article_url": "https://open.substack.com/pub/hugobowne/p/what-claude-fable-means-for-coding",
+      "notes": "Podcast-heavy newsletter (mostly play_audio links). 'Claude Fable' likely a narrative/storytelling mode in Claude. Publication_id=2632531 is hugobowne's substack."
+    },
+    {
+      "message_id": "<20260708.155247.37e2e6c8@mta35>",
+      "subject": "🎨 Meta's Muse Crashes the Image Top Two",
+      "date": "2026-07-08",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-08-meta-s-muse-crashes-the-image-top-two.md",
+      "source": "beehiiv (unknown publication)",
+      "importance": "low",
+      "wiki_targets": [
+        {"type": "entity", "name": "meta-muse", "action": "create", "reason": "New image generation model from Meta entering top rankings"},
+        {"type": "concept", "name": "image-generation", "action": "update", "reason": "Model landscape shift in image gen space"}
+      ],
+      "primary_article_url": null,
+      "notes": "Image generation model — tangential to core LLM/Agent focus. All 20 links are beehiiv encoded redirects with no clear primary article URL. Low priority for immediate wiki work."
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 1,
+    "low": 1,
+    "action_items": [
+      "CRITICAL: Scrape AINews Grok 4.5 article → create/update spacexai, grok entities + grok-4-5-launch event page. Verify Cursor acquisition claim.",
+      "CRITICAL: Scrape Modal CTO interview → create modal, akshat-bubna entities + agent-experience concept page.",
+      "HIGH: Scrape hugobowne Claude Fable article → update claude entity + coding-agents concept. Extract what 'Fable' actually is.",
+      "LOW: Meta Muse image model — defer. Beehiiv links opaque, image-gen not core wiki focus."
+    ]
+  }
+}

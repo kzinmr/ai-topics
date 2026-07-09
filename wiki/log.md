@@ -1,3 +1,33 @@
+## [2026-07-09] Newsletter Wiki Ingest — enrich entities/modal-labs.md with Agent Experience (AX) interview content
+
+### Updated
+- **`entities/modal-labs.md`** — Enriched with Modal CTO Akshat Bubna's Agent Experience (AX) design philosophy. Added section: Agent Experience (AX) Design Philosophy with subsections on "Agent Cloud" thesis, why Kubernetes fails for bursty AI workloads, GPU snapshotting and cold start optimization, RL rollouts at 100,000 sandbox scale, Modal as "Agent Cloud Future." Added AX-related wikilinks. Bumped `updated` to 2026-07-09. Added newsletter source.
+
+### Sources
+- raw/newsletters/2026-07-08-why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto.md
+
+---
+
+## [2026-07-09] Newsletter Wiki Ingest — add Claude Fable reference to agentic-engineering
+
+### Updated
+- **`concepts/agentic-engineering.md`** — Added reference entry for Vanishing Gradients podcast episode 5 (Nicolay Gerold, AMP Code CEO) on Claude Fable for coding agents. Covers: AMP's handoff feature removal (compaction improved, model ate the feature), TypeScript/Rust for AI engineering workflows preference. Bumped `updated` to 2026-07-09.
+
+### Sources
+- raw/newsletters/2026-07-08-what-claude-fable-means-for-coding-agents.md
+## [2026-07-09] wiki: Create Agent Experience (AX) concept page from Modal CTO interview triage
+
+### Created
+- **`concepts/agent-experience.md`** — New concept page about Agent Experience (AX), the design philosophy for cloud infrastructure built for autonomous AI agents rather than human developers. Covers: AX vs DX comparison, key infra requirements (programmatic primitives, API-first, standardized sandboxes), why Kubernetes fails for AI agents, Modal's capabilities (GPU snapshotting, DeFlash speculative decoding, Auto Endpoints, RL rollouts). Tags: concept, infrastructure, ai-agents, cloud-infrastructure, developer-experience. Source: raw/newsletters/2026-07-08-why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto.md.
+
+### Updated
+- **`wiki/index.md`** — Added `concepts/agent-experience` entry to Concepts section; updated Concepts count from 1838 → 1839.
+
+### Sources
+- raw/newsletters/2026-07-08-why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto.md
+
+---
+
 ## [2026-07-09] wiki: Add GPT-Live event, update simon-willison link blog entries (Jul 8 batch)
 
 ### Created
@@ -1486,3 +1516,17 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 **Sources:**
 - https://x.com/hwchase17/status/2071963622298050997 (Harrison Chase, "Wiki Memory", 2026-06-30, 1114 bookmarks)
+
+## [2026-07-09] wiki: Grok 4.5 launch event + enrich xai/grok-4-3/spacex-cursor-acquisition
+
+### Created
+- **`events/grok-4-5-launch.md`** — SpaceXAI launches Grok 4.5, first Opus-class coding & agents frontier model co-trained with Cursor (July 9, 2026). Covers: first model trained specifically for coding/agents, co-training with Cursor, Musk's "Opus-class but faster/cheaper" positioning, capability-per-dollar strategy, double usage in Cursor first week, Hermes Agent and OpenRouter support. Tags: xai, model, coding-agents, grok, spacex.
+
+### Updated
+- **`entities/xai.md`** — Added Grok 4.5 row to the Grok model family table. Added `### Grok 4.5 — Coding & Agents Model (July 2026)` section after the Grok Build section. Added newsletter source. Bumped `updated` to 2026-07-09.
+- **`entities/grok-4-3.md`** — Added `## Successor: Grok 4.5` section at end with key differences from Grok 4.3. Added newsletter source. Bumped `updated` to 2026-07-09.
+- **`concepts/spacex-cursor-acquisition.md`** — Added `## Post-Acquisition: Grok 4.5 Co-Training` section with key details, strategic significance, and relationship to Grok Build. Added newsletter source. Bumped `updated` to 2026-07-09.
+- **`wiki/index.md`** — Added `events/grok-4-5-launch` to Events section; updated Events count from 14 → 15.
+
+### Sources
+- raw/newsletters/2026-07-09-ainews-spacexai-launches-grok-4-5-first-opus-class-model-post-cursor-acquisition.md

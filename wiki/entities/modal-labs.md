@@ -2,7 +2,7 @@
 title: "Modal Labs"
 type: entity
 created: 2026-05-08
-updated: 2026-06-25
+updated: 2026-07-09
 tags:
   - company
   - infrastructure
@@ -15,6 +15,7 @@ sources:
   - raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa.md
   - raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
   - raw/articles/modal.com--blog-achieve-sota-specdec--da236272.md
+  - raw/newsletters/2026-07-08-why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto.md
 ---
 
 # Modal Labs
@@ -98,7 +99,63 @@ This is architecturally significant for AI coding agents (background agent workf
 
 Source: raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
 
-See also: [[concepts/speculative-decoding]], [[entities/sglang]], [[concepts/vllm]]
+See also: [[concepts/speculative-decoding]], [[entities/sglang]], [[concepts/vllm]], [[concepts/agent-experience]], [[concepts/agentic-engineering]]
+
+## Agent Experience (AX) Design Philosophy
+
+In July 2026, Modal CTO **Akshat Bubna** articulated **Agent Experience (AX)** as Modal's core design philosophy — building infrastructure specifically for autonomous agents rather than human developers. This positions Modal as what Bubna describes as **"an example of the agent cloud future,"** a paradigm shift from human-centric cloud platforms toward agent-native computing.
+
+### The "Agent Cloud" Thesis
+
+Bubna argues that the current cloud stack was designed for human workflows and is fundamentally mismatched for autonomous agents. Key tenets of the AX philosophy:
+
+- **Bursty, unpredictable workloads**: Agents generate spiky, unpredictable compute demand — unlike human-driven traffic which follows predictable patterns. Traditional cloud infrastructure (especially Kubernetes) was designed for steady-state services, not the "zero-to-thousands-of-GPUs-in-seconds" patterns agents require.
+- **Agent-native infrastructure**: Modal is rebuilt from the ground up with a custom container runtime, orchestration layer, and file system — not layered on Kubernetes — to handle agent-scale compute patterns.
+- **Cost model aligned with agents**: Pay-per-use with no idle costs means agents can spin up, do work, and disappear without accruing waste. This is critical for agent workflows where compute is intermittent and unpredictable.
+
+### Why Kubernetes Wasn't Designed for Bursty AI Workloads
+
+Bubna's critique of Kubernetes for AI workloads centers on architectural mismatch:
+
+- **Pod startup overhead**: Kubernetes pod scheduling adds hundreds of milliseconds to startup latency, which compounds across thousands of concurrent agent sandboxes.
+- **Steady-state orientation**: Kubernetes' design assumes long-running services with predictable resource profiles. AI agents need rapid scaling from zero to high concurrency and back to zero.
+- **GPU scheduling limitations**: Kubernetes lacks native awareness of GPU topology, memory sharing, and the fine-grained scheduling needed for bursty AI inference.
+- **Operational complexity**: Running GPU workloads on Kubernetes requires extensive custom operators (e.g., Kueue, Volcano) that add complexity without solving the fundamental burst scaling problem.
+
+Modal's custom scheduler bypasses these limitations entirely, achieving sub-second container startup and seamless scaling to hundreds of thousands of concurrent sandboxes.
+
+### GPU Snapshotting and Cold Start Optimization
+
+Modal's approach to cold starts involves aggressive snapshotting techniques:
+
+- **GPU memory snapshots**: Persist GPU state between invocations, eliminating model loading time for inference workloads.
+- **Directory snapshots**: Pre-bake project dependencies and application state into warm pools, avoiding per-user rebuilds.
+- **Warm pool architecture**: Pre-initialized sandboxes maintained in a `modal.Queue`, with background producers ensuring pool fullness. Perceived latency drops to fetch-from-pool time.
+
+These optimizations are critical for AX because agents frequently create and destroy environments (sandboxes for code execution, RL rollouts, inference sessions) — the overhead of cold-starting each one would make agent economics untenable.
+
+### RL Rollouts at 100,000 Sandbox Scale
+
+Bubna highlighted that Modal routinely handles **100,000 concurrent sandboxes** for reinforcement learning rollouts. This scale is necessary for:
+
+- **RL training pipelines**: Running thousands of parallel environment instances for policy evaluation
+- **Computer-use agent training**: Pre-warming environments for high-throughput rollout collection
+- **Massive hyperparameter sweeps**: Evaluating thousands of configurations simultaneously
+
+Modal's architecture achieves this through its custom scheduler, which can provision and manage sandboxes at scales that would overwhelm Kubernetes-based systems.
+
+### Modal as "Agent Cloud Future"
+
+Bubna positions Modal as the infrastructure layer for what he calls the **"agent cloud"** — a new computing paradigm where:
+
+1. **Agents are first-class citizens**: Infrastructure APIs are designed for programmatic consumption by agents, not just human developers
+2. **Compute is ephemeral and bursty**: Resources appear instantly when needed and disappear without cost overhead when idle
+3. **Scale is elastic to zero**: No baseline capacity commitment — agents scale from zero to massive concurrency and back
+4. **Inference and training converge**: The same infrastructure handles both training (RL rollouts) and inference (Auto Endpoints)
+
+This vision directly informs Modal's product decisions — from Auto Endpoints (bringing burst scalability to inference serving) to DFlash speculative decoding (minimizing latency for interactive agent experiences) to the multi-million dollar Sandbox business (providing ephemeral compute for agent code execution).
+
+See also: [[concepts/agent-experience]], [[concepts/agentic-engineering]]
 
 ## Modal Auto Endpoints (June 2026)
 

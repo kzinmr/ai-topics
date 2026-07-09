@@ -318,6 +318,11 @@ Day 2 of AIEWF 2026 crystallized several themes central to agentic engineering:
 - **FDE is the new role** — the human shifts from operator to accountable deployer, defined by responsibility not technical specialty
 - **Open source harnesses matter** — ZCode and similar frameworks aim to make agent loop engineering accessible and community-driven
 
+## References
+
+- **Vanishing Gradients #5 (July 2026)**: *\"What Claude Fable Means for Coding Agents\"* — Nico Gerold (AMP Code CEO) discusses how AMP removed its handoff feature because compaction improved so much that the model ate the feature. Recommends TypeScript and Rust (not Python) for AI engineering workflows. See [[entities/fable]] for Fable's thinking partner methodology.
+  Source: raw/newsletters/2026-07-08-what-claude-fable-means-for-coding-agents.md
+
 ## Related Concepts
 
 - [[concepts/agent-skills]] — Reusable patterns for coding agents

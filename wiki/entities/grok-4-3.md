@@ -1,7 +1,7 @@
 ---
 title: Grok 4.3
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-07-09
 type: entity
 tags:
   - model
@@ -12,6 +12,7 @@ tags:
   - economics
 sources:
   - raw/articles/2026-05-01_xai-grok-4-3-launch.md
+  - raw/newsletters/2026-07-09-ainews-spacexai-launches-grok-4-5-first-opus-class-model-post-cursor-acquisition.md
 ---
 
 # Grok 4.3
@@ -84,3 +85,15 @@ Grok 4.3 serves as the reasoning brain for **Grok Computer** (see [[concepts/gro
 - [[entities/anthropic-computer-use]] — Anthropic's comparable capability
 - [[entities/claude-code]] — Anthropic's coding agent
 - [[entities/deepseek]] — Another cost-disruptive model provider
+
+## Successor: Grok 4.5
+
+On July 9, 2026, xAI launched **[[events/grok-4-5-launch|Grok 4.5]]**, a coding-and-agents-focused frontier model that succeeds Grok 4.3 as xAI's latest model release. Unlike Grok 4.3's general-purpose always-on-reasoning approach, Grok 4.5 is specifically trained for coding and agent use cases, co-trained with [[concepts/spacex-cursor-acquisition|Cursor]] following the SpaceX acquisition of Anysphere.
+
+Key differences from Grok 4.3:
+- **Specialization**: Grok 4.3 is a general reasoning model; Grok 4.5 is purpose-built for coding and agents
+- **Training**: Grok 4.5 co-trained with Cursor's coding agent data
+- **Positioning**: Grok 4.5 is marketed on capability-per-dollar rather than benchmark scores
+- **Availability**: Grok 4.5 supported in [[entities/hermes-agent|Hermes Agent]] and OpenRouter immediately; available in Cursor with double usage for first week
+
+See [[events/grok-4-5-launch]] for full details.

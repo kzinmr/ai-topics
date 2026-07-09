@@ -1,7 +1,7 @@
 ---
 title: xAI
 created: 2026-05-02
-updated: 2026-06-09
+updated: 2026-07-09
 type: entity
 tags:
   - company
@@ -12,6 +12,7 @@ sources:
   - raw/articles/2026-02-02_spacex-acquires-xai-merger.md
   - https://wccftech.com/xai-using-just-11-percent-gpus/
   - raw/articles/martinalderson.com--posts-xais-new-rental-business--bb5df5aa.md
+  - raw/newsletters/2026-07-09-ainews-spacexai-launches-grok-4-5-first-opus-class-model-post-cursor-acquisition.md
 ---
 
 # xAI
@@ -36,7 +37,8 @@ xAI has rapidly iterated through Grok versions:
 | Grok 3 | Feb 2025 | "Age of Reasoning Agents" |
 | Grok 4.1 Fast | Nov 2025 | Agent Tools API, tool-calling agents |
 | Grok 4.20 | Early 2026 | Healthcare/legal leader, video understanding |
-| **Grok 4.3** | **May 2026** | Always-on reasoning, 1M context, Custom Voices |
+| Grok 4.3 | **May 2026** | Always-on reasoning, 1M context, Custom Voices |
+| Grok 4.5 | **July 2026** | Coding & agents focused, co-trained with Cursor, Opus-class, faster and lower cost |
 
 See [[entities/grok-4-3]] for detailed model specs.
 
@@ -65,6 +67,20 @@ xAI entered the coding agent market with **Grok Build**, a terminal-based AI cod
 - Parallel subagent execution indicates architectural maturity comparable to Codex and Claude Code
 
 Source: Aakash's Clicky newsletter (May 2026)
+
+### Grok 4.5 — Coding & Agents Model (July 2026)
+
+xAI launched **Grok 4.5** on July 9, 2026 — a coding-and-agents-focused frontier model, co-trained with [[concepts/spacex-cursor-acquisition|Cursor]] following the SpaceX acquisition of Anysphere. Key details:
+
+- First model built specifically for coding and [[concepts/coding-agents/coding-agents|agent]] use cases
+- Co-trained with Cursor, combining xAI's model expertise with Cursor's coding agent data
+- **Elon Musk**: "Opus-class, but faster, more token-efficient, and lower cost"
+- Positioned on **capability-per-dollar** rather than raw benchmark supremacy
+- Available in Cursor with double usage for first week
+- Supported immediately by [[entities/hermes-agent|Hermes Agent]] and OpenRouter
+- Distinct from Cursor Composer 2.5 — different model weight classes
+
+See [[events/grok-4-5-launch]] for the full event page.
 
 ## Datacenter-as-a-Service Pivot (June 2026)
 
