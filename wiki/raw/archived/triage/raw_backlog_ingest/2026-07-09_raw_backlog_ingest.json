@@ -1,0 +1,67 @@
+{
+  "archive_date": "2026-07-09",
+  "run_id": "20260709T080012Z",
+  "total_candidates": 5,
+  "items": [
+    {
+      "item_id": "20260709-1",
+      "source": "raw_article",
+      "source_name": "FHI Technical Report #2019-1",
+      "title": "Reframing Superintelligence: Comprehensive AI Services as General Intelligence",
+      "url": "https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf",
+      "raw_path": "raw/articles/reframing-superintelligence-fhi-2019.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にアーカイブ済み。CAIS概念はconcepts/cais, concepts/comprehensive-ai-services, entities/k-eric-drexlerで詳細カバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "K. Eric Drexler's 210-page FHI tech report framing superintelligence as distributed CAIS rather than monolithic agents."
+    },
+    {
+      "item_id": "20260709-2",
+      "source": "raw_article",
+      "source_name": "Microsoft AI Team",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Technical Report",
+      "url": "https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf",
+      "raw_path": "raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "既存Wikiで完全カバー済み。concepts/mai-thinking-1-tech-report (227行) にてアーキテクチャ(LatentMoE, interleaved dense/MoE, GQA, FlashAttention-4)、訓練(30T pre-train + 3.55T mid-training, no synthetic data, no distillation)、RL climb (modified GRPO, 3 domain-specialist models)、ベンチマーク(SWE-Bench Pro 52.8%, AIME 2025 97.0%, LiveCodeBench v6 87.7%)、hill-climbing framework、scaling ladder(L12-L42)を詳細記述。raw articleはsourcesに登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "MAI-Thinking-1: 35B active/1T total MoE reasoning model. 30T tokens pre-training from scratch, no distillation. Modified GRPO with adaptive entropy control, 256K context. 52.8% SWE-Bench Pro, 97.0% AIME 2025, 87.7% LiveCodeBench v6."
+    },
+    {
+      "item_id": "20260709-3",
+      "source": "raw_article",
+      "source_name": "BenchFlow",
+      "title": "Awesome Agent Evals — curated list (443+ resources)",
+      "url": "https://github.com/benchflow-ai/awesome-agent-evals",
+      "raw_path": "raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "既存Wikiで完全カバー済み。concepts/ai-benchmarks/benchflow-tool (118行) にてフレームワーク・Awesome Agent Evals一覧・12のMust-Read(Shunyu Yao, Eugene Yan, Hamel Husain等)・コンパイル方法論(depth-4 citation crawl 11.6k papers, 47 talks transcribed)・企業ランドスケープが詳細に記述済み。raw articleはsourcesに登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "443+ curated links for building and evaluating AI agents. 12 must-read starter set. Depth-4 citation crawl (11.6K papers), 47 talks transcribed. Sections: why evals, model/harness/skill decomposition, eval infrastructure, LLM-as-judge, agent-specific evaluation, safety/adversarial, companies landscape."
+    },
+    {
+      "item_id": "20260709-4",
+      "source": "raw_article",
+      "source_name": "Dwarkesh Podcast",
+      "title": "Grant Sanderson — AI and the future of math",
+      "url": "https://www.dwarkesh.com/p/grant-sanderson-2",
+      "raw_path": "raw/articles/dwarkesh.com--p-grant-sanderson-2--960d89cd.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にアーカイブ済み。entities/grant-sanderson (141行) にてSandersonのAI×数学に関する見解をカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Grant Sanderson 3Blue1Brown on AI and the future of mathematics — AI progress in math as a lens for AI impact on other fields."
+    },
+    {
+      "item_id": "20260709-5",
+      "source": "raw_article",
+      "source_name": "WebKit Blog",
+      "title": "News from WWDC26: WebKit in Safari 27 beta",
+      "url": "https://webkit.org/blog/17967/news-from-wwdc26-webkit-in-safari-27-beta/",
+      "raw_path": "raw/articles/webkit.org--blog-17967-news-from-wwdc26-webkit-in-safari-27-beta--c116f751.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にアーカイブ済み。AI/LLMスコープ外のWebKit/Safariブラウザアップデート。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Safari 27 beta — 58 new features, 525 fixes, 4 deprecations. WebKit updates for WWDC26."
+    }
+  ]
+}

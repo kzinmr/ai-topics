@@ -1,6 +1,6 @@
 ---
 title: substack
-status: active
+tags: []type: entitystatus: active
 updated: 2026-05-08
 sources: []
 ---

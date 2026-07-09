@@ -1,6 +1,6 @@
 ---
 title: "Avi Kivity"
-created: 2026-04-30
+type: entitycreated: 2026-04-30
 updated: 2026-04-30
 tags:
   - person

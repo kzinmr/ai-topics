@@ -1,6 +1,6 @@
 ---
 title: samuelcolvin
-type: entity
+tags: []type: entity
 redirect: samuel-colvin
 aliases:
   - samuelcolvin

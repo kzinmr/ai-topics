@@ -1,5 +1,6 @@
 ---
 title: "Closing the Agent Loop — Write/Catch/Fix/Merge"
+type: concept
 aliases:
   - closing-the-agent-loop
   - agent-autofix

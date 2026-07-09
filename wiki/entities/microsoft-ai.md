@@ -1,6 +1,6 @@
 ---
 title: "Microsoft AI Team"
-type: entity
+tags: []type: entity
 redirect: microsoft-ai-team
 aliases:
   - microsoft-ai

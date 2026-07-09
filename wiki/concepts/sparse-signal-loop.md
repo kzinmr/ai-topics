@@ -1,5 +1,6 @@
 ---
 title: "Sparse Signal Loop"
+type: concept
 tags:
   - concept
   - harness-engineering

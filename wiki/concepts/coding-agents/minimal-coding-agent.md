@@ -1,5 +1,6 @@
 ---
 title: "Minimal Coding Agent"
+type: concept
 created: 2026-05-03
 updated: 2026-05-03
 tags:

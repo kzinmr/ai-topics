@@ -1,5 +1,6 @@
 ---
 title: "Docker Sandbox MicroVM API"
+type: concept
 created: 2026-04-30
 updated: 2026-05-26
 tags:

@@ -1,5 +1,6 @@
 ---
 title: "LLM-Assisted Writing"
+type: concept
 created: 2026-05-02
 updated: 2026-05-02
 tags:

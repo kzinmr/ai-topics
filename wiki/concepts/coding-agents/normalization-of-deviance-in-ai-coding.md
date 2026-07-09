@@ -1,5 +1,6 @@
 ---
 title: "Normalization of Deviance in AI Coding"
+type: concept
 url: "https://wiki.ai-topics/concepts/normalization-of-deviance-in-ai-coding"
 date: 2026-05-07
 tags:

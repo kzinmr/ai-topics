@@ -1,5 +1,6 @@
 ---
 title: "AI Delegation Patterns"
+type: concept
 url: "https://wiki.ai-topics/concepts/ai-delegation-patterns"
 date: 2026-05-07
 tags:

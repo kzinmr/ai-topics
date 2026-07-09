@@ -1,5 +1,6 @@
 ---
 title: 'Predictive \mathcal{V}-Information'
+type: concept
 aliases:
   - V-Information
   - Predictive V-Information

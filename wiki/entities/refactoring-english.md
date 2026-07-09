@@ -1,6 +1,6 @@
 ---
 title: refactoring-english
-description: Technical blog and forthcoming book by Michael Lynch about effective writing for software developers — covering commit messages, design docs, AI vs human writing quality, passive voice, and blog craftsmanship.
+tags: []description: Technical blog and forthcoming book by Michael Lynch about effective writing for software developers — covering commit messages, design docs, AI vs human writing quality, passive voice, and blog craftsmanship.
 url: https://refactoringenglish.com
 type: entity
 updated: 2026-04-30

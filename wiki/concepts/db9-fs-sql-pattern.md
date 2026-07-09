@@ -1,5 +1,6 @@
 ---
 title: "db9: Filesystem + SQL Pattern for Agent Workflows"
+type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags:

@@ -1,6 +1,6 @@
 ---
 title: mahadk
-description: Technical writer covering AI, web development, and practical software engineering. Writes about LLM applications, cloud services, and browser technologies.
+tags: []description: Technical writer covering AI, web development, and practical software engineering. Writes about LLM applications, cloud services, and browser technologies.
 url: https://mahadk.com
 type: entity
 updated: 2026-04-30

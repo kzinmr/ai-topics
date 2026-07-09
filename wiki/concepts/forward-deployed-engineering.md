@@ -1,5 +1,6 @@
 ---
 title: "Forward Deployed Engineering (FDE)"
+type: concept
 created: 2026-05-18
 updated: 2026-05-25
 tags:

@@ -1,5 +1,6 @@
 ---
 title: Model Routing — Per-Turn Cost Optimization for AI Coding
+type: concept
 created: 2026-05-09
 updated: 2026-06-04
 tags:
