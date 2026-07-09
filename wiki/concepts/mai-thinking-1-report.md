@@ -1,23 +1,25 @@
 ---
-title: "MAI-Thinking-1"
+title: "MAI-Thinking-1 Report (redirect)"
 type: concept
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-07-09
 tags:
-sources: []
   - microsoft
   - model
   - reasoning
-
+  - redirect
+aliases:
+  - "MAI-Thinking-1 Report"
+related:
+  - [[concepts/mai-thinking-1-tech-report]]
+  - [[entities/mai-thinking-1]]
+sources: []
 ---
-# MAI-Thinking-1
 
-MAI-Thinking-1 is a technical model developed by the Microsoft AI Team, described as a "hill-climbing machine" for advanced reasoning capabilities.
+# MAI-Thinking-1 Report (redirect)
 
-## Specifications
-- **Parameters**: 35B active parameters, 1T total parameters.
-- **Architecture**: Mixture of Experts (MoE).
-- **Method**: Focused on iterative reasoning improvement through hill-climbing techniques.
+> **This page is a redirect.** The comprehensive technical report deep-dive is at [[concepts/mai-thinking-1-tech-report]].
 
-## Sources
-- [MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)
+For the full analysis of the MAI-Thinking-1 model architecture, training methodology, benchmarks, and RL framework, see [[concepts/mai-thinking-1-tech-report]] (227 lines).
+
+For the model entity page with specifications, benchmarks, and infrastructure details, see [[entities/mai-thinking-1]] (148 lines).

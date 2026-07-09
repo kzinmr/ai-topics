@@ -1995,8 +1995,8 @@
 - [[concepts/machine-learning-in-production]] — machine-learning-in-production
 - [[concepts/machine-studying]] — Machine Studying — Agents Developing Expertise from Corpora
 - [[concepts/magnifica-humanitas]] — Magnifica Humanitas
-- [[concepts/mai-thinking]] — MAI Thinking
-- [[concepts/mai-thinking-1-report]] — MAI-Thinking-1 is a technical model developed by the Microsoft AI Team, described as a "hill-climbing machine" for advanced reasoning.
+- [[concepts/mai-thinking]] — MAI Thinking — Microsoft AI research philosophy: hill-climbing machine, iterative optimization
+- [[concepts/mai-thinking-1-report]] — (redirect → [[concepts/mai-thinking-1-tech-report]])
 - [[concepts/mai-thinking-1-tech-report]] — Microsoft MAI-Thinking-1 Technical Report Deep Dive
 - [[concepts/main-branch-development]] — Main-Branch Development
 - [[concepts/makoto-kato]] — makoto-kato

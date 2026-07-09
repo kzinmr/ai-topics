@@ -1,3 +1,18 @@
+## [2026-07-09] Raw Backlog Ingest — archive 5 articles, cleanup 2 duplicate stubs
+
+### Archived (already captured by previous pipeline runs)
+- **`raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md`** — Content fully covered in [[concepts/mai-thinking-1-tech-report]] (227 lines) + [[entities/mai-thinking-1]] (148 lines)
+- **`raw/articles/benchflow-awesome-evals-2025.md`** — Content fully covered in [[concepts/ai-benchmarks/benchflow-tool]] (118 lines)
+- **`raw/articles/reframing-superintelligence-fhi-2019.md`** — Already archived
+- **`raw/articles/dwarkesh.com--p-grant-sanderson-2--960d89cd.md`** — Already archived
+- **`raw/articles/webkit.org--blog-17967-news-from-wwdc26-webkit-in-safari-27-beta--c116f751.md`** — Already archived
+
+### Cleanup
+- **Fixed** [[concepts/mai-thinking]] — Removed Korean text artifacts (독), reorganized with hill-climbing machine concepts, added proper cross-references
+- **Fixed** [[concepts/mai-thinking-1-report]] — Converted duplicate 22-line stub into redirect page pointing to [[concepts/mai-thinking-1-tech-report]]
+- **Updated** index.md — Updated descriptions for mai-thinking and marked mai-thinking-1-report as redirect
+
+
 ## [2026-07-09] Active Crawl — 3 new concept pages + 1 enrichment
 
 ### Created
