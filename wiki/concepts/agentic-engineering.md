@@ -1,7 +1,7 @@
 ---
 title: "Agentic Engineering"
 created: 2026-05-14
-updated: 2026-07-01
+updated: 2026-07-09
 type: concept
 tags:
   - concept
@@ -21,6 +21,7 @@ sources:
   - raw/articles/2026-06-08_linkedin-ido-pesok_verifying-agentic-development-at-scale.md
   - raw/articles/simonwillison.net--2026-jun-22-porting-moebius--6904f00e.md
   - raw/newsletters/2026-07-01-aiewf-daily-dispatch-loops-software-factories-forward-deployed-engineers.md
+  - raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md
 ---
 
 # Agentic Engineering
@@ -211,6 +212,20 @@ Acknowledged the mental health dimension: "Building with agents is the greatest 
 
 
 ### Case Study: Porting Moebius to Browser with Claude Code
+
+### Case Study: Rewriting Bun in Rust with Claude Code (July 2026)
+
+**Rewriting Bun in Rust with Claude Code** (July 2026): Jarred Sumner rewrote the Bun JavaScript runtime from Zig to Rust using Claude Code (Anthropic) in 11 days with coordinated parallel agents — one of the largest publicly documented agentic rewrites to date.
+
+**Scale and cost:** Pre-merge cost ~$165K at API pricing, consuming 5.9 billion uncached input tokens, 690 million output tokens, and 72 billion cached input tokens. The rewrite went live in Claude Code v2.1.181+ since June 17.
+
+**Agent harness design:** Sumner built an agent harness with dynamic workflows, trial runs, and adversarial review. The Bun test suite (written in TypeScript) acted as the **conformance suite** for the agent — the tests defined correctness, not manual code review. This is a direct instantiation of the eval-driven and verification-over-reading principles central to agentic engineering.
+
+**Key insight:** *"Fixing the process that generates the code instead of hand-fixing the code."* Rather than debugging agent output line-by-line, Sumner iterated on the harness, prompts, and verification pipeline. Each run improved the process itself, not just the artifacts.
+
+**Results:** Startup got 10% faster on Linux. As Sumner noted: *"barely anyone noticed. Boring is good."* The rewrite was seamless enough that users didn't perceive the change — the highest compliment for a runtime migration.
+
+**Significance for agentic engineering:** The Bun rewrite demonstrates that agentic engineering scales beyond individual features to entire codebase rewrites. The combination of (1) a comprehensive test suite as conformance specification, (2) agent harness iteration over manual fixup, and (3) parallel coordinated agents represents the most mature public example of the software factory pattern applied at scale. Source: [[raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md]]
 
 **Porting Moebius 0.2B to Browser with Claude Code** (Jun 22, 2026): Simon Willison ported a PyTorch/CUDA image inpainting model to run in-browser via ONNX Runtime Web on WebGPU, using Claude Code as the sole implementation agent (never reading the generated code). Key techniques demonstrated: (1) 'Muse on X' — asking an LLM to contemplate feasibility before committing to a plan, the shortest proven prompt for open-ended problem exploration; (2) Subagent delegation — Claude Code spawned a subagent to analyze Whisper Web's obfuscated JavaScript to reverse-engineer the CacheStorage pattern; (3) Autonomous ONNX conversion — Claude autonomously ran Hugging Face weight conversion to ONNX (1.24GB), published to Hugging Face, and deployed via GitHub Pages without the developer touching the conversion pipeline; (4) Agent-kept notes — Claude maintained a running notes.md reflecting discoveries, serving as inter-session state for future agent sessions. This is a pure vibe coding case study where the human acted only as tester and direction-setter. Source: [[raw/articles/simonwillison.net--2026-jun-22-porting-moebius--6904f00e.md]]
 

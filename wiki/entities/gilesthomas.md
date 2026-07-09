@@ -3,7 +3,7 @@ title: gilesthomas
 description: Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technical articles on LLM internals, smolagents, training, and inference optimization. Known for accessible, first-person explanations of complex ML concepts built on hands-on experimentation.
 url: https://gilesthomas.com
 type: entity
-updated: 2026-06-17
+updated: 2026-07-09
 aliases: [gpjt, Giles Thomas]
 tags:
   - person
@@ -15,6 +15,7 @@ sources:
   - https://www.gilesthomas.com/2026/05/on-first-looking-into-jax
   - raw/articles/gilesthomas.com--2026-05-on-first-looking-into-jax--472e0e73.md
   - raw/articles/gilesthomas.com--2026-06-hashing-jax-parameters--d1cdd839.md
+  - raw/articles/gilesthomas.com--2026-07-llm-from-scratch-34b-building-and-training-gpt-2-sma--64a53b57.md
   - https://www.gilesthomas.com/personal
   - https://github.com/gpjt
   - https://huggingface.co/gpjt
@@ -65,6 +66,8 @@ Thomas has produced multiple deep-dives on tool creation in the smolagents ecosy
 ### LLM from Scratch Series
 
 The most ambitious series on Thomas's blog. Spanning 46+ posts (from December 2024), it documents his journey through Sebastian Raschka's textbook with significant original experimentation.
+
+**Part 34b — Building and Training GPT-2 from Scratch in JAX** (July 2026): The capstone of the series. Thomas built and trained GPT-2 small from scratch entirely in JAX — with no PyTorch reference implementation. Training on a single RTX 3090 took 37 hours 15 minutes (compared to 40h38m for the PyTorch version with Automatic Mixed Precision). The final loss of 3.418784 beat both the PyTorch AMP run (3.538161) and even the original GPT-2 small's reported loss of 3.499677. Notably, this was full-fat 32-bit JAX versus PyTorch with AMP — no mixed precision tricks. The incremental component-by-component approach (bigrams → LayerNorm → position embeddings → transformer blocks) that defined the entire series culminated in a complete, competitive GPT-2 implementation.
 
 **Core topics:** Tokenization, embeddings, scaled dot-product and causal attention, multi-head attention, layer normalization, feed-forward networks, residual connections, logit-to-prediction transformation.
 

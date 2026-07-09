@@ -1,3 +1,19 @@
+## [2026-07-09] wiki: Add GPT-Live event, update simon-willison link blog entries (Jul 8 batch)
+
+### Created
+- **`events/2026-07-08-openai-gpt-live.md`** — OpenAI GPT-Live Voice Mode event page. Covers: GPT-5.5 background delegation architecture, continuous conversation flow, quality improvements over GPT-4o-era voice mode, Simon Willison's preview testing (1-hour dog-walking conversation), laughing-at-non-jokes bug fix. Tags: openai, model, voice, multimodal, chatgpt.
+
+### Updated
+- **`entities/simon-willison.md`** — Added 3 new link blog entries from July 8: Introducing GPT-Live (real-time voice model with GPT-5.5 delegation), Rewriting Bun in Rust, Kenton Varda. Updated sources (added 3 raw article paths) and bumped `updated` date to 2026-07-09.
+- **`wiki/index.md`** — Added `events/2026-07-08-openai-gpt-live` entry to Events section; updated Events count from 13 → 14.
+
+### Sources
+- raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md
+- raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md
+- raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md
+
+---
+
 ## [2026-07-08] daily-skeleton-enrichment | Entity enrichment — 2 small entity pages enriched
 
 ### Changes

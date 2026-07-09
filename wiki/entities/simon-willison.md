@@ -3,11 +3,11 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-07-08
+updated: 2026-07-09
 status: L3
   sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
-sources: [raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md, raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md]
+sources: [raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md, raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md, raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md, raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md, raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md]
 ---
 
 # Simon Willison
@@ -538,3 +538,15 @@ Source: [[raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.
 **github-code Web Component — Built with a Single GPT-5.5 Prompt** (July 8, 2026): Simon created an experimental Web Component called `github-code` for embedding GitHub code snippets directly in web pages. The entire component was built with a **single GPT-5.5 prompt** — Simon provided the specification and GPT-5.5 generated the complete Web Component implementation in one shot. The component uses the GitHub API to fetch file contents and renders them as syntax-highlighted code blocks within the shadow DOM, providing a self-contained, framework-agnostic way to embed GitHub source code in blog posts, documentation, and other web pages.
 
 Source: [[raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md]]
+
+**Introducing GPT-Live — OpenAI's Real-Time Voice Model** (July 8, 2026): OpenAI upgraded ChatGPT's voice mode model to **GPT-Live**, replacing the previous GPT-4o-era model (knowledge cutoff 2024). GPT-Live can [[events/2026-07-08-openai-gpt-live|delegate harder tasks to GPT-5.5]] behind the scenes while continuing to talk and maintain conversation flow. Simon had preview access on the iPhone app for weeks and tested a one-hour continuous conversation while walking his dog. A notable bug: the model was interrupting to laugh at non-jokes, which felt rude and condescending — Simon reported this to OpenAI and it was fixed before launch.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md]]
+
+**Rewriting Bun in Rust** (July 8, 2026): Simon highlighted a project rewriting the Bun JavaScript runtime in Rust, reflecting the ongoing trend of Rust-based infrastructure tooling.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md]]
+
+**Kenton Varda** (July 8, 2026): Simon linked to Kenton Varda's writing, continuing his coverage of influential technical voices in the AI ecosystem.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md]]
