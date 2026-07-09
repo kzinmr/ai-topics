@@ -1,0 +1,152 @@
+{
+  "archived_at": "2026-07-09T18:23:38.040556+00:00",
+  "triage_run_id": "20260709T180023Z",
+  "source": "dreaming",
+  "summary_ja": "Dreamingグループ化パイプライン失敗(JSON解析エラー)のため、checkpoint直読+RSS単一記事(非AI)+filesystem scan(155件中15件精査)を実施。全15decision中、参照1件(ElevenLabs Fyxer導入事例→entities/elevenlabs.mdエンリッチ候補)、残り14件はスキップ(既存Wikiカバー済み・非AI・スクレイプ失敗)。パイプライン飽和状態。",
+  "decisions": [
+    {
+      "item_id": "dreaming-sitemap-1",
+      "source": "dreaming",
+      "source_name": "Microsoft Research",
+      "title": "Microsoft Flint: A Visualization Language for AI Agents",
+      "url": "https://microsoft.github.io/flint-chart/",
+      "raw_path": "raw/articles/2026-07-08_microsoft_flint-visualization-language.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ concepts/flint-visualization-language.md(67行)で完全カバー済み。宣言的JSONベースDSL、EChartsコンパイル、MCP統合の詳細を記述。",
+      "candidate_wiki_path": "concepts/flint-visualization-language",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-sitemap-2",
+      "source": "dreaming",
+      "source_name": "OpenAI",
+      "title": "Separating Signal from Noise in Coding Evaluations",
+      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations/",
+      "raw_path": "raw/articles/2026-07-08_openai_coding-evaluation-noise.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ concepts/quantifying-infrastructure-noise-in-agentic-coding-evals.md(71行, 2026-07-09更新)で完全カバー済み。SWE-Bench Proノイズ分析、benchmaxxing、評価方法論改善を記述。",
+      "candidate_wiki_path": "concepts/quantifying-infrastructure-noise-in-agentic-coding-evals",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-sitemap-3",
+      "source": "dreaming",
+      "source_name": "Together AI",
+      "title": "Provisioned Throughput: Reserved Inference Capacity for Frontier Open Models",
+      "url": "https://www.together.ai/blog/provisioned-throughput",
+      "raw_path": "raw/articles/2026-07-08_together-ai_provisioned-throughput.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★★ concepts/inference-provisioned-throughput.md(74行, 2026-07-09更新)で完全カバー済み。トークン定額制・99% SLA・MiniMax M3/GLM-5.2対応・Opus比90%コスト削減を詳細記述。",
+      "candidate_wiki_path": "concepts/inference-provisioned-throughput",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-sitemap-4",
+      "source": "dreaming",
+      "source_name": "OpenAI",
+      "title": "Introducing GPT-Live",
+      "url": "https://openai.com/index/introducing-gpt-live/",
+      "raw_path": "raw/articles/2026-07-08_openai_gpt-live.md",
+      "recommended_action": "skip",
+      "reason_ja": "同日既処理。log.md(2026-07-09)にてevents/2026-07-08-openai-gpt-live.md作成済み、entities/simon-willison.mdも更新。",
+      "candidate_wiki_path": "events/2026-07-08-openai-gpt-live",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-sitemap-5",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "Fyxer uses ElevenLabs Speech to Text to power meeting notetaker",
+      "url": "https://elevenlabs.io/blog/fyxer",
+      "raw_path": "raw/articles/2026-07-09_elevenlabs_fyxer.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ ElevenLabs Scribe v2導入事例。具体的メトリクス(20% WER削減、15%コンバージョン向上、6000+組織A/Bテスト)はentities/elevenlabs.md未反映。参照としてエンリッチメント候補。",
+      "candidate_wiki_path": "entities/elevenlabs",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-sitemap-6",
+      "source": "dreaming",
+      "source_name": "Glean Blog",
+      "title": "What are the best AI tools for enterprises in 2026?",
+      "url": "https://www.glean.com/blog/what-are-the-best-ai-tools-for-enterprises-in-2026",
+      "raw_path": "raw/articles/2026-07-09_glean_what-are-the-best-ai-tools-for-enterprises-in-2026.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Gleanマーケティングコンテンツ。AIツール一覧の自社製品プロモーション。Wiki価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-sitemap-7",
+      "source": "dreaming",
+      "source_name": "Glean Blog",
+      "title": "What are digital assistants and how to choose the right one",
+      "url": "https://www.glean.com/blog/what-are-digital-assistants",
+      "raw_path": "raw/articles/2026-07-09_glean_what-are-digital-assistants.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Gleanマーケティングコンテンツ。デジタルアシスタント比較ガイドの自社製品プロモーション。Wiki価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-sitemap-8",
+      "source": "dreaming",
+      "source_name": "Fireworks AI",
+      "title": "test-embedded-html",
+      "url": "https://fireworks.ai/blog/test-embedded-html",
+      "raw_path": "raw/articles/2026-07-09_fireworks-ai_test-embedded-html.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 500 Internal Server Errorでスクレイプ失敗。コンテンツ取得不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-sitemap-9",
+      "source": "dreaming",
+      "source_name": "Parallel Web Systems",
+      "title": "case-study-build",
+      "url": "https://parallel.ai/blog/case-study-build",
+      "raw_path": "raw/articles/2026-07-09_parallel-web-systems_case-study-build.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Brotliデコードエラーでスクレイプ失敗。コンテンツ取得不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-blog-2",
+      "source": "dreaming",
+      "source_name": "gilesthomas.com",
+      "title": "Writing an LLM from scratch, part 34b — GPT-2 Small in JAX",
+      "url": "https://www.gilesthomas.com/2026/07/llm-from-scratch-34b-building-and-training-gpt-2-small-in-jax",
+      "raw_path": "raw/articles/gilesthomas.com--2026-07-llm-from-scratch-34b-building-and-training-gpt-2-sma--64a53b57.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ blog-wiki-ingest(07:50 UTC)にて既処理。entities/giles-thomas.mdにPart 34b内容(テスト損失3.418784, 37時間15分, JAX/Flax NNX実装)を追加済み。",
+      "candidate_wiki_path": "entities/giles-thomas",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-blog-4",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "Various Simon Willison link blog entries (Jul 8 batch)",
+      "url": "https://simonwillison.net/2026/Jul/8/",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "同日既処理。log.md(2026-07-09)にて3つのリンクブログエントリ(GPT-Live, Bun in Rust, Kenton Varda)をentities/simon-willison.mdに追加済み。",
+      "candidate_wiki_path": "entities/simon-willison",
+      "body_excerpt": "Simon Willison's Jul 8 link blog: Introducing GPT-Live, Rewriting Bun in Rust, Kenton Varda quote."
+    },
+    {
+      "item_id": "dreaming-blog-5",
+      "source": "dreaming",
+      "source_name": "various (non-AI)",
+      "title": "Various non-AI blog articles (pluralistic, dfarq, experimental-history, etc.)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。政治・歴史・技術雑学ブログ。LLM/AI Agentトピックと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch skip for non-AI blog articles: pluralistic.net (Wilhoitian), dfarq.homeip.net (Donkey Kong/Atari), experimental-history (deviance), rfc-editor (RFC439), tyler.io (squircle jail), idiallo (debt payment), jeffgeerling (Pi 4), shkspr.mobi (left-handed bug), xeiaso (console wars/hyle pneuma), maurycyz (Astro ARP), troyhunt (weekly update 511), daringfireball (iOS goose)."
+    }
+  ]
+}

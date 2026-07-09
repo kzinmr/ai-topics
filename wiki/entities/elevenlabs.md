@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-07-01
+updated: 2026-07-09
 tags:
   - company
   - voice-ai
@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-06-17_elevenlabs_processing-images-and-documents-in-elevenagents.md
   - raw/articles/2026-06-20_elevenlabs_voice-agent-evaluation-framework-6-pillars-explained.md
   - raw/articles/2026-07-01_elevenlabs_procedures.md
+  - raw/articles/2026-07-09_elevenlabs_fyxer.md
 ---
 
 # ElevenLabs
@@ -249,6 +250,19 @@ Source: [Introducing Ads Engine in ElevenCreative — ElevenLabs Blog](https://e
 This case study demonstrates voice AI's killer application in emerging markets where multilingual coverage directly translates to market reach.
 
 Source: [Anarock Case Study — ElevenLabs Blog](https://elevenlabs.io/blog/anarock)
+
+### Fyxer Case Study — Scribe v2 STT for Meeting Notetaking (July 2026)
+
+**Fyxer**, an AI email assistant platform, integrated ElevenLabs **Scribe v2** for live meeting transcription to improve the precision, speed, and structure of its meeting notetaker. Fyxer's notetaker extracts action items and summaries with speaker-attributed transcription.
+
+**Benchmark results**:
+- Fyxer built a custom benchmark dataset from its own meeting audio and tested ten transcription providers
+- ElevenLabs ranked highest with a **20% reduction in speaker-attributed word error rate (WER)** vs the control provider
+- Fyxer validated in production with an **A/B test across 6,000+ organizations**
+- Organizations using ElevenLabs converted from trial to paid at **20.3% vs 17.6%** — a **15% relative lift** in conversion
+- Fyxer subsequently rolled out ElevenLabs as its **exclusive transcription provider**
+
+Source: raw/articles/2026-07-09_elevenlabs_fyxer.md
 
 ## Voice Agent Latency Optimization (June 2026)
 

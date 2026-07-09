@@ -1,3 +1,14 @@
+## [2026-07-09] dreaming | Knowledge consolidation — reference enrichment (triage recovery)
+
+- **Source**: dreaming-collect checkpoint (Jul 9 18:00), group-agent JSON parse failure recovered via `latest.json` + triage checkpoint
+- **State**: Pipeline saturation — 1 non-AI RSS article skipped, 155 raw articles on disk scanned (15 evaluated), all 14 sitemap/blog-ingest articles already covered by daily pipelines
+- **`entities/elevenlabs.md`** — Added Fyxer Case Study section: Scribe v2 STT benchmark (20% WER reduction vs control, 15% relative lift in user conversion, 6,000+ orgs A/B test, exclusive transcription provider rollout). Bumped `updated` to 2026-07-09 and added source.
+
+**Sources:**
+- raw/articles/2026-07-09_elevenlabs_fyxer.md
+
+---
+
 ## [2026-07-09] watchdog | Auto-fix: added frontmatter to 3 legacy pages
 
 - **Fixed**: Added YAML frontmatter (title, type, created, updated, tags, sources, status) to 3 pages that had none:
