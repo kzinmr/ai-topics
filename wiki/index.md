@@ -846,7 +846,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1839 pages)
+## Concepts (1842 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -920,6 +920,9 @@
 - [[concepts/ai-agent-memory]] — AI Agent Memory
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
+- [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
+- [[concepts/gpt-live]] — GPT-Live — OpenAI full-duplex real-time voice interaction mode (July 2026)
+- [[concepts/inference-provisioned-throughput]] — Provisioned Throughput — reserved inference capacity for open-weight models with token pricing and 99% SLA (Together AI, July 2026)
 - [[concepts/wiki-memory]] — Wiki Memory — Agent-maintained file-based knowledge layer pattern (Harrison Chase, 2026)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-World Failures in Autonomous Systems
 - [[concepts/ai-agent-security]] — AI Agent Security
@@ -2339,7 +2342,7 @@
 - [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel)
 - [[concepts/pytorch-fsdp-distributed-training]] — PyTorch FSDP — Distributed Training
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
-- [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — Quantifying Infrastructure Noise in Agentic Coding Evals
+- [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — Infrastructure Noise in Agentic Coding Evals — OpenAI analysis of SWE-Bench Pro reliability; benchmaxxing, harness variance, private benchmarks
 - [[concepts/quepid]] — Quepid
 - [[concepts/query-understanding]] — Query Understanding
 - [[concepts/queueing-theory]] — Queueing Theory

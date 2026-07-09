@@ -1,3 +1,19 @@
+## [2026-07-09] Active Crawl — 3 new concept pages + 1 enrichment
+
+### Created
+- **`concepts/gpt-live.md`** — GPT-Live: OpenAI's full-duplex real-time voice interaction mode (July 8, 2026). Covers full-duplex vs half-duplex, key use cases (translation, language learning), market context (Gemini Live, open-source), community reception (717 HN pts). Sources: raw/articles/2026-07-08_openai_gpt-live.md (HN discussion-based, OpenAI blog HTTP 403).
+- **`concepts/flint-visualization-language.md`** — Flint: Microsoft Research's JSON-based visualization DSL for AI agents. Compiles to ECharts, MCP-integrated via flint-chart server. Comparison to Vega-Lite, Graphviz, ECharts. Community reception: 295 HN pts. Sources: raw/articles/2026-07-08_microsoft_flint-visualization-language.md (HN discussion-based, project page JS-rendered).
+- **`concepts/inference-provisioned-throughput.md`** — Provisioned Throughput: Together AI's reserved inference capacity for open-weight models with token pricing and 99% SLA. Covers market gap (serverless vs dedicated), cost advantage (90% below Claude Opus 4.8), market context (30B→400T tokens/month). Sources: raw/articles/2026-07-08_together-ai_provisioned-throughput.md (full article extracted).
+
+### Updated
+- **`concepts/quantifying-infrastructure-noise-in-agentic-coding-evals.md`** — Enriched from 25-line skeleton to 71-line full page. OpenAI analysis of SWE-Bench Pro reliability: infrastructure noise, benchmaxxing, harness variance, private benchmarks, evaluation design best practices. Sources: raw/articles/2026-07-08_openai_coding-evaluation-noise.md (OG metadata + HN discussion).
+
+### Raw Articles Saved
+- `raw/articles/2026-07-08_openai_gpt-live.md`
+- `raw/articles/2026-07-08_microsoft_flint-visualization-language.md`
+- `raw/articles/2026-07-08_together-ai_provisioned-throughput.md`
+- `raw/articles/2026-07-08_openai_coding-evaluation-noise.md`
+
 ## [2026-07-09] Blog Wiki Ingest — enrich entities/giles-thomas.md with Part 34b and Poppy training box
 
 ### Updated
