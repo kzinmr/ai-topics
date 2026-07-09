@@ -1,3 +1,12 @@
+---
+title: Cursor Automations
+type: concept
+created: 2026-05-31
+updated: 2026-07-09
+tags: [concept, coding-agents, cursor, developer-tooling]
+sources: []
+status: active
+
 # Cursor Automations
 
 **Cursor Automations** is a feature introduced by [[entities/anysphere]] (Cursor) that enables always-on AI agents running on schedules or triggered by events. Announced alongside [[concepts/coding-agents/cursor-composer-2-5]] in May 2026, Automations represent Cursor's expansion from interactive coding assistance into autonomous development workflows.

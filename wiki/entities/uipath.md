@@ -1,3 +1,12 @@
+---
+title: UiPath
+type: entity
+created: 2026-05-31
+updated: 2026-07-09
+tags: [entity, company, enterprise-ai, coding-agents]
+sources: []
+status: active
+
 # UiPath
 
 **UiPath** (NYSE: PATH) is a global leader in agentic business orchestration and enterprise automation. Founded by Daniel Dines, the company provides a platform that combines robotic process automation (RPA) with AI agent orchestration, enabling enterprises to automate business processes at scale.

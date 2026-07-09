@@ -1,3 +1,12 @@
+---
+title: Mistral Medium 3.5
+type: concept
+created: 2026-05-31
+updated: 2026-07-09
+tags: [concept, model, open-source, mistral]
+sources: []
+status: active
+
 # Mistral Medium 3.5
 
 **Mistral Medium 3.5** is a 128B dense parameter flagship model from Mistral AI, released in public preview on May 22, 2026. It merges instruction-following, reasoning, and coding capabilities into a single set of open weights under a modified MIT license. The model features a 256k context window and is designed for long-horizon tasks that call multiple tools reliably and produce structured output that downstream code can consume.

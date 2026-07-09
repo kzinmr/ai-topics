@@ -1,3 +1,13 @@
+## [2026-07-09] watchdog | Auto-fix: added frontmatter to 3 legacy pages
+
+- **Fixed**: Added YAML frontmatter (title, type, created, updated, tags, sources, status) to 3 pages that had none:
+  - `entities/uipath.md` — tags: [entity, company, enterprise-ai, coding-agents]
+  - `concepts/cursor-automations.md` — tags: [concept, coding-agents, cursor, developer-tooling]
+  - `concepts/mistral-medium-3-5.md` — tags: [concept, model, open-source, mistral]
+- **Verified**: All tags conform to SCHEMA.md taxonomy. Index.md structurally clean (0 corruption issues).
+
+---
+
 ## [2026-07-09] Raw Backlog Ingest — archive 5 articles, cleanup 2 duplicate stubs
 
 ### Archived (already captured by previous pipeline runs)
