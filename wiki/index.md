@@ -306,7 +306,7 @@
 - [[entities/georgi-gerganov]] — Georgi Gerganov
 - [[entities/gergely-orosz]] — Gergely Orosz
 - [[entities/gian-segato]] — Gian Segato
-- [[entities/giles-thomas]] — Giles Thomas; new entity — "Writing an LLM from scratch" series, JAX/NNX/Optax training loop, outside-in methodology (July 1)
+- [[entities/giles-thomas]] — Giles Thomas; enriched with Part 34b (JAX GPT-2 Small) and Poppy training box hardware (July 9)
 - [[entities/gilesthomas]] — Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technica...
 - [[entities/gkisokay]] — gkisokay
 - [[entities/glean]] — Glean

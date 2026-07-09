@@ -1,3 +1,14 @@
+## [2026-07-09] Blog Wiki Ingest — enrich entities/giles-thomas.md with Part 34b and Poppy training box
+
+### Updated
+- **`entities/giles-thomas.md`** — Enriched with Part 34b (JAX GPT-2 Small implementation: test loss 3.418784 beats PyTorch and original GPT-2, 37h15m training, full 32-bit precision, incremental architecture build) and Hardware: Poppy the Training Box section (dedicated LLM training machine build, RTX 3090 upgrade, 22,557 tokens/sec throughput, 368W power). Added sources and references for both articles. Bumped `updated` to 2026-07-09.
+
+### Sources
+- raw/articles/gilesthomas.com--2026-07-llm-from-scratch-34b-building-and-training-gpt-2-sma--64a53b57.md
+- raw/articles/gilesthomas.com--2026-07-poppy-the-training-box-1-the-beginnings--dfae584f.md
+
+---
+
 ## [2026-07-09] Newsletter Wiki Ingest — enrich entities/modal-labs.md with Agent Experience (AX) interview content
 
 ### Updated
