@@ -1,3 +1,19 @@
+## [2026-07-10] health-fix | index repair — orphan registration + section counts
+
+### Changes
+- **Added orphan entries** to index.md: concepts/harness-engineering/agentic-workflows/vibe-coding (Vibe Coding), queries/wiki-graph-analysis-weekly-2026-06-19
+- **Fixed section header counts**: Entities 836→842, Concepts 1868→1846, Queries 5→6
+- **Skipped _index files** (20 pages) and _archive pages per policy
+
+### Verification
+| Metric | Status |
+|--------|--------|
+| Index structural health | Clean (2760 lines) |
+| Ghost entries | 0 |
+| Index corruption | None detected |
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
