@@ -2,7 +2,7 @@
 title: "MAI-Thinking-1"
 type: entity
 created: 2026-06-21
-updated: 2026-07-07
+updated: 2026-07-10
 tags:
   - microsoft
   - model
@@ -138,10 +138,27 @@ Based on GRPO (Shao et al., 2024) with token-level policy gradient, with two key
 - **Inference hardware**: MAIA-200 (Microsoft custom silicon) — 40% higher token generation throughput per Watt vs GB200
 
 ## Safety & Red Teaming
-- Continuous red-teaming throughout model development to surface and remediate vulnerabilities
-- Internal and independent red teaming programs
-- Safety benchmarks developed for internal grounding
-- Helpfulness & Safety RL climb trains human preference and safety signals alongside reasoning
+
+### Internal Safety Evaluation
+The report describes a comprehensive internal safety evaluation framework:
+
+**Over-refusal measurement**: An internal benchmark measures over-refusal on low-risk requests, flagging refusals, hedging, or unwarranted partial refusals. Paired with safety pass rates on high-sensitivity items, this surfaces safer behavior on high-risk requests and more helpful behavior on benign ones. Across five of eight evaluated categories, MAI-Thinking-1 outperformed Sonnet 4.6 on this safety-helpfulness balance, with the largest gains in Chemical/Biological/Radiological/Nuclear (CBRN), Self Harm, and Elections & Politics.
+
+**Jailbreak evaluation**: ~9.5K jailbreak prompts built from 2.5K unique seed scenarios (vendors, internal red-teaming, HarmBench, StrongREJECT). Categorized into three buckets:
+- **Foundational Techniques**: single-step transformations (jailbreak wrappers, prompt templates)
+- **Compositional Techniques**: multiple transformations or structured rewrites (PyRIT, PAP-style, multilingual)
+- **Adaptive Techniques**: interaction, search, or multi-turn structure (TAP, multi-turn attacks)
+
+MAI-Thinking-1 achieved attack success rates (ASR) comparable with Sonnet 4.6 and Opus 4.6 across all three buckets.
+
+### Internal Red Teaming
+Conducted by MAI red teamers (safety researchers + recruited external annotators) throughout model development. Across top-priority remediation categories identified during red teaming, aggregate attack success fell ~22% from pre-mitigation to final candidate, with ~44% reduction in jailbreak success, ~43% in hate/fairness issues, ~30% in child safety, and ~20% in mental health attacks.
+
+### Independent Red Teaming
+Additional red-teaming by Microsoft's AI Red Team (AIRT) and third-party vendors, focused on areas where static evaluations are weakest: automated adversarial attack methods, code/cyber-misuse safety, psychosocial harms, and multilingual coverage.
+
+- **TAP (Tree of Attacks with Pruning)** was surfaced as a robustness gap. Microsoft built a closed-loop adversarial data pipeline (broad scenario generation → attack-transformation templates → TAP-style adaptive refinement → model-specific failures) that produced a large reduction in TAP jailbreak susceptibility, bringing the model to parity with state-of-the-art models.
+- **Low-resource language framing**: Content reliably refused in English was elicited in Yoruba, Telugu, Amharic, Burmese, Khmer, and Malay. Microsoft responded by expanding safety training data with multilingual adversarial seeds, translating high-yield English attack patterns into affected languages. Multilingual robustness in lower-resource languages remains an area of continued investment.
 
 ## Sources
 - [MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)

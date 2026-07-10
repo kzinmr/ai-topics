@@ -1,3 +1,10 @@
+## [2026-07-10] backlog-ingest | Enriched MAI-Thinking-1 entity with safety/red-teaming details
+
+- **entities/mai-thinking-1.md** — Expanded Safety & Red Teaming section with detailed internal safety evaluation (jailbreak taxonomy: Foundational/Compositional/Adaptive techniques, 9.5K prompts, ASR comparable to Sonnet/Opus), internal red teaming mitigation results (~22% aggregate ASR reduction), and independent red teaming findings (TAP closed-loop pipeline, multilingual vulnerability in 6 low-resource languages). Updated `updated` to 2026-07-10.
+- raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md
+
+---
+
 ## [2026-07-10] dreaming | Reference enrichment — Gumloop case study to Fireworks AI
 
 - **`entities/fireworks-ai.md`** — Added Gumloop case study section: GLM-5.2 replaced Opus 4.8 (nobody noticed), 72% cost savings, 7x growth in open-weight model agent chats in 3 weeks, reliability as Fireworks differentiator. Updated `updated` to 2026-07-10 and added source.
