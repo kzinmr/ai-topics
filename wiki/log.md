@@ -1,3 +1,33 @@
+## [2026-07-10] active-crawl | 4 new pages from trending topics
+
+**Sources**: HN Algolia trending (Jul 7-10) + X/Twitter search + wiki gap analysis + blogwatcher DB
+**Topics selected**: 4 (from 45+ HN stories, 60+ tweets, 30+ gaps)
+
+### Pages created:
+- [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Databricks benchmarking coding agents (Claude Code, Codex, Devin) on their multi-million line production codebase. Three capability tiers, open models competitive, harness efficiency matters.
+- [[concepts/mistral-robostral-navigate]] — Mistral's 8B VLA robotics navigation model; single-camera, SOTA on R2R-CE, cross-embodiment, two-stage training with prefix-caching + CISPO RL.
+- [[concepts/claude/fable-safety-classifiers-critique]] — Rob Patro (Combine Lab) critique of Anthropic Fable's overzealous safety classifiers blocking legitimate CS research tasks.
+- [[entities/rowboat]] — Open-source (Apache 2.0), local-first Claude Desktop alternative with knowledge graph memory, MCP integration, BYO models. Show HN Jul 7 (216 pts).
+
+### Raw articles saved:
+- wiki/raw/articles/2026-07-10_databricks-coding-agent-benchmark.md
+- wiki/raw/articles/2026-07-10_mistral-robostral-navigate.md
+- wiki/raw/articles/2026-07-10_fable-safety-classifiers-critique.md
+- wiki/raw/articles/2026-07-10_rowboat-claude-desktop-alternative.md
+
+### Topics already covered (skipped):
+- GPT-5.6 (extensive existing coverage, 42 concept pages)
+- Grok 4.5 (event page + 3 entities already enriched Jul 9)
+- GLM 5.2 local inference (existing concepts)
+- GitLost agent prompt injection (existing concepts/security-and-governance/gitlost-agent-prompt-injection)
+- Microsoft Flint (existing concepts/flint-visualization-language)
+- Claude 5/Sonnet 5 (existing concepts/claude/sonnet-5)
+- AI supply chain / SemiAnalysis (existing entity + concept pages)
+
+### Stats:
+- Wiki now: 1,868 concepts, 836 entities, 34 comparisons, 4 queries, 15 events = 2,757 total pages
+- 4 raw articles saved
+
 ## [2026-07-10] blog-wiki-ingest | Muse Spark 1.1 enrichment, Simon Willison GPT-5.6 reference
 
 - **Source**: blog-triage checkpoint (Jul 10 07:37 UTC) — 11 articles triaged, 1 take, 3 reference, 7 skip
