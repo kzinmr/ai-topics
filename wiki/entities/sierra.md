@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-06-13
+updated: 2026-07-10
 type: entity
 tags:
   - company
@@ -20,6 +20,7 @@ sources:
   - raw/articles/sierra.ai--blog-outcomemaxxing--0bc34aec.md
   - raw/articles/sierra.ai--blog-discovering-what-s-possible-with-ai-for-cx--904ecc1f.md
   - raw/articles/2025-08-19_sierra_simulations-the-secret-behind-every-great-agent.md
+  - raw/articles/sierra.ai--blog-ai-pilling-our-company-lessons-learned--168c9b80.md
 ---
 
 # Sierra
@@ -113,6 +114,24 @@ Sierra's Agent OS includes a **deployment simulation** system ([[concepts/deploy
 - **Scale**: customers run 35,000+ tests/day, achieving 90% resolution rates and 4.5/5.0 CSAT
 
 See also: [[comparisons/openai-vs-sierra-agent-simulation]] for comparison with OpenAI's research framework approach.
+
+### "AI-Pilling Our Company" — Internal AI Adoption (July 2026)
+
+Sierra published a detailed account of how they internally deployed AI across their entire company, not just engineering. Key insights:
+
+**1. Agent, Singular** — Sierra collapsed role-specific agents (support agent "PINE", data analyst "Pinewood", engineer "Pinecone", sales agent "Reggie Jr") into a single agent called **Pinecone**. The lesson: the most important work happens *across* teams, not within them. One agent with one Slack handle, one URL, and one unbroken thread from question to finished result.
+
+**2. Proactive, Not Reactive** — Pinecone persists across entire workflows, carrying context forward and picking threads back up. Instead of waiting to be asked, it acts when the next step is ready (webhooks, Linear tasks, reviews). The goal: less work arriving unfinished.
+
+**3. Business Context Is the Bottleneck, Not Intelligence** — Frontier models are now capable enough for most business needs. The bottleneck has shifted to company-specific context: workflows, history, judgment calls. An agent with complete context can prepare meetings, research accounts, review contracts, and trace product decisions.
+
+**4. The Agent Is the UI, the System of Record the Backend** — Artifacts (PRs, decks, contracts) are both input and output. The agent works *across* systems of record (GitHub, Salesforce, Linear) rather than replacing them. Replacing those systems means recreating decades of mature software.
+
+**5. Outcomes, Not Just Activity** — Since March, Pinecone has run 75,000+ sessions for 600+ people. 70% of PRs are opened through it. But Sierra warns against measuring activity (sessions, tool calls) instead of outcomes (deal cycle time, first-pass resolution, work-life balance).
+
+**Technical stack**: Built on Claude Code and Codex, with an MCP Gateway for security (inherits each employee's access, enforces policy at every tool call, isolates customer data, audit trail). Routing layer lets them direct tasks to the best model for each job.
+
+> *"The 1968 study found a 10X gap between the best and the rest — and for fifty years, the only answer was to go hunt for those rare people. Now there's a better one: give everyone an agent so they have the advantages of the few."*
 
 ## Significance
 

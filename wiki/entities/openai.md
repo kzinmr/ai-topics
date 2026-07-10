@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-07-08
+updated: 2026-07-10
 tags:
   - company
   - model
@@ -45,6 +45,9 @@ sources:
   - raw/articles/openai.com--index-openai-broadcom-jalapeno-inference-chip--f8a3b2c1.md
   - raw/articles/2026-06-28_openai_hp-frontier-partnership.md
   - raw/articles/openai.com--index-australian-payments-plus--241bab22.md
+  - raw/articles/simonwillison.net--2026-jul-9-gpt-5-6--b29dbe02.md
+  - raw/articles/simonwillison.net--2026-jul-10-openai--1e4ab816.md
+  - raw/articles/9to5mac.com--2026-07-09-openai-announcing-the-next-chapter-for-chatgpt-to--a8f56e74.md
 ---
 
 # OpenAI
@@ -54,7 +57,7 @@ sources:
 | **Type** | AI Research & Product Company |
 | **Founded** | 2015 |
 | **Leadership** | Sam Altman (CEO), Greg Brockman (Products), Thibault Sottiaux (Core Product), Ilya Sutskever (Chief Scientist, former) |
-| **Key Products** | GPT-4/5 series, ChatGPT, Codex, DALL-E, Whisper, o-series, Agents SDK, Symphony |
+| **Key Products** | GPT-4/5/5.6 series, ChatGPT, ChatGPT Work, Codex, DALL-E, Whisper, o-series, Agents SDK, Symphony |
 | **Website** | [openai.com](https://openai.com) |
 | **API** | [platform.openai.com](https://platform.openai.com) |
 
@@ -433,6 +436,50 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 
 > *"The updated Agents SDK made it production-viable for us to automate a critical clinical records workflow that previous approaches couldn't handle reliably enough. For us, the difference was not just extracting the right metadata, but correctly understanding the boundaries of each encounter in long, complex records."*
 > — **Rachael Burns**, Staff Engineer & AI Tech Lead, Oscar Health
+
+## July 2026 Product Launches — GPT-5.6 GA, ChatGPT Work, and Codex Unification (July 9, 2026)
+
+On July 9, 2026, OpenAI held a major product event introducing several interconnected launches:
+
+### GPT-5.6 General Availability
+All three GPT-5.6 models (Sol, Terra, Luna) went from restricted preview to **general availability**. See [[concepts/gpt/gpt-5-6]] for full model details, benchmarks, and pricing.
+
+Key highlights:
+- **Knowledge cutoff**: February 16, 2026 | **Context**: 1M tokens | **Max output**: 128K tokens
+- **New "ultra" mode**: Coordinates multiple agents across parallel workstreams (Pro/Enterprise)
+- **Programmatic Tool Calling**: Models compose and run JavaScript to orchestrate tool calls
+- **Multi-agent (beta)**: Spin up subagents for parallel work in a single API request
+- **Pricing**: Sol $5/$30, Terra $2.50/$15, Luna $1/$6 per 1M tokens
+- **GPT-5.4 retirement**: July 23, 2026
+
+### ChatGPT Work
+A new **agent mode** available on web, mobile, and desktop. ChatGPT Work is an autonomous agent that can:
+- Run in the cloud (web/mobile) or locally on desktop (with file/app access)
+- Execute multi-step tasks with persistent context
+- Integrate with Codex capabilities
+
+> *"[...] Work on web and mobile runs in the cloud. Work in the desktop app can also use local files and desktop apps with your permission. At launch, cloud Work conversations do not appear in desktop Work; desktop Work threads and local files remain on that computer."* — OpenAI (quoted by Simon Willison as "trying (unsuccessfully) to clarify ChatGPT Work")
+
+### Codex Merged into ChatGPT Desktop App
+The standalone Codex app has been **merged into the ChatGPT desktop app** on macOS and Windows:
+- **ChatGPT for desktop** now includes Chat, Work, and Codex modes
+- Existing Codex users keep their projects, settings, and workflows
+- Users can make Codex the default view and keep the Codex app icon on macOS
+- The old ChatGPT app is now called **ChatGPT Classic**
+- New features: Edit Markdown/code inline, inline annotations, GitHub PR review in sidebar, cross-repo projects
+- Performance: Computer Use faster with GPT-5.6, improved task activity visibility
+
+### ChatGPT Sites
+A new **hosted sites feature** for all paid users — enabling ChatGPT to create and host web content.
+
+### Fidji Simo Departure
+**Fidji Simo**, who was on medical leave, has stepped down from OpenAI. The Wall Street Journal reported she was a "would-be usurper" in internal power dynamics. Her departure simplifies the leadership structure under Sam Altman.
+
+### Microsoft 365 Copilot Integration
+GPT-5.6 is now the **preferred model in Microsoft 365 Copilot**, replacing GPT-5.5 as the default.
+
+### GPT-5.5 Bio Bug Bounty
+OpenAI launched a **Bio Bug Bounty** program specifically for GPT-5.5, inviting security researchers to test biological safety guardrails.
 
 ## Related Concepts
 - [[concepts/openai/agents-sdk]] — OpenAI's agent development framework

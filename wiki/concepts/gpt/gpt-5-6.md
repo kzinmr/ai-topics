@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6 (Sol / Terra / Luna)"
 created: 2026-06-27
-updated: 2026-06-27
+updated: 2026-07-10
 type: concept
 tags:
   - model
@@ -13,6 +13,8 @@ tags:
 sources:
   - raw/newsletters/2026-06-27-ainews-openai-gpt-5-6-sol-terra-luna-restricted-to-trusted-partners.md
   - raw/articles/simonwillison.net--2026-jun-26-openai--6923f6c5.md
+  - raw/articles/simonwillison.net--2026-jul-9-gpt-5-6--b29dbe02.md
+  - raw/articles/9to5mac.com--2026-07-09-openai-announcing-the-next-chapter-for-chatgpt-to--a8f56e74.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)
@@ -75,6 +77,46 @@ GPT-5.6 introduced several prompt caching improvements designed to make caching 
 - **Cache writes billed at 1.25× uncached input rate**: Writing to the cache incurs a 25% premium over the base input token price, reflecting the compute overhead of storing and indexing the prompt state.
 - **Cache reads continue at 90% discount**: Reading from the cache still receives the standard 90% discount on cached input tokens, making cache hits highly economical.
 - **Implications**: The combination of explicit breakpoints and a guaranteed minimum cache life makes prompt caching far more predictable for agentic workflows, where models cycle through structured reasoning steps with shared prefix context. This reduces both latency variance and cost uncertainty for production agent deployments.
+
+## General Availability (July 9, 2026)
+
+GPT-5.6 went from restricted preview to **general availability** on July 9, 2026. Key details from the GA release:
+
+### Specifications
+- **Knowledge cutoff**: February 16, 2026
+- **Context window**: 1,000,000 tokens
+- **Maximum output tokens**: 128,000
+- **Effort levels**: none, low, medium, high, xhigh, max
+- **New "ultra" mode**: Coordinates multiple agents across parallel workstreams for complex tasks (Pro/Enterprise in Work, Plus+ in Codex)
+
+### New API Features
+- **Programmatic Tool Calling**: Models can compose and run JavaScript that orchestrates tool calls — bridging the gap between MCPs and full terminal sessions
+- **Multi-agent (beta)**: Model can spin up subagents for parallel, focused work — the sub-agent pattern baked into the core API
+- **Prompt cache breakpoints**: Explicit control over cache invalidation points (complementing automatic detection)
+- **`detail: original`**: Avoid image resizing before processing
+
+### Benchmark Claims
+- **Agents' Last Exam** (55-field professional workflows): GPT-5.6 Sol sets new high of **53.6**, beating Claude Fable 5 by **13.1 points** (adaptive reasoning). Even at medium reasoning, beats Fable 5 by 11.4 points at ~¼ the cost. Terra and Luna outperform Fable 5 at ~1/16 the cost.
+- **SWE-Bench Pro**: Claude Fable 5 got **80%** vs GPT-5.6 Sol **64.6%** — OpenAI published a separate article auditing ~30% of SWE-bench Pro tasks as "broken"
+
+### Availability
+| Tier | Sol | Terra | Luna |
+|------|-----|-------|------|
+| **Chat** | Plus, Pro, Business, Enterprise (medium+) | Free, Go | — |
+| **ChatGPT Work / Codex** | Plus+ (all effort levels) | Free, Go | Plus+ |
+| **API** | All developers | All developers | All developers |
+| **max** | All with GPT-5.6 access (toggle in settings) | — | — |
+| **ultra** | Pro/Enterprise (Work), Plus+ (Codex) | — | — |
+
+### Model Retirement
+GPT-5.4 will be retired on **July 23, 2026**. GPT-5.5 models remain available.
+
+### Cost per Pelican (Simon Willison's test)
+- Least expensive: gpt-5.6-luna at effort none — **0.71 cents**
+- Most expensive: gpt-5.6-sol at max reasoning — **48.55 cents**
+
+### Simon Willison's Assessment
+Early access to GPT-5.6 Sol showed it's "definitely very competent" but hasn't struck him as better than Fable at complex coding tasks. The model guidance for using GPT-5.6 contains the most interesting details.
 
 ## Government-Mediated Release
 This is the first time a U.S. government request has directly shaped a frontier AI model's release scope. Sam Altman stated OpenAI had originally planned a broader launch but shifted to limited preview due to the government request. Multiple commentators interpreted the move as evidence that frontier releases are becoming government-mediated, "trusted partner first" deployments.

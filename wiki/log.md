@@ -1,3 +1,14 @@
+## [2026-07-10] blog-ingest | GPT-5.6 GA, ChatGPT Work, Muse Spark 1.1, Sierra AI-pilling
+
+- **Source**: blog-ingest checkpoint (Jul 10 07:00 UTC) — 31 new articles, 11 saved, 9 unsaved
+- **Key event**: OpenAI GPT-5.6 (Sol/Terra/Luna) general availability + ChatGPT Work agent launch (Jul 9)
+- **Pages updated**:
+  - `concepts/gpt/gpt-5-6.md` — Added GA section: specifications, new API features (Programmatic Tool Calling, Multi-agent, Prompt cache breakpoints), benchmark claims (Agents' Last Exam 53.6, SWE-Bench Pro comparison), availability tiers, model retirement schedule, cost analysis
+  - `entities/openai.md` — Added July 2026 Product Launches section: GPT-5.6 GA, ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, Microsoft 365 Copilot integration, Bio Bug Bounty. Updated Key Products list.
+  - `entities/muse-spark.md` — Upgraded from skeleton to full page: Muse Spark 1.1 (first API-available model), llm-meta-ai plugin, Attractor States finding
+  - `entities/sierra.md` — Added "AI-Pilling Our Company" section: Pinecone single-agent architecture, proactive agent patterns, context-as-bottleneck thesis, agent-as-UI model, outcomes-over-activity metrics
+- **Not covered**: 9 unsaved articles (OpenAI official pages behind Cloudflare, NYT Meta/Instagram article, astronomy blog)
+
 ## [2026-07-09] dreaming | Knowledge consolidation — reference enrichment (triage recovery)
 
 - **Source**: dreaming-collect checkpoint (Jul 9 18:00), group-agent JSON parse failure recovered via `latest.json` + triage checkpoint

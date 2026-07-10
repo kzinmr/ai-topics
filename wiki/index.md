@@ -531,7 +531,7 @@
 - [[entities/moondream]] — Moondream — VLM company building small vision-language models and the Photon inference engine; uses pipelined decoding to eliminate GPU bubbles, achieving 35% higher decode throughput on NVIDIA B200 (June 30)
 - [[entities/moonshot-ai]] — Moonshot AI
 - [[entities/muratcan-koylan]] — Muratcan Koylan
-- [[entities/muse-spark]] — Muse Spark
+- [[entities/muse-spark]] — Muse Spark; 1.1 GA with API access (first Spark model with API), agentic tool calling improvements, llm-meta-ai plugin, "Attractor States in Self-Conversation" finding (July 2026)
 - [[entities/mustafa-suleyman]] — Mustafa Suleyman
 - [[entities/nader-dabit]] — Nader Dabit
 - [[entities/nathan-flurry]] — Nathan Flurry
@@ -575,7 +575,7 @@
 - [[entities/omar-khattab/rlm]] — RLM — Recursive Language Models
 - [[entities/omri-weinstein]] — Omri Weinstein
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
-- [[entities/openai]] — OpenAI; added Australian Payments Plus enterprise adoption case study (80% employees more creative, 300+ custom GPTs, Codex for reconciliation) — July 8
+- [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot
 - [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo)
@@ -712,7 +712,7 @@
 - [[entities/shunyu-yao]] — Shunyu Yao (姚顺雨)
 - [[entities/shuvendu]] — Shuvendu K. Lahiri
 - [[entities/sid]] — SID AI
-- [[entities/sierra]] — Sierra
+- [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
 - [[entities/simon-willison]] — Simon Willison; enriched with hackmyclaw.com Prompt Injection Challenge (June 27); Sonnet 5 tokenizer analysis (1.42× English, 30% effective price increase, sampling params deprecated) and shot-scraper video feature — agent self-recorded demos (July 1)
@@ -1708,7 +1708,7 @@
 - [[concepts/gpt/gpt-5-5-instant-system-card]] — GPT-5.5 Instant System Card
 - [[concepts/gpt/gpt-5-5-spud]] — GPT-5.5 \"Spud\
 - [[concepts/gpt/gpt-5-5-system-card]] — GPT-5.5 System Card
-- [[concepts/gpt/gpt-5-6]] — GPT-5.6 (Sol/Terra/Luna) — OpenAI's three-model family with government-mediated restricted preview; Prompt Caching features (explicit breakpoints, 30-min cache life, 1.25x write billing, 90% read discount); METR cheating finding, PostTrainBench-Lite, Terminal-Bench 2.1, pricing/positioning (June 27)
+- [[concepts/gpt/gpt-5-6]] — GPT-5.6 (Sol/Terra/Luna) — OpenAI's three-model family; GA July 9 2026 with Programmatic Tool Calling, Multi-agent (beta), ultra mode; Agents' Last Exam 53.6 (beats Fable 5 by 13.1pt); 1M context, 128K output, Feb 2026 cutoff; GPT-5.4 retiring Jul 23
 - [[concepts/gpt/gpt-5-codex-system-card]] — GPT-5-Codex System Card
 - [[concepts/gpt/gpt-5-system-card]] — GPT-5 System Card (August 2025)
 - [[concepts/gpt/gpt-chatgpt-agent-system-card]] — ChatGPT Agent System Card (July 2025)
