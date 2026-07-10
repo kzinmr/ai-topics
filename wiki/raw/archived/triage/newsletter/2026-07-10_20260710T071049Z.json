@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-07-10T07:43:14.673375+00:00",
+  "triage_run_id": "20260710T071049Z",
+  "source": "newsletter",
+  "summary_ja": "6ニュースレターをトリアージ。1テイク(SemiAnalysis Meta Superintelligence)、2リファレンス(Ben's Bites Grok x Cursor、AINews GPT-5.6カバレッジ)、3スキップ(Lenny's Podcast、True Positive Weekly、Beehiiv GPT-Live)。SemiAnalysisのMeta AI戦略解説はentities/meta.mdのSuperintelligence Labs節を豊かにするインプット。GPT-5.6/Codex統合/Grok 4.5はblog-ingestパイプラインで既にカバー済み。",
+  "decisions": [
+    {
+      "item_id": "<20260709130245.3.9b8c80ea2c47a561@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Grok x Cursor",
+      "url": "https://open.substack.com/pub/bensbites/p/grok-x-cursor",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-09-grok-x-cursor.md",
+      "recommended_action": "reference",
+      "reason_ja": "Ben's Bitesデイリーラウンドアップ。Grok 4.5の価格比較情報(6x vs Opus, 3x vs GPT-5.5)が既存Wikiにない。10+トピックを含む編集ラウンドアップ(GPT-Live-1, Claude Cowork, Muse Image/Video等)だが各トピックは別ソースで既にカバー済み。Grok 4.5の型番比較情報はevents/grok-4-5-launch.mdへの参照ソースとして有用。",
+      "candidate_wiki_path": "events/grok-4-5-launch.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-09\n**Subject:** Grok x Cursor\n**Collected:** 2026-07-10T07:10:42.096033+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaW"
+    },
+    {
+      "item_id": "<20260710061940.3.af19a6ba70e20c71@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "swyx / Latent Space",
+      "title": "[AINews] OpenAI launches GPT 5.6 Sol/Terra/Luna, Codex becomes ChatGPT superapp",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-openai-launches-gpt-56-solterraluna",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-10-ainews-openai-launches-gpt-5-6-sol-terra-luna-codex-becomes-chatgpt-superapp.md",
+      "recommended_action": "reference",
+      "reason_ja": "AINewsデイリーバレテン。GPT-5.6 GAとCodexのChatGPT統合はblog-ingestパイプライン(07:00)でconcepts/gpt/gpt-5-6.mdとentities/openai.mdが既に更新済み。AINews視点の追加情報(TerraはFable 5以上、LunaはOpus 4.8以上、コスト4分の1等)はスタッフ補完な役割。既存ページのソース参照として価値あり。",
+      "candidate_wiki_path": "concepts/gpt/gpt-5-6.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-10\n**Subject:** [AINews] OpenAI launches GPT 5.6 Sol/Terra/Luna, Codex becomes ChatGPT superapp\n**Collected:** 2026-07-10T07:10:48.186042+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNj"
+    },
+    {
+      "item_id": "<20260709123221.3.933fabec187b05ff@mg-d1.substack.com>-11",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter",
+      "title": "Adam Mosseri: AI is a tailwind for authenticity",
+      "url": "https://open.substack.com/pub/lenny/p/adam-mosseri-ai-is-a-tailwind-for",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-09-adam-mosseri-ai-is-a-tailwind-for-authenticity.md",
+      "recommended_action": "skip",
+      "reason_ja": "Lenny's Podcastインタビュー(Adam Mosseri, Instagram社長)。AIのソーシャルメディアへの影響についての議論で、コアのLLM/AI Agent技術とは無関係。事業/製品戦略ポッドキャスト。本文52段落あるがAIコンテンツ生成とクリエイター識別に関する話題は草の根レベル。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-09\n**Subject:** Adam Mosseri: AI is a tailwind for authenticity\n**Collected:** 2026-07-10T07:10:40.503440+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9"
+    },
+    {
+      "item_id": "<20260709212257.3.1a1e90516c24c5da@mg-d0.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "AI Weekly / True Positive Weekly",
+      "title": "True Positive Weekly #169",
+      "url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-169",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-09-true-positive-weekly-169.md",
+      "recommended_action": "skip",
+      "reason_ja": "Pure link digest newsletter(純粋リンク紹介)。True Positive Weeklyは編集者の分析なくタイトルと1行説明のリンク一覧だけ。Wiki価値なし。既存パターンに基づきスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-09\n**Subject:** True Positive Weekly #169\n**Collected:** 2026-07-10T07:10:46.496899+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
+    },
+    {
+      "item_id": "<20260709.155717.637ec8e5@mta37>-1",
+      "source": "newsletter",
+      "source_name": "Beehiiv Newsletter (uid=348)",
+      "title": "GPT-Live Changes How We Talk to AI",
+      "url": "https://link.mail.beehiiv.com/v1/c/x31sHNGZjrXa6hnVnX3sGoDtkZ0q39XXQdBXAIXo5QYyKI8eaGutK5uLtbgS%0AFy0DuS4Ee2hEnlpuOPqyYFBPi7aXElxc9WdBrPjEJIZrjNL7Tpu7mres2Ghl%0A7xfKYoF23z6N78xvmpBuhvd44JPvCiLRJtPfdJ%2BKoC12%2F6rLjggCXbl63gP9%0AzLCEgN1K1p5HOJmVqUiyYUeDES2NRJRTAw%3D%3D%0A/b5323fbac54c2307",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-09-gpt-live-changes-how-we-talk-to-ai.md",
+      "recommended_action": "skip",
+      "reason_ja": "Beehiiv追跡URLが403/Cloudflare('Just a moment...')で全てアクセス不可。concepts/gpt-live.mdは既に存在し7月9日更新済(82行)。Inboxサマリーは表顔コンテンツ確認できず、トピックは既存カバー済み。スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-09\n**Subject:** 🎙️ GPT-Live Changes How We Talk to AI\n**Collected:** 2026-07-10T07:10:43.651518+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/x31sHNGZjrXa6hnVnX3sGoDtkZ0q39XXQdBXAIXo5QYyKI8eaGutK5uLtbgS%0AFy0DuS4Ee2hEnlpuOPqyYFBP"
+    }
+  ]
+}

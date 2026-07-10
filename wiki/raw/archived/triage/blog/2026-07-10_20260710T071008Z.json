@@ -1,0 +1,121 @@
+{
+  "archived_at": "2026-07-10T07:38:04.990763+00:00",
+  "triage_run_id": "20260710T071008Z",
+  "source": "blog",
+  "summary_ja": "11件のブログ記事をトリアージ。Take: 1件（Muse Spark 1.1 → concepts/meta-muse-spark.md更新）、Reference: 3件（GPT-5.6 Simon Willison実機評価・Sierra AI-pilling残差・ChatGPT Work GA詳細）、Skip: 7件（軽微なbugfix/時事/Apple広告/レトロPC/ALF/Zigパッケージマネージャ — いずれもAI無関係または既存Wikiカバー済み）。本日のblog-ingestパイプラインではMuse Spark 1.1の概念ページ更新が主なWiki価値。",
+  "decisions": [
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "The new GPT-5.6 family: Luna, Terra, Sol",
+      "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-9-gpt-5-6--b29dbe02.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 概念ページ concepts/gpt/gpt-5-6.md は既にGA情報をカバー（benchmark claims, prompt caching, programmatic tool calling, multi-agentを含む）。本記事はソースとしてlist済み。しかし entities/simon-willison.md のJuly 2026 Updates (line 500以降) に本記事のエントリがないため、Willisonのエンティティページへの参照追加が必要。本文でAgents' Last Exam、SWE-Bench Proの30% broken監査、Cost per Pelican（0.71〜48.55セント）を確認。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# The new GPT-5.6 family: Luna, Terra, Sol\nSource: https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything\nThe new GPT-5.6 family: Luna, Terra, Sol\n9th July 2026\nOpenAI’s latest flagship model\nhit general availability this morning\n, and comes in three sizes: Luna, Terra, and Sol (from smallest"
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "OpenAI unveils ChatGPT Work agent, GPT-5.6 models now available",
+      "url": "https://9to5mac.com/2026/07/09/openai-announcing-the-next-chapter-for-chatgpt-today-watch-here/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/9to5mac.com--2026-07-09-openai-announcing-the-next-chapter-for-chatgpt-to--a8f56e74.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 概念ページ concepts/gpt/gpt-5-6.md に既にソース登録済み。本記事はChatGPT Work（新デスクトップアプリ、Codex統合、ChatGPT Classic/Codexモード区別）、ChatGPT Sites、ultra mode coordinationなどGAリリース詳細をカバー。既存のGA節（line 83-112）は本記事の内容を反映済み。参照エントリとして保持。",
+      "candidate_wiki_path": "concepts/gpt/gpt-5-6.md",
+      "body_excerpt": "# OpenAI unveils ChatGPT Work agent, GPT-5.6 models now available\nSource: https://9to5mac.com/2026/07/09/openai-announcing-the-next-chapter-for-chatgpt-today-watch-here/\nOpenAI held its second livestream this week today at 10 am PT. The video teased that the company was “introducing the next chapter"
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "Sierra Blog",
+      "title": "AI-pilling our company: lessons learned",
+      "url": "https://sierra.ai/blog/ai-pilling-our-company-lessons-learned",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/sierra.ai--blog-ai-pilling-our-company-lessons-learned--168c9b80.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ entities/sierra.md は既に本記事の5つのレッスンを包括的にカバー（Section 'AI-Pilling Our Company'、lines 118-134）。2026-07-10に更新済み。但し、本文のPinecone 'dreaming'実験やMCP Gatewayの詳細アーキテクチャはエンティティページに未記載。必要に応じて enrich。",
+      "candidate_wiki_path": "entities/sierra.md",
+      "body_excerpt": "# AI-pilling our company: lessons learned\nSource: https://sierra.ai/blog/ai-pilling-our-company-lessons-learned\nIn 1968, a\nseminal study\nfound something that would shape Silicon Valley for decades: the best software engineers were dramatically more productive than their peers. Ever since, every tech"
+    },
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Release: llm 0.31.1",
+      "url": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-9-llm--483d47e9.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 軽微なバグフィックスリリース（llm 0.31.1、tool call empty argumentsのJSON error修正）。本文17行のみでWiki価値なし。",
+      "body_excerpt": "# Release: llm 0.31.1\nSource: https://simonwillison.net/2026/Jul/9/llm/#atom-everything\nFix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers.\n#1521\nThis bug came up when I was testing\nllm-meta-ai\n."
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "A quote from OpenAI",
+      "url": "https://simonwillison.net/2026/Jul/10/openai/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-10-openai--1e4ab816.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Quote post。OpenAIのChatGPT Work説明文を引用して皮肉るだけ。本文18行、Wiki価値なし。",
+      "body_excerpt": "# A quote from OpenAI\nSource: https://simonwillison.net/2026/Jul/10/openai/#atom-everything\n10th July 2026\n[...] Work on web and mobile runs in the cloud. Work in the desktop app can also use local files and desktop apps with your permission. At launch, cloud Work conversations do not appear in desk"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "John Ternus Should Reverse Apple's Slide Down the Advertising Slippery Slope",
+      "url": "https://daringfireball.net/2026/07/ternus_apple_slippery_slope",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/daringfireball.net--2026-07-ternus-apple-slippery-slope--70e8c59d.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Appleのプライバシー/広告ポリシーに関する時事解説。AI・Agent無関係。",
+      "body_excerpt": "# John Ternus Should Reverse Apple’s Slide Down the Advertising Slippery Slope\nSource: https://daringfireball.net/2026/07/ternus_apple_slippery_slope\nJohn Ternus Should Reverse Apple’s Slide Down the Advertising Slippery Slope\nThursday, 9 July 2026\nIn September 2014, in the wake of a series of hacks"
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "devblogs.microsoft.com/oldnewthing",
+      "title": "I've decoded a #pragma detect_mismatch error and fixed the mismatch, but I still get the error",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260709-00/?p=112512",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/devblogs.microsoft.com--oldnewthing-20260709-00--a1b1ca28.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Windows C++ #pragma detect_mismatch のビルドエラー対処法。AI無関係。",
+      "body_excerpt": "# I've decoded a #pragma detect_mismatch error and fixed the mismatch, but I still get the error\nSource: https://devblogs.microsoft.com/oldnewthing/20260709-00/?p=112512\nSome time ago, I showed\nhow to decode a\n#pragma detect_mismatch\nerror\n. A colleague ran into this error because they sync’d a chan"
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "nesbitt.io",
+      "title": "Zig | Andrew Nesbitt",
+      "url": "https://nesbitt.io/2026/07/09/unboxed-zig.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/nesbitt.io--2026-07-09-unboxed-zig-html--269d00c1.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Zigパッケージマネージャの詳細設計解説（build.zig.zon、fingerprint、hash-based identity）。プログラム言語エコシステム論。AI無関係。",
+      "body_excerpt": "# Zig | Andrew Nesbitt\nSource: https://nesbitt.io/2026/07/09/unboxed-zig.html\nThis is the first in a series of posts working through individual package managers against a fixed set of headings, so they can be compared directly. The headings come from earlier posts: the\nclient\nand\nregistry\ncategorisa"
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "Monorail: Pioneering $999 PCs from 1996",
+      "url": "https://dfarq.homeip.net/monorail-the-pioneering-999-pc-from-1996/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--monorail-the-pioneering-999-pc-from-1996--78360022.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 1990年代の格安PCベンダーMonorailの回顧史。AI無関係。",
+      "body_excerpt": "# Monorail: Pioneering $999 PCs from 1996\nSource: https://dfarq.homeip.net/monorail-the-pioneering-999-pc-from-1996/?utm_source=rss&utm_medium=rss&utm_campaign=monorail-the-pioneering-999-pc-from-1996\nMonorail was a short-lived PC vendor from the late 1990s and early 2000s. Founded November 2, 1995,"
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "tedium.co",
+      "title": "The ALF Lesson on Creative Limitations",
+      "url": "https://feed.tedium.co/link/15204/17375642/alf-paul-fusco-creativity-constraints",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/feed.tedium.co--link-15204-17375642-alf-paul-fusco-creativity-constraints--394feda4.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ALF（1980年代のテレビ番組）のクリエイティブ制約に関するエッセイ。AI無関係。",
+      "body_excerpt": "# The ALF Lesson on Creative Limitations\nSource: https://feed.tedium.co/link/15204/17375642/alf-paul-fusco-creativity-constraints\nOne look at Paul Fusco’s\nIMDB page\nmakes clear that he has not worked on anything but\nALF\nsince the early 1990s. He has essentially played one character for most of the p"
+    }
+  ]
+}

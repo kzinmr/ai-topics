@@ -1,3 +1,27 @@
+## [2026-07-10] newsletter-wiki-ingest | Meta MSL 1-Year enrichment, Grok 4.5 pricing, GPT-5.6 source
+
+- **Source**: newsletter-triage checkpoint (Jul 10 07:20 UTC) — 6 newsletters triaged, 1 take, 2 reference, 3 skip
+- **Recovery**: newsletter-triage output render failed; triage checkpoint recovered from `triage_latest.json` (per pipeline recovery pattern)
+- **Pages updated**:
+  - `entities/meta.md` — Expanded Superintelligence Labs (MSL) section with SemiAnalysis 1-year progress report: $14.3B Scale AI/Alexandr Wang poaching, data/RL supply chain ($1B+ ARR), 3,000 engineers on RL tasks, 5x 1GW+ Titan clusters (Hyperion 1.5GW world's largest single buildings), Tokenomics model projecting Meta surpasses OpenAI+Anthropic compute by end-2026. Updated sources, Key People (Alexandr Wang named).
+  - `events/grok-4-5-launch.md` — Added pricing position (~6x cheaper than Opus 4.8, ~3x cheaper than GPT-5.5) from Ben's Bites reference. Updated sources.
+  - `concepts/gpt/gpt-5-6.md` — Added AINews July 10 bulletin as source reference.
+
+**Decisions:**
+- 5-star entities/meta.md — SemiAnalysis Meta Superintelligence: genuine enrichment gap (existing page had 2-line placeholder)
+- 3-star events/grok-4-5-launch.md — Ben's Bites pricing reference: pricing comparison not in the launch event page
+- 3-star concepts/gpt/gpt-5-6.md — AINews source: page already comprehensive, added source reference only
+- 1-star Lenny's Podcast (Adam Mosseri) — Skip: social media strategy, not core AI/Agent tech
+- 1-star True Positive Weekly #169 — Skip: pure link digest
+- 1-star Beehiiv uid=348 (GPT-Live) — Skip: all URLs 403/Cloudflare, topic already covered
+
+**Sources:**
+- raw/newsletters/2026-07-09-the-future-of-meta-superintelligence-a-1-year-progress-update.md
+- raw/newsletters/2026-07-09-grok-x-cursor.md
+- raw/newsletters/2026-07-10-ainews-openai-launches-gpt-5-6-sol-terra-luna-codex-becomes-chatgpt-superapp.md
+
+---
+
 ## [2026-07-10] blog-ingest | GPT-5.6 GA, ChatGPT Work, Muse Spark 1.1, Sierra AI-pilling
 
 - **Source**: blog-ingest checkpoint (Jul 10 07:00 UTC) — 31 new articles, 11 saved, 9 unsaved

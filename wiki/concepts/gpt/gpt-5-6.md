@@ -15,6 +15,7 @@ sources:
   - raw/articles/simonwillison.net--2026-jun-26-openai--6923f6c5.md
   - raw/articles/simonwillison.net--2026-jul-9-gpt-5-6--b29dbe02.md
   - raw/articles/9to5mac.com--2026-07-09-openai-announcing-the-next-chapter-for-chatgpt-to--a8f56e74.md
+  - raw/newsletters/2026-07-10-ainews-openai-launches-gpt-5-6-sol-terra-luna-codex-becomes-chatgpt-superapp.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)

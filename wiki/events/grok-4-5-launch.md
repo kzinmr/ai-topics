@@ -1,7 +1,7 @@
 ---
 title: "SpaceXAI Launches Grok 4.5 — First Opus-Class Coding & Agents Model"
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-10
 type: event
 tags:
   - xai
@@ -11,6 +11,7 @@ tags:
   - spacex
 sources:
   - raw/newsletters/2026-07-09-ainews-spacexai-launches-grok-4-5-first-opus-class-model-post-cursor-acquisition.md
+  - raw/newsletters/2026-07-09-grok-x-cursor.md
 ---
 
 # Event: SpaceXAI Launches Grok 4.5
@@ -28,6 +29,7 @@ Grok 4.5 is [[entities/xai|xAI/xAI]]'s first model built specifically for coding
 - **First model trained specifically for coding and agents**, co-trained with [[concepts/spacex-cursor-acquisition|Cursor]]
 - **Positioned on capability-per-dollar** rather than absolute benchmark supremacy — a deliberate pricing strategy
 - **Elon Musk**: "Opus-class, but faster, more token-efficient, and lower cost"
+- **Pricing position**: ~6x cheaper than Claude Opus 4.8, ~3x cheaper than GPT-5.5, reinforcing the capability-per-dollar strategy (per Ben's Bites, Jul 2026)
 - **Available in Cursor** with double usage for first week
 - **Grok 4.5 and Cursor Composer 2.5** are different model weight classes — Grok 4.5 is a new model, not a rebranding of Composer
 - **Supported immediately** by [[entities/hermes-agent|Hermes Agent]] and [[entities/openrouter|OpenRouter]]
@@ -41,3 +43,4 @@ Grok 4.5 is positioned to compete directly with [[entities/claude-code|Claude Co
 ## Source
 
 - AINews (swyx) newsletter, July 9, 2026
+- Ben's Bites newsletter, July 9, 2026

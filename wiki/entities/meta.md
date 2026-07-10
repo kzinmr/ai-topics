@@ -2,7 +2,7 @@
 title: Meta
 type: entity
 created: 2026-04-09
-updated: 2026-07-05
+updated: 2026-07-10
 tags:
   - company
   - model
@@ -11,7 +11,9 @@ tags:
 aliases:
   - Meta Platforms Inc
   - Facebook
-sources: []
+sources:
+  - raw/newsletters/2026-07-09-the-future-of-meta-superintelligence-a-1-year-progress-update.md
+  - [The Future of Meta Superintelligence: A 1 Year Progress Update (SemiAnalysis, Jul 2026)](https://open.substack.com/pub/semianalysis/p/the-future-of-meta-superintelligence)
 ---
 
 # Meta
@@ -51,9 +53,50 @@ The glasses are positioned as Meta's "primary computing device" for personal AI 
 
 Meta's strategy to enable AI agents to handle product discovery and purchasing on Instagram and WhatsApp. Leverages Meta's social data (interests, purchase history, social connections) for personalized recommendations.
 
-### Superintelligence Labs
+### Superintelligence Labs (MSL)
 
-Led by  (former Scale AI CEO, hired 2025). Focus on building AGI infrastructure. Reported $115B-$135B capital expenditure for 2026, primarily for AI compute. VR/Reality Labs investment reportedly being redirected toward AI glasses and superintelligence infrastructure.
+Led by **Alexandr Wang** (former Scale AI CEO/co-founder, hired 2025). Focus on building AGI infrastructure. Reported $115B-$135B capital expenditure for 2026, primarily for AI compute. VR/Reality Labs investment reportedly being redirected toward AI glasses and superintelligence infrastructure.
+
+#### 1-Year Progress Update (SemiAnalysis, July 2026)
+
+One year after the disastrous Llama 4 release (July 2025), SemiAnalysis published a detailed progress report on MSL's reconstruction. Key developments:
+
+**Talent & Team Reconstruction**
+- Meta struck a $14.3B "investment" deal with Scale AI specifically to poach **Alexandr Wang** and the best members of Scale AI's Safety, Evaluations, and Alignment Labs (SEAL) team
+- Multi-hundred-million-dollar (sometimes $1B+) pay packages offered to top AI researchers/engineers
+- The rebuild was a full organizational restructuring, not incremental hiring — MSL effectively rebuilt from the ground up
+
+**Data Advantage — Human Data/RL Supply Chain**
+- Meta recognized RL as the most important scaling law for improving AI capabilities
+- The human data market has exploded: incumbents **Mercor**, **Surge**, and **Handshake** are all at **$1B+ ARR**; new entrants (Fleet, Mechanize, Afterquery) at ~$100M ARR
+- Meta created an internal RL task force: **~3,000 engineers** (70% of new grads + significant seniors) reassigned to full-time RL task/environment creation
+- This is an **underappreciated advantage**: Anthropic's coding prowess is largely due to aggressive RL data purchasing; Meta's internal scale rivals Mercor's 2.5M+ expert hours/quarter
+- Meta's employee screen/keyboard tracking program (see [[concepts/agent-transformation-accelerator]]) is described as "some of the most valuable data in the world" — providing real recordings of white-collar work for RL task creation
+- Unlike competitors who must partner with banks/law firms for workflow recordings, Meta has these industries represented in-house
+
+**Compute — Most Aggressive Ramp Ever Seen**
+- Meta is simultaneously building **5 1GW+ "Titan" clusters**:
+  - **Prometheus** (Ohio)
+  - **Hyperion** (Louisiana) — world's largest single buildings at 400MW each, 1.5GW total under construction
+  - **Unnamed campuses** in El Paso, Texas; Iowa; Indiana
+- SemiAnalysis Tokenomics Model projects Meta will **surpass both OpenAI and Anthropic in AI compute by end of 2026**
+- Zuck's willingness to run free cash flow negative allows more aggressive buildout than Google (which has a cloud business to balance)
+- Meta's balance sheet as a hyperscaler allows this spend without external funding dependence
+
+**Model Position**
+- Muse Spark (April 2026 debut) was a relative regression: lagged DeepSeek v4 Pro and Kimi K2.6 despite being closed-source
+- However, SemiAnalysis argues the **slope matters more than the intercept** — the rebuild required paying down organizational debt
+- MSL is uniquely positioned across all three prerequisites (data, talent, compute) — the only hyperscaler/neolab on track to be world-class at all three simultaneously
+- RL is considered by many AI insiders (incl. Anthropic's Sholto Douglas) to be sufficient to automate white-collar work "provided you have enough of the right kinds of data"
+
+**Competitive Landscape**
+- SemiAnalysis frames frontier AI as a **two-horse race** (OpenAI vs Anthropic), with Meta as the most credible third contender
+- Google: brief Gemini 3 Pro moment but "faded dramatically"; 3.5 Flash described as "benchmaxxed prop" performing far worse than GPT-5.5/Opus 4.8 in real-world scenarios
+- Microsoft: "completely blown their early lead" with GitHub Copilot
+- Chinese labs: "simply too compute poor to truly reach the frontier"
+- SpaceXAI: primarily a GPU supplier ($26B/year selling to Anthropic/Google), not a frontier contender
+
+**Source**: SemiAnalysis, "The Future of Meta Superintelligence: A 1 Year Progress Update" (July 9, 2026)
 
 ### Instagram AI Search
 
@@ -137,7 +180,7 @@ This development represents a significant reversal from Meta's historical positi
 ## Key People
 
 - **[[concepts/mark-zuckerberg]]** — CEO, Personal Superintelligence vision
-- **** — Superintelligence Labs head
+- **[[entities/alexandr-wang|Alexandr Wang]]** — Superintelligence Labs head
 - **Andrew Bosworth** — CTO, Reality Labs/AR/VR
 - **Yann LeCun** — Chief AI Scientist, open-source advocate (increasingly sidelined per community reports)
 
