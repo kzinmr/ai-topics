@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-07-08
+updated: 2026-07-10
 tags:
   - entity
   - company
@@ -24,6 +24,7 @@ sources:
   - raw/articles/2026-06-27_fireworks-ai_Cursor-Composer-2.md
   - raw/articles/2026-07-01_fireworks-ai_glm-5p2-fast.md
   - raw/articles/2026-07-08_fireworks-ai_glm5p2-fast-an-engineering-productivity-story.md
+  - raw/articles/2026-07-10_fireworks-ai_gumloop.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -96,6 +97,27 @@ By May 2026, Fireworks AI had reached **decacorn status** ($10B+ valuation), joi
 - **OpenSymphony** multi-agent orchestration system deployed on Fireworks
 
 The case study also includes comparisons to [[entities/cerebras-systems]] and [[entities/openrouter]] for enterprise inference workloads, positioning Fireworks as competitive across both throughput and cost dimensions.
+
+### Gumloop — Open-Weight Models for Production Agents (July 2026)
+
+**[[entities/gumloop]]** is an AI workflow automation platform that helps teams build AI-powered agents for complex business tasks. As adoption grew, inference costs became a top concern — every additional workflow meant more model calls and higher inference spend.
+
+Gumloop tested open-weight models internally with their company-wide assistant agent, which employees use to access company data and answer questions. Previous attempts to move this agent from frontier models to open-weight alternatives had failed — employees noticed the difference immediately, and the team reverted to Opus.
+
+**That changed with GLM-5.2 on Fireworks AI.** When Gumloop moved its internal agent from Opus 4.8 to GLM-5.2, nobody noticed the difference. The outputs remained consistent, giving the team confidence to make open-weight models a recommended production option.
+
+> *"When we moved this agent from Opus 4.8 to GLM-5.2, nobody noticed a difference in the experience. The outputs were consistent with what we expected, which gave us the confidence to make GLM-5.2 a recommended model option."*
+> — Gonzalo Soto Mallqui, Chief Product Officer, Gumloop
+
+**Key results:**
+- **72% cost savings** after moving the internal production agent from Opus 4.8 to GLM-5.2
+- **7x growth** in agent chats running on open-weight models in three weeks
+- **Reliability** was the deciding factor for choosing Fireworks over other inference providers
+- Open-weight models became a **first-class option** in Gumloop's platform for extraction, classification, routing, summarization, and workflow automation
+
+After optimizing its agent harness for open-weight models and partnering with Fireworks for inference, Gumloop validated a broader shift: open-weight models have reached production parity with frontier models for agent workloads, at radically lower cost.
+
+**Source:** [[raw/articles/2026-07-10_fireworks-ai_gumloop]]
 
 ### Cursor Composer 2 Partnership (June 2026)
 

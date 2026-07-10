@@ -1,3 +1,10 @@
+## [2026-07-10] dreaming | Reference enrichment — Gumloop case study to Fireworks AI
+
+- **`entities/fireworks-ai.md`** — Added Gumloop case study section: GLM-5.2 replaced Opus 4.8 (nobody noticed), 72% cost savings, 7x growth in open-weight model agent chats in 3 weeks, reliability as Fireworks differentiator. Updated `updated` to 2026-07-10 and added source.
+- raw/articles/2026-07-10_fireworks-ai_gumloop.md
+
+---
+
 ## [2026-07-10] health-fix | index repair — orphan registration + section counts
 
 ### Changes
