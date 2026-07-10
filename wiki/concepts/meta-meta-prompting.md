@@ -3,6 +3,7 @@ title: "Meta-Meta-Prompting"
 aliases: ["Fat Skills Fat Code Thin Harness", "Personal AI OS", "Compound AI System"]
 type: concept
 created: 2026-05-11
+updated: 2026-07-10
 tags:
   - agentic-engineering
   - harness-engineering

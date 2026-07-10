@@ -7,12 +7,12 @@ aliases:
   - local-first software
   - local-first sync
 tags:
-sources: []
   - architecture
   - web-development
   - optimization
   - developer-tooling
-
+sources: []
+updated: 2026-07-10
 ---
 
 # Local-First Architecture

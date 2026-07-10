@@ -15,9 +15,8 @@ sources: []
   - search
   - infrastructure
   - security
-
+updated: 2026-07-10
 ---
-
 # Parallel Web Systems Inc.
 
 **Infrastructure for intelligence on the web.** Develops a suite of agent and tool APIs for building AI with powerful access to the open web.

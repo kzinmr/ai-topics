@@ -13,8 +13,8 @@ source: https://parallel.ai/articles/bing-api-comparison
 aliases: [bing-api-alternatives, bing-search-api-replacement]
 related_entities: [parallel-web-systems, exa-ai, serpapi, tavily]
 related_concepts: [web-search-api, search-api-freshness]
+updated: 2026-07-10
 ---
-
 # Bing Search API Alternatives — 2026 Comparison
 
 ## Context

@@ -1,6 +1,7 @@
 ---
 title: "Comparison: Claude Mythos Preview vs Claude Mythos 5 & Fable 5 System Cards"
 created: 2026-06-10
+updated: 2026-07-10
 type: comparison
 tags:
   - anthropic

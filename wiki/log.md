@@ -1,3 +1,43 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-07-10] watchdog | auto-fix: log header, updated dates (6 files)
+
+### Changes
+- **Fixed log.md header burial** — header was at line 409; moved to top, all orphaned entries relocated below header
+- **Added updated: 2026-07-10** to 6 pages missing the field:
+  - entities/parallel-web-systems.md
+  - concepts/local-first-architecture.md
+  - concepts/meta-meta-prompting.md
+  - comparisons/claude-mythos-preview-vs-mythos5-fable5.md
+  - comparisons/bing-api-alternatives-2026.md
+  - comparisons/google-alerts-alternatives-2026.md
+
+### Live verification summary
+| Metric | Status |
+|--------|--------|
+| Index structural health | Clean (2758 lines) |
+| Pipe prefix corruption | 0 |
+| Triple bracket corruption | 0 |
+| Line-number corruption | 0 |
+| Log header position | At line 1 |
+| Log pipe corruption | 0 |
+| Ghost entries (stale index) | 0 |
+| Index coverage gap | 4 |
+| Missing updated | 0 |
+| Missing sources | 0 |
+| Missing type | 0 |
+| Missing created | 23 (needs attention) |
+| Entity duplicates | 6 pairs (needs attention) |
+| Concept duplicates | 4 pairs (needs attention) |
+
+### Escalations
+- **23 pages missing created:** -- exceeds auto-fix threshold (9). Needs batch pass with git-log date lookup.
+- **10 duplicate groups** -- 6 entity pairs, 4 concept pairs. Documented in graph analysis report. Needs dedicated dedup pass.
+
+---
+
 ## [2026-07-10] weekly wiki-graph-analysis | graph health + person×concept analysis
 
 **Scripts**: `scripts/wiki_graph_analysis_weekly.py` + `scripts/wiki_graph.py`
@@ -406,9 +446,7 @@ Sources: HN Algolia API, X/Twitter xurl search, arXiv, Anthropic Research, LTT L
 - **Enriched** [[entities/david-fowler]] — From 48-line L2 stub to 152-line comprehensive entity page. Added: Quick Facts table (146K followers, 15+ year MSFT career, Barbadian background), detailed Key Projects (SignalR creator, NuGet co-creator, ASP.NET Core architect, Aspire technical lead, Tally), AI & Aspire Philosophy (Speed is Not the Product, Intent vs Mechanics, Agent-Ready Infrastructure), Medium Blog Posts table (7 articles), Career Timeline, Philosophy & Engineering Principles table, and Sources.
 - Updated index.md entries with descriptive summaries for both entities.
 
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
+---
 
 ## [2026-07-06 18:15 UTC] dreaming-wiki-ingest | Claude Code Session Cache Leakage — new concept page
 - **Created** [[concepts/claude-code/claude-code-session-cache-leakage]] — Claude Code Enterprise ZDR workspace session cache cross-account leakage (Jul 4, 2026). Sonnet 5 cache miss after 5+ minutes injected unrelated Minecraft temple content from another account. 313 HN pts, 132 comments. Distinct incident from [[concepts/claude-code/claude-code-leak]] (March npm supply-chain leak). Cross-platform (CLI + Mobile), confirmed not local. Updated `index.md`.
