@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-07-10T18:15:38.876094+00:00",
+  "triage_run_id": "20260710T180017Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming飽和シナリオ(total_articles=1, 非AI)。Filesystem scanで154件のraw articlesから6件を精査。Sierra AI-pilling(Pinecone/MCP Gateway詳細)とFireworks×Gumloop(72%コスト削減事例)を参照判定。4件はスキップ(薄いコンテンツ・既存カバー済み)。active-crawlが本日4件の新規wikiページ作成済み(fable-safety-critique, databricks-benchmark, robostral-navigate, rowboat)。前回triage(07/09)は全てconsumed済み。",
+  "decisions": [
+    {
+      "item_id": "dreaming-fs-fireworks-gumloop",
+      "source": "dreaming",
+      "source_name": "Fireworks AI Blog",
+      "title": "Gumloop: How Fireworks AI helps open models power production agents",
+      "url": "https://fireworks.ai/blog/gumloop",
+      "raw_path": "raw/articles/2026-07-10_fireworks-ai_gumloop.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Fireworks AIのGumloop導入事例。GLM-5.2でOpus 4.8を置き換え、72%コスト削減+体感差なし。agent harness最適化、7x成長。具体的なメトリクスはentities/fireworks-ai.mdのエンリッチメント候補。",
+      "candidate_wiki_path": "entities/fireworks-ai",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-elevenlabs-spotlight",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "ElevenAgents Spotlight - continuously improve agents",
+      "url": "https://elevenlabs.io/blog/introducing-elevenagents-spotlight",
+      "raw_path": "raw/articles/2026-07-10_elevenlabs_introducing-elevenagents-spotlight.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ElevenAgents Spotlight機能紹介。記事は4KBだが大部分がnavigation chromeで本文が薄い。entities/elevenlabs.mdにFlows/Procedures/Evaluationが既にカバー済み。具体的な新機能詳細が不足。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-elevenlabs-alpha-bank",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "Alpha Bank expands its collaboration with ElevenLabs",
+      "url": "https://elevenlabs.io/blog/alpha-bank",
+      "raw_path": "raw/articles/2026-07-10_elevenlabs_alpha-bank.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Alpha Bank×ElevenLabsのカスタマーストーリー。2.4KBと薄く、音声エージェントの銀行CX向け標準事例。entities/elevenlabs.mdのエンリッチメント価値は低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-harvey-gpt56",
+      "source": "dreaming",
+      "source_name": "Harvey Blog",
+      "title": "GPT-5.6 Sol, Now Live in Harvey",
+      "url": "https://www.harvey.ai/blog/gpt-5-6-sol-in-harvey",
+      "raw_path": "raw/articles/2026-07-10_harvey_gpt-5-6-sol-in-harvey.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ HarveyのGPT-5.6 SOL導入アナウンス。記事は7.5KBだが大部分がnavigation chrome。concepts/gpt/gpt-5-6.mdでGPT-5.6の詳細は既にカバー済み。Harvey特有の具体的な活用事例データが不足。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-9to5mac-chatgpt-work",
+      "source": "dreaming",
+      "source_name": "9to5Mac",
+      "title": "OpenAI announcing the next chapter for ChatGPT to become everything app",
+      "url": "https://9to5mac.com/2026/07/09/openai-announcing-the-next-chapter-for-chatgpt-to/",
+      "raw_path": "raw/articles/9to5mac.com--2026-07-09-openai-announcing-the-next-chapter-for-chatgpt-to--a8f56e74.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ GPT-5.6 Sol発売の詳細レポート(価格: Sol=$5/$30, Terra=$2.50/$15, Luna=$1/$6、ChatGPT Work、Codex統合)。しかしblog-ingest+newsletter-wiki-ingestでconcepts/gpt/gpt-5-6.mdが同日更新済み。重複回避のためスキップ。",
+      "candidate_wiki_path": "concepts/gpt/gpt-5-6",
+      "body_excerpt": ""
+    }
+  ]
+}
