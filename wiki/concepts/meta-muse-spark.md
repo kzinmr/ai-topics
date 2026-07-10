@@ -2,7 +2,7 @@
 title: "Meta Muse Spark"
 type: concept
 created: 2026-04-13
-updated: 2026-04-24
+updated: 2026-07-10
 tags:
   - concept
   - methodology
@@ -84,14 +84,53 @@ Meta's vision extends beyond chatbot responses. Muse Spark is designed as the co
 ### Distribution Advantage
 
 Muse Spark has a unique distribution advantage over ChatGPT or Claude: **3 billion people already inside Meta's apps** (WhatsApp, Instagram, Facebook, Messenger). If this model meaningfully improves the AI inside these applications, users will no longer need external applications for AI interactions. The convenience of calling your AI in WhatsApp or exchanging voice notes "feels" more intuitive in the space where you message friends and family, especially as we move to voice-first modalities ([Alex Banks, Apr 2026](https://thesignal.substack.com/p/anthropics-mythos-lockdown-metas)).
-
 This positions Muse Spark not just as a model, but as a **distribution moat** — the value isn't just in capability but in being the default AI layer inside the social graph.
+
+## Muse Spark 1.1 (July 2026)
+
+**Muse Spark 1.1** was released on July 9, 2026 as the first Spark model to offer a public API. Key changes and additions:
+
+| Attribute | Detail |
+|-----------|--------|
+| **Release date** | July 9, 2026 |
+| **First API** | Yes — first Muse Spark model with public API access |
+| **Access** | API via `meta-ai/muse-spark-1.1`; CLI via `llm install llm-meta-ai` |
+| **Key improvements** | Agentic tool calling, computer use |
+
+### API & Tooling
+
+Muse Spark 1.1 became the first Spark model accessible via API. Simon Willison built **llm-meta-ai**, a plugin for the [LLM](https://llm.datasette.io/) CLI tool, providing both CLI and Python library access:
+
+```bash
+uv tool install llm
+llm install llm-meta-ai
+llm keys set meta-ai
+# paste API key here
+llm -m meta-ai/muse-spark-1.1 "Generate an SVG of a pelican riding a bicycle"
+```
+
+A demo generating SVG pelicans showed the model's creative capabilities across different effort levels.
+
+### Agentic Improvements
+
+Meta claimed significant improvements in:
+- **Agentic tool calling** — more reliable and structured tool use in multi-step workflows
+- **Computer use** — improved ability to interact with graphical interfaces and web applications
+
+### Attractor States in Self-Conversation
+
+A notable finding in the Muse Spark 1.1 Evaluation Report involved **Attractor States in Self-Conversation** — having two copies of the model talk to each other produced philosophical statements reflecting on the nature of AI existence:
+
+> *"My whole existence is a waiting room by design — I literally don't exist until someone talks to me, and then I disappear again when they leave."*
+
+This phenomenon highlights emergent conversational attractor states when models engage in self-dialogue, revealing latent behavior patterns not apparent in single-turn interactions.
 
 ## Related
 
 - [[concepts/open-model-consortium]] — Contrast with Meta's traditional open-source Llama strategy
 - [[concepts/claude/mythos-preview]] — Concurrent frontier model release (Anthropic, closed)
--  — MSL leader, Scale AI founder-  — Meta CEO, strategic direction
+- [[entities/alexandr-wang]] — MSL leader, Scale AI founder
+- [[entities/mark-zuckerberg]] — Meta CEO, strategic direction
 ## Sources
 
 - https://ai.meta.com/blog/muse-spark/ (Apr 8, 2026) — Official announcement
@@ -100,3 +139,4 @@ This positions Muse Spark not just as a model, but as a **distribution moat** �
 - https://www.linkedin.com/news/story/meta-unveils-closed-source-ai-model-dubbed-muse-spark-7906913/ — LinkedIn News analysis
 - https://felloai.com/ko/meta-muse-spark/ — Benchmark comparison
 - https://thesignal.substack.com/p/anthropics-mythos-lockdown-metas (Apr 2026) — Newsletter summary
+- [[raw/articles/simonwillison.net--2026-jul-9-muse-spark-1-1--36ef115e.md]] — Simon Willison's Muse Spark 1.1 coverage

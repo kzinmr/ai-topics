@@ -550,3 +550,19 @@ Source: [[raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af
 **Kenton Varda** (July 8, 2026): Simon linked to Kenton Varda's writing, continuing his coverage of influential technical voices in the AI ecosystem.
 
 Source: [[raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md]]
+
+**GPT-5.6 Luna / Terra / Sol — Hands-On Assessment** (July 9, 2026): Simon published a detailed hands-on evaluation of OpenAI's GPT-5.6 family. Key findings:
+- **Pricing**: Luna $1/$6, Terra $2.50/$15, Sol $5/$30 per 1M tokens (input/output)
+- **Knowledge cutoff**: February 16, 2026; **1M token context**, **128K max output tokens**
+- **Benchmark skepticism**: Agents' Last Exam — GPT-5.6 Sol scored **53.6** vs Claude Fable 5's 40.5 (+13.1 points). But on SWE-Bench Pro, Fable 5 got **80%** vs Sol's **64.6%** — OpenAI itself published an audit claiming ~30% of SWE-Bench Pro tasks are "broken"
+- **Simon's assessment**: GPT-5.6 Sol is "definitely very competent" but hasn't struck him as better than Fable at complex coding tasks
+- **New API features**: Programmatic Tool Calling (compose JS to orchestrate tool calls), Multi-agent (sub-agents baked into API), Prompt cache breakpoints, `detail: original` on images
+- **Cost per Pelican**: From 0.71 cents (Luna, effort none) to 48.55 cents (Sol, max reasoning)
+
+Source: [[raw/articles/simonwillison.net--2026-jul-9-gpt-5-6--b29dbe02.md]]
+
+**Introducing Muse Spark 1.1 — First API-Released Spark Model** (July 9, 2026): Simon covered Meta's Muse Spark 1.1 release, the first Spark model to offer public API access. He built **llm-meta-ai**, a new plugin for the LLM CLI tool providing CLI (and Python library) access to the model. Key features: agentic tool calling improvements, computer use, and a notable "Attractor States in Self-Conversation" finding where two copies of the model produced philosophical statements about AI existence.
+- CLI: `uv tool install llm && llm install llm-meta-ai && llm -m meta-ai/muse-spark-1.1 "Generate SVG of pelican"`
+- See [[concepts/meta-muse-spark#Muse Spark 1.1 (July 2026)]] for details
+
+Source: [[raw/articles/simonwillison.net--2026-jul-9-muse-spark-1-1--36ef115e.md]]
