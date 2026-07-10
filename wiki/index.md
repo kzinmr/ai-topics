@@ -2749,9 +2749,10 @@
 - [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk Trial Verdict (May 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (4 pages)
+## Queries (5 pages)
 
 - [[queries/data-analysis-open-harness]] — データ分析に適したOpen Harnessはあるか？
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
-- [[queries/wiki-graph-analysis-weekly-2026-07-05]] — Weekly Wiki Graph Analysis — systematic analysis of orphan pages, broken wikilinks, duplicates, index gaps, oversized pages, and tag violations across all 2,205 wiki pages
+- [[queries/wiki-graph-analysis-weekly-2026-07-05]] — Weekly Wiki Graph Analysis (2026-07-05) — orphan pages, broken wikilinks, duplicates, index gaps across 2,205 wiki pages
+- [[queries/wiki-graph-analysis-weekly-2026-07-10]] — Weekly Wiki Graph Analysis (2026-07-10) — 2,201 pages analyzed; graph analysis of 187 persons × 1,781 concepts; cross-reference gap recommendations

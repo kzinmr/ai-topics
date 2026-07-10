@@ -1,3 +1,9 @@
+## [2026-07-10] weekly wiki-graph-analysis | graph health + person×concept analysis
+
+**Scripts**: `scripts/wiki_graph_analysis_weekly.py` + `scripts/wiki_graph.py`
+
+**Summary**: 2,201 pages scanned. 38 orphans, 4,274 broken links (616 fewer than last week), 14 duplicate groups (25 fewer), 2 index gaps (1,992 fewer), 0 tag violations. Person×concept graph: 187 persons × 1,781 concepts — 15 cross-reference gaps identified. Full report: [[queries/wiki-graph-analysis-weekly-2026-07-10]].
+
 ## [2026-07-10] active-crawl | 4 new pages from trending topics
 
 **Sources**: HN Algolia trending (Jul 7-10) + X/Twitter search + wiki gap analysis + blogwatcher DB
