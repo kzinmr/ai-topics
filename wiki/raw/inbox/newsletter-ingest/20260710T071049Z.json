@@ -1,0 +1,97 @@
+{
+  "run_id": "20260710T071049Z",
+  "triaged_at": "2026-07-10T07:20:00Z",
+  "processed_count": 6,
+  "summary": "6 newsletters ingested. 2 critical (GPT-5.6 launch, Grok×Cursor), 2 high (Meta superintelligence, GPT-Live), 2 low (Mosseri authenticity, generic weekly roundup). Most topics already have wiki pages — downstream wiki-ingest should focus on enriching existing pages with new source links rather than creating new ones.",
+  "newsletters": [
+    {
+      "message_id": "<20260709123221.3.933fabec187b05ff@mg-d1.substack.com>",
+      "subject": "Adam Mosseri: AI is a tailwind for authenticity",
+      "date": "2026-07-09",
+      "source": "Lenny's Newsletter (pub_id=10845)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-09-adam-mosseri-ai-is-a-tailwind-for-authenticity.md",
+      "classification": "low",
+      "wiki_relevance": "Peripheral — Adam Mosseri (Instagram head) discussing AI's impact on content authenticity. Tangential to core LLM/agent wiki scope. Could be relevant if deepening a page on AI-generated content or social media AI policies, but not a priority.",
+      "suggested_action": "skip",
+      "existing_pages": [],
+      "notes": "Most links are substack redirect/play-card duplicates. Single podcast episode with no primary article URL extractable from the link structure."
+    },
+    {
+      "message_id": "<20260709130245.3.9b8c80ea2c47a561@mg-d0.substack.com>",
+      "subject": "Grok x Cursor",
+      "date": "2026-07-09",
+      "source": "Ben's Bites (pub_id=4379299)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-09-grok-x-cursor.md",
+      "classification": "critical",
+      "wiki_relevance": "Direct intersection of two tracked entities — Grok (xAI) and Cursor AI. Signals deepening xAI↔editor integration, which is a major trend in AI coding agents.",
+      "suggested_action": "enrich",
+      "primary_url": "https://open.substack.com/pub/bensbites/p/grok-x-cursor",
+      "existing_pages": [
+        {"path": "entities/cursor-ai", "action": "update"},
+        {"path": "entities/grok-4-3", "action": "check"},
+        {"path": "entities/grok-build", "action": "check"}
+      ],
+      "notes": "Ben's Bites article. Should enrich cursor-ai page with Grok integration details if not already captured. May also warrant updating grok entity pages."
+    },
+    {
+      "message_id": "<20260709.155717.637ec8e5@mta37>",
+      "subject": "🎙️ GPT-Live Changes How We Talk to AI",
+      "date": "2026-07-09",
+      "source": "Beehiiv newsletter (unknown source)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-09-gpt-live-changes-how-we-talk-to-ai.md",
+      "classification": "high",
+      "wiki_relevance": "GPT-Live (full-duplex voice interaction) already has a wiki concept page. This article likely provides additional coverage or analysis of the feature's impact on human-AI interaction patterns.",
+      "suggested_action": "enrich",
+      "existing_pages": [
+        {"path": "concepts/gpt-live", "action": "update"}
+      ],
+      "notes": "Beehiiv tracking links — actual article URLs need resolution. All links are beehiiv redirect wrappers with no readable destination."
+    },
+    {
+      "message_id": "<20260709191614.3.902fb04a6d161c70@mg2.substack.com>",
+      "subject": "The Future of Meta Superintelligence: A 1 Year Progress Update",
+      "date": "2026-07-09",
+      "source": "SemiAnalysis (pub_id=6349492)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-09-the-future-of-meta-superintelligence-a-1-year-progress-update.md",
+      "classification": "critical",
+      "wiki_relevance": "SemiAnalysis deep-dive on Meta's superintelligence research progress over 1 year. Directly relevant to existing entities (Meta AI strategy, superintelligence concept pages). SemiAnalysis is a tracked entity. This is premium analysis content worth documenting.",
+      "suggested_action": "enrich",
+      "primary_url": "https://open.substack.com/pub/semianalysis/p/the-future-of-meta-superintelligence",
+      "existing_pages": [
+        {"path": "entities/semianalysis", "action": "update"},
+        {"path": "entities/recursive-superintelligence", "action": "check"}
+      ],
+      "notes": "SemiAnalysis is premium content — raw article scrape may be paywalled. Still worth recording as a source. May inform Meta AI entity or superintelligence concept pages. Links to @mlkan, @julienmartinprin, @jeremieeliahouontiveros suggest co-authors/acknowledged contributors."
+    },
+    {
+      "message_id": "<20260709212257.3.1a1e90516c24c5da@mg-d0.substack.com>",
+      "subject": "True Positive Weekly #169",
+      "date": "2026-07-09",
+      "source": "AI Weekly (pub_id=61455)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-09-true-positive-weekly-169.md",
+      "classification": "low",
+      "wiki_relevance": "Generic AI weekly roundup. Without resolving the redirect links, cannot determine specific topics. Likely aggregates news already covered by other sources in this batch.",
+      "suggested_action": "skip",
+      "primary_url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-169",
+      "existing_pages": [],
+      "notes": "AI Weekly roundup — may contain links to articles already ingested via other channels. Low priority for wiki creation but worth skimming if downstream pipeline has capacity."
+    },
+    {
+      "message_id": "<20260710061940.3.af19a6ba70e20c71@mg-d0.substack.com>",
+      "subject": "[AINews] OpenAI launches GPT 5.6 Sol/Terra/Luna, Codex becomes ChatGPT superapp",
+      "date": "2026-07-10",
+      "source": "swyx / Latent Space (pub_id=1084089)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-10-ainews-openai-launches-gpt-5-6-sol-terra-luna-codex-becomes-chatgpt-superapp.md",
+      "classification": "critical",
+      "wiki_relevance": "Major OpenAI product launch: GPT-5.6 GA with Sol/Terra/Luna variants, Codex merged into ChatGPT superapp. OpenAI entity page already tracks this launch. swyx/Latent Space is a key AI news source. This article provides the AINews community roundup perspective on the launch.",
+      "suggested_action": "enrich",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-openai-launches-gpt-56-solterraluna",
+      "existing_pages": [
+        {"path": "entities/openai", "action": "update"},
+        {"path": "entities/openai-codex", "action": "update"},
+        {"path": "concepts/codex/codex-superapp", "action": "update"}
+      ],
+      "notes": "swyx's AINews. OpenAI entity already notes 'GPT-5.6 GA (Sol/Terra/Luna), Codex merged into ChatGPT desktop'. This article adds the Latent Space / AINews community analysis angle. Should be added as a source to existing pages."
+    }
+  ]
+}
