@@ -2,10 +2,11 @@
 title: "Alex Banks"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-27
+updated: 2026-07-11
 type: entity
 sources:
   - raw/newsletters/2026-06-26-you-re-underestimating-ai-on-purpose.md
+  - raw/newsletters/2026-07-10-ai-is-quietly-thinking-for-us.md
 ---
 
 
@@ -92,6 +93,16 @@ Banks has been an early advocate for moving beyond one-off prompts to persistent
 In a June 2026 essay, Banks explored the **AI Perception Paradox** — the tendency to stop noticing AI tools once they start working reliably. Drawing on Amara's Law and the AI Effect, he argues that the most impactful AI tools are those that have become so dependable they fade into the background of daily work. This perceptual bias — where capabilities that would have stopped you in your tracks two years ago now slip past without a second thought — creates a systematic underestimation of actual AI progress.
 
 Source: [The Signal — You're Underestimating AI on Purpose](https://open.substack.com/pub/thesignal/p/youre-underestimating-ai-on-purpose) (June 26, 2026)
+
+### AI Is Quietly Thinking for Us (Jul 2026)
+
+In a July 2026 essay, Banks explored the **Cognitive Atrophy Paradox** — the gradual erosion of human judgment through AI dependence. Drawing on a McGill University (2020) study on habitual GPS use (regular GPS users showed reduced spatial memory and direction-finding ability), he argues that AI tools are not just replacing typing or handwriting but the very act of deciding:
+
+> "Every time Claude goes down, even for an hour, I feel a bit lost. There's the obvious irritation... What's easy to miss is that we didn't just hand over the typing. One shortcut at a time, the deciding went too. ... Heavy use comes first, and the decline then follows. The tool is covertly building the weakness in people who never had it."
+
+The essay serves as a companion piece to his June 2026 "You're Underestimating AI on Purpose" — while that essay argued we *stop noticing* AI progress, this one argues that the unnoticed progress is *actively diminishing* a skill (judgment) that we don't realize we're losing until we need it.
+
+Source: [The Signal — AI Is Quietly Thinking for Us](https://thesignal.substack.com/p/ai-is-quietly-thinking-for-us) (July 10, 2026)
 
 ### People Over Technology
 

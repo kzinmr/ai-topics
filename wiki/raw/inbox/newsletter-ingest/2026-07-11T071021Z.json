@@ -1,0 +1,104 @@
+{
+  "run_id": "20260711T071021Z",
+  "triaged_at": "2026-07-11T07:10:21+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 4,
+  "classifications": {
+    "critical": [
+      {
+        "message_id": "<ZElPg-H9Q1ifsQ9Um9AyQg@geopod-ismtpd-9>",
+        "subject": "☀️ The Sun Rises: GPT-5.6 and the Week That Changed AI",
+        "date": "2026-07-10",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-10-the-sun-rises-gpt-5-6-and-the-week-that-changed-ai.md",
+        "article_count": 20,
+        "reason": "Beehiiv newsletter explicitly covering GPT-5.6 GA week. 20 links (tracking URLs) likely cover GPT-5.6 family details, benchmarks, industry reactions. Matches existing wiki concept page concepts/gpt/gpt-5-6.md. May contain additional GA-week details not yet captured.",
+        "source_newsletter": "unknown (beehiiv tracking URLs)",
+        "action": "fetch_and_resolve_urls",
+        "wiki_targets": [
+          "Update: concepts/gpt/gpt-5-6.md — add any new GA-week details",
+          "Update: events/2026-07-09-openai-gpt-5-6-ga.md (if exists) or create",
+          "May touch: entities/openai.md"
+        ]
+      },
+      {
+        "message_id": "<20260710172302.3.c12d3302b9dd9470@mg2.substack.com>",
+        "subject": "The new GPT-5.6 family: Luna, Terra, Sol",
+        "date": "2026-07-10",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-10-the-new-gpt-5-6-family-luna-terra-sol.md",
+        "article_count": 20,
+        "reason": "Simon Willison (@simonw) Substack blog post on GPT-5.6 family. Simon is a well-established wiki entity (entities/simon-willison.md, L3 status). Article URL: https://open.substack.com/pub/simonw/p/the-new-gpt-56-family-luna-terra. Simon's blog posts are among the most reliable primary sources for model evaluations in the wiki.",
+        "source_newsletter": "Simon Willison's Weblog (simonw.substack.com)",
+        "author": "Simon Willison (@simonw)",
+        "action": "fetch_and_ingest",
+        "primary_url": "https://open.substack.com/pub/simonw/p/the-new-gpt-56-family-luna-terra",
+        "wiki_targets": [
+          "Update: entities/simon-willison.md — add this blog post to sources",
+          "Update: concepts/gpt/gpt-5-6.md — add Simon's latest GPT-5.6 analysis"
+        ]
+      }
+    ],
+    "high": [
+      {
+        "message_id": "<20260710132020.3.321430ec64481074@mg2.substack.com>",
+        "subject": "AI is quietly thinking for us",
+        "date": "2026-07-10",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-10-ai-is-quietly-thinking-for-us.md",
+        "article_count": 13,
+        "reason": "Substack article from Alex Banks (@alexbanks) on 'The Signal' (publication_id=293154). Title indicates AI philosophy/critique content — relevant to wiki's AI concepts scope. Author and publication are not yet tracked in wiki.",
+        "source_newsletter": "The Signal (thesignal.substack.com)",
+        "author": "Alex Banks (@alexbanks)",
+        "action": "fetch_and_ingest",
+        "primary_url": "https://open.substack.com/pub/thesignal/p/ai-is-quietly-thinking-for-us",
+        "wiki_targets": [
+          "Consider creating entity: entities/alex-banks.md",
+          "Consider creating entity: entities/the-signal-substack.md",
+          "Article may contribute to: concepts/ai-ethics/ or concepts/ai-impact/"
+        ]
+      }
+    ],
+    "low": [
+      {
+        "message_id": "<20260710.082233.5f2cc4e5@mta22>",
+        "subject": "We Launched a Product!",
+        "date": "2026-07-10",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-10-we-launched-a-product.md",
+        "article_count": 15,
+        "reason": "Generic product launch newsletter from beehiiv. All links are opaque tracking redirects with no visible article titles. Subject does not indicate AI/LLM relevance. URLs cannot be resolved to determine content without following redirects.",
+        "source_newsletter": "unknown (beehiiv, tracking URLs only)",
+        "action": "skip_for_now"
+      }
+    ],
+    "skip": []
+  },
+  "summary": "4 newsletters processed (1 AINews bulletin uid=351 already ingested in previous batch). 2 critical: GPT-5.6 GA week coverage from beehiiv newsletter + Simon Willison's GPT-5.6 family blog post. 1 high: AI philosophy article from The Signal / Alex Banks (new source). 1 low: generic product launch with unresolvable beehiiv URLs. Primary theme: GPT-5.6 GA week reactions and analysis. Action needed: resolve beehiiv tracking URLs for actual article content, fetch Simon Willison's and Alex Banks' articles.",
+  "wiki_actions": [
+    {
+      "priority": 1,
+      "action": "fetch_article",
+      "url": "https://open.substack.com/pub/simonw/p/the-new-gpt-56-family-luna-terra",
+      "save_to": "raw/articles/simonwillison.substack.com--2026-jul-10-gpt-5-6-family.md",
+      "update_pages": ["entities/simon-willison.md", "concepts/gpt/gpt-5-6.md"],
+      "notes": "Simon Willison's GPT-5.6 family overview. High-confidence enrich for existing pages."
+    },
+    {
+      "priority": 2,
+      "action": "fetch_article",
+      "url": "https://open.substack.com/pub/thesignal/p/ai-is-quietly-thinking-for-us",
+      "save_to": "raw/articles/thesignal.substack.com--2026-jul-10-ai-thinking.md",
+      "update_pages": ["consider entity creation for Alex Banks / The Signal"],
+      "notes": "AI philosophy/critique piece. New source not yet in wiki."
+    },
+    {
+      "priority": 3,
+      "action": "resolve_beehiiv_urls",
+      "source": "raw/newsletters/2026-07-10-the-sun-rises-gpt-5-6-and-the-week-that-changed-ai.md",
+      "notes": "20 beehiiv tracking URLs need resolution. Likely contain GPT-5.6 GA week articles from multiple sources."
+    },
+    {
+      "priority": 4,
+      "action": "resolve_beehiiv_urls",
+      "source": "raw/newsletters/2026-07-10-we-launched-a-product.md",
+      "notes": "15 beehiiv tracking URLs. Low priority — generic product launch may not be AI-relevant."
+    }
+  ]
+}

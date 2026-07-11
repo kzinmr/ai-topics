@@ -1,3 +1,15 @@
+## [2026-07-11] newsletter-wiki-ingest | Reference: Alex Banks — AI Is Quietly Thinking for Us
+
+### Updated Pages
+- **entities/alex-banks.md** — Added "AI Is Quietly Thinking for Us (Jul 2026)" section under Core Ideas: Cognitive Atrophy Paradox — McGill GPS study analogy for AI dependence eroding judgment. Companion piece to "You're Underestimating AI on Purpose" (Jun 2026). Added source reference.
+
+### Sources
+- raw/newsletters/2026-07-10-ai-is-quietly-thinking-for-us.md
+
+### Decisions
+- Takes: 0 | References: 1 | Skips: 34 (3 batch skip + 31 noise links)
+- Triage checkpoint recovered from file (upstream triage JSON parse failure).
+
 ## [2026-07-11] blog-triage | Wiki pages from blog ingest — Apple-OpenAI lawsuit, AI memory crisis, Thinking Machines Lab, LLM parameter counts
 
 ### New Pages

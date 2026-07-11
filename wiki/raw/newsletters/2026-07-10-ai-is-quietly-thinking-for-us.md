@@ -1,0 +1,66 @@
+---
+title: "AI is quietly thinking for us"
+date: 2026-07-10
+processed_at: 2026-07-11T07:10:17.561120+00:00
+source_label: "uid=353"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-07-10
+
+**Subject:** AI is quietly thinking for us
+**Collected:** 2026-07-11T07:10:17.561128+00:00
+**Articles linked:** 13
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpYmUmcj0yZmx4NiZuZXh0PWh0dHBzJTNBJTJGJTJGdGhlc2lnbmFsLnN1YnN0YWNrLmNvbSUyRnAlMkZhaS1pcy1xdWlldGx5LXRoaW5raW5nLWZvci11cyIsInAiOjIwNjQyNzU5NiwicyI6MjkzMTU0LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODM2ODk2NzAsImV4cCI6MjA5OTI2NTY3MCwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.V0arZWkS5uu0CAHJUgvcE14viuXTYVzH6yuT70LFZV4?
+
+## 2. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3AvYWktaXMtcXVpZXRseS10aGlua2luZy1mb3ItdXM_dXRtX2NhbXBhaWduPWVtYWlsLWhhbGYtcG9zdCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNRFkwTWpjMU9UWXNJbWxoZENJNk1UYzRNelk0T1RZM01Dd2laWGh3SWpveE56ZzJNamd4Tmpjd0xDSnBjM01pT2lKd2RXSXRNamt6TVRVMElpd2ljM1ZpSWpvaWNHOXpkQzF5WldGamRHbHZiaUo5LjFwY3RWU2FwNU9lUTNLWHVxV0R1Z3llT1QxeXJBeVRvZHg5aW1ZQWxsckUiLCJwIjoyMDY0Mjc1OTYsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgzNjg5NjcwLCJleHAiOjIwOTkyNjU2NzAsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.bpgSBD_MpSPDUpVkImPLZE7gGW1k7eZ371Pn5c6uuas?
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=206427596&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDY0Mjc1OTYsImlhdCI6MTc4MzY4OTY3MCwiZXhwIjoxNzg2MjgxNjcwLCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.1pctVSap5OeQ3KXuqWDugyeOT1yrAyTodx9imYAllrE
+
+## 4. Link
+
+- **URL:** https://substack.com/@alexbanks
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=206427596&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDY0Mjc1OTYsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzgzNjg5NjcwLCJleHAiOjE3ODYyODE2NzAsImlzcyI6InB1Yi0yOTMxNTQiLCJzdWIiOiJyZWFjdGlvbiJ9._ZYiqXk_wNV55BsWO1OihpP44kX5RP8St6kd2S7xLBg&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=206427596&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDY0Mjc1OTYsImlhdCI6MTc4MzY4OTY3MCwiZXhwIjoxNzg2MjgxNjcwLCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.1pctVSap5OeQ3KXuqWDugyeOT1yrAyTodx9imYAllrE&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=206427596&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDY0Mjc1OTYsImlhdCI6MTc4MzY4OTY3MCwiZXhwIjoxNzg2MjgxNjcwLCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.1pctVSap5OeQ3KXuqWDugyeOT1yrAyTodx9imYAllrE
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/thesignal/p/ai-is-quietly-thinking-for-us?utm_source=substack&utm_medium=email&utm_campaign=email-restack-comment&action=restack-comment&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDY0Mjc1OTYsImlhdCI6MTc4MzY4OTY3MCwiZXhwIjoxNzg2MjgxNjcwLCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.1pctVSap5OeQ3KXuqWDugyeOT1yrAyTodx9imYAllrE&utm_source=substack&utm_medium=email
+
+## 9. Link
+
+- **URL:** https://open.substack.com/pub/thesignal/p/ai-is-quietly-thinking-for-us?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/a4559efd-8c64-4b6e-94d9-531b98c30a8f?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPXBvc3QmdXRtX2NhbXBhaWduPWVtYWlsLWNoZWNrb3V0Jm5leHQ9aHR0cHMlM0ElMkYlMkZ0aGVzaWduYWwuc3Vic3RhY2suY29tJTJGcCUyRmFpLWlzLXF1aWV0bHktdGhpbmtpbmctZm9yLXVzJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzT0RNMk9EazJOekFzSW1WNGNDSTZNVGM0TmpJNE1UWTNNQ3dpYVhOeklqb2ljSFZpTFRJNU16RTFOQ0lzSW5OMVlpSTZJbU5vWldOcmIzVjBJbjAuN2Y3elkzNHQ0dUJxTlhRODk1UDVlTVRUZnpTcjVRZ25wU3I0SGQ2M1JlbyIsInAiOjIwNjQyNzU5NiwicyI6MjkzMTU0LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODM2ODk2NzAsImV4cCI6MjA5OTI2NTY3MCwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.yR8_-z29a4WKCRvuQxXY32ABZwHjdgnNUF2MlWd62_E?simple=true&utm_source=paywall&utm_medium=email&utm_content=206427596&next=https://thesignal.substack.com/p/ai-is-quietly-thinking-for-us
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL2FjdGlvbi9kaXNhYmxlX2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNRFkwTWpjMU9UWXNJbWxoZENJNk1UYzRNelk0T1RZM01Dd2laWGh3SWpveE9ERTFNakkxTmpjd0xDSnBjM01pT2lKd2RXSXRNamt6TVRVMElpd2ljM1ZpSWpvaVpHbHpZV0pzWlY5bGJXRnBiQ0o5LnZSbXZwMUdIR3daendFeHBPbzk5LVd4NEdudHd5eGhtckk4RFp4cmZXOHMiLCJwIjoyMDY0Mjc1OTYsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgzNjg5NjcwLCJleHAiOjIwOTkyNjU2NzAsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.EjJJa5LrHSwOtfI5cmeSze3BuJtI0uxZhKfxicP0rjM?
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDY0Mjc1OTYsInMiOjI5MzE1NCwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzgzNjg5NjcwLCJleHAiOjIwOTkyNjU2NzAsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.BHlh1RjaY7hFolB_CT0dY6ImlzY6fduDJ2sb3r_eSqU?
+
