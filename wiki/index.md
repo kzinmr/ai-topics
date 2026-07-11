@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (842 pages)
+## Entities (845 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -650,6 +650,7 @@
 - [[entities/regie-ai]] — Regie.ai
 - [[entities/rehan-van-der-merwe]] — Rehan van der Merwe
 - [[entities/reiner-pope]] — Reiner Pope
+- [[entities/replicate]] — Replicate — Serverless GPU inference platform; Cog containerization for ML models
 - [[entities/richard-ngo]] — Richard Ngo
 - [[entities/richard-susskind]] — Professor Richard Susskind CBE KC is President of the Society for Computers and Law, Special Envoy for Justice and AI...
 - [[entities/richard-sutton]] — Richard Sutton
@@ -675,6 +676,7 @@
 - [[entities/sakana-ai]] — Sakana AI
 - [[entities/salesforce-headless-360]] — Salesforce Headless 360
 - [[entities/sam-altman]] — Sam Altman — CEO of OpenAI; key figure in GPT development, AI safety debates, and industry leadership
+- [[entities/sambanova]] — SambaNova — AI chip company; SN40L RDU for fastest LLM inference; SambaNova Cloud
 - [[entities/samuel-colvin]] — Samuel Colvin
 - [[entities/samuelcolvin]] — samuelcolvin
 - [[entities/sandro-puppo]] — Sandro Puppo
@@ -847,7 +849,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1848 pages)
+## Concepts (1852 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -921,11 +923,13 @@
 - [[concepts/ai-agent-memory]] — AI Agent Memory
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
+- [[concepts/ai-enabled-terrorism]] — AI-Enabled Terrorism — CASP report on Boko Haram using frontier AI for tactical planning and logistics
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Databricks coding agent benchmark — real-world evaluation of coding agents on production codebases
 - [[concepts/claude/fable-safety-classifiers-critique]] — Claude Fable 5 safety classifiers critique — overzealous classifiers make Fable unusable for CS research
 - [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
 - [[concepts/gpt-live]] — GPT-Live — OpenAI full-duplex real-time voice interaction mode (July 2026)
 - [[concepts/inference-provisioned-throughput]] — Provisioned Throughput — reserved inference capacity for open-weight models with token pricing and 99% SLA (Together AI, July 2026)
+- [[concepts/lingbot-world-infinity]] — LingBot-World-Infinity — Open-source world model with 60-minute coherent rollouts from Tsinghua THU-KING-NIC-Lab
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
 - [[concepts/wiki-memory]] — Wiki Memory — Agent-maintained file-based knowledge layer pattern (Harrison Chase, 2026)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-World Failures in Autonomous Systems

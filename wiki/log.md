@@ -1,3 +1,28 @@
+## [2026-07-11] active-crawl | 4 new pages — Replicate, SambaNova, LingBot-World-Infinity, AI-Enabled Terrorism
+
+### New Pages
+- **entities/replicate.md** — Replicate: serverless GPU inference platform; Cog ML containerization; founded 2019, backed by a16z/Sequoia/NVentures; pay-per-inference API for open-source models. 162 lines.
+- **entities/sambanova.md** — SambaNova: AI chip company; SN40L RDU (Reconfigurable Dataflow Unit); fastest token/s inference for open-source models; .1B+ funding, B+ valuation; competes with Cerebras/Groq/NVIDIA. 156 lines.
+- **concepts/lingbot-world-infinity.md** — LingBot-World-Infinity: open-source real-time interactive world model from THU-KING-NIC-Lab (Tsinghua); breakthrough 60-minute coherent rollouts across 20 scenarios; causal action-conditioned modeling. 76 lines.
+- **concepts/ai-enabled-terrorism.md** — AI-Enabled Terrorism: CASP (Cambridge) report documenting Boko Haram using frontier AI models for tactical planning, logistics, and bomb-making; HN 207 pts/173 comments; NYT parallel coverage; AI safety/governance implications. 130 lines.
+
+### Updated
+- **index.md** — Section headers updated (Entities 842→845, Concepts 1848→1852). 4 new entries added alphabetically.
+- **SCHEMA.md** — Added tags: replicate, sambanova, lingbot (Products); terrorism (Domain Concepts)
+
+### Sources
+- raw/articles/2026-07-11_replicate-about.md
+- raw/articles/2026-07-11_sambanova-about.md
+- raw/articles/2026-07-10_lingbot-world-infinity.md
+- raw/articles/2026-07-10_casp-boko-haram-frontier-ai.md
+
+### Discovery
+- HN Algolia: 15 trending stories identified (GPT-5.6 1524pts, Apple-OpenAI 1119pts, GPT-Live 746pts, GitLost 538pts, Robostral 487pts, etc.)
+- X/Twitter: 10 trending discussions (AI market structure 85bkm, on-policy distillation 46bkm, world models, etc.)
+- Wiki gaps: Inference infra (Replicate/SambaNova missing), safety guardrails, MCP ecosystem
+- Most HN stories already covered by wiki — selected 4 genuine gaps
+
+---
 ## [2026-07-11] blog-wiki-ingest | Enriched gilesthomas (parameter anatomy) and cory-doctorow (AI slavery fantasy)
 
 ### Updated Pages
