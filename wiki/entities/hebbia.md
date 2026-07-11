@@ -2,7 +2,7 @@
 title: "Hebbia"
 type: entity
 created: 2026-05-08
-updated: 2026-06-06
+updated: 2026-07-11
 tags:
   - company
   - search
@@ -13,6 +13,7 @@ sources:
   - https://www.hebbia.ai/
   - https://www.hebbia.ai/blog
   - raw/articles/2026-06-06_hebbia_whats-new-june-disclosure-2026.md
+  - raw/articles/2026-07-11_hebbia_every-data-integration-one-view.md
 ---
 
 # Hebbia
@@ -45,14 +46,26 @@ Matrix can ingest multiple files of unlimited length (PDFs, presentations, email
 - **Hebbia API**: Connects Hebbia directly to any internal system to power real-time insights and automate critical workflows with intelligence from the platform.
 - **Hebbia MCP** (Model Context Protocol): Allows users to ask natural-language questions over Hebbia projects and data sources directly within Claude and ChatGPT. Answers are returned with inline citations without leaving the host environment.
 
-### Data Integrations (June 2026)
+### Data Integrations (July 2026)
 
-Hebbia added four major data integrations, expanding the breadth of financial, dealmaking, and CRM data accessible within the platform:
+Hebbia's data integration library expanded to a comprehensive ecosystem of **12+ data sources** for financial, dealmaking, and CRM workflows, accessible from a single view within the platform:
 
-1. **Fitch** — Access data from the leading global credit rating agency. Pull reports into Matrix via Browse, or ask Chat to surface ratings and the rationale behind upgrades and downgrades, grounded in source material.
-2. **Intercontinental Exchange (ICE)** — Near-real-time equity and ETF market data. Query recent price performance, trading volume, volatility, and trends across individual companies or sectors. Chart prices directly within a conversation.
-3. **Intralinks** — The global leader in AI-enabled dealmaking, trusted across M&A, capital markets, and alternative investments, now syncs directly into Hebbia, giving deal teams a continuous workflow from data room to analysis.
-4. **Salesforce** — Brings CRM data into the same context as financial and market research. Analyze pipeline status, account coverage, and client activity alongside documents and other data sources, all within Chat.
+**Public filings & financials:** SEC, CapIQ, FactSet
+**Private market data:** PitchBook, Preqin
+**Expert networks:** Third Bridge, Guidepoint
+**Ratings & pricing:** Fitch, Intercontinental Exchange (ICE)
+**Firm systems:** Snowflake, Databricks, SharePoint
+**CRM:** Salesforce
+
+Some sources are available from day one; others connect via the user's own subscription or are set up across the firm. Users can request access to unavailable sources in one click.
+
+**Earlier integrations (June 2026)** — Four integrations originally added:
+1. **Fitch** — Global credit rating agency; ratings and rationale for upgrades/downgrades grounded in source material
+2. **ICE** — Near-real-time equity and ETF market data; chart prices directly within conversations
+3. **Intralinks** — AI-enabled dealmaking; continuous workflow from data room to analysis
+4. **Salesforce** — CRM data alongside financial and market research; pipeline status, account coverage, client activity
+
+**Source:** [[raw/articles/2026-07-11_hebbia_every-data-integration-one-view]]
 
 ### Workflow & Agent Improvements (June 2026)
 

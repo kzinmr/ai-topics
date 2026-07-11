@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-06-27
+updated: 2026-07-11
 tags:
   - company
   - model
@@ -22,6 +22,7 @@ sources:
   - raw/articles/2026-06-18_cohere_serving-fairness.md
   - raw/articles/2026-06-26_cohere_automating-fork-maintenance-with-ai-agents.md
   - raw/articles/2026-06-26_cohere_cohere-security-ai-agent-north-wiz.md
+  - raw/articles/2026-07-11_cohere_hardware-aware-dynamic-speculative-decoding.md
 ---
 
 # Cohere
@@ -200,6 +201,28 @@ The four layers operate in sequence to govern request admission and GPU selectio
 The complete flow integrates admission control (Rate Limiter) on the way in, and three selectors (Tiering → DRR → Priority) on the way out as each batch is assembled. DRR is the architectural centerpiece: by ensuring each tenant receives fair turns proportional to their quantum, it eliminates the noisy-neighbor problem and guarantees predictable latency across tenants regardless of load imbalances.
 
 [[concepts/llm-serving]] | [[concepts/multi-tenant-architecture]] | [[concepts/scheduling]]
+
+## Hardware-Aware Dynamic Speculative Decoding (July 2026)
+
+In July 2026, Cohere published research on **Hardware-Aware Dynamic Speculative Decoding (DSD)**, addressing the limitations of fixed-K speculative decoding (SD) under realistic production conditions — where batch sizes vary and RL rollout bottlenecks consume up to 85% of resources.
+
+**Motivation**: Standard SD uses a fixed number of draft tokens K, which works well at small batch sizes (memory bandwidth-bound) but hurts throughput at high batch sizes (compute-bound). DSD makes K adaptive based on hardware constraints.
+
+**Key findings:**
+- For **dense models** (Command A): optimal K decreases monotonically as batch size grows
+- For **MoE models** (Command A+): optimal K is **non-monotonic** — low at small BS, increases at mid-BS (experts already loaded), decreases again at high BS
+- Uses **goodput = AL/ITL** (Acceptance Length / Inter-Token Latency) as the optimization metric, with offline profiling to build a lookup table extensible with live runtime metrics
+
+**Performance:**
+- DSD is **~23% faster than fixed-K SD** at BS 128 and BS 256 for dense models
+- DSD matches vanilla inference at very high BS (256) where SD regresses; captures SD speedup where it helps, falls back gracefully otherwise
+- For MoE models, DSD selects K=3 across most of the BS range — the adaptive mechanism prevents regression at low or high extremes
+
+**RL relevance**: DSD targets RL rollout bottlenecks (85% resource consumption, long-tail reasoning model stalls). By remaining effective across batch sizes, DSD extends SD's utility in production RL deployments where load varies dynamically.
+
+[[concepts/speculative-decoding]] | [[concepts/inference-optimization]] | [[concepts/rl-training]]
+
+**Source:** [[raw/articles/2026-07-11_cohere_hardware-aware-dynamic-speculative-decoding]]
 
 ## Related
 

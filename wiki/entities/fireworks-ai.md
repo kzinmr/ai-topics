@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-07-10
+updated: 2026-07-11
 tags:
   - entity
   - company
@@ -25,6 +25,8 @@ sources:
   - raw/articles/2026-07-01_fireworks-ai_glm-5p2-fast.md
   - raw/articles/2026-07-08_fireworks-ai_glm5p2-fast-an-engineering-productivity-story.md
   - raw/articles/2026-07-10_fireworks-ai_gumloop.md
+  - raw/articles/2026-07-11_fireworks-ai_kernel-optimization-for-minimax-m3-on-nvidia-blackwell.md
+  - raw/articles/2026-07-10_fireworks-ai_Open-frontier-and-yours-LangChain-Deep-Agents-on-NVIDIA.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -316,6 +318,47 @@ Fireworks launched **GLM 5.2 Fast**, a speed-optimized inference tier for GLM 5.
 **Benchmark:** 77.8% on SWE-bench Verified at a fraction of closed-model token cost.
 
 Source: raw/articles/2026-07-01_fireworks-ai_glm-5p2-fast.md
+
+## MiniMax M3 Sparse Attention on Blackwell (July 2026)
+
+Fireworks' Performance team built a custom kernel for MiniMax M3 sparse attention on NVIDIA Blackwell (SM100), using a **KV-stationary execution path** that outperforms both the query-stationary baseline (FlashInfer) and MiniMax's open-source MSA kernel.
+
+**Key results** (single B200, fp8):
+- Kernel throughput: ~980 TFLOP/s at ~4.1 TB/s HBM bandwidth
+- **1.9–2.4×** speedup over FlashInfer (Q-outer baseline)
+- **~1.6×** improvement over open-source MSA
+- Full module: 1.18–1.43× over FlashInfer, 1.32–1.41× over MSA
+
+**Architecture**: KV-outer kernel with warp specialization (load/MMA/softmax/output warp groups), contiguous partial-O writes with combine-kernel gathered reads, 3-warp cp.async gathered query loads, load-balanced split-Q scheduling with persistent kernel, D2H elimination via fixed per-request shapes, and C++ AOT dispatch.
+
+**Optimizations:**
+- Replaced scattered partial-O writes with contiguous TMA bulk writes (deferred to combine kernel)
+- Deleted the softmax→store sync dependency (O never rescaled in KV-outer)
+- Fixed per-request tensor shapes to eliminate D2H sync per layer
+- C++ AOT dispatch removes Python host-side launch overhead
+
+The kernel was written independently before MSA was public (separate implementation of the same MiniMax KV-outer idea), developed with Claude Code and Cursor, and built on the FlashAttention4 CuTe-DSL SM100 kernel.
+
+[[concepts/inference-optimization]] | [[concepts/sparse-attention]] | [[entities/nvidia]] | [[concepts/cuda-kernels]]
+
+**Source:** [[raw/articles/2026-07-11_fireworks-ai_kernel-optimization-for-minimax-m3-on-nvidia-blackwell]]
+
+## LangChain Deep Agents on Nemotron 3 Ultra (July 2026)
+
+Fireworks partnered with LangChain to tune the **Deep Agents** harness for **NVIDIA Nemotron 3 Ultra** (550B), achieving benchmark-leading agent performance among open models at **~10× lower cost** than closed alternatives.
+
+**Key points:**
+- LangChain tuned prompts, tools, and middleware (no model retraining) — the result leads all open models on agent performance
+- **Cost per task** is the key metric: agent tasks can consume 5–30× (up to 1,000×) the tokens of single-shot equivalents
+- Nemotron 3 Ultra runs with day-zero support on Fireworks' Blackwell/B200 inference stack with FireAttention kernels (up to 4× higher throughput)
+- **Post-training path**: Users can fine-tune Nemotron 3 Ultra (SFT/DPO with LoRA or full-parameter) on the same Fireworks platform that serves it — the trained model is the deployed model
+- Combined with **NVIDIA OpenShell** as the secure agent runtime, forms a complete open stack: open model + open harness + open runtime
+
+**Enterprise adoption**: Teams building agents for coding, deep research, and complex domain workflows are already evaluating. Model is live on Fireworks.
+
+[[concepts/ai-agent-engineering]] | [[concepts/harness-engineering]] | [[entities/nvidia]] | [[entities/langchain]]
+
+**Source:** [[raw/articles/2026-07-10_fireworks-ai_Open-frontier-and-yours-LangChain-Deep-Agents-on-NVIDIA]]
 
 ## LangChain Trace Judge Partnership (June 2026)
 

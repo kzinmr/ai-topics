@@ -1,3 +1,13 @@
+## [2026-07-11] dreaming | Entity enrichments (Cohere DSD, Fireworks ×2, Hebbia integrations)
+
+### Changes
+- **[[entities/cohere.md]]** — Added DSD (Dynamic Speculative Decoding) section: hardware-aware adaptive K selection, Command A/Command A+ performance, ~23% faster than fixed-K SD at BS 128/256, RL rollout relevance
+- **[[entities/fireworks-ai.md]]** — Added MiniMax M3 Sparse Attention on Blackwell section: KV-outer kernel, ~980 TFLOP/s, 1.9-2.4× vs FlashInfer, 1.6× vs MSA. Added LangChain Deep Agents on Nemotron 3 Ultra section: 10× cost reduction, post-training path, NVIDIA OpenShell integration
+- **[[entities/hebbia.md]]** — Expanded Data Integrations: 12+ sources catalog (SEC, CapIQ, FactSet, PitchBook, Preqin, Third Bridge, Guidepoint, Snowflake, Databricks, SharePoint)
+
+### Source
+- dreaming-cycle 2026-07-11
+
 ## [2026-07-11] watchdog | Auto-fixed 87 bare wikilinks
 
 ### Changes
