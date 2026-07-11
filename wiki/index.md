@@ -763,7 +763,7 @@
 - [[entities/theodoros-galanos]] — AI researcher and practitioner at the intersection of harness engineering, agentic AI, and architecture/engineering/c...
 - [[entities/thibault-sottiaux]] — Thibault Sottiaux
 - [[entities/thin-bi-tool]] — The trend of BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools...
-- [[entities/thinking-machines-lab]] — Thinking Machines Lab
+- [[entities/thinking-machines-lab]] — Thinking Machines Lab — AI company building decentralized, customizable models that extend human will and judgment; advocates for distributed alignment
 - [[entities/thomas-capelle]] — Thomas Capelle
 - [[entities/thomas-wiecki]] — Thomas Wiecki
 - [[entities/thorsten-ball]] — Thorsten Ball
@@ -847,7 +847,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1846 pages)
+## Concepts (1848 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1089,6 +1089,7 @@
 - [[concepts/ai-labor-displacement]] — AI Labor Displacement & Economic Impact
 - [[concepts/ai-liability-section-230]] — AI Liability and Section 230
 - [[concepts/ai-memory-systems]] — AI Memory Systems — Design Philosophy Comparison: Chat vs Coding Agents
+- [[concepts/ai-memory-crisis]] — AI Memory Crisis — HBM demand from AI GPUs driving consumer electronics prices up via memory triopoly (Samsung/SK Hynix/Micron)
 - [[concepts/ai-military]] — AI in Military Wargames
 - [[concepts/ai-native-product-localization]] — AI-Native Product Localization
 - [[concepts/ai-native-state-management]] — Comprehensive overview of state categories, data flow patterns, and architectural decisions in AI-native full-stack a...
@@ -1962,6 +1963,7 @@
 - [[concepts/llm-landscape-nov-2025-to-may-2026]] — LLM Landscape: November 2025 – May 2026
 - [[concepts/llm-memory-architecture]] — LLM Memory Architecture
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
+- [[concepts/llm-parameter-counts]] — LLM Parameter Counts — How parameters are distributed across embeddings, attention, FFN, and output head in transformer models
 - [[concepts/llm-security]] — LLM Security — Security vulnerabilities in LLM applications including prompt injection, data leakage, and jailbreaking
 - [[concepts/llm-steering]] — LLM Steering
 - [[concepts/llm-trace-judge]] — LLM Trace Judge
@@ -2732,8 +2734,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (15 pages)
+## Events (16 pages)
 
+- [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft
 - [[events/2026-07-08-openai-gpt-live]] — OpenAI GPT-Live: real-time voice model with GPT-5.5 delegation (July 8)
 - [[events/grok-4-5-launch]] — SpaceXAI launches Grok 4.5, first Opus-class coding & agents model co-trained with Cursor (July 9)
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan

@@ -1,3 +1,24 @@
+## [2026-07-11] blog-triage | Wiki pages from blog ingest — Apple-OpenAI lawsuit, AI memory crisis, Thinking Machines Lab, LLM parameter counts
+
+### New Pages
+- **events/apple-sues-openai-2026.md** — Apple sues OpenAI for trade secret theft (July 10, 2026): Tang Tan (ex-VP Product Design) and Chang Liu (ex-senior engineer) accused of stealing hardware designs, confidential files, and supplier intel. 400+ ex-Apple employees at OpenAI.
+- **concepts/ai-memory-crisis.md** — AI-driven memory price crisis: HBM demand from NVIDIA GPUs consuming 65% of global HBM supply; Samsung/SK Hynix/Micron triopoly driving 700% DRAM price increase; consumer electronics (consoles, phones, laptops) all getting more expensive.
+- **entities/thinking-machines-lab.md** — Thinking Machines Lab: AI company advocating decentralized, customizable models; "build AI that extends human will and judgment"; argues against centralized alignment; bets on interaction models and fine-tuning tools.
+- **concepts/llm-parameter-counts.md** — LLM parameter distribution intuition: embeddings dominate small models, FFN has ~2x attention params, weight tying impact, scaling from 124M to 70B+.
+
+### Updated Pages
+- **entities/openai.md** — Added "Apple Sues OpenAI for Trade Secret Theft (July 2026)" section linking to event page.
+- **index.md** — Updated counts (Entities 842→843 [ghost resolved], Concepts 1846→1848, Events 15→16). Added 4 new entries.
+- **index.md** — Resolved ghost entry for `thinking-machines-lab` with description.
+
+### Sources
+- raw/articles/9to5mac.com--2026-07-10-apple-sues-openai-trade-secret-theft--c6113a74.md
+- raw/articles/wheresyoured.at--premium-the-haters-guide-to-the-memory-crisis--0b884d04.md
+- raw/articles/thinkingmachines.ai--blog-the-future-worth-building-is-human--7fe53b6e.md
+- raw/articles/gilesthomas.com--2026-07-llm-parameter-counts--674e98c7.md
+
+---
+
 ## [2026-07-10] backlog-ingest | Enriched MAI-Thinking-1 entity with safety/red-teaming details
 
 - **entities/mai-thinking-1.md** — Expanded Safety & Red Teaming section with detailed internal safety evaluation (jailbreak taxonomy: Foundational/Compositional/Adaptive techniques, 9.5K prompts, ASR comparable to Sonnet/Opus), internal red teaming mitigation results (~22% aggregate ASR reduction), and independent red teaming findings (TAP closed-loop pipeline, multilingual vulnerability in 6 low-resource languages). Updated `updated` to 2026-07-10.

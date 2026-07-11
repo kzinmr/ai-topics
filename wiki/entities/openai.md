@@ -288,7 +288,18 @@ Key developments:
 
 > Sources: [9to5Mac](https://9to5mac.com/2026/05/14/openai-preparing-legal-action-against-apple/), [Bloomberg](https://www.bloomberg.com/news/articles/2026-05-14/openai-apple-partnership-frays-setting-up-possible-legal-fight) (May 14, 2026)
 
+### Apple Sues OpenAI for Trade Secret Theft (July 2026)
 
+On **July 10, 2026**, Apple filed a lawsuit against OpenAI accusing the company of **trade secret theft** related to consumer hardware development. See [[events/apple-sues-openai-2026]] for full details.
+
+Key points:
+- **Defendants**: OpenAI, io Products, Tang Tan (former VP of Product Design), Chang Liu (former senior system electrical engineer)
+- **Allegations**: Tan directed Apple employees to bring hardware prototypes to OpenAI interviews; Liu exploited a security bug to download confidential engineering files after leaving; OpenAI manipulated Apple's suppliers into performing proprietary techniques
+- **Scale**: 400+ former Apple employees now at OpenAI
+- **Context**: Apple first raised concerns in February 2026; OpenAI never responded
+- The lawsuit comes as OpenAI works on its first consumer hardware device (smartphone rumored for 2028, smart speaker in development)
+
+> Sources: [9to5Mac](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/), [Threads/@alexheath](https://www.threads.com/@alexheath/post/DaoI2jaEioX) (July 10, 2026)
 
 ### Erdős Problem — Math Breakthrough (May 2026)
 

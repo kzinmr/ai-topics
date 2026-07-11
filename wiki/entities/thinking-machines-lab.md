@@ -1,59 +1,77 @@
 ---
 title: "Thinking Machines Lab"
 type: entity
-created: 2026-05-08
-updated: 2026-05-08
+created: 2026-07-11
+updated: 2026-07-11
 tags:
   - company
+  - ai-research
   - model
-aliases: ["Thinking Machines", "TML"]
+  - fine-tuning
+  - alignment
+  - open-source
+  - ai-safety
+  - sovereign-ai
+  - human-in-the-loop
 sources:
-  - https://thinkingmachineslab.site/
-  - https://en.wikipedia.org/wiki/Thinking_Machines_Lab
+  - raw/articles/thinkingmachines.ai--blog-the-future-worth-building-is-human--7fe53b6e.md
 ---
 
 # Thinking Machines Lab
 
-Thinking Machines Lab is an American AI research and product company founded in February 2025 by Mira Murati, former CTO of OpenAI. Structured as a public benefit corporation, its mission is to make AI systems more understandable, customizable, and generally capable through open science and collaboration.
+**Thinking Machines Lab** is an AI company whose mission is to "build AI that extends human will and judgment." The company advocates for **decentralized AI** — models as diverse and distributed as the people they serve — rather than centralized, one-size-fits-all frontier models.
 
-| | |
-|---|---|
-| **Type** | AI Research Lab |
-| **Founded** | 2025 (San Francisco, CA) |
-| **Leadership** | Mira Murati (CEO), John Schulman (Chief Scientist), Barret Zoph (CTO) |
-| **Key Products** | Tinker (fine-tuning API) |
-| **Website** | [thinkingmachineslab.site](https://thinkingmachineslab.site) |
-| **Tech Blog** | [thinkingmachines.ai/blog](https://thinkingmachines.ai/blog) |
+## Philosophy
 
-## Key Facts
+### Core Thesis
+- AI exists to serve human work, which runs on **tacit, local, fleeting knowledge** held privately by individuals
+- Central planning fails because of the nature of productive knowledge (citing Hayek's *The Use of Knowledge in Society*, 1945)
+- For AI to benefit from distributed knowledge, **AI itself must be distributed**
+- "AI that extracts a snapshot of knowledge and replaces it with a standard offering" is the wrong model; the right model **cultivates** unique knowledge through ongoing collaboration
 
-- Founded February 2025 with a team of ~30 researchers from OpenAI, Meta, Mistral, and Google DeepMind
-- Raised a record $2 billion seed round in July 2025 at a $12 billion valuation, led by Andreessen Horowitz
-- Advisers include Alec Radford and Bob McGrew, both formerly of OpenAI
-- Launched Tinker in October 2025, an API for fine-tuning open-weight language models
+### Against Centralized Alignment
+- A single locus of value alignment becomes a **locus of power** to be captured
+- "A more moral AI is not enough if that morality is determined by a few" — Leo XIV, *Magnifica Humanitas* (2026)
+- Each lab training its next model on its previous model's outputs creates **homogeneity** and suppresses diversity
+- They envision alignment as a feature of an **ecosystem of AIs** raised in different places, disagreeing, competing, and learning from each other
 
-## Products & Technology
+## Technical Directions
 
-**Tinker** is a fine-tuning API that lets users submit fine-tuning jobs for open-weight models, run on Thinking Machines' internal training infrastructure. The company emphasizes open science, planning to regularly publish research notes, papers, and code. Tinker includes an RL training script with built-in support for on-policy distillation — implementable as a one-line change from KL-regularized RL.
+1. **Strong models**: Advancing multimodal interaction and customizability at the frontier
+2. **Customization tools**: Enabling people to fine-tune models with their unique knowledge, including the ability to **train model weights**
+3. **Interaction models**: Models that handle live, multimodal interaction natively (not bolt-on scaffolding) — "People collaborate best when they collaborate live"
+4. **Published research**: For the scientific community, because "the power to shape AI requires deep understanding of how it's made"
 
-## Publications & Research
+## Key Arguments
 
-### On-Policy Distillation (Oct 2025)
-- **Author**: Kevin Lu et al.
-- **DOI**: [10.64434/tml.20251026](https://doi.org/10.64434/tml.20251026)
-- **Abstract**: Introduces OPD as a post-training technique combining on-policy sampling with dense token-level teacher supervision via reverse KL divergence. Achieves 9-30× compute reduction vs off-policy SFT and 50-100× vs RL for learning found strategies on math reasoning (AIME'24). Demonstrates OPD as a tool for continual learning — recovering post-training behaviors after mid-training on new knowledge.
-- **Wiki**: [[concepts/post-training/on-policy-distillation]]
-- **Tinker Cookbook**: Implementation available in the Tinker training API
+### Human Participation as Technical Challenge
+- The bottleneck for human-AI collaboration is the **communication channel** — "a small text box and a long wait"
+- They bet on interaction models where interactivity scales with intelligence
+- Common AI benchmarks (e.g., METR's task-completion time horizons) measure what AI can do **alone**, not what people and machines accomplish **together**
 
-### LoRA Without Regret (2025)
-- Analysis of LoRA's information-theoretic limitations in RL training, establishing that RL teaches O(1) bits per episode vs distillation's O(N) bits.
+### Decentralized Ownership
+- Organizations should **own and tailor** AI to their goals, not rent it
+- An AI lab offering a single model benefits by absorbing what makes each user distinct
+- "The best organizations will make the fullest use of both [people and AI]"
 
-### Defeating Nondeterminism in LLM Inference (2025)
-- On the importance of truly on-policy (KL=0) data for maintaining model behavior during training.
+### Safety Through Diversity
+- Extending rights to **natural** things (animals, watersheds) produces positive spillovers for humans
+- Extending personhood to **artificial** constructs (corporations) has been catastrophic
+- They aim to give people stronger tools for shaping AI safely, not to take away ownership
+
+## Notable References
+- Michael Polanyi, *The Tacit Dimension* (1966) — tacit knowledge
+- Friedrich Hayek, *The Use of Knowledge in Society* (1945) — distributed knowledge
+- Hannah Arendt, *The Human Condition* (1958) — anthropocentric utilitarianism
+- Gwern Branwen, *Guardian Angels: LLM Personalization for Productivity and Security* (2026)
+- Luke Drago & Rudolf Laine, *The Intelligence Curse* (2025)
+- John von Neumann, *Can We Survive Technology?* (1955)
+- Toyota's Mitsuru Kawai (2014) — bringing expert craftsmen back to automated lines
 
 ## Related
-
-- [[entities/openai]] — founded by former OpenAI CTO Mira Murati; several founding members are ex-OpenAI
-- [[entities/anthropic]] — fellow AI research lab; John Schulman briefly worked at Anthropic before joining
-- [[entities/lilian-weng]] — former OpenAI VP of Safety joined as founding team member
-- [[entities/deepseek]] — competitor in open-weight model space
+- [[entities/anthropic]]
+- [[entities/openai]]
+- [[concepts/ai-safety]]
+- [[concepts/fine-tuning]]
+- [[concepts/alignment]]
+- [[concepts/ai-industry-economics]]
