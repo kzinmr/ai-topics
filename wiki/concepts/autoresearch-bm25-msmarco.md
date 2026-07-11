@@ -17,7 +17,7 @@ sources: [raw/articles/2026-05-17_softwaredoug-com_autoresearching-better-msmarc
 
 # Autoresearch for BM25 Optimization on MSMarco
 
-A concrete case study by [[softwaredoug|Doug Turnbull]] (May 2026) applying **autoresearch** — using a coding agent to iteratively optimize a BM25 ranking function — on the MSMarco passage retrieval dataset. This is a domain-specific application of the broader [[concepts/autonomous-component-optimization]] pattern, focused on **search relevance tuning**.
+A concrete case study by [[entities/softwaredoug|Doug Turnbull]] (May 2026) applying **autoresearch** — using a coding agent to iteratively optimize a BM25 ranking function — on the MSMarco passage retrieval dataset. This is a domain-specific application of the broader [[concepts/autonomous-component-optimization]] pattern, focused on **search relevance tuning**.
 
 ## Method: Dual-Gate Agentic Optimization
 
@@ -64,7 +64,7 @@ This demonstrates a subtle form of **data leakage**: any validation gate in a br
 
 This experiment sits at the intersection of two trends:
 
-1. **[[karpathy-loop|Karpathy's autoresearch]]**: autonomous loops for ML hyperparameter optimization
+1. **[[concepts/karpathy-loop|Karpathy's autoresearch]]**: autonomous loops for ML hyperparameter optimization
 2. **[[concepts/coding-agents/pi-autoresearch|Shopify's pi-autoresearch]]**: generalizing autoresearch beyond ML to arbitrary metrics
 
 Doug's work applies the pattern specifically to **search ranking**, where the metric (NDCG) and the optimization surface (BM25 parameters + heuristics) differ from ML training loops.

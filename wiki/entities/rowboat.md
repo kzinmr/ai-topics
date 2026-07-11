@@ -9,7 +9,7 @@ sources: [raw/articles/2026-07-10_rowboat-claude-desktop-alternative.md]
 
 ## Overview
 
-Rowboat is an open-source, local-first desktop AI coworker with persistent memory, developed by Rowboat Labs. It is positioned as an alternative to [[anthropic]]'s proprietary Claude Desktop, offering a local-first architecture where all data lives on the user's machine as plain Markdown files. The project was featured on Hacker News as a Show HN on July 7, 2026, earning 216 points, and has rapidly grown to over 16,000 GitHub stars and 1,600 forks.
+Rowboat is an open-source, local-first desktop AI coworker with persistent memory, developed by Rowboat Labs. It is positioned as an alternative to [[entities/anthropic]]'s proprietary Claude Desktop, offering a local-first architecture where all data lives on the user's machine as plain Markdown files. The project was featured on Hacker News as a Show HN on July 7, 2026, earning 216 points, and has rapidly grown to over 16,000 GitHub stars and 1,600 forks.
 
 Rowboat indexes a user's work — email, meetings, Slack conversations, and assistant interactions — into a living, backlinked knowledge graph inspired by Obsidian. This knowledge graph serves as long-lived memory that compounds over time, contrasting with most AI tools that reconstruct context on demand from transcripts or documents.
 
@@ -25,7 +25,7 @@ Rowboat includes several integrated work surfaces for human-AI collaboration:
 - **Email Client**: Sorts emails by importance and auto-drafts responses using full work context
 - **Meeting Notes**: Local meeting note-taker using mic/speaker capture, producing live transcripts and Markdown summaries that update the knowledge graph
 - **Browser**: An isolated built-in browser for collaborative web tasks, sandboxed from the user's main browser
-- **Code Mode**: Parallel coding agents driven by [[claude-code]] or [[codex]] with all work context available
+- **Code Mode**: Parallel coding agents driven by [[entities/claude-code]] or [[entities/codex]] with all work context available
 - **Apps**: Extensible work surfaces users can build themselves, with access to all tools and integrations
 
 ### Background Agents
@@ -38,10 +38,10 @@ Rowboat supports bring-your-own-model:
 - Model swapping at any time without data migration
 
 ### MCP Integration
-Full [[mcp]] (Model Context Protocol) support allows connection to external tools and services: Exa (web search), Twitter/X, ElevenLabs (voice), Slack, Linear/Jira, GitHub, and more.
+Full [[concepts/mcp]] (Model Context Protocol) support allows connection to external tools and services: Exa (web search), Twitter/X, ElevenLabs (voice), Slack, Linear/Jira, GitHub, and more.
 
 ### Local-First Design
-All data stored locally as plain Markdown with no proprietary formats or lock-in. Users can inspect, edit, back up, or delete everything at any time — a core tenet of [[local-first-software]].
+All data stored locally as plain Markdown with no proprietary formats or lock-in. Users can inspect, edit, back up, or delete everything at any time — a core tenet of [[concepts/local-first-software]].
 
 ## Technical Architecture
 
@@ -57,7 +57,7 @@ The repository uses Docker Compose for orchestration, with `start.sh` as the pri
 
 ## Comparison to Claude Desktop
 
-Rowboat is explicitly positioned as an open-source alternative to [[anthropic]]'s Claude Desktop. Key differentiators:
+Rowboat is explicitly positioned as an open-source alternative to [[entities/anthropic]]'s Claude Desktop. Key differentiators:
 
 | Dimension | Rowboat | Claude Desktop |
 |-----------|---------|----------------|
@@ -78,12 +78,12 @@ The project maintains an active Discord and Twitter presence for community engag
 
 ## Related Pages
 
-- [[claude-code]] — Primary coding agent used within Rowboat's Code Mode
-- [[anthropic]] — Company behind Claude Desktop, which Rowboat competes with
-- [[mcp]] — Model Context Protocol used for Rowboat's extensibility
-- [[open-source]] — Rowboat's licensing and development philosophy
-- [[local-first-software]] — The architectural philosophy Rowboat embodies
-- [[knowledge-graph-memory-agents]] — The memory paradigm Rowboat implements
-- [[ai-agent-memory]] — Broader context on agent memory systems
-- [[ai-agents]] — The agent ecosystem Rowboat participates in
-- [[codex]] — Alternative coding agent supported in Code Mode
+- [[entities/claude-code]] — Primary coding agent used within Rowboat's Code Mode
+- [[entities/anthropic]] — Company behind Claude Desktop, which Rowboat competes with
+- [[concepts/mcp]] — Model Context Protocol used for Rowboat's extensibility
+- [[concepts/open-source]] — Rowboat's licensing and development philosophy
+- [[concepts/local-first-software]] — The architectural philosophy Rowboat embodies
+- [[concepts/knowledge-graph-memory-agents]] — The memory paradigm Rowboat implements
+- [[concepts/ai-agent-memory]] — Broader context on agent memory systems
+- [[concepts/ai-agents]] — The agent ecosystem Rowboat participates in
+- [[entities/codex]] — Alternative coding agent supported in Code Mode

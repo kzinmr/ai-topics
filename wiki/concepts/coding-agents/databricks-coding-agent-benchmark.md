@@ -9,7 +9,7 @@ sources: [raw/articles/2026-07-10_databricks-coding-agent-benchmark.md]
 
 ## Overview
 
-In July 2026, [[databricks]] published an internal methodology and results for benchmarking coding agents on their own **multi-million line production codebase** — a significant departure from public synthetic benchmarks like [[swe-bench]]. Rather than relying on leaked, public-domain tasks, Databricks constructed a private benchmark from their own merged pull requests, spanning 10+ languages (Scala, Go, Rust, Java, Python, TypeScript, Protobuf, Bazel) and verified by the original PR test suites.
+In July 2026, [[entities/databricks]] published an internal methodology and results for benchmarking coding agents on their own **multi-million line production codebase** — a significant departure from public synthetic benchmarks like [[swe-bench]]. Rather than relying on leaked, public-domain tasks, Databricks constructed a private benchmark from their own merged pull requests, spanning 10+ languages (Scala, Go, Rust, Java, Python, TypeScript, Protobuf, Bazel) and verified by the original PR test suites.
 
 The exercise was motivated by a practical need: with the rapid expansion of coding agent models and harnesses, Databricks wanted a data-driven way to select the right model-and-harness combination for everyday engineering tasks while optimizing for **cost-per-task** rather than cost-per-token.
 
@@ -34,7 +34,7 @@ Token pricing is a poor proxy for end-to-end task cost. Sonnet 5 is ~1.7× cheap
 
 ### 4. Harnesses Dramatically Impact Efficiency
 
-Running the same model through different harnesses ([[claude-code]]/[[codex]] vs [[pi]]) yielded **>2× cost differences** while quality remained identical. Pi sent ~3× less context per turn, kept a tighter working set, and finished tasks in fewer rounds. The lesson: model choice is only part of the puzzle — harness architecture (context management strategy, tool use patterns) is equally consequential for cost.
+Running the same model through different harnesses ([[entities/claude-code]]/[[entities/codex]] vs [[entities/pi]]) yielded **>2× cost differences** while quality remained identical. Pi sent ~3× less context per turn, kept a tighter working set, and finished tasks in fewer rounds. The lesson: model choice is only part of the puzzle — harness architecture (context management strategy, tool use patterns) is equally consequential for cost.
 
 ## Methodology
 
@@ -53,7 +53,7 @@ Databricks' benchmark construction followed a rigorous pipeline:
 
 5. **Git History Sealing**: A critical guardrail — early runs showed agents recovering the "correct" implementation from git history. For subsequent runs, the working copy was severed from the repository entirely to prevent this leakage.
 
-6. **Telemetry**: [[databricks]] used **Unity AI Gateway** to capture logs of all coding interactions, enabling task-complexity analysis and revealing that ~25% of tasks were low-complexity and ~60% medium complexity — yet expensive models were the default choice.
+6. **Telemetry**: [[entities/databricks]] used **Unity AI Gateway** to capture logs of all coding interactions, enabling task-complexity analysis and revealing that ~25% of tasks were low-complexity and ~60% medium complexity — yet expensive models were the default choice.
 
 ## Implications
 
@@ -66,7 +66,7 @@ The benchmark demonstrates that any organization with a backlog of merged PRs al
 The results challenge three common industry assumptions:
 - **"More expensive models are always better"** — task routing by complexity can dramatically reduce costs without sacrificing outcomes.
 - **"Token price predicts task cost"** — reasoning efficiency varies widely; task-level benchmarking is essential.
-- **"The native harness is optimal"** — simpler harnesses like [[pi]] can match or exceed the efficiency of model-native harnesses.
+- **"The native harness is optimal"** — simpler harnesses like [[entities/pi]] can match or exceed the efficiency of model-native harnesses.
 
 ### For the Broader Ecosystem
 
@@ -77,8 +77,8 @@ Databricks' investment in Omnigent as a model-and-harness-swapping layer reflect
 - [[coding-agents]] — Overview of the coding agent landscape
 - [[swe-bench]] — The dominant public benchmark for coding agents
 - [[evaluation-coding-agents]] — General evaluation approaches for coding agents
-- [[databricks]] — Company profile
-- [[claude-code]] — Anthropic's coding agent harness
-- [[codex]] — OpenAI's coding agent
-- [[devin]] — Cognition's autonomous coding agent
-- [[pi]] — Lightweight coding agent harness
+- [[entities/databricks]] — Company profile
+- [[entities/claude-code]] — Anthropic's coding agent harness
+- [[entities/codex]] — OpenAI's coding agent
+- [[entities/devin]] — Cognition's autonomous coding agent
+- [[entities/pi]] — Lightweight coding agent harness

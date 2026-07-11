@@ -1,3 +1,20 @@
+## [2026-07-11] watchdog | Auto-fixed 87 bare wikilinks
+
+### Changes
+- Fixed **87 bare wikilinks** missing namespace prefixes (e.g., anthropic → entities/anthropic, mcp → concepts/mcp, glimpse → entities/glimpse, bm25 → concepts/bm25, hermes-vs-openclaw-architecture → comparisons/hermes-vs-openclaw-architecture)
+- Affected **58 files** across entities, concepts, and comparisons directories
+- Remaining 1,720 broken wikilinks are genuine missing targets requiring page creation
+- Index: clean (0 corruption, 0 stale entries, validate_index passes)
+- No other auto-fixable issues found
+
+### Flagged for Human Review
+- **14 duplicate groups** (5 entity, 4 concept, 3 cross-type, 2 concept↔comparison) — need merge decisions
+- **63 stale content pages** (>90 days without update) — read and enrich
+- **38 orphan pages** (no inbound links) — add cross-references
+- **x_accounts job stale (26h)** — check and restart
+
+---
+
 ## [2026-07-11] active-crawl | 4 new pages — Replicate, SambaNova, LingBot-World-Infinity, AI-Enabled Terrorism
 
 ### New Pages

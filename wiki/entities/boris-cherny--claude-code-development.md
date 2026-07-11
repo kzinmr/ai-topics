@@ -43,5 +43,5 @@ The tool reached **general availability in May 2025**, after which the team expa
 
 ## See Also
 
-- [[boris-cherny--core-ideas|Core Ideas & Philosophy]]
-- [[boris-cherny--key-work|Key Work & Impact]]
+- [[entities/boris-cherny--core-ideas|Core Ideas & Philosophy]]
+- [[entities/boris-cherny--key-work|Key Work & Impact]]

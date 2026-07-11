@@ -23,7 +23,7 @@ related:
 
 # Newsjack — Agent PR Skills
 
-**Creator:** [[elvis-sun|Elvis Sun]] (@elvissun)  
+**Creator:** [[entities/elvis-sun|Elvis Sun]] (@elvissun)  
 **Website:** https://newsjack.sh  
 **GitHub:** https://github.com/elvisun/newsjack  
 **License:** MIT  

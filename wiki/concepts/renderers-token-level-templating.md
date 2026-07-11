@@ -19,7 +19,7 @@ sources:
 
 # renderers: Token-Level Templating for Agentic RL
 
-A standalone Python library by [[prime-intellect|Prime Intellect]] that gives developers full control over conversation formatting for [[reinforcement-learning|RL]] and multi-turn inference. Open-sourced May 12, 2026.
+A standalone Python library by [[entities/prime-intellect|Prime Intellect]] that gives developers full control over conversation formatting for [[reinforcement-learning|RL]] and multi-turn inference. Open-sourced May 12, 2026.
 
 **PyPI:** `pip install renderers` | **GitHub:** [PrimeIntellect-ai/renderers](https://github.com/PrimeIntellect-ai/renderers)
 

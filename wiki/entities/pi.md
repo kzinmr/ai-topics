@@ -203,7 +203,7 @@ The Hugo+Ivan Pure Python reconstruction at the workshop ([[concepts/agents-that
 
 ## Earendil Acquisition (April 2026)
 
-On April 8, 2026, **Earendil Inc.** (a Public Benefit Corporation founded in 2025 by [[armin-ronacher|Armin Ronacher]] and Colin Daymond Hanna) acquired Pi. Mario Zechner joined as a major shareholder and team member. Mario stated: "pi.dev will remain pi's home, with just the Earendil logo added. pi stays under MIT license, and the fork button will always work."
+On April 8, 2026, **Earendil Inc.** (a Public Benefit Corporation founded in 2025 by [[entities/armin-ronacher|Armin Ronacher]] and Colin Daymond Hanna) acquired Pi. Mario Zechner joined as a major shareholder and team member. Mario stated: "pi.dev will remain pi's home, with just the Earendil logo added. pi stays under MIT license, and the fork button will always work."
 
 The repository moved from `badlogic/pi-mono` to `earendil-works/pi`. The npm package also changed from `@mariozechner/pi-coding-agent` to `@earendil-works/pi-coding-agent`.
 

@@ -22,7 +22,7 @@ sources:
 
 # Robostral Navigate
 
-**Robostral Navigate** is Mistral's state-of-the-art robotics navigation model, an 8B-parameter [[vla-models|vision-language-action (VLA)]] model that enables robots to autonomously navigate complex environments using only a single RGB camera — no depth sensors, LiDAR, or multi-camera rigs required. Announced on 2026-07-10, it represents [[mistral-ai]]'s first entry into [[embodied-ai]] and a significant expansion beyond text and vision-language models into physical robotics.
+**Robostral Navigate** is Mistral's state-of-the-art robotics navigation model, an 8B-parameter [[concepts/vla-models|vision-language-action (VLA)]] model that enables robots to autonomously navigate complex environments using only a single RGB camera — no depth sensors, LiDAR, or multi-camera rigs required. Announced on 2026-07-10, it represents [[entities/mistral-ai]]'s first entry into [[concepts/embodied-ai]] and a significant expansion beyond text and vision-language models into physical robotics.
 
 ## Overview
 
@@ -72,17 +72,17 @@ All training data was generated in simulation using an efficient in-house pipeli
 | **Training efficiency** | 22x token reduction via prefix-caching | Standard | Standard |
 | **RL fine-tuning** | CISPO online RL (+3.2%) | Limited or none | Limited or none |
 
-Robostral Navigate is positioned as a [[robotics]] foundation model for navigation, analogous to how VLMs serve as foundation models for vision-language tasks. Its combination of simulation-only training, efficient token use, and online RL post-training represents a distinctive approach in the [[physical-ai]] landscape.
+Robostral Navigate is positioned as a [[concepts/robotics]] foundation model for navigation, analogous to how VLMs serve as foundation models for vision-language tasks. Its combination of simulation-only training, efficient token use, and online RL post-training represents a distinctive approach in the [[concepts/physical-ai]] landscape.
 
 ## Significance
 
-Robostral Navigate marks Mistral's expansion beyond text and multimodal models into embodied AI and robotics — a domain with direct commercial applications in manufacturing, delivery, logistics, and hospitality. It also demonstrates that state-of-the-art navigation can be achieved with a compact model and minimal sensor hardware, lowering the barrier to deployment. The model's architecture and training methodology (pointing-based actions, prefix-cached episode training, CISPO online RL) provide a blueprint for future [[vla-models]] that unify perception, language understanding, and physical action.
+Robostral Navigate marks Mistral's expansion beyond text and multimodal models into embodied AI and robotics — a domain with direct commercial applications in manufacturing, delivery, logistics, and hospitality. It also demonstrates that state-of-the-art navigation can be achieved with a compact model and minimal sensor hardware, lowering the barrier to deployment. The model's architecture and training methodology (pointing-based actions, prefix-cached episode training, CISPO online RL) provide a blueprint for future [[concepts/vla-models]] that unify perception, language understanding, and physical action.
 
 ## Related Pages
 
-- [[mistral-ai]] — Mistral AI, the company behind Robostral Navigate
-- [[embodied-ai]] — Embodied AI and physical agents
-- [[vla-models]] — Vision-Language-Action models for robotics
-- [[robotics]] — Robotics in the AI ecosystem
-- [[multimodal]] — Multimodal AI models
-- [[physical-ai]] — Physical AI and real-world robot deployment
+- [[entities/mistral-ai]] — Mistral AI, the company behind Robostral Navigate
+- [[concepts/embodied-ai]] — Embodied AI and physical agents
+- [[concepts/vla-models]] — Vision-Language-Action models for robotics
+- [[concepts/robotics]] — Robotics in the AI ecosystem
+- [[concepts/multimodal]] — Multimodal AI models
+- [[concepts/physical-ai]] — Physical AI and real-world robot deployment

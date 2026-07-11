@@ -96,7 +96,7 @@ At 128K sequence length with D=8:
 ## Graph Structure Query
 
 ```
-[tsp] ──author──→ [[zyphra|Zyphra]]
+[tsp] ──author──→ [[entities/zyphra|Zyphra]]
 [tsp] ──extends──→ tensor-parallelism
 [tsp] ──extends──→ sequence-parallelism
 [tsp] ──contrasts──→ tp-sp-combined

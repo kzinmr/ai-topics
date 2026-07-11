@@ -59,9 +59,9 @@ A typical Tenant Agent Pack consists of the following artifacts:
 
 The core agent engine is shared across all customers; customer-specific differences are contained within the Tenant Agent Pack. This enables deep customer adaptation without sacrificing product maintainability.
 
-## Relationship with [[forward-deployed-engineering|FDE]]
+## Relationship with [[concepts/forward-deployed-engineering|FDE]]
 
-A [[forward-deployed-engineering|Forward Deployed Engineer]] discovers business-specific needs on the customer site. Their role is to encode those discoveries into a Tenant Agent Pack in a **version-controlled, testable, and reusable** form.
+A [[concepts/forward-deployed-engineering|Forward Deployed Engineer]] discovers business-specific needs on the customer site. Their role is to encode those discoveries into a Tenant Agent Pack in a **version-controlled, testable, and reusable** form.
 
 ## Relationship with [[concepts/security-and-governance/agent-control-plane|Agent Control Plane]]
 
@@ -78,8 +78,8 @@ The [[concepts/security-and-governance/agent-control-plane|Agent Control Plane]]
 
 ## Related Items
 
-- [[saas-agent-era|SaaS Agent Era]] — Overall structural changes in SaaS in the Agent era
+- [[concepts/saas-agent-era|SaaS Agent Era]] — Overall structural changes in SaaS in the Agent era
 - [[concepts/security-and-governance/agent-control-plane|Agent Control Plane]] — The governance layer that cross-manages Tenant Agent Packs
-- [[forward-deployed-engineering|Forward Deployed Engineering]] — Source of field insights that create Packs
+- [[concepts/forward-deployed-engineering|Forward Deployed Engineering]] — Source of field insights that create Packs
 - [[enterprise-ai|Enterprise AI]] — Context of enterprise AI adoption
 

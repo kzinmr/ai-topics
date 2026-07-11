@@ -18,7 +18,7 @@ sources:
 
 # Chris Olah (@ch402)
 
-Canadian machine learning researcher and co-founder of [[anthropic|Anthropic]]. Pioneer of **mechanistic interpretability** — the effort to reverse-engineer neural networks into human-understandable algorithms. Known for DeepDream, activation atlases, the Circuits/Transformer Circuits research threads, and co-authoring "Concrete Problems in AI Safety."
+Canadian machine learning researcher and co-founder of [[entities/anthropic|Anthropic]]. Pioneer of **mechanistic interpretability** — the effort to reverse-engineer neural networks into human-understandable algorithms. Known for DeepDream, activation atlases, the Circuits/Transformer Circuits research threads, and co-authoring "Concrete Problems in AI Safety."
 
 ## Timeline
 
@@ -33,7 +33,7 @@ Canadian machine learning researcher and co-founder of [[anthropic|Anthropic]]. 
 | 2021 | Co-founded **Anthropic** with Dario Amodei, Daniela Amodei, and others |
 | 2022 | Published "Mechanistic Interpretability, Variables, and the Importance of Interpretable Bases" — foundational essay |
 | 2024 | Named to **TIME100 AI** — most influential people in AI |
-| 2026 | Spoke at Vatican for release of *[[magnifica-humanitas|Magnifica Humanitas]]* encyclical |
+| 2026 | Spoke at Vatican for release of *[[concepts/magnifica-humanitas|Magnifica Humanitas]]* encyclical |
 
 ## Research Philosophy
 

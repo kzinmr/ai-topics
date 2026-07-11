@@ -35,7 +35,7 @@ A new attention mechanism that reduces standard self-attention's $O(L^2)$ comple
 - Significantly reduces inference cost in long-context scenarios (up to 128K)
 - Achieves efficiency without performance degradation
 
-DSA was later adopted in successor [[concepts/deepseek-v4|V4]] (CSA: Compressed Sparse Attention) and [[glm-5-1|GLM-5.1]], becoming a standard technique for long-context efficiency in open-source LLMs. See [[concepts/attention-mechanism-variants]] for comparison with existing techniques.
+DSA was later adopted in successor [[concepts/deepseek-v4|V4]] (CSA: Compressed Sparse Attention) and [[concepts/glm-5-1|GLM-5.1]], becoming a standard technique for long-context efficiency in open-source LLMs. See [[concepts/attention-mechanism-variants]] for comparison with existing techniques.
 
 ### Scalable RL Framework (GRPO Enhancement)
 

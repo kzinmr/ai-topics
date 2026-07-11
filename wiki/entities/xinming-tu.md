@@ -51,7 +51,7 @@ The framework maps 13+ inference patterns (from linear CoT to Aletheia's strict 
 
 ## Related People
 
-- **Alex Zhang** — Creator of [[rlm-recursive-language-models|RLMs]], acknowledged in the paper
+- **Alex Zhang** — Creator of [[concepts/rlm-recursive-language-models|RLMs]], acknowledged in the paper
 - **Omar Khattab** — RLM co-author (MIT), acknowledged
 - **Hao Sun** — Acknowledged feedback contributor
 

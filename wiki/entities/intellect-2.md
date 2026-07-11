@@ -20,7 +20,7 @@ sources:
 
 # INTELLECT-2
 
-A 32-billion parameter reasoning model by [[prime-intellect|Prime Intellect]] — the **first globally distributed RL training run** of a model at this scale. Trained via fully asynchronous [[grpo|GRPO]] across a permissionless, heterogeneous swarm of compute contributors.
+A 32-billion parameter reasoning model by [[entities/prime-intellect|Prime Intellect]] — the **first globally distributed RL training run** of a model at this scale. Trained via fully asynchronous [[grpo|GRPO]] across a permissionless, heterogeneous swarm of compute contributors.
 
 | Fact | Detail |
 |------|--------|

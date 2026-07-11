@@ -86,7 +86,7 @@ This hiring reflects a broader industry recognition that the next frontier in AI
 
 ## peoplereadmes Connection
 
-Walz is the first subject of [[muratcan-koylan|Muratcan Koylan's]] [[concepts/peoplereadmes]] framework — an open-source system for creating structured "persona context systems" that study how exceptional technical builders operate. The Riley Walz package models his public professional patterns: how he notices opportunities, chooses projects, compresses complex ideas into public artifacts, uses tools and APIs, launches and archives work, and navigates ethical boundaries.
+Walz is the first subject of [[entities/muratcan-koylan|Muratcan Koylan's]] [[concepts/peoplereadmes]] framework — an open-source system for creating structured "persona context systems" that study how exceptional technical builders operate. The Riley Walz package models his public professional patterns: how he notices opportunities, chooses projects, compresses complex ideas into public artifacts, uses tools and APIs, launches and archives work, and navigates ethical boundaries.
 
 The peoplereadmes analysis identifies his core pattern as: **public data seams → thin interfaces → sharp hooks → institutional reaction → methodology archive**. This framework extracts tacit knowledge from his observable work patterns without impersonation or private inference.
 

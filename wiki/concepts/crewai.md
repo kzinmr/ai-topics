@@ -123,7 +123,7 @@ CrewAI operates in a crowded [[comparisons/agent-orchestration-frameworks|agent 
 | **Model Support** | Any OpenAI-compatible | Any | Any OpenAI/Azure | Azure-first + others |
 | **Primary Audience** | Business users, rapid prototyping | ML engineers, complex workflows | Research, academic | Enterprise .NET/Python |
 
-### CrewAI vs [[langgraph|LangGraph]]
+### CrewAI vs [[concepts/langgraph|LangGraph]]
 
 **LangGraph** takes a lower-level, graph-based approach where developers explicitly define state transitions and edges. CrewAI is higher-level and more declarative — you define roles and tasks, and the framework handles the orchestration. LangGraph is part of the [[entities/langchain]] ecosystem and appeals to engineers who want fine-grained control. CrewAI prioritizes developer experience and rapid team assembly.
 

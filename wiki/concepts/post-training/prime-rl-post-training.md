@@ -24,7 +24,7 @@ Applying RL post-training to build specialized retrieval subagents — the Ramp 
 
 ## Overview
 
-Ramp Labs built **Fast Ask**, a specialized retrieval subagent for spreadsheet navigation, by fine-tuning a [[qwen|Qwen3.5-35B-A3B]] model (~3B active parameters) with [[grpo|GRPO]] on [[entities/prime-intellect|Prime Intellect]]'s platform. The resulting model beat Claude Opus 4.6 by 4 percentage points on exact-match accuracy while running at Haiku 4.5 latency. The project serves as a case study for when and how to apply RL post-training to narrow, verifiable sub-tasks.
+Ramp Labs built **Fast Ask**, a specialized retrieval subagent for spreadsheet navigation, by fine-tuning a [[concepts/qwen|Qwen3.5-35B-A3B]] model (~3B active parameters) with [[grpo|GRPO]] on [[entities/prime-intellect|Prime Intellect]]'s platform. The resulting model beat Claude Opus 4.6 by 4 percentage points on exact-match accuracy while running at Haiku 4.5 latency. The project serves as a case study for when and how to apply RL post-training to narrow, verifiable sub-tasks.
 
 ## Motivation: Why Retrieval as a Subagent
 
@@ -42,7 +42,7 @@ This pattern — training small, verifiable subagents for narrow bottlenecks whi
 
 ### Base Model and Platform
 
-Fast Ask used [[qwen|Qwen3.5-35B-A3B]] (a sparse MoE with ~3B active parameters) as the base model, trained on Prime Intellect's Lab platform. The training environment directly mirrored Ramp's production deployment harness.
+Fast Ask used [[concepts/qwen|Qwen3.5-35B-A3B]] (a sparse MoE with ~3B active parameters) as the base model, trained on Prime Intellect's Lab platform. The training environment directly mirrored Ramp's production deployment harness.
 
 The run used:
 - **100 training steps**, batch size 256, 8 rollouts per example

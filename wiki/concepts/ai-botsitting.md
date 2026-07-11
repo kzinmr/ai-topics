@@ -44,7 +44,7 @@ Botsitting exemplifies the [[concepts/after-automation]] paradox: rather than el
 
 ## Economic Implications
 
-The botsitting finding challenges standard ROI calculations for enterprise AI deployment. If organizations are not tracking or accounting for the 6.4 hours/week of hidden labor, the true cost of AI adoption is systematically underestimated. This connects to broader questions in [[ai-slop-productivity-paradox|AI slop and the productivity paradox]] — the phenomenon where AI-generated outputs create downstream cleanup costs that offset or reverse initial productivity gains. As AI systems become more prevalent, the aggregate economic drag of unmeasured botsitting labor may be substantial, echoing the [[ai-labor-displacement|AI labor displacement]] debate — not about jobs eliminated, but about jobs transformed in ways that reduce worker satisfaction and increase hidden costs.
+The botsitting finding challenges standard ROI calculations for enterprise AI deployment. If organizations are not tracking or accounting for the 6.4 hours/week of hidden labor, the true cost of AI adoption is systematically underestimated. This connects to broader questions in [[concepts/ai-slop-productivity-paradox|AI slop and the productivity paradox]] — the phenomenon where AI-generated outputs create downstream cleanup costs that offset or reverse initial productivity gains. As AI systems become more prevalent, the aggregate economic drag of unmeasured botsitting labor may be substantial, echoing the [[concepts/ai-labor-displacement|AI labor displacement]] debate — not about jobs eliminated, but about jobs transformed in ways that reduce worker satisfaction and increase hidden costs.
 
 ## Why Botsitting Happens
 
@@ -65,7 +65,7 @@ The Glean report found that organizations seeing better results are not simply d
 
 ## Worker Impact
 
-Beyond productivity, botsitting has psychological effects. Workers who absorb this labor without recognition grow exhausted and disengage. The finding that high-botsitting workers are 73% more likely to job-hunt suggests that unmanaged botsitting is a retention risk. When workers are asked to automate the meaningful parts of their work and spend their remaining time supervising AI agents, the result is a form of [[agent-productivity|productivity paradox]] at the individual level: more output, less satisfaction.
+Beyond productivity, botsitting has psychological effects. Workers who absorb this labor without recognition grow exhausted and disengage. The finding that high-botsitting workers are 73% more likely to job-hunt suggests that unmanaged botsitting is a retention risk. When workers are asked to automate the meaningful parts of their work and spend their remaining time supervising AI agents, the result is a form of [[concepts/agent-productivity|productivity paradox]] at the individual level: more output, less satisfaction.
 
 ## Related Concepts
 

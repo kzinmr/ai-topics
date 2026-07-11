@@ -21,7 +21,7 @@ sources:
 
 **X/Twitter:** [@eliebakouch](https://x.com/eliebakouch)
 **Hugging Face:** [hf.co/eliebak](https://huggingface.co/eliebak)
-**Role:** ML Engineer & Researcher, [[prime-intellect|Prime Intellect]] (formerly Hugging Face)
+**Role:** ML Engineer & Researcher, [[entities/prime-intellect|Prime Intellect]] (formerly Hugging Face)
 **Focus:** LLM Pretraining, MoE Scaling Laws, Data-Centric Training, Synthetic Data
 
 ## Overview

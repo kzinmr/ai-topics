@@ -99,7 +99,7 @@ Key implementation details:
 
 ## Simon Willison's Annotations (2024-12-20)
 
-[[simon-willison|Simon Willison]] described this article as "the clearest practical guide to building LLM agents I have seen."
+[[entities/simon-willison|Simon Willison]] described this article as "the clearest practical guide to building LLM agents I have seen."
 Key insights from his blog post ([[raw/articles/2024-12-20_simon-willison_building-effective-agents]]):
 
 ### Praise for Terminology

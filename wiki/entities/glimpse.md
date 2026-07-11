@@ -22,7 +22,7 @@ sources: [raw/articles/2026-03-13_michaellivs_reverse-engineering-claude-generat
 
 ## Use Case: Generative UI for Terminal Agents
 
-Glimpse was used by [[michael-lively|Michael Lively]] to recreate [[anthropic|Anthropic]]'s [[generative-ui|generative UI]] system for **pi**, a terminal-based coding agent. The challenge: terminals can't render interactive HTML/JS. Glimpse solves this by spawning a native WKWebView window in <50ms with bidirectional JSON communication, letting the terminal agent open interactive widgets (charts, sliders, diagrams) while staying in the terminal workflow.
+Glimpse was used by [[entities/michael-lively|Michael Lively]] to recreate [[entities/anthropic|Anthropic]]'s [[concepts/generative-ui|generative UI]] system for **pi**, a terminal-based coding agent. The challenge: terminals can't render interactive HTML/JS. Glimpse solves this by spawning a native WKWebView window in <50ms with bidirectional JSON communication, letting the terminal agent open interactive widgets (charts, sliders, diagrams) while staying in the terminal workflow.
 
 The integration uses:
 1. `open(wrapHTML(html), {width, height, title})` to spawn the window
@@ -47,7 +47,7 @@ pi extension (TypeScript)
 
 ## Related
 
-- [[generative-ui|Generative UI (Claude Visualizer)]] — the system Glimpse helped recreate for terminal agents
-- [[michael-lively|Michael Lively]] — developer who used Glimpse for the pi generative UI extension
-- [[anthropic|Anthropic]] — whose Claude generative UI inspired the terminal reimplementation
+- [[concepts/generative-ui|Generative UI (Claude Visualizer)]] — the system Glimpse helped recreate for terminal agents
+- [[entities/michael-lively|Michael Lively]] — developer who used Glimpse for the pi generative UI extension
+- [[entities/anthropic|Anthropic]] — whose Claude generative UI inspired the terminal reimplementation
 - npm: [glimpseui](https://www.npmjs.com/package/glimpseui)

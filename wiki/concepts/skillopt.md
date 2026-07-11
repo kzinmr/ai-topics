@@ -24,7 +24,7 @@ related:
 
 # SkillOpt
 
-> **TL;DR:** A text-space optimizer that trains a frozen LLM agent's skill document using deep-learning discipline — rollout batches, validation gates, learning rates, and momentum. Best or tied-best on all 52 evaluated (model, benchmark, harness) cells. +23.5 pts average gain over no-skill. Outperforms [[gepa|GEPA]], TextGrad, and EvoSkill across the board.
+> **TL;DR:** A text-space optimizer that trains a frozen LLM agent's skill document using deep-learning discipline — rollout batches, validation gates, learning rates, and momentum. Best or tied-best on all 52 evaluated (model, benchmark, harness) cells. +23.5 pts average gain over no-skill. Outperforms [[concepts/gepa|GEPA]], TextGrad, and EvoSkill across the board.
 
 SkillOpt is a skill optimization framework by Microsoft Research, Shanghai Jiao Tong University, Tongji University, and Fudan University (May 2026). It treats an agent's **skill document** (a natural-language policy in the system prompt) as a **trainable external state** and applies training-style controls borrowed from deep learning: batches, validation gates, learning rates, momentum. The deployed artifact is a compact `best_skill.md` file (~300–2,000 tokens) with zero additional inference cost.
 
@@ -89,7 +89,7 @@ Key findings:
 
 ## Comparison with GEPA
 
-SkillOpt and [[gepa|GEPA]] are both text-space skill optimizers that work without model weight changes, but they diverge on optimization philosophy:
+SkillOpt and [[concepts/gepa|GEPA]] are both text-space skill optimizers that work without model weight changes, but they diverge on optimization philosophy:
 
 | Dimension | GEPA | SkillOpt |
 |-----------|------|----------|

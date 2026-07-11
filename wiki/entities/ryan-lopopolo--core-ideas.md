@@ -154,5 +154,5 @@ Ryan's work at OpenAI Frontier points to safe, observable, governable agent depl
 
 ## See Also
 
-- [[ryan-lopopolo--timeline|Timeline & Career]]
-- [[ryan-lopopolo--writings|Writings & Speaking]]
+- [[entities/ryan-lopopolo--timeline|Timeline & Career]]
+- [[entities/ryan-lopopolo--writings|Writings & Speaking]]

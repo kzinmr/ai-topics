@@ -61,7 +61,7 @@ Google introduced **MTP drafters** for the Gemma 4 model family, a specialized s
 
 MTP represents a production-hardened implementation of speculative decoding, deployed across Google's entire Gemma 4 family from edge (E2B) to workstation (31B). It can be seen as the "Google-flavored" answer to the draft-and-verify paradigm: a purpose-built lightweight drafter sharing compute with the target model.
 
-See also: [[gemma-4|Google Gemma 4]], [Google Blog: Accelerating Gemma 4 with MTP](https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/)
+See also: [[entities/gemma-4|Google Gemma 4]], [Google Blog: Accelerating Gemma 4 with MTP](https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/)
 
 ## Performance Characteristics
 

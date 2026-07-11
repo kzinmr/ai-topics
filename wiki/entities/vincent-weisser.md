@@ -16,7 +16,7 @@ sources:
 
 # Vincent Weisser
 
-Co-founder & CEO of [[prime-intellect|Prime Intellect]] — building the open stack for self-improving agents and decentralized AI infrastructure.
+Co-founder & CEO of [[entities/prime-intellect|Prime Intellect]] — building the open stack for self-improving agents and decentralized AI infrastructure.
 
 ## Bio
 

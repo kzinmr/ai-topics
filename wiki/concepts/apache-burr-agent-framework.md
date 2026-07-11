@@ -47,7 +47,7 @@ The core API consists of three primitives:
 Burr's design is explicitly anti-magic and decision-centric. Unlike frameworks that abstract away agent internals, Burr makes state transitions explicit and observable. This supports:
 
 - **[[concepts/durable-execution]]**: State is persisted at every step, enabling pause/resume and replay from any point.
-- **[[ai-observability|Observability]]**: A built-in Burr UI provides real-time tracing of state transitions and action execution.
+- **[[concepts/ai-observability|Observability]]**: A built-in Burr UI provides real-time tracing of state transitions and action execution.
 - **Deterministic replay**: Debug production issues by replaying exact application states.
 - **No DSL, no YAML**: Everything is defined in Python code with decorators and typed APIs.
 
@@ -65,7 +65,7 @@ This two-layer architecture (Hamilton for data, Burr for decision flow) position
 
 ## Comparison to Other Agent Frameworks
 
-Burr enters a crowded landscape of agent frameworks, including [[langgraph|LangGraph]], CrewAI, AutoGen, and Microsoft's Agent Framework. Key differentiators:
+Burr enters a crowded landscape of agent frameworks, including [[concepts/langgraph|LangGraph]], CrewAI, AutoGen, and Microsoft's Agent Framework. Key differentiators:
 
 | Dimension | Burr | LangGraph | CrewAI/AutoGen |
 |---|---|---|---|

@@ -59,7 +59,7 @@ See [[concepts/subagent-patterns]] for Chieng's four-pattern taxonomy (hierarchi
 Frameworks like AOrchestra spawn sub-agents as runtime tuples ⟨Instruction, Context, Tools⟩, creating genuine hierarchical decomposition.
 
 ### Recursive Architectures
-[[rlm-recursive-language-models|RLMs]] achieve span compression via functional recursion — the purest instantiation of topology + isolation.
+[[concepts/rlm-recursive-language-models|RLMs]] achieve span compression via functional recursion — the purest instantiation of topology + isolation.
 
 ### Coding Agents
 SWE-agent, Claude Code, and Codex leverage compilers/test suites as powerful verifiers (classical verification regime: c_v ≪ c_g).

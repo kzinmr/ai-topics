@@ -43,7 +43,7 @@ Beyond specific use cases, GPT-Live represents a step toward **ambient AI presen
 
 ## Technical Significance
 
-The full-duplex architecture is a meaningful technical milestone in [[multimodal]] AI interaction:
+The full-duplex architecture is a meaningful technical milestone in [[concepts/multimodal]] AI interaction:
 
 | Aspect | Half-Duplex (Advanced Voice Mode) | Full-Duplex (GPT-Live) |
 |---------|-----------------------------------|------------------------|
@@ -71,12 +71,12 @@ The HN launch thread garnered **717 points and 109 comments**, becoming the #1 s
 - **Social dynamics**: Interesting discussion of how "quiet!" commands learned from AI interactions might affect human conversation patterns
 - **Open-source gap**: Recognition that full-duplex remains under-explored in open-source, with PersonaPlex as one of few available alternatives
 
-[[simon-willison|Simon Willison]] covered the launch on his blog (simonwillison.net, July 8, 2026), providing independent analysis and broader AI community context.
+[[entities/simon-willison|Simon Willison]] covered the launch on his blog (simonwillison.net, July 8, 2026), providing independent analysis and broader AI community context.
 
 ## Related Pages
 
-- [[openai]] — OpenAI organization page
+- [[entities/openai]] — OpenAI organization page
 - [[concepts/openai/realtime-api]] — OpenAI's Realtime API and Advanced Voice Mode
-- [[multimodal]] — Multimodal AI (voice as a modality)
-- [[simon-willison]] — Simon Willison's coverage of the launch
-- [[speech-audio-asr-tts-voice]] — Broader speech and voice AI landscape
+- [[concepts/multimodal]] — Multimodal AI (voice as a modality)
+- [[entities/simon-willison]] — Simon Willison's coverage of the launch
+- [[concepts/speech-audio-asr-tts-voice]] — Broader speech and voice AI landscape

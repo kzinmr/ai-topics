@@ -20,7 +20,7 @@ related:
 
 # peoplereadmes
 
-**peoplereadmes** is an open-source framework by [[muratcan-koylan|Muratcan Koylan]] for creating structured "persona context systems" — research artifacts that help humans and AI agents understand how exceptional technical builders operate. It is explicitly NOT a celebrity chatbot or impersonation project. The goal is to extract transferable knowledge from observable professional patterns.
+**peoplereadmes** is an open-source framework by [[entities/muratcan-koylan|Muratcan Koylan]] for creating structured "persona context systems" — research artifacts that help humans and AI agents understand how exceptional technical builders operate. It is explicitly NOT a celebrity chatbot or impersonation project. The goal is to extract transferable knowledge from observable professional patterns.
 
 The first persona package is `personas/riley-walz/`, modeling the public professional patterns of [[entities/riley-walz]].
 

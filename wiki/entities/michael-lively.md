@@ -16,15 +16,15 @@ sources: [raw/articles/2026-03-13_michaellivs_reverse-engineering-claude-generat
 
 # Michael Lively
 
-Michael Lively (michaellivs.com) is a software engineer and blogger focused on **reverse-engineering AI products** and building **terminal-based developer tooling**. He is the creator of [[glimpse|Glimpse]]-based generative UI extensions for coding agents.
+Michael Lively (michaellivs.com) is a software engineer and blogger focused on **reverse-engineering AI products** and building **terminal-based developer tooling**. He is the creator of [[entities/glimpse|Glimpse]]-based generative UI extensions for coding agents.
 
 ## Notable Work
 
 ### Reverse-Engineering Claude's Generative UI (March 2026)
 
-Lively reverse-engineered [[anthropic|Anthropic]]'s `show_widget` generative UI system on claude.ai by interrogating [[claude-models|Claude]] about its own implementation. He extracted the complete design guidelines verbatim from browser devtools network payloads, mapped the module system (`diagram`, `mockup`, `interactive`, `chart`, `art`), and documented the streaming DOM injection architecture.
+Lively reverse-engineered [[entities/anthropic|Anthropic]]'s `show_widget` generative UI system on claude.ai by interrogating [[claude-models|Claude]] about its own implementation. He extracted the complete design guidelines verbatim from browser devtools network payloads, mapped the module system (`diagram`, `mockup`, `interactive`, `chart`, `art`), and documented the streaming DOM injection architecture.
 
-He then **recreated the system** for **pi**, a terminal-based coding agent, using [[glimpse|Glimpse]] (macOS WKWebView) and morphdom (DOM diffing) — achieving the same progressive streaming widget rendering in a native window launched from the terminal.
+He then **recreated the system** for **pi**, a terminal-based coding agent, using [[entities/glimpse|Glimpse]] (macOS WKWebView) and morphdom (DOM diffing) — achieving the same progressive streaming widget rendering in a native window launched from the terminal.
 
 Key discoveries:
 - Generative UI is a **tool call** (`show_widget`), not inline markdown
@@ -43,7 +43,7 @@ Lively's blog posts combine hands-on reverse engineering with working code imple
 
 ## Related
 
-- [[generative-ui|Generative UI (Claude Visualizer)]] — concept page for the system Lively reverse-engineered
-- [[glimpse|Glimpse]] — macOS WKWebView library he used for the terminal reimplementation
-- [[anthropic|Anthropic]] — company behind Claude and the generative UI system
+- [[concepts/generative-ui|Generative UI (Claude Visualizer)]] — concept page for the system Lively reverse-engineered
+- [[entities/glimpse|Glimpse]] — macOS WKWebView library he used for the terminal reimplementation
+- [[entities/anthropic|Anthropic]] — company behind Claude and the generative UI system
 - Blog: [michaellivs.com](https://michaellivs.com)

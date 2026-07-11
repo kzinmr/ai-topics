@@ -52,5 +52,5 @@ This repo serves as a **reference implementation** for agentic engineering patte
 
 ## See Also
 
-- [[boris-cherny--core-ideas|Core Ideas & Philosophy]]
-- [[boris-cherny--claude-code-development|Claude Code Development Story]]
+- [[entities/boris-cherny--core-ideas|Core Ideas & Philosophy]]
+- [[entities/boris-cherny--claude-code-development|Claude Code Development Story]]

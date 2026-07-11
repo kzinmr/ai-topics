@@ -20,7 +20,7 @@ sources:
 
 # Quantifying Infrastructure Noise in Agentic Coding Evals
 
-A July 2026 analysis from [[openai|OpenAI]] that reveals systematic issues in **SWE-Bench Pro**, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI coding agents. The core argument: infrastructure noise — variations in harness setup, execution environment, and tooling — can produce misleading signals that obscure genuine model capability differences.
+A July 2026 analysis from [[entities/openai|OpenAI]] that reveals systematic issues in **SWE-Bench Pro**, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI coding agents. The core argument: infrastructure noise — variations in harness setup, execution environment, and tooling — can produce misleading signals that obscure genuine model capability differences.
 
 ## The Infrastructure Noise Problem
 
@@ -63,9 +63,9 @@ See also: [[concepts/coding-agents/coding-agents]] for the broader coding agent 
 
 ## Related Pages
 
-- [[openai]] — OpenAI organization page
+- [[entities/openai]] — OpenAI organization page
 - [[concepts/coding-agents/coding-agents]] — Coding agents overview
 - [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Related infrastructure noise analysis
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-Bench benchmark details
-- [[agentic-engineering]] — Agentic engineering practices
+- [[concepts/agentic-engineering]] — Agentic engineering practices
 - [[concepts/llm-evaluation]] — Benchmark methodology and landscape

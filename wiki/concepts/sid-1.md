@@ -26,7 +26,7 @@ SID-1 is the first model end-to-end reinforcement-learned (RL) for **agentic ret
 | Item | Detail |
 |------|------|
 | Release Date | December 4, 2025 |
-| Developer | SID.ai (CEO: [[max-rumpf|Max Rumpf]]) |
+| Developer | SID.ai (CEO: [[entities/max-rumpf|Max Rumpf]]) |
 | Training Method | Modified [[grpo|GRPO]] by Magistral, no SFT (cold-start RL) |
 | Availability | API, AWS Bedrock, self-hosted |
 | Compute Resources | Provided by NVIDIA |

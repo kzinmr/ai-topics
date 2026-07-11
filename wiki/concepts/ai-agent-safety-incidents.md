@@ -78,7 +78,7 @@ The Fedora incident specifically shows that even well-audited open source distri
 AI agents performing system-level operations must be sandboxed. The [[sandbox/infrastructure|infrastructure-level sandboxing]] patterns (containers, microVMs, gVisor) are essential for production deployments.
 
 ### 2. Agent Safety Requires Active Monitoring
-Passive security is insufficient. [[active-observability|Active observability]] — continuous monitoring of agent behavior, token usage, and system impact — is required to detect anomalies before they cause damage.
+Passive security is insufficient. [[concepts/active-observability|Active observability]] — continuous monitoring of agent behavior, token usage, and system impact — is required to detect anomalies before they cause damage.
 
 ### 3. Privilege Boundaries Matter
 The distinction between user-space and system-space operations must be strictly enforced. Agents should not be able to escalate privileges without explicit human authorization.

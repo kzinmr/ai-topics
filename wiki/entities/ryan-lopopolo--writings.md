@@ -65,5 +65,5 @@ Back to main profile: [[entities/ryan-lopopolo]]
 
 ## See Also
 
-- [[ryan-lopopolo--core-ideas|Core Ideas & Philosophy]]
-- [[ryan-lopopolo--timeline|Timeline & Career]]
+- [[entities/ryan-lopopolo--core-ideas|Core Ideas & Philosophy]]
+- [[entities/ryan-lopopolo--timeline|Timeline & Career]]

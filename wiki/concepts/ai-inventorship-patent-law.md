@@ -20,7 +20,7 @@ related:
 
 # AI Inventorship and Patent Law
 
-The legal question of whether artificial intelligence systems can be recognized as inventors on patent applications. As of mid-2026, every major jurisdiction that has ruled on the matter — Japan, the United States, the United Kingdom, the European Union, and others — has consistently held that only natural persons can be inventors. This consensus sits at the intersection of IP law, [[ai-policy]], and [[ai-regulation-2026]].
+The legal question of whether artificial intelligence systems can be recognized as inventors on patent applications. As of mid-2026, every major jurisdiction that has ruled on the matter — Japan, the United States, the United Kingdom, the European Union, and others — has consistently held that only natural persons can be inventors. This consensus sits at the intersection of IP law, [[concepts/ai-policy]], and [[concepts/ai-regulation-2026]].
 
 ## Discriminative Summary
 
@@ -31,7 +31,7 @@ AI inventorship occupies a distinct legal space from the other two major AI-IP b
 | **AI Inventorship (Patent)** | Can AI be an inventor? | Settled: No (all major jurisdictions) |
 | **AI Copyright** | Can AI-generated works be copyrighted? | Contested: USCO requires human authorship; UK allows computer-generated works |
 | **AI Training IP** | Does training on copyrighted data infringe? | Active litigation; no consensus |
-| **AI Governance** | How should AI development be regulated? | Emerging frameworks; [[ai-governance-political-pressure]] documents political tensions |
+| **AI Governance** | How should AI development be regulated? | Emerging frameworks; [[concepts/ai-governance-political-pressure]] documents political tensions |
 
 The inventorship question is the most legally settled of these domains — but the most practically disruptive, since AI-assisted inventions are increasingly common and the legal framework offers no clear path for patent protection when AI contributes substantially to an inventive step.
 
@@ -91,9 +91,9 @@ The consensus against AI inventorship creates pressure for legislative reform:
 
 ### Connection to Broader AI Governance
 The inventorship question exemplifies a pattern in AI law: the legal system applies existing frameworks that assume human agency, and when AI challenges those assumptions, the answer is consistently to reaffirm human primacy. This pattern appears in:
-- **[[ai-regulation-2026]]**: Regulatory frameworks increasingly require human accountability for AI decisions
-- **[[ai-governance-political-pressure]]**: Political interference in AI governance demonstrates the stakes and the insufficiency of purely technical or legal solutions
-- **[[anthropic-alibaba-claude-ip-dispute]]**: The IP dispute over model distillation raises parallel questions about whether training on another model's outputs is analogous to patent infringement
+- **[[concepts/ai-regulation-2026]]**: Regulatory frameworks increasingly require human accountability for AI decisions
+- **[[concepts/ai-governance-political-pressure]]**: Political interference in AI governance demonstrates the stakes and the insufficiency of purely technical or legal solutions
+- **[[concepts/anthropic-alibaba-claude-ip-dispute]]**: The IP dispute over model distillation raises parallel questions about whether training on another model's outputs is analogous to patent infringement
 
 ### The Copyright Parallel
 While AI inventorship is settled (no), AI copyright remains deeply contested. The US Copyright Office requires human authorship; the UK uniquely allows copyright for "computer-generated works" where there is no human author. This asymmetry — patents requiring human inventors while copyright grapples with AI authorship — reveals a fragmented approach to AI and IP law that may eventually require harmonization.
@@ -107,7 +107,7 @@ While AI inventorship is settled (no), AI copyright remains deeply contested. Th
 
 ## See Also
 
-- [[ai-policy]] — Broader AI regulatory and strategic frameworks
-- [[ai-regulation-2026]] — Current state of AI legislation globally
-- [[ai-governance-political-pressure]] — Political dynamics affecting AI governance decisions
-- [[anthropic-alibaba-claude-ip-dispute]] — Parallel IP law challenges in the AI era
+- [[concepts/ai-policy]] — Broader AI regulatory and strategic frameworks
+- [[concepts/ai-regulation-2026]] — Current state of AI legislation globally
+- [[concepts/ai-governance-political-pressure]] — Political dynamics affecting AI governance decisions
+- [[concepts/anthropic-alibaba-claude-ip-dispute]] — Parallel IP law challenges in the AI era

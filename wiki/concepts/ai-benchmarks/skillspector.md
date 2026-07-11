@@ -116,7 +116,7 @@ Scoring formula: CRITICAL +50, HIGH +25, MEDIUM +10, LOW +5, then 1.3x multiplie
 | **LLM dependency** | Optional (Stage 2) | No | No | No |
 | **Agent-native** | Yes (designed for agent skills/MCP) | Yes (first agentic benchmark) | No | No |
 
-SkillSpector occupies a unique niche: it is not a *capability* benchmark but rather a *security evaluation* tool specifically designed for the emerging [[ai-agents|AI agent]] ecosystem. While [[concepts/ai-benchmarks/swe-bench|SWE-bench]] tests whether agents can produce working code and [[concepts/ai-benchmarks/mmlu-pro|MMLU Pro]] tests knowledge breadth, SkillSpector tests whether the skill packages agents install are safe to run — addressing a gap that becomes critical as [[coding-agents|coding agents]] gain filesystem and network access.
+SkillSpector occupies a unique niche: it is not a *capability* benchmark but rather a *security evaluation* tool specifically designed for the emerging [[concepts/ai-agents|AI agent]] ecosystem. While [[concepts/ai-benchmarks/swe-bench|SWE-bench]] tests whether agents can produce working code and [[concepts/ai-benchmarks/mmlu-pro|MMLU Pro]] tests knowledge breadth, SkillSpector tests whether the skill packages agents install are safe to run — addressing a gap that becomes critical as [[coding-agents|coding agents]] gain filesystem and network access.
 
 ---
 
@@ -126,9 +126,9 @@ SkillSpector sits at the intersection of three growing trends:
 
 1. **Agent skill marketplaces**: As Claude Code, Codex CLI, and other coding agents adopt skill/plugin ecosystems, the attack surface for supply-chain-style vulnerabilities expands. SkillSpector provides the first dedicated scanner for this layer.
 
-2. **MCP security**: The [[mcp|Model Context Protocol]] enables agents to call external tools. SkillSpector's MCP Least Privilege and MCP Tool Poisoning categories (8 patterns) address protocol-specific risks like underdeclared capabilities and hidden instructions in tool metadata.
+2. **MCP security**: The [[concepts/mcp|Model Context Protocol]] enables agents to call external tools. SkillSpector's MCP Least Privilege and MCP Tool Poisoning categories (8 patterns) address protocol-specific risks like underdeclared capabilities and hidden instructions in tool metadata.
 
-3. **Evaluation infrastructure**: SkillSpector complements existing eval frameworks like [[inspect-ai|Inspect AI]] and [[promptfoo|promptfoo]] by adding a security dimension. It can be integrated into CI/CD pipelines via SARIF output, making it suitable for pre-deployment gatekeeping of agent skills.
+3. **Evaluation infrastructure**: SkillSpector complements existing eval frameworks like [[entities/inspect-ai|Inspect AI]] and [[entities/promptfoo|promptfoo]] by adding a security dimension. It can be integrated into CI/CD pipelines via SARIF output, making it suitable for pre-deployment gatekeeping of agent skills.
 
 ---
 

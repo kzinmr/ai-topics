@@ -17,7 +17,7 @@ sources:
 
 > "Humans are the bread on either end of the AI's work." — Kieran Klaassen, GM of Cora at Every
 
-A collaboration pattern for complex AI-assisted work where the human frames the task and judges the output, while the AI does the heavy lifting in between. Named by [[kieran-klaassen|Kieran Klaassen]].
+A collaboration pattern for complex AI-assisted work where the human frames the task and judges the output, while the AI does the heavy lifting in between. Named by [[entities/kieran-klaassen|Kieran Klaassen]].
 
 ## Pattern
 

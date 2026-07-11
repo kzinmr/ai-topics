@@ -364,7 +364,7 @@ This produces dramatically better results because Claude catches its own mistake
 
 
 ## Pattern 3: MCP Integration (Shopify AI Toolkit)
-In April 2026, Shopify released an open-source [[mcp|MCP]] server that connects Claude Code directly to Shopify's documentation, GraphQL API schemas, and live store operations:
+In April 2026, Shopify released an open-source [[concepts/mcp|MCP]] server that connects Claude Code directly to Shopify's documentation, GraphQL API schemas, and live store operations:
 
 ```bash
 claude mcp add --transport stdio shopify-dev-mcp -- npx -y @shopify/dev-mcp@latest

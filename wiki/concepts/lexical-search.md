@@ -17,7 +17,7 @@ sources:
 
 # Lexical Search
 
-Lexical search is the foundational approach to information retrieval where documents are matched to queries through **token-based matching** against an inverted index. Unlike [[embeddings|semantic search]] which relies on vector similarity, lexical search depends entirely on the quality of tokenization — it only finds what the tokenizer can represent.
+Lexical search is the foundational approach to information retrieval where documents are matched to queries through **token-based matching** against an inverted index. Unlike [[entities/embeddings|semantic search]] which relies on vector similarity, lexical search depends entirely on the quality of tokenization — it only finds what the tokenizer can represent.
 
 > "Only as smart as your tokenizer." — Doug Turnbull
 
@@ -31,7 +31,7 @@ Documents → Tokenizer → Inverted Index → Query Tokenization → Match & Sc
 2. **Indexing**: An inverted index maps each token to the documents containing it
 3. **Query Processing**: The search query is tokenized using the same tokenizer
 4. **Matching**: Query tokens are looked up in the inverted index to find candidate documents
-5. **Scoring**: Matching documents are ranked using a scoring function (typically [[bm25|BM25]])
+5. **Scoring**: Matching documents are ranked using a scoring function (typically [[concepts/bm25|BM25]])
 
 ## Tokenization
 
@@ -126,7 +126,7 @@ DisMax ("**Dis**junction **Max**imum") is the standard approach in Elasticsearch
 
 ## Relationship to BM25
 
-Lexical search provides the **match** — BM25 provides the **score**. The two are inseparable in practice: lexical matching identifies candidate documents, and [[bm25|BM25]] ranks them by relevance.
+Lexical search provides the **match** — BM25 provides the **score**. The two are inseparable in practice: lexical matching identifies candidate documents, and [[concepts/bm25|BM25]] ranks them by relevance.
 
 > "BM25 ≈ Relevance Given Match" — BM25 answers "how much is this passage *about* that match?"
 
@@ -168,7 +168,7 @@ The critical design principle: **scale each field's TF by its own field length f
 bm25f = blended_idf * bm25f_tf
 ```
 
-See [[bm25#bm25f-multi-field-bm25|BM25 → BM25F]] for the full theoretical treatment, parameter breakdown, and Doug Turnbull's original 2025 blog derivation.
+See [[concepts/bm25#bm25f-multi-field-bm25|BM25 → BM25F]] for the full theoretical treatment, parameter breakdown, and Doug Turnbull's original 2025 blog derivation.
 
 ## Lexical Search in the Agent Era
 

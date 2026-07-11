@@ -164,7 +164,7 @@ CTO Mikhail Parakhin describes Liquid as "the first genuinely competitive non-tr
 
 ## Coding Interviews for Directors and Above
 
-Shopify added mandatory [[code-review|coding interviews]] for **all engineering director and VP hires**. Candidates pair-program with Farhan Thawar; AI tools are allowed and encouraged.
+Shopify added mandatory [[concepts/code-review|coding interviews]] for **all engineering director and VP hires**. Candidates pair-program with Farhan Thawar; AI tools are allowed and encouraged.
 
 - **"If they don't use a co-pilot, they usually get creamed by someone who does"** — Farhan Thawar
 - Tests ability to **discern good AI-generated code from bad**
@@ -184,7 +184,7 @@ Both patterns are documented in detail at [[concepts/claude-code/claude-code]].
 
 ## Safe Autonomy with Guardrails
 
-Shopify's [[agent-safety|permission-based guardrail system]] creates a bounded autonomy zone:
+Shopify's [[concepts/agent-safety|permission-based guardrail system]] creates a bounded autonomy zone:
 
 - **Allow**: read, write (Edit), test, lint, git status/diff/add/commit
 - **Deny**: git push, deploy, database drops (`db:drop`), secret access (`.env` files), destructive operations (`rm -rf`)

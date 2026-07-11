@@ -55,5 +55,5 @@ Back to main profile: [[entities/ryan-lopopolo]]
 
 ## See Also
 
-- [[ryan-lopopolo--core-ideas|Core Ideas & Philosophy]]
-- [[ryan-lopopolo--writings|Writings & Speaking]]
+- [[entities/ryan-lopopolo--core-ideas|Core Ideas & Philosophy]]
+- [[entities/ryan-lopopolo--writings|Writings & Speaking]]

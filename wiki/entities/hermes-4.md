@@ -20,11 +20,11 @@ sources:
 
 # Hermes 4
 
-**Hermes 4** is a family of open-weight **hybrid reasoning models** developed by [[nous-research|Nous Research]], released in August 2025. The models combine structured, multi-turn reasoning (via `<think>` / `</think>` delimiters) with broad instruction-following ability. Three sizes were trained: **14B** (from Qwen3-14B base), **70B**, and **405B** (from Llama 3.1 bases).
+**Hermes 4** is a family of open-weight **hybrid reasoning models** developed by [[entities/nous-research|Nous Research]], released in August 2025. The models combine structured, multi-turn reasoning (via `<think>` / `</think>` delimiters) with broad instruction-following ability. Three sizes were trained: **14B** (from Qwen3-14B base), **70B**, and **405B** (from Llama 3.1 bases).
 
 | Fact | Detail |
 |------|--------|
-| **Developer** | [[nous-research|Nous Research]] |
+| **Developer** | [[entities/nous-research|Nous Research]] |
 | **Base Models** | Llama 3.1 (70B, 405B), Qwen3 (14B) |
 | **Training Data** | ~5M samples, ~19B tokens |
 | **Data Composition** | 3.5M reasoning + 1.6M non-reasoning samples |

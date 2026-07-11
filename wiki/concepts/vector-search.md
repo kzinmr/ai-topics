@@ -202,7 +202,7 @@ Assume you have this data and it's good? Assume you have the skill to maintain t
 With AI agents, vector search is a **tool**, not the whole system:
 
 1. **Agent calls vector search** for broad semantic recall
-2. **Agent calls [[bm25|BM25]]** for precise term matching
+2. **Agent calls [[concepts/bm25|BM25]]** for precise term matching
 3. **Agent reasons about results** — combines, verifies, filters, reranks
 4. **Agent adapts strategy per query** — product name → BM25, news topic → vector+recency
 

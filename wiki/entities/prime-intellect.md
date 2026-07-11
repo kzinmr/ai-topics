@@ -55,7 +55,7 @@ Decentralized GPU compute marketplace enabling distributed training across globa
 
 ### Models
 - **INTELLECT-1**: 10B parameter model trained with distributed hardware (late 2024)
-- **[[intellect-2|INTELLECT-2]]**: 32B reasoning model — first globally distributed RL training run. GRPO, async across permissionless contributors. Outperforms QwQ-32B. (May 2025)
+- **[[entities/intellect-2|INTELLECT-2]]**: 32B reasoning model — first globally distributed RL training run. GRPO, async across permissionless contributors. Outperforms QwQ-32B. (May 2025)
 - **INTELLECT-3**: 106B MoE model (12B active), trained with large-scale RL on 512×H200 GPUs. Surpasses 6× larger open models on reasoning/agentic benchmarks.
 
 ### Datasets
@@ -105,11 +105,11 @@ Collaborating with NVIDIA, vLLM, and SGLang to make `renderers` a reference stan
 
 ## Key People
 
-- **[[vincent-weisser|Vincent Weisser]]** ([@vincentweisser](https://x.com/vincentweisser)) — Co-founder & CEO. Building open superintelligence stack.
+- **[[entities/vincent-weisser|Vincent Weisser]]** ([@vincentweisser](https://x.com/vincentweisser)) — Co-founder & CEO. Building open superintelligence stack.
 - **Johannes Hagemann** — Co-founder.
-- **[[will-brown|Will Brown]]** ([@willccbb](https://x.com/willccbb)) — Research. "Reward hacking." PhD Columbia (2024). Leads [[verifiers-rl|verifiers]] and [[prime-rl]]. COLT 2024.
-- **[[florian-brand|Florian Brand]]** ([@xeophon](https://x.com/xeophon)) — Research Engineer, Evals. Editor at Interconnects (open models).
-- **[[elie-bakouch|Elie Bakouch]]** ([@eliebakouch](https://x.com/eliebakouch)) — Training LLMs. Previously HuggingFace (SmolLM, FineWeb).
+- **[[entities/will-brown|Will Brown]]** ([@willccbb](https://x.com/willccbb)) — Research. "Reward hacking." PhD Columbia (2024). Leads [[verifiers-rl|verifiers]] and [[prime-rl]]. COLT 2024.
+- **[[entities/florian-brand|Florian Brand]]** ([@xeophon](https://x.com/xeophon)) — Research Engineer, Evals. Editor at Interconnects (open models).
+- **[[entities/elie-bakouch|Elie Bakouch]]** ([@eliebakouch](https://x.com/eliebakouch)) — Training LLMs. Previously HuggingFace (SmolLM, FineWeb).
 - **[[entities/grad|Fares Obeid (Grad)]]** ([@Grad62304977](https://x.com/Grad62304977)) — Research Engineer. NanoGPT speedrun records, Value Residual Learning (ACL 2025), INTELLECT-3, GoldFinch.
 
 ## Related Pages

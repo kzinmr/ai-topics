@@ -76,7 +76,7 @@ Design guideline: "Structure code so useful content appears early:
 
 ## Differences from Artifacts
 
-| Dimension | [[anthropic|Anthropic]] Artifacts | Visualizer (`show_widget`) |
+| Dimension | [[entities/anthropic|Anthropic]] Artifacts | Visualizer (`show_widget`) |
 |-----------|--------------------|-----------------------------|
 | **Purpose** | Deliverables (downloadable, persistent) | Inline conversational enhancements |
 | **Display** | Side panel with download button | Inline in chat, transparent background |
@@ -112,7 +112,7 @@ Nine color ramps, each with 7 stops from lightest to darkest. Color encodes mean
 
 ## Terminal Reimplementation: pi + Glimpse
 
-Michael Lively recreated the system for **pi**, a terminal-based coding agent, using [[glimpse|Glimpse]] — a native macOS WKWebView library.
+Michael Lively recreated the system for **pi**, a terminal-based coding agent, using [[entities/glimpse|Glimpse]] — a native macOS WKWebView library.
 
 ### Key Challenges & Solutions
 
@@ -144,8 +144,8 @@ with progressively-parsed `arguments`. This means the streaming approach works i
 
 ## Related
 
-- [[anthropic|Anthropic]] — company behind Claude and generative UI
+- [[entities/anthropic|Anthropic]] — company behind Claude and generative UI
 - [[claude-models|Claude Models]] — the LLM family powering the visualizer
 - [[concepts/claude-code/claude-code|Claude Code]] — Anthropic's coding agent with different UI paradigm
-- [[glimpse|Glimpse]] — macOS WKWebView library enabling the terminal reimplementation
+- [[entities/glimpse|Glimpse]] — macOS WKWebView library enabling the terminal reimplementation
 - Agent tool design patterns: [[progressive-disclosure]], [[streaming]]

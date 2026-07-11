@@ -69,7 +69,7 @@ Simple schema (command string only), but detailed instructions in the descriptio
 
 > SWE-bench evaluates not just the model, but the **entire agent system**. The same model performance varies dramatically depending on the scaffolding.
 
-Open-source developers and startups have achieved significant improvements by optimizing scaffolding around the same model ([[agent-harnesses|Harness Effect]]).
+Open-source developers and startups have achieved significant improvements by optimizing scaffolding around the same model ([[concepts/agent-harnesses|Harness Effect]]).
 
 ## SWE-bench vs SWE-bench Verified
 

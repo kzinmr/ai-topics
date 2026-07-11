@@ -28,7 +28,7 @@ sources:
 
 This is a landmark document: the Catholic Church's highest-form teaching authority directly engaging with AI as a moral and social challenge. The encyclical applies 130+ years of Catholic Social Doctrine (from *Rerum Novarum*, 1891, through *Laudato Si'* and *Fratelli Tutti*) to questions of AI development, deployment, and governance.
 
-At the Vatican presentation, [[chris-olah|Chris Olah]] (Anthropic co-founder) delivered remarks, marking the first time a frontier AI lab co-founder has spoken alongside a papal document release.
+At the Vatican presentation, [[entities/chris-olah|Chris Olah]] (Anthropic co-founder) delivered remarks, marking the first time a frontier AI lab co-founder has spoken alongside a papal document release.
 
 ## Core Framework: Babel vs. Jerusalem
 

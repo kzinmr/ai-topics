@@ -78,4 +78,4 @@ A production-ready version was planned for late 2025. As of 2026, A2A has become
 - [[concepts/mcp-protocol]] — Model Context Protocol for agent-to-tool communication
 - [[concepts/multi-agents/agent-communication-protocols]] — MCP vs A2A comparison and decision guide
 - [[concepts/agent-communication-standards]] — Timeline of ACP, A2A, and BeeAI convergence
-- [[model-context-protocol-mcp|concepts/model-context-protocol-mcp]] — MCP overview and relationship to agent communication
+- [[concepts/model-context-protocol-mcp|concepts/model-context-protocol-mcp]] — MCP overview and relationship to agent communication

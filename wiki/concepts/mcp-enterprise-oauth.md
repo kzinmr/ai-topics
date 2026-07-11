@@ -17,7 +17,7 @@ sources:
 
 # MCP Enterprise OAuth
 
-MCP ([[mcp|Model Context Protocol]]) introduced enterprise-grade OAuth 2.0 authentication with zero-touch managed auth in June 2026. This is a critical infrastructure advancement that enables secure, production-scale deployment of MCP servers in enterprise environments with centralized authentication management.
+MCP ([[concepts/mcp|Model Context Protocol]]) introduced enterprise-grade OAuth 2.0 authentication with zero-touch managed auth in June 2026. This is a critical infrastructure advancement that enables secure, production-scale deployment of MCP servers in enterprise environments with centralized authentication management.
 
 ## Overview
 

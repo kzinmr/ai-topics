@@ -289,7 +289,7 @@ f(Q, D) = α · embedding_sim(Q, D) + β · recency(D.date) + γ · popularity(D
 With AI agents, embeddings serve as one tool among many:
 
 - **Agent uses embedding search** for semantic discovery (broad recall)
-- **Agent uses [[bm25|BM25]]/lexical search** for precision matching
+- **Agent uses [[concepts/bm25|BM25]]/lexical search** for precision matching
 - **Agent combines results** with reasoning, not mechanical fusion (RRF)
 
 > "RAG isn't a vector search problem. Embeddings became the singular framework for RAG — it's the wrong lens." — Doug Turnbull

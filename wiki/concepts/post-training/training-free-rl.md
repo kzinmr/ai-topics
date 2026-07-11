@@ -142,7 +142,7 @@ Rather than making TTS training-free, the complementary approach is to **train m
 
 1. Can better estimators (ETS-v2) close the gap with trained RL?
 2. What is the practical compute crossover: when does training become cheaper than inference-time sampling?
-3. How do these methods compose with [[self-evolving-agents|self-evolving]] approaches?
+3. How do these methods compose with [[concepts/self-evolving-agents|self-evolving]] approaches?
 4. Industry view: gpt-oss 120b as the dividing line between "weak" and "strong" RL models — does the training-free vs trained distinction matter at frontier scale?
 
 ## Related Pages
