@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-06-30
+updated: 2026-07-11
 status: L3
 sources:
   - https://pluralistic.net/
@@ -13,6 +13,7 @@ sources:
   - raw/articles/pluralistic.net--2026-06-18-their-trillions-our-billions--c9dc9b31.md
   - raw/articles/pluralistic.net--2026-06-19-too-big-to-fact-check--8d26fef8.md
   - raw/articles/pluralistic.net--2026-06-29-arsonist-firefighters--46c8e06a.md
+  - raw/articles/pluralistic.net--2026-07-10-posthuman-as-in-no-humans--67be2eae.md
 tags: [person]
 ---
 
@@ -35,6 +36,18 @@ He draws a direct line between the **Rights of Nature** movement (which grants p
 - The correct response is not to "thank Siri" but to demand AI stop impersonating humans
 
 His essay ["Rights for robots"](https://pluralistic.net/2026/04/15/artificial-lifeforms/) (April 2026) crystallized this argument, responding to Michael Pollan's keynote at the Bioneers conference comparing chatbot empathy to corporate personhood.
+
+### AI Slavery Fantasy — Omelas, Absent Indians, and Paperclips (July 2026)
+
+In "[Rights for robots and the AI slavery fantasy](https://pluralistic.net/2026/07/10/posthuman-as-in-no-humans/)" (July 10, 2026), Doctorow extended his AI-personhood critique with three powerful framing devices that connect the ideological dimension of the AI bubble to its material drivers:
+
+**AI Omelas — Hidden Human Labor**: Doctorow invoked Ursula Le Guin's "The Ones Who Walk Away from Omelas" to describe the condition of human workers performing the hidden labor behind AI systems. The "human in the loop" is not a human collaborator but a worker "stuck in AI Omelas, tormented by an algorithm that sets an inhuman pace, demands inhuman perfection, and metes out pitiless punishments for any misstep." This reframes AI automation as outsourcing human suffering to invisible, algorithmically-managed workers.
+
+**"Absent Indians" — The Deception of Full Automation**: Building on his earlier concept (January 2024), Doctorow argued that much of what passes for "AI" is actually "Absent Indians": low-waged workers pretending to be robots. The illusion of full automation allows bosses to "set-and-forget a set of requirements for how the human part of the AI's labor is to be done without ever having to meet or even think about those workers' conditions." The outsourcing of the "human in the loop" overseas creates an unaccountable, invisible workforce.
+
+**Paperclips as Marketing Tool**: Doctorow accused the AI safety movement of inadvertently serving as hype marketing. By elevating the paperclip maximizer from thought-experiment to "existential risk," the narrative positions AI as "indistinguishable from god" and therefore "extremely valuable (at least, up to the moment that it turns us all into paperclips)." The paperclips narrative, he argued, gets "rights for robots" pulled along in its wake — transforming what should be recognized as a dystopian labor practice into a philosophical debate about AI personhood.
+
+**Central Thesis — The AI Slavery Fantasy**: Doctorow's most provocative framing: "AI, then, isn't just the fantasy of a world without people – it's the fantasy of a world without people…except for slaves." The AI sales pitch relies on convincing bosses that they have invented "a new kind of slave – a worker who neither deserves nor demands rights or consideration." The "rights for robots" debate, by disputing whether chatbots deserve rights, implicitly affirms that these chatbots ARE slaves (because they're people who don't warrant moral consideration). The piece explicitly connects this ideology to the material reality of Amazon warehouse automation, robo-taxi remote drivers, and outsourced content moderation.
 
 ### "The Reverse Centaur's Guide to Life After AI"
 
@@ -188,4 +201,5 @@ This metaphor captures Doctorow's core argument: scaling AI investment (more GPU
 - [The Strand — "The Reverse Centaur's Guide to Life After AI"](https://www.strandbooks.com/cory-doctorow-the-reverse-centaur-s-guide-to-life-after-ai.html)
 - [Enshittification (book)](https://us.macmillan.com/books/9780374619329/enshittification/)
 - [Pluralistic.net — "The AI bubble isn't like the internet bubble" (May 26, 2026)](https://pluralistic.net/2026/05/26/the-ai-will-continue/)
+- [Pluralistic.net — "Rights for robots and the AI slavery fantasy" (July 10, 2026)](https://pluralistic.net/2026/07/10/posthuman-as-in-no-humans/)
 - [The Internet Con (book)](http://seizethemeansofcomputation.org)

@@ -1,3 +1,18 @@
+## [2026-07-11] blog-wiki-ingest | Enriched gilesthomas (parameter anatomy) and cory-doctorow (AI slavery fantasy)
+
+### Updated Pages
+- **entities/gilesthomas.md** — Added "LLM Parameter Anatomy (July 2026)" section: token embeddings dominate small models (77M of 163M), FFN has ~2x attention params, vocabulary scaling effect, interactive visualizer built with GPT-5.6 Sol via Codex. Pedagogical gap: attention mechanism focus leads to parameter distribution misunderstanding.
+- **entities/cory-doctorow.md** — Added "AI Slavery Fantasy — Omelas, Absent Indians, and Paperclips (July 2026)" section: AI Omelas (hidden human labor under algorithm-optimized conditions), Absent Indians (low-waged workers pretending to be robots), paperclips as marketing tool (AI safety x-risk discourse elevates rights-for-robots debate), central thesis that AI sales pitch depends on creating "a new kind of slave." Sources frontmatter and References updated.
+
+### Post-Recovery Verification
+- **events/apple-sues-openai-2026.md** — Already existed with full content from newsletter-wiki-ingest (07:40) and blog-triage (07:30). No additional enrichment needed — page covers all key allegations (Tang Tan, Chang Liu, 400+ ex-Apple employees, $6.5B io acquisition, supplier manipulation). Both 9to5Mac and Threads sources already in frontmatter.
+
+### Decisions
+- Takes: 1 (gilesthomas enrichment) | References: 1 (cory-doctorow enrichment) | Already-done: 1 (apple-sues-openai event page)
+- Triage checkpoint recovered from file (upstream triage JSON parse failure).
+
+---
+
 ## [2026-07-11] newsletter-wiki-ingest | Reference: Alex Banks — AI Is Quietly Thinking for Us
 
 ### Updated Pages

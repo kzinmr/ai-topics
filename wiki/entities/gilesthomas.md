@@ -3,7 +3,7 @@ title: gilesthomas
 description: Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technical articles on LLM internals, smolagents, training, and inference optimization. Known for accessible, first-person explanations of complex ML concepts built on hands-on experimentation.
 url: https://gilesthomas.com
 type: entity
-updated: 2026-07-09
+updated: 2026-07-11
 aliases: [gpjt, Giles Thomas]
 tags:
   - person
@@ -22,6 +22,7 @@ sources:
   - https://en.wikipedia.org/wiki/PythonAnywhere
   - https://wiki.python.org/python/GilesThomas.html
   - https://x.com/gpjt
+  - raw/articles/gilesthomas.com--2026-07-llm-parameter-counts--674e98c7.md
 ---
 
 # Giles Thomas
@@ -125,6 +126,17 @@ Comparing hashes before and after training steps definitively confirmed that par
 
 **Key takeaway:** `@jax.jit` and `@nnx.jit` are not interchangeable — NNX requires its own JIT wrapper. Parameter hashing is a lightweight, effective technique for verifying gradient application in JAX training loops.
 
+### LLM Parameter Anatomy (July 2026)
+
+In "[Building intuition about LLM parameter counts](https://www.gilesthomas.com/2026/07/llm-parameter-counts)" (July 2026), Thomas published an educational deep-dive on the distribution of parameters within LLMs — motivated by his own surprise when building a GPT-2 small implementation in JAX. Key findings:
+
+- **Token embeddings dominate small models**: A stripped-down model with just token embeddings and an output head (no Transformer blocks) already had **77M parameters** — nearly half of the final 163M parameter GPT-2 small, using a 50,257-token vocabulary with 768-dimensional embeddings
+- **FFN vs. Attention asymmetry**: The feed-forward network has approximately **2× the parameter count** of the attention layers — contradicting the common intuition that attention is the dominant component
+- **Vocabulary scaling effect**: As modern models adopt vocabularies in the hundreds of thousands, the embedding/output-head fraction grows further — a small model with a very large vocab can be "almost entirely embeddings and the output head"
+- **Visualizer tool**: Thomas used OpenAI's GPT-5.6 "Sol" variant via Codex to build an interactive parameter visualizer showing GPT-2 model breakdowns across token embeddings, attention, FFN, and output head, supporting custom settings, weight tying, and QKV bias toggles
+
+The article addresses a pedagogical gap: most LLM tutorials focus on the attention mechanism (the hardest concept), but this leads learners to overestimate attention's parameter share relative to the embedding layers and FFN.
+
 ## Writing Style & Philosophy
 
 Thomas's writing is characterized by a distinctive **first-person, narrative-driven approach** to technical exposition. Rather than presenting polished results, he documents the learning process itself — including dead ends, misunderstandings, surprising failures, and incremental discoveries.
@@ -183,3 +195,4 @@ Thomas is a **Python Software Foundation (PSF) Fellow** and an advocate of **Ext
 - gilesthomas.com--2026-04-automating-starting-lambda-instances--e9d854e4.md
 - gilesthomas.com--2026-04-10g-ethernet-what-i-did--89f5510c.md
 - gilesthomas.com--2026-04-10g-ethernet-what-i-relearned--8afc5c80.md
+- gilesthomas.com--2026-07-llm-parameter-counts--674e98c7.md
