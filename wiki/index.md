@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (844 pages)
+## Entities (845 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -149,6 +149,7 @@
 - [[entities/clefourrier--sources]] — Clémentine Fourrier — Sources
 - [[entities/clefourrier--timeline]] — Clémentine Fourrier — Timeline
 - [[entities/clicky]] — Clicky
+- [[entities/cline]] — Cline — autonomous coding agent for VS Code (64K+ stars), IDE/CLI/SDK, multi-agent Kanban boards, model-agnostic (Jul 12)
 - [[entities/cloudflare]] — Cloudflare
 - [[entities/cloudflare-sandbox]] — Cloudflare Sandbox (Claude Managed Agents)
 - [[entities/codapter]] — Codapter
@@ -849,7 +850,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1852 pages)
+## Concepts (1855 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1304,6 +1305,7 @@
 - [[concepts/claude/tokenizer-47-change]] — Claude 4.7 Tokenizer Change
 - [[concepts/cli-first-development]] — CLI-First Development
 - [[concepts/cli-over-mcp-pattern]] — CLI Over MCP Pattern
+- [[concepts/cline]] — Cline — autonomous coding agent paradigm: Plan/Act toggle, model agnosticism, multi-surface engine-first design, .clinerules, self-driving codebases (Jul 12)
 - [[concepts/clinical-ai]] — Clinical AI
 - [[concepts/clojure]] — Clojure
 - [[concepts/clojure-for-the-brave-and-true]] — Clojure for the Brave and True
@@ -2056,6 +2058,7 @@
 - [[concepts/microsoft-scout-agent]] — Microsoft Scout
 - [[concepts/microsoft-work-trend-index-2026]] — Microsoft 2026 Work Trend Index
 - [[concepts/milksandmatcha-0xsero-single-agent-nightmare-2026]] — milksandmatcha-0xsero-single-agent-nightmare-2026
+- [[concepts/mindwalk]] — Mindwalk — coding-agent session replay on 3D codebase map; spatial intuition for debugging agent behavior (Jul 12)
 - [[concepts/minijinja]] — minijinja
 - [[concepts/minimax-m2-7]] — MiniMax M2.7
 - [[concepts/minimax-m3]] — MiniMax M3
@@ -2373,6 +2376,7 @@
 - [[concepts/rao-recursive-agent-optimization]] — RAO (Recursive Agent Optimization)
 - [[concepts/raspberry-pi]] — Raspberry Pi
 - [[concepts/rdep]] — RDEP (Research Dispatch/Expert Parallelism)
+- [[concepts/reame]] — Reame — CPU-first LLM inference server (llama.cpp); disk KV cache, speculative decoding, 7B on 2-core ARM at 100% accuracy (Jul 12)
 - [[concepts/reasoning-aware-retrieval]] — Reasoning-Aware Retrieval
 - [[concepts/reasoning-compression]] — The principle that software complexity and reasoning requirements will be compressed over time as models improve, eli...
 - [[concepts/reasoning-model-cost-transparency]] — Reasoning Model Cost Transparency

@@ -1,3 +1,23 @@
+## [2026-07-12] active-crawl — 4 new pages: Cline, Mindwalk, Reame
+
+### New Pages
+- **[[entities/cline]]** — Entity page for Cline, the 64K+ star autonomous coding agent for VS Code (TypeScript, July 2024). Covers GitHub stats, features (multi-modal IDE/CLI/SDK, Kanban multi-agent board, Plan/Act mode, model agnosticism, plugins/MCP, multi-agent teams), architecture, comparison to Devin/Cursor/Claude Code/Codex, and timeline.
+- **[[concepts/cline]]** — Concept page on the Cline paradigm: autonomy spectrum, Plan/Act toggle, model agnosticism vs provider lock-in, multi-surface engine-first design, .clinerules pattern, multi-agent teams and scheduling, relationship to self-driving codebases.
+- **[[concepts/mindwalk]]** — Concept page for Mindwalk (Go, 129 stars), a visualization tool that replays coding-agent sessions on a 3D codebase map. Covers the spatial-intuition approach to agent observability ("what did the agent think?" vs "was the agent correct?"), design, use cases, comparison to trace-based observability, and limitations.
+- **[[concepts/reame]]** — Concept page for Reame (C++, 64 stars), a CPU-first LLM inference server on llama.cpp. Covers the "never compute the same thing twice" thesis, architecture (disk KV cache, self-regulating speculation, Conclave, interleaved multi-user), performance (7B on 2-core ARM at 100% accuracy), and comparison to vLLM/llama.cpp server/Ollama.
+
+### Sources
+- Cline: GitHub (github.com/cline/cline) — raw: 2026-07-12_cline-autonomous-coding-agent.md
+- Mindwalk: GitHub (github.com/cosmtrek/mindwalk) — raw: 2026-07-12_mindwalk-session-replay.md
+- Reame: GitHub (github.com/swellweb/reame) — raw: 2026-07-12_reame-cpu-inference-server.md
+
+### Pipeline
+- Active crawl discovery via 3 parallel subagents (HN Algolia, xurl X/Twitter, wiki gap analysis)
+- 5 raw articles saved; 3 topics selected for page creation (GPU circular financing and Machinecraft deferred due to insufficient source content)
+- Tags added to SCHEMA.md: cline (Products)
+- Index entries: Concepts 1852→1855, Entities 844→845
+
+---
 ## [2026-07-12] blog-wiki-ingest | George Hotz "AI 2040 and the Cult of Intelligence"
 
 ### Changes
