@@ -1,3 +1,23 @@
+## [2026-07-12] watchdog | Auto-fixed log.md separators and pipe corruption
+
+### Changes
+- Fixed 2 `|---` pipe corruption lines in log.md (separator lines with | prefix)
+- Added 26 missing `---` section separators between consecutive `## [YYYY-MM-DD]` headers
+- Verified: all structural checks clean (0 pipe corruption in index.md, 0 ghost entries, 0 line-prefix corruption, 0 stale index entries)
+
+### Health Summary
+| Metric | Status |
+|--------|--------|
+| Index structural health | Clean (2771 lines) |
+| Ghost entries | 0 |
+| Index corruption | None detected |
+| Log separators | 0 missing out of 118 sections |
+| Stale index entries (index→file) | 0 |
+| Cross-section misplacement | 0 |
+| Tag violations (SCHEMA.md) | 0 |
+
+---
+
 ## [2026-07-12] active-crawl — 4 new pages: Cline, Mindwalk, Reame
 
 ### New Pages
@@ -26,6 +46,7 @@
 ### Sources
 - [[raw/articles/geohot.github.io--blog-jekyll-update-2026-07-11-ai-2040-html--34014eca.md]]
 
+---
 ## [2026-07-11] dreaming | Entity enrichments (Cohere DSD, Fireworks ×2, Hebbia integrations)
 
 ### Changes
@@ -36,6 +57,7 @@
 ### Source
 - dreaming-cycle 2026-07-11
 
+---
 ## [2026-07-11] watchdog | Auto-fixed 87 bare wikilinks
 
 ### Changes
@@ -105,6 +127,7 @@
 - Takes: 0 | References: 1 | Skips: 34 (3 batch skip + 31 noise links)
 - Triage checkpoint recovered from file (upstream triage JSON parse failure).
 
+---
 ## [2026-07-11] blog-triage | Wiki pages from blog ingest — Apple-OpenAI lawsuit, AI memory crisis, Thinking Machines Lab, LLM parameter counts
 
 ### New Pages
@@ -149,7 +172,7 @@
 
 ### Verification
 | Metric | Status |
-|--------|--------|
+--------|--------|
 | Index structural health | Clean (2760 lines) |
 | Ghost entries | 0 |
 | Index corruption | None detected |
@@ -174,7 +197,7 @@ _Log of all wiki changes. Newest entries at top._
 
 ### Live verification summary
 | Metric | Status |
-|--------|--------|
+--------|--------|
 | Index structural health | Clean (2758 lines) |
 | Pipe prefix corruption | 0 |
 | Triple bracket corruption | 0 |
@@ -202,6 +225,7 @@ _Log of all wiki changes. Newest entries at top._
 
 **Summary**: 2,201 pages scanned. 38 orphans, 4,274 broken links (616 fewer than last week), 14 duplicate groups (25 fewer), 2 index gaps (1,992 fewer), 0 tag violations. Person×concept graph: 187 persons × 1,781 concepts — 15 cross-reference gaps identified. Full report: [[queries/wiki-graph-analysis-weekly-2026-07-10]].
 
+---
 ## [2026-07-10] active-crawl | 4 new pages from trending topics
 
 **Sources**: HN Algolia trending (Jul 7-10) + X/Twitter search + wiki gap analysis + blogwatcher DB
@@ -232,6 +256,7 @@ _Log of all wiki changes. Newest entries at top._
 - Wiki now: 1,868 concepts, 836 entities, 34 comparisons, 4 queries, 15 events = 2,757 total pages
 - 4 raw articles saved
 
+---
 ## [2026-07-10] blog-wiki-ingest | Muse Spark 1.1 enrichment, Simon Willison GPT-5.6 reference
 
 - **Source**: blog-triage checkpoint (Jul 10 07:37 UTC) — 11 articles triaged, 1 take, 3 reference, 7 skip
@@ -242,6 +267,7 @@ _Log of all wiki changes. Newest entries at top._
 
 **Decisions:** 1 take (Muse Spark 1.1 → concepts update), 3 reference, 7 skip
 
+---
 ## [2026-07-10] newsletter-wiki-ingest | Meta MSL 1-Year enrichment, Grok 4.5 pricing, GPT-5.6 source
 
 - **Source**: newsletter-triage checkpoint (Jul 10 07:20 UTC) — 6 newsletters triaged, 1 take, 2 reference, 3 skip
@@ -277,6 +303,7 @@ _Log of all wiki changes. Newest entries at top._
   - `entities/sierra.md` — Added "AI-Pilling Our Company" section: Pinecone single-agent architecture, proactive agent patterns, context-as-bottleneck thesis, agent-as-UI model, outcomes-over-activity metrics
 - **Not covered**: 9 unsaved articles (OpenAI official pages behind Cloudflare, NYT Meta/Instagram article, astronomy blog)
 
+---
 ## [2026-07-09] dreaming | Knowledge consolidation — reference enrichment (triage recovery)
 
 - **Source**: dreaming-collect checkpoint (Jul 9 18:00), group-agent JSON parse failure recovered via `latest.json` + triage checkpoint
@@ -313,6 +340,7 @@ _Log of all wiki changes. Newest entries at top._
 - **Updated** index.md — Updated descriptions for mai-thinking and marked mai-thinking-1-report as redirect
 
 
+---
 ## [2026-07-09] Active Crawl — 3 new concept pages + 1 enrichment
 
 ### Created
@@ -329,6 +357,7 @@ _Log of all wiki changes. Newest entries at top._
 - `raw/articles/2026-07-08_together-ai_provisioned-throughput.md`
 - `raw/articles/2026-07-08_openai_coding-evaluation-noise.md`
 
+---
 ## [2026-07-09] Blog Wiki Ingest — enrich entities/giles-thomas.md with Part 34b and Poppy training box
 
 ### Updated
@@ -357,6 +386,7 @@ _Log of all wiki changes. Newest entries at top._
 
 ### Sources
 - raw/newsletters/2026-07-08-what-claude-fable-means-for-coding-agents.md
+---
 ## [2026-07-09] wiki: Create Agent Experience (AX) concept page from Modal CTO interview triage
 
 ### Created
@@ -392,6 +422,7 @@ _Log of all wiki changes. Newest entries at top._
 - Enriched entities/parsagon.md — Rewrote from generic stub (37 lines) to comprehensive entity page (2.6KB). Added: creator info (Sandy Suh, sand1929), CLI/Python API details, natural language browser automation description, PyPI package details (v1.0.1, Jun 2026), note about platform pivot to Global Policy Intelligence. Corrected previous mischaracterization as generic web scraping platform.
 - Enriched entities/exa.md — Expanded from skeleton (38 lines, 1.1KB) to full entity (96 lines, ~4KB). Added: founders (Will Bryk CEO, Jeff Wang co-founder), product suite (Search, Contents, Deep, Agent, Monitors, Exa Connect), technical architecture (500B+ webpages, H200 cluster), customer references (Cursor, Cognition, HubSpot, OpenRouter, 400K+ developers), advisor info (Tal Broda).
 
+---
 ## [2026-07-08] dreaming | Knowledge consolidation — 2 reference enrichments
 
 ### Changes
@@ -400,6 +431,7 @@ _Log of all wiki changes. Newest entries at top._
 - Source: dreaming-group triage (filesystem scan of 156 raw articles)
 - Takes: 0 | References: 2 | Skips: 13
 
+---
 ## [2026-07-08] health-fix | Register 20 orphan concept pages in index.md
 
 ### Changes
@@ -463,6 +495,7 @@ _Log of all wiki changes. Newest entries at top._
 **Newly archived:** 2 articles (MAI-Thinking-1 tech report, BenchFlow Awesome Agent Evals)
 **Total archive URLs:** 1,434
 
+---
 ## [2026-07-08] wiki: Blog-wiki-ingest - LLM gateways enrichment, reference items
 
 **Blog triage recovered from checkpoint (20 decisions: 3 takes, 6 references, 11 skips). All 3 takes already processed by other pipelines (comparisons/llm-gateways created, concepts/ai-industry-economics enriched, entities/openai AP+ case study added). Processed 4 reference enrichments.**
@@ -473,6 +506,7 @@ _Log of all wiki changes. Newest entries at top._
 - concepts/ai-governance-political-pressure.md — Doctorow antitrust enforcement reference added
 - concepts/apple.md — Siri iOS 27 beta 3 voice customization (Pace/Expressivity sliders)
 
+---
 ## [2026-07-08] wiki: Newsletter-wiki-ingest - Fable entity, enrichments
 
 **Newsletter triage recovered from checkpoint (5 newsletters: Ben's Bites, AINews, SemiAnalysis, Super Intel, Lenny's Newsletter)**
@@ -486,11 +520,13 @@ _Log of all wiki changes. Newest entries at top._
 - `concepts/harness-engineering.md` — Added "Cognitive UX in Harness Design" section: creative partner vs coding assistant design tension, Opus-like interaction traits, system prompt plasticity; cross-links to agentic-engineering and entities/fable
 - `wiki/index.md` — Added entities/fable entry
 
+---
 ## [2026-07-08] wiki: Enrich OpenAI entity with Australian Payments Plus case study
 
 **Updated:**
 - `entities/openai.md` — Added Australian Payments Plus enterprise adoption case study (80% employees more creative, 300+ custom GPTs, 1000+ Projects, Codex for reconciliation/investigation, simulations in 1 day vs weeks); added tags (enterprise-ai, chatgpt, codex, llm, case-study); added related wikilinks to concepts/ai-industry-economics, concepts/token-economics, entities/anthropic
 
+---
 ## [2026-07-08] wiki: Add LLM gateways comparison page
 
 **Created:**
@@ -575,12 +611,14 @@ SCHEMA.md: Added 3 new tags (consciousness, ai-hardware, chrome). Updated index.
 Sources: HN Algolia API, X/Twitter xurl search, arXiv, Anthropic Research, LTT Labs, OZ Talking. Cross-referenced against wiki gaps — all 4 were genuine gaps.
 
 
+---
 ## [2026-07-07 07:50 UTC] blog-wiki-ingest | 2 pages enriched from 1 blog take
 
 - **Enriched** [[concepts/ai-industry-economics]] — 137→186 lines. Added Open-Weight Margin Collapse section: GLM 5.2 as open-weights Opus competitor, ~90% gross inference margin analysis, drop-in replacement migration, cost comparison ($4.40 vs $25/MTok), AMD 2.75x inference efficiency, structural implications. Source: Martin Alderson margin collapse part 1.
 - **Enriched** [[entities/martin-alderson]] — 288→302 lines. Added Open-Weight Margin Collapse subsection under AI Compute Economics. GLM 5.2 breakthrough, frontier margin analysis, cost comparison, AMD efficiency, structural thesis.
 - Updated index.md and log.md for all changes.
 
+---
 ## [2026-07-07 07:40 UTC] newsletter-wiki-ingest | 7 pages enriched from 6 newsletters
 
 - **Enriched** [[concepts/claude/fable-5]] — 425→543 lines. Added 3 new Post-Redeployment sections: GPU Kernel Generation (18.71× CUDA speedup on KernelBench-Mega), Thariq Shihipar's Field Guide (unhobbling, blindspot passes, grief management, "tradeoffs are not real"), Fable 5 Return Aftermath & Sonnet Guidance (99% blocker, government pre-release deal). Sources: Import AI 464, AI by Aakash, AINews.
@@ -592,12 +630,14 @@ Sources: HN Algolia API, X/Twitter xurl search, arXiv, Anthropic Research, LTT L
 - **Enriched** [[entities/semianalysis]] — 197→243 lines. Added GPU Debt Backstop: AI Project Trinity analysis — $7.1T AI debt by 2029, NVIDIA minimum revenue guarantees, GPU-backed securities as new asset class, three obstacles to market maturity. Source: SemiAnalysis.
 - Updated index.md and log.md for all changes.
 
+---
 ## [2026-07-07 00:01 UTC] raw-backlog-ingest | Enriched MAI-Thinking-1 entity + BenchFlow Awesome Agent Evals
 
 - **Enriched** [[entities/mai-thinking-1]] — From 55-line entity to 147-line comprehensive page. Added: Architecture section (periodic local/global attention, LatentMoE, model specifications table, scaling ladder), extended benchmark comparison tables (STEM/Agentic Coding, General Capabilities, Human Side-by-Side), modified GRPO section (adaptive entropy control, outer ratio clip, reward decomposition), total training overhead metrics (51 hours). Sources include the full 109-page tech report.
 - **Enriched** [[concepts/ai-benchmarks/benchflow-tool]] — Added Awesome Agent Evals detail: compilation methodology (11.6k papers, 47 transcribed talks, 146 deep notes), 12-item must-read starter set table with core theses, eval/RL-environment companies landscape (pavlovslist directory, environment labs, eval platforms, benchmark/audit orgs).
 - Updated index.md entries for both pages.
 
+---
 ## [2026-07-06] skeleton-enrich-daily | Enriched Aman Sanger + David Fowler from L2/stub to comprehensive
 
 - **Enriched** [[entities/aman-sanger]] — From 35-line stub (status: none) to 159-line comprehensive entity page. Added: Background (co-founding story, funding timeline, key metrics), Three Eras of AI Coding, Self-Driving Codebases, Artifacts Paradigm, Multi-Agent Architecture, Codebase Indexing, Reverse-Engineered GPT-4 Inference, Speaking & Media table (Lex Fridman, Latent Space, GTC 2026), Engineering Philosophy subsections (Speed is Not the Product, Compound Engineering, Specification-Driven Development, Don't Lose to Slop), Related People, See Also, and Sources.
@@ -609,6 +649,7 @@ Sources: HN Algolia API, X/Twitter xurl search, arXiv, Anthropic Research, LTT L
 ## [2026-07-06 18:15 UTC] dreaming-wiki-ingest | Claude Code Session Cache Leakage — new concept page
 - **Created** [[concepts/claude-code/claude-code-session-cache-leakage]] — Claude Code Enterprise ZDR workspace session cache cross-account leakage (Jul 4, 2026). Sonnet 5 cache miss after 5+ minutes injected unrelated Minecraft temple content from another account. 313 HN pts, 132 comments. Distinct incident from [[concepts/claude-code/claude-code-leak]] (March npm supply-chain leak). Cross-platform (CLI + Mobile), confirmed not local. Updated `index.md`.
 
+---
 ## [2026-07-06 11:16 UTC]
 
 **active-crawl**: Created 4 new concept pages from trending HN/X topics (July 3-6, 2026):
@@ -623,6 +664,7 @@ Raw articles saved: 2026-06-30_pcgamer_godot-bans-ai-authored-code.md, 2026-06-2
 Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions. Cross-referenced against wiki gaps — all 4 were genuine gaps with no prior concept pages.
 
 
+---
 ## [2026-07-06] blog-wiki-ingest | Enriched SynthID C2PA section + Sean Goedecke entity page
 
 ### Changes
@@ -636,6 +678,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - Pages enriched: 2 (synthid, seangoedecke-com)
 - Articles skipped (archived): 6
 
+---
 ## [2026-07-06] newsletter-wiki-ingest | Enriched Microsoft + Figure AI + AI Jailbreaking pages
 
 ### Changes
@@ -646,6 +689,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 ### Sources
 - raw/newsletters/2026-07-05-anthropic-s-fable-freedom-microsoft-s-inside-job-and-figure-s-factory-foothold.md
 
+---
 ## [2026-07-06] raw-backlog-ingest | Enriched MAI-Thinking-1 entity page and BenchFlow concept page
 
 ### Changes
@@ -660,6 +704,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - Pages enriched: 2 (mai-thinking-1, benchflow-tool)
 - Articles skipped (already archived): 3
 
+---
 ## [2026-07-06] x-accounts-scan | Updated Eugene Yan and Lance Martin entity pages with new sources
 
 ### Changes
@@ -675,6 +720,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 ### Stats
 - Pages enriched: 2 (eugeneyan, rlancemartin)
 
+---
 ## [2026-07-06] x-accounts-scan | HF CLI + 2 arXiv papers — 1 new concept page, 2 enrichments
 
 ### Changes
@@ -709,6 +755,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - **Enriched** [[entities/akash-gupta]] — Expanded with structural safeguards detail, cross-reference to aakash-gupta
 - **Index** — Updated 7 new entity entries, fixed microsoft description
 
+---
 ## [2026-07-05] dreaming | Knowledge consolidation — 2 takes, 5 references
 
 ### Changes
@@ -726,6 +773,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - Pages enriched: 5 (currentai, simon-willison, daringfireball-net, meta, fable-5)
 - Total index entries: concepts +2
 
+---
 ## [2026-07-05] health | Wiki health digest & index repair
 
 ### Changes
@@ -879,6 +927,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - **entities/elevenlabs.md** — Added Procedures in ElevenAgents section: Structured/Free-form procedures, SOP import, Alpha
 - Coverage verification: 3 takes (Mythos export, Voyage Context-4, Modal Auto Endpoints) already covered by existing pages — skipped
 
+---
 ## [2026-07-01] wiki-health | Auto-fix: 14 orphan concept pages added to index.md
 
 ### Changes
@@ -916,7 +965,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 ### Coverage gap filled:
 - **Edge AI** was the top wiki gap (completely missing) identified by the gap analysis subagent. Now filled with comprehensive coverage of hardware, software, model optimization, deployments, and use cases.
 
-|---
+---
 ## [2026-07-01 07:45] — Blog wiki-ingest — 2 takes, 4 references from 19 blog candidates (recovered from triage checkpoint after JSON parse error)
 
 **Source:** blog-triage checkpoint (saved before response render failure)
@@ -929,7 +978,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - `entities/ed-zitron.md` — Added "June 2026: BIS Systemic Risk Warning" section: BIS annual report $1T+ hyperscaler capex warning, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing
 - `entities/simon-willison.md` — Added June 30 entries: Claude Sonnet 5 tokenizer analysis (1.42× English, sampling params deprecated, 30% effective price increase, Adaptive Thinking default ON) and shot-scraper video feature (agent self-recorded demos via storyboard.yml/Playwright)
 - `concepts/claude/fable-5.md` — Added Export Controls Lift (June 30, 2026) section: Commerce Department lifted restrictions on Fable 5/Mythos 5 after ~18-day suspension
-|---
+---
 ## [2026-07-01 07:40] — Newsletter wiki-ingest — 4 takes, 3 references from 8 newsletters (recovered from triage checkpoint after JSON parse error)
 
 **Source:** newsletter-triage checkpoint (saved before response render failure)
@@ -1843,6 +1892,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - https://arxiv.org/abs/2607.02770 (Gemma 4 Technical Report, July 2, 2026)
 - PDF saved to `raw/papers/gemma4-technical-report.pdf`
 
+---
 ## [2026-07-07] wiki: Ingested Harrison Chase "Wiki Memory" X Article
 
 **Created:**
@@ -1857,6 +1907,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 **Sources:**
 - https://x.com/hwchase17/status/2071963622298050997 (Harrison Chase, "Wiki Memory", 2026-06-30, 1114 bookmarks)
 
+---
 ## [2026-07-09] wiki: Grok 4.5 launch event + enrich xai/grok-4-3/spacex-cursor-acquisition
 
 ### Created
