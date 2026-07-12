@@ -1,3 +1,8 @@
+## [2026-07-12 18:28 UTC] dreaming-wiki-ingest | Enriched 2 entity pages (reference candidates from filesystem scan)
+- Factory AI: Added Incident Response section (Slack alert → autonomous RCA, incident memory)
+- ElevenLabs: Added Impact Program — Projekt Kalwaria (cultural heritage TTS/VR restoration)
+- Sources: raw/articles/2026-07-11_factory_incident-response.md, raw/articles/2026-07-11_elevenlabs_how-projekt-kalwaria-uses-elevenlabs-to-preserve-history.md
+
 ## [2026-07-12 18:01 UTC] dreaming-group | Saturation day — 0 takes, 2 references
 - Checkpoint: 1 article (ATP podcast, non-AI) + 169 recent raw articles
 - Blog triage: 20 decisions (1 take consumed by blog-wiki-ingest)

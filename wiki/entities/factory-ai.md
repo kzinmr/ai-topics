@@ -2,7 +2,7 @@
 title: "Factory.ai"
 type: entity
 created: 2026-06-03
-updated: 2026-06-16
+updated: 2026-07-12
 tags:
   - company
   - coding-agents
@@ -55,6 +55,14 @@ Factory 2.0 reconceptualizes software development as a factory system where mult
 ### Production Customers
 
 Factory 2.0 is live with enterprise customers including: NVIDIA, EY, Adobe, Palo Alto Networks, Adyen, Blackstone, Wipro, and Comarch.
+
+## Incident Response (July 2026)
+
+Factory announced **Incident Response** functionality for its Droid autonomous agents (July 10, 2026). The feature enables Droids to automatically transform Slack alerts into autonomous root cause analysis (RCA) sessions, build incident memory across occurrences, and help on-call engineers reduce the signal-to-fix cycle time.
+
+The incident response capability is described as a 2-minute-read feature announcement, positioning it as a practical operational extension of Factory's autonomous agent platform rather than a major product release.
+
+Source: raw/articles/2026-07-11_factory_incident-response.md
 
 ## Related
 

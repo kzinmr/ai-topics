@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-07-09
+updated: 2026-07-12
 tags:
   - company
   - voice-ai
@@ -250,6 +250,22 @@ Source: [Introducing Ads Engine in ElevenCreative — ElevenLabs Blog](https://e
 This case study demonstrates voice AI's killer application in emerging markets where multilingual coverage directly translates to market reach.
 
 Source: [Anarock Case Study — ElevenLabs Blog](https://elevenlabs.io/blog/anarock)
+
+## Impact Program — Projekt Kalwaria (July 2026)
+
+ElevenLabs' **Impact Program** supports cultural heritage preservation projects. **Projekt Kalwaria**, a Polish nonprofit, uses ElevenLabs tools to digitally recreate the Ujście Calvary — a hillside complex of stations (built 1893–1908) destroyed during WWII. The team digitized ~300 archival documents (1893–1935), rebuilt the hill in 3D, and modeled the first three stations.
+
+**How ElevenLabs is used:**
+- **TTS narration**: ElevenLabs Text to Speech generates narrated video reconstructions of virtual walks through the reconstructed site
+- **Multilingual from one script**: Each walk published in Polish, English, and German without booking voice actors per language
+- **Eleven Music**: Scores the opening sequences of each video
+- **AI video**: Animates century-old photographs the films are built from
+
+**Planned expansions:**
+- **Mobile app** with location-triggered narration along the historical paths of Ujście
+- **VR walks** with spatial audio for immersive remote experiences
+
+Source: raw/articles/2026-07-11_elevenlabs_how-projekt-kalwaria-uses-elevenlabs-to-preserve-history.md
 
 ### Fyxer Case Study — Scribe v2 STT for Meeting Notetaking (July 2026)
 
