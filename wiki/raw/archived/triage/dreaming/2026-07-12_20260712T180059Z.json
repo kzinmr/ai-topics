@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-07-12T18:17:19.608160+00:00",
+  "triage_run_id": "20260712T180059Z",
+  "source": "dreaming",
+  "summary_ja": "飽和日。ブログトリアージ（20件）、ニュースレタートリアージ（18件）、active-crawl（4件）、前回dreaming-cycleが全AI関連記事を処理済み。ファイルシステムスキャンで2件のenrichment候補を特定（Factory AI incident response、ElevenLabs Projekt Kalwaria）。いずれも小規模（★★★☆☆）。Takes=0。",
+  "decisions": [
+    {
+      "item_id": "dreaming-machinecraft-youtube",
+      "source": "dreaming",
+      "source_name": "youtube.com",
+      "title": "The Factory That Dreams: 39 AI Agents, No Framework - Machinecraft",
+      "url": "https://www.youtube.com/watch?v=jtzh-GBXBWc",
+      "raw_path": "wiki/raw/articles/2026-07-12_machinecraft-39-agent-factory.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ YouTube動画のみで記事本文が未抽出。AI Engineer Conference 2026での講演だが、トランスクリプトなしでは評価不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Machinecraft: 39 AI Agents, No Framework\nTalk by Rushabh Doshi at AI Engineer Conference 2026 (July 11, 2026).\n## Video Info\n- Title: The Factory That Dreams: 39 AI Agents, No Framework - Rushabh Doshi, Machinecraft\n- Author: AI Engineer\n- URL: https://www.youtube.com/watch?v=jtzh-GBXBWc\n## Descri"
+    },
+    {
+      "item_id": "dreaming-gpu-circular-financing",
+      "source": "dreaming",
+      "source_name": "io-fund.com",
+      "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
+      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+      "raw_path": "wiki/raw/articles/2026-07-12_gpu-circular-financing.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ GPU循環融資の分析記事だが、rawファイルはHTML chromeのみで記事本文が未抽出。CoreWeave entity pageに循環融資の記載なし。HN 273 pointsだがコンテンツ評価不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom\nPublished: io-fund.com, July 2026. HN: 273 points.\n## Article Content\n<!DOCTYPE html><html lang=\"en\"><head><script>\n                  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n                  new Date()"
+    },
+    {
+      "item_id": "dreaming-harvey-checklist",
+      "source": "dreaming",
+      "source_name": "harvey.ai",
+      "title": "The Contract Review Checklist Every Legal Team Should Use",
+      "url": "https://www.harvey.ai/blog/contract-review-checklist",
+      "raw_path": "wiki/raw/articles/2026-07-11_harvey_contract-review-checklist.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Harvey entity pageはContract Review Platform (June 2026)を詳細カバー済み。rawファイルはナビゲーションchromeのみで記事本文が未抽出。追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The Contract Review Checklist Every Legal Team Should Use\n**Source**: [https://www.harvey.ai/blog/contract-review-checklist](https://www.harvey.ai/blog/contract-review-checklist)\nHarvey Agents execute legal work end-to-end\nLearn more\nHarvey Agents execute legal work end-to-end\nLearn more\nHarvey Ag"
+    },
+    {
+      "item_id": "dreaming-harvey-software",
+      "source": "dreaming",
+      "source_name": "harvey.ai",
+      "title": "Contract Review Software",
+      "url": "https://www.harvey.ai/blog/contract-review-software",
+      "raw_path": "wiki/raw/articles/2026-07-11_harvey_contract-review-software.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Harvey entity pageはContract Review Platformを詳細カバー済み。rawファイルはナビゲーションchromeのみ。追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# What to Look for in Contract Review Software for Legal Teams\n**Source**: [https://www.harvey.ai/blog/contract-review-software](https://www.harvey.ai/blog/contract-review-software)\nHarvey Agents execute legal work end-to-end\nLearn more\nHarvey Agents execute legal work end-to-end\nLearn more\nHarvey A"
+    },
+    {
+      "item_id": "dreaming-factory-incident-response",
+      "source": "dreaming",
+      "source_name": "factory.ai",
+      "title": "Incident Response | Factory.ai",
+      "url": "https://factory.ai/news/incident-response",
+      "raw_path": "wiki/raw/articles/2026-07-11_factory_incident-response.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Factory AI entity pageにDroidsの記載はあるが、Incident Response機能（Slack alert→autonomous RCA、incident memory）は未カバー。小規模enrichment候補。",
+      "candidate_wiki_path": "entities/factory-ai",
+      "body_excerpt": "# Incident Response | Factory.ai\n**Source**: [https://factory.ai/news/incident-response](https://factory.ai/news/incident-response)\nProduct\nEngineering\nNew\nIncident Response\nBy\nFactory\n-\nJuly 10, 2026\n-\n2\nminute read -\nShare\nDroid turns Slack alerts into autonomous RCA sessions, builds incident memo"
+    },
+    {
+      "item_id": "dreaming-elevenlabs-kalwaria",
+      "source": "dreaming",
+      "source_name": "elevenlabs.io",
+      "title": "How Projekt Kalwaria uses ElevenLabs to preserve history",
+      "url": "https://elevenlabs.io/blog/how-projekt-kalwaria-uses-elevenlabs-to-preserve-history",
+      "raw_path": "wiki/raw/articles/2026-07-11_elevenlabs_how-projekt-kalwaria-uses-elevenlabs-to-preserve-history.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ ElevenLabs entity pageにProjekt Kalwaria（文化遺産デジタル復元プロジェクト）の記載なし。Impact Program事例としてenrichment候補。ただし小規模ユースケース。",
+      "candidate_wiki_path": "entities/elevenlabs",
+      "body_excerpt": "# ElevenLabs\n**Source**: [https://elevenlabs.io/blog/how-projekt-kalwaria-uses-elevenlabs-to-preserve-history](https://elevenlabs.io/blog/how-projekt-kalwaria-uses-elevenlabs-to-preserve-history)\nBlog\nImpact\nHow Projekt Kalwaria uses ElevenLabs to bring a destroyed heritage site back to life\nWritten"
+    }
+  ]
+}

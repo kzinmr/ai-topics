@@ -1,3 +1,11 @@
+## [2026-07-12 18:01 UTC] dreaming-group | Saturation day — 0 takes, 2 references
+- Checkpoint: 1 article (ATP podcast, non-AI) + 169 recent raw articles
+- Blog triage: 20 decisions (1 take consumed by blog-wiki-ingest)
+- Newsletter triage: 18 decisions (all skips)
+- Active-crawl: 4 new pages (Cline, Mindwalk, Reame)
+- Filesystem scan: 7 articles assessed → 0 takes, 2 references, 5 skips
+- References: Factory AI incident response (enrichment candidate), ElevenLabs Projekt Kalwaria (enrichment candidate)
+- Archive: 6 new URLs archived (1,546 total)
 ## [2026-07-12] watchdog | Auto-fixed log.md separators and pipe corruption
 
 ### Changes
