@@ -1,0 +1,28 @@
+{
+  "archived_at": "2026-07-12T18:02:51.936488+00:00",
+  "triage_run_id": "20260711T180006Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E filesystem scan: 164 raw articlesスキャン済み。3件のreference enrichment（Cohere DSD、Fireworks MiniMax M3 Blackwell最適化、Hebbiaデータ統合拡大）を特定。残りはblog-triage/active-crawl/newsletter-wiki-ingest処理済みまたは非AI記事。Takes=0（新規ページ作成なし）、全記事が既存ページのenrichment候補。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-non-ai-batch",
+      "source": "dreaming",
+      "source_name": "Various",
+      "title": "Batch: Non-AI articles (podcasts, general tech, news)",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事を一括スキップ: ATP Mac podcast (daringfireball.net), Gary Kildall death investigation, game review (shkspr.mobi), Trump airport logo (futurism.com), Ryanair passenger (AP News), dot product math (eli.thegreenplace.net), Old New Thing (devblogs.microsoft.com), Dwarkesh general relativity podcast, jsp blog (cryan.com).",
+      "body_excerpt": "Batch skip of 9 non-AI articles: podcasts, general tech blogs, news articles with no AI/LLM/agent relevance."
+    },
+    {
+      "item_id": "dreaming-skip-tiny-files",
+      "source": "dreaming",
+      "source_name": "Various",
+      "title": "Batch: Too-small files (<600 bytes)",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 小さすぎるファイルをスキップ: Factory incident response (583B), Parallel Web Systems case study Nooks (431B)。十分なコンテンツなし。",
+      "body_excerpt": "Batch skip: Factory incident response (583B) and Parallel Web Systems case study Nooks (431B) — insufficient content for wiki enrichment."
+    }
+  ]
+}
