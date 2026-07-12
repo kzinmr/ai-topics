@@ -274,7 +274,7 @@
 - [[entities/factory-ai]] — Factory.ai
 - [[entities/faire]] — Faire
 - [[entities/farhan-thawar]] — Farhan Thawar
-- [[entities/fastino-labs]] — Fastino Labs — SLM応用研究ラボ; Pioneerプラットフォーム（自動ファインチューニング＆適応的推論）、GLiNERモデルファミリー（NER、セーフティ、PII検出）; 月間300万+ダウンロード (July 2🆕)
+- [[entities/fastino-labs]] — Fastino Labs — SLM applied research lab; Pioneer platform (automated fine-tuning & adaptive inference), GLiNER model family (NER, safety, PII detection); 3M+ monthly downloads (July 2🆕)
 - [[entities/fastmcp]] — FastMCP
 - [[entities/fei-fei-li]] — Fei-Fei Li — Stanford professor; co-director of HAI; pioneer of ImageNet and computer vision; World Labs founder
 - [[entities/fernando-borretti]] — Fernando Borretti
@@ -612,7 +612,7 @@
 - [[entities/pi-serini]] — PI-SERINI
 - [[entities/piero-kauffmann]] — Piero Kauffmann
 - [[entities/pinecone]] — Pinecone
-- [[entities/pioneer-ai]] — Pioneer AI ([[entities/fastino-labs]]) — SLMファインチューニング＆推論エージェント; Agent Mode（10分）、Research Mode（自律探索）、Adaptive Inference（本番自動改善）; AdaptFT-Bench提案; Intent 99.3%, Entity F1 0.810 (July 2🆕)
+- [[entities/pioneer-ai]] — Pioneer AI ([[entities/fastino-labs]]) — SLM fine-tuning & inference agent; Agent Mode (10 min), Research Mode (autonomous exploration), Adaptive Inference (production auto-improvement); AdaptFT-Bench proposed; Intent 99.3%, Entity F1 0.810 (July 2🆕)
 - [[entities/playerzero]] — PlayerZero
 - [[entities/pliny-prompter]] — Pliny the Prompter
 - [[entities/pluralistic-net]] — Cory Doctorow
@@ -1677,7 +1677,7 @@
 - [[concepts/github-copilot-billing]] — GitHub Copilot Token-Based Billing
 - [[concepts/glass-slipper-effect]] — Glass Slipper Effect
 - [[concepts/gliclass]] — GLiClass
-- [[concepts/gliner-model-family]] — GLiNER Model Family — 双方向エンコーダベースSLMファミリー（GLiNER/GLiNER2/GLiGuard/GLiNER2-PII）; NER→多タスク情報抽出→セーフティモデレーション→PII検出; ChatGPTを凌駕する205Mパラメータモデル; 42 PIIエンティティ; OpenAI Privacy Filterを上回る精度 (July 2🆕)
+- [[concepts/gliner-model-family]] — GLiNER Model Family — Bidirectional encoder-based SLM family (GLiNER/GLiNER2/GLiGuard/GLiNER2-PII); NER→multi-task info extraction→safety moderation→PII detection; 205M parameter model surpassing ChatGPT; 42 PII entity types; Exceeds OpenAI Privacy Filter accuracy (July 2🆕)
 - [[concepts/glm-5-1]] — GLM-5.1
 - [[concepts/glm-5-2]] — GLM-5.2
 - [[concepts/glut-of-circuits]] — GLUT-of-Circuits (LLM Model)
@@ -2759,7 +2759,7 @@
 
 ## Queries (6 pages)
 
-- [[queries/data-analysis-open-harness]] — データ分析に適したOpen Harnessはあるか？
+- [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
 - [[queries/wiki-graph-analysis-weekly-2026-06-19]] — Weekly Wiki Graph Analysis (2026-06-19) — 2,201 pages analyzed; orphan pages, index gaps, broken links

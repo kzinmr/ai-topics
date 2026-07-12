@@ -203,7 +203,7 @@ Evaluations in the GLiNER2 (July 2025 paper) also show GLiClass demonstrating co
 - **Install**: `pip install gliclass`
 
 ## Related Concepts
-- [[concepts/gliner-model-family]] — GLiNER/GLiNER2/GLiGuard/GLiNER2-PII; GLiClassはGLiNERアーキテクチャの分類特化派生
+- [[concepts/gliner-model-family]] — GLiNER/GLiNER2/GLiGuard/GLiNER2-PII; GLiClass is a classification-specialized derivative of the GLiNER architecture
 - [[concepts/rag-retrieval-augmented-generation]]
 - [[entities/gm8xx8]] — Curator
-- [[entities/knowledgator]] — GLiClass開発元
+- [[entities/knowledgator]] — GLiClass developer

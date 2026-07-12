@@ -12,64 +12,64 @@ sources:
 
 # Fastino Labs
 
-**Fastino Inc.**（Fastino Labs）は、Small Language Model（SLM）のフロンティア研究と推論基盤を専門とする応用研究ラボ。主力プロダクトは [[entities/pioneer-ai]]（SLMファインチューニング＆推論プラットフォーム）と [[concepts/gliner-model-family]]（オープンソースのエンコーダモデル群）。
+**Fastino Inc.** (Fastino Labs) is an applied research lab specializing in frontier research and inference infrastructure for Small Language Models (SLMs). Its flagship products are [[entities/pioneer-ai]] (SLM fine-tuning & inference platform) and [[concepts/gliner-model-family]] (open-source encoder model family).
 
-## 企業概要
+## Company Overview
 
-| 項目 | 内容 |
+| Item | Details |
 |---|---|
-| **正式名称** | Fastino Inc. |
-| **ブランド名** | Fastino Labs |
-| **本拠地** | 米国 |
-| **主要プロダクト** | [[entities/pioneer-ai]], [[concepts/gliner-model-family\|GLiNER]] シリーズ |
-| **研究領域** | SLM最適化、エンコーダアーキテクチャ、合成データ生成、適応的推論 |
-| **ライセンス** | Apache 2.0（オープンソースモデル） |
+| **Legal Name** | Fastino Inc. |
+| **Brand Name** | Fastino Labs |
+| **Headquarters** | United States |
+| **Key Products** | [[entities/pioneer-ai]], [[concepts/gliner-model-family\|GLiNER]] series |
+| **Research Areas** | SLM optimization, encoder architecture, synthetic data generation, adaptive inference |
+| **License** | Apache 2.0 (open-source models) |
 
-## 技術ビジョン
+## Technical Vision
 
-Fastinoの核心的信念は、**「特化型SLMがプロダクションAIの主要ビルディングブロックになる」** ということ。フロンティアLLMの汎用性と推論能力を活かしつつ、高頻度・低レイテンシ・決定論的精度が求められるタスクにはSLMを採用する、ハイブリッドアーキテクチャを提唱している。
+Fastino's core belief is that **"specialized SLMs will become the primary building blocks of production AI."** They advocate for a hybrid architecture that leverages the versatility and reasoning capabilities of frontier LLMs while deploying SLMs for tasks requiring high throughput, low latency, and deterministic accuracy.
 
 > "The most effective agentic architectures use both: LLMs for reasoning and planning, and SLMs for high-volume, latency-sensitive tasks that require deterministic accuracy."
 
-## プロダクトポートフォリオ
+## Product Portfolio
 
-### Pioneer（プラットフォーム）
-→ 詳細は [[entities/pioneer-ai]] を参照
+### Pioneer (Platform)
+→ See [[entities/pioneer-ai]] for details
 
-SLMの自動ファインチューニング＆適応的推論プラットフォーム。Agent Mode（対話型）とResearch Mode（完全自律型）を提供。本番推論データからの継続的モデル改善（Adaptive Inference）が主要差別化要因。
+An automated SLM fine-tuning and adaptive inference platform. Offers Agent Mode (interactive) and Research Mode (fully autonomous). Continuous model improvement from production inference data (Adaptive Inference) is a key differentiator.
 
-### GLiNER シリーズ（モデル群）
-→ 詳細は [[concepts/gliner-model-family]] を参照
+### GLiNER Series (Models)
+→ See [[concepts/gliner-model-family]] for details
 
-| モデル | パラメータ | 主要用途 | リリース |
+| Model | Parameters | Primary Use | Release |
 |---|---|---|---|
-| GLiNER (v1) | 50-205M | ゼロショットNER | 2023 |
-| GLiNER2 | 205M | NER + 関係抽出 + JSON抽出 + テキスト分類 | 2025 |
-| GLiGuard | 300M | コンテンツモデレーション・セーフティ分類 | 2026-05 |
-| GLiNER2-PII | 300M | PII検出・マスキング（42エンティティタイプ） | 2026-05 |
+| GLiNER (v1) | 50-205M | Zero-shot NER | 2023 |
+| GLiNER2 | 205M | NER + Relation Extraction + JSON Extraction + Text Classification | 2025 |
+| GLiGuard | 300M | Content Moderation & Safety Classification | 2026-05 |
+| GLiNER2-PII | 300M | PII Detection & Masking (42 Entity Types) | 2026-05 |
 
-## 研究実績
+## Research Achievements
 
-- **月間300万+ダウンロード**（GLiNERシリーズ累計）
+- **3M+ monthly downloads** (cumulative for GLiNER series)
 - **3,200+ GitHub Stars**
-- **1B+ 日次エンドユーザー**に利用されるGLiNERベースシステム
-- **AdaptFT-Bench**: プロダクション条件下的モデル改善を評価する新ベンチマークを提案
-- 論文: "Pioneer Agent: Continual Improvement of Small Language Models in Production"（arXiv:2604.09791）
+- GLiNER-based systems serving **1B+ daily end users**
+- **AdaptFT-Bench**: A new benchmark proposed for evaluating model improvement under production conditions
+- Paper: "Pioneer Agent: Continual Improvement of Small Language Models in Production" (arXiv:2604.09791)
 
-## 主要マイルストーン
+## Key Milestones
 
-| 日付 | イベント |
+| Date | Event |
 |---|---|
-| 2023-11 | GLiNER v1 リリース（arXiv:2311.08526） |
-| 2025 | GLiNER2 リリース（arXiv:2507.18546） |
-| 2026-01 | GLiNER for Modern NER ブログ公開 |
-| 2026-02 | GLiNER2 for Agentic Extraction ブログ公開 |
-| 2026-04 | Pioneer プラットフォームローンチ、Pioneer Agent 論文公開 |
-| 2026-05 | GLiGuard リリース（arXiv:2605.07982） |
-| 2026-05 | GLiNER2-PII リリース（arXiv:2605.09973） |
+| 2023-11 | GLiNER v1 release (arXiv:2311.08526) |
+| 2025 | GLiNER2 release (arXiv:2507.18546) |
+| 2026-01 | GLiNER for Modern NER blog post |
+| 2026-02 | GLiNER2 for Agentic Extraction blog post |
+| 2026-04 | Pioneer platform launch, Pioneer Agent paper release |
+| 2026-05 | GLiGuard release (arXiv:2605.07982) |
+| 2026-05 | GLiNER2-PII release (arXiv:2605.09973) |
 
-## 関連ページ
+## Related Pages
 
-- [[entities/pioneer-ai]] — ファインチューニング＆推論プラットフォーム
-- [[concepts/gliner-model-family]] — GLiNER/GLiNER2/GLiGuard/GLiNER2-PII モデルファミリー
-- [[concepts/small-language-models]] — SLMの設計思想（関連概念）
+- [[entities/pioneer-ai]] — Fine-tuning & Inference Platform
+- [[concepts/gliner-model-family]] — GLiNER/GLiNER2/GLiGuard/GLiNER2-PII Model Family
+- [[concepts/small-language-models]] — SLM Design Philosophy (Related Concept)

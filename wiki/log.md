@@ -598,7 +598,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 ## [2026-07-06] blog-wiki-ingest | Enriched SynthID C2PA section + Sean Goedecke entity page
 
 ### Changes
-- **Enriched** [[concepts/synthid]] — Added "C2PAの限界と批判 — Sean Goedeckeの分析" section (6 critical lenses: all-image signing catch-22, SNS manifest stripping, 26-cert trust list, key management, safety theater, non-image applicability). Updated `updated` date and `sources` with new raw article.
+- **Enriched** [[concepts/synthid]] — Added "C2PA Limitations and Critique — Sean Goedecke's Analysis" section (6 critical lenses: all-image signing catch-22, SNS manifest stripping, 26-cert trust list, key management, safety theater, non-image applicability). Updated `updated` date and `sources` with new raw article.
 - **Enriched** [[entities/seangoedecke-com]] — Added Timeline entry for "C2PA only works if everything is signed" with wikilink to new synthid C2PA section. Updated `updated` date and `sources`.
 
 ### Sources
@@ -781,26 +781,26 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
   - `entities/geoffrey-litt.md` — Added AI Engineer World's Fair 2026 anti-factory critique: "Factories is a depressing vision" thread (35.5K Views), Design Engineering track on human understanding of code. (newsletter: AIEWF Daily Dispatch — Latent Space)
 
 - **Pipeline**: newsletter-wiki-ingest (recovered from triage checkpoint after newsletter-triage JSON parse failure)
-## [2026-07-02] Ornith-1.0 公式リリースページ取り込み — wiki大幅更新
+## [2026-07-02] Ornith-1.0 Official Release Page Import — Major Wiki Update
 
 ### Changes
-- **raw/articles/deep-reinforce.com--ornith-1-0--official-release.md** — New: DeepReinforce公式リリースページ保存
-- **concepts/ornith-self-scaffolding-llm.md** — Updated: Self-Improving Training Framework（2段階RLループ、Reward Hacking Defense 3層防御、Pipeline-RL）、詳細ベンチマーク数値（397B/35B/9B）、References拡充
-- **comparisons/self-scaffolding-approaches.md** — Updated: Ornith欄をself-improving training frameworkの詳細に更新
+- **raw/articles/deep-reinforce.com--ornith-1-0--official-release.md** — New: DeepReinforce official release page saved
+- **concepts/ornith-self-scaffolding-llm.md** — Updated: Self-Improving Training Framework (2-stage RL loop, Reward Hacking Defense 3-layer defense, Pipeline-RL), detailed benchmark numbers (397B/35B/9B), References expanded
+- **comparisons/self-scaffolding-approaches.md** — Updated: Ornith entry updated with self-improving training framework details
 
 ### Sources
 - https://deep-reinforce.com/ornith_1_0.html
 
 ---
 
-## [2026-07-02] Self-Scaffolding Approaches — RLM / Dynamic Workflows / Ornith 比較ページ作成
+## [2026-07-02] Self-Scaffolding Approaches — RLM / Dynamic Workflows / Ornith Comparison Page Created
 
 ### Changes
-- **comparisons/self-scaffolding-approaches.md** — New: 3つのself-scaffoldingアプローチ（RLM, Dynamic Workflows, Ornith）の包括的比較ページ。実装層・訓練・並列性・決定フレームワークを含む
-- **concepts/ornith-self-scaffolding-llm.md** — Updated: RLM/Dynamic Workflowsとの関連セクション追加、Related Pages拡充
-- **concepts/dynamic-workflows.md** — Updated: Related ConceptsにRLM, Ornith, 比較ページへのリンク追加
-- **concepts/rlm-recursive-language-models.md** — Updated: Related ConceptsにOrnith, 比較ページへのリンク追加
-- **index.md** — Updated: comparisons/self-scaffolding-approaches追加
+- **comparisons/self-scaffolding-approaches.md** — New: Comprehensive comparison page for 3 self-scaffolding approaches (RLM, Dynamic Workflows, Ornith). Covers implementation layers, training, parallelism, and decision frameworks.
+- **concepts/ornith-self-scaffolding-llm.md** — Updated: Added RLM/Dynamic Workflows related sections, expanded Related Pages
+- **concepts/dynamic-workflows.md** — Updated: Added links to RLM, Ornith, comparison page in Related Concepts
+- **concepts/rlm-recursive-language-models.md** — Updated: Added links to Ornith, comparison page in Related Concepts
+- **index.md** — Updated: Added comparisons/self-scaffolding-approaches
 
 ### Sources
 - Simon Willison: https://simonwillison.net/2026/Jun/29/ornith/
@@ -809,14 +809,14 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 
 ---
 
-## [2026-07-02] Pioneer AI & GLiNER Model Family — 新規エンティティ＆コンセプトページ作成
+## [2026-07-02] Pioneer AI & GLiNER Model Family — New Entity & Concept Pages Created
 
 ### Changes
-- **entities/fastino-labs.md** — New: Fastino Labs企業ページ — SLM応用研究ラボ; Pioneerプラットフォーム, GLiNERモデルファミリー
-- **entities/pioneer-ai.md** — New: Pioneer AIプロダクトページ — SLMファインチューニング＆推論エージェント; Agent Mode, Research Mode, Adaptive Inference; AdaptFT-Bench
-- **concepts/gliner-model-family.md** — New: GLiNERモデルファミリーコンセプト — GLiNER→GLiNER2→GLiGuard→GLiNER2-PII; 双方向エンコーダアーキテクチャ; 42 PIIタイプ; OpenAI Privacy Filter比較
-- **raw/articles/pioneer-ai-blog-*.md** — New: 6本のPioneer AIブログ記事をraw保存
-- **SCHEMA.md** — Tags追加: `encoder-model`, `small-language-model`, `named-entity-recognition`, `pii-detection`
+- **entities/fastino-labs.md** — New: Fastino Labs company page — SLM applied research lab; Pioneer platform, GLiNER model family
+- **entities/pioneer-ai.md** — New: Pioneer AI product page — SLM fine-tuning & inference agent; Agent Mode, Research Mode, Adaptive Inference; AdaptFT-Bench
+- **concepts/gliner-model-family.md** — New: GLiNER model family concept — GLiNER→GLiNER2→GLiGuard→GLiNER2-PII; bidirectional encoder architecture; 42 PII types; OpenAI Privacy Filter comparison
+- **raw/articles/pioneer-ai-blog-*.md** — New: 6 Pioneer AI blog articles saved as raw
+- **SCHEMA.md** — Tags added: `encoder-model`, `small-language-model`, `named-entity-recognition`, `pii-detection`
 
 ### Sources
 - https://pioneer.ai/blog/introducing-pioneer
@@ -1116,12 +1116,12 @@ Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tribute
 ---
 ## [2026-06-29] Lambda MicroVMs vs AgentCore — Comparison Page
 
-**Created**: `comparisons/lambda-microvms-vs-agentcore.md` — AWS Lambda MicroVMs と Amazon Bedrock AgentCore の比較分析ページを作成。異なるスタックレイヤー（分離プリミティブ vs マネージドプラットフォーム）として整理し、アーキテクチャ位置付け、使用条件、競合状況を分析。
+**Created**: `comparisons/lambda-microvms-vs-agentcore.md` — Comparison analysis of AWS Lambda MicroVMs and Amazon Bedrock AgentCore. Organized as different stack layers (isolation primitives vs managed platform), analyzing architectural positioning, usage conditions, and competitive landscape.
 
 **Updated**:
-- `concepts/aws-lambda-microvms.md` — 比較ページへのリンク追加
-- `entities/amazon-bedrock-agentcore.md` — 比較ページへのリンク追加
-- `index.md` — 比較ページを Comparisons セクションに追加
+- `concepts/aws-lambda-microvms.md` — Added link to comparison page
+- `entities/amazon-bedrock-agentcore.md` — Added link to comparison page
+- `index.md` — Added comparison page to Comparisons section
 
 ---
 ## [2026-06-29] AWS Lambda MicroVMs — Wiki Ingestion
@@ -1419,7 +1419,7 @@ Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tribute
 - `wiki/index.md` — added andrew-nesbitt entry
 
 ---
-## [2026-06-25] OpenAI "How Agents Are Transforming Work" + Research Paper 取り込み
+## [2026-06-25] OpenAI "How Agents Are Transforming Work" + Research Paper Ingestion
 
 **Source**:
 - Blog: https://openai.com/index/how-agents-are-transforming-work/ (June 25, 2026)
@@ -1777,7 +1777,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **OpenRouter Fusion API blog post** (2026-06-12): Panel synthesis. Fable 5 + GPT-5.5 = 69.0% DRACO. Raw → raw/articles/2026-06-12_openrouter-fusion-api-multi-model-synthesis.md
 
 ### Created
-- **concepts/multi-model-synthesis-strategies** — 横断概念ページ。3アプローチ比較: Cognition Devin Fusion (Sidekick)、OpenRouter Fusion (Panel Synthesis)、Sakana Fugu (Evolved Orchestration)
+- **concepts/multi-model-synthesis-strategies** — Cross-cutting concept page. Compares 3 approaches: Cognition Devin Fusion (Sidekick), OpenRouter Fusion (Panel Synthesis), Sakana Fugu (Evolved Orchestration)
 
 ### Updated
 - **concepts/coding-agents/model-routing** — Added Devin Fusion section + cross-reference

@@ -50,29 +50,29 @@ SynthID and C2PA serve complementary roles:
 
 Together, they enable a verification chain: if metadata is stripped during upload, the surviving SynthID watermark can still identify content as AI-generated and potentially reconnect it to its original C2PA credentials. The industry vision is that **content without metadata or watermarks should be considered suspicious**.
 
-### C2PAの限界と批判 — Sean Goedeckeの分析
+### C2PA Limitations and Critique — Sean Goedecke's Analysis
 
-Sean Goedeckeの「[C2PA only works if everything is signed](https://seangoedecke.com/c2pa-only-works-if-everything-is-signed/)」(2026年7月)は、C2PAのPKIベース署名方式の本質的な限界と採用障壁を詳述する。SynthIDページの「SynthID + C2PA: The Dual-Layer Approach」節はC2PAをSynthIDの補完技術として紹介するが、Goedeckeの分析は以下の批判的観点を追加する:
+Sean Goedecke's analysis of "[C2PA only works if everything is signed](https://seangoedecke.com/c2pa-only-works-if-everything-is-signed/)" (July 2026) details the fundamental limitations and adoption barriers of C2PA's PKI-based signing approach. The "SynthID + C2PA: The Dual-Layer Approach" section above introduces C2PA as a complementary technology to SynthID, but Goedecke's analysis adds the following critical perspectives:
 
-**1. 全画像署名のCatch-22（採用の矛盾）:**
-C2PAが有効に機能するには、すべての画像（AI生成・人間撮影の両方）が署名されている必要がある。しかし現状、AI生成画像の大半がC2PA署名されている一方、人間撮影画像の署名率は極めて低い（Google Pixel 10のみがデフォルト署名対応、iPhoneは非対応）。FotoForensicsのデータでは週に約12件のC2PA署名画像が検出されるが、これは年間90万件処理中の約600件に過ぎない。この非対称性により、AI画像を「人間撮影」と偽装するには単に署名を削除すればよい — C2PAは**署名がないことの異常性**に依存するが、その異常性は実現していない。
+**1. The All-Image Signing Catch-22:**
+For C2PA to function effectively, all images (both AI-generated and human-captured) need to be signed. However, while most AI-generated images carry C2PA signatures, the signing rate for human-captured images is extremely low (only the Google Pixel 10 supports default signing; iPhone does not). FotoForensics data shows about 12 C2PA-signed images detected per week — approximately 600 out of 900,000 images processed annually. This asymmetry means that to pass off an AI image as "human-captured," one only needs to strip the signature. C2PA relies on **the abnormality of an unsigned image**, but that abnormality has not materialized.
 
-**2. SNS保存時のManifest除去問題:**
-C2PAメタデータはファイルに数十〜数百KBのオーバーヘッドを追加する。Facebook Messenger等のSNSに画像をアップロードして再ダウンロードすると、C2PA manifestが剥離される。これを防ぐには全SNS企業が画像再エンコード処理を更新する必要があり、大規模な規制と業界調整が必要。
+**2. Manifest Stripping on Social Media:**
+C2PA metadata adds tens to hundreds of KB of overhead per file. When images are uploaded to and re-downloaded from social networks like Facebook Messenger, the C2PA manifest is stripped. Preventing this requires all social media companies to update their image re-encoding pipelines — a massive regulatory and industry coordination challenge.
 
-**3. 26証明書のTrust List制限:**
-C2PAのバリデータは、公式C2PA trust listに登録された証明書チェーン（現在26証明書のみ）に基づいて検証する。新規参加者は承認プロセスを経る必要があり、採用の障壁となる。一方、自己署名証明書での署名はバリデータによって拒否される。
+**3. The 26-Certificate Trust List Bottleneck:**
+C2PA validators verify against certificate chains registered on the official C2PA trust list — currently only 26 certificates. New participants must go through an approval process, creating an adoption barrier. Self-signed certificates are rejected by validators.
 
-**4. キー管理問題:**
-ChatGPT等のオンラインツールはサーバー側で署名できるが、Photoshop/Excel/Word等のオフラインツールではローカル鍵が必要となる。ローカル鍵の抽出防止と、オフライン環境での署名の両立は未解決。
+**4. Key Management Problem:**
+Online tools like ChatGPT can sign on the server side, but offline tools like Photoshop/Excel/Word require local keys. Preventing local key extraction while enabling offline signing remains an unsolved problem.
 
-**5. 安全劇場（Safety Theater）リスク:**
-C2PAの現状の採用率では実質的な識別機能を提供できないが、企業は「AI安全性に取り組んでいる」シグナルとしてC2PA対応を宣伝するインセンティブを持つ。Goedeckeは「技術的に理解のない層に対しては説得力のあるピッチ」と指摘し、実際の効果以上に投資が集まるリスクを警告。
+**5. Safety Theater Risk:**
+At current adoption rates, C2PA cannot provide meaningful identification functionality. Yet companies have incentives to advertise C2PA support as a signal that they are "working on AI safety." Goedecke notes it's "a compelling pitch for technically unsophisticated audiences," warning that investment may flow disproportionately to actual effectiveness.
 
-**6. 非画像コンテンツへの適用困難:**
-画像以外のファイル形式（Excel、PDF等）ではC2PAメタデータをsidecarファイルに格納する必要があり、テキストのコピーペーストによる署名バイパスが容易。チャットツールやエージェント出力は非コンテナ化プレーンテキストであり、C2PAの適用外。
+**6. Non-Image Content Applicability:**
+For non-image file formats (Excel, PDF, etc.), C2PA metadata must be stored in sidecar files, making signature bypass via copy-paste trivial. Chat tools and agent outputs are non-containerized plain text, falling outside C2PA's scope.
 
-**評価**: Goedeckeの分析はC2PAの長期的な可能性を否定するものではないが、SynthIDがカバーする信号レベルの透かしと異なり、C2PAのメタデータベースのアプローチは**エコシステム全体の協調**（全カメラ・全SNS・全クリエイティブツールの参加）が必要であることを示す。SynthID + C2PAの二層戦略は補完的であるが、C2PA層の現実的な効果はecosystem adoptionに完全に依存し、短期的には安全劇場のリスクが高い。この批判的分析は「SynthID + C2PA: The Dual-Layer Approach」節の楽観的記述に対する重要なカウンターウェイトとなる。→ [[entities/seangoedecke-com]]
+**Assessment**: Goedecke's analysis does not dismiss C2PA's long-term potential, but it shows that unlike SynthID's signal-level watermarking, C2PA's metadata-based approach requires **ecosystem-wide coordination** (participation from all camera manufacturers, all social networks, and all creative tools). The SynthID + C2PA dual-layer strategy is complementary, but the practical effectiveness of the C2PA layer depends entirely on ecosystem adoption, and in the short term, the safety theater risk is high. This critical analysis serves as an important counterweight to the optimistic framing in the "SynthID + C2PA: The Dual-Layer Approach" section.→ [[entities/seangoedecke-com]]
 
 ## Cross-Industry Adoption
 
@@ -180,5 +180,5 @@ Sean Goedecke's July 2026 analysis ("[Text AI watermarks will always be trivial 
 - [[entities/openai]] — OpenAI's role in AI governance and content labeling
 - [[entities/deepmind]] — Google DeepMind, creator of SynthID
 - [[concepts/security-and-governance/ai-safety]] — AI safety and governance frameworks
-- [[entities/seangoedecke-com]] — Sean Goedecke, whose C2PA批判 analysis provides critical counterpoint to SynthID+C2PA optimism
+- [[entities/seangoedecke-com]] — Sean Goedecke, whose C2PA critique analysis provides critical counterpoint to SynthID+C2PA optimism
 - [[concepts/ai-detection]] — AI-generated content detection methods
