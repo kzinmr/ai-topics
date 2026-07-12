@@ -1,0 +1,63 @@
+{
+  "run_id": "20260712T071057Z",
+  "triaged_at": "2026-07-12T07:15:00Z",
+  "source_newsletter": {
+    "subject": "The Race Beneath the Race",
+    "date": "2026-07-11",
+    "source_label": "uid=357",
+    "newsletter_publisher": "Superintelligence (getsuperintel.site)",
+    "author_x_handle": "@kimmonismus",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-11-the-race-beneath-the-race.md"
+  },
+  "resolution_summary": {
+    "total_links": 18,
+    "resolved_urls_file": "/opt/data/ai-topics/wiki/raw/inbox/newsletter-ingest/2026-07-11-resolved-urls.json",
+    "articles_found": 1,
+    "social_profile_links": 11,
+    "template_footer_links": 6,
+    "note": "Only 1 of 18 links was an actual article. Links 3-16 are all newsletter template/footer links (social media profiles, subscribe preferences, advertise, beehiiv homepage, sponsor)."
+  },
+  "classified_articles": [
+    {
+      "index": 1,
+      "title": "The Race Beneath the Race",
+      "url": "https://getsuperintel.site/p/the-race-beneath-the-race",
+      "classification": "low",
+      "reason": "Newsletter essay from getsuperintel.site (AI superintelligence newsletter by @kimmonismus). Content inaccessible due to Cloudflare protection — cannot verify AI/LLM specificity. The title and newsletter theme suggest AI competition dynamics analysis, but without content verification, cannot confirm relevance to wiki knowledge base. The publisher itself covers AI/superintelligence topics, so worth monitoring as a source. Not enough signal to classify as high without article content.",
+      "proposed_wiki_action": "monitor",
+      "tags": ["ai-competition", "superintelligence", "newsletter-analysis"],
+      "content_available": false,
+      "cloudflare_blocked": true
+    }
+  ],
+  "non_article_links_summary": [
+    {"index": 3, "type": "social", "destination": "x.com/kimmonismus", "note": "Author X/Twitter profile"},
+    {"index": 4, "type": "promo", "destination": "getsuperintel.com/plus-whitelist", "note": "Plus whitelist signup"},
+    {"index": 5, "type": "sponsor", "destination": "Z.ai", "note": "Sponsor — Z.ai Advanced AI Chatbot & Agent powered by GLM-5.2"},
+    {"index": 6, "type": "paywall", "destination": "getsuperintel.site/upgrade", "note": "Upgrade/paywall page"},
+    {"index": 7, "type": "social", "destination": "x.com/getsuperintel", "note": "Newsletter X account"},
+    {"index": 8, "type": "social", "destination": "instagram.com/getsuperintel", "note": "Newsletter Instagram"},
+    {"index": 9, "type": "social", "destination": "threads.com/@getsuperintel", "note": "Newsletter Threads"},
+    {"index": 10, "type": "social", "destination": "youtube.com/channel/UCWrhMixNbAMghzS-SNiA3Ug", "note": "Newsletter YouTube"},
+    {"index": 11, "type": "social", "destination": "tiktok.com/@superintel_daily", "note": "Newsletter TikTok"},
+    {"index": 12, "type": "social", "destination": "linkedin.com/company/getsuperintel", "note": "Newsletter LinkedIn (Superintelligence AI LLC)"},
+    {"index": 14, "type": "promo", "destination": "getsuperintel.com/advertise", "note": "Advertise page"},
+    {"index": 15, "type": "template", "destination": "getsuperintel.site subscribe preferences", "note": "Email preferences"},
+    {"index": 16, "type": "template", "destination": "beehiiv.com", "note": "Platform homepage"},
+    {"index": 17, "type": "template", "destination": "hp.beehiiv.com newsletter homepage", "note": "Newsletter homepage"},
+    {"index": 18, "type": "template", "destination": "email.beehiivstatus.com", "note": "Email tracking pixel"}
+  ],
+  "statistics": {
+    "critical": 0,
+    "high": 0,
+    "low": 1,
+    "irrelevant": 17,
+    "total_processed": 18
+  },
+  "recommendations": [
+    "Low-value newsletter batch — only 1 article found, and it was behind Cloudflare protection. No actionable content for wiki ingestion.",
+    "The newsletter source 'Superintelligence' (getsuperintel.site) by @kimmonismus covers AI/superintelligence topics and could be worth tracking as a recurring source.",
+    "Z.ai (sponsor link) is an AI chatbot/agent powered by GLM-5.2 — could be worth an entity page if it gains traction.",
+    "Consider adding @kimmonismus or @getsuperintel to x-accounts.yaml if AI superintelligence coverage is valuable."
+  ]
+}

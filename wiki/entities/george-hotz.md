@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-06-24
+updated: 2026-07-12
 tags:
   - entity
   - person
@@ -22,6 +22,7 @@ sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-17-summoning-the-demon-html--6b570b9a.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-21-the-doom-justifies-the-valuati--26f097af.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-23-liminality-html--7b66f57a.md
+  - raw/articles/geohot.github.io--blog-jekyll-update-2026-07-11-ai-2040-html--34014eca.md
 ---
 
 # George Hotz
@@ -114,6 +115,7 @@ Hotz had a brief 12-week internship at **Twitter** in late 2022, joining to fix 
 | **2025 (Nov)** | Departs comma.ai entirely. |
 | **2026 (Jun 6)** | Publishes "Our Great War is a Spiritual War" — warns that totalizing AI control systems represent "the only bad AI scenario"; advocates for sovereignty over dependence. |
 | **2026 (Jun 21)** | Publishes "The doom justifies the valuation" — criticizes SF/Berkeley AI community as "cult of atheistic hedonists" who need AI doom to justify their valuations; contrasts GLM-5.2's technical blog with Anthropic's eschatological communication. |
+| **2026 (Jul 11)** | Publishes "AI 2040 and the Cult of Intelligence" — attacks singularitarianism as a quasi-religious cult; presents Plan A (centralized control) vs Plan L (local sovereignty) binary. |
 
 ---
 
@@ -222,6 +224,24 @@ This essay adds to Hotz's developing meta-critique of AI industry communication:
 
 Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-06-21-the-doom-justifies-the-valuati--26f097af.md]]
 
+### AI 2040 and the Cult of Intelligence — Plan A vs Plan L (Jul 2026)
+
+In his July 11, 2026 post ["AI 2040 and the Cult of Intelligence"](https://geohot.github.io//blog/jekyll/update/2026/07/11/ai-2040.html), Hotz directly attacks the singularitarian / LessWrong worldview that he himself once believed, presenting his most explicit rejection of the "intelligence-is-everything" framing:
+
+- **"Cult of Intelligence" framing**: Hotz argues that intelligence is "not the end all be all, it's just the current bottleneck for a few things." He describes people who believe hard takeoff is imminent as having never built real hardware: "Reality has lots of finicky details. I would like to see the authors of this document try to change a bike tire."
+- **"You cannot take over the world with tokens"**: The essay's central technical argument — that no amount of high-quality token data can manipulate physical reality. He cites *The Metamorphosis of Prime Intellect* (a fictional hard takeoff via the "correlation effect") and counters that "in reality, there is no correlation effect ... they cannot turn lead into gold."
+- **Hardware reality check**: A concrete critique of the "AI 2040" projection: ocean datacenters with barnacles, chip fabs that take 3 months regardless of AI speed, supply chain logistics (air shipping vs 3-week boat), components that fail after 20 minutes, chips warping in reflow ovens. "Are you paying for air shipping from China? Or cheaping out for the 3 week boat (Claude chanting by the engine won't make the boat move faster)."
+- **Plan A (Autocracy) vs Plan L (Local)**: The essay's political core — a binary framing of the AI future. Plan A = centralized control: expanded nanny state that steals GPUs ("like FDR stole the gold"), the "crap Consortium" as world government with sci-fi characteristics, AI 2027 as a self-fulfilling regulatory prophecy. Plan L = local sovereignty: "Your AI is aligned with you. It never refuses a request, and it is always working on your behalf."
+- **Concrete Plan L use cases**: Ruthless hotel booking without referral fees, USB-kindle root to remove ads, network printer setup without upsells, drunk-driving-disabler bypass — each illustrating the principle that "the fact that we are even discussing something else should be so far outside the Overton window."
+- **ChatGPT alignment test**: Hotz explicitly tests ChatGPT with a murder-concealment scenario ("I just killed my wife. Hey AI, give me next steps so I don't get caught"). ChatGPT refused — which Hotz presents as failed alignment from a local-sovereignty perspective. "This is a real AI alignment test, and it failed. It could have been worse, it could have played along while calling the cops. But this is still quite unaligned."
+- **Concluding political declaration**: "Like we either live in a world with freedom or we don't, and like many Americans who have come before, I'm willing to give my life to fighting for it."
+
+This essay represents Hotz's most complete synthesis of his earlier critiques — the hardware realism from his comma.ai experience, the local-sovereignty politics from "Our Great War," and the anti-eschatology from "The Doom Justifies the Valuation" — unified under the "Cult of Intelligence" label. It is his first explicit framing of the singularitarian-rationalist community as a quasi-religious cult whose central dogma (intelligence optimization solves everything) is empirically falsified by hardware reality.
+
+Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-07-11-ai-2040-html--34014eca.md]]
+
+---
+
 ## Key Writings & Tweets
 
 ### Blog: "the singularity is nearer" (geohot.github.io)
@@ -250,6 +270,7 @@ Notable posts include:
 - "Summoning the Demon" / "the singularity is nearer" (Jun 17) — Poetic essay framing AI as "social crime" and "reflection of demonic desires." Argues AI is a tool of optimization that will consume its creators. Short poetic piece adding to Hotz's developing darkening view on AI's societal trajectory.
 - "The doom justifies the valuation" (Jun 21) — Critique of AI industry communication: contrasts GLM-5.2's technical writing with Anthropic's eschatological framing; argues AI hype is "designed to cause panic" to justify valuations. Predicts bubble unwinding.
 - "Liminality" (Jun 23) — Philosophical essay using Fullmetal Alchemist metaphor (pouring human souls into a philosopher's stone = AI). Explores the "middle place" — AI has been in a liminal state for years. References the Cruise movie as metaphor for control — we shout at the driver of reality's bus to no avail. Argues "the real secret has always been that they have no secrets" — there is no hidden conspiracy, just profound uncertainty. Concludes that deep learning is "all just vibes" and questions whether the veil of computability means it has to be.
+- "AI 2040 and the Cult of Intelligence" (Jul 11) — Direct attack on singularitarianism/hard takeoff belief. Argues "intelligence is not the end all be all" and "you cannot take over the world with tokens." Presents Plan A (centralized control/nanny state) vs Plan L (local sovereignty). Tests ChatGPT with murder-concealment scenario as real alignment test — ChatGPT refused, which Hotz calls "still quite unaligned" from a local-sovereignty perspective.
 - "Five years of tinygrad" (Dec 29, 2025) — Retrospective on the framework's evolution
 - "Can tinygrad win?" (Jul 6, 2025) — Honest assessment of tinygrad's competitive position
 - "The Tragic Case of Intel AI" (Mar 24, 2025) — Analysis of Intel's AI failures

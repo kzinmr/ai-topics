@@ -1,3 +1,11 @@
+## [2026-07-12] blog-wiki-ingest | George Hotz "AI 2040 and the Cult of Intelligence"
+
+### Changes
+- **[[entities/george-hotz.md]]** — Added "AI 2040 and the Cult of Intelligence" section: Plan A vs Plan L binary, "Cult of Intelligence" framing of singularitarianism, hardware reality check (ocean datacenters, chip fab timelines), ChatGPT alignment test (murder-concealment scenario refused), "you cannot take over the world with tokens" thesis. Updated timeline with Jul 11 entry. Added to Key Writings list. Updated sources frontmatter.
+
+### Sources
+- [[raw/articles/geohot.github.io--blog-jekyll-update-2026-07-11-ai-2040-html--34014eca.md]]
+
 ## [2026-07-11] dreaming | Entity enrichments (Cohere DSD, Fireworks ×2, Hebbia integrations)
 
 ### Changes
