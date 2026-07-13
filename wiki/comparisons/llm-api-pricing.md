@@ -2,7 +2,7 @@
 title: "LLM API Pricing Comparison — US vs China Providers"
 type: comparison
 created: 2026-06-09
-updated: 2026-07-06
+updated: 2026-07-13
 tags:
   - comparison
   - economics
@@ -34,7 +34,7 @@ Per-million-token API pricing across major US and Chinese LLM providers. All pri
 
 ## Current Frontier Models
 
-The models listed below are each provider's **latest generation** as of June 2026. Older generations are in the [Legacy Models](#legacy-models) section.
+The models listed below are each provider's **latest generation** as of July 2026. Older generations are in the [Legacy Models](#legacy-models) section.
 
 ### Column Definitions
 
@@ -52,12 +52,15 @@ The models listed below are each provider's **latest generation** as of June 202
 
 | Provider | Model | Tier | In $/1M | Out $/1M | Cache Read | Cache Write | Batch In | Batch Out | Ctx | Max Out | Source |
 |----------|-------|------|---------|----------|------------|-------------|----------|-----------|-----|---------|--------|
-| OpenAI | GPT-5.5 | Flagship | $5.00 | $30.00 | $0.50 | — | $2.50 | $15.00 | 400K | 272K | [openai.com](https://developers.openai.com/api/docs/pricing) |
-| OpenAI | GPT-5.4 | Frontier | $2.50 | $15.00 | $0.25 | — | $1.25 | $7.50 | 400K | 272K | [openai.com](https://developers.openai.com/api/docs/pricing) |
-| OpenAI | GPT-5.4-mini | Mid | $0.75 | $4.50 | $0.075 | — | $0.375 | $2.25 | 400K | — | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| OpenAI | GPT-5.6-sol | Flagship | $5.00 | $30.00 | $0.50 | $6.25 | $2.50 | $15.00 | 400K | — | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| OpenAI | GPT-5.6-terra | Frontier | $2.50 | $15.00 | $0.25 | $3.125 | $1.25 | $7.50 | 400K | — | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| OpenAI | GPT-5.6-luna | Mid | $1.00 | $6.00 | $0.10 | $1.25 | $0.50 | $3.00 | 400K | — | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| OpenAI | GPT-5.5 | Frontier | $5.00 | $30.00 | $0.50 | — | $2.50 | $15.00 | 400K | 272K | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| OpenAI | GPT-5.4 | Mid | $2.50 | $15.00 | $0.25 | — | $1.25 | $7.50 | 400K | 272K | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| OpenAI | GPT-5.4-mini | Budget | $0.75 | $4.50 | $0.075 | — | $0.375 | $2.25 | 400K | — | [openai.com](https://developers.openai.com/api/docs/pricing) |
 | OpenAI | GPT-5.4-nano | Budget | $0.20 | $1.25 | $0.02 | — | $0.10 | $0.625 | 400K | — | [openai.com](https://developers.openai.com/api/docs/pricing) |
-| OpenAI | o3-deep-research | Reasoning | $10.00 | $40.00 | $2.50 | — | — | — | 200K | — | [openai.com](https://developers.openai.com/api/docs/pricing) |
-| OpenAI | o4-mini-deep-research | Reasoning | $2.00 | $8.00 | $0.50 | — | — | — | 200K | — | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| OpenAI | o3-deep-research | Reasoning | $5.00 | $20.00 | — | — | $5.00 | $20.00 | 200K | — | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| OpenAI | o4-mini-deep-research | Reasoning | $1.00 | $4.00 | — | — | $1.00 | $4.00 | 200K | — | [openai.com](https://developers.openai.com/api/docs/pricing) |
 | Anthropic | Claude Sonnet 5 | Frontier | $2.00* | $10.00* | $0.20 | $2.50 | — | — | 1M | 128K | [anthropic](https://docs.anthropic.com/en/docs/about-claude/models) |
 | Anthropic | Claude Opus 4.8 | Premium | $5.00 | $25.00 | $0.50 | $6.25 | $2.50 | $12.50 | 1M | 128K | [anthropic](https://www.anthropic.com/pricing) |
 | Anthropic | Claude Sonnet 4.6 | Frontier | $3.00 | $15.00 | $0.30 | $3.75 | $1.50 | $7.50 | 1M | — | [anthropic](https://www.anthropic.com/pricing) |
@@ -119,6 +122,7 @@ Cache pricing is the **single most important cost lever for agent workloads** �
 | **Anthropic** | **90%** | +25% | Explicit breakpoints | ❌ |
 | **Anthropic (Fable 5)** | **~90%** | +25% | Explicit breakpoints (est.) | ❌ |
 | **Google** | **90%** | — | Context Caching API | ❌ |
+| **OpenAI (GPT-5.6)** | **90%** | +25% | Auto prefix matching + cache writes | ✅ |
 | **OpenAI (GPT-5.x)** | **90%** | — | Auto prefix matching | ✅ |
 
 ### Cache Read Prices (Frontier Models)
@@ -138,10 +142,13 @@ Sorted by cache read price — the price you actually pay for repeated input tok
 | Anthropic | Claude Sonnet 5 | $2.00* | $0.20 | 90% | **$0.56** |
 | Anthropic | Claude Opus 4.8 | $5.00 | $0.50 | 90% | **$1.40** |
 | Anthropic | Claude Fable 5 | $10.00 | ~$1.00 | ~90% | **~$2.80** |
+| OpenAI | GPT-5.6-luna | $1.00 | $0.10 | 90% | **$0.28** |
 | OpenAI | GPT-5.4-nano | $0.20 | $0.02 | 90% | **$0.056** |
 | OpenAI | GPT-5.4-mini | $0.75 | $0.075 | 90% | **$0.21** |
 | OpenAI | GPT-5.4 | $2.50 | $0.25 | 90% | **$0.70** |
+| OpenAI | GPT-5.6-terra | $2.50 | $0.25 | 90% | **$0.70** |
 | OpenAI | GPT-5.5 | $5.00 | $0.50 | 90% | **$1.40** |
+| OpenAI | GPT-5.6-sol | $5.00 | $0.50 | 90% | **$1.40** |
 
 *Effective input price = 20% × base + 80% × cache_read (80% cache hit rate, typical for persistent agent sessions).
 
@@ -166,10 +173,15 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 
 | Provider | Model | Base In | Batch In | Base Out | Batch Out | Savings (4:1)* |
 |----------|-------|---------|----------|----------|-----------|---------------|
+| OpenAI | GPT-5.6-sol | $5.00 | $2.50 | $30.00 | $15.00 | $7.50 |
+| OpenAI | GPT-5.6-terra | $2.50 | $1.25 | $15.00 | $7.50 | $3.75 |
+| OpenAI | GPT-5.6-luna | $1.00 | $0.50 | $6.00 | $3.00 | $1.50 |
 | OpenAI | GPT-5.5 | $5.00 | $2.50 | $30.00 | $15.00 | $7.50 |
 | OpenAI | GPT-5.4 | $2.50 | $1.25 | $15.00 | $7.50 | $3.75 |
 | OpenAI | GPT-5.4-mini | $0.75 | $0.375 | $4.50 | $2.25 | $1.13 |
 | OpenAI | GPT-5.4-nano | $0.20 | $0.10 | $1.25 | $0.625 | $0.31 |
+| OpenAI | o3-deep-research | $5.00 | $5.00 | $20.00 | $20.00 | — |
+| OpenAI | o4-mini-deep-research | $1.00 | $1.00 | $4.00 | $4.00 | — |
 | Anthropic | Claude Haiku 4.5 | $1.00 | $0.50 | $5.00 | $2.50 | $1.30 |
 | Anthropic | Claude Sonnet 4.6 | $3.00 | $1.50 | $15.00 | $7.50 | $3.90 |
 | Anthropic | Claude Opus 4.8 | $5.00 | $2.50 | $25.00 | $12.50 | $6.50 |
@@ -195,7 +207,10 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 
 | Provider | Model | In $/1M | Out $/1M | Cache Read | Blended* | Why it wins |
 |----------|-------|---------|----------|------------|----------|-------------|
-| OpenAI | GPT-5.5 | $5.00 | $30.00 | $0.50 | $10.00 | Latest flagship |
+| OpenAI | GPT-5.6-sol | $5.00 | $30.00 | $0.50 | $10.00 | Latest flagship; cache writes available |
+| OpenAI | GPT-5.6-terra | $2.50 | $15.00 | $0.25 | $5.00 | Frontier balance; cache writes available |
+| OpenAI | GPT-5.6-luna | $1.00 | $6.00 | $0.10 | $2.00 | Mid-tier with cache writes; replaces 5.4-mini positioning |
+| OpenAI | GPT-5.5 | $5.00 | $30.00 | $0.50 | $10.00 | Previous flagship |
 | OpenAI | GPT-5.4 | $2.50 | $15.00 | $0.25 | $5.00 | Frontier balance |
 | OpenAI | GPT-5.4-mini | $0.75 | $4.50 | $0.075 | $1.50 | Speed + cost |
 | Google | Gemini 3.5 Flash | $1.50 | $9.00 | $0.15 | $2.40 | 90% cache discount + speed |
@@ -209,8 +224,8 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 
 | Provider | Model | In $/1M | Out $/1M | Cache Read | Blended* | Max Out |
 |----------|-------|---------|----------|------------|----------|---------|
-| OpenAI | o4-mini-deep-research | $2.00 | $8.00 | $0.50 | $3.20 | — |
-| OpenAI | o3-deep-research | $10.00 | $40.00 | $2.50 | $16.00 | — |
+| OpenAI | o4-mini-deep-research | $1.00 | $4.00 | — | $1.60 | — |
+| OpenAI | o3-deep-research | $5.00 | $20.00 | — | $8.00 | — |
 
 ### Premium
 
@@ -229,6 +244,9 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 |----------|-------|----------|---------------------|
 | DeepSeek | V4-Flash | $0.18 | **$0.06** |
 | DeepSeek | V4-Pro | $0.52 | **$0.14** |
+| OpenAI | GPT-5.6-sol | $10.00 | **$2.90** |
+| OpenAI | GPT-5.6-terra | $5.00 | **$1.45** |
+| OpenAI | GPT-5.6-luna | $2.00 | **$0.58** |
 | OpenAI | GPT-5.5 | $10.00 | **$2.90** |
 | OpenAI | GPT-5.4 | $5.00 | **$1.45** |
 | OpenAI | GPT-5.4-mini | $1.50 | **$0.44** |
@@ -247,6 +265,9 @@ Batch APIs process requests asynchronously (24h SLA) at ~50% discount. Available
 |----------|-------|----------|
 | DeepSeek | V4-Flash | $0.21 |
 | DeepSeek | V4-Pro | $0.65 |
+| OpenAI | GPT-5.6-sol | $17.50 |
+| OpenAI | GPT-5.6-terra | $8.75 |
+| OpenAI | GPT-5.6-luna | $3.50 |
 | OpenAI | GPT-5.5 | $17.50 |
 | OpenAI | GPT-5.4 | $8.75 |
 | Google | Gemini 3.5 Flash | $5.25 |
@@ -327,8 +348,8 @@ Older-generation models still available via APIs. Prices unchanged from their re
 Claude Opus dropped from $15/$75 (4.1) to $5/$25 (4.7/4.8) — a **3x price reduction** for higher capability. This repositions Opus from "ultra-premium only" to "accessible frontier." The fast mode at $10/$50 adds a latency/cost tradeoff dimension.
 ### 2. Fable 5: Ultra-Premium Mythos-Class
 Claude Fable 5 at $10/$50 is 2× Opus 4.8 pricing — a new "ultra-premium" tier above Premium. However, it's less than half the price of Mythos Preview ($20+/MTok est.), reflecting Anthropic's strategy to make Mythos-class capabilities broadly accessible. Cache economics (~90% discount, ~$1.00/M read) are critical for agent workloads on this model.
-### 3. OpenAI's GPT-5.x Tiered Architecture
-OpenAI's GPT-5.5 at $5/$30 is a major price increase over GPT-5.1 ($1.25/$10), but with a new 4-tier lineup: GPT-5.5 (flagship) → GPT-5.4 ($2.50/$15) → GPT-5.4-mini ($0.75/$4.50) → GPT-5.4-nano ($0.20/$1.25). Crucially, cache discounts improved from 50% to 90% for GPT-5.x, making cached pricing competitive with Anthropic.
+### 3. OpenAI's GPT-5.6 Architecture with Cache Writes
+OpenAI expanded to a 5-tier lineup: GPT-5.6-sol ($5/$30, flagship) → GPT-5.6-terra ($2.50/$15) → GPT-5.6-luna ($1/$6) → GPT-5.5 ($5/$30, previous flagship) → GPT-5.4 ($2.50/$15). The GPT-5.6 family introduces **cache writes** at +25% premium over base input — matching Anthropic's cache write model. This is a new pricing dimension for OpenAI, where auto-cached reads remain at 90% discount but populating the cache costs more. New specialized models also appeared: gpt-5.3-codex ($1.75/$14) and gpt-5.4-cyber (undisclosed pricing). A new **Priority** pricing tier (2× standard) was added alongside Standard, Batch, and Flex.
 
 ### 4. Google's Rapid Iteration
 Google moved from Gemini 2.5 → 3.1 → 3.5 within months. Gemini 3.5 Flash at $1.50/$9.00 with 90% cache discount competes directly with OpenAI's GPT-5.4 at similar price but with better caching economics.
@@ -339,8 +360,8 @@ With 98% input tokens in agent workflows, effective pricing = cache pricing. Dee
 ### 6. China's Price Floor Is Sub-Floor
 DeepSeek V4-Flash at $0.14/$0.28 with $0.0028 cache read and 1M context is frontier-class quality at budget pricing. The "blended" effective cost with cache is $0.031/M — approaching zero marginal cost.
 
-### 7. Reasoning Models: Standalone Deprecated, Deep-Research Replaces
-OpenAI removed standalone o3/o4-mini from its pricing page (June 2026), leaving only o3-deep-research ($10/$40) and o4-mini-deep-research ($2/$8) as reasoning-specific endpoints. Prices doubled from initial launch ($5/$20 → $10/$40 and $1/$4 → $2/$8 respectively) with cache read now available. The reasoning capability is now absorbed into the GPT-5.x mainline models. DeepSeek V4-Pro continues to handle most reasoning tasks at $0.435/$0.87.
+### 7. Reasoning Models: Deep-Research Price Reverted, Now Batch-Only
+OpenAI reverted o3-deep-research from $10/$40 back to $5/$20 and o4-mini-deep-research from $2/$8 back to $1/$4 (July 2026). These models are now **batch-only** (no standard pricing tier) with no cache read discounts. The standalone o3/o4-mini reasoning endpoints remain removed from standard pricing (since June 2026), with reasoning capability absorbed into the GPT-5.x mainline models. DeepSeek V4-Pro continues to handle most reasoning tasks at $0.435/$0.87.
 
 ### 8. Claude Sonnet 5: Introductory Pricing Undercuts Sonnet 4.6
 Anthropic launched Claude Sonnet 5 at $3/$15 (standard) with **introductory pricing of $2/$10 through August 31, 2026** — 33% cheaper than Sonnet 4.6 ($3/$15) during the promo period. This positions Sonnet 5 as the new default frontier model from Anthropic at a lower entry price. Claude Mythos 5 also launched as invitation-only with Fable 5 pricing.
@@ -374,8 +395,9 @@ Anthropic launched Claude Sonnet 5 at $3/$15 (standard) with **introductory pric
 
 | Date | Change | Source |
 |------|--------|--------|
+| 2026-07-13 | OpenAI: added GPT-5.6-sol ($5/$30, flagship), GPT-5.6-terra ($2.50/$15), GPT-5.6-luna ($1/$6) with new cache writes pricing (+25% premium). Reverted o3-deep-research from $10/$40 to $5/$20 and o4-mini-deep-research from $2/$8 to $1/$4 — now batch-only. Added gpt-5.3-codex ($1.75/$14) and gpt-5.4-cyber (undisclosed). Added Priority pricing tier (2× standard). Moved GPT-5.5 from Flagship to Frontier tier | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| 2026-07-06 | OpenAI: o3-deep-research doubled from $5/$20 to $10/$40 (cache read $2.50); o4-mini-deep-research doubled from $1/$4 to $2/$8 (cache read $0.50). **⚠️ REVERTED 2026-07-13**. Anthropic: added Claude Sonnet 5 ($3/$15 standard, $2/$10 introductory through 2026-08-31); added Claude Mythos 5 (invitation-only, Fable 5 pricing). Added * footnote for introductory pricing | [openai.com](https://developers.openai.com/api/docs/pricing), [anthropic docs](https://docs.anthropic.com/en/docs/about-claude/models) |
 | 2026-06-29 | Google: corrected Gemini 3.1 Flash Lite output from $0.50 to $1.50/M (Global); added cached input $0.025/M; added to cache pricing table | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
-| 2026-07-06 | OpenAI: o3-deep-research doubled from $5/$20 to $10/$40 (cache read $2.50); o4-mini-deep-research doubled from $1/$4 to $2/$8 (cache read $0.50). Anthropic: added Claude Sonnet 5 ($3/$15 standard, $2/$10 introductory through 2026-08-31); added Claude Mythos 5 (invitation-only, Fable 5 pricing). Added * footnote for introductory pricing | [openai.com](https://developers.openai.com/api/docs/pricing), [anthropic docs](https://docs.anthropic.com/en/docs/about-claude/models) |
 | 2026-06-22 | DeepSeek: updated context window from 128K to 1M (384K max output); corrected cache read precision ($0.0028 V4-Flash, $0.003625 V4-Pro); updated source URL to api-docs.deepseek.com | [deepseek](https://api-docs.deepseek.com/quick_start/pricing) |
 | 2026-06-09 | Frontier model review: moved Gemini 2.5, GPT-4.1, Claude Sonnet 4/4.5, Opus 4.1 to Legacy. Added Gemini 3.5 Flash, Gemini 3.1 Pro, Claude Opus 4.8, GPT-5.5 | Wiki entity pages |
 | 2026-06-09 | Cache/batch enrichment for all providers | Max Woolf/OpenRouter, Anthropic docs |

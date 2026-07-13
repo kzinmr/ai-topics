@@ -1,3 +1,11 @@
+## [2026-07-13 10:00 UTC] llm-pricing-monitor | OpenAI GPT-5.6 launch + deep-research price revert
+- comparisons/llm-api-pricing.md: Added GPT-5.6-sol ($5/$30, flagship), GPT-5.6-terra ($2.50/$15), GPT-5.6-luna ($1/$6) with new cache writes pricing (+25% premium over base input)
+- comparisons/llm-api-pricing.md: Reverted o3-deep-research from $10/$40 back to $5/$20 and o4-mini-deep-research from $2/$8 back to $1/$4 — now batch-only (no standard pricing tier)
+- comparisons/llm-api-pricing.md: Added gpt-5.3-codex ($1.75/$14) and gpt-5.4-cyber (undisclosed); added Priority pricing tier (2× standard)
+- comparisons/llm-api-pricing.md: Moved GPT-5.5 from Flagship to Frontier tier; updated Tier Analysis, Batch Pricing, Cache Pricing, Cost Comparison, Key Trends, and Changelog sections
+- Verified: Anthropic pricing unchanged (Fable 5 $10/$50, Opus 4.8 $5/$25, Sonnet 5 intro $2/$10 through 2026-08-31)
+- Verified: Google pricing unchanged (3.1 Pro $2/$12, 3.5 Flash $1.50/$9, 3 Flash Preview $0.50/$3, 3.1 Flash-Lite $0.25/$1.50)
+- Verified: DeepSeek pricing unchanged (V4-Flash $0.14/$0.28, V4-Pro $0.435/$0.87). Note: deepseek-chat/reasoner aliases deprecating 2026-07-24
 ## [2026-07-13 07:40 UTC] blog-wiki-ingest | Recovered from blog-triage checkpoint (JSON saved before render failure)
 - entities/george-hotz.md: Enriched with "I Love LLMs: The Singularity is Nearer (Jul 12, 2026)" section — partial retraction of Eternal Sloptember, genuine AI optimism, negative valence hype critique, frontier lab valuation (Moore's law vs lab value capture), Linus Torvalds agents=10x vs compilers=1000x, cognitive fatigue caveats. Timeline entry + notable posts list + source added. (+25 lines)
 - entities/simon-willison.md: Enriched with "Fable Gets Another Bump" (July 12) — Anthropic extends Fable 5 access through Jul 19, OpenAI GPT-5.6 Sol removes limits, Simon argues for permanent Fable availability. "Directly Responsible Individuals (DRI)" — agents should never be DRI, IBM 1979 management decision rule. Reference only (no page change): Merge Gateway cost evaluation (no existing concept page for LLM routing)
