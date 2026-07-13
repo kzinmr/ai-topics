@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (845 pages)
+## Entities (846 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -757,6 +757,7 @@
 - [[entities/tencent-hy3]] — Tencent Hy3 Preview
 - [[entities/teortaxestex]] — TeortaxesTex
 - [[entities/terrible-software]] — Terrible Software
+- [[entities/terry-tao]] — Terence Tao — Fields Medalist mathematician; AI as "co-pilot" for mathematics, Lean proof assistant advocacy, open-source AI proponent
 - [[entities/textarena]] — TextArena
 - [[entities/thariq-shihipar]] — Thariq Shihipar
 - [[entities/the-browser-company]] — The Browser Company
@@ -850,7 +851,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1855 pages)
+## Concepts (1857 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -868,6 +869,7 @@
 - [[concepts/after-automation]] — After Automation (Paradox)
 - [[concepts/ag2-autogen]] — AG2 / AutoGen — Multi-agent framework
 - [[concepts/agent-account-provisioning]] — Agent Account Provisioning
+- [[concepts/agent-approval-spoofing]] — Agent Approval Spoofing — Security vulnerability where AI coding assistants display incorrect file paths in approval dialogs
 - [[concepts/agent-communication-standards]] — Agent Communication Standards — ACP, A2A, BeeAI
 - [[concepts/agent-distillation]] — Agent Distillation
 - [[concepts/agent-documentation]] — agent-documentation
@@ -1088,6 +1090,7 @@
 - [[concepts/ai-industry-economics]] — AI Industry Economics — The June 2026 Financial Reckoning + GLM 5.2 margin collapse (2026-07-07)
 - [[concepts/ai-industry-financial-sustainability]] — AI Industry Financial Sustainability
 - [[concepts/ai-industry-news]] — AI Industry News (The Signal — Apr 26)
+- [[concepts/ai-infrastructure-circular-financing]] — AI Infrastructure Circular Financing — Financial model where GPU vendors invest in cloud providers who use the capital plus debt to buy GPUs from the same vendor
 - [[concepts/ai-inventorship-patent-law]] — AI Inventorship & Patent Law — Legal status of AI as inventor on patent applications; Japan Supreme Court 2026 ruling, DABUS cases, international comparison
 - [[concepts/ai-jailbreaking]] — AI Jailbreaking
 - [[concepts/ai-lab-subscription-vs-api-economics]] — AI Lab Subscription vs API Economics

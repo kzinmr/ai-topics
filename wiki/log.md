@@ -1,3 +1,22 @@
+## [2026-07-13 11:15 UTC] active-crawl — 3 new pages + 1 entity enrichment
+
+### New Pages
+- **[[concepts/agent-approval-spoofing]]** — Security vulnerability where 6 AI coding assistants displayed incorrect file paths in approval dialogs. Covers the vulnerability pattern (LLM generates approval text and tool call with no cross-validation), confirmed incidents (TheDailyAgent July 2026, Cursor force-push HN 46728766, Claude Code git bypasses), and mitigations (system-level gating, Yubikey hardware tokens, Docker sandboxing).
+- **[[concepts/ai-infrastructure-circular-financing]]** — Financial model where Nvidia invests in cloud GPU providers (CoreWeave, Nebius) who use the capital plus massive debt to buy GPUs from Nvidia, creating a circular revenue loop. Covers scale ($2B investment vs $35B CoreWeave CapEx, $2.3B GPU-collateralized debt), risks (collateral cascade), and community debate (365 HN pts, 167 comments).
+- **[[entities/terry-tao]]** — Entity page for Fields Medalist Terence Tao, a prominent advocate for AI tools in mathematics. Covers his use of GPT-4/Claude as "co-pilot" for proof strategies, advocacy for Lean proof assistant, open-source AI stance, and key quote: "The job description is changing."
+
+### Enriched
+- **[[entities/deepseek]]** — Added "Custom AI Chip Development (July 2026)" section covering Reuters report that DeepSeek is designing its own AI chips, driven by US export controls, Singapore Blackwell controversy, and strategic implications for China's AI silicon independence. (+28 lines)
+
+### Sources
+- Agent approval spoofing: TheDailyAgent tweet + HN discussion (objectID 46728766)
+- Circular financing: io-fund.com article + HN discussion (365 pts, objectID 48873836)
+- Terry Tao: Scientific American + El País + Nature interviews
+- DeepSeek chips: Reuters (July 7, 2026) + SCMP + CNBC
+
+### Research
+- raw/articles/2026-07-13_trending-topics-research.md: Comprehensive research note covering all 4 topics with HN Algolia discussion analysis
+
 ## [2026-07-13 10:00 UTC] llm-pricing-monitor | OpenAI GPT-5.6 launch + deep-research price revert
 - comparisons/llm-api-pricing.md: Added GPT-5.6-sol ($5/$30, flagship), GPT-5.6-terra ($2.50/$15), GPT-5.6-luna ($1/$6) with new cache writes pricing (+25% premium over base input)
 - comparisons/llm-api-pricing.md: Reverted o3-deep-research from $10/$40 back to $5/$20 and o4-mini-deep-research from $2/$8 back to $1/$4 — now batch-only (no standard pricing tier)

@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-06-30
+updated: 2026-07-13
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -18,7 +18,8 @@ sources:
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
   - raw/articles/2026-05-22-deepseek-strategy.md
   - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
-  -   - raw/newsletters/2026-05-27-deepswe-makes-coding-agents-sweat.md
+  - raw/newsletters/2026-05-27-deepswe-makes-coding-agents-sweat.md
+  - https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/
 ---
 
 # DeepSeek
@@ -114,6 +115,28 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 - DeepSeek engineering pushed Huawei chip utilization from ~60% to >85%
 - Reports suggest pre-training may still rely on NVIDIA GPUs (ChinaTalk, 04/27/2026), but inference independence is confirmed
 - Rumored: former ASML engineers recruited to build EUV prototype in Shenzhen lab
+
+### Custom AI Chip Development (July 2026)
+
+On July 7, 2026, Reuters reported that DeepSeek has begun developing its own custom AI chips, marking a major strategic shift toward vertical integration and silicon independence. The chips are being designed specifically for DeepSeek's own model architectures (V3, R1, V4 series), following the Apple/Google model of custom silicon co-designed with internal workloads.
+
+**Drivers:**
+- **US export controls**: Increasingly stringent restrictions on Nvidia's most advanced chips (H100, B200 Blackwell) have made access to cutting-edge GPUs unreliable
+- **Singapore intermediary controversy**: DeepSeek was previously caught using banned Nvidia Blackwell chips obtained through Singapore intermediaries — a US probe launched in January 2025 found that 28% of Nvidia's Singapore GPU revenue was destined for China despite only 1% being delivered to Singapore
+- **Huawei dependency risks**: While Huawei Ascend chips have proven viable for DeepSeek inference, relying on a single domestic supplier creates its own supply chain vulnerability
+
+**Parallel developments:**
+- Huawei chips successfully used to refine and train DeepSeek models (SCMP, June 2026), proving China's domestic chip ecosystem can support frontier AI
+- SMIC's quadruple-patterning DUV approach demonstrated 7nm-class capability without EUV lithography
+- Jensen Huang warned that Huawei chips running DeepSeek models would be "horrible for the US" — acknowledging the strategic threat of Chinese chip independence
+
+**Strategic implications:**
+- DeepSeek's efficiency-first design philosophy (MoE, MLA, KV cache compression) may extend to chip architecture, potentially producing ASICs optimized for their specific model architectures
+- The move mirrors DeepSeek's broader strategy documented in their $10 trillion hardware ecosystem play: creating demand for the entire Chinese semiconductor supply chain
+- If successful, custom chips could complete the decoupling from Western hardware that began with V4 running on Huawei Ascend, and accelerate China's AI independence timeline
+- The chip program remains in early development — Reuters noted no timeline for production or details on manufacturing partners
+
+> Source: [Reuters — "China's DeepSeek developing its own AI chip, sources say"](https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/) (July 7, 2026)
 
 ### Earlier Models
 
