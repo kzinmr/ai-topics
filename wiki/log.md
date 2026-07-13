@@ -5,6 +5,10 @@ _Log of all wiki changes. Newest entries at top._
 ---
 ## [2026-07-13 12:00 UTC] enrichment | GPT-5.6-Sol operational guidance added to openai-codex
 ---
+---
+## [2026-07-13 18:00 UTC] dreaming | Knowledge consolidation — 2 reference enrichments
+- [[entities/ed-zitron.md]]: Added Memory Crisis — HBM Economics section (HBM pricing, memory triopoly, NVIDIA 65% HBM consumption, consumer electronics price impact)
+- [[comparisons/llm-gateways.md]]: Added Merge Gateway evaluation data (65% cost reduction, subsecond overhead, Benjamini-Hochberg FDR corrected statistical tests)
 ## [2026-07-13] enrichment | Neovim analogy & harness cost data added to Pi
 
 ### Enriched Pages

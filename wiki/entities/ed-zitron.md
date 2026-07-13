@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-07-08
+updated: 2026-07-13
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -40,6 +40,7 @@ sources:
   - raw/articles/wheresyoured.at--brokenomics--662a8e19.md
   - raw/articles/wheresyoured.at--the-ai-industry-is-losing--a92f13ac.md
   - raw/articles/wheresyoured.at--let-ai-burn--bdeb31fe.md
+  - raw/articles/wheresyoured.at--premium-the-haters-guide-to-the-memory-crisis--0b884d04.md
 ---
 
 # Ed Zitron
@@ -95,7 +96,8 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | Jun 2026 | Exclusive: OpenAI 2025 Audited Financials | OpenAI lost $38.5B in 2025; $34B total costs; paid Microsoft $17.2B. FT-verified. |
 | Jun 2026 | Premium: The Silicon Valley Bubble (Part 1) | IPO race, $35B Broadcom Anthropic deal with SPV structure, $4.4B pure Anthropic notes |
 | Jun 2026 | Premium: The Silicon Valley Bubble (Part 2) | OpenAI lost $21B in 2025, $34B spend / $13B revenue, SoftBank dependency, Cal Newport comparison, 4-part bubble thesis |
-| Jul 2026 | Let AI Burn | AI bubble collapse thesis; OpenAI/Anthropic 70% revenue from circular compute spend; $765B+ capex declared worthless; industry told to "go fuck itself" |
+|| Jul 2026 | Let AI Burn | AI bubble collapse thesis; OpenAI/Anthropic 70% revenue from circular compute spend; $765B+ capex declared worthless; industry told to "go fuck itself" |
+|| Jul 2026 | Premium: The Hater's Guide To The Memory Crisis | HBM cost $15.27/GB, $316K per NVL72 rack, $1.894B per 1GW data center; DRAM prices up 60%; memory triopoly (Samsung/SK Hynix/Micron); NVIDIA consumes 65% of all HBM; consumer electronics price hikes |
 
 ## AI Is Too Expensive (May 2026)
 
@@ -467,6 +469,46 @@ Zitron argued the AI industry is a **circular economy that needs real demand at 
 
 Zitron concluded by teasing a **future exposé** in the next two weeks from a tech industry source that could "possibly burst the AI bubble," calling it "the information I've wanted for years."
 
+## The Memory Crisis — HBM Economics (July 2026)
+
+In "[Premium: The Hater's Guide To The Memory Crisis](https://www.wheresyoured.at/premium-the-haters-guide-to-the-memory-crisis/)" (July 2026), Zitron pivoted from his usual AI industry economics critique to focus on the **memory supply chain** — arguing that the AI buildout has created a memory triopoly crisis that is driving up costs across all consumer electronics.
+
+### HBM Cost Breakdown
+
+- **$15.27/GB** for HBM3e in a single NVL72 GB300 rack (analyst estimates)
+- **$316,000 worth of HBM** per NVL72 rack (20.7TB of HBM + 17TB LPDDR5X)
+- **$1.894 billion** in memory costs for a single 1GW data center (4,933 NVL72 racks)
+- **$2.559 million of memory per megawatt** of IT load
+- Each NVL72 can hold up to a petabyte of solid state storage at additional tens of thousands of dollars
+
+### The Memory Triopoly
+
+Zitron identified that HBM manufacturing is controlled by a **triopoly of Samsung, SK Hynix, and Micron** — all of whom are dedicating more wafer space to high-margin HBM than consumer RAM:
+
+- **Micron**: Revenue up 4x year-over-year on HBM demand
+- **Samsung**: Operating profit grew from $38B to $59B, driven by memory (especially HBM)
+- **DRAM prices**: Up 60% year-over-year
+- **NAND prices**: Up 80%
+
+### NVIDIA's Memory Consumption
+
+NVIDIA has emerged as a customer consuming **65% of all HBM produced worldwide** — a scale that fundamentally reshapes the memory supply chain:
+
+- Counterpoint Research director MS Hwang: "The bigger risk on the horizon is with advanced memory as Nvidia's recent pivot to LPDDR means it is a customer on the scale of a major smartphone maker — a seismic shift for the supply chain"
+- NVIDIA buying LPDDR5X at the scale of Apple or Samsung
+- Memory manufacturers prioritize high-margin HBM over consumer RAM, constraining supply for non-AI markets
+
+### Consumer Electronics Price Impact
+
+The cascading effect of memory prioritization for AI:
+
+- Valve's Steam Machine: +30% higher price point than planned
+- Apple: Hiked MacBook and iPad prices, likely to increase next iPhone pricing
+- Nintendo, Microsoft, Sony: All increased console prices (PS5 and Xbox Series cost more today than at launch 6 years ago)
+- Samsung: Increased Galaxy smartphone prices
+
+Zitron's central argument: "Everything's more expensive, and it's all AI's fault." The memory crisis extends his circular economy thesis — the same $15 trillion AI infrastructure buildout that his other articles analyze at the hyperscaler level is now shown to have direct, measurable consumer price effects.
+
 
 ### Sam Altman CNBC Interview
 
@@ -602,3 +644,4 @@ Zitron emphasized that the BIS warning was not merely a financial footnote but a
 - [AI's Economics Don't Make Sense (Apr 2026)](https://www.wheresyoured.at/ais-economics-dont-make-sense/)
 - [The Argument Mag: "AI's biggest critic has lost the plot" (Kelsey Piper)](https://www.theargumentmag.com/p/ais-biggest-critic-has-lost-the-plot)
 - [The Guardian profile (Jan 2026)](https://www.theguardian.com/technology/2026/jan/19/ed-zitron-on-big-tech-backlash-boom-and-bust-ai-has-taught-us-that-people-are-excited-to-replace-human-beings)
+- [Premium: The Hater's Guide To The Memory Crisis (Jul 2026)](https://www.wheresyoured.at/premium-the-haters-guide-to-the-memory-crisis/)

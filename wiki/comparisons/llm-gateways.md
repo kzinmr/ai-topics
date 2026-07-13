@@ -1,10 +1,10 @@
 ---
 title: "LLM Gateways Comparison"
 created: 2026-07-08
-updated: 2026-07-08
+updated: 2026-07-13
 type: comparison
 tags: [model-routing, llm, comparison, tool, enterprise-ai, observability, self-hosted, governance]
-sources: [raw/articles/merge.dev--blog-eden-ai-alternatives--4de9d50a.md]
+sources: [raw/articles/merge.dev--blog-eden-ai-alternatives--4de9d50a.md, raw/articles/merge.dev--blog-cost-of-gateway--f6410e0d.md]
 ---
 
 # LLM Gateways Comparison
@@ -37,6 +37,8 @@ Choose when you need a **single API across many AI service types** (OCR, speech,
 
 ### Merge Gateway
 Choose when you're **shipping AI features to your own customers** and need enterprise-grade governance. Its BYOR (Build Your Own Router) lets you route on your own evaluation scores rather than just cost or latency. Ideal when you need per-tenant controls, DLP, and audit trails from day one.
+
+**Evaluation results** (July 2026): Merge's internal eval across 5 providers × 100 trials showed median routing overhead of **90-650ms** (subsecond). Intelligent routing (using `default_routing` vs fixed Claude Opus 4.8) achieved **65% cost reduction** ($8.17 → $2.87 over 120 trials) with no measurable correctness loss (119/120 pass vs 120/120 for fixed Opus). The tradeoff: longer wall-clock time on reasoning-heavy prompts (4 min routed vs 34s Opus on multi-step reasoning). Evaluation used paired t-tests with Benjamini-Hochberg FDR correction.
 
 ### OpenRouter
 Choose when you want the **deepest LLM catalog behind one API** with a generous free tier. Strong documentation, large community, and well-established routing layer. Best for individual developers or teams exploring multiple LLMs without upfront cost.
