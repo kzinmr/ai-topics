@@ -1,3 +1,10 @@
+## [2026-07-13 07:40 UTC] newsletter-wiki-ingest | Recovered from triage checkpoint (JSON saved before render failure)
+- entities/nathan-lambert.md: Added "July 2026: 6 months to live for open models" section — White House EO threat, 6-month ban window, distillation as regulatory capture, Anthropic lobbying critique
+- concepts/open-weight-vs-closed-llm-gap.md: Added "Regulatory Dimension" section — Lambert's 6-month regulatory timeline vs Doubleword's Dec 2026 benchmark convergence, comparison table, regulatory capture framing
+- concepts/open-source-ai-destruction.md: Added "Nathan Lambert: Distillation as Regulatory Capture" subsection — regulatory destruction dimension complementing Geerling's operational destruction dimension
+- Source: raw/newsletters/2026-07-12-6-months-to-live-for-open-models.md (Interconnects / Nathan Lambert)
+- Reference only (no page change): The Signal competitive analysis — all topics already wiki-covered (GPT-5.6, GPT Live, ChatGPT Work, Claude Cowork, Muse Spark 1.1)
+- Skip: Lenny's Podcast (AI sentiment survey — no wiki target), Beehiiv W&B@CoreWeave (all URLs 403 expired, CoreWeave/W&B pages already cover acquisition)
 ## [2026-07-13 07:00 UTC] blog-ingest | 30 new articles collected, 18 saved as raw
 - Scan: 0 blogs_scanned (blogwatcher RSS scan), 20 blog_articles total, 18 saved, 2 unsaved (X link, Bloomberg paywall)
 - Key AI-relevant articles processed into wiki updates:

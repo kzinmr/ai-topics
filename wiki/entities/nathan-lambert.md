@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-18
+updated: 2026-07-13
 type: entity
 aliases:
   - natolambert
@@ -16,6 +16,7 @@ sources:
   - raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md
   - raw/newsletters/2026-06-17-state-of-the-blog-mid-2026.md
   - raw/articles/2026-06-16_interconnects_post-training-recipe-review.md
+  - raw/newsletters/2026-07-12-6-months-to-live-for-open-models.md
 ---
 
 # Nathan Lambert (@natolambert)
@@ -190,6 +191,22 @@ Nathan Lambert **departed the Allen Institute for AI (Ai2)** in June 2026, marki
 - Will **continue in this space**, focusing on making the open ecosystem better coordinated
 - Reflects on the various paths to AI impact **beyond frontier performance**
 - His departure marks the end of a ~3-year tenure at Ai2 (Oct 2023 – June 2026)
+
+### July 2026: 6 months to live for open models
+
+**"6 months to live for open models" (Jul 12, 2026)**: Lambert published his most urgent policy analysis to date, arguing that open-source AI faces an existential regulatory threat within the next 6 months. Key arguments:
+
+- **White House executive order imminent**: Multiple sources cite White House discussions on managing open models via a new executive order. While official details are unconfirmed, the likely scope covers Chinese-origin models and government uses — but "this is how the dominoes start to fall."
+- **6-month window**: The most likely action is to ban or indefinitely delay any open-weights model above the capability range of GPT 5.5, Claude Opus 4.8, or GLM-5.2. Given the consistent capability gap, Lambert projects this threshold will be crossed within 6 months.
+- **Distillation as regulatory capture**: Argues that the distillation debate has become a "regulatory capture campaign" led by Anthropic. Anthropic's anti-Chinese model political campaign — blog posts, letters to representatives, minimal technical evidence — would grant Anthropic "substantial economic security" if the Chinese model makers they accused were banned.
+- **Open models lack a champion**: Unlike frontier labs with effective lobbying, open models have no central economic actor to represent the downside of regulatory action.
+- **Dual policy pressure**: Two simultaneous policy discussions — distillation restrictions and frontier capability regulation — create a "surging platform of support for a potential ban of open models in the next 6 months."
+- **Anthropic's effective ask**: Lambert argues Anthropic is effectively requesting the wholesale banning of Chinese open-weight models in the US, which would "demolish the open model economy" of inference companies, fine-tuning providers, and new products.
+- **Short-term off-ramp**: A US company releasing a similarly capable open model (Microsoft, Meta, or Reflection) would shift focus from "only China is building open models via distillation" to collaborative ecosystem management. Lambert calls this "an existential priority for open-source."
+- **No ban without global agreement**: A US-only ban before China would be "speedrunning dystopia" — bad actors would still have access while positive actors are kneecapped. Only global agreement can add a ceiling on open-source progress.
+- **Coalition building**: Lambert urges the diffuse open-source community to organize lobbying efforts immediately, as "everyone else outside the frontier labs needs to start working today."
+
+Source: [6 months to live for open models](https://www.interconnects.ai/p/6-months-to-live-for-open-models) (Jul 12, 2026, Robotic/Interconnects)
 
 ## Core Ideas
 

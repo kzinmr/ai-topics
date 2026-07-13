@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-07-13T07:44:05.311996+00:00",
+  "triage_run_id": "20260713T071112Z",
+  "source": "newsletter",
+  "summary_ja": "4ニュースレタートリアージ完了:(1) Lenny's Newsletter/AI感情調査→スキップ（特定Wikiターゲットなし）(2) The Signal/競合分析→リファレンス（全リンク先既カバー済み: GPT-5.6, GPT Live, ChatGPT Work, Claude Cowork, Muse Spark 1.1）(3) Beehiiv W&B@CoreWeave→スキップ（全20リンク403期限切れ、CoreWeave/W&Bページは既に買収カバー済み）(4) Nathan Lambert「6 months to live for open models」→★★★★★テイク（entities/nathan-lambert.md更新 + concepts/open-weight-vs-closed-llm-gap.md + concepts/open-source-ai-destruction.md拡張）",
+  "decisions": [
+    {
+      "item_id": "beehiiv-batch-<20260712.155235.89e",
+      "source": "newsletter",
+      "source_name": "Unknown beehiiv publication (W&B @ CoreWeave)",
+      "title": "Batch skip — 全20リンクBeehiivトラッキング期限切れ（HTTP 403）",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-12-exclusive-interview-with-phil-gurbacki-vp-of-product-weights-biases-at-coreweave.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Beehiivトラッキングリンク全20件が期限切れ（HTTP 403）。Inbox要約によればCoreWeaveのW&B VP Phil Gurbackiインタビュー。CoreWeave（110行）とWeights & Biases（96行）のエンティティページは買収と戦略を詳細カバー済み（coreweave.md line45-72: 買収戦略、weights-and-biases.md: W&B製品詳細）。インタビュー追加価値（買収後プロダクトアップデート）はリンク切れのため確認不可。参照レベル。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-12\n**Subject:** Exclusive Interview with Phil Gurbacki, VP of Product, Weights & Biases at\tCoreWeave\n**Collected:** 2026-07-13T07:11:03.811649+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/nffWjRwtiCAu9Gdb70NXfVZNSr%2BCev9ZVZUv3j"
+    }
+  ]
+}
