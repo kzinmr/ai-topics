@@ -1,3 +1,26 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-07-13 12:00 UTC] enrichment | GPT-5.6-Sol operational guidance added to openai-codex
+
+### Enriched Pages
+- **[[entities/openai-codex]]** — Added "GPT-5.6-Sol Operational Guidance (July 2026)" section based on Theo Browne's X Article. Covers reasoning level selection (medium/high/xhigh/Ultra), fast mode 2.5x multiplier warning, subagent management mitigations (lower reasoning, AGENTS.md directive, Fable orchestrator pattern), model selection (Sol/Terra/Luna), prompt engineering with clear stop points, and usage monitoring tools (ccusage, codexbar). Updated frontmatter: sources, date.
+
+### Sources
+- raw/articles/2026-07-11_theo_gpt-5-6-sol-without-hitting-limits.md — Theo Browne X Article (plain_text source)
+
+## [2026-07-13 12:00 UTC] entity-creation | Theo Browne (t3.gg) entity page created
+
+### New Pages
+- **[[entities/theo-browne]]** — Comprehensive entity page for Theo Browne (t3.gg), CEO at t3.chat, creator of create-t3-app (38K+ stars), tech YouTuber, and prominent coding agent practitioner. Covers key projects (create-t3-app, t3.chat, t3.code, t3 Stack), YouTube content style, writing philosophy (practitioner-first, opinionated but transparent), core ideas (reasoning level taxonomy, subagent token cascade management, Fable-as-orchestrator pattern, vendor advocacy), and cross-references to Claude Code, OpenAI Codex, agentic engineering, and related concepts.
+
+### Sources
+- X/Twitter: @theo (358K+ followers)
+- Website: t3.gg
+- GitHub: t3-oss/create-t3-app
+- X Article: "gpt-5.6-sol without hitting limits" (July 2026)
+
 ## [2026-07-13 11:15 UTC] active-crawl — 3 new pages + 1 entity enrichment
 
 ### New Pages
@@ -243,10 +266,6 @@
 | Index corruption | None detected |
 
 ---
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-07-10] watchdog | auto-fix: log header, updated dates (6 files)
 

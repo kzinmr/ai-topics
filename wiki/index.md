@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (846 pages)
+## Entities (847 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -577,7 +577,7 @@
 - [[entities/omri-weinstein]] — Omri Weinstein
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
 - [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot
-- [[entities/openai-codex]] — OpenAI Codex; enriched with Agent Development Methodology — five-phase production agent workflow (PRD → Plan.md → /goal → execution → consolidation) and Tencent EdgeOne Makers deployment pattern by @gengdaJ (June 25)
+- [[entities/openai-codex]] — OpenAI Codex; enriched with GPT-5.6-Sol operational guidance (reasoning levels, subagent management, fast mode warnings, prompt stop points) by Theo Browne (July 13)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo)
 - [[entities/openai-foundation]] — OpenAI Foundation
@@ -758,6 +758,7 @@
 - [[entities/teortaxestex]] — TeortaxesTex
 - [[entities/terrible-software]] — Terrible Software
 - [[entities/terry-tao]] — Terence Tao — Fields Medalist mathematician; AI as "co-pilot" for mathematics, Lean proof assistant advocacy, open-source AI proponent
+- [[entities/theo-browne]] — Theo Browne (t3.gg) — CEO at t3.chat, creator of create-t3-app (38K+ stars), tech YouTuber, and coding agent practitioner
 - [[entities/textarena]] — TextArena
 - [[entities/thariq-shihipar]] — Thariq Shihipar
 - [[entities/the-browser-company]] — The Browser Company

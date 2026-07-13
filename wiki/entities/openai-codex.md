@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-06-25
+updated: 2026-07-13
 tags:
   - product
   - coding-agent
@@ -37,6 +37,7 @@ sources:
   - raw/articles/2026-06-23_gengdaj-codex-production-agent-workflow.md
   - raw/articles/2026-06-25_openai-agents-transforming-work.md
   - raw/papers/2026-06-25_openai-shift-to-agentic-ai.md
+  - raw/articles/2026-07-11_theo_gpt-5-6-sol-without-hitting-limits.md
 ---
 
 # OpenAI Codex
@@ -326,6 +327,64 @@ See [[concepts/codex/codex-prompting]]. Key characteristics:
 - **No-confirmation autonomy**: Does not wait for user confirmation unless unable to resolve an error
 - **Concise communication**: Removes preamble and status updates, prioritizes action
 - **Metaprompting**: Have the model analyze past conversations and generate system prompt improvements
+
+## GPT-5.6-Sol Operational Guidance (July 2026)
+
+> *Source: [[raw/articles/2026-07-11_theo_gpt-5-6-sol-without-hitting-limits.md|Theo Browne — "gpt-5.6-sol without hitting limits"]] (July 11, 2026)*
+
+Theo Browne ([@theo](https://x.com/theo), creator of create-t3-app), after burning $200K+ of tokens on GPT-5.6-Sol, published operational guidance for maximizing the $200 Codex Pro subscription:
+
+### Reasoning Level Selection
+
+| Level | Recommendation | Notes |
+|-------|---------------|-------|
+| **medium** | Default | Good balance for most tasks |
+| **high** | Recommended for $200 tier | Handles subagents reasonably well |
+| **xhigh** | Rarely needed | Very capable but not necessary even for multi-subagent orchestration |
+| **Ultra** | ⚠️ Avoid | Not a reasoning level — positioned incorrectly in UI. Bugs in Codex harness cause excessive subagent spawning at max reasoning. Causing confusion similar to Claude Code's "Ultracode" |
+
+### Fast Mode Warning
+
+Fast mode uses a **2.5x credit multiplier**. With GPT-5.6's dramatically extended autonomous runs (compared to GPT-5.5), a single message can consume 15% of a 5-hour window without fast mode — or **40% with fast mode**. Recommendation: avoid fast mode until Codex team resolves usage predictability.
+
+### Subagent Management
+
+GPT-5.6-Sol's strongest unlock, but with significant footguns:
+
+- **Always spawns subagents with same model and reasoning level as parent** — the core driver of Ultra's brokenness
+- **Mitigations:**
+  1. Lower reasoning level (High handles subagents reasonably; Low/Medium work well)
+  2. Set global AGENTS.md directive: "only spawn subagents when I ask you to"
+  3. Advanced: enable `hide_spawn_agent_metadata = false` flag in Codex config for multi-tier subagent visibility
+- **Orchestrator pattern**: Use Fable agent (another $200 subscription) to drive Codex subagents — Fable with lower reasoning + skills for Codex subagent spawning is highly effective
+
+### Model Selection
+
+| Model | Recommendation | Use Case |
+|-------|---------------|----------|
+| **GPT-5.6-Sol** | Primary ($200 tier: high; lower tier: low) | Vast majority of work |
+| **Terra** | Occasional only | Quick review, feedback; medium reasoning for maximizing usage |
+| **Luna** | Not meant for direct selection | Code tool; best spun up as subagent by Sol |
+
+### Prompt Engineering: Clear Stop Points
+
+GPT-5.6 runs much longer than GPT-5.5 — it benefits from explicit stop boundaries:
+
+```
+"I want you to build this new feature. Start by writing a plan. When you've finished the plan, stop and ask for feedback before proceeding"
+
+"The plan looks great! Let's build it out. Use computer use to test your implementation. Keep going until the code works and you're happy with the implementation. Put up a PR, babysit it for the first set of review comments, and address them. Stop after the first set of review comments, I'll handle it from there."
+```
+
+### Recommended Tools for Usage Monitoring
+
+- Official Codex usage dashboards
+- `ccusage` — community CLI tool
+- `codexbar` — macOS menu bar utility
+
+### Experimentation Philosophy
+
+"Spend more time in the `~/.codex` and `~/.claude` directories. Make changes that feel stupid. Experiment. You'll be amazed what can happen."
 
 ## Growth Metrics
 
