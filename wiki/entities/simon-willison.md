@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-07-09
+updated: 2026-07-13
 status: L3
   sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
@@ -564,5 +564,13 @@ Source: [[raw/articles/simonwillison.net--2026-jul-9-gpt-5-6--b29dbe02.md]]
 **Introducing Muse Spark 1.1 — First API-Released Spark Model** (July 9, 2026): Simon covered Meta's Muse Spark 1.1 release, the first Spark model to offer public API access. He built **llm-meta-ai**, a new plugin for the LLM CLI tool providing CLI (and Python library) access to the model. Key features: agentic tool calling improvements, computer use, and a notable "Attractor States in Self-Conversation" finding where two copies of the model produced philosophical statements about AI existence.
 - CLI: `uv tool install llm && llm install llm-meta-ai && llm -m meta-ai/muse-spark-1.1 "Generate SVG of pelican"`
 - See [[concepts/meta-muse-spark#Muse Spark 1.1 (July 2026)]] for details
+|
+|**Fable Gets Another Bump** (July 12, 2026): Anthropic extended Fable 5 access on paid plans through July 19 — the third extension. OpenAI (GPT-5.6 Sol) removed usage limits for Plus/Business/Pro plans and hit 6M active users. Simon argued Anthropic should "keep Fable permanently available on those plans" — the uncertainty around Fable access is losing users to OpenAI.
+|
+|Source: [[raw/articles/simonwillison.net--2026-jul-12-bump--178b751a.md]]
+|
+|**Directly Responsible Individuals (DRI) — LLM Agent Accountability** (July 12, 2026): Simon explored the DRI concept from Apple/GitLab in the context of LLM-powered agents. His core argument: agents should **never** be considered the DRI for a project, because accountability is uniquely human — "humans can take accountability for their actions where machines cannot." Cites IBM's legendary 1979 training slide: "A computer can never be held accountable, therefore a computer must never make a management decision."
+|
+|Source: [[raw/articles/simonwillison.net--2026-jul-12-directly-responsible-individuals--dd90e0f3.md]]
 
 Source: [[raw/articles/simonwillison.net--2026-jul-9-muse-spark-1-1--36ef115e.md]]

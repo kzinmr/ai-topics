@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-07-12
+updated: 2026-07-13
 tags:
   - entity
   - person
@@ -23,6 +23,7 @@ sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-21-the-doom-justifies-the-valuati--26f097af.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-23-liminality-html--7b66f57a.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-07-11-ai-2040-html--34014eca.md
+  - raw/articles/geohot.github.io--blog-jekyll-update-2026-07-12-i-love-llms-html--d1f0f38b.md
 ---
 
 # George Hotz
@@ -116,6 +117,7 @@ Hotz had a brief 12-week internship at **Twitter** in late 2022, joining to fix 
 | **2026 (Jun 6)** | Publishes "Our Great War is a Spiritual War" — warns that totalizing AI control systems represent "the only bad AI scenario"; advocates for sovereignty over dependence. |
 | **2026 (Jun 21)** | Publishes "The doom justifies the valuation" — criticizes SF/Berkeley AI community as "cult of atheistic hedonists" who need AI doom to justify their valuations; contrasts GLM-5.2's technical blog with Anthropic's eschatological communication. |
 | **2026 (Jul 11)** | Publishes "AI 2040 and the Cult of Intelligence" — attacks singularitarianism as a quasi-religious cult; presents Plan A (centralized control) vs Plan L (local sovereignty) binary. |
+| **2026 (Jul 12)** | Publishes "I Love LLMs / the singularity is nearer" — retracts harshness about model coding abilities, expresses genuine excitement about AI progress, critiques negative valence hype. |
 
 ---
 
@@ -242,6 +244,28 @@ Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-07-11-ai-2040-h
 
 ---
 
+### I Love LLMs: The Singularity is Nearer (Jul 12, 2026)
+
+In his July 12, 2026 essay [[raw/articles/geohot.github.io--blog-jekyll-update-2026-07-12-i-love-llms-html--d1f0f38b.md|"the singularity is nearer"]], Hotz published what is perhaps his most **optimistic** statement on AI — explicitly pushing back against the negative-valence framing that dominates both his own earlier work and the broader AI discourse:
+
+**Core thesis — genuine excitement**: Hotz opens with an uncharacteristically direct declaration: "I think from this blog you may misunderestimate how absolutely giddy I am about AI." He recounts setting up a Linux box with opencode + GLM-5.2 and finding that "install tmux with the geohot configuration" works — declaring "the Year of the Linux Desktop is finally here!"
+
+**Two things he dislikes**:
+1. **Negative valence hype** — "this constant bullshit about some window closing, or the perpetual underclass, or falling hopelessly behind." He argues this is "designed to make you feel bad about yourself and move to shitty San Francisco"
+2. **The singularitarian strawman** — the leap from "fancy autocomplete, smart compiler, better search engine" to "it's gonna like own the whole light cone bro." He bets "everything I have that this doesn't happen"
+
+**Frontier lab valuation critique**: Hotz argues frontier labs cannot capture AI's value — "AI is something that's happening mostly due to Moore's law and general progress in computing, not something that they are doing." Anti-open-source arguments are fundamentally about "a fear of commodification." He cites a 2016 presentation on superintelligence and a 1991 film about machines taking over to argue that AI doomer narratives predate and are independent of current labs.
+
+**Partial retraction of Eternal Sloptember**: Hotz acknowledges being "a little harsh in The Eternal Sloptember about models not being able to program." He now sees that "programming is changing" — citing a [[concepts/linus-torvalds|Linus Torvalds]] quote that compilers make programming 1000x more productive while agents make it 10x more productive. Hotz considers both extreme but is "pretty confident I'm getting better at using them."
+
+**Caveats remain**: He still warns that agents "can increase cognitive fatigue" and that "all the vibe coded stuff is still slop" — asking "where's all this new magical software that the productivity improvements should imply?" But he concludes AI is simply "the continuation of the computer revolution" and "I love computers so much."
+
+**Connections to earlier work**: This essay represents a meaningful pivot from his earlier skepticism — where "Eternal Sloptember" (May 24) and "Stairway to Heaven" (Jun 7) emphasized the gap between model output and genuine intelligence, this post acknowledges concrete productivity gains while maintaining his critique of singularitarian hype and frontier lab valuations.
+
+Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-07-12-i-love-llms-html--d1f0f38b.md]]
+
+---
+
 ## Key Writings & Tweets
 
 ### Blog: "the singularity is nearer" (geohot.github.io)
@@ -271,6 +295,7 @@ Notable posts include:
 - "The doom justifies the valuation" (Jun 21) — Critique of AI industry communication: contrasts GLM-5.2's technical writing with Anthropic's eschatological framing; argues AI hype is "designed to cause panic" to justify valuations. Predicts bubble unwinding.
 - "Liminality" (Jun 23) — Philosophical essay using Fullmetal Alchemist metaphor (pouring human souls into a philosopher's stone = AI). Explores the "middle place" — AI has been in a liminal state for years. References the Cruise movie as metaphor for control — we shout at the driver of reality's bus to no avail. Argues "the real secret has always been that they have no secrets" — there is no hidden conspiracy, just profound uncertainty. Concludes that deep learning is "all just vibes" and questions whether the veil of computability means it has to be.
 - "AI 2040 and the Cult of Intelligence" (Jul 11) — Direct attack on singularitarianism/hard takeoff belief. Argues "intelligence is not the end all be all" and "you cannot take over the world with tokens." Presents Plan A (centralized control/nanny state) vs Plan L (local sovereignty). Tests ChatGPT with murder-concealment scenario as real alignment test — ChatGPT refused, which Hotz calls "still quite unaligned" from a local-sovereignty perspective.
+- "I Love LLMs | the singularity is nearer" (Jul 12) — Most optimistic statement on AI to date. Expresses genuine giddiness about LLMs, coding agents, and GLM-5.2. Partially retracts "Eternal Sloptember" harshness about model programming capability. Critiques negative valence hype and singularitarian strawman. Argues frontier labs cannot capture AI value ("AI is happening mostly due to Moore's law"). Linus Torvalds compilers=1000x vs agents=10x quote. Warns about cognitive fatigue and vibe-coded slop. Concludes "AI is the continuation of the computer revolution."
 - "Five years of tinygrad" (Dec 29, 2025) — Retrospective on the framework's evolution
 - "Can tinygrad win?" (Jul 6, 2025) — Honest assessment of tinygrad's competitive position
 - "The Tragic Case of Intel AI" (Mar 24, 2025) — Analysis of Intel's AI failures
