@@ -1,3 +1,16 @@
+## [2026-07-13 07:00 UTC] blog-ingest | 30 new articles collected, 18 saved as raw
+- Scan: 0 blogs_scanned (blogwatcher RSS scan), 20 blog_articles total, 18 saved, 2 unsaved (X link, Bloomberg paywall)
+- Key AI-relevant articles processed into wiki updates:
+  - geohot.github.io: "I love LLMs, I hate hype" — updated entity page with Jul 2026 blog post
+  - simonwillison.net: "Fable gets another bump" — updated Fable entity + GPT-5.6 concept with competitive dynamics
+  - TwoMillionKit (Apple Private Cloud Compute workaround) — saved as raw, not wiki-worthy yet
+  - DRI concept (Simon Willison) — saved as raw, organizational theory tangentially relevant
+
+## [2026-07-13 07:00 UTC] blog-triage | Updated 3 wiki pages from blog ingest
+- entities/geohot-github-io: Added "I love LLMs, I hate hype" (Jul 2026) — AI excitement, anti-hype, GLM-5.2+opencode, LLMs as compilers, Moore's law thesis
+- entities/fable: Added Market Dynamics section — Fable vs GPT-5.6 Sol competition, Anthropic access extensions through Jul 19, OpenAI removing usage limits, 6M active users
+- concepts/gpt/gpt-5-6: Added Post-Launch Updates — usage limit removal (Jul 12), efficiency improvements, 6M active users, competitive impact on Anthropic
+
 ## [2026-07-12 18:28 UTC] dreaming-wiki-ingest | Enriched 2 entity pages (reference candidates from filesystem scan)
 - Factory AI: Added Incident Response section (Slack alert → autonomous RCA, incident memory)
 - ElevenLabs: Added Impact Program — Projekt Kalwaria (cultural heritage TTS/VR restoration)

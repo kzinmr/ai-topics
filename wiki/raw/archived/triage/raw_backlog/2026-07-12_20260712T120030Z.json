@@ -1,0 +1,30 @@
+{
+  "archived_at": "2026-07-12T20:05:16.980706+00:00",
+  "triage_run_id": "20260712T120030Z",
+  "source": "raw_backlog",
+  "summary_ja": "5件のraw記事を評価：全てskip。MAI-Thinking-1技術レポート、Drexler CAIS論文、BenchFlow Awesome Agent Evalsの3件は既存Wikiページで完全にカバー済み。Grant Sanderson（AIと数学）およびAdam Brown（一般相対性理論）Podcastは既にarchived済みで非AI/追加価値なし。新規作成または更新不要。",
+  "decisions": [
+    {
+      "item_id": "raw-2",
+      "source": "raw_backlog",
+      "source_name": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report",
+      "url": null,
+      "raw_path": "raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "既に concepts/mai-thinking-1-tech-report (227行) および entities/mai-thinking-1 (165行) で完全にカバー済み。sourceにも既登録。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-3",
+      "source": "raw_backlog",
+      "source_name": "benchflow-awesome-evals-2025.md",
+      "title": "BenchFlow Awesome Agent Evals — curated list of 443+ eval resources",
+      "url": null,
+      "raw_path": "raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "既に concepts/ai-benchmarks/benchflow-tool (118行) でAwesome Agent Evalsセクション含め詳細にカバー済み。sourceにも既登録。",
+      "body_excerpt": ""
+    }
+  ]
+}

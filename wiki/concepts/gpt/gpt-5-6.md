@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6 (Sol / Terra / Luna)"
 created: 2026-06-27
-updated: 2026-07-10
+updated: 2026-07-13
 type: concept
 tags:
   - model
@@ -126,6 +126,19 @@ This is the first time a U.S. government request has directly shaped a frontier 
 - Positive: Strong coding and cyber capability jumps praised by technical users
 - Critical: Government-gated release structure widely criticized — "We've entered a dark era in AI model development and access" (@theo), "Not a win for our industry IMO. Open-source AI must win" (@omarsar0), "The era of AI mass surveillance begins" (@JvNixon), "Model launches from now on will be charts of things most people will never be able to use" (@matvelloso)
 - Zvi: "No reason to be holding back Luna"
+
+## Post-Launch Updates (July 2026)
+
+### Usage Limit Removal (Jul 12, 2026)
+OpenAI temporarily removed the 5-hour usage limit restriction for all Plus, Business, and Pro plans for GPT-5.6 Sol. Thibault Sottiaux announced three simultaneous changes:
+1. Removal of 5-hour usage limit for all paid plans
+2. Efficiency improvements reducing per-query usage costs
+3. Usage reset for all users
+
+OpenAI reported **6M active users** as of this date, signaling rapid adoption since the July 9 general availability launch.
+
+### Competitive Impact on Anthropic
+The aggressive availability strategy has put pressure on [[entities/fable]], where Anthropic continues to restrict Fable 5 access on paid plans due to compute constraints. Simon Willison noted (Jul 12, 2026) that "OpenAI are winning users simply due to the uncertainty that surrounds Fable access."
 
 ## Related Pages
 - [[concepts/gpt/gpt-5-5]] — Predecessor model

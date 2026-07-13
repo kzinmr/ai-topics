@@ -3,7 +3,7 @@ title: "George Hotz (geohot)"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-07-13
 type: entity
 ---
 
@@ -107,6 +107,7 @@ Unlike many AI researchers, Hotz is **skeptical of AI safety concerns**:
 - **Every minute you aren't running 69 agents (Mar 2026)** — Walked back hype rhetoric: "AI is not a magical game changer, it's simply the continuation of exponential progress"
 - **Two Worlds (Mar 2026)** — Capability vs. value distinction: "AI can keep getting better super fast, but the value of anything it produces by itself is low"
 - **zappa: AI-powered mitmproxy (Apr 2026)** — Vibe-coded an AI proxy using GPT-5.4 that intercepts web traffic via mitmproxy, routes it through Qwen (Cerebras API), strips ads/popups/enshittification, and returns clean pages. Advocates for shipping as a browser extension with customizable prompts, and making it agentic with per-site state. "Don't fall for AI browser crap that's marketed to you, that's just them wanting to control your attention better. You need an AI you can trust to fight back!"
+- **"I love LLMs, I hate hype" (Jul 2026)** — Published a post expressing unbridled excitement about AI progress while attacking two forms of hype: (1) negative "window closing" / "perpetual underclass" FUD designed to make people feel bad, and (2) the "strawman jump" from "fancy autocomplete" to "superintelligence owning the light cone." Set up a Linux box with opencode on local GLM-5.2 — "the Year of the Linux Desktop is finally here!" Revisited his earlier "Eternal Sloptember" take: programming is changing, not dying. Compares LLMs to compilers (citing Linus Torvalds: agents = 10x, compilers = 1000x). Warns that models "can increase cognitive fatigue" and vibe-coded output is still slop. Core thesis: "AI is the continuation of the computer revolution." Argues frontier labs won't capture the value they create — "AI is something that's happening mostly due to Moore's law and general progress in computing, not something that they are doing."
 
 ## Related
 
@@ -118,7 +119,7 @@ Unlike many AI researchers, Hotz is **skeptical of AI safety concerns**:
 
 ## Sources
 
-- geohot.github.io blog — "the singularity is nearer"
+- geohot.github.io blog — "the singularity is nearer" (Jul 2026): https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html
 - comma.ai / openpilot documentation and releases
 - tinygrad GitHub repository and documentation
 - Various podcasts and interviews (2023–2025)

@@ -5,7 +5,7 @@ sources:
   - raw/newsletters/2026-07-07-my-thoughts-on-fable.md
   - https://open.substack.com/pub/bensbites/p/my-thoughts-on-fable
 created: 2026-07-08
-updated: 2026-07-08
+updated: 2026-07-13
 type: entity
 ---
 
@@ -34,6 +34,17 @@ The review connected Fable's potential to several streams of AI research and pra
 - **Anthropic Global Workspace research** — new interpretability work showing Claude activates concepts not present in its output or chain of thought
 - **Making of Claude Code** — short history from the Claude Code team
 - **Theo's Fable usage guide** — practical reimagination of how to use the newer generation of AI models
+
+## Market Dynamics: Fable vs GPT-5.6 Sol (July 2026)
+
+As of mid-July 2026, Fable faces intensifying competitive pressure from [[concepts/gpt/gpt-5-6]] Sol:
+
+- **Anthropic's access extensions**: Anthropic has repeatedly extended Fable 5's availability on paid plans (Claude Max), most recently through July 19, 2026. The original rationale was compute constraints — uncertainty about demand and compute availability before committing to keeping the model cheap for subscribers.
+- **OpenAI's aggressive positioning**: OpenAI has taken the opposite approach with GPT-5.6 Sol, temporarily removing the 5-hour usage limit for all Plus, Business, and Pro plans and rolling out efficiency improvements that reduce per-query usage costs.
+- **User migration risk**: Simon Willison noted (Jul 12, 2026) that "OpenAI are winning users simply due to the uncertainty that surrounds Fable access" and recommended Anthropic should "change track and keep Fable permanently available on those plans."
+- **Scale**: OpenAI reported 6M active users as of July 2026, with a usage reset landing to accommodate growth.
+
+This dynamic illustrates a broader pattern in [[concepts/frontier-model-competition]] where compute/access policies can be as strategically important as raw model capability.
 
 ## Features
 
