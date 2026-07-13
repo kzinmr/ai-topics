@@ -2066,3 +2066,10 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - 6 duplicate entity pairs detected (all hyphen-stripping variants) — needs human merge
 - Frontmatter gaps: 23 pages missing `created` field (below escalation)
 - Log health: header not buried, 0 pipe corruption
+
+## [2026-07-13 18:00 UTC] dreaming | Saturation day — 0 takes, 2 references
+- Checkpoint: total_articles=1 (non-AI podcast), recent_raw_articles=180
+- Prior triage at 12:00 UTC consumed (5 skips)
+- Filesystem scan: 2 enrichment candidates (Ed Zitron memory crisis, Merge Gateway cost eval)
+- 15 non-AI articles batch-skipped
+- Archive: 8 candidates, 2 newly archived, 6 dedup skipped (total: 1604 URLs)

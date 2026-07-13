@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-07-13T18:13:53.163248+00:00",
+  "triage_run_id": "20260713T180008Z",
+  "source": "dreaming",
+  "summary_ja": "サチュレーション日。収集記事1件（非AIポッドキャスト）、raw/articles 180件。12:00 UTCの前回triage済み（5件全skip）。ファイルシステムスキャンで2件のエンリッチ候補発見（Ed Zitronメモリ危機記事のHBM価格データ、Merge Gatewayベンチマーク評価）。他はすべて既存Wikiカバー済みまたは非AIコンテンツ。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-geohot-singularity",
+      "source": "dreaming",
+      "source_name": "geohot.github.io",
+      "title": "the singularity is nearer",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html",
+      "raw_path": "wiki/raw/articles/geohot.github.io--blog-jekyll-update-2026-07-12-i-love-llms-html--d1f0f38b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ entities/george-hotz.md に「I Love LLMs: The Singularity is Nearer (Jul 12, 2026)」セクションが既に存在。コアテーゼ（giddy about AI、negative valence hype批判、frontier lab valuation懐疑論）すべて網羅済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# the singularity is nearer\nSource: https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html\nI think from this blog you may misunderestimate how absolutely giddy I am about AI. I did hacking from 2007-2014, after that my\nwhole\ncareer\nhas been devoted to AI. I love the progress. I’m s"
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch",
+      "source": "dreaming",
+      "source_name": "various",
+      "title": "Non-AI content batch (15 articles)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事バッチスキップ: tonsky.me (every frame perfect), grumpy.website, blog.jim-nielsen.com (icons as software), shkspr.mobi (interrail), morphing.cloud (hypercard/lunacy), maurycyz.com (projects cooled), pfandrade.me (SwiftUI Mac), lcamtuf (panel meter), johndcook.com (posterior mean/variance), evanhahn.com (SQLite strict tables), construction-physics (reading list), nesbitt.io (package management), filfre.net (analog antiquarian)。すべて非AI/非LLM/非エージェント関連コンテンツ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（non-AI batch skip — ファイルシステムスキャンで確認済み、AI/LLM/Agent relevance なし）"
+    }
+  ]
+}
