@@ -1,12 +1,13 @@
 ---
 title: "Satya Nadella"
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-07-13
 type: entity
-tags: [person, ceo, microsoft, ai-adoption, ai-organization]
+tags: [person, ceo, microsoft, ai-adoption, ai-organization, ai-economics]
 aliases: [satya-nadella-microsoft-ceo]
 sources:
   - raw/articles/2026-06-14_satya-nadella_frontier-ecosystem-token-capital.md
+  - raw/articles/2026-07-12_satya-nadella_reverse-information-paradox.md
   - https://en.wikipedia.org/wiki/Satya_Nadella
 ---
 
@@ -51,6 +52,7 @@ Nadella's metaphor for the compounding organizational learning system: every imp
 | 2023 | OpenAI multi-round investment | $10B+ additional commitment |
 | 2024 | Copilot launch | AI across entire Microsoft 365 suite |
 | 2026 | "Frontier Ecosystem" thesis | Token capital framework, X Article |
+| 2026 | "Reverse Information Paradox" | Enterprise AI trust boundary, X Article |
 
 ## Notable Quotes
 
@@ -60,9 +62,14 @@ Nadella's metaphor for the compounding organizational learning system: every imp
 
 > "In my view, our priority has to be building a frontier ecosystem, not just a frontier model, so value flows broadly across every company, every industry, and every country." — June 2026
 
+> "In the AI age, the buyer risks giving away knowledge, just in order to use what they bought. You essentially pay for intelligence twice, once with money, and again with something even more valuable: the proprietary knowledge you must reveal to make that intelligence useful." — July 2026
+
+> "If learning flows in only one direction, economic value converges toward the owners of the learning infrastructure rather than the creators of the knowledge itself." — July 2026
+
 ## Cross-References
 
 - [[concepts/token-capital]] — Nadella's framework for organizational AI capability
+- [[concepts/reverse-information-paradox]] — Nadella's framework for enterprise AI trust boundaries and knowledge sovereignty
 - [[concepts/organizational-moat]] — Complementary thesis by Jaya Gupta on company shape as moat
 - [[entities/microsoft]] — Company led by Nadella since 2014
 - [[entities/openai]] — Microsoft's strategic AI partner
@@ -71,3 +78,4 @@ Nadella's metaphor for the compounding organizational learning system: every imp
 
 - [Wikipedia: Satya Nadella](https://en.wikipedia.org/wiki/Satya_Nadella)
 - [X Article: "A frontier without an ecosystem is not stable"](https://x.com/i/article/2065582894790365184) — June 14, 2026
+- [X Article: "The Reverse Information Paradox"](https://x.com/i/article/2076319195718090753) — July 12, 2026

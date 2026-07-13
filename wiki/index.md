@@ -852,7 +852,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1857 pages)
+## Concepts (1858 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2408,6 +2408,7 @@
 - [[concepts/retrieval-augmented-generation]] — retrieval-augmented-generation
 - [[concepts/retrieve-merge-predict]] — Retrieve Merge Predict
 - [[concepts/reverse-engineering]] — Reverse Engineering
+- [[concepts/reverse-information-paradox]] — Nadella's framework for enterprise AI knowledge sovereignty — inverting Arrow's Information Paradox; trust boundary, five enterprise imperatives (Jul 2026)
 - [[concepts/rich-suttons-bitter-lesson]] — Rich Sutton's Bitter Lesson
 - [[concepts/right-to-repair]] — right-to-repair
 - [[concepts/rikiya-takehi]] — rikiya-takehi

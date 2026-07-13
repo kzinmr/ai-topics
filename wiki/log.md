@@ -2,6 +2,26 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-07-13] X Bookmarks Ingest — 2 bookmarks processed
+
+### New Pages
+- 🆕 [[concepts/reverse-information-paradox]] — Nadella's framework for enterprise AI knowledge sovereignty: inverting Arrow's Information Paradox, trust boundary concept, five enterprise imperatives (Control, Capability, Choice, Cost, Compound)
+  - Source: [[raw/articles/2026-07-12_satya-nadella_reverse-information-paradox]]
+
+### Enriched Pages
+- ✏️ [[entities/prime-intellect]] — verifiers v1 announcement (Jul 12): environment decomposition into taskset/harness/runtime primitives; harness-agnostic task definitions
+  - Source: [[raw/articles/2026-07-12_primeintellect_verifiers-v1]]
+- ✏️ [[entities/satya-nadella]] — Reverse Information Paradox article: career timeline entry, 2 new notable quotes, cross-reference to reverse-information-paradox concept
+  - Source: [[raw/articles/2026-07-12_satya-nadella_reverse-information-paradox]]
+- ✏️ [[concepts/ai-economics]] — Reverse Information Paradox section: structural cost of knowledge leakage, asymmetric learning flow, distributed learning infrastructure argument
+- ✏️ [[concepts/token-capital]] — Cross-reference to reverse-information-paradox in Related Concepts
+
+### Raw Articles Saved
+- [[raw/articles/2026-07-12_primeintellect_verifiers-v1]] — Prime Intellect verifiers v1 tweet (514 bookmarks)
+- [[raw/articles/2026-07-12_satya-nadella_reverse-information-paradox]] — Satya Nadella X Article (22,227 bookmarks, 10.6M impressions)
+
+### Stats
+- 1 new concept page, 4 pages enriched, 2 raw articles saved
 ---
 ## [2026-07-13 12:00 UTC] enrichment | GPT-5.6-Sol operational guidance added to openai-codex
 ---

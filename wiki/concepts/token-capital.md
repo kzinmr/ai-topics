@@ -1,7 +1,7 @@
 ---
 title: Token Capital
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-07-13
 type: concept
 tags:
   - concept
@@ -10,7 +10,7 @@ tags:
   - company
   - platform-economics
 aliases: [organizational-learning-loop, nadella-ai-framework, hill-climbing-machine]
-related: [[concepts/organizational-moat]], [[concepts/forward-deployed-engineering]], [[concepts/model-labs-to-agent-labs]], [[concepts/the-untrainable]], [[concepts/harness-commoditization]], [[entities/satya-nadella]]
+related: [[concepts/reverse-information-paradox]], [[concepts/organizational-moat]], [[concepts/forward-deployed-engineering]], [[concepts/model-labs-to-agent-labs]], [[concepts/the-untrainable]], [[concepts/harness-commoditization]], [[entities/satya-nadella]]
 sources:
   - raw/articles/2026-06-14_satya-nadella_frontier-ecosystem-token-capital.md
 ---
@@ -116,6 +116,7 @@ Both address non-commoditizable AI value:
 ```
 
 ## Related Concepts
+- [[concepts/reverse-information-paradox]] — Nadella's framework for enterprise AI trust boundaries and knowledge sovereignty (July 2026)
 - [[concepts/organizational-moat]] — Jaya Gupta's theory that company shape is the last durable moat
 - [[concepts/forward-deployed-engineering]] — Enterprise AI deployment as the new moat
 - [[concepts/model-labs-to-agent-labs]] — Shift from model performance to agent infrastructure

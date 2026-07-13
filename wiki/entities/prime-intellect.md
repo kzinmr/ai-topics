@@ -1,7 +1,7 @@
 ---
 title: "Prime Intellect"
 created: 2026-05-13
-updated: 2026-05-29
+updated: 2026-07-13
 type: entity
 tags:
   - company
@@ -11,8 +11,11 @@ tags:
   - training
   - agent-training
   - infrastructure
+  - agentic-rl
+  - agent-evaluation
 sources:
   - raw/articles/2026-05-12_primeintellect_renderers-token-level-templating.md
+  - raw/articles/2026-07-12_primeintellect_verifiers-v1.md
   - https://www.primeintellect.ai/
   - https://www.primeintellect.ai/blog/our-approach-to-decentralized-training
 ---
@@ -52,6 +55,20 @@ Decentralized GPU compute marketplace enabling distributed training across globa
 | **[[renderers]]** | Token-level templating for agentic RL — makes chat templates programmable Python objects | [PrimeIntellect-ai/renderers](https://github.com/PrimeIntellect-ai/renderers) |
 | **[[verifiers-rl|verifiers]]** | Verifiable RL training library with multi-turn agent support | [PrimeIntellect-ai/verifiers](https://github.com/PrimeIntellect-ai/verifiers) |
 | **[[prime-rl]]** | End-to-end RL training framework built on verifiers + renderers | [PrimeIntellect-ai/prime-rl](https://github.com/PrimeIntellect-ai/prime-rl) |
+
+### verifiers v1 (July 2026)
+
+Released July 12, 2026, **verifiers v1** is a major overhaul of the environment stack for agentic RL and evals. The key architectural innovation is decomposing RL environments into three composable primitives:
+
+| Component | Role | Description |
+|-----------|------|-------------|
+| **Taskset** | What to accomplish | Defines the agent's objective, expected behaviors, and success criteria |
+| **Harness** | How to orchestrate | Framework that manages agent-environment interaction, tool access, and state tracking |
+| **Runtime** | Where to execute | Execution context providing isolation, resource management, and reproducibility |
+
+This decomposition enables **harness-agnostic task definitions** — the same taskset can run in any harness (Codex, Claude Code, custom), and the same harness can run any taskset. Designed for complex agentic tasks including coding and computer use at scale.
+
+See: [[concepts/agentic-rl]], [[concepts/agent-evaluation]], [[verifiers-rl]]
 
 ### Models
 - **INTELLECT-1**: 10B parameter model trained with distributed hardware (late 2024)
