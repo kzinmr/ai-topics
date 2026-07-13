@@ -3,7 +3,7 @@ title: Pi (pi-coding-agent)
 type: entity
 aliases: [pi-coding-agent, pi-dev, pi-mono, mario-zechner-pi]
 created: 2026-05-07
-updated: 2026-06-09
+updated: 2026-07-13
 status: L3
 tags:
   - entity
@@ -22,6 +22,7 @@ sources:
   - https://newsletter.pragmaticengineer.com/p/building-pi-and-what-makes-self-modifying
   - raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md
   - raw/articles/2026-06-08_x-article_pi-new-approval-system.md
+  - raw/articles/2026-07-11_rasyidanaf_vim-of-coding-agents.md
 related:
   - "[[entities/openclaw]]"
   - "[[entities/claude-code]]"
@@ -54,6 +55,30 @@ related:
 ## Design Philosophy — Radical Minimalism
 
 Pi's core thesis: **the developer, not the harness, should control the context window.**
+
+### Neovim Analogy
+
+Pi is often compared to **Neovim** for its philosophy of radical customizability from a minimal core. The analogy maps cleanly:
+
+| Neovim Concept | Pi Equivalent |
+|---|---|
+| Core app + Lua/Vimscript plugins | Core app + TypeScript extensions |
+| Custom commands (`:Telescope`, `<Leader>` mappings) | Custom slash commands / skills (`/AskUser`, etc.) |
+| Floating windows, status lines, custom UI | Custom TUI components, dialogs, object renderers |
+| Config at `~/.config/nvim` | Extensions at `~/.pi/` |
+
+While Neovim is a minimal text editor you customize into a full IDE, Pi is a minimal coding agent you customize into a full harness. Both reward investment: you build the setup you actually want instead of renting someone else's opinion. ([Rasyidan A F, 2026-07-11](raw/articles/2026-07-11_rasyidanaf_vim-of-coding-agents.md))
+
+**OpenCode** is sometimes compared to **Helix** in this analogy — a more polished, battery-included design that is still extensible but ships with strong defaults (built-in LSP, plan mode, subagents, multi-session). Pi is more bare-metal: read, write, search, bash — everything else is a plugin.
+
+### Plugin Model: Programmable Harness vs External Hooks
+
+Pi's plugin model differs fundamentally from most coding agents:
+
+- **Pi**: The harness itself is programmable — register tools, slash commands, event handlers, custom UI components, flags, and shortcuts at global or project level. Extensions feel like a small framework, not just "a plugin."
+- **OpenCode / others**: Plugin model is more like external hooks integrated into an existing product shape.
+
+Tradeoff: Pi gives deeper hackability but requires assembly. OpenCode gives more out of the box but less control over the core. ([Rasyidan A F, 2026-07-11](raw/articles/2026-07-11_rasyidanaf_vim-of-coding-agents.md))
 
 | Feature | Pi | Claude Code / OpenCode |
 |------|----|----------------------|
@@ -102,6 +127,8 @@ OpenAI → Anthropic → Google → xAI → Groq → Cerebras → OpenRouter →
 ### The Harness Effect with Pi
 
 Pi's ~1K token system prompt gives it a **structural advantage with smaller/weaker models** that would be overwhelmed by 10K+ overhead. However, frontier models (Opus, GPT-5) handle larger prompts fine, so Pi's advantage diminishes at the top end.
+
+**Databricks internal benchmark (2026)**: Using the same models (Opus 4.8, GPT 5.5), the Pi harness achieved roughly the same success rate as the models' native vendor harnesses, but at **1x–2x cheaper per task** — primarily due to smaller input token counts from Pi's minimal system prompt. This demonstrates that a more feature-packed harness does not automatically mean better cost-performance. ([Matei Zaharia, 2026](https://x.com/matei_zaharia/status/2074943619610649059), [Rasyidan A F, 2026-07-11](raw/articles/2026-07-11_rasyidanaf_vim-of-coding-agents.md))
 
 | Model | Pi Performance | Claude Code Performance | Delta |
 |-------|---------------|------------------------|-------|

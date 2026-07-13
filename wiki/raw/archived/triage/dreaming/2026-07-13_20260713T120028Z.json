@@ -1,0 +1,19 @@
+{
+  "archived_at": "2026-07-13T12:17:24.672642+00:00",
+  "triage_run_id": "20260713T120028Z",
+  "source": "dreaming",
+  "summary_ja": "raw-backlog-ingestバッチ(5記事)は全て既存Wikiページでカバー済み。MAI-Thinking-1技術報告書(227行概念ページ+165行エンティティページ)、BenchFlow Awesome Agent Evals(118行概念ページ)、Reframing Superintelligence(CAIS概念ページ+Eric Drexlerエンティティ)、Grant Sandersonポッドキャスト(141行エンティティページ)は全て既存ページで内容を反映。Adam Brown一般相対性理論ポッドキャストはAI非関連。",
+  "decisions": [
+    {
+      "item_id": "raw-3",
+      "source": "raw_article",
+      "source_name": "raw_backlog",
+      "title": "BenchFlow Awesome Agent Evals — Curated Resources",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 既存concepts/ai-benchmarks/benchflow-tool.md(118行)で443+リソース・12 must-read・PATTERNS.md・companies landscapeをカバー。raw articles pathもsourcesに登録済み。",
+      "body_excerpt": "# Awesome Agent Evals [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n> A curated, opinionated, **non-BS** library of the best resources for **building and evaluating AI agents** — papers, blog posts, talks, courses, tools, and benchmarks.\nMaintained by [**BenchFlow**](https://benchfl"
+    }
+  ]
+}

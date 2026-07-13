@@ -3,6 +3,14 @@
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-07-13 12:00 UTC] enrichment | GPT-5.6-Sol operational guidance added to openai-codex
+## [2026-07-13] enrichment | Neovim analogy & harness cost data added to Pi
+
+### Enriched Pages
+- **[[entities/pi]]** — Added "Neovim Analogy" section (core app + extensions, custom commands, custom UI, config directories mapping), "Plugin Model: Programmable Harness vs External Hooks" section (Pi vs OpenCode plugin philosophy), and Databricks internal benchmark data showing Pi achieves same success rate as vendor harnesses at 1–2x less cost per task. Source: Rasyidan A F blog "Vim of Coding Agents" (2026-07-11).
+
+### Sources
+- raw/articles/2026-07-11_rasyidanaf_vim-of-coding-agents.md
+
 
 ### Enriched Pages
 - **[[entities/openai-codex]]** — Added "GPT-5.6-Sol Operational Guidance (July 2026)" section based on Theo Browne's X Article. Covers reasoning level selection (medium/high/xhigh/Ultra), fast mode 2.5x multiplier warning, subagent management mitigations (lower reasoning, AGENTS.md directive, Fable orchestrator pattern), model selection (Sol/Terra/Luna), prompt engineering with clear stop points, and usage monitoring tools (ccusage, codexbar). Updated frontmatter: sources, date.
