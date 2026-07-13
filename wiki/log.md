@@ -2,7 +2,9 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+---
 ## [2026-07-13 12:00 UTC] enrichment | GPT-5.6-Sol operational guidance added to openai-codex
+---
 ## [2026-07-13] enrichment | Neovim analogy & harness cost data added to Pi
 
 ### Enriched Pages
@@ -18,6 +20,7 @@ _Log of all wiki changes. Newest entries at top._
 ### Sources
 - raw/articles/2026-07-11_theo_gpt-5-6-sol-without-hitting-limits.md — Theo Browne X Article (plain_text source)
 
+---
 ## [2026-07-13 12:00 UTC] entity-creation | Theo Browne (t3.gg) entity page created
 
 ### New Pages
@@ -29,6 +32,7 @@ _Log of all wiki changes. Newest entries at top._
 - GitHub: t3-oss/create-t3-app
 - X Article: "gpt-5.6-sol without hitting limits" (July 2026)
 
+---
 ## [2026-07-13 11:15 UTC] active-crawl — 3 new pages + 1 entity enrichment
 
 ### New Pages
@@ -48,6 +52,7 @@ _Log of all wiki changes. Newest entries at top._
 ### Research
 - raw/articles/2026-07-13_trending-topics-research.md: Comprehensive research note covering all 4 topics with HN Algolia discussion analysis
 
+---
 ## [2026-07-13 10:00 UTC] llm-pricing-monitor | OpenAI GPT-5.6 launch + deep-research price revert
 - comparisons/llm-api-pricing.md: Added GPT-5.6-sol ($5/$30, flagship), GPT-5.6-terra ($2.50/$15), GPT-5.6-luna ($1/$6) with new cache writes pricing (+25% premium over base input)
 - comparisons/llm-api-pricing.md: Reverted o3-deep-research from $10/$40 back to $5/$20 and o4-mini-deep-research from $2/$8 back to $1/$4 — now batch-only (no standard pricing tier)
@@ -56,11 +61,13 @@ _Log of all wiki changes. Newest entries at top._
 - Verified: Anthropic pricing unchanged (Fable 5 $10/$50, Opus 4.8 $5/$25, Sonnet 5 intro $2/$10 through 2026-08-31)
 - Verified: Google pricing unchanged (3.1 Pro $2/$12, 3.5 Flash $1.50/$9, 3 Flash Preview $0.50/$3, 3.1 Flash-Lite $0.25/$1.50)
 - Verified: DeepSeek pricing unchanged (V4-Flash $0.14/$0.28, V4-Pro $0.435/$0.87). Note: deepseek-chat/reasoner aliases deprecating 2026-07-24
+---
 ## [2026-07-13 07:40 UTC] blog-wiki-ingest | Recovered from blog-triage checkpoint (JSON saved before render failure)
 - entities/george-hotz.md: Enriched with "I Love LLMs: The Singularity is Nearer (Jul 12, 2026)" section — partial retraction of Eternal Sloptember, genuine AI optimism, negative valence hype critique, frontier lab valuation (Moore's law vs lab value capture), Linus Torvalds agents=10x vs compilers=1000x, cognitive fatigue caveats. Timeline entry + notable posts list + source added. (+25 lines)
 - entities/simon-willison.md: Enriched with "Fable Gets Another Bump" (July 12) — Anthropic extends Fable 5 access through Jul 19, OpenAI GPT-5.6 Sol removes limits, Simon argues for permanent Fable availability. "Directly Responsible Individuals (DRI)" — agents should never be DRI, IBM 1979 management decision rule. Reference only (no page change): Merge Gateway cost evaluation (no existing concept page for LLM routing)
 - Skip: shot-scraper 1.11, sqlite-utils 4.1.1, lcamtuf panel meter, SwiftUI WWDC, posterior variance/variance statistics, TwoMillionKit, Lunatic Fringe, cooled clothing, HyperCard emulator, icon design, interrail travel, Grumpy Website, Every Frame Perfect, Sam Altman/Elon Musk X thread, Apple/OpenAI Gurman paywall
 - Archive: blog triage decisions archived
+---
 ## [2026-07-13 07:40 UTC] newsletter-wiki-ingest | Recovered from triage checkpoint (JSON saved before render failure)
 - entities/nathan-lambert.md: Added "July 2026: 6 months to live for open models" section — White House EO threat, 6-month ban window, distillation as regulatory capture, Anthropic lobbying critique
 - concepts/open-weight-vs-closed-llm-gap.md: Added "Regulatory Dimension" section — Lambert's 6-month regulatory timeline vs Doubleword's Dec 2026 benchmark convergence, comparison table, regulatory capture framing
@@ -68,6 +75,7 @@ _Log of all wiki changes. Newest entries at top._
 - Source: raw/newsletters/2026-07-12-6-months-to-live-for-open-models.md (Interconnects / Nathan Lambert)
 - Reference only (no page change): The Signal competitive analysis — all topics already wiki-covered (GPT-5.6, GPT Live, ChatGPT Work, Claude Cowork, Muse Spark 1.1)
 - Skip: Lenny's Podcast (AI sentiment survey — no wiki target), Beehiiv W&B@CoreWeave (all URLs 403 expired, CoreWeave/W&B pages already cover acquisition)
+---
 ## [2026-07-13 07:00 UTC] blog-ingest | 30 new articles collected, 18 saved as raw
 - Scan: 0 blogs_scanned (blogwatcher RSS scan), 20 blog_articles total, 18 saved, 2 unsaved (X link, Bloomberg paywall)
 - Key AI-relevant articles processed into wiki updates:
@@ -76,16 +84,19 @@ _Log of all wiki changes. Newest entries at top._
   - TwoMillionKit (Apple Private Cloud Compute workaround) — saved as raw, not wiki-worthy yet
   - DRI concept (Simon Willison) — saved as raw, organizational theory tangentially relevant
 
+---
 ## [2026-07-13 07:00 UTC] blog-triage | Updated 3 wiki pages from blog ingest
 - entities/geohot-github-io: Added "I love LLMs, I hate hype" (Jul 2026) — AI excitement, anti-hype, GLM-5.2+opencode, LLMs as compilers, Moore's law thesis
 - entities/fable: Added Market Dynamics section — Fable vs GPT-5.6 Sol competition, Anthropic access extensions through Jul 19, OpenAI removing usage limits, 6M active users
 - concepts/gpt/gpt-5-6: Added Post-Launch Updates — usage limit removal (Jul 12), efficiency improvements, 6M active users, competitive impact on Anthropic
 
+---
 ## [2026-07-12 18:28 UTC] dreaming-wiki-ingest | Enriched 2 entity pages (reference candidates from filesystem scan)
 - Factory AI: Added Incident Response section (Slack alert → autonomous RCA, incident memory)
 - ElevenLabs: Added Impact Program — Projekt Kalwaria (cultural heritage TTS/VR restoration)
 - Sources: raw/articles/2026-07-11_factory_incident-response.md, raw/articles/2026-07-11_elevenlabs_how-projekt-kalwaria-uses-elevenlabs-to-preserve-history.md
 
+---
 ## [2026-07-12 18:01 UTC] dreaming-group | Saturation day — 0 takes, 2 references
 - Checkpoint: 1 article (ATP podcast, non-AI) + 169 recent raw articles
 - Blog triage: 20 decisions (1 take consumed by blog-wiki-ingest)
@@ -94,6 +105,7 @@ _Log of all wiki changes. Newest entries at top._
 - Filesystem scan: 7 articles assessed → 0 takes, 2 references, 5 skips
 - References: Factory AI incident response (enrichment candidate), ElevenLabs Projekt Kalwaria (enrichment candidate)
 - Archive: 6 new URLs archived (1,546 total)
+---
 ## [2026-07-12] watchdog | Auto-fixed log.md separators and pipe corruption
 
 ### Changes
@@ -908,6 +920,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - `2026-06-03_microsoft-mai-thinking-1-tech-report.md` — Fully covered by 227-line `concepts/mai-thinking-1-tech-report.md`
 - `benchflow-awesome-evals-2025.md` — Bulk-processed June 26 (57 benchmark pages)
 - `webkit.org--blog-17967-news-from-wwdc26-webkit-in-safari-27-beta--c116f751.md` — Non-AI content
+---
 ## 2026-07-05
 
 - **Pages Updated**:
@@ -929,6 +942,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - **Pipeline**: blog-wiki-ingest (recovered from blog-triage checkpoint after JSON parse failure)
 - **Triage decisions processed**: 2 takes, 1 reference, 12 skips
 
+---
 ## 2026-07-02
 
 - **Pages Updated**:
@@ -949,6 +963,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
   - `entities/geoffrey-litt.md` — Added AI Engineer World's Fair 2026 anti-factory critique: "Factories is a depressing vision" thread (35.5K Views), Design Engineering track on human understanding of code. (newsletter: AIEWF Daily Dispatch — Latent Space)
 
 - **Pipeline**: newsletter-wiki-ingest (recovered from triage checkpoint after newsletter-triage JSON parse failure)
+---
 ## [2026-07-02] Ornith-1.0 Official Release Page Import — Major Wiki Update
 
 ### Changes
@@ -1955,13 +1970,16 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **concepts/sakana-fugu** — Added cross-reference to multi-model-synthesis-strategies
 - **wiki/index.md** — Added multi-model-synthesis-strategies entry
 
+---
 ## 2026-07-02
 - 2026-07-02: Ingested Geoffrey Litt's mega thread 'Understanding the Code Our Agents Write' (36-part X thread) to raw/articles/2026-07-02-geoffreylitt-understanding-code-agents-write.md
 
+---
 ## 2026-07-05
 
 - **wiki-graph-analysis** — Full weekly wiki graph analysis run: 2,205 pages scanned. Report saved to wiki/queries/wiki-graph-analysis-weekly-2026-07-05.md. Added Queries section to index.md.
 
+---
 ## 2026-07-05
 
 - **duplicate page merge** — Merged 33 entity-concept duplicate pairs (kept larger file per pair). Fixed stale ghost entry `entities/show-us-your-agent-skills` → `concepts/show-us-your-agent-skills` in index.md. 0 ghost entries after fix.
@@ -1975,6 +1993,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **orphan page fix** — Added inbound links from concepts/harness-engineering.md to 3 orphan pages (claude-code-best-practices, writing-tools-for-agents, context-engineering). Orphans reduced from 5 to 2 (archive pages only).
 - 2026-07-06 llm-pricing-monitor: Updated OpenAI deep-research pricing (o3-deep-research $5→$10/$20→$40; o4-mini-deep-research $1→$2/$4→$8); added Claude Sonnet 5 ($2/$10 intro, $3/$15 std); updated cache/batch/trend tables
 
+---
 ## [2026-07-07] wiki: Ingested Gemma 4 Technical Report (arXiv:2607.02770)
 
 **Updated:**
@@ -2014,6 +2033,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 ### Sources
 - raw/newsletters/2026-07-09-ainews-spacexai-launches-grok-4-5-first-opus-class-model-post-cursor-acquisition.md
 
+---
 ## [2026-07-12 18:00 UTC] dreaming | Knowledge consolidation — saturation day, Takes=0
 
 **Checkpoint**: `20260712T180059Z` — 1 article collected (ATP podcast, non-AI), 169 recent raw articles on disk.
@@ -2033,3 +2053,16 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 **Archive**: `archive_triage.py` run — 15 candidates, 2 newly archived, 13 dedup_skipped. Total archive: 1,540 URLs.
 
 **Result**: 0 takes, 0 references (all previously handled). Saturation confirmed.
+
+---
+
+## [2026-07-13 17:35 UTC] watchdog | Auto-fix: 19 missing log separators
+
+### Changes
+- Fixed 19 missing `---` separators between consecutive `## [YYYY-MM-DD]` log entries
+- No index corruption found (pipe, triple-bracket, line-number: 0)
+- All section header counts match filesystem
+- 0 genuine ghost entries (541 "stale" from stale graph report all false)
+- 6 duplicate entity pairs detected (all hyphen-stripping variants) — needs human merge
+- Frontmatter gaps: 23 pages missing `created` field (below escalation)
+- Log health: header not buried, 0 pipe corruption
