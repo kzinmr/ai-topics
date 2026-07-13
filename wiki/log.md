@@ -5,6 +5,8 @@ _Log of all wiki changes. Newest entries at top._
 ---
 ## [2026-07-13 12:00 UTC] enrichment | GPT-5.6-Sol operational guidance added to openai-codex
 ---
+## [2026-07-13 22:30 UTC] enrichment | X accounts scan: V-SPLADE endorsement added to Tom Aarsen
+- [[entities/tom-aarsen.md]]: Added V-SPLADE Endorsement (July 2026) section covering Tom Aarsen's X thread recommending naver/v-splade-quality, v-splade-efficient, and splade-v3 models for sparse embedding document retrieval. Added to Blog/Recent Posts table. Updated frontmatter date.
 ---
 ## [2026-07-13 18:00 UTC] dreaming | Knowledge consolidation — 2 reference enrichments
 - [[entities/ed-zitron.md]]: Added Memory Crisis — HBM Economics section (HBM pricing, memory triopoly, NVIDIA 65% HBM consumption, consumer electronics price impact)

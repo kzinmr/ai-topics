@@ -3,7 +3,7 @@ title: Tom Aarsen
 type: entity
 handle: "@tomaarsen"
 created: 2026-04-10
-updated: 2026-06-15
+updated: 2026-07-13
 tags:
   - person
   - model
@@ -96,10 +96,22 @@ Aarsen's **attention_sinks** project addresses one of the most pressing challeng
 
 Aarsen is a **Hugging Face Fellow** since July 2023 and full-time **Machine Learning Engineer** at Hugging Face since November 2023. His contributions extend beyond his own libraries to the broader Hugging Face ecosystem, including work on huggingface/transformers, huggingface/skills, and community model evaluations.
 
+## V-SPLADE Endorsement (July 2026)
+
+On July 8, 2026, Tom Aarsen posted a thread on X recommending the **V-SPLADE** model family from Naver as a top choice for sparse embedding-based document retrieval:
+
+- **[naver/splade-v3](https://huggingface.co/naver/splade-v3)**: "the best text-only sparse embedding model" (for English)
+- **[naver/v-splade-quality](https://huggingface.co/naver/v-splade-quality)**: Quality-optimized variant for document retrieval
+- **[naver/v-splade-efficient](https://huggingface.co/naver/v-splade-efficient)**: Efficiency-optimized variant
+- **Demo Space**: [V-SPLADE Document Retrieval](https://huggingface.co/spaces/hugging-apps/v-splade-document-retrieval) — Visual document retrieval via sparse lexical vectors, free and no login required
+
+This endorsement is notable coming from the lead maintainer of Sentence Transformers, as SPLADE represents a **sparse lexical** approach to retrieval — complementary to the dense embedding paradigm that Sentence Transformers primarily serves.
+
 ## Blog and Recent Posts
 
 | Date | Title | Summary |
 |---|---|---|
+| Jul 2026 | X: V-SPLADE thread | Recommended V-SPLADE models (naver/v-splade-quality, v-splade-efficient, splade-v3) for sparse embedding retrieval |
 | Oct 2025 | [Sentence Transformers is joining Hugging Face!](https://huggingface.co/blog/sentence-transformers-joins-hf) | Official announcement of the library transition from UKP Lab to Hugging Face; outlines future roadmap and thanks contributors |
 | Ongoing | [tomaarsen.com](https://tomaarsen.com) | Personal blog covering NLP research, library updates, and technical deep-dives |
 | Ongoing | [HF Blog contributions](https://huggingface.co/blog) | Regular technical posts on Hugging Face blog covering embeddings, training, and model optimization |
