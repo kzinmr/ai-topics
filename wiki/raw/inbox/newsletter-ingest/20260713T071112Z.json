@@ -1,0 +1,137 @@
+{
+  "run_id": "20260713T071112Z",
+  "triaged_at": "2026-07-13T07:12:00Z",
+  "source": "newsletter-ingest",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 4,
+  "items": [
+    {
+      "uid": "358",
+      "message_id": "<20260712123214.3.1fa4a7ea0fa35542@mg-d1.substack.com>",
+      "subject": "How tech workers actually feel about AI in 2026 | Annual AI sentiment survey (Noam Segal)",
+      "source": "Lenny's Newsletter",
+      "author": "Noam Segal",
+      "date": "2026-07-12",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-12-how-tech-workers-actually-feel-about-ai-in-2026-annual-ai-sentiment-survey-noam-.md",
+      "canonical_url": "https://open.substack.com/pub/lenny/p/how-tech-workers-actually-feel-about",
+      "importance": "medium",
+      "classification": "survey",
+      "action": "save-raw-only",
+      "wiki_targets": [],
+      "reasoning": "Annual AI sentiment survey among tech workers. Content is primarily a podcast episode. Survey data is useful background context for AI adoption trends but doesn't directly map to a specific wiki entity or concept page. Noam Segal is not a tracked entity. No immediate wiki action needed — raw newsletter saved for future reference if an AI adoption/sentiment concept page is created.",
+      "related_existing_pages": ["concepts/open-source-ai", "comparisons/ai-competition"]
+    },
+    {
+      "uid": "359",
+      "message_id": "<20260712134629.3.e2afcba2b8e2ce88@mg2.substack.com>",
+      "subject": "OpenAI Comes for Claude, Anthropic Cuts the Cord, and Meta's Paid Pivot",
+      "source": "The Signal",
+      "author": "Alex Banks",
+      "date": "2026-07-12",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-12-openai-comes-for-claude-anthropic-cuts-the-cord-and-meta-s-paid-pivot.md",
+      "canonical_url": "https://open.substack.com/pub/thesignal/p/openai-comes-for-claude-anthropic",
+      "importance": "critical",
+      "classification": "competitive-dynamics",
+      "action": "fetch-and-ingest",
+      "wiki_targets": [
+        {
+          "path": "entities/openai",
+          "update_type": "append",
+          "reason": "OpenAI competitive moves against Claude/Anthropic"
+        },
+        {
+          "path": "entities/anthropic",
+          "update_type": "append",
+          "reason": "Anthropic strategic pivot ('cuts the cord')"
+        },
+        {
+          "path": "entities/meta",
+          "update_type": "append",
+          "reason": "Meta's paid product pivot"
+        }
+      ],
+      "reasoning": "Triple competitive dynamics update: (1) OpenAI directly targeting Claude's market position, (2) Anthropic making strategic changes, (3) Meta shifting to paid AI products. All three are core tracked entities with existing wiki pages. The Signal is a quality AI industry newsletter. High priority for wiki updates.",
+      "related_existing_pages": ["entities/openai", "entities/anthropic", "entities/meta", "comparisons/ai-competition", "concepts/open-source-ai"]
+    },
+    {
+      "uid": "360",
+      "message_id": "<20260712.155235.89ead33b@mta46>",
+      "subject": "Exclusive Interview with Phil Gurbacki, VP of Product, Weights & Biases at CoreWeave",
+      "source": "Beehiiv newsletter",
+      "author": "Unknown (Beehiiv newsletter)",
+      "date": "2026-07-12",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-12-exclusive-interview-with-phil-gurbacki-vp-of-product-weights-biases-at-coreweave.md",
+      "canonical_url": null,
+      "url_note": "Beehiiv tracking links — need to resolve via beehiiv redirect or search for article by title",
+      "importance": "high",
+      "classification": "entity-interview",
+      "action": "fetch-and-ingest",
+      "wiki_targets": [
+        {
+          "path": "entities/coreweave",
+          "update_type": "append",
+          "reason": "CoreWeave product strategy, W&B integration post-acquisition"
+        },
+        {
+          "path": "entities/weights-and-biases",
+          "update_type": "check-or-create",
+          "reason": "W&B product vision at CoreWeave — may need entity page creation"
+        }
+      ],
+      "reasoning": "Interview with W&B VP of Product at CoreWeave. CoreWeave acquired W&B — this interview likely covers post-acquisition strategy, MLOps integration, GPU cloud + experiment tracking convergence. CoreWeave entity page exists (index line 169). W&B entity page status unknown — needs check. High priority for MLOps/infra coverage.",
+      "related_existing_pages": ["entities/coreweave"]
+    },
+    {
+      "uid": "361",
+      "message_id": "<20260712164742.3.e501229d7054af95@mg2.substack.com>",
+      "subject": "6 months to live for open models",
+      "source": "Robotic (Nathan Lambert)",
+      "author": "Nathan Lambert",
+      "date": "2026-07-12",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-12-6-months-to-live-for-open-models.md",
+      "canonical_url": "https://open.substack.com/pub/robotic/p/6-months-to-live-for-open-models",
+      "importance": "critical",
+      "classification": "open-source-viability",
+      "action": "fetch-and-ingest",
+      "wiki_targets": [
+        {
+          "path": "concepts/open-source-ai",
+          "update_type": "append",
+          "reason": "Direct argument about open models' remaining viability window"
+        },
+        {
+          "path": "concepts/open-weight-vs-closed-llm-gap",
+          "update_type": "append",
+          "reason": "Performance gap analysis — 6-month thesis"
+        },
+        {
+          "path": "concepts/open-source-ai-destruction",
+          "update_type": "append",
+          "reason": "Destruction thesis timeline data point"
+        }
+      ],
+      "reasoning": "Nathan Lambert's provocative thesis that open models have ~6 months of competitive relevance remaining. Directly feeds into 3+ existing concept pages on open-source AI viability. Lambert is a known AI researcher (Robotic newsletter author). This is the most wiki-actionable newsletter in this batch — the thesis maps directly to existing concept page debates.",
+      "related_existing_pages": ["concepts/open-source-ai", "concepts/open-weight-vs-closed-llm-gap", "concepts/open-source-ai-destruction", "concepts/open-source-ai-must-win", "concepts/open-weights-licensing-tightening"]
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 1,
+    "medium": 1,
+    "low": 0,
+    "fetch_and_ingest": 3,
+    "save_raw_only": 1,
+    "top_priority": [
+      {
+        "uid": "361",
+        "subject": "6 months to live for open models",
+        "reason": "Maps directly to 3+ existing concept pages; provocative thesis with timeline data"
+      },
+      {
+        "uid": "359",
+        "subject": "OpenAI Comes for Claude, Anthropic Cuts the Cord, and Meta's Paid Pivot",
+        "reason": "Triple entity update (OpenAI, Anthropic, Meta) on competitive dynamics"
+      }
+    ]
+  }
+}
