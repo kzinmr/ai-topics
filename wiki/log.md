@@ -1,3 +1,8 @@
+| 2026-07-14 18:22 UTC | dreaming-wiki-ingest | Saturation day — Takes=0, 5 refs verified (all already covered), 21 skips archived via prior cycles |
+  - Verified: Martin Alderson margin collapse pt 2 (entities/martin-alderson.md lines 96-110 — already covered), Merge AI agent governance (entities/merge-dev.md Refs section — already covered), Hebbia data integrations (entities/hebbia.md Data Integrations section — already covered), ElevenLabs AI calling (entities/elevenlabs.md AI Customer Service section — existing coverage sufficient), DOOMQL (entities/simon-willison.md — marginal value, not enriched)
+  - Archive: All 25 decisions already in archive_index.json (deduped from prior cycles)
+  - Upstream: Prior dreaming-group at 18:00 enriched entities/sierra.md — SoftBank partnership
+
 | 2026-07-14 18:00 UTC | dreaming | Saturation day — 1 take (Sierra+SoftBank), filesystem scan of 190 raw articles |
   - Enriched: [[entities/sierra.md]] — SoftBank Corp. partnership (exclusive Japan sales partner), LINEMO 97% resolution/93% CSAT, Opera Tech acquisition, Tokyo office
   - Skipped: Merge.dev AI agent governance + MCP governance (already in merge-dev.md), Hex Technologies context engineering (existing context-engineering pages), Hebbia strategist (light content), ElevenLabs AI calling (guide article), Krebs CISA leak (tangential), ArsTechnica Musk/Apple/OpenAI (events page exists)
