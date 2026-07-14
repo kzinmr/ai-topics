@@ -1,6 +1,12 @@
 | 2026-07-14 18:22 UTC | dreaming-wiki-ingest | Saturation day — Takes=0, 5 refs verified (all already covered), 21 skips archived via prior cycles |
   - Verified: Martin Alderson margin collapse pt 2 (entities/martin-alderson.md lines 96-110 — already covered), Merge AI agent governance (entities/merge-dev.md Refs section — already covered), Hebbia data integrations (entities/hebbia.md Data Integrations section — already covered), ElevenLabs AI calling (entities/elevenlabs.md AI Customer Service section — existing coverage sufficient), DOOMQL (entities/simon-willison.md — marginal value, not enriched)
   - Archive: All 25 decisions already in archive_index.json (deduped from prior cycles)
+
+| 2026-07-14 20:00 UTC | raw-backlog-ingest | 0 takes, 5 skips — all articles already covered in existing wiki pages |
+|  - MAI-Thinking-1 tech report (407KB PDF): fully captured in entities/mai-thinking-1.md + concepts/mai-thinking-1-tech-report.md + concepts/hill-climbing-machine.md since Jun 2026 |
+|  - BenchFlow Awesome Agent Evals (443+ resources): fully captured in concepts/ai-benchmarks/benchflow-tool.md since Jun 2026 |
+|  - 3 already-archived items: Reframing Superintelligence (FHI 2019), Dwarkesh Grant Sanderson, Dwarkesh Adam Brown |
+|  - Archive: 2 new + 3 dedup skipped (total 1640 archive URLs) |
   - Upstream: Prior dreaming-group at 18:00 enriched entities/sierra.md — SoftBank partnership
 
 | 2026-07-14 18:00 UTC | dreaming | Saturation day — 1 take (Sierra+SoftBank), filesystem scan of 190 raw articles |
