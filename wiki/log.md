@@ -102,6 +102,9 @@ _Log of all wiki changes. Newest entries at top._
 ## [2026-07-13 18:00 UTC] dreaming | Knowledge consolidation — 2 reference enrichments
 - [[entities/ed-zitron.md]]: Added Memory Crisis — HBM Economics section (HBM pricing, memory triopoly, NVIDIA 65% HBM consumption, consumer electronics price impact)
 - [[comparisons/llm-gateways.md]]: Added Merge Gateway evaluation data (65% cost reduction, subsecond overhead, Benjamini-Hochberg FDR corrected statistical tests)
+
+---
+
 ## [2026-07-13] enrichment | Neovim analogy & harness cost data added to Pi
 
 ### Enriched Pages
@@ -2164,12 +2167,16 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - Frontmatter gaps: 23 pages missing `created` field (below escalation)
 - Log health: header not buried, 0 pipe corruption
 
+---
+
 ## [2026-07-13 18:00 UTC] dreaming | Saturation day — 0 takes, 2 references
 - Checkpoint: total_articles=1 (non-AI podcast), recent_raw_articles=180
 - Prior triage at 12:00 UTC consumed (5 skips)
 - Filesystem scan: 2 enrichment candidates (Ed Zitron memory crisis, Merge Gateway cost eval)
 - 15 non-AI articles batch-skipped
 - Archive: 8 candidates, 2 newly archived, 6 dedup skipped (total: 1604 URLs)
+
+---
 
 ## 2026-07-14 — Ingest: Learning pi through force (Mueller Minute)
 - Source: https://muellerminute.substack.com/p/learning-pi-through-force (published 2026-07-13)
@@ -2178,3 +2185,25 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - Updated: entities/pi.md — added "Real-World Pipeline Migration: Model Memo" section, new source
 - Updated: entities/zach-mueller.md — added Substack URL, new article in Mueller Minute table, cross-refs to pi/glm-5-2/kimi-k2-7-code
 - Updated: wiki/index.md — enriched entries for pi and zach-mueller
+
+---
+
+## [2026-07-14] watchdog | Auto-fix — 3 missing log separators
+
+### Changes
+- **Fixed 3 missing `---` separators** between consecutive log sections
+  - Before `## [2026-07-13] enrichment | Neovim analogy & harness cost data added to Pi`
+  - Before `## [2026-07-13 18:00 UTC] dreaming | Saturation day — 0 takes, 2 references`
+  - Before `## 2026-07-14 — Ingest: Learning pi through force (Mueller Minute)`
+
+### Health Check
+| Metric | Status |
+|--------|--------|
+| Index structural health | Clean (2780 lines) |
+| Ghost entries | 0 |
+| Index corruption (pipe/line/triple) | None detected |
+| Log separators | 0 missing out of 152 sections |
+| Cross-section misplacement | 0 |
+| Tag violations | 0 |
+| Orphans | 23 (all _index.md + archive — false positives) |
+| Header counts match filesystem | Entities 849, Concepts 1880, Comparisons 35 — all match |
