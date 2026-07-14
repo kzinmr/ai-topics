@@ -3,7 +3,7 @@ title: Zach Mueller
 type: entity
 handle: "@TheZachMueller"
 created: 2026-04-10
-updated: 2026-05-04
+updated: 2026-07-13
 tags:
   - person
   - model
@@ -17,6 +17,8 @@ sources:
   - transcripts/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours.md
   - https://muellerzr.github.io/
   - https://muellerzr.github.io/blog/
+  - https://muellerminute.substack.com/
+  - raw/articles/2026-07-13_muellerminute_learning-pi-through-force.md
 ---
 
 
@@ -115,6 +117,9 @@ Mueller's Accelerate work underpins training infrastructure used by thousands of
 - [[concepts/post-training/accelerate]] — Lead developer of Hugging Face's distributed training launcher
 - [[concepts/post-training/pytorch-fsdp]] — FSDP is one of the backends Accelerate supports
 - [[concepts/deepspeed]] — DeepSpeed is the alternative backend Accelerate abstracts over
+- [[entities/pi]] — Pi (coding-agent); Mueller migrated his "Model Memo" deep research pipeline from Claude Code to Pi
+- [[concepts/glm-5-2]] — Used GLM-5.2-NVFP4 as the driver/orchestrator model in his Pi pipeline
+- [[concepts/kimi-k2-7-code]] — Used Kimi K2.7 Code as the subagent retriever in his Pi pipeline
 
 ## Related People
 
@@ -126,12 +131,13 @@ Mueller's Accelerate work underpins training infrastructure used by thousands of
 - **Unsloth team** -- Collaborated on gradient accumulation reproducibility research
 - **Intel Corporation** -- Collaboration on mpirun support for multi-CPU training in Accelerate
 
-## Mueller Minute Substack (2025)
+## Mueller Minute Substack (2025–)
 
 Mueller launched **The Mueller Minute** (https://muellerminute.substack.com/) in early 2025 — a weekly newsletter focused on distributed training concepts, model optimization techniques, and practical deep learning tips. As of August 2025, ~250 subscribers.
 
 | Date | Title | Key Insight |
 |------|-------|-------------|
+| 2026-07-13 | [Learning `pi` through force](https://muellerminute.substack.com/p/learning-pi-through-force) | Migrated his "Model Memo" deep research pipeline from Claude Code to Pi using open-weight models (GLM-5.2-NVFP4 as driver, Kimi K2.7 Code as subagent). Self-improvement loop with reward structure (Slop Guard >70, numerical accuracy, completeness). Result: 36-page reports preferred over Claude Code's 21-page output, at fraction of API cost. [GitHub](https://github.com/muellerzr/learning-pi-through-force) |
 | 2025-08-11 | [Quantization Aware Training](https://muellerminute.substack.com/p/quantization-aware-training) | QAT simulates quantization effects during training so models learn to be robust to precision loss. Results in models that quantize to INT8 with minimal accuracy degradation. Often used as final fine-tuning step after FP32 pre-training. |
 | 2025-08-09 | [ZeRO-Infinity](https://muellerminute.substack.com/p/zero-infinity) | Extends ZeRO-3 with NVMe offloading. Memory-centric tiling breaks large layers into small tiles processed sequentially. Just-in-time prefetching hides latency. Enables training models far exceeding aggregate GPU capacity. |
 | 2025-08-04 | [Reduce-Scattering](https://muellerminute.substack.com/p/reduce-scattering) | Collective communication combining reduce + scatter. Used in ZeRO2/ZeRO3 for efficient gradient aggregation. Each GPU gets a distinct shard of the reduced result rather than all-reduce then scatter. |

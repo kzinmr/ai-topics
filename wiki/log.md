@@ -2154,3 +2154,11 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - Filesystem scan: 2 enrichment candidates (Ed Zitron memory crisis, Merge Gateway cost eval)
 - 15 non-AI articles batch-skipped
 - Archive: 8 candidates, 2 newly archived, 6 dedup skipped (total: 1604 URLs)
+
+## 2026-07-14 — Ingest: Learning pi through force (Mueller Minute)
+- Source: https://muellerminute.substack.com/p/learning-pi-through-force (published 2026-07-13)
+- Author: Zach Mueller (@TheZachMueller)
+- Raw article saved: raw/articles/2026-07-13_muellerminute_learning-pi-through-force.md
+- Updated: entities/pi.md — added "Real-World Pipeline Migration: Model Memo" section, new source
+- Updated: entities/zach-mueller.md — added Substack URL, new article in Mueller Minute table, cross-refs to pi/glm-5-2/kimi-k2-7-code
+- Updated: wiki/index.md — enriched entries for pi and zach-mueller

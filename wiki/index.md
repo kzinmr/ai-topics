@@ -610,7 +610,7 @@
 - [[entities/phil-trammell]] — Phil Trammell — Head of Economics at Epoch AI; AGI economics, labor-capital complementarity, scenario modeling (June 24)
 - [[entities/philiplaine-com]] — Philip Laine
 - [[entities/philipp-schmid]] — Philipp Schmid; enriched with Gemini Android Computer Use guide — screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script (June 25)
-- [[entities/pi]] — Pi (pi-coding-agent)
+- [[entities/pi]] — Pi (pi-coding-agent); Zach Mueller's "Model Memo" deep research pipeline migration from Claude Code to Pi with GLM-5.2 + Kimi K2.7 Code (July 13)
 - [[entities/pi-serini]] — PI-SERINI
 - [[entities/piero-kauffmann]] — Piero Kauffmann
 - [[entities/pinecone]] — Pinecone
@@ -841,7 +841,7 @@
 - [[entities/yohei-nakajima]] — Yohei Nakajima
 - [[entities/yoonho-lee]] — Yoonho Lee
 - [[entities/ysymyth]] — ysymyth
-- [[entities/zach-mueller]] — Zach Mueller
+- [[entities/zach-mueller]] — Zach Mueller; "Learning pi through force" — Model Memo deep research pipeline migration from Claude Code to Pi (July 13)
 - [[entities/zach-tratar]] — Zach Tratar
 - [[entities/zaimiri]] — Zaimiri
 - [[entities/zakirullin]] — Artem Zakirullin — Software Architect and author of 'Cognitive load is what matters,' a widely-cited framework (12K+ ...

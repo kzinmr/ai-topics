@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md
   - raw/articles/2026-06-08_x-article_pi-new-approval-system.md
   - raw/articles/2026-07-11_rasyidanaf_vim-of-coding-agents.md
+  - raw/articles/2026-07-13_muellerminute_learning-pi-through-force.md
 related:
   - "[[entities/openclaw]]"
   - "[[entities/claude-code]]"
@@ -309,6 +310,33 @@ This is not Pi-specific. Other coding agents also inject `AGENTS.md`/`CLAUDE.md`
 | **Codex CLI** | Default command approval | Same as Claude Code |
 
 However, command-approval systems may still miss attacks if the user habitually approves commands. Pi's project-level approach targets the root cause: untrusted `AGENTS.md` files in cloned repositories.
+
+## Real-World Pipeline Migration: Model Memo (July 2026)
+
+[[entities/zach-mueller|Zach Mueller]] (HF Accelerate lead) documented migrating his **"Model Memo" deep research pipeline** from Claude Code to Pi, demonstrating Pi's viability for complex multi-model agentic workflows ([Mueller Minute, 2026-07-13](raw/articles/2026-07-13_muellerminute_learning-pi-through-force.md)).
+
+### Pipeline Architecture
+
+Mueller's pipeline performs tiered source verification (T1: HF/blogs/papers → T2: inference providers/tweets → T3: everything else) to generate 15–20 page model analysis reports with inline citations. On Pi, the architecture uses:
+
+- **Driver/orchestrator**: [[concepts/glm-5-2|GLM-5.2-NVFP4]] (via 8×B200 node)
+- **Subagent retriever**: [[concepts/kimi-k2-7-code|Kimi K2.7 Code]] — parallel fetching + summarization
+- **Pi plugins**: `pi-subagents` (subagent role/model definitions), `pi-lens` (language-aware file info), `pi-mcp-adapter`
+
+### Self-Improvement Loop
+
+Mueller defined a reward structure: Claude Code output as gold standard, with Fable/Sol judges scoring on completeness, hallucinations, and preference. GLM-5.2 iteratively tweaked its own prompts across 3–4 loops. Key finding: storing full articles on disk (not just summaries) eliminated lossy information.
+
+### Results
+
+- Claude Code pipeline: ~20 min, 21 pages
+- Pi pipeline: 30–40 min, 36 pages — more information-dense, preferred prose
+- **Cost**: pennies vs Claude API pricing
+- **Tradeoff**: slower but more controllable; context bloat manageable with 256K window
+
+### Open Source
+
+Pipeline scripts, skills, and model memos available at [github.com/muellerzr/learning-pi-through-force](https://github.com/muellerzr/learning-pi-through-force).
 
 ## Latest (May 2026)
 
