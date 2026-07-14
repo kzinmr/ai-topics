@@ -7,7 +7,8 @@ tags:
   - ai-agents
   - training
 aliases: ["The Bitter Lesson of Agent Harnesses", "Agent Frameworks Philosophy"]
-sources: []
+sources:
+  - Claire — "How to Build a Custom AI Harness with the Claude Agent SDK for Bug Triage" (How I AI / Lenny's Podcast, July 2026)
 ---
 
 # Agent Harnesses
@@ -97,6 +98,34 @@ async def done(message: str) -> str:
 > Start with maximal capability, then restrict.
 
 Rather than building guardrails and constraints first, give the LLM near-human freedom, then layer on safety/structure based on evaluation data. This inverts the traditional approach of starting narrow and gradually expanding.
+
+## Practical Harness Construction Patterns
+
+This section bridges the Bitter Lesson's philosophical minimalism with real-world production harness construction. These patterns come from Claire's work building a custom AI harness for Sentry bug triage using the Claude Agent SDK.
+
+### Opinionated Tool Adapters
+
+General-purpose MCP access exposes too many actions. Instead, build custom adapters that expose only task-relevant operations. Example: a Sentry bug-triage adapter fetches only trace IDs, error counts, and affected users — not every Sentry action. This reduces model confusion and token waste.
+
+### Permission Encoding in Harness
+
+Encode permissions at the harness level rather than in each prompt: an 'investigate-only' flag means the agent can read and analyze but not modify. This eliminates repetitive permission negotiation and reduces safety surface.
+
+### Structured Artifacts
+
+Every run produces a standard artifact set: task log (what happened), Sentry brief (key findings), worker report (detailed analysis), HTML summary (visual for stakeholders). These create an inspectable audit trail for each run.
+
+### Multi-Model Routing
+
+Route each step to the optimal model: Claude for reasoning-intensive analysis, GPT for speed-sensitive tasks. The harness selects the model per-step rather than per-session.
+
+### Key Insight
+
+> "A harness is just code around an AI agent — nothing more mysterious than that. Cursor is a complex harness. Claude Code is a complex harness. Yours can be eight files and a terminal UI."
+
+### Sources
+
+- Claire — "How to Build a Custom AI Harness with the Claude Agent SDK for Bug Triage" (How I AI / Lenny's Podcast, July 2026)
 
 ## Related Concepts
 

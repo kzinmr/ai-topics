@@ -38,6 +38,7 @@ sources:
   - raw/articles/2026-06-25_openai-agents-transforming-work.md
   - raw/papers/2026-06-25_openai-shift-to-agentic-ai.md
   - raw/articles/2026-07-11_theo_gpt-5-6-sol-without-hitting-limits.md
+  - raw/newsletters/2026-07-14-ainews-codex-usage-up-10x-in-6-months-to-7m-users-1m-in-the-past-day-did-codex-o.md
 ---
 
 # OpenAI Codex
@@ -393,12 +394,17 @@ GPT-5.6 runs much longer than GPT-5.5 — it benefits from explicit stop boundar
 | Mid-March 2026 | 2M | Thibault Sottiaux (Codex lead) |
 | April 8, 2026 | **3M** | Announced by Sam Altman. Codex lead Thibault Sottiaux confirmed "from 2M less than a month ago" |
 | April 22, 2026 | **4M** | WSJ reporting. +1M in 2 weeks |
+| July 13, 2026 | **7M** | Thibault Sottiaux (Codex lead). +1M in the previous ~24 hours from 6M on July 12 |
 
 On April 8, 2026, Sam Altman announced Codex surpassed 3M weekly active users and reset usage limits. He stated plans to repeat resets at each 1M increment until reaching 10M users. Codex lead Thibault Sottiaux confirmed the rapid growth was "from 2M less than a month ago."
 
 Post-GPT-5.5 launch (April 2026), Codex's momentum accelerated. On April 22, WSJ reported 4M WAU — a net gain of 1M in 2 weeks. OpenAI partnered with Accenture, Capgemini, and PwC to formalize enterprise Codex sales.
 
 Sources: [Business Today — Codex 3M WAU](https://www.businesstoday.in/technology/story/openai-codex-celebrates-3-million-weekly-users-ceo-sam-altman-resets-usage-limits-524717-2026-04-08), [WSJ — OpenAI Working With Consultants to Sell Codex](https://www.wsj.com/cio-journal/openai-is-working-with-consultants-to-sell-codex-f355b1b9), [Gradually AI — Codex Statistics 2026](https://www.gradually.ai/en/codex-statistics/)
+
+On July 13, 2026, Codex lead Thibault Sottiaux announced Codex had surpassed 7M weekly active users — a 10x increase from 550K-700K in January 2026. The user base grew by approximately 1M users in the 24 hours between July 12 (6M) and July 13 (7M). This compares to Claude Code's ~2M users at $2.5B ARR as of February 2026.
+
+Sources: [AINews — Codex 7M Users](https://open.substack.com/pub/swyx/p/ainews-codex-usage-up-10x-in-6-months)
 
 ## Competitive Comparison
 
@@ -409,6 +415,16 @@ Sources: [Business Today — Codex 3M WAU](https://www.businesstoday.in/technolo
 | Autonomy | High (hours) | High (Auto Mode) | Medium |
 | Compaction | ✅ First-class | — | — |
 | Record & Replay | ✅ macOS demonstration → skill | — | — |
+
+### Cost-per-Task Competition (July 2026)
+
+The coding agent competitive landscape shifted from token pricing to cost-per-task metrics. The skirano coding-agent index explorer emerged for cross-agent cost comparison. Notable developments:
+
+- Terra Max matches or exceeds Fable 5 Max in score at significantly lower cost
+- Devin Fusion adopted Fable 5, achieving lower cost-per-task than Opus 4.8 through improvements in delegation and judgment
+- Arena ranked GPT-5.6 Sol #2 on agent leaderboard (7.8K real-world sessions)
+- Grok-4.5 jumped to #13
+- Artificial Analysis highlighted cost-per-task as the key emerging metric
 
 ## Related Topics
 

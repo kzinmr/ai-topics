@@ -1,0 +1,73 @@
+{
+  "run_id": "20260714T071044Z",
+  "triaged_at": "2026-07-14T07:15:00Z",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "summary": "3 newsletters processed. 1 critical (Codex growth), 2 high (GPT-5.6 review + agent harness, Apple v OpenAI). All links are redirect-wrapped — downstream wiki-ingest will need to resolve actual article URLs.",
+  "newsletters": [
+    {
+      "message_id": "<20260714012228.3.2c4c48daa14a2691@mg-d1.substack.com>",
+      "subject": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
+      "date": "2026-07-14",
+      "source": "swyx / AI News (Substack)",
+      "publication_id": "1084089",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-14-ainews-codex-usage-up-10x-in-6-months-to-7m-users-1m-in-the-past-day-did-codex-o.md",
+      "importance": "critical",
+      "wiki_relevance": "Directly covers coding agent market dynamics — OpenAI Codex growth trajectory (10x in 6 months, 7M users, +1M in one day) and market positioning vs Claude Code. Core topic for wiki entities (codex, claude-code) and concepts (coding-agent-market, agent-harness).",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-codex-usage-up-10x-in-6-months",
+      "article_count": 20,
+      "link_type": "substack_redirect",
+      "suggested_wiki_actions": [
+        "Update [[openai-codex]] entity with 7M user milestone and growth trajectory",
+        "Update [[claude-code]] entity with market comparison data",
+        "Create or update [[coding-agent-market]] concept with competitive landscape",
+        "Check if [[swyx]] entity exists; if not, create from newsletter source"
+      ],
+      "key_topics": ["openai-codex", "claude-code", "coding-agents", "market-growth", "developer-tools"]
+    },
+    {
+      "message_id": "<20260713150217.3.b983e7acd9d4c3fb@mg-d0.substack.com>",
+      "subject": "🎙️ How I AI: GPT-5.6 review, How a solo builder runs 24/7 local AI, and What an agent harness is and how to build…",
+      "date": "2026-07-13",
+      "source": "Lenny Rachitsky / How I AI (Substack)",
+      "publication_id": "10845",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-13-how-i-ai-gpt-5-6-review-how-a-solo-builder-runs-24-7-local-ai-and-what-an-agent-.md",
+      "importance": "high",
+      "wiki_relevance": "Covers three distinct wiki-relevant topics: (1) GPT-5.6 model review — new OpenAI model, (2) solo builder running 24/7 local AI — local inference deployment patterns, (3) agent harness concept and how to build one — directly relevant to wiki's agent harness knowledge base.",
+      "primary_url": "https://open.substack.com/pub/lenny/p/how-i-ai-gpt-56-review-how-a-solo",
+      "article_count": 20,
+      "link_type": "substack_redirect",
+      "suggested_wiki_actions": [
+        "Create or update [[gpt-5-6]] entity page (or [[gpt-5]] family page) with model review",
+        "Create or update [[agent-harness]] concept page with build-your-own content",
+        "Update [[local-ai-inference]] concept with solo builder 24/7 pattern",
+        "Check if [[lenny-rachitsky]] or [[how-i-ai]] entity exists"
+      ],
+      "key_topics": ["gpt-5-6", "agent-harness", "local-ai-inference", "openai", "solo-builders"]
+    },
+    {
+      "message_id": "<20260713.175236.f78d559e@mta38>",
+      "subject": "⚖️ Apple Drags OpenAI Into Court",
+      "date": "2026-07-13",
+      "source": "Beehiiv newsletter (source unknown — all links are beehiiv tracking redirects)",
+      "publication_id": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-13-apple-drags-openai-into-court.md",
+      "importance": "high",
+      "wiki_relevance": "Major industry legal event — Apple suing OpenAI. Relevant to wiki's coverage of AI industry dynamics, Apple-OpenAI relationship, and legal/regulatory landscape. However, all 20 links are beehiiv tracking redirects with no extractable article URL — downstream ingest needs to resolve at least one link to get the actual article content.",
+      "primary_url": null,
+      "article_count": 20,
+      "link_type": "beehiiv_redirect",
+      "suggested_wiki_actions": [
+        "Create event page for Apple v OpenAI lawsuit under [[events/]]",
+        "Update [[apple]] entity page with AI legal strategy",
+        "Update [[openai]] entity page with legal challenges",
+        "Create or update [[ai-litigation]] concept page"
+      ],
+      "key_topics": ["apple", "openai", "ai-litigation", "ai-industry", "legal"]
+    }
+  ],
+  "processing_notes": [
+    "All newsletter links are wrapped in tracking redirects (substack.com/redirect/*, link.mail.beehiiv.com/*). The downstream newsletter-wiki-ingest job must resolve these to actual article URLs before saving raw articles.",
+    "The beehiiv newsletter ('Apple Drags OpenAI Into Court') has no identifiable publication name — all 20 links are generic beehiiv tracking URLs. Recommend web-searching the subject line to find the original article if link resolution fails.",
+    "The AINews newsletter from swyx is the highest priority for wiki — direct coding agent market data that should update existing entity pages."
+  ]
+}

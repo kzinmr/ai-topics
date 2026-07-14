@@ -33,7 +33,8 @@
 - [[entities/alex-banks]] — Alex Banks; enriched with "You're Underestimating AI on Purpose" — AI Perception Paradox, Amara's Law, the AI Effect and systematic underestimation of AI progress (June 27)
 - [[entities/alex-cheema]] — Alex Cheema
 - [[entities/alex-chernysh]] — Alex Chernysh
-- [[entities/alex-imas]] — Alex Imas — Director of AGI Economics at Google DeepMind; relational sector scarcity, behavioral economics of AI (June 24)
+- [[entities/alex-finn]] — Alex Finn — solo builder with 24/7 local AI fleet and automated software factory
+- [[entities/alex-imas]] — Alex Imas — Director of AGI Economics at Google DeepMind
 - [[entities/alex-imus]] — Alex Imas
 - [[entities/alex-volkov]] — Alex Volkov (@altryne)
 - [[entities/alex-zhang]] — Alex L. Zhang
@@ -880,7 +881,7 @@
 - [[concepts/agent-first-codebase-design]] — Agent-First Codebase Design
 - [[concepts/agent-first-design]] — Agent-First Design
 - [[concepts/agent-harness-primitives]] — Agent Harness Primitives
-- [[concepts/agent-harnesses]] — Agent Harnesses — Design patterns and runtime infrastructure for building reliable, long-running AI agents
+- [[concepts/agent-harnesses]] — Agent Harnesses — Bitter Lesson philosophy, practical construction patterns (opinionated adapters, permission encoding, structured artifacts, multi-model routing)
 - [[concepts/agent-integration-platforms]] — Agent Integration Platforms — middleware for connecting AI agents to SaaS tools (Nango, Composio, Arcade)
 - [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
 - [[concepts/agent-media]] — Design philosophy for evolving a structured knowledge base (wiki) into an audience-aware, multi-channel distribution ...

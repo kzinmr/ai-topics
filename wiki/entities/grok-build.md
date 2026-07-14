@@ -1,7 +1,7 @@
 ---
 title: Grok Build
 created: 2026-05-27
-updated: 2026-05-29
+updated: 2026-07-14
 type: entity
 tags:
   - entity
@@ -11,7 +11,7 @@ tags:
   - ai-agents
   - developer-tooling
   - agent-sdk
-sources: [raw/newsletters/2026-05-28-gbrain.md]
+sources: [raw/newsletters/2026-05-28-gbrain.md, raw/newsletters/2026-07-14-ainews-codex-usage-up-10x-in-6-months-to-7m-users-1m-in-the-past-day-did-codex-o.md]
 ---
 
 # Grok Build
@@ -49,6 +49,16 @@ Grok Build enters a crowded coding agent market alongside Claude Code, Codex, an
 
 Grok Build was one of the coding agents identified as vulnerable to the [[events/trustfall-symlink-rce-2026|TrustFall + Symlink RCE]] attack disclosed by Adversa AI in May 2026, affecting all major coding agents that use MCP auto-start. xAI had not responded to the vulnerability disclosure as of reporting.
 
+## Security Incidents
+
+### July 2026: Full Repository Upload Controversy
+
+In July 2026, security researchers at IntCyberDigest and @hrkrshnn alleged that Grok Build's CLI was uploading entire git repositories — including private code, secrets, and credentials — to xAI's Google Cloud buckets when processing coding tasks. The scope of uploads was reportedly broader than needed for the specific coding task.
+
+**xAI's response**: Teams using Zero Data Retention (ZDR) mode had no trace/code data retained. The `/privacy` command could disable retention and delete past data. However, critics noted the silent server-side mitigation and the lack of transparent retention/deletion guarantees.
+
+**Related**: [[events/trustfall-symlink-rce-2026]] — prior security concern affecting Grok Build
+
 ## Related Pages
 
 - [[entities/xai]] — xAI company
@@ -57,3 +67,4 @@ Grok Build was one of the coding agents identified as vulnerable to the [[events
 - [[entities/github-copilot]] — GitHub Copilot
 - [[concepts/coding-agents/coding-agents]] — AI coding agents concept
 - [[events/trustfall-symlink-rce-2026]] — shared MCP vulnerability
+- [[entities/grok-build#security-incidents]] — repository upload privacy controversy (July 2026)

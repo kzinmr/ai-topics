@@ -16,6 +16,7 @@ sources:
   - raw/articles/simonwillison.net--2026-jul-9-gpt-5-6--b29dbe02.md
   - raw/articles/9to5mac.com--2026-07-09-openai-announcing-the-next-chapter-for-chatgpt-to--a8f56e74.md
   - raw/newsletters/2026-07-10-ainews-openai-launches-gpt-5-6-sol-terra-luna-codex-becomes-chatgpt-superapp.md
+  - raw/newsletters/2026-07-14-ainews-openai-gpt-5-6-operational-fixes.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)
@@ -136,6 +137,16 @@ OpenAI temporarily removed the 5-hour usage limit restriction for all Plus, Busi
 3. Usage reset for all users
 
 OpenAI reported **6M active users** as of this date, signaling rapid adoption since the July 9 general availability launch.
+
+### Operational Fixes (Jul 13-14, 2026)
+
+The Codex/Codex Work team rolled out multiple fixes for GPT-5.6 Sol after usage ramp:
+
+- **Context limit rollback**: Reduced from 372K to 272K tokens after billing/usage side effects at the higher limit (per @thsottiaux)
+- **Inference optimizations**: ~10% improvement in effective usage per query
+- **Juice changes reverted**: Some experimental reasoning-effort ('juice') adjustments rolled back
+- **Multi-agent fixes**: Corrected overactive subagent spawning behavior
+- **Arena ranking**: GPT-5.6 Sol ranked #2 on the agent leaderboard with 7.8K real-world sessions
 
 ### Competitive Impact on Anthropic
 The aggressive availability strategy has put pressure on [[entities/fable]], where Anthropic continues to restrict Fable 5 access on paid plans due to compute constraints. Simon Willison noted (Jul 12, 2026) that "OpenAI are winning users simply due to the uncertainty that surrounds Fable access."

@@ -25,6 +25,7 @@ sources:
   - "[[raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions]]"
   - "[[raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agents]]"
   - raw/newsletters/2026-05-28-i-signed-up-for-another-saas.md
+  - https://www.latent.space/p/ainews
   - "[[raw/articles/2026-06-03_anthropic_claude-code-feedback-loops]]"
 ---
 
@@ -55,11 +56,14 @@ Achieves 72.7% on SWE-bench Verified. As of April 2026, the industry-leading cod
 
 | Metric | Value |
 |--------|-------|
-| SWE-bench Verified | 72.7% (vs Codex 69.1%) |
-| Deployment frequency increase | **7.6x** |
-| AI adoption across employees | **89%** |
-| Feature delivery speed | **2x faster** |
-| Incident investigation speed | **80% faster** |
+|| SWE-bench Verified | 72.7% (vs Codex 69.1%) |
+|| Deployment frequency increase | **7.6x** |
+|| AI adoption across employees | **89%** |
+|| Feature delivery speed | **2x faster** |
+|| Incident investigation speed | **80% faster** |
+|| Users | ~2M (Feb 2026), $2.5B ARR |
+
+In February 2026, Anthropic reported approximately 2M weekly active Claude Code users and $2.5B annualized recurring revenue. Weekly active Claude Code users had doubled since January 1, 2026. In comparison, OpenAI Codex reached 7M users by July 2026 — a 10x increase from 550-700K in January.
 
 ## Comparisons
 

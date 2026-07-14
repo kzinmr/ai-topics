@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+| 2026-07-14 | entities/claude-code.md | updated | Added 2M users / $2.5B ARR metrics to Key Metrics
+
+| 2026-07-14 | concepts/vllm.md | updated | Added HuggingFace Transformers integration section — native vLLM speed
+| 2026-07-14 | concepts/agent-harnesses.md | updated | Added Practical Harness Construction Patterns section — opinionated adapters, permission encoding, structured artifacts, multi-model routing
+
+| 2026-07-14 | entities/alex-finn.md | created | Alex Finn — solo builder with 24/7 local AI fleet and automated software factory
+
+---
+
 ## [2026-07-14 07:00 UTC] Blog Ingest — 20 articles scanned, 17 saved
 
 ### Raw Articles Saved (17)

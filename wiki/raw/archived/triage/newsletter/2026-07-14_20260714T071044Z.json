@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-07-14T07:24:26.550941+00:00",
+  "triage_run_id": "20260714T071044Z",
+  "source": "newsletter",
+  "summary_ja": "3ニュースレターを処理。How I AI（Lenny's Podcast）からGPT-5.6 Sol実践レビュー・Alex Finnの24時間ローカルAI Fleet・カスタムAgent Harness構築の3トピックを抽出。AINews（swyx）からCodex 7Mユーザー突破・Grok Buildプライバシーインシデント・コストパフォーマンス競争のトピックを抽出。Apple v OpenAI訴訟は既存Wikiページでカバー済み。主要なギャップはCodex 700万ユーザー、Agent Harness実践的構築法、Grok Buildコード漏洩インシデント。",
+  "decisions": [
+    {
+      "item_id": "<20260714012228.3.2c4c48daa14a2691@mg-d1.substack.com>-claude-code-metrics",
+      "source": "newsletter",
+      "source_name": "AINews (swyx / Latent Space)",
+      "title": "Claude Code Usage: ~2M Users, $2.5B ARR (Feb 2026)",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-codex-usage-up-10x-in-6-months",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-14-ainews-codex-usage-up-10x-in-6-months-to-7m-users-1m-in-the-past-day-did-codex-o.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/claude-code.mdにClaude Codeのユーザー数（2M）とARR（$2.5B）の具体値が未記載。SWE-benchスコアやデプロイ頻度改善率はあるが、マーケット比較用の指標が不足。entities/claude-code.mdのKey Metrics節に追記候補。Codex 7Mとの対比で価値がある。",
+      "candidate_wiki_path": "entities/claude-code.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-14\n**Subject:** [AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??\n**Collected:** 2026-07-14T07:10:42.817616+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9"
+    },
+    {
+      "item_id": "<20260713150217.3.b983e7acd9d4c3fb@mg-d0.substack.com>-gpt56-review",
+      "source": "newsletter",
+      "source_name": "How I AI (Lenny's Podcast)",
+      "title": "GPT-5.6 Sol Benchmark & Game-Changing Workflows vs Fable",
+      "url": "https://www.chatprd.ai/how-i-ai/my-gpt-56-sol-benchmark-game-changing-workflows",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-13-how-i-ai-gpt-5-6-review-how-a-solo-builder-runs-24-7-local-ai-and-what-an-agent-.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ GPT-5.6 Solの実践的レビュー。既存のconcepts/gpt/gpt-5-6.mdは公式ベンチマーク・METR評価・価格情報をカバー済み。Claireの5カテゴリ実践ベンチマーク（PRD, prototype, wireframe, debug, agentic voice）はSolがFableより実践的に優れる理由を示す具体的な定性評価を提供。森林緑バイアス（forest green tell）、Sol→Terra→Sonnet 5の使い分け、ビデオ編集Codexワークフロー、LinkedIn自動返信ブラウザ制御などの実践的ワークフローが新しい。concepts/gpt/gpt-5-6.mdのエンリッチ用リファレンス。",
+      "candidate_wiki_path": "concepts/gpt/gpt-5-6.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-13\n**Subject:** 🎙️ How I AI: GPT-5.6 review, How a solo builder runs 24/7 local AI, and What an agent harness is and how to build…\n**Collected:** 2026-07-14T07:10:40.417300+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0c"
+    },
+    {
+      "item_id": "<20260714012228.3.2c4c48daa14a2691@mg-d1.substack.com>-other-batch",
+      "source": "newsletter",
+      "source_name": "AINews (swyx / Latent Space)",
+      "title": "[AINews] Other Topics (Agent RL, Quantization, Security, Continual Learning)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-14-ainews-codex-usage-up-10x-in-6-months-to-7m-users-1m-in-the-past-day-did-codex-o.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 以下のAINewsトピックは既存Wikiでカバー済みまたは低価値：（1）Prime Intellect verifiers v1（message DAGs）→ entities/prime-intellect.mdに既存の詳細なverifiers v1節あり、（2）Quantization進展→既存の量子化手法カバレッジに対する軽微なアップデート、（3）GLM-5.2/Open coding→既存conceptsでカバー、（4）/r/LocalLlama recap→コミュニティ要約でWiki不適合、（5）Agentic security全般→既存のcoding-agent-securityページあり。一括スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-14\n**Subject:** [AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??\n**Collected:** 2026-07-14T07:10:42.817616+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9"
+    },
+    {
+      "item_id": "<20260713.175236.f78d559e@mta38>-batch-skip",
+      "source": "newsletter",
+      "source_name": "Beehiiv (unknown publication)",
+      "title": "⚖️ Apple Drags OpenAI Into Court",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-13-apple-drags-openai-into-court.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 全20リンクがbeehiiv tracking token期限切れ（HTTP 403）。件名「Apple Drags OpenAI Into Court」から2026年7月10日のApple vs OpenAI訴訟に関連する内容と推測されるが、既存のevents/apple-sues-openai-2026.mdが訴訟の全容（秘密情報窃取、Tang Tan/Chang Liu被告、サプライヤー操作）をカバー済み。新たな展開の可能性は否定できないが、URL解決不能のためコンテンツ確認不可。全20件を一括スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-13\n**Subject:** ⚖️ Apple Drags OpenAI Into Court\n**Collected:** 2026-07-14T07:10:41.650700+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/EqQ0uKitan0C%2Fc1NfNqBL2i4ZCHIkYcn1KV9hksbKuobRMv1KaP72PYeFzRQ%0AYs31t0gDNrvmGnK2%2FvDqaK50I"
+    }
+  ]
+}
