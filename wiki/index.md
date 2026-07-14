@@ -1850,7 +1850,7 @@
 - [[concepts/hermes-models]] — hermes-models
 - [[concepts/heterogeneous-intelligence]] — Heterogeneous Intelligence
 - [[concepts/high-frequency-software]] — High-Frequency Software — AI-Accelerated Software Business
-- [[concepts/hill-climbing-machine]] — Hill-Climbing Machine
+- [[concepts/hill-climbing-machine]] — Hill-Climbing Machine — Microsoft AI model development framework: integrated system of data pipelines, RL climbs, modified GRPO, no cold start
 - [[concepts/hisparse]] — HiSparse
 - [[concepts/hoard-things-you-know-how-to-do]] — Hoard Things You Know How to Do
 - [[concepts/homelab]] — Homelab

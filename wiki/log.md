@@ -1,5 +1,8 @@
 | 2026-07-14 | active-crawl | 3 pages created, 3 raw articles saved | Claude Code vs OpenCode token overhead comparison (687 pts HN), Mesh LLM distributed P2P inference (344 pts HN), Apple SpeechAnalyzer on-device API benchmark (541 pts HN)
 
+| 2026-07-14 | concepts/hill-climbing-machine.md | enriched | Hill-Climbing Machine expanded from stub to comprehensive page: integrated system components, three specialist RL climbs, modified GRPO, reward decomposition, 8K GB200 infrastructure
+  - Source: [[raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md]]
+
 | 2026-07-14 | comparisons/claude-code-vs-opencode-token-overhead.md | created | 33K vs 7K token overhead comparison; Systima measurement study; 4.7× gap on Sonnet 4.5
   - Source: [[raw/articles/2026-07-12_systima_claude-code-vs-opencode-token-overhead.md]]
 
