@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-07-10
+updated: 2026-07-14
 type: entity
 tags:
   - company
@@ -21,6 +21,7 @@ sources:
   - raw/articles/sierra.ai--blog-discovering-what-s-possible-with-ai-for-cx--904ecc1f.md
   - raw/articles/2025-08-19_sierra_simulations-the-secret-behind-every-great-agent.md
   - raw/articles/sierra.ai--blog-ai-pilling-our-company-lessons-learned--168c9b80.md
+  - raw/articles/sierra.ai--blog-announcing-our-partnership-with-softbank-corp--4a150bd0.md
 ---
 
 # Sierra
@@ -133,9 +134,22 @@ Sierra published a detailed account of how they internally deployed AI across th
 
 > *"The 1968 study found a 10X gap between the best and the rest — and for fifty years, the only answer was to go hunt for those rare people. Now there's a better one: give everyone an agent so they have the advantages of the few."*
 
+### SoftBank Partnership — Japan Market Entry (July 2026)
+
+Sierra announced a strategic partnership with **SoftBank Corp.**, Japan's leading telecommunications and IT operator, making SoftBank its **exclusive sales partner in Japan**. Key details:
+
+- **LINEMO deployment**: SoftBank's online-exclusive mobile brand already uses Sierra. Results: **97% inquiry resolution rate**, **93% customer satisfaction** (vs previous solution)
+- **Expansion plans**: SoftBank plans to extend Sierra across its flagship SoftBank and Y!mobile brands, plus additional group company services
+- **Opera Tech acquisition**: Sierra acquired Opera Tech earlier in 2026 and opened its first Tokyo office, establishing physical presence in Japan
+- **SoftBank Vision Fund 2** is also an investor in Sierra
+
+The partnership reflects Sierra's strategy of entering markets with high customer service expectations through local partners. Japan's *omotenashi* (anticipating customer needs with genuine care) philosophy directly influenced Sierra's product design. This marks Sierra's first major international expansion beyond its US base, targeting Japan's sophisticated enterprise market.
+
+Source: [[raw/articles/sierra.ai--blog-announcing-our-partnership-with-softbank-corp--4a150bd0]]
+
 ## Significance
 
-Sierra's valuation ($15B) and ARR growth ($200M+) make it one of the highest-valued AI application companies, demonstrating that the enterprise AI agent market has reached material scale. Its 50-75x revenue multiple reflects investor expectations that AI agents will capture significant market share from traditional SaaS and human-staffed services.
+Sierra's valuation ($15B+) and ARR growth ($200M+) make it one of the highest-valued AI application companies, demonstrating that the enterprise AI agent market has reached material scale. Its 50-75x revenue multiple reflects investor expectations that AI agents will capture significant market share from traditional SaaS and human-staffed services.
 
 ## Related
 

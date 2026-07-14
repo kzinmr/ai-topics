@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-07-14T18:07:04.199840+00:00",
+  "triage_run_id": "20260714T180034Z",
+  "source": "dreaming",
+  "summary_ja": "サチュレーション日。収集記事1件（非AIポッドキャスト）、raw/articles 190件。ファイルシステムスキャンでSierra+SoftBank提携を1件テイク。Merge.dev AI Agent Governance/MCP Governance（merge-dev.mdにカバー済み）、Hex Technologies context engineering（既存ページあり）、Hebbia/ElevenLabs/Krebs/ArsTechnicaはすべてスキップ。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-hex-context-engineering",
+      "source": "dreaming",
+      "source_name": "hex.tech",
+      "title": "Context Engineering Best Practices: A Hands-On Guide",
+      "url": "https://hex.tech/blog/context-engineering-best-practices/",
+      "raw_path": "wiki/raw/articles/2026-07-14_hex-technologies_context-engineering-best-practices.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ concepts/harness-engineering/context-engineering.mdとconcepts/harness-engineering/system-architecture/context-engineering.mdが既存。Hex Technologies entity pageも存在。AI analytics特化のベストプラクティスだが、既存カバー範囲内。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Context Engineering Best Practices: A Hands-On Guide\n**Source**: [https://hex.tech/blog/context-engineering-best-practices/](https://hex.tech/blog/context-engineering-best-practices/)\nSkip to main content\n📊\nAI analytics use case:\nhow Mercor unlocked $100M in revenue\n🤯\nGenerative data apps:\nGorgeou"
+    },
+    {
+      "item_id": "dreaming-skip-hex-ai-sprawl",
+      "source": "dreaming",
+      "source_name": "hex.tech",
+      "title": "AI Sprawl: Causes, Risks & 7-Step Control Plan",
+      "url": "https://hex.tech/blog/ai-sprawl/",
+      "raw_path": "wiki/raw/articles/2026-07-14_hex-technologies_ai-sprawl.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Enterprise AI governance系トピック。既存のAI agent governance/conceptsページでカバー範囲。Hex Technologies entity pageにAI analytics governance情報あり。新規性低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# AI Sprawl: Causes, Risks & 7-Step Control Plan\n**Source**: [https://hex.tech/blog/ai-sprawl/](https://hex.tech/blog/ai-sprawl/)\nSkip to main content\n📊\nAI analytics use case:\nhow Mercor unlocked $100M in revenue\n🤯\nGenerative data apps:\nGorgeous, interactive dashboards and apps you can build with ju"
+    },
+    {
+      "item_id": "dreaming-skip-hebbia-strategist",
+      "source": "dreaming",
+      "source_name": "hebbia.com",
+      "title": "Why I Joined Hebbia as Principal AI Strategist",
+      "url": "https://www.hebbia.com/blog/why-i-joined-hebbia-as-principal-ai-strategist",
+      "raw_path": "wiki/raw/articles/2026-07-14_hebbia_why-i-joined-hebbia-as-principal-ai-strategist.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ entities/hebbia.mdが既存。「Why I joined」ブログ記事、軽微な人事ニュース。Avi Upreti（投資銀行10年経験）のPrincipal AI Strategist就任。新規性・技術的洞察低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Why I Joined Hebbia as Principal AI Strategist\n**Source**: [https://www.hebbia.com/blog/why-i-joined-hebbia-as-principal-ai-strategist](https://www.hebbia.com/blog/why-i-joined-hebbia-as-principal-ai-strategist)\nCompany\nBy Avi Upreti\n07.07.26\nWhy I Joined Hebbia as Principal AI Strategist\nAvi brin"
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-ai-calling",
+      "source": "dreaming",
+      "source_name": "elevenlabs.io",
+      "title": "What is AI calling and how does it work? AI call guide",
+      "url": "https://elevenlabs.io/blog/what-is-ai-calling",
+      "raw_path": "wiki/raw/articles/2026-07-14_elevenlabs_what-is-ai-calling.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ entities/elevenlabs.mdが既存。AI calling概要ガイド記事、新機能発表ではなく解説コンテンツ。既存ElevenLabs entity pageのカバー範囲。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# What is AI calling and how does it work? AI call guide\n**Source**: [https://elevenlabs.io/blog/what-is-ai-calling](https://elevenlabs.io/blog/what-is-ai-calling)\nBlog\nResources\nWhat is AI calling? Inbound, outbound, and customer support\nWritten by\nJack\nLimebear\nPublished\nJul 13, 2026\nListen\nListen"
+    },
+    {
+      "item_id": "dreaming-skip-arstechnica-musk-apple-openai",
+      "source": "dreaming",
+      "source_name": "arstechnica.com",
+      "title": "Elon Musk sues Apple, OpenAI to block exclusive deal",
+      "url": "https://arstechnica.com/tech-policy/2025/08/elon-musk-sues-apple-openai-to-block-exclusive-deal/",
+      "raw_path": "wiki/raw/articles/arstechnica.com--tech-policy-2025-08-elon-musk-sues-apple-openai-to-block-exc--03034646.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ events/openai-musk-trial-verdict-2026.mdが既存。2025年8月の訴訟記事、2026年の裁判結果ページでカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Elon Musk sues Apple and OpenAI, revealing his panic over OpenAI dominance\nSource: https://arstechnica.com/tech-policy/2025/08/elon-musk-sues-apple-openai-to-block-exclusive-iphone-chatgpt-integration/\n“There is no telling how long this exclusive arrangement will last,” X said, warning the court t"
+    }
+  ]
+}

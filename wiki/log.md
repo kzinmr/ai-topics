@@ -1,3 +1,8 @@
+| 2026-07-14 18:00 UTC | dreaming | Saturation day — 1 take (Sierra+SoftBank), filesystem scan of 190 raw articles |
+  - Enriched: [[entities/sierra.md]] — SoftBank Corp. partnership (exclusive Japan sales partner), LINEMO 97% resolution/93% CSAT, Opera Tech acquisition, Tokyo office
+  - Skipped: Merge.dev AI agent governance + MCP governance (already in merge-dev.md), Hex Technologies context engineering (existing context-engineering pages), Hebbia strategist (light content), ElevenLabs AI calling (guide article), Krebs CISA leak (tangential), ArsTechnica Musk/Apple/OpenAI (events page exists)
+  - Source: [[raw/articles/sierra.ai--blog-announcing-our-partnership-with-softbank-corp--4a150bd0]]
+
 | 2026-07-14 | active-crawl | 3 pages created, 3 raw articles saved | Claude Code vs OpenCode token overhead comparison (687 pts HN), Mesh LLM distributed P2P inference (344 pts HN), Apple SpeechAnalyzer on-device API benchmark (541 pts HN)
 
 | 2026-07-14 | concepts/hill-climbing-machine.md | enriched | Hill-Climbing Machine expanded from stub to comprehensive page: integrated system components, three specialist RL climbs, modified GRPO, reward decomposition, 8K GB200 infrastructure

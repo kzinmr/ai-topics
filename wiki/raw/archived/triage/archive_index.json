@@ -36,6 +36,7 @@
     "https://apnews.com/article/greece-germany-ryanair-passenger-457c424f541152af1becdb387c90cfdd",
     "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
     "https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/",
+    "https://arstechnica.com/tech-policy/2025/08/elon-musk-sues-apple-openai-to-block-exclusive-deal/",
     "https://arstechnica.com/tech-policy/2025/08/elon-musk-sues-apple-openai-to-block-exclusive-iphone-chatgpt-integration/",
     "https://artificialanalysis.ai/speech-to-text/non-streaming",
     "https://arxiv.org/abs/2605.20049",
@@ -263,6 +264,7 @@
     "https://elevenlabs.io/blog/warsaw-summit-homecoming",
     "https://elevenlabs.io/blog/webinar-recap-deploying-agents-across-every-channel",
     "https://elevenlabs.io/blog/webinar-recap-give-your-text-chatbot-a-voice-that-sounds-human",
+    "https://elevenlabs.io/blog/what-is-ai-calling",
     "https://elevenlabs.io/blog/what-is-an-ai-voice-agent",
     "https://eli.thegreenplace.net/2026/dot-product-component-vs-geometric-definition/",
     "https://eli.thegreenplace.net/2026/notes-on-fourier-series/",
@@ -402,6 +404,8 @@
     "https://hex.tech",
     "https://hex.tech/blog/",
     "https://hex.tech/blog/ai-analytics-adoption-risks",
+    "https://hex.tech/blog/ai-sprawl/",
+    "https://hex.tech/blog/context-engineering-best-practices/",
     "https://hex.tech/blog/data-literacy-vs-data-fluency",
     "https://hex.tech/blog/data-visualization-techniques",
     "https://hex.tech/blog/etl-pipeline",
@@ -1404,6 +1408,7 @@
     "https://www.harvey.ai/blog/us-case-law-source",
     "https://www.hebbia.com/blog/every-data-integration-one-view",
     "https://www.hebbia.com/blog/whats-new-july-disclosure-2026",
+    "https://www.hebbia.com/blog/why-i-joined-hebbia-as-principal-ai-strategist",
     "https://www.independent.co.uk/news/business-news/carlsberg-probably-not-best-beer-in-world/",
     "https://www.independent.co.uk/news/business/news/carlsberg-probably-not-best-beer-in-world-lager-brewer-a8874016.html",
     "https://www.instagram.com/getsuperintel",
@@ -1622,5 +1627,5 @@
     "https://xeiaso.net/shitposts/no-way-to-prevent-this/supply-chain/2026-redhat-javascript-clients/",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-07-14T07:38:14.904898+00:00"
+  "updated": "2026-07-14T18:07:04.200273+00:00"
 }
