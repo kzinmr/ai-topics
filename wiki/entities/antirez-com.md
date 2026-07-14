@@ -2,12 +2,13 @@
 title: "Salvatore Sanfilippo (antirez)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-06-08
+updated: 2026-07-14
 type: entity
 sources:
   - raw/articles/antirez.com--news-166--c7f12317.md
   - raw/articles/antirez.com--news-167--b10c3d4e.md
   - raw/articles/antirez.com--news-168--a2772c92.md
+  - raw/articles/antirez.com--news-169--1ef2a41d.md
 ---
 
 # Salvatore Sanfilippo (antirez)
@@ -283,6 +284,67 @@ antirez argues that automatic QA may raise the bar for software quality and comp
 
 #### Source
 - raw/articles/antirez.com--news-168--a2772c92.md
+
+### Control the Ideas, Not the Code (July 2026)
+
+In \"Control the ideas, not the code\" (July 2026), antirez argues that reviewing every line of AI-generated code is becoming counterproductive — and that programmers who fail to shift their focus from code to ideas are reducing their impact.
+
+#### Core Thesis
+
+> \"If you control the ideas of your software, looking at the code itself is suboptimal and often pointless.\"
+
+antirez identifies three structural reasons why line-by-line code review no longer scales:
+
+1. **Volume**: LLMs generate 5,000+ lines of code per day — line-by-line review is physically impossible
+2. **LLMs are locally optimal, weak on big ideas**: Scanning function-by-function misses the point. The programmer's real value is in understanding the architecture, evaluating design decisions, and asking \"how does this part work?\" rather than reading every line
+3. **The 8-hour day is a tradeoff**: Every hour spent reviewing code is an hour not spent on design thinking, QA, feature ideation, and optimization — the activities that now deliver the most value
+
+#### The Mythical Man Month Returns
+
+> \"A book from the 70s tells us more things about the current software era than many of the things that were said from 2000 to 2020.\"
+
+The \"control the ideas\" concept from Brooks's 1975 classic is more relevant today than at any point in the intervening decades. antirez asks why people protesting AI were not horrified by the state of software before AI — pointing to the \"unbelievable level of slop\" in the pre-AI era.
+
+#### The DS4/DwarfStar Experience
+
+While building a local inference engine for DeepSeek V4 and GLM 5.2, antirez learned that rigorous domain knowledge combined with automated testing is far more effective than hand-writing GPU kernels. He found subtle attention implementation errors in other systems — issues that accumulated and damaged model output, such as broken indexed attention implementations causing performance slopes beyond certain context limits.
+
+> \"This is the result of a domain that is very complicated to handle, fast changing... It's an unfair game for developers. Well: AI helps a lot with that.\"
+
+He concludes that rigorous engineering on the design side, combined with testing, is \"far better than writing a GPU kernel by hand (or reading it).\"
+
+#### Redis Code Review: Increasingly Ceremonial
+
+Responding to Matteo Collina's question about whether he checks all AI-generated Redis code, antirez admits: yes, he does, but believes it is \"mostly pointless.\" With GPT-5.5, Fable, and GPT-5.6 Sol, manually reviewing every line is increasingly ceremonial. Code from other Redis contributors was \"far worse\" than AI output — much of the difference is a matter of taste, not correctness.
+
+> \"Nobody should anymore look at this code, but only at the ideas the code contains.\"
+
+Instead of reviewing code, antirez envisions writing **DESIGN.md files** where each data structure is described in human language — the ideas it contains, the implementation tricks, the design. Future programmers would read the design, own the ideas, and direct agents with the right mental model.
+
+#### Fable and GPT-5.6 Sol: Better Reviewers Than Humans
+
+> \"Fable and GPT 5.6 reviews to the sorted sets memory saving are going to spot ways more errors and subtle race conditions that my review is going to uncover.\"
+
+The most advanced models are already surpassing human review in catching subtle bugs and race conditions.
+
+#### Concern for Junior Programmers
+
+antirez acknowledges a genuine concern: young programmers without enough experience to build a mental model. His advice:
+
+- **Do learn**: How to write programs — implement a small interpreter, a small database, a hash table
+- **Don't waste time**: Reviewing boilerplate JavaScript for a customer website is not the path to understanding
+- The question remains open whether juniors need to understand every line of AI-generated code, but the path to building that understanding is through first-principles projects, not code review
+
+#### Significance
+
+- Represents antirez's most radical statement yet on AI-assisted programming — moving from \"AI as a partner\" to \"ideas over code\" as the organizing principle
+- Directly challenges the professional identity of programmers who define their work by code authorship
+- Proposes DESIGN.md as a new artifact type that captures the intellectual content of software independently of its implementation
+- Connects concrete experience (DS4/DwarfStar, Redis) to a general theory of software engineering in the AI era
+- Addresses the junior programmer concern that complicates the strong thesis
+
+#### Source
+- raw/articles/antirez.com--news-169--1ef2a41d.md
 
 
 - [[concepts/redis]] — His defining creation, the in-memory data store

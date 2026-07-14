@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-07-11
+updated: 2026-07-14
 status: L3
 sources:
   - https://pluralistic.net/
@@ -14,6 +14,7 @@ sources:
   - raw/articles/pluralistic.net--2026-06-19-too-big-to-fact-check--8d26fef8.md
   - raw/articles/pluralistic.net--2026-06-29-arsonist-firefighters--46c8e06a.md
   - raw/articles/pluralistic.net--2026-07-10-posthuman-as-in-no-humans--67be2eae.md
+  - raw/articles/pluralistic.net--2026-07-13-go-meta-meta--d0727adf.md
 tags: [person]
 ---
 
@@ -117,6 +118,16 @@ In "[Gemini is better than search because Google enshittified search](https://pl
 - The solution is not better AI — it's unraveling the enshittification (Jedi Blue, ad-blocker killing in Chrome, SEO spam ranking)
 - References Kagi.com as proof Google *could* deliver good search results if it chose to: Kagi rents Google's index but applies its own ranking algorithm with a small team
 
+### The 'Go Meta' Economy — AI Companies as Picks-and-Shovel Sellers (July 2026)
+
+In "[Why aren't AI companies competing directly with their customers?](https://pluralistic.net/2026/07/13/go-meta-meta/)" (July 13, 2026), Doctorow uses Omar Khayyám's "go meta" concept — as framed by Douglas Rushkoff — to expose the contradiction at the heart of the AI industry:
+
+> "If you have a chatbot that can do a doctor's job, why sell it to a hospital? Why not just open your own hospital?"
+
+Doctorow argues that AI companies claim their models will replace doctors, teachers, lawyers, and accountants — yet they sell API access to those industries rather than competing in them directly. This is the 'go meta' economy: instead of creating value at the end-user level, AI companies sell picks and shovels to the very industries they claim to disrupt.
+
+**Analysis**: This argument extends Doctorow's broader criticism framework — the AI industry's value proposition hinges on a contradiction between its transformative claims and its actual business model. The "go meta" framing provides a tighter, more specific version of his earlier 'picks-and-shovels' critique of Big Tech. Unlike his previous arguments about enshittification (gradual platform degradation) or the Big Con/pyramid scheme (structural fraud), this essay identifies a specific logical inconsistency in AI company positioning that is harder for the industry to dismiss.
+
 ### Full Employment for AI (April 2026)
 
 In a Locus Magazine interview, Doctorow argued that AI won't eliminate human creative work but will create **"full employment"** for humans who can effectively critique, direct, and curate AI output. The value shifts from production to judgment.
@@ -203,3 +214,4 @@ This metaphor captures Doctorow's core argument: scaling AI investment (more GPU
 - [Pluralistic.net — "The AI bubble isn't like the internet bubble" (May 26, 2026)](https://pluralistic.net/2026/05/26/the-ai-will-continue/)
 - [Pluralistic.net — "Rights for robots and the AI slavery fantasy" (July 10, 2026)](https://pluralistic.net/2026/07/10/posthuman-as-in-no-humans/)
 - [The Internet Con (book)](http://seizethemeansofcomputation.org)
+- [Pluralistic.net — "Why aren't AI companies competing directly with their customers?" (July 13, 2026)](https://pluralistic.net/2026/07/13/go-meta-meta/)

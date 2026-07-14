@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-07-07
+updated: 2026-07-14
 tags:
   - person
   - blogger
@@ -21,6 +21,7 @@ sources:
   - raw/articles/martinalderson.com--posts-a-brief-history-of-kv-cache-compression-developments--c7414ee7.md
   - raw/articles/martinalderson.com--posts-expert-aware-quantisation--532b8e2a.md
   - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-1-glm-5-2--20d7e445.md
+  - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-2-winners-and-los--2b401389.md
 ---
 
 
@@ -89,6 +90,24 @@ Martin's July 2026 analysis of GLM 5.2 as the first open-weights model reaching 
 - **Structural thesis**: Open weights fundamentally break the frontier inference margin moat — when a drop-in replacement exists at 20% of the cost, the ~90% gross margins on frontier API inference are unsustainable
 
 Source: [[raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-1-glm-5-2--20d7e445.md]]
+
+#### Winners and Losers — Part 2 (July 2026)
+
+Martin's second installment examines the structural winners and losers from the margin collapse triggered by open-weight models reaching frontier quality, building on the GLM 5.2 analysis from Part 1:
+
+- **Grok 4.5 aggressive pricing**: xAI priced Grok 4.5 at ~$6/MTok output — similar cost to hosted GLM 5.2 — signalling that xAI is competing on price rather than frontier intelligence, accelerating the margin compression
+- **Bezos 'Your margin is my opportunity'**: Any margin in the AI inference layer becomes a vulnerability that competitors will exploit, compressing margins toward zero
+- **Market bifurcation**: The market is splitting into expensive very high-end (Fable, GPT-5.6 Sol) vs broad good/cheap models (Opus-class). The dynamic has shifted with 'good enough' models now sufficient for agentic tasks
+- **Hardware as real winners**: Semiconductor companies, memory manufacturers, GPU vendors, datacentre operators, and power/cooling infrastructure are all supply-constrained. Value accrues to the hardware layer, not the software layer — historically unusual in tech
+- **Coding agents as key beneficiary**: Cursor-style tools now achieve ~90% of Opus quality at a fraction of the price. xAI's acquisition of Cursor was motivated not by the IDE itself but by cheap-model economics plus the analytics flywheel — gaining real-world agentic usage data to improve models
+- **Users/consumers as ultimate winners**: Access to high-quality intelligence at relatively low prices. A multitude of models now better than GPT-4 at 5-10% of the price
+- **Frontier labs caught between**: ~80% of Anthropic's revenue comes from API access, fully exposed to model switching. Two wildcards:
+  - Frontier labs may move to managed agent platforms (no API, no direct agent access) — walling off best models behind higher abstraction layers. This reduces model distillation risk and makes provider switching harder
+  - 'Good enough' may not stay good enough — the next leap forward could make current models look antique, preserving the value of frontier labs' best models
+- **B2C advertising wildcard**: The AI market has shifted overwhelmingly to B2B/enterprise. If someone cracks LLM-adjacent advertising (OpenAI has rolled out efforts, Anthropic has ruled it out), the B2C hype pendulum could swing back. 1 billion ChatGPT MAUs remain largely unmonetised past subscriptions
+- **Conclusion**: Margin in pure model inference is heading toward zero. Opportunity is captured either side of the model layer — the hardware supply chain underneath, and users on top. Frontier labs have two paths out: keep the intelligence lead, or wall models behind managed platforms. Whether this works depends on whether the lead stops shrinking
+
+Source: [[raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-2-winners-and-los--2b401389.md]]
 
 ### xAI as Datacentre REIT (June 2026)
 

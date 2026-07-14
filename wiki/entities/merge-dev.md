@@ -2,7 +2,7 @@
 title: Merge.dev (Merge Agent Handler)
 type: entity
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-07-14
 tags:
   - entity
   - company
@@ -14,6 +14,9 @@ sources:
   - https://www.merge.dev/blog/trello-mcp-cursor
   - raw/articles/merge.dev--blog-github-mcp-cursor--805854f6.md
   - raw/articles/merge.dev--blog-trello-mcp-cursor--46131e27.md
+  - raw/articles/merge.dev--blog-mcp-governance-platform--5437a765.md
+  - raw/articles/merge.dev--blog-ai-agent-governance--4bf04b32.md
+  - raw/articles/merge.dev--blog-gpt-5-6-terra-vs-claude-sonnet-5--9c5002f0.md
 ---
 
 # Merge.dev (Merge Agent Handler)
@@ -76,6 +79,12 @@ Merge Agent Handler uses a CLI-based MCP pattern:
 - **Multi-user OAuth**: Handles Trello multi-workspace OAuth across users
 - **Centralized token rotation**: No per-project auth state management
 
+## Refs (July 2026)
+
+- **MCP Governance Platform Comparison** — Merge's analysis of the MCP governance platform category (AHFE vs Runlayer vs MintMCP). Covers evaluation criteria: SCIM-based provisioning, auditability, comprehensive connector coverage. While Merge's entity page documents its specific MCP products (GitHub MCP, Trello MCP), this post contextualizes them within the broader governance platform landscape.
+- **AI Agent Governance Framework** — Overview of AI agent governance concepts: authentication enforcement, tool testing, audit trails, RBAC, rule violation alerts, data leak prevention. Provides the conceptual framework for Merge's specific governance features, complementing the product-focused sections above.
+- **Claude Sonnet 5 vs GPT-5.6 Terra Benchmark** — Merge's build-test comparison between Claude Sonnet 5 and GPT-5.6 Terra on coding tasks: Sonnet 5 (136.6s, 17,870 tokens, $0.179) vs GPT-5.6 Terra (60.2s, 10,677 tokens, $0.120 — ~33% cheaper). Quality comparable. Recommendation: Sonnet 5 for agentic/quality-focused work, Terra for speed/cost-sensitive tasks. Comparison primarily serves Merge's product positioning but provides useful real-world benchmark data.
+
 ## Related
 
 - [[concepts/model-context-protocol-mcp]] — MCP protocol standard
@@ -87,3 +96,6 @@ Merge Agent Handler uses a CLI-based MCP pattern:
 
 - merge.dev--blog-github-mcp-cursor--805854f6
 - merge.dev--blog-trello-mcp-cursor--46131e27
+- merge.dev--blog-mcp-governance-platform--5437a765
+- merge.dev--blog-ai-agent-governance--4bf04b32
+- merge.dev--blog-gpt-5-6-terra-vs-claude-sonnet-5--9c5002f0

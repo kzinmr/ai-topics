@@ -11,6 +11,20 @@ _Log of all wiki changes. Newest entries at top._
 
 ---
 
+## [2026-07-14 07:50 UTC] Blog Wiki Ingest — 2 takes, 4 references
+
+### Updated Entity Pages
+- ✏️ [[entities/martin-alderson]] — Added "Winners and Losers — Part 2 (July 2026)" subsection: Grok 4.5 pricing, hardware winners, coding agents, B2C wildcard, managed agent platforms
+  - Source: [[raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-2-winners-and-los--2b401389]]
+- ✏️ [[entities/antirez-com]] — Added "Control the Ideas, Not the Code (July 2026)" section: code review suboptimal with LLMs, Mythical Man Month, DS4 experience, DESIGN.md proposal
+  - Source: [[raw/articles/antirez.com--news-169--1ef2a41d]]
+- ✏️ [[entities/merge-dev]] — Added 3 reference entries: MCP governance platforms, AI agent governance framework, Sonnet 5 vs GPT-5.6 Terra benchmark
+  - Sources: [[raw/articles/merge.dev--blog-mcp-governance-platform--5437a765]], [[raw/articles/merge.dev--blog-ai-agent-governance--4bf04b32]], [[raw/articles/merge.dev--blog-gpt-5-6-terra-vs-claude-sonnet-5--9c5002f0]]
+- ✏️ [[entities/cory-doctorow]] — Added "Go Meta Economy" section: AI companies as picks-and-shovel sellers despite transformative claims
+  - Source: [[raw/articles/pluralistic.net--2026-07-13-go-meta-meta--d0727adf]]
+
+---
+
 ## [2026-07-14 07:00 UTC] Blog Ingest — 20 articles scanned, 17 saved
 
 ### Raw Articles Saved (17)
