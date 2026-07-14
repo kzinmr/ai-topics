@@ -1,7 +1,20 @@
+| 2026-07-14 | active-crawl | 3 pages created, 3 raw articles saved | Claude Code vs OpenCode token overhead comparison (687 pts HN), Mesh LLM distributed P2P inference (344 pts HN), Apple SpeechAnalyzer on-device API benchmark (541 pts HN)
+
+| 2026-07-14 | comparisons/claude-code-vs-opencode-token-overhead.md | created | 33K vs 7K token overhead comparison; Systima measurement study; 4.7× gap on Sonnet 4.5
+  - Source: [[raw/articles/2026-07-12_systima_claude-code-vs-opencode-token-overhead.md]]
+
+| 2026-07-14 | concepts/mesh-llm.md | created | Distributed P2P LLM inference over iroh protocol; 40+ preconfigured models; Qwen 235B @ 16 tok/s across 2 nodes
+  - Source: [[raw/articles/2026-07-11_iroh_mesh-llm-distributed-inference.md]]
+
+| 2026-07-14 | concepts/apple-speechanalyzer.md | created | Apple on-device speech recognition API; 2.12% WER on LibriSpeech, 3-4× improvement over legacy, beats Whisper Small
+  - Source: [[raw/articles/2026-07-13_getinscribe_apple-speech-api-benchmark.md]]
+
+| 2026-07-14 | SCHEMA.md | updated | Added tags: speech, p2p, edge-computing, opencode
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
-|| 2026-07-14 | concepts/cais.md | enriched | Drexler FHI 2019 paper deep dive: service-centered architecture, R&D automation vs agent-centric model, learning vs competence distinction, safety afforances, risks (210-page technical report)
+| 2026-07-14 | concepts/cais.md | enriched | Drexler FHI 2019 paper deep dive: service-centered architecture, R&D automation vs agent-centric model, learning vs competence distinction, safety afforances, risks (210-page technical report)
 
 
 | 2026-07-14 | entities/claude-code.md | updated | Added 2M users / $2.5B ARR metrics to Key Metrics

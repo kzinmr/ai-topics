@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (847 pages)
+## Entities (849 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -853,7 +853,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1858 pages)
+## Concepts (1880 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -929,6 +929,7 @@
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
 - [[concepts/ai-enabled-terrorism]] — AI-Enabled Terrorism — CASP report on Boko Haram using frontier AI for tactical planning and logistics
+- [[concepts/apple-speechanalyzer]] — Apple SpeechAnalyzer — Next-generation on-device speech recognition API (iOS 26/macOS 26), 2.12% WER on LibriSpeech, 3-4× improvement over legacy SFSpeechRecognizer
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Databricks coding agent benchmark — real-world evaluation of coding agents on production codebases
 - [[concepts/claude/fable-safety-classifiers-critique]] — Claude Fable 5 safety classifiers critique — overzealous classifiers make Fable unusable for CS research
 - [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
@@ -2050,6 +2051,7 @@
 - [[concepts/meta-meta-prompting]] — Meta-Meta-Prompting
 - [[concepts/meta-muse-spark]] — Meta Muse Spark
 - [[concepts/metadata-retrieval]] — Metadata retrieval is a distinct retrieval paradigm alongside lexical (BM25) and embedding/semantic search, where str...
+- [[concepts/mesh-llm]] — Mesh LLM — Distributed P2P LLM inference over the iroh protocol, pooling GPU resources across machines
 - [[concepts/michael-abrash]] — michael-abrash
 - [[concepts/microcode]] — microcode
 - [[concepts/micrograd]] — micrograd
@@ -2711,7 +2713,7 @@
 - [[concepts/zig]] — zig
 - [[concepts/zjit]] — ZJIT
 - [[concepts/zombie-internet]] — Zombie Internet
-## Comparisons (34 pages)
+## Comparisons (35 pages)
 
 - [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes vs ChatGPT Dreaming
@@ -2721,6 +2723,7 @@
 - [[comparisons/ai-competition]] — U.S. vs China AI Competition
 - [[comparisons/aposd-vs-clean-code]] — A Philosophy of Software Design vs Clean Code
 - [[comparisons/bing-api-alternatives-2026]] — Bing Search API Alternatives — 2026 Comparison
+- [[comparisons/claude-code-vs-opencode-token-overhead]] — Claude Code vs OpenCode: Token Overhead Comparison — 33K vs 7K system prompt tokens, 4.7× gap on Sonnet 4.5
 - [[comparisons/claude-managed-agents-sandbox-providers]] — Claude Managed Agents Self-Hosted Sandbox Providers
 - [[comparisons/claude-mythos-preview-vs-mythos5-fable5]] — Claude Mythos Preview vs Mythos 5 & Fable 5 System Cards
 - [[comparisons/claude-opus-4x-comparison]] — Claude Opus 4.6 vs 4.7 vs 4.8 System Card Comparison
