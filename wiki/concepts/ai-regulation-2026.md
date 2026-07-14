@@ -2,7 +2,7 @@
 title: "AI Regulation (2026)"
 type: concept
 created: 2026-04-30
-updated: 2026-06-15
+updated: 2026-07-14
 tags:
   - concept
   - regulation
@@ -29,6 +29,8 @@ sources:
   - raw/articles/2026-06-10_dario-amodei_policy-on-the-ai-exponential.md
   - raw/articles/apple.com--newsroom-2026-06-due-to-dma-siri-ai-delayed-in-eu-for-ios-27--dec9fef2.md
   - raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance.md
+  - raw/articles/2026-07-14_demishassabis_frontier-ai-framework.md
+  - https://x.com/i/article/2076946210397552640
 ---
 
 # AI Regulation (2026)
@@ -159,6 +161,38 @@ In "Welcome to the AGI Era of AI Governance" (June 14, 2026), Nathan Lambert adv
 
 Source: [[raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance]]
 
+### Demis Hassabis: FINRA-Style Frontier AI Standards Body (July 2026)
+
+On July 14, 2026, **[[entities/demis-hassabis|Demis Hassabis]]** (CEO of Google DeepMind) published a detailed regulatory proposal in an X Article titled "A Framework for Frontier AI and the Dawning of a New Age." The proposal is notable as one of the most concrete regulatory frameworks from a leading AI executive and represents Google DeepMind's clearest regulatory stance to date.
+
+**Key elements:**
+
+- **FINRA-style Self-Regulatory Organization (SRO)**: A federally overseen public-private partnership modeled on the Financial Industry Regulatory Authority, with a board including independent technical experts and open-source representatives
+- **Industry-funded**: Substantial funding mostly from industry to attract world-class talent and provide compute for large-scale testing
+- **Dynamic "Frontier-class" definition**: Models qualify based on benchmark thresholds that are updated quarterly; outdated/saturated benchmarks are deprecated and replaced
+- **Frontier Lab designation**: Organizations with qualifying models are designated "Frontier Labs" and expected to publish model cards, maintain cybersecurity, vet personnel, and fund safety research
+- **Pre-release review**: Voluntary 30-day review initially → mandatory deployment approval once protocols are proven effective
+- **Assessment scope**: Cybersecurity, biological threats, agentic AI deception, watermarking, human-readable reasoning output
+- **Independent benchmarks**: Initially developed with Frontier Labs, eventually transitioning to held-out tests created independently to prevent overfitting
+- **Ratchet mechanism**: Can escalate to coordinating development slowdowns among Frontier Labs if risks demand
+- **Country-agnostic**: Applies to Frontier-class models regardless of country of origin; open and closed models both covered
+- **Startup/academia exemption**: Non-frontier models are exempt from the process
+
+**Comparison with other proposals:**
+
+| Element | Hassabis (FINRA-SRO) | Amodei (FAA-model) | OpenAI (CAISI) |
+|---------|---------------------|-------------------|-----------------|
+| Institutional model | Industry-funded SRO | Government agency (FAA) | Government agency (CAISI) |
+| Pre-release review | Voluntary → mandatory (30 days) | Mandatory pre-deployment | Mandatory evaluations |
+| International scope | Explicitly international | US-focused | Primarily US |
+| Slowdown authority | Yes | Not specified | Not specified |
+| Open-source board seat | Explicit | Not specified | Not mentioned |
+
+Hassabis's framing emphasizes the "precious window before AGI arrives" — positioning the proposal as urgent infrastructure for the transition to an AGI era, distinct from Amodei's binding-regulation shift and Lambert's geopolitical trigger analysis.
+
+See: [[concepts/frontier-ai-standards-body]]
+Source: [[raw/articles/2026-07-14_demishassabis_frontier-ai-framework]]
+
 ## Implications for Developers and Enterprises
 
 ### Operational Requirements
@@ -186,4 +220,6 @@ Source: [[raw/newsletters/2026-06-14-welcome-to-the-agi-era-of-ai-governance]]
 - [[concepts/ai-agent-traps]] — Safety and failure modes for AI agents
 - [[concepts/ai-autonomy-debate]] — Debate around AI autonomy levels
 - [[concepts/security-and-governance/ai-safety]] — AI safety and alignment
+- [[concepts/frontier-ai-standards-body]] — Demis Hassabis's July 2026 FINRA-style Standards Body proposal
+- [[concepts/frontier-safety-blueprint]] — OpenAI's CAISI proposal
 - [[entities/_index]]

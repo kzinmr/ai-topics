@@ -2,7 +2,7 @@
 title: Demis Hassabis
 type: entity
 created: 2026-04-14
-updated: 2026-05-15
+updated: 2026-07-14
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
@@ -11,6 +11,8 @@ tags:
 sources:
   - raw/newsletters/2026-05-13-the-ai-cursor-arrives.md
   - https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round
+  - raw/articles/2026-07-14_demishassabis_frontier-ai-framework.md
+  - https://x.com/i/article/2076946210397552640
 ---
 
 
@@ -170,6 +172,22 @@ Co-founded with **Shane Legg** (ML researcher) and **Mustafa Suleyman** (entrepr
 - Unreliability necessitates addressing foundational flaws before broader scaling
 - Advocates **milestone-based progress** over unchecked compute increases
 
+### On AI Governance (July 2026)
+
+Published "**A Framework for Frontier AI and the Dawning of a New Age**" — a detailed policy proposal for a **FINRA-style Frontier AI Standards Body**:
+
+- **Model**: Federally overseen public-private self-regulatory organization (SRO), modeled on FINRA
+- **Board**: Independent technical experts + open-source representatives
+- **Funding**: Substantial, mostly from industry
+- **Testing**: In partnership with US National Labs; covers cybersecurity, bio threats, agentic deception
+- **Definition**: "Frontier-class" models defined by dynamic benchmark thresholds, updated quarterly
+- **Pre-release review**: Voluntary 30-day review → mandatory deployment approval
+- **Ratchet mechanism**: Can coordinate **development slowdowns** among Frontier Labs if risks demand
+- **International scope**: US-initiated, designed for global coordination
+- **Exemptions**: Startups and academia (non-frontier models); applies to both open and closed models
+
+See: [[concepts/frontier-ai-standards-body]]
+
 ### Controversies
 - **NHS data privacy** (2015): DeepMind accessed 1.6M patient records for Streams app without explicit consent
   - ICO ruled Royal Free breached Data Protection Act 1998 (July 2017)
@@ -213,6 +231,7 @@ See: [[entities/isomorphic-labs]] (entity page pending)
 -  — AlphaFold co-lead; Nobel co-recipient-  — Hassabis's central research goal
 - [[concepts/post-training/reinforcement-learning]] — Core technique in AlphaGo/AlphaZero
 -  — AlphaFold's scientific breakthrough
+- [[concepts/frontier-ai-standards-body]] — July 2026 FINRA-style AI governance proposal
 
 ## Sources
 
@@ -222,3 +241,5 @@ See: [[entities/isomorphic-labs]] (entity page pending)
 - AlphaGo vs Lee Sedol match documentation
 - UCL Gatsby Unit research publications
 - TIME 100, Computer Weekly UKtech50
+- [A Framework for Frontier AI and the Dawning of a New Age](https://x.com/i/article/2076946210397552640) — July 2026 X Article
+- [[raw/articles/2026-07-14_demishassabis_frontier-ai-framework]]

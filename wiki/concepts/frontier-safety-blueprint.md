@@ -62,6 +62,7 @@ This blueprint arrives amid intensifying AI governance debates:
 - **California SB 1047** (and successor legislation) debated
 - **International governance** proposals at UN and G7 levels
 - **Voluntary commitments** from major AI labs proving insufficient for critics
+- **Demis Hassabis's FINRA-style proposal** (July 2026) — Competing framework for a Frontier AI Standards Body as an industry-funded SRO with federal oversight, open-source board representation, and ratchet mechanism for development slowdowns. See: [[concepts/frontier-ai-standards-body]]
 
 ## Related Concepts
 
@@ -69,6 +70,8 @@ This blueprint arrives amid intensifying AI governance debates:
 - [[concepts/shadow-ai-governance]] — Shadow AI governance patterns
 - [[concepts/security-and-governance/agentic-ai-governance]] — AI governance for agent systems
 - [[concepts/frontier-models]] — What constitutes frontier AI
+- [[concepts/frontier-ai-standards-body]] — Demis Hassabis's July 2026 FINRA-style Standards Body proposal
+- [[concepts/ai-regulation-2026]] — Broader 2026 AI regulatory landscape
 - [[entities/openai]] — OpenAI entity page
 
 ## Open Questions

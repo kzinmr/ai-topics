@@ -1,3 +1,23 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-07-14] X bookmarks ingest — Demis Hassabis's Frontier AI Standards Body proposal
+
+**Source**: X Article by Demis Hassabis (@demishassabis), "A Framework for Frontier AI and the Dawning of a New Age" (Jul 14, 2026)
+**Engagement**: 18,137 bookmarks, 13,609 likes, 2,599 RTs, 5M impressions
+
+**New pages created:**
+- concepts/frontier-ai-standards-body — Demis Hassabis's July 2026 FINRA-style Frontier AI Standards Body proposal
+- raw/articles/2026-07-14_demishassabis_frontier-ai-framework.md
+
+**Pages enriched:**
+- entities/demis-hassabis — Added "On AI Governance (July 2026)" section, updated sources/frontmatter
+- concepts/ai-regulation-2026 — Added Demis Hassabis FINRA-SRO section with comparison table vs Amodei/OpenAI frameworks
+- concepts/frontier-safety-blueprint — Added cross-reference to competing Hassabis proposal
+
+**Key proposal elements**: FINRA-style SRO with federal oversight, industry-funded, dynamic quarterly benchmarks, voluntary→mandatory pre-release review, ratchet mechanism for development slowdowns, open-source board seat, country-agnostic scope.
+
 | 2026-07-14 18:22 UTC | dreaming-wiki-ingest | Saturation day — Takes=0, 5 refs verified (all already covered), 21 skips archived via prior cycles |
   - Verified: Martin Alderson margin collapse pt 2 (entities/martin-alderson.md lines 96-110 — already covered), Merge AI agent governance (entities/merge-dev.md Refs section — already covered), Hebbia data integrations (entities/hebbia.md Data Integrations section — already covered), ElevenLabs AI calling (entities/elevenlabs.md AI Customer Service section — existing coverage sufficient), DOOMQL (entities/simon-willison.md — marginal value, not enriched)
   - Archive: All 25 decisions already in archive_index.json (deduped from prior cycles)
@@ -30,9 +50,7 @@
 
 | 2026-07-14 | SCHEMA.md | updated | Added tags: speech, p2p, edge-computing, opencode
 
-# Wiki Log
 
-_Log of all wiki changes. Newest entries at top._
 | 2026-07-14 | concepts/cais.md | enriched | Drexler FHI 2019 paper deep dive: service-centered architecture, R&D automation vs agent-centric model, learning vs competence distinction, safety afforances, risks (210-page technical report)
 
 

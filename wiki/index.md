@@ -853,7 +853,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1880 pages)
+## Concepts (1881 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1650,6 +1650,7 @@
 - [[concepts/forward-deployed-engineering]] — Forward Deployed Engineering (FDE)
 - [[concepts/founder-mode]] — founder-mode
 - [[concepts/free-software]] — Free Software
+- [[concepts/frontier-ai-standards-body]] — Demis Hassabis's July 2026 FINRA-style Frontier AI Standards Body proposal
 - [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation
 - [[concepts/frontier-models-comparison-april-2026]] — Frontier Models Comparison — April 2026
 - [[concepts/frontier-safety-blueprint]] — Frontier Safety Blueprint
