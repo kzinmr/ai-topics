@@ -2,6 +2,36 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-07-14 07:00 UTC] Blog Ingest — 20 articles scanned, 17 saved
+
+### Raw Articles Saved (17)
+- [[raw/articles/simonwillison.net--2026-jul-14-uvx-github-actions-cache--a814fa12]] — Using uvx in GitHub Actions in a cache-friendly way
+- [[raw/articles/simonwillison.net--2026-jul-13-datasette-code-frequency--b8e9b576]] — datasette code-frequency chart on GitHub
+- [[raw/articles/simonwillison.net--2026-jul-13-doomql--7d2f71ea]] — DOOMQL
+- [[raw/articles/krebsonsecurity.com--2026-07-lessons-learned-from-cisas-recent-github-leak--89c16b34]] — Lessons Learned from CISA's Recent GitHub Leak
+- [[raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-2-winners-and-los--2b401389]] — Winners and losers in the coming AI margin collapse (part 2)
+- [[raw/articles/devblogs.microsoft.com--oldnewthing-20260713-00--57587b90]] — Why don't we just make the entire stack out of guard pages?
+- [[raw/articles/micahflee.com--mandatory-update-a-short-story--a332b287]] — Mandatory Update: A Short Story
+- [[raw/articles/paper.design----bb20e46c]] — Paper - design, share, ship (sponsor)
+- [[raw/articles/merge.dev--blog-mcp-governance-platform--5437a765]] — A guide to evaluating MCP governance platforms
+- [[raw/articles/merge.dev--blog-ai-agent-governance--4bf04b32]] — AI agent governance: key aspects, benefits, and platforms
+- [[raw/articles/merge.dev--blog-gpt-5-6-terra-vs-claude-sonnet-5--9c5002f0]] — Claude Sonnet 5 vs GPT-5.6 Terra: how they compare on coding
+- [[raw/articles/sierra.ai--blog-announcing-our-partnership-with-softbank-corp--4a150bd0]] — Announcing our partnership with SoftBank Corp.
+- [[raw/articles/arstechnica.com--tech-policy-2025-08-elon-musk-sues-apple-openai-to-block-exc--03034646]] — Elon Musk sues Apple and OpenAI
+- [[raw/articles/lwn.net--articles-1082647--d9aae7b5]] — Final normal Debian bookworm release
+- [[raw/articles/dfarq.homeip.net--code-red-worm-july-13-2001--5761e2ff]] — Code Red worm, July 13, 2001
+- [[raw/articles/antirez.com--news-169--1ef2a41d]] — Control the ideas, not the code
+- [[raw/articles/pluralistic.net--2026-07-13-go-meta-meta--d0727adf]] — Why aren't AI companies competing directly with their customers?
+
+### Skipped (3)
+- LWN.net "Shielding running kernels against exploits with BPF" (paywalled)
+- LWN.net "Security updates for Monday" (paywalled)
+- shkspr.mobi "[RSS Club] Half a million steps" (not AI-relevant)
+
+### Checkpoint
+- run_id: 20260714T070031Z
+- checkpoint: /opt/data/.hermes/cron/data/blog_ingest/latest.json
+---
 ## [2026-07-13] X Bookmarks Ingest — 2 bookmarks processed
 
 ### New Pages
