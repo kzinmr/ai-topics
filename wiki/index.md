@@ -1244,7 +1244,7 @@
 - [[concepts/cache-first-engineering]] — cache-first-engineering
 - [[concepts/caching-performance-cost-optimization]] — Caching Performance Cost Optimization
 - [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
-- [[concepts/cais]] — CAIS (Comprehensive AI Services) — K. Eric Drexler's framework reframing superintelligence as distributed AI services, not monolithic agents; R&D automation as improvement engine, learning vs competence distinction (July 5)
+- [[concepts/cais]] — CAIS (Comprehensive AI Services) — K. Eric Drexler's framework reframing superintelligence as distributed AI services, not monolithic agents; R&D automation as improvement engine, learning vs competence distinction, service-centered architecture, AI safety afforances vs agent-centric models (July 14)
 - [[concepts/caisi-federal-ai-review]] — CAISI Federal AI Review
 - [[concepts/canva]] — canva
 - [[concepts/capability-based-security]] — Capability-Based Security

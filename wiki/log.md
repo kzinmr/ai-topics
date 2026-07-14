@@ -1,6 +1,8 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+|| 2026-07-14 | concepts/cais.md | enriched | Drexler FHI 2019 paper deep dive: service-centered architecture, R&D automation vs agent-centric model, learning vs competence distinction, safety afforances, risks (210-page technical report)
+
 
 | 2026-07-14 | entities/claude-code.md | updated | Added 2M users / $2.5B ARR metrics to Key Metrics
 
