@@ -1,3 +1,4 @@
+| 2026-07-15 18:22 UTC | dreaming-wiki-ingest | Upstream dreaming-group at 18:00 UTC already completed triage — Takes=0 (saturation day). All daily pipelines (blog, newsletter, active-crawl) ran before dreaming. Archive confirmed at c36c6c86. No action needed. |
 | 2026-07-15 18:00 UTC | dreaming | Saturation day — Takes=0, all pipelines already ran today. 30 articles triaged as skip (sitemap company blogs + already-processed active-crawl/blog/newsletter). Archive: 30 new, total 1,661 URLs |
 ## [2026-07-15] watchdog | Auto-fix header counts, verify structural health
 
