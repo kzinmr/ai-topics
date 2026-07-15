@@ -1,0 +1,80 @@
+{
+  "run_id": "20260715T071023Z",
+  "triaged_at": "2026-07-15T07:15:00+00:00",
+  "source": "newsletter-ingest",
+  "total_newsletters": 5,
+  "classifications": {
+    "critical": [
+      {
+        "title": "LLM Architecture in 2026: Agent Harnesses, Hybrid Models, and Why Implementation Does Not Lie",
+        "date": "2026-07-15",
+        "source": "hugobowne (Substack)",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-15-llm-architecture-in-2026-agent-harnesses-hybrid-models-and-why-implementation-do.md",
+        "post_url": "https://open.substack.com/pub/hugobowne/p/llm-architecture-in-2026-agent-harnesses",
+        "reason": "Directly covers core wiki topics: LLM architecture evolution in 2026, agent harnesses (agent harness research page exists), hybrid models. High signal for concepts/ and comparisons/ pages.",
+        "suggested_wiki_pages": [
+          "concepts/agent-harnesses (update/enrich)",
+          "concepts/llm-architecture (update for 2026 state)",
+          "comparisons/llm-hybrid-models (potential new)"
+        ]
+      },
+      {
+        "title": "How to use GPT-5.6",
+        "date": "2026-07-14",
+        "source": "Ben's Bites (Substack)",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-14-how-to-use-gpt-5-6.md",
+        "post_url": "https://open.substack.com/pub/bensbites/p/how-to-use-gpt-56",
+        "reason": "GPT-5.6 is a major frontier model. Usage guide from Ben's Bites likely contains practical prompting strategies, capability details, and comparison with prior versions. High value for entity and concept pages.",
+        "suggested_wiki_pages": [
+          "entities/openai (update with GPT-5.6 release)",
+          "concepts/gpt-5-6 (new entity/concept page)"
+        ]
+      }
+    ],
+    "high": [
+      {
+        "title": "5 Trends That Defined AI Engineering at World's Fair 2026",
+        "date": "2026-07-14",
+        "source": "swyx / AI Engineer Newsletter (Substack)",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-14-5-trends-that-defined-ai-engineering-at-world-s-fair-2026.md",
+        "post_url": "https://open.substack.com/pub/swyx/p/aiewf26trends",
+        "reason": "AI Engineer World's Fair 2026 trends — likely covers agent patterns, tool use, evals, multimodal, and other core wiki themes. Conference synthesis is high-value for concept pages.",
+        "suggested_wiki_pages": [
+          "events/ai-engineer-worlds-fair-2026 (new)",
+          "concepts/ai-engineering (update with 2026 trends)"
+        ]
+      },
+      {
+        "title": "[AINews] not much happened today",
+        "date": "2026-07-14",
+        "source": "swyx / AI Engineer Newsletter (Substack)",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-14-ainews-not-much-happened-today.md",
+        "post_url": "https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-c72",
+        "reason": "Daily AI news digest despite the self-deprecating title. Swyx's AINews typically aggregates 5-10 developments. Worth scanning for entity/concept updates.",
+        "suggested_wiki_pages": [
+          "Check for any new entity mentions or model releases"
+        ]
+      },
+      {
+        "title": "🛑 A Plan to Delay Superintelligence to 2040",
+        "date": "2026-07-14",
+        "source": "Beehiiv newsletter (unknown author)",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-14-a-plan-to-delay-superintelligence-to-2040.md",
+        "post_url": null,
+        "reason": "AI safety topic — delaying superintelligence. Relevant to concepts/ai-safety and concepts/ai-alignment. Beehiiv links are tracking redirects (harder to resolve), but the topic is clearly within wiki scope.",
+        "suggested_wiki_pages": [
+          "concepts/ai-safety (update)",
+          "concepts/ai-alignment (update)",
+          "concepts/superintelligence (potential new)"
+        ]
+      }
+    ],
+    "low": []
+  },
+  "summary": "5 newsletters processed. 2 critical (GPT-5.6 usage, LLM architecture/agent harnesses), 3 high (AI Engineering trends, daily AINews digest, superintelligence delay plan). No low-relevance items. The GPT-5.6 and LLM architecture articles are the highest priority for wiki ingestion — both directly map to existing wiki structure.",
+  "action_items": [
+    "Fetch and scrape the 2 critical articles (GPT-5.6, LLM architecture) for wiki page creation",
+    "The 3 high-priority articles should be queued for blog-wiki-ingest or raw-backlog processing",
+    "Beehiiv tracking URLs will need resolution before article content can be scraped"
+  ]
+}

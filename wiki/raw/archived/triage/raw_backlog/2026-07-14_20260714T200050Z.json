@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-07-14T20:06:00.809099+00:00",
+  "triage_run_id": "20260714T200050Z",
+  "source": "raw_backlog",
+  "summary_ja": "5件のバックログ記事を評価。全件が既存Wikiページでカバー済みのため、すべてskip。MAI-Thinking-1技術レポート（407KB, 109ページ）は `entities/mai-thinking-1.md`（165行）・`concepts/mai-thinking-1-tech-report.md`（227行）・`concepts/hill-climbing-machine.md`（121行）ですでに詳細に抽出済み。BenchFlow Awesome Agent Evals（175KB, 443+リンク）は `concepts/ai-benchmarks/benchflow-tool.md`（118行）でセクション構造・編纂方法論・スターターセットまで完全カバー済み。残り3件は以前の処理で既にアーカイブ済み。",
+  "decisions": [
+    {
+      "item_id": "raw-1",
+      "source": "raw_backlog",
+      "source_name": "MAI-Thinking-1 Technical Report",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine (109页 Microsoft AI Technical Report)",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本技術レポートは既存Wikiで完全にカバー済み（entities/mai-thinking-1.md:165行, concepts/mai-thinking-1-tech-report.md:227行, concepts/hill-climbing-machine.md:121行, concepts/mai-thinking.md:27行）。アーキテクチャ（Periodic local/global attention, LatentMoE）、訓練手法（Modified GRPO、Adaptive entropy control、Outer ratio clip）、Reward分解、3 specialist climbs、ベンチマーク成績、安全性評価まで全て抽出済み。本生記事は既に全ページのsourcesに登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-"
+    },
+    {
+      "item_id": "raw-2",
+      "source": "raw_backlog",
+      "source_name": "BenchFlow Awesome Agent Evals",
+      "title": "Awesome Agent Evals — curated list of 443+ resources for building and evaluating AI agents",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ BenchFlowのAwesome Agent Evalsリストは既存Wikiで完全にカバー済み（concepts/ai-benchmarks/benchflow-tool.md:118行）。10セクションの構成表、編纂方法論（depth-4 citation crawl 11.6K papers, practitioner-web discovery, 47 talks transcribed）、12 must-readスターターセット（Shunyu Yao, Eugene Yan, Han-Chung Leeなど）、Eval/RL-Environment企業ランドスケープまで全て抽出済み。本生記事は既にsourcesに登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Awesome Agent Evals [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n> A curated, opinionated, **non-BS** library of the best resources for **building and evaluating AI agents** — papers, blog posts, talks, courses, tools, and benchmarks.\nMaintained by [**BenchFlow**](https://benchfl"
+    }
+  ]
+}

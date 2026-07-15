@@ -2,7 +2,7 @@
 title: Sebastian Raschka
 type: entity
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-07-15
 status: complete
 tags:
   - person
@@ -15,6 +15,7 @@ sources:
   - https://sebastianraschka.com
   - https://magazine.sebastianraschka.com
   - https://x.com/rasbt
+  - raw/newsletters/2026-07-15-llm-architecture-in-2026-agent-harnesses-hybrid-models-and-why-implementation-do.md
 ---
 
 # Sebastian Raschka
@@ -38,6 +39,12 @@ Sebastian Raschka is a prominent ML researcher and educator known for his practi
 - **"Practical Tips for Finetuning LLMs Using LoRA"** — Follow-up with production-oriented advice
 - **"LoRA and DoRA from Scratch"** — Deep dive into DoRA (decomposed LoRA variant)
 - His blog posts are cited as 🟢 top-tier resources throughout the [[concepts/genai-handbook|GenAI Handbook]] (Section IV: Finetuning)
+
+### New Publications and Insights (July 2026)
+- **'Build a Reasoning Model (From Scratch)'** — A 440-page book published July 2026, following his earlier 'Build a Large Language Model (From Scratch)'. The book teaches building reasoning-focused LLMs from first principles.
+- **Vanishing Gradients conversation** (July 15, 2026, with Hugo Bowne-Anderson): A wide-ranging technical discussion covering multi-head latent attention's KV cache advantages, RLVR vs process reward models, shrinking agent harnesses, intermediate tensor verification for architecture understanding, and fine-tuning economics. Upcoming live podcast on July 28, 2026.
+- **Current AI stack**: Mac mini, Codex, and Claude. Uses LLMs for proofreading, quality assurance, and cross-referencing (not for idea generation). Maintains a ~20-item Markdown checklist for article quality review.
+- **Methodology**: Begins with working model releases, runs them inside agent systems and inspects their internals simultaneously. His test of complete understanding is reimplementing an architecture from published weights and matching intermediate tensors.
 
 ## Related Wiki Pages
 

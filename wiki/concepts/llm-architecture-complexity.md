@@ -2,12 +2,14 @@
 title: "LLM Architecture Complexity"
 type: concept
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-07-15
 tags:
   - model
   - architecture
   - transformer-architecture
-sources: ["raw/articles/2026-06-19_ianbarber_llms-are-complicated-now.md"]
+sources:
+  - raw/articles/2026-06-19_ianbarber_llms-are-complicated-now.md
+  - raw/newsletters/2026-07-15-llm-architecture-in-2026-agent-harnesses-hybrid-models-and-why-implementation-do.md
 ---
 
 ## Overview
@@ -94,6 +96,25 @@ It is tempting to assume that coding agents will solve this — hand your PyTorc
 ## Key Insight
 
 As [[entities/andrej-karpathy|Andrej Karpathy]] has demonstrated over years of work, being able to cut architectures to their essence and make them composable is as important as clever agentic tooling. The research iteration loop demands flexibility that neither pure hand-optimization nor pure generation can provide — only **designed composability** bridges the gap.
+
+### Sebastian Raschka's Implementation-First Approach
+[[entities/sebastian-raschka|Sebastian Raschka]] takes a hands-on approach to understanding LLM architectures: he downloads working model releases, runs them inside agent systems, inspects their attention mechanisms and context handling, and implements their components to test whether he understands every operation. His test of a complete architectural explanation is whether **intermediate tensors match** — reimplementing the architecture from published weights and comparing the outputs at each layer.
+
+### Multi-Head Latent Attention and the KV Cache War
+Raschka identifies **multi-head latent attention (MLA)** as the clear winner of the KV cache efficiency competition. MLA uses compressed key-value representations, dramatically reducing the memory footprint of long-context inference. Combined with sparse attention patterns and hybrid architectures, MLA enables affordable long-context processing in modern models like Qwen 3.5.
+
+### RLVR and the Future of Process Verification
+[[concepts/rlvr|Reinforcement learning with verifiable rewards (RLVR)]] has become a major post-training technique since DeepSeek-R1 (2025). Unlike pre-training and SFT which share the same underlying loss function, RLVR introduces a separate objective based on whether the model's output — a correct math answer, a passing test — is correct. The verification happens at the **end** of the attempt.
+
+Raschka predicts the next frontier is **process reward models (PRMs)** that check intermediate reasoning steps, not just final answers. DeepSeek-R1 already experimented with this but found it 'had not worked particularly well.' A future model may combine RLVR with a reliable enough PRM to strengthen the model's refinement loop.
+
+### Inference Scaling and Shrinking Harnesses
+Inference scaling (longer reasoning traces, parallel sampling, sequential refinement, meta-judges) increases post-training capability by spending more compute at inference time. DeepSeekMath-V2 combined these techniques to reach gold-level performance in mathematics competitions.
+
+Crucially, **stronger models reduce the harness code required around them**. Manus and Claude Code have repeatedly removed scaffolding as newer models became capable of handling behaviors that previously required explicit application logic. Reasoning traces and agent trajectories appearing in model training data allow base models to acquire these behaviors before dedicated post-training. Harness code written for an older model can become redundant or actively constrain a model that no longer needs it — a phenomenon called **shrinking harnesses**.
+
+### The New Economics of Fine-Tuning
+When repeated usage requires supplying the same instructions through context, fine-tuning becomes more economical than in-context prompting. This represents a shift in the cost-benefit analysis of fine-tuning vs. retrieval-augmented generation.
 
 ## Related Concepts
 

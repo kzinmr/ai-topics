@@ -1,0 +1,208 @@
+{
+  "archived_at": "2026-07-15T07:37:39.727034+00:00",
+  "triage_run_id": "20260715T070059Z",
+  "source": "blog",
+  "summary_ja": "2026-07-15 blog-triage: 20記事中、TAKE 2件・REFERENCE 2件・SKIP 16件。TAKE: Armin Ronacher「The Tower Keeps Rising」(entities/armin-ronacher.md更新) と Codex Desktopペット機能Pedalican (concepts/codex/codex-superapp.md更新)。REFERENCE: Microsoft 570パッチ+AI脆弱性発見 (concepts/ai-vulnerability-discovery.md) とPseudpocalypse/LLM著者推定 (concepts/ai-privacy-tools.md)。残り16件は非AIトピック（SQLite移行事例、職場政治ガイド、フーリエ変換、USB-C論等）。",
+  "decisions": [
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "krebsonsecurity.com",
+      "title": "Microsoft Patches a Record 570 Security Flaws",
+      "url": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/krebsonsecurity.com--2026-07-microsoft-patches-a-record-570-security-flaws--613a1c6a.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AIによる脆弱性発見の加速を示すデータポイント。MicrosoftがAI支援により過去最多の570件のセキュリティ修正（7月Patch Tuesday）、うち60件がCritical、3件のゼロデイ。Microsoft CopilotのRCE脆弱性CVE-2026-48561（CVSS 9.6）。特に重要なのはSatnam Narang（Tenable）の指摘：Mythos Previewが'Exploitation Less Likely'評価の14件中13件でPoCを生成できたことから、Microsoftのexploitability index（悪用可能性評価）がAI時代に機能していないという批判。既存のconcepts/ai-vulnerability-discovery.mdにMicrosoft/AIパッチ加速とexploitability index批判のセクション追加を推奨。",
+      "candidate_wiki_path": "concepts/ai-vulnerability-discovery.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-12",
+      "source": "blog",
+      "source_name": "dynomight.net",
+      "title": "Pseudpocalypse",
+      "url": "https://dynomight.net/pseudpocalypse/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/dynomight.net--pseudpocalypse--91ebe2ff.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ LLMによる著者推定（authorship attribution）が匿名ペンネーム執筆を不可能にする「Pseudpocalypse」論。Claude 4.8が1000語で著者を特定できる事例を示し、執筆スタイルの情報理論的限界（29ビット閾値）を詳細に分析。LLMのセキュリティ・プライバシーへの影響を示す参考資料として価値があるが、AIエージェント・LLMトピックの中核ではないため参照程度。既存wikiに類似コンセプトなし。",
+      "candidate_wiki_path": "concepts/ai-privacy-tools.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "A quote from GitHub Changelog",
+      "url": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything",
+      "raw_path": "~/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-14-github-changeling--7cdd4db0.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ GitHub Changelogの引用—Dependabotがリリース後3日間のクールダウンをデフォルト化。AI/LLM/AI Agentトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "lobste.rs is now running on SQLite",
+      "url": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything",
+      "raw_path": "~/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-14-lobsters-sqlite--351c5a11.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ LobstersコミュニティサイトのMariaDB→SQLite移行事例。興味深い技術ケーススタディだが、LLM/AI Agentトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "troyhunt.com",
+      "title": "Weekly Update 512: IoT Lockout Fail",
+      "url": "https://www.troyhunt.com/weekly-update-512/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/troyhunt.com--weekly-update-512--2a49aa24.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ IoTスマートロックのバッテリー切れで締め出された体験談。AI/LLMトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "A quote from Armin Ronacher",
+      "url": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
+      "raw_path": "~/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-14-armin-ronacher--7ec28a31.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Simon WillisonによるArmin Ronacher「The Tower Keeps Rising」からの引用ポスト。本家エッセイ（blog-7）をTAKEとして処理するため、引用版は重複につきスキップ。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "datasette 1.0a37",
+      "url": "https://simonwillison.net/2026/Jul/14/datasette/#atom-everything",
+      "raw_path": "~/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-14-datasette--8bb3f92d.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Datasette 1.0a37のマイナーリリース。AI/LLMトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "ICD-10 chapters and code letters",
+      "url": "https://www.johndcook.com/blog/2026/07/14/icd-10-chapters-letters/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-07-14-icd-10-chapters-letters--645753e4.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ICD-10医療コード章構成の解説。AI/LLMトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "xeiaso.net",
+      "title": "Presigned URLs are technically a security vuln",
+      "url": "https://www.tigrisdata.com/blog/presigned-urls-security-vuln/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/tigrisdata.com--blog-presigned-urls-security-vuln--1bfd98cf.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ S3互換署名付きURLのセキュリティ分析。技術的に興味深いが、LLM/AI Agentトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "garymarcus.substack.com",
+      "title": "Breaking: Demis Hassabis endorses preflight safety testing for AI",
+      "url": "https://garymarcus.substack.com/p/breaking-demis-hassabis-endorses",
+      "raw_path": "~/ai-topics/wiki/raw/articles/garymarcus.substack.com--p-breaking-demis-hassabis-endorses--dc0088c2.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Gary MarcusがDemis HassabisのAI事前安全テスト支持を歓迎する論評。しかしentities/demis-hassabis.mdの「On AI Governance (July 2026)」セクションですでにHassabisのFINRA型Frontier AI Standards Body提案を詳細にカバー済み。Marcusのコメントは新規情報を追加しない。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-13",
+      "source": "blog",
+      "source_name": "seangoedecke.com",
+      "title": "What does \"playing politics\" mean for software engineers?",
+      "url": "https://seangoedecke.com/playing-politics/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/seangoedecke.com--playing-politics--7e818564.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ソフトウェアエンジニアの職場政治（playing politics）ガイド。AI/LLMトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-14",
+      "source": "blog",
+      "source_name": "eli.thegreenplace.net",
+      "title": "Notes on the Fourier Transform",
+      "url": "https://eli.thegreenplace.net/2026/notes-on-the-fourier-transform/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/eli.thegreenplace.net--2026-notes-on-the-fourier-transform--374ac867.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ フーリエ変換の数学的解説。AI/LLMトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-15",
+      "source": "blog",
+      "source_name": "shkspr.mobi",
+      "title": "I'm a USB-C Maximalist",
+      "url": "https://shkspr.mobi/blog/2026/07/im-a-usb-c-maximalist/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/shkspr.mobi--blog-2026-07-im-a-usb-c-maximalist--0e149f1f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ USB-C maximalist論。ハードウェアの個人的意見。AI/LLMトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-16",
+      "source": "blog",
+      "source_name": "entropicthoughts.com",
+      "title": "Intuition for distribution differences",
+      "url": "https://entropicthoughts.com/distribution-differences",
+      "raw_path": "~/ai-topics/wiki/raw/articles/entropicthoughts.com--distribution-differences--9ef2f22e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 分布差（distribution differences）の統計的直感解説。AI/LLMトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-17",
+      "source": "blog",
+      "source_name": "xeiaso.net",
+      "title": "Making sure you're not a bot!",
+      "url": "https://xeiaso.net/notes/2026/check-your-smart-tv/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/xeiaso.net--notes-2026-check-your-smart-tv--a1f18418.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ スマートTVのCaptcha/bot検出に関するプライバシー記事。AI/LLMトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-18",
+      "source": "blog",
+      "source_name": "idiallo.com",
+      "title": "They Prefer the App",
+      "url": "https://idiallo.com/blog/they-prefer-the-app",
+      "raw_path": "~/ai-topics/wiki/raw/articles/idiallo.com--blog-they-prefer-the-app--f1d841ac.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ モバイルアプリ vs Webの体験比較。AI/LLMトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-19",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "The Silicon Underground",
+      "url": "https://dfarq.homeip.net/nintendo-famicom-and-the-secret-of-nintendos-success/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/dfarq.homeip.net--nintendo-famicom-and-the-secret-of-nintendos-success--fca61820.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ファミコンの成功要因解説。レトロゲーム。AI/LLMトピックに関係なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-20",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: Gerontocracy's failure mode (14 Jul 2026)",
+      "url": "https://pluralistic.net/2026/07/14/designated-survivor/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/pluralistic.net--2026-07-14-designated-survivor--40fa38e0.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Cory Doctorowの政治論評（高齢者支配の失敗モード）。AI/LLMトピックに関係なし。ただし末文に'The Reverse-Centaur's Guide to AI'（2026年6月刊行）への言及あり — これはCory DoctorowのAI批判関連著作として要注意文献。",
+      "body_excerpt": ""
+    }
+  ]
+}

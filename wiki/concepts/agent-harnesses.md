@@ -2,12 +2,13 @@
 title: "Agent Harnesses"
 type: concept
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-07-15
 tags:
   - ai-agents
   - training
 aliases: ["The Bitter Lesson of Agent Harnesses", "Agent Frameworks Philosophy"]
 sources:
+  - raw/newsletters/2026-07-15-llm-architecture-in-2026-agent-harnesses-hybrid-models-and-why-implementation-do.md
   - Claire — "How to Build a Custom AI Harness with the Claude Agent SDK for Bug Triage" (How I AI / Lenny's Podcast, July 2026)
 ---
 
@@ -126,6 +127,19 @@ Route each step to the optimal model: Claude for reasoning-intensive analysis, G
 ### Sources
 
 - Claire — "How to Build a Custom AI Harness with the Claude Agent SDK for Bug Triage" (How I AI / Lenny's Podcast, July 2026)
+
+### Shrinking Harnesses as Models Improve
+
+A key tension in harness engineering: **stronger models reduce the harness code they need**. As [[entities/sebastian-raschka|Sebastian Raschka]] documented, Manus and Claude Code have repeatedly removed parts of their scaffolding as newer model generations became capable of handling behaviors that previously required explicit application logic. Reasoning traces and agent trajectories appearing in model training data allow base models to acquire some harness-like behaviors before dedicated post-training.
+
+This creates a moving target for harness design:
+- Harness code written for an older model can become **redundant** for a newer one
+- More critically, the harness can **constrain** a model that has capabilities the harness was never designed to accommodate
+- The cognitive burden shifts upward: the human must supervise agents that are themselves self-supervising, creating a 'tree of delegation' where work happens across multiple contexts at different levels
+
+Raschka's analogy: 'It is honestly a bit stressful because you are now supervising agents which are self-supervising themselves. It's like you're watching an orchestra and trying to get everyone doing the thing you want it to do.'
+
+The boundary between model and harness keeps moving. The routing decisions (which reasoning effort, which model, whether to delegate) that used to live in the harness are increasingly absorbed by the model itself.
 
 ## Related Concepts
 

@@ -1,3 +1,17 @@
+## [2026-07-15] Newsletter wiki-ingest — GPT-5.6 usage patterns, AI Engineering 5 trends, LLM Architecture (Raschka)
+
+**Source**: 3 newsletters triaged and ingested (Ben's Bites, swyx/Latent Space, Vanishing Gradients)
+
+**Pages enriched:**
+- concepts/gpt/gpt-5-6 — Added "Practical Usage Patterns" section (model selection, usage limits, ChatGPT Work, Computer Use)
+- concepts/ai-engineering — Complete rewrite from stub: 5 trends from AIEWF 2026 (harness, loop, FDEs, context, skills engineering)
+- concepts/llm-architecture-complexity — Added Raschka: MLA KV cache analysis, RLVR/PRM predictions, shrinking harnesses, fine-tuning economics
+- concepts/agent-harnesses — Added "Shrinking Harnesses as Models Improve" section
+- entities/sebastian-raschka — Added new book "Build a Reasoning Model", methodology, AI stack, Vanishing Gradients conversation
+
+**New pages created:**
+- events/ai-engineer-worlds-fair-2026 — AI Engineer World's Fair 2026 event page with key themes, people, quotes
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

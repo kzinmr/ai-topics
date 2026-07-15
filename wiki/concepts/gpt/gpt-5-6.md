@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6 (Sol / Terra / Luna)"
 created: 2026-06-27
-updated: 2026-07-13
+updated: 2026-07-15
 type: concept
 tags:
   - model
@@ -17,12 +17,15 @@ sources:
   - raw/articles/9to5mac.com--2026-07-09-openai-announcing-the-next-chapter-for-chatgpt-to--a8f56e74.md
   - raw/newsletters/2026-07-10-ainews-openai-launches-gpt-5-6-sol-terra-luna-codex-becomes-chatgpt-superapp.md
   - raw/newsletters/2026-07-14-ainews-openai-gpt-5-6-operational-fixes.md
+  - raw/newsletters/2026-07-14-how-to-use-gpt-5-6.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)
 
 ## Overview
 OpenAI announced GPT-5.6 as a three-model family on June 26-27, 2026 — Sol (flagship frontier), Terra (balanced mid-tier), Luna (fast/cheap high-volume). The launch was notable for being a **restricted preview only**, with access limited to ~20 government-approved trusted partners at the request of the U.S. government. This marked the first instance of a government-mediated frontier model release.
+
+For practical guidance on selecting and using these models effectively, see [[concepts/gpt/gpt-5-6#practical-usage-patterns]].
 
 ## Model Family
 
@@ -150,6 +153,28 @@ The Codex/Codex Work team rolled out multiple fixes for GPT-5.6 Sol after usage 
 
 ### Competitive Impact on Anthropic
 The aggressive availability strategy has put pressure on [[entities/fable]], where Anthropic continues to restrict Fable 5 access on paid plans due to compute constraints. Simon Willison noted (Jul 12, 2026) that "OpenAI are winning users simply due to the uncertainty that surrounds Fable access."
+
+## Practical Usage Patterns
+
+For a quick-reference guide to model selection and usage strategies, see [[concepts/gpt/gpt-5-6#practical-usage-patterns]].
+
+### Model Selection Guide
+- **Sol**: Best for UI-heavy tasks and creative work. Give it reference materials for best results. At Max thinking level, has strong writing quality and engaging chat capability. Recommended default for most building/creativity work at medium reasoning.
+- **Terra**: Feels like a direct replacement for GPT-5.5 with minor improvements in UI and writing. More steerable than 5.5, making it suitable for skills-based workflows. Good cost-performance middle ground.
+- **Luna**: Has a 'mini model smell' — sometimes fails to grasp ambiguous prompts but handles clearly-defined tasks reliably. Best for day-to-day productivity at xhigh reasoning.
+
+### Usage Limit Management
+- Higher thinking levels (high, xhigh, max) consume usage limits much faster. Ultra mode in particular 'burns through usage limits' rapidly — author was nearly out of Codex usage for the first time.
+- Recommended daily defaults: sol medium for building/creativity, background agents for harder tasks, luna xhigh for day-to-day productivity.
+- OpenAI temporarily removed the 5-hour usage limit for all paid plans (July 12, 2026). Users should be aware they may exhaust weekly limits in one session.
+- OpenAI reset usage 4-5 times during the weekend of July 11-12 while fixing bugs from the ChatGPT macOS + Codex app merge.
+
+### ChatGPT Work
+- The ChatGPT macOS app and Codex app were merged into a single 'ChatGPT Work' application. Codex and Work share the same core but are fine-tuned for coding-related vs non-coding-related work respectively.
+- New 'ChatGPT Sites' plugin lets users build hosted websites with optional 'Login with ChatGPT' feature.
+
+### Computer Use
+- GPT-5.6 models in Codex demonstrate strong Computer Use capabilities — self-driving the cursor, opening apps, clicking buttons, and navigating the screen. Recommended to test with Sol at medium/high reasoning on a small task.
 
 ## Related Pages
 - [[concepts/gpt/gpt-5-5]] — Predecessor model

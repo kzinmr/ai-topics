@@ -696,7 +696,7 @@
 - [[entities/seangoedecke-com]] — Sean Goedecke
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. Provides 6 specialized tools for code analysis, search, and retrieval from any...
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
-- [[entities/sebastian-raschka]] — Sebastian Raschka
+- [[entities/sebastian-raschka]] — Sebastian Raschka — ML researcher, 'Build a Reasoning Model (From Scratch)', LLM architecture analysis
 - [[entities/semianalysis]] — SemiAnalysis
 - [[entities/sentra-app]] — Sentra.app
 - [[entities/sequent]] — Sequent
@@ -881,7 +881,7 @@
 - [[concepts/agent-first-codebase-design]] — Agent-First Codebase Design
 - [[concepts/agent-first-design]] — Agent-First Design
 - [[concepts/agent-harness-primitives]] — Agent Harness Primitives
-- [[concepts/agent-harnesses]] — Agent Harnesses — Bitter Lesson philosophy, practical construction patterns (opinionated adapters, permission encoding, structured artifacts, multi-model routing)
+- [[concepts/agent-harnesses]] — Agent Harnesses — Bitter Lesson philosophy, practical construction patterns, shrinking harnesses as models improve
 - [[concepts/agent-integration-platforms]] — Agent Integration Platforms — middleware for connecting AI agents to SaaS tools (Nango, Composio, Arcade)
 - [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
 - [[concepts/agent-media]] — Design philosophy for evolving a structured knowledge base (wiki) into an audience-aware, multi-channel distribution ...
@@ -1078,7 +1078,7 @@
 - [[concepts/ai-economics-post-scarcity]] — AI Economics: Post-Scarcity Dynamics
 - [[concepts/ai-education]] — ai-education
 - [[concepts/ai-engineer-roadmap-2026]] — The 2026 AI Engineer Roadmap
-- [[concepts/ai-engineering]] — AI Engineering
+- [[concepts/ai-engineering]] — AI Engineering — 5 trends from AIEWF 2026: harness engineering, loop engineering, FDEs/software factories, context engineering, skill engineering
 - [[concepts/ai-engineering-metrics-vanity]] — AI Engineering Metrics — Vanity vs. Outcome Measurement
 - [[concepts/ai-evals-people]] — ai-evals-people
 - [[concepts/ai-executive-orders]] — AI Executive Orders — U.S. presidential directives governing frontier AI access, including government-mediated model release gatekeeping
@@ -1726,7 +1726,7 @@
 - [[concepts/gpt/gpt-5-5-instant-system-card]] — GPT-5.5 Instant System Card
 - [[concepts/gpt/gpt-5-5-spud]] — GPT-5.5 \"Spud\
 - [[concepts/gpt/gpt-5-5-system-card]] — GPT-5.5 System Card
-- [[concepts/gpt/gpt-5-6]] — GPT-5.6 (Sol/Terra/Luna) — OpenAI's three-model family; GA July 9 2026 with Programmatic Tool Calling, Multi-agent (beta), ultra mode; Agents' Last Exam 53.6 (beats Fable 5 by 13.1pt); 1M context, 128K output, Feb 2026 cutoff; GPT-5.4 retiring Jul 23
+- [[concepts/gpt/gpt-5-6]] — GPT-5.6 (Sol/Terra/Luna) — OpenAI's three-model family; GA July 9 2026; practical usage patterns, Luna/Terra/Sol differentiation, Ultra mode
 - [[concepts/gpt/gpt-5-codex-system-card]] — GPT-5-Codex System Card
 - [[concepts/gpt/gpt-5-system-card]] — GPT-5 System Card (August 2025)
 - [[concepts/gpt/gpt-chatgpt-agent-system-card]] — ChatGPT Agent System Card (July 2025)
@@ -1958,7 +1958,7 @@
 - [[concepts/lisp]] — Lisp
 - [[concepts/llama-4]] — LLaMA 4
 - [[concepts/llama-cpp]] — Llama Cpp
-- [[concepts/llm-architecture-complexity]] — LLM Architecture Complexity
+- [[concepts/llm-architecture-complexity]] — LLM Architecture Complexity — Attention mechanism proliferation, composability; Raschka's KV cache analysis, RLVR/PRM predictions, shrinking harnesses
 - [[concepts/llm-assisted-development]] — LLM-Assisted Development
 - [[concepts/llm-assisted-writing]] — LLM-Assisted Writing
 - [[concepts/llm-augmented-knowledge-retrieval]] — LLM-Augmented Knowledge Retrieval
@@ -2752,8 +2752,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (16 pages)
+## Events (17 pages)
 
+- [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
 - [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft
 - [[events/2026-07-08-openai-gpt-live]] — OpenAI GPT-Live: real-time voice model with GPT-5.5 delegation (July 8)
 - [[events/grok-4-5-launch]] — SpaceXAI launches Grok 4.5, first Opus-class coding & agents model co-trained with Cursor (July 9)
