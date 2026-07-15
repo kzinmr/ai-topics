@@ -6,7 +6,7 @@ aliases:
   - TAU-bench
   - τ-bench ecosystem
 created: 2026-04-25
-updated: 2026-05-08
+updated: 2026-07-15
 tags:
 sources: []
   - benchmark
@@ -148,8 +148,8 @@ Automatic and faithful evaluation is achieved by comparing the database state at
 | Generation | Name | Release Date | Domains | Control Model | New Evaluation Axes | Paper | Conference |
 |------|------|---------|---------|-----------|-------------|------|------|
 | **1st** | **τ-bench** | June 2024 | τ-airline, τ-retail | Single control (agent only operates tools) | Multi-turn dialogue, policy compliance, pass^k | [2406.12045](https://arxiv.org/abs/2406.12045) | ICLR 2025 |
-| **2nd** | **τ²-bench** | June 2025 | Telecom | Dual control (agent + user operate tools) | Collaborative operation, Dec-POMDP model, communication quality | [2506.07982](https://arxiv.org/abs/2506.07982) | Under review |
-| **3rd** | **τ³-Bench** | March 2026 | τ-Knowledge (τ-Banking: 698 docs), τ-Voice (278 tasks) | Knowledge search + tools / Full-duplex audio | Unstructured knowledge navigation, voice dialogue quality | [2603.04370](https://arxiv.org/abs/2603.04370) / [2603.13686](https://arxiv.org/abs/2603.13686) | Preprint |
+| **2nd** | **τ²-bench** | June 2025 | Telecom | Dual control (agent + user operate tools) | Collaborative operation, Dec-POMDP model, communication quality | [2506.07982](https://arxiv.org/abs/2506.07982) | ICML 2026 (Oral) |
+| **3rd** | **τ³-Bench** | March 2026 | τ-Knowledge (τ-Banking: 698 docs), τ-Voice (278 tasks) | Knowledge search + tools / Full-duplex audio | Unstructured knowledge navigation, voice dialogue quality | [2603.04370](https://arxiv.org/abs/2603.04370) / [2603.13686](https://arxiv.org/abs/2603.13686) | ICML 2026 |
 
 ### 1st Generation: τ-bench — Establishing the Foundation
 

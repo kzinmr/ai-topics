@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-07-14
+updated: 2026-07-15
 type: entity
 tags:
   - company
@@ -22,6 +22,7 @@ sources:
   - raw/articles/2025-08-19_sierra_simulations-the-secret-behind-every-great-agent.md
   - raw/articles/sierra.ai--blog-ai-pilling-our-company-lessons-learned--168c9b80.md
   - raw/articles/sierra.ai--blog-announcing-our-partnership-with-softbank-corp--4a150bd0.md
+  - raw/articles/2026-07-14_sohmray_icml-2026-research-trends.md
 ---
 
 # Sierra
@@ -92,6 +93,17 @@ Sierra operates in the rapidly growing **AI customer service agent** space:
 
 Sierra develops and maintains evaluation benchmarks for conversational AI agents, notably **[[concepts/ai-benchmarks/tau-knowledge|τ-Knowledge]]**, an extension of [[concepts/ai-benchmarks/tau-bench|τ-Bench]] that evaluates agents on realistic knowledge work.
 
+### ICML 2026 — tau-bench Presentations (July 2026)
+
+Sierra researchers presented **three tau-bench papers** at ICML 2026 in Seoul, including:
+
+- **tau2-bench** — Received an **oral presentation** (top 0.7% of ~24,000 submissions, one of 168 orals)
+- **tau-bench** — Core conversational agent benchmark
+- **tau-Knowledge** — Knowledge-grounded agent evaluation
+- **tau-Voice** — Voice interaction agent evaluation
+
+The tau-bench suite was cited in invited talks and papers throughout the conference. Presenting team included [[entities/soham-ray|Soham Ray]], Ola Zytek, Ben Shi, Pedram Razavi, and Victor Barres.
+
 ### τ-Knowledge / τ-Banking
 
 τ-Knowledge evaluates agents on their ability to search a realistic knowledge base (698 documents, ~195K tokens across 21 product categories), reason over findings, and execute multi-step tool calls — all while handling live customer conversations in a fintech-inspired **τ-Banking** domain.
@@ -154,6 +166,7 @@ Sierra's valuation ($15B+) and ARR growth ($200M+) make it one of the highest-va
 ## Related
 
 - [[entities/bret-taylor]] — Co-founder, former Salesforce co-CEO
+- [[entities/soham-ray]] — Researcher; presented tau-bench at ICML 2026
 - [[concepts/service-as-software]] — Business model thesis
 - [[concepts/ai-agents]] — Core technology
 - [[concepts/ai-benchmarks/tau-knowledge]] — Sierra's knowledge-grounded agent benchmark

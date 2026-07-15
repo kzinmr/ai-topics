@@ -5,7 +5,7 @@ aliases:
   - tau-squared-bench
   - tau2-bench
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-07-15
 tags:
   - benchmark
   - evaluation
@@ -22,7 +22,7 @@ sources:
 
 # τ²-bench
 
-**τ²-bench** (tau-squared-bench) breaks the "single control" assumption of τ-bench, introducing a **"dual-control" environment where both the agent and the user can manipulate a shared environment using tools**. Published June 2025 by Victor Barres, Honghua Dong, Soham Ray, Xujie Si, and Karthik Narasimhan.
+**τ²-bench** (tau-squared-bench) breaks the "single control" assumption of τ-bench, introducing a **"dual-control" environment where both the agent and the user can manipulate a shared environment using tools**. Published June 2025 by Victor Barres, Honghua Dong, Soham Ray, Xujie Si, and Karthik Narasimhan. **Presented as an Oral at ICML 2026** (top 0.7% of ~24,000 submissions).
 
 > Paper: [arXiv:2506.07982](https://arxiv.org/abs/2506.07982) "τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment"
 

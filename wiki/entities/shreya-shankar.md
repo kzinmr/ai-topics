@@ -1,9 +1,10 @@
 ---
 title: "Shreya Shankar"
 tags: [person]
-sources: []
+sources:
+  - raw/articles/2026-07-14_sohmray_icml-2026-research-trends.md
 created: 2026-04-24
-updated: 2026-04-13
+updated: 2026-07-15
 type: entity
 ---
 
@@ -51,7 +52,8 @@ Shankar's work is distinguished by its **systematic, data-driven approach** to A
 | Sep 2025 | **Lenny's Podcast** — "Why AI evals are the hottest new skill for product builders" (101.5K+ YouTube views) |
 | Nov 2025 | HILDA Workshop: "Why Is Dataset Search Still So Hard?" |
 | 2025 | NAACL 2025 (Oral): **PROMPTEVALS** — Dataset of Assertions and Guardrails for Production LLM Pipelines (co-first author with mentee Reya Vir) |
-| 2026 | On CS faculty job market — Research Statement on LLM-powered data systems |
+|| 2026 | On CS faculty job market — Research Statement on LLM-powered data systems |
+|| Jul 2026 | **ICML 2026**: Presented three tau-bench papers (tau-bench, tau2-bench oral — top 0.7% of 24K submissions, tau-Knowledge, tau-Voice) with coauthors including [[entities/soham-ray|Soham Ray]], Ola Zytek, Ben Shi, Pedram Razavi, Victor Barres at Sierra |
 
 ## Core Philosophy
 
@@ -196,6 +198,7 @@ Her research has been adopted by **OpenAI and Anthropic teams** for their evalua
 - [[comparisons/eval-tools-comparison]] — Tool selection framework
 - [[concepts/evaluation/critique-shadowing]] — Husain's methodology (complementary)
 - [[entities/drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design
+- [[entities/soham-ray]] — Sierra researcher; collaborator on tau-bench ICML 2026 presentations
 
 ## Related Concepts
 

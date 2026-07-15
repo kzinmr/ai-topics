@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (850 pages)
+## Entities (851 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -731,6 +731,7 @@
 - [[entities/slalom]] — Slalom
 - [[entities/snyk]] — Snyk
 - [[entities/softwaredoug]] — Doug Turnbull (softwaredoug)
+- [[entities/soham-ray]] — Soham Ray — Researcher at Sierra; tau-bench suite, ICML 2026 oral
 - [[entities/solo-founder-stack]] — Solo Founder Stack
 - [[entities/soundstream]] — SoundStream
 - [[entities/speech-tokenizer]] — SpeechTokenizer
