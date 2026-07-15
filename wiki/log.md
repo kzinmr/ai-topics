@@ -1,3 +1,43 @@
+## [2026-07-15] active-crawl | 5 new concept pages, 2 new entity pages, 5 raw articles
+
+### Changes
+
+**New concept pages:**
+- [[concepts/bonsai-27b]] — Prism ML's 27B model running on phones via extreme quantization (1.125 bits/param)
+- [[concepts/juggler]] — Open-source GUI coding agent by Julian Storer (JUCE creator), AGPL + Apache SDK
+- [[concepts/claude-memory-heist]] — Prompt injection attack exfiltrating user data from Claude's memory system via web_fetch navigation
+- [[concepts/ai-preflight-safety-testing]] — Demis Hassabis endorses mandatory pre-deployment safety evaluations (FINRA-style SRO)
+- [[concepts/jepa-world-models]] — Joint Embedding Predictive Architecture world models (LeCun, LeMario, LeWorldModel)
+
+**New entity pages:**
+- [[entities/prism-ml]] — AI research company; creators of Bonsai 27B (Caltech, Khosla/Cerberus/Google/Samsung)
+- [[entities/qwen]] — Alibaba's LLM family (Tongyi Qianwen); base model for Bonsai 27B
+
+**Raw articles saved:**
+- raw/articles/2026-07-15_bonsai-27b-prism-ml.md
+- raw/articles/2026-07-15_juggler-gui-coding-agent.md
+- raw/articles/2026-07-15_claude-memory-heist.md
+- raw/articles/2026-07-15_ai-preflight-safety-testing.md
+- raw/articles/2026-07-15_lemario-jepa-world-model.md
+
+**Tags added to SCHEMA.md:** prism-ml, bonsai, juggler
+
+**Sources:**
+- https://prismml.com/news/bonsai-27b (HN 612 pts)
+- https://github.com/juggler-ai/juggler (HN 247 pts)
+- https://www.ayush.digital/blog/the-memory-heist (HN 354 pts)
+- https://garymarcus.substack.com/p/breaking-demis-hassabis-endorses-preflight-safety-testing-for-ai
+- https://www.benjamin-bai.com/projects/lemario (HN 108 pts)
+
+### Health Check
+| Metric | Status |
+|--------|--------|
+| New pages | 7 (5 concepts + 2 entities + 5 raw articles) |
+| Wikilinks verified | All OK across all pages |
+| SCHEMA tags | Added prism-ml, bonsai, juggler |
+| Index entries | Inserted alphabetically at correct positions |
+| Index counts | Entities 851, Concepts 1884 — match filesystem |
+
 ## [2026-07-15] Blog wiki-ingest — Armin Ronacher Tower, Codex Pets, AI Vulnerability Discovery, Pseudpocalypse
 
 **Source**: blog-triage checkpoint (20 articles: 2 take, 2 reference, 16 skip)

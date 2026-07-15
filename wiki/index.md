@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (849 pages)
+## Entities (851 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -626,6 +626,7 @@
 - [[entities/pratik-bhavsar]] — Pratik Bhavsar
 - [[entities/prefeitura-rio]] — Prefeitura Rio (IplanRIO)
 - [[entities/prime-intellect]] — Prime Intellect
+- [[entities/prism-ml]] — Prism ML — AI research company behind extreme low-bit quantization; creators of Bonsai 27B
 - [[entities/project-glasswing]] — Project Glasswing
 - [[entities/project-mariner]] — Project Mariner — Google DeepMind's Web Browsing Agent
 - [[entities/project-prometheus]] — Project Prometheus (Bezos AI)
@@ -633,6 +634,7 @@
 - [[entities/qdrant]] — Qdrant
 - [[entities/qiaochu-yuan]] — QC (Qiaochu Yuan) is a mathematician, philosopher, and writer. Former MIRI researcher, PhD student in mathematics at ...
 - [[entities/quarq-labs]] — Quarq Labs
+- [[entities/qwen]] — Qwen — Alibaba's family of large language models (Tongyi Qianwen)
 - [[entities/qwen-3-7-max]] — Qwen 3.7 Max
 - [[entities/qwen3-6-plus]] — Qwen3.6-Plus
 - [[entities/rachelbythebay-com]] — Rachel by the Bay
@@ -853,7 +855,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1881 pages)
+## Concepts (1884 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -929,12 +931,17 @@
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
 - [[concepts/ai-enabled-terrorism]] — AI-Enabled Terrorism — CASP report on Boko Haram using frontier AI for tactical planning and logistics
+- [[concepts/ai-preflight-safety-testing]] — AI Preflight Safety Testing — Proposed mandatory safety evaluations for frontier AI before deployment
 - [[concepts/apple-speechanalyzer]] — Apple SpeechAnalyzer — Next-generation on-device speech recognition API (iOS 26/macOS 26), 2.12% WER on LibriSpeech, 3-4× improvement over legacy SFSpeechRecognizer
+- [[concepts/bonsai-27b]] — Bonsai 27B — Prism ML's 27B-parameter model running on phones via extreme quantization
+- [[concepts/claude-memory-heist]] — Claude Memory Heist — Prompt injection attack exfiltrating user data from Claude's memory system
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Databricks coding agent benchmark — real-world evaluation of coding agents on production codebases
 - [[concepts/claude/fable-safety-classifiers-critique]] — Claude Fable 5 safety classifiers critique — overzealous classifiers make Fable unusable for CS research
 - [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
 - [[concepts/gpt-live]] — GPT-Live — OpenAI full-duplex real-time voice interaction mode (July 2026)
 - [[concepts/inference-provisioned-throughput]] — Provisioned Throughput — reserved inference capacity for open-weight models with token pricing and 99% SLA (Together AI, July 2026)
+- [[concepts/jepa-world-models]] — JEPA World Models — Joint Embedding Predictive Architecture for world models (LeCun, LeMario)
+- [[concepts/juggler]] — Juggler — Open-source GUI coding agent by JUCE creator Julian Storer
 - [[concepts/lingbot-world-infinity]] — LingBot-World-Infinity — Open-source world model with 60-minute coherent rollouts from Tsinghua THU-KING-NIC-Lab
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
 - [[concepts/wiki-memory]] — Wiki Memory — Agent-maintained file-based knowledge layer pattern (Harrison Chase, 2026)
