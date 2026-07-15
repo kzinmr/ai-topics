@@ -2,7 +2,7 @@
 title: "Unsloth — Fast Fine-Tuning"
 type: concept
 created: 2026-04-19
-updated: 2026-04-19
+updated: 2026-07-15
 tags:
   - fine-tuning
   - optimization
@@ -10,7 +10,9 @@ related:
   - concepts/post-training/_index
   - concepts/post-training/axolotl
   - concepts/post-training/trl
-sources: []
+sources:
+  - raw/articles/2026-07-15_danielhanchen_inkling-1bit-gguf-quants.md
+  - raw/articles/2026-07-15_danielhanchen_inkling-unsloth-studio.md
 ---
 
 # Unsloth
@@ -93,8 +95,12 @@ trainer.train()
 - [[concepts/post-training/axolotl]] — Alternative framework with YAML configuration
 - [[concepts/post-training/trl]] — TRL library integration
 - [[concepts/post-training/peft-lora-qlora]] — LoRA/QLoRA fundamentals
+- [[concepts/inkling]] — Inkling model with Unsloth GGUF quants
+- [[entities/daniel-han]] — Unsloth co-founder & CEO
 
 ## Sources
 
 - [Unsloth Documentation](https://docs.unsloth.ai/)
 - [Unsloth GitHub](https://github.com/unslothai/unsloth)
+- [Inkling GGUF on Hugging Face](https://huggingface.co/unsloth/inkling-GGUF)
+- [Inkling in Unsloth Studio](https://unsloth.ai/docs/models/inkling)

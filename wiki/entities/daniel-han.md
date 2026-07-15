@@ -2,7 +2,7 @@
 title: Daniel Han
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-07-15
 source: "x-account"
 tags:
   - person
@@ -10,7 +10,9 @@ tags:
   - open-source
   - infrastructure
   - fine-tuning
-sources: []
+sources:
+  - raw/articles/2026-07-15_danielhanchen_inkling-1bit-gguf-quants.md
+  - raw/articles/2026-07-15_danielhanchen_inkling-unsloth-studio.md
 ---
 
 
@@ -108,6 +110,8 @@ Daniel consistently shares the mathematical and engineering details behind Unslo
 | Unsloth Studio (2026) | Web UI for local training, inference, and comparison |
 | vLLM integration | 20x more throughput, 50% VRAM savings |
 | Dynamic 4-bit quants | 1.58bit Dynamic R1 GGUF format |
+| **Inkling 1-bit GGUF (Jul 2026)** | Collab with Thinking Machines: 86% size reduction (270GB vs 1.9TB), 74.2% top-1% accuracy |
+| **Inkling in Unsloth Studio (Jul 2026)** | Interleaved tool calling, web search + code execution, numerical reasoning levels (0.0–0.99), vision + audio |
 
 **Unsloth Studio** features:
 - Auto-creates datasets from PDF, CSV, DOCX
@@ -146,6 +150,8 @@ Investment analysis scored Unsloth at **8.10/10** (highest in the OSS index):
 
 | Post | Date | Topic |
 |------|------|-------|
+| **Inkling 1-bit GGUF Quants** | Jul 2026 | Collab with Thinking Machines: 86% smaller quantized Inkling model with multimodal support |
+| **Inkling in Unsloth Studio** | Jul 2026 | Tool calling, web search, code execution, vision + audio for Inkling locally |
 | **How to tune your own LLM with GRPO, Common Crawl and Unsloth** | 2025 | Production guide to fine-tuning with free Colab compute |
 | **Train your own R1 reasoning model locally (GRPO)** | Feb 2025 | Reproducing DeepSeek's "aha moment" on 7GB VRAM |
 | **GRPO: 90% Memory Reduction** | 2025 | Technical deep-dive into memory-efficient GRPO |

@@ -1,3 +1,5 @@
+| 2026-07-15 22:30 UTC | x-accounts-scan | X accounts scan: 3 new posts from 2 accounts (danielhanchen ×2, shloked ×1). Created raw articles: inkling-1bit-gguf-quants, inkling-unsloth-studio, rabbithole-infinite-canvas-learning. Updated entities: daniel-han (Inkling GGUF + Studio), shlok-khemani (Rabbithole). Created concepts: inkling.md, rabbithole.md. Enriched stubs: concept/unsloth.md, concept/unsloth-fast-fine-tuning.md. Updated post-training/unsloth.md. Index +2 concepts (1864→1866). |
+
 | 2026-07-15 18:22 UTC | dreaming-wiki-ingest | Upstream dreaming-group at 18:00 UTC already completed triage — Takes=0 (saturation day). All daily pipelines (blog, newsletter, active-crawl) ran before dreaming. Archive confirmed at c36c6c86. No action needed. |
 | 2026-07-15 18:00 UTC | dreaming | Saturation day — Takes=0, all pipelines already ran today. 30 articles triaged as skip (sitemap company blogs + already-processed active-crawl/blog/newsletter). Archive: 30 new, total 1,661 URLs |
 ## [2026-07-15] watchdog | Auto-fix header counts, verify structural health

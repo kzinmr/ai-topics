@@ -1,0 +1,30 @@
+{
+  "archived_at": "2026-07-15T20:07:15.740521+00:00",
+  "triage_run_id": "20260715T200014Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingestバッチ（5記事）。全記事が既存Wikiで完全にカバー済み。MAI-Thinking-1 Tech Reportはentities/mai-thinking-1.md(165行)+concepts/mai-thinking-1-tech-report.md(227行)+concepts/microsoft-mai-models.mdで包括的カバー済み（7月に複数回拡充）。BenchFlow Awesome Agent Evalsはconcepts/ai-benchmarks/benchflow-tool.md(118行)にソースとして登録済み。Reframing Superintelligence(Drexler 2019)はconcepts/cais.md+entities/k-eric-drexler.mdで文書化済み。Grant Sanderson AI/mathはentities/grant-sanderson.mdに収録済み。Adam Brown一般相対性理論はAI関連部が薄く非AIスコープ。Takes=0, References=0, Skips=5。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-mai-thinking-1",
+      "source": "raw_backlog",
+      "source_name": "MAI-Thinking-1 Tech Report",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report",
+      "url": null,
+      "raw_path": "raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ entities/mai-thinking-1.md(165行)+concepts/mai-thinking-1-tech-report.md(227行)+concepts/microsoft-mai-models.mdですでにアーキテクチャ(MoE 35B/1T)、ベンチマーク(SWE-Bench Pro 52.8%, AIME 2025 97.0%, LiveCodeBench v6 87.7%)、RL training recipe、hill-climbing machine framework、全106ページの主要セクションまで完全カバー済み。7月中に複数回拡充済み。新規内容なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-benchflow",
+      "source": "raw_backlog",
+      "source_name": "BenchFlow Awesome Agent Evals",
+      "title": "Awesome Agent Evals — curated list of 443+ eval resources",
+      "url": null,
+      "raw_path": "raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存Wikiページconcepts/ai-benchmarks/benchflow-tool.md(118行)でAwesome Agent Evalsリストの編纂方法論(11.6k papers, 47 talks transcribed, 146 deep notes)、12 must-read starter set、eval/RL-environment企業ランドスケープまで完全カバー済み。7月中に複数回拡充・archived済み。",
+      "body_excerpt": ""
+    }
+  ]
+}

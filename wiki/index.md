@@ -179,7 +179,7 @@
 - [[entities/dan-mcinerny]] — Dan McInerney
 - [[entities/dan-shipper]] — Dan Shipper — CEO of Lex (formerly Lex.page); writer on AI productivity, agent workflows
 - [[entities/daniel-de-laney]] — Daniel De Laney
-- [[entities/daniel-han]] — Daniel Han
+- [[entities/daniel-han]] — Daniel Han — Co-founder & CEO of Unsloth AI (YC S24); 2-30x faster LLM fine-tuning, Inkling 1-bit GGUF quants, Unsloth Studio
 - [[entities/daniel-miessler]] — Daniel Miessler
 - [[entities/daniel-tunkelang]] — Daniel Tunkelang
 - [[entities/daniel-van-strien]] — Daniel van Strien
@@ -711,7 +711,7 @@
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, co-founder of Lunar Strategy (250+ projects), AI marketer and Herme...
 - [[entities/sheshansh-agrawal]] — Sheshansh Agrawal
 - [[entities/shkspr-mobi]] — Terence Eden
-- [[entities/shlok-khemani]] — Shlok Khemani
+- [[entities/shlok-khemani]] — Shlok Khemani — AI agent researcher; OpenPoke, Vajra, Rabbithole infinite canvas, Claude Memory reverse-engineering
 - [[entities/shloked]] — Shlok Khemani (@shloked)
 - [[entities/shopify]] — Shopify
 - [[entities/shortcut]] — Shortcut (AI Spreadsheet Agent)
@@ -855,7 +855,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1864 pages)
+## Concepts (1866 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1899,6 +1899,7 @@
 - [[concepts/infrastructure-level-sandbox]] — Infrastructure-Level Sandbox
 - [[concepts/infrastructure-noise]] — infrastructure-noise
 - [[concepts/ink-switch]] — Ink & Switch
+- [[concepts/inkling]] — Inkling — Thinking Machines Lab multimodal model; native vision/audio, numerical reasoning levels, Unsloth 1-bit GGUF quants (86% smaller)
 - [[concepts/instruction-hierarchy]] — Instruction Hierarchy
 - [[concepts/intel-8086]] — intel-8086
 - [[concepts/intelligence-conflation]] — Intelligence Conflation
@@ -2379,6 +2380,7 @@
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B
 - [[concepts/qwen-agentworld]] — Qwen-AgentWorld — Language world models for general agents; 397B MoE model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access (June 24)
 - [[concepts/qwen3-6-27b]] — Qwen3.6-27B
+- [[concepts/rabbithole]] — Rabbithole — Infinite canvas for learning with MCP server for coding agents; by Shlok Khemani
 - [[concepts/rag-not-dead-series]] — RAG Is Not Dead — 7-Part Series
 - [[concepts/rag-systems]] — RAG Systems — Retrieval-Augmented Generation architectures, from naive RAG to advanced agentic retrieval patterns
 - [[concepts/ragatouille]] — RAGatouille
