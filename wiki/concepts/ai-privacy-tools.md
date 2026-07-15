@@ -2,10 +2,11 @@
 title: "AI Privacy Tools"
 type: concept
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-07-15
 tags: [concept, privacy, ai-agents]
 aliases: ["ai-privacy-techniques", "cors-bypass", "agent-browser-security"]
-sources: []
+sources:
+  - raw/articles/dynomight.net--pseudpocalypse--91ebe2ff.md
 ---
 
 
@@ -83,6 +84,21 @@ The risk scenario:
 
 Blake Crosley's research identifies **"silent egress"** as a critical but underappreciated attack surface: AI agents with access to private data can be tricked into exfiltrating that data through seemingly innocent cross-origin requests. The agent doesn't need to be malicious — it just needs to be instructed to fetch a URL that includes user data in the request.
 
+### Pseudpocalypse — LLM-Based Authorship Attribution (July 2026)
+
+An emerging privacy concern is **LLM-based authorship attribution** — the ability of frontier models to identify anonymous authors from their writing style alone. The dynomight.net blog (July 2026) terms this the "Pseudpocalypse" and presents both a theoretical framework and empirical demonstration.
+
+**Empirical Baseline:** Claude 4.8 can identify the author of a given text from the first 1000 words. The dynomight.net author demonstrated this on their own writing: "Given the first 1000 words of a draft of this post, Claude 4.8 knows it's me."
+
+**Information-Theoretic Framework:** The argument establishes a ~29-bit threshold for authorship identification:
+- Writing style creates a statistical "fingerprint" combining demographic features (age, education, geography), stylistic features (word frequency, punctuation, syntax), and idiosyncratic preferences (em-dash spacing, comma placement)
+- The 29-bit threshold corresponds to the population of the Anglosphere (~490 million) — if writing style contains 29+ bits of identifying information, the author is uniquely identifiable
+- Below 29 bits, anonymity is probabilistically preserved; above it, pseudonyms can be linked with high confidence
+
+**Privacy Implications for AI:** This represents a new privacy attack surface where LLMs serve as **de-anonymization engines** — not by matching known-author samples (traditional stylometry) but by inferring demographic, educational, and stylistic markers at scale. Unlike CORS-based data exfiltration (which steals data actively), authorship attribution passively identifies writers from published text alone.
+
+**Mitigation difficulty:** Unlike CORS vulnerabilities that can be patched with technical fixes, authorship attribution exploits an information-theoretic invariant — if your writing contains enough identifying features, no technical countermeasure can prevent identification short of altering one's writing style permanently.
+
 ### Data Collection vs. Data Protection
 
 The tension at the heart of AI privacy:
@@ -151,7 +167,7 @@ This vulnerability pattern affects many local AI development tools that listen o
 - [[concepts/ai-agent-traps]] — Common pitfalls in agent deployment and design
 - [[concepts/security-and-governance/agent-sandboxing]] — Isolation technologies for safe agent execution
 - [[concepts/anthropic/managed-agents]] — Managed agent services and their security approaches
--  — The practice of directing AI agents in software development
+- [[concepts/ai-privacy-tools]] — Authorship attribution and de-anonymization
 ## Sources
 
 - [Reddit: "Slingshot: A new CORS heist"](https://www.reddit.com/r/AI_Agents/comments/1lty0vz/slingshot_a_new_cors_heist/) (2026)

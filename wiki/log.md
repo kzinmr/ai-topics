@@ -1,3 +1,15 @@
+## [2026-07-15] Blog wiki-ingest — Armin Ronacher Tower, Codex Pets, AI Vulnerability Discovery, Pseudpocalypse
+
+**Source**: blog-triage checkpoint (20 articles: 2 take, 2 reference, 16 skip)
+
+**Pages enriched:**
+- entities/armin-ronacher — Added "The Tower Keeps Rising" (July 13): Tower of Babel metaphor for shared understanding collapse in AI-assisted software projects. Added to timeline + Recent Themes
+- concepts/codex/codex-superapp — Added "Codex Desktop Pets / Custom Pets" section: Pedalican by Simon Willison, multi-modal agent workflow with GPT-5.6 Sol xhigh + gpt-image-2
+- concepts/ai-vulnerability-discovery — Added "Microsoft AI-Driven Record Patch Volume — 570 Vulnerabilities (July 2026)": exploitability index critique by Satnam Narang (Tenable)
+- concepts/ai-privacy-tools — Added "Pseudpocalypse — LLM-Based Authorship Attribution": ~29-bit information-theoretic threshold, Claude 4.8 identification from 1000 words
+
+**References archived**: 16 skip + 2 reference items
+
 ## [2026-07-15] Newsletter wiki-ingest — GPT-5.6 usage patterns, AI Engineering 5 trends, LLM Architecture (Raschka)
 
 **Source**: 3 newsletters triaged and ingested (Ben's Bites, swyx/Latent Space, Vanishing Gradients)

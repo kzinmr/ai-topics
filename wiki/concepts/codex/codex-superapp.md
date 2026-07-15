@@ -2,7 +2,7 @@
 title: "OpenAI Codex Superapp"
 type: concept
 created: 2026-04-24
-updated: 2026-05-01
+updated: 2026-07-15
 tags:
   - product
   - openai
@@ -92,6 +92,16 @@ This aligns with the broader trend of [[concepts/ai-agent-engineering]] where ag
 
 See [[concepts/gpt/index]] for GPT model details, [[entities/openai]] for company context, [[concepts/openai/agents-sdk]] for the official SDK approach.
 
+### Codex Desktop Pets / Custom Pets (May 2026)
+
+In May 2026, Codex Desktop introduced **"pets"** — animated companion characters that appear on the user's desktop providing visual status updates on active Codex tasks. The feature is reminiscent of Clippy (Microsoft Office Assistant), operating as a decorative overlay rather than a functional interface.
+
+**Custom Pet Creation:** Users can create their own custom pets by describing the desired character to GPT-5.6 Sol xhigh. The model autonomously uses `gpt-image-2` to generate sprite assets through multiple rounds, producing character reference images, individual animation frames, and combined sprite sheets.
+
+**Simon Willison's Pedalican** (July 14, 2026): [[entities/simon-willison|Simon Willison]] demonstrated the custom pet feature by creating "Pedalican" — a pelican riding a bicycle. The GIF-based animations include multiple loops (waving, bouncing). Willison published the complete workflow as open source at [simonw/pedalican](https://github.com/simonw/pedalican), including every generated image, combined sprite sheet, and GIF for each animation loop. The implementation uses two Apache 2.0 licensed Codex skills for sprite generation.
+
+**Architecture Note:** Custom pet creation is notable as a multi-modal agent workflow — the model autonomously switches between text-based reasoning (iterative prompt refinement) and image generation (gpt-image-2 tool calls), with no human intervention in the sprite generation pipeline. This demonstrates Codex Desktop's capability as a platform for compound AI systems beyond pure code generation.
+
 ## Related Concepts
 
 - [[concepts/gpt/index]] — GPT-5.5 and the GPT model series
@@ -106,3 +116,4 @@ See [[concepts/gpt/index]] for GPT model details, [[entities/openai]] for compan
 -  (Simon Willison Newsletter, 2026-04-24)
 - [Simon Willison: GPT-5.5 via Codex backdoor API](https://simonwillison.net/2026/Apr/23/gpt-5-5/)
 - [OpenAI Index: Introducing GPT-5.5](https://openai.com/index/introducing-gpt-5-5/)
+- [Simon Willison: Codex Desktop pets (Pedalican)](https://simonwillison.net/2026/Jul/14/pedalican/)

@@ -6,9 +6,9 @@ tags:
   - developer-tooling
   - web-framework
 created: 2026-04-24
-updated: 2026-07-05
+updated: 2026-07-15
 type: entity
-sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md]
+sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md]
 ---
 
 
@@ -60,7 +60,9 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 ||| 2026-06-10 | Published "**Gaslighting Openness**" — critique of how companies frame access as irresponsibility; defends the EU's DMA as essential for device and data access; criticizes Anthropic's financial incentive to restrict what people can do with Mythos and Fable models, wrapping restrictions in safety language while training on public works and blocking open-source distillation; argues true democratized access to AI is in everyone's interest |
 ||| 2026-06-13 | Published "**Dangerous Technology For Americans Only**" — analysis of US export controls on Fable 5/Mythos 5; critique of technological nationalism and European dependency on US AI infrastructure |
 ||| 2026-06-23 | Published "**The Coming Loop**" — analysis of harness-level vs agent-level loops, code quality degradation from autonomous looping, software-as-organism metaphor, and future of agentic engineering |
-||| 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
+|||| 2026-07-04 | Published "**Better Models: Worse Tools**" — discovered tool schema regression in newer Claude models for Pi's edit tool |
+||| 2026-07-13 | Published "**The Tower Keeps Rising**" — Bruegel's Tower of Babel metaphor for how AI agents remove coordination friction that previously synchronized human understanding; argues that codebases can grow without shared language, creating a system none understands |
+|| 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
 
 ## Core Ideas
 
@@ -230,6 +232,15 @@ Key findings:
   - **Strict mode fixes it:** Anthropic's strict tool invocation eliminates the issue via server-side grammar-constrained sampling.
   - **Codex didn't regress:** Harmony's `<|constrain|>json` markers enable JSON-constrained sampling — Codex models were unaffected.
   - **Implication:** Tool schemas are not neutral on Anthropic models. The more post-training happens inside Claude Code, the more other harnesses must inherit its quirks.
+
+**The Tower Keeps Rising — Shared Understanding Collapse (July 2026):** Ronacher's July 13, 2026 essay "The Tower Keeps Rising" uses Bruegel's Tower of Babel painting to argue that AI agents remove the friction that previously synchronized human understanding in software projects. Key arguments:
+  - The shared language of a software project is not English or Python but the common understanding of what its concepts mean, where boundaries are, which invariants matter, who owns what, and why the system has the shape it does
+  - Before agents, some of this shared understanding was maintained by friction — having to read others' code, ask questions, coordinate. This friction synchronized people's understanding
+  - Agents remove that friction: "I can ask an agent to add OAuth, you can ask one to add caching... Each change can be reasonable in isolation. The code can compile, the tests can pass... None of us necessarily has to talk to the others"
+  - Unlike the biblical Babel where loss of common language stops construction, in AI-assisted engineering "construction can continue after shared understanding has already collapsed"
+  - "The tower does not fall, and so we do not notice what was lost. It just keeps rising."
+  - This extends Ronacher's earlier arguments about "vibeslop" and code quality degradation (June 2026's 'The Coming Loop') from the codebase level to the project/organizational level
+
 
 ## Influence Metrics
 
