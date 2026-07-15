@@ -1,3 +1,13 @@
+## [2026-07-15] watchdog | Auto-fix header counts, verify structural health
+
+### Changes
+- Fixed Entities header: 851→850 pages
+- Fixed Concepts header: 1,884→1,864 pages
+- Verified 0 stale index entries (541 false positive from flat scan)
+- Verified 0 index corruption issues
+
+---
+
 ## [2026-07-15] active-crawl | 5 new concept pages, 2 new entity pages, 5 raw articles
 
 ### Changes
