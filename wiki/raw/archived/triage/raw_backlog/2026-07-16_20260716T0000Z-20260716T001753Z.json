@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-07-16T00:19:17.763085+00:00",
+  "triage_run_id": "20260716T0000Z-20260716T001753Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingestバッチ（5記事）。全記事が既存Wikiで完全にカバー済みまたは既にアーカイブ済み。MAI-Thinking-1 Tech Reportはconcepts/mai-thinking-1-tech-report.md(227行)+entities/mai-thinking-1.md(165行)で包括的カバー（アーキテクチャ・RL・訓練インフラ・ベンチマーク・安全性）。BenchFlow Awesome Agent Evalsはconcepts/ai-benchmarks/benchflow-tool.md(118行)に10セクション+12Must-Read+企業ランドスケープまで収録。Reframing Superintelligence(Drexler 2019)はconcepts/cais.md+entities/k-eric-drexler.mdで文書化済み。Grant Sanderson AI/mathはentities/grant-sanderson.mdに収録済み。Adam Brown一般相対性理論はAIスコープ外。Takes=0, References=0, Skips=5。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-mai-thinking-1",
+      "source": "raw_backlog",
+      "source_name": "MAI-Thinking-1 Tech Report",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report",
+      "url": null,
+      "raw_path": "raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存Wikiで完全カバー済み。concepts/mai-thinking-1-tech-report.md(227行)=アーキテクチャ(attention, MoE, scaling ladder)、RL(Modified GRPO with adaptive entropy control, reward decomposition)、訓練インフラ(8K GB200, 90% goodput)、安全評価。entities/mai-thinking-1.md(165行)=モデル仕様・ベンチマーク比較・RLアプローチ・安全。raw articleは両ページのsourcesに登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

@@ -772,7 +772,7 @@
 - [[entities/theodoros-galanos]] — AI researcher and practitioner at the intersection of harness engineering, agentic AI, and architecture/engineering/c...
 - [[entities/thibault-sottiaux]] — Thibault Sottiaux
 - [[entities/thin-bi-tool]] — The trend of BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools...
-- [[entities/thinking-machines-lab]] — Thinking Machines Lab — AI company building decentralized, customizable models that extend human will and judgment; advocates for distributed alignment
+- [[entities/thinking-machines-lab]] — Thinking Machines Lab — AI company building decentralized, customizable models; creators of Inkling (975B-A41B MoE multimodal Apache 2.0, Intelligence Index 41)
 - [[entities/thomas-capelle]] — Thomas Capelle
 - [[entities/thomas-wiecki]] — Thomas Wiecki
 - [[entities/thorsten-ball]] — Thorsten Ball
@@ -1900,7 +1900,7 @@
 - [[concepts/infrastructure-level-sandbox]] — Infrastructure-Level Sandbox
 - [[concepts/infrastructure-noise]] — infrastructure-noise
 - [[concepts/ink-switch]] — Ink & Switch
-- [[concepts/inkling]] — Inkling — Thinking Machines Lab multimodal model; native vision/audio, numerical reasoning levels, Unsloth 1-bit GGUF quants (86% smaller)
+- [[concepts/inkling]] — Inkling — Thinking Machines Lab multimodal model; 975B/41B active MoE, Apache 2.0, 1M context, hybrid attention 5:1, Intelligence Index 41, Together AI/Modal day-0 support, Unsloth 1-bit GGUF quants
 - [[concepts/instruction-hierarchy]] — Instruction Hierarchy
 - [[concepts/intel-8086]] — intel-8086
 - [[concepts/intelligence-conflation]] — Intelligence Conflation

@@ -1,0 +1,65 @@
+{
+  "run_id": "20260716T071023Z",
+  "triaged_at": "2026-07-16T07:10:23.596439+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 3,
+  "classifications": [
+    {
+      "message_id": "<20260715163606.3.c4e299134e205fe5@mg2.substack.com>",
+      "subject": "Builder-Executives Are Getting Paid Like Pro Athletes",
+      "date": "2026-07-15",
+      "source_label": "uid=370",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-15-builder-executives-are-getting-paid-like-pro-athletes.md",
+      "classification": "low",
+      "reason": "Business/tech executive compensation topic from 'The Skip' newsletter. Subject is about builder-executives being paid like pro athletes. While potentially tangential to AI company executives, the topic is not core AI/LLM technology. No AI-specific content visible in available links.",
+      "ai_relevance": false,
+      "action": "skip",
+      "article_count": 20,
+      "unique_external_urls": 0
+    },
+    {
+      "message_id": "<20260715.165126.b97a7022@mta38>",
+      "subject": "Big update on OpenAIs upcoming hardware: ChatGPT within a Body",
+      "date": "2026-07-15",
+      "source_label": "uid=371",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-15-big-update-on-openais-upcoming-hardware-chatgpt-within-a-body.md",
+      "classification": "critical",
+      "reason": "OpenAI hardware product development — 'ChatGPT within a Body' likely refers to the OpenAI x Jony Ive hardware device or similar embodied AI initiative. Directly relevant to OpenAI entity page, AI hardware concept, and embodied AI topics.",
+      "ai_relevance": true,
+      "action": "ingest_and_enrich",
+      "article_count": 20,
+      "priority_targets": [
+        {"type": "entity", "name": "openai", "reason": "New hardware product development"},
+        {"type": "concept", "name": "ai-hardware", "reason": "Physical AI device/body form factor"}
+      ],
+      "unique_external_urls": 20,
+      "note": "All 20 links are beehiiv tracking redirects — will need resolution at ingest time to get actual article URLs"
+    },
+    {
+      "message_id": "<20260716061805.3.bd3c18527e3af82c@mg-d1.substack.com>",
+      "subject": "[AINews] Thinky's Inkling: 975B-A41B multimodal, new best American Apache 2.0 open model (with Inkling-Small, 276B…",
+      "date": "2026-07-16",
+      "source_label": "uid=372",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-16-ainews-thinky-s-inkling-975b-a41b-multimodal-new-best-american-apache-2-0-open-m.md",
+      "classification": "critical",
+      "reason": "Major model release: Thinky's Inkling — a 975B total / 41B active multimodal model with Apache 2.0 license. Described as 'new best American Apache 2.0 open model'. Also includes Inkling-Small (276B). From swyx's AINews newsletter. Directly relevant to open-source AI models, model entity pages, and Apache 2.0 open model tracking.",
+      "ai_relevance": true,
+      "action": "ingest_and_enrich",
+      "article_count": 20,
+      "priority_targets": [
+        {"type": "entity", "name": "thinky-inkling", "reason": "New open model family release"},
+        {"type": "entity", "name": "swyx", "reason": "AINews newsletter source, already tracked"},
+        {"type": "concept", "name": "open-source-llms", "reason": "New Apache 2.0 open model benchmark leader"}
+      ],
+      "unique_external_urls": 12,
+      "note": "Links are Substack redirects. AINews from swyx (publication_id=1084089). Model specs: 975B total params, 41B active (MoE), multimodal, Apache 2.0, American-made."
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 0,
+    "low": 1,
+    "skip": 1,
+    "ingest_and_enrich": 2
+  }
+}
