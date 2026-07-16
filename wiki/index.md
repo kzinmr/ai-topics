@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (851 pages)
+## Entities (852 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -856,7 +856,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1866 pages)
+## Concepts (1891 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -913,6 +913,7 @@
 - [[concepts/agentic-search]] — Agentic Search
 - [[concepts/agentic-theory]] — AI Programming as Theory Building
 - [[concepts/agentic-web]] — Agentic Web — The Web Paradigm Shift from Human-Centric to Agent-Centric
+- [[concepts/agentty]] — Agentty — C++26 drop-in Claude Code alternative, 11MB static binary, sub-ms startup, MIT licensed
 - [[concepts/agents-architecture-scaffolding]] — Agents Architecture Scaffolding
 - [[concepts/agents-mcp-rl-course]] — Production-Ready Agent Engineering: From MCP to RL
 - [[concepts/agents-md-evaluation]] — AGENTS.md Evaluation — Do Context Files Help Coding Agents?
@@ -940,6 +941,7 @@
 - [[concepts/claude/fable-safety-classifiers-critique]] — Claude Fable 5 safety classifiers critique — overzealous classifiers make Fable unusable for CS research
 - [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
 - [[concepts/gpt-live]] — GPT-Live — OpenAI full-duplex real-time voice interaction mode (July 2026)
+- [[concepts/gpt-red]] — GPT-Red — OpenAI's automated LLM red-teaming system using self-play to discover prompt injection attacks (84% vs 13% human)
 - [[concepts/inference-provisioned-throughput]] — Provisioned Throughput — reserved inference capacity for open-weight models with token pricing and 99% SLA (Together AI, July 2026)
 - [[concepts/jepa-world-models]] — JEPA World Models — Joint Embedding Predictive Architecture for world models (LeCun, LeMario)
 - [[concepts/juggler]] — Juggler — Open-source GUI coding agent by JUCE creator Julian Storer
@@ -1764,6 +1766,7 @@
 - [[concepts/great-pendulum]] — great-pendulum
 - [[concepts/griffin-adams]] — griffin-adams
 - [[concepts/grok-computer]] — Grok Computer
+- [[concepts/grok-mermaid]] — Grok Mermaid — Self-contained Rust terminal renderer for Mermaid diagrams extracted from Grok Build CLI
 - [[concepts/gte-moderncolbert]] — GTE-ModernColBERT
 - [[concepts/guaranteed-minimum-income]] — guaranteed-minimum-income
 - [[concepts/hack-club]] — Hack Club

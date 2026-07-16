@@ -1,5 +1,9 @@
 ## 2026-07-16
 
+### Active Crawl
+
+| 2026-07-16 12:00 UTC | active-crawl | 3 new concept pages: [[concepts/gpt-red]] (OpenAI automated red-teaming via self-play, 84% success), [[concepts/grok-mermaid]] (Rust terminal Mermaid renderer from Grok Build), [[concepts/agentty]] (C++26 Claude Code alternative, 11MB binary). Raw articles: 2026-07-15_mit-technology-review_gpt-red.md, 2026-07-16_github_agentty-cpp26-coding-agent.md. Sources: MIT Technology Review, Simon Willison, GitHub/1ay1. Index: Concepts 1866->1891, Entities 851->852. |
+
 ### Blog Wiki Ingest
 
 - **entities/grok-build.md**: Added "Open Source Release (July 2026)" section — Apache 2.0 release, 844,530 lines Rust, code structure analysis (Simon Willison, July 15)
