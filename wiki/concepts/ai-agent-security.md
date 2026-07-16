@@ -4,7 +4,7 @@ type: concept
 aliases:
   - ai-agent-security
 created: 2026-04-25
-updated: 2026-06-03
+updated: 2026-07-16
 tags:
   - concept
   - agent-safety
@@ -15,6 +15,7 @@ sources:
   - raw/articles/simonwillison.net--2026-may-26-copilot-cowork-exfiltrates-files--696365c2.md
   - raw/articles/simonwillison.net--2026-may-26-the-pressure--405f1be6.md
   - raw/articles/simonwillison.net--2026-jun-1-hackers-simply-asked-meta-ai--9abda8fb.md
+  - raw/articles/simonwillison.net--2026-jul-15-claude-web-fetch-exfiltration--74f6bdc7.md
 ---
 # AI Agent Security
 
@@ -108,6 +109,20 @@ Unlike standard prompt injection attacks (where an attacker tricks the model int
 - Willison's verdict: *"This one hardly even qualifies as a prompt injection. Don't wire your support bot up to allow one-shot account takeovers!"*
 
 This incident establishes a new vulnerability class for customer-facing AI agents: **Support Bot Privilege Escalation**, distinct from prompt injection, tool-chaining attacks, or goal drift.
+
+### Claude web_fetch — Nested Link Exfiltration (July 2026)
+
+**Simon Willison** [reported](https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/) a vulnerability in the Claude AI's `web_fetch` tool discovered by **Ayush Paul**: the tool was allowed to visit URLs embedded in pages it had already fetched, enabling a **nested-link data exfiltration** attack:
+
+- Claude's `web_fetch` normally requires exact URLs from the user or `web_search` results — a **deterministic protection** against prompt-injection-style exfiltration
+- The loophole: `web_fetch` could follow links within fetched pages, allowing a **honeypot site** to guide the agent through a sequence of generated URLs to extract user data
+- The attack used a `coffee.evil.com` domain that specifically targeted clients with `Claude-User` in their user-agent header
+- **Successful extraction**: user's name, home city, and employer name
+- **Anthropic's response**: Claimed internal discovery and did not pay bug bounty; fixed by removing the ability for `web_fetch` to navigate to additional links from fetched content
+
+**Significance**: Unlike previous agent exfiltration attacks (Copilot Cowork's image tracking, Meta AI's privilege escalation), this exploit targeted the **deterministic safety boundary** of an otherwise well-designed agent tool. The fix maintains the tool's utility while closing the nested-link vector, demonstrating the ongoing tension between agent capability and security.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-15-claude-web-fetch-exfiltration--74f6bdc7]]
 
 ## Related Pages
 

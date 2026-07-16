@@ -5,7 +5,7 @@ aliases:
   - inkling
   - Thinking Machines Inkling
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-16
 tags:
   - model
   - multimodal
@@ -15,6 +15,8 @@ tags:
 sources:
   - raw/articles/2026-07-15_danielhanchen_inkling-1bit-gguf-quants.md
   - raw/articles/2026-07-15_danielhanchen_inkling-unsloth-studio.md
+  - raw/articles/together.ai--blog-together-ai-brings-thinking-machines-labs-new-model-ink--b5b36c00.md
+  - raw/articles/modal.com--blog-inkling-by-thinking-machines-labs-now-available-on-moda--07fbc32a.md
 ---
 
 # Inkling

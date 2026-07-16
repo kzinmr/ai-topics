@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-07-13
+updated: 2026-07-16
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -41,6 +41,7 @@ sources:
   - raw/articles/wheresyoured.at--the-ai-industry-is-losing--a92f13ac.md
   - raw/articles/wheresyoured.at--let-ai-burn--bdeb31fe.md
   - raw/articles/wheresyoured.at--premium-the-haters-guide-to-the-memory-crisis--0b884d04.md
+  - raw/articles/wheresyoured.at--the-openai-bubble--eb7fc2d4.md
 ---
 
 # Ed Zitron
@@ -96,8 +97,9 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | Jun 2026 | Exclusive: OpenAI 2025 Audited Financials | OpenAI lost $38.5B in 2025; $34B total costs; paid Microsoft $17.2B. FT-verified. |
 | Jun 2026 | Premium: The Silicon Valley Bubble (Part 1) | IPO race, $35B Broadcom Anthropic deal with SPV structure, $4.4B pure Anthropic notes |
 | Jun 2026 | Premium: The Silicon Valley Bubble (Part 2) | OpenAI lost $21B in 2025, $34B spend / $13B revenue, SoftBank dependency, Cal Newport comparison, 4-part bubble thesis |
-|| Jul 2026 | Let AI Burn | AI bubble collapse thesis; OpenAI/Anthropic 70% revenue from circular compute spend; $765B+ capex declared worthless; industry told to "go fuck itself" |
-|| Jul 2026 | Premium: The Hater's Guide To The Memory Crisis | HBM cost $15.27/GB, $316K per NVL72 rack, $1.894B per 1GW data center; DRAM prices up 60%; memory triopoly (Samsung/SK Hynix/Micron); NVIDIA consumes 65% of all HBM; consumer electronics price hikes |
+||| Jul 2026 | Let AI Burn | AI bubble collapse thesis; OpenAI/Anthropic 70% revenue from circular compute spend; $765B+ capex declared worthless; industry told to "go fuck itself" |
+||| Jul 2026 | The OpenAI Bubble | Largest free newsletter. "Lehman Brothers of the AI bubble" thesis — OpenAI collapse would trigger trillions in worthless capex. $852B burn through 2030. "Cult-like psychosis" framing. Synthesis of 6 months of research. |
+||| Jul 2026 | Premium: The Hater's Guide To The Memory Crisis | HBM cost $15.27/GB, $316K per NVL72 rack, $1.894B per 1GW data center; DRAM prices up 60%; memory triopoly (Samsung/SK Hynix/Micron); NVIDIA consumes 65% of all HBM; consumer electronics price hikes |
 
 ## AI Is Too Expensive (May 2026)
 

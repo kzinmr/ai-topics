@@ -1,3 +1,14 @@
+## 2026-07-16
+
+### Blog Wiki Ingest
+
+- **entities/grok-build.md**: Added "Open Source Release (July 2026)" section — Apache 2.0 release, 844,530 lines Rust, code structure analysis (Simon Willison, July 15)
+- **entities/simon-willison.md**: Added 2 entries — Grok Build OSS analysis and Claude web_fetch data exfiltration vulnerability (July 15)
+- **entities/ed-zitron.md**: Added "The OpenAI Bubble" to Notable Articles table — Lehman Brothers of AI framing, cult-like psychosis thesis (July 2026)
+- **entities/sierra.md**: Added "Pinecone Architecture" sub-section — 3-layer architecture, durable sessions, multiplayer, privileged operations (July 2026)
+- **concepts/ai-agent-security.md**: Added "Claude web_fetch — Nested Link Exfiltration" section (Ayush Paul discovery, July 2026)
+- **concepts/inkling.md**: Added Together AI and Modal raw articles to sources
+
 | 2026-07-16 07:40 UTC | newsletter-wiki-ingest | Enriched [[entities/thinking-machines-lab]] (Inkling model: 975B/41B MoE, architecture, benchmarks, ecosystem). Enriched [[concepts/inkling]] (architecture details, benchmarks, ecosystem support, Inkling-Small). Source: AINews newsletter, Together AI blog, Modal blog. Index: Entities 851->851, Concepts 1866->1866. |
 | 2026-07-15 23:30 UTC | x-bookmarks-ingest | X bookmarks ingest: 2 bookmarks processed. Created entity: [[entities/soham-ray]] (Soham Ray, Sierra AI researcher, tau-bench ICML 2026 oral). Enriched: [[entities/shreya-shankar]] (ICML 2026 timeline + tau-bench oral), [[entities/sierra]] (ICML 2026 tau-bench presentations + Soham Ray cross-ref). Updated concept pages: [[concepts/ai-benchmarks/tau-bench]] (ICML 2026 conference column), [[concepts/ai-benchmarks/tau-squared-bench]] (ICML 2026 oral annotation). Saved raw article: 2026-07-14_sohmray_icml-2026-research-trends.md. Bookmark 1 (Boris Cherny fragment) skipped - truncated text-only, no actionable content. Index: Entities 850->851. |
 

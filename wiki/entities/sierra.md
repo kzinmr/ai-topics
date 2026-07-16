@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-07-15
+updated: 2026-07-16
 type: entity
 tags:
   - company
@@ -22,6 +22,7 @@ sources:
   - raw/articles/2025-08-19_sierra_simulations-the-secret-behind-every-great-agent.md
   - raw/articles/sierra.ai--blog-ai-pilling-our-company-lessons-learned--168c9b80.md
   - raw/articles/sierra.ai--blog-announcing-our-partnership-with-softbank-corp--4a150bd0.md
+  - raw/articles/sierra.ai--blog-pinecone-harnessing-the-wisdom-of-the-workforce--93ed8565.md
   - raw/articles/2026-07-14_sohmray_icml-2026-research-trends.md
 ---
 
@@ -141,6 +142,16 @@ Sierra published a detailed account of how they internally deployed AI across th
 **4. The Agent Is the UI, the System of Record the Backend** — Artifacts (PRs, decks, contracts) are both input and output. The agent works *across* systems of record (GitHub, Salesforce, Linear) rather than replacing them. Replacing those systems means recreating decades of mature software.
 
 **5. Outcomes, Not Just Activity** — Since March, Pinecone has run 75,000+ sessions for 600+ people. 70% of PRs are opened through it. But Sierra warns against measuring activity (sessions, tool calls) instead of outcomes (deal cycle time, first-pass resolution, work-life balance).
+
+**Pinecone Architecture** (from July 2026 follow-up article):
+- **Three-layer architecture**: App server (frontend/API/persistence/integrations), Agency (manages isolated K8s runner pods via Redis Streams for live communication), Runner (Go process supervising Codex/Claude Code, managing dev services, brokering privileged operations)
+- **Durable sessions**: Sessions persist across harness/pod/node failures via Agency recording continuous state — replacement runners resume exactly where previous left off
+- **Multiplayer**: Sessions can be shared, branched, and forked with their own MCP authorization. Coding sessions expose live previews that hot-reload as agents implement feedback. Users can point-and-click in the preview to describe UI changes
+- **Privileged operations**: Network proxy intercepts all external requests, swaps in appropriate credentials without the agent ever seeing them — "the agent assumes it can do everything, trusts nothing"
+- **Intent-based routing**: Classifier reads the prompt and selects repo, environment, harness, model, reasoning budget. If task changes mid-session, Pinecone provisions a new environment with same context
+- **Brokered PRs**: Sessions open their own PRs, watch CI checks, auto-fix failing tests, rebase on conflicts, only ping humans when judgment required
+- **Skills**: Reusable playbooks (private, sharable, or default-on) — from "prepare meeting brief" to "stabilize flaky CI"
+- **Build primitives, not workflows**: Pinecone provides building blocks (sessions, branching, automations, skills) rather than predefined workflows, letting emergent uses evolve
 
 **Technical stack**: Built on Claude Code and Codex, with an MCP Gateway for security (inherits each employee's access, enforces policy at every tool call, isolates customer data, audit trail). Routing layer lets them direct tasks to the best model for each job.
 

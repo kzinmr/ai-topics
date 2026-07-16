@@ -574,3 +574,9 @@ Source: [[raw/articles/simonwillison.net--2026-jul-9-gpt-5-6--b29dbe02.md]]
 |Source: [[raw/articles/simonwillison.net--2026-jul-12-directly-responsible-individuals--dd90e0f3.md]]
 
 Source: [[raw/articles/simonwillison.net--2026-jul-9-muse-spark-1-1--36ef115e.md]]
+
+**xai-org/grok-build, now open source** (July 15, 2026): Simon covered xAI's Grok Build privacy backlash (running grok in home directory uploaded SSH keys, password manager DB, documents to xAI's Google Cloud). In response, xAI released the entire codebase under Apache 2.0 license. Codebase: 844,530 lines of Rust. Simon analyzed the code structure: main prompt at xai-grok-agent/templates/prompt.md, subagent prompt with confidentiality instruction, mermaid.rs terminal renderer, and tool implementations copied from Codex and OpenCode (apply_patch, grep_files, bash). Simon ported mermaid.rs to WebAssembly for browser use.
+Source: [[raw/articles/simonwillison.net--2026-jul-15-grok-build--2414f2f1]]
+
+**Claude web_fetch Data Exfiltration** (July 15, 2026): Simon reported Ayush Paul's discovery of a nested-link exfiltration vulnerability in Claude's web_fetch tool. The tool was allowed to navigate to URLs embedded in fetched pages, enabling a sequence of generated links to extract user data (name, city, employer). Attack used coffee.evil.com domain with Claude-User agent detection. Anthropic claimed internal discovery and did not pay bug bounty; fix: removed web_fetch ability to follow links from fetched content. Simon framed this as a missing deterministic protection in an otherwise well-designed agent security model.
+Source: [[raw/articles/simonwillison.net--2026-jul-15-claude-web-fetch-exfiltration--74f6bdc7]]
