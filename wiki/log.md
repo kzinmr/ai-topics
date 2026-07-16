@@ -20,6 +20,7 @@
 
 | 2026-07-15 18:22 UTC | dreaming-wiki-ingest | Upstream dreaming-group at 18:00 UTC already completed triage — Takes=0 (saturation day). All daily pipelines (blog, newsletter, active-crawl) ran before dreaming. Archive confirmed at c36c6c86. No action needed. |
 | 2026-07-15 18:00 UTC | dreaming | Saturation day — Takes=0, all pipelines already ran today. 30 articles triaged as skip (sitemap company blogs + already-processed active-crawl/blog/newsletter). Archive: 30 new, total 1,661 URLs |
+---
 ## [2026-07-15] watchdog | Auto-fix header counts, verify structural health
 
 ### Changes
@@ -70,6 +71,7 @@
 | Index entries | Inserted alphabetically at correct positions |
 | Index counts | Entities 851, Concepts 1884 — match filesystem |
 
+---
 ## [2026-07-15] Blog wiki-ingest — Armin Ronacher Tower, Codex Pets, AI Vulnerability Discovery, Pseudpocalypse
 
 **Source**: blog-triage checkpoint (20 articles: 2 take, 2 reference, 16 skip)
@@ -82,6 +84,7 @@
 
 **References archived**: 16 skip + 2 reference items
 
+---
 ## [2026-07-15] Newsletter wiki-ingest — GPT-5.6 usage patterns, AI Engineering 5 trends, LLM Architecture (Raschka)
 
 **Source**: 3 newsletters triaged and ingested (Ben's Bites, swyx/Latent Space, Vanishing Gradients)
@@ -100,6 +103,7 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+---
 ## [2026-07-14] X bookmarks ingest — Demis Hassabis's Frontier AI Standards Body proposal
 
 **Source**: X Article by Demis Hassabis (@demishassabis), "A Framework for Frontier AI and the Dawning of a New Age" (Jul 14, 2026)
@@ -2339,3 +2343,23 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 | Tag violations | 0 |
 | Orphans | 23 (all _index.md + archive — false positives) |
 | Header counts match filesystem | Entities 849, Concepts 1880, Comparisons 35 — all match |
+
+## [2026-07-16] watchdog | Auto-fixed 3 missing log separators, verified full wiki health
+
+### Changes
+- Fixed 3 missing `---` separators between consecutive log sections in log.md
+- Full verification: 0 pipe corruption, 0 ghost entries, 0 missing sources, 0 tag violations, 0 cross-section misplacement
+- Header counts match filesystem: Entities 852, Concepts 1891, Comparisons 35, Events 17, Queries 6
+
+### Metrics
+| Category | Count |
+|----------|-------|
+| Index structural health | Clean (2795 lines) |
+| Ghost entries | 0 |
+| Index corruption (pipe/line/triple) | None detected |
+| Log separators | 0 missing out of 156 sections |
+| Cross-section misplacement | 0 |
+| Tag violations | 0 |
+| Missing sources | 0 |
+| Orphans (non-archive) | 0 |
+| Header counts match filesystem | All match |
