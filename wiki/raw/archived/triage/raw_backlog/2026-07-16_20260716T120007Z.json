@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-07-16T12:09:33.433554+00:00",
+  "triage_run_id": "20260716T120007Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingestバッチ（5記事）。全記事が既存Wikiで完全カバー済み。Drexler CAIS論文はconcepts/cais.md+entities/k-eric-drexler.mdで7/14に全文分析完了。MAI-Thinking-1 Tech Reportはentities/mai-thinking-1.md(165行)+concepts/mai-thinking-1-tech-report.md(227行)で包括的カバー（7月中複数回拡充）。BenchFlow Awesome Agent Evalsはconcepts/ai-benchmarks/benchflow-tool.md(118行)に統合。Grant Sanderson AI/mathインタビューはentities/grant-sanderson.md(160+行)に収録。OpenAI Bubbleはentities/ed-zitron.md(649行)のNotable Articlesに追加済み。Takes=0, References=0, Skips=5。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-mai-thinking-1",
+      "source": "raw_backlog",
+      "source_name": "Microsoft AI",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report",
+      "url": null,
+      "raw_path": "raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存Wikiで完全カバー済み。entities/mai-thinking-1.md(165行)+concepts/mai-thinking-1-tech-report.md(227行)+concepts/microsoft-mai-models.mdでMAI-Thinking-1の全側面（アーキテクチャ・LatentMoE・ベンチマーク52.8% SWE-Bench Pro/97.0% AIME/87.7% LiveCodeBench・GRPO変種・安全評価）を包括的カバー。7月中に複数回拡充。",
+      "candidate_wiki_path": "entities/mai-thinking-1.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-benchflow",
+      "source": "raw_backlog",
+      "source_name": "BenchFlow",
+      "title": "Awesome Agent Evals",
+      "url": null,
+      "raw_path": "raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存Wikiで完全カバー済み。concepts/ai-benchmarks/benchflow-tool.md(118行)でBenchFlowフレームワーク＋Awesome Agent Evalsリスト（443+リソース、12 Must-Read、depth-4 citation crawl 11.6k papers、47 talks transcribed、eval/RL-environment企業ランドスケープ）を詳細に記述。raw articleはsourcesに登録済み。7月中にアーカイブ・拡充複数回。",
+      "candidate_wiki_path": "concepts/ai-benchmarks/benchflow-tool.md",
+      "body_excerpt": ""
+    }
+  ]
+}
