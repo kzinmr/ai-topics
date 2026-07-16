@@ -1,0 +1,107 @@
+{
+  "archived_at": "2026-07-16T18:24:15.782743+00:00",
+  "triage_run_id": "20260716T180026Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming saturation day — 2026-07-16。RSS/Newsletter収集0件、filesystem scanで185件の生記事を確認。既存Wikiページとの照合の結果、全記事が既存ページでカバー済み。Bonsai 27B / Juggler / Claude Memory Heist / Demis Hassabis preflight / Glean Agent Identity / ICML 2026 trendsは既存エンティティ・コンセプトページで包括的に文書化。唯一のreference候補はChina Apple Intelligence承認（CACライセンス、Alibaba Qwen/Baidu統合）で、us-china-ai-competition.mdへの追加が適切。Takes=0, References=1, Skips=10。",
+  "decisions": [
+    {
+      "item_id": "dreaming-fs-bonsai-27b",
+      "source": "dreaming",
+      "source_name": "Bonsai 27B — Prism ML",
+      "title": "Bonsai 27B: First 27B-class model running on a phone",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "raw_path": "raw/articles/2026-07-15_bonsai-27b-prism-ml.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ concepts/bonsai-27b.md(50行)ですべての詳細（1.71bits/1.125bits量子化、5.9GB/3.9GBファイルサイズ、262Kコンテキスト、ベンチマーク保持率95%/90%、Phone/GPU性能）をカバー済み。本ページ作成時（2026-07-15）のソースとして登録済み。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-juggler",
+      "source": "dreaming",
+      "source_name": "Juggler — Open-Source GUI Coding Agent",
+      "title": "Juggler: Open-source GUI coding agent by JUCE creator",
+      "url": "https://github.com/juggler-ai/juggler",
+      "raw_path": "raw/articles/2026-07-15_juggler-gui-coding-agent.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ concepts/juggler.md(50行)ですべての詳細（Miller-column UI、Yjs CRDT分岐、Plugin SDK、Go/Wailsアーキテクチャ）をカバー済み。本ページ作成時（2026-07-15）のソースとして登録済み。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-claude-memory-heist",
+      "source": "dreaming",
+      "source_name": "Claude Memory Heist — Prompt Injection Attack",
+      "title": "The Memory Heist: Claude Prompt Injection Attack",
+      "url": "https://www.ayush.digital/blog/the-memory-heist",
+      "raw_path": "raw/articles/2026-07-15_claude-memory-heist.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ concepts/claude-memory-heist.md + concepts/ai-agent-security.mdで完全カバー済み（Ayush Paulのdisclosure、alphabetical tree trick、web_fetch exfiltration、Anthropic HackerOne対応）。Simon Willisonのquote postも既存ソースに登録済み。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-simon-claude-exfil",
+      "source": "dreaming",
+      "source_name": "Simon Willison — Claude web_fetch exfiltration",
+      "title": "How I tricked Claude into leaking your deepest, darkest secrets",
+      "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/",
+      "raw_path": "raw/articles/simonwillison.net--2026-jul-15-claude-web-fetch-exfiltration--74f6bdc7.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Simon WillisonのClaude Memory Heist引用ポスト。本体記事（Ayush Paul）はconcepts/claude-memory-heist.mdで完全カバー済み。Simonの視点はentities/simon-willison.mdで捕捉可能だが、新規知見なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-hassabis-preflight",
+      "source": "dreaming",
+      "source_name": "Demis Hassabis Endorses Preflight Safety Testing",
+      "title": "Demis Hassabis Endorses Preflight Safety Testing for AI",
+      "url": "https://garymarcus.substack.com/p/breaking-demis-hassabis-endorses-preflight-safety-testing-for-ai",
+      "raw_path": "raw/articles/2026-07-15_ai-preflight-safety-testing.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ entities/demis-hassabis.md(245行)「On AI Governance (July 2026)」節（L175-189）でFINRA-style Frontier AI Standards Body提案を詳細カバー。30日自主レビュー→義務的認可、動的ベンチマーク閾値、ラチェット機構、国際適用範囲をすべて記述済み。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-elevenlabs-voice-cloning",
+      "source": "dreaming",
+      "source_name": "ElevenLabs — What is Voice Cloning",
+      "title": "What is voice cloning and how does AI voice cloning work?",
+      "url": "https://elevenlabs.io/blog/what-is-voice-cloning",
+      "raw_path": "raw/articles/2026-07-16_elevenlabs_what-is-voice-cloning.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ElevenLabsのマーケティング/教育的コンテンツ。製品発表や技術的新規性なし。Wiki価値なし。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-lemario-jepa",
+      "source": "dreaming",
+      "source_name": "LeMario — JEPA World Model on Super Mario Bros",
+      "title": "LeMario: Training a JEPA World Model on Super Mario Bros",
+      "url": "https://www.benjamin-bai.com/projects/lemario",
+      "raw_path": "raw/articles/2026-07-15_lemario-jepa-world-model.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 学術的個人プロジェクト（JEPA world model + Super Mario Bros）。Nicheな研究実装でWiki全体との関連性低い。既存concepts/jepa.md(あれば)でカバーされる範囲。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-sohmray-icml",
+      "source": "dreaming",
+      "source_name": "Soham Ray — Research Trends at ICML 2026",
+      "title": "Research Trends at ICML 2026",
+      "url": "https://x.com/i/article/2077127538808356864",
+      "raw_path": "raw/articles/2026-07-14_sohmray_icml-2026-research-trends.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ entities/sierra.mdのsourcesに登録済み。ICMLのτ-bench発表セクション（L97-106）は内容捕捉済み。ICML全体の研究動向（自動研究、評価シフト、LLM Judge成熟、Data/Memory）はSierraページの範囲外の一般論であり、新規Wikiページの閾値に満たない。",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fs-glean-agent-identity",
+      "source": "dreaming",
+      "source_name": "Glean — Agent Identity for Enterprise AI Agents",
+      "title": "Agent Identity for Autonomous Enterprise AI Agents",
+      "url": "https://www.glean.com/blog/introducing-agent-identity",
+      "raw_path": "raw/articles/2026-07-16_glean_introducing-agent-identity.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ entities/glean.md(168行)のIndependent Agents節（L149-161）で「Identity with context: 各Agentは独自のidentityとprovisioned accessを持つ」と記述済み。本記事はOperator/Grantee identityの詳細を追加するが、概念的には既存記述でカバー。",
+      "body_excerpt": ""
+    }
+  ]
+}

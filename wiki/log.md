@@ -1,5 +1,11 @@
 ## 2026-07-16
 
+### Dreaming — Knowledge Consolidation
+
+| 2026-07-16 18:00 UTC | dreaming | **Saturation day** — Takes=0, Ref=1, Skip=10. RSS/Newsletter収集0件。Filesystem scan: 185生記事のうち11件のAI関連記事を評価。全件が既存Wikiページでカバー済み。Bonsai 27B (concepts/bonsai-27b.md), Juggler (concepts/juggler.md), Claude Memory Heist (concepts/claude-memory-heist.md), Demis Hassabis preflight (entities/demis-hassabis.md L175-189), Glean Agent Identity (entities/glean.md L154), ICML 2026 trends (entities/sierra.md sources). Reference: China Apple Intelligence承認 (us-china-ai-competition.md update候補). Archive: 11 candidates → 9 new archived (total: 1,687 URLs). |
+
+## 2026-07-16
+
 ### Active Crawl
 
 | 2026-07-16 12:00 UTC | active-crawl | 3 new concept pages: [[concepts/gpt-red]] (OpenAI automated red-teaming via self-play, 84% success), [[concepts/grok-mermaid]] (Rust terminal Mermaid renderer from Grok Build), [[concepts/agentty]] (C++26 Claude Code alternative, 11MB binary). Raw articles: 2026-07-15_mit-technology-review_gpt-red.md, 2026-07-16_github_agentty-cpp26-coding-agent.md. Sources: MIT Technology Review, Simon Willison, GitHub/1ay1. Index: Concepts 1866->1891, Entities 851->852. |
