@@ -10,9 +10,9 @@ tags:
   - china
   - open-source
 created: 2026-04-30
-updated: 2026-06-13
+updated: 2026-07-17
 type: entity
-sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]]"]
+sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]]", "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md"]
 ---
 
 # Moonshot AI / Kimi
@@ -83,6 +83,7 @@ Moonshot has maintained a rapid **2–3 month major-update cadence** since mid-2
 | **Kimi K2.5** | Jan 2026 | Multimodal MoE + **MoonViT** vision encoder (400M params); native video/image + Agent Swarm v1 |
 | **Kimi K2.6** | Apr 2026 | **Current flagship** — 12-hour execution, 300-agent swarms, long-horizon coding |
 | **Kimi K2.7 Code** | Jun 2026 | Coding-optimized reasoning variant (~30% fewer tokens than K2.6); Fireworks Day-0 |
+| **Kimi K3** | Jul 2026 | **2.8T parameter MoE**; first open 3T-class model; beats Opus 4.8/GPT-5.5 high; $3/$15 pricing; open weights by Jul 27 |
 
 ### Open-Weight Licensing
 
@@ -207,6 +208,45 @@ Sources: [[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]], AINews June 13
 
 ---
 
+## Kimi K3 — Frontier Scale Model
+
+**Kimi K3**, announced July 16, 2026, is Moonshot AI's most capable model to date and their first model at true frontier pricing. With 2.8 trillion total parameters (marketed as "3T-class"), it is more than twice the size of K2.6 and represents a significant step up in scale and ambition. Full details: [[concepts/kimi-k3]].
+
+### Architecture
+
+| Specification | Value |
+|---------------|-------|
+| Total Parameters | **2.8 Trillion** (MoE) |
+| Active Parameters | TBD |
+| Context Window | TBD |
+| Pricing | **$3.00/M input, $15.00/M output** |
+| Reasoning Efforts | Only "max" (expensive; no lighter option) |
+
+### Benchmarks
+
+- **Beats** Claude Opus 4.8 max and GPT-5.5 high on most benchmarks
+- **Loses to** Claude Fable 5 and GPT-5.6 Sol
+- **Artificial Analysis Elo**: 1547 on long-horizon knowledge work (+732 from K2.6; behind only Claude Fable 5)
+- **Arena.ai Frontend Code**: #1 model, surpassing Claude Fable 5
+- **Cost per task**: $0.94 (similar to GPT-5.6 Sol at $1.04)
+- **Token efficiency**: 21% fewer output tokens than K2.6
+
+### Pelican Benchmark
+- Input: 95 tokens, Output: 16,658 tokens (13,241 reasoning), **Cost: $0.25**
+- Vision works well; good alt text generation
+- ~85 token hidden system prompt suspected
+
+### Open Weight Status
+
+- Open weights **promised by July 27, 2026**
+- Would be the largest open-weight model, surpassing DeepSeek V4 Pro (1.6T)
+- Expected under Modified MIT License (same as K2/K2.5/K2.6)
+
+### Availability
+
+- [kimi.com](https://kimi.com) — web interface
+- [Kimi API](https://platform.moonshot.ai) — API access
+- [Simon Willison's review](https://simonwillison.net/2026/Jul/16/kimi-k3/) — pelican benchmark + analysis
 ## Production Economics — Solo Agency Case Study (June 2026)
 
 A documented real-world case of Kimi 2.6 as a production workhorse: a solo AI automation agency operator running 14 clients ($40k MRR) with a delivery engine built almost entirely on Kimi 2.6.

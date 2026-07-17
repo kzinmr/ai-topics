@@ -1941,6 +1941,7 @@
 - [[concepts/kimi-k2-5]] — kimi-k2-5
 - [[concepts/kimi-k2-6]] — Moonshot Kimi K2.6
 - [[concepts/kimi-k2-7-code]] — Kimi K2.7-Code
+- [[concepts/kimi-k3]] — Moonshot Kimi K3
 - [[concepts/kimi-k2-thinking]] — kimi-k2-thinking
 - [[concepts/kiran-random-labs]] — Kiran (Random Labs)
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge Graph Memory for AI Agents

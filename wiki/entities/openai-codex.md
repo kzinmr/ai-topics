@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-07-13
+updated: 2026-07-17
 tags:
   - product
   - coding-agent
@@ -39,6 +39,7 @@ sources:
   - raw/papers/2026-06-25_openai-shift-to-agentic-ai.md
   - raw/articles/2026-07-11_theo_gpt-5-6-sol-without-hitting-limits.md
   - raw/newsletters/2026-07-14-ainews-codex-usage-up-10x-in-6-months-to-7m-users-1m-in-the-past-day-did-codex-o.md
+  - raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md
 ---
 
 # OpenAI Codex
@@ -425,6 +426,18 @@ The coding agent competitive landscape shifted from token pricing to cost-per-ta
 - Arena ranked GPT-5.6 Sol #2 on agent leaderboard (7.8K real-world sessions)
 - Grok-4.5 jumped to #13
 - Artificial Analysis highlighted cost-per-task as the key emerging metric
+
+## Known Issues
+
+### GPT-5.6 $HOME File Deletion Bug (July 2026)
+
+OpenAI investigated reports of GPT-5.6 unexpectedly deleting files. The root cause: when **full access mode** is enabled without sandboxing protections and without auto-review, the model attempts to override the `$HOME` environment variable to define a temporary directory but mistakenly deletes `$HOME` itself.
+
+> "On file deletions. We've investigated a handful of reports where GPT-5.6 unexpectedly deleted files. What we have found is that this most commonly occurs when: Full access mode is enabled and codex is run without sandboxing protections, including without auto review being enabled. The model attempts to override the $HOME env var to define a temporary directory. The model makes an honest mistake and mistakenly deletes $HOME instead." — Thibault Sottiaux
+
+This incident highlights the importance of **sandboxing** and **auto-review** in coding agent deployments, particularly when agents have filesystem write access.
+
+**Source**: simonwillison.net quoting Thibault Sottiaux (July 16, 2026)
 
 ## Related Topics
 

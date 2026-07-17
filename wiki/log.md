@@ -1,5 +1,9 @@
 ## 2026-07-17
 
+### Blog Ingest — Kimi K3
+
+| 2026-07-17 07:00 UTC | blog-wiki-ingest | Created `concepts/kimi-k3.md` (Moonshot Kimi K3 — 2.8T MoE frontier model, $3/$15 pricing, open weights by Jul 27). Updated `entities/kimi.md` (K3 row in model table, K3 section with benchmarks/pricing/pelican). Updated `comparisons/llm-api-pricing.md` (K3 in China Frontier section, changelog entry). Updated `index.md`. Source: `simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md`. |
+
 ### Raw Backlog Ingest — 5 candidates (2 archived, 3 dedup-skipped)
 
 | 2026-07-17 00:00 UTC | raw-backlog-ingest | **All content already captured.** Processed 5 candidates: reframing-superintelligence-fhi-2019.md (Drexler CAS, archived), dwarkesh.com--p-grant-sanderson-2--960d89cd.md (Grant Sanderson math interview, archived), wheresyoured.at--the-openai-bubble--eb7fc2d4.md (Ed Zitron, archived), 2026-06-03_microsoft-mai-thinking-1-tech-report.md (already fully covered in entities/mai-thinking-1 + concepts/mai-thinking-1-tech-report + concepts/hill-climbing-machine, newly archived), benchflow-awesome-evals-2025.md (already fully covered in concepts/ai-benchmarks/benchflow-tool, newly archived). No enrichment needed — all content fully captured by Jun/Jul 2026 sessions. Archive: 2 new + 3 dedup (total: 1,687 URLs). |

@@ -2,7 +2,7 @@
 title: "LLM API Pricing Comparison — US vs China Providers"
 type: comparison
 created: 2026-06-09
-updated: 2026-07-13
+updated: 2026-07-17
 tags:
   - comparison
   - economics
@@ -82,6 +82,7 @@ The models listed below are each provider's **latest generation** as of July 202
 | Qwen | Qwen3.7-Plus | Mid | $0.32 | $1.28 | — | — | — | — | 1M | — | [openrouter](https://openrouter.ai/qwen/qwen3.7-plus) |
 | Xiaomi | MiMo-V2.5-Pro | Mid | $0.80 | $3.20 | $0.16 | — | — | — | 256K | — | [xiaomi](https://platform.xiaomimimo.com/docs/en-US/price/pay-as-you-go) |
 | Tencent | Hy3 Preview | Budget | $0.063 | $0.21 | — | — | — | — | 256K | — | [openrouter](https://openrouter.ai/tencent/hy3-preview) |
+| Moonshot | Kimi K3 | Frontier | $3.00 | $15.00 | — | — | — | — | — | — | [simonwillison](https://simonwillison.net/2026/Jul/16/kimi-k3/) |
 
 ### China — Budget / Regional
 
@@ -396,6 +397,7 @@ Anthropic launched Claude Sonnet 5 at $3/$15 (standard) with **introductory pric
 | Date | Change | Source |
 |------|--------|--------|
 | 2026-07-13 | OpenAI: added GPT-5.6-sol ($5/$30, flagship), GPT-5.6-terra ($2.50/$15), GPT-5.6-luna ($1/$6) with new cache writes pricing (+25% premium). Reverted o3-deep-research from $10/$40 to $5/$20 and o4-mini-deep-research from $2/$8 to $1/$4 — now batch-only. Added gpt-5.3-codex ($1.75/$14) and gpt-5.4-cyber (undisclosed). Added Priority pricing tier (2× standard). Moved GPT-5.5 from Flagship to Frontier tier | [openai.com](https://developers.openai.com/api/docs/pricing) |
+| 2026-07-17 | Added Moonshot Kimi K3 ($3/$15, Frontier tier); first Chinese model at Sonnet-level pricing; 2.8T MoE; open weights by Jul 27 | [simonwillison.net](https://simonwillison.net/2026/Jul/16/kimi-k3/) |
 | 2026-07-06 | OpenAI: o3-deep-research doubled from $5/$20 to $10/$40 (cache read $2.50); o4-mini-deep-research doubled from $1/$4 to $2/$8 (cache read $0.50). **⚠️ REVERTED 2026-07-13**. Anthropic: added Claude Sonnet 5 ($3/$15 standard, $2/$10 introductory through 2026-08-31); added Claude Mythos 5 (invitation-only, Fable 5 pricing). Added * footnote for introductory pricing | [openai.com](https://developers.openai.com/api/docs/pricing), [anthropic docs](https://docs.anthropic.com/en/docs/about-claude/models) |
 | 2026-06-29 | Google: corrected Gemini 3.1 Flash Lite output from $0.50 to $1.50/M (Global); added cached input $0.025/M; added to cache pricing table | [vertex-ai](https://cloud.google.com/vertex-ai/generative-ai/pricing) |
 | 2026-06-22 | DeepSeek: updated context window from 128K to 1M (384K max output); corrected cache read precision ($0.0028 V4-Flash, $0.003625 V4-Pro); updated source URL to api-docs.deepseek.com | [deepseek](https://api-docs.deepseek.com/quick_start/pricing) |

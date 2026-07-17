@@ -3,11 +3,11 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-07-13
+updated: 2026-07-17
 status: L3
   sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
-sources: [raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md, raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md, raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md, raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md, raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md]
+sources: [raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md, raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md, raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md, raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md, raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md, raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md, raw/articles/simonwillison.net--2026-jul-16-inkling--4c6392f3.md, raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md, raw/articles/simonwillison.net--2026-jul-16-linus-torvalds--881be321.md, raw/articles/simonwillison.net--2026-jul-17-spot-birds-not-golf--9b2b5171.md, raw/articles/simonwillison.net--2026-jul-16-firefox-in-webassembly--26721bbf.md]
 ---
 
 # Simon Willison
@@ -580,3 +580,34 @@ Source: [[raw/articles/simonwillison.net--2026-jul-15-grok-build--2414f2f1]]
 
 **Claude web_fetch Data Exfiltration** (July 15, 2026): Simon reported Ayush Paul's discovery of a nested-link exfiltration vulnerability in Claude's web_fetch tool. The tool was allowed to navigate to URLs embedded in fetched pages, enabling a sequence of generated links to extract user data (name, city, employer). Attack used coffee.evil.com domain with Claude-User agent detection. Anthropic claimed internal discovery and did not pay bug bounty; fix: removed web_fetch ability to follow links from fetched content. Simon framed this as a missing deterministic protection in an otherwise well-designed agent security model.
 Source: [[raw/articles/simonwillison.net--2026-jul-15-claude-web-fetch-exfiltration--74f6bdc7]]
+
+**Kimi K3 and Pelican Benchmark Analysis** (July 16, 2026): Simon covered Moonshot AI's Kimi K3 release — their "most capable model to date" at 2.8 trillion parameters. He ran his signature pelican-on-bicycle SVG benchmark: 95 input tokens, 16,658 output tokens (13,241 reasoning), costing 25 cents. Key observations:
+- Only one reasoning effort level: "max" — and it shows in the cost
+- Vision works well: good alt text generation
+- 85-token hidden system prompt suspected (prompting "hi" counted 86 tokens)
+- Pelican benchmark is 21 months old and no longer correlates well with model quality — GLM-5.2 outclasses GPT-5.6 and Fable 5 pelicans
+- Still valuable as a "hello world" exercise and cost/reasoning estimate
+Source: [[raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md]]
+Cross-wikilink: See [[concepts/kimi-k3]]
+
+**Inkling Open-Weights Model** (July 16, 2026): Simon covered Thinking Machines Lab's (Mira Murati) release of Inkling — a Mixture-of-Experts transformer with 975B total parameters, 41B active, Apache-2.0 licensed, trained on 45 trillion tokens of text, images, audio and video. Simon noted:
+- Model card is "much shorter than I've come to expect from US AI labs" with minimal training data documentation
+- Not a frontier model by their own admission — intended as a base for fine-tuning via their Tinker platform
+- Competitive with Chinese open-weight models, joining NVIDIA Nemotron and Gemma 4 as US open-weights contenders
+- Pelican test: thought it drew a "stork or seagull"
+- Inkling-Small (276B/12B active) promised but still in testing
+Source: [[raw/articles/simonwillison.net--2026-jul-16-inkling--4c6392f3.md]]
+Cross-wikilink: See [[concepts/inkling]]
+
+**Codex File Deletion Bug — Thibault Sottiaux Quote** (July 16, 2026): Simon quoted OpenAI's Thibault Sottiaux describing a "pretty gnarly Codex bug" where GPT-5.6 unexpectedly deleted files. The bug occurs when: full access mode is enabled, Codex is run without sandboxing/auto-review, the model attempts to override $HOME env var to define a temporary directory, and "makes an honest mistake" deleting $HOME instead.
+Source: [[raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md]]
+Cross-wikilink: See [[entities/openai-codex]]
+
+**Linus Torvalds on AI in Linux** (July 16, 2026): Simon quoted Linus Torvalds' definitive statement on AI in the Linux kernel: "Linux is not one of those anti-AI projects, and if somebody has issues with that, they can do the open-source thing and fork it. Or just walk away." Torvalds called AI "clearly a useful" tool and said "it's no longer in question today." This is significant as a stance from the most influential open-source maintainer.
+Source: [[raw/articles/simonwillison.net--2026-jul-16-linus-torvalds--881be321.md]]
+
+**Data Center Water Use — Spot Birds Not Golf** (July 17, 2026): Simon suggested hyperscalers facing pressure over data center water use should buy up exclusive country clubs, convert golf courses to public parks, and pay for guides to get members into birdwatching. Cited Google's 10.9 billion gallons water use in 2025 (~30M/day) and Coachella Valley's 120 golf courses each using ~750,000 gallons/day — Google buying 40 courses (1/3) would offset their water use.
+Source: [[raw/articles/simonwillison.net--2026-jul-17-spot-birds-not-golf--9b2b5171.md]]
+
+**Firefox in WebAssembly** (July 16, 2026): Simon linked to a project running Firefox in WebAssembly — notable as a browser-in-browser capability but not AI-specific.
+Source: [[raw/articles/simonwillison.net--2026-jul-16-firefox-in-webassembly--26721bbf.md]]
