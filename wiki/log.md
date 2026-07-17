@@ -1,6 +1,20 @@
 ## [2026-07-17] X Bookmarks Ingest — OpenWiki 0.2 OKF + Cerebras Knowledge Base
 
 **Bookmark 1: OpenWiki 0.2 adopts OKF spec** (LangChain AI, Jul 16 2026):
+
+## [2026-07-17] Raw Backlog Ingest (12:00 UTC)
+
+Processed 5 candidates from raw backlog (--sort ai-hint --limit 5). All 5 already covered by existing wiki pages:
+
+- reframing-superintelligence-fhi-2019.md - Skip (archived, Drexler CAS)
+- 2026-06-03_microsoft-mai-thinking-1-tech-report.md - Skip (entities/mai-thinking-1 + concepts/mai-thinking-1-tech-report + concepts/hill-climbing-machine)
+- benchflow-awesome-evals-2025.md - Skip (concepts/ai-benchmarks/benchflow-tool with full Awesome Agent Evals section)
+- dwarkesh.com--p-grant-sanderson-2--960d89cd.md - Skip (archived, Grant Sanderson math interview)
+- wheresyoured.at--the-openai-bubble--eb7fc2d4.md - Skip (archived, Ed Zitron)
+
+Takes=0, References=0, Skips=5. No new pages created. Triage saved to cron/data/raw_backlog_ingest/triage_latest.json.
+
+
 - Created [[concepts/okf-open-knowledge-format]] — New concept: Google Cloud OKF spec for structured knowledge wikis
 - Enriched [[concepts/openwiki.md|concepts/openwiki]] — Added OKF 0.2 Integration section (YAML frontmatter, index.md/logs.md conventions, deterministic search)
 - Enriched [[entities/langchain]] — Added OpenWiki 0.2 milestone to timeline, bumped sources
