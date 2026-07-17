@@ -3,7 +3,7 @@ title: "Sero (0xSero)"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-05-14
+updated: 2026-07-17
 type: entity
 ---
 
@@ -134,6 +134,10 @@ Sero documented his journey from spending **~$10,000/mo in value** (across Curso
 | | GPT-OSS-120B | STEM work | Q4_K_M |
 
 > "MiniMax is way better at doing things until they're done, it's smarter, doesn't get stuck in loops, and tool calls almost never fail." — @seroxdesigns
+
+### LOCAL.AI Benchmark Results (July 2026)
+
+Sero's Step-3.7-Flash-148B (REAP) scored **#1** on the [local.ai](https://local.ai/) benchmark for **DGX Spark** and **Mac M5 Max** hardware tiers. The benchmark combines quality and measured serving performance for local hardware. This demonstrates the competitiveness of consumer-grade local AI inference against cloud-based alternatives.
 
 ### Private Home RAG
 His most valuable use case: a fully private RAG system indexing financial records, legal documents, scanned contracts, photos, and messages. Stack: PostgreSQL + pgvector, BGE-M3 embeddings (dense + sparse + multi-vector). Index: HNSW for fast retrieval. Storage: 1.2TB indexed documents.

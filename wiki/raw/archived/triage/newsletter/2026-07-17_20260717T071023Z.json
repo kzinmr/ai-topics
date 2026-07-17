@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-07-17T07:42:57.545805+00:00",
+  "triage_run_id": "20260717T071023Z",
+  "source": "newsletter",
+  "summary_ja": "5つのニュースレターをトリアージ: (1) Ben's Bites「I've got an Inkling」→ 14記事評価、全スキップ、1件reference（Amelia Wattenberger「Code is a Medium for Thought」— エンティティページ未存在、agentic-engineering関連）(2) Latent Space Podcast（Lab of the Future）→ スキップ（純粋ポッドキャスト）(3) Beehiiv（OpenAI Built an AI to Attack Itself）→ 全beehiivリンク403期限切れ、件名からGPT-Redと特定、既存Wikiで完全カバー済みのためスキップ(4) AI by Aakash（GPT-5.6）→ GPT-5.6実践セットアップガイドがevents/2026-06-27-openai-gpt-5-6-sol.mdのエンリッチメント候補（reference）(5) AINews（Kimi K3）→ concepts/kimi-k3.mdはblog-wiki-ingestで本日作成済み。KDA/Attention Residuals等の技術詳細が未収載のためreference（エンリッチメント推奨）計23決定: Takes=0 Ref=4 Skip=19",
+  "decisions": [
+    {
+      "item_id": "bensbites-togetherlink",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "TogetherLink — Run Open Models in Codex/Claude Code",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-16-i-ve-got-an-inkling.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ GLM-5.2をCodex/Claude Codeで実行するツール。小規模でWiki価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-16\n**Subject:** I've got an Inkling\n**Collected:** 2026-07-17T07:10:15.278700+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vi"
+    },
+    {
+      "item_id": "bensbites-grandma",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Grandma — Agent Briefing Tool",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-16-i-ve-got-an-inkling.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ エージェントにスタック情報を事前注入する小規模ツール。コンセプトレベルでは既存のagent-skills概念でカバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-16\n**Subject:** I've got an Inkling\n**Collected:** 2026-07-17T07:10:15.278700+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vi"
+    },
+    {
+      "item_id": "beehiiv-openai-self-attack",
+      "source": "newsletter",
+      "source_name": "Beehiiv newsletter (unidentified publication)",
+      "title": "OpenAI Built an AI to Attack Itself",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-16-openai-built-an-ai-to-attack-itself.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 件名からGPT-Red（OpenAI自己攻撃型レッドチーミング）と特定。concepts/gpt-red.mdで7/15に完全カバー済み。全beehiivリンクが403期限切れ。受信ボックス要約がトピック推定を正しく行い、既存Wikiとの重複を確認。",
+      "candidate_wiki_path": "concepts/gpt-red.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-16\n**Subject:** 🔴 OpenAI Built an AI to Attack Itself\n**Collected:** 2026-07-17T07:10:18.791840+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/ydDORCpoId1HoIz6XvDVrgMCUymheVMx6dIKT7UZZnV6VJiSaeyOASIdCfNe%0AJy3SMmWuY6Df0e3%2B%2BFok"
+    }
+  ]
+}

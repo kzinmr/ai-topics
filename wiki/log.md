@@ -1,3 +1,19 @@
+## [2026-07-17 22:30 UTC] x-accounts-scan | 4 new posts from 3 accounts
+
+**Scanned**: 12/84 accounts (72 skipped by budget), cursor 81→9.
+
+### Ingest Decisions
+
+| Account | Post | Decision | Wiki Action |
+|---------|------|----------|-------------|
+| @natolambert | Claude Fable 5 bug report | **Skip** — ephemeral bug, temporary status issue | — |
+| @geoffreylitt | "Understanding is the new bottleneck" AIE talk | **Update** | Added Speaking Engagements section + Blog/Recent Posts row |
+| @0xsero | Step-3.7-Flash-148B (REAP) #1 on local.ai | **Update** | Added LOCAL.AI Benchmark Results section |
+
+### Wiki Changes
+- `wiki/entities/geoffrey-litt.md` — Added AIE talk "Understanding is the new bottleneck" (2026-07-10, 56K views) to Speaking Engagements + Blog/Recent Posts
+- `wiki/entities/sero.md` — Added LOCAL.AI benchmark #1 (DGX Spark, Mac M5 Max) for Step-3.7-Flash-148B (REAP)
+
 ## [2026-07-17 18:10 UTC] dreaming | Knowledge consolidation — 5 reference enrichments (triage recovery)
 
 **Saturation scenario** — Dreaming-collect reported 0 articles, 193 recent raw articles. Dreaming-group (18:00 UTC) completed triage but failed on JSON render. Triage recovered from output file.

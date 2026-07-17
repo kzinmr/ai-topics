@@ -3,7 +3,7 @@ title: Geoffrey Litt
 type: entity
 handle: "@geoffreylitt"
 created: 2026-04-10
-updated: 2026-07-02
+updated: 2026-07-17
 tags:
   - person
   - model
@@ -128,6 +128,12 @@ In "Bring Your Own Client," Geoffrey explores how local-first software and malle
 - **Experiments in Dynamicland** — Exploring the dynamic medium concept at Bret Victor's research lab.
 - **ENHANCE!** (BangBangCon 2017) — Explaining Generative Adversarial Neural Networks using CSI-style image upscaling.
 
+### Speaking Engagements
+
+| Date | Event | Talk | Summary |
+|------|-------|------|---------|
+| 2026-07-10 | AI Engineer | [Understanding is the new bottleneck](https://www.youtube.com/watch?v=WkBPX-oDMnA) | Argues that autonomous coding agents still require human judgment. Shares techniques for staying in the loop — combining ideas from education and cognitive science. "It's not enough to just verify correctness — you actually need to understand the work they're doing." 56K views. |
+
 ## AI Engineer World's Fair 2026: Anti-Factory Critique
 
 At the AI Engineer World's Fair (July 2026), Litt was one of the most prominent voices pushing back against the "software factory" framing. On the opening day, he tweeted the rallying cry of the anti-factory camp:
@@ -147,6 +153,7 @@ References:
 
 | Date | Title | Summary |
 |------|-------|---------|
+| 2026-07-10 | Understanding is the new bottleneck (AI Engineer talk) | Autonomous coding agents still require human judgment. To guide agents well, you need to understand the work they're doing — not just verify correctness. Combines education and cognitive science with modern agent capabilities. [YouTube](https://www.youtube.com/watch?v=WkBPX-oDMnA), 56K views. |
 | 2025 | Code like a surgeon | Advocates for precision AI-assisted coding — using AI for targeted edits rather than wholesale generation. Preserves user understanding while leveraging AI for complex parts. |
 | 2025 | AI as teleportation | Explores the metaphor of AI as teleportation — moving computation and creativity across boundaries rather than generating from scratch. |
 | 2025 | Enough AI copilots! We need AI HUDs | Argues for heads-up display style AI integration over chat-based copilots. AI should augment existing workflows, not replace them. |
