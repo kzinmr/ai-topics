@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (855 pages)
+## Entities (857 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -108,6 +108,7 @@
 - [[entities/brain-co]] — Brain Co.
 - [[entities/braintrust]] — Braintrust
 - [[entities/brian-armstrong]] — CEO and co-founder of Coinbase. In May 2026, announced 14% workforce reduction (700 jobs) citing AI productivity gain...
+- [[entities/bret-taylor]] — Bret Taylor — Co-founder and CEO of Sierra, former Salesforce co-CEO, Twitter chairman, Facebook CTO; Horizon long-horizon agent platform, outcome-based pricing, service-as-software thesis
 - [[entities/browse-sh]] — Browse.sh
 - [[entities/browser-use]] — browser-use
 - [[entities/browserbase]] — Browserbase
@@ -143,6 +144,7 @@
 - [[entities/claude-code--architecture]] — Claude Code — Architecture
 - [[entities/claude-code--capabilities]] — Claude Code — Capabilities & Features
 - [[entities/claude-code--history]] — Claude Code — Development History
+- [[entities/clay-bavor]] — Clay Bavor — Co-founder of Sierra, former Google VP of AR/VR; Google Cardboard, Daydream, Project Starline
 - [[entities/clefourrier]] — Clémentine Fourrier
 - [[entities/clefourrier--core-ideas]] — Clémentine Fourrier — Core Ideas & Philosophy
 - [[entities/clefourrier--influence]] — Clémentine Fourrier — Influence & Impact
@@ -413,6 +415,7 @@
 - [[entities/jonathan-whitaker]] — Jonathan Whitaker
 - [[entities/josh-barrow]] — Josh Barrow
 - [[entities/julien-bek]] — Julien Bek
+- [[entities/junior]] — Junior — Sentry's open-source AI coding agent with resource subscription architecture for autonomous PR lifecycle management
 - [[entities/justine-tunney]] — Justine Tunney
 - [[entities/jxmo]] — Jack Morris
 - [[entities/jyn]] — Jynn Nelson (jyn)
@@ -860,7 +863,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1876 pages)
+## Concepts (1877 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -895,6 +898,7 @@
 - [[concepts/agent-native-cloud]] — Agent-Native Cloud
 - [[concepts/agent-ontology]] — Agent Ontology
 - [[concepts/agent-productivity]] — Agent Productivity and Cognitive Effects
+- [[concepts/agent-resource-subscriptions]] — Agent Resource Subscriptions — Design pattern for coding agents to subscribe to external resource events as follow-up messages within ongoing conversations
 - [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
 - [[concepts/agent-safety-incidents-open-source]] — AI Agent Safety Incidents in Open-Source Communities
 - [[concepts/agent-security-patterns]] — Agent Security Patterns
@@ -2029,6 +2033,7 @@
 - [[concepts/logan-kilpatrick]] — logan-kilpatrick
 - [[concepts/logfire]] — Pydantic Logfire — AI Observability Platform
 - [[concepts/logic-tensor-networks]] — Logic Tensor Networks (LTN) is a neurosymbolic framework that combines neural networks with first-order logic reasoni...
+- [[concepts/long-horizon-agents]] — Long-Horizon Agents — Agent systems that pursue goals over days, weeks, or months; context engine, proactive engagement, outcome-based pricing; Sierra Horizon as first commercial implementation
 - [[concepts/long-running-search-agents]] — Long Running Search Agents — Design Patterns
 - [[concepts/loop-engineering]] — Loop Engineering; enriched with 0xCodez 14-step roadmap (4-condition test, 5 building blocks, Ralph Wiggum loop, security tax, common mistakes) + HuaShu PDF synthesis (June 25)
 - [[concepts/loopcraft]] — Loopcraft — The Art of Stacking Loops / Salty Lesson for Agents

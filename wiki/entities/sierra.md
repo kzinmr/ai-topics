@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-07-16
+updated: 2026-07-17
 type: entity
 tags:
   - company
@@ -24,6 +24,7 @@ sources:
   - raw/articles/sierra.ai--blog-announcing-our-partnership-with-softbank-corp--4a150bd0.md
   - raw/articles/sierra.ai--blog-pinecone-harnessing-the-wisdom-of-the-workforce--93ed8565.md
   - raw/articles/2026-07-14_sohmray_icml-2026-research-trends.md
+  - raw/articles/2026-07-16_sierra_horizon-long-horizon-agents.md
 ---
 
 # Sierra
@@ -170,6 +171,27 @@ The partnership reflects Sierra's strategy of entering markets with high custome
 
 Source: [[raw/articles/sierra.ai--blog-announcing-our-partnership-with-softbank-corp--4a150bd0]]
 
+### Horizon — Long-Horizon Agent Platform (July 2026)
+
+Sierra announced **Horizon**, a platform that extends [[concepts/ai-agents|AI agents]] beyond single conversations into **long-horizon goals** that span days, weeks, or months. Announced as "the most significant expansion of Sierra since we launched in 2024," Horizon enables agents to pursue complex outcomes like originating loans, getting prior authorization for healthcare procedures, closing sales, and upgrading subscription plans.
+
+**Key capabilities:**
+
+- **Long-horizon planning**: Agents reason between engagements about what actions to take to maximize the odds of an outcome (e.g., scheduling a specialist referral across dozens of texts and phone calls with patient, specialist, and referring physician)
+- **Context engine**: Stitches together interactions across time, making agent behavior intelligent rather than hard-coded. Agents learn from previous customer interactions to make the offer most likely to be accepted
+- **Proactive engagement**: Agents proactively reach out to customers over days, weeks, or months rather than waiting for inbound contact
+- **Outcome-based pricing**: Customers pay for business outcomes delivered, not tokens — Sierra bears the burden of managing token spend
+- **Learning loop**: Each closed sale (or rejection) automatically improves the agent's decision-making for future conversations
+
+Bret Taylor frames Horizon's two key theses:
+
+1. **Differentiation moat**: Customer relationship data becomes a durable, defensible moat that deepens as AI improves. Proprietary context remains the company's — enabling differentiation without fear that frontier model progress helps competitors.
+2. **Tokenomics**: Outcome-based pricing abstracts token costs away from the customer. This extends Sierra's earlier "Outcomemaxxing" framework into a concrete product.
+
+Horizon represents a shift from customer *experience* agents to customer *outcome* agents — the difference between answering a question and closing a sale.
+
+Source: [[raw/articles/2026-07-16_sierra_horizon-long-horizon-agents]]
+
 ## Significance
 
 Sierra's valuation ($15B+) and ARR growth ($200M+) make it one of the highest-valued AI application companies, demonstrating that the enterprise AI agent market has reached material scale. Its 50-75x revenue multiple reflects investor expectations that AI agents will capture significant market share from traditional SaaS and human-staffed services.
@@ -177,12 +199,14 @@ Sierra's valuation ($15B+) and ARR growth ($200M+) make it one of the highest-va
 ## Related
 
 - [[entities/bret-taylor]] — Co-founder, former Salesforce co-CEO
+- [[entities/clay-bavor]] — Co-founder, former Google VP
 - [[entities/soham-ray]] — Researcher; presented tau-bench at ICML 2026
 - [[concepts/service-as-software]] — Business model thesis
 - [[concepts/ai-agents]] — Core technology
 - [[concepts/ai-benchmarks/tau-knowledge]] — Sierra's knowledge-grounded agent benchmark
 - [[concepts/ai-benchmarks/tau-bench]] — Sierra's conversational agent benchmark
 - [[concepts/multi-agents/agent-team-swarm]] — Related agent deployment patterns
+- [[concepts/long-horizon-agents]] — Sierra Horizon platform concept
 - [[entities/anthropic]] — Claude powers enterprise agent deployments in the same market
 
 ## Links

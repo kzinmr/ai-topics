@@ -1,3 +1,33 @@
+## [2026-07-17 23:30 UTC] x-bookmarks-ingest — 2 bookmarks processed
+
+**Bookmark 1 — Bret Taylor: "The Next Horizon in Agents" (Sierra Horizon)**
+
+Sierra announced Horizon, a long-horizon agent platform that extends Agent OS beyond single conversations to multi-day/week/month goals. Horizon agents proactively engage customers, learn from each interaction, and operate on outcome-based pricing (not tokens). Bret Taylor frames two key theses: (1) customer relationship data as a durable, defensible moat that deepens as AI improves; (2) outcome-based pricing abstracts token costs away from the customer.
+
+Created 3 new wiki pages:
+- 🆕 [[entities/bret-taylor]] — comprehensive entity page covering Google Maps, FriendFeed, Facebook CTO, Quip, Salesforce co-CEO, Twitter chairman, Sierra CEO
+- 🆕 [[entities/clay-bavor]] — Sierra co-founder, former Google VP of AR/VR (Cardboard, Daydream, Project Starline)
+- 🆕 [[concepts/long-horizon-agents]] — new concept page for agent systems operating over extended timeframes
+
+Enriched:
+- ✏️ [[entities/sierra]] — added Horizon section with platform capabilities, long-horizon planning, context engine, differentiation moat, and tokenomics theses
+
+**Bookmark 2 — Armin Ronacher: "Reactive Agents are Proactive" (Junior Subscriptions)**
+
+Ronacher documents Junior's resource subscription architecture — a generalized mechanism letting coding agents subscribe to external events (CI checks, PR reviews, merges) as follow-up messages within ongoing conversations. Key insights: provider-agnostic interface, per-conversation subscriptions (not global webhooks), follow-up vs steering message distinction, `[[NO_REPLY]]` marker for silent event handling, event batching. Junior ~100% subscribes to PRs it creates, auto-resolves build failures, and addresses review feedback.
+
+Created 2 new wiki pages:
+- 🆕 [[entities/junior]] — comprehensive entity page for Sentry's open-source AI coding agent with resource subscription architecture
+- 🆕 [[concepts/agent-resource-subscriptions]] — new concept page for the resource subscriptions design pattern
+
+Enriched:
+- ✏️ [[entities/armin-ronacher]] — added "Resource Subscriptions — Reactive Agents" subsection under Recent Themes, new timeline entry for July 16, 2026
+
+**Raw articles saved:**
+- [[raw/articles/2026-07-16_sierra_horizon-long-horizon-agents]]
+- [[raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive]]
+
+
 ## [2026-07-17 22:30 UTC] x-accounts-scan | 4 new posts from 3 accounts
 
 **Scanned**: 12/84 accounts (72 skipped by budget), cursor 81→9.
@@ -13,6 +43,36 @@
 ### Wiki Changes
 - `wiki/entities/geoffrey-litt.md` — Added AIE talk "Understanding is the new bottleneck" (2026-07-10, 56K views) to Speaking Engagements + Blog/Recent Posts
 - `wiki/entities/sero.md` — Added LOCAL.AI benchmark #1 (DGX Spark, Mac M5 Max) for Step-3.7-Flash-148B (REAP)
+
+## [2026-07-17 23:30 UTC] x-bookmarks-ingest — 2 bookmarks processed
+
+**Bookmark 1 — Bret Taylor: "The Next Horizon in Agents" (Sierra Horizon)**
+
+Sierra announced Horizon, a long-horizon agent platform that extends Agent OS beyond single conversations to multi-day/week/month goals. Horizon agents proactively engage customers, learn from each interaction, and operate on outcome-based pricing (not tokens). Bret Taylor frames two key theses: (1) customer relationship data as a durable, defensible moat that deepens as AI improves; (2) outcome-based pricing abstracts token costs away from the customer.
+
+Created 3 new wiki pages:
+- 🆕 [[entities/bret-taylor]] — comprehensive entity page covering Google Maps, FriendFeed, Facebook CTO, Quip, Salesforce co-CEO, Twitter chairman, Sierra CEO
+- 🆕 [[entities/clay-bavor]] — Sierra co-founder, former Google VP of AR/VR (Cardboard, Daydream, Project Starline)
+- 🆕 [[concepts/long-horizon-agents]] — new concept page for agent systems operating over extended timeframes
+
+Enriched:
+- ✏️ [[entities/sierra]] — added Horizon section with platform capabilities, long-horizon planning, context engine, differentiation moat, and tokenomics theses
+
+**Bookmark 2 — Armin Ronacher: "Reactive Agents are Proactive" (Junior Subscriptions)**
+
+Ronacher documents Junior's resource subscription architecture — a generalized mechanism letting coding agents subscribe to external events (CI checks, PR reviews, merges) as follow-up messages within ongoing conversations. Key insights: provider-agnostic interface, per-conversation subscriptions (not global webhooks), follow-up vs steering message distinction, `[[NO_REPLY]]` marker for silent event handling, event batching. Junior ~100% subscribes to PRs it creates, auto-resolves build failures, and addresses review feedback.
+
+Created 2 new wiki pages:
+- 🆕 [[entities/junior]] — comprehensive entity page for Sentry's open-source AI coding agent with resource subscription architecture
+- 🆕 [[concepts/agent-resource-subscriptions]] — new concept page for the resource subscriptions design pattern
+
+Enriched:
+- ✏️ [[entities/armin-ronacher]] — added "Resource Subscriptions — Reactive Agents" subsection under Recent Themes, new timeline entry for July 16, 2026
+
+**Raw articles saved:**
+- [[raw/articles/2026-07-16_sierra_horizon-long-horizon-agents]]
+- [[raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive]]
+
 
 ## [2026-07-17 18:10 UTC] dreaming | Knowledge consolidation — 5 reference enrichments (triage recovery)
 
@@ -2526,3 +2586,14 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - HIGH: Investigate dspy-rlm / rlm-recursive-language-models duplication
 - MEDIUM: Bulk refresh 106 stale pages (growing ~47/week)
 - MEDIUM: Fix 99 auto-fixable wikilinks
+
+## [2026-07-17 23:00 UTC] bookmark | Armin Ronacher — Junior resource subscriptions processing
+
+### Source
+- raw/article: `raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md` — "Reactive Agents are Proactive" by Armin Ronacher (July 16, 2026)
+
+### Wiki Changes
+- `wiki/entities/armin-ronacher.md` — Updated frontmatter (bumped updated to 2026-07-17, added source); added timeline entry for July 16, 2026; added "Resource Subscriptions / Reactive Agents" subsection under Recent Themes
+- `wiki/entities/junior.md` — **NEW** entity page for Junior, Sentry's open-source AI coding agent with resource subscription architecture
+- `wiki/concepts/agent-resource-subscriptions.md` — **NEW** concept page documenting the resource subscriptions design pattern for coding agents
+- `wiki/index.md` — Added junior.md and agent-resource-subscriptions.md entries

@@ -6,9 +6,9 @@ tags:
   - developer-tooling
   - web-framework
 created: 2026-04-24
-updated: 2026-07-15
+updated: 2026-07-17
 type: entity
-sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md]
+sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md]
 ---
 
 
@@ -62,7 +62,8 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 ||| 2026-06-23 | Published "**The Coming Loop**" — analysis of harness-level vs agent-level loops, code quality degradation from autonomous looping, software-as-organism metaphor, and future of agentic engineering |
 |||| 2026-07-04 | Published "**Better Models: Worse Tools**" — discovered tool schema regression in newer Claude models for Pi's edit tool |
 ||| 2026-07-13 | Published "**The Tower Keeps Rising**" — Bruegel's Tower of Babel metaphor for how AI agents remove coordination friction that previously synchronized human understanding; argues that codebases can grow without shared language, creating a system none understands |
-|| 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
+|| 2026-07-16 | Published "**Reactive Agents are Proactive**" — documents Junior's resource subscription architecture for autonomous PR lifecycle management |
+||| 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
 
 ## Core Ideas
 
@@ -241,6 +242,20 @@ Key findings:
   - "The tower does not fall, and so we do not notice what was lost. It just keeps rising."
   - This extends Ronacher's earlier arguments about "vibeslop" and code quality degradation (June 2026's 'The Coming Loop') from the codebase level to the project/organizational level
 
+
+**Resource Subscriptions — Reactive Agents (July 2026):** In "Reactive Agents are Proactive" (July 16, 2026), Ronacher documents Junior's **resource subscription** architecture — a generalized mechanism that lets coding agents subscribe to external events (CI checks, PR reviews, merges) and receive them as follow-up messages in an ongoing conversation.
+
+Key architectural insights:
+
+- **Generalized, not GitHub-specific**: The subscription interface (`subscribeToResourceEvents`) is fully provider-agnostic — the same mechanism will be used for subagents
+- **Per-conversation, not global**: Subscriptions fire within an existing agent session, not as new sessions — the agent maintains context across the full PR lifecycle
+- **Follow-up vs steering messages**: Subscription notifications are injected as follow-up (not steering) messages, allowing the agent to act autonomously without user prompting
+- **`[[NO_REPLY]]` marker**: Prevents noisy visible responses when the agent handles events silently (e.g., auto-fixing a CI failure)
+- **Batching**: Multiple events arriving in a short window are batched into a single notification
+
+Production result: Junior ~100% subscribes to PRs it creates, automatically resolves build failures, addresses review feedback, and updates Slack threads — producing a "much more natural" developer experience. The key insight: reactive agents (responding to events) are actually proactive agents (driving work forward without human intervention).
+
+Source: [[raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive]]
 
 ## Influence Metrics
 
