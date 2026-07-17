@@ -1,3 +1,22 @@
+## [2026-07-17] X Bookmarks Ingest — OpenWiki 0.2 OKF + Cerebras Knowledge Base
+
+**Bookmark 1: OpenWiki 0.2 adopts OKF spec** (LangChain AI, Jul 16 2026):
+- Created [[concepts/okf-open-knowledge-format]] — New concept: Google Cloud OKF spec for structured knowledge wikis
+- Enriched [[concepts/openwiki.md|concepts/openwiki]] — Added OKF 0.2 Integration section (YAML frontmatter, index.md/logs.md conventions, deterministic search)
+- Enriched [[entities/langchain]] — Added OpenWiki 0.2 milestone to timeline, bumped sources
+- Raw article: raw/articles/2026-07-16_langchain_openwiki-0.2-okf.md
+
+**Bookmark 2: How we built our knowledge base** (Cerebras AI/Growth team: Isaac Tai, Daniel Kim, Mike Gao, Jul 16 2026):
+- Created [[concepts/enterprise-knowledge-base-architecture]] — New concept: meet-the-data-where-it-lives enterprise KB architecture; hybrid search (full-text + embeddings + IDF + age decay), LLM query planning, MCP-exposed retrieval primitives, scoped projects, RRF fusion, bursting for thread-level granularity
+- Created [[entities/cocoindex]] — New entity: open-source code embedding framework for vectorizing codebases
+- Created [[entities/isaac-tai]] — New entity: Cerebras AI/Growth engineer
+- Created [[entities/daniel-kim-cerebras]] — New entity: Daniel Kim, Head of Growth at Cerebras
+- Created [[entities/mike-gao]] — New entity: Mike Gao, ML Runtime at Cerebras (ex-Google, Qualcomm, Baidu Research)
+- Enriched [[entities/cerebras-systems]] — Added Internal Knowledge Base section (15K queries/day, architecture, MCP integration)
+- Raw article: raw/articles/2026-07-16_cerebras_knowledge-base-architecture.md
+
+**index.md** — Added 6 entries (2 concepts, 4 entities). Counts updated: Concepts 1874→1876, Entities 851→855, Comparisons 35
+
 ## [2026-07-17] Active Crawl (4 topics)
 
 | 2026-07-17 11:?? | concepts/ai-voice-fraud.md | created | AI Voice Fraud concept page — voice cloning scams, deepfake audio fraud vectors, defensive strategies |

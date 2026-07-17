@@ -9,9 +9,9 @@ tags:
   - deep-agents
   - state-management
 created: 2026-04-27
-updated: 2026-06-18
+updated: 2026-07-17
 aliases: [LangChain Framework, LangChain AI]
-sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md, raw/articles/2026-04-29_langchain-harness-profiles.md, raw/articles/2026-05-12_langchain-delta-channels.md, raw/articles/2026-05-21_langchain_auth-proxy-langsmith-sandboxes.md, raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md]
+sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md, raw/articles/2026-04-29_langchain-harness-profiles.md, raw/articles/2026-05-12_langchain-delta-channels.md, raw/articles/2026-05-21_langchain_auth-proxy-langsmith-sandboxes.md, raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md, raw/articles/2026-07-16_langchain_openwiki-0.2-okf.md]
 ---
 
 
@@ -40,6 +40,7 @@ LangChain is an open-source software framework for developing applications power
 | 2025-2026 | Introduced **Deep Agents**, **Insights Agent**, and no-code agent builder |
 | Apr 2026 | Launched **Harness Profiles** for Deep Agents — model-specific prompt/tool/middleware tuning (+10-20pt benchmark gains) |
 | May 2026 | Released **DeltaChannel** (LangGraph v1.2 beta) — incremental checkpoint storage for long-running agents |
+| Jul 2026 | Released **OpenWiki 0.2** — adopts Google Cloud OKF spec for structured codebase documentation wikis; adds YAML frontmatter, index.md, and logs.md conventions |
 
 ## Core Architecture
 

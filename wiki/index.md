@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (852 pages)
+## Entities (855 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -153,6 +153,7 @@
 - [[entities/cline]] — Cline — autonomous coding agent for VS Code (64K+ stars), IDE/CLI/SDK, multi-agent Kanban boards, model-agnostic (Jul 12)
 - [[entities/cloudflare]] — Cloudflare
 - [[entities/cloudflare-sandbox]] — Cloudflare Sandbox (Claude Managed Agents)
+- [[entities/cocoindex]] — CocoIndex — open-source code embedding framework specialized in vectorizing codebases; hierarchical code chunking, incremental re-embedding on commits, Postgres-native sync metadata; used by Cerebras Knowledge Base
 - [[entities/codapter]] — Codapter
 - [[entities/coder]] — Coder (Coder Technologies)
 - [[entities/codex]] — OpenAI Codex (AI coding agent)
@@ -180,6 +181,7 @@
 - [[entities/dan-shipper]] — Dan Shipper — CEO of Lex (formerly Lex.page); writer on AI productivity, agent workflows
 - [[entities/daniel-de-laney]] — Daniel De Laney
 - [[entities/daniel-han]] — Daniel Han — Co-founder & CEO of Unsloth AI (YC S24); 2-30x faster LLM fine-tuning, Inkling 1-bit GGUF quants, Unsloth Studio
+- [[entities/daniel-kim-cerebras]] — Daniel Kim (@learnwdaniel) — Head of Growth at Cerebras; co-author of Cerebras Knowledge Base
 - [[entities/daniel-miessler]] — Daniel Miessler
 - [[entities/daniel-tunkelang]] — Daniel Tunkelang
 - [[entities/daniel-van-strien]] — Daniel van Strien
@@ -375,6 +377,7 @@
 - [[entities/intellect-2]] — INTELLECT-2
 - [[entities/intuit-machine]] — AI agent framework company focused on agentic AI skills design. Published 'Ten Design Principles of Agentic AI Skills...
 - [[entities/isaac-flath]] — Isaac Flath
+- [[entities/isaac-tai]] — Isaac Tai (@hi_im_isaac_) — Engineer on Cerebras AI/Growth team; co-author of Cerebras Knowledge Base
 - [[entities/isomorphic-labs]] — Isomorphic Labs
 - [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek)
 - [[entities/ivan-burazin]] — Ivan Burazin
@@ -511,6 +514,7 @@
 - [[entities/midjourney]] — Midjourney
 - [[entities/miguel-grinberg]] — Miguel Grinberg
 - [[entities/mike-piccolo]] — Founder & CEO of iii (open-source agent orchestration engine), creator of the "Harness Is the Backend" thesis. Co-Fou...
+- [[entities/mike-gao]] — Mike Gao (@gaozenghao) — ML Runtime engineer at Cerebras; co-author of Cerebras Knowledge Base; formerly Google, Qualcomm, Baidu Research
 - [[entities/mikhail-parakhin]] — Mikhail Parakhin
 - [[entities/milksandmatcha]] — Sarah Chieng (MilksandMatcha)
 - [[entities/mimi]] — Mimi (Kyutai)
@@ -856,7 +860,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1896 pages)
+## Concepts (1876 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1574,6 +1578,7 @@
 - [[concepts/enterprise-ai-operating-model]] — Enterprise AI Operating Model
 - [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns
 - [[concepts/enterprise-coding-agent-security]] — Enterprise Coding Agent Security — Security risks of coding agents in enterprise: session leakage, data exfiltration, supply chain; Claude Code and Alibaba case studies
+- [[concepts/enterprise-knowledge-base-architecture]] — Enterprise Knowledge Base Architecture — meet-the-data-where-it-lives design for internal KBs using hybrid search (full-text + embeddings + IDF + age decay), LLM query planning, MCP-exposed retrieval primitives, and project-scoped search; Cerebras case study (15K queries/day)
 - [[concepts/entropix]] — entropix
 - [[concepts/epd-disaggregation]] — EPD Disaggregation
 - [[concepts/erdos-unit-distance-problem]] — Erdős Unit Distance Problem (AI Solution)
@@ -2185,6 +2190,7 @@
 - [[concepts/object-storage-queue]] — Object Storage Queue Pattern
 - [[concepts/observability-monitoring-ai-opentelemetry-python-production]] — Observability Monitoring Ai Opentelemetry Python Production
 - [[concepts/observability-monitoring-tracing-opentelemetry-llm-agents-debugging]] — Observability Monitoring Tracing Opentelemetry Llm Agents Debugging
+- [[concepts/okf-open-knowledge-format]] — OKF (Open Knowledge Format) — Google Cloud proposed standard for structured knowledge wikis with YAML frontmatter, index.md, and logs.md conventions; adopted by OpenWiki 0.2
 - [[concepts/ollama]] — ollama
 - [[concepts/ollama-local-llm-runner]] — Ollama — Local LLM Runner
 - [[concepts/olmo-open-language-model]] — olmo-open-language-model

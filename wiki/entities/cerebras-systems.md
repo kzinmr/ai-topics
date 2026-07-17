@@ -1,7 +1,7 @@
 ---
 title: Cerebras Systems
 created: 2026-05-14
-updated: 2026-05-27
+updated: 2026-07-17
 type: entity
 tags:
   - entity
@@ -10,7 +10,8 @@ tags:
   - infrastructure
   - inference
   - mlops
-sources: [raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md, raw/articles/2026-05-10_parallel-web-systems_cerebras-fact-checker.md, raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md]
+  - knowledge-management
+sources: [raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md, raw/articles/2026-05-10_parallel-web-systems_cerebras-fact-checker.md, raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md, raw/articles/2026-07-16_cerebras_knowledge-base-architecture.md]
 ---
 
 # Cerebras Systems
@@ -104,6 +105,30 @@ Cerebras positions itself against NVIDIA's GPU-centric approach on two fronts:
 
 However, the WSE-3 has a key limitation: **on-chip SRAM is only 44 GB** — tiny compared to HBM on GPU clusters. Cerebras compensates with massive bandwidth (21 PB/s) and external memory tiers, but this constrains model sizes that can fit entirely on-chip. Cerebras is also pursuing hybrid bonding of wafer-scale optical transceivers onto the WSE compute engine, targeting HPC workloads that NVIDIA has deprioritized by reducing FP64 on GPUs.
 
+## Internal Knowledge Base
+
+Cerebras built an internal **Cerebras Knowledge** platform (launched ~April 2026) that handles **15,000+ queries per day** from employees across data center operations, chip design, hardware, training, inference, and cloud platform teams. Used by humans, automations, and agents.
+
+### Architecture
+
+- **Single Postgres table** as unified datastore — holds embeddings, raw summaries, and metadata from all sources
+- **Hybrid search**: Full-text (Postgres GIN) + embeddings + IDF + age decay, fused via Reciprocal Rank Fusion (RRF)
+- **LLM distillation**: Slack threads are distilled into structured question/summary/resolution format before embedding (not embedded raw)
+- **Bursting**: Individual message runs within long threads are scored (IDF threshold + length + reactions) and separately embedded
+- **MCP integration**: Each retrieval primitive exposed as an individual MCP tool (`search_slack`, `search_code`, `search`, `who_knows`). Claude Code or any MCP agent becomes the orchestration engine
+- **CocoIndex**: Open-source code embedding framework used for incremental code repository vectorization (see [[entities/cocoindex]])
+- **Projects**: Lightweight named bundles of data sources for scoped search
+
+### Query Pipeline
+
+```
+Planner (LLM selects tools) → Parallel tool fan-out → RRF fusion → Reranker (0-10 score) → Synthesis LLM + citations
+```
+
+See [[concepts/enterprise-knowledge-base-architecture]] for the full architectural breakdown.
+
+The AI/Growth team (Isaac @hi_im_isaac_, Daniel @learnwdaniel, Zenghao Gao @gaozenghao) built and maintains the platform.
+
 ## Relationship to Other Wiki Entities
 
 - [[entities/openai]] — Major customer, 750MW compute deal
@@ -112,3 +137,5 @@ However, the WSE-3 has a key limitation: **on-chip SRAM is only 44 GB** — tiny
 - [[concepts/compute-scaling-bottlenecks]] — SRAM vs HBM tradeoffs
 - [[entities/dylan-patel]] — SemiAnalysis coverage of Cerebras IPO and economics
 - [[entities/anthropic]] — Cerebras per-token pricing lower than Claude API
+- [[concepts/enterprise-knowledge-base-architecture]] — Internal KB architecture (15K queries/day, hybrid search, MCP)
+- [[entities/cocoindex]] — Code embedding framework powering KB code search

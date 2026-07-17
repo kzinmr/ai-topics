@@ -2,7 +2,7 @@
 title: "OpenWiki"
 type: concept
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-17
 tags:
   - coding-agents
   - documentation
@@ -14,8 +14,14 @@ tags:
   - wiki
   - cli
   - deep-agents
+  - knowledge-management
+  - okf
+related:
+  - "[[concepts/okf-open-knowledge-format]]"
+  - "[[concepts/wiki-memory]]"
 sources:
   - raw/articles/2026-07-01_bracesproul_openwiki-langchain.md
+  - raw/articles/2026-07-16_langchain_openwiki-0.2-okf.md
   - https://github.com/langchain-ai/openwiki
 ---
 
@@ -64,6 +70,24 @@ OpenWiki draws from several predecessors:
 - **Tracing**: LangSmith integration for inspecting agent runs
 - **CI/CD**: GitHub Action for scheduled wiki updates (checks git diffs since last run)
 
+## OpenWiki 0.2 — OKF Integration (July 2026)
+
+OpenWiki 0.2 adopts **[[OKF (Open Knowledge Format)|concepts/okf-open-knowledge-format]]**, a proposed standard from Google Cloud for structuring knowledge wikis. This brings structured metadata to generated documentation:
+
+### What Changed
+
+- **YAML frontmatter** — Every wiki page now includes `type`, `title`, `description`, `tags`, and `resource` fields, following the OKF spec
+- **`index.md` conventions** — Directory summaries are generated from frontmatter descriptions, enabling deterministic navigation
+- **`logs.md` changelog** — An append-only change log tracks each run's updates, so agents and developers can see what changed without re-reading the full wiki
+
+### Agent Retrieval Impact
+
+OKF structured metadata enables **deterministic search** — agents can filter by type, category, or tag rather than relying entirely on open-ended semantic search. This is both faster and cheaper for simple lookups while keeping agentic search available for complex queries.
+
+### Ecosystem Compatibility
+
+Because OKF is an open format, OpenWiki wikis work with community-built viewers, renderers, linters, and Google's open-source wiki visualizer. This replaces one-off integrations with a standardized, interoperable documentation layer.
+
 ## Relation to Agent Documentation Patterns
 
 OpenWiki operationalizes the pattern where [coding agents](../concepts/coding-agents.md) use instruction files as entry points:
@@ -76,8 +100,10 @@ This is complementary to [[concepts/context-engineering]] — OpenWiki generates
 
 ## Related Pages
 
+- [[concepts/okf-open-knowledge-format]] — OKF spec adopted in OpenWiki 0.2
 - [[entities/langchain]] — Parent organization
 - [[concepts/agent-documentation]] — Agent documentation patterns
+- [[concepts/wiki-memory]] — Wiki-as-context pattern for agent memory
 - [[concepts/context-engineering]] — Context engineering discipline
 - [[entities/coding-agents]] — Coding agent ecosystem
 - [[entities/andrej-karpathy]] — LLM Wiki concept originator
