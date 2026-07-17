@@ -2804,3 +2804,4 @@
 - [[queries/wiki-graph-analysis-weekly-2026-06-19]] — Weekly Wiki Graph Analysis (2026-06-19) — 2,201 pages analyzed; orphan pages, index gaps, broken links
 - [[queries/wiki-graph-analysis-weekly-2026-07-05]] — Weekly Wiki Graph Analysis (2026-07-05) — orphan pages, broken wikilinks, duplicates, index gaps across 2,205 wiki pages
 - [[queries/wiki-graph-analysis-weekly-2026-07-10]] — Weekly Wiki Graph Analysis (2026-07-10) — 2,201 pages analyzed; graph analysis of 187 persons × 1,781 concepts; cross-reference gap recommendations
+- [[queries/wiki-graph-analysis-weekly-2026-07-17]] — Weekly Wiki Graph Analysis (2026-07-17) — 2,249 pages analyzed; 38 orphans, 4,302 broken links, 106 stale pages; 188P × 1,811C graph

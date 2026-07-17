@@ -2431,3 +2431,64 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 | Missing sources | 0 |
 | Orphans (non-archive) | 0 |
 | Header counts match filesystem | All match |
+
+## [2026-07-17] Weekly wiki graph analysis
+
+### Changes
+- Ran `scripts/wiki_graph_analysis_weekly.py` on 2,249 pages
+- Saved report to `queries/wiki-graph-analysis-weekly-2026-07-17.md`
+
+### Findings
+- 38 orphans, 4,302 broken links (99 fixable), 16 duplicate groups, 106 stale pages
+- New duplicates detected: cline (entities vs concepts), qwen (entities vs concepts)
+- Agentic-search remains largest page (1,191 lines)
+- 542 stale index entries need cleanup
+
+### Recommendations
+- HIGH: Create concept/context-engineering stub (fixes 131 broken links)
+- HIGH: Merge 6 entity duplicate pairs (2 weeks no progress)
+- HIGH: Disambiguate cline and qwen
+- HIGH: Investigate dspy-rlm / rlm-recursive-language-models duplication
+- MEDIUM: Bulk refresh 106 stale pages (growing ~47/week)
+- MEDIUM: Fix 99 auto-fixable wikilinks
+
+## [2026-07-17] Weekly wiki graph analysis
+
+### Changes
+- Ran scripts/wiki_graph_analysis_weekly.py on 2,249 pages
+- Saved report to queries/wiki-graph-analysis-weekly-2026-07-17.md
+
+### Findings
+- 38 orphans, 4,302 broken links (99 fixable), 16 duplicate groups, 106 stale pages
+- New duplicates detected: cline (entities vs concepts), qwen (entities vs concepts)
+- Agentic-search remains largest page (1,191 lines)
+- 542 stale index entries need cleanup
+
+### Recommendations
+- HIGH: Create concept/context-engineering stub (fixes 131 broken links)
+- HIGH: Merge 6 entity duplicate pairs (2 weeks no progress)
+- HIGH: Disambiguate cline and qwen
+- HIGH: Investigate dspy-rlm / rlm-recursive-language-models duplication
+- MEDIUM: Bulk refresh 106 stale pages (growing ~47/week)
+- MEDIUM: Fix 99 auto-fixable wikilinks
+
+
+## [2026-07-17] Weekly wiki graph analysis
+
+### Changes
+- Ran scripts/wiki_graph_analysis_weekly.py on 2,249 pages
+- Saved report to queries/wiki-graph-analysis-weekly-2026-07-17.md
+
+### Findings
+- 38 orphans, 4,302 broken links (99 fixable), 16 duplicate groups, 106 stale pages
+- New duplicates: cline, qwen (entities vs concepts)
+- Agentic-search still largest page (1,191 lines)
+- 542 stale index entries need cleanup
+
+### Recommendations
+- HIGH: Create concept/context-engineering stub (fixes 131 broken links)
+- HIGH: Merge 6 entity duplicate pairs (2 weeks no progress)
+- HIGH: Disambiguate cline and qwen
+- HIGH: Investigate dspy-rlm / rlm-recursive-language-models duplication
+- MEDIUM: Bulk refresh 106 stale pages (growing ~47/week)
+- MEDIUM: Fix 99 auto-fixable wikilinks
