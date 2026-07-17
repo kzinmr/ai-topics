@@ -856,7 +856,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1891 pages)
+## Concepts (1896 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1141,6 +1141,7 @@
 - [[concepts/ai-supply-chain-security]] — AI Supply Chain Security
 - [[concepts/ai-sycophancy]] — AI Sycophancy
 - [[concepts/ai-video-generation-2026]] — AI Video Generation (2026)
+- [[concepts/ai-voice-fraud]] — AI Voice Fraud — voice cloning scams, three-second theft attacks, deepfake audio fraud vectors, why traditional defences fail against AI-driven voice fraud, mitigation strategies
 - [[concepts/ai-vulnerability-detection-at-scale]] — AI Vulnerability Detection at Scale
 - [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
 - [[concepts/alex-hall]] — alex-hall
@@ -1674,6 +1675,7 @@
 - [[concepts/gapa]] — Redirect page. GAPA was created as a stub but refers to GEPA (Genetic-Pareto Prompt Evolution). See [[concepts/gepa]]...
 - [[concepts/gdpr]] — GDPR
 - [[concepts/gemini-computer-use]] — Gemini Computer Use (Android) — Philipp Schmid's Android-specific implementation guide: screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script, relationship to Claude and OpenAI computer use approaches (June 25)
+- [[concepts/gemini-notebook]] — Gemini Notebook — Google's rebranding of NotebookLM under the Gemini brand umbrella, consolidating AI notebook and RAG tools, deeper Google Workspace integration, secure cloud computer runtime
 - [[concepts/gemini/gemini-3-1-flash-lite]] — Gemini 3.1 Flash-Lite
 - [[concepts/gemini/gemini-3-2-flash]] — Gemini 3.2 Flash
 - [[concepts/gemini/gemini-3-5-flash]] — Gemini 3.5 Flash
@@ -1992,6 +1994,7 @@
 - [[concepts/llm-parameter-counts]] — LLM Parameter Counts — How parameters are distributed across embeddings, attention, FFN, and output head in transformer models
 - [[concepts/llm-security]] — LLM Security — Security vulnerabilities in LLM applications including prompt injection, data leakage, and jailbreaking
 - [[concepts/llm-steering]] — LLM Steering
+- [[concepts/llm-text-detection-classical-ml]] — LLM Text Detection with Classical ML — using SVM, Random Forest, XGBoost on stylometric features to detect AI-generated text, competitive with deep learning approaches for AIGC detection
 - [[concepts/llm-trace-judge]] — LLM Trace Judge
 - [[concepts/llm-training-coherence-evolution]] — LLM Training Coherence Evolution
 - [[concepts/llm-training-fundamentals]] — llm-training-fundamentals
@@ -2544,6 +2547,7 @@
 - [[concepts/snapshot-testing]] — snapshot-testing
 - [[concepts/snowflake-arctic-rl]] — Snowflake Arctic RL — Open-source RL framework (VeRL+SkyRL); ZoRRo 6x actor-update acceleration; 36h Text2SQL training on 32 H200s; beats Gemini 3.1 Pro (June 30)
 - [[concepts/societal-shadow]] — A concept proposed by QC (Qiaochu Yuan): the ironic phenomenon where RLHF's need to enumerate everything LLMs are for...
+- [[concepts/soofi-s]] — Soofi S — German AI consortium's open 30B multilingual model topping benchmarks in English and German, Apache 2.0 licensed, European sovereign AI milestone
 - [[concepts/software-2.0]] — software-2.0
 - [[concepts/software-after-software]] — Software After Software
 - [[concepts/software-correctness]] — software-correctness

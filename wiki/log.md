@@ -1,3 +1,20 @@
+## [2026-07-17] Active Crawl (4 topics)
+
+| 2026-07-17 11:?? | concepts/ai-voice-fraud.md | created | AI Voice Fraud concept page — voice cloning scams, deepfake audio fraud vectors, defensive strategies |
+| 2026-07-17 11:?? | concepts/gemini-notebook.md | created | Gemini Notebook concept page — Google's NotebookLM rebranding under Gemini brand umbrella |
+| 2026-07-17 11:?? | concepts/llm-text-detection-classical-ml.md | created | LLM Text Detection with Classical ML — SVM/RF/XGBoost on stylometric features for AIGC detection |
+| 2026-07-17 11:?? | concepts/soofi-s.md | created | Soofi S — German AI consortium's open 30B multilingual model, Apache 2.0 |
+| 2026-07-17 11:?? | raw/articles/2026-07-15_ai-voice-fraud-three-second-theft.md | saved | Source: smarterarticles.co.uk, 188 HN pts |
+| 2026-07-17 11:?? | raw/articles/2026-07-16_notebooklm-to-gemini-notebook.md | saved | Source: blog.google, 314 HN pts |
+| 2026-07-17 11:?? | raw/articles/2026-03-01_llm-text-detection-classical-ml.md | saved | Source: blog.lyc8503.net, 204 HN pts |
+| 2026-07-17 11:?? | raw/articles/2026-07-13_soofi-s-german-30b-model.md | saved | Source: the-decoder.com, 139 HN pts |
+| 2026-07-17 11:?? | SCHEMA.md | modified | Added tags: notebook, classifiers, llm-output, deepfakes, fraud |
+| 2026-07-17 11:?? | index.md | updated | Added 4 concept entries, updated section counts (1891→1896) |
+
+Sources: HN Algolia (15 trending stories), X/Twitter xurl (10 trending topics), Blogwatcher SQLite DB, Wiki gap analysis. Discovery via 3 parallel subagents. Page creation via parallel subagents + direct parent edits.
+
+Top story: Kimi K3 (#1 HN at 1,677 pts) — already documented in wiki; skipped page creation. Other notable: Cursor 0day (453 pts), Demis Hassabis AI safety (157 pts), Gemma 4 CPU inference (324 pts), Spectral Compute CUDA alternatives (141 pts — 403 blocked), LM Studio Bionic (264 pts).
+
 2026-07-17 | newsletter-wiki-ingest | Enrich concepts/kimi-k3.md (+91 lines) | Add KDA/AttnRes architecture details, Agent Arena benchmarks, AA evaluation metrics, Serving/Infrastructure, Caveats & Controversies, Community Reaction from AINews article | Triage recovered from checkpoint (Takes=0, Ref=4); processed 1 reference enrichment | [concepts/kimi-k3](concepts/kimi-k3.md) | sources: raw/newsletters/2026-07-17-ainews-kimi-k3-2-8t-a50b-the-largest-open-model-ever-released-opus-4-8-class-at-.md
 
 ## 2026-07-17
