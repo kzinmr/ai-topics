@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-07-11
+updated: 2026-07-17
 tags:
   - entity
   - company
@@ -27,6 +27,7 @@ sources:
   - raw/articles/2026-07-10_fireworks-ai_gumloop.md
   - raw/articles/2026-07-11_fireworks-ai_kernel-optimization-for-minimax-m3-on-nvidia-blackwell.md
   - raw/articles/2026-07-10_fireworks-ai_Open-frontier-and-yours-LangChain-Deep-Agents-on-NVIDIA.md
+  - raw/articles/2026-07-17_fireworks-ai_series-d-announcement.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -476,6 +477,18 @@ The article's central question:
 If answering requires reading another company's DPA to complete, you are talking to a router. That may be fine for the use case — but the distinction should be explicit before production deployment.
 
 **Source:** [[raw/articles/2026-06-12_fireworks-ai_inference-providers-vs-api-routers]]
+
+## Series D — $1.505B at $17.5B Valuation (July 2026)
+
+In July 2026, Fireworks AI raised **$1.505 billion** in Series D funding at a **$17.5 billion valuation**, led by **Atreides Management**, **Index Ventures**, and **TCV**, with participation from Evantic Capital, Lightspeed Venture Partners, **[[entities/nvidia|Nvidia]]**, 20VC, Bessemer Venture Partners, Menlo Ventures, and others. The round brings Fireworks' total raised to over $1.8B.
+
+The company has surpassed **$1 billion in annualized revenue run rate** (ARR) and serves **more than 40 trillion tokens every day** — more than triple the throughput reported in May 2026. Critically, **more than 95% of those tokens** come from models specialized on customers' proprietary data rather than general-purpose base models, validating Fireworks' thesis that enterprise AI value lies in customization over raw frontier intelligence.
+
+> *"Companies are no longer renting general intelligence. They're building their own."*
+
+The funding will be used to expand compute infrastructure and grow the engineering team, further cementing Fireworks' position as the leading inference infrastructure platform for [[concepts/post-training/reinforcement-fine-tuning|customized open-weight models]] and [[concepts/ai-agent-engineering|production agent workloads]].
+
+**Source:** [[raw/articles/2026-07-17_fireworks-ai_series-d-announcement]]
 
 ## Sources
 

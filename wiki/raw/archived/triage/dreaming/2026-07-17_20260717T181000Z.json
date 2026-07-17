@@ -1,0 +1,217 @@
+{
+  "archived_at": "2026-07-17T18:25:12.223806+00:00",
+  "triage_run_id": "20260717T181000Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming saturation日 — 2026-07-17。Dreaming-collect収集0件、filesystem scanで30件の生記事を確認。前日のtriageは消費済み。Dreaming-group (18:00 UTC) のtriage分析を出力ファイルからリカバリー。5件のreference enrichments（Fireworks Series D, Pinecone Sparse V3 + Text Match, ElevenLabs Interaction Models, Warp Self-Improving Code Review, Harvey Benchmark acquisition）を実行。14件スキップ（6件カバー済み、8件非AI）。",
+  "decisions": [
+    {
+      "item_id": "dreaming-fireworks-series-d",
+      "source": "dreaming",
+      "source_name": "Fireworks AI Blog",
+      "title": "Fireworks Secures $1.5B in Series D Funding",
+      "url": "https://fireworks.ai/blog/series-d-announcement",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★★ Fireworksが$1.505B Series Dを$17.5B評価額で調達、$1B ARR突破、40T tokens/day、95%が顧客特化モデル。既存entities/fireworks-ai.mdにSeries D情報なし。enrichment実行済み。",
+      "body_excerpt": "Fireworks announced a $1.505 billion Series D at a $17.5 billion valuation... $1B ARR... 40T tokens/day... 95% from specialized models.",
+      "candidate_wiki_path": "entities/fireworks-ai.md"
+    },
+    {
+      "item_id": "dreaming-pinecone-sparse-v3",
+      "source": "dreaming",
+      "source_name": "Pinecone Blog",
+      "title": "Sparse V3: how Pinecone's sparse index learned to skip",
+      "url": "https://www.pinecone.io/blog/sparse-v3/",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ Pinecone Sparse V3がterm-major index layoutに再編。151× (SPLADE)/1,428× (BM25) I/O削減。既存entities/pinecone.mdにSparse V3言及なし。enrichment実行済み。",
+      "body_excerpt": "V3 reorganizes the index around terms: each term owns its own posting blocks... 151× I/O reduction for SPLADE, 1,428× for BM25.",
+      "candidate_wiki_path": "entities/pinecone.md"
+    },
+    {
+      "item_id": "dreaming-pinecone-text-match",
+      "source": "dreaming",
+      "source_name": "Pinecone Blog",
+      "title": "Pinecone Text Match Filters for Full Text Search",
+      "url": "https://www.pinecone.io/blog/text-match-filters/",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Pinecone Text Match Filters — lexical queryがsemantic search前に候補プールを制限。unstated context問題解決。enrichment実行済み。",
+      "body_excerpt": "Text match filters: a lexical query that restricts the candidate pool for semantic search... no pre-labeling required.",
+      "candidate_wiki_path": "entities/pinecone.md"
+    },
+    {
+      "item_id": "dreaming-elevenlabs-interaction-models",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "Interaction models: Natural human-AI communication",
+      "url": "https://elevenlabs.io/blog/interaction-models",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ ElevenLabs Interaction Models — 人間-AI音声対話の3つの障害（割り込み、聞き返し不能、ターン間記憶喪失）とcascaded architecture。既存entities/elevenlabs.mdにinteraction models概念なし。enrichment実行済み。",
+      "body_excerpt": "Interaction models are AI systems designed to communicate across audio and text in real time, perceiving not just what is said, but when.",
+      "candidate_wiki_path": "entities/elevenlabs.md"
+    },
+    {
+      "item_id": "dreaming-warp-self-improving-code-review",
+      "source": "dreaming",
+      "source_name": "Warp Blog",
+      "title": "How to build a cloud software factory - self-improving code review",
+      "url": "https://www.warp.dev/blog/how-to-build-a-cloud-software-factory-self-improving-code-review",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Warp factory第3弾 — outer-loop agentがcode reviewerを観察・改善。Skill=text+Python scripts、spec比較+build検証。enrichment実行済み。",
+      "body_excerpt": "Outer-loop agent that observes the code reviewer and improves it over time... Skill = text instructions + deterministic Python scripts.",
+      "candidate_wiki_path": "entities/warp-terminal.md"
+    },
+    {
+      "item_id": "dreaming-harvey-benchmark-acquisition",
+      "source": "dreaming",
+      "source_name": "Harvey Blog",
+      "title": "Y Combinator-Backed Benchmark Joins Harvey",
+      "url": "https://www.harvey.ai/blog/y-combinator-backed-benchmark-joins-harvey",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ HarveyがBenchmark（YC出資の資産運用向け意思決定基盤）を買収。3回目の買収、$100M+ net-new ARR、$2T+ AUM。enrichment実行済み。",
+      "body_excerpt": "Harvey today announced its acquisition of Benchmark, a decision infrastructure platform for asset management... $100M+ net-new ARR in Q2.",
+      "candidate_wiki_path": "entities/harvey.md"
+    },
+    {
+      "item_id": "dreaming-skip-gpt-red",
+      "source": "dreaming",
+      "source_name": "MIT Tech Review",
+      "title": "GPT-Red",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ GPT-Redは既存concepts/gpt-red.mdで包括的にカバー済み",
+      "body_excerpt": "（すでにカバー済み）",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-agentty",
+      "source": "dreaming",
+      "source_name": "GitHub",
+      "title": "Agentty C++26 coding agent",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ Agenttyはconcepts/agentty.mdで完全カバー済み",
+      "body_excerpt": "（すでにカバー済み）",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-openwiki",
+      "source": "dreaming",
+      "source_name": "LangChain",
+      "title": "OpenWiki 0.2 OKF",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ OpenWiki 0.2はconcepts/openwiki.mdでsource掲載済み",
+      "body_excerpt": "（すでにカバー済み）",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-inkling-modal",
+      "source": "dreaming",
+      "source_name": "Modal Blog",
+      "title": "Inkling on Modal (DFlash)",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ Inkling DFlashはconcepts/inkling.mdでカバー済み",
+      "body_excerpt": "（すでにカバー済み）",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-cerebras-kb",
+      "source": "dreaming",
+      "source_name": "Cerebras",
+      "title": "Cerebras Knowledge Base Architecture",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ Cerebras KBはentities/cerebras-systems.mdでカバー済み",
+      "body_excerpt": "（すでにカバー済み）",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-sierra",
+      "source": "dreaming",
+      "source_name": "Sierra AI",
+      "title": "Sierra AI-Pilling Pinecone agent",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ 既存triageでskip判定済み",
+      "body_excerpt": "（すでにカバー済み）",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-cohere-toronto",
+      "source": "dreaming",
+      "source_name": "Cohere",
+      "title": "Cohere × University of Toronto",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ 産学連携のマーケティング発表、技術的深みなし",
+      "body_excerpt": "Partner announcement, no technical depth",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-glean-databricks",
+      "source": "dreaming",
+      "source_name": "Glean",
+      "title": "Glean × Databricks integration",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ 製品統合のマーケティング発表",
+      "body_excerpt": "Product integration marketing",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-hex-semantic",
+      "source": "dreaming",
+      "source_name": "Hex Technologies",
+      "title": "Semantic Models in Hex",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ データ分析マーケティング、非AI",
+      "body_excerpt": "Data analytics marketing, non-AI",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-parakeet",
+      "source": "dreaming",
+      "source_name": "Parakeet",
+      "title": "The Shape of Apps",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ macOSアイコンデザイン記事、非AI",
+      "body_excerpt": "macOS icon design, non-AI",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-pluralistic",
+      "source": "dreaming",
+      "source_name": "Pluralistic",
+      "title": "Lucky Orifices",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ Cory Doctorowエッセイ、非AI",
+      "body_excerpt": "Cory Doctorow essay, non-AI",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-eu-battery",
+      "source": "dreaming",
+      "source_name": "EU Commission",
+      "title": "EU Battery Regulation exemptions",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ EU政策、非AI",
+      "body_excerpt": "EU policy, non-AI",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-intel-history",
+      "source": "dreaming",
+      "source_name": "dfarq.homeip.net",
+      "title": "Intel founded July 18, 1968",
+      "url": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ Intel歴史記事、非AI",
+      "body_excerpt": "Intel history, non-AI",
+      "candidate_wiki_path": null
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 title: "Pinecone"
 type: entity
 created: 2026-05-08
-updated: 2026-06-06
+updated: 2026-07-17
 tags:
   - company
   - search
@@ -15,6 +15,8 @@ sources:
   - https://www.pinecone.io/
   - https://www.pinecone.io/blog/
   - raw/articles/2026-06-06_pinecone_nexus-ea-benchmarks.md
+  - raw/articles/2026-07-17_pinecone_sparse-v3.md
+  - raw/articles/2026-07-17_pinecone_text-match-filters.md
 ---
 
 # Pinecone
@@ -126,6 +128,24 @@ Three customer benchmarks from Nexus's early-access program demonstrate consiste
 Pinecone published a [Nexus Analyst Demo](https://nexus-analyst-web.vercel.app/) comparing classic RAG (multi-tool, manual chunking) vs Nexus (single `nexus_query` tool, compiled briefs) side-by-side on the same fictional SaaS company data.
 
 Source: raw/articles/2026-06-03_pinecone_inside-askdata.md
+
+## Sparse V3 — Term-Major Index Layout (July 2026)
+
+Pinecone announced **Sparse V3**, a major redesign of their sparse index architecture. V3 reorganizes the index around **terms** instead of document-major blocks. Each term owns its posting blocks; queries only load blocks for referenced terms. Disk I/O reduction: **151×** for SPLADE, **1,428×** for BM25 with identical recall.
+
+The architecture uses metadata blocks for pre-load skip decisions (MaxScore pruning), delta compression, and term-specific score quantization. Heuristics were tuned via property-based tests combined with Claude-driven iteration over hundreds of combinations.
+
+This is significant for [[concepts/lexical-search|lexical search]] pipelines and hybrid retrieval strategies.
+
+Source: raw/articles/2026-07-17_pinecone_sparse-v3.md
+
+## Text Match Filters for Agents (July 2026)
+
+Pinecone introduced **Full Text Search filters** designed specifically for AI agents. The lexical query restricts the candidate pool before semantic search, solving the **"unstated context" problem** — for example, "top presidential candidates" no longer returns French election results when the user's context is US politics.
+
+No pre-labeling is required. This is critical for [[concepts/agentic-rag|agentic pipelines]] where bad retrievals compound wasted tool calls. In **public preview**.
+
+Source: raw/articles/2026-07-17_pinecone_text-match-filters.md
 
 ## Related
 

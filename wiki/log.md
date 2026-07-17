@@ -1,3 +1,21 @@
+## [2026-07-17 18:10 UTC] dreaming | Knowledge consolidation — 5 reference enrichments (triage recovery)
+
+**Saturation scenario** — Dreaming-collect reported 0 articles, 193 recent raw articles. Dreaming-group (18:00 UTC) completed triage but failed on JSON render. Triage recovered from output file.
+
+**Enrichments applied** (via filesystem scan, 30 articles examined):
+| Entity | Section Added | Key Content |
+|--------|--------------|-------------|
+| [[entities/fireworks-ai]] | Series D — $1.505B at $17.5B | $1.505B Series D at $17.5B valuation, $1B ARR, 40T tokens/day, 95% specialized models. Led by Atreides Management, Index Ventures, TCV; Nvidia participated. |
+| [[entities/pinecone]] | Sparse V3 + Text Match Filters | Term-major index layout: 151× (SPLADE) / 1,428× (BM25) I/O reduction. Text match filters for agents solving unstated-context problem. |
+| [[entities/elevenlabs]] | Interaction Models | Natural human-AI dialogue: three failure modes of turn-based voice, cascaded STT+TTS architecture, emotional perception. |
+| [[entities/warp-terminal]] | Self-Improving Code Review | 3rd factory post: outer-loop agent improves reviewer, skills+Python scripts, spec comparison + build validation. |
+| [[entities/harvey]] | Benchmark Acquisition | Acquired Benchmark (YC, NYC, $2T+ AUM), 3rd acquisition of 2026, record Q2 $100M+ net-new ARR, 50+ asset mgmt firms. |
+
+Skipped (already covered): GPT-Red, Agentty, OpenWiki 0.2, Inkling on Modal, Cerebras KB, Sierra AI-Pilling.
+Non-AI batch skip: Cohere×UofT, Glean×Databricks, Hex, Parakeet, Pluralistic, EU Battery, Intel history.
+
+**Sources**: raw/articles/2026-07-17_fireworks-ai_series-d-announcement.md, raw/articles/2026-07-17_pinecone_sparse-v3.md, raw/articles/2026-07-17_pinecone_text-match-filters.md, raw/articles/2026-07-17_pinecone_behind-the-benchmarking-pipeline.md, raw/articles/2026-07-17_elevenlabs_interaction-models.md, raw/articles/2026-07-17_warp_how-to-build-a-cloud-software-factory-self-improving-code-review.md, raw/articles/2026-07-17_harvey_y-combinator-backed-benchmark-joins-harvey.md
+
 ## [2026-07-17] X Bookmarks Ingest — OpenWiki 0.2 OKF + Cerebras Knowledge Base
 
 **Bookmark 1: OpenWiki 0.2 adopts OKF spec** (LangChain AI, Jul 16 2026):

@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-07-12
+updated: 2026-07-17
 tags:
   - company
   - voice-ai
@@ -19,6 +19,7 @@ sources:
   - raw/articles/2026-06-20_elevenlabs_voice-agent-evaluation-framework-6-pillars-explained.md
   - raw/articles/2026-07-01_elevenlabs_procedures.md
   - raw/articles/2026-07-09_elevenlabs_fyxer.md
+  - raw/articles/2026-07-17_elevenlabs_interaction-models.md
 ---
 
 # ElevenLabs
@@ -279,6 +280,34 @@ Source: raw/articles/2026-07-11_elevenlabs_how-projekt-kalwaria-uses-elevenlabs-
 - Fyxer subsequently rolled out ElevenLabs as its **exclusive transcription provider**
 
 Source: raw/articles/2026-07-09_elevenlabs_fyxer.md
+
+## Interaction Models — Natural Human-AI Dialogue (July 2026)
+
+ElevenLabs introduced **interaction models** — AI systems designed to communicate across audio and text in real time, perceiving not just *what* is said but *when* it is said and the emotional response needed for the moment (Jack Limebear, Jul 16, 2026).
+
+### Three Failure Modes of Turn-Based Voice AI
+
+Traditional turn-based voice AI produces three specific conversational failures:
+
+1. **Interruption — system can't distinguish pause from finished turn**: The system cannot tell a pause for thought from a finished turn, so it either jumps in while the user is still speaking or sits in dead silence after they have finished.
+2. **No mid-response listening — can't process input while speaking**: The moment the system begins responding, it stops listening. If the user interrupts to redirect, it keeps delivering the answer to a question they have moved on from.
+3. **Cross-turn amnesia — context lost between turns**: Each turn is processed in isolation; context from five exchanges ago does not carry forward, forcing the user to repeat themselves.
+
+### Cascaded Architecture
+
+ElevenLabs uses an **advanced cascaded architecture** rather than a fused speech-to-speech model, with each stage as a specialized component co-optimized to pass rich context:
+
+- **Scribe v2 Realtime** (in-house STT) — transcribes speech in ~150ms across 90+ languages, handling noise, accents, interruptions, and non-verbal events
+- **Speculative turn-taking** — reads conversational flow instead of relying on hard silence thresholds
+- **Eleven v3 Conversational** (expressive TTS) — carries emotional temperature across turns
+- **Expressive Mode** — controls agent delivery in the moment (de-escalation, reassurance, directness)
+- **Flash v2.5** (low-latency TTS) — generates speech in under 75ms
+
+The pipeline achieves a **sub-second end-to-end cycle** with emotional perception, real-time interruption handling, and cross-turn context persistence.
+
+This paradigm shift mirrors the pattern seen in [[entities/warp-terminal]]'s approach to developer-human conversation design, where natural conversational flow replaces rigid turn-based interaction. See also [[concepts/voice-agent-evaluation]] for related evaluation methodology.
+
+Source: raw/articles/2026-07-17_elevenlabs_interaction-models.md
 
 ## Voice Agent Latency Optimization (June 2026)
 

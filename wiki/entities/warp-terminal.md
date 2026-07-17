@@ -1,7 +1,7 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-06-27
+updated: 2026-07-17
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
@@ -12,6 +12,7 @@ sources:
   - raw/articles/2026-05-23_warp_bring-your-own-inference-to-warp.md
   - raw/articles/2026-06-23_warp-dev_self-improvement-loop-for-skills.md
   - raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers.md
+  - raw/articles/2026-07-17_warp_how-to-build-a-cloud-software-factory-self-improving-code-review.md
 ---
 
 # Warp Terminal
@@ -190,6 +191,20 @@ Triage agent → Spec agent → Implementation agent → Code review agent → V
 
 This shift embodies [[concepts/agentic-engineering]] applied at the organizational level, treating the entire engineering org as an [[concepts/agent-team-swarm]] with Oz as the orchestration layer. The factory model also relates to [[concepts/harness-engineering]], where Oz provides the multi-harness control plane for this automated pipeline.
 
+### Self-Improving Code Review (July 2026)
+
+The third post in Warp's software factory series detailed a **self-improving code review agent** — an outer-loop agent that observes the code reviewer and improves its review capabilities over time.
+
+**How it works**:
+
+- **Outer-loop observation**: The agent monitors code review outputs — accepted/rejected changes, human feedback, post-merge defects — and analyzes where the reviewer fell short.
+- **Skill format**: Unlike Warp's YAML-based skills, the code review skill uses **text instructions + deterministic Python scripts** (not on-the-fly generation). This makes review behavior auditable and testable — not a black-box LLM prompt.
+- **Spec comparison & validation**: The agent compares code against specifications, validates suggestions before they reach the recommendation stage, and runs builds to verify changes before recommending.
+- **Multi-model/multi-harness cost management**: Cheap models handle routine linting and style checks; expensive models are reserved for complex semantic analysis and architectural review. The outer-loop tracks cost-per-review and optimizes routing over time.
+- **CI/CD integration**: The review pipeline runs as a **GitHub Action** producing structured `review.json` output for programmatic consumption by downstream tools and Oz's orchestration layer.
+
+This is an example of [[concepts/agentic-engineering]] at the meta-level — an agent that improves other agents. The approach contrasts with [[entities/claude-code]]'s more conversational review style.
+
 ## Strategic Context
 
 Warp's open-sourcing is framed as "how software will be built in the future" — humans managing agents at scale to build production-grade software. The founding sponsorship by OpenAI signals alignment with GPT models as the underlying agent runtime.
@@ -218,3 +233,4 @@ Warp is competing in the **agentic development environment** space alongside:
 - [PitchBook: Warp Company Profile](https://pitchbook.com/profiles/company/455184-10)
 - [Tracxn: Warp Company Profile](https://tracxn.com/d/companies/warp/)
 - [Dealroom: Warp Company Profile](https://app.dealroom.co/companies/warp_1_2)
+- [raw/articles/2026-07-17_warp_how-to-build-a-cloud-software-factory-self-improving-code-review.md](raw/articles/2026-07-17_warp_how-to-build-a-cloud-software-factory-self-improving-code-review.md)

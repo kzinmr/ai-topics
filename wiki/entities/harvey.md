@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-07-01
+updated: 2026-07-17
 tags:
   - security
   - company
@@ -21,6 +21,7 @@ sources:
   - raw/articles/2026-06-02_harvey_how-ai-is-transforming-contract-review-software.md
   - raw/articles/2026-06-17_harvey_harvey-copilot-cowork-launch.md
   - raw/articles/2026-07-01_harvey_sonnet-5-in-harvey.md
+  - raw/articles/2026-07-17_harvey_y-combinator-backed-benchmark-joins-harvey.md
 ---
 
 # Harvey
@@ -213,6 +214,28 @@ Source: [Training a Legal Agent — Harvey Blog](https://www.harvey.ai/blog/trai
 - [[entities/anthropic]] — competitor in the enterprise AI deployment space
 - [[entities/hebbia]] — serves overlapping legal/financial professional services customers
 - [[entities/courtlistener]] — provides the 9M+ US case law opinions database powering Harvey's Knowledge feature
+
+## Benchmark Acquisition (July 2026)
+
+Harvey acquired **Benchmark**, a Y Combinator-backed decision infrastructure platform for asset management based in New York City. Benchmark helps investors capture institutional knowledge and apply it to new deals, extending Harvey's platform across the full deal process — from first screen to investment committee.
+
+Benchmark co-founders **Alec Dunn** and **Connor Janson**, along with their team, are joining Harvey's product and engineering organization. This marks Harvey's **3rd acquisition of 2026** and follows a record Q2 in which Harvey added **$100M+ in net-new ARR**.
+
+Harvey already works with **50+ asset management firms**, including Blue Owl Capital, Bridgewater Associates, and KKR, on workflows such as investment due diligence, data room analysis, and deal document review. Benchmark's platform is trusted by firms representing **$2T+ in assets under management**.
+
+Benchmark's investors include [[concepts/ai-industry-financial-sustainability|Y Combinator]] and the Outsiders Fund. The acquisition extends Harvey's capabilities into asset management decision infrastructure, overlapping with the [[entities/hebbia|Hebbia]] customer base in financial professional services.
+
+### Growth Milestones Timeline
+
+| Date | Milestone |
+|------|-----------|
+| 2022 | Founded by Winston Weinberg and Gabriel Pereyra |
+| 2025 | $190M revenue; $8B valuation |
+| May 2026 | Agentic SOC launched; Legal Agent Benchmark (LAB) released |
+| June 2026 | Microsoft 365 Copilot integration; Claude Sonnet 5 integration; US Case Law Knowledge Source launched |
+| **July 2026** | **Acquires Benchmark — 3rd acquisition of 2026 — expanding into asset management decision infrastructure** |
+
+Source: raw/articles/2026-07-17_harvey_y-combinator-backed-benchmark-joins-harvey.md
 
 ## US Case Law Knowledge Source (June 2026)
 
