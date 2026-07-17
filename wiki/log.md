@@ -2,7 +2,7 @@
 
 ### Blog Ingest — Kimi K3
 
-| 2026-07-17 07:00 UTC | blog-wiki-ingest | Created `concepts/kimi-k3.md` (Moonshot Kimi K3 — 2.8T MoE frontier model, $3/$15 pricing, open weights by Jul 27). Updated `entities/kimi.md` (K3 row in model table, K3 section with benchmarks/pricing/pelican). Updated `comparisons/llm-api-pricing.md` (K3 in China Frontier section, changelog entry). Updated `index.md`. Source: `simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md`. |
+| 2026-07-17 07:00 UTC | blog-wiki-ingest | **37 new articles collected, 14 saved, 6 unsaved (paywalled).** AI-relevant processing: Created `concepts/kimi-k3.md` (Moonshot Kimi K3 — 2.8T MoE frontier model, $3/$15 pricing, open weights by Jul 27, Elo 1547 on Artificial Analysis, Arena.ai Frontend #1). Updated `entities/kimi.md` (K3 row in model table, K3 section with benchmarks/pricing/pelican). Updated `entities/simon-willison.md` — July 16-17 entries: Kimi K3 pelican analysis (25¢, 13,241 reasoning tokens), Inkling open-weights coverage, Codex $HOME file deletion bug (Thibault Sottiaux quote), Linus Torvalds AI-in-Linux stance, data center water use (Spot Birds Not Golf), Firefox in WebAssembly. Updated `entities/openai-codex.md` — Known Issues section: GPT-5.6 $HOME file deletion bug (full access mode + no sandboxing → model deletes $HOME). Updated `comparisons/llm-api-pricing.md` (K3 in China Frontier section). Non-AI articles skipped: astronomy (NGC 7497), gadget review (Thermal Master DV2), Intel history, Windows debugging, EU battery regulation, app design essay, Cory Doctorow billionaire essay. Sources: 7 simonwillison.net articles, daringfireball.net linked articles. |
 
 ### Raw Backlog Ingest — 5 candidates (2 archived, 3 dedup-skipped)
 
