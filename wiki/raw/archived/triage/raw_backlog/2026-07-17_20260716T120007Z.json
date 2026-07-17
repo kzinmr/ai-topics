@@ -1,5 +1,5 @@
 {
-  "archived_at": "2026-07-16T20:06:17.794028+00:00",
+  "archived_at": "2026-07-17T00:16:46.379664+00:00",
   "triage_run_id": "20260716T120007Z",
   "source": "raw_backlog",
   "summary_ja": "raw-backlog-ingestバッチ（5記事）。全記事が既存Wikiで完全カバー済み。Drexler CAIS論文はconcepts/cais.md+entities/k-eric-drexler.mdで7/14に全文分析完了。MAI-Thinking-1 Tech Reportはentities/mai-thinking-1.md(165行)+concepts/mai-thinking-1-tech-report.md(227行)で包括的カバー（7月中複数回拡充）。BenchFlow Awesome Agent Evalsはconcepts/ai-benchmarks/benchflow-tool.md(118行)に統合。Grant Sanderson AI/mathインタビューはentities/grant-sanderson.md(160+行)に収録。OpenAI Bubbleはentities/ed-zitron.md(649行)のNotable Articlesに追加済み。Takes=0, References=0, Skips=5。",
