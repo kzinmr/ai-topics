@@ -1,3 +1,5 @@
+2026-07-17 | newsletter-wiki-ingest | Enrich concepts/kimi-k3.md (+91 lines) | Add KDA/AttnRes architecture details, Agent Arena benchmarks, AA evaluation metrics, Serving/Infrastructure, Caveats & Controversies, Community Reaction from AINews article | Triage recovered from checkpoint (Takes=0, Ref=4); processed 1 reference enrichment | [concepts/kimi-k3](concepts/kimi-k3.md) | sources: raw/newsletters/2026-07-17-ainews-kimi-k3-2-8t-a50b-the-largest-open-model-ever-released-opus-4-8-class-at-.md
+
 ## 2026-07-17
 
 ### Blog Ingest — Kimi K3

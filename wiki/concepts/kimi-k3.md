@@ -14,6 +14,7 @@ tags:
   - frontier-models
 sources:
   - "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md"
+  - "raw/newsletters/2026-07-17-ainews-kimi-k3-2-8t-a50b-the-largest-open-model-ever-released-opus-4-8-class-at-.md"
 ---
 
 # Moonshot Kimi K3
@@ -31,14 +32,42 @@ K3 represents a significant pricing tier shift for Chinese AI labs: at **$3/M in
 | Organization | [[entities/moonshot-ai\|Moonshot AI]] |
 | Model Type | Mixture of Experts (MoE) |
 | Total Parameters | **2.8 Trillion** (marketed as "3T-class") |
-| Active Parameters | TBD |
-| Context Window | TBD |
+| Active Parameters | **~50B** (16 of 896 experts, <2% activation ratio) |
+| Context Window | **1M tokens** |
 | Reasoning Efforts | Only "max" (no lower effort levels) |
+| Attention Mechanism | Kimi Delta Attention (KDA) — up to 6.3x faster decoding |
+| Training Innovation | Attention Residuals (AttnRes) — ~25% higher efficiency |
+| MoE Architecture | LatentMoE / Stable LatentMoE |
+| Activation Function | SiTU (Sigmoid Tanh Unit) |
+| Optimization | Per-head Muon, QB/Quantile Load Balancing |
 | Hidden System Prompt | ~85 tokens suspected |
 | Multimodality | Vision input supported |
 | Predecessor | [[concepts/kimi-k2-6\|Kimi K2.6]] (1T, Apr 2026) |
 
 The model is more than **2× the parameter count** of Kimi K2.6's 1T architecture. Active parameter count has not been disclosed as of announcement.
+
+## Innovation Details
+
+### Kimi Delta Attention (KDA)
+
+KDA is Moonshot's novel attention mechanism purpose-built for long-context efficiency. Moonshot claims it enables **up to 6.3x faster decoding** in million-token contexts. The design reportedly started in **January 2025** and took approximately **1.5 years** to reach frontier-class scale.
+
+**vLLM Integration**: Moonshot contributed a KDA prefix caching implementation directly to vLLM, with support available from day 0. This was notable because KDA breaks assumptions behind conventional prefix caching, requiring upstream runtime changes to the vLLM codebase.
+
+### Attention Residuals (AttnRes)
+
+AttnRes is Moonshot's training efficiency innovation, claimed to deliver **~25% higher training efficiency at less than 2% additional cost**. It is used in conjunction with KDA to enable scaling of the non-standard attention stack.
+
+### Community-Identified Architecture Details
+
+From Moonshot's technical blog and community analysis, additional architectural components were identified:
+
+- **LatentMoE / Stable LatentMoE**: The mixture-of-experts implementation with **16 activated experts out of 896 total** — an activation ratio of under 2%.
+- **SiTU (Sigmoid Tanh Unit)**: A novel activation function used in the model architecture.
+- **Per-head Muon**: Muon optimizer applied per attention head.
+- **QB / Quantile Load Balancing**: Load balancing technique for expert utilization.
+
+The combination of KDA + LatentMoE + AttnRes at 2×+ scale over K2.6 was noted by architecture observers as a notable engineering achievement — scaling a non-standard attention stack into a frontier-class model.
 
 ## Benchmarks
 
@@ -58,9 +87,32 @@ Kimi K3's self-reported benchmarks position it firmly in the frontier tier:
 - **Cost per task**: $0.94 (similar to GPT-5.6 Sol at $1.04; ~½ of Opus 4.8 at $1.80)
 - **Token efficiency**: 21% fewer output tokens than K2.6
 
-### Arena.ai Frontend Code
+### Arena.ai Agent Arena Results
 
-K3 is the **#1 model on Arena.ai's Frontend Code arena**, surpassing even Claude Fable 5 — a notable achievement for a non-Anthropic model in a code-focused evaluation.
+Kim K3 achieved standout results in Arena's human-preference evaluations, especially in code domains:
+
+| Arena | Ranking | Score | Detail |
+|-------|---------|-------|--------|
+| **Frontend Code** | **#1** | **1679 pts** | Jumps from #18 (K2.6) to #1; #1 in 6/7 frontend domains, #2 in Gaming |
+| **Text Arena** | #9 | 1486 pts | Jumped from #38; top-10 in creative writing, coding, instruction following |
+| **Pairwise Win Rate** | — | **76%** | vs 63% for Claude Fable 5, 58% for GPT-5.6 Sol |
+
+The Frontend Code result was especially prominent because it is a **pairwise human-preference arena**, not a static benchmark — real users preferred K3's frontend code output over all competitors. Multiple user reports showed K3 generating complex web experiences (CS:GO × Portal clone in 3 shots / ~600K tokens / $3.24, web DOS emulator running near 1M context over hours).
+
+### Artificial Analysis Detailed Evaluation
+
+| Metric | Score | Comparison |
+|--------|-------|------------|
+| **AA Intelligence Index** | **57** | Comparable to Opus 4.8 and GPT-5.5; behind Fable 5 and GPT-5.6 Sol |
+| **GDPval v2** | 1668 / 1687 | Above Opus 4.8; behind GPT-5.6 Sol (1747.8) |
+| **AutomationBench-AA** | **53% / #1** | Top score |
+| **AA-Briefcase (Elo)** | 1547 | +732 from K2.6 |
+| **Cost per task** | $0.94 | GPT-5.6 Sol: $1.04; Opus 4.8: $1.80 |
+| **Token efficiency** | 21% fewer output than K2.6 | 132M vs 166M tokens across full Intelligence Index |
+| **AA-Omniscience accuracy** | **46%** (+18 pts) | vs 33% on K2.6 |
+| **AA-Omniscience hallucination** | **51%** (−12 pts) | **Worsened** from 39% on K2.6 |
+
+The hallucination rate regression on AA-Omniscience was flagged as a real weakness despite accuracy gains, and was noted by multiple independent evaluators.
 
 ## Pricing
 
@@ -89,6 +141,45 @@ Notable observations:
 - This means every request pays for full reasoning, making the model expensive for simple tasks
 - Vision input works well; alt text generation is high quality
 - ~85 token hidden system prompt suspected
+
+## Serving & Infrastructure
+
+| Metric | Value |
+|--------|-------|
+| **Serving speed** (OpenRouter) | ~26–28 tok/s |
+| **Reference deployment** | 64+ accelerator supernode |
+| **vLLM support** | KDA prefix caching, day 0 |
+| **API cached input** | 90% discount ($0.30/1M tokens) |
+
+Observed serving speeds via Moonshot API/OpenRouter were noted as slower than Opus, with speculation that speculative decoding was not yet enabled. Moonshot's blog reportedly recommends **supernode configurations with 64+ accelerators** for best inference efficiency.
+
+The practical deployability of a 2.8T open-weight model was a recurring theme: open weights do not guarantee cheap self-hosting, and frontier infrastructure territory (64+ accelerator guidance) limits practical deployment to well-funded teams.
+
+## Caveats & Controversies
+
+### Benchmark Metric Criticism
+
+**ProgramBench** author Ofir Press objected to Moonshot's metric choice, noting that averaging implementation percentage (rather than counting fully working programs) can overstate usefulness. This inflates partial-credit performance relative to fully working programs.
+
+**Bindu Reddy** warned that K3's benchmark story might be overstated unless validated on hidden/uncontaminated evals like LiveBench, and argued that if the model "thinks forever" on every request, real cost per task could be less favorable.
+
+### Hallucination Regression
+
+Despite accuracy improvements (+18 pts on AA-Omniscience), the model's hallucination rate **worsened from 39% to 51%** — a significant regression that undermines reliability for knowledge-work tasks.
+
+### "Thinks Forever" Risk
+
+Multiple users noted K3 currently appears to "think a lot," preserve long reasoning history, and may require more careful harness support than simpler chat-first APIs. Its "max-only" reasoning effort means every request pays for full reasoning, making the model expensive for simple tasks.
+
+## Community Reaction
+
+K3's launch was widely framed as a **"DeepSeek moment"** for open-source AI — the first time an open model demonstrated competitiveness with top closed models at scale. Key themes:
+
+- **US-China competition**: Many commentators tied K3 to export controls and the narrowing gap between Chinese open labs and US closed labs, arguing K3 weakens the narrative that Chinese models trail by 6–8 months
+- **Open model milestone**: "This is no longer 'good for open source' — it's simply competitive with top public closed models"
+- **Systems story**: The launch was notable not just for raw capability but for scaling a non-standard attention stack — KDA + AttnRes + sparse MoE at frontier level
+- **Counterweight**: Capability parity is not full-stack parity; product reliability, inference scale, and deployment margins may still favor US incumbents
+- **Paradox**: Open weights at 2.8T do not mean cheap to run — practical deployability requires frontier infrastructure
 
 ## Open Weight Status
 
