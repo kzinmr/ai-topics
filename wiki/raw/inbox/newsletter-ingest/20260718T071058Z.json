@@ -1,0 +1,83 @@
+{
+  "triage_run_id": "20260718T071058Z",
+  "triaged_at": "2026-07-18T07:10:58Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 5,
+  "summary": {
+    "critical": 2,
+    "high": 2,
+    "low": 1
+  },
+  "items": [
+    {
+      "message_id": "<20260717184557.3.3e470c273e10a006@mg-d0.substack.com>",
+      "subject": "Kimi K3, and what we can still learn from the pelican benchmark",
+      "date": "2026-07-17",
+      "source_label": "uid=380",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-kimi-k3-and-what-we-can-still-learn-from-the-pelican-benchmark.md",
+      "best_article_url": "https://simonwillison.net/2026/Jul/17/kimi-k3-pelican-benchmark/",
+      "saved_article_path": "/opt/data/ai-topics/wiki/raw/articles/2026-07-17-simonw-kimi-k3-pelican-benchmark.md",
+      "importance": "critical",
+      "reason": "Simon Willison's detailed analysis of Moonshot AI's Kimi K3 (2.8T params). Covers benchmarks, pricing ($3/$15 per M tokens), pelican SVG test, Arena.ai frontend code #1, comparison to Claude Fable 5 / GPT-5.6 Sol. Major model release from tracked opinion leader.",
+      "wiki_targets": ["entities/kimi-k3", "entities/moonshot-ai", "concepts/llm-benchmarks", "entities/simon-willison"],
+      "article_count": 20,
+      "action": "Create entity page for Kimi K3 / Moonshot AI; update benchmark concepts; enrich Simon Willison page"
+    },
+    {
+      "message_id": "<20260717.185256.e6fd27c2@mta11>",
+      "subject": "China's Open Source K3 Changed the Game Forever",
+      "date": "2026-07-17",
+      "source_label": "uid=381",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-china-s-open-source-k3-changed-the-game-forever.md",
+      "best_article_url": null,
+      "saved_article_path": null,
+      "importance": "critical",
+      "reason": "Beehiiv newsletter covering Kimi K3 open-source release. All links are beehiiv tracking redirects — could not resolve to actual article URLs without following redirects. Overlaps with Simon Willison coverage. Pair both for comprehensive K3 entity page.",
+      "wiki_targets": ["entities/kimi-k3", "concepts/open-source-llms", "concepts/chinese-ai"],
+      "article_count": 20,
+      "action": "Merge with Simon Willison K3 coverage; supplementary angle on Chinese open-source landscape"
+    },
+    {
+      "message_id": "<20260717074008.3.0df9e3281c821868@mg-d1.substack.com>",
+      "subject": "Building an Enterprise AI Agent for Healthcare",
+      "date": "2026-07-17",
+      "source_label": "uid=378",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-building-an-enterprise-ai-agent-for-healthcare.md",
+      "best_article_url": "https://hugobowne.substack.com/p/building-an-enterprise-ai-agent-for",
+      "saved_article_path": "/opt/data/ai-topics/wiki/raw/articles/2026-07-17-hugobowne-enterprise-ai-agent-healthcare.md",
+      "importance": "high",
+      "reason": "Hugo Bowne-Anderson interview with William Horton (Staff AI Engineer, Maven Clinic). Concrete case study: lead/specialist agent routing, 15-20 tools divided across specialists, deterministic + LLM-judge evals, release gating by consequence severity. Highly actionable for AI agent architecture wiki.",
+      "wiki_targets": ["concepts/ai-agents", "concepts/agent-architecture", "concepts/agent-evaluation", "entities/maven-clinic"],
+      "article_count": 20,
+      "action": "Create Maven Clinic entity page; update agent-architecture and agent-evaluation concept pages"
+    },
+    {
+      "message_id": "<20260718043021.3.7d0cd20e81e744e2@mg-d0.substack.com>",
+      "subject": "[AINews] not much happened today",
+      "date": "2026-07-18",
+      "source_label": "uid=382",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-18-ainews-not-much-happened-today.md",
+      "best_article_url": "https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-830",
+      "saved_article_path": null,
+      "importance": "high",
+      "reason": "AINews daily digest from swyx (Latent Space). Title suggests a quiet day, but AINews often contains multiple small stories worth tracking. Requires fetching the actual post to identify specific items.",
+      "wiki_targets": ["entities/ainews", "entities/swyx"],
+      "article_count": 20,
+      "action": "Fetch and review for any smaller stories; update AINews/swyx entity pages if needed"
+    },
+    {
+      "message_id": "<20260717170005.3.0b819e6ad8fe81dd@mg-d0.substack.com>",
+      "subject": "AI Will Never Give the Same Answer Twice",
+      "date": "2026-07-17",
+      "source_label": "uid=379",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-ai-will-never-give-the-same-answer-twice.md",
+      "best_article_url": "https://open.substack.com/pub/thesignal/p/ai-will-never-give-the-same-answer",
+      "saved_article_path": null,
+      "importance": "low",
+      "reason": "The Signal newsletter by Alex Banks. Philosophical piece on LLM non-determinism. General interest but likely lacks novel technical depth. Paywalled (freemail flag on link 19 suggests limited access).",
+      "wiki_targets": ["concepts/llm-non-determinism"],
+      "article_count": 20,
+      "action": "Skip unless fetch reveals novel technical content"
+    }
+  ]
+}
