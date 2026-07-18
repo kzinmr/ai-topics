@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-07-07
+updated: 2026-07-18
 tags:
   - model
   - claude-fable-5
@@ -35,6 +35,7 @@ sources:
   - raw/newsletters/2026-07-06-import-ai-464-fables-writes-gpu-kernels-ai-automation-and-analog-computation.md
   - raw/newsletters/2026-07-06-fable-5-is-back-stop-wasting-it-on-tasks-sonnet-can-do.md
   - raw/newsletters/2026-07-07-ainews-the-field-guide-to-fable.md
+  - raw/articles/simonwillison.net--2026-jul-18-claude-make-fable-5-permanent--c4a972b2.md
 ---
 
 # Claude Fable 5
@@ -243,7 +244,8 @@ Jon Ready published a detailed analysis on June 10 (updated June 11) framing Fab
 ### Subscription Rollout
 - **June 9–22**: Included on Pro, Max, Team, seat-based Enterprise at no extra cost
 - **June 23**: Removed from subscription plans; requires usage credits
-- Goal: restore as standard subscription feature when capacity allows
+- **July 7**: Available via standard usage credits (post-ramp)
+- **July 20**: Permanently included in **Max and Team Premium** plans at 50% of limits. Pro and Team Standard users continue via usage credits with a one-time $100 credit. Decision driven by competitive pressure from GPT-5.6 Sol and Kimi K3 — Anthropic's original plan to make Fable 5 API-only became untenable ([Simon Willison, 07/18/2026](https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/))
 
 ### Trusted Access Programs
 - **Cybersecurity**: Expanding Glasswing partners, pursuing systematic application process

@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-07-18T18:03:45.531152+00:00",
+  "triage_run_id": "20260718T160002Z",
+  "source": "dreaming",
+  "summary_ja": "生記事バックログ5件を評価。全て既存Wikiページで完全カバー済み: MAI-Thinking-1技術報告書(227行概念ページ+165行エンティティ), BenchFlow Awesome Evalsリスト(118行), Reframing Superintelligence/CAIS(91行概念+69行エリック・ドレクスラー), Grant Sanderson Dwarkeshインタビュー(141行), Ed Zitron OpenAI Bubble(エンティティページsources済み)。新規作成・更新不要。",
+  "decisions": [
+    {
+      "item_id": "raw-3",
+      "source": "raw_backlog",
+      "source_name": "BenchFlow",
+      "title": "Awesome Agent Evals — 443+ curated resources for building and evaluating AI agents",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "既存Wikiで詳細カバー済み: concepts/ai-benchmarks/benchflow-tool.md (118行) — Awesome Agent Evalsリストの全10セクション、Must-Read 12選、企業ランドスケープを完全網羅。raw記事はsourcesに登録済み。",
+      "candidate_wiki_path": "concepts/ai-benchmarks/benchflow-tool",
+      "body_excerpt": "# Awesome Agent Evals [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n> A curated, opinionated, **non-BS** library of the best resources for **building and evaluating AI agents** — papers, blog posts, talks, courses, tools, and benchmarks.\nMaintained by [**BenchFlow**](https://benchfl"
+    }
+  ]
+}

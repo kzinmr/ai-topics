@@ -2720,3 +2720,19 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - `wiki/entities/junior.md` — **NEW** entity page for Junior, Sentry's open-source AI coding agent with resource subscription architecture
 - `wiki/concepts/agent-resource-subscriptions.md` — **NEW** concept page documenting the resource subscriptions design pattern for coding agents
 - `wiki/index.md` — Added junior.md and agent-resource-subscriptions.md entries
+
+## [2026-07-18 18:00 UTC] dreaming | Knowledge consolidation — saturation day, Takes=0, 1 minor update
+
+**Articles screened**: 0 (checkpoint empty), 202 recent raw articles (filesystem)
+**Duplicate check**: 5 prior triage decisions (all skip — already covered by raw-backlog-ingest)
+**Takes**: 0 | **References**: 1 | **Skips**: 5
+
+**Enrichment**: [[concepts/claude/fable-5]] — Added July 20 permanent subscription inclusion (Max/Team Premium at 50% limits, Pro $100 credit). Competitive pressure from GPT-5.6 Sol and Kimi K3 cited as driver.
+
+**Already covered (verified)**:
+- Kimi K3 → `concepts/kimi-k3.md` (213 lines, pelican benchmark, Arena.ai results)
+- VulnHunter → `concepts/ai-vulnerability-detection-at-scale.md` (extensive Capital One section)
+- State of Open Source AI 2026 → `concepts/open-source-llms.md` (Mozilla report cited)
+- Healthcare AI Agent → `concepts/ai-agent-architecture.md` (Maven Clinic case study)
+- Sean Goedecke / Gwern grokking → `entities/seangoedecke-com.md`
+- Hyperbo articles → `entities/hyperbo.md`
