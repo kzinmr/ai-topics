@@ -1,3 +1,21 @@
+## [2026-07-18 12:00 UTC] raw-backlog-ingest — 1 page enriched, 2 sources added
+
+**Pipeline**: raw-backlog-ingest (backlog batch processing)
+
+**Enrichments:**
+- ENRICHED [[concepts/microsoft-mai-models]] — Added MAI-Thinking-1 architecture details (interleaved dense/MoE, LatentMoE, global load balancing), scaling ladder methodology, three-specialist RL training pipeline (STEM/Agentic/Safety climbs), training infrastructure (8K GB200, 90% goodput, 30T tokens from scratch, MAIA-200 inference)
+  - Source: [[raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md]]
+
+**Sources added:**
+- [[concepts/evaluation/ai-evaluation]] — Added BenchFlow Awesome Agent Evals (443+ curated links, 146 deep reading notes) as resource
+- [[concepts/evaluation/ai-evals]] — Added BenchFlow Awesome Agent Evals as resource
+  - Source: [[raw/articles/benchflow-awesome-evals-2025.md]]
+
+**Skipped (already captured):**
+- [[raw/articles/reframing-superintelligence-fhi-2019.md]] — Already fully covered in concepts/cais, concepts/comprehensive-ai-services, entities/k-eric-drexler
+- [[raw/articles/dwarkesh.com--p-grant-sanderson-2--960d89cd.md]] — Already captured in entities/grant-sanderson
+- [[raw/articles/wheresyoured.at--the-openai-bubble--eb7fc2d4.md]] — Already captured in entities/ed-zitron
+
 ## [2026-07-18 11:00 UTC] active-crawl — 1 new page, 2 enrichments, 3 raw articles
 
 **Pipeline**: active-crawl (hot-topics.yaml + trending discovery)

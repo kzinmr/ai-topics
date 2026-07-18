@@ -1,0 +1,116 @@
+{
+  "archived_at": "2026-07-18T07:41:59.858041+00:00",
+  "triage_run_id": "20260718T071058Z",
+  "source": "newsletter",
+  "summary_ja": "2026-07-18のニュースレター5誌をトリアージ。Kimi K3関連コンテンツ（Simon Willison分析、Superintel中国オープンソース論）は既にblog-wiki-ingest/newsletter-wiki-ingestで処理済み（concepts/kimi-k3.md 12KB）。The SignalのLLM非決定性解説は一般向けでWiki価値なし。AINews本日期刊もK3継続議論が中心で独自テイクなし。唯一の価値あるコンテンツはMaven ClinicのエンタープライズAIエージェントケーススタディ（concepts/ai-agent-architecture.mdスタブ充填に活用可能）。全59候補中、take/reference: 1件、skip: 58件。",
+  "decisions": [
+    {
+      "item_id": "batch-skip-healthcare-play-ui",
+      "source": "newsletter",
+      "source_name": "Vanishing Gradients",
+      "title": "Links 2-9 (play_audio / play_card UI)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-building-an-enterprise-ai-agent-for-healthcare.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ポッドキャスト再生UIリンク（play_audio, play_card, play_button, progress_bar）。コンテンツ価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-17\n**Subject:** Building an Enterprise AI Agent for Healthcare\n**Collected:** 2026-07-18T07:10:52.362066+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9odWdvYm93bmUuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtY"
+    },
+    {
+      "item_id": "batch-skip-healthcare-UI",
+      "source": "newsletter",
+      "source_name": "Vanishing Gradients",
+      "title": "Links 12-16 (like, comment, share, restack, app-store)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-building-an-enterprise-ai-agent-for-healthcare.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ substack UI要素（いいね、コメント、共有、アプリストア）。コンテンツ価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-17\n**Subject:** Building an Enterprise AI Agent for Healthcare\n**Collected:** 2026-07-18T07:10:52.362066+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9odWdvYm93bmUuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtY"
+    },
+    {
+      "item_id": "batch-skip-healthcare-uuid",
+      "source": "newsletter",
+      "source_name": "Vanishing Gradients",
+      "title": "Links 17-20 (UUID tracking redirects)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-building-an-enterprise-ai-agent-for-healthcare.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ substack UUIDリダイレクトリンク。メールセッション認証必須。記事の本体コンテンツはすでにraw/articlesに保存済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-17\n**Subject:** Building an Enterprise AI Agent for Healthcare\n**Collected:** 2026-07-18T07:10:52.362066+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9odWdvYm93bmUuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtY"
+    },
+    {
+      "item_id": "batch-skip-signal-oauth",
+      "source": "newsletter",
+      "source_name": "The Signal / Alex Banks",
+      "title": "Links 1-2 (OAuth redirects)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-ai-will-never-give-the-same-answer-twice.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ OAuthリダイレクトリンク。メールセッション認証必須で解決不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-17\n**Subject:** AI Will Never Give the Same Answer Twice\n**Collected:** 2026-07-18T07:10:53.526249+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV"
+    },
+    {
+      "item_id": "batch-skip-signal-UI",
+      "source": "newsletter",
+      "source_name": "The Signal / Alex Banks",
+      "title": "Links 4-10 (UI elements and OAuth)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-ai-will-never-give-the-same-answer-twice.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ substack UI要素（プロフィール、いいね、コメント、共有、アプリストア、ポッドキャスト）。コンテンツ価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-17\n**Subject:** AI Will Never Give the Same Answer Twice\n**Collected:** 2026-07-18T07:10:53.526249+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV"
+    },
+    {
+      "item_id": "batch-skip-signal-uuid",
+      "source": "newsletter",
+      "source_name": "The Signal / Alex Banks",
+      "title": "Links 11-20 (UUID redirects + paywall OAuth)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-ai-will-never-give-the-same-answer-twice.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ substack UUIDリダイレクトリンク + ペイウォールOAuth。全てメールセッション認証必須。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-17\n**Subject:** AI Will Never Give the Same Answer Twice\n**Collected:** 2026-07-18T07:10:53.526249+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV"
+    },
+    {
+      "item_id": "batch-skip-simonw-UI",
+      "source": "newsletter",
+      "source_name": "Simon Willison's Newsletter",
+      "title": "Links 1-2, 4-8, 9-20 (noise)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-kimi-k3-and-what-we-can-still-learn-from-the-pelican-benchmark.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ substack UI要素（OAuth、いいね、コメント、共有、アプリストア、UUIDリダイレクト）。コンテンツ価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-17\n**Subject:** Kimi K3, and what we can still learn from the pelican benchmark\n**Collected:** 2026-07-18T07:10:54.832422+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zaW1vbncuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1f"
+    },
+    {
+      "item_id": "batch-skip-beehiiv-k3",
+      "source": "newsletter",
+      "source_name": "Superintel+",
+      "title": "🔓 China's Open Source K3 Changed the Game Forever",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-17-china-s-open-source-k3-changed-the-game-forever.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ K3はblog-wiki-ingestおよびnewsletter-wiki-ingest(2026-07-17)ですでにconcepts/kimi-k3.md(12KB)として全方向からカバー済み。全beehiiv URLがHTTP 403期限切れ。本ニュースレターは追加情報を提供しない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-17\n**Subject:** 🔓 China's Open Source K3 Changed the Game Forever\n**Collected:** 2026-07-18T07:10:55.975753+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/LDZWidBUqBPhhwA9OyZI2KoGNDFJ6WFY%2FxGk4L4nUGIKXmWCxfvbQFi5A8fM%0AJrkPclqHIn"
+    },
+    {
+      "item_id": "batch-skip-ainews-UI",
+      "source": "newsletter",
+      "source_name": "AINews / Latent Space",
+      "title": "Links 1-6, 8, 9-20 (noise)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-18-ainews-not-much-happened-today.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ substack UI要素（OAuth、いいね、コメント、共有、アプリストア、UUIDリダイレクト）。コンテンツ価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-18\n**Subject:** [AINews] not much happened today\n**Collected:** 2026-07-18T07:10:57.203546+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1"
+    }
+  ]
+}

@@ -1,9 +1,11 @@
 ---
 title: "AI Evals (AI Evaluation Systems)"
 tags: [evaluation]
-sources: []
+sources:
+  - raw/articles/benchflow-awesome-evals-2025.md
+  - https://github.com/benchflow-ai/awesome-agent-evals
 created: 2026-04-12
-updated: 2026-04-24
+updated: 2026-07-18
 type: concept
 ---
 

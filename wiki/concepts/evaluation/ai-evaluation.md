@@ -6,7 +6,7 @@ aliases:
   - llm-evaluation
   - evaluation-methods
 created: 2026-04-25
-updated: 2026-06-16
+updated: 2026-07-18
 tags:
   - concept
   - evaluation
@@ -18,6 +18,8 @@ related:
   - [[concepts/evaluation/offline-evaluation]]
   - [[concepts/evaluation/ai-benchmarks-and-evals]]
 sources:
+  - raw/articles/benchflow-awesome-evals-2025.md
+  - https://github.com/benchflow-ai/awesome-agent-evals
   - raw/articles/2026-05-19_langfuse-academy-evals-explained.md
   - raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md
   - https://langfuse.com/academy/evaluate
