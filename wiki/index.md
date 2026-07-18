@@ -934,7 +934,7 @@
 - [[concepts/agreement-is-a-bug]] — Agreement is a Bug
 - [[concepts/ai-addiction-burnout]] — AI Addiction and Burnout Patterns
 - [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
-- [[concepts/ai-agent-architecture]] — AI Agent Architecture
+- [[concepts/ai-agent-architecture]] — AI Agent Architecture — production design patterns: lead agent + specialist routing, evaluation methodology, release gating by consequence severity (Maven Clinic case study, Jul 17)
 - [[concepts/ai-agent-compiler-bug-finding]] — AI Agent Compiler Bug Finding
 - [[concepts/ai-agent-engineering]] — AI Agent Engineering
 - [[concepts/ai-agent-memory]] — AI Agent Memory

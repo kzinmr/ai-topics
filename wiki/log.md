@@ -1,3 +1,17 @@
+## [2026-07-18 07:20 UTC] Newsletter triage recovery & wiki enrichment
+
+**Pipeline**: newsletter-wiki-ingest (recovered from triage checkpoint after render failure)
+**Source**: newsletter-triage checkpoint at `/opt/data/.hermes/cron/data/newsletter/triage_latest.json`
+**Newsletters triaged**: 5 (Vanishing Gradients, The Signal, Simon Willison, Superintel+, AINews)
+**Total items**: 59 → 1 reference, 58 skip
+
+**Enrichment executed**:
+- Enriched `[[concepts/ai-agent-architecture]]` with Maven Clinic enterprise AI agent case study (lead agent + specialist pattern, evaluation methodology, release gating by consequence severity)
+- Source: `[[raw/articles/2026-07-17-hugobowne-enterprise-ai-agent-healthcare.md]]`
+- Removed `status: stub` from page frontmatter; added tags, sources, and cross-references to related concepts
+
+**Referenced entities**: William Horton, Maven Clinic, Hugo Bowne-Anderson (Vanishing Gradients)
+
 ## [2026-07-18 12:00 UTC] YouTube video ingestion — Geoffrey Litt "Understanding is the new bottleneck"
 
 **Video**: [Understanding is the new bottleneck — Geoffrey Litt, Notion](https://www.youtube.com/watch?v=WkBPX-oDMnA)
