@@ -1,3 +1,34 @@
+## [2026-07-18 17:35 UTC] watchdog | Auto-fix summary
+
+**Pipeline**: wiki-watchdog-fix (daily auto-healing)
+
+**Index.html fixes:**
+- FIXED Header count: Entities (857→858 pages) — index had 858 entries vs 857 in header
+- FIXED Header count: Concepts (1878→1879 pages) — index had 1879 entries vs 1878 in header
+
+**Index health verified:**
+- Triple bracket corruption: 0 ✅
+- Pipe prefix corruption: 0 ✅
+- Line-number corruption: 0 ✅
+- Duplicate entries: 0 ✅
+- validate_index.py: clean (2812 lines) ✅
+- Genuine stale index entries: 0 (graph analysis claim of 542 was false positive — recursive scan finds all subdirectory files)
+
+**Graph analysis claims verified (from 2026-07-17 weekly):**
+- '542 stale index entries' = FALSE POSITIVE — flat ls misses subdirectory files
+- 38 orphans unchanged = partially false — actually 0 genuine orphans (all 38 are _index.md or archive files)
+- context-engineering still missing (131 refs) = NEEDS HUMAN (requires page creation, out of scope)
+- 6 duplicate entity pairs unresolved = NEEDS HUMAN (requires merges, out of scope)
+- 106 stale pages (>90d) = NEEDS HUMAN (requires content refresh pipeline)
+- 4,302 broken wikilinks = most are subdirectory paths or artifact patterns, not fixable in bulk
+
+**Pipeline health:**
+- Pipeline watchdog: 0 alerts ✅
+- wiki-health-fix: ran before this watchdog ✅
+- Tag compliance: 0 violations (10th week) ✅
+
+---
+
 ## [2026-07-18 12:00 UTC] raw-backlog-ingest — 1 page enriched, 2 sources added
 
 **Pipeline**: raw-backlog-ingest (backlog batch processing)
