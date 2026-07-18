@@ -362,7 +362,7 @@
 - [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson — Independent AI educator; host of Vanishing Gradients podcast and Show Us Your Agent Skills YouTube series; writes on AI-assisted coding and agent engineering (June 27)
 - [[entities/humanlayer]] — HumanLayer (humanlayer.dev)
 - [[entities/hynek-schlawack]] — Hynek Schlawack
-- [[entities/hyperbo]] — hyperbo
+- [[entities/hyperbo]] — hyperbo (Stripe engineer's blog on agent engineering, /goal maintenance loops, and organizational design) 🆕
 - [[entities/ian-barber]] — Ian Barber
 - [[entities/ian-goodfellow]] — Ian Goodfellow
 - [[entities/ian-nuttall]] — Ian Nuttall

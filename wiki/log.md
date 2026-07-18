@@ -1,3 +1,21 @@
+## [2026-07-18 07:50 UTC] Blog wiki ingest — Fable 5 permanent, hyperbo enrichment, grokking/overtraining
+
+**Pipeline**: blog-wiki-ingest (recovered from triage checkpoint after render failure)
+**Source**: blog-triage checkpoint at `/opt/data/.hermes/cron/data/blog_ingest/triage_latest.json`
+**Blogs**: 20 candidates → 2 takes, 2 references, 16 skip
+
+**Enrichment executed**:
+- Updated `[[entities/fable]]` (Market Dynamics section) — Fable 5 made permanent on Max/Team Premium (July 20), $100 credit for other users; competition from GPT-5.6 Sol and Kimi 3 cited by Simon Willison as driving Anthropic's strategic pivot; "Fablepocalypse Ends" subsection added
+- Source: `[[raw/articles/simonwillison.net--2026-jul-18-claude-make-fable-5-permanent--c4a972b2.md]]`
+- Enriched `[[entities/hyperbo]]` from skeleton to full entity page (52→111 lines) — three new sections: "Code Reds and Maintenance Loops" (Stripe Code Yellow, the 4-step failure loop, /goal infrastructure), "Token Mandates" (organizational discovery, randomized hill climbing, 5% rule), "Agent Engineering Connections"
+- Sources: `[[raw/articles/hyperbo.la--w-code-reds-need-maintenance-loops--83920e0a.md]]`, `[[raw/articles/hyperbo.la--w-token-mandates--2d279dd2.md]]`
+- Enriched `[[entities/seangoedecke-com]]` (381→432 lines) — new "Grokking and Overtraining" section with 5 subsections covering Gwern's Catapulting thesis, grokking mechanism (memorization→compression→generalization), 100-trillion-parameter model proposal, and Sean's assessment
+- Source: `[[raw/articles/seangoedecke.com--overtraining-as-the-path-to-human-like-ai--67c86c06.md]]`
+
+**Fixed**: Malformed frontmatter in entities/hyperbo.md (merged tags/type/status lines); pipe artifact in references list
+
+**Referenced entities**: fable, hyperbo, seangoedecke-com
+
 ## [2026-07-18 07:20 UTC] Newsletter triage recovery & wiki enrichment
 
 **Pipeline**: newsletter-wiki-ingest (recovered from triage checkpoint after render failure)

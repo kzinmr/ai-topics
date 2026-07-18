@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-07-06
+updated: 2026-07-18
 type: entity
 sources:
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
@@ -15,6 +15,7 @@ sources:
   - raw/articles/seangoedecke.com--ai-inference-is-obviously-profitable--ac8d2cd6.md
   - raw/articles/seangoedecke.com--text-ai-watermarks--cd663c94.md
   - raw/articles/seangoedecke.com--c2pa-only-works-if-everything-is-signed--ae4eb8f4.md
+  - raw/articles/seangoedecke.com--overtraining-as-the-path-to-human-like-ai--67c86c06.md
 |---
 
 # Sean Goedecke
@@ -318,6 +319,56 @@ On June 27, 2026, Goedecke published "[AI inference is obviously profitable](htt
 **Counterpoint to the "AI bubble" narrative**: Unlike the VC-subsidy theory, inference is a real business with real margins. The risk is in training costs and valuation bubbles, not in the fundamental unit economics of serving models.
 
 This analysis extends [[concepts/ai-industry-financial-sustainability]] with concrete unit-cost calculations and provides a data-driven counterweight to the growing [[concepts/ai-bubble]] literature.
+
+### Grokking and Overtraining: The Path to Human-Like AI (July 2026)
+
+On July 18, 2026, Sean Goedecke published \"[Overtraining as the path to human-like AI](https://seangoedecke.com/overtraining-as-the-path-to-human-like-ai/)\" — a clear explanation of Gwern's grokking thesis and its implications for frontier AI training strategy.
+
+#### What Is Grokking?
+
+The concept originates from a 2022 OpenAI paper: **train a model on a simple dataset, keep training long after it looks stalled, and a massive capability jump suddenly occurs.** The mechanism involves three stages:
+
+1. **Rote memorization** — The model compresses as much training data as possible into its weights
+2. **Compression pressure** — Regularization techniques (e.g., pressure to use smaller weight values) motivate the model to find simpler patterns
+3. **Sudden generalization** — The model discovers it can express the data via the underlying rule (e.g., performing the mathematical operation itself), producing an instant capability leap
+
+OpenAI named this process \"grokking\" after Robert Heinlein's term meaning \"gaining a deep, intuitive and fundamental understanding.\"
+
+#### Gwern's Catapulting Thesis (in Goedecke's Framing)
+
+Gwern's thirteen-thousand-word post \"Human-like Neural Nets by Catapulting\" argues:
+
+- **Modern LLMs are worse generalizers than humans** — they routinely make errors that any human as smart as the LLM would never make. This points to a failure of generalization.
+- **Grokking requires overtraining an over-parameterized model on a (relatively) small dataset** — the exact opposite of what frontier labs do.
+- **Someone should spend tens of billions trying it** — the approach might immediately usher in truly human-like LLMs.
+
+Gwern is notable for this prediction because he is the earliest person outside OpenAI to anticipate the potential of large language models (his 2020 essay \"The Scaling Hypothesis\" anticipated the broad strokes immediately after GPT-3's release, two years before ChatGPT).
+
+#### Do LLMs Already Grok?
+
+Goedecke examines the counter-evidence. One paper argues LLMs do grok, showing a pattern: small initial benchmark spike → big drop → big jump. This doesn't track memorization (which increases smoothly). But Goedecke notes this highlights the difficulty of **distinguishing grokking from generalization** — LLMs clearly learn to generalize during training, and it's plausible that generalization requires a baseline level of memorization as raw material.
+
+When Gwern says LLMs don't grok, Goedecke interprets this as meaning **there's at least one more giant generalization leap waiting to be made.** Humans are clearly capable of better generalization than LLMs, and while it's possible human brains have features neural networks can't replicate, that seems ad-hoc: if neural networks can generalize at all, why would they only be able to go this far?
+
+Goedecke notes a key open question: the easy examples of grokking rely on domains with simple underlying rules (e.g., mathematical operations). Does human language have rules this deep? He thinks there's good reason to believe yes — language has deep, subtle structure reaching down to the way the world is and the way human minds work.
+
+#### Why Frontier Labs Do the Opposite
+
+Current AI labs train **small-ish models on oceans of data**:
+
+- Even the largest frontier models are probably MoEs with a couple trillion parameters (~50B active) — trainable in a couple of days on the largest clusters
+- Labs have spent resources on acquiring more data: scanning physical books, paying experts for labels, partnering with data-rich companies
+- The dominant philosophy: \"with enough size and training time, the model will converge to its dataset\"
+
+Gwern's alternative: **train one 100-trillion-parameter model on a small dataset.** The reasoning is counterintuitive — if the dataset is constrained, the model can't improve by memorizing more things. It's forced to keep looking for deeper generalizations. A very large model is needed so it can memorize as much of the data as possible, turning each memorized piece into raw material for generalization.
+
+**Why labs probably haven't tried this:**
+- **Engineering obstacles**: The largest existing model (likely Claude Mythos) is definitely not 100 trillion parameters. The engineering problems haven't been solved yet, though labs have the resources to make a good attempt.
+- **Political obstacles**: The training run looks like a failure for weeks or months — loss drops to zero quickly, then sits there apparently doing nothing while chewing billions of dollars. No major player may have the risk appetite to keep funding it.
+
+#### Sean's Assessment
+
+Goedecke doesn't claim to agree with Gwern, but finds the idea compelling: \"forcing very large LLMs to grok is at least an idea that could usher in the machine god.\" He notes that since 2024, \"pure scaling\" has clearly failed (GPT-4's \"even bigger version\" wasn't good enough and was released as GPT-4.5), and the biggest advances since have been reasoning and better automated RL — neither of which seems like a plausible path to artificial superintelligence. Against that backdrop, Gwern's grokking proposal stands out as a genuinely new and ambitious direction. Goedecke hopes one of the big labs tries it.
 
 ## Sources
 
