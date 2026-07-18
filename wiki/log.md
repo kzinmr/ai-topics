@@ -1,3 +1,21 @@
+## [2026-07-18 12:00 UTC] YouTube video ingestion — Geoffrey Litt "Understanding is the new bottleneck"
+
+**Video**: [Understanding is the new bottleneck — Geoffrey Litt, Notion](https://www.youtube.com/watch?v=WkBPX-oDMnA)
+**Channel**: AI Engineer
+**Duration**: 19:33
+**Views**: 58,297
+
+**Summary**: Autonomous coding agents still require human judgment. To guide agents well, you need to understand the work they are doing — not just verify correctness. Combines education and cognitive science with modern agent capabilities.
+
+**Actions taken**:
+- Downloaded English auto-captions via yt-dlp
+- Cleaned VTT transcript (621 segments, deduplicated)
+- Saved raw article with full transcript: `[[raw/articles/2026-07-10_geoffrey-litt-understanding-bottleneck]]`
+- Saved separate transcript file: `transcripts/WkBPX-oDMnA_geoffrey-litt-understanding-bottleneck.md`
+- Updated entity page `[[entities/geoffrey-litt]]` with raw article links in Speaking Engagements and Blog/Recent Posts sections
+
+**Note**: This video was already referenced in the entity page from x-accounts-scan (2026-07-17), but the full transcript was not ingested until now.
+
 ## [2026-07-17 23:30 UTC] x-bookmarks-ingest — 2 bookmarks processed
 
 **Bookmark 1 — Bret Taylor: "The Next Horizon in Agents" (Sierra Horizon)**
