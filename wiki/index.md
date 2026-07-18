@@ -863,7 +863,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1877 pages)
+## Concepts (1878 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1087,6 +1087,7 @@
 - [[concepts/ai-content-transparency]] — AI Content Transparency
 - [[concepts/ai-control]] — AI Control — DeepMind's technical roadmap for system-level mitigations against adversarial AI agents; TRAIT&amp;R taxonomy, capability-based defense ladders (D1-D4, R1-R3), 15 concrete mitigations, security mindset as second line of defense beyond alignment (June 25)
 - [[concepts/ai-criticism-politics]] — Anti-AI Arguments Are Conservative Arguments
+- [[concepts/ai-cryptographic-vulnerability-discovery]] — AI-driven discovery of cryptographic vulnerabilities in zkVMs, proof systems, and pairing libraries; zkao AI auditor found CVE-2026-46669 in OpenVM
 - [[concepts/ai-delegation-patterns]] — AI Delegation Patterns
 - [[concepts/ai-digital-nato]] — AI Digital NATO — Frontier Model Forum Distillation Alliance
 - [[concepts/ai-doesnt-have-roi]] — AI Doesn't Have ROI

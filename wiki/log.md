@@ -1,3 +1,27 @@
+## [2026-07-18 11:00 UTC] active-crawl — 1 new page, 2 enrichments, 3 raw articles
+
+**Pipeline**: active-crawl (hot-topics.yaml + trending discovery)
+**Topics crawled**: 3 topics from 3 parallel subagent discovery (HN Algolia + X/Twitter + wiki gap analysis)
+
+**New pages created:**
+- NEW [[concepts/ai-cryptographic-vulnerability-discovery]] — AI-driven discovery of cryptographic vulnerabilities; ZK Security's zkao AI auditor found CVE-2026-46669 (critical soundness bug) in OpenVM's pairing library after 9.5h scanning; context engineering for cryptographic codebases; LLM-generated PoC unreliability
+  - Source: [[raw/articles/2026-07-17_zksecurity-ai-cryptographic-vulnerability-discovery.md]]
+
+**Enrichments:**
+- ENRICHED [[concepts/ai-vulnerability-detection-at-scale]] — Added Capital One VulnHunter section: agentic AI code security scanner (open-sourced July 17, 2026); falsification engine architecture; forward attack-path reasoning; /vulnhunt -> /vulnhunter-fix -> /vulnhunt-fix-verify closed loop; Apache 2.0
+  - Source: [[raw/articles/2026-07-17_capital-one-vulnhunter-agentic-code-security.md]]
+- ENRICHED [[concepts/open-source-llms]] — Full enrichment from 25-line stub to comprehensive page: Mozilla's State of Open Source AI V1.0 data (3.3% capability gap, 50x inference cost drop, 79% dev adoption, ~$24.8B savings); Chinese open-weight dominance (18T vs 5.5T weekly tokens); harness layer as new frontier; MCP ecosystem stats; open weights vs open source debate
+  - Source: [[raw/articles/2026-07-17_state-of-open-source-ai-2026-report.md]]
+
+**Raw articles saved:**
+- [[raw/articles/2026-07-17_zksecurity-ai-cryptographic-vulnerability-discovery.md]] — ZK Security blog: AI finds critical ZkVM bug
+- [[raw/articles/2026-07-17_capital-one-vulnhunter-agentic-code-security.md]] — Capital One Tech: Announcing VulnHunter
+- [[raw/articles/2026-07-17_state-of-open-source-ai-2026-report.md]] — Mozilla: The State of Open Source AI V1.0
+
+**SCHEMA.md**: Added `cryptography` tag to Domain Concepts
+
+**Discovery method**: 3 parallel subagents (HN Algolia 15 stories, X/Twitter 9 filtered results, wiki gap analysis 10 candidates). Topics selected via cross-referencing: VulnHunter (HN #9, 71 pts), AI Meets Cryptography (HN #6, 95 pts), State of Open Source AI (HN #2, 452 pts). Kimi K3 skipped (already covered, 213-line page from Jul 17).
+
 ## [2026-07-18 07:50 UTC] Blog wiki ingest — Fable 5 permanent, hyperbo enrichment, grokking/overtraining
 
 **Pipeline**: blog-wiki-ingest (recovered from triage checkpoint after render failure)
