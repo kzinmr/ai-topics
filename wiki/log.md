@@ -2736,3 +2736,15 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - Healthcare AI Agent → `concepts/ai-agent-architecture.md` (Maven Clinic case study)
 - Sean Goedecke / Gwern grokking → `entities/seangoedecke-com.md`
 - Hyperbo articles → `entities/hyperbo.md`
+
+## [2026-07-18 18:20 UTC] dreaming-wiki-ingest | Saturation confirmation — upstream dreaming-group already committed enrichment
+
+**Detection**: Upstream dreaming-group at 18:00 UTC completed analysis + enrichment before JSON render failure. Triage recovery via output file (4,332 lines).
+
+**Status**: Takes=0 is post-enrichment state (confirmed per Pitfall #21)
+- Enrichment committed: `[[concepts/claude/fable-5]]` — Fable 5 permanent subscription details
+- 2 reference candidates both verified as already covered by upstream (Mozilla report in `concepts/open-source-llms.md`, Maven Clinic case study in `concepts/ai-agent-architecture.md`)
+- Archive: 23 decisions archived (16 newly archived) at 18:15 UTC
+- Git: Dreaming enrichment + archive both committed and pushed
+
+**Verification**: log.md entry confirms upstream enrichment at 18:00 UTC. No downstream work needed.
