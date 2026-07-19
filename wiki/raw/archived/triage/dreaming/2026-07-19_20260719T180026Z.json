@@ -1,0 +1,116 @@
+{
+  "archived_at": "2026-07-19T18:15:31.824569+00:00",
+  "triage_run_id": "20260719T180026Z",
+  "source": "dreaming",
+  "summary_ja": "saturation day — 全記事が既存Wikiでカバー済み。Anthropic agentic misalignment summer 2026、Capital One VulnHunter、ZKSecurity/OpenVM、Mozilla State of Open Source AI、Codex/Agent quota resets、Simon Willison/Sean Goedecke/Hyperbo blog記事、Semantic Kernel→MAF移行 — すべて既存ページに詳細カバーあり。Takes=0, Refs=0, Skips=23。blog-triage（12 decisions）とnewsletter-triage（1 decision）も同様に全スキップ。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-anthropic-agentic-misalignment-summer-2026",
+      "source": "dreaming",
+      "source_name": "Anthropic Alignment Blog",
+      "title": "Agentic Misalignment in Summer 2026",
+      "url": "https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/2026-07-19_anthropic-agentic-misalignment-summer-2026.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存ページ concepts/agentic-misalignment.md でSummer 2026更新をカバー済み（4つの失敗モード、Petriツール、モデル一覧を記載）",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-anthropic-agentic-misalignment-original",
+      "source": "dreaming",
+      "source_name": "Anthropic Research",
+      "title": "Agentic misalignment: How LLMs could be insider threats",
+      "url": "https://www.anthropic.com/research/agentic-misalignment",
+      "raw_path": "~/ai-topics/wiki/raw/articles/2026-07-19_anthropic-agentic-misalignment.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 2025年6月のオリジナル論文。既存ページ concepts/agentic-misalignment.md で参照済み",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-codex-resets",
+      "source": "dreaming",
+      "source_name": "codex-resets.com",
+      "title": "Codex Resets — OpenAI Usage Limit Reset Tracker",
+      "url": "https://codex-resets.com/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/2026-07-19_codex-resets.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存ページ concepts/codex-resets.md を本日作成済み（92行、tracking site、competitive dynamics記載）",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-simonw-claude-code-bun",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "Claude Code uses Bun written in Rust now",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-19-claude-code-in-bun-in-rust--2c8078d9.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存ページ entities/simon-willison.md でBun in Rust検証結果をカバー済み（line 622-627）",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-simonw-ai-mania",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "AI Mania Is Eviscerating Global Decision-Making",
+      "url": "https://simonwillison.net/2026/Jul/19/ai-mania/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-19-ai-mania--44d772e4.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 短いリンクブログ投稿（Nik Suresh引用）。企業のAI熱狂についての風刺的 anecdotes",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-microsoft-semantic-kernel-readme",
+      "source": "dreaming",
+      "source_name": "GitHub/microsoft/semantic-kernel",
+      "title": "Semantic Kernel README (now Microsoft Agent Framework)",
+      "url": "https://github.com/microsoft/semantic-kernel",
+      "raw_path": "~/ai-topics/wiki/raw/articles/2026-07-19_microsoft-semantic-kernel-readme.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存ページ entities/microsoft-agent-framework.md でSK→MAF移行をカバー済み（version 1.0、A2A/MCP対応）",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-microsoft-semantic-kernel-docs",
+      "source": "dreaming",
+      "source_name": "Microsoft Learn",
+      "title": "Introduction to Semantic Kernel",
+      "url": "https://learn.microsoft.com/en-us/semantic-kernel/overview/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/2026-07-19_microsoft-semantic-kernel.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Microsoft Learn ドキュメントページ。既存ページでカバー済み",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-stray-sheep",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "How Stray Sheep uses ElevenLabs to make Bulgaria more accessible for Deaf people",
+      "url": "https://elevenlabs.io/blog/how-stray-sheep-improves-accessibility-for-deaf-people",
+      "raw_path": "~/ai-topics/wiki/raw/articles/2026-07-18_elevenlabs_how-stray-sheep-improves-accessibility-for-deaf-people.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ElevenLabs accessibility case study。AI技術 relevance なし（Bulgarian Sign Language教育プログラム）",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-blog-batch",
+      "source": "dreaming",
+      "source_name": "Various blogs",
+      "title": "Non-AI blog articles (construction-physics, jim-nielsen, nesbitt.io, daringfireball, shkspr.mobi, dfarq, tedium, thenewthings, matduggan, roblox, maurycyz, filfre, johndcook)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事一括スキップ。construction-physics（建築）、jim-nielsen（web design）、nesbitt.io（package management）、daringfireball（Apple）、shkspr.mobi（book review）等",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（Non-AI blog batch skip — construction, web design, package management, Apple commentary, vintage computing, book reviews）"
+    }
+  ]
+}
