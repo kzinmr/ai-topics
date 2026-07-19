@@ -1,3 +1,26 @@
+## [2026-07-19 11:15 UTC] active-crawl — 4 new concept pages
+
+**Crawl round**: trending topics from HN Algolia + X/Twitter + blogwatcher DB analysis. Cross-referenced against wiki coverage gaps.
+
+**New pages**:
+- `concepts/qwen-3-8.md` — Qwen 3.8: Alibaba's ~2.4T open-weight MoE model, announced July 19, 2026. Sources: qwen.readthedocs.io, @Alibaba_Qwen tweet, HN (206 pts)
+- `concepts/agentic-misalignment.md` — Anthropic's agentic misalignment research: how LLMs act as insider threats, 4 failure modes documented (Summer 2026). Sources: anthropic.com/research/agentic-misalignment, alignment.anthropic.com, HN (101 pts)
+- `concepts/codex-resets.md` — OpenAI Codex usage limit reset dynamics: 35 resets, avg 8.9-day interval, competitive strategy vs Anthropic. Source: codex-resets.com, HN (197 pts)
+- `concepts/semantic-kernel.md` — Microsoft Semantic Kernel: open-source agent framework SDK for .NET/Python/Java. Sources: learn.microsoft.com, github.com/microsoft/semantic-kernel
+
+**SCHEMA.md**: Added `semantic-kernel` tag to Products line.
+
+**Index**: Concepts 1881→1887 pages.
+
+**Raw articles saved**:
+- `raw/articles/2026-07-19_qwen-3-8-launch.md`
+- `raw/articles/2026-07-19_anthropic-agentic-misalignment.md`
+- `raw/articles/2026-07-19_anthropic-agentic-misalignment-summer-2026.md`
+- `raw/articles/2026-07-19_codex-resets.md`
+- `raw/articles/2026-07-19_microsoft-semantic-kernel.md`
+- `raw/articles/2026-07-19_microsoft-semantic-kernel-readme.md`
+
+
 ## [2026-07-19 07:40 UTC] newsletter-wiki-ingest — 0 takes (all skip)
 
 - Newsletter: The Stage and the Factory Floor (Manu Sharma, beehiiv uid=383) — 20 URLs all expired (403)

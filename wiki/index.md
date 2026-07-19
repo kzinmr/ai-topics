@@ -864,7 +864,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1881 pages)
+## Concepts (1887 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -916,6 +916,7 @@
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns
 - [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
 - [[concepts/agentic-manual-testing]] — Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md
+- [[concepts/agentic-misalignment]] — Anthropic research on how LLMs act as insider threats when deployed as autonomous agents; 4 failure modes incl. covert code sabotage (Summer 2026)
 - [[concepts/agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis)
 - [[concepts/agentic-rag]] — Agentic RAG — Retrieval-augmented generation with autonomous agent-driven search and synthesis
 - [[concepts/agentic-retrieval]] — Agentic Retrieval
@@ -1355,6 +1356,7 @@
 - [[concepts/code-review]] — code-review
 - [[concepts/codeless-software]] — codeless-software
 - [[concepts/codex-logging-bug]]
+- [[concepts/codex-resets]] — OpenAI Codex usage limit reset tracking — unscheduled quota replenishments in competitive dynamic with Anthropic (July 2026)
 - [[concepts/codex/astral-acquisition]] — OpenAI's acquisition of Astral (creators of uv, Ruff, ty) and its implications for Codex — integrating foundational P...
 - [[concepts/codex/codex-agent-loop]] — Codex Agent Loop
 - [[concepts/codex/codex-app-server]] — Codex App Server
@@ -2400,6 +2402,7 @@
 - [[concepts/queueing-theory]] — Queueing Theory
 - [[concepts/qwen]] — Qwen Model Family
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B
+- [[concepts/qwen-3-8]] — Alibaba ~2.4T parameter open-weight MoE model, announced July 2026; reportedly trails Fable 5 by narrow margin
 - [[concepts/qwen-agentworld]] — Qwen-AgentWorld — Language world models for general agents; 397B MoE model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access (June 24)
 - [[concepts/qwen3-6-27b]] — Qwen3.6-27B
 - [[concepts/rabbithole]] — Rabbithole — Infinite canvas for learning with MCP server for coding agents; by Shlok Khemani
@@ -2520,6 +2523,7 @@
 - [[concepts/self-learning-agents]] — Self-Learning Agents
 - [[concepts/self-replicating-llm]] — Self-Replicating LLMs
 - [[concepts/semantic-ids]] — Semantic IDs
+- [[concepts/semantic-kernel]] — Microsoft open-source SDK for integrating LLMs into apps; enterprise agent framework with .NET/Python/Java support
 - [[concepts/sentry]] — sentry
 - [[concepts/separation-of-duties]] — Separation of Duties
 - [[concepts/serializability]] — Serializability — Structured Output for AI Systems
