@@ -20,7 +20,7 @@ sources: []
 | **Joined** | September 2010 |
 | **Role** | Writer, AI observer, China/US geopolitical analyst |
 | **Known For** | DeepSeek advocacy ("#1 stan, 2023–Deep Time"); "Teortaxes Rant Collection"; bridging Chinese and Western AI discourse; steelmanning Jensen Huang vs. Dwarkesh Patel epistemic clash |
-| **Bio** | Self-described as "DeepSeek 推特🐋铁粉2023 –∞". Prolific commentator on AI geopolitics, US-China tech competition, and AI infrastructure economics. Known for the "Causal Backbone" analytical lens applied to tech leaders. |
+| **Bio** | Self-described as "DeepSeek Twitter 🐋 die-hard fan 2023 –∞" (Chinese: 推特铁粉). Prolific commentator on AI geopolitics, US-China tech competition, and AI infrastructure economics. |
 
 ## Overview
 
