@@ -1,3 +1,10 @@
+## [2026-07-19 07:40 UTC] newsletter-wiki-ingest — 0 takes (all skip)
+
+- Newsletter: The Stage and the Factory Floor (Manu Sharma, beehiiv uid=383) — 20 URLs all expired (403)
+- All 20 beehiiv tracking URLs returned HTTP 403 (expired token >12h post-send)
+- Inbox pre-triage confirmed all links unresolvable
+- No takes — all items archived as skip (already deduped)
+
 ## [2026-07-18 17:35 UTC] watchdog | Auto-fix summary
 
 **Pipeline**: wiki-watchdog-fix (daily auto-healing)
