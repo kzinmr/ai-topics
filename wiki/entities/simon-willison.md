@@ -3,11 +3,11 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-07-17
+updated: 2026-07-19
 status: L3
   sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
-sources: [raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md, raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md, raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md, raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md, raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md, raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md, raw/articles/simonwillison.net--2026-jul-16-inkling--4c6392f3.md, raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md, raw/articles/simonwillison.net--2026-jul-16-linus-torvalds--881be321.md, raw/articles/simonwillison.net--2026-jul-17-spot-birds-not-golf--9b2b5171.md, raw/articles/simonwillison.net--2026-jul-16-firefox-in-webassembly--26721bbf.md]
+sources: [raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md, raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md, raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md, raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md, raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md, raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md, raw/articles/simonwillison.net--2026-jul-16-inkling--4c6392f3.md, raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md, raw/articles/simonwillison.net--2026-jul-16-linus-torvalds--881be321.md, raw/articles/simonwillison.net--2026-jul-17-spot-birds-not-golf--9b2b5171.md, raw/articles/simonwillison.net--2026-jul-16-firefox-in-webassembly--26721bbf.md, raw/articles/simonwillison.net--2026-jul-19-ai-mania--44d772e4.md, raw/articles/simonwillison.net--2026-jul-19-claude-code-in-bun-in-rust--2c8078d9.md, raw/articles/simonwillison.net--2026-jul-18-sqlite-query-explainer--767c42a6.md]
 ---
 
 # Simon Willison
@@ -611,3 +611,21 @@ Source: [[raw/articles/simonwillison.net--2026-jul-17-spot-birds-not-golf--9b2b5
 
 **Firefox in WebAssembly** (July 16, 2026): Simon linked to a project running Firefox in WebAssembly — notable as a browser-in-browser capability but not AI-specific.
 Source: [[raw/articles/simonwillison.net--2026-jul-16-firefox-in-webassembly--26721bbf.md]]
+
+**AI Mania Is Eviscerating Global Decision-Making** (July 19, 2026): Simon linked to Nik Suresh's scathing critique of AI hype overwhelming enterprise decision-making. Key anecdotes from anonymous sources:
+- An executive who never used ChatGPT produced a technical AI strategy for a $2B+ revenue organization
+- A token leaderboard incentivized gaming: "Checking out a parallel copy of our Go repository and telling the AI to rewrite the whole thing in Zig while I work on something else just so I can keep my job"
+- Vendor executives cannot challenge customer claims of 100x productivity — doing so would undermine customer credibility and risk enterprise contract cancellations. The structural incentive is silence.
+Source: [[raw/articles/simonwillison.net--2026-jul-19-ai-mania--44d772e4.md]]
+Cross-wikilink: See [[concepts/ai-coding-agent-criticism]]
+
+**Claude Code Uses Bun Written in Rust** (July 19, 2026): Simon verified Jarred Sumner's claim that Claude Code v2.1.181+ (released June 17) uses the Rust port of Bun. Evidence:
+- `strings ~/.local/bin/claude | grep -m1 'Bun v1'` → `Bun v1.4.0 (macOS arm64)` — a pre-release version (GitHub shows v1.3.14)
+- `strings ~/.local/bin/claude | grep -Eo 'src/[[:alnum:]_./-]+\\.rs'` → 563 Rust source filenames
+- Confirms Bun-in-Rust is deployed in production across millions of devices
+- Startup got 10% faster on Linux; "barely anyone noticed. Boring is good."
+Source: [[raw/articles/simonwillison.net--2026-jul-19-claude-code-in-bun-in-rust--2c8078d9.md]]
+Cross-wikilink: See [[concepts/coding-agents/coding-agents]]
+
+**SQLite Query Explainer** (July 18, 2026): Simon highlighted a new SQLite query explainer tool — developer tooling for understanding SQLite query plans.
+Source: [[raw/articles/simonwillison.net--2026-jul-18-sqlite-query-explainer--767c42a6.md]]

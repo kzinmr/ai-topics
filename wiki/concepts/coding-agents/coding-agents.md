@@ -4,7 +4,7 @@ type: concept
 aliases:
   - coding-agents
 created: 2026-04-25
-updated: 2026-06-30
+updated: 2026-07-19
 tags:
 sources: []
   - concept
@@ -193,6 +193,18 @@ The counter-argument from [[entities/eleanor-berger]]: her Hermes agent Fnord ru
 - Agent environment optimization ≈ building good developer experience for humans
 - Testing checklist: Can the agent start local env? Run tests? Pull external context? Verify own work?
 
+
+## Infrastructure: Bun-in-Rust Runtime (July 2026)
+
+Claude Code v2.1.181+ (released June 17, 2026) uses the **Rust port of Bun** as its JavaScript runtime. Evidence confirmed by [[entities/simon-willison|Simon Willison]]:
+- `strings ~/.local/bin/claude | grep -m1 'Bun v1'` → `Bun v1.4.0 (macOS arm64)` (pre-release)
+- 563 Rust source filenames embedded in the binary
+- Startup 10% faster on Linux; "barely anyone noticed. Boring is good."
+- Bun-in-Rust is now deployed across millions of devices in production
+
+This represents a significant infrastructure choice — Claude Code's runtime is now a Rust-compiled JavaScript runtime, not Node.js or standard Bun.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-19-claude-code-in-bun-in-rust--2c8078d9.md]]
 
 ## Related Concepts- [[concepts/coding-agents/coding-agents]] — The broader concept page on coding agents
 - [[concepts/harness-engineering/agent-harness]] — Infrastructure layer wrapping LLMs for agent execution

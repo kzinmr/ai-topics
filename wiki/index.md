@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (858 pages)
+## Entities (859 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -59,7 +59,7 @@
 - [[entities/antirez-com]] — Salvatore Sanfilippo (antirez)
 - [[entities/antoine-buteau]] — Antoine Buteau
 - [[entities/antoine-chaffin]] — Antoine Chaffin
-- [[entities/anyscale]] — Anyscale
+- [[entities/anyscale]] — Anyscale — Company behind Ray distributed computing framework; enterprise ML infrastructure at scale (Ant Group: 60K cores, 5K nodes)
 - [[entities/applied-intuition]] — Applied Intuition
 - [[entities/apurva-gandhi]] — Apurva Gandhi
 - [[entities/ar0cket1]] — ar0cket1
@@ -497,6 +497,7 @@
 - [[entities/max-bernstein]] — Max Bernstein
 - [[entities/max-rumpf]] — Max Rumpf
 - [[entities/maxime-labonne]] — Maxime Labonne
+- [[entities/max-woolf]] — Max Woolf (minimaxir) — Data scientist and blogger analyzing AI coding agent economics; quota reset analysis (July 2026)
 - [[entities/maximor]] — Maximor
 - [[entities/meituan-longcat]] — Meituan LongCat 2.0 / Owl Alpha — 1.6T/48B MoE model, 1M context, trained on 50k domestic Chinese accelerators; first near-frontier model on fully domestic hardware (June 30)
 - [[entities/mem0]] — Mem0
@@ -863,7 +864,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1879 pages)
+## Concepts (1881 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -899,6 +900,7 @@
 - [[concepts/agent-ontology]] — Agent Ontology
 - [[concepts/agent-productivity]] — Agent Productivity and Cognitive Effects
 - [[concepts/agent-resource-subscriptions]] — Agent Resource Subscriptions — Design pattern for coding agents to subscribe to external resource events as follow-up messages within ongoing conversations
+- [[concepts/agent-quota-resets]] — Agent Quota Resets — Economics of weekly quota resets by Anthropic/OpenAI for coding agent subscriptions; behavioral distortion and competitive dynamics (July 2026)
 - [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
 - [[concepts/agent-safety-incidents-open-source]] — AI Agent Safety Incidents in Open-Source Communities
 - [[concepts/agent-security-patterns]] — Agent Security Patterns
@@ -2405,6 +2407,7 @@
 - [[concepts/rag-systems]] — RAG Systems — Retrieval-Augmented Generation architectures, from naive RAG to advanced agentic retrieval patterns
 - [[concepts/ragatouille]] — RAGatouille
 - [[concepts/rags]] — RAGs (Retrieval-Augmented Generation)
+- [[concepts/ray]] — Ray — Open-source distributed computing framework for Python; ML training, serving, tuning at scale; production deployments at Ant Group (60K cores)
 - [[concepts/rahul-sengottuvelu]] — Rahul Sengottuvelu
 - [[concepts/rakhim.exotext.com]] — rakhim.exotext.com
 - [[concepts/ranjay-krishna]] — ranjay-krishna

@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-07-19T04:19:17.648842+00:00",
+  "triage_run_id": "20260719T040054Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingestバッチ（5記事）。全記事が既存Wikiで完全カバー済みまたは既にアーカイブ済み。MAI-Thinking-1 Tech Reportはentities/mai-thinking-1.md(165行)+concepts/mai-thinking-1-tech-report.md(227行)+concepts/mai-thinking.md(27行)で包括的カバー（アーキテクチャ・RL・訓練・ベンチマーク・安全性）。BenchFlow Awesome Agent Evalsはconcepts/ai-benchmarks/benchflow-tool.md(118行)にAwesome Agent Evalsリスト全10セクション+12 Must-Read+企業ランドスケープまで収録。残り3記事(Reframing Superintelligence, Grant Sanderson, OpenAI Bubble)は既にアーカイブ済み。Takes=0, References=0, Skips=5。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-mai-thinking-1",
+      "source": "raw_backlog",
+      "source_name": "raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Microsoft AI Technical Report",
+      "url": null,
+      "raw_path": "raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★★ 既存Wikiで完全カバー済み。entities/mai-thinking-1.md(165行)がアーキテクチャ・スペック・ベンチマーク(52.8% SWE-Bench Pro, 97.0% AIME 2025, 87.7% LiveCodeBench v6)を含む完全なモデルページ。concepts/mai-thinking-1-tech-report.md(227行)が技術レポートの詳細分析（スケーリングラダー手法・訓練データ・RLクライム・安全性・専門家モデル）。concepts/mai-thinking.md(27行)がヒルクライミングマシン哲学を記述。raw記事は全ページのsourcesに登録済み。7月中に複数回拡充。",
+      "candidate_wiki_path": "entities/mai-thinking-1",
+      "body_excerpt": ""
+    }
+  ]
+}

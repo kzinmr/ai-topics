@@ -2748,3 +2748,30 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - Git: Dreaming enrichment + archive both committed and pushed
 
 **Verification**: log.md entry confirms upstream enrichment at 18:00 UTC. No downstream work needed.
+
+## [2026-07-19 07:00 UTC] blog-ingest — 4 pages created/updated, 12 raw articles saved
+
+**Pipeline**: blog-ingest (daily blog RSS collection)
+**Checkpoint**: /opt/data/.hermes/cron/data/blog_ingest/blog_ingest_20260719T070034Z.json
+
+**Stats**: 24 new articles found, 12 saved as raw, 8 unsaved (YouTube/paywall)
+
+**New pages created:**
+- CREATED [[entities/max-woolf]] — Max Woolf (minimaxir) — Data scientist, blogger, AI coding agent economics analyst
+  - Source: [[raw/articles/minimaxir.com--2026-07-agent-quota-reset--81744d63.md]]
+- CREATED [[concepts/agent-quota-resets]] — Economics of weekly quota resets by Anthropic/OpenAI for coding agent subscriptions
+  - Source: [[raw/articles/minimaxir.com--2026-07-agent-quota-reset--81744d63.md]]
+- CREATED [[concepts/ray]] — Open-source distributed computing framework for Python; ML infrastructure at scale
+  - Sources: [[raw/articles/anyscale.com--blog-building-highly-available-and-scalable-online-applicati--7faef8c2.md]], [[raw/articles/anyscale.com--blog-online-resource-allocation-with-ray-at-ant-group--487de159.md]]
+
+**Pages enriched:**
+- ENRICHED [[entities/simon-willison]] — Added 3 new sources: AI Mania critique, Claude Code Bun-in-Rust verification, SQLite Query Explainer
+  - Sources: [[raw/articles/simonwillison.net--2026-jul-19-ai-mania--44d772e4.md]], [[raw/articles/simonwillison.net--2026-jul-19-claude-code-in-bun-in-rust--2c8078d9.md]], [[raw/articles/simonwillison.net--2026-jul-18-sqlite-query-explainer--767c42a6.md]]
+- ENRICHED [[concepts/coding-agents/coding-agents]] — Added Bun-in-Rust runtime infrastructure section (Claude Code v2.1.181+)
+  - Source: [[raw/articles/simonwillison.net--2026-jul-19-claude-code-in-bun-in-rust--2c8078d9.md]]
+- ENRICHED [[entities/anyscale]] — Updated index description with production scale details
+
+**Unsaved articles (not AI-relevant or paywall):**
+- YouTube: AI Engineer conference talks (5 videos)
+- LWN.net: XZ backdoor book, kernel updates
+- FT.com: Apple-OpenAI employee letters (paywall)
