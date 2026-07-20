@@ -2990,3 +2990,20 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - Meta-Anthropic deal → entity-wiki-enrich today
 
 **Result**: Takes=0, Refs=0, Skips=9. Archive: all items already archived (dedup). 1,853 total archive URLs.
+
+## [2026-07-20 18:20 UTC] dreaming-wiki-ingest | Saturation confirmation — upstream dreaming-group already committed full analysis
+
+**Pipeline**: dreaming-wiki-ingest (nightly knowledge consolidation, 18:20 UTC)
+**Status**: Takes=0 confirmed (post-enrichment state, already committed by dreaming-group at 18:00 UTC)
+
+**Detection workflow (Pitfall #21):**
+- ✅ log.md entry for "dreaming | Knowledge consolidation — full saturation, Takes=0" at 18:10 UTC
+- ✅ Archive files exist for today: 2026-07-20_20260720T180050Z.json (already committed at 3b444511)
+- ✅ No wiki changes needed — wiki is clean, all 187 raw articles covered by adjacent pipelines
+
+**Archive confirmation**:
+- Archive already committed by upstream dreaming-group at commit `3b444511`
+- Archive files present at canonical path (14.5KB total across 2 files)
+- archive_index.json at 155KB (1,859 total archive URLs updated from upstream)
+
+**Action taken**: Confirmation entry only — no enrichment, no archive re-run, no page changes.
