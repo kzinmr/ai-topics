@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-07-20T18:13:31.718049+00:00",
+  "triage_run_id": "20260720T180050Z",
+  "source": "dreaming",
+  "summary_ja": "完全飽和日。187 raw記事のうち新規AI関連記事は全て他パイプラインで処理済み。active-crawlが3ページ作成+1強化（State of Open Source AI 2026、VulnHunter、LoRA Speedrun、Ollama資金調達）、blog-wiki-ingestがSam Altman 2022メール処理、entity-wiki-create/enrichがVAST Data+Meta-Anthropic取引処理、newsletter-wiki-ingestが1take+1ref処理。dreaming-wiki-ingestにtakes無し。",
+  "decisions": [
+    {
+      "item_id": "dreaming-saturation-2026-07-20",
+      "source": "dreaming",
+      "source_name": "saturation-check",
+      "title": "Saturation day — all articles processed by adjacent pipelines",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★★★★ 飽和日。active-crawlが3ページ作成+1強化、blog-wiki-ingestが1件処理、entity-wiki-create/enrichが2件処理、newsletter-wiki-ingestが1take+1ref処理。raw-backlog-ingestはTakes=0。187 raw記事のうち新規AI関連記事は全て他パイプラインで処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Saturation day: all 187 raw articles processed by active-crawl (3 new pages + 1 enrichment), blog-wiki-ingest (1 take), entity-wiki-create/enrich (2 items), newsletter-wiki-ingest (1 take + 1 ref). Zero unprocessed AI-relevant articles remain."
+    },
+    {
+      "item_id": "dreaming-ref-state-of-open-source-ai-2026",
+      "source": "dreaming",
+      "source_name": "active-crawl-coverage",
+      "title": "State of Open Source AI 2026 — already created by active-crawl",
+      "url": "https://2026.stateofopenai.com",
+      "raw_path": "~/wiki/raw/articles/2026-07-17_state-of-open-source-ai-2026-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "active-crawlが2026-07-20にconcepts/state-of-open-source-ai-2026.mdを作成済み。Mozilla V1.0レポート、3.3%能力ギャップ、50x推論コスト削減等の詳細をカバー。",
+      "candidate_wiki_path": "concepts/state-of-open-source-ai-2026",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-vulnhunter",
+      "source": "dreaming",
+      "source_name": "active-crawl-coverage",
+      "title": "VulnHunter — Capital One's agentic AI code security tool",
+      "url": "https://capitalone.github.io/vulnhunter/",
+      "raw_path": "~/wiki/raw/articles/2026-07-17_capital-one-vulnhunter-agentic-code-security.md",
+      "recommended_action": "skip",
+      "reason_ja": "active-crawlが2026-07-20にconcepts/vulnhunter-agentic-code-security.mdを作成済み。Claude Code skills使用、falsification engine、Apache 2.0。",
+      "candidate_wiki_path": "concepts/vulnhunter-agentic-code-security",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-lora-speedrun",
+      "source": "dreaming",
+      "source_name": "active-crawl-coverage",
+      "title": "LoRA Speedrun — public wall-clock leaderboard for fine-tuning",
+      "url": "https://github.com/Saivineeth147/lora-speedrun",
+      "raw_path": "~/wiki/raw/articles/2026-07-18_lora-speedrun-leaderboard.md",
+      "recommended_action": "skip",
+      "reason_ja": "active-crawlが2026-07-20にconcepts/ai-benchmarks/lora-speedrun.mdを作成済み。modded-nanogpt哲学をLoRA fine-tuningに適用、Qwen2.5-1.5B GSM8Kベンチマーク。",
+      "candidate_wiki_path": "concepts/ai-benchmarks/lora-speedrun",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-ollama-funding",
+      "source": "dreaming",
+      "source_name": "active-crawl-coverage",
+      "title": "Ollama $65M Series A — already enriched by active-crawl",
+      "url": "https://ollama.com/blog/all-aboard-open-models",
+      "raw_path": "~/wiki/raw/articles/2026-07-09_ollama-all-aboard-open-models-65m-funding.md",
+      "recommended_action": "skip",
+      "reason_ja": "active-crawlが2026-07-20にconcepts/local-llm/ollama.mdをFunding Historyセクションで強化済み。$65M Series A、8.9M開発者、Kitematic創業史。",
+      "candidate_wiki_path": "concepts/local-llm/ollama",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-sam-altman-email",
+      "source": "dreaming",
+      "source_name": "blog-wiki-ingest-coverage",
+      "title": "Sam Altman 2022 email on open source preemption strategy",
+      "url": "https://simonwillison.net/2026/Jul/20/sam-altman/",
+      "raw_path": "~/wiki/raw/articles/simonwillison.net--2026-jul-20-sam-altman--c4ba859f.md",
+      "recommended_action": "skip",
+      "reason_ja": "blog-wiki-ingestが2026-07-20に処理済み。Sam Altmanの2022年OpenAI取締役会メール（GPT-3ローカルモデル戦略、Stability先行阻止意図）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-vast-data",
+      "source": "dreaming",
+      "source_name": "entity-wiki-coverage",
+      "title": "VAST Data — new entity page + newsletter interview",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "entity-wiki-createが2026-07-20にVAST Data entity page作成済み。newsletter-wiki-ingestのtakeも同一エンティティ。",
+      "candidate_wiki_path": "entities/vast-data",
+      "body_excerpt": "Entity page created by entity-wiki-create on 2026-07-20. VAST Data GPU data layer optimization, Sven Breuner interview coverage."
+    },
+    {
+      "item_id": "dreaming-ref-qwen-3-8",
+      "source": "dreaming",
+      "source_name": "prior-triage-coverage",
+      "title": "Qwen 3.8 — 2.4T parameter MoE model",
+      "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
+      "raw_path": "~/wiki/raw/articles/2026-07-19_qwen-3-8-launch.md",
+      "recommended_action": "skip",
+      "reason_ja": "concepts/qwen-3-8.mdが2026-07-19に作成済み。2.4T MoE、Qwenファミリー最大、Kimi K3との比較。",
+      "candidate_wiki_path": "concepts/qwen-3-8",
+      "body_excerpt": ""
+    }
+  ]
+}

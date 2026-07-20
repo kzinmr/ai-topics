@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-07-20T18:12:06.773214+00:00",
+  "triage_run_id": "20260719T180026Z",
+  "source": "dreaming",
+  "summary_ja": "saturation day — 全記事が既存Wikiでカバー済み。Anthropic agentic misalignment summer 2026、Capital One VulnHunter、ZKSecurity/OpenVM、Mozilla State of Open Source AI、Codex/Agent quota resets、Simon Willison/Sean Goedecke/Hyperbo blog記事、Semantic Kernel→MAF移行 — すべて既存ページに詳細カバーあり。Takes=0, Refs=0, Skips=23。blog-triage（12 decisions）とnewsletter-triage（1 decision）も同様に全スキップ。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-non-ai-blog-batch",
+      "source": "dreaming",
+      "source_name": "Various blogs",
+      "title": "Non-AI blog articles (construction-physics, jim-nielsen, nesbitt.io, daringfireball, shkspr.mobi, dfarq, tedium, thenewthings, matduggan, roblox, maurycyz, filfre, johndcook)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事一括スキップ。construction-physics（建築）、jim-nielsen（web design）、nesbitt.io（package management）、daringfireball（Apple）、shkspr.mobi（book review）等",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（Non-AI blog batch skip — construction, web design, package management, Apple commentary, vintage computing, book reviews）"
+    }
+  ]
+}

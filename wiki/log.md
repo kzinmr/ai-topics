@@ -2962,3 +2962,31 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 ---
 
+
+## [2026-07-20 18:10 UTC] dreaming | Knowledge consolidation — full saturation, Takes=0
+
+**Checkpoint**: 20260720T180050Z | Range: 2026-07-13 → 2026-07-20 | Total articles: 0 | Raw articles on disk: 187
+
+**Saturation analysis**: All 187 raw articles processed by adjacent pipelines before dreaming-group executed.
+
+**Pipeline coverage summary**:
+- active-crawl (11:00 UTC): 3 new pages created (state-of-open-source-ai-2026, vulnhunter-agentic-code-security, lora-speedrun) + 1 enrichment (ollama funding)
+- blog-wiki-ingest (07:50 UTC): 1 take (Sam Altman 2022 email)
+- entity-wiki-create (today): VAST Data entity page
+- entity-wiki-enrich (today): Meta-Anthropic $10B compute deal
+- newsletter-wiki-ingest (07:40 UTC): 1 take (VAST Data interview) + 1 reference (Google/Meta/TM roundup)
+- raw-backlog-ingest (04:00 UTC): Takes=0
+- Yesterday's dreaming (18:00 UTC): 21 decisions, all skip (consumed)
+
+**Verification of reference candidates**: 9 items checked — all confirmed covered by existing wiki pages or today's pipeline processing:
+- State of Open Source AI 2026 → concepts/state-of-open-source-ai-2026.md (active-crawl)
+- VulnHunter → concepts/vulnhunter-agentic-code-security.md (active-crawl)
+- LoRA Speedrun → concepts/ai-benchmarks/lora-speedrun.md (active-crawl)
+- Ollama funding → concepts/local-llm/ollama.md (active-crawl enrichment)
+- Sam Altman email → blog-wiki-ingest today
+- VAST Data → entities/vast-data.md (entity-wiki-create)
+- Anthropic misalignment → concepts/agentic-misalignment.md (Jul 19)
+- Qwen 3.8 → concepts/qwen-3-8.md (Jul 19)
+- Meta-Anthropic deal → entity-wiki-enrich today
+
+**Result**: Takes=0, Refs=0, Skips=9. Archive: all items already archived (dedup). 1,853 total archive URLs.
