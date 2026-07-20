@@ -2,7 +2,7 @@
 title: Meta
 type: entity
 created: 2026-04-09
-updated: 2026-07-10
+updated: 2026-07-20
 tags:
   - company
   - model
@@ -13,6 +13,7 @@ aliases:
   - Facebook
 sources:
   - raw/newsletters/2026-07-09-the-future-of-meta-superintelligence-a-1-year-progress-update.md
+  - raw/newsletters/2026-07-19-google-clones-you-meta-powers-anthropic-and-thinking-machines-opens-the-vault.md
   - [The Future of Meta Superintelligence: A 1 Year Progress Update (SemiAnalysis, Jul 2026)](https://open.substack.com/pub/semianalysis/p/the-future-of-meta-superintelligence)
 ---
 
@@ -97,6 +98,17 @@ One year after the disastrous Llama 4 release (July 2025), SemiAnalysis publishe
 - SpaceXAI: primarily a GPU supplier ($26B/year selling to Anthropic/Google), not a frontier contender
 
 **Source**: SemiAnalysis, "The Future of Meta Superintelligence: A 1 Year Progress Update" (July 9, 2026)
+
+## Meta-Anthropic Compute Deal (July 2026)
+
+A $10B+ compute leasing agreement between Meta and Anthropic, reported July 17, 2026 by NYTimes/Yahoo Finance. Meta leasing compute capacity to Anthropic, a direct rival in the AI frontier market, is notable given:
+- Meta's existing $14.3B Scale AI deal (already documented in MSL section)
+- Meta's massive compute buildout (5 1GW+ Titan clusters)
+- The "third compute landlord" framing: Meta joins Microsoft and AWS/Google as major compute providers to Anthropic
+
+Cross-reference: [[concepts/ai-industry-funding]], [[entities/anthropic]]
+
+**Source**: The Signal newsletter by Alex Banks (July 19, 2026); NYTimes; Yahoo Finance; Axios
 
 ### Instagram AI Search
 

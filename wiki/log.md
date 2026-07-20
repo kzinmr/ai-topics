@@ -1,3 +1,10 @@
+## [2026-07-20] entity-wiki-enrich | Meta-Anthropic $10B compute deal
+
+**Pipeline**: manual enrichment
+**Enriched**: [[entities/meta]] — Added Meta-Anthropic Compute Deal section ($10B+ compute leasing deal reported July 17, 2026; Meta provides compute to rival Anthropic as "third compute landlord")
+**Source**: [[raw/newsletters/2026-07-19-google-clones-you-meta-powers-anthropic-and-thinking-machines-opens-the-vault.md]]
+**Index**: No change (entity already exists).
+
 ## [2026-07-20] entity-wiki-create | New entity page: VAST Data
 
 **Pipeline**: entity-wiki-create (manual request)
