@@ -1,0 +1,28 @@
+{
+  "archived_at": "2026-07-20T04:09:46.030183+00:00",
+  "triage_run_id": "20260719T201326Z",
+  "source": "raw_backlog",
+  "summary_ja": "全5記事は既にWikiページで完全にカバー済み。3記事はアーカイブ済み（Drexler CAIS、Grant Sanderson数学インタビュー、Ed Zitron OpenAI Bubble）。2記事はWiki処理済みだがアーカイブ未処理（MAI-Thinking-1技術報告書→アーカイブ済み、BenchFlow Awesome Agent Evals→今回アーカイブ）。新規Wiki作業不要。",
+  "decisions": [
+    {
+      "item_id": "backlog-1",
+      "source": "raw_backlog",
+      "title": "2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "url": null,
+      "raw_path": "wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "Fully covered in entities/mai-thinking-1.md, concepts/mai-thinking-1-tech-report.md, concepts/microsoft-mai-models.md. Already archived.",
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-"
+    },
+    {
+      "item_id": "backlog-2",
+      "source": "raw_backlog",
+      "title": "benchflow-awesome-evals-2025.md",
+      "url": null,
+      "raw_path": "wiki/raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "Fully covered in concepts/ai-benchmarks/benchflow-tool.md. Needs archiving.",
+      "body_excerpt": "# Awesome Agent Evals [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n> A curated, opinionated, **non-BS** library of the best resources for **building and evaluating AI agents** — papers, blog posts, talks, courses, tools, and benchmarks.\nMaintained by [**BenchFlow**](https://benchfl"
+    }
+  ]
+}

@@ -1,6 +1,19 @@
 ## [2026-07-19 18:20 UTC] dreaming-wiki-ingest | Confirmation — upstream dreaming-group already committed enrichment
 
 **Upstream dreaming-group (18:00 UTC)**: Saturation analysis completed, Takes=0, 21 decisions archived.
+## [2026-07-20 04:00 UTC] raw-backlog-ingest | All 5 articles already covered — Takes=0
+
+**Batch**: 20260720T040009Z (5 candidates)
+**Result**: All 5 articles already fully covered in existing wiki pages:
+1. `reframing-superintelligence-fhi-2019.md` → concepts/cais.md + entities/k-eric-drexler.md
+2. `2026-06-03_microsoft-mai-thinking-1-tech-report.md` → entities/mai-thinking-1.md + concepts/mai-thinking-1-tech-report.md + concepts/microsoft-mai-models.md
+3. `benchflow-awesome-evals-2025.md` → concepts/ai-benchmarks/benchflow-tool.md
+4. `dwarkesh.com--p-grant-sanderson-2--960d89cd.md` → entities/grant-sanderson.md
+5. `wheresyoured.at--the-openai-bubble--eb7fc2d4.md` → entities/ed-zitron.md
+**Archive**: 5 processed (2 newly archived, 3 dedup skipped). Total archives: 1792 URLs.
+**No wiki pages created or modified.**
+
+
 **Upstream commit**: `ac854382` — archive (9 newly archived, 12 dedup), log entry, and push already done.
 **Downstream role**: Verify upstream completeness, confirm no additional enrichment needed.
 **Triage JSON**: 21 decisions, Takes=0, Refs=0 — post-enrichment saturation state confirmed.
