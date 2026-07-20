@@ -865,7 +865,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1885 pages)
+## Concepts (1888 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1025,6 +1025,7 @@
 - [[concepts/ai-benchmarks/lighteval]] — LightEval
 - [[concepts/ai-benchmarks/livebench]] — LiveBench
 - [[concepts/ai-benchmarks/livecodebench]] — LiveCodeBench
+- [[concepts/ai-benchmarks/lora-speedrun]] — LoRA Speedrun — Public wall-clock leaderboard for LoRA fine-tuning techniques (Saivineeth147, July 2026)
 - [[concepts/ai-benchmarks/mind2web-2]] — Mind2Web 2
 - [[concepts/ai-benchmarks/mle-bench]] — MLE-bench
 - [[concepts/ai-benchmarks/mmlu-pro]] — MMLU Pro
@@ -2602,6 +2603,7 @@
 - [[concepts/stanford-cs329s]] — Stanford CS329S
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — Stanford CS336 — Language Modeling from Scratch
 - [[concepts/starchild-1]] — Starchild-1
+- [[concepts/state-of-open-source-ai-2026]] — Mozilla report: open weights closed the capability gap while inference cost collapsed 50× (July 2026)
 - [[concepts/statistical-process-control]] — Statistical Process Control
 - [[concepts/steven-pinker]] — Steven Pinker
 - [[concepts/structured-outputs]] — Structured Outputs — Reliable LLM Output via Schema Validation
@@ -2714,6 +2716,7 @@
 - [[concepts/vla-models]] — Vision-Language-Action Models (VLA)
 - [[concepts/vllm]] — vLLM
 - [[concepts/voice-agent-evaluation]] — Voice Agent Evaluation; new page with Six-Pillar Framework (TTS quality, conversation quality, tool usage, intelligence, compliance, reliability), production targets, industry-specific weighting (June 24)
+- [[concepts/vulnhunter-agentic-code-security]] — VulnHunter agentic AI security tool by Capital One (Claude Code skills, falsification engine, Apache 2.0)
 - [[concepts/waluigi-effect]] — A phenomenon where training an LLM to satisfy a desirable property P makes it easier to elicit the exact opposite pro...
 - [[concepts/warm-start-optimization]] — Warm Start Optimization
 - [[concepts/wayfinder-router]] — Wayfinder Router — Deterministic, offline LLM query router; scores prompt structural complexity (0.0–1.0) and routes easy prompts to local models, hard ones to cloud models with no model call needed (June 30)

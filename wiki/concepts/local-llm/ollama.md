@@ -2,7 +2,7 @@
 title: "Ollama — Local LLM Runner"
 type: concept
 created: 2026-04-15
-updated: 2026-06-16
+updated: 2026-07-20
 status: complete
 tags:
   - local-llm
@@ -172,6 +172,30 @@ Ollama has faced significant criticism from the local LLM community, most compre
 | **llama.cpp** | Best performance, full customization | Complex setup |
 | **LocalAI** | Full OpenAI API compatibility | Smaller community |
 | **vLLM** | Production inference optimization | Heavy setup |
+
+## Funding History
+
+| Round | Date | Amount | Lead | Details |
+|-------|------|--------|------|---------|
+| Seed | Unknown | Unknown | Y Combinator (W21) | Initial development |
+| Series A | 2026-07-09 | $65M | Undisclosed | Accelerate open model infrastructure, grow team, expand cloud services |
+
+### Series A (2026-07-09) — "All Aboard Open Models"
+
+Ollama raised **$65M in Series A funding** to accelerate development of open model infrastructure, grow the engineering team, and expand cloud services. The funding was announced in a blog post titled "All Aboard Open Models" on July 9, 2026, and gained significant attention on HN (133 points, 54 comments) when it resurfaced on July 19.
+
+**Key context:**
+- Ollama had reached **168K GitHub Stars** and **52 million monthly downloads** by April 2026
+- Founders: Michael (Kitematic → Docker Desktop, acquired 2015) and the Ollama team
+- The raise signals growing investor confidence in open-source AI inference tools
+- Positions Ollama to compete with cloud inference providers (Groq, Fireworks, Together AI)
+- Follows the YC startup playbook: open-source core → add services → monetize cloud
+
+**HN Discussion Themes:**
+- Concerns about the \"open core, closed cloud\" business model
+- Comparisons to Docker's trajectory (acquisition → enterprise monetization)
+- Debate on whether open-source inference tools can sustain as VC-backed companies
+- Excitement about the democratization of local AI
 
 ## Related wikilinks
 

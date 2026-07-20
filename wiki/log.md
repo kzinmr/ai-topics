@@ -1,3 +1,35 @@
+## [2026-07-20] active-crawl — 3 new concept pages created, 1 existing page enriched
+
+**Pipeline**: active-crawl (scheduled autonomous wiki crawling)
+**Discovery**: 3-parallel subagent scan — HN Algolia (15 trending stories), X/Twitter xurl (10 trends), wiki gap analysis (30+ gaps identified)
+
+**New pages created:**
+- CREATED [[concepts/state-of-open-source-ai-2026]] — Mozilla State of Open Source AI V1.0 report: 3.3% capability gap, 50x inference cost collapse, open-weight token majority, 79% developer adoption
+  - Source: [[raw/articles/2026-07-17_state-of-open-source-ai-2026-report.md]]
+- CREATED [[concepts/vulnhunter-agentic-code-security]] — Capital One's agentic AI code security tool using Claude Code skills, falsification engine, Apache 2.0
+  - Source: [[raw/articles/2026-07-17_capital-one-vulnhunter-agentic-code-security.md]]
+- CREATED [[concepts/ai-benchmarks/lora-speedrun]] — Public wall-clock leaderboard for LoRA fine-tuning techniques (Saivineeth147, July 2026)
+  - Source: [[raw/articles/2026-07-18_lora-speedrun-leaderboard.md]]
+
+**Pages enriched:**
+- ENRICHED [[concepts/local-llm/ollama]] — Added Funding History section: $65M Series A (July 9, 2026), "All Aboard Open Models" blog post, HN discussion context
+  - Source: [[raw/articles/2026-07-09_ollama-all-aboard-open-models-65m-funding.md]]
+
+**Raw articles saved:**
+- 2026-07-09_ollama-all-aboard-open-models-65m-funding.md — Ollama $65M Series A blog post
+- 2026-07-18_lora-speedrun-leaderboard.md — LoRA Speedrun GitHub README
+
+**Key trending topics (not actioned — already covered):**
+- Claude Code Bun-in-Rust (535 HN pts): already enriched coding-agents July 19
+- GPT-5.6 convex optimization (592 HN pts): covered under frontier models
+- Claude Fable Jacobian Conjecture (436 HN pts): covered under Claude Fable entity
+- Ollama $65M raise (133 HN pts): enriched existing ollama page
+- Kimi K3, Qwen3.8-Max: already have dedicated pages
+- Classical ML for LLM text detection: already has concepts/llm-text-detection-classical-ml page
+
+**Verification**: 3 new pages verified existing, wikilinks cross-checked, index.md updated (Concepts: 1885 -> 1888)
+
+
 ## [2026-07-20] blog-wiki-ingest | Sam Altman 2022 email (Open Source Preemption Strategy)
 
 **Pipeline**: blog-wiki-ingest (07:50 UTC)
