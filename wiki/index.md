@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (859 pages)
+## Entities (860 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -810,6 +810,7 @@
 - [[entities/vannevar-labs]] — Vannevar Labs
 - [[entities/vanta]] — Vanta
 - [[entities/varun-trivedy]] — Varun Trivedy
+- [[entities/vast-data]] — VAST Data — Data storage and AI infrastructure company ($30B); GPU starvation problem, data-centric design (Jul 20)
 - [[entities/vera-rubin]] — NVIDIA Vera Rubin
 - [[entities/vercel]] — Vercel Inc.; frontend cloud platform, expanded into AI with Eve filesystem-first agent framework, deepsec security harness, AI SDK, and Vercel Sandbox microVMs (June 28)
 - [[entities/vercel-eve]] — Vercel Eve — Open-source filesystem-first framework for durable backend AI agents; agent = directory of files, built-in durable sessions, sandboxes, evals, HITL, MCP connections, channels; Vercel runs 100+ Eve agents in production including d0, Vertex, Athena (June 28)

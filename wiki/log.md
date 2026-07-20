@@ -1,3 +1,11 @@
+## [2026-07-20] entity-wiki-create | New entity page: VAST Data
+
+**Pipeline**: entity-wiki-create (manual request)
+**New page**: [[entities/vast-data]] — VAST Data — $30B data storage and AI infrastructure company; GPU starvation problem, data-centric design philosophy, cold archive thesis, AI Operating System vision
+**Source**: [[raw/newsletters/2026-07-19-you-re-wasting-a-lot-of-money-exclusive-interview-with-vast-data-s-sven-breuner-.md]]
+**Tags added to SCHEMA.md**: `storage`, `data-layer`
+**Index**: Entities 859→860 pages.
+
 ## [2026-07-19 18:20 UTC] dreaming-wiki-ingest | Confirmation — upstream dreaming-group already committed enrichment
 
 **Upstream dreaming-group (18:00 UTC)**: Saturation analysis completed, Takes=0, 21 decisions archived.
