@@ -30,6 +30,7 @@
 **Verification**: 3 new pages verified existing, wikilinks cross-checked, index.md updated (Concepts: 1885 -> 1888)
 
 
+---
 ## [2026-07-20] blog-wiki-ingest | Sam Altman 2022 email (Open Source Preemption Strategy)
 
 **Pipeline**: blog-wiki-ingest (07:50 UTC)
@@ -37,6 +38,7 @@
 **Source**: [[raw/articles/simonwillison.net--2026-jul-20-sam-altman--c4ba859f.md]]
 **Index**: No change (entity already exists).
 
+---
 ## [2026-07-20] entity-wiki-enrich | Meta-Anthropic $10B compute deal
 
 **Pipeline**: manual enrichment
@@ -44,6 +46,7 @@
 **Source**: [[raw/newsletters/2026-07-19-google-clones-you-meta-powers-anthropic-and-thinking-machines-opens-the-vault.md]]
 **Index**: No change (entity already exists).
 
+---
 ## [2026-07-20] entity-wiki-create | New entity page: VAST Data
 
 **Pipeline**: entity-wiki-create (manual request)
@@ -52,9 +55,11 @@
 **Tags added to SCHEMA.md**: `storage`, `data-layer`
 **Index**: Entities 859→860 pages.
 
+---
 ## [2026-07-19 18:20 UTC] dreaming-wiki-ingest | Confirmation — upstream dreaming-group already committed enrichment
 
 **Upstream dreaming-group (18:00 UTC)**: Saturation analysis completed, Takes=0, 21 decisions archived.
+---
 ## [2026-07-20 04:00 UTC] raw-backlog-ingest | All 5 articles already covered — Takes=0
 
 **Batch**: 20260720T040009Z (5 candidates)
@@ -74,6 +79,7 @@
 **Verification**: All reference candidates verified "already covered" by upstream. Filesystem scan of ~30 recent raw articles found no gaps.
 **Action**: Downstream confirmation only. Upstream enrichment was complete.
 
+---
 ## [2026-07-19 18:00 UTC] dreaming | Knowledge consolidation — saturation day, Takes=0
 
 **Checkpoint**: 0 articles collected, 202 recent_raw_articles on disk (Jul 17-19).
@@ -102,6 +108,7 @@
 
 **Archive**: 21 candidates → 9 newly archived, 12 dedup skipped. Total archive URLs: 1,792.
 
+---
 ## [2026-07-19 11:15 UTC] active-crawl — 4 new concept pages
 
 **Crawl round**: trending topics from HN Algolia + X/Twitter + blogwatcher DB analysis. Cross-referenced against wiki coverage gaps.
@@ -125,6 +132,7 @@
 - `raw/articles/2026-07-19_microsoft-semantic-kernel-readme.md`
 
 
+---
 ## [2026-07-19 07:40 UTC] newsletter-wiki-ingest — 0 takes (all skip)
 
 - Newsletter: The Stage and the Factory Floor (Manu Sharma, beehiiv uid=383) — 20 URLs all expired (403)
@@ -132,6 +140,7 @@
 - Inbox pre-triage confirmed all links unresolvable
 - No takes — all items archived as skip (already deduped)
 
+---
 ## [2026-07-18 17:35 UTC] watchdog | Auto-fix summary
 
 **Pipeline**: wiki-watchdog-fix (daily auto-healing)
@@ -181,6 +190,7 @@
 - [[raw/articles/dwarkesh.com--p-grant-sanderson-2--960d89cd.md]] — Already captured in entities/grant-sanderson
 - [[raw/articles/wheresyoured.at--the-openai-bubble--eb7fc2d4.md]] — Already captured in entities/ed-zitron
 
+---
 ## [2026-07-18 11:00 UTC] active-crawl — 1 new page, 2 enrichments, 3 raw articles
 
 **Pipeline**: active-crawl (hot-topics.yaml + trending discovery)
@@ -205,6 +215,7 @@
 
 **Discovery method**: 3 parallel subagents (HN Algolia 15 stories, X/Twitter 9 filtered results, wiki gap analysis 10 candidates). Topics selected via cross-referencing: VulnHunter (HN #9, 71 pts), AI Meets Cryptography (HN #6, 95 pts), State of Open Source AI (HN #2, 452 pts). Kimi K3 skipped (already covered, 213-line page from Jul 17).
 
+---
 ## [2026-07-18 07:50 UTC] Blog wiki ingest — Fable 5 permanent, hyperbo enrichment, grokking/overtraining
 
 **Pipeline**: blog-wiki-ingest (recovered from triage checkpoint after render failure)
@@ -223,6 +234,7 @@
 
 **Referenced entities**: fable, hyperbo, seangoedecke-com
 
+---
 ## [2026-07-18 07:20 UTC] Newsletter triage recovery & wiki enrichment
 
 **Pipeline**: newsletter-wiki-ingest (recovered from triage checkpoint after render failure)
@@ -237,6 +249,7 @@
 
 **Referenced entities**: William Horton, Maven Clinic, Hugo Bowne-Anderson (Vanishing Gradients)
 
+---
 ## [2026-07-18 12:00 UTC] YouTube video ingestion — Geoffrey Litt "Understanding is the new bottleneck"
 
 **Video**: [Understanding is the new bottleneck — Geoffrey Litt, Notion](https://www.youtube.com/watch?v=WkBPX-oDMnA)
@@ -255,6 +268,7 @@
 
 **Note**: This video was already referenced in the entity page from x-accounts-scan (2026-07-17), but the full transcript was not ingested until now.
 
+---
 ## [2026-07-17 23:30 UTC] x-bookmarks-ingest — 2 bookmarks processed
 
 **Bookmark 1 — Bret Taylor: "The Next Horizon in Agents" (Sierra Horizon)**
@@ -285,6 +299,7 @@ Enriched:
 - [[raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive]]
 
 
+---
 ## [2026-07-17 22:30 UTC] x-accounts-scan | 4 new posts from 3 accounts
 
 **Scanned**: 12/84 accounts (72 skipped by budget), cursor 81→9.
@@ -301,6 +316,7 @@ Enriched:
 - `wiki/entities/geoffrey-litt.md` — Added AIE talk "Understanding is the new bottleneck" (2026-07-10, 56K views) to Speaking Engagements + Blog/Recent Posts
 - `wiki/entities/sero.md` — Added LOCAL.AI benchmark #1 (DGX Spark, Mac M5 Max) for Step-3.7-Flash-148B (REAP)
 
+---
 ## [2026-07-17 23:30 UTC] x-bookmarks-ingest — 2 bookmarks processed
 
 **Bookmark 1 — Bret Taylor: "The Next Horizon in Agents" (Sierra Horizon)**
@@ -331,6 +347,7 @@ Enriched:
 - [[raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive]]
 
 
+---
 ## [2026-07-17 18:10 UTC] dreaming | Knowledge consolidation — 5 reference enrichments (triage recovery)
 
 **Saturation scenario** — Dreaming-collect reported 0 articles, 193 recent raw articles. Dreaming-group (18:00 UTC) completed triage but failed on JSON render. Triage recovered from output file.
@@ -349,10 +366,12 @@ Non-AI batch skip: Cohere×UofT, Glean×Databricks, Hex, Parakeet, Pluralistic, 
 
 **Sources**: raw/articles/2026-07-17_fireworks-ai_series-d-announcement.md, raw/articles/2026-07-17_pinecone_sparse-v3.md, raw/articles/2026-07-17_pinecone_text-match-filters.md, raw/articles/2026-07-17_pinecone_behind-the-benchmarking-pipeline.md, raw/articles/2026-07-17_elevenlabs_interaction-models.md, raw/articles/2026-07-17_warp_how-to-build-a-cloud-software-factory-self-improving-code-review.md, raw/articles/2026-07-17_harvey_y-combinator-backed-benchmark-joins-harvey.md
 
+---
 ## [2026-07-17] X Bookmarks Ingest — OpenWiki 0.2 OKF + Cerebras Knowledge Base
 
 **Bookmark 1: OpenWiki 0.2 adopts OKF spec** (LangChain AI, Jul 16 2026):
 
+---
 ## [2026-07-17] Raw Backlog Ingest (12:00 UTC)
 
 Processed 5 candidates from raw backlog (--sort ai-hint --limit 5). All 5 already covered by existing wiki pages:
@@ -382,6 +401,7 @@ Takes=0, References=0, Skips=5. No new pages created. Triage saved to cron/data/
 
 **index.md** — Added 6 entries (2 concepts, 4 entities). Counts updated: Concepts 1874→1876, Entities 851→855, Comparisons 35
 
+---
 ## [2026-07-17] Active Crawl (4 topics)
 
 | 2026-07-17 11:?? | concepts/ai-voice-fraud.md | created | AI Voice Fraud concept page — voice cloning scams, deepfake audio fraud vectors, defensive strategies |
@@ -401,6 +421,7 @@ Top story: Kimi K3 (#1 HN at 1,677 pts) — already documented in wiki; skipped 
 
 2026-07-17 | newsletter-wiki-ingest | Enrich concepts/kimi-k3.md (+91 lines) | Add KDA/AttnRes architecture details, Agent Arena benchmarks, AA evaluation metrics, Serving/Infrastructure, Caveats & Controversies, Community Reaction from AINews article | Triage recovered from checkpoint (Takes=0, Ref=4); processed 1 reference enrichment | [concepts/kimi-k3](concepts/kimi-k3.md) | sources: raw/newsletters/2026-07-17-ainews-kimi-k3-2-8t-a50b-the-largest-open-model-ever-released-opus-4-8-class-at-.md
 
+---
 ## 2026-07-17
 
 ### Blog Ingest — Kimi K3
@@ -411,12 +432,14 @@ Top story: Kimi K3 (#1 HN at 1,677 pts) — already documented in wiki; skipped 
 
 | 2026-07-17 00:00 UTC | raw-backlog-ingest | **All content already captured.** Processed 5 candidates: reframing-superintelligence-fhi-2019.md (Drexler CAS, archived), dwarkesh.com--p-grant-sanderson-2--960d89cd.md (Grant Sanderson math interview, archived), wheresyoured.at--the-openai-bubble--eb7fc2d4.md (Ed Zitron, archived), 2026-06-03_microsoft-mai-thinking-1-tech-report.md (already fully covered in entities/mai-thinking-1 + concepts/mai-thinking-1-tech-report + concepts/hill-climbing-machine, newly archived), benchflow-awesome-evals-2025.md (already fully covered in concepts/ai-benchmarks/benchflow-tool, newly archived). No enrichment needed — all content fully captured by Jun/Jul 2026 sessions. Archive: 2 new + 3 dedup (total: 1,687 URLs). |
 
+---
 ## 2026-07-16
 
 ### Dreaming — Knowledge Consolidation
 
 | 2026-07-16 18:00 UTC | dreaming | **Saturation day** — Takes=0, Ref=1, Skip=10. RSS/Newsletter収集0件。Filesystem scan: 185生記事のうち11件のAI関連記事を評価。全件が既存Wikiページでカバー済み。Bonsai 27B (concepts/bonsai-27b.md), Juggler (concepts/juggler.md), Claude Memory Heist (concepts/claude-memory-heist.md), Demis Hassabis preflight (entities/demis-hassabis.md L175-189), Glean Agent Identity (entities/glean.md L154), ICML 2026 trends (entities/sierra.md sources). Reference: China Apple Intelligence承認 (us-china-ai-competition.md update候補). Archive: 11 candidates → 9 new archived (total: 1,687 URLs). |
 
+---
 ## 2026-07-16
 
 ### Active Crawl
@@ -2763,6 +2786,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 | Orphans | 23 (all _index.md + archive — false positives) |
 | Header counts match filesystem | Entities 849, Concepts 1880, Comparisons 35 — all match |
 
+---
 ## [2026-07-16] watchdog | Auto-fixed 3 missing log separators, verified full wiki health
 
 ### Changes
@@ -2783,6 +2807,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 | Orphans (non-archive) | 0 |
 | Header counts match filesystem | All match |
 
+---
 ## [2026-07-17] Weekly wiki graph analysis
 
 ### Changes
@@ -2803,6 +2828,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - MEDIUM: Bulk refresh 106 stale pages (growing ~47/week)
 - MEDIUM: Fix 99 auto-fixable wikilinks
 
+---
 ## [2026-07-17] Weekly wiki graph analysis
 
 ### Changes
@@ -2824,6 +2850,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - MEDIUM: Fix 99 auto-fixable wikilinks
 
 
+---
 ## [2026-07-17] Weekly wiki graph analysis
 
 ### Changes
@@ -2844,6 +2871,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - MEDIUM: Bulk refresh 106 stale pages (growing ~47/week)
 - MEDIUM: Fix 99 auto-fixable wikilinks
 
+---
 ## [2026-07-17 23:00 UTC] bookmark | Armin Ronacher — Junior resource subscriptions processing
 
 ### Source
@@ -2855,6 +2883,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - `wiki/concepts/agent-resource-subscriptions.md` — **NEW** concept page documenting the resource subscriptions design pattern for coding agents
 - `wiki/index.md` — Added junior.md and agent-resource-subscriptions.md entries
 
+---
 ## [2026-07-18 18:00 UTC] dreaming | Knowledge consolidation — saturation day, Takes=0, 1 minor update
 
 **Articles screened**: 0 (checkpoint empty), 202 recent raw articles (filesystem)
@@ -2871,6 +2900,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - Sean Goedecke / Gwern grokking → `entities/seangoedecke-com.md`
 - Hyperbo articles → `entities/hyperbo.md`
 
+---
 ## [2026-07-18 18:20 UTC] dreaming-wiki-ingest | Saturation confirmation — upstream dreaming-group already committed enrichment
 
 **Detection**: Upstream dreaming-group at 18:00 UTC completed analysis + enrichment before JSON render failure. Triage recovery via output file (4,332 lines).
@@ -2883,6 +2913,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 **Verification**: log.md entry confirms upstream enrichment at 18:00 UTC. No downstream work needed.
 
+---
 ## [2026-07-19 07:00 UTC] blog-ingest — 4 pages created/updated, 12 raw articles saved
 
 **Pipeline**: blog-ingest (daily blog RSS collection)
@@ -2909,3 +2940,25 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - YouTube: AI Engineer conference talks (5 videos)
 - LWN.net: XZ backdoor book, kernel updates
 - FT.com: Apple-OpenAI employee letters (paywall)
+
+---
+
+## [2026-07-20] watchdog | Auto-fix — header counts & log separators
+
+### Changes
+- Fixed **Entities header**: 860 → 861 pages
+- Fixed **Concepts header**: 1888 → 1823 pages
+- Added 31 missing `---` separators in log.md (188 sections now properly separated)
+
+### Pipeline state
+- Pipeline watchdog: clean (no alerts)
+- Wiki health JSON: clean (0 page name violations, 23 `_index.md` orphans — expected)
+- validate_index.py: PASS (2823 lines)
+- Ghost entries: 0
+- Duplicate entries: 0
+- Index corruption: none detected
+- Cross-section misplacement: none
+- Log escaped newline artifacts: none
+
+---
+
