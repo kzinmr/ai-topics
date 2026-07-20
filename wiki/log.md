@@ -1,3 +1,10 @@
+## [2026-07-20] blog-wiki-ingest | Sam Altman 2022 email (Open Source Preemption Strategy)
+
+**Pipeline**: blog-wiki-ingest (07:50 UTC)
+**Enriched**: [[entities/sam-altman]] — Added "2022 Email: Open Source Preemption Strategy" subsection under Elon Musk Lawsuit. Details: Sam Altman's October 1, 2022 email to OpenAI board about releasing a GPT-3-capable local model "before Stability or someone else does" to discourage competitors and make it harder for new efforts to get funded. Exposed in Musk v. Altman discovery (July 2026). Publicized by Simon Willison.
+**Source**: [[raw/articles/simonwillison.net--2026-jul-20-sam-altman--c4ba859f.md]]
+**Index**: No change (entity already exists).
+
 ## [2026-07-20] entity-wiki-enrich | Meta-Anthropic $10B compute deal
 
 **Pipeline**: manual enrichment

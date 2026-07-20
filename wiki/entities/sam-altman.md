@@ -2,7 +2,7 @@
 title: Sam Altman
 type: entity
 created: 2026-04-13
-updated: 2026-05-12
+updated: 2026-07-20
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
@@ -13,8 +13,8 @@ tags:
   - policy
 sources:
   - raw/newsletters/2026-05-10-spacexai-s-spice-trade-anthropic-targets-the-trillion-and-openai-s-stack-sweep.md
+  - raw/articles/simonwillison.net--2026-jul-20-sam-altman--c4ba859f.md
 ---
-
 
 # Sam Altman
 
@@ -244,6 +244,19 @@ Altman has been vocal about the societal implications of AI:
 Musk sued OpenAI, Altman, and Brockman (March 2024, refiled August 2024) alleging breach of contract and fraud for shifting from nonprofit to capped-profit model.
 
 **Altman's defense**: The 2019 capped-profit structure was essential for global AI competition, securing billions in compute investment, and attracting top talent. OpenAI's nonprofit oversight was maintained through governance structures.
+
+#### 2022 Email: Open Source Preemption Strategy (July 2026 Discovery)
+
+In July 2026, Musk's legal team disclosed a previously private email written by Sam Altman to OpenAI's board on **October 1, 2022**, during discovery in *Musk v. Altman*. The email reveals OpenAI's internal open source strategy — a deliberate preemption play:
+
+> *"We have been having extensive discussions around open source strategy. We will discuss it more at our next board meeting, but one thing we'd like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that. We'd like to do it soon, before Stability or someone else does. In general, we think this helps discourage others from releasing similarly-powerful models, and makes it harder for new efforts to get funded."*
+> — Sam Altman, Email to OpenAI's board, October 1, 2022 (exposed in *Musk v. Altman*, July 2026)
+
+The email's strategic logic is significant: rather than releasing open-source models from altruism, OpenAI viewed open-source releases as a **competitive moat-building tool** — a way to flood the ecosystem with a capable free model, making it harder for competitors (Stability AI, open-source collectives) to attract funding for similarly-capable models. This predates ChatGPT's public launch (November 30, 2022) by two months.
+
+The email was publicized by Simon Willison on July 20, 2026, who described it as a window into OpenAI's pre-ChatGPT strategic thinking.
+
+**Sources**: Simon Willison, "A quote from Sam Altman" (July 20, 2026); raw/article: `simonwillison.net--2026-jul-20-sam-altman--c4ba859f.md`
 
 ### Worldcoin Regulatory Issues
 Multiple countries have banned or halted Worldcoin operations over biometric privacy concerns. Altman has defended the project as necessary for ensuring AI benefits are distributed fairly.
