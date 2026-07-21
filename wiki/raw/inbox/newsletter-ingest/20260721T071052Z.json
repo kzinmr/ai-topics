@@ -1,0 +1,150 @@
+{
+  "run_id": "20260721T071052Z",
+  "triaged_at": "2026-07-21T07:15:00Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 6,
+  "summary": "Strong newsletter batch — two new major model releases (Kimi K3 from Moonshot AI, Qwen-3.8 from Alibaba), AI policy signal from Demis Hassabis/DeepMind, and a directly relevant agent engineering article. Import AI 465 provides a curated round-up tying several threads together.",
+  "url_resolution_note": "Redirect URLs in the checkpoint are truncated by the email ingest script (JWT tokens redacted with '...' for security). Canonical Open Substack article URLs are included where available. Beehiiv links (Qwen-3.8 newsletter) are fully encrypted and cannot be resolved without the original email body.",
+  "classifications": {
+    "critical": [
+      {
+        "message_id": "<20260720154828.3.4a1c59ae17e19150@mg-d0.substack.com>",
+        "subject": "Kimi K3: The open-weights escalation",
+        "date": "2026-07-20",
+        "source_label": "uid=389",
+        "source_publication": "Nathan Lambert (robotic newsletter)",
+        "canonical_url": "https://open.substack.com/pub/robotic/p/kimi-k3-the-open-weights-escalation",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-20-kimi-k3-the-open-weights-escalation.md",
+        "relevance": "critical",
+        "reason": "New major model release — Kimi K3 from Moonshot AI (月之暗面). Open-weights model escalation is a core wiki topic. Likely needs entity page creation and update to Moonshot AI entity. Connects to open-vs-closed model gap narrative.",
+        "suggested_wiki_actions": [
+          "Create or update entity page: moonshot-ai",
+          "Create model release event: kimi-k3-release",
+          "Update concept page: open-weight-models",
+          "Cross-link with: qwen, deepseek, open-vs-closed-model-gap"
+        ]
+      },
+      {
+        "message_id": "<20260720.173137.5baf448d@mta35>",
+        "subject": "🐉 Alibaba Says Only Fable 5 Beats the new Qwen-3.8!",
+        "date": "2026-07-20",
+        "source_label": "uid=390",
+        "source_publication": "AI newsletter (beehiiv)",
+        "canonical_url": null,
+        "canonical_url_note": "Beehiiv encrypted links — URL not resolvable from truncated checkpoint data",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-20-alibaba-says-only-fable-5-beats-the-new-qwen-3-8.md",
+        "relevance": "critical",
+        "reason": "New major model release — Qwen-3.8 from Alibaba. Benchmark claims suggest competitive positioning. Needs entity/model page updates. Connects to open-weight model competition narrative alongside Kimi K3.",
+        "suggested_wiki_actions": [
+          "Create or update entity page: alibaba",
+          "Create or update model page: qwen-3.8",
+          "Update concept page: chinese-ai-models",
+          "Cross-link with: kimi-k3, open-weight-models"
+        ]
+      },
+      {
+        "message_id": "<20260720123146.3.151b90f7f81c96fe@mg-d1.substack.com>",
+        "subject": "Import AI 465: Open vs closed gaps; Kimi K3; Demis' big policy plan",
+        "date": "2026-07-20",
+        "source_label": "uid=387",
+        "source_publication": "Import AI (Jack Clark)",
+        "canonical_url": "https://open.substack.com/pub/importai/p/import-ai-465-open-vs-closed-gaps",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-20-import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan.md",
+        "relevance": "critical",
+        "reason": "Curated newsletter tying together multiple major threads: open-vs-closed model gap analysis, Kimi K3 coverage, and Demis Hassabis (DeepMind) policy proposal. The Demis policy plan is a significant AI governance signal. Should be processed to extract linked articles for individual wiki ingest.",
+        "suggested_wiki_actions": [
+          "Resolve redirect links to identify individual articles",
+          "Update entity page: demis-hassabis",
+          "Update concept page: open-vs-closed-model-gap",
+          "Create or update concept page: ai-governance-policy (if Demis plan warrants)"
+        ]
+      }
+    ],
+    "high": [
+      {
+        "message_id": "<20260721050956.3.cd5044c071e4af80@mg-d1.substack.com>",
+        "subject": "Stop Overengineering Your Agent Harness",
+        "date": "2026-07-21",
+        "source_label": "uid=392",
+        "source_publication": "Hugo Bowne newsletter",
+        "canonical_url": "https://open.substack.com/pub/hugobowne/p/stop-overengineering-your-agent-harness",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-21-stop-overengineering-your-agent-harness.md",
+        "relevance": "high",
+        "reason": "Directly relevant to AI agent development — best practices for agent harness design. Core wiki topic (coding agents, agent frameworks). Could inform or update concept pages on agent architecture.",
+        "suggested_wiki_actions": [
+          "Scrape full article from Open Substack URL",
+          "Update concept page: ai-agent-harness or coding-agents",
+          "Cross-link with: agent-harness-research skill area"
+        ]
+      }
+    ],
+    "low": [
+      {
+        "message_id": "<20260720150156.3.4564eafb6dc61208@mg2.substack.com>",
+        "subject": "🎙️ How I AI: How the founder of Morning Brew built a Claude content machine that never runs out of ideas",
+        "date": "2026-07-20",
+        "source_label": "uid=388",
+        "source_publication": "Lenny's Newsletter",
+        "canonical_url": "https://open.substack.com/pub/lenny/p/how-i-ai-how-the-founder-of-morning",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-20-how-i-ai-how-the-founder-of-morning-brew-built-a-claude-content-machine-that-nev.md",
+        "relevance": "low",
+        "reason": "Business/marketing use case of Claude for content generation. Not a new model or technical development. May have marginal interest as an AI application case study but unlikely to warrant a dedicated wiki page.",
+        "suggested_wiki_actions": [
+          "Save raw article as reference only",
+          "No wiki page creation unless agent decides the use case is notable enough"
+        ]
+      },
+      {
+        "message_id": "<20260721035800.3.71dcf9167b015666@mg2.substack.com>",
+        "subject": "[AINews] not much happened today",
+        "date": "2026-07-21",
+        "source_label": "uid=391",
+        "source_publication": "AINews (swyx)",
+        "canonical_url": "https://open.substack.com/pub/swyx/p/ainews-not-much-happened-today-173",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-21-ainews-not-much-happened-today.md",
+        "relevance": "low",
+        "reason": "Self-described quiet day. swyx's AINews is a daily aggregator; low signal on quiet days. Save raw for completeness but unlikely to yield new wiki content.",
+        "suggested_wiki_actions": [
+          "Save raw article for archival",
+          "Scan linked articles briefly — may contain minor items worth noting"
+        ]
+      }
+    ]
+  },
+  "cross_cutting_themes": [
+    {
+      "theme": "Open-weight model escalation",
+      "newsletters": ["Kimi K3", "Qwen-3.8", "Import AI 465"],
+      "significance": "Two major open-weight model releases in one day (Kimi K3, Qwen-3.8) with benchmark claims. The open-vs-closed gap is narrowing. This is a recurring wiki theme that should be actively tracked."
+    },
+    {
+      "theme": "Chinese AI model competition",
+      "newsletters": ["Kimi K3", "Qwen-3.8"],
+      "significance": "Moonshot AI and Alibaba both releasing competitive models. Worth monitoring for updates to existing Chinese AI ecosystem pages."
+    },
+    {
+      "theme": "AI governance and policy",
+      "newsletters": ["Import AI 465"],
+      "significance": "Demis Hassabis policy proposal is a notable signal for AI safety/governance coverage in the wiki."
+    },
+    {
+      "theme": "Agent engineering practices",
+      "newsletters": ["Stop Overengineering Your Agent Harness"],
+      "significance": "Practical guidance on agent harness design — directly applicable to wiki's agent framework coverage."
+    }
+  ],
+  "articles_to_resolve": [
+    {
+      "note": "Import AI 465 contains 10 embedded redirect links (substack.com/redirect/...) that likely point to individual articles about open models, Kimi K3, and Demis Hassabis policy. These need resolution via the full email body or web scraping the newsletter page itself.",
+      "newsletter": "Import AI 465",
+      "canonical_url": "https://open.substack.com/pub/importai/p/import-ai-465-open-vs-closed-gaps",
+      "redirect_count": 10
+    },
+    {
+      "note": "Beehiiv encrypted links from Qwen-3.8 newsletter cannot be resolved from truncated checkpoint. Need to scrape the newsletter page directly or re-process the original email.",
+      "newsletter": "Qwen-3.8",
+      "canonical_url": null,
+      "redirect_count": 20
+    }
+  ]
+}
