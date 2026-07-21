@@ -1428,6 +1428,7 @@
 - [[concepts/compound-engineering-loop]] — Compound Engineering Loop
 - [[concepts/comprehensive-ai-services]] — Comprehensive AI Services (CAIS)
 - [[concepts/compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks
+- [[concepts/compositional-generalization]] — Compositional Generalization — Harnesses as compositional generalizers; RLMs enable solving unseen problems by composing familiar patterns
 - [[concepts/computer-architecture]] — computer-architecture
 - [[concepts/computer-science-education]] — Computer Science Education
 - [[concepts/computer-use]] — Computer Use; enriched with Gemini 3.5 Flash Computer Use (June 2026) — native integration, multi-environment support, safety architecture (June 25)

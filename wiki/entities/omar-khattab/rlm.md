@@ -6,7 +6,7 @@ sources: []
   - inference
   - context-management
 created: 2026-04-24
-updated: 2026-05-04
+updated: 2026-07-21
 type: sub-entity
 ---
 
@@ -54,6 +54,24 @@ The through-line across all three: **architectural flexibility over brute-force 
 ## Connection to "The Second Half"
 
 Both Khattab/Zhang's RLM framework and [[entities/shunyu-yao]]'s RL generalization thesis converge on the same insight: **how we structure the interaction** matters more than the raw capability of the model. Khattab's RLM makes the **environment** (the REPL, the context-as-data) the focus; Yao's work makes the **environment design** (Agent-Computer Interfaces) the focus.
+
+## Compositional Generalization via Harnesses (Jul 2026)
+
+Zhang & Khattab's latest blog post "Language model harnesses are compositional generalizers" provides the strongest experimental evidence for the RLM thesis:
+
+**Core claim:** The capacity for compositional generalization — solving unseen problems by composing familiar ones — can live in the harness, not just the neural network. A good harness induces an equivalence relation over task states, making structurally similar tasks produce near-identical token-level trajectories.
+
+**Length generalization:** Training an RLM on short tasks (32k–128k tokens) generalizes to tasks 8–32x longer (up to 2M tokens), with ~10x eval lift over training the base Transformer directly. Benchmarks: MRCRv2, GraphWalks, LongBenchPro, OOLONG, OOLONG-Pairs, Ada-LEval. Model: Qwen3-30B-A3B-Instruct-2507.
+
+**Cross-domain generalization:** Training on one domain transfers to other domains at a far better rate than vanilla Transformers, because the RLM harness makes the root LM see near-identical trajectories across structurally similar tasks.
+
+**Two key mechanisms:** (1) Context offloading — input-specific context passed as symbolic variables; (2) Programmatic sub-agent calling — sub-agents treated as REPL functions, storing results in variables without returning them to the main context.
+
+**Locally In-Distribution (LID) principle:** Every individual LM call should see prompts that are in-distribution with respect to training data, even if the full task trajectory is out-of-distribution. Existing harnesses (Claude Code, Codex) fail at this due to context rot from appended histories.
+
+**Critique of existing harnesses:** Claude Code and Codex fundamentally rely on flooding the context window with interleaved task-specific information, tool outputs, and reasoning — causing "context rot" that breaks LID.
+
+See: [[concepts/compositional-generalization]]
 
 ## Related
 

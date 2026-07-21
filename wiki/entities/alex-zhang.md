@@ -3,7 +3,7 @@ title: "Alex L. Zhang"
 tags: [person]
 sources: []
 created: 2026-04-13
-updated: 2026-05-04
+updated: 2026-07-21
 type: entity
 ---
 
@@ -113,6 +113,7 @@ Evaluates LLMs on video game understanding and interaction — part of Zhang's b
 |------|-------|-------|-------|
 | 2025 | Recursive Language Models (RLMs) | arXiv:2512.24601 | Task-agnostic inference paradigm, 10M+ token context |
 | 2025 | KernelBench | ICML 2025 | Best Paper — GPU kernel generation benchmark |
+| 2026 | Language model harnesses are compositional generalizers | Blog | RLMs generalize 8–32x beyond training length via compositional generalization; LID principle |
 | 2026 | The Mismanaged Geniuses Hypothesis | Blog | Frontier models are underutilized; composition > scaling |
 | 2026 | Language Models will be Scaffolds | Blog | Scaffold-first philosophy for next-gen AI |
 | 2025 | VideoGameBench | — | LLM evaluation on video game tasks |
@@ -161,6 +162,7 @@ Prime Intellect synthesizes both:
 | Date | Title | Key Insight |
 |------|-------|-------------|
 | Oct 2025 | Recursive Language Models | RLMs treat context as an environment variable, not a static prompt |
+| Jul 2026 | Language model harnesses are compositional generalizers | Harnesses enable compositional generalization — RLMs generalize 8–32x beyond training length; LID principle; critique of Claude Code/Codex context rot |
 | Apr 2026 | A Mini Exercise on the Mismanaged Geniuses Hypothesis (RLMs on LongCoT) | Simple prompt-level fixes boost RLM from 50.6% -> 65.6% on LongCoT-mini, validating MGH via Claude Code trajectory analysis |
 | 2024 | A Meticulous Guide to Advances in Deep Learning Efficiency | Comprehensive survey from pre-AlexNet to foundation models |
 
@@ -186,6 +188,7 @@ Prime Intellect synthesizes both:
 ## Related Concepts
 
 - **[[concepts/rlm-recursive-language-models]]** — Zhang's primary contribution
+- **[[concepts/compositional-generalization]]** — Harnesses as compositional generalizers (Jul 2026)
 - **[[concepts/context-engineering/context-folding|Context Folding]]** — Parallel approach (Sun et al., 2025)
 - **[[entities/shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
 - **[[entities/omar-khattab]]** — PhD advisor, ColBERT/DSPy creator

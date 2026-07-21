@@ -3008,3 +3008,4 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 **Action taken**: Confirmation entry only — no enrichment, no archive re-run, no page changes.
 - 2026-07-21: Ingested cursor.com/ja/blog/agent-swarm-model-economics → created concepts/multi-agents/cursor-agent-swarm-architecture.md, updated entities/cursor-ai.md, concepts/multi-agents/agent-swarms.md
+- 2026-07-21: wiki: ingested Zhang & Khattab (2026) 'Language model harnesses are compositional generalizers' blog post. Created concepts/compositional-generalization.md, updated entities/omar-khattab/rlm.md (length/cross-domain generalization results, LID principle), updated entities/alex-zhang.md (new blog entry + publication). Raw article saved to raw/articles/2026-07-20_zhang-khattab_language-model-harnesses-compositional-generalizers.md
