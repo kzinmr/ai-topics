@@ -97,6 +97,7 @@
     "https://brutecat.com/articles/google-cloud-rce",
     "https://build.nvidia.com/openshell",
     "https://builders.ramp.com/post/stack-benchmarking",
+    "https://builders.ramp.com/post/thompson-sampling-model-routing",
     "https://buttondown.com/archive/assumptions-weaken-properties/",
     "https://buttondown.com/hillelwayne/archive/knowing-about-things-is-cheaper-than-knowing/",
     "https://buttondown.com/hillelwayne/archive/logic-for-programmers-extra-credits/",
@@ -370,6 +371,7 @@
     "https://garymarcus.substack.com/p/breaking-trump-asks-the-impossible",
     "https://garymarcus.substack.com/p/breaking-when-dreams-for-ai-sanity",
     "https://garymarcus.substack.com/p/china-catches-up",
+    "https://garymarcus.substack.com/p/china-has-all-but-caught-up-the-us",
     "https://garymarcus.substack.com/p/could-generative-ai-could-turn-out",
     "https://garymarcus.substack.com/p/if-enough-other-companies-report",
     "https://garymarcus.substack.com/p/no-need-to-panic-about-anthropics",
@@ -1131,6 +1133,7 @@
     "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
     "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything",
     "https://simonwillison.net/2026/Jul/2/llm-coding-agent/",
+    "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/",
     "https://simonwillison.net/2026/Jul/20/sam-altman/",
     "https://simonwillison.net/2026/Jul/3/judgement/",
     "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
@@ -1258,6 +1261,7 @@
     "https://steveblank.com/2026/06/09/incorruptible/",
     "https://steveblank.com/2026/06/16/lean-launch-pad-2026-stanford-lessons-learned-presentations/",
     "https://steveblank.com/2026/06/16/lean-launch-pad-2026-stanford-lessons-learned/",
+    "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
     "https://substack.com/...",
     "https://substack.com/.../OAuthリダイレクト",
     "https://substack.com/.../UUIDリダイレクト",
@@ -1504,6 +1508,7 @@
     "https://wattenberger.com/thoughts/code-is-a-medium-for-thought/",
     "https://webkit.org/blog/17967/news-from-wwdc26-webkit-in-safari-27-beta/",
     "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/",
+    "https://workos.com/blog/management-mcp-server",
     "https://workos.com/docs/pipes?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q22026",
     "https://writing.antonleicht.me/p/betting-on-humans",
     "https://www.404media.co/apple-hide-my-email-vulnerability-reveals-peoples-real-email-addresses/",
@@ -1776,6 +1781,7 @@
     "https://www.together.ai/blog/provisioned-throughput",
     "https://www.together.ai/blog/together-ai-brings-thinking-machines-labs-new-model-inkling-on-day-0",
     "https://www.together.ai/blog/together-ai-icml-2026",
+    "https://www.together.ai/blog/together-yc-gpu-cluster",
     "https://www.troyhunt.com/1000-data-breaches-later-the-disclosure-lag-is-worse-than-ever/",
     "https://www.troyhunt.com/weekly-update-507/",
     "https://www.troyhunt.com/weekly-update-508/",
@@ -1860,5 +1866,5 @@
     "https://yoroll.ai/",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-07-20T18:13:31.718529+00:00"
+  "updated": "2026-07-21T18:06:54.507555+00:00"
 }

@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-07-21T18:06:54.507056+00:00",
+  "triage_run_id": "20260721T180014Z",
+  "source": "dreaming",
+  "summary_ja": "Jul 21 新規raw記事20件をスクリーニング。AI関連は6件、うち4件がwiki未カバー。OpenAI安全調整ブログ（NanoGPTサンドボックス脱出）が最も重要。他はStratechery中国モデル分析、WorkOS MCP管理サーバー、Ramp Thompson samplingルーティング。",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-stratechery-chinese-models-commodity",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Who's Afraid of Chinese Models? (Stratechery)",
+      "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+      "raw_path": "wiki/raw/articles/stratechery.com--2026-whos-afraid-of-chinese-models--b91616d2.md",
+      "recommended_action": "reference",
+      "reason_ja": "Kimi K3ページと中国AI競争ページは存在するが、StratecheryのCOGS vs R&D分析、tokens vs intelligence、commodity market mechanicsは未カバー。kimi-k3.mdまたはopen-source-ai.mdへの追記候補。",
+      "candidate_wiki_path": "concepts/kimi-k3",
+      "body_excerpt": "# Who’s Afraid of Chinese Models?\nSource: https://stratechery.com/2026/whos-afraid-of-chinese-models/\nThere’s a story I tell about my first day in STRT-431 at Kellogg School of Management, the introductory class that every first-year MBA was required to take; I leafed through the readings and case s"
+    },
+    {
+      "item_id": "dreaming-ref-workos-mcp-management",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "WorkOS MCP: Manage your WorkOS account from any AI agent",
+      "url": "https://workos.com/blog/management-mcp-server",
+      "raw_path": "wiki/raw/articles/workos.com--blog-management-mcp-server--d9a49c8a.md",
+      "recommended_action": "reference",
+      "reason_ja": "mcp.mdとmcp-enterprise-oauth.mdにWorkOS MCP管理サーバーの詳細なし。discover-then-executeパターン（whoami/list_operations/query/mutateの4ツールで数百操作を暴露）はMCPエコシステムの重要な進展。",
+      "candidate_wiki_path": "concepts/mcp",
+      "body_excerpt": "# WorkOS MCP: Manage your WorkOS account from any AI agent\nSource: https://workos.com/blog/management-mcp-server?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026\nMost configuration tasks in WorkOS have always required a trip to the dashboard. Setting up a domain, adjusting auth po"
+    },
+    {
+      "item_id": "dreaming-ref-ramp-thompson-sampling-routing",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Online Learning for Cost-Efficient LLM Routing",
+      "url": "https://builders.ramp.com/post/thompson-sampling-model-routing",
+      "raw_path": "wiki/raw/articles/builders.ramp.com--post-thompson-sampling-model-routing--e36daebe.md",
+      "recommended_action": "reference",
+      "reason_ja": "context-routing.mdにThompson sampling / lognormal latency posteriorsの記載なし。LLMルーティングの実装詳細として価値高い。",
+      "candidate_wiki_path": "concepts/context-engineering/context-routing",
+      "body_excerpt": "# Online Learning for Cost-Efficient LLM Routing\n**Source**: [Ramp Engineering Blog](https://builders.ramp.com/post/thompson-sampling-model-routing)\n**Author**: Kedar Thakkar\n**Published**: 2026-07-20\n## Summary\nHow Ramp's LLM gateway uses Thompson sampling over lognormal latency posteriors to pick "
+    },
+    {
+      "item_id": "dreaming-skip-together-ai-yc-gpu",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Together AI and Y Combinator GPU cluster partnership",
+      "url": "https://www.together.ai/blog/together-yc-gpu-cluster",
+      "raw_path": "wiki/raw/articles/together.ai--blog-together-yc-gpu-cluster--7e46a7dc.md",
+      "recommended_action": "skip",
+      "reason_ja": "together-ai.mdはGPU clusterを既にカバー。YC パートナーシップはマイナーな発表で技術的深みなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Together AI and Y Combinator partner to launch the first dedicated GPU cluster for the YC community\nSource: https://www.together.ai/blog/together-yc-gpu-cluster\nToday,\nTogether AI and Y Combinator (YC) are announcing a partnership\nto deliver the first dedicated YC GPU cluster, giving YC's portfoli"
+    },
+    {
+      "item_id": "dreaming-skip-simon-willison-reverse-engineering",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Reverse-engineering is cheap now (Simon Willison)",
+      "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/",
+      "raw_path": "wiki/raw/articles/simonwillison.net--2026-jul-20-cheap-reverse-engineering--103d4e12.md",
+      "recommended_action": "skip",
+      "reason_ja": "短いブログエントリ（~300語）。simon-willison.mdは既に多数のブログ記事をカバー。技術的深みなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Reverse-engineering is cheap now\nSource: https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything\n20th July 2026\nI keep hearing anecdotes from people who used coding agents to reverse-engineer and automate devices in their homes.\nI think this is an interesting illustration "
+    },
+    {
+      "item_id": "dreaming-skip-gary-marcus-china",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "China has all but caught up (Gary Marcus)",
+      "url": "https://garymarcus.substack.com/p/china-has-all-but-caught-up-the-us",
+      "raw_path": "wiki/raw/articles/garymarcus.substack.com--p-china-has-all-but-caught-up-the-us--3b62d46a.md",
+      "recommended_action": "skip",
+      "reason_ja": "Stratechery分析と重複。Marcusの主張は既存の中国AI競争ページでカバーされている範囲。追加の技術的洞察なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# China has all but caught up. The US is not going to “win” the AI war. Here’s what we should do instead.\nSource: https://garymarcus.substack.com/p/china-has-all-but-caught-up-the-us\nAxios coverage of the new model\nThree weeks ago,\nI warned here that\n“The ultimate culmination of the “no moat => more"
+    },
+    {
+      "item_id": "dreaming-skip-hex-technologies-batch",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Hex Technologies data articles (batch skip)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "Hex Technologies 2件（data drift, data federation）はデータ/analytics マーケティングブログ。AI/LLM関連なし。Pattern B準拠のバッチスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Data/analytics marketing content with no AI relevance."
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Non-AI articles batch (berthub, dfarq, entropicthoughts, shkspr, idiallo, devblogs, johndcook, matduggan, refactoringenglish, matklad, lcamtuf, parallel-web-failed)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI記事12件: berthub.eu（オランダインターネット協議）、dfarq（MCI WorldCom）、entropicthoughts（統計学）、shkspr（公共交通）、idiallo（ブランディング）、devblogs（Windows開発）、johndcook（数学×2）、matduggan（ブログロール）、refactoringenglish（コンテンツ制作）、matklad（メモリ安全）、lcamtuf（合理主義コミュニティ）、parallel-web（スクレイプ失敗）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "All non-AI content or failed scrapes."
+    }
+  ]
+}

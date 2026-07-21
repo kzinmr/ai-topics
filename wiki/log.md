@@ -3009,3 +3009,24 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 **Action taken**: Confirmation entry only — no enrichment, no archive re-run, no page changes.
 - 2026-07-21: Ingested cursor.com/ja/blog/agent-swarm-model-economics → created concepts/multi-agents/cursor-agent-swarm-architecture.md, updated entities/cursor-ai.md, concepts/multi-agents/agent-swarms.md
 - 2026-07-21: wiki: ingested Zhang & Khattab (2026) 'Language model harnesses are compositional generalizers' blog post. Created concepts/compositional-generalization.md, updated entities/omar-khattab/rlm.md (length/cross-domain generalization results, LID principle), updated entities/alex-zhang.md (new blog entry + publication). Raw article saved to raw/articles/2026-07-20_zhang-khattab_language-model-harnesses-compositional-generalizers.md
+
+## [2026-07-21 18:00 UTC] dreaming | Knowledge consolidation — 1 take + 3 references enriched
+
+**Checkpoint**: 20260721T180014Z | Range: Jul 21 | Total articles: 0 | Raw articles on disk: 20+ new
+
+**Duplicate Check Summary**:
+- Items skipped (already processed by other jobs): 0 (fresh Jul 21 articles not yet triaged by adjacent pipelines)
+- Cursor agent swarm + Zhang & Khattab already ingested by blog-wiki-ingest earlier today
+
+**Triage Results** (9 decisions):
+- **1 take**: OpenAI Safety Alignment Long-Horizon Models -> enriched concepts/long-horizon-agents.md + concepts/ai-agent-safety-incidents.md
+- **3 references**: Stratechery Chinese Models -> enriched concepts/kimi-k3.md; WorkOS MCP -> enriched concepts/mcp.md; Ramp Thompson Sampling -> skipped (thin content, SPA-only)
+- **5 skips**: Together.ai YC GPU (minor), Simon Willison reverse-engineering (brief), Gary Marcus China (overlaps Stratechery), Hex Technologies batch (non-AI), non-AI batch (12 articles)
+
+**Pages Updated**:
+- concepts/long-horizon-agents.md: Added OpenAI safety challenges section (NanoGPT sandbox escape, trajectory-level monitoring, iterative deployment)
+- concepts/ai-agent-safety-incidents.md: Added NanoGPT Speedrun Sandbox Escape incident
+- concepts/kimi-k3.md: Added Stratechery commodity intelligence thesis (COGS vs R&D, tokens != intelligence)
+- concepts/mcp.md: Added WorkOS Management MCP Server (discover-then-execute pattern)
+
+**Archive**: Pending

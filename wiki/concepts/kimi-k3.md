@@ -2,7 +2,7 @@
 title: "Moonshot Kimi K3"
 type: concept
 created: 2026-07-17
-updated: 2026-07-17
+updated: 2026-07-21
 tags:
   - model
   - china
@@ -202,6 +202,36 @@ K3 slots into a new tier for Chinese models — frontier-class pricing with fron
 | [[concepts/kimi-k2-6\|Kimi K2.6]] ($0.95/$4) | K3 is successor; 2× params, 3×+ pricing |
 
 The pricing strategy suggests Moonshot believes K3's quality justifies Sonnet-level economics, marking a shift from the "cheaper Chinese alternative" positioning of prior Kimi models.
+
+## Market Analysis: Commodity Intelligence Thesis (Stratechery, July 2026)
+
+Ben Thompson's Stratechery analysis ["Who's Afraid of Chinese Models?"](https://stratechery.com/2026/whos-afraid-of-chinese-models/) uses K3 as the lens for a broader structural argument about the AI industry:
+
+### COGS vs R&D Distinction
+- Open-weight models are **not free** — they eliminate R&D costs but not COGS (cost of goods sold)
+- Running inference on K3 costs real money: $3/M input, $15/M output tokens
+- Revenue directly correlates with COGS in a way that hasn't been true for software since the pre-cloud era
+
+### Tokens ≠ Intelligence
+- Jensen Huang's "token factory" framing (tokens-per-second, tokens-per-watt) made sense in the ChatGPT era
+- In the reasoning era, **tokens are not a commodity** — different models need different token counts to reach the same answer
+- K3 reportedly uses significantly more tokens than Sol (GPT-5.6), potentially negating its price advantage
+- What IS fungible is **intelligence** — the correct answer, regardless of token count
+
+### COGS for Intelligence
+The cost of producing intelligence depends on five factors:
+1. **Model footprint**: Weights and runtime state → memory/accelerator requirements
+2. **Inference efficiency**: Architectural choices (MoE) reduce per-token computation
+3. **Memory efficiency**: KV cache optimization → more concurrent requests
+4. **Serving efficiency**: Batching, scheduling, prefix caching → better GPU utilization
+5. **Token efficiency**: Fewer tokens to correct answer → lower inference cost
+
+### Implications
+- Intelligence for many economically beneficial tasks is becoming a **commodity**
+- In a commodity market, the route to profitability is through **superior cost structure**, not higher prices
+- This analysis suggests the AI industry may follow traditional industrial economics more than software economics — marginal costs are back
+
+> **Source**: [Stratechery — Who's Afraid of Chinese Models?](https://stratechery.com/2026/whos-afraid-of-chinese-models/) (July 2026)
 
 ## Related Pages
 

@@ -1,10 +1,10 @@
 ---
 title: MCP (Model Context Protocol)
 created: 2026-04-26
-updated: 2026-06-07
+updated: 2026-07-21
 type: concept
 tags: [protocol, agentic-engineering, tool, mcp]
-sources: [raw/articles/troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f.md, raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/gemini-deep-research-agent.md, raw/articles/2026-01-26_anthropic-interactive-tools-claude.md, raw/articles/2025-11-21_mcp-apps-proposal.md, raw/articles/2026-01-26_mcp-apps-official-release.md, raw/articles/2026-01-01_mcpui-dev-landing-page.md, raw/articles/2025-10-08_postman-state-of-api-2025-report.md]
+sources: [raw/articles/troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f.md, raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/gemini-deep-research-agent.md, raw/articles/2026-01-26_anthropic-interactive-tools-claude.md, raw/articles/2025-11-21_mcp-apps-proposal.md, raw/articles/2026-01-26_mcp-apps-official-release.md, raw/articles/2026-01-01_mcpui-dev-landing-page.md, raw/articles/2025-10-08_postman-state-of-api-2025-report.md, raw/articles/workos.com--blog-management-mcp-server--d9a49c8a.md]
 ---
 
 # MCP (Model Context Protocol)
@@ -268,6 +268,35 @@ MCP creator David Soria Parra outlined the 2026 roadmap at a keynote:
 - **Streaming**: Real-time data streaming from MCP servers
 - **Skills**: Pre-configured tool bundles for common workflows
 - **Enterprise integration**: Deeper support for production AI agent pipelines
+
+## WorkOS Management MCP Server (July 2026)
+
+WorkOS launched a [management MCP server](https://workos.com/blog/management-mcp-server) that exposes the **full WorkOS management surface** as MCP tools, enabling AI agents to manage authentication, SSO, Directory Sync, users, roles, permissions, and more without dashboard interaction.
+
+### Architecture: Discover-Then-Execute Pattern
+
+Rather than exposing one tool per endpoint (which would consume the LLM's context window), WorkOS uses a **discover-then-execute design** with four tools:
+
+1. **`whoami`** — Agent identifies itself and its permissions
+2. **`list_operations`** — Agent discovers available operations (hundreds across the full product surface)
+3. **`query`** — Read-only data retrieval
+4. **`mutate`** — State-changing operations
+
+This pattern solves the **context budget problem**: exposing hundreds of individual tool definitions would exhaust the context window before work begins. Instead, the agent dynamically discovers capabilities at runtime.
+
+### Security Design
+
+- **OAuth-based**: Remote, hosted server; agents authenticate as the user via OAuth
+- **Permission inheritance**: Agent inherits exactly the roles and permissions of the user's dashboard login
+- **Deliberate exclusions**: Credential-minting, user impersonation, billing flows, and account-level admin are excluded
+- **Secret stripping**: API keys, client secrets, webhook signing secrets are stripped from responses
+- **Irreversible operation guard**: Nine destructive deletes require two-call confirmation
+
+### Significance
+
+This represents a pattern where **SaaS platforms expose their full admin surface as MCP tools**, enabling agents to perform configuration, debugging, and management tasks that previously required dashboard interaction. The discover-then-execute pattern is likely to become a standard approach for large tool surfaces in MCP.
+
+> **Source**: [WorkOS Blog — Management MCP Server](https://workos.com/blog/management-mcp-server) (July 2026)
 
 ## Open Questions & Debates
 
