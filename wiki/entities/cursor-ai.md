@@ -378,6 +378,40 @@ Cursor launched an iOS app bringing always-on cloud agents to mobile devices. Ke
 - **Remote control**: Trigger agent runs, review PR diffs, and monitor agent progress from phone
 - **PR diff notifications**: Push notifications alert when cloud agents complete PRs, with diff summaries delivered to the device
 
+## Agent Swarm Model Economics (July 2026)
+
+Cursor published detailed findings on their evolved **agent swarm architecture**, demonstrating significant improvements over earlier swarm implementations. The new system was benchmarked by rebuilding SQLite in Rust from documentation alone (835-page manual, no source code, no test suite, no internet access).
+
+### Planner-Worker Architecture
+- **Planner agents** use frontier models (GPT-5.5, Opus 4.8, Fable 5) for task decomposition and design decisions
+- **Worker agents** use faster/cheaper models (Composer 2.5) for execution
+- Context efficiency: planners never see low-level details, workers never see the overall plan — analogous to Coase's theory of the firm
+
+### Key Results (New vs Old Swarm, Grok 4.5)
+| Metric | Old Swarm | New Swarm |
+|--------|-----------|-----------|
+| Merge conflicts (4h) | 70,000+ | <1,000 |
+| Rust crates | 54 (3 duplicate SQL packages) | 9 (stable) |
+| Code to complete (Fable 5) | 64,305 LOC | 9,908 LOC |
+| Commits/sec (peak) | ~1,000/hour | ~1,000/second |
+
+### Model Economics
+- Workers consume 69-90%+ of tokens but cost is dominated by planner pricing
+- Opus 4.8 planner: ~2/3 of cost despite tiny token share; Composer 2.5 worker: ~1/3 despite bulk
+- Hybrid configs (frontier planner + cheap worker) achieve comparable quality at dramatically lower cost
+
+### Custom VCS
+Built a bespoke version control system to handle 1,000 commits/sec throughput — standard Git locking insufficient.
+
+### Field Guide (Stigmergy)
+Agents create and maintain a shared context folder (`Field Guide`) — index.md auto-injected at start. Agents decide what to record; only constraint is line limit. Inspired by biological stigmergy (ant pheromone trails).
+
+### Output
+- [github.com/cursor/minisqlite](https://github.com/cursor/minisqlite) — Rust SQLite from Opus 4.8 single run
+- Blog: [Agent Swarm Model Economics](https://cursor.com/ja/blog/agent-swarm-model-economics) (July 2026)
+
+See: [[concepts/multi-agents/cursor-agent-swarm-architecture]]
+
 ## Sources
 
 - [AINews: Silicon Valley gets Serious about Services](https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious) — May 6, 2026

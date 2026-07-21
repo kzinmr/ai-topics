@@ -1,0 +1,93 @@
+---
+title: "Cursor Agent Swarm Architecture"
+type: concept
+created: 2026-07-21
+updated: 2026-07-21
+tags: [multi-agent, coding-agents, cursor, agent-swarms, cost-optimization]
+aliases: ["cursor-swarm", "agent-swarm-model-economics"]
+sources:
+  - raw/articles/cursor-agent-swarm-model-economics-2026-07-20.md
+  - https://cursor.com/ja/blog/agent-swarm-model-economics
+status: complete
+---
+
+# Cursor Agent Swarm Architecture
+
+Cursor's **agent swarm** is a multi-agent architecture for executing large-scale tasks efficiently. By separating roles between **planners** (high-cost, high-intelligence models) and **workers** (low-cost, fast models), it achieves both cost efficiency and quality.
+
+## Core Design: Trees and Leaves
+
+Tasks naturally decompose into tree structures. The swarm operates with two roles aligned to this decomposition:
+
+| Role | Model Characteristics | Responsibility |
+|------|----------------------|----------------|
+| **Planner** | Frontier models (GPT-5.5, Opus 4.8, Fable 5) | Decompose goals into subtasks, assign them |
+| **Worker** | Fast, low-cost models (Composer 2.5) | Execute subtasks |
+
+The key insight is **context efficiency**. A single agent must hold both the big picture and details in context, but in a swarm, planners never see low-level details and workers never need to think about the overall plan. This parallels Ronald Coase's theory of the firm — coordination costs grow faster than the work itself, so organizations settle into bounded hierarchical units rather than everyone talking to everyone.
+
+## SQLite Rebuilding Experiment
+
+Benchmarked by implementing the entire 835-page SQLite manual in Rust from scratch — no source code, no test suite, no internet access. Progress measured against [sqllogictest](https://www.sqlite.org/sqllogictest/doc/trunk/about.wiki).
+
+### Model Configurations and Results
+
+| Config | 4h Score | Cost |
+|--------|----------|------|
+| GPT-5.5 × GPT-5.5 | 73-85% | High |
+| Grok 4.5 × Grok 4.5 | 80% | Medium |
+| Opus 4.8 × Composer 2.5 | 100% | $10,565 |
+| Fable 5 × Composer 2.5 | 100% | Medium-High |
+
+### New vs Old Swarm (Grok 4.5)
+
+| Metric | Old Swarm | New Swarm |
+|--------|-----------|-----------|
+| Merge conflicts (4h) | 70,000+ | <1,000 |
+| Rust crates | 54 (3 duplicate SQL packages) | 9 (stable) |
+| Code to complete (Fable 5) | 64,305 LOC | 9,908 LOC |
+| Commits/sec (peak) | ~1,000/hour | ~1,000/second |
+
+## Model Economics
+
+Workers consume 69-90%+ of tokens, but cost structure differs due to planner pricing:
+- **Opus 4.8 + Composer 2.5**: Planner (Opus) generates tiny token fraction but accounts for ~2/3 of cost; worker (Composer) handles bulk tokens at ~1/3 cost
+- **Hybrid advantage**: Frontier planner + cheap worker achieves comparable quality at dramatically lower cost
+- GPT-5.5 single-model run: worker alone costs $411
+
+## Failure Patterns at 1,000 Commits/Second
+
+| Problem | Description | Solution |
+|---------|-------------|----------|
+| **Split-brain** | Two planners implement same concept differently | Planners don't delegate design decisions; no duplicate subtrees |
+| **Planner conflicts** | Two planners modify same file back-and-forth | Shared design documents + compile-time verified references |
+| **Merge conflicts** | Simultaneous changes to same file | Neutral third-party agent mediates merges |
+| **Mega-files** | Hotspot files accumulate code endlessly | Workers flag bloated files → external agent decomposes into modules |
+| **Rigidity** | Agents learn not to touch core code | Intentional breaking changes allowed; compiler propagates impact |
+
+## Custom VCS
+
+Built a bespoke version control system to handle 1,000 commits/sec throughput — standard Git locking insufficient. All changes flow through VCS, making it the first surface where conflicts appear and where coordination mechanisms are implemented.
+
+## Review and Stigmergy
+
+- **Multi-perspective review**: Reviewers with different models, training, and personalities overlaid — correlated-low perspectives yield high error detection. Review compute has very high ROI since it's cheaper than the work it audits.
+- **Field Guide**: Agents create and maintain a shared context folder — `index.md` auto-injected at startup for all agents. Agents decide what to record; only constraint is line count. Models' weights are fixed, so recording unexpected events is the highest-value use.
+- **Stigmergy**: Inspired by ant colonies — agents shape the environment, and that environment shapes the next agent's behavior. No direct communication required.
+
+## Spec as Prompt
+
+In the swarm, the unit of work becomes the **specification**. Like a compiler transforms source code to machine code through intermediate stages, the planner parses intent into a task tree and progressively reduces it to executable work. The difference: each stage is probabilistic rather than deterministic.
+
+## Output
+
+- [github.com/cursor/minisqlite](https://github.com/cursor/minisqlite) — Rust SQLite generated by Opus 4.8 single run
+- Blog: [Agent Swarm Model Economics](https://cursor.com/ja/blog/agent-swarm-model-economics) (July 2026)
+
+## Related Concepts
+
+- [[concepts/multi-agents/agent-swarms]] — Agent Swarms (Emergent Behavior)
+- [[concepts/multi-agents/agent-team-swarm]] — Hierarchical multi-agent coordination
+- [[concepts/self-driving-codebases]] — Cursor's self-driving codebases vision
+- [[concepts/coding-agents/async-coding-agents]] — Async coding agents
+- [[entities/cursor-ai]] — Cursor AI

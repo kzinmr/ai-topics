@@ -1,0 +1,47 @@
+{
+  "run_id": "20260720T071108Z",
+  "triaged_at": "2026-07-20T07:11:08Z",
+  "total_newsletters": 3,
+  "summary": "3 newsletters processed. 2 high-relevance for AI/LLM wiki (Google AI/Anthropic news, VAST Data GPU infrastructure), 1 medium (Netflix CPTO AI workforce).",
+  "newsletters": [
+    {
+      "message_id": "<20260719131937.3.022d1c03e437ddbf@mg2.substack.com>",
+      "subject": "Google Clones You, Meta Powers Anthropic, and Thinking Machines Opens the Vault",
+      "source": "The Signal (Substack, @alexbanks)",
+      "date": "2026-07-19",
+      "classification": "high",
+      "reason": "Covers three major AI industry developments: Google's AI cloning/personalization capabilities, Meta funding Anthropic, and Thinking Machines releasing significant resources. All three directly relevant to the wiki's coverage of major AI players and industry dynamics.",
+      "primary_url": "https://open.substack.com/pub/thesignal/p/google-clones-you-meta-powers-anthropic",
+      "raw_path": "wiki/raw/newsletters/2026-07-19-google-clones-you-meta-powers-anthropic-and-thinking-machines-opens-the-vault.md",
+      "potential_entities": ["google", "anthropic", "meta"],
+      "potential_concepts": ["ai-cloning", "ai-industry-funding"],
+      "action": "fetch_article_and_create_pages"
+    },
+    {
+      "message_id": "<20260719.154208.ecd6dbff@mta8>",
+      "subject": "\"You're wasting a lot of money\": Exclusive Interview with VAST Data's Sven Breuner on why the data layer decides whether your GPUs earn their keep",
+      "source": "beehiiv newsletter (unknown)",
+      "date": "2026-07-19",
+      "classification": "high",
+      "reason": "Directly relevant to AI infrastructure wiki. Covers data layer optimization for GPU workloads in AI training/inference — a core topic for the wiki's infrastructure coverage. VAST Data is a major AI infrastructure company.",
+      "primary_url": "https://link.mail.beehiiv.com/v1/c/pQIBV1CXtLqu3aBwgGuuSrsFL2oTK293lHCEVUxBiO8PnKUFUfYg%2BUEepC4p%0AzKMBW3e02VlE8OYS2lXmiobSvKsRrWtc9e2pv4RrwIOZ1DOp%2FoxLrY%2FlCE7K%0Aa3De%2FKvtIr%2BbgJlYBxMIxa1VmqeRzXJR%2FuSRrAbjEDrKoZJnhqPJcFvW25xb%0ANh%2Bvy%2FOdBAH8xX4X2b2A4XOwDKTfYfb8bw%3D%3D%0A/8279fcb3fb249f6c",
+      "raw_path": "wiki/raw/newsletters/2026-07-19-you-re-wasting-a-lot-of-money-exclusive-interview-with-vast-data-s-sven-breuner-.md",
+      "potential_entities": ["vast-data", "sven-breuner"],
+      "potential_concepts": ["ai-infrastructure", "gpu-optimization", "data-layer"],
+      "action": "fetch_article_and_create_pages"
+    },
+    {
+      "message_id": "<20260719123121.3.5663147bc86321b9@mg2.substack.com>",
+      "subject": "Netflix CPTO on AI and the future of product and tech roles | Elizabeth Stone",
+      "source": "Lenny's Newsletter (Substack, @lenny)",
+      "date": "2026-07-19",
+      "classification": "medium",
+      "reason": "Covers AI's organizational impact on tech/product roles at Netflix. Relevant as industry context but not core LLM/agent technology. Could inform 'ai-industry-impact' or 'ai-workforce' concept pages.",
+      "primary_url": "https://open.substack.com/pub/lenny/p/netflix-cpto-on-ai-and-the-future",
+      "raw_path": "wiki/raw/newsletters/2026-07-19-netflix-cpto-on-ai-and-the-future-of-product-and-tech-roles-elizabeth-stone.md",
+      "potential_entities": ["elizabeth-stone"],
+      "potential_concepts": ["ai-workforce-impact"],
+      "action": "fetch_if_time_permits"
+    }
+  ]
+}

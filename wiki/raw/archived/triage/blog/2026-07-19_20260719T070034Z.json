@@ -1,0 +1,140 @@
+{
+  "archived_at": "2026-07-19T07:32:53.140379+00:00",
+  "triage_run_id": "20260719T070034Z",
+  "source": "blog",
+  "summary_ja": "2026年7月19日のブログ記事12件をトリアージ。全12件がskip。内訳: Simon Willisonの3記事はentities/simon-willison.mdに既にsources登録済み、minimaxirのエージェントクオータ分析はentities/max-woolf.md + concepts/agent-quota-resets.mdとして別パイプラインで処理済み、Anyscaleの2記事はconcepts/ray.mdとして本日作成済み、残り5件は非AIコンテンツ。unsaved_articles8件も全てskip（YouTube動画4件、FTペイウォール、LWNカーネル更新2件、LWN書籍レビュー）。新規take/referenceなし。",
+  "decisions": [
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "SQLite Query Explainer",
+      "url": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-18-sqlite-query-explainer--767c42a6.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既にentities/simon-willison.mdのsourcesに登録済み。FableでビルドしたSQLiteクエリ可視化ツールの紹介記事（〜800B）。wiki本体への追加価値なし。",
+      "body_excerpt": "# SQLite Query Explainer\nSource: https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything\nJulia Evan's, in\nLearning a few things about running SQLite\n:\nMaybe one day I’ll learn to read a query plan.\nBig same.... which inspired me to\nhave Fable build\nthis interactive explain tool"
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "minimaxir.com",
+      "title": "What's the deal with all the random weekly quota resets for agents lately?",
+      "url": "https://minimaxir.com/2026/07/agent-quota-reset/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/minimaxir.com--2026-07-agent-quota-reset--81744d63.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ 既にentities/max-woolf.mdとconcepts/agent-quota-resets.mdとして処理済み。Anthropic/OpenAIの週次クオータリセット急増を分析した優れた記事だが、同日中の別パイプラインでwiki反映済み。",
+      "body_excerpt": "# What's the deal with all the random weekly quota resets for agents lately?\nSource: https://minimaxir.com/2026/07/agent-quota-reset/\nThe image that makes me say “yay” less often than “god damn it”.\nSubscription-based coding agents such as\nClaude Code\nand\nCodex\nfamously have 5-hour and weekly quotas"
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "AI Mania Is Eviscerating Global Decision-Making",
+      "url": "https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-19-ai-mania--44d772e4.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既にentities/simon-willison.mdのsourcesに登録済み (line 619)。Nik SureshのAI熱狂エッセイへのリンクブログ。spicyな逸話中心でwikiへの追加価値限定的。",
+      "body_excerpt": "# AI Mania Is Eviscerating Global Decision-Making\nSource: https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything\n19th July 2026 - Link Blog\nAI Mania Is Eviscerating Global Decision-Making\n(\nvia\n) Here's an entertaining perspective from Nik Suresh on the AI mania that is overwhelming the lar"
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Claude Code uses Bun written in Rust now",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-jul-19-claude-code-in-bun-in-rust--2c8078d9.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既にentities/simon-willison.mdのsourcesに登録済み (line 627)。Claude CodeがRustで書かれたBunを使用していることを検証した記事。面白いがwikiのClaude Codeページ群に追加するほどではない。",
+      "body_excerpt": "# Claude Code uses Bun written in Rust now\nSource: https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything\n19th July 2026\nIn\nRewriting Bun in Rust\nJarred Sumner made the following claim:\nClaude Code v2.1.181 (released June 17th) and later use the Rust port of Bun. Startup g"
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Mornings in Cupertino Have the Aroma of Napalm Once Again",
+      "url": "https://daringfireball.net/2026/07/mornings_in_cupertino_have_the_aroma_of_napalm_once_again",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/daringfireball.net--2026-07-mornings-in-cupertino-have-the-aroma-of-napalm-once---40417991.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。AppleのOpenAI提訴についてのGruberコラム。技術的AI分析ではなくAppleのビジネス/法務分析。",
+      "body_excerpt": "# Mornings in Cupertino Have the Aroma of Napalm Once Again\nSource: https://daringfireball.net/2026/07/mornings_in_cupertino_have_the_aroma_of_napalm_once_again\nMornings in Cupertino Have the Aroma of Napalm Once Again\nSaturday, 18 July 2026\n‘It Seems You Have a Different Policy’\nBen Thompson, in a "
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "nesbitt.io",
+      "title": "This Week in Package Management: 18 July 2026",
+      "url": "https://nesbitt.io/2026/07/18/this-week-in-package-management.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/nesbitt.io--2026-07-18-this-week-in-package-management-html--44528c7f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。パッケージマネージャのリリースラウンドアップ（pnpm, uv, Deno, Nix等）。AIエージェントのサプライチェーン攻撃に関するarXiv論文への言及が1行あるが深掘りなし。",
+      "body_excerpt": "# This Week in Package Management: 18 July 2026\nSource: https://nesbitt.io/2026/07/18/this-week-in-package-management.html\nWeek nine of the roundup, built from the\npackage manager OPML feed collection\nand whatever I’ve posted or boosted on\nMastodon\n.\nReleases\npnpm 11.13\nadds\npnpm change\n, a native c"
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "blog.jim-nielsen.com",
+      "title": "Make It Work vs. Make It Good",
+      "url": "https://blog.jim-nielsen.com/2026/make-it-work-make-it-good/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/blog.jim-nielsen.com--2026-make-it-work-make-it-good--b31006a7.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。Web開発における「動くものを作る」vs「良いものを作る」の哲学的考察。AI/LLM関連なし。",
+      "body_excerpt": "# Make It Work vs. Make It Good\nSource: https://blog.jim-nielsen.com/2026/make-it-work-make-it-good/\nThere are two wolves inside of me, lol.\nSome days I want to be a “designer”. Other days I want to be a “developer”.\nOn the days I find myself wanting to feed the developer, it’s often because making "
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "construction-physics.com",
+      "title": "Reading List 07/18/26",
+      "url": "https://www.construction-physics.com/p/reading-list-071826",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/construction-physics.com--p-reading-list-071826--02a162b4.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。建設/インフラ/産業技術の週刊リーディングリスト。California Forever、EVバッテリーリサイクル、砲弾工場等。AI関連なし。",
+      "body_excerpt": "# Reading List 07/18/26\nSource: https://www.construction-physics.com/p/reading-list-071826\nNiagara\nby Frederic Edwin Church, via\nWikiArt\n.\nWelcome to the reading list, a weekly roundup of news and links related to buildings, infrastructure and industrial technology. This week we look at a setback fo"
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "seangoedecke.com",
+      "title": "Impro is a handbook for running a cult",
+      "url": "https://seangoedecke.com/impro/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/seangoedecke.com--impro--7843ce1f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。Keith Johnstoneの「Impro」書籍レビュー。即興劇・カルト・スタートアップ文化について。GPT-4oへの1行言及があるのみでAI関連要素なし。",
+      "body_excerpt": "# Impro is a handbook for running a cult\nSource: https://seangoedecke.com/impro/\nHere’s the big idea in Keith Johnstone’s book\nImpro\n:\nChildren are naturally creative, but are violently formed into repressed adults by Western culture and education\nThe process of becoming more creative and expressive"
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "shkspr.mobi",
+      "title": "Book Review: A City on Mars - by Dr. Kelly Weinersmith and Zach Weinersmith",
+      "url": "https://shkspr.mobi/blog/2026/07/book-review-a-city-on-mars-by-dr-kelly-weinersmith-and-zach-weinersmith/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/shkspr.mobi--blog-2026-07-book-review-a-city-on-mars-by-dr-kelly-weinersm--3d68690e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。宇宙コロニー化に関する書籍レビュー。AI要素なし。",
+      "body_excerpt": "# Book Review: A City on Mars - by Dr. Kelly Weinersmith and Zach Weinersmith\nSource: https://shkspr.mobi/blog/2026/07/book-review-a-city-on-mars-by-dr-kelly-weinersmith-and-zach-weinersmith/\nI'm pretty sure this book is a psyop designed to demoralise a generation of starry-eyed dreamers. It is obvi"
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "Anyscale Blog",
+      "title": "Building Highly Available and Scalable Online Applications on Ray at Ant Group",
+      "url": "https://anyscale.com/blog/building-highly-available-and-scalable-online-applications-on-ray-at-ant",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/anyscale.com--blog-building-highly-available-and-scalable-online-applicati--7faef8c2.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既にconcepts/ray.mdのsourcesに登録済み。Ant GroupのRay Servingフレームワークの詳細解説。分散推論・モデルサービング事例だが、2021年頃の記事でwikiのRayページにsourcesとして捕捉済み。",
+      "body_excerpt": "# Building Highly Available and Scalable Online Applications on Ray at Ant Group\nSource: https://anyscale.com/blog/building-highly-available-and-scalable-online-applications-on-ray-at-ant\nAnt Group has developed Ant Ray Serving which is an online service framework based on\nRay\n, which provides users"
+    },
+    {
+      "item_id": "blog-12",
+      "source": "blog",
+      "source_name": "Anyscale Blog",
+      "title": "Online Resource Allocation with Ray at Ant Group",
+      "url": "https://anyscale.com/blog/online-resource-allocation-with-ray-at-ant-group",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/anyscale.com--blog-online-resource-allocation-with-ray-at-ant-group--487de159.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既にconcepts/ray.mdのsourcesに登録済み。Ant GroupのRayベースオンラインリソース割り当てシステムの詳細解説。blog-11の姉妹記事で、こちらもRayページにsourcesとして捕捉済み。",
+      "body_excerpt": "# Online Resource Allocation with Ray at Ant Group\nSource: https://anyscale.com/blog/online-resource-allocation-with-ray-at-ant-group\nDouble 11 has become the largest online shopping event in the world. To support this level of online activity, Ant Group has implemented a flexible, high-performance,"
+    }
+  ]
+}

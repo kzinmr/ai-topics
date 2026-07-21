@@ -188,6 +188,17 @@ Measurement methods proposed by the MAEBE framework ([arXiv:2506.03053](https://
 4. What safety guarantees are possible for decentralized, emergent systems?
 5. When do swarm architectures outperform hierarchical orchestration?
 
+## Cursor Agent Swarm (2026)
+
+Cursor published an evolved agent swarm with planner/worker role separation, dramatically outperforming earlier implementations on a SQLite rebuilding experiment in Rust.
+
+- Old swarm: 70,000+ merge conflicts, 54 crates (3 duplicate SQL packages), 64,305 LOC
+- New swarm: <1,000 merge conflicts, 9 crates, 9,908 LOC
+- **Stigmergy in practice**: Field Guide (agent-managed shared context) enables indirect coordination
+- **Context efficiency**: Role separation (planner vs worker) matters more than parallelism for scaling
+
+Details: [[concepts/multi-agents/cursor-agent-swarm-architecture]]
+
 ## Related Concepts
 
 - [[concepts/multi-agents/multi-agent-consensus-patterns]] — Decentralized consensus formation protocols

@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-07-20T07:52:23.372033+00:00",
+  "triage_run_id": "20260720T070038Z",
+  "source": "blog",
+  "summary_ja": "4件のブログ候補 + 16件のunsaved_articles（YouTube + LWN）を評価。Take 1件: Simon Willisonが公開したSam Altmanの2022年内部メール（Musk対Altman裁判で証拠開示）— OpenAIのオープンソース先制戦略を示す歴史的文書で、entities/sam-altman.mdの強化が必要。残り3件のブログ記事（正規表現最適化、App Storeギャンブルアプリ調査、純粋数学）は非AIでスキップ。AI Engineer会議トーク13本は抽出不可のためスキップ。",
+  "decisions": [
+    {
+      "item_id": "unsaved-ai-engineer-group",
+      "source": "blog",
+      "source_name": "AI Engineer (YouTube)",
+      "title": "AI Engineer conference talks (13 videos, batch)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ AI EngineerカンファレンスのYouTubeトーク13本 — unsaved_articlesで抽出不可。トピックは興味深い（エージェント自己矛盾、音声エージェント、エンタープライズAgent構造問題、Agent harness物理、Rendering Layer等）が、タイトルと説明のみではWikiインジェスト不十分。transcripts/経由の処理が必要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可。YouTube動画13本: Why Your Agent Disagrees With Itself, Voice Agent Frontier Model, Don't Let the LLM Drive, Enterprise Agents Structure Problem, Agents Need Receipts, Agent Output Is Not UX, Voice Agents That Handle Interrupts, Skills are the New SDKs, etc.）"
+    }
+  ]
+}

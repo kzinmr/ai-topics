@@ -3007,3 +3007,4 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - archive_index.json at 155KB (1,859 total archive URLs updated from upstream)
 
 **Action taken**: Confirmation entry only — no enrichment, no archive re-run, no page changes.
+- 2026-07-21: Ingested cursor.com/ja/blog/agent-swarm-model-economics → created concepts/multi-agents/cursor-agent-swarm-architecture.md, updated entities/cursor-ai.md, concepts/multi-agents/agent-swarms.md

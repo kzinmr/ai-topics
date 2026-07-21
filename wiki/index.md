@@ -2145,6 +2145,7 @@
 - [[concepts/multi-agents/agent-orchestration]] — Agent Orchestration
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
 - [[concepts/multi-agents/agent-swarms]] — Agent Swarms (Emergent Behavior)
+- [[concepts/multi-agents/cursor-agent-swarm-architecture]] — Cursor Agent Swarm Architecture (Planner-Worker, Model Economics, Field Guide)
 - [[concepts/multi-agents/agent-team-swarm]] — Agent Team / Swarm
 - [[concepts/multi-agents/agentic-conflict-resolution]] — Agentic Conflict Resolution
 - [[concepts/multi-agents/agentic-data-science]] — Agentic Data Science

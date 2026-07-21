@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-07-19T07:21:34.358078+00:00",
+  "triage_run_id": "20260719T071029Z",
+  "source": "newsletter",
+  "summary_ja": "「The Stage and the Factory Floor」（Manu Sharma、beehiiv uid=383）をトリアージ。全20件のbeehiivトラッキングURLがHTTPS 403（期限切れトークン）により解決不能。Inbox事前トリアージでも全リンクをCloudflare/Bot Management不可と判定。件名と公開情報から判断すると、AI能力vs信頼ギャップに関する考察がテーマと推定されるが、具体的な記事内容にアクセス不可。既存Wikiには[[concepts/dr-manhattan-syndrome-ai]]がAI公的信頼問題を詳細にカバー済み。新規知見の確認ができないため、全20件をskipと判定。",
+  "decisions": [
+    {
+      "item_id": "the-stage-and-the-factory-floor-1-to-20",
+      "source": "newsletter",
+      "source_name": "The Stage and the Factory Floor / Manu Sharma",
+      "title": "The Stage and the Factory Floor (20 beehiiv tracking URLs — all expired)",
+      "url": "https://link.mail.beehiiv.com/v1/c/(expired)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-18-the-stage-and-the-factory-floor.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ beehiivトラッキングURL全20件がHTTP 403（期限切れトークン）。ニュースレター発行日から12〜24時間経過によりリンクすべてが期限切れ。Inbox事前トリアージでも全リンク解決不能と判定。件名「The Stage and the Factory Floor」+ Manu Sharmaによる発行元情報から、AI能力vs信頼ギャップに関する一般的考察と推測されるが、本文内容にアクセス不可。既存Wikiでは[[concepts/dr-manhattan-syndrome-ai]]がAI信頼問題を包括的にカバー済み。新規知見の確認不可能なためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-18\n**Subject:** The Stage and the Factory Floor\n**Collected:** 2026-07-19T07:10:28.243706+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/PUUOygH%2BYHzvU45yeDEYzMRPPWVhUBVQ2qC5EgHtb1jOWYe5YgDzJPL73EEc%0AxV8fvW%2B2j0Wl44wjzWUHiXV0Hq"
+    }
+  ]
+}

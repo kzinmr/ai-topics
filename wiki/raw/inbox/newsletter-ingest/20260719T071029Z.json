@@ -1,0 +1,30 @@
+{
+  "triage_run_id": "20260719T071029Z",
+  "triaged_at": "2026-07-19T07:10:29Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 1,
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "low": 1
+  },
+  "items": [
+    {
+      "message_id": "<20260718.190347.cee88371@mta32>",
+      "subject": "The Stage and the Factory Floor",
+      "date": "2026-07-18",
+      "source_label": "uid=383",
+      "source_name": "The Stage and the Factory Floor / Manu Sharma",
+      "source_url": "https://www.beehiiv.com/p/the-stage-and-the-factory-floor",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-18-the-stage-and-the-factory-floor.md",
+      "best_article_url": null,
+      "saved_article_path": null,
+      "importance": "low",
+      "reason": "All20 links are beehiiv tracking redirects behind Cloudflare challenge — cannot resolve to actual article URLs. Newsletter by Manu Sharma (7K+ subscribers, 139 issues) focuses on AI capability vs trust gap — covers AI agents, LLMs, AI-assisted tools. Newsletter theme is tangentially relevant to wiki scope (AI agents, trust) but not a deep technical source. No article content could be retrieved for triage. Recommend: subscribe and monitor for future high-value issues; consider entity page for Manu Sharma if content quality warrants it.",
+      "wiki_targets": [],
+      "article_count": 20,
+      "action": "Skip — all links unresolvable. Monitor newsletter for future issues with better content access.",
+      "resolution_note": "beehiiv tracking links are behind Cloudflare Bot Management challenge (CAPTCHA). All 20 URLs returned Cloudflare challenge pages instead of redirects. Unable to resolve article URLs or retrieve content without browser-based interaction."
+    }
+  ]
+}
