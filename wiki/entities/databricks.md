@@ -15,6 +15,7 @@ sources:
   - "https://www.databricks.com/blog/open-sourcing-unity-catalog"
   - "https://www.databricks.com/blog/introducing-agent-bricks"
   - "https://www.databricks.com/blog/memex-programmable-scratchpad-llm-agents"
+  - "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase"
   - "https://www.databricks.com/blog/2018/06/05/introducing-mlflow-an-open-source-machine-learning-platform.html"
 ---
 
@@ -158,6 +159,14 @@ Databricks AI Research published **MemEx** — a programmable scratchpad that gi
 MemEx extends the [[concepts/coding-agents/codeact|CodeAct]] paradigm with persistent scope, typed `submit()`, and `spawn_agent()` for parallel sub-agents. Built on **aroll**, Databricks' agentic rollouts framework powering Genie and Agent Bricks.
 
 Full concept page: [[concepts/memex-scratchpad]]
+
+### Coding Agent Benchmark (July 2026)
+
+Databricks published an internal benchmark evaluating coding agents (Claude Code, Codex, Devin, Pi, etc.) on their own multi-million line production codebase. The benchmark was constructed from real merged PRs spanning 10+ languages and revealed three capability tiers, with open-weight models (GLM 5.2) competitive with frontier models at lower cost.
+
+Key finding: token price is a poor proxy for task cost — harness architecture and model routing matter more. Databricks is using these insights to drive task-aware model selection via Omnigent and Unity AI Gateway.
+
+Full concept page: [[concepts/coding-agents/databricks-coding-agent-benchmark]]
 
 ### Known Challenges
 

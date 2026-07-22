@@ -1031,7 +1031,7 @@ _Log of all wiki changes. Newest entries at top._
 - [[entities/rowboat]] — Open-source (Apache 2.0), local-first Claude Desktop alternative with knowledge graph memory, MCP integration, BYO models. Show HN Jul 7 (216 pts).
 
 ### Raw articles saved:
-- wiki/raw/articles/2026-07-10_databricks-coding-agent-benchmark.md
+- wiki/raw/articles/2026-07-08_databricks-coding-agent-benchmark.md
 - wiki/raw/articles/2026-07-10_mistral-robostral-navigate.md
 - wiki/raw/articles/2026-07-10_fable-safety-classifiers-critique.md
 - wiki/raw/articles/2026-07-10_rowboat-claude-desktop-alternative.md
@@ -3041,3 +3041,13 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - concepts/mcp.md: Added WorkOS Management MCP Server (discover-then-execute pattern)
 
 **Archive**: Pending
+
+---
+## [2026-07-22] Enrich: Databricks coding agent benchmark
+
+**Action**: Date correction + enrichment
+
+- wiki/raw/articles/2026-07-10_databricks-coding-agent-benchmark.md → wiki/raw/articles/2026-07-08_databricks-coding-agent-benchmark.md (corrected pub date)
+- [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Enriched with task complexity distribution (25% low, 60% medium, 15% high), Haiku/GPT-5.4-Mini recommendation, DIY benchmarking takeaway
+- [[entities/databricks]] — Added Coding Agent Benchmark subsection to Recent AI Research, added source URL
+

@@ -1,10 +1,12 @@
 ---
 title: "Databricks Coding Agent Benchmark"
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-07-22
 type: concept
 tags: [coding-agents, agent-evaluation, benchmark, databricks, enterprise-ai, swere-bench, evaluation, cost-optimization, model-routing, open-weight, claude-code, codex, devin, pi, omnigent]
-sources: [raw/articles/2026-07-10_databricks-coding-agent-benchmark.md]
+sources:
+  - raw/articles/2026-07-08_databricks-coding-agent-benchmark.md
+  - "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase"
 ---
 
 ## Overview
@@ -22,7 +24,7 @@ Models and harnesses clustered into three distinct capability tiers:
 - **Mid tier**: Effective for moderate-complexity tasks, significantly cheaper.
 - **Lower tier**: Sufficient for common operational tasks (flag flips, config updates) at very low cost.
 
-The practical implication: engineers should **route tasks by complexity**, using cheaper models for the ~25% of low-complexity work rather than defaulting to the most expensive model.
+The practical implication: engineers should **route tasks by complexity**, using cheaper models for the ~25% low-complexity work and mid-tier models for ~60% medium-complexity tasks, rather than defaulting to the most expensive model across the board. Databricks specifically identified Haiku and GPT 5.4 Mini class of models as suitable for these routine operational tasks.
 
 ### 2. Open Models Are Competitive for Daily Coding
 
@@ -71,6 +73,10 @@ The results challenge three common industry assumptions:
 ### For the Broader Ecosystem
 
 Databricks' investment in Omnigent as a model-and-harness-swapping layer reflects a strategic bet on **avoiding vendor lock-in** not just across model providers, but across harness architectures. The follow-up work on intelligent routing via Unity AI Gateway points toward automated model selection based on task characteristics.
+
+### DIY Benchmarking Takeaway
+
+Databricks emphasizes that **any team with a backlog of merged PRs already possesses a private, high-quality coding agent benchmark** — one no model has trained on, graded by the team's own test suites. The tasks are self-contained and the test infrastructure already exists. This "bring your own benchmark" approach is presented as an accessible starting point for any engineering organization.
 
 ## Related Pages
 

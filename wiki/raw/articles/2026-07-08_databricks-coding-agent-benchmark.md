@@ -2,7 +2,7 @@
 title: "Benchmarking coding agents on Databricks' multi-million line codebase"
 source: "Databricks Blog"
 url: "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase"
-date: 2026-07-10
+date: 2026-07-08
 retrieved: "2026-07-10T11:08:35.749308Z"
 topic: "Coding agent evaluation, SWE-bench variations"
 status: raw
