@@ -16,6 +16,8 @@ aliases:
 sources:
   - raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md
   - https://x.com/i/article/2059652660022910976
+  - RAW:2026-07-21_mem0ai_state-of-agent-wikis.md
+  - https://x.com/mem0ai/status/2079585032587694582
   - https://mem0.ai
   - https://docs.mem0.ai
 related:
@@ -23,6 +25,7 @@ related:
   - "[[entities/openclaw]]"
   - "[[concepts/ai-agent-memory-middleware]]"
   - "[[concepts/agent-memory]]"
+  - "[[concepts/agent-wikis]]"
 ---
 
 # Mem0
@@ -71,6 +74,7 @@ Mem0 publishes an "In Context" blog series covering AI Agent memory and context 
 
 ### Published Analyses
 - **What OpenClaw and Hermes Agent Reveal About Agent Memory** (May 2026): Deep-dive comparing frozen vs. live system prompts, memory tool APIs, compaction/dreaming mechanisms, and cross-session recall in both harnesses
+- **The State of Agent Wikis** (July 2026): Comprehensive survey of the agent wiki pattern — DeepWiki, AutoWiki, OpenWiki, GBrain; compile-at-ingest architecture; wiki vs memory distinction
 
 ## Key Technical Insights
 

@@ -1,3 +1,14 @@
+## [2026-07-22] Manual ingest — Mem0 "The State of Agent Wikis" X Article
+
+**Action**: Manual wiki ingest from X (mem0ai)
+
+**Changes:**
+- **raw/articles/2026-07-21_mem0ai_state-of-agent-wikis.md** — New raw article: X Article "The State of Agent Wikis" by Mem0's In Context series; comprehensive survey of agent wiki/LLM Wiki ecosystem; Karpathy's origin, DeepWiki, AutoWiki, OpenWiki, GBrain implementations; wiki vs memory distinction
+- **concepts/agent-wikis.md** — New concept page: Agent Wikis — compile-at-ingest architecture pattern; three-layer design (raw sources → wiki → schema); implementation matrix (DeepWiki/AutoWiki/OpenWiki/GBrain); limitations (scale, fidelity, staleness, cost); distinction from agent memory
+- **concepts/wiki-memory.md** — Updated: added Mem0's article to sources; cross-linked to new [[concepts/agent-wikis]] page and [[entities/mem0]]
+- **entities/mem0.md** — Updated: added "The State of Agent Wikis" to In Context blog series; added sources and related pages
+- **index.md** — Added concepts/agent-wikis entry
+
 ## [2026-07-20] active-crawl — 3 new concept pages created, 1 existing page enriched
 
 **Pipeline**: active-crawl (scheduled autonomous wiki crawling)

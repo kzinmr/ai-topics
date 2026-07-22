@@ -959,8 +959,9 @@
 - [[concepts/juggler]] — Juggler — Open-source GUI coding agent by JUCE creator Julian Storer
 - [[concepts/lingbot-world-infinity]] — LingBot-World-Infinity — Open-source world model with 60-minute coherent rollouts from Tsinghua THU-KING-NIC-Lab
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
+- [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
 - [[concepts/wiki-memory]] — Wiki Memory — Agent-maintained file-based knowledge layer pattern (Harrison Chase, 2026)
-- [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Real-World Failures in Autonomous Systems
+- [[concepts/ai-agent-safety-incidents]]
 - [[concepts/ai-agent-security]] — AI Agent Security
 - [[concepts/ai-agent-traps]] — AI Agent Traps
 - [[concepts/ai-agent-video-editing]] — AI Agent Video Editing

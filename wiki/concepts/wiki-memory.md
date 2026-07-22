@@ -12,7 +12,7 @@ tags:
   - person
   - cognition
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-22
 sources:
   - "https://x.com/hwchase17/status/2071963622298050997"
   - "https://x.com/i/article/2071963272727928833"
@@ -20,12 +20,16 @@ sources:
   - "https://cognition.ai/blog/deepwiki"
   - "https://factory.ai/news/wiki"
   - "raw/articles/2026-06-30_langchain-wiki-memory.md"
+  - "raw/articles/2026-07-21_mem0ai_state-of-agent-wikis.md"
+  - "https://x.com/mem0ai/status/2079585032587694582"
 related:
   - "[[concepts/ai-agent-memory-two-camps]]"
   - "[[concepts/context-engineering]]"
+  - "[[concepts/agent-wikis]]"
   - "[[entities/harrison-chase]]"
   - "[[entities/langchain]]"
   - "[[entities/cognition-devin]]"
+  - "[[entities/mem0]]"
   - "[[entities/letta]]"
   - "[[entities/zep]]"
 ---
