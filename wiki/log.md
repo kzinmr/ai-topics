@@ -3051,3 +3051,11 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Enriched with task complexity distribution (25% low, 60% medium, 15% high), Haiku/GPT-5.4-Mini recommendation, DIY benchmarking takeaway
 - [[entities/databricks]] — Added Coding Agent Benchmark subsection to Recent AI Research, added source URL
 
+
+## [2026-07-22] Manual ingest — DeepSeek Liang Wenfeng Leaked Investor Meeting (X Note Tweet)
+
+**Action**: Manual wiki ingest from X (@MaxForAI)
+
+**Changes:**
+- **raw/articles/2026-07-22_maxforai_deepseek-liang-wenfeng-investor-meeting.md** — New raw article: Leaked transcript of DeepSeek founder Liang Wenfeng's ~4-hour investor meeting (July 22, 2026). Covers AGI roadmap (Gradual Singularity), strategic restraint (rejecting video/3D/world models/super app/closed-source/profit-max), continuous learning as next-gen requirement, pricing philosophy (architecture-driven, not API-centric), open source as strategic sweet point, US-China AI gap framing (resources not talent), team stability non-negotiable, dual-hierarchy research culture
+- **entities/deepseek.md** — Added "Liang Wenfeng's Own Words (July 2026 Investor Meeting)" major section with 8 subsections: Gradual Singularity Roadmap, What DeepSeek Explicitly Rejects, Pricing Philosophy, Open Source Sweet Point, US-China Competition, Team Stability, Organizational Philosophy, Final Warning. Updated sources and date.

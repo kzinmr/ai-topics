@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-07-13
+updated: 2026-07-22
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -18,6 +18,8 @@ sources:
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
   - raw/articles/2026-05-22-deepseek-strategy.md
   - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
+  - raw/articles/2026-07-22_maxforai_deepseek-liang-wenfeng-investor-meeting.md
+  - https://x.com/MaxForAI/status/2080035349536154073
   - raw/newsletters/2026-05-27-deepswe-makes-coding-agents-sweat.md
   - https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/
 ---
@@ -280,6 +282,94 @@ DeepSeek's history of "contrarian" bets (from @bookwormengr's Hero's Journey ana
 | Keep source closed for competitive advantage | Open-source for de facto standardization |
 
 > Source: [@bookwormengr "DeepSeek's 10 trillion USD grand strategy"](https://x.com/bookwormengr/status/2057909493250539891) (May 22, 2026)
+
+## Liang Wenfeng's Own Words (July 2026 Investor Meeting)
+
+On July 22, 2026, a leaked transcript of DeepSeek founder **Liang Wenfeng**'s approximately 4-hour investor meeting surfaced, providing the most direct articulation yet of his strategic vision for the company. The transcript, reported by [[entities/maxforai|@MaxForAI]], reveals a coherent philosophy of **strategic restraint** — a series of conscious "no's" designed to maximize DeepSeek's probability of achieving AGI.
+
+> "Restraint is a strategy. Giving up some things is to increase the probability of achieving AGI."
+
+### The Gradual Singularity Roadmap
+
+Liang laid out an explicit AGI roadmap with defined stages:
+
+1. **Chain of Thought (CoT)** — Achieved in 2025 with [[concepts/deepseek-r1|DeepSeek R1]]
+2. **Agent** — The target for 2026
+3. **Continuous Learning** — The next frontier; Liang declared that a model without continuous learning "cannot be called a next-generation model"
+4. **AI Self-Iteration** — AI systems begin improving their own design and training
+5. **AI-Assisted Advanced AI R&D** — AI helps humans build more advanced AI systems
+6. **Embodied Intelligence** — The final stage, where AI meets physical labor
+
+Liang calls this trajectory **"The Gradual Singularity"** — a deliberate, stepwise approach to AGI rather than a sudden breakthrough.
+
+### What DeepSeek Explicitly Rejects
+
+Liang was unambiguous about what DeepSeek will NOT pursue:
+
+- **Video generation, 3D, world models** — "Many things are not on our main line"
+- **World models** — "World models don't have much to do with the upper bound of intelligence"
+- **The next "super app"**
+- **Profit maximization** — DeepSeek aims for only "reasonable profit" on API pricing
+- **Closed source** — reiterated the open-source commitment
+- **User acquisition at all costs**
+- **The "genius" myth** — rejecting the narrative that DeepSeek's success comes from exceptional individual talent
+
+Multimodal capabilities, he acknowledged, are important for products and consumer users but remain "a component, not the main line, not intelligence itself."
+
+### Pricing Philosophy: Architecture-Driven, Not Market-Driven
+
+Liang revealed that DeepSeek V4's initial pricing was set **high intentionally** — because they feared demand might overwhelm capacity. The subsequent 75% price cut was met with celebration inside the company. He described this as:
+
+- **Architecture-driven** — "Low cost is a result of the architecture"
+- **Compute-efficiency motivated** — Lower per-unit compute cost enables training larger models under constrained compute budgets
+- **Not API-centric** — "I don't think selling API is that attractive"
+- **Minimal service team** — No customer support, no sales force; "users come on their own"
+- **Commercialization timeline remains "very far away"**
+
+### Open Source as Strategic "Sweet Point"
+
+Liang's framing of open source is noteworthy for its pragmatism:
+
+- Open source creates **employee cohesion and sense of achievement**
+- "Open source is a form of profit-sharing"
+- **No model withholding** — DeepSeek will NOT keep a stronger version internal while releasing a weaker one
+- **The rare middle position** — Small startups lack resources for frontier research; large companies have organizational difficulty; DeepSeek occupies a unique sweet spot at its current scale
+- **Anti-monopoly thesis** — "If AI eventually represents 10% of human GDP, anyone who tries to monopolize that will be abandoned by history"
+
+### US-China AI Competition: Resources, Not Talent
+
+Liang reframed the US-China AI narrative: China does not lack talent; what it lacks is **compute resources**. DeepSeek aims to close the gap to **3-6 months** using a fraction of the compute:
+
+- **Still believes in Scaling** — "We believe in Scaling; larger scale produces better results"
+- Current model scale is constrained by available compute, not by conviction that it's sufficient
+- **Competition's three factors**: (1) Cost, (2) Time, (3) User Experience — with cost ranked first
+
+### Non-Negotiable: Team Stability
+
+Liang identified team stability as the single non-negotiable:
+
+> "Only one thing cannot be compromised: team stability must be maintained."
+
+The recent $7.4B funding round was explicitly described as having **reduced this risk substantially**. His confidence was absolute: "As long as team stability is maintained, I will definitely achieve AGI. It's that simple."
+
+### Organizational Philosophy: Dual-Hierarchy Research Culture
+
+DeepSeek's organization combines top-down and bottom-up approaches:
+
+- **Top-down (50% max)**: What Liang calls "doing the right work" — directed research aligned with the AGI roadmap
+- **Bottom-up (50%+):** Researchers freely explore directions they deem important — no pre-approval, no fixed requirements
+- **No overwork culture** — "Research needs a relatively relaxed environment"
+- **Vision-driven, not KPI-driven** — "Achieving some KPI is not our way"
+- **Vision lives in practice** — "Vision is not a slogan on the wall, not what you say, but what you do"
+
+This culture of autonomy + focus means DeepSeek consciously leaves many products imperfect rather than spreading resources thin to fix every issue.
+
+### Final Warning
+
+Liang closed with a philosophical note: "If your vision is to take more, you've already lost. You may face greater difficulties. That's how the world works."
+
+> Source: [@MaxForAI — Leaked DeepSeek investor meeting transcript](https://x.com/MaxForAI/status/2080035349536154073) (July 22, 2026)
+> See also: [[raw/articles/2026-07-22_maxforai_deepseek-liang-wenfeng-investor-meeting.md]]
 
 ## Market Impact
 
