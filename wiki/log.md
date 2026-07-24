@@ -1,18 +1,10 @@
-## [2026-07-24] watchdog | Index header fix, log separator fix
+## [2026-07-24] health | Wiki health auto-fix
 
 ### Changes
-- Fixed Concepts header count (1829 -> 1919) to match filesystem (90 pages drifted)
-- Added 11 missing `---` section separators to log.md
-
-### Health Summary
-- Index.md: pipe corruption=0 | line prefix=0 | triple brackets=0 | duplicates=0 | ghosts=0
-- Log.md: missing separators=0 (fixed 11) | pipe tables=113 (legitimate) | triple brackets=1 (legitimate)
-- Header counts: Entities 864=864 ok | Concepts 1829->1919 fixed | Comparisons 35=35 ok | Events 18=18 ok | Queries 6=6 ok
-- Cross-section misplacement: 0 concept entries in Entities, 0 entity entries in Concepts
-- Orphan pages (recursive scan): 2 archive files intentionally skipped
-- Concept orphans reported by graph analysis (128) = false positives: subdirectory files and _index.md files missed by flat scan
-- Genuinely missing pages from broken link analysis (concepts:rag, agent-evaluation, grpo, gaia-benchmark, agentdojo, llm-as-judge): deferred for human review
-- Autofixable broken wikilinks: reported 400+ truncation errors and bare links — requires fix_wikilinks.py run, deferred due to volume
+- **Dedup**: Merged entities/tim-sherratt.md -> entities/tim-sh.md (same person: Tim Sherratt, GLAM historian). tim-sh.md is canonical (richer content).
+- **Broken link fix**: Restored 2 empty wikilinks in tim-sh.md Related section (self-hosting-ai-development, web-accessibility)
+- **Index fix**: Removed duplicate entities/tim-sherratt entry from index.md (line 796)
+- **No corruption found**: All index corruption checks passed (0 pipe, 0 triple-bracket, 0 line-number, 0 space-prefix)
 
 ---
 

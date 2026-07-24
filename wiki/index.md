@@ -792,8 +792,7 @@
 - [[entities/tim-davis]] — Tim Davis
 - [[entities/tim-dettmers]] — Researcher at the University of Washington (NLP/ML), creator of bitsandbytes, LLM.int8(), and co-creator of QLoRA. Pi...
 - [[entities/tim-oreilly]] — Tim O'Reilly
-- [[entities/tim-sh]] — Tim Sherratt
-- [[entities/tim-sherratt]] — Tim Sherratt
+- [[entities/tim-sh]] — Tim Sherratt — historian, hacker, GLAM Workbench creator
 - [[entities/tobi-lutke]] — Tobi Lütke
 - [[entities/together-ai]] — Together AI
 - [[entities/tom-aarsen]] — Tom Aarsen

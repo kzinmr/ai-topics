@@ -1,8 +1,9 @@
 ---
 title: Tim Sherratt
+aliases: ["tim-sherratt", "wragge", "Tim Sh"]
 type: entity
 created: 2026-04-10
-updated: 2026-06-03
+updated: 2026-07-24
 tags:
   - person
   - blogger
@@ -159,9 +160,9 @@ His work consistently argues that **digitization is not neutral** — the choice
 
 - [[concepts/open-data]] — Open cultural data movement
 - [[concepts/digital-humanities]] — Jupyter for humanities research
--  — Self-hosted, self-documented digital practice
+- [[concepts/self-hosting-ai-development|Self-hosted, self-documented digital practice]]
 -  — Human-centered approach to technology
--  — Web accessibility and standards advocacy
+- [[concepts/web-accessibility|Web accessibility and standards advocacy]]
 
 ## Sources
 
