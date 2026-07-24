@@ -1,3 +1,11 @@
+## [2026-07-24] raw-backlog-ingest (22:00 UTC) — All 5 articles already covered by existing wiki pages
+- **Reframing Superintelligence (Drexler FHI 2019)** — Reference. Already covered by concepts/cais.md (169 lines) + entities/k-eric-drexler.md (69 lines).
+- **MAI-Thinking-1 Tech Report** — Reference. Already covered by concepts/mai-thinking-1-tech-report.md (227 lines) + entities/mai-thinking-1.md (165 lines) + microsoft-mai-models.md.
+- **BenchFlow Awesome Agent Evals** — Reference. Already covered by concepts/ai-benchmarks/benchflow-tool.md (118 lines).
+- **Poolside/Eiso Kant (Latent Space)** — Reference. Already covered by entities/eiso-kant.md + entities/poolside.md (created/updated today from this same article).
+- **Grant Sanderson (Dwarkesh Podcast #2)** — Reference. Already covered by entities/grant-sanderson.md (141 lines).
+- Saved to raw_backlog/triage_latest.json
+
 ## [2026-07-24] Dreaming — Knowledge consolidation (dreaming-wiki-ingest)
 - **Take (1)**: [[concepts/subprime-data-center-crisis]] — Created: Ed Zitron's analysis of AI data center debt as analogue to 2008 subprime mortgages (SPVs, off-balance-sheet financing, 15× overbuild, NVIDIA circular financing, systemic pension fund exposure)
 - **Enriched (2)**: [[concepts/ai-agent-safety-incidents]] — Added ExploitGym benchmark data (898 vulns; Claude Mythos Preview 157, GPT-5.5 120 successes) and Martin Alderson monitoring gap analysis (HF attack surface, unlimited token budgets, concurrent checkpoint testing)
