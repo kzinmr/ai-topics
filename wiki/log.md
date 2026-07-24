@@ -1,3 +1,14 @@
+## [2026-07-24] raw-backlog-ingest | All 5 articles already covered
+
+All articles in this batch were already fully processed by prior runs:
+- **MAI-Thinking-1 Tech Report** — Already in entities/mai-thinking-1.md (165 lines) + concepts/mai-thinking-1-tech-report.md (227 lines)
+- **BenchFlow Awesome Agent Evals** — Already in concepts/ai-benchmarks/benchflow-tool.md (118 lines) with full Awesome Agent Evals section
+- **Poolside/Eiso Kant (Latent Space)** — Processed earlier today (2026-07-24): entities/eiso-kant.md created, entities/poolside.md enriched
+- **Reframing Superintelligence (Drexler CAIS)** — Already archived; concepts/cais.md + entities/k-eric-drexler.md cover it
+- **Grant Sanderson (Dwarkesh)** — Already archived; entities/grant-sanderson.md covers it
+
+**Takes=0 · References=0 · Skips=5 · Archive: 1 new (4 dedup skipped) · Archive total: 1896**
+
 ## [2026-07-24] health | Wiki health auto-fix
 
 ### Changes
