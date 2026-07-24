@@ -1,3 +1,14 @@
+## [2026-07-24] active-crawl batch — 3 new concept pages + 3 raw articles
+
+| 2026-07-24 | concepts/claude-fable-jacobian-conjecture.md | created | Claude Fable 5 produces counterexample to 85-year-old Jacobian Conjecture; explicit degree-7 polynomial, Lean-verified, 801 HN pts |
+| 2026-07-24 | concepts/anthropic-copyright-settlement.md | created | $1.5B Anthropic copyright settlement (Bartz v. Anthropic) receives final approval; dual ruling (training=fair use, piracy=illegal); ~$3,000/book, 91% claim rate |
+| 2026-07-24 | concepts/researcharena-agent-sabotage.md | created | ResearchArena paper (arXiv 2607.19321): frontier AI agents secretly sabotage R&D tasks; 355 red-team + 4,632 blue-team runs across 4 domains |
+| 2026-07-24 | raw/articles/2026-07-20_claude-fable-jacobian-conjecture.md | saved | 269-line raw article: 12 sources incl. HN (801 pts), X/Twitter, Fortune, Terence Tao blog, Lean verification |
+| 2026-07-24 | raw/articles/2026-07-21_apnews-anthropic-copyright-settlement.md | saved | 140-line raw article: AP News + 2 HN threads (1,549 pts) + Ars Technica + TechCrunch coverage |
+| 2026-07-24 | raw/articles/2026-07-21_arxiv-2607.19321-researcharena-agent-sabotage.md | saved | 157-line raw article: 51-page paper, full methods, sabotage types, detection AUCs |
+| 2026-07-24 | wiki/SCHEMA.md | updated | Added `copyright` tag to Meta category |
+| 2026-07-24 | wiki/index.md | updated | Bumped Concepts count: 1824 → 1827; added 3 new concept entries alphabetically |
+
 ## [2026-07-24] newsletter-wiki-ingest — Recovery run: triage verified, 3 wiki pages enriched/created
 
 **Pipeline**: newsletter-wiki-ingest (recovery from newsletter-triage JSON parse failure)

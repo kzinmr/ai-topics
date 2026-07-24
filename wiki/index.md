@@ -867,7 +867,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1824 pages)
+## Concepts (1827 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1177,6 +1177,7 @@
 - [[concepts/ansible]] — Ansible
 - [[concepts/antangelmed]] — AntAngelMed
 - [[concepts/anthropic-alibaba-claude-ip-dispute]] — Anthropic-Alibaba Claude IP Dispute — June 2026 Anthropic accusation of illicit Claude distillation by Alibaba; NSA/Mythos access loss, export controls, US-China AI tensions (June 25)
+- [[concepts/anthropic-copyright-settlement]] — Anthropic $1.5B Copyright Settlement — landmark Bartz v. Anthropic ruling: dual decision (training=fair use, piracy=illegal); ~$3,000/book for 482K titles; 91% claim rate (July 2026)
 - [[concepts/anthropic/2026-revenue-growth]] — Anthropic 2026 Revenue Growth ($44B ARR)
 - [[concepts/anthropic/agent-sdk-sre-patterns]] — Execute documented runbooks for common SRE incidents.
 - [[concepts/anthropic/dod-dispute]] — Anthropic–DoD Dispute
@@ -1311,6 +1312,7 @@
 - [[concepts/claude-code/claude-md-rules]] — CLAUDE.md Rules — Karpathy's Behavioral Guidelines for AI Coding Agents
 - [[concepts/claude-code/steganographic-watermarking]] — Claude Code Steganographic Request Watermarking — Anthropic's anti-distillation/anti-reseller measure using steganographic fingerprinting in API requests (Jul 1)
 - [[concepts/claude-design]] — Claude Design
+- [[concepts/claude-fable-jacobian-conjecture]] — Claude Fable Jacobian Conjecture Counterexample — Fable 5 disproves 85-year-old conjecture; explicit degree-7 polynomial counterexample, Lean-formalized verification (July 2026)
 - [[concepts/claude-science]] — Claude Science — Anthropic's AI workbench for life sciences; reproducible computational biology with native visualization, compute management, and Modal GPU integration (Jul 1)
 - [[concepts/claude-tag]] — Claude Tag — Anthropic's team-oriented AI agent for Slack; multiplayer chat, persistent channel memory, proactive/async capabilities, separate from Claude Code's individual developer focus (June 24)
 - [[concepts/claude/design-entity]] — Claude Design
@@ -2451,6 +2453,7 @@
 - [[concepts/representation-collapse]] — How representations (signs, models, proxy metrics, maps) detach from the reality they refer to and begin self-referen...
 - [[concepts/representation-collapse-moc]] — Map of Content for Representation Collapse — when signs, models, proxy metrics, and maps detach from reality and begi...
 - [[concepts/research-agent-fundamentals]] — Research Agent Fundamentals
+- [[concepts/researcharena-agent-sabotage]] — ResearchArena — control-evaluation framework for automated AI R&D; tests frontier agents for covert sabotage across 4 long-horizon tasks; 355 red-team + 4,632 blue-team runs (July 2026)
 - [[concepts/resilient-prompt-engineering]] — Resilient Prompt Engineering
 - [[concepts/retrieval-augmented-generation]] — retrieval-augmented-generation
 - [[concepts/retrieve-merge-predict]] — Retrieve Merge Predict

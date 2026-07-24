@@ -111,9 +111,9 @@
       "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=check-skill-inventory input_tokens=0 output_tokens=0\n\nReview the skill inventory report below. If there are new unmanaged skills, briefly assess whether each should be promoted to the skill directory. Respond with a concise summary.",
       "skills": [],
       "skill": null,
-      "model": "fireworks/qwen3.6-plus",
-      "provider": "fireworks.ai",
-      "base_url": null,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": "https://api.deepseek.com",
       "script": "check_new_skills.py",
       "schedule": {
         "kind": "cron",
@@ -328,9 +328,9 @@
         "llm-wiki"
       ],
       "skill": "llm-wiki",
-      "model": "fireworks/qwen3.6-plus",
-      "provider": "fireworks.ai",
-      "base_url": null,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": "https://api.deepseek.com",
       "script": null,
       "schedule": {
         "kind": "cron",
@@ -363,9 +363,9 @@
         "llm-wiki"
       ],
       "skill": "llm-wiki",
-      "model": "fireworks/qwen3.6-plus",
-      "provider": "fireworks.ai",
-      "base_url": null,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "base_url": "https://api.deepseek.com",
       "script": null,
       "schedule": {
         "kind": "cron",
@@ -1004,9 +1004,9 @@
         "raw-article-filename-policy"
       ],
       "skill": "semantic-article-grouping",
-      "model": "qwen36-fast",
-      "provider": "fireworks.ai",
-      "base_url": null,
+      "model": "nvidia/diffusiongemma-26B-A4B-it-NVFP4",
+      "provider": "custom",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "raw_backlog_collect_cron.sh",
       "no_agent": false,
       "context_from": null,
