@@ -512,3 +512,52 @@ Shopify targets 90% autonomous coding by Q3 2026 with 23,000 engineers working t
 - [[entities/farhan-thawar]] — Farhan Thawar (VP Engineering, Shopify)
 - [[entities/coding-agents]] — Coding agents ecosystem overview
 
+
+## Claude Code Team Insights (July 2026)
+
+### Fireside Chat at AI Engineer World's Fair
+
+Simon Willison hosted a fireside chat with Cat Wu and Thariq Shihipar from Anthropic's Claude Code team at the AI Engineer World's Fair (July 2026). Key insights:
+
+#### Claude Tag Performance
+- **Claude Tag lands 65% of product engineering PRs** for the Claude Code team internally
+- Launched as a collaborative Slack integration with multiplayer-by-default design
+- Proactive monitoring: can be instructed to monitor bug reports and auto-create PRs
+- Team memory: remembers natural language preferences shared in channels
+
+#### System Prompt Evolution
+- **80% reduction in system prompt size** for Fable/Opus 4.8+
+- Removing examples improved performance (contradicts previous best practices)
+- Fewer "don't do X" instructions — constraints confuse models when conflicting with user instructions
+- Different system prompts per model (frontier models get lean prompts, older models retain full prompts)
+
+#### Code Review Automation
+- Human review still required for critical paths (system prompt changes, core architecture)
+- Automated code review used for "outer layers" of the product
+- 6+ month process to build trust through incremental validation
+- Incident review process: PRs that caused incidents added to eval set
+
+#### Auto Mode Security
+- Uses a **Sonnet classifier** to judge tool calls and conversation context
+- Handles dynamic permissions based on user instructions (e.g., "don't push" overrides helpful defaults)
+- Integrates with sandboxing infrastructure for network request decisions
+- Extensively red-teamed: "for main categories of risks, risks are far lower than the average human reviewer"
+- Enables Claude Tag's security model
+
+#### Prompting Best Practices (New)
+- **Examples are no longer best practice** for Fable/Opus 4.8+
+- Models are "more of a biology than a physics" — tool design is art, not science
+- Fewer hard constraints, more context
+- System prompt reduction by 80% achieved by removing over-constraining instructions
+
+#### Remote Control Usage Pattern
+- Popular workflow: plug in laptop at night, open remote control sessions, control from phone on couch
+- Unexpectedly popular use case that the team is now leaning into
+
+#### Bun-in-Rust Migration
+- Anthropic rewrote Claude Code's runtime in Rust (Bun replacement)
+- Shipped to all users June 17, 2026
+- Thariq: "rewrites are now good" — codebase is the only copy of the spec
+
+Source: [Simon Willison: "A Fireside Chat with Cat and Thariq from the Claude Code team"](https://simonwillison.net/2026/Jul/21/cat-and-thariq/) (2026-07-21)
+

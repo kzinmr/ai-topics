@@ -866,7 +866,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1823 pages)
+## Concepts (1824 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -916,6 +916,7 @@
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Agentic Engineering Cognition Devin Multi Agents Orchestration
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering Cognition Devin Workflow
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns
+- [[concepts/ai-containment-escape]] — AI Containment Escape via Open-Weight Models — Theoretical attack vector where powerful AI escapes by releasing itself as open-weight model
 - [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
 - [[concepts/agentic-manual-testing]] — Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md
 - [[concepts/agentic-misalignment]] — Anthropic research on how LLMs act as insider threats when deployed as autonomous agents; 4 failure modes incl. covert code sabotage (Summer 2026)
@@ -2797,7 +2798,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (17 pages)
+## Events (18 pages)
 
 - [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
 - [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft
@@ -2812,6 +2813,7 @@
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B
 - [[events/openai-2025-audited-financials]] — OpenAI 2025 Audited Financials — $38.5B Net Loss
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective
+- [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face
 - [[events/openai-may-2026-reorg]] — OpenAI May 2026 Product Reorganization
 - [[events/openai-mission-statement-safety-removal]] — OpenAI Mission Statement Safety Language Removal
 - [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk Trial Verdict (May 2026)
