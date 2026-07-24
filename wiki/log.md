@@ -1,3 +1,21 @@
+## [2026-07-24] watchdog | Index header fix, log separator fix
+
+### Changes
+- Fixed Concepts header count (1829 -> 1919) to match filesystem (90 pages drifted)
+- Added 11 missing `---` section separators to log.md
+
+### Health Summary
+- Index.md: pipe corruption=0 | line prefix=0 | triple brackets=0 | duplicates=0 | ghosts=0
+- Log.md: missing separators=0 (fixed 11) | pipe tables=113 (legitimate) | triple brackets=1 (legitimate)
+- Header counts: Entities 864=864 ok | Concepts 1829->1919 fixed | Comparisons 35=35 ok | Events 18=18 ok | Queries 6=6 ok
+- Cross-section misplacement: 0 concept entries in Entities, 0 entity entries in Concepts
+- Orphan pages (recursive scan): 2 archive files intentionally skipped
+- Concept orphans reported by graph analysis (128) = false positives: subdirectory files and _index.md files missed by flat scan
+- Genuinely missing pages from broken link analysis (concepts:rag, agent-evaluation, grpo, gaia-benchmark, agentdojo, llm-as-judge): deferred for human review
+- Autofixable broken wikilinks: reported 400+ truncation errors and bare links — requires fix_wikilinks.py run, deferred due to volume
+
+---
+
 ## [2026-07-24] raw-backlog-ingest — Poolside Model Factory enrichment, Eiso Kant entity creation (5 articles: 3 archived, 1 skip, 1 enrich+create)
 
 **Processed 5 articles from raw backlog:**
@@ -19,6 +37,7 @@
 **Index updated:** Entities count 863→864
 **Script:** raw_backlog_collect.py --sort ai-hint --limit 5
 
+---
 ## [2026-07-24] X bookmarks ingest — MS MAI Frontier Diffusion & Control, Onyx VM, ChatGPT Work VM, Simon Willison Voice Mode
 
 **New raw articles (4):**
@@ -40,6 +59,7 @@
 **Verified (no changes needed):**
 - [[entities/deepseek]] — Liang Wenfeng investor meeting transcript already comprehensively covered (429 lines)
 
+---
 ## [2026-07-24] active-crawl batch — 3 new concept pages + 3 raw articles
 
 | 2026-07-24 | concepts/claude-fable-jacobian-conjecture.md | created | Claude Fable 5 produces counterexample to 85-year-old Jacobian Conjecture; explicit degree-7 polynomial, Lean-verified, 801 HN pts |
@@ -51,6 +71,7 @@
 | 2026-07-24 | wiki/SCHEMA.md | updated | Added `copyright` tag to Meta category |
 | 2026-07-24 | wiki/index.md | updated | Bumped Concepts count: 1824 → 1827; added 3 new concept entries alphabetically |
 
+---
 ## [2026-07-24] newsletter-wiki-ingest — Recovery run: triage verified, 3 wiki pages enriched/created
 
 **Pipeline**: newsletter-wiki-ingest (recovery from newsletter-triage JSON parse failure)
@@ -70,6 +91,7 @@
 
 **Skips (23):** Non-AI content (Lenny's sabbatical, Stripe PM career), pure link digests (True Positive Weekly #170), beehiiv 403 expired tokens (3 newsletters), substack UI noise
 
+---
 ## [2026-07-24] blog-wiki-ingest — Recovery run: triage verified, Ptacek quote enriched
 
 **Pipeline**: blog-wiki-ingest (recovery from blog-triage JSON parse failure)
@@ -93,6 +115,7 @@
 **Archiving:**
 - All 16 skip/reference items already archived from prior run (dedup: 0 new)
 
+---
 ## [2026-07-24] Manual ingest — Lee Robinson "How we teach AI models" X Article
 
 **Action**: Manual wiki ingest from X (@leerob)
@@ -103,6 +126,7 @@
 - **concepts/post-training/_index.md** — Updated: added raw article as source
 - **index.md** — Added lee-robinson entity entry (862 entities)
 
+---
 ## [2026-07-22] Manual ingest — Mem0 "The State of Agent Wikis" X Article
 
 **Action**: Manual wiki ingest from X (mem0ai)
@@ -114,6 +138,7 @@
 - **entities/mem0.md** — Updated: added "The State of Agent Wikis" to In Context blog series; added sources and related pages
 - **index.md** — Added concepts/agent-wikis entry
 
+---
 ## [2026-07-20] active-crawl — 3 new concept pages created, 1 existing page enriched
 
 **Pipeline**: active-crawl (scheduled autonomous wiki crawling)
@@ -3107,6 +3132,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 **Result**: Takes=0, Refs=0, Skips=9. Archive: all items already archived (dedup). 1,853 total archive URLs.
 
+---
 ## [2026-07-20 18:20 UTC] dreaming-wiki-ingest | Saturation confirmation — upstream dreaming-group already committed full analysis
 
 **Pipeline**: dreaming-wiki-ingest (nightly knowledge consolidation, 18:20 UTC)
@@ -3126,6 +3152,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - 2026-07-21: Ingested cursor.com/ja/blog/agent-swarm-model-economics → created concepts/multi-agents/cursor-agent-swarm-architecture.md, updated entities/cursor-ai.md, concepts/multi-agents/agent-swarms.md
 - 2026-07-21: wiki: ingested Zhang & Khattab (2026) 'Language model harnesses are compositional generalizers' blog post. Created concepts/compositional-generalization.md, updated entities/omar-khattab/rlm.md (length/cross-domain generalization results, LID principle), updated entities/alex-zhang.md (new blog entry + publication). Raw article saved to raw/articles/2026-07-20_zhang-khattab_language-model-harnesses-compositional-generalizers.md
 
+---
 ## [2026-07-21 18:00 UTC] dreaming | Knowledge consolidation — 1 take + 3 references enriched
 
 **Checkpoint**: 20260721T180014Z | Range: Jul 21 | Total articles: 0 | Raw articles on disk: 20+ new
@@ -3157,6 +3184,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - [[entities/databricks]] — Added Coding Agent Benchmark subsection to Recent AI Research, added source URL
 
 
+---
 ## [2026-07-22] Manual ingest — DeepSeek Liang Wenfeng Leaked Investor Meeting (X Note Tweet)
 
 **Action**: Manual wiki ingest from X (@MaxForAI)
@@ -3165,6 +3193,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - **raw/articles/2026-07-22_maxforai_deepseek-liang-wenfeng-investor-meeting.md** — New raw article: Leaked transcript of DeepSeek founder Liang Wenfeng's ~4-hour investor meeting (July 22, 2026). Covers AGI roadmap (Gradual Singularity), strategic restraint (rejecting video/3D/world models/super app/closed-source/profit-max), continuous learning as next-gen requirement, pricing philosophy (architecture-driven, not API-centric), open source as strategic sweet point, US-China AI gap framing (resources not talent), team stability non-negotiable, dual-hierarchy research culture
 - **entities/deepseek.md** — Added "Liang Wenfeng's Own Words (July 2026 Investor Meeting)" major section with 8 subsections: Gradual Singularity Roadmap, What DeepSeek Explicitly Rejects, Pricing Philosophy, Open Source Sweet Point, US-China Competition, Team Stability, Organizational Philosophy, Final Warning. Updated sources and date.
 
+---
 ## [2026-07-24] Blog ingest — 20 new articles processed, 3 wiki pages created/updated
 
 **Pipeline**: blog-ingest (scheduled)
