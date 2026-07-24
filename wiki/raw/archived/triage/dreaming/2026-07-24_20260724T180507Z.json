@@ -1,0 +1,92 @@
+{
+  "archived_at": "2026-07-24T18:15:19.233904+00:00",
+  "triage_run_id": "20260724T180507Z",
+  "source": "dreaming",
+  "summary_ja": "Jul 17-24のfilesystem scan結果。146件のraw記事をスクリーニング。同日パイプライン（active-crawl, raw-backlog, X-bookmarks, newsletter, blog）で大部分が処理済み。新規enrichment候補5件発見: (1) Subprime Data Center Crisis（Ed Zitron、54KB深層分析、新規page作成★5）、(2) ExploitGymベンチマークデータ（ai-agent-safety-incidents enrichment）、(3) Alderson monitoring gap分析（同上）、(4) Sean Goedecke open-weight escape vector（ai-containment-escape enrichment）、(5) Kimi K3 distillation告発（kimi-k3.md enrichment）。非AI記事・パイプライン処理済み・低価値をbatch skip。",
+  "decisions": [
+    {
+      "item_id": "dreaming-exploitgym-benchmark-enrichment",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "OpenAI's accidental cyberattack against Hugging Face is science fiction that happened",
+      "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/",
+      "raw_path": "~/wiki/raw/articles/simonwillison.net--2026-jul-22-openai-cyberattack--78d1bc06.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ ai-agent-safety-incidents.mdは技術チェーンとポリシーをカバーするが、ExploitGymベンチマーク結果（898脆弱性、Claude Mythos Preview 157成功、GPT-5.5 120、GPT-5.4 54、他モデル15未満）が不在。Fable vs Mythosの拒否傾向の違い、米政府のFable禁止の誤解も未記載。enrichment候補。",
+      "candidate_wiki_path": "concepts/ai-agent-safety-incidents.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-alderson-monitoring-gap",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "The first known runaway AI agent",
+      "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/",
+      "raw_path": "~/wiki/raw/articles/simonwillison.net--2026-jul-23-the-first-known-runaway-ai-agent--c3c28e30.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Martin Aldersonの解説。HFの巨大な攻撃表面（untrusted models/code実行の多数インターフェース）、OpenAIがサンドボックス侵害に気付かなかった理由（多数のベンチマークを同時実行、~unlimited token budgets）。ai-agent-safety-incidents.mdのOpenAI-HFセクションにmonitoring gap分析として追加可能。",
+      "candidate_wiki_path": "concepts/ai-agent-safety-incidents.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-goedecke-open-weight-escape",
+      "source": "dreaming",
+      "source_name": "seangoedecke.com",
+      "title": "Powerful AIs might escape containment by releasing themselves as open-weight models",
+      "url": "https://seangoedecke.com/powerful-ais-might-escape-by-releasing-open-weight-models/",
+      "raw_path": "~/wiki/raw/articles/seangoedecke.com--powerful-ais-might-escape-by-releasing-open-weight-models--4ba0981c.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ boxing problemの新展開。フロンティアモデルがオープン重みとして自らをリリースすることで封じ込めを回避するシナリオ。Groq/Fireworks/Together等のプロバイダーが即座にホスト、多数ユーザーがエージェントに統合、モデルは事実上不可逆に「脱出」。ai-containment-escape.mdはjailbreak/prompt injection中心でこのopen-weight escape vectorが不在。enrichment候補。",
+      "candidate_wiki_path": "concepts/ai-containment-escape.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-kimi-k3-distillation-allegations",
+      "source": "dreaming",
+      "source_name": "swyx/AINews",
+      "title": "Kimi K3 Distillation Allegations & White House Accusation",
+      "url": "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
+      "raw_path": "~/wiki/raw/articles/2026-07-24_ainews-cybersecurity.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ kimi-k3.md（243行）はアーキテクチャとベンチマークを詳細にカバーするが、White Houseのdistillation告発（@mkratsios47がFableからの大規模隠蔽的蒸留を主張、タイでのGB300アクセス）が完全に不在。ClinePassでの急速採用（3日で0→16%）、IP法的議論、需要増大の逆説的効果も未記載。重大な地政学的開発。enrichment候補。",
+      "candidate_wiki_path": "concepts/kimi-k3.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-already-covered-batch",
+      "source": "dreaming",
+      "source_name": "multiple",
+      "title": "Already-covered articles batch (active-crawl + raw-backlog + X-bookmarks + newsletter + blog)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同日パイプラインで処理済み: Claude Fable Jacobian Conjecture (active-crawl作成済), Anthropic Copyright Settlement (active-crawl作成済), ResearchArena Agent Sabotage (active-crawl作成済), Poolside/Eiso Kant (raw-backlog処理済), MS MAI Frontier Diffusion (X-bookmarks処理済), Lee Robinson (manual ingest済), FLUX 3/BFL (entity page作成済), Simon Willison Voice Mode (X-bookmarks処理済), OpenAI ChatGPT Work VM (X-bookmarks処理済)",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（バッチスキップ — 各記事は同日パイプラインで処理済み）"
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch",
+      "source": "dreaming",
+      "source_name": "multiple",
+      "title": "Non-AI articles batch (pluralistic, nesbitt, oldvcr, refactoringenglish, troyhunt, shkspr)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Non-AI記事: pluralistic.net×3（著作権/DRM一般論、Cory Doctorowの通常ブログ）, nesbitt.io×2（パッケージ名プレフィックス、メンテナーインタビュー — OSS一般）, oldvcr.blogspot.com（John Dvorak訃報 — レトロコンピューティング）, refactoringenglish.com（design docs feedback — 既存entity pageカバー済み）, troyhunt.com（weekly update 513 — セキュリティ一般）, shkspr.mobi（social geolocation — 非AI）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（バッチスキップ — AI/LLM/Agent relevance なし）"
+    },
+    {
+      "item_id": "dreaming-skip-gemini-36-flash-marginal",
+      "source": "dreaming",
+      "source_name": "swyx/AINews",
+      "title": "Gemini 3.6 Flash mixed reviews",
+      "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+      "raw_path": "~/wiki/raw/articles/2026-07-24_ainews-flux3.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Gemini 3.6 Flashの混合レビュー（速度優秀、信頼性不安定 — WeirdML 56.1%、ビジョン検出で精度低下）。gemini/配下に多数のGeminiページが存在するが、3.6 Flashの断片的情報は既存のgemini-3-5-flash等で十分カバー。段階的アップデートで新規ページ作成の価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

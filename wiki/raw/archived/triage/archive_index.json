@@ -928,6 +928,7 @@
     "https://open.substack.com/pub/swyx/p/esmfold2",
     "https://open.substack.com/pub/swyx/p/forward-deployed-engineers-aiewf",
     "https://open.substack.com/pub/swyx/p/modal2026",
+    "https://open.substack.com/pub/swyx/p/poolside",
     "https://open.substack.com/pub/swyx/p/satya-2026?redirect=app-store",
     "https://open.substack.com/pub/swyx/p/the-coolest-diffusion-research-isnt",
     "https://open.substack.com/pub/swyx/p/the-fourth-law",
@@ -1065,6 +1066,7 @@
     "https://seangoedecke.com/in-defense-of-not-understanding-your-codebase/",
     "https://seangoedecke.com/overtraining-as-the-path-to-human-like-ai/",
     "https://seangoedecke.com/playing-politics/",
+    "https://seangoedecke.com/powerful-ais-might-escape-by-releasing-open-weight-models/",
     "https://seangoedecke.com/saying-the-obvious-thing/",
     "https://seangoedecke.com/text-ai-watermarks/",
     "https://seangoedecke.com/weird-projects-i-shipped-with-ai/",
@@ -1161,8 +1163,10 @@
     "https://simonwillison.net/2026/Jul/21/sighting-383713864/#atom-everything",
     "https://simonwillison.net/2026/Jul/22/all-the-orchestrions/#atom-everything",
     "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/#atom-everything",
+    "https://simonwillison.net/2026/Jul/22/openai-cyberattack/",
     "https://simonwillison.net/2026/Jul/22/thomas-ptacek/#atom-everything",
     "https://simonwillison.net/2026/Jul/23/seth-larson/#atom-everything",
+    "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/",
     "https://simonwillison.net/2026/Jul/3/judgement/",
     "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
     "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything",
@@ -1731,7 +1735,9 @@
     "https://www.johndcook.com/blog/2026/07/19/fitting-a-regex/",
     "https://www.johndcook.com/blog/2026/07/19/sum-of-low-squares/",
     "https://www.k-a.in/rl-algo.html",
+    "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top",
     "https://www.latent.space/p/ainews-all-model-labs-are-now-agent",
+    "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
     "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
     "https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking",
     "https://www.latent.space/p/ainews-midjourney-medical-scan-your",
@@ -1896,5 +1902,5 @@
     "https://yoroll.ai/",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-07-24T10:54:46.102195+00:00"
+  "updated": "2026-07-24T18:15:19.234384+00:00"
 }
