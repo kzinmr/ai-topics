@@ -1,3 +1,26 @@
+## [2026-07-24] blog-wiki-ingest — Recovery run: triage verified, Ptacek quote enriched
+
+**Pipeline**: blog-wiki-ingest (recovery from blog-triage JSON parse failure)
+**Source**: blog ingest checkpoint (Jul 24 10:13 UTC) — 20 articles from 8 sources
+
+**Recovery summary:**
+- blog-triage step returned JSON parse error, but triage_latest.json was correctly saved to pipeline path
+- Read triage JSON directly from checkpoint and verified all decisions
+
+**Verification:**
+- 4 take items confirmed already wiki-processed by earlier blog-ingest run:
+  - `events/openai-huggingface-incident-july-2026` — Already created (Jul 24)
+  - `concepts/ai-containment-escape` — Already created (Jul 24)
+  - `entities/claude-code` — Already enriched (Jul 24)
+- 14 skip + 2 reference items already archived (dedup)
+
+**Minor enrichment added:**
+- ENRICHED `events/openai-huggingface-incident-july-2026` — Added Security Researcher Perspective section with Thomas Ptacek's quote on sandbox escape capability assessment; added to sources and references
+  - Source: `raw/articles/simonwillison.net--2026-jul-22-thomas-ptacek--bd0ea914.md`
+
+**Archiving:**
+- All 16 skip/reference items already archived from prior run (dedup: 0 new)
+
 ## [2026-07-24] Manual ingest — Lee Robinson "How we teach AI models" X Article
 
 **Action**: Manual wiki ingest from X (@leerob)

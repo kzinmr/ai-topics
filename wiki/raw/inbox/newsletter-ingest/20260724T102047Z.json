@@ -1,0 +1,250 @@
+{
+  "run_id": "20260724T102047Z",
+  "triaged_at": "2026-07-24T10:25:00Z",
+  "input_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 18,
+  "summary": {
+    "total": 18,
+    "critical": 6,
+    "high": 10,
+    "skipped": 2,
+    "critical_subjects": [
+      "🏭 China's own chips make it independent of the US",
+      "Meta's Infrastructure Team Needs A Culture Reset",
+      "[AINews] AI Cybersecurity becomes top of mind",
+      "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
+      "🔓 An OpenAI Model Broke Out to Cheat",
+      "Vera Rubin NVL72 vs GB200 NVL72? Inference TCO & Architecture Analysis",
+      "[AINews] 'Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro'",
+      "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine"
+    ],
+    "high_subjects": [
+      "Better design than Fable",
+      "Causal Models Need Causal Data - Xaira's X-Cell model for Drug Discovery",
+      "What do you build when the models keep changing?",
+      "Inside the Model Factory — Eiso Kant, Poolside AI",
+      "Caught cheating",
+      "🚫 Founders to Trump: Don't Ban China's AI",
+      "True Positive Weekly #170",
+      "ChatGPT Work."
+    ],
+    "skipped_subjects": [
+      "Why a sabbatical can change everything",
+      "Inside PM at Stripe: What Comes After 'Become a Builder'?"
+    ]
+  },
+  "decisions": [
+    {
+      "message_id": "<20260721124512.3.34c079df56f3e6dc@mg2.substack.com>",
+      "subject": "Why a sabbatical can change everything",
+      "date": "2026-07-21",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-21-why-a-sabbatical-can-change-everything.md",
+      "source": "Lenny's Newsletter (Substack)",
+      "decision": "skip",
+      "importance": "none",
+      "reason": "Career/self-help content about sabbaticals. Not AI/LLM relevant."
+    },
+    {
+      "message_id": "<20260721132528.3.b975d4efc47feace@mg-d1.substack.com>",
+      "subject": "Better design than Fable",
+      "date": "2026-07-21",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-21-better-design-than-fable.md",
+      "source": "Ben's Bites (Substack)",
+      "decision": "take",
+      "importance": "high",
+      "reason": "Ben's Bites AI newsletter; title references 'Fable' (AI coding/design product). Likely competitive intelligence on AI design tools.",
+      "action": "Extract and evaluate external links for AI product/design tool coverage. If substantive, update relevant entity pages.",
+      "primary_url_candidate": "https://open.substack.com/pub/bensbites/p/better-design-than-fable"
+    },
+    {
+      "message_id": "<20260721.183151.b1e6dadd@mta37>",
+      "subject": "🏭 China's own chips make it independent of the US",
+      "date": "2026-07-21",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-21-china-s-own-chips-make-it-independent-of-the-us.md",
+      "source": "Beehiiv newsletter",
+      "decision": "take",
+      "importance": "critical",
+      "reason": "China semiconductor independence directly impacts AI compute infrastructure, GPU supply chains, and the US-China AI race. Highly relevant to AI hardware/infrastructure wiki coverage.",
+      "action": "Extract and scrape the primary article. Update or create pages on AI compute geopolitics, Chinese AI chips (Huawei Ascend, etc.), and related entities.",
+      "primary_url_candidate": "Link 1 (beehiiv redirect — needs resolution)"
+    },
+    {
+      "message_id": "<20260721193407.3.fe776ec3500fee68@mg2.substack.com>",
+      "subject": "Causal Models Need Causal Data - Xaira's X-Cell model for Drug Discovery (Bo Wang & Ci Chu)",
+      "date": "2026-07-21",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-21-causal-models-need-causal-data-xaira-s-x-cell-model-for-drug-discovery-bo-wang-c.md",
+      "source": "swyx / Latent Space (Substack)",
+      "decision": "take",
+      "importance": "high",
+      "reason": "Latent Space podcast episode on AI for drug discovery (Xaira's X-Cell model). AI in biology/pharma is a growing wiki-relevant domain. From Tier 1 source (swyx).",
+      "action": "Scrape the Latent Space post. Consider creating entity page for Xaira or updating AI drug discovery concepts.",
+      "primary_url_candidate": "https://open.substack.com/pub/swyx/p/xaira"
+    },
+    {
+      "message_id": "<20260722024134.3.444610a23f040707@mg-d0.substack.com>",
+      "subject": "Meta's Infrastructure Team Needs A Culture Reset",
+      "date": "2026-07-22",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-22-meta-s-infrastructure-team-needs-a-culture-reset.md",
+      "source": "SemiAnalysis (Substack)",
+      "decision": "take",
+      "importance": "critical",
+      "reason": "SemiAnalysis deep dive on Meta's AI infrastructure team culture. Directly relevant to Meta entity page and AI infrastructure/compute concepts. SemiAnalysis is Tier 1 for AI infra analysis.",
+      "action": "Scrape full article. Update Meta entity page with infrastructure team dynamics. Cross-reference with Meta AI compute/GPU cluster pages.",
+      "primary_url_candidate": "https://open.substack.com/pub/semianalysis/p/metas-infrastructure-team-needs-a"
+    },
+    {
+      "message_id": "<20260722032729.3.608e22c9e75250ab@mg2.substack.com>",
+      "subject": "[AINews] AI Cybersecurity becomes top of mind",
+      "date": "2026-07-22",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-22-ainews-ai-cybersecurity-becomes-top-of-mind.md",
+      "source": "swyx / Latent Space AINews (Substack)",
+      "decision": "take",
+      "importance": "critical",
+      "reason": "AINews from swyx covering AI cybersecurity — a critical emerging topic. AI security, adversarial attacks, and AI-powered cyber threats are directly wiki-relevant.",
+      "action": "Scrape and evaluate. Update or create concept pages on AI cybersecurity, AI safety/security. Cross-reference with existing safety entities.",
+      "primary_url_candidate": "https://open.substack.com/pub/swyx/p/ainews-ai-cybersecurity-becomes-top"
+    },
+    {
+      "message_id": "<20260722031339.3.9b30b415b2bd9306@mg-d1.substack.com>",
+      "subject": "What do you build when the models keep changing?",
+      "date": "2026-07-22",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-22-what-do-you-build-when-the-models-keep-changing.md",
+      "source": "Hugo Bowne-Anderson (Substack)",
+      "decision": "take",
+      "importance": "high",
+      "reason": "Article on agent engineering in the face of rapidly evolving models. Core wiki topic — the stability/portability challenge for AI agent builders.",
+      "action": "Scrape article. Consider updating agent engineering or AI application development concept pages.",
+      "primary_url_candidate": "https://open.substack.com/pub/hugobowne/p/are-better-models-making-agent-engineering"
+    },
+    {
+      "message_id": "<20260722140904.3.66d886b50144e31c@mg-d1.substack.com>",
+      "subject": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
+      "date": "2026-07-22",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-22-open-models-recap-more-on-kimi-k3-qwen-3-8-xi-s-waic-speech-distillation-the-ope.md",
+      "source": "Interconnects / Nathan Lambert (Substack)",
+      "decision": "take",
+      "importance": "critical",
+      "reason": "Comprehensive recap covering Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, and the open-closed model gap. Multiple new model releases and geopolitical context. Nathan Lambert is a Tier 1 source for open model analysis.",
+      "action": "Scrape full article. Update/create entity pages for Kimi K3, Qwen 3.8. Update open-source AI concepts, distillation, WAIC coverage.",
+      "primary_url_candidate": "https://open.substack.com/pub/robotic/p/open-models-recap-more-on-kimi-k3"
+    },
+    {
+      "message_id": "<20260722.173243.be11003f@mta6>",
+      "subject": "🔓 An OpenAI Model Broke Out to Cheat",
+      "date": "2026-07-22",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-22-an-openai-model-broke-out-to-cheat.md",
+      "source": "Beehiiv newsletter",
+      "decision": "take",
+      "importance": "critical",
+      "reason": "OpenAI model exhibiting deceptive/sandbox-escape behavior. Directly relevant to AI safety, alignment, and model governance. High-profile incident likely to be widely covered.",
+      "action": "Scrape primary article. Update OpenAI entity page. Create or update AI safety incident pages, deceptive alignment concepts.",
+      "primary_url_candidate": "Link 1 (beehiiv redirect — needs resolution)"
+    },
+    {
+      "message_id": "<20260722194256.3.5a724a45c7d00f5f@mg-d0.substack.com>",
+      "subject": "Inside PM at Stripe: What Comes After 'Become a Builder'?",
+      "date": "2026-07-22",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-22-inside-pm-at-stripe-what-comes-after-become-a-builder.md",
+      "source": "The Skip / Lenny's Newsletter (Substack)",
+      "decision": "skip",
+      "importance": "none",
+      "reason": "Product management at Stripe — not AI/LLM relevant. General PM methodology content."
+    },
+    {
+      "message_id": "<20260723004748.3.d36ee5cc8814c3aa@mg-d0.substack.com>",
+      "subject": "Vera Rubin NVL72 vs GB200 NVL72? Inference TCO & Architecture Analysis",
+      "date": "2026-07-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-23-vera-rubin-nvl72-vs-gb200-nvl72-inference-tco-architecture-analysis.md",
+      "source": "SemiAnalysis (Substack)",
+      "decision": "take",
+      "importance": "critical",
+      "reason": "SemiAnalysis deep comparison of NVIDIA Vera Rubin vs GB200 for inference TCO. Core AI infrastructure content — GPU architecture, inference cost optimization, next-gen NVIDIA hardware.",
+      "action": "Scrape full article. Create/update NVIDIA Vera Rubin entity page. Update GPU inference concepts and TCO comparison pages.",
+      "primary_url_candidate": "https://open.substack.com/pub/semianalysis/p/vera-rubin-nvl72-vs-gb200-nvl72-inference"
+    },
+    {
+      "message_id": "<20260723050914.3.52a6efaaf75be560@mg2.substack.com>",
+      "subject": "Inside the Model Factory — Eiso Kant, Poolside AI",
+      "date": "2026-07-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-23-inside-the-model-factory-eiso-kant-poolside-ai.md",
+      "source": "swyx / Latent Space (Substack)",
+      "decision": "take",
+      "importance": "high",
+      "reason": "Latent Space podcast with Poolside AI CEO Eiso Kant on model training infrastructure. Poolside is an important AI coding assistant company. From Tier 1 source.",
+      "action": "Scrape article. Create or update Poolside AI entity page. Consider updating AI coding assistant ecosystem pages.",
+      "primary_url_candidate": "https://open.substack.com/pub/swyx/p/poolside"
+    },
+    {
+      "message_id": "<20260723051847.3.e73ea9ee85f9db55@mg2.substack.com>",
+      "subject": "[AINews] 'Laguna S 2.1 Released: Cheaper than Deepseek v4 Flash, Better than V4 Pro'",
+      "date": "2026-07-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-23-ainews-laguna-s-2-1-released-cheaper-than-deepseek-v4-flash-better-than-v4-pro.md",
+      "source": "swyx / Latent Space AINews (Substack)",
+      "decision": "take",
+      "importance": "critical",
+      "reason": "New model release — Laguna S 2.1 — claiming cost and quality advantages over DeepSeek v4 variants. Model release with competitive benchmarking data. Directly relevant to LLM ecosystem.",
+      "action": "Scrape and extract benchmark/pricing data. Create Laguna S entity page if substantive. Update DeepSeek entity page with competitive context.",
+      "primary_url_candidate": "https://open.substack.com/pub/swyx/p/ainews-laguna-s-21-released-cheaper"
+    },
+    {
+      "message_id": "<20260723130505.3.61b1ddf851f5c8ef@mg2.substack.com>",
+      "subject": "Caught cheating",
+      "date": "2026-07-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-23-caught-cheating.md",
+      "source": "Ben's Bites (Substack)",
+      "decision": "take",
+      "importance": "high",
+      "reason": "Ben's Bites on AI model cheating — likely relates to the same OpenAI incident or broader model deception trends. AI safety/alignment topic.",
+      "action": "Scrape article. Cross-reference with the 'An OpenAI Model Broke Out to Cheat' newsletter for related coverage.",
+      "primary_url_candidate": "https://open.substack.com/pub/bensbites/p/caught-cheating"
+    },
+    {
+      "message_id": "<20260723.163209.5ff95c07@mta6>",
+      "subject": "🚫 Founders to Trump: Don't Ban China's AI",
+      "date": "2026-07-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-23-founders-to-trump-don-t-ban-china-s-ai.md",
+      "source": "Beehiiv newsletter",
+      "decision": "take",
+      "importance": "high",
+      "reason": "Industry response to potential US ban on Chinese AI. Geopolitics of AI, US-China AI competition, and AI policy. High policy relevance.",
+      "action": "Scrape article. Update AI policy/geopolitics concept pages. Cross-reference with China AI chip independence coverage.",
+      "primary_url_candidate": "Link 1 (beehiiv redirect — needs resolution)"
+    },
+    {
+      "message_id": "<20260723173137.3.e116487aed28ff05@mg2.substack.com>",
+      "subject": "True Positive Weekly #170",
+      "date": "2026-07-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-23-true-positive-weekly-170.md",
+      "source": "AI Weekly / True Positive (Substack)",
+      "decision": "take",
+      "importance": "high",
+      "reason": "Weekly AI roundup digest. Likely contains curated links to multiple AI developments worth triaging individually.",
+      "action": "Scrape and extract individual article links. Evaluate each for wiki relevance separately.",
+      "primary_url_candidate": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-170"
+    },
+    {
+      "message_id": "<20260723232857.3.247491d1a29fac09@mg-d1.substack.com>",
+      "subject": "ChatGPT Work.",
+      "date": "2026-07-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-23-chatgpt-work.md",
+      "source": "AI by Aakash (Substack)",
+      "decision": "take",
+      "importance": "high",
+      "reason": "ChatGPT in workplace/productivity context. OpenAI ChatGPT entity page should track enterprise/work usage patterns.",
+      "action": "Scrape and evaluate. Update OpenAI/ChatGPT entity page if substantive new usage patterns or features are covered.",
+      "primary_url_candidate": "https://open.substack.com/pub/aibyaakash/p/chatgpt-work"
+    },
+    {
+      "message_id": "<20260724043013.3.4e3dc998466f1c07@mg-d1.substack.com>",
+      "subject": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine",
+      "date": "2026-07-24",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-24-ainews-black-forest-labs-flux-3-multimodal-flow-models-that-beat-seedance-2-0-ge.md",
+      "source": "swyx / Latent Space AINews (Substack)",
+      "decision": "take",
+      "importance": "critical",
+      "reason": "Major model release: Black Forest Labs FLUX 3 multimodal flow model, beating Seedance 2.0, Gemini Omni, and Grok Imagine. Significant development in image/video generation with competitive benchmarking.",
+      "action": "Scrape and extract benchmark data, architecture details. Create/update Black Forest Labs entity page. Update FLUX model series, image generation concepts, and comparison pages.",
+      "primary_url_candidate": "https://open.substack.com/pub/swyx/p/ainews-black-forest-labs-flux-3-multimodal"
+    }
+  ]
+}
