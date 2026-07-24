@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (863 pages)
+## Entities (864 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -249,6 +249,7 @@
 - [[entities/elvis]] — elvis
 - [[entities/elvis-saravia]] — Elvis Saravia
 - [[entities/elvis-sun]] — Elvis Sun
+- [[entities/eiso-kant]] — Eiso Kant — co-founder and co-CEO of Poolside; Model Factory thesis, open-weight coding models, anti-MCP/pro-scripting-agents philosophy (July 24)
 - [[entities/embeddings]] — Single-vector embedding models — strengths, limitations, and the theoretical constraints of embedding-based retrieval...
 - [[entities/embra]] — Embra
 - [[entities/emmanuel-ameisen]] — Emmanuel Ameisen

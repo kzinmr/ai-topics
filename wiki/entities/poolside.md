@@ -4,6 +4,12 @@ created: 2026-04-29
 updated: 2026-07-24
 type: entity
 tags: [company, model, coding-agents]
+related:
+  - entities/eiso-kant
+  - entities/openai
+  - entities/anthropic
+  - entities/nvidia
+  - concepts/harness-engineering
 sources:
   - raw/newsletters/2026-04-28-builders.md
   - raw/newsletters/2026-06-28-latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expanding-the-breadth-of.md
@@ -55,9 +61,27 @@ Laguna S 2.1 is Poolside's most capable model to date, notable for:
 
 ## Background
 
-Poolside has been building an internal **"Model Factory"** over several years, encompassing proprietary data pipelines, training stack, and agent infrastructure. Their initial focus was on **public sector deployments** with strict security requirements (on-prem, air-gapped).
+Poolside was founded by Eiso Kant (co-CEO). Kant started building language models for code in 2015 after being inspired by Andrej Karpathy's RNN post, spending $12M on the idea before the market cared -- an investment he describes as a "failure" that was later vindicated by ChatGPT's launch.
+
+Poolside has been building an internal **"Model Factory"** over several years, encompassing proprietary data pipelines, training stack, and agent infrastructure. Their initial focus was on **public sector deployments** with strict security requirements (on-prem, air-gapped). The company operates a global research organization outside the Bay Area talent war, with fewer than 70 researchers running 10,000-20,000 experiments per month.
 
 The April 2026 Laguna release marked their first public shipping of foundation models. In June 2026, Poolside released Laguna M.1 under Apache 2.0, affirming that open weights are now their default. "Open weights are now our default. We'll keep building toward the frontier and releasing increasingly capable models in the open."
+
+## Key Philosophical Positions (Eiso Kant)
+
+Eiso Kant has articulated several distinctive positions in the Latent Space interview (July 2026):
+
+### Against MCP and Traditional Tool Calls
+Kant describes MCP (Model Context Protocol) and traditional tool-calling APIs as "stupid," arguing that agents should write Python scripts directly rather than choosing from dozens of predefined tools. He advocates for **minimal harnesses, containers, and model freedom** -- the agent should be free to express its behavior through code, not constrained by a fixed tool schema.
+
+### Distillation and Environments as "Drugs"
+Kant views knowledge distillation and RL environments as the AI industry's favorite "drugs" -- they provide short-term performance gains but create long-term brittleness. He argues that training from scratch on clean data produces more steerable, robust models.
+
+### RL Will Move Earlier into Pre-Training
+Kant predicts that reinforcement learning will shift earlier into the pre-training phase, becoming a form of curriculum design rather than being confined to post-training. This reflects his view that capability should be learned, not inherited.
+
+### 100 Foundation Model Companies
+Kant prefers a world with 100 foundation model companies over an oligopoly of five, even if Poolside were one of the five. He argues concentrated intelligence is dangerous, a view reflected in Poolside's OpenMDW-1.1 license and commitment to open weights.
 
 ## Training Stack
 
@@ -78,6 +102,7 @@ Poolside operates an internal 'Model Factory' capable of 10,000–20,000 experim
 
 ## Relationships
 
+- [[entities/eiso-kant]] — Co-founder and co-CEO
 - [[entities/openai]] — Competes in the agentic coding space
 - [[entities/anthropic]] — Competes in the agentic coding space
 - [[entities/nvidia]] — Working with NVIDIA on model development
@@ -86,6 +111,8 @@ Poolside operates an internal 'Model Factory' capable of 10,000–20,000 experim
 
 ## Sources
 
+- [Latent Space: Inside the Model Factory — Eiso Kant (July 2026)](https://www.latent.space/p/poolside)
+- [Poolside Blog: Introducing Laguna S 2.1](https://poolside.ai/blog/introducing-laguna-s-2-1)
 - [Poolside Blog: Introducing Laguna XS.2 and M.1](https://poolside.ai/blog/introducing-laguna-xs2-m1) (April 2026)
 - [Poolside Blog: A Deeper Dive](https://poolside.ai/blog/laguna-a-deeper-dive)
 - [HuggingFace: poolside/Laguna-XS.2](https://huggingface.co/poolside/Laguna-XS.2)

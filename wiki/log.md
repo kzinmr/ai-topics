@@ -1,3 +1,24 @@
+## [2026-07-24] raw-backlog-ingest — Poolside Model Factory enrichment, Eiso Kant entity creation (5 articles: 3 archived, 1 skip, 1 enrich+create)
+
+**Processed 5 articles from raw backlog:**
+
+1. **Poolside Latent Space (Eiso Kant) — NEW:**
+   - Created [[entities/eiso-kant]] — Eiso Kant bio, Model Factory thesis, anti-MCP philosophy, distillation-as-drugs stance, 100-foundation-model-companies vision
+   - Enriched [[entities/poolside]] — Added Eiso Kant founder background, Key Philosophical Positions section (4 subsections), Relationships with eiso-kant, updated Sources with Latent Space interview + Laguna S 2.1 blog, bumped page count (93->117 lines)
+
+2. **Reframing Superintelligence (Drexler 2019 FHI report)** — Already archived and fully covered by [[entities/k-eric-drexler]] + [[concepts/comprehensive-ai-services]] + [[concepts/cais]] → Skip
+
+3. **MAI-Thinking-1 Tech Report (Microsoft 109pp)** — Already fully covered by [[entities/mai-thinking-1]] (165 lines) + [[concepts/mai-thinking-1-tech-report]] (227 lines) → Skip
+
+4. **BenchFlow Awesome Agent Evals** — Already fully covered by [[concepts/ai-benchmarks/benchflow-tool]] (118 lines with full Awesome Agent Evals section) → Skip
+
+5. **Grant Sanderson AI/Math (Dwarkesh)** — Already fully covered by [[entities/grant-sanderson]] (141 lines) → Skip
+
+**Pages created:** 1 (eiso-kant)
+**Pages enriched:** 1 (poolside)
+**Index updated:** Entities count 863→864
+**Script:** raw_backlog_collect.py --sort ai-hint --limit 5
+
 ## [2026-07-24] X bookmarks ingest — MS MAI Frontier Diffusion & Control, Onyx VM, ChatGPT Work VM, Simon Willison Voice Mode
 
 **New raw articles (4):**
