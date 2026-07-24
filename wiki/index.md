@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (861 pages)
+## Entities (862 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -447,6 +447,7 @@
 - [[entities/larsen-cundric]] — Larsen Cundric
 - [[entities/late-interaction]] — Late Interaction Workshop (LIR) @ ECIR 2026
 - [[entities/lcamtuf]] — Michał Zalewski (lcamtuf)
+- [[entities/lee-robinson]] — Lee Robinson — Model behavior at Cursor AI, former VP of Product at Vercel; accessible explanations of model training (pretraining → SFT → RL → alignment)
 - [[entities/lenny]] — Lenny Rachitsky
 - [[entities/lester-solbakken]] — Lester Solbakken
 - [[entities/letta]] — Letta (Letta AI)

@@ -1,3 +1,13 @@
+## [2026-07-24] Manual ingest — Lee Robinson "How we teach AI models" X Article
+
+**Action**: Manual wiki ingest from X (@leerob)
+
+**Changes:**
+- **raw/articles/2026-07-24_leerob_how-we-teach-ai-models.md** — New raw article: X Article "How we teach AI models" by Lee Robinson; general-audience explainer on pretraining → SFT → RL → alignment pipeline using basketball analogies and "helpful colleague" framing; 1,100+ bookmarks
+- **entities/lee-robinson.md** — New entity page: Lee Robinson; model behavior at Cursor AI, former VP of Product at Vercel; accessible model training educator
+- **concepts/post-training/_index.md** — Updated: added raw article as source
+- **index.md** — Added lee-robinson entity entry (862 entities)
+
 ## [2026-07-22] Manual ingest — Mem0 "The State of Agent Wikis" X Article
 
 **Action**: Manual wiki ingest from X (mem0ai)
