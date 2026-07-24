@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-07-10
+updated: 2026-07-24
 tags:
   - company
   - model
@@ -464,10 +464,13 @@ Key highlights:
 - **GPT-5.4 retirement**: July 23, 2026
 
 ### ChatGPT Work
+
 A new **agent mode** available on web, mobile, and desktop. ChatGPT Work is an autonomous agent that can:
 - Run in the cloud (web/mobile) or locally on desktop (with file/app access)
 - Execute multi-step tasks with persistent context
 - Integrate with Codex capabilities
+
+**Infrastructure**: As observed by Max Jendrall (July 22, 2026), ChatGPT Work provides a **15GB RAM, 9-core VM** to all paid subscribers — effectively giving non-technical users remote machines with enough resources to perform most knowledge-worker automation. This represents a shift toward "agent-as-infrastructure" where the compute environment (not just the language model) is part of the product. Source: [[raw/articles/2026-07-22_maxjendrall_openai-chatgpt-work-vm]]
 
 > *"[...] Work on web and mobile runs in the cloud. Work in the desktop app can also use local files and desktop apps with your permission. At launch, cloud Work conversations do not appear in desktop Work; desktop Work threads and local files remain on that computer."* — OpenAI (quoted by Simon Willison as "trying (unsuccessfully) to clarify ChatGPT Work")
 

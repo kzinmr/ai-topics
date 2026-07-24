@@ -867,7 +867,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1827 pages)
+## Concepts (1829 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -888,6 +888,7 @@
 - [[concepts/agent-approval-spoofing]] — Agent Approval Spoofing — Security vulnerability where AI coding assistants display incorrect file paths in approval dialogs
 - [[concepts/agent-communication-standards]] — Agent Communication Standards — ACP, A2A, BeeAI
 - [[concepts/agent-distillation]] — Agent Distillation
+- [[concepts/agent-orchestration-runtime]] — Agent Orchestration Runtime — Turning agent orchestration into software engineering via a VM with persistent state, type guarantees, and control flow; Onyx VM by Random Labs
 - [[concepts/agent-documentation]] — agent-documentation
 - [[concepts/agent-driven-ranker-optimization]] — Agent-Driven Ranker Optimization
 - [[concepts/agent-economics]] — Agent Economics
@@ -1593,6 +1594,7 @@
 - [[concepts/enterprise-agents]] — Enterprise Agents
 - [[concepts/enterprise-ai-cost-management]] — Enterprise AI Tool Cost Management
 - [[concepts/enterprise-ai-deployment-jv]] — Enterprise AI Deployment Joint Ventures
+- [[concepts/enterprise-rle]] — Enterprise RLE (Reinforcement Learning Environments) — In-product RL training where models learn inside the actual product harness, with externalized context/skills/tools for model independence
 - [[concepts/enterprise-ai-operating-model]] — Enterprise AI Operating Model
 - [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns
 - [[concepts/enterprise-coding-agent-security]] — Enterprise Coding Agent Security — Security risks of coding agents in enterprise: session leakage, data exfiltration, supply chain; Claude Code and Alibaba case studies

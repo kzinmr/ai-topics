@@ -8,7 +8,7 @@ type: entity
 handle: "@realmcore_"
 name: Akira (Random Labs)
 created: 2026-04-13
-updated: 2026-06-07
+updated: 2026-07-24
 status: complete
 tags:
   - person
@@ -139,6 +139,39 @@ Critiques the traditional approach of skills as "static prompts":
 - Automation workflows via Orchestration Skills
 - Context Forking (Alpha)
 
+### Onyx VM & programs (July 2026)
+
+In July 2026, Random Labs introduced **Onyx**, a VM for programmable agent orchestration, and the **`*.program.ts`** specification. The core thesis: agent orchestration should be programmable like modern software — with a standard library, clear semantics, and an execution model that provides guarantees — rather than chaining bash scripts and piping text between agents.
+
+**The 10 VM Requirements:**
+
+1. **Persistent state management** — state survives across agent runs and program boundaries
+2. **Type guarantees** — enforced output types via `zod`, schema-adherent state
+3. **Control flow primitives** — conditionals, loops, branching within programs
+4. **Error handling (try-catch)** — explicit error semantics for agent failures, budget exhaustion, illegal state modifications
+5. **Resource management** — agent parallelism, cost controls, model selection
+6. **Execution isolation** — agents run in isolated contexts
+7. **Lifecycle control** — spawn, pause, resume, kill agents from program logic
+8. **Composability** — programs compose like software modules
+9. **Visibility** — observability into running programs and agent state
+10. **Durability** — programs survive restarts and failures (not yet fully defined as of July 2026)
+
+**Onyx Primitives:**
+
+| Primitive | Description |
+|---|---|
+| `run` | Runs a blocking agent in the foreground; supports enforced output types via `zod` and direct model overrides |
+| `spawn` | Runs an agent in the background (non-blocking) |
+| `state` | Declared, named, persisted state namespaces; both agents and code read state; agents read via a dedicated tool; schema adherence gates subagent completion |
+| `checkpoint` | Notifies the main agent with a fixed-shape object, enabling task progress tracking |
+| `sleep` | Pauses execution (standard control flow) |
+
+**Error semantics:** Errors are thrown loudly — agent failures, budget exhaustion, illegal state modifications all produce explicit, catchable errors. This gives programs explicit ways to prepare for and program around failure modes.
+
+**`*.program.ts`:** Programs are defined as TypeScript files using the `*.program.ts` extension. They express agent orchestration logic as first-class code: spawning agents, managing state, checkpointing progress, and handling errors — all within a typed, deterministic runtime.
+
+**Autoresearch as a program example:** Karpathy's autoresearch pattern is demonstrated as a `*.program.ts` — a setup agent runs first, then a loop of experiment agents executes. Each experiment gets a fresh agent; the program and agents share state through the `state` primitive. This illustrates how a previously ad-hoc orchestration pattern becomes a typed, composable, reusable program.
+
 ## Connection to Harness Engineering & Agentic Engineering
 
 Akira's Slate occupies an important position in the context of [[concepts/harness-engineering]]:
@@ -189,3 +222,5 @@ Slate is a pioneering implementation of the "swarm orchestration" paradigm in [[
 - [VentureBeat: YC-backed Random Labs launches Slate V1](https://venturebeat.com/orchestration/y-combinator-backed-random-labs-launches-slate-v1-claiming-the-first-swarm)
 - [Podcast: Slate: An Agent Architecture - Vinh Nguyen](https://www.youtube.com/watch?v=zTXWPdsiv9c)
 - [Slate Documentation](https://docs.randomlabs.ai/)
+- [Random Labs Blog: Designing a programmable runtime for agent orchestration](https://x.com/i/article/2073112080140689408)
+- raw/articles/2026-07-03_random-labs_designing-a-programmable-runtime-for-agent-orchestration.md

@@ -1,3 +1,24 @@
+## [2026-07-24] X bookmarks ingest — MS MAI Frontier Diffusion & Control, Onyx VM, ChatGPT Work VM, Simon Willison Voice Mode
+
+**New raw articles (4):**
+- [[raw/articles/2026-07-23_microsoft-ai_frontier-diffusion-and-control]] — Mustafa Suleyman on Microsoft's MAI hill-climbing strategy, in-product RLEs, model independence
+- [[raw/articles/2026-07-03_random-labs_designing-a-programmable-runtime-for-agent-orchestration]] — Random Labs' Onyx VM: turning agent orchestration into software engineering via *.program.ts
+- [[raw/articles/2026-07-22_maxjendrall_openai-chatgpt-work-vm]] — OpenAI ChatGPT Work: 15GB RAM, 9-core VM for all paid subscribers
+- [[raw/articles/2026-07-21_simon-willison_voice-mode-rambling-llm-context]] — Simon Willison on using voice mode as low-friction LLM context dumping
+
+**New concept pages (2):**
+- [[concepts/enterprise-rle]] — Enterprise Reinforcement Learning Environments: in-product RL with externalized harness/context/skills for model independence (from MS MAI article)
+- [[concepts/agent-orchestration-runtime]] — Agent Orchestration Runtime: Onyx VM design with 10 requirements, run/spawn/state/checkpoint primitives, *.program.ts (from Random Labs article)
+
+**Enriched entity pages (3):**
+- [[entities/microsoft-ai-team]] — Added Frontier Diffusion & Control strategy, in-product RLEs, product deployment table (GitHub Copilot, Excel, Outlook, Copilot Chat, PowerPoint)
+- [[entities/akira-realmcore]] — Added Onyx VM & programs section (10 VM requirements, primitives, error semantics, autoresearch-as-program)
+- [[entities/openai]] — Added ChatGPT Work infrastructure details (15GB RAM, 9-core VM for all paid subscribers)
+- [[entities/simon-willison]] — Added voice mode rambling as LLM context strategy in Link Blog Highlights
+
+**Verified (no changes needed):**
+- [[entities/deepseek]] — Liang Wenfeng investor meeting transcript already comprehensively covered (429 lines)
+
 ## [2026-07-24] active-crawl batch — 3 new concept pages + 3 raw articles
 
 | 2026-07-24 | concepts/claude-fable-jacobian-conjecture.md | created | Claude Fable 5 produces counterexample to 85-year-old Jacobian Conjecture; explicit degree-7 polynomial, Lean-verified, 801 HN pts |

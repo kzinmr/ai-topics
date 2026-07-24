@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-07-19
+updated: 2026-07-24
 status: L3
   sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
@@ -387,6 +387,8 @@ These changes make LLM future-proof for the diversity of input/output capabiliti
 
 | Date | Title | Key Quote |
 |------|-------|-----------|
+| Jul 21 2026 | [Voice mode rambling for LLM context](https://x.com/simonw/status/2079610838143623371) | "Sometimes the LLM needs more bits to understand what you're trying to achieve, but you're too lazy to type them. In these cases I like to lean back, switch to /voice and just ramble for like 10 [minutes]." — Using voice input as a low-friction context-dumping strategy for LLMs. Extends the agentic engineering philosophy to input modality optimization. Source: [[raw/articles/2026-07-21_simon-willison_voice-mode-rambling-llm-context]] |
+|
 | May 26 2026 | [The pressure](https://simonwillison.net/2026/May/26/the-pressure/) | Daniel Stenberg on curl project facing 4-5× more AI-assisted security reports than 2024 — "For the first time in my life, my wife voiced concerns about my work hours." |
 
 ## References
