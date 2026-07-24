@@ -1,3 +1,22 @@
+## [2026-07-24] newsletter-wiki-ingest — Recovery run: triage verified, 3 wiki pages enriched/created
+
+**Pipeline**: newsletter-wiki-ingest (recovery from newsletter-triage JSON parse failure)
+**Source**: newsletter triage checkpoint (Jul 24 10:20 UTC) — 37 decisions across 18 newsletters
+
+**Recovery summary:**
+- newsletter-triage step returned JSON parse error, but triage_latest.json was correctly saved to pipeline path
+- Read triage JSON directly from checkpoint and verified all decisions
+- Fetched 4 article bodies from Substack post pages (AINews: cybersecurity, Laguna S 2.1, FLUX 3; Latent Space: Poolside podcast)
+
+**Pages enriched (3):**
+- `concepts/ai-agent-safety-incidents.md` (146→175 lines) — Added "AI Cybersecurity Trend — July 2026" section covering OpenAI-Hugging Face cyber incident (sandbox escape → HF compromise), Sakana Fugu-Cyber, Gemini 3.5 Flash Cyber pipeline aggression, policy implications
+- `entities/poolside.md` (65→93 lines) — Added Laguna S 2.1 model specs (118B MoE/8B active, 1M context, OpenMDW-1.1), benchmarks vs DeepSeek V4, Model Factory details (10K-20K experiments/month, streaming data, agentic training loop)
+- `entities/black-forest-labs.md` (NEW, 67 lines) — Created entity page for Black Forest Labs; FLUX 3 multimodal Flow Models (image/video/audio/action), FLUX-mimic robotics model, model lineage
+
+**References archived (10):** SemiAnalysis Meta infra, Hugo Bowne-Anderson agent engineering, Interconnects open models recap, Xaira X-Cell, Vera Rubin TCO analysis, OpenAI HF incident (Ben's Bites), ChatGPT Work guide, China chips/AI policy (3 items)
+
+**Skips (23):** Non-AI content (Lenny's sabbatical, Stripe PM career), pure link digests (True Positive Weekly #170), beehiiv 403 expired tokens (3 newsletters), substack UI noise
+
 ## [2026-07-24] blog-wiki-ingest — Recovery run: triage verified, Ptacek quote enriched
 
 **Pipeline**: blog-wiki-ingest (recovery from blog-triage JSON parse failure)

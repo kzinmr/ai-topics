@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (862 pages)
+## Entities (863 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -94,6 +94,7 @@
 - [[entities/bernstein]] — Bernstein
 - [[entities/berthub-eu]] — Bert Hubert
 - [[entities/bespoke-labs]] — Bespoke Labs; added OpenThoughts-Agent pipeline — open curation/training pipeline for agentic models with 100+ controlled ablations (June 25)
+- [[entities/black-forest-labs]] — Black Forest Labs (BFL) — Multimodal AI company; FLUX 3 multimodal Flow Models (image/video/audio/action), FLUX-mimic robotics (July 24)
 - [[entities/block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-...
 - [[entities/boaz-barak]] — Boaz Barak — Harvard CS professor; theoretical CS, cryptography, AI safety, co-author of 'Computational Complexity: A Modern Approach' (June 27)
 - [[entities/bogdanthegeek-s-blog]] — Bogdan Ionescu (BogdanTheGeek)
@@ -630,7 +631,7 @@
 - [[entities/pointer]] — Pointer
 - [[entities/pointer-ai]] — Pointer AI
 - [[entities/polar-prorl-agent-server]] — Polar (ProRL-Agent-Server)
-- [[entities/poolside]] — Poolside — Foundation model lab focused on agentic coding models; Laguna M.1 (Apache 2.0), Laguna XS.2 (open-weight), pool and Shimmer products; open-weights as default commitment (June 29)
+- [[entities/poolside]] — Poolside — Foundation model lab focused on agentic coding models; Laguna M.1 (Apache 2.0), Laguna XS.2 (open-weight), Laguna S 2.1 (118B MoE/8B active, Jul 2026), Model Factory (10K-20K experiments/month); open-weights as default commitment (July 24)
 - [[entities/portkey]] — Portkey
 - [[entities/pratik-bhavsar]] — Pratik Bhavsar
 - [[entities/prefeitura-rio]] — Prefeitura Rio (IplanRIO)
@@ -963,7 +964,7 @@
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
 - [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
 - [[concepts/wiki-memory]] — Wiki Memory — Agent-maintained file-based knowledge layer pattern (Harrison Chase, 2026)
-- [[concepts/ai-agent-safety-incidents]]
+- [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Fedora/GitLost/NanoGPT sandbox escape, AI cybersecurity trend (OpenAI-Hugging Face incident, specialized cyber models, July 24)
 - [[concepts/ai-agent-security]] — AI Agent Security
 - [[concepts/ai-agent-traps]] — AI Agent Traps
 - [[concepts/ai-agent-video-editing]] — AI Agent Video Editing

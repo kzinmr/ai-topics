@@ -1,12 +1,14 @@
 ---
 title: Poolside
 created: 2026-04-29
-updated: 2026-06-29
+updated: 2026-07-24
 type: entity
 tags: [company, model, coding-agents]
 sources:
   - raw/newsletters/2026-04-28-builders.md
   - raw/newsletters/2026-06-28-latest-open-artifacts-22-zyphra-cohere-and-poolside-are-expanding-the-breadth-of.md
+  - raw/articles/2026-07-24_poolside-latent-space.md
+  - raw/articles/2026-07-24_ainews-laguna-s21.md
 ---
 
 # Poolside
@@ -21,6 +23,21 @@ sources:
 |-------|-------------|-----------|------|---------|
 | **Laguna M.1** | 225B | 23B | MoE | Apache 2.0 |
 | **Laguna XS.2** | 33B | 3B | MoE | **Apache 2.0** (open-weight) |
+
+### Laguna S 2.1 (July 2026)
+
+| Model | Total Params | Active Params | Type | Context | License |
+|-------|-------------|---------------|------|---------|--------|
+| **Laguna S 2.1** | 118B | 8B | MoE | 1M tokens | OpenMDW-1.1 |
+
+Laguna S 2.1 is Poolside's most capable model to date, notable for:
+- **Architecture**: 118B total parameter MoE with 8B activated per token.
+- **Context window**: Up to 1M tokens — significantly larger than the Laguna M.1 (131K).
+- **Thinking modes**: Supports both thinking and no-thinking modes per request.
+- **Benchmarks**: Outperforms DeepSeek V4 Flash on agentic coding tasks while being cheaper; competitive with Thinking Machines models ~10× its size. Reddit community assessment: \"Cheaper than Deepseek v4 Flash, Better than V4 Pro.\"
+- **Deployment**: Small enough to run on a single NVIDIA DGX Spark; supported on OpenRouter and various inference providers.
+- **License**: OpenMDW-1.1 — Poolside explicitly framed open-weight releases as a way to avoid intelligence concentration in 'three or four companies.'
+- **Ecosystem**: Amplified by infra partners including @DannieHerz, @tuhinone, @ctnzr; GGUF quantized versions available on HuggingFace.
 
 **Laguna XS.2** is Poolside's first open-weight release, notable for:
 - **Architecture**: 40 layers total, with 10 global attention + 30 sliding window attention layers (3:1 ratio). Sigmoid gating with per-layer rotary scales.
@@ -47,6 +64,17 @@ The April 2026 Laguna release marked their first public shipping of foundation m
 - **Optimizer**: Muon (not AdamW)
 - **Data**: 30T tokens for Laguna XS.2, with data automixing and async off-policy agent RL
 - **Post-training**: Agent reinforcement learning for agentic coding capabilities
+
+## Model Factory
+
+Poolside operates an internal 'Model Factory' capable of 10,000–20,000 experiments per month (detailed in Latent Space podcast with Eiso Kant, July 2026). Key capabilities:
+- **Streaming data**: Data is streamed directly into training pipelines without batch pre-processing bottlenecks.
+- **Reproducible experimentation**: Infrastructure designed for reproducible ML experiments at scale.
+- **Agentic training**: AI agents increasingly write code, launch jobs, evaluate results, and modify the pipelines used to train future models — a closed-loop self-improvement system.
+- **Low-precision compute**: Optimized for low-precision training without quality degradation.
+- **Rapid iteration**: Can take a model from pre-training to release in approximately 8 weeks.
+- **Data automixing**: Dynamic mixing of training data sources during training.
+- **Agent RL**: Asynchronous off-policy agent reinforcement learning for post-training.
 
 ## Relationships
 
