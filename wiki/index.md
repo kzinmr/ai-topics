@@ -867,7 +867,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1919 pages)
+## Concepts (1920 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2623,6 +2623,7 @@
 - [[concepts/subagents]] — Pattern where a main agent spawns independent sub-agents in parallel to delegate tasks.
 - [[concepts/subagents-parallel-ai-agent-delegation]] — Subagents — Parallel AI Agent Delegation
 - [[concepts/subquadratic-attention]] — Subquadratic Attention
+- [[concepts/subprime-data-center-crisis]] — The Subprime Data Center Crisis — Ed Zitron's analysis of AI data center debt as a functional analogue to 2008 subprime mortgages via SPVs, off-balance-sheet financing, and 15× overbuild
 - [[concepts/super-agent-platform-thesis]] — Super-Agent Platform Thesis — US AI's Answer to the Chinese Super-App
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
 - [[concepts/superlinear-returns]] — superlinear-returns

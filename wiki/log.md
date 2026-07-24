@@ -1,3 +1,11 @@
+## [2026-07-24] Dreaming — Knowledge consolidation (dreaming-wiki-ingest)
+- **Take (1)**: [[concepts/subprime-data-center-crisis]] — Created: Ed Zitron's analysis of AI data center debt as analogue to 2008 subprime mortgages (SPVs, off-balance-sheet financing, 15× overbuild, NVIDIA circular financing, systemic pension fund exposure)
+- **Enriched (2)**: [[concepts/ai-agent-safety-incidents]] — Added ExploitGym benchmark data (898 vulns; Claude Mythos Preview 157, GPT-5.5 120 successes) and Martin Alderson monitoring gap analysis (HF attack surface, unlimited token budgets, concurrent checkpoint testing)
+- **Enriched (1)**: [[concepts/kimi-k3]] — Added White House distillation allegations section (Kratsios accusation, ClinePass 0→16% adoption, policy response)
+- **Skipped**: ai-containment-escape.md — Already covered by blog-ingest (page created earlier today from same article)
+- **Skipped (batch)**: Already-processed + non-AI articles
+- **Note**: Upstream dreaming-group at 18:00 UTC completed triage but failed JSON render; triage_latest.json recovered from output file; 4 of 5 enrichment gaps confirmed (1 false positive — ai-containment-escape already covered by blog-ingest)
+
 ## [2026-07-24] raw-backlog-ingest | All 5 articles already covered
 
 All articles in this batch were already fully processed by prior runs:

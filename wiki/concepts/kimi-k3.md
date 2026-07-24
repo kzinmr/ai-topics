@@ -2,7 +2,7 @@
 title: "Moonshot Kimi K3"
 type: concept
 created: 2026-07-17
-updated: 2026-07-21
+updated: 2026-07-24
 tags:
   - model
   - china
@@ -232,6 +232,24 @@ The cost of producing intelligence depends on five factors:
 - This analysis suggests the AI industry may follow traditional industrial economics more than software economics — marginal costs are back
 
 > **Source**: [Stratechery — Who's Afraid of Chinese Models?](https://stratechery.com/2026/whos-afraid-of-chinese-models/) (July 2026)
+
+## Distillation Allegations (July 2026)
+
+### White House Accusation
+US Tech & Science Advisor Michael Kratsios (@mkratsios47) publicly alleged that Moonshot AI engaged in "large-scale, covert industrial distillation" of Anthropic's Fable to build Kimi K3. The accusation cited:
+- Access to NVIDIA GB300 clusters in Thailand as the mechanism
+- Dismissed Moonshot's claims of architectural innovation (KDA, AttnRes) as "minor modifications" atop copied weights
+
+### Pushback and Open Questions
+- Critics noted the lack of public evidence — no benchmark similarity analysis, weight comparison, or training data forensics was presented
+- Moonshot's existing contributions (KDA in vLLM, AttnRes paper) argued against wholesale theft — building those innovations would be unnecessary if weights were simply copied
+- The accusation came amid broader Trump administration efforts to restrict Chinese AI models (Axios, July 2026)
+
+### Ecosystem Impact
+- **ClinePass adoption**: K3 went from 0% to 16% token usage in 3 days, becoming its #3 most-used open-weight model, per @cline
+- **Policy response**: Administration officials framed the incident as evidence for stronger AI model export controls and provenance tracking
+- **IP concerns**: Legal observers noted the difficulty of proving distillation without model weight access, and questioned whether trade secret claims could hold given Fable's public deployment via API
+- **Paradoxical effect**: The allegations may accelerate adoption — demanding provenance gives K3 more attention, and ban attempts may drive users toward decentralized hosting
 
 ## Related Pages
 
