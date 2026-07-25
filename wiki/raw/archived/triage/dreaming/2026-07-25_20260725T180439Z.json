@@ -1,0 +1,116 @@
+{
+  "archived_at": "2026-07-25T18:13:15.359392+00:00",
+  "triage_run_id": "20260725T180439Z",
+  "source": "dreaming",
+  "summary_ja": "Jul 18-25のdreaming cycle。total_articles=0（pipeline saturation）、recent_raw_articles=146。Jul 24-25のfilesystem scanで10件をトリアージ。prior triageのtake（subprime-data-center-crisis）は既作成済み。本cycleの新規発見: (1) Goedecke「LLMs reward expertise」concept記事（Terence Tao例、ドメイン知識のLLM活用効果）→ reference, (2) Warp「hypergrowth revenue squeeze」トークン再販経済分析→ reference, (3) Harvey Opus 5 LAB 11.7%スコア→ reference。既存ページカバー済み（TRQ212 context engineering、OpenAI Agents SDK）はskip。非AI記事・マーケティングブログはbatch skip。Takes=0、References=3、Skips=7。",
+  "decisions": [
+    {
+      "item_id": "dreaming-warp-hypergrowth-revenue-squeeze",
+      "source": "dreaming",
+      "source_name": "warp.dev",
+      "title": "The problem with hypergrowth AI startups",
+      "url": "https://www.warp.dev/blog/the-problem-with-hypergrowth-ai-startups",
+      "raw_path": "~/wiki/raw/articles/2026-07-25_warp_the-problem-with-hypergrowth-ai-startups.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ Zach Lloyd（Warp CEO）によるAI startup economics分析。$100M ARRの大半がトークン再販（マージンゼロ〜マイナス）、BYO inferenceトレンド、トークン商品化による収益圧迫を詳細に論じる。entities/warp-terminal.mdにはfactory engineer memo引用はあるが、このトークン再販経済分析は未記載。enrichment候補。",
+      "candidate_wiki_path": "entities/warp-terminal.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-harvey-opus5-lab-score",
+      "source": "dreaming",
+      "source_name": "harvey.ai",
+      "title": "Claude Opus 5, Now Live in Harvey",
+      "url": "https://www.harvey.ai/blog/opus-5-in-harvey",
+      "raw_path": "~/wiki/raw/articles/2026-07-25_harvey_opus-5-in-harvey.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ HarveyのOpus 5統合。LAB all-pass 11.7%（Sonnet 5の5.8%から倍増）、Opus 4.8比で26% fewer tokens。entities/harvey.mdにはLAB 5.8%（Sonnet 5）は記載済みだがOpus 5の11.7%は未記載。minor enrichment。",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-context-engineering-already-covered",
+      "source": "dreaming",
+      "source_name": "x.com/trq212",
+      "title": "The new rules of context engineering for Claude 5 models",
+      "url": "https://x.com/i/article/2080703729385512960",
+      "raw_path": "~/wiki/raw/articles/2026-07-24_trq212_context-engineering-claude-5.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ concepts/context-engineering/index.mdで完全カバー済み。80% system prompt削除、progressive disclosure、unhobbling insight、claude doctor全て記載。raw article pathもsourcesに登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-agents-sdk-already-covered",
+      "source": "dreaming",
+      "source_name": "openai.github.io",
+      "title": "OpenAI Agents SDK — Raw Research Overview",
+      "url": "https://openai.github.io/openai-agents-python/",
+      "raw_path": "~/wiki/raw/articles/2026-07-25_openai_agents-sdk-overview.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ concepts/openai/agents-sdk.mdがv0.14.0時点で存在。概要記事は既存ページの情報のサブセット。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-warp-software-factory-build-guide",
+      "source": "dreaming",
+      "source_name": "warp.dev",
+      "title": "The Cloud Software Factory Build Guide",
+      "url": "https://www.warp.dev/blog/software-factory-build-guide",
+      "raw_path": "~/wiki/raw/articles/2026-07-25_warp_software-factory-build-guide.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ハイパーグロース記事の方が経済分析として価値が高い。Build guideはハウツー中心でconcept depthが浅い。entities/warp-terminal.mdにfactory engineer memoは記載済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-conversational-ai-design",
+      "source": "dreaming",
+      "source_name": "elevenlabs.io",
+      "title": "Conversational AI design: How to make an AI agent feel human",
+      "url": "https://elevenlabs.io/blog/conversational-ai-design",
+      "raw_path": "~/wiki/raw/articles/2026-07-25_elevenlabs_conversational-ai-design.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ElevenLabsプロダクトガイド。voice agent UX designのハウツー。マーケティング色が強くconcept depthが薄い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch-jul25",
+      "source": "dreaming",
+      "source_name": "mixed",
+      "title": "Non-AI articles batch skip (Jul 24-25)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事batch skip: Gary Marcus政治レター、Daring Fireball podcast/ad-blockers、Pluralistic補足収入、Ed Catmull podcast notes、LeBron James NBA記事、OPNsense networking guide、Codeberg divides、book review、vintage computer magazine、Oracle批評。全件AI/LLM relevanceなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch skip — non-AI articles: politics, sports, networking, book reviews, vintage computing)"
+    },
+    {
+      "item_id": "dreaming-skip-sitemap-low-value-batch",
+      "source": "dreaming",
+      "source_name": "mixed-sitemap",
+      "title": "Sitemap batch skip (Harvey/ElevenLabs/Glean blog posts)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ sitemap batch: Harvey社員ブログ3件（jin-zhang, jinfeng-zhuang, shunrang-cao — 法律AIマーケティング）、Harvey evaluate-law-firm-agent-governance（ハウツー）、Harvey what-legal-workflows（ハウツー）、Harvey ai-legal-brief-writing（ハウツー）、ElevenLabs how-mck-leajsk（ケーススタディ）、ElevenLabs elections（ユースケース）、Glean voice-tools（プロダクト）。全てマーケティング/ハウツーでwiki value低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch skip — sitemap-scraped company blog posts: marketing case studies, product how-tos, low conceptual depth)"
+    },
+    {
+      "item_id": "dreaming-skip-giles-thomas-qwen36-rtx3090",
+      "source": "dreaming",
+      "source_name": "gilesthomas.com",
+      "title": "Benchmarking Qwen 3.6 35B MoE on RTX 3090",
+      "url": "https://gilesthomas.com/2026/07/benchmarking-qwen-3-6-35b-moe-rtx-3090/",
+      "raw_path": "~/wiki/raw/articles/gilesthomas.com--2026-07-benchmarking-qwen-3-6-35b-moe-rtx-3090--5f4cd1c9.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 51KBの詳細ローカルLLMベンチマーク記事。RTX 3090でのQwen 3.6 35B MoE性能測定。ローカルLLM/quantizationのniche topic。entities/gilesthomas.mdが存在するか確認が必要だが、hardware-specific benchmarkでgeneralizable insightが限定的。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

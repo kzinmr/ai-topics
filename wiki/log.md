@@ -4,6 +4,17 @@ _Log of all wiki changes. Newest entries at top._
 
 ---
 
+## [2026-07-25] Dreaming consolidation — saturation pass (Takes=0, Refs=3)
+
+- Filesystem scan: Jul 24-25 raw articles screened (146 recent files, 10 triaged)
+- Prior dreaming take (subprime-data-center-crisis) confirmed created
+- TRQ212 context engineering: already covered in concepts/context-engineering/index.md
+- New references identified (3):
+  - [[entities/seangoedecke-com.md]] — "LLMs reward expertise" (Terence Tao LLM prompting, domain knowledge > generic skills)
+  - [[entities/warp-terminal.md]] — "The problem with hypergrowth AI startups" (token reselling economics, BYO inference, revenue squeeze)
+  - [[entities/harvey.md]] — Opus 5 LAB all-pass 11.7% (up from Sonnet 5's 5.8%, 26% fewer tokens than Opus 4.8)
+- Skips: 7 (non-AI batch, sitemap marketing batch, already-covered articles)
+- Archive: 9 newly archived, 1 dedup, total 1,936 URLs
 ## [2026-07-25] watchdog | fix log header burial + health verification
 
 - [FIX] Restored `# Wiki Log` header from line 762 to line 1 (42 orphaned entries had accumulated before the header)
