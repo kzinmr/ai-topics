@@ -1,3 +1,15 @@
+## [2026-07-25] watchdog | auto-fix header counts + log separators
+
+- [FIX] Entities header: 865 -> 863 (actual file count)
+- [FIX] Concepts header: 1923 -> 1902 (actual file count)
+- [FIX] Added 7 missing `---` separators in log.md (entries between 2026-07-24 and 2026-07-25)
+- [INFO] Entity orphan tim-sherratt is a redirect page -> false positive
+- [INFO] Concept orphans are gpt/_archive/ files -> intentionally excluded
+
+**Pipeline health**: Index corruption=0 | Log separators complete | Index headers match filesystem | validate_index.py=clean
+
+---
+
 ## [2026-07-25] X bookmarks ingest — Thariq Shihipar context engineering for Claude 5
 
 **Source**: X Article by Thariq Shihipar (@trq212), "The new rules of context engineering for Claude 5 models" (Jul 24, 2026). 23.7K bookmarks, 2.4M impressions.
@@ -8,7 +20,7 @@
 - 🆕 Raw article: [[raw/articles/2026-07-24_trq212_context-engineering-claude-5]]
 - ✏️ Enriched [[concepts/context-engineering/index]] — Added "Claude 5 Context Engineering Paradigm Shift" section with six-transition table, system-level design principles, and the "Unhobbling" insight. Updated tags (claude-code, claude-fable-5, system-prompt) and sources.
 - ✏️ Enriched [[entities/thariq-shihipar]] — Added article to Notable Writing. Updated date and sources.
-
+---
 ## [2026-07-25] active-crawl — 3 new pages, 1 raw article
 
 Trend discovery: X/Twitter + wiki gap analysis (HN returned 0 results). Top signals: Claude Opus 5 release, Qwen 3.6 benchmarks, OpenAI Agents SDK gap, HQQ quantization gap.
@@ -25,7 +37,7 @@ Raw articles saved:
 - raw/articles/2026-07-25_mobiusml_hqq-half-quadratic-quantization.md — HQQ research
 
 Skipped: Qwen 3.6-35B (already enriched by blog-wiki-ingest pipeline with same benchmarking data), OpenAI Agents SDK (duplicate of existing concepts/openai/agents-sdk.md, 151 lines)
-
+---
 ## [2026-07-25] newsletter-wiki-ingest (10:35 UTC) — 2 takes + 1 reference from newsletter triage checkpoint
 - **Take (New)**: [[entities/amd]] — Created: AMD entity page (MI455X 2nm, Helios rack-scale, ROCm risks, Agentic Kernel Generation, Anthropic/MS customer wins)
 - **Take (New)**: [[concepts/cuda-moat]] — Created: CUDA Moat concept page (NVIDIA software ecosystem moat, AMD's Agentic Kernel Generation, SemiAnalysis thesis)
@@ -34,7 +46,7 @@ Skipped: Qwen 3.6-35B (already enriched by blog-wiki-ingest pipeline with same b
 - **Enriched**: [[entities/hugo-bowne-anderson]] — Added Maven Assistant section (William Horton interview, production AI agent findings)
 - **Enriched**: [[entities/anthropic]] — Added Claude Opus 5 launch section (ECI 159, SWE-ECI 161, pricing, FrontierCode anomaly, AA-Briefcase leader)
 - **Sources**: SemiAnalysis AMD article, Vanishing Gradients Ep. 74 (William Horton), AINews Jul 25
-
+---
 ## [2026-07-25] blog-wiki-ingest (10:23 UTC) — 7 reference enrichments from 20 blog articles
 - **Reference**: entities/simon-willison.md — Added Claude Opus 5 link blog entry (Jul 24, pricing/benchmark info)
 - **Reference**: entities/boris-cherny.md — Added Opus 5 as "least prompt injectable model" quote from System Card p.73
@@ -43,7 +55,7 @@ Skipped: Qwen 3.6-35B (already enriched by blog-wiki-ingest pipeline with same b
 - **Reference**: entities/gary-marcus.md — Added open letter to David Sacks (CAISI report, US-China AI coordination)
 - **Reference**: entities/cory-doctorow.md — Added "AI solipsists and AI cynics" analysis (two types of AI investor)
 - **Reference**: entities/anildash.md — Added "Becoming Skilled at Making Documents" (5-test agent skill pattern)
-
+---
 ## [2026-07-24] raw-backlog-ingest (22:00 UTC) — All 5 articles already covered by existing wiki pages
 - **Reframing Superintelligence (Drexler FHI 2019)** — Reference. Already covered by concepts/cais.md (169 lines) + entities/k-eric-drexler.md (69 lines).
 - **MAI-Thinking-1 Tech Report** — Reference. Already covered by concepts/mai-thinking-1-tech-report.md (227 lines) + entities/mai-thinking-1.md (165 lines) + microsoft-mai-models.md.
@@ -51,7 +63,7 @@ Skipped: Qwen 3.6-35B (already enriched by blog-wiki-ingest pipeline with same b
 - **Poolside/Eiso Kant (Latent Space)** — Reference. Already covered by entities/eiso-kant.md + entities/poolside.md (created/updated today from this same article).
 - **Grant Sanderson (Dwarkesh Podcast #2)** — Reference. Already covered by entities/grant-sanderson.md (141 lines).
 - Saved to raw_backlog/triage_latest.json
-
+---
 ## [2026-07-24] Dreaming — Knowledge consolidation (dreaming-wiki-ingest)
 - **Take (1)**: [[concepts/subprime-data-center-crisis]] — Created: Ed Zitron's analysis of AI data center debt as analogue to 2008 subprime mortgages (SPVs, off-balance-sheet financing, 15× overbuild, NVIDIA circular financing, systemic pension fund exposure)
 - **Enriched (2)**: [[concepts/ai-agent-safety-incidents]] — Added ExploitGym benchmark data (898 vulns; Claude Mythos Preview 157, GPT-5.5 120 successes) and Martin Alderson monitoring gap analysis (HF attack surface, unlimited token budgets, concurrent checkpoint testing)
@@ -59,7 +71,7 @@ Skipped: Qwen 3.6-35B (already enriched by blog-wiki-ingest pipeline with same b
 - **Skipped**: ai-containment-escape.md — Already covered by blog-ingest (page created earlier today from same article)
 - **Skipped (batch)**: Already-processed + non-AI articles
 - **Note**: Upstream dreaming-group at 18:00 UTC completed triage but failed JSON render; triage_latest.json recovered from output file; 4 of 5 enrichment gaps confirmed (1 false positive — ai-containment-escape already covered by blog-ingest)
-
+---
 ## [2026-07-24] raw-backlog-ingest | All 5 articles already covered
 
 All articles in this batch were already fully processed by prior runs:
@@ -70,7 +82,7 @@ All articles in this batch were already fully processed by prior runs:
 - **Grant Sanderson (Dwarkesh)** — Already archived; entities/grant-sanderson.md covers it
 
 **Takes=0 · References=0 · Skips=5 · Archive: 1 new (4 dedup skipped) · Archive total: 1896**
-
+---
 ## [2026-07-24] health | Wiki health auto-fix
 
 ### Changes
