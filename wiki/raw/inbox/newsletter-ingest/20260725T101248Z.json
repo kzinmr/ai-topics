@@ -1,0 +1,159 @@
+{
+  "run_id": "20260725T101248Z",
+  "triaged_at": "2026-07-25T10:13:00Z",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "archive_path": "/opt/data/.hermes/cron/data/newsletter/newsletter_20260725T101248Z.json",
+  "newsletters": [
+    {
+      "message_id": "<20260725072538.3.40303008908b5a66@mg-d1.substack.com>",
+      "subject": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
+      "date": "2026-07-25",
+      "source": "AINews (swyx)",
+      "classification": "critical",
+      "reason": "New Anthropic model release (Claude Opus 5) with benchmark data and pricing — directly relevant to model entities, benchmark concepts, and Anthropic entity page",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-claude-opus-5-fable-level",
+      "source_label": "uid=415",
+      "wiki_actions": [
+        {
+          "action": "create_or_update",
+          "target": "entities/anthropic.md",
+          "note": "Claude Opus 5 release, Fable benchmark performance"
+        },
+        {
+          "action": "create",
+          "target": "concepts/ai-benchmarks/fable.md",
+          "note": "New benchmark mentioned — 'Fable' — needs concept page if not existing"
+        },
+        {
+          "action": "create",
+          "target": "events/claude-opus-5-release.md",
+          "note": "Major model release event"
+        }
+      ]
+    },
+    {
+      "message_id": "<20260725070658.3.aa8765828f661c31@mg-d0.substack.com>",
+      "subject": "Four Months Inside a Production AI Agent: What Real Users Changed",
+      "date": "2026-07-25",
+      "source": "Hugo Bowne-Anderson (hugobowne)",
+      "classification": "critical",
+      "reason": "Production AI agent deployment experience — directly matches wiki's core focus on AI agents, practical patterns, and lessons learned",
+      "primary_url": "https://open.substack.com/pub/hugobowne/p/four-months-inside-a-production-ai",
+      "source_label": "uid=414",
+      "wiki_actions": [
+        {
+          "action": "create_or_update",
+          "target": "concepts/production-ai-agents.md",
+          "note": "Real-world deployment patterns, user behavior changes"
+        },
+        {
+          "action": "create_or_update",
+          "target": "entities/hugobowne.md",
+          "note": "New source — Hugo Bowne-Anderson"
+        }
+      ]
+    },
+    {
+      "message_id": "<20260724161326.3.52a3cf70a5330410@mg-d0.substack.com>",
+      "subject": "OpenAI's accidental cyberattack against Hugging Face is science fiction that happened",
+      "date": "2026-07-24",
+      "source": "Simon Willison (simonw)",
+      "classification": "high",
+      "reason": "AI safety/security incident involving OpenAI and Hugging Face — from a tracked entity (Simon Willison), relevant to AI safety concepts and entity pages",
+      "primary_url": "https://open.substack.com/pub/simonw/p/openais-accidental-cyberattack-against",
+      "source_label": "uid=411",
+      "wiki_actions": [
+        {
+          "action": "create",
+          "target": "events/openai-hf-accidental-cyberattack.md",
+          "note": "AI safety/security incident — accidental DDoS-like behavior"
+        },
+        {
+          "action": "update",
+          "target": "entities/simon-willison.md",
+          "note": "New article reference"
+        }
+      ]
+    },
+    {
+      "message_id": "<20260725003323.3.159e437534b16a05@mg-d0.substack.com>",
+      "subject": "Can AMD break the CUDA Moat? AMD Advancing AI 2026",
+      "date": "2026-07-25",
+      "source": "SemiAnalysis (semianalysis)",
+      "classification": "high",
+      "reason": "GPU/AI accelerator competition analysis — AMD vs CUDA ecosystem, directly relevant to infrastructure concepts and hardware entity pages",
+      "primary_url": "https://open.substack.com/pub/semianalysis/p/can-amd-break-the-cuda-moat-amd-advancing",
+      "source_label": "uid=413",
+      "wiki_actions": [
+        {
+          "action": "create_or_update",
+          "target": "concepts/cuda-moat.md",
+          "note": "CUDA ecosystem lock-in and AMD's ROCm challenge"
+        },
+        {
+          "action": "update",
+          "target": "entities/amd.md",
+          "note": "AMD Advancing AI 2026 event, MI-series updates"
+        }
+      ]
+    },
+    {
+      "message_id": "<20260724.185158.da4c2d60@mta26>",
+      "subject": "🎙️ OpenAI and Anthropic Both Reach for the Mic",
+      "date": "2026-07-24",
+      "source": "beehiiv newsletter",
+      "classification": "high",
+      "reason": "Voice AI features from both OpenAI and Anthropic — relevant to product entity pages and voice AI concepts",
+      "primary_url": "https://link.mail.beehiiv.com/v1/c/OW20AkA%2Fp2zVDfymki7rwy0Yn5juzNiFTYr9o8XmVYxjEE6Oeku%2BvoMpjOy6%0ANhzmJv1UTsC4k7%2BBLfVorV126uaG2hctQg99mBHbNVCWapnE8Kla62JD4Cah%0ANeyFcwTEbbxCyeEsZETLCCQA5nGBG%2FT3K2g3WmdAPh66nDKA4FOXucRvysLx%0Ampr1sK488acOZllC%2FHYTnuY1sRBcqSLeDQ%3D%3D%0A/5fc23945e9903ed8",
+      "source_label": "uid=412",
+      "wiki_actions": [
+        {
+          "action": "create_or_update",
+          "target": "concepts/voice-ai.md",
+          "note": "Voice capabilities from OpenAI and Anthropic"
+        },
+        {
+          "action": "update",
+          "target": "entities/openai.md",
+          "note": "Voice feature updates"
+        },
+        {
+          "action": "update",
+          "target": "entities/anthropic.md",
+          "note": "Voice feature updates (may overlap with Claude Opus 5 newsletter)"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_newsletters": 5,
+    "critical": 2,
+    "high": 3,
+    "low": 0,
+    "unique_primary_urls": 5,
+    "key_themes": [
+      "Anthropic Claude Opus 5 model release",
+      "Production AI agent deployment patterns",
+      "OpenAI/Hugging Face security incident",
+      "AMD vs CUDA GPU competition",
+      "Voice AI features from major labs"
+    ],
+    "entities_to_update": [
+      "anthropic",
+      "openai",
+      "simon-willison",
+      "amd",
+      "hugobowne"
+    ],
+    "concepts_to_create_or_update": [
+      "production-ai-agents",
+      "fable-benchmark",
+      "cuda-moat",
+      "voice-ai"
+    ],
+    "events_to_create": [
+      "claude-opus-5-release",
+      "openai-hf-accidental-cyberattack"
+    ]
+  }
+}

@@ -229,7 +229,7 @@
 - [[entities/doug-turnbull-speaking]] — Doug Turnbull - Speaking & Community
 - [[entities/doug-turnbull-timeline]] — Doug Turnbull - Career Timeline
 - [[entities/downtowndougbrown-com]] — Doug Brown (Downtown Doug Brown)
-- [[entities/drew-breunig]] — Drew Breunig; enriched with "The Problem is Prompt Debt" X Article — prompt debt framework, fighting the weights, algorithmic prompt search (June 23)
+- [[entities/drew-breunig]] — Drew Breunig; updated with drskill, skilled-proposer, and "Separating Task from Model" (July 25)
 - [[entities/drew-breunig--core-ideas]] — Drew Breunig — Core Ideas & Philosophy
 - [[entities/drew-breunig--projects]] — Drew Breunig — Key Projects
 - [[entities/drew-breunig--timeline]] — Drew Breunig — Timeline & Career History

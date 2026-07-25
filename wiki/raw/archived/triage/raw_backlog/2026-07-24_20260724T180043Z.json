@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-07-24T18:04:36.971017+00:00",
+  "triage_run_id": "20260724T180043Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingestバッチ（5記事）。全記事が既存Wikiで完全カバー済み。MAI-Thinking-1 Tech Report: entities/mai-thinking-1.md(165行)+concepts/mai-thinking-1-tech-report.md(227行)で包括的カバー。BenchFlow Awesome Evals: concepts/ai-benchmarks/benchflow-tool.md(118行)に統合済み。Poolside/Eiso Kant Latent Space: 本日7/24にentities/eiso-kant.md+entities/poolside.md作成・拡充済み。Reframing Superintelligence: concepts/cais.md+entities/k-eric-drexler.mdで全文分析(7/14)。Grant Sanderson AI/math: entities/grant-sanderson.md(160+行)に収録。Takes=0, References=0, Skips=5。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-poolside-eiso-kant",
+      "source": "raw_backlog",
+      "source_name": "Inside the Model Factory — Eiso Kant, Poolside AI (Latent Space)",
+      "title": "Inside the Model Factory — Eiso Kant, Poolside AI",
+      "url": "https://open.substack.com/pub/swyx/p/poolside",
+      "raw_path": "raw/articles/2026-07-24_poolside-latent-space.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ 本日(2026-07-24)既に処理済み。entities/eiso-kant.md(84行, 新規作成):Eiso Kant経歴・Model Factoryテーゼ・Anti-MCP哲学・100ファウンデーションモデルビジョン。entities/poolside.md(120行, 追記拡充):Laguna S 2.1モデル詳細(118B MoE/8B active/1M context)+Model Factory詳細(10K-20K experiments/month, streaming data, agentic training loop)+哲学セクション(Eiso Kantスタンス4項目)。raw articleは両ページのsourcesに登録済み。",
+      "candidate_wiki_path": "entities/eiso-kant.md",
+      "body_excerpt": ""
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 title: Drew Breunig
 type: entity
 created: 2026-04-10
-updated: 2026-06-25
+updated: 2026-07-25
 source: blog
 tags:
   - person
@@ -14,6 +14,7 @@ tags:
 sources:
   - raw/articles/2026-06-22_dbreunig_prompt-debt.md
   - raw/articles/2026-06-23_dbreunig_scaffold-docs-skill.md
+  - raw/articles/2026-07-25_cmpnd.ai_separating-task-from-model.md
 ---
 
 
@@ -69,6 +70,8 @@ His blog at dbreunig.com, active since 2010, covers AI, geospatial technology, m
 | 2026 | "The 2nd Phase of Agentic Development" — on reimaginings vs. clones |
 | 2026 | "How Claude Code Builds a System Prompt" — deep analysis of coding agent internals |
 | 2026 | "The Problem is Prompt Debt" — X Article analyzing prompt debt, fighting the weights, and algorithmic prompt search |
+| 2026 | Releases `drskill` — CLI tool for debugging agent skill/MCP loadouts and CI security |
+| 2026 | "Separating Task from Model" — argues for task-model separation as core DSPy/GEPA philosophy |
 
 ## Core Ideas
 

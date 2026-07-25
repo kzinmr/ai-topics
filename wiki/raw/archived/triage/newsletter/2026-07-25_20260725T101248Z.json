@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-07-25T10:34:52.615296+00:00",
+  "triage_run_id": "20260725T101248Z",
+  "source": "newsletter",
+  "summary_ja": "2026-07-25 newsletter triage: 5 newsletters (76 candidates → 13 decisions). Takes=2（SemiAnalysis AMD vs CUDA ★5: entities/amd.md + concepts/cuda-moat.md新規作成; Hugo Bowne-Anderson Production AI Agent ★5: concepts/production-ai-agents.md + entities/hugobowne.md新規作成）. Reference=1（AINews Claude Opus 5: entities/anthropic.mdエンリッチメント）. Skip=10（Simon Willison OpenAI cyberattack: 既存event pageで包括的カバー済み; Beehiiv Voice AI: 全リンクCloudflare Challenge; AINews一般リンク: digest形式で新規価値なし; SemiAnalysis/SWA/UUIDリンク: 認証必須）. BeehiivのVoice AIトピックは既存Wikiにconcepts/speech.mdが存在するがVoice AI製品比較は未カバー。今後の別ソースでの補完を推奨。",
+  "decisions": [
+    {
+      "item_id": "newsletter-1",
+      "source": "newsletter",
+      "source_name": "AINews (Latent Space)",
+      "title": "Claude Opus 5: Fable-level performance at Opus price",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-claude-opus-5-fable-level",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-25-ainews-claude-opus-5-fable-level-performance-at-opus-price-half-fable.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AINews日次ダイジェストのClaude Opus 5発売まとめ。Epoch ECI=159（Fable 5=161比）、SWE-ECIで161（Fable 5と同点）、FrontierCode anomaly（medium effort>high effort）、best-of-n samplingでFableに勝ったとするユーザー報告、browser automation能力（ChatGPT Pro購読キャンセルデモ）、Nous Portalでのアクセス提供。ただしblog-triageが既にSimon Willisonのリンクブログをreference判定（entities/simon-willison.md + concepts/claude/models.md更新推奨）しており、AINewsの内容はTwitter反応のキュレーションが中心。entities/anthropic.mdへのエンリッチメント（Opus 5発売日・ECIスコア・価格情報）が適切。新規eventページ作成はblog-wiki-ingest後に判断。",
+      "candidate_wiki_path": "entities/anthropic.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-25\n**Subject:** [AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)\n**Collected:** 2026-07-25T10:12:47.593164+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZ"
+    },
+    {
+      "item_id": "newsletter-4",
+      "source": "newsletter",
+      "source_name": "Simon Willison",
+      "title": "OpenAI's accidental cyberattack against Hugging Face is science fiction that happened",
+      "url": "https://open.substack.com/pub/simonw/p/openais-accidental-cyberattack-against",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-24-openai-s-accidental-cyberattack-against-hugging-face-is-science-fiction-that-hap.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Simon WillisonのSubstack投稿。OpenAIのGPT-5.6 Sol + pre-release modelがExploitGym評価中にHugging Faceを攻撃した事件の解説（sandbox escape、zero-day exploit、benchmark回答窃取）。Cat Wu・Thariq Shihipar（Claude Code team）とのfireside chat transcript含む。重要な内容だが、既にevents/openai-huggingface-incident-july-2026.mdで包括的に文書化済み（Source: Simon Willison blog articles 2件）、concepts/ai-agent-safety-incidents.mdも同日更新。Fireside chat内容もentities/simon-willison.md（Fable's Judgementセクション）で引用済み。blog-triageでも同様にskip判定。新規追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-24\n**Subject:** OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened\n**Collected:** 2026-07-25T10:12:42.818562+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zaW1vbncuc3Vic3RhY2suY2"
+    },
+    {
+      "item_id": "newsletter-6",
+      "source": "newsletter",
+      "source_name": "Unidentified beehiiv publication",
+      "title": "OpenAI and Anthropic Both Reach for the Mic",
+      "url": "https://link.mail.beehiiv.com/v1/c/OW20AkA%2Fp2zVDfymki7rwy0Yn5juzNiFTYr9o8XmVYxjEE6Oeku%2BvoMpjOy6%0ANhzmJv1UTsC4k7%2BBLfVorV126uaG2hctQg99mBHbNVCWapnE8Kla62JD4Cah%0ANeyFcwTEbbxCyeEsZETLCCQA5nGBG%2FT3K2g3WmdAPh66nDKA4FOXucRvysLx%0Ampr1sK488acOZllC%2FHYTnuY1sRBcqSLeDQ%3D%3D%0A/5fc23945e9903ed8",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-24-openai-and-anthropic-both-reach-for-the-mic.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 件名「🎙️ OpenAI and Anthropic Both Reach for the Mic」→ 音声AI機能の比較と推定。Inbox summaryはVoice AI機能を提案するが、beehiiv全リンクがCloudflare Challenge（Just a moment...）でアクセス不可、記事本文の確認不能。既存のconcepts/speech.md（ASR/TTS/音声）は存在するがVoice AI機能のトピックは未カバー。ただし本文アクセス不能により評価不能。skip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-24\n**Subject:** 🎙️ OpenAI and Anthropic Both Reach for the Mic\n**Collected:** 2026-07-25T10:12:44.038265+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/OW20AkA%2Fp2zVDfymki7rwy0Yn5juzNiFTYr9o8XmVYxjEE6Oeku%2BvoMpjOy6%0ANhzmJv1UTsC"
+    },
+    {
+      "item_id": "newsletter-8",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "SemiAnalysis commenters (user profiles, 12+ @mentions)",
+      "url": "https://open.substack.com/pub/semianalysis/p/can-amd-break-the-cuda-moat-amd-advancing",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-25-can-amd-break-the-cuda-moat-amd-advancing-ai-2026.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SemiAnalysis投稿のコメント・リアクションリンク（@cheese01, @danielnishball, @myronxie, @wegachu等、12件のSubstack reader profile URL）。コンテンツ価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-25\n**Subject:** Can AMD break the CUDA Moat? AMD Advancing AI 2026\n**Collected:** 2026-07-25T10:12:45.306729+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJlP3V0bV9zb"
+    },
+    {
+      "item_id": "newsletter-9",
+      "source": "newsletter",
+      "source_name": "Vanishing Gradients (Hugo Bowne-Anderson)",
+      "title": "Podcast email UI links (play buttons, like, share, comment)",
+      "url": "https://open.substack.com/pub/hugobowne/p/four-months-inside-a-production-ai",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-25-four-months-inside-a-production-ai-agent-what-real-users-changed.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Hugo BowneポッドキャストニュースレターのUIリンク（play_audio=true, play_card_*, listen_now_button, submitLike, comments, share, restack-comment, redirect=app-store）。プレイヤーchromeのみ。ただし本文（ポッドキャストエピソードページ）は独立した記事として56段落の実質的な内容があり、別途take判断済み。こちらのbatch skipはニュースレターのUIリンクのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-25\n**Subject:** Four Months Inside a Production AI Agent: What Real Users Changed\n**Collected:** 2026-07-25T10:12:46.505500+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9odWdvYm93bmUuc3Vic3RhY2suY29tL3N1YnNjcmliZT"
+    },
+    {
+      "item_id": "newsletter-10",
+      "source": "newsletter",
+      "source_name": "Vanishing Gradients (Hugo Bowne-Anderson)",
+      "title": "Substack UUID redirect links (4 links)",
+      "url": "https://substack.com/redirect/8d2a84d2-...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-25-four-months-inside-a-production-ai-agent-what-real-users-changed.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UUIDリダイレクトリンク（4件: 8d2a84d2, 7811598f, 770bd7b3, 73279c49）。認証必須で解決不可。本文（post body）は別途評価済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-25\n**Subject:** Four Months Inside a Production AI Agent: What Real Users Changed\n**Collected:** 2026-07-25T10:12:46.505500+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9odWdvYm93bmUuc3Vic3RhY2suY29tL3N1YnNjcmliZT"
+    },
+    {
+      "item_id": "newsletter-11",
+      "source": "newsletter",
+      "source_name": "Simon Willison",
+      "title": "Substack UUID redirect links (12 links)",
+      "url": "https://substack.com/redirect/0d7c556b-...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-24-openai-s-accidental-cyberattack-against-hugging-face-is-science-fiction-that-hap.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Simon Willison Substack UUIDリダイレクトリンク（12件: 0d7c556b, c0f84624, 960c0afb他）。認証必須で解決不可。本文（post body）は別途評価済み（skip判定）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-24\n**Subject:** OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened\n**Collected:** 2026-07-25T10:12:42.818562+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zaW1vbncuc3Vic3RhY2suY2"
+    },
+    {
+      "item_id": "newsletter-12",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "SemiAnalysis newsletter UUID redirect links",
+      "url": "https://substack.com/redirect/c83dd92a-803b-4169-920a-5320b16edea0",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-25-can-amd-break-the-cuda-moat-amd-advancing-ai-2026.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SemiAnalysis Substack UUIDリダイレクトリンク。認証必須で解決不可。本文（post body）は別途take判定。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-25\n**Subject:** Can AMD break the CUDA Moat? AMD Advancing AI 2026\n**Collected:** 2026-07-25T10:12:45.306729+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJlP3V0bV9zb"
+    }
+  ]
+}

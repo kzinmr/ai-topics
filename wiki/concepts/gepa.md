@@ -1,7 +1,7 @@
 ---
 title: "GEPA (Genetic-Pareto Prompt Evolution)"
 created: 2026-05-14
-updated: 2026-05-26
+updated: 2026-07-25
 type: concept
 tags:
   - gepa
@@ -80,6 +80,10 @@ This addresses a known weakness of Hermes Agent's in-agent learning loop: agents
 ## Ecosystem Adoption
 
 Used in production by Shopify, Databricks, Dropbox, Pydantic, Nous Research, OpenAI, and others. Integrated into DSPy as `dspy.GEPA` and available standalone via `pip install gepa`. Cited by [[entities/drew-breunig|Drew Breunig]] as a key solution to prompt debt in "The Problem is Prompt Debt" (June 2026).
+
+### Third-Party Tools
+
+- **skilled-proposer** ([cmpnd-ai/skilled-proposer](https://github.com/cmpnd-ai/skilled-proposer)): A GEPA proposer designed to reduce overfitting, with configurable parameters for tailoring proposer instructions to specific tasks. Announced by Drew Breunig (July 2026). Addresses a common pain point where default GEPA proposers can overfit to specific evaluation datasets.
 
 ## See Also
 

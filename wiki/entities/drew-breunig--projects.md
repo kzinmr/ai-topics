@@ -66,6 +66,21 @@ Breunig has been a significant contributor to the [[concepts/dspy|DSPy]] ecosyst
 
 A personal weather website for Downtown San Francisco, demonstrating Breunig's approach to building lightweight, purpose-built tools with AI assistance.
 
+## drskill (2026)
+
+A CLI tool for debugging and auditing agent skill/MCP configurations. drskill analyzes how MCPs and Skills are triggered — globally or in a project — by examining traces. Key features:
+
+- **Agent loadout debugging**: Inspect which skills and MCP servers are active for a given agent run
+- **MCP & Skill auditing**: Trace how MCP tools and skills are invoked, identify unused or conflicting configurations
+- **CI security for agent contexts**: Verify that agent contexts don't leak sensitive information or load unauthorized tools
+- GitHub: [dbreunig/drskill](https://github.com/dbreunig/drskill)
+
+Announced July 2026. Positioned as a developer tool for the growing ecosystem of [[concepts/agent-skills|agent skills]] and MCP-based architectures.
+
+## DSPy / GEPA Ecosystem Contributions (2026)
+
+- **skilled-proposer**: A GEPA proposer designed to reduce overfitting, with configurable parameters for tailoring proposer instructions to specific tasks. Built for the [[concepts/gepa|GEPA]] optimizer ecosystem. GitHub: [cmpnd-ai/skilled-proposer](https://github.com/cmpnd-ai/skilled-proposer)
+
 ## Overture Maps / GERS Work
 
 As GERS Evangelist at [[concepts/overture-maps-foundation|Overture Maps Foundation]], Breunig:

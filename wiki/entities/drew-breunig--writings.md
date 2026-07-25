@@ -3,7 +3,7 @@ title: "Drew Breunig — Writings, Speaking & Key Quotes"
 type: entity
 parent: drew-breunig
 created: 2026-04-10
-updated: 2026-06-23
+updated: 2026-07-25
 tags:
   - person
   - writing
@@ -12,6 +12,7 @@ sources:
   - raw/articles/2026-05-04_drew-breunig-10-lessons-agentic-coding.md
   - https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html
   - raw/articles/2026-06-23_drew-breunig-prompt-debt.md
+  - raw/articles/2026-07-25_cmpnd.ai_separating-task-from-model.md
 ---
 
 # Drew Breunig: Writings, Speaking & Key Quotes
@@ -46,6 +47,7 @@ Since ChatGPT's launch, Breunig's writing shifted intensely toward AI:
 - **Agent Development**: "Enterprise Agents Have a Reliability Problem" (2025), "Two Beliefs About Coding Agents" (2026), "The 2nd Phase of Agentic Development" (2026), "10 Lessons for Agentic Coding" (May 2026) — codified the Spec-Driven Development Triangle (Spec + Code + Tests) and 10 workflow patterns for coding with agents
 - **Prompt Debt**: "The Problem is Prompt Debt" (June 2026) — X Article analyzing how natural language prompts become a trap, introducing "fighting the weights" and algorithmic prompt search as solutions
 - **RLMs & DSPy**: "The Potential of RLMs" (2026), "Pipelines & Prompt Optimization with DSPy" (2024)
+- **Separating Task from Model**: "The Unreasonable Effectiveness of Separating the Task from the Model" (July 2026) — Argues that formally specifying your task independently of the implementation lets the system evolve as models and techniques change. A core argument for the DSPy/GEPA philosophy: define *what* you want, not *how* to achieve it. Published on cmpnd.ai.
 - **Geospatial**: "Towards Standardizing Place" (2024), "DuckDB is Probably the Most Important Geospatial Software of the Last Decade" (2025)
 
 ## Speaking Engagements
