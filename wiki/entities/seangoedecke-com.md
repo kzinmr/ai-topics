@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-07-18
+updated: 2026-07-25
 type: entity
 sources:
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
@@ -429,4 +429,5 @@ Goedecke doesn't claim to agree with Gwern, but finds the idea compelling: \"for
 |- seangoedecke.com--weird-projects-i-shipped-with-ai--4c88d49c
 |- seangoedecke.com--anti-ai-nostalgia--c80b7b06
 |- seangoedecke.com--build-agents-not-pipelines--43a57b4a
+|- seangoedecke.com--llms-reward-expertise--30a0ed12
 |- seangoedecke.com--ai-inference-is-obviously-profitable--ac8d2cd6.md

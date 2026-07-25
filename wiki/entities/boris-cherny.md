@@ -2,7 +2,7 @@
 title: Boris Cherny
 type: entity
 created: 2026-04-13
-updated: 2026-06-21
+updated: 2026-07-25
 tags:
   - person
   - x-account
@@ -14,7 +14,9 @@ tags:
   - anthropic
   - methodology
   - loop-engineering
-sources: [raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md]
+sources:
+  - raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md
+  - raw/articles/simonwillison.net--2026-jul-25-boris-cherny--d1edc7f3.md
 ---
 
 
@@ -284,6 +286,8 @@ This repo serves as a **reference implementation** for agentic engineering patte
 
 > "I don't prompt Claude anymore. I have loops that are running. They're the ones that are prompting Claude and figuring out what to do. My job is to write loops." — on loop engineering as the next level of agent use
 
+> "Opus 5 is our least prompt injectable model yet." — Boris Cherny, p. 73 of the Opus 5 System Card (Jul 2026). Quoted via [Simon Willison](https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything). A significant safety datapoint: Opus 5 demonstrated strong resistance to prompt injection across evals and red teaming.
+
 Cherny's five-step autonomous loop setup:
 ```bash
 claude --permission-mode auto                          # 1 · no approval prompts
@@ -310,3 +314,4 @@ ultracode  orchestrate sub-agents to ship the feature  # 2 · fan out
 - [Thread Reader App: Boris Cherny's Threads](https://threadreaderapp.com/user/bcherny) — Comprehensive collection of Claude Code insights
 - [borischerny.com](https://borischerny.com/) — Personal blog
 - [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]] — Elvis Saravia (DAIR.AI), "From Prompting Agents to Loop Engineering" (Jun 19, 2026). Features Cherny's loop engineering philosophy and five-step autonomous loop setup.
+- [[raw/articles/simonwillison.net--2026-jul-25-boris-cherny--d1edc7f3]] — Simon Willison, "A quote from Boris Cherny" (Jul 25, 2026). Quotes Boris on Opus 5 being the least prompt-injectable model yet, referencing p. 73 of the Opus 5 System Card.

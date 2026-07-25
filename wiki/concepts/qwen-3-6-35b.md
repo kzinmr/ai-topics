@@ -1,7 +1,7 @@
 ---
 title: Qwen 3.6-35B-A3B
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-07-25
 type: concept
 tags:
   - model
@@ -65,6 +65,21 @@ A novel capability that retains reasoning context from historical messages acros
 - **Single RTX 4090 (24GB)**: Runs with quantization
 - **RTX PRO 6000 (96GB)**: Runs in BF16 without tensor parallelism
 - **DFlash speculative decoding**: Up to 6× lossless acceleration
+
+### Real-World Benchmarks (RTX 3090)
+
+Real-world benchmarks on a single RTX 3090 (24GB VRAM) using the **[UD-IQ4_NL_XL](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF)** 4-bit quantization from Unsloth (~19.5 GiB) with llama.cpp:
+
+| Backend | Generation | Prompt Processing | Context Window |
+|---------|-----------|-------------------|----------------|
+| **Vulkan** (GPU only) | ~120 tok/s | ~2,800 tok/s | ~50K tokens |
+| **CUDA** (GPU only) | ~140 tok/s | ~3,300 tok/s | 89,600 tokens |
+| **CUDA** (10-layer CPU offload) | ~89 tok/s | ~1,154 tok/s | 262,144 (full) |
+
+Key findings from [Giles Thomas's benchmarks](https://www.gilesthomas.com/2026/07/benchmarking-qwen-3-6-35b-moe-rtx-3090):
+- The CUDA-compiled version of llama.cpp outperforms the Arch-default Vulkan build by ~15-20% in generation speed and provides a larger context window at the same offload level.
+- Offloading 10 layers' FFNs to CPU (via `--n-cpu-moe 10` in CUDA mode) frees enough VRAM for the full native 262K context, while retaining ~89 tok/s generation throughput.
+- The Vulkan build requires offloading 12 layers to reach the full 262K context, yielding ~66 tok/s generation.
 
 ### Multimodal Support
 Includes a vision encoder for image understanding alongside text, enabling multimodal thinking and non-thinking modes.

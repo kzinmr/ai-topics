@@ -1,3 +1,12 @@
+## [2026-07-25] blog-wiki-ingest (10:23 UTC) — 7 reference enrichments from 20 blog articles
+- **Reference**: entities/simon-willison.md — Added Claude Opus 5 link blog entry (Jul 24, pricing/benchmark info)
+- **Reference**: entities/boris-cherny.md — Added Opus 5 as "least prompt injectable model" quote from System Card p.73
+- **Reference**: entities/seangoedecke-com.md — Added "LLMs reward expertise" essay (Terence Tao case study, domain expertise thesis)
+- **Reference**: concepts/qwen-3-6-35b.md — Added RTX 3090 real-world benchmarks (CUDA/Vulkan/CPU offload results)
+- **Reference**: entities/gary-marcus.md — Added open letter to David Sacks (CAISI report, US-China AI coordination)
+- **Reference**: entities/cory-doctorow.md — Added "AI solipsists and AI cynics" analysis (two types of AI investor)
+- **Reference**: entities/anildash.md — Added "Becoming Skilled at Making Documents" (5-test agent skill pattern)
+
 ## [2026-07-24] raw-backlog-ingest (22:00 UTC) — All 5 articles already covered by existing wiki pages
 - **Reframing Superintelligence (Drexler FHI 2019)** — Reference. Already covered by concepts/cais.md (169 lines) + entities/k-eric-drexler.md (69 lines).
 - **MAI-Thinking-1 Tech Report** — Reference. Already covered by concepts/mai-thinking-1-tech-report.md (227 lines) + entities/mai-thinking-1.md (165 lines) + microsoft-mai-models.md.

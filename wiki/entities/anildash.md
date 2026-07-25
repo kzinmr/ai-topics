@@ -2,7 +2,7 @@
 title: Anil Dash
 type: entity
 created: 2026-04-09
-updated: 2026-06-24
+updated: 2026-07-25
 tags:
   - person
   - blogger
@@ -114,6 +114,18 @@ Key quotes:
 
 Links: Joel Spolsky's Strategy Letter V (commoditize complements) and "How Microsoft Lost the API War" as historical parallels.
 
+### Agent Skills for Better Documents (July 2026)
+
+In "Becoming Skilled at Making Documents" (Jul 24, 2026), Dash published a `skills.md` file for "Better Documents" — a concrete example of the **agent skills pattern** (Markdown files that extend LLM capabilities). The skill distills principles for making effective business documents into 5 tests:
+
+1. **Target audience** — Have you properly considered who the document is for?
+2. **Structure** — Is the overall organization correct for the purpose?
+3. **Over-formatting** — Have you avoided excessive formatting that obscures meaning?
+4. **Naming** — Are files and sections named clearly and descriptively?
+5. **Editing** — Has the document been properly reviewed and refined?
+
+The skill either generates new documents following these rules or reviews existing ones for compliance. This is notable as a practical, real-world implementation of the agent skills concept — Markdown files that teach LLM tools (Claude, Codex) new capabilities — which Dash has made free and open source.
+
 ## Key Quotes
 
 > *"You must imagine Sam Altman holding a knife to Tim Berners-Lee's throat. It's not a pleasant image. Sir Tim is, rightly, revered as the genial father of the World Wide Web. But all the signs are pointing to the fact that we might be in endgame for 'open' as we've known it."*
@@ -153,9 +165,11 @@ Links: Joel Spolsky's Strategy Letter V (commoditize complements) and "How Micro
 - [500,000 tech workers have been laid off since ChatGPT was released](https://anildash.com/2026/01/06/500k-tech-workers-laid-off/) (Jan 2026)
 - [Why We Speak](https://anildash.com/2026/01/26/why-we-speak/) (Jan 2026)
 - [How we'll fight the platform war against Big AI](https://anildash.com/2026/06/23/fight-ai-platform-war/) (Jun 2026)
+- [Becoming Skilled at Making Documents](https://anildash.com/2026/07/24/make-better-documents-skill/) (Jul 2026)
 
 ## References
 
 - anildash.com--2026-04-28-one-good-ai-is-here--6fa4603f
 - anildash.com--2026-04-30-artemis-photos-flickr--69a418b9
 - anildash.com--2026-06-23-fight-ai-platform-war--1a272a96
+- anildash.com--2026-07-24-make-better-documents-skill--01e4bc99

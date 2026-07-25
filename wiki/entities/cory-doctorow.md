@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-07-14
+updated: 2026-07-25
 status: L3
 sources:
   - https://pluralistic.net/
@@ -15,6 +15,7 @@ sources:
   - raw/articles/pluralistic.net--2026-06-29-arsonist-firefighters--46c8e06a.md
   - raw/articles/pluralistic.net--2026-07-10-posthuman-as-in-no-humans--67be2eae.md
   - raw/articles/pluralistic.net--2026-07-13-go-meta-meta--d0727adf.md
+  - raw/articles/pluralistic.net--2026-07-24-supplemental-income--9c9dca6e.md
 tags: [person]
 ---
 
@@ -132,6 +133,18 @@ Doctorow argues that AI companies claim their models will replace doctors, teach
 
 In a Locus Magazine interview, Doctorow argued that AI won't eliminate human creative work but will create **"full employment"** for humans who can effectively critique, direct, and curate AI output. The value shifts from production to judgment.
 
+### AI Solipsists and AI Cynics — Two Kinds of AI Investor (July 2026)
+
+In "[AI solipsists and AI cynics](https://pluralistic.net/2026/07/24/supplemental-income/)" (July 24, 2026), Doctorow classifies AI investors into two distinct types, explaining why the world's wealthiest investors have poured over $1.4T into a bubble with "dogshit unit economics":
+
+**Type 1: Solipsists** — Billionaires who don't believe most other people are actually, fully real. Achieving billionairehood requires inflicting pain on vast numbers of people; if they truly believed those people were as real as they are, they couldn't look themselves in the mirror. Doctorow traces this through Leona Helmsley's "only the little people pay taxes" and Elon Musk's habit of calling dissenters "NPCs." This solipsism extends from Epstein's island (children not fully real) to Bezos's warehouse workforce (statistical artifacts) to Zuckerberg's desire to replace friends with chatbots.
+
+**Type 2: Cynical investors** — Investors who don't believe in AI themselves but believe that *other people* (specifically, bosses) will believe in AI. Drawing on Keynes's Beauty Contest theory — the point isn't picking the most beautiful contestant but the one other judges will crown — Doctorow argues that cynical investors ask not "Can AI do your job?" but "Can an AI salesman convince your boss that AI can do your job?" Bosses are absolute suckers for this scam because they hate having their plans checked by workers who actually know how things work. For these bosses, AI represents the chance to wire their "toy steering wheel" directly into the corporate drivetrain.
+
+Doctorow compares this to supplements hawked by Andrew Tate and Joe Rogan, or Gwyneth Paltrow's jade eggs: investors don't have to believe the product works — they just need to believe there's an army of desperate buyers who will believe.
+
+**The stakes**: When the bubble bursts, the seven AI companies making up 35% of the S&P 500 will tank, governments will turn to austerity (fascism's best recruiting tool), and the defective chatbots that replaced skilled workers will disappear along with the workers who understood the jobs. The source of the danger, Doctorow concludes, is financiers motivated by "a mix of solipsism and a belief in *other people's* solipsism."
+
 ## Books (Selected)
 
 | Year | Title | Publisher | Notes |
@@ -215,3 +228,4 @@ This metaphor captures Doctorow's core argument: scaling AI investment (more GPU
 - [Pluralistic.net — "Rights for robots and the AI slavery fantasy" (July 10, 2026)](https://pluralistic.net/2026/07/10/posthuman-as-in-no-humans/)
 - [The Internet Con (book)](http://seizethemeansofcomputation.org)
 - [Pluralistic.net — "Why aren't AI companies competing directly with their customers?" (July 13, 2026)](https://pluralistic.net/2026/07/13/go-meta-meta/)
+- [Pluralistic.net — "AI solipsists and AI cynics" (July 24, 2026)](https://pluralistic.net/2026/07/24/supplemental-income/)

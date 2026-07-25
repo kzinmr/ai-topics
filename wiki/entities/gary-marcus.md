@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-06-26
+updated: 2026-07-25
 tags:
   - lab
   - benchmark
@@ -308,3 +308,4 @@ Sources: [[raw/articles/garymarcus.substack.com--p-maybe-section-230-doesnt-shie
 - [The illusion of Generative AI, the insanity of massive bets on hyperscaling, and the case for world models and neurosymbolic AI](https://garymarcus.substack.com/p/the-illusion-of-generative-ai-the) (May 2026)
 - [The AI trial of the century ends with a whimper](https://garymarcus.substack.com/p/the-ai-trial-of-the-century-ends) (May 19, 2026) — On the OpenAI vs Musk trial verdict: jury rejected Musk's claims on statute of limitations grounds, never weighed in on OpenAI's legitimacy. See [[events/openai-musk-trial-verdict-2026|OpenAI vs Musk Trial Verdict]].
 - [No need to panic about Anthropic's new blog](https://garymarcus.substack.com/p/no-need-to-panic-about-anthropics) (June 4, 2026) — Marcus argues AGI ≠ RSI, Anthropic conflating coding speed with general intelligence; neurosymbolic AI rescue thesis
+- [An open letter to David Sacks](https://garymarcus.substack.com/p/an-open-letter-to-david-sacks) (July 24, 2026) — Marcus responds to David Sacks (former Trump Crypto and AI Czar) using the CAISI report and Lutnick tweet to advocate minimal AI regulation and US AI dominance; argues the US should consider coordinating AI policy with China rather than escalating competition

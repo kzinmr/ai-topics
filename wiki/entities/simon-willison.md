@@ -3,11 +3,11 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-07-24
+updated: 2026-07-25
 status: L3
   sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
-sources: [raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md, raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md, raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md, raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md, raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md, raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md, raw/articles/simonwillison.net--2026-jul-16-inkling--4c6392f3.md, raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md, raw/articles/simonwillison.net--2026-jul-16-linus-torvalds--881be321.md, raw/articles/simonwillison.net--2026-jul-17-spot-birds-not-golf--9b2b5171.md, raw/articles/simonwillison.net--2026-jul-16-firefox-in-webassembly--26721bbf.md, raw/articles/simonwillison.net--2026-jul-19-ai-mania--44d772e4.md, raw/articles/simonwillison.net--2026-jul-19-claude-code-in-bun-in-rust--2c8078d9.md, raw/articles/simonwillison.net--2026-jul-18-sqlite-query-explainer--767c42a6.md]
+sources: [raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md, raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md, raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md, raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md, raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md, raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md, raw/articles/simonwillison.net--2026-jul-16-inkling--4c6392f3.md, raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md, raw/articles/simonwillison.net--2026-jul-16-linus-torvalds--881be321.md, raw/articles/simonwillison.net--2026-jul-17-spot-birds-not-golf--9b2b5171.md, raw/articles/simonwillison.net--2026-jul-16-firefox-in-webassembly--26721bbf.md, raw/articles/simonwillison.net--2026-jul-19-ai-mania--44d772e4.md, raw/articles/simonwillison.net--2026-jul-19-claude-code-in-bun-in-rust--2c8078d9.md, raw/articles/simonwillison.net--2026-jul-18-sqlite-query-explainer--767c42a6.md, raw/articles/simonwillison.net--2026-jul-24-introducing-claude-opus-5--8e564905.md]
 ---
 
 # Simon Willison
@@ -631,3 +631,6 @@ Cross-wikilink: See [[concepts/coding-agents/coding-agents]]
 
 **SQLite Query Explainer** (July 18, 2026): Simon highlighted a new SQLite query explainer tool — developer tooling for understanding SQLite query plans.
 Source: [[raw/articles/simonwillison.net--2026-jul-18-sqlite-query-explainer--767c42a6.md]]
+
+**Introducing Claude Opus 5** (Jul 24, 2026): Simon linked to Anthropic's announcement of Claude Opus 5. He noted that Opus 5 matches Claude Fable 5's frontier intelligence at "half the price", tops the Artificial Analysis leaderboard ahead of even Fable 5, and is priced the same as Opus 4.8 ($5/$25 per MTok input/output). Simon highlighted the model's relentlessly proactive behavior — on one Frontier-Bench task, Opus 5 was given a drawing of a machine part with no direct way to view it, and responded by writing its own computer vision pipeline to pull geometry from raw pixels, then reconstructing the full part as a 3D FreeCAD model.
+Source: [[raw/articles/simonwillison.net--2026-jul-24-introducing-claude-opus-5--8e564905.md]]
