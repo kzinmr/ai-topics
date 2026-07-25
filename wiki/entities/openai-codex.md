@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-07-17
+updated: 2026-07-25
 tags:
   - product
   - coding-agent
@@ -15,6 +15,7 @@ tags:
   - human-in-the-loop
   - workflow
   - voice-ai
+  - multi-agent
 aliases:
   - Codex CLI
   - codex-cli
@@ -40,6 +41,7 @@ sources:
   - raw/articles/2026-07-11_theo_gpt-5-6-sol-without-hitting-limits.md
   - raw/newsletters/2026-07-14-ainews-codex-usage-up-10x-in-6-months-to-7m-users-1m-in-the-past-day-did-codex-o.md
   - raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md
+  - raw/articles/2026-07-24_pvncher_practical-multi-agent-orchestration-in-codex.md
 ---
 
 # OpenAI Codex
@@ -387,6 +389,43 @@ GPT-5.6 runs much longer than GPT-5.5 — it benefits from explicit stop boundar
 ### Experimentation Philosophy
 
 "Spend more time in the `~/.codex` and `~/.claude` directories. Make changes that feel stupid. Experiment. You'll be amazed what can happen."
+
+## Codex Multi-Agent V2 — Practical Orchestration (July 2026)
+
+> *Source: [[raw/articles/2026-07-24_pvncher_practical-multi-agent-orchestration-in-codex.md|Eric Provencher — "Practical multi-agent orchestration in Codex"]]*
+
+Eric Provencher ([@pvncher](https://x.com/pvncher), Codex DX @ OpenAI) published the official guide for Codex's **Multi-Agent V2 tools** — giving GPT-5.6 Sol and Terra a structured way to delegate tasks, share updates, and coordinate through complex workflows.
+
+### Role-Based Reasoning Effort Model
+
+The simplest orchestration pattern keeps one model family and adjusts reasoning effort to define roles:
+
+| Role | Model | Reasoning | Responsibility |
+|------|-------|-----------|----------------|
+| **Scout** | GPT-5.6 Sol Light | low | Read-only investigation: locate files, trace code paths, find tests |
+| **Worker** | GPT-5.6 Sol Medium | medium | Scoped implementation, checks, supporting work |
+| **Smart Worker** | GPT-5.6 Sol High | high | Difficult implementation, ambiguity resolution, coordination |
+| **Coordinator** | GPT-5.6 Sol (varies) | varies | Primary delegator — assigns work, avoids duplication, tracks agents |
+
+### Coordination Mechanics
+
+- **Direct agent messaging**: Agents can message one another through a common messaging system with separate inboxes. Scouts can pass findings to workers without waiting for the coordinator.
+- **Configurable concurrency**: Defaults to 4 agents per thread (including coordinator). A smart worker might coordinate a scout + worker, or the coordinator sends 3 scouts in parallel.
+- **Context inheritance** (`fork_turns`):
+  - `"none"` — fresh context, focused assignment (recommended for leaf agents)
+  - Inherited — agents see parent context + orchestration instructions
+  - Leaf boundary: *"Complete this assignment directly. Do not spawn other agents."*
+  - Fresh-context agents don't inherit tool/safety boundaries — include restrictions in assignments directly.
+
+### Skill-Based Orchestration Pattern
+
+Recommended standing instructions for coordinator skills:
+
+> Stay available to the user while delegating substantive work. Send focused, read-only scouts out in parallel with `reasoning_effort: "low"` and `fork_turns: "none"`. Use `reasoning_effort: "medium"` for routine implementation and `reasoning_effort: "high"` for harder problems. Give each agent clear ownership, avoid overlapping assignments, and tell leaf workers not to delegate. Bring the results together and keep approvals with the user.
+
+**Key insight**: This formalizes a pattern that advanced users ([[entities/theo-browne]], [[entities/hermes-agent]]) had been discovering empirically — role-based reasoning effort as the primary coordination mechanism, with skills encoding the orchestration strategy. Aligns with the [[concepts/harness-engineering/agent-harness|agent harness]] concept of tuning delegation through configuration knobs.
+
+**Related**: [[concepts/subagent-patterns]] — Subagent delegation patterns, [[concepts/codex/codex-goal]] — Goal-driven execution
 
 ## Growth Metrics
 

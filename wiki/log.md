@@ -3251,3 +3251,17 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - OpenAI/HF incident is major AI safety event warranting dedicated event page
 - "Subprime Data Center Crisis" article saved raw for future economics analysis (complex financial analysis, needs dedicated session)
 - Pelicanmaxxing article is novelty/benchmark content, saved raw only
+
+---
+## [2026-07-25] ingestion: Codex Multi-Agent V2 Orchestration Guide
+
+**Source:** X Article by Eric Provencher ([@pvncher](https://x.com/pvncher), Codex DX @ OpenAI)
+**URL:** https://x.com/pvncher/status/2080707291603407077
+
+**Created:**
+- `raw/articles/2026-07-24_pvncher_practical-multi-agent-orchestration-in-codex.md` — X Article: "Practical multi-agent orchestration in Codex"
+
+**Updated:**
+- `entities/openai-codex.md` — Added "Codex Multi-Agent V2 — Practical Orchestration" section. Covers: role-based reasoning effort model (Scout=Light, Worker=Medium, Smart Worker=High), direct agent messaging with separate inboxes, configurable concurrency (default 4), fork_turns context inheritance (none vs inherited), leaf agent boundaries, skill-based orchestration pattern. Added `multi-agent` tag. Updated sources and date.
+
+**Index:** Updated openai-codex entry in recently-updated entities section.
