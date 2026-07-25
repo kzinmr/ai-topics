@@ -868,7 +868,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1922 pages)
+## Concepts (1923 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1333,6 +1333,7 @@
 - [[concepts/claude/opus-4-6]] — Claude Opus 4.6
 - [[concepts/claude/opus-4-7]] — Claude Opus 4.7
 - [[concepts/claude/opus-4-8]] — Claude Opus 4.8
+- [[concepts/claude/opus-5]] — Claude Opus 5 — Frontier model released July 2026; near-Fable-5 intelligence at half price, proactively builds own CV pipeline, strong vulnerability finding
 - [[concepts/claude/perfect-memory]] — Claude Perfect Memory
 - [[concepts/claude/perfect-memory-entity]] — Claude Perfect Memory
 - [[concepts/claude/sonnet-4-6]] — Claude Sonnet 4.6
@@ -1898,6 +1899,7 @@
 - [[concepts/hornet]] — Hornet
 - [[concepts/how-coding-agents-work]] — How Coding Agents Work
 - [[concepts/how-to-design-programs]] — How to Design Programs
+- [[concepts/hqq]] — Half-Quadratic Quantization (HQQ) — calibration-free weight quantization using half-quadratic optimization; >50x faster than GPTQ, supports 1-8 bits
 - [[concepts/hrm-text]] — HRM-Text
 - [[concepts/http-conditional-requests]] — http-conditional-requests
 - [[concepts/huggingface-skills]] — Hugging Face Skills
@@ -2808,7 +2810,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (18 pages)
+## Events (19 pages)
 
 - [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
 - [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft
@@ -2818,6 +2820,7 @@
 - [[events/2026-06-24-qualcomm-acquires-modular]] — Qualcomm Acquires Modular — Qualcomm acquires AI infrastructure startup Modular (~$4B); implications for Mojo language, MAX platform, and AI chip-software consolidation; 238 HN pts, 125 comments (June 24, 2026)
 - [[events/2026-06-27-openai-gpt-5-6-sol]] — OpenAI GPT-5.6 Sol Restricted Preview — first U.S. government-mediated frontier model release; limited to ~20 trusted partners at government request (June 27)
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026
+- [[events/claude-opus-5-release-july-2026]] — Anthropic releases Claude Opus 5 (July 2026) — Near-Fable-5 at half price, leads Artificial Analysis leaderboard, proactive CV pipeline
 - [[events/distillation-attacks-2026]] — Industrial-Scale Distillation Attacks Accusation
 - [[events/google-io-2026]] — Google I/O 2026
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B

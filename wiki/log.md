@@ -1,3 +1,20 @@
+## [2026-07-25] active-crawl — 3 new pages, 1 raw article
+
+Trend discovery: X/Twitter + wiki gap analysis (HN returned 0 results). Top signals: Claude Opus 5 release, Qwen 3.6 benchmarks, OpenAI Agents SDK gap, HQQ quantization gap.
+
+NEW pages:
+- [[concepts/claude/opus-5]] — Claude Opus 5 concept: frontier model (July 24, 2026), near-Fable-5 at half price, proactively builds CV pipeline, leads Artificial Analysis
+- [[events/claude-opus-5-release-july-2026]] — Event page: Anthropic releases Claude Opus 5
+- [[concepts/hqq]] — Half-Quadratic Quantization: calibration-free weight quantization, >50x faster than GPTQ, supports 1-8 bits (Mobius Labs/Dropbox, Nov 2023)
+
+Raw articles saved:
+- raw/articles/2026-07-24_simonwillison_introducing-claude-opus-5.md — Simon Willison on Opus 5
+- raw/articles/2026-07-24_gilesthomas_benchmarking-qwen36-rtx3090.md — Giles Thomas Qwen 3.6 RTX 3090 benchmarks (page already enriched by blog-ingest)
+- raw/articles/2026-07-25_openai_agents-sdk-overview.md — OpenAI Agents SDK research (existing page at concepts/openai/agents-sdk.md already comprehensive)
+- raw/articles/2026-07-25_mobiusml_hqq-half-quadratic-quantization.md — HQQ research
+
+Skipped: Qwen 3.6-35B (already enriched by blog-wiki-ingest pipeline with same benchmarking data), OpenAI Agents SDK (duplicate of existing concepts/openai/agents-sdk.md, 151 lines)
+
 ## [2026-07-25] newsletter-wiki-ingest (10:35 UTC) — 2 takes + 1 reference from newsletter triage checkpoint
 - **Take (New)**: [[entities/amd]] — Created: AMD entity page (MI455X 2nm, Helios rack-scale, ROCm risks, Agentic Kernel Generation, Anthropic/MS customer wins)
 - **Take (New)**: [[concepts/cuda-moat]] — Created: CUDA Moat concept page (NVIDIA software ecosystem moat, AMD's Agentic Kernel Generation, SemiAnalysis thesis)
@@ -3283,3 +3300,22 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - `entities/openai-codex.md` — Added "Codex Multi-Agent V2 — Practical Orchestration" section. Covers: role-based reasoning effort model (Scout=Light, Worker=Medium, Smart Worker=High), direct agent messaging with separate inboxes, configurable concurrency (default 4), fork_turns context inheritance (none vs inherited), leaf agent boundaries, skill-based orchestration pattern. Added `multi-agent` tag. Updated sources and date.
 
 **Index:** Updated openai-codex entry in recently-updated entities section.
+
+---
+## [2026-07-25] concept: Half-Quadratic Quantization (HQQ) — new page
+
+**Source:** https://dropbox.github.io/hqq_blog/ (Mobius Labs / Dropbox, November 2023)
+**Authors:** Hicham Badri, Appu Shaji
+
+**Created:**
+- `raw/articles/2026-07-25_mobiusml_hqq-half-quadratic-quantization.md` — Raw article: blog post summary, technical method, benchmarks
+- `concepts/hqq.md` — Concept page: calibration-free weight quantization using half-quadratic optimization; >50x faster than GPTQ, supports 1-8 bits
+
+**Key findings:**
+- HQQ uses half-quadratic solver with sparsity-promoting lp-norm loss (p<1) to find quantization parameters without calibration data
+- Quantizes Llama-2-70B in <5 minutes vs ~4+ hours for GPTQ
+- Llama-2-70B @ 2-bit outperforms full-precision Llama-2-13B
+- Integrated with HuggingFace Transformers, vLLM, PEFT/LoRA, torch.compile
+- GitHub: dropbox/hqq (949★, Apache 2.0), PyPI: hqq v0.2.8.post1
+
+**Index:** Added hqq entry to Concepts section.
