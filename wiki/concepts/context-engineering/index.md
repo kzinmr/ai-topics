@@ -1,7 +1,7 @@
 ---
 title: Context Engineering
 created: 2026-05-20
-updated: 2026-06-11
+updated: 2026-07-25
 type: concept
 tags:
   - context-engineering
@@ -20,9 +20,11 @@ tags:
   - enterprise-agents
   - agent-identity
   - agent-governance
-  [context-engineering, context-management, ai-agent-engineering, ai-agents, prompting, agent-architecture, memory-systems, agent-memory, subagents, rag, prompt-caching, token-economics, agentic-engineering, progressive-disclosure, agent-design-patterns, enterprise-agents, agent-identity, agent-governance]
+  - claude-code
+  - claude-fable-5
+  - system-prompt
 sources:
-  [raw/articles/2025-09-29_anthropic_effective-context-engineering-for-ai-agents.md, raw/articles/2025-06-23_lancemartin_context-engineering-for-agents.md, raw/articles/2026-01-09_lancemartin_agent-design-patterns.md, raw/articles/substack.com--redirect-6b46ec4c-ff7c-43b5-9e62-b0d4bf1dca99--bb1f035d.md]
+  [raw/articles/2025-09-29_anthropic_effective-context-engineering-for-ai-agents.md, raw/articles/2025-06-23_lancemartin_context-engineering-for-agents.md, raw/articles/2026-01-09_lancemartin_agent-design-patterns.md, raw/articles/substack.com--redirect-6b46ec4c-ff7c-43b5-9e62-b0d4bf1dca99--bb1f035d.md, raw/articles/2026-07-24_trq212_context-engineering-claude-5.md]
 ---
 
 # Context Engineering
@@ -303,6 +305,40 @@ Building an agent? Consider each dimension:
 5. **System prompt**: Is it at the right altitude? Start minimal, add only for observed gaps.
 6. **Tools**: Are descriptions token-efficient? Consistent naming? Progressive disclosure where possible?
 7. **Caching**: Is your message ordering cache-friendly? What's your cache hit rate?
+
+---
+
+## Claude 5 Context Engineering Paradigm Shift (July 2026)
+
+In July 2026, Thariq Shihipar (@trq212) of Anthropic's Claude Code team published a landmark article documenting how the team **removed over 80% of Claude Code's system prompt** for Claude Opus 5 and Claude Fable 5 with no measurable loss on coding evaluations. The article articulates six paradigm shifts in context engineering for advanced models:
+
+### The Six "Then → Now" Transitions
+
+| # | Old Practice | New Practice | Key Insight |
+|---|-------------|-------------|-------------|
+| 1 | **Give Claude rules** | **Let Claude use judgement** | Older models needed explicit guardrails ("no comments, no docstrings") that were wrong for some prompts. Claude 5 models can match surrounding code style without explicit rules. New prompt: "Write code that reads like the surrounding code: match its comment density, naming, and idiom." |
+| 2 | **Give Claude examples** | **Design interfaces** | Examples constrain models to an exploration space. Instead, design tool interfaces that are self-describing — e.g., enumerations (`pending`, `in_progress`, `completed`) hint at usage patterns without examples. |
+| 3 | **Put it all upfront** | **Use progressive disclosure** | Claude Code moved verification and code review into separate skills that load on demand. "Deferred loading" tools require ToolSearch before use, keeping context clean until needed. Apply the same pattern to CLAUDE.md and SKILL.md: a tree of files loaded at the right time, not a monolithic repository. |
+| 4 | **Repeat yourself** | **Simple tool descriptions** | Older models needed instructions repeated in both system prompt and tool descriptions (recency bias). Claude 5 models only need instructions in tool descriptions — delete the repeats. |
+| 5 | **Memory in CLAUDE.md files** | **Auto-memory** | Claude now automatically saves relevant memories across sessions. Manual # hotkey memory-writing in CLAUDE.md is obsolete for Claude 5. |
+| 6 | **Simple specs** | **Rich references** | Claude 5 can handle complex references beyond markdown plans: HTML artifacts, test suites as specs, code from other codebases as porting references, and **rubrics** (verifier agents that check output against taste criteria). |
+
+### System-Level Design Principles
+
+The article provides concrete guidance for each context layer:
+
+- **System Prompt**: Heavily tied to product context. For Claude Code users this is fixed; for harness builders, spend significant time here. Keep it at the right "altitude."
+- **CLAUDE.md**: Keep lightweight. Describe the repo briefly, but spend most tokens on **gotchas** — non-obvious codebase quirks. Avoid stating things Claude can discover from the filesystem. Use progressive disclosure for detailed instructions (e.g., reference a verification skill).
+- **Skills**: Lightweight guides loaded on demand. **Avoid over-constraining** except in critical areas. For long skills, split into multiple files with progressive disclosure. Skills should encode opinions, knowledge, or best practices specific to you, your team, or product.
+- **References**: Prefer **code over prose** — HTML mockups produce better results than design descriptions; test suites work better than spec documents. Use @ mentions to include files as references.
+
+### The "Unhobbling" Insight
+
+The core realization: Anthropic was **over-constraining** Claude Code. Transcripts of internal usage showed conflicting messages across system prompts, skills, and user requests (e.g., "leave documentation as appropriate" vs "DO NOT add comments"). While these constraints prevented worst-case scenarios for older models, Claude 5's improved judgement allows removing them. The `claude doctor` command (`/doctor` in Claude Code) automates this simplification — rightsizing skills and CLAUDE.md files.
+
+**Related tool**: Claude Code now has memory, artifacts, and skills as dedicated context-sharing mechanisms — reducing the historical burden placed on CLAUDE.md as a catch-all.
+
+> **Source**: [[raw/articles/2026-07-24_trq212_context-engineering-claude-5]] — Thariq Shihipar, "The new rules of context engineering for Claude 5 models" (July 24, 2026). 23.7K bookmarks, 11.5K likes, 2.4M impressions.
 
 ---
 

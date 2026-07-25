@@ -3,14 +3,14 @@ title: Thariq Shihipar
 type: entity
 handle: "@trq212"
 created: 2026-04-10
-updated: 2026-07-02
+updated: 2026-07-25
 tags:
   - person
   - anthropic
   - ai-agents
   - interpretability
   - company
-sources: []
+sources: [raw/articles/2026-07-24_trq212_context-engineering-claude-5.md]
 ---
 
 
@@ -26,6 +26,8 @@ sources: []
 | **Bio** | Engineer and serial entrepreneur currently on the Claude Code team at Anthropic. Previously founded Multiverse (YC W20, raised $17M), sold a SaaS startup (Edgeout.gg → blitz.gg), co-founded Pubpub.org (non-profit academic publishing), and studied at the MIT Media Lab. Writes thoughtfully about AI interpretability, agent architecture, spirituality, and the craft of building. |
 
 ## Notable Writing
+
+- **"[The new rules of context engineering for Claude 5 models](https://x.com/i/article/2080703729385512960)"** (Jul 2026) — Landmark X Article documenting how Anthropic **removed 80% of Claude Code's system prompt** for Claude Opus 5 and Fable 5 with no measurable loss. Articulates six paradigm shifts in context engineering: letting Claude use judgement over explicit rules, designing interfaces over giving examples, progressive disclosure over upfront loading, simple tool descriptions over repetition, auto-memory over CLAUDE.md files, and rich references over simple specs. 23.7K bookmarks, 2.4M impressions. [[concepts/context-engineering/index|Context Engineering]], [[concepts/claude-code/claude-code-skills|Claude Code Skills]]
 
 - **"[Detecting when LLMs are Uncertain](https://www.thariq.io/blog/entropix/)"** (Oct 2024) — The canonical explainer of [[entities/xjdr|xjdr's]] entropix project. Breaks down the entropy/varentropy quadrant, 4 adaptive sampling strategies, and the "thinking token" insight. [[concepts/entropix]]
 

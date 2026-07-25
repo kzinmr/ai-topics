@@ -1,3 +1,14 @@
+## [2026-07-25] X bookmarks ingest — Thariq Shihipar context engineering for Claude 5
+
+**Source**: X Article by Thariq Shihipar (@trq212), "The new rules of context engineering for Claude 5 models" (Jul 24, 2026). 23.7K bookmarks, 2.4M impressions.
+
+**Key findings**: Anthropic removed 80% of Claude Code's system prompt for Claude Opus 5/Fable 5 with no measurable loss. Article articulates six paradigm shifts: rules→judgement, examples→interfaces, upfront→progressive disclosure, repetition→simple descriptions, CLAUDE.md memory→auto-memory, simple specs→rich references.
+
+**Wiki changes**:
+- 🆕 Raw article: [[raw/articles/2026-07-24_trq212_context-engineering-claude-5]]
+- ✏️ Enriched [[concepts/context-engineering/index]] — Added "Claude 5 Context Engineering Paradigm Shift" section with six-transition table, system-level design principles, and the "Unhobbling" insight. Updated tags (claude-code, claude-fable-5, system-prompt) and sources.
+- ✏️ Enriched [[entities/thariq-shihipar]] — Added article to Notable Writing. Updated date and sources.
+
 ## [2026-07-25] active-crawl — 3 new pages, 1 raw article
 
 Trend discovery: X/Twitter + wiki gap analysis (HN returned 0 results). Top signals: Claude Opus 5 release, Qwen 3.6 benchmarks, OpenAI Agents SDK gap, HQQ quantization gap.
