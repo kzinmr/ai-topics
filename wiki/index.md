@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (864 pages)
+## Entities (865 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -42,6 +42,7 @@
 - [[entities/aman-sanger]] — Aman Sanger — Cursor co-founder and CTO; pioneered self-driving codebases, three eras of AI coding, artifacts paradigm
 - [[entities/amazon-bedrock-agentcore]] — Amazon Bedrock AgentCore
 - [[entities/amazon-rivr]] — Amazon Acquires Rivr
+- [[entities/amd]] — AMD — GPU/silicon company; MI455X 2nm datacenter silicon (20PF FP8), Helios rack-scale system, ROCm software ecosystem, CUDA moat challenge, Agentic Kernel Generation strategy (July 2026)
 - [[entities/amd-ryzen-ai-halo]] — AMD Ryzen AI Halo — $4,000 AI dev kit with unified memory architecture for local LLM inference; competitor to NVIDIA and Apple Silicon in local AI hardware (July 2026)
 - [[entities/amp]] — Amp
 - [[entities/andon-labs]] — Andon Labs
@@ -867,7 +868,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1920 pages)
+## Concepts (1922 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1479,6 +1480,7 @@
 - [[concepts/crypto-ancienne]] — Crypto Ancienne
 - [[concepts/cryptography-patterns]] — Cryptography Patterns — Bitwarden Encryption Architecture
 - [[concepts/cs231n]] — cs231n
+- [[concepts/cuda-moat]] — CUDA Moat — NVIDIA's CUDA software ecosystem as barrier to GPU competition; AMD's Agentic Kernel Generation strategy, SemiAnalysis AMD thesis (July 2026)
 - [[concepts/currentai]] — CurrentAI — Open Source AI Gap Map: 421 products (266 software, 85 models, 50 datasets, 20 hardware) across 14 categories from 228 orgs; MIT license YAML on GitHub (July 5)
 - [[concepts/cursor-automations]] — Cursor Automations
 - [[concepts/custom-ai-silicon]] — Custom AI Silicon
@@ -2377,6 +2379,7 @@
 - [[concepts/probe-and-prefill]] — Probe&Prefill
 - [[concepts/process-supervision]] — Process Supervision for AI Agent Runtimes
 - [[concepts/prodng]] — ProdNG
+- [[concepts/production-ai-agents]] — Production AI Agents — Real-world deployed AI agents in enterprise; Maven Clinic case study (100% rollout, 10x volume, evaluation system, model switching) (July 2026)
 - [[concepts/programmatic-seo]] — Programmatic-SEO
 - [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling — LLM Writing Code that Calls Tools
 - [[concepts/programming-languages]] — Programming Languages

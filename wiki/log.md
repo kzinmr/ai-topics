@@ -1,3 +1,12 @@
+## [2026-07-25] newsletter-wiki-ingest (10:35 UTC) — 2 takes + 1 reference from newsletter triage checkpoint
+- **Take (New)**: [[entities/amd]] — Created: AMD entity page (MI455X 2nm, Helios rack-scale, ROCm risks, Agentic Kernel Generation, Anthropic/MS customer wins)
+- **Take (New)**: [[concepts/cuda-moat]] — Created: CUDA Moat concept page (NVIDIA software ecosystem moat, AMD's Agentic Kernel Generation, SemiAnalysis thesis)
+- **Take (New)**: [[concepts/production-ai-agents]] — Created: Production AI Agents concept page (Maven Clinic case study, 100% rollout, 10x volume, evaluation system, model switching)
+- **Enriched**: [[entities/semianalysis]] — Added AMD Advancing AI 2026 section (MI455X specs table, Helios analysis, ROCm critique)
+- **Enriched**: [[entities/hugo-bowne-anderson]] — Added Maven Assistant section (William Horton interview, production AI agent findings)
+- **Enriched**: [[entities/anthropic]] — Added Claude Opus 5 launch section (ECI 159, SWE-ECI 161, pricing, FrontierCode anomaly, AA-Briefcase leader)
+- **Sources**: SemiAnalysis AMD article, Vanishing Gradients Ep. 74 (William Horton), AINews Jul 25
+
 ## [2026-07-25] blog-wiki-ingest (10:23 UTC) — 7 reference enrichments from 20 blog articles
 - **Reference**: entities/simon-willison.md — Added Claude Opus 5 link blog entry (Jul 24, pricing/benchmark info)
 - **Reference**: entities/boris-cherny.md — Added Opus 5 as "least prompt injectable model" quote from System Card p.73

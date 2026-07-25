@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-07-08
+updated: 2026-07-25
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -34,6 +34,7 @@ sources: [
   - raw/newsletters/2026-06-06-rsi-when-ai-starts-building-its-own-successors.md
   - raw/articles/2026-06-07_anthropic_recursive-self-improvement.md
   - raw/newsletters/2026-07-08-anthropic-3q26-profit-over-1b-the-anthropic-ipo-financials-sneak-peak.md
+  - raw/newsletters/2026-07-25-ainews-claude-opus-5-fable-level-performance-at-opus-price-half-fable.md
 ]
 related: []
 ---
@@ -644,6 +645,34 @@ Primary model family: [[Claude models]]
 - Fast mode: $10/M input, $50/M output (significant reduction from 4.6/4.7's $30/$150; research preview only)
 
 
+### Claude Opus 5 (July 2026)
+
+Anthropic launched **Claude Opus 5** in July 2026 — a major model release delivering Fable-class performance at significantly lower cost.
+
+**Key benchmarks**:
+- **Epoch ECI**: 159 (vs Fable 5 = 161)
+- **SWE-ECI**: 161, matching Fable 5 on software engineering
+- **Pricing**: Fable-level performance at Opus price — approximately **half Fable's cost**
+
+**Notable characteristics**:
+- **FrontierCode anomaly**: Medium effort configuration outperforms high effort, an unusual finding suggesting the model's optimal inference strategy differs from expected
+- **Best-of-n sampling**: Allows head-to-head wins against Fable 5 in some user tests, giving users a pragmatic edge against the more expensive model
+- **Browser automation capability**: Demonstrated via a ChatGPT Pro subscription cancellation demo, showing strong real-world agentic abilities
+
+**Market positioning**:
+- **Artificial Analysis AA-Briefcase leader**: Opus 5 outperforms Fable 5 by **150 Elo** while simultaneously **reducing Cost per Task by 20%** — a rare combination of superior quality and lower cost
+- **Nous Portal**: Offers access with a **20% discount** relative to standard Anthropic pricing
+
+| Metric | Opus 5 | Fable 5 |
+|--------|--------|---------|
+| Epoch ECI | 159 | 161 |
+| SWE-ECI | 161 | 161 |
+| AA-Briefcase Elo | +150 vs Fable | Baseline |
+| Cost per Task | −20% vs Fable | Baseline |
+
+Sources: AINews (2026-07-25), Simon Willison blog-triage entry.
+
+
 ## Safety & Honesty
 
 Claude Opus 4.8 introduced notable honesty improvements:
@@ -707,3 +736,7 @@ Training philosophy: train models to avoid unsupported claims and flag uncertain
 
 - 2026-04-26-claude-code-anthropic-agentic-coding-system
 - anthropic-claude-code-session-management-1m-context
+
+## Log
+
+- 2026-07-25: Added Claude Opus 5 launch section (July 2026). Key details: Epoch ECI 159, SWE-ECI 161 (matching Fable 5), half Fable's price, FrontierCode medium-effort anomaly, best-of-n sampling wins, browser automation, AA-Briefcase +150 Elo at −20% Cost per Task. Sources: AINews 2026-07-25, Simon Willison blog-triage.

@@ -4,8 +4,8 @@ type: entity
 aliases: [hugobowne, Hugo Bowne Anderson]
 status: complete
 created: 2026-04-14
-updated: 2026-06-16
-depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 5, 13), 'notes': "Added Privacy Engineering + Agent Harness Engineering sections from 2026 content"}
+updated: 2026-07-25
+depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 7, 25), 'notes': "Added Privacy Engineering + Agent Harness Engineering + Production AI Agents: Maven Assistant sections from 2026 content"}
 tags:
   - person
   - harness-engineering
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-05-04_15-privacy-questions-ai-builder.md
   - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
   - https://open-racer-a67.notion.site/The-agent-harness-reading-list-35e14bb7e4a2805d881ae261573ff76f
+  - raw/newsletters/2026-07-25-four-months-inside-a-production-ai-agent-what-real-users-changed.md
 ---
 
 
@@ -279,6 +280,45 @@ Key upcoming events and lessons from this period:
 
 This thesis extends Hugo's broader philosophy that **evaluation is the engine, not the afterthought** — the focus should be on building systems that work reliably in production, not on maximizing autonomous capabilities.
 
+## Production AI Agents: Maven Assistant (July 2026)
+
+In July 2026, Hugo hosted **William Horton** from **Maven Clinic** on Vanishing Gradients for a deep dive into four months of operating a production healthcare AI agent — the **Maven Assistant**. The episode ([raw newsletter](raw/newsletters/2026-07-25-four-months-inside-a-production-ai-agent-what-real-users-changed.md)) provided some of the most detailed published insights into real-world production AI agent operation.
+
+### Maven Assistant Rollout & Unexpected Usage
+
+Maven Assistant was deployed to **100% of users** from day one. Weekly conversation volume grew **10x** over four months. However, **50-60% of all conversations were basic health questions** — not the complex provider search and appointment booking flows the team had invested most heavily in. Users treated the agent as a general health triage tool before engaging with the provider system, revealing a fundamental gap between pre-launch assumptions and real-world usage.
+
+### Evaluation & Guardrail Systems
+
+Maven's evaluation infrastructure was one of the most sophisticated documented:
+- **1,000+ deterministic tool-use test scenarios** covering core interaction paths
+- **LLM-as-judge evaluations** with multiple judge models and cross-validation
+- **Synthetic negatives** — deliberately crafted failure cases to test guardrail robustness
+- **Manual review** by clinicians for high-stakes outputs
+
+Notable guardrail failures included:
+- An **emergency guardrail** that told an ER patient to "go to the ER" — technically correct but bypassing the intended escalation protocol
+- **Zendesk content leakage** where the agent pulled knowledge base articles written for support staff (telling users to "open the app") instead of answering their actual questions
+
+These failures were **not detectable from synthetic test data** — only real traffic revealed them.
+
+### Model Switching & Economics
+
+Over the four-month period, Maven **moved from Gemini Flash 2.5 toward OpenAI models** (GPT-5.6, Terra, Fable). Each model change required running the full 1,000+ test suite plus manual clinician review. William Horton's key quote captures the reality:
+
+> *"If anyone says they can swap a model and know with no manual review that it'll be better, they're lying."*
+
+The team also found that **open-weight self-hosting economics are nuanced** — even a smaller self-hosted model requires always-on GPU infrastructure and ongoing engineering attention, often exceeding API costs when engineering labor is factored in.
+
+### Key Architectural Lessons
+
+- **Provider search and appointment booking should be one agent** — separation created friction
+- **Model experiments should start before the original model choice hardens** — waiting makes switching more costly
+- **Evaluation is the operating system, not the afterthought** — every change is gated by comprehensive testing
+- **Production AI agent development is a discovery process** — user behavior cannot be fully predicted pre-launch
+
+This case study directly validates Hugo's broader philosophy: evaluation-driven development, structured automation, and the recognition that production AI systems must be built for discovery and iteration, not for a pre-imagined user.
+
 ## Key Quotes
 
 > *"You're not launching a product: You're launching a hypothesis."*
@@ -314,6 +354,7 @@ This thesis extends Hugo's broader philosophy that **evaluation is the engine, n
 
 ## Log
 
+- **2026-07-25**: Added Production AI Agents: Maven Assistant section (William Horton interview, July 2026). Documented evaluation system, unexpected usage patterns, model switching, guardrail failures. Added `production-ai-agents` concept page cross-reference.
 - **2026-06-05**: Added "The Agentic Software Factory" article (Show Us Your Agent Skills Ep. 1). Added Jeremiah Lowin and Randy Olson to Related People. Added Show Us Your Agent Skills entity link.
 - **2026-05-13**: Major enrichment — Added Privacy Engineering section (from "15 Privacy Questions" with Katharine Jarmul), Agent Harness Engineering section (Harness Reading List, Lance Martin's Reduce/Offload/Isolate, Jeff Huber context engineering, Ivan Leo self-extending agents, Doug Turnbull agentic search). Added 5 new Related People entries. Merged duplicate `hugo-bowne.md` stub. Added `@hugobowne` to x-accounts.yaml.
 - **2026-04-14**: Initial entity page creation (L3 depth). Core philosophy, career timeline, podcast episodes, O'Reilly articles, conceptual frameworks, related people mapping.
