@@ -1,3 +1,26 @@
+---
+
+## [2026-07-26] watchdog | auto-fix log separators + index header counts
+
+### Changes
+- Fixed 5 missing `---` separators in log.md between consecutive section headers
+- Updated index.md header counts: Entities 865→867, Concepts 1903→1927 (incl. _index.md files)
+
+### Verification
+- index.md: 0 pipe corruption, 0 line prefix, 0 triple brackets, 0 duplicates, 0 ghosts
+- log.md: 0 missing separators (174 headers checked)
+- validate_index.py: clean (2847 lines)
+- Cross-section misplacement: 0
+
+### Pipeline Context
+- wiki_health: null (not available this run)
+- wiki_graph_analysis: stale (50.4h old — skipped)
+- pipeline_watchdog: no alerts
+
+### Action Items (human review)
+- Graph analysis report from 2026-07-24 is 50h stale — schedule re-run
+- 1 entity page and 2 concept pages on disk not indexed — minor, defer to next orphan pass
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
@@ -6,9 +29,11 @@ _Log of all wiki changes. Newest entries at top._
 
 ## 2026-07-26
 
+---
 ## [2026-07-26] Active crawl — 2 new pages created, 1 page enriched
 
 
+---
 ## [2026-07-26] Raw backlog ingest — 3 enriched, 2 skipped (already archived)
 
 **Pipeline**: raw-backlog-ingest (14:00 UTC)
@@ -59,10 +84,12 @@ _Log of all wiki changes. Newest entries at top._
 - **10:34 UTC** [newsletter-wiki-ingest] Newsletter triage checkpoint recovered (1 reference + 36 skip). Enriched [[concepts/ai-content-transparency]] with Substack AI Detection Framework section — Pangram "Scan for AI text" button, "Claudefishing" concept (Chris Best "Against Claudefishing"), Good/Bad/Ugly analysis (Alex Banks via The Signal), "How I Make This" disclosure, and implications for written-content platforms. Added to platform comparison table, technical approaches, policy landscape, and open questions. Created [[entities/the-signal]] skeleton page. Added `claudefishing` tag to SCHEMA.md taxonomy.
   - Sources: raw/newsletters/2026-07-25-the-good-the-bad-and-the-ugly-of-ai-writing.md, https://thesignal.substack.com/p/the-good-the-bad-and-the-ugly-of
 
+---
 ## 2026-07-25
 
 - **22:30 UTC** [Xアカウントスキャン] Drew Breunig (@dbreunig) の新規プロジェクト drskill、skilled-proposer、ブログ記事「Separating Task from Model」を entities/drew-breunig.md とサブページに追加。GEPA概念ページに skilled-proposer 参照を追加。raw記事として cmpnd.ai ブログ記事と Armin Ronacher「Codeberg Divides」を保存
 
+---
 ## [2026-07-25] Dreaming consolidation — saturation pass (Takes=0, Refs=3)
 
 - Filesystem scan: Jul 24-25 raw articles screened (146 recent files, 10 triaged)
@@ -74,6 +101,7 @@ _Log of all wiki changes. Newest entries at top._
   - [[entities/harvey.md]] — Opus 5 LAB all-pass 11.7% (up from Sonnet 5's 5.8%, 26% fewer tokens than Opus 4.8)
 - Skips: 7 (non-AI batch, sitemap marketing batch, already-covered articles)
 - Archive: 9 newly archived, 1 dedup, total 1,936 URLs
+---
 ## [2026-07-25] watchdog | fix log header burial + health verification
 
 - [FIX] Restored `# Wiki Log` header from line 762 to line 1 (42 orphaned entries had accumulated before the header)
