@@ -790,6 +790,7 @@
     "https://mitchellh.com/writing/zig-donation-2026",
     "https://mjtsai.com/blog/2025/12/19/backblaze-no-longer-backs-up-dropbox/",
     "https://mobiledevmemo.com/did-apple-just-signal-a-third-party-expansion-of-apple-ads/",
+    "https://mobiusml.github.io/hqq_blog/",
     "https://modal.com/blog/achieve-sota-specdec",
     "https://modal.com/blog/inkling-by-thinking-machines-labs-now-available-on-modal",
     "https://modal.com/blog/spec-is-all-u-need",
@@ -839,6 +840,7 @@
     "https://news.smol.ai/",
     "https://news.xbox.com/en-us/2026/06/25/xbox-console-price-update/",
     "https://news.ycombinator.com/item?id=48653268",
+    "https://news.ycombinator.com/item?id=49024620",
     "https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering",
     "https://newsletter.semianalysis.com/p/intel-should-raise-capital",
     "https://newsroom.gettyimages.com/en/getty-images/getty-images-announces-display-partnership-with-openai",
@@ -1611,6 +1613,7 @@
     "https://www.cerebras.ai/blog/how-we-built-our-knowledge-base",
     "https://www.chatprd.ai/how-i-ai/my-gpt-56-sol-benchmark-game-changing-workflows",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/c11-generic/",
+    "https://www.cmpnd.ai/blog/separating-task-from-model.html",
     "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
     "https://www.cnbc.com/2026/06/16/-spacex-to-buy-cursor-ai-parent-anysphere-for-60-billion.html",
     "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
@@ -1859,6 +1862,7 @@
     "https://www.together.ai/blog/announcing-our-series-c",
     "https://www.together.ai/blog/how-together-ai-built-the-worlds-fastest-speech-to-text-stack",
     "https://www.together.ai/blog/iso-27001-2022-certification",
+    "https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding",
     "https://www.together.ai/blog/new-in-together-gpu-clusters-reliability-and-control-for-production-gpu-clusters",
     "https://www.together.ai/blog/provisioned-throughput",
     "https://www.together.ai/blog/together-ai-brings-thinking-machines-labs-new-model-inkling-on-day-0",
@@ -1955,5 +1959,5 @@
     "https://yoroll.ai/",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-07-26T10:34:13.276799+00:00"
+  "updated": "2026-07-26T18:31:56.659256+00:00"
 }

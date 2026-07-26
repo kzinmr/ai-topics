@@ -1,3 +1,10 @@
+## [2026-07-26] Dreaming consolidation — saturation pass (Takes=0, Refs=1)
+- Pattern E filesystem scan: 149 recent raw articles, ~40 from Jul 24-26
+- Prior triage (2026-07-25) consumed: 10 decisions (0 takes, 3 refs, 7 skips)
+- Today's pipelines: active-crawl (2 new + 1 enriched), raw-backlog (3 enriched)
+- 1 reference candidate: seangoedecke.com LLMs reward expertise (source listed but body absent)
+- 8 skips: Screenpipe/KimiK3/Antirez/ludic/DSPy/HQQ already covered; Google DMA + 20 non-AI batch
+- Archive: 9 candidates, 5 newly archived, 4 dedup (total: 1958 URLs)
 ---
 
 ## [2026-07-26] watchdog | auto-fix log separators + index header counts
