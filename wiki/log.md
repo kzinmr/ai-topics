@@ -11,6 +11,8 @@ _Log of all wiki changes. Newest entries at top._
   - Created [[concepts/ai-adoption-failures-and-enterprise-psychosis]] — enterprise AI psychosis, coordination failures, 0% success rate observations
   - Created [[concepts/open-source-llm-governance-debian-gr]] — Debian general resolution on LLM usage (3 alternatives: ban, reject, allow with conditions)
   - Other saved articles: Ruff v0.16.0 (Simon Willison), Google v SerpApi (DMCA/scraping), EU €890M Google DMA fine, Troy Hunt data breaches, bIRC client, construction physics reading list, LWN security/kernel updates
+- **10:34 UTC** [newsletter-wiki-ingest] Newsletter triage checkpoint recovered (1 reference + 36 skip). Enriched [[concepts/ai-content-transparency]] with Substack AI Detection Framework section — Pangram "Scan for AI text" button, "Claudefishing" concept (Chris Best "Against Claudefishing"), Good/Bad/Ugly analysis (Alex Banks via The Signal), "How I Make This" disclosure, and implications for written-content platforms. Added to platform comparison table, technical approaches, policy landscape, and open questions. Created [[entities/the-signal]] skeleton page. Added `claudefishing` tag to SCHEMA.md taxonomy.
+  - Sources: raw/newsletters/2026-07-25-the-good-the-bad-and-the-ugly-of-ai-writing.md, https://thesignal.substack.com/p/the-good-the-bad-and-the-ugly-of
 
 ## 2026-07-25
 

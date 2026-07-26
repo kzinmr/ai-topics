@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (863 pages)
+## Entities (864 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -779,6 +779,7 @@
 - [[entities/thariq-shihipar]] — Thariq Shihipar
 - [[entities/the-browser-company]] — The Browser Company
 - [[entities/the-harness-blog]] — Working notebook on harness engineering, agentic AI, and AI in Architecture, Engineering, and Construction (AEC). 25 ...
+- [[entities/the-signal]] — The Signal (Alex Banks) — Substack newsletter covering AI writing, content moderation, and platform policy; documented Substack's "Scan for AI text" feature and Claudefishing concept
 - [[entities/the-old-new-thing]] — Raymond Chen
 - [[entities/the-silicon-underground]] — Dave Farquhar (The Silicon Underground)
 - [[entities/theodoros-galanos]] — AI researcher and practitioner at the intersection of harness engineering, agentic AI, and architecture/engineering/c...
