@@ -1,7 +1,7 @@
 ---
 title: "Microsoft MAI-Thinking-1 Technical Report Deep Dive"
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-07-26
 type: concept
 tags:
   - microsoft

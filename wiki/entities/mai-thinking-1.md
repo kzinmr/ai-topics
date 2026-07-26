@@ -2,7 +2,7 @@
 title: "MAI-Thinking-1"
 type: entity
 created: 2026-06-21
-updated: 2026-07-10
+updated: 2026-07-26
 tags:
   - microsoft
   - model
@@ -77,6 +77,39 @@ Architecture family varies only model depth; all other dimensions derived via he
 | L42 | 6.1B | 159B | 42 |
 | L66 | 21.7B | 615B | 66 |
 | L78 (MAI-Base-1) | 34.7B | 962B | 78 |
+
+## Data & Pre-Training
+
+### Data Composition
+MAI-Thinking-1 is pre-trained on 30T tokens from a mixture of publicly available and licensed human-generated data:
+
+- **Sources**: Web data, public GitHub code, books, academic papers, news, multilingual text, and domain-specific materials — all processed in-house
+- **No synthetic data**: Active effort to detect and remove AI-generated content during pre-training (no synthetic data from language models)
+- **No open-source training datasets**: Common ML databases decontaminated from training data
+- **Scale**: 794B pages from proprietary web crawl + Common Crawl
+
+### Extraction and Dedup Pipeline
+- **SHA-256 exact dedup** → character-level n-gram MinHash fuzzy dedup → vector dedup with embedding model
+- **Data mixing**: Small-scale proxies predict optimal mixture at scale; automatic mixing treated as optimization problem
+- **Critical finding**: Insufficient dedup in STEM content scaled badly with increased FLOPs
+
+### Mid-Training
+After pre-training, mid-training emphasizes **STEM, math, and coding abilities** to build a strong foundation for reasoning RL climbs. Mid-training data uses taxonomy from Essential Web ([[entities/essential-ai]]). After mid-training, the model achieves 256K max context. Pre- and mid-training total: 33.5T tokens.
+
+### Training Recipe
+
+| Parameter | Value |
+|-----------|-------|
+| Optimizer | AdamW (non-standard betas) |
+| Weight decay | 0.1 general, 0.01 attention, 0.005 embedding |
+| Sequence length | 16K |
+| Parallelism | EP=64, ZeRO-2; ZeRO-3 for long context |
+| Precision | BF16 (specific per-component scheme) |
+| Goodput | 90.0% at 8K GPUs |
+| Loss curve | Zero spikes |
+
+- **RMSNorm initialization**: Found that init impacts attention contribution at initialization, leading to small instabilities in load balancing
+- **Long context extension**: Same mixture as 32K with proper packing (150B tokens); max 256K context after mid-training; no long agentic rollouts yet
 
 ## Performance
 

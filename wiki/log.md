@@ -8,6 +8,23 @@ _Log of all wiki changes. Newest entries at top._
 
 ## [2026-07-26] Active crawl — 2 new pages created, 1 page enriched
 
+
+## [2026-07-26] Raw backlog ingest — 3 enriched, 2 skipped (already archived)
+
+**Pipeline**: raw-backlog-ingest (14:00 UTC)
+**Articles processed**: 5 (3 enriched, 2 already-archived)
+
+**Enriched pages:**
+- ENRICHED [[entities/mai-thinking-1]] — Added "Data & Pre-Training" section (data composition: 794B pages, no synthetic data, extraction/dedup pipeline), "Training Recipe" section (AdamW params, parallelism, precision), and mid-training details from the 109-page Microsoft tech report
+- ENRICHED [[entities/eiso-kant]] — Added "Model vs Harness: Where Capabilities Come From" (harness co-design), "95% Engineering Efficiency", "Language as Most Compute-Efficient Modality", "$500M Raise and Investor Skepticism", "Engineering Productivity in the Agent Era" philosophy sections from Latent Space podcast transcript
+- UPDATED [[concepts/mai-thinking-1-tech-report]] — bump updated date to 2026-07-26
+- UPDATED [[concepts/ai-benchmarks/benchflow-tool]] — bump updated date to 2026-07-26
+
+**Skipped (already archived):**
+- Reframing Superintelligence (FHI 2019) — Eric Drexler paper, no wiki gaps to fill
+- Grant Sanderson — AI and Future of Math (Dwarkesh podcast), already archived
+
+
 **Pipeline**: active-crawl (scheduled, 11:00 UTC)
 **Discovery**: HN Algolia (3 trending stories), X/Twitter (10 trending topics), wiki gap analysis. Cross-referenced with existing coverage. Weekend window — 6 HN stories with pts≥10.
 

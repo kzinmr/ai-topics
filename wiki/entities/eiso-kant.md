@@ -2,7 +2,7 @@
 title: "Eiso Kant"
 type: entity
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-26
 tags:
   - person
   - ai-researcher
@@ -56,6 +56,21 @@ Kant views distillation and RL environments as the AI industry's favorite "drugs
 
 ### RL in Pre-Training
 He predicts that reinforcement learning will move earlier into the pre-training phase, becoming a curriculum design tool rather than being confined to post-training.
+
+### Model vs Harness: Where Capabilities Come From
+Kant argues that agent capabilities arise from **model-harness co-design** rather than model alone. Poolside's approach builds the training stack and agent harness as an integrated system — identical models yield different results depending on how the harness (context engineering, tool definitions, execution environment) is designed. This aligns with the broader [[concepts/harness-engineering]] thesis.
+
+### 95% Engineering Efficiency
+Kant estimates that **95% of model building can be reduced to better data or compute efficiency**, with only 5% coming from architectural breakthroughs. This drives Poolside's focus on the Model Factory's engineering systems — streaming data pipelines, reproducible infra, and agentic automation — rather than chasing novel architectures.
+
+### Language as the Most Compute-Efficient Modality
+Kant argues that language (text + code) is the most compute-efficient modality for encoding knowledge and reasoning, which is why Poolside prioritizes language/coding over audio/vision early on. Vision is on the roadmap, but audio is deprioritized as less compute-efficient for their AGI thesis.
+
+### $500M Raise and Investor Skepticism
+Poolside raised $500M while investors still questioned whether AGI was real. Kant notes that the final training run is "anticlimactic" — the real cost is in the thousands of failed experiments and infrastructure build-up that precede it. The raise reflects growing conviction that coding and long-horizon software tasks are a viable path to AGI.
+
+### Engineering Productivity in the Agent Era
+Kant predicts that AI will fundamentally change how engineering productivity is measured: the bottleneck shifts from writing code to running experiments. **Agency** (the ability to act independently and iterate quickly) becomes the most important quality for employees. High-agency teams need shared goals and clear constraints rather than top-down micro-management.
 
 ## Professional Timeline
 
