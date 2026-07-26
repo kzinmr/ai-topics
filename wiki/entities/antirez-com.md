@@ -2,13 +2,14 @@
 title: "Salvatore Sanfilippo (antirez)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-07-14
+updated: 2026-07-26
 type: entity
 sources:
   - raw/articles/antirez.com--news-166--c7f12317.md
   - raw/articles/antirez.com--news-167--b10c3d4e.md
   - raw/articles/antirez.com--news-168--a2772c92.md
   - raw/articles/antirez.com--news-169--1ef2a41d.md
+  - raw/articles/antirez.com--news-171--99acb946.md
 ---
 
 # Salvatore Sanfilippo (antirez)
@@ -48,6 +49,7 @@ His 2025 project voxtral.c — a bare-metal, pure-C implementation of a multimod
 | 2026 | Published "GNU and the AI reimplementations" — drawing parallels between GNU's clean-room UNIX rewrites and today's AI-generated code |
 | 2026 | Published "AI cybersecurity is not proof of work" — argues model intelligence, not GPU scale, wins in cybersecurity |
 | 2026 | Published "First Token Cutoff LLM sampling" — critiques nucleus sampling (top-p) and proposes a new algorithm to avoid selecting suboptimal tokens that push generation toward hallucination |
+| 2026 | Published "Being Linux Torvalds" — draws parallels between Linus Torvalds' role as project leader and the role programmers should assume when working with AI agents |
 | 2026-05 | Released DS4 (DwarfStar 4) — local AI inference project running DeepSeek V4 Flash with asymmetric 2/8-bit quantization on consumer Macs. Achieved viral growth in first week. |
 
 ## Core Ideas
@@ -130,7 +132,7 @@ Sanfilippo crafts his own data structures (SDS for strings, Rax for radix trees)
 
 ## Recent Themes (2024–2026)
 
-- **AI-assisted programming**: Using Claude Code and other LLM agents as collaborative tools for real systems programming tasks
+- **AI-assisted programming**: Using Claude Code and other LLM agents as collaborative tools for real systems programming tasks; the programmer as "orchestrator" (see "Being Linux Torvalds")
 - **Bare-metal AI**: voxtral.c demonstrates that complex AI models can be implemented in readable, dependency-free C
 - **Open-source licensing pragmatism**: Not an absolutist — sees licensing as a spectrum and understands the economic realities of sustaining large projects
 - **Comment quality and code readability**: Systematic approach to documentation as an analysis tool
@@ -386,3 +388,39 @@ In April 2026, antirez published new insights on the relationship between AI and
 - The AI security competition is a competition of intelligence, not computation
 - High-intelligence models like Mythos (Anthropic's security-specialized model) could disrupt the existing balance
 - The role of AI in security auditing needs redefinition
+
+### Being Linux Torvalds: The Programmer as Orchestra Director (July 2026)
+
+In "Being Linux Torvalds" ([antirez.com/news/171](http://antirez.com/news/171)), Sanfilippo draws a powerful analogy between Linus Torvalds' evolution from kernel coder to project leader and the role programmers should assume when working with AI agents.
+
+#### The Core Analogy
+
+Torvalds could have continued writing code — many brilliant programmers could write a working Unix kernel. But his true genius was recognizing that Linux needed to grow beyond what any single person could implement. He stopped writing code and became the **orchestrator** — holding design concepts, coordinating maintainers, and steering the project's direction. This role — holding architectural clarity while delegating implementation — is exactly what expert programmers must now do with AI agents.
+
+#### Vibe Coding vs. Automatic Programming
+
+antirez distinguishes sharply between:
+
+- **Vibe coding**: "put the prompt, and the thing writes" — democratizes tool-building for non-technical people, but is NOT what expert programming with AI should look like
+- **Automatic programming**: assuming the Linus role — directing agents with design hints, checking ideas, knowing which implementations to pursue and which to reject
+
+> "Automatic programming, in the hands of people that are expert technicians, is to assume the role of Linus, with the agents and the LLMs assuming the role of the different maintainers of the different subsystems."
+
+#### Key Insight: Talent Still Matters
+
+The essay argues against the notion that AI makes programming "easy for everybody." Just as not everyone can lead a project like Torvalds, not everyone can effectively direct AI agents. The skill is in:
+
+- Knowing which design hints to provide
+- Understanding system architecture well enough to evaluate agent output
+- Communicating effectively with agents to elicit their best work
+- Training and practice — the same way Torvalds had to learn to stop coding and start leading
+
+#### Connection to [[concepts/ai-assisted-development]]
+
+This essay extends antirez's earlier work on AI-assisted programming by providing a concrete mental model: the programmer as orchestra director, not as typist. It reinforces his position that AI is changing *what* programmers do, not *whether* they're needed.
+
+#### Related
+
+- [[concepts/ai-assisted-development]] — antirez's broader position on AI-assisted coding
+- [[concepts/vibe-coding]] — the phenomenon antirez distinguishes "automatic programming" from
+- [Original blog post](http://antirez.com/news/171) — includes YouTube video transcription

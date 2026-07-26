@@ -975,6 +975,7 @@
 - [[concepts/ai-alliance]] — AI Alliance
 - [[concepts/ai-and-authenticity]] — AI and Authenticity
 - [[concepts/ai-and-software-engineering]] — AI and Software Engineering
+- [[concepts/ai-adoption-failures-and-enterprise-psychosis]] — AI Adoption Failures and Enterprise AI Psychosis
 - [[concepts/ai-api-abuse]] — AI API Abuse
 - [[concepts/ai-as-abstraction-layer]] — ai-as-abstraction-layer
 - [[concepts/ai-assisted-development]] — AI-Assisted Development
@@ -2235,6 +2236,7 @@
 - [[concepts/open-source-ai-destruction]] — Open Source AI Destruction
 - [[concepts/open-source-ai-must-win]] — Open-Source AI Must Win
 - [[concepts/open-source-licensing]] — Open Source Licensing
+- [[concepts/open-source-llm-governance-debian-gr]] — Open Source LLM Governance — Debian General Resolution on LLM usage in distribution development
 - [[concepts/open-source-llms]] — Open Source LLMs
 - [[concepts/open-source-metadata]] — Open Source Metadata
 - [[concepts/open-source-stewardship]] — open-source-stewardship

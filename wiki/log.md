@@ -4,6 +4,14 @@ _Log of all wiki changes. Newest entries at top._
 
 ---
 
+## 2026-07-26
+
+- **10:22 UTC** [blog-ingest] Blog ingest collected 20 articles, saved 16 raw articles. Key AI-relevant articles triaged:
+  - Updated [[entities/antirez-com]] with "Being Linux Torvalds" (news/171) — Linus Torvalds analogy for AI agent orchestration
+  - Created [[concepts/ai-adoption-failures-and-enterprise-psychosis]] — enterprise AI psychosis, coordination failures, 0% success rate observations
+  - Created [[concepts/open-source-llm-governance-debian-gr]] — Debian general resolution on LLM usage (3 alternatives: ban, reject, allow with conditions)
+  - Other saved articles: Ruff v0.16.0 (Simon Willison), Google v SerpApi (DMCA/scraping), EU €890M Google DMA fine, Troy Hunt data breaches, bIRC client, construction physics reading list, LWN security/kernel updates
+
 ## 2026-07-25
 
 - **22:30 UTC** [Xアカウントスキャン] Drew Breunig (@dbreunig) の新規プロジェクト drskill、skilled-proposer、ブログ記事「Separating Task from Model」を entities/drew-breunig.md とサブページに追加。GEPA概念ページに skilled-proposer 参照を追加。raw記事として cmpnd.ai ブログ記事と Armin Ronacher「Codeberg Divides」を保存
