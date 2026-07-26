@@ -1,0 +1,50 @@
+{
+  "run_id": "20260726T102858Z",
+  "triaged_at": "2026-07-26T10:29:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletters": [
+    {
+      "subject": "The good, the bad and the ugly of AI writing",
+      "date": "2026-07-25",
+      "message_id": "<20260725134523.3.c37e0a2c143f3bb4@mg2.substack.com>",
+      "source_label": "uid=416",
+      "publication": "The Signal (Substack, publication_id=293154)",
+      "author": "Alex Banks (@alexbanks)",
+      "importance": "high",
+      "relevance": "Directly relevant — AI writing quality, tools, and impacts. Covers the spectrum (good/bad/ugly) of AI-generated writing. Potential wiki topics: ai-writing-tools, prompt-engineering-writing, ai-content-quality.",
+      "article_count": 20,
+      "note": "All 20 links are Substack tracking/redirects. Links 1-8 are post interaction redirects (like, comment, share, restack). Links 9-17 are generic substack.com/redirect UUIDs. Links 18-20 are additional redirects. The primary article is identifiable from links 7-8.",
+      "primary_url": "https://open.substack.com/pub/thesignal/p/the-good-the-bad-and-the-ugly-of",
+      "action_needed": "scrape_primary_url_and_ingest"
+    },
+    {
+      "subject": "What Actually Escaped in July, and What Only Looked Like It",
+      "date": "2026-07-25",
+      "message_id": "<20260725.190639.b07b0f29@mta23>",
+      "source_label": "uid=417",
+      "publication": "Beehiiv newsletter (unknown source)",
+      "author": "Unknown",
+      "importance": "high",
+      "relevance": "Sounds like a July 2026 AI/tech monthly roundup — 'what escaped' suggests frontier model releases, leaks, jailbreaks, or product launches. Highly relevant for wiki events/concepts tracking.",
+      "article_count": 17,
+      "note": "All 17 links are beehiiv tracking redirects (link.mail.beehiiv.com). Links 16-17 are beehiiv platform pages (homepage/status). Need to resolve redirects or find the publication source.",
+      "primary_url": "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f",
+      "action_needed": "resolve_beehiiv_redirects_and_ingest"
+    }
+  ],
+  "summary": {
+    "total_newsletters": 2,
+    "total_articles": 37,
+    "high_importance": 2,
+    "critical": 0,
+    "low": 0,
+    "unresolved_urls": 37,
+    "issue": "All article URLs are tracking redirects (Substack app-link/redirect, beehiiv link.mail). The ingest pipeline captured raw email HTML links but did not resolve them to final destinations. The newsletter-wiki-ingest stage should attempt HTTP HEAD redirect resolution or use the primary URLs identified."
+  },
+  "next_steps": [
+    "Resolve Substack redirect for 'The Signal' article: https://open.substack.com/pub/thesignal/p/the-good-the-bad-and-the-ugly-of",
+    "Resolve beehiiv tracking links for the July roundup newsletter or discover the publication source",
+    "Scrape resolved URLs for article content",
+    "Create/update wiki pages based on article content"
+  ]
+}
