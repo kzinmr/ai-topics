@@ -1,57 +1,9 @@
 {
-  "archived_at": "2026-07-26T18:31:56.658777+00:00",
+  "archived_at": "2026-07-26T18:40:04.356179+00:00",
   "triage_run_id": "20260726T180523Z",
   "source": "dreaming",
   "summary_ja": "パターンE飽和パス。0記事収集、149件のraw記事をファイルシステムスキャン。prior triage (7/25) は消化済み。本日のパイプライン（active-crawl 2件新規+1件enriched、raw-backlog 3件enriched）で大部分を処理。1件のreference候補発見（seangoedecke expertise記事、source listed but body absent）。残りは全カバー済みまたは非AI。",
   "decisions": [
-    {
-      "item_id": "dreaming-skip-screenpipe-yc-s26",
-      "source": "dreaming",
-      "source_name": "raw/articles",
-      "title": "Screenpipe (YC S26) — Record How You Work and Turn That Into Agents",
-      "url": "https://news.ycombinator.com/item?id=49024620",
-      "raw_path": "wiki/raw/articles/2026-07-23_screenpipe-yc-s26-screen-to-agent.md",
-      "recommended_action": "skip",
-      "reason_ja": "★☆☆☆☆ entities/screenpipe.md already covers YC S26, Louis Beaumont, screen-to-agent architecture, local recording, MCP support. Source listed in frontmatter.",
-      "candidate_wiki_path": null,
-      "body_excerpt": "# Screenpipe (YC S26) — Record How You Work and Turn That Into Agents\n## Source\n- **HN Launch**: https://news.ycombinator.com/item?id=49024620 (84 pts, Jul 23, 2026)\n- **GitHub**: https://github.com/screenpipe/screenpipe (20,538 ★, Rust, 2,028 forks)\n- **Website**: https://screenpipe.com\n## HN Launc"
-    },
-    {
-      "item_id": "dreaming-skip-kimi-k3-deepswe",
-      "source": "dreaming",
-      "source_name": "raw/articles",
-      "title": "Kimi K3 vs Claude Fable 5 on DeepSWE: Cost and Coding",
-      "url": "https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding",
-      "raw_path": "wiki/raw/articles/2026-07-24_together-ai-kimi-k3-vs-fable-deepswe.md",
-      "recommended_action": "skip",
-      "reason_ja": "★☆☆☆☆ concepts/kimi-k3.md already covers DeepSWE comparison: pass@1 68.5% vs Fable 69.9%, $4.65 vs $13.41 per rollout, 2.8x cost efficiency. Source listed in frontmatter.",
-      "candidate_wiki_path": null,
-      "body_excerpt": "# Kimi K3 vs Claude Fable 5 on DeepSWE: Cost and Coding\n**Source**: [Together AI Blog](https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding)\n**Published**: July 24, 2026\n**Authors**: Zain Hasan, Shobhit Dixit"
-    },
-    {
-      "item_id": "dreaming-skip-dspy-task-separation",
-      "source": "dreaming",
-      "source_name": "raw/articles",
-      "title": "The Unreasonable Effectiveness of Separating the Task from the Model",
-      "url": "https://www.cmpnd.ai/blog/separating-task-from-model.html",
-      "raw_path": "wiki/raw/articles/2026-07-25_cmpnd.ai_separating-task-from-model.md",
-      "recommended_action": "skip",
-      "reason_ja": "★☆☆☆☆ DSPy task/model separation concept already covered in concepts/gepa.md (cmpnd-ai/skilled-proposer reference) and concepts/dspy.md. Article is a talk transcript about DSPy signatures, GEPA optimizer, specs+code+evals pattern.",
-      "candidate_wiki_path": null,
-      "body_excerpt": "# Source: https://www.cmpnd.ai/blog/separating-task-from-model.html\n# Fetched: 2026-07-25T22:31:23.599039\n# Status: 200\n<!DOCTYPE html>\n<html data-wf-page=\"693747fbcaf202e23a7781cb\" data-wf-site=\"693747f8caf202e23a77813d\" lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>The Unreasonable Effective"
-    },
-    {
-      "item_id": "dreaming-skip-hqq-quantization",
-      "source": "dreaming",
-      "source_name": "raw/articles",
-      "title": "Half-Quadratic Quantization (HQQ)",
-      "url": "https://mobiusml.github.io/hqq_blog/",
-      "raw_path": "wiki/raw/articles/2026-07-25_mobiusml_hqq-half-quadratic-quantization.md",
-      "recommended_action": "skip",
-      "reason_ja": "★☆☆☆☆ Already processed by raw-backlog-ingest today (2026-07-26 log.md entry). concepts/hqq.md created.",
-      "candidate_wiki_path": null,
-      "body_excerpt": "# Half-Quadratic Quantization of Large Machine Learning Models\n**Source:** https://dropbox.github.io/hqq_blog/ (originally https://mobiusml.github.io/hqq_blog/)\n**Authors:** Hicham Badri, Appu Shaji — Mobius Labs GmbH (now part of Dropbox)\n**Published:** November 3, 2023\n**License:** Apache 2.0\n**Co"
-    },
     {
       "item_id": "dreaming-skip-non-ai-batch",
       "source": "dreaming",

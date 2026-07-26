@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-07-25
+updated: 2026-07-26
 type: entity
 sources:
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
@@ -16,6 +16,7 @@ sources:
   - raw/articles/seangoedecke.com--text-ai-watermarks--cd663c94.md
   - raw/articles/seangoedecke.com--c2pa-only-works-if-everything-is-signed--ae4eb8f4.md
   - raw/articles/seangoedecke.com--overtraining-as-the-path-to-human-like-ai--67c86c06.md
+  - raw/articles/seangoedecke.com--llms-reward-expertise--30a0ed12.md
 |---
 
 # Sean Goedecke
@@ -369,6 +370,26 @@ Gwern's alternative: **train one 100-trillion-parameter model on a small dataset
 #### Sean's Assessment
 
 Goedecke doesn't claim to agree with Gwern, but finds the idea compelling: \"forcing very large LLMs to grok is at least an idea that could usher in the machine god.\" He notes that since 2024, \"pure scaling\" has clearly failed (GPT-4's \"even bigger version\" wasn't good enough and was released as GPT-4.5), and the biggest advances since have been reasoning and better automated RL — neither of which seems like a plausible path to artificial superintelligence. Against that backdrop, Gwern's grokking proposal stands out as a genuinely new and ambitious direction. Goedecke hopes one of the big labs tries it.
+
+### LLMs Reward Expertise (July 2026)
+
+On July 25, 2026, Goedecke published "[LLMs reward expertise](https://seangoedecke.com/llms-reward-expertise/)" — arguing that **domain knowledge is the most important skill for effective LLM use**, not prompt engineering technique.
+
+**The Core Thesis**: LLMs make everyone a generalist (everyone can write "sort-of-okay CSS"), but they don't make everyone equally effective. The person with deep domain knowledge extracts substantially more value from the same model than someone without it. Goedecke illustrates this with **Terence Tao's conversation with ChatGPT** about the recently-discovered Jacobian Conjecture counterexample — Tao gets qualitatively different outputs because his mathematical expertise allows him to steer the model, push back on errors, and identify the right direction.
+
+**Key observations from Tao's conversation**:
+- Tao's messages are very short and to-the-point — he doesn't respond point-by-point to the model, just to the gist
+- The model outputs are much more concise — by signaling expertise, Tao shunts the model into "talking-to-mathematicians" mode, not "explaining-to-amateurs" mode
+- Tao pushes back when responses look wrong, but indirectly: "this looks more complex than I was hoping for"
+- Tao makes leaps and suggestions himself — he almost never takes the model's advice about where to go next
+
+**The domain knowledge advantage in software engineering**:
+- Goedecke connects this to his own experience: "If you have a good theory of your codebase, you can push the LLM much harder"
+- With domain knowledge you can say: "no, I think it could be simpler here" or "but don't we already do X?"
+- This extends his earlier thesis that **system design problems are dominated by concrete specifics** — familiarity with the specific codebase matters more than general software engineering knowledge
+- Links to [[concepts/ai-coding-tools#Code Review as Meta-Skill]] — the same evaluation skill that transfers to code review also applies to steering LLMs with domain knowledge
+
+**Why human expertise persists**: For many tasks, the human is the bottleneck, not the model, because the difficult part is communicating exactly what kind of solution is wanted. "The information is 'in the model' already, but it takes a very smart human to pull it out."
 
 ## Sources
 

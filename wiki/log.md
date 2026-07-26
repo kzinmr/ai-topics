@@ -1,3 +1,10 @@
+## [2026-07-26] Dreaming wiki-ingest — enrichment completion
+- Deep Sleep verification confirmed seangoedecke.com 'LLMs reward expertise' as genuine gap
+- Enriched entities/seangoedecke-com.md: added 'LLMs Reward Expertise' section (July 2026 — Terence Tao / Jacobian Conjecture / domain knowledge thesis)
+- archive_triage.py: 9 candidates, 1 newly archived (expired triage), total_archive_urls=1,958
+- Updated: entities/seangoedecke-com.md (frontmatter updated, 1 source added, 1 new subsection)
+- Saturation assessment: all other items already covered by existing wiki pages or prior pipelines
+
 ## [2026-07-26] Dreaming consolidation — saturation pass (Takes=0, Refs=1)
 - Pattern E filesystem scan: 149 recent raw articles, ~40 from Jul 24-26
 - Prior triage (2026-07-25) consumed: 10 decisions (0 takes, 3 refs, 7 skips)
