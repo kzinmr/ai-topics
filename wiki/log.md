@@ -1,3 +1,8 @@
+## [2026-07-26] Skeleton enrichment — the-signal.md
+- Enriched entities/the-signal.md (was status:skeleton) — added publication overview, mission/approach, content categories (weekly news analysis, philosophical deep dives, tutorials, content moderation analysis), subscriber/audience data, cross-references to entities/alex-banks and related concept pages
+- Added entities/the-signal entry to entities/_index.md
+- Sources: Substack about page, RSS feed (40+ articles), existing entities/alex-banks.md (10.7KB)
+
 ## [2026-07-26] Dreaming wiki-ingest — enrichment completion
 - Deep Sleep verification confirmed seangoedecke.com 'LLMs reward expertise' as genuine gap
 - Enriched entities/seangoedecke-com.md: added 'LLMs Reward Expertise' section (July 2026 — Terence Tao / Jacobian Conjecture / domain knowledge thesis)
