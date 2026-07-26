@@ -6,6 +6,34 @@ _Log of all wiki changes. Newest entries at top._
 
 ## 2026-07-26
 
+## [2026-07-26] Active crawl — 2 new pages created, 1 page enriched
+
+**Pipeline**: active-crawl (scheduled, 11:00 UTC)
+**Discovery**: HN Algolia (3 trending stories), X/Twitter (10 trending topics), wiki gap analysis. Cross-referenced with existing coverage. Weekend window — 6 HN stories with pts≥10.
+
+**New pages created:**
+- CREATED [[concepts/edge-llm-microcontroller]] — Edge LLM on Microcontrollers; running 28.9M param LLM on $8 ESP32-S3 at ~9.5 t/s, fully local on-chip; 100× larger than previous MCU LLM record (260K params); techniques: per-layer embeddings, 4-bit quantization, flash streaming; comparison to Raspberry Pi and Jetson
+  - Source: github.com/slvDev/esp32-ai (HN: 201 pts, Jul 25)
+- CREATED [[entities/screenpipe]] — Screenpipe (YC S26); 24/7 local AI screen+mic recording → agent-accessible data; Rust, MCP integration, local-first; 20.5K GitHub stars; founded by Louis Beaumont; HN Launch: 84 pts, 23 comments
+  - Source: github.com/screenpipe/screenpipe, HN Launch (Jul 23)
+
+**Pages enriched:**
+- ENRICHED [[concepts/kimi-k3]] — Added "DeepSWE Benchmark (Together AI, July 2026)" section: Kimi K3 vs Claude Fable 5, pass@1 68.5% vs 69.9%, 2.8× cost efficiency ($4.65 vs $13.41/rollout), 0.72 per-task correlation (highest cross-vendor similarity on DeepSWE), K3 dominates Go while Fable leads Python/JS/TS/Rust
+  - Source: together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding (Jul 24)
+
+**Raw articles saved:**
+- raw/articles/2026-07-25_slvdev-esp32-llm-microcontroller.md — ESP32-S3 project README
+- raw/articles/2026-07-23_screenpipe-yc-s26-screen-to-agent.md — HN Launch post + key comments
+- raw/articles/2026-07-24_together-ai-kimi-k3-vs-fable-deepswe.md — Together AI benchmark analysis
+
+**SCHEMA.md additions:**
+- Added `embedded-systems` (Infrastructure), `desktop-automation` (AI Agents), `screen-recording` (Products)
+
+**Triage notes:**
+- Vera Rubin has existing 346-line concept page — full coverage, not a gap (gap analysis false negative)
+- Dan Luu ai-coding post already covered by blog-ingest pipeline (danluu.com has 100+ raw articles, entity page exists)
+- Weekday scans typically yield 2-3× more HN stories
+
 - **10:22 UTC** [blog-ingest] Blog ingest collected 20 articles, saved 16 raw articles. Key AI-relevant articles triaged:
   - Updated [[entities/antirez-com]] with "Being Linux Torvalds" (news/171) — Linus Torvalds analogy for AI agent orchestration
   - Created [[concepts/ai-adoption-failures-and-enterprise-psychosis]] — enterprise AI psychosis, coordination failures, 0% success rate observations

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (864 pages)
+## Entities (865 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -707,6 +707,7 @@
 - [[entities/scott-alexander]] — Scott Alexander
 - [[entities/scott-stevenson]] — Scott Stevenson
 - [[entities/scott-wu]] — Scott Wu
+- [[entities/screenpipe]] — Screenpipe (YC S26) — 24/7 local AI screen and mic recording, turns computer activity into agent-accessible data; 20.5K GitHub stars, Rust, MCP integration (Jul 26)
 - [[entities/seangoedecke-com]] — Sean Goedecke
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. Provides 6 specialized tools for code analysis, search, and retrieval from any...
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
@@ -869,7 +870,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1902 pages)
+## Concepts (1903 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1578,6 +1579,7 @@
 - [[concepts/earendil]] — earendil
 - [[concepts/ecs-fargate-scaling]] — ECS Fargate Scaling
 - [[concepts/edge-ai]] — Edge AI (On-Device AI Inference) — Running AI inference locally on smartphones/laptops/IoT via NPU accelerators; Apple Intelligence, Gemini Nano, llama.cpp (Jul 1)
+- [[concepts/edge-llm-microcontroller]] — Edge LLM on Microcontrollers — Running 28.9M param LLM on $8 ESP32-S3 MCU at ~9.5 t/s, fully local on-chip inference; 100× larger than previous MCU LLM record (Jul 26)
 - [[concepts/effective-altruism]] — effective-altruism
 - [[concepts/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents
 - [[concepts/elastic-ep]] — Elastic EP (Expert Parallelism)

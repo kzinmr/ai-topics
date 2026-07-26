@@ -2,7 +2,7 @@
 title: "Moonshot Kimi K3"
 type: concept
 created: 2026-07-17
-updated: 2026-07-24
+updated: 2026-07-26
 tags:
   - model
   - china
@@ -15,6 +15,8 @@ tags:
 sources:
   - "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md"
   - "raw/newsletters/2026-07-17-ainews-kimi-k3-2-8t-a50b-the-largest-open-model-ever-released-opus-4-8-class-at-.md"
+  - "raw/articles/2026-07-24_together-ai-kimi-k3-vs-fable-deepswe.md"
+  - "https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding"
 ---
 
 # Moonshot Kimi K3
@@ -113,6 +115,38 @@ The Frontend Code result was especially prominent because it is a **pairwise hum
 | **AA-Omniscience hallucination** | **51%** (−12 pts) | **Worsened** from 39% on K2.6 |
 
 The hallucination rate regression on AA-Omniscience was flagged as a real weakness despite accuracy gains, and was noted by multiple independent evaluators.
+
+### DeepSWE Benchmark (Together AI, July 2026)
+
+Together AI ran 452 DeepSWE rollouts comparing Kimi K3 (max effort) vs Claude Fable 5 (xhigh) on 113 real-world, long-horizon feature requests from live open-source repos. DeepSWE tests software engineering capability across multiple task types and programming languages, graded pass/fail by a hidden test suite.
+
+| Metric | Kimi K3 | Claude Fable 5 | Notes |
+|--------|---------|----------------|-------|
+| **pass@1** | 68.5% | **69.9%** | Fable leads by 1.4 points |
+| **pass@2** | **82.0%** | 80.2% | K3 pulls ahead |
+| **pass@4** | **89.4%** | 88.5% | K3 best of any flagship-tier config |
+| **Coverage** (≥1 solve) | **89.4%** (101/113) | 88.5% (100/113) | K3 reaches more tasks |
+| **4/4 Reliability** | 45 tasks | **58 tasks** | Fable more deterministic |
+
+#### Cost Comparison (DeepSWE)
+
+| Metric | Kimi K3 | Claude Fable 5 |
+|--------|---------|----------------|
+| Cost per rollout | **$4.65** | $13.41 |
+| Full 452-rollout sweep | **$2,103** | $6,010 |
+| Solves per $100 | **14.7** | 5.3 |
+
+**2.8x cost efficiency**: Kimi K3 delivers 2.8x more solved tasks per dollar than Claude Fable 5 on DeepSWE.
+
+#### Key Findings
+
+- **Pass@k advantage**: While Fable wins pass@1 on single-attempt reliability, Kimi K3 wins pass@2 and pass@4 — making it the stronger choice for retry-tolerant agent workflows where multiple attempts are acceptable.
+- **High cross-vendor similarity**: Per-task correlation between K3 and Fable is 0.72 — the highest cross-vendor similarity in the entire DeepSWE benchmark. Both models succeed and fail on nearly the same tasks (96 shared solves, 8 shared failures), meaning pairing them buys almost no diversity.
+- **Coverage vs. reliability tradeoff**: K3 reaches more tasks (broader coverage, only 12 never-cracked tasks) but is less deterministic (fewer 4-for-4 solves). Fable is steadier on any single attempt despite slightly narrower coverage.
+- **Language strengths**: K3 wins Go decisively (79 vs 71). Fable leads Python, JavaScript, TypeScript, and Rust — though K3 catches up significantly on Rust, closer than any other model including GPT-5.6 Sol.
+- **Failure patterns match**: 65% of failures are near misses for both models, and both protect the repo's existing test suite equally well (11% vs 10% baseline regressions).
+
+> **Source**: [Together AI — Kimi K3 vs Claude Fable 5 on DeepSWE: Cost and Coding](https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding) (July 24, 2026)
 
 ## Pricing
 
