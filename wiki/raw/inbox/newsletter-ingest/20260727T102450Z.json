@@ -1,0 +1,87 @@
+{
+  "checkpoint_run_id": "20260727T102450Z",
+  "triage_timestamp": "2026-07-27T10:24:50Z",
+  "processed_count": 3,
+  "summary": {
+    "critical": 1,
+    "high": 1,
+    "low": 1
+  },
+  "items": [
+    {
+      "message_id": "<20260726123206.3.8b34e93696eea3a4@mg-d0.substack.com>",
+      "subject": "Anthropic's first technical PM on token maxing, the jagged edge, and living in the future | Dianne Penn",
+      "date": "2026-07-26",
+      "source": "Lenny's Newsletter (Substack)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-26-anthropic-s-first-technical-pm-on-token-maxing-the-jagged-edge-and-living-in-the.md",
+      "importance": "low",
+      "category": "interview/podcast",
+      "wiki_relevance": "Podcast interview with Anthropic technical PM Dianne Penn about 'token maxing' strategy and the 'jagged edge' of AI capabilities. Lenny's Newsletter is a product management podcast — content is interview-format with limited scannable article text.",
+      "existing_pages": ["entities/anthropic", "concepts/anthropic/index"],
+      "action": "skip_or_defer",
+      "reason": "Podcast format with 20 Substack tracking/app links (no direct article URLs). All links are Substack app-link redirects for audio playback cards. Content is interview-format, not a written article. Would need transcript extraction for wiki value.",
+      "notes": "If Dianne Penn becomes a notable Anthropic figure, consider creating an entity page. The 'token maxing' and 'jagged edge' concepts could be interesting wiki entries if sourced from a transcript."
+    },
+    {
+      "message_id": "<20260726134002.3.f6a891cb6f713988@mg-d1.substack.com>",
+      "subject": "Anthropic's Magnum Opus, OpenAI's Omnipresence, and China's Cheap Frontier",
+      "date": "2026-07-26",
+      "source": "The Signal (Substack, @alexbanks)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-26-anthropic-s-magnum-opus-openai-s-omnipresence-and-china-s-cheap-frontier.md",
+      "importance": "critical",
+      "category": "industry_analysis",
+      "wiki_relevance": "Analysis covering three core wiki topics: (1) Anthropic's latest major development ('Magnum Opus'), (2) OpenAI's expanding market presence, (3) China's frontier AI capabilities at lower cost. The Signal by Alex Banks is a well-regarded AI industry newsletter.",
+      "existing_pages": [
+        "entities/anthropic",
+        "entities/openai",
+        "concepts/anthropic/index",
+        "concepts/anthropic/2026-revenue-growth"
+      ],
+      "action": "scrape_and_ingest",
+      "primary_urls": [
+        "https://open.substack.com/pub/thesignal/p/anthropics-magnum-opus-openais-omnipresence"
+      ],
+      "redirect_urls_to_resolve": [
+        "https://substack.com/redirect/adff3698-e41d-4c1c-acc0-55acfe008ac6",
+        "https://substack.com/redirect/aa23b69e-8d5c-4c34-9ba9-b401335b0425",
+        "https://substack.com/redirect/0bb3e5ea-8470-4c5a-82b3-e4d957edef99",
+        "https://substack.com/redirect/c88776ef-b3cc-491d-9bdf-e588474c909b",
+        "https://substack.com/redirect/6bb600ef-cef5-4145-9451-0fb57be050d3",
+        "https://substack.com/redirect/c26d22bb-6ba2-43f6-88a8-afce9634e57f",
+        "https://substack.com/redirect/9a270585-02d9-4e4f-8938-76d514dbeb91",
+        "https://substack.com/redirect/ea4d0138-c82c-452a-8db9-dac19963679d",
+        "https://substack.com/redirect/e9b6a0f1-fb46-493b-96ce-d2edc4b87ae9",
+        "https://substack.com/redirect/7a82f4f1-f548-499b-9e51-cb3b8e35d634",
+        "https://substack.com/redirect/0a1155b6-28a3-415e-afec-909aa1cb6e01"
+      ],
+      "update_targets": [
+        "entities/anthropic",
+        "entities/openai",
+        "concepts/anthropic/index"
+      ],
+      "notes": "11 substack.com/redirect links are external article references that need HTTP redirect resolution to get actual URLs. These are likely references to source articles worth ingesting. The main article itself should be scraped from the open.substack.com URL."
+    },
+    {
+      "message_id": "<20260726.165842.65e4def6@mta18>",
+      "subject": "🔐 Your AI Agent Has Too Much Access",
+      "date": "2026-07-26",
+      "source": "Beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-26-your-ai-agent-has-too-much-access.md",
+      "importance": "high",
+      "category": "ai_agent_security",
+      "wiki_relevance": "Article about AI agent security and access control — directly relevant to wiki's AI agent safety and security concept pages. Likely covers permission models, least-privilege principles for agents, and security boundaries in agentic systems.",
+      "existing_pages": [
+        "concepts/ai-agent-security",
+        "concepts/ai-agent-safety-incidents",
+        "concepts/ai-agent-traps"
+      ],
+      "action": "scrape_and_ingest",
+      "notes": "Beehiiv tracking links require HTTP redirect resolution to get actual article URLs. Check raw newsletter content first — beehiiv newsletters sometimes include full article text inline. The 20 links may include references to other articles worth ingesting. Priority update: concepts/ai-agent-security page."
+    }
+  ],
+  "pipeline_notes": {
+    "url_resolution_needed": true,
+    "resolution_method": "HTTP HEAD/GET following 301/302 redirects for substack.com/redirect/* and link.mail.beehiiv.com/* URLs",
+    "next_step": "newsletter-wiki-ingest should resolve redirect URLs, scrape articles, and create/update wiki pages"
+  }
+}

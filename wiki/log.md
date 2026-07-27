@@ -1,3 +1,10 @@
+## [2026-07-27] newsletter-wiki-ingest — OpenAI Presence & Health in ChatGPT
+- CREATED events/openai-presence-launch-july-2026.md — OpenAI Presence enterprise voice/chat agents deployed at BBVA and SoftBank (Jul 2026)
+- CREATED events/openai-health-in-chatgpt-july-2026.md — Health in ChatGPT: Apple Health & medical record integration (Jul 2026)
+- Updated events section count: 19→21
+- Sources: The Signal newsletter (2026-07-26), openai.com (Cloudflare-blocked)
+- Triage checkpoint recovered from /opt/data/.hermes/cron/data/newsletter/triage_latest.json (render failure)
+
 ## [2026-07-27] LLM API Pricing Monitor — weekly check
 - **OpenAI**: o3-deep-research reverted from $5/$20 (batch-only) to $10/$40 (standard+batch), cache read $2.50. o4-mini-deep-research reverted from $1/$4 to $2/$8 (standard+batch), cache read $0.50. Added gpt-5.5-cyber ($12.50/$75, cybersecurity specialist)
 - **Anthropic**: Added Claude Opus 5 ($5/$25, "agentic coding and enterprise") and Claude Opus 4.7 ($5/$25, standard tier). Five Opus variants now at identical $5/$25 pricing

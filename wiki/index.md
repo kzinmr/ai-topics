@@ -2815,7 +2815,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (19 pages)
+## Events (21 pages)
 
 - [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
 - [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft
@@ -2832,9 +2832,11 @@
 - [[events/openai-2025-audited-financials]] — OpenAI 2025 Audited Financials — $38.5B Net Loss
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective
 - [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face
+- [[events/openai-health-in-chatgpt-july-2026]] — Health in ChatGPT: Apple Health & medical records integration with LLM-powered health context (July 2026)
 - [[events/openai-may-2026-reorg]] — OpenAI May 2026 Product Reorganization
 - [[events/openai-mission-statement-safety-removal]] — OpenAI Mission Statement Safety Language Removal
 - [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk Trial Verdict (May 2026)
+- [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
 ## Queries (6 pages)
