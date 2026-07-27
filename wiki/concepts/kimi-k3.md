@@ -147,6 +147,53 @@ Together AI ran 452 DeepSWE rollouts comparing Kimi K3 (max effort) vs Claude Fa
 
 > **Source**: [Together AI — Kimi K3 vs Claude Fable 5 on DeepSWE: Cost and Coding](https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding) (July 24, 2026)
 
+#### DeepSWE vs GPT-5.6 Sol (Together AI, July 26, 2026)
+
+Together AI ran 904 graded rollouts (113 tasks × 4 trials each) comparing Kimi K3 (max effort) vs GPT-5.6 Sol on DeepSWE. GPT-5.6 Sol took the pass@1 crown with 72.7%, but Kimi K3 wins on pass@k for k > 1 while costing significantly less per rollout.
+
+| Metric | Kimi K3 | GPT-5.6 Sol | Notes |
+|--------|---------|-------------|-------|
+| **pass@1** | 68.5% | **72.7%** | Sol leads by 4.2 points |
+| **pass@2** | **82.0%** | 81.0% | K3 pulls ahead |
+| **pass@4** | **89.4%** | 85.8% | K3 best pass@4 on the board |
+| **Coverage** (≥1 solve) | **89.4%** (101/113) | 85.8% (97/113) | K3 reaches more tasks |
+| **4/4 Reliability** | 76.6% (45 tasks) | **84.5%** (61 tasks) | Sol more deterministic |
+| **Cost per rollout** | **$4.65** | $8.37 | K3 44% cheaper per rollout |
+| **Solves per $100** | **14.7** | 5.3 | **2.8x more solves per dollar** |
+| **Median rollout time** | 66 min | **17 min** | Sol ~4x faster |
+| **Open weights** | **Yes** | No | |
+
+**Per-task correlation: 0.46** — significantly lower than K3 vs Fable (0.72), meaning the two models succeed and fail in genuinely different ways. This makes them a strong routing pair.
+
+#### Routing: Kimi K3 → GPT-5.6 Sol Cascade
+
+Because the two models disagree on 18 of 113 tasks, a **Kimi-first cascade with verifier** (run K3, escalate to Sol when tests fail) achieves **~85.6% accuracy**, covering **108/113 tasks** — beating either model alone and even a perfect one-shot router (83.4%). This is cheaper than Sol alone since Kimi clears ~70% of the queue before Sol is invoked.
+
+| Routing Strategy | Accuracy | Cost/task |
+|------------------|----------|-----------|
+| Best single model (Sol) | 72.7% | $8.37 |
+| Perfect oracle router | 83.4% | ~$6.07 |
+| **Cascade: K3 → Sol on failure** | **85.6%** | $7.30 |
+| Both models, keep either | 85.6% | $13.02 |
+
+The hard ceiling for this pair is 95.6% (5 tasks solved by neither model). Past that, a third model is needed.
+
+#### Language Breakdown (Kimi K3 vs GPT-5.6 Sol)
+
+| Language | Winner | Score |
+|----------|--------|-------|
+| **Go** | Tie | 79–79 |
+| **Python** | Sol | 74–68 |
+| **TypeScript** | Sol | 66–60 |
+| **JavaScript** | Sol | 75–65 |
+| **Rust** | **Kimi K3** | 65–60 |
+
+#### Failure Mode Differences
+
+The models fail in very different ways: **GPT-5.6 Sol** breaks the repo's existing baseline tests in 20% of failures (consistent with other GPT models). **Kimi K3** has only 11% baseline test failures but **65% near misses** where >80% of new tests pass but some fail — K3 gets close but doesn't fully pass, while Sol is more likely to break existing functionality.
+
+> **Source**: [Together AI — Kimi K3 vs GPT-5.6 Sol on DeepSWE: Cost, Coding, and Routing](https://www.together.ai/blog/kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing) (July 26, 2026)
+
 ## Pricing
 
 | Metric | Value | Comparison |

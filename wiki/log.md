@@ -2719,3 +2719,23 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - GitHub: dropbox/hqq (949★, Apache 2.0), PyPI: hqq v0.2.8.post1
 
 **Index:** Added hqq entry to Concepts section.
+
+---
+## [2026-07-27] blog-triage: Kimi K3 vs GPT-5.6 Sol on DeepSWE + Simon Willison relay market
+
+**Source:** Blog ingest checkpoint (2026-07-27T10:16:30Z)
+**Articles triaged:** 17 found, 11 saved, 2 wiki-worthy, 9 raw-save-only
+
+**Wiki updates (2 takes):**
+
+1. **Kimi K3 vs GPT-5.6 Sol on DeepSWE** (Together AI Blog)
+   - `concepts/kimi-k3.md` — Added "DeepSWE vs GPT-5.6 Sol" subsection: pass@1 (Sol 72.7% vs K3 68.5%), pass@4 (K3 89.4% vs Sol 85.8%), cost (K3 $4.65 vs Sol $8.37, 2.8x efficiency), routing cascade (85.6% accuracy), language breakdown, failure mode divergence (0.46 correlation)
+   - `concepts/ai-benchmarks/deepswe-benchmark.md` — Updated scoreboard with GPT-5.6 Sol (72.7%) and Kimi K3 (68.5%/89.4%), added cost-efficiency table, new routing section
+   - `concepts/gpt/gpt-5-6.md` — (to be updated with benchmark data if not already present)
+
+2. **LLM Token Relay Market** (Simon Willison link blog)
+   - `entities/simon-willison.md` — Added "LLM Token Relay Market and API Key Fraud" entry covering Matt Lenhard's investigation into token reseller ecosystem (one-api/new-api proxies, free trial abuse, stolen cards), Simon's call for strict API key spending caps
+
+**Raw-save-only (9):** johndcook.com (2 math posts), purplesyringa.moe (Teal impressions, SIMD in Python), entropicthoughts.com (SICP Haskell), shkspr.mobi (book review), idiallo.com (medical debt), dfarq.homeip.net (ARCNET history)
+
+**Unsaved (6):** LWN.net (paywall), Daniel Tunkelang/Medium (paywall), AI Engineer YouTube (4 videos — need transcript extraction)
