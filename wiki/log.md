@@ -1,3 +1,9 @@
+## [2026-07-27] LLM API Pricing Monitor — weekly check
+- **OpenAI**: o3-deep-research reverted from $5/$20 (batch-only) to $10/$40 (standard+batch), cache read $2.50. o4-mini-deep-research reverted from $1/$4 to $2/$8 (standard+batch), cache read $0.50. Added gpt-5.5-cyber ($12.50/$75, cybersecurity specialist)
+- **Anthropic**: Added Claude Opus 5 ($5/$25, "agentic coding and enterprise") and Claude Opus 4.7 ($5/$25, standard tier). Five Opus variants now at identical $5/$25 pricing
+- **Google**: Added Gemini 3.6 Flash ($1.50/$7.50, cache $0.15) and Gemini 3.5 Flash-Lite ($0.30/$2.50, cache $0.03). Updated iteration trend from 2.5→3.1→3.5 to 2.5→3.1→3.5→3.6
+- Updated: wiki/comparisons/llm-api-pricing.md (frontmatter date, frontier table, cache table, batch table, tier analysis, cost comparison, key trends, changelog)
+- Sources: openai.com/pricing, anthropic.com/pricing, cloud.google.com/vertex-ai/pricing
 ## [2026-07-26] Skeleton enrichment — the-signal.md
 - Enriched entities/the-signal.md (was status:skeleton) — added publication overview, mission/approach, content categories (weekly news analysis, philosophical deep dives, tutorials, content moderation analysis), subscriber/audience data, cross-references to entities/alex-banks and related concept pages
 - Added entities/the-signal entry to entities/_index.md
