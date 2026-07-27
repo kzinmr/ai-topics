@@ -19,6 +19,7 @@
 
 **Sources:** HN Algolia API, xurl X/Twitter search, blogwatcher SQLite DB
 
+---
 ## [2026-07-27] newsletter-wiki-ingest — OpenAI Presence & Health in ChatGPT
 - CREATED events/openai-presence-launch-july-2026.md — OpenAI Presence enterprise voice/chat agents deployed at BBVA and SoftBank (Jul 2026)
 - CREATED events/openai-health-in-chatgpt-july-2026.md — Health in ChatGPT: Apple Health & medical record integration (Jul 2026)
@@ -26,17 +27,20 @@
 - Sources: The Signal newsletter (2026-07-26), openai.com (Cloudflare-blocked)
 - Triage checkpoint recovered from /opt/data/.hermes/cron/data/newsletter/triage_latest.json (render failure)
 
+---
 ## [2026-07-27] LLM API Pricing Monitor — weekly check
 - **OpenAI**: o3-deep-research reverted from $5/$20 (batch-only) to $10/$40 (standard+batch), cache read $2.50. o4-mini-deep-research reverted from $1/$4 to $2/$8 (standard+batch), cache read $0.50. Added gpt-5.5-cyber ($12.50/$75, cybersecurity specialist)
 - **Anthropic**: Added Claude Opus 5 ($5/$25, "agentic coding and enterprise") and Claude Opus 4.7 ($5/$25, standard tier). Five Opus variants now at identical $5/$25 pricing
 - **Google**: Added Gemini 3.6 Flash ($1.50/$7.50, cache $0.15) and Gemini 3.5 Flash-Lite ($0.30/$2.50, cache $0.03). Updated iteration trend from 2.5→3.1→3.5 to 2.5→3.1→3.5→3.6
 - Updated: wiki/comparisons/llm-api-pricing.md (frontmatter date, frontier table, cache table, batch table, tier analysis, cost comparison, key trends, changelog)
 - Sources: openai.com/pricing, anthropic.com/pricing, cloud.google.com/vertex-ai/pricing
+---
 ## [2026-07-26] Skeleton enrichment — the-signal.md
 - Enriched entities/the-signal.md (was status:skeleton) — added publication overview, mission/approach, content categories (weekly news analysis, philosophical deep dives, tutorials, content moderation analysis), subscriber/audience data, cross-references to entities/alex-banks and related concept pages
 - Added entities/the-signal entry to entities/_index.md
 - Sources: Substack about page, RSS feed (40+ articles), existing entities/alex-banks.md (10.7KB)
 
+---
 ## [2026-07-26] Dreaming wiki-ingest — enrichment completion
 - Deep Sleep verification confirmed seangoedecke.com 'LLMs reward expertise' as genuine gap
 - Enriched entities/seangoedecke-com.md: added 'LLMs Reward Expertise' section (July 2026 — Terence Tao / Jacobian Conjecture / domain knowledge thesis)
@@ -44,6 +48,7 @@
 - Updated: entities/seangoedecke-com.md (frontmatter updated, 1 source added, 1 new subsection)
 - Saturation assessment: all other items already covered by existing wiki pages or prior pipelines
 
+---
 ## [2026-07-26] Dreaming consolidation — saturation pass (Takes=0, Refs=1)
 - Pattern E filesystem scan: 149 recent raw articles, ~40 from Jul 24-26
 - Prior triage (2026-07-25) consumed: 10 decisions (0 takes, 3 refs, 7 skips)
@@ -51,6 +56,22 @@
 - 1 reference candidate: seangoedecke.com LLMs reward expertise (source listed but body absent)
 - 8 skips: Screenpipe/KimiK3/Antirez/ludic/DSPy/HQQ already covered; Google DMA + 20 non-AI batch
 - Archive: 9 candidates, 5 newly archived, 4 dedup (total: 1958 URLs)
+---
+
+## [2026-07-27] watchdog | auto-fix log separators + index header counts
+
+### Changes
+- Fixed 5 missing `---` separators in log.md between consecutive `## [YYYY-MM-DD]` headers
+- Updated Concepts header count from 1908 → 1930 in index.md to match filesystem (inclusive of 22 `_index.md` files)
+- Verified: 0 pipe corruption, 0 line-number corruption, 0 triple brackets, 0 duplicate entries, 0 ghost entries, 0 cross-section misplacement
+- validate_index.py: clean (2852 lines)
+
+### Pipeline notes
+- `x_accounts` stale (26h) — known recurring pattern, job runs every 2 days, within normal schedule
+- wiki-health: null (not available this run)
+- wiki-graph-analysis: 74h stale (2026-07-24) — deferred; 4,226 broken wikilinks mostly truncation errors
+- Orphans: 24 reported, 23 are `_index.md` (intentionally excluded) + `entities/tim-sherratt` (redirect stub) — no action needed
+
 ---
 
 ## [2026-07-26] watchdog | auto-fix log separators + index header counts
