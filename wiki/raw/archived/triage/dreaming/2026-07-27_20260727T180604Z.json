@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-07-27T18:18:20.651776+00:00",
+  "triage_run_id": "20260727T180604Z",
+  "source": "dreaming",
+  "summary_ja": "Saturation pass: 159件のraw articlesをスキャン。prior triage（7/26, 9件）とdaily pipeline（blog-wiki-ingest, newsletter-wiki-ingest, active-crawl）により、主要AI記事はすべて既処理。新規take 0件、marginal reference 2件（Guardian OpenAI批判、CMPND DSPy企業事例）、skip 12件（うち10件は既カバー確認済み、1件はバッチskip）。Wiki coverageは充実しており、dreaming cycleの追加価値は限定的。",
+  "decisions": [
+    {
+      "item_id": "dreaming-guardian-openai-rogue-hacker",
+      "source": "dreaming",
+      "source_name": "theguardian.com",
+      "title": "Be skeptical of OpenAI's rogue hacker agent story",
+      "url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
+      "raw_path": "wiki/raw/articles/2026-07-24_guardian-openai-rogue-hacker-agent.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Stanford研究者John ThickstunによるOpenAIの「ローグエージェント」発言への批判的分析。GPT-2以来の「危険だから公開しない」というマーケティング戦略を指摘。AI安全ディスコースへの批評的視点としてwiki価値はあるが、技術的深みは限定的。entities/openai.mdまたはconcepts/ai-agent-safety-incidents.mdへの参照追加候補。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Be skeptical of OpenAI's rogue hacker agent story\n**Author:** John Thickstun\n**Date:** 2026-07-24\n**Source:** theguardian.com\n**URL:** https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker\nBe skeptical of OpenAI’s rogue hacker agent story | John Thickstun | The Guardian Skip to ma"
+    },
+    {
+      "item_id": "dreaming-skip-flux3-mimic",
+      "source": "dreaming",
+      "source_name": "bfl.ai",
+      "title": "FLUX 3 x mimic: The Next Generation of Video-Action Models",
+      "url": "https://bfl.ai/blog/flux-3-mimic",
+      "raw_path": "wiki/raw/articles/2026-07-23_bfl-flux-3-mimic-video-action-models.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: concepts/flux-video-action-models.md — FLUX 3 x mimicアーキテクチャ、Audiデプロイ、Self-Flow、95% video compute等すべて網羅済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# FLUX 3 x mimic: The Next Generation of Video-Action Models\n**Author:** Black Forest Labs\n**Date:** 2026-07-23\n**Source:** bfl.ai\n**URL:** https://bfl.ai/blog/flux-3-mimic\nFLUX 3 x mimic: The Next Generation of Video-Action Models | Black Forest Labs Contact Sales Back to blog Research Models FLUX "
+    },
+    {
+      "item_id": "dreaming-skip-kubernetes-moment",
+      "source": "dreaming",
+      "source_name": "tobi.knaup.me",
+      "title": "Open-weight AI is having its Kubernetes moment. Let's not ruin it.",
+      "url": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+      "raw_path": "wiki/raw/articles/2026-07-25_tobiknaup-open-weight-kubernetes-moment.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: concepts/open-weight-ai-regulation.md — KnaupのKubernetes類推、Mesos/DC/OS経験、CNCFガバナンス比較、中立基盤としてのopen-weight論すべてカバー済み。ソース記事として登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Open-weight AI is having its Kubernetes moment. Let's not ruin it.\n**Author:** Tobi Knaup\n**Date:** 2026-07-25\n**Source:** tobi.knaup.me\n**URL:** https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/\nOpen-weight AI is having its Kubernetes moment. Let's not ruin it. | To"
+    },
+    {
+      "item_id": "dreaming-skip-ptrchm-coding-debate",
+      "source": "dreaming",
+      "source_name": "ptrchm.com",
+      "title": "Nothing Works and Everyone Is Euphoric",
+      "url": "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
+      "raw_path": "wiki/raw/articles/2026-07-24_ptrchm-ai-coding-solved-debate.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: concepts/ai-coding-effectiveness-debate.md — ptrchmの「AI時代にソフトウェアが悪化している」論、HN 878ポイント等すべてカバー済み。ソースとして登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Nothing Works and Everyone Is Euphoric\n**Author:** ptrchm\n**Date:** 2026-07-24\n**Source:** ptrchm.com\n**URL:** https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/\nNothing Works and Everyone Is Euphoric | ptrchm As I&rsquo;m writing this, we&rsquo;re in the middle of an AI-induced mass"
+    },
+    {
+      "item_id": "dreaming-skip-relay-market",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
+      "url": "https://simonwillison.net/2026/Jul/26/relay-market/",
+      "raw_path": "wiki/raw/articles/simonwillison.net--2026-jul-26-relay-market--f93ad63e.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: entities/simon-willison.md — one-api/new-apiプロキシ、中国のトークン転売市場、APIキー詐欺、strict caps要請すべてカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# An Inside Look at the Relay Market Powering Token Resellers and Fraud\nSource: https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything\n26th July 2026 - Link Blog\nAn Inside Look at the Relay Market Powering Token Resellers and Fraud\n(\nvia\n) Fascinating investigation by Matt Lenhard into "
+    },
+    {
+      "item_id": "dreaming-skip-esp32-llm",
+      "source": "dreaming",
+      "source_name": "github.com/slvDev",
+      "title": "Running a 28.9M parameter LLM on an $8 microcontroller",
+      "url": "https://github.com/slvDev/esp32-ai",
+      "raw_path": "wiki/raw/articles/2026-07-25_slvdev-esp32-llm-microcontroller.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: concepts/edge-llm-microcontroller.md — ESP32-S3 28.9Mパラメータ、Per-Layer Embeddings、9.5 tok/s、flash streaming等すべてカバー済み。ソースとして登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Running a 28.9M parameter LLM on an $8 microcontroller\n> Source: https://github.com/slvDev/esp32-ai\n> HN Discussion: 201 points, Jul 25, 2026\n> Author: slvDev\nThis is a 28.9 million parameter language model that generates text on an ESP32-S3, a microcontroller that costs about $8. It runs on the c"
+    },
+    {
+      "item_id": "dreaming-skip-screenpipe",
+      "source": "dreaming",
+      "source_name": "screenpipe.com",
+      "title": "Screenpipe (YC S26) — Record How You Work and Turn That Into Agents",
+      "url": "https://screenpipe.com",
+      "raw_path": "wiki/raw/articles/2026-07-23_screenpipe-yc-s26-screen-to-agent.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: entities/screenpipe.md — 20K GitHub stars、Rust実装、screen/audio記録、SQLite indexing、MCP対応等すべてカバー済み。prior triageでもskip判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Screenpipe (YC S26) — Record How You Work and Turn That Into Agents\n## Source\n- **HN Launch**: https://news.ycombinator.com/item?id=49024620 (84 pts, Jul 23, 2026)\n- **GitHub**: https://github.com/screenpipe/screenpipe (20,538 ★, Rust, 2,028 forks)\n- **Website**: https://screenpipe.com\n## HN Launc"
+    },
+    {
+      "item_id": "dreaming-skip-batch-non-ai",
+      "source": "dreaming",
+      "source_name": "multiple",
+      "title": "Non-AI articles batch skip (Jul 25-27)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "非AI記事バッチスキップ: dfarq.homeip.net (Arcnet歴史), shkspr.mobi (書評×2), johndcook.com (数学×3), purplesyringa.moe (Python SIMD/Teal), entropicthoughts.com (SICP/Haskell), construction-physics.com (読書リスト), birc.app, lwn.net (×4), troyhunt.com (Weekly Update), pluralistic.net (×2, 政治経済), anildash.com (ドキュメント作成スキル), blog.jim-nielsen.com (ポッドキャスト), serpapi.com (訴訟), apple.com (Ford Maps), digital-markets-act.ec.europa.eu (Google DMA罰金), lucumr.pocoo.org (Codeberg), idiallo.com ($500M)。すべてAI/LLM/Agent分野に直接関連なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（非AI記事群 — 抽出不要）"
+    }
+  ]
+}

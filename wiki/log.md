@@ -1,3 +1,11 @@
+## [2026-07-27] Dreaming consolidation — saturation pass (Takes=0, Refs=2)
+- Filesystem scan: 159 raw articles, top 40 AI-relevant articles evaluated
+- All significant articles already processed by daily pipelines (blog-wiki-ingest, newsletter-wiki-ingest, active-crawl, prior dreaming triage 7/26)
+- **Reference (2):** Guardian OpenAI rogue hacker critique (marginal — opinion piece), CMPND task/model separation (marginal — DSPy ecosystem philosophy)
+- **Skip (12):** Flux 3 mimic, open-weight Kubernetes moment, ptrchm coding debate, Kimi K3 vs GPT-5.6 Sol, relay market, Antirez Torvalds, HQQ, ESP32 LLM, Screenpipe, context engineering Claude 5, OpenAI Agents SDK, non-AI batch
+- Archive: 14 candidates, 8 newly archived, 6 dedup (total: 1995 URLs)
+- Coverage verified: all 10 AI-relevant articles matched to existing wiki pages with specific line-level content
+
 ## [2026-07-27] Active crawl — 3 new concept pages created
 
 **Discovery:** HN Algolia (15 trending stories, top: Claude Opus 5 1771pts, coding debate 878pts), X/Twitter (10 topics: RAO recursive agents, multimodal training bug, Kimi K3, Jensen Huang open letter), wiki gap analysis (10 gaps identified). Cross-referenced against existing wiki coverage — selected 4 topics with genuine gaps.
