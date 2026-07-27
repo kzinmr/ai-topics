@@ -4,7 +4,14 @@ aliases: [Deterministic LLM Routing]
 created: 2026-06-30
 updated: 2026-06-30
 type: concept
-tags: [model-routing, llm-proxy, cost-optimization, open-source, deterministic, self-hosted, local-llm]
+tags:
+  - model-routing
+  - llm-proxy
+  - optimization
+  - open-source
+  - deterministic
+  - self-hosted
+  - local-llm
 sources: [raw/articles/2026-06-25_wayfinder-router_deterministic-llm-routing.md]
 ---
 

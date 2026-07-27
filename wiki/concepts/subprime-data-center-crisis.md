@@ -4,7 +4,7 @@ type: concept
 created: 2026-07-24
 updated: 2026-07-24
 tags:
-  - ai-economics
+  - economics
   - infrastructure
   - ai-investment
   - data-center

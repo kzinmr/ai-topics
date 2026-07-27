@@ -5,9 +5,7 @@ updated: 2026-07-15
 type: entity
 tags:
   - person
-  - ai-researcher
   - evaluation
-  - agent-evaluation
 aliases:
   - "@sohmray"
   - sohmray

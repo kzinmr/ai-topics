@@ -3,7 +3,14 @@ title: "Open Source LLM Governance — Debian General Resolution"
 created: 2026-07-26
 updated: 2026-07-26
 type: concept
-tags: [governance, ai-governance, open-source, policy, ai-safety, llm, regulation]
+tags:
+  - governance
+  - ai-governance
+  - open-source
+  - policy
+  - agent-safety
+  - model
+  - regulation
 sources:
   - raw/articles/lwn.net--articles-1085314--ea0bdeff.md
 ---

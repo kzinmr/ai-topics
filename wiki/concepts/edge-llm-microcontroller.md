@@ -3,7 +3,16 @@ title: "Edge LLM on Microcontrollers"
 created: 2026-07-26
 updated: 2026-07-26
 type: concept
-tags: [edge-ai, model, inference, hardware, small-language-model, quantization, embedded-systems, on-device, edge-computing]
+tags:
+  - edge-ai
+  - model
+  - inference
+  - hardware
+  - small-language-model
+  - quantization
+  - embedded-systems
+  - on-device
+  - infrastructure
 sources: [raw/articles/2026-07-25_slvdev-esp32-llm-microcontroller.md]
 ---
 

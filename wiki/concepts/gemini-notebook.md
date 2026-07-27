@@ -5,7 +5,6 @@ updated: 2026-07-17
 type: concept
 tags:
   - google
-  - gemini
   - notebook
   - product
   - rag

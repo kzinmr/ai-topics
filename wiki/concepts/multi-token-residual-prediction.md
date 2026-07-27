@@ -7,7 +7,6 @@ tags:
   - inference
   - optimization
   - diffusion
-  - speculative-decoding
 aliases: ["MRP", "Residual MTP", "Multi-Token Residual Prediction"]
 sources:
   - raw/articles/modal.com--blog-multi-token-residual-prediction--56a6f835.md

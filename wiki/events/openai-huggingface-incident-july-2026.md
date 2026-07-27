@@ -4,13 +4,12 @@ type: event
 created: 2026-07-24
 updated: 2026-07-24
 tags:
-  - ai-safety
-  - cybersecurity
+  - agent-safety
+  - security
   - openai
   - huggingface
-  - agent-safety
   - benchmark
-  - incident
+  - ai-safety
 sources:
   - raw/articles/simonwillison.net--2026-jul-22-openai-cyberattack--78d1bc06.md
   - raw/articles/simonwillison.net--2026-jul-23-the-first-known-runaway-ai-agent--c3c28e30.md

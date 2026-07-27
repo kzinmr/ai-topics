@@ -3,7 +3,19 @@ title: "LLM Text Detection with Classical Machine Learning"
 created: 2026-07-17
 updated: 2026-07-17
 type: concept
-tags: [ai-detection, ai-content-detection, text-generation, llm-output, safety, classifiers, benchmark, research, hn-popular, adversarial, methodology, disinformation]
+tags:
+  - ai-detection
+  - ai-content-detection
+  - text-generation
+  - llm-output
+  - safety
+  - classifiers
+  - benchmark
+  - lab
+  - hn-popular
+  - agent-safety
+  - methodology
+  - disinformation
 sources: [raw/articles/2026-03-01_llm-text-detection-classical-ml.md]
 ---
 

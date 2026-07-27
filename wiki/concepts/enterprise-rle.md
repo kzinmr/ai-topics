@@ -5,12 +5,12 @@ created: 2026-07-24
 updated: 2026-07-24
 tags:
   - concept
-  - enterprise-ai
+  - company
   - reinforcement-learning
   - hill-climbing
   - model-routing
   - harness-engineering
-  - agent-infrastructure
+  - ai-agents
 sources:
   - raw/articles/2026-07-23_microsoft-ai_frontier-diffusion-and-control.md
 aliases: ["enterprise reinforcement learning environments", "in-product RLE"]

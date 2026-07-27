@@ -4,14 +4,12 @@ created: 2026-07-11
 updated: 2026-07-11
 type: concept
 tags:
-  - ai-safety
+  - agent-safety
   - terrorism
-  - frontier-models
+  - model
   - security
   - governance
-  - red-teaming
   - policy
-  - cybersecurity
   - alignment
 sources:
   - raw/articles/2026-07-10_casp-boko-haram-frontier-ai.md

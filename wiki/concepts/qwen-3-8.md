@@ -8,8 +8,6 @@ tags:
   - model
   - open-source
   - reasoning
-  - moe
-  - frontier-models
   - text-generation
   - alibaba
   - china

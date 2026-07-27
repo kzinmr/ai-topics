@@ -1,6 +1,10 @@
 ---
 title: hyperbo
-tags: [entity, person, agent-engineering, software-engineering]
+tags:
+  - entity
+  - person
+  - agentic-engineering
+  - software-engineering
 type: entity
 status: active
 updated: 2026-07-18

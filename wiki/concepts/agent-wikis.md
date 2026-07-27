@@ -4,13 +4,12 @@ type: concept
 created: 2026-07-22
 updated: 2026-07-22
 tags:
-  - knowledge-management
+  - search
   - memory-systems
-  - agent-memory
+  - ai-agents
   - context-engineering
   - wiki
   - coding-agents
-  - agents
   - survey
 aliases:
   - llm-wiki

@@ -8,7 +8,7 @@ tags:
   - training
   - lab
   - reinforcement-learning
-  - physical-ai
+  - robotics
 aliases: ["Periodic Labs", "Periodic"]
 sources:
   - raw/articles/2026-04-28_iclr-2026-rl-frontier-llms.md

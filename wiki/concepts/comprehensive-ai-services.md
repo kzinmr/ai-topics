@@ -5,7 +5,7 @@ created: 2026-06-20
 updated: 2026-07-05
 tags:
   - superintelligence
-  - ai-safety
+  - agent-safety
   - alignment
   - agi
   - ai-governance

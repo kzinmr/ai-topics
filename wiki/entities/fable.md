@@ -1,6 +1,11 @@
 ---
 title: "Fable (Anthropic Coding Harness)"
-tags: [entity, product, anthropic, agent-harness, coding-agent]
+tags:
+  - entity
+  - product
+  - anthropic
+  - harness-engineering
+  - coding-agent
 sources:
   - raw/newsletters/2026-07-07-my-thoughts-on-fable.md
   - https://open.substack.com/pub/bensbites/p/my-thoughts-on-fable

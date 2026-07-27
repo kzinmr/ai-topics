@@ -5,10 +5,10 @@ created: 2026-07-25
 updated: 2026-07-25
 tags:
   - vendor-lock-in
-  - gpu
-  - cuda
+  - hardware
+  - inference
   - infrastructure
-  - ai-economics
+  - economics
   - ai-moat
 related:
   - [[entities/amd]]

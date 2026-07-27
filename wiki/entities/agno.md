@@ -3,7 +3,17 @@ title: "Agno"
 created: 2026-06-29
 updated: 2026-06-29
 type: entity
-tags: [agent-platform, agent-framework, open-source, agent-sdk, agent-runtime, agent-observability, multi-agent, control-plane, multi-tenancy, self-hosted]
+tags:
+  - agent-platform
+  - ai-agents
+  - open-source
+  - agent-sdk
+  - agent-runtime
+  - infrastructure
+  - multi-agent
+  - control-plane
+  - multi-tenancy
+  - self-hosted
 sources: [raw/articles/2026-06-29_agno_welcome-docs.md]
 ---
 

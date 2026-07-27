@@ -9,7 +9,6 @@ tags:
   - company
   - china
   - meituan
-  - mixture-of-experts
   - open-source
 sources:
   - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md

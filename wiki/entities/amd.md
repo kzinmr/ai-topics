@@ -6,7 +6,6 @@ updated: 2026-07-25
 tags:
   - company
   - hardware
-  - gpu
   - amd
   - ai-hardware
   - infrastructure

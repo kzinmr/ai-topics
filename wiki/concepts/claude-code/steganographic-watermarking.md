@@ -5,7 +5,7 @@ updated: 2026-07-01
 type: concept
 tags:
   - claude-code
-  - ai-safety
+  - agent-safety
   - privacy
 sources:
   - raw/articles/2026-06-30_claude-code-steganographic-watermarking.md

@@ -6,12 +6,9 @@ type: concept
 tags:
   - concept
   - coding-agents
-  - agent-observability
+  - infrastructure
   - developer-tooling
-  - data-visualization
-  - ide
   - ai-agents
-  - autonomous-agents
 sources:
   - raw/articles/2026-07-12_mindwalk-session-replay.md
   - https://github.com/cosmtrek/mindwalk

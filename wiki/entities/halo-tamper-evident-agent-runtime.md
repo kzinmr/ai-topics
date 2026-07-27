@@ -4,13 +4,12 @@ created: 2026-07-08
 updated: 2026-07-08
 type: entity
 tags:
-  - agent-security
-  - observability
+  - agent-safety
+  - infrastructure
   - open-source
   - audit
   - transparency
   - tool
-  - agent-observability
 sources:
   - https://github.com/bkuan001/halo-record
   - https://hn.algolia.com/api/v1/items/48818098

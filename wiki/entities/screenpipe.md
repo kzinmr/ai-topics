@@ -6,14 +6,12 @@ type: entity
 tags:
   - ai-agents
   - open-source
-  - developer-tools
+  - developer-tooling
   - product
   - ycombinator
-  - local-first
   - privacy
   - mcp
   - desktop-automation
-  - rust
   - screen-recording
   - quantified-self
 sources:

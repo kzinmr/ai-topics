@@ -3,7 +3,19 @@ title: "Databricks Coding Agent Benchmark"
 created: 2026-07-10
 updated: 2026-07-22
 type: concept
-tags: [coding-agents, agent-evaluation, benchmark, databricks, enterprise-ai, swere-bench, evaluation, cost-optimization, model-routing, open-weight, claude-code, codex, devin, pi, omnigent]
+tags:
+  - coding-agents
+  - evaluation
+  - benchmark
+  - databricks
+  - company
+  - swere-bench
+  - optimization
+  - model-routing
+  - open-weight
+  - claude-code
+  - pi
+  - omnigent
 sources:
   - raw/articles/2026-07-08_databricks-coding-agent-benchmark.md
   - "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase"

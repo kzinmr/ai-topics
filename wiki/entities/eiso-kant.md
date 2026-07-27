@@ -5,8 +5,6 @@ created: 2026-07-24
 updated: 2026-07-26
 tags:
   - person
-  - ai-researcher
-  - founder
   - open-source
 aliases:
   - eisokant

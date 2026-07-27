@@ -3,12 +3,10 @@ title: "Wiki Memory"
 type: concept
 tags:
   - memory-systems
-  - agent-memory
-  - knowledge-management
+  - ai-agents
+  - search
   - context-engineering
-  - agents
   - langchain
-  - langsmith
   - person
   - cognition
 created: 2026-07-07

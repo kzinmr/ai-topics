@@ -4,8 +4,8 @@ type: concept
 created: 2026-07-17
 updated: 2026-07-17
 tags:
-  - knowledge-management
-  - documentation
+  - search
+  - developer-tooling
   - wiki
   - coding-agents
   - agents-md

@@ -5,7 +5,6 @@ updated: 2026-07-17
 type: entity
 tags:
   - person
-  - founder
   - google
   - ai-agents
   - enterprise-agents

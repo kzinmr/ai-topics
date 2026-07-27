@@ -3,7 +3,11 @@ title: GPU Bubble (AI Inference)
 created: 2026-06-30
 updated: 2026-06-30
 type: concept
-tags: [inference, gpu, hardware, optimization, vram, performance-engineering]
+tags:
+  - inference
+  - hardware
+  - optimization
+  - performance-engineering
 sources: [raw/articles/2026-06-04_moondream_gpu-bubble.md]
 ---
 

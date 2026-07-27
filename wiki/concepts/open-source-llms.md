@@ -8,9 +8,8 @@ tags:
   - open-weight
   - model
   - benchmark
-  - frontier-models
-  - ai-economics
-  - digital-sovereignty
+  - economics
+  - sovereign-ai
   - methodology
 aliases:
   - open-source-llms

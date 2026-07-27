@@ -7,14 +7,11 @@ tags:
   - reasoning
   - model
   - benchmark
-  - reliability
+  - infrastructure
   - quality-assurance
   - coding-agents
   - bug
-  - codex
-  - gpt
-  - chain-of-thought
-  - llm-evaluation
+  - evaluation
 sources:
   - raw/articles/2026-06-27_github_gpt55-codex-reasoning-token-clustering.md
 related:

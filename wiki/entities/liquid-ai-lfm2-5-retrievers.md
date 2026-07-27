@@ -3,7 +3,16 @@ title: "LFM2.5 Retrievers (Liquid AI)"
 created: 2026-06-29
 updated: 2026-06-29
 type: entity
-tags: [model, retrieval, colbert, embeddings, multilingual, open-source, late-interaction, maxsim, multi-vector, edge-ai, cpu-inference]
+tags:
+  - model
+  - rag
+  - search
+  - open-source
+  - late-interaction
+  - maxsim
+  - multi-vector
+  - edge-ai
+  - cpu-inference
 sources: [raw/articles/2026-06-18_liquid_lfm2-5-retrievers.md]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "DeepSWE Benchmark (Datacurve)"
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-07-27
 type: concept
 tags:
   - evaluation
@@ -18,6 +18,8 @@ related:
 sources:
   - raw/articles/2026-05-26_datacurve-deepswe-benchmark-venturebeat.md
   - https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole
+  - raw/articles/together.ai--blog-kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routi--a97a06f4.md
+  - https://www.together.ai/blog/kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing
 ---
 
 # DeepSWE Benchmark (Datacurve)
@@ -36,6 +38,7 @@ On SWE-Bench Pro, frontier models cluster within a narrow 30-point range, making
 | Model | DeepSWE % | Change from SWE-Bench Pro |
 |-------|-----------|---------------------------|
 | **GPT-5.5** | **70%** | Clear leader |
+| **GPT-5.6 Sol** | **72.7%** | New top single-shot (July 2026) |
 | GPT-5.4 | 56% | — |
 | Claude Opus 4.7 | 54% | ↓ (CHEATED passes removed) |
 | Claude Sonnet 4.6 | 32% | Sharp drop |
@@ -43,6 +46,7 @@ On SWE-Bench Pro, frontier models cluster within a narrow 30-point range, making
 | GPT-5.4-mini | 24% | — |
 | Kimi K2.6 | 24% | — |
 | Claude Haiku 4.5 | **0%** | From 39% on SWE-Bench Pro |
+| **Kimi K3** | **68.5% pass@1 / 89.4% pass@4** | New top pass@4 (July 2026) |
 
 ### 2. Verifier Error Rate on SWE-Bench Pro: ~32%
 Datacurve audited 30 random tasks across both benchmarks with an LLM-based judge:
@@ -85,6 +89,8 @@ DeepSWE demands ~5.5× more code output with shorter prompts (half the length), 
 |-------|-------------------|---------------|------|
 | GPT-5.5 | $5.80 | 47k | ~20 min |
 | GPT-5.4 | $3.30 | — | — |
+| Kimi K3 | $4.65 | — | 66 min |
+| GPT-5.6 Sol | $8.37 | — | 17 min |
 | Claude Opus 4.7 | Significantly higher | — | — |
 
 GPT-5.4 at $3.30/trial represents the best value. Higher spend, more tokens, or longer runs did not correlate with higher pass rates — the relationship is not monotonic.
@@ -107,6 +113,18 @@ Claude Opus 4.7 and GPT-5.4 wrote and ran new tests on 80%+ of DeepSWE runs. On 
 ## Strategic Context
 
 DeepSWE arrives as the benchmark market becomes a strategic battleground. Scale AI's SWE-Bench Pro — which Datacurve directly critiques — is maintained by a company that also provides evaluation services to the labs whose models it ranks. Datacurve has published the full dataset, all agent trajectories, and the evaluation harness on GitHub to mitigate concerns about commercial bias.
+
+### Kimi K3 vs GPT-5.6 Sol (Together AI, July 2026)
+
+In July 2026, Together AI published a head-to-head comparison of **Kimi K3** (open-weight) and **GPT-5.6 Sol** on DeepSWE, revealing that the two models occupy complementary strengths and are strong candidates for routing/cascading.
+
+**Key findings:**
+- **GPT-5.6 Sol** leads on single-shot quality: **72.7% pass@1** (new top single-shot) with 84.5% reliability (61/113 tasks solved four-for-four).
+- **Kimi K3** leads on multi-attempt: **89.4% pass@4** (new top pass@4) and 82.0% pass@2, with wider coverage (89.4% of tasks solved at least once).
+- **Cost**: Kimi K3 costs **$4.65/rollout** vs Sol's **$8.37** — 2.8× more solved tasks per dollar for K3.
+- **Divergence**: The models show only **0.46 per-task correlation**, succeeding and failing on genuinely different tasks — making them a strong routing pair.
+- **Kimi-first cascade with verifier**: Run K3 first, escalate to Sol on test failure → **~85.6% accuracy**, covering 108/113 tasks (95.6%). This beats either model alone and even a perfect one-shot router (83.4%).
+- **Coverage vs reliability tradeoff**: K3 casts the wider net (89.4% coverage, 45 rock-solid tasks); Sol is steadier (85.8% coverage, 61 rock-solid tasks).
 
 ## Graph Structure Query
 
@@ -131,3 +149,4 @@ This section informs graph queries: authored by [[entities/datacurve]] and [[ent
 ## Sources
 - [DeepSWE Blows Up the AI Coding Leaderboard](https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole) — VentureBeat, May 26, 2026
 - [Serena Ge announcement on X](https://x.com/serenaa_ge/status/2059308218564890875)
+- [Kimi K3 vs GPT-5.6 Sol on DeepSWE: Cost, Coding, and Routing](https://www.together.ai/blog/kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing) — Together AI Blog, July 2026

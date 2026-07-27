@@ -4,17 +4,16 @@ created: 2026-07-13
 updated: 2026-07-13
 type: concept
 tags:
-  - gpu
+  - hardware
   - infrastructure
   - nvidia
-  - ai-economics
   - economics
   - business-model
   - investing
   - controversy
   - supply-chain
   - sustainability
-  - ai-criticism
+  - ai-critic
   - data-center
   - hn-popular
 sources:

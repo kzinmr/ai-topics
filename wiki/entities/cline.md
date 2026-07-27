@@ -5,10 +5,8 @@ created: 2026-07-12
 updated: 2026-07-12
 tags:
   - coding-agents
-  - autonomous-agents
-  - developer-tooling
   - ai-agents
-  - ide
+  - developer-tooling
   - open-source
   - cline
 sources:

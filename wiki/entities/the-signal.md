@@ -8,7 +8,7 @@ tags:
   - content-moderation
   - platform-policy
   - ai-content-detection
-  - newsletter
+  - writing
   - ai-educator
   - blog
   - ai-adoption

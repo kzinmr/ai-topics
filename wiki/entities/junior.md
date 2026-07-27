@@ -5,13 +5,13 @@ updated: 2026-07-17
 type: entity
 tags:
   - coding-agents
-  - agent-architecture
+  - architecture
   - agent-design-patterns
   - agent-tooling
   - open-source
   - developer-tooling
   - reactive-systems
-  - sentry
+  - infrastructure
   - ai-agents
   - proactive
 sources: [raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md]

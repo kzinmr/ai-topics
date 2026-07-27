@@ -4,6 +4,11 @@ type: entity
 created: 2026-04-09
 updated: 2026-06-30
 tags:
+  - person
+  - blogger
+  - hn-popular
+  - formal-methods
+  - evaluation
 - person
 - blogger
 - hn-popular

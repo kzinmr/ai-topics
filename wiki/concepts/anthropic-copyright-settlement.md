@@ -3,7 +3,15 @@ title: "Anthropic $1.5B Copyright Settlement"
 created: 2026-07-24
 updated: 2026-07-24
 type: concept
-tags: [anthropic, law, copyright, governance, regulation, policy, ai-ethics, ethics, legal-tech, event]
+tags:
+  - anthropic
+  - law
+  - policy
+  - governance
+  - regulation
+  - ethics
+  - legal-tech
+  - event
 sources: [raw/articles/2026-07-21_apnews-anthropic-copyright-settlement.md]
 ---
 

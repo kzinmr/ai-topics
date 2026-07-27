@@ -3,7 +3,14 @@ title: AI Preflight Safety Testing
 created: 2026-07-15
 updated: 2026-07-15
 type: concept
-tags: [ai-safety, governance, policy, regulation, vulnerability, anthropic, deepmind, google-deepmind]
+tags:
+  - agent-safety
+  - governance
+  - policy
+  - regulation
+  - vulnerability
+  - anthropic
+  - google
 sources:
   - raw/articles/2026-07-15_ai-preflight-safety-testing.md
 ---

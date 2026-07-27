@@ -4,7 +4,20 @@ type: entity
 created: 2026-07-13
 updated: 2026-07-13
 aliases: [theo, t3dotgg, t3-gg]
-tags: [person, developer, blogger, content-creator, entrepreneur, founder, ceo, investor, typescript, open-source, coding-agent, agentic-engineering, codex, claude-code, youtube, video-series]
+tags:
+  - person
+  - developer-tooling
+  - blogger
+  - content-creator
+  - ceo
+  - company
+  - open-source
+  - coding-agent
+  - agentic-engineering
+  - coding-agents
+  - claude-code
+  - youtube
+  - video-series
 sources:
   - https://t3.gg
   - https://x.com/theo

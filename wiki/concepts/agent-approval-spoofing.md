@@ -3,7 +3,15 @@ title: Agent Approval Spoofing
 created: 2026-07-13
 updated: 2026-07-13
 type: concept
-tags: [vulnerability, agent-security, agent-safety, prompt-injection, sandbox, human-in-the-loop, permission, coding-agents, security, incident, trust]
+tags:
+  - vulnerability
+  - agent-safety
+  - sandbox
+  - human-in-the-loop
+  - permission
+  - coding-agents
+  - security
+  - trust
 sources: []
 ---
 

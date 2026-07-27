@@ -3,7 +3,10 @@ title: "AA-Briefcase"
 created: 2026-06-29
 updated: 2026-06-29
 type: concept
-tags: [benchmark, agent-evaluation, evals, agentic-engineering, llm-as-judge]
+tags:
+  - benchmark
+  - evaluation
+  - agentic-engineering
 sources: [raw/articles/2026-06-29_artificial-analysis_aa-briefcase-benchmark.md]
 ---
 

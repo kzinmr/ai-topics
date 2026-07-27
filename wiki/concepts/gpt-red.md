@@ -3,7 +3,11 @@ title: "GPT-Red"
 type: concept
 created: 2026-07-16
 updated: 2026-07-16
-tags: [ai-safety, red-teaming, prompt-injection, self-play, openai, gpt]
+tags:
+  - agent-safety
+  - self-play
+  - openai
+  - model
 sources:
   - raw/articles/2026-07-15_mit-technology-review_gpt-red.md
   - https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/

@@ -594,6 +594,14 @@ TAG_NORMALIZATION = {
     'understanding-code': 'code-intelligence',
     'vector-database': 'vector-search',
     'computer-history': 'timeline',
+
+    # 2026-07-27 weekly tag audit: non-SCHEMA tag mappings
+    'incident': 'ai-safety',
+    'ai-criticism': 'ai-critic',
+    'digital-sovereignty': 'sovereign-ai',
+    'longtermism': 'existential-risk',
+    'wiki-maintenance': 'wiki',
+    'graph-analysis': 'wiki',
 }
 
 def extract_tags_from_frontmatter(front):
@@ -676,7 +684,7 @@ def main():
     dry_run = '--dry-run' in sys.argv
     modified = 0
     scanned = 0
-    for root_dir in ['entities', 'concepts', 'comparisons']:
+    for root_dir in ['entities', 'concepts', 'comparisons', 'events', 'queries']:
         for root, dirs, files in os.walk(os.path.join(wiki, root_dir)):
             for f in files:
                 if not f.endswith('.md'):

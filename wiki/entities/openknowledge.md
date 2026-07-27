@@ -6,7 +6,7 @@ type: entity
 tags:
   - open-source
   - tool
-  - information-retrieval
+  - search
   - agent-platform
   - mcp
   - product

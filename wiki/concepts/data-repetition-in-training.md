@@ -7,10 +7,9 @@ tags:
   - training
   - data-science
   - scaling-laws
-  - synthetic-data
   - datasets
   - overfitting
-  - scaling
+  - optimization
 sources:
   - https://arxiv.org/abs/2606.24998
 ---

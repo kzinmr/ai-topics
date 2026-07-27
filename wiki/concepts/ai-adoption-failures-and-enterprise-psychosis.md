@@ -3,7 +3,15 @@ title: "AI Adoption Failures and Enterprise AI Psychosis"
 created: 2026-07-26
 updated: 2026-07-26
 type: concept
-tags: [ai-adoption, ai-criticism, enterprise-ai, ai-organization, technology-criticism, ai-commentary, coordination, game-theory]
+tags:
+  - ai-adoption
+  - ai-critic
+  - company
+  - ai-organization
+  - technology-criticism
+  - ai-commentary
+  - coordination
+  - game-theory
 sources:
   - raw/articles/ludic.mataroa.blog--blog-ai-mania-is-eviscerating-global-decision-making--bc68f656.md
 ---

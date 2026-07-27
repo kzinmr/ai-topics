@@ -3,7 +3,17 @@ title: "Model Training as Code"
 created: 2026-06-29
 updated: 2026-06-29
 type: concept
-tags: [model-training-as-code, model-training, training, post-training, pretraining, mlops, ml-engineering, workflow, experiment-tracking, developer-tooling, automation, reliability, flyte, weights-and-biases]
+tags:
+  - model-training-as-code
+  - model-training
+  - training
+  - mlops
+  - infrastructure
+  - workflow
+  - developer-tooling
+  - automation
+  - flyte
+  - weights-and-biases
 sources: [raw/articles/2026-05-22_aleph-alpha_model-training-as-code.md]
 ---
 

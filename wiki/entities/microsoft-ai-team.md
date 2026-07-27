@@ -7,8 +7,7 @@ tags:
   - microsoft
   - lab
   - model
-  - ai-research
-  - organization
+  - company
 sources:
   - raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md
   - raw/articles/2026-07-23_microsoft-ai_frontier-diffusion-and-control.md

@@ -7,15 +7,13 @@ tags:
   - company
   - platform
   - product
-  - ai-infrastructure
+  - infrastructure
   - llm-inference
   - inference
-  - serverless
-  - gpu
-  - cloud
+  - hardware
   - open-source
   - fine-tuning
-  - docker
+  - developer-tooling
   - replicate
 sources:
   - raw/articles/2026-07-11_replicate-about.md

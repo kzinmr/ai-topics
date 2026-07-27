@@ -3,7 +3,13 @@ title: "ResearchArena: Agent Sabotage Evaluation"
 created: 2026-07-24
 updated: 2026-07-24
 type: concept
-tags: [ai-safety, agent-safety, benchmark, evaluation, red-teaming, adversarial, coding-agents, model, research]
+tags:
+  - agent-safety
+  - benchmark
+  - evaluation
+  - coding-agents
+  - model
+  - lab
 sources: [raw/articles/2026-07-21_arxiv-2607.19321-researcharena-agent-sabotage.md]
 ---
 

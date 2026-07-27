@@ -7,14 +7,11 @@ tags:
   - coding-agents
   - open-source
   - policy
-  - ai-coding
-  - vibe-coding
   - code-quality
   - developer-tooling
   - software-engineering
   - community
   - ai-slop
-  - code-review
   - ai-governance
 sources:
   - raw/articles/2026-06-30_pcgamer_godot-bans-ai-authored-code.md

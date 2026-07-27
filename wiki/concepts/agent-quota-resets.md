@@ -5,7 +5,7 @@ updated: 2026-07-19
 type: concept
 tags:
   - coding-agents
-  - ai-economics
+  - economics
   - ai-agents
 sources:
   - raw/articles/minimaxir.com--2026-07-agent-quota-reset--81744d63.md

@@ -3,7 +3,14 @@ title: "Better Models: Worse Tools"
 created: 2026-07-05
 updated: 2026-07-05
 type: concept
-tags: [tool-calling, tool-use, anthropic, model, ai-coding, coding-agents, regression, pi, code-quality]
+tags:
+  - tool
+  - anthropic
+  - model
+  - coding-agents
+  - regression
+  - pi
+  - code-quality
 sources:
   - raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md
   - https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/

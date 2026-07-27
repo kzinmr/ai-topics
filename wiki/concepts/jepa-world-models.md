@@ -3,7 +3,13 @@ title: JEPA World Models
 created: 2026-07-15
 updated: 2026-07-15
 type: concept
-tags: [world-models, deep-learning, ai-research, jepa, meta, yann-lecun, self-supervised-learning]
+tags:
+  - world-models
+  - model
+  - lab
+  - jepa
+  - methodology
+  - yann-lecun
 sources:
   - raw/articles/2026-07-15_lemario-jepa-world-model.md
 ---

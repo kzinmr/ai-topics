@@ -4,10 +4,8 @@ created: 2026-07-20
 updated: 2026-07-20
 type: concept
 tags:
-  - lora
   - fine-tuning
   - benchmark
-  - peft
   - training-efficiency
   - nanogpt-speedrun
   - hn-popular

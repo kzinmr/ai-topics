@@ -22,7 +22,6 @@ tags:
   - agent-governance
   - claude-code
   - claude-fable-5
-  - system-prompt
 sources:
   [raw/articles/2025-09-29_anthropic_effective-context-engineering-for-ai-agents.md, raw/articles/2025-06-23_lancemartin_context-engineering-for-agents.md, raw/articles/2026-01-09_lancemartin_agent-design-patterns.md, raw/articles/substack.com--redirect-6b46ec4c-ff7c-43b5-9e62-b0d4bf1dca99--bb1f035d.md, raw/articles/2026-07-24_trq212_context-engineering-claude-5.md]
 ---

@@ -5,13 +5,10 @@ created: 2026-07-16
 updated: 2026-07-16
 tags:
   - terminal
-  - data-visualization
-  - rust
+  - developer-tooling
   - open-source
   - coding-agents
-  - developer-tools
   - xai
-  - cli
 sources:
   - raw/articles/simonwillison.net--2026-jul-16-grok-mermaid--673b790f.md
   - https://simonwillison.net/2026/Jul/16/grok-mermaid/

@@ -6,9 +6,6 @@ updated: 2026-07-05
 tags:
   - person
   - model
-  - ai-researcher
-  - educator
-  - generative-ai
 aliases: ["DavidDuvenaud"]
 sources:
   - raw/articles/2026-04-27_talkie-historical-llm.md

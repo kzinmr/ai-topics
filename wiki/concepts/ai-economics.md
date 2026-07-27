@@ -7,8 +7,7 @@ tags:
   - economics
   - agi
   - inference
-  - ai-economics
-  - enterprise-ai
+  - company
   - platform-economics
 related:
   - [[entities/alex-imas]]

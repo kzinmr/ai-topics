@@ -6,8 +6,7 @@ updated: 2026-07-05
 tags:
   - person
   - reinforcement-learning
-  - post-training
-  - founder
+  - training
 aliases: ["William Fedus", "wfFedus"]
 sources:
   - raw/articles/substack.com--redirect-f8601173-ac7a-4c21-b063-92ea35c3265d--bf403c1c.md

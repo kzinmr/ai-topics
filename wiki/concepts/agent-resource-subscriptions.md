@@ -4,7 +4,7 @@ created: 2026-07-17
 updated: 2026-07-17
 type: concept
 tags:
-  - agent-architecture
+  - architecture
   - agent-design-patterns
   - coding-agents
   - reactive-systems

@@ -6,9 +6,7 @@ type: event
 tags:
   - openai
   - model
-  - voice
   - multimodal
-  - chatgpt
 sources:
   - raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md
 ---

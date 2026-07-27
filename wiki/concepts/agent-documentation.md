@@ -8,7 +8,7 @@ updated: 2026-07-02
 tags:
   - concept
   - coding-agents
-  - documentation
+  - developer-tooling
   - context-engineering
   - agents-md
 sources:

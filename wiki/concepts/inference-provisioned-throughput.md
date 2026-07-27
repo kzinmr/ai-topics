@@ -6,14 +6,12 @@ type: concept
 tags:
   - inference
   - infrastructure
-  - pricing
+  - economics
   - open-source
   - llm-inference
   - token-economics
-  - cost-optimization
-  - ai-infrastructure
+  - optimization
   - production-ml
-  - serverless
 sources:
   - raw/articles/2026-07-08_together-ai_provisioned-throughput.md
 ---

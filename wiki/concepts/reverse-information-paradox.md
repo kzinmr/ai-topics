@@ -5,12 +5,12 @@ updated: 2026-07-13
 type: concept
 tags:
   - concept
-  - ai-economics
+  - economics
   - ai-organization
   - ai-adoption
   - platform-economics
   - privacy
-  - enterprise-ai
+  - company
   - ai-governance
 aliases: [nadella-reverse-paradox, enterprise-trust-boundary, reverse-arrow-paradox]
 related: [[concepts/token-capital]], [[concepts/ai-economics]], [[entities/satya-nadella]], [[entities/palantir]]

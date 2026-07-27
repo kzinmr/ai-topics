@@ -5,9 +5,9 @@ updated: 2026-06-30
 type: concept
 tags:
   - concept
-  - meta
-  - research
-  - cognitive-science
+  - methodology
+  - lab
+  - psychology
   - healthcare
 sources:
   - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md

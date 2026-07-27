@@ -5,8 +5,8 @@ created: 2026-07-02
 updated: 2026-07-02
 tags:
   - langchain
-  - ai-researcher
-  - developer
+  - person
+  - developer-tooling
   - open-source
   - coding-agents
   - agent-documentation

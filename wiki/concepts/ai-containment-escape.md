@@ -4,9 +4,8 @@ type: concept
 created: 2026-07-24
 updated: 2026-07-24
 tags:
-  - ai-safety
-  - safety
   - agent-safety
+  - safety
   - existential-risk
 sources:
   - raw/articles/seangoedecke.com--powerful-ais-might-escape-by-releasing-open-weight-models--4ba0981c.md

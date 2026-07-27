@@ -5,8 +5,8 @@ created: 2026-07-17
 updated: 2026-07-17
 tags:
   - person
-  - cerebras
-  - knowledge-management
+  - hardware
+  - search
   - devrel
 aliases: ["@learnwdaniel", "daniel-kim", "daniel-kim-cerebras"]
 sources:

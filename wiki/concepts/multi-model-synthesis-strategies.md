@@ -11,7 +11,6 @@ tags:
   - optimization
   - harness-engineering
   - coding-agents
-  - cost-optimization
 sources:
   - raw/articles/2026-06-29_cognition-devin-fusion-multi-model-harness.md
   - raw/articles/2026-06-12_openrouter-fusion-api-multi-model-synthesis.md

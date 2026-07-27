@@ -3,7 +3,14 @@ title: "pxpipe — Vision-Based API Cost Reduction for Claude Code"
 created: 2026-07-05
 updated: 2026-07-05
 type: concept
-tags: [vision, multimodal, cost-optimization, image, ocr, open-source, ai-coding, tool-calling]
+tags:
+  - multimodal
+  - optimization
+  - image
+  - ocr
+  - open-source
+  - coding-agents
+  - tool
 sources: [raw/articles/2026-07-03_teamchong_pxpipe-code-to-image-cost-reduction.md]
 ---
 

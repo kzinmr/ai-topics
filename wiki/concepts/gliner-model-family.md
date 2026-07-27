@@ -3,7 +3,16 @@ title: GLiNER Model Family
 created: 2026-07-02
 updated: 2026-07-02
 type: concept
-tags: [model, encoder-model, small-language-model, named-entity-recognition, open-source, inference, content-moderation, pii-detection, information-retrieval]
+tags:
+  - model
+  - encoder-model
+  - small-language-model
+  - named-entity-recognition
+  - open-source
+  - inference
+  - content-moderation
+  - pii-detection
+  - search
 sources:
   - https://pioneer.ai/blog/gliner-modern-named-entity-recognition
   - https://pioneer.ai/blog/gliner2

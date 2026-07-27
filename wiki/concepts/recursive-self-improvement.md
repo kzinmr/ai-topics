@@ -12,10 +12,10 @@ tags:
   - context-engineering
   - autoresearch
   - coding-agents
-  - agent-architecture
+  - architecture
   - meta-harness
   - alignment
-  - ai-safety
+  - agent-safety
 sources:
   - raw/articles/2026-07-04_lilianweng-harness-engineering-self-improvement.md
   - https://lilianweng.github.io/posts/2026-07-04-harness/

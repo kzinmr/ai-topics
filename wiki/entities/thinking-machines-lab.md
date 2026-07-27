@@ -5,12 +5,12 @@ created: 2026-07-11
 updated: 2026-07-11
 tags:
   - company
-  - ai-research
+  - lab
   - model
   - fine-tuning
   - alignment
   - open-source
-  - ai-safety
+  - agent-safety
   - sovereign-ai
   - human-in-the-loop
 sources:

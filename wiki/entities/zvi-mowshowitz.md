@@ -16,7 +16,6 @@ tags:
   - agent-safety
   - rationality
   - prediction
-  - longtermism
   - existential-risk
 
 ---

@@ -8,7 +8,7 @@ tags:
   - business-model
   - openai
   - industry
-  - ai-criticism
+  - ai-critic
   - ai-skepticism
   - token-economics
   - optimization

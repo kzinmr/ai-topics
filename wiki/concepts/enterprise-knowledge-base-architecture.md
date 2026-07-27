@@ -4,18 +4,15 @@ type: concept
 created: 2026-07-17
 updated: 2026-07-17
 tags:
-  - knowledge-management
-  - enterprise-ai
+  - search
+  - company
   - rag
-  - retrieval
-  - vector-search
   - lexical-search
   - bm25
   - neural-reranking
-  - agentic-rag
   - mcp
-  - case-study
-  - embeddings
+  - methodology
+  - model
   - coding-agents
   - slack
   - code-intelligence

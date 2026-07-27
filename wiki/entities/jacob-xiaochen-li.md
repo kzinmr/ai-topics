@@ -5,7 +5,6 @@ created: 2026-06-17
 updated: 2026-07-05
 tags:
   - person
-  - ai-researcher
   - ai-agents
   - mit
   - context-engineering

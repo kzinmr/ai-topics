@@ -4,11 +4,10 @@ type: concept
 created: 2026-07-11
 updated: 2026-07-11
 tags:
-  - llm
+  - model
   - transformer-architecture
   - education
-  - model
-  - scaling
+  - optimization
 sources:
   - raw/articles/gilesthomas.com--2026-07-llm-parameter-counts--674e98c7.md
 ---

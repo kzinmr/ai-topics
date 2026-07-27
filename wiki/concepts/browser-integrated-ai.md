@@ -3,7 +3,13 @@ title: "Browser-Integrated AI"
 created: 2026-07-07
 updated: 2026-07-07
 type: concept
-tags: [google, gemini, chrome, browser, on-device, privacy, edge-ai]
+tags:
+  - google
+  - chrome
+  - browser
+  - on-device
+  - privacy
+  - edge-ai
 sources:
   - raw/articles/2026-05-16_oztalking_chrome-hidden-4gb-ai-model.md
 hn_objectID: "48800858"

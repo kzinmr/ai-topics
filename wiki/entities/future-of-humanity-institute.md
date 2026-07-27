@@ -7,7 +7,6 @@ tags:
   - lab
   - existential-risk
   - agent-safety
-  - longtermism
   - ai-governance
   - company
 sources:

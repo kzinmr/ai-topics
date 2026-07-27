@@ -4,13 +4,11 @@ created: 2026-07-19
 updated: 2026-07-19
 type: concept
 tags:
-  - ai-safety
   - agent-safety
   - anthropic
-  - agents
+  - ai-agents
   - security
-  - research
-  - red-teaming
+  - lab
   - alignment
 sources:
   - raw/articles/2026-07-19_anthropic-agentic-misalignment.md

@@ -4,15 +4,13 @@ type: concept
 created: 2026-07-11
 updated: 2026-07-11
 tags:
-  - ai-economics
+  - economics
   - infrastructure
   - hardware
-  - gpu
   - ai-hardware
   - data-center
   - ai-industry-economics
   - supply-chain
-  - economics
 sources:
   - raw/articles/wheresyoured.at--premium-the-haters-guide-to-the-memory-crisis--0b884d04.md
 ---

@@ -5,7 +5,7 @@ created: 2026-06-16
 updated: 2026-06-16
 tags:
   - openai
-  - ai-safety
+  - agent-safety
   - governance
   - controversy
   - nonprofit

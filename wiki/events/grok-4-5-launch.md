@@ -7,8 +7,7 @@ tags:
   - xai
   - model
   - coding-agents
-  - grok
-  - spacex
+  - company
 sources:
   - raw/newsletters/2026-07-09-ainews-spacexai-launches-grok-4-5-first-opus-class-model-post-cursor-acquisition.md
   - raw/newsletters/2026-07-09-grok-x-cursor.md

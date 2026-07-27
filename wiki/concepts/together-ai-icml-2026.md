@@ -4,9 +4,9 @@ created: 2026-07-01
 updated: 2026-07-01
 type: concept
 tags:
-  - research
+  - lab
   - inference
-  - agents
+  - ai-agents
   - event
   - announcement
   - optimization

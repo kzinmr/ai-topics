@@ -6,7 +6,7 @@ type: entity
 tags:
   - company
   - infrastructure
-  - distributed-systems
+  - architecture
   - ray
 sources:
   - raw/articles/anyscale.com--blog-building-highly-available-and-scalable-online-applicati--7faef8c2.md

@@ -8,12 +8,10 @@ tags:
   - claude-code
   - coding-agents
   - security
-  - agent-security
+  - agent-safety
   - enterprise-agents
-  - enterprise-ai
+  - company
   - supply-chain
-  - codex
-  - cursor
 sources:
   - raw/articles/2026-07-04_github_claude-code-session-cache-leakage.md
   - raw/articles/2026-06-25_hn-discussion_anthropic-alibaba-claude-extraction.md

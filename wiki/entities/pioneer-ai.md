@@ -3,7 +3,15 @@ title: Pioneer AI
 created: 2026-07-02
 updated: 2026-07-02
 type: entity
-tags: [product, platform, inference, fine-tuning, small-language-model, agent-platform, open-source, synthetic-data, continual-learning]
+tags:
+  - product
+  - platform
+  - inference
+  - fine-tuning
+  - small-language-model
+  - agent-platform
+  - open-source
+  - training
 sources:
   - https://pioneer.ai/blog/introducing-pioneer
   - https://pioneer.ai/blog/behind-pioneer

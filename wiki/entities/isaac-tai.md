@@ -5,10 +5,9 @@ created: 2026-07-17
 updated: 2026-07-17
 tags:
   - person
-  - cerebras
-  - ai-researcher
-  - ml-engineering
-  - knowledge-management
+  - hardware
+  - infrastructure
+  - search
 aliases: ["@hi_im_isaac_", "isaac-tai"]
 sources:
   - raw/articles/2026-07-16_cerebras_knowledge-base-architecture.md

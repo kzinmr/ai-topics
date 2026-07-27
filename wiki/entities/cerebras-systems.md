@@ -10,7 +10,7 @@ tags:
   - infrastructure
   - inference
   - mlops
-  - knowledge-management
+  - search
 sources: [raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md, raw/articles/2026-05-10_parallel-web-systems_cerebras-fact-checker.md, raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md, raw/articles/2026-07-16_cerebras_knowledge-base-architecture.md]
 ---
 

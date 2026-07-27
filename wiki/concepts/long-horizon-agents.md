@@ -8,8 +8,8 @@ tags:
   - enterprise-agents
   - proactive
   - agent-platform
-  - agent-architecture
-  - pricing
+  - architecture
+  - economics
   - business-model
 sources:
   - raw/articles/2026-07-16_sierra_horizon-long-horizon-agents.md

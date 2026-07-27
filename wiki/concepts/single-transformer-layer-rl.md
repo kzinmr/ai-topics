@@ -7,10 +7,8 @@ tags:
   - concept
   - arxiv
   - training
-  - post-training
   - reinforcement-learning
   - model
-  - llm
   - transformers
   - optimization
 sources:

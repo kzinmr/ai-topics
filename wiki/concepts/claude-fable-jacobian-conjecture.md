@@ -3,7 +3,14 @@ title: Claude Fable Jacobian Conjecture Breakthrough
 created: 2026-07-24
 updated: 2026-07-24
 type: concept
-tags: [model, claude-fable-5, claude, anthropic, mathematics, ai-in-science, reasoning, frontier-models, research]
+tags:
+  - model
+  - claude-fable-5
+  - anthropic
+  - education
+  - ai-in-science
+  - reasoning
+  - lab
 sources:
   - raw/articles/2026-07-20_claude-fable-jacobian-conjecture.md
 ---

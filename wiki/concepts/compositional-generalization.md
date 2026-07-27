@@ -5,11 +5,10 @@ updated: 2026-07-21
 type: concept
 tags:
   - compositional-generalization
-  - agent-harness
+  - harness-engineering
   - rlm
   - reinforcement-learning
-  - scaling
-  - harness-engineering
+  - optimization
   - context-management
 sources:
   - https://alexzhang13.github.io/blog/2026/harness/

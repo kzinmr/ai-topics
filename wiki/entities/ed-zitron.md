@@ -14,9 +14,8 @@ tags:
   - prediction
   - controversy
   - techno-pessimism
-  - ai-economics
   - ai-industry-economics
-  - ai-criticism
+  - ai-critic
   - journalist
   - analyst
   - ai-skeptic

@@ -6,7 +6,6 @@ updated: 2026-06-16
 tags:
   - openai
   - economics
-  - ai-economics
   - controversy
   - event
 sources:

@@ -10,7 +10,6 @@ aliases:
 tags:
   - person
   - coding-agents
-  - entrepreneur
   - developer-tooling
   - ai-native
 related:

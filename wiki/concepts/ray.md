@@ -4,9 +4,9 @@ created: 2026-07-19
 updated: 2026-07-19
 type: concept
 tags:
-  - distributed-systems
+  - architecture
   - infrastructure
-  - python
+  - developer-tooling
 sources:
   - raw/articles/anyscale.com--blog-building-highly-available-and-scalable-online-applicati--7faef8c2.md
   - raw/articles/anyscale.com--blog-online-resource-allocation-with-ray-at-ant-group--487de159.md

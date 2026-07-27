@@ -11,7 +11,6 @@ tags:
   - existential-risk
   - ai-governance
   - philosophy
-  - longtermism
 sources:
   - raw/articles/reframing-superintelligence-fhi-2019.md
 ---

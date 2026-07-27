@@ -8,7 +8,6 @@ tags:
   - lingbot
   - open-source
   - embodied-ai
-  - simulation
   - robotics
 sources:
   - raw/articles/2026-07-10_lingbot-world-infinity.md

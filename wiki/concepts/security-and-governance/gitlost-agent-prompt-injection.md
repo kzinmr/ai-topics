@@ -4,13 +4,11 @@ created: 2026-07-08
 updated: 2026-07-08
 type: concept
 tags:
-  - agent-security
-  - prompt-injection
+  - agent-safety
   - coding-agents
   - security
   - vulnerability
-  - incident
-  - github
+  - developer-tooling
 sources:
   - https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/
   - https://hn.algolia.com/api/v1/items/48827858

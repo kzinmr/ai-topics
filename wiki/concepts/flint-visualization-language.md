@@ -3,7 +3,14 @@ title: Flint Visualization Language
 created: 2026-07-08
 updated: 2026-07-09
 type: concept
-tags: [data-visualization, mcp, microsoft, ai-agents, agent-tooling, tool-use, hn-popular]
+tags:
+  - developer-tooling
+  - mcp
+  - microsoft
+  - ai-agents
+  - agent-tooling
+  - tool
+  - hn-popular
 sources:
   - raw/articles/2026-07-08_microsoft_flint-visualization-language.md
 ---

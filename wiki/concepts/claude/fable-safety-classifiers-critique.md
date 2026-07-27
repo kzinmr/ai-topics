@@ -5,11 +5,10 @@ updated: 2026-07-10
 type: concept
 tags:
   - claude-fable-5
-  - claude
-  - ai-safety
+  - anthropic
+  - agent-safety
   - model
   - controversy
-  - anthropic
   - alignment
 sources:
   - raw/articles/2026-07-10_fable-safety-classifiers-critique.md

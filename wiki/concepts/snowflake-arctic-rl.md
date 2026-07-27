@@ -9,7 +9,6 @@ tags:
   - open-source
   - training
   - snowflake
-  - grpo
 sources:
   - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
 ---

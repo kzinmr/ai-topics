@@ -3,7 +3,20 @@ title: Rowboat
 created: 2026-07-10
 updated: 2026-07-10
 type: entity
-tags: [open-source, tool, local-first, claude-code, product, agent-platform, ai-agents, coding-agents, memory-systems, knowledge-graph, typescript, hn-popular, multi-agent, mcp]
+tags:
+  - open-source
+  - tool
+  - developer-tooling
+  - claude-code
+  - product
+  - agent-platform
+  - ai-agents
+  - coding-agents
+  - memory-systems
+  - rag
+  - hn-popular
+  - multi-agent
+  - mcp
 sources: [raw/articles/2026-07-10_rowboat-claude-desktop-alternative.md]
 ---
 

@@ -10,7 +10,7 @@ aliases:
 tags:
   - person
   - superintelligence
-  - ai-safety
+  - agent-safety
   - alignment
   - existential-risk
 related:

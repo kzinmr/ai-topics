@@ -5,9 +5,9 @@ created: 2026-07-17
 updated: 2026-07-17
 tags:
   - person
-  - cerebras
-  - ml-engineering
-  - knowledge-management
+  - hardware
+  - infrastructure
+  - search
   - google
 aliases: ["@gaozenghao", "Zenghao Gao", "mike-gao"]
 sources:

@@ -5,11 +5,10 @@ created: 2026-07-24
 updated: 2026-07-24
 tags:
   - agent-runtime
-  - agent-orchestration
-  - agent-architecture
   - orchestration
-  - agent-framework
-  - agent-engineering
+  - architecture
+  - ai-agents
+  - agentic-engineering
   - deterministic
 aliases:
   - "Onyx VM"

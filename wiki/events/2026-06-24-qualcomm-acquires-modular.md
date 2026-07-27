@@ -5,13 +5,12 @@ updated: 2026-06-27
 type: event
 tags:
   - event
-  - acquisition
-  - ai-infrastructure
   - company
+  - infrastructure
   - platform
   - hn-popular
   - nvidia
-  - cuda
+  - inference
   - hardware
 sources:
   - raw/articles/2026-06-24_hn-discussion_qualcomm-acquires-modular.md

@@ -6,10 +6,9 @@ type: concept
 tags:
   - coding-agents
   - sqlite
-  - incident
+  - agent-safety
   - infrastructure
   - optimization
-  - agent-safety
   - vulnerability
   - feedback-loop
   - bug

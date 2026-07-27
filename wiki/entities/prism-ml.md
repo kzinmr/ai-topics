@@ -3,7 +3,13 @@ title: Prism ML
 created: 2026-07-15
 updated: 2026-07-15
 type: entity
-tags: [company, prism-ml, bonsai, open-source, lab, ai-research, caltech]
+tags:
+  - company
+  - prism-ml
+  - bonsai
+  - open-source
+  - lab
+  - caltech
 sources:
   - raw/articles/2026-07-15_bonsai-27b-prism-ml.md
 ---

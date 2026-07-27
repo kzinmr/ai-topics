@@ -3,7 +3,18 @@ title: "Claude Code vs OpenCode: Token Overhead Comparison"
 created: 2026-07-14
 updated: 2026-07-14
 type: comparison
-tags: [claude-code, opencode, coding-agents, token-efficiency, tool-use, system-prompt, prompt-caching, subagents, token-economics, harness-engineering, context-management]
+tags:
+  - claude-code
+  - opencode
+  - coding-agents
+  - optimization
+  - tool
+  - prompting
+  - prompt-caching
+  - ai-agents
+  - token-economics
+  - harness-engineering
+  - context-management
 sources: [raw/articles/2026-07-12_systima_claude-code-vs-opencode-token-overhead.md]
 hn_discussion: https://hn.algolia.com/api/v1/items/48883275
 ---

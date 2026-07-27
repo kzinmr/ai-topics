@@ -8,7 +8,7 @@ created: 2026-04-25
 updated: 2026-07-07
 tags:
   - ai-agents
-  - agent-team-swarm
+  - multi-agent
   - openai
   - coding-agents
   - orchestration

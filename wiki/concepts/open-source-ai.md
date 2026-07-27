@@ -6,7 +6,7 @@ type: concept
 tags:
   - open-source
   - model
-  - digital-sovereignty
+  - sovereign-ai
   - ai-governance
   - ethics
   - education

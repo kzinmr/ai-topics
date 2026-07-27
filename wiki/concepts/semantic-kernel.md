@@ -3,7 +3,14 @@ title: "Microsoft Semantic Kernel"
 created: 2026-07-19
 updated: 2026-07-19
 type: concept
-tags: [semantic-kernel, agent-framework, microsoft, open-source, dotnet, python, product]
+tags:
+  - semantic-kernel
+  - ai-agents
+  - microsoft
+  - open-source
+  - dotnet
+  - developer-tooling
+  - product
 sources:
   - "raw/articles/2026-07-19_microsoft-semantic-kernel.md"
   - "raw/articles/2026-07-19_microsoft-semantic-kernel-readme.md"

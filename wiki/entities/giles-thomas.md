@@ -4,7 +4,15 @@ type: entity
 aliases: [gilesthomas]
 created: 2026-07-01
 updated: 2026-07-09
-tags: [person, blogger, developer, ml-education, tutorial, jax, python, llm-engineering, training]
+tags:
+  - person
+  - blogger
+  - developer-tooling
+  - ml-education
+  - tutorial
+  - jax
+  - model
+  - training
 sources:
   - raw/articles/gilesthomas.com--2026-06-llm-from-scratch-34a-building-a-jax-training-loop-fo--059d9f9a.md
   - raw/articles/gilesthomas.com--2026-07-llm-from-scratch-34b-building-and-training-gpt-2-sma--64a53b57.md

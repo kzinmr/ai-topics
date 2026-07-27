@@ -4,7 +4,7 @@ created: 2026-07-01
 updated: 2026-07-01
 type: concept
 tags:
-  - claude
+  - anthropic
   - product
   - ai-in-science
   - biology

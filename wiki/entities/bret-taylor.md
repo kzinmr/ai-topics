@@ -5,15 +5,13 @@ updated: 2026-07-17
 type: entity
 tags:
   - person
-  - founder
   - ceo
-  - entrepreneur
   - google
   - ai-agents
   - enterprise-agents
   - agent-platform
-  - pricing
-  - service-as-software
+  - economics
+  - ai-adoption
 sources:
   - raw/articles/2026-07-16_sierra_horizon-long-horizon-agents.md
   - https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html

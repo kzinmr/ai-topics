@@ -5,10 +5,8 @@ created: 2026-07-25
 updated: 2026-07-25
 tags:
   - anthropic
-  - claude
   - model
   - announcement
-  - frontier-models
 sources:
   - raw/articles/2026-07-24_simonwillison_introducing-claude-opus-5.md
 ---

@@ -3,7 +3,11 @@ title: "Cursor Agent Swarm Architecture"
 type: concept
 created: 2026-07-21
 updated: 2026-07-21
-tags: [multi-agent, coding-agents, cursor, agent-swarms, cost-optimization]
+tags:
+  - multi-agent
+  - coding-agents
+  - agent-swarms
+  - optimization
 aliases: ["cursor-swarm", "agent-swarm-model-economics"]
 sources:
   - raw/articles/cursor-agent-swarm-model-economics-2026-07-20.md

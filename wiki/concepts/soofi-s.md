@@ -3,7 +3,11 @@ title: "Soofi S — German Open 30B Multilingual Model"
 created: 2026-07-17
 updated: 2026-07-17
 type: concept
-tags: [model, open-source, multilingual, europe, benchmark, llm]
+tags:
+  - model
+  - open-source
+  - europe
+  - benchmark
 sources:
   - raw/articles/2026-07-13_soofi-s-german-30b-model.md
 ---

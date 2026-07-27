@@ -3,7 +3,11 @@ title: Claude Memory Heist
 created: 2026-07-15
 updated: 2026-07-15
 type: concept
-tags: [prompt-injection, ai-safety, vulnerability, anthropic, agent-safety, memory-systems]
+tags:
+  - agent-safety
+  - vulnerability
+  - anthropic
+  - memory-systems
 sources:
   - raw/articles/2026-07-15_claude-memory-heist.md
 ---

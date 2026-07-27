@@ -12,7 +12,6 @@ tags:
   - eu-ai-act
   - hn-popular
   - training
-  - digital-sovereignty
 sources:
   - raw/articles/2026-06-21_apertus-open-foundation-model-sovereign-ai.md
 ---

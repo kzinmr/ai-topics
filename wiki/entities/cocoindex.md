@@ -6,11 +6,10 @@ updated: 2026-07-17
 tags:
   - open-source
   - tool
-  - embeddings
-  - vector-search
+  - model
+  - search
   - code-intelligence
-  - developer-tools
-  - documentation
+  - developer-tooling
   - postgres
 aliases: [cocoindex_io]
 sources:

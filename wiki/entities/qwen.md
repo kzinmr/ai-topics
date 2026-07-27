@@ -3,7 +3,13 @@ title: Qwen
 created: 2026-07-15
 updated: 2026-07-15
 type: entity
-tags: [model, company, qwen, alibaba, open-source, llm, multimodal]
+tags:
+  - model
+  - company
+  - qwen
+  - alibaba
+  - open-source
+  - multimodal
 sources:
   - raw/articles/2026-07-15_bonsai-27b-prism-ml.md
 ---

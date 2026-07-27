@@ -9,8 +9,6 @@ tags:
   - reasoning-model
   - training
   - optimization
-  - mixture-of-experts
-  - grpo
 related:
   - [[entities/microsoft]]
   - [[concepts/mai-thinking-1-tech-report]]

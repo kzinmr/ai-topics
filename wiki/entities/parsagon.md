@@ -8,7 +8,7 @@ tags:
   - product
   - tool
   - web-scraping
-  - browser-automation
+  - browser-agent
   - open-source
 aliases:
   - "Parsagon, Inc."

@@ -5,16 +5,16 @@ updated: 2026-07-20
 type: concept
 tags:
   - open-source
-  - ai-economics
+  - economics
   - token-economics
   - inference
   - sovereign-ai
-  - frontier-models
+  - model
   - ai-adoption
-  - agent-harness
+  - harness-engineering
   - china
   - geopolitics
-  - cost-optimization
+  - optimization
   - ecosystem
 sources:
   - raw/articles/2026-07-17_state-of-open-source-ai-2026-report.md

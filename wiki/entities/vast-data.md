@@ -3,7 +3,12 @@ title: "VAST Data"
 type: entity
 created: 2026-07-20
 updated: 2026-07-20
-tags: [company, ai-infrastructure, storage, data-layer, active]
+tags:
+  - company
+  - infrastructure
+  - storage
+  - data-layer
+  - active
 sources:
   - raw/newsletters/2026-07-19-you-re-wasting-a-lot-of-money-exclusive-interview-with-vast-data-s-sven-breuner-.md
 ---

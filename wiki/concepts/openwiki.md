@@ -5,17 +5,15 @@ created: 2026-07-02
 updated: 2026-07-17
 tags:
   - coding-agents
-  - documentation
+  - developer-tooling
   - agent-documentation
   - langchain
   - open-source
   - context-engineering
   - agents-md
   - wiki
-  - cli
   - deep-agents
-  - knowledge-management
-  - okf
+  - search
 related:
   - "[[concepts/okf-open-knowledge-format]]"
   - "[[concepts/wiki-memory]]"

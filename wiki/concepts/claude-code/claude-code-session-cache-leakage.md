@@ -9,7 +9,7 @@ tags:
   - security
   - vulnerability
   - privacy
-  - agent-security
+  - agent-safety
   - enterprise-agents
   - prompt-caching
 related: [claude-code-leak, anthropic, ai-security, enterprise-agents, cve-2026-55607-claude-code-sandbox-escape]

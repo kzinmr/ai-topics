@@ -3,7 +3,13 @@ title: "Satya Nadella"
 created: 2026-06-15
 updated: 2026-07-13
 type: entity
-tags: [person, ceo, microsoft, ai-adoption, ai-organization, ai-economics]
+tags:
+  - person
+  - ceo
+  - microsoft
+  - ai-adoption
+  - ai-organization
+  - economics
 aliases: [satya-nadella-microsoft-ceo]
 sources:
   - raw/articles/2026-06-14_satya-nadella_frontier-ecosystem-token-capital.md

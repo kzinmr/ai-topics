@@ -3,7 +3,15 @@ title: Fastino Labs
 created: 2026-07-02
 updated: 2026-07-02
 type: entity
-tags: [company, ai-research, open-source, small-language-model, encoder-model, inference, fine-tuning, named-entity-recognition]
+tags:
+  - company
+  - lab
+  - open-source
+  - small-language-model
+  - encoder-model
+  - inference
+  - fine-tuning
+  - named-entity-recognition
 sources:
   - https://fastino.ai
   - https://pioneer.ai/blog/introducing-pioneer

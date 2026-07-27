@@ -8,7 +8,7 @@ tags:
   - business-model
   - openai
   - industry
-  - ai-criticism
+  - ai-critic
 sources:
   - raw/articles/2026-06-17_openai-leaked-financials-ai-economics.md
   - https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/

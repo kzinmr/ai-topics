@@ -12,7 +12,7 @@ tags:
   - agent-training
   - infrastructure
   - agentic-rl
-  - agent-evaluation
+  - evaluation
 sources:
   - raw/articles/2026-05-12_primeintellect_renderers-token-level-templating.md
   - raw/articles/2026-07-12_primeintellect_verifiers-v1.md

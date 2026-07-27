@@ -7,7 +7,7 @@ date: 2026-06-08
 tags:
   - openai
   - agi
-  - ai-safety
+  - agent-safety
   - ai-governance
   - alignment
   - strategy

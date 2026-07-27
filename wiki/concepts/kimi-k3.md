@@ -2,21 +2,20 @@
 title: "Moonshot Kimi K3"
 type: concept
 created: 2026-07-17
-updated: 2026-07-26
+updated: 2026-07-27
 tags:
   - model
   - china
   - open-source
   - reasoning
-  - moe
   - moonshot
   - kimi
-  - frontier-models
 sources:
   - "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md"
   - "raw/newsletters/2026-07-17-ainews-kimi-k3-2-8t-a50b-the-largest-open-model-ever-released-opus-4-8-class-at-.md"
   - "raw/articles/2026-07-24_together-ai-kimi-k3-vs-fable-deepswe.md"
   - "https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding"
+  - "raw/articles/together.ai--blog-kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routi--a97a06f4.md"
 ---
 
 # Moonshot Kimi K3

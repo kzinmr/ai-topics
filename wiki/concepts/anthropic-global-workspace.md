@@ -3,7 +3,14 @@ title: "Anthropic Global Workspace in Language Models"
 created: 2026-07-07
 updated: 2026-07-07
 type: concept
-tags: [anthropic, claude, interpretability, mechanistic-interpretability, transformer, ai-safety, cognitive-science, consciousness]
+tags:
+  - anthropic
+  - interpretability
+  - mechanistic-interpretability
+  - model
+  - agent-safety
+  - psychology
+  - consciousness
 sources:
   - raw/articles/2026-07-07_anthropic_global-workspace-language-models.md
 hn_objectID: "48808002"

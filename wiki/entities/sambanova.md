@@ -11,7 +11,6 @@ tags:
   - company
   - asic
   - data-center
-  - startup
   - valuation
 sources:
   - raw/articles/2026-07-11_sambanova-about.md

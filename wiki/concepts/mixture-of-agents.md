@@ -3,7 +3,14 @@ title: "Mixture of Agents (MoA)"
 created: 2026-06-29
 updated: 2026-06-29
 type: concept
-tags: [mixture-of-agents, agents, multi-agent, agent-architecture, llm, model, ensemble, reasoning, chain-of-thought]
+tags:
+  - mixture-of-agents
+  - ai-agents
+  - multi-agent
+  - architecture
+  - model
+  - ensemble
+  - reasoning
 sources:
   - raw/papers/2024-09-04_2409.07487_mixture-of-agents.md
   - raw/papers/2026-05-27_2605.29116_beyond-consensus-moa.md

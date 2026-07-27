@@ -5,10 +5,10 @@ created: 2026-07-25
 updated: 2026-07-25
 tags:
   - ai-agents
-  - agent-engineering
+  - agentic-engineering
   - production-ml
   - evaluation
-  - case-study
+  - methodology
   - healthcare
 related:
   - [[entities/hugo-bowne-anderson]]

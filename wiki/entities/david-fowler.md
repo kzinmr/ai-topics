@@ -14,7 +14,6 @@ tags:
   - developer-tooling
   - open-source
   - dotnet
-  - ai-coding
 related:
   - concepts/ai-coding
   - concepts/developer-experience

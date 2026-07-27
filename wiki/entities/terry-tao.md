@@ -5,14 +5,12 @@ updated: 2026-07-13
 type: entity
 tags:
   - person
-  - mathematics
+  - education
   - formal-verification
   - open-source
-  - ai-researcher
   - ai-in-science
   - ai-assistance
   - labor-economics
-  - education
   - hn-popular
 sources:
   - https://www.scientificamerican.com/article/ai-will-become-mathematicians-co-pilot/

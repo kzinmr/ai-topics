@@ -3,7 +3,11 @@ title: HP Inc.
 created: 2026-06-30
 updated: 2026-06-30
 type: entity
-tags: [company, hardware, enterprise-ai, platform, hp]
+tags:
+  - company
+  - hardware
+  - platform
+  - hp
 sources: [raw/articles/2026-06-28_openai_hp-frontier-partnership.md]
 ---
 

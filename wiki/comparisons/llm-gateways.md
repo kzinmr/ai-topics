@@ -3,7 +3,15 @@ title: "LLM Gateways Comparison"
 created: 2026-07-08
 updated: 2026-07-13
 type: comparison
-tags: [model-routing, llm, comparison, tool, enterprise-ai, observability, self-hosted, governance]
+tags:
+  - model-routing
+  - model
+  - comparison
+  - tool
+  - company
+  - infrastructure
+  - self-hosted
+  - governance
 sources: [raw/articles/merge.dev--blog-eden-ai-alternatives--4de9d50a.md, raw/articles/merge.dev--blog-cost-of-gateway--f6410e0d.md]
 ---
 

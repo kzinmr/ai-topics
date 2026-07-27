@@ -6,7 +6,6 @@ updated: 2026-07-06
 tags:
   - company
   - infrastructure
-  - cloud
   - model
 aliases: ["Microsoft Corporation", "MSFT", "Microsoft AI"]
 sources:

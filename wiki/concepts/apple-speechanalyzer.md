@@ -3,7 +3,13 @@ title: "Apple SpeechAnalyzer"
 type: concept
 created: 2026-07-14
 updated: 2026-07-14
-tags: [speech, benchmark, on-device, apple, model, voice-ai]
+tags:
+  - multimodal
+  - benchmark
+  - on-device
+  - apple
+  - model
+  - voice-ai
 sources:
   - raw/articles/2026-07-13_getinscribe_apple-speech-api-benchmark.md
 ---

@@ -6,8 +6,8 @@ type: entity
 tags:
   - entity
   - person
-  - vercel
-  - cursor
+  - company
+  - coding-agents
   - developer-tooling
   - ai-educator
 aliases:

@@ -3,7 +3,15 @@ title: "Mesh LLM"
 created: 2026-07-14
 updated: 2026-07-14
 type: concept
-tags: [distributed-systems, inference, p2p, edge-computing, model, llm-inference, distributed-training, local-first]
+tags:
+  - architecture
+  - inference
+  - p2p
+  - infrastructure
+  - model
+  - llm-inference
+  - training
+  - developer-tooling
 sources:
   - raw/articles/2026-07-11_iroh_mesh-llm-distributed-inference.md
   - https://www.iroh.computer/blog/mesh-llm

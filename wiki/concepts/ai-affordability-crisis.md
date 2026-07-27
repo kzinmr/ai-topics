@@ -20,7 +20,7 @@ tags:
   - controversy
   - prediction
   - valuation
-  - ai-criticism
+  - ai-critic
   - journalist
 sources:
   - raw/articles/2026-06-24_dshr_ai-affordability-crisis.md

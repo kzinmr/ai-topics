@@ -5,11 +5,10 @@ updated: 2026-07-09
 type: concept
 tags:
   - realtime
-  - voice
+  - multimodal
   - voice-ai
   - openai
-  - gpt
-  - multimodal
+  - model
   - translation
   - hn-popular
 sources:

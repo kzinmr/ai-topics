@@ -7,7 +7,7 @@ tags:
   - superintelligence
   - agi
   - architecture
-  - ai-safety
+  - agent-safety
   - ai-governance
   - intelligence-explosion
   - alignment

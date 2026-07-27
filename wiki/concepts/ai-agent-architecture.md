@@ -7,9 +7,9 @@ created: 2026-04-25
 updated: 2026-07-18
 tags:
   - ai-agents
-  - agent-architecture
-  - enterprise-ai
-  - agent-evaluation
+  - architecture
+  - company
+  - evaluation
 sources:
   - raw/articles/2026-07-17-hugobowne-enterprise-ai-agent-healthcare.md
 ---

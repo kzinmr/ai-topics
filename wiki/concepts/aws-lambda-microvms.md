@@ -5,12 +5,11 @@ created: 2026-06-29
 updated: 2026-06-29
 tags:
   - aws
-  - serverless
+  - infrastructure
   - microvm
   - firecracker
   - sandbox
   - ai-agents
-  - infrastructure
   - isolation
   - multi-tenancy
   - virtualization

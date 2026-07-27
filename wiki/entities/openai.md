@@ -13,11 +13,8 @@ tags:
   - hardware
   - inference
   - infrastructure
-  - enterprise-ai
-  - chatgpt
-  - codex
-  - llm
-  - case-study
+  - coding-agents
+  - methodology
 aliases: ["OpenAI Inc."]
 sources:
   - raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md

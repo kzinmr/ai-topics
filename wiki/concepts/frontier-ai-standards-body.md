@@ -8,7 +8,7 @@ tags:
   - policy
   - governance
   - ai-governance
-  - ai-safety
+  - agent-safety
   - regulation
   - agi
 aliases:

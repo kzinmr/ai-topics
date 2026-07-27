@@ -9,8 +9,7 @@ aliases:
   - "Grant Sanderson (3Blue1Brown)"
 tags:
   - person
-  - educator
-  - mathematics
+  - education
   - youtube
   - ai-in-science
   - open-source

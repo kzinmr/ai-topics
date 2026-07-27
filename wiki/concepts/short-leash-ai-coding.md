@@ -3,7 +3,10 @@ title: "Short Leash AI Coding"
 created: 2026-07-05
 updated: 2026-07-05
 type: concept
-tags: [ai-coding, coding-agents, human-in-the-loop, code-quality, vibe-coding, code-review]
+tags:
+  - coding-agents
+  - human-in-the-loop
+  - code-quality
 sources: [raw/articles/2026-07-02_okturtles_short-leash-ai-coding.md]
 ---
 

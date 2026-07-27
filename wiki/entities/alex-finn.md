@@ -6,7 +6,7 @@ updated: 2026-07-14
 tags:
   - person
   - local-llm
-  - developer
+  - developer-tooling
   - indie-maker
   - coding-agents
   - ai-agents

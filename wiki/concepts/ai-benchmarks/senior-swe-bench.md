@@ -6,7 +6,6 @@ updated: 2026-07-05
 tags:
   - benchmark
   - coding-agents
-  - ai-coding
   - code-quality
   - evaluation
   - anthropic

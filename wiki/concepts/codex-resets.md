@@ -4,10 +4,10 @@ created: 2026-07-19
 updated: 2026-07-19
 type: concept
 tags:
-  - codex
+  - coding-agents
   - openai
   - product
-  - pricing
+  - economics
   - token-economics
 sources:
   - raw/articles/2026-07-19_codex-resets.md

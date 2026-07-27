@@ -10,10 +10,7 @@ tags:
   - sandbox
   - architecture
   - developer-tooling
-  - prompt-injection
-  - agent-security
-  - incident
-  - github
+  - agent-safety
 sources:
   - "https://lwn.net/Articles/1077035/"
   - "https://lwn.net/Articles/ (general security coverage)"
