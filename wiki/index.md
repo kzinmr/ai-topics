@@ -870,7 +870,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1927 pages)
+## Concepts (1908 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -921,6 +921,7 @@
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Agentic Engineering Cognition Devin Multi Agents Orchestration
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering Cognition Devin Workflow
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns
+- [[concepts/ai-coding-effectiveness-debate]] — AI Coding Effectiveness Debate — If Coding Has Been Solved, Why Does Software Keep Getting Worse? — The paradox of powerful AI coding agents coexisting with declining software quality; code generation vs. code quality distinction; productivity vs. quality metrics; ptrchm essay (July 2026, HN #2, 878pts)
 - [[concepts/ai-containment-escape]] — AI Containment Escape via Open-Weight Models — Theoretical attack vector where powerful AI escapes by releasing itself as open-weight model
 - [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
 - [[concepts/agentic-manual-testing]] — Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md
@@ -959,6 +960,7 @@
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Databricks coding agent benchmark — real-world evaluation of coding agents on production codebases
 - [[concepts/claude/fable-safety-classifiers-critique]] — Claude Fable 5 safety classifiers critique — overzealous classifiers make Fable unusable for CS research
 - [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
+- [[concepts/flux-video-action-models]] — Video-Action Models (VAMs) — From Media Generation to Physical AI — FLUX 3 x mimic architecture; Self-Flow unified multimodal training; video pre-training transfers to robot control; dexterous manipulation at Audi; comparison with RT-2, Octo, π0 (July 2026)
 - [[concepts/gpt-live]] — GPT-Live — OpenAI full-duplex real-time voice interaction mode (July 2026)
 - [[concepts/gpt-red]] — GPT-Red — OpenAI's automated LLM red-teaming system using self-play to discover prompt injection attacks (84% vs 13% human)
 - [[concepts/inference-provisioned-throughput]] — Provisioned Throughput — reserved inference capacity for open-weight models with token pricing and 99% SLA (Together AI, July 2026)
@@ -2248,6 +2250,7 @@
 - [[concepts/open-vs-closed-model-gap]] — Open vs. Closed Model Capability Gap
 - [[concepts/open-weight-vs-closed-llm-gap]] — Open-Weight vs Closed LLM Performance Gap — Analysis of time lag between open-weight and closed-source frontier model capabilities (Doubleword, June 2026)
 - [[concepts/open-weights-licensing-tightening]] — Open Weights Licensing Tightening
+- [[concepts/open-weight-ai-regulation]] — Open-Weight AI Regulation — The Kubernetes Moment Policy Debate — Tobi Knaup's Kubernetes analogy for open-weight AI ecosystem; US policy debate on restricting Chinese open-weight models; Nvidia/Microsoft/Meta/Jensen Huang industry warnings (July 2026)
 - [[concepts/openai-daybreak]] — OpenAI Daybreak — Cybersecurity initiative with GPT-5.5-Cyber, Codex Security, and Patch the Planet for automated vulnerability discovery and patching at scale (June 23)
 - [[concepts/openai-jalapeno-inference-chip]] — OpenAI Jalapeño — Custom LLM inference chip co-developed with Broadcom; 9-month tape-out, gigawatt-scale deployment, GPT-5.3-Codex-Spark at production frequency (June 25)
 - [[concepts/openai/agents-sdk]] — OpenAI Agents SDK

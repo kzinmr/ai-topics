@@ -1,3 +1,24 @@
+## [2026-07-27] Active crawl — 3 new concept pages created
+
+**Discovery:** HN Algolia (15 trending stories, top: Claude Opus 5 1771pts, coding debate 878pts), X/Twitter (10 topics: RAO recursive agents, multimodal training bug, Kimi K3, Jensen Huang open letter), wiki gap analysis (10 gaps identified). Cross-referenced against existing wiki coverage — selected 4 topics with genuine gaps.
+
+**New concept pages:**
+- CREATED [[concepts/ai-coding-effectiveness-debate]] — AI Coding Effectiveness Debate (878 HN pts): "If coding has been solved, why does software keep getting worse?" — paradox of powerful AI coding agents and declining software quality; code generation vs. code quality distinction; productivity vs. quality metrics; ptrchm essay (July 2026). Tags: coding-agents, code-quality, ai-skepticism, developer-tooling
+- CREATED [[concepts/open-weight-ai-regulation]] — Open-Weight AI Regulation (652 + 402 HN pts): Tobi Knaup's Kubernetes analogy for open-weight AI ecosystem; US policy debate on restricting Chinese open-weight models; Nvidia/Microsoft/Meta industry warning; Jensen Huang open letter. Tags: open-weight, regulation, policy, model, ecosystem, open-source
+- CREATED [[concepts/flux-video-action-models]] — Video-Action Models (318 HN pts): FLUX 3 x mimic architecture; Self-Flow unified multimodal training; video pre-training transfers to robot control; dexterous manipulation at Audi; comparison with RT-2, Octo, π0. Tags: multimodal, robotics, video-generation, world-models, model, physical-ai, embodied-ai, foundation-models
+
+**Raw articles saved (4):**
+- [[raw/articles/2026-07-24_ptrchm-ai-coding-solved-debate]] — ptrchm "Nothing Works and Everyone Is Euphoric"
+- [[raw/articles/2026-07-25_tobiknaup-open-weight-kubernetes-moment]] — Tobi Knaup on open-weight AI regulation
+- [[raw/articles/2026-07-23_bfl-flux-3-mimic-video-action-models]] — Black Forest Labs FLUX 3 x mimic
+- [[raw/articles/2026-07-24_guardian-openai-rogue-hacker-agent]] — Guardian: skeptical take on OpenAI rogue agent story (saved for future enrichment of ai-agent-safety-incidents)
+
+**Already covered (skipped):** Claude Opus 5 (full page exists), Kimi K3 (enriched by blog-triage today), recursive agents (3 pages exist), context engineering (3 pages exist), edge/microcontroller LLM (page exists), agent safety incidents (4 pages exist)
+
+**Post-subagent fixes:** Removed subagent log contamination (open-weight subagent defied instructions); fixed `concept` tag leakage in ai-coding-effectiveness-debate (type, not a SCHEMA tag); fixed double-.md wikilink in flux-video-action-models
+
+**Sources:** HN Algolia API, xurl X/Twitter search, blogwatcher SQLite DB
+
 ## [2026-07-27] newsletter-wiki-ingest — OpenAI Presence & Health in ChatGPT
 - CREATED events/openai-presence-launch-july-2026.md — OpenAI Presence enterprise voice/chat agents deployed at BBVA and SoftBank (Jul 2026)
 - CREATED events/openai-health-in-chatgpt-july-2026.md — Health in ChatGPT: Apple Health & medical record integration (Jul 2026)
