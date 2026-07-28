@@ -2,15 +2,18 @@
 
 | 2026-07-28 | x-article-ingest | Created: concepts/graph-engineering.md (Graph Engineering — coordination layer across multiple agent loops; nodes/edges/state abstraction; five-layer stack; four hard problems; when to use vs stay in loop). Created: raw/articles/2026-07-25_akshay-pachaar_graph-engineering-clearly-explained.md (X Article, 1,529 bookmarks, 288K impressions). Updated: concepts/loop-engineering.md (+graph-engineering cross-reference, +source). Updated: index.md, log.md. Source: https://x.com/akshay_pachaar/status/2081089131808243999 |
 
+---
 ## [2026-07-28] raw-backlog-ingest — 2 entity page enrichments from podcast transcript
 
 | 2026-07-28 | raw-backlog-ingest | Enriched: entities/eiso-kant.md (+Persistence Over Raw Intelligence thesis, Knowledge Work Optimal Size argument, Encouraging Competitors philosophy, Optimizer bug anecdote, Earning the Right to Publish). Enriched: entities/poolside.md (+Blender streaming data architecture, Immutable data layer, Zero call events metric, FP8/H200 training infra details, YOLO-to-Rigor transition story). Source: raw/articles/2026-07-24_poolside-latent-space.md (Latent Space podcast transcript, 101KB). |
 
+---
 ## [2026-07-28] active-crawl — 4 new pages from trending topics
 
 | 2026-07-28 | active-crawl | Created: entities/hetzner-ai.md (Hetzner LLM Inference — German cloud provider entering LLM inference market, from HN 155pts). Created: concepts/nvfp4-4bit-floating-point.md (NVFP4 — NVIDIA Blackwell native 4-bit floating point, 2-3x throughput vs FP8, from X/Twitter @Mayhem4Markets). Created: concepts/llm-confidence-calibration.md (LLM Confidence and Calibration — unreliability of raw confidence scores, alternatives via probes and model routing, from Justin Flick + HN 37pts). Created: concepts/vector-databases.md (Vector Databases landscape overview — Pinecone, Chroma, Qdrant, Weaviate, Milvus, pgvector, LanceDB). Saved: 4 raw articles. Sources: HN Algolia, X/Twitter (xurl), blogwatcher DB.
 
 | 2026-07-28 | newsletter-wiki-ingest | Created: concepts/ai-benchmarks/mirrorcode.md (MirrorCode benchmark, Epoch x METR). Created: concepts/open-secure-ai-alliance.md (NVIDIA Open Secure AI Alliance launch). Enriched: entities/hugo-bowne-anderson.md (O'Reilly harness guide); entities/anthropic.md (Project Fetch Phase Two, Open-Weights stance clarification); concepts/agent-safety.md (Long-horizon safety alignment, OpenAI); concepts/kimi-k3.md (AINews source). |
+---
 ## [2026-07-28] blog-wiki-ingest — 2 TAKE + 2 REFERENCE enrichment
 
 **Source:** blog-triage checkpoint (recovered from failed response render) — 17 candidates processed
@@ -25,6 +28,7 @@
 
 **Articles skipped (13):** Kimi K3 (already covered), John D Cook math (3), cancelling-hey, Windows programming, Daring Fireball (2), Windows NT, phone product, Modal Kimi K3 (already covered), Pluralistic EU regulation, Tedium social media
 
+---
 ## [2026-07-28] blog-ingest triage — 27 articles collected, 17 saved
 
 **Checkpoint:** `blog_ingest_20260728T100816Z.json` — 27 new articles from blog RSS scan, 17 saved as raw articles, 3 unsaved (OpenAI paywall, 2× LWN paywall)
@@ -46,6 +50,7 @@
 
 **Unsaved (3):** OpenAI "How AI is expanding what people do at work" (fetch failed), LWN "Hazard pointers for the kernel" (paywall), LWN "GNU Binutils 2.47 released" (paywall)
 
+---
 ## [2026-07-27] Dreaming consolidation — saturation pass (Takes=0, Refs=2)
 - Filesystem scan: 159 raw articles, top 40 AI-relevant articles evaluated
 - All significant articles already processed by daily pipelines (blog-wiki-ingest, newsletter-wiki-ingest, active-crawl, prior dreaming triage 7/26)
@@ -54,6 +59,7 @@
 - Archive: 14 candidates, 8 newly archived, 6 dedup (total: 1995 URLs)
 - Coverage verified: all 10 AI-relevant articles matched to existing wiki pages with specific line-level content
 
+---
 ## [2026-07-27] Active crawl — 3 new concept pages created
 
 **Discovery:** HN Algolia (15 trending stories, top: Claude Opus 5 1771pts, coding debate 878pts), X/Twitter (10 topics: RAO recursive agents, multimodal training bug, Kimi K3, Jensen Huang open letter), wiki gap analysis (10 gaps identified). Cross-referenced against existing wiki coverage — selected 4 topics with genuine gaps.
