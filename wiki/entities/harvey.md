@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-07-17
+updated: 2026-07-28
 tags:
   - security
   - company
@@ -22,6 +22,7 @@ sources:
   - raw/articles/2026-06-17_harvey_harvey-copilot-cowork-launch.md
   - raw/articles/2026-07-01_harvey_sonnet-5-in-harvey.md
   - raw/articles/2026-07-17_harvey_y-combinator-backed-benchmark-joins-harvey.md
+  - raw/articles/2026-07-28_harvey_scaling-document-processing-across-harvey.md
 ---
 
 # Harvey
@@ -255,3 +256,33 @@ Harvey integrated **9 million+ US case law opinions** from [[entities/courtliste
 Available from June 3, 2026 on a rolling basis to Harvey customers. The knowledge source includes over 9 million opinions sourced from CourtListener.
 
 Source: raw/articles/2026-06-03_harvey_us-case-law-source.md
+
+## Document Processing Infrastructure (July 2026)
+
+Document processing sits under Vault, Assistant, and every workflow — almost every lawyer query involves documents. Over the past year, Harvey scaled from ~0.94M documents/week (1.44 TB) to ~24.8M/week (56 TB) — a 26× increase in documents and 39× increase in data volume.
+
+### Job Framework Rebuild
+
+Harvey replaced the original job queue with a new Job Framework featuring durable workflow state. A worker crash or deploy mid-batch resumes instead of restarting the whole batch. Each activity has explicit timeout and retry behavior. File-level failures are isolated: corrupt, password-protected, unsupported, or empty files are marked and processing continues for the rest of the batch.
+
+### Pipeline Splitting by Bottleneck
+
+The extraction/chunk-embed/index pipeline was split into separate stages with dedicated capacity. Each stage retries independently, scales independently, and fails partially. OCR-heavy uploads can slow the extraction lane without starving indexing. Vector-store rate limits can back off the indexing lane without forcing extraction to retry.
+
+### UDF Format
+
+The Unified Document Format replaced monolithic Pydantic document objects with a versioned internal format using typed pieces (page text, tables, images, lightweight navigation view). Latency improved by p50 -19%, p90 -17%, and p99 -11%, with no quality regression.
+
+### Live Vector DB Migration
+
+Harvey initiated a live migration to a new vector database using dual-writing to both old and new systems simultaneously, with shadow reads and backfills for validation. Dual-writing created new memory pressure on indexing workers. To mitigate this, JSON serialization was replaced with Arrow IPC, reducing payload size, memory footprint, and serialization/deserialization time.
+
+### Backpressure Architecture
+
+Extraction uses ordered fallback chains (primary → Harvey-operated → deterministic local). Vector DB rate limits trigger explicit backoff and retry accounting, oversized writes are split, and long-running activities persist state to avoid losing progress on retry. Stage-level metrics track blob read/write durations, task-slot saturation, and failure taxonomies.
+
+**Authors:** Tom McCormick, Jin Zhang, Shunrang Cao, Jinfeng Zhuang, Anna Zhang, Adam Shen, Gary Lam (Jul 27, 2026)
+
+See also: [[concepts/ai-agent-engineering]] [[concepts/infrastructure-scaling]] [[concepts/document-processing]] [[concepts/vector-database]]
+
+**Source:** [[raw/articles/2026-07-28_harvey_scaling-document-processing-across-harvey]]

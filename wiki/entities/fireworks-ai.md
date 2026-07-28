@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-07-17
+updated: 2026-07-28
 tags:
   - entity
   - company
@@ -28,6 +28,8 @@ sources:
   - raw/articles/2026-07-11_fireworks-ai_kernel-optimization-for-minimax-m3-on-nvidia-blackwell.md
   - raw/articles/2026-07-10_fireworks-ai_Open-frontier-and-yours-LangChain-Deep-Agents-on-NVIDIA.md
   - raw/articles/2026-07-17_fireworks-ai_series-d-announcement.md
+  - raw/articles/2026-07-28_fireworks-ai_fireworks-nexus.md
+  - raw/articles/2026-07-28_fireworks-ai_K3-LoRA-Training.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -489,6 +491,65 @@ The company has surpassed **$1 billion in annualized revenue run rate** (ARR) an
 The funding will be used to expand compute infrastructure and grow the engineering team, further cementing Fireworks' position as the leading inference infrastructure platform for [[concepts/post-training/reinforcement-fine-tuning|customized open-weight models]] and [[concepts/ai-agent-engineering|production agent workloads]].
 
 **Source:** [[raw/articles/2026-07-17_fireworks-ai_series-d-announcement]]
+
+## Fireworks Nexus
+
+**Fireworks Nexus** is Fireworks' enterprise cost optimization platform that connects AI tools to a managed layer of open-weight models with centralized controls, enabling organizations to optimize inference spend without sacrificing quality.
+
+### Components
+
+**Enterprise Controls & Cost Observability:** Centralized budget, ROI, and policy management across all AI tool usage. Endpoints are hosted exclusively in the US with zero data retention, and the platform runs across 20 global data centers.
+
+**FireConnect:** An open-source (Apache 2.0) one-line install tool that maps models based on harness configurations. Supports Claude Code, Codex, and OpenCode, functioning through the API-compatible Fireworks Serverless endpoint.
+
+**FireRouter:** A custom trained model that scores requests by difficulty. Routine tasks are routed to open-weight models, while difficult tasks pass through to the existing provider (Anthropic key). Currently routes between Opus 5 and GLM 5.2, or K3 and GLM 5.2 for pure open-weight deployments. Delivers **3–5× cost reduction**.
+
+### Validations
+
+- **Faros** — 211 real engineering tasks: GLM-5.2 on Claude Code slightly outperformed Opus 4.8 at half the cost.
+- **Arize** — 2,400 agent runs: frontier-priced models offered little advantage on routine work.
+- **Notion/Doximity** — cut 1/3 off per-merged-PR costs, with a blended token rate roughly 1/4 that of closed model labs.
+
+Published July 26, 2026.
+
+**Source:** [[raw/articles/2026-07-28_fireworks-ai_fireworks-nexus]]
+
+## K3 LoRA Training on Fireworks
+
+**K3 (2.8T)** is available for Multi-LoRA serving and training in private preview on Fireworks Serverless Training, offering a serverless pay-per-token model for post-training.
+
+### Pricing & Performance
+
+Pay-per-token pricing: $65 for a small RL run (~20 steps, 860K training tokens), completing in 30–60 minutes. LoRA adapters are cheap to train (megabytes in size) and use a rank-r design, best suited for modifying behavior, style, personas, and structured outputs.
+
+### Serving Modes
+
+Two modes are available:
+
+- **Live merge:** Full speed with no overhead, ideal for single-adapter deployments.
+- **Multi-LoRA:** Many adapters on one deployment, enabling efficient serving of multiple customized models simultaneously.
+
+### KV-Cache Awareness
+
+Multi-turn agent runs bill at 20% of the standard prefill rate, significantly reducing the cost of conversational and agentic workloads.
+
+### Concrete Tasks
+
+Two example tasks demonstrate the platform:
+
+**Countdown:** Teaches the model a new objective using partial credit as a dense reward signal — reward rises quickly as the model learns.
+
+**Frozen Lake:** Teaches a tool-calling agent loop using a sparse reward — only goal completion pays out. The model's score climbs more slowly, illustrating the difference between reward design strategies. As the article notes, *"The reward is the lever that decides what the model is aiming at."*
+
+### Data Flywheel
+
+The platform enables a complete loop: train adapter → deploy → monitor → collect feedback → trigger a fresh training run. This flywheel ensures consistent numerics alignment between training and inference endpoints.
+
+Published July 26, 2026.
+
+**Source:** [[raw/articles/2026-07-28_fireworks-ai_K3-LoRA-Training.md]]
+
+[[concepts/post-training]] [[concepts/lora]] [[concepts/kimi-k3]] [[concepts/inference-optimization]]
 
 ## Sources
 

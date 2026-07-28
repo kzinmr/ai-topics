@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-07-11
+updated: 2026-07-28
 tags:
   - company
   - model
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-06-26_cohere_automating-fork-maintenance-with-ai-agents.md
   - raw/articles/2026-06-26_cohere_cohere-security-ai-agent-north-wiz.md
   - raw/articles/2026-07-11_cohere_hardware-aware-dynamic-speculative-decoding.md
+  - raw/articles/2026-07-28_cohere_introducing-north-automations-ai-workflows.md
 ---
 
 # Cohere
@@ -223,6 +224,34 @@ In July 2026, Cohere published research on **Hardware-Aware Dynamic Speculative 
 [[concepts/speculative-decoding]] | [[concepts/inference-optimization]] | [[concepts/rl-training]]
 
 **Source:** [[raw/articles/2026-07-11_cohere_hardware-aware-dynamic-speculative-decoding]]
+
+## North Automations (July 2026)
+
+In July 2026, Cohere launched **North Automations**, an enterprise agentic workflow orchestration product built on top of the North platform. North Automations addresses three key challenges enterprises face with agentic AI: narrow workstreams (one-off agents versus end-to-end workflows), lack of governance and control, and cost inefficiency from using the same model across all workflow steps. Cohere positions the product against a $550B market opportunity, citing the Gartner Hype Cycle 2026.
+
+### Core Capabilities
+
+**Turn complex workflows into simple outputs:** Users describe goals in plain language, connect their existing tech stack, schedule automated runs, and leverage loops and branching logic for multi-step processes.
+
+**Stay in control at each step:** Each workflow step can use a different model chosen by the user, balancing cost and performance. A Plan mode lets users review the workflow before building it. Versioning and test/iterate workflows allow safe iteration before moving to production.
+
+**Govern AI safely at scale:** Teams can loop in colleagues for human-in-the-loop approval at critical steps, analyze usage patterns, and monitor tokens consumed per workflow and per step.
+
+### Platform Integration
+
+North Automations embeds within Cohere's existing **North** platform, inheriting its secure on-premise and cloud deployment options, MCP and custom tool integrations, and SDK for building on bespoke platforms. Users can choose Cohere models or any external LLM per step.
+
+### Internal Use Cases
+
+- **Marketing Ops:** SQL analysis via BigQuery — automated data exploration and reporting
+- **Customer Success:** Daily engagement tracker pulling data across HR systems, Slack, and Salesforce
+- **Sales:** Prospect preparation across Salesforce, Slack, Gmail, and Notion
+
+North Automations is available to all North customers.
+
+[[concepts/agent-team-swarm]] | [[concepts/mcp]] | [[concepts/enterprise-ai]] | [[concepts/workflow-automation]]
+
+**Source:** [[raw/articles/2026-07-28_cohere_introducing-north-automations-ai-workflows]]
 
 ## Related
 

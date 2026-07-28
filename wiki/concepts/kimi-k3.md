@@ -19,6 +19,7 @@ sources:
   - "raw/articles/modal.com--blog-kimi-k3-by-moonshot-now-available-on-modal--66112a1a.md"
   - "raw/articles/2026-07-28_fireworks-ai_kimik3-on-fireworks.md"
   - "raw/newsletters/2026-07-28-ainews-much-ado-about-open-weights.md"
+  - "raw/articles/2026-07-28_fireworks-ai_K3-LoRA-Training.md"
 ---
 
 # Moonshot Kimi K3
@@ -365,7 +366,37 @@ US Tech & Science Advisor Michael Kratsios (@mkratsios47) publicly alleged that 
 - **ClinePass adoption**: K3 went from 0% to 16% token usage in 3 days, becoming its #3 most-used open-weight model, per @cline
 - **Policy response**: Administration officials framed the incident as evidence for stronger AI model export controls and provenance tracking
 - **IP concerns**: Legal observers noted the difficulty of proving distillation without model weight access, and questioned whether trade secret claims could hold given Fable's public deployment via API
-- **Paradoxical effect**: The allegations may accelerate adoption — demanding provenance gives K3 more attention, and ban attempts may drive users toward decentralized hosting
+|- **Paradoxical effect**: The allegations may accelerate adoption — demanding provenance gives K3 more attention, and ban attempts may drive users toward decentralized hosting
+
+### LoRA Training on Fireworks
+
+In July 2026, [[entities/fireworks-ai|Fireworks AI]] made K3 available for **Multi-LoRA serving and training** via its Serverless Training platform. This marked one of the first production-grade LoRA customization offerings for a 2.8T-parameter open-weight model.
+
+**Pricing and Performance**: Pay-per-token pricing for training runs is competitive — approximately **$65 for a small RL run** (20 steps, 860K training tokens, completing in 30–60 minutes). LoRA adapters themselves are cheap to train (megabytes in size) and can be served in two modes:
+
+- **Live merge**: Adapter weights are merged into the base model at load time with no inference overhead
+- **Multi-LoRA**: Multiple adapters share a single base deployment, enabling many specialized behaviors without per-adapter infrastructure
+
+**KV-Cache Efficiency**: Fireworks' KV-cache-aware serving architecture means multi-turn agent runs bill at **20% of the standard prefill rate**, significantly reducing cost for conversational and agentic workloads.
+
+**Demonstration Use Cases**:
+
+- **Countdown** (dense reward): Teaches the model a new objective function via a dense reward signal that provides feedback at every step. The model learns to maximize a continuous score, demonstrating fine-grained behavioral steering.
+- **Frozen Lake** (sparse reward): Teaches a tool-calling loop via a sparse reward signal that only fires when the agent reaches the goal. The model must discover the correct multi-step strategy through exploration, with reward only at completion.
+
+**Key Insight**: "The reward is the lever that decides what the model is aiming at" — dense vs sparse reward design significantly affects learning curves and determines which behaviors the model internalizes during post-training.
+
+**Numerics Alignment**: Training and inference use consistent numerical representations, ensuring that behavior observed during LoRA training transfers faithfully to production serving without quantization drift or precision mismatch.
+
+**The Post-Training Flywheel**: This capability enables a complete feedback loop:
+1. **Train** a LoRA adapter on a specific task or domain
+2. **Deploy** with zero overhead via live merge or Multi-LoRA
+3. **Monitor** production behavior and collect real-world feedback
+4. **Collect** new training data from observed failures or edge cases
+5. **Re-train** the adapter with improved data, closing the loop
+
+This infrastructure makes [[concepts/post-training]] practical for ongoing model improvement and enables the [[concepts/lora|LoRA]]-based customization paradigm that many enterprises require for production deployment.
+
 
 ## Related Pages
 

@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-07-28T18:23:17.888969+00:00",
+  "triage_run_id": "20260728T180649Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming consolidation 2026-07-28: パイプライン飽和シナリオ（total_articles=0, recent_raw_articles=163）。ファイルシステムスキャンで3つの新製品発見: Fireworks Nexus（enterprise AI cost optimization platform, FireConnect/FireRouter含む）、Fireworks K3 LoRA Training（serverless RL training, $65/20-step）、Cohere North Automations（enterprise agentic workflow orchestration）。Harvey document processing infrastructure engineeringをreferenceとして識別。本日のactive-crawl/blog/newsletter/raw-backlogパイプラインで8記事が既処理、11+非AI記事をスキップ。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-already-processed",
+      "source": "dreaming",
+      "source_name": "various",
+      "title": "Already processed by today's pipelines batch skip",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "active-crawl・blog-wiki-ingest・newsletter-wiki-ingest・raw-backlog-ingestで本日処理済み: NVFP4 Blackwell（active-crawl作成）、LLM Confidence Calibration（active-crawl作成）、Graph Engineering Akshay Pachaar（x-article-ingest作成）、Kimi K3 on Fireworks（kimi-k3.md sources済み）、Modal K3（kimi-k3.md sources済み）、Simon Willison opinionated guide（entities/simon-willison.md sources済み）、Gary Marcus circular financing（entities/gary-marcus.mdカバー済み）、antirez AI risk response（entities/antirez-com.md 457行で詳細カバー済み）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch skip — 8 articles already processed by today's active-crawl, blog-wiki-ingest, newsletter-wiki-ingest, and raw-backlog-ingest pipelines."
+    },
+    {
+      "item_id": "dreaming-skip-non-ai",
+      "source": "dreaming",
+      "source_name": "various",
+      "title": "Non-AI articles batch skip",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI記事: Windows NT 3.1（dfarq.homeip.net）、Facebook keyboard trick（feed.tedium.co）、EUCD pluralistic.net、Daring Fireball ads in software、Mac soap review（sixcolors.com）、Dungeon Crawler Carl book review（shkspr.mobi）、Arcnet history（dfarq.homeip.net）、SIMD in Python（purplesyringa.moe）、SICP in Haskell（entropicthoughts.com）、Hiding data in permutations（johndcook.com）、float binary（johndcook.com）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch skip — 11+ non-AI articles (hardware history, book reviews, math, Mac ecosystem, personal essays)."
+    },
+    {
+      "item_id": "dreaming-skip-marketing",
+      "source": "dreaming",
+      "source_name": "various",
+      "title": "Marketing/low-value articles batch skip",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "マーケティング/低価値記事: Glean enterprise knowledge graph（38KBのSEOマーケティング記事、ナビゲーションchrome大部分）、Cohere wealth manager（事例紹介マーケティング）、Hetzner LLM inference（Sliplane blog 1.4KB、entities/hetzner-ai.mdがactive-crawlで本日作成済み）、fail.xyz phone（非AI）、chadnauseam.com canceling Hey（非AI tech）、idiallo.com byte-size（非AI）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch skip — marketing content and non-AI tech articles from sitemap-monitor batches."
+    }
+  ]
+}
