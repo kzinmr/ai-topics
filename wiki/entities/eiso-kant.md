@@ -2,7 +2,7 @@
 title: "Eiso Kant"
 type: entity
 created: 2026-07-24
-updated: 2026-07-26
+updated: 2026-07-28
 tags:
   - person
   - open-source
@@ -29,6 +29,8 @@ Kant began building language models for code before the transformer era, investi
 
 When ChatGPT launched, Kant felt it was vindication of his thesis that language models applied to code would become a fundamental technology. This led Poolside to embrace open-weight releases and open research as core principles.
 
+A formative engineering experience at Poolside was debugging an optimizer bug in their from-scratch training codebase. After three weeks of instability, Kant discovered that the LLaMA papers' unusually high epsilon values for the Adam optimizer (E-4 instead of a minimal value just above division-by-zero) were a workaround for an underlying issue; solving it gave the team confidence in building from first principles rather than forking existing repos.
+
 ## Philosophy & Key Ideas
 
 ### "Model Factory" Thesis
@@ -52,6 +54,11 @@ Kant describes MCP (Model Context Protocol) and traditional tool-calling APIs as
 ### Distillation as "Drugs"
 Kant views distillation and RL environments as the AI industry's favorite "drugs" — they provide short-term performance gains but create long-term brittleness and reduce the steerability needed for sustained improvement. He advocates training models from scratch on clean data.
 
+### Persistence Over Raw Intelligence (Laguna S Thesis)
+After observing Laguna S 2.1's performance, Kant and Poolside's head of applied research Peng Ming developed a thesis that the model's surprising capability (solving Erdos problem #397 independently, complex programming on a single DGX Spark) came not from more intelligence but from different behavior — more verification, less declaring victory early, and being more persistent. Kant argues this behavior is predictive in human settings too and suggests **smaller models can be squeezed for far more capability** than the industry assumes, via post-training that optimizes for persistence, backtracking, and verification rather than raw parameter count.
+
+This observation led Kant to question whether the optimal model size for knowledge work (accounting, legal, coding) might be at 1-10T parameters rather than requiring 2-3 orders of magnitude more scaling — a significant argument for model commoditization and open-source viability.
+
 ### RL in Pre-Training
 He predicts that reinforcement learning will move earlier into the pre-training phase, becoming a curriculum design tool rather than being confined to post-training.
 
@@ -66,6 +73,12 @@ Kant argues that language (text + code) is the most compute-efficient modality f
 
 ### $500M Raise and Investor Skepticism
 Poolside raised $500M while investors still questioned whether AGI was real. Kant notes that the final training run is "anticlimactic" — the real cost is in the thousands of failed experiments and infrastructure build-up that precede it. The raise reflects growing conviction that coding and long-horizon software tasks are a viable path to AGI.
+
+### Encouraging Competitors
+Kant actively encourages researchers to leave Poolside and start competing foundation model companies. He argues that the industry has a small window before recursive self-improvement makes catching up unfeasible, and that more labs are needed to avoid an oligopoly of 3-4 companies controlling all intelligence. This is an extension of his "100 foundation model companies" philosophy: he would rather see more competitors succeed than be one of the five.
+
+### Earning the Right to Publish
+Kant holds that companies should "earn the right" to spend time publishing research only once they are at the frontier. Until then, every hour matters for catching up, and time spent on papers is time not spent on model improvements. Poolside's decision to publish detailed technical reports (Laguna M.1/XS.2, Laguna S) reflects their growing conviction that they are approaching the frontier and can now contribute to the open research ecosystem that benefited them.
 
 ### Engineering Productivity in the Agent Era
 Kant predicts that AI will fundamentally change how engineering productivity is measured: the bottleneck shifts from writing code to running experiments. **Agency** (the ability to act independently and iterate quickly) becomes the most important quality for employees. High-agency teams need shared goals and clear constraints rather than top-down micro-management.

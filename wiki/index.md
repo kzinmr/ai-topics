@@ -250,7 +250,7 @@
 - [[entities/elvis]] — elvis
 - [[entities/elvis-saravia]] — Elvis Saravia
 - [[entities/elvis-sun]] — Elvis Sun
-- [[entities/eiso-kant]] — Eiso Kant — co-founder and co-CEO of Poolside; Model Factory thesis, open-weight coding models, anti-MCP/pro-scripting-agents philosophy (July 24)
+- [[entities/eiso-kant]] — Eiso Kant — co-founder and co-CEO of Poolside; Model Factory thesis, open-weight coding models, persistence-over-intelligence thesis, anti-MCP/pro-scripting-agents philosophy (Jul 26, enriched Jul 28)
 - [[entities/embeddings]] — Single-vector embedding models — strengths, limitations, and the theoretical constraints of embedding-based retrieval...
 - [[entities/embra]] — Embra
 - [[entities/emmanuel-ameisen]] — Emmanuel Ameisen
@@ -634,7 +634,7 @@
 - [[entities/pointer]] — Pointer
 - [[entities/pointer-ai]] — Pointer AI
 - [[entities/polar-prorl-agent-server]] — Polar (ProRL-Agent-Server)
-- [[entities/poolside]] — Poolside — Foundation model lab focused on agentic coding models; Laguna M.1 (Apache 2.0), Laguna XS.2 (open-weight), Laguna S 2.1 (118B MoE/8B active, Jul 2026), Model Factory (10K-20K experiments/month); open-weights as default commitment (July 24)
+- [[entities/poolside]] — Poolside — Foundation model lab focused on agentic coding models; Laguna M.1 (Apache 2.0), Laguna XS.2 (open-weight), Laguna S 2.1 (118B MoE/8B active, Jul 2026), Model Factory (10K-20K experiments/month, Blender streaming data, zero call events, YOLO-to-rigor); open-weights as default commitment (enriched Jul 28)
 - [[entities/portkey]] — Portkey
 - [[entities/pratik-bhavsar]] — Pratik Bhavsar
 - [[entities/prefeitura-rio]] — Prefeitura Rio (IplanRIO)

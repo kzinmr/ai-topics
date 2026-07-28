@@ -1,3 +1,7 @@
+## [2026-07-28] raw-backlog-ingest — 2 entity page enrichments from podcast transcript
+
+| 2026-07-28 | raw-backlog-ingest | Enriched: entities/eiso-kant.md (+Persistence Over Raw Intelligence thesis, Knowledge Work Optimal Size argument, Encouraging Competitors philosophy, Optimizer bug anecdote, Earning the Right to Publish). Enriched: entities/poolside.md (+Blender streaming data architecture, Immutable data layer, Zero call events metric, FP8/H200 training infra details, YOLO-to-Rigor transition story). Source: raw/articles/2026-07-24_poolside-latent-space.md (Latent Space podcast transcript, 101KB). |
+
 ## [2026-07-28] active-crawl — 4 new pages from trending topics
 
 | 2026-07-28 | active-crawl | Created: entities/hetzner-ai.md (Hetzner LLM Inference — German cloud provider entering LLM inference market, from HN 155pts). Created: concepts/nvfp4-4bit-floating-point.md (NVFP4 — NVIDIA Blackwell native 4-bit floating point, 2-3x throughput vs FP8, from X/Twitter @Mayhem4Markets). Created: concepts/llm-confidence-calibration.md (LLM Confidence and Calibration — unreliability of raw confidence scores, alternatives via probes and model routing, from Justin Flick + HN 37pts). Created: concepts/vector-databases.md (Vector Databases landscape overview — Pinecone, Chroma, Qdrant, Weaviate, Milvus, pgvector, LanceDB). Saved: 4 raw articles. Sources: HN Algolia, X/Twitter (xurl), blogwatcher DB.

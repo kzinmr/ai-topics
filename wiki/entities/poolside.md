@@ -1,7 +1,7 @@
 ---
 title: Poolside
 created: 2026-04-29
-updated: 2026-07-24
+updated: 2026-07-28
 type: entity
 tags: [company, model, coding-agents]
 related:
@@ -85,20 +85,36 @@ Kant prefers a world with 100 foundation model companies over an oligopoly of fi
 
 ## Training Stack
 
-- **Optimizer**: Muon (not AdamW)
-- **Data**: 30T tokens for Laguna XS.2, with data automixing and async off-policy agent RL
+See **Model Factory > Training Infrastructure** below for full details on hardware, precision, optimizer, and data pipeline specifics.
+
 - **Post-training**: Agent reinforcement learning for agentic coding capabilities
 
 ## Model Factory
 
 Poolside operates an internal 'Model Factory' capable of 10,000–20,000 experiments per month (detailed in Latent Space podcast with Eiso Kant, July 2026). Key capabilities:
-- **Streaming data**: Data is streamed directly into training pipelines without batch pre-processing bottlenecks.
+- **Streaming data**: Data is streamed directly into training pipelines without batch pre-processing bottlenecks. A config service called **Blender** allows dynamic data source mixing (e.g., "20% source A, 10% source B") at runtime — training starts while data is still materializing.
+- **Immutable data layer**: Every experiment traces down to individual tokens — which cursor position at which code version. Enables perfect reproducibility of runs from years prior.
 - **Reproducible experimentation**: Infrastructure designed for reproducible ML experiments at scale.
 - **Agentic training**: AI agents increasingly write code, launch jobs, evaluate results, and modify the pipelines used to train future models — a closed-loop self-improvement system.
 - **Low-precision compute**: Optimized for low-precision training without quality degradation.
 - **Rapid iteration**: Can take a model from pre-training to release in approximately 8 weeks.
 - **Data automixing**: Dynamic mixing of training data sources during training.
 - **Agent RL**: Asynchronous off-policy agent reinforcement learning for post-training.
+
+### Training Reliability
+
+Laguna S 2.1 achieved **zero call events** during its entire training run, with no meaningful call events across all of 2026. The only intervention point is the first ~6 hours of a new run (configuration errors). This reliability enables the model factory to start the next model immediately after finishing post-training for the current release.
+
+### Training Infrastructure
+
+- **Hardware**: ~10K H200 cluster (as of July 2026), scaling to larger clusters
+- **Precision**: FP8 training for Laguna S; all-to-all not yet FP8 (cutoff date limitation). Excited about NVFP4 training on Blackwell but not yet practical on Hopper hardware.
+- **Optimizer**: Muon (not AdamW)
+- **Data**: 30T tokens for Laguna XS.2, with streaming data pipelines and Blender config-based mixing
+
+### YOLO-to-Rigor Transition
+
+In its first year, Poolside operated on "YOLO runs" with great infrastructure but limited scientific rigor. A key inflection point came ~18 months in when hires like Nikolai (head of applied research, ex-Yandex) brought systematic experimentation discipline. The combination of an increasingly capable platform and immutability turned every experiment into a true ablation. The transition from "great infra for YOLO runs" to "scientifically rigorous model factory" took ~1.5 years and is reflected in Poolside's later detailed technical reports.
 
 ## Relationships
 
