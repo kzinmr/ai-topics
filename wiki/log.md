@@ -1,5 +1,12 @@
 ## [2026-07-28] Dreaming wiki-ingest — Nightly consolidation (4 enrichments)
 
+## [2026-07-28] daily-skeleton-enrichment | Enriched Vicki Boykis and FastMCP from L2 to comprehensive
+
+- Enriched [[entities/vicki-boykis.md]] — Upgraded from L2 (47 lines) to comprehensive (117 lines). Added: professional background (Mozilla.ai, Duo, Tumblr, startup), Viberary project, Embeddings paper (DOI), Normconf conference organiser, keynote history (AMLC 2026, Pycon Italia 2024, PyData 2023), notable blog post timeline, writing style analysis, expanded cross-references. Status: L3.
+- Enriched [[entities/fastmcp.md]] — Upgraded from L2 (64 lines) to comprehensive (97 lines). Added: GitHub stats (26.9K stars, 2.2K forks), three pillars architecture (Servers, Apps, Clients), adoption metrics (1M downloads/day, 70% of MCP servers), Prefect Horizon enterprise gateway, Quick Start code example, installation guide, documentation links. Status: enriched.
+
+
+
 | 2026-07-28 | dreaming-wiki-ingest | Enriched: entities/fireworks-ai.md (+Fireworks Nexus enterprise cost optimization platform: FireConnect/FireRouter/Faros/Arize validations; +K3 LoRA Training on Fireworks: serverless LoRA, $65/20-step RL, Countdown/FrozenLake). Enriched: concepts/kimi-k3.md (+LoRA Training on Fireworks subsection: Multi-LoRA serving, KV-cache awareness, dense/sparse reward design). Enriched: entities/cohere.md (+North Automations: $550B market opp, plain-language workflow, per-step model routing, Plan mode, governance analytics). Enriched: entities/harvey.md (+Document Processing Infrastructure: Job Framework rebuild, pipeline splitting, UDF format p50 -19%, Vector DB live migration, Arrow IPC, backpressure architecture). Archive: 4 candidates triaged, 3 newly archived (total: 2,018 URLs). Source: dreaming-group output 2026-07-28T18:14:15. |
 
 ## [2026-07-28] X Article ingestion — Graph Engineering (Akshay Pachaar)
