@@ -4,7 +4,7 @@ type: entity
 aliases: [hugobowne, Hugo Bowne Anderson]
 status: complete
 created: 2026-04-14
-updated: 2026-07-25
+updated: 2026-07-28
 depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 7, 25), 'notes': "Added Privacy Engineering + Agent Harness Engineering + Production AI Agents: Maven Assistant sections from 2026 content"}
 tags:
   - person
@@ -21,6 +21,7 @@ sources:
   - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
   - https://open-racer-a67.notion.site/The-agent-harness-reading-list-35e14bb7e4a2805d881ae261573ff76f
   - raw/newsletters/2026-07-25-four-months-inside-a-production-ai-agent-what-real-users-changed.md
+  - raw/newsletters/2026-07-28-how-to-build-an-effective-agent-harness.md
 ---
 
 
@@ -246,6 +247,7 @@ Curated as a lightning lesson with **Doug Turnbull**, establishing the foundatio
 | [AI Agent Harness, 3 Principles for Context Engineering, and the Bitter Lesson Revisited](https://hugobowne.substack.com/p/ai-agent-harness-3-principles-for) | **Lance Martin** (Anthropic) | Manus re-architected 5 times. Anthropic rips out Claude Code's harness as models improve. **The 3 Principles: Reduce, Offload, Isolate** |
 | [Building Agents That Build Themselves](https://hugobowne.substack.com/p/building-agents-that-build-themselves) | **Ivan Leo** (Google DeepMind, ex-Manus) | Rebuilds [[entities/pi|Pi]] and [[entities/openclaw|OpenClaw]] ideas in pure Python: agent writes and hot-reloads its own tools, markdown memory compaction, Telegram via FastAPI, Modal sandboxing |
 | [Build Your Own Deep Research Agent](https://youtube.com/live/LUfqQgz1-Os) | Ivan Leo | From raw Gemini API call → clarifying questions → plan → subagents running parallel Exa searches → cited report. 10-step build pipeline with phase swapping, deterministic guardrails, dynamic subagent spawning. |
+| [How to Build an Effective Agent Harness](https://hugobowne.substack.com/p/how-to-build-an-effective-agent-harness) | O'Reilly Lightning Lesson | Context Complexity × Action Complexity 2D mapping. Based on the "Stop Overengineering Your Agent Harness" thesis. Practical decision framework: what controls the next step, how much context accumulates, which actions are available, what happens on errors. |
 
 ### Agentic Search
 

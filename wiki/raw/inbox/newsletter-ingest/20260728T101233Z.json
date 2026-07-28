@@ -1,0 +1,125 @@
+{
+  "run_id": "20260728T101233Z",
+  "triaged_at": "2026-07-28T10:15:00Z",
+  "pipeline": "newsletter-triage",
+  "summary": "5 newsletters processed. Key themes: Claude Opus 5 release coverage (3/5), AI agent harnesses, open weights debate, AI in robotics & week-long coding agents. Raw files contain only Substack redirect URLs — no extracted article text.",
+  "quality_note": "All 5 raw newsletter files contain only Substack redirect URLs (token-wrapped tracking links) with no extracted article text. The ingest script's link extraction produces tracking URLs that cannot be resolved without authenticated browser context. Downstream wiki-ingest should resolve redirects or use open.substack.com canonical URLs to fetch content.",
+  "wiki_coverage_assessment": "The wiki already has mature pages for all 3 major topics: Claude Opus 5 (events/claude-opus-5-release-july-2026.md + concepts/claude/opus-5.md), agent harnesses (concepts/agent-harnesses.md + comparisons/agent-harnesses.md + 15+ articles), and open weights (concepts/open-weight-vs-closed-llm-gap.md + open-weight-ai-regulation.md). New newsletter content should enrich existing pages rather than create new ones.",
+  "newsletters": [
+    {
+      "message_id": "<20260728064040.3.ee1d6b8b2dea93e0@mg-d1.substack.com>",
+      "subject": "How to Build an Effective Agent Harness",
+      "date": "2026-07-28",
+      "source": "Hugo Bowne's Newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-28-how-to-build-an-effective-agent-harness.md",
+      "canonical_url": "https://hugobowne.substack.com/p/how-to-build-an-effective-agent-harness",
+      "importance": "critical",
+      "topics": ["agent harness architecture and best practices"],
+      "wiki_relevance": [
+        "concepts/agent-harnesses.md — enrich with Hugo Bowne's perspective",
+        "concepts/harness-engineering/agent-harness.md — cross-reference",
+        "comparisons/agent-harnesses.md — may add comparative data"
+      ],
+      "existing_pages": [
+        "concepts/agent-harnesses.md",
+        "concepts/harness-engineering/agent-harness.md",
+        "comparisons/agent-harnesses.md",
+        "concepts/agent-harness-primitives.md"
+      ],
+      "action": "fetch_and_enrich_existing",
+      "priority": 0
+    },
+    {
+      "message_id": "<20260727133053.3.13a2ec043d4f68d7@mg2.substack.com>",
+      "subject": "Import AI 466: The bitter lesson for robotics, AIs complete week-long programming tasks; and OpenAI's accidental A…",
+      "date": "2026-07-27",
+      "source": "Import AI (Jack Clark)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-27-import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-.md",
+      "canonical_url": "https://importai.substack.com/p/import-ai-466-the-bitter-lesson-for",
+      "importance": "high",
+      "topics": [
+        "bitter lesson applied to robotics",
+        "AI agents completing week-long programming tasks",
+        "OpenAI (title truncated)"
+      ],
+      "wiki_relevance": [
+        "concepts/bitter-lesson-agent-harnesses.md — robotics angle is new",
+        "AI agent capability milestones — week-long autonomous coding",
+        "entities/openai.md — update"
+      ],
+      "action": "fetch_full_article",
+      "priority": 1
+    },
+    {
+      "message_id": "<20260727150321.3.c037046200680828@mg2.substack.com>",
+      "subject": "🎙️ How I AI: Claude Opus 5 Review + Browser use in Codex + How Cursor and a Raspberry Pi makes AI fun",
+      "date": "2026-07-27",
+      "source": "Lenny's Newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-27-how-i-ai-claude-opus-5-review-browser-use-in-codex-how-cursor-and-a-raspberry-pi.md",
+      "canonical_url": "https://lenny.substack.com/p/how-i-ai-claude-opus-5-review-browser",
+      "importance": "high",
+      "topics": [
+        "Claude Opus 5 model review",
+        "Browser use integration in OpenAI Codex",
+        "Cursor IDE + Raspberry Pi for AI"
+      ],
+      "wiki_relevance": [
+        "concepts/claude/opus-5.md — enrich with user-review perspective",
+        "Codex browser use feature — update if page exists",
+        "entities/cursor.md — update"
+      ],
+      "action": "fetch_full_article",
+      "priority": 2
+    },
+    {
+      "message_id": "<Yu5hUy66TnaBIb2P4xfV8A@geopod-ismtpd-4>",
+      "subject": "👑 Opus 5 Takes the Crown at Full Throttle",
+      "date": "2026-07-27",
+      "source": "beehiiv (unknown author)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-27-opus-5-takes-the-crown-at-full-throttle.md",
+      "canonical_url": null,
+      "importance": "high",
+      "topics": ["Claude Opus 5 benchmarking / performance review"],
+      "wiki_relevance": [
+        "concepts/claude/opus-5.md — benchmark data enrichment",
+        "concepts/ai-benchmarks/ — may reference specific benchmarks"
+      ],
+      "action": "fetch_full_article",
+      "note": "beehiiv long tracking URLs — no canonical URL from ingest",
+      "priority": 3
+    },
+    {
+      "message_id": "<20260728062014.3.aa4e56b146212249@mg-d0.substack.com>",
+      "subject": "[AINews] Much ado about Open Weights",
+      "date": "2026-07-28",
+      "source": "AI News / Latent Space (swyx)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-28-ainews-much-ado-about-open-weights.md",
+      "canonical_url": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
+      "importance": "high",
+      "topics": [
+        "Open weights model debate / policy",
+        "Open-source vs open-weights distinction"
+      ],
+      "wiki_relevance": [
+        "concepts/open-weight-vs-closed-llm-gap.md — update with latest debate",
+        "concepts/open-weight-ai-regulation.md — policy angle",
+        "concepts/open-weights-licensing-tightening.md — licensing trends"
+      ],
+      "action": "fetch_full_article",
+      "priority": 4
+    }
+  ],
+  "action_summary": {
+    "critical": 1,
+    "high": 4,
+    "low": 0,
+    "fetch_required": 5,
+    "enrich_existing_pages": [
+      "concepts/agent-harnesses.md",
+      "concepts/claude/opus-5.md",
+      "concepts/open-weight-vs-closed-llm-gap.md",
+      "concepts/bitter-lesson-agent-harnesses.md"
+    ],
+    "note": "Claude Opus 5 coverage in 3/5 newsletters — indicates major model release. Wiki already has dedicated pages. Agent harness article from Hugo Bowne is highest priority for wiki enrichment."
+  }
+}

@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-07-25
+updated: 2026-07-28
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -114,6 +114,17 @@ On June 4, 2026, the Anthropic Institute published **"When AI builds itself"** �
 **Dual framing**: The article serves simultaneously as technical roadmap and valuation narrative supporting Anthropic's ~$1T valuation target and imminent IPO (S-1 filed June 2026). By articulating RSI as explicit strategy, Anthropic positions itself to capture compounding returns of AI-accelerated AI development.
 
 **Policy stance**: Anthropic expresses desire for a "meaningful slowdown or pause" option but acknowledges practical barriers requiring multi-lab, multi-country coordination. They commit to organizing policy conversations about RSI governance.
+
+### Open-Weights Stance Clarification (Jul 2026)
+
+In July 2026, following sustained criticism for not signing NVIDIA's Open Secure AI Alliance open-weights letter, Anthropic published a position statement clarifying it has "never advocated for a ban on open-weights models." Key positions:
+
+- **Supports**: Chip controls on China, anti-industrial-scale distillation measures, and mandatory safety testing for sufficiently capable models (open or closed)
+- **Rejects**: Blanket bans on open-weight releases
+- **Did not sign**: NVIDIA's Open Secure AI Alliance founding letter, distinguishing Anthropic from HuggingFace, LangChain, and Nous Research who did
+- **Context**: The clarification came amid NYT reporting that OpenAI and Anthropic "quietly lobby Washington regulators to restrict open-source AI models" — a characterization Anthropic directly pushed back against
+
+Source: AINews (2026-07-28), [[raw/newsletters/2026-07-28-ainews-much-ado-about-open-weights]]
 
 **Community response**: The article sparked a **692-comment Hacker News discussion**, reflecting intense community engagement. Key reactions:
 - **Skepticism**: [[entities/gary-marcus]] characterized results as "faster coding — entirely under human control" rather than true AGI/RSI
@@ -404,6 +415,16 @@ Anthropic's research priorities:
 - Constitutional AI
 - Scalable oversight
 - Interpretability
+
+### Project Fetch Phase Two (Jul 2026)
+
+Anthropic's robotics experiment testing how well its AI systems accelerate humans at getting a quadruped robot to perform intelligent tasks.
+
+- **August 2025**: Claude Opus 4.1 was completely unable to do the tasks. Humans with models ~2× as effective as unaided (181 min completion time).
+- **May 2026**: Opus 4.7 acting autonomously completed all tasks but one in **9 minutes and 35 seconds** (could not reposition a ball; a task humans also struggled with).
+- **Significance**: Demonstrates that improved general-purpose model capabilities may naturally flow through to robotics — "this progress is not the result of a concerted effort to improve the robotics capabilities of our models."
+
+Source: Import AI #466, [[raw/newsletters/2026-07-27-import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-]]
 
 ## Code w/ Claude 2026 — Product Launches (May 2026)
 
@@ -739,4 +760,5 @@ Training philosophy: train models to avoid unsupported claims and flag uncertain
 
 ## Log
 
+- 2026-07-28: Added Project Fetch Phase Two robotics experiment + Open-Weights Stance Clarification (Jul 2026). Sources: Import AI #466, AINews 2026-07-28.
 - 2026-07-25: Added Claude Opus 5 launch section (July 2026). Key details: Epoch ECI 159, SWE-ECI 161 (matching Fable 5), half Fable's price, FrontierCode medium-effort anomaly, best-of-n sampling wins, browser automation, AA-Briefcase +150 Elo at −20% Cost per Task. Sources: AINews 2026-07-25, Simon Willison blog-triage.

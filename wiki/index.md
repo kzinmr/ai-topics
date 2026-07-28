@@ -1038,6 +1038,7 @@
 - [[concepts/ai-benchmarks/livecodebench]] — LiveCodeBench
 - [[concepts/ai-benchmarks/lora-speedrun]] — LoRA Speedrun — Public wall-clock leaderboard for LoRA fine-tuning techniques (Saivineeth147, July 2026)
 - [[concepts/ai-benchmarks/mind2web-2]] — Mind2Web 2
+- [[concepts/ai-benchmarks/mirrorcode]] — MirrorCode: long-horizon programming benchmark (Epoch AI × METR); AI systems solve week-long human tasks in minutes but fail hardest problems (Jul 2026)
 - [[concepts/ai-benchmarks/mle-bench]] — MLE-bench
 - [[concepts/ai-benchmarks/mmlu-pro]] — MMLU Pro
 - [[concepts/ai-benchmarks/mmmu]] — MMMU (Massive Multi-discipline Multimodal Understanding)
@@ -2251,6 +2252,7 @@
 - [[concepts/open-weight-vs-closed-llm-gap]] — Open-Weight vs Closed LLM Performance Gap — Analysis of time lag between open-weight and closed-source frontier model capabilities (Doubleword, June 2026)
 - [[concepts/open-weights-licensing-tightening]] — Open Weights Licensing Tightening
 - [[concepts/open-weight-ai-regulation]] — Open-Weight AI Regulation — The Kubernetes Moment Policy Debate — Tobi Knaup's Kubernetes analogy for open-weight AI ecosystem; US policy debate on restricting Chinese open-weight models; Nvidia/Microsoft/Meta/Jensen Huang industry warnings (July 2026)
+- [[concepts/open-secure-ai-alliance]]
 - [[concepts/openai-daybreak]] — OpenAI Daybreak — Cybersecurity initiative with GPT-5.5-Cyber, Codex Security, and Patch the Planet for automated vulnerability discovery and patching at scale (June 23)
 - [[concepts/openai-jalapeno-inference-chip]] — OpenAI Jalapeño — Custom LLM inference chip co-developed with Broadcom; 9-month tape-out, gigawatt-scale deployment, GPT-5.3-Codex-Spark at production frequency (June 25)
 - [[concepts/openai/agents-sdk]] — OpenAI Agents SDK

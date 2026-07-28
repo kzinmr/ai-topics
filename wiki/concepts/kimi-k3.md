@@ -18,6 +18,7 @@ sources:
   - "raw/articles/simonwillison.net--2026-jul-27-kimi-k3--f8e3d6fa.md"
   - "raw/articles/modal.com--blog-kimi-k3-by-moonshot-now-available-on-modal--66112a1a.md"
   - "raw/articles/2026-07-28_fireworks-ai_kimik3-on-fireworks.md"
+  - "raw/newsletters/2026-07-28-ainews-much-ado-about-open-weights.md"
 ---
 
 # Moonshot Kimi K3

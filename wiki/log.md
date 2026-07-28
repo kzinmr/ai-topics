@@ -1,3 +1,4 @@
+| 2026-07-28 | newsletter-wiki-ingest | Created: concepts/ai-benchmarks/mirrorcode.md (MirrorCode benchmark, Epoch x METR). Created: concepts/open-secure-ai-alliance.md (NVIDIA Open Secure AI Alliance launch). Enriched: entities/hugo-bowne-anderson.md (O'Reilly harness guide); entities/anthropic.md (Project Fetch Phase Two, Open-Weights stance clarification); concepts/agent-safety.md (Long-horizon safety alignment, OpenAI); concepts/kimi-k3.md (AINews source). |
 ## [2026-07-28] blog-wiki-ingest — 2 TAKE + 2 REFERENCE enrichment
 
 **Source:** blog-triage checkpoint (recovered from failed response render) — 17 candidates processed
