@@ -1,3 +1,7 @@
+## [2026-07-28] active-crawl — 4 new pages from trending topics
+
+| 2026-07-28 | active-crawl | Created: entities/hetzner-ai.md (Hetzner LLM Inference — German cloud provider entering LLM inference market, from HN 155pts). Created: concepts/nvfp4-4bit-floating-point.md (NVFP4 — NVIDIA Blackwell native 4-bit floating point, 2-3x throughput vs FP8, from X/Twitter @Mayhem4Markets). Created: concepts/llm-confidence-calibration.md (LLM Confidence and Calibration — unreliability of raw confidence scores, alternatives via probes and model routing, from Justin Flick + HN 37pts). Created: concepts/vector-databases.md (Vector Databases landscape overview — Pinecone, Chroma, Qdrant, Weaviate, Milvus, pgvector, LanceDB). Saved: 4 raw articles. Sources: HN Algolia, X/Twitter (xurl), blogwatcher DB.
+
 | 2026-07-28 | newsletter-wiki-ingest | Created: concepts/ai-benchmarks/mirrorcode.md (MirrorCode benchmark, Epoch x METR). Created: concepts/open-secure-ai-alliance.md (NVIDIA Open Secure AI Alliance launch). Enriched: entities/hugo-bowne-anderson.md (O'Reilly harness guide); entities/anthropic.md (Project Fetch Phase Two, Open-Weights stance clarification); concepts/agent-safety.md (Long-horizon safety alignment, OpenAI); concepts/kimi-k3.md (AINews source). |
 ## [2026-07-28] blog-wiki-ingest — 2 TAKE + 2 REFERENCE enrichment
 

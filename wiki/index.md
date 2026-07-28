@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (867 pages)
+## Entities (868 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -354,6 +354,7 @@
 - [[entities/herman-s-blog]] — Herman Martinus
 - [[entities/hermes-4]] — Hermes 4
 - [[entities/hermes-agent]] — Hermes Agent Architecture
+- [[entities/hetzner-ai]] — Hetzner AI — German cloud provider entering the LLM inference market with competitive GPU-backed endpoints and European AI sovereignty positioning
 - [[entities/hex-technologies]] — Hex Technologies
 - [[entities/hidream-o1-image]] — HiDream-O1-Image
 - [[entities/hilary-mason]] — Hilary Mason
@@ -870,7 +871,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1930 pages)
+## Concepts (1935 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2038,6 +2039,7 @@
 - [[concepts/llm.nvim]] — llm.nvim
 - [[concepts/llms-eroding-software-careers]] — LLMs Eroding Software Engineering Careers
 - [[concepts/llvm]] — LLVM
+- [[concepts/llm-confidence-calibration]] — LLM Confidence and Calibration — Why raw LLM confidence scores are unreliable and alternative approaches (confidence probes, multi-sample consistency, model routing)
 - [[concepts/local-first-architecture]] — Local-First Architecture
 - [[concepts/local-first-computing]] — Local-First Computing
 - [[concepts/local-first-software]] — Local-First Software
@@ -2219,6 +2221,7 @@
 - [[concepts/nvidia-egpu-on-macos]] — NVIDIA eGPU on macOS
 - [[concepts/nvidia-rtx-ai-garage]] — NVIDIA RTX AI Garage
 - [[concepts/nvidia-vera-rubin]] — NVIDIA Vera Rubin Platform
+- [[concepts/nvfp4-4bit-floating-point]] — NVFP4 — 4-Bit Floating Point on Blackwell — NVIDIA's native hardware support for 4-bit floating-point inference with 2-3x throughput vs FP8 and 3.5x less memory than BF16
 - [[concepts/object-detection]] — object-detection
 - [[concepts/object-storage-queue]] — Object Storage Queue Pattern
 - [[concepts/observability-monitoring-ai-opentelemetry-python-production]] — Observability Monitoring Ai Opentelemetry Python Production
@@ -2730,6 +2733,7 @@
 - [[concepts/uv-scripts-for-ai]] — uv-scripts-for-ai — Self-Contained UV Scripts for AI/ML
 - [[concepts/vajra-background-agent]] — Vajra — Open-Source Background Coding Agent
 - [[concepts/vector-db-agent-memory]] — Vector Database for AI Agent Memory
+- [[concepts/vector-databases]] — Vector Databases — Overview of specialized database systems for high-dimensional vector embeddings, covering Pinecone, Chroma, Qdrant, Weaviate, Milvus, pgvector, LanceDB, and key concepts (ANN, HNSW, hybrid search)
 - [[concepts/vector-search]] — Vector Search
 - [[concepts/vespa]] — Vespa
 - [[concepts/vibe-ceo]] — Vibe CEO
