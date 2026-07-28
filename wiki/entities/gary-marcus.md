@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-07-25
+updated: 2026-07-28
 tags:
   - lab
   - benchmark
@@ -30,6 +30,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-the-white-houses-shambolic-ai-policy--96f61c8f.md
   - raw/articles/garymarcus.substack.com--p-what-washington-must-do--86e00fe4.md
   - raw/articles/garymarcus.substack.com--p-the-generative-ai-fizzle--badee2a3.md
+  - raw/articles/garymarcus.substack.com--p-circular-financing-aint-what-it-used--e1df8edb.md
 ---
 
 # Gary Marcus
@@ -266,7 +267,34 @@ Marcus's core thesis: the market is starting to price in the gap between AI narr
 
 Source: [[raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md]]
 
-### Key Works
+|### Nvidia $250B Backstop & Circular Financing (July 2026)
+|
+|On July 27, 2026, Marcus published \"Circular financing ain't what it used to be,\" documenting a defining feature of the AI industry: the use of circular financing — where AI companies fund each other's purchases through interlocking deals — to sustain what he argues is an unsustainable boom.
+|
+|**Oracle/OpenAI $300B Deal Collapse (Sep 2025–Jul 2026):**
+|- Oracle stock fell from $307 to $120 in nine months after announcing a $300B deal with OpenAI
+|- Larry Ellison's personal net worth briefly leapt by roughly $100B on the announcement, then collapsed as Oracle shares cratered
+|- Marcus cites this as a textbook case of market enthusiasm detached from business fundamentals
+|
+|**Nvidia $250B Backstop for Ohio Data Center (July 27, 2026):**
+|- Nvidia offered to guarantee financing for SoftBank's proposed 10GW data center in Ohio — a project that would consume roughly 2/3rds of the chips Nvidia itself would need to sell
+|- Market reaction: Nvidia shares fell 4.5% in the first hours following the announcement
+|- One investor described the arrangement as reflecting \"desperation\" and likened it to \"two drunks leaning on each other to stand up\"
+|
+|**Prominent Critiques:**
+|- **James Chanos** (noted short seller), with characteristic sarcasm: \"So we are at the point in the cycle where NVDA has to provide financing guarantees for roughly 2/3rds of the cost of the chips it is selling\"
+|- **Matt Stoller** (antitrust researcher): \"I don't understand why Nvidia is backstopping data centers unless there's just not enough real demand for compute\"
+|
+|**Broader Indicators:**
+|- Apple overtook Nvidia in market capitalization
+|- SpaceX was down 25% in a month, and roughly 50% from its June 2026 high
+|- Creditors growing leery; off-balance-sheet financing arrangements coming to light
+|
+|Marcus's conclusion: **\"The GenAI boom hasn't been sustained by profits; it has been sustained by hope and circular financing. That may no longer be enough.\"**
+|
+|Source: [[raw/articles/garymarcus.substack.com--p-circular-financing-aint-what-it-used--e1df8edb.md]]
+|
+|### Key Works
 
 ### Newsletter: Marcus on AI
 

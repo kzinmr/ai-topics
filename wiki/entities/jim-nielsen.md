@@ -2,13 +2,13 @@
 title: Jim Nielsen
 type: entity
 created: 2026-04-09
-updated: 2026-06-29
+updated: 2026-07-28
 tags:
   - person
   - developer-tooling
   - writing
   - hn-popular
-sources: [raw/articles/blog.jim-nielsen.com--2026-intelligence-isnt-enough--dd2462b6.md, raw/articles/collective-speed-isnt-the-sum-of-individual-speed--5ba65187.md]
+sources: [raw/articles/blog.jim-nielsen.com--2026-intelligence-isnt-enough--dd2462b6.md, raw/articles/collective-speed-isnt-the-sum-of-individual-speed--5ba65187.md, raw/articles/blog.jim-nielsen.com--2026-tide-lifts-all-boats--e619bcd4.md]
 ---
 
 
@@ -114,6 +114,28 @@ This reinforces Jim's existing argument in [[#People Are Not Friction]]: the bes
 > *"We talk about super intelligence, but is anyone talking about super collaboration or super teamwork? We absolutely needed teamwork [at Oxide]."*
 
 Source: [[raw/articles/blog.jim-nielsen.com--2026-intelligence-isnt-enough--dd2462b6.md]] — Jim's notes from Bryan Cantrill's talk
+
+### AI × Web Platform Standards (July 2026)
+
+Jim shared a perspective from Jason Grigsby and the Safari team on how AI agents should interact with the web. The core argument, surfaced by Grigsby from the Safari team: **AI agents should not get special treatment on the web.**
+
+> *"An agent acting on a user's behalf is, in effect, assistive technology: it should operate a site as the user would, and the site should not single it out for different treatment."*
+
+The position synthesizes various standards-level discussions into a clear principle: agents should be required to use **existing technologies, APIs, and semantics** rather than get bespoke AI-only solutions. Where the web platform has gaps, the solutions should be centered around closing those gaps for **everyone** — not just for AI agents.
+
+Jim highlights Grigsby's priority framework for the web platform:
+
+> **UX over DX over AX** — user needs come before developer needs, which come before agent needs.
+
+The appeal: take the billions being invested in AI and funnel it toward improving the existing technology that agents already use and profit from. Let the rising tide of AI investment lift all boats in the web platform.
+
+Jim also notes the irony that Grigsby surfaces:
+
+> *"Let's set aside for the moment the irony that AI is supposed to replace all of our jobs and become a super intelligence and at the same time we also need to add special AI training wheels for it to use the web."*
+
+The analogy: AI is like the person who prides themselves on their independence — claiming they don't bend to society or need anyone — but then asks to borrow twenty bucks.
+
+Source: [[raw/articles/blog.jim-nielsen.com--2026-tide-lifts-all-boats--e619bcd4.md]]
 
 ## Key Quotes
 

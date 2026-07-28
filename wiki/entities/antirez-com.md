@@ -2,7 +2,7 @@
 title: "Salvatore Sanfilippo (antirez)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-07-26
+updated: 2026-07-28
 type: entity
 sources:
   - raw/articles/antirez.com--news-166--c7f12317.md
@@ -10,6 +10,7 @@ sources:
   - raw/articles/antirez.com--news-168--a2772c92.md
   - raw/articles/antirez.com--news-169--1ef2a41d.md
   - raw/articles/antirez.com--news-171--99acb946.md
+  - raw/articles/antirez.com--news-172--8bc853be.md
 ---
 
 # Salvatore Sanfilippo (antirez)
@@ -424,3 +425,33 @@ This essay extends antirez's earlier work on AI-assisted programming by providin
 - [[concepts/ai-assisted-development]] — antirez's broader position on AI-assisted coding
 - [[concepts/vibe-coding]] — the phenomenon antirez distinguishes "automatic programming" from
 - [Original blog post](http://antirez.com/news/171) — includes YouTube video transcription
+
+### AI Safety Views (July 2026)
+
+In \"The real AI risk is inside the labs\" ([antirez.com/news/172](http://antirez.com/news/172)), antirez responds to Amodei's blog post with eight numbered points arguing that open-weight models are the mildest risk, and the real danger is inside frontier AI labs.
+
+#### Eight Points on AI Risk
+
+1. **First incident will be inside frontier labs**: Exactly like the OpenAI/HF incident in modality (not outcome), the first serious AI incident is likely to happen *inside* frontier AI labs during model testing — when employees or externals with access do something wrong relative to the model's expected power.
+
+2. **Closed models are leakable, open models are tested**: Closed models are just \"a few TBs of data\" — all it takes is one person with access and the wrong goals to leak one. Open models are released *after* testing, after similarly capable models were already available via API. The real risk is leaks, not releases, and leaks happen inside frontier companies.
+
+3. **Open models can be ablated for safety**: Once LLMs are dangerous enough (e.g., in biology), open models can be trained on a corpus ablated of dangerous science domains while remaining useful for other tasks. The limited context window on ablated domains is strong protection even if the model is otherwise very capable.
+
+4. **Lack of AI access creates weapon imbalance**: Not having widespread access to AI for cybersecurity means defenders lose. Open-source maintainers outside some cyber program can't find all security bugs, while attackers can access frontier cyber models and do significant RL training on open-weight models.
+
+5. **Need joint international AI safety organization**: Once LLMs are dangerous enough (and we are near this limit if progress continues), the safety chain must be inside labs with strong common rules. No single company should independently evaluate whether a model is safe. A joint AI safety organization — recognized by governments where frontier AI companies exist — is needed.
+
+6. **Slowing AI has hidden safety costs**: AI discoveries in medicine and other sciences may lower human suffering. Lack of checks could lead to catastrophe (\"enhanced smallpox\"), but lack of progress means people who could be saved will die. Stopping AI *also* has a security cost — one that is just more hidden.
+
+7. **Critique of anti-China ideological position**: antirez challenges Amodei's stance on China, noting that Europe's history is far more warlike than China's, the current US administration \"spits hate at Europe in all forms,\" and Chinese AI progress will not stop regardless of GPU export policy. He questions whether Amodei's argument implies that once America has AGI it should stop China by force.
+
+8. **Historical technology supremacy never created permanent advantage**: Citing nuclear non-proliferation, antirez notes that technological supremacy has never resulted in a single country creating a permanent advantage. The greatest danger is not government-driven actions (which require many people agreeing) but two other cases: A) a few individuals generating an apocalypse event (e.g., a virus), and B) AI itself escaping human control.
+
+#### Core Thesis
+
+> \"The danger is that a few CEOs (everywhere in the world) without the required background and legitimacy are in the position of making hard choices for humanity at large. They were not selected to do so; it was just the randomness of events that created this setup. They can't speak for everybody, given the stakes, just because they have GPUs and money. This is the first thing that should be fixed.\"
+
+#### Source
+
+- raw/articles/antirez.com--news-172--8bc853be.md

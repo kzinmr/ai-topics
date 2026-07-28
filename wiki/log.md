@@ -1,3 +1,17 @@
+## [2026-07-28] blog-wiki-ingest — 2 TAKE + 2 REFERENCE enrichment
+
+**Source:** blog-triage checkpoint (recovered from failed response render) — 17 candidates processed
+
+**Entity enrichments (4):**
+- UPDATED [[entities/antirez-com.md]] — Added "AI Safety Views (July 2026)" section (31 lines). antirez's 8-point rebuttal to Amodei: real AI risk is inside frontier labs (internal accidents, leaks), not open-weight models. Proposes joint international AI safety organization; critiques anti-China ideological position; argues random CEOs shouldn't hold humanity's fate.
+- UPDATED [[entities/gary-marcus.md]] — Added "Nvidia $250B Backstop & Circular Financing (July 2026)" section (28 lines). Oracle/OpenAI $300B deal collapse ($307→$120); Nvidia $250B Ohio data center backstop (-4.5% market reaction); Matt Stoller/Nvidia not needed if real compute demand existed; "sustained by hope and circular financing" conclusion.
+- UPDATED [[entities/simon-willison.md]] — Added Ethan Mollick opinionated AI guide reference (link blog). Shift from chat to agentic systems; Gemini falls off list; naming confusion (ChatGPT Work/Codex vs Claude Cowork/Code).
+- UPDATED [[entities/jim-nielsen.md]] — Added "AI × Web Platform Standards (July 2026)" section (22 lines). Safari team's position (via Jason Grigsby): AI agents should use existing web APIs, not get bespoke solutions. UX > DX > AX framework. Irony: AI needs "training wheels" for the web.
+
+**Articles archived:** 15 skip/reference items archived via archive_triage.py
+
+**Articles skipped (13):** Kimi K3 (already covered), John D Cook math (3), cancelling-hey, Windows programming, Daring Fireball (2), Windows NT, phone product, Modal Kimi K3 (already covered), Pluralistic EU regulation, Tedium social media
+
 ## [2026-07-28] blog-ingest triage — 27 articles collected, 17 saved
 
 **Checkpoint:** `blog_ingest_20260728T100816Z.json` — 27 new articles from blog RSS scan, 17 saved as raw articles, 3 unsaved (OpenAI paywall, 2× LWN paywall)
