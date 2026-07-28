@@ -1,3 +1,7 @@
+## [2026-07-28] X Article ingestion — Graph Engineering (Akshay Pachaar)
+
+| 2026-07-28 | x-article-ingest | Created: concepts/graph-engineering.md (Graph Engineering — coordination layer across multiple agent loops; nodes/edges/state abstraction; five-layer stack; four hard problems; when to use vs stay in loop). Created: raw/articles/2026-07-25_akshay-pachaar_graph-engineering-clearly-explained.md (X Article, 1,529 bookmarks, 288K impressions). Updated: concepts/loop-engineering.md (+graph-engineering cross-reference, +source). Updated: index.md, log.md. Source: https://x.com/akshay_pachaar/status/2081089131808243999 |
+
 ## [2026-07-28] raw-backlog-ingest — 2 entity page enrichments from podcast transcript
 
 | 2026-07-28 | raw-backlog-ingest | Enriched: entities/eiso-kant.md (+Persistence Over Raw Intelligence thesis, Knowledge Work Optimal Size argument, Encouraging Competitors philosophy, Optimizer bug anecdote, Earning the Right to Publish). Enriched: entities/poolside.md (+Blender streaming data architecture, Immutable data layer, Zero call events metric, FP8/H200 training infra details, YOLO-to-Rigor transition story). Source: raw/articles/2026-07-24_poolside-latent-space.md (Latent Space podcast transcript, 101KB). |

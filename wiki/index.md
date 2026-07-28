@@ -1800,6 +1800,7 @@
 - [[concepts/gram-recursive-reasoning]] — GRAM (Generative Recursive Reasoning)
 - [[concepts/granite-4-1]] — Granite 4.1
 - [[concepts/graph-db-overengineering-rag]] — You Don't Need a Graph DB for RAG (Probably)
+- [[concepts/graph-engineering]] — Graph Engineering — Coordination layer across multiple agent loops; nodes, edges, shared state; when to use graphs vs simple loops; four hard problems (node justification, state hygiene, routing trust, agent agreement)
 - [[concepts/graph-of-algorithms]] — Graph of Algorithms — Companies as Algorithmic Graphs
 - [[concepts/great-pendulum]] — great-pendulum
 - [[concepts/griffin-adams]] — griffin-adams

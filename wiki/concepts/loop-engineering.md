@@ -392,6 +392,7 @@ Loop engineering is a set of capabilities, not a product: scheduling, run-until-
 
 ## Relationship to Adjacent Concepts
 
+- [[concepts/graph-engineering]] — The coordination layer across multiple loops. When one loop stops being enough, graph engineering governs what runs when, in what order, and who checks whom. A graph doesn't replace loops — it connects and governs them.
 - [[concepts/agent-loop-orchestration]] — The technical architecture of the think-act-evaluate cycle. Loop engineering is the engineering discipline that designs, budgets, and productionizes those cycles.
 - [[concepts/harness-engineering/agentic-loop]] — The ralph loop pattern of deliberate context resets between iterations. Loop engineering's six building blocks extend this into full infrastructure.
 - [[concepts/compound-engineering-every]] — Matt Van Horn's related framework for compound engineering loops.
@@ -407,3 +408,4 @@ Loop engineering is a set of capabilities, not a product: scheduling, run-until-
 - [Loop Engineering](https://x.com/i/article/2064127981161959567) — Addy Osmani, June 2026
 - Prithvi Rajasekaran (Anthropic), "Building long-running agentic applications: the generator/evaluator pattern," 2026
 - Steve Kaliski (Stripe), "Stripe's Minions: 1,300 PRs a week," How I AI podcast, 2026
+- [[raw/articles/2026-07-25_akshay-pachaar_graph-engineering-clearly-explained]] — Akshay Pachaar, "Graph Engineering Clearly Explained" (Jul 25, 2026). X Article. Situates loop engineering as the fourth layer; graph engineering as the fifth. 1,529 bookmarks.
