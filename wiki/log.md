@@ -1,3 +1,24 @@
+## [2026-07-28] blog-ingest triage — 27 articles collected, 17 saved
+
+**Checkpoint:** `blog_ingest_20260728T100816Z.json` — 27 new articles from blog RSS scan, 17 saved as raw articles, 3 unsaved (OpenAI paywall, 2× LWN paywall)
+
+**Wiki updates (2):**
+- UPDATED [[concepts/kimi-k3]] — Open weight release confirmed Jul 27 (1.56TB on HF), licensing evolution (new MaaS clause), Day-0 inference providers (Modal 460 tok/s via DFlash, Fireworks AI, OpenRouter 7 providers)
+- UPDATED [[entities/kimi]] — K3 model table entry updated with open-weight release confirmation and new license details
+
+**AI-relevant articles triaged:**
+- **Kimi K3 open weights** (Simon Willison) — 2.8T params, 1.56TB on HF, new MaaS license requiring separate agreement for >$20M revenue
+- **Kimi K3 on Modal** (Modal Blog) — 460 tok/s via DFlash speculator, 360% faster interactivity, day-0 vLLM
+- **Kimi K3 on Fireworks** (Fireworks AI Blog) — US-hosted, zero data retention, day-0
+- **antirez: "The real AI risk is inside the labs"** — AI safety argument: risk is inside frontier labs (leaks, testing incidents), not open models; calls for joint international AI safety organization; critiques Amodei's anti-China stance
+- **Simon Willison: "Opinionated guide to which AI to use"** — Ethan Mollick's guide evolution: shift from chat to agentic systems; ChatGPT Work/Codex vs Claude Cowork/Code naming confusion
+- **Gary Marcus: "Circular financing ain't what it used to be"** — Oracle/OpenAI $300B deal skepticism; AI bubble analysis
+- **Jim Nielsen: "Can the Tide of AI Investment Lift All Boats on the Web?"** — AI agents as assistive technology; web standards should benefit everyone, not just agents
+
+**Non-AI articles (skipped):** tedium Facebook trick, pluralistic EU/Google, johndcook math (3 articles), chadnauseam Hey cancellation, daringfireball ads/soap, oldnewthing C++/WinRT, dfarq Windows NT 3.1, fail.xyz Agent Fone
+
+**Unsaved (3):** OpenAI "How AI is expanding what people do at work" (fetch failed), LWN "Hazard pointers for the kernel" (paywall), LWN "GNU Binutils 2.47 released" (paywall)
+
 ## [2026-07-27] Dreaming consolidation — saturation pass (Takes=0, Refs=2)
 - Filesystem scan: 159 raw articles, top 40 AI-relevant articles evaluated
 - All significant articles already processed by daily pipelines (blog-wiki-ingest, newsletter-wiki-ingest, active-crawl, prior dreaming triage 7/26)

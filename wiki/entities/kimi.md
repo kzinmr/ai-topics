@@ -83,11 +83,13 @@ Moonshot has maintained a rapid **2–3 month major-update cadence** since mid-2
 | **Kimi K2.5** | Jan 2026 | Multimodal MoE + **MoonViT** vision encoder (400M params); native video/image + Agent Swarm v1 |
 | **Kimi K2.6** | Apr 2026 | **Current flagship** — 12-hour execution, 300-agent swarms, long-horizon coding |
 | **Kimi K2.7 Code** | Jun 2026 | Coding-optimized reasoning variant (~30% fewer tokens than K2.6); Fireworks Day-0 |
-| **Kimi K3** | Jul 2026 | **2.8T parameter MoE**; first open 3T-class model; beats Opus 4.8/GPT-5.5 high; $3/$15 pricing; open weights by Jul 27 |
+| **Kimi K3** | Jul 2026 | **2.8T parameter MoE**; first open 3T-class model; beats Opus 4.8/GPT-5.5 high; $3/$15 pricing; open weights released Jul 27 (1.56TB on HF); new MaaS license |
 
 ### Open-Weight Licensing
 
 K2, K2.5, and K2.6 are released under a **Modified MIT License** requiring attribution for products exceeding 100M monthly users or $20M monthly revenue.
+
+K3 (Jul 2026) introduced a **new license** — no longer "modified MIT." It requires a separate agreement with Moonshot for any "Model as a Service" business exceeding $20M aggregate revenue over any consecutive 12 months. Moonshot consistently uses "open weight" (not "open source") in their materials.
 
 ---
 

@@ -2,7 +2,7 @@
 title: "Moonshot Kimi K3"
 type: concept
 created: 2026-07-17
-updated: 2026-07-27
+updated: 2026-07-28
 tags:
   - model
   - china
@@ -14,15 +14,17 @@ sources:
   - "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md"
   - "raw/newsletters/2026-07-17-ainews-kimi-k3-2-8t-a50b-the-largest-open-model-ever-released-opus-4-8-class-at-.md"
   - "raw/articles/2026-07-24_together-ai-kimi-k3-vs-fable-deepswe.md"
-  - "https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding"
   - "raw/articles/together.ai--blog-kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routi--a97a06f4.md"
+  - "raw/articles/simonwillison.net--2026-jul-27-kimi-k3--f8e3d6fa.md"
+  - "raw/articles/modal.com--blog-kimi-k3-by-moonshot-now-available-on-modal--66112a1a.md"
+  - "raw/articles/2026-07-28_fireworks-ai_kimik3-on-fireworks.md"
 ---
 
 # Moonshot Kimi K3
 
 ## Overview
 
-**Kimi K3** is Moonshot AI's most capable model to date, announced July 16, 2026. With **2.8 trillion total parameters** (rounded up to 3T by Moonshot), it is positioned as the first "open 3T-class model" — more than twice the size of its predecessor [[concepts/kimi-k2-6|Kimi K2.6]] (1T). The model is currently available via kimi.com and the Moonshot API, with an **open weight release promised by July 27, 2026**.
+**Kimi K3** is Moonshot AI's most capable model to date, announced July 16, 2026. With **2.8 trillion total parameters** (rounded up to 3T by Moonshot), it is positioned as the first "open 3T-class model" — more than twice the size of its predecessor [[concepts/kimi-k2-6|Kimi K2.6]] (1T). Open weights were released on schedule on **July 27, 2026** (1.56TB on Hugging Face), with day-0 support from Modal, Fireworks AI, and OpenRouter.
 
 K3 represents a significant pricing tier shift for Chinese AI labs: at **$3/M input and $15/M output**, it is the most expensive model from a Chinese provider to date, pricing at the same level as Anthropic's Claude Sonnet series.
 
@@ -263,9 +265,42 @@ K3's launch was widely framed as a **"DeepSeek moment"** for open-source AI — 
 
 ## Open Weight Status
 
-K3 is **not yet open weight** as of July 16, 2026. Moonshot has committed to releasing open weights **by July 27, 2026**. This would make it the largest open-weight model available, surpassing DeepSeek's 1.6T V4 Pro.
+**Released July 27, 2026** — Moonshot delivered on schedule. The weights are **1.56TB on Hugging Face** ([`moonshotai/Kimi-K3`](https://huggingface.co/moonshotai/Kimi-K3)), making K3 the largest open-weight model available, surpassing DeepSeek's 1.6T V4 Pro.
 
-Prior Moonshot open-weight releases (K2, K2.5, K2.6) have used a **Modified MIT License** requiring attribution for products exceeding 100M monthly users or $20M monthly revenue.
+### Licensing Evolution
+
+K3's license marks a significant departure from K2's Modified MIT:
+
+- **K2 (Jul 2025)**: "Modified MIT" — added a paragraph requiring attribution ("Kimi K2" on UI) for products with >100M MAU or >$20M monthly revenue
+- **K3 (Jul 2026)**: No longer calls itself "modified MIT." Requires a **separate agreement with Moonshot AI** for any "Model as a Service" business exceeding $20M aggregate revenue over any consecutive 12 months
+
+Moonshot consistently uses the term "open weight" (not "open source") in their own materials, acknowledging the license is not OSI-compliant.
+
+> **Source**: [Simon Willison — moonshotai/Kimi-K3](https://simonwillison.net/2026/Jul/27/kimi-k3/) (Jul 27, 2026)
+
+## Day-0 Inference Providers
+
+K3's open-weight release triggered immediate availability across major inference platforms:
+
+### Modal
+- **460 tokens/sec** on release day via custom **DFlash** speculator tuned to K3's architecture
+- 360% faster interactivity (100→460 tok/s), 88% higher throughput (800K→1.5M TPM/GPU)
+- DFlash training: 32 B300 nodes (28 running K3 at TP8 for hidden states, 4 training draft model)
+- Day 0 vLLM integration thanks to Moonshot's upstream KDA prefix caching contribution
+- Shared API ($30/mo free tier) + dedicated Auto Endpoints
+
+> **Source**: [Modal Blog — Kimi K3 by Moonshot now available on Modal](https://modal.com/blog/kimi-k3-by-moonshot-now-available-on-modal) (Jul 27, 2026)
+
+### Fireworks AI
+- US-hosted, zero data retention
+- Day-0 training for K3 serving
+- Competes directly with Opus 5 on benchmarks (K3 vs Opus 5 comparison published)
+
+> **Source**: [Fireworks AI — Kimi K3 on Fireworks](https://fireworks.ai/blog/kimik3-on-fireworks) (Jul 27, 2026)
+
+### OpenRouter
+- Available from **7 providers** at launch
+- Consistent pricing: $3/M input, $15/M output (matching Moonshot's own rates)
 
 ## Competitive Position
 
