@@ -1,7 +1,7 @@
 ---
 title: "Microsoft MAI Models"
 created: 2026-05-12
-updated: 2026-07-18
+updated: 2026-07-28
 type: concept
 tags: [microsoft, model, voice-ai, image-generation, openai, reasoning-model, code-model]
 sources: 
@@ -15,6 +15,20 @@ sources:
 # Microsoft MAI Models
 
 Microsoft's in-house AI model family (MAI: Microsoft AI), marking the company's strategic independence from its OpenAI partnership.
+
+## Hill-Climbing Machine Framework
+
+The MAI-Thinking-1 technical report (109 pages, June 2026) introduces a **"hill-climbing machine"** philosophy: treat model development as a system-level optimization problem with sustained, log-linear performance improvement over thousands of RL steps, rather than a series of discrete model releases.
+
+**Three Design Principles:**
+
+1. **Capabilities should be learned, not inherited** — Intelligence imitated through distillation lacks steerability and robustness for long climbs. MAI-Thinking-1 is trained from scratch with zero distillation from third-party models, on exclusively clean, enterprise-grade data with no synthetic pre-training data.
+
+2. **Simplicity is sustainable** — Favor simple, scalable recipes; clean, trustworthy data; and transparent infrastructure that together support climbing from scratch. Complex tricks that work once often break when scaled.
+
+3. **Scientific rigor avoids shortcuts** — Every decision must be testable through data-driven ladders, ablations, and evaluations that expose reliable paths to the top. The scaling ladder methodology (ablation at multiple model sizes) enforces this discipline.
+
+The result: sustained log-linear improvement over thousands of RL steps, with domain-specific specialist climbs (STEM, agentic coding, helpfulness & safety) consolidated into a single model via SFT distillation.
 
 ## Models
 
@@ -59,6 +73,40 @@ Rather than training one model for all capabilities, MAI trains **three domain-s
 The model was pre-trained on **8K NVIDIA GB200 GPUs** on a Microsoft-operated Azure cluster. Training achieved **90% goodput** (usable training throughput) through custom infrastructure optimization including dropless MoE implementation supporting variable message sizes. The inference serving stack is **MAIA-200**. The entire training used **30T tokens** processed entirely in-house from raw web/books/code/papers — no open-source training datasets and no synthetic pre-training data.
 
 **Key innovation**: MAI demonstrates that training a competitive reasoning model from scratch with zero distillation from third-party models is feasible at the 1T-parameter scale, using enterprise-grade data curation and a modular RL climb architecture.
+
+#### Pre-Training Data Composition
+
+MAI-Base-1's 30T-token pre-training corpus was built entirely in-house from raw HTML/PDF/books/code, with no open-source training datasets and no synthetic data. Data was processed through proprietary pipelines: HTML extraction, heuristic filtering, exact/fuzzy dedup, cross-source dedup, embedding generation, and PII/safety filtering. Final composition (from the 109-page tech report):
+
+| Source Family | Unique Tokens (T) | Training Tokens (T) | Mix % | Avg. Epochs |
+|--------------|-------------------|--------------------|-------|-------------|
+| Code | 7.4 | 16.4 | 54.6% | 2.22x |
+| STEM | 2.2 | 4.7 | 15.8% | 2.17x |
+| Math | 0.3 | 1.6 | 5.4% | 5.28x |
+| Books & journals | 0.6 | 0.9 | 3.1% | 1.65x |
+| PDFs | 2.7 | 1.4 | 4.7% | 0.53x |
+| Web text | 8.1 | 4.5 | 14.9% | 0.55x |
+| Multilingual (other) | 8.1 | 0.5 | 1.7% | 0.06x |
+
+Code dominated the mixture at 54.6%, followed by STEM (15.8%) and web text (14.9%). Math was the most heavily upsampled (5.28x epochs). Multilingual data was aggressively downsampled (0.06x). Data sources had knowledge cutoffs from June 2025 (GitHub code) to March 2026 (books/journals).
+
+#### Self-Distillation for RL Stability
+
+A key innovation enabling the thousands-of-steps RL climb is **self-distillation**: when RL crashes occur or the base policy needs updating, the model generates reasoning traces from recent healthy checkpoints, filters them for quality, and uses them via SFT to recover the RL policy without losing learned capabilities. This is critical because RL climbs from scratch (starting with no prior reasoning traces) face long-term training stability as a central challenge.
+
+#### Adaptive Entropy Control in GRPO
+
+The RL recipe modifies standard GRPO with **adaptive entropy control**: a dynamic upper clip bound adjusted via an integral controller that tracks target policy entropy. When entropy drops too low, the clipping bound widens to allow more aggressive token probability updates; when entropy is high, the bound tightens. Combined with an **outer ratio clip** (hard cap on all ratio branches), this prevents the gradient-norm explosions that standard GRPO's unclipped branches can cause at scale.
+
+#### Rocket RL Infrastructure
+
+The RL framework is called **Rocket**, built on Ray actors with SGLang-based serving:
+
+- **Controller**: Loads RL tasks, sends to problem workers, receives completed rollouts with grading metadata, filters and batches for the learner. Supports both on-policy and off-policy RL (primarily off-policy at scale).
+- **Problem Worker**: Generates rollouts with a two-stage early-exit strategy (16 rollouts first, if pass rate in range then 128 full rollouts), computes normalized advantages, implements fault tolerance.
+- **Rollout Worker**: Generates single rollouts with tool-calling capability, optionally grades, supports multi-step agentic interactions.
+
+The two-stage early-exit strategy dramatically reduces wasted compute: if 16 quick rollouts all pass or all fail, the task is aborted without generating 128 full rollouts.
 
 ### MAI-Code-1-Flash
 A code-specialist model with 137B total parameters and 5B active (MoE). Built end-to-end by Microsoft using "appropriately licensed data." Purpose-built for GitHub Copilot and VS Code to deliver high performance at lower cost. Rolling out to GitHub Copilot individual users in Visual Studio Code.

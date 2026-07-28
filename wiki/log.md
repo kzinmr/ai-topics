@@ -1,6 +1,11 @@
 ## [2026-07-28] X Article ingestion — Graph Engineering (Akshay Pachaar)
 
 | 2026-07-28 | x-article-ingest | Created: concepts/graph-engineering.md (Graph Engineering — coordination layer across multiple agent loops; nodes/edges/state abstraction; five-layer stack; four hard problems; when to use vs stay in loop). Created: raw/articles/2026-07-25_akshay-pachaar_graph-engineering-clearly-explained.md (X Article, 1,529 bookmarks, 288K impressions). Updated: concepts/loop-engineering.md (+graph-engineering cross-reference, +source). Updated: index.md, log.md. Source: https://x.com/akshay_pachaar/status/2081089131808243999 |
+---
+## [2026-07-28] raw-backlog-ingest — MAI-Thinking-1 tech report enrichment
+
+| 2026-07-28 | raw-backlog-ingest | Enriched: concepts/microsoft-mai-models.md (+Hill-Climbing Machine framework with 3 design principles, Pre-Training Data Composition table with 7 source families, Self-Distillation for RL Stability mechanism, Adaptive Entropy Control in GRPO, Rocket RL Infrastructure — Controller/Problem Worker/Rollout Worker architecture with two-stage early-exit strategy). Sources: raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md (109-page tech report, 372KB). Skipped (already archived): reframing-superintelligence-fhi-2019.md, dwarkesh.com--p-grant-sanderson-2--960d89cd.md. Skipped (already well-covered): benchflow-awesome-evals-2025.md, 2026-07-24_poolside-latent-space.md. |
+
 
 ---
 ## [2026-07-28] raw-backlog-ingest — 2 entity page enrichments from podcast transcript
