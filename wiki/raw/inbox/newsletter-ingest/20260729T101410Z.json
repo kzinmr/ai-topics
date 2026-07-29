@@ -1,0 +1,99 @@
+{
+  "run_id": "20260729T101410Z",
+  "triaged_at": "2026-07-29T10:14:10Z",
+  "source": "newsletter-ingest",
+  "total_newsletters": 5,
+  "relevant_newsletters": 4,
+  "skipped_newsletters": 1,
+  "classifications": [
+    {
+      "message_id": "<20260728152630.3.1ab9a5396678a9c9@mg2.substack.com>",
+      "subject": "Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI",
+      "date": "2026-07-28",
+      "source": "Latent Space (swyx)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-28-codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai.md",
+      "primary_url": "https://open.substack.com/pub/swyx/p/chatgpt-work",
+      "importance": "critical",
+      "wiki_relevance": "coding-agents",
+      "reason": "Latent Space podcast episode on OpenAI Codex reaching 10M users. Covers Codex product evolution and ChatGPT Work — directly relevant to [[openai]], [[codex]], coding agents, and AI-assisted developer tooling concepts.",
+      "suggested_pages": [
+        {"type": "event", "title": "Codex 10M Users Milestone", "priority": "high"},
+        {"type": "entity", "target": "openai", "action": "update"},
+        {"type": "concept", "target": "coding-agents", "action": "update"}
+      ],
+      "action": "fetch-and-ingest"
+    },
+    {
+      "message_id": "<20260729004653.3.dc02aceac27b189f@mg-d0.substack.com>",
+      "subject": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace …",
+      "date": "2026-07-29",
+      "source": "Latent Space / AINews (swyx)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-29-ainews-fearing-rsi-openai-anthropic-gdm-meta-thinky-cosign-letter-to-pace-ai-dev.md",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-fearing-rsi-openai-anthropic",
+      "importance": "critical",
+      "wiki_relevance": "ai-safety",
+      "reason": "Major AI safety/policy news: joint letter from OpenAI, Anthropic, Google DeepMind, Meta, and Thinky urging to 'pace' AI development, citing fears of recursive self-improvement (RSI). Also mentions HuggingFace developments. Directly relevant to [[ai-safety]], [[ai-governance]], and entity pages for all cosigners.",
+      "suggested_pages": [
+        {"type": "event", "title": "RSI Pace Letter (July 2026)", "priority": "high"},
+        {"type": "concept", "target": "ai-safety", "action": "update"},
+        {"type": "concept", "target": "ai-governance", "action": "update"}
+      ],
+      "action": "fetch-and-ingest"
+    },
+    {
+      "message_id": "<20260728131018.3.a3caecce63198a44@mg2.substack.com>",
+      "subject": "Opus 5 >> Fable 5",
+      "date": "2026-07-28",
+      "source": "Ben's Bites",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-28-opus-5-fable-5.md",
+      "primary_url": "https://open.substack.com/pub/bensbites/p/opus-5-fable-5",
+      "importance": "high",
+      "wiki_relevance": "models",
+      "reason": "Ben's Bites comparison of Opus 5 (likely Claude/Anthropic) vs Fable 5 model. Suggests new model releases or benchmarks. Relevant to model entity pages and potential benchmark comparisons.",
+      "suggested_pages": [
+        {"type": "entity", "target": "anthropic", "action": "update"},
+        {"type": "concept", "target": "llm-benchmarks", "action": "update"}
+      ],
+      "action": "fetch-and-ingest"
+    },
+    {
+      "message_id": "<20260728.160713.d1479d21@mta26>",
+      "subject": "📦 The Biggest Model Ever Built Is Now Free",
+      "date": "2026-07-28",
+      "source": "beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-28-the-biggest-model-ever-built-is-now-free.md",
+      "primary_url": "https://link.mail.beehiiv.com/v1/c/agoyUX87VBj6EBHEUbkMaXUfgF2r7P8cT6lhheuJceLXYH5a699G0NwkJgMe%0Ac4UpHwIbRBDdGySh69LLWTWXzQqMRXHDFAr8tKujCvnzqLgm4EZdOwC4AS8t%0A%2FIeYSkmiMZDBO4r%2BUnmN7eezgOA4o4P5sHcBIZGlt1v%2FlIW6PSqux0DxibI%2F%0A5%2BQYiQ3rh1FL%2FmMxutN8foQRSKCBU9ATXA%3D%3D%0A/ed81c2404e17e97d",
+      "importance": "high",
+      "wiki_relevance": "models",
+      "reason": "Announces a major model being made freely available. Likely relates to open-weight model releases or free-tier model access. Relevant to model entities and open-source AI concepts.",
+      "suggested_pages": [
+        {"type": "concept", "target": "open-source-ai", "action": "update"}
+      ],
+      "action": "fetch-and-ingest"
+    },
+    {
+      "message_id": "<20260728155424.3.f929e7ee45d2cf6b@mg2.substack.com>",
+      "subject": "11 products I love, free for a year—the biggest Product Pass expansion in 2 years",
+      "date": "2026-07-28",
+      "source": "Lenny's Newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-28-11-products-i-love-free-for-a-year-the-biggest-product-pass-expansion-in-2-years.md",
+      "primary_url": "https://open.substack.com/pub/lenny/p/productpass-summer2026launch",
+      "importance": "low",
+      "wiki_relevance": "off-topic",
+      "reason": "Lenny's Newsletter product pass promotion — general SaaS/product management tools. Not AI/LLM/Agent focused. Skip unless the 11 products include notable AI developer tools.",
+      "suggested_pages": [],
+      "action": "skip"
+    }
+  ],
+  "summary": {
+    "critical_count": 2,
+    "high_count": 2,
+    "low_count": 1,
+    "top_stories": [
+      "Codex from 0 to 10M Users — OpenAI Codex product milestone (Latent Space podcast)",
+      "RSI Pace Letter — OpenAI, Anthropic, GDM, Meta, Thinky joint AI safety letter",
+      "Opus 5 >> Fable 5 — model comparison (Ben's Bites)",
+      "Biggest Model Now Free — major model release (beehiiv)"
+    ]
+  }
+}
