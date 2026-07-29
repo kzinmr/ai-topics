@@ -23,6 +23,7 @@ sources:
   - raw/newsletters/2026-07-01-aiewf-daily-dispatch-loops-software-factories-forward-deployed-engineers.md
   - raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md
   - raw/newsletters/2026-07-28-codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai.md
+  - raw/articles/2026-07-28_burkeholland_the-harness-is-all-you-need-mostly.md
 ---
 
 # Agentic Engineering
@@ -338,12 +339,48 @@ Source: [[raw/newsletters/2026-07-28-codex-from-0-to-10m-users-building-chatgpt-
 
 This insight connects to [[entities/openai-codex]] and the broader theme of [[concepts/compound-engineering-every|compound engineering]] workflows where human taste and direction become the scarce resource.
 
+## Harness-First Philosophy (Burke Holland, July 2026)
+
+[[entities/burke-holland|Burke Holland]] (GitHub developer advocate) published a practical articulation of agentic engineering in July 2026 with his "harness is all you need (mostly)" thesis. The key insight: **deep harness literacy yields more consistent productivity gains than constantly adopting new tools, MCPs, skills, and configurations.**
+
+### The 8-Step Copilot Workflow as Agentic Engineering Practice
+
+Holland's workflow embodies the core agentic engineering principle of **structured iteration over one-shot generation**:
+
+| Phase | Copilot Feature | Agentic Engineering Principle |
+|-------|----------------|------------------------------|
+| **Prototype** | Prompt-based mockups | Surface requirements before implementation — "prototyping helps uncover the nuances up front, so you avoid spending valuable time and tokens on rework" |
+| **Plan** | `/plan` mode + `grill-me` skill | Socratic requirement elicitation — the model asks edge-case questions you can't anticipate |
+| **Implement** | Autopilot + subagent orchestration | Loop-based execution with automatic verification that each plan item is completed |
+| **Review** | Human iteration + Rubber Duck | Cross-model blind-spot detection (different AI family review) + "be ruthless about quality" |
+
+### Key Practices
+
+- **YOLO mode (`/allow-all`)**: "Agents need autonomy for you to see an increase in productivity. If you have to approve everything the agent does, you might as well just do it yourself."
+- **Sandbox safety**: Run agents in Codespaces or dev containers when using full autonomy
+- **Cross-model review**: Rubber Duck feature requests review from a **different AI family** (GPT → Claude, or vice versa) — different training data means different blind spots
+- **Autopilot as a verification loop**: Not just execution — "it forces the model to continue working by ensuring that it has actually done what it said it would do"
+- **Conversational iteration**: "Don't overthink it. When you're fixing a bunch of small things, just give it to the model. If you've got the context, you've got the prompt."
+- **Taste as the human differentiator**: "The most important thing is not to settle for AI output that is 'good enough.' Insist on quality. Be ruthless about it. That part is still your responsibility, and knowing what a quality result is from something that isn't is the value that you bring."
+
+### Connection to Agentic Engineering Principles
+
+Holland's workflow maps directly to established agentic engineering patterns:
+
+- **Verification over reading** → Rubber Duck + Autopilot verify code, not human manual review
+- **Loops are the new prompts** → Autopilot loop + iterative human review cycles
+- **Taste as bottleneck** → "No AI will ever replace your human touch and creativity"
+- **Simplicity over complexity** → "Just focus on getting a repeatable, high-quality result in the simplest way that you can"
+
+Source: [[raw/articles/2026-07-28_burkeholland_the-harness-is-all-you-need-mostly.md]] — Burke Holland, "The harness is all you need (mostly)", July 2026
+
 ## Related Concepts
 
 - [[concepts/agent-skills]] — Reusable patterns for coding agents
 - [[concepts/coding-agents/code-review-agents]] — Background verification daemons
 - [[concepts/context-engineering|Context Engineering]] — Building agent memory substrates
 - [[concepts/harness-engineering]] — Building thin agent harnesses
+- [[entities/burke-holland]] — Burke Holland, harness-first advocate
 - [[concepts/generator-evaluator-workflow]] — Generator-evaluator architecture
 - [[concepts/compound-engineering-every]] — The methodology underpinning Van Horn's /ce-plan → /ce-work loop
 - [[entities/matt-van-horn]] — Leading practitioner, author of "Every Agentic Engineering Hack I Know"

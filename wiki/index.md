@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (867 pages)
+## Entities (868 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -117,6 +117,7 @@
 - [[entities/brutecat-com]] — Brutecat
 - [[entities/bryan-bischof]] — Bryan Bischof — Theory Ventures data scientist; creator of BBPlot eval-driven chart library; featured on Show Us Your Agent Skills EP 02 (June 27)
 - [[entities/bryan-catanzaro]] — Bryan Catanzaro
+- [[entities/burke-holland]] — Burke Holland — GitHub developer advocate; "harness is all you need (mostly)" thesis; 8-step Copilot workflow — prototype/plan/implement/review (July 29)
 - [[entities/buildy]] — Buildy
 - [[entities/bytedance]] — ByteDance
 - [[entities/byterover]] — byterover

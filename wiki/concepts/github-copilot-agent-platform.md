@@ -1,11 +1,12 @@
 ---
 title: "GitHub Copilot Agent Platform"
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-07-29
 type: concept
 tags: [github-copilot, coding-agent, developer-tooling, ai-agents, microsoft, agent-platform]
 sources:
   - raw/newsletters/2026-06-03-ainews-microsoft-build-mai-thinking-1-and-mai-family-models.md
+  - raw/articles/2026-07-28_burkeholland_the-harness-is-all-you-need-mostly.md
 ---
 
 # GitHub Copilot Agent Platform
@@ -75,8 +76,43 @@ The broader Microsoft strategy positions **Windows as an agent runtime** — an 
 - Cross-platform agent portability through containerization
 - Compatibility with the wider [[entities/openai|OpenAI]] ecosystem and industry standards ([[concepts/harness-engineering/agent-engineering-guide-2026|MCP, agent-to-agent protocols]])
 
+## Practical Workflow: Prototype → Plan → Implement → Review (Burke Holland)
+
+Burke Holland ([@burkeholland](https://x.com/burkeholland), GitHub developer advocate) published an 8-step practical workflow for GitHub Copilot in July 2026, grounded in the philosophy that **harness literacy matters more than tool addiction**:
+
+### Core Workflow
+
+| Step | Feature | Description |
+|------|---------|-------------|
+| 1. Pick a tool | Any Copilot surface | CLI, Copilot app, VS Code, Visual Studio, JetBrains — same harness across all. **CLI recommended for beginners** (direct text interaction with minimal UI). |
+| 2. YOLO mode | `/allow-all` | Agents need autonomy. Run in sandboxes (Codespaces, dev containers) for safety. |
+| 3. Prototype | Prompt-based mockups | "Give me 20 mocks" before implementation. Surfaces hidden requirements. Works for UI (HTML) and non-visual tasks (Mermaid diagrams). |
+| 4. Plan | `/plan` mode | Model asks edge-case questions. Use `grill-me` skill (Matt Pocock) for aggressive questioning. Human engages deeply — don't just accept AI suggestions. |
+| 5. Implement | **Autopilot** | Built-in loop ensuring every plan item is completed. Automatic subagent orchestration (Explore for reading, General Purpose for complex work). |
+| 6. Human review | Iteration | Conversational fixes. Don't overthink prompts — "if you've got the context, you've got the prompt." Be ruthless about quality. |
+| 7. Rubber duck | Cross-model review | Reviews from a **different AI family** (e.g., GPT → Sonnet). Different training data = different blind spots. Can combine with Autopilot for iterative improvement loops. |
+| 8. Profit | Stage, commit | Start new chat session for unrelated topics. |
+
+### Key Features in the Workflow
+
+- **Rubber Duck review**: Requests review from a model of a different AI family. Cross-model blind-spot detection. Can be combined with Autopilot for automated refinement loops (`/autopilot rubber duck ... Repeat until diminishing returns`).
+- **Autopilot**: Built-in execution loop that verifies each plan item was completed. Automatic subagent routing (Explore subagent with small model for code reading, General Purpose subagent with large model for complex actions). Works out of the box without custom agent configuration.
+- **Plan mode** (`/plan`): Structured requirement elicitation through Socratic questioning about edge cases (date validation, partial selections, format handling). Optionally combined with `grill-me` skill for aggressive interrogation.
+- **YOLO mode** (`/allow-all`): Full agent autonomy without per-action approval. Requires sandboxing (Codespaces recommended).
+
+### Holland's Principles
+
+- **Model choice**: Medium-sized models (GPT 5.6 Terra, Claude Sonnet) on medium reasoning for most work
+- **Prompt caching**: Stick with one model per feature/bug for token savings
+- **Simplicity**: "Nobody really knows what they are doing right now. A lot of what is today's magical incantation for AI will be tomorrow's anti-pattern."
+- **Harness literacy over tool accumulation**: Deep understanding of the built-in harness yields more consistent gains than constantly adopting new MCPs, skills, and configurations
+
+Source: [[raw/articles/2026-07-28_burkeholland_the-harness-is-all-you-need-mostly.md]] — Burke Holland, "The harness is all you need (mostly)", July 2026
+
 ## Related Pages
 
+- [[entities/burke-holland]] — Burke Holland, author of the practical workflow
+- [[entities/copilot-cli]] — GitHub Copilot CLI, recommended entry point
 - [[entities/github]] — GitHub entity page
 - [[concepts/harness-engineering/agent-engineering-guide-2026]] — Agent engineering patterns and protocols
 - [[entities/microsoft]] — Microsoft entity page

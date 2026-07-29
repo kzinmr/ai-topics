@@ -1,3 +1,24 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-07-29] X bookmarks ingest — Burke Holland "The harness is all you need (mostly)"
+
+**Bookmark**: Burke Holland's (@burkeholland) X Article on practical GitHub Copilot workflow
+
+**Created**:
+- `entities/burke-holland.md` — Burke Holland entity page: GitHub developer advocate, harness-first philosophy, 8-step Copilot workflow, Postrboard CSS framework
+
+**Enriched**:
+- `concepts/github-copilot-agent-platform.md` — Added practical workflow section: Prototype → Plan → Implement → Review, Rubber Duck review, Autopilot, YOLO mode, grill-me skill, Holland's principles (July 29)
+- `concepts/agentic-engineering.md` — Added Harness-First Philosophy section mapping Holland's workflow to agentic engineering principles (verification over reading, loops over one-shots, taste as bottleneck, simplicity over complexity) (July 29)
+
+**Raw article**: `raw/articles/2026-07-28_burkeholland_the-harness-is-all-you-need-mostly.md`
+
+**Index**: Entities 867→868
+
+**Source**: X bookmark from tweet ID 2082201573976056245 (article ID 2039106922583117824) — retrieved via article.plain_text from bookmark metadata
+
 ## [2026-07-29] dreaming | Downstream confirmation — upstream dreaming-group saturated, all pipelines covered
 
 | Pipeline | Status | Details |
@@ -14,12 +35,6 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 - Today's pipeline coverage: blog-wiki-ingest (7 enrichments), newsletter-wiki-ingest (6 enrichments), active-crawl (4 new concept pages), X-bookmarks-ingest (camelAI architecture)
 - Filesystem scan marginal: Decagon essay (philosophy, no tech depth), Factory alliance (1-min announcement, page exists), ElevenLabs medical STT (marketing), Hex non-AI, Fireworks/Harvey marketing, Anyscale old×3
 - Archive: 10 candidates triaged, 8 newly archived (2 dedup, total: 2,049 URLs). Source: dreaming-group checkpoint 2026-07-29T18:06:54.
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
-
----
-
 ## [2026-07-29] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed
 
 ### Articles Processed
