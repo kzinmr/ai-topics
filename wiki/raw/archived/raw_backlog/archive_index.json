@@ -4,6 +4,11 @@
       "filename": "2026-06-11_20260611T000025Z.json",
       "date": "2026-06-11",
       "items": 5
+    },
+    {
+      "filename": "2026-07-29_20260729T180019Z.json",
+      "date": "2026-07-29",
+      "items": 2
     }
   ],
   "archived_urls": {
@@ -57,5 +62,15 @@
     "title": "wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md",
     "action": "skip",
     "date": "2026-06-14"
+  },
+  "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/benchflow-awesome-evals-2025.md": {
+    "title": "benchflow-awesome-evals-2025.md",
+    "action": "skip",
+    "date": "2026-07-29"
+  },
+  "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-07-24_poolside-latent-space.md": {
+    "title": "2026-07-24_poolside-latent-space.md",
+    "action": "skip",
+    "date": "2026-07-29"
   }
 }

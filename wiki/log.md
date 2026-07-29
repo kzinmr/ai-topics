@@ -4,6 +4,22 @@ _Log of all wiki changes. Newest entries at top._
 
 ---
 
+## [2026-07-29] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed
+
+### Articles Processed
+1. **reframing-superintelligence-fhi-2019.md** — SKIP (already archived). K. Eric Drexler CAIS paper fully covered by `entities/k-eric-drexler.md`, `concepts/cais.md`, `concepts/comprehensive-ai-services.md`.
+2. **2026-06-03_microsoft-mai-thinking-1-tech-report.md** — SKIP. MAI-Thinking-1 109-page tech report fully covered by `entities/mai-thinking-1.md`, `concepts/microsoft-mai-models.md`, `concepts/mai-thinking-1-tech-report.md` (227 lines). Already in archive.
+3. **benchflow-awesome-evals-2025.md** — SKIP. Awesome Agent Evals list fully covered by `concepts/ai-benchmarks/benchflow-tool.md` (118 lines, has Awesome Agent Evals section). Newly archived.
+4. **2026-07-24_poolside-latent-space.md** — SKIP. Poolside/Eiso Kant Latent Space podcast fully covered by `entities/poolside.md` (136 lines) and `entities/eiso-kant.md` (110 lines). Newly archived.
+5. **dwarkesh.com--p-grant-sanderson-2--960d89cd.md** — SKIP (already archived). Grant Sanderson AI/math interview fully covered by `entities/grant-sanderson.md` (140 lines).
+
+### Actions
+- Archived: 2 new articles to `raw/archived/raw_backlog/2026-07-29_20260729T180019Z.json`
+- Updated: `archive_index.json` (7 total path entries)
+- No wiki pages created or modified (all content already captured)
+
+---
+
 ## [2026-07-29] watchdog | auto-fix log header + index header counts
 
 ### Changes

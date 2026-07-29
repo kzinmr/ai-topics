@@ -1,0 +1,22 @@
+[
+  {
+    "item_id": "backlog-0",
+    "source": "raw_backlog",
+    "title": "benchflow-awesome-evals-2025.md",
+    "url": null,
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/benchflow-awesome-evals-2025.md",
+    "recommended_action": "skip",
+    "reason_ja": "concepts/ai-benchmarks/benchflow-tool.md kison (118 lines). Awesome Agent Evals list wa benchflow page ni kinou shite iru (10 section, must-read set, market landscape). tsuika archiving.",
+    "archived_at": "2026-07-29"
+  },
+  {
+    "item_id": "backlog-1",
+    "source": "raw_backlog",
+    "title": "2026-07-24_poolside-latent-space.md",
+    "url": null,
+    "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-07-24_poolside-latent-space.md",
+    "recommended_action": "skip",
+    "reason_ja": "entities/poolside.md (136 lines) to entities/eiso-kant.md (110 lines) de kanzen kison. Model Factory/Laguna S/Eiso Kant tetsugaku minna capture zumi. sources ni raw article ristuto ari.",
+    "archived_at": "2026-07-29"
+  }
+]
