@@ -1,3 +1,31 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+---
+
+## [2026-07-29] watchdog | auto-fix log header + index header counts
+
+### Changes
+- Restored `# Wiki Log` header from line 187 back to line 1 (was buried by pipeline log prepend operations)
+- Fixed orphaned entries (186 lines) placed after header block
+- Corrected index.md header counts: Entities 869→867, Concepts 1940→1919
+- Verified: 0 index corruption, 0 ghosts, 0 pipe corruption, 0 triple brackets
+- validate_index.py: clean (2866 lines)
+
+### Pipeline Context
+- `x_accounts` stale(26h) — job runs every 2 days at 22:30 UTC; 26h is within 48h cycle → transient
+- wiki-graph-analysis: 5.6 days stale (2026-07-24) — broken link analysis deferred (mainly truncation errors and namespace confusion)
+
+### Remaining Issues (human review)
+- 6 entity duplicate pairs detected: deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, giles-thomas/gilesthomas, lilian-weng/lilianweng, martin-fowler/martinfowler, samuel-colvin/samuelcolvin
+- 3 orphan files (not indexed): entities/tim-sherratt (322B stub), concepts/gpt/_archive/* (2 archive files, intentionally excluded)
+- Namespace errors: [[entities/dspy]] should be [[concepts/dspy]] (35x, 30 files), [[entities/coding-agents]] should be [[concepts/coding-agents]] (18x), [[entities/reflexive-ai]] should be [[concepts/reflexive-ai]] (9 files)
+- 11 genuinely missing bare wikilinks: agent-evaluation, grpo, gaia-benchmark, reinforcement-learning, hal-leaderboard, agentdojo, re-bench, agent-security-bench, agentharm, llm-as-judge
+
+---
+
+
 ## [2026-07-29] X bookmarks ingest — camelAI architecture deep-dive
 
 | 2026-07-29 | x-bookmarks-ingest | Created: entities/camelai.md (camelAI — open-source coding agent platform; serverless architecture on Cloudflare Durable Objects + pi harness + Code Mode JS sandbox). Enriched: entities/pi.md (+Production Harness: camelAI section — first documented production SaaS built on Pi lower-level primitives). Enriched: entities/mario-zechner.md (+Production Adoption section — Pi adopted as production harness by camelAI). Enriched: concepts/harness-engineering/agent-serverless.md (+Case Study: camelAI section — production validation of agent serverless pattern). Saved: raw/articles/2026-07-28_camelai_agent-durable-object-pi-code-mode.md (X Article, ~10KB, full plain_text from article.title). Source: https://x.com/i/article/2082137754788646912 |
@@ -183,10 +211,6 @@
 ### Action Items (human review)
 - Graph analysis report from 2026-07-24 is 50h stale — schedule re-run
 - 1 entity page and 2 concept pages on disk not indexed — minor, defer to next orphan pass
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 ---
 
