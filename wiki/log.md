@@ -1,3 +1,13 @@
+## [2026-07-29] dreaming | Downstream confirmation — upstream dreaming-group saturated, all pipelines covered
+
+| Pipeline | Status | Details |
+|----------|--------|---------|
+| upstream dreaming-group | ✅ Committed (c2300e0e) | 0 takes, 10 marginal skips archived (2,049 total URLs) |
+| dreaming-wiki-ingest downstream | ✅ Confirmed | No enrichment gaps detected; all daily pipelines processed before 18:00 UTC |
+
+Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Opus 5, Codex 10M MAU), blog-wiki-ingest (CryptanalysisBench, Ed Zitron/Gary Marcus enrichment), X-bookmarks (camelAI), raw-backlog-ingest (all skip).
+
+
 ## [2026-07-29] dreaming | Saturation — all pipelines already processed today
 - Takes=0: 10 marginal articles scanned via filesystem (Pattern E), all skip
 - Prior dreaming enrichment (2026-07-28): entities/fireworks-ai.md, concepts/kimi-k3.md, entities/cohere.md, entities/harvey.md — already consumed
