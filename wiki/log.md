@@ -1,3 +1,9 @@
+## [2026-07-29] dreaming | Saturation — all pipelines already processed today
+- Takes=0: 10 marginal articles scanned via filesystem (Pattern E), all skip
+- Prior dreaming enrichment (2026-07-28): entities/fireworks-ai.md, concepts/kimi-k3.md, entities/cohere.md, entities/harvey.md — already consumed
+- Today's pipeline coverage: blog-wiki-ingest (7 enrichments), newsletter-wiki-ingest (6 enrichments), active-crawl (4 new concept pages), X-bookmarks-ingest (camelAI architecture)
+- Filesystem scan marginal: Decagon essay (philosophy, no tech depth), Factory alliance (1-min announcement, page exists), ElevenLabs medical STT (marketing), Hex non-AI, Fireworks/Harvey marketing, Anyscale old×3
+- Archive: 10 candidates triaged, 8 newly archived (2 dedup, total: 2,049 URLs). Source: dreaming-group checkpoint 2026-07-29T18:06:54.
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

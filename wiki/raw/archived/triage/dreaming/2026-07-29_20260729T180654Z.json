@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-07-29T18:13:47.000238+00:00",
+  "triage_run_id": "20260729T180654Z",
+  "source": "dreaming",
+  "summary_ja": "Saturation: 全パイプライン(blog/newsletter/active-crawl/X-bookmarks)が本日稼働済み。7 takes + 7 references + 4 new concept pages + X-bookmarks camelAI enrichment。Filesystem scanではMarginal 10件（Decagon philosophy essay, Factory alliance 1-min, ElevenLabs marketing, Hex non-AI, Fireworks/Harvey marketing, Anyscale旧記事×3）。全てskip。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-decagon-munger",
+      "source": "dreaming",
+      "source_name": "Decagon Blog",
+      "title": "How I went from investing in great companies to building one: Munger, moats, and learning machines",
+      "url": "https://decagon.ai/blog/munger-moats-and-learning-machines",
+      "raw_path": "~/wiki/raw/articles/2026-07-29_decagon_munger-moats-and-learning-machines.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Charlie Munger哲学のDecagonへの応用という個人エッセイ。技術的深度なし。entities/decagon.mdは製品・チーム・agent engineeringを包括カバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-decagon-collab",
+      "source": "dreaming",
+      "source_name": "Decagon Blog",
+      "title": "One platform, every stakeholder: in-platform collaboration",
+      "url": "https://decagon.ai/blog/collaboration-tools",
+      "raw_path": "~/wiki/raw/articles/2026-07-29_decagon_collaboration-tools.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Decagonコラボレーション機能の製品紹介。ナビゲーションchromeが大部分。entities/decagon.mdはDuet Autopilot等をカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-factory-alliance",
+      "source": "dreaming",
+      "source_name": "Factory Blog",
+      "title": "Factory joins the Open Secure AI Alliance",
+      "url": "https://factory.ai/news/open-secure-ai-alliance",
+      "raw_path": "~/wiki/raw/articles/2026-07-29_factory_open-secure-ai-alliance.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 1分読みのパートナーシップ告知。concepts/open-secure-ai-alliance.mdが既に存在。技術的深度なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-medical",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "Medical speech to text software for clinical notes",
+      "url": "https://elevenlabs.io/blog/medical-speech-to-text",
+      "raw_path": "~/wiki/raw/articles/2026-07-29_elevenlabs_medical-speech-to-text.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ElevenLabs Medical STT製品紹介。マーケティング中心で技術深度なし。entities/elevenlabs.mdはSTT/Scribe/会話品質メトリクスをカバー済み。垂直ユースケース追加は限定的価値。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-hex-trust",
+      "source": "dreaming",
+      "source_name": "Hex Technologies Blog",
+      "title": "Trust used to be implied",
+      "url": "https://hex.tech/blog/trust-used-to-be-implied",
+      "raw_path": "~/wiki/raw/articles/2026-07-29_hex-technologies_trust-used-to-be-implied.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ データ/analytics企業のマーケティングブログ。AI/LLM関連なし。sitemap-monitorバッチの典型的non-AI記事。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-fireworks-cyber",
+      "source": "dreaming",
+      "source_name": "Fireworks AI Blog",
+      "title": "Trilogy CoE Playbook for Cybersecurity",
+      "url": "https://fireworks.ai/blog/trilogy-coe-playbook-for-cybersecurity",
+      "raw_path": "~/wiki/raw/articles/2026-07-29_fireworks-ai_trilogy-coe-playbook-for-cybersecurity.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Fireworks cybersecurity playbook。entities/fireworks-ai.mdは昨日のdreaming-wiki-ingestでNexus/K3 LoRA含め大幅enrichment済み。サイバーセキュリティplaybookは技術的深度が低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-harvey-ambassador",
+      "source": "dreaming",
+      "source_name": "Harvey Blog",
+      "title": "Harvey Law School Ambassador: Maude Tipton",
+      "url": "https://harvey.ai/blog/harvey-law-school-ambassador-maude-tipton",
+      "raw_path": "~/wiki/raw/articles/2026-07-29_harvey_harvey-law-school-ambassador-maude-tipton.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 法学生アンバサダー紹介。entities/harvey.mdは昨日dreaming-wiki-ingestでDocument Processing Infrastructureをenrichment済み。マーケティングコンテンツ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-anyscale-rag",
+      "source": "dreaming",
+      "source_name": "Anyscale Blog",
+      "title": "RAG at Scale: 10x Cheaper Embedding Computations",
+      "url": "https://anyscale.com/blog/rag-at-scale-10x-cheaper-embedding-computations-with-anyscale",
+      "raw_path": "~/wiki/raw/articles/anyscale.com--blog-rag-at-scale-10x-cheaper-embedding-computations-with-an--5d34114b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Anyscale RAGスケーリング記事。旧記事。entities/anyscale.mdが存在。concepts/rag-systems等でカバー範囲内。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}
