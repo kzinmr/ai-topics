@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (868 pages)
+## Entities (869 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -122,6 +122,7 @@
 - [[entities/byterover]] — byterover
 - [[entities/caisi]] — Center for AI Standards and Innovation (CAISI)
 - [[entities/callosum]] — Callosum
+- [[entities/camelai]] — camelAI — Open-source coding agent platform; serverless architecture on Cloudflare Durable Objects + pi harness + Code Mode JS sandbox
 - [[entities/calvin-french-owen]] — Calvin French-Owen
 - [[entities/cartesia]] — Cartesia
 - [[entities/cat-wu]] — Cat Wu

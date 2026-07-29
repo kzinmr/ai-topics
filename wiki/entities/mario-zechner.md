@@ -3,7 +3,7 @@ title: Mario Zechner
 type: entity
 handle: "@badlogicgames"
 created: 2026-04-10
-updated: 2026-06-25
+updated: 2026-07-29
 tags:
   - person
   - x-account
@@ -149,6 +149,10 @@ As discussed on Syntax.fm #976 (Feb 2026), Pi embodies Zechner's "Bash is all yo
 - **Self-modifying skills** — the agent can write new tools and Pi hot-reloads them without restart (Armin: "My browser skill changes every three days because there is a new cookie banner... it can fix itself")
 - Pi's approach to memory: **"Code is truth"** — no complex RAG, just a folder structure map and file reads
 - Zechner's **MAM (Master of Mischief)** — a Slack bot with JSONL log + `jq` for "infinite memory"
+
+### Production Adoption (July 2026)
+
+[[entities/camelai|camelAI]], an open-source coding agent SaaS, adopted Pi as the harness layer for their production platform. They imported Pi's agent loop and state management primitives without modification, running them inside Cloudflare Durable Objects — demonstrating that Pi's layered design (separating agent primitives from OS assumptions) enables non-Linux deployment environments. See [[entities/pi]] for architecture details.
 
 ### AMS Berufsinfomat Replica (2024)
 A ~400-line RAG chatbot that replicated the Austrian government's job information system at a fraction of the cost. Demonstrated that the government's €464,000 system could be built in 2 nights on a €30/month server.

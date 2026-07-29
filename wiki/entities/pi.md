@@ -3,7 +3,7 @@ title: Pi (pi-coding-agent)
 type: entity
 aliases: [pi-coding-agent, pi-dev, pi-mono, mario-zechner-pi]
 created: 2026-05-07
-updated: 2026-07-13
+updated: 2026-07-29
 status: L3
 tags:
   - entity
@@ -24,12 +24,14 @@ sources:
   - raw/articles/2026-06-08_x-article_pi-new-approval-system.md
   - raw/articles/2026-07-11_rasyidanaf_vim-of-coding-agents.md
   - raw/articles/2026-07-13_muellerminute_learning-pi-through-force.md
+  - raw/articles/2026-07-28_camelai_agent-durable-object-pi-code-mode.md
 related:
   - "[[entities/openclaw]]"
   - "[[entities/claude-code]]"
   - "[[entities/opencode]]"
   - "[[entities/mario-zechner]]"
   - "[[entities/armin-ronacher]]"
+  - "[[entities/camelai]]"
   - "[[concepts/agent-harnesses]]"
   - "[[concepts/harness-engineering]]"
 ---
@@ -337,6 +339,25 @@ Mueller defined a reward structure: Claude Code output as gold standard, with Fa
 ### Open Source
 
 Pipeline scripts, skills, and model memos available at [github.com/muellerzr/learning-pi-through-force](https://github.com/muellerzr/learning-pi-through-force).
+
+## Production Harness: camelAI (July 2026)
+
+[[entities/camelai|camelAI]], an open-source coding agent platform, migrated from VM-based execution to a serverless architecture built entirely on Pi's lower-level primitives ([camelAI Blog, 2026-07-28](raw/articles/2026-07-28_camelai_agent-durable-object-pi-code-mode.md)). This is the first documented case of Pi being used as the harness layer in a production SaaS product, not just a developer tool.
+
+### Architecture
+
+camelAI imported Pi's agent loop and state management layers without using its OS-assuming upper layer, building a custom harness that runs inside a **Cloudflare Durable Object**. The agent writes JavaScript instead of bash, executed through Cloudflare Code Mode (V8 isolates). Filesystem is SQLite + R2, git history via Cloudflare Artifacts.
+
+### Why Pi
+
+The Pi codebase was not modified — camelAI used it purely as a library. The key value was Pi's **separation of agent primitives from OS assumptions**, which allowed the harness to run in a non-Linux edge environment. Without this layered design, the migration from VM to Durable Object would have required rebuilding the agent loop from scratch.
+
+### Results
+
+- **Cost**: Orders of magnitude cheaper than always-on VMs (per-execution billing on dynamic Workers)
+- **Latency**: Lower by running on Cloudflare's edge near users
+- **Small model performance**: Explicit JavaScript methods outperform bash for cheaper models
+- **Observability**: Full platform visibility into every agent operation
 
 ## Latest (May 2026)
 

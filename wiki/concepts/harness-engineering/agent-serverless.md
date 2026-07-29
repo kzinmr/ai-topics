@@ -12,14 +12,15 @@ description: "Serverless deployment pattern for AI agents — managed environmen
 category: concepts
 sub_category: AI Agent Architecture
 tags:
-sources: []
   - ai-agents
   - infrastructure
   - security
   - company
+sources:
+  - raw/articles/2026-07-28_camelai_agent-durable-object-pi-code-mode.md
 status: complete
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-07-29
 source_slack_channel: C077ACXR5UY
 source_slack_date: 2026-03-24
 source_slack_user: U076RPG60QY (Kazuki Inamura)
@@ -142,6 +143,26 @@ Serverless Platform:
 - Enterprise tier: review history and compliance
 - Basic tier: ephemeral reviews only
 ```
+
+### Case Study: camelAI (July 2026)
+
+[[entities/camelai|camelAI]] is a production implementation of the agent serverless pattern applied to a coding agent SaaS platform. Their architecture removes VMs entirely, running the agent inside Cloudflare Durable Objects with filesystem in SQLite+R2 and JavaScript execution via Code Mode V8 isolates.
+
+**Key architectural decisions:**
+- **No VMs**: Agent runs in a Durable Object on Cloudflare's edge, not in a container
+- **No bash**: Agent writes JavaScript executed in fresh V8 isolates (millisecond boot, few MB memory)
+- **Per-execution billing**: Dynamic Workers billed per execution, orders of magnitude cheaper than always-on containers
+- **Explicit methods**: Platform provides controlled methods for deploy, build, and notebook execution; credentials never enter the sandbox
+- **On-demand Linux**: Short-lived containers via Sandbox SDK only for builds (Vite/Tailwind/bun install) and notebook runs — seconds of Linux, not always-on
+- **Source-available**: github.com/qaml-ai/camelAI
+
+**Results:**
+- Cost: Orders of magnitude cheaper than VM-based coding agents
+- Latency: Lower by running on edge near user
+- Security: Credential isolation (authentication happens server-side, never in sandbox)
+- Small model performance: Explicit methods outperform open-ended bash for cheaper models
+
+This case study validates the prediction from the original Agent Serverless concept: managed environments with built-in SaaS integration, security, and per-execution billing. camelAI extends the pattern to coding agents specifically, demonstrating that even bash-dependent coding agents can be made serverless.
 
 ## Existing Players
 
