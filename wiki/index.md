@@ -871,7 +871,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1936 pages)
+## Concepts (1940 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -980,6 +980,7 @@
 - [[concepts/ai-alliance]] — AI Alliance
 - [[concepts/ai-and-authenticity]] — AI and Authenticity
 - [[concepts/ai-and-software-engineering]] — AI and Software Engineering
+- [[concepts/ai-hallucination-factuality]] — AI Hallucination and Factuality — Types, causes, detection, and mitigation of LLM factual errors; sycophancy, RAG grounding, benchmark overview
 - [[concepts/ai-adoption-failures-and-enterprise-psychosis]] — AI Adoption Failures and Enterprise AI Psychosis
 - [[concepts/ai-api-abuse]] — AI API Abuse
 - [[concepts/ai-as-abstraction-layer]] — ai-as-abstraction-layer
@@ -1149,6 +1150,7 @@
 - [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Hierarchy to Intelligence — Block's Organizational Model Transformation
 - [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC — A New Way of Working in the AI Era
 - [[concepts/ai-output-format-progression]] — AI Output Format Progression
+- [[concepts/ai-pacing-framework]] — AI Pacing Framework — Governance mechanisms for deliberately slowing frontier AI development; RSI Pace Letter (1,171 employees signed), Anthropic open-weights position
 - [[concepts/ai-patterns-for-glam]] — AI Design Patterns for Information Professionals (Boring AI)
 - [[concepts/ai-persona-embodiment]] — AI-Persona-Embodiment
 - [[concepts/ai-policy]] — AI Policy
@@ -2090,6 +2092,7 @@
 - [[concepts/max-irwin]] — Max Irwin
 - [[concepts/maxime-chevalier-boisvert]] — Maxime Chevalier-Boisvert
 - [[concepts/mcp]] — MCP (Model Context Protocol)
+- [[concepts/mcp-2026-07-28-spec]] — MCP 2026-07-28 Specification Update — Fifth major MCP release; streaming HTTP transport, stateless remote servers, JSON-RPC batching, App/Task/Managed Auth primitives
 - [[concepts/mcp-desktop-extensions]] — Desktop Extensions (MCP Bundle)
 - [[concepts/mcp-enterprise-oauth]] — MCP Enterprise OAuth — Managed Authentication
 - [[concepts/mcp-protocol]] — MCP Protocol Testing & Security
@@ -2218,6 +2221,7 @@
 - [[concepts/notion-mcp]] — Notion MCP
 - [[concepts/nvidia-45c-data-center-cooling]] — NVIDIA 45°C Data Center Cooling
 - [[concepts/nvidia-ai-q]] — NVIDIA AI-Q
+- [[concepts/nvidia-blackwell-architecture]] — NVIDIA Blackwell Architecture — B200/B100/GB200 GPU family; NVFP4 4-bit floating point, NVLink 5 NVL72 rack, inference and training performance
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo
 - [[concepts/nvidia-egpu-macos]] — NVIDIA eGPU on macOS
 - [[concepts/nvidia-egpu-on-macos]] — NVIDIA eGPU on macOS
