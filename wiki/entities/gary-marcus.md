@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-07-28
+updated: 2026-07-29
 tags:
   - lab
   - benchmark
@@ -31,6 +31,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-what-washington-must-do--86e00fe4.md
   - raw/articles/garymarcus.substack.com--p-the-generative-ai-fizzle--badee2a3.md
   - raw/articles/garymarcus.substack.com--p-circular-financing-aint-what-it-used--e1df8edb.md
+  - raw/articles/garymarcus.substack.com--p-sorry-sam-and-elon-we-have-not-reached--4ddac824.md
 ---
 
 # Gary Marcus
@@ -293,6 +294,20 @@ Source: [[raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md]
 |Marcus's conclusion: **\"The GenAI boom hasn't been sustained by profits; it has been sustained by hope and circular financing. That may no longer be enough.\"**
 |
 |Source: [[raw/articles/garymarcus.substack.com--p-circular-financing-aint-what-it-used--e1df8edb.md]]
+|
+|### Singularity Debunking — Response to Altman/Musk/Hassabis/Huang (July 2026)
+|
+|On July 27, 2026, Sam Altman, Demis Hassabis, and Elon Musk all separately claimed \"we are in the singularity\" or similar. Gary Marcus published a rebuttal titled \"Sorry, Sam and Elon, we have not reached the Singularity.\" Key arguments:
+|
+|- **Klarna Effect**: Employers boast of using AI to reduce headcount only to quietly rehire humans — the opposite of Singularity-level labor displacement
+|
+|- **IF Good definition**: IF Good's definition of a \"superintelligent machine\" is one that can do any intellectual task a human can (the original Singularity definition) — current AI fails this by a large margin
+|
+|- **Miles Brundage's 10-item bet**: Marcus cited 10 concrete criteria for AGI that Miles Brundage proposed — AI passes NONE of them
+|
+|- His conclusion: We have powerful tools but NOT superintelligence. Claims of Singularity are hype, not reality.
+|
+|Source: [[raw/articles/garymarcus.substack.com--p-sorry-sam-and-elon-we-have-not-reached--4ddac824.md]]
 |
 |### Key Works
 

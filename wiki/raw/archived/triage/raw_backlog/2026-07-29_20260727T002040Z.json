@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-07-29T04:11:33.604530+00:00",
+  "triage_run_id": "20260727T002040Z",
+  "source": "raw_backlog",
+  "summary_ja": "全5記事が既存Wikiページで完全カバー済み(再処理)。raw_backlog_collectが前回処理済み記事を再度選択。",
+  "decisions": [
+    {
+      "item_id": "raw-2",
+      "source": "raw_backlog",
+      "source_name": "Microsoft AI",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine — Technical Report (109pp)",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ entities/mai-thinking-1.md(198行) + concepts/mai-thinking-1-tech-report.md(227行) + concepts/microsoft-mai-models.md + concepts/hill-climbing-machine.mdで完全カバー済み",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# MAI-Thinking-1: Building a Hill-Climbing Machine\n**Source**: [PDF](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf) — 109 pages\n**Authors**: The Microsoft AI Team\n**Date**: June 2, 2026\n**Model**: MAI-Thinking-1 — 35B active / 1T total parameter MoE\n--- Page 1 ---\nMAI-Thinking-"
+    },
+    {
+      "item_id": "raw-3",
+      "source": "raw_backlog",
+      "source_name": "BenchFlow",
+      "title": "Awesome Agent Evals (443+ curated resources)",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ concepts/ai-benchmarks/benchflow-tool.md(118行)ですでにカバー済み。concepts/evaluation/ai-evals.md(276行)も関連トピックをカバー",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Awesome Agent Evals [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)\n> A curated, opinionated, **non-BS** library of the best resources for **building and evaluating AI agents** — papers, blog posts, talks, courses, tools, and benchmarks.\nMaintained by [**BenchFlow**](https://benchfl"
+    },
+    {
+      "item_id": "raw-4",
+      "source": "raw_backlog",
+      "source_name": "Latent Space / swyx",
+      "title": "Inside the Model Factory — Eiso Kant, Poolside AI",
+      "url": null,
+      "raw_path": "/opt/data/.hermes/home/ai-topics/wiki/raw/articles/2026-07-24_poolside-latent-space.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ entities/poolside.md(120行, Model Factory詳細+哲学4節) + entities/eiso-kant.md(99行, 経歴+哲学+Model Factory)で完全カバー。両ページともraw記事をsourceとして参照",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Inside the Model Factory — Eiso Kant, Poolside AI\n**Source**: https://open.substack.com/pub/swyx/p/poolside\n**Date**: 2026-07-24\n**Author**: swyx/AINews\n**Description**: Poolside's co-CEO on how his small team of top researchers built a model factory capable of training Laguna S - a 118B MOE beati"
+    }
+  ]
+}

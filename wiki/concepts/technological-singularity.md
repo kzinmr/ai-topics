@@ -1,14 +1,16 @@
 ---
 title: Technological Singularity
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-07-29
 type: concept
 tags:
   - singularity
   - agent-safety
   - prediction
   - transhumanism
-sources: [raw/articles/1996_yudkowsky_staring-into-the-singularity.md]
+sources:
+  - raw/articles/1996_yudkowsky_staring-into-the-singularity.md
+  - raw/articles/garymarcus.substack.com--p-sorry-sam-and-elon-we-have-not-reached--4ddac824.md
 ---
 
 # Technological Singularity
@@ -81,6 +83,23 @@ The pre-Singularity period is a minefield, not a playground. Three "deadlines" t
 ## Techno-Optimism as Religion
 
 The Singularity functions as a secular eschatology within transhumanist thought. The parallels with religious narratives are striking: an "end of history," transcendence of mortal limitations, Powers that are beyond comprehension, and a moral imperative ("Interim Meaning of Life") to bring about this transformation. [[concepts/techno-optimism|Techno-optimism]] in this framework becomes a form of faith — a point that [[concepts/techno-pessimism|techno-pessimists like Curtis Yarvin]] push back against.
+
+## 2026 Debate — Industry Leaders Declare Singularity (July 2026)
+
+In July 2026, a coordinated wave of industry leaders declared the Singularity had arrived or was imminent:
+- **Sam Altman** (OpenAI CEO): Stated \"we are in the singularity\"
+- **Elon Musk** (xAI/DOGE): Declared \"we have entered the singularity\"
+- **Demis Hassabis** (Google DeepMind): Said \"we will realize we were standing in the foothills of the singularity\"
+- **Jensen Huang** (NVIDIA): Also joined the singularity declarations
+
+**Gary Marcus's Rebuttal**: Marcus published \"Sorry, Sam and Elon, we have not reached the Singularity\" (Jul 27, 2026), arguing:
+- **Klarna Effect**: Companies bragging about AI headcount reduction are quietly rehiring humans — the opposite of labor singularity
+- **IF Good definition fails**: Current AI cannot do \"any intellectual task a human can\" — the actual definition of superintelligence
+- **Miles Brundage's 10 criteria**: None passed
+
+The 2026 declarations represent the latest iteration of a recurring pattern: each generation of AI progress triggers premature singularity claims, which are then debunked by critics. The event is significant for documenting that even the CEOs of frontier AI labs now publicly invoke the Singularity concept, signaling a shift from the concept being discussed by philosophers (Yudkowsky, Vinge) to being used as a marketing and positioning tool by industry leaders.
+
+Cross-wikilinks: [[entities/gary-marcus]], [[entities/openai]], [[entities/xai]], [[entities/google-deepmind]], [[entities/elon-musk]], [[concepts/techno-optimism]]
 
 ## Related Pages
 - [[entities/eliezer-yudkowsky]] — The thinker who articulated this vision

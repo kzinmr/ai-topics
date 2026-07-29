@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-07-16
+updated: 2026-07-29
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -41,6 +41,7 @@ sources:
   - raw/articles/wheresyoured.at--let-ai-burn--bdeb31fe.md
   - raw/articles/wheresyoured.at--premium-the-haters-guide-to-the-memory-crisis--0b884d04.md
   - raw/articles/wheresyoured.at--the-openai-bubble--eb7fc2d4.md
+  - raw/articles/wheresyoured.at--the-more-you-buy-the-more-you-lose--890d90aa.md
 ---
 
 # Ed Zitron
@@ -626,6 +627,85 @@ Zitron emphasized that the BIS warning was not merely a financial footnote but a
 - **Kelsey Piper** (The Argument, May 2026): Accused Zitron of never updating his conclusions — "He has called the top repeatedly" since 2024 while AI capabilities dramatically improved. Argues Zitron doesn't actually test AI agents.
 - **David Crespo** (Bluesky): "Zitron is not a serious analyst"
 - **Self-acknowledged limitation:** Zitron is a journalist, not a technologist — his analysis focuses on financial and business model questions rather than technical capability
+
+## The More You Buy, The More You Lose (July 2026)
+
+In "[The More You Buy, The More You Lose](https://www.wheresyoured.at/the-more-you-buy-the-more-you-lose/)" (July 28, 2026), Ed Zitron analyzed the deepening circular financing in the AI industry, centered on a proposed **NVIDIA-backed $250 billion SB Energy data center deal** and the deteriorating credit conditions across hyperscaler and neocloud debt markets. The article's title inverts NVIDIA CEO Jensen Huang's famous claim that "the more you buy, the more you save" — Zitron argues the opposite is true for AI infrastructure.
+
+### NVIDIA–SB Energy $250B Circular Deal
+
+The Wall Street Journal reported that NVIDIA was in talks with OpenAI to guarantee **$250 billion in financing** for a **10GW data center** being built by SoftBank affiliate **SB Energy**:
+
+- NVIDIA would **guarantee the compute payments** so SB Energy can raise debt to buy chips from NVIDIA to rent to OpenAI
+- NVIDIA is also discussing financing **$350 billion in GPUs** to go inside the data center
+- Zitron calls this the **"final boss of circular financing"**: SoftBank (owns OpenAI stock) → SB Energy (SoftBank affiliate) → NVIDIA backstop → SB Energy goes public
+- SoftBank would use the OpenAI lease contract to **take SB Energy public**, generating equity gains for both SoftBank and OpenAI
+- **SB Energy has never built a data center before** — it is a "confusing and murky business"
+- Phase one is due **2028 at 800MW**, but **"nobody has gotten close to building a 10GW data center"**
+- OpenAI's Stargate Abilene (1.2GW, broke ground July 2024) has only energized **309MW of critical IT load** after a year
+
+### Winstar / Lucent Historical Analogy
+
+Zitron draws a direct parallel between the NVIDIA–SB Energy deal and **Lucent Technologies financing Winstar in 1998**:
+
+- Lucent signed a **$2 billion "equipment and finance agreement"** with Winstar — Lucent would lend money to Winstar to hand back to Lucent to buy Lucent equipment
+- Winstar **filed for bankruptcy in 2001** and sued Lucent for **$10 billion**
+- Lucent was forced to pay back **$188 million in loans** plus **$300 million in restitution**
+- Zitron warns NVIDIA may face similar consequences when circular financing collapses: "When Winstar collapsed, losses and impairments totalled 15 cents per share in Q2 2001"
+
+### CoreWeave Bond Crisis
+
+CoreWeave's debt markets showed severe distress:
+
+| Metric | Value |
+|--------|-------|
+| Bond issuance (June 2026) | **$1.25 billion** |
+| Option-adjusted spread at issuance | ~**540bps** |
+| Option-adjusted spread (July 2026) | **756bps** |
+| Average for Ba3 rating | **200–400bps** |
+| Bond yield at issuance | **9.625%** |
+| CoreWeave's last quarter loss | **−$740 million** |
+
+- Bondholders have **"dumped the shit out of them"** — the market has material concerns about repayment
+- Average OAS for its Ba3 rating is 200–400bps; at **756bps CoreWeave is more than double the expected spread**
+- This raises serious questions about its ability to raise the $31–35 billion in capex it's guiding for next year
+
+### Hyperscaler Off-Balance-Sheet Debt
+
+Zitron highlighted **$1.35 trillion in off-balance-sheet debt** across Meta, Google, Amazon, and Microsoft (per Nikkei):
+
+| Company | Off-Balance-Sheet Commitments |
+|---------|------------------------------|
+| **Google** | **$811 billion** in contracted future spending commitments (up **$661 billion** in the last 6 months) |
+| **Meta** | **$237 billion** in non-cancellable contractual commitments |
+| **Overall** | **$1.35 trillion** across the four hyperscalers |
+
+- On-balance-sheet debt doubled from **$250 billion (March 2022)** to **$557 billion**
+- Hyperscaler bonds are **"underperforming on almost every metric"** and **"in the red on average"** per Bloomberg
+- Bloomberg Intelligence estimates hyperscalers will need to raise **$1.5 trillion in investment-grade debt** in the next five years
+
+### Hyperscaler Capex as % of Revenue
+
+Capex as a percentage of revenue — a measure Zitron argues is unsustainable:
+
+| Company | Capex / Revenue |
+|---------|---------------|
+| Amazon | **24.4%** |
+| Meta | **33.7%** |
+| Microsoft | **37.3%** |
+| Google | **43.4%** |
+
+### Other Key Data Points
+
+- **Google's century bond** has already lost **10% of its value**
+- **Oracle credit downgraded** by S&P Global to **one rung above junk**
+- **SB Energy's SE Cosmos LLC** raised $999M in May; its spread grew from **351bps to 536bps**
+- OpenAI would need to pay approximately **$105 billion per year in compute costs** just for the SoftBank deal — nearly all of the **$122 billion OpenAI raised this year**
+- **54% of NVIDIA's revenue** and **64% of its accounts receivable** come from just three customers
+
+### Significance
+
+Zitron argues the NVIDIA–SB Energy deal represents a **desperate escalation**: if there were real, diverse demand for NVIDIA GPUs, NVIDIA would not need to create "the world's first circular financing within a circular financing." He concludes that the AI industry's financial structure has become so byzantine that it can only sustain itself through increasingly elaborate self-referential deals, and that the **Winstar/Lucent analogy** offers a historical precedent for how the collapse unfolds.
 
 ## Cross-References
 

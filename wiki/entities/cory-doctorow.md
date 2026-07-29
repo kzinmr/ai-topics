@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-07-25
+updated: 2026-07-29
 status: L3
 sources:
   - https://pluralistic.net/
@@ -16,6 +16,7 @@ sources:
   - raw/articles/pluralistic.net--2026-07-10-posthuman-as-in-no-humans--67be2eae.md
   - raw/articles/pluralistic.net--2026-07-13-go-meta-meta--d0727adf.md
   - raw/articles/pluralistic.net--2026-07-24-supplemental-income--9c9dca6e.md
+  - raw/articles/pluralistic.net--2026-07-28-hitl-ers--46dc0e4b.md
 tags: [person]
 ---
 
@@ -210,6 +211,27 @@ This metaphor captures Doctorow's core argument: scaling AI investment (more GPU
 - Doctorow traced the political class enabling AI deregulation back to the **Amway/Heritage Foundation nexus** — the same network of MLM-connected billionaires (DeVos family, others) that shaped Republican economic policy
 - He characterized **Trump and Musk as pyramid scheme operators** — selling visions of AI-powered futures while extracting wealth from the base of the pyramid (workers, taxpayers, retail investors)
 - The argument connects to Doctorow's broader enshittification thesis: just as platforms degrade by extracting value at each layer, AI hype extracts value by promising transformation while delivering dependency
+
+### Discernment — Expertise as Prerequisite for AI Utility (July 2026)
+
+In \"[Discernment](https://pluralistic.net/2026/07/28/hitl-ers/)\" (July 28, 2026), Doctorow articulates a crucial constraint on who can actually benefit from AI tools — the **Discernment condition**. The Japanese term 識別力 (shikibetsuryoku) captures the idea: the capacity to critically evaluate and discriminate between good and bad AI output, which requires genuine domain expertise.
+
+**The Terrence Tao Example**: Doctorow opens with MacArthur Prize-winning mathematician Terrence Tao's conversation with ChatGPT about the Jacobian Conjecture counterexample. Tao, a Fields Medalist, could productively bounce ideas off a chatbot because he had the mathematical expertise to judge correctness. Doctorow, despite being \"reasonably math literate,\" confesses he lacks the discernment to evaluate whether the chatbot's mathematical output is brilliant or nonsense — he \"couldn't make an *a priori* judgment about which one was a solid piece of mathematical theorizing and which one was a math-flavored word-salad.\"
+
+**Extends the Reverse Centaur Concept**: This essay adds a critical practical dimension to Doctorow's \"reverse centaur\" framework (documented in his June 2026 book). The reverse centaur isn't just *skeptical* of AI output — they must have genuine domain expertise to evaluate it. A reverse centaur without discernment is simply an uninformed critic.
+
+**Key Insight — The Utility Paradox**:
+> \"The person for whom the chatbot is actually useful — that is, capable of building upon its output — is someone who has no need for the chatbot in the first place.\"
+
+Doctorow observes that if you understand a subject well enough to discern useful AI output from defective output, you already know the subject. This puts a fundamental limit on AI democratization: AI doesn't replace education and expertise, it **amplifies** it.
+
+**Programming Examples**: Skilled programmers get useful code from chatbots but also encounter \"baffling, obvious errors (and subtle, hard-to-spot ones)\" that they can identify. Novices cannot distinguish the good from the bad. Doctorow cites this as the reason \"reliable AI use requires the discernment that comes from skill and expertise.\"
+
+**Personal Practice — Discernment in Action**: Doctorow describes his own use of a local, open-source chatbot as a spellchecker for his Pluralistic posts. He has written over 30 books and has the expertise to evaluate every suggestion — rejecting bad ones (he estimates M365's AI suggestions have a 1:100 good-to-bad ratio) and accepting useful ones. He contrasts this with his complete inability to use a chatbot for higher math, where he lacks discernment.
+
+**AI as Teacher is Dangerous**: Doctorow argues that using AI as a teaching assistant (or worse, a teacher) is incoherent — \"by definition, a student *isn't* an expert on the subject they're studying. That's the whole point of studying — to acquire knowledge and thus discernment.\" He suggests teachers might find chatbots useful for generating test questions and answer keys (which a skilled teacher can validate), but never for teaching students directly.
+
+**Framing**: Doctorow concludes that \"AI is a normal technology\" — useful in some contexts, pointless or harmful in others. The rule of thumb: chatbots can only provide useful information to experts who have the discernment to ignore the defective output that LLMs always emit. His closing aphorism: \"Getting rid of teachers because we all have chatbots is like getting rid of doctors because we all have the plague.\"
 
 ## Related Pages
 

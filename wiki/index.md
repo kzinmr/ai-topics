@@ -871,7 +871,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1935 pages)
+## Concepts (1936 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1008,6 +1008,7 @@
 - [[concepts/ai-benchmarks/clawsbench]] — ClawsBench
 - [[concepts/ai-benchmarks/core-bench]] — CORE-Bench
 - [[concepts/ai-benchmarks/countbenchqa]] — CountBenchQA
+- [[concepts/ai-benchmarks/cryptanalysisbench]] — CryptanalysisBench — LLM cryptanalysis benchmark; Anthropic researchers used Claude Mythos Preview to find mathematical flaws in HAWK and weakened AES; 60hr/$100K continuous operation; ETH Zurich/TAU/Haifa partnership (Jul 28)
 - [[concepts/ai-benchmarks/crmarena-pro]] — CRMArena-Pro
 - [[concepts/ai-benchmarks/cursorbench]] — CursorBench
 - [[concepts/ai-benchmarks/cybench]] — Cybench

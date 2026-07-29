@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-07-29T10:36:52.786935+00:00",
+  "triage_run_id": "20260729T101410Z",
+  "source": "newsletter",
+  "summary_ja": "5ニュースレターをトリアージ。最も重要な発見: (1) OpenAI/Anthropic/GDM/Meta/Thinkyの従業員1,171名がRSIペースレターに署名 — AI開発の国際的ペーシング枠組みを要請する画期的なAI政策イベント。新規イベントページが必要。 (2) CodexがMAU 10Mを達成、ChatGPT Workと共有エージェントハーネスの詳細が判明 — entities/codex.mdの更新が必要。 (3) Claude Opus 5のシステムプロンプト80%削減とオーバープロンプティング問題 — concepts/claude/opus-5.mdの更新が必要。 (4) Jensen Huangが初のX投稿でオープンソースAIを支持 — entities/nvidia.mdへの参考追記。Lenny's Newsletter (Product Pass) とBeehiiv (403期限切れ) はスキップ。",
+  "decisions": [
+    {
+      "item_id": "bensbites-anthropic-open-weights-position",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Anthropic publishes position on open-weights models",
+      "url": "https://open.substack.com/pub/bensbites/p/opus-5-fable-5",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-28-opus-5-fable-5.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Ben's Bites本文P23: Anthropicが“オープンウエイトモデルの禁止を提案したことはない”という位置付け読を公表。concepts/open-weight-ai-regulation.md(119行)にAnthropicの位置付けは既にカバーされているが、この最新動向を参考追記。",
+      "candidate_wiki_path": "concepts/open-weight-ai-regulation.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-28\n**Subject:** Opus 5 >> Fable 5\n**Collected:** 2026-07-29T10:14:04.321648+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2"
+    },
+    {
+      "item_id": "latent-space-akshay-nathan-ai-product-engineering-insights",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx)",
+      "title": "Codex from 0 to 10M Users: AI product engineering insights from Akshay Nathan",
+      "url": "https://open.substack.com/pub/swyx/p/chatgpt-work",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-28-codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ ポッドキャスト本文363段落から: Akshay Nathan(オープンアイのProductivity Engineeringリーダー)が、AIがより多くの人をジェネラリストにし、テイストがボトルネックになる、仮説とアイデアが最重要になるという分析。既存のconcepts/agentic-engineering.md(336行)への参考追記として収納。",
+      "candidate_wiki_path": "concepts/agentic-engineering.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-28\n**Subject:** Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI\n**Collected:** 2026-07-29T10:14:05.632682+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT9"
+    },
+    {
+      "item_id": "ainews-agent-benchmarks-roundup",
+      "source": "newsletter",
+      "source_name": "AINews (swyx/Latent Space)",
+      "title": "Long-horizon agent benchmarks and eval integrity",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-fearing-rsi-openai-anthropic",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-29-ainews-fearing-rsi-openai-anthropic-gdm-meta-thinky-cosign-letter-to-pace-ai-dev.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ AINewsの統合トピックとしてのベンチマーク一覧。個別に詳細な情報はなく、サマリー組みにすぎない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-29\n**Subject:** [AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace …\n**Collected:** 2026-07-29T10:14:09.422554+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0"
+    },
+    {
+      "item_id": "beehiiv-biggest-model-free-403-expired",
+      "source": "newsletter",
+      "source_name": "Superintel (getsuperintel.site)",
+      "title": "The Biggest Model Ever Built Is Now Free",
+      "url": "https://link.mail.beehiiv.com/v1/c/agoyUX87VBj6EBHEUbkMaXUfgF2r7P8cT6lhheuJceLXYH5a699G0NwkJgMe%0Ac4UpHwIbRBDdGySh69LLWTWXzQqMRXHDFAr8tKujCvnzqLgm4EZdOwC4AS8t%0A%2FIeYSkmiMZDBO4r%2BUnmN7eezgOA4o4P5sHcBIZGlt1v%2FlIW6PSqux0DxibI%2F%0A5%2BQYiQ3rh1FL%2FmMxutN8foQRSKCBU9ATXA%3D%3D%0A/ed81c2404e17e97d",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-28-the-biggest-model-ever-built-is-now-free.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 全てのbeehiivトラッキングURLが403期限切れ。件名から推測すると「これまで最大のモデルが無料公開”はらきにKimi K3 (2.8Tパラメータ、open-weight公開)を指すが、既存concepts/kimi-k3.md(408行、7/28更新済み)で詳細にカバー済み。Ben's BitesとAINewsの記事がその他のトピックをカバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-28\n**Subject:** 📦 The Biggest Model Ever Built Is Now Free\n**Collected:** 2026-07-29T10:14:07.019286+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/agoyUX87VBj6EBHEUbkMaXUfgF2r7P8cT6lhheuJceLXYH5a699G0NwkJgMe%0Ac4UpHwIbRBDdGySh69L"
+    },
+    {
+      "item_id": "lenny-product-pass",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter",
+      "title": "11 products I love, free for a year — the biggest Product Pass expansion in 2 years",
+      "url": "https://open.substack.com/pub/lenny/p/productpass-summer2026launch",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-28-11-products-i-love-free-for-a-year-the-biggest-product-pass-expansion-in-2-years.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Lenny's NewsletterのProduct Passプロモーション記事(110段落)。11の製品をまとめたがRunway、Higgsfield、Brain.fmなどAIツールを含むものの、全体としてはマーケティング主体のプロモーション記事であり、単一ツールの詳細レビューではない。ニュースレター全体としてはAIエージェントやモデルに直接関道なし。SaaS/Productマネジメント領域。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-28\n**Subject:** 11 products I love, free for a year—the biggest Product Pass expansion in 2 years\n**Collected:** 2026-07-29T10:14:08.218823+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci"
+    }
+  ]
+}

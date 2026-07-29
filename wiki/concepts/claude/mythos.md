@@ -2,7 +2,7 @@
 title: Claude Mythos
 type: entity
 created: 2026-04-09
-updated: 2026-06-28
+updated: 2026-07-29
 tags:
   - model
   - agent-safety
@@ -10,7 +10,7 @@ tags:
   - security
 aliases:
 - Mythos
-sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md", "raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md", "raw/articles/garymarcus.substack.com--p-the-revenge-of-claude-mythos--32970cd2.md", "raw/articles/simonwillison.net--2026-jun-11-anthropic-walks-back-policy--042d91ca.md", "raw/newsletters/2026-06-22-red-teaming-after-mythos-zico-kolter-matt-fredrikson-gray-swan.md"]
+sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md", "raw/articles/2026-06-09_anthropic_claude-fable-5-mythos-5.md", "raw/articles/2026-06-09_eliebakouch_fable-5-mythos-debated-research.md", "raw/papers/2026-06-09_claude-fable5-mythos5-system-card.md", "raw/articles/garymarcus.substack.com--p-the-revenge-of-claude-mythos--32970cd2.md", "raw/articles/simonwillison.net--2026-jun-11-anthropic-walks-back-policy--042d91ca.md", "raw/newsletters/2026-06-22-red-teaming-after-mythos-zico-kolter-matt-fredrikson-gray-swan.md", "raw/articles/simonwillison.net--2026-jul-28-discovering-cryptographic-weaknesses-with-claude--6abd4154.md"]
 ---
 
 # Claude Mythos
@@ -204,6 +204,21 @@ Key details:
 - **Significance**: Major de-escalation in the confrontation between the Trump Administration and Anthropic, which had been intense since the export controls were imposed in mid-June 2026
 
 Sources: raw/articles/semafor.com--article-06-27-2026-us-releases-powerful-anthropic-model-myth--4f5f1261.md
+
+### Cryptanalysis — HAWK and AES Weakness Discovery (July 2026)
+
+In July 2026, Anthropic researchers (in partnership with ETH Zurich, Tel Aviv University, and University of Haifa) used [[concepts/claude/mythos-preview|Claude Mythos Preview]] to discover mathematical flaws in two cryptographic targets:
+
+- **HAWK**: A NIST post-quantum cryptography candidate — mathematical flaw identified
+- **AES (weakened variant)**: A modified/simplified version of AES — mathematical weakness found
+
+The model operated continuously for **60 hours** at an estimated API cost of **~$100,000**. The main human intervention consisted of encouragement prompts — including "not to give up" and "find something worth publishing" — with the raw prompts shared publicly, typos and all (e.g., "inteligent", "agian"), illustrating the interaction style needed to push frontier models toward novel research.
+
+The research resulted in the paper *"CryptanalysisBench: Can LLMs do Cryptanalysis?"* and the associated [[concepts/ai-benchmarks/cryptanalysisbench|CryptanalysisBench]] benchmark.
+
+> "Neither of these results has a practical impact on today's computer systems" — Anthropic researchers
+
+These findings are mathematical proofs of concept demonstrating capability rather than practical attacks.
 
 ## Sources
 -  (Ben's Bites, 2026-04-09)
