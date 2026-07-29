@@ -1,7 +1,7 @@
 ---
 title: "Open-Weight AI Regulation — The Kubernetes Moment Policy Debate"
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-07-29
 type: concept
 tags:
   - open-weight
@@ -12,6 +12,7 @@ tags:
   - open-source
 sources:
   - raw/articles/2026-07-25_tobiknaup-open-weight-kubernetes-moment.md
+  - raw/newsletters/2026-07-28-opus-5-fable-5.md
 aliases: [open-weight-regulation, kubernetes-moment-ai]
 ---
 
@@ -42,6 +43,10 @@ In July 2026, following the release of [[entities/deepseek|DeepSeek]] models and
 1. **GLM-5.2** from Z.ai was released under an MIT license with public weights and reported 62.1% on SWE-bench Pro versus 58.6% for GPT-5.5.
 2. **Kimi K3** from Moonshot approaches the closed frontier on long-horizon coding tasks, with Artificial Analysis scoring it alongside Claude Opus 4.8 and GPT-5.5.
 3. **Hugging Face data** showed Chinese models accounted for 41% of model downloads over the preceding year, indicating that the global developer community is already building on Chinese open-weight foundations.
+
+### Anthropic's Position on Open-Weight Models (July 2026)
+
+Following backlash to Jensen Huang's open-source AI statement and the possibility of an open-weights ban, [[entities/anthropic|Anthropic]] published an essay asserting they never pushed for an open-weights ban. The essay was met with widespread skepticism, with critics arguing Anthropic supports open models when developed by Western companies (DeepMind, Meta) but not when developed by Chinese entities — characterizing the position as hypocritical.
 
 ## Industry Positions
 
@@ -88,7 +93,7 @@ Rather than banning Chinese models, Knaup proposes a four-part strategy:
 
 3. **Build the rest of the stack**: American startups, silicon companies, hyperscalers, and neoclouds should build the serving, tooling, support, and operational layers around open-weight models.
 
-4. **Set standards instead of banning models**: Independent testing and standards bodies (along lines proposed by [[entities/anthropic|Anthropic]] CEO Demis Hassabis) for frontier models, analogous to how the CNCF provides governance for Kubernetes — though for safety rather than compatibility.
+4. **Set standards instead of banning models**: Independent testing and standards bodies (along lines proposed by [[entities/anthropic|Anthropic]] CEO Dario Amodei) for frontier models, analogous to how the CNCF provides governance for Kubernetes — though for safety rather than compatibility.
 
 ## Ecosystem Implications
 

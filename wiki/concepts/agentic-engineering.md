@@ -1,7 +1,7 @@
 ---
 title: "Agentic Engineering"
 created: 2026-05-14
-updated: 2026-07-09
+updated: 2026-07-29
 type: concept
 tags:
   - concept
@@ -22,6 +22,7 @@ sources:
   - raw/articles/simonwillison.net--2026-jun-22-porting-moebius--6904f00e.md
   - raw/newsletters/2026-07-01-aiewf-daily-dispatch-loops-software-factories-forward-deployed-engineers.md
   - raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md
+  - raw/newsletters/2026-07-28-codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai.md
 ---
 
 # Agentic Engineering
@@ -322,6 +323,20 @@ Day 2 of AIEWF 2026 crystallized several themes central to agentic engineering:
 
 - **Vanishing Gradients #5 (July 2026)**: *\"What Claude Fable Means for Coding Agents\"* — Nico Gerold (AMP Code CEO) discusses how AMP removed its handoff feature because compaction improved so much that the model ate the feature. Recommends TypeScript and Rust (not Python) for AI engineering workflows. See [[entities/fable]] for Fable's thinking partner methodology.
   Source: raw/newsletters/2026-07-08-what-claude-fable-means-for-coding-agents.md
+
+### Productivity Engineering and the Generalist Shift (Akshay Nathan, OpenAI — July 2026)
+
+Akshay Nathan (OpenAI Core Product Engineering lead, previously Airtable) shared insights on how Codex and ChatGPT Work are reshaping product development in his Latent Space podcast appearance:
+
+- **The Generalist Shift**: AI enables more people to become generalists with deep specialties, blurring boundaries between engineering, design, strategy, and operations
+- **Taste as Bottleneck**: Ideas and taste become the critical scarce resource when almost anyone can build with AI tools
+- **Ideation Gap**: LLMs still fundamentally struggle with "bring me new ideas" — they execute but don't originate
+- **Quality At-Bats**: A new productivity metric measuring meaningful attempts rather than commits, tokens, or pull requests
+- **Motion vs. Progress**: The critical distinction between AI-generated activity and genuine value creation
+
+Source: [[raw/newsletters/2026-07-28-codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai.md]]
+
+This insight connects to [[entities/openai-codex]] and the broader theme of [[concepts/compound-engineering-every|compound engineering]] workflows where human taste and direction become the scarce resource.
 
 ## Related Concepts
 

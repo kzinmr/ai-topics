@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-07-25
+updated: 2026-07-29
 tags:
   - product
   - coding-agent
@@ -42,6 +42,7 @@ sources:
   - raw/newsletters/2026-07-14-ainews-codex-usage-up-10x-in-6-months-to-7m-users-1m-in-the-past-day-did-codex-o.md
   - raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md
   - raw/articles/2026-07-24_pvncher_practical-multi-agent-orchestration-in-codex.md
+  - raw/newsletters/2026-07-28-codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai.md
 ---
 
 # OpenAI Codex
@@ -434,7 +435,8 @@ Recommended standing instructions for coordinator skills:
 | Mid-March 2026 | 2M | Thibault Sottiaux (Codex lead) |
 | April 8, 2026 | **3M** | Announced by Sam Altman. Codex lead Thibault Sottiaux confirmed "from 2M less than a month ago" |
 | April 22, 2026 | **4M** | WSJ reporting. +1M in 2 weeks |
-| July 13, 2026 | **7M** | Thibault Sottiaux (Codex lead). +1M in the previous ~24 hours from 6M on July 12 |
+| July 13, 2026 | **7M (WAU)** | Thibault Sottiaux (Codex lead). +1M in the previous ~24 hours from 6M on July 12 |
+| July 21, 2026 | **10M (MAU)** | Thibault Sottiaux (Codex lead). ChatGPT Work + Codex combined reached 10M users less than two weeks after July 9 launch. Codex MAU up >10x from January 2026 |
 
 On April 8, 2026, Sam Altman announced Codex surpassed 3M weekly active users and reset usage limits. He stated plans to repeat resets at each 1M increment until reaching 10M users. Codex lead Thibault Sottiaux confirmed the rapid growth was "from 2M less than a month ago."
 
@@ -443,6 +445,8 @@ Post-GPT-5.5 launch (April 2026), Codex's momentum accelerated. On April 22, WSJ
 Sources: [Business Today — Codex 3M WAU](https://www.businesstoday.in/technology/story/openai-codex-celebrates-3-million-weekly-users-ceo-sam-altman-resets-usage-limits-524717-2026-04-08), [WSJ — OpenAI Working With Consultants to Sell Codex](https://www.wsj.com/cio-journal/openai-is-working-with-consultants-to-sell-codex-f355b1b9), [Gradually AI — Codex Statistics 2026](https://www.gradually.ai/en/codex-statistics/)
 
 On July 13, 2026, Codex lead Thibault Sottiaux announced Codex had surpassed 7M weekly active users — a 10x increase from 550K-700K in January 2026. The user base grew by approximately 1M users in the 24 hours between July 12 (6M) and July 13 (7M). This compares to Claude Code's ~2M users at $2.5B ARR as of February 2026.
+
+On July 21, 2026, Thibault Sottiaux confirmed that Codex and ChatGPT Work had reached **10M monthly active users combined** — less than two weeks after the July 9, 2026 launch of ChatGPT Work with Codex integration. Codex MAU had grown more than 10x since January 2026. Sottiaux noted: *"New day, new usage reset for paid users of Codex and ChatGPT Work"* — highlighting the sustained demand pressure. Knowledge workers accounted for roughly **20% of Codex's user base** and were growing more than **3x as quickly as developers**, signaling a major expansion beyond the original developer audience.
 
 Sources: [AINews — Codex 7M Users](https://open.substack.com/pub/swyx/p/ainews-codex-usage-up-10x-in-6-months)
 
@@ -465,6 +469,53 @@ The coding agent competitive landscape shifted from token pricing to cost-per-ta
 - Arena ranked GPT-5.6 Sol #2 on agent leaderboard (7.8K real-world sessions)
 - Grok-4.5 jumped to #13
 - Artificial Analysis highlighted cost-per-task as the key emerging metric
+
+## ChatGPT Work Integration (July 2026)
+
+> *Source: [[raw/newsletters/2026-07-28-codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai.md|AINews / Latent Space — July 28, 2026]]*
+
+On July 9, 2026, OpenAI launched **ChatGPT Work** — a new product tier that shares the **same underlying agent harness** as Codex. Rather than building separate products with distinct architectures, OpenAI merged the agent experiences, enabling features to flow between ChatGPT Work and Codex seamlessly.
+
+### Shared Agent Harness Architecture
+
+The key architectural decision: Codex and ChatGPT Work are powered by a **shared agent harness** — the same runtime, the same agent loop, the same underlying capabilities. This means:
+
+- Features developed for ChatGPT Work (persistent computers, Sites, artifacts) are immediately available in Codex, and vice versa
+- Plugin ecosystems converge — the same plugins power both products
+- Skills, sub-agents, and memory systems are shared across the two surfaces
+- OpenAI can invest in one agent engine instead of maintaining parallel stacks
+
+### Knowledge Worker Adoption Surge
+
+Knowledge workers now account for roughly **20% of Codex's user base** and are growing more than **3x as quickly as developers**. This represents a fundamental expansion of Codex's addressable market:
+
+> *"Codex was always meant for developers. But knowledge workers adopted it faster than we expected — they're using it for research, writing, analysis, project management — things we never explicitly designed for."*
+
+The growth rate among knowledge workers (3x that of developers) suggests that the **general-purpose knowledge work platform** vision articulated in [[raw/articles/2026-05-26_every_codex-knowledge-work.md|Every's Codex guide]] is materializing faster than anticipated.
+
+### Why OpenAI Merged Agent Experiences
+
+Rather than maintaining separate product lines for "coding agents" and "work agents," OpenAI chose to unify:
+
+1. **Feature velocity**: A single agent harness means one team builds features once that benefit both products
+2. **Ecosystem effects**: Plugins, skills, and memory created for one surface strengthen the other
+3. **User continuity**: Developers who use Codex can transition to ChatGPT Work (and back) without learning a new system
+4. **Shared infrastructure**: Persistent computers, artifacts, Sites, sub-agents, and memory systems serve both audiences
+
+### Shared Features
+
+The unified architecture provides these capabilities to both Codex and ChatGPT Work:
+
+| Feature | Description |
+|---------|-------------|
+| **Persistent computers** | Long-running cloud environments that maintain state across sessions |
+| **Artifacts** | Interactive documents, dashboards, and apps rendered inline |
+| **Sites** | Hosted websites and apps shared via URL within workspaces |
+| **Plugins** | Role-specific tool bundles (Data Analytics, Sales, Creative Production, etc.) |
+| **Sub-agents** | Delegated child agents with configurable reasoning effort |
+| **Memory** | Cross-session context persistence (Codex Memories, chronicle) |
+
+**Related**: [[concepts/harness-engineering/agent-harness]] — Agent harness design, [[concepts/codex/codex-superapp]] — Codex superapp trajectory
 
 ## Known Issues
 

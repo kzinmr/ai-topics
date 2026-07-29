@@ -4,10 +4,10 @@ type: benchmark
 created: 2026-07-28
 updated: 2026-07-28
 tags:
-  - ai-benchmarks
-  - llm-security
-  - model-evaluation
-  - cryptography
+  - benchmark
+  - security
+  - evaluation
+  - crypto
   - anthropic
 sources:
   - raw/articles/simonwillison.net--2026-jul-28-discovering-cryptographic-weaknesses-with-claude--6abd4154.md

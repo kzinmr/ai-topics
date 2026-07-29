@@ -2,7 +2,7 @@
 title: "Claude Opus 5"
 type: concept
 created: 2026-07-25
-updated: 2026-07-25
+updated: 2026-07-29
 tags:
   - anthropic
   - model
@@ -11,6 +11,7 @@ tags:
   - security
 sources:
   - raw/articles/2026-07-24_simonwillison_introducing-claude-opus-5.md
+  - raw/newsletters/2026-07-28-opus-5-fable-5.md
 ---
 
 # Claude Opus 5
@@ -62,6 +63,30 @@ As with the broader Claude 5 generation, Opus 5 supports **effort routing** — 
 | [[concepts/claude/opus-4-8|Opus 4.8]] | May 2026 | Dynamic Workflows, Effort Control |
 | **Opus 5** | July 2026 | Near-Fable-5 intelligence, proactive behavior |
 | Claude Fable 5 | 2026 | Maximum intelligence frontier |
+
+## System Prompt Reduction and Overprompting
+
+Anthropic's guidance around Opus 5 and its sibling [[concepts/claude/fable-5|Claude Fable 5]] introduced a striking finding: **the system prompt was significantly reduced** with no measurable loss in coding-eval performance.
+
+> Claude Opus 5 is out — Anthropic says it gets close to Fable 5 at half the price… And maybe we are overprompting it. Anthropic says it removed more than 80% of Claude Code's system prompt for Opus 5 and Fable 5 with no measurable coding-eval loss.
+>
+> — Ben's Bites, July 28, 2026
+
+### Implications for Context Engineering
+
+This finding challenges the prevailing assumption that more detailed prompts are always better. If >80% of a sophisticated agent system prompt can be removed without harming coding benchmarks, it suggests that:
+
+- **Larger models may require less scaffolding** — frontier models internalize patterns that earlier models needed explicit instructions for.
+- **System prompt bloat may be counterproductive** — verbose prompts could constrain model behavior rather than guide it.
+- **The context engineering paradigm is shifting** — see [[concepts/harness-engineering/context-engineering]] for how Claude 5 generation models respond differently to prompt structure.
+
+### "Maybe We Are Overprompting It"
+
+The Ben's Bites report noted Every's review, which listed behaviours that might explain this: *"it argues, stops early and fights the skills people built for older models."* This suggests that the most sophisticated models may actively resist overly prescriptive system prompts, preferring simpler, more trust-based instructions.
+
+### Theo's Experience with CLAUDE.md / AGENTS.md
+
+Theo spent *"multiple hours hand writing better CLAUDE.md/AGENTS.md and half a dozen skills. Audited and deleted a similar amount."* His conclusion: *"I'm sad to report it was 100% worth it."* This underscores that the path to better outcomes with Opus 5 and Fable 5 is not more prompting — it is **better, more focused prompting** with careful curation of instructions.
 
 ## Related Pages
 

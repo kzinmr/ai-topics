@@ -1,7 +1,7 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-06-03
+updated: 2026-07-29
 type: entity
 tags: [company, platform]
 sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
@@ -12,6 +12,7 @@ sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
   - raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md
   - raw/articles/substack.com--redirect-fc937db9-1f9f-4d17-8d14-568f58e27526--f7737c4f.md
   - https://github.com/nvidia/skillspector
+  - raw/newsletters/2026-07-28-opus-5-fable-5.md
 ---
 
 # NVIDIA Corporation
@@ -84,7 +85,16 @@ NVIDIA reported Q1 FY2027 results with record AI infrastructure revenue:
 
 **Jensen Huang**: *"The largest infrastructure expansion in human history."*
 
-**China exposure**: Revenue assumed to be $0 on the compute side due to export restrictions, though the 10-K filing warns of "material and adverse impact" from effective foreclosure from the Chinese market. [[concepts/nvidia-vera-rubin]] and [[entities/nvidia]] overall strategy now focuses on AI factory-scale deployments worldwide.
+- **China exposure**: Revenue assumed to be $0 on the compute side due to export restrictions, though the 10-K filing warns of "material and adverse impact" from effective foreclosure from the Chinese market. [[concepts/nvidia-vera-rubin]] and [[entities/nvidia]] overall strategy now focuses on AI factory-scale deployments worldwide.
+
+### Jensen Huang's First X Post — Open-Source AI Statement (July 2026)
+
+On July 27-28, 2026, NVIDIA CEO Jensen Huang made his **first-ever post on X/Twitter** — a lengthy statement backing open-source AI. The post came in response to rumors that the Trump administration was considering banning US companies from using Chinese open-weight models. Huang's statement was subsequently endorsed/signed by OpenAI, Google, and other major AI companies.
+
+This is significant because:
+- It marks Huang's debut on X/Twitter, a platform he had never personally used before
+- Positions NVIDIA as a champion of open-source AI, consistent with its Nemotron open model strategy
+- Responds to the open-weight regulation debate (see [[concepts/open-weight-ai-regulation]])
 
 ## Nemotron Open Model Strategy
 
