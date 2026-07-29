@@ -2,7 +2,7 @@
 title: "Model Context Protocol (MCP)"
 type: concept
 created: 2026-04-19
-updated: 2026-05-27
+updated: 2026-07-28
 tags: [concept, mcp, developer-tooling, protocol, anthropic]
 aliases: ["mcp", "model context protocol", "MCP protocol"]
 related:
@@ -14,6 +14,8 @@ sources:
   - raw/newsletters/2026-05-17-the-agentic-economy-has-no-black-box.md
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
   - raw/newsletters/2026-05-26-is-saas-dead.md
+  - raw/articles/2026-07-28_anthropic_bringing-mcp-2026-07-28-to-claude.md
+  - https://claude.com/blog/bringing-mcp-2026-07-28-to-claude
 ---
 
 # Model Context Protocol (MCP)
@@ -88,28 +90,43 @@ await salesforce.updateRecord({
 5. **State Persistence** — Write results to disk, save as reusable SKILL.md files
 
 
-## MCP 2026-07-28 RC: Stateless Protocol
+## MCP 2026-07-28: Stateless Core (Released)
 
-In May 2026, the MCP specification announced a **Release Candidate** targeting July 28, 2026, with foundational changes:
+The fifth MCP spec release went live on **July 28, 2026**, making the previously announced RC changes official. MCP has surpassed **400M monthly SDK downloads** (4x increase in 2026).
 
-### Stateless Protocol
-The most significant architectural change: MCP shifts from stateful to **stateless protocol** design. Server implementations no longer maintain session state between requests. This dramatically simplifies server deployment, scaling, and fault tolerance:
+### Three Pillars of 2026-07-28
 
-- **Horizontal scaling**: Stateless servers can be deployed behind load balancers
-- **Simplified failover**: No session migration needed
-- **Reduced memory footprint**: Servers don't track client sessions
-- **Easier integration**: Existing RESTful tooling and middleware works natively
+| Change | Before (stateful) | After (stateless) |
+|--------|-------------------|-------------------|
+| **Protocol model** | Bidirectional stateful | Request/response stateless |
+| **Deployment target** | Long-running servers | Serverless & edge infrastructure |
+| **Extensions** | Ad-hoc | Versioned framework (Apps, Tasks) |
+| **Auth** | Varied implementations | OAuth 2.0 / OIDC aligned (Entra, Okta) |
 
-### First-Class MCP Apps and Tasks
-New primitives introduced:
-- **MCP Apps**: Runnable, shippable agent configurations bundling servers, tools, and prompt templates
-- **MCP Tasks**: Structured, multi-step workflows with defined inputs, outputs, and verification conditions
+### Stateless Core
+MCP moves from a bidirectional stateful protocol to a **request/response model**. Servers can now deploy on serverless and edge infrastructure. No handshake, no session ID — any request can hit any server instance.
 
-### Authentication Hardening
-Enhanced auth support for production deployments, including OAuth 2.0 integration and API key management.
+**Implications:**
+- Horizontal scaling without sticky sessions
+- Simplified load balancing
+- No session state recovery on restart
+- First-class HTTP workload compatibility
 
-### Significance
-Stateless MCP represents MCP's maturation from an experimental protocol to a production-grade infrastructure standard. The shift to statelessness aligns with general web protocol evolution (cf. HTTP/1.1→HTTP/2 stateless semantics) and is a prerequisite for enterprise-scale agent deployments.
+### Standardized Extensions
+**MCP Apps** and **MCP Tasks** now ship under a versioned extensions framework:
+- **MCP Apps**: Interactive UIs rendered directly in the conversation
+- **MCP Tasks**: Long-running work with structured inputs/outputs
+
+### Auth Hardening
+Authorization now aligns with production OAuth 2.0 and OIDC deployments, enabling MCP servers to connect to enterprise identity systems (Entra, Okta) without workarounds.
+
+### Claude-Specific Features
+Claude now lists **950+ MCP servers** in the connectors directory. New features accompanying the spec release:
+- **Enterprise-managed auth** — Admins provision connectors via IdP, users inherit access through groups (zero-touch setup)
+- **Observability dashboard** — Track adoption, diagnose errors/latency, usage breakdown by product
+- **MCP tunnels** (research preview) — Connect to private-network MCP servers without public endpoints
+
+> Source: [Bringing MCP 2026-07-28 to Claude](https://claude.com/blog/bringing-mcp-2026-07-28-to-claude) (Anthropic, Jul 28, 2026)
 
 ## WebMCP
 
@@ -167,7 +184,7 @@ MCP excels for structured data access and real-time integrations, while CLIs are
 
 ## Security Vulnerabilities & Governance Risks (May 2026)
 
-As of May 2026, MCP has reached **150M+ downloads** and become the de facto connective tissue of the agentic web. This scale has surfaced critical security concerns:
+As of May 2026, MCP had reached **150M+ downloads** (now **400M+ monthly SDK downloads** as of July 2026) and become the de facto connective tissue of the agentic web. This scale has surfaced critical security concerns:
 
 ### OX Security Findings
 - **Trust-boundary risks** in MCP's STDIO execution model affected thousands of publicly accessible servers

@@ -2866,3 +2866,13 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 **Raw-save-only (9):** johndcook.com (2 math posts), purplesyringa.moe (Teal impressions, SIMD in Python), entropicthoughts.com (SICP Haskell), shkspr.mobi (book review), idiallo.com (medical debt), dfarq.homeip.net (ARCNET history)
 
 **Unsaved (6):** LWN.net (paywall), Daniel Tunkelang/Medium (paywall), AI Engineer YouTube (4 videos — need transcript extraction)
+
+---
+## [2026-07-29] MCP 2026-07-28 spec release ingested
+
+**Source:** Claude Blog — [Bringing MCP 2026-07-28 to Claude](https://claude.com/blog/bringing-mcp-2026-07-28-to-claude)
+
+**Wiki updates:**
+1. `raw/articles/2026-07-28_anthropic_bringing-mcp-2026-07-28-to-claude.md` — Raw article saved
+2. `concepts/model-context-protocol-mcp.md` — Replaced RC section with official release: stateless core, standardized extensions (Apps/Tasks), auth hardening (OAuth 2.0/OIDC), 400M+ monthly SDK downloads, 950+ Claude MCP servers, enterprise-managed auth, observability dashboard, MCP tunnels (research preview)
+3. `concepts/mcp-desktop-extensions.md` — Updated RC→Released section, added Claude features, updated sources
