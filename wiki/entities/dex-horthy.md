@@ -3,7 +3,7 @@ title: "Dex Horthy (@dexhorthy)"
 type: entity
 handle: "@dexhorthy"
 created: 2026-05-10
-updated: 2026-06-01
+updated: 2026-07-30
 tags:
   - person
   - harness-engineering
@@ -23,6 +23,7 @@ sources:
   - "https://github.com/humanlayer/humanlayer"
   - "raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-agents.md"
   - "raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md"
+  - "raw/articles/2026-07-29_dexhorthy_pragmatic-leverage-software-factory.md"
 related:
   - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/context-engineering|Context Engineering]]"
@@ -86,3 +87,17 @@ Horthy has been monitoring convergence of agent harness patterns across the indu
 - [[entities/addy-osmani]] — Cited Horthy as key voice in harness pattern tracking
 - [[entities/vtrivedy10]] — Coined "Agent = Model + Harness"
 - [[entities/geoff-huntley]] — Collaborator on "Ralph Wiggum as a Software Engineer"
+
+### Pragmatic Leverage in the Software Factory (July 2026)
+
+In "Pragmatic Leverage in the Software Factory" (an addendum to the "Why Software Factories Fail" series), Horthy formalizes the efficiency calculus of AI coding agents:
+
+**Core insight**: Even before AI, only 25-50% of time to ship a feature was writing code — the rest was planning, review, and testing. Using AI only for coding doesn't accelerate anything else. Using AI to help plan and align gets 2-3x faster overall.
+
+**Expected Pain model**: `expected pain = P(change needed) × how painful the change is`. There's an inverse relationship between effort invested up front and expected pain — but with diminishing returns.
+
+**Pragmatic Leverage principle**: Don't spend 6 hours planning a task where you could have eliminated 80% of expected pain in the first 10 minutes. Requires multi-phase planning (50kft → 10kft) with steering at each level, and knowing when to zoom in on technical feasibility vs when to stop at the product level.
+
+**YOLO two-sentence prompt**: ~50% merge-ready. Principal engineer hand-written spec: ~90%. Write every line yourself: 100% (zero rework). The optimal workflow is somewhere in the middle — planning enough to eliminate most expected pain without overinvesting.
+
+**Source**: [[raw/articles/2026-07-29_dexhorthy_pragmatic-leverage-software-factory.md|X Article — Pragmatic Leverage in the Software Factory]] (July 29, 2026)

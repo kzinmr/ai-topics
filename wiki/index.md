@@ -218,7 +218,7 @@
 - [[entities/derek-thompson]] — Derek Thompson
 - [[entities/descript-audio-codec]] — Descript Audio Codec (DAC)
 - [[entities/devin]] — Devin (Cognition AI)
-- [[entities/dex-horthy]] — Dex Horthy (@dexhorthy)
+- [[entities/dex-horthy]] — Dex Horthy (@dexhorthy) — Pragmatic Leverage, FIC, 12-Factor Agents
 - [[entities/dimillian]] — Guillaume Charpiat (dimillian)
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
 - [[entities/dji]] — DJI
@@ -1987,7 +1987,7 @@
 - [[concepts/kimi-k2-5]] — kimi-k2-5
 - [[concepts/kimi-k2-6]] — Moonshot Kimi K2.6
 - [[concepts/kimi-k2-7-code]] — Kimi K2.7-Code
-- [[concepts/kimi-k3]] — Moonshot Kimi K3
+- [[concepts/kimi-k3]] — Moonshot Kimi K3 (2.8T MoE, 1M ctx, local inference via Unsloth GGUF)
 - [[concepts/kimi-k2-thinking]] — kimi-k2-thinking
 - [[concepts/kiran-random-labs]] — Kiran (Random Labs)
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge Graph Memory for AI Agents

@@ -1,3 +1,23 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-07-30] X bookmarks ingest — Unsloth Kimi K3 local inference + Dex Horthy Pragmatic Leverage
+
+**2 bookmarks processed (2 wiki enrichments)**:
+
+1. **Unsloth Kimi K3 Local Inference Guide** (UnslothAI tweet)
+   - `concepts/kimi-k3.md` — Added "Local Inference (Unsloth)" section: Dynamic GGUF quantization tiers (UD-IQ1_S 594GB/78.9% through UD-Q8_K_XL lossless 1.56TB), hardware requirements (610GB-1.6TB), Unsloth Studio, custom llama.cpp fork, community quant comparison (21-45x worse PPL)
+   - Source: unsloth.ai/docs/models/kimi-k3 (Jul 29), huggingface.co/unsloth/Kimi-K3-GGUF
+
+2. **Pragmatic Leverage in the Software Factory** (Dex Horthy X Article)
+   - `entities/dex-horthy.md` — Added "Pragmatic Leverage in the Software Factory" section: expected pain model (P(change) x pain), 80/20 leverage principle, multi-phase planning (50kft -> 10kft), YOLO vs spec vs hand-code tradeoffs. Addendum to "Why Software Factories Fail" series.
+   - Source: x.com/i/article/2082133743893204992 (Jul 29)
+
+**Raw articles saved**:
+- raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md
+- raw/articles/2026-07-29_dexhorthy_pragmatic-leverage-software-factory.md
+
 ## [2026-07-30] Active crawl — 4 new concept pages + 1 event enrichment
 
 | 2026-07-30 | concepts/ai-benchmarks/arc-agi-3.md | created | ARC-AGI-3 benchmark concept page; OpenAI's GPT-5.6 Sol tripled scores to 38.3% via retained reasoning + context compaction |
@@ -8,9 +28,6 @@
 | 2026-07-30 | wiki/raw/articles/2026-07-29_openai-arc-agi-3-benchmark.md | saved | OpenAI ARC-AGI-3 blog post via Jina.ai (Cloudflare-blocked) |
 | 2026-07-30 | wiki/raw/articles/2026-07-29_github-turbo-fieldfare-gemma-4-2gb.md | saved | turbo-fieldfare GitHub README + HN discussion (823 pts) |
 | 2026-07-30 | wiki/raw/articles/2026-07-29_ai-engineer-persona-engineering.md | saved | Ishan Anand Persona Engineering talk transcript (YouTube) |
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-07-30] Blog wiki ingest — ThunderAgent page + 5 entity enrichments
 

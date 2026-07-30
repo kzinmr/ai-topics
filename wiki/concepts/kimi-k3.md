@@ -20,6 +20,7 @@ sources:
   - "raw/articles/2026-07-28_fireworks-ai_kimik3-on-fireworks.md"
   - "raw/newsletters/2026-07-28-ainews-much-ado-about-open-weights.md"
   - "raw/articles/2026-07-28_fireworks-ai_K3-LoRA-Training.md"
+  - "raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md"
 ---
 
 # Moonshot Kimi K3
@@ -396,6 +397,36 @@ In July 2026, [[entities/fireworks-ai|Fireworks AI]] made K3 available for **Mul
 5. **Re-train** the adapter with improved data, closing the loop
 
 This infrastructure makes [[concepts/post-training]] practical for ongoing model improvement and enables the [[concepts/lora|LoRA]]-based customization paradigm that many enterprises require for production deployment.
+
+## Local Inference (Unsloth) — July 2026
+
+[[entities/unsloth|Unsloth]] released Dynamic GGUF quantizations enabling Kimi K3 to run on consumer-accessible hardware. Key quant tiers:
+
+| Quant | Size (GB) | Top-1 Accuracy | Perplexity | Hardware Requirement |
+|-------|-----------|----------------|------------|---------------------|
+| **UD-IQ1_S** | 594 | 78.9% | 2.58 | 610 GB (Mac Studio + 128GB RAM) |
+| UD-IQ1_M | 649 | 81.2% | 2.36 | 665 GB |
+| UD-IQ2_XXS | 711 | 84.1% | 2.13 | 726 GB |
+| UD-Q2_K_XL | 861 | 90.4% | 1.74 | 880 GB |
+| UD-Q4_K_XL | 1,510 | ~99% | 1.46 | 1.5 TB (near-full precision) |
+| UD-Q8_K_XL | 1,560 | Lossless | 1.46 | 1.6 TB (truly lossless vs MXFP4) |
+
+**Key findings**:
+- 1-bit Dynamic GGUF shrinks K3 from 1.56TB → **594GB (62% smaller)** while retaining ~79% accuracy
+- 2-bit at 861GB achieves **90% accuracy** while being 45% smaller
+- Community quants are dramatically worse: IQ1_M at 619GB achieved 54.56 PPL (21× worse than Unsloth's 594GB IQ1_S)
+- Unsloth required a custom llama.cpp fork for K3 vision support (mmproj with RMSNorm, non-square fused QKV, post-norm projector)
+
+**Deployment options**:
+
+- **Unsloth Studio**: Open-source web UI with automatic RAM offloading, multi-GPU detection, self-healing tool calling, code execution, and Cloudflare HTTPS tunneling
+- **llama.cpp**: Custom fork required (`unslothai/llama.cpp#48`); supports CUDA, Metal, and CPU inference
+- **Hardware**: DGX Station or Mac Studio with 128GB+ RAM; best speed/quality tradeoff at IQ1_S (594GB)
+- **Inference speed**: ~20 tok/s on B200s, >120 tok/s throughput
+
+K3 is thinking-only with `preserve_thinking` always enabled. Thinking effort: low/high/max. Context: 1M tokens. Default params: temp=1.0, top_p=0.95 (chat) / top_p=1.0 (agentic).
+
+**Source**: [[raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md|Unsloth Docs — Kimi K3 How to Run Locally]], [GGUF on HuggingFace](https://huggingface.co/unsloth/Kimi-K3-GGUF)
 
 
 ## Related Pages
