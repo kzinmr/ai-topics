@@ -1,3 +1,21 @@
+## [2026-07-30] dreaming-wiki-ingest | Enriched entities/elevenlabs.md (2 takes)
+
+**Enrichment based on dreaming-group triage (2 takes, 4 refs):**
+
+### Takes Applied
+- **[[entities/elevenlabs.md]]** — Added AI Virtual Receptionist section (call routing, appointment management, knowledge base, 24/7 availability, multilingual support) and Valiant Finance case study (Sophia voice agent: 29% after-hours call handling, $1.5M+ loan intent, ElevenCreative 10 ad variants in 1 week, Genesys/Zapier/Salesforce integration)
+  - Frontmatter updated: `updated: 2026-07-30`, +2 sources
+
+### References Recorded (pending future enrichment)
+- Together AI + Moonshot AI partnership — entities/together-ai.md
+- Ed Zitron "The More You Buy" hyperscaler financial data — entities/ed-zitron.md
+- Fireworks Trilogy Kimi K3 cybersecurity playbook — entities/fireworks-ai.md
+- Decagon Munger moats founder philosophy — entities/decagon.md
+
+### Archive
+- Archive already committed by upstream (6a1c79f3 variant: 15 candidates, 9 newly archived)
+
+---
 ## [2026-07-30] Dreaming — Knowledge Consolidation (Pattern E saturation)
 
 **Checkpoint**: 0 articles collected, 221 recent raw articles on filesystem

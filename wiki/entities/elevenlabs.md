@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-07-17
+updated: 2026-07-30
 tags:
   - company
   - voice-ai
@@ -20,6 +20,8 @@ sources:
   - raw/articles/2026-07-01_elevenlabs_procedures.md
   - raw/articles/2026-07-09_elevenlabs_fyxer.md
   - raw/articles/2026-07-17_elevenlabs_interaction-models.md
+  - raw/articles/2026-07-30_elevenlabs_ai-virtual-receptionist.md
+  - raw/articles/2026-07-30_elevenlabs_valiant-finance.md
 ---
 
 # ElevenLabs
@@ -314,6 +316,44 @@ Source: raw/articles/2026-07-17_elevenlabs_interaction-models.md
 ElevenLabs published a technical deep-dive on voice agent latency optimization, covering the end-to-end pipeline from speech recognition to response delivery.
 
 Source: [Voice Agent Latency Optimization — ElevenLabs Blog](https://elevenlabs.io/blog/voice-agent-latency-optimization)
+
+
+
+### AI Virtual Receptionist (July 2026)
+
+ElevenLabs launched **AI virtual receptionist** capabilities within ElevenAgents, enabling businesses to deploy conversational AI answering services that handle incoming calls around the clock. The system understands natural language, determines intent, and takes action on the caller's behalf — replacing traditional IVR phone trees with flexible human-like dialogue.
+
+**Key capabilities:**
+
+- **Call routing**: Direct callers to the right department or voicemail based on what they ask for
+- **Natural voice response**: Human-sounding speech with low latency (~75ms model inference)
+- **Appointment management**: Book, cancel, or reschedule appointments through natural conversation
+- **Knowledge base grounding**: Auto-indexes business content (FAQ pages, internal docs, website URLs) to provide accurate answers
+- **Lead capture**: Collects caller information in real time for follow-up
+
+**Integration ecosystem**: Connects with CRMs (Salesforce), calendar/scheduling tools, telephony systems, and helpdesk software. Extends beyond voice to SMS and chat for omnichannel consistency.
+
+**Voice pipeline flow**: Call received → Speech-to-text via Scribe v2 (~150ms, 90+ languages) → Intent classification → Response generation → Text-to-speech via Eleven v3 Conversational (expressive, <75ms) → Action execution (CRM update, ticket creation, calendar booking)
+
+**Business benefits**: 24/7/365 availability, consistent on-brand tone at scale, instant scalability during call spikes, multilingual support (dozens of languages), reduced wait times. Small businesses (law firms, medical practices, real estate, HVAC) see particularly strong ROI by recovering calls that would otherwise go unanswered.
+
+Source: raw/articles/2026-07-30_elevenlabs_ai-virtual-receptionist.md
+
+### Valiant Finance Case Study — Voice AI for SME Lending (July 2026)
+
+**Valiant Finance**, an Australian SME lending platform connecting small businesses with 90+ lending partners and 100+ advisers, deployed ElevenLabs across customer support and campaign production. Valiant chose ElevenLabs for authentic Australian voice variety, allowing fine-grained tone, age, and style customization.
+
+**Sophia voice agent — after-hours support**: Valiant deployed an out-of-hours voice agent named Sophia that handles after-hours and public holiday calls. Sophia opens customer files and schedules broker callbacks, capturing requests that would otherwise be lost to voicemail. Early analysis shows **Sophia handling 29% of all after-hours calls** and identifying **$1.5M+ in commercial loan intent** during out-of-hours pilot.
+
+**Integration stack**: ElevenAgents connected across Genesys, Zapier, and Salesforce — integrated by Valiant's operations team without dedicated engineering deployment.
+
+**ElevenCreative — radio campaign production**: Valiant's marketing team uses ElevenCreative to produce and iterate radio advertising, turning scripts into broadcast-ready audio. Across two radio campaigns, the team developed **10 ad variants in one week** — compressing a process that would take a month into one week through fast audio generation and immediate feedback loops.
+
+**Future developments:**
+- **Internal training agent**: Plans to build a training agent for broker onboarding, using **45+ real-world conversational edge cases** from pilot logs (complex visa restrictions, irregular speech patterns) as training simulations
+- **In-hours agent**: Developing an agent to reconnect with historically unassisted customers against expanded lending options (90+ partners)
+
+Source: raw/articles/2026-07-30_elevenlabs_valiant-finance.md
 
 ---
 
