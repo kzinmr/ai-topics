@@ -1,0 +1,73 @@
+{
+  "archived_at": "2026-07-30T18:07:14.000000+00:00",
+  "triage_run_id": "20260730T180054Z",
+  "source": "raw_backlog",
+  "summary_ja": "全5記事が既存Wikiページで完全カバー済み。新規作成/更新不要。すでにアーカイブ済みの2件(reframing-superintelligence + grant-sanderson)を含め全件skip。",
+  "decisions": [
+    {
+      "item_id": "raw-1",
+      "source": "raw_backlog",
+      "source_name": "FHI Oxford / K. Eric Drexler",
+      "title": "Reframing Superintelligence: Comprehensive AI Services as General Intelligence (FHI-TR-2019-1)",
+      "url": "https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf",
+      "content_hash": "0ab3b910be1d",
+      "raw_path": "raw/articles/reframing-superintelligence-fhi-2019.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ concepts/cais.md + concepts/comprehensive-ai-services.md(212行) + entities/k-eric-drexler.md(80行)ですべてカバー済み。すでにアーカイブ済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Reframing Superintelligence. K. Eric Drexler, FHI-TR-2019-1. 210-page technical report. CAIS framework: R&D automation as improvement engine, service-centered intelligence, learning vs competence distinction, safety affordances."
+    },
+    {
+      "item_id": "raw-2",
+      "source": "raw_backlog",
+      "source_name": "Microsoft AI",
+      "title": "MAI-Thinking-1: Building a Hill-Climbing Machine (109pp tech report)",
+      "url": null,
+      "content_hash": "fe910cb238bd",
+      "raw_path": "raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ entities/mai-thinking-1.md + concepts/mai-thinking-1-tech-report.md(227行) + concepts/microsoft-mai-models.md + concepts/hill-climbing-machine.mdですべてカバー済み。前回(Jul 28)のraw-backlog-ingestで概念ページに詳細エンリッチ済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "MAI-Thinking-1: Building a Hill-Climbing Machine. 109-page PDF. Microsoft AI Team. Model: 35B active/1T total MoE. 52.8% SWE-Bench Pro, 97.0% AIME 2025, 87.7% LiveCodeBench v6. Three design principles: capabilities learned, simplicity sustainable, scientific rigor."
+    },
+    {
+      "item_id": "raw-3",
+      "source": "raw_backlog",
+      "source_name": "BenchFlow",
+      "title": "Awesome Agent Evals (443+ curated resources)",
+      "url": null,
+      "content_hash": "704bb98fe3ea",
+      "raw_path": "raw/articles/benchflow-awesome-evals-2025.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ concepts/ai-benchmarks/benchflow-tool.mdですでにカバー済み。12 must-read starter set, セクション別構成もwikiに整合。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Awesome Agent Evals. Maintained by BenchFlow. 443+ curated links, 146 deep reading notes. 12 must-read starter set covering Yao, Yan, Lee, Hamel, Wei, Anthropic, Press, Lambert, Prime Intellect, OpenAI."
+    },
+    {
+      "item_id": "raw-4",
+      "source": "raw_backlog",
+      "source_name": "Latent Space / swyx",
+      "title": "Inside the Model Factory - Eiso Kant, Poolside AI",
+      "url": null,
+      "content_hash": "9eabc0844817",
+      "raw_path": "raw/articles/2026-07-24_poolside-latent-space.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ entities/poolside.md(136行) + entities/eiso-kant.md(110行)で完全カバー。Model Factory詳細, Laguna S 2.1 118B MoE, Blender streaming data, anti-MCP哲学すべてエンリッチ済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Inside the Model Factory. Latent Space interview. Poolside co-CEO on Model Factory: 10K-20K experiments/month, streaming data directly into training, Laguna S 2.1 (118B MoE/8B active, 1M context). Anti-MCP/pro-scripting-agents philosophy."
+    },
+    {
+      "item_id": "raw-5",
+      "source": "raw_backlog",
+      "source_name": "Dwarkesh Patel / Grant Sanderson",
+      "title": "Grant Sanderson - AI and the future of math",
+      "url": "https://www.dwarkesh.com/p/grant-sanderson-2",
+      "content_hash": "40fe5801918f",
+      "raw_path": "raw/articles/dwarkesh.com--p-grant-sanderson-2--960d89cd.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ entities/grant-sanderson.md(160+行)で完全カバー。AI as leading indicator, fractal frontier, conceptual breakthroughs vs pattern matching, hundred-year verification loopsすべてエンリッチ済み。すでにアーカイブ済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Grant Sanderson - AI and the future of math. Dwarkesh Patel interview. AI as leading indicator. Spiky frontier: IMO geometry solved in 19 seconds, combinatorics still hard. Hundred-year verification loops on conceptual breakthroughs."
+    }
+  ]
+}

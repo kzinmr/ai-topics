@@ -1,6 +1,20 @@
 ## [2026-07-30] watchdog | Auto-fixed log.md separators
 
 ### Changes
+## [2026-07-30] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed
+
+### Batch (run_id: 20260730T180054Z)
+All 5 articles already comprehensively covered by existing wiki pages. No wiki edits needed.
+
+#### Evaluations:
+1. **reframing-superintelligence-fhi-2019.md** -- SKIP (already archived). Drexler CAIS paper fully covered.
+2. **2026-06-03_microsoft-mai-thinking-1-tech-report.md** -- SKIP. MAI-Thinking-1 fully covered (enriched Jul 28).
+3. **benchflow-awesome-evals-2025.md** -- SKIP. Covered by concepts/ai-benchmarks/benchflow-tool.md.
+4. **2026-07-24_poolside-latent-space.md** -- SKIP. Poolside/Eiso Kant fully covered (enriched Jul 28).
+5. **dwarkesh.com--p-grant-sanderson-2--960d89cd.md** -- SKIP (already archived). Grant Sanderson fully covered.
+
+- Archived: 5 items to raw/archived/raw_backlog/2026-07-30_20260730T180054Z.json (3 newly archived, 2 previously archived)
+
 - Fixed 10 missing `---` separators in log.md (203 sections, 0 remaining)
 - Verified index.md structural health: 0 pipe corruption, 0 line prefix corruption, 0 triple brackets, 0 duplicate entries
 - Verified header counts: Entities=870, Concepts=1946 (match filesystem)
