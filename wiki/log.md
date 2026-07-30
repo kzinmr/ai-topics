@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-07-30] Blog wiki ingest — ThunderAgent page + 5 entity enrichments
+
+**Blog triage**: 20 articles triaged; checkpoint recovered from saved JSON (upstream triage agent render failure).
+
+**Created:**
+- `concepts/thunderagent.md` — ThunderAgent: Together AI's high-throughput agentic inference system with program-level scheduling (ICML 2026 Spotlight)
+
+**Enriched:**
+- `entities/simon-willison.md` — Added "AI Worming through Word — Self-Replicating Prompt Injection Variant" (Jul 29): Hakon Maloy's self-replicating prompt injection worm via Microsoft Word/Copilot
+- `entities/dwarkesh-patel.md` — Added "Why compute might get 10x more expensive in coming years" (Jul 2026): Anthropic revenue, Google $900M/month SpaceX GPU rental, Alchian-Allen effect analysis
+- `entities/gary-marcus.md` — Added "Project Panama — ISBNdb Books Destruction Scandal" (Jul 2026): Anthropic bulk book scanning+shredding operation, hypocrisy allegations
+- `entities/gilesthomas.md` — Added "Part 35 — Why do OpenAI's GPT-2 Weights Beat Mine?" (Jul 2026): Loss landscape mismatch investigation between WebText and FineWeb
+- `entities/berthub-eu.md` — Added "AI Policy Analysis (July 2026)" section: Bert Hubert's NPD/AWTI presentations on AI FOMO, CO2, IP, digital autonomy risks
+
 ## [2026-07-29] X bookmarks ingest — Burke Holland "The harness is all you need (mostly)"
 
 **Bookmark**: Burke Holland's (@burkeholland) X Article on practical GitHub Copilot workflow

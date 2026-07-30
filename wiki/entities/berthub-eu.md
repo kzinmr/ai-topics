@@ -2,7 +2,7 @@
 title: Bert Hubert
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-07-30
 tags:
   - person
   - blogger
@@ -10,7 +10,8 @@ tags:
   - open-source
   - security
   - policy
-sources: []
+sources:
+  - raw/articles/berthub.eu--articles-posts-ai-voor-wie-erover-gaat--4bd1470e.md
 ---
 
 
@@ -78,6 +79,22 @@ Bert provides rigorous, multilingual technical analysis of EU legislation:
 ### C++ & Performance Engineering
 
 His **"Modern C++ for C Programmers"** series (6 parts) is a widely-referenced resource for developers transitioning to C++. His optimization work on PowerDNS achieved a **400% speedup** through careful algorithmic improvements — embodying his philosophy that performance is an engineering discipline, not a compiler feature.
+
+### AI Policy Analysis (July 2026)
+
+Bert Hubert serves as a part-time technical AI policy advisor to Dutch government bodies, having presented on AI at the **Netwerk van Publieke Dienstverleners (NPD)** and the **Adviesraad Wetenschap, Technologie en Innovatie (AWTI)**. His July 2026 analysis — documented in the Dutch-language essay *"AI: Overwegingen voor wie erover gaat"* — provides a critical, engineer-grounded perspective on institutional AI adoption. Rather than treating AI as an inevitable force, Bert frames the decision as a governance choice with measurable trade-offs.
+
+**Key concerns raised:**
+
+- **FOMO-driven adoption**: Organizations rush into AI without defining success metrics — "it feels good" is not evaluation criteria. He urges: define what success looks like *before* starting any AI experiment.
+- **Environmental cost**: AI consumes staggering amounts of CO₂ and electricity — projected to exceed France's total national consumption. Old nuclear plants are being reactivated for AI datacenters while new residential power connections are blocked due to grid congestion.
+- **Intellectual property crisis**: Every major LLM provider is embroiled in massive lawsuits with publishers, academics, and media. Crucially, providers will not indemnify organizations for IP claims arising from AI output.
+- **Digital sovereignty destroyed**: All mainstream AI adoption funnels data into American surveillance-capitalism infrastructure, directly undermining European digital autonomy efforts.
+- **Circular financing bubble**: AI investment is "spectacularly concerning" — Oracle's credit rating is one notch above junk, Elon Musk's AI company debt trades as junk bonds, and the Financial Times notes "AI scepticism now feels like the consensus."
+- **Junior-senior pipeline collapse**: If AI replaces all junior work, where will future seniors come from? Experienced staff whose jobs become "checking the computer" may simply leave.
+- **Cognitive offloading**: Employees already dependent on AI and unable to function without it — writing is thinking, and AI-generated documents eliminate the thinking process.
+
+**Recommendation:** Most organizations face no real urgency — "AI will still be there next year." Wait for legal clarity (AI Act enforcement, lawsuit outcomes), learn from early adopters' mistakes, and define concrete metrics before any deployment. The AI bubble may burst, making sudden dependency ruinously expensive.
 
 ## Key Quotes
 

@@ -1,0 +1,73 @@
+{
+  "archived_at": "2026-07-30T10:33:55.764129+00:00",
+  "triage_run_id": "20260730T101019Z",
+  "source": "newsletter",
+  "summary_ja": "2026年7月29日配信5ニュースレターをトリアージ。3件スキップ（Elena Vernaコンテンツ作成論、Beehiiv安全ブレーキ要請は既存イベントページで完全カバー済み、AI Weekly Cool Supporter早期アクセスはペイウォールDRL書籍プレビュー）、2件リファレンス（SemiAnalysis LEGOデータセンターはペイウォールで本文抽出不可だが既存エンティティページに豊富なデータセンター分析あり、AINews AI is eating Financeは金融業界AI浸透トレンドのラウンドアップでAIE NYC開催告知を含む）。Take判定はなし。",
+  "decisions": [
+    {
+      "item_id": "<20260729182116.3.24357fd35151cad5@mg-d1.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "So, you want to be a content creator?",
+      "source_label": "Elena Verna",
+      "title": "So, you want to be a content creator?",
+      "url": "https://open.substack.com/pub/elenaverna/p/so-you-want-to-be-a-content-creator",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-29-so-you-want-to-be-a-content-creator.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Elena Vernaのコンテンツクリエイターキャリア戦略記事。LLM/AI Agentトピックと無関係（PLG、コンテンツマーケティング）。Pub ID 1435249。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-29\n**Subject:** So, you want to be a content creator?\n**Collected:** 2026-07-30T10:10:12.283121+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/99601c6f-b7a9-47f7-8e85-49b7a28d80de?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm"
+    },
+    {
+      "item_id": "<20260729220956.3.c34d683e2939f92c@mg-d1.substack.com>-12",
+      "source": "newsletter",
+      "source_name": "The Wild Wild West Of LEGO Datacenters",
+      "source_label": "SemiAnalysis",
+      "title": "The Wild Wild West Of LEGO Datacenters",
+      "url": "https://open.substack.com/pub/semianalysis/p/the-wild-wild-west-of-lego-datacenters",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-29-the-wild-wild-west-of-lego-datacenters.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ SemiAnalysisによるデータセンターモジュール化・LEGO型建設手法の分析（ペイウォール）。序文から「Labor Problem and Modularization to the Rescue」「60GW+ Modular Capacity Tracked, Full Vendor Landscape Mapping」のトピックが判別。既存entities/semianalysis.md（296行）は3モデルデータセンター分析アーキテクチャをカバー済み。ペイウォールにより本文完全抽出不可だが、refとしてエンティティページのdatacenter sectionへの補足可能。",
+      "candidate_wiki_path": "entities/semianalysis.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-29\n**Subject:** The Wild Wild West Of LEGO Datacenters\n**Collected:** 2026-07-30T10:10:15.197883+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1ha"
+    },
+    {
+      "item_id": "<20260729233212.3.f6ea5f9710c17235@mg-d1.substack.com>-6",
+      "source": "newsletter",
+      "source_name": "[AINews] AI is eating Finance; AIE NYC now open",
+      "source_label": "swyx (AINews)",
+      "title": "[AINews] AI is eating Finance; AIE NYC now open",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-ai-is-eating-finance-aie-nyc",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-29-ainews-ai-is-eating-finance-aie-nyc-now-open.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ swyxのAINews日次ラウンドアップ（78 <p>タグ、無料公開）。メイントピック：AI in Finance（金融業界へのAI浸透トレンド、OpenAIがAIE Financeイベントを共催）、AIE NYC 2026開催告知。副題としてKimi K3、Open Weights、Security debate、The Big Paceの既報まとめ。AINewsは編集ラウンドアップ形式で、本記事の独自価値はAI in FinanceトレンドシグナルとAIE NYC告知。既存WikiにAI×Financeの専用概念ページはないが、本記事は概観レベルで深い分析は含まず。referenceとしてtrend trackingに活用可能。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-29\n**Subject:** [AINews] AI is eating Finance; AIE NYC now open\n**Collected:** 2026-07-30T10:10:16.746051+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0"
+    },
+    {
+      "item_id": "<20260729.220747.39da52a8@mta18>-1",
+      "source": "newsletter",
+      "source_name": "1,000+ AI Insiders Just Asked for a Brake Pedal",
+      "source_label": "beehiiv (uid unknown)",
+      "title": "🧯 1,000+ AI Insiders Just Asked for a Brake Pedal",
+      "url": "https://link.mail.beehiiv.com/v2/c/21757988ce9effdd575f15098430bd6633cd872715d1658f46bdf6a1315624acdcfff03a9b07044426185ab9fa51f0423c853444d97db5ed634cadbad1c6319b50457c8598d23688a56565cd7a222b5d5a135f1e5803936504a6119eb738ea4d63bc4977d1d972c8c5203ce731a619bc2acc6d1514e3475f7991d26a2a6b8a934f98130338bbbdc4599a13791570d3cfd461cab0610b033b7545596103093da3/80def3b342335b70",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-29-1-000-ai-insiders-just-asked-for-a-brake-pedal.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 全20のbeehiivトラッキングURLが403期限切れ（追跡トークン失効）。件名から推測されるトピックはRSI Pace Letter（1,171人のフロンティアAI企業従業員が共同署名、AI開発ペーシングを米政府に要請）であり、既存ページevents/2026-07-29-rsi-pace-letter.mdですでに全文・署名企業別内訳・分析を含め136行で詳細カバー済み。beehiivリンクから追加コンテンツ取得不可。",
+      "candidate_wiki_path": "events/2026-07-29-rsi-pace-letter.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-29\n**Subject:** 🧯 1,000+ AI Insiders Just Asked for a Brake Pedal\n**Collected:** 2026-07-30T10:10:13.705091+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/21757988ce9effdd575f15098430bd6633cd872715d1658f46bdf6a1315624acdcfff03a9b0"
+    },
+    {
+      "item_id": "<20260729235607.3.31d8aa4dda56b86b@mg2.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "Early Access: Cool Supporter 🚀's Exclusive",
+      "source_label": "AI Weekly / Andriy Burkov",
+      "title": "Early Access: Cool Supporter 🚀's Exclusive",
+      "url": "https://open.substack.com/pub/aiweekly/p/early-access-cool-supporter-s-exclusive",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-29-early-access-cool-supporter-s-exclusive.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ AI Weekly（Andriy Burkov）のCool Supporter向け早期アクセス記事。公開内容は「The Hundred-Page Deep Reinforcement Learning Book」第1章のプレビュー（本文4段落、ペイウォール）。深層強化学習の書籍プレビューであり、LLM/AI Agentの焦点から外れる。Andriy Burkovのentities/andriy-burkov.mdは存在するがスケルトン状態（作成2026-04-10、コンテンツなし）。本記事はエンティティ充填に十分な内容を持たない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-29\n**Subject:** Early Access: Cool Supporter 🚀's Exclusive\n**Collected:** 2026-07-30T10:10:18.259536+00:00\n**Articles linked:** 12\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmd"
+    }
+  ]
+}

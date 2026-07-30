@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-07-29
+updated: 2026-07-30
 tags:
   - lab
   - benchmark
@@ -31,6 +31,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-what-washington-must-do--86e00fe4.md
   - raw/articles/garymarcus.substack.com--p-the-generative-ai-fizzle--badee2a3.md
   - raw/articles/garymarcus.substack.com--p-circular-financing-aint-what-it-used--e1df8edb.md
+  - raw/articles/garymarcus.substack.com--p-dario-takes-it-on-the-chin--5226b0ee.md
   - raw/articles/garymarcus.substack.com--p-sorry-sam-and-elon-we-have-not-reached--4ddac824.md
 ---
 
@@ -344,6 +345,20 @@ Sources: [[raw/articles/garymarcus.substack.com--p-maybe-section-230-doesnt-shie
 - [[entities/metr]] — Think tank whose benchmark methodology Marcus critiques
 - [[concepts/claude/mythos]] — Anthropic model central to the 50% vs 80% success debate
 - [[concepts/recursive-self-improvement]] — Marcus's critique of Anthropic's RSI framing
+
+### Project Panama — ISBNdb Books Destruction Scandal (July 2026)
+
+On July 27–29, 2026, a major scandal erupted when it was revealed that Anthropic's internal **Project Panama** — a bulk book scanning and destruction operation — was using **ISBNdb** as an intermediary to enable orders of up to a million books while maintaining buyer anonymity. The operation involved high-speed spine-cutting scanners focused on books published before 2022, with original physical copies shredded after scanning.
+
+An internal Anthropic document reportedly stated: **"we don't want it to be known that we are working on this,"** revealing a deliberate effort to conceal the program. The scandal drew immediate accusations of hypocrisy: Anthropic had publicly called for locking down distillation by competitors (via its open-weight letter stance), while simultaneously destroying rare books to distill their contents for training data.
+
+**David Sacks** commented: *"The hypocrisy is breathtaking."*
+
+**Ole Lehmann**'s initial X post (July 27) garnered **22.3 million views**, making it one of the most viral AI ethics stories of 2026.
+
+Marcus's framing of the scandal emphasized the disconnect between Anthropic's public safety advocacy and its private conduct — a theme consistent with his broader critique of AI industry hypocrisy.
+
+Source: [[raw/articles/garymarcus.substack.com--p-dario-takes-it-on-the-chin--5226b0ee.md]]
 
 ## References
 

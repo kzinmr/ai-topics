@@ -3,7 +3,7 @@ title: gilesthomas
 description: Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technical articles on LLM internals, smolagents, training, and inference optimization. Known for accessible, first-person explanations of complex ML concepts built on hands-on experimentation.
 url: https://gilesthomas.com
 type: entity
-updated: 2026-07-11
+updated: 2026-07-30
 aliases: [gpjt, Giles Thomas]
 tags:
   - person
@@ -23,6 +23,7 @@ sources:
   - https://wiki.python.org/python/GilesThomas.html
   - https://x.com/gpjt
   - raw/articles/gilesthomas.com--2026-07-llm-parameter-counts--674e98c7.md
+  - raw/articles/gilesthomas.com--2026-07-why-do-openai-gpt2-weights-beat-mine-1-intro--3b293b43.md
 ---
 
 # Giles Thomas
@@ -69,6 +70,8 @@ Thomas has produced multiple deep-dives on tool creation in the smolagents ecosy
 The most ambitious series on Thomas's blog. Spanning 46+ posts (from December 2024), it documents his journey through Sebastian Raschka's textbook with significant original experimentation.
 
 **Part 34b — Building and Training GPT-2 from Scratch in JAX** (July 2026): The capstone of the series. Thomas built and trained GPT-2 small from scratch entirely in JAX — with no PyTorch reference implementation. Training on a single RTX 3090 took 37 hours 15 minutes (compared to 40h38m for the PyTorch version with Automatic Mixed Precision). The final loss of 3.418784 beat both the PyTorch AMP run (3.538161) and even the original GPT-2 small's reported loss of 3.499677. Notably, this was full-fat 32-bit JAX versus PyTorch with AMP — no mixed precision tricks. The incremental component-by-component approach (bigrams → LayerNorm → position embeddings → transformer blocks) that defined the entire series culminated in a complete, competitive GPT-2 implementation.
+
+**Part 35 — Why do OpenAI's GPT-2 Weights Beat Mine?** (July 2026): After completing his JAX GPT-2 implementation, Thomas discovered a paradox: OpenAI's original GPT-2 small weights consistently outperform his own models on instruction-following evaluation (26.73 vs 20.71 IFT score), despite his models achieving lower test loss on the raw pre-training evaluation (3.418784 vs 3.499677). The article explores three hypotheses: the loss landscape mismatch between pre-training datasets (WebText vs FineWeb), data quality differences, and the Chinchilla-overtraining effect. Thomas plans a series of controlled experiments, starting with training on more tokens than Chinchilla-optimal. Source: raw/articles/gilesthomas.com--2026-07-why-do-openai-gpt2-weights-beat-mine-1-intro--3b293b43.md
 
 **Core topics:** Tokenization, embeddings, scaled dot-product and causal attention, multi-head attention, layer normalization, feed-forward networks, residual connections, logit-to-prediction transformation.
 

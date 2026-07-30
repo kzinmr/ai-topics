@@ -873,7 +873,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1919 pages)
+## Concepts (1920 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2687,6 +2687,7 @@
 - [[concepts/the-untrainable]] — The Untrainable
 - [[concepts/thin-bi]] — Thin BI
 - [[concepts/thinking-tokens]] — thinking-tokens
+- [[concepts/thunderagent]] — ThunderAgent — High-throughput agentic inference system with program-level scheduling (ICML 2026 Spotlight)
 - [[concepts/threat-modeling]] — Threat Modeling
 - [[concepts/throw-away-draft-pattern]] — throw-away-draft-pattern
 - [[concepts/throw-away-first-draft-pattern]] — Throw-Away First Draft Pattern

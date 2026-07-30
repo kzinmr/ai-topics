@@ -1,0 +1,62 @@
+---
+title: "Early Access: Cool Supporter 🚀's Exclusive"
+date: 2026-07-29
+processed_at: 2026-07-30T10:10:18.259528+00:00
+source_label: "uid=435"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-07-29
+
+**Subject:** Early Access: Cool Supporter 🚀's Exclusive
+**Collected:** 2026-07-30T10:10:18.259536+00:00
+**Articles linked:** 12
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZSZyPTJmbHg2Jm5leHQ9aHR0cHMlM0ElMkYlMkZhaXdlZWtseS5zdWJzdGFjay5jb20lMkZwJTJGZWFybHktYWNjZXNzLWNvb2wtc3VwcG9ydGVyLXMtZXhjbHVzaXZlIiwicCI6MjA5MDQ4OTAzLCJzIjo2MTQ1NSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzg1MzY5NDM2LCJleHAiOjIxMDA5NDU0MzYsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.Yt8jZAQ3_mb9gj1nUrE70ROHGxl6zN4XdWz2th340_Y?
+
+## 2. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vcC9lYXJseS1hY2Nlc3MtY29vbC1zdXBwb3J0ZXItcy1leGNsdXNpdmU_dXRtX2NhbXBhaWduPWVtYWlsLWhhbGYtcG9zdCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNRGt3TkRnNU1ETXNJbWxoZENJNk1UYzROVE0yT1RRek5pd2laWGh3SWpveE56ZzNPVFl4TkRNMkxDSnBjM01pT2lKd2RXSXROakUwTlRVaUxDSnpkV0lpT2lKd2IzTjBMWEpsWVdOMGFXOXVJbjAuUU5CdmVXbGVPdDQ4NFJzSHZ6cU96czlJRzNfYzE1Z05fYl83bnBESjhOZyIsInAiOjIwOTA0ODkwMywicyI6NjE0NTUsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4NTM2OTQzNiwiZXhwIjoyMTAwOTQ1NDM2LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.TSlq_7Ots3_s2-o6fzcV0V3B0N3tHM3mYQESXJczg-4?
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=209048903&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDkwNDg5MDMsImlhdCI6MTc4NTM2OTQzNiwiZXhwIjoxNzg3OTYxNDM2LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.QNBveWleOt484RsHvzqOzs9IG3_c15gN_b_7npDJ8Ng
+
+## 4. Link
+
+- **URL:** https://substack.com/@aiweekly
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=209048903&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDkwNDg5MDMsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzg1MzY5NDM2LCJleHAiOjE3ODc5NjE0MzYsImlzcyI6InB1Yi02MTQ1NSIsInN1YiI6InJlYWN0aW9uIn0.srqmUoxZTtc01-hbaKD-AXVwqWteZQPluc4oHc8xhzc&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=209048903&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDkwNDg5MDMsImlhdCI6MTc4NTM2OTQzNiwiZXhwIjoxNzg3OTYxNDM2LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.QNBveWleOt484RsHvzqOzs9IG3_c15gN_b_7npDJ8Ng&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=209048903&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDkwNDg5MDMsImlhdCI6MTc4NTM2OTQzNiwiZXhwIjoxNzg3OTYxNDM2LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.QNBveWleOt484RsHvzqOzs9IG3_c15gN_b_7npDJ8Ng
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/aiweekly/p/early-access-cool-supporter-s-exclusive?utm_source=substack&utm_medium=email&utm_campaign=email-restack-comment&action=restack-comment&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDkwNDg5MDMsImlhdCI6MTc4NTM2OTQzNiwiZXhwIjoxNzg3OTYxNDM2LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.QNBveWleOt484RsHvzqOzs9IG3_c15gN_b_7npDJ8Ng&utm_source=substack&utm_medium=email
+
+## 9. Link
+
+- **URL:** https://open.substack.com/pub/aiweekly/p/early-access-cool-supporter-s-exclusive?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9cG9zdCZ1dG1fY2FtcGFpZ249ZW1haWwtY2hlY2tvdXQmbmV4dD1odHRwcyUzQSUyRiUyRmFpd2Vla2x5LnN1YnN0YWNrLmNvbSUyRnAlMkZlYXJseS1hY2Nlc3MtY29vbC1zdXBwb3J0ZXItcy1leGNsdXNpdmUmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0pwWVhRaU9qRTNPRFV6TmprME16WXNJbVY0Y0NJNk1UYzROemsyTVRRek5pd2lhWE56SWpvaWNIVmlMVFl4TkRVMUlpd2ljM1ZpSWpvaVkyaGxZMnR2ZFhRaWZRLjliZlVUQ01sRUY1UUgyUEFVS01NR0ZScmlfTG5aQWhKWHJfMzJaTVMxRXciLCJwIjoyMDkwNDg5MDMsInMiOjYxNDU1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODUzNjk0MzYsImV4cCI6MjEwMDk0NTQzNiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.drV_50Q57aah4D_9zlwzh64P-21P_PI2m-7kFyrFE60?simple=true&utm_source=paywall&utm_medium=email&utm_content=209048903&next=https://aiweekly.substack.com/p/early-access-cool-supporter-s-exclusive&coupon=9e0aa1c2
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vYWN0aW9uL2Rpc2FibGVfZW1haWw_dG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1Ea3dORGc1TURNc0ltbGhkQ0k2TVRjNE5UTTJPVFF6Tml3aVpYaHdJam94T0RFMk9UQTFORE0yTENKcGMzTWlPaUp3ZFdJdE5qRTBOVFVpTENKemRXSWlPaUprYVhOaFlteGxYMlZ0WVdsc0luMC5obVI5Vk5wTGgzSHUzOVhNdXhyV2xYcGpmczFpd3NXMTJfdW91bUhhcVlvIiwicCI6MjA5MDQ4OTAzLCJzIjo2MTQ1NSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzg1MzY5NDM2LCJleHAiOjIxMDA5NDU0MzYsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.mIX_Q0PHEcfSAHOerUqf9Og6cn2BlgNQr6odFoCkyt4?
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDkwNDg5MDMsInMiOjYxNDU1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODUzNjk0MzYsImV4cCI6MjEwMDk0NTQzNiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.WP8mR7F_qflJzuB84Q5EJwq1EEJGFoTH6TVL6RuEP3k?
+

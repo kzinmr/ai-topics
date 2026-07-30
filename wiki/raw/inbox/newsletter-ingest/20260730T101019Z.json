@@ -1,0 +1,74 @@
+{
+  "triage_run_id": "20260730T101019Z",
+  "triaged_at": "2026-07-30T10:15:00.000000+00:00",
+  "source": "newsletter-triage",
+  "input_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 5,
+  "summary": {
+    "take": 1,
+    "reference": 3,
+    "skip": 1,
+    "critical_topics": [
+      "AI eating finance (swyx AINews)",
+      "1000+ AI insiders requesting safety brake",
+      "SemiAnalysis LEGO datacenters for AI compute"
+    ]
+  },
+  "decisions": [
+    {
+      "source_label": "uid=431",
+      "subject": "So, you want to be a content creator?",
+      "sender": "Elena Verna (Substack)",
+      "recommended_action": "skip",
+      "relevance": "low",
+      "reason": "Content creator growth strategy from Elena Verna. Not AI/LLM/Agent related. Topic: PLG, content marketing.",
+      "candidate_wiki_path": null,
+      "url_to_fetch": "https://open.substack.com/pub/elenaverna/p/so-you-want-to-be-a-content-creator",
+      "tags": []
+    },
+    {
+      "source_label": "uid=432",
+      "subject": "\ud83e\uddef 1,000+ AI Insiders Just Asked for a Brake Pedal",
+      "sender": "beehiiv newsletter (likely AI-focused)",
+      "recommended_action": "reference",
+      "relevance": "high",
+      "reason": "1,000+ AI insiders signing a letter requesting safety measures/brake pedal. Directly relevant to AI safety concepts. Links are beehiiv tracking URLs which may have expired by triage time.",
+      "candidate_wiki_path": "wiki/concepts/ai-safety.md",
+      "url_to_fetch": null,
+      "tags": ["ai-safety", "ai-governance"]
+    },
+    {
+      "source_label": "uid=433",
+      "subject": "The Wild Wild West Of LEGO Datacenters",
+      "sender": "SemiAnalysis (Substack)",
+      "recommended_action": "reference",
+      "relevance": "high",
+      "reason": "SemiAnalysis article on modular/containerized datacenter construction for AI workloads. Relevant to inference/training infrastructure. Publication_id=6349492 confirms SemiAnalysis.",
+      "candidate_wiki_path": "wiki/concepts/ai-inference-infrastructure.md",
+      "url_to_fetch": "https://open.substack.com/pub/semianalysis/p/the-wild-wild-west-of-lego-datacenters",
+      "tags": ["infrastructure", "datacenter", "ai-compute"]
+    },
+    {
+      "source_label": "uid=434",
+      "subject": "[AINews] AI is eating Finance; AIE NYC now open",
+      "sender": "swyx (AINews, Substack)",
+      "recommended_action": "take",
+      "relevance": "critical",
+      "reason": "swyx's AINews roundup covering AI in finance sector and AI Engineering NYC event. Publication_id=1084089 = swyx's AINews. Core AI ecosystem coverage with multiple embedded article links about AI transforming finance.",
+      "candidate_wiki_path": "wiki/events/2026-07-29-ainews-ai-eating-finance.md",
+      "url_to_fetch": "https://open.substack.com/pub/swyx/p/ainews-ai-is-eating-finance-aie-nyc",
+      "tags": ["ai-news", "ai-finance", "ai-engineering", "events"]
+    },
+    {
+      "source_label": "uid=435",
+      "subject": "Early Access: Cool Supporter \ud83d\ude80's Exclusive",
+      "sender": "AI Weekly (Substack)",
+      "recommended_action": "reference",
+      "relevance": "medium",
+      "reason": "AI Weekly supporter-exclusive early access content. Publication_id=61455 = AI Weekly. Likely AI roundup but paywalled content limits extractability.",
+      "candidate_wiki_path": null,
+      "url_to_fetch": "https://open.substack.com/pub/aiweekly/p/early-access-cool-supporter-s-exclusive",
+      "tags": ["ai-news"]
+    }
+  ]
+}
