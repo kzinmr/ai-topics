@@ -1,3 +1,29 @@
+## [2026-07-30] Dreaming — Knowledge Consolidation (Pattern E saturation)
+
+**Checkpoint**: 0 articles collected, 221 recent raw articles on filesystem
+**Pattern E triggered**: Filesystem scan of recent raw articles (Jul 29-30)
+
+### Duplicate Check Summary
+- Items skipped (already processed by other jobs): 11
+- Active crawl today: 4 concept pages (ARC-AGI-3, turbo-fieldfare, persona-engineering, ai-worming) + 1 event enrichment
+- Blog wiki ingest today: ThunderAgent + 5 entity enrichments (Willison, Dwarkesh, Marcus, Giles Thomas, Bert Hubert)
+- X bookmarks ingest: Burke Holland entity + Unsloth Kimi K3, Dex Horthy
+- Newsletter triage: 0 takes, 2 refs (LEGO Datacenters, AINews Finance)
+
+### Triage Decisions (17 total: 2 takes, 4 refs, 11 skips)
+
+**Takes (entity page enrichment candidates):**
+- ElevenLabs virtual receptionist — entity page (220 lines) lacks receptionist/answering service use case details
+- ElevenLabs Valiant Finance — entity page lacks FinTech case study with metrics (29% after-hours call handling)
+
+**References (enrichment candidates for dreaming-wiki-ingest):**
+- Together AI + Moonshot AI partnership — neither entity page mentions this strategic partnership
+- Ed Zitron "The More You Buy, The More You Lose" — new hyperscaler financial data ($1.3T, PP&E, debt figures)
+- Fireworks Kimi K3 cybersecurity playbook — entity page has Trilogy but not this specific playbook
+- Decagon Munger moats — entity page (71 lines) lacks founder philosophy content
+
+**Archived**: 15 candidates (9 newly archived, 6 dedup). Total archive URLs: 2,082.
+**Triage JSON**: /opt/data/.hermes/cron/data/dreaming/triage_latest.json
 ## [2026-07-30] watchdog | Auto-fixed log.md separators
 
 ### Changes

@@ -1,0 +1,116 @@
+{
+  "archived_at": "2026-07-30T18:18:08.891684+00:00",
+  "triage_run_id": "20260730T180752Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming cycle 2026-07-30: Pattern E saturation (0 articles, 221 raw). Blog triage（1 take, 5 refs）+ Active crawl（4 concept pages）+ X bookmarks（2 items）が当日処理済み。Filesystem scanでElevenLabs virtual receptionist/Valiant Finance（entity page gap）、Together AI+Moonshot提携、Ed Zitron hyperscaler $1.3T分析の3件をreference候補として発見。全15件中2 take + 3 reference + 10 skip。",
+  "decisions": [
+    {
+      "item_id": "dreaming-ed-zitron-hyperscaler-spending",
+      "source": "dreaming",
+      "source_name": "Where's Your Ed At",
+      "title": "The More You Buy, The More You Lose",
+      "url": "https://wheresyoured.at/the-more-you-buy-the-more-you-lose/",
+      "raw_path": "~/wiki/raw/articles/wheresyoured.at--the-more-you-buy-the-more-you-lose--890d90aa.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Ed Zitron entity page（728行）はcircular AI economyの中心的議論を網羅。本記事（47KB）は新しい具体的な財務データを提供：$1.3T+ hyperscaler AI支出、PP&E倍増（$498B→$850B+）、Google $811B契約コミットメント、Meta $237B、NVIDIA Blackwell「25x→10x」下方修正、オフバランスシート$1.35T。既存thesisの補強データとしてenrichment可能。",
+      "candidate_wiki_path": "entities/ed-zitron.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-harvey-patent",
+      "source": "dreaming",
+      "source_name": "Harvey Blog",
+      "title": "AI tools for patent analysis",
+      "url": "https://harvey.ai/blog/ai-tools-for-patent-analysis",
+      "raw_path": "~/wiki/raw/articles/2026-07-30_harvey_ai-tools-for-patent-analysis.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Harvey entity pageの製品ラインアップにpatent analysisは含まれていないが、マーケティング記事（17KBのSEO content）で技術的深みなし。sitemap-monitorが定期的にHarvey記事を取得しているが、prior dreaming cycleで「Harvey marketing blog → batch skip」と判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-harvey-legal-teams",
+      "source": "dreaming",
+      "source_name": "Harvey Blog",
+      "title": "Key challenges for in-house legal teams",
+      "url": "https://harvey.ai/blog/key-challenges-for-in-house-legal-teams",
+      "raw_path": "~/wiki/raw/articles/2026-07-30_harvey_key-challenges-for-in-house-legal-teams.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Harvey entity pageにin-house legal teams記事は未記載だが、sitemap-monitor経由のマーケティング記事（24KB）。技術的深みなし、製品紹介に留まる。Harvey blogパターン：大量SEO content、prior cycleでbatch skip判定。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-hex-caching",
+      "source": "dreaming",
+      "source_name": "Hex Technologies Blog",
+      "title": "Caching is all you need",
+      "url": "https://hex.tech/blog/caching-is-all-you-need",
+      "raw_path": "~/wiki/raw/articles/2026-07-30_hex-technologies_caching-is-all-you-need.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Hex Technologiesはdata analytics企業でAI relevance低い。prior dreaming cycleで「Hex Technologies ×6 articles batch-skipped — all data/analytics marketing」と判定済み。再確認：AI/LLM/Agent技術への直接的関連性なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-dex-horthy",
+      "source": "dreaming",
+      "source_name": "Dex Horthy Blog",
+      "title": "Pragmatic Leverage: Software Factory",
+      "url": "https://dexhorthy.com/pragmatic-leverage-software-factory",
+      "raw_path": "~/wiki/raw/articles/2026-07-29_dexhorthy_pragmatic-leverage-software-factory.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ X bookmarks ingestで処理済み（log.md確認）。Software factory概念は既存concepts/dark-factory-software-factory.mdでカバー。Dex Horthyのentity page作成の価値は marginal — 1記事のみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-unsloth-kimi-k3",
+      "source": "dreaming",
+      "source_name": "Unsloth Blog",
+      "title": "Kimi K3 Local Inference",
+      "url": "https://unsloth.ai/blog/kimi-k3",
+      "raw_path": "~/wiki/raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ X bookmarks ingestで処理済み（log.md確認）。Kimi K3は既存concepts/kimi-k3.mdでカバー。Unsloth local inference記事はentities/unsloth.mdにenrichment可能だが、prior dreaming cycleで同様のUnsloth記事は marginal判定。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-anyscale-data-loading",
+      "source": "dreaming",
+      "source_name": "Anyscale Blog",
+      "title": "Fast, flexible, scalable data loading for ML training",
+      "url": "https://www.anyscale.com/blog/fast-flexible-scalable-data-loading-for-ml-training-with-ray",
+      "raw_path": "~/wiki/raw/articles/anyscale.com--blog-fast-flexible-scalable-data-loading-for-ml-training-wit--4017a561.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Anyscale entity page（58行）はRay ecosystemの概要をカバー。本記事はML training data loadingの技術ブログで、AI agent/LLM relevanceは間接的。prior dreaming cycleで「Anyscale old×3」と判定済み。entity pageは最近production scale detailsでenrichment済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-anyscale-streaming",
+      "source": "dreaming",
+      "source_name": "Anyscale Blog",
+      "title": "Streaming distributed execution across CPUs and GPUs",
+      "url": "https://www.anyscale.com/blog/streaming-distributed-execution-across-cpus-and-gpus",
+      "raw_path": "~/wiki/raw/articles/anyscale.com--blog-streaming-distributed-execution-across-cpus-and-gpus--fe89ec2c.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Anyscale entity pageにstreaming executionは未記載だが、ML training infrastructure記事でAI agent relevance低い。prior dreaming cycleで「Anyscale old×3」と判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-anyscale-rag",
+      "source": "dreaming",
+      "source_name": "Anyscale Blog",
+      "title": "RAG at scale: 10x cheaper embedding computations with Anyscale",
+      "url": "https://www.anyscale.com/blog/rag-at-scale-10x-cheaper-embedding-computations-with-anyscale",
+      "raw_path": "~/wiki/raw/articles/anyscale.com--blog-rag-at-scale-10x-cheaper-embedding-computations-with-an--5d34114b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ RAG at scaleは概念的にrelevantだが、Anyscale entity pageはRay ecosystem概要で十分。prior dreaming cycleで「Anyscale old×3」と判定済み。10x cheaper embeddingはAnyscale marketing claims。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}
