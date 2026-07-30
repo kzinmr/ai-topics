@@ -1,7 +1,20 @@
+## [2026-07-30] watchdog | Auto-fixed log.md separators
+
+### Changes
+- Fixed 10 missing `---` separators in log.md (203 sections, 0 remaining)
+- Verified index.md structural health: 0 pipe corruption, 0 line prefix corruption, 0 triple brackets, 0 duplicate entries
+- Verified header counts: Entities=870, Concepts=1946 (match filesystem)
+- Cross-section check: 0 misplaced entries
+- 24 reported orphans all false positives (22 x _index.md, 2 x _archive/, 1 x redirect)
+- Wiki graph analysis is 6 days stale — structural claims already verified via live checks
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
 
+---
 ## [2026-07-30] X bookmarks ingest — Unsloth Kimi K3 local inference + Dex Horthy Pragmatic Leverage
 
 **2 bookmarks processed (2 wiki enrichments)**:
@@ -18,6 +31,7 @@ _Log of all wiki changes. Newest entries at top._
 - raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md
 - raw/articles/2026-07-29_dexhorthy_pragmatic-leverage-software-factory.md
 
+---
 ## [2026-07-30] Active crawl — 4 new concept pages + 1 event enrichment
 
 | 2026-07-30 | concepts/ai-benchmarks/arc-agi-3.md | created | ARC-AGI-3 benchmark concept page; OpenAI's GPT-5.6 Sol tripled scores to 38.3% via retained reasoning + context compaction |
@@ -29,6 +43,7 @@ _Log of all wiki changes. Newest entries at top._
 | 2026-07-30 | wiki/raw/articles/2026-07-29_github-turbo-fieldfare-gemma-4-2gb.md | saved | turbo-fieldfare GitHub README + HN discussion (823 pts) |
 | 2026-07-30 | wiki/raw/articles/2026-07-29_ai-engineer-persona-engineering.md | saved | Ishan Anand Persona Engineering talk transcript (YouTube) |
 
+---
 ## [2026-07-30] Blog wiki ingest — ThunderAgent page + 5 entity enrichments
 
 **Blog triage**: 20 articles triaged; checkpoint recovered from saved JSON (upstream triage agent render failure).
@@ -43,6 +58,7 @@ _Log of all wiki changes. Newest entries at top._
 - `entities/gilesthomas.md` — Added "Part 35 — Why do OpenAI's GPT-2 Weights Beat Mine?" (Jul 2026): Loss landscape mismatch investigation between WebText and FineWeb
 - `entities/berthub-eu.md` — Added "AI Policy Analysis (July 2026)" section: Bert Hubert's NPD/AWTI presentations on AI FOMO, CO2, IP, digital autonomy risks
 
+---
 ## [2026-07-29] X bookmarks ingest — Burke Holland "The harness is all you need (mostly)"
 
 **Bookmark**: Burke Holland's (@burkeholland) X Article on practical GitHub Copilot workflow
@@ -60,6 +76,7 @@ _Log of all wiki changes. Newest entries at top._
 
 **Source**: X bookmark from tweet ID 2082201573976056245 (article ID 2039106922583117824) — retrieved via article.plain_text from bookmark metadata
 
+---
 ## [2026-07-29] dreaming | Downstream confirmation — upstream dreaming-group saturated, all pipelines covered
 
 | Pipeline | Status | Details |
@@ -70,12 +87,14 @@ _Log of all wiki changes. Newest entries at top._
 Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Opus 5, Codex 10M MAU), blog-wiki-ingest (CryptanalysisBench, Ed Zitron/Gary Marcus enrichment), X-bookmarks (camelAI), raw-backlog-ingest (all skip).
 
 
+---
 ## [2026-07-29] dreaming | Saturation — all pipelines already processed today
 - Takes=0: 10 marginal articles scanned via filesystem (Pattern E), all skip
 - Prior dreaming enrichment (2026-07-28): entities/fireworks-ai.md, concepts/kimi-k3.md, entities/cohere.md, entities/harvey.md — already consumed
 - Today's pipeline coverage: blog-wiki-ingest (7 enrichments), newsletter-wiki-ingest (6 enrichments), active-crawl (4 new concept pages), X-bookmarks-ingest (camelAI architecture)
 - Filesystem scan marginal: Decagon essay (philosophy, no tech depth), Factory alliance (1-min announcement, page exists), ElevenLabs medical STT (marketing), Hex non-AI, Fireworks/Harvey marketing, Anyscale old×3
 - Archive: 10 candidates triaged, 8 newly archived (2 dedup, total: 2,049 URLs). Source: dreaming-group checkpoint 2026-07-29T18:06:54.
+---
 ## [2026-07-29] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed
 
 ### Articles Processed
@@ -118,6 +137,7 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 
 | 2026-07-29 | x-bookmarks-ingest | Created: entities/camelai.md (camelAI — open-source coding agent platform; serverless architecture on Cloudflare Durable Objects + pi harness + Code Mode JS sandbox). Enriched: entities/pi.md (+Production Harness: camelAI section — first documented production SaaS built on Pi lower-level primitives). Enriched: entities/mario-zechner.md (+Production Adoption section — Pi adopted as production harness by camelAI). Enriched: concepts/harness-engineering/agent-serverless.md (+Case Study: camelAI section — production validation of agent serverless pattern). Saved: raw/articles/2026-07-28_camelai_agent-durable-object-pi-code-mode.md (X Article, ~10KB, full plain_text from article.title). Source: https://x.com/i/article/2082137754788646912 |
 
+---
 ## [2026-07-29] Active crawl — 4 new concept pages created
 
 | 2026-07-29 | active-crawl | Created: concepts/ai-pacing-framework.md (AI Pacing Framework — governance mechanisms for slowing frontier AI; RSI Pace Letter with 1,171 employees signed, Anthropic open-weights position). Created: concepts/mcp-2026-07-28-spec.md (MCP 2026-07-28 Specification Update — fifth major release; streaming HTTP transport, stateless remote servers, JSON-RPC batching, App/Task/Managed Auth). Created: concepts/nvidia-blackwell-architecture.md (NVIDIA Blackwell Architecture — B200/B100/GB200 GPU family; NVFP4, NVLink 5 NVL72, inference/training performance). Created: concepts/ai-hallucination-factuality.md (AI Hallucination and Factuality — types, causes, detection, mitigation; sycophancy, RAG grounding, benchmarks). Sources: HN Algolia (15 trending stories, top: Anthropic open-weights 1158pts), X/Twitter (xurl, 4 queries), wiki gap analysis (10 gaps identified, 4 selected). |
@@ -125,8 +145,10 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 
 | 2026-07-29 | blog-wiki-ingest | Created: concepts/ai-benchmarks/cryptanalysisbench.md (CryptanalysisBench — LLM cryptanalysis eval from Anthropic/ETH Zurich/TAU/Haifa; Claude Mythos Preview found HAWK + weakened AES flaws, 60hr/$100K). Enriched: concepts/claude/mythos.md (+Cryptanalysis section — HAWK/AES weakness discovery). Enriched: entities/simon-willison.md (+CryptanalysisBench and HF Incident Technical Timeline). Enriched: events/openai-huggingface-incident-july-2026.md (+JFrog Artifactory 8 CVEs, Jinja2 payload, socket monkey-patch, Tailscale, Modal confirmation). Enriched: entities/ed-zitron.md (+NVIDIA $250B SB Energy circular deal, CoreWeave 756bps bond spread, $1.35T off-balance-sheet debt). Enriched: entities/gary-marcus.md (+Singularity debunking — response to Altman/Musk/Hassabis/Huang). Enriched: concepts/technological-singularity.md (+2026 Debate section — industry leaders declare singularity, Marcus rebuttal). Enriched: entities/cory-doctorow.md (+Discernment essay — expertise as prerequisite for AI utility). |
 
+---
 ## [2026-07-28] Dreaming wiki-ingest — Nightly consolidation (4 enrichments)
 
+---
 ## [2026-07-28] daily-skeleton-enrichment | Enriched Vicki Boykis and FastMCP from L2 to comprehensive
 
 - Enriched [[entities/vicki-boykis.md]] — Upgraded from L2 (47 lines) to comprehensive (117 lines). Added: professional background (Mozilla.ai, Duo, Tumblr, startup), Viberary project, Embeddings paper (DOI), Normconf conference organiser, keynote history (AMLC 2026, Pycon Italia 2024, PyData 2023), notable blog post timeline, writing style analysis, expanded cross-references. Status: L3.
@@ -136,6 +158,7 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 
 | 2026-07-28 | dreaming-wiki-ingest | Enriched: entities/fireworks-ai.md (+Fireworks Nexus enterprise cost optimization platform: FireConnect/FireRouter/Faros/Arize validations; +K3 LoRA Training on Fireworks: serverless LoRA, $65/20-step RL, Countdown/FrozenLake). Enriched: concepts/kimi-k3.md (+LoRA Training on Fireworks subsection: Multi-LoRA serving, KV-cache awareness, dense/sparse reward design). Enriched: entities/cohere.md (+North Automations: $550B market opp, plain-language workflow, per-step model routing, Plan mode, governance analytics). Enriched: entities/harvey.md (+Document Processing Infrastructure: Job Framework rebuild, pipeline splitting, UDF format p50 -19%, Vector DB live migration, Arrow IPC, backpressure architecture). Archive: 4 candidates triaged, 3 newly archived (total: 2,018 URLs). Source: dreaming-group output 2026-07-28T18:14:15. |
 
+---
 ## [2026-07-28] X Article ingestion — Graph Engineering (Akshay Pachaar)
 
 | 2026-07-28 | x-article-ingest | Created: concepts/graph-engineering.md (Graph Engineering — coordination layer across multiple agent loops; nodes/edges/state abstraction; five-layer stack; four hard problems; when to use vs stay in loop). Created: raw/articles/2026-07-25_akshay-pachaar_graph-engineering-clearly-explained.md (X Article, 1,529 bookmarks, 288K impressions). Updated: concepts/loop-engineering.md (+graph-engineering cross-reference, +source). Updated: index.md, log.md. Source: https://x.com/akshay_pachaar/status/2081089131808243999 |
