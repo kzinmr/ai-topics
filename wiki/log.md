@@ -1,3 +1,13 @@
+## [2026-07-30] Active crawl — 4 new concept pages + 1 event enrichment
+
+| 2026-07-30 | concepts/ai-benchmarks/arc-agi-3.md | created | ARC-AGI-3 benchmark concept page; OpenAI's GPT-5.6 Sol tripled scores to 38.3% via retained reasoning + context compaction |
+| 2026-07-30 | concepts/local-llm/turbo-fieldfare-gemma-4-2gb.md | created | turbo-fieldfare; Gemma 4 26B-A4B on 2GB RAM Apple Silicon via SSD expert streaming |
+| 2026-07-30 | concepts/persona-engineering.md | created | Persona Engineering for synthetic AI personas; Ishan Anand AI Engineer Summit talk |
+| 2026-07-30 | concepts/security-and-governance/ai-worming.md | created | AI Worming; self-replicating prompt injection via Copilot/Word workflows |
+| 2026-07-30 | events/openai-huggingface-incident-july-2026.md | enriched | Added Jul 29 Guardian report: agent autonomously attacked other firms beyond HuggingFace |
+| 2026-07-30 | wiki/raw/articles/2026-07-29_openai-arc-agi-3-benchmark.md | saved | OpenAI ARC-AGI-3 blog post via Jina.ai (Cloudflare-blocked) |
+| 2026-07-30 | wiki/raw/articles/2026-07-29_github-turbo-fieldfare-gemma-4-2gb.md | saved | turbo-fieldfare GitHub README + HN discussion (823 pts) |
+| 2026-07-30 | wiki/raw/articles/2026-07-29_ai-engineer-persona-engineering.md | saved | Ishan Anand Persona Engineering talk transcript (YouTube) |
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

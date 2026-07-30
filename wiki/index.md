@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (868 pages)
+## Entities (870 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -873,7 +873,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1920 pages)
+## Concepts (1946 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1001,6 +1001,7 @@
 - [[concepts/ai-benchmarks/appworld]] — AppWorld
 - [[concepts/ai-benchmarks/arc-agi-1]] — ARC-AGI-1
 - [[concepts/ai-benchmarks/arc-agi-2]] — ARC-AGI-2 Benchmark
+- [[concepts/ai-benchmarks/arc-agi-3]] — ARC-AGI-3 — Third-generation ARC benchmark (2D puzzle games); OpenAI GPT-5.6 Sol tripled scores to 38.3% via retained reasoning + context compaction (July 2026)
 - [[concepts/ai-benchmarks/benchflow-tool]] — BenchFlow — Dockerized agent evaluation framework; Awesome Agent Evals curated list (443+ resources, 12 must-read starter set, companies landscape)
 - [[concepts/ai-benchmarks/benchjack]] — BenchJack
 - [[concepts/ai-benchmarks/benchmaxxing]] — Benchmaxxing (Benchmark Over-optimization)
@@ -2062,6 +2063,7 @@
 - [[concepts/local-llm/ollama]] — Ollama — Local LLM Runner
 - [[concepts/local-llm/self-hosting-ai-development]] — Self-Hosting AI for Development
 - [[concepts/local-llm/server-dgx-spark]] — Local LLM Server Setup on DGX Spark
+- [[concepts/local-llm/turbo-fieldfare-gemma-4-2gb]] — turbo-fieldfare — Swift+Metal inference engine running Gemma 4 26B-A4B in ~2GB RAM on Apple Silicon; SSD expert streaming, LFU cache, chunked prefill (July 2026)
 - [[concepts/local-llm/vllm]] — vLLM
 - [[concepts/local-qwen-vs-claude-opus]] — Local Qwen vs Claude Opus — Different Tools for Different Jobs
 - [[concepts/lockdown-systems-collective]] — Lockdown Systems Collective
@@ -2320,6 +2322,7 @@
 - [[concepts/performance-optimization]] — performance-optimization
 - [[concepts/person]] — person
 - [[concepts/person-foundation-capital-investor-context-graph]] — Person Foundation Capital Investor Context Graph
+- [[concepts/persona-engineering]] — Persona Engineering — Methodology for crafting synthetic AI personas for market research, agent testing, and red-teaming; covers failure modes, prompt techniques, and evaluation metrics (July 2026)
 - [[concepts/personal-os-for-ai-agents]] — Personal OS for AI Agents
 - [[concepts/personal-software]] — Personal Software
 - [[concepts/personal-superintelligence]] — Personal Superintelligence — The Evolution and Philosophical Tensions of Personal AI
@@ -2552,6 +2555,7 @@
 - [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — Ai Safety Alignment Rlhf Scalable Oversight Interpretability
 - [[concepts/security-and-governance/ai-safety-and-alignment]] — ai-safety-and-alignment
 - [[concepts/security-and-governance/ai-safety-military-governance-claude]] — Ai Safety Military Governance Claude
+- [[concepts/security-and-governance/ai-worming]] — AI Worming — Self-replicating prompt injection attacks; hidden instructions propagate via AI-assisted document workflows (Microsoft Copilot/Word, July 2026)
 - [[concepts/security-and-governance/gitlost-agent-prompt-injection]] — GitLost: prompt injection attack against GitHub AI agent leaking private repos (Noma Security, July 2026)
 - [[concepts/security-and-governance/model-cards-system-cards]] — Model Cards and System Cards
 - [[concepts/security-and-governance/open-model-safety]] — Open Model Safety
