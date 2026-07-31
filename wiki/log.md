@@ -1,3 +1,15 @@
+## [2026-07-31] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed (all already covered)
+
+Batch collected 14:00 UTC (raw_backlog_collect.py --sort ai-hint --limit 5, run 20260731T140039Z). All 5 articles already captured in existing wiki pages → 0 take, 0 reference, 5 skip. No wiki page changes needed.
+
+- **Dwarkesh Podcast — Alex Imas & Phil Trammell "What remains scarce after AGI?"** → skip: covered in entities/dwarkesh-patel.md (Timeline Jun 2026 + sources), concepts/agi-economics.md, concepts/agi-scarcity.md (relational sector/human economy/wealth way); entities/alex-imas.md, entities/phil-trammell.md exist. (raw: dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md)
+- **Dario Amodei — Policy on the AI Exponential** → skip: covered in entities/dario-amodei.md ("Policy on the AI Exponential (June 2026)" section: FAA-style regulation, job displacement, MATCH/OVERWATCH, legislative proposals) + concepts/ai-exponential.md + concepts/ai-policy.md; raw article in sources. (raw: 2026-06-10_darioamodei_policy-on-the-ai-exponential.md)
+- **Giles Thomas — LLM from scratch Part 34a (JAX training loop)** → skip: covered in entities/giles-thomas.md (Part 34a section: JAX+NNX+Optax, outside-in approach, A-to-A model) + raw article in sources. (raw: gilesthomas.com--2026-06-llm-from-scratch-34a-building-a-jax-training-loop-fo--059d9f9a.md)
+- **Zhang & Khattab — Language model harnesses are compositional generalizers** → skip: covered in entities/omar-khattab/rlm.md (Compositional Generalization via Harnesses Jul 2026: LID principle, 8-32x length generalization, context offloading + programmatic sub-calling, Claude Code/Codex critique) + entities/alex-zhang.md + concepts/compositional-generalization.md. (raw: 2026-07-20_zhang-khattab_language-model-harnesses-compositional-generalizers.md)
+- **Ed Zitron — The AI Industry Is Losing** → skip: covered in entities/ed-zitron.md (June 2026 BIS Systemic Risk Warning section: $1T hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, CoreWeave 65% dependency, Four Losers, OpenAI IPO delay) + raw article in sources. (raw: wheresyoured.at--the-ai-industry-is-losing--a92f13ac.md)
+
+Archive: 2 newly archived (gilesthomas-34a, zhang-khattab), 3 dedup-skipped (already in archive index). Tracking: 5 marked done/skip in processed_raw_articles.json. Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
+
 ## [2026-07-31] active-crawl | 3 new pages from trending discovery
 
 **Trend Discovery** (3 parallel subagents): HN Algolia (15 stories, top: censorship transfer 131pts, Tokenless 70pts, GUI agents 68pts, git worktrees 31pts), X/Twitter (10 results, top: Agency sandboxes 146 bookmarks), wiki gap analysis (15 gaps identified).
