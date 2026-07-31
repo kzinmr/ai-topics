@@ -1,3 +1,23 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-07-31] watchdog | auto-fix log header burial + index header counts + agentty updated
+
+Watchdog auto-fixes (17:35 UTC run):
+- **log.md**: restored buried `# Wiki Log` header to line 1 (was at line 187 — 11 orphaned entries pushed above it by raw-backlog-ingest prepend). All 204 entries preserved; 0 pipe corruption.
+- **index.md**: corrected stale section header counts — Entities (871→869), Concepts (1951→1929) to match actual section entries.
+- **concepts/agentty.md**: added missing `updated: 2026-07-16` (matches created date; page never modified since creation).
+
+Verified clean: index corruption (0 pipe/triple-bracket/line-number prefixes), 0 genuine ghost entries, 0 genuine index coverage gaps (3 files on disk not in index = 2 `_archive/` + 1 redirect, all intentional), 0 duplicate index entries (3 flagged all false positives).
+
+Escalated (needs human review, not auto-fixed):
+- 23 pages missing `created` frontmatter (over 10-file auto-fix threshold)
+- 6 known duplicate entity pairs (deliberate-coder, eugene-yan, giles-thomas, lilian-weng, martin-fowler, samuel-colvin) — dedup merge needed
+- 464 true orphans, ~2,048 broken wikilinks, 978 stale pages (>90d), 941 tag violations (tag-audit-weekly backlog)
+- x_accounts stale(26h) alert: TRANSIENT — job runs every 2 days at 22:30 UTC; last run 07-29 22:30, next expected 07-31 22:30
+
 ## [2026-07-31] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed (all already covered)
 
 Batch collected 14:00 UTC (raw_backlog_collect.py --sort ai-hint --limit 5, run 20260731T140039Z). All 5 articles already captured in existing wiki pages → 0 take, 0 reference, 5 skip. No wiki page changes needed.
@@ -184,9 +204,7 @@ All 5 articles already comprehensively covered by existing wiki pages. No wiki e
 
 ---
 
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
+---
 
 ---
 ## [2026-07-30] X bookmarks ingest — Unsloth Kimi K3 local inference + Dex Horthy Pragmatic Leverage

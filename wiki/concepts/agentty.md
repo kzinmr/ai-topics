@@ -2,6 +2,7 @@
 title: "Agentty"
 type: concept
 created: 2026-07-16
+updated: 2026-07-16
 tags:
   - coding-agents
   - tool
