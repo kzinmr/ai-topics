@@ -1,3 +1,24 @@
+## [2026-07-31] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed (all covered/archived or non-AI)
+
+**Batch**: 20260731T100020Z (raw_backlog_collect.py --sort ai-hint --limit 5)
+
+### Decisions: 0 take / 0 reference / 5 skip (all already covered + archived)
+
+| Article | Decision | Reason |
+|---------|----------|--------|
+| The OpenAI Bubble (Ed Zitron, wheresyoured.at) | skip | entities/ed-zitron.md の Timeline（Lehman Brothers of the AI bubble・$852B burn through 2030・cult-like psychosis）に加え、concepts/ai-bubble-economics.md（483行）が $852B cashflow 要件・$748B RPO、concepts/ai-bubble.md・ai-industry-economics.md・subprime-data-center-crisis.md にも同数値・Lehman テーゼが文書化済み |
+| Adam Brown — general relativity (Dwarkesh) | skip | 非AI・物理学ポッドキャスト（blog-triage 2026-07-11 archived skip 済み） |
+| WebKit in Safari 27 beta (webkit.org) | skip | 非AI・ブラウザリリースノート（blog-triage 2026-06-25 archived skip 済み） |
+| Lemote Yeeloong laptop + OpenBSD (oldvcr) | skip | 非AI・レトロコンピューティング（blog-triage 2026-06-28 archived skip 済み） |
+| LLM from scratch part 34b — GPT-2 Small in JAX (Giles Thomas) | skip | entities/giles-thomas.md が Part 34b セクションで詳細文書化済み（loss 3.418784・76.93M params・JAX/Flax NNX・burn-in 結果）。entities/gilesthomas.md も sources に同一 raw article。dreaming-triage 2026-07-09 archived skip 済み |
+
+### Pipeline
+- **processed_raw_articles.json**: 5件を `done`/`skip` として記録（10:00収集バッチの再選択防止）。
+- archive_triage.py raw_backlog --keep-reference 実行: 全5件 dedup（既に archive_index に登録済み）。
+- 新規ページ・エンティティ更新なし。index.md 変更なし。
+
+---
+
 ## [2026-07-31] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed (3rd re-selection of same batch — tracking fixed)
 
 **Batch**: 20260731T040014Z (raw_backlog_collect.py --sort ai-hint --limit 5)
