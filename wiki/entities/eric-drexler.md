@@ -6,9 +6,9 @@ updated: 2026-07-05
 aliases: [k-eric-drexler, "Kim Eric Drexler"]
 redirect: k-eric-drexler
 tags:
-sources: []
   - person
   - superintelligence
+sources: []
 related:
   - entities/k-eric-drexler
 ---

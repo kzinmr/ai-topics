@@ -1,3 +1,25 @@
+## [2026-07-31] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed (3rd re-selection of same batch — tracking fixed)
+
+**Batch**: 20260731T040014Z (raw_backlog_collect.py --sort ai-hint --limit 5)
+
+### Decisions: 0 take / 0 reference / 5 skip (all already covered + archived)
+
+| Article | Decision | Reason |
+|---------|----------|--------|
+| Reframing Superintelligence (Drexler FHI-TR-2019-1) | skip | Archived + concepts/cais.md (169行) と entities/k-eric-drexler.md が sources に含め完全文書化 |
+| MAI-Thinking-1 Tech Report (109p) | skip | entities/mai-thinking-1.md (196行) + concepts/mai-thinking-1-tech-report.md (227行) + concepts/mai-thinking.md が sources に含め完全文書化（7/28 に microsoft-mai-models.md も拡充） |
+| BenchFlow Awesome Agent Evals | skip | concepts/ai-benchmarks/benchflow-tool.md (118行) が10セクション・Must-Read 12選・編集手法まで文書化 |
+| Poolside Latent Space (Eiso Kant) | skip | entities/poolside.md (136行) + entities/eiso-kant.md (110行) が sources に含め Model Factory 詳細まで文書化（7/28 拡充済み） |
+| Grant Sanderson — AI and the future of math | skip | Archived + entities/grant-sanderson.md (140行) が leading indicator・fractal frontier・verification loop まで文書化 |
+
+### Pipeline fix
+- **processed_raw_articles.json**: 5件を `done`/`skip` として記録。これまで triage JSON は保存されていたが tracking が未更新のため、同一5記事が 7/29, 7/30, 7/31 と3回連続で再選択されていたループを解消。
+- archive_triage.py 実行: 全5件 dedup（既に archive_index に登録済み）。
+
+### Fixed
+- `entities/eric-drexler.md` — 破損 YAML frontmatter を修復（`tags:` と `sources: []` の順序逆転・dangling list）
+- `entities/grant-sanderson-3blue1brown.md` — 同上の破損 YAML frontmatter を修復
+
 ## [2026-07-31] manual-ingest | Ingested Anthropic cybersecurity evaluation incidents article
 
 **Source:** https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals (2026-07-30)

@@ -9,13 +9,13 @@ aliases:
   - "Grant Sanderson"
 redirect: grant-sanderson
 tags:
-sources: []
   - person
   - content-creator
   - youtube
   - open-source
   - developer-tooling
   - education
+sources: []
 related:
   - entities/grant-sanderson
 ---
