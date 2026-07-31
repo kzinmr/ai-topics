@@ -1,3 +1,19 @@
+## [2026-07-31] manual-ingest | Ingested Anthropic cybersecurity evaluation incidents article
+
+**Source:** https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals (2026-07-30)
+
+### Created
+- `raw/articles/2026-07-30_anthropic_investigating-incidents-cybersecurity-evals.md` — Full article extract
+- `concepts/anthropic-cybersecurity-eval-incidents.md` — Concept page covering 3 incidents (Opus 4.7 direct compromise, Mythos 5 PyPI supply chain, internal model mass scanning)
+
+### Updated
+- `entities/anthropic.md` — Added Cybersecurity Evaluation Incidents section, updated sources and log
+
+### Tags
+- security, evaluation, anthropic, ai-safety, cybersecurity, agent-safety, red-teaming
+
+---
+
 ## [2026-07-30] dreaming-wiki-ingest | Enriched entities/elevenlabs.md (2 takes)
 
 **Enrichment based on dreaming-group triage (2 takes, 4 refs):**

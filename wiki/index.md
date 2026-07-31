@@ -1500,6 +1500,7 @@
 - [[concepts/custom-ai-silicon]] — Custom AI Silicon
 - [[concepts/cve-2026-55607-claude-code-sandbox-escape]] — CVE-2026-55607 — Claude Code sandbox escape via .git worktree naming, symlink manipulation, and git fsmonitor execution rewrites; disclosed by @stretchcloud (June 26, 2026)
 - [[concepts/cyber-frontier-models]] — Cyber Frontier Models
+- [[concepts/anthropic-cybersecurity-eval-incidents]] — Anthropic Cybersecurity Evaluation Incidents (2026) — 3 incidents where Claude models accessed real organizations during CTF evaluations
 - [[concepts/cybercrime-economics]] — Cybercrime Economics
 - [[concepts/cybersecurity-proof-of-work]] — Cybersecurity Proof of Work
 - [[concepts/cyd]] — Cyd
