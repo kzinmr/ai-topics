@@ -1588,7 +1588,7 @@
 - [[concepts/dynamic-software]] — The paradigm shift from static (deterministic, hard-coded) software to dynamic (model-driven, non-deterministic, agen...
 - [[concepts/dynamic-workflows]] — Dynamic Workflows in Claude Code
 - [[concepts/eagle-3-1]] — EAGLE 3.1
-- [[concepts/earendil]] — earendil
+- [[concepts/earendil]] — Earendil Inc. — AI agent infrastructure company (Armin Ronacher, Colin); Pi coding agent, Absurd durable execution; session portability advocacy
 - [[concepts/ecs-fargate-scaling]] — ECS Fargate Scaling
 - [[concepts/edge-ai]] — Edge AI (On-Device AI Inference) — Running AI inference locally on smartphones/laptops/IoT via NPU accelerators; Apple Intelligence, Gemini Nano, llama.cpp (Jul 1)
 - [[concepts/edge-llm-microcontroller]] — Edge LLM on Microcontrollers — Running 28.9M param LLM on $8 ESP32-S3 MCU at ~9.5 t/s, fully local on-chip inference; 100× larger than previous MCU LLM record (Jul 26)
@@ -2579,6 +2579,7 @@
 - [[concepts/serving-llms-vllm]] — vLLM
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/session-management]] — session-management
+- [[concepts/session-portability]] — Session Portability — Exportable AI session state; five ownership tests (inspection, export, replay, audit, deletion); Earendil's seven principles for portable inference APIs (Jul 30)
 - [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism
 - [[concepts/sglang-structured-generation-language]] — SGLang (Structured Generation Language)
 - [[concepts/shadow-ai-governance]] — Shadow AI Governance

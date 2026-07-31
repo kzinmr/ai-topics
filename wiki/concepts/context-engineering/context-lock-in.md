@@ -154,6 +154,7 @@ Gopinath's Sentra.app (a16z Speedrun + Together Fund, $5M Seed) is the reference
 - [[concepts/enterprise-ai-deployment-jv]] — Details on OpenAI Deployment Company and Anthropic AI Services
 - [[concepts/context-engineering/context-graph|Context Graph]] — Technical foundation for preventing context lock-in
 - [[concepts/enterprise-ai-operating-model]] — Positioning within the broader enterprise AI operating model
+- [[concepts/session-portability]] — User-level manifestation: individual sessions become non-portable through encrypted reasoning, hidden search, opaque compaction (Earendil, Jul 2026)
 
 ## Sources
 

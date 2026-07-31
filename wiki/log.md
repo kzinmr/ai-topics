@@ -3130,3 +3130,16 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 2. `entities/andrew-ho.md` — New entity page: ex-OpenAI, bearish on frontier lab valuations, Hayekian economic analysis, training cost treadmill argument, multi-decade AI timeline
 3. `concepts/ai-industry-economics.md` — Added "Bearish on Frontier Lab Valuations" section (training cost treadmill, $1T valuation math, distillation critique, Hayekian diffusion problem, coding agents as lucky discovery). Added source and related page links.
 4. `index.md` — Added Andrew Ho entry in Entities section
+
+---
+
+## [2026-07-31] Article ingested: Earendil on Session Portability
+
+**Source:** https://earendil.com/posts/session-portability/
+**Type:** blog post (Earendil Engineering, 2026-07-30)
+
+**Wiki updates:**
+1. `raw/articles/2026-07-30_earendil_session-portability.md` — Raw article saved (full content with analysis of encrypted reasoning, hidden search, opaque compaction, encrypted subagent messages)
+2. `concepts/session-portability.md` — New concept page: session ownership tests, provider-sealed state, seven portable inference principles, relationship to context-lock-in and distillation rights
+3. `concepts/earendil.md` — Upgraded from stub to full page: company overview, products (Pi, Absurd, Lefos), session portability advocacy, distillation position
+4. `index.md` — Added session-portability entry; updated earendil description
