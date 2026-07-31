@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-07-28
+updated: 2026-07-31
 tags:
   - entity
   - company
@@ -30,6 +30,8 @@ sources:
   - raw/articles/2026-07-17_fireworks-ai_series-d-announcement.md
   - raw/articles/2026-07-28_fireworks-ai_fireworks-nexus.md
   - raw/articles/2026-07-28_fireworks-ai_K3-LoRA-Training.md
+  - raw/articles/2026-07-31_fireworks-ai_fine-tuning-your-own-embeddings-model.md
+  - raw/articles/2026-07-31_fireworks-ai_three-tests-to-run-before-you-switch-from-LoRa-to-FullFT.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -550,6 +552,52 @@ Published July 26, 2026.
 **Source:** [[raw/articles/2026-07-28_fireworks-ai_K3-LoRA-Training.md]]
 
 [[concepts/post-training]] [[concepts/lora]] [[concepts/kimi-k3]] [[concepts/inference-optimization]]
+
+## Embedding Model Fine-Tuning (July 2026)
+
+Fireworks published a practical recipe for **fine-tuning a general-purpose embedding LLM (Qwen3-Embedding-8B) into a domain-specific embedding model via contrastive fine-tuning** — priced under $10 per run. The post is a direct extension of the platform's training story: adapt a strong pretrained model with a contrastive objective instead of training embeddings from scratch.
+
+### Recipe & Method
+
+- **Objective**: Bidirectional **InfoNCE** loss over **in-batch negatives** — a B×B similarity matrix where each query picks its positive among all documents in the batch; symmetric query→doc and doc→query loss with temperature τ=0.02.
+- **Training config**: Full-parameter (or LoRA rank 32), ~150 optimizer steps, batch size 64 (batch 8 for 16k-token long-context runs), learning rate 1e-5, epochs 3.
+- **Data format**: JSONL of (query, positive) pairs only — negatives are generated automatically in-batch. Trains directly through the Fireworks Training SDK and promotes the checkpoint to a deployable model.
+- **Key finding on context length**: A fine-tune trained at a short 512-token window barely beat the base under long-context evaluation — the model must be trained at the context length it will serve at.
+
+### Benchmark Results (base → fine-tuned)
+
+| Task | Metric | Base | Fine-tuned | Gain |
+|------|--------|------|-----------|------|
+| Legal Citation Retrieval (LegalBench, 4,899 questions / 6,061-case corpus) | nDCG@100 | 0.462 | 0.644 | +39% |
+| Legal Citation Retrieval | Recall@100 | 0.540 | 0.758 | +40% |
+| Legal Citation Retrieval | nDCG@10 | — | — | +36% |
+| Clinical Trial Matching (TREC Clinical Trials, ~63k corpus, ~130 training queries) | nDCG@100 | 0.495 | 0.556 | +12% |
+| Clinical Trial Matching | Recall@100 | 0.303 | 0.352 | +16% |
+| EU Case-Law Citation Retrieval (LegalPincite, paragraph→paragraph) | nDCG@100 | 0.548 | 0.584 | +7% |
+| EU Case-Law Citation Retrieval (LegalPincite, case→case, 16k window) | nDCG@100 | 0.484 | 0.778 | +61% |
+| EU Case-Law Citation Retrieval (case→case) | Recall@100 | 0.653 | 0.881 | +35% |
+
+- Gains reproduce with open tooling: a standalone sentence-transformers kit lands within ~0.03 nDCG@100 of the production trainer on most tasks.
+- The case→case long-context result roughly **doubles** ranking quality (nDCG@10 0.40→0.72, MRR 0.62→0.89).
+
+Published July 29, 2026.
+
+**Source:** [[raw/articles/2026-07-31_fireworks-ai_fine-tuning-your-own-embeddings-model]]
+
+## LoRA vs Full Fine-Tuning: Three Tests (July 2026)
+
+Fireworks ran controlled SFT experiments on **Qwen3.5-9B** to answer when a FullFT advantage over LoRA is real — and which lever closes it. Three synthetic tasks with automatic checkers (Placement, Register allocation, Nexa VM) let every answer be scored without a human judge. The three tests form a per-gap protocol: **rank test, data coverage test, tuned learning-rate test**.
+
+### Findings
+
+- **Placement — the gap came from data and learning rate, not adapter size.** 10× more unique data on the same 6,000-step budget roughly doubled LoRA validity and cut the FullFT gap in half; quadrupling rank (32→128) moved the result by one point. A tuned rank-32 LoRA (LR 8e-5) reached 82.67% vs FullFT's 83.00% — statistically indistinguishable.
+- **Register allocation — rank moved the result.** LoRA-r128 reached 90.5% validity vs FullFT's 93.0%, recovering most of the operational gap, though FullFT retained an advantage in exact trace reproduction (35.5% vs 25.5%).
+- **Nexa VM — learning-rate tuning was decisive.** The best LoRA rate (8e-5) sat roughly an order of magnitude above the best FullFT rate (1e-6), consistent with Thinking Machines' *LoRA Without Regret* (2025) and Biderman et al.'s *LoRA Learns Less and Forgets Less* (2024).
+- **Bottom line**: when a FullFT beats a simple LoRA run, test coverage, optimization, and rank *before* switching — a fixed-recipe FullFT advantage often erases under recipe tuning.
+
+Published July 2026.
+
+**Source:** [[raw/articles/2026-07-31_fireworks-ai_three-tests-to-run-before-you-switch-from-LoRa-to-FullFT]]
 
 ## Sources
 

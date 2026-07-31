@@ -1,3 +1,12 @@
+## [2026-07-31] dreaming-wiki-ingest | 4 references verified + enriched (upstream archive-only commit)
+- Upstream dreaming-group (18:09) committed archive only (71311cfe); render failed after checkpoint save (triage_latest.json 18:13, 6 decisions: 4 ref, 2 skip)
+- Deep Sleep verification gate: all 4 reference candidates confirmed genuine gaps vs entity page content
+- Enriched [[entities/hebbia.md]] - Max AI team member product launch (Jul 30): institutional AI worker, slides/report/model output, email-native, preview rollout. Frontmatter updated, source added.
+- Enriched [[entities/fireworks-ai.md]] - (1) Embedding model fine-tuning recipe (Qwen3-Embedding-8B, InfoNCE + in-batch negatives, +39% nDCG@100 LegalBench, +61% case-to-case LegalPincite, train-at-served-context-length finding); (2) LoRA vs FullFT three-test protocol (Qwen3.5-9B, data coverage / tuned LR / rank levers). Frontmatter updated, sources added.
+- Enriched [[entities/harvey.md]] - AI trademark search & IP workflows (Jul 30): search-layer vs legal-AI-layer division, clearance memo drafting, office action responses, enforcement. Frontmatter updated, source added.
+- Skips: parallel.ai customer-watch (scrape failed, brotli error), Harvey hire announcement (personnel only, no technical depth)
+- Archive: already committed by upstream (2026-07-31_20260731T180900Z.json) - no re-run needed
+
 ## [2026-07-31] raw-backlog-ingest | 2 pages enriched, 3 skips (all already covered)
 ## [2026-07-31] dreaming | Pattern E saturation — 4 references identified, 0 takes
 - Checkpoint: 0 articles from RSS/newsletter, 200 recent raw articles on disk

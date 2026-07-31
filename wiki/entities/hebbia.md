@@ -2,7 +2,7 @@
 title: "Hebbia"
 type: entity
 created: 2026-05-08
-updated: 2026-07-11
+updated: 2026-07-31
 tags:
   - company
   - search
@@ -14,6 +14,7 @@ sources:
   - https://www.hebbia.ai/blog
   - raw/articles/2026-06-06_hebbia_whats-new-june-disclosure-2026.md
   - raw/articles/2026-07-11_hebbia_every-data-integration-one-view.md
+  - raw/articles/2026-07-31_hebbia_introducing-max.md
 ---
 
 # Hebbia
@@ -25,7 +26,7 @@ Hebbia is an AI platform for knowledge work, designed to transform how professio
 | **Type** | AI Platform / Enterprise Search |
 | **Founded** | 2020 (New York, NY) |
 | **Leadership** | George Sivulka (Founder & CEO) |
-| **Key Products** | Matrix (AI analyst), Hebbia Chat, Hebbia Skills, Hebbia Agents, Hebbia API, Hebbia MCP |
+| **Key Products** | Matrix (AI analyst), Max (AI team member), Hebbia Chat, Hebbia Skills, Hebbia Agents, Hebbia API, Hebbia MCP |
 | **Website** | [hebbia.ai](https://www.hebbia.ai) |
 | **Tech Blog** | [hebbia.ai/blog](https://www.hebbia.ai/blog) |
 
@@ -75,6 +76,19 @@ Some sources are available from day one; others connect via the user's own subsc
 - **Agent Run Controls** — Chat agents now prompt users to review and adjust sources before running. It is possible to add documents, attach projects, or swap in additional sources at the moment of execution. The step can be disabled entirely from Agent settings.
 - **Expandable Tables** — Tables in Chat can now be expanded or collapsed, making it easier to read dense data and manage screen space within a response.
 - **CSV File Uploads** — Upload CSV files directly into Chat alongside documents. Users can ask questions about the data, filter and summarize it, or combine it with other sources for cross-referenced analysis.
+
+### Max — AI Team Member (July 2026)
+
+**Max** is Hebbia's first "AI team member" product, introduced July 30, 2026 and positioned as built for the way financial institutions actually work. It marks a deliberate move past chat-first AI: ask Max a question and it pulls from the firm's data, reasons through agents and skills built for financial workflows, and returns a **finished set of slides, report, or financial model**.
+
+Key positioning and capabilities:
+
+- **Institutional workflow shape**: Slides in the firm's house style, responses structured the way finance professionals present information, agents and skills encoding the institution's own workflows — running on the firm's data alongside leading financial data providers.
+- **Email-native**: The most senior people at a firm work with Max over email while moving between client meetings and board calls — work is not limited to the desk.
+- **Emergent use cases**: Customers have built performance dashboards they check every morning and turned a daily update into something listenable on the commute.
+- **Rollout**: Initially rolling out to a small set of firms via preview request.
+
+**Source:** [[raw/articles/2026-07-31_hebbia_introducing-max]]
 
 ## Related
 

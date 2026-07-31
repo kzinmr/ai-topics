@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-07-28
+updated: 2026-07-31
 tags:
   - security
   - company
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-07-01_harvey_sonnet-5-in-harvey.md
   - raw/articles/2026-07-17_harvey_y-combinator-backed-benchmark-joins-harvey.md
   - raw/articles/2026-07-28_harvey_scaling-document-processing-across-harvey.md
+  - raw/articles/2026-07-31_harvey_ai-trademark-search.md
 ---
 
 # Harvey
@@ -286,3 +287,25 @@ Extraction uses ordered fallback chains (primary → Harvey-operated → determi
 See also: [[concepts/ai-agent-engineering]] [[concepts/infrastructure-scaling]] [[concepts/document-processing]] [[concepts/vector-database]]
 
 **Source:** [[raw/articles/2026-07-28_harvey_scaling-document-processing-across-harvey]]
+
+## AI Trademark Search & IP Workflows (July 2026)
+
+Harvey published an editorial walkthrough (Jul 30, 2026) positioning legal AI in the **trademark lifecycle** — from clearance search to enforcement — and clarifying where Harvey sits in that stack. The article's framing: *"the search is data; clearance is judgment."*
+
+### The Search Layer (what Harvey does NOT do)
+
+Modern trademark search software matches on three dimensions at once — **phonetic models** (sound-alikes like NOVVA/KNOVA), **semantic models** (marks translating to the same idea), and **image models** (visual similarity of logos/design marks) — plus goods-and-services **class coverage**. Systems run comparisons across national/international registries plus state and common-law sources; the USPTO itself now offers AI-assisted image search and classification. Harvey explicitly does **not** search trademark registries — it works with what the search returns.
+
+### Harvey's Role: The Legal AI Layer
+
+Harvey picks up where the search ends for IP teams:
+
+- **Analyze search reports and file histories** — a comprehensive clearance search can run a hundred pages; legal AI digests the report, organizes closest marks by risk, maps each against likelihood-of-confusion factors, and produces a first draft of the **clearance opinion memo** for counsel to refine and sign.
+- **Office action responses** — read the examiner's reasoning, pull precedent and prosecution history, draft a structured argument on the factors rather than a form letter. Counsel owns the filing; a response that once consumed a week of associate time can be reviewed inside a few days.
+- **Enforcement** — sort genuine threats from watch-service noise, then draft the opposition analysis, cease-and-desist letters, and coexistence terms. Watch notices arrive continuously; a team that assesses and responds in days rather than weeks stops small conflicts from maturing.
+- **Portfolio consistency** — the same platform drafts the clearance memo, office action response, and enforcement letter, so risk advice stays consistent across the life of the mark rather than varying by drafter.
+- **Security**: client and brand data stay protected under enterprise-grade security — critical when the documents describe an unlaunched product.
+
+The clear division of tools: a **search database** finds what exists; **counsel supported by legal AI** carries the legal work that follows.
+
+**Source:** [[raw/articles/2026-07-31_harvey_ai-trademark-search]]
