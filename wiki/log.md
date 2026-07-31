@@ -37,6 +37,11 @@ Batch 20260731T180057Z (raw_backlog_collect.py --sort ai-hint --limit 5). 5 arti
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-07-31] daily-skeleton-enrichment | Enriched levelsio + niplav from L2 to comprehensive (L3)
+- Enriched [[entities/levelsio.md]] — Upgraded from L2 (63 lines, 3.5KB) to comprehensive (117 lines, 12KB). Added: blog stats (800+ posts since 2013), Lex Fridman Podcast, levels.vc fund (Oct 2025), AvatarAI.me $100K/10 days (2022); new "AI-Era Thesis (2026)" section (indie hackers going extinct — execution cost flipped to ~$20/mo, BigAI cannibalization, cancelled all SaaS and vibecoded replacements, minimal stack = FOSS + VPS + AI API + R2/S3, Claude Code on VPS for ~a year, 4B requests/yr on $244/mo, vibe-coded Stripe dispute responder); Cross-References (solo-founder-philosophy, vibe-coding, vibe-ceo, solo-founder-stack, cloudflare-email-sending); Sources. Status: L3. Raw articles: wiki/raw/articles/2026-07-30_levelsio_indie-hackers-first-to-go-extinct.md, wiki/raw/articles/2026-07-26_levelsio_cancelled-saas-vibecoded.md.
+- Enriched [[entities/niplav.md]] — Upgraded from L2 (48 lines, 2.2KB) to comprehensive (135 lines, 12KB). Added: Overview (pseudonymous researcher, niplav.site since 2019, Long Content/Gwern-inspired, heavy Claude/GPT/Gemini/Kimi collaboration); Forecasting Track Record table (Metaculus Brier 0.116 / 281 uniform-sampled questions, PredictionBook 0.2365, Manifold B-/profit, 38th baseline ranking); AI Alignment writings (BCI, TAI race with China, discontinuous takeoff, anti-superpersuasion, OSS patching); Forecasting methodology (question decomposition, Iqisa library); Quantified Self; Programming & Mathematics; expanded Style & Approach (literate-programming, Crocker's rules, AI-use transparency). Fixed broken related link (concepts/rlhf → concepts/post-training/rlhf). Status: L3.
+- Cross-links: [[concepts/glut-of-circuits.md]] — added [[entities/niplav]] to related frontmatter + thesis wikilink, fixed broken concepts/reward-hacking → concepts/evaluation/reward-hacking; [[concepts/vibe-ceo.md]] and [[concepts/harness-engineering/agentic-workflows/vibe-coding.md]] — added [[entities/levelsio]] backlinks. Index.md descriptions updated for both entities.
+
 
 
 ## [2026-07-31] wiki-health-fix | health scan clean; benchmark pages updated field

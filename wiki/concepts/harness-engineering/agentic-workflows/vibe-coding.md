@@ -249,6 +249,7 @@ This was a pioneering framework that later materialized as standards like MCP (M
 - [[concepts/claude-code/claude-code-tips]] — Claude Code setup guide
 - [[concepts/self-hosting-ai-development]] — Self-hosting vibe-coded apps
 - [[concepts/mcp]] — Inter-agent communication protocol (materialization of O'Reilly's protocol standardization vision)
+- [[entities/levelsio]] — Extreme practitioner: cancelled all SaaS subscriptions and vibe-coded replacements himself (July 2026)
 
 ## References
 

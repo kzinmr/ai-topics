@@ -458,7 +458,7 @@
 - [[entities/lenny]] — Lenny Rachitsky
 - [[entities/lester-solbakken]] — Lester Solbakken
 - [[entities/letta]] — Letta (Letta AI)
-- [[entities/levelsio]] — @levelsio (Pieter Levels)
+- [[entities/levelsio]] — Pieter Levels (@levelsio); solo founder & indie maker; 2026 AI thesis (indie hackers going extinct, BigAI cannibalization, vibecoded his own SaaS)
 - [[entities/lighton]] — LightOn
 - [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, harness engineering for RSI, training (Jul 26)
 - [[entities/lilianweng]] — Lilian Weng
@@ -561,7 +561,7 @@
 - [[entities/nico-gerold]] — Nico Gerold
 - [[entities/nicolas-bustamante]] — AI for knowledge workers at Microsoft. Previously CEO of Fintool (acq. Microsoft), CEO of Doctrine (acq. Summit Partn...
 - [[entities/nightwatch]] — Nightwatch (AI SRE)
-- [[entities/niplav]] — niplav
+- [[entities/niplav]] — niplav; pseudonymous alignment researcher, GLUT-of-circuits model, forecasting track records
 - [[entities/noam-brown]] — Noam Brown
 - [[entities/noetik]] — Noetik
 - [[entities/nolan-lawson]] — Nolan Lawson

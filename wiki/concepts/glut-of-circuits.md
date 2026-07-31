@@ -15,12 +15,12 @@ tags:
   - world-models
 sources: [raw/articles/2026-03-17_lesswrong_giant-lookup-tables-of-shallow-circuits.md]
 aliases: ["GLUT-of-circuits", "Giant Lookup Table of Circuits", "LLMs as circuits in superposition"]
-related: [concepts/post-training/rlhf, concepts/constitutional-ai, concepts/chain-of-thought, concepts/reward-hacking]
+related: [concepts/post-training/rlhf, concepts/constitutional-ai, concepts/chain-of-thought, concepts/evaluation/reward-hacking, entities/niplav]
 ---
 
 # GLUT-of-Circuits — LLMs as Giant Lookup-Tables of Shallow Circuits
 
-> **Thesis (niplav, 2026-03-17)**: LLMs are **superlinear-in-network-width lookup-table-like collections of depth-limited, composeable, and error-correcting circuits, computed in superposition.** 
+> **Thesis ([[entities/niplav]], 2026-03-17)**: LLMs are **superlinear-in-network-width lookup-table-like collections of depth-limited, composeable, and error-correcting circuits, computed in superposition.** 
 
 This model explains why LLMs can be simultaneously *capable* and *non-agentic* — performing complex tasks without the ruthless goal-pursuit behavior expected of general-purpose optimizers.
 
