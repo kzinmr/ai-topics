@@ -187,7 +187,7 @@
 - [[entities/dan-mcinerny]] — Dan McInerney
 - [[entities/dan-shipper]] — Dan Shipper — CEO of Lex (formerly Lex.page); writer on AI productivity, agent workflows
 - [[entities/daniel-de-laney]] — Daniel De Laney
-- [[entities/daniel-han]] — Daniel Han — Co-founder & CEO of Unsloth AI (YC S24); 2-30x faster LLM fine-tuning, Inkling 1-bit GGUF quants, Unsloth Studio
+- [[entities/daniel-han]] — Daniel Han — Co-founder & CEO of Unsloth AI (YC S24); 2-30x faster LLM fine-tuning, Kimi K3 & DeepSeek-V4-Flash GGUF quants, Inkling 1-bit GGUF, Unsloth Studio
 - [[entities/daniel-kim-cerebras]] — Daniel Kim (@learnwdaniel) — Head of Growth at Cerebras; co-author of Cerebras Knowledge Base
 - [[entities/daniel-miessler]] — Daniel Miessler
 - [[entities/daniel-tunkelang]] — Daniel Tunkelang
@@ -1535,7 +1535,7 @@
 - [[concepts/deepseek-r1]] — DeepSeek-R1
 - [[concepts/deepseek-v3]] — DeepSeek-V3
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2
-- [[concepts/deepseek-v4]] — DeepSeek-V4
+- [[concepts/deepseek-v4]] — DeepSeek-V4 — 1.6T MoE, 1M context, Hybrid Attention, Unsloth GGUF quants available
 - [[concepts/deepseek-v4-serving]] — Serving DeepSeek-V4: Inference Systems Perspective
 - [[concepts/deepseek-vision]] — DeepSeek Vision — Multimodal Capabilities
 - [[concepts/deepspec-dspark]] — DeepSpec & DSpark — DeepSeek open-source speculative decoding inference framework; DSpark distributed engine achieves 60–85% faster LLM generation; supports DSpark/DFlash/Eagle3 draft models (June 27)

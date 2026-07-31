@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-07-31T22:13:01.878364+00:00",
+  "triage_run_id": "20260731T220020Z",
+  "source": "raw_backlog",
+  "summary_ja": "バックログ5記事を処理（2026-07-31 22:00収集、raw_backlog_collect.py --sort ai-hint --limit 5）。全5件が既存Wikiページで詳細カバー済みのため 0 take・0 reference・5 skip。内訳: (1) Ed Zitron Subprime Data Center Crisis → concepts/subprime-data-center-crisis + entities/ed-zitron で完全文書化済み (2) Gergely Orosz Slow Down to Speed Up 講演 → entities/gergely-orosz に取り込み済み (3) dynomight Pseudpocalypse → non-AI としてアーカイブ済み (4) Qwen 3.6 35B RTX 3090 ベンチマーク → concepts/qwen-3-6-35b に取り込み済み (5) Aakash Gupta Agent Safety Separation of Duties → concepts/security-and-governance/agent-separation-of-duties に取り込み済み。Wikiページの新規作成・更新なし。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-orosz-slow-down-ai-se",
+      "source": "raw_backlog",
+      "source_name": "The Pragmatic Engineer (YouTube)",
+      "title": "Slow down to speed up: AI and software engineering (Craft Conference 2026)",
+      "url": "https://youtu.be/5wks1W-auKY",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-06-24_yt_slow-down-ai-software-engineering.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存Wikiでカバー済み。entities/gergely-orosz.md が Craft Conference 2026 Slow Down to Speed Up キーノートセクションとして本raw記事（2026-06-24_yt_slow-down-ai-software-engineering.md）から取り込み済み（2026-07-31更新）。Meta/Instagramゼロ認証パスワードリセット脆弱性がAI生成コード起因、tokenmaxxing（session immortal/legend リーダーボード、2026年4月終了）、約5,000人のMeta開発者が手動AIラベリング、処方箋（検証可能な範囲でエージェント利用、追加エージェント1つの原則）が文書化。concepts/tokenmaxxing.md も存在。",
+      "candidate_wiki_path": "entities/gergely-orosz.md",
+      "body_excerpt": "Good morning, Budapest. It's awesome to\nto be back. Today, I'd like to talk\nabout some people, a few thousand that\nare having a terrible week uh this week.\nAnd this is specifically people inside\nMeta and Instagram. I talk with a lot of\npeople in the industry. I have a lot of\nfriends inside of these "
+    },
+    {
+      "item_id": "raw-backlog-agent-safety-separation-of-duties",
+      "source": "raw_backlog",
+      "source_name": "Aakash Gupta (X post)",
+      "title": "Agent Safety Separation Of Duties",
+      "url": "https://x.com/aakashgupta/status/2067550891843186980",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-06-18_agent-safety-separation-of-duties.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存Wikiでカバー済み。concepts/security-and-governance/agent-separation-of-duties.md（193行、本raw記事から2026-06-18作成）に worker/evaluator 分離アーキテクチャ、OpenAI Codex /goal（2026年4月）、Anthropic Claude Code 2.1.139（2026年5月）の収束、31ターン実務実験（11件修正・2件ブロック明示・1件重複検出）が文書化。entities/aakash-gupta.md も Separation of Duties 詳細で拡充済み。stub の concepts/separation-of-duties.md は正規ページへのリダイレクト化済み。",
+      "candidate_wiki_path": "concepts/security-and-governance/agent-separation-of-duties.md",
+      "body_excerpt": "# Agent Safety Separation Of Duties\n## Source URLs\n1. [https://x.com/aakashgupta/status/2067550891843186980](https://x.com/aakashgupta/status/2067550891843186980)\n2. [https://hn.algolia.com/api/v1/search?query=agent+safety+separation+duties&tags=story](https://hn.algolia.com/api/v1/search?query=agen"
+    }
+  ]
+}

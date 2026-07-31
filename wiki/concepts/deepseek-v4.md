@@ -1,7 +1,7 @@
 ---
 title: DeepSeek-V4
 created: 2026-05-08
-updated: 2026-06-10
+updated: 2026-07-31
 type: concept
 tags:
   - model
@@ -289,6 +289,7 @@ Key findings extracted from the V4 launch discussion on Hacker News ([thread](ht
 - **V4-Flash**: Native weights ~154GB → runnable on **Mac Studio M3 Ultra (512GB RAM)**
 - **V4-Pro**: Full precision ~800GB, heavily quantized ~400GB+ → requires data-center-grade VRAM
 - MIT license, open weights → unrestricted free deployment possible
+- **Unsloth GGUF Quants (Jul 2026)**: 10 quantization variants for V4-Flash from UD-Q8_K_XL (lossless) to UD-IQ1_S (1-bit). Supports llama.cpp, Ollama, Unsloth Studio, Docker. [[entities/daniel-han|Daniel Han]] announced these on July 31, 2026.
 
 ### Developer Experience
 

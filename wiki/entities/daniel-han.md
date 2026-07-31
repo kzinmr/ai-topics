@@ -2,7 +2,7 @@
 title: Daniel Han
 type: entity
 created: 2026-04-10
-updated: 2026-07-15
+updated: 2026-07-31
 source: "x-account"
 tags:
   - person
@@ -13,6 +13,8 @@ tags:
 sources:
   - raw/articles/2026-07-15_danielhanchen_inkling-1bit-gguf-quants.md
   - raw/articles/2026-07-15_danielhanchen_inkling-unsloth-studio.md
+  - raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md
+  - raw/articles/2026-07-31_unsloth_deepseek-v4-flash-0731-gguf.md
 ---
 
 
@@ -112,6 +114,8 @@ Daniel consistently shares the mathematical and engineering details behind Unslo
 | Dynamic 4-bit quants | 1.58bit Dynamic R1 GGUF format |
 | **Inkling 1-bit GGUF (Jul 2026)** | Collab with Thinking Machines: 86% size reduction (270GB vs 1.9TB), 74.2% top-1% accuracy |
 | **Inkling in Unsloth Studio (Jul 2026)** | Interleaved tool calling, web search + code execution, numerical reasoning levels (0.0–0.99), vision + audio |
+| **Kimi K3 GGUF (Jul 2026)** | Dynamic 1-bit quantization: 594GB (62% smaller than 1.56TB), UD-IQ1_S retains 78.9% accuracy, custom llama.cpp fork for vision |
+| **DeepSeek-V4-Flash GGUF (Jul 2026)** | 10 quantization variants (UD-Q8_K_XL to UD-IQ1_S) for local inference of 284B/13B-active MoE model with 1M context |
 
 **Unsloth Studio** features:
 - Auto-creates datasets from PDF, CSV, DOCX
@@ -152,6 +156,8 @@ Investment analysis scored Unsloth at **8.10/10** (highest in the OSS index):
 |------|------|-------|
 | **Inkling 1-bit GGUF Quants** | Jul 2026 | Collab with Thinking Machines: 86% smaller quantized Inkling model with multimodal support |
 | **Inkling in Unsloth Studio** | Jul 2026 | Tool calling, web search, code execution, vision + audio for Inkling locally |
+| **Kimi K3 GGUF Dynamic 1-bit** | Jul 2026 | 594GB dynamic quantization, custom llama.cpp fork for K3 vision, Unsloth Studio support |
+| **DeepSeek-V4-Flash GGUF** | Jul 2026 | 10 quantization levels for DeepSeek-V4-Flash (284B), UD-Q8/UD-Q4/UD-IQ variants |
 | **How to tune your own LLM with GRPO, Common Crawl and Unsloth** | 2025 | Production guide to fine-tuning with free Colab compute |
 | **Train your own R1 reasoning model locally (GRPO)** | Feb 2025 | Reproducing DeepSeek's "aha moment" on 7GB VRAM |
 | **GRPO: 90% Memory Reduction** | 2025 | Technical deep-dive into memory-efficient GRPO |
@@ -177,6 +183,7 @@ Daniel is active on X/Twitter (@danielhanchen, 1,800+ followers) where he shares
 - **Reinforcement learning workflows** — GRPO, Online DPO, PPO, RLOO implementation details
 - **New model support** — First-day support for Llama, Gemma, Qwen, DeepSeek releases
 - **NVIDIA partnership** — GTC features, Blackwell optimization, DGX ecosystem
+- **GGUF quantization releases** — Timely quants for major model releases (Kimi K3, DeepSeek-V4-Flash), often within days of launch
 - **Community engagement** — Bug fixes, student support, answering technical questions
 
 His posting style is **technical, data-driven, and education-focused** — he shares actual benchmarks, mathematical derivations, and implementation details rather than marketing speak.

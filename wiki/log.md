@@ -1,4 +1,13 @@
 ## [2026-07-31] raw-backlog-ingest | 5 articles triaged — all already captured (0 take / 0 ref / 5 skip)
+
+## [2026-07-31] x-accounts-scan | 3 new posts, 2 wiki pages updated
+- Scan: 84 tracked accounts, 12 scanned (72 skipped budget). 3 new posts from 2 accounts.
+- Post 1: Daniel Han (@danielhanchen) — DeepSeek-V4-Flash-0731 GGUF released (UD-Q8_K_XL lossless + UD-Q4_K_XL). 10 quant variants from Q8 to IQ1_S. [[entities/daniel-han|Daniel Han]]
+- Post 2: Daniel Han (@danielhanchen) — Kimi K3 dynamic 1-bit progress (594GB, aiming for 512GiB). Already captured in [[concepts/kimi-k3|Kimi K3]].
+- Post 3: Dax Raad (@thdxr) — OpenCode Go privacy docs update. Low-value, skipped.
+- Created: [[raw/articles/2026-07-31_unsloth_deepseek-v4-flash-0731-gguf]]
+- Updated: [[entities/daniel-han]] (Key Work + Blog table + sources), [[concepts/deepseek-v4]] (Local Inference → GGUF quants added), index.md
+- Archive: /opt/data/.hermes/cron/data/x_accounts_archive/x_accounts_20260731T223042Z.json
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-07-31 22:00, run 20260731T220020Z). Archive: 2 newly archived, 3 dedup-skipped (archive_index total 2119). Tracking: 5 marked done/skip in processed_raw_articles.json.
 - (1) wheresyoured.at "The Subprime Data Center Crisis" → skip: fully captured in [[concepts/subprime-data-center-crisis]] (created from this article 2026-07-24) + [[entities/ed-zitron]] (728 lines); already archived.
 - (2) Gergely Orosz "Slow Down to Speed Up" (Craft Conference 2026, YouTube transcript) → skip: fully captured in [[entities/gergely-orosz]] (keynote section added 2026-07-31 from this exact raw file; Meta Instagram exploit, tokenmaxxing, ~5,000 AI labelers).
