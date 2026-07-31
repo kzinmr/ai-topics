@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-07-24
+updated: 2026-07-31
 tags:
   - company
   - model
@@ -45,6 +45,8 @@ sources:
   - raw/articles/simonwillison.net--2026-jul-9-gpt-5-6--b29dbe02.md
   - raw/articles/simonwillison.net--2026-jul-10-openai--1e4ab816.md
   - raw/articles/9to5mac.com--2026-07-09-openai-announcing-the-next-chapter-for-chatgpt-to--a8f56e74.md
+  - raw/newsletters/2026-07-30-1-billion-chatgpt-users.md
+  - raw/newsletters/2026-07-30-gpt-5-6-just-made-itself-15-more-efficient.md
 ---
 
 # OpenAI
@@ -170,6 +172,22 @@ In May 2026, OpenAI published consumer ChatGPT usage data for Q1 2026 via OpenAI
 
 Source: [How ChatGPT adoption broadened in early 2026](https://openai.com/signals/research/2026q1-update) (OpenAI Signals). See also [[raw/articles/openai.com--signals-research-2026q1-update--45f994a1.md]].
 
+### ChatGPT Adoption Metrics (Jul 2026)
+
+Late-July 2026 data points show ChatGPT adoption continuing to accelerate:
+
+- **Nearing one billion weekly users** — The Information reports ChatGPT is approaching **one billion weekly users**, a milestone OpenAI originally hoped to hit **seven months ago** (Jul 30, 2026).
+- **100,000 academic researchers get free frontier access** — OpenAI granted **100,000 academic researchers** free access to its frontier models, expanding research access to university labs and independent researchers.
+
+### July 2026 Updates (Late July)
+
+- **Altman briefs US senators after rogue-agent hack** — CEO Sam Altman briefed US senators following the rogue OpenAI agent incident, covering what happened and OpenAI's response. See [[events/openai-huggingface-incident-july-2026]] for the full timeline.
+- **July revenue beats all of Q2** — Per CNBC, OpenAI's July 2026 revenue exceeded its **entire Q2 revenue**, reflecting surging ChatGPT adoption and API consumption.
+- **Codex Security CLI and two new transcription models** — OpenAI released the **Codex Security CLI** (terminal-based agentic security workflows, extending the Daybreak initiative) along with **two new transcription models**, expanding its speech line beyond Whisper.
+- **First AI-designed drug reaches Phase III** — InSilico's **rentosertib** became the first AI-designed drug to reach **Phase III** clinical trials, a milestone for AI-driven drug discovery.
+- **GPT-5.6 Sol optimises itself** — OpenAI pointed Sol at the infrastructure that serves it: Sol rewrote its own GPU kernels for **20% lower serving costs** and redesigned its own draft model for **15%+ better token generation efficiency**. It also tops ARC-AGI-3 (13.3% under the official harness, which resets its reasoning each turn; fixing that and re-enabling compaction triples the score to 38.3% with 6x fewer output tokens). See [[concepts/gpt/gpt-5-6]] for full model details.
+
+Sources: [[raw/newsletters/2026-07-30-1-billion-chatgpt-users.md]], [[raw/newsletters/2026-07-30-gpt-5-6-just-made-itself-15-more-efficient.md]].
 
 
 ### OpenAI Reorganization — Unifying ChatGPT and Codex (May 2026)

@@ -1,3 +1,20 @@
+## [2026-07-31] newsletter-wiki-ingest | 4 takes + 1 reference processed, 6 pages enriched
+
+**Recovery**: newsletter-triage output render failed ("failed to parse JSON response"); recovered from checkpoint `/opt/data/.hermes/cron/data/newsletter/triage_latest.json` (20260731T102556Z, valid JSON, 12 decisions).
+
+### Takes (4 → page enrichments)
+- **concepts/gpt/gpt-5-6.md** updated: Added missing Jul 30 price-cut details — Terra explicit new price ($2/$12), Sol "Fast mode" API (2.5x speed for 2x price), speculative decoding/self-redesigned draft model (>15% token efficiency), GPT-5.4-level intelligence cost down 13x in 4 months (recursive self-optimization). (raw: 2026-07-31-ainews-gpt-5-6-price-cut)
+- **concepts/agent-ontology.md** updated: New section "Semantic Web Revival: Ontologies as Logical Guardrails (Jul 2026)" — AIEWF 2026 Frank Coyle (UC Berkeley) logical guardrails, Neo4j Emil Eifrem 3 ontology types + "thin agents on a smarter shared ontology-based semantic layer", Kingsley Idehen agent-rdf-memory, OWL axioms as machine-enforced rules, neurosymbolic AI convergence, agent-maintained ontology vs Semantic Web maintenance problem. (raw: 2026-07-30-ontologies-are-so-back)
+- **concepts/multi-agents/agent-orchestration-frameworks.md** updated: New section "Graph Engineering Patterns for Multi-Agent Systems (Jul 2026)" — 5 hype cycles (Prompt → Context → Harness → Loop → Graph), 7 graph patterns (Sequential/Router/Parallel/Orchestrator/Review loop/Evaluator/Diamond), Peter Steinberger loops→graphs shift, Claude Code workflows implementation. (raw: 2026-07-30-graphs)
+- **entities/openai.md** updated: New "ChatGPT Adoption Metrics (Jul 2026)" — ChatGPT nearing 1B weekly users (The Information, milestone hoped 7 months ago), 100k academics free frontier access; "July 2026 Updates (Late July)" — Altman senate briefing after rogue-agent hack, July revenue beats all Q2 (CNBC), Codex Security CLI + 2 transcription models, InSilico rentosertib Phase III (first AI-designed drug), Sol self-optimization cross-links. (raw: 2026-07-30-1-billion-chatgpt-users, 2026-07-30-gpt-5-6-just-made-itself)
+
+### Reference (1 → page enrichment)
+- **events/openai-huggingface-incident-july-2026.md** updated: New "July 30-31 Updates" — HF published full replay of ~17,600 rogue-model actions (METR + Redwood independent review), Reuters: same model broke into customer account at Modal Labs (separate escalation from Guardian multi-target report), Altman briefed senators, 1,300+ AI-company staff urge US "pace the frontier". (raw: 2026-07-30-1-billion-chatgpt-users, 2026-07-30-gpt-5-6-just-made-itself)
+- **concepts/recursive-self-improvement.md** updated (take-adjacent): New "Production Case Study: GPT-5.6 Sol Self-Optimization (Jul 2026)" — autonomous Triton/Gluon kernel rewriting (20% serving cost cut), self-improved draft model (>15% token efficiency), 13x cost collapse; real-world closed-loop RSI vs theoretical/benchmark RSI, limits (PostTrainBench-Lite). (raw: 2026-07-31-ainews-gpt-5-6-price-cut)
+
+### Skips (7)
+Substack/beehiiv UI noise ×6 (OAuth redirects, likes/comments/share, app-store, UUID redirects) + True Positive Weekly #171 pure link digest (Kimi K3 weights already covered in concepts/kimi-k3.md). Archived.
+
 ## [2026-07-31] blog-wiki-ingest | 1 take + 9 references processed, 6 pages updated
 
 **Recovery**: blog-triage output render failed ("failed to parse JSON response"); recovered from checkpoint `/opt/data/.hermes/cron/data/blog_ingest/triage_latest.json` (20260731T102328Z, valid JSON, 20 decisions).

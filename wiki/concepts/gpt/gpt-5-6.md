@@ -18,6 +18,7 @@ sources:
   - raw/newsletters/2026-07-10-ainews-openai-launches-gpt-5-6-sol-terra-luna-codex-becomes-chatgpt-superapp.md
   - raw/newsletters/2026-07-14-ainews-openai-gpt-5-6-operational-fixes.md
   - raw/newsletters/2026-07-14-how-to-use-gpt-5-6.md
+  - raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)
@@ -161,8 +162,11 @@ The aggressive availability strategy has put pressure on [[entities/fable]], whe
 On July 30, 2026 OpenAI announced a major price reduction for the GPT-5.6 family, credited in part to efficiency gains produced by GPT-5.6 Sol itself:
 
 - **GPT-5.6 Luna: 80% price drop** — from $1/$6 to **$0.20/$1.20** per 1M input/output tokens. At this price Luna is cheaper than Google's Gemini 3.1 Flash-Lite and now 1/5th of Anthropic Claude Haiku 4.5's input price ($1/$5), where it previously cost the same
-- **GPT-5.6 Terra: 20% reduction** (from $2.50/$15)
+- **GPT-5.6 Terra: 20% reduction** — from $2.50/$15 to **$2 input / $12 output** per 1M tokens
 - **Sol-driven inference optimization**: OpenAI described using GPT-5.6 Sol to optimize load balancing and the model's forward pass itself — finding work that could be precomputed, avoided, or parallelized, and (via Codex) autonomously rewriting production kernels in **Triton** and **Gluon**, two open-source GPU programming languages maintained by OpenAI. Combined with broader kernel advancements, these efforts reduced end-to-end serving costs by **20%**
+- **Speculative decoding / self-redesign**: as part of the same optimization push, Sol improved its **own draft model**, increasing token-generation efficiency by over **15%**
+- **GPT-5.6 Sol 'Fast mode'** (per Sam Altman's announcement): a new API mode offering up to **2.5x the speed for 2x the price**
+- **Context**: the cost of GPT-5.4-level intelligence has dropped **13x in 4 months**, driven by [[concepts/recursive-self-improvement]]
 
 Simon Willison noted the Luna drop "completely changes the landscape with respect to lower priced models" and switched his `agent.datasette.io` demo from Gemini 3.1 Flash-Lite to Luna.
 

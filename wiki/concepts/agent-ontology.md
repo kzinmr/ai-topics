@@ -2,7 +2,7 @@
 title: "Agent Ontology"
 type: concept
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-07-31
 tags:
   - agent-ontology
   - rag
@@ -14,6 +14,7 @@ tags:
 sources:
   - raw/articles/2026-04-28_x-article-connecting-agents-to-decisions-palantir.md
   - https://x.com/i/article/2049136883528011954
+  - raw/newsletters/2026-07-30-ontologies-are-so-back-why-ai-agents-are-reviving-the-semantic-web.md
 related:
   - entities/palantir
   - concepts/decision-centric-architecture
@@ -121,6 +122,46 @@ The [[concepts/mcp|Model Context Protocol (MCP)]] provides tools and resources t
 | **Scale** | Developer tooling | Enterprise operations |
 
 MCP tools could be seen as a lightweight form of "Logic Binding" — the ontology provides the richer context that makes MCP tools operationally meaningful.
+
+## Semantic Web Revival: Ontologies as Logical Guardrails (Jul 2026)
+
+In mid-2026 the "Semantic Web" — the long-dormant vision of machine-readable web data — was revived by the AI agent community as a practical answer to agent reliability. One of the most-watched videos from the AI Engineer World's Fair (AIEWF 2026) was a 20-minute talk by **Frank Coyle**, professor of computer science teaching generative AI/LLMs at UC Berkeley. Coyle argued that LLMs are effective at *probabilistic* reasoning, but agentic systems need **"logical guardrails"** — by which he means ontologies, which he defined simply as **"data as graphs"**: a description of classes, properties, and relationships in a domain of knowledge, a concept going back to Aristotle.
+
+### Neo4j: Three Ontology Types and "Thin Agents"
+
+In his AIEWF 2026 keynote, Neo4j CEO **Emil Eifrem** proposed three types of ontologies to enable a "smarter shared substrate" for running agents at scale:
+
+1. **Business-facing ontology** — the key concepts of an organization
+2. **Technical ontology** — "all the metadata of all the data sources and data assets in your enterprise ecosystem"
+3. The **shared semantic substrate** that ties the two together
+
+Eifrem framed the shift as moving from "a world of **thick agents with manually wired data sources**" to "**thin agents on a smarter shared ontology-based semantic layer**."
+
+### An "Agent Engineering Stack" with RDF Memory
+
+**Kingsley Idehen** (OpenLink Software) is building an "agent engineering stack" using Semantic Web technologies, including an **"agent with RDF memory"**:
+
+> "The beauty of LLMs is that they are powerful processors of language. The beauty of an ontology is that it defines the types of entities and relationships through which language acquires computable context. Together, they bring the expressive power of language to computing's UI/UX stack."
+
+### OWL Axioms as Machine-Enforced Rules
+
+OWL (Web Ontology Language) gives ontologies teeth inside agent loops. As Coyle put it, "while language can be slippery, **an OWL axiom is a rule a machine enforces**." One of his slides described the ontology as **"a bounded set of rules around an unbounded loop"** — a guardrail that keeps a probabilistic LLM "on track" and "honest," with a reasoner built on the ontology to check the model's reasoning after a tool has run.
+
+### Prompt for Existing Web Ontologies
+
+Coyle noted that established web ontologies — Schema.org, FOAF, Dublin Core, plus "augmenting technologies" like RDFS (Resource Description Framework Schema) and OWL — are already in LLM training data, so developers can simply **prompt for them** rather than reinventing them from first principles: "This stuff has been out there underlying a lot of what we already do... take advantage of these things that already exist."
+
+### Neurosymbolic AI
+
+Coyle called the convergence of probabilistic agents with ontologies **[[concepts/neurosymbolic-ai|neurosymbolic AI]]**: "neural networks tied into symbolic AI — rule-based systems come under that category, as do the knowledge graphs that we're assembling." For him it represents "a way to keep the LLM on its guardrails."
+
+### The Maintenance Problem
+
+The reason the 1990s/2000s Semantic Web vision never took off was maintenance — keeping ontologies up to date. Prasenjit Sarkar argues the agent era changes that calculus:
+
+> "When an agent maintains the ontology as part of its own operation, updating definitions when it encounters edge cases, the maintenance problem changes character."
+
+The revival also reflects AIEWF 2026's central concern: quality control for "loop engineering," a return to software-engineering discipline after the 2025 "vibe coding" trend, with guardrails and humans in the loop.
 
 ## Global Branching (Zero-Downtime Ontology Evolution)
 

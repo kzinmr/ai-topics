@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-31
 type: concept
 tags:
   - concept
@@ -19,6 +19,7 @@ tags:
 sources:
   - raw/articles/2026-07-04_lilianweng-harness-engineering-self-improvement.md
   - https://lilianweng.github.io/posts/2026-07-04-harness/
+  - raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md
 description: "The feedback loop where an AI improves the machinery that produces its intelligence. Near-term RSI runs through harness engineering — optimizing context, workflow, and code — rather than direct weight rewriting."
 ---
 
@@ -272,6 +273,18 @@ Anthropic's RSI narrative serves simultaneously as:
 2. **Valuation narrative** — supporting ~$1T valuation target and IPO (S-1 filed June 2026)
 
 This dual framing raises questions about whether RSI claims are primarily technical observations or strategic positioning.
+
+## Production Case Study: GPT-5.6 Sol Self-Optimization (Jul 2026)
+
+In July 2026, [[entities/openai|OpenAI]] published findings on how [[concepts/gpt/gpt-5-6|GPT-5.6]] Sol optimized its own serving infrastructure — a large-scale production example of recursive self-optimization. Unlike the theoretical and benchmark-driven systems above, Sol's self-improvement operated on the live infrastructure that serves it, closing the loop between model and deployment system:
+
+- **Autonomous kernel optimization** — Sol was actively used to analyze production traffic, tune load balancing, and autonomously rewrite production kernels in OpenAI's own Triton and Gluon languages (via Codex). Autonomous kernel optimization reduced end-to-end serving costs by **20%**.
+- **Self-improved speculative decoding** — Sol improved its *own* draft model, increasing token-generation efficiency by **over 15%**.
+- **Price cuts & cost collapse** — These gains enabled a major price cut: Luna dropped 80% to $0.20/$1.20 (input/output) and Terra dropped 20% to $2/$12. The cost of GPT-5.4-level intelligence dropped **13x in 4 months**.
+
+> 🔁 **Significance**: This is a real-world closed loop — the model improves the infrastructure that serves it, which lowers cost, which expands deployment, which feeds more production traffic back into the optimization loop. It is distinct from theoretical/benchmark RSI: the improvements are confined to the kernel/draft-model level, not yet full post-training recipe design. Per OpenAI, GPT-5.6 still collapses to narrow strategies on PostTrainBench-Lite, underscoring how far production RSI remains from open-ended self-improvement.
+
+> Source: `raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md`
 
 ## Related Concepts
 
