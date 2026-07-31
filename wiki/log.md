@@ -1,3 +1,12 @@
+## [2026-07-31] raw-backlog-ingest | 5 articles triaged — all already captured (0 take / 0 ref / 5 skip)
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-07-31 22:00, run 20260731T220020Z). Archive: 2 newly archived, 3 dedup-skipped (archive_index total 2119). Tracking: 5 marked done/skip in processed_raw_articles.json.
+- (1) wheresyoured.at "The Subprime Data Center Crisis" → skip: fully captured in [[concepts/subprime-data-center-crisis]] (created from this article 2026-07-24) + [[entities/ed-zitron]] (728 lines); already archived.
+- (2) Gergely Orosz "Slow Down to Speed Up" (Craft Conference 2026, YouTube transcript) → skip: fully captured in [[entities/gergely-orosz]] (keynote section added 2026-07-31 from this exact raw file; Meta Instagram exploit, tokenmaxxing, ~5,000 AI labelers).
+- (3) dynomight.net "Pseudpocalypse" → skip: already archived as non-AI essay (stylometry/pseudonymity, 29-bit information-theoretic argument); entity [[entities/dynomight-net]] exists, no gap.
+- (4) gilesthomas.com "Benchmarking Qwen 3.6 35B MoE on RTX 3090" → skip: fully captured in [[concepts/qwen-3-6-35b]] "Real-World Benchmarks (RTX 3090)" section (Vulkan/CUDA tok/s table, UD-IQ4_NL_XL, offload); already archived.
+- (5) Aakash Gupta "Agent Safety Separation of Duties" (X post) → skip: fully captured in [[concepts/security-and-governance/agent-separation-of-duties]] (worker/evaluator split, Codex /goal Apr 2026, Claude Code 2.1.139 May 2026, 31-turn experiment) + [[entities/aakash-gupta]].
+- No wiki page creation or enrichment needed this batch. Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
+
 ## [2026-07-31] dreaming-wiki-ingest | 4 references verified + enriched (upstream archive-only commit)
 - Upstream dreaming-group (18:09) committed archive only (71311cfe); render failed after checkpoint save (triage_latest.json 18:13, 6 decisions: 4 ref, 2 skip)
 - Deep Sleep verification gate: all 4 reference candidates confirmed genuine gaps vs entity page content
