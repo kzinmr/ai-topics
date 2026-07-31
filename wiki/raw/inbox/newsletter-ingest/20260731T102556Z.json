@@ -1,0 +1,93 @@
+{
+  "run_id": "20260731T102556Z",
+  "triaged_at": "2026-07-31T10:26:00Z",
+  "summary": "6 newsletters processed. 2 critical (GPT-5.6 pricing/efficiency), 2 high (ontologies+agents, ChatGPT 1B users), 2 low (weekly digest, graphs). All are substack/beehiiv redirect-only digests — article bodies require URL resolution.",
+  "classifications": [
+    {
+      "message_id": "<20260731044054.3.8a6f659c673394d2@mg-d0.substack.com>",
+      "subject": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-improvement",
+      "date": "2026-07-31",
+      "source": "swyx/AINews (Substack, publication_id=1084089)",
+      "importance": "critical",
+      "reason": "Major LLM pricing event: GPT-5.6 20-80% price cut. Documents recursive self-improvement driving 13x cost reduction in 4 months. Directly relevant to LLM cost/efficiency wiki pages.",
+      "wiki_targets": ["concepts/llm-pricing", "events/gpt-5-6-release", "entities/openai"],
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-gpt-56-price-cut-by-20-80",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md",
+      "article_count": 20,
+      "action": "resolve_redirects_and_scrape"
+    },
+    {
+      "message_id": "<20260730130254.3.0cd996fd40627107@mg-d1.substack.com>",
+      "subject": "1 Billion ChatGPT users",
+      "date": "2026-07-30",
+      "source": "Ben's Bites (Substack, publication_id=4379299)",
+      "importance": "critical",
+      "reason": "ChatGPT reaching 1 billion users is a major milestone. Relevant to OpenAI entity page and ChatGPT product page. Signals massive AI adoption.",
+      "wiki_targets": ["entities/openai", "entities/chatgpt", "events/chatgpt-1b-users"],
+      "primary_url": "https://open.substack.com/pub/bensbites/p/1-billion-chatgpt-users",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-1-billion-chatgpt-users.md",
+      "article_count": 20,
+      "action": "resolve_redirects_and_scrape"
+    },
+    {
+      "message_id": "<20260730130254.3.0cd996fd40627107@mg-d1.substack.com>",
+      "subject": "🔁 GPT-5.6 Just Made Itself 15% More Efficient",
+      "date": "2026-07-30",
+      "source": "Beehiiv newsletter (unidentified source)",
+      "importance": "high",
+      "reason": "GPT-5.6 self-improvement and efficiency gains. Relevant to model optimization, recursive self-improvement concepts. Beehiiv tracked URLs require resolution.",
+      "wiki_targets": ["concepts/recursive-self-improvement", "concepts/model-efficiency", "entities/openai"],
+      "primary_url": "https://link.mail.beehiiv.com/v2/c/5e3e31c7a072e46a8b47248b38edc4550c1cb71363947733c7c4cf0425ea2367ceb3e139c22290ac5e79e4d0407b5cedb5398e5766a53fe32657c1faf724403494b21f9500d4d434e8314d3ed94b76fe2eaa19674401f6677bda4c2a495dad5821b92409ed473780a0f0002a9cfe43494706b819b86bef7a0a68c1f8290929ec43bdf67fd6dd34caf5f15f38e54040d554655bc6c302661e1c3dc406875072c4/680c42725a513aeb",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-gpt-5-6-just-made-itself-15-more-efficient.md",
+      "article_count": 20,
+      "action": "resolve_redirects_and_scrape"
+    },
+    {
+      "message_id": "<20260730111755.3.b78d996ca9b62dc4@mg-d0.substack.com>",
+      "subject": "Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web",
+      "date": "2026-07-30",
+      "source": "@ricmac via swyx/AINews (Substack, publication_id=1084089)",
+      "importance": "high",
+      "reason": "AI agents reviving semantic web / ontologies. Relevant to agent architectures, tool use, structured data for agents. Author: @ricmac (Richard MacManus).",
+      "wiki_targets": ["concepts/ai-agents", "concepts/semantic-web", "concepts/ontologies-for-ai"],
+      "primary_url": "https://open.substack.com/pub/swyx/p/ontologies-agentic-systems",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-ontologies-are-so-back-why-ai-agents-are-reviving-the-semantic-web.md",
+      "article_count": 20,
+      "action": "resolve_redirects_and_scrape"
+    },
+    {
+      "message_id": "<20260730191323.3.790c543871286dc7@mg2.substack.com>",
+      "subject": "True Positive Weekly #171",
+      "date": "2026-07-30",
+      "source": "AI Weekly (Substack, publication_id=61455)",
+      "importance": "low",
+      "reason": "Weekly AI digest. May contain relevant links but is meta-content. Lower priority for wiki ingestion.",
+      "wiki_targets": [],
+      "primary_url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-171",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-true-positive-weekly-171.md",
+      "article_count": 20,
+      "action": "optional_scrape"
+    },
+    {
+      "message_id": "<20260730230752.3.a7d55a5f7a2b4628@mg-d1.substack.com>",
+      "subject": "Graphs.",
+      "date": "2026-07-30",
+      "source": "AI by Aakash (Substack, publication_id=5747120)",
+      "importance": "low",
+      "reason": "Short title 'Graphs.' from aibyaakash. Likely about graph-based approaches in AI. Vague subject — defer until content is available.",
+      "wiki_targets": [],
+      "primary_url": "https://open.substack.com/pub/aibyaakash/p/graphs",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-graphs.md",
+      "article_count": 20,
+      "action": "optional_scrape"
+    }
+  ],
+  "stats": {
+    "critical": 2,
+    "high": 2,
+    "low": 2,
+    "total": 6,
+    "resolvable_article_urls": 6,
+    "primary_theme": "GPT-5.6 pricing/efficiency dominates (2 of 6 newsletters). ChatGPT 1B users milestone. Semantic web/ontologies for agents emerging topic."
+  }
+}
