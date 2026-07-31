@@ -2349,6 +2349,7 @@
 - [[concepts/post-training/areal]] — AReaL
 - [[concepts/post-training/asynchronous-rl]] — Asynchronous RL for LLM Post-Training
 - [[concepts/post-training/axolotl]] — Axolotl — Fine-Tuning Framework
+- [[concepts/post-training/censorship-transfer-distillation]] — Censorship Transfer in Knowledge Distillation
 - [[concepts/post-training/echo-rl]] — ECHO (RL Training Method)
 - [[concepts/post-training/fine-tuning]] — Fine Tuning
 - [[concepts/post-training/fsdp-qlora]] — FSDP + Q-LoRA
@@ -2519,6 +2520,7 @@
 - [[concepts/sampling-strategies]] — Sampling Strategies
 - [[concepts/sana-vm]] — SANA-WM
 - [[concepts/sandbox]]
+- [[concepts/sandbox/git-worktrees-agent-isolation]] — Git Worktrees as Agent Isolation Boundary — shared hooks/config/stash/refs enable hook injection and config rewriting; local clones with hardlinks provide isolation at identical cost (July 2026)
 - [[concepts/sandbox/in-process]] — In-Process Sandbox
 - [[concepts/sandbox/infrastructure]] — Infrastructure-Level Sandbox
 - [[concepts/sandbox/js-runtime]] — JavaScript Runtimes for AI Agents
@@ -2721,6 +2723,7 @@
 - [[concepts/training-infra/model-serving-autoscaling]] — Model Serving & Autoscaling
 - [[concepts/training-infra/pytorch-gpu-memory-profiling]] — PyTorch GPU Memory Profiling — Snapshot & Profiler Tools
 - [[concepts/training/trl]] — training/trl
+- [[concepts/training-divergence-reproducibility]] — LLM Training Divergence & Reproducibility — why faithfully reproduced models diverge from original weights; GPT-2 overtraining case study; Chinchilla violations and unresolved IFT gap (July 2026)
 - [[concepts/trajectory-post-training-platform]] — Trajectory — Post-Training Platform
 - [[concepts/transformer-architecture]] — Transformer Architecture
 - [[concepts/transformers-library]] — transformers-library

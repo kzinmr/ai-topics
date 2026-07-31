@@ -1,3 +1,14 @@
+## [2026-07-31] active-crawl | 3 new pages from trending discovery
+
+**Trend Discovery** (3 parallel subagents): HN Algolia (15 stories, top: censorship transfer 131pts, Tokenless 70pts, GUI agents 68pts, git worktrees 31pts), X/Twitter (10 results, top: Agency sandboxes 146 bookmarks), wiki gap analysis (15 gaps identified).
+
+**Pages created:**
+- `concepts/training-divergence-reproducibility.md` — LLM Training Divergence & Reproducibility: case study of Giles Thomas's GPT-2 reproduction, overtraining experiments (6.4B tokens, 2-epoch), Chinchilla-optimal violations, IFT gap unresolved despite test loss improvements. (raw: gilesthomas.com--2026-07-why-do-openai-gpt2-weights-beat-mine-3-overtraining)
+- `concepts/sandbox/git-worktrees-agent-isolation.md` — Git worktrees are not an agent isolation boundary: shared hooks/config/stash/refs enable hook injection, config rewriting, stash theft; local clones with hardlinks provide actual isolation at identical cost (~59MB/~900ms). (raw: 2026-07-30_fletch_git-worktrees-agent-isolation)
+- `concepts/post-training/censorship-transfer-distillation.md` — Censorship Transfer in Knowledge Distillation: CTGT research showing DeepSeek V4 Flash's +45.45 censorship gap does NOT transfer via distillation to GPT-OSS; self-distillation matches Chinese-teacher performance on FinanceReasoning (83.61%). (raw: 2026-07-30_ctgt_distillation-censorship-transfer)
+
+**SCHEMA.md:** Added tags `gpt-2`, `reproducibility`, `censorship`.
+
 ## [2026-07-31] newsletter-wiki-ingest | 4 takes + 1 reference processed, 6 pages enriched
 
 **Recovery**: newsletter-triage output render failed ("failed to parse JSON response"); recovered from checkpoint `/opt/data/.hermes/cron/data/newsletter/triage_latest.json` (20260731T102556Z, valid JSON, 12 decisions).
