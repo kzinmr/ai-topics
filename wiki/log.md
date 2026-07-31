@@ -1,4 +1,16 @@
 ## [2026-07-31] raw-backlog-ingest | 2 pages enriched, 3 skips (all already covered)
+## [2026-07-31] dreaming | Pattern E saturation — 4 references identified, 0 takes
+- Checkpoint: 0 articles from RSS/newsletter, 200 recent raw articles on disk
+- Duplicate check: Blog-wiki-ingest (1 take + 9 refs), Newsletter-wiki-ingest (4 takes + 1 ref), Active-crawl (3 pages), Raw-backlog-ingest (15+ articles) all processed today
+- Prior dreaming triage (Jul 30): consumed, archive exists at 2026-07-30_20260730T180752Z.json
+- Filesystem scan of Jul 31 06:00 sitemap articles (6 files):
+  - [[entities/hebbia.md]] — Hebbia Max product launch (first AI team member for financial institutions, slide generation, email integration). Entity page (updated 2026-07-11) has no Max mention. Reference candidate for enrichment.
+  - [[entities/fireworks-ai.md]] — Two technical articles: (1) LLM-to-Embedding fine-tuning (LegalBench/TREC Clinical Trials benchmarks, 3 training modes), (2) LoRA-to-FullFT switching guide (Qwen3.5-9B test bed, recipe tuning erased FullFT advantage). Entity page (updated 2026-07-28) has neither. Reference candidates for enrichment.
+  - [[entities/harvey.md]] — AI Trademark Search product feature (clearance to brand protection workflow). Reference candidate.
+  - Parallel Web customer-watch: scrape failed (brotli decoder error). Skipped.
+  - Harvey Nijanthan Hariharan: personnel announcement, no technical depth. Skipped.
+- Archive: 6 candidates archived (0 dedup), total_archive_urls=2117
+
 
 Batch 20260731T180057Z (raw_backlog_collect.py --sort ai-hint --limit 5). 5 articles evaluated with body reading.
 

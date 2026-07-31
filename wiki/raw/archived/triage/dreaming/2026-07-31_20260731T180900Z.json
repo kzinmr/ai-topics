@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-07-31T18:13:58.182200+00:00",
+  "triage_run_id": "20260731T180900Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming cycle 2026-07-31: Pattern E saturation (0 articles, 200 raw). Blog-triage (1 take + 9 refs), Newsletter-wiki-ingest (4 takes + 1 ref), Active-crawl (3 pages), Raw-backlog-ingest (15+ articles) all processed today. Filesystem scan of Jul 31 06:00 sitemap articles found 4 reference candidates: Hebbia Max product launch, Fireworks embedding fine-tuning, Fireworks LoRA-to-FullFT guide, Harvey trademark search. 2 skips: scrape failure, personnel announcement.",
+  "decisions": [
+    {
+      "item_id": "dreaming-hebbia-max",
+      "source": "dreaming",
+      "source_name": "Hebbia Blog",
+      "title": "Introducing Max",
+      "url": "https://www.hebbia.com/blog/introducing-max",
+      "raw_path": "~/wiki/raw/articles/2026-07-31_hebbia_introducing-max.md",
+      "recommended_action": "reference",
+      "reason_ja": "[4/5] Hebbia Max product launch — first AI team member for financial institutions. Slide generation, financial model output, email integration. entities/hebbia.md (updated 2026-07-11) has no Max mention. Entity page enrichment candidate.",
+      "candidate_wiki_path": "entities/hebbia.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fireworks-embedding-ft",
+      "source": "dreaming",
+      "source_name": "Fireworks AI Blog",
+      "title": "Fine-Tune Your Own Embedding Model from an LLM",
+      "url": "https://fireworks.ai/blog/fine-tuning-your-own-embeddings-model",
+      "raw_path": "~/wiki/raw/articles/2026-07-31_fireworks-ai_fine-tuning-your-own-embeddings-model.md",
+      "recommended_action": "reference",
+      "reason_ja": "[4/5] LLM-to-Embedding Model fine-tuning technical article. LegalBench, TREC Clinical Trials, LegalPincite benchmark results, 3 training modes. entities/fireworks-ai.md (updated 2026-07-28) has no embedding fine-tuning mention.",
+      "candidate_wiki_path": "entities/fireworks-ai.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-fireworks-lora-to-fullft",
+      "source": "dreaming",
+      "source_name": "Fireworks AI Blog",
+      "title": "Three Tests to Run Before You Switch from LoRA to FullFT",
+      "url": "https://fireworks.ai/blog/three-tests-to-run-before-you-switch-from-LoRa-to-FullFT",
+      "raw_path": "~/wiki/raw/articles/2026-07-31_fireworks-ai_three-tests-to-run-before-you-switch-from-LoRa-to-FullFT.md",
+      "recommended_action": "reference",
+      "reason_ja": "[4/5] LoRA to Full Fine-Tuning switching guide. Qwen3.5-9B test bed, rank test / data coverage / tuned learning rate. Recipe tuning erased fixed-recipe FullFT advantage. entities/fireworks-ai.md has no LoRA/FullFT guidance.",
+      "candidate_wiki_path": "entities/fireworks-ai.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-harvey-trademark-search",
+      "source": "dreaming",
+      "source_name": "Harvey Blog",
+      "title": "AI Trademark Search: From Clearance to Brand Protection",
+      "url": "https://www.harvey.ai/blog/ai-trademark-search",
+      "raw_path": "~/wiki/raw/articles/2026-07-31_harvey_ai-trademark-search.md",
+      "recommended_action": "reference",
+      "reason_ja": "[3/5] Harvey AI Trademark Search product feature. Legal AI trademark clearance to brand protection workflow. entities/harvey.md may need trademark search feature mention. Vertical AI application case.",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-parallel-customer-watch",
+      "source": "dreaming",
+      "source_name": "Parallel Web Systems Blog",
+      "title": "customer-watch-background-agent",
+      "url": "https://parallel.ai/blog/customer-watch-background-agent",
+      "raw_path": "~/wiki/raw/articles/2026-07-31_parallel-web-systems_customer-watch-background-agent.md",
+      "recommended_action": "skip",
+      "reason_ja": "[1/5] Scrape failed (brotli decoder error). Article body unreachable. 506 bytes only.",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-harvey-hire",
+      "source": "dreaming",
+      "source_name": "Harvey Blog",
+      "title": "Nijanthan Hariharan",
+      "url": "https://www.harvey.ai/blog/nijanthan-hariharan",
+      "raw_path": "~/wiki/raw/articles/2026-07-31_harvey_nijanthan-hariharan.md",
+      "recommended_action": "skip",
+      "reason_ja": "[2/5] Harvey personnel announcement. Hiring info only, no technical depth. Low value for entity page enrichment.",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}
