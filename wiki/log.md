@@ -3221,3 +3221,17 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 2. `concepts/session-portability.md` — New concept page: session ownership tests, provider-sealed state, seven portable inference principles, relationship to context-lock-in and distillation rights
 3. `concepts/earendil.md` — Upgraded from stub to full page: company overview, products (Pi, Absurd, Lefos), session portability advocacy, distillation position
 4. `index.md` — Added session-portability entry; updated earendil description
+
+
+## [2026-07-31] weekly wiki-graph-analysis | graph health + person×concept analysis
+
+**Job**: wiki-graph-analysis (Friday 15:00 UTC weekly)
+**Result**: 2,877 pages scanned (871 entities, 1,945 concepts, 35 comparisons, 4 queries, 22 events). 45 content-rich orphans, 3,261 broken links (146 auto-fixable cross-namespace/bare), 16 duplicate groups, 978 stale pages (>90d), 286 oversized (>200 lines), 941 tag violations, 25 not-indexed pages, 7 stale index entries.
+
+**Notable**: Person×concept graph — 188 persons × 1,864 concepts. Top intellectual cluster: andrej-karpathy × simon-willison (17.2). 14 cross-reference gap recommendations (antirez-com ↔ simon-willison, karpathy ↔ antirez-com, etc.).
+
+**Script fixes applied**: `scripts/wiki_graph_analysis_weekly.py` hardcoded date → dynamic; `scripts/_weekly_graph_report.py` now walks nested dirs (2,313→2,877 pages), resolves dir-index pages (`foo/index.md` → `foo`), fixes quadruple-bracket display, generic old-report cleanup.
+
+**Key caveats**: broken-link count includes ~1,000+ links to directory `_index` targets (e.g. `[[concepts/local-llm/_index]]`, 52 refs) and links to `raw/` targets that exist on disk but aren't in L2 scan — true unresolved L2→L2 count is lower (~2,000).
+
+Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-05, 07-10, 07-17) removed; index.md Queries section updated.

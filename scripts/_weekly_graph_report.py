@@ -23,7 +23,7 @@ if idx >= 0:
                 if re.match(r'^[a-z][a-z0-9-]+$', item):
                     canonical_tags.add(item)
 
-# 2. Scan all L2 pages
+# 2. Scan all L2 pages (including nested dirs: foo/index.md resolves as 'foo')
 pages = {}
 orphans = []
 broken_links = []
@@ -37,73 +37,77 @@ for subdir in ['entities', 'concepts', 'comparisons', 'queries', 'events']:
     dp = os.path.join(wiki, subdir)
     if not os.path.isdir(dp):
         continue
-    for fn in sorted(os.listdir(dp)):
-        if not fn.endswith('.md'):
-            continue
-        path = os.path.join(dp, fn)
-        try:
-            with open(path, encoding='utf-8', errors='replace') as fh:
-                content = fh.read()
-        except:
-            continue
-        slug = fn.replace('.md', '')
-        key = f'{subdir}/{slug}'
-        lines = content.split('\n')
-        fm_match = re.match(r'^---\n(.*?)\n---', content, re.DOTALL)
-        tags, sources, page_type, updated, status = [], None, None, None, None
-        has_fm = bool(fm_match)
-        if fm_match:
-            fm = fm_match.group(1)
-            in_tags = False
-            for line in fm.split('\n'):
-                km = re.match(r'^(\w+):', line)
-                if km:
-                    in_tags = (km.group(1) == 'tags')
-                if in_tags:
-                    tm = re.match(r'^\s*-\s+([a-z][a-z0-9-]+)', line)
-                    if tm:
-                        tags.append(tm.group(1))
-            inline = re.search(r'tags:\s*\[([^\]]+)\]', fm)
-            if inline:
-                tags = [t.strip() for t in inline.group(1).split(',') if t.strip()]
-            for field in ['sources', 'type', 'updated', 'status']:
-                m = re.search(r'^' + field + r':\s*(.+)$', fm, re.MULTILINE)
-                if m:
-                    v = m.group(1).strip()
-                    if field == 'sources':
-                        sources = v
-                    elif field == 'type':
-                        page_type = v
-                    elif field == 'updated':
-                        updated = v
-                    elif field == 'status':
-                        status = v
-
-        wikilinks = re.findall(r'\[\[([^\]|]+)', content)
-        pages[key] = {
-            'path': path, 'size': len(content), 'lines': len(lines),
-            'tags': tags, 'sources': sources, 'type': page_type,
-            'updated': updated, 'status': status, 'has_fm': has_fm,
-            'wikilinks': wikilinks, 'subdir': subdir
-        }
-
-        if sources is None or sources == '':
-            no_sources.append(key)
-        if status == 'skeleton':
-            skeletons.append(key)
-        non_canon = [t for t in tags if t and t not in canonical_tags]
-        if non_canon:
-            tag_violations.append({'page': key, 'tags': non_canon})
-        if len(lines) > 200:
-            oversized.append({'page': key, 'lines': len(lines)})
-        if updated:
+    for root, dirs, files in os.walk(dp):
+        for fn in sorted(files):
+            if not fn.endswith('.md'):
+                continue
+            path = os.path.join(root, fn)
             try:
-                upd = datetime.strptime(updated[:10], '%Y-%m-%d').replace(tzinfo=timezone.utc)
-                days = (datetime.now(timezone.utc) - upd).days
-                if days > 90:
-                    stale.append({'page': key, 'updated': updated, 'days': days})
-            except ValueError:
-                pass
+                with open(path, encoding='utf-8', errors='replace') as fh:
+                    content = fh.read()
+            except Exception:
+                continue
+            rel = os.path.relpath(path, dp).replace('.md', '')
+            # Directory index pages: 'context-engineering/index.md' -> key 'context-engineering'
+            if fn in ('index.md', '_index.md'):
+                rel = os.path.dirname(rel) if os.path.dirname(rel) else '_index'
+            key = f'{subdir}/{rel}'
+            lines = content.split('\n')
+            fm_match = re.match(r'^---\n(.*?)\n---', content, re.DOTALL)
+            tags, sources, page_type, updated, status = [], None, None, None, None
+            has_fm = bool(fm_match)
+            if fm_match:
+                fm = fm_match.group(1)
+                in_tags = False
+                for line in fm.split('\n'):
+                    km = re.match(r'^(\w+):', line)
+                    if km:
+                        in_tags = (km.group(1) == 'tags')
+                    if in_tags:
+                        tm = re.match(r'^\s*-\s+([a-z][a-z0-9-]+)', line)
+                        if tm:
+                            tags.append(tm.group(1))
+                inline = re.search(r'tags:\s*\[([^\]]+)\]', fm)
+                if inline:
+                    tags = [t.strip() for t in inline.group(1).split(',') if t.strip()]
+                for field in ['sources', 'type', 'updated', 'status']:
+                    m = re.search(r'^' + field + r':\s*(.+)$', fm, re.MULTILINE)
+                    if m:
+                        v = m.group(1).strip()
+                        if field == 'sources':
+                            sources = v
+                        elif field == 'type':
+                            page_type = v
+                        elif field == 'updated':
+                            updated = v
+                        elif field == 'status':
+                            status = v
+
+            wikilinks = re.findall(r'\[\[([^\]|]+)', content)
+            pages[key] = {
+                'path': path, 'size': len(content), 'lines': len(lines),
+                'tags': tags, 'sources': sources, 'type': page_type,
+                'updated': updated, 'status': status, 'has_fm': has_fm,
+                'wikilinks': wikilinks, 'subdir': subdir
+            }
+
+            if sources is None or sources == '':
+                no_sources.append(key)
+            if status == 'skeleton':
+                skeletons.append(key)
+            non_canon = [t for t in tags if t and t not in canonical_tags]
+            if non_canon:
+                tag_violations.append({'page': key, 'tags': non_canon})
+            if len(lines) > 200:
+                oversized.append({'page': key, 'lines': len(lines)})
+            if updated:
+                try:
+                    upd = datetime.strptime(updated[:10], '%Y-%m-%d').replace(tzinfo=timezone.utc)
+                    days = (datetime.now(timezone.utc) - upd).days
+                    if days > 90:
+                        stale.append({'page': key, 'updated': updated, 'days': days})
+                except ValueError:
+                    pass
 
 # 3. Build inbound link graph
 all_slugs = set(pages.keys())
@@ -140,15 +144,19 @@ for key, data in pages.items():
         if tgt.startswith(':') or tgt in ('wikilinks', 'index', 'Index', 'log'):
             continue
         if tgt not in all_slugs:
+            # Strip directory-index suffixes: 'foo/_index' and 'foo/index' resolve to 'foo'
+            base_tgt = re.sub(r'/(?:_?index)$', '', tgt)
+            if base_tgt != tgt and base_tgt in all_slugs:
+                continue
             parts = tgt.split('/')
             if len(parts) == 2:
                 ns, slug = parts
                 other = 'concepts' if ns == 'entities' else 'entities'
                 ot = f'{other}/{slug}'
                 if ot in all_slugs:
-                    bl.append({'source': key, 'link': f'[[{tgt}]]', 'fix': ot, 'issue': 'cross-namespace'})
+                    bl.append({'source': key, 'link': tgt, 'fix': ot, 'issue': 'cross-namespace'})
                 else:
-                    bl.append({'source': key, 'link': f'[[{tgt}]]', 'fix': None, 'issue': 'missing'})
+                    bl.append({'source': key, 'link': tgt, 'fix': None, 'issue': 'missing'})
             else:
                 found = None
                 for pref in ['entities', 'concepts', 'comparisons', 'events', 'queries']:
@@ -157,9 +165,9 @@ for key, data in pages.items():
                         found = cand
                         break
                 if found:
-                    bl.append({'source': key, 'link': f'[[{tgt}]]', 'fix': found, 'issue': 'bare-wikilink'})
+                    bl.append({'source': key, 'link': tgt, 'fix': found, 'issue': 'bare-wikilink'})
                 else:
-                    bl.append({'source': key, 'link': f'[[{tgt}]]', 'fix': None, 'issue': 'bare-wikilink-missing'})
+                    bl.append({'source': key, 'link': tgt, 'fix': None, 'issue': 'bare-wikilink-missing'})
 
 # 6. Index reconciliation
 with open(os.path.join(wiki, 'index.md')) as f:
@@ -189,10 +197,14 @@ cat_ni = Counter(p.split('/')[0] for p in not_indexed)
 report_date = datetime.now().strftime('%Y-%m-%d')
 report_path = os.path.join(wiki, 'queries', f'wiki-graph-analysis-weekly-{report_date}.md')
 
-# Clean up old report if exists
-old_report = os.path.join(wiki, 'queries', 'wiki-graph-analysis-weekly-2026-06-19.md')
-if os.path.exists(old_report) and old_report != report_path:
-    os.remove(old_report)
+# Clean up old weekly reports (keep only today's)
+import glob
+for old in glob.glob(os.path.join(wiki, 'queries', 'wiki-graph-analysis-weekly-*.md')):
+    if old != report_path:
+        try:
+            os.remove(old)
+        except OSError:
+            pass
 
 with open(report_path, 'w', encoding='utf-8') as f:
     f.write(f'''---
@@ -280,7 +292,7 @@ sources: []
 
 ''')
     for b in fixable[:10]:
-        f.write(f'- `{b["source"]}`: {b["link"]} → [[{b["fix"]}]]\n')
+        f.write(f'- `{b["source"]}`: [[{b["link"]}]] → [[{b["fix"]}]]\n')
     if len(fixable) > 10:
         f.write(f'- ... and {len(fixable) - 10} more\n')
 
@@ -356,7 +368,7 @@ sources: []
 
     f.write(f'''
 ---
-*Generated by `scripts/wiki_graph_analysis_weekly.py`*
+*Generated by `scripts/_weekly_graph_report.py`*
 ''')
 
 print(f'REPORT_SAVED:{report_path}')

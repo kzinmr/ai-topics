@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (870 pages)
+## Entities (871 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -874,7 +874,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1946 pages)
+## Concepts (1951 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2868,11 +2868,9 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (6 pages)
+## Queries (4 pages)
 
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
-- [[queries/wiki-graph-analysis-weekly-2026-07-05]] — Weekly Wiki Graph Analysis (2026-07-05) — orphan pages, broken wikilinks, duplicates, index gaps across 2,205 wiki pages
-- [[queries/wiki-graph-analysis-weekly-2026-07-10]] — Weekly Wiki Graph Analysis (2026-07-10) — 2,201 pages analyzed; graph analysis of 187 persons × 1,781 concepts; cross-reference gap recommendations
-- [[queries/wiki-graph-analysis-weekly-2026-07-17]] — Weekly Wiki Graph Analysis (2026-07-17) — 2,249 pages analyzed; 38 orphans, 4,302 broken links, 106 stale pages; 188P × 1,811C graph
+- [[queries/wiki-graph-analysis-weekly-2026-07-31]] — Weekly Wiki Graph Analysis (2026-07-31) — 2,877 pages scanned; 45 orphans, 3,261 broken links (146 fixable), 16 dup groups, 978 stale pages; 188P × 1,864C graph

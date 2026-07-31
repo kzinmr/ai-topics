@@ -369,7 +369,7 @@ def main():
         print("  ✅ Wiki is in good health - no significant issues found")
 
     # Save report JSON
-    report_path = '/opt/data/ai-topics/wiki/queries/wiki-graph-analysis-weekly-2026-06-19.md'
+    report_path = f'/opt/data/ai-topics/wiki/queries/wiki-graph-analysis-weekly-{datetime.now().strftime("%Y-%m-%d")}.md'
     with open(report_path, 'w') as f:
         f.write(f"---\n")
         f.write(f"title: Weekly Wiki Graph Analysis\n")
