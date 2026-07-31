@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-07-31T14:12:43.724431+00:00",
+  "triage_run_id": "20260731T140039Z",
+  "source": "raw_backlog",
+  "summary_ja": "バックログ5記事を処理（2026-07-31 14:00収集、raw_backlog_collect.py --sort ai-hint --limit 5）。全5件が既存wikiページでカバー済みのため 0 take・0 reference・5 skip。内訳: (1) Dwarkesh Podcast Alex Imas & Phil Trammell エピソード → entities/dwarkesh-patel.md + concepts/agi-economics.md + concepts/agi-scarcity.md でカバー済み、(2) Dario Amodei「Policy on the AI Exponential」→ entities/dario-amodei.md + concepts/ai-exponential.md でカバー済み、(3) Giles Thomas LLM from scratch Part 34a → entities/giles-thomas.md でカバー済み、(4) Zhang & Khattab「Language model harnesses are compositional generalizers」→ entities/omar-khattab/rlm.md + entities/alex-zhang.md + concepts/compositional-generalization.md でカバー済み、(5) Ed Zitron「The AI Industry Is Losing」→ entities/ed-zitron.md のBIS Systemic Risk Warningセクションでカバー済み。新規wikiページ作成不要。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-gilesthomas-34a",
+      "source": "raw_backlog",
+      "source_name": "gilesthomas.com",
+      "title": "Writing an LLM from scratch, part 34a — building a JAX training loop for an LLM training run",
+      "url": "https://www.gilesthomas.com/2026/06/llm-from-scratch-34a-building-a-jax-training-loop-for-an-llm-training-run",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/gilesthomas.com--2026-06-llm-from-scratch-34a-building-a-jax-training-loop-fo--059d9f9a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存Wikiで詳細カバー済み。entities/giles-thomas.md に「Part 34a: Building a JAX Training Loop for an LLM Training Run」セクションが存在し、JAX+NNX+Optaxスタック・outside-inアプローチ・A-to-Aモデル・トレーニングハーネス構築手順を文書化。sources に本raw記事（gilesthomas.com--2026-06-llm-from-scratch-34a...）も掲載済み。Part 34b（GPT-2 Small in JAX）も同エンティティに記録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Writing an LLM from scratch, part 34a -- building a JAX training loop for an LLM training run\nSource: https://www.gilesthomas.com/2026/06/llm-from-scratch-34a-building-a-jax-training-loop-for-an-llm-training-run\nWriting the post that I wished I'd found when I started learning whatever it was...\nAr"
+    },
+    {
+      "item_id": "raw-backlog-zhang-khattab-harnesses",
+      "source": "raw_backlog",
+      "source_name": "alexzhang13.github.io (Alex L. Zhang)",
+      "title": "Language model harnesses are compositional generalizers",
+      "url": "https://alexzhang13.github.io/blog/2026/harness/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-07-20_zhang-khattab_language-model-harnesses-compositional-generalizers.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存Wikiで詳細カバー済み。entities/omar-khattab/rlm.md に「Compositional Generalization via Harnesses (Jul 2026)」セクションが存在し、コア主張（harnessがcompositional generalizationを担う）・length generalization（8-32x、Qwen3-30B-A3B-Instruct-2507、~10x eval lift）・cross-domain generalization・LID原理・context offloading + programmatic sub-agent calling・Claude Code/Codex批判を全て記録。entities/alex-zhang.md のKey PublicationsとJul 2026記事セクションにも掲載。concepts/compositional-generalization.md も存在。※rawファイルはHTMLダンプのためfrontmatter不完全だが、wikiコンテンツは既に抽出済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n    <!-- Metadata, OpenGraph and Schema.org -->\n<!-- Standard metadata -->\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n<meta http-equi"
+    }
+  ]
+}

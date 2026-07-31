@@ -29,6 +29,7 @@
     "https://aiweekly.substack.com/p/true-positive-weekly-171",
     "https://aka.ms/ProjectLobster-Blog",
     "https://aleph-alpha.com/en/blog/model-training-as-code/",
+    "https://alexzhang13.github.io/blog/2026/harness/",
     "https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/",
     "https://alignment.openai.com/beneficial-rl/",
     "https://allenpike.com/2025/why-is-chatgpt-so-good-claude/",
@@ -1785,6 +1786,7 @@
     "https://www.gilesthomas.com/2026/06/hashing-jax-parameters",
     "https://www.gilesthomas.com/2026/06/jax-backends-and-devices",
     "https://www.gilesthomas.com/2026/06/jax-commitment-issues",
+    "https://www.gilesthomas.com/2026/06/llm-from-scratch-34a-building-a-jax-training-loop-for-an-llm-training-run",
     "https://www.gilesthomas.com/2026/06/role-confusion",
     "https://www.gilesthomas.com/2026/07/benchmarking-qwen-3-6-35b-moe-rtx-3090",
     "https://www.gilesthomas.com/2026/07/llm-from-scratch-34b-building-and-training-gpt-2-small-in-jax",
@@ -2110,5 +2112,5 @@
     "https://yoroll.ai/",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-07-31T10:36:33.745983+00:00"
+  "updated": "2026-07-31T14:12:43.724933+00:00"
 }

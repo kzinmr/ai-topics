@@ -3,6 +3,19 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-07-31] wiki-health-fix | health scan clean; benchmark pages updated field
+
+Wiki health scan (17:50 UTC run):
+- **index.md**: no corruption (pipe 0, triple-bracket 0, line-number 0, space-prefix 0); validate_index.py clean (2876 lines).
+- **Ghost entries**: 0 genuine (2862 links all resolve).
+- **Index coverage gap**: 0 (3 flagged = 2 `_archive/` + 1 redirect `tim-sherratt` → `tim-sh`, all intentional).
+- **Orphan registration**: none needed (all 24 reported orphans were `_index.md` files or redirects).
+- **Frontmatter**: 8 pages in `concepts/ai-benchmarks/` missing `updated:` — added `updated: 2026-07-31` (arc-agi-1, bfcl-v3, chartqa, factorio-learning-environment, hle, ifeval, mrcr, simpleqa).
+- **Header counts**: match section entries (Entities 869, Concepts 1929, Comparisons 35).
+- **Known duplicate pairs** (report only, no merge): deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, giles-thomas/gilesthomas, lilian-weng/lilianweng, martin-fowler/martinfowler, samuel-colvin/samuelcolvin.
+
+---
+
 ## [2026-07-31] watchdog | auto-fix log header burial + index header counts + agentty updated
 
 Watchdog auto-fixes (17:35 UTC run):
