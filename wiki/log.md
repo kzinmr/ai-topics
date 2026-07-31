@@ -1,3 +1,18 @@
+## [2026-07-31] raw-backlog-ingest | 2 pages enriched, 3 skips (all already covered)
+
+Batch 20260731T180057Z (raw_backlog_collect.py --sort ai-hint --limit 5). 5 articles evaluated with body reading.
+
+### Enriched
+- [[entities/gergely-orosz]] — Added "Slow Down to Speed Up" Craft Conference 2026 keynote section (raw: 2026-06-24_yt_slow-down-ai-software-engineering.md): Meta/Instagram zero-password-reset exploit traced to AI-written code reviewed by AI, token-maxing leaderboard at Meta ("session immortal"/"token"/"legend", killed April), AI usage in perf eval + layoff-driven inflation, ~5,000 Meta devs doing manual AI labeling, and the talk's prescription (cap agent usage to what you can verify, tech-debt removal, one-extra-agent rule, don't outsource learning). Frontmatter: updated 2026-07-31, added raw source + agent-safety tag.
+- [[concepts/tokenmaxxing]] — Added "Meta Case Study: Tokenmaxxing Under Performance Pressure (June 2026)" section documenting the untasteful end of the spectrum (leaderboard gaming, layoff amplification, Instagram exploit consequence) with lessons for the spectrum. Frontmatter: updated 2026-07-31, added raw source.
+- [[concepts/separation-of-duties]] — Stub (23 lines, broken source URL) rewritten as short-form entry + redirect pointer to canonical [[concepts/security-and-governance/agent-separation-of-duties]] (193 lines, created from the same raw article 2026-06-18). Fixed source URL (missing trailing 0).
+
+### Skipped (already covered / non-AI)
+- wheresyoured.at "The Subprime Data Center Crisis" — fully captured in [[concepts/subprime-data-center-crisis]] (created from this article 2026-07-24) + [[entities/ed-zitron]]; already archived.
+- dynomight.net "Pseudpocalypse" — non-AI essay (pseudonymity/statistical author fingerprinting); already archived.
+- gilesthomas.com "Benchmarking Qwen 3.6 35B MoE on RTX 3090" — fully captured in [[concepts/qwen-3-6-35b]] "Real-World Benchmarks (RTX 3090)" section (Vulkan/CUDA tok/s table, UD-IQ4_NL_XL, offload); already archived.
+- Agent Safety Separation of Duties (Aakash Gupta X post) — fully captured in [[concepts/security-and-governance/agent-separation-of-duties]] (worker/evaluator architecture, /goal April 2026, Claude Code 2.1.139 May 2026, 31-turn experiment); stub duplicate fixed as redirect.
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

@@ -1,7 +1,7 @@
 ---
 title: "Gergely Orosz"
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-07-31
 type: entity
 tags:
   - person
@@ -15,7 +15,10 @@ tags:
   - career
   - company
   - leadership
-sources: [raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md]
+  - agent-safety
+sources:
+  - raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md
+  - raw/articles/2026-06-24_yt_slow-down-ai-software-engineering.md
 ---
 
 # Gergely Orosz
@@ -66,6 +69,27 @@ The podcast distinguishes itself through:
 - **Practitioner interviews** with engineering leaders who are actively implementing, not just theorizing
 - **Engineering culture focus**: leveling systems, hiring practices, Wi-Fi infrastructure at company events (the "Chief Wi-Fi Officer" story about Thawar)
 - **Data-backed analysis**: Uses the newsletter to provide quantitative context for qualitative interviews
+
+## Conference Talks
+
+### Slow Down to Speed Up: AI and Software Engineering (Craft Conference 2026, Budapest, June 23)
+
+A 52-minute keynote (raw transcript: `raw/articles/2026-06-24_yt_slow-down-ai-software-engineering.md`) that used a then-just-breaking Meta/Instagram incident as a case study for what Orosz calls **AI cycles / "AI psychosis"** — self-inflicted organizational damage from AI adoption pressure. Key content:
+
+**The Instagram account-takeover exploit (June 2026):**
+- Two-step "zero-password reset": attacker fakes location via VPN, asks Meta AI to send an account-recovery verification code to an email the attacker owns. No second factor required — "there was no step two."
+- Orosz's insider reporting: the code that caused the SEV (outage/security incident) was **AI-written and reviewed by AI, not humans** at Meta; Meta's CISO resigned mid-investigation; ~40% of the Instagram trust & safety team (London) was reassigned to manual AI data labeling (in Alexander Wang's xScaleI org) with <1 week notice; ~5,000 Meta developers now do manual AI labeling ("a running joke inside Meta that this is bigger than OpenAI").
+
+**Token maxing at Meta:**
+- Engineers were measured on AI token usage; a leaderboard offered statuses like "session immortal," "token," and "legend" (killed April 2026). AI usage informally factored into performance evaluation, so engineers inflated token counts — including using AI for everything after Meta announced layoffs (10%, ~8,000 people, May 20) out of fear of low token numbers.
+- Connects directly to the [[concepts/tokenmaxxing|tokenmaxxing]] spectrum: untasteful, metric-gamed adoption instead of quality-focused use.
+
+**Prescription — "slow down to speed up":**
+- Cap daily agent usage to what you can **review or verify**; verification systems (like OpenClaw creator Peter Steinberger's) beat reading every line.
+- Tech debt is now cheap to remove — "be the chief tech debt remover on your team."
+- Experiment with agent workflows (e.g., one-extra-agent rule: "if I'm coding, agent plans; if they're coding, I'm reviewing"), but don't outsource learning — "the bug gets fixed, but your mental model does not."
+- Design patterns are "back": they keep agents in check.
+- Job-market data (Indeed): software engineering postings +20% US/UK, -13% Germany, -10% France, flat Canada; AI engineering ≈10% of software engineering hiring at top US tech companies.
 
 ## See Also
 

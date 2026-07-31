@@ -316,7 +316,7 @@
 - [[entities/geohot-github-io]] — George Hotz (geohot)
 - [[entities/george-hotz]] — George Hotz; enriched with "Liminality" blog post — Fullmetal Alchemist metaphor, liminal state of AI, Cruise movie control metaphor (June 24)
 - [[entities/georgi-gerganov]] — Georgi Gerganov
-- [[entities/gergely-orosz]] — Gergely Orosz
+- [[entities/gergely-orosz]] — Gergely Orosz; enriched with Craft Conference 2026 "Slow Down to Speed Up" talk (Meta tokenmaxxing case study, Instagram AI exploit, June 23)
 - [[entities/gian-segato]] — Gian Segato
 - [[entities/giles-thomas]] — Giles Thomas; enriched with Part 34b (JAX GPT-2 Small) and Poppy training box hardware (July 9)
 - [[entities/gilesthomas]] — Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technica...
@@ -2572,7 +2572,7 @@
 - [[concepts/semantic-ids]] — Semantic IDs
 - [[concepts/semantic-kernel]] — Microsoft open-source SDK for integrating LLMs into apps; enterprise agent framework with .NET/Python/Java support
 - [[concepts/sentry]] — sentry
-- [[concepts/separation-of-duties]] — Separation of Duties
+- [[concepts/separation-of-duties]] — Separation of Duties (worker/evaluator split; canonical page: [[concepts/security-and-governance/agent-separation-of-duties]])
 - [[concepts/serializability]] — Serializability — Structured Output for AI Systems
 - [[concepts/serialization-llm-structured-output-ai-engineering]] — Serialization Llm Structured Output Ai Engineering
 - [[concepts/serialization-structured-output-schema-generation-python-pydantic]] — Serialization Structured Output Schema Generation Python Pydantic

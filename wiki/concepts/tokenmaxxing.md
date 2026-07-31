@@ -2,7 +2,7 @@
 title: "Tasteful Tokenmaxxing — Quality-Over-Quantity AI Adoption"
 type: concept
 created: 2026-04-23
-updated: 2026-05-29
+updated: 2026-07-31
 tags:
   - ai-agents
   - optimization
@@ -13,6 +13,7 @@ aliases: ["tokenmaxxing", "tasteful-tokenmaxxing"]
 sources:
   - https://substack.com/app-link/post?publication_id=1084089&post_id=195193203
   - raw/articles/garymarcus.substack.com--p-breaking-bad-news-for-three-of-the--1abe3375.md
+  - raw/articles/2026-06-24_yt_slow-down-ai-software-engineering.md
 ---
 
 # Tasteful Tokenmaxxing — Quality-Over-Quantity AI Adoption
@@ -75,6 +76,16 @@ The enterprise backlash introduces a **new dimension** to the [[concepts/tokenma
 | IPO market pressure | Reduces capital available for AI infrastructure investment |
 
 This creates a **feedback loop**: tokenmaxxing drives short-term revenue for AI companies → enterprise realizes poor ROI → budgets tighten → tokenmaxxing declines → AI company revenues waver → further pressure to demonstrate value.
+
+## Meta Case Study: Tokenmaxxing Under Performance Pressure (June 2026)
+
+Gergely Orosz's Craft Conference 2026 keynote ("Slow Down to Speed Up") documented the **untasteful end of the spectrum at Meta** — token usage as a gamed metric rather than a quality lever:
+
+- **Token leaderboard**: Meta ran an internal leaderboard with statuses like "session immortal," "token," and "legend" (killed April 2026). AI usage informally factored into performance evaluation, so engineers inflated token counts — "use AI for anything and everything," including having AI read documentation instead of reading it themselves.
+- **Layoff amplification**: When Meta announced 10% layoffs (~8,000 people, May 20) a month in advance, remaining engineers burned more tokens out of fear that low usage would mark them for termination — inflating metrics instead of doing focused work.
+- **Consequence**: the June 2026 Instagram account-takeover exploit (a "zero-password reset" via Meta AI account recovery) traced back to AI-written code that was reviewed by AI, not humans. Orosz calls the broader pattern **AI cycles / "AI psychosis"** — organizations prioritizing model-building (e.g., reassigning ~40% of the Instagram trust & safety team to manual AI data labeling) over engineering fundamentals.
+
+**Lesson for the spectrum**: tokenmaxxing becomes actively harmful when (a) token count is used as a proxy for productivity, (b) usage is incentivized with leaderboards/status, and (c) human review gates are removed. These are exactly the conditions "tasteful" tokenmaxxing rejects — depth, verification, and human quality gates.
 
 ### Related Concepts
 - [[entities/gary-marcus]] — Principal critic of tokenmaxxing sustainability
