@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-07-31T10:36:33.745445+00:00",
+  "triage_run_id": "20260731T102556Z",
+  "source": "newsletter",
+  "summary_ja": "6ニュースレターを処理。GPT-5.6の大幅値下げ(Luna 80%減の$0.20/$1.20、Terra 20%減の$2/$12、Sol Fast mode 2.5x/2x)とSol自身による配信最適化(カーネル自律書き換えでコスト20%減、ドラフトモデル再設計で効率15%+向上)が最大テーマ: concepts/gpt/gpt-5-6.md の価格表更新と concepts/recursive-self-improvement.md への実証事例追記が最優先。ChatGPT週間10億ユーザー(entities/openai.md)、オントロジー再興論(agent-ontology.md)、Graph Engineering体系化(multi-agents/orchestration)も要追記。True Positive Weeklyは純リンクダイジェストでスキップ。",
+  "decisions": [
+    {
+      "item_id": "<20260730.173401.3941d38b@mta30>-2",
+      "source": "newsletter",
+      "source_name": "Superintel+ (Kim Isenberg, getsuperintel.site)",
+      "title": "🔁 GPT-5.6 Just Made Itself 15% More Efficient",
+      "url": "https://getsuperintel.site/p/gpt-5-6-just-made-itself-15-more-efficient",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-gpt-5-6-just-made-itself-15-more-efficient.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ GPT-5.6自己最適化(20%配信コスト削減・15%+トークン効率)はAINews take#1と同一テーマで重複。本誌独自情報: OpenAIの7月ARRがQ2全体を上回る(CNBC)、10万アカデミック研究者への無料フロンティアアクセス、Altmanが上院議員にrogue-agent事件をブリーフ、InSilico rentosertib(初のAI設計薬)がPhase III到達。これらは entities/openai.md の参考追記と events/openai-huggingface-incident-july-2026.md への補足に使える。",
+      "candidate_wiki_path": "entities/openai.md",
+      "body_excerpt": "# Newsletter Digest - 2026-07-30\n**Subject:** 🔁 GPT-5.6 Just Made Itself 15% More Efficient\n**Collected:** 2026-07-31T10:25:52.218441+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/5e3e31c7a072e46a8b47248b38edc4550c1cb71363947733c7c4cf0425ea2367ceb3e139c22290a"
+    },
+    {
+      "item_id": "<20260730191323.3.790c543871286dc7@mg2.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly #171 (Andriy Burkov / AI Weekly)",
+      "title": "True Positive Weekly #171",
+      "url": "https://aiweekly.substack.com/p/true-positive-weekly-171",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-true-positive-weekly-171.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 純粋リンクダイジェスト(本文: 見出し8件+1行説明のみで編集分析なし)。Kimi K3 weights解放は concepts/kimi-k3.md で既に詳細カバー済み(7/27リリース、1.56TB、HF掲載)。SynthID・AI detector・Web再設計などは一般トピックでwiki優先度低。curator付加価値なしのためスキップ(純リンクダイジェストパターン)。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-30\n**Subject:** True Positive Weekly #171\n**Collected:** 2026-07-31T10:25:53.335649+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
+    },
+    {
+      "item_id": "<20260730111755.3.b78d996ca9b62dc4@mg-d0.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "Latent.Space (swyx) — Richard MacManus",
+      "title": "Link 1/3-20 (UI noise)",
+      "url": "https://substack.com/redirect/2/eyJlIj...xhCw?",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-ontologies-are-so-back-why-ai-agents-are-reviving-the-semantic-web.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UIノイズ(リダイレクト2/OAuth・@ricmacプロフィール・like/comment/share・app-store・UUID redirect計18件)。実コンテンツはLink 2の投稿本文(take#3)に全て含まれる。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-30\n**Subject:** Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web\n**Collected:** 2026-07-31T10:25:49.915774+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1f"
+    },
+    {
+      "item_id": "<20260730130254.3.0cd996fd40627107@mg-d1.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Link 1/3-20 (UI noise)",
+      "url": "https://substack.com/redirect/2/eyJlIj...1-IE?",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-1-billion-chatgpt-users.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UIノイズ(OAuth redirect・like/comment/share・app-store・UUID redirect計18件)。CuratedリンクはLink 2投稿本文(take#2)に含まれ、個々の外部記事(Codex/t3/Grok builder/Pangram 4等)は紹介文のみでwiki優先度低。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-30\n**Subject:** 1 Billion ChatGPT users\n**Collected:** 2026-07-31T10:25:51.105024+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwt"
+    },
+    {
+      "item_id": "<20260730191323.3.790c543871286dc7@mg2.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly #171 (Andriy Burkov / AI Weekly)",
+      "title": "Link 1-2/4-20 (UI noise)",
+      "url": "https://substack.com/redirect/2/eyJlIj...Em5E?",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-true-positive-weekly-171.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UIノイズ(OAuth redirect・@aiweeklyプロフィール・like/comment/share・app-store・UUID redirect計18件)。ダイジェスト自体がskip判定のため解決不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-30\n**Subject:** True Positive Weekly #171\n**Collected:** 2026-07-31T10:25:53.335649+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
+    },
+    {
+      "item_id": "<20260730230752.3.a7d55a5f7a2b4628@mg-d1.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "AI by Aakash",
+      "title": "Link 1/3-20 (UI noise)",
+      "url": "https://substack.com/redirect/2/eyJlIj...gG-o?",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-graphs.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UIノイズ(OAuth redirect・like/comment/share・app-store・UUID redirect計18件)。実コンテンツはLink 2投稿本文(take#4)に全て含まれる。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-30\n**Subject:** Graphs.\n**Collected:** 2026-07-31T10:25:54.471880+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYWlieWFha2FzaC5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZSZy"
+    },
+    {
+      "item_id": "<20260730.173401.3941d38b@mta30>-1",
+      "source": "newsletter",
+      "source_name": "Superintel+ (Kim Isenberg, getsuperintel.site)",
+      "title": "Link 1/3-20 (tracking/UI noise)",
+      "url": "https://link.mail.beehiiv.com/v2/c/5e3e31c7a072e46a8b47248b38edc4550c1cb71363947733c7c4cf0425ea2367ceb3e139c22290ac5e79e4d0407b5cedb5398e5766a53fe32657c1faf724403494b21f9500d4d434e8314d3ed94b76fe2eaa19674401f6677bda4c2a495dad5821b92409ed473780a0f0002a9cfe43494706b819b86bef7a0a68c1f8290929ec43bdf67fd6dd34caf5f15f38e54040d554655bc6c302661e1c3dc406875072c4/680c42725a513aeb",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-30-gpt-5-6-just-made-itself-15-more-efficient.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ beehiivトラッキング/UIノイズ。Link 1はCloudflare challenge('Just a moment...')、Link 3以降はsponsor(goldcast/gladly)・SNSフォロー(x.com/getsuperintel等)・購読フォーム。主記事(Link 2, reference#5)と重複するため解決不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-30\n**Subject:** 🔁 GPT-5.6 Just Made Itself 15% More Efficient\n**Collected:** 2026-07-31T10:25:52.218441+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/5e3e31c7a072e46a8b47248b38edc4550c1cb71363947733c7c4cf0425ea2367ceb3e139c22290a"
+    },
+    {
+      "item_id": "<20260731044054.3.8a6f659c673394d2@mg-d0.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "AINews (swyx/Latent.Space)",
+      "title": "Link 1/3-20 (UI noise)",
+      "url": "https://substack.com/redirect/2/eyJlIj...wEhM?",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UIノイズ(OAuth redirect・like/comment/share・app-store・UUID redirect計18件)。実コンテンツはLink 2投稿本文(take#1)に全て含まれる。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-07-31\n**Subject:** [AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursi…\n**Collected:** 2026-07-31T10:25:55.619498+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0"
+    }
+  ]
+}

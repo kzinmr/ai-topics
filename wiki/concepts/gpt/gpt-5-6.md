@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6 (Sol / Terra / Luna)"
 created: 2026-06-27
-updated: 2026-07-15
+updated: 2026-07-31
 type: concept
 tags:
   - model
@@ -72,6 +72,8 @@ OpenAI claimed Sol is its strongest model yet for cybersecurity, improving the p
 | Luna | $1 | $6 |
 
 Sol is above Claude Opus on output cost but far below Mythos. Terra and Luna push down the cost frontier.
+
+*Launch prices above. As of July 30, 2026: Luna reduced 80% to $0.20/$1.20, Terra reduced 20% — see [Price-Performance Frontier (Jul 30, 2026)](#price-performance-frontier-jul-30-2026).*
 
 ## Prompt Caching
 
@@ -153,6 +155,18 @@ The Codex/Codex Work team rolled out multiple fixes for GPT-5.6 Sol after usage 
 
 ### Competitive Impact on Anthropic
 The aggressive availability strategy has put pressure on [[entities/fable]], where Anthropic continues to restrict Fable 5 access on paid plans due to compute constraints. Simon Willison noted (Jul 12, 2026) that "OpenAI are winning users simply due to the uncertainty that surrounds Fable access."
+
+### Price-Performance Frontier (Jul 30, 2026)
+
+On July 30, 2026 OpenAI announced a major price reduction for the GPT-5.6 family, credited in part to efficiency gains produced by GPT-5.6 Sol itself:
+
+- **GPT-5.6 Luna: 80% price drop** — from $1/$6 to **$0.20/$1.20** per 1M input/output tokens. At this price Luna is cheaper than Google's Gemini 3.1 Flash-Lite and now 1/5th of Anthropic Claude Haiku 4.5's input price ($1/$5), where it previously cost the same
+- **GPT-5.6 Terra: 20% reduction** (from $2.50/$15)
+- **Sol-driven inference optimization**: OpenAI described using GPT-5.6 Sol to optimize load balancing and the model's forward pass itself — finding work that could be precomputed, avoided, or parallelized, and (via Codex) autonomously rewriting production kernels in **Triton** and **Gluon**, two open-source GPU programming languages maintained by OpenAI. Combined with broader kernel advancements, these efforts reduced end-to-end serving costs by **20%**
+
+Simon Willison noted the Luna drop "completely changes the landscape with respect to lower priced models" and switched his `agent.datasette.io` demo from Gemini 3.1 Flash-Lite to Luna.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-30-luna-price-drop--b8afb142.md]]
 
 ## Practical Usage Patterns
 

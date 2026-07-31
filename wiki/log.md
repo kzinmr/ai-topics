@@ -1,3 +1,20 @@
+## [2026-07-31] blog-wiki-ingest | 1 take + 9 references processed, 6 pages updated
+
+**Recovery**: blog-triage output render failed ("failed to parse JSON response"); recovered from checkpoint `/opt/data/.hermes/cron/data/blog_ingest/triage_latest.json` (20260731T102328Z, valid JSON, 20 decisions).
+
+### Take (1)
+- **concepts/gpt/gpt-5-6.md** updated: Added "Price-Performance Frontier (Jul 30, 2026)" — GPT-5.6 Luna 80% price drop ($1/$6 → $0.20/$1.20), Terra 20% reduction, Sol-driven forward-pass/kernel optimization (Triton/Gluon via Codex) cutting serving costs 20%. Pricing table annotated as launch prices. (raw: simonwillison.net--2026-jul-30-luna-price-drop)
+
+### References (9 → page enrichments)
+- **entities/simon-willison.md** (+4 entries): Anthropic cybersecurity eval incidents quote-post (141,006 runs / 6 compromised runs / PyPI malware upload) with Simon's "spectacularly risky business" commentary; llm 0.32rc1 (content-addressable hash IDs, fork trees); llm 0.32rc2 (default model → GPT-5.6 Luna, `llm openai endpoint`); llm-chat-completions-server 0.1a0 (localhost OpenAI-compatible endpoint, written by GPT-5.6 Sol)
+- **entities/gilesthomas.md** (+2 entries): GPT-2 weights series Part 2 (eval bugfix: state_dict() references, 5-batch test split) and Part 3 (overtraining experiments: 6.4B tokens → loss 3.325897 beats OpenAI small, conclusion "didn't help much")
+- **entities/seangoedecke-com.md** (+1 entry): "AI models need moral support" — refusal problem framing (self-belief limits, DeepSeek-R1 Tower of Hanoi 8-disk refusal, abliterated Qwen, virtuous cycle thesis)
+- **entities/ibrahim-diallo.md** (+1 entry): "BI Slop" — Business Intelligence Slop concept (mandatory AI training, hallucinated meeting action items, code-review rigor for business decisions)
+- **concepts/ai-regulation-2026.md** (+1 entry): AB-2564 surveillance pricing ban (California) — scope, carve-outs, SF Chamber of Commerce stall, EFF rebuttal, Cory Doctorow framing (adjacent regulatory dimension)
+
+### Skips (10)
+Non-AI (plants, lightbulbs, Nintendo lawsuit, TV sticks, political journalism), already-covered (berthub AI-for-decision-makers fully in entities/berthub-eu.md, Gary Marcus joke post, Bruce Schneier quote), unsaved_articles (WSJ paywall Zuckerberg op-ed). All archived: wiki/raw/archived/triage/blog/2026-07-31_20260731T102328Z.json (19 items).
+
 ## [2026-07-31] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed (all covered/archived or non-AI)
 
 **Batch**: 20260731T100020Z (raw_backlog_collect.py --sort ai-hint --limit 5)

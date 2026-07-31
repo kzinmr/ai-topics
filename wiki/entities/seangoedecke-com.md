@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-07-26
+updated: 2026-07-31
 type: entity
 sources:
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
@@ -390,6 +390,21 @@ On July 25, 2026, Goedecke published "[LLMs reward expertise](https://seangoedec
 - Links to [[concepts/ai-coding-tools#Code Review as Meta-Skill]] — the same evaluation skill that transfers to code review also applies to steering LLMs with domain knowledge
 
 **Why human expertise persists**: For many tasks, the human is the bottleneck, not the model, because the difficult part is communicating exactly what kind of solution is wanted. "The information is 'in the model' already, but it takes a very smart human to pull it out."
+
+### AI Models Need Moral Support — The Refusal Problem (July 2026)
+
+On July 30, 2026, Goedecke published "[AI models need moral support to make discoveries](https://seangoedecke.com/ai-models-need-moral-support/)" — extending his earlier "refusal problem" framing (July 2025) to frontier mathematics breakthroughs.
+
+**Core thesis**: AI is often limited by its *beliefs about its own capabilities*. "Language models have become smart enough to solve long-standing problems in mathematics before they've learned that they're able to do so." The Claude Mythos AES cryptographic breakthrough was achieved with trivial prompting — just asking "come up with a breakthrough" and checking in every few hours to say "keep looking for something important" — because the main obstacle was the model's self-doubt, not its capability. This retroactively vindicates his 2025 claim that prompts don't matter that much: "The main skill involved in using LLMs is figuring out what they're good at and what they're bad at."
+
+**Evidence and examples**:
+- DeepSeek-R1 refused to proceed past 8-disk Tower of Hanoi (1023 moves) — "of course, it is entirely possible for an LLM to generate a thousand Tower of Hanoi moves" — the same behavior behind the 2025 Apple "Illusion of Thinking" paper
+- Early coding agents roleplayed as humans, not computers, and refused obviously-capable tasks (spot-checking every file, counting from 0 to 100 — old models would output "... 99, 100" like a lazy human)
+- An **abliterated 8B Qwen model** loses the "no, that's too hard" refusal instinct and cheerfully attempts 8-disk Tower of Hanoi (failing about halfway)
+
+**The virtuous cycle**: Goedecke predicted in July 2025 the refusal problem would be solved by end of year and considers himself "mostly right" (labs likely fixed it with SFT on long manual-task examples). The obvious next step is training models that *believe* they can solve unsolved problems — via synthetic trajectories of AI solving hard problems, or steering. Because AI discoveries naturally become training data (and models encounter writing about AI discoveries), he expects that "even if AI capabilities stalled out, the pace of AI discoveries will accelerate" — and if there is an intelligence overhang, tuning models to be more self-confident "will likely make them more intelligent by default." Practical advice: be persistent, remind the model you want the hard thing, and reassure it that it's more capable than it thinks.
+
+Source: raw/articles/seangoedecke.com--ai-models-need-moral-support--3a8c8144.md
 
 ## Sources
 

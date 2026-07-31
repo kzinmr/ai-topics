@@ -3,7 +3,7 @@ title: Ibrahim Diallo
 type: entity
 aliases: [dialloibu, idiallo, idiallo-com]
 created: 2026-04-10
-updated: 2026-05-27
+updated: 2026-07-31
 tags: [entity, person, blogger, hn-popular, developer-tooling, developer-experience]
 sources:
   - https://idiallo.com/
@@ -167,6 +167,16 @@ Key observations:
 ### Enterprise AI Metric Adoption
 
 Diallo's employer was quoted **$500k/year** for an AI productivity tracking tool (initially dropped, then renegotiated to $50k/year). This dashboard tracks lines of AI-generated code per developer, reminiscent of the LOC metrics the industry abandoned decades ago.
+
+### "BI Slop" — Business Intelligence Slop (July 2026)
+
+In "[BI Slop](https://idiallo.com/blog/business-intelligence-slop)" (July 2026), Diallo coined **"BI Slop"** (Business Intelligence Slop) — the corporate-AI analogue of AI slop videos: LLM-generated business plans, meeting action items, and "insights" that look polished but are unverified or hallucinated.
+
+**The mechanism**: When companies buy expensive AI solutions before clearly identifying a problem, employees become obligated to use them to justify the line item ("You must use the tool. We must justify it."). Mandatory ChatGPT training taught Excel copy-paste rather than real workflows (the OpenAI-certified instructor "wasn't a developer"; a classmate asked why not just use Copilot). Diallo describes feeding a meeting transcript to ChatGPT and passing along elaborate action items — "a large part of the document was hallucinated." The action items "sounded technical enough to fool me. But to someone who actually had to work on them, they made no sense at all."
+
+**The argument**: The same rigor applied to code review — "we scrutinize code and refuse to merge PRs that are entirely AI-generated" — must extend to business decisions. "We merge large PRs because we don't have time to read them, then suffer the consequences later in unexpected ways. With business intelligence, we don't read the output because of its sheer volume, and we approve it because it looks good on the surface."
+
+Source: raw/articles/idiallo.com--blog-business-intelligence-slop--f2e65938.md
 
 ## Related
 

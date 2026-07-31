@@ -2,7 +2,7 @@
 title: "AI Regulation (2026)"
 type: concept
 created: 2026-04-30
-updated: 2026-07-14
+updated: 2026-07-31
 tags:
   - concept
   - regulation
@@ -65,6 +65,14 @@ The pace is accelerating dramatically. The most active areas: generative AI regu
 #### California AI Transparency Act (AB 1064)
 - Requires generative AI systems with >1M monthly users to provide free detection tools
 - Labeling and watermarking requirements for AI-generated content
+
+#### AB-2564 — Surveillance Pricing Ban (July 2026)
+- **Status:** Passed California State Assembly; pending action as of July 2026
+- **Scope:** Bans "surveillance pricing" — charging a customized price to a specific consumer or group based, in whole or in part, on personally identifiable information collected through electronic surveillance
+- **Design:** An easily evaluated test for surveillance pricing, with three carve-outs: higher rates when servicing a customer genuinely costs more; retention discounts for customers who cancel; and discounts based on criteria anyone can meet (early-bird specials), broad group membership (seniors), or loyalty-program participation
+- **Context:** Backed by EFF and Consumers Union. The San Francisco Board of Supervisors' supporting resolution was stalled by a San Francisco Chamber of Commerce opposition letter; EFF rebutted the Chamber's objections (claims that the ban would end legitimate discounting) in a letter to the Supervisors — "privacy is a human right, and the idea that you should have to give up your privacy to get a fair price is just a fancy way of saying that privacy should be the exclusive preserve of people who can afford to pay more"
+- **Cory Doctorow's framing:** "With surveillance pricing, businesses have finally found something AI can do way, way, way better than people: price gouging." AI clustering of behavioral data plus automated price experiments discovers each group's maximum markup — citing FTC research, Instacart's ~1/3 markups, and Delta's 2025 backtrack. Source: [[raw/articles/pluralistic.net--2026-07-30-pay-for-privacy--624b023a.md]]
+- **Adjacent dimension:** Consumer-protection / price-discrimination law intersecting with AI — distinct from frontier-model transparency regimes (SB 53, AB 1064) but directly shaping the AI deployment environment
 
 ### New York: RAISE Act
 - **Status:** Signed December 2025, amended early 2026
