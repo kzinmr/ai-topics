@@ -19,6 +19,7 @@ sources:
   - raw/articles/2026-06-03_simonwillison_uber-caps-ai-tool-costs.md
   - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-1-glm-5-2--20d7e445.md
   - raw/articles/wheresyoured.at--let-ai-burn--bdeb31fe.md
+  - raw/articles/2026-07-30_andrewho03_bearish-frontier-lab-valuations.md
 ---
 
 # AI Industry Economics — The June 2026 Financial Reckoning
@@ -222,6 +223,40 @@ Zitron argues forcefully that the AI industry must not be bailed out:
 
 OpenAI and Anthropic are "systemically irrelevant" compared to the 2008 financial system — they have limited debt, and their failure would not freeze the payments system or commercial paper market. Even Sam Altman's floated idea of giving 5% of OpenAI to the US government (a "sovereign AI fund") would only cover ~$42 billion — less than OpenAI's 2026 compute spend, and a fraction of the $852 billion OpenAI projects it will burn through by 2030.
 
+## Andrew Ho: "Bearish on Frontier Lab Valuations" (July 2026)
+
+On July 30, 2026, [[entities/andrew-ho|Andrew Ho]] — a former [[entities/openai|OpenAI]] employee — published a widely-engaged Note Tweet (2,800 bookmarks, 1.19M impressions) articulating structural bearishness on frontier lab valuations. The post stands out for combining financial modeling with Hayekian economic theory.
+
+### The Training Cost Treadmill
+
+Ho's central argument is that frontier labs face a "profoundly punishing dynamic" where training costs grow faster than revenue:
+
+> If OpenAI had paused model development last year, there would no longer be any point in paying GPT-5 API prices when you can just use Qwen or Kimi instead for much cheaper.
+
+Competition from runner-up firms forces continuous investment in next-generation models. At any given point, the amount invested in the next model is "dramatically higher" than current revenue, because even as revenue grows with better capabilities, future training costs grow proportionally.
+
+### The $1T Valuation Math
+
+A $1T valuation would require $100-200B in annual revenue assuming ~80% gross margin and a 20x earnings multiple — but **only if labs did nothing but serve inference**. The reality of continuous training R&D makes this math impossible.
+
+### Distillation Claims Are Overblown
+
+Frontier labs claim they can distill leading models to compete at lower intelligence tiers. Ho argues this makes no sense because "the revenue numbers involved are far too low when taking into consideration the rather low margin of such inference."
+
+### Multi-Decade Timelines
+
+Drawing on [[entities/epoch-ai|Epoch AI's research on explosive growth]], Ho argues that even if AI agents eventually drive explosive economic growth, the timeline will be "much longer (multi-decade)" than current valuations assume. It is "not clear that the frontier labs will be able to operate unprofitably for so long."
+
+### The Hayekian Diffusion Problem
+
+Ho makes a distinctive theoretical argument: technological diffusion is slow not because of user adoption barriers, but because of the **"hard problem of economic calculation"** — the Hayekian notion that the price system gradually promotes efficient resource allocation in ways that cannot be simulated through central planning.
+
+Even if current capability levels were frozen, Ho argues "it would take well over two decades to fully integrate LLMs into our lives." This reduces labs' prospects for finding profitable applications comparable to coding agents, "which seems to have been a somewhat lucky discovery by Anthropic to begin with."
+
+### Position in the Discourse
+
+Ho's analysis is notable as an **ex-lab employee articulating public bearishness** — acknowledging this is "talking against my own book." The post quotes [[entities/dwarkesh-patel|Dwarkesh Patel]]'s work on compute costs while drawing opposite conclusions, and references his own previous post arguing capabilities growth will be "slower, spikier, and more data-limited than people currently assume."
+
 ## Related Pages
 
 - [[concepts/ai-industry-financial-sustainability]] — Earlier analysis of the same financial sustainability question
@@ -233,3 +268,5 @@ OpenAI and Anthropic are "systemically irrelevant" compared to the 2008 financia
 - [[entities/uber]] — Uber entity page
 - [[entities/george-hotz]] — George Hotz entity page
 - [[entities/ed-zitron]] — Ed Zitron entity page
+- [[entities/andrew-ho]] — Andrew Ho entity page
+- [[entities/epoch-ai]] — Epoch AI

@@ -3118,3 +3118,15 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 1. `raw/articles/2026-07-28_anthropic_bringing-mcp-2026-07-28-to-claude.md` — Raw article saved
 2. `concepts/model-context-protocol-mcp.md` — Replaced RC section with official release: stateless core, standardized extensions (Apps/Tasks), auth hardening (OAuth 2.0/OIDC), 400M+ monthly SDK downloads, 950+ Claude MCP servers, enterprise-managed auth, observability dashboard, MCP tunnels (research preview)
 3. `concepts/mcp-desktop-extensions.md` — Updated RC→Released section, added Claude features, updated sources
+
+---
+## [2026-07-30] X Note Tweet ingested: Andrew Ho on frontier lab valuations
+
+**Source:** X/Twitter Note Tweet — [@andrewho03/2082786931419812338](https://x.com/andrewho03/status/2082786931419812338)
+**Type:** x_note_tweet (ex-OpenAI employee, 2,800 bookmarks, 1.19M impressions)
+
+**Wiki updates:**
+1. `raw/articles/2026-07-30_andrewho03_bearish-frontier-lab-valuations.md` — Raw article saved (full Note Tweet content via `tweet.fields=note_tweet`)
+2. `entities/andrew-ho.md` — New entity page: ex-OpenAI, bearish on frontier lab valuations, Hayekian economic analysis, training cost treadmill argument, multi-decade AI timeline
+3. `concepts/ai-industry-economics.md` — Added "Bearish on Frontier Lab Valuations" section (training cost treadmill, $1T valuation math, distillation critique, Hayekian diffusion problem, coding agents as lucky discovery). Added source and related page links.
+4. `index.md` — Added Andrew Ho entry in Entities section

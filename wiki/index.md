@@ -48,6 +48,7 @@
 - [[entities/andon-labs]] — Andon Labs
 - [[entities/andrej-karpathy]] — Andrej Karpathy — Founding member of OpenAI, former Sr. Director of AI at Tesla, creator of nanogpt/micrograd; pioneer of LLM wiki patterns
 - [[entities/andrew-chen]] — Andrew Chen
+- [[entities/andrew-ho]] — Andrew Ho; ex-OpenAI, bearish on frontier lab valuations, Hayekian economic analysis of AI industry (Jul 30)
 - [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26)
 - [[entities/andriy-burkov]] — Andriy Burkov
 - [[entities/andy-nguyen]] — Founder & CEO of ByteRover, building an agentic memory layer for coding agents
