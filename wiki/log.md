@@ -3451,3 +3451,18 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 **Key caveats**: broken-link count includes ~1,000+ links to directory `_index` targets (e.g. `[[concepts/local-llm/_index]]`, 52 refs) and links to `raw/` targets that exist on disk but aren't in L2 scan — true unresolved L2→L2 count is lower (~2,000).
 
 Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-05, 07-10, 07-17) removed; index.md Queries section updated.
+
+## [2026-08-01 18:06 UTC] dreaming | Pattern E saturation — full dedup, 0 takes
+- **Checkpoint**: 2026-08-01T180617Z, range 2026-07-25 to 2026-08-01
+- **Articles**: 0 collected (total_articles), 197 recent raw articles on disk
+- **Triage**: 17 candidates screened, all 17 skip (already processed by adjacent pipelines)
+- **Key coverage verified**:
+  - OpenAI ten advances in mathematics → `concepts/ai-mathematics-theorem-proving.md` (active-crawl 2026-08-01)
+  - CTGT distillation censorship transfer → `concepts/post-training/censorship-transfer-distillation.md` (blog-wiki-ingest 2026-07-31)
+  - Fletch git worktrees agent isolation → `concepts/sandbox/git-worktrees-agent-isolation.md` (blog-wiki-ingest 2026-07-31)
+  - Manifest LLM router deprecation → `concepts/coding-agents/model-routing.md` section added (blog-wiki-ingest 2026-08-01)
+  - qm multiplayer agent harness → `concepts/coding-agents/qm-multiplayer-agent-harness.md` (blog-wiki-ingest 2026-08-01)
+  - GPT-5.6 Sol/Terra/Luna Cerebras guide → `concepts/gpt/gpt-5-6.md` source registered
+  - Simon Willison Jul 31 batch → `entities/simon-willison.md` all sources registered
+- **Archive**: `archive_triage.py` returned "All items already archived (dedup)" — 0 new URLs archived
+- **Wiki changes**: None (Takes=0, full saturation)
