@@ -2,6 +2,17 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-01] raw-backlog-ingest (18:00) | duplicate batch detected — no wiki changes, tracking fixed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 18:00, run 20260801T180055Z). Archive: 3 already_archived, 1 null, 1 not_archived.
+- Duplicate of the 14:00 run (20260801T140040Z): the collector re-selected the SAME 5 articles (14:00 run left them status=processing in processed_raw_articles.json). Same failure mode as the 00:00→04:00 cycle.
+- (1) wheresyoured.at "AI's Brokenomics" → skip: already in [[entities/ed-zitron]] (Hyperscaler Political Positioning June 2026 section) + sources; archived.
+- (2) wheresyoured.at "AI Doesn't Have ROI" → skip: already in [[entities/ed-zitron]] (Enterprise Cost Crisis section: Uber $500M token incident, kalopsia thesis) + sources; archived.
+- (3) wheresyoured.at "Let AI Burn" → skip: already in [[entities/ed-zitron]] (Notable Articles table: circular compute spend, $765B+ capex worthless) + sources; archived.
+- (4) walkinglabs "Hands-On Modern RL" → skip: already in [[concepts/post-training/hands-on-modern-rl]] (172-line page created 2026-06-09 from this exact raw article).
+- (5) harvey.ai "Legal Operations Management" → skip: already enriched into [[entities/harvey]] (Legal Operations Management Guide section) by the 14:00 run.
+- No wiki page creation or enrichment needed. Tracking: 5 marked done/skip in processed_raw_articles.json. Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
+
 ## [2026-08-01] watchdog | wiki health digest — all clean, header count corrected
 
 ### Checks
