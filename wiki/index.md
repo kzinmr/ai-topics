@@ -116,7 +116,7 @@
 - [[entities/browse-sh]] — Browse.sh
 - [[entities/browser-use]] — browser-use
 - [[entities/browserbase]] — Browserbase
-- [[entities/brutecat-com]] — Brutecat
+- [[entities/brutecat-com]] — Brutecat — Security researcher; Google Cloud production RCE (StubZero, CVE-2026-2031, $148,337)
 - [[entities/bryan-bischof]] — Bryan Bischof — Theory Ventures data scientist; creator of BBPlot eval-driven chart library; featured on Show Us Your Agent Skills EP 02 (June 27)
 - [[entities/bryan-catanzaro]] — Bryan Catanzaro
 - [[entities/burke-holland]] — Burke Holland — GitHub developer advocate; "harness is all you need (mostly)" thesis; 8-step Copilot workflow — prototype/plan/implement/review (July 29)
@@ -2051,7 +2051,7 @@
 - [[concepts/llm-understanding]] — LLM Understanding Debate
 - [[concepts/llm.nvim]] — llm.nvim
 - [[concepts/llms-eroding-software-careers]] — LLMs Eroding Software Engineering Careers
-- [[concepts/llvm]] — LLVM
+- [[concepts/llvm]] — LLVM — Compiler infrastructure: LLVM IR, MLIR, Flang/Fortran compiler
 - [[concepts/llm-confidence-calibration]] — LLM Confidence and Calibration — Why raw LLM confidence scores are unreliable and alternative approaches (confidence probes, multi-sample consistency, model routing)
 - [[concepts/local-first-architecture]] — Local-First Architecture
 - [[concepts/local-first-computing]] — Local-First Computing

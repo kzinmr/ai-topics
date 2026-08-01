@@ -2,6 +2,12 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-01] raw-backlog-ingest | Enriched LLVM concept (Flang/Fortran) + Brutecat entity (StubZero RCE)
+
+- **[[concepts/llvm]]** (stub -> full, 25 -> ~90 lines): Enriched from LLVM Blog "LLVM Fortran Levels Up: Goodbye flang-new, Hello flang!" (Mar 2025). Added core components (LLVM IR, Clang, MLIR, Flang), Flang timeline table (PGI 1989 -> NVIDIA 2013 -> F18/FIR 2018-19 -> flang rename Oct 2024 -> LLVM 20.1 Mar 2025), HLFIR/SPEC2017/OpenMP technical highlights, Fortran context (80% of ARCHER2 apps), and AI relevance (MLIR underpins accelerator compiler stacks, TensorFlow, torch-mlir; Chris Lattner -> Modular). Registered `compiler` tag in SCHEMA.md. Source: raw/articles/blog.llvm.org--posts-2025-03-11-flang-new--8f37a052.md
+- **[[entities/brutecat-com]]** (enriched): Added "StubZero: Google Cloud Production RCE (CVE-2026-2031)" section - proto definition leak endpoint ("req2proto as a Service"), internal workflow queue leak (Spanner->Salesforce), escalation to arbitrary Stubby RPCs as prod service identity (RCE classification), recurrence 3 months later via GetIntegrationVersion RPC. Payouts: $60k + $75k + $13,337 = $148,337 total. Added 2 Key Discoveries table rows + source. Tags +vulnerability +cybersecurity. Source: raw/articles/brutecat.com--articles-google-cloud-rce--13889f7b.md
+- Batch notes: 5 candidates; paulgraham.com "Being Popular" and danluu.com cache-incidents already fully covered (entity pages had sections + sources); miguelgrinberg SQLAlchemy Ch3 already in References (non-AI ORM tutorial, skip).
+
 ## [2026-08-01] daily-skeleton-enrichment | Enriched LM Studio + Entire to L3, created Thomas Dohmke entity
 
 - **Skeleton backlog saturated**: 0 pages with `status: skeleton` remain in wiki/entities — the daily job continues with L2→L3 enrichment of the thinnest entity pages.

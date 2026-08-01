@@ -2,14 +2,17 @@
 title: Brutecat
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-08-01
 tags:
 - reverse-engineering
+- vulnerability
+- cybersecurity
 aliases:
 - brutecat.com
 - brutecat
 - dddaaa
-sources: []
+sources:
+  - raw/articles/brutecat.com--articles-google-cloud-rce--13889f7b.md
 ---
 
 # Brutecat
@@ -65,11 +68,24 @@ Brutecat's work demonstrates that **large platforms don't fail because their cur
 
 Brutecat builds tools that are **purpose-built for a specific attack surface** rather than general-purpose scanners. The `req2proto` tool, for example, was created to solve one specific problem: reconstructing protobuf definitions from Google's error responses. This reflects a broader philosophy shared with researchers in the Google Project Zero ecosystem — **deep understanding of a single system beats shallow scanning of many systems.**
 
+### StubZero: Google Cloud Production RCE (CVE-2026-2031)
+
+Brutecat's highest-impact finding to date — **remote code execution in Google Cloud production**, awarded a combined **$148,337** across two reports (Dec 2025 and Mar 2026). The chain began with a debugging endpoint on `cloudcrmipfrontend-pa.clients6.google.com` (Google's Integration Platform / CRM-adjacent frontend):
+
+1. **`getProtoDefinition` proto leak ("req2proto as a Service™")** — An endpoint returned the protobuf definitions of *any* message in google3, Google's internal source monorepo, including unrelated services like YouTube InnerTube. Since "everything in Google is proto," this disclosed the request/response body schema of any internal gRPC endpoint — a massive intelligence win for a black-box target (far stronger than his own `req2proto` tool, which could only recover request protos).
+2. **Internal workflow queue leak** — `listQuotaQueue` with `?alt=proto` + the `X-Goog-Encode-Response-If-Executable: base64` header leaked the internal workflow execution queue, including Spanner→Salesforce sync jobs (`WriteToSfdc`) with payload data.
+3. **Escalation to Stubby RPCs / RCE** — By creating draft workflows using internal task types (`GenericStubbyTypedTaskV2`, `PythonTask`), Brutecat found variables were plugged directly into `ExecuteStubbyCallRequest` on the backend, allowing arbitrary **Stubby** (Google's internal RPC framework) calls under the Integration Platform's **prod service identity**. Google classified this as an RCE because access to production via Stubby RPCs exposes a vast attack surface (sensitive user data, code execution), even though per-method `RpcSecurityPolicy` allowlists (LOAS / UberMint / GaiaMint credential rules) gate which RPCs are reachable.
+4. **Recurrence** — Three months after the first fix, the same class of bug resurfaced via the `GetIntegrationVersion` RPC, demonstrating the **incompletely-applied-fix pattern** that recurs throughout Google security research.
+
+Payout breakdown: 1st RCE **$60,000** (P0/S0, Dec 2025) + 2nd RCE **$75,000** ("Compromise of Google Cloud Production Environment" tier) + **$13,337** (additional "Single-Service Privilege Escalation - WRITE"). The chain also leaked an internal workflow queue with live Salesforce sync payloads, and full stack traces via the executions download endpoint (`UberMint verification is disabled` error exposed `RpcSecurityPolicy` internals).
+
 ## Key Discoveries
 
 | Date | Discovery | Bounty | Impact |
 |---|---|---|---|
 | Jun 2025 | Google account recovery phone number brute-forcing | $5,000 | Any Google user's phone number discoverable from display name |
+| Dec 2025 | StubZero 1st RCE — Google Cloud production via Integration Platform proto leak + Stubby calls (CVE-2026-2031) | $60,000 | Arbitrary Stubby RPCs as prod service identity; RCE in Google Cloud production |
+| Mar 2026 | StubZero 2nd RCE — `GetIntegrationVersion` RPC still vulnerable 3 months after fix | $75,000 + $13,337 | Same class of production RCE; total $148,337 across both reports |
 | Mar 2025 | YouTube creator email address disclosure (with Nathan) | $20,000 | De-anonymization of all YouTube creators |
 | Feb 2025 | YouTube user email disclosure via Gaia ID + Pixel Recorder | $10,000 | Any YouTube user's email discoverable |
 | Nov 2024 | "Decoding Google" methodology published | N/A | Framework for reverse-engineering Google's internal APIs |
@@ -85,6 +101,7 @@ Brutecat builds tools that are **purpose-built for a specific attack surface** r
 ## Sources
 
 - [Decoding Google: Converting a Black Box to a White Box](https://brutecat.com/articles/decoding-google) (Nov 2024)
+- [StubZero: $148,337 RCE in Google Cloud Production](https://brutecat.com/articles/google-cloud-rce) (CVE-2026-2031, Dec 2025 / Mar 2026)
 - [Leaking the email of any YouTube user for $10,000](https://brutecat.com/) (Feb 2025)
 - [Disclosing YouTube Creator Emails for a $20k Bounty](https://brutecat.com/) (Mar 2025)
 - [Leaking the phone number of any Google user](https://brutecat.com/) (Jun 2025)
