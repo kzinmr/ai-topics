@@ -2,6 +2,19 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-01] dreaming-wiki-ingest | 5 entity pages enriched (recovered from failed dreaming-group render)
+
+- **Recovery**: dreaming-group JSON render failed at 18:20:51 (output c4a9e8d2f671/2026-08-01_18-20-51.md, 4,461 lines). Triage JSON at cron/data/dreaming/triage_latest.json (22 decisions: 0 takes, 7 references, 15 skips) + output-file theme clusters used as source of truth. Upstream commit fc2829ed (18:12) touched only log.md — enrichment not yet executed.
+- **Deep Sleep verification**: 7 reference candidates verified against entity pages. 5 genuine gaps, 2 marginal (harvey/elevenlabs brief notes).
+- **Enriched**:
+  - [[entities/glean.md]] — 3 new sections: Agent Orchestration Platforms Compared (6-platform table), Comprehensive Guide to IR, UK Work AI Index (12h/week saved, 18% org impact, 38% botsitting)
+  - [[entities/cohere.md]] — EU AI Content Transparency Code signatory (Article 50, EU AI Act, Section 1)
+  - [[entities/simon-willison.md]] — DeepSeek-V4-Flash-0731 body paragraph (304B params, ahead of MiniMax M3, $0.14/M, pelican benchmark)
+  - [[entities/harvey.md]] — Legal Research vs Traditional Tools (3 shifts, 5-question buyer framework, BigLaw Bench/LAB)
+  - [[entities/elevenlabs.md]] — Multilingual Transcription explainer (auto language detection, diarization, keyterm prompting)
+- **Archive**: archive_triage.py dreaming — 22 candidates, 2 new archived, 20 dedup_skipped (saturation: total 2,160 URLs)
+- **Skips**: 15 (13 fully covered by adjacent pipelines + 2 non-AI batches)
+
 ## [2026-08-01] raw-backlog-ingest (18:00) | duplicate batch detected — no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 18:00, run 20260801T180055Z). Archive: 3 already_archived, 1 null, 1 not_archived.

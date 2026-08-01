@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-07-30
+updated: 2026-08-01
 tags:
   - company
   - voice-ai
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-07-01_elevenlabs_procedures.md
   - raw/articles/2026-07-09_elevenlabs_fyxer.md
   - raw/articles/2026-07-17_elevenlabs_interaction-models.md
+  - raw/articles/2026-08-01_elevenlabs_what-is-multilingual-transcription.md
   - raw/articles/2026-07-30_elevenlabs_ai-virtual-receptionist.md
   - raw/articles/2026-07-30_elevenlabs_valiant-finance.md
 ---
@@ -310,6 +311,12 @@ The pipeline achieves a **sub-second end-to-end cycle** with emotional perceptio
 This paradigm shift mirrors the pattern seen in [[entities/warp-terminal]]'s approach to developer-human conversation design, where natural conversational flow replaces rigid turn-based interaction. See also [[concepts/voice-agent-evaluation]] for related evaluation methodology.
 
 Source: raw/articles/2026-07-17_elevenlabs_interaction-models.md
+
+### Multilingual Transcription Explainer (August 2026)
+
+ElevenLabs published an educational guide on multilingual transcription (speech-to-text across more than one language), positioning Scribe v2 as the underlying model. Key technical details: **automatic language detection** (a single audio file can contain multiple languages; the ElevenAPI `language_code` parameter defaults to automatic prediction, and supplying known languages upfront improves performance); **speaker diarization** (assigning transcribed text to the correct speaker); **keyterm prompting** (Scribe v2 supports user-supplied vocabulary like product names/proper nouns in batch systems); and **entity detection** (identifying specific words in transcripts for compliance/security). Accuracy is measured by Word Error Rate (WER), which varies by language. Enterprise drivers: captions/subtitles pipelines, searchable support-call archives, and regulated-industry record-keeping (e.g., financial institutions required to keep call recordings and transcripts). See [[concepts/voice-agent-evaluation]] for related STT metrics.
+
+Source: raw/articles/2026-08-01_elevenlabs_what-is-multilingual-transcription.md
 
 ## Voice Agent Latency Optimization (June 2026)
 

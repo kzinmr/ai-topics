@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-07-01
+updated: 2026-08-01
 tags:
   - company
   - search
@@ -22,6 +22,9 @@ sources:
   - raw/articles/2026-06-05_glean_generative-ai-for-software-engineers-is-more-than-code-completion.md
   - raw/articles/2026-06-22_glean_what-is-no-code-automation.md
   - raw/articles/2026-07-01_glean_introducing-independent-agents.md
+  - raw/articles/2026-08-01_glean_agent-orchestration-platforms-compared.md
+  - raw/articles/2026-08-01_glean_glean-information-retrieval.md
+  - raw/articles/2026-08-01_glean_work-ai-index-uk.md
 |---
 
 # Glean
@@ -159,6 +162,41 @@ Glean launched **Independent Agents**, a new class of AI coworkers built on Glea
 **OnCall Assistant (first agent, beta):** When an alert fires, the agent reads the escalation, pulls relevant context, pursues multiple root-cause theories simultaneously, drafts a fix for review, and tags the right owner. By the time a human steps in, the first ~30 minutes of investigation are already done.
 
 Source: raw/articles/2026-07-01_glean_introducing-independent-agents.md
+
+### Agent Orchestration Platforms Compared (August 2026)
+
+Glean published a six-platform comparison of agent orchestration options, sorting by product type — developer frameworks, no-code automation, and enterprise/cloud platforms — evaluated on seven criteria (workflow control, state/retries/recovery, multi-agent coordination, security/permissions, observability, integrations/openness, ease of use).
+
+| Platform | Type | Position |
+|----------|------|----------|
+| **Glean** | Enterprise platform | Cross-department orchestration over company knowledge; durable execution, branching/looping, routing, approvals, permission-aware context, trace-level debugging |
+| **Gemini Enterprise Agent Platform** (formerly Vertex AI) | Cloud-native | ADK code-first multi-agent dev, Agent Studio, Model Garden (200+ models), A2A + MCP |
+| **LangChain/LangGraph** | Framework + LangSmith platform | Graph-based workflows, durable execution with checkpointing; you supply retrieval/permissions |
+| **CrewAI** | Framework + AMP | Crews/flows, sequential & hierarchical processes, guardrails; open-source core, hyperscaler-agnostic |
+| **Lindy AI** | No-code automation | Visual builder, natural-language agent setup; department-scale |
+| **Microsoft Agent Framework + Foundry** | Framework + cloud | Graph workflow engine, deterministic branching; MCP + A2A, portability outside Microsoft needs testing |
+
+Key thesis: the category has blurred because every vendor uses "agent orchestration," but buyers differ by who owns workflows and where context lives. The article's rough test — "if the job fits one prompt and one tool call, skip the platform; if it needs routing, conditional logic, parallel work, human approval, or a durable record, orchestration belongs in production architecture." Context cites Glean's Work AI Index finding that while 87% use AI at work and 75% save ~11 hours/week, only 13% say their organizations perform significantly better — framing the gap as "an orchestration and governance problem." Also cites 36% of AI sessions failing outright, motivating checkpointing/durable-execution requirements.
+
+### Comprehensive Guide to Information Retrieval (August 2026)
+
+Glean published an educational IR guide explaining retrieval fundamentals as applied across its 250+ connected enterprise applications:
+
+- **IR model families**: Boolean model (logical operators AND/OR/NOT), vector space model (documents/queries as vectors), probabilistic model (relevance as probability), language model (documents as sequences from a generative language model). Modern systems combine sparse keyword retrieval with dense neural retrieval in a hybrid approach.
+- **System components**: document collection, indexing, query processor, ranking algorithm, user interface.
+- **Five enterprise use cases**: document management, customer service (knowledge base retrieval), data analytics, e-discovery (legal), and enterprise search — Glean Search brings these together with permission-aware, cited results across email, documents, tickets, and chat.
+
+### UK Work AI Index — Policy vs Verification Gap (August 2026)
+
+Glean's Work AI Institute surveyed 1,500 UK digital workers as part of a global study of 6,000 (US, UK, Australia). The UK shows the strongest institutional AI environment — 65% have read their organization's AI policy in full (vs 57% US), 73% express confidence in AI at work, and 42% say AI is embedded in core workflows (vs 32% US) — yet the productivity gap persists:
+
+- UK workers report saving **12 hours/week** via AI automation, but only **18%** say gains translated into significantly better organizational performance.
+- **38% of AI-related time** is "botsitting" (supplying context, reviewing outputs, debugging, rerunning prompts) vs 36% producing work.
+- **37%** sometimes ship AI-assisted work they haven't fully checked (36% US); **70%** report at least one "botshitting" behavior; 40% deliver work they couldn't explain; 34% use unapproved tools; 24% blamed AI for their own mistakes.
+- **77%** corrected or redid AI-assisted work in the past month (26% weekly).
+- Half of UK workers say important information isn't accessible through their AI tools; 60% rerun the same prompt across multiple AI tools.
+
+The report argues institutional policy confidence creates a blind spot: policy establishes permission, but verification happens inside the work. It cites the 2025 High Court warning that solicitors/barristers could face contempt proceedings for AI-generated fabricated citations, with the SRA and Bar Standards Board reinforcing that responsibility sits with the lawyer. Recommendation: set review standards by risk, name the accountable person, build checks into workflows, and give approved tools the context they need.
 
 ## Related
 

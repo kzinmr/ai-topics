@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-07-28
+updated: 2026-08-01
 tags:
   - company
   - model
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-06-26_cohere_automating-fork-maintenance-with-ai-agents.md
   - raw/articles/2026-06-26_cohere_cohere-security-ai-agent-north-wiz.md
   - raw/articles/2026-07-11_cohere_hardware-aware-dynamic-speculative-decoding.md
+  - raw/articles/2026-08-01_cohere_cohere-signs-eu-code-of-practice.md
   - raw/articles/2026-07-28_cohere_introducing-north-automations-ai-workflows.md
 ---
 
@@ -105,6 +106,12 @@ On May 20, 2026, Cohere announced two strategic MOUs expanding its sovereign AI 
 > "Enterprises no longer want to rent AI — they want to own it. Our partnerships with Indra Group and Multiverse Computing are designed to deliver true digital sovereignty." — Aidan Gomez, CEO
 
 These MOUs extend Cohere's sovereign AI strategy beyond acquisitions (Reliant AI) into international government-backed partnerships, positioning Cohere as the infrastructure layer for sovereign enterprise AI across Europe and Canada.
+
+### EU AI Content Transparency Code Signatory (July 2026)
+
+Cohere announced it is among the first signatories of the **EU Code of Practice on Transparency of AI-Generated Content**, a voluntary instrument allowing AI providers and deployers to demonstrate compliance with **Article 50 of the EU AI Act** (integrity of Europe's information ecosystem through transparent AI systems and outputs). Cohere signed **Section 1** of the Code, applicable to AI system providers, committing to transparent practices and appropriate marking of AI-generated content.
+
+The signing builds on Cohere's prior commitment to the **EU AI Act Code of Practice on General Purpose AI Models**, and Cohere plans continued engagement with the EU AI Office via the AI Act Advisory Forum and the Code of Practice Signatory Taskforce. The move reflects Cohere's European strategy: serving enterprise and public sector customers while positioning for sovereign AI opportunities across the region.
 
 
 ## Products & Technology

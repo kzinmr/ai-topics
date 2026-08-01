@@ -25,6 +25,7 @@ sources:
   - raw/articles/2026-07-28_harvey_scaling-document-processing-across-harvey.md
   - raw/articles/2026-07-31_harvey_ai-trademark-search.md
   - raw/articles/2026-06-19_harvey_legal-operations-management.md
+  - raw/articles/2026-08-01_harvey_legal-ai-vs-traditional-legal-research.md
 ---
 
 # Harvey
@@ -153,6 +154,19 @@ Harvey's contract review software evolved from single-shot prompts to a full pla
 - Custom workflows reduce 3-4 hour tasks to 3-4 minutes
 
 See also: [[entities/claude]] (ABA Opinion 512 compliance via citation grounding), [[concepts/ai-agent-engineering]] (multi-step decomposition, agent classification/document extraction pipelines).
+
+## Legal Research vs Traditional Tools (July 2026)
+
+Harvey published a comparison of AI-native legal research against traditional database research (keyword databases, Boolean strings, citators), arguing the new layer complements rather than replaces the old. The law and its authoritative databases haven't changed — what changed is the layer that finds and reasons over them.
+
+**Three shifts AI introduces (each with a trade):**
+1. **From keywords to questions** — The researcher asks in plain language ("How do courts in two states treat a liquidated damages clause...?"); the tool handles translation into searches, removing the most skill-dependent step. Trade: less visibility into what was searched, which makes source transparency a trust requirement.
+2. **From result lists to reasoned answers** — Instead of 40 documents to read, the lawyer gets a synthesized answer with reasoning and supporting authority attached. Agentic research extends this: the system runs searches, follows citations, checks treatment, assembles analysis in steps. Caveat: a synthesized answer is only as good as its grounding.
+3. **Grounding, citations, and the hallucination question** — General chatbots can invent authority; purpose-built legal AI retrieves from authoritative legal databases and ties every statement to an openable source. Verification remains the lawyer's job, but tools make it fast because every claim carries its citation.
+
+**Evaluation framework — five questions for a skeptical buyer:** What sources ground the answers (and can you see them)? Is every statement traceable to an opinion or statute you can open? How does the system handle negative treatment? Has performance been measured on realistic legal tasks rather than demos? How is client data handled? Harvey points to its published results on **BigLaw Bench** (realistic legal tasks) and the **Legal Agent Bench** (agentic work) as the standard any platform should meet, and recommends the cheapest test: bring a real matter already researched by your team to the demo and compare the grounded answer.
+
+Source: raw/articles/2026-08-01_harvey_legal-ai-vs-traditional-legal-research.md
 
 ## Agentic Security Operations Center (May 2026)
 

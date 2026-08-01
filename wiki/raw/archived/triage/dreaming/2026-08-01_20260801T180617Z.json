@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-08-01T18:25:46.921297+00:00",
+  "triage_run_id": "20260801T180617Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E ファイルシステムスキャン: 197件のraw articlesから30件をスクリーニング。5件の reference 候補（Glean×3, Cohere EU, Simon Willison DeepSeek V4）を特定。15件は既存wikiで完全カバー済み（skip）。日次パイプライン（active-crawl, newsletter-wiki-ingest, raw-backlog-ingest）が同日の大半の記事を処理済み。Takes=0 — 新規ページ作成なし。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-non-ai-batch-1",
+      "source": "dreaming",
+      "source_name": "Various",
+      "title": "Non-AI blog articles batch (Jul 30-31)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "スキップ: 非AI記事のバッチ。dfarq (Windows NT/Blockbuster), righto.com (IBM 604), filfre.net (Y2K), johndcook (Runge-Kutta), jeffgeerling (25G ethernet), daringfireball (Temu/Talk Show), pluralistic (Just Do It/Pay for Privacy), lcamtuf (Severance), dynomight (Plants), shkspr.mobi (political journalists), maurycyz (tungsten) — すべてAI/LLM relevance なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch of non-AI articles: Windows NT history, IBM hardware, Y2K retrospective, math algorithms, networking hardware, Apple commentary, privacy policy, personal essays."
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch-2",
+      "source": "dreaming",
+      "source_name": "Various",
+      "title": "Non-AI blog articles batch (Jul 31, additional)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "スキップ: 非AI記事。evanhahn.com (monthly notes), nesbitt.io (AI phrasebook — ただし entity page が reference 候補), berthub.eu (AI for decision makers — entity page enrich 候補だが article 自体は一般的), gilesthomas.com (AI use — entity page enrich 候補)。本文の具体的AI主張が薄いためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Blog notes, personal reflections, and general AI commentary from individual bloggers. Low incremental wiki value."
+    }
+  ]
+}
