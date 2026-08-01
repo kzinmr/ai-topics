@@ -2,7 +2,7 @@
 title: Model Routing — Per-Turn Cost Optimization for AI Coding
 type: concept
 created: 2026-05-09
-updated: 2026-06-04
+updated: 2026-08-01
 tags:
   - inference
   - optimization
@@ -103,3 +103,21 @@ Key difference from Prism: Ronin's router uses **explicit keyword matching** aga
 The core insight: Kimi 2.6 matches Sonnet 4.6 on shipped code quality at 1/6 the cost, making Sonnet a poor default in 2026. The router is complementary to Augment Prism — Prism automates the routing that Ronin's config manually encodes.
 
 See full router config and benchmarks: [[concepts/coding-agents/ai-coding-cost-optimization]].
+
+## Manifest's Router Deprecation (July 2026)
+
+In July 2026, **Manifest** published a candid post-mortem on why they deprecated their LLM router. The core argument: **LLM routing complexity may not justify the cost savings**.
+
+### Key Arguments
+- **Routers introduce a second source of failure**: When routing decisions are wrong, debugging is significantly harder — the user sees a bad output but the root cause may be the router, not the model
+- **Model capability convergence**: As frontier models converge in quality and pricing (e.g., GPT-5.6 and DeepSeek V4 Flash price war), the marginal benefit of routing shrinks
+- **Operational overhead**: Maintaining routing rules, updating model selections, and monitoring routing accuracy adds engineering burden that offsets savings
+- **Simplicity wins**: For most teams, picking one model and optimizing prompts/context is higher-leverage than managing a routing layer
+
+### Counterpoint
+The routing landscape is not uniform: Augment Prism (automated, per-turn) and Ronin (static, keyword-based) operate at different levels of complexity than Manifest's deprecated system. The Manifest post-mortem applies most directly to **mid-complexity routers** — those too complex to be static rules but not sophisticated enough to be fully automated with cache-awareness.
+
+### Source
+- Manifest blog: [Why We Deprecated Our LLM Router](https://manifest.build/blog/why-we-deprecated-our-llm-router/)
+- HN discussion: 121 points
+- Raw article: [[raw/articles/2026-07-31_manifest_deprecated-llm-router]]

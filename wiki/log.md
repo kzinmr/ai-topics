@@ -1,3 +1,27 @@
+## [2026-08-01] active-crawl | 3 pages created, 1 page enriched (trending topics crawl)
+
+**Sources:** HN Algolia (15 stories found), X/Twitter (10 items), blogwatcher DB (21 candidates), wiki gap analysis (13 gaps identified)
+
+**Discovery:** Cross-referenced HN trending AI stories (115 candidates filtered to 15) and X/Twitter search results against wiki coverage gaps. 3 pipelines already ran today (newsletter-wiki-ingest, blog-wiki-ingest, X Article ingestion), so focused on net-new topics.
+
+**Created:**
+- `concepts/ai-mathematics-theorem-proving.md` — AI for mathematical theorem proving & TCS; OpenAI Astra 10 advances covering Connes Rigidity, sphere packing, circuit complexity, group theory, cryptography (124 HN pts)
+- `concepts/coding-agents/qm-multiplayer-agent-harness.md` — YC-backed open-source multiplayer agent harness; Slack + web, per-person/per-room scoped workspaces, vendor-independent multi-harness design (584 HN pts)
+- `concepts/pytorch-reference-language.md` — PyTorch team proposal for treating PyTorch programs as a formal reference language for ML computation; fundamental shift in ML compiler design (80 HN pts)
+
+**Enriched:**
+- `concepts/coding-agents/model-routing.md` — Added Manifest router deprecation section (July 2026 post-mortem, 121 HN pts): LLM routing complexity may not justify cost savings; counterpoint analysis vs Augment Prism and Ronin
+
+**Raw articles saved (4):**
+- `raw/articles/2026-08-01_openai_ten-advances-mathematics-tcs.md`
+- `raw/articles/2026-07-31_qm_multiplayer-agent-harness.md`
+- `raw/articles/2026-07-31_manifest_deprecated-llm-router.md`
+- `raw/articles/2026-07-25_pytorch_reference-language.md`
+
+**Skipped (already covered):** Anthropic cybersecurity eval incidents (page created 07-31), Kimi K3 (full page exists), censorship-transfer-distillation (page exists)
+
+**Tag fix:** `science` → `ai-in-science` on ai-mathematics-theorem-proving.md (non-canonical tag)
+
 ## [2026-08-01] newsletter-wiki-ingest | 1 page created, 8 pages enriched (triage 20260801T101509Z recovered from checkpoint)
 
 - Recovered triage JSON from /opt/data/.hermes/cron/data/newsletter/triage_latest.json after newsletter-triage output parse failure (checkpoint survived; standard recovery path)

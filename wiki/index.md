@@ -875,7 +875,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1929 pages)
+## Concepts (1954 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1143,6 +1143,7 @@
 - [[concepts/ai-lab-subscription-vs-api-economics]] — AI Lab Subscription vs API Economics
 - [[concepts/ai-labor-displacement]] — AI Labor Displacement & Economic Impact
 - [[concepts/ai-liability-section-230]] — AI Liability and Section 230
+- [[concepts/ai-mathematics-theorem-proving]] — AI for Mathematical Theorem Proving & TCS — AI systems solving open problems in geometry, complexity, group theory, cryptography; OpenAI Astra 10 advances (124 HN pts)
 - [[concepts/ai-memory-systems]] — AI Memory Systems — Design Philosophy Comparison: Chat vs Coding Agents
 - [[concepts/ai-memory-crisis]] — AI Memory Crisis — HBM demand from AI GPUs driving consumer electronics prices up via memory triopoly (Samsung/SK Hynix/Micron)
 - [[concepts/ai-military]] — AI in Military Wargames
@@ -1423,6 +1424,7 @@
 - [[concepts/coding-agents/open-swe]] — Open SWE
 - [[concepts/coding-agents/pi-autoresearch]] — pi-autoresearch — Generalizing Autoresearch Beyond Model Training
 - [[concepts/coding-agents/protestware-for-coding-agents]] — Protestware for Coding Agents
+- [[concepts/coding-agents/qm-multiplayer-agent-harness]] — qm Multiplayer Agent Harness — YC-backed open-source framework for orchestrating multiple AI agents collaboratively on real work tasks; works in Slack and on the web (584 HN pts)
 - [[concepts/coding-agents/ramp-inspect]] — Ramp Inspect (Background Coding Agent)
 - [[concepts/coding-agents/real-time-rl]] — Real-Time RL — Training on Production User Feedback
 - [[concepts/coding-agents/state-of-agentic-coding]] — Monthly podcast series by Armin Ronacher and Ben Vinegar reflecting on the AI coding agent landscape. 7 episodes (Dec...
@@ -2440,6 +2442,7 @@
 - [[concepts/python-packaging]] — python-packaging
 - [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel)
 - [[concepts/pytorch-fsdp-distributed-training]] — PyTorch FSDP — Distributed Training
+- [[concepts/pytorch-reference-language]] — PyTorch: A Reference Language — Proposal to treat PyTorch programs as a formal reference language for ML computation; fundamental shift in ML compiler design
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
 - [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — Infrastructure Noise in Agentic Coding Evals — OpenAI analysis of SWE-Bench Pro reliability; benchmaxxing, harness variance, private benchmarks
 - [[concepts/quepid]] — Quepid
