@@ -9,9 +9,9 @@ tags:
   - deep-agents
   - state-management
 created: 2026-04-27
-updated: 2026-07-17
+updated: 2026-08-01
 aliases: [LangChain Framework, LangChain AI]
-sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md, raw/articles/2026-04-29_langchain-harness-profiles.md, raw/articles/2026-05-12_langchain-delta-channels.md, raw/articles/2026-05-21_langchain_auth-proxy-langsmith-sandboxes.md, raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md, raw/articles/2026-07-16_langchain_openwiki-0.2-okf.md]
+sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md, raw/articles/2026-04-29_langchain-harness-profiles.md, raw/articles/2026-05-12_langchain-delta-channels.md, raw/articles/2026-05-21_langchain_auth-proxy-langsmith-sandboxes.md, raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md, raw/articles/2026-07-16_langchain_openwiki-0.2-okf.md, raw/newsletters/2026-08-01-ainews-not-much-happened-today.md]
 ---
 
 
@@ -226,6 +226,10 @@ The cross-domain transfer result is particularly notable: a model fine-tuned *on
 - Helping teams build their own evaluator models.
 
 *People: @Vtrivedy10 (LangChain), @jakebroekhuizen (LangChain), @hwchase17 (LangChain), @chahvivi (Fireworks), Yi Su (Fireworks)*
+
+## Ecosystem Map (July 2026)
+
+In July 2026, **Harrison Chase** (@hwchase17) laid out the current LangChain ecosystem map around three pillars — **LangGraph**, **DeepAgents**, and **LangSmith** — emphasizing **standardized internal evals** and **Harbor-based task conversion** (see [[concepts/multi-agents/agent-team-swarm]]). The throughline: evaluation infrastructure is shifting from ad hoc notebooks to reproducible, organization-owned systems, making [[concepts/llm-evaluation]] a first-class, standardized component of agent engineering rather than an afterthought.
 
 ## References
 

@@ -2,7 +2,7 @@
 title: "Google Gemini"
 type: concept
 created: 2026-04-19
-updated: 2026-06-10
+updated: 2026-08-01
 tags:
   - concept
   - google
@@ -16,6 +16,8 @@ related:
   - concepts/inference-speed-development
 sources:
   - raw/articles/2026-06-10_deepmind-model-cards-page.md
+  - raw/newsletters/2026-08-01-ainews-not-much-happened-today.md
+  - raw/newsletters/2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md
   - https://deepmind.google/models/model-cards/
 ---
 
@@ -24,6 +26,10 @@ sources:
 **Gemini** is Google DeepMind's family of multimodal AI models, spanning text, images, video, audio, and code. Originally announced in December 2023, Gemini has evolved through multiple generations to become one of the frontier model families alongside GPT and Claude.
 
 > *"AI has evolved from simply reading text and images to reading the room."* — **Sundar Pichai, CEO, Google & Alphabet**
+
+## Recent Updates — Gemini Drops (July 2026)
+
+In late July 2026, Google's **"Gemini Drops"** update (announced via @GeminiApp) added **Gemini 3.6 Flash** and **Gemini 3.5 Flash-Lite** to the family, alongside a wider Gemini Spark rollout, app integrations, voice support on macOS, and personalized image/avatar features (source: AINews 2026-08-01). Per the Artificial Analysis Intelligence Index v4.1 (Superintel+ chart, 2026-07-31), Gemini 3.6 Flash scores ~**50.1 intelligence index** at ~**$0.50 per task**. Pricing/GA details for the new models are not yet captured in the table below — this is a reference-level note pending a dedicated model page.
 
 ## Frontier Models (June 2026)
 

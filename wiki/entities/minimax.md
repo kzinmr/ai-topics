@@ -1,10 +1,10 @@
 ---
 title: MiniMax
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-08-01
 type: entity
-tags: [entity, company, model, china, open-source, coding-agents]
-sources: [raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md]
+tags: [entity, company, model, china, open-source, coding-agents, video-generation]
+sources: [raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md, raw/newsletters/2026-08-01-ainews-not-much-happened-today.md]
 ---
 
 # MiniMax
@@ -33,6 +33,14 @@ MiniMax competes in China's "AI Tigers" alongside:
 
 The company focuses on multimodal AI and has significant backing from Chinese and international investors.
 
+## H3 Video Model (July 2026)
+
+In July 2026, MiniMax launched **H3**, its first major video generation model, with broad distribution momentum. It went live on [[entities/vercel|Vercel AI Gateway]] with "one `generateVideo[]` away" positioning, and MiniMax promised open weights soon.
+
+H3 propagated rapidly across partners including **fal, Pollo, PixVerse, Leonardo, and OpenArt**. Technically, H3 appears to integrate **low-to-high generation / baked-in super-resolution** rather than stapling on a separate super-resolution (SR) stage.
+
+This marks MiniMax's entry into AI video generation, extending beyond its M-series LLMs (e.g., M2.7) into the [[concepts/ai-video-generation-2026|2026 video generation landscape]].
+
 ## Related Pages
 
 - [[concepts/china-agentic-coding-sprint]]
@@ -40,3 +48,5 @@ The company focuses on multimodal AI and has significant backing from Chinese an
 - [[entities/china-ai-industry]]
 - [[concepts/ai-benchmarks/swe-bench]]
 - [[entities/coding-agents]]
+- [[concepts/ai-video-generation-2026]]
+- [[entities/vercel]]

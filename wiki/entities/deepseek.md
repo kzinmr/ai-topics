@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-07-22
+updated: 2026-08-01
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -22,6 +22,8 @@ sources:
   - https://x.com/MaxForAI/status/2080035349536154073
   - raw/newsletters/2026-05-27-deepswe-makes-coding-agents-sweat.md
   - https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/
+  - raw/newsletters/2026-08-01-ainews-not-much-happened-today.md
+  - raw/newsletters/2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md
 ---
 
 # DeepSeek
@@ -388,6 +390,24 @@ On June 26, 2026, the Wall Street Journal reported that DeepSeek raised **$7.4 b
 - **Competitive Signal**: DeepSeek is no longer just a research lab — it's scaling into a full-stack AI company competing directly with US frontier labs
 - **Geopolitical Dimension**: The funding comes amid US export controls and growing concerns about Chinese AI capabilities. DeepSeek's ability to raise this amount underscores investor confidence in China's AI sector despite regulatory headwinds
 
+
+### V4-Flash-0731 & the July 2026 Price War (Jul 31)
+
+On **July 31, 2026**, DeepSeek launched **DeepSeek-V4-Flash**'s official API in public beta at **$0.14/M input** and **$0.28/M output** tokens, paired with an unusually aggressive **98% cache-hit discount** to **$0.0028/M cached tokens**. DeepSeek claims the upgraded agent capabilities now **surpass V4-Pro-Preview**, the API supports the **OpenAI Responses API format**, and the model is "fully adapted for Codex" — meaning [[entities/openai]]'s own coding agent can be pointed at DeepSeek's endpoint without code changes.
+
+**Architecture (per Artificial Analysis):** still **284B total / 13B active** params, 1M context, text-only, **256 routed experts / 6 active per token**, three reasoning-effort levels, and the DSpark speculative decoding module included. MIT license; open weights landed on Hugging Face the same day (Unsloth quants: ~168GB RAM lossless 4-bit, 110GB 3-bit). Note: [[concepts/deepseek-v4]] (from Simon Willison) lists **304B total / 167GB weights** — both figures are kept here with their sources, as the discrepancy remains unresolved.
+
+**Benchmarks (July 31 launch reporting):**
+- Terminal-Bench: **82.7** (+25.8 from the April preview's 56.9)
+- GDPval-AA v2 Elo: **1189 → 1559**
+- tau-3-Bench Banking: **+8 points**
+- **12% drop in output-token usage**
+- Artificial Analysis index: **40 → 50** (1 point behind GPT-5.6 Luna max at 51)
+- **~60% lower cost per task** on DeepSeek's first-party API
+
+Analysts describe the jump as a **post-training win, not a scaling-law story** — the underlying architecture is unchanged.
+
+**Pricing-war framing (Superintel+):** [[entities/openai]] cut GPT-5.6 Luna prices **80%** ($1/$6 → $0.20/$1.20 per M tokens) on July 30; Terra followed at ~-20%. DeepSeek answered **within a day** at roughly **a quarter of Luna's output price**. Against **Claude Opus 4.8** (Anthropic's frontier model at $5/$25): DeepSeek-V4-Flash comes within 4 points on 5 of 9 benchmarks and within half a point on Agents' Last Exam at ~90x less per output token — though NL2Repo (54.2 vs 69.7) and DSBench-Hard (59.6 vs 71.7) still go to Opus by double digits. V4-Flash speaking the Responses API natively turns switching providers into a **config change**.
 
 ### DeepSeek OCR: Text Compression via Visual Representation (May 2026)
 

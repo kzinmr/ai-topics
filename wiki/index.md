@@ -2421,7 +2421,7 @@
 - [[concepts/prompt-debt]] — Prompt Debt — Drew Breunig's framework for the buildup of fragile natural-language instructions that lock teams to a single model; three-stage spiral (slowing iteration, team incapacitation, model lock-in), proposed solutions via measurement-driven specification and automated prompt optimization (DSPy, GEPA) (June 25)
 - [[concepts/prompt-design]] — Prompt design, instruction fine-tuning, and system prompt engineering.
 - [[concepts/prompt-driven-development]] — Prompt-Driven Development
-- [[concepts/prompt-engineering]] — Prompt Engineering
+- [[concepts/prompt-engineering]] — Prompt Engineering — practice of crafting natural-language instructions for LLMs; July 2026 paradigm shift to demonstration-based interaction (Anthropic Record a skill vs OpenAI Record & Replay), "show, don't tell" (Aug 1)
 - [[concepts/prompt-engineering-resilience-design-patterns]] — Prompt Engineering Resilience Design Patterns
 - [[concepts/prompt-injection]] — Prompt Injection — AI security vulnerability where untrusted input manipulates model behavior by exploiting role confusion and tokenization boundaries (June 23)
 - [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt; enriched with Drew Breunig's "The Problem is Prompt Debt" framework — three-stage spiral, fighting the weights, Goedecke vs Breunig comparison, prevention via DSPy/GEPA (June 23)

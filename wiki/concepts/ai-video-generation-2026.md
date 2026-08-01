@@ -2,7 +2,7 @@
 title: "AI Video Generation (2026)"
 type: concept
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-08-01
 tags:
   - concept
   - multimodal
@@ -21,6 +21,7 @@ sources:
     title: "Seedance 2.0 Coming Soon: Features, Release Date"
   - url: "https://www.alibabacloud.com/blog/alibaba-unveils-wan2-6-series-enabling-everyone-to-star-in-videos_602742"
     title: "Alibaba Unveils Wan2.6 Series"
+  - raw/newsletters/2026-08-01-ainews-not-much-happened-today.md
 ---
 
 # AI Video Generation (2026)
@@ -53,6 +54,14 @@ The AI video generation market has six major commercial models and a growing ope
 - **Weaknesses:** No native 4K, limited global API availability (China-focused)
 - **Best for:** Narrative films, music videos, animation, storyboard-driven production
 - **Key innovation:** Unified audio-video joint generation with multi-shot native capabilities
+
+#### Seedance 2.5 (ByteDance/Dreamina, July 2026)
+- **Status:** Major update to [[entities/bytedance]]'s Seedance line, launched via Dreamina in July 2026; overall creator sentiment highly positive
+- **Max duration:** Native 30-second videos; consistent three-minute videos
+- **References:** Up to 50 multimodal references
+- **Key feature:** Interactive frame editing
+- **Caveats:** Currently 720p in consumer apps, some moderation friction, and instruction-following gaps around audio/music
+- **Context:** Covered alongside [[entities/minimax]]'s H3 video model in the 2026-08-01 AINews issue
 
 #### Kling 3.0 / Kling O3 (Kuaishou)
 - **Status:** Best value at scale

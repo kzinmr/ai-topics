@@ -2,7 +2,7 @@
 title: "Microsoft"
 type: entity
 created: 2026-04-29
-updated: 2026-07-06
+updated: 2026-08-01
 tags:
   - company
   - infrastructure
@@ -12,6 +12,7 @@ sources:
   - raw/newsletters/2026-04-28-openai-breaks-free-from-microsoft.md
   - raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md
   - raw/newsletters/2026-07-05-anthropic-s-fable-freedom-microsoft-s-inside-job-and-figure-s-factory-foothold.md
+  - raw/newsletters/2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md
 ---
 
 # Microsoft
@@ -63,6 +64,15 @@ Microsoft has been building its own in-house AI research division, the **Microso
 
 See [[entities/microsoft-ai-team]] for the full Microsoft AI Team profile.
 
+### MAI-Cyber-1-Flash (July 2026)
+
+Microsoft has been quietly swapping frontier models for its own smaller models across GitHub Copilot, PowerPoint, OneDrive, and Dynamics. The showpiece is **MAI-Cyber-1-Flash**, a security-specialized model with just **5B active parameters**.
+
+- **CyberGym performance**: Inside Microsoft's **MDASH** agent harness, MAI-Cyber-1-Flash scores **95.95%** on CyberGym — a benchmark for finding and exploiting real software vulnerabilities — about **12 points above Anthropic's Mythos 5** at roughly half the cost.
+- **Caveat**: The chart label shows the winning bar is MAI-Cyber-1-Flash *plus* a frontier model still handling the difficult 10% (labeled "with help"), so the headline score reflects a hybrid configuration rather than the small model alone.
+
+The result is a direct challenge to Anthropic's security-evaluation work; see [[entities/anthropic]] for context.
+
 ## Microsoft Frontier Company (July 2026)
 
 Microsoft announced the **Microsoft Frontier Company**, a new operating unit committing $2.5 billion and approximately 6,000 engineers to work inside enterprises and build AI systems those companies own themselves.
@@ -89,6 +99,7 @@ Microsoft continues to participate in the broader AI governance conversation. Me
 - **OpenAI-Microsoft Renegotiation Report (2026-04-28)** — Beehiiv newsletter digest
 - **Market Analysis: NVIDIA GPU dominance** — ~20M B200/B300 GPUs installed by Q4 2025, Azure is a major consumer
 - **MAI-Thinking-1 Technical Report (June 2026)** — Microsoft AI
+- **Superintel+ Newsletter (2026-07-31)** — MAI-Cyber-1-Flash security model
 
 ## References
 

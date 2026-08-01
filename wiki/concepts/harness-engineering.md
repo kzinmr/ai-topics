@@ -2,7 +2,7 @@
 title: "Harness Engineering"
 type: concept
 created: 2026-04-30
-updated: 2026-07-07
+updated: 2026-08-01
 tags:
   - concept
   - evaluation
@@ -47,6 +47,7 @@ sources:
   - https://picrew.github.io/LLM-Harness/
   - https://github.com/picrew/Awesome-Agent-Harness
   - raw/articles/2026-07-04_lilianweng-harness-engineering-self-improvement.md
+  - raw/newsletters/2026-08-01-ainews-not-much-happened-today.md
 description: "The practice of building evaluation and constraint systems around LLMs for production reliability. Includes production case studies from LangChain, Addy Osmani's Agent = Model + Harness framework, and the Agent Harness Engineering discipline."
 ---
 
@@ -541,6 +542,19 @@ Key design questions emerging from this pattern:
 - **System prompt plasticity**: The ability to override default coding-centric system prompts is emerging as a critical UX feature — users who modify prompts away from developer-centric framing report significantly different (and more creative) interaction patterns.
 
 This design dimension connects [[concepts/agentic-engineering]] (how humans use agents) with AI agent engineering (how harness execution loops are built), suggesting harness design must consider not just execution efficiency but cognitive ergonomics.
+
+## Microsoft Echoverse: Spec-to-Stateful-App Compiler (Aug 2026)
+
+[[entities/microsoft|Microsoft]]'s **Echoverse** extends harness engineering by treating the environment itself as part of the system being repaired: it compiles specifications into **stateful applications with grounded graders**, then uses **rollout analysis to repair both the environments and the training signals** that produced them.
+
+- **Spec-to-stateful-app compiler**: specifications are compiled into interactive, stateful applications rather than static eval suites.
+- **Grounded graders**: evaluation is anchored to verified ground-truth signals instead of free-form LLM judgment.
+- **Environment-as-system**: rollout analysis repairs the environment (the harness) and the training signals jointly, closing the loop between eval infrastructure and model behavior.
+- **Depth matters**: shallow environments measurably hurt live-site accuracy, while deeper, more realistic environments improved it — direct evidence that environment fidelity is a first-class harness variable.
+
+This makes Echoverse a notable datapoint for the harness-engineering thesis that the evaluation environment is not a neutral testbed but a component whose quality directly shapes deployed performance.
+
+**Source**: AINews (2026-08-01) — Microsoft Echoverse.
 
 ## References
 

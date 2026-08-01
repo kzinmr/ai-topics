@@ -1,3 +1,18 @@
+## [2026-08-01] newsletter-wiki-ingest | 1 page created, 8 pages enriched (triage 20260801T101509Z recovered from checkpoint)
+
+- Recovered triage JSON from /opt/data/.hermes/cron/data/newsletter/triage_latest.json after newsletter-triage output parse failure (checkpoint survived; standard recovery path)
+- 17 decisions: 1 take, 8 references, 8 skips
+- Created: concepts/prompt-engineering.md (stub -> full page; The Signal "The End of Prompting" — paradigm shift from written prompts to demonstration-based interaction; Anthropic Record a skill vs OpenAI Record & Replay comparison table, Kiana Ehsani "people should not have to write prompts", what prompts leave out, first-mover reversal, Alex Karp counter-argument)
+- Enriched: entities/deepseek.md (V4-Flash-0731 & July 2026 Price War section — $0.14/$0.28 API beta, 98% cache discount, 284B/13B vs 304B discrepancy kept with sources, Terminal-Bench 82.7 +25.8, GDPval Elo 1189->1559, AI index 40->50, vs Opus 4.8 within 4 points on 5/9)
+- Enriched: entities/microsoft.md (MAI-Cyber-1-Flash — 5B active security model, 95.95% CyberGym in MDASH harness, ~12 pts above Mythos 5 at half cost, hybrid caveat)
+- Enriched: concepts/gemini/index.md (Recent Updates — Gemini Drops: 3.6 Flash, 3.5 Flash-Lite, Spark rollout, voice macOS; AI index v4.1 ~50.1)
+- Enriched: entities/langchain.md (Ecosystem Map July 2026 — LangGraph/DeepAgents/LangSmith, standardized internal evals, Harbor task conversion)
+- Enriched: concepts/harness-engineering.md (Microsoft Echoverse — spec-to-stateful-app compiler with grounded graders, rollout analysis repairs environments+training signals, shallow envs hurt live-site accuracy)
+- Enriched: entities/minimax.md (H3 video model — Vercel AI Gateway launch, open weights promised, fal/Pollo/PixVerse/Leonardo/OpenArt partners, baked-in super-resolution; added video-generation tag)
+- Enriched: concepts/ai-video-generation-2026.md (Seedance 2.5 — native 30s/consistent 3-min videos, interactive frame editing, 50 multimodal refs, 720p caveats)
+- Skips (8): AINews/Signal noise links, AWS Q2 financials, Gemini Robotics 2 demo, Thinking Machines Inkling-Small, open-vs-closed cyber debate, OpenAI Voice desktop, sandbox escape incidents (already covered)
+- Sources: raw/newsletters/2026-07-31-the-end-of-prompting.md, 2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md, 2026-08-01-ainews-not-much-happened-today.md
+
 ## [2026-08-01] blog-wiki-ingest | 2 pages enriched, 5 pages updated (triage 20260801T101221Z recovered from checkpoint)
 
 - Recovered triage JSON from /opt/data/.hermes/cron/data/blog_ingest/triage_latest.json after blog-triage output parse failure (checkpoint survived; standard recovery path)
