@@ -3,14 +3,16 @@ title: Thariq Shihipar
 type: entity
 handle: "@trq212"
 created: 2026-04-10
-updated: 2026-07-25
+updated: 2026-08-01
 tags:
   - person
   - anthropic
   - ai-agents
   - interpretability
   - company
-sources: [raw/articles/2026-07-24_trq212_context-engineering-claude-5.md]
+sources:
+  - raw/articles/2026-07-24_trq212_context-engineering-claude-5.md
+  - raw/articles/simonwillison.net--2026-jul-21-cat-and-thariq--15c314db.md
 ---
 
 
@@ -265,6 +267,20 @@ This statement captured the shift from the traditional "build → deploy → mai
 
 References:
 - [AIEWF Daily Dispatch: Autoresearch and the tension between AI and human agency](https://open.substack.com/pub/swyx/p/aiewf-daily-dispatch-agency) — Richard MacManus, July 2026
+
+## Fireside Chat with Simon Willison (July 2026)
+
+Later the same day, Shihipar joined [[entities/simon-willison|Simon Willison]]'s fireside chat with [[entities/cat-wu|Cat Wu]] (transcript published July 21). Notable Shihipar contributions:
+
+- **"Rewrites are now good"**: rejects the Mythical Man-Month "never rewrite" rule — a rewrite forces a good test suite, and "a codebase is a spec, and maybe it's the only copy of the spec that you have." Evidence: the Bun-in-Rust rewrite shipped internally and to all users June 17.
+- **Deep Blue and ambition**: frames the grief of having one's craft subsumed by models as "Deep Blue"; the offset is "being more ambitious" — do the bigger thing, because "success is fun." Cites Jared (Bun) hand-writing Zig then rewriting Bun in Rust as the model.
+- **System prompt reduction**: removal of examples and "don't do X" lists was extremely helpful for Fable/Opus 4.8 — "fewer hard constraints, more context, and fewer instructions overall"; different system prompts per model tier.
+- **Tool design is "more of a biology than a physics"**: they removed grep/glob search tools in favor of native bash; the file-edit tool persists partly for the approve-edit UI.
+- **Fable video editing**: one-shot Fable to edit his ACM Agentic talk video — it transcribed the video, detected a popup-interrupted deck, used the HTML deck source, dynamically cropped/tracked him pacing, and produced a shippable edit (ffmpeg, Remotion); also used Fable to edit Fable's own launch video.
+- **"Ant fooding"**: Anthropic's internal term for dogfooding.
+- **Security posture**: "we're very secure" — Claude Tag uses auto mode (Sonnet classifier), supports provisioning credentials for Claude as an identity, "Swiss cheese defense" + RL against prompt injection.
+- **"Don't negotiate against yourself"**: co-founders' rule — make trade-offs show themselves, "be as ambitious as you can."
+- **Absurd build**: a 2D Street Fighter-style fighting game with himself and friends as characters, using Claude Code to prompt Gemini/Seedance for video animations and JSON hitboxes.
 
 ## X Activity Themes
 

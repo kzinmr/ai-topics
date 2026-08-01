@@ -2,7 +2,7 @@
 title: "Production-Ready Agent Engineering: From MCP to RL"
 type: concept
 created: 2026-06-10
-updated: 2026-06-12
+updated: 2026-08-01
 tags:
   - ai-agents
   - reinforcement-learning
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2025-06-10_willbrown_build-your-own-research-agent-lightning.md
   - raw/articles/2025-06-10_willbrown_training-agents-with-rl-lightning.md
   - raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2.md
+  - raw/articles/2025-06-19_willbrown_agents-mcp-rl-lesson2-raw-transcript.md
   - raw/articles/2025-06-24_willbrown_agents-mcp-rl-lesson3.md
   - raw/articles/2025-06-26_willbrown_agents-mcp-rl-lesson4.md
   - raw/articles/2025-06-27_kylecorbitt_agents-mcp-rl-office-hours.md

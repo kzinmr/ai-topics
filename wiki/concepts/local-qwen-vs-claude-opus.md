@@ -1,7 +1,7 @@
 ---
 title: "Local Qwen vs Claude Opus — Different Tools for Different Jobs"
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-08-01
 type: concept
 tags:
   - local-llm
@@ -24,7 +24,7 @@ sources:
 
 # Local Qwen vs Claude Opus — Different Tools for Different Jobs
 
-**Core thesis**: Local Qwen is NOT a worse Opus — it's a fundamentally different tool with different strengths, failure modes, and appropriate use cases. As Alex Ellis put it in his June 2026 deep-dive, treating a local model inside a coding harness the same way you treat [[concepts/claude/index|Claude]] or Codex leads to disappointment, but using it for the right scoped tasks yields genuine business value.
+**Core thesis**: Local Qwen is NOT a worse Opus — it's a fundamentally different tool with different strengths, failure modes, and appropriate use cases. As [[entities/alex-ellis|Alex Ellis]] put it in his June 2026 deep-dive, treating a local model inside a coding harness the same way you treat [[concepts/claude/index|Claude]] or Codex leads to disappointment, but using it for the right scoped tasks yields genuine business value.
 
 ## The Benchmark Gap Is Real but Misleading
 
@@ -108,6 +108,7 @@ Key trade-offs: vLLM was ~3 tok/s slower than llama.cpp for single-user generati
 
 ## Related Pages
 
+- [[entities/alex-ellis]] — Author of the source deep-dive and OpenFaaS founder
 - [[concepts/qwen]] — Qwen model family overview
 - [[concepts/claude/index]] — Claude models hub
 - [[concepts/ollama-local-llm-runner]] — Local LLM ecosystem overview

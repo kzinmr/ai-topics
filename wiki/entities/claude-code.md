@@ -559,5 +559,16 @@ Simon Willison hosted a fireside chat with Cat Wu and Thariq Shihipar from Anthr
 - Shipped to all users June 17, 2026
 - Thariq: "rewrites are now good" — codebase is the only copy of the spec
 
+#### Additional Insights (from full transcript)
+- **Eval base for drop-in model replacement**: the team's eval suite exists so new models can be drop-in replacements — run the whole eval set and confirm e.g. Fable is strictly better than Opus 4.8 before shipping
+- **Behavioral evals**: beyond capability evals, they build behavioral evals for UX friction ("people really don't like it when Claude Code says it's time to go to sleep"); priority issues get evals built one by one from user feedback
+- **Tool design is "more of a biology than a physics"** (Thariq): they removed grep/glob search tools in favor of native bash; the file-edit tool is kept partly because it enables the dedicated approve-edit UI
+- **Credential injection**: Claude Code can access APIs (e.g., Datadog) via injected-on-the-fly credentials the agent itself cannot read — proxy audits the request and injects the API key
+- **"Ant fooding"**: Anthropic's internal term for dogfooding ("our ant version of that")
+- **Deep Blue / ambition**: Thariq advises offsetting coding-agent-induced grief ("Deep Blue") by being more ambitious — "the way you offset that is by being more ambitious"; Anthropic co-founders' rule "we don't negotiate against ourselves"
+- **Fable video editing**: Thariq one-shot Fable to edit his ACM Agentic talk video — it transcribed the video, skipped a popup-interrupted deck, used the HTML deck source, dynamically cropped/tracked him pacing, and produced a shippable edit (ffmpeg, Remotion)
+- **Claude Tag memory**: currently a markdown file per channel; session instances can contribute back to shared main memory
+- **Eval tooling stance**: the limiting factor is customers' eval-building skill, not tooling — Anthropic plans to share best practices
+
 Source: [Simon Willison: "A Fireside Chat with Cat and Thariq from the Claude Code team"](https://simonwillison.net/2026/Jul/21/cat-and-thariq/) (2026-07-21)
 

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (869 pages)
+## Entities (870 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -33,6 +33,7 @@
 - [[entities/alex-banks]] — Alex Banks; enriched with "You're Underestimating AI on Purpose" — AI Perception Paradox, Amara's Law, the AI Effect and systematic underestimation of AI progress (June 27)
 - [[entities/alex-cheema]] — Alex Cheema
 - [[entities/alex-chernysh]] — Alex Chernysh
+- [[entities/alex-ellis]] — Alex Ellis — Founder of OpenFaaS; local AI practitioner — "Local Qwen isn't a worse Opus" thesis (June 2026)
 - [[entities/alex-finn]] — Alex Finn — solo builder with 24/7 local AI fleet and automated software factory
 - [[entities/alex-imas]] — Alex Imas — Director of AGI Economics at Google DeepMind
 - [[entities/alex-imus]] — Alex Imas

@@ -1,3 +1,12 @@
+## [2026-08-01] raw-backlog-ingest | 1 page created, 4 pages enriched, 5 articles processed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 00:00, run 20260801T000005Z). Archive: 3 already_archived, 1 not_archived (simonwillison fireside), 1 null (willbrown transcript).
+- (1) alexellis.io "Local Qwen isn't a worse Opus, it's a different tool" → take (entity gap): content was already captured in [[concepts/local-qwen-vs-claude-opus]] but no author entity existed → CREATED [[entities/alex-ellis]] (OpenFaaS founder, local AI thesis; tags person/founder/open-source/local-llm/coding-agents); cross-linked concept page (wikilink + Related Pages) and index.md (869→870).
+- (2) willbrown agents-mcp-rl-lesson2 raw transcript → skip: fully captured in [[concepts/agents-mcp-rl-course]] (Lesson 2 summary section) + [[entities/will-brown]] (References already lists this raw file). Added raw transcript to course page sources frontmatter for traceability.
+- (3) wheresyoured.at "Cargo Culture" → skip: fully captured in [[entities/ed-zitron]] (Cargo Culture — Religious Metaphors section) + [[concepts/agentic-engineering]] (Agent Loop Debate section); already archived.
+- (4) simonwillison.net "A Fireside Chat with Cat and Thariq from the Claude Code team" → take (entity enrichment): [[entities/claude-code]] already had a fireside section → added "Additional Insights" (eval base for drop-in replacement, behavioral evals, biology-not-physics tool design, credential injection, ant fooding, Deep Blue/ambition, Fable video editing, Claude Tag memory, eval tooling stance); enriched [[entities/simon-willison]] (July 2026 Updates entry), [[entities/cat-wu]] (new Fireside Chat Insights section), [[entities/thariq-shihipar]] (new Fireside Chat section with rewrites-are-good, Deep Blue, system prompt reduction, security posture).
+- (5) wheresyoured.at "The More You Buy, The More You Lose" → skip: fully captured in [[entities/ed-zitron]] (The More You Buy section: NVIDIA–SB Energy $250B circular deal, Winstar/Lucent analogy, CoreWeave bond crisis, $1.35T off-balance-sheet debt, capex % revenue table); already archived.
+
 ## [2026-07-31] raw-backlog-ingest | 5 articles triaged — all already captured (0 take / 0 ref / 5 skip)
 
 ## [2026-07-31] x-accounts-scan | 3 new posts, 2 wiki pages updated
