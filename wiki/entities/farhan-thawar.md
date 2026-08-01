@@ -100,6 +100,7 @@ Thawar's philosophy — "hire smart people and pair with them on problems" — e
 ## See Also
 
 - [[entities/shopify]] — Shopify's AI-first engineering transformation
+- [[entities/thomas-dohmke]] — Former GitHub CEO; Thawar pushed Copilot deployment to him on day one
 - [[entities/tobi-lutke]] — Shopify CEO, creator of River AI coding agent
 - [[entities/claude-code]] — Primary AI coding tool at Shopify
 - [[entities/cursor-ai]] — Adopted alongside Claude Code

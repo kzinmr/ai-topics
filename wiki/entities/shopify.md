@@ -166,6 +166,7 @@ All engineering director and VP hires must pass **coding interviews**:
 ## See Also
 
 - [[entities/farhan-thawar]] — Head of Engineering driving the AI transformation
+- [[entities/thomas-dohmke]] — Former GitHub CEO; Shopify was first to deploy Copilot under his tenure
 - [[entities/tobi-lutke]] — Shopify CEO, creator of River AI coding agent
 - [[entities/claude-code]] — Primary AI coding tool in Shopify's stack
 - [[entities/cursor-ai]] — AI code editor adopted alongside Claude Code

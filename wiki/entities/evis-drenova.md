@@ -27,7 +27,7 @@ aliases:
 
 # Evis Drenova
 
-**Evis Drenova** (@evisdrenova) is a Principal Software Engineer at **Entire**, the developer platform founded by former GitHub CEO Thomas Dohmke. Previously, he co-founded **Neosync** (YC S22), an open-source data security company specializing in synthetic data, which was acquired by Grow Therapy (Sequoia-backed). His career spans the full stack of modern software — from AI agent infrastructure and data privacy to Rust systems programming and enterprise product management.
+**Evis Drenova** (@evisdrenova) is a Principal Software Engineer at **Entire**, the developer platform founded by former GitHub CEO [[entities/thomas-dohmke]]. Previously, he co-founded **Neosync** (YC S22), an open-source data security company specializing in synthetic data, which was acquired by Grow Therapy (Sequoia-backed). His career spans the full stack of modern software — from AI agent infrastructure and data privacy to Rust systems programming and enterprise product management.
 
 ## Key Facts
 
@@ -79,7 +79,7 @@ Key milestones:
 
 ### Entire (2026–present)
 
-In early 2026, Drenova joined **Entire** as a **Principal Software Engineer**. Entire was founded by former GitHub CEO Thomas Dohmke and raised the largest seed round in dev tools history: **$60M at a $300M valuation** from Felicis, Madrona, M12, and angels including Datadog's CEO, YC's CEO, and Jerry Yang.
+In early 2026, Drenova joined **Entire** as a **Principal Software Engineer**. Entire was founded by former GitHub CEO [[entities/thomas-dohmke]] and raised the largest seed round in dev tools history: **$60M at a $300M valuation** from Felicis, Madrona, M12, and angels including Datadog's CEO, YC's CEO, and Jerry Yang.
 
 Drenova's path to Entire was unusual: he had been exploring agentic coding infrastructure independently on weekends, starting an open-source project rethinking Git for the era of coding agents. His blog post on the topic reached Thomas Dohmke, leading to a conversation that turned into a full-time job.
 

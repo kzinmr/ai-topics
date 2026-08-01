@@ -2,6 +2,17 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-01] daily-skeleton-enrichment | Enriched LM Studio + Entire to L3, created Thomas Dohmke entity
+
+- **Skeleton backlog saturated**: 0 pages with `status: skeleton` remain in wiki/entities — the daily job continues with L2→L3 enrichment of the thinnest entity pages.
+- **[[entities/lm-studio]]** (L2→L3, 52→~200 lines): Added LM Studio Bionic agent (Jul 16, 2026 launch; Work/Code Projects, cloud/local/LM Link model sources, ZDR), Bionic cloud pricing table (Kimi K3, GLM 5.2, Kimi Code K2.7, DeepSeek V4 Pro), LM Link and Locally mobile app (Jun 2026), LM Studio Engine Protocol, MTP speculative decoding, Anthropic-compatible API for Claude Code (Jan 2026), hardware support (Apple Silicon MLX, NVIDIA DGX Spark/GB300, AMD ROCm/Vulkan), 0.4.x version history table. Company: Element Labs, Inc.
+- **[[entities/entire]]** (L2→L3, 54→~170 lines): Added CEO Thomas Dohmke (ex-GitHub CEO), Marvin agent, checkpoints-in-git-history thesis ("session logs are the most important artifact"), Distributed Git Network launch (Jul 8, 2026; ForgeMark benchmark: 570K clones/h, 2.1M pushes/h), ref-based checkpoint storage, entire blame, Goose support, token-level code navigation, company culture (zero-bugs policy), team roster, $60M seed at $300M valuation (per evis-drenova) + company-page investors.
+- **[[entities/thomas-dohmke]]** (NEW): Former GitHub CEO (2021–2025), HockeyApp co-founder (acquired by Microsoft 2014), founded Entire early 2026 ($300M valuation by Feb 2026). Career timeline, GitHub era (Copilot), Entire thesis quotes, cross-links to entire/evis-drenova/farhan-thawar/shopify. Resolves dangling `[[entities/thomas-dohmke]]` links in evis-drenova.md and related pages.
+- **[[entities/evis-drenova]]** (updated): Wikilinked Thomas Dohmke inline mentions.
+- Sources: lmstudio.ai (homepage, changelog, docs/bionic, blog, pricing), entire.io (homepage, blog, company page, git network essay), Wikipedia (Dohmke).
+- index.md: +1 entity (871 total), updated descriptions for entire + lm-studio.
+
+
 ## [2026-08-01] dreaming-wiki-ingest | 5 entity pages enriched (recovered from failed dreaming-group render)
 
 - **Recovery**: dreaming-group JSON render failed at 18:20:51 (output c4a9e8d2f671/2026-08-01_18-20-51.md, 4,461 lines). Triage JSON at cron/data/dreaming/triage_latest.json (22 decisions: 0 takes, 7 references, 15 skips) + output-file theme clusters used as source of truth. Upstream commit fc2829ed (18:12) touched only log.md — enrichment not yet executed.

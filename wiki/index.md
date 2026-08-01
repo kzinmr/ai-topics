@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (870 pages)
+## Entities (871 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -260,7 +260,7 @@
 - [[entities/emmanuel-ameisen]] — Emmanuel Ameisen
 - [[entities/emollick]] — Ethan Mollick
 - [[entities/encodec]] — EnCodec
-- [[entities/entire]] — Entire
+- [[entities/entire]] — Entire — Agent observability, sessions & distributed Git network for the agent era (CEO: Thomas Dohmke)
 - [[entities/entropicthoughts-com]] — Chris of Entropic Thoughts
 - [[entities/epoch-ai]] — Epoch AI
 - [[entities/eric-drexler]] — Eric Drexler
@@ -469,7 +469,7 @@
 - [[entities/liquid-ai-lfm2-5-retrievers]] — LFM2.5 Retrievers — 350M-param multilingual retrieval models (ColBERT + Embedding); bidirectional LFM architecture; 11 languages; best-in-class NanoBEIR/MKQA-11; GGUF for llama.cpp edge deployment (June 29)
 - [[entities/llama-3]] — Llama 3
 - [[entities/llamaindex]] — LlamaIndex
-- [[entities/lm-studio]] — LM Studio
+- [[entities/lm-studio]] — LM Studio — Local LLM desktop app + Bionic agent for open models (Element Labs)
 - [[entities/lmsys-org]] — LMSYS Org
 - [[entities/lora-fine-tuning]] — LoRA (Low-Rank Adaptation) — efficient fine-tuning method for LLMs, and the Doc-to-LoRA / Text-to-LoRA paradigm from ...
 - [[entities/lucas-atkins]] — Lucas Atkins
@@ -793,6 +793,7 @@
 - [[entities/thin-bi-tool]] — The trend of BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools...
 - [[entities/thinking-machines-lab]] — Thinking Machines Lab — AI company building decentralized, customizable models; creators of Inkling (975B-A41B MoE multimodal Apache 2.0, Intelligence Index 41)
 - [[entities/thomas-capelle]] — Thomas Capelle
+- [[entities/thomas-dohmke]] — Thomas Dohmke — Former GitHub CEO, HockeyApp co-founder, founder/CEO of Entire
 - [[entities/thomas-wiecki]] — Thomas Wiecki
 - [[entities/thorsten-ball]] — Thorsten Ball
 - [[entities/thoughtful-lab]] — Thoughtful Lab
