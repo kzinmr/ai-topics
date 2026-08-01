@@ -1,7 +1,7 @@
 ---
 title: Cerebras Systems
 created: 2026-05-14
-updated: 2026-07-17
+updated: 2026-08-01
 type: entity
 tags:
   - entity
@@ -11,7 +11,7 @@ tags:
   - inference
   - mlops
   - search
-sources: [raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md, raw/articles/2026-05-10_parallel-web-systems_cerebras-fact-checker.md, raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md, raw/articles/2026-07-16_cerebras_knowledge-base-architecture.md]
+sources: [raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md, raw/articles/2026-05-10_parallel-web-systems_cerebras-fact-checker.md, raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md, raw/articles/2026-07-16_cerebras_knowledge-base-architecture.md, raw/articles/2026-07-27_cerebras_getting-most-out-of-gpt-5-6.md]
 ---
 
 # Cerebras Systems
@@ -129,9 +129,14 @@ See [[concepts/enterprise-knowledge-base-architecture]] for the full architectur
 
 The AI/Growth team (Isaac @hi_im_isaac_, Daniel @learnwdaniel, Zenghao Gao @gaozenghao) built and maintains the platform.
 
-## Relationship to Other Wiki Entities
+### GPT-5.6 Acceleration (July 2026)
+
+Cerebras serves as the high-speed inference backend for OpenAI's [[concepts/gpt/gpt-5-6|GPT-5.6]] family. GPT-5.6-Sol runs on Cerebras at **750 tokens/second** — up to **10× faster** than regular Sol mode. This makes Cerebras the go-to platform for users who want Sol's intelligence at interactive latency. The Cerebras AI/Growth team published a detailed guide on model selection, reasoning levels, and cache optimization strategies for the GPT-5.6 family.
+
+## Relationship to Other Wiki Pages
 
 - [[entities/openai]] — Major customer, 750MW compute deal
+- [[concepts/gpt/gpt-5-6]] — GPT-5.6 Sol/Terra/Luna; Cerebras runs Sol at 750 tok/s
 - [[entities/nvidia]] — Primary competitor in AI accelerators
 - [[concepts/karpathy-loop]] — Cerebras experiments on autoresearch loop optimization
 - [[concepts/compute-scaling-bottlenecks]] — SRAM vs HBM tradeoffs

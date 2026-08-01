@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6 (Sol / Terra / Luna)"
 created: 2026-06-27
-updated: 2026-07-31
+updated: 2026-08-01
 type: concept
 tags:
   - model
@@ -19,6 +19,7 @@ sources:
   - raw/newsletters/2026-07-14-ainews-openai-gpt-5-6-operational-fixes.md
   - raw/newsletters/2026-07-14-how-to-use-gpt-5-6.md
   - raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md
+  - raw/articles/2026-07-27_cerebras_getting-most-out-of-gpt-5-6.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)
@@ -194,12 +195,39 @@ For a quick-reference guide to model selection and usage strategies, see [[conce
 ### Computer Use
 - GPT-5.6 models in Codex demonstrate strong Computer Use capabilities — self-driving the cursor, opening apps, clicking buttons, and navigating the screen. Recommended to test with Sol at medium/high reasoning on a small task.
 
+## Cerebras Usage Guide (July 2026)
+
+Cerebras published a detailed guide (authored by @0xSero & Zhenwei Gao) on optimizing GPT-5.6 usage. Key strategies:
+
+### Model Selection: "Start with Luna, Then Escalate"
+A practical default is to start most tasks with Luna, then move up to Terra or Sol when progress stalls — agents get stuck, fixes stop landing, or the model loses the thread. Sol on Cerebras at 750 tok/s makes Sol viable for interactive use.
+
+### Reasoning Level Impact
+Each step up in reasoning level increases average cost per task by roughly **50%** (Artificial Analysis, July 17):
+- **Light**: Basic tasks where failure is unlikely
+- **Medium**: Everyday default for tasks requiring some interpretation
+- **High / Extra-High**: Complex debugging, architecture decisions, large refactors
+- **Ultra**: Detailed constraints spanning multiple independent systems; drains usage limits fast
+
+### Cache Strategy
+- Cached input is **90% cheaper** than fresh input
+- Cache TTL: **~30 minutes** — maintain a single session across tasks
+- Codex compaction supports **hundreds of millions of tokens** per session
+- Schedule automations every 20 minutes to keep cache alive
+
+### Multi-Agent: Sol + Terra Pairing
+Sol weighs options and sets direction, then hands off implementation to Terra (faster, cheaper). The Advisor workflow gives one agent the job of tracking goals and steering the worker.
+
+### External Models in Codex
+Codex supports local providers (Ollama, LM Studio) and custom providers via configuration — enabling Kimi K2.7 Code, GLM-5.2 for bounded subagent work.
+
 ## Related Pages
 - [[concepts/gpt/gpt-5-5]] — Predecessor model
 - [[concepts/gpt/gpt-5-5-instant]] — Previous standard model
 - [[events/2026-06-27-openai-gpt-5-6-sol]] — Full event page
 - [[entities/openai]] — Developer
 - [[entities/dean-ball]] — Policy analysis of the release
+- [[entities/cerebras-systems]] — High-speed inference for Sol at 750 tok/s
 
 ## References
 - AINews Jun 27 2026: open.substack.com/pub/swyx/p/ainews-openai-gpt-56-sol-terra-luna

@@ -1,3 +1,13 @@
+## [2026-08-01] X Article ingestion | Cerebras GPT-5.6 usage guide (1,470 bookmarks)
+
+- Source: Cerebras (@cerebras) X Article "Getting the most out of GPT-5.6: Sol, Terra, and Luna" (2026-07-27, 1,470 bookmarks, 462K impressions)
+- Authors: @0xSero & Zhenwei Gao (@zhennydez)
+- Saved: raw/articles/2026-07-27_cerebras_getting-most-out-of-gpt-5-6.md
+- Updated: entities/cerebras-systems.md (added GPT-5.6 Acceleration section, Cerebras runs Sol at 750 tok/s, sources)
+- Updated: concepts/gpt/gpt-5-6.md (added Cerebras Usage Guide section: model selection escalation, reasoning level cost impact, cache strategy, Sol+Terra pairing, external models; added source)
+- No new pages created (duplicate avoided — existing GPT-5.6 concept page at concepts/gpt/gpt-5-6.md)
+- Key insights: Luna→Terra→Sol escalation pattern, reasoning levels each add ~50% cost, cache reads 90% cheaper with 30-min TTL, Cerebras 10× faster for Sol
+
 ## [2026-08-01] raw-backlog-ingest (04:00) | duplicate batch detected — no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 04:00, run 20260801T040019Z) re-selected the SAME 5 articles processed by the 00:00 run (commit 75f681b9): the 00:00 run left them status=processing in processed_raw_articles.json (stuck >1hr → re-collected).
