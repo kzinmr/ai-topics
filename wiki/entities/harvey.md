@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-07-31
+updated: 2026-08-01
 tags:
   - security
   - company
@@ -24,6 +24,7 @@ sources:
   - raw/articles/2026-07-17_harvey_y-combinator-backed-benchmark-joins-harvey.md
   - raw/articles/2026-07-28_harvey_scaling-document-processing-across-harvey.md
   - raw/articles/2026-07-31_harvey_ai-trademark-search.md
+  - raw/articles/2026-06-19_harvey_legal-operations-management.md
 ---
 
 # Harvey
@@ -208,6 +209,48 @@ Harvey published its methodology for training domain-specific legal AI agents un
 This represents a broader trend of **vertical AI agent training** — companies with deep domain expertise building their own agent training pipelines rather than relying on frontier model APIs alone. Harvey's approach mirrors what coding agent companies (Cognition, Cursor) have done for software engineering, but applied to legal reasoning.
 
 Source: [Training a Legal Agent — Harvey Blog](https://www.harvey.ai/blog/training-a-legal-agent-with-applied-compute)
+
+## Legal Operations Management Guide (June 2026)
+
+Harvey published a comprehensive guide to **legal operations management** — the discipline of running the legal function like any other business unit — positioning its platform for the operational layer where legal ops teams select, deploy, and govern AI. The guide is aimed at both law firms and in-house teams, and is one of Harvey's most strategy-oriented blog pieces (vs. product announcements).
+
+### Core Framework
+
+- **Five core functions of legal ops**: (1) financial management (budget, spend analytics, CFO conversation), (2) outside counsel and provider management (panel programs, billing guidelines, performance reviews), (3) contract operations (lifecycle from intake to renewal), (4) technology and data (tech stack, integrations, reporting), (5) strategic planning and governance (multi-year direction, AI policy)
+- **When to invest**: first dedicated legal ops hire when in-house headcount reaches ~5-10 lawyers, or annual legal spend crosses $5-10M; law firms typically at 50-100 lawyers, often triggered externally by client demand for alternative fee arrangements or pricing transparency
+- **Four signals of threshold**: no central view of legal spend; invoices arrive unpredictably with anecdotal variance; contracts scattered across email/shared drives; legal team can't produce usable KPIs on request
+- **Implementation tiers**: small departments assign legal ops part-time to senior counsel/paralegal; mid-sized make first dedicated Manager/Director hire to centralize spend data; large departments run multi-person functions led by a Head of Legal Operations reporting to the GC
+
+### AI Governance as Legal Ops Responsibility
+
+The guide argues **AI governance is the new responsibility that didn't exist five years ago** and the area where legal ops adds its most distinctive value:
+
+- Which AI platforms the team is approved to use, and on which data
+- Human-in-the-loop review checkpoints built into workflows
+- Accuracy benchmarking with measurable standards before deployment and on recurring cadence after
+- Acceptable use guidelines covering confidentiality, privilege, and matter-level isolation
+- Audit logs producible for clients, regulators, or internal compliance reviews
+
+**Key thesis**: "AI amplifies the maturity that already exists rather than replacing the need for it" — teams with weak templates and ad hoc processes get AI outputs that reflect those weaknesses; teams with strong playbooks, clean data, and documented workflows get AI outputs that compound. "Get the process right, then deploy the AI on top of it."
+
+### AI Use Case Categories
+
+1. **Contract review and clause extraction** — first-pass review of high-volume agreements (NDAs, vendor terms, standard order forms), flagging deviations from playbook, extracting key terms into structured data
+2. **Drafting assistance** — first drafts of templated documents, proposed redlines based on firm standard positions, lawyer reviews/refines rather than starting from blank page
+3. **Research and matter analysis** — synthesizing case law, regulatory guidance, and internal precedent into citation-grounded, verifiable answers
+
+### Maturity Assessment & Implementation
+
+- Uses **CLOC's Core 12 Maturity Assessment Playbook** with four-stage model: Reactive → Emerging → Developing → Leading (AI deployed with governance + predictive analytics at Leading)
+- Five-phase implementation: assess maturity → prioritize 2-3 initiatives GC+CFO both recognize → secure executive sponsorship → pilot in defined scope → scale on pilot results
+- Typical 12-18 month roadmap: months 1-4 centralize spend data (e-billing, intake portal); months 5-10 pilot CLM in one region; months 11-18 roll out CLM globally + deploy AI-assisted drafting with governance
+- "Start narrow" principle: pick one focused use case (spend visibility or contract intake), prove value within 90 days
+
+### Role of Domain-Specific Legal AI
+
+The guide explicitly contrasts **general-purpose AI tools** (require lawyer to do most framing/verification) with **platforms built specifically for legal work** (ground outputs in cited sources lawyers can verify) — positioning Harvey in the latter category. Scale signal cited: 142,000+ legal professionals, 1,500+ customers in 60+ countries, 60%+ of AmLaw 100.
+
+Source: raw/articles/2026-06-19_harvey_legal-operations-management.md
 
 ## Related
 

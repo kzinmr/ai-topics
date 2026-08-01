@@ -1,3 +1,16 @@
+## [2026-08-01] raw-backlog-ingest (14:00) | 1 page enriched, 5 articles processed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 14:00, run 20260801T140040Z). Archive: 3 already_archived, 1 null, 1 not_archived.
+
+**Enriched:**
+- `entities/harvey.md` — Added "Legal Operations Management Guide (June 2026)" section: five core legal ops functions (financial mgmt, outside counsel, contract ops, tech/data, strategic planning/governance), when-to-invest thresholds (5-10 lawyers / $5-10M spend; law firms 50-100 lawyers), AI governance as new legal ops responsibility (platform approval, HITL review, accuracy benchmarking, AUP, audit logs), "AI amplifies maturity" thesis, CLOC Core 12 maturity model (Reactive→Emerging→Developing→Leading), 5-phase implementation + 12-18 month roadmap, AI use case categories (contract review, drafting, research), general-purpose vs legal-specific AI positioning. Source: raw/articles/2026-06-19_harvey_legal-operations-management.md
+
+**Skipped (already captured):**
+- wheresyoured.at "AI's Brokenomics" → already in [[entities/ed-zitron]] (Hyperscaler Political Positioning June 2026 section) + sources; archived.
+- wheresyoured.at "AI Doesn't Have ROI" → already in [[entities/ed-zitron]] (Enterprise Cost Crisis section: Uber $500M token incident, kalopsia thesis, Dark Output critique) + sources; archived.
+- wheresyoured.at "Let AI Burn" → already in [[entities/ed-zitron]] (Notable Articles table: circular compute spend, $765B+ capex worthless) + sources; archived.
+- walkinglabs "Hands-On Modern RL" → already in [[concepts/post-training/hands-on-modern-rl]] (172-line page created 2026-06-09 from this exact raw article); no wiki changes needed.
+
 ## [2026-08-01] active-crawl | 3 pages created, 1 page enriched (trending topics crawl)
 
 **Sources:** HN Algolia (15 stories found), X/Twitter (10 items), blogwatcher DB (21 candidates), wiki gap analysis (13 gaps identified)
