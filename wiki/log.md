@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-01] watchdog | wiki health digest — all clean, header count corrected
+
+### Checks
+- Index corruption: 0 pipe prefix, 0 triple bracket, 0 line-number, 0 space prefix (validate_index.py: clean)
+- Ghost entries: 0 genuine (24 reported orphans all false positives: 23 `_index.md` + 1 redirect `entities/tim-sherratt` → `[[entities/tim-sh]]`, skipped per A4c rule 6)
+- Index coverage gap: 0 (all 2864 L2 files referenced; tim-sherratt is a redirect)
+- Frontmatter: 2285 pages checked, 23 missing `created:` (escalated — needs manual batch pass)
+- Stale pages: 1856 (>30 days) — informational, no auto-fix
+
+### Changes
+- `wiki/index.md`: `## Concepts (1954 pages)` → `## Concepts (1932 pages)` — header counted 20 `_index.md` files; actual section entries = 1932 (Entities header already matched entries)
+
+---
+
 ## [2026-08-01] watchdog | Auto-fixed buried log header (fix_log_header_burial.py)
 
 - Restored `# Wiki Log` header from line 146 to line 1 — 145 orphaned entries (2026-07-31 → 2026-08-01 pipeline prepends) were above the header; all 219 entries preserved.
