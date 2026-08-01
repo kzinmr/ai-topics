@@ -1,3 +1,14 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-08-01] watchdog | Auto-fixed buried log header (fix_log_header_burial.py)
+
+- Restored `# Wiki Log` header from line 146 to line 1 — 145 orphaned entries (2026-07-31 → 2026-08-01 pipeline prepends) were above the header; all 219 entries preserved.
+- Patched `config/hermes/skills/_overrides/wiki-graph-health/scripts/fix_log_header_burial.py`: header block boundary now computed dynamically (up to first `## [` entry) instead of fixed +4 — prevents splitting the first entry when no blank line follows the log metadata line.
+- Verified: `grep -c '^# Wiki Log'` = 1, `head -1` = `# Wiki Log`, 0 standalone-pipe lines, 0 orphan `### 2026-` lines.
+- Not auto-fixed (over 10-file threshold / dedicated pipelines): 23 pages missing `created` (15 malformed YAML frontmatter + 8 clean), 212 unique tag violations (tag-audit-weekly backlog), 6 entity duplicate pairs, ~2,048 broken wikilinks, 464 orphans.
+
 ## [2026-08-01] raw-backlog-ingest (14:00) | 1 page enriched, 5 articles processed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 14:00, run 20260801T140040Z). Archive: 3 already_archived, 1 null, 1 not_archived.
@@ -143,9 +154,8 @@ Batch 20260731T180057Z (raw_backlog_collect.py --sort ai-hint --limit 5). 5 arti
 - gilesthomas.com "Benchmarking Qwen 3.6 35B MoE on RTX 3090" — fully captured in [[concepts/qwen-3-6-35b]] "Real-World Benchmarks (RTX 3090)" section (Vulkan/CUDA tok/s table, UD-IQ4_NL_XL, offload); already archived.
 - Agent Safety Separation of Duties (Aakash Gupta X post) — fully captured in [[concepts/security-and-governance/agent-separation-of-duties]] (worker/evaluator architecture, /goal April 2026, Claude Code 2.1.139 May 2026, 31-turn experiment); stub duplicate fixed as redirect.
 
-# Wiki Log
+---
 
-_Log of all wiki changes. Newest entries at top._
 ## [2026-07-31] daily-skeleton-enrichment | Enriched levelsio + niplav from L2 to comprehensive (L3)
 - Enriched [[entities/levelsio.md]] — Upgraded from L2 (63 lines, 3.5KB) to comprehensive (117 lines, 12KB). Added: blog stats (800+ posts since 2013), Lex Fridman Podcast, levels.vc fund (Oct 2025), AvatarAI.me $100K/10 days (2022); new "AI-Era Thesis (2026)" section (indie hackers going extinct — execution cost flipped to ~$20/mo, BigAI cannibalization, cancelled all SaaS and vibecoded replacements, minimal stack = FOSS + VPS + AI API + R2/S3, Claude Code on VPS for ~a year, 4B requests/yr on $244/mo, vibe-coded Stripe dispute responder); Cross-References (solo-founder-philosophy, vibe-coding, vibe-ceo, solo-founder-stack, cloudflare-email-sending); Sources. Status: L3. Raw articles: wiki/raw/articles/2026-07-30_levelsio_indie-hackers-first-to-go-extinct.md, wiki/raw/articles/2026-07-26_levelsio_cancelled-saas-vibecoded.md.
 - Enriched [[entities/niplav.md]] — Upgraded from L2 (48 lines, 2.2KB) to comprehensive (135 lines, 12KB). Added: Overview (pseudonymous researcher, niplav.site since 2019, Long Content/Gwern-inspired, heavy Claude/GPT/Gemini/Kimi collaboration); Forecasting Track Record table (Metaculus Brier 0.116 / 281 uniform-sampled questions, PredictionBook 0.2365, Manifold B-/profit, 38th baseline ranking); AI Alignment writings (BCI, TAI race with China, discontinuous takeoff, anti-superpersuasion, OSS patching); Forecasting methodology (question decomposition, Iqisa library); Quantified Self; Programming & Mathematics; expanded Style & Approach (literate-programming, Crocker's rules, AI-use transparency). Fixed broken related link (concepts/rlhf → concepts/post-training/rlhf). Status: L3.
