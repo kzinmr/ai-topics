@@ -1,3 +1,9 @@
+## [2026-08-01] raw-backlog-ingest (04:00) | duplicate batch detected — no wiki changes, tracking fixed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 04:00, run 20260801T040019Z) re-selected the SAME 5 articles processed by the 00:00 run (commit 75f681b9): the 00:00 run left them status=processing in processed_raw_articles.json (stuck >1hr → re-collected).
+- Verified prior work substantive on disk: entities/alex-ellis.md (80 lines), concepts/local-qwen-vs-claude-opus.md, concepts/agents-mcp-rl-course.md, entities/cat-wu.md, entities/thariq-shihipar.md all present.
+- Action: no page creation/enrichment (would duplicate 00:00 work). Marked all 5 as status=done in /opt/data/.hermes/processed_raw_articles.json with 00:00 decisions (2 take / 3 skip) so 08:00+ collects skip them.
+
 ## [2026-08-01] raw-backlog-ingest | 1 page created, 4 pages enriched, 5 articles processed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 00:00, run 20260801T000005Z). Archive: 3 already_archived, 1 not_archived (simonwillison fireside), 1 null (willbrown transcript).
