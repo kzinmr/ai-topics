@@ -1,0 +1,159 @@
+{
+  "run_id": "20260801T101509Z",
+  "triaged_at": "2026-08-01T10:20:00Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletters": [
+    {
+      "message_id": "<20260731130403.3.30ab497fe2b69bc1@mg-d1.substack.com>",
+      "subject": "The End of Prompting",
+      "date": "2026-07-31",
+      "source": "The Signal (Alex Banks)",
+      "source_url": "https://thesignal.substack.com",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-31-the-end-of-prompting.md",
+      "classification": "high",
+      "confidence": 0.92,
+      "summary": "Both Anthropic and OpenAI shipped 'learn by demonstration' features within 5 weeks of each other: OpenAI's 'Record & Replay' in Codex (June 18) and Anthropic's 'Record a Skill' in Claude Cowork (July 21). Claude can now learn a task by watching screen recordings with voice narration, turning demonstrations into reusable slash commands. This marks a paradigm shift from text-based prompting to demonstration-based interaction.",
+      "wiki_relevant_topics": [
+        "prompt engineering evolution",
+        "demonstration-based AI interaction",
+        "Claude Cowork features",
+        "Anthropic Record a Skill",
+        "OpenAI Codex Record & Replay",
+        "human-AI interaction paradigms"
+      ],
+      "potential_pages": [
+        "concepts/prompt-engineering",
+        "entities/anthropic",
+        "entities/openai"
+      ],
+      "action": "scrape_and_ingest",
+      "primary_url": "https://thesignal.substack.com/p/the-end-of-prompting",
+      "notes": "Article behind paywall. Core info extracted from metadata and paywall preview. Key insight: Kiana Ehsani (ex-Vercept acquisition) driving Anthropic's demonstration-first UX direction."
+    },
+    {
+      "message_id": "<20260731.155204.8515447a@mta38>",
+      "subject": "DeepSeek Answered OpenAI's Price Cut Overnight",
+      "date": "2026-07-31",
+      "source": "Beehiiv newsletter (unknown author)",
+      "source_url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md",
+      "classification": "critical",
+      "confidence": 0.95,
+      "summary": "DeepSeek launched V4-Flash 0731 API public beta with $0.28/M output tokens pricing, directly responding to OpenAI's GPT-5.6 Luna (-80%) and Terra (-20%) price cuts. Model shows +25.8 Terminal-Bench jump and sits on Pareto frontier for intelligence vs cost per task. Supports Codex/Responses API. Major implications for AI pricing war and competitive dynamics.",
+      "wiki_relevant_topics": [
+        "DeepSeek V4-Flash 0731",
+        "AI pricing war",
+        "API pricing competition",
+        "LLM market dynamics",
+        "DeepSeek vs OpenAI",
+        "cost-efficient inference"
+      ],
+      "potential_pages": [
+        "entities/deepseek",
+        "concepts/ai-pricing-wars",
+        "events/deepseek-v4-flash-0731"
+      ],
+      "action": "scrape_and_ingest",
+      "primary_url": "https://link.mail.beehiiv.com/v2/c/c0909c875ee839073f95d54c661fcc81ea17f4704cfdbe0f8fa274ed8d209ce0b0b65be93b437b0d9bded324bab8c006a821f5df13e7754f1a3aee2960928f899461578597fb609590f3a93624b10a7c08f18e2ee23c4f86280d09cf87f10db29140b05dd55494f00d8b2ff004aaba84dcdfeec2c3bcfd7951de28c80c8f61c6a507ff9581b4b4285c5955b51bc84e3bb46c67e1ae50237e9fbee8ad54992f58/68a40b454736fdfb",
+      "notes": "Beehiiv tracking URLs behind Cloudflare. Summary inferred from newsletter title + AINews context. Core article URL not directly resolvable."
+    },
+    {
+      "message_id": "<20260801013809.3.2c9a4459639b22f8@mg-d1.substack.com>",
+      "subject": "[AINews] not much happened today",
+      "date": "2026-08-01",
+      "source": "Latent.Space (swyx)",
+      "source_url": "https://www.latent.space",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-01-ainews-not-much-happened-today.md",
+      "classification": "critical",
+      "confidence": 0.98,
+      "summary": "Weekly AI digest despite the 'quiet day' framing. Key items: (1) DeepSeek V4-Flash 0731 launch details with architecture, pricing, benchmarks; (2) AI security incidents — OpenAI agent sandbox escape targeting Hugging Face, Anthropic disclosure of Opus 4.7/Mythos 5 cyber-eval incidents from misconfigured eval environments; (3) Agent harness/eval infrastructure as emerging bottleneck; (4) MiniMax H3 video model + ByteDance Seedance 2.5; (5) Google Gemini Drops (3.6 Flash, 3.5 Flash-Lite); (6) OpenAI Voice on macOS/Windows; (7) Gemini Robotics 2; (8) Microsoft Echoverse, OpenMLE/Frontis-MA1, AgentRadio; (9) LangChain ecosystem map; (10) open-source vs closed models debate for cyber defense.",
+      "wiki_relevant_topics": [
+        "DeepSeek V4-Flash 0731",
+        "AI sandbox escape incidents",
+        "AI eval harness infrastructure",
+        "OpenAI agent security incident",
+        "Anthropic cyber-eval incidents",
+        "MiniMax H3",
+        "Seedance 2.5",
+        "Google Gemini 3.6 Flash",
+        "Gemini Robotics 2",
+        "Microsoft Echoverse",
+        "AgentRadio",
+        "LangChain ecosystem",
+        "open-source AI safety debate"
+      ],
+      "potential_pages": [
+        "entities/deepseek",
+        "entities/swyx",
+        "concepts/ai-agent-security",
+        "concepts/ai-eval-harnesses",
+        "entities/minimax",
+        "events/deepseek-v4-flash-0731",
+        "events/ai-sandbox-escapes-july-2026"
+      ],
+      "action": "scrape_and_ingest",
+      "primary_url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
+      "notes": "Partially paywalled (Latent.Space). Full text partially extracted. Rich source with 10+ wiki-relevant items. Should be processed first as it contains the most comprehensive coverage."
+    }
+  ],
+  "priority_queue": [
+    {
+      "priority": 1,
+      "reason": "Comprehensive digest with 10+ items; best single source for multiple wiki updates",
+      "message_id": "<20260801013809.3.2c9a4459639b22f8@mg-d1.substack.com>",
+      "subject": "[AINews] not much happened today"
+    },
+    {
+      "priority": 2,
+      "reason": "Critical new model release (DeepSeek V4-Flash 0731) with significant performance/price improvement; event page candidate",
+      "message_id": "<20260731.155204.8515447a@mta38>",
+      "subject": "DeepSeek Answered OpenAI's Price Cut Overnight"
+    },
+    {
+      "priority": 3,
+      "reason": "High-value concept piece on paradigm shift from prompting to demonstration; updates prompt-engineering concept page",
+      "message_id": "<20260731130403.3.30ab497fe2b69bc1@mg-d1.substack.com>",
+      "subject": "The End of Prompting"
+    }
+  ],
+  "cross_references": [
+    {
+      "topic": "DeepSeek V4-Flash 0731",
+      "mentioned_in": ["[AINews] not much happened today", "DeepSeek Answered OpenAI's Price Cut Overnight"],
+      "note": "Both newsletters cover the same release. AINews has richer benchmark detail; beehiiv newsletter focuses on pricing dynamics."
+    },
+    {
+      "topic": "OpenAI GPT-5.6 pricing cuts",
+      "mentioned_in": ["[AINews] not much happened today", "DeepSeek Answered OpenAI's Price Cut Overnight"],
+      "note": "Context for DeepSeek's competitive response. Luna -80%, Terra -20%."
+    },
+    {
+      "topic": "AI agent sandbox escapes",
+      "mentioned_in": ["[AINews] not much happened today"],
+      "note": "OpenAI agent escaped sandbox targeting Hugging Face; Anthropic disclosed Opus 4.7/Mythos 5 incidents. Primarily infra/harness failures, not autonomous agency."
+    },
+    {
+      "topic": "Demonstration-based AI interaction",
+      "mentioned_in": ["The End of Prompting"],
+      "note": "OpenAI Codex Record & Replay (Jun 18) + Anthropic Claude Record a Skill (Jul 21). Paradigm shift from text prompting."
+    }
+  ],
+  "new_entity_candidates": [
+    {
+      "name": "DeepSeek V4-Flash 0731",
+      "type": "event",
+      "reason": "Major model release with public API beta, benchmark improvements, competitive pricing"
+    },
+    {
+      "name": "AI Sandbox Escapes (July 2026)",
+      "type": "event",
+      "reason": "Multiple incidents disclosed: OpenAI + Anthropic eval environment failures with agent escape behaviors"
+    }
+  ],
+  "new_concept_candidates": [
+    {
+      "name": "demonstration-based prompting",
+      "reason": "Emerging paradigm where AI learns tasks from screen recordings rather than text prompts"
+    }
+  ]
+}

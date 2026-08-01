@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-07-29
+updated: 2026-08-01
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -97,13 +97,25 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | Jun 2026 | Exclusive: OpenAI 2025 Audited Financials | OpenAI lost $38.5B in 2025; $34B total costs; paid Microsoft $17.2B. FT-verified. |
 | Jun 2026 | Premium: The Silicon Valley Bubble (Part 1) | IPO race, $35B Broadcom Anthropic deal with SPV structure, $4.4B pure Anthropic notes |
 | Jun 2026 | Premium: The Silicon Valley Bubble (Part 2) | OpenAI lost $21B in 2025, $34B spend / $13B revenue, SoftBank dependency, Cal Newport comparison, 4-part bubble thesis |
-||| Jul 2026 | Let AI Burn | AI bubble collapse thesis; OpenAI/Anthropic 70% revenue from circular compute spend; $765B+ capex declared worthless; industry told to "go fuck itself" |
-||| Jul 2026 | The OpenAI Bubble | Largest free newsletter. "Lehman Brothers of the AI bubble" thesis — OpenAI collapse would trigger trillions in worthless capex. $852B burn through 2030. "Cult-like psychosis" framing. Synthesis of 6 months of research. |
-||| Jul 2026 | Premium: The Hater's Guide To The Memory Crisis | HBM cost $15.27/GB, $316K per NVL72 rack, $1.894B per 1GW data center; DRAM prices up 60%; memory triopoly (Samsung/SK Hynix/Micron); NVIDIA consumes 65% of all HBM; consumer electronics price hikes |
+| Jul 2026 | Let AI Burn | AI bubble collapse thesis; OpenAI/Anthropic 70% revenue from circular compute spend; $765B+ capex declared worthless; industry told to "go fuck itself" |
+| Jul 2026 | The OpenAI Bubble | Largest free newsletter. "Lehman Brothers of the AI bubble" thesis — OpenAI collapse would trigger trillions in worthless capex. $852B burn through 2030. "Cult-like psychosis" framing. Synthesis of 6 months of research. |
+| Jul 2026 | Premium: The Hater's Guide To The Memory Crisis | HBM cost $15.27/GB, $316K per NVL72 rack, $1.894B per 1GW data center; DRAM prices up 60%; memory triopoly (Samsung/SK Hynix/Micron); NVIDIA consumes 65% of all HBM; consumer electronics price hikes |
+| Jul 2026 | Premium: AI Is Getting Way Too Expensive | Industry TTM revenue $110B < OpenAI's $122B raised in March; $145B less than Q1 2026 AI startup funding; Anthropic/OpenAI economic indices as marketing operations |
 
 ## AI Is Too Expensive (May 2026)
 
 In "AI Is Too Expensive" (May 19, 2026), Zitron published his most comprehensive data-rich analysis of AI economics, providing concrete enterprise case studies to support his circular dependency thesis.
+
+### Premium: AI Is Getting Way Too Expensive (Jul 2026)
+
+In the premium follow-up (July 31, 2026), Zitron added fresh headline numbers to the circular-economy thesis, using Exponential View's deliberately pro-industry analysis against itself:
+
+- **Industry trailing twelve-month revenue ≈ $110B** across the entire industry (including OpenAI and Anthropic's cloud spend) — **$12B less than the $122B OpenAI raised in March** 2026 alone
+- **$145B gap**: the $110B industry TTM revenue is a full $145B less than what all AI startups raised combined in Q1 2026
+- **Economic indices as marketing operations**: Zitron characterizes Anthropic's Economic Index and OpenAI's Economic Research Exchange as marketing vehicles propagating the (wrongheaded) belief that LLMs are leading to massive economic/productivity shifts, citing Anthropic's Head of Economics admitting "no material increase in the unemployment rate to date"
+- **Distraction thesis**: the theoretical jobs debate exists to divert attention from tangible obligations — hundreds of billions in commitments, hyperscaler performance obligations, and VC exposure with little liquidity hope
+
+Source: [[raw/articles/wheresyoured.at--premium-ai-is-getting-way-too-expensive--015669ed.md]]
 
 ### Hyperscaler Capex Analysis
 

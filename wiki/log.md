@@ -1,3 +1,17 @@
+## [2026-08-01] blog-wiki-ingest | 2 pages enriched, 5 pages updated (triage 20260801T101221Z recovered from checkpoint)
+
+- Recovered triage JSON from /opt/data/.hermes/cron/data/blog_ingest/triage_latest.json after blog-triage output parse failure (checkpoint survived; standard recovery path)
+- 20 decisions: 2 takes, 6 references, 12 skips
+- Updated: concepts/deepseek-v4.md (V4-Flash-0731 added to Model Lineup — 304B/167GB, $0.14/$0.27, ahead of MiniMax M3 per Artificial Analysis; new V4-Flash-0731 section)
+- Updated: concepts/mcp-2026-07-28-spec.md (new Tooling & Ecosystem section: mcp-explorer, datasette-mcp, llm-mcp-client; MCP-as-security-boundary argument)
+- Updated: entities/simon-willison.md (4 new July 31 entries: datasette-agent 0.4a0 browser_task, Stateless MCP three implementations, Oxide and Friends podcast, smevals)
+- Updated: entities/ed-zitron.md (Notable Articles row + Premium AI Is Getting Way Too Expensive subsection: $110B TTM vs $122B OpenAI raise; table pipe normalization)
+- Updated: entities/gary-marcus.md (Three Reactions to Anthropic's Latest Apologia section)
+- Updated: concepts/llm-evaluation.md (promoted from stub to active; smevals section with eval/task/config/run vocabulary)
+- Updated: concepts/agentic-engineering-patterns.md (Giles Thomas case study: "AIs identify problems and I fix them myself")
+- SCHEMA.md: added ai-critic tag to taxonomy (used by ed-zitron.md)
+- Sources: raw/articles/simonwillison.net--2026-jul-31-* (5), wheresyoured.at--premium-ai-is-getting-way-too-expensive, garymarcus.substack.com--p-three-reactions-to-anthropicss-latest, gilesthomas.com--2026-07-ai-use
+
 ## [2026-08-01] X Article ingestion | Cerebras GPT-5.6 usage guide (1,470 bookmarks)
 
 - Source: Cerebras (@cerebras) X Article "Getting the most out of GPT-5.6: Sol, Terra, and Luna" (2026-07-27, 1,470 bookmarks, 462K impressions)

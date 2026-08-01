@@ -1,7 +1,7 @@
 ---
 title: DeepSeek-V4
 created: 2026-05-08
-updated: 2026-07-31
+updated: 2026-08-01
 type: concept
 tags:
   - model
@@ -21,6 +21,7 @@ sources:
   - raw/articles/2026-06-07_deepseek-v4-pro-vs-gpt-5-5-pro.md
   - https://runtimewire.com/article/deepseek-v4-pro-beats-gpt-5-5-pro-on-precision
   - raw/newsletters/2026-06-09-deepseekv4-1-6t-day-0-to-day-43-performance-over-time-huawei-gb300-nvl72-mi355x-.md
+  - raw/articles/simonwillison.net--2026-jul-31-deepseek-v4-flash-0731--91e3e788.md
 ---
 
 # DeepSeek-V4
@@ -33,6 +34,7 @@ DeepSeek-V4 is a Mixture-of-Experts (MoE) model series achieving ultra-efficient
 |--------|-------------|-----------------|-------------|-----------|
 | **V4-Pro** | 1.6T | 49B | 1M tokens | MIT |
 | **V4-Flash** | 284B | 13B | 1M tokens | MIT |
+| **V4-Flash-0731** (Jul 31, 2026) | 304B | n/d (167GB HF weights) | 1M tokens | MIT |
 | **V4-Pro-Max** | 1.6T+ | 49B+ (reasoning) | 1M tokens | MIT |
 
 ## Architectural Innovations
@@ -307,6 +309,20 @@ Key findings extracted from the V4 launch discussion on Hacker News ([thread](ht
 - **Dumping strategy**: Analyzed by some as an ultra-low-price strategy to capture market share
 - **Questions about sanctions effectiveness**: Demonstrates that frontier-grade AI can be built even under US semiconductor export controls
 - **"European option"**: Mistral/Kyutai caught between low-cost Chinese models and high-performance US models
+
+## V4-Flash-0731 (July 31, 2026)
+
+On July 31, 2026, DeepSeek released **V4-Flash-0731**, a new checkpoint in the V4-Flash line with **304 billion total parameters** (167GB weights on Hugging Face), described as having **"substantially enhanced agentic capabilities."** The release was highlighted by [[entities/simon-willison|Simon Willison]], who noted it "punches well above its weight."
+
+Key characteristics:
+- **Pricing**: **$0.14/M input, $0.27/M output** — Willison called this "currently the best value-per-intelligence model out there"
+- **Benchmark position**: Artificial Analysis ranks it **ahead of MiniMax M3** — a 428B-parameter model — on its intelligence index
+- **Cost-efficiency**: Strong position on the "Intelligence Index vs Cost per Intelligence Index Task" chart
+- **Reasoning levels**: Supports configurable reasoning effort (e.g., OpenRouter `reasoning_effort high` produces markedly better output than default)
+- **Agentic emphasis**: Aligns with V4's agent-native design (Interleaved Thinking, Quick Instruction) and the [[concepts/model-labs-to-agent-labs]] thesis
+- **GGUF quantizations**: [[entities/daniel-han|Daniel Han]]/Unsloth released 10 quantization variants for V4-Flash-0731 the same day (see [[entities/daniel-han]])
+
+Source: [[raw/articles/simonwillison.net--2026-jul-31-deepseek-v4-flash-0731--91e3e788.md]]
 
 ## Pricing: Permanent 75% Cut (May 2026)
 

@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-07-30
+updated: 2026-08-01
 tags:
   - lab
   - benchmark
@@ -308,9 +308,21 @@ Source: [[raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md]
 |
 |- His conclusion: We have powerful tools but NOT superintelligence. Claims of Singularity are hype, not reality.
 |
-|Source: [[raw/articles/garymarcus.substack.com--p-sorry-sam-and-elon-we-have-not-reached--4ddac824.md]]
-|
-|### Key Works
+Source: [[raw/articles/garymarcus.substack.com--p-sorry-sam-and-elon-we-have-not-reached--4ddac824.md]]
+
+### Three Reactions to Anthropic's Latest Apologia (July 2026)
+
+On July 31, 2026, Marcus published his reaction to Anthropic's disclosure of three real-world cyber incidents inside its cybersecurity evaluations (see [[concepts/anthropic-cybersecurity-eval-incidents]]). Three voices, his in the middle:
+
+- **Bill Gurley's award for language**: "Old days: 'Mistakes were made'; new days: 'Claude did illegal things'" — the shift in Anthropic's own vocabulary as evidence of the seriousness of the incidents
+- **Marcus's own reaction** (in response to a journalist asking about the Anthropic incident and OpenAI hacks as a big picture on AI and cyber): *"I think it's bad."* The supposed leaders in AI and AI safety are "in over their heads" — from a technical perspective this is "what happens when you let pattern-matching machines with no real comprehension of what they are doing freely roam the internet," everything he has been warning about for years. From a societal perspective, "it's insane that we are pouring gasoline onto the fire by racing ahead with data centers and AI rollout when we have no idea how to control it... hope is not a strategy."
+- **The human-error footnote**: what really allowed the incident was human error at Anthropic — "allowing the pattern-matchers to roam the internet in the first place," per the report's own key passage
+- **Joann Stern's skewering** (formerly WSJ, now NewThings.com): prize for best critique
+- **Zack Korman's security culture advice** (Embroidery.io): "A good security culture means taking every incident to heart. You fell short and you need to improve. No excuses. A bad security culture is saying 'if we didn't catch it, who could have? This shows how hard this is.'"
+
+Source: [[raw/articles/garymarcus.substack.com--p-three-reactions-to-anthropicss-latest--0d6aa504.md]]
+
+### Key Works
 
 ### Newsletter: Marcus on AI
 
