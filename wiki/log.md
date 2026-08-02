@@ -311,16 +311,16 @@ Non-AI (plants, lightbulbs, Nintendo lawsuit, TV sticks, political journalism), 
 
 | Article | Decision | Reason |
 |---------|----------|--------|
-| The OpenAI Bubble (Ed Zitron, wheresyoured.at) | skip | entities/ed-zitron.md の Timeline（Lehman Brothers of the AI bubble・$852B burn through 2030・cult-like psychosis）に加え、concepts/ai-bubble-economics.md（483行）が $852B cashflow 要件・$748B RPO、concepts/ai-bubble.md・ai-industry-economics.md・subprime-data-center-crisis.md にも同数値・Lehman テーゼが文書化済み |
-| Adam Brown — general relativity (Dwarkesh) | skip | 非AI・物理学ポッドキャスト（blog-triage 2026-07-11 archived skip 済み） |
-| WebKit in Safari 27 beta (webkit.org) | skip | 非AI・ブラウザリリースノート（blog-triage 2026-06-25 archived skip 済み） |
-| Lemote Yeeloong laptop + OpenBSD (oldvcr) | skip | 非AI・レトロコンピューティング（blog-triage 2026-06-28 archived skip 済み） |
-| LLM from scratch part 34b — GPT-2 Small in JAX (Giles Thomas) | skip | entities/giles-thomas.md が Part 34b セクションで詳細文書化済み（loss 3.418784・76.93M params・JAX/Flax NNX・burn-in 結果）。entities/gilesthomas.md も sources に同一 raw article。dreaming-triage 2026-07-09 archived skip 済み |
+| The OpenAI Bubble (Ed Zitron, wheresyoured.at) | skip | Already documented in entities/ed-zitron.md Timeline (Lehman Brothers of the AI bubble, $852B burn through 2030, cult-like psychosis); concepts/ai-bubble-economics.md (483 lines) covers the $852B cashflow requirement and $748B RPO; concepts/ai-bubble.md, ai-industry-economics.md, and subprime-data-center-crisis.md also document the same figures and the Lehman thesis |
+| Adam Brown — general relativity (Dwarkesh) | skip | Non-AI physics podcast (blog-triage 2026-07-11 archived skip) |
+| WebKit in Safari 27 beta (webkit.org) | skip | Non-AI browser release notes (blog-triage 2026-06-25 archived skip) |
+| Lemote Yeeloong laptop + OpenBSD (oldvcr) | skip | Non-AI retrocomputing (blog-triage 2026-06-28 archived skip) |
+| LLM from scratch part 34b — GPT-2 Small in JAX (Giles Thomas) | skip | Already documented in detail in entities/giles-thomas.md Part 34b section (loss 3.418784, 76.93M params, JAX/Flax NNX, burn-in results). entities/gilesthomas.md also lists the same raw article in sources. dreaming-triage 2026-07-09 archived skip |
 
 ### Pipeline
-- **processed_raw_articles.json**: 5件を `done`/`skip` として記録（10:00収集バッチの再選択防止）。
-- archive_triage.py raw_backlog --keep-reference 実行: 全5件 dedup（既に archive_index に登録済み）。
-- 新規ページ・エンティティ更新なし。index.md 変更なし。
+- **processed_raw_articles.json**: 5 items recorded as `done`/`skip` (prevents re-selection in the 10:00 collection batch).
+- Ran archive_triage.py raw_backlog --keep-reference: all 5 items deduped (already registered in archive_index).
+- No new pages or entity updates. index.md unchanged.
 
 ---
 
@@ -332,19 +332,19 @@ Non-AI (plants, lightbulbs, Nintendo lawsuit, TV sticks, political journalism), 
 
 | Article | Decision | Reason |
 |---------|----------|--------|
-| Reframing Superintelligence (Drexler FHI-TR-2019-1) | skip | Archived + concepts/cais.md (169行) と entities/k-eric-drexler.md が sources に含め完全文書化 |
-| MAI-Thinking-1 Tech Report (109p) | skip | entities/mai-thinking-1.md (196行) + concepts/mai-thinking-1-tech-report.md (227行) + concepts/mai-thinking.md が sources に含め完全文書化（7/28 に microsoft-mai-models.md も拡充） |
-| BenchFlow Awesome Agent Evals | skip | concepts/ai-benchmarks/benchflow-tool.md (118行) が10セクション・Must-Read 12選・編集手法まで文書化 |
-| Poolside Latent Space (Eiso Kant) | skip | entities/poolside.md (136行) + entities/eiso-kant.md (110行) が sources に含め Model Factory 詳細まで文書化（7/28 拡充済み） |
-| Grant Sanderson — AI and the future of math | skip | Archived + entities/grant-sanderson.md (140行) が leading indicator・fractal frontier・verification loop まで文書化 |
+| Reframing Superintelligence (Drexler FHI-TR-2019-1) | skip | Archived + fully documented in concepts/cais.md (169 lines) and entities/k-eric-drexler.md via sources |
+| MAI-Thinking-1 Tech Report (109p) | skip | Fully documented via sources in entities/mai-thinking-1.md (196 lines) + concepts/mai-thinking-1-tech-report.md (227 lines) + concepts/mai-thinking.md (microsoft-mai-models.md also expanded on 7/28) |
+| BenchFlow Awesome Agent Evals | skip | concepts/ai-benchmarks/benchflow-tool.md (118 lines) documents all 10 sections, the Must-Read 12 picks, and editorial methods |
+| Poolside Latent Space (Eiso Kant) | skip | entities/poolside.md (136 lines) + entities/eiso-kant.md (110 lines) document details through Model Factory via sources (expanded 7/28) |
+| Grant Sanderson — AI and the future of math | skip | Archived + entities/grant-sanderson.md (140 lines) documents leading indicator, fractal frontier, and verification loop |
 
 ### Pipeline fix
-- **processed_raw_articles.json**: 5件を `done`/`skip` として記録。これまで triage JSON は保存されていたが tracking が未更新のため、同一5記事が 7/29, 7/30, 7/31 と3回連続で再選択されていたループを解消。
-- archive_triage.py 実行: 全5件 dedup（既に archive_index に登録済み）。
+- **processed_raw_articles.json**: 5 items recorded as `done`/`skip`. Fixed a loop where the same 5 articles had been re-selected 3 times in a row (7/29, 7/30, 7/31) because the triage JSON was saved but tracking was not updated.
+- Ran archive_triage.py: all 5 items deduped (already registered in archive_index).
 
 ### Fixed
-- `entities/eric-drexler.md` — 破損 YAML frontmatter を修復（`tags:` と `sources: []` の順序逆転・dangling list）
-- `entities/grant-sanderson-3blue1brown.md` — 同上の破損 YAML frontmatter を修復
+- `entities/eric-drexler.md` — repaired corrupted YAML frontmatter (reversed `tags:` and `sources: []` order, dangling list)
+- `entities/grant-sanderson-3blue1brown.md` — repaired the same corrupted YAML frontmatter
 
 ## [2026-07-31] manual-ingest | Ingested Anthropic cybersecurity evaluation incidents article
 
@@ -805,7 +805,7 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 ---
 ## 2026-07-25
 
-- **22:30 UTC** [Xアカウントスキャン] Drew Breunig (@dbreunig) の新規プロジェクト drskill、skilled-proposer、ブログ記事「Separating Task from Model」を entities/drew-breunig.md とサブページに追加。GEPA概念ページに skilled-proposer 参照を追加。raw記事として cmpnd.ai ブログ記事と Armin Ronacher「Codeberg Divides」を保存
+- **22:30 UTC** [X account scan] Added Drew Breunig (@dbreunig) new projects drskill and skilled-proposer, plus the blog post "Separating Task from Model" to entities/drew-breunig.md and subpages. Added a skilled-proposer reference to the GEPA concept page. Saved the cmpnd.ai blog post and Armin Ronacher's "Codeberg Divides" as raw articles
 
 ---
 ## [2026-07-25] Dreaming consolidation — saturation pass (Takes=0, Refs=3)

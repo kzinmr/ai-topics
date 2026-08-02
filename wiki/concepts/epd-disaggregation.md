@@ -24,7 +24,7 @@ updated: 2026-04-27
 
 **EPD (Encoder-Prefill-Decode) Disaggregation** is a three-tier serving architecture for Vision-Language Models (VLMs) in [[entities/sglang]]. It separates vision encoding from language processing, enabling independent scaling of encoder servers without affecting language model deployment.
 
-Developed by rednote hilab (小红书), Alibaba Cloud Computing, and AntGroup SCT.
+Developed by rednote (Xiaohongshu), Alibaba Cloud Computing, and AntGroup SCT.
 
 ## Key Problem
 

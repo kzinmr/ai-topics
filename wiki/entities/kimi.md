@@ -17,7 +17,7 @@ sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[ra
 
 # Moonshot AI / Kimi
 
-> **Moonshot AI** (月之暗面, *Yuè Zhī Ànmiàn* — "Dark Side of the Moon") is a Beijing-based Chinese AI company and one of China's "AI Tigers." Founded in March 2023 by Tsinghua University alumni, the company is best known for its **Kimi** series of large language models and the eponymous chatbot, which pioneered ultra-long context windows. Moonshot has established a reputation for open-weight releases and competitive performance against frontier Western models.
+> **Moonshot AI** (*Yuè Zhī Ànmiàn* — "Dark Side of the Moon") is a Beijing-based Chinese AI company and one of China's "AI Tigers." Founded in March 2023 by Tsinghua University alumni, the company is best known for its **Kimi** series of large language models and the eponymous chatbot, which pioneered ultra-long context windows. Moonshot has established a reputation for open-weight releases and competitive performance against frontier Western models.
 
 ---
 

@@ -21,7 +21,7 @@ MiniMax is a Chinese AI company and one of the country's leading AI labs, known 
 
 ## M2.7 in Context
 
-M2.7 was released within a 12-day window alongside Kimi K2.6 (Moonshot AI) and Z.ai GLM-5.1 (Z.ai/智谱), with all three scoring in the 56-59 range on SWE-Bench Pro. This convergence demonstrates rapid knowledge diffusion among Chinese AI labs and challenges the "China is six to nine months behind" narrative for agentic coding capabilities.
+M2.7 was released within a 12-day window alongside Kimi K2.6 (Moonshot AI) and Z.ai GLM-5.1 (Z.ai/Zhipu), with all three scoring in the 56-59 range on SWE-Bench Pro. This convergence demonstrates rapid knowledge diffusion among Chinese AI labs and challenges the "China is six to nine months behind" narrative for agentic coding capabilities.
 
 ## Competitive Position
 

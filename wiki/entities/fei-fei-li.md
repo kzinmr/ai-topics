@@ -13,7 +13,7 @@ type: entity
 
 | Item | Details |
 |------|------|
-| **Full Name** | Fei-Fei Li (李飞飞) |
+| **Full Name** | Fei-Fei Li |
 | **Date of Birth** | 1976 |
 | **Place of Birth** | Beijing, China |
 | **Nationality** | Chinese-American |

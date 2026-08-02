@@ -214,7 +214,7 @@ This metaphor captures Doctorow's core argument: scaling AI investment (more GPU
 
 ### Discernment — Expertise as Prerequisite for AI Utility (July 2026)
 
-In \"[Discernment](https://pluralistic.net/2026/07/28/hitl-ers/)\" (July 28, 2026), Doctorow articulates a crucial constraint on who can actually benefit from AI tools — the **Discernment condition**. The Japanese term 識別力 (shikibetsuryoku) captures the idea: the capacity to critically evaluate and discriminate between good and bad AI output, which requires genuine domain expertise.
+In \"[Discernment](https://pluralistic.net/2026/07/28/hitl-ers/)\" (July 28, 2026), Doctorow articulates a crucial constraint on who can actually benefit from AI tools — the **Discernment condition**. The Japanese term for discernment, *shikibetsuryoku*, captures the idea: the capacity to critically evaluate and discriminate between good and bad AI output, which requires genuine domain expertise.
 
 **The Terrence Tao Example**: Doctorow opens with MacArthur Prize-winning mathematician Terrence Tao's conversation with ChatGPT about the Jacobian Conjecture counterexample. Tao, a Fields Medalist, could productively bounce ideas off a chatbot because he had the mathematical expertise to judge correctness. Doctorow, despite being \"reasonably math literate,\" confesses he lacks the discernment to evaluate whether the chatbot's mathematical output is brilliant or nonsense — he \"couldn't make an *a priori* judgment about which one was a solid piece of mathematical theorizing and which one was a math-flavored word-salad.\"
 

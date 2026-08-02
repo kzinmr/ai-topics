@@ -734,7 +734,7 @@
 - [[entities/shopify]] — Shopify
 - [[entities/shortcut]] — Shortcut (AI Spreadsheet Agent)
 - [[entities/shreya-shankar]] — Shreya Shankar
-- [[entities/shunyu-yao]] — Shunyu Yao (姚顺雨)
+- [[entities/shunyu-yao]] — Shunyu Yao
 - [[entities/shuvendu]] — Shuvendu K. Lahiri
 - [[entities/sid]] — SID AI
 - [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026)
