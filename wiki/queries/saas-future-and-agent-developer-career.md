@@ -1,10 +1,10 @@
 ---
 title: "SaaS Future and AI Agent Developer Career Strategy"
 created: 2026-05-27
+updated: 2026-08-02
 query_date: 2026-05-27
 type: query
 tags:
-sources: []
   - product
   - ai-agents
   - career-strategy
@@ -13,6 +13,7 @@ sources: []
   - fde
   - agent-native
   - mcp
+sources: []
 aliases:
   - "saas-agent-strategy"
   - "post-saas-career"

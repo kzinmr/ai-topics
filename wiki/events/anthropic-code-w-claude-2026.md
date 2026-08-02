@@ -1,5 +1,6 @@
 ---
 title: "Anthropic Code w/ Claude 2026"
+type: event
 url: "https://wiki.ai-topics/events/anthropic-code-w-claude-2026"
 date: 2026-05-06
 tags: [event, anthropic, claude-code, coding-agents]

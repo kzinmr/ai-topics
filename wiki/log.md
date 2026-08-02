@@ -1,3 +1,17 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-08-02] watchdog | auto-fix log header burial + 2 frontmatter fixes
+
+- RESTORED: `# Wiki Log` header to line 1 in log.md (was buried at line 32 by raw-backlog-ingest prepend). 3 orphaned entries moved after header block; 231 entries preserved, 0 pipe corruption.
+- FIXED: `wiki/events/anthropic-code-w-claude-2026.md` — added missing `type: event` frontmatter field.
+- FIXED: `wiki/queries/saas-future-and-agent-developer-career.md` — repaired malformed frontmatter (`tags:` list items sat after `sources: []`); tags block restored under `tags:`, `sources: []` moved after, added missing `updated: 2026-08-02`.
+- Verified: validate_index.py exit 0; index corruption (pipe/triple-bracket/line-number/space-prefix) all 0; index coverage gap 0 genuine (tim-sherratt is redirect, 2 _archive files intentional); log header at line 1.
+
+---
+
 ## [2026-08-02] raw-backlog-ingest (14:00) | 1 concept created, 2 pages enriched, 5 articles processed
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-02 14:00, run 20260802T140007Z).
 - CREATED: [[concepts/post-training/rl-environments]] — RL Environments (RLEF): environment engineering for RL post-training (latency/reliability/security, CPU-only env servers, world-model/digital-twin environments, environment compute). Source: SemiAnalysis "Scaling RL" (Jun 10).
@@ -29,9 +43,7 @@ DISCOVERY: HN Algolia (15 stories), X/Twitter xurl (10 results), blogwatcher DB 
 - Skip (5): dup beehiiv tracking link, author X profile, batch meta links 4-15 (product/subscription/social/footer/expired), beehiiv hosted page, status tracking pixel. Archived via archive_triage.py.
 - Triage checkpoint recovered from /opt/data/.hermes/cron/data/newsletter/triage_latest.json (upstream response render failure; checkpoint valid).
 
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
+---
 
 ## [2026-08-02] blog-triage (10:30) | 20 articles scanned, 3 entities/pages updated
 
