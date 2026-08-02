@@ -2,6 +2,18 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-02] raw-backlog-ingest (10:00) | 1 entity enriched, 5 articles processed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-02 10:00, run 20260802T100016Z). Archive: 4 newly archived, 1 dedup_skipped (archive_index total 2,164). Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (0 take / 1 reference / 4 skip).
+
+**Enriched:**
+- [[entities/ben-boyter]] — Bonzamate section expanded from 1-line mention to sourced description: AWS Lambda-only Australian search engine (bonzamate.com.au), index baked into Lambda binaries at compile time using bitfunnel-style bloom filters (2048-bit/doc, uint64 slices, 50MB/zip + 75GB free storage exploitation, ~100K docs/lambda × 1000 lambdas ≈ 100M pages), shut down 2025-05 when AWS closed the Lambda storage loophole (service-terms #30). Added article URL to sources + Blog section. Source: raw/articles/boyter.org--posts-abusing-aws-to-make-a-search-engine--35e404ea.md
+
+**Skipped (already captured / non-AI):**
+- (1)+(2) substack app-link AINews "Good Friday" 2026-04-10 (2 tracking-URL variants of post_id=193117526) → skip: both already referenced in [[entities/substack]] + [[entities/luke-curley]] References; topics (Gemma 4 Apache 2.0 launch + local inference benchmarks, Hermes Agent adoption/memory plugins, Claude Code rate limits, METR time horizon, RLMs, Apple SSD, MAI-Transcribe-1) all covered by [[entities/gemma-4]] (433 lines), [[concepts/gemma-family]], [[concepts/recursive-language-models]], [[concepts/microsoft-mai-models]], [[entities/hermes-agent]].
+- (3) michael.stapelberg.ch Go rsync vulnerability analysis → skip: non-AI (Go memory safety vs C rsync CVEs), already archived 2026-05-25 by blog triage (raw/archived/triage/blog/2026-05-25_20260525T070051Z.json).
+- (4) chiark.greenend.org.uk Spectre tiling combinatorial coordinates → skip: non-AI math essay, already in [[entities/chiark-greenend-org-uk-sgtatham]] References + aperiodic-tilings section covers the series.
+
 ## [2026-08-01] raw-backlog-ingest | Enriched LLVM concept (Flang/Fortran) + Brutecat entity (StubZero RCE)
 
 - **[[concepts/llvm]]** (stub -> full, 25 -> ~90 lines): Enriched from LLVM Blog "LLVM Fortran Levels Up: Goodbye flang-new, Hello flang!" (Mar 2025). Added core components (LLVM IR, Clang, MLIR, Flang), Flang timeline table (PGI 1989 -> NVIDIA 2013 -> F18/FIR 2018-19 -> flang rename Oct 2024 -> LLVM 20.1 Mar 2025), HLFIR/SPEC2017/OpenMP technical highlights, Fortran context (80% of ARCHER2 apps), and AI relevance (MLIR underpins accelerator compiler stacks, TensorFlow, torch-mlir; Chris Lattner -> Modular). Registered `compiler` tag in SCHEMA.md. Source: raw/articles/blog.llvm.org--posts-2025-03-11-flang-new--8f37a052.md

@@ -9,12 +9,13 @@ tags:
 status: complete
 description: "Creator of searchcode.com, scc (Sloc Cloc and Code), and cs (Code Spelunker). Author of the 'Marketing to the Machine' B2A thesis."
 created: 2026-04-30
-updated: 2026-05-08
+updated: 2026-08-02
 sources:
   - "https://boyter.org/about/"
   - "https://github.com/boyter"
   - "https://boyter.org/posts/searchcode-is-being-rebooted/"
   - "https://boyter.org/posts/searchcode-has-been-rebooted/"
+  - "https://boyter.org/posts/abusing-aws-to-make-a-search-engine/"
   - "https://x.com/boyter"
 related:
   - "[[entities/searchcode-com]]"
@@ -52,7 +53,7 @@ Code search CLI with smart ranking, regex, and structural filters. Go-based. [gi
 - **lc** (License Checker): CLI tool for software license identification. [github.com/boyter/lc](https://github.com/boyter/lc)
 - **hashit**: Cross-platform file hashing tool. [github.com/boyter/hashit](https://github.com/boyter/hashit)
 - **searchcode-server**: Self-hosted code search engine (archived Nov 2025). Java/FreeMarker/CSS.
-- **Bonzamate**: Australian search engine built on AWS Lambda.
+- **Bonzamate**: Australian search engine built on AWS Lambda (shut down 2025 when AWS closed the Lambda storage loophole). Notable for baking the search index into Lambda binaries at compile time using bitfunnel-style bloom filters. See [Abusing AWS Lambda to make an Aussie Search Engine](https://boyter.org/posts/abusing-aws-to-make-a-search-engine/).
 - **Bogan Ipsum**: Australian-themed lorem ipsum generator. [boganipsum.com.au](https://boganipsum.com.au/)
 - **Decoding CAPTCHAs**: Influential technical article about CAPTCHA recognition.
 
@@ -73,6 +74,7 @@ Key points:
 Blog at [boyter.org](https://boyter.org/) covering code search, testing, Go, search engines, and AI infrastructure topics. Recent posts include:
 - Marketing to the Machine (Mar 2026)
 - LOCOMO: LLM Output Cost Model (Mar 2026)
+- Abusing AWS Lambda to make an Aussie Search Engine (Bonzamate, updated 2025)
 - Code Spelunker CLI Tool Redux (Feb 2026)
 - Boilerplate Tax: Ranking languages by density (Feb 2026)
 - searchcode.com reboot (Aug 2025, Mar 2026)

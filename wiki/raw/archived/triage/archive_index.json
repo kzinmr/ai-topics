@@ -113,6 +113,7 @@
     "https://borretti.me/article/how-to-read-more",
     "https://borretti.me/article/human-routers-of-machine-words",
     "https://borretti.me/article/on-vulgar-materialism",
+    "https://boyter.org/posts/abusing-aws-to-make-a-search-engine/",
     "https://brutecat.com/articles/google-cloud-rce",
     "https://build.nvidia.com/openshell",
     "https://builders.ramp.com/post/stack-benchmarking",
@@ -1513,6 +1514,8 @@
     "https://substack.com/app-link/post?...show_logo",
     "https://substack.com/app-link/post?...show_title",
     "https://substack.com/app-link/post?...submitLike=true",
+    "https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2...XajU",
+    "https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...XajU",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=199994886&utm_source=post-email-title",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=200249307",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=200432443&utm_source=post-email-title",
@@ -1771,6 +1774,7 @@
     "https://www.capitalone.com/tech/open-source/announcing-vulnhunter/",
     "https://www.cerebras.ai/blog/how-we-built-our-knowledge-base",
     "https://www.chatprd.ai/how-i-ai/my-gpt-56-sol-benchmark-game-changing-workflows",
+    "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-spectre/",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/c11-generic/",
     "https://www.cmpnd.ai/blog/separating-task-from-model.html",
     "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
@@ -2161,5 +2165,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-01T18:25:46.921841+00:00"
+  "updated": "2026-08-02T10:12:48.773833+00:00"
 }

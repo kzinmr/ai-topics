@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-02T10:12:48.773311+00:00",
+  "triage_run_id": "20260802T100016Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest 5記事バッチ（2026-08-02 10:00）: AINews 2026-04-10号の2ファイル（重複）は既存エンティティで参照済み・トピック全カバー、Stapelberg rsync脆弱性記事は非AIで2026-05-25に既アーカイブ、Tatham Spectre数学エッセイは非AIかつエンティティ参照済み。唯一の実処理は Boyter の AWS Lambda 検索エンジン記事を [[entities/ben-boyter]] へ reference 追加（Bonzamate 節をソース付きで拡充）。takes 0、references 1、skips 4。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-ainews-good-friday-014d59b5",
+      "source": "raw_backlog",
+      "source_name": "AINews (Latent Space)",
+      "title": "[AINews] Good Friday (2026-04-10 issue)",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...XajU",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--014d59b5.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存カバー済み: AINews 2026-04-10 号。rawファイルは [[entities/substack.md]] (References L49) と [[entities/luke-curley.md]] (References L115) に既に参照済み。本文の主要トピック（Gemma 4 Apache 2.0 リリース・ローカル推論ベンチ、Hermes Agent 採用/メモリプラグイン、Claude Code レート制限、METR time horizon、RLM 再帰的文脈管理、Apple SSD、MAI-Transcribe-1）は既存ページ（[[entities/gemma-4]] 433行、[[concepts/gemma-family]]、[[concepts/recursive-language-models]]、[[concepts/microsoft-mai-models]]、[[entities/hermes-agent]] 等）で詳細カバー済み。新規情報なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# [AINews] Good Friday\nSource: https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMxMTc1MjYs"
+    },
+    {
+      "item_id": "raw-backlog-ainews-good-friday-d3f5434c",
+      "source": "raw_backlog",
+      "source_name": "AINews (Latent Space)",
+      "title": "[AINews] Good Friday (2026-04-10 issue, post-email-title variant)",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2...XajU",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--d3f5434c.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同一AINews号の重複（post_id=193117526、014d59b5 と同じ内容・別トラッキングURL）。rawファイルは [[entities/substack.md]] (References L170) と [[entities/luke-curley.md]] (References L114) に既に参照済み。既存カバー済みのため追加処理不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# [AINews] Good Friday\nSource: https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMxMTc1MjYsImlhdCI6MTc3NTI1NDA0NSwiZXhwIjoxNzc3ODQ2MDQ1LCJpc3MiO"
+    },
+    {
+      "item_id": "raw-backlog-tatham-aperiodic-spectre",
+      "source": "raw_backlog",
+      "source_name": "chiark.greenend.org.uk/~sgtatham",
+      "title": "Combinatorial coordinates for the aperiodic Spectre tiling",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-spectre/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-spectre--ed40eb98.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ: Simon Tatham の数学エッセイ（aperiodic Spectre タイリングの組合せ座標、2023-06-16）。AI/LLM無関係。rawファイルは [[entities/chiark-greenend-org-uk-sgtatham]] の References L120 に既に参照済みで、同ページの「Mathematical Curiosities as Engineering Practice」節が aperiodic tilings シリーズ全体をカバー。追加処理不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Combinatorial coordinates for the aperiodic Spectre tiling\nSource: https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-spectre/\nCombinatorial coordinates for the aperiodic Spectre tiling\n[Simon Tatham, 2023-06-16]\n[Part of a series:\nPenrose and hats\n|\nSpectres\n|\nfinite-state transduce"
+    },
+    {
+      "item_id": "raw-backlog-boyter-aws-lambda-search-engine",
+      "source": "raw_backlog",
+      "source_name": "boyter.org",
+      "title": "Abusing AWS Lambda to make an Aussie Search Engine",
+      "url": "https://boyter.org/posts/abusing-aws-to-make-a-search-engine/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/boyter.org--posts-abusing-aws-to-make-a-search-engine--35e404ea.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ エンティティ参照追加: bonzamate.com.au（豪州向け検索エンジン）を AWS Lambda だけで構築した事例記事。インデックスをコンパイル時に Lambda バイナリへ焼き込み（bitfunnel/bloom filter、50MB制限・75GB無料ストレージ活用）、2025-05 AWS が規約変更で閉鎖。[[entities/ben-boyter]] の Bonzamate 記載（1行）を本記事ソース付きで拡充し、sources に URL 追加。AI/LLM直結ではないが、Boyter の検索エンジン技術基盤（searchcode/B2A の前提）として文脈価値あり。",
+      "candidate_wiki_path": "entities/ben-boyter.md",
+      "body_excerpt": "# Abusing AWS Lambda to make an Aussie Search Engine\nSource: https://boyter.org/posts/abusing-aws-to-make-a-search-engine/\nUPDATE 2025-05-19\nSomewhat un-suprisingly AWS has closed the loophole that I was exploiting for this\nhttps://aws.amazon.com/service-terms/#30._AWS_Lambda\nand as such compiling d"
+    }
+  ]
+}
