@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (871 pages)
+## Entities (874 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -455,6 +455,7 @@
 - [[entities/larsen-cundric]] — Larsen Cundric
 - [[entities/late-interaction]] — Late Interaction Workshop (LIR) @ ECIR 2026
 - [[entities/lcamtuf]] — Michał Zalewski (lcamtuf)
+- [[entities/learnvector]] — LearnVector — Andrew Ng's AI edtech company; $100M Coursera investment; one-to-one AI-powered learning platform with adaptive tutoring (Aug 2)
 - [[entities/lee-robinson]] — Lee Robinson — Model behavior at Cursor AI, former VP of Product at Vercel; accessible explanations of model training (pretraining → SFT → RL → alignment)
 - [[entities/lenny]] — Lenny Rachitsky
 - [[entities/lester-solbakken]] — Lester Solbakken
@@ -876,7 +877,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1932 pages)
+## Concepts (1954 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer

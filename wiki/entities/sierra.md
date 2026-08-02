@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-07-17
+updated: 2026-08-03
 type: entity
 tags:
   - company
@@ -12,6 +12,8 @@ tags:
   - benchmark
   - evaluation
   - lab
+  - fintech
+  - partnership
 sources:
   - raw/newsletters/2026-05-04-ainews-the-other-vs-the-utility.md
   - https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html
@@ -25,6 +27,7 @@ sources:
   - raw/articles/sierra.ai--blog-pinecone-harnessing-the-wisdom-of-the-workforce--93ed8565.md
   - raw/articles/2026-07-14_sohmray_icml-2026-research-trends.md
   - raw/articles/2026-07-16_sierra_horizon-long-horizon-agents.md
+  - raw/articles/2026-08-03_sierra_plaid-partnership-ai-agents.md
 ---
 
 # Sierra
@@ -191,6 +194,21 @@ Bret Taylor frames Horizon's two key theses:
 Horizon represents a shift from customer *experience* agents to customer *outcome* agents — the difference between answering a question and closing a sale.
 
 Source: [[raw/articles/2026-07-16_sierra_horizon-long-horizon-agents]]
+
+### Plaid Partnership — Financial Infrastructure for AI Agents (August 2026)
+
+Sierra announced a partnership with Plaid to integrate financial infrastructure directly into Sierra's AI agent platform. This is Sierra's first concrete financial infrastructure integration, bridging conversational AI agents and fintech.
+
+**Key details:**
+
+- **Secure bank account connections**: Customers can securely connect bank accounts with Plaid directly within Sierra's AI agent interface, without leaving the agent conversation
+- **From Q&A to transactions**: Moves agents beyond conversational interfaces — agents can now check balances, initiate transfers, and complete real business transactions on behalf of users
+- **Built on Horizon**: Leverages Sierra's [[concepts/long-horizon-agents|Horizon]] platform for long-horizon agent capabilities, turning multi-step financial workflows into completed outcomes
+- **Bridges AI and fintech**: First partnership to directly embed financial APIs inside a conversational AI agent platform at enterprise scale
+
+The Plaid integration represents a concrete step toward agents that don't just answer questions but complete business outcomes — extending Sierra's outcome-based pricing thesis into the financial services domain.
+
+Source: [[raw/articles/2026-08-03_sierra_plaid-partnership-ai-agents]]
 
 ## Significance
 

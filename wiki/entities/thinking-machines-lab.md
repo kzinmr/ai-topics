@@ -2,7 +2,7 @@
 title: "Thinking Machines Lab"
 type: entity
 created: 2026-07-11
-updated: 2026-07-11
+updated: 2026-08-02
 tags:
   - company
   - lab
@@ -15,6 +15,7 @@ tags:
   - human-in-the-loop
 sources:
   - raw/articles/thinkingmachines.ai--blog-the-future-worth-building-is-human--7fe53b6e.md
+  - raw/articles/2026-07-31_thinking-machines-lab_safe-path-to-open-weights.md
 ---
 
 # Thinking Machines Lab
@@ -69,7 +70,7 @@ sources:
 
 ### Benchmarks
 
-Inkling achieves an **Intelligence Index of 41**, surpassing [[entities/NVIDIA|NVIDIA]]'s Nemotron 3 Ultra (38) as the best-performing US-based open-weights model. It demonstrates strong performance across graduate-level scientific reasoning, competition mathematics, software engineering, browser-based tasks, visual document understanding, and audio comprehension. Inkling is also post-trained on forecasting and calibrated prediction tasks.
+Inkling achieves an **Intelligence Index of 41**, surpassing [[entities/nvidia|NVIDIA]]'s Nemotron 3 Ultra (38) as the best-performing US-based open-weights model. It demonstrates strong performance across graduate-level scientific reasoning, competition mathematics, software engineering, browser-based tasks, visual document understanding, and audio comprehension. Inkling is also post-trained on forecasting and calibrated prediction tasks.
 
 ### Variants
 
@@ -81,8 +82,8 @@ Inkling achieves an **Intelligence Index of 41**, surpassing [[entities/NVIDIA|N
 ### Ecosystem Support (Day 0)
 
 Inkling received broad day-0 ecosystem support from major inference and development platforms:
-- **Inference**: [[entities/together-ai|Together AI]] (serverless, FlashAttention-4 kernel), [[concepts/modal|Modal]] (Managed Endpoints, 250 tok/s/user on 8×B200 with DFlash speculation), Baseten, Databricks, Hugging Face
-- **Open-source frameworks**: [[concepts/vllm|vLLM]], [[concepts/sglang|SGLang]], Unsloth Studio (local deployment with tool calling)
+- **Inference**: [[entities/together-ai|Together AI]] (serverless, FlashAttention-4 kernel), [[entities/modal-labs|Modal]] (Managed Endpoints, 250 tok/s/user on 8×B200 with DFlash speculation), Baseten, Databricks, Hugging Face
+- **Open-source frameworks**: [[concepts/inference/vllm|vLLM]], [[concepts/inference/sglang|SGLang]], Unsloth Studio (local deployment with tool calling)
 - **Quantization**: [[entities/daniel-han|Unsloth]] produced 1-bit GGUF quants (86% smaller, 74.2% accuracy retention), enabling consumer-hardware deployment
 
 ### Inference Performance
@@ -110,6 +111,26 @@ On Modal's infrastructure (8× B200 GPUs), Inkling achieves 250 tokens/second pe
 - Extending personhood to **artificial** constructs (corporations) has been catastrophic
 - They aim to give people stronger tools for shaping AI safely, not to take away ownership
 
+## Open Weights Safety Framework (July 2026)
+
+In July 2026, Thinking Machines Lab published [A Safe Path to Open Weights](https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/), a comprehensive framework for safely releasing open-weight AI models. The core thesis: **strategic openness can strengthen AI safety** while supporting broader access as defenses and safety science mature.
+
+### Framework Elements
+
+- **Model-level considerations**: Robust safety testing before release; research into whether dangerous capabilities can be decoupled from general intelligence; evaluation for misuse potential (CBRN, cyber, autonomous replication)
+- **Ecosystem readiness**: Assess the safety infrastructure available at release time — can independent auditors, red-teamers, and researchers effectively inspect and monitor the model?
+- **Staged release**: Progressive deployment with safety gates, not binary open/closed. Early restricted access for safety researchers, expanding to broader access as ecosystem defenses mature
+- **Irreversibility principle**: Open-weight release is permanent — once weights are public, they cannot be recalled. This makes pre-release safety evaluation categorically different from API-gated deployment
+
+### Key Arguments
+
+- Open weights enable **independent safety research**, auditing, and reproducibility that closed models prevent
+- Model weights contain **inspectable training choices** — openness allows the community to verify claims about training data, safety techniques, and alignment methods
+- The safety benefits of openness (many eyes, distributed verification, diversity of safety approaches) must be weighed against irreversible misuse risks
+- TML advocates a **middle path** between fully closed (OpenAI, Anthropic) and fully open (unrestricted release) — one that maximizes safety benefits while managing risks through careful staging
+
+See also: [[concepts/open-weight-ai-regulation]], [[concepts/security-and-governance/ai-safety]], [[concepts/ai-alignment]]
+
 ## Notable References
 - Michael Polanyi, *The Tacit Dimension* (1966) — tacit knowledge
 - Friedrich Hayek, *The Use of Knowledge in Society* (1945) — distributed knowledge
@@ -122,7 +143,7 @@ On Modal's infrastructure (8× B200 GPUs), Inkling achieves 250 tokens/second pe
 ## Related
 - [[entities/anthropic]]
 - [[entities/openai]]
-- [[concepts/ai-safety]]
+- [[concepts/security-and-governance/ai-safety]]
 - [[concepts/fine-tuning]]
-- [[concepts/alignment]]
+- [[concepts/ai-alignment]]
 - [[concepts/ai-industry-economics]]

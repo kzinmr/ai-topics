@@ -2,9 +2,8 @@
 title: "Model Serving & Autoscaling"
 type: concept
 created: 2026-05-01
-updated: 2026-05-26
+updated: 2026-08-02
 tags:
-  - concept
   - inference
   - infrastructure
   - developer-tooling
@@ -14,7 +13,7 @@ aliases:
   - llm-serving
   - inference-serving
   - autoscaling-llm
-sources: []
+sources: [raw/articles/2026-07-31_together-ai_autoscaling-endpoints-llm-inference.md]
 related:
   - "[[concepts/serving-llms-vllm]]"
   - "[[concepts/inference/_index]]"
@@ -89,6 +88,19 @@ LLM server scaling faces these challenges:
 - **Serverless GPU**:
   - Modal / Replicate style: Pay per request
   - Cold start challenge (FaaS paradigm)
+
+#### Together AI Inference-Native Autoscaling
+
+Together AI's Dedicated Model Inference (Jul 2026) introduces **inference-native autoscaling metrics** that bypass traditional CPU/memory signals in favor of metrics the inference engine natively understands:
+
+| Metric | What It Measures | Scaling Signal |
+|--------|-----------------|----------------|
+| **In-flight requests** | Current active request count | Concurrency pressure |
+| **TTFT** | Time-to-first-token latency | Responsiveness under load |
+| **GPU utilization** | Hardware saturation | Compute headroom |
+| **Token throughput** | Tokens/sec across replicas | Business-level output rate |
+
+Users configure **replica bounds** (min/max), select a target metric with a threshold value, and tune two knobs: a **scale-up window** (how quickly replicas are added) and a **scale-down window** (how patiently they are removed). This inference-native approach addresses the mismatch between generic autoscaling signals and [[concepts/kv-cache|KV cache]]-bound LLM workloads, enabling more responsive and cost-effective scaling for [[concepts/inference/vllm|LLM inference]] deployments.
 
 ### 3. Load Balancing Strategies
 

@@ -1,3 +1,21 @@
+## [2026-08-02] active-crawl (11:10) | 4 pages — 1 created, 3 enriched
+
+NEW:
+- entities/learnvector.md — Andrew Ng's AI edtech company ($100M Coursera), one-to-one learning platform. Source: learnvector.ai via HN (267 pts)
+
+ENRICHED:
+- concepts/training-infra/model-serving-autoscaling.md — Together AI inference-native autoscaling (in-flight requests, TTFT, GPU utilization, token throughput metrics). Source: together.ai blog (Jul 31)
+- entities/sierra.md — Plaid partnership for financial infrastructure AI agents (Aug 3). Added fintech/partnership tags + SCHEMA.md partnership tag
+- entities/thinking-machines-lab.md — "A Safe Path to Open Weights" framework (Jul 31). Added open-weight safety section with staged release model. Fixed pre-existing wikilink paths (nvidia, modal-labs, inference/sglang, inference/vllm, security-and-governance/ai-safety, ai-alignment)
+
+SOURCES:
+- raw/articles/2026-07-31_together-ai_autoscaling-endpoints-llm-inference.md
+- raw/articles/2026-08-03_sierra_plaid-partnership-ai-agents.md
+- raw/articles/2026-07-29_learnvector_andrew-ng-ai-edtech.md
+- raw/articles/2026-07-31_thinking-machines-lab_safe-path-to-open-weights.md
+
+DISCOVERY: HN Algolia (15 stories), X/Twitter xurl (10 results), blogwatcher DB + wiki gap analysis
+
 ## [2026-08-02] newsletter-wiki-ingest (10:39) | Superintelligence. 2026-08-01 triage: 1 reference / 5 skip
 - Reference: entities/kim-isenberg.md enriched with "The Duel That Never Happened" (Aug 2026 DeepDive, AI benchmark controversy; paywalled body, preview thesis captured). Frontmatter updated (updated: 2026-08-02, +benchmark/benchmark-framing tags, +2 sources).
 - Skip (5): dup beehiiv tracking link, author X profile, batch meta links 4-15 (product/subscription/social/footer/expired), beehiiv hosted page, status tracking pixel. Archived via archive_triage.py.
