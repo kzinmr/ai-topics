@@ -1,3 +1,11 @@
+## [2026-08-02] raw-backlog-ingest (14:00) | 1 concept created, 2 pages enriched, 5 articles processed
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-02 14:00, run 20260802T140007Z).
+- CREATED: [[concepts/post-training/rl-environments]] — RL Environments (RLEF): environment engineering for RL post-training (latency/reliability/security, CPU-only env servers, world-model/digital-twin environments, environment compute). Source: SemiAnalysis "Scaling RL" (Jun 10).
+- ENRICHED: [[concepts/recursive-self-improvement]] — added "Industry Evidence: SemiAnalysis — RSI Already Playing Out (June 2026)" section (Claude 4 system card compiler/kernel/quadruped RL evals, OpenAI Codex building next model version, grunt-work-first thesis, RL-helps-do-better-RL loop).
+- ENRICHED: [[entities/semianalysis]] — added "Scaling RL: Environments, Reward Hacking, Agents, Scaling Data (June 2026)" to Key Publications (RL inference-heavy, data as moat, China compute constraint, decentralized RL, lab restructuring).
+- SKIPPED (non-AI): paulgraham.com "The Refragmentation" (2016 essay), danluu.com "Google SRE book" (ops book notes), oldvcr.blogspot.com MkLinux WGS 9150 (retro; already archived), oldvcr.blogspot.com 6o6 v1.1 (retro 6502 virtualization).
+- Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (1 take / 0 reference / 4 skip).
+
 ## [2026-08-02] active-crawl (11:10) | 4 pages — 1 created, 3 enriched
 
 NEW:

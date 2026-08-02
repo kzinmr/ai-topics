@@ -2383,6 +2383,7 @@
 - [[concepts/post-training/reinforcement-learning]] — Fundamental concepts of RL applied to LLM training.
 - [[concepts/post-training/rl-algorithms-for-llm-training]] — RL Algorithms for LLM Training
 - [[concepts/post-training/rl-exploration-test-time-vs-training]] — RL Exploration: Training vs Test-Time Scaling
+- [[concepts/post-training/rl-environments]] — RL Environments (RLEF): environment engineering for RL post-training
 - [[concepts/post-training/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/post-training/rl-interview-questions-2026]] — RL Interview Questions 2026
 - [[concepts/post-training/rl-scaling-boundaries]] — RL Scaling Boundaries

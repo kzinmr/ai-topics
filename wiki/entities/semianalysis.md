@@ -2,7 +2,7 @@
 title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
-updated: 2026-07-07
+updated: 2026-08-02
 tags:
   - company
   - lab
@@ -23,6 +23,8 @@ sources:
   - raw/articles/substack.com--app-link-post--1509e963.md
   - raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md
   - raw/articles/2026-06-16_semianalysis_rl-systems-throughput.md
+  - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
+  - https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data
   - raw/newsletters/2026-06-18-stop-saying-half-of-2026-us-datacenter-capacity-is-canceled.md
   - raw/newsletters/2026-07-06-nvidia-gpu-debt-backstop-unleashes-the-ai-project-trinity-capital-offtake-and-da.md
   - https://semianalysis.com/
@@ -132,6 +134,22 @@ Tracks datacenter capacity, deployments, and commitments for CoreWeave, Nebius, 
 - Throughput optimizations: early pruning, adaptive sampling, concurrency tuning
 - Collaborators: [[entities/prime-intellect|Prime Intellect]] (Matej Sirovatka, Ameen Patel, Sami Jaghouar), [[entities/modal|Modal]] (Peyton Walters, Nan Jiang, Erik Dunteman)
 - See [[concepts/post-training/grpo-infrastructure]] and [[concepts/post-training/asynchronous-rl]] for detailed frameworks
+
+### Scaling RL: Environments, Reward Hacking, Agents, Scaling Data (June 2026)
+
+A companion report to "RL Systems: Mind the Gap" analyzing the full RL stack for LLM post-training — environments, reward design, data, and compute:
+
+- **RL is inference-heavy**: GRPO rollouts (multiple answers per question) make RL compute demand inference-dominated, unlike pretraining
+- **Reward design as a "dark art"**: verifiable rewards work (math/code); non-verifiable domains rely on LLM judges with rubrics (OpenAI deliberative alignment, Qwen-3, HealthBench)
+- **Environment engineering**: RLEF (execution feedback), latency/reliability/security requirements, CPU-only environment servers, world-model/digital-twin environments on GPUs
+- **Reward hacking**: Claude 3.7 test-editing, o3 hallucination from outcome-only rewards, Claude 4 mitigation via environment improvements
+- **Data as a moat**: Qwen's "4,000 pairs" hid heavy curation; ScaleAI/Mercor/Handshake recruiting STEM PhDs; RFT for enterprise custom graders
+- **China compute constraint**: H20/H20E export ban, Huawei Ascend 910B/910C ramp (SMIC 380k 910C in 2025), DeepSeek serving at ~20 tok/s to preserve compute
+- **Decentralized RL**: inference does not require centralization like pretraining; Prime Intellect's Intellect-2 globally distributed RL run
+- **Lab restructuring**: OpenAI/Anthropic/Google reorganized inference teams because RL makes production-grade inference integral to training
+- **RSI already playing out**: Claude 4 system card evals (compiler, kernel, quadruped RL), OpenAI Codex building next model version
+
+Source: raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md. See [[concepts/post-training/rl-environments]] and [[concepts/recursive-self-improvement]] for the derived concept pages.
 
 ## Industry Influence
 

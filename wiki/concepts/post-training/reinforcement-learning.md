@@ -28,6 +28,7 @@ Reinforcement Learning in the LLM context covers policy optimization (PPO, GRPO,
 - [[concepts/post-training/rl-algorithms-for-llm-training]] — Comprehensive Q&A covering Actor-Critic, PPO, GRPO, KL divergence, advantage estimation, reward design, and algorithm variants
 - [[concepts/post-training/grpo]] — Group Relative Policy Optimization (DeepSeek-R1)
 - [[concepts/post-training/grpo-rl-training]] — GRPO as an RL backbone with method variants
+- [[concepts/post-training/rl-environments]] — RL environment engineering (RLEF, sandboxes, world-model environments)
 - [[concepts/post-training/rlhf]] — Reinforcement Learning from Human Feedback
 - [[concepts/trl-transformer-reinforcement-learning]] — TRL library for RL-based LLM training
 

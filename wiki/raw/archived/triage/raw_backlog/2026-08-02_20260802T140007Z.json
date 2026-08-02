@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-02T14:12:39.655680+00:00",
+  "triage_run_id": "20260802T140007Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw記事バックログ5件を処理。SemiAnalysis「Scaling RL: Environments, Reward Hacking, Agents, Scaling Data」(2026-06-10) を唯一のtakeとし、RL環境エンジニアリングの新概念ページ concepts/post-training/rl-environments を新規作成、concepts/recursive-self-improvement と entities/semianalysis を強化。残り4件（Paul Graham 2016年エッセイ、Dan Luu SRE本ノート、oldvcrレトロ2件）は非AI/レトロコンピューティングのためスキップ。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-paulgraham-refragmentation",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com",
+      "title": "The Refragmentation",
+      "url": "http://www.paulgraham.com/re.html",
+      "raw_path": "~/wiki/raw/articles/paulgraham.com--re-html--d70290df.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 2016年1月のエッセイで、米国の政治分極・文化断片化・都市集中・経済格差を「統合を押していた力（戦争と大企業）の侵食」という仮説で説明する社会論。AI/LLM/エージェント技術と無関係のためwiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-danluu-google-sre-book",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Google SRE book",
+      "url": "https://danluu.com/google-sre-book/",
+      "raw_path": "~/wiki/raw/articles/danluu.com--google-sre-book--5a7af681.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Google SRE本の読書ノート。sysadmin vs SREの人事モデル、エラーバジェット、信頼性エンジニアリングのプラクティス整理であり、AI/LLM技術との直接の関連なし。entities/dan-luuは存在するが、このops系ノートにAI的付加価値はないためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-oldvcr-6o6",
+      "source": "raw_backlog",
+      "source_name": "oldvcr.blogspot.com",
+      "title": "6o6 v1.1: Faster 6502-on-6502 virtualization for a C64/Apple II Apple-1 emulator",
+      "url": "https://oldvcr.blogspot.com/2026/03/6o6-v11-faster-6502-on-6502.html",
+      "raw_path": "~/wiki/raw/articles/oldvcr.blogspot.com--2026-03-6o6-v11-faster-6502-on-6502-html--c727af78.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 6502 CPU上で6502を仮想化する6o6ライブラリv1.1の更新記事（アドレッシングモード効率化、ゼロページ高速レーン等）。レトロ8ビットコンピューティングの話題でAI/LLMと無関係のためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-07-31
+updated: 2026-08-02
 type: concept
 tags:
   - concept
@@ -20,6 +20,8 @@ sources:
   - raw/articles/2026-07-04_lilianweng-harness-engineering-self-improvement.md
   - https://lilianweng.github.io/posts/2026-07-04-harness/
   - raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md
+  - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
+  - https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data
 description: "The feedback loop where an AI improves the machinery that produces its intelligence. Near-term RSI runs through harness engineering — optimizing context, workflow, and code — rather than direct weight rewriting."
 ---
 
@@ -240,6 +242,19 @@ Anthropic's data suggests the human role is narrowing at each development step:
 3. **Failure** — Trends plateau due to fundamental limitations
 
 > Full article: [[raw/articles/2026-06-07_anthropic_recursive-self-improvement]]
+
+## Industry Evidence: SemiAnalysis — RSI Already Playing Out (June 2026)
+
+[[entities/semianalysis|SemiAnalysis]]'s June 2026 report *Scaling RL: Environments, Reward Hacking, Agents, Scaling Data* argues that RSI is not a distant scenario — it is **already happening in labs**, primarily through RL applied to AI-infrastructure engineering tasks ([SemiAnalysis](https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data)).
+
+- **Claude 4 system card evidence**: Anthropic ran evaluations on **compiler development, kernel engineering, and even RL of a quadruped** — models helping to code and train the next generation of systems.
+- **RL on the machinery itself**: Labs can double down by conducting RL on exactly these tasks — compilers, kernels, memory management optimizations, hyperparameter tuning — with internal model varieties. These tasks are measurable and improvable, with massive efficiency ramifications.
+- **"Grunt work first" thesis**: Much of near-term RSI revolves around tedious engineering work that flies under the radar, gradually working its way toward researching new architectures.
+- **OpenAI Codex**: Already helping employees build the next version of models — self-improvement in practice means engineers spend less time coding and more time thinking through research and data questions.
+- **"RL helps you do better RL"**: Better reasoning models become better LLM judges, which improves the RL signal itself — a feedback loop that compounds within the RSI trajectory.
+- **Caveat**: Model development is currently bottlenecked by factors beyond engineering effort (compute access foremost). True RSI will dramatically speed up research and data as well, not just engineering.
+
+This is a supply-chain/infrastructure perspective on RSI that complements Anthropic's own disclosure above: the same phenomenon observed from the compute-economics side.
 
 ## Safety & Governance Concerns
 
