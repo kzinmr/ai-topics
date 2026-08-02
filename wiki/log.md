@@ -1,3 +1,8 @@
+## [2026-08-02] newsletter-wiki-ingest (10:39) | Superintelligence. 2026-08-01 triage: 1 reference / 5 skip
+- Reference: entities/kim-isenberg.md enriched with "The Duel That Never Happened" (Aug 2026 DeepDive, AI benchmark controversy; paywalled body, preview thesis captured). Frontmatter updated (updated: 2026-08-02, +benchmark/benchmark-framing tags, +2 sources).
+- Skip (5): dup beehiiv tracking link, author X profile, batch meta links 4-15 (product/subscription/social/footer/expired), beehiiv hosted page, status tracking pixel. Archived via archive_triage.py.
+- Triage checkpoint recovered from /opt/data/.hermes/cron/data/newsletter/triage_latest.json (upstream response render failure; checkpoint valid).
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

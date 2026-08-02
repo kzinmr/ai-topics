@@ -2,14 +2,18 @@
 title: "Kim 'Chubby' Isenberg"
 type: entity
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-08-02
 tags:
   - person
   - blogger
   - ai-governance
   - ai-adoption
+  - benchmark
+  - benchmark-framing
 sources:
   - raw/newsletters/2026-05-10-trustworthy-ai-is-really-about-delegated-agency.md
+  - raw/newsletters/2026-08-01-the-duel-that-never-happened.md
+  - raw/articles/2026-08-01-the-duel-that-never-happened.md
 ---
 
 # Kim Isenberg
@@ -34,6 +38,10 @@ Applied Michael Levin's **cognitive light cone** concept to AI governance. Argue
 6. **Embedding** — How load-bearing the system has become in workflows
 
 Key insight: **Risk arises from the interaction between capability and delegated reach, not from model capability alone.** A highly capable model with no access may be harmless; a less capable one with broad access and workflow embedding may be far more dangerous.
+
+### "The Duel That Never Happened" (August 2026)
+
+DeepDive analysis (19-minute read) examining the AI benchmark controversy that split the industry at the end of July 2026. Per the free preview, the piece investigates **two contested industry numbers**: one that "was never a single measurement at all" (benchmark gaming / misrepresentation) and another that "nobody outside a company meeting has actually seen" (unverified marketing claims). The OG image featured Sarah Friar (CFO of OpenAI), tying the piece to OpenAI-related evaluation narratives. Body content is paywalled under the Superintel+ tier (Cloudflare 403 for automated access), so only the preview thesis is captured here; re-assess when the full text becomes accessible. Relevant to [[concepts/ai-benchmarks]] and [[concepts/evaluation/ai-evaluation]] coverage.
 
 ### Previous Coverage
 
