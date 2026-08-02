@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-08-02T18:14:37.265513+00:00",
+  "triage_run_id": "20260802T180857Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E ファイルシステムスキャン: 201件のraw articles からスクリーニング。Prior triage (2026-08-01) の22 decisions は全て dreaming-wiki-ingest で処理済み（5 entity pages enriched）。本日分の新規記事は Sierra Plaid partnership, TML Safe Path, Martin Alderson Speed vs Intelligence, Kimi K3 Together AI guide, LearnVector の5件 — いずれも日次パイプライン (blog-triage, active-crawl, raw-backlog-ingest) で既にカバー済み。唯一の reference 候補: Simon Willison Open Letters (3つの公開書簡の詳細分析が entity page に未反映)。Takes=0 — 新規ページ作成なし。Full saturation.",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-willison-open-letters",
+      "source": "dreaming",
+      "source_name": "Simon Willison",
+      "title": "Open letters about AI development",
+      "url": "https://simonwillison.net/2026/Aug/2/open-letters/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-aug-2-open-letters--a9aa5c8a.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/simon-willison.md は Oxide and Friends podcast の一言で open letters を言及するが、ブログ記事の本体（3つの公開書簡の詳細分析：Open Weights and American AI Leadership / Anthropic の反論 / Pacing the Frontier）は未反映。entity page へのサブセクション追加が有効。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# Open letters about AI development\nSource: https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything\nOpen letters about AI development\nI wrote this summary of the past few weeks of open letters as a section of\nmy sponsors-only newsletter\nbut I've decided to share it here as well.\nOpen Weig"
+    },
+    {
+      "item_id": "dreaming-skip-sierra-plaid",
+      "source": "dreaming",
+      "source_name": "Sierra",
+      "title": "Plaid and Sierra partner to move AI agents from conversations to business outcomes",
+      "url": "https://sierra.ai/blog/our-partnership-with-plaid",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-08-03_sierra_plaid-partnership-ai-agents.md",
+      "recommended_action": "skip",
+      "reason_ja": "スキップ: entities/sierra.md に Plaid Partnership セクション存在（line ~150）。Horizon プラットフォームとの統合、fintech bridge としてカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Summary:\nSierra and Plaid announced a partnership to connect AI agents directly to financial infrastructure. Through this partnership, customers can securely connect their bank accounts with Plaid directly within Sierra's AI agent platform. This moves AI agents from purely conversational interfaces "
+    },
+    {
+      "item_id": "dreaming-skip-tml-safe-path",
+      "source": "dreaming",
+      "source_name": "Thinking Machines Lab",
+      "title": "A Safe Path to Open Weights",
+      "url": "https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-07-31_thinking-machines-lab_safe-path-to-open-weights.md",
+      "recommended_action": "skip",
+      "reason_ja": "スキップ: entities/thinking-machines-lab.md に Open Weights Safety Framework セクション存在（staged release, independent safety research, progressive deployment）。包括的にカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Summary:\nThinking Machines Lab published a comprehensive framework for safely releasing open-weight AI models. The core thesis: strategic openness can strengthen AI safety and support broader access as defenses and safety science mature.\nAbstract: Safe open-weight models are public goods, as they pu"
+    },
+    {
+      "item_id": "dreaming-skip-martinalderson-speed",
+      "source": "dreaming",
+      "source_name": "Martin Alderson",
+      "title": "I'm (mostly) picking models on speed now, not intelligence",
+      "url": "https://martinalderson.com/posts/speed-vs-intelligence/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/martinalderson.com--posts-speed-vs-intelligence--7a7e675b.md",
+      "recommended_action": "skip",
+      "reason_ja": "スキップ: entities/martin-alderson.md に 'Speed Over Intelligence — Model Selection Shift (Aug 2026)' セクション存在。100tok/s 仮説、GLM5.2 vs Opus 比較、pricing bloodbath 予測すべてカバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# I'm (mostly) picking models on speed now, not intelligence\nSource: https://martinalderson.com/posts/speed-vs-intelligence/?utm_source=rss&utm_medium=rss&utm_campaign=feed\nFor the first time I can remember, I'm not choosing my daily driver models on raw intelligence. I'm choosing them on speed.\nHav"
+    },
+    {
+      "item_id": "dreaming-skip-kimi-k3-guide",
+      "source": "dreaming",
+      "source_name": "Together AI",
+      "title": "Kimi K3: The Complete Developer Guide",
+      "url": "https://www.together.ai/blog/kimi-k3-guide",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/together.ai--blog-kimi-k3-guide--70e2c263.md",
+      "recommended_action": "skip",
+      "reason_ja": "スキップ: concepts/kimi-k3.md (458行) に KDA, AttnRes, LatentMoE, SiTU, Per-Head Muon, Quantile Balancing すべてカバー済み。Together AI API details は既存ページの 'How to use' セクションで網羅。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Kimi K3: The Complete Developer Guide\nSource: https://www.together.ai/blog/kimi-k3-guide\nKimi K3 is Moonshot AI's most capable model to date: a 2.8-trillion-parameter model and the world's first open-source model in the 3-trillion-parameter class. It is designed for frontier intelligence work like"
+    },
+    {
+      "item_id": "dreaming-skip-learnvector",
+      "source": "dreaming",
+      "source_name": "LearnVector",
+      "title": "LearnVector — A new AI company from Andrew Ng",
+      "url": "https://learnvector.ai/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-07-29_learnvector_andrew-ng-ai-edtech.md",
+      "recommended_action": "skip",
+      "reason_ja": "スキップ: entities/learnvector.md (39行) が 2026-08-02 に作成済み。$100M Coursera 出資、1-to-1 learning、AI-native edtech をカバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Summary:\nLearnVector is a new AI company from Andrew Ng, backed by a $100M investment from Coursera. The company's mission is to \"accelerate human development\" by building one-to-one learning experiences powered by AI.\nCore thesis: Andrew Ng believes AI will not replace people but create unprecedent"
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-aug2",
+      "source": "dreaming",
+      "source_name": "Various",
+      "title": "Non-AI blog articles batch (Aug 1-2)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "スキップ: 非AI記事のバッチ。tedium.co (pricing history), shkspr.mobi (thermal camera), randsinrepose (Apple), sixcolors (Apple Q3), construction-physics (reading list), borretti.me (math without mathematicians), oldvcr (MkLinux), johndcook×3 (math), nesbitt.io (package management), simonwillison (Slack emoji maker 511B, datasette apps, Greg Brockman, July newsletter), daringfireball (Temu), pluralistic (Dare Snot — blog-triage で処理済み)。すべて AI/LLM relevance なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch of non-AI articles: Apple commentary, math algorithms, hardware history, thermal cameras, package management, personal newsletters."
+    },
+    {
+      "item_id": "dreaming-skip-prior-batch",
+      "source": "dreaming",
+      "source_name": "Various",
+      "title": "Prior triage skip items (2026-08-01)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "スキップ: 2026-08-01 triage で全件 skip 判定済み (OpenAI math, QM multiplayer, Manifest router, CTGT distillation, Fletch worktrees, Cerebras GPT-5.6, Unsloth V4 Flash, Ed Zitron, Gary Marcus, Sean Goedecke, Willison stateless MCP/smevals/datasette-agent)。dreaming-wiki-ingest で5 entity enrichment 済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "All prior triage skip items from 2026-08-01. Already archived."
+    }
+  ]
+}

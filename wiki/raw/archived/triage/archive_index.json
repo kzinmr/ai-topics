@@ -633,6 +633,7 @@
     "https://lcamtuf.substack.com/p/tech-note-making-your-own-v-i-plots",
     "https://lcamtuf.substack.com/p/the-100000-whys-of-ai",
     "https://learn.microsoft.com/en-us/semantic-kernel/overview/",
+    "https://learnvector.ai/",
     "https://leehanchung.github.io/blogs/2026/05/08/hidden-technical-debt-agent-harness/",
     "https://lenny.substack.com/p/how-i-ai-claude-opus-5-review-browser",
     "https://letterboxd.com/film/the-insider/",
@@ -830,6 +831,7 @@
     "https://martinalderson.com/posts/built-for-turbulence-podcast/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
     "https://martinalderson.com/posts/expert-aware-quantisation/",
     "https://martinalderson.com/posts/is-datacentre-sovereignty-really-that-important/",
+    "https://martinalderson.com/posts/speed-vs-intelligence/",
     "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-2-winners-and-losers/",
     "https://martinalderson.com/posts/whats-going-on-with-gemini/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
     "https://martinalderson.com/posts/xais-new-rental-business/",
@@ -1271,6 +1273,7 @@
     "https://sierra.ai/blog/ai-pilling-our-company-lessons-learned",
     "https://sierra.ai/blog/announcing-our-partnership-with-softbank-corp",
     "https://sierra.ai/blog/discovering-what-s-possible-with-ai-for-cx",
+    "https://sierra.ai/blog/our-partnership-with-plaid",
     "https://sierra.ai/blog/outcomemaxxing",
     "https://sierra.ai/blog/pinecone-harnessing-the-wisdom-of-the-workforce",
     "https://sierra.ai/blog/simulations-the-secret-behind-every-great-agent",
@@ -1281,6 +1284,7 @@
     "https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything",
     "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/#atom-everything",
     "https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything",
+    "https://simonwillison.net/2026/Aug/2/open-letters/",
     "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
     "https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything",
     "https://simonwillison.net/2026/Jul/10/openai/#atom-everything",
@@ -1736,6 +1740,7 @@
     "https://thesignal.substack.com/p/anthropics-magnum-opus-openais-omnipresence",
     "https://thesignal.substack.com/p/where-ai-is-really-taking-jobs",
     "https://theskip.substack.com/p/5-career-questions-your-old-playbook",
+    "https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/",
     "https://thinkingmachines.ai/blog/the-future-worth-building-is-human/",
     "https://thinkingmachines.ai/news/introducing-inkling/",
     "https://timsh.org/drainer-at-the-top-of-duckduckgo/",
@@ -2080,6 +2085,7 @@
     "https://www.together.ai/blog/announcing-our-series-c",
     "https://www.together.ai/blog/how-together-ai-built-the-worlds-fastest-speech-to-text-stack",
     "https://www.together.ai/blog/iso-27001-2022-certification",
+    "https://www.together.ai/blog/kimi-k3-guide",
     "https://www.together.ai/blog/kimi-k3-vs-claude-fable-5-on-deepswe-cost-and-coding",
     "https://www.together.ai/blog/kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing",
     "https://www.together.ai/blog/new-in-together-gpu-clusters-reliability-and-control-for-production-gpu-clusters",
@@ -2190,5 +2196,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-02T14:12:39.656183+00:00"
+  "updated": "2026-08-02T18:14:37.266056+00:00"
 }

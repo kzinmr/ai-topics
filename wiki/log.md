@@ -1,6 +1,20 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-02] dreaming | Pattern E saturation — 1 reference, 0 takes
+- **Checkpoint**: 0 articles collected, 201 recent raw articles on disk (range 2026-07-26 → 2026-08-02).
+- **Prior triage (2026-08-01)**: 22 decisions (0 takes, 7 references, 15 skips) — all consumed by dreaming-wiki-ingest (Aug 1), 5 entity pages enriched (Glean, Cohere, Simon Willison, Harvey, ElevenLabs).
+- **Today's daily pipeline coverage**: blog-triage (20 articles, 3 pages updated), active-crawl (4 pages), raw-backlog-ingest ×3, newsletter-wiki-ingest (Superintel, 1 ref enriched), watchdog auto-fixes.
+- **Pattern E scan**: 30 recent articles screened from Aug 1-2. Key candidates already covered:
+  - Sierra × Plaid Partnership → entities/sierra.md (Plaid section exists)
+  - Thinking Machines Lab × Safe Path to Open Weights → entities/thinking-machines-lab.md (Open Weights Safety Framework section)
+  - Martin Alderson × Speed vs Intelligence → entities/martin-alderson.md (Speed Over Intelligence section)
+  - Kimi K3 × Together AI Developer Guide → concepts/kimi-k3.md (458 lines, all architectures covered)
+  - LearnVector × Andrew Ng → entities/learnvector.md (39 lines, created today)
+- **Reference candidate**: [[entities/simon-willison]] — Open Letters blog post (Aug 2): 3 open letters (Open Weights and American AI Leadership, Anthropic response, Pacing the Frontier) not yet reflected in entity page body. Low priority enrichment.
+- **Non-AI skips**: 15 articles (Apple, math, hardware, thermal cameras, package management, personal essays).
+- **Archive**: 8 newly archived, 7 dedup skipped. Total archive: 2,195 URLs.
+- **Takes=0** — Full saturation. No new pages needed.
 
 ## [2026-08-02] raw-backlog-ingest (18:00) | duplicate batch detected - no wiki changes, tracking fixed
 
