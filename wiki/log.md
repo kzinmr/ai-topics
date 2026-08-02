@@ -1,3 +1,16 @@
+## [2026-08-02] watchdog | wiki health digest review
+
+### Checks
+- index.md corruption: pipe_prefix 0 / line_number_prefix 0 / triple_bracket 0 / space_prefix 0 — clean
+- validate_index.py: pass (2883 lines)
+- Ghost entries (recursive scan): 0
+- Orphan pages: 24 reported, all false positives (21 _index.md + 2 _archive + 1 redirect tim-sherratt → tim-sh)
+
+### Changes
+- Fixed Concepts header count: 1954 → 1955 (actual 1935 files + 20 _index)
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
