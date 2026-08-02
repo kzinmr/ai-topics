@@ -1,0 +1,62 @@
+{
+  "run_id": "20260802T101916Z",
+  "triaged_at": "2026-08-02T10:25:00Z",
+  "source": "newsletter-ingest",
+  "message_id": "<20260801.183147.c28b8598@mta19>",
+  "subject": "⚖️ The Duel That Never Happened",
+  "date": "2026-08-01",
+  "source_label": "uid=446",
+  "newsletter": {
+    "name": "Superintelligence.",
+    "url": "https://getsuperintel.com",
+    "author": "Kim \"Chubby\" Isenberg",
+    "author_x": "@kimmonismus"
+  },
+  "article_count": 1,
+  "meta_links_count": 16,
+  "articles": [
+    {
+      "link_number": "1-2",
+      "title": "The Duel That Never Happened",
+      "url": "https://read.getsuperintel.com/p/the-duel-that-never-happened",
+      "classification": "high",
+      "reason": "AI benchmarks debate: article examines two contested AI industry numbers from July 2026 — one never a single measurement, the other unseen outside company meetings. OG image features Sarah Friar (CFO of OpenAI). Directly relevant to wiki concepts on AI benchmarks and evaluation methodology.",
+      "topics": ["ai-benchmarks", "ai-evaluation", "ai-industry", "openai"],
+      "author": "Kim \"Chubby\" Isenberg (@kimmonismus)",
+      "author_page": "https://read.getsuperintel.com/authors/kim-chubby-isenberg",
+      "published": "2026-08-01T18:30:00Z",
+      "reading_time_minutes": 19,
+      "description": "Two numbers set the AI industry arguing at the end of July. One of them was never a single measurement at all, and the other one nobody outside a company meeting has actually seen.",
+      "content_tags": ["DeepDive"],
+      "og_image": "Sarah_Friar__CFO_of_OpenAI.jpg",
+      "paywall": true,
+      "is_accessible_for_free": false,
+      "body_available": false,
+      "raw_saved_to": "wiki/raw/articles/2026-08-01-the-duel-that-never-happened.md"
+    }
+  ],
+  "meta_links": [
+    {"link_number": "3", "url": "https://twitter.com/kimmonismus", "type": "social_profile", "classification": "skip"},
+    {"link_number": "4", "url": "https://getsuperintel.com/plus-whitelist", "type": "product", "classification": "skip"},
+    {"link_number": "5", "url": "https://read.getsuperintel.com/upgrade", "type": "subscription", "classification": "skip"},
+    {"link_number": "6", "url": "https://x.com/getsuperintel", "type": "social_profile", "classification": "skip"},
+    {"link_number": "7", "url": "https://instagram.com/getsuperintel", "type": "social_profile", "classification": "skip"},
+    {"link_number": "8", "url": "https://threads.com/@getsuperintel", "type": "social_profile", "classification": "skip"},
+    {"link_number": "9", "url": "expired_tracking_link", "type": "expired", "classification": "skip"},
+    {"link_number": "10", "url": "https://tiktok.com/@superintel_daily", "type": "social_profile", "classification": "skip"},
+    {"link_number": "11", "url": "https://linkedin.com/company/getsuperintel", "type": "social_profile", "classification": "skip"},
+    {"link_number": "12", "url": "https://x.com/getsuperintel", "type": "social_profile", "classification": "skip"},
+    {"link_number": "13", "url": "https://getsuperintel.com/advertise", "type": "advertising", "classification": "skip"},
+    {"link_number": "14", "url": "subscription_preferences", "type": "subscription", "classification": "skip"},
+    {"link_number": "15", "url": "https://beehiiv.com/", "type": "platform_footer", "classification": "skip"},
+    {"link_number": "16", "url": "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f", "type": "newsletter_page", "classification": "skip"},
+    {"link_number": "17", "url": "https://email.beehiivstatus.com/09df8ce82e9d65d461127346aeac2c7e15cea3e8/hclick", "type": "tracking", "classification": "skip"}
+  ],
+  "summary": "Superintelligence newsletter by Kim Isenberg (@kimmonismus). 1 real article about AI benchmark controversies in July 2026 — paywalled under Superintel+ tier, no body content extractable. The article examines two contested AI industry numbers (likely involving OpenAI given the Sarah Friar OG image). Highly relevant to wiki concepts on ai-benchmarks and ai-evaluation. 16 remaining links are social media profiles, product pages, and tracking links — all skipped.",
+  "action_items": [
+    "Save raw metadata to wiki/raw/articles/ (DONE)",
+    "Fetch full article if subscriber access becomes available",
+    "Create wiki event page on July 2026 AI benchmark controversy when full content available",
+    "Consider adding Kim Isenberg as entity page if article quality warrants it"
+  ]
+}
