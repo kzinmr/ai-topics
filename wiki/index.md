@@ -72,7 +72,7 @@
 - [[entities/arize]] — Arize AI
 - [[entities/arlan-r]] — Arlan Rakhmetzhanov
 - [[entities/armin-ronacher]] — Armin Ronacher; enriched with "The Coming Loop" essay — harness-level vs agent-level loops, code quality from autonomous looping, software-as-organism metaphor (June 24)
-- [[entities/ash-vardanyan]] — Ash Vardanyan
+- [[entities/ash-vardanyan]] — Ash Vardanyan; SIMD/vectorized kernels (NumKong, StringZilla, USearch); StringZilla Unicode search 50x ICU (May 2026)
 - [[entities/ashe-magalhaes]] — Ashe Magalhaes
 - [[entities/ashpreet-bedi]] — Ashpreet Bedi
 - [[entities/ashwingop]] — Ashwin Gopinath
@@ -322,7 +322,7 @@
 - [[entities/giles-thomas]] — Giles Thomas; enriched with Part 34b (JAX GPT-2 Small) and Poppy training box hardware (July 9)
 - [[entities/gilesthomas]] — Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technica...
 - [[entities/gkisokay]] — gkisokay
-- [[entities/glean]] — Glean
+- [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons (Aug 2026)
 - [[entities/glimpse]] — Glimpse
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
 - [[entities/glm-5v-turbo]] — GLM-5V-Turbo

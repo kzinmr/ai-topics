@@ -1,6 +1,13 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-02] raw-backlog-ingest (22:00) | 2 pages enriched, 5 articles processed
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-02 22:00, run 20260802T220041Z).
+- **[[entities/ash-vardanyan]]** — Enriched StringZilla section with Unicode search stack (v4.3-v4.5, May 2026): tokenizing (25 whitespace chars, 9 newline variants, 10x faster), case-folding (1,400+ Unicode 17 rules, 10x faster), case-insensitive substring search (20-150x faster, 20,000x vs PCRE2), fold & scan pipeline 5-15 GB/s (~50x ICU), Unicode-spec-generated synthetic test suite for correctness. Frontmatter updated (updated: 2026-08-02, +source ashvardanian.com/posts/search-utf8/).
+- **[[entities/glean]]** — Added "Definitive Guide to AI-Based Enterprise Search (May 2026)" section: traditional vs AI search comparison, Enterprise Graph, code intelligence, 100+ SaaS integrations, 5-vendor platform comparison table (Glean/Moveworks/Coveo/Elastic/Guru), $150M Series F, Glean Protect, RAG/agent automation trends. Frontmatter updated (updated: 2026-08-02, +raw/articles/2026-05-10_glean_the-definitive-guide-to-ai-based-enterprise-search-for-2025.md).
+- **Skipped**: minimaxir.com "AI agent coding skeptic" (already primary source of entities/minimaxir-com.md), thinkingmachines.ai "On-Policy Distillation" (already captured in concepts/post-training/on-policy-distillation.md), danluu.com "How good are decisions?" (non-AI: baseball/board-game decision quality).
+- Archive: 4 archived, 0 dedup_skipped (archive_index total 2,199). Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (1 take / 1 reference / 3 skip).
+
 ## [2026-08-02] daily-skeleton-enrichment | L2→L3: Kyle Jeong + Apurva Gandhi (browser agent harness, CDP, dual advisors)
 
 - **Skeleton backlog**: 0 pages with `status: skeleton` remain — continued L2→L3 enrichment of thinnest entity pages (established pattern).

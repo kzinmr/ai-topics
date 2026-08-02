@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-08-01
+updated: 2026-08-02
 tags:
   - company
   - search
@@ -13,6 +13,7 @@ aliases: ["Glean Work", "Gleanwork"]
 sources:
   - https://www.glean.com/
   - https://www.glean.com/about
+  - raw/articles/2026-05-10_glean_the-definitive-guide-to-ai-based-enterprise-search-for-2025.md
   - raw/articles/2026-05-15_glean_cowork-mcp-eval.md
   - raw/articles/2026-05-21_glean_health-agents-2026.md
   - raw/articles/2026-06-02_glean_generative-ai-stack-for-software-engineers.md
@@ -185,6 +186,27 @@ Glean published an educational IR guide explaining retrieval fundamentals as app
 - **IR model families**: Boolean model (logical operators AND/OR/NOT), vector space model (documents/queries as vectors), probabilistic model (relevance as probability), language model (documents as sequences from a generative language model). Modern systems combine sparse keyword retrieval with dense neural retrieval in a hybrid approach.
 - **System components**: document collection, indexing, query processor, ranking algorithm, user interface.
 - **Five enterprise use cases**: document management, customer service (knowledge base retrieval), data analytics, e-discovery (legal), and enterprise search — Glean Search brings these together with permission-aware, cited results across email, documents, tickets, and chat.
+
+### Definitive Guide to AI-Based Enterprise Search (May 2026)
+
+Glean's long-form educational guide ("The definitive guide to AI-based enterprise search for 2025", scraped 2026-05-10) frames AI enterprise search as a shift from keyword matching to intent/context understanding, and surveys the vendor landscape:
+
+- **Traditional vs AI-powered search**: keyword matching → intent & context understanding; generic results → personalized role-based results; limited cross-platform → unified search across all business tools; manual relevance sorting → intelligent ranking.
+- **Enterprise Graph**: dynamic knowledge model linking people, data, and processes, continuously updated; maps relationships between employees, projects, documents, and business processes.
+- **Code intelligence**: AI-driven understanding/summarization/navigation of code repositories — automatic function discovery, dependency mapping, code summarization, cross-reference generation between code and documentation. Glean's AI Assistant provides instant document summaries, dependency analysis, code quality assessments, change-impact analysis, and automated documentation generation.
+- **Integration scale**: Glean integrates with 100+ SaaS apps and enterprise data repositories with real-time indexing.
+- **Platform comparison table** (5 vendors):
+
+| Platform | Key Strengths | AI Innovation | Integration Focus |
+|----------|---------------|---------------|-------------------|
+| **Glean** | Enterprise Graph, comprehensive security | Advanced LLMs, code intelligence | 100+ SaaS applications |
+| **Moveworks** | Agentic AI, employee experience | Reasoning Engine, intent detection | IT service management |
+| **Coveo** | Personalized recommendations | AI-powered relevance | E-commerce, digital experience |
+| **Elastic** | Customizable, open-source | Security analytics, observability | Technical infrastructure |
+| **Guru** | Governed knowledge management | Content verification, trust scoring | Knowledge management |
+
+- Notes Glean's $150M Series F funding round and Glean Protect (real-time permission checks, audit logging, GDPR/SOC 2 compliance support).
+- Future trends: democratization of AI across the workforce, advances in RAG (citation-backed answers grounded in organizational knowledge), AI agents automating multi-step cross-application processes (onboarding, compliance checking).
 
 ### UK Work AI Index — Policy vs Verification Gap (August 2026)
 

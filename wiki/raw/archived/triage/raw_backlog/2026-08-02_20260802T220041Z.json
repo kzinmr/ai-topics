@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-02T22:11:00.186036+00:00",
+  "triage_run_id": "20260802T220041Z",
+  "source": "raw_backlog",
+  "summary_ja": "22:00バッチの5記事を処理。ashvardanian氏のStringZilla Unicode検索記事でentities/ash-vardanyan.mdを拡充（v4.3-4.5のトークナイズ・ケースフォールディング・大文字小文字無視検索、ICU比50倍）。Gleanのdefinitive guide記事でentities/glean.mdにエンタープライズ検索ガイド節を追加（5ベンダー比較表、コードインテリジェンス）。minimaxirのAIエージェントコーディング記事はentities/minimaxir-com.mdに既収録、Thinking MachinesのOn-Policy Distillationはconcepts/post-training/on-policy-distillation.mdに既収録、Dan Luuのbad-decisionsは非AI（野球・ボードゲームの意思決定品質）でスキップ。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-glean-definitive-guide",
+      "source": "raw_backlog",
+      "source_name": "Glean Blog",
+      "title": "The definitive guide to AI-based enterprise search for 2025",
+      "url": "https://www.glean.com/blog/the-definitive-guide-to-ai-based-enterprise-search-for-2025",
+      "raw_path": "~/wiki/raw/articles/2026-05-10_glean_the-definitive-guide-to-ai-based-enterprise-search-for-2025.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/glean.mdへ節を追加。本文はAIエンタープライズ検索の教育的ガイドで、従来検索vs AI検索の比較、Enterprise Graph、コードインテリジェンス、100+ SaaS統合、Glean/Moveworks/Coveo/Elastic/Guruの5ベンダー比較表、$150M Series F、Glean Protectを記載。既存のIRガイド節（2026年8月）と重複部分はあるが、ベンダー比較表とコードインテリジェンス詳細は新規情報のため節を追加してソースを追記。",
+      "candidate_wiki_path": "entities/glean.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-minimaxir-ai-agent-coding",
+      "source": "raw_backlog",
+      "source_name": "minimaxir.com",
+      "title": "An AI agent coding skeptic tries AI agent coding, in excessive detail",
+      "url": "https://minimaxir.com/2026/02/ai-agent-coding/",
+      "raw_path": "~/wiki/raw/articles/minimaxir.com--2026-02-ai-agent-coding--1e287d7a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既収録。entities/minimaxir-com.md（177行）が本記事を一次ソースとして作成済み（Timeline 2026行、Core IdeasのEmpirical Imperative/Optimization Pipeline/AGENTS.md設定/リテラルな魔神問題/毒性言説問題、Key Quotes、Referencesにminimaxir.com--2026-02-ai-agent-coding--1e287d7a記載）。新規追加情報なし。",
+      "candidate_wiki_path": "entities/minimaxir-com.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-danluu-bad-decisions",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "How good are decisions? Evaluating decision quality in domains where evaluation is easy",
+      "url": "https://danluu.com/bad-decisions/",
+      "raw_path": "~/wiki/raw/articles/danluu.com--bad-decisions--52b0a7a9.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。本文は野球の状態機械モデル（盗塁・犠牲バントの期待値計算）、ボードゲーム、経営判断研究（Bloom et al.）を扱う意思決定品質のエッセイで、AI/LLMへの言及なし。wikiの対象外のためアーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-thinkingmachines-opd",
+      "source": "raw_backlog",
+      "source_name": "Thinking Machines Lab",
+      "title": "On-Policy Distillation",
+      "url": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+      "raw_path": "~/wiki/raw/articles/2025-10-27_thinkingmachines_on-policy-distillation.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既収録。concepts/post-training/on-policy-distillation.md（304行）が本記事を一次ソースとして作成済み（sourcesにraw/articles/2025-10-27_thinkingmachines_on-policy-distillation.md、チェス類推、逆KL損失、メカニズム詳細を収録）。Kevin Lu/Thinking Machines Labのオリジナル解説は完全にカバー済みで新規追加なし。",
+      "candidate_wiki_path": "concepts/post-training/on-policy-distillation.md",
+      "body_excerpt": ""
+    }
+  ]
+}

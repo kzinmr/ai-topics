@@ -2,7 +2,7 @@
 title: "Ash Vardanyan"
 type: entity
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-08-02
 tags:
   - person
   - simd-optimization
@@ -18,6 +18,7 @@ sources:
   - https://github.com/ashvardanian
   - https://ashvardanian.com/posts/numkong/
   - https://ashvardanian.com/posts/stringwars-on-gpus/
+  - https://ashvardanian.com/posts/search-utf8/
   - https://ashvardanian.com/posts/javascript-ai-vector-search/
   - https://ashvardanian.com/posts/apple-m1/
 ---
@@ -65,6 +66,15 @@ Notably, NumKong prioritizes numerical precision over raw throughput — NumKong
 
 ### StringZilla (2024–2026)
 SIMD-optimized string processing library. v4 added CUDA GPU acceleration, delivering 500+ GigaCUPS of edit-distance calculations. Originally started as conference talk material in the late 2010s showcasing AVX-512 vectorization of non-data-parallel workloads.
+
+**Unicode search stack (v4.3–v4.5, May 2026)** — "Full Unicode Search at 50× ICU Speed with AVX-512" documents StringZilla's case-insensitive search primitives, described by Ash as "the ugliest, but potentially most useful piece of open-source software" he wrote that year (UTF-8 is messy):
+
+- **Tokenizing** (v4.3): splits text into lines or whitespace-separated tokens, handling 25 different whitespace characters and 9 newline variants — 10× faster than alternatives.
+- **Case-folding** (v4.4): lowercases text handling all 1,400+ rules and edge cases of Unicode 17 locale-agnostic expansions — 10× faster than alternatives.
+- **Case-insensitive substring search** (v4.5): bypasses full case-folding for both European and Asian languages — 20–150× faster than alternatives, or up to 20,000× faster vs PCRE2 with the case-insensitive flag.
+- **Headline result**: fold & scan pipeline throughput 5–15 GB/s vs ICU's ~100–300 MB/s on already-folded text — a ~50× improvement. Tokenizing/case-folding target >10 GB/s (30+ GB/s for cached data); the 5 GB/s target matches a single NVMe SSD read or per-core RAM throughput of modern many-core CPUs.
+- **Correctness approach**: tested against a synthetic suite generated on the fly from the latest Unicode specs (so updating for Unicode 18.0 is trivial) AND against ICU on real-world data. Contrasts with experimental vectorized text projects that limit to ASCII or ignore Unicode edge cases.
+- **Benchmark baselines**: compares against ICU (including ICU4X, the Rust reimplementation by Mozilla/Google developers) and MemChr for tokenization/case-folding, and against PCRE2 regex for case-insensitive search.
 
 ### USearch
 Vector search engine that uses NumKong for distance calculations and OpenMP for job scheduling. Supports bindings for NodeJS and other runtimes. Enables SIMD-accelerated ANN search on ARM Neoverse N2 (AWS Graviton3) with 10× performance boost over pure AVX2 baselines.
