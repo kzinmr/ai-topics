@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-07-14
+updated: 2026-08-02
 tags:
   - person
   - blogger
@@ -22,6 +22,7 @@ sources:
   - raw/articles/martinalderson.com--posts-expert-aware-quantisation--532b8e2a.md
   - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-1-glm-5-2--20d7e445.md
   - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-2-winners-and-los--2b401389.md
+  - raw/articles/martinalderson.com--posts-speed-vs-intelligence--7a7e675b.md
 ---
 
 
@@ -153,6 +154,21 @@ Martin analyzes managed agents (cloud-hosted agents) using an **AWS Lambda analo
 
 If frontier labs begin offering new models and capabilities exclusively on their own managed agent platforms, the premise of the self-hosting strategy could collapse.
 
+
+### Speed Over Intelligence — Model Selection Shift (Aug 2026)
+
+In "[I'm (mostly) picking models on speed now, not intelligence](https://martinalderson.com/posts/speed-vs-intelligence/)" (Aug 1, 2026), Martin argues that the AI industry has reached an **intelligence tipping point** where models at the ~Opus 4.6 level are "smart enough" for most daily tasks, making speed the primary selection criterion.
+
+**Key arguments:**
+- **Claude Fable 5's slowness as inflection point**: After the US government shutdown forced everyone back to Opus, Fable's return with additional guardrails revealed just how slow it was — slow enough to drive Martin back to Opus permanently
+- **100 tok/s as the new 100ms**: ~100 tok/s output is the threshold where model output feels "instant" to human readers. Below 50 tok/s feels increasingly slow; above 200 tok/s feels "unnerving"
+- **Open weights driving speed competition**: Models like GLM 5.2 and DeepSeek V4 Flash GA are open-weights AND fast, with OpenRouter providers competing fiercely on serving speed (30–129 tok/s range for GLM 5.2)
+- **Amdahl's Law limits on speed gains**: At 250 tok/s, agents become bottlenecked on tool calls and human oversight, not inference. A 5x model speedup yields only ~2x turn speedup
+- **Hardware costs parabolic**: Local machine performance for tool calls is stalling because AI demand has driven hardware costs up
+- **Price war imminent**: OpenAI reduced Luna variant cost by 80% before DeepSeek V4 Flash GA release; GLM 5.2 already at $0.42/$1.32/MTok (5% of Opus pricing)
+- **2027 projection**: Vera Rubin and AMD MI400 GPUs with HBM4 memory will deliver 2x+ speedup from bandwidth alone; 500 tok/s at good quality is plausible
+
+Source: [[raw/articles/martinalderson.com--posts-speed-vs-intelligence--7a7e675b.md]]
 
 ### AI-Discovered Zero-Days
 

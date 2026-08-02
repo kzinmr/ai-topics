@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-07-29
+updated: 2026-08-02
 status: L3
 sources:
   - https://pluralistic.net/
@@ -17,6 +17,7 @@ sources:
   - raw/articles/pluralistic.net--2026-07-13-go-meta-meta--d0727adf.md
   - raw/articles/pluralistic.net--2026-07-24-supplemental-income--9c9dca6e.md
   - raw/articles/pluralistic.net--2026-07-28-hitl-ers--46dc0e4b.md
+  - raw/articles/pluralistic.net--2026-08-01-dare-snot--cd886481.md
 tags: [person]
 ---
 
@@ -232,6 +233,36 @@ Doctorow observes that if you understand a subject well enough to discern useful
 **AI as Teacher is Dangerous**: Doctorow argues that using AI as a teaching assistant (or worse, a teacher) is incoherent — \"by definition, a student *isn't* an expert on the subject they're studying. That's the whole point of studying — to acquire knowledge and thus discernment.\" He suggests teachers might find chatbots useful for generating test questions and answer keys (which a skilled teacher can validate), but never for teaching students directly.
 
 **Framing**: Doctorow concludes that \"AI is a normal technology\" — useful in some contexts, pointless or harmful in others. The rule of thumb: chatbots can only provide useful information to experts who have the discernment to ignore the defective output that LLMs always emit. His closing aphorism: \"Getting rid of teachers because we all have chatbots is like getting rid of doctors because we all have the plague.\"
+
+### Why Businesses Lie About AI — The AI Mania Coordination Problem (Aug 2026)
+
+In "[Why businesses lie about AI](https://pluralistic.net/2026/08/01/dare-snot/)" (Aug 1, 2026), Doctorow amplifies Nikhil Suresh's (Hermit Tech) 6,000-word essay "AI Mania Is Eviscerating Global Decisionmaking," adding his own structural analysis of why corporate AI adoption has become a self-reinforcing delusion.
+
+**Suresh's Core Thesis — The Coordination Problem:**
+> "We're facing a coordination problem around executives being honest around the AI gains they've witnessed — if they co-operate, they keep their jobs. If they defect, they will possibly be fired by their embarrassed peers."
+
+Suresh reports from "hundreds" of conversations with execs and employees that:
+- In 500+ employee businesses, only people who professed "religious declarations of faith" about AI were promoted or spared layoffs
+- Employees who voiced honest, informed objections were targeted for termination
+- Suresh has **never seen a successful enterprise AI project**: "Every single one — we have seen 0% success in a year and a half"
+- Announcements from publicly traded companies about AI triumphs that he knows for a fact never took place
+- An exec who crafted an AI-centered strategy for a $2b/year business despite having "never even used ChatGPT or any AI tool in their life"
+
+**The AI Demo Hypnotism Effect:**
+Suresh describes how Hermit Tech's demos of Snowflake's Cortex AI (92% accurate under ideal conditions, i.e., misleading 8%+ of the time) produced a "total 180°, that shift from ice-cold to red-hot buying frenzy" — execs who were lukewarm on millions in savings from database retooling became obsessed with purchasing the unreliable AI bolt-on.
+
+**Token Leaderboards and AI Washing:**
+Workers "just do the work, the same way they have for decades, and say Claude did it." Some write circular processes where one chatbot prompts another to consume AI tokens for high rankings on corporate "token leaderboards."
+
+**Doctorow's Structural Addition — The "Toy Steering Wheel" Theory:**
+Doctorow argues the root cause is that AI eliminates the most uncomfortable experience powerful people have: "ego-shattering conflicts with subordinates who know how to do things they do not know how to do." Cortex-style AI lets bosses bypass underlings who might give "unsolicited feedback about the technical or commercial incoherence of the boss's request." The AI "never back-sasses you about your foolish questions."
+
+**The Centaur Exception:**
+Doctorow reconciles individual skilled technologists' positive AI experiences with enterprise failure: these workers are "centaurs" who engage AI "on their own terms, to improve their work." Worker-driven automation improves quality; capital-driven automation improves throughput. AI tools that require continuous discernment from skilled practitioners are "a way to spend more on operations in order to produce better outputs" — not a workforce reduction strategy.
+
+> "As ever, the most important fact about a given technology isn't 'what it does,' but 'who it does it for' and 'who it does it to.'"
+
+Source: [[raw/articles/pluralistic.net--2026-08-01-dare-snot--cd886481.md]]
 
 ## Related Pages
 

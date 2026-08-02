@@ -2,7 +2,7 @@
 title: "Moonshot Kimi K3"
 type: concept
 created: 2026-07-17
-updated: 2026-07-28
+updated: 2026-08-02
 tags:
   - model
   - china
@@ -21,6 +21,7 @@ sources:
   - "raw/newsletters/2026-07-28-ainews-much-ado-about-open-weights.md"
   - "raw/articles/2026-07-28_fireworks-ai_K3-LoRA-Training.md"
   - "raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md"
+  - "raw/articles/together.ai--blog-kimi-k3-guide--70e2c263.md"
 ---
 
 # Moonshot Kimi K3
@@ -40,7 +41,7 @@ K3 represents a significant pricing tier shift for Chinese AI labs: at **$3/M in
 | Total Parameters | **2.8 Trillion** (marketed as "3T-class") |
 | Active Parameters | **~50B** (16 of 896 experts, <2% activation ratio) |
 | Context Window | **1M tokens** |
-| Reasoning Efforts | Only "max" (no lower effort levels) |
+| Reasoning Efforts | low, high, max (default: max) |
 | Attention Mechanism | Kimi Delta Attention (KDA) — up to 6.3x faster decoding |
 | Training Innovation | Attention Residuals (AttnRes) — ~25% higher efficiency |
 | MoE Architecture | LatentMoE / Stable LatentMoE |
@@ -74,6 +75,25 @@ From Moonshot's technical blog and community analysis, additional architectural 
 - **QB / Quantile Load Balancing**: Load balancing technique for expert utilization.
 
 The combination of KDA + LatentMoE + AttnRes at 2×+ scale over K2.6 was noted by architecture observers as a notable engineering achievement — scaling a non-standard attention stack into a frontier-class model.
+
+## Developer Features (Together AI Guide, Aug 2026)
+
+### Reasoning Effort Control
+K3 now supports three reasoning effort levels via `reasoning_effort`: `low`, `high`, and `max` (default). Thinking can also be disabled entirely with `reasoning={"enabled": False}` for instant-mode responses. Thinking tokens are billed as output at $15/M, so setting `reasoning_effort` appropriately for task complexity is important for cost control.
+
+### Preserved Thinking
+K3 was trained in **preserved thinking history mode** — the reasoning trace from one turn becomes state that the next turn depends on. Developers can replay `reasoning_content` from previous assistant turns to maintain context across multi-turn conversations. Dropping the trace causes the model to invent fresh reasoning each turn, losing accumulated context.
+
+### Dynamic Tool Loading
+K3 supports placing complete tool definitions inside system messages with a `tools` field and no content. This enables **on-demand tool injection**: declare a lightweight search function at conversation start, then inject full tool definitions based on retrieval results. Appending dynamic declarations to the end of messages does not affect the cached prefix.
+
+### Structured Output
+Supports `response_format` with `json_schema` and `strict: true`. The `json_object` mode also works for syntactically valid JSON. Important: keep `max_tokens` generous because the entire thinking trace is spent before the first schema-constrained token is emitted.
+
+### Vision
+Native vision input with multiple images per request. No limit on image count, but total request body must stay under 100 MB. Recommended max resolution: 4K (4096×2160).
+
+Source: [[raw/articles/together.ai--blog-kimi-k3-guide--70e2c263.md]]
 
 ## Benchmarks
 
@@ -222,8 +242,7 @@ Simon Willison's standard pelican SVG generation test (via OpenRouter):
 | Total cost | **$0.25** |
 
 Notable observations:
-- Only one reasoning effort level available: **"max"** — no lighter/cheaper option
-- This means every request pays for full reasoning, making the model expensive for simple tasks
+- Reasoning effort now supports three levels: **low**, **high**, and **max** (default) — though at launch only "max" was available
 - Vision input works well; alt text generation is high quality
 - ~85 token hidden system prompt suspected
 
@@ -254,7 +273,7 @@ Despite accuracy improvements (+18 pts on AA-Omniscience), the model's hallucina
 
 ### "Thinks Forever" Risk
 
-Multiple users noted K3 currently appears to "think a lot," preserve long reasoning history, and may require more careful harness support than simpler chat-first APIs. Its "max-only" reasoning effort means every request pays for full reasoning, making the model expensive for simple tasks.
+Multiple users noted K3 currently appears to "think a lot," preserve long reasoning history, and may require more careful harness support than simpler chat-first APIs. Its default "max" reasoning effort means most requests pay for full reasoning unless explicitly reduced.
 
 ## Community Reaction
 

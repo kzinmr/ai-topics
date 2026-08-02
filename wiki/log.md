@@ -2,6 +2,21 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-02] blog-triage (10:30) | 20 articles scanned, 3 entities/pages updated
+
+Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant Tier 1/2 sources.
+
+**Updated:**
+- [[entities/martin-alderson]] — Added "Speed Over Intelligence" section (Aug 2026): model selection shift from intelligence to speed, 100 tok/s as new 100ms threshold, Amdahl's Law limits on agent speed gains, price war dynamics (GLM 5.2 at 5% of Opus pricing), 2027 projection of 500 tok/s with HBM4 GPUs. Source: raw/articles/martinalderson.com--posts-speed-vs-intelligence--7a7e675b.md
+- [[entities/cory-doctorow]] — Added "Why Businesses Lie About AI" section (Aug 2026): amplifying Nikhil Suresh's "AI Mania Is Eviscerating Global Decisionmaking" — coordination problem of corporate AI honesty, 0% enterprise AI project success rate, AI demo hypnotism effect, token leaderboards, Doctorow's "toy steering wheel" theory of why bosses love AI. Source: raw/articles/pluralistic.net--2026-08-01-dare-snot--cd886481.md
+- [[concepts/kimi-k3]] — Updated from Together AI developer guide: reasoning_effort now supports 3 levels (low/high/max, not max-only), added Developer Features section (preserved thinking, dynamic tool loading, structured output, vision limits), fixed outdated "max-only" caveats. Source: raw/articles/together.ai--blog-kimi-k3-guide--70e2c263.md
+
+**Raw-saved only (no wiki action):**
+- simonwillison.net × 6 (open letters summary, July newsletter, Greg Brockman quote, datasette-apps release, ten advances in math, Slack Emoji Maker) — newsletter/link posts, policy context already captured in existing pages
+- pluralistic.net (Cory Doctorow) — article content captured via entity update above
+- together.ai (Kimi K3 guide) — content captured via concept update above
+- tedium.co, shkspr.mobi, oldvcr.blogspot.com, nesbitt.io, johndcook.com × 3, daringfireball.net × 2, construction-physics.com, borretti.me — non-AI content (hardware reviews, math essays, Apple news, retro computing, package management)
+
 ## [2026-08-02] raw-backlog-ingest (10:00) | 1 entity enriched, 5 articles processed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-02 10:00, run 20260802T100016Z). Archive: 4 newly archived, 1 dedup_skipped (archive_index total 2,164). Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (0 take / 1 reference / 4 skip).
