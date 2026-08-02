@@ -1,6 +1,14 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-02] daily-skeleton-enrichment | L2→L3: Kyle Jeong + Apurva Gandhi (browser agent harness, CDP, dual advisors)
+
+- **Skeleton backlog**: 0 pages with `status: skeleton` remain — continued L2→L3 enrichment of thinnest entity pages (established pattern).
+- **[[entities/kyle-jeong]]** (L2→L3, 61→93 lines, 2.9KB→6.8KB): Added 2 new raw articles — `raw/articles/2026-06-03_kylejeong_browser-agent-harness.md` (Browserbase harness essay: harness=rebranded context engineering, 4 raw-model failures, 4 raw-CDP production problems, six-layer harness: security/caching/identity/credential-brokering/skill-memory/filesystem, Stagehand vs raw CDP decision tree) and `raw/articles/2026-07-17_kylejeong_what-is-cdp.md` (CDP explainer: commands/events, sessions/targets, Site Isolation, flat mode, why raw CDP sucks). Updated bio: UCLA graduate June 2026, 21yo SF. Added 4 new blog posts (CDP, great firewall, college essay, Twitter distribution essay). New sections: Browser Agent Harness Essay. Cross-links: browserbase, browse-sh, agent-harnesses, browser-agent/death-of-browser, browser-use-production-architecture, firecracker, sandbox, computer-use.
+- **[[entities/apurva-gandhi]]** (L2→L3, 68→102 lines, 2.9KB→5.2KB): Corrected bio from live site (updated Jul 2026): 2nd-year PhD (not just "PhD student"), **co-advised by Aviral Kumar + Graham Neubig** (was Neubig only), student researcher at **NVIDIA Research**, Amazon AI PhD Fellow. Added full Google Scholar publication table (~580+ cites, 12 papers incl. deepfake detector ~226, SkillWeaver ~124, AgentDiagnose, Agent Data Protocol, CodeScout, PPT-Eval). Fixed frontmatter related: (removed dangling graham-neubig/aviral-kumar links — no pages exist).
+- index.md: updated descriptions for both entities.
+- Sources: kylejeong.com + RSS, browserbase.com blog, apga.github.io (live), Google Scholar.
+
 ## [2026-08-02] dreaming-wiki-ingest | 1 reference enriched (Simon Willison Open Letters)
 - **Recovery**: upstream dreaming-group render failed (Pitfall #12), but committed archive-only at `dd4e0c2b` (log.md + archive JSON + archive_index.json, no entity changes) — archive-only variant (Pitfall #21).
 - **Triage**: 15 decisions (0 takes, 1 reference, 14 skips). Reference: [[entities/simon-willison]] Open Letters blog post (Aug 2).

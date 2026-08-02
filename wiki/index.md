@@ -64,7 +64,7 @@
 - [[entities/antoine-chaffin]] — Antoine Chaffin
 - [[entities/anyscale]] — Anyscale — Company behind Ray distributed computing framework; enterprise ML infrastructure at scale (Ant Group: 60K cores, 5K nodes)
 - [[entities/applied-intuition]] — Applied Intuition
-- [[entities/apurva-gandhi]] — Apurva Gandhi
+- [[entities/apurva-gandhi]] — Apurva Gandhi — CMU PhD student (co-advised Kumar/Neubig), NVIDIA Research, RAO recursive agent optimization, ex-Microsoft Copilot
 - [[entities/ar0cket1]] — ar0cket1
 - [[entities/arcee-ai]] — Arcee AI
 - [[entities/arena-ai]] — Arena AI
@@ -448,7 +448,7 @@
 - [[entities/krebsonsecurity-com]] — Brian Krebs
 - [[entities/kyle-corbett]] — Kyle Corbett — Researcher/engineer at OpenPipe; agentic workflows, MCP, RL for agents
 - [[entities/kyle-corbitt]] — Kyle Corbitt
-- [[entities/kyle-jeong]] — Kyle Jeong
+- [[entities/kyle-jeong]] — Kyle Jeong — Browserbase growth engineer; browser agent harness + CDP explainer
 - [[entities/lance-martin]] — Lance Martin
 - [[entities/langchain]] — LangChain
 - [[entities/langsmith]] — LangSmith
