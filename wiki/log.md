@@ -1,6 +1,13 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-02] dreaming-wiki-ingest | 1 reference enriched (Simon Willison Open Letters)
+- **Recovery**: upstream dreaming-group render failed (Pitfall #12), but committed archive-only at `dd4e0c2b` (log.md + archive JSON + archive_index.json, no entity changes) — archive-only variant (Pitfall #21).
+- **Triage**: 15 decisions (0 takes, 1 reference, 14 skips). Reference: [[entities/simon-willison]] Open Letters blog post (Aug 2).
+- **Deep Sleep verification**: entity page line 683 had only Oxide and Friends podcast blurb; the 3-letter analysis (Open Weights and American AI Leadership — Microsoft-shepherded, 235 signatories, distillation support; Anthropic's response — Dario Amodei's distillation crackdown; Pacing the Frontier — 1,324 frontier employees) was absent from page body → genuine gap.
+- **Enriched**: entities/simon-willison.md — added "Open Letters on AI Development — 3 Letters Analyzed" section with the 3 letters' details; frontmatter updated (updated: 2026-08-02, +source simonwillison.net--2026-aug-2-open-letters). Wikilinks: [[concepts/claude/fable-5]], [[concepts/kimi-k3]], [[concepts/open-source-ai-must-win]].
+- **Archive**: already committed by upstream (8 newly archived, total 2,195 URLs) — no re-run needed.
+
 ## [2026-08-02] dreaming | Pattern E saturation — 1 reference, 0 takes
 - **Checkpoint**: 0 articles collected, 201 recent raw articles on disk (range 2026-07-26 → 2026-08-02).
 - **Prior triage (2026-08-01)**: 22 decisions (0 takes, 7 references, 15 skips) — all consumed by dreaming-wiki-ingest (Aug 1), 5 entity pages enriched (Glean, Cohere, Simon Willison, Harvey, ElevenLabs).
