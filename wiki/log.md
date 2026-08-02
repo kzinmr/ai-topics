@@ -1,3 +1,14 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-08-02] raw-backlog-ingest (18:00) | duplicate batch detected - no wiki changes, tracking fixed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-02 18:00, run 20260802T180008Z).
+- DUPLICATE of run 20260802T140007Z (14:00): all 5 articles already processed - concepts/post-training/rl-environments created, recursive-self-improvement + entities/semianalysis enriched (SemiAnalysis Scaling RL), 4 non-AI skips archived.
+- No wiki changes. Tracking fixed: 5 entries marked done/skipped in processed_raw_articles.json to prevent re-selection (1-hour processing timeout had re-collected them).
+- Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (0 take / 0 reference / 5 skip).
+
 ## [2026-08-02] watchdog | wiki health digest review
 
 ### Checks
@@ -10,11 +21,6 @@
 - Fixed Concepts header count: 1954 → 1955 (actual 1935 files + 20 _index)
 
 ---
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
-
 
 ## [2026-08-02] watchdog | auto-fix log header burial + 2 frontmatter fixes
 
@@ -3579,3 +3585,4 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
   - Simon Willison Jul 31 batch → `entities/simon-willison.md` all sources registered
 - **Archive**: `archive_triage.py` returned "All items already archived (dedup)" — 0 new URLs archived
 - **Wiki changes**: None (Takes=0, full saturation)
+
