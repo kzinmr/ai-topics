@@ -864,7 +864,7 @@
 - [[entities/yann-lecun]] — Yann LeCun
 - [[entities/yeachan-heo]] — Yeachan Heo (Bellman)
 - [[entities/yoav-goldberg]] — Yoav Goldberg
-- [[entities/yohei-nakajima]] — Yohei Nakajima
+- [[entities/yohei-nakajima]] — Yohei Nakajima — Creator of BabyAGI, ActiveGraph (arXiv:2605.21997); Shared Discovery Paradox (arXiv:2607.18045)
 - [[entities/yoonho-lee]] — Yoonho Lee
 - [[entities/ysymyth]] — ysymyth
 - [[entities/zach-mueller]] — Zach Mueller; "Learning pi through force" — Model Memo deep research pipeline migration from Claude Code to Pi (July 13)
@@ -879,7 +879,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1937 pages)
+## Concepts (1938 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2598,6 +2598,7 @@
 - [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism
 - [[concepts/sglang-structured-generation-language]] — SGLang (Structured Generation Language)
 - [[concepts/shadow-ai-governance]] — Shadow AI Governance
+- [[concepts/shared-discovery-paradox]] — Shared Discovery Paradox — Game-theoretic model showing information sharing without action coordination degrades collective outcomes; implications for multi-agent systems with shared memory (Yohei Nakajima, July 2026)
 - [[concepts/shkspr.mobi]] — shkspr.mobi
 - [[concepts/shopify-ai-engineering]] — Shopify's AI-First Engineering
 - [[concepts/short-leash-ai-coding]] — Short Leash AI Coding — 12-principle methodology for tight human-in-the-loop AI-assisted coding; contrasts with unsupervised vibe engineering; AI disclosure and self-review protocols (July 5)

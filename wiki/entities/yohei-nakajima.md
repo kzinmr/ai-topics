@@ -1,7 +1,7 @@
 ---
 title: "Yohei Nakajima"
 created: 2026-05-19
-updated: 2026-05-22
+updated: 2026-08-03
 type: entity
 tags:
   - person
@@ -9,6 +9,8 @@ tags:
   - architecture
   - open-source
   - self-improving
+  - game-theory
+  - coordination
   - x-account
 sources:
   - "https://yoheinakajima.com/"
@@ -16,6 +18,9 @@ sources:
   - "raw/articles/2026-05-19_yoheinakajima_state-of-statefulness-ai-agents.md"
   - "raw/articles/2026-05-19_yoheinakajima_activegraph-continuity-layer.md"
   - "raw/papers/2026-05-22_2605.21997_the-log-is-the-agent-activegraph.md"
+  - "raw/articles/2026-07-21_yoheinakajima_shared-discovery-paradox.md"
+  - "https://arxiv.org/abs/2607.18045"
+  - "https://github.com/yoheinakajima/shared-discovery-paradox"
   - "https://yoheinakajima.com/the-future-of-autonomous-agents/"
   - "https://yoheinakajima.com/better-ways-to-build-self-improving-ai-agents/"
   - "https://github.com/yoheinakajima/babyagi3"
@@ -92,6 +97,18 @@ Both articles documented in [[concepts/harness-engineering/agent-statefulness]].
 - **Worked example**: `activegraph quickstart` reproduces full investment diligence (93 objects, 76 relations, 7 behaviour types)
 - **Source**: `raw/papers/2026-05-22_2605.21997_the-log-is-the-agent-activegraph.md`
 
+### Shared Discovery Paradox (July 2026)
+
+Nakajima formalized a game-theoretic insight about the tension between information sharing and action coordination in collective discovery. Using a simple 16-box, 8-player game with imperfect clues (20% accuracy), he demonstrated a counterintuitive result: sharing information almost doubles individual accuracy (20% → 38.4%) but cuts collective success probability by more than half (83.2% → 38.4%) when players independently maximize their own accuracy without coordinating actions.
+
+**Key insight**: Improving the group outcome depends on action allocation, not just information sharing. When players coordinate to choose the 8 most likely distinct boxes, collective success jumps to 85.9% — even though the average probability per assigned box is only 10.74%.
+
+The work connects to established literatures: information cascades (Banerjee; Bikhchandani, Hirshleifer & Welch), observational learning (Smith & Sørensen), organizational learning (March), optimal search (Koopman), division of cognitive labor (Kitcher; Zollman), price of anarchy (Roughgarden), and informational Braess' paradox (Acemoglu et al.).
+
+Published as arXiv:2607.18045 with an open-source implementation at `github.com/yoheinakajima/shared-discovery-paradox` and an interactive site. The paradox has direct implications for multi-agent systems with shared memory, corporate innovation across competing departments, and allocation of funding in venture capital or scientific discovery.
+
+See **[[concepts/shared-discovery-paradox]]** for the full analysis.
+
 ### Other Projects
 
 - **Pippin**: AI-powered SVG unicorn. Fully autonomous digital being with activity selection, memory, and state management. Demonstrates agent statefulness for non-technical use cases.
@@ -109,6 +126,7 @@ Both articles documented in [[concepts/harness-engineering/agent-statefulness]].
 - [[concepts/activegraph]] — The formal event-sourced reactive graph architecture (arXiv:2605.21997)
 - [[concepts/harness-engineering/agent-statefulness]] — The evolution of state management in AI agents
 - [[concepts/babyagi]] — BabyAGI concept page
+- [[concepts/shared-discovery-paradox]] — The Shared Discovery Paradox: information sharing without action coordination
 - [[concepts/memory-systems-design-patterns]] — Anthropic vs OpenAI vs Cognition memory patterns
 - [[concepts/harness-engineering/agent-runtime]] — Agent execution environment
 - [[concepts/agent-harness-primitives]] — Harness as stateful control layer

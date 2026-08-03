@@ -1,41 +1,14 @@
-## [2026-08-03] raw-backlog-ingest (22:00) | saturation batch — 5 articles already captured or non-AI
-
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 22:00, run 20260803T220025Z). All 5 candidates already wiki-processed or non-AI — no wiki edits needed.
-- **skip (already captured)**: Anthropic "Demystifying evals for AI agents" (2026-05-08) → `concepts/evaluation/evals-for-ai-agents.md` sources (same-day capture, updated 2026-05-08) + `concepts/harness-engineering/system-architecture/evals-for-ai-agents.md`; Glean "Agent orchestration platforms compared" (2026-08-01) → `entities/glean.md` sources + "Agent Orchestration Platform Comparisons" section (six-platform table); Micah Lee "Practical Defenses Against Technofascism" → `entities/micahflee.md` "Technofascism and the Weaponization of Surveillance" section + reference.
-- **skip (non-AI)**: Russ Cox "Computing History at Bell Labs" (2008, computing history — no AI relevance); filfre.net "The Mystery of Rennes-le-Château, Part 1" (retro gaming/history — already in `entities/filfre-net.md` References, part of 4-part series).
-- Tracking: all 5 marked done/skip in processed_raw_articles.json.
-
-## [2026-08-03] dreaming wiki-ingest | confirmation — upstream dreaming-group already committed enrichment
-
-- Pre-run JSON parse failed; recovered via triage_latest.json (18:09:28Z) — 15 decisions (13 skip, 2 reference), Takes=0 is post-enrichment state.
-- Upstream dreaming-group committed `ede5ef59` (18:19) with BOTH enrichment and archive: [[entities/together-ai]] (Inference-Native Autoscaling section), [[entities/browserbase]] (Browser Agent Harness Architecture section), archive 2026-08-03_20260803T180928Z.json (8 newly archived).
-- Verified on disk: both entity pages have frontmatter `updated: 2026-08-03`, new sources, and substantive body sections (autoscaling metrics table; six-layer harness table + raw-CDP critique).
-- Archive re-run skipped (already committed by upstream). Staged log.md only for confirmation commit.
-
-## [2026-08-03] dreaming | Pattern E saturation — 2 references enriched, 0 takes
-
-- **Checkpoint**: total_articles=0, recent_raw_articles=204 (Jul 27-Aug 3 range). Pattern E filesystem scan triggered.
-- **Scan scope**: 76 raw articles from Jul 30-Aug 3. Cross-referenced against blog-triage (17 decisions, 10:35), newsletter-triage (11 decisions, 11:00), active-crawl (11:03), raw-backlog-ingest (14:00/18:00).
-- **2 references enriched**:
-  - **[[entities/together-ai.md]]** — Added "Inference-Native Autoscaling (July 2026)" section: inference-specific autoscaling metrics (in-flight requests, TTFT, GPU utilization, token throughput), replica bounds, scale-up/down window tuning. Why CPU/memory metrics fail for LLM inference.
-  - **[[entities/browserbase.md]]** — Added "Browser Agent Harness Architecture (June 2026)" section: Kyle Jeong's 6-layer harness (security/caching/identity/credential broker/skill memory/filesystem), raw-CDP camp critique, DOM-as-adversarial-input principle, production deployment lessons from Ramp/Lovable.
-- **13 skips**: Simon Willison stateless MCP (already in entity page), Boris Cherny YC interview (already in sub-page), Gary Marcus Astra critique (already in openai-astra), Sierra+Plaid (already in entity page), ElevenLabs IVR (already in entity page), Thinking Machines Lab open weights (already in entity page), Qwen3.8-Max (already in qwen-3-8), Mu tools (already in concept page), Bjorn Roche productivity gap (already in concept page), Sean Goedecke credit (blog-triage skip), Fernando Borretti book review (blog-triage skip), Ibrahim Diallo accessibility (non-AI), Cory Doctorow Andor (non-AI).
-- **Archive**: 15 candidates, 8 newly archived, 7 dedup. Total archive URLs: 2,228.
-
-## [2026-08-03] watchdog | L2 pipe-prefix corruption fixed (20 files)
-
-- **Pipe-prefix corruption remediation** — Fixed 81 corrupted `|- ` bullet lines + 4 double-pipe `||- ` lines + 39 whole-block `|`-prefixed lines across 20 L2 pages (entities 12, concepts 7, one combined). Root causes: read_file line-number framing pasted into content, and a table-paste artifact in gary-marcus.md.
-- **entities/**: dwarkesh-patel.md (4 bullets incl. `||- ` double-pipe), seangoedecke-com.md (11 bullets incl. `||- ` double-pipe + empty bullet), tom-aarsen.md, openai.md, lilian-weng.md, samuel-colvin.md (3), nathan-lambert.md (3), substack.md, gemma-4.md (Sources: 11 bullets + empty removed), openai-spud.md, mistral-voxtral-tts.md, agibot-10000-units.md (empty bullet removed), amazon-rivr.md (3).
-- **concepts/**: evaluation/offline-evaluation.md (11 bullets), inference/sglang.md (merged heading `## Key Integration Partners|- **NVIDIA**` split into heading + 6 bullets), claude/fable-5.md (5), kimi-k3.md, ai-benchmarks/remote-labor-index.md, ai-benchmarks/osworld.md.
-- **entities/gary-marcus.md** — Stripped `|` prefix from a 39-line block (lines 272–310) that had been pasted as a broken table: `|### Nvidia $250B Backstop...` → `### Nvidia $250B Backstop...`, `|- Oracle stock fell...` → `- Oracle stock fell...`. Content preserved verbatim.
-- Verified: 0 remaining `|- ` / `||- ` lines in L2, `validate_index.py` clean (2889 lines), 0 ghost entries, all 24 orphan candidates false positives (22 subdir `_index` real files + 2 `_archive/` intentionally unindexed + 1 redirect `entities/tim-sherratt`→`entities/tim-sh` already indexed).
-
----
-
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-03] X bookmarks ingest — Shared Discovery Paradox | 1 bookmark processed
+
+- **X bookmark**: Yohei Nakajima, "The Shared Discovery Paradox" (July 21, 2026) — 1 new concept page, 1 entity page enriched
+  - **[[concepts/shared-discovery-paradox]]** (new) — Game-theoretic model demonstrating information sharing without action coordination degrades collective outcomes. 16-box, 8-player game with imperfect clues (20% accuracy): sharing information nearly doubles individual accuracy (20% → 38.4%) but halves collective success (83.2% → 38.4%). Coordination restores collective success to 85.9%. Implications for multi-agent systems with shared memory, corporate innovation, VC funding allocation. Links to information cascades, division of cognitive labor, price of anarchy. arXiv:2607.18045.
+  - **[[entities/yohei-nakajima]]** (enriched) — Added Shared Discovery Paradox section with game mechanics, key insight, academic foundations, and implications. Updated tags (game-theory, coordination). Added sources (raw article, arXiv, GitHub).
+- **Raw article**: `raw/articles/2026-07-21_yoheinakajima_shared-discovery-paradox.md` — full plain_text from bookmark (Tier 0, no API needed)
+- **Index**: Concepts 1937→1938; updated yohei-nakajima entity description
 
 ## [2026-08-03] raw-backlog-ingest (18:00) | same-day dedup — batch already processed at 14:00
 
