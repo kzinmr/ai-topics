@@ -1,16 +1,20 @@
 ---
 title: "Anyscale"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-08-03
 type: entity
 tags:
   - company
   - infrastructure
   - architecture
   - ray
+  - nscale
+  - physical-ai
 sources:
   - raw/articles/anyscale.com--blog-building-highly-available-and-scalable-online-applicati--7faef8c2.md
   - raw/articles/anyscale.com--blog-online-resource-allocation-with-ray-at-ant-group--487de159.md
+  - raw/articles/anyscale.com--blog-anyscale-signs-definitive-agreement-to-join-nscale--b919a211.md
+  - raw/articles/anyscale.com--blog-introducing-the-anyscale-physical-ai-skill--46582823.md
 related:
   - concepts/ray
   - entities/ant-group
@@ -55,6 +59,34 @@ A flexible, high-performance online resource allocation system based on Ray:
 - **Components**: Real-time model calibration, traffic prediction, constraint correction, large-scale LP optimization
 
 Source: [[raw/articles/anyscale.com--blog-online-resource-allocation-with-ray-at-ant-group--487de159.md]]
+
+## Nscale Acquisition (Aug 2026)
+
+Anyscale signed a definitive agreement to join **Nscale**, a neocloud provider focused on physical AI infrastructure. Key points:
+- **Ray doubling down**: Expanding investment in Ray + open-source community under PyTorch Foundation governance (Google, NVIDIA, Microsoft contributing)
+- **Nscale**: Multi-gigawatt pipeline, vertical integration from land/power to data centers, among first to deploy **GB300 NVL72** at scale
+- **GPU capacity**: Anyscale Platform customers gain access to Nscale compute
+- **Multi-cloud**: Anyscale Platform continues across all major clouds post-closing
+- **Revenue**: 70%+ QoQ revenue growth in the past quarter
+- **Nscale plans** to join PyTorch Foundation as Platinum member
+
+The rationale: software must co-optimize with rack/cluster topology, hardware heterogeneity, and disaggregated compute. Joint optimization across the stack is now essential.
+
+Source: [[raw/articles/anyscale.com--blog-anyscale-signs-definitive-agreement-to-join-nscale--b919a211]]
+
+## Physical AI Skill (Aug 2026)
+
+Anyscale introduced the **Physical AI Skill** for robotics and autonomous driving workloads built on Ray. Covers six workload classes:
+1. **VLA fine-tuning** (imitation learning/SFT) — π0, SmolVLA, OpenVLA, GR00T-N1.5, Alpamayo-1.5
+2. **Offline/open-loop VLA RL post-training** — using logged trajectories with Cosmos-RL (GRPO/RLVR)
+3. **Online/closed-loop VLA RL post-training** — with AlpaSim, Isaac Lab simulators
+4. **Robot policy serving** — Ray Serve HTTP endpoints with GPU-isolated simulator workers
+5. **World-model training** — Cosmos-Predict2, diffusion world models
+6. **Simulator-native RL** — Isaac Lab, MuJoCo MJX, Unreal Engine 5.7
+
+The skill scopes workloads, makes systems decisions explicit, and generates code + compute configs. Extends Anyscale Agent Skills into physical AI following the LLM post-training skill.
+
+Source: [[raw/articles/anyscale.com--blog-introducing-the-anyscale-physical-ai-skill--46582823]]
 
 ## Why Ray Matters for AI
 

@@ -596,6 +596,7 @@
 - [[entities/omri-weinstein]] — Omri Weinstein
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
 - [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot
+- [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition
 - [[entities/openai-codex]] — OpenAI Codex; enriched with Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo)

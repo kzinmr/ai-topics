@@ -1,3 +1,37 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+## [2026-08-03] tag-audit-weekly (10:00) | 2 tag violations fixed
+
+- Ran `scripts/tag_audit.py` (cron pre-run script blocked: path resolves outside `/opt/data/.hermes/scripts` — ran directly).
+- Audit: 2,934 pages with tags, 752 unique tags, **2 tags not in SCHEMA taxonomy** (both one-off): `wiki-maintenance`, `graph-analysis` (both on `queries/wiki-graph-analysis-weekly-2026-07-31.md`).
+- **Fixed**: Deleted both one-off non-SCHEMA tags (inline `tags: [wiki-maintenance, graph-analysis]` → `tags: []`), updated `updated:` to 2026-08-03.
+- Re-audit: **0 violations** (0 non-SCHEMA, 0 composite kebab-case).
+- Normalization dry-run: 39 pages would change, but all source tags are valid SCHEMA taxonomy tags (preference rewrites like `gpu`→`hardware`, `retrieval`→`rag`, `ai-safety`→`agent-safety`) — out of scope for violation-fix; NOT applied to avoid tag specificity loss.
+- **Fixed pre-existing log header burial**: `llm-pricing-monitor` entry had been prepended above `# Wiki Log` header; restored header to top.
+
+## [2026-08-03] blog-triage (10:24) | 17 articles scanned, 6 AI-relevant updates
+
+**Scan**: 17 new articles from blogwatcher RSS scan
+**Updated**: `entities/boris-cherny--claude-code-development.md`, `entities/anyscale.md`, `entities/openai-astra.md`
+**Created**: `entities/openai-astra.md`
+
+Triage summary (NJ = newsjacking score 0-5):
+| ソース | タイトル | NJ | アクション | 対象 |
+|--------|----------|-----|------------|------|
+| ycrootaccess.com | Boris Cherny: Building Claude Code | 5 | wiki更新 | boris-cherny--claude-code-development.md |
+| garymarcus.substack.com | OpenAI Astra (vastly oversold) | 4 | 新規作成 | openai-astra.md |
+| anyscale.com | Anyscale + Nscale | 4 | wiki更新 | anyscale.md |
+| anyscale.com | Physical AI Skill | 3 | wiki更新 | anyscale.md |
+| pluralistic.net | Dualism (Cory Doctorow) | 3 | 保留（AI consciousness哲学） |
+| simonwillison.net | condense-json 1.0 | 2 | スキップ（低関連性） |
+| その他 | Troy Hunt, John D Cook 等 | 0-1 | スキップ |
+
+Key findings:
+- **Opus 5**: Extended autonomous runs (days/weeks), prompt injection resistance via mechanistic interpretability, 80% system prompt deletion
+- **Anyscale + Nscale**: Major infrastructure acquisition, Ray doubling down, GB300 NVL72 at scale
+- **OpenAI Astra**: 10 open math problems solved, but Marcus critiques fallacy of composition
+
 ## [2026-08-03] llm-pricing-monitor (10:00) | OpenAI GPT-5.6-terra/luna price correction
 
 **Updated**: `comparisons/llm-api-pricing.md`
@@ -10,9 +44,6 @@
 - **DeepSeek**: Verified unchanged — V4-Flash $0.14/$0.28, V4-Pro $0.435/$0.87
 - Sources: OpenAI, Anthropic docs, Google Vertex AI, DeepSeek API docs (all fetched live)
 
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 ## [2026-08-03] raw-backlog-ingest (10:00) | duplicate batch detected - no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 10:00, run 20260803T100025Z).
