@@ -1,3 +1,24 @@
+## [2026-08-03] active-crawl (11:03) | 2 new pages, 1 enriched, 3 raw articles, 15 wikilink fixes
+
+### New Concept Pages
+- **[[concepts/ai-productivity-gap]]** — AI Productivity Gap: disconnect between AI capability improvements and measured developer productivity; Björn Roche time allocation analysis (July 2026, HN 56 pts). Time allocation tables for senior vs junior devs, Amdahl's Law analogy, doorman fallacy, parallel agent management overhead. Sources: [bjorg.bjornroche.com](https://bjorg.bjornroche.com/management/ai-productivity-gap/), raw article.
+- **[[concepts/mu-tools-for-agents]]** — Mu: open-source suite of 18+ developer tools for AI agents, distributed as MCP server in Go (HN Show HN, 50 pts). Browser, git, image, video, file system, code execution, social media integrations. Source: [github.com/micro/mu](https://github.com/micro/mu), raw article.
+
+### Enriched Pages
+- **[[concepts/qwen-3-8.md]]** — Added Qwen3.8-Max release section (HN 623 pts): first Qwen-Max-class open-weight release, reasoning_effort support, Qwen3.8-27B variant, oh-my-cli autonomous coding demo. Source: [qwen.ai/blog?id=qwen3.8](https://qwen.ai/blog?id=qwen3.8), raw article.
+
+### Raw Articles Saved
+- `wiki/raw/articles/2026-07-12_bjorn-roche-ai-productivity-gap.md`
+- `wiki/raw/articles/2026-08-03_micro-mu-tools-for-agents.md`
+- `wiki/raw/articles/2026-08-03_qwen-qwen3.8-max-release.md`
+
+### Wikilink Fixes
+- 15 broken wikilinks fixed across 3 pages: `concepts/agent-infrastructure` → `concepts/infrastructure`, `concepts/claude-code` → `concepts/claude-code/claude-code-auto-mode`, `concepts/deepseek` → `entities/deepseek`, `concepts/local-llm` → `concepts/local-llm/local-ai`, `concepts/ai-adoption` → `concepts/ai-adoption-failures-and-enterprise-psychosis`, `concepts/amdahls-law` → `concepts/ai-economics-bubble-venture-capital-subprime`, `concepts/productivity` → `concepts/agent-productivity`
+
+### Discovery Sources
+- HN Algolia (15 trending stories, top: DeepSeek V4 Flash 739pts, Qwen3.8-Max 623pts)
+- X/Twitter via xurl (10 substantive threads: model comparisons, agent architecture, AI policy)
+- Wiki gap analysis + blogwatcher DB (RLAIF, Yi, Aider identified as critical gaps)
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

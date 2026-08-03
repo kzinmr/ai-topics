@@ -1,7 +1,7 @@
 ---
 title: "Qwen 3.8"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-08-03
 type: concept
 tags:
   - qwen
@@ -13,6 +13,7 @@ tags:
   - china
 sources:
   - raw/articles/2026-07-19_qwen-3-8-launch.md
+  - raw/articles/2026-08-03_qwen-qwen3.8-max-release.md
 ---
 
 # Qwen 3.8
@@ -115,6 +116,33 @@ At ~2.4T parameters, self-hosting Qwen 3.8 will require substantial infrastructu
 - **Context window**: Maximum supported context length
 - **Weights release timeline**: Exact date for open-weight release
 
+## Qwen3.8-Max Release (August 3, 2026)
+
+On August 3, 2026, Alibaba officially released **Qwen3.8-Max**, the production version of the Qwen 3.8 model series. This marks a significant milestone: the **first time a Qwen-Max-class model has been released with open weights**, which were scheduled to be published the following week.
+
+### Key Features of Qwen3.8-Max
+
+- **Reasoning effort control**: Official support for `reasoning_effort` parameter with three levels:
+  - `xhigh` (default): Complex tasks requiring thorough analysis
+  - `medium`: Balancing accuracy and speed
+  - `low`: Efficient reasoning optimizing for speed and cost
+- **Self-evolution**: The model "self-evolves through feedback loops," enabling continuous improvement during extended autonomous operation
+- **Long-horizon autonomy**: Demonstrated via the `oh-my-cli` project — a 10+ day autonomous coding run where Qwen3.8-Max built a self-evolving harness from scratch
+
+### Qwen3.8-27B
+
+Alongside the Max model, Qwen3.8-27B was also announced as an open-weight dense model. Its predecessor, Qwen3.6-27B, was widely regarded as one of the best local models for its size class. The 3.8 iteration aims to improve upon this position, making it a key release for the [[concepts/local-llm/local-ai|local LLM]] community.
+
+### Community Reception
+
+The release generated substantial interest on Hacker News (623 points), with key discussion themes:
+
+- **Open-weight milestone**: Community celebrated the first Max-class open-weight release from Qwen
+- **Cost concerns**: Users compared pricing against [[entities/deepseek|DeepSeek]], which offers near-free usage
+- **Distillation questions**: Speculation about whether Qwen3.8-Max distilled from [[concepts/claude/fable-5|Claude Fable 5]] or GPT-5.6 Sol
+- **Regulatory timing**: Discussion of whether the US might ban open-weight models before the release window closes
+- **Local deployment**: Interest in Qwen3.8-27B for local inference and potential [[concepts/claude-code/claude-code-auto-mode|Claude Code]] alternatives (dubbed "QwenCode")
+
 ## Related Pages
 
 - [[concepts/qwen]] — Qwen model family overview
@@ -126,3 +154,5 @@ At ~2.4T parameters, self-hosting Qwen 3.8 will require substantial infrastructu
 - [[concepts/claude/fable-5]] — Claude Fable 5
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B predecessor
 - [[concepts/open-source-llms]] — Open-source LLM landscape
+- [[entities/deepseek]] — DeepSeek models
+- [[concepts/local-llm/local-ai]] — Local LLM deployment

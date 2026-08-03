@@ -879,7 +879,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1957 pages)
+## Concepts (1959 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1167,6 +1167,7 @@
 - [[concepts/ai-policy]] — AI Policy
 - [[concepts/ai-pre-release-testing]] — AI Pre-Release Government Testing
 - [[concepts/ai-privacy-tools]] — AI Privacy Tools
+- [[concepts/ai-productivity-gap]] — AI Productivity Gap — The disconnect between AI capability improvements and measured developer productivity; Björn Roche time allocation analysis (July 2026, HN 56 pts)
 - [[concepts/ai-programming-as-theory-building]] — AI Programming as Theory Building
 - [[concepts/ai-progress-dynamics]] — AI Progress Dynamics — Why Training Efficiency Defies Horizon-Length Predictions
 - [[concepts/ai-ready-apis]] — AI-Ready APIs (API Design for AI Agents)
@@ -2112,6 +2113,7 @@
 - [[concepts/mcp-enterprise-oauth]] — MCP Enterprise OAuth — Managed Authentication
 - [[concepts/mcp-protocol]] — MCP Protocol Testing & Security
 - [[concepts/mcporter]] — MCPorter — TypeScript runtime, CLI, and code-generation toolkit for MCP; auto-discovers servers from Cursor/Claude/Codex/Windsurf/VS Code; 4.7k★ (June 27)
+- [[concepts/mu-tools-for-agents]] — Mu — Open-source suite of 18+ developer tools for AI agents, distributed as an MCP server in Go; browser, git, image, video, file system, and social media integrations (Aug 2026)
 - [[concepts/mechanistic-interpretability]] — mechanistic-interpretability
 - [[concepts/megakernel-for-llm-inference]] — Megakernel for LLM Inference
 - [[concepts/megakernel-inference]] — Megakernel for LLM Inference
