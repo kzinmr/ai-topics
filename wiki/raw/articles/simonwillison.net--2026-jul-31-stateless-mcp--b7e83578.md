@@ -1,9 +1,11 @@
 ---
 title: "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)"
-url: "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything"
-fetched_at: 2026-08-01T10:13:01.404988+00:00
+url: "https://simonwillison.net/2026/Jul/31/stateless-mcp/"
+date: 2026-07-31
+type: article
 source: "simonwillison.net"
-tags: [blog, raw]
+tags: [mcp, stateless-mcp, protocol, agent-tools, datasette, cli, anthropic]
+fetched_at: 2026-08-01T10:13:01.404988+00:00
 ---
 
 # Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)

@@ -743,7 +743,7 @@
 - [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
-- [[entities/simon-willison]] — Simon Willison; enriched with hackmyclaw.com Prompt Injection Challenge (June 27); Sonnet 5 tokenizer analysis (1.42× English, 30% effective price increase, sampling params deprecated) and shot-scraper video feature — agent self-recorded demos (July 1)
+- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31)
 - [[entities/simone-salis]] — Simone Salis
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent)
 - [[entities/siyan-zhao]] — Siyan Zhao

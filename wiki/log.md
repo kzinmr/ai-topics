@@ -3722,3 +3722,21 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Archive**: `archive_triage.py` returned "All items already archived (dedup)" — 0 new URLs archived
 - **Wiki changes**: None (Takes=0, full saturation)
 
+
+---
+
+## [2026-08-03] Manual ingest — Simon Willison "Stateless MCP" article
+
+### Changes
+- **raw/articles/simonwillison.net--2026-jul-31-stateless-mcp--b7e83578.md** — Updated frontmatter: added `date`, `type: article`, proper `tags` (mcp, stateless-mcp, protocol, agent-tools, datasette, cli, anthropic)
+- **entities/simon-willison.md** — Added "MCP Renaissance: Stateless MCP & Three New Tools (July 2026)" section: stateless MCP re-engagement rationale, protocol comparison (legacy 2-request vs stateless 1-request), 3 tools built in one week (mcp-explorer, datasette-mcp, llm-mcp-client), security insight (MCP as audit surface vs shell+curl), Lethal Trifecta connection
+- **index.md** — Updated Simon Willison entry description
+- **log.md** — This entry
+
+### Sources
+- https://simonwillison.net/2026/Jul/31/stateless-mcp/
+
+### Notes
+- Raw article was already auto-ingested by blogwatcher; frontmatter enriched
+- MCP 2026-07-28 spec concept page (`concepts/mcp-2026-07-28-spec.md`) already had comprehensive coverage including Simon's 3-tool table in "Tooling & Ecosystem" section — no updates needed
+- Primary value-add: dedicated section in Simon Willison entity page documenting his MCP stance reversal

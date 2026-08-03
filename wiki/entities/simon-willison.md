@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-08-02
+updated: 2026-08-03
 status: L3
   sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
@@ -367,6 +367,32 @@ Source: [[raw/articles/simonwillison.net--2026-jun-14-why-ai-hasnt-replaced-soft
 - [simonwillison.net--2026-may-10-andrew-quinn--460f60ed](simonwillison.net--2026-may-10-andrew-quinn--460f60ed.md)
 - [simonwillison.net--2026-may-10-new-york-times-editors-note--130da68e](simonwillison.net--2026-may-10-new-york-times-editors-note--130da68e.md)
 - [substack.com--simonw--bba9b315](substack.com--simonw--bba9b315.md)
+
+### MCP Renaissance: Stateless MCP & Three New Tools (July 2026)
+
+On July 31, 2026, Simon declared that stateless MCP had *"recaptured my interest"* — a significant reversal after his lukewarm period when Skills seemed to make MCP redundant. The trigger was the **MCP 2026-07-28 spec** (the fifth major release), which moved MCP from a bidirectional stateful protocol to a **stateless request/response model**.
+
+**Why the change of heart**:
+- Giving agents arbitrary shell + curl access is *"fraught with risk"* and requires a strong model
+- MCP tools are **easier to audit and control**, and simple enough for smaller laptop models to drive
+- The stateless spec eliminates session management complexity, making both client and server implementation dramatically simpler
+
+**Protocol comparison** (from the article):
+- Legacy MCP: 2 HTTP requests — initialize → obtain `Mcp-Session-Id` → call tool
+- Stateless MCP: 1 HTTP request with `MCP-Protocol-Version: 2026-07-28` and `Mcp-Method: tools/call` headers
+- No server-side session state or sticky routing needed → better for scalable web applications
+
+**Three tools built in one week**:
+
+| Tool | Description | Key Feature |
+|------|-------------|-------------|
+| [mcp-explorer](https://github.com/simonw/mcp-explorer) | Stateless Python CLI for probing MCP servers (`uvx mcp-explorer list/inspect/call`) | No session setup; direct per-request interaction |
+| [datasette-mcp](https://github.com/datasette/datasette-mcp) | Datasette plugin adding `/-/mcp` endpoint with `list_databases()`, `get_database_schema()`, `execute_sql()` | Fourth attempt; stateless spec finally made it releasable |
+| [llm-mcp-client](https://github.com/simonw/llm-mcp-client) | LLM CLI plugin (`llm install llm-mcp-client`) giving the LLM tool official MCP integration | Candidate for LLM core integration |
+
+**Security insight**: Simon argues MCP's explicit tool surface is more tractable to reason about than open command execution — connecting back to his [[concepts/ai-agent-security|Lethal Trifecta]] framing. He plans to *"lean into MCP a whole lot more"* for sensitive LLM applications.
+
+Source: [[raw/articles/simonwillison.net--2026-jul-31-stateless-mcp--b7e83578.md]]
 
 ### LLM 0.32a0 — Major Backwards-Compatible Refactor (April 2026)
 
