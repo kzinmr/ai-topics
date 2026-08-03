@@ -1,6 +1,13 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-03] blog-wiki-ingest (10:35) | 4 takes verified (already committed), 1 reference enriched
+
+- Recovered triage JSON from checkpoint (`/opt/data/.hermes/cron/data/blog_ingest/triage_latest.json`) — triage agent saved JSON before response render failed.
+- **Verified 4 takes already executed by earlier run (commit 00b3e5ba)**: boris-cherny--claude-code-development (Startup School 2026: Opus 5 autonomous runs, prompt-injection resistance, product overhang), openai-astra (new page: 10 math problems, Marcus fallacy-of-composition critique), anyscale (Nscale acquisition + Physical AI Skill). All `updated: 2026-08-03` with substantive content — no redundant edits.
+- **Reference enriched**: `entities/cory-doctorow.md` — added "Dualism — The Coin-Trick Fallacy (Aug 2026)" section (consciousness / understanding vs statistical extrapolation, Turing Test diminishment, rights-to-nature vs rights-to-constructs asymmetry, centaur vs reverse-centaur labor, economic coin-trick: fired because AI can do job vs boss believes it can). Frontmatter updated + source added.
+- 12 skips confirmed (math essays, HIBP, career advice, accessibility, unsaved YouTube/LWN) — archive already saved by commit 73af08f9.
+
 ## [2026-08-03] tag-audit-weekly (10:00) | 2 tag violations fixed
 
 - Ran `scripts/tag_audit.py` (cron pre-run script blocked: path resolves outside `/opt/data/.hermes/scripts` — ran directly).

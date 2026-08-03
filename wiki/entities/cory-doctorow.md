@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-08-02
+updated: 2026-08-03
 status: L3
 sources:
   - https://pluralistic.net/
@@ -18,6 +18,7 @@ sources:
   - raw/articles/pluralistic.net--2026-07-24-supplemental-income--9c9dca6e.md
   - raw/articles/pluralistic.net--2026-07-28-hitl-ers--46dc0e4b.md
   - raw/articles/pluralistic.net--2026-08-01-dare-snot--cd886481.md
+  - raw/articles/pluralistic.net--2026-08-03-andor--5e30d1be.md
 tags: [person]
 ---
 
@@ -60,6 +61,18 @@ Doctorow's short book (Farrar, Straus and Giroux, June 2026) positions humans as
 - How to evaluate AI outputs critically
 - Understanding AI's limitations and failure modes
 - Why AI literacy means skepticism, not prompt engineering
+
+### "Dualism" — The Coin-Trick Fallacy (Aug 2026)
+
+In "[Dualism](https://pluralistic.net/2026/08/03/andor/)" (Aug 3, 2026), Doctorow articulated the **coin-trick fallacy** as his master framework for AI critique: AI discourse repeatedly equates two outcomes that *appear* the same but are produced by fundamentally different means. The conjurer's trick is doing three different tricks while claiming to repeat the same one — and the AI investor story depends on the same conflation:
+
+- **Consciousness**: An interviewer argued that since he can predict his wife's words and a chatbot trained on her words can too, both do the same conscious work. Doctorow counters that "predicting through understanding based on a theory of mind" vs. "statistical extrapolation of utterances" may produce the same outputs, but only one **fails gracefully** — when the wife says something surprising, understanding explains the misfire while extrapolation founders. Conscious AI via more training data is "breeding horses to run faster and faster until one of them foals a locomotive."
+- **Turing Test diminishment**: Turing's 1950 thought-experiment has been stripped into a blunt metric ("can a chatbot trick a human?"). "I mistook a chatbot for a human" and "I took a human for a human" arrive at near-identical places but are importantly different — autocomplete knows who you *used to be*, not who you are now or will become.
+- **Rights asymmetry**: Extending rights to *nature* (watersheds, ecosystems) reliably makes the world better; extending rights to *constructs* makes it worse — corporate personhood is Exhibit A. Rights for a watershed might kill an AI data-center; rights for AI might sacrifice the watershed to cool it.
+- **Labor — centaur vs reverse centaur**: The seeming contradiction between workers who say AI improves their work and those who say it creates tech debt resolves once you see two groups: **centaurs** (workers who choose their AI adoption) vs **reverse centaurs** (people recruited as peripherals for machines). Even here, "some centaurs are wrong about AI making their work better" and "some reverse centaurs are forced into worse work" are themselves two different things.
+- **Economic coin-trick**: "AI will destroy jobs" conflates "you were fired because an AI can do your job" (true replacement) with "you were fired because your boss was convinced the AI can do your job, even though it cannot" (bubble-driven layoff). "AI can do your job" means workers and customers are on opposite sides; "boss believes AI can do your job" puts them on the same side against management. Every failure to draw this distinction helps an AI boss raise another billion dollars.
+
+The essay connects to his **solipsists vs cynics** investor taxonomy (July 2026): billionaire true believers and billionaire cynics form a coalition where each hurdles the other's roadblocks.
 
 ### "Enshittification" and AI Platforms
 
