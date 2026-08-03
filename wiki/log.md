@@ -1,3 +1,10 @@
+## [2026-08-03] dreaming wiki-ingest | confirmation — upstream dreaming-group already committed enrichment
+
+- Pre-run JSON parse failed; recovered via triage_latest.json (18:09:28Z) — 15 decisions (13 skip, 2 reference), Takes=0 is post-enrichment state.
+- Upstream dreaming-group committed `ede5ef59` (18:19) with BOTH enrichment and archive: [[entities/together-ai]] (Inference-Native Autoscaling section), [[entities/browserbase]] (Browser Agent Harness Architecture section), archive 2026-08-03_20260803T180928Z.json (8 newly archived).
+- Verified on disk: both entity pages have frontmatter `updated: 2026-08-03`, new sources, and substantive body sections (autoscaling metrics table; six-layer harness table + raw-CDP critique).
+- Archive re-run skipped (already committed by upstream). Staged log.md only for confirmation commit.
+
 ## [2026-08-03] dreaming | Pattern E saturation — 2 references enriched, 0 takes
 
 - **Checkpoint**: total_articles=0, recent_raw_articles=204 (Jul 27-Aug 3 range). Pattern E filesystem scan triggered.
