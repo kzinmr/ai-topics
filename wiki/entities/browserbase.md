@@ -6,7 +6,7 @@ aliases:
 - browserbase-hq
 - stagehand
 created: 2026-04-13
-updated: 2026-05-26
+updated: 2026-08-03
 tags:
   - entity
   - developer-tooling
@@ -18,6 +18,7 @@ sources:
   - https://www.browserbase.com/blog/stagehand-v3
   - https://docs.browserbase.com/introduction/stagehand
   - https://www.browserbase.com/blog/introducing-the-stagehand-api
+  - raw/articles/2026-06-03_kylejeong_browser-agent-harness.md
 
 ---
 
@@ -81,6 +82,31 @@ sources:
 7. **Search**: In-browser search functionality (March 2026)
 8. **Concurrency**: Expanded from 1 to 3 on free plan (March 2026)
 9. **Prime Intellect Integration**: Browser agent training and evaluation (March 2026)
+
+## Browser Agent Harness Architecture (June 2026)
+
+Kyle Jeong (Browserbase Engineering) articulated the production browser agent harness as a **six-layer architecture**, arguing that "give the model CDP and get out of the way" fails at scale. The article critiques the "raw CDP camp" — the trend of exposing raw Chrome DevTools Protocol commands as tool calls — and explains why production deployments need structured harnesses.
+
+**The four problems raw CDP doesn't solve**:
+1. **DOM is adversarial input** — every page is untrusted text; concatenating raw HTML into the model's context creates a prompt injection vector
+2. **Repeated site re-learning** — naive loops pay full discovery cost on every run for the same site
+3. **Production browsers need identity** — locally-spawned Chrome gets blocked, captcha'd, or fingerprinted
+4. **Credential exposure** — you can't show the model your customer's password
+
+**Six harness layers** (shipped at scale for Ramp, Interaction, Lovable):
+
+| Layer | Function | Stagehand Implementation |
+|-------|----------|-------------------------|
+| Security | DOM → structured projection before prompting | `extract`/`observe` primitives: schema-validated, hidden text stripped, injection patterns flagged |
+| Caching | Page/action/skill-level caching | Accessibility tree snapshots, selector reuse, domain-pinned Autobrowse playbooks |
+| Identity | Anti-fingerprinting, proxy rotation | Residential/mobile proxies, real fingerprint stacks, captcha solving |
+| Credential Broker | Split access: agent gets session ref, harness holds secrets | Passwords filled out-of-band before model sees context |
+| Skill Memory | Domain-specific learned behaviors | Graduated playbooks pinned to domains |
+| Filesystem | Persistent state across sessions | Agent-accessible storage |
+
+**Key design principle**: "Every byte of HTML the model reads is a place an attacker can put words." The harness pattern is **parse → project → validate → then prompt**.
+
+Source: [[raw/articles/2026-06-03_kylejeong_browser-agent-harness.md]]
 
 ## Differences from browser-use
 

@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-08-03T18:18:35.592114+00:00",
+  "triage_run_id": "20260803T180928Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E ファイルシステムスキャン: 76件の raw articles (Jul 30-Aug 3) をスクリーニング。2件の reference enrichment 候補を発見（Together AI autoscaling metrics, Browserbase 6-layer browser agent harness）。13件は既存パイプラインで処理済みまたは skip 判定。blog-triage (10:35), newsletter-triage (11:00), active-crawl (11:03), raw-backlog-ingest (14:00/18:00) による同日カバレッジを確認。",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-together-ai-autoscaling",
+      "source": "dreaming",
+      "source_name": "Together AI",
+      "title": "Autoscaling endpoints for LLM inference",
+      "url": "https://www.together.ai/blog/autoscaling-endpoints-for-llm-inference",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-07-31_together-ai_autoscaling-endpoints-llm-inference.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ entities/together-ai.md は 'dedicated model inference' に言及するが、inference-native な autoscaling 指標（in-flight requests, TTFT, GPU utilization, token throughput）や scale-up/down window tuning, replica bounds の具体的記述は不在。本文は CPU/memory 指標が LLM inference に不適合である理由と Together AI の解決策を詳説。entity page の Dedicated Inference セクションへの subsection 追加が有効。",
+      "candidate_wiki_path": "entities/together-ai.md",
+      "body_excerpt": "Summary:\nWith Dedicated Model Inference on the Together AI platform, you can get your deployments to autoscale on metrics the inference engine actually understands, such as in-flight requests, TTFT, GPU utilization, token throughput. You can set replica bounds, pick a metric and target, and then tun"
+    },
+    {
+      "item_id": "dreaming-ref-browserbase-browser-agent-harness",
+      "source": "dreaming",
+      "source_name": "Kyle Jeong / Browserbase",
+      "title": "The web wasn't built for browser agents, here's how we built a harness to make it work",
+      "url": "https://www.browserbase.com/blog/what-is-a-browser-agent-harness",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-06-03_kylejeong_browser-agent-harness.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ entities/browserbase.md は Stagehand/CDP に言及するが、browser agent harness の6層アーキテクチャ（security layer: DOM adversarial input 対策, caching layer: page/action/skill 3段階, identity layer: fingerprint 対策, credential brokering, skill memory）の詳細は不在。本文は 'raw CDP camp' 批判と production browser agent の4つの課題を詳説。Ramp/Lovable での実績言及あり。entity page への subsection 追加が有効。",
+      "candidate_wiki_path": "entities/browserbase.md",
+      "body_excerpt": "# The web wasn't built for browser agents, here's how we built a harness to make it work\nAuthor: Kyle Jeong (Browserbase Engineering). Published June 3, 2026 (12 min read).\n## TL;DR\nThe browser agent harness is what separates a cool demo and production agents. It should never be \"give the model CDP "
+    },
+    {
+      "item_id": "dreaming-skip-boris-cherny-yc-interview",
+      "source": "dreaming",
+      "source_name": "YC Root Access",
+      "title": "Boris Cherny: Building Claude Code",
+      "url": "https://www.ycrootaccess.com/p/boris-cherny-building-claude-code",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/ycrootaccess.com--p-boris-cherny-building-claude-code--f3769a9e.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: blog-wiki-ingest が entities/boris-cherny--claude-code-development.md を更新済み（Startup School 2026: Opus 5 autonomous runs, prompt-injection resistance, product overhang）。log.md 確認済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Boris Cherny: Building Claude Code\nSource: https://www.ycrootaccess.com/p/boris-cherny-building-claude-code\nFresh off the launch of Opus 5, Claude Code creator Boris Cherny joins Diana Hu at Startup School 2026 to talk about what the newest models can do, how Claude Code came to be, and what it me"
+    },
+    {
+      "item_id": "dreaming-skip-gary-marcus-astra",
+      "source": "dreaming",
+      "source_name": "Gary Marcus",
+      "title": "OpenAI's amazing - but vastly oversold - new model Astra",
+      "url": "https://garymarcus.substack.com/p/openais-amazing-but-vastly-oversold",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/garymarcus.substack.com--p-openais-amazing-but-vastly-oversold--9b1f0537.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: entities/openai-astra.md に 'Critical Analysis: The Fallacy of Composition' セクション存在。Gary Marcus の批判（10の未解決問題解決 ≠ 全ドメインでの成功）が反映済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# OpenAI’s amazing - but vastly oversold - new model Astra\nSource: https://garymarcus.substack.com/p/openais-amazing-but-vastly-oversold\nAstra, a new model that OpenAI is testing internally, is amazing. No denying that:\nAn internal version of Astra, ’s next major model family, solved 10 major open p"
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-ivr",
+      "source": "dreaming",
+      "source_name": "ElevenLabs",
+      "title": "ElevenLabs Agents can now navigate IVR phone trees",
+      "url": "https://elevenlabs.io/blog/introducing-ivr-phone-tree-navigation",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-08-03_elevenlabs_introducing-ivr-phone-tree-navigation.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: entities/elevenlabs.md に IVR/phone tree/telephony 記述あり（AI virtual receptionist, Twilio/SIP/Vonage/Telnyx/Genesys integrations）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# ​​ElevenLabs Agents can now navigate IVR phone trees\n**Source**: [https://elevenlabs.io/blog/introducing-ivr-phone-tree-navigation](https://elevenlabs.io/blog/introducing-ivr-phone-tree-navigation)\nBlog\nProduct\n​​ElevenLabs Agents can now navigate IVR phone trees\nWritten by\nLouis\nJordan\nAngelo\nGia"
+    },
+    {
+      "item_id": "dreaming-skip-qwen38-max",
+      "source": "dreaming",
+      "source_name": "Qwen Team",
+      "title": "Qwen3.8-Max Release Announcement",
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-08-03_qwen-qwen3.8-max-release.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: concepts/qwen-3-8.md が active-crawl で作成済み（reasoning_effort, Qwen3.8-27B, oh-my-cli autonomous coding demo）。log.md 確認済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Qwen3.8-Max Release Announcement\n- **Source**: https://qwen.ai/blog?id=qwen3.8\n- **Published**: August 3, 2026\n- **Author**: Qwen Team (Alibaba)\n- **HN Discussion**: https://news.ycombinator.com/item?id=49150470 (623 pts)\n## Summary\nQwen3.8-Max is officially released as the most capable model in t"
+    },
+    {
+      "item_id": "dreaming-skip-mu-tools-agents",
+      "source": "dreaming",
+      "source_name": "micro/mu",
+      "title": "Mu - Tools for Agents",
+      "url": "https://github.com/micro/mu",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-08-03_micro-mu-tools-for-agents.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: concepts/mu-tools-for-agents.md が active-crawl で作成済み。log.md 確認済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Mu - Tools for Agents\n- **Source**: https://github.com/micro/mu\n- **Published**: August 3, 2026 (Show HN)\n- **Author**: Asim (micro/mu)\n- **HN Discussion**: https://news.ycombinator.com/item?id=49148899 (Show HN, 50 pts)\n- **License**: AGPL-3.0\n## Overview\nMu is an MCP server and web app that prov"
+    },
+    {
+      "item_id": "dreaming-skip-bjorn-roche-productivity",
+      "source": "dreaming",
+      "source_name": "Bjorn Roche",
+      "title": "The AI Productivity Gap",
+      "url": "https://bjorg.bjornroche.com/management/ai-productivity-gap/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-07-12_bjorn-roche-ai-productivity-gap.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: concepts/ai-productivity-gap.md が存在（Bjorn Roche の July 12 ブログ記事をソースとして、15%/25% 生産性向上、coding 以外の活動が gap の原因であることを記録済み）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The AI Productivity Gap\n- **Source**: https://bjorg.bjornroche.com/management/ai-productivity-gap/\n- **Published**: July 12, 2026\n- **Author**: Bjorn Roche (Engineering Leader, NYC)\n- **HN Discussion**: https://news.ycombinator.com/item?id=49152222 (56 pts)\n## Summary\nDespite AI's clear productivi"
+    }
+  ]
+}

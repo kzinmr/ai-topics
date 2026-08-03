@@ -1,3 +1,13 @@
+## [2026-08-03] dreaming | Pattern E saturation — 2 references enriched, 0 takes
+
+- **Checkpoint**: total_articles=0, recent_raw_articles=204 (Jul 27-Aug 3 range). Pattern E filesystem scan triggered.
+- **Scan scope**: 76 raw articles from Jul 30-Aug 3. Cross-referenced against blog-triage (17 decisions, 10:35), newsletter-triage (11 decisions, 11:00), active-crawl (11:03), raw-backlog-ingest (14:00/18:00).
+- **2 references enriched**:
+  - **[[entities/together-ai.md]]** — Added "Inference-Native Autoscaling (July 2026)" section: inference-specific autoscaling metrics (in-flight requests, TTFT, GPU utilization, token throughput), replica bounds, scale-up/down window tuning. Why CPU/memory metrics fail for LLM inference.
+  - **[[entities/browserbase.md]]** — Added "Browser Agent Harness Architecture (June 2026)" section: Kyle Jeong's 6-layer harness (security/caching/identity/credential broker/skill memory/filesystem), raw-CDP camp critique, DOM-as-adversarial-input principle, production deployment lessons from Ramp/Lovable.
+- **13 skips**: Simon Willison stateless MCP (already in entity page), Boris Cherny YC interview (already in sub-page), Gary Marcus Astra critique (already in openai-astra), Sierra+Plaid (already in entity page), ElevenLabs IVR (already in entity page), Thinking Machines Lab open weights (already in entity page), Qwen3.8-Max (already in qwen-3-8), Mu tools (already in concept page), Bjorn Roche productivity gap (already in concept page), Sean Goedecke credit (blog-triage skip), Fernando Borretti book review (blog-triage skip), Ibrahim Diallo accessibility (non-AI), Cory Doctorow Andor (non-AI).
+- **Archive**: 15 candidates, 8 newly archived, 7 dedup. Total archive URLs: 2,228.
+
 ## [2026-08-03] watchdog | L2 pipe-prefix corruption fixed (20 files)
 
 - **Pipe-prefix corruption remediation** — Fixed 81 corrupted `|- ` bullet lines + 4 double-pipe `||- ` lines + 39 whole-block `|`-prefixed lines across 20 L2 pages (entities 12, concepts 7, one combined). Root causes: read_file line-number framing pasted into content, and a table-paste artifact in gary-marcus.md.

@@ -2,7 +2,7 @@
 title: "Together AI"
 type: entity
 created: 2026-05-08
-updated: 2026-07-02
+updated: 2026-08-03
 tags:
   - company
   - infrastructure
@@ -14,6 +14,7 @@ sources:
   - https://www.together.ai/
   - https://www.together.ai/blog
   - raw/articles/together.ai--blog-announcing-our-series-c--4c861109.md
+  - raw/articles/2026-07-31_together-ai_autoscaling-endpoints-llm-inference.md
 ---
 
 # Together AI
@@ -55,6 +56,23 @@ Together AI launched **DCI**, a feature that lets developers deploy and inferenc
 This represents a significant **democratization of model deployment** — lowering the barrier from specialized MLOps teams to individual developers. It positions Together AI as the most accessible platform for custom model serving.
 
 **Competitive context**: This is similar to what providers like [Replicate](https://replicate.com/) and [Baseten](https://baseten.co/) offer, but Together AI's integration with their existing GPU cluster infrastructure gives it a performance edge.
+
+
+### Inference-Native Autoscaling (July 2026)
+
+Together AI introduced **autoscaling endpoints for Dedicated Model Inference** that use metrics the inference engine natively understands, rather than traditional CPU/memory utilization which maps poorly to LLM workloads.
+
+**Inference-native metrics**:
+| Metric | What it measures | Why it matters |
+|--------|-----------------|----------------|
+| In-flight requests | Active requests being processed | Direct measure of inference queue pressure |
+| Time-to-first-token (TTFT) | Latency from request to first output token | User-facing latency signal |
+| GPU utilization | Compute resource consumption | Hardware efficiency indicator |
+| Token throughput | Tokens generated per second | Raw inference capacity |
+
+**Configuration**: Replica bounds (min/max), metric selection with target values, and separate scale-up/scale-down windows that control scaling eagerness vs. patience. This enables more responsive and cost-effective autoscaling for LLM deployments compared to generic Kubernetes HPA on CPU metrics.
+
+Source: [[raw/articles/2026-07-31_together-ai_autoscaling-endpoints-llm-inference.md]]
 
 
 ## World's Fastest Speech-to-Text Stack (May 2026)
