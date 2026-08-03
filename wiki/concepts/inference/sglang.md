@@ -176,12 +176,13 @@ SGLang has become one of the most widely deployed open-source LLM inference engi
 | Huawei NPU | Experimental support |
 
 
-## Key Integration Partners|- **NVIDIA**: Dynamo, NIXL, TensorRT-LLM kernels
-|- **AMD**: ROCm for both inference and RL training
-|- **Alibaba Cloud**: EPD Disaggregation, Mooncake
-|- **Ant Group**: Production MoE serving, Elastic EP
-|- **Intel**: Xeon optimization
-|- **Meituan**: LongCat-Flash deployment
+## Key Integration Partners
+- **NVIDIA**: Dynamo, NIXL, TensorRT-LLM kernels
+- **AMD**: ROCm for both inference and RL training
+- **Alibaba Cloud**: EPD Disaggregation, Mooncake
+- **Ant Group**: Production MoE serving, Elastic EP
+- **Intel**: Xeon optimization
+- **Meituan**: LongCat-Flash deployment
 
 
 ## Recent Model Support Timeline- **Apr 2026**: DeepSeek-V4 (Pro 1.6T, Flash 284B)

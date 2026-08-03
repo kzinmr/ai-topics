@@ -90,8 +90,7 @@ Mistral AI's open-weights text-to-speech model, announced April 2026. Combines a
 - Part of Mistral's open AI mission
 
 ## Sources
-|- 
-|- Latent Space Podcast with Guillaume Lample & Pavan Kumar Reddy
+- Latent Space Podcast with Guillaume Lample & Pavan Kumar Reddy
 
 ## See Also
 

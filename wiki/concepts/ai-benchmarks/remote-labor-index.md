@@ -50,7 +50,7 @@ The Remote Labor Index is built around real remote job specifications:
 - Jobs requiring sustained interpersonal interaction, creative judgment, or deep domain expertise remain the most resistant to automation
 - The trajectory of automation capability is not uniform across occupations — some are improving rapidly while others show slow progress
 - Partial automation (AI assists human workers) is achievable across a much broader range of occupations than full automation
-|- The benchmark reveals that the gap between AI capability on standardized tests and real job performance remains significant
+- The benchmark reveals that the gap between AI capability on standardized tests and real job performance remains significant
 
 ## July 2026 Update
 

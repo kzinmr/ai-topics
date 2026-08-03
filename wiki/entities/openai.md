@@ -323,7 +323,7 @@ OpenAI's GPT-5.5+ (estimated GPT-5.6) solved the 1946 Erdős plane unit distance
 - **Cost**: Under $1,000 / 32 hours of compute
 - **Output**: 125-page solution
 - **Timothy Gowers** (Fields Medalist): 'First really clear example of AI solving a well-known open math problem'
-|- **Implication**: Paradigm shift for test-time reasoning scaling
+- **Implication**: Paradigm shift for test-time reasoning scaling
 
 ### Biodefense Action Plan (June 2026)
 

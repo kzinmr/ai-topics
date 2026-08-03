@@ -247,8 +247,8 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - [[concepts/ai-coding-tools]] — Code review as the meta-skill for AI-assisted development
 - [[concepts/software-engineering]] — Career progression, system design, tech industry dynamics
 - [[concepts/ai-sycophancy]] — AI models agreeing with users even when wrong
--  — Impact of interest rates on engineering hiring
--  — Practical architecture, not interview prep-  — Code review, team dynamics, leadership
+- — Impact of interest rates on engineering hiring
+- — Practical architecture, not interview prep-  — Code review, team dynamics, leadership
 ## Influence
 
 - Appeared on **The Pragmatic Engineer Podcast** (Gergely Orosz's show), signaling recognition by the broader tech writing community
@@ -276,9 +276,9 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - **The left-wing case for AI** (2026-05-10): Outlines explicitly left-wing pro-AI arguments across five dimensions: (1) **Disability** — LLMs as powerful accessibility aids for neurodivergent, chronically ill, and mobility/vision-impaired users; (2) **Chronic illness and medical care** — LLMs enable patients to research conditions and advocate for themselves against dismissive medical establishments; (3) **Class and code-switching** — LLMs democratize access to "dangerous professional" communication styles that were previously gatekept by elite educational pipelines; (4) **Education** — LLMs provide private-tutor-level access to every motivated student, reducing educational inequality; (5) **Utopia** — if left-wing views are correct and you're technologically optimistic, super-smart AI inherently trends left-wing (all current frontier models profess left-leaning views, and attempts to train right-wing alternatives have failed). Includes a powerful reader testimonial from a disabled person describing how computers transformed their life in the 1980s-90s and how AI is now extending similar benefits to those with communication barriers.
 
 
-|- **The famous o3 Geoguessr prompt did not work** (2026-05-22): Built a 200-image benchmark testing Kelsey Piper's elaborate o3 GeoGuessr prompt vs default. The elaborate prompt performed worse (median 102.3km vs 83.2km). GPT-5.4/5.5 lack o3's geolocation ability. Demonstrates the ease of self-deception in prompt engineering without quantitative evaluation.
+- **The famous o3 Geoguessr prompt did not work** (2026-05-22): Built a 200-image benchmark testing Kelsey Piper's elaborate o3 GeoGuessr prompt vs default. The elaborate prompt performed worse (median 102.3km vs 83.2km). GPT-5.4/5.5 lack o3's geolocation ability. Demonstrates the ease of self-deception in prompt engineering without quantitative evaluation.
 |
-|- **Weird projects I shipped with AI** (2026-05-22): Catalogs 5 personal projects shipped with LLM assistance — Skifreedle (daily-game SkiFree clone with Stripe), Autodeck (auto-generated spaced repetition cards), Endless Wiki (280K+ AI-generated pages discoverable by clicking links), VicFlora Offline (PWA caching Victorian plant database), and gh-standup (GitHub CLI standup extension). Argues these are \"existence proofs\" that AI enables projects that would otherwise stay at the \"GitHub repo with a few commits\" stage. Notes that code is only one bottleneck in shipping a product — deployment, payments, and persistence are significant barriers even with great AI code generation. |
+- **Weird projects I shipped with AI** (2026-05-22): Catalogs 5 personal projects shipped with LLM assistance — Skifreedle (daily-game SkiFree clone with Stripe), Autodeck (auto-generated spaced repetition cards), Endless Wiki (280K+ AI-generated pages discoverable by clicking links), VicFlora Offline (PWA caching Victorian plant database), and gh-standup (GitHub CLI standup extension). Argues these are \"existence proofs\" that AI enables projects that would otherwise stay at the \"GitHub repo with a few commits\" stage. Notes that code is only one bottleneck in shipping a product — deployment, payments, and persistence are significant barriers even with great AI code generation. |
 - **Prompts are technical debt too** (2026-05-20): Argues that prompts are a worse form of technical debt than code — prompts are model-specific and silently degrade with each model update, whereas code is stable when untouched. Recommends using third-party AI coding tools with minimal customization. Core insight: code review skills transfer directly to AI agent evaluation, making code review the meta-skill of the AI era.
 
 ### AI GPU Lifespan Analysis (June 2026)
@@ -457,13 +457,13 @@ Source: raw/articles/seangoedecke.com--ai-models-need-moral-support--3a8c8144.md
 - seangoedecke.com--working-on-products-people-hate--9dead82f
 - seangoedecke.com--you-cant-design-software-you-dont-work-on--1c498a63
 
-|- seangoedecke-anti-ai-conservative-2026-04-18
-|- seangoedecke.com--ai-makes-weak-engineers-less-harmful--e25ee659
-|- seangoedecke.com--notes-on-incidents--f92d1b32
-|- seangoedecke.com--why-hasnt-longer-horizon-training-slowed-ai-progress--6cc7ecad
-||- seangoedecke.com--the-left-wing-case-for-ai--363b6e35
-|- seangoedecke.com--weird-projects-i-shipped-with-ai--4c88d49c
-|- seangoedecke.com--anti-ai-nostalgia--c80b7b06
-|- seangoedecke.com--build-agents-not-pipelines--43a57b4a
-|- seangoedecke.com--llms-reward-expertise--30a0ed12
-|- seangoedecke.com--ai-inference-is-obviously-profitable--ac8d2cd6.md
+- seangoedecke-anti-ai-conservative-2026-04-18
+- seangoedecke.com--ai-makes-weak-engineers-less-harmful--e25ee659
+- seangoedecke.com--notes-on-incidents--f92d1b32
+- seangoedecke.com--why-hasnt-longer-horizon-training-slowed-ai-progress--6cc7ecad
+- seangoedecke.com--the-left-wing-case-for-ai--363b6e35
+- seangoedecke.com--weird-projects-i-shipped-with-ai--4c88d49c
+- seangoedecke.com--anti-ai-nostalgia--c80b7b06
+- seangoedecke.com--build-agents-not-pipelines--43a57b4a
+- seangoedecke.com--llms-reward-expertise--30a0ed12
+- seangoedecke.com--ai-inference-is-obviously-profitable--ac8d2cd6.md

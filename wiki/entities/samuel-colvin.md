@@ -71,9 +71,9 @@ type: entity
 - **Feb 17, 2026**: Talked at Latent Space — "Monty: the ultrafast Python interpreter by Agents for Agents"
 - **Feb 27, 2026**: Monty blog post published
 - **Mar 23, 2026**: Pydantic AI Gateway moving into Logfire
-|- **Mar 28, 2026**: pydantic-monty v0.0.9 released
-|- **Jun 11, 2026**: Monty PR #500 — Move execution to a subprocess pool. Implements crash-isolated worker subprocesses via protobuf protocol (158 files, +25,642/-17,879 lines). Improves safety: crashes kill only a worker, not the host process.
-|- **Apr 2026**: Serializable Agents (TOML-defined agents) in development
+- **Mar 28, 2026**: pydantic-monty v0.0.9 released
+- **Jun 11, 2026**: Monty PR #500 — Move execution to a subprocess pool. Implements crash-isolated worker subprocesses via protobuf protocol (158 files, +25,642/-17,879 lines). Improves safety: crashes kill only a worker, not the host process.
+- **Apr 2026**: Serializable Agents (TOML-defined agents) in development
 
 ## Core Philosophy
 

@@ -386,7 +386,7 @@ US Tech & Science Advisor Michael Kratsios (@mkratsios47) publicly alleged that 
 - **ClinePass adoption**: K3 went from 0% to 16% token usage in 3 days, becoming its #3 most-used open-weight model, per @cline
 - **Policy response**: Administration officials framed the incident as evidence for stronger AI model export controls and provenance tracking
 - **IP concerns**: Legal observers noted the difficulty of proving distillation without model weight access, and questioned whether trade secret claims could hold given Fable's public deployment via API
-|- **Paradoxical effect**: The allegations may accelerate adoption — demanding provenance gives K3 more attention, and ban attempts may drive users toward decentralized hosting
+- **Paradoxical effect**: The allegations may accelerate adoption — demanding provenance gives K3 more attention, and ban attempts may drive users toward decentralized hosting
 
 ### LoRA Training on Fireworks
 

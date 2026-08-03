@@ -60,9 +60,8 @@ March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazo
 - Signals Amazon's commitment to last-mile automation
 
 ## Sources
-|- 
-|- The Information report
-|- LinkedIn announcement by Marko Bjelonic
+- The Information report
+- LinkedIn announcement by Marko Bjelonic
 
 ## See Also
 

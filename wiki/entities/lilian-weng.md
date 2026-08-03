@@ -142,7 +142,7 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - **Adversarial attacks on LLMs**: Taxonomy of jailbreak methods and defense strategies
 - **Diffusion models for video**: Extending diffusion model research from image synthesis to temporal generation
 - **Scaling laws**: Comprehensive survey "Scaling Laws, Carefully" (June 2026) — Kaplan vs Chinchilla reconciliation, data-limited scaling, practical fitting challenges
-|- **Harness engineering for RSI**: "Harness Engineering for Self-Improvement" (July 2026) — comprehensive survey of harness design patterns, context engineering (ACE, MCE, Meta-Harness), self-improving harnesses (STOP, Self-Harness, Darwin Gödel Machine), evolutionary search (AlphaEvolve, AFlow, ADAS), and auto-research workflows (AI Scientist, Autodata)
+- **Harness engineering for RSI**: "Harness Engineering for Self-Improvement" (July 2026) — comprehensive survey of harness design patterns, context engineering (ACE, MCE, Meta-Harness), self-improving harnesses (STOP, Self-Harness, Darwin Gödel Machine), evolutionary search (AlphaEvolve, AFlow, ADAS), and auto-research workflows (AI Scientist, Autodata)
 
 ### Added Context: AINews Synthesis (July 2026)
 

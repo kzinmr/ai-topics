@@ -36,21 +36,21 @@ related:
 ## Three-Layer Evaluation Stack
 
 ### Layer 1: Offline Tests
-|- **Timing:** Run automatically during development and PRs
-|- **Purpose:** Regression detection, fast feedback
-|- **Tools:** pytest, beartest, deepset haystack evaluation
-|- **Metrics:** BLEU, ROUGE, exact match, regex match
+- **Timing:** Run automatically during development and PRs
+- **Purpose:** Regression detection, fast feedback
+- **Tools:** pytest, beartest, deepset haystack evaluation
+- **Metrics:** BLEU, ROUGE, exact match, regex match
 
 ### Layer 2: Human Judgment
-|- **Timing:** Pre-release and major changes
-|- **Purpose:** Quality assurance, nuance evaluation
-|- **Method:** Expert/user evaluation team
-|- **Blind spots:** Subjective, slow, scalability issues
+- **Timing:** Pre-release and major changes
+- **Purpose:** Quality assurance, nuance evaluation
+- **Method:** Expert/user evaluation team
+- **Blind spots:** Subjective, slow, scalability issues
 
 ### Layer 3: Production Telemetry
-|- **Timing:** Continuous post-deployment
-|- **Purpose:** Actual performance monitoring, alerts
-|- **Metrics:** Error rate, latency, user feedback, task success rate
+- **Timing:** Continuous post-deployment
+- **Purpose:** Actual performance monitoring, alerts
+- **Metrics:** Error rate, latency, user feedback, task success rate
 
 ## Offline Test Design
 

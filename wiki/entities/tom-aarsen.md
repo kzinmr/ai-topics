@@ -143,7 +143,7 @@ The leaderboard is available at: https://huggingface.co/spaces/mteb/leaderboard
 - **Library maintenance** -- Bug fixes, dependency updates, and community support across multiple open-source projects
 - **Hugging Face ecosystem** -- Integration work with Transformers, Skills, and other HF libraries
 - **Developer tools** -- Posts about efficient development workflows, testing strategies, and CI/CD for ML libraries
-|- **Technical deep-dives** -- Detailed threads on Flash Attention, cross-modality support, and sparse embeddings
+- **Technical deep-dives** -- Detailed threads on Flash Attention, cross-modality support, and sparse embeddings
 
 ## See Also
 

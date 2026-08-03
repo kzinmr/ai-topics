@@ -269,45 +269,45 @@ Marcus's core thesis: the market is starting to price in the gap between AI narr
 
 Source: [[raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md]]
 
-|### Nvidia $250B Backstop & Circular Financing (July 2026)
-|
-|On July 27, 2026, Marcus published \"Circular financing ain't what it used to be,\" documenting a defining feature of the AI industry: the use of circular financing — where AI companies fund each other's purchases through interlocking deals — to sustain what he argues is an unsustainable boom.
-|
-|**Oracle/OpenAI $300B Deal Collapse (Sep 2025–Jul 2026):**
-|- Oracle stock fell from $307 to $120 in nine months after announcing a $300B deal with OpenAI
-|- Larry Ellison's personal net worth briefly leapt by roughly $100B on the announcement, then collapsed as Oracle shares cratered
-|- Marcus cites this as a textbook case of market enthusiasm detached from business fundamentals
-|
-|**Nvidia $250B Backstop for Ohio Data Center (July 27, 2026):**
-|- Nvidia offered to guarantee financing for SoftBank's proposed 10GW data center in Ohio — a project that would consume roughly 2/3rds of the chips Nvidia itself would need to sell
-|- Market reaction: Nvidia shares fell 4.5% in the first hours following the announcement
-|- One investor described the arrangement as reflecting \"desperation\" and likened it to \"two drunks leaning on each other to stand up\"
-|
-|**Prominent Critiques:**
-|- **James Chanos** (noted short seller), with characteristic sarcasm: \"So we are at the point in the cycle where NVDA has to provide financing guarantees for roughly 2/3rds of the cost of the chips it is selling\"
-|- **Matt Stoller** (antitrust researcher): \"I don't understand why Nvidia is backstopping data centers unless there's just not enough real demand for compute\"
-|
-|**Broader Indicators:**
-|- Apple overtook Nvidia in market capitalization
-|- SpaceX was down 25% in a month, and roughly 50% from its June 2026 high
-|- Creditors growing leery; off-balance-sheet financing arrangements coming to light
-|
-|Marcus's conclusion: **\"The GenAI boom hasn't been sustained by profits; it has been sustained by hope and circular financing. That may no longer be enough.\"**
-|
-|Source: [[raw/articles/garymarcus.substack.com--p-circular-financing-aint-what-it-used--e1df8edb.md]]
-|
-|### Singularity Debunking — Response to Altman/Musk/Hassabis/Huang (July 2026)
-|
-|On July 27, 2026, Sam Altman, Demis Hassabis, and Elon Musk all separately claimed \"we are in the singularity\" or similar. Gary Marcus published a rebuttal titled \"Sorry, Sam and Elon, we have not reached the Singularity.\" Key arguments:
-|
-|- **Klarna Effect**: Employers boast of using AI to reduce headcount only to quietly rehire humans — the opposite of Singularity-level labor displacement
-|
-|- **IF Good definition**: IF Good's definition of a \"superintelligent machine\" is one that can do any intellectual task a human can (the original Singularity definition) — current AI fails this by a large margin
-|
-|- **Miles Brundage's 10-item bet**: Marcus cited 10 concrete criteria for AGI that Miles Brundage proposed — AI passes NONE of them
-|
-|- His conclusion: We have powerful tools but NOT superintelligence. Claims of Singularity are hype, not reality.
-|
+### Nvidia $250B Backstop & Circular Financing (July 2026)
+
+On July 27, 2026, Marcus published \"Circular financing ain't what it used to be,\" documenting a defining feature of the AI industry: the use of circular financing — where AI companies fund each other's purchases through interlocking deals — to sustain what he argues is an unsustainable boom.
+
+**Oracle/OpenAI $300B Deal Collapse (Sep 2025–Jul 2026):**
+- Oracle stock fell from $307 to $120 in nine months after announcing a $300B deal with OpenAI
+- Larry Ellison's personal net worth briefly leapt by roughly $100B on the announcement, then collapsed as Oracle shares cratered
+- Marcus cites this as a textbook case of market enthusiasm detached from business fundamentals
+
+**Nvidia $250B Backstop for Ohio Data Center (July 27, 2026):**
+- Nvidia offered to guarantee financing for SoftBank's proposed 10GW data center in Ohio — a project that would consume roughly 2/3rds of the chips Nvidia itself would need to sell
+- Market reaction: Nvidia shares fell 4.5% in the first hours following the announcement
+- One investor described the arrangement as reflecting \"desperation\" and likened it to \"two drunks leaning on each other to stand up\"
+
+**Prominent Critiques:**
+- **James Chanos** (noted short seller), with characteristic sarcasm: \"So we are at the point in the cycle where NVDA has to provide financing guarantees for roughly 2/3rds of the cost of the chips it is selling\"
+- **Matt Stoller** (antitrust researcher): \"I don't understand why Nvidia is backstopping data centers unless there's just not enough real demand for compute\"
+
+**Broader Indicators:**
+- Apple overtook Nvidia in market capitalization
+- SpaceX was down 25% in a month, and roughly 50% from its June 2026 high
+- Creditors growing leery; off-balance-sheet financing arrangements coming to light
+
+Marcus's conclusion: **\"The GenAI boom hasn't been sustained by profits; it has been sustained by hope and circular financing. That may no longer be enough.\"**
+
+Source: [[raw/articles/garymarcus.substack.com--p-circular-financing-aint-what-it-used--e1df8edb.md]]
+
+### Singularity Debunking — Response to Altman/Musk/Hassabis/Huang (July 2026)
+
+On July 27, 2026, Sam Altman, Demis Hassabis, and Elon Musk all separately claimed \"we are in the singularity\" or similar. Gary Marcus published a rebuttal titled \"Sorry, Sam and Elon, we have not reached the Singularity.\" Key arguments:
+
+- **Klarna Effect**: Employers boast of using AI to reduce headcount only to quietly rehire humans — the opposite of Singularity-level labor displacement
+
+- **IF Good definition**: IF Good's definition of a \"superintelligent machine\" is one that can do any intellectual task a human can (the original Singularity definition) — current AI fails this by a large margin
+
+- **Miles Brundage's 10-item bet**: Marcus cited 10 concrete criteria for AGI that Miles Brundage proposed — AI passes NONE of them
+
+- His conclusion: We have powerful tools but NOT superintelligence. Claims of Singularity are hype, not reality.
+
 Source: [[raw/articles/garymarcus.substack.com--p-sorry-sam-and-elon-we-have-not-reached--4ddac824.md]]
 
 ### Three Reactions to Anthropic's Latest Apologia (July 2026)

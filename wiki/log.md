@@ -1,3 +1,13 @@
+## [2026-08-03] watchdog | L2 pipe-prefix corruption fixed (20 files)
+
+- **Pipe-prefix corruption remediation** — Fixed 81 corrupted `|- ` bullet lines + 4 double-pipe `||- ` lines + 39 whole-block `|`-prefixed lines across 20 L2 pages (entities 12, concepts 7, one combined). Root causes: read_file line-number framing pasted into content, and a table-paste artifact in gary-marcus.md.
+- **entities/**: dwarkesh-patel.md (4 bullets incl. `||- ` double-pipe), seangoedecke-com.md (11 bullets incl. `||- ` double-pipe + empty bullet), tom-aarsen.md, openai.md, lilian-weng.md, samuel-colvin.md (3), nathan-lambert.md (3), substack.md, gemma-4.md (Sources: 11 bullets + empty removed), openai-spud.md, mistral-voxtral-tts.md, agibot-10000-units.md (empty bullet removed), amazon-rivr.md (3).
+- **concepts/**: evaluation/offline-evaluation.md (11 bullets), inference/sglang.md (merged heading `## Key Integration Partners|- **NVIDIA**` split into heading + 6 bullets), claude/fable-5.md (5), kimi-k3.md, ai-benchmarks/remote-labor-index.md, ai-benchmarks/osworld.md.
+- **entities/gary-marcus.md** — Stripped `|` prefix from a 39-line block (lines 272–310) that had been pasted as a broken table: `|### Nvidia $250B Backstop...` → `### Nvidia $250B Backstop...`, `|- Oracle stock fell...` → `- Oracle stock fell...`. Content preserved verbatim.
+- Verified: 0 remaining `|- ` / `||- ` lines in L2, `validate_index.py` clean (2889 lines), 0 ghost entries, all 24 orphan candidates false positives (22 subdir `_index` real files + 2 `_archive/` intentionally unindexed + 1 redirect `entities/tim-sherratt`→`entities/tim-sh` already indexed).
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

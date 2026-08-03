@@ -114,9 +114,9 @@ See [[raw/articles/2026-05-04_interconnects_distillation-panic]] and [[concepts/
 - **RL & Real-World Data Advantage**: Shift to RL-dominated training makes user interaction data critical; closed labs can leverage online RL from direct user feedback (e.g., Claude Code, Codex) to accelerate beyond open models
 - **Open Model Market Fit**: Will dominate repetitive automation tasks (API market share), driving investment into domain-specific efficient open models
 - **U.S. Adoption Shift**: U.S. will regain open-model adoption leadership starting early 2027; key catalysts: Google Gemma 4, Nvidia Nemotron, Arcee AI
-|- **Local Agents as "Dark Matter"**: "Local agents, OpenClaw, and other personal agents represent a large, to date, mostly ignored market for open model usage. It is a sort of dark matter, with pervasive, massive potential for influence on the balance of open-to-closed models"
-|- **Regulatory Reality**: Bans on frontier models are unenforceable; another sovereign will always train and release them
-|- **Funding Evolution**: New funding structures will emerge as enterprises and sovereigns recognize that dependencies on single, for-profit companies for AI access are unreliable
+- **Local Agents as "Dark Matter"**: "Local agents, OpenClaw, and other personal agents represent a large, to date, mostly ignored market for open model usage. It is a sort of dark matter, with pervasive, massive potential for influence on the balance of open-to-closed models"
+- **Regulatory Reality**: Bans on frontier models are unenforceable; another sovereign will always train and release them
+- **Funding Evolution**: New funding structures will emerge as enterprises and sovereigns recognize that dependencies on single, for-profit companies for AI access are unreliable
 
 ### Interconnects Podcast — Arcee AI Interview (May 2026)
 

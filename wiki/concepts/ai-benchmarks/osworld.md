@@ -55,7 +55,7 @@ OSWorld comprises **369 tasks** across three operating system environments:
 - **Human performance**: ~72% accuracy
 - **Best agent performance**: ~12% accuracy (as of initial publication)
 - **Massive human-agent gap**: The 60-point gap between human (72%) and best agent (12%) performance established OSWorld as one of the most challenging computer-use benchmarks
-|- **Multimodal requirement**: Agents must process real desktop screenshots, making this a true multimodal evaluation
+- **Multimodal requirement**: Agents must process real desktop screenshots, making this a true multimodal evaluation
 
 ## OSWorld 2.0
 

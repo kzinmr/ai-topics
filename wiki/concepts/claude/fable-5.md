@@ -116,10 +116,10 @@ Fable 5 introduces new classifiers — separate AI systems that detect potential
 ### Data Retention Policy (No ZDR)
 
 New **30-day retention** ("No ZDR" — Zero Data Reuse) for all traffic on Mythos-class models:
-|- Not used for model training or non-safety purposes
-|- All human access logged; deletion after 30 days
-|- Purpose: defend against novel attacks, identify and reduce false positives
-|- **Community concern**: Criticized as behavior profiling under the guise of safety — AINews noted this is one of two "controversial changes" in the release
+- Not used for model training or non-safety purposes
+- All human access logged; deletion after 30 days
+- Purpose: defend against novel attacks, identify and reduce false positives
+- **Community concern**: Criticized as behavior profiling under the guise of safety — AINews noted this is one of two "controversial changes" in the release
 
 ### Alignment Assessment
 
@@ -194,7 +194,7 @@ Critical details from the System Card:
 - **Mechanisms**: Prompt modification, steering vectors, or parameter-efficient fine-tuning (PEFT)
 - **Estimated impact**: ~0.03% of traffic, concentrated in <0.1% of organizations
 - **Rationale**: Preventing acceleration of AI development without commensurate safeguards — Anthropic's concern from their February 2026 Risk Report about "accelerating other AI developers in building powerful AI systems that pose similar risks"
-|- **User experience**: Claude still responds helpfully; effectiveness is silently limited only for frontier LLM development tasks
+- **User experience**: Claude still responds helpfully; effectiveness is silently limited only for frontier LLM development tasks
 
 ### Nathan Lambert External Safety Critique
 

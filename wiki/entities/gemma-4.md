@@ -408,18 +408,17 @@ Two quantization formats: **mobile** (per-channel int2/int4 weights, int8 activa
 Gemma 4 underwent the same rigorous safety evaluations as Gemini models. Key policies: CSAM prevention, dangerous content blocking, hate speech filtering, harassment prevention, sexually explicit content filtering. All testing conducted **without safety filters** to evaluate inherent model behavior. Significant improvements over Gemma 3/3n in all safety categories with low unjustified refusals.
 
 ## Sources
-|- raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
-|- raw/articles/2026-06-07_xeophon_gemma-4-e4b-daily-local-model.md
-|- 
-|- Google DeepMind announcement
-|- Google Gemma 4 E4B model card: huggingface.co/google/gemma-4-E4B-it
-|- lmstudio-community GGUF: huggingface.co/lmstudio-community/gemma-4-E4B-it-GGUF
-|- Google Gemma 4 12B Unified model card: huggingface.co/google/gemma-4-12B-it
-|- Google Blog: Introducing Gemma 4 12B (May 2026)
-|- Martin Alderson, "A little tool to visualise MoE expert routing," martinalderson.com (April 13, 2026)
-|- Patrick Loeber, "How to run a local coding agent with Gemma 4 and Pi," patloeber.com (Apr 2026)
-|- Florian Brand (@xeophon), X post on Gemma 4 E4B daily driver (June 7, 2026)
-|- raw/articles/vickiboykis.com--running-local-models-is-good-now--2026-06-15.md — Vicki Boykis on Gemma 4 for local agentic coding (~75% frontier quality)
+- raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
+- raw/articles/2026-06-07_xeophon_gemma-4-e4b-daily-local-model.md
+- Google DeepMind announcement
+- Google Gemma 4 E4B model card: huggingface.co/google/gemma-4-E4B-it
+- lmstudio-community GGUF: huggingface.co/lmstudio-community/gemma-4-E4B-it-GGUF
+- Google Gemma 4 12B Unified model card: huggingface.co/google/gemma-4-12B-it
+- Google Blog: Introducing Gemma 4 12B (May 2026)
+- Martin Alderson, "A little tool to visualise MoE expert routing," martinalderson.com (April 13, 2026)
+- Patrick Loeber, "How to run a local coding agent with Gemma 4 and Pi," patloeber.com (Apr 2026)
+- Florian Brand (@xeophon), X post on Gemma 4 E4B daily driver (June 7, 2026)
+- raw/articles/vickiboykis.com--running-local-models-is-good-now--2026-06-15.md — Vicki Boykis on Gemma 4 for local agentic coding (~75% frontier quality)
 
 ## See Also
 
