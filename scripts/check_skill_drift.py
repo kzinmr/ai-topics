@@ -2,6 +2,11 @@
 """
 Compare Hermes formula skills with _overrides/ to detect drift.
 Outputs JSON report of skills that have diverged from formula.
+
+Formula skills are searched recursively under ~/.hermes/skills (they may be
+flat, e.g. ~/.hermes/skills/dogfood, or category-nested, e.g.
+~/.hermes/skills/research/active-crawl-wiki). Archive/backup directories
+(.archive, .curator_backups, .hub, .quarantine) are excluded.
 """
 import os
 import sys
@@ -11,6 +16,10 @@ from datetime import datetime
 
 HERMES_SKILLS = Path.home() / ".hermes" / "skills"
 OVERRIDES_DIR = Path.home() / "ai-topics" / "config" / "hermes" / "skills" / "_overrides"
+
+# Directories under HERMES_SKILLS that are NOT live formula skills
+# (archives, curator backups, hub cache, quarantine).
+EXCLUDED_DIRS = {".archive", ".curator_backups", ".hub", ".quarantine"}
 
 def get_skill_version(skill_dir):
     """Extract version or last modified from SKILL.md frontmatter."""
@@ -38,6 +47,27 @@ def get_skill_files(skill_dir):
             files.add(f.relative_to(skill_dir))
     return files
 
+def find_formula_skill(skill_name):
+    """Find the live formula skill dir for skill_name.
+
+    Formula skills may live directly under HERMES_SKILLS (flat, e.g.
+    ``~/.hermes/skills/dogfood``) or under a category subdirectory (e.g.
+    ``~/.hermes/skills/research/active-crawl-wiki``). Search recursively and
+    return the shallowest match; None if not found. Excludes archive/backup
+    directories.
+    """
+    matches = []
+    for f in HERMES_SKILLS.rglob("SKILL.md"):
+        parts = f.relative_to(HERMES_SKILLS).parts
+        if parts[0] in EXCLUDED_DIRS:
+            continue
+        if f.parent.name == skill_name:
+            matches.append(f.parent)
+    if not matches:
+        return None
+    # Shallowest match is the canonical formula location
+    return min(matches, key=lambda p: len(p.relative_to(HERMES_SKILLS).parts))
+
 def compare_skills():
     """Compare formula skills with overrides."""
     report = {
@@ -61,17 +91,18 @@ def compare_skills():
     # Check each override against formula
     for skill_name in sorted(override_skills):
         override_dir = OVERRIDES_DIR / skill_name
-        formula_dir = HERMES_SKILLS / skill_name
+        formula_dir = find_formula_skill(skill_name)
+        expected_flat = HERMES_SKILLS / skill_name
 
         check = {
             "skill": skill_name,
             "override_path": str(override_dir),
-            "formula_path": str(formula_dir),
-            "formula_exists": formula_dir.exists(),
+            "formula_path": str(formula_dir) if formula_dir else str(expected_flat),
+            "formula_exists": formula_dir is not None,
             "status": "unknown"
         }
 
-        if not formula_dir.exists():
+        if formula_dir is None:
             check["status"] = "formula_missing"
             report["missing_formula"].append(skill_name)
         else:
@@ -89,6 +120,8 @@ def compare_skills():
                 try:
                     if (override_dir / f).read_bytes() != (formula_dir / f).read_bytes():
                         modified.append(str(f))
+                except PermissionError:
+                    print(f"WARNING: unreadable formula file: {formula_dir / f}", file=sys.stderr)
                 except Exception:
                     pass
 
