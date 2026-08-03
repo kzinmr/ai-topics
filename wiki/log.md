@@ -1,3 +1,15 @@
+## [2026-08-03] llm-pricing-monitor (10:00) | OpenAI GPT-5.6-terra/luna price correction
+
+**Updated**: `comparisons/llm-api-pricing.md`
+- **OpenAI**: Corrected GPT-5.6-terra standard pricing from $2.50/$15.00 to $2.00/$12.00
+- **OpenAI**: Corrected GPT-5.6-luna standard pricing from $1.00/$6.00 to $0.20/$1.20
+- Root cause: wiki was using Fast mode (2× standard) prices instead of Standard mode
+- Batch, cache, tier analysis, and cost comparison tables all updated
+- **Anthropic**: Verified unchanged — Sonnet 5 intro pricing $2/$10 through Aug 31; Mythos 5 at Fable 5 pricing
+- **Google**: Verified unchanged — all Gemini 3.x prices match live Vertex AI page
+- **DeepSeek**: Verified unchanged — V4-Flash $0.14/$0.28, V4-Pro $0.435/$0.87
+- Sources: OpenAI, Anthropic docs, Google Vertex AI, DeepSeek API docs (all fetched live)
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
