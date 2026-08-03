@@ -1,6 +1,13 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-03] raw-backlog-ingest (00:00) | duplicate batch detected - no wiki changes, tracking fixed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 00:00, run 20260803T000025Z).
+- DUPLICATE of run 20260802T220041Z (22:00): all 5 articles already processed - entities/ash-vardanyan.md enriched (StringZilla Unicode search stack v4.3-4.5, ICU 50x), entities/glean.md enriched (Definitive Guide to AI-Based Enterprise Search section), minimaxir ai-agent-coding already primary source of entities/minimaxir-com.md, Thinking Machines On-Policy Distillation already captured in concepts/post-training/on-policy-distillation.md, danluu bad-decisions non-AI (baseball/board-game decision quality) skip.
+- No wiki changes. Tracking fixed: 5 entries marked done/skipped in processed_raw_articles.json to prevent re-selection (previous run left them status=processing; 1-hour timeout triggered re-collect).
+- Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (0 take / 0 reference / 5 skip).
+
 ## [2026-08-02] raw-backlog-ingest (22:00) | 2 pages enriched, 5 articles processed
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-02 22:00, run 20260802T220041Z).
 - **[[entities/ash-vardanyan]]** — Enriched StringZilla section with Unicode search stack (v4.3-v4.5, May 2026): tokenizing (25 whitespace chars, 9 newline variants, 10x faster), case-folding (1,400+ Unicode 17 rules, 10x faster), case-insensitive substring search (20-150x faster, 20,000x vs PCRE2), fold & scan pipeline 5-15 GB/s (~50x ICU), Unicode-spec-generated synthetic test suite for correctness. Frontmatter updated (updated: 2026-08-02, +source ashvardanian.com/posts/search-utf8/).
