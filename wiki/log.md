@@ -13,6 +13,13 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-03] raw-backlog-ingest (18:00) | same-day dedup — batch already processed at 14:00
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 18:00, run 20260803T180035Z). All 5 articles were already processed by the 14:00 run (20260803T140011Z) — no wiki edits needed.
+- Verified same-day coverage: karpathy.github.io Pong from Pixels → [[entities/karpathy-writings]] (landmark tutorial section, raw source linked); glean knowledge-graph-agentic-engine → [[entities/glean]] (Knowledge Graph & Agentic Engine section, raw source linked); berthub.eu Digitale Autonomie 2.0 → [[entities/berthub-eu]] (Digital Sovereignty subsection, raw source linked); filfre.net Ultima IX → non-AI skip (already in [[entities/filfre-net]] References); paulgraham.com startup ideas → non-AI skip (already in [[entities/paulgraham-com]] References + content covered).
+- Marked all 5 filenames as processed in `~/.hermes/processed_raw_articles.json` (status: done, decision: skip) so raw_backlog_collect.py stops re-selecting this batch.
+
+---
 ## [2026-08-03] watchdog | log header restored, index header counts corrected
 
 - **wiki/log.md** — Restored `# Wiki Log` header from line 29 to line 1 (buried by pipeline entry prepends). 249 entries preserved, 0 pipe corruption, header count verified at 1.
