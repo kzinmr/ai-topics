@@ -1,3 +1,10 @@
+## [2026-08-03] raw-backlog-ingest (22:00) | saturation batch — 5 articles already captured or non-AI
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 22:00, run 20260803T220025Z). All 5 candidates already wiki-processed or non-AI — no wiki edits needed.
+- **skip (already captured)**: Anthropic "Demystifying evals for AI agents" (2026-05-08) → `concepts/evaluation/evals-for-ai-agents.md` sources (same-day capture, updated 2026-05-08) + `concepts/harness-engineering/system-architecture/evals-for-ai-agents.md`; Glean "Agent orchestration platforms compared" (2026-08-01) → `entities/glean.md` sources + "Agent Orchestration Platform Comparisons" section (six-platform table); Micah Lee "Practical Defenses Against Technofascism" → `entities/micahflee.md` "Technofascism and the Weaponization of Surveillance" section + reference.
+- **skip (non-AI)**: Russ Cox "Computing History at Bell Labs" (2008, computing history — no AI relevance); filfre.net "The Mystery of Rennes-le-Château, Part 1" (retro gaming/history — already in `entities/filfre-net.md` References, part of 4-part series).
+- Tracking: all 5 marked done/skip in processed_raw_articles.json.
+
 ## [2026-08-03] dreaming wiki-ingest | confirmation — upstream dreaming-group already committed enrichment
 
 - Pre-run JSON parse failed; recovered via triage_latest.json (18:09:28Z) — 15 decisions (13 skip, 2 reference), Takes=0 is post-enrichment state.
