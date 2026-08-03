@@ -1,9 +1,9 @@
 ---
 title: Weekly Wiki Graph Analysis
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-03
 type: query
-tags: [wiki-maintenance, graph-analysis]
+tags: []
 sources: []
 ---
 
