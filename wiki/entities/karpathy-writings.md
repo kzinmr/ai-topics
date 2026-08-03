@@ -1,9 +1,10 @@
 ---
 title: "Karpathy Writings & Blog Posts"
 tags: [person, writing]
-sources: []
+sources:
+  - raw/articles/karpathy.github.io--2016-05-31-rl--fd04d0db.md
 created: 2026-04-27
-updated: 2026-06-08
+updated: 2026-08-03
 type: entity
 ---
 
@@ -91,8 +92,19 @@ Complete implementation of Bitcoin transaction creation, signing, and broadcasti
 ### A Survival Guide to a PhD (Sep 2016)
 Practical advice on advisor relationships, research productivity, mental health, and time management. Influenced many graduate students in AI/ML fields.
 
-### Deep Reinforcement Learning: Pong from Pixels (2016)
-Tutorial on building a neural network to play Atari Pong from raw pixels. Introduced policy gradients to a wide audience. Key insight: RL is just gradient descent on a differentiable loss function.
+### Deep Reinforcement Learning: Pong from Pixels (May 2016)
+**Landmark tutorial** on building a neural network to play Atari Pong from raw pixels — one of the most-shared RL introductions of its era. Introduced **policy gradients (PG)** to a wide audience as the preferred default over DQN ("Q-Learning is not a great algorithm... DQN is so 2013 (okay I'm 50% joking)"). The full implementation is **130 lines of Python with only numpy** ([Gist](https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5)).
+
+Key claims and framing:
+- **RL progress is driven by compute/data/infrastructure, not algorithms** — ATARI DQN (2013) is a scaled-up implementation of 1998 Sutton Q-Learning; AlphaGo uses standard policy gradients + MCTS. "To a first-order approximation the main driver of recent progress is not the algorithms."
+- **Four factors holding back AI**: Compute (Moore's Law, GPUs, ASICs), Data (ImageNet-style), Algorithms (backprop, CNN, LSTM), Infrastructure (Linux, TCP/IP, Git, ROS, AWS, TensorFlow).
+- **PG is end-to-end**: explicit policy with a principled objective (directly optimize expected reward) vs Q-learning's value-function proxy.
+- **Pong as MDP toy**: 210×160×3 frames → 2-layer policy network → binary UP/DOWN choice with stochastic sampling; +1/-1/0 rewards.
+- **"Profoundly dumb" core insight**: the magic of deep RL reduces to gradient descent on a differentiable loss function — demystifying RL for newcomers.
+
+Background context: written after working through Sutton's book, David Silver's course, John Schulman's lectures, a JS RL library, a DeepMind DeepRL internship, and contributing to **OpenAI Gym** design.
+
+[[raw/articles/karpathy.github.io--2016-05-31-rl--fd04d0db]]
 
 ### The Unreasonable Effectiveness of Recurrent Neural Networks (2015)
 **Landmark blog post** demonstrating character-level RNNs generating text, LaTeX, and code. One of the most shared AI blog posts of 2015. *"RNNs are not just models — they're little universes that learn to simulate the world."*

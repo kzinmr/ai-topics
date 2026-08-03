@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-08-02
+updated: 2026-08-03
 tags:
   - company
   - search
@@ -26,7 +26,8 @@ sources:
   - raw/articles/2026-08-01_glean_agent-orchestration-platforms-compared.md
   - raw/articles/2026-08-01_glean_glean-information-retrieval.md
   - raw/articles/2026-08-01_glean_work-ai-index-uk.md
-|---
+  - raw/articles/2026-05-10_glean_knowledge-graph-agentic-engine.md
+---
 
 # Glean
 
@@ -119,6 +120,31 @@ Glean published a comprehensive overview of its AI stack for software engineers,
 | **Agentic Engine** | Plan-and-adapt execution layer that decomposes tasks and retrieves context in real-time |
 
 The architecture emphasizes **context layer quality** as the primary determinant of output quality and cost — a finding consistent with Glean's MCP benchmark results (30% fewer tokens vs off-the-shelf tools). The platform is built on the principle that enterprise AI must "plan & adapt over company context" rather than relying on general-purpose reasoning alone.
+
+### Knowledge Graph & Agentic Engine (Jun 2025)
+
+Glean's technical deep-dive (authors Rob Stets, Pradeep Vaghela, Julie Mills) explains why the **knowledge graph is the foundation of its agent reasoning engine**: enterprise AI needs context that reflects how the organization actually works — triplets connecting people, documents, tools, projects, and systems.
+
+**KG mechanics:**
+- **Triplet structure** (subject, predicate, object): e.g., (engineer A, owns, Jira ticket B), (doc X, references, project Y) — the graph's edges enable inference and complex queries across organizational silos.
+- **Edge properties**: timestamps, access control, confidence scores, and provenance attach to each relation, letting the system reason with governance-critical metadata (e.g., when a reporting relationship started, whether info came from calendar vs email).
+- **Fine-grained access control**: the whole graph is designed so employees only see data already shared with them in source systems.
+
+**Documented LLM failure modes that the KG addresses:**
+1. **Proximity over precision** — LLM misassigned a marketing manager's title based on a Slack message about an event she hosted.
+2. **Entity confusion** — Claude 3.7 Sonnet vs Claude 3.5 Sonnet v2 are distinct models but LLMs merge them into one wrong answer.
+3. **Deterministic queries** — "list all account executives in Asia" requires mapping query terms to specific job titles/locations, then an exhaustive structured query.
+4. **Multi-hop relationship reasoning** — "where do I file feature requests for Reddit?" needs disambiguation (social platform vs customer) plus process knowledge (Jira involved).
+
+**Three-phase KG construction** (first two phases now LLM-enhanced): (1) entity annotation from natural language, (2) intent understanding via seeded query patterns expanded from query logs, (3) fulfillment — structured queries traversing the graph.
+
+**Enterprise KG difficulty:** Unlike public graphs (Google/Bing), enterprise graphs cannot rely on manual review — privacy and scale forbid it. Glean's automated pipeline: noun phrase extraction → frequency/prominence filtering → entity-prominence evidence (titles, link frequency, shared files) → predicate identification → continuous algorithmic refinement. Built on the same real-time crawler architecture as its search index, refined over 6 years.
+
+**Personal Graph:** a new dimension capturing individual digital activity streams (atomic actions → sub-tasks → context-labeled tasks → themed clusters mapped to OKRs). Unlike chat-session memory, it synthesizes activity across tools, systems, and time — enabled by LLM reasoning over sparse, cross-source signals. Already powering "what I worked on last week" and performance-review quick-start agents.
+
+**Context System thesis:** data + people + **process** (how work actually happens) form a third context layer. Closing claim: "the cognition of agent systems is not just the LLM — it is also the context system."
+
+Source: [[raw/articles/2026-05-10_glean_knowledge-graph-agentic-engine]]
 
 ### Research: AI Productivity Paradox for Software Engineers
 

@@ -2,7 +2,7 @@
 title: Bert Hubert
 type: entity
 created: 2026-04-10
-updated: 2026-07-30
+updated: 2026-08-03
 tags:
   - person
   - blogger
@@ -12,6 +12,7 @@ tags:
   - policy
 sources:
   - raw/articles/berthub.eu--articles-posts-ai-voor-wie-erover-gaat--4bd1470e.md
+  - raw/articles/berthub.eu--articles-posts-digitale-autonomie-2-0-surf-privacy-security--5620d737.md
 ---
 
 
@@ -50,6 +51,8 @@ Bert is a leading voice on **European digital autonomy** — not as abstract pol
 - **"Dear hosters, you are selling wood, not furniture"** — infrastructure providers sell raw capacity, not solutions. Institutions must build the furniture themselves.
 
 He advocates for **modular European cloud architecture** (*Cloud Kootwijk* initiative) and criticizes the asymmetry where American vendors get away with PowerPoints while European competitors face demands for 6-week proofs-of-concept at their own expense.
+
+His **"Digitale Autonomie 2.0: en nu echt"** opening talk at the Surf Privacy & Security Conference (June 2026) moves from diagnosis to action. Key new claims: Dutch digital dependence on the US is now "virtually absolute" — 100% of municipalities, notaries, banks, and most of central government cannot function without Microsoft's active cooperation; no computer sold today can avoid sending documents to the US even with all privacy checkboxes set. He argues businesses won't lead (digital autonomy doesn't raise next quarter's profit), so (semi-)governments must lead; education has trained generations as "US cloud specialists." Practical advice: pursue **"small but important"** projects — big enough for real "skin in the game," not another pilot — and point organizations at the abundant low-hanging fruit for digital autonomy.
 
 ### Cybersecurity as Pre-War Reality
 
@@ -143,6 +146,7 @@ Bert Hubert serves as a part-time technical AI policy advisor to Dutch governmen
 - berthub.eu--articles-posts-data-experts-politiek-tweede-kamer--d32fdd73
 - berthub.eu--articles-posts-digitaal-zoet-zuur-coalitie-akkoord--c58befdc
 - berthub.eu--articles-posts-digitale-coalitieplannen--b52bcc06
+- berthub.eu--articles-posts-digitale-autonomie-2-0-surf-privacy-security--5620d737
 - berthub.eu--articles-posts-ft-on-european-cloud--c74744dc
 - berthub.eu--articles-posts-ga-niet-kapot-aan-je-overheid--e5c87380
 - berthub.eu--articles-posts-hello-europe-joe-biden-is-gone--42e7bfd2
