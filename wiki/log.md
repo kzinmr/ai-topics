@@ -1,6 +1,12 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-03] raw-backlog-ingest (10:00) | duplicate batch detected - no wiki changes, tracking fixed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 10:00, run 20260803T100025Z).
+- DUPLICATE of run 20260803T040040Z (04:00): all 5 articles already processed - entities/ash-vardanyan.md enriched (SimSIMD v5.3 SVE2 set intersections), entities/chiark-greenend-org-uk-sgtatham.md expanded (Policy of transience habits + 6 permanence criteria), glean CIO guide / glean create-ai-strategy-2024 / pxlnv metaverse-fever-dream skipped + archived.
+- Root cause: 5 entries left with status=processing in processed_raw_articles.json -> collector re-selected the batch. Tracking fixed: all 5 marked done with duplicate_of=20260803T040040Z to prevent re-selection.
+- No wiki changes. Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (0 take / 0 reference / 5 skip).
 ## [2026-08-03] raw-backlog-ingest (04:00) | 2 pages enriched, 5 articles processed
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 04:00, run 20260803T040040Z).
 - **[[entities/ash-vardanyan]]** — Added "SimSIMD v5.3 — SVE2 Set Intersections (May 2026)" section under Key Projects: HISTCNT/MATCH (SVE2) vs VP2INTERSECT (AVX-512) vs Galloping, up to 5x faster set intersections for sorted u16/u32 arrays, u16 SVE2 always >= NEON (u32 mixed, ~50% slower on skewed 128x8192), SVE2 live on AWS Graviton 4 / upcoming Grace Hopper + Cobalt + Axios, sparse-vector similarity use case. Frontmatter updated (updated: 2026-08-03, +source ashvardanian.com/posts/simd-set-intersections-sve2-avx512/ + raw article).
