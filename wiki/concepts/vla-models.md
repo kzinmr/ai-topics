@@ -1,7 +1,7 @@
 ---
 title: "Vision-Language-Action Models (VLA)"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-08-03
 type: concept
 tags:
   - robotics
@@ -13,6 +13,7 @@ sources:
   - https://arxiv.org/html/2604.19728v1
   - https://arxiv.org/html/2601.02456v1
   - https://www.marktechpost.com/2026/04/28/top-10-physical-ai-models-powering-real-world-robots-in-2026/
+  - raw/newsletters/2026-08-02-deepseek-s-flash-sale-google-s-gemini-finds-its-feet-and-music-copyright-bites-b.md
 ---
 
 # Vision-Language-Action Models (VLA)
@@ -35,7 +36,8 @@ VLA models typically consist of:
 | GR00T N1.7 | [[entities/nvidia|NVIDIA]] Isaac | 3B | EgoScale: 20K+ hrs human egocentric video |
 | Helix | [[entities/figure-ai|Figure AI]] | 7B+80M | Dual-system: System 2 (7-9Hz) + System 1 (200Hz) |
 | InternVLA-A1 | Shanghai AI Lab | 2B-3B | Mixture-of-Transformers for understanding + action |
-| Gemini Robotics | [[entities/deepmind|Google DeepMind]] | — | Agentic capabilities, transparent reasoning |
+| Gemini Robotics | [[entities/deepmind|Google DeepMind]] | — | Agentic capabilities, transparent reasoning (Gen-1, 2025) |
+| Gemini Robotics 2 | [[entities/deepmind|Google DeepMind]] | — | Whole-body humanoid control, 32–92% multi-finger success, <200-example adaptation (Aug 2026) → [[concepts/gemini/gemini-robotics-2]] |
 | SmolVLA | [[entities/huggingface|HuggingFace]] LeRobot | 450M | Community data, runs on consumer hardware |
 | LaRA-VLA | Research | — | Latent reasoning, 90% inference latency reduction |
 

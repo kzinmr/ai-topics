@@ -4,7 +4,7 @@ type: entity
 aliases: [hugobowne, Hugo Bowne Anderson]
 status: complete
 created: 2026-04-14
-updated: 2026-07-28
+updated: 2026-08-03
 depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 7, 25), 'notes': "Added Privacy Engineering + Agent Harness Engineering + Production AI Agents: Maven Assistant sections from 2026 content"}
 tags:
   - person
@@ -22,6 +22,7 @@ sources:
   - https://open-racer-a67.notion.site/The-agent-harness-reading-list-35e14bb7e4a2805d881ae261573ff76f
   - raw/newsletters/2026-07-25-four-months-inside-a-production-ai-agent-what-real-users-changed.md
   - raw/newsletters/2026-07-28-how-to-build-an-effective-agent-harness.md
+  - raw/newsletters/2026-08-03-if-developers-build-on-chinese-open-weight-models-who-leads-ai.md
 ---
 
 
@@ -93,6 +94,7 @@ Independent podcast focused on **practical AI building**. Notable guests include
 | Episode | Guest | Topic |
 |---|---|---|
 | SUAYS Ep. 1 | Wes McKinney, Jeremiah Lowin, Randy Olson | "The Agentic Software Factory" — verification, personal software, agent skills |
+| 73 | Sebastian Raschka | "If Developers Build on Chinese Open-Weight Models, Who Leads AI?" — Kimi K3 architecture (Delta Attention/MoE), harness-dependent model behavior, routing, DeltaNet/Mamba trend, 25-company open letter (Aug 3, 2026) |
 | 72 | Bryan Bischof | "Why Agents Solve the Wrong Problem (and What Data Scientists Do Instead)" |
 | 71 | Samuel Colvin (Pydantic) | "Durable Agents — How to Build AI Systems That Survive a Crash" |
 | 70 | Eric J. Ma (Moderna) | "1,400 Production AI Deployments" |

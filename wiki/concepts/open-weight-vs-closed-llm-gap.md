@@ -1,7 +1,7 @@
 ---
 title: "Open-Weight vs Closed LLM Performance Gap"
 created: 2026-06-28
-updated: 2026-07-13
+updated: 2026-08-03
 type: concept
 aliases: [open-vs-closed-llm-gap, open-source-llm-catch-up, frontier-os-llm]
 tags:
@@ -16,8 +16,10 @@ related:
   - [[entities/meta]]
   - [[entities/deepseek]]
   - [[concepts/ai-benchmarks/index]]
+  - [[concepts/open-vs-closed-model-gap]]
 sources:
   - raw/articles/2026-06-22_doubleword-open-source-vs-closed-llm-gap.md
+  - raw/newsletters/2026-08-02-latest-open-artifacts-23-laguna-s2-1-inkling-kimi-k3-show-the-utility-of-open-mo.md
 ---
 
 # Open-Weight vs Closed LLM Performance Gap
@@ -93,6 +95,21 @@ The key insight: even if open-weight models achieve benchmark parity with closed
 The open-vs-closed gap is no longer purely a technical question of benchmark performance — it is increasingly a political question of regulatory trajectory. The benchmark analysis (Doubleword, Jun 2026) and regulatory analysis (Lambert, Jul 2026) are complementary: one measures technical convergence, the other measures political divergence.
 
 Source: [[entities/nathan-lambert|Nathan Lambert]], "6 months to live for open models" (Jul 12, 2026)
+
+## Ecosystem Diffusion — New Open Releases (Aug 2026)
+
+The **"Latest open artifacts (#23)"** roundup (Robotic/Interconnects, Aug 2 2026) documents that model-training capability is *diffusing* rather than consolidating — contradicting the prediction that frontier-training labs would merge. New open-weight releases in the roundup:
+
+| Model | Developer | Specs | Notes |
+|-------|-----------|-------|-------|
+| **Hy3** | [[entities/tencent|Tencent]] | 295B-A21B MoE | Improves over predecessor across all metrics; notable license change |
+| **Motif-3-Beta** | Motif Technologies (Korea) | 314B-A13B MoE | Preview release |
+| **Instella-MoE-16B-A3B-Think** | [[entities/amd|AMD]] | 16B-A3B MoE | Trained on Instinct cards; Base/SFT/MidTrain/DPO all published |
+| **Apertus-v1.5-70B** | swiss-ai | 70B | 2T-token continued pretraining |
+
+**Significance**: these releases support the "demand for tokens is incredibly high" thesis — new entrants (including Thinking Machines with Inkling and Xiaomi) keep arriving rather than being absorbed by consolidation. Geographically, open-model production continues to broaden beyond the original US/China axis (Korea, Switzerland).
+
+Source: [[entities/nathan-lambert|Nathan Lambert]] / Interconnects, "Latest open artifacts (#23)" (Aug 2, 2026)
 
 ## See Also
 - [[concepts/scaling-laws]] — Empirical scaling relationships for LLM performance

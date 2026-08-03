@@ -2,7 +2,7 @@
 title: "Google Gemini"
 type: concept
 created: 2026-04-19
-updated: 2026-08-01
+updated: 2026-08-03
 tags:
   - concept
   - google
@@ -14,10 +14,12 @@ related:
   - concepts/frontier-models-2026-04
   - concepts/local-llm/model-distillation
   - concepts/inference-speed-development
+  - concepts/gemini/gemini-robotics-2
 sources:
   - raw/articles/2026-06-10_deepmind-model-cards-page.md
   - raw/newsletters/2026-08-01-ainews-not-much-happened-today.md
   - raw/newsletters/2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md
+  - raw/newsletters/2026-08-02-deepseek-s-flash-sale-google-s-gemini-finds-its-feet-and-music-copyright-bites-b.md
   - https://deepmind.google/models/model-cards/
 ---
 
@@ -30,6 +32,10 @@ sources:
 ## Recent Updates — Gemini Drops (July 2026)
 
 In late July 2026, Google's **"Gemini Drops"** update (announced via @GeminiApp) added **Gemini 3.6 Flash** and **Gemini 3.5 Flash-Lite** to the family, alongside a wider Gemini Spark rollout, app integrations, voice support on macOS, and personalized image/avatar features (source: AINews 2026-08-01). Per the Artificial Analysis Intelligence Index v4.1 (Superintel+ chart, 2026-07-31), Gemini 3.6 Flash scores ~**50.1 intelligence index** at ~**$0.50 per task**. Pricing/GA details for the new models are not yet captured in the table below — this is a reference-level note pending a dedicated model page.
+
+## Gemini Robotics 2 (August 2026)
+
+In August 2026, Google DeepMind released **Gemini Robotics 2**, a family of three models (Gemini Robotics 2 / Gemini Robotics ER 2 / on-device variant) for **whole-body robot control** — including full humanoid control demonstrated on Apptronik Apollo 2. Multi-finger task success ranges 32–92%, new-robot adaptation needs fewer than 200 examples, and the ER 2 variant plans tasks requiring hundreds of decisions over minutes. See the dedicated page: [[concepts/gemini/gemini-robotics-2|Gemini Robotics 2]].
 
 ## Frontier Models (June 2026)
 

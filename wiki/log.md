@@ -1,6 +1,16 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-03] newsletter-wiki-ingest (11:00) | 3 takes executed (2 new pages, 1 enrich), 4 references, 1 new entity
+
+- Recovered triage JSON from checkpoint (`/opt/data/.hermes/cron/data/newsletter/triage_latest.json`, run 20260803T103004Z) — triage agent saved JSON before response render failed (known pattern). Archive for run already saved (`raw/archived/triage/newsletter/2026-08-03_20260803T103004Z.json`).
+- **Take 1 — Gemini Robotics 2**: created `concepts/gemini/gemini-robotics-2.md` (3-model family, whole-body humanoid control, Apptronik Apollo 2 demo, 32–92% multi-finger success, <200-example adaptation, ER 2 long-horizon planning). Updated `concepts/gemini/index.md` (Recent section + frontmatter) and `concepts/vla-models.md` (VLA table row + frontmatter).
+- **Take 2 — AI music copyright**: created `concepts/ai-music-copyright.md` — GEMA v. Suno Munich Regional Court win (Aug 2 2026, The Signal), Suno ordered to stop reproducing; Warner Music Group × Suno partnership contrast; linked to anthropic-copyright-settlement / google-flow-music.
+- **Take 3 — Catalini moat framework**: enriched `concepts/open-vs-closed-model-gap.md` with "Moat Strategy Perspective — Christian Catalini" section (measurable → automatable; 4-month flat gap; value moves to shipping judgment; routing as aggregation layer). Created `entities/christian-catalini.md` (Lightspark co-founder, MIT economist).
+- **Reference — Interconnects artifacts #23**: enriched `entities/nathan-lambert.md` (consolidation prediction wrong → diffusion; Tencent Hy3 / Motif-3-Beta / AMD Instella / Apertus-v1.5) and `concepts/open-weight-vs-closed-llm-gap.md` (Ecosystem Diffusion section with release table).
+- **Reference — DeepSeek V4-Flash-0731**: enriched `concepts/deepseek-v4.md` (Intelligence Index 50 / open-weight top-3, OpenAI Responses + Codex config defection spec, 284B/13B active retrained checkpoint beating 1.6T V4 Pro preview at agent tasks; noted param variance vs Willison 304B).
+- **Reference — Vanishing Gradients Aug 3 episode**: enriched `entities/sebastian-raschka.md` and `entities/hugo-bowne-anderson.md` (Ep. 73: Kimi K3 Delta Attention/MoE, harness-dependent model behavior, routing, DeltaNet/Mamba trend, 25-company open letter).
+- Skips (4) confirmed: Lenny's pure-podcast, Interconnects covered-models batch, The Signal roundup batch, Superintel+ social batch — all archived.
 ## [2026-08-03] blog-wiki-ingest (10:35) | 4 takes verified (already committed), 1 reference enriched
 
 - Recovered triage JSON from checkpoint (`/opt/data/.hermes/cron/data/blog_ingest/triage_latest.json`) — triage agent saved JSON before response render failed.

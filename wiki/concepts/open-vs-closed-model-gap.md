@@ -1,11 +1,15 @@
 ---
 title: "Open vs. Closed Model Capability Gap"
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-08-03
 type: concept
 tags: [benchmark, evaluation, model, open-source, comparison]
+related:
+  - concepts/open-weight-vs-closed-llm-gap
+  - entities/christian-catalini
 sources:
   - "wiki/raw/articles/2026-05-28_epoch-ai_open-closed-eci-gap.md"
+  - raw/newsletters/2026-08-02-the-only-moat-that-survives-ai.md
 ---
 
 # Open vs. Closed Model Capability Gap
@@ -68,6 +72,19 @@ Open-weight models can be **self-hosted, fine-tuned, and deployed without API de
 
 ### For Proprietary Lab Valuations
 OpenAI ($852B) and Anthropic ($965B) valuations implicitly price in a **durable advantage** for proprietary models. If open-weight models maintain a stable 4-month lag despite frontier acceleration, the premium that closed labs can charge faces **long-term pressure**. The key question is whether the gap stays constant, widens, or narrows.
+
+## Moat Strategy Perspective — Christian Catalini (Aug 2026)
+
+In August 2026, **[[entities/christian-catalini|Christian Catalini]]** (Lightspark co-founder, MIT economist) argued in a Superintel+ interview ("The Only Moat That Survives AI") that the moat debate is being fought on **the wrong terrain**. His framework, reported via The Signal/Superintel+ (2026-08-02):
+
+- **"Anything that can be measured will eventually be automated."** The durable question is not who owns the best model, but what cannot be automated.
+- **Open-weight lag is ~4 months and flat**: open-weight models sit about **four months behind the closed frontier on Epoch's capability index**, and the gap has **stayed flat** — consistent with [[entities/epoch-ai|Epoch AI]]'s May 2026 measurement above, but Catalini interprets the flatness as evidence that the *gap is not the moat*.
+- **Value shifts to the last mile**: if execution becomes free for everything measurable, value moves to the human act of **deciding whether a machine's output is good enough to ship** — judgment over generation.
+- **Routing as aggregation layer**: model routing may become the aggregation layer of the AI stack, but it faces open questions; the application layer is likewise **not defensible as a moat**.
+
+### Implication for the Gap Debate
+
+Catalini's argument reframes the open-vs-closed gap: even a stable 4-month capability lag may be strategically irrelevant if value concentrates in unmeasurable judgment (shipping decisions, trust, accountability) rather than raw model capability. This complements the benchmark view (Epoch, stable 4-month gap) and the regulatory view (Lambert, ban risk) with a **business-strategy view** — the gap matters only if capability itself is the locus of value.
 
 ## Limitations
 

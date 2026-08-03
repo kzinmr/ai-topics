@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (874 pages)
+## Entities (875 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -145,6 +145,7 @@
 - [[entities/chris-hayduk]] — Chris Hayduk
 - [[entities/chris-olah]] — Chris Olah
 - [[entities/chris-tate]] — Chris Tate; added emulate (local API emulation for CI/no-network sandboxes) to key projects (June 25)
+- [[entities/christian-catalini]] — Christian Catalini — Lightspark co-founder, MIT economist; "The Only Moat That Survives AI": measurable things get automated, open-weight ~4mo lag flat, value moves to shipping judgment (Aug 2026)
 - [[entities/claris-filemaker-agentic-coding]] — Claris FileMaker Agentic Coding Strategy
 - [[entities/claude-code]] — Claude Code
 - [[entities/claude-code--architecture]] — Claude Code — Architecture
@@ -878,7 +879,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1955 pages)
+## Concepts (1957 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1150,6 +1151,7 @@
 - [[concepts/ai-memory-systems]] — AI Memory Systems — Design Philosophy Comparison: Chat vs Coding Agents
 - [[concepts/ai-memory-crisis]] — AI Memory Crisis — HBM demand from AI GPUs driving consumer electronics prices up via memory triopoly (Samsung/SK Hynix/Micron)
 - [[concepts/ai-military]] — AI in Military Wargames
+- [[concepts/ai-music-copyright]] — AI Music Copyright — GEMA v. Suno Munich court victory (Aug 2026); Suno ordered to stop reproducing works; contrast with Warner Music Group × Suno partnership
 - [[concepts/ai-native-product-localization]] — AI-Native Product Localization
 - [[concepts/ai-native-state-management]] — Comprehensive overview of state categories, data flow patterns, and architectural decisions in AI-native full-stack a...
 - [[concepts/ai-observability]] — AI Observability — Monitoring and Debugging LLM Applications
@@ -1732,6 +1734,7 @@
 - [[concepts/gemini/gemini-cli]] — Gemini CLI
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/gemini/gemini-managed-agents]] — Gemini Managed Agents
+- [[concepts/gemini/gemini-robotics-2]] — Gemini Robotics 2 — whole-body humanoid control family (3 models); Apptronik Apollo 2 demo, 32–92% multi-finger success, <200-example adaptation, ER 2 long-horizon planning (Aug 2026)
 - [[concepts/gemini/gemini-spark]] — Gemini Spark
 - [[concepts/gemini/index]] — Google Gemini
 - [[concepts/gemma-family]] — Gemma Model Family

@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-07-13
+updated: 2026-08-03
 type: entity
 aliases:
   - natolambert
@@ -17,6 +17,7 @@ sources:
   - raw/newsletters/2026-06-17-state-of-the-blog-mid-2026.md
   - raw/articles/2026-06-16_interconnects_post-training-recipe-review.md
   - raw/newsletters/2026-07-12-6-months-to-live-for-open-models.md
+  - raw/newsletters/2026-08-02-latest-open-artifacts-23-laguna-s2-1-inkling-kimi-k3-show-the-utility-of-open-mo.md
 ---
 
 # Nathan Lambert (@natolambert)
@@ -207,6 +208,17 @@ Nathan Lambert **departed the Allen Institute for AI (Ai2)** in June 2026, marki
 - **Coalition building**: Lambert urges the diffuse open-source community to organize lobbying efforts immediately, as "everyone else outside the frontier labs needs to start working today."
 
 Source: [6 months to live for open models](https://www.interconnects.ai/p/6-months-to-live-for-open-models) (Jul 12, 2026, Robotic/Interconnects)
+
+### August 2026: Open Artifacts #23 — the consolidation prediction was wrong
+
+**"Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3"** (Aug 2, 2026, Robotic/Interconnects) documents that the widely-predicted **industry consolidation did not happen** — instead, model-training capability is *diffusing*:
+
+- **Consolidation was the prediction**: many astute observers predicted that labs training frontier models would need to consolidate (given training economics).
+- **Reality — diffusion**: "All of these labs we thought would need to consolidate are realizing that the demand for tokens is incredibly high." **Thinking Machines** transitioned to an open-model company (first model: Inkling, 975B-A41B multimodal MoE), and newer entrants like **Xiaomi** are still accumulating mindshare.
+- **Roundup content**: Laguna S2.1 (poolside), Inkling (Thinking Machines), Kimi K3 (Moonshot, covered separately), LongCat 2.0 1.6T (Meituan), DeepSeek V4-Flash-0731, plus new open-model releases: **Tencent Hy3** (295B-A21B MoE, notable license change), **Motif-3-Beta** (Korean Motif, 314B-A13B), **AMD Instella-MoE-16B-A3B-Think** (trained on Instinct cards, Base/SFT/MidTrain/DPO all public), **swiss-ai Apertus-v1.5-70B** (2T-token continued pretraining).
+- **Thesis**: "the demand for tokens is incredibly high" — the market for open weights is growing fast enough that new entrants keep arriving rather than being absorbed.
+
+Source: [Latest open artifacts (#23)](https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21) (Aug 2, 2026, Robotic/Interconnects)
 
 ## Core Ideas
 
