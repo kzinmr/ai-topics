@@ -1,0 +1,96 @@
+{
+  "run_id": "20260803T103004Z",
+  "triaged_at": "2026-08-03T10:30:04Z",
+  "source": "newsletter-ingest",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 5,
+  "classifications": {
+    "high": [
+      {
+        "message_id": "<20260802130140.3.d97c7545d397fa7e@mg2.substack.com>",
+        "subject": "Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier",
+        "date": "2026-08-02",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-02-latest-open-artifacts-23-laguna-s2-1-inkling-kimi-k3-show-the-utility-of-open-mo.md",
+        "canonical_url": "https://open.substack.com/pub/robotic/p/latest-open-artifacts-23-laguna-s21",
+        "source_publication": "robotic (Nato Lambert / Xeophon)",
+        "relevance": "high",
+        "reason": "Directly covers open-weight AI models on the Pareto frontier: Laguna S2.1, Inkling, and Kimi K3. Core wiki topic — open model releases and benchmarking.",
+        "tags": ["open-weight-models", "model-releases", "benchmarking", "pareto-frontier"],
+        "suggested_pages": ["open-weight-models", "laguna", "kimi"],
+        "action": "fetch-article"
+      },
+      {
+        "message_id": "<20260802135125.3.727115f4712ef9d2@mg-d0.substack.com>",
+        "subject": "DeepSeek's Flash Sale, Google's Gemini Finds Its Feet, and Music Copyright Bites Back",
+        "date": "2026-08-02",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-02-deepseek-s-flash-sale-google-s-gemini-finds-its-feet-and-music-copyright-bites-b.md",
+        "canonical_url": "https://open.substack.com/pub/thesignal/p/deepseeks-flash-sale-googles-gemini",
+        "source_publication": "The Signal (Alex Banks)",
+        "relevance": "high",
+        "reason": "Covers DeepSeek pricing/strategy, Google Gemini updates, and AI music copyright — all core wiki topics.",
+        "tags": ["deepseek", "google-gemini", "ai-copyright", "pricing-strategy"],
+        "suggested_pages": ["deepseek", "gemini", "ai-copyright"],
+        "action": "fetch-article"
+      },
+      {
+        "message_id": "<20260803080738.3.10df3f97915d4799@mg-d0.substack.com>",
+        "subject": "If Developers Build on Chinese Open-Weight Models, Who Leads AI?",
+        "date": "2026-08-03",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-03-if-developers-build-on-chinese-open-weight-models-who-leads-ai.md",
+        "canonical_url": "https://open.substack.com/pub/hugobowne/p/open-weight-ai-is-becoming-infrastructure",
+        "source_publication": "hugobowne (Sebastian Raschka contributor)",
+        "relevance": "high",
+        "reason": "Open-weight AI as infrastructure, Chinese model leadership dynamics. Core wiki topic — geopolitical dimensions of open models.",
+        "tags": ["open-weight-models", "chinese-ai", "ai-leadership", "ai-infrastructure", "geopolitics"],
+        "suggested_pages": ["open-weight-models", "chinese-ai", "ai-geopolitics"],
+        "action": "fetch-article"
+      }
+    ],
+    "medium": [
+      {
+        "message_id": "<20260802.173149.803baa34@mta34>",
+        "subject": "🏰 The Only Moat That Survives AI",
+        "date": "2026-08-02",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-02-the-only-moat-that-survives-ai.md",
+        "canonical_url": null,
+        "source_publication": "beehiiv newsletter",
+        "relevance": "medium",
+        "reason": "Business strategy around AI disruption — relevant for AI industry dynamics but not a technical wiki priority.",
+        "tags": ["ai-business", "competitive-moats"],
+        "suggested_pages": [],
+        "action": "defer"
+      }
+    ],
+    "low": [
+      {
+        "message_id": "<20260802123202.3.6b393c7f35f87d63@mg2.substack.com>",
+        "subject": "This CPO regrets that product management exists | Tom Verrilli (CPO of Whatnot)",
+        "date": "2026-08-02",
+        "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-02-this-cpo-regrets-that-product-management-exists-tom-verrilli-cpo-of-whatnot.md",
+        "canonical_url": null,
+        "source_publication": "Lenny's Newsletter",
+        "relevance": "low",
+        "reason": "Product management podcast episode — not AI/LLM related.",
+        "tags": ["product-management"],
+        "suggested_pages": [],
+        "action": "skip"
+      }
+    ]
+  },
+  "summary": {
+    "high_count": 3,
+    "medium_count": 1,
+    "low_count": 1,
+    "top_themes": [
+      "Open-weight models on the Pareto frontier (Laguna S2.1, Inkling, Kimi K3)",
+      "DeepSeek pricing strategy and Google Gemini updates",
+      "Chinese open-weight models as AI infrastructure and leadership implications"
+    ],
+    "recommended_next_steps": [
+      "Fetch and process the 3 high-relevance articles via newsletter-wiki-ingest",
+      "Open-weight models cluster: Laguna, Inkling, and Kimi K3 may warrant new entity/concept pages",
+      "DeepSeek entity page may need updating with pricing/strategy changes",
+      "Consider creating concept page: 'Chinese AI ecosystem' or 'AI geopolitics' if not existing"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-03T10:40:25.887677+00:00",
+  "triage_run_id": "20260803T103004Z",
+  "source": "newsletter",
+  "summary_ja": "5ニュースレターを処理。The SignalからGemini Robotics 2（Google DeepMindの全身制御ロボットモデル3種）とGEMA対Sunoのミュンヘン著作権判決という2つの未カバー話題をtake、Superintel+のChristian Catalini『The Only Moat That Survives AI』（オープンウェイト4ヶ月遅延・モート溶解論）をopen-vs-closed-model-gap.mdの拡充takeとした。Interconnectsのオープンアーティファクト#23はNathan Lambert entityへのreference、Vanishing Gradients（Raschka）はsebastian-raschka.mdへのreference、DeepSeek V4-Flash-0731の価格・互換戦略詳細はdeepseek-v4.mdへのreference。Lenny's Newsletter（純ポッドキャスト、非AI）とカバー済みモデル群はスキップ。",
+  "decisions": [
+    {
+      "item_id": "<20260802130140.3.d97c7545d397fa7e@mg2.substack.com>-artifacts23-nl",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Florian Brand & Nathan Lambert)",
+      "title": "Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3",
+      "url": "https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-02-latest-open-artifacts-23-laguna-s2-1-inkling-kimi-k3-show-the-utility-of-open-mo.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Interconnects『Latest open artifacts (#23)』。「統合(consolidation)は不可避」という予測に反しモデル訓練能力が拡散している（Thinking Machinesがオープンモデル企業に、Xiaomiが新規参入）という論旨と、これまでで最も中身の濃いラウンドアップ。Laguna S2.1/Inkling/Kimi K3本体は既存ページでカバー済みのため、entities/nathan-lambert.md にラウンドアップ#23と「consolidation予測の誤り」テーゼを追記する価値あり。",
+      "candidate_wiki_path": "entities/nathan-lambert.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-02\n**Subject:** Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier\n**Collected:** 2026-08-03T10:29:59.530967+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0"
+    },
+    {
+      "item_id": "<20260802135125.3.727115f4712ef9d2@mg-d0.substack.com>-ds-v4flash-detail",
+      "source": "newsletter",
+      "source_name": "The Signal (Alex Banks)",
+      "title": "DeepSeek V4-Flash-0731: $0.14/M tokens, Intelligence Index 50, OpenAI-compatible defection play",
+      "url": "https://thesignal.substack.com/p/deepseeks-flash-sale-googles-gemini",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-02-deepseek-s-flash-sale-google-s-gemini-finds-its-feet-and-music-copyright-bites-b.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ The SignalがDeepSeek-V4-Flash-0731を報道：再訓練された284Bパラメータ（タスク毎13B active）がエージェントタスクで1.6TのV4 Proプレビューを上回る、MITライセンス、Artificial Analysis Intelligence Index 50でオープンウェイト上位3位、OpenAI Responses形式+Codex設定標準装備でプロバイダ切替容易（defection仕様）、$0.14/百万トークン。concepts/deepseek-v4.md にV4-Flash-0731のリリース記録はあるが、価格・インデックススコア・OpenAI互換戦略の詳細は追記余地あり。",
+      "candidate_wiki_path": "concepts/deepseek-v4.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-02\n**Subject:** DeepSeek's Flash Sale, Google's Gemini Finds Its Feet, and Music Copyright Bites Back\n**Collected:** 2026-08-03T10:30:00.913362+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2"
+    },
+    {
+      "item_id": "<20260803080738.3.10df3f97915d4799@mg-d0.substack.com>-vg-raschka",
+      "source": "newsletter",
+      "source_name": "Vanishing Gradients (Hugo Bowne-Anderson & Sebastian Raschka)",
+      "title": "If Developers Build on Chinese Open-Weight Models, Who Leads AI?",
+      "url": "https://hugobowne.substack.com/p/open-weight-ai-is-becoming-infrastructure",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-03-if-developers-build-on-chinese-open-weight-models-who-leads-ai.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Vanishing Gradients（Hugo Bowne-Anderson×Sebastian Raschka、2026-08-03配信）が中国オープンウェイトモデル上での開発とAI主導権を議論。本文でKimi K3リリース直後のアーキテクチャ分析（Delta Attention/MoE）、ローカルコーディングエージェントの使い分け、モデルとハーネスの一体評価（Qwen Code/Claude Code/Codex/Piで挙動が異なる）、タスク・履歴・コンテキストでモデルと推論努力を選ぶルーター、DeltaNet/Mamba型アーキテクチャへの流れ、25社オープンレター（NVIDIA/Meta/Microsoft/HF等）とAnthropicのオープンウェイト見解をカバー。entities/sebastian-raschka.md（updated 07-15）と entities/hugo-bowne-anderson.md（updated 07-28）へのエピソード追記を推奨。",
+      "candidate_wiki_path": "entities/sebastian-raschka.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-03\n**Subject:** If Developers Build on Chinese Open-Weight Models, Who Leads AI?\n**Collected:** 2026-08-03T10:30:03.563738+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9odWdvYm93bmUuc3Vic3RhY2suY29tL3N1YnNjcmliZT9"
+    },
+    {
+      "item_id": "<20260802123202.3.6b393c7f35f87d63@mg2.substack.com>-batch",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter",
+      "title": "This CPO regrets that product management exists | Tom Verrilli (CPO of Whatnot) — pure-podcast batch",
+      "url": "https://open.substack.com/pub/lenny/p/this-cpo-regrets-that-product-management",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-02-this-cpo-regrets-that-product-management-exists-tom-verrilli-cpo-of-whatnot.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Lenny's Newsletterの純ポッドキャスト回（Tom Verrilli/Whatnot CPOのプロダクトマネジメント談義）。全20リンクがplay_card・listen_now等の音声UIノイズ（substack.com/@lenny作者プロフィール、Like/コメント/シェア、app-store、UUIDリダイレクト含む）。AI/LLMトピックではないためWiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-02\n**Subject:** This CPO regrets that product management exists | Tom Verrilli (CPO of Whatnot)\n**Collected:** 2026-08-03T10:29:58.167341+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5j"
+    },
+    {
+      "item_id": "<20260802.173149.803baa34@mta34>-social-batch",
+      "source": "newsletter",
+      "source_name": "Superintel+ (getsuperintel)",
+      "title": "The Only Moat That Survives AI — social/sponsor/footer links batch",
+      "url": "https://read.getsuperintel.com/p/the-only-moat-that-survives-ai",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-02-the-only-moat-that-survives-ai.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ beehiivトラッキングURL20本のうちLink 1がread.getsuperintel.com（uid=443）へ200解決し本文フル取得。残りリンクは同一記事の重複・スポンサー（catchagent.ai, hightouch）・SNS/フッター・大学割引フォーム等でWiki対象外。メイン記事はtakeで処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-02\n**Subject:** 🏰 The Only Moat That Survives AI\n**Collected:** 2026-08-03T10:30:02.321885+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/7a6cf44804ad117c2ec3030265ac1509e9b835b966f9e4df2860bac0b360d955b0059e1a3e5d19e84eb3aa1ad3b7"
+    }
+  ]
+}
