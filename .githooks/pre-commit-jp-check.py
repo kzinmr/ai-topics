@@ -27,18 +27,24 @@ def count_jp(ref, filepath):
         return None  # file doesn't exist in that ref
     
     lines = content.split('\n')
-    # Skip YAML frontmatter
-    body_start = 0
-    fm_count = 0
-    for i, line in enumerate(lines):
-        if line.strip() == '---':
-            fm_count += 1
-            if fm_count == 2:
-                body_start = i + 1
-                break
-    if fm_count < 2:
+    # Only skip YAML frontmatter if the file actually starts with one.
+    # Files like log.md / log-2026.md / index.md contain `---` as entry
+    # separators or horizontal rules — treating the first two `---` lines as
+    # frontmatter boundaries produces position-dependent false positives
+    # (JP content before the 2nd separator gets skipped for HEAD but counted
+    # for the staged version once entry positions shift).
+    if lines and lines[0].strip() == '---':
         body_start = 0
-    body = '\n'.join(lines[body_start:])
+        fm_count = 0
+        for i, line in enumerate(lines):
+            if line.strip() == '---':
+                fm_count += 1
+                if fm_count == 2:
+                    body_start = i + 1
+                    break
+        body = '\n'.join(lines[body_start:])
+    else:
+        body = content
     return len(JP_PATTERN.findall(body))
 
 

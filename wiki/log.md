@@ -1,3 +1,16 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-08-03] watchdog | log header restored, index header counts corrected
+
+- **wiki/log.md** — Restored `# Wiki Log` header from line 29 to line 1 (buried by pipeline entry prepends). 249 entries preserved, 0 pipe corruption, header count verified at 1.
+- **wiki/index.md** — Corrected section header counts to match actual `- [[...]]` entry lines: `Entities` 875→874 (1 redirect page `entities/tim-sherratt` intentionally unindexed), `Concepts` 1959→1937 (20 `_index.md` files + 2 `_archive/` files inflated the old count).
+- **.githooks/pre-commit-jp-check.py** — Fixed `count_jp()` frontmatter detection: only treat the first two `---` lines as frontmatter when the file actually starts with `---`. log.md/index.md use `---` as entry separators, causing position-dependent false-positive JP blocks (blog-triage JP table already in HEAD was miscounted as "new" once entry positions shifted).
+- Verified: `validate_index.py` clean (2889 lines), 0 ghost entries, index coverage gap 0, log header at line 1.
+
+---
 
 ## [2026-08-03] raw-backlog-ingest (14:00) | 3 pages enriched, 5 articles processed
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 14:00, run 20260803T140011Z).
@@ -26,9 +39,9 @@
 - HN Algolia (15 trending stories, top: DeepSeek V4 Flash 739pts, Qwen3.8-Max 623pts)
 - X/Twitter via xurl (10 substantive threads: model comparisons, agent architecture, AI policy)
 - Wiki gap analysis + blogwatcher DB (RLAIF, Yi, Aider identified as critical gaps)
-# Wiki Log
 
-_Log of all wiki changes. Newest entries at top._
+---
+
 ## [2026-08-03] newsletter-wiki-ingest (11:00) | 3 takes executed (2 new pages, 1 enrich), 4 references, 1 new entity
 
 - Recovered triage JSON from checkpoint (`/opt/data/.hermes/cron/data/newsletter/triage_latest.json`, run 20260803T103004Z) — triage agent saved JSON before response render failed (known pattern). Archive for run already saved (`raw/archived/triage/newsletter/2026-08-03_20260803T103004Z.json`).
