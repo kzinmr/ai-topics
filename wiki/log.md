@@ -1,6 +1,12 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-03] raw-backlog-ingest (04:00) | 2 pages enriched, 5 articles processed
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 04:00, run 20260803T040040Z).
+- **[[entities/ash-vardanyan]]** — Added "SimSIMD v5.3 — SVE2 Set Intersections (May 2026)" section under Key Projects: HISTCNT/MATCH (SVE2) vs VP2INTERSECT (AVX-512) vs Galloping, up to 5x faster set intersections for sorted u16/u32 arrays, u16 SVE2 always >= NEON (u32 mixed, ~50% slower on skewed 128x8192), SVE2 live on AWS Graviton 4 / upcoming Grace Hopper + Cobalt + Axios, sparse-vector similarity use case. Frontmatter updated (updated: 2026-08-03, +source ashvardanian.com/posts/simd-set-intersections-sve2-avx512/ + raw article).
+- **[[entities/chiark-greenend-org-uk-sgtatham]]** — Expanded existing "Policy of Transience" section with concrete habits from the 2025 essay (unset HISTFILE shell history, GUI desktop clearing, browser close-all, X11 session management off, tmpfs /tmp + ~/mem) and the 6 permanence criteria (reliable/easy to find/explained/change-controlled/portable/usable by others). Frontmatter updated (updated: 2026-08-03).
+- **Skip (3)**: glean CIO guide (marketing, generic vendor-selection framework, no technical claims; glean.md already comprehensive), glean create-ai-strategy-2024 (dated 2024 marketing), pxlnv metaverse-fever-dream (non-AI, already archived).
+- Archive: 3 newly archived, 1 dedup_skipped (pxlnv) — archive_index total 2,202. Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (1 take / 1 reference / 3 skip).
 ## [2026-08-03] raw-backlog-ingest (00:00) | duplicate batch detected - no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 00:00, run 20260803T000025Z).

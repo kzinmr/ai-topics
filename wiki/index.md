@@ -72,7 +72,7 @@
 - [[entities/arize]] — Arize AI
 - [[entities/arlan-r]] — Arlan Rakhmetzhanov
 - [[entities/armin-ronacher]] — Armin Ronacher; enriched with "The Coming Loop" essay — harness-level vs agent-level loops, code quality from autonomous looping, software-as-organism metaphor (June 24)
-- [[entities/ash-vardanyan]] — Ash Vardanyan; SIMD/vectorized kernels (NumKong, StringZilla, USearch); StringZilla Unicode search 50x ICU (May 2026)
+- [[entities/ash-vardanyan]] — Ash Vardanyan; SIMD/vectorized kernels (NumKong, StringZilla, USearch); StringZilla Unicode search 50x ICU (May 2026); SimSIMD v5.3 SVE2 set intersections (Aug 2026)
 - [[entities/ashe-magalhaes]] — Ashe Magalhaes
 - [[entities/ashpreet-bedi]] — Ashpreet Bedi
 - [[entities/ashwingop]] — Ashwin Gopinath

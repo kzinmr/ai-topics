@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-03T04:15:33.374939+00:00",
+  "triage_run_id": "20260803T040040Z",
+  "source": "raw_backlog",
+  "summary_ja": "04:00バッチの5記事を処理。ashvardanianのSIMD集合積記事（SimSIMD v5.3のSVE2 HISTCNT/MATCHとAVX-512 VP2INTERSECT比較、最大5x高速化）はentities/ash-vardanyan.mdのKey Projectsに新セクション追加（take）。Simon TathamのPolicy of transienceは同エンティティページの既存セクションが薄かったため具体的習慣リストで拡充（reference）。GleanのCIO向けガイド2本はマーケティング記事で技術的独自性なし、pxlnvのメタバース論は非AIかつアーカイブ済みのためskip。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-tatham-transience",
+      "source": "raw_backlog",
+      "source_name": "chiark.greenend.org.uk (Simon Tatham)",
+      "title": "Policy of transience",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/transience/",
+      "raw_path": "~/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-transience--a0f6dabd.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 既存エンティティページのセクション拡充。entities/chiark-greenend-org-uk-sgtatham.mdには既にPolicy of TransienceセクションとReferences登録があり本質的には捕捉済みだったが、セクションが3行と薄く具体的習慣（unset HISTFILE、デスクトップ整理、ブラウザ全閉じ、X11セッションマネジメント無効化、tmpfs /tmp）と恒久化の6条件（reliable/easy to find/explained/change-controlled/portable/usable by others）を本文から追記した。非AIコンテンツのためreference止まり。",
+      "candidate_wiki_path": "entities/chiark-greenend-org-uk-sgtatham",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-glean-cio-guide",
+      "source": "raw_backlog",
+      "source_name": "Glean Blog",
+      "title": "The Enterprise CIO's Definitive Guide to Selecting AI-Driven Collaboration Software",
+      "url": "https://www.glean.com/blog/the-enterprise-cios-definitive-guide-to-selecting-ai-driven-collaboration-software",
+      "raw_path": "~/wiki/raw/articles/2026-05-10_glean_the-enterprise-cios-definitive-guide-to-selecting-ai-driven-collaboration-software.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ skip。Gleanのマーケティング記事（sitemap取得、冒頭70行はナビchrome）。本文はAIコラボレーションプラットフォーム選定の一般的なビジネスフレームワーク（セキュリティ/ガバナンス/統合/導入）で、技術的独自主張なし。entities/glean.mdは2026-08-02にdefinitive guideやIR guide等で既に包括的に拡充済みで、本記事は追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-glean-ai-strategy-2024",
+      "source": "raw_backlog",
+      "source_name": "Glean Blog",
+      "title": "How to create an effective AI strategy in 2024",
+      "url": "https://www.glean.com/blog/create-ai-strategy-2024",
+      "raw_path": "~/wiki/raw/articles/2026-05-10_glean_create-ai-strategy-2024.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ skip。Gleanのマーケティング記事で2024年時点のAI戦略立案アドバイス（経営層向け）。技術的深度なし、2024年時点の内容で陳腐化済み。entities/glean.mdは既に豊富なカバレッジを持ち、追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

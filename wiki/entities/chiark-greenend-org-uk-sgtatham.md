@@ -2,7 +2,7 @@
 title: Simon Tatham
 type: entity
 created: 2026-04-09
-updated: 2026-05-20
+updated: 2026-08-03
 tags:
   - person
   - blogger
@@ -63,6 +63,16 @@ Tatham's essay on using Git without GitHub/GitLab explores the philosophy of **d
 ### Policy of Transience
 
 Tatham has written about maintaining a "policy of transience" — the deliberate choice not to accumulate digital baggage. This extends from his approach to email (not hoarding it) to his software maintenance philosophy. The principle: **systems that assume permanence become harder to maintain over time**. Designing for transience reduces the long-term cost of ownership.
+
+In his 2025 essay ["Policy of transience"](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/transience/) he formalizes the idea: *things should either be deliberately permanent in an organised way, or strictly temporary* — he dislikes things *accidentally* lasting forever. Concrete habits (each adopted independently, later recognized as sharing the theme):
+
+- **No persistent shell history** (`unset HISTFILE`) — history is per-shell only; valuable commands are deliberately saved as named, commented scripts in small Git repos, separating the working version from false starts
+- **Clear the GUI desktop regularly** — app clusters (terminal + editor + gitk) are closed wholesale; recurring clusters get hot keys/aliases
+- **Close the entire web browser frequently** — URLs worth keeping are saved deliberately elsewhere, not left in open tabs
+- **Turn off X11 session management** — no automatic restoration of session state
+- **tmpfs for `/tmp`** (plus a `~/mem` scratch dir) — ephemeral files vanish on reboot, forcing intentional placement of anything important
+
+For things made deliberately permanent, he requires they be: stored somewhere reliable (backed up), easy to find, explained, change-controlled (version control), portable across machines, and ideally usable by other people.
 
 ### Separation of Concerns in Tooling
 

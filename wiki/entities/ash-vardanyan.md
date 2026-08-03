@@ -2,7 +2,7 @@
 title: "Ash Vardanyan"
 type: entity
 created: 2026-05-27
-updated: 2026-08-02
+updated: 2026-08-03
 tags:
   - person
   - simd-optimization
@@ -21,6 +21,8 @@ sources:
   - https://ashvardanian.com/posts/search-utf8/
   - https://ashvardanian.com/posts/javascript-ai-vector-search/
   - https://ashvardanian.com/posts/apple-m1/
+  - https://ashvardanian.com/posts/simd-set-intersections-sve2-avx512/
+  - raw/articles/ashvardanian.com--posts-simd-set-intersections-sve2-avx512--529f4680.md
 ---
 
 # Ash Vardanyan
@@ -63,6 +65,15 @@ Rebranded from SimSIMD, NumKong is one of the largest collections of SIMD-optimi
 | Int8 | 0.4 gso/s, overflow | 50 gso/s, overflow | 1,279 gso/s, 0% err |
 
 Notably, NumKong prioritizes numerical precision over raw throughput — NumKong's Int8 achieves 0% error vs overflow in OpenBLAS/PyTorch, and Float64 achieves lower error (1e-16) despite lower throughput.
+
+### SimSIMD v5.3 — SVE2 Set Intersections (May 2026)
+
+"5x Faster Set Intersections: SVE2, AVX-512, & NEON" documents SimSIMD v5.3's set-intersection kernels for sorted arrays of unique `u16`/`u32` values — a core operation in databases and search engines (document/token ID intersections, sparse-vector similarity). SimSIMD was one of the first libraries to support Arm SVE and now leads on **SVE2**, using the `MATCH` instruction (lane-granularity for 16-bit lanes, applied repeatedly across the vector via `svext_u16`) and `HISTCNT`, benchmarked against Intel's `VP2INTERSECT` (AVX-512) and the binary-search-based Galloping baseline.
+
+- **Headline result**: up to 5× faster set intersections vs serial baselines; the `u16` SVE2 variant is always at least as fast as NEON, while `u32` is mixed — faster on dense overlaps, up to ~50% slower on skewed 128×8192 cases
+- **Benchmarks (u16 SVE2)**: small 128×128 arrays ≈ 5.6M intersections/s (~3.4× over serial 1.63M/s); large 1024×1024 ≈ 706K/s (~3.2× over serial 218K/s)
+- **Hardware runway**: SVE2 already live on AWS Graviton 4 (Neoverse V2); upcoming on NVIDIA Grace Hopper, Microsoft Cobalt, and Google Axios — SVE's runtime-defined vector length means performance scales as registers widen
+- **Use case**: set intersections added as a similarity metric for sparse vector representations (relevant to hybrid sparse-dense retrieval in USearch-style engines)
 
 ### StringZilla (2024–2026)
 SIMD-optimized string processing library. v4 added CUDA GPU acceleration, delivering 500+ GigaCUPS of edit-distance calculations. Originally started as conference talk material in the late 2010s showcasing AVX-512 vectorization of non-data-parallel workloads.
