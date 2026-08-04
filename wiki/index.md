@@ -2459,7 +2459,7 @@
 - [[concepts/queueing-theory]] — Queueing Theory
 - [[concepts/qwen]] — Qwen Model Family
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B
-- [[concepts/qwen-3-8]] — Alibaba ~2.4T parameter open-weight MoE model, announced July 2026; reportedly trails Fable 5 by narrow margin
+- [[concepts/qwen-3-8]] — Alibaba ~2.4T open-weight MoE; Qwen3.8-Max release (Aug 2026) w/ $2/$6 pricing, oh-my-cli autonomous agent, benchmark data
 - [[concepts/qwen-agentworld]] — Qwen-AgentWorld — Language world models for general agents; 397B MoE model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access (June 24)
 - [[concepts/qwen3-6-27b]] — Qwen3.6-27B
 - [[concepts/rabbithole]] — Rabbithole — Infinite canvas for learning with MCP server for coding agents; by Shlok Khemani

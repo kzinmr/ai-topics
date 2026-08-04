@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-08-03
+updated: 2026-08-04
 type: entity
 aliases:
   - natolambert
@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-06-16_interconnects_post-training-recipe-review.md
   - raw/newsletters/2026-07-12-6-months-to-live-for-open-models.md
   - raw/newsletters/2026-08-02-latest-open-artifacts-23-laguna-s2-1-inkling-kimi-k3-show-the-utility-of-open-mo.md
+  - raw/newsletters/2026-08-03-introducing-our-artifacts-hub-and-adoption-dashboard.md
 ---
 
 # Nathan Lambert (@natolambert)
@@ -219,6 +220,15 @@ Source: [6 months to live for open models](https://www.interconnects.ai/p/6-mont
 - **Thesis**: "the demand for tokens is incredibly high" — the market for open weights is growing fast enough that new entrants keep arriving rather than being absorbed.
 
 Source: [Latest open artifacts (#23)](https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21) (Aug 2, 2026, Robotic/Interconnects)
+
+### Artifacts Hub & Adoption Dashboard (Aug 2026)
+
+Interconnects expanded its open-models coverage into standalone tracking projects:
+
+- **Artifacts Hub**: a curated view of models trending on Hugging Face (**792 models**), highlighting inference tokens via OpenRouter and model intelligence via Artificial Analysis, alongside tailored adoption metrics
+- **Adoption Dashboard**: a living dashboard of download and derivative-model numbers by geography and organization — visualizing the US-China adoption gap and growing players in the open ecosystem
+
+Source: [Introducing our Artifacts Hub and Adoption Dashboard](https://www.interconnects.ai/p/introducing-our-artifacts-hub-and) (Aug 2026).
 
 ## Core Ideas
 

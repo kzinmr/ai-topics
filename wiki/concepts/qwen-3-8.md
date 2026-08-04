@@ -1,7 +1,7 @@
 ---
 title: "Qwen 3.8"
 created: 2026-07-19
-updated: 2026-08-03
+updated: 2026-08-04
 type: concept
 tags:
   - qwen
@@ -14,6 +14,8 @@ tags:
 sources:
   - raw/articles/2026-07-19_qwen-3-8-launch.md
   - raw/articles/2026-08-03_qwen-qwen3.8-max-release.md
+  - raw/newsletters/2026-08-04-ainews-qwen-3-8-max-2-4t-and-27b-new-open-weights-models-for-coding-and-cowork.md
+  - raw/newsletters/2026-08-03-the-agent-that-never-stopped-coding.md
 ---
 
 # Qwen 3.8
@@ -142,6 +144,41 @@ The release generated substantial interest on Hacker News (623 points), with key
 - **Distillation questions**: Speculation about whether Qwen3.8-Max distilled from [[concepts/claude/fable-5|Claude Fable 5]] or GPT-5.6 Sol
 - **Regulatory timing**: Discussion of whether the US might ban open-weight models before the release window closes
 - **Local deployment**: Interest in Qwen3.8-27B for local inference and potential [[concepts/claude-code/claude-code-auto-mode|Claude Code]] alternatives (dubbed "QwenCode")
+
+### Performance & Economics (August 2026)
+
+Additional benchmark, pricing, and deployment data from the August 3 release coverage (AINews + Superintel):
+
+| Benchmark | Qwen3.8-Max | Comparison |
+|-----------|-------------|------------|
+| Arena frontend-code | 4th place (1,668) | 1 point behind Opus 5 High |
+| TerminalBench 2.1 | 86.6 | vs GPT-5.6 Sol 88.8 |
+| PaperBench | 93.0 | vs GPT-5.6 Sol 90.5 |
+| SWE-bench Pro | 67.7 | vs Claude Fable 5 80.0 |
+| WWW2025 multimodal dialog recognition | top 13% of 526 | — |
+
+- **API pricing**: **$2 input / $6 output per million tokens** — roughly a fifth of GPT-5.6 Sol and an eighth of Claude Fable 5 output pricing, positioning Qwen3.8-Max as an order-of-magnitude cheaper frontier-tier API.
+- **Deployment footprint**: the 2.4T checkpoint needs roughly **9 H200 cards even at 4-bit quantization** — "open weights" remains distinct from "cheap to run".
+
+### oh-my-cli: Long-Running Autonomous Agent (August 2026)
+
+The `oh-my-cli` agent built on Qwen3.8-Max continued operating well past the initial 10+ day run:
+
+- **448+ commits** since July 13, 2026, with no person writing the commits — a public code repository operated by the agent itself (superseding the earlier "10+ day run" figure)
+- **125-hour autonomous research loop**: the agent rebuilt its own paper pipeline (literature search → experiment → write-up) without human intervention
+- **Autonomous chip design flow**: executed a complete silicon design flow (GCD/RSA cryptographic accelerator) from RTL editing to simulation, synthesis, and physical layout — reducing gate count from 8,298 to 678 gates (81% die area reduction) while meeting physical timing closure at 500 MHz
+
+### "Self-Evolving" ≠ Recursive Self-Improvement
+
+Superintel's analysis draws an important distinction: Qwen3.8-Max's "self-evolving" label describes **software and workflow improvement**, not recursive self-improvement of the model itself:
+
+- The model's **weights do not change** during autonomous runs
+- What improves is the surrounding software and agent workflows (harness, tooling, repository structure)
+- `AUTONOMY.md` governance constraints block the agent from changing its own governance/instructions — a deliberate guardrail distinguishing it from open-ended [[concepts/recursive-self-improvement|recursive self-improvement]]
+
+### Post-Qwen-Exodus Organizational Context
+
+The release also surfaced organizational context around the **Qwen Exodus** — the departure of key Qwen team members who went on to found [modelfit.io](https://modelfit.io) — framing Qwen3.8-Max as the team's final major release under Alibaba.
 
 ## Related Pages
 

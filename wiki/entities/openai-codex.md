@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-07-29
+updated: 2026-08-04
 tags:
   - product
   - coding-agent
@@ -43,6 +43,7 @@ sources:
   - raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md
   - raw/articles/2026-07-24_pvncher_practical-multi-agent-orchestration-in-codex.md
   - raw/newsletters/2026-07-28-codex-from-0-to-10m-users-building-chatgpt-work-akshay-nathan-openai.md
+  - raw/newsletters/2026-08-03-how-i-ai-chatgpt-codex-voice-browser-sites-an-expert-s-ai-workflow-nick-baumann-.md
 ---
 
 # OpenAI Codex
@@ -516,6 +517,17 @@ The unified architecture provides these capabilities to both Codex and ChatGPT W
 | **Memory** | Cross-session context persistence (Codex Memories, chronicle) |
 
 **Related**: [[concepts/harness-engineering/agent-harness]] — Agent harness design, [[concepts/codex/codex-superapp]] — Codex superapp trajectory
+
+## Codex Voice, Thread-Forking & Sites Workflows (August 2026)
+
+Nick Baumann (OpenAI) demonstrated an expert workflow on Lenny's "How I AI" podcast covering Codex's newer interaction patterns:
+
+- **Codex Voice**: doesn't just answer questions — an "orb" reads the screen and operates the computer while the user keeps talking, enabling voice-driven PC control
+- **Thread-forking**: one of Codex's most powerful and least understood features — when a task gets complicated, Codex can open a new thread, branch from an existing one, or pull context from previous conversations
+- **ChatGPT Work Heartbeats**: always-on agent notifications that periodically wake the same thread (check Slack/Gmail, prioritize, draft without sending)
+- **ChatGPT Sites as deployment platform**: closer to a real deployment platform than a lightweight demo — includes a SQL database, file storage, environment variables, and email-based access controls
+
+Source: Lenny's Newsletter "How I AI" with Nick Baumann (OpenAI), Aug 2026.
 
 ## Known Issues
 

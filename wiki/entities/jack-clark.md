@@ -1,13 +1,14 @@
 ---
 title: "Jack Clark"
 created: 2026-05-05
-updated: 2026-06-02
+updated: 2026-08-04
 type: entity
 tags: [person, company, anthropic, safety, prediction, governance]
 sources:
   - raw/articles/2026-05-04_import-ai-455-automating-ai-research.md
   - raw/newsletters/2026-05-26-import-ai-458-reckoning-with-the-future-and-a-singularity-story.md
   - raw/newsletters/2026-06-01-import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-.md
+  - raw/newsletters/2026-08-03-import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-a.md
 ---
 
 # Jack Clark
@@ -84,6 +85,16 @@ In Import AI 458, Clark wrote a deep personal essay on how exponential AI progre
 - **Individual choice**: Clark argues that continued exponential progress removes the option of neutrality — everyone must decide their relationship with accelerating AI
 
 See [[raw/newsletters/2026-05-26-import-ai-458-reckoning-with-the-future-and-a-singularity-story.md]] for full text.
+
+### Import AI 467: Self-Sustaining AI Viruses (August 2026)
+
+**"Import AI 467: Self-sustaining AI viruses; pacing AI progress; confusion about AI and creativity" (Aug 3, 2026)**:
+
+- **Self-sustaining, self-replicating AI viruses are here**: AI researchers built a prototype computer virus that uses AI models to compromise systems — open-weight LLMs + a well-designed harness = a persistent, self-sufficient virus (arXiv:2606.03811). A frontier-safety escalation in the [[concepts/ai-agent-safety-incidents|agent safety incidents]] lineage
+- **Pacing the frontier**: coverage of the international pacing request (pacingthefrontier.com) — a continuation of the theme documented in [[events/2026-07-29-rsi-pace-letter]]; Clark frames responding to RSI as "a giant collective action problem"
+- **AI and creativity confusion**: the ongoing public debate over whether AI-generated work constitutes creativity
+
+See [[raw/newsletters/2026-08-03-import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-a.md]] for full text.
 
 ## Writing Style
 Clark writes with a distinctive combination of technical precision and literary flair. His newsletter intros often set context through historical analogies or science fiction references before diving into data. He is notably willing to make concrete, falsifiable predictions with explicit probability estimates.

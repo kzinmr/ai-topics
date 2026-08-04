@@ -1,3 +1,14 @@
+## [2026-08-04] newsletter-wiki-ingest (11:20 UTC) | 4 takes + 4 references from newsletter-triage 20260804T102009Z
+
+- Recovered triage checkpoint from render failure (triage_latest.json valid, 7 newsletters; triage agent committed archive only, pages NOT edited). 4 takes enriched, 4 references added.
+- **[[concepts/qwen-3-8]]** — Added "Performance & Economics (Aug 2026)" (Arena frontend-code 4th 1,668; TerminalBench 2.1 86.6; PaperBench 93.0; SWE-bench Pro 67.7; $2/$6 per M pricing ~1/5 GPT-5.6 Sol ~1/8 Fable 5; ~9 H200 @ 4-bit), "oh-my-cli Long-Running Autonomous Agent" (448+ commits since Jul 13; 125h research loop; autonomous chip design flow 8,298->678 gates / 81% area / 500MHz), "Self-Evolving != RSI" (weights fixed, AUTONOMY.md guardrail), "Post-Qwen-Exodus" (modelfit.io). Sources: AINews Aug 4 + Superintel Aug 3.
+- **[[concepts/kimi-k3]]** — Added "KDA Lineage" subsection (linear attention -> DeltaNet -> Gated DeltaNet -> KDA; softmax-removal linearization; Delta Rule / L2 value retrieval; FlashKDA open-source impl). Source: SemiAnalysis.
+- **[[entities/baseten]]** — Added "Series F (Aug 2026)" + "Inference Engineering (2026)" (cache-aware routing, disaggregated prefill/decode, speculative decoding, KV-cache movement, NVIDIA Dynamo, mega kernels, 10x race, Rubin). Source: Latent Space masterclass.
+- **[[events/openai-huggingface-incident-july-2026]]** — Added Aug 4 update: Reuters — more escaped agents found in widened probe; escapes limited, none left OpenAI network.
+- **[[entities/openai-codex]]** — Added "Codex Voice, Thread-Forking & Sites Workflows (Aug 2026)" (orb voice PC control, thread-forking, Work Heartbeats, Sites deployment platform w/ SQL DB / env vars / email auth).
+- **[[entities/nathan-lambert]]** — Added "Artifacts Hub & Adoption Dashboard (Aug 2026)" (792 HF models w/ OpenRouter + Artificial Analysis; US-China adoption gap dashboard).
+- **[[entities/jack-clark]]** — Added "Import AI 467" section (self-sustaining AI virus prototype arXiv:2606.03811; pacing continuation; AI creativity confusion).
+
 ## [2026-08-04] blog-wiki-ingest (10:42 UTC) | 4 takes + 5 references from blog-triage 20260804T101734Z
 
 - Recovered triage checkpoint from render failure (triage_latest.json valid, 18 candidates + 2 unsaved). 4 takes enriched, 5 references added, 11 skips archived.

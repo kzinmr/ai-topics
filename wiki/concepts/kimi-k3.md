@@ -1,8 +1,8 @@
 ---
 title: "Moonshot Kimi K3"
-type: concept
 created: 2026-07-17
-updated: 2026-08-02
+updated: 2026-08-04
+type: concept
 tags:
   - model
   - china
@@ -22,6 +22,7 @@ sources:
   - "raw/articles/2026-07-28_fireworks-ai_K3-LoRA-Training.md"
   - "raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md"
   - "raw/articles/together.ai--blog-kimi-k3-guide--70e2c263.md"
+  - "raw/newsletters/2026-08-03-kimi-k3-the-manos-the-mythos-the-legendos.md"
 ---
 
 # Moonshot Kimi K3
@@ -60,6 +61,19 @@ The model is more than **2× the parameter count** of Kimi K2.6's 1T architectur
 KDA is Moonshot's novel attention mechanism purpose-built for long-context efficiency. Moonshot claims it enables **up to 6.3x faster decoding** in million-token contexts. The design reportedly started in **January 2025** and took approximately **1.5 years** to reach frontier-class scale.
 
 **vLLM Integration**: Moonshot contributed a KDA prefix caching implementation directly to vLLM, with support available from day 0. This was notable because KDA breaks assumptions behind conventional prefix caching, requiring upstream runtime changes to the vLLM codebase.
+
+#### KDA Lineage: From Linear Attention to Gated DeltaNet (Aug 2026)
+
+SemiAnalysis traced the mathematical origins of KDA, deriving it from a lineage of linear attention variants:
+
+1. **Linear attention**: removing the softmax operation allows reordering of operations, reducing attention's computational complexity from quadratic to linear in sequence length
+2. **DeltaNet**: improves on linear attention by changing the loss function to minimize the **L2 norm of the value retrieval** — the Delta Rule becomes the basis of DeltaNet's attention equation (an online-learning interpretation of key-value storage)
+3. **Gated DeltaNet (GDN)**: adds a gating mechanism on top of DeltaNet's delta rule, improving memory retention and selective recall
+4. **KDA**: Moonshot's productionized evolution of this lineage, scaled to frontier-class 2.8T MoE alongside AttnRes and LatentMoE
+
+**FlashKDA**: the algorithm's high-performance implementation is available as open source at [MoonshotAI/FlashKDA](https://github.com/MoonshotAI/FlashKDA), providing the fused kernel-level implementation details behind the 6.3x decoding speedup claims.
+
+Source: SemiAnalysis, "Kimi K3, The Manos, The Mythos, The Legendos" (Aug 2026).
 
 ### Attention Residuals (AttnRes)
 
