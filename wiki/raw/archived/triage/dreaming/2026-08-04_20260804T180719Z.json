@@ -1,0 +1,152 @@
+{
+  "archived_at": "2026-08-04T18:15:38.123357+00:00",
+  "triage_run_id": "20260804T180719Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E saturation — dreaming checkpoint 0 articles、205 raw articles on disk。prior triage (Aug 3) の 2 references は既カバー確認済み（Together AI autoscaling + Browserbase harness）。Filesystem scan で 1 enrichment 候補発見（Warp software factory part 4: computer use verification）。19 decisions: 1 reference, 18 skip。全パイプライン（blog/newsletter/active-crawl/raw-backlog/X-bookmarks）が本日稼働済み。",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-warp-computer-use-verification",
+      "source": "dreaming",
+      "source_name": "Warp Blog",
+      "title": "How to build a cloud software factory - computer use verification",
+      "url": "https://www.warp.dev/blog/how-to-build-a-cloud-software-factory-computer-use-verification",
+      "raw_path": "raw/articles/2026-08-04_warp_how-to-build-a-cloud-software-factory-computer-use-verification.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ entities/warp-terminal.md は software factory シリーズ part 3（self-improving code review）までカバー。part 4 は computer use を verification capability として統合（triage/implementation/review 3フェーズ）、verify-behavior skill（reproduce/verify 2モード）、cloud subagents での fan-out 検証、spec-driven development との統合デバッグループ。本文に具体的なデモ（image editor リポジトリ）と video proof 概念あり。未カバーの enrichment 候補。",
+      "candidate_wiki_path": "entities/warp-terminal.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-stateless-mcp",
+      "source": "dreaming",
+      "source_name": "Simon Willison",
+      "title": "Stateless MCP has recaptured my interest",
+      "url": "https://simonwillison.net/2026/Aug/3/stateless-mcp/",
+      "raw_path": "raw/articles/simonwillison.net--2026-aug-3-stateless-mcp--b7e83578.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: entities/simon-willison.md に 'MCP Renaissance: Stateless MCP' 記述あり。blog-wiki-ingest で処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-boris-cherny-claude-code",
+      "source": "dreaming",
+      "source_name": "Y Combinator",
+      "title": "Boris Cherny: Building Claude Code",
+      "url": "https://www.ycombinator.com/root-access/boris-cherny-building-claude-code",
+      "raw_path": "raw/articles/ycrootaccess.com--p-boris-cherny-building-claude-code--f3769a9e.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: blog-wiki-ingest が entities/boris-cherny.md 系列ページ（core-ideas, claude-code-development, key-work）を処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-sierra-plaid",
+      "source": "dreaming",
+      "source_name": "Sierra Blog",
+      "title": "Plaid and Sierra partner to move AI agents from conversations to business outcomes",
+      "url": "https://sierra.ai/blog/plaid-partnership",
+      "raw_path": "raw/articles/2026-08-03_sierra_plaid-partnership-ai-agents.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: entities/sierra.md に 'Plaid Partnership — Financial Integration' セクション存在。raw-backlog-ingest で処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-thinking-machines-open-weights",
+      "source": "dreaming",
+      "source_name": "Thinking Machines Lab",
+      "title": "A Safe Path to Open Weights",
+      "url": "https://thinkingmachines.ai/blog/safe-path-to-open-weights",
+      "raw_path": "raw/articles/2026-07-31_thinking-machines-lab_safe-path-to-open-weights.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: entities/thinking-machines-lab.md に 'Open Weights Safe Path' セクション存在。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-qwen38-max",
+      "source": "dreaming",
+      "source_name": "Qwen Blog",
+      "title": "Qwen3.8-Max Release Announcement",
+      "url": "https://qwenlm.github.io/blog/qwen3.8-max/",
+      "raw_path": "raw/articles/2026-08-03_qwen-qwen3.8-max-release.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: concepts/qwen-3-8.md が active-crawl で作成済み。newsletter-wiki-ingest で performance & economics セクション追加済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-mu-tools",
+      "source": "dreaming",
+      "source_name": "Micro.mu",
+      "title": "Mu - Tools for Agents",
+      "url": "https://micro.mu/tools-for-agents",
+      "raw_path": "raw/articles/2026-08-03_micro-mu-tools-for-agents.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: concepts/mu-tools-for-agents.md が active-crawl で作成済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-ai-productivity-gap",
+      "source": "dreaming",
+      "source_name": "Bjorn Roche",
+      "title": "The AI Productivity Gap",
+      "url": "https://bjornroche.com/ai-productivity-gap",
+      "raw_path": "raw/articles/2026-07-12_bjorn-roche-ai-productivity-gap.md",
+      "recommended_action": "skip",
+      "reason_ja": "既カバー: concepts/ai-productivity-gap.md が存在（Bjorn Roche の July 2026 記事ベース）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-factory-org-model",
+      "source": "dreaming",
+      "source_name": "Factory Blog",
+      "title": "Designing an AI-Native Enterprise Organizational Model",
+      "url": "https://factory.ai/news/enterprise-organization-model",
+      "raw_path": "raw/articles/2026-08-04_factory_enterprise-organization-model.md",
+      "recommended_action": "skip",
+      "reason_ja": "本文 783 bytes / 26 行のみ — sitemap scrape で title + description のみ取得、記事本文なし。評価不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-hex-evals",
+      "source": "dreaming",
+      "source_name": "Hex Technologies Blog",
+      "title": "Evals",
+      "url": "https://hex.tech/blog/evals",
+      "raw_path": "raw/articles/2026-08-04_hex-technologies_evals.md",
+      "recommended_action": "skip",
+      "reason_ja": "Hex Technologies は data/analytics プラットフォーム。AI/LLM 直接関連の技術記事ではなく、自社 eval 製品のマーケティングブログ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-hr",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "Conversational AI for HR: 7 use cases with real examples",
+      "url": "https://elevenlabs.io/blog/conversational-ai-for-hr",
+      "raw_path": "raw/articles/2026-08-04_elevenlabs_conversational-ai-for-hr.md",
+      "recommended_action": "skip",
+      "reason_ja": "ElevenLabs の HR 垂直ユースケース記事 — マーケティング/事例紹介。entities/elevenlabs.md は既に豊富な技術カバレッジあり。垂直ユースケース追加の wiki 価値低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-glean-australia",
+      "source": "dreaming",
+      "source_name": "Glean Blog",
+      "title": "Work AI Index Australia",
+      "url": "https://www.glean.com/blog/work-ai-index-australia",
+      "raw_path": "raw/articles/2026-08-04_glean_work-ai-index-australia.md",
+      "recommended_action": "skip",
+      "reason_ja": "entities/glean.md は本日既に 2 回 enrichment（10:00 enterprise KG cases + 18:00 Pelican Test series）。UK Work AI Index セクション存在（同一 global study 6,000 人）。Australia データは incremental 追加で marginally low。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

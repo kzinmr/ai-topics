@@ -2,6 +2,17 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-08-04] dreaming | Pattern E saturation — 1 reference, 0 takes
+
+- **Checkpoint**: 0 articles collected (RSS/newsletter), 205 raw articles on disk.
+- **Prior triage (Aug 3)**: 15 decisions (0 takes, 2 refs, 13 skips) — both refs already covered: Together AI autoscaling (entities/together-ai.md lines 'Inference-Native Autoscaling') and Browserbase harness (entities/browserbase.md three-layer architecture).
+- **Today's pipeline saturation**: blog-wiki-ingest (4 takes + 5 refs), newsletter-wiki-ingest (4 takes + 4 refs), active-crawl (3 new + 1 enrich), raw-backlog-ingest (3 rounds), X bookmarks ingest (Kimi K3), manual ingest (Gary Marcus Astra).
+- **Filesystem scan**: 1 genuine enrichment candidate found among Aug 4 sitemap-scraped articles.
+- **Reference**: entities/warp-terminal.md — Warp software factory part 4: computer use verification (verify-behavior skill, triage/implementation/review integration, cloud subagent fan-out, spec-driven debug loop). NOT yet covered in entity page.
+- **Skips (19)**: Factory AI org model (783 bytes, no body), Hex evals (product marketing), ElevenLabs HR (vertical use case), Glean Australia (incremental to UK data), + 15 prior-triage skips already confirmed.
+- **Archive**: archive_triage.py dreaming — 20 candidates, 12 new archived, 8 dedup_skipped, total 2,272 URLs.
+
 ## [2026-08-04] raw-backlog-ingest (18:00) | 3 entity enrichments + 1 skip
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 18:00, run 20260804T180033Z). Decisions: 0 takes, 4 references (3 entity enrichments), 1 skip.
