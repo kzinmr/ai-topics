@@ -323,7 +323,7 @@
 - [[entities/giles-thomas]] — Giles Thomas; enriched with Part 34b (JAX GPT-2 Small) and Poppy training box hardware (July 9)
 - [[entities/gilesthomas]] — Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technica...
 - [[entities/gkisokay]] — gkisokay
-- [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons (Aug 2026)
+- [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons + enterprise knowledge graph cases (Aug 2026)
 - [[entities/glimpse]] — Glimpse
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
 - [[entities/glm-5v-turbo]] — GLM-5V-Turbo

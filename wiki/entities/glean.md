@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-08-03
+updated: 2026-08-04
 tags:
   - company
   - search
@@ -27,6 +27,7 @@ sources:
   - raw/articles/2026-08-01_glean_glean-information-retrieval.md
   - raw/articles/2026-08-01_glean_work-ai-index-uk.md
   - raw/articles/2026-05-10_glean_knowledge-graph-agentic-engine.md
+  - raw/articles/2026-07-28_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md
 ---
 
 # Glean
@@ -145,6 +146,28 @@ Glean's technical deep-dive (authors Rob Stets, Pradeep Vaghela, Julie Mills) ex
 **Context System thesis:** data + people + **process** (how work actually happens) form a third context layer. Closing claim: "the cognition of agent systems is not just the LLM — it is also the context system."
 
 Source: [[raw/articles/2026-05-10_glean_knowledge-graph-agentic-engine]]
+
+### Enterprise Knowledge Graph Cases (July 2026)
+
+Glean's vendor-education piece frames enterprise knowledge graphs as company data modeled as a **connected network** (customers, products, contracts, employees, systems and the relationships between them) "so queries traverse meaning rather than match columns." Core claim: most enterprise data is "broken because it is disconnected" — McKinsey: employees spend 20% of the working day searching for information; 2024 Pyron report: 47% of professionals spend 1–5 hours/day on the same search problem. Market: **$2.89B in 2025, 21–33% CAGR**; Gartner expects cloud platforms to integrate KG services as standard infrastructure.
+
+**Seven ROI use cases:**
+
+| Use case | Core idea |
+|----------|-----------|
+| Content as structure | NLP entity extraction + automated metadata enrichment turn content management into a self-enriching index; semantic tagging links documents to product/segment/regulation/owner nodes |
+| Institutional knowledge | Unified expertise profiles (employee nodes → projects, documents, systems, decisions); offboarding returns a structured transfer brief; 60% say crucial info is hard to get, 90% say retirees cause serious knowledge loss |
+| AI grounding (GraphRAG) | "The most urgent KG use case in 2025 isn't search — it's making generative AI safe enough to deploy"; 77% of businesses concerned about hallucinations, 47% of enterprise AI users made a major decision on hallucinated content in 2024 |
+| Drug discovery / life sciences | Compounds→targets→pathways→diseases→cohorts as one graph; drug repurposing via evidence traversal; regulatory submission lineage |
+| Fraud & risk | Property-graph modeling + Jaccard similarity / community detection surfaces fraud rings relational DBs miss; AML pathfinding across dozens of hops |
+| Workflow automation | Inferred relationships fire events (churn-risk sales alerts, cross-team approval orchestration, inventory/resource allocation as traversal) |
+| Security/compliance/governance | Graph-based access controls (permissions as edges), provenance/audit trails on every node, regulatory taxonomies as graph nodes |
+
+**GraphRAG vs vector RAG:** GraphRAG wins on **multi-hop reasoning** (Microsoft's GraphRAG uses community detection for hierarchical summaries enabling global reasoning); production teams converge on **hybrid vector + graph retrieval** with the graph acting as a verification layer. Cited data: LinkedIn cut support ticket resolution 40h→15h (63%) via GraphRAG routing; FalkorDB's GraphRAG SDK claims 90% hallucination reduction vs traditional RAG with sub-50ms latency; ACL Anthology research confirms KG-augmented LLMs beat ungrounded models on factual accuracy in healthcare/finance/legal. ROI example: a global IT services firm's graph-backed knowledge assistant across 300 support agents saved 15,000+ agent hours, shortened implementation timelines 11%, and lifted customer retention 3.8%.
+
+**Adoption guidance:** start with one domain + a pragmatic ontology ("model only what you'll actually query"), measure baseline then at 30/60/90 days; KG sits as a semantic layer above existing systems — no migration required. FAQ distinguishes a **knowledge graph** (stable domain facts) from a **context graph** (user intent, role, workflow state, recent activity — "especially useful for personalization and agentic AI"). Related skeptical view: [[concepts/graph-db-overengineering-rag|"You Don't Need a Graph DB for RAG (Probably)"]].
+
+Source: raw/articles/2026-07-28_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md
 
 ### Research: AI Productivity Paradox for Software Engineers
 

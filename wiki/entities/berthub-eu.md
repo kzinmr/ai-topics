@@ -2,7 +2,7 @@
 title: Bert Hubert
 type: entity
 created: 2026-04-10
-updated: 2026-08-03
+updated: 2026-08-04
 tags:
   - person
   - blogger
@@ -12,6 +12,7 @@ tags:
   - policy
 sources:
   - raw/articles/berthub.eu--articles-posts-ai-voor-wie-erover-gaat--4bd1470e.md
+  - raw/articles/berthub.eu--articles-posts-ai-for-decision-makers--50c2a644.md
   - raw/articles/berthub.eu--articles-posts-digitale-autonomie-2-0-surf-privacy-security--5620d737.md
 ---
 
@@ -96,6 +97,7 @@ Bert Hubert serves as a part-time technical AI policy advisor to Dutch governmen
 - **Circular financing bubble**: AI investment is "spectacularly concerning" — Oracle's credit rating is one notch above junk, Elon Musk's AI company debt trades as junk bonds, and the Financial Times notes "AI scepticism now feels like the consensus."
 - **Junior-senior pipeline collapse**: If AI replaces all junior work, where will future seniors come from? Experienced staff whose jobs become "checking the computer" may simply leave.
 - **Cognitive offloading**: Employees already dependent on AI and unable to function without it — writing is thinking, and AI-generated documents eliminate the thinking process.
+- **Unmeasured pilots**: Dutch municipal chatbots already in production answered 64% of questions incorrectly and only 10% correctly — an avoidable failure of deploying without defined success metrics ("the summaries look good" is not evaluation).
 
 **Recommendation:** Most organizations face no real urgency — "AI will still be there next year." Wait for legal clarity (AI Act enforcement, lawsuit outcomes), learn from early adopters' mistakes, and define concrete metrics before any deployment. The AI bubble may burst, making sudden dependency ruinously expensive.
 

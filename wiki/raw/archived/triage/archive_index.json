@@ -118,6 +118,7 @@
     "https://borretti.me/article/on-vulgar-materialism",
     "https://borretti.me/article/review-job-less-utopia",
     "https://boyter.org/posts/abusing-aws-to-make-a-search-engine/",
+    "https://boyter.org/posts/sloc-cloc-code-performance/",
     "https://brutecat.com/articles/google-cloud-rce",
     "https://build.nvidia.com/openshell",
     "https://builders.ramp.com/post/stack-benchmarking",
@@ -163,6 +164,7 @@
     "https://cursor.com/blog/topic/press",
     "https://danluu.com/bad-decisions/",
     "https://danluu.com/cache-incidents/",
+    "https://danluu.com/deconstruct-files/",
     "https://danluu.com/google-sre-book/",
     "https://danluu.com/nothing-works/",
     "https://daringfireball.net/2018/12/electron_and_the_decline_of_native_apps",
@@ -610,6 +612,7 @@
     "https://joanwestenberg.com/ai-indecision-is-a-recursive-trap-dont-get-stuck",
     "https://johndcook.com/blog/2026/06/11/prolog-claude/",
     "https://johndcook.com/blog/2026/06/15/quaternions-claude-lean/",
+    "https://justine.lol/matmul/",
     "https://jyn.dev/explaining-myself-through-stories/",
     "https://jyn.dev/i-ve-started-drawing-again/",
     "https://jyn.dev/talks/coverage/",
@@ -1888,6 +1891,7 @@
     "https://www.glean.com/blog/",
     "https://www.glean.com/blog/agent-orchestration-platforms-compared",
     "https://www.glean.com/blog/create-ai-strategy-2024",
+    "https://www.glean.com/blog/enterprise-knowledge-graph-cases-7-applications-that-deliver-roi",
     "https://www.glean.com/blog/generative-ai-for-software-engineers-is-more-than-code-completion",
     "https://www.glean.com/blog/generative-ai-stack-for-software-engineers",
     "https://www.glean.com/blog/glean-databricks-isv-ai-visionary-partner-of-the-year-2026",
@@ -2233,5 +2237,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-04T00:27:05.202195+00:00"
+  "updated": "2026-08-04T10:14:51.268789+00:00"
 }

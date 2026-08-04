@@ -2,7 +2,7 @@
 title: "Justine Tunney"
 type: entity
 created: 2026-05-04
-updated: 2026-06-01
+updated: 2026-08-04
 tags:
   - entity
   - person
@@ -16,6 +16,7 @@ sources:
   - https://justine.lol/
   - https://github.com/jart
   - https://justine.lol/matmul/
+  - raw/articles/justine.lol--matmul--95d4772b.md
   - raw/articles/justine.lol--rseq--3947646a.md
 ---
 
@@ -51,6 +52,8 @@ Tunney's work on `GGML_OP_MUL_MAT` (~95% of llama.cpp's processing time) is foun
 - **Efficiency core management:** Specifically avoids running on efficiency cores to prevent lockstep bottleneck
 
 > "I believe by improving the core technology, we can give users the best possible llama.cpp experience... quantization could become the bigger bottleneck [than memory bandwidth]. That would mean less need to trade away knowledge for speed."
+
+**Benchmark scope (Mar 2024):** measured across Skylake (i9-9900), Raspberry Pi 5 (ARMv8.2 dotprod/fp16 ISAs) and Alderlake (i9-14900K). 2x speedup vs llama.cpp on Skylake for F16/Q8_0; RPI5 gained a further ~2x from an AVX512-derived kernel (both CPUs share 32 vector registers). On Alderlake, x86 kernels use a float32 compute type internally (no rounding-error tradeoff, unlike ARMv8.2 fp16), and llamafile deliberately avoids efficiency cores. Practical application: a spam-filter pipeline (`llamafile -m TinyLlama-1.1B-Chat --grammar 'root ::= "yes" | "no"'`) classifies email in 3s on RPI5 and 420ms on Alderlake — an example where **prompt eval time, not token generation, is the binding constraint**.
 
 ### Restartable Sequences (rseq) — May 2026
 

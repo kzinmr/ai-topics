@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-04] raw-backlog-ingest (10:00) | 3 entity enrichments + 2 non-AI skips
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 10:00, run 20260804T100026Z). Decisions: 0 takes, 3 references, 2 skips.
+- **[[entities/glean]]** — Added "Enterprise Knowledge Graph Cases (July 2026)" section: 7 ROI use cases (content-as-structure, institutional knowledge, GraphRAG grounding, drug discovery, fraud detection, workflow automation, security/compliance), GraphRAG vs vector RAG data (LinkedIn 40h→15h ticket resolution, FalkorDB 90% hallucination reduction sub-50ms, Microsoft community detection), KG market $2.89B/21-33% CAGR, KPIs, adoption roadmap, knowledge-graph vs context-graph FAQ. Source: raw/articles/2026-07-28_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md. Cross-link to [[concepts/graph-db-overengineering-rag]].
+- **[[entities/justine-tunney]]** — Added raw article path (justine.lol--matmul--95d4772b.md) to sources + "Benchmark scope (Mar 2024)" detail under CPU Matrix Multiplication: Skylake/RPI5/Alderlake measurements, ARMv8.2 fp16 vs x86 float32 compute, llamafile spam-filter use case (prompt eval bound, 3s RPI5 / 420ms Alderlake).
+- **[[entities/berthub-eu]]** — Added English raw article path (berthub.eu--articles-posts-ai-for-decision-makers--50c2a644.md) to sources + "Unmeasured pilots" bullet to AI Policy Analysis: Dutch municipal chatbots 64% incorrect / 10% correct answers.
+- **Skip (2, archived)**: boyter.org scc Go performance optimization (non-AI), danluu.com "Files are fraught with peril" 2019 talk (non-AI file systems).
+- Archive: archive_triage.py raw_backlog --keep-reference — 4 new archived (berthub dedup_skipped), total 2,236 URLs. Tracking: 5 files marked done in processed_raw_articles.json.
+
 ## [2026-08-04] raw-backlog-ingest (00:00) | all 5 articles skip — AI articles already captured
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 00:00, run 20260804T000007Z). All 5 decisions = skip; no wiki edits.

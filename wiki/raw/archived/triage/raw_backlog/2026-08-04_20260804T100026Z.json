@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-04T10:14:51.268267+00:00",
+  "triage_run_id": "20260804T100026Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest 2026-08-04 10:00（run 20260804T100026Z）。5記事中3記事が既存エンティティの参照エンリッチ対象（Glean知識グラフ7ユースケース→entities/glean.md、Justine Tunney matmul→entities/justine-tunney.md、Bert Hubert AI意思決定者エッセイ→entities/berthub-eu.md）、2記事は非AIコンテンツとしてスキップ（boyter scc最適化、danluuファイル信頼性）。新規ページ作成なし。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-glean-kg-cases",
+      "source": "raw_backlog",
+      "source_name": "glean.com",
+      "title": "Enterprise knowledge graph cases: 7 applications that deliver ROI",
+      "url": "https://www.glean.com/blog/enterprise-knowledge-graph-cases-7-applications-that-deliver-roi",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-07-28_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/glean.md をエンリッチ。Glean公式のエンタープライズ知識グラフ解説で、7つのROIユースケース（コンテンツ構造化/組織知/GraphRAG接地/創薬/不正検知/ワークフロー自動化/コンプライアンス）と具体的データ（LinkedIn GraphRAGでチケット解決40h→15h=63%改善、FalkorDB SDKで幻覚90%削減・sub-50ms、KG市場$2.89B・CAGR21-33%、McKinsey 20%検索時間、ITサービス企業の15,000エージェント時間節約）を含む。既存ページはKGメカニクス（2025-06）とAgent Orchestration比較を既に持つが、この記事のGraphRAG統計と7ユースケース枠組みは未収録。",
+      "candidate_wiki_path": "entities/glean.md",
+      "body_excerpt": "# Enterprise knowledge graph cases: 7 applications that deliver ROI\n**Source**: [https://www.glean.com/blog/enterprise-knowledge-graph-cases-7-applications-that-deliver-roi](https://www.glean.com/blog/enterprise-knowledge-graph-cases-7-applications-that-deliver-roi)\nProduct\nPlatform Overview\nSee how"
+    },
+    {
+      "item_id": "raw-backlog-justine-matmul",
+      "source": "raw_backlog",
+      "source_name": "justine.lol",
+      "title": "LLaMA Now Goes Faster on CPUs",
+      "url": "https://justine.lol/matmul/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/justine.lol--matmul--95d4772b.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/justine-tunney.md は既に84個のmatmulカーネルとCPU推論高速化の概要を保持（Overview + CPU Matrix Multiplication節、ソースURLもfrontmatter記載済み）。本バッチではraw記事パスをsourcesに追加し、ベンチマーク対象（Skylake i9-9900 / RPI5 ARMv8.2 / Alderlake i9-14900K）と実用例（llamafile+--grammarによるスパムフィルタ、RPI5で3秒・Alderlakeで420ms）を追記する。新規コンセプトなし。",
+      "candidate_wiki_path": "entities/justine-tunney.md",
+      "body_excerpt": "# LLaMA Now Goes Faster on CPUs\nSource: https://justine.lol/matmul/\nMar 31\nst\n, 2024 @\njustine's web page\nLLaMA Now Goes Faster on CPUs\nI just wrote 84 new matrix multiplication kernels for\nllamafile\nwhich\nenable it to read prompts / images faster. Compared to llama.cpp, prompt\neval time with llamaf"
+    },
+    {
+      "item_id": "raw-backlog-boyter-scc",
+      "source": "raw_backlog",
+      "source_name": "boyter.org",
+      "title": "Sloc Cloc and Code Revisited - Optimizing an already fast Go application",
+      "url": "https://boyter.org/posts/sloc-cloc-code-performance/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/boyter.org--posts-sloc-cloc-code-performance--3447ed79.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。scc（Sloc Cloc and Code）のGoパフォーマンス最適化の詳細（フレームグラフ、if文の並び替え、ループ平坦化、ビットマスク）で、LLM/AIエージェント技術との関連なし。entities/ben-boyter.md にはsccプロジェクトが既に記載済み。アーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Sloc Cloc and Code Revisited - Optimizing an already fast Go application\nSource: https://boyter.org/posts/sloc-cloc-code-performance/\nUpdate 2019-03-13\nThis is now part of a series of blog posts about\nscc\nSloc Cloc and Code which has now been optimised to be the fastest code counter for almost eve"
+    },
+    {
+      "item_id": "raw-backlog-danluu-files",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Files are fraught with peril",
+      "url": "https://danluu.com/deconstruct-files/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--deconstruct-files--7bc11b40.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。Deconstruct 2019の講演トランスクリプトで、ファイルAPI/ファイルシステム/ディスクの信頼性問題（pwriteの非アトミック性、fsyncエラー処理、SSDのビット誤り率）を扱う。AI/LLMとの関連なし。entities/dan-luu.md はキャッシュ障害分析中心で本記事は対象外。アーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Files are fraught with peril\nSource: https://danluu.com/deconstruct-files/\nThis is a psuedo-transcript for a talk given at Deconstruct 2019.\nTo make this accessible for people on slow connections\nas well as people using screen readers, the slides have been replaced by in-line text (the talk has ~1"
+    }
+  ]
+}
