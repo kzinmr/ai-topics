@@ -9,6 +9,7 @@
     "http://workos.com/auth-md?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026",
     "http://www.paulgraham.com/popular.html",
     "http://www.paulgraham.com/re.html",
+    "http://www.righto.com/2026/03/ibm-4-pi-computer-history.html",
     "http://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html",
     "http://www.righto.com/2026/06/ibm-604-thyraton-tube-module.html",
     "http://www.righto.com/2026/06/intel-8087-adder-reverse-engineered.html",
@@ -103,6 +104,7 @@
     "https://blog.jim-nielsen.com/2026/notes-shuffle/",
     "https://blog.jim-nielsen.com/2026/podcast-notes-ed-catmull/",
     "https://blog.jim-nielsen.com/2026/tide-lifts-all-boats/",
+    "https://blog.llvm.org/posts/2023-03-16-adding-new-llvm-jitlink-target-object-backend/",
     "https://blog.llvm.org/posts/2025-03-11-flang-new/",
     "https://blog.miguelgrinberg.com/post/i-am-not-a-reverse-centaur",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-3---one-to-many-relationships",
@@ -416,6 +418,8 @@
     "https://fireworks.ai/blog",
     "https://fireworks.ai/blog/Open-frontier-and-yours-LangChain-Deep-Agents-on-NVIDIA",
     "https://fireworks.ai/blog/Trilogy",
+    "https://fireworks.ai/blog/best-open-source-llms",
+    "https://fireworks.ai/blog/best-open-source-llms-may-2026",
     "https://fireworks.ai/blog/claude-code-pricing",
     "https://fireworks.ai/blog/cursor-composer-2",
     "https://fireworks.ai/blog/fine-tuning-your-own-embeddings-model",
@@ -1740,6 +1744,7 @@
     "https://substack.com/redirect/782bf441-6149-42f0-a20c-1858aa6e83cc?j=eyJ1Ij...tf6E",
     "https://substack.com/redirect/83dbda6a-f2cb-49b2-8c74-08661d4a8e30",
     "https://substack.com/redirect/88800e7c-de9e-41f9-ba65-29c1cc57f600?j=eyJ1Ij...tf6E",
+    "https://substack.com/redirect/8b76ad88-36bc-404b-b585-a35c1d052daa",
     "https://substack.com/redirect/8d2a84d2-...",
     "https://substack.com/redirect/9509e1e0-4388-4138-8eba-fb1da8510cbd?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E",
     "https://substack.com/redirect/98522e82-ec98-4007-a39c-8306a92777db?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E",
@@ -2273,5 +2278,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-04T18:15:38.123911+00:00"
+  "updated": "2026-08-04T22:05:56.393542+00:00"
 }

@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-04T22:05:56.392992+00:00",
+  "triage_run_id": "20260804T220020Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest 2026-08-04 22:00（run 20260804T220020Z）。5記事すべてスキップ。うち3記事（Fireworks roundup 5月版・1月版、Simon Willison pelican substack）は同日18:00のraw-backlog-ingestで既に entities/fireworks-ai.md / entities/simon-willison.md にエンリッチ済み（ページ本文で確認済み）。残り2記事（LLVM JITLinkバックエンド、IBM 4 Piコンピュータ史）は非AIコンテンツ。新規ページ作成・更新なし。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-llvm-jitlink-backend",
+      "source": "raw_backlog",
+      "source_name": "blog.llvm.org",
+      "title": "Adding a new target/object backend to LLVM JITLink",
+      "url": "https://blog.llvm.org/posts/2023-03-16-adding-new-llvm-jitlink-target-object-backend/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/blog.llvm.org--posts-2023-03-16-adding-new-llvm-jitlink-target-object-backe--86987083.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。LLVM JITLinkにi386 ELFターゲット/オブジェクトバックエンドを追加する2023年のコンパイラ基盤エンジニアリング記事。本文はJITリンクの概念定義、ELFリロケーション、シンボル解決の詳細（C++製JITでユーザー提供のrelocatable objectを実行時リンクする例、dead-stripの利点など）で、LLM/AIエージェント技術との直接関連なし。concepts/llvm.md はGPUコンパイラ基盤（Triton等）の文脈で存在するが、本記事は汎用JITリンカの話題でありwiki価値なし。アーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Adding a new target/object backend to LLVM JITLink\nSource: https://blog.llvm.org/posts/2023-03-16-adding-new-llvm-jitlink-target-object-backend/\nAdding a new target/object backend to LLVM JITLink\nMotivation\nFor the last year, I have been contributing to\nLLVM JITLink\n. This post aims to\ndoubly serv"
+    },
+    {
+      "item_id": "raw-backlog-fireworks-roundup-may2026",
+      "source": "raw_backlog",
+      "source_name": "Fireworks AI Blog",
+      "title": "Best Open Source LLMs of May 2026: We Reviewed 7 Models",
+      "url": "https://fireworks.ai/blog/best-open-source-llms-may-2026",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-07-27_fireworks-ai_best-open-source-llms-may-2026.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同日18:00のraw-backlog-ingest（run 20260804T180033Z）で処理済み。entities/fireworks-ai.md の「Open Source LLM Roundup Series (Jan & May 2026)」節（214-223行）に本記事の主要データを収録済み: 7モデルのMoE構成（Kimi K2.5/K2 Thinking 1T/32B、DeepSeek v3.2 671B/37B、GLM-5 744B/40B）、ベンチマーク首位（DeepSeek v3.2 GSM8K 96.0%、MiniMax-M2.5 SWE-Bench Verified 80.2% = Claude Opus 4.6水準、Qwen3 VL 235B MMLU 87.1%、GLM-5 GPQA-Diamond 86.0%）、Kimi K2.5 Modified MITライセンスのハイパースケール帰属条項、Kimi K2.5のAgent Swarmモード（BrowseComp 60.6%→78.4%）とPARL。sources frontmatterに本rawパス追加済み。重複処理不要。",
+      "candidate_wiki_path": "entities/fireworks-ai.md",
+      "body_excerpt": "# Best Open Source LLMs of May 2026: We Reviewed 7 Models\n**Source**: [https://fireworks.ai/blog/best-open-source-llms-may-2026](https://fireworks.ai/blog/best-open-source-llms-may-2026)\nAnnouncing our Series D and $1B ARR\nProduct\nSolutions\nModels\nPricing\nResources\nLog In\nGet Started\nBlog\nBest Open "
+    },
+    {
+      "item_id": "raw-backlog-fireworks-roundup-jan2026",
+      "source": "raw_backlog",
+      "source_name": "Fireworks AI Blog",
+      "title": "Best Open Source LLMs in 2026: We Reviewed 7 Models",
+      "url": "https://fireworks.ai/blog/best-open-source-llms",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_fireworks-ai_best-open-source-llms.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同日18:00のraw-backlog-ingest（run 20260804T180033Z）で処理済み。entities/fireworks-ai.md の「Open Source LLM Roundup Series (Jan & May 2026)」節で、1月版（2026-01-13公開）と5月版（5/19/2026公開）の両方を同一7モデル比較シリーズとして収録（1月版は簡素で5月版がフル比較データを持つ旨も明記）。本記事のTL;DR（Kimi K2.5=visual-to-code/agent swarm、Qwen3 VL=OCR 32言語/GUI自動化、DeepSeek v3.2=数学推論、Gemma 3=コンシューマGPU）とMoE支配の指摘は同節に反映済み。sources frontmatterに本rawパス追加済み。重複処理不要。",
+      "candidate_wiki_path": "entities/fireworks-ai.md",
+      "body_excerpt": "# Best Open Source LLMs in 2026: We Reviewed 7 Models\n**Source**: [https://fireworks.ai/blog/best-open-source-llms](https://fireworks.ai/blog/best-open-source-llms)\nDeepSeek V4 Pro is Live → Try it now.\nPlatform\nModels\nDevelopers\nPricing\nTraining\nPartners\nResources\nCompany\nLog In\nGet Started\nBlog\nBe"
+    },
+    {
+      "item_id": "raw-backlog-simonwillison-pelican",
+      "source": "raw_backlog",
+      "source_name": "simonwillison.net (substack redirect)",
+      "title": "Simon Willison on pelican-riding-a-bicycle (Meta Muse Spark + GLM-5.1)",
+      "url": "https://substack.com/redirect/8b76ad88-36bc-404b-b585-a35c1d052daa",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-8b76ad88-36bc-404b-b585-a35c1d052daa--e67c8708.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同日18:00のraw-backlog-ingest（run 20260804T180033Z）で処理済み。entities/simon-willison.md の「Pelican Test (SVG Benchmark) — Feb-Apr 2026 Timeline」節（431行〜）に、本substack redirect経由で取得したpelican-riding-a-bicycleタグフィードの主要データを収録済み: GLM-5.1（754B/1.51TB MIT）の無指示CSSアニメーション付きSVG生成と自己修正（<animateTransform>によるpositioning/animation分離の指摘）、13モデルリリースのpelican所見テーブル（Opus 4.6のくちばし、Gemma 4 26B-A4BノートPC記録等）。Meta Muse Spark発表も entities/muse-spark.md / concepts/meta-muse-spark.md で別途カバー済み。重複処理不要。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# Simon Willison on pelican-riding-a-bicycle\nSource: https://substack.com/redirect/8b76ad88-36bc-404b-b585-a35c1d052daa?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E\nAtom feed for pelican-riding-a-bicycle\nRandom\n104 posts tagged “pelican-riding-a-bicycle”\n2026\nMeta\nannounced Muse "
+    },
+    {
+      "item_id": "raw-backlog-righto-ibm-4pi",
+      "source": "raw_backlog",
+      "source_name": "righto.com",
+      "title": "The rise and fall of IBM's 4 Pi aerospace computers: an illustrated history",
+      "url": "http://www.righto.com/2026/03/ibm-4-pi-computer-history.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/righto.com--2026-03-ibm-4-pi-computer-history-html--62ae6c44.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。Ken Shirriff（righto.com）によるIBM System/4 Pi航空宇宙コンピュータの図解入りコンピュータ史。本文はスペースシャトルAP-101B（STS-38等に搭載）、F-4/B-52/潜水艦ソナー/ハープーン対艦ミサイルでの軍用、スカイラボ・スペースラブ・GPS開発・フライバイワイヤでの民生利用、TC/CP/EPモデルの仕様（TC: 16/32bitワード、8KB-64KBコアメモリ、48,500命令/秒）を詳細に扱うレトロコンピューティング/ハードウェア史で、LLM/AIエージェント技術との関連なし。アーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The rise and fall of IBM's 4 Pi aerospace computers: an illustrated history\nSource: http://www.righto.com/2026/03/ibm-4-pi-computer-history.html\nThe morning of April 12, 1981, 20 years to the day after Yuri Gagarin became the first person in space, the\nSpace Shuttle thundered into the Florida sky."
+    }
+  ]
+}
