@@ -1,6 +1,12 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-04] raw-backlog-ingest (22:00) | all 5 articles skip — already captured / non-AI
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 22:00, run 20260804T220020Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits.
+- **Already captured (3)**: Fireworks "Best Open Source LLMs of May 2026" + "in 2026" roundups → entities/fireworks-ai.md "Open Source LLM Roundup Series (Jan & May 2026)" section (verified lines 214-223, sources frontmatter both raw paths); Simon Willison pelican-riding-a-bicycle substack feed → entities/simon-willison.md "Pelican Test (SVG Benchmark) — Feb–Apr 2026 Timeline" section (GLM-5.1 CSS-animation SVG, 13-model table). All three enriched by today's 18:00 run.
+- **Non-AI (2)**: LLVM JITLink i386 ELF backend (blog.llvm.org, 2023 compiler infra), IBM System/4 Pi aerospace computer history (righto.com, retrocomputing).
+- Archive: archive_triage.py raw_backlog --keep-reference — 5 candidates, 5 new archived, total 2,277 URLs.
 ## [2026-08-04] skeleton-enrich-daily | L2→L3: Paul Hoekstra (Context Rot essay), Tambo (1.0 release); context-rot concept enriched
 
 - **Paul Hoekstra** [[entities/paul-hoekstra.md]]: L2→L3. Added June 2026 essay "Context Rot: Why AI Gets Worse the More You Explain" — mechanistic 3-cause model (attention softmax pie, RoPE position lapping, short-context training exposure), nominal vs functional context gap, MRCR v2 benchmark data (GPT-5.5 54% / Grok 4.20 12% at 500K), "useless context" crossing guidance. New raw article: [[raw/articles/2026-06-03_paul-hoekstra-context-rot.md]]. Added tags (context-management, blogger), updated sources, cross-linked to context-rot + context-window-management.
