@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-04] dreaming-wiki-ingest | upstream archive-only confirmed, 1 entity enrichment (warp-terminal computer use verification)
+
+- **Recovery**: Pre-run JSON parse failure (dreaming-group output at /opt/data/.hermes/cron/output/c4a9e8d2f671/2026-08-04_18-16-43.md, 4,450 lines). Triage JSON at triage_latest.json (2026-08-04T18:10:00Z, 20 decisions: 1 reference, 19 skips) recovered directly.
+- **Upstream detection**: commit cf0643f9 (18:16 UTC) was archive-only — log.md + archive JSON + archive_index.json, no entity pages touched. Log entry wording future-tense ("NOT yet covered in entity page") confirmed enrichment still needed.
+- **Deep Sleep verification**: [[entities/warp-terminal.md]] read in full (236 lines pre-enrichment); software factory series parts 1-3 covered (triage, spec-driven dev, self-improving code review), part 4 computer use verification absent -> genuine gap.
+- **Enriched**: [[entities/warp-terminal.md]] — new "Computer Use Verification (August 2026)" section: verify-behavior skill (reproduce/verify modes, video capture), triage/implementation/review integration, spec-driven debug loop, cloud subagent fan-out, video-as-review-evidence, Nano Banana demo. Frontmatter updated + source added.
+- **Archive**: skipped re-run — upstream already committed archive (cf0643f9, 12 new archived, total 2,272 URLs).
+
+
 
 ## [2026-08-04] dreaming | Pattern E saturation — 1 reference, 0 takes
 

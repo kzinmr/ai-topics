@@ -1,7 +1,7 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-07-17
+updated: 2026-08-04
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
@@ -13,6 +13,7 @@ sources:
   - raw/articles/2026-06-23_warp-dev_self-improvement-loop-for-skills.md
   - raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers.md
   - raw/articles/2026-07-17_warp_how-to-build-a-cloud-software-factory-self-improving-code-review.md
+  - raw/articles/2026-08-04_warp_how-to-build-a-cloud-software-factory-computer-use-verification.md
 ---
 
 # Warp Terminal
@@ -204,6 +205,32 @@ The third post in Warp's software factory series detailed a **self-improving cod
 - **CI/CD integration**: The review pipeline runs as a **GitHub Action** producing structured `review.json` output for programmatic consumption by downstream tools and Oz's orchestration layer.
 
 This is an example of [[concepts/agentic-engineering]] at the meta-level — an agent that improves other agents. The approach contrasts with [[entities/claude-code]]'s more conversational review style.
+
+### Computer Use Verification (August 2026)
+
+The fourth post in Warp's software factory series (August 3, 2026) added **computer use and browser use verification** to the factory flow — a capability provided to other agents rather than a standalone agent. Computer/browser use lets agents control a running application directly with mouse clicks and keyboard presses; Warp argues it is valuable at three points in the factory pipeline:
+
+- **Triage phase**: reproduce bugs before attempting fixes
+- **Implementation**: verify fixes and confirm new features match specs
+- **Review**: prove to a human reviewer that code matches expected behavior
+
+**The `verify-behavior` skill** defines how agents use computer and browser use:
+
+- **Mode selection**: computer use for desktop and mobile-native apps; browser use for webapps
+- **Capture**: video preferred, screenshots acceptable
+- **Two modes**: `reproduce` (confirm a reported bug occurs) and `verify` (confirm a new behavior)
+- **Install**: `npx skills add warpdotdev-demos/cloud-factory-demo --skill oz-cloud-factory-demo`
+
+**Key design points**:
+
+- **Spec-driven debug loop**: with a detailed `PRODUCT.md` spec, the agent runs computer use at every implementation pass to measure how close the implementation is to spec, iterating until it converges. Cost monitoring is required — this loop is expensive but increases success likelihood.
+- **Video as review evidence**: seeing a video of a feature working reduces code review burden; for low-risk pure UI changes, watching the video may be sufficient without reading the code.
+- **Cloud subagent fan-out**: for complex/new behaviors, the orchestrator fans out to verify all user stories independently in parallel. Computer use is single-threaded, so fanning out cloud agents across machines improves throughput. Local computer use is a worse experience (steals focus); cloud machines avoid agents acting on the user's local apps.
+- **Skill integration**: the existing Triage, Review, and Implementation skills are updated to invoke `verify-behavior` when it helps.
+
+**Demo**: Using a Nano Banana agentic image editor demo repo, Warp showed (1) reproducing a bug where image previews render at thumbnail size instead of gallery size, with the agent auto-generating screenshots of the broken behavior, and (2) implementing a "clear"/"replace" UI feature end-to-end with acceptance criteria checked by the verifier and a video proving the controls work.
+
+The series' next post previews **monitoring agents** that observe features/fixes after release and feed back into the Triage phase, completing the factory loop.
 
 ## Strategic Context
 
