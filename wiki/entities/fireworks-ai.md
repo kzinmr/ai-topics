@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-07-31
+updated: 2026-08-04
 tags:
   - entity
   - company
@@ -32,6 +32,8 @@ sources:
   - raw/articles/2026-07-28_fireworks-ai_K3-LoRA-Training.md
   - raw/articles/2026-07-31_fireworks-ai_fine-tuning-your-own-embeddings-model.md
   - raw/articles/2026-07-31_fireworks-ai_three-tests-to-run-before-you-switch-from-LoRa-to-FullFT.md
+  - raw/articles/2026-05-10_fireworks-ai_best-open-source-llms.md
+  - raw/articles/2026-07-27_fireworks-ai_best-open-source-llms-may-2026.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -208,6 +210,17 @@ Fireworks publishes a comprehensive **coding LLM benchmark roundup** comparing 1
 Fireworks emphasizes **MIT-licensed open-weight models** (DeepSeek V4-Pro, V4-Flash, GLM-5.1) as the most permissive for commercial fine-tuning and RFT. The platform supports both LoRA and RFT workflows for these models.
 
 **Key insight**: Fireworks positions itself as the inference platform where **open-weight models become production-viable** — not just cheaper, but capable of matching closed models through post-training (RFT) on domain-specific data. The benchmark article notes that once a workload is validated, open models on Fireworks can cost "6x to ~100x less per output token" depending on model choice.
+
+### Open Source LLM Roundup Series (Jan & May 2026)
+
+Fireworks also maintains a recurring **"Best Open Source LLMs" roundup** series (distinct from the coding-LLM benchmark article above), reviewing 7 leading open-weight models per edition. The January 2026 edition and the May 2026 edition (published 5/19/2026) cover the same seven-model field — Kimi K2.5, Kimi K2 Thinking, Qwen3 VL 235B A22B, GLM-5, DeepSeek v3.2, Google Gemma 3, MiniMax-M2.5 — all offered on Fireworks serverless. The May edition carries the fuller comparison data:
+
+- **MoE dominance**: 6 of 7 models are Mixture-of-Experts activating only 10B-40B parameters per token (Kimi K2.5/K2 Thinking: 1T total / 32B active; DeepSeek v3.2: 671B / 37B; GLM-5: 744B / 40B)
+- **Benchmark leaders**: DeepSeek v3.2 tops GSM8K at 96.0%; MiniMax-M2.5 tops SWE-Bench Verified at 80.2% (Claude Opus 4.6 level); Qwen3 VL 235B tops MMLU at 87.1%; GLM-5 leads GPQA-Diamond at 86.0%
+- **Licensing nuance**: Kimi K2.5's Modified MIT license adds a commercial attribution clause for hyperscale usage (commonly cited as >100M MAU or >$20M monthly revenue); Apache 2.0 (Qwen3 VL) and MIT (DeepSeek v3.2, GLM-5) impose minimal restrictions
+- **Context engineering**: DeepSeek's Sparse Attention and GLM-5's 128K output limit represent distinct approaches to maintaining coherence across long sequences
+
+Sources: [[raw/articles/2026-05-10_fireworks-ai_best-open-source-llms.md]], [[raw/articles/2026-07-27_fireworks-ai_best-open-source-llms-may-2026.md]]
 
 ## Related Entities & Concepts
 

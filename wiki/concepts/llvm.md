@@ -2,7 +2,7 @@
 title: "LLVM"
 type: concept
 created: 2026-04-25
-updated: 2026-08-01
+updated: 2026-08-04
 tags:
   - compiler
   - programming-language
@@ -19,6 +19,7 @@ related:
 sources:
   - https://blog.llvm.org/posts/2025-03-11-flang-new/
   - raw/articles/blog.llvm.org--posts-2025-03-11-flang-new--8f37a052.md
+  - raw/articles/blog.llvm.org--posts-2023-03-16-adding-new-llvm-jitlink-target-object-backe--86987083.md
 ---
 
 # LLVM
@@ -31,6 +32,7 @@ sources:
 - **Clang** — The C/C++/Objective-C frontend; the reference model for how a frontend feeds LLVM IR.
 - **MLIR (Multi-Level Intermediate Representation)** — Introduced to the LLVM community in 2019. Makes it cheap to define and introduce new abstraction levels with in-the-box compiler-engineering infrastructure, solving the "high-level language details don't map cleanly to LLVM IR" problem without each language building bespoke IR infrastructure (as Swift and Rust originally did).
 - **Flang** — The Fortran frontend/compiler (see below).
+- **JITLink** — LLVM's just-in-time linker: performs linking at runtime, producing an in-memory executable image by patching the executor process's memory to resolve symbol addresses (see below).
 
 ## Flang: LLVM's Fortran Compiler
 
@@ -62,6 +64,12 @@ Flang is a case study in decade-long compiler incubation and open-source communi
 - Cross-company team (Arm, Huawei, Linaro, NVIDIA, Qualcomm) made SPEC 2017 buildable with Flang; OpenMP support to 2.5; Linaro showed Flang performance near GFortran; the GFortran test suite was added to the LLVM Test Suite; Fujitsu's and IBM's test suites were opened up.
 - Renaming criteria (agreed by community): document known limitations, complete expected bug fixes, fail loudly on unimplemented features, competitive performance, public test-suite pass rates, and prevent Classic Flang confusion.
 
+## JITLink: LLVM's Runtime JIT Linker
+
+JITLink is LLVM's JIT (just-in-time) linker: unlike static linking, it performs linking at runtime, producing an in-memory image of an executable by patching the executor process's memory to resolve symbol addresses. JIT linking operates on relocatable objects (ELF, MachO, COFF), performing both the static linker's and dynamic loader's jobs — which allows dead-stripping of redundant symbols (important for C++ code generation) that dynamic loading cannot do. It matters for pre-compiled languages (C, C++, Rust) that need to bring new symbol definitions into a running process.
+
+A March 2023 LLVM blog post documents how to add a new target/object backend to JITLink (a contributor's guide based on adding the i386/ELF backend). It walks through the high-level JIT linking algorithm and the core **LinkGraph** constructs — **Symbols** (equivalent of ELF symbols, represented as offsets from a block base), **Blocks** (equivalent of sections), and **Edges** (equivalent of relocations) — then the per-backend pieces `ELFLinkGraphBuilder_i386` (parses i386/ELF relocations from an object file) and `ELFJITLinker_i386` (fixes up relocations in the executable image), plus a test loop built on the `llvm-jitlink` tool. The post is a practical recipe for extending JITLink to new target/object-format combinations.
+
 ## AI Relevance
 
 MLIR is central to AI infrastructure: it underpins accelerator compiler stacks (NVIDIA, AMD), TensorFlow, and torch-mlir, and its multi-level dialect design is the standard approach for mapping high-level model graphs to hardware. LLVM/MLIR therefore sit directly beneath the inference/training compilation layer of modern AI systems. Chris Lattner, LLVM co-founder, went on to found [[entities/modular]] (Mojo language, MAX AI platform). [[concepts/compiler-explorer]] is the web playground where Flang and other LLVM-based compilers can be tried interactively.
@@ -77,3 +85,5 @@ MLIR is central to AI infrastructure: it underpins accelerator compiler stacks (
 
 - [LLVM Blog: "LLVM Fortran Levels Up: Goodbye flang-new, Hello flang!" (Mar 2025)](https://blog.llvm.org/posts/2025-03-11-flang-new/)
 - Raw: `raw/articles/blog.llvm.org--posts-2025-03-11-flang-new--8f37a052.md`
+- [LLVM Blog: "Adding a new target/object backend to LLVM JITLink" (Mar 2023)](https://blog.llvm.org/posts/2023-03-16-adding-new-llvm-jitlink-target-object-backend/)
+- Raw: `raw/articles/blog.llvm.org--posts-2023-03-16-adding-new-llvm-jitlink-target-object-backe--86987083.md`

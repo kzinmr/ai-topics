@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-04] raw-backlog-ingest (18:00) | 3 entity enrichments + 1 skip
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 18:00, run 20260804T180033Z). Decisions: 0 takes, 4 references (3 entity enrichments), 1 skip.
+- **entities/simon-willison.md** — Added "Pelican Test (SVG Benchmark) — Feb–Apr 2026 Timeline" subsection: 13 model releases' pelican findings (GLM-5.1 unprompted CSS animation, Gemma 4 26B-A4B laptop record, Opus 4.6 best beak, Sonnet 4.6 top hat, GPT-5.3-Codex-Spark ~1000 tok/s, Gemini 3.1 Pro 323.9s thinking) + raw source (substack pelican-riding-a-bicycle tag feed dump)
+- **entities/fireworks-ai.md** — Added "Open Source LLM Roundup Series (Jan & May 2026)" subsection: 7-model MoE comparison (Kimi K2.5/K2 Thinking, Qwen3 VL 235B, GLM-5, DeepSeek v3.2, Gemma 3, MiniMax-M2.5), benchmark leaders (DeepSeek v3.2 96.0% GSM8K, MiniMax-M2.5 80.2% SWE-Bench), Kimi K2.5 hyperscale attribution clause + 2 raw sources (best-open-source-llms roundups)
+- **concepts/llvm.md** — Added JITLink section: runtime JIT linker, LinkGraph constructs (Symbols/Blocks/Edges), ELFLinkGraphBuilder_i386 + ELFJITLinker_i386 backend recipe (Mar 2023 blog) + raw source
+- Skips: righto.com IBM 4 Pi aerospace history (already referenced in entities/righto-com.md References)
+
 ## [2026-08-04] watchdog | auto-fix index headers + misplaced events entry
 
 ### Changes
