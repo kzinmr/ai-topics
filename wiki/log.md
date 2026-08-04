@@ -1,3 +1,17 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-08-04] X bookmarks ingest — Kimi K3 AMD MI355X serving benchmark
+
+**Created**: entities/wafer-ai.md — Cross-platform model serving platform; Kimi K3 on MI355X benchmark (952 tok/s, 3.8x B200)
+
+**Enriched**: concepts/kimi-k3.md — Added "AMD MI355X Serving Performance" section with benchmark tables (single-node 8x MI355X vs 16x B200), HBM capacity analysis, and implications for frontier MoE model serving
+
+**Enriched**: entities/amd.md — Added Kimi K3 Single-Node Serving entry under Customer Wins (3.8x B200 aggregate, 1.3x single-stream, 1.45x perf/$ vs B300) + kimi-k3 related link + sources
+
+Raw article: raw/articles/2026-08-01_wafer-ai_kimi-k3-amd-mi355x-serving-benchmark.md
+
 ## [2026-08-04] active-crawl (11:05 UTC) | 3 new pages + 1 enrichment
 
 - **concepts/llm-expertise-amplification.md** — NEW: LLMs steepen the skill curve, amplifying domain experts while creating cognitive debt for novices. Synthesizes Sean Goedecke ("LLMs reward expertise," 1009 HN pts) and Ankur Sethi ("Prevent cognitive debt by manually retyping LLM-generated code," 499 HN pts).
@@ -31,9 +45,6 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - Archive: archive_triage.py blog --keep-reference run.
 
 
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-04] Manual ingest — Gary Marcus "Two critical updates re: Astra and mathematics"
 

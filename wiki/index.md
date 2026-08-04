@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (876 pages)
+## Entities (877 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -836,6 +836,7 @@
 - [[entities/vincent-weisser]] — Vincent Weisser
 - [[entities/voyage-ai]] — Voyage AI
 - [[entities/vtrivedy10]] — Vivek 'Varun' Trivedy (@vtrivedy10)
+- [[entities/wafer-ai]] — Wafer; cross-platform model serving across NVIDIA, AMD, TPUs; Kimi K3 on MI355X benchmark (Aug 2026)
 - [[entities/walden-yan]] — Walden Yan
 - [[entities/wandb-weave]] — W&B Weave
 - [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23)

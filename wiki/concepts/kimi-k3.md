@@ -23,6 +23,7 @@ sources:
   - "raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md"
   - "raw/articles/together.ai--blog-kimi-k3-guide--70e2c263.md"
   - "raw/newsletters/2026-08-03-kimi-k3-the-manos-the-mythos-the-legendos.md"
+  - "raw/articles/2026-08-01_wafer-ai_kimi-k3-amd-mi355x-serving-benchmark.md"
 ---
 
 # Moonshot Kimi K3
@@ -460,6 +461,37 @@ This infrastructure makes [[concepts/post-training]] practical for ongoing model
 K3 is thinking-only with `preserve_thinking` always enabled. Thinking effort: low/high/max. Context: 1M tokens. Default params: temp=1.0, top_p=0.95 (chat) / top_p=1.0 (agentic).
 
 **Source**: [[raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md|Unsloth Docs — Kimi K3 How to Run Locally]], [GGUF on HuggingFace](https://huggingface.co/unsloth/Kimi-K3-GGUF)
+
+## AMD MI355X Serving Performance — August 2026
+
+In August 2026, [[entities/wafer-ai|Wafer]] published a serving benchmark demonstrating Kimi K3 running on a single 8-GPU AMD MI355X node at production-grade throughput. This is significant because K3 requires **16× NVIDIA B200 GPUs across two servers** due to memory constraints, but fits within **one 8× MI355X node** thanks to AMD's higher HBM capacity per GPU.
+
+### Why Single-Node Matters
+
+| Factor | NVIDIA B200 | AMD MI355X | Implication |
+|--------|------------|------------|-------------|
+| **GPU memory** | 192 GB HBM3 | 288 GB HBM3e | MI355X's 50% more HBM enables single-node deployment |
+| **GPUs needed** | 16 (2 nodes) | 8 (1 node) | No inter-node communication overhead |
+| **Node memory** | 1,536 GB/node | 2,304 GB/node | Full model (~1.5 TB) fits in one AMD node |
+
+### Performance Benchmarks
+
+| Metric | AMD MI355X (8-GPU, 1 node) | NVIDIA B200 (16-GPU, 2 nodes) | MI355X Advantage |
+|--------|---------------------------|-------------------------------|-----------------|
+| **Aggregate throughput** | **952 tok/s** | ~250 tok/s | **3.8×** |
+| **Single-stream decode** | **118 tok/s** | ~91 tok/s | **1.3×** |
+| **Perf/$ (vs B300)** | **48 tok/s/$** | 33 tok/s/$ | **1.45×** |
+
+The 3.8× aggregate throughput advantage stems primarily from eliminating inter-node communication — a single 8-GPU node communicates via intra-node interconnects (Infinity Fabric) rather than network-bound inter-node links. The 1.3× single-stream advantage reflects AMD's per-GPU HBM bandwidth and compute efficiency for large-batch decode.
+
+### Implications
+
+- **AMD's HBM capacity advantage** translates directly to TCO wins for frontier MoE model serving, where model footprint dominates deployment topology
+- **Single-node frontier serving** simplifies deployment, reduces networking costs, and eliminates the tail-latency risks of multi-node inference
+- This benchmark validates AMD's MI355X as a viable alternative to NVIDIA B200/B300 for large open-weight model inference, particularly for models like K3 where memory capacity is the binding constraint
+- The result aligns with AMD's broader strategy of competing on memory capacity and total cost of ownership in the inference market
+
+**Source**: [[raw/articles/2026-08-01_wafer-ai_kimi-k3-amd-mi355x-serving-benchmark.md|@wafer_ai — Kimi K3 on AMD MI355X Benchmark]] (Aug 1, 2026)
 
 
 ## Related Pages

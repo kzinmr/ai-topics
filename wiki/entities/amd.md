@@ -2,7 +2,7 @@
 title: "AMD"
 type: entity
 created: 2026-07-25
-updated: 2026-07-25
+updated: 2026-08-04
 tags:
   - company
   - hardware
@@ -14,8 +14,10 @@ related:
   - [[entities/semianalysis]]
   - [[concepts/cuda-moat]]
   - [[entities/anthropic]]
+  - [[concepts/kimi-k3]]
 sources:
   - raw/newsletters/2026-07-25-can-amd-break-the-cuda-moat-amd-advancing-ai-2026.md
+  - raw/articles/2026-08-01_wafer-ai_kimi-k3-amd-mi355x-serving-benchmark.md
 ---
 
 # AMD
@@ -110,6 +112,18 @@ Microsoft announced adoption of AMD's **MI355X** GPU, a reversal of its 2023 dec
 ### OpenAI (Expected)
 
 Industry sources expect OpenAI to announce AMD chip adoption next, potentially the largest customer win given OpenAI's massive compute demand.
+
+### Kimi K3 Single-Node Serving (Aug 2026)
+
+[[entities/wafer-ai|Wafer]] demonstrated **Kimi K3** (2.8T MoE) serving on a single 8× MI355X node at production throughput:
+
+| Metric | MI355X (8-GPU, 1 node) | B200 (16-GPU, 2 nodes) | Advantage |
+|--------|------------------------|------------------------|-----------|
+| Aggregate throughput | **952 tok/s** | ~250 tok/s | **3.8×** |
+| Single-stream decode | **118 tok/s** | ~91 tok/s | **1.3×** |
+| Perf/$ (vs B300) | **48 tok/s/$** | 33 tok/s/$ | **1.45×** |
+
+The key enabler: MI355X's 288 GB HBM3e per GPU allows the full model to fit in a single 8-GPU node (~2.3 TB total), eliminating the inter-node communication overhead that B200 requires (16 GPUs across 2 nodes). [[concepts/kimi-k3|Kimi K3 page]] for full analysis. Source: [[raw/articles/2026-08-01_wafer-ai_kimi-k3-amd-mi355x-serving-benchmark.md|@wafer_ai benchmark]]
 
 ## Finance Engineering (105% Rebate)
 
