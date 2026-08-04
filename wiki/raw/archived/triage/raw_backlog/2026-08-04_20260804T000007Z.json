@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-04T00:27:05.201683+00:00",
+  "triage_run_id": "20260804T000007Z",
+  "source": "raw_backlog",
+  "summary_ja": "00:00バッチ(20260804T000007Z)。全5記事を評価し、全てskip。AI関連2本は既にWikiに深く捕捉済み: (1) Anthropic「Demystifying evals for AI agents」はconcepts/evaluation/evals-for-ai-agents.md(101行、このraw記事をsourcesに明記)とconcepts/harness-engineering/system-architecture/evals-for-ai-agents.md(137行、pass@k/pass^k・エージェント種別別評価・ロードマップ・飽和・Swiss Cheeseモデルまで網羅)の2ページで完全カバー。(2) Glean「Agent orchestration platforms compared」はentities/glean.mdの「Agent Orchestration Platforms Compared (August 2026)」セクション(6プラットフォーム比較表、Work AI Index 87%/75%/13%/36%統計)に2026-08-01のdreaming-wiki-ingestで反映済み、アーカイブ済み。残り3本(Bell Labs計算史、Rennes-le-Château、Technofascism防衛論)は非AIコンテンツのためskip。wiki変更なし。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-anthropic-evals-for-ai-agents",
+      "source": "raw_backlog",
+      "source_name": "anthropic.com",
+      "title": "Demystifying evals for AI agents",
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "raw_path": "~/wiki/raw/articles/2026-05-08_anthropic-engineering_demystifying-evals-for-ai-agents.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★☆ 既に2つのconceptページで深く捕捉済み。concepts/evaluation/evals-for-ai-agents.md(101行、updated 2026-05-08)はsourcesにこのraw記事を明記し、評価の基本構造(task/trial/grader/transcript/outcome/harness/suite)、3種のgrader(コード/LLM/人間)、Opus 4.5のτ2-bench抜け道事例、Descript/Bolt AI実例をカバー。concepts/harness-engineering/system-architecture/evals-for-ai-agents.md(137行)はcapability vs regression、エージェント種別別手法(コーディング=SWE-bench Verified/Terminal-Bench、会話=τ-Bench/τ2-Bench、リサーチ=BrowseComp、コンピュータ使用=WebArena/OSWorld)、pass@k vs pass^k、ゼロからのロードマップ、eval飽和、Swiss Cheese多層評価まで網羅。追加すべき独自コンテンツなし。",
+      "candidate_wiki_path": "concepts/evaluation/evals-for-ai-agents.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-russcox-bell-labs-history",
+      "source": "raw_backlog",
+      "source_name": "research.swtch.com",
+      "title": "Computing History at Bell Labs",
+      "url": "https://research.swtch.com/bell-labs",
+      "raw_path": "~/wiki/raw/articles/research.swtch.com--bell-labs--a8105c85.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。Russ Coxが2008年に公開したDoug McIlroy(1997年定年講演)のBell Labs計算史トランスクリプト(二五進法リレー計算機、ミサイル検出器のレースコンディションバグなど)で、LLM/AIエージェント技術との関連なし。Wiki対象外のためアーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-filfre-rennes-le-chateau",
+      "source": "raw_backlog",
+      "source_name": "filfre.net",
+      "title": "The Mystery of Rennes-le-Château, Part 1: The Priest's Treasure",
+      "url": "https://www.filfre.net/2026/03/the-mystery-of-rennes-le-chateau-part-1-the-priests-treasure/",
+      "raw_path": "~/wiki/raw/articles/filfre.net--2026-03-the-mystery-of-rennes-le-chateau-part-1-the-priests---1b1a3154.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。Jimmy MaherのThe Digital Antiquarianによる陰謀論の聖地Rennes-le-Châteauの歴史探訪(カタリ派、聖杯伝説、ベレンガー・ソニエール)で、AI/エージェント技術とは無関係。既存のfilfre.net処理パターン(非AIスキップ)に従いアーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-micahflee-technofascism",
+      "source": "raw_backlog",
+      "source_name": "micahflee.com",
+      "title": "Practical Defenses Against Technofascism",
+      "url": "https://micahflee.com/practical-defenses-against-technofascism/",
+      "raw_path": "~/wiki/raw/articles/micahflee.com--practical-defenses-against-technofascism--62e06b2a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。Micah LeeのBSidesPDX基調講演(トランプ政権下のテクノファシズムに対するコミュニティ防衛策)で、政治・セキュリティ寄りの内容。AI技術ドキュメンテーションのWiki対象外のためアーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

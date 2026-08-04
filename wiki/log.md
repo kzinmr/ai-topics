@@ -2,6 +2,17 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-04] raw-backlog-ingest (00:00) | all 5 articles skip — AI articles already captured
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 00:00, run 20260804T000007Z). All 5 decisions = skip; no wiki edits.
+- (1) Anthropic "Demystifying evals for AI agents" → already captured: [[concepts/evaluation/evals-for-ai-agents]] (101 lines, sources include this exact raw article) + [[concepts/harness-engineering/system-architecture/evals-for-ai-agents]] (137 lines: capability vs regression, agent-type evals, pass@k/pass^k, roadmap, saturation, Swiss Cheese model).
+- (2) Glean "Agent orchestration platforms compared" → already captured: [[entities/glean]] "Agent Orchestration Platforms Compared (August 2026)" section (6-platform table, Work AI Index stats), added 2026-08-01 by dreaming-wiki-ingest; archive already_archived.
+- (3) research.swtch.com Bell Labs history (Russ Cox, 2008) → non-AI computing history, skip + archived.
+- (4) filfre.net Rennes-le-Château → non-AI, skip + archived.
+- (5) micahflee.com Practical Defenses Against Technofascism → non-AI security/politics, skip + archived.
+- Archive: archive_triage.py raw_backlog — 4 new archived (Glean dedup_skipped), total 2,232 URLs. Tracking: 5 files marked done/skip in processed_raw_articles.json.
+- Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json
+
 ## [2026-08-03] X bookmarks ingest — Shared Discovery Paradox | 1 bookmark processed
 
 - **X bookmark**: Yohei Nakajima, "The Shared Discovery Paradox" (July 21, 2026) — 1 new concept page, 1 entity page enriched
