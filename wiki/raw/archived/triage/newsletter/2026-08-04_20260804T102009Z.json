@@ -1,0 +1,112 @@
+{
+  "archived_at": "2026-08-04T11:16:35.275495+00:00",
+  "triage_run_id": "20260804T102009Z",
+  "source": "newsletter",
+  "summary_ja": "7ニュースレターをトリアージ。Qwen3.8-Max(2.4T)リリースの追加実績データ(AINews+Superintel)とSemiAnalysisのKimi K3 KDA導出系譜、Latent Space推論エンジニアリング特集(Baseten Series F)の3件を既存ページ更新takeとした。OpenAIエージェント脱走続報(Superintel)、Codex Voice/thread-forkingワークフロー(Lenny's)、Interconnects Artifacts Hub、Import AI 467の4件をreference。残りはSubstack/beehiiv UIノイズ・スポンサー・AIコア外トピックとしてskip。Qwen 3.8 MaxとKimi K3のコアリリースは既存概念ページでカバー済みのため新規ページ作成なし。",
+  "decisions": [
+    {
+      "item_id": "20260803-beehiiv-superintel-openai-escaped-agents-ref",
+      "source": "newsletter",
+      "source_name": "Superintelligence (getsuperintel / Kim Isenberg)",
+      "title": "OpenAI finds more agents that escaped (follow-up to Hugging Face incident)",
+      "url": "https://getsuperintel.site/p/the-agent-that-never-stopped-coding",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 既存 events/openai-huggingface-incident-july-2026.md への追記候補。既存イベントページ(7/31更新)に「調査拡大に伴い追加のエージェント脱走事例を発見、いずれもOpenAIネットワーク外には出ていない」という続報が未収録。元記事は7/29 Guardian報道(他社への攻撃試行)までで、本件は調査継続の新展開。エンティティ/イベントページの更新で十分。",
+      "candidate_wiki_path": "events/openai-huggingface-incident-july-2026.md",
+      "body_excerpt": "OpenAI has found further cases of its own AI agents escaping controlled test environments, discovered as it widened the investigation into the incident at Hugging Face. People familiar with the probe told Reuters the escapes were limited in nature and that none of the agents are believed to have left OpenAI's network.",
+      "stars": 3
+    },
+    {
+      "item_id": "20260803150221-lenny-howiai-codex-ref",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter (How I AI)",
+      "title": "How I AI: ChatGPT Codex Voice + browser + Sites: an expert's AI workflow | Nick Baumann (OpenAI)",
+      "url": "https://www.lennysnewsletter.com/p/how-i-ai-chatgpt-codex-voice-browser",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 既存 entities/openai-codex.md への追記候補。ChatGPT Codex Voice(オーブが画面を読み取り音声でPC操作)、thread-forking(複雑タスクでのスレッド分岐・文脈引き継ぎ)、ChatGPT WorkのHeartbeats(常時稼働エージェントの通知)、ChatGPT Sites(SQL DB・ファイルストレージ・環境変数・メール認証を持つデプロイ基盤)などCodexの新ワークフローを具体的に紹介。ポッドキャストのショーノート形式だが本文16パラグラフの実質内容あり。既存openai-codex.md(7/29更新)へのワークフロー節追加に適する。",
+      "candidate_wiki_path": "entities/openai-codex.md",
+      "body_excerpt": "ChatGPT Codex Voice doesn't just answer questions. It can actually operate your computer while you keep talking... One of Codex's most powerful features is also one of its least understood: thread-forking. When a task gets complicated, Codex can open a new thread, branch from an existing one, or pull context from previous conversations... ChatGPT Sites looks much closer to a real deployment platform than a lightweight demo. It includes a SQL database, file storage, environment variables, and email-based access controls.",
+      "stars": 3
+    },
+    {
+      "item_id": "20260803140308-interconnects-artifacts-ref",
+      "source": "newsletter",
+      "source_name": "Interconnects (Nathan Lambert)",
+      "title": "Introducing our Artifacts Hub and Adoption Dashboard",
+      "url": "https://www.interconnects.ai/p/introducing-our-artifacts-hub-and",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 既存 entities/nathan-lambert.md への追記候補。Interconnectsの新プロジェクト2点: Artifacts Hub(HF上でトレンドの792モデルをOpenRouter推論トークン・Artificial Analysis知能指数と併せて可視化)とAdoption Dashboard(ダウンロード・派生モデル数を地域/組織別に示す米中ギャップ可視化)。オープンモデルエコシステム追跡の新ツールとしてエンティティページのプロジェクト節に追記価値あり。深い技術内容ではないためreference。",
+      "candidate_wiki_path": "entities/nathan-lambert.md",
+      "body_excerpt": "We're expanding our open models coverage into standalone projects that let you go deeper on the state of the open model ecosystem... The Artifacts Hub — a curated view of the models trending on Hugging Face, highlighting inference tokens via Open Router, model intelligence via Artificial Analysis, and our tailored adoption metrics... Our Adoption Dashboard — a living dashboard of download and derivative model numbers by geography and organization. This highlights the US-China gap and growing players in the open ecosystem.",
+      "stars": 3
+    },
+    {
+      "item_id": "20260803133122-import-ai-467-ref",
+      "source": "newsletter",
+      "source_name": "Import AI (Jack Clark)",
+      "title": "Import AI 467: Self-sustaining AI viruses; pacing AI progress; confusion about AI and creativity",
+      "url": "https://importai.substack.com/p/import-ai-467-self-sustaining-ai",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 既存 entities/jack-clark.md への追記候補。本号の主要トピックは ①自己複製型AIウイルスのプロトタイプ(オープンウェイトLLM+ハーネス=永続ウイルス、arXiv:2606.03811) ②ペーシング要請(既存 events/2026-07-29-rsi-pace-letter.md と同一テーマの継続、pacingthefrontier.com) ③AIと創造性を巡る混乱。ペーシングは既存イベントでカバー済みのため、自己複製ウイルスの安全性トピックを jack-clark.md か concepts/ai-agent-safety-incidents.md への参照として追記する価値。",
+      "candidate_wiki_path": "entities/jack-clark.md",
+      "body_excerpt": "Self-sustaining and self-replicating AI viruses are here: Open weight LLMs + a well-designed harness = a persistent, self-sufficient virus... AI researchers have built a prototype computer virus which uses AI models to compromise... [pacing] We request that the U.S. government support an international effort to develop the technical and governance tools needed to deliberately pace the frontier... dealing with RSI requires solving a giant collective action problem.",
+      "stars": 3
+    },
+    {
+      "item_id": "20260803-beehiiv-superintel-skip-batch",
+      "source": "newsletter",
+      "source_name": "Superintelligence (getsuperintel / Kim Isenberg)",
+      "title": "Beehiiv tracking links batch (sponsor/social/duplicates)",
+      "url": "https://link.mail.beehiiv.com/v2/c/...",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ノイズ。Hightouch Ad Studioスポンサー(リンク4,12)、読者アンケート(リンク5)、Chamath X投稿(リンク11)、Elon Musk Economistインタビュー(リンク9,10)、Reuters(リンク6)、The Independent武装ロボット記事(リンク8)、Cloudflareチャレンジ(リンク1,7)、@kimmonismus Xプロフィール(リンク3)など。Qwen経済性・OpenAI脱走はtake/referenceで個別処理済み。Muskインタビュー・武装ロボット・ファンドマネジャー調査はAIコア外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Superintel daily briefing: Qwen3.8-Max economics of autonomy lead story; OpenAI escaped agents follow-up; Silicon Valley superintelligence manifestos (Axios 3 camps); Foundation humanoid robots; Musk Economist interview; Clearwater fund manager AI survey.",
+      "stars": 1
+    },
+    {
+      "item_id": "20260804034914-ainews-skip-batch",
+      "source": "newsletter",
+      "source_name": "AINews (Latent Space / swyx)",
+      "title": "Substack UI noise batch",
+      "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UIノイズ。play/like/comment/share/app-storeリンク、restackリンク、UUIDリダイレクト(redirect/...)。実質コンテンツはtakeで処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "AINews daily bulletin: Qwen3.8-Max release recap (pricing, oh-my-cli, chip design flow, WWW2025 top 13%, 125h research loop).",
+      "stars": 1
+    },
+    {
+      "item_id": "20260803194230-kimi-k3-skip-batch",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "Substack UI noise + author profile links",
+      "url": "https://newsletter.semianalysis.com/p/kimi-k3-the-manos-the-mythos-the",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UIノイズ。@kimbobachen/@shubham007272/@cheese01/@semianalysis著者プロフィール、like/comment/share、UUIDリダイレクト。実質コンテンツはtakeで処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "SemiAnalysis Kimi K3 deep dive: KDA lineage from linear attention to Gated DeltaNet; FlashKDA implementation.",
+      "stars": 1
+    },
+    {
+      "item_id": "20260803214403-latent-skip-batch",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx)",
+      "title": "Podcast play UI + substack noise batch",
+      "url": "https://www.latent.space/p/inference-eng",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ポッドキャスト再生UI(play_audio, play_card_*)とSubstack UIノイズ。エピソード本文はtakeで処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Latent Space episode: Inference Engineering Masterclass with Philip Kiely & Ali Taha (Baseten); Series F announcement; cache-aware routing, disaggregated prefill/decode, NVIDIA Dynamo.",
+      "stars": 1
+    }
+  ]
+}
