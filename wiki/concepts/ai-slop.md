@@ -2,7 +2,7 @@
 title: AI Slop
 type: concept
 created: 2026-05-25
-updated: 2026-06-01
+updated: 2026-08-04
 tags:
   - ai-slop
   - coding-agents
@@ -91,3 +91,29 @@ This perspective reframes the slop discussion from "can it be fixed?" to "here i
 - [[entities/gary-marcus]] — LLM skepticism, "Gullibility Gap"
 - [[concepts/open-source-ai-destruction]] — Broader tension between AI and open source
 - [[concepts/coding-agents/ai-coding-reliability]] — Reliability challenges in AI-assisted coding
+
+
+## LLM-Generated Security Vulnerabilities
+
+In July 2026, JFrog security researchers documented one of the first confirmed cases of AI slop polluting critical cybersecurity infrastructure. A single GitHub repository (`programmervuln/cveadvisory-`) published **50+ CVE advisories** — including multiple flagged as critical for SQLite — that were entirely LLM-generated.
+
+### The SQLite CVE Incident
+
+- NVD and CISA's ADP flagged the SQLite CVEs as critical, wasting security team resources
+- JFrog's investigation found: cited code didn't exist in referenced SQLite versions, PoC payloads failed to trigger crashes, and none appeared on SQLite's official advisory page
+- GPTZero confirmed all advisories as AI-generated
+- The workflow appears automated: script generates vulnerability reports via LLM, submits as CVEs, and creates GitHub advisories — all without human verification
+
+### Implications
+
+This represents a new class of AI-slop attack vector: **flooding vulnerability databases with AI-generated noise** to (a) waste defender resources chasing false positives, or (b) hide real vulnerabilities among fabricated ones. As LLMs improve at mimicking vulnerability report formats, distinguishing genuine CVEs from AI-generated ones becomes increasingly difficult.
+
+### Related Patterns
+
+- LLM-generated bug reports flooding open-source project issue trackers
+- AI-generated security research papers with fabricated results
+- Automated CVE submission as a denial-of-service vector against security teams
+
+### Source
+
+[[raw/articles/2026-07-30_jfrog_sqlite-cves-llm-slop]] — JFrog Security Research, July 30, 2026

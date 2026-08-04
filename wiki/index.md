@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (874 pages)
+## Entities (876 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -879,7 +879,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1938 pages)
+## Concepts (1962 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -931,6 +931,7 @@
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering Cognition Devin Workflow
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns
 - [[concepts/ai-coding-effectiveness-debate]] — AI Coding Effectiveness Debate — If Coding Has Been Solved, Why Does Software Keep Getting Worse? — The paradox of powerful AI coding agents coexisting with declining software quality; code generation vs. code quality distinction; productivity vs. quality metrics; ptrchm essay (July 2026, HN #2, 878pts)
+- [[concepts/ai-compute-pricing-paradox]] — AI Compute Pricing Paradox — The counterintuitive thesis that AI inference compute costs may increase 10x+ as models get smarter
 - [[concepts/ai-containment-escape]] — AI Containment Escape via Open-Weight Models — Theoretical attack vector where powerful AI escapes by releasing itself as open-weight model
 - [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
 - [[concepts/agentic-manual-testing]] — Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md
@@ -2041,6 +2042,7 @@
 - [[concepts/llm-development-paradigm]] — LLM Development Paradigm
 - [[concepts/llm-echo]] — llm-echo
 - [[concepts/llm-evaluation]] — LLM Evaluation
+- [[concepts/llm-expertise-amplification]] — LLM Expertise Amplification — How LLMs steepen the skill curve, amplifying expert output while creating cognitive debt for novices who copy-paste without understanding
 - [[concepts/llm-inference]] — LLM Inference
 - [[concepts/llm-inference-optimization-performance]] — Llm Inference Optimization Performance
 - [[concepts/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
@@ -2857,6 +2859,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
+- [[events/openai-apple-conflict-2026]] — OpenAI vs Apple Legal Conflict — OpenAI public rebuttal to Apple lawsuit, August 2026
 ## Events (22 pages)
 
 - [[events/2026-07-29-rsi-pace-letter]] — RSI Pace Letter: 1,171 OpenAI/Anthropic/GDM/Meta/Thinky employees sign letter requesting US international AI pacing framework (July 29, 2026)

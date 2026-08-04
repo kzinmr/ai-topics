@@ -1,3 +1,12 @@
+## [2026-08-04] active-crawl (11:05 UTC) | 3 new pages + 1 enrichment
+
+- **concepts/llm-expertise-amplification.md** — NEW: LLMs steepen the skill curve, amplifying domain experts while creating cognitive debt for novices. Synthesizes Sean Goedecke ("LLMs reward expertise," 1009 HN pts) and Ankur Sethi ("Prevent cognitive debt by manually retyping LLM-generated code," 499 HN pts).
+- **concepts/ai-compute-pricing-paradox.md** — NEW: Dwarkesh Patel's thesis that smarter AI models may drive compute prices 10x+, challenging the "compute gets cheaper" narrative.
+- **events/openai-apple-conflict-2026.md** — NEW: OpenAI's Aug 3 public rebuttal to Apple's lawsuit (email to wrong person, fabricated meeting, 5-month silence before suing). Broader context of AI talent wars.
+- **concepts/ai-slop.md** — ENRICHED: Added "LLM-Generated Security Vulnerabilities" section covering JFrog's discovery of 50+ AI-generated SQLite CVE advisories (713 HN pts).
+
+Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 queries, 15 results), blogwatcher DB (71 articles Aug 1-4), wiki gap analysis (16 gaps identified).
+
 ## [2026-08-04] newsletter-wiki-ingest (11:20 UTC) | 4 takes + 4 references from newsletter-triage 20260804T102009Z
 
 - Recovered triage checkpoint from render failure (triage_latest.json valid, 7 newsletters; triage agent committed archive only, pages NOT edited). 4 takes enriched, 4 references added.
@@ -3830,3 +3839,11 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 
 
 ---
+
+- **Action**: CREATE
+- **Page**: concepts/llm-expertise-amplification.md
+- **Type**: concept
+- **Sources**: raw/articles/2026-08-02_seangoedecke_llms-reward-expertise.md, raw/articles/2026-08-02_ankursethi_cognitive-debt-retyping-llm-code.md
+- **Tags**: llm, prompting, human-agent-collaboration, technical-debt, coding-agents, ai-slop
+- **Summary**: Synthesized Sean Goedecke's "LLMs reward expertise" thesis (LLMs steepen the skill curve) with Ankur Sethi's cognitive debt warning (retype LLM code instead of copy-pasting). Core insight: LLMs amplify existing expertise rather than replacing it. Cross-linked to domain-expertise-ai-moat, cognitive-debt, ai-slop, coding-agents, prompt-engineering, vibe-coding.
+- **Index**: Inserted under Concepts section (L2044, between llm-evaluation and llm-inference)
