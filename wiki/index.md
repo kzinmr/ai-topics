@@ -616,7 +616,7 @@
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc.
 - [[entities/parchi]] — Parchi
 - [[entities/parsagon]] — Parsagon
-- [[entities/paul-hoekstra]] — Paul Hoekstra
+- [[entities/paul-hoekstra]] — Paul Hoekstra — Agentic Engineering 4-layer framework, Context Rot mechanistic explanation (Paul's Pipeline)
 - [[entities/paul-iuzstin]] — Paul Iusztin
 - [[entities/paulgraham-com]] — Paul Graham
 - [[entities/perceptron-ai]] — Perceptron AI
@@ -773,7 +773,7 @@
 - [[entities/tailcalled]] — tailcalled
 - [[entities/takuya-akiba]] — Takuya Akiba (@iwiwi)
 - [[entities/talkie]] — Talkie
-- [[entities/tambo]] — Tambo
+- [[entities/tambo]] — Tambo — Open-source Generative UI toolkit for React; 1.0 with SOC 2/HIPAA, 11K+ stars
 - [[entities/tedium-the-dull-side-of-the-internet]] — Ernie Smith (Tedium)
 - [[entities/teknium]] — Ryan (Teknium)
 - [[entities/telegram]] — Telegram
@@ -1488,7 +1488,7 @@
 - [[concepts/context-engineering/context-management-cognition-claude-models]] — Context Management Cognition Claude Models
 - [[concepts/context-engineering/context-providers]] — Context Providers — The Missing Layer Between Agents and Tools
 - [[concepts/context-engineering/context-repositories]] — Context Repositories (Git-based Agent Memory)
-- [[concepts/context-engineering/context-rot]] — Context Rot
+- [[concepts/context-engineering/context-rot]] — Context Rot — LLM degradation over long context; Chroma findings + Paul Hoekstra mechanistic 3-cause model
 - [[concepts/context-engineering/context-routing]] — Context Routing — Query-Based Context Distribution
 - [[concepts/context-engineering/context-window-management]] — Context Window Management
 - [[concepts/context-engineering/index]] — Context Engineering

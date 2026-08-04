@@ -1,6 +1,13 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-04] skeleton-enrich-daily | L2→L3: Paul Hoekstra (Context Rot essay), Tambo (1.0 release); context-rot concept enriched
+
+- **Paul Hoekstra** [[entities/paul-hoekstra.md]]: L2→L3. Added June 2026 essay "Context Rot: Why AI Gets Worse the More You Explain" — mechanistic 3-cause model (attention softmax pie, RoPE position lapping, short-context training exposure), nominal vs functional context gap, MRCR v2 benchmark data (GPT-5.5 54% / Grok 4.20 12% at 500K), "useless context" crossing guidance. New raw article: [[raw/articles/2026-06-03_paul-hoekstra-context-rot.md]]. Added tags (context-management, blogger), updated sources, cross-linked to context-rot + context-window-management.
+- **Context Rot concept** [[concepts/context-engineering/context-rot.md]]: added "Mechanistic Explanation (Paul Hoekstra, June 2026)" section — 3-cause table, MRCR v2 evidence, practical guidance. Updated frontmatter (sources + updated date).
+- **Tambo** [[entities/tambo.md]]: L2→L3. Updated to 1.0 status (Feb 2026 launch, SOC 2 + HIPAA, 8K stars at launch, 11.2K+ now, 500K+ messages). Added Interactable Components, Local Tools, full MCP protocol (tools/prompts/elicitations/sampling), Additional Context, Suggestions, templates, README comparison table (vs Vercel AI SDK / CopilotKit / Assistant UI), Creator section (Michael Magan + Michael Milstead). Fixed pre-existing broken wikilink vercel-ai-sdk → entities/vercel.
+- **index.md**: updated descriptions for paul-hoekstra, tambo, context-rot entries.
+
 
 ## [2026-08-04] dreaming-wiki-ingest | upstream archive-only confirmed, 1 entity enrichment (warp-terminal computer use verification)
 
