@@ -1,0 +1,142 @@
+{
+  "checkpoint_run_id": "20260804T102009Z",
+  "triaged_at": "2026-08-04T10:25:00Z",
+  "processed_count": 7,
+  "triage_results": [
+    {
+      "uid": "458",
+      "subject": "[AINews] Qwen 3.8 Max(2.4T) and 27B, new open weights models for Coding and Cowork",
+      "source": "Latent Space / swyx",
+      "date": "2026-08-04",
+      "raw_path": "wiki/raw/newsletters/2026-08-04-ainews-qwen-3-8-max-2-4t-and-27b-new-open-weights-models-for-coding-and-cowork.md",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-qwen-38-max24t-and-27b-new",
+      "classification": "critical",
+      "action": "create_event_and_model_page",
+      "reason": "Major new open-weights model release: Qwen 3.8 Max (2.4T params) and 27B variant, positioned for coding and cowork use cases. New frontier-class open model directly relevant to wiki model coverage.",
+      "wiki_targets": ["events/2026-08-qwen-3.8-max-release", "entities/qwen"],
+      "topics": ["llm-models", "open-weights", "coding-models", "qwen", "alibaba"]
+    },
+    {
+      "uid": "456",
+      "subject": "Kimi K3, The Manos, The Mythos, The Legendos",
+      "source": "SemiAnalysis",
+      "date": "2026-08-03",
+      "raw_path": "wiki/raw/newsletters/2026-08-03-kimi-k3-the-manos-the-mythos-the-legendos.md",
+      "primary_url": "https://open.substack.com/pub/semianalysis/p/kimi-k3-the-manos-the-mythos-the",
+      "classification": "critical",
+      "action": "create_event_and_entity_page",
+      "reason": "SemiAnalysis deep dive on Moonshot AI's Kimi K3 model. Major new model analysis from authoritative source. Directly relevant to model coverage and Chinese AI ecosystem tracking.",
+      "wiki_targets": ["events/2026-08-kimi-k3-release", "entities/kimi", "entities/moonshot-ai"],
+      "topics": ["llm-models", "kimi", "moonshot-ai", "chinese-ai", "frontier-models"]
+    },
+    {
+      "uid": "455",
+      "subject": "The Agent That Never Stopped Coding",
+      "source": "AI-focused Beehiiv newsletter",
+      "date": "2026-08-03",
+      "raw_path": "wiki/raw/newsletters/2026-08-03-the-agent-that-never-stopped-coding.md",
+      "primary_url": "https://link.mail.beehiiv.com/v2/c/00e8fa46974be2269b723cf223314d97414a452b350ff7795b20468c07613f8911470eaa6178595b28c418cb2e5b09008df87f1e20f6df8f04b28f04ad6d7fa033191d45c33a89d9cdc38bbf6fdcb39b2a80c2df28ae982761437303addc4b668f4d86234eb371adb5964e33660100c3a09bcc03c9b8ccbca89e2b4c5f647bfc6dd1bb6ffc06b67cf222a33bd4fbe213c2b02a732a8914db07bf487e92894ad4/7252fc09e146e563",
+      "classification": "critical",
+      "action": "extract_and_process",
+      "reason": "Autonomous coding agent topic — directly in the wiki's core domain. Likely covers persistent/long-running coding agents. Content behind beehiiv redirect needs scraping for full article.",
+      "wiki_targets": ["concepts/coding-agents", "concepts/autonomous-ai-agents"],
+      "topics": ["coding-agents", "autonomous-agents", "ai-development"]
+    },
+    {
+      "uid": "452",
+      "subject": "Import AI 467: Self-sustaining AI viruses; pacing AI progress; confusion about AI and creativity",
+      "source": "Import AI (Jack Clark)",
+      "date": "2026-08-03",
+      "raw_path": "wiki/raw/newsletters/2026-08-03-import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-a.md",
+      "primary_url": "https://open.substack.com/pub/importai/p/import-ai-467-self-sustaining-ai",
+      "classification": "critical",
+      "action": "extract_articles_and_process",
+      "reason": "Jack Clark's Import AI is a premier AI policy newsletter. Topics: self-sustaining AI viruses (AI safety/biosecurity), AI progress measurement, AI creativity debate. Multiple wiki-relevant sub-articles likely.",
+      "wiki_targets": ["concepts/ai-safety", "concepts/ai-progress", "concepts/ai-biosecurity"],
+      "topics": ["ai-safety", "ai-progress", "ai-creativity", "ai-biosecurity", "ai-policy"]
+    },
+    {
+      "uid": "457",
+      "subject": "The Inference Engineering Masterclass — Philip Kiely & Ali Taha, Baseten",
+      "source": "Latent Space (swyx)",
+      "date": "2026-08-03",
+      "raw_path": "wiki/raw/newsletters/2026-08-03-the-inference-engineering-masterclass-philip-kiely-ali-taha-baseten.md",
+      "primary_url": "https://open.substack.com/pub/swyx/p/inference-eng",
+      "classification": "high",
+      "action": "extract_and_process",
+      "reason": "Latent Space podcast on inference engineering with Baseten. Directly relevant to inference infrastructure coverage. Podcast format — may need transcript extraction.",
+      "wiki_targets": ["concepts/inference-engineering", "entities/baseten"],
+      "topics": ["inference", "model-serving", "baseten", "infrastructure"]
+    },
+    {
+      "uid": "454",
+      "subject": "How I AI: ChatGPT Codex Voice + browser + Sites: an expert's AI workflow | Nick Baumann (OpenAI)",
+      "source": "Lenny's Newsletter",
+      "date": "2026-08-03",
+      "raw_path": "wiki/raw/newsletters/2026-08-03-how-i-ai-chatgpt-codex-voice-browser-sites-an-expert-s-ai-workflow-nick-baumann-.md",
+      "primary_url": "https://open.substack.com/pub/lenny/p/how-i-ai-chatgpt-codex-voice-browser",
+      "classification": "high",
+      "action": "extract_and_process",
+      "reason": "Expert AI workflow showcasing ChatGPT Codex, Voice, browser integration. Practical AI agent usage patterns. Relevant to developer tooling and agent workflow concepts.",
+      "wiki_targets": ["concepts/coding-agents", "entities/chatgpt"],
+      "topics": ["coding-agents", "chatgpt", "developer-workflows", "ai-tooling"]
+    },
+    {
+      "uid": "453",
+      "subject": "Introducing our Artifacts Hub and Adoption Dashboard",
+      "source": "Robotics / Nathan Lambert",
+      "date": "2026-08-03",
+      "raw_path": "wiki/raw/newsletters/2026-08-03-introducing-our-artifacts-hub-and-adoption-dashboard.md",
+      "primary_url": "https://open.substack.com/pub/robotic/p/introducing-our-artifacts-hub-and",
+      "classification": "medium",
+      "action": "review_if_relevant",
+      "reason": "Nathan Lambert's newsletter on ML artifacts hub and adoption dashboard. Relevant to ML infrastructure and model ecosystem tracking, but may be more robotics-focused. Worth reviewing for cross-cutting relevance.",
+      "wiki_targets": ["concepts/ml-infrastructure"],
+      "topics": ["ml-infrastructure", "model-tracking", "open-source-ml"]
+    }
+  ],
+  "summary": {
+    "critical": 4,
+    "high": 2,
+    "medium": 1,
+    "low": 0,
+    "total": 7
+  },
+  "priority_actions": [
+    {
+      "priority": 1,
+      "action": "Process Qwen 3.8 Max release news — create event page and update/enrich Qwen entity page",
+      "source_uid": "458"
+    },
+    {
+      "priority": 2,
+      "action": "Process Kimi K3 SemiAnalysis article — create event page and entity pages for Kimi and Moonshot AI",
+      "source_uid": "456"
+    },
+    {
+      "priority": 3,
+      "action": "Scrape and process 'The Agent That Never Stopped Coding' — beehiiv redirect needs URL resolution",
+      "source_uid": "455"
+    },
+    {
+      "priority": 4,
+      "action": "Process Import AI 467 sub-articles — AI safety, AI progress, and creativity topics",
+      "source_uid": "452"
+    },
+    {
+      "priority": 5,
+      "action": "Process Latent Space inference engineering podcast — extract transcript or key points",
+      "source_uid": "457"
+    },
+    {
+      "priority": 6,
+      "action": "Process ChatGPT Codex workflow article from Lenny's Newsletter",
+      "source_uid": "454"
+    },
+    {
+      "priority": 7,
+      "action": "Review Nathan Lambert artifacts hub article for wiki relevance",
+      "source_uid": "453"
+    }
+  ]
+}

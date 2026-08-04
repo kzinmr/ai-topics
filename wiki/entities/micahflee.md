@@ -1,9 +1,9 @@
 ---
 title: "Micah Lee"
-tags: [person]
-sources: []
+tags: [person, coding-agents, local-llm]
+sources: [raw/articles/micahflee.com--agentic-coding-techniques--fc5e06aa.md]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-08-04
 type: entity
 ---
 
@@ -79,6 +79,18 @@ Lee has been a vocal critic of Apple and Google's voluntary compliance with gove
 
 He advocates for **web-based alternatives** to native apps precisely because they bypass these choke points. The survival of the "Eyes Up" web app (which archives ICE abuse footage) while native apps are removed illustrates his argument for decentralized, web-first organizing tools.
 
+### Agentic Coding (2026)
+
+In his August 2026 essay *Agentic coding techniques*, Lee describes coding agents as "actually useful" — an incredible time saver when the output is reviewed by someone who understands the code — in contrast to the AI slop flooding the internet. He pairs this pragmatism with a scathing critique of the AI industry, which he calls "a bubble built on hype and lies and debt": environmentally destructive data centers, power consolidated among "reactionary billionaire weirdos" chasing military contracts, and loss-leading pricing ($20/month plans that cost providers more than they earn). Believing frontier models are "cheaper now than they ever will be again," he intends to use them while he can; GitHub Copilot's switch to usage-based billing in June 2026 made it "way too expensive," so he stopped using it (keeping VS Code as his editor).
+
+**Local open-weight models.** Lee runs a Framework Desktop server with 128GB of RAM and a GPU hosting an [[concepts/ollama]] server for private, local models. His best local coding model is `qwen3-coder-next:q8_0` (84GB); his best vision model is `qwen3-vl:32b-thinking-q8_0` (35GB). He reserves local LLMs for: code generation for secret projects whose source code — or very existence — can't be shared with third parties; direct analysis of sensitive datasets (frontier models often write the analysis code, which then runs against private data); a private Open WebUI chatbot; and large batches of small repetitive tasks. This local-first stance extends his [[concepts/open-source]] moral imperative to model weights.
+
+**LLM skills workflow.** Lee adopted Matt Pocock's LLM skills, which "entirely changed" his agentic workflow: the **grilling session** skill has the LLM relentlessly question him about a feature to surface thorny implementation details and write a spec *before* any code; **/to-tickets** turns a detailed spec into GitHub issues automatically labeled "ready-for-agent" or "ready-for-human"; **/implement** can implement an entire well-defined issue in one go, including code review and a pull request. He also uses Expo Skills for thorny-but-tedious mobile maintenance and tracks Trail of Bits' skills repo for security research.
+
+**Sandboxing agents.** Because autonomous agents require "extremely unsafe YOLO mode" — `claude --dangerously-skip-permissions` or `codex --dangerously-bypass-approvals-and-sandbox` — Lee runs them inside Docker Sandboxes (`sbx` command), preferring CLI versions of Claude and Codex over desktop apps because they're easier to sandbox. Each sandbox runs its own Docker VM (no shared Linux kernel), supports nested Docker (so Docker Compose test suites still work), proxies all network access through a host firewall with an allowed-domains allowlist (GitHub, NPM, PyPi by default, configurable per-sandbox), and provides per-sandbox credential isolation. See [[concepts/sandbox]] and [[concepts/agentic-engineering]] for related analysis.
+
+**Isolating GitHub access.** Lee refuses to browser-login `gh` with full account access inside agent sandboxes — a prompt-injected agent could otherwise read all his secret repositories. Instead he creates fine-grained, repo-scoped personal access tokens (PATs) stored in the `sbx` secrets manager scoped to the specific sandbox, and forwards a dedicated signing-only SSH key into the container for commit signing. A rogue agent is thus contained to a Docker container *and* a single GitHub repo.
+
 ---
 
 ## Key Quotes
@@ -103,7 +115,7 @@ He advocates for **web-based alternatives** to native apps precisely because the
 
 **2025:** Founded the [[concepts/lockdown-systems-collective]] and began developing [[concepts/cyd]], an open-source app for local-first personal data backup. Delivered his BSidesPDX keynote on technofascism. Published critical analysis of the ICEBlock app as "activism theater." Co-reported on TeleMessage spyware. Published Epstein files analysis for .
 
-**2026:** Built the DHS Contracts Explorer from hacked immigration enforcement data. Published practical guides on Signal group security (nicknames as identity verification). Continued analysis of mercenary spyware threats (Paragon/Graphite, NSO/Pegasus) and platform complicity. Active on the kill switch podcast discussing app censorship.
+**2026:** Built the DHS Contracts Explorer from hacked immigration enforcement data. Published practical guides on Signal group security (nicknames as identity verification). Continued analysis of mercenary spyware threats (Paragon/Graphite, NSO/Pegasus) and platform complicity. Active on the kill switch podcast discussing app censorship. Published *Agentic coding techniques* (August 2026) on [[concepts/agentic-engineering|agentic engineering]] — local open-weight models, LLM skills, and Docker-sandboxed coding agents.
 
 ---
 
@@ -135,6 +147,7 @@ Cellebrite — Device extraction company analyzed in Lee's technofascism framewo
 - *How to easily dig through the Epstein files yourself* (November 2025)
 - *Jeffrey Epstein Bought Books About Pedophilia, Woody Allen, and Trump* (Zeteo, November 2025)
 - *"Why hack the DHS? I can think of a couple Pretti Good reasons!"* (March 2026)
+- *Agentic coding techniques* (August 2026)
 - *I spoke about ICEBlock and Trump's app censorship on the kill switch podcast* (October 2025)
 - *Hacks, Leaks, and Revelations: The Art of Analyzing Hacked and Leaked Data* (No Starch Press, 2024)
 - [OnionShare](https://onionshare.org) — Open-source file sharing tool
@@ -159,3 +172,4 @@ Cellebrite — Device extraction company analyzed in Lee's technofascism framewo
 - micahflee.com--using-signal-groups-for-activism--7ceaad72
 - micahflee.com--we-are-currently-clean-on-opsec-the-signalgate-saga--e8b6d537
 - micahflee.com--why-hack-the-dhs-i-can-think-of-a-couple-pretti-good-reasons--be35e375
+- micahflee.com--agentic-coding-techniques--fc5e06aa

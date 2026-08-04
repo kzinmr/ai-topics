@@ -1,10 +1,10 @@
 ---
 title: MCP (Model Context Protocol)
 created: 2026-04-26
-updated: 2026-07-21
+updated: 2026-08-04
 type: concept
 tags: [protocol, agentic-engineering, tool, mcp]
-sources: [raw/articles/troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f.md, raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/gemini-deep-research-agent.md, raw/articles/2026-01-26_anthropic-interactive-tools-claude.md, raw/articles/2025-11-21_mcp-apps-proposal.md, raw/articles/2026-01-26_mcp-apps-official-release.md, raw/articles/2026-01-01_mcpui-dev-landing-page.md, raw/articles/2025-10-08_postman-state-of-api-2025-report.md, raw/articles/workos.com--blog-management-mcp-server--d9a49c8a.md]
+sources: [raw/articles/troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f.md, raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/gemini-deep-research-agent.md, raw/articles/2026-01-26_anthropic-interactive-tools-claude.md, raw/articles/2025-11-21_mcp-apps-proposal.md, raw/articles/2026-01-26_mcp-apps-official-release.md, raw/articles/2026-01-01_mcpui-dev-landing-page.md, raw/articles/2025-10-08_postman-state-of-api-2025-report.md, raw/articles/workos.com--blog-management-mcp-server--d9a49c8a.md, raw/articles/workos.com--blog-mcp-vs-rest--adc9d692.md]
 ---
 
 # MCP (Model Context Protocol)
@@ -297,6 +297,66 @@ This pattern solves the **context budget problem**: exposing hundreds of individ
 This represents a pattern where **SaaS platforms expose their full admin surface as MCP tools**, enabling agents to perform configuration, debugging, and management tasks that previously required dashboard interaction. The discover-then-execute pattern is likely to become a standard approach for large tool surfaces in MCP.
 
 > **Source**: [WorkOS Blog — Management MCP Server](https://workos.com/blog/management-mcp-server) (July 2026)
+
+WorkOS has also published a companion post, [MCP vs. REST: What's the right way to connect AI agents to your API?](https://workos.com/blog/mcp-vs-rest) (August 2026), which grounds the management server's design decisions — discover-then-execute, deliberately few tools, OAuth-based auth — in a broader comparison of REST and MCP; see [MCP vs REST: When and Why](#mcp-vs-rest-when-and-why) below.
+
+## MCP vs REST: When and Why
+
+For fifteen years, REST has been the backbone of software integration — but LLM-powered agents are a new class of API consumer with different needs. A [WorkOS engineering post](https://workos.com/blog/mcp-vs-rest) frames the question not as "MCP or REST?" but **"Do I need both, and if so, how do they fit together?"**
+
+### What REST does well
+
+REST APIs are general-purpose interfaces designed to let any software system access another system's functionality or data — web browsers, mobile apps, CLIs, or microservices. They are stateless by design, which makes them easy to cache, load-balance, and scale horizontally, and decades of tooling surround them: OpenAPI specifications, Swagger UI, Postman, API gateways, rate limiters, CDNs. For deterministic developer-written clients that know exactly which endpoint to call and what parameters to pass, REST is excellent — and it remains the right tool for high-throughput, low-latency data fetching where HTTP caching, CDNs, and load balancers pay off.
+
+### Where REST falls short for LLM agents
+
+Four structural gaps emerge when the consumer is an LLM making autonomous decisions rather than a developer following a spec:
+
+1. **No self-description at runtime** — A REST API can't tell you what it can do; you have to know going in. OpenAPI specs are static documents designed for developer tooling, not something an LLM can interrogate at runtime. If the API gains endpoints, client code must be manually updated — the API itself can't say "hey, I have a new capability."
+2. **Stateless by design** — Each call is isolated. An agent that must look up a user, check their order history, then update their shipping address has to manually pass context between calls. There is no session, no shared state, no memory of what happened two calls ago.
+3. **Every API is a snowflake** — Five different REST APIs means five different adapters: five sets of custom integration code, each with its own endpoints, parameter formats, authentication schemes, and error conventions.
+4. **Designed for developers, not models** — REST design principles emphasize composability and small atomic endpoints that developers combine cheaply. These actively hurt agents, which pay a token cost for every tool definition they must reason over.
+
+### MCP: purpose-built for AI agents
+
+MCP (originally published by Anthropic in November 2024 as an open JSON-RPC-based standard) was explicitly designed to integrate LLM applications with external data and tools — and it **wraps a REST API rather than replacing it**. The USB-C analogy applies: MCP is to AI applications what USB-C is to laptops, letting any agent connect to any MCP server because they all speak the same protocol. MCP servers advertise their capabilities through three primitives:
+
+- **Resources** — Read-only/passive information retrieval endpoints that do not cause side effects; handlers often support streaming chunks or pagination for large data.
+- **Tools** — Active operations that can perform side effects or computations, defining input parameters and output schema clearly, and typically including validation and safety checks.
+- **Prompts** — Reusable prompt templates or workflows the server provides to guide model interactions (e.g., a `sqlQueryTemplate` that formats database queries consistently).
+
+Not every MCP server uses all three — many focus on tools — but an agent can query a server at runtime to discover which primitives exist and invoke them through a uniform interface.
+
+### Runtime discovery: `tools/list` vs OpenAPI
+
+This is MCP's most significant departure from REST. When an MCP client connects, it sends a `tools/list` request (JSON-RPC 2.0) and the server responds with a machine-readable catalog of every available tool: its name, a natural-language description, and a full JSON Schema `inputSchema`. The same pattern covers `resources/list` and `prompts/list`. Because every server publishes this catalog, agents discover and use new functionality without redeploying code — picking up new features automatically on each connection. This is fundamentally different from OpenAPI: a static document for developer tooling, versus a live protocol interaction where *"the agent asks, the server answers, and the agent adapts."* (See [[concepts/shared-discovery-paradox]] for the wider implications of runtime capability discovery.)
+
+### Stateful sessions and standardized auth
+
+MCP maintains a persistent session between client and server, established by a mutual handshake during initialization in which both sides advertise what they support. Context persists across multi-step workflows — the opposite of REST's stateless model, and essential when each action depends on what happened before. On authentication, MCP takes an opinionated stance: **OAuth 2.1 with PKCE** is the standard (spec revisions March 2025, June 2025, November 2025), with dynamic client registration and scoped tokens so the server can verify at tool-invocation time that a token authorizes the specific operation an agent attempts — a requirement for enterprise deployments where an agent acts on behalf of a user.
+
+### Design for outcomes, not endpoints
+
+The most common mistake when adopting MCP is **auto-converting every REST endpoint into an MCP tool**. Tools like FastMCP's OpenAPI converter make it tempting — one line of code exposes your entire API to LLMs — but a generous REST API of hundreds of small composable endpoints "drowns" an agent: every tool description is loaded into the context window and costs tokens on every single interaction. The better approach is **outcome-oriented tool design**, built around what the agent is trying to accomplish rather than your internal API structure:
+
+> **Bad**: three separate tools — `get_user`, `get_orders`, `get_shipments` — requiring three round trips and holding intermediate results in conversation history.
+> **Good**: one `track_order(email)` tool that calls all three endpoints internally and returns a complete, contextualized answer: "Order #12345 shipped via FedEx, arriving Thursday."
+
+Think of the MCP server as a user interface — the same product thinking you'd apply to a UI, just for a non-human user. (See [[concepts/context-engineering/context-lock-in]] on why context budget drives this trade-off.)
+
+### When to use what — the verdict
+
+REST APIs aren't going anywhere: keep them for web/mobile applications, high-throughput data fetching, third-party developer integrations, and microservice communication. Add MCP when AI agents are the consumer, when you need multi-step workflows (stateful sessions), when you want write-once integrations across any MCP-compatible client, or when you need fine-grained OAuth 2.1 authorization for agentic access. The practical architecture is layered, not adversarial:
+
+```
+LLM Agent (Claude, Cursor...) 
+  ↕ JSON-RPC / MCP Protocol
+MCP Server — discovery & catalog, stateful sessions, OAuth 2.1, outcome-oriented tools
+  ↕ HTTP
+Your REST API — business logic, data access, existing infrastructure
+```
+
+MCP and REST are complementary layers in the AI stack: the REST API handles the business logic, and MCP makes that logic accessible to the AI agents that are increasingly becoming the primary way users interact with software.
 
 ## Open Questions & Debates
 

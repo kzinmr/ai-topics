@@ -4,8 +4,9 @@ type: entity
 tags:
   - ai-agents
   - database
+  - regression
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-08-04
 aliases: [Beads (bd), bd, Beads Issue Tracker, Gastown Hall Beads]
 sources:
   - https://gastownhall.github.io/beads/
@@ -13,6 +14,7 @@ sources:
   - https://steve-yegge.medium.com/beads-best-practices-2db636b9760c
   - https://www.npmjs.com/package/@beads/bd
   - https://pypi.org/project/beads-mcp/
+  - raw/articles/simonwillison.net--2026-aug-4-steve-yegge--4e264ea2.md
 ---
 
 
@@ -153,6 +155,10 @@ Available via PyPI (`beads-mcp`) — allows any MCP-compatible agent to interact
 4. **Always use `--json` for agents**: programmatic consumption, not human UI
 5. **Track discovered work** during implementation: `bd create "Found bug in auth" --deps discovered-from:bd-100`
 
+## Model Regression Fragility (Aug 2026)
+
+In August 2026, Yegge reported that **Gas Town** — his agentic development tool in the same ecosystem as Beads — "fell apart at the seams with Opus 4.7." Up through Opus 4.6 it "was working brilliantly"; the 4.7 upgrade introduced a "just two more things" tic that prevented the model from ever converging on being ready to do real work, as it always wanted to fiddle with Gas Town itself. The tic never went away, and Gas Town "effectively burned down." The episode is a concrete data point on **model-upgrade regression**: a frontier-model point release can silently break agent workflows and tools built for prior model behavior (see [[entities/anthropic]], [[entities/claude-code]], [[concepts/agentic-engineering]]).
+
 ## Beads vs Other Agent Memory Solutions
 
 | Aspect | Beads | Claude Perfect Memory | Trekker |
@@ -181,4 +187,5 @@ Available via PyPI (`beads-mcp`) — allows any MCP-compatible agent to interact
 - https://steve-yegge.medium.com/beads-best-practices-2db636b9760c
 - https://www.npmjs.com/package/@beads/bd
 - https://pypi.org/project/beads-mcp/
+- https://simonwillison.net/2026/Aug/4/steve-yegge/ (Steve Yegge via Simon Willison, Aug 4 2026)
 - https://www.reddit.com/r/ClaudeAI/comments/1qj6l75/built_a_beadslike_issue_tracker_for_ai_agents/

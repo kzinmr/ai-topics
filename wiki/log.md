@@ -1,6 +1,28 @@
+## [2026-08-04] blog-wiki-ingest (10:42 UTC) | 4 takes + 5 references from blog-triage 20260804T101734Z
+
+- Recovered triage checkpoint from render failure (triage_latest.json valid, 18 candidates + 2 unsaved). 4 takes enriched, 5 references added, 11 skips archived.
+- **[[entities/simon-willison]]** — Added "LLMs and the Open Source Modification Dream (Aug 2026)" (exe.dev essay: clone-and-tell workflow, checkout+build as zero-time-investment, path to habitual modification) and "LLM Fork Maintenance (Aug 2026)" (David Crawshaw nightly cron fork-rebase prompt); "Don't Be a Meat Proxy" link-blog entry (Niklas Gruhn coinage). Sources: simonwillison.net 2026-08-03/04 (devtools-must-be-open-source-exedev, david-crawshaw, dont-be-a-meat-proxy).
+- **[[entities/micahflee]]** — Added "Agentic Coding (2026)" section: local open-weight models (Ollama, qwen3-coder-next:q8_0 84GB, qwen3-vl:32b-thinking-q8_0 35GB, Framework Desktop 128GB), Matt Pocock LLM skills (grilling session→spec, /to-tickets, /implement), Docker Sandboxes (sbx) isolation (own VM, nested Docker, network allowlist, credential isolation), GitHub isolation (repo-scoped PAT + signing-only SSH key), YOLO-mode flags, Copilot usage-based pricing. Tags +coding-agents +local-llm.
+- **[[concepts/mcp]]** — Added "MCP vs REST: When and Why" section: REST gaps for LLM agents (no runtime self-description, stateless, snowflake APIs, token cost), three primitives (Resources/Tools/Prompts), tools/list runtime discovery vs OpenAPI, stateful sessions, OAuth 2.1+PKCE, endpoint auto-conversion trap, outcome-oriented tool design (track_order(email)); WorkOS cross-reference.
+- **[[entities/openai-astra]]** — Added "Reproducibility & Follow-up (Aug 2026)": Levent Alpöge 24h half-replication with Fable, problem-selection-not-model thesis, Noam Brown failure admission + "numerator without a denominator", GPT 6 vs 5.7 naming indecision, Terence Tao "proof indigestion" lecture.
+- **[[entities/beads]]** — Added "Model Regression Fragility (Aug 2026)": Gas Town fell apart with Opus 4.7 ("just two more things" tic), model-upgrade regression data point. Tag +regression.
+- **[[entities/dynomight-net]]** — Added "Evolution as Outer Optimizer: Alignment Lessons (Aug 2026)": outer/inner optimizer framing, subgoal alignment (Kenrick et al. 2010 7 subgoals, avg 8.2/10), decomposition failure as reward hacking, AI cultural evolution risk.
+- **[[entities/anthropic]]** — Added "Naming Criticism: Mythos vs Logos (Om Malik, Jun 2026)": mythos-vs-logos epistemology, manufactured-credibility reading of White House/Pope visits, Augustus/Aeneid + Silicon Valley myth parallels.
+- Archive: archive_triage.py blog --keep-reference run.
+
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+
+## [2026-08-04] Manual ingest — Gary Marcus "Two critical updates re: Astra and mathematics"
+
+### Changes
+- **entities/openai-astra.md** — Added "Reproducibility & Follow-up (Aug 2026)" section: Levent Alpöge's 24h half-reproduction of Astra's results with Anthropic's publicly-released Fable model; Marcus's "real advance may be problem selection, not the model" thesis; Noam Brown's failure admission and "numerator without a denominator" non-disclosure criticism; GPT 6 vs GPT 5.7 naming indecision (The Information); Terence Tao's July 26 lecture on "proof indigestion," open-problems vs theory-building distinction, openness to AI in math; Brandolini's law postscript (Wouter Vreugdenhil quote). Frontmatter: `updated` bumped to 2026-08-04, new source added.
+- **log.md** — This entry
+
+### Sources
+- https://garymarcus.substack.com/p/two-critical-updates-re-astra-and
 
 ## [2026-08-04] raw-backlog-ingest (10:00) | 3 entity enrichments + 2 non-AI skips
 
@@ -3794,3 +3816,6 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Raw article was already auto-ingested by blogwatcher; frontmatter enriched
 - MCP 2026-07-28 spec concept page (`concepts/mcp-2026-07-28-spec.md`) already had comprehensive coverage including Simon's 3-tool table in "Tooling & Ecosystem" section — no updates needed
 - Primary value-add: dedicated section in Simon Willison entity page documenting his MCP stance reversal
+
+
+---

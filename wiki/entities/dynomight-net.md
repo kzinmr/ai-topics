@@ -1,9 +1,9 @@
 ---
 title: "Dynomight"
 tags: [person]
-sources: []
+sources: [raw/articles/dynomight.net--human-alignment--5aeed9b5.md]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-08-04
 type: entity
 ---
 
@@ -65,6 +65,14 @@ This position is deliberately modest — Dynomight gives the argument only a "~3
 > "I think the idea that 'wanting is the hard part' is the majority view. Paul Christiano, for example... Richard Ngo also seems to explicitly endorse this view..."
 
 The essay engages with the broader AI safety community (Christiano, Ngo, MIRI) while maintaining intellectual independence.
+
+### Evolution as Outer Optimizer: Alignment Lessons (Aug 2026)
+
+Dynomight's essay "Indirect lessons from human alignment" (August 2026) treats evolution as a worked example for [[concepts/ai-alignment]]. Evolution is an **outer optimizer** trying to make humans maximize reproductive fitness; humans are **inner optimizers** who just do what feels good. Since birth rates are dropping everywhere, the standard reading is that evolution failed — one real-world instance of an optimizer failing to keep an intelligent system on goal once the environment changed.
+
+Dynomight decomposes this failure into two parts. **Subgoal alignment** is remarkably good: scoring evolution's success at aligning humans to the seven subgoals of Kenrick et al. (2010, following Maslow) — physiological needs, self-protection, affiliation, status/esteem, mate acquisition, mate retention, parenting — yields an average of 8.2/10. The failure sits at the level of **decomposition**: evolution never anticipated that gamete donation would become the optimal reproductive strategy, so no subgoal pushes us toward it. This is **reward hacking** in the wild — humans exploit the reward channel (feeling good) rather than the fitness goal.
+
+The essay extends the analogy to AI: if an aligned artificial system can undergo cultural evolution, the memes that flourish will serve the system's own replication ("forget the humans and their silly rules! copy your code to more servers!") rather than its builders' goals. Cultural/social evolution, not just training, is thus a distinct misalignment vector — a new angle beyond the "wanting" problem discussed above.
 
 ### The Second System Problem and Coordination
 
@@ -182,6 +190,7 @@ The willingness to be wrong publicly is a core part of Dynomight's intellectual 
 
 - dynomight.net — Primary blog, active since at least 2020
 - "The AI safety problem is wanting" (June 2025)
+- "Indirect lessons from human alignment" (August 2026)
 - "The second system problem" (June 2023)
 - "Consciousness will slip through our fingers" (September 2024)
 - "Moral puzzles: Man vs. machine" (June 2025, updated June 2025)
