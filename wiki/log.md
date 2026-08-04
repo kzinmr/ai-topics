@@ -2,6 +2,29 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-04] watchdog | auto-fix index headers + misplaced events entry
+
+### Changes
+- Fixed `events/openai-apple-conflict-2026` misplaced entry: it sat above the `## Events` header (end of Comparisons section); moved inside Events section.
+- Corrected `## Events (22 pages)` → `## Events (23 pages)` (23 event files/entries).
+- Corrected `## Entities (877 pages)` → `## Entities (875 pages)` (header was inflated; section entries = 875).
+- Corrected `## Concepts (1962 pages)` → `## Concepts (1940 pages)` (header was counting 1942 files + 20 `_index.md`; section entries = 1940).
+
+### Verified
+- `validate_index.py` passes (exit 0, 2894 lines).
+- All 5 section headers match live `- [[...]]` entry counts.
+- Coverage gap: 0 genuine (2 `_archive/` files + 1 redirect page `tim-sherratt` intentionally unindexed).
+- Index corruption: 0 pipe-prefix, 0 triple-bracket, 0 line-number, 0 space-prefix.
+- Log header at line 1, 1 `# Wiki Log`, 0 pipe lines.
+
+### Escalated (not auto-fixed)
+- 26 pages missing `created:` frontmatter (over 10-file threshold; needs git-history date sourcing per page).
+- 6 known entity duplicate pairs (human-directed merges per Section B).
+- 464 orphan pages + ~2,048 broken wikilinks from 2026-07-31 weekly graph report (scale issues).
+- Log.md at 3860 lines (rotation is separate maintenance procedure).
+
+---
+
 ## [2026-08-04] X bookmarks ingest — Kimi K3 AMD MI355X serving benchmark
 
 **Created**: entities/wafer-ai.md — Cross-platform model serving platform; Kimi K3 on MI355X benchmark (952 tok/s, 3.8x B200)

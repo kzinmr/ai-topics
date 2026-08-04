@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (877 pages)
+## Entities (875 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -880,7 +880,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1962 pages)
+## Concepts (1940 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2860,9 +2860,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-- [[events/openai-apple-conflict-2026]] — OpenAI vs Apple Legal Conflict — OpenAI public rebuttal to Apple lawsuit, August 2026
-## Events (22 pages)
+## Events (23 pages)
 
+- [[events/openai-apple-conflict-2026]] — OpenAI vs Apple Legal Conflict — OpenAI public rebuttal to Apple lawsuit, August 2026
 - [[events/2026-07-29-rsi-pace-letter]] — RSI Pace Letter: 1,171 OpenAI/Anthropic/GDM/Meta/Thinky employees sign letter requesting US international AI pacing framework (July 29, 2026)
 - [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
 - [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft
