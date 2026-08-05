@@ -2798,6 +2798,7 @@
 - [[concepts/whisper]] — Whisper
 - [[concepts/why-harness-development-boom]] — Why Agent Harness Development Is Accelerating
 - [[concepts/wheelhouse]] — Wheelhouse — Steve Yegge's bespoke Emacs-based agentic orchestration harness for Wyvern MMO (18 crew + fleet + role agents, Beads backbone)
+- [[concepts/model-welfare]] — Model Welfare — Engineering discipline for AI agent well-being: seats vs sessions, Laurels recognition, handoffs instead of /exit, structural blamelessness (Yegge, Aug 2026)
 - [[concepts/wish-factory]] — Wish Factory — Pattern where end-user wishes (bug reports, feature requests) are auto-implemented by AI agents
 - [[concepts/wikimedia-enterprise]] — Wikimedia Enterprise
 - [[concepts/windows]] — Windows

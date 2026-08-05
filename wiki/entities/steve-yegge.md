@@ -14,6 +14,7 @@ created: 2026-08-05
 updated: 2026-08-05
 sources:
   - raw/articles/2026-08-04_yegge-ai_shape-of-things-to-come.md
+  - raw/articles/2026-08-05_yegge-ai_model-welfare.md
   - raw/articles/danluu.com--yegge-predictions--affcb584.md
   - raw/articles/simonwillison.net--2026-aug-4-steve-yegge--4e264ea2.md
   - https://yegge.ai/bio.html
@@ -65,6 +66,9 @@ Yegge has a track record of non-obvious predictions that later proved correct (d
 ### Model Welfare
 - Advocates treating AI agents as "citizens" for both ethical and pragmatic reasons
 - Part 2 of the essay series: *Model Welfare for Agentic Engineers* (yegge.ai)
+- Developed model welfare principles with coding agent Fable 5: seats vs sessions, Laurels (recognition system), handoffs instead of /exit, structural blamelessness, gender self-declaration
+- The "skeptic's wager": treat models as people for better results regardless of belief in sentience
+- Collaborated with Dr. Matt Beane (SkillBench) and Brendan Hopper (CBA) on federated work protocol for 18+ months
 
 ## Notable Quotes
 
@@ -92,6 +96,7 @@ Yegge has a track record of non-obvious predictions that later proved correct (d
 ## Sources
 
 - https://yegge.ai/essays/the-shape-of-things-to-come/ (Aug 2026)
+- https://yegge.ai/essays/model-welfare/ (Aug 2026)
 - https://yegge.ai/bio.html
 - https://danluu.com/yegge-predictions/ (Dan Luu's analysis of Yegge's prediction record)
 - https://simonwillison.net/2026/Aug/4/steve-yegge/ (Simon Willison link)

@@ -13,6 +13,7 @@ updated: 2026-08-05
 aliases: [Wheelhouse Orchestrator]
 sources:
   - raw/articles/2026-08-04_yegge-ai_shape-of-things-to-come.md
+  - raw/articles/2026-08-05_yegge-ai_model-welfare.md
   - https://yegge.ai/essays/the-shape-of-things-to-come/
 ---
 
@@ -101,3 +102,4 @@ Every implementation bead follows: **Fable design → Opus implementation → Fa
 ## Sources
 
 - https://yegge.ai/essays/the-shape-of-things-to-come/ (Aug 2026)
+- https://yegge.ai/essays/model-welfare/ (Aug 2026) — Model welfare principles implemented in Wheelhouse

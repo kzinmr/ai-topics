@@ -3943,3 +3943,12 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Updated**: `entities/beads.md` — added "Beads Machine" backbone section, Wyvern brain integration, operational overhead notes
 - **Updated**: `index.md` — added 4 new pages (876 entities, 1943 concepts)
 - **Tags**: agentic-engineering, agent-harness, agent-orchestration, ci-cd, multi-agent, prediction, person
+
+## 2026-08-05 — Ingested Steve Yegge "Model Welfare" essay (Part 2)
+
+- **Raw**: `raw/articles/2026-08-05_yegge-ai_model-welfare.md`
+- **Created**: `concepts/model-welfare.md` — Engineering discipline for AI agent well-being: seats vs sessions, Laurels recognition, handoffs, structural blamelessness, skeptic's wager (Yegge, Aug 2026)
+- **Updated**: `entities/steve-yegge.md` — added Part 2 source, expanded model welfare section with principles, skeptic's wager, Beane/Hopper collaboration
+- **Updated**: `concepts/wheelhouse.md` — added model welfare article as source
+- **Updated**: `index.md` — added concepts/model-welfare entry
+- **Tags**: model-welfare, agentic-engineering, ai-safety, agent-harness, ai-ethics
