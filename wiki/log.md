@@ -1,3 +1,15 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-08-05] watchdog | auto-fix log header burial + Concepts header count
+
+- **Log header burial**: `# Wiki Log` was buried at line 15 by an orphaned Active Crawl entry prepended before it. Restored header to line 1 via `fix_log_header_burial.py` (272 entries preserved, 0 pipe corruption).
+- **Concepts header count**: corrected `## Concepts (1944 pages)` → `## Concepts (1945 pages)` to match actual section entries (verified: 1945 entries, 0 ghosts, 2 `_archive/` files intentionally unindexed).
+- **Verified clean**: index corruption (pipe prefix 0, triple bracket 0, line-number 0), ghost entries 0, validate_index.py exit 0, log standalone pipes 0.
+- **Reported (no auto-fix)**: x_accounts stale(26h) alert = transient (2-day schedule, within window); 26 pages missing `created:` (10+ files → escalate); 6 duplicate entity pairs (eugene-yan/eugeneyan, lilian-weng/lilianweng, giles-thomas/gilesthomas, samuel-colvin/samuelcolvin, deliberate-coder/deliberatecoder, martin-fowler/martinfowler) — merge needs human review.
+
 ## [2026-08-05]
 
 ### Active Crawl — 4 new raw articles, 1 new concept page, 2 enriched pages
@@ -12,9 +24,7 @@
 | 2026-08-05 11:00 UTC | raw/articles/2026-08-04_github-ryanzhou_deepseek-v4-flash-mi300x.md | saved | GitHub: DeepSeek V4 Flash on single AMD MI300X |
 | 2026-08-05 11:00 UTC | raw/articles/2026-08-04_lwn_agent-github-compromise.md | saved | LWN.net: LLM agent attempts to compromise GitHub project |
 
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
+---
 
 ## [2026-08-05] newsletter-wiki-ingest (10:45) | 3 takes + 6 references enriched from newsletter-triage checkpoint (recovered from render failure)
 - **Recovery**: newsletter-triage cron output failed JSON parse (output_path 4e8b0d92c6a1/2026-08-05_10-38-56.md); checkpoint triage_latest.json valid (run_id 20260805T101419Z) → Case C pattern, processed directly. Archive of skip/reference already committed by triage (71b0a519) — archive step skipped.
