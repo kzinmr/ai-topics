@@ -43,6 +43,17 @@ _Log of all wiki changes. Newest entries at top._
 - Index descriptions updated for 8 pages. Archive: skip/reference already archived by blog-triage (02a1c56e).
 
 
+## [2026-08-05] raw-backlog-ingest (14:00) | all 5 articles skip — 4th re-selection, composition change verified captured
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 14:00, run 20260805T140037Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
+- **Batch composition change**: wheresyoured "The AI Demand Bubble" replaced Simon Willison pelican-riding-a-bicycle feed vs the 10:00 run; other 4 (Yegge Shape of Things to Come, LLVM JITLink, Fireworks roundups Jan+May 2026) unchanged.
+- **Verified already captured (5)**:
+  - entities/ed-zitron.md "The AI Demand Bubble (August 2026)" section (line 723+) — captured by today's blog-wiki-ingest (10:30): Barclays Sandler 73-75% AWS AI revenue concentration, UBS/Wells Fargo estimates, $37B AI run rate Q3 FY2026 + Q4 disclosure refusal, Anthropic/OpenAI compute-spend concentration, Google $10-30B into Anthropic.
+  - entities/steve-yegge.md (102 lines) covers full essay; sources includes raw/articles/2026-08-04_yegge-ai_shape-of-things-to-come.md.
+  - concepts/llvm.md JITLink section (lines 67-71, 88) — 2023 i386 ELF backend guide (non-AI compiler infra).
+  - entities/fireworks-ai.md "Open Source LLM Roundup Series (Jan & May 2026)" (lines 214-223) — both raw roundup paths in sources.
+- **Archive**: archive_triage.py raw_backlog --keep-reference — 1 new archived (wheresyoured AI Demand Bubble), 4 dedup_skipped, total 2,296 URLs. 4th consecutive re-selection of this batch; the newly archived URL may help advance the collect queue, but the pipeline continues to re-select high ai-hint items until genuinely new AI-relevant raw articles arrive.
+
 ## [2026-08-05] raw-backlog-ingest (10:00) | all 5 articles skip — third re-selection of same batch, all already captured
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 10:00, run 20260805T100024Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
