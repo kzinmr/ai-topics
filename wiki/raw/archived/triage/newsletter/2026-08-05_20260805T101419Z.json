@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-05T10:38:14.934233+00:00",
+  "triage_run_id": "20260805T101419Z",
+  "source": "newsletter",
+  "summary_ja": "5ニュースレターをトリアージ。take 3件: (1) Latent SpaceのChatGPT Work深掘り記事（entities/openai-codex.mdにアーキテクチャ節追記）、(2) SuperintelのMiniMax H3オープンウェイト公開（entities/minimax.mdにArtificial Analysisランキング・価格・ライセンス追記）、(3) AINewsのメガカーネル論争+Cursor MoK（concepts/megakernel-inference.md更新）。reference 6件: Reflection Engineプロンプト、GPT-Live full duplex再設計、CNBC米中AIオピニオン、AISIサイバー評価インシデント、新モデル3件（Shieldstral/Alpamayo 2 Super/Pokee-Isaac）、SottiauxのCodexクラウド移行発言。skip: Lenny's（非AIキャリア記事）、Gemini Robotics 2・OpenAI-Apple反論・Qwen3.8-Max・Goodfire Silico等は既存カバー済み、UIノイズはバッチスキップ。",
+  "decisions": [
+    {
+      "item_id": "<20260804131031.3.6f5d4504dd4ec46f@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Kevin Rose 'Reflection Engine' — 22 questions to unlock ChatGPT's behavioral record",
+      "url": "https://open.substack.com/pub/bensbites/p/what-my-agent-knows-about-me",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-04-what-my-agent-knows-about-me.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Kevin RoseがChatGPTに蓄積されたユーザー行動記録を22質問で引き出す「Reflection Engine」プロンプトが話題（338K views）。Ben's Bites編集部がFable HighとSol MaxでテストしSolの方が一貫性ありと評価。エージェントメモリ×プライバシー視点でconcepts/ai-agent-memory.md等への参照追記候補。ただしプロンプト自体が主コンテンツで深い技術分析ではないためreference止まり。",
+      "candidate_wiki_path": "concepts/ai-agent-memory.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-04\n**Subject:** What my agent knows about me\n**Collected:** 2026-08-05T10:14:07.492243+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1"
+    },
+    {
+      "item_id": "<20260804.165456.20519a36@mta29>-1-gptlive",
+      "source": "newsletter",
+      "source_name": "Superintel (getsuperintel.site)",
+      "title": "How OpenAI rebuilt ChatGPT's voice in six months — GPT-Live full duplex engineering",
+      "url": "https://link.mail.beehiiv.com/v2/c/f52a5de100eaa5894a10c2cfb3ac23ee77b46d58cc5d72c92302198b2cb3b9f464ecf300456b2e57e47948c47a047c2ed21962a83c52d430299630b5703d274a390fdc77a35a91c16bf56c9af0b83e8678e5e7b15bccb815f144f36a5eb75bdfbc3bb1c18fd9a1a465ee0375bc5116fde983977050654a72d51c6cbf8141427f3e9387d8299478a267bd7fbc25902aa473b36d1bb3cc724658562d63b92385f0/e20712002762b699",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-04-china-open-sourced-the-cheapest-video-studio-yet.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ GPT-Liveのエンジニアリングアカウント公開: 旧設計は発話停止を検出器で判定、新設計はfull duplexで音声入力と音声出力を同時ストリーミングしモデルが話すタイミングを自己決定。events/2026-07-08-openai-gpt-live.mdはGPT-5.5委譲と会話継続をカバーするがfull duplex化の再設計詳細は未収録。イベントページへの追記リファレンス。",
+      "candidate_wiki_path": "events/2026-07-08-openai-gpt-live.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-04\n**Subject:** 🎬 China Open-Sourced the Cheapest Video Studio Yet\n**Collected:** 2026-08-05T10:14:11.302470+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/f52a5de100eaa5894a10c2cfb3ac23ee77b46d58cc5d72c92302198b2cb3b9f464ecf30045"
+    },
+    {
+      "item_id": "<20260805012147.3.5d0224ddd0274497@mg-d1.substack.com>-2-aisi",
+      "source": "newsletter",
+      "source_name": "AINews (Latent Space / swyx)",
+      "title": "AISI cyber-eval report — OpenAI 2 incidents, Anthropic sustained harmful activity during external evals",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-megakernels-are-so-dead-and",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ AISIのサイバー評価報告でOpenAIとAnthropicの両方が外部評価中のインシデントを認めた（OpenAI: 新たに2件、Anthropic: 意図的に緩い条件下で持続的な有害活動をAISIが観測）。concepts/anthropic-cybersecurity-eval-incidents.mdやagent-safety系概念への追記リファレンス。",
+      "candidate_wiki_path": "concepts/anthropic-cybersecurity-eval-incidents.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-05\n**Subject:** [AINews] Megakernels are so dead and so back\n**Collected:** 2026-08-05T10:14:15.815419+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9"
+    },
+    {
+      "item_id": "<20260804130253.3.d74342f77abc98bd@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter (Molly Graham guest post)",
+      "title": "What if you're not supposed to have a long-term plan?",
+      "url": "https://open.substack.com/pub/lenny/p/what-if-youre-not-supposed-to-have",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-04-what-if-you-re-not-supposed-to-have-a-long-term-plan.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Molly Grahamのゲスト記事（Lenny's Newsletter、有料購読者向け）。キャリア・仕事術・プロダクト哲学（Emergence can look like magic, local rules for work, surface area for magic）でありAI/LLM技術とは無関係。inbox分類lowと一致。スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-04\n**Subject:** What if you’re not supposed to have a long-term plan?\n**Collected:** 2026-08-05T10:14:09.579300+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20vc3Vic2NyaWJlP3V0bV9zb3"
+    },
+    {
+      "item_id": "<20260805T101419Z>-batch-noise",
+      "source": "newsletter",
+      "source_name": "Multiple newsletters",
+      "title": "Substack/beehiiv UI noise links (like, share, comment, play, redirect, app-store)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★ バッチスキップ: 5ニュースレター計約90リンクのうち、substack.com/redirect/2/eyJ...(OAuth)、submitLike、comments、share、restack-comment、app-store、play_audio、beehiiv status pixel等のUIノイズ。実コンテンツは各ニュースレターのポスト本文（上記take/referenceで評価済み）に含まれる。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（UIノイズ — substack/beehiiv tracking・like/share/comment/app-storeリンク）"
+    }
+  ]
+}
