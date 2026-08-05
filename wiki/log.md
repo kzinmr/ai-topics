@@ -3926,3 +3926,9 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Tags**: llm, prompting, human-agent-collaboration, technical-debt, coding-agents, ai-slop
 - **Summary**: Synthesized Sean Goedecke's "LLMs reward expertise" thesis (LLMs steepen the skill curve) with Ankur Sethi's cognitive debt warning (retype LLM code instead of copy-pasting). Core insight: LLMs amplify existing expertise rather than replacing it. Cross-linked to domain-expertise-ai-moat, cognitive-debt, ai-slop, coding-agents, prompt-engineering, vibe-coding.
 - **Index**: Inserted under Concepts section (L2044, between llm-evaluation and llm-inference)
+
+## 2026-08-05 — Updated OpenAI-Apple conflict articles with full evidence
+
+- Updated `raw/articles/2026-08-03_openai_apple-is-getting-this-wrong.md`: Added full iMessage transcripts summary and email correspondence evidence from OpenAI's rebuttal
+- Updated `events/openai-apple-conflict-2026.md`: Fixed "Chang Li" → "Chang Liu" name error, added Tang Tan defense section, corrected Chang Liu section with "residual access" and iMessage evidence details
+- Source: https://openai.com/index/apple-is-getting-this-wrong/

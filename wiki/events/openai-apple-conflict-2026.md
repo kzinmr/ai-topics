@@ -1,7 +1,7 @@
 ---
 title: "OpenAI vs Apple Legal Conflict (August 2026)"
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 type: event
 tags:
   - openai
@@ -49,12 +49,20 @@ OpenAI's public response systematically challenges several key claims from Apple
 - Without further communication, Apple filed the lawsuit in July 2026
 - OpenAI characterizes this as a failure to engage in good-faith dispute resolution before litigation
 
-### 4. Chang Li's Open-Source Work
-- Apple accused Chang Li of taking trade secrets to OpenAI
-- OpenAI asserts that Li's work was entirely open-source and publicly available
-- This raises key questions about the boundary between trade secrets and open-source contributions in AI
+### 4. Chang Liu's Departure and "Residual Access"
+- Apple accused Chang Liu of accessing Apple confidential information after leaving
+- OpenAI's rebuttal: Apple employees **proactively reached out to Liu** and asked for his help locating files and information
+- OpenAI published iMessage transcripts showing Apple colleagues asking Liu to help copy files, answer technical questions about Apple hardware projects, and assist with their work — even weeks after his departure
+- The "residual access" issue is described as a common Apple problem caused by the company failing to properly manage system access when employees leave
+- Liu's last day at Apple was January 22, 2026
 
-### 5. Tone and Characterization
+### 5. Tang Tan's Defense
+- Apple accused Tang Tan of trying to obtain and use Apple trade secrets
+- OpenAI states Tang was "always clear with the team that we do not want, and must not use, any confidential information from other companies"
+- Tang served Apple for more than 24 years and was widely known as one of the most innovative leaders at the company
+- Tang was previously VP of Product Design at Apple, leading iPhone and Apple Watch design
+
+### 6. Tone and Characterization
 - OpenAI describes the lawsuit as **"careless, aggressive and oddly personal"**
 - The company frames the legal action as part of a broader campaign by Apple against AI companies hiring former Apple employees
 
