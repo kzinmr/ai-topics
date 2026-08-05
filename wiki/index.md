@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (875 pages)
+## Entities (876 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -763,6 +763,7 @@
 - [[entities/stefano-marinelli]] — Stefano Marinelli
 - [[entities/stella-biderman]] — Executive Director and co-founder of EleutherAI, leading the open-source AI movement
 - [[entities/steve-blank]] — Steve Blank
+- [[entities/steve-yegge]] — Steve Yegge — Veteran software engineer, blogger, AI industry commentator; builds Wyvern MMO with multi-agent fleets via Wheelhouse harness
 - [[entities/stochi]] — Independent AI researcher focused on post-training, agents, RL, model architectures, and ML systems. Previously shipp...
 - [[entities/subquadratic]] — Subquadratic (SubQ)
 - [[entities/substack]] — substack
@@ -880,7 +881,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1940 pages)
+## Concepts (1943 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2015,6 +2016,7 @@
 - [[concepts/kv-cache-compression]] — KV Cache Compression — Eviction, quantization, and geometry-based methods for reducing KV cache memory; two infrastructure problems (FlashAttention scores, paged-attention block reclamation) (June 29)
 - [[concepts/lambda-monolith-lambdalith]] — Lambda Monolith (Lambdalith)
 - [[concepts/lambda-rlm]] — Lambda-RLM
+- [[concepts/land-rush-cicd]] — Land Rush CI/CD — CI/CD pattern for agentic commit rates: megabatch onto main + swarm diagnosis instead of bisection (Yegge, 2026)
 - [[concepts/langgraph]] — LangGraph
 - [[concepts/language-server-protocol]] — language-server-protocol
 - [[concepts/late-interaction-retrieval]] — Late-Interaction Retrieval (ColBERT)
@@ -2795,6 +2797,8 @@
 - [[concepts/werkzeug]] — Werkzeug
 - [[concepts/whisper]] — Whisper
 - [[concepts/why-harness-development-boom]] — Why Agent Harness Development Is Accelerating
+- [[concepts/wheelhouse]] — Wheelhouse — Steve Yegge's bespoke Emacs-based agentic orchestration harness for Wyvern MMO (18 crew + fleet + role agents, Beads backbone)
+- [[concepts/wish-factory]] — Wish Factory — Pattern where end-user wishes (bug reports, feature requests) are auto-implemented by AI agents
 - [[concepts/wikimedia-enterprise]] — Wikimedia Enterprise
 - [[concepts/windows]] — Windows
 - [[concepts/windows-95]] — Windows 95

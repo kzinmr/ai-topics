@@ -6,7 +6,7 @@ tags:
   - database
   - regression
 created: 2026-05-01
-updated: 2026-08-04
+updated: 2026-08-05
 aliases: [Beads (bd), bd, Beads Issue Tracker, Gastown Hall Beads]
 sources:
   - https://gastownhall.github.io/beads/
@@ -15,6 +15,7 @@ sources:
   - https://www.npmjs.com/package/@beads/bd
   - https://pypi.org/project/beads-mcp/
   - raw/articles/simonwillison.net--2026-aug-4-steve-yegge--4e264ea2.md
+  - raw/articles/2026-08-04_yegge-ai_shape-of-things-to-come.md
 ---
 
 
@@ -158,6 +159,26 @@ Available via PyPI (`beads-mcp`) — allows any MCP-compatible agent to interact
 ## Model Regression Fragility (Aug 2026)
 
 In August 2026, Yegge reported that **Gas Town** — his agentic development tool in the same ecosystem as Beads — "fell apart at the seams with Opus 4.7." Up through Opus 4.6 it "was working brilliantly"; the 4.7 upgrade introduced a "just two more things" tic that prevented the model from ever converging on being ready to do real work, as it always wanted to fiddle with Gas Town itself. The tic never went away, and Gas Town "effectively burned down." The episode is a concrete data point on **model-upgrade regression**: a frontier-model point release can silently break agent workflows and tools built for prior model behavior (see [[entities/anthropic]], [[entities/claude-code]], [[concepts/agentic-engineering]]).
+
+## Beads as the "Beads Machine" Backbone (Aug 2026)
+
+In "The Shape of Things to Come" (Aug 2026), Yegge describes the pattern underlying all his orchestrators as a **"Beads machine"** — the core mechanism of matching work producers to work consumers:
+
+- **Gas Town** = "nothing but a Beads machine"
+- **Gas City** = "also a Beads machine"
+- **[[concepts/wheelhouse]]** = "yet another Beads machine"
+
+The Beads machine pattern requires only three ingredients: infinite tokens (via Claude Max account rotation), Beads (as the work graph), and coding agents. Beads handles atomic claiming, leasing, gates, triggers, and knowledge-graph accumulation.
+
+### Operational Overhead
+Yegge notes Beads is "still a bit janky" because its workload strains databases — companies that adopt it tend to put *everything* into Beads. At Wheelhouse scale, the Dolt backend handles ~12,000 git commits/day. Agents burn tokens invisibly on sync, repair, and backup operations.
+
+### Wyvern Brain Integration
+In Wheelhouse's knowledge architecture, Beads serves as the **provenance journal** — the record of all work done and why. It complements:
+- `brain/` (strategy, playbooks) — pulled on demand
+- `doc/` (system docs) — pulled by whoever works on the system
+- `bd remember` (operational facts) — pushed into every session via `bd prime`
+- `.claude/skills/` (recurring task procedures) — auto-loaded on match
 
 ## Beads vs Other Agent Memory Solutions
 

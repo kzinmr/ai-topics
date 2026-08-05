@@ -3932,3 +3932,14 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Updated `raw/articles/2026-08-03_openai_apple-is-getting-this-wrong.md`: Added full iMessage transcripts summary and email correspondence evidence from OpenAI's rebuttal
 - Updated `events/openai-apple-conflict-2026.md`: Fixed "Chang Li" → "Chang Liu" name error, added Tang Tan defense section, corrected Chang Liu section with "residual access" and iMessage evidence details
 - Source: https://openai.com/index/apple-is-getting-this-wrong/
+
+## 2026-08-05 — Ingested Steve Yegge "Shape of Things to Come" essay
+
+- **Raw**: `raw/articles/2026-08-04_yegge-ai_shape-of-things-to-come.md`
+- **Created**: `entities/steve-yegge.md` — person entity for Steve Yegge (Wyvern MMO developer, multi-agent fleet operator)
+- **Created**: `concepts/wheelhouse.md` — bespoke Emacs-based agentic orchestration harness (18 crew + fleet + role agents)
+- **Created**: `concepts/wish-factory.md` — end-user wishes auto-implemented by AI agents (Guy Podjarny / Tessl inspiration)
+- **Created**: `concepts/land-rush-cicd.md` — CI/CD pattern for agentic commit rates: megabatch + swarm diagnosis
+- **Updated**: `entities/beads.md` — added "Beads Machine" backbone section, Wyvern brain integration, operational overhead notes
+- **Updated**: `index.md` — added 4 new pages (876 entities, 1943 concepts)
+- **Tags**: agentic-engineering, agent-harness, agent-orchestration, ci-cd, multi-agent, prediction, person
