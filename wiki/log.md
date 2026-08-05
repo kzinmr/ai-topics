@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-05] dreaming | Pattern E saturation — 3 references, 0 takes
+- **Scan**: 205 raw articles (Aug 3-5), 17 decisions (3 references, 14 skips). Prior triage (Aug 4) consumed by dreaming-wiki-ingest.
+- **Archive**: archive_triage.py dreaming — 17 candidates, 12 new archived, 5 dedup_skipped, total 2,307 URLs.
+- **Reference candidates** (enrichment targets for downstream dreaming-wiki-ingest):
+  - (1) entities/warp-terminal.md — Warp Agent CLI standalone launch: mux PTY architecture, model routing, persistent sessions, remote agents, full-screen app control. NOT covered in entity page.
+  - (2) entities/harvey.md — Harvey AI Tax Research + Playbook Builder: multi-jurisdiction tax research agent, playbook auto-generation from existing contracts (300+ customer playbooks). NOT covered in entity page.
+  - (3) entities/hebbia.md — Hebbia "Rethinking Control in the Age of AI Delivery": Nikita Knyazev on AI delivery program management, gardener-not-architect approach, UK vaccination logistics experience. NOT covered in entity page.
+- **Already covered** (skip): DeepMind leadership (entities/deepmind.md), Yegge Wheelhouse+Thunderdome (entities/steve-yegge.md), Yegge model welfare (concepts/model-welfare.md), Sierra Context Engine (entities/sierra.md), Zitron demand bubble (entities/ed-zitron.md), OpenAI-Apple conflict (events/openai-apple-conflict-2026.md), Kimi K3 MI355x (concepts/kimi-k3.md), Dwarkesh pricing paradox (concepts/ai-compute-pricing-paradox.md), Goedecke expertise (entities/seangoedecke-com.md), Marcus Astra (entities/openai-astra.md), Micah Lee agentic coding (entities/micahflee.md).
+- **Non-AI skips**: 13 articles (shkspr.mobi, dfarq, johndcook ×2, techcrunch, devblogs ×2, macrumors, snopes, eli.thegreenplace, om.co, terminalwidget, pluralistic, lcamtuf).
+
 ## [2026-08-05] health | Empty wikilink auto-fix (83 links) + verification
 
 - **Fixed 83 empty wikilinks** (`- — desc` missing `[[slug]]` anchor) across 70 entity/concept pages. Target-verified fixes only: 52 unique targets, 0 broken links introduced, `_index.md`/`_archive/` untouched.
