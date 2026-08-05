@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-01
+updated: 2026-08-05
 tags:
   - security
   - company
@@ -26,6 +26,8 @@ sources:
   - raw/articles/2026-07-31_harvey_ai-trademark-search.md
   - raw/articles/2026-06-19_harvey_legal-operations-management.md
   - raw/articles/2026-08-01_harvey_legal-ai-vs-traditional-legal-research.md
+  - raw/articles/2026-08-05_harvey_ai-tax-research.md
+  - raw/articles/2026-08-05_harvey_playbook-builder-in-harvey.md
 ---
 
 # Harvey
@@ -366,3 +368,37 @@ Harvey picks up where the search ends for IP teams:
 The clear division of tools: a **search database** finds what exists; **counsel supported by legal AI** carries the legal work that follows.
 
 **Source:** [[raw/articles/2026-07-31_harvey_ai-trademark-search]]
+
+## AI Tax Research (August 2026)
+
+Harvey published a product guide (Aug 4, 2026) on **AI tax research** — applying the platform's grounded, citation-based research and drafting approach to tax questions spanning federal, state, and international jurisdictions.
+
+**What purpose-built AI tax research provides** (vs. general chatbots):
+- **Grounded in primary authority** — analyzes the IRC, Treasury Regulations, agency guidance, revenue rulings, private letter rulings, and case law; citations traceable to underlying authority
+- **Current law** — refreshed as tax rules change (new legislation, regulations, IRS guidance), unlike chatbot knowledge fixed at training time
+- **Verifiable citations** — every answer carries source-grounded citations with a record of authorities relied on
+- **Enterprise security** — prompts and uploaded documents excluded from model training; compliance certifications for client tax data
+
+**Multi-jurisdictional workflows**: cross-border transactions (US federal + international rules), SALT nexus issues across states, transfer pricing, and M&A tax — the agent connects authorities to facts and returns a cited analysis in minutes, then drafts a structured memo linked to the underlying authority on the same platform.
+
+**Professional oversight remains**: tax professionals must verify cited authorities, apply judgment on conflicting guidance, and defend the position. Harvey explicitly positions the tool as not intended for tax preparation, filing, or planning.
+
+**PwC custom tax models**: Harvey co-built custom tax models with PwC, combining curated tax datasets with Harvey's LLM expertise, refined with feedback from PwC tax specialists — augmenting expert judgment rather than replacing it.
+
+Source: raw/articles/2026-08-05_harvey_ai-tax-research.md
+
+## Playbook Builder (August 2026)
+
+Harvey's **playbook builder** (Aug 4, 2026) turns existing standards, past documents, or a guided conversation into a review-ready playbook in minutes — addressing the EY Law finding that contracting teams spend 40%+ of their time on routine, low-complexity contract work.
+
+**How it works**: Harvey analyzes uploaded sources (playbooks, marked-up contracts, a Harvey-curated template, or from scratch), asks clarifying questions, and drafts rules while a side-by-side panel shows the playbook taking shape in real time. The methodology encodes lessons from **300+ customer playbooks** built by Harvey's legal engineers and in-house product lawyers — how to weigh different inputs, reconcile conflicting precedents, and translate them into rules that produce useful review output.
+
+**Capturing negotiation behavior**: beyond identifying acceptable and unacceptable language, the builder encodes preferred positions, fallback language, guidance, actions, conditions, and escalation paths (e.g., a data processing rule can direct Harvey to flag nonstandard breach notification terms for privacy counsel rather than auto-redlining).
+
+**Quality controls**: Harvey surfaces coverage gaps, makes rules more specific, and suggests fallback positions; each rule includes a summary, explanation, and citations to the source documents behind it for quick owner approval.
+
+**Results**: For Carvana, scaling playbooks with Harvey reduced drafting and review time by **80%**. Playbooks run against contracts in Word or the Harvey web app for consistent first-pass reviews; as standards evolve, users can update a fallback, liability cap, or escalation path without rebuilding the underlying rules.
+
+This complements the June 2026 Agent Builder story — the playbook remains "the asset," and the builder lowers the cost of creating it from firm precedent.
+
+Source: raw/articles/2026-08-05_harvey_playbook-builder-in-harvey.md

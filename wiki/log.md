@@ -1,6 +1,11 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-05] dreaming-wiki-ingest (18:25) | 3 references enriched from dreaming-group triage checkpoint (recovered from render failure)
+- **Recovery**: dreaming-group cron output failed JSON parse (output_path c4a9e8d2f671/2026-08-05_18-18-53.md); triage checkpoint triage_latest.json valid (run_id 20260805T181030Z, 17 decisions: 3 refs, 14 skips). Upstream committed archive-only at 9ebb2dbd (log entry + archive JSON, no enrichment) — enrichment executed downstream.
+- **Enriched**: entities/warp-terminal.md (Warp Agent CLI standalone — mux PTY architecture, model routing, persistent/remote sessions, full-screen app control, cloud handoff, pricing); entities/harvey.md (AI Tax Research — multi-jurisdictional workflows, PwC custom tax models; Playbook Builder — 300+ customer playbooks methodology, Carvana 80% stat); entities/hebbia.md (Rethinking Control in AI Delivery — Nikita Knyazev gardener-not-architect thesis).
+- **Archive**: already committed by upstream (2026-08-05_20260805T181030Z.json, 12 new archived) — archive step skipped.
+
 
 ## [2026-08-05] dreaming | Pattern E saturation — 3 references, 0 takes
 - **Scan**: 205 raw articles (Aug 3-5), 17 decisions (3 references, 14 skips). Prior triage (Aug 4) consumed by dreaming-wiki-ingest.

@@ -1,7 +1,7 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-08-04
+updated: 2026-08-05
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
@@ -14,6 +14,7 @@ sources:
   - raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers.md
   - raw/articles/2026-07-17_warp_how-to-build-a-cloud-software-factory-self-improving-code-review.md
   - raw/articles/2026-08-04_warp_how-to-build-a-cloud-software-factory-computer-use-verification.md
+  - raw/articles/2026-08-05_warp_introducing-the-warp-agent-cli-coding-agent.md
 ---
 
 # Warp Terminal
@@ -231,6 +232,24 @@ The fourth post in Warp's software factory series (August 3, 2026) added **compu
 **Demo**: Using a Nano Banana agentic image editor demo repo, Warp showed (1) reproducing a bug where image previews render at thumbnail size instead of gallery size, with the agent auto-generating screenshots of the broken behavior, and (2) implementing a "clear"/"replace" UI feature end-to-end with acceptance criteria checked by the verifier and a video proving the controls work.
 
 The series' next post previews **monitoring agents** that observe features/fixes after release and feed back into the Triage phase, completing the factory loop.
+
+### Warp Agent CLI (August 2026)
+
+On August 4, 2026, Warp launched the **Warp Agent CLI**, a standalone CLI version of the Warp Agent usable in any terminal — Ghostty, iTerm 2, VS Code, and the built-in Windows and Mac Terminals. It is a multi-model, cost-optimizing harness built on Warp's terminal infrastructure, positioned as a "built-in mux'er across agent sessions" to fix the shell-integration gaps of other agentic CLIs.
+
+**Mux PTY architecture**: Within an agent session, Warp runs and manages pty connections with a layer of indirection between the agent and the underlying shell (tmux-like architecture). Because the mux is managed by Warp's terminal infrastructure, the agent is natively aware of terminal inputs/outputs (Warp's "blocks"), enabling:
+
+- **Persistent sessions and remote agents** — switch directories mid-session; run agents on remote machines over ssh without installing remote binaries; the agent session persists even as the base "state" changes (useful for multi-repo projects and cloud machines with limited install permissions)
+- **Agent-driven full-screen/interactive apps** — drive sqlite, python REPLs, gdb, htop, and vim through the agent session (e.g., generate SQL queries inside a REPL and interactively debug, set gdb breakpoints, or ask the agent to quit vim)
+- **Seamless terminal input** — `!` for shell commands plus a natural-language classifier that auto-distinguishes shell commands from agent prompts; includes Warp Terminal's tab-completion menu for arguments and flags
+
+**Model routing**: built-in auto-routing based on task complexity, with frontier and US-hosted open-weight models out of the box; first-class support for custom model routers where users define which models handle which tasks.
+
+**Multi-agent orchestration & cloud handoff**: the CLI supports orchestration agents delegating to subagents (arrow-key switching between subagent and orchestrator sessions), running cloud agents, and — unique to Warp — delegating across entirely different harnesses like Claude Code and Codex via the cloud platform. Work started in the CLI can be handed off to cloud agents, tracked centrally and steered via the web.
+
+**Pricing**: Warp subscription from $18/month ($20 of inference included); ad hoc credits from $10 without a subscription; or bring-your-own API key / OpenAI-compatible endpoint / SuperGrok login.
+
+The CLI release extends the [[concepts/agentic-engineering]] software factory trajectory — the agent now travels with the developer across any terminal rather than living only inside Warp Terminal.
 
 ## Strategic Context
 

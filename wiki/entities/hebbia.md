@@ -2,7 +2,7 @@
 title: "Hebbia"
 type: entity
 created: 2026-05-08
-updated: 2026-07-31
+updated: 2026-08-05
 tags:
   - company
   - search
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-06-06_hebbia_whats-new-june-disclosure-2026.md
   - raw/articles/2026-07-11_hebbia_every-data-integration-one-view.md
   - raw/articles/2026-07-31_hebbia_introducing-max.md
+  - raw/articles/2026-08-05_hebbia_rethinking-control-in-the-age-of-ai-delivery.md
 ---
 
 # Hebbia
@@ -89,6 +90,18 @@ Key positioning and capabilities:
 - **Rollout**: Initially rolling out to a small set of firms via preview request.
 
 **Source:** [[raw/articles/2026-07-31_hebbia_introducing-max]]
+
+### Rethinking Control in AI Delivery (August 2026)
+
+Hebbia engineer **Nikita Knyazev** published "Rethinking Control in the Age of AI Delivery" (Aug 4, 2026), arguing most AI programs are **over-controlled in the wrong places and under-controlled in the ones that matter**. Drawing on his late-2020 experience in UK vaccination logistics planning, he contrasts traditional delivery controls (multi-level plans, governance, phased delivery, peer review) with what a multi-thousand-user AI rollout actually needs.
+
+**What should stay fixed**: an assured L1 top-level plan, AI platform ownership (what agile calls product ownership), delivery governance, and architectural/design authority over how new agents get built.
+
+**What should loosen**: everything else. Because AI is a personal instrument — a tokenized digital worker applying institutional knowledge to a workflow — an institutional AI platform must serve both the enterprise and each individual employee. Knyazev frames the AI delivery team as **gardeners rather than architects**, cultivating each prompt, agent, and use case.
+
+**Case study**: a global insurance client scoped the initial deployment tightly with defined use cases and approvals over organization-wide shared workflows; after the program ended, business departments kept building new agentic workflows on their own. What prevented drift was unchanged platform ownership and architectural authority — departments could build in parallel without the whole thing falling apart. The rollout matured to the point where formal program delivery controls were no longer needed.
+
+**Source:** [[raw/articles/2026-08-05_hebbia_rethinking-control-in-the-age-of-ai-delivery]]
 
 ## Related
 
