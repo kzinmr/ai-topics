@@ -2,7 +2,7 @@
 title: Jimmy Maher — The Digital Antiquarian
 type: entity
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-08-05
 tags:
 - person
 - blogger
@@ -193,3 +193,5 @@ But this transparency strengthens rather than weakens his historical work. By ac
 - filfre.net--2026-04-the-mystery-of-rennes-le-chateau-part-3-a-secret-his--028f4fdc
 - filfre.net--2026-04-the-mystery-of-rennes-le-chateau-part-4-non-fiction---893d1378
 - filfre.net--2026-04-this-week-on-the-analog-antiquarian--a61b592d
+- filfre.net--2026-07-the-life-and-times-of-maxis-part-1-simeverything--9504892c
+- filfre.net--2026-07-the-life-and-times-of-maxis-part-2-simworld--8970f588

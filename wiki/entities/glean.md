@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-08-04
+updated: 2026-08-05
 tags:
   - company
   - search
@@ -28,6 +28,7 @@ sources:
   - raw/articles/2026-08-01_glean_work-ai-index-uk.md
   - raw/articles/2026-05-10_glean_knowledge-graph-agentic-engine.md
   - raw/articles/2026-07-28_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md
+  - raw/articles/2026-07-09_glean_the-enterprise-ai-copilot-playbook-for-business-leaders.md
 ---
 
 # Glean
@@ -268,6 +269,27 @@ Glean's Work AI Institute surveyed 1,500 UK digital workers as part of a global 
 - Half of UK workers say important information isn't accessible through their AI tools; 60% rerun the same prompt across multiple AI tools.
 
 The report argues institutional policy confidence creates a blind spot: policy establishes permission, but verification happens inside the work. It cites the 2025 High Court warning that solicitors/barristers could face contempt proceedings for AI-generated fabricated citations, with the SRA and Bar Standards Board reinforcing that responsibility sits with the lawyer. Recommendation: set review standards by risk, name the accountable person, build checks into workflows, and give approved tools the context they need.
+
+### Enterprise AI Copilot Playbook (July 2026)
+
+Glean published a vendor playbook for business leaders on deploying an **enterprise AI copilot** — a platform that connects to internal systems (documents, conversations, tickets, CRM, code repos) and delivers cited, permission-aware answers through a conversational interface. Key definitions and guidance:
+
+- **Copilot vs chatbot vs general-purpose AI assistant**: a chatbot is a phone tree (scripted); a copilot is a knowledgeable colleague that handles messy questions ("What did we decide about the EMEA pricing change in last week's Slack thread?"); general-purpose AI assistants (consumer ChatGPT) don't know your company.
+- **Assistants vs agents vs agentic AI**: assistants are reactive (you ask, it answers, grounded in company data); agents work best for repeatable, rule-based, high-volume workflows (ticket routing, CRM updates, compliance checks); agentic AI is the orchestration + governance layer underneath (multi-step planning, enforced approvals, audit trails). Shortcut: "If you'd explain the task to a new hire in a conversation, use an assistant. If you'd hand them an SOP and a checklist, build an agent."
+- **RAG grounding**: connectors pull data → index/chunk → knowledge graph maps relationships → retrieval finds relevant content → LLM generates cited answers. Glean positions its Enterprise Graph (100+ connected apps) as real-time permission-aware indexing rather than nightly batch sync.
+- **Deployment models**: Cloud SaaS (weeks to value; TIME magazine live in 3 weeks), Hybrid (2–4 months, regulated industries), On-premise (4–6+ months, government/defense).
+- **Governance non-negotiables**: RBAC, audit trails, SOC 2/HIPAA/GDPR/FedRAMP compliance built in from day one.
+- **Phased rollout roadmap**: Foundation (weeks 1–4, 50–100 pilot users across 2 departments) → Expansion (weeks 5–12, 2–3 agents live) → Scale (weeks 13–24, org-wide) → Optimize (ongoing, quarterly ROI reporting).
+
+**Adoption case studies cited:**
+- **Confluent**: support engineers burned 5–10 min/ticket finding context → dropped to near zero after copilot deployment
+- **TIME magazine**: CIO Sharon Milz reported live in 3 weeks on cloud SaaS
+- **Zillow**: "AI Days" sessions where employees built agents in small pods → **80% adoption**
+- **GCash**: word-of-mouth drove **90%+ adoption** in some departments (colleagues saving 2–3 hours/week)
+- **Super.com**: new hires ramped **20% faster** using search + org chart
+- **Forrester TEI**: one telecom firm estimated **$8M annual savings** from call center alone (faster access to release notes/customer info)
+
+Context: employees spend one full workday/week searching for information; the enterprise copilot market crossed a double-digit-billion-dollar run rate in 2025.
 
 ## Related
 

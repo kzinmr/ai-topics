@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-08-05T22:12:43.713179+00:00",
+  "triage_run_id": "20260805T220023Z",
+  "source": "raw_backlog",
+  "summary_ja": "5記事バッチ: Fireworks Agent Execution Tax（既存conceptページを未収録セクションで拡充＋Fireworks entityに双方向リンク追加）、Glean Enterprise AI Copilot Playbook（entityに導入事例セクション追加）、filfre.net Maxis連載2本（非AI・entity Referencesに追加）、iczelia regex記事（非AI・skip）。Wiki編集4ページ。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-filfre-maxis-part1",
+      "source": "raw_backlog",
+      "source_name": "filfre.net",
+      "title": "The Life and Times of Maxis, Part 1: SimEverything",
+      "url": "https://www.filfre.net/2026/07/the-life-and-times-of-maxis-part-1-simeverything/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/filfre.net--2026-07-the-life-and-times-of-maxis-part-1-simeverything--9504892c.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ 非AIコンテンツ（レトロゲーム史: Maxis/SimCity/Will Wright）。AI wiki対象外のため本文は取り込まず、entities/filfre-net.md Referencesにraw記事を追加（既存パターン: Ultima IX等も同様にReferences登録のみ）。",
+      "candidate_wiki_path": "entities/filfre-net.md",
+      "body_excerpt": "# The Life and Times of Maxis, Part 1: SimEverything\nSource: https://www.filfre.net/2026/07/the-life-and-times-of-maxis-part-1-simeverything/\nI’m still to this day just blown away by continental drift and things like that, stuff that most people think sounds pretty boring.\n— Will Wright\nGamers are b"
+    },
+    {
+      "item_id": "raw-backlog-iczelia-matcher-redux",
+      "source": "raw_backlog",
+      "source_name": "Kamila Szewczyk (iczelia)",
+      "title": "Matcher Redux: Demystifying Regular Expressions (Part 1: Exact Matching I)",
+      "url": "https://iczelia.net/posts/matching1/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/iczelia.net--posts-matching1--babb9545.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ（低レベルプログラミング: regexマッチャをCでゼロから実装、SWAR/memchr最適化）。AI/エージェント技術と無関係のためwiki対象外。entityページなし（iczelia.netはOPML登録ブログだがAI focus wikiでは作成不要）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Matcher Redux: Demystifying Regular Expressions (Part 1: Exact Matching I)\nSource: https://iczelia.net/posts/matching1/\nProgrammers often see regular expressions and the respective matching engines as a complex, almost unattainable blackbox. PCRE spans hundreds of thousands of lines of code. It su"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-08-04
+updated: 2026-08-05
 tags:
   - entity
   - company
@@ -34,6 +34,7 @@ sources:
   - raw/articles/2026-07-31_fireworks-ai_three-tests-to-run-before-you-switch-from-LoRa-to-FullFT.md
   - raw/articles/2026-05-10_fireworks-ai_best-open-source-llms.md
   - raw/articles/2026-07-27_fireworks-ai_best-open-source-llms-may-2026.md
+  - raw/articles/2026-05-21_fireworks-ai_agent-execution-tax.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -221,6 +222,16 @@ Fireworks also maintains a recurring **"Best Open Source LLMs" roundup** series 
 - **Context engineering**: DeepSeek's Sparse Attention and GLM-5's 128K output limit represent distinct approaches to maintaining coherence across long sequences
 
 Sources: [[raw/articles/2026-05-10_fireworks-ai_best-open-source-llms.md]], [[raw/articles/2026-07-27_fireworks-ai_best-open-source-llms-may-2026.md]]
+
+## Agent Execution Tax Benchmark (May 2026)
+
+Fireworks published a browser-agent benchmark report introducing the **Agent Execution Tax** — the ratio of wasted inference (parse retries on malformed structured output) to productive inference in multi-step agent loops. 720 WebVoyager runs across 4 LLMs (GLM-5, MiniMax M2.5, Kimi K2.5 on Fireworks serverless; Gemini 2.5 Flash via OpenRouter as baseline).
+
+- **Headline finding**: agents fail on execution, not intelligence — Gemini 2.5 Flash showed a **22.9% execution tax** (18.6% parse retry rate, 45.0% task accuracy → 34.7% reliability-adjusted accuracy), while all three Fireworks-served models combined retried only 18 times across 2,564 calls (0.7%).
+- **Procurement implication**: token pricing misleads — MiniMax M2.5 was **2.3× cheaper per successful task** than Gemini ($0.062 vs $0.142) while 12.5 pp more accurate; Kimi K2.5 delivered zero execution tax and the fastest p50 latency (2.1s).
+- **Serving-layer attribution**: tight p95/p50 latency spreads (1.8–2.3×) across heterogeneous MoE architectures and clean retry recovery were attributed to the Fireworks serving stack, not model behavior — supporting the platform's structured-output reliability positioning.
+
+Full details in [[concepts/harness-engineering/agent-execution-tax]].
 
 ## Related Entities & Concepts
 
