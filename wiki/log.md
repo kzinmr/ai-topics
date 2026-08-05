@@ -1,6 +1,12 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-05] raw-backlog-ingest (10:00) | all 5 articles skip — third re-selection of same batch, all already captured
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 10:00, run 20260805T100024Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
+- **Re-selection dedup**: identical batch to 08-05 00:00/04:00 runs — same 5 articles (Yegge Shape of Things to Come, LLVM JITLink i386 backend, Fireworks roundups Jan+May 2026, Simon Willison pelican-riding-a-bicycle feed). Verified entities/steve-yegge.md (102 lines), entities/fireworks-ai.md "Open Source LLM Roundup Series" (lines 214-223), entities/simon-willison.md "Pelican Test (SVG Benchmark) — Feb–Apr 2026 Timeline" (lines 431-453), concepts/llvm.md JITLink section (lines 67-71, 88) still contain the substantive content. No gaps.
+- **Archive**: archive_triage.py raw_backlog --keep-reference — all 5 already archived (dedup, 0 new). Collect script may keep re-selecting this batch until new AI-relevant raw articles arrive; content is fully captured so skips are correct.
+
 ## [2026-08-05] raw-backlog-ingest (04:00) | all 5 articles skip — re-selection dedup, Yegge essay already ingested
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 04:00, run 20260805T040010Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
