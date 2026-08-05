@@ -1,0 +1,99 @@
+{
+  "run_id": "20260805T101419Z",
+  "triaged_at": "2026-08-05T10:14:19Z",
+  "total_newsletters": 5,
+  "classifications": [
+    {
+      "message_id": "<20260804182014.3.62a41dafd04eb3de@mg2.substack.com>",
+      "subject": "Unpacking ChatGPT Work: the Agent for a Billion Users",
+      "date": "2026-08-04",
+      "source_label": "uid=462",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-04-unpacking-chatgpt-work-the-agent-for-a-billion-users.md",
+      "importance": "critical",
+      "relevance_score": 9,
+      "reason": "Direct analysis of ChatGPT Work — OpenAI's agent product for a billion users. Covers agentic capabilities, tool use, and product strategy. Publication is Latent Space (swyx), a primary AI engineering newsletter. Core topic: AI agents, ChatGPT, agent architecture, product strategy.",
+      "topics": ["ai-agents", "chatgpt", "openai", "agent-architecture", "product-strategy"],
+      "main_url": "https://open.substack.com/pub/swyx/p/unpacking-chatgpt-work",
+      "action": "scrape_and_create_wiki_page",
+      "suggested_wiki_pages": [
+        "ChatGPT Work (event page or concept update)",
+        "OpenAI entity update"
+      ]
+    },
+    {
+      "message_id": "<20260805012147.3.5d0224ddd0274497@mg-d1.substack.com>",
+      "subject": "[AINews] Megakernels are so dead and so back",
+      "date": "2026-08-05",
+      "source_label": "uid=463",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md",
+      "importance": "critical",
+      "relevance_score": 9,
+      "reason": "AINews from Latent Space covering megakernels — GPU kernel optimization for LLM inference. Topics: fused kernels, GPU programming, CUDA/Triton, inference optimization. Directly relevant to MLOps/inference infrastructure wiki coverage.",
+      "topics": ["megakernels", "gpu-kernels", "inference-optimization", "cuda", "triton", "llm-serving"],
+      "main_url": "https://open.substack.com/pub/swyx/p/ainews-megakernels-are-so-dead-and",
+      "action": "scrape_and_create_wiki_page",
+      "suggested_wiki_pages": [
+        "Megakernels (concept page)",
+        "GPU kernel optimization (update existing if any)"
+      ]
+    },
+    {
+      "message_id": "<20260804131031.3.6f5d4504dd4ec46f@mg-d1.substack.com>",
+      "subject": "What my agent knows about me",
+      "date": "2026-08-04",
+      "source_label": "uid=459",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-04-what-my-agent-knows-about-me.md",
+      "importance": "high",
+      "relevance_score": 8,
+      "reason": "Ben's Bites article on agent personalization and memory — what AI agents know about users. Covers agent memory systems, personalization, privacy implications. Directly relevant to AI agent concepts and memory/personalization wiki topics.",
+      "topics": ["ai-agents", "agent-memory", "personalization", "privacy", "user-profiling"],
+      "main_url": "https://open.substack.com/pub/bensbites/p/what-my-agent-knows-about-me",
+      "action": "scrape_and_create_wiki_page",
+      "suggested_wiki_pages": [
+        "Agent memory (concept page)",
+        "Ben's Bites entity update"
+      ]
+    },
+    {
+      "message_id": "<20260804.165456.20519a36@mta29>",
+      "subject": "🎬 China Open-Sourced the Cheapest Video Studio Yet",
+      "date": "2026-08-04",
+      "source_label": "uid=461",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-04-china-open-sourced-the-cheapest-video-studio-yet.md",
+      "importance": "high",
+      "relevance_score": 7,
+      "reason": "China open-sourcing video generation studio tools. Relevant to open-source AI, video generation models, and Chinese AI ecosystem. Would contribute to coverage of video AI tools and China's open-source AI movement.",
+      "topics": ["open-source-ai", "video-generation", "china-ai", "ai-video-tools"],
+      "main_url": null,
+      "action": "scrape_if_resolvable",
+      "suggested_wiki_pages": [
+        "Video generation (concept update)",
+        "Chinese AI ecosystem (entity/concept update)"
+      ]
+    },
+    {
+      "message_id": "<20260804130253.3.d74342f77abc98bd@mg2.substack.com>",
+      "subject": "What if you're not supposed to have a long-term plan?",
+      "date": "2026-08-04",
+      "source_label": "uid=460",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-04-what-if-you-re-not-supposed-to-have-a-long-term-plan.md",
+      "importance": "low",
+      "relevance_score": 1,
+      "reason": "Lenny's Newsletter — product management and career advice content. Subject 'What if you're not supposed to have a long-term plan?' is about career/product philosophy, not AI/LLM technology. No AI-specific content expected.",
+      "topics": ["career-advice", "product-management"],
+      "main_url": "https://open.substack.com/pub/lenny/p/what-if-youre-not-supposed-to-have",
+      "action": "skip",
+      "suggested_wiki_pages": []
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 2,
+    "low": 1,
+    "primary_themes": [
+      "AI agent architecture and products (ChatGPT Work, agent memory/personalization)",
+      "GPU kernel optimization for inference (megakernels)",
+      "Open-source video generation from China"
+    ]
+  }
+}
