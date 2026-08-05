@@ -1,6 +1,10 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-05] raw-backlog-ingest (00:00) | all 5 articles skip — same batch as 08-04, already captured / non-AI
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 00:00, run 20260805T000014Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json; archive: all 5 URLs already in archive index (dedup, 2277 total).
+- **Re-selection dedup**: identical batch to 2026-08-04 18:00/22:00 runs — collect script re-selected the same 5 articles. Verified entities/fireworks-ai.md "Open Source LLM Roundup Series (Jan & May 2026)" (lines 214-223) and entities/simon-willison.md "Pelican Test (SVG Benchmark) — Feb–Apr 2026 Timeline" (lines 431-453) still contain the substantive content; LLVM JITLink and IBM 4 Pi remain non-AI skips.
 ## [2026-08-04] raw-backlog-ingest (22:00) | all 5 articles skip — already captured / non-AI
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 22:00, run 20260804T220020Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits.
