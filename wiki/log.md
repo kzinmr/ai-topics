@@ -1,6 +1,12 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-05] skeleton-enrich-daily | enriched sara-hooker, stella-biderman, ahmed-awadallah (L3 quality)
+- **entities/sara-hooker.md**: expanded 38 → 137 lines. Added Adaption co-founder/CEO (2025, $50M seed Emergence Capital), Cohere For AI tenure (Aya Project 101 languages, Aya Expanse, scholars program), Google Brain/Accra history, Delta Analytics 2014, recognition (Fortune 2023, TIME100 AI 2024, ACL Best Paper), fixed stale role description.
+- **entities/stella-biderman.md**: restored richer git version (2464eb4f, 75 lines) + enriched to 117 lines. Added current research agenda from personal site: Open-Weight Safety (Deep Ignorance arXiv:2508.06601), Interpretability Over Time (Don't Just Fix It in Post arXiv:2606.06533, Emergent and Predictable Memorization, LLM Circuit Analyses), Open Science; fixed frontmatter corruption and broken wikilinks (llm-evaluation, evaluation/open-llm-leaderboard).
+- **entities/ahmed-awadallah.md**: expanded 43 → 66 lines. Added Principal Researcher title, MSR profile link, Phi-3 Technical Report contribution, OmniParser (2024), Explorer web trajectory synthesis (94K trajectories, Feb 2025), ECHO benchmark numbers (Qwen3-8B 2.70→5.17%, Qwen3-14B 5.17→10.79%), fixed type: person → entity.
+- index.md descriptions updated for all three; no new pages created.
+
 ## [2026-08-05] dreaming-wiki-ingest (18:25) | 3 references enriched from dreaming-group triage checkpoint (recovered from render failure)
 - **Recovery**: dreaming-group cron output failed JSON parse (output_path c4a9e8d2f671/2026-08-05_18-18-53.md); triage checkpoint triage_latest.json valid (run_id 20260805T181030Z, 17 decisions: 3 refs, 14 skips). Upstream committed archive-only at 9ebb2dbd (log entry + archive JSON, no enrichment) — enrichment executed downstream.
 - **Enriched**: entities/warp-terminal.md (Warp Agent CLI standalone — mux PTY architecture, model routing, persistent/remote sessions, full-screen app control, cloud handoff, pricing); entities/harvey.md (AI Tax Research — multi-jurisdictional workflows, PwC custom tax models; Playbook Builder — 300+ customer playbooks methodology, Carvana 80% stat); entities/hebbia.md (Rethinking Control in AI Delivery — Nikita Knyazev gardener-not-architect thesis).

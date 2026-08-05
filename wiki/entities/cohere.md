@@ -46,7 +46,7 @@ Cohere is a Canadian-American enterprise AI company founded in 2019 by former Go
 - Raised $500M Series D in mid-2024 at $5.5B valuation; additional $500M in 2025, valuing at $6.8B
 - Annual recurring revenue reached $100M in 2025, targeting $200M
 - Strong focus on private deployments for highly regulated industries (finance, healthcare, defense)
-- Cohere Labs is the company's dedicated AI research arm
+- Cohere Labs is the company's dedicated AI research arm; led by [[entities/sara-hooker|Sara Hooker]] as VP of Research (2022–2025), who launched Cohere For AI, the Aya multilingual project, and the scholars program before co-founding Adaption
 
 
 ## Acquisitions & Expansion

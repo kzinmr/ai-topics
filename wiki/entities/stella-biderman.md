@@ -4,7 +4,7 @@ description: Executive Director and co-founder of EleutherAI, leading the open-s
 url: https://www.stellabiderman.ai/
 type: entity
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-08-05
 aliases:
   - stella-biderman
   - Stella Rose Biderman
@@ -13,17 +13,20 @@ tags:
   - person
   - eleutherai
   - open-source
+  - ml-research
   - evaluation
+  - llm-evaluation
+  - interpretability
+  - ai-safety
 sources:
   - https://www.stellabiderman.ai/
   - https://scholar.google.com/citations?user=bO7H0DAAAAAJ
   - https://github.com/EleutherAI/lm-evaluation-harness
   - raw/papers/2024-05-23_2405.14782_lessons-from-the-trenches.md
----
-
-## Related Entities
-
-- [[entities/clefourrier]]
+related:
+  - "[[entities/eleutherai]]"
+  - "[[entities/clefourrier]]"
+  - "[[entities/hailey-schoelkopf]]"
 ---
 
 # Stella Biderman
@@ -43,4 +46,50 @@ Stella transitioned EleutherAI from a grassroots volunteer collective into a non
 ## Notable Projects
 
 | Project | Description | Impact |
-|
+|---------|-------------|--------|
+| **GPT-Neo / GPT-NeoX-20B** | Early open-source LLMs that bridged the gap after GPT-3 | Democratized access to large-scale language models |
+| **Pythia** | Suite of 16 LLMs (70M–12B) for studying training dynamics | ICML 2023, 154 checkpoints per model |
+| **BLOOM** | Multilingual open LLM by BigScience collaboration | 176B parameters, 46 languages |
+| **The Pile** | 800GB diverse text dataset for language modeling | Standard open-source training corpus |
+| **LM Evaluation Harness** | Standardized evaluation framework | Powers Open LLM Leaderboard |
+| **OpenFold** | Open-source protein folding model | Democratized structural biology |
+
+## Research Agenda
+
+Stella's current research agenda, as described on her personal site, spans three interconnected programs:
+
+### Open-Weight Safety
+Safety research that remains meaningful **after** model weights are released — without relying on API monitoring, use restrictions, or removable refusal behavior. Her paper *Deep Ignorance* (arXiv:2508.06601) demonstrates one approach: filtering pretraining data to prevent a model from acquiring a narrowly targeted capability in the first place. Also interested in durable structural interventions, positive demonstrations, controllability for downstream deployers, and rigorous machine unlearning.
+
+### Interpretability Over Time
+Studying models as **learning processes**, not finished artifacts. This asks the causal question underneath interpretability: why did the model learn to behave this way in the first place? Requires longitudinal experiments, controlled comparisons, and access to intermediate training states. *Pythia* was built as infrastructure for this science (154 checkpoints per model); *Don't Just Fix It in Post* (arXiv:2606.06533) argues the proper object of study is the training process itself. Related work: *Emergent and Predictable Memorization in LLMs* (arXiv:2304.11158), *LLM Circuit Analyses Are Consistent Across Training and Scale* (arXiv:2407.10827).
+
+### Open Science Beyond the Largest Companies
+Building public data, models, code, and research infrastructure so academics, auditors, nonprofits, and small organizations can conduct meaningful AI research independently. EleutherAI began as a response to the concentration of AI power in a few corporations. For Stella, open science is both a scientific commitment and a political project: "The goal is not openness for its own sake, but a research ecosystem in which knowledge about powerful technologies is not subordinate to the interests of trillion-dollar companies."
+
+## Selected Publications
+
+| Year | Title | Venue |
+|------|-------|-------|
+| 2023 | Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling | ICML 2023 |
+| 2024 | Lessons from the Trenches on Reproducible Evaluation of Language Models | arXiv (EleutherAI tech report) |
+| 2020 | The Pile: An 800GB Dataset of Diverse Text for Language Modeling | NeurIPS 2021 |
+| 2025 | Deep Ignorance: Filtering Pretraining Data to Prevent Capability Acquisition | arXiv:2508.06601 |
+| 2026 | Don't Just Fix It in Post: The Learning Process as Object of Study | arXiv:2606.06533 |
+
+## Cross-References
+
+- **[[entities/hailey-schoelkopf]]** — Co-author and EleutherAI colleague
+- **[[concepts/llm-evaluation]]** — Co-created evaluation framework (lm-eval harness)
+- **[[concepts/evaluation/open-llm-leaderboard]]** — Uses lm-eval backend
+- **[[entities/eleutherai]]** — Founded and directs the organization
+- **[[entities/clefourrier]]** — EleutherAI research collaborator
+
+## Sources
+
+- [Personal website](https://www.stellabiderman.ai/)
+- [Research interests](https://stellabiderman.ai/research-interests/)
+- [Google Scholar](https://scholar.google.com/citations?user=bO7H0DAAAAAJ)
+- [GitHub](https://github.com/stellaAthena)
+- [X/Twitter @BlancheMinerva](https://x.com/BlancheMinerva)
+- [Open Data Science Conference bio](https://odsc.com/blog/speaker/stella-biderman/)

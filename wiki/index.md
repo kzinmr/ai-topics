@@ -21,7 +21,7 @@
 - [[entities/agibot-10000-units]] — Agibot 10000 Units
 - [[entities/agno]] — Agno — Open-source agent platform SDK and runtime (AgentOS); model/framework/cloud agnostic; multi-user sessions, RBAC, tracing (June 29)
 - [[entities/agreement-bug]] — Agreement is a Bug
-- [[entities/ahmed-awadallah]] — Ahmed Awadallah
+- [[entities/ahmed-awadallah]] — Ahmed Awadallah — Principal Researcher at Microsoft Research AI Frontiers; ECHO terminal-agent RL, OmniParser, Explorer web agents, Phi-3
 - [[entities/ai-engineer-youtube]] — AI Engineer (YouTube Channel)
 - [[entities/ai21-labs]] — AI21 Labs
 - [[entities/akash-gupta]] — Akash Gupta — AI safety researcher; separation of duties for agent architectures
@@ -709,7 +709,7 @@
 - [[entities/sankalp-sinha]] — Sankalp Sinha (dejavucoder)
 - [[entities/sap-business-ai-platform]] — SAP Business AI Platform
 - [[entities/sapient-intelligence]] — Sapient Intelligence
-- [[entities/sara-hooker]] — Sara Hooker
+- [[entities/sara-hooker]] — Sara Hooker — The Hardware Lottery author; Cohere For AI VP Research; co-founder/CEO of Adaption (continual learning AI)
 - [[entities/sarah-guo]] — Sarah Guo
 - [[entities/sarah-sachs]] — Sarah Sachs
 - [[entities/satya-nadella]] — Satya Nadella — CEO of Microsoft; leading Microsoft AI strategy including Azure AI, Copilot, and OpenAI partnership
@@ -763,7 +763,7 @@
 - [[entities/sriraam-27upon2]] — Sriraam (27upon2)
 - [[entities/stable-audio-3]] — Stable Audio 3.0
 - [[entities/stefano-marinelli]] — Stefano Marinelli
-- [[entities/stella-biderman]] — Executive Director and co-founder of EleutherAI, leading the open-source AI movement
+- [[entities/stella-biderman]] — Stella Biderman — Executive Director and co-founder of EleutherAI; open-weight safety, interpretability over time, Pythia, The Pile, lm-eval
 - [[entities/steve-blank]] — Steve Blank
 - [[entities/steve-yegge]] — Steve Yegge — Veteran software engineer, blogger, AI industry commentator; builds Wyvern MMO with multi-agent fleets via Wheelhouse harness
 - [[entities/stochi]] — Independent AI researcher focused on post-training, agents, RL, model architectures, and ML systems. Previously shipp...
