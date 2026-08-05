@@ -48,4 +48,4 @@ Where tasteful tokenmaxxing achieves efficiency through behavioral changes (dept
 
 ## Sources
 
--  — AINews #21, Latent.Space (April 2026) — "Neural Garbage Collection" mention in Post-Training, RL & Inference Optimization section
+- [[concepts/post-training]] — AINews #21, Latent.Space (April 2026) — "Neural Garbage Collection" mention in Post-Training, RL & Inference Optimization section

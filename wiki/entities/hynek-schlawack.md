@@ -153,7 +153,7 @@ Hynek's blog at [hynek.me/articles](https://hynek.me/articles) covers Python dev
 - [[entities/samuel-colvin]] — Fellow Python ecosystem maintainer (Pydantic, Pydantic AI, Monty)
 - [[entities/armin-ronacher]] — Python/Rust developer (Flask, Sentry, Jinja2) with complementary focus on web frameworks
 - [[concepts/sebastien-ramirez]] — FastAPI creator, fellow OSS maintainer dealing with AI-generated PR challenges
--  — Python's creator; Hynek's attrs work directly influenced PEP 557 (dataclasses)
+- [[concepts/python]] — Python's creator; Hynek's attrs work directly influenced PEP 557 (dataclasses)
 -  — attrs co-conspirator from the original IRC session; Twisted project leader
 - [[entities/eugeneyan]] — ML practitioner who shares Hynek's focus on production-first practices
 - [[entities/andrew-nesbitt]] — Ruby developer with similar open-source maintenance philosophy

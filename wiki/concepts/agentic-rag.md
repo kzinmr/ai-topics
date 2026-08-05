@@ -125,4 +125,4 @@ See [[concepts/reliable-agent-patterns]] for a full catalog of the engineering p
 - [[concepts/knowledge-graph-memory-agents]] — Graph memory infrastructure for agents
 - [[concepts/vector-db-agent-memory]] — Vector database memory for agents
 - [[concepts/context-engineering|Context Engineering]] — Dynamic token curation for optimal context
--  — Traditional RAG (precursor)
+- [[concepts/retrieval-augmented-generation]] — Traditional RAG (precursor)

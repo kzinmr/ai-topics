@@ -150,7 +150,7 @@ The skill either generates new documents following these rules or reviews existi
 - [[entities/peter-steinberger]] — AI-native developer; pioneered parallel agent workflows
 - [[entities/simon-willison]] — Django co-creator; defined agentic engineering patterns
 - [[entities/xeiaso-net]] — Infrastructure engineer; creator of Anubis anti-scraper tool
--  — Fellow AI commentator; coined "agentic engineering"-  — Tech policy writer; discussed AI as potential enabler of open web resurgence
+- [[concepts/harness-engineering/agentic-engineering]] — Fellow AI commentator; coined "agentic engineering"-  — Tech policy writer; discussed AI as potential enabler of open web resurgence
 -  — Cory Doctorow's theory of platform decay; relevant to Anil's tech industry critique
 
 ## Sources

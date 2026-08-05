@@ -245,7 +245,7 @@ Fourrier's work consistently emphasizes **openness, transparency, and reproducib
 - [[concepts/bloom]] — 176B-parameter open-access multilingual language model (BigScience)
 - [[concepts/zephyr]] — 7B chat model via direct distillation of LM alignment
 - [[concepts/smollm2]] — State-of-the-art small language model (1.7B parameters)
--  — Standards for reliable, repeatable model evaluation
+- [[concepts/evaluation/ai-evals]] — Standards for reliable, repeatable model evaluation
 -  — Environmental impact of model training and inference
 - [[entities/hugging-face]] — Open-source AI platform and community
 -  — Using language models to evaluate other language models

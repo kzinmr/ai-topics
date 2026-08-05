@@ -81,7 +81,7 @@ Logfire's tracing shows the full delegation chain, essential for debugging compl
 - [[concepts/pydantic-ai]] — Framework with built-in observability
 - [[concepts/harness-engineering]] — Observability as feedback loop
 - [[entities/samuel-colvin]] — Logfire creator
--  — Sentry founder, angel investor in Pydantic
+- [[concepts/sentry]] — Sentry founder, angel investor in Pydantic
 
 ## Brainstore: AI Observability is a Database Problem
 

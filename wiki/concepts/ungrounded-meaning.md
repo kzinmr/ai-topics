@@ -94,4 +94,4 @@ The gap between theoretical impossibility and practical utility mirrors other ar
 - [[concepts/coala]] — Framework requiring grounding through external actions
 - [[concepts/neurosymbolic-ai]] — Hybrid approach addressing the grounding problem
 - [[concepts/harness-engineering]] — Practical grounding through tool use
--  — Yao's broader thesis on evaluation vs training
+- [[concepts/evaluation/ai-evals]] — Yao's broader thesis on evaluation vs training

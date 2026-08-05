@@ -222,7 +222,7 @@ A prompt fix (adding company policy info) was expected to improve Brand Alignmen
 - [[concepts/harness-engineering]] — OpenAI's approach to AI-assisted development
 - [[comparisons/eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
 - [[concepts/evals-skills]] — Evals skills for coding agents
--  — PBT methodology applied to LLM evaluation (MacIver)
+- [[concepts/evaluation/ai-evals]] — PBT methodology applied to LLM evaluation (MacIver)
 ## Notion's Three-Tier Eval Framework (April 2026)
 
 Notion's approach to evals, as described by Sarah Sachs (engineering lead) and Simon Last (product lead), provides a production-tested three-tier evaluation framework:

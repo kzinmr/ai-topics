@@ -107,7 +107,7 @@ Related: [[concepts/context-engineering/context-window-management|Context Window
 
 ## Sources
 
--  — Context compression techniques analysis- OpenAI Cookbook, "Context engineering patterns" (2025)
+- [[concepts/context-engineering]] — Context compression techniques analysis- OpenAI Cookbook, "Context engineering patterns" (2025)
 - Anthropic, "Effective context engineering for AI agents" (2025)
 
 ## Perplexity Query-Aware Context Compression (May 2026)

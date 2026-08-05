@@ -72,7 +72,7 @@ Cat Wu's appointment as Head of Product signals Anthropic's commitment to:
 
 - [[entities/anthropic]] — Anthropic company
 - [[entities/claude-code]] — Claude Code AI coding agent (entity page)
--  — Claude Opus 4.7 model- [[entities/dario-amodei]] — Dario Amodei (Anthropic CEO)
+- [[concepts/anthropic]] — Claude Opus 4.7 model- [[entities/dario-amodei]] — Dario Amodei (Anthropic CEO)
 
 ## Sources
 

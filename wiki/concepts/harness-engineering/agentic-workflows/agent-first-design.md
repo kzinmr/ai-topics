@@ -118,4 +118,4 @@ Agent-First design is **not a rejection** of human-centered design. The two are 
 
 ## References
 
--  — Proponent of Agent-First Design- [Shipping at Inference-Speed](https://steipete.me/posts/2025/shipping-at-inference-speed)
+- [[entities/peter-steinberger]] — Proponent of Agent-First Design- [Shipping at Inference-Speed](https://steipete.me/posts/2025/shipping-at-inference-speed)

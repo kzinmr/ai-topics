@@ -313,8 +313,8 @@ class Debate(dspy.Module):
 - [[entities/omar-khattab]] — Creator of DSPy
 - [[concepts/gepa]] — Genetic prompt optimization (evolution of DSPy optimizer)
 - [[concepts/rlms]] — Recursive language models (a different optimization approach from DSPy)
--  — DSPy's agent patterns
--  — Khattab's search framework preceding DSPy
+- [[concepts/dspy]] — DSPy's agent patterns
+- [[concepts/dspy]] — Khattab's search framework preceding DSPy
 
 ## Key Facts
 - **Created by:** Stanford NLP Group (Omar Khattab, Arnav Singhvi, Paridhi Maheshwari, et al.)

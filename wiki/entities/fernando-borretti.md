@@ -226,7 +226,7 @@ This analysis echoes the themes of [[concepts/technological-singularity|technolo
 - [[concepts/compiler-construction]] — OCaml, Menhir, bootstrapping, middle-end design
 -  — SM-2 algorithm, learning science, productivity
 -  — Ontologies, logic, information management
--  — Memory safety, resource management, capability-based security
+- [[concepts/security-and-governance/ai-safety]] — Memory safety, resource management, capability-based security
 ## Podcasts & Media
 
 - **Func Prog Podcast #6** — Discussing Austral and functional programming

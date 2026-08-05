@@ -2,6 +2,18 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-05] health | Empty wikilink auto-fix (83 links) + verification
+
+- **Fixed 83 empty wikilinks** (`- — desc` missing `[[slug]]` anchor) across 70 entity/concept pages. Target-verified fixes only: 52 unique targets, 0 broken links introduced, `_index.md`/`_archive/` untouched.
+- **Override map** (corrected stale KNOWN_MAPPINGS): ai-evals→`concepts/evaluation/ai-evals` (7), ai-safety→`concepts/security-and-governance/ai-safety` (7), agentic-coding→`concepts/coding-agents/agentic-coding` (1), chatgpt-memory-bitter-lesson→`concepts/gpt/chatgpt-memory-bitter-lesson` (2); namespace fixes google/nvidia/meta/nous-research → `entities/` (8); bare entity slugs resolved to `entities/` prefix.
+- **Remaining 279 broken links** left for manual review (no reliable target mapping — descriptions below threshold; includes multi-line merged artifacts).
+- **Verified clean**: index.md corruption (pipe/line-number/triple-bracket/space-prefix) all 0; validate_index.py exit 0 (2902 lines).
+- **Orphan report**: 24 candidates all false positives (22 `_index.md` + 2 `concepts/gpt/_archive/` + 1 redirect `entities/tim-sherratt` → `[[entities/tim-sh]]`), skipped per A4c rule 6.
+- **Informational (no action)**: 1855 stale pages (>30 days); 5119 unprocessed raw articles (raw-backlog-ingest pipeline owns this).
+
+---
+
+
 
 ## [2026-08-05] watchdog | auto-fix log header burial + Concepts header count
 

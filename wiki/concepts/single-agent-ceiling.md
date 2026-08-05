@@ -72,4 +72,4 @@ See [[concepts/back-of-house-patterns]] for details.
 
 ## Sources
 
--  — Sarah Chieng (@MilksandMatcha) + @0xSero (April 2026)
+- [[entities/milksandmatcha]] — Sarah Chieng (@MilksandMatcha) + @0xSero (April 2026)

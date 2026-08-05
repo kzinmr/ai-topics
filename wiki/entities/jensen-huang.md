@@ -194,7 +194,7 @@ Comprehensive 1:43 interview covering:
 - [[entities/dwarkesh-patel]] — Interviewed Jensen for 1:43 episode (April 2026); subject of TeortaxesTex epistemic gap analysis
 - [[entities/teortaxestex]] — Published steelmanning analysis of Jensen vs. Dwarkesh using Causal Backbone framework
 - [[entities/peter-steinberger]] — OpenClaw creator, highlighted by Huang at GTC 2026
--  — Agentic AI workloads driving Nvidia's architecture decisions
+- [[entities/nvidia]] — Agentic AI workloads driving Nvidia's architecture decisions
 ## Sources
 
 - [Nvidia GTC 2026 Keynote (CNBC)](https://www.cnbc.com/2026/03/16/nvidia-gtc-2026-ceo-jensen-huang-keynote-blackwell-vera-rubin.html)

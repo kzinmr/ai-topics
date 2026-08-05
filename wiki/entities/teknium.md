@@ -170,9 +170,9 @@ Nous Research's decentralized training infrastructure (DiStrO) and Psyche Networ
 - [[entities/hermes-agent]] — Creator and lead maintainer (68K+ stars)
 - [[concepts/post-training]] — His primary area of expertise
 - [[entities/nathan-lambert]] — Fellow post-training researcher, RLHF book author
--  — DataForge, GPTeacher, custom pipelines
+- [[concepts/gpt]] — DataForge, GPTeacher, custom pipelines
 -  — Atropos RL environments- [[concepts/harness-engineering]] — CLI/terminal-use harnessing philosophy
--  — Nous Research ethos, DiStrO, Psyche Network
+- [[entities/nous-research]] — Nous Research ethos, DiStrO, Psyche Network
 - [[concepts/open-source-ai-destruction]] — Advocate for open-weight models and transparent development
 - [[concepts/post-training/rlhf-dpo-preference]] — Direct Preference Optimization for Hermes 3 alignment
 - [[entities/sero]] — Fellow open-source AI developer and ElizaOS contributor

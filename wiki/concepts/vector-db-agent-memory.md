@@ -85,4 +85,4 @@ Agent memory retrieves from a corpus the **agent itself wrote**, mid-conversatio
 - [[concepts/ai-agent-memory-middleware]] — LLMFS, ChromaFS, memory middleware storage infrastructure
 - [[concepts/ai-agent-memory-two-camps]] — Memory backends vs context substrates taxonomy
 - [[concepts/context-engineering|Context Engineering]] — Dynamic token curation; what to include in context
--  — Traditional RAG (precursor pattern; agents self-retrieve from their own output)
+- [[concepts/retrieval-augmented-generation]] — Traditional RAG (precursor pattern; agents self-retrieve from their own output)

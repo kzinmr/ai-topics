@@ -167,7 +167,7 @@ Co-founded the initiative to help women learn programming:
 - [[entities/armin-ronacher]] — Creator of Flask/Sentry; shared philosophy of opinionated, well-designed developer tools
 - [[entities/andrej-karpathy]] — Both advocate for AI-native development workflows, but from different angles (design vs. engineering)
 - [[entities/simon-willison]] — Fellow builder who thinks deeply about how AI should be integrated into tools
--  — Python developer who shares the "opinionated software" philosophy
+- [[concepts/python]] — Python developer who shares the "opinionated software" philosophy
 ## X Activity Themes
 
 Karri (@karrisaarinen) shares on X/Twitter:

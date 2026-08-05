@@ -197,8 +197,8 @@ This reflects his broader philosophy: claims without evidence are just opinions.
 - [[concepts/llm-assisted-development]] — Practical experience with Codex and other AI coding agents
 - [[concepts/boring-technology]] — His thesis on proven tools + LLMs vs. shiny new alternatives
 -  — The Bob project: interpreter, compiler, VM, WASM target
--  — Using test suites as safety nets for AI-assisted refactoring
--  — Error recovery in lexers and parsers
+- [[concepts/security-and-governance/ai-safety]] — Using test suites as safety nets for AI-assisted refactoring
+- [[entities/xeiaso-net]] — Error recovery in lexers and parsers
 
 ## Influence Metrics
 

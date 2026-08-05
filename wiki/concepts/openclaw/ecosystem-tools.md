@@ -94,5 +94,5 @@ OpenClaw skill extensions are distributed through **ClawHub**:
 - [[entities/openclaw]] — OpenClaw concept aggregation
 - [[concepts/openclaw/five-tier-precedence]] — Skill priority model
 - [[entities/peter-steinberger]] — Developer
--  — Model Context Protocol- [[entities/nvidia-nemoclaw]] — NVIDIA enterprise edition
+- [[concepts/mcp]] — Model Context Protocol- [[entities/nvidia-nemoclaw]] — NVIDIA enterprise edition
 - [[concepts/local-first-software]] — Local-first software movement

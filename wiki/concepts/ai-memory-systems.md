@@ -201,7 +201,7 @@ Claude's memory design aligning with "The Bitter Lesson" gives it a long-term sc
 - [[entities/openai]] — ChatGPT memory, Codex development
 - [[entities/anthropic]] — Claude Memory, Claude Code
 - [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Devin, agent-specialized memory
--  — "The Bitter Lesson" proponent
+- [[concepts/gpt/chatgpt-memory-bitter-lesson]] — "The Bitter Lesson" proponent
 ## Sources
 
 - Rich Sutton, "The Bitter Lesson" (2019)

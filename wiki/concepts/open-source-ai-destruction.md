@@ -163,7 +163,7 @@ antirez sees AI reimplementations as democratizing and potentially rejuvenating 
 
 - [[concepts/gnu-ai-reimplementations]] — AI enabling clean-room reimplementations of existing software
 - [[concepts/ai-bubble-economics]] — The broader economic dynamics of the AI investment boom
--  — Using AI agents as collaborative development partners-  — Human-guided AI development (contrasted with passive vibe coding)
+- [[concepts/vibe-coding]] — Using AI agents as collaborative development partners-  — Human-guided AI development (contrasted with passive vibe coding)
 
 ## Sources
 

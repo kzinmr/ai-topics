@@ -268,7 +268,7 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 -  — Co-created reward model evaluation benchmark-  — Advocate for fully open AI development- [[concepts/model-distillation]] — Fundamental ML technique; Lambert's "Distillation Panic" defends it from criminalization
 - [[concepts/ai-api-abuse]] — Term Lambert coined to replace the misleading "distillation attacks" framing
 - [[events/distillation-attacks-2026]] — Anthropic's accusations that prompted Lambert's response
--  — His newsletter and podcast-  — Open post-training model family he leads
+- [[concepts/post-training]] — His newsletter and podcast-  — Open post-training model family he leads
 ## Key Links
 
 - **Website**: [natolambert.com](https://www.natolambert.com/)

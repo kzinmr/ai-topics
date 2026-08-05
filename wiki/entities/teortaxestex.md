@@ -85,7 +85,7 @@ Known for dense, analytical tweets combining geopolitical observation, tech indu
 - [[entities/jensen-huang]] — Subject of Teortaxes' steelmanning analysis
 - [[entities/dwarkesh-patel]] — Compared against Jensen as contrasting epistemic archetype
 - [[entities/tailcalled]] — Creator of the Causal Backbone Conjecture
--  — Teortaxes provides unique China-side analysis
+- [[entities/xeiaso-net]] — Teortaxes provides unique China-side analysis
 - [[concepts/ai-bubble-economics]] — Commentary on compute demand, energy, and geopolitics
 
 ## Sources

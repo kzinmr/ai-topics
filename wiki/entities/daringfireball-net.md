@@ -149,8 +149,8 @@ Daring Fireball has operated as an independent publication for over two decades.
 - [[concepts/apple]] — Primary subject of Gruber's commentary and criticism
 - [[concepts/dan-abramov]] — Fellow influential tech blogger with a similar commitment to deep technical explanation
 - [[concepts/ben-thompson]] — Author of Stratechery; often linked and discussed by Gruber on Apple strategy
--  — Publisher at Six Colors; collaborates with Gruber on annual Apple report cards
--  — Gruber's podcast with Dan Benjamin-  — EU regulation affecting Apple's App Store policies, extensively covered by Gruber
+- [[concepts/apple]] — Publisher at Six Colors; collaborates with Gruber on annual Apple report cards
+- [[concepts/apple]] — Gruber's podcast with Dan Benjamin-  — EU regulation affecting Apple's App Store policies, extensively covered by Gruber
 
 ## Sources
 

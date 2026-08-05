@@ -134,7 +134,7 @@ The exodus created two camps:
 - [[entities/mira-murati]] — Safety-first advocate, former OpenAI CTO, Thinking Machines Lab co-founder
 - [[entities/ilya-sutskever]] — Former OpenAI Chief Scientist, resigned over safety concerns
 - [[entities/dario-amodei]] — Anthropic CEO, co-authored "Concrete Problems in AI Safety"
--  — Former Superalignment co-head, resigned citing safety deprioritization
+- [[concepts/ai-alignment]] — Former Superalignment co-head, resigned citing safety deprioritization
 
 ## Related Concepts
 

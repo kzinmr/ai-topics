@@ -132,11 +132,11 @@ A key lesson from his Impira experience was recognizing that go-to-market succes
 ## Related
 
 - [[concepts/evaluation/evals-vs-monitoring-debate]] — Evals vs Monitoring debate with Ben Hylak (Raindrop)
--  — Goyal's LLM evaluation platform- [[entities/figma]] — Acquired Impira; Goyal led AI team post-acquisition
+- [[concepts/evaluation/ai-evals]] — Goyal's LLM evaluation platform- [[entities/figma]] — Acquired Impira; Goyal led AI team post-acquisition
 -  — Goyal's first startup, acquired by Figma
 - [[concepts/evaluation/llm-evaluation-harness]] — Braintrust's core product category
--  — Key investor and advisor to Braintrust
--  — Model breakthrough that enabled Loop (Claude 4)
+- [[concepts/rust]] — Key investor and advisor to Braintrust
+- [[concepts/claude]] — Model breakthrough that enabled Loop (Claude 4)
 ## Sources
 
 - [Crunchbase Profile](https://www.crunchbase.com/person/ankur-goyal)

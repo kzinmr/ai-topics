@@ -261,7 +261,7 @@ His Substack "Overthinking Everything" is unified by a theme of **empirical curi
 - [[concepts/agentic-engineering]] — AI-assisted coding with rigorous review practices
 - [[concepts/software-correctness]] — 100% coverage mandate, invariant testing
 -  — Shrinkray and minimizing failing examples
--  — Current work at Antithesis-  — Critiques of benchmark-based evaluation
+- [[concepts/evaluation/ai-evals]] — Current work at Antithesis-  — Critiques of benchmark-based evaluation
 ## Influence Metrics
 
 - **Hypothesis**: 2M+ monthly downloads, most widely used PBT library globally
