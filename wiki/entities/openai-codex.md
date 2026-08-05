@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-08-04
+updated: 2026-08-05
 tags:
   - product
   - coding-agent
@@ -517,6 +517,45 @@ The unified architecture provides these capabilities to both Codex and ChatGPT W
 | **Memory** | Cross-session context persistence (Codex Memories, chronicle) |
 
 **Related**: [[concepts/harness-engineering/agent-harness]] — Agent harness design, [[concepts/codex/codex-superapp]] — Codex superapp trajectory
+
+## ChatGPT Work Architecture (Aug 2026)
+
+> *Source: [[raw/newsletters/2026-08-04-unpacking-chatgpt-work-the-agent-for-a-billion-users.md|Latent Space — "Unpacking ChatGPT Work: the Agent for a Billion Users", Shlok Khemani guest post, Aug 4 2026]]*
+
+Shlok Khemani's guest post on Latent Space (Aug 4, 2026) decoded ChatGPT Work's architecture three weeks after launch — by then Work and Codex had crossed **10M users** combined, and ChatGPT was estimated at ~1B MAU (June) and ~1B WAU (August). **Greg Brockman confirmed Chat and Work will merge by end of 2026**, making Work a preview of how ChatGPT's billion weekly users will use the app.
+
+### Cloud Computer (microVM)
+
+- Work runs on the **Codex harness** with its UI stripped of developer traces (git controls, diff traces)
+- **Beefy, isolated microVM**: Pro accounts get **8 CPUs, 20GB RAM, 64GB disk**; Plus gets **14GB RAM**
+- A **managed Chrome service** is hosted separately; the agent operates it through tool calls (click, type, scroll, screenshots, tabs, dialogs, file transfer between browser and VM)
+- Workspace is **synchronised to persistent storage and restored onto isolated microVMs** as needed — the underlying machine can change, but working state carries over (vs OpenClaw's always-on single VM)
+- Every new conversation is called a **task**; web/mobile run tasks in the cloud; desktop has **cloud and local modes** (local mode = Codex minus code UI; local tasks don't sync to web/mobile)
+
+### Continuity: Opinionated ChatGPT Product Layer
+
+- Each task gets a working directory under **`/workspace/scratch`** — agent has full freedom (folders, dependencies, scripts, databases) within the task
+- **Cross-thread context does NOT live on the computer**: threads receive a compressed summary of recent tasks/files; the agent calls **Personal Context**, a dedicated tool querying Chat/Work history through a separately managed service
+- **Library** is the central user-facing file repository — user uploads land there, agent files are saved on request. Uploaded files exist twice (thread working copy + canonical Library item) and **do not synchronise**
+- **Memory** is ChatGPT's running synthesized profile of the user, maintained asynchronously and supplied at task start; the agent can reason from it but not modify it (no OpenClaw-style Markdown memory files)
+- **Projects** carry over (instructions, conversation summaries, Sources) but exist as product abstractions, not directories on the computer
+- Khemani's read on the split: Work builds on primitives already serving a billion users, the separation is a **safety guardrail**, and it lets OpenAI keep product control
+
+### Proactivity & Automations
+
+- Personalized **task suggestions** generated from user context (e.g., a meeting-prep task reasoned asynchronously across calendar/Gmail/memory)
+- **Automations** make the Jan 2025 Scheduled Tasks agentic: standalone scheduled tasks (saved prompt → fresh task) and **heartbeat** tasks inside existing conversations (reawaken a task with context intact — monitoring, polling, review loops). Heartbeats work on desktop, not yet web
+
+### Plugin Directory
+
+- The App Directory became the **Plugin Directory** (July 9 launch): existing apps packaged into plugins; **1,000+ plugins** covering most major apps/services
+- A plugin can contain **Apps** (mostly MCP servers exposing discrete tools), **Skills** (instructions + references/templates/scripts), and **App templates** (org-specific app configuration)
+- Three plugin types: **operational** (Computer Use, Sites, Documents/Presentations/Spreadsheets), **role-specific** (Sales plugin = 20 skills across 29 apps), **service** (Gmail, Slack, Notion, Figma, Salesforce, PitchBook)
+- **Discovery is the weak link**: Work routes to installed plugins seamlessly but never suggests a missing plugin — Khemani's flight/hotel search ignored available-but-uninstalled travel plugins in favor of web search
+
+### Cloud-Shift Signal (Sottiaux)
+
+Codex lead **Tibo Sottiaux**: the tool he ships will *"seem primitive in 2-3 months"* because *"the next generation of models need more than your laptop"* — a direct signal that serious coding work is moving from local machines to OpenAI's servers (consistent with Work's cloud-first architecture).
 
 ## Codex Voice, Thread-Forking & Sites Workflows (August 2026)
 

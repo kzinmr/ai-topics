@@ -3,19 +3,24 @@ title: "Megakernel for LLM Inference"
 type: concept
 status: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-08-05
 tags:
   - inference
   - optimization
   - local-llm
+  - model-training
+  - fused-kernels
+  - mixture-of-experts
 sources:
   - https://www.lucebox.com/blog/megakernel
+  - raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md
 related:
   - lucebox.md
   - sandro-puppo.md
   - davide-ciffa.md
   - qwen-models.md
   - llama-cpp.md
+  - megakernel-for-llm-inference.md
 ---
 
 # Megakernel for LLM Inference
@@ -76,6 +81,36 @@ Traditional inference frameworks launch ~100 kernels per token across 24 layers.
 The megakernel eliminates these inter-layer overheads, keeping data in registers and shared memory throughout the forward pass.
 
 For hybrid architectures like Qwen 3.5 (18 DeltaNet + 6 Attention layers), no existing framework had fused kernels optimized for this pattern.
+
+## Megakernel Debate (Aug 2026)
+
+> *Source: [[raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md|AINews — "Megakernels are so dead and so back", Aug 5 2026]]*
+
+A sharp debate erupted in August 2026 over whether hand-written fused kernels are a dead end for production inference:
+
+### "Megakernels are dead" (Ali / waterloo_intern)
+
+Ali (waterloo_intern, on Latent Space's Inference Engineering Masterclass + follow-up post) argued the case for abandoning hand-fused megakernels:
+
+- **No serious inference provider runs a 67k LOC hand-fused forward-pass kernel in production** — teams doing so are research-only
+- The theoretical gains (launch overhead, inter-kernel overlap) are eroded by **PDL (programmatic dependent launch)** and **straggler CTA** issues — partial blocks complete at different times, forcing coordination overhead
+- **TensorRT-LLM / modular kernels are faster in practice**: each component is individually optimized and can parallelize with each other
+- Even a fused kernel cannot eliminate communication for nonlinearities (e.g., softmax needs the full row across GPUs in tensor parallelism)
+
+### Rubin's Tile-Level Dependency Triggers (Kyle Kranen)
+
+NVIDIA's Rubin GPU is designed to "kill megakernels": **Kyle Kranen announced tile-level dependency triggers** (July 21, 2026) — finer-grained kernel coordination where *"as soon as the data to begin working on part of an operation is available, the kernels to execute it can start."* This removes the pipeline-blockage justification for kernel fusion.
+
+### Cursor's Mixture-of-Kittens (MoK) — "so back"
+
+Counter-evidence arrived the same week: **Cursor open-sourced Mixture-of-Kittens (MoK)**, its **MoE training megakernel for NVL72s** (Aug 4, 2026):
+
+- Fuses **all Mixture-of-Experts communication and computation into a single, fully deterministic kernel**
+- **Up to 2.37x faster than the strongest public baselines**; headline: **41% increase in overall tokens per second**
+- At scale, translates to **billions of dollars of savings**
+- Led by **Stuart Sul** — a **co-author of Ben Spector's original megakernel** work (ThunderKittens reference), part of Dan Fu's group
+
+The debate's resolution: hand-fused **forward-pass inference kernels** (Lucebox-style, single-model) are losing to modular kernels + hardware-level dependency triggers, while **training-side MoE megakernels** (MoK) remain high-value. See also the stub [[concepts/megakernel-for-llm-inference|megakernel-for-llm-inference]] (redirects here).
 
 ## Sources
 

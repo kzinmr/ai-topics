@@ -1,7 +1,7 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-07-29
+updated: 2026-08-05
 type: entity
 tags: [company, platform]
 sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
@@ -13,6 +13,7 @@ sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
   - raw/articles/substack.com--redirect-fc937db9-1f9f-4d17-8d14-568f58e27526--f7737c4f.md
   - https://github.com/nvidia/skillspector
   - raw/newsletters/2026-07-28-opus-5-fable-5.md
+  - raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md
 ---
 
 # NVIDIA Corporation
@@ -34,6 +35,11 @@ NVIDIA released Nemotron-Labs-Diffusion, a language model family (3B, 8B, 14B) t
 
 This complements [[concepts/nvidia-vera-rubin]] by demonstrating NVIDIA's focus on novel inference-time architectures alongside system-level integration.
 
+### Alpamayo 2 Super: AV Reasoning Model (Aug 2026)
+
+> *Source: [[raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md|AINews — Aug 5 2026]]*
+
+**Jensen Huang introduced Alpamayo 2 Super**, a **frontier open reasoning model for autonomous-vehicle (AV) reasoning**, released for **commercial use under OpenMDW-1.1**. Notable signal: a major vendor explicitly framing open models as a **safety/security enabler** for robotics and AV deployment (the `entities/anyscale.md` page references Alpamayo-1.5; 2 Super is the Aug 2026 follow-up). Triage-rated reference enrichment.
 
 ## Key Products & Initiatives
 

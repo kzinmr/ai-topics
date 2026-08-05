@@ -2,7 +2,7 @@
 title: Mistral AI
 type: entity
 created: 2026-05-04
-updated: 2026-05-28
+updated: 2026-08-05
 tags:
   - company
   - model
@@ -14,6 +14,7 @@ sources:
   - raw/articles/2026-05-04_thorsten-ball-joy-and-curiosity-84.md
   - raw/articles/2026-05-24_mistral-ai_accelerate-ai-native-industry.md
   - raw/articles/substack.com--app-link-post--7e552b79.md
+  - raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md
 ---
 
 # Mistral AI
@@ -106,6 +107,12 @@ Mistral announced **Leanstral**, a project applying LLMs to formal proof generat
 - [[concepts/formal-verification-llm-agents]] — Lean formal proof for LLM agents
 - [[concepts/alpha-proof-nexus]] — Google DeepMind's parallel LLM+Lean formal proof system
 - [[concepts/post-training/rlvr]] — Reinforcement Learning with Verifiable Rewards (the training paradigm Leanstral enables)
+
+## Shieldstral: On-Device Safety Model (Aug 2026)
+
+> *Source: [[raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md|AINews — Aug 5 2026]]*
+
+Mistral launched **Shieldstral**, a **3B open-weights safety/moderation model** designed for **on-device moderation/classification**. [[entities/vllm|vLLM]] shipped day-0 serving support and highlighted: **one-forward-pass safety scoring**, multimodal input, **12 languages**, and **32k context**. This aligns with Mistral's "deployable specialization" strategy (see Model Architecture Philosophy below) — small, specialized, open models alongside frontier efforts.
 
 ## Forge: Enterprise Fine-Tuning Platform
 

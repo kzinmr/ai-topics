@@ -4,7 +4,7 @@ created: 2026-05-08
 updated: 2026-08-05
 type: entity
 tags: [entity, company, model, china, open-source, coding-agents, video-generation]
-sources: [raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md, raw/newsletters/2026-08-01-ainews-not-much-happened-today.md, raw/articles/simonwillison.net--2026-aug-4-minimax-h3-mlx--38cf1186.md]
+sources: [raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md, raw/newsletters/2026-08-01-ainews-not-much-happened-today.md, raw/articles/simonwillison.net--2026-aug-4-minimax-h3-mlx--38cf1186.md, raw/newsletters/2026-08-04-china-open-sourced-the-cheapest-video-studio-yet.md]
 ---
 
 # MiniMax
@@ -56,6 +56,19 @@ uv run --with mlx-vlm python scripts/generate.py "PROMPT" -o out.mp4
 ```
 
 Without prompt guidance for the audio track, Willison found the generated audio came out as "weird speech-like garbage"; H3's prompting guide covers how to steer audio output.
+
+### H3 Open Weights (Aug 4, 2026)
+
+On August 4, 2026, MiniMax published the **H3 weights** on Hugging Face — the **first open model to top an Artificial Analysis video ranking**. Headline results:
+
+- **Video Editing: #1** on Artificial Analysis; **Text-to-Video: 1242 Elo, #2** (4 points behind Gemini Omni Flash)
+- Generates up to **15 seconds of 2K video at 24fps with native stereo sound**
+- **2K+ resolution with simultaneous stereo audio generation**
+- **Pricing: $0.13/second (≈ $7.80/minute)** — undercutting closed competitors
+- **License**: MiniMax Community License — commercial use permitted only for companies with **< $20M annual revenue**
+- **Local constraint**: local inference runs up to **768p**; the 2K module and **H3-Context-IR** are not public
+
+This extends the [[concepts/ai-video-generation-2026|2026 video generation landscape]] — H3 is the strongest open-weight video model on third-party rankings, a milestone for the open-video movement.
 
 ## Related Pages
 

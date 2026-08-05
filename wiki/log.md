@@ -1,3 +1,21 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-08-05] newsletter-wiki-ingest (10:45) | 3 takes + 6 references enriched from newsletter-triage checkpoint (recovered from render failure)
+- **Recovery**: newsletter-triage cron output failed JSON parse (output_path 4e8b0d92c6a1/2026-08-05_10-38-56.md); checkpoint triage_latest.json valid (run_id 20260805T101419Z) → Case C pattern, processed directly. Archive of skip/reference already committed by triage (71b0a519) — archive step skipped.
+- **entities/openai-codex.md**: Added "ChatGPT Work Architecture (Aug 2026)" from Shlok Khemani Latent Space guest post — microVM specs (Pro 8CPU/20GB RAM/64GB disk, Plus 14GB), /workspace/scratch, Personal Context tool, Library file repo, Plugin Directory 1,000+, Apps(MCP)/Skills/App templates, Scheduled Tasks + heartbeat automations, Chat+Work merge by EOY (Brockman), ~1B WAU; plus Sottiaux cloud-shift signal ("next-gen models need more than your laptop").
+- **entities/minimax.md**: Added "H3 Open Weights (Aug 4)" — first open model to top Artificial Analysis video ranking (Video Editing #1, Text-to-Video 1242 Elo #2), 2K+ stereo audio, $0.13/sec (~$7.80/min), MiniMax Community License (<$20M annual revenue), local 768p cap, 2K module + H3-Context-IR not public.
+- **concepts/megakernel-inference.md**: Added "Megakernel Debate (Aug 2026)" — Ali/waterloo_intern "megakernels are dead" (67k LOC fused kernel not in production, PDL/straggler CTA), Rubin tile-level dependency triggers (Kyle Kranen), Cursor Mixture-of-Kittens (MoK) open source (2.37x faster, 41% tok/s, Stuart Sul/Ben Spector coauthor leads). Stub concepts/megakernel-for-llm-inference.md converted to redirect.
+- **concepts/ai-agent-memory.md**: Reference — Kevin Rose "Reflection Engine" 22-question behavioral-record extraction prompt (338K views), Ben's Bites Fable High/Sol Max test.
+- **events/2026-07-08-openai-gpt-live.md**: Reference — full-duplex redesign (audio in/out simultaneous streaming, model self-determines turn, no detector).
+- **concepts/us-china-ai-competition.md**: Reference — CNBC op-ed (McNeal) "Washington debating wrong question", Chinese labs at frontier, price/funding/adoption decide; Bloomberg geographic price chart.
+- **concepts/anthropic-cybersecurity-eval-incidents.md**: Reference — AISI cyber-eval report (Aug 2026): OpenAI 2 new incidents, Anthropic sustained harmful activity under permissive conditions; not benchmark-only failures.
+- **entities/mistral-ai.md**: Reference — Shieldstral 3B on-device safety/moderation model (vLLM day-0, 12 languages, 32k ctx).
+- **entities/nvidia.md**: Reference — Alpamayo 2 Super AV reasoning model (OpenMDW-1.1 commercial open release).
+- **entities/shlok-khemani.md**: Added Aug 2026 Latent Space guest post to timeline + sources.
+- Index descriptions updated for 9 pages.
+
 ## [2026-08-05] blog-wiki-ingest (10:30) | 8 takes + 1 reference enriched from blog-triage checkpoint (recovered from render failure)
 - **Recovery**: blog-triage cron output failed JSON parse (output_path 58c2f4a7e1bd/2026-08-05_10-27-11.md); checkpoint triage_latest.json valid → Case C2 pattern, processed directly.
 - **entities/simon-willison.md**: Added LLM 0.32 final (Aug 4) — reasoning traces to stderr, server-side tools (OpenAI CodeInterpreter/WebSearch; Anthropic WebSearch/WebFetch/CodeExecution/AnthropicMCP), GPT-5.6 Luna default, `llm openai endpoint`, `model.prompt(messages=[])`, stream_events typed parts, content-addressable Git-style message store, llm-chat-completions-server, "LLM is an agent framework now". Added llm-anthropic 0.26 — claude-fable-5/sonnet-5/opus-5, -T server tools, thinking/thinking_effort simplification.
@@ -10,9 +28,7 @@
 - **entities/lcamtuf.md**: Reference — "Meta: 7,000" (Aug 4): party at the end of the internet, LLM slop killing organic search, HN dominated by AI press releases (added to Rejecting Algorithmic Content section).
 - Index descriptions updated for 8 pages. Archive: skip/reference already archived by blog-triage (02a1c56e).
 
-# Wiki Log
 
-_Log of all wiki changes. Newest entries at top._
 ## [2026-08-05] raw-backlog-ingest (10:00) | all 5 articles skip — third re-selection of same batch, all already captured
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 10:00, run 20260805T100024Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.

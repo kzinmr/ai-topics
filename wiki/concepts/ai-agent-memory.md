@@ -89,3 +89,11 @@ The Mercury project (MIT-licensed, mercury.cosmicstack.org) articulates why Karp
 
 **Source**: "Why Karpathy's Second Brain Breaks at Agent Scale. How Mercury Solves It." (April 2026), raw/articles/2026-04-30_x--karpathy-second-brain-mercury.md
 
+## Reflection Engine — Extracting the Behavioral Record (Aug 2026)
+
+> *Source: [[raw/newsletters/2026-08-04-what-my-agent-knows-about-me.md|Ben's Bites — "What My Agent Knows About Me", Aug 4 2026]]*
+
+**Kevin Rose's "Reflection Engine"** — a 22-question prompt designed to pull ChatGPT's accumulated behavioral record out of the model (338K views). The premise: ChatGPT has quietly assembled a behavioral profile from usage, and a structured prompt can surface it as self-reflection. Ben's Bites editorial team tested it on **Fable High** and **Sol Max**, rating Sol as more consistent in its output.
+
+**Relevance to agent memory**: the prompt is an ad-hoc *memory extraction* technique — it relies on the model's synthesized profile (ChatGPT's memory primitive, see [[concepts/gpt/chatgpt-memory-bitter-lesson]]) rather than a dedicated retrieval API. It highlights both the depth of behavioral data ChatGPT accumulates and the privacy surface that profile represents. Triage-rated reference-only: the prompt itself is the primary content, with limited technical depth.
+

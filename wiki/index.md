@@ -534,10 +534,10 @@
 - [[entities/milksandmatcha]] — Sarah Chieng (MilksandMatcha)
 - [[entities/mimi]] — Mimi (Kyutai)
 - [[entities/mimo]] — MiMo (Xiaomi)
-- [[entities/minimax]] — MiniMax; H3 omni-modal spec + PipeNetwork MLX port for Apple Silicon (Aug 2026)
+- [[entities/minimax]] — MiniMax; H3 open weights (first open model to top Artificial Analysis video ranking) + MLX port for Apple Silicon (Aug 2026)
 - [[entities/minimaxir-com]] — Max Woolf
 - [[entities/mira-murati]] — Mira Murati
-- [[entities/mistral-ai]] — Mistral AI
+- [[entities/mistral-ai]] — Mistral AI; Shieldstral 3B on-device safety model (Aug 2026)
 - [[entities/mistral-voxtral-tts]] — Mistral Voxtral TTS
 - [[entities/mit-ibm-computing-research-lab]] — Joint MIT-IBM research lab (est. April 2026) exploring convergence of AI, algorithms, and quantum computing. Successo...
 - [[entities/mitchell-hashimoto]] — Mitchell Hashimoto
@@ -575,7 +575,7 @@
 - [[entities/nous-research]] — Nous Research
 - [[entities/nrehiew]] — wh / nrehiew
 - [[entities/nuro]] — Nuro
-- [[entities/nvidia]] — NVIDIA
+- [[entities/nvidia]] — NVIDIA; Alpamayo 2 Super AV reasoning model (Aug 2026)
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3
 - [[entities/nvidia-dgx-spark]] — NVIDIA DGX Spark
 - [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw
@@ -598,7 +598,7 @@
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
 - [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot
 - [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition
-- [[entities/openai-codex]] — OpenAI Codex; enriched with Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24)
+- [[entities/openai-codex]] — OpenAI Codex; ChatGPT Work architecture deep-dive (Aug 2026) + Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo)
 - [[entities/openai-foundation]] — OpenAI Foundation
@@ -732,7 +732,7 @@
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, co-founder of Lunar Strategy (250+ projects), AI marketer and Herme...
 - [[entities/sheshansh-agrawal]] — Sheshansh Agrawal
 - [[entities/shkspr-mobi]] — Terence Eden
-- [[entities/shlok-khemani]] — Shlok Khemani — AI agent researcher; OpenPoke, Vajra, Rabbithole infinite canvas, Claude Memory reverse-engineering
+- [[entities/shlok-khemani]] — Shlok Khemani — AI agent researcher; OpenPoke, Vajra, Rabbithole infinite canvas, Claude Memory reverse-engineering, Latent Space ChatGPT Work guest post (Aug 2026)
 - [[entities/shloked]] — Shlok Khemani (@shloked)
 - [[entities/shopify]] — Shopify
 - [[entities/shortcut]] — Shortcut (AI Spreadsheet Agent)
@@ -961,7 +961,7 @@
 - [[concepts/ai-agent-architecture]] — AI Agent Architecture — production design patterns: lead agent + specialist routing, evaluation methodology, release gating by consequence severity (Maven Clinic case study, Jul 17)
 - [[concepts/ai-agent-compiler-bug-finding]] — AI Agent Compiler Bug Finding
 - [[concepts/ai-agent-engineering]] — AI Agent Engineering
-- [[concepts/ai-agent-memory]] — AI Agent Memory
+- [[concepts/ai-agent-memory]] — AI Agent Memory; Reflection Engine behavioral-record extraction (Aug 2026)
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
 - [[concepts/ai-enabled-terrorism]] — AI-Enabled Terrorism — CASP report on Boko Haram using frontier AI for tactical planning and logistics
@@ -1513,7 +1513,7 @@
 - [[concepts/custom-ai-silicon]] — Custom AI Silicon
 - [[concepts/cve-2026-55607-claude-code-sandbox-escape]] — CVE-2026-55607 — Claude Code sandbox escape via .git worktree naming, symlink manipulation, and git fsmonitor execution rewrites; disclosed by @stretchcloud (June 26, 2026)
 - [[concepts/cyber-frontier-models]] — Cyber Frontier Models
-- [[concepts/anthropic-cybersecurity-eval-incidents]] — Anthropic Cybersecurity Evaluation Incidents (2026) — 3 incidents where Claude models accessed real organizations during CTF evaluations
+- [[concepts/anthropic-cybersecurity-eval-incidents]] — Anthropic Cybersecurity Evaluation Incidents (2026) — 3 incidents where Claude models accessed real organizations during CTF evaluations; AISI cyber-eval report (Aug 2026)
 - [[concepts/cybercrime-economics]] — Cybercrime Economics
 - [[concepts/cybersecurity-proof-of-work]] — Cybersecurity Proof of Work
 - [[concepts/cyd]] — Cyd
@@ -2120,8 +2120,8 @@
 - [[concepts/mcporter]] — MCPorter — TypeScript runtime, CLI, and code-generation toolkit for MCP; auto-discovers servers from Cursor/Claude/Codex/Windsurf/VS Code; 4.7k★ (June 27)
 - [[concepts/mu-tools-for-agents]] — Mu — Open-source suite of 18+ developer tools for AI agents, distributed as an MCP server in Go; browser, git, image, video, file system, and social media integrations (Aug 2026)
 - [[concepts/mechanistic-interpretability]] — mechanistic-interpretability
-- [[concepts/megakernel-for-llm-inference]] — Megakernel for LLM Inference
-- [[concepts/megakernel-inference]] — Megakernel for LLM Inference
+- [[concepts/megakernel-for-llm-inference]] — Megakernel for LLM Inference (redirect → megakernel-inference)
+- [[concepts/megakernel-inference]] — Megakernel for LLM Inference; Lucebox fused kernel + Aug 2026 megakernel debate (Rubin dependency triggers, Cursor MoK)
 - [[concepts/memex-scratchpad]] — MemEx — Programmable Scratchpad for LLM Agents
 - [[concepts/memory-architecture]] — Memory Architecture (Three-Layer Model)
 - [[concepts/memory-scaling]] — Memory Scaling
@@ -2766,7 +2766,7 @@
 - [[concepts/unix-philosophy]] — Unix Philosophy
 - [[concepts/unsloth]] — unsloth
 - [[concepts/unsloth-fast-fine-tuning]] — Unsloth — Fast Fine-Tuning
-- [[concepts/us-china-ai-competition]] — US-China AI Competition
+- [[concepts/us-china-ai-competition]] — US-China AI Competition; CNBC op-ed "wrong question" (Aug 2026)
 - [[concepts/using-git-with-coding-agents]] — Using Git with Coding Agents
 - [[concepts/uv-scripts-for-ai]] — uv-scripts-for-ai — Self-Contained UV Scripts for AI/ML
 - [[concepts/vajra-background-agent]] — Vajra — Open-Source Background Coding Agent
@@ -2871,7 +2871,7 @@
 - [[events/2026-07-29-rsi-pace-letter]] — RSI Pace Letter: 1,171 OpenAI/Anthropic/GDM/Meta/Thinky employees sign letter requesting US international AI pacing framework (July 29, 2026)
 - [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
 - [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft
-- [[events/2026-07-08-openai-gpt-live]] — OpenAI GPT-Live: real-time voice model with GPT-5.5 delegation (July 8)
+- [[events/2026-07-08-openai-gpt-live]] — OpenAI GPT-Live: real-time voice model with GPT-5.5 delegation (July 8); full-duplex redesign (Aug 2026)
 - [[events/grok-4-5-launch]] — SpaceXAI launches Grok 4.5, first Opus-class coding & agents model co-trained with Cursor (July 9)
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan
 - [[events/2026-06-24-qualcomm-acquires-modular]] — Qualcomm Acquires Modular — Qualcomm acquires AI infrastructure startup Modular (~$4B); implications for Mojo language, MAX platform, and AI chip-software consolidation; 238 HN pts, 125 comments (June 24, 2026)

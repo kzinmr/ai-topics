@@ -1,12 +1,13 @@
 ---
 title: "US-China AI Competition"
 created: 2026-05-17
-updated: 2026-06-11
+updated: 2026-08-05
 type: concept
 tags: [geopolitics, china, policy, anthropic, governance, ai-governance, prediction]
 sources:
   - raw/articles/2026-05-14_anthropic_2028-ai-leadership-scenarios.md
   - raw/articles/2026-06-10_dario-amodei_policy-on-the-ai-exponential.md
+  - raw/newsletters/2026-08-04-china-open-sourced-the-cheapest-video-studio-yet.md
 ---
 
 # US-China AI Competition
@@ -138,6 +139,14 @@ In "Policy on the AI Exponential," Dario Amodei proposed a comprehensive geopoli
 **Growth model**: Start with ideologically aligned democracies, progressively welcome others who meet coalition standards. Goal: make membership attractive and remaining outside costly.
 
 **Contrast with prior Anthropic position**: This goes beyond the May 2026 four-front analysis by proposing concrete institutional mechanisms (supply chain lock-down, mutual defense pact) rather than just analytical frameworks.
+
+## "Washington Debating the Wrong Question" — CNBC Op-Ed (Aug 2026)
+
+> *Source: [[raw/newsletters/2026-08-04-china-open-sourced-the-cheapest-video-studio-yet.md|Superintel — Aug 4 2026]]*
+
+A **CNBC op-ed by Dewardric L. McNeal** told Washington that the debate over whether Chinese labs can reach the frontier has been **"overtaken by events."** McNeal names DeepSeek, Moonshot (Kimi K3), Alibaba (Qwen), Tencent (Hunyuan), and Zhipu as evidence that Chinese labs are already at or near the frontier, arguing that **price, funding, and developer adoption** — not raw capability — will decide the competition's outcome.
+
+Complementary data point from the same newsletter: a **Bloomberg geographic price chart** showing US AI prices high and Chinese prices low, with Fable 5 at the highest price point — reinforcing the price-competition framing of the op-ed.
 
 ## Related Concepts
 

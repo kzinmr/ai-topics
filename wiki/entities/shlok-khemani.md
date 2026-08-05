@@ -4,7 +4,7 @@ type: entity
 entity_type: person
 status: L2
 created: 2026-04-13
-updated: 2026-07-15
+updated: 2026-08-05
 sources:
   - https://www.shloked.com/
   - https://www.shloked.com/writing/chatgpt-memory-bitter-lesson
@@ -15,6 +15,7 @@ sources:
   - https://www.shloked.com/writing/vajra
   - https://github.com/shlokkhemani
   - raw/articles/2026-07-13_shloked_rabbithole-infinite-canvas-learning.md
+  - raw/newsletters/2026-08-04-unpacking-chatgpt-work-the-agent-for-a-billion-users.md
 tags:
   - person
   - ai-agents
@@ -52,6 +53,7 @@ Shlok Khemani works at the intersection of AI agent architecture and practical d
 | Apr 2026 | Claude Code source analysis | "What I Found Interesting in Claude Code's Source" |
 | Apr 2026 | Conjure | Headless AI agents from terminal — skill for Codex, Claude Code, and pi |
 | Jul 2026 | Rabbithole | Infinite canvas for learning with MCP server for coding agents |
+| Aug 2026 | Latent Space guest post | "Unpacking ChatGPT Work: the Agent for a Billion Users" — deep dive on ChatGPT Work architecture (microVM specs, Personal Context, Library, Plugin Directory, automations) |
 
 ## Core Ideas
 

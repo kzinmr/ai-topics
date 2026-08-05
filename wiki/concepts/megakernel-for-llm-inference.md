@@ -1,26 +1,19 @@
 ---
 title: "Megakernel for LLM Inference"
 type: concept
-aliases:
-  - megakernel-for-llm-inference
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-08-05
 tags:
+  - inference
+  - optimization
+  - fused-kernels
+status: redirect
+redirect: concepts/megakernel-inference
 sources: []
-  - concept
-status: stub
-
 ---
 
-# Megakernel for LLM Inference
+# Megakernel for LLM Inference — Redirect
 
-> **TODO**: Enrich this page.
+> This page has been merged into **[[concepts/megakernel-inference]]**, the canonical page for megakernel inference and training kernels (Lucebox fused forward pass + the Aug 2026 megakernel debate, Rubin dependency triggers, Cursor MoK).
 
-## Overview
-
-Stub page for Megakernel for LLM Inference.
-
-## Related Pages
-- [[concepts/megakernel-inference]]
-
-- [[entities/_index]]
+[[concepts/megakernel-inference]]

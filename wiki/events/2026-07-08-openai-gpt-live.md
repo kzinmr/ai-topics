@@ -1,7 +1,7 @@
 ---
 title: "OpenAI GPT-Live Voice Mode"
 created: 2026-07-08
-updated: 2026-07-09
+updated: 2026-08-05
 type: event
 tags:
   - openai
@@ -9,6 +9,7 @@ tags:
   - multimodal
 sources:
   - raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md
+  - raw/newsletters/2026-08-04-china-open-sourced-the-cheapest-video-studio-yet.md
 ---
 
 # Event: OpenAI GPT-Live Voice Mode
@@ -40,6 +41,12 @@ OpenAI upgraded ChatGPT's voice mode model to **GPT-Live**, replacing the previo
 ## Context
 
 The previous voice mode was based on the GPT-4o era model, which had a knowledge cutoff of 2024. This meant voice conversations were limited in both conversational quality and factual currency. GPT-Live addresses both limitations by using a more capable model architecture that can dynamically leverage [[concepts/gpt/gpt-5-5-instant|GPT-5.5]] for complex reasoning while keeping the conversational interface responsive.
+
+## Full-Duplex Redesign (Aug 2026)
+
+> *Source: [[raw/newsletters/2026-08-04-china-open-sourced-the-cheapest-video-studio-yet.md|Superintel — Aug 4 2026]]*
+
+The engineering account behind GPT-Live (which replaced ChatGPT's turn-taking voice mode in July 2026) is now public. The **old design** waited for a detector to decide the user had stopped talking before responding. The **new design is full duplex**: audio input and audio output stream **simultaneously**, and the model itself decides when it is the model's turn to speak — eliminating the detector-based turn-taking bottleneck. This was a key enabler of GPT-Live's natural, interruptible conversation flow (see Key Features above). Triage-rated reference enrichment: the event page captured the launch and delegation architecture but not the full-duplex re-architecture detail.
 
 ## Source
 
