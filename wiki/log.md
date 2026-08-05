@@ -1,6 +1,17 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-05] raw-backlog-ingest (04:00) | all 5 articles skip — re-selection dedup, Yegge essay already ingested
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 04:00, run 20260805T040010Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
+- **Batch composition change**: Yegge "Shape of Things to Come" replaced IBM 4 Pi vs the 08-04 18:00/22:00 and 08-05 00:00 batches; other 4 (LLVM JITLink, Fireworks roundups x2, Simon Willison pelican feed) unchanged.
+- **Verified already captured (5)**:
+  - entities/steve-yegge.md (created 2026-08-05, 102 lines) covers the full essay: Wheelhouse harness (18 crew/Fable + fleet/Opus 5 + role agents), Beads machine, CI/CD death (Pigeonhole Principle, Thunderdome/Land Rush, Game DevOps), end of human code review (SOC 2 vestigial), Wish Factory, model welfare Part 2 pointer, $87k/mo token burn via 13 Max accounts. sources includes raw/articles/2026-08-04_yegge-ai_shape-of-things-to-come.md.
+  - concepts/llvm.md JITLink section (lines 67-71, 88) — 2023 i386 ELF backend contributor guide (non-AI compiler infra).
+  - entities/fireworks-ai.md "Open Source LLM Roundup Series (Jan & May 2026)" (lines 214-223) — both raw roundup paths in sources, MoE/benchmark/license data captured.
+  - entities/simon-willison.md "Pelican Test (SVG Benchmark) — Feb–Apr 2026 Timeline" (lines 431-453) — 13-model table incl. Meta Muse Spark (Apr 11), GLM-5.1 CSS animation; raw substack feed in sources.
+- **Archive**: archive_triage.py raw_backlog --keep-reference — 2 new archived (Yegge essay + substack redirect feed), 3 dedup_skipped, total 2,279 URLs. Archiving the 2 not-yet-archived items prevents this batch from being re-selected on the next collect run.
+
 ## [2026-08-05] raw-backlog-ingest (00:00) | all 5 articles skip — same batch as 08-04, already captured / non-AI
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 00:00, run 20260805T000014Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json; archive: all 5 URLs already in archive index (dedup, 2277 total).
