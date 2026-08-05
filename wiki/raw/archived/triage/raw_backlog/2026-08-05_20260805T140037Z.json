@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-08-05T14:15:34.733004+00:00",
+  "triage_run_id": "20260805T140037Z",
+  "source": "raw_backlog",
+  "summary_ja": "rawバックログ収集（--sort ai-hint --limit 5、run 20260805T140037Z）の5記事を評価。本日00:00/04:00/10:00 runの再選択バッチで、1件のみ構成交代（wheresyoured『The AI Demand Bubble』がSimon Willison pelicanと交代）。全5件とも既存Wikiページに実データごと取り込み済みのためskip（0 takes / 0 references / 5 skips）。検証済み: entities/ed-zitron.md『The AI Demand Bubble (August 2026)』セクション（本日blog-wiki-ingest取り込み）、entities/steve-yegge.md（102行、sourcesにraw含む）、entities/fireworks-ai.md『Open Source LLM Roundup Series (Jan & May 2026)』（line 214-223、両raw path in sources）、concepts/llvm.md JITLinkセクション（line 67-71, 88）。Wiki編集なし。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-wheresyoured-demand-bubble",
+      "source": "raw_backlog",
+      "source_name": "wheresyoured.at",
+      "title": "The AI Demand Bubble",
+      "url": "https://www.wheresyoured.at/the-ai-demand-bubble/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/wheresyoured.at--the-ai-demand-bubble--3cf6131f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本バッチの新規構成要素（前回10:00 runのSimon Willison pelicanと交代）。本文はAmazon/Google/Microsoftのクラウド収益急成長がAI『報われている』という報道を批判し、AI収益の内訳非開示、Microsoft Q3 FY2026の$37B AI run rateとQ4での開示拒否、成長の大半がAnthropic/OpenAIのコンピュート支出由来（Googleは直近7ヶ月でAnthropicに$10B〜$30B追加出資）と主張。この内容は本日blog-wiki-ingestでentities/ed-zitron.md『The AI Demand Bubble (August 2026)』セクション（line 723+、Barclays Sandler 73-75% AWS AI収益集中・UBS・Wells Fargo・$1.35Tオフバランス債務含む）に詳細取り込み済み。追加ギャップなし。",
+      "candidate_wiki_path": "entities/ed-zitron.md",
+      "body_excerpt": "# The AI Demand Bubble\nSource: https://www.wheresyoured.at/the-ai-demand-bubble/\nIf you liked this piece, you should subscribe to my premium newsletter. It’s $70 a year, or $7 a month, and in return you get a weekly newsletter that’s usually anywhere from 5,000 to 18,000 words, including vast, detai"
+    }
+  ]
+}
