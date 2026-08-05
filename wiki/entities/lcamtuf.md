@@ -1,9 +1,9 @@
 ---
 title: "Michał Zalewski (lcamtuf)"
 tags: [person]
-sources: []
+sources: [raw/articles/lcamtuf.substack.com--p-meta-7000--c0ce64cc.md]
 created: 2026-04-24
-updated: 2026-06-26
+updated: 2026-08-05
 type: entity
 ---
 
@@ -111,6 +111,8 @@ Zalewski has positioned his Substack explicitly against algorithmic content dist
 > *"Substack isn't an algorithmic hellscape; it's just a way to stay in touch with the writers you like."*
 
 > *"Articles, images, and code posted on this site are written by a human and not licensed for use in ML training or ML content generation."*
+
+His August 2026 milestone post "Meta: 7,000" — written on crossing 7,000 email subscribers — doubles down on this stance, framing the moment as "a party at the end of the internet": organic web search is a lost cause because spammers can generate [[concepts/ai-slop|LLM content]] on any topic nearly for free, and Google itself now keeps users from visiting other websites by serving pre-digested answers. He observes that Hacker News has "shifted gears," dominated by AI press releases and op-eds, with fewer readers who cherish learning in other domains — making Substack more valuable as one of the few non-algorithmic yet low-friction ways to share long-form content. Still, he concedes the endeavor is probably archaic: "Long-term writing on the internet is like publishing poems in dactylic hexameter."
 
 This reflects a broader philosophy about **authentic human creation** — the value of writing that comes from genuine curiosity and rigorous research rather than SEO optimization or AI generation.
 

@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-08-03
+updated: 2026-08-05
 type: entity
 tags:
   - company
@@ -28,6 +28,7 @@ sources:
   - raw/articles/2026-07-14_sohmray_icml-2026-research-trends.md
   - raw/articles/2026-07-16_sierra_horizon-long-horizon-agents.md
   - raw/articles/2026-08-03_sierra_plaid-partnership-ai-agents.md
+  - raw/articles/sierra.ai--blog-context-engine--100dce93.md
 ---
 
 # Sierra
@@ -209,6 +210,23 @@ Sierra announced a partnership with Plaid to integrate financial infrastructure 
 The Plaid integration represents a concrete step toward agents that don't just answer questions but complete business outcomes — extending Sierra's outcome-based pricing thesis into the financial services domain.
 
 Source: [[raw/articles/2026-08-03_sierra_plaid-partnership-ai-agents]]
+
+### Context Engine — Rent the Intelligence, Own the Relationship (August 2026)
+
+On August 4, 2026 Sierra announced the **Context Engine**, its answer to the enterprise debate that has shifted from "what can I do with AI?" to "where does my competitive advantage lie?" — the question Satya Nadella posed in June about how companies avoid "ceding value" to a handful of models. Sierra's answer: the advantage lies in **customer relationships and the context they generate** — which subscribers are one bad experience from leaving, what information a borrower has already submitted, why patients don't book the specialist referrals they are offered. Unlike intelligence, which every company can rent, this context is uniquely yours.
+
+**Key points:**
+
+- **What powers Horizon**: The Context Engine turns customer relationships into competitive advantage by powering the long-running [[concepts/long-horizon-agents|Horizon]] agents that pursue business outcomes over days, weeks, or months — every interaction adds more context and makes the next one smarter. It is the mechanism that Horizon agents act on.
+- **Two sources of context**: (1) *What the business already knows* — customer profiles, billing history, purchases, claims, appointments, product usage, loyalty status, and thousands of other signals spread across CRM systems, data warehouses, and the systems that run the business; (2) *What the agent learns* — every interaction creates new context (a customer always choosing pickup over delivery, yesterday's troubleshooting failing at step three, a subscriber ignoring three save offers before responding to the fourth). Unlike traditional software, agents don't just consume context — they also create it.
+- **"Having access is not the same as having context"**: Hand an agent every record in your business and you've only moved the problem one step closer to the customer. Most data means nothing in isolation — device telemetry is just a health ping until it's connected to the order that shipped the device, the customer who bought it, and the setup ticket that's still open. Then it becomes the right moment for the agent to step in.
+- **Learning what matters when**: Every business has millions of potential relationships across customers, products, transactions, and interactions. The Context Engine learns which pieces of context matter for which decisions, using the outcomes of every interaction to get better over time at surfacing what matters.
+- **Every decision is an experiment**: Most decisions exploit what has worked best for similar customers in similar situations, but a small number deliberately explore promising alternatives — exploration may cost a little in the moment, but it's also what keeps the agent learning instead of settling for the first decent answer. The self-improvement loop hunts the next opportunity to improve outcomes: customers with large unspent loyalty balances keep declining discounts and churning anyway — intuition would suggest a growing balance signals loyalty, but the evidence shows it's a sign of disengagement, so the agent learns to lead with re-engagement instead of price. Other improvements are statistical, training models on accumulated evidence to predict churn, offer acceptance, and lead conversion.
+- **The moat argument**: "The foundation models cannot be your advantage" — off the shelf they're identical to what your closest competitor has, and you both get the next release. What is unique to your business — and owned entirely — is the observation your agents collect, the evidence of what works and for whom, and the decisions that lead to better outcomes. "That record is your moat, one your competitors cannot buy or shortcut" — all they can do is start building their own, one outcome at a time.
+
+The announcement operationalizes the differentiation-moat thesis [[entities/bret-taylor|Bret Taylor]] articulated for Horizon — customer relationship data as a durable, defensible moat — with the Context Engine as the accumulating mechanism underneath rentable frontier intelligence.
+
+Source: [[raw/articles/sierra.ai--blog-context-engine--100dce93]]
 
 ## Significance
 

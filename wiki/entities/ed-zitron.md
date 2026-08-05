@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-08-01
+updated: 2026-08-05
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -42,6 +42,7 @@ sources:
   - raw/articles/wheresyoured.at--premium-the-haters-guide-to-the-memory-crisis--0b884d04.md
   - raw/articles/wheresyoured.at--the-openai-bubble--eb7fc2d4.md
   - raw/articles/wheresyoured.at--the-more-you-buy-the-more-you-lose--890d90aa.md
+  - raw/articles/wheresyoured.at--the-ai-demand-bubble--3cf6131f.md
 ---
 
 # Ed Zitron
@@ -718,6 +719,63 @@ Capex as a percentage of revenue — a measure Zitron argues is unsustainable:
 ### Significance
 
 Zitron argues the NVIDIA–SB Energy deal represents a **desperate escalation**: if there were real, diverse demand for NVIDIA GPUs, NVIDIA would not need to create "the world's first circular financing within a circular financing." He concludes that the AI industry's financial structure has become so byzantine that it can only sustain itself through increasingly elaborate self-referential deals, and that the **Winstar/Lucent analogy** offers a historical precedent for how the collapse unfolds.
+
+## The AI Demand Bubble (August 2026)
+
+In "[The AI Demand Bubble](https://www.wheresyoured.at/the-ai-demand-bubble/)" (August 4, 2026), Ed Zitron attacked the post-earnings narrative that Amazon, Google, and Microsoft's AI bets were "paying off." After the latest tech earnings, outlet after outlet credited record cloud revenue growth to AI — even though none of the big three break out AI revenues, and Microsoft declined to disclose anything about its AI payoff in Q4 FY2026 after sharing a **$37 billion AI run rate** in Q3. Zitron's argument: the vast majority of that growth comes from the compute spend of [[entities/anthropic|Anthropic]] and [[entities/openai|OpenAI]], two unprofitable labs that "cannot exist without being funneled tens of billions of dollars each year" — much of it from the hyperscalers themselves. The piece is built around new analyst estimates (Barclays, UBS, Wells Fargo) quantifying the concentration.
+
+### Barclays (Ross Sandler): 73–75% of Amazon AI Revenues
+
+Per Ross Sandler of Barclays, Anthropic and OpenAI account for **73% of all Amazon AI revenues in both 2026 and 2027, rising to 75% in 2028**:
+
+- **Anthropic spend**: $14.1B (2026), $25.3B (2027), $35.8B (2028)
+- **OpenAI spend**: $9B (2026), $15B (2027), $20B (2028)
+- Amazon plans **$220B in capex in 2026** — "almost exclusively" to provide compute for Anthropic, which had to raise **$95B in six months** (including $5B from Amazon itself)
+- Sandler estimates AWS makes just **$8.5B in AI revenues in 2026** — "a pathetic $8.5 billion," roughly 25 times less than Amazon's planned 2026 capex (total projected AWS AI revenue for 2026: $31.6B)
+
+(In a note found just before publication, UBS's Stephen Ju estimated AWS total AI revenues at ~$30.9B for 2026, with OpenAI+Anthropic compute spend at 59% ($18.3B) and the remaining $12.6B from Bedrock — concentration easing only to 55% in 2027 estimates.)
+
+### UBS (Stephen Ju): Google Cloud Concentration
+
+Per Stephen Ju of UBS, Anthropic, OpenAI, and Meta will account for **21%, 7%, and 1% of 2026 Google Cloud revenues** respectively, and **44%, 5%, and 1% in 2027** — i.e., **28% of all 2026 Google Cloud revenues and more than 48% of all 2027 Google Cloud revenues come from Anthropic and OpenAI**:
+
+- Based on Bloomberg Intelligence's consensus estimates ($105.9B in 2026, $173.8B in 2027 Google Cloud revenue), the two labs represent **$29.4B in 2026** ($7.4B OpenAI / $22B Anthropic) and **$84.69B in 2027** ($8.69B OpenAI / $76B Anthropic)
+- Ju names no other meaningful customer — Meta makes up just 1% — and estimates OpenAI+Anthropic spend at **over $35B in 2026**, larger than Google Cloud's entire core non-AI business plus Vertex AI
+- Ju's Vertex AI estimate: **$28.3B in 2026** — still nearly $10B less than the $35.6B the two labs spend on compute
+- OpenAI alone is estimated to spend **at least $52.5B in 2026 and $125B in 2027** across Google Cloud and AWS; in the Musk–Altman trial OpenAI projected **$50B of compute spend in 2026** (~$16.4B to Amazon/Google, leaving ~$33.6B for Azure)
+
+### Wells Fargo (Michael Turrin, May 31, 2026): Microsoft
+
+Per a note from Michael Turrin of Wells Fargo:
+
+- **70% or more of Microsoft's AI revenues** come from Anthropic and OpenAI, rising to **74% of all AI revenues by the very end of FY2027**
+- The two labs represented **23% of Azure revenue in FY2026, growing to 35% in FY2027** — and with Azure growing 41% year-over-year, **40% or more of Azure's growth** came from them
+- **Microsoft 365 Copilot is barely a business**: an estimated **$3.859B for all of FY2026** despite allegedly **30 million paid seats** (suggesting massive discounts and questionable value), growing to an unremarkable **$10B in FY2027**
+- Microsoft FY2026 AI revenues ~**$34.5B** against **$115.9B in capex** ($41B in the final quarter alone); consensus FY2027 capex is ~**$186B** versus **$18.7B** in non-OpenAI/Anthropic AI revenue
+- Microsoft **no longer pays a revenue share to OpenAI**
+
+### Circular Financing
+
+- **Google has sunk $10B (and up to $30B more) into Anthropic** in the last seven months alone
+- **Amazon funnelled $5B to Anthropic** within a week of Google's investment, plus a total **$50B into OpenAI** — and a reported additional **$35B to OpenAI** contingent on it going public or reaching AGI
+- A Microsoft executive testified in the Musk–Altman trial that the OpenAI relationship has cost Microsoft **"over $100 billion"** (including the $13B equity stake and associated infrastructure); Microsoft's Fairwater data centers are dedicated to OpenAI, much as Amazon dedicated Project Rainier to Anthropic
+- Google is in talks to backstop a **$15B data center project for Anthropic**, alongside a **$35B private credit–funded, Broadcom-backstopped deal** where Google sells Anthropic TPUs, builds the data center, and rents it back to them
+- Hyperscalers have sunk a combined **$77B into the two labs** — "far outpacing the actual revenue contribution that these companies provide, let alone the capex spending of the hyperscalers"
+
+### Amy Hood's "90%" Statistic as Obfuscation
+
+Microsoft CFO Amy Hood noted on the most recent earnings call that **90% of all cloud spending came from outside the two main frontier AI labs**. Zitron argues this is an obfuscation: "cloud revenue" bundles Microsoft 365 Commercial cloud, Azure, LinkedIn, and Dynamics 365, so frontier spend being ~10% of *cloud* revenue "doesn't tell us anything — and is arguably a way of obfuscating how dependent Azure is on the two main AI model labs."
+
+### Off-Balance-Sheet Debt and the Demand Bubble
+
+- Zitron reiterates the **$1.35 trillion in off-balance-sheet liabilities** (including Meta) already documented in the July 2026 section above, alongside "hundreds of billions of dollars of debt" burdening the hyperscalers
+- He estimates **less than $30B of non-AI-lab compute demand** exists across Amazon, Google, and Microsoft (including Bedrock/Vertex/Foundry API spend), meaning hundreds of billions of dollars of data centers are being built "for nobody"
+- The demand-bubble framing: if 73% of Amazon's and Microsoft's AI revenues and 48%+ of Google Cloud's revenues come from two unprofitable labs, "there is not really that much demand for AI" — and the growth only exists because the hyperscalers fund the labs that pay them
+- By 2028, Amazon will have sunk **over $650B in capex** to earn a little over **$171B in AI revenue**, the vast majority contingent on two venture-backed startups
+
+### Significance
+
+Zitron calls the failure to disclose customer concentration "an absolute fucking scandal," arguing investors have been led to believe the ~$994B spent on AI GPUs and data centers builds the next industrial revolution, when the big three have actually demolished their free cash flow to support a customer base of two labs that "quite literally cannot afford to pay their bills." He predicts the hyperscalers will be forced within a year or two to restate revenues, cut remaining performance obligations, and admit they've drastically overbuilt capacity — with [[entities/microsoft|Microsoft]] and [[entities/google|Google]] left with "chernobyls of capital expenditure" once Anthropic and OpenAI's spend is removed, consistent with his broader [[concepts/ai-bubble-economics]] thesis.
 
 ## Cross-References
 

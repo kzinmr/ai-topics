@@ -50,7 +50,7 @@
 - [[entities/andrej-karpathy]] — Andrej Karpathy — Founding member of OpenAI, former Sr. Director of AI at Tesla, creator of nanogpt/micrograd; pioneer of LLM wiki patterns
 - [[entities/andrew-chen]] — Andrew Chen
 - [[entities/andrew-ho]] — Andrew Ho; ex-OpenAI, bearish on frontier lab valuations, Hayekian economic analysis of AI industry (Jul 30)
-- [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26)
+- [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26); GitHub Actions registry from Homebrew parts — gh-actions-lock, OCI immutable actions (Aug 4)
 - [[entities/andriy-burkov]] — Andriy Burkov
 - [[entities/andy-nguyen]] — Founder & CEO of ByteRover, building an agentic memory layer for coding agents
 - [[entities/anildash]] — Anil Dash; enriched with "How we'll fight the platform war against Big AI" — 4 tactics (disintermediation, provider portability, economic value destruction, channel anger) (June 24)
@@ -179,7 +179,7 @@
 - [[entities/core-auto]] — Core Auto
 - [[entities/coreweave]] — CoreWeave
 - [[entities/corti]] — Corti
-- [[entities/cory-doctorow]] — Cory Doctorow
+- [[entities/cory-doctorow]] — Cory Doctorow; Technology Freedom Cooperative — post-American compute, federated human-rights AI infrastructure (Aug 4)
 - [[entities/courtlistener]] — CourtListener
 - [[entities/creao]] — CreaoAI (CREAO)
 - [[entities/cursor-3]] — Cursor 3
@@ -245,7 +245,7 @@
 - [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with "The next big breakthrough" article — RLVR generalization limits, OPSD/dreaming as 4th scaling axis, computer use grindability, 35M× KV cache vs weight density gap (June 27)
 - [[entities/dylan-patel]] — Dylan Patel
 - [[entities/dynomight-net]] — Dynomight
-- [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1)
+- [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1); The AI Demand Bubble — Barclays/UBS/Wells Fargo analyst concentration data (Aug 4)
 - [[entities/eleanor-berger]] — Eleanor Berger
 - [[entities/eleutherai]] — Grassroots research collective turned non-profit that started the modern open-source AI movement
 - [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24)
@@ -455,7 +455,7 @@
 - [[entities/langsmith]] — LangSmith
 - [[entities/larsen-cundric]] — Larsen Cundric
 - [[entities/late-interaction]] — Late Interaction Workshop (LIR) @ ECIR 2026
-- [[entities/lcamtuf]] — Michał Zalewski (lcamtuf)
+- [[entities/lcamtuf]] — Michał Zalewski (lcamtuf); "party at the end of the internet" — LLM slop + Google pre-digested answers killing organic search (Aug 2026)
 - [[entities/learnvector]] — LearnVector — Andrew Ng's AI edtech company; $100M Coursera investment; one-to-one AI-powered learning platform with adaptive tutoring (Aug 2)
 - [[entities/lee-robinson]] — Lee Robinson — Model behavior at Cursor AI, former VP of Product at Vercel; accessible explanations of model training (pretraining → SFT → RL → alignment)
 - [[entities/lenny]] — Lenny Rachitsky
@@ -534,7 +534,7 @@
 - [[entities/milksandmatcha]] — Sarah Chieng (MilksandMatcha)
 - [[entities/mimi]] — Mimi (Kyutai)
 - [[entities/mimo]] — MiMo (Xiaomi)
-- [[entities/minimax]] — MiniMax
+- [[entities/minimax]] — MiniMax; H3 omni-modal spec + PipeNetwork MLX port for Apple Silicon (Aug 2026)
 - [[entities/minimaxir-com]] — Max Woolf
 - [[entities/mira-murati]] — Mira Murati
 - [[entities/mistral-ai]] — Mistral AI
@@ -740,10 +740,10 @@
 - [[entities/shunyu-yao]] — Shunyu Yao
 - [[entities/shuvendu]] — Shuvendu K. Lahiri
 - [[entities/sid]] — SID AI
-- [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026)
+- [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026); Context Engine — customer relationships as moat (Aug 4)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
-- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31)
+- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4)
 - [[entities/simone-salis]] — Simone Salis
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent)
 - [[entities/siyan-zhao]] — Siyan Zhao
@@ -2867,7 +2867,7 @@
 
 ## Events (23 pages)
 
-- [[events/openai-apple-conflict-2026]] — OpenAI vs Apple Legal Conflict — OpenAI public rebuttal to Apple lawsuit, August 2026
+- [[events/openai-apple-conflict-2026]] — OpenAI vs Apple Legal Conflict — OpenAI public rebuttal to Apple lawsuit, August 2026; preliminary injunction stage (Aug 4-5)
 - [[events/2026-07-29-rsi-pace-letter]] — RSI Pace Letter: 1,171 OpenAI/Anthropic/GDM/Meta/Thinky employees sign letter requesting US international AI pacing framework (July 29, 2026)
 - [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
 - [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft

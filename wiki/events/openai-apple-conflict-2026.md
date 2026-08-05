@@ -14,6 +14,7 @@ tags:
   - legal-tech
 sources:
   - raw/articles/2026-08-03_openai_apple-is-getting-this-wrong.md
+  - raw/articles/daringfireball.net--2026-08-openai-apple-is-getting-this-wrong--f9823ea7.md
 ---
 
 # OpenAI vs Apple Legal Conflict (August 2026)
@@ -66,6 +67,39 @@ OpenAI's public response systematically challenges several key claims from Apple
 - OpenAI describes the lawsuit as **"careless, aggressive and oddly personal"**
 - The company frames the legal action as part of a broader campaign by Apple against AI companies hiring former Apple employees
 
+## Preliminary Injunction Stage (August 4-5)
+
+On **August 4, 2026**, [[concepts/apple|Apple]] filed a **Motion for Preliminary Injunction** in the case. Overnight, [[entities/openai|OpenAI]] published an **unbylined blog post** responding in public — but not yet in court — to Apple's new motion. John Gruber of Daring Fireball called it "an unusual move to respond to a high-stakes legal filing with a blog post, but OpenAI is an unusual company."
+
+### Gruber's Factual Corrections to OpenAI's Post
+
+- The initial "we think you're stealing our trade secrets" letter **was** sent to OpenAI general counsel **Che Chang** — and Che Chang never responded to Apple's lawyers
+- The misdirected email (Apple outside counsel Gabriel Gross emailing the wrong person, followed by a quick apology) was a **separate, inconsequential mistake** about thanking Che Chang for a phone call that never happened, because the email was intended for another OpenAI employee
+- OpenAI's post "hangs on to" the mistaken-email episode, phrasing it as if Apple's entire initial letter of concern never reached the right person; Gruber: "I don't understand why OpenAI is continuing to focus on this inconsequential mistake" (Apple's motion includes the full text of the mistaken email and apology)
+
+### The Chang Liu Allegations
+
+- Apple accuses Chang Liu of downloading **voluminous technical files** from Apple's **third-party cloud storage** (not iCloud) on multiple occasions from February to April 2026 while employed by OpenAI — **37 documents**, up until **April 27, 2026**, over three months after his departure (Liu resigned January 22, 2026)
+- Apple's motion footnote states the downloads "are not based on iCloud activity, but instead relate to Apple's third-party cloud storage"; Gruber is "almost certain" the provider is **Box**, which is widely used throughout Apple
+- The **iMessage transcripts** OpenAI published do **not** contradict Apple's claims — they explain iCloud access that Apple itself says is not in dispute, and offer no explanation for the 37 documents Liu downloaded from the third-party provider
+- Apple also filed a declaration from digital forensic specialist **Daniel Roffman** documenting Liu's post-employment access to confidential files (with significant redactions)
+
+### Tone Shift
+
+- OpenAI's language moved from "we have no interest" in Apple's trade secrets to "we **do not have, nor want**, any of their trade secrets"
+
+### Exhibit F: Quinn Emanuel Email
+
+- OpenAI has retained **Quinn Emanuel (Chicago)** as outside counsel; Apple filed the July 20 email from Quinn Emanuel attorney **Patrick Curran** to Apple's attorneys as "Exhibit F" to one of its expert declarations
+- Curran's email argues the case "lacks merit," that Apple has "not articulated any basis to support a preliminary injunction," that the complaint is "predicated on a misrepresentation of facts and allegations that are speculative at best," that it "fails to even remotely identify any trade secrets," and that Apple is "attacking ordinary business practices (used widely across the industry)"; he calls Apple's PI motion "based on false information and completely unnecessary"
+- The email also recounts failed meet-and-confer efforts: Apple could not identify deposition witnesses, nor justify subjecting hundreds of unrelated OpenAI employees to "questionnaires" about "Apple confidential information"
+- Gruber: "This email is a far better response than what OpenAI published on their blog."
+
+### Commentary
+
+- Gruber: "I do not understand why OpenAI is treating this is a PR problem instead of as a legal problem"
+- Dan Moren, writing at Six Colors, invoked the legal chestnut: "If you have the facts on your side, pound the facts. If you have the law on your side, pound the law. If you have neither on your side, pound the table" — "Thus far this feels like table-pounding from OpenAI"
+
 ## Timeline
 
 | Date | Event |
@@ -74,7 +108,10 @@ OpenAI's public response systematically challenges several key claims from Apple
 | February 2026 | Apple's outside lawyers email the wrong person at OpenAI; Apple later claims no response |
 | February-June 2026 | Apple tells OpenAI they are "resolving any issues" then goes silent |
 | July 10, 2026 | Apple files lawsuit against OpenAI for trade secret theft |
+| July 20, 2026 | Quinn Emanuel attorney Patrick Curran emails Apple's attorneys arguing the case lacks merit and opposing any preliminary injunction (later filed as Exhibit F) |
 | August 3, 2026 | OpenAI publishes "Apple is getting this wrong" rebuttal with evidence |
+| August 4, 2026 | Apple files Motion for Preliminary Injunction, a Daniel Roffman digital forensics declaration, and Quinn Emanuel's July 20 email as Exhibit F |
+| August 4, 2026 | OpenAI publishes unbylined blog post overnight responding in public — but not yet in court |
 
 ## Significance
 
@@ -84,6 +121,7 @@ This conflict highlights several major themes in the contemporary AI industry:
 - **Non-Compete and Trade Secret Boundaries**: The case tests the limits of trade secret law when applied to employee knowledge and open-source contributions
 - **Litigation as Strategy**: Apple's approach of filing suit after months of silence raises questions about whether litigation is being used as a competitive tactic rather than a genuine attempt to resolve disputes
 - **Public Relations Warfare**: OpenAI's decision to publish a detailed rebuttal with documentary evidence represents an increasingly common strategy of litigating cases in the court of public opinion
+- **PR vs. Legal Strategy**: With Apple's move to a preliminary injunction, the case entered active litigation — yet OpenAI again responded with an unbylined blog post rather than a court filing. Gruber ("I do not understand why OpenAI is treating this is a PR problem instead of as a legal problem") and Dan Moren ("pound the table") both characterized this as table-pounding better suited to public relations than to a legal fight, especially given Apple's filings from digital forensic specialist Daniel Roffman and Quinn Emanuel's own July 20 email arguing the case lacks merit
 
 ## Related Pages
 - [[events/apple-sues-openai-2026]] — Apple's original July 2026 lawsuit

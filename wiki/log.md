@@ -1,3 +1,15 @@
+## [2026-08-05] blog-wiki-ingest (10:30) | 8 takes + 1 reference enriched from blog-triage checkpoint (recovered from render failure)
+- **Recovery**: blog-triage cron output failed JSON parse (output_path 58c2f4a7e1bd/2026-08-05_10-27-11.md); checkpoint triage_latest.json valid → Case C2 pattern, processed directly.
+- **entities/simon-willison.md**: Added LLM 0.32 final (Aug 4) — reasoning traces to stderr, server-side tools (OpenAI CodeInterpreter/WebSearch; Anthropic WebSearch/WebFetch/CodeExecution/AnthropicMCP), GPT-5.6 Luna default, `llm openai endpoint`, `model.prompt(messages=[])`, stream_events typed parts, content-addressable Git-style message store, llm-chat-completions-server, "LLM is an agent framework now". Added llm-anthropic 0.26 — claude-fable-5/sonnet-5/opus-5, -T server tools, thinking/thinking_effort simplification.
+- **entities/minimax.md**: H3 omni-modal spec (text/image/audio/video → 15s video+audio) + PipeNetwork/minimax-h3-mlx MLX port (Apple Silicon, ~115GB, 45min generation on M5 Max).
+- **entities/ed-zitron.md**: "The AI Demand Bubble" (Aug 4) — Barclays Sandler 73-75% AWS AI revenue concentration, UBS Ju 28%/48% Google Cloud, Wells Fargo 74% MS AI revenues by FY27, M365 Copilot $3.859B FY26, $8.5B AWS AI rev 2026, circular financing, $1.35T off-balance debt (referenced, not duplicated).
+- **entities/andrew-nesbitt.md**: GitHub Actions registry from Homebrew parts (Aug 4) — gh-actions-lock preview, immutable actions OCI manifests on ghcr.io, tap-of-actions SHA-256 pinning, composite action transitive problem.
+- **events/openai-apple-conflict-2026.md**: Preliminary Injunction stage (Aug 4-5) — Apple PI motion, OpenAI unbylined rebuttal, Che Chang letter facts, 37-doc Box download allegation, Quinn Emanuel Exhibit F (Curran Jul 20 email), tone shift to "do not have, nor want" trade secrets; timeline + significance updated.
+- **entities/sierra.md**: Context Engine (Aug 4) — customer relationships as moat, Horizon agent context accumulation, exploration/exploitation self-improvement, "foundation models cannot be your advantage".
+- **entities/cory-doctorow.md**: Technology Freedom Cooperative (Aug 4) — HRDAG/Kilómetro 0/Invisible Institute/Data Cívica/Innocence & Justice Louisiana, federated computing Canada/US/MX/PR/EU, locally hosted AI, post-American internet framing; cross-linked to AI Digital Sovereignty section.
+- **entities/lcamtuf.md**: Reference — "Meta: 7,000" (Aug 4): party at the end of the internet, LLM slop killing organic search, HN dominated by AI press releases (added to Rejecting Algorithmic Content section).
+- Index descriptions updated for 8 pages. Archive: skip/reference already archived by blog-triage (02a1c56e).
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

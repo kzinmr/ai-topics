@@ -1,10 +1,10 @@
 ---
 title: MiniMax
 created: 2026-05-08
-updated: 2026-08-01
+updated: 2026-08-05
 type: entity
 tags: [entity, company, model, china, open-source, coding-agents, video-generation]
-sources: [raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md, raw/newsletters/2026-08-01-ainews-not-much-happened-today.md]
+sources: [raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md, raw/newsletters/2026-08-01-ainews-not-much-happened-today.md, raw/articles/simonwillison.net--2026-aug-4-minimax-h3-mlx--38cf1186.md]
 ---
 
 # MiniMax
@@ -40,6 +40,22 @@ In July 2026, MiniMax launched **H3**, its first major video generation model, w
 H3 propagated rapidly across partners including **fal, Pollo, PixVerse, Leonardo, and OpenArt**. Technically, H3 appears to integrate **low-to-high generation / baked-in super-resolution** rather than stapling on a separate super-resolution (SR) stage.
 
 This marks MiniMax's entry into AI video generation, extending beyond its M-series LLMs (e.g., M2.7) into the [[concepts/ai-video-generation-2026|2026 video generation landscape]].
+
+### Omni-Modal Spec and MLX Port (August 2026)
+
+On August 2, 2026, MiniMax released **MiniMax-H3**, which it describes as "a general-purpose, omni-modal generative system": it accepts text, images, audio and video inputs and generates up to 15-second video clips **with audio included** — a notable step beyond silent video outputs.
+
+The community package **PipeNetwork/minimax-h3-mlx** ports H3 to **MLX** for running on [[entities/apple|Apple Silicon]]. [[entities/simon-willison|Simon Willison]] ran it on his M5 Max MacBook Pro, downloading ~115 GB of model files; a single video generation took just under 45 minutes. The run pattern is:
+
+```bash
+# First download the models
+uvx --from huggingface_hub hf download MiniMaxAI/MiniMax-H3
+
+# Now run the prompt
+uv run --with mlx-vlm python scripts/generate.py "PROMPT" -o out.mp4
+```
+
+Without prompt guidance for the audio track, Willison found the generated audio came out as "weird speech-like garbage"; H3's prompting guide covers how to steer audio output.
 
 ## Related Pages
 

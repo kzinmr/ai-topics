@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-08-03
+updated: 2026-08-05
 status: L3
 sources:
   - https://pluralistic.net/
@@ -19,6 +19,7 @@ sources:
   - raw/articles/pluralistic.net--2026-07-28-hitl-ers--46dc0e4b.md
   - raw/articles/pluralistic.net--2026-08-01-dare-snot--cd886481.md
   - raw/articles/pluralistic.net--2026-08-03-andor--5e30d1be.md
+  - raw/articles/pluralistic.net--2026-08-04-technology-freedom-cooperative--182f3215.md
 tags: [person]
 ---
 
@@ -276,6 +277,40 @@ Doctorow reconciles individual skilled technologists' positive AI experiences wi
 > "As ever, the most important fact about a given technology isn't 'what it does,' but 'who it does it for' and 'who it does it to.'"
 
 Source: [[raw/articles/pluralistic.net--2026-08-01-dare-snot--cd886481.md]]
+
+### Technology Freedom Cooperative — Post-American Compute (August 2026)
+
+In "[Post-American compute for a post-American Internet](https://pluralistic.net/2026/08/04/technology-freedom-cooperative/)" (Aug 4, 2026), Doctorow announced the launch of the **Technology Freedom Cooperative** — a brand new organization founded by five longstanding human rights nonprofits, federating their computing resources across multiple jurisdictions to escape US platform dependency.
+
+**The Digital Sovereignty Problem — Americans Included**:
+- Trump has "means, motive and opportunity" to order his tech companies to shut down any public official, large corporation, or individual who displeases him — and **Americans face the same risk**: "America is a lawless place now, where a pliable Supreme Court and supine Congress have affirmed that 'it's not a crime if the president does it.'"
+- In a world of tech monopolies, duopolies and cartels, a forcible, sudden **de-Googling** amounts to "a sort of digital death penalty" — the very dominance that makes these companies dangerous also makes them indispensable
+- **ICE Block example**: Apple removed the iOS app that warns users of nearby ICE officers after declaring ICE officers a protected class, to protect its relationship with the Trump regime (and the tax breaks, monopoly power and tariff-free access to Chinese labor that relationship guarantees)
+- Big Tech is "key to Trump's pogroms": without Oracle's databases, Microsoft's administrative tools, Amazon's cloud and Google's location data, ICE would be frozen in place — so Americans "cannot rely on Big Tech to protect them from that authoritarianism"
+
+**The Technology Freedom Cooperative**:
+- Founded by the **Human Rights Data Analysis Group** (San Francisco), **Kilómetro 0** (Puerto Rico), **Invisible Institute** (Chicago), **Data Cívica** (Mexico) and **Innocence & Justice Louisiana** — organizations with long histories of collecting, analyzing and presenting data on systemic discrimination, false imprisonment, extrajudicial killings, war crimes and genocides
+- **Federated computing resources in Canada, the United States, Mexico, Puerto Rico and Europe** — by spreading data and computation across multiple jurisdictions, a US seizure or deletion of their data will not halt their work
+- Serves as a replacement for Big Tech's administrative tools: email hosting, cloud storage, document collaboration
+- Building its own **locally hosted and managed AI infrastructure** — running open models based on their own data, on computers they own and control, with the stated goal to "help organizations test whether models are accurate, reproducible, secure, and appropriate for specific human rights use cases"
+- Includes a **training component**: teaching human rights workers to administer their own servers, secure their data and communications, and analyze data — "skills that are increasingly necessary for human rights organizations documenting abuses of power"
+
+**HRDAG and Patrick Ball**:
+- Doctorow has known **Patrick Ball**, the statistician and programmer who founded HRDAG, for more than 20 years — "He's a 'centaur' if ever there was one," and the person Doctorow thinks of whenever people tell him that AI is useless
+- HRDAG built the **largest human rights database ever created**, tracking every death in the Colombian Civil War and estimating the likelihood that each killing was carried out by a CIA-backed militia, FARC guerrillas, or the Colombian military
+- Conducted the **first ever census of killing by US police officers**
+- Partnered with **Innocence Project New Orleans** to sift through mountains of arrest reports and surface cases similar to successful exonerations
+- Today active across the US tracking and analyzing Trump regime crimes, and working in Gaza to document the genocide "so that someday, the truth can be acknowledged and the perpetrators brought to justice"
+
+**'Post-American Internet' and 'Post-Bubble AI'**:
+- Doctorow calls the coop "the first steps towards a post-American internet" — computing infrastructure sourced from suppliers with no US "enforcement nexus"
+- The coop's AI work represents "a kind of post-bubble AI, where AI tools are treated as normal technologies, capable of helping skilled practitioners who have discernment born of experience to apply them wisely to achieve important things" — echoing the [Discernment condition](#discernment--expertise-as-prerequisite-for-ai-utility-july-2026) from July 2026
+
+> "The AI bubble is madness and will lead to ruin – environmental, economic, political... But AI? It's fine. It's another form of statistical analysis and inference. There's no reason to use all the planet's energy, computing and water to perform that analysis, but the correct and desirable amount of useful AI-style computation is nowhere near zero."
+
+**Cross-reference**: This post is the concrete organizational manifestation of the [AI Digital Sovereignty framework](#ai-digital-sovereignty--the-problem--ai--problem--ai-framework-june-2026) from June 2026. Where that essay argued that AI sovereignty fears distract from real platform-dependency risks, the Cooperative operationalizes the fix: jurisdictionally federated compute, self-owned open models, and skills training instead of reliance on US tech giants.
+
+Source: [[raw/articles/pluralistic.net--2026-08-04-technology-freedom-cooperative--182f3215.md]]
 
 ## Related Pages
 
