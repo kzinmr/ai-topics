@@ -4022,3 +4022,13 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Updated**: `concepts/wheelhouse.md` — added model welfare article as source
 - **Updated**: `index.md` — added concepts/model-welfare entry
 - **Tags**: model-welfare, agentic-engineering, ai-safety, agent-harness, ai-ethics
+
+## 2026-08-05 — Google DeepMind leadership reorganization
+
+- **Source**: https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/
+- **Raw article saved**: raw/articles/2026-08-05_blog.google_next-chapter-ai-momentum.md
+- **Updated entities/deepmind.md**: Added leadership reorganization section (Aug 2026); Demis → Chair + Chief Scientist; Koray → SVP; Jeff Dean departure
+- **Updated entities/demis-hassabis.md**: Role changed from CEO to Chair, GDM & Chief Scientist, Alphabet; added new role section with AGI/Isomorphic Labs focus
+- **Created entities/koray-kavukcuoglu.md**: New SVP of Google DeepMind; 13+ years tenure; WaveNet/DQN; reports to Sundar Pichai
+- **Created entities/jeff-dean.md**: Departing Google after 27 years; launching PBC with Sanjay Ghemawat for ML/science/engineering
+- **Updated wiki/index.md**: Added 2 new entity pages (876→878 entities)

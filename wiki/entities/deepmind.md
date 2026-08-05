@@ -1,7 +1,7 @@
 ---
 title: Google DeepMind
 created: 2026-05-15
-updated: 2026-05-26
+updated: 2026-08-05
 type: entity
 tags:
   - company
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-05-25_deepmind-agents-at-scale-youtube.md
   - raw/newsletters/2026-05-13-the-ai-cursor-arrives.md
   - https://deepmind.google/blog/ai-pointer/
+  - https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/
 ---
 
 # Google DeepMind
@@ -22,7 +23,7 @@ sources:
 | | |
 |---|---|
 | **Founded** | 2010 (as DeepMind); merged with Google Brain 2023 |
-| **CEO** | Sir Demis Hassabis |
+| **Leadership** | Koray Kavukcuoglu (SVP); Sir Demis Hassabis (Chair, GDM & Chief Scientist, Alphabet) |
 | **Parent** | Alphabet Inc. |
 | **HQ** | London, UK |
 | **Known for** | AlphaGo, AlphaFold (Nobel Prize 2024), Gemini, AlphaZero, AI Pointer / Magic Pointer |
@@ -31,6 +32,18 @@ sources:
 ## Overview
 
 Google DeepMind is Alphabet's central AI research laboratory, formed in 2023 by merging the original DeepMind (founded 2010 by Demis Hassabis, Shane Legg, and Mustafa Suleyman) with Google Brain. It is one of the world's most influential AI research organizations, responsible for landmark achievements in reinforcement learning (AlphaGo, AlphaZero), protein folding (AlphaFold, 2024 Nobel Prize in Chemistry), and large language models (Gemini family).
+
+### Leadership Reorganization (August 2026)
+
+On August 5, 2026, Sundar Pichai announced major leadership changes:
+
+- **Demis Hassabis** transitioned from CEO to **Chair of Google DeepMind and Chief Scientist of Alphabet**. He will focus on shaping the future of AGI and continue leading Isomorphic Labs.
+- **Koray Kavukcuoglu** (former CTO of GDM and Chief AI Architect) was promoted to **SVP of Google DeepMind**, reporting directly to Sundar Pichai. He oversees Gemini model development, Frontier AI research, and the Gemini app and developer teams.
+- **Jeff Dean** departed after 27 years at Google, launching an independent public benefit corporation with **Sanjay Ghemawat** focused on ML, science, and engineering. Google is a founding investor and Cloud partner.
+
+**Key metrics as of August 2026:** Gemini app 950M+ MAU, Gemma 900M+ downloads, upcoming Gemini 4 model.
+
+Source: [Google Blog](https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/)
 
 ## Agents at Scale (May 2026)
 
@@ -106,7 +119,9 @@ The AI Pointer represents a shift from **chat-box AI** to **ambient/operating-la
 
 ## Related Entities
 
-- [[entities/demis-hassabis]] — CEO, Google DeepMind
+| [[entities/demis-hassabis]] — Chair, Google DeepMind & Chief Scientist, Alphabet
+| [[entities/koray-kavukcuoglu]] — SVP, Google DeepMind
+| [[entities/jeff-dean]] — Former Google Senior Fellow; launching independent PBC
 - [[entities/mustafa-suleyman]] — Co-founder; now Microsoft AI CEO
 - [[entities/sara-hooker]] — Researcher; "The Hardware Lottery" author
 - [[entities/ivan-leo]] — Google DeepMind researcher; self-extending agents

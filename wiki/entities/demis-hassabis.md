@@ -2,7 +2,7 @@
 title: Demis Hassabis
 type: entity
 created: 2026-04-14
-updated: 2026-07-14
+updated: 2026-08-05
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
@@ -13,6 +13,7 @@ sources:
   - https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round
   - raw/articles/2026-07-14_demishassabis_frontier-ai-framework.md
   - https://x.com/i/article/2076946210397552640
+  - https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/
 ---
 
 
@@ -20,15 +21,30 @@ sources:
 
 | | |
 |---|---|
-| **Role** | CEO, Google DeepMind; Co-founder, DeepMind |
+| **Role** | Chair, Google DeepMind & Chief Scientist, Alphabet; Co-founder, DeepMind |
 | **Born** | 27 July 1976, London, England |
 | **Education** | BA Computer Science (Double First), Cambridge; PhD Cognitive Neuroscience, UCL |
 | **Known for** | AlphaGo; AlphaFold (2024 Nobel Prize in Chemistry); AGI research; DeepMind founding |
-| **Bio** | Child chess prodigy (master by 13) → game developer (Bullfrog, Lionhead, Elixir) → Cambridge CS → UCL neuroscience PhD → DeepMind co-founder & CEO (2010) → Google DeepMind CEO → Nobel Prize in Chemistry (2024). The most accomplished AI researcher-entrepreneur of his generation. |
+| **Bio** | Child chess prodigy (master by 13) → game developer (Bullfrog, Lionhead, Elixir) → Cambridge CS → UCL neuroscience PhD → DeepMind co-founder & CEO (2010) → Google DeepMind CEO → Nobel Prize in Chemistry (2024) → Chair, GDM & Chief Scientist, Alphabet (Aug 2026). The most accomplished AI researcher-entrepreneur of his generation. |
 
 ## Overview
 
-Sir Demis Hassabis is the **CEO of Google DeepMind** and one of the most influential figures in **artificial general intelligence (AGI)** research. His career uniquely spans **chess prodigy**, **game developer**, **neuroscientist**, and **AI researcher** — a combination that shapes his hypothesis that intelligence can be reverse-engineered from biological systems and rebuilt as general-purpose AI.
+Sir Demis Hassabis is the **Chair of Google DeepMind and Chief Scientist of Alphabet** and one of the most influential figures in **artificial general intelligence (AGI)** research. His career uniquely spans **chess prodigy**, **game developer**, **neuroscientist**, and **AI researcher** — a combination that shapes his hypothesis that intelligence can be reverse-engineered from biological systems and rebuilt as general-purpose AI.
+
+### New Role: Chair & Chief Scientist (August 2026)
+
+On August 5, 2026, Sundar Pichai announced that Hassabis would transition from CEO of Google DeepMind to **Chair of GDM and Chief Scientist of Alphabet**. In his message to employees, Hassabis explained:
+
+> "I've decided that now is the right time for me to hand over my day-to-day operational responsibilities at GDM, so that I have the time and space to focus on the big picture and help influence what is to come to the best of my ability."
+
+He will focus on:
+- **AGI strategy** — working closely with Sundar Pichai on strategic and global AGI matters
+- **Isomorphic Labs** — leaning into his role to accelerate AI-driven drug discovery: *"I've always believed the No.1 application of AI should be to improve human health."*
+- **Advisory role** — continuing to advise Koray Kavukcuoglu (new SVP), Josh, and GDM leads from the new London Platform 37 offices
+
+In his message, Hassabis described the moment as *"a pivotal moment in human history"* and stated: *"I've been working towards AGI my whole life and now, like many of you, I feel it is close at hand."*
+
+Source: [Google Blog](https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/)
 
 > *"Solve intelligence, then use that to solve everything else."* — DeepMind founding motto
 
@@ -227,8 +243,9 @@ See: [[entities/isomorphic-labs]] (entity page pending)
 ## Related
 
 - [[entities/mustafa-suleyman]] — DeepMind co-founder; different approach (consumer AI focus)
--  — DeepMind co-founder; Chief AGI Scientist- [[entities/dario-amodei]] — Anthropic CEO; former DeepMind colleague; different safety philosophy
--  — AlphaFold co-lead; Nobel co-recipient-  — Hassabis's central research goal
+- [[entities/koray-kavukcuoglu]] — New SVP of Google DeepMind; successor to Hassabis as operational leader
+- [[entities/dario-amodei]] — Anthropic CEO; former DeepMind colleague; different safety philosophy
+- [[entities/isomorphic-labs]] — Hassabis continues to lead as CEO
 - [[concepts/post-training/reinforcement-learning]] — Core technique in AlphaGo/AlphaZero
 -  — AlphaFold's scientific breakthrough
 - [[concepts/frontier-ai-standards-body]] — July 2026 FINRA-style AI governance proposal

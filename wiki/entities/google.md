@@ -217,7 +217,7 @@ At Google I/O 2026, Google announced a major expansion of the Gemini platform, p
 
 #### Infrastructure Scale
 - **3.2 quadrillion tokens/month** processed (7× year-over-year growth)
-- **900M+ monthly active users** on Gemini app
+- **950M+ monthly active users** on Gemini app (as of Aug 2026; was 900M+ at I/O 2026)
 - Google's AI compute: ~25% of global AI compute capacity
 
 

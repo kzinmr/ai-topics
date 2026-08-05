@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (876 pages)
+## Entities (878 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -407,6 +407,7 @@
 - [[entities/jayden-milne]] — Jayden Milne
 - [[entities/jeff-geerling]] — Jeff Geerling — Author and Raspberry Pi expert; writes on self-hosting, edge AI, local LLMs
 - [[entities/jeff-huber]] — Jeff Huber
+- [[entities/jeff-dean]] — Jeff Dean — Google Senior Fellow (27 years); co-created MapReduce, BigTable, TensorFlow, Google Brain; departing Aug 2026 to launch ML/science PBC with Sanjay Ghemawat
 - [[entities/jensen-huang]] — Jensen Huang — CEO and co-founder of NVIDIA; driving force behind GPU computing and AI hardware infrastructure
 - [[entities/jeremiah-lowin]] — Jeremiah Lowin
 - [[entities/jim-fan]] — Jim Fan
@@ -430,6 +431,7 @@
 - [[entities/jyn]] — Jynn Nelson (jyn)
 - [[entities/k-eric-drexler]] — K. Eric Drexler — molecular nanotechnology pioneer, FHI researcher; CAIS (Comprehensive AI Services) framework reframing superintelligence; AI/ML safety and existential risk (July 5)
 - [[entities/k0nserv]] — Hugo Tunius
+- [[entities/koray-kavukcuoglu]] — Koray Kavukcuoglu — SVP of Google DeepMind (Aug 2026); former CTO/GDM; 13+ years at DeepMind; founded deep learning team; WaveNet, DQN
 - [[entities/karpathy-ideas]] — Karpathy Ideas & Social Influence
 - [[entities/karpathy-projects]] — Karpathy Projects & Open Source
 - [[entities/karpathy-research]] — Karpathy Research Contributions
