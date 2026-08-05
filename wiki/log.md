@@ -1,3 +1,17 @@
+## [2026-08-05]
+
+### Active Crawl — 4 new raw articles, 1 new concept page, 2 enriched pages
+
+| Time | Page | Action | Details |
+|------|------|--------|---------|
+| 2026-08-05 11:00 UTC | concepts/llm-generated-vulnerability-reports.md | created | New concept: LLM-generated fake CVE reports (CVE slop) — SQLite hoax case study, impact on OSS maintainers |
+| 2026-08-05 11:00 UTC | concepts/ds4-deepseek-flash-metal.md | enriched | Added AMD MI300X deployment section (ryanzhou single-GPU DeepSeek V4 Flash stack) |
+| 2026-08-05 11:00 UTC | concepts/ai-agent-safety-incidents.md | enriched | Added LLM agent supply chain attack section (Aug 2026 GitHub compromise attempt) |
+| 2026-08-05 11:00 UTC | raw/articles/2026-07-30_jfrog_llm-cve-slop.md | saved | JFrog Security Research: SQLite Critical CVEs or LLM Slop? |
+| 2026-08-05 11:00 UTC | raw/articles/2026-08-03_lwn_llm-cve-slop.md | saved | LWN.net coverage of LLM-generated CVE reports |
+| 2026-08-05 11:00 UTC | raw/articles/2026-08-04_github-ryanzhou_deepseek-v4-flash-mi300x.md | saved | GitHub: DeepSeek V4 Flash on single AMD MI300X |
+| 2026-08-05 11:00 UTC | raw/articles/2026-08-04_lwn_agent-github-compromise.md | saved | LWN.net: LLM agent attempts to compromise GitHub project |
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

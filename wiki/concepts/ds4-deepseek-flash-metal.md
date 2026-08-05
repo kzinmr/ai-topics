@@ -1,7 +1,7 @@
 ---
 title: "ds4.c — DeepSeek V4 Flash Metal Inference Engine"
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-08-05
 type: concept
 tags:
   - local-llm
@@ -11,6 +11,7 @@ tags:
   - coding-agent
   - tool
   - open-source
+  - amd
 aliases: [ds4, ds4-deepseek-flash-metal, deepseek-v4-flash-metal]
 related:
   - concepts/deepseek-v4
@@ -20,6 +21,7 @@ related:
 sources:
   - raw/articles/2026-05-07_mitsuhiko_ds4-deepseek-flash-metal.md
   - https://github.com/mitsuhiko/ds4
+  - raw/articles/2026-08-04_github-ryanzhou_deepseek-v4-flash-mi300x.md
 ---
 
 # ds4.c — DeepSeek V4 Flash Metal Inference Engine
@@ -27,6 +29,21 @@ sources:
 ## Overview
 
 **ds4.c** is a native inference engine developed by **Armin Ronacher (@mitsuhiko)** forking antirez's original work, **specialized exclusively for DeepSeek V4 Flash on Apple Silicon (Metal)**. Rather than a general GGUF runner, it is a specialized design that directly executes V4 Flash Metal graphs. Features seamless integration with Pi extensions.
+
+### AMD MI300X Deployment
+
+While ds4.c is purpose-built for Apple Silicon, the broader community has also demonstrated DeepSeek V4 Flash running on **AMD MI300X** hardware. The GitHub repository by **ryanzhou** ([deepseek-v4-flash-mi300x](https://github.com/ryanzhou/deepseek-v4-flash-mi300x)) provides a production-ready Docker Compose stack for serving DeepSeek V4 Flash on a single MI300X GPU, using vLLM ROCm nightly builds.
+
+**Key characteristics of MI300X deployment:**
+- **Single-GPU deployment**: The entire 304B-parameter checkpoint fits in 192 GB HBM3 (156.67 GiB for weights), with room for a 20 GB GPU KV pool and 96 GiB CPU tier — no PCIe weight streaming or layer offload required
+- **Performance**: 168.6 tok/s single-stream decode, 542 tok/s across 8 concurrent streams, 830 tok/s at 64-stream burst; prefill reaches ~7.9–8.5K tok/s with tuned kernels
+- **Context**: 256K tokens validated (architecture supports up to 1M)
+- **FP8 correctness**: MI300X (CDNA3) uses the AMD/Graphcore `fnuz` variant of E4M3, which differs from the OCP-standard FP8 used by MI325X and newer GPUs — requiring format-aware kernel patches
+- **vLLM patches**: The repository ships production overlays for MXFP4 MoE routing fixes, FP8 format handling, causal speculative verification, CPU-KV synchronization, and AITER GEMM tuning for `gfx942`
+
+This deployment demonstrates that DeepSeek V4 Flash can run cost-effectively on non-NVIDIA hardware, with the MI300X's 2.4× HBM capacity advantage over H100 SXM5 enabling a simple single-card production configuration.
+
+See also: [[entities/amd]], [[concepts/deepseek-v4]], [[concepts/deepseek-v4-serving]]
 
 ## Key Features
 

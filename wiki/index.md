@@ -881,7 +881,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1943 pages)
+## Concepts (1944 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2064,6 +2064,7 @@
 - [[concepts/llms-eroding-software-careers]] — LLMs Eroding Software Engineering Careers
 - [[concepts/llvm]] — LLVM — Compiler infrastructure: LLVM IR, MLIR, Flang/Fortran compiler
 - [[concepts/llm-confidence-calibration]] — LLM Confidence and Calibration — Why raw LLM confidence scores are unreliable and alternative approaches (confidence probes, multi-sample consistency, model routing)
+- [[concepts/llm-generated-vulnerability-reports]] — LLM-Generated Vulnerability Reports ("CVE Slop") — LLMs fabricating fake CVE vulnerability reports that waste maintainer time and pollute security databases (Aug 2026)
 - [[concepts/local-first-architecture]] — Local-First Architecture
 - [[concepts/local-first-computing]] — Local-First Computing
 - [[concepts/local-first-software]] — Local-First Software
