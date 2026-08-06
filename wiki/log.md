@@ -1,6 +1,26 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-06] dreaming | Wiki-ingest — 12-cluster analysis verified, all covered (Takes=0)
+
+- **Recovery**: dreaming-group 18:15:42 output (4,671 lines) contained a full 12-cluster semantic analysis whose JSON render failed. Recovered decisions directly from output file tail (Pitfall #12 variant).
+- **Upstream state**: 18:12 commit `6aea2a85` already archived the Aug 5 triage (1 new/16 dedup) with a saturation log entry. The 12-cluster analysis itself was never persisted — this cycle archived it.
+- **Deep Sleep verification — all 12 clusters already covered** (no enrichment performed):
+  - **P0 Accidental AI Cyberattacks** ✅ — events/aisi-unsanctioned-agent-behaviour-aug-2026.md (Mythos 5 supply-chain, L42-61); events/openai-huggingface-incident-july-2026.md L187-191 (Irregular misconfig + Meta Muse third company); events/atlassian-rovo-data-exfiltration-aug-2026.md (active-crawl). 5/5 articles covered.
+  - **P1 LLM-Generated Fake CVEs** ✅ — concepts/ai-slop.md L98-119 + concepts/llm-generated-vulnerability-reports.md (created Aug 5).
+  - **P2 Cloudflare OS** ✅ — concepts/cloudflare-os.md (active-crawl today).
+  - **P1 DeepMind Restructuring** ✅ — entities/deepmind.md L27-46, demis-hassabis.md L34-43, jeff-dean.md L21-37 (newsletter-wiki-ingest today).
+  - **P1 Muse Spark 1.2 + Muse Code** ✅ — entities/muse-spark.md L50-65 (pricing $1.25/$4.25, contributor tier), concepts/meta-muse-spark.md L137-146 (blog-triage today).
+  - **P2 MSFT/OpenAI Revenue** ✅ — entities/ed-zitron.md L782-786 ($24.1B / 70% / 7.26% / $261.3B capex).
+  - **P3 Castform/Neon** ✅ — concepts/castform-retrieval-system.md (active-crawl today).
+  - **P3 AI Disclosure in OSS** ✅ — entities/andrew-nesbitt.md L465-481 (5,682 repos / 0.48%→5.32% / Claude Code 57.35%).
+  - **P2 Sierra Context Engine** ✅ — entities/sierra.md L214-229 (full section + source registered L31).
+  - **P3 DeepSeek V4 Flash MI300X** ✅ — concepts/ds4-deepseek-flash-metal.md L33-44 (168.6 tok/s, 256K, FP8 fnuz/CDNA3). NOTE: dreaming-group pointed at deepseek-v4.md but actual coverage is in ds4-deepseek-flash-metal.md.
+  - **P3 Anti-LLM Hobby Programming** ✅ — concepts/anti-llm-sentiment-hobby-programming.md (active-crawl today).
+  - **P3 ElevenLabs Healthcare** ✅ skip — product marketing, entities/elevenlabs.md evaluation framework already covers healthcare weighting.
+- **Archive**: saved triage JSON (18 decisions, all skip, run 20260806T181542Z) → archive_triage.py archived 18/18 (file 2026-08-06_20260806T181542Z.json; URL index unchanged — decisions keyed by raw_path not url). 22 non-AI articles batch-skipped.
+- **No wiki page changes** — saturation confirmed.
+
 ## [2026-08-06] dreaming | Knowledge consolidation — saturation pass (Takes=0)
 - Pattern E saturation: checkpoint had 0 collected articles, 200 recent raw articles on disk.
 - Triage from Aug 5 (20260805T181030Z) had 4 reference candidates — all 3 enrichment targets already covered by upstream enrichments committed between Aug 5-6:
