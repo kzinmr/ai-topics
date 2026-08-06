@@ -2,7 +2,7 @@
 title: "SWE-bench Pro"
 type: concept
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 tags:
   - benchmark
   - evaluation
@@ -12,6 +12,7 @@ sources:
   - title: "SWE-bench Pro: Professional-Grade Software Engineering Evaluation"
     arxiv: "2509.16941"
     year: 2025
+  - "[[raw/articles/substack.com--redirect-010fe6ea-4cbb-46be-aa7f-07c0739b674d--a23ac0be]]"
 related_concepts:
   - concepts/ai-benchmarks/swe-bench
   - concepts/ai-benchmarks/swe-rebench
@@ -48,6 +49,16 @@ The benchmark specifically targets tasks that are harder than typical SWE-bench 
 - Highlights that current agents struggle with professional-level software engineering complexity
 - Provides a more realistic assessment of agent capabilities for production SWE tasks
 - Reveals specific failure modes not visible in easier benchmarks (e.g., architectural reasoning failures)
+
+## OpenAI Endorsement (April 2026)
+
+In April 2026, OpenAI formally retired [[concepts/ai-benchmarks/swe-bench|SWE-Bench Verified]] from its frontier evaluations and **endorsed SWE-Bench Pro as the successor benchmark** — the first time the original authors of a major eval publicly declared it saturated and contaminated (see "The End of SWE-Bench Verified (April 2026)" on the [[concepts/ai-benchmarks/swe-bench|SWE-bench]] page).
+
+Key points from the OpenAI Frontier Evals team (Mia Glaese, Olivia Watkins):
+
+- **Contamination-resistance verified**: OpenAI's contamination auditor agent found only very light evidence of familiarity (1–2 source repositories) on Pro, versus widespread contamination across all frontier models on Verified (verbatim gold-patch regurgitation from Task ID alone)
+- **Headroom**: ~90% of Verified problems were estimated to take an expert engineer under an hour; Pro tasks are bigger, multi-file, multi-language, and far from saturation
+- **Notably charitable**: OpenAI endorsed a benchmark it was **not SOTA on** — even Gemini 3 outperformed GPT 5.x on Pro — lending credibility to the transition
 
 ## Related Benchmarks
 

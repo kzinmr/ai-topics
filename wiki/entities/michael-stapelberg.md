@@ -2,14 +2,15 @@
 title: Michael Stapelberg
 type: entity
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-08-06
 tags:
   - person
   - blogger
   - hn-popular
   - developer-tooling
   - infrastructure
-sources: []
+sources:
+  - "[[raw/articles/michael.stapelberg.ch--posts-2026-04-05-stamp-it-all-programs-must-report-their-ver--74a089c8]]"
 ---
 
 
@@ -51,7 +52,7 @@ His NixCon 2025 trip report indicates deep engagement with the NixOS community a
 
 ### Stamp It! — Version Transparency
 
-In ["Stamp It! All Programs Must Report Their Version"](https://michael.stapelberg.ch/posts/2026-01-stamp-it/), Stapelberg argues that every program should report its version when invoked:
+In ["Stamp It! All Programs Must Report Their Version"](https://michael.stapelberg.ch/posts/2026-04-05-stamp-it-all-programs-must-report-their-version/), Stapelberg argues that every program should report its version when invoked:
 
 > The principle: if you can't determine what version of a program is running, you can't debug it, can't reproduce it, and can't trust it.
 

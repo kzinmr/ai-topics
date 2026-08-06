@@ -1,3 +1,10 @@
+## [2026-08-06] raw-backlog-ingest | The End of SWE-Bench Verified (Apr 2026) event documented
+
+- **Update** concepts/ai-benchmarks/swe-bench.md — Added "The End of SWE-Bench Verified (April 2026)" section: OpenAI (Mia Glaese, Olivia Watkins) publicly retired SWE-Bench Verified Apr 15 2026; 138-problem deep dive (>60% unsolvable; 49 too-narrow tests, 26 too-wide tests); contamination evidence (all frontier models reproduce gold patches from Task ID alone; GPT-5.2 solved 31 contamination-dependent problems); SWE-Bench Pro endorsement; future eval directions (longer-term tasks, design taste, human-intensive rubrics, real-world usage); Preparedness Framework model-autonomy connection. Source: Latent Space podcast transcript raw article.
+- **Update** concepts/ai-benchmarks/swe-bench-pro.md — Added "OpenAI Endorsement (April 2026)" section: contamination-resistance verified by OpenAI auditor agent, headroom vs Verified, OpenAI not SOTA (Gemini 3 > GPT 5.x).
+- **Update** entities/michael-stapelberg.md — Fixed "Stamp It!" article URL (2026-01-stamp-it -> 2026-04-05-stamp-it-all-programs-must-report-their-version), added raw article to sources. Content was already captured.
+- **Skip** entities/martinfowler.md (PRINCE case study already captured in full, 2026-06-21); grantslatton.com Rust Macros (non-AI tutorial); miguelgrinberg.com SQLAlchemy Ch.8 (non-AI book chapter).
+
 ## [2026-08-06] active-crawl | 4 new pages: Cloudflare OS, Castform retrieval, Atlassian Rovo incident, Anti-LLM hobby communities
 
 - **Create** concepts/cloudflare-os.md — Cloudflare OS open platform for agents, apps, and workflows; edge-native agent execution with Durable Objects + Workers AI + browser rendering; launched Aug 5, 2026 (567 HN pts).

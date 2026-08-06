@@ -1087,9 +1087,9 @@
 - [[concepts/ai-benchmarks/st-webagentbench]] — ST-WebAgentBench
 - [[concepts/ai-benchmarks/stack-benchmarking]] — Stack Benchmarking (Ramp)
 - [[concepts/ai-benchmarks/stripe-agent-benchmark]] — Stripe Agent Benchmark
-- [[concepts/ai-benchmarks/swe-bench]] — SWE-bench & SWE-bench Verified
+- [[concepts/ai-benchmarks/swe-bench]] — SWE-bench & SWE-bench Verified — retired by OpenAI Apr 2026 (saturation + contamination); Pro endorsed
 - [[concepts/ai-benchmarks/swe-bench-agent-scaffolding]] — SWE-bench Agent Scaffolding (Claude 3.5 Sonnet)
-- [[concepts/ai-benchmarks/swe-bench-pro]] — SWE-bench Pro
+- [[concepts/ai-benchmarks/swe-bench-pro]] — SWE-bench Pro — OpenAI-endorsed successor (Apr 2026)
 - [[concepts/ai-benchmarks/swe-gym]] — SWE-Gym
 - [[concepts/ai-benchmarks/swe-lancer]] — SWE-Lancer
 - [[concepts/ai-benchmarks/swe-rebench]] — SWE-rebench

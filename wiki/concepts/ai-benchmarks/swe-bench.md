@@ -2,7 +2,7 @@
 title: "SWE-bench & SWE-bench Verified"
 type: concept
 created: 2026-04-25
-updated: 2026-05-27
+updated: 2026-08-06
 tags:
   - benchmark
   - coding-agents
@@ -19,6 +19,7 @@ sources:
   - https://www.swebench.com
   - https://openai.com/index/introducing-swe-bench-verified/
   - https://github.com/SWE-bench/SWE-bench
+  - "[[raw/articles/substack.com--redirect-010fe6ea-4cbb-46be-aa7f-07c0739b674d--a23ac0be]]"
 related_concepts:
   - concepts/ai-benchmarks-and-evals
   - concepts/frontier-swe-benchmark
@@ -217,6 +218,58 @@ The observation that models appear "stuck" at 80-85% has generated significant d
 4. **Recent breakthroughs**: Claude Mythos Preview's 93.9% suggests the "ceiling" may have been a temporary plateau driven by model capability limits rather than an inherent benchmark ceiling
 
 However, OpenAI's retirement of SWE-bench Verified as a frontier evaluation, combined with Scale AI's introduction of the contamination-resistant SWE-bench Pro (where top models score only ~23%), suggests that high Verified scores increasingly reflect training data exposure rather than genuine software engineering capability.
+
+## The End of SWE-Bench Verified (April 2026)
+
+On **April 15, 2026**, OpenAI publicly retired SWE-Bench Verified from its frontier evaluations. In a joint announcement and [[concepts/ai-benchmarks/swe-bench-pro|SWE-Bench Pro]] endorsement, **Mia Glaese** (VP of Research, Frontier Evals / Human Data / Alignment teams, and original coauthor of SWE-Bench Verified) and **Olivia Watkins** (Researcher, Frontier Evals) detailed why the field's de facto standard was declared saturated and contaminated. This marked the first time the *original authors* of a major eval made the call to discontinue reporting it, rather than a third party (Artificial Analysis had stopped indexing SWE-bench long before).
+
+### The Saturation vs. Contamination Debate
+
+- Frontier model scores had plateaued around **~80%** on Verified (Opus 4.5 → 4.6 was literally a 0.1% *down* step)
+- The original SWE-bench authors maintained the "ceiling" for a saturation call should be 87–95% — more points remained even on the 500-task Verified subset
+- OpenAI disagreed, citing two additional findings from a deep-dive analysis of **138 problematic problems** (each reviewed by 6+ professional software engineers):
+
+### Finding 1: >60% of Remaining Problems Are Unsolvable
+
+| Problem type | Count | Description |
+|--------------|-------|-------------|
+| Tests too narrowly defined | 49 | Tests reject *functionally correct* submissions — e.g., tests require a specific argument/function name that was never specified in the problem description |
+| Tests "too wide" | 26 | Tests look for extra features never mentioned in the problem description |
+
+The consequence: passing a test no longer means the solution is good, and failing one no longer means the implementation is wrong. Models were effectively being graded on "correctly guessing how to name a specific function" rather than coding capability.
+
+### Finding 2: Training-on-Test Contamination (The Most Damning)
+
+SWE-bench problems are sourced from 12 popular open-source Python repositories (Django, scikit-learn, etc.) that model providers routinely use for training — and the benchmark's popularity means examples leak into other corpora over time.
+
+- OpenAI's **contamination auditor agent** (given task description + patch + task ID, told to probe a target model) found contamination across **all** frontier models — OpenAI's own, Claude Opus 4.5, and Gemini Flash — including verbatim regurgitation of gold-patch solutions and reproduction of task IDs
+- **All** frontier models could reproduce the original gold patch or problem statement verbatim with minimal prompting, **from the SWE-Bench Verified Task ID alone**
+- GPT-5.2 was found to have solved 31 problems in the "should be very hard to solve without contamination" set; its chain-of-thought revealed knowledge of test requirements never specified (e.g., an argument implemented in a later version of the repository)
+
+### The SWE-Bench Pro Endorsement
+
+OpenAI endorsed **SWE-Bench Pro** (a Scale AI effort) as the successor:
+
+- **Harder**: ~90% of Verified problems were estimated to take an expert engineer under an hour; Pro tasks are bigger, multi-file, and not saturated
+- **More diverse**: many more repositories, multiple languages, qualitatively different problem types
+- **Less contaminated**: the auditor agent found only very light evidence of familiarity (1–2 source repositories) vs. Verified's widespread contamination
+
+Notably, OpenAI endorsed a benchmark it was **not SOTA on** — even Gemini 3 outperformed GPT 5.x on Pro — a deliberately charitable move to legitimize the transition.
+
+### What Frontier Evals Should Measure Next
+
+Glaese and Watkins outlined the direction for next-generation coding evals, echoing OpenAI's own [[concepts/ai-benchmarks/gdpval|GDPval]] approach (rubric-based, human-intensive, domain-expert grading):
+
+- **Longer-term tasks** — hours to days, not 15-minute GitHub issues
+- **Open-ended design decisions** — underspecified problems where "design taste" matters
+- **Code quality and maintainability** — "is the code nice? is it well written?"
+- **Real-world product building** — end-to-end product creation benchmarks
+- **Human-intensive evaluation** — rubrics sourced and validated by domain experts
+- **Tracking real-world usage and impact** — how much AI is actually used/deployed, not just benchmark scores
+
+### Connection to the Preparedness Framework
+
+SWE-Bench Verified was originally created as part of OpenAI's **Preparedness Framework** model-autonomy workstream. The framework tracks three frontier-risk categories: bio risk, cybersecurity, and **research automation & model autonomy**. Retiring Verified reflects the shift from "can an agent fix a GitHub issue" toward "can an agent automate an entire research workflow."
 
 ## Related Pages
 
