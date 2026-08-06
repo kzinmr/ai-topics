@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-08-05
+updated: 2026-08-06
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -776,6 +776,19 @@ Microsoft CFO Amy Hood noted on the most recent earnings call that **90% of all 
 ### Significance
 
 Zitron calls the failure to disclose customer concentration "an absolute fucking scandal," arguing investors have been led to believe the ~$994B spent on AI GPUs and data centers builds the next industrial revolution, when the big three have actually demolished their free cash flow to support a customer base of two labs that "quite literally cannot afford to pay their bills." He predicts the hyperscalers will be forced within a year or two to restate revenues, cut remaining performance obligations, and admit they've drastically overbuilt capacity — with [[entities/microsoft|Microsoft]] and [[entities/google|Google]] left with "chernobyls of capital expenditure" once Anthropic and OpenAI's spend is removed, consistent with his broader [[concepts/ai-bubble-economics]] thesis.
+
+## Microsoft FY26 OpenAI Revenue Disclosure (August 6, 2026)
+
+Zitron analyzes Microsoft's FY2026 earnings disclosure revealing that **OpenAI accounted for $24.1 billion of Microsoft's FY2026 revenues** — approximately **70% of Microsoft's AI revenue** and **7.26% of Microsoft's total $331.8 billion FY26 revenue**.
+
+Key figures from the disclosure:
+- Microsoft has spent **$261.3 billion in capital expenditures** since the beginning of 2022
+- Bloomberg's analysis: AI run rate grew at 123% (March), implying ~$34B total AI revenue for FY26 — of which OpenAI's $24.1B is ~70%
+- Accounts receivable from OpenAI as of June 30, 2026: **$6.0 billion**
+
+Zitron's framing: *"It's impossible to ignore that Microsoft has spent $270 billion in capital expenditures to prop up a single client, and that its overall AI plays have failed to create any significant revenue growth or opportunities."* He positions this as the strongest evidence yet for his [[concepts/ai-bubble-economics]] thesis — the hyperscalers have demolished free cash flow to support a customer base of two labs that cannot afford their compute bills.
+
+Source: [[raw/articles/wheresyoured.at--news-microsoft-disclosures-suggest-openai-sales-account-for---1a97a7c8.md]]
 
 ## Cross-References
 

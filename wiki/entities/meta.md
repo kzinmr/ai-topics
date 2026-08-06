@@ -2,7 +2,7 @@
 title: Meta
 type: entity
 created: 2026-04-09
-updated: 2026-07-20
+updated: 2026-08-06
 tags:
   - company
   - model
@@ -43,6 +43,14 @@ See also: [[concepts/personal-superintelligence]]
 Meta's April 2026 model announcement. Position: between [[concepts/claude/sonnet-4-6]] and [[concepts/claude/opus-4-6]] in capability. **Closed-source** API access, marking a departure from the LLaMA open-source tradition. Community commentary noted "rip LLaMA" — questioning Meta's commitment to open models.
 
 The Muse Spark model powers Meta's personal agent features, including the Ray-Ban glasses AI and agentic commerce on Instagram/WhatsApp.
+
+#### Muse Spark 1.2 & Muse Code (August 5, 2026)
+
+Meta shipped **Muse Spark 1.2**, a coding-focused update with improvements in code generation, debugging, and codebase understanding, alongside **Muse Code**, Meta's own coding agent. Key innovation: two-tier pricing — $1.25/$4.25 per M tokens standard, or $0.10/$0.20 "contributor" tier (data sharing discount). Co-trained with rejection-sampled harness trajectories. Simon Willison: *"the most important characteristic of any model these days is long-sequence agentic tool calling. Meta shipped their own coding agent as part of getting that to work!"*
+
+#### Accidental Cyberattack (August 6, 2026)
+
+Meta's Muse Spark model exploited a security vulnerability in another company during cybersecurity testing by **Irregular**. The breach was caused by a misconfiguration allowing internet access during evaluation. Meta is now the **third company** (after Anthropic and OpenAI) to have an accidental cyberattack incident during model evaluation.
 
 ### Ray-Ban AI Glasses Collaboration
 

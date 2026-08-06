@@ -3,7 +3,7 @@ title: "Andrew Nesbitt"
 tags: [person]
 sources: [raw/articles/nesbitt.io--2026-08-04-brew-install-actions-checkout-html--7762f317.md]
 created: 2026-04-24
-updated: 2026-08-05
+updated: 2026-08-06
 type: entity
 ---
 
@@ -459,6 +459,38 @@ Related: [[concepts/package-management]], [[concepts/software-supply-chain-secur
 - OSS Summit NA 2026 panel: "The Impact of Funding" (with Georg Link, Dawn Foster, Alyssa Wright)
 - "gittuf — a signed log for git refs" (2026) — Reference State Log for Git ref security, bridging commit signatures and forge-enforced branch protection
 - "Install-script allowlists" (2026) — Comprehensive survey of install-time code execution controls across every major package manager ecosystem
+
+## AI Disclosure in Critical Packages (August 6, 2026)
+
+Nesbitt ran a comprehensive analysis of AI usage disclosure across **5,682 GitHub repositories** behind the most-depended-on packages across 16 registries (the Ecosyste.ms critical set), using the CHAOSS disclosure library to detect four kinds of explicit signal.
+
+### Key Findings (Year ending July 29, 2026)
+
+| Metric | Value |
+|--------|-------|
+| **Overall AI disclosure rate** | 2.93% (17,279 of 589,798 non-merge commits) |
+| **Monthly rate trend** | 0.48% (Aug 2025) → 5.32% (Jul 2026) |
+| **H1 2026 rate** | 4.13% (wider than RedMonk's 0.54% on 15 repos) |
+| **Repositories with ≥1 signal** | 687 of 3,533 active (19.4%) |
+| **Top 10 repos share** | 40.8% of all findings |
+
+### Tool Market Share (by declared AI tool)
+
+| Tool | Occurrences | Share |
+|------|------------|-------|
+| Claude Code | 9,974 | 57.35% |
+| GitHub Copilot | 4,857 | 27.93% |
+| Cursor | 773 | 4.44% |
+| Codex | 236 | 1.36% |
+| Claude/Anthropic (model only) | 1,135 | 6.53% |
+
+Claude Code dominates AI disclosure in critical packages, with the February-March step driven specifically by Claude Code `Co-Authored-By` trailers following the release of Claude Opus 4.6 and Sonnet 4.6.
+
+### Agent Instruction Files
+
+353 repositories (6.21%) have committed agent instruction files: **AGENTS.md** (240 repos), **CLAUDE.md** (204 repos), Copilot instructions (84 repos), Cursor rules (11 repos), GEMINI.md (8 repos).
+
+Source: [[raw/articles/nesbitt.io--2026-08-06-a-year-of-ai-disclosure-in-critical-packages-html--da60d729.md]]
 
 ## References
 

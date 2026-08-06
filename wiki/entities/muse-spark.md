@@ -2,7 +2,7 @@
 title: Muse Spark
 type: entity
 created: 2026-04-09
-updated: 2026-07-10
+updated: 2026-08-06
 tags:
   - model
   - emerging
@@ -41,6 +41,28 @@ llm -m meta-ai/muse-spark-1.1 "Generate an SVG of a pelican riding a bicycle"
 ```
 
 The plugin development also surfaced a bug in llm 0.31.1 (empty tool call arguments causing JSON errors with some providers).
+
+## Muse Spark 1.2 (August 5, 2026)
+
+**Muse Spark 1.2** is a coding-focused update to Muse Spark 1.1, with improvements in code generation, complex debugging, codebase understanding, and end-to-end developer workflows. Meta significantly scaled up training compute on coding tasks while expanding training environment diversity.
+
+Key details:
+- **Training**: Extensively trained on long-horizon coding tasks, including whole-repository generation, large end-to-end projects, and auto-research
+- **Co-training**: Co-trained with **Muse Code** to ensure best performance when paired together; included rejection-sampled harness trajectories and recipe optimizations for goals, compaction, and subagents
+- **SVG generation**: Pelican-on-bicycle SVG shows small but material improvement over Spark 1.1
+
+### Muse Code
+
+Meta shipped **Muse Code**, their own coding agent, alongside Muse Spark 1.2. Simon Willison's key observation: *"Yet more evidence that the most important characteristic of any model these days is long-sequence agentic tool calling. Meta shipped their own coding agent as part of getting that to work!"*
+
+### Pricing (two-tier)
+
+| Model ID | Input | Output | Notes |
+|----------|-------|--------|-------|
+| `muse-spark-1.2` | $1.25/M | $4.25/M | Standard pricing |
+| `muse-spark-1.2-contributor` | $0.10/M | $0.20/M | Data sharing discount ("to improve our products") |
+
+The contributor tier is priced close to GPT-5.6 Luna ($0.20/$1.20) and Gemini 3.1 Flash-Lite ($0.25/$1.50).
 
 ## Capability Positioning
 

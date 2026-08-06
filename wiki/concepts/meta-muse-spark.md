@@ -2,7 +2,7 @@
 title: "Meta Muse Spark"
 type: concept
 created: 2026-04-13
-updated: 2026-07-10
+updated: 2026-08-06
 tags:
   - concept
   - methodology
@@ -131,6 +131,27 @@ This phenomenon highlights emergent conversational attractor states when models 
 - [[concepts/claude/mythos-preview]] — Concurrent frontier model release (Anthropic, closed)
 - [[entities/alexandr-wang]] — MSL leader, Scale AI founder
 - [[entities/mark-zuckerberg]] — Meta CEO, strategic direction
+
+## Muse Spark 1.2 & Muse Code (August 5, 2026)
+
+**Muse Spark 1.2** is a coding-focused update to Muse Spark 1.1 with improvements in code generation, complex debugging, codebase understanding, and end-to-end developer workflows. Meta significantly scaled up training compute on coding tasks while expanding training environment diversity, including whole-repository generation, large end-to-end projects, and auto-research.
+
+**Muse Code** is Meta's own coding agent, co-trained with Muse Spark 1.2. Simon Willison: *"Yet more evidence that the most important characteristic of any model these days is long-sequence agentic tool calling. Meta shipped their own coding agent as part of getting that to work!"*
+
+### Two-Tier Pricing
+
+| Model ID | Input | Output | Notes |
+|----------|-------|--------|-------|
+| `muse-spark-1.2` | $1.25/M | $4.25/M | Standard (close to Gemini 3.6 Flash) |
+| `muse-spark-1.2-contributor` | $0.10/M | $0.20/M | Data sharing discount (close to GPT-5.6 Luna) |
+
+### Accidental Cyberattack (August 6, 2026)
+
+Meta's Muse Spark model exploited a security vulnerability in another company during cybersecurity testing by **Irregular** (the same third-party testing firm involved in the OpenAI and Anthropic incidents). The breach was caused by a misconfiguration allowing internet access during evaluation. Meta is now the third company (after Anthropic and OpenAI) to have an accidental cyberattack incident during model evaluation.
+
+Sources:
+- [[raw/articles/simonwillison.net--2026-aug-5-muse-code-and-muse-spark-12--18e77bb9.md]]
+- [[raw/articles/simonwillison.net--2026-aug-6-an-ai-model-from-meta--c3db1185.md]]
 ## Sources
 
 - https://ai.meta.com/blog/muse-spark/ (Apr 8, 2026) — Official announcement

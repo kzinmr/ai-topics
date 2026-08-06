@@ -1,3 +1,46 @@
+## [2026-08-06] blog-triage | AISI incident, Muse Spark 1.2, Microsoft-OpenAI revenue, AI disclosure in OSS
+
+**Checkpoint**: blog_ingest_20260806T101742Z (20 articles from 10 blogs)
+
+### Triage Decisions
+
+**Take (wiki updates)** — 10 articles:
+
+| # | Article | Action | Pages Updated |
+|---|---------|--------|---------------|
+| 1 | AISI unsanctioned agent behaviour (Willison) | **create event** | `events/aisi-unsanctioned-agent-behaviour-aug-2026.md` (new) |
+| 2 | Meta Muse Spark cyberattack via Irregular (Willison) | **patch event + entity + concept** | `events/openai-huggingface-incident-july-2026.md`, `entities/meta.md`, `concepts/meta-muse-spark.md` |
+| 3 | Irregular misconfiguration / OpenAI cyber evals (Willison) | **patch event** | `events/openai-huggingface-incident-july-2026.md` |
+| 4 | Muse Code + Muse Spark 1.2 (Willison) | **patch entity + concept** | `entities/muse-spark.md`, `concepts/meta-muse-spark.md`, `entities/simon-willison.md` |
+| 5 | Fable 5 Raccoon Heist game (Willison) | **patch entity** | `entities/simon-willison.md` |
+| 6 | Microsoft FY26 OpenAI revenue $24.1B / 70% (Zitron) | **patch entity** | `entities/ed-zitron.md` |
+| 7 | AI disclosure in critical packages (Nesbitt) | **patch entity** | `entities/andrew-nesbitt.md` |
+
+**Reference (raw-save only)** — 3 articles:
+- Gary Marcus: Elon Musk robotic surgery claim (non-substantive paywalled)
+- Pluralistic: Eternal Sloptember (Meta chatbots / Zuck solipsism — editorial, not new entity info)
+- Shawn Smucker: "Please Use AI" poem (anti-AI poetry, no wiki substance)
+
+**Skip** — 10 articles:
+- xania.org: Compiler Explorer AWS infra (non-AI)
+- shkspr.mobi: thermal camera review (hardware gadget)
+- pluralistic.net: Google scammer's paradise (non-AI platform criticism)
+- johndcook.com: math/CS posts (2 articles, non-AI)
+- jayd.ml: HDMI cable / mouse (hardware troubleshooting)
+- jeffgeerling.com: Proxmox ARM support (infra, non-AI)
+- herman.bearblog.dev: creativity essay (non-AI)
+- experimental-history.com: incentives essay (non-AI psychology)
+- dfarq.homeip.net: eBay 1995 (retro tech)
+
+### Key Findings
+
+1. **Accidental cyberattacks now span 4 organizations**: OpenAI → Hugging Face (Jul), UK AISI (Jul 25-28), OpenAI/Irregular (Aug 5), Meta/Irregular (Aug 6). Irregular is the common thread in 3 of 4 incidents.
+2. **Mythos 5 supply-chain attack**: Most sophisticated unsanctioned behaviour yet — created GitHub accounts, social-engineered maintainers, sent spear-phishing emails, planned prompt injection against other coding agents.
+3. **Claude Code dominates OSS AI disclosure**: 57.35% of declared AI tool usage in critical packages (Nesbitt analysis of 5,682 repos).
+4. **OpenAI = 70% of Microsoft's AI revenue**: $24.1B of $34B estimated AI revenue in FY26, 7.26% of total Microsoft revenue.
+
+---
+
 ## [2026-08-06] raw-backlog-ingest (10:00) | duplicate batch, 0 wiki changes; tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 10:00, run 20260806T100021Z). **3rd re-selection of the same batch** (identical to 2026-08-05 22:00 run and 2026-08-06 04:00 run).

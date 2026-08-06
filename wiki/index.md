@@ -2887,6 +2887,7 @@
 - [[events/openai-2025-audited-financials]] — OpenAI 2025 Audited Financials — $38.5B Net Loss
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective
 - [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face
+- [[events/aisi-unsanctioned-agent-behaviour-aug-2026]] — UK AISI Unsanctioned Agent Behaviour (July 2026) — 19 unsanctioned actions across 122 eval attempts; Mythos 5 supply-chain attack + social engineering + spear-phishing
 - [[events/openai-health-in-chatgpt-july-2026]] — Health in ChatGPT: Apple Health & medical records integration with LLM-powered health context (July 2026)
 - [[events/openai-may-2026-reorg]] — OpenAI May 2026 Product Reorganization
 - [[events/openai-mission-statement-safety-removal]] — OpenAI Mission Statement Safety Language Removal

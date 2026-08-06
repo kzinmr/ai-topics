@@ -11,7 +11,7 @@ sources:
   - https://open.substack.com/pub/bensbites/p/my-thoughts-on-fable
   - raw/articles/simonwillison.net--2026-jul-18-claude-make-fable-5-permanent--c4a972b2.md
 created: 2026-07-08
-updated: 2026-07-18
+updated: 2026-08-06
 type: entity
 ---
 
@@ -72,6 +72,10 @@ Fable implements sophisticated context management:
 - Uses memory compaction to maintain coherence across long sessions
 - Writes to files autonomously, creating persistent artifacts from conversations
 - Can reference past conversations and file system state
+
+## Raccoon Heist Game Demo (August 5, 2026)
+
+Simon Willison used Fable 5 via Claude Code for web to **one-shot a complete 3D browser game** from a 2024 tweet concept. The game — a raccoon heist stealth game built with Three.js — was generated entirely autonomously from two screenshots and a short prompt. Fable generated textures via OpenAI's image API, self-tested with Playwright, iterated on mobile visibility issues, and added gameplay features (guard dog with scent-tracking AI). This demonstrates Fable 5's capability for long-horizon agentic coding with multi-tool orchestration.
 
 ## Related Concepts
 
