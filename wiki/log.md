@@ -1,3 +1,16 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-08-06] watchdog | Auto-fix: log header burial + events header count
+
+- **Fix** wiki/log.md — `# Wiki Log` header was buried at line 96 (95 orphaned lines above it from prepend operations). Restored header to line 1 via fix_log_header_burial.py; 284 entries preserved, 0 pipe corruption.
+- **Fix** wiki/index.md — Events section header count corrected: `## Events (24 pages)` → `## Events (25 pages)` (25 event files + 25 section entries verified).
+- **Verify** — index.md: validate_index.py exit 0 (2908 lines), 0 pipe/triple-bracket/line-number corruption; log.md: header at line 1, 284 entries, 0 standalone pipes.
+- **Reported (no auto-fix, out of scope)** — 26 pages missing `created:` frontmatter (10+ files → escalate); 283 empty-wikilink anchors (`- — `) in L2 pages; 6 confirmed entity duplicate pairs (eugene-yan/eugeneyan, lilian-weng/lilianweng, giles-thomas/gilesthomas, samuel-colvin/samuelcolvin, deliberate-coder/deliberatecoder, martin-fowler/martinfowler) — merge needs human review; 464 true orphans (deep scan); ~219 real bare/missing wikilink refs + ~1,530 prefix-style refs needing namespace/subdirectory resolution (batch fix >10 files).
+
+---
+
 ## [2026-08-06] raw-backlog-ingest | The End of SWE-Bench Verified (Apr 2026) event documented
 
 - **Update** concepts/ai-benchmarks/swe-bench.md — Added "The End of SWE-Bench Verified (April 2026)" section: OpenAI (Mia Glaese, Olivia Watkins) publicly retired SWE-Bench Verified Apr 15 2026; 138-problem deep dive (>60% unsolvable; 49 too-narrow tests, 26 too-wide tests); contamination evidence (all frontier models reproduce gold patches from Task ID alone; GPT-5.2 solved 31 contamination-dependent problems); SWE-Bench Pro endorsement; future eval directions (longer-term tasks, design taste, human-intensive rubrics, real-world usage); Preparedness Framework model-autonomy connection. Source: Latent Space podcast transcript raw article.
@@ -93,9 +106,8 @@
 - Triage saved (5 skips, Takes=0) to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
 - Archive: archive_triage.py raw_backlog --keep-reference — 2 new archived (fireworks agent-execution-tax + glean copilot playbook now in archive index), 3 dedup_skipped, total 2,311 URLs.
 
-# Wiki Log
+---
 
-_Log of all wiki changes. Newest entries at top._
 ## [2026-08-05] raw-backlog-ingest (22:00) | 4 pages enriched, 5 articles processed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 22:00, run 20260805T220023Z). Decisions: 2 takes, 2 references, 1 skip; 4 wiki pages updated; triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
