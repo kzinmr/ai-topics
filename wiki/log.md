@@ -1,6 +1,21 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+
+## [2026-08-06] raw-backlog-ingest (22:00) | 1 take (Eleanor Berger FAQ, 4 pages enriched), 4 non-AI skips archived
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 22:00, run 20260806T220014Z)。Takes=1, References=0, Skips=4。
+- **Take** `2026-03-31_hugobowne_top-questions-about-ai-assisted-software.md` — Eleanor Berger「Top Questions About AI-Assisted Software Development」(Vanishing Gradients, 2026-03-31, Elite AI Assisted CodingコースFAQ 10問)。4ページに分散強化:
+  - **[[entities/eleanor-berger]]** — 「Top Questions About AI-Assisted Software Development (Mar 2026)」節追加: 10問テーブル(Q1デモvs本番、Q2信頼性、Q3コンテキストスタック、Q4 spec、Q5モード/ツール/モデル、Q6委譲、Q7 SDLC、Q8 asyncエージェント、Q9セキュリティ、Q10計測)。sources+updated更新、Relatedにisaac-flath/spec-driven-development/ai-assisted-development追加。
+  - **[[entities/hugo-bowne-anderson]]** — sourcesにraw記事追加、LogにEp.67(Eleanor Berger+Isaac Flath)伴走FAQとして記載。
+  - **[[concepts/spec-driven-development]]** — stub→実ページ化: spec-as-contract、precise incompleteness、specテンプレート、agent-writes-spec(spec-first loop)、関連概念リンク。
+  - **[[concepts/ai-assisted-development]]** — 「Practitioner Playbook: Ten Questions (March 2026)」節追加: 9フレームワーク表(コンテキストスタック/モダリティスペクトラム/委譲コントロール/Continuous AI/asyncパターン/lethal trifecta/DORA-SPACE計測)。sources+Related更新。
+- **Skip (non-AI) ×4**:
+  - `danluu.com--bitc-retrospective--c9dbfa73.md` — Jonathan ShapiroのBitC言語回顧録(2012, システムプログラミング史)。AI無関係。
+  - `paulgraham.com--mit-html--bc60b634.md` — Paul Graham「A Student's Guide to Startups」(2006, 起業論)。AI無関係。
+  - `construction-physics.com--p-the-fall-and-rise-of-screwworm--52e25531.md` — Screwworm昆虫学/農業史。AI無関係。
+  - `righto.com--2025-08-reverse-engineering-analog-tda7000-html--b2efc096.md` — Ken ShirriffのアナログIC(TDA7000 FM受信機)リバースエンジニアリング。AI無関係。
+- **Tracking**: processed_raw_articles.json に5記事を status=done で登録(4=skip, 1=take、再選択防止)。archive_triage.py raw_backlog --keep-reference 実行(4 new archived, 0 dedup_skipped, total 2336)。
 ## [2026-08-06] skeleton-enrich-daily — restore randy-olson regression (L2→L3), enrich andrew-chen + superpowers
 
 - **[[entities/randy-olson]]** — Content regression fixed: June 5 "Agentic Software Factory" ingest had condensed the page from 209→105 lines. Restored the rich 213-line version from git history (`567abba`), merged the daily data-viz workflow + two verification gates + three skills principles content from the June 5 revision, fixed 9 broken wikilinks, added Related People table + See Also. Now 275 lines / 19.9KB, status L2→L3.

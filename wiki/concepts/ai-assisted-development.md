@@ -4,7 +4,7 @@ type: concept
 aliases:
   - ai-assisted-development
 created: 2026-04-25
-updated: 2026-06-21
+updated: 2026-08-06
 tags:
   - concept
   - coding-agents
@@ -13,6 +13,7 @@ tags:
   - formal-methods
 sources:
   - raw/articles/johndcook.com--blog-2026-06-20-z3-python-claude--6dbfee73.md
+  - raw/articles/2026-03-31_hugobowne_top-questions-about-ai-assisted-software.md
 ---
 
 # AI-Assisted Development
@@ -76,14 +77,38 @@ Key distinctions:
 - **Epistemic role**: The human remains the primary decision-maker and quality gate; the AI is an amplifier
 - **Tooling paradigm**: The interface is typically an IDE extension, CLI agent, or chat panel — not a fully autonomous background system
 
+## Practitioner Playbook: Ten Questions (March 2026)
+
+The most complete practitioner FAQ for AI-assisted development came from **Eleanor Berger** (co-creator of the Elite AI-Assisted Coding course) as a guest post on Vanishing Gradients ([[entities/eleanor-berger]], Mar 31, 2026). It consolidates the recurring course questions into **ten practical questions** — deliberately avoiding "benchmark gossip or model tribalism." The common thread: *"the teams getting real value from AI are not treating it as magic. They are treating it as engineering."*
+
+Key frameworks from the playbook:
+
+| Framework | Content |
+|-----------|---------|
+| **Demos vs production gap** | Demos run in low-constraint greenfield settings; production carries hidden context, constraints, and accumulated risk. The fix is not less AI — it is more engineering (smaller slices, context + non-goals up front, plan before implement, review after each step, let tests arbitrate). |
+| **Reliability loop** | Write down goal/scope/constraints/acceptance criteria → provide project context → keep task small enough to verify → run tests/checks/review after each step → feed failures back into the spec. Treat failures as specification bugs, not model stupidity. |
+| **Portable context stack** | Layers: global rules → repo/project context → external docs → living artefacts (ADRs, specs) → validation checks proving the agent actually loaded the context. Capture intent ("why"), not just instructions. Treat shared context as organisational infrastructure with an owner. |
+| **Modality spectrum** | Completion → inline editing → chat Q&A → chat-driven editing → interactive agentic coding → background async agents. Choose the mode for the task, the model for the phase, the tool for the workflow. |
+| **Delegation control spectrum** | Effective autonomy, not maximal autonomy: bound the scope, use boring safety nets (branches, worktrees, checkpoints, small commits), review incrementally, keep humans responsible for judgement ("trust, but verify"). |
+| **SDLC-wide leverage** | Coding is a small slice: planning/discovery, review, QA, operations (commit messages, CI watching, log parsing), maintenance (docs, release notes, issue triage, dependency updates). "Continuous AI" reduces bottlenecks across the whole lifecycle. |
+| **Async agent pattern** | Trigger → environment → context → specification → execution → output handling (PR/report). Async agents force discipline because you cannot intervene mid-run. |
+| **Security as architecture** | Simon Willison's "lethal trifecta" (private data + untrusted content + external communication), indirect prompt injection, layered network/filesystem/execution restrictions, approval-fatigue awareness. |
+| **Team measurement** | Measure team efficacy, not personal speed. DORA + SPACE as vocabulary, not religion. Measure what AI *delegates* (automated toil), pick 2-3 actionable metrics, build a learning loop, give context an owner. |
+
+See also [[concepts/spec-driven-development]] for the playbook's spec-as-contract framework (Q4).
+
 ## Sources
 
 - John D. Cook, "Generating Z3/Python code with Claude" (June 20, 2026). [[raw/articles/johndcook.com--blog-2026-06-20-z3-python-claude--6dbfee73.md]]
+- Eleanor Berger, "Top Questions About AI-Assisted Software Development" (Vanishing Gradients, Mar 31, 2026). [[raw/articles/2026-03-31_hugobowne_top-questions-about-ai-assisted-software.md]]
 
 ## Related Pages
 
 - [[concepts/agentic-engineering]] — Engineering systems for autonomous agent behavior
 - [[concepts/ai-agent-engineering]] — Engineering AI agent harnesses and runtimes
+- [[concepts/spec-driven-development]] — Spec-as-contract practice central to AI-assisted workflows
+- [[entities/eleanor-berger]] — Author of the ten-question practitioner playbook
+- [[entities/hugo-bowne-anderson]] — Vanishing Gradients host who published the playbook
 - [[entities/john-d-cook-applied-mathematics-consulting]] — Source of the Z3/Python formal programming experiment
 - [[concepts/formal-verification-llm-agents]] — LLM-assisted formal verification
 - [[concepts/intent-formalization]] — Translating human intent to formal specifications

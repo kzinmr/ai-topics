@@ -2,7 +2,7 @@
 title: Eleanor Berger
 type: entity
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-08-06
 tags:
   - person
   - ai-agents
@@ -13,6 +13,7 @@ aliases:
   - intellectronica
 sources:
   - transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
+  - raw/articles/2026-03-31_hugobowne_top-questions-about-ai-assisted-software.md
   - https://maven.com/agentic-ventures/ai-coding
   - https://agentic-ventures.com/
   - https://okigu.com/eleanor
@@ -39,6 +40,25 @@ sources:
 
 ### Elite AI-Assisted Coding (Agentic Ventures)
 A course teaching developers and engineering leaders to adopt AI-powered software development with confidence. Covers the full spectrum from inline completions to autonomous multi-step agents, context management, specification-driven development, and background async agents. Testimonials from senior Microsoft engineers attest to its depth and practical rigor.
+
+### "Top Questions About AI-Assisted Software Development" (Mar 2026)
+
+Eleanor authored the canonical course FAQ as a guest post on [[entities/hugo-bowne-anderson|Hugo Bowne-Anderson]]'s Vanishing Gradients (companion to Vanishing Gradients Ep. 67 with Isaac Flath). The post consolidated recurring course questions into **ten practical questions**, each answered with a short answer + "in practice" playbook. The recurring thesis: *"the teams getting real value from AI are not treating it as magic — they are treating it as engineering."*
+
+| # | Question | Core answer / framework |
+|---|----------|-------------------------|
+| Q1 | Why do demos look magical while real projects feel harder? | Demos run in low-constraint greenfield settings; production carries hidden context, constraints, and accumulated risk. The misdiagnosis is "model got worse" — the real issue is the task got more constrained while the briefing did not. |
+| Q2 | How do I make AI reliable? | Reliability = engineering discipline: be specific, curate context, define success/acceptance criteria, bound scope, verify outside the model. Treat failures as specification bugs, not model stupidity. |
+| Q3 | How much context does an agent need? | A **portable context stack** in layers: global rules → repo/project context → external docs → living artefacts (ADRs, specs) → validation checks. Capture intent ("why"), manage the context window deliberately, and treat shared context as org infrastructure. |
+| Q4 | What makes a good AI coding specification? | The spec is the contract. **Precise incompleteness** — enough detail to define target and boundaries, enough freedom for the model to solve. Spec-driven development is mostly sequence: think before improvising. Agents can write specs for other agents. |
+| Q5 | Which mode, tool, or model? | Four hidden decisions: modality (completion → inline → chat → chat-driven → interactive agentic → async background), execution environment (IDE/CLI/hosted/CI), model (per-phase splits; personal test suites > benchmarks), and cost. "Choose the mode for the task, the model for the phase, the tool for the workflow." |
+| Q6 | How do I delegate without losing control? | **Control spectrum** — effective autonomy, not maximal autonomy. Boring safety nets (branches, worktrees, checkpoints, small commits), incremental review, human-after-the-loop for async work. "Trust, but verify." |
+| Q7 | How can AI help across the SDLC? | Coding is a small slice: planning/discovery, review, QA, operations (commit messages, CI watching, log parsing), maintenance (docs, release notes, issue triage, dependency updates). "Continuous AI" reduces bottlenecks throughout the lifecycle. |
+| Q8 | How do async/parallel agents change the workflow? | Background agents shift AI from babysat tool to task-completing system: true parallelism, SDLC fit, and forced discipline (you cannot intervene mid-run). Reusable async job pattern: trigger → environment → context → spec → execution → output handling (PR/report). |
+| Q9 | How do I keep AI-assisted development secure? | Security as architecture, not prompt-writing: Simon Willison's **"lethal trifecta"** (private data + untrusted content + external communication), indirect prompt injection, layered restrictions (network/filesystem/execution), approval fatigue awareness. |
+| Q10 | How do I know AI is actually helping? | Measure team efficacy, not personal speed. DORA + SPACE as vocabulary, not religion. Measure what AI *delegates* (automated toil), pick 2-3 actionable metrics (review churn, first-pass yield, escaped defects), build a learning loop, and **give context an owner**. |
+
+The FAQ is a direct articulation of Eleanor's course pedagogy: context engineering, spec-first workflows, async agents, security, and team-scale adoption — all vendor-agnostic.
 
 ### OKIGU Advisory
 Advises companies on building robust AI capability, integrating advanced AI systems, and delivering solutions that drive business value. Focus: sustainable AI-engineering muscle, opportunity assessment, data-driven delivery frameworks.
@@ -87,5 +107,8 @@ She limits internet access as much as possible and keeps the agent segregated on
 - [[entities/matthew-honnibal]] — spaCy founder; Episode 3 co-guest; security discussion on HTML smuggling in skills
 - [[entities/simon-willison]] — Originator of the "lethal trifecta" security concept
 - [[entities/hermes-agent]] — Hermes agent harness
-- [[entities/hugo-bowne-anderson]] — Vanishing Gradients host
+- [[entities/hugo-bowne-anderson]] — Vanishing Gradients host; published her course FAQ guest post (Mar 2026)
+- [[entities/isaac-flath]] — Co-creator of Elite AI Assisted Coding course; Vanishing Gradients Ep. 67 co-guest
 - [[concepts/agentic-engineering]] — Agentic engineering patterns
+- [[concepts/spec-driven-development]] — Spec-as-contract practice (Q4 of the course FAQ)
+- [[concepts/ai-assisted-development]] — AI-assisted development practice (home of the 10-question playbook)

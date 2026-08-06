@@ -7,8 +7,10 @@
     "http://Z.ai",
     "http://antirez.com/news/171",
     "http://workos.com/auth-md?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026",
+    "http://www.paulgraham.com/mit.html",
     "http://www.paulgraham.com/popular.html",
     "http://www.paulgraham.com/re.html",
+    "http://www.righto.com/2025/08/reverse-engineering-analog-TDA7000.html",
     "http://www.righto.com/2026/03/ibm-4-pi-computer-history.html",
     "http://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html",
     "http://www.righto.com/2026/06/ibm-604-thyraton-tube-module.html",
@@ -169,6 +171,7 @@
     "https://cursor.com/blog/teams-pricing-june-2026",
     "https://cursor.com/blog/topic/press",
     "https://danluu.com/bad-decisions/",
+    "https://danluu.com/bitc-retrospective/",
     "https://danluu.com/cache-incidents/",
     "https://danluu.com/deconstruct-files/",
     "https://danluu.com/google-sre-book/",
@@ -1911,6 +1914,7 @@
     "https://www.construction-physics.com/p/reading-list-071826",
     "https://www.construction-physics.com/p/reading-list-072526",
     "https://www.construction-physics.com/p/reading-list-080126",
+    "https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm",
     "https://www.construction-physics.com/p/us-subways-build-too-many-cross-passages",
     "https://www.construction-physics.com/p/where-are-the-economies-of-scale",
     "https://www.cryan.com/blog/20240502.jsp",
@@ -2333,5 +2337,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-06T18:25:18.871965+00:00"
+  "updated": "2026-08-06T22:12:06.743742+00:00"
 }

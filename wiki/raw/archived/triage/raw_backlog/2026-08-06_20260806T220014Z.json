@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-06T22:12:06.743201+00:00",
+  "triage_run_id": "20260806T220014Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw_backlog 22:00 run (20260806T220014Z)。5記事処理。Takes=1, References=0, Skips=4。Take: 「Top Questions About AI-Assisted Software Development」(Eleanor Berger / Vanishing Gradients, 2026-03-31) — Elite AI Assisted CodingコースFAQ10問を既存ページ4件に分散強化: entities/eleanor-berger.md(10問テーブル)、entities/hugo-bowne-anderson.md(sources+Log)、concepts/spec-driven-development.md(stub→実ページ化)、concepts/ai-assisted-development.md(実践プレイブック節)。Skips: すべて非AI (1) BitC言語回顧録(2012, システムプログラミング史)、(2) Paul Graham「A Student's Guide to Startups」(2006, 起業論)、(3) Screwworm(昆虫学/農業史)、(4) TDA7000アナログICリバースエンジニアリング(ハードウェア)。4スキップをアーカイブし、processed_raw_articles.jsonに5記事をdone登録して再選択を防止。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-danluu-bitc",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Jonathan Shapiro's Retrospective Thoughts on BitC",
+      "url": "https://danluu.com/bitc-retrospective/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--bitc-retrospective--c9dbfa73.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI。Dan LuuがアーカイブしたJonathan Shapiro(2012年)のBitCシステムプログラミング言語回顧録。BitCはRustと同ニicheを狙ったC後継言語で、型システム・メモリ管理の設計失敗談。entities/dan-luu.mdは既存だが本記事はAI/エージェント技術と無関係な言語設計史。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Jonathan Shapiro's Retrospective Thoughts on BitC\nSource: https://danluu.com/bitc-retrospective/\nThis is an archive of the Jonathan Shapiro's \"Retrospective Thoughts on BitC\" that seems to have disappeared from the internet; at the time, BitC was aimed at the same niche as Rust\nJonathan S. Shapiro"
+    },
+    {
+      "item_id": "raw-backlog-paulgraham-mit",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com",
+      "title": "A Student's Guide to Startups",
+      "url": "http://www.paulgraham.com/mit.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--mit-html--bc60b634.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI。Paul Grahamの2006年エッセイ(MIT講演由来)で、卒業生の3つ目の選択肢としてスタートアップ起業を論じる。スタートアップ論でありAI/LLM/エージェント技術とは無関係。entities/paulgraham-com.mdは既存。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# A Student's Guide to Startups\nSource: http://www.paulgraham.com/mit.html\nOctober 2006\n(This essay is derived from a talk at MIT.)\nTill recently graduating seniors had two choices: get a job or go\nto grad school.  I think there will increasingly be a third option:\nto start your own startup.  But ho"
+    },
+    {
+      "item_id": "raw-backlog-construction-physics-screwworm",
+      "source": "raw_backlog",
+      "source_name": "construction-physics.com (Brian Potter)",
+      "title": "The Fall and Rise of Screwworm",
+      "url": "https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/construction-physics.com--p-the-fall-and-rise-of-screwworm--52e25531.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI。Construction Physics(Brian Potter)の昆虫学/農業史記事で、screwworm(幼虫症ウジバエ)の駆除と再興を扱う。生物・農業トピックでAI/エージェント技術と無関係。entities/construction-physics-com.mdは既存。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The Fall and Rise of Screwworm\nSource: https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm\nEvery spring, as sure as the seasons, and for generations unknown, screwworms began their annual march northward from their overwintering sanctuaries in Mexico and South Texas. Pushed by an"
+    },
+    {
+      "item_id": "raw-backlog-righto-tda7000",
+      "source": "raw_backlog",
+      "source_name": "righto.com (Ken Shirriff)",
+      "title": "How to reverse engineer an analog chip: the TDA7000 FM radio receiver",
+      "url": "http://www.righto.com/2025/08/reverse-engineering-analog-TDA7000.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/righto.com--2025-08-reverse-engineering-analog-tda7000-html--b2efc096.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI。Ken ShirriffのアナログIC(Philips TDA7000 FMラジオ受信機)ダイ写真からのリバースエンジニアリング解説。ハードウェア・半導体解析でAI/エージェント技術と無関係(LLMチップ解析ではない)。entities/righto-com.mdは既存。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# How to reverse engineer an analog chip: the TDA7000 FM radio receiver\nSource: http://www.righto.com/2025/08/reverse-engineering-analog-TDA7000.html\nHave you ever wanted to reverse engineer an analog chip from a die photo?\nWanted to understand what's inside the \"black box\" of an integrated circuit?"
+    }
+  ]
+}

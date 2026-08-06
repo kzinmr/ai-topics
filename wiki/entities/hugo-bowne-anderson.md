@@ -19,6 +19,7 @@ tags:
 sources:
   - raw/articles/2026-05-04_15-privacy-questions-ai-builder.md
   - raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md
+  - raw/articles/2026-03-31_hugobowne_top-questions-about-ai-assisted-software.md
   - https://open-racer-a67.notion.site/The-agent-harness-reading-list-35e14bb7e4a2805d881ae261573ff76f
   - raw/newsletters/2026-07-25-four-months-inside-a-production-ai-agent-what-real-users-changed.md
   - raw/newsletters/2026-07-28-how-to-build-an-effective-agent-harness.md
@@ -358,6 +359,7 @@ This case study directly validates Hugo's broader philosophy: evaluation-driven 
 
 ## Log
 
+- **2026-08-06**: Added guest post source "Top Questions About AI-Assisted Software Development" (Eleanor Berger, Mar 31, 2026) — the canonical Elite AI-Assisted Coding course FAQ published on Vanishing Gradients as companion to Ep. 67 (Eleanor Berger + Isaac Flath). Ten-question framework (demos vs production, reliability, context stack, spec-driven development, mode/tool/model selection, delegation control, SDLC-wide AI, async agents, security, team measurement) documented in [[entities/eleanor-berger]] and [[concepts/ai-assisted-development]].
 - **2026-07-25**: Added Production AI Agents: Maven Assistant section (William Horton interview, July 2026). Documented evaluation system, unexpected usage patterns, model switching, guardrail failures. Added `production-ai-agents` concept page cross-reference.
 - **2026-06-05**: Added "The Agentic Software Factory" article (Show Us Your Agent Skills Ep. 1). Added Jeremiah Lowin and Randy Olson to Related People. Added Show Us Your Agent Skills entity link.
 - **2026-05-13**: Major enrichment — Added Privacy Engineering section (from "15 Privacy Questions" with Katharine Jarmul), Agent Harness Engineering section (Harness Reading List, Lance Martin's Reduce/Offload/Isolate, Jeff Huber context engineering, Ivan Leo self-extending agents, Doug Turnbull agentic search). Added 5 new Related People entries. Merged duplicate `hugo-bowne.md` stub. Added `@hugobowne` to x-accounts.yaml.
