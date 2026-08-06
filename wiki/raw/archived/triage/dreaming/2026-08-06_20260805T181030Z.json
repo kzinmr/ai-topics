@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-08-06T18:11:44.802075+00:00",
+  "triage_run_id": "20260805T181030Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E saturation: 205 raw articles scanned (Aug 3-5), 4 reference enrichment candidates identified (Warp Agent CLI standalone, Harvey AI Tax+Playbook, Hebbia delivery control, Gary Marcus Astra replication), 16 skips (12 already-covered, 4 non-AI batch). Prior triage (Aug 4) consumed by dreaming-wiki-ingest — fresh scan.",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-nonnai-batch",
+      "source": "dreaming",
+      "source_name": "mixed",
+      "title": "Non-AI articles batch skip (Aug 3-5)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事バッチスキップ: shkspr.mobi gig review (Belle Sebastian), dfarq.homeip.net Radio Shack, johndcook.com metallic ratios ×2, techcrunch.com Bending Spoons/Airtable, devblogs.microsoft.com OldNewThing ×2, macrumors.com Apple VP hiring, snopes.com civil war fact check, eli.thegreenplace.net relative velocity, om.co Mythos essay, terminalwidget.app, pluralistic.net tech freedom cooperative。全て非AI・一般テクノロジー・エンタメ記事。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch of 13 non-AI articles from general tech blogs, personal essays, and entertainment sources."
+    }
+  ]
+}

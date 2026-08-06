@@ -1,6 +1,16 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-06] dreaming | Knowledge consolidation — saturation pass (Takes=0)
+- Pattern E saturation: checkpoint had 0 collected articles, 200 recent raw articles on disk.
+- Triage from Aug 5 (20260805T181030Z) had 4 reference candidates — all 3 enrichment targets already covered by upstream enrichments committed between Aug 5-6:
+  - **Warp Agent CLI** (entities/warp-terminal.md lines 236-243): mux PTY, persistent sessions, remote agents, full-screen app control ✅
+  - **Harvey AI Tax Research + Playbook Builder** (entities/harvey.md lines 372-404): both product features fully documented ✅
+  - **Hebbia delivery control** (entities/hebbia.md lines 96-104): gardener-not-architect framework, UK vaccination case study ✅
+- Aug 6 pipelines already processed today's content: active-crawl (4 new pages: Cloudflare OS, Castform retrieval, Atlassian Rovo incident, Anti-LLM hobby communities), newsletter-wiki-ingest (Jeff Dean enrichment), blog-triage (AISI incident, Muse Spark, Microsoft-OpenAI revenue).
+- Archive: 17 candidates, 1 newly archived, 16 dedup. Total archive URLs: 2,332.
+- No wiki changes this cycle — saturation confirmed.
+
 
 ## [2026-08-06] raw-backlog-ingest (18:00) | 5記事すべてskip判定・wiki変更なし
 
