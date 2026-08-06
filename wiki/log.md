@@ -1,6 +1,13 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-06] skeleton-enrich-daily — restore randy-olson regression (L2→L3), enrich andrew-chen + superpowers
+
+- **[[entities/randy-olson]]** — Content regression fixed: June 5 "Agentic Software Factory" ingest had condensed the page from 209→105 lines. Restored the rich 213-line version from git history (`567abba`), merged the daily data-viz workflow + two verification gates + three skills principles content from the June 5 revision, fixed 9 broken wikilinks, added Related People table + See Also. Now 275 lines / 19.9KB, status L2→L3.
+- **[[entities/andrew-chen]]** — Enriched with Selected Essays table (Substack archive 2025: viral loops, anti-pitch, retention, vibe coding predictions, Growth Maze vs Idea Maze, GPT wrappers defensibility), a16z Speedrun program details, platform-economics/vc tags. Fixed broken mac-studio-local-ai link. L2→L3.
+- **[[entities/superpowers]]** — Enriched from GitHub README + release announcement: 7-step mandatory workflow, full skills library (testing/debugging/collaboration/meta), philosophy (TDD-first, systematic over ad-hoc), 10 supported harnesses, Prime Radiant Inc commercial maintainer, superpowers-evals drill harness, telemetry notes. L2→L3.
+- **Sources**: raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md, raw/articles/2026-06-23_hugobowne_show-us-your-agent-skills.md, transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md, github.com/obra/superpowers, blog.fsck.com/2025/10/09/superpowers/, andrewchen.substack.com archive.
+
 ## [2026-08-06] dreaming | Wiki-ingest — 12-cluster analysis verified, all covered (Takes=0)
 
 - **Recovery**: dreaming-group 18:15:42 output (4,671 lines) contained a full 12-cluster semantic analysis whose JSON render failed. Recovered decisions directly from output file tail (Pitfall #12 variant).

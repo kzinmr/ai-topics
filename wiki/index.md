@@ -48,7 +48,7 @@
 - [[entities/amp]] — Amp
 - [[entities/andon-labs]] — Andon Labs
 - [[entities/andrej-karpathy]] — Andrej Karpathy — Founding member of OpenAI, former Sr. Director of AI at Tesla, creator of nanogpt/micrograd; pioneer of LLM wiki patterns
-- [[entities/andrew-chen]] — Andrew Chen
+- [[entities/andrew-chen]] — Andrew Chen — a16z General Partner (Speedrun), author of The Cold Start Problem; local AI home lab practitioner (May 2026); essays on viral loops, vibe coding, GPT wrapper defensibility
 - [[entities/andrew-ho]] — Andrew Ho; ex-OpenAI, bearish on frontier lab valuations, Hayekian economic analysis of AI industry (Jul 30)
 - [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26); GitHub Actions registry from Homebrew parts — gh-actions-lock, OCI immutable actions (Aug 4)
 - [[entities/andriy-burkov]] — Andriy Burkov
@@ -668,7 +668,7 @@
 - [[entities/rakhim-exotext-com]] — Rakhim (Rakhim Davletkaliyev)
 - [[entities/ramp]] — Ramp
 - [[entities/ramp-labs]] — Financial technology company with an AI research division (Ramp Labs). Creator of Inspect — a background coding agent...
-- [[entities/randy-olson]] — Randy Olson
+- [[entities/randy-olson]] — Randy Olson — Co-Founder/CTO Goodeye Labs (Truesight), TPOT AutoML creator, r/DataIsBeautiful moderator; Tufte Test, Truesight MCP agent skills, generator-evaluator workflow, daily data-viz skill
 - [[entities/raw-works]] — Raymond Weitekamp (@raw_works)
 - [[entities/recursive-superintelligence]] — Recursive Superintelligence
 - [[entities/reevo]] — Reevo
@@ -771,7 +771,7 @@
 - [[entities/subquadratic]] — Subquadratic (SubQ)
 - [[entities/substack]] — substack
 - [[entities/supermemory]] — Supermemory (SMFS)
-- [[entities/superpowers]] — Superpowers
+- [[entities/superpowers]] — Superpowers — Jesse Vincent/Prime Radiant agent skills framework; 7-step TDD methodology, spec interviews, subagent-driven development; used by Wes McKinney
 - [[entities/susam-net]] — Susam Pal
 - [[entities/sydney-runkle]] — Sydney Runkle / sydneyrunkle
 - [[entities/tailcalled]] — tailcalled
