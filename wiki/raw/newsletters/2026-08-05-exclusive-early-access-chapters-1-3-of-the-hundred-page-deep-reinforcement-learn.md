@@ -1,0 +1,62 @@
+---
+title: "Exclusive Early Access: Chapters 1-3 of The Hundred-Page Deep Reinforcement Learning Book"
+date: 2026-08-05
+processed_at: 2026-08-06T10:27:18.707506+00:00
+source_label: "uid=466"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-08-05
+
+**Subject:** Exclusive Early Access: Chapters 1-3 of The Hundred-Page Deep Reinforcement Learning Book
+**Collected:** 2026-08-06T10:27:18.707513+00:00
+**Articles linked:** 12
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZSZyPTJmbHg2Jm5leHQ9aHR0cHMlM0ElMkYlMkZhaXdlZWtseS5zdWJzdGFjay5jb20lMkZwJTJGZXhjbHVzaXZlLWVhcmx5LWFjY2Vzcy1jaGFwdGVycy0xIiwicCI6MjA5OTg1Mzc0LCJzIjo2MTQ1NSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzg1OTYzNDI5LCJleHAiOjIxMDE1Mzk0MjksImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.fdHdF9i7Jiqi0w7ACCRwn1KkWORMtQp-YhvwQJL7EeU?
+
+## 2. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vcC9leGNsdXNpdmUtZWFybHktYWNjZXNzLWNoYXB0ZXJzLTE_dXRtX2NhbXBhaWduPWVtYWlsLWhhbGYtcG9zdCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNRGs1T0RVek56UXNJbWxoZENJNk1UYzROVGsyTXpReU9Td2laWGh3SWpveE56ZzROVFUxTkRJNUxDSnBjM01pT2lKd2RXSXROakUwTlRVaUxDSnpkV0lpT2lKd2IzTjBMWEpsWVdOMGFXOXVJbjAuRVJMeEtuRHJfTzJOdEVGLUQ1N0xMMGpKOURuT1lzX1IweEg2Skl1MlJOcyIsInAiOjIwOTk4NTM3NCwicyI6NjE0NTUsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4NTk2MzQyOSwiZXhwIjoyMTAxNTM5NDI5LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.OhSfujnwBBTFXJGZtHJ2fQ-LJ0FgfZvh3ssGwR5Bex4?
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=209985374&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDk5ODUzNzQsImlhdCI6MTc4NTk2MzQyOSwiZXhwIjoxNzg4NTU1NDI5LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.ERLxKnDr_O2NtEF-D57LL0jJ9DnOYs_R0xH6JIu2RNs
+
+## 4. Link
+
+- **URL:** https://substack.com/@aiweekly
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=209985374&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDk5ODUzNzQsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzg1OTYzNDI5LCJleHAiOjE3ODg1NTU0MjksImlzcyI6InB1Yi02MTQ1NSIsInN1YiI6InJlYWN0aW9uIn0.7Ji85Xf8aqGZRl_8EOfCJqefx1C4PQ5bG4rOI1Lts9A&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=209985374&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDk5ODUzNzQsImlhdCI6MTc4NTk2MzQyOSwiZXhwIjoxNzg4NTU1NDI5LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.ERLxKnDr_O2NtEF-D57LL0jJ9DnOYs_R0xH6JIu2RNs&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=209985374&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDk5ODUzNzQsImlhdCI6MTc4NTk2MzQyOSwiZXhwIjoxNzg4NTU1NDI5LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.ERLxKnDr_O2NtEF-D57LL0jJ9DnOYs_R0xH6JIu2RNs
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/aiweekly/p/exclusive-early-access-chapters-1?utm_source=substack&utm_medium=email&utm_campaign=email-restack-comment&action=restack-comment&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMDk5ODUzNzQsImlhdCI6MTc4NTk2MzQyOSwiZXhwIjoxNzg4NTU1NDI5LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.ERLxKnDr_O2NtEF-D57LL0jJ9DnOYs_R0xH6JIu2RNs&utm_source=substack&utm_medium=email
+
+## 9. Link
+
+- **URL:** https://open.substack.com/pub/aiweekly/p/exclusive-early-access-chapters-1?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9cG9zdCZ1dG1fY2FtcGFpZ249ZW1haWwtY2hlY2tvdXQmbmV4dD1odHRwcyUzQSUyRiUyRmFpd2Vla2x5LnN1YnN0YWNrLmNvbSUyRnAlMkZleGNsdXNpdmUtZWFybHktYWNjZXNzLWNoYXB0ZXJzLTEmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0pwWVhRaU9qRTNPRFU1TmpNME1qa3NJbVY0Y0NJNk1UYzRPRFUxTlRReU9Td2lhWE56SWpvaWNIVmlMVFl4TkRVMUlpd2ljM1ZpSWpvaVkyaGxZMnR2ZFhRaWZRLllidVBBd25aSTI4MXpoYnBkLUx3RWttWTQzellpUEZaWGVRZ0lmNDc1YWciLCJwIjoyMDk5ODUzNzQsInMiOjYxNDU1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODU5NjM0MjksImV4cCI6MjEwMTUzOTQyOSwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.6zEZiIzbdtAXhVH1NlbDdyezILdNc2DBvzRac9I-BTg?simple=true&utm_source=paywall&utm_medium=email&utm_content=209985374&next=https://aiweekly.substack.com/p/exclusive-early-access-chapters-1&coupon=9e0aa1c2
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vYWN0aW9uL2Rpc2FibGVfZW1haWw_dG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1EazVPRFV6TnpRc0ltbGhkQ0k2TVRjNE5UazJNelF5T1N3aVpYaHdJam94T0RFM05EazVOREk1TENKcGMzTWlPaUp3ZFdJdE5qRTBOVFVpTENKemRXSWlPaUprYVhOaFlteGxYMlZ0WVdsc0luMC5MY0VIdXhLV1FyemRmbGQ4X3Q5SDY3VkJkQi1pcGY3dS1LMTlob25wZTdBIiwicCI6MjA5OTg1Mzc0LCJzIjo2MTQ1NSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzg1OTYzNDI5LCJleHAiOjIxMDE1Mzk0MjksImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.WHBacaaYOjIV5ru5pJJsXWz3f8XUn8c6SKQ9Fp73wb8?
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMDk5ODUzNzQsInMiOjYxNDU1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3ODU5NjM0MjksImV4cCI6MjEwMTUzOTQyOSwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.ERbWkjJHD3XLAq0UY7CeMtklO0MkxWjCqvjibE4E20M?
+

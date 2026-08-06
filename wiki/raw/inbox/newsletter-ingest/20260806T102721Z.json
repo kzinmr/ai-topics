@@ -1,0 +1,115 @@
+{
+  "triage_id": "20260806T102721Z",
+  "triaged_at": "2026-08-06T10:32:00Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "run_id": "20260806T102721Z",
+  "total_newsletters": 3,
+  "items": [
+    {
+      "message_id": "<20260806043411.3.02e197a0bbfb033e@mg2.substack.com>",
+      "subject": "[AINews] Jeff, Sanjay, Oriol, and Quoc depart DeepMind; Demis to Chair; Koray to SVP",
+      "date": "2026-08-06",
+      "source": "Latent.Space (swyx) / AINews",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-06-ainews-jeff-sanjay-oriol-and-quoc-deepmind-demis-to-chair-koray-to-svp-wh.md",
+      "classification": "critical",
+      "reason": "Major AI lab leadership shakeup. Jeff Dean, Sanjay Ghemawat, Oriol Vinyals, and Quoc Le depart Google DeepMind to co-found Discovery Loop (@DiscoLoopAI), a Public Benefit Corporation focused on automating machine research. Demis Hassabis moves to Chairman, Koray Kavukcuoglu promoted to SVP. Jeff Dean's announcement tweet got 15K+ likes and 3.2M impressions.",
+      "enrichment": {
+        "primary_event": "Discovery Loop founding — autoresearch startup as PBC",
+        "founders": ["Jeff Dean", "Sanjay Ghemawat", "Oriol Vinyals", "Quoc Le"],
+        "new_company_handle": "@DiscoLoopAI",
+        "mission": "Automate machine research",
+        "entity_type": "Public Benefit Corporation",
+        "deepmind_restructuring": "Demis Hassabis → Chairman, Koray Kavukcuoglu → SVP",
+        "key_urls": {
+          "announcement_tweet": "https://x.com/JeffDean/status/2085034604172603724",
+          "hn_discussion": "https://news.ycombinator.com/item?id=49184960",
+          "article": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc"
+        },
+        "other_stories_mentioned": [
+          "Meta Spark 1.2 and Muse Code — 5.6 Terra-level model with local event log for resumability",
+          "Prime Agent by Prime Intellect — self-improving RLM harness, claims 95.5% on ARC-AGI-3"
+        ]
+      },
+      "action_items": [
+        "Create event page: events/deepmind-departures-discovery-loop-2026-08.md",
+        "Create entity page: entities/discovery-loop.md",
+        "Update entity pages: entities/jeff-dean.md, entities/sanjay-ghemawat.md, entities/oriol-vinyals.md, entities/quoc-le.md",
+        "Update entity page: entities/demis-hassabis.md (role change to Chairman)",
+        "Check/create entity page: entities/koray-kavukcuoglu.md",
+        "Consider entity page for Meta Spark / Muse Code (secondary story)",
+        "Consider entity page for Prime Agent / Prime Intellect (secondary story)"
+      ],
+      "article_urls": [
+        "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc"
+      ],
+      "redirect_urls": [
+        "https://substack.com/redirect/661646fc-9149-4094-b0ea-ab03d697f76d?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/7d3e7acd-1295-4c83-a04c-41015e644575?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/4d95d1ca-20d3-4bb0-a3c3-a3417c6fd52f?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/172b3561-3280-4e43-b2c3-0089fe0b3677?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/194d26cf-1412-47f3-9a5d-0da9898a7fb1?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/5a5dd77f-99f0-4413-8fc3-8503d72944cd?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/91ec1201-d2fd-4d51-96d4-4eb0744c2437?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/8dfd8201-3c1b-4691-86f6-fdeb4d231d65?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/cd6165e1-2c67-41ab-a622-4075ecc96d46?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/693abb82-14f7-4ef1-869f-88ff6f13a8a0?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/aa4a5ab6-4d36-4dbf-a455-45c45f509786?j=eyJ1Ij...tf6E",
+        "https://substack.com/redirect/ec17e448-69ce-4c2d-b4ee-f604674a4a51?j=eyJ1Ij...tf6E"
+      ]
+    },
+    {
+      "message_id": "<20260805205635.3.8f1a840f0edd21f7@mg2.substack.com>",
+      "subject": "Exclusive Early Access: Chapters 1-3 of The Hundred-Page Deep Reinforcement Learning Book",
+      "date": "2026-08-05",
+      "source": "AI Weekly (@aiweekly)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-05-exclusive-early-access-chapters-1-3-of-the-hundred-page-deep-reinforcement-learn.md",
+      "classification": "high",
+      "reason": "Deep reinforcement learning educational resource — early access to first 3 chapters of a 100-page DRL book. Potentially paywalled content. Relevant for wiki concept pages on deep reinforcement learning.",
+      "enrichment": {
+        "resource_type": "Book — early access chapters 1-3",
+        "topic": "Deep Reinforcement Learning",
+        "page_count": 100,
+        "access": "Possibly paywalled (coupon redirect detected)"
+      },
+      "action_items": [
+        "Fetch main article: https://open.substack.com/pub/aiweekly/p/exclusive-early-access-chapters-1",
+        "Update or create concept page: concepts/deep-reinforcement-learning.md",
+        "Note book resource in relevant concept or event page if content is accessible"
+      ],
+      "article_urls": [
+        "https://open.substack.com/pub/aiweekly/p/exclusive-early-access-chapters-1"
+      ],
+      "redirect_urls": [
+        "https://substack.com/redirect/2/eyJlIj...7EeU?",
+        "https://substack.com/redirect/2/eyJlIj...Bex4?",
+        "https://substack.com/redirect/2/eyJlIj...-BTg?simple=true&utm_source=paywall&utm_medium=email&utm_content=209985374&next=https://aiweekly.substack.com/p/exclusive-early-access-chapters-1",
+        "https://substack.com/redirect/2/eyJlIj...3wb8?",
+        "https://substack.com/redirect/2/eyJlIj...E20M?"
+      ]
+    },
+    {
+      "message_id": "<20260805190851.3.8301666b182a83a6@mg2.substack.com>",
+      "subject": "Lessons From Three Product Leaders Living in the Future",
+      "date": "2026-08-05",
+      "source": "The Skip (@theskip)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-05-lessons-from-three-product-leaders-living-in-the-future.md",
+      "classification": "low",
+      "reason": "Product management podcast content. No AI/LLM/Agent relevance. Links are podcast play links and product leadership content.",
+      "enrichment": {},
+      "action_items": [],
+      "article_urls": [],
+      "redirect_urls": []
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 1,
+    "low": 1,
+    "top_story": "Discovery Loop: Jeff Dean, Sanjay Ghemawat, Oriol Vinyals, Quoc Le leave DeepMind to co-found autoresearch PBC; Demis to Chairman, Koray to SVP",
+    "top_story_url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
+    "secondary_stories": [
+      "Meta Spark 1.2 + Muse Code (5.6 Terra-level model with agent harness)",
+      "Prime Agent by Prime Intellect (95.5% ARC-AGI-3 claim)"
+    ]
+  }
+}

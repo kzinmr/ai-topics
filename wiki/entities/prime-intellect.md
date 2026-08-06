@@ -1,7 +1,7 @@
 ---
 title: "Prime Intellect"
 created: 2026-05-13
-updated: 2026-07-13
+updated: 2026-08-06
 type: entity
 tags:
   - company
@@ -16,6 +16,7 @@ tags:
 sources:
   - raw/articles/2026-05-12_primeintellect_renderers-token-level-templating.md
   - raw/articles/2026-07-12_primeintellect_verifiers-v1.md
+  - raw/newsletters/2026-08-06-ainews-jeff-sanjay-oriol-and-quoc-depart-deepmind-demis-to-chair-koray-to-svp-wh.md
   - https://www.primeintellect.ai/
   - https://www.primeintellect.ai/blog/our-approach-to-decentralized-training
 ---
@@ -55,6 +56,12 @@ Decentralized GPU compute marketplace enabling distributed training across globa
 | **[[renderers]]** | Token-level templating for agentic RL — makes chat templates programmable Python objects | [PrimeIntellect-ai/renderers](https://github.com/PrimeIntellect-ai/renderers) |
 | **[[verifiers-rl|verifiers]]** | Verifiable RL training library with multi-turn agent support | [PrimeIntellect-ai/verifiers](https://github.com/PrimeIntellect-ai/verifiers) |
 | **[[prime-rl]]** | End-to-end RL training framework built on verifiers + renderers | [PrimeIntellect-ai/prime-rl](https://github.com/PrimeIntellect-ai/prime-rl) |
+
+### Prime Agent (August 2026)
+
+**Prime Agent** is Prime Intellect's self-improving RLM-based agent harness. Per AINews (Aug 6, 2026), the harness "claims an incredible 95.5% on ARC-AGI-3" — **not yet endorsed by ARC** (the claim is Prime Intellect's own, reported secondhand via AINews; primary source pending verification). This positions Prime Agent as a continuation of the lab's autonomous speedrunning work — a harness designed for agents to improve their own performance through RL post-training loops (see [[concepts/agentic-rl]]).
+
+**Status**: reported claim, awaiting ARC validation. Treat the 95.5% figure as unverified until the primary source or ARC endorsement appears.
 
 ### verifiers v1 (July 2026)
 

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (878 pages)
+## Entities (879 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -224,6 +224,7 @@
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy) — Pragmatic Leverage, FIC, 12-Factor Agents
 - [[entities/dimillian]] — Guillaume Charpiat (dimillian)
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
+- [[entities/discovery-loop]] — Discovery Loop — PBC founded Aug 2026 by Jeff Dean, Sanjay Ghemawat, Oriol Vinyals, Quoc Le; mission: automate machine research
 - [[entities/dji]] — DJI
 - [[entities/dolt]] — Dolt
 - [[entities/dorialexander]] — Pierre-Carl Langlais
@@ -407,7 +408,7 @@
 - [[entities/jayden-milne]] — Jayden Milne
 - [[entities/jeff-geerling]] — Jeff Geerling — Author and Raspberry Pi expert; writes on self-hosting, edge AI, local LLMs
 - [[entities/jeff-huber]] — Jeff Huber
-- [[entities/jeff-dean]] — Jeff Dean — Google Senior Fellow (27 years); co-created MapReduce, BigTable, TensorFlow, Google Brain; departing Aug 2026 to launch ML/science PBC with Sanjay Ghemawat
+- [[entities/jeff-dean]] — Jeff Dean — Google Senior Fellow (27 years); co-created MapReduce, BigTable, TensorFlow, Google Brain; co-founder of Discovery Loop PBC (Aug 2026) with Ghemawat, Vinyals & Quoc Le
 - [[entities/jensen-huang]] — Jensen Huang — CEO and co-founder of NVIDIA; driving force behind GPU computing and AI hardware infrastructure
 - [[entities/jeremiah-lowin]] — Jeremiah Lowin
 - [[entities/jim-fan]] — Jim Fan

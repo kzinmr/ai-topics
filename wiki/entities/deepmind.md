@@ -1,7 +1,7 @@
 ---
 title: Google DeepMind
 created: 2026-05-15
-updated: 2026-08-05
+updated: 2026-08-06
 type: entity
 tags:
   - company
@@ -14,6 +14,7 @@ tags:
 sources:
   - raw/articles/2026-05-25_deepmind-agents-at-scale-youtube.md
   - raw/newsletters/2026-05-13-the-ai-cursor-arrives.md
+  - raw/newsletters/2026-08-06-ainews-jeff-sanjay-oriol-and-quoc-depart-deepmind-demis-to-chair-koray-to-svp-wh.md
   - https://deepmind.google/blog/ai-pointer/
   - https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/
 ---
@@ -40,6 +41,7 @@ On August 5, 2026, Sundar Pichai announced major leadership changes:
 - **Demis Hassabis** transitioned from CEO to **Chair of Google DeepMind and Chief Scientist of Alphabet**. He will focus on shaping the future of AGI and continue leading Isomorphic Labs.
 - **Koray Kavukcuoglu** (former CTO of GDM and Chief AI Architect) was promoted to **SVP of Google DeepMind**, reporting directly to Sundar Pichai. He oversees Gemini model development, Frontier AI research, and the Gemini app and developer teams.
 - **Jeff Dean** departed after 27 years at Google, launching an independent public benefit corporation with **Sanjay Ghemawat** focused on ML, science, and engineering. Google is a founding investor and Cloud partner.
+- **Oriol Vinyals** and **Quoc Le** also departed to co-found **Discovery Loop** (see [[entities/discovery-loop]]) alongside Dean and Ghemawat — a Public Benefit Corporation whose mission is to "automate machine research" (announced via Jeff Dean's X post, Aug 5, 2026). The four founders represent ~100 combined years of Google's infrastructure and research leadership (MapReduce, BigTable, TensorFlow, Gemini architecture, Google Brain).
 
 **Key metrics as of August 2026:** Gemini app 950M+ MAU, Gemma 900M+ downloads, upcoming Gemini 4 model.
 

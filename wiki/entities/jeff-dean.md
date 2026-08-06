@@ -2,13 +2,15 @@
 title: Jeff Dean
 type: entity
 created: 2026-08-05
-updated: 2026-08-05
+updated: 2026-08-06
 tags:
   - person
   - google
   - ai-infrastructure
 sources:
   - https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/
+  - raw/newsletters/2026-08-06-ainews-jeff-sanjay-oriol-and-quoc-depart-deepmind-demis-to-chair-koray-to-svp-wh.md
+  - https://x.com/JeffDean/status/2085034604172603724
 ---
 
 # Jeff Dean
@@ -30,13 +32,18 @@ On August 5, 2026, Sundar Pichai announced that Jeff Dean was leaving Google:
 
 > "After an incredible 27-year run, Jeff Dean is at a moment where he wants to try something new, and we're excited to support him in that."
 
-### New Venture: Public Benefit Corporation
+### New Venture: Discovery Loop (Public Benefit Corporation)
 
-Jeff Dean and Google Senior Fellow **Sanjay Ghemawat** are launching an **independent public benefit corporation** to accelerate discoveries in ML, science, and engineering.
+Jeff Dean and Google Senior Fellow **Sanjay Ghemawat** are launching an **independent public benefit corporation** — named **Discovery Loop** (@DiscoLoopAI) — to accelerate discoveries in ML, science, and engineering. Announced by Dean on X on August 5, 2026, the company's mission is to **automate machine research** — using AI agents to automate the research loop itself.
 
+Dean's announcement named **four co-founders**, not two:
+
+> "Along with my longtime friends and collaborators @Sanjay_Ghemawat, @OriolVinyalsML and @quocleix, we are founding Discovery Loop, a Public Benefit Corporation whose mission is to automate machine research."
+
+- **Co-founders**: Jeff Dean, Sanjay Ghemawat, **Oriol Vinyals** (Gemini architecture lead), **Quoc Le** (Google Brain co-creator)
 - **Google's role**: Founding investor and Cloud partner
 - **Collaboration**: Research framework for ML systems and related infrastructure advances
-- **Focus**: Accelerating discoveries in machine learning, science, and engineering
+- **Focus**: Automating machine research / autonomous AI research agents (see [[entities/discovery-loop]], [[concepts/agentic-research]])
 
 Pichai noted:
 
@@ -74,6 +81,7 @@ His departure alongside Sanjay Ghemawat (his long-time collaborator on systems w
 ## Related
 
 - [[entities/deepmind]] — Google DeepMind (organization)
+- [[entities/discovery-loop]] — The PBC he co-founded with Ghemawat, Vinyals & Quoc Le (Aug 2026)
 - [[entities/google]] — Google (AI/ML)
 - [[entities/demis-hassabis]] — GDM Chair & Chief Scientist
 

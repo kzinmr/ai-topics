@@ -1,3 +1,25 @@
+## [2026-08-06] newsletter-wiki-ingest | Discovery Loop entity (Dean/Ghemawat/Vinyals/Quoc Le), Prime Agent ref
+
+**Checkpoint**: 20260806T102721Z (3 newsletters: AINews, True Positive Weekly, The Skip) — triage recovered from checkpoint (upstream render failure, valid JSON).
+
+### Wiki Changes
+
+- **Create** `entities/discovery-loop.md` — PBC founded Aug 5, 2026 by Jeff Dean, Sanjay Ghemawat, Oriol Vinyals, Quoc Le; mission "automate machine research"; Google as founding investor + Cloud partner. Context: GDM leadership reshuffle (Demis→Chair, Koray→SVP) and 2025-26 exodus (Jumper→Anthropic, Shazeer→OpenAI, Silver, Zhou); Nathan Lambert/Andrew Ng commentary (AI-for-science frontier signal). ★★★★★ take.
+- **Enrich** `entities/jeff-dean.md` — "New Venture: Discovery Loop" section: company name, 4 co-founders, mission quote from X post; updated frontmatter (updated 2026-08-06, +2 sources); Related link to discovery-loop.
+- **Enrich** `entities/deepmind.md` — Leadership Reorganization section now records Vinyals + Quoc Le co-founding Discovery Loop with Dean & Ghemawat; updated frontmatter (+newsletter source).
+- **Enrich** `entities/prime-intellect.md` — Added "Prime Agent (August 2026)" section: self-improving RLM-based harness claiming 95.5% on ARC-AGI-3 (not yet ARC-endorsed; marked unverified). ★★★ reference.
+
+### Skip / Reference Notes
+
+- Meta Spark 1.2 / Muse Code (AINews) — already processed by same-day blog-triage (entities/muse-spark.md, concepts/meta-muse-spark.md). skip.
+- True Positive Weekly (Burkov) — paid DRL book promo only. skip.
+- The Skip (Nikhyl Singhal) — product-leadership org theory, low AI-tech wiki value. skip.
+- Substack UI noise / OAuth redirects (12 AINews UUID links + play/like/share/app-store) — unresolvable, no content value. skip.
+
+### Archive
+
+- `python3 scripts/archive_triage.py newsletter --keep-reference` (skip+reference items archived)
+
 ## [2026-08-06] blog-triage | AISI incident, Muse Spark 1.2, Microsoft-OpenAI revenue, AI disclosure in OSS
 
 **Checkpoint**: blog_ingest_20260806T101742Z (20 articles from 10 blogs)
