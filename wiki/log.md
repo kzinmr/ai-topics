@@ -1,3 +1,10 @@
+## [2026-08-06] raw-backlog-ingest (04:00) | duplicate batch, 0 wiki changes
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 04:00, run 20260806T040015Z). **Re-selection dedup**: identical batch to 2026-08-05 22:00 run (20260805T220023Z) — same 5 articles (Fireworks Agent Execution Tax, Glean enterprise AI copilot playbook, filfre Maxis Part 1+2, iczelia regex Part 1).
+- Verified all 5 already captured: concepts/harness-engineering/agent-execution-tax.md (158 lines, updated 2026-08-05) + entities/fireworks-ai.md "Agent Execution Tax Benchmark (May 2026)" section (L226, source L37); entities/glean.md "Enterprise AI Copilot Playbook (July 2026)" section (L273, source L31); entities/filfre-net.md References (L196-197, both Maxis slugs); iczelia skipped as non-AI (low-level C regex matching/SWAR). No gaps.
+- Triage saved (5 skips, Takes=0) to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
+- Archive: archive_triage.py raw_backlog --keep-reference — 2 new archived (fireworks agent-execution-tax + glean copilot playbook now in archive index), 3 dedup_skipped, total 2,311 URLs.
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

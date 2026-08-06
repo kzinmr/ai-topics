@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-08-06T04:13:13.320383+00:00",
+  "triage_run_id": "20260806T040015Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw_backlog 04:00 run (20260806T040015Z)。5記事すべて2026-08-05 22:00 run (20260805T220023Z)で処理済みの再選択デュープ。Fireworks Agent Execution Taxはconcepts/harness-engineering/agent-execution-tax.md (158行)に完全収録済み、Glean Copilot Playbookはentities/glean.md「Enterprise AI Copilot Playbook (July 2026)」節に収録済み、filfre Maxis 2記事はentities/filfre-net.md Referencesに追加済み、iczelia regexは非AI skip済み。wiki変更なし。Takes=0, References=0, Skips=5。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-fireworks-agent-execution-tax",
+      "source": "raw_backlog",
+      "source_name": "Fireworks AI Blog",
+      "title": "Agent Execution Tax — Agents Don't Fail on Intelligence. They Fail on Execution.",
+      "url": "https://fireworks.ai/blog/agent-execution-tax",
+      "raw_path": "~/wiki/raw/articles/2026-05-21_fireworks-ai_agent-execution-tax.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 2026-08-05 22:00 runで処理済み。concepts/harness-engineering/agent-execution-tax.md (158行) にPer-Site Analysis・Uniqlo具体例・Reliability-Adjusted Accuracy・Cost Per Successful Task・Inference Latency compoundingまで完全収録済み(updated: 2026-08-05)。entities/fireworks-ai.md に「Agent Execution Tax Benchmark (May 2026)」節(L226)とsources frontmatter(L37)あり。再選択デュープのため変更不要。",
+      "candidate_wiki_path": "concepts/harness-engineering/agent-execution-tax.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-glean-copilot-playbook",
+      "source": "raw_backlog",
+      "source_name": "Glean Blog",
+      "title": "The enterprise AI copilot playbook for business leaders",
+      "url": "https://www.glean.com/blog/the-enterprise-ai-copilot-playbook-for-business-leaders",
+      "raw_path": "~/wiki/raw/articles/2026-07-09_glean_the-enterprise-ai-copilot-playbook-for-business-leaders.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 2026-08-05 22:00 runで処理済み。entities/glean.md に「Enterprise AI Copilot Playbook (July 2026)」節(L273)あり: copilot vs chatbot vs assistant、assistant/agent/agentic-AI分類、展開モデル(Cloud 3週間/TIME、Hybrid 2-4ヶ月、On-prem 4-6+ヶ月)、ガバナンス必須事項(RBAC/監査/SOC2/HIPAA/GDPR/FedRAMP)、導入ケーススタディ(Confluent 5-10分→0、Super.com 20%、Forrester $8M/年)。sources frontmatter(L31)にも登録済み。再選択デュープのため変更不要。",
+      "candidate_wiki_path": "entities/glean.md",
+      "body_excerpt": ""
+    }
+  ]
+}
