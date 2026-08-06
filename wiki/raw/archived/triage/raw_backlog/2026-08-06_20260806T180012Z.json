@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-06T18:09:24.160784+00:00",
+  "triage_run_id": "20260806T180012Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw_backlog 18:00 run (20260806T180012Z)。5記事すべてskip判定でwiki変更なし。内訳: (1) martinfowler PRINCEケーススタディ→entities/martinfowler.md(142行)に完全収録済み、(2) Stapelberg Stamp It!→entities/michael-stapelberg.md「Stamp It! — Version Transparency」節に収録済み、(3) Grant Slatton Rust Macros→非AI(Rustチュートリアル)、References登録済み、(4) Miguel Grinberg SQLAlchemy第8章→非AI(シリーズ他章も全てNon-AI skip済み)、(5) Latent Space「The End of SWE-Bench Verified」→本日朝のrunでconcepts/ai-benchmarks/swe-bench.md・swe-bench-pro.mdに収録済み。Takes=0, References=0, Skips=5。processed_raw_articles.jsonに5記事をdone登録し再選択を防止。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-stapelberg-stamp-it",
+      "source": "raw_backlog",
+      "source_name": "michael.stapelberg.ch",
+      "title": "Stamp It! All Programs Must Report Their Version",
+      "url": "https://michael.stapelberg.ch/posts/2026-04-05-stamp-it-all-programs-must-report-their-version/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/michael.stapelberg.ch--posts-2026-04-05-stamp-it-all-programs-must-report-their-ver--74a089c8.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★ 既に処理済み。entities/michael-stapelberg.md(137行)に「Stamp It! — Version Transparency」節(L53-59)あり: 「if you can't determine what version of a program is running, you can't debug it, can't reproduce it, and can't trust it」原則、再現性重視哲学として収録。sources frontmatter(L13)とReferences(L137)に本raw記事を明示。i3 --versionケーススタディを含む本文はソフトウェアバージョニング論でAI関連性は低いが、エンティティページでは既に位置づけ済み。wiki変更不要。",
+      "candidate_wiki_path": "entities/michael-stapelberg.md",
+      "body_excerpt": "# Stamp It! All Programs Must Report Their Version\nSource: https://michael.stapelberg.ch/posts/2026-04-05-stamp-it-all-programs-must-report-their-version/\nTable of contents\nRecently, during a production incident response, I guessed the root cause of an\noutage correctly within less than an hour (cool"
+    },
+    {
+      "item_id": "raw-backlog-grantslatton-rust-macros",
+      "source": "raw_backlog",
+      "source_name": "grantslatton.com",
+      "title": "Rust Macros: Zero to Hero",
+      "url": "https://grantslatton.com/rust-macros",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/grantslatton.com--rust-macros--f29c6873.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 非AIコンテンツ。Rustマクロの純粋なプログラミングチュートリアル(1950年代のマクロ歴史、Cプリプロセッサの罠、declarative/proceduralマクロ、AST操作)。entities/grantslatton-com.md(162行)はTechnocapital・Every Man a Microservice等のAIアラインメント/組織設計論を収録しており、本記事はその趣旨と異なる。Referencesリスト(L151)には既に登録済み。wiki対象外・追記不要。",
+      "candidate_wiki_path": "entities/grantslatton-com.md",
+      "body_excerpt": "# Rust Macros: Zero to Hero\nSource: https://grantslatton.com/rust-macros\nRust Macros\nIntroduction\nIn programming, a\nmacro\nis code that writes code (typically, but not always, at compile-time).\nMacros were invented in the 1950s. Writing raw binary computer code is a pain, so programmers quickly inven"
+    },
+    {
+      "item_id": "raw-backlog-miguelgrinberg-sqlalchemy-ch8",
+      "source": "raw_backlog",
+      "source_name": "blog.miguelgrinberg.com",
+      "title": "SQLAlchemy 2 In Practice - Chapter 8: SQLAlchemy and the Web",
+      "url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-8-sqlalchemy-and-the-web",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-8-sqlalchemy-and-the-w--74b9d843.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 非AIコンテンツ。SQLAlchemy 2書籍最終章でFlask/FastAPI連携チュートリアル(import namespace化、session管理、リクエストライフサイクル)。同一シリーズのChapter 1/3/5/6は過去runで全てNon-AI skip済み(processed_raw_articles.json)。miguel-grinberg/sqlalchemyのエンティティページは存在せず、AI/エージェント関連性なし。wiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# SQLAlchemy 2 In Practice - Chapter 8: SQLAlchemy and the Web\nSource: https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-8-sqlalchemy-and-the-web\nThis is the eighth and final chapter of my\nSQLAlchemy 2 in Practice\nbook. If you'd like to support my work, I encourage you to buy t"
+    },
+    {
+      "item_id": "raw-backlog-substack-swe-bench-verified-end",
+      "source": "raw_backlog",
+      "source_name": "Latent Space (substack redirect)",
+      "title": "The End of SWE-Bench Verified - Mia Glaese & Olivia Watkins, OpenAI Frontier Evals & Human Data",
+      "url": "https://substack.com/redirect/010fe6ea-4cbb-46be-aa7f-07c0739b674d?j=eyJ1Ij...tf6E",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-010fe6ea-4cbb-46be-aa7f-07c0739b674d--a23ac0be.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★ 既に処理済み(本日[2026-08-06] raw-backlog-ingest run)。concepts/ai-benchmarks/swe-bench.mdに「The End of SWE-Bench Verified (April 2026)」節(L222-)収録済み: OpenAIが2026-04-15にVerifiedを公開引退、Mia Glaese(VP Frontier Evals/元共著者)とOlivia Watkinsの見解、138問題の深掘り(>60%解けない問題、49過度に狭いテスト、26過度に広いテスト)、汚染証拠(全フロンティアモデルがTask IDのみでgold patch再現、GPT-5.2が31問の汚染依存問題を解決)、SWE-Bench Pro推奨。concepts/ai-benchmarks/swe-bench-pro.mdに「OpenAI Endorsement (April 2026)」節も追加済み。wiki変更不要。",
+      "candidate_wiki_path": "concepts/ai-benchmarks/swe-bench.md",
+      "body_excerpt": "# ⚡️The End of SWE-Bench Verified - Mia Glaese & Olivia Watkins, OpenAI Frontier Evals & Human Data\nSource: https://substack.com/redirect/010fe6ea-4cbb-46be-aa7f-07c0739b674d?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E\nFirst speakers for\nAIE Europe\nand\nAIEi Miami\nhave been annou"
+    }
+  ]
+}

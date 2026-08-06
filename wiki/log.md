@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-06] raw-backlog-ingest (18:00) | 5記事すべてskip判定・wiki変更なし
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 18:00, run 20260806T180012Z)。Takes=0, References=0, Skips=5。
+- **Skip (already captured)** `2026-06-19_martinfowler_reliable-agentic-ai-systems.md` — [[entities/martinfowler]] にPRINCEケーススタディ節(142行)が完全収録済み(Search→Ask→Do、3エージェント、context/harness engineering分析)。sourcesにraw記事明示済み。
+- **Skip (already captured)** `michael.stapelberg.ch--posts-2026-04-05-stamp-it-all-programs-must-report-their-ver--74a089c8.md` — [[entities/michael-stapelberg]] の「Stamp It! — Version Transparency」節(L53-59)に収録済み。sources/References両方に登録済み。
+- **Skip (non-AI)** `grantslatton.com--rust-macros--f29c6873.md` — Rustマクロ純粋チュートリアル。[[entities/grantslatton-com]] Referencesに登録済み(L151)。wiki対象外。
+- **Skip (non-AI)** `blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-8-sqlalchemy-and-the-w--74b9d843.md` — SQLAlchemy 2 Web連携チュートリアル。シリーズChapter 1/3/5/6も過去にNon-AI skip済み。
+- **Skip (already processed today)** `substack.com--redirect-010fe6ea-4cbb-46be-aa7f-07c0739b674d--a23ac0be.md` — Latent Space「The End of SWE-Bench Verified」(Mia Glaese/Olivia Watkins)。本日朝のrunで [[concepts/ai-benchmarks/swe-bench]] に「The End of SWE-Bench Verified (April 2026)」節、[[concepts/ai-benchmarks/swe-bench-pro]] に「OpenAI Endorsement」節を追加済み。
+- **Tracking**: processed_raw_articles.json に5記事を status=done/decision=skip で登録(再選択防止)。archive_triage.py raw_backlog --keep-reference 実行(4 new archived, 1 dedup_skipped, total 2332)。
 ## [2026-08-06] watchdog | Auto-fix: log header burial + events header count
 
 - **Fix** wiki/log.md — `# Wiki Log` header was buried at line 96 (95 orphaned lines above it from prepend operations). Restored header to line 1 via fix_log_header_burial.py; 284 entries preserved, 0 pipe corruption.

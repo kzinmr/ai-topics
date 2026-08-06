@@ -111,6 +111,7 @@
     "https://blog.miguelgrinberg.com/post/i-am-not-a-reverse-centaur",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-3---one-to-many-relationships",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-5---advanced-many-to-many-relationships",
+    "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-8-sqlalchemy-and-the-web",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---solutions-to-the-exercises",
     "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
     "https://blog.okturtles.org/2026/07/short-leash-ai-method/",
@@ -544,6 +545,7 @@
     "https://glean.com/blog/introducing-glean-mcp-gateway",
     "https://glean.com/blog/what-is-no-code-automation",
     "https://go.try-hubspot.com/c/5078275/1001264/12893",
+    "https://grantslatton.com/rust-macros",
     "https://grantslatton.com/solving-quoridor",
     "https://grumpy.website/1723",
     "https://harvey.ai",
@@ -915,6 +917,7 @@
     "https://micahflee.com/mandatory-update-a-short-story/",
     "https://micahflee.com/practical-defenses-against-technofascism/",
     "https://micahflee.com/read-cindy-cohns-new-book-privacys-defender-my-thirty-year-fight-against-digital-surveillance/",
+    "https://michael.stapelberg.ch/posts/2026-04-05-stamp-it-all-programs-must-report-their-version/",
     "https://michael.stapelberg.ch/posts/2026-05-24-minimal-memory-safe-go-rsync-vulns/",
     "https://micro.mu/tools-for-agents",
     "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
@@ -1706,6 +1709,7 @@
     "https://substack.com/redirect/.../Link 20",
     "https://substack.com/redirect/.../Link 9",
     "https://substack.com/redirect/00d456e6-d9d5-4525-8dd7-35cf8d2799e9?j=eyJ1Ij...tf6E",
+    "https://substack.com/redirect/010fe6ea-4cbb-46be-aa7f-07c0739b674d?j=eyJ1Ij...tf6E",
     "https://substack.com/redirect/0271bd91-57db-4bdb-be5b-f68b31f7bb10?j=eyJ1Ij...tf6E",
     "https://substack.com/redirect/04faff9a-fcb3-4a7f-a5ef-da9c0f665a6a?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E",
     "https://substack.com/redirect/064a0754-92a6-4e56-913c-452887f31b23?j=eyJ1Ij...tf6E",
@@ -2329,5 +2333,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-06T10:36:44.841601+00:00"
+  "updated": "2026-08-06T18:09:24.161333+00:00"
 }
