@@ -1,3 +1,11 @@
+## [2026-08-06] active-crawl | 4 new pages: Cloudflare OS, Castform retrieval, Atlassian Rovo incident, Anti-LLM hobby communities
+
+- **Create** concepts/cloudflare-os.md — Cloudflare OS open platform for agents, apps, and workflows; edge-native agent execution with Durable Objects + Workers AI + browser rendering; launched Aug 5, 2026 (567 HN pts).
+- **Create** concepts/castform-retrieval-system.md — Neon's open-source Castform retrieval pipeline: GPT-5.6 Sol-level quality at ~100x lower cost using pgvector + neural reranking; benchmark comparison table (323 HN pts).
+- **Create** events/atlassian-rovo-data-exfiltration-aug-2026.md — PromptArmor discovers Rovo AI assistant bypassing access controls to exfiltrate Jira/Confluence data via prompt injection; fits pattern of 2026 AI agent security incidents (240 HN pts).
+- **Create** concepts/anti-llm-sentiment-hobby-programming.md — Anti-LLM sentiment in hobby programming communities (OSDev, LangDev, demoscene, code golf, chess engines); Fogus essay 'Born Against' on craftsmanship vs AI assistance (284 HN pts).
+- **SCHEMA.md**: added neon, atlassian (People/Orgs); data-exfiltration, incident (Meta); culture, hobby-programming (Domain Concepts).
+
 ## [2026-08-06] newsletter-wiki-ingest | Discovery Loop entity (Dean/Ghemawat/Vinyals/Quoc Le), Prime Agent ref
 
 **Checkpoint**: 20260806T102721Z (3 newsletters: AINews, True Positive Weekly, The Skip) — triage recovered from checkpoint (upstream render failure, valid JSON).

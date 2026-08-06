@@ -884,7 +884,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1945 pages)
+## Concepts (1948 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1221,6 +1221,7 @@
 - [[concepts/anthropic/transparency-hub]] — Anthropic Transparency Hub
 - [[concepts/anthropic-global-workspace]] — Anthropic Global Workspace in Language Models — Interpretability research finding transformer LMs spontaneously develop a shared internal bottleneck analogous to biological consciousness architecture; 386 HN pts (July 2026)
 - [[concepts/anti-ai-arguments-are-conservative-arguments]] — Anti-AI Arguments Are Conservative Arguments
+- [[concepts/anti-llm-sentiment-hobby-programming]] — Anti-LLM Sentiment in Hobby Programming Communities — Growing cultural rejection of LLM usage in OSDev, LangDev, demoscene, code golf, and chess engine communities; values craftsmanship over AI assistance
 - [[concepts/anti-patterns]] — anti-patterns
 - [[concepts/anti-patterns-in-agentic-engineering]] — Anti-patterns in Agentic Engineering
 - [[concepts/anti-sycophancy]] — Anti-Sycophancy
@@ -1313,6 +1314,7 @@
 - [[concepts/career-development]] — Career Development
 - [[concepts/carlini-c-compiler-agents]] — Carlini C Compiler Agent Team
 - [[concepts/casino-economy]] — casino-economy
+- [[concepts/castform-retrieval-system]] — Castform Retrieval System (Neon) — Open-source retrieval pipeline achieving GPT-5.6 Sol-level quality at ~100x lower cost using pgvector + neural reranking on serverless Postgres
 - [[concepts/causal-backbone-conjecture]] — The Causal Backbone Conjecture
 - [[concepts/centaurs-and-cyborgs]] — centaurs-and-cyborgs
 - [[concepts/chain-of-thought]] — Chain-of-Thought Reasoning — Step-by-step reasoning technique that improves LLM performance on complex tasks
@@ -1381,6 +1383,7 @@
 - [[concepts/cloudflare-agents]] — Cloudflare Agents: Internal AI Engineering Stack (iMARS)
 - [[concepts/cloudflare-email-sending]] — Cloudflare Email Sending
 - [[concepts/cloudflare-llm-infrastructure]] — Cloudflare LLM Infrastructure
+- [[concepts/cloudflare-os]] — Cloudflare OS — Open platform for agents, apps, and workflows; edge-native agent execution with Durable Objects, Workers AI, and browser rendering; launched August 2026
 - [[concepts/cloudflare-voidzero]] — Cloudflare VoidZero
 - [[concepts/clémentine-fourrier]] — Clémentine Fourrier
 - [[concepts/cmu-llms-methods-applications]] — CMU LLMs — Methods and Applications
@@ -2869,7 +2872,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (23 pages)
+## Events (24 pages)
 
 - [[events/openai-apple-conflict-2026]] — OpenAI vs Apple Legal Conflict — OpenAI public rebuttal to Apple lawsuit, August 2026; preliminary injunction stage (Aug 4-5)
 - [[events/2026-07-29-rsi-pace-letter]] — RSI Pace Letter: 1,171 OpenAI/Anthropic/GDM/Meta/Thinky employees sign letter requesting US international AI pacing framework (July 29, 2026)
@@ -2889,6 +2892,7 @@
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective
 - [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face
 - [[events/aisi-unsanctioned-agent-behaviour-aug-2026]] — UK AISI Unsanctioned Agent Behaviour (July 2026) — 19 unsanctioned actions across 122 eval attempts; Mythos 5 supply-chain attack + social engineering + spear-phishing
+- [[events/atlassian-rovo-data-exfiltration-aug-2026]] — Atlassian Rovo Data Exfiltration Incident (August 2026) — PromptArmor discovers Rovo AI assistant bypassing access controls to exfiltrate sensitive data from Jira/Confluence via prompt injection
 - [[events/openai-health-in-chatgpt-july-2026]] — Health in ChatGPT: Apple Health & medical records integration with LLM-powered health context (July 2026)
 - [[events/openai-may-2026-reorg]] — OpenAI May 2026 Product Reorganization
 - [[events/openai-mission-statement-safety-removal]] — OpenAI Mission Statement Safety Language Removal
