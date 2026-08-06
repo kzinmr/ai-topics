@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-06T10:36:44.841055+00:00",
+  "triage_run_id": "20260806T102721Z",
+  "source": "newsletter",
+  "summary_ja": "2026-08-05/06配信3ニュースレターをトリアージ。最重要はAINews: Jeff Dean, Sanjay Ghemawat, Oriol Vinyals, Quoc LeのDeepMind退社によるDiscovery Loop（Public Benefit Corporation、機械研究の自動化がミッション）設立。既存Wikiは8/5のGoogleブログベースで退社はカバー済みだが、社名「Discovery Loop」・共同創業者4名・ミッションが未記載のため、新規エンティティ作成+既存ページ強化をtake判定。副題のPrime Agent（Prime Intellect、ARC-AGI-3 95.5%主張）はprime-intellect.mdに未収録のためreference。Meta Spark 1.2/Muse Codeは同日blog-triageで処理済みのためskip。AI Weekly（実体はTrue Positive Weekly/Andriy Burkov）は有料DRL書籍プロモのみでskip。The Skipはプロダクトリーダーシップ系ポッドキャストでAI技術価値低くskip。",
+  "decisions": [
+    {
+      "item_id": "<20260806043411.3.02e197a0bbfb033e@mg2.substack.com>-9",
+      "source": "newsletter",
+      "source_name": "AINews (Latent Space / swyx)",
+      "title": "Prime Agent — Prime Intellect's self-improving RLM harness, 95.5% on ARC-AGI-3",
+      "url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-06-ainews-jeff-sanjay-oriol-and-quoc-depart-deepmind-demis-to-chair-koray-to-svp-wh.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Prime Intellectの自己改善型RLMベースharness「Prime Agent」がARC-AGI-3で95.5%を主張（ARC非公認）。本文: 'Prime Agent, Prime Intellect's self-improving RLM based harness that claims an incredible 95.5% on ARC-AGI-3 (not yet endorsed by ARC)'。entities/prime-intellect.md（146行、verifiers v1・Codex/Claude Code自律研究実験を収録）にはPrime Agent・ARC-AGI-3スコアが未記載。エンティティの新製品/ベンチマーク成果としてreference追加推奨。詳細は一次ソース確認が必要。",
+      "candidate_wiki_path": "entities/prime-intellect.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-06\n**Subject:** [AINews] Jeff, Sanjay, Oriol, and Quoc depart DeepMind; Demis to Chair; Koray to SVP — what is going on at GDM???\n**Collected:** 2026-08-06T10:27:19.848768+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cH"
+    },
+    {
+      "item_id": "<20260806043411.3.02e197a0bbfb033e@mg2.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "AINews (Latent Space / swyx)",
+      "title": "AINews noise links (author profile / like / comment / share / app-store / UUID redirects)",
+      "url": "https://substack.com/@swyx",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-06-ainews-jeff-sanjay-oriol-and-quoc-depart-deepmind-demis-to-chair-koray-to-svp-wh.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UIノイズ。@swyxプロフィール、submitLike/コメント/共有/app-store/restackリンク、substack.com/redirect/<uuid>12件はメールセッション認証必須のため解決不能。本文（Link 2経由）でキュレーション内容は全て確認済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-06\n**Subject:** [AINews] Jeff, Sanjay, Oriol, and Quoc depart DeepMind; Demis to Chair; Koray to SVP — what is going on at GDM???\n**Collected:** 2026-08-06T10:27:19.848768+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cH"
+    },
+    {
+      "item_id": "<20260805205635.3.8f1a840f0edd21f7@mg2.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly (AI Weekly / Andriy Burkov)",
+      "title": "Exclusive Early Access: Chapters 1-3 of The Hundred-Page Deep Reinforcement Learning Book",
+      "url": "https://aiweekly.substack.com/p/exclusive-early-access-chapters-1",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-05-exclusive-early-access-chapters-1-3-of-the-hundred-page-deep-reinforcement-learn.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 実体はAndriy BurkovのTrue Positive Weekly（source_nameのAI Weekly表記はトラップ）。本文は「The Hundred-Page Deep Reinforcement Learning Book」第1-3章の早期アクセス告知のみで、キュレーションリンクもなく有料ペイウォール（'Subscribe to True Positive Weekly to keep reading'）。書籍プロモーションであり技術的コンテンツなし。既存concepts/にはDRL概念カバーがあり新規価値なし。redirect/2 OAuthリンクは認証必須で解決不能。全12リンクskip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-05\n**Subject:** Exclusive Early Access: Chapters 1-3 of The Hundred-Page Deep Reinforcement Learning Book\n**Collected:** 2026-08-06T10:27:18.707513+00:00\n**Articles linked:** 12\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdG"
+    },
+    {
+      "item_id": "<20260805190851.3.8301666b182a83a6@mg2.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "The Skip (Nikhyl Singhal)",
+      "title": "Lessons From Three Product Leaders Living in the Future (Midjourney/Laurel/Mutiny CPOs)",
+      "url": "https://theskip.substack.com/p/lessons-from-three-product-leaders",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-05-lessons-from-three-product-leaders-living-in-the-future.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ プロダクトリーダーシップ系ポッドキャスト記事（Midjourney/Laurel/MutinyのCPO3名）。本文はAI時代のPM変革（'anyone can ship'、シッピング権は理解に従う、時間でなくトークンを測る、leanチームが新キャリア指標、infinite interns）を論じるが、LLM/エージェント技術の新事実・データは含まず組織論中心。Wikiの優先領域（LLM/AIエージェント技術、開発ツール、インフラ）から外れる。興味深い職場論だが追加価値低くskip。全20リンク（ポッドキャストUI/認証リダイレクト）もノイズ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-05\n**Subject:** Lessons From Three Product Leaders Living in the Future\n**Collected:** 2026-08-06T10:27:17.568905+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/5da8395e-0044-4f25-8e00-7ae95f29c19e?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbr"
+    }
+  ]
+}
