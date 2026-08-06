@@ -1,3 +1,11 @@
+## [2026-08-06] raw-backlog-ingest (10:00) | duplicate batch, 0 wiki changes; tracking fixed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 10:00, run 20260806T100021Z). **3rd re-selection of the same batch** (identical to 2026-08-05 22:00 run and 2026-08-06 04:00 run).
+- **Root cause fixed**: prior runs (22:00 / 04:00) never wrote final decisions to `/opt/data/.hermes/processed_raw_articles.json`, so the collect script's 1-hour "processing" timeout re-selected the same 5 articles. This run marked all 5 done/skipped in tracking (2 take/done, 2 reference/done, 1 skip) — future runs will select new articles.
+- Re-verified all 5 already captured: concepts/harness-engineering/agent-execution-tax.md (158 lines, updated 2026-08-05) + entities/fireworks-ai.md "Agent Execution Tax Benchmark (May 2026)" section (L226, source L37); entities/glean.md "Enterprise AI Copilot Playbook (July 2026)" section (L273, source L31); entities/filfre-net.md References (L196-197, both Maxis slugs); iczelia skipped as non-AI (low-level C regex matching/SWAR). No gaps.
+- Triage saved (5 skips, Takes=0) to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (run 20260806T100021Z).
+- Archive: no re-run needed — archive_index already has all 5 URLs (2 new archived at 04:00 run, 3 previously archived).
+
 ## [2026-08-06] raw-backlog-ingest (04:00) | duplicate batch, 0 wiki changes
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 04:00, run 20260806T040015Z). **Re-selection dedup**: identical batch to 2026-08-05 22:00 run (20260805T220023Z) — same 5 articles (Fireworks Agent Execution Tax, Glean enterprise AI copilot playbook, filfre Maxis Part 1+2, iczelia regex Part 1).
