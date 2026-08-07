@@ -2,6 +2,29 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-07] dreaming | Knowledge consolidation — saturation pass (Takes=0)
+
+**Pattern E saturation scenario**: `total_articles: 0`, `recent_raw_articles: 203` (94 from Aug 5-7).
+
+**Pipeline coverage today (all before dreaming-collect 18:08)**:
+- newsletter-wiki-ingest (10:40): AMD/Taalas acquisition, Anthropic custom silicon, Google DeepMind restructure
+- blog-wiki-ingest (10:28): Gary Marcus Google defense, Sean Goedecke thinking, OpenAI-Apple motion to dismiss, Simon Willison refs
+- active-crawl (11:00): Jianlin Su/RoPE, ScalexDev agent oversight, voice assistants, LLM OSS policies
+- X-bookmarks-ingest (11:33): Prime Agent (concepts/prime-agent.md)
+- raw-backlog-ingest (14:00): Open-Athena entity, Karpathy sources
+- blog-triage: AISI incident, Muse Spark 1.2, Microsoft-OpenAI revenue, AI disclosure
+
+**Filesystem scan results**: 94 raw articles from Aug 5-7 evaluated.
+- Non-AI: 22+ articles (construction-physics, math, vintage computing, personal essays, general tech)
+- Already processed: all AI-relevant articles covered by today's pipeline runs
+- Product marketing (skip): Glean French localizations x7, Harvey AML, Cohere-Waterloo partnership, ElevenLabs TAP/dubbing, Factory open weights short PR, Decagon blogs
+- Prior dreaming triage (Aug 6, 18 all-skip): consumed by dreaming-wiki-ingest
+
+**Archive**: saved triage JSON (7 decisions, all skip) -> archive_triage.py archived 6/1 (1 dedup by empty URL). Total archive URLs: 2368.
+
+**Takes=0 confirmed**: every AI-relevant article from Aug 5-7 has been processed by at least one pipeline. No gaps identified.
+
+
 ## [2026-08-07] raw-backlog-ingest (18:00) | Duplicate batch detected — no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 18:00, run 20260807T180019Z) re-selected the **exact same 5 articles** processed by the 2026-08-07 14:00 run (same filenames + content hashes: wheresyoured.at ai-is-slowing-down, paulgraham guidetoinvestors, openathena delphi-scaling-laws, karpathy microgpt, sgtatham findloop).

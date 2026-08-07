@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-08-07T18:14:45.828898+00:00",
+  "triage_run_id": "20260807T180841Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E飽和シナリオ。total_articles=0、recent_raw_articles=203。本日(8/7)の全パイプラインがAI関連記事を処理済み: newsletter-wiki-ingest(AMD/Taalas、Anthropic自社シリコン、DeepMind再編)、blog-wiki-ingest(Gary Marcus、Sean Goedecke、OpenAI-Apple)、active-crawl(Jianlin Su、ScalexDev agent oversight、音声アシスタント、LLM OSSポリシー)、X-bookmarks(Prime Agent)、raw-backlog-ingest(Open-Athena、Karpathy)。残りのAug 5-7 raw記事はすべて非AI（数学、個人ブログ、vintage computing）または既処理の製品マーケティング記事（Glean仏語ローカライズ×7、Harvey、Cohere提携、ElevenLabsケーススタディ、Factory短報、Decagonブログ）。prior dreaming triage(Aug 6、18件all-skip)はdreaming-wiki-ingestが消費済み。Takes=0は正しい結果。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-glean-fr-localizations",
+      "source": "dreaming",
+      "source_name": "Glean Blog (sitemap)",
+      "title": "Glean French localizations batch (7 articles)",
+      "url": "https://glean.com/blog",
+      "raw_path": "2026-08-07_glean_*.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 英語版のローカライズ（仏語）。raw-backlog-ingestが同日10:00に英語版をskip判定済み。プロンプト集・ベンダーガイド等、技術的深みなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-cohere-waterloo",
+      "source": "dreaming",
+      "source_name": "Cohere Blog (sitemap)",
+      "title": "Cohere and University of Waterloo AI talent pipeline partnership",
+      "url": "https://cohere.com/blog/cohere-university-of-waterloo-announcement",
+      "raw_path": "2026-08-07_cohere_cohere-university-of-waterloo-announcement.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Cohere-Waterloo提携（AI人材育成証明書、Fall 2026開始）。技術的深みなし。パートナーシップニュース。entities/cohere.mdでカバー範囲内。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-tap-dubbing",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog (sitemap)",
+      "title": "ElevenLabs TAP case study + dubbing API",
+      "url": "https://elevenlabs.io/blog/how-tap-uses-elevenlabs-to-scale-educational-content",
+      "raw_path": "2026-08-07_elevenlabs_*.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ TAP（インド教育機関）のカスタマーケーススタディ＋dubbing API告知。entities/elevenlabs.mdでinteraction models、healthcare等カバー済み。ケーススタディは製品マーケティング。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-factory-open-weights",
+      "source": "dreaming",
+      "source_name": "Factory Blog (sitemap)",
+      "title": "Factory Joins Open Weights and American AI Leadership",
+      "url": "https://factory.ai/news/open-weights-american-ai-leadership",
+      "raw_path": "2026-08-07_factory_open-weights-american-ai-leadership.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 1分読了の短報。Factory AIのオープンウエイト参加表明。entities/factory.mdでカバー済み。具体的技术内容なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-decagon-product-blogs",
+      "source": "dreaming",
+      "source_name": "Decagon Blog (sitemap)",
+      "title": "Decagon barge reduction + PgBouncer debugging",
+      "url": "https://decagon.ai/blog/designing-conversations-to-reduce-barge",
+      "raw_path": "2026-08-07_decagon_*.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ サイトマップスクレイピング記事（ナビゲーションchrome多め）。会話設計+PgBouncerデバッグ。entities/decagon.md（50行）でAOPs、Watchtower等カバー済み。追加価値低。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch-aug5-7",
+      "source": "dreaming",
+      "source_name": "various (sitemap + blog)",
+      "title": "Non-AI articles batch skip (Aug 5-7)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事バッチスキップ。construction-physics（道路インフラ）、dfarq（1997 Apple投資）、matklad（スレッドHTML）、tigrisdata（SigV4）、devblogs.microsoft.com（OldNewThing）、underpassapp（macOS）、feed.tedium（Glen Hansard）、mediapost（BMW）、jayd.ml（HDMIケーブル）、johndcook（数学）、jeffgeerling（Proxmox ARM）、herman.bearblog（創造性）、shkspr.mobi（サーマルカメラ）、shawnsmucker（AI使用願い）、experimental-history（インセンティブ）、entropicthoughts（SICP）、dfarq（eBay 1995）、pluralistic（Google scammers, sin-is-when, technology-freedom）、xania.org（Compiler Explorer AWS）。すべてAI/LLM/Agent範囲外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch of non-AI articles: vintage computing, math, hardware, personal essays, infrastructure, general tech."
+    }
+  ]
+}
