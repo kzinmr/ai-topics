@@ -1,7 +1,7 @@
 ---
 title: "RLM (Recursive Language Models)"
 created: 2026-04-13
-updated: 2026-06-05
+updated: 2026-08-07
 type: concept
 tags:
   - rlm
@@ -17,7 +17,7 @@ tags:
   - claude-code
   - lab
   - neurosymbolic
-related: [dspy, dspy-rlm, context-engineering, gepa, lambda-rlm, programmatic-tool-calling, code-execution-with-mcp, code-mode, context-folding, anthropic-multi-agent-research, inference-time-scaling, typed-rlm, dynamic-workflows]
+related: [dspy, dspy-rlm, context-engineering, gepa, lambda-rlm, programmatic-tool-calling, code-execution-with-mcp, code-mode, context-folding, anthropic-multi-agent-research, inference-time-scaling, typed-rlm, dynamic-workflows, prime-agent]
 sources:
   - https://arxiv.org/abs/2512.24601
   - https://alexzhang13.github.io/blog/2025/rlm/
@@ -26,6 +26,7 @@ sources:
   - raw/articles/2026-05-28_a1zhang_rlm-clarification-what-rlm-is-not.md
   - raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms.md
   - raw/articles/2026-04-26_isaacflath_pi-harness-rlm-late-interaction.md
+  - raw/articles/2026-08-07_primeintellect_prime-agent-self-improving-rlm-agent.md
   - transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md
   - raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf
   - https://jameshwade.github.io/dsprrr/articles/how-rlm-works.html
@@ -673,6 +674,48 @@ See [[#what-rlm-is-and-is-not-author-clarifications|What RLM Is and Is Not]] for
 
 See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models (RLM)]]
 
+## Prime Agent: RLM as First-Class Coding Harness (August 2026)
+
+[[entities/prime-intellect|Prime Intellect]]'s [[concepts/prime-agent|Prime Agent]] (August 2026) is the first production-grade coding agent harness to use RLM as its primary abstraction — not as a bolt-on feature, but as the foundational execution model.
+
+### Architecture
+
+Prime Agent uses a **persistent IPython kernel as its only tool**. The kernel pre-imports `rlm` as a module, and the model writes Python code that invokes sub-agents programmatically:
+
+```python
+# Parallel fan-out — rlm() returns at admission, not completion
+auth = await rlm("Summarize the authentication flow in auth/. Reply to me when done.", name="auth-expert")
+api = await rlm("Summarize the updated HTTP API layer in src/. Reply to me when done.", name="http-expert")
+# ... continue independent work; replies arrive via agent_message ...
+```
+
+Key RLM-specific primitives in Prime Agent:
+- **Async `await rlm()`**: Sub-agent admission returns immediately — results arrive later via `agent_message.send()`. This differs from both DSPy.RLM's synchronous call structure and Dynamic Workflows' script-based sub-agent invocation.
+- **Persistent sub-agents**: Sub-agent sessions (context, IPython kernel, history) survive across turns. Agents can message persistent children via `agent_message.send(receiver_role="child", receiver_name=...)` at any point.
+- **Nuclear family communication**: A2A messaging limited to parent, sibling, or child processes — preventing undesirable cross-session communication while enabling swarm orchestration.
+- **`rlm.list_subagents()`**: Programmatic introspection of the agent's own sub-agent tree, enabling dynamic resource discovery.
+
+### Comparison: RLM Implementation Approaches
+
+| Aspect | DSPy.RLM (Research) | Dynamic Workflows (Scaffold) | **Prime Agent (Harness)** |
+|--------|--------------------|------------------------------|---------------------------|
+| **Invocation** | `dspy.RLM(signature)(...)` synchronous | Script-based, model-decides decomposition | `await rlm("task")` async from IPython kernel |
+| **Context model** | REPL variables in Deno/Pyodide WASM | JavaScript variables + subagent contexts | Persistent IPython kernel state |
+| **Sub-agent lifetime** | Request-scoped (spawn/aggregate/return) | Task-scoped | **Persistent** across turns and sessions |
+| **Persistent state** | `historical_results` dict per execution | None (stateless between work orders) | Full JSONL history + IPython kernel state |
+| **Self-improvement** | Training (SFT+RL on RLM trajectories) | None (human-designed harness) | **`/refine`** — CRUD over harness state from trajectory |
+| **Training** | RLM-Qwen3-8B (SFT+RL post-trained) | No model-level changes | No model trained for RLM yet; future co-learning expected |
+
+### Relation to Continual Harness
+
+Prime Agent's RLM is paired with [[concepts/continual-harness|Continual Harness]], formalizing the harness state `H=(ρ,G,K,M)` (prompt notes, sub-agents, skills, memory) with a CRUD surface. The agent can call `rlm.harness.create_skill(...)` or `rlm.harness.create_memory(...)` from within its trajectory — turning RLM's context-as-variable concept into **harness-as-variable**. This moves beyond the DSPy.RLM model (where the REPL state is scoped to a single execution) and Dynamic Workflows (where harness is human-designed) toward an agent that writes its own harness.
+
+### Significance
+
+Prime Agent validates the RLM thesis at production scale: with Opus 5, it achieves **95.5% on ARC-AGI 3** (surpassing the human expert baseline of 95.4%) at lower token usage than native harnesses — by running functions over data programmatically rather than spending tokens reading data with tools. On long-context tasks, Prime Agent + GLM-5.2 is competitive with closed-model harnesses trained around their specific scaffolding.
+
+The Prime Agent team explicitly expects **model-harness co-learning** to unlock further gains — no model has been trained around Prime Agent's RLM features yet. This mirrors Zhang's argument that RLM-trained models represent "the next milestone in general-purpose LLM inference."
+
 ## Related Concepts
 
 - **[[entities/dspy]]** — Declarative LM programming framework; ships RLM module
@@ -693,5 +736,6 @@ See also: [[concepts/dynamic-workflows#Relationship to Recursive Language Models
 - [[entities/omar-khattab]] — Co-author, DSPy creator, ColBERT lineage
 - [[entities/isaac-flath]] — Pi Harness: practical RLM implementation seeded with late interaction retrieval (PyLate/LightOn), REPL-as-Context pattern
 - [[concepts/ornith-self-scaffolding-llm|Ornith-1.0 Self-Scaffolding]] — trained self-scaffolding (model-layer counterpart; task-centric vs RLM's context-centric)
+- [[concepts/prime-agent]] — First production-grade RLM-native coding harness (Prime Intellect, Aug 2026); IPython kernel REPL, persistent sub-agents, Continual Harness integration
 - [[comparisons/self-scaffolding-approaches]] — Three-way comparison of RLM, Dynamic Workflows, and Ornith
 - [[entities/dsprrr]] — R-native DSPy/RLM implementation by James H. Wade; callr subprocess isolation + ellmer structured outputs

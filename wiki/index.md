@@ -886,7 +886,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1973 pages)
+## Concepts (1974 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2439,6 +2439,7 @@
 - [[concepts/prodng]] — ProdNG
 - [[concepts/production-ai-agents]] — Production AI Agents — Real-world deployed AI agents in enterprise; Maven Clinic case study (100% rollout, 10x volume, evaluation system, model switching) (July 2026)
 - [[concepts/programmatic-seo]] — Programmatic-SEO
+- [[concepts/prime-agent]] — Open-source, self-improving coding harness by Prime Intellect; RLM + Continual Harness, IPython kernel REPL (Aug 2026)
 - [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling — LLM Writing Code that Calls Tools
 - [[concepts/programming-languages]] — Programming Languages
 - [[concepts/project-lightwell]] — Project Lightwell

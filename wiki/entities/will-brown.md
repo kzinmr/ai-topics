@@ -2,7 +2,7 @@
 title: Will Brown
 type: entity
 created: 2026-04-10
-updated: 2026-05-13
+updated: 2026-08-07
 source: "x-account"
 tags:
   - person
@@ -66,6 +66,7 @@ Brown has emerged as one of the most prominent voices able to **publicly discuss
 | 2025 | Created **agent-engineering** course files (71 stars) |
 | 2025 | Created **research-agent-lesson** — "Build Your Own AI Research Agent" lesson files |
 | May 2026 | Published "On SFT, RL, and on-policy distillation" — X article comparing post-training paradigms; co-authored with Claude Opus 4.7 as an experiment in AI-assisted technical writing via artifact "debate." 1,800+ likes, 3,300+ bookmarks
+| Aug 2026 | Launched **Prime Agent** — open-source, self-improving coding harness built on RLM and Continual Harness abstractions; achieves 95.5% on ARC-AGI 3, surpassing human baseline |
 
 ## Core Ideas
 
@@ -94,6 +95,10 @@ Brown's research extends beyond single-turn QA to **multi-turn agent reasoning**
 ### Recursive Language Models and Agentic AI
 
 In his Sequoia Capital podcast appearance, Brown discussed the shift from static prompting to **environment-based AI development**, including Recursive Language Models that manage their own context and agentic RL that scales through trial and error. He envisions a future where every company trains post-task-specific models using open infrastructure.
+
+### Prime Agent: RLM as Production Harness
+
+Brown's August 2026 launch of Prime Agent represents the first production-grade implementation of RLM as a coding agent harness. Prime Agent uses a persistent IPython kernel as its only tool, treating context as a programmatic variable and sub-agent delegation as async function calls. Sub-agents are spawned via `await rlm("task")`, persist across turns, and communicate via `agent_message.send()`. The Continual Harness mechanism gives agents CRUD access to their own prompts, skills, memory, and sub-agents from within their trajectory, enabling `/refine` — a self-improvement pipeline that reads the agent's trajectory and applies the smallest CRUD edit that improves outcomes.
 
 ### The GenAI Handbook
 
@@ -129,6 +134,10 @@ Distributed RL training framework developed at Prime Intellect. Supports:
 - Multi-turn agentic training
 - Integration with verifiers environments
 - Scales from single node to thousands of GPUs
+
+### Prime Agent (GitHub: PrimeIntellect-ai/prime-agent)
+
+Self-improving coding agent harness launched August 2026. Built on pi (earendil-works/pi), uses IPython kernel REPL for programmatic tool/sub-agent calling. Key innovations: RLM-native sub-agent spawning, Continual Harness with CRUD surface, `/refine` trajectory-based self-improvement, autonomous eval mode. Achieves 95.5% on ARC-AGI 3 (surpassing human baseline) with Opus 5, at lower token cost than native harnesses.
 
 ### Environments Hub
 
@@ -186,6 +195,7 @@ See [[concepts/post-training/rl-harness-lifecycle]] for the full analysis.
 - [[concepts/post-training/on-policy-distillation]] — Brown's deep gradient-geometric analysis of OPD vs SFT vs RL
 - [[concepts/post-training/grpo-rl-training]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
 - [[concepts/post-training/rl-harness-lifecycle]] — Co-evolutionary cycle of harnesses and RL training, coined by Brown
+- [[concepts/prime-agent]] — Brown's Prime Agent: open-source self-improving coding harness
 - [[concepts/post-training/rlhf]] — Reinforcement Learning from Human Feedback, the broader alignment paradigm
 - [[concepts/reasoning-models]] — Models with extended reasoning capabilities, Brown's primary research focus
 - [[concepts/harness-engineering/agent-harness]] — Agent execution frameworks that verifiers supports
@@ -203,6 +213,7 @@ See [[concepts/post-training/rl-harness-lifecycle]] for the full analysis.
 
 - [Will Brown's Website](https://willcb.com/)
 - [On SFT, RL, and on-policy distillation — X Article (May 2026)](https://x.com/willccbb/status/2050038277454143918) — Co-authored with Claude Opus 4.7; raw article at [[raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation]]
+- [[raw/articles/2026-08-07_primeintellect_prime-agent-self-improving-rlm-agent.md]] — Prime Agent launch announcement (X Article, Aug 2026)
 - [Claude Artifact (article draft)](https://claude.ai/public/artifacts/478fd2c4-e37d-4f1e-8295-780d811b1859) — Original artifact used in writing process
 - [Claude Artifact (markdown version)](https://claude.ai/public/artifacts/e03bf1a9-a6ab-4324-8ed2-cca1543f0878) — Markdown export of the article
 - [GenAI Handbook](https://genai-handbook.github.io/)

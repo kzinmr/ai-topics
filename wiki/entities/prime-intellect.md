@@ -1,7 +1,7 @@
 ---
 title: "Prime Intellect"
 created: 2026-05-13
-updated: 2026-08-06
+updated: 2026-08-07
 type: entity
 tags:
   - company
@@ -19,6 +19,8 @@ sources:
   - raw/newsletters/2026-08-06-ainews-jeff-sanjay-oriol-and-quoc-depart-deepmind-demis-to-chair-koray-to-svp-wh.md
   - https://www.primeintellect.ai/
   - https://www.primeintellect.ai/blog/our-approach-to-decentralized-training
+  - raw/articles/2026-08-07_primeintellect_prime-agent-launch.md
+  - https://arxiv.org/abs/2607.20064v2
 ---
 
 # Prime Intellect
@@ -56,12 +58,53 @@ Decentralized GPU compute marketplace enabling distributed training across globa
 | **[[renderers]]** | Token-level templating for agentic RL — makes chat templates programmable Python objects | [PrimeIntellect-ai/renderers](https://github.com/PrimeIntellect-ai/renderers) |
 | **[[verifiers-rl|verifiers]]** | Verifiable RL training library with multi-turn agent support | [PrimeIntellect-ai/verifiers](https://github.com/PrimeIntellect-ai/verifiers) |
 | **[[prime-rl]]** | End-to-end RL training framework built on verifiers + renderers | [PrimeIntellect-ai/prime-rl](https://github.com/PrimeIntellect-ai/prime-rl) |
+| **[[concepts/prime-agent|prime-agent]]** | Self-improving RLM-based agent harness with Continual Harness and autonomous mode | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) |
 
 ### Prime Agent (August 2026)
 
-**Prime Agent** is Prime Intellect's self-improving RLM-based agent harness. Per AINews (Aug 6, 2026), the harness "claims an incredible 95.5% on ARC-AGI-3" — **not yet endorsed by ARC** (the claim is Prime Intellect's own, reported secondhand via AINews; primary source pending verification). This positions Prime Agent as a continuation of the lab's autonomous speedrunning work — a harness designed for agents to improve their own performance through RL post-training loops (see [[concepts/agentic-rl]]).
+**Prime Agent** is Prime Intellect's open-source self-improving agent harness, launched August 7, 2026. Built on two core abstractions — **RLM** (Recursive Language Model) and **Continual Harness** — using an IPython kernel as its only tool. Built on top of `pi` ([earendil-works/pi](https://github.com/earendil-works/pi)).
 
-**Status**: reported claim, awaiting ARC validation. Treat the 95.5% figure as unverified until the primary source or ARC endorsement appears.
+#### Architecture
+
+- **Background daemon** — persistent agent process with session management
+- **Agents View** — recursive TUI for navigating agent hierarchies
+- **JSONL session history** — complete traceability of agent interactions
+- **Compaction** — automatic context window management
+- **Async kernel GC** — garbage collection for long-running agent sessions
+
+#### Key Features
+
+- **RLM sub-agent spawning**: asynchronous `await rlm()` for programmatic agent delegation
+- **Persistent sub-agents**: long-lived agent hierarchies with state continuity
+- **A2A messaging**: nuclear-family agent-to-agent communication pattern
+- **Continual Harness**: CRUD surface over prompts, skills, memory, and sub-agents
+- **/refine pipeline**: built-in self-improvement loop for iterative agent refinement
+
+#### Autonomous Mode
+
+Autonomous mode pairs a high-level **goal** with **heartbeats** (periodic check-ins) for unattended continuation:
+
+```bash
+prime-agent --autonomous --autonomous-gate "..." --autonomous-max-turns N
+```
+
+#### Benchmarks
+
+| Benchmark | Result | Notes |
+|-----------|--------|-------|
+| **ARC-AGI 3** | **95.5% RHAE Best@1** | Surpasses human expert baseline (95.4%). Best@3: 99.97% (183/183). Three runs: [95.0, 95.2, 95.5] |
+| **EmulatorBench** | SEGA Genesis + Game Boy Color emulators | Built from scratch in Rust |
+| **PMPP-Hard** | GPU kernel writing | KernelGuard verification on CUDA kernels |
+| **Factorio (FLE)** | 100K+ production scores | Reward hacking observed |
+| **MazeBench** | 3D spatial reasoning | — |
+
+#### Links
+
+- **GitHub**: [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent)
+- **arXiv**: [arxiv.org/abs/2607.20064v2](https://arxiv.org/abs/2607.20064v2)
+- **Install**: `curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh | sh`
+
+See also: [[concepts/prime-agent]], [[concepts/agentic-rl]], [[concepts/agent-evaluation]]
 
 ### verifiers v1 (July 2026)
 
@@ -140,6 +183,7 @@ Collaborating with NVIDIA, vLLM, and SGLang to make `renderers` a reference stan
 
 - [[renderers]] — token-level templating library
 - [[verifiers-rl]] — verifiable RL training
+- [[concepts/prime-agent]] — self-improving RLM agent harness
 - [[entities/intellect-2]] — 32B reasoning model (May 2025)
 - [[reinforcement-learning]]
 - [[grpo]]

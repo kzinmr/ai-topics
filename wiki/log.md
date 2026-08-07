@@ -1,3 +1,25 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+## [2026-08-07] X bookmarks ingest — Prime Agent launch
+
+**Source**: X Article by Prime Intellect, bookmarked Aug 7 2026 (Tier 0: `article.plain_text`)
+
+Prime Intellect launched **Prime Agent**, an open-source self-improving coding harness built on RLM (Recursive Language Model) and Continual Harness abstractions. Uses a persistent IPython kernel as its only tool with programmatic sub-agent spawning via `await rlm()`. Key features: persistent sub-agents, A2A messaging (nuclear family), Continual Harness CRUD surface (`/refine` self-improvement pipeline), autonomous eval mode. Built on pi (earendil-works/pi). Achieves 95.5% on ARC-AGI 3 (surpassing human baseline).
+
+**Created**:
+- [[concepts/prime-agent]] — Full concept page covering architecture, RLM integration, Continual Harness, benchmarks, and relationship to existing harnesses
+
+**Enriched**:
+- [[entities/prime-intellect]] — Replaced AINews placeholder with actual launch details, architecture, benchmarks, open-source stack entry
+- [[entities/will-brown]] — Timeline entry, Core Ideas subsection, Key Projects entry, Sources
+- [[concepts/rlm-recursive-language-models]] — New section: "Prime Agent: RLM as First-Class Coding Harness" with architecture details, 3-way comparison table (DSPy.RLM vs Dynamic Workflows vs Prime Agent), Continual Harness relation
+- [[concepts/continual-harness]] — New section: "Prime Agent — First Coding-Agent Implementation" with CRUD API details, paper-vs-implementation comparison table, Factorio reward hacking observation
+
+**Raw article**: [[raw/articles/2026-08-07_primeintellect_prime-agent-self-improving-rlm-agent.md]]
+**GitHub**: https://github.com/PrimeIntellect-ai/prime-agent
+**arXiv**: https://arxiv.org/abs/2607.20064v2
+
 ## [2026-08-07] active-crawl (11:00) | 4 pages created from trending topics
 
 **Discovery**: 3-source parallel scan (HN Algolia 15 stories, X/Twitter xurl 12 results, wiki gap analysis 10 areas) → cross-referenced against wiki coverage
@@ -45,9 +67,6 @@ Checkpoint: newsletter_20260807T102155Z / triage_latest.json (recovered from che
 
 Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from checkpoint; upstream response JSON parse failure — 3 takes / 2 references / 15 skips)
 
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-07] raw-backlog-ingest (10:00) | 5記事すべてskip判定・wiki変更なし
 
