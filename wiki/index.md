@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (882 pages)
+## Entities (884 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -745,6 +745,7 @@
 - [[entities/shunyu-yao]] — Shunyu Yao
 - [[entities/shuvendu]] — Shuvendu K. Lahiri
 - [[entities/sid]] — SID AI
+- [[entities/sie-superlinked-inference-engine]] — SIE (Superlinked Inference Engine) — Open-source multi-model inference engine; serves 100+ models on shared GPUs with on-demand loading, LRU eviction, and compute-cost-based batching (Aug 2026)
 - [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026); Context Engine — customer relationships as moat (Aug 4)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
@@ -772,6 +773,7 @@
 - [[entities/stochi]] — Independent AI researcher focused on post-training, agents, RL, model architectures, and ML systems. Previously shipp...
 - [[entities/subquadratic]] — Subquadratic (SubQ)
 - [[entities/substack]] — substack
+- [[entities/superlinked]] — Superlinked — AI infrastructure company; SIE (Superlinked Inference Engine) for multi-model GPU sharing; VectorHub vector DB toolkit
 - [[entities/supermemory]] — Supermemory (SMFS)
 - [[entities/superpowers]] — Superpowers — Jesse Vincent/Prime Radiant agent skills framework; 7-step TDD methodology, spec interviews, subagent-driven development; used by Wes McKinney
 - [[entities/susam-net]] — Susam Pal

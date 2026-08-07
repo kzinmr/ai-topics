@@ -1,6 +1,15 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-07] x-bookmarks-ingest | 1 bookmark → SIE (multi-model GPU serving) + 2 entities + concept enrichment
+
+- **Bookmark**: X Article "How to serve 5 models on one GPU (100% open-source)" by Superlinked (2026-08-05). Full article text available via `article.plain_text`.
+- **Create: [[entities/sie-superlinked-inference-engine]]** — Superlinked Inference Engine: open-source multi-model inference engine for shared GPU infrastructure. Apache-2.0, 2,670 GitHub stars. Three primitives (extract, score, generate), five coordination mechanisms (on-demand loading/LRU eviction, shared queue, compute-cost batching, elastic scaling, 112-model catalog). OpenAI-compatible API. Production features: KEDA autoscaling, Grafana dashboards, Terraform (GKE/EKS/AKS). Integrates with LangChain, LlamaIndex, DSPy, CrewAI, Chroma, Qdrant, Weaviate, LanceDB.
+- **Create: [[entities/superlinked]]** — AI infrastructure company (~2023); flagship product SIE; VectorHub vector DB toolkit.
+- **Enrich: [[concepts/small-language-models]]** — Added "Multi-Model Serving on Shared GPUs (2026 Trend)" section covering fragmentation problem (vLLM + TEI + custom servers), SIE's five coordination mechanisms, three primitives, and insurance claims processing example.
+- **Raw article**: [[raw/articles/2026-08-05_superlinked_serve-5-models-one-gpu]] (26KB, full article body)
+- **index.md**: +2 entity entries (sie-superlinked-inference-engine, superlinked). Entities: 882→884.
+
 ## [2026-08-07] raw-backlog-ingest (22:00) | Take 1件 (constrained-decoding + fireworks-ai) + Skip 4件
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 22:00, run 20260807T220051Z)。Takes=1, References=0, Skips=4。
