@@ -1,8 +1,16 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
-## [2026-08-07] skeleton-enrich-daily | roborev + buildy L2→L3; kyle-corbett → redirect (duplicate detection); openpipe W&B migration
+## [2026-08-07] raw-backlog-ingest (22:00) | Take 1件 (constrained-decoding + fireworks-ai) + Skip 4件
 
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 22:00, run 20260807T220051Z)。Takes=1, References=0, Skips=4。
+- **Take: [[concepts/constrained-decoding]]** — 25行stub（malformed YAML frontmatter付き）を本格ページへ昇格。Fireworks「From text to task: Constrained generation for structured extraction in R1」(2025-02-01)を主ソースに、constrained decodingのトークン制約メカニズム・boilerplateスキップによる高速化・DeepSeek R1 `<think>`/`</think>` 分離+JSON schema適用範囲・Reasoning JSON Mode APIパターン（Pydantic schema, response_format json_object）・応用例（Q&A/ヘルスケア/システムスペック）を収録。[[concepts/structured-outputs]]（親パラダイム）と[[concepts/sglang-structured-generation-language]]（grammar-constrainedエンジン）へ双方向リンク。
+- **Take: [[entities/fireworks-ai]]** — 「Constrained Generation / Reasoning JSON Mode (Feb 2025)」セクション追加（R1 JSON模式の仕組み・API surface・Agent Execution Taxとのポジショニング連続性）。sources frontmatterに raw/articles/2026-05-10_fireworks-ai_constrained-generation-with-reasoning.md 追加、updated: 2026-08-07。
+- **Skip (4件, 非AI)**: boyter.org PHP検索エンジンPart1(2013, レガシーPHPチュートリアル)、it-notes.dragas.net Mastodonリバースプロキシキャッシュ(インフラ, 既アーカイブ済み)、paulgraham.com "Why to Not Not Start a Startup"(2007) + "The Power of the Marginal"(2006)（スタートアップ随筆, AI無関係）。
+- **Tracking**: processed_raw_articles.json に5記事を status=done/decision 登録（再選択防止）。
+- **Archive**: archive_triage.py raw_backlog --keep-reference 実行。
+
+## [2026-08-07] skeleton-enrich-daily | roborev + buildy L2→L3; kyle-corbett → redirect (duplicate detection); openpipe W&B migration
 - **[[entities/roborev]]** — Enriched L2→L3 from GitHub API + README + kenn.io: repo moved from `roborev-dev/roborev` to **kenn-io/roborev** (Kenn Software, kenn.io — Wes McKinney's company); MIT license; created 2026-01-05; ~1,600 stars / 143 forks; latest release **v0.64.0** (2026-08-06, GitLab MR support + Grok Build + ACP/Goose). Added two-layer automation (post-commit reviews + agent hooks for 9 harnesses), 10-agent support matrix, `roborev analyze` types, `compact`/`export` commands, recent release highlights table, Claude Code proxy routing, security model + telemetry, kata/beads integrations. Fixed broken wikilinks (agents-view → agentsview; removed non-existent kata/middleman links).
 - **[[entities/buildy]]** — Enriched L2→L3 from buildy.so homepage + llms.txt stack: new tagline "Software that's finally yours"; expanded agent support (ChatGPT/Claude/Grok/Perplexity/OpenClaw/Goose + editors); **MCP Apps inline rendering**; full agent-facing doc surface table (llms.txt, docs/llms.txt, api/llms.txt, start/build-mcp/build-http/open/design/inspo/remix/profile); remix/fork + context-aware builds features; For Work tier.
 - **[[entities/kyle-corbett]]** — **Duplicate detection**: page was a misspelled stub for OpenPipe's Kyle **Corbitt**. Source URL (Dwarkesh Alex Imas/Phil Trammell) was misattributed; stub claims (works with Will Brown, MCP, RL) match kyle-corbitt.md exactly. Converted to `redirect: kyle-corbitt` with verification note; removed bad source.

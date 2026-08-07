@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-07T22:10:45.866814+00:00",
+  "triage_run_id": "20260807T220051Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw記事バックログ5件を処理。Take 1件: Fireworksのconstrained generation記事（2025-02-01）で concepts/constrained-decoding.md のstubを本格ページへ昇格し、entities/fireworks-ai.md にReasoning JSON Modeセクションを追加。Skip 4件: すべて非AIコンテンツ（2013年PHP検索エンジン、Mastodonキャッシュ、Paul Graham随筆2本）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-boyter-php-search-engine",
+      "source": "raw_backlog",
+      "source_name": "boyter.org (Ben Boyter)",
+      "title": "Code a Search Engine in PHP Part 1",
+      "url": "https://boyter.org/2013/01/code-for-a-search-engine-in-php-part-1/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/boyter.org--2013-01-code-for-a-search-engine-in-php-part-1--6abddf93.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。2013年のPHP製検索エンジン実装チュートリアル（crawler/index/documentstore/ranker設計、Quantcast Top Millionシード等）。LLM/AI Agent技術と無関係なレガシー情報検索実装記事。wikiのLLM/AIフォーカスに合致せず。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Code a Search Engine in PHP Part 1\nSource: https://boyter.org/2013/01/code-for-a-search-engine-in-php-part-1/\n[Are you really interested in learning how to Write a Search Engine from Scratch? Click this link and register your interest for my book about how to do so.][1]\nThis is part 1 of a 5 part "
+    },
+    {
+      "item_id": "raw-backlog-pg-notnot",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com (Paul Graham)",
+      "title": "Why to Not Not Start a Startup",
+      "url": "http://www.paulgraham.com/notnot.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--notnot-html--eec701a8.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。2007年のPaul Grahamスタートアップ随筆（YC初回バッチの成功率データ、起業しない言い訳の論駁）。LLM/AI Agent技術と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Why to Not Not Start a Startup\nSource: http://www.paulgraham.com/notnot.html\nMarch 2007\n(This essay is derived from talks at the 2007 \nStartup School and the Berkeley CSUA.)\nWe've now been doing Y Combinator long enough to have some data\nabout success rates.  Our first batch, in the summer of 2005"
+    },
+    {
+      "item_id": "raw-backlog-pg-marginal",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com (Paul Graham)",
+      "title": "The Power of the Marginal",
+      "url": "http://www.paulgraham.com/marginal.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--marginal-html--608efe33.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。2006年のPaul Graham随筆（限界的な取り組み・小さな改善の力に関するエッセイ）。LLM/AI Agent技術と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The Power of the Marginal\nSource: http://www.paulgraham.com/marginal.html\nJune 2006\n(This essay is derived from talks at Usenix 2006 and\nRailsconf 2006.)\nA couple years ago my friend Trevor and I went to look at the Apple\ngarage.  As we stood there, he said that as a kid growing up in\nSaskatchewan"
+    }
+  ]
+}

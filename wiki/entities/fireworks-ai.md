@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-08-05
+updated: 2026-08-07
 tags:
   - entity
   - company
@@ -35,6 +35,7 @@ sources:
   - raw/articles/2026-05-10_fireworks-ai_best-open-source-llms.md
   - raw/articles/2026-07-27_fireworks-ai_best-open-source-llms-may-2026.md
   - raw/articles/2026-05-21_fireworks-ai_agent-execution-tax.md
+  - raw/articles/2026-05-10_fireworks-ai_constrained-generation-with-reasoning.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -232,6 +233,18 @@ Fireworks published a browser-agent benchmark report introducing the **Agent Exe
 - **Serving-layer attribution**: tight p95/p50 latency spreads (1.8–2.3×) across heterogeneous MoE architectures and clean retry recovery were attributed to the Fireworks serving stack, not model behavior — supporting the platform's structured-output reliability positioning.
 
 Full details in [[concepts/harness-engineering/agent-execution-tax]].
+
+## Constrained Generation / Reasoning JSON Mode (Feb 2025)
+
+Fireworks documented constrained generation for structured extraction in reasoning models (DeepSeek R1) in an early-2025 technical article, positioning the platform's **Reasoning JSON Mode** as a differentiator for reasoning-model deployments.
+
+- **Mechanism**: constrained decoding restricts next-token predictions to tokens that do not violate the required output structure; in structured tasks it can also *skip* boilerplate token steps, accelerating generation by simplifying the prediction space.
+- **R1 pattern**: DeepSeek R1 emits free-form reasoning inside `<think>`/`</think>` tokens followed by a JSON output; Fireworks applies the **JSON schema constraint only to the JSON section after the `<think>` tags**, keeping the reasoning chain unconstrained while guaranteeing schema-valid final output. Callers parse the reasoning section separately.
+- **API surface**: OpenAI-compatible `response_format={"type": "json_object", "schema": <Pydantic model_json_schema()>}` with `accounts/fireworks/models/deepseek-r1`.
+- **Demonstrated use cases**: structured Q&A (Pydantic `QAResult`), healthcare records (clinical documentation with reasoning), computer system specifications.
+- **Positioning**: complements the later Agent Execution Tax work — both argue structured-output reliability is a serving-layer property Fireworks optimizes for.
+
+Sources: [[raw/articles/2026-05-10_fireworks-ai_constrained-generation-with-reasoning.md]]
 
 ## Related Entities & Concepts
 

@@ -1481,7 +1481,7 @@
 - [[concepts/computing-history]] — Computing History
 - [[concepts/consciousness]] — Consciousness
 - [[concepts/constitutional-ai]] — Constitutional AI
-- [[concepts/constrained-decoding]] — Constrained Decoding
+- [[concepts/constrained-decoding]] — Constrained Decoding — token-level output restriction for schema-valid generation; reasoning-model JSON mode (DeepSeek R1 `<think>` separation), Fireworks implementation
 - [[concepts/construction-physics]] — Construction Physics
 - [[concepts/consumerism-and-technology]] — Consumerism and Technology
 - [[concepts/consumer-voice-assistants]] — Consumer Voice Assistants in the LLM Era — Transition from rule-based to LLM-powered voice assistants; Alexa+, Siri AI, Google Assistant with Gemini; tradeoffs between reliability and conversational ability
