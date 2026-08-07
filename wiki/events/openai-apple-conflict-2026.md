@@ -1,7 +1,7 @@
 ---
 title: "OpenAI vs Apple Legal Conflict (August 2026)"
 created: 2026-08-04
-updated: 2026-08-05
+updated: 2026-08-07
 type: event
 tags:
   - openai
@@ -15,6 +15,7 @@ tags:
 sources:
   - raw/articles/2026-08-03_openai_apple-is-getting-this-wrong.md
   - raw/articles/daringfireball.net--2026-08-openai-apple-is-getting-this-wrong--f9823ea7.md
+  - https://storage.courtlistener.com/recap/gov.uscourts.cand.474095/gov.uscourts.cand.474095.59.0.pdf
 ---
 
 # OpenAI vs Apple Legal Conflict (August 2026)
@@ -100,6 +101,14 @@ On **August 4, 2026**, [[concepts/apple|Apple]] filed a **Motion for Preliminary
 - Gruber: "I do not understand why OpenAI is treating this is a PR problem instead of as a legal problem"
 - Dan Moren, writing at Six Colors, invoked the legal chestnut: "If you have the facts on your side, pound the facts. If you have the law on your side, pound the law. If you have neither on your side, pound the table" — "Thus far this feels like table-pounding from OpenAI"
 
+## Motion to Dismiss (August 6)
+
+On **August 6, 2026**, OpenAI filed a **28-page motion to dismiss** Apple's lawsuit in the Northern District of California (case gov.uscourts.cand.474095, docket entry 59). The filing — a public court record hosted on CourtListener — marks OpenAI's first formal response *in court* to Apple's claims, after the August 3 blog rebuttal and the August 4 unbylined post responding to Apple's preliminary injunction motion.
+
+The move shifts the conflict from public-relations warfare back into the litigation channel: where Gruber had criticized OpenAI for "treating this as a PR problem instead of as a legal problem," the motion to dismiss represents the actual legal response. As of August 7, the docket also shows Apple's pending motion for preliminary injunction, with OpenAI's dismissal motion running in parallel.
+
+Source: [CourtListener docket entry 59 (gov.uscourts.cand.474095)](https://storage.courtlistener.com/recap/gov.uscourts.cand.474095/gov.uscourts.cand.474095.59.0.pdf) (public court filing PDF, via Daring Fireball link)
+
 ## Timeline
 
 | Date | Event |
@@ -112,6 +121,7 @@ On **August 4, 2026**, [[concepts/apple|Apple]] filed a **Motion for Preliminary
 | August 3, 2026 | OpenAI publishes "Apple is getting this wrong" rebuttal with evidence |
 | August 4, 2026 | Apple files Motion for Preliminary Injunction, a Daniel Roffman digital forensics declaration, and Quinn Emanuel's July 20 email as Exhibit F |
 | August 4, 2026 | OpenAI publishes unbylined blog post overnight responding in public — but not yet in court |
+| August 6, 2026 | OpenAI files 28-page motion to dismiss Apple's lawsuit (CourtListener doc 59) |
 
 ## Significance
 

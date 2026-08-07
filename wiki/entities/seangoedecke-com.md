@@ -2,9 +2,10 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-07-31
+updated: 2026-08-07
 type: entity
 sources:
+  - raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
   - raw/articles/seangoedecke.com--prompts-are-technical-debt-too--2bd50f80.md
   - raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
@@ -405,6 +406,20 @@ On July 30, 2026, Goedecke published "[AI models need moral support to make disc
 **The virtuous cycle**: Goedecke predicted in July 2025 the refusal problem would be solved by end of year and considers himself "mostly right" (labs likely fixed it with SFT on long manual-task examples). The obvious next step is training models that *believe* they can solve unsolved problems — via synthetic trajectories of AI solving hard problems, or steering. Because AI discoveries naturally become training data (and models encounter writing about AI discoveries), he expects that "even if AI capabilities stalled out, the pace of AI discoveries will accelerate" — and if there is an intelligence overhang, tuning models to be more self-confident "will likely make them more intelligent by default." Practical advice: be persistent, remind the model you want the hard thing, and reassure it that it's more capable than it thinks.
 
 Source: raw/articles/seangoedecke.com--ai-models-need-moral-support--3a8c8144.md
+
+### How to Keep Thinking (August 2026)
+
+On August 6, 2026, Goedecke published "[How to keep thinking](https://seangoedecke.com/how-to-keep-thinking/)" — a reflection on the loss of slow, careful thought in the LLM-agent era. He frames modern software work as a frenetic game show: frontier AI models can do most tasks in the queue, so the most efficient way to work is spinning off tasks to an AI agent and continually context-switching between results. This isn't mindless — it requires skill to skim AI responses and rapidly decide what to do with them — but it leaves far less time for slow, careful reflection.
+
+**The core worry**: Goedecke worries that working with LLMs is making him dumber — not "literally melting your brain" (as some papers imply), but biasing him toward the quick "skimming and judging" parts of his mental toolkit and away from the slow "hammock time" needed for deep thought and real creativity. He attributes part of this to the post-2010s tech industry's broader economic pressure (the "solve this task ten times more quickly" button is heavily incentivized), but the LLM shift accelerates it.
+
+**His two remedies**:
+1. **Write more — in your own words.** Writing with an LLM does not work for this, even with iteration, because having to put words together yourself forces you to articulate thoughts — it forces you to think. He argues ideas are constructed *while* writing: "when you have an idea in your head for something to write, you don't really have an idea. What you have is a kind of directional sense of where an idea might be." This is also his reason for disagreeing with "ideas are easy, execution is everything."
+2. **Read actual books.** Dense non-fiction is the antithesis of AI slop; the slower you read, the better. He describes craving information-dense content like sodium-deficient people crave salt. His favored combination: read a book, then write about it — "I can feel parts of my brain stretching again."
+
+**Why it matters**: Even purely for work, losing the slow-thinking habit entirely would be a mistake — current LLMs still can't do "large refactor on a complicated codebase" *tastefully*, and some problems must be thought through entirely with your own brain. This connects to his [[#LLMs Reward Expertise (July 2026)]] thesis (domain knowledge requires deep understanding) and the broader agentic engineering discourse on cognitive load management (see [[concepts/agentic-engineering]]).
+
+Source: [[raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md]]
 
 ## Sources
 

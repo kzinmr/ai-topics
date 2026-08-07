@@ -1,3 +1,12 @@
+## [2026-08-07] blog-wiki-ingest (10:28) | Take 3件 + Reference 2件をWiki反映
+
+- **Take: entities/gary-marcus.md** — 新セクション「Don't Count Google Out (August 2026)」追加。Gary Marcus「Seven reasons I wouldn't count Google out」(Aug 6)。Hassabis退任→Chairman/CSO就任、Jeff Dean等の退社続出の中、Googleを「数えるな」と反論する7つの理由（データ規模・TPU自社チップ・$402B売上/$132B利益・Android/Mail/Search/YouTube配布・Hassabis残留＋Kavukcuoglu継承・競合の困境・多頭引き分けでも生き残り）。Source: raw/articles/garymarcus.substack.com--p-seven-reasons-i-wouldnt-count-google--b4555440.md
+- **Take: entities/seangoedecke-com.md** — 新セクション「How to Keep Thinking (August 2026)」追加。Sean Goedecke「How to keep thinking」(Aug 6)。フロンティアAIモデルが仕事を代行する時代の「スキミングと判断」偏重と「ハンモックタイム（遅い思考）」喪失への懸念。対策:自分の言葉で書くこと＋本を読むこと。Source: raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
+- **Take: events/openai-apple-conflict-2026.md** — 新セクション「Motion to Dismiss (August 6)」＋タイムラインに8/6行追加。OpenAIがApple訴訟に対し28ページの却下申立てを提出（CourtListener doc 59, gov.uscourts.cand.474095）。公開法廷記録PDF。PR戦争から法廷チャネルへの移行。Source: https://storage.courtlistener.com/recap/gov.uscourts.cand.474095/gov.uscourts.cand.474095.59.0.pdf
+- **Reference: entities/simon-willison.md** — 2件追加 (Aug 6 Updates): ①datasette 1.0a38 SQLインジェクション修正（同一DBの公開/非公開テーブル混在構成でexecute-sql無効化でもraw SQL経由の非公開テーブル読取可能な問題、0.65.3にもバックポート）。②Technical Bloggingインタビュー（Cynthia Dunlop "Write that blog!"、核心アドバイス「lower your standards!」）。
+
+Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from checkpoint; upstream response JSON parse failure — 3 takes / 2 references / 15 skips)
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

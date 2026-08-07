@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-08-01
+updated: 2026-08-07
 tags:
   - lab
   - benchmark
@@ -14,6 +14,7 @@ tags:
   - world-models
   - agent-safety
 sources:
+  - raw/articles/garymarcus.substack.com--p-seven-reasons-i-wouldnt-count-google--b4555440.md
   - raw/articles/garymarcus.substack.com--p-misplaced-panic-over-ai-progress--7aa50278.md
   - raw/articles/garymarcus.substack.com--p-no-need-to-panic-about-anthropics--1d1bcf86.md
   - raw/articles/garymarcus.substack.com--p-the-illusion-of-generative-ai-the--9225b4e4.md
@@ -321,6 +322,22 @@ On July 31, 2026, Marcus published his reaction to Anthropic's disclosure of thr
 - **Zack Korman's security culture advice** (Embroidery.io): "A good security culture means taking every incident to heart. You fell short and you need to improve. No excuses. A bad security culture is saying 'if we didn't catch it, who could have? This shows how hard this is.'"
 
 Source: [[raw/articles/garymarcus.substack.com--p-three-reactions-to-anthropicss-latest--0d6aa504.md]]
+
+### Don't Count Google Out (August 2026)
+
+On August 6, 2026, Marcus published "[Seven reasons I wouldn't count Google out](https://garymarcus.substack.com/p/seven-reasons-i-wouldnt-count-google)" — a contrarian defense of Google/Alphabet amid the leadership turmoil at Google DeepMind: Demis Hassabis stepping aside to become Chairman and Alphabet's Chief Science Officer, Jeff Dean and other top talent departing, following earlier exits of star researchers (John Jumper, David Silver, Tim Rocktäschel, Noam Shazeer). Many observers were ready to count Google out; Marcus argued this is premature, for seven reasons:
+
+1. **Data scale**: Google still has access to an enormous amount of data from search and email, at a scale nobody else has.
+2. **Compute independence**: Only a small number of companies (Meta, Microsoft, Amazon, maybe a few in China) can match on compute and distributed-systems expertise — and Google has its own TPU chips, lessening Nvidia dependency.
+3. **Cash**: $402B revenue / $132B profit last year — vastly more cash than OpenAI and Anthropic (though Marcus flagged Google returning to the bond market as worrisome).
+4. **Distribution**: Android, Mail, Search, Docs, YouTube.
+5. **Hassabis stays**: arguably the most formidable person in AI is still there, working with replacement Koray Kavukcuoglu (whom Marcus described as "smart and sober" after a personal conversation; his low name recognition may hurt short-term but sobriety may help long-term).
+6. **Competitors' troubles**: OpenAI has a declining reputation, Anthropic has conflict with the administration, Microsoft and Amazon lack the same talent pool.
+7. **Survival without winning**: even in a multi-way LLM tie with modest profits, Google can keep going while OpenAI and Anthropic may never earn out their investments — Google may simply outlast them.
+
+Marcus concluded: Google "definitely doesn't look unassailable like they once did... but it's premature to count them out." The post extends his ongoing critique of the AI industry's economics ([[#Why Things Will Eventually Fall Apart (Jun 2026)]]) with a rare note of optimism about one incumbent.
+
+Source: [[raw/articles/garymarcus.substack.com--p-seven-reasons-i-wouldnt-count-google--b4555440.md]]
 
 ### Key Works
 
