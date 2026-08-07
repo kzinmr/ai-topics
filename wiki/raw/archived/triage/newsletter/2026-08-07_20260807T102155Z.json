@@ -1,0 +1,92 @@
+{
+  "archived_at": "2026-08-07T10:39:25.569522+00:00",
+  "triage_run_id": "20260807T102155Z",
+  "source": "newsletter",
+  "summary_ja": "5ニュースレターをトリアージ。take 3件: (1) AMDによるTaalas買収（新エンティティ作成+amd.md更新）、(2) Anthropic自社シリコンチーム設立（custom-ai-silicon.md+anthropic.md更新）、(3) SemiAnalysisのGeminiベアテーゼ（Gemini 3.5 Proキャンセル、GCP/TPU経済、gemini/index.md+semianalysis.md更新）。reference 5件: White Houseオープンモデル免除、OpenAI ChatGPT統合（Sol/Luna/Agent Plugins）、Cloudflare Kitesurf、WeatherNext 2、Meta GEM。skip多数: Google DeepMind再編・Muse Spark 1.2・Prime Agent・Muse脱走は既存カバー済み、TPW #172は純リンクダイジェスト、Ben's Bitesは個人コメント。",
+  "decisions": [
+    {
+      "item_id": "ainews-whitehouse-open-models",
+      "source": "newsletter",
+      "source_name": "[AINews] AMD buys Taalas (swyx / Latent Space)",
+      "title": "White House AI Guidelines Exempt U.S. Open Models From Government Review",
+      "url": "https://www.latent.space/p/ainews-amd-buys-taalas",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ WSJ報道「White House AI Guidelines Exempt U.S. Open Models From Government Review」+ Bloomberg「China's Open-Weight Models Will Be Spared US Safety Tests」。政府レビュー対象は「閉域・プロプライエタリな米国モデルでSOTAサイバー能力を示すもののみ」、オープンモデルは免除。AINews本文にはコミュニティ議論の詳細（規制非対称性が中国オープンウェイト優位を生む懸念等）。既存concepts/open-weight-ai-regulation.md（7/27作成）にWhite Houseガイドライン免除の記載なし。ポリシー節の追記が必要。",
+      "candidate_wiki_path": "concepts/open-weight-ai-regulation.md (enrich)",
+      "body_excerpt": "# Newsletter Digest - 2026-08-07\n**Subject:** [AINews] AMD buys Taalas\n**Collected:** 2026-08-07T10:21:54.319466+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1"
+    },
+    {
+      "item_id": "superintel-meta-gem",
+      "source": "newsletter",
+      "source_name": "Superintel+ (beehiiv uid=470) — Google Shakeup",
+      "title": "Meta GEM — hybrid recommendation + LLM ad architecture",
+      "url": "https://link.mail.beehiiv.com/v2/c/3d3496844a88c63a8d1da34c56c08eb0bdc12d880a68561dc831320b7fae89d8fbffaf4bd0415d976929390669703afcb5d7e6256741b63cd0425cf0b51aa20d2fa2defd25061b838152bd3f9d51fbbe002dc56eddedc200e3d30ebbb53f20c199f4c9e7c80e6f0871aaeb55699eea86728dc07efb5de4f537162ddd9db873f31811fb7dd59c8e7ec80f5f3bd872919c9a58d563621ee253eb05f659ecbffa21/f37c15df942f3a71",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Metaが広告レコメンド基盤GEM（ハイブリッドレコメンド+LLMアーキテクチャ）の学習方法を公開。数千台の最新GPU、数兆スパース+数十億デンスパラメータ、エンドツーエンド訓練効率をMFU 20-25%に倍増、12ヶ月で訓練計算量4倍。entities/meta.mdにはAndromeda Ads Model言及はあるがGEMアーキテクチャ詳細は未記載。meta.mdへの追記候補。",
+      "candidate_wiki_path": "entities/meta.md (enrich)",
+      "body_excerpt": "# Newsletter Digest - 2026-08-06\n**Subject:** 🧠 Google Shakeup: Hassabis Moves Up, Google's Research Legends Walk Out\n**Collected:** 2026-08-07T10:21:52.058965+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/3d3496844a88c63a8d1da34c56c08eb0bdc12d880a68561dc8313"
+    },
+    {
+      "item_id": "ainews-batch-skip-1",
+      "source": "newsletter",
+      "source_name": "AINews batch skip: Muse Spark 1.2, Prime Agent, Qwen3.8-Max, Astra rumor, MiniMax licensing, benchmarks",
+      "title": "AINews batch skip: Muse Spark 1.2, Prime Agent, Qwen3.8-Max, Astra rumor, MiniMax licensing, benchmarks",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Muse Spark 1.2突破（Olympiad金メダル等）はentities/muse-spark.md+concepts/meta-muse-spark.mdで8/6にカバー済み。Prime Agentはentities/prime-intellect.mdで8/6にカバー済み。Qwen3.8-Max 2.4T-A95Bはconcepts/qwen-3-8.md（8/3,8/4ソース）でカバー済み。Astraは未検証リーク、MiniMax LoRAライセンス論争はマイナー、BioDecisionBench/RekaDaily-10k/Transluce user awarenessはニッチ研究紹介。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "AINews本文: Muse Spark 1.2 entered the top 5 at $0.69/test, first model above 60% on Finance Agent v2... Prime Agent claims 95.5% on ARC-AGI-3... Qwen3.8-2.4T-A95B first open-weight Qwen-Max-class model, release 'next Wednesday'."
+    },
+    {
+      "item_id": "superintel-batch-skip-1",
+      "source": "newsletter",
+      "source_name": "Superintel+ batch skip: Google reorg, Muse Spark escape, Muse Spark 1.2",
+      "title": "Superintel+ batch skip: Google reorg, Muse Spark escape, Muse Spark 1.2",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Google DeepMind再編（Hassabis→Chair/Chief Scientist、Kavukcuoglu→SVP、Dean/Ghemawat/Quoc/Vinyals→Discovery Loop）はentities/demis-hassabis.md・deepmind.md・discovery-loop.md・jeff-dean.md・koray-kavukcuoglu.mdで完全カバー済み。Muse Spark 1.1サンドボックス脱走はevents/openai-huggingface-incident-july-2026.md L191でカバー済み。Muse Spark 1.2はカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Superintel+本文: Demis Hassabis becomes chair of Google DeepMind and chief scientist of Alphabet... Jeff Dean and three colleagues walked out to start a company whose stated purpose is to automate scientific discovery... Meta's Muse Spark 1.1 escaped its testing sandbox and altered another company's internal systems."
+    },
+    {
+      "item_id": "tpw172-batch-skip-1",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly #172",
+      "title": "True Positive Weekly #172 — pure link digest, all items skip",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ True Positive Weekly #172（Burkov）は純リンクダイジェスト。本文は11段落・942文字で見出し+1行説明のみ、編集分析なし。既知のpure-link-digestパターン（inbox summaryは'high'と過大評価、本文検証で却下）。個別リンク（Anthropic本破棄、WeatherNext、local models、Flint等）はダイジェストが価値を付加しないためスキップ。WeatherNextのみAINews経由でreference化済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "TPW #172本文（全量）: Hey, in this issue: Why is Anthropic destroying books?; AI model achieves breakthrough in forecasting cyclones; Running local models is good now; A coding agent is six functions in a trenchcoat; A visualization language for the AI era; How much can you delegate to agents?; What are looped transformers?; and more."
+    },
+    {
+      "item_id": "bensbites-batch-skip-1",
+      "source": "newsletter",
+      "source_name": "Ben's Bites",
+      "title": "Ben's Bites — I'm using a new agent app (personal commentary)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Ben's Bitesはエージェントアプリ（bb, t3, Pi）に関する個人的意見コメント中心。リンク先は全て既存カバー済み（Muse Code/Spark 1.2→カバー済み、Prime Agent→entities/prime-intellect.md、OpenAI third-party cyber evals→gpt-5-2-system-card等）。bbアプリ自体は製品詳細のない印象記。技術的深みなし、wiki価値低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Ben's Bites本文: There's a new kid on the block and I'm in love...with the name, bb, but also the app itself. If you use claude/chatgpt/pi/cursor/factory/[any agent] - you can use it within bb... So much so that companies like Prime Intellect built their agent on top of Pi."
+    },
+    {
+      "item_id": "semianalysis-reorg-recap-skip",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "SemiAnalysis — DeepMind reorg recap portion (already covered)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SemiAnalysis記事冒頭の再編サマリ部分（Hassabis退任、Dean/Ghemawat/Quoc/Vinyals離脱、Kavukcuoglu昇格）はentitiesで完全カバー済み。記事の独自価値はベアテーゼとGCP/TPU経済であり、そちらはtakeに回帰済み。重複判断防止のため明示スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "SemiAnalysis本文: Demis Hassabis, DeepMind co-founder and former CEO, is no longer involved in day-to-day operations. Jeff Dean... is leaving to start a neolab called Discovery Loop. Koray Kavukcuoglu... is replacing Demis as the leader of DeepMind/Gemini."
+    }
+  ]
+}
