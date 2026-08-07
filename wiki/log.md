@@ -1,6 +1,18 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-07] dreaming-wiki-ingest | Confirmation — upstream saturation pass verified, Takes=0 (no enrichment)
+
+- Upstream dreaming-group (18:08) committed saturation pass at `628838b3` (18:15) — archive + log entry already on main. Downstream read `triage_latest.json` (7 decisions, all skip) and the 4,497-line cron output file (18:15:59) — the output analysis matches the committed triage exactly (no hidden richer pass).
+- **Deep Sleep verification spot-checks passed** (11 reference candidates all ✅ Already covered per upstream table):
+  - ScalexDev agent oversight → `concepts/agent-human-oversight-failure.md` exists (active-crawl 11:00)
+  - Prime Agent → `concepts/prime-agent.md` exists (X-bookmarks 11:33)
+  - Gary Marcus Google defense → `entities/gary-marcus.md` enriched today (blog-wiki-ingest 10:28)
+  - AMD/Taalas acquisition → `entities/amd.md` Taalas Acquisition section present (newsletter-wiki-ingest 10:40)
+  - Glean FR ×7 / Harvey AML / Cohere-Waterloo / ElevenLabs TAP / Factory open-weights / Decagon — all product-marketing or already-covered (skip valid)
+- **Archive**: upstream already committed `2026-08-07_20260807T180841Z.json` (6 new / 1 dedup, total 2,368 URLs) — archive re-run skipped per Pitfall #21 archive-existence check.
+- **No wiki page changes this cycle** — saturation confirmed; only this log entry staged.
+
 
 ## [2026-08-07] dreaming | Knowledge consolidation — saturation pass (Takes=0)
 
