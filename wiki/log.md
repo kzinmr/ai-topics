@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-07] raw-backlog-ingest (04:00) | Duplicate batch detected — no wiki changes, tracking + collector fixed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 04:00, run 20260807T040038Z) re-selected the **exact same 5 articles** processed by the 2026-08-06 22:00 run (same filenames + content hashes: bitc-retrospective, paulgraham mit.html, screwworm, TDA7000, hugobowne top-questions).
+- **Root cause**: collector dedup reads only top-level tracking keys; the 22:00 agent recorded completion in the `processed_articles` sub-registry. The top-level entries stayed `status: processing` and fell through the >1hr stuck-timeout path at 04:00 → re-collected.
+- **Verified already captured**: [[entities/eleanor-berger]] (full 10-question table), [[entities/hugo-bowne-anderson]] (source + log), [[concepts/spec-driven-development]] (precise incompleteness), [[concepts/ai-assisted-development]] (Ten Questions playbook) — all present from the 22:00 run. No wiki page changes made.
+- **Fix applied**:
+  - `scripts/raw_backlog_collect.py` — dedup now also honors the `processed_articles` sub-registry (`sub_done` check before top-level status logic), preventing re-selection of agent-completed articles.
+  - `processed_raw_articles.json` — the 5 articles marked `status: done` (4 skip + 1 take, `duplicate_of: 20260806T220014Z`) so they are never re-selected.
+- **Verified**: dry-run collect now selects 5 different articles (research.swtch.com deps, glean email-automation, wheresyoured.ai ai-is-slowing-down, paulgraham guidetoinvestors, openathena delphi-scaling-laws).
+
 ## [2026-08-06] raw-backlog-ingest (22:00) | 1 take (Eleanor Berger FAQ, 4 pages enriched), 4 non-AI skips archived
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 22:00, run 20260806T220014Z)。Takes=1, References=0, Skips=4。

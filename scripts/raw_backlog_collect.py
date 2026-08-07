@@ -141,6 +141,12 @@ def collect(args: list[str]) -> dict:
     # 1. Load tracking data
     tracking = load_tracking()
     processed_filenames = set(tracking.keys())
+    # Honor the processed_articles sub-registry too: pipeline agents record
+    # completion there, and the collector must not re-select those files.
+    # (Observed 2026-08-07: the batch processed 2026-08-06 22:00 was re-selected
+    # at 04:00 because only top-level keys were consulted.)
+    sub_registry = tracking.get("processed_articles")
+    sub_done = set(sub_registry.keys()) if isinstance(sub_registry, dict) else set()
 
     # 2. Load archive index for cross-reference
     archive = load_archive_index()
@@ -183,6 +189,8 @@ def collect(args: list[str]) -> dict:
     # Filter: exclude already processed (skip "processing" stuck >1hr)
     candidates = []
     for name, size, path, mtime in all_articles:
+        if name in sub_done:
+            continue  # recorded in processed_articles registry — done
         if name in processed_filenames:
             entry = tracking[name]
             status = entry.get("status", "")
