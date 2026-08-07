@@ -1,9 +1,10 @@
 ---
 title: "Andrej Karpathy"
 tags: [person]
-sources: []
+sources:
+  - raw/articles/karpathy.github.io--2026-02-12-microgpt--6d759dd0.md
 created: 2026-04-24
-updated: 2026-06-03
+updated: 2026-08-07
 type: entity
 ---
 

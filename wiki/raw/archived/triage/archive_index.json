@@ -6,7 +6,9 @@
     "See raw newsletter file for individual URLs",
     "http://Z.ai",
     "http://antirez.com/news/171",
+    "http://karpathy.github.io/2026/02/12/microgpt/",
     "http://workos.com/auth-md?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026",
+    "http://www.paulgraham.com/guidetoinvestors.html",
     "http://www.paulgraham.com/mit.html",
     "http://www.paulgraham.com/popular.html",
     "http://www.paulgraham.com/re.html",
@@ -1909,6 +1911,7 @@
     "https://www.chatprd.ai/how-i-ai/my-gpt-56-sol-benchmark-game-changing-workflows",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-spectre/",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/c11-generic/",
+    "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/findloop/",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/transience/",
     "https://www.cmpnd.ai/blog/separating-task-from-model.html",
     "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
@@ -2361,5 +2364,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-07T11:14:51.381080+00:00"
+  "updated": "2026-08-07T14:18:01.245622+00:00"
 }

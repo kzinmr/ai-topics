@@ -1,3 +1,12 @@
+## [2026-08-07] raw-backlog-ingest (14:00) | Take 1件 + Reference 1件 + Skip 3件を判定
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 14:00, run 20260807T140039Z)。Takes=1, References=1, Skips=3。
+- **Take: entities/open-athena.md 新規作成** — `2026-04-14_openathena_delphi-scaling-laws.md`（Delphi scaling suite）。記事内容自体は [[concepts/delphi-scaling-laws]] に既に収録済みだったが、同ページの See Also にある [[entities/open-athena]] へのwikilinkが存在しない壊れたリンクだったため、Open Athena（学界向けフロンティアAI非営利団体・MARINチーム）のエンティティページを作成し修復。Delphi 3コンポーネント（scaling recipe/suite/law）、1e23 FLOPランを0.2%誤差で予測（300×外挿）、AdamH最適化器・トークンホライズン補正を収録。index.md（Entities 883→884）と entities/_index.md に追加。
+- **Reference: karpathy エンティティ群の sources 補完** — `karpathy.github.io--2026-02-12-microgpt--6d759dd0.md`（microgpt: 依存ゼロ200行PythonでGPT訓練+推論）。内容は entities/andrej-karpathy.md（Timeline+microgpt節）、entities/karpathy-projects.md（microgpt節）、entities/karpathy-ideas.md に既にカバー済みだったが、sources フロントマターが空（sources: []）で raw 記事参照が欠落。両ページの sources に raw 記事パスを追加（karpathy-projects.md は破損していた frontmatter 構造も修正）。
+- **Skip (カバー済み)** `wheresyoured.at--ai-is-slowing-down--1b78f0d2.md` — entities/ed-zitron.md L399- に「AI Is Slowing Down — Infrastructure Math Demands 10x Revenue (June 2026)」節として詳細収録済み（$15Tコンピュート問題・収益成長ギャップ・Suleyman矛盾・Loop問題）。sources にも記載済み。
+- **Skip (非AI)** `paulgraham.com--guidetoinvestors-html--ba487665.md` — 2007年のスタートアップ投資家向けエッセイ。entities/paulgraham-com.md の sources に既記載。LLM/AI技術と無関係。
+- **Skip (非AI)** `chiark.greenend.org.uk--sgtatham-quasiblog-findloop--7c9313ec.md` — Simon Tatham のグラフループ検出アルゴリズム失敗事例集（パズルプログラミング）。entities/chiark-greenend-org-uk-sgtatham.md の sources に既記載。LLM/AI技術と無関係。
+- **Archive**: archive_triage.py raw_backlog --keep-reference 実行予定。
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

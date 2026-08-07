@@ -1,11 +1,12 @@
 ---
 title: "Karpathy Projects & Open Source"
 tags:
-sources: []
   - person
   - methodology
+sources:
+  - raw/articles/karpathy.github.io--2026-02-12-microgpt--6d759dd0.md
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-08-07
 type: entity
 ---
 

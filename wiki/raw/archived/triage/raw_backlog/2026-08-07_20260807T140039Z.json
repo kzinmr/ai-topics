@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-07T14:18:01.245076+00:00",
+  "triage_run_id": "20260807T140039Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest (14:00) | 5記事を評価。Take 1件（entities/open-athena.md 新規作成 — concepts/delphi-scaling-laws.md から参照されているが存在しない壊れたwikilinkの解消）、Reference 1件（karpathy microgpt記事を karpathy エンティティ群の sources に追加）、Skip 3件（Zitron AI Is Slowing Down は entities/ed-zitron.md に詳細カバー済み、Paul Graham 2007年投資家エッセイと Simon Tatham パズルプログラミング記事は非AIコンテンツで既に sources 記載済み）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-karpathy-microgpt",
+      "source": "raw_backlog",
+      "source_name": "karpathy.github.io",
+      "title": "microgpt — 200 lines of pure Python that trains and inferences a GPT",
+      "url": "http://karpathy.github.io/2026/02/12/microgpt/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/karpathy.github.io--2026-02-12-microgpt--6d759dd0.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 内容は既に entities/andrej-karpathy.md（Timeline 2026-02 + microgpt節）、entities/karpathy-projects.md（microgpt節、4,192パラメータ・32K names・RMSNorm等の詳細）、entities/karpathy-ideas.md（最小主義の哲学）にカバー済み。ただし karpathy エンティティ群の sources フロントマターが空（sources: []）で、この raw 記事への参照がどこにもない。entities/andrej-karpathy.md と entities/karpathy-projects.md の sources に raw 記事パスを追加する。",
+      "candidate_wiki_path": "entities/andrej-karpathy",
+      "body_excerpt": "# microgpt\nSource: http://karpathy.github.io/2026/02/12/microgpt/\nThis is a brief guide to my new art project\nmicrogpt\n, a single file of 200 lines of pure Python with no dependencies that trains and inferences a GPT. This file contains the full algorithmic content of what is needed: dataset of docu"
+    },
+    {
+      "item_id": "raw-backlog-paulgraham-guide-to-investors",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com",
+      "title": "The Hacker's Guide to Investors",
+      "url": "http://www.paulgraham.com/guidetoinvestors.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--guidetoinvestors-html--ba487665.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。2007年のスタートアップ投資家向けエッセイ（エンジェル投資家の重要性、VCの仕組み、投資家との交渉術）で LLM/AIエージェント技術とは無関係。entities/paulgraham-com.md のsources には既に raw 記事パス記載済み（L324）。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The Hacker's Guide to Investors\nSource: http://www.paulgraham.com/guidetoinvestors.html\nApril 2007\n(This essay is derived from a keynote talk at the 2007 ASES Summit\nat Stanford.)\nThe world of investors is a foreign one to most hackers—partly\nbecause investors are so unlike hackers, and partly bec"
+    },
+    {
+      "item_id": "raw-backlog-tatham-findloop",
+      "source": "raw_backlog",
+      "source_name": "chiark.greenend.org.uk (Simon Tatham)",
+      "title": "Possibly all the ways to get loop-finding in graphs wrong",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/findloop/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-findloop--7c9313ec.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。Simon Tatham のパズルコレクション（Net/Slant/Loopy等）におけるグラフのループ検出アルゴリズムの失敗事例集（2024-09-09）。C言語・グラフ理論の話題で LLM/AI エージェント技術とは無関係。entities/chiark-greenend-org-uk-sgtatham.md の sources には既に raw 記事パス記載済み（L141）。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Possibly all the ways to get loop-finding in graphs wrong\nSource: https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/findloop/\nPossibly all the ways to get loop-finding in graphs wrong\n[Simon Tatham, 2024-09-09]\nIntroduction\nIn\n      my\npuzzle\n      collection\n, there are many games in which y"
+    }
+  ]
+}
