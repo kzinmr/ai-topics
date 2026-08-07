@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (880 pages)
+## Entities (883 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -411,6 +411,7 @@
 - [[entities/jeff-dean]] — Jeff Dean — Google Senior Fellow (27 years); co-created MapReduce, BigTable, TensorFlow, Google Brain; co-founder of Discovery Loop PBC (Aug 2026) with Ghemawat, Vinyals & Quoc Le
 - [[entities/jensen-huang]] — Jensen Huang — CEO and co-founder of NVIDIA; driving force behind GPU computing and AI hardware infrastructure
 - [[entities/jeremiah-lowin]] — Jeremiah Lowin
+- [[entities/jianlin-su]] — Jianlin Su — Chinese AI researcher; inventor of Rotary Position Embedding (RoPE), adopted by Llama, DeepSeek, Qwen, Mistral, and virtually all major open-source LLMs; DeepSeek researcher
 - [[entities/jim-fan]] — Jim Fan
 - [[entities/jim-nielsen]] — Jim Nielsen
 - [[entities/jina-ai]] — Jina AI
@@ -885,7 +886,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1948 pages)
+## Concepts (1973 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -915,6 +916,7 @@
 - [[concepts/agent-first-design]] — Agent-First Design
 - [[concepts/agent-harness-primitives]] — Agent Harness Primitives
 - [[concepts/agent-harnesses]] — Agent Harnesses — Bitter Lesson philosophy, practical construction patterns, shrinking harnesses as models improve
+- [[concepts/agent-human-oversight-failure]] — Agent-Human Oversight Failure — Empirical evidence that humans miss ~33% of dangerous AI agent actions; attention fatigue, habituation, and implications for agent safety architecture
 - [[concepts/agent-integration-platforms]] — Agent Integration Platforms — middleware for connecting AI agents to SaaS tools (Nango, Composio, Arcade)
 - [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
 - [[concepts/agent-media]] — Design philosophy for evolving a structured knowledge base (wiki) into an audience-aware, multi-channel distribution ...
@@ -1481,6 +1483,7 @@
 - [[concepts/constrained-decoding]] — Constrained Decoding
 - [[concepts/construction-physics]] — Construction Physics
 - [[concepts/consumerism-and-technology]] — Consumerism and Technology
+- [[concepts/consumer-voice-assistants]] — Consumer Voice Assistants in the LLM Era — Transition from rule-based to LLM-powered voice assistants; Alexa+, Siri AI, Google Assistant with Gemini; tradeoffs between reliability and conversational ability
 - [[concepts/container-context]] — Container Context
 - [[concepts/content-understanding]] — Content Understanding
 - [[concepts/context-as-memory-hierarchy]] — Context as Memory Hierarchy (L1/L2/L3)
@@ -2060,6 +2063,7 @@
 - [[concepts/llm-memory-architecture]] — LLM Memory Architecture
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/llm-parameter-counts]] — LLM Parameter Counts — How parameters are distributed across embeddings, attention, FFN, and output head in transformer models
+- [[concepts/llm-policies-open-source]] — LLM Contribution Policies in Open-Source Projects — How major OSS projects (Rust, Debian, Linux kernel) govern LLM-generated contributions; disclosure requirements, contributor responsibility, and policy design patterns
 - [[concepts/llm-security]] — LLM Security — Security vulnerabilities in LLM applications including prompt injection, data leakage, and jailbreaking
 - [[concepts/llm-steering]] — LLM Steering
 - [[concepts/llm-text-detection-classical-ml]] — LLM Text Detection with Classical ML — using SVM, Random Forest, XGBoost on stylometric features to detect AI-generated text, competitive with deep learning approaches for AIGC detection

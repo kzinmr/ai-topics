@@ -1,3 +1,25 @@
+## [2026-08-07] active-crawl (11:00) | 4 pages created from trending topics
+
+**Discovery**: 3-source parallel scan (HN Algolia 15 stories, X/Twitter xurl 12 results, wiki gap analysis 10 areas) → cross-referenced against wiki coverage
+
+**Trending topics identified**: AMD/Taalas acquisition, Qwen3.8 Max tops agentic index, DeepSeek V4 Flash on MI300X, AI agent safety human oversight failure (308 pts), GPT-5.6 Sol improvements, consumer voice assistant failures (Alexa+ review), Rust LLM contribution policy, Jianlin Su / RoPE inventor profile, DeepMind consciousness research, NemotronLabs VoiceChat 11B
+
+**Pages created** (4):
+- NEW [[entities/jianlin-su]] — Jianlin Su (苏剑林) — RoPE inventor, DeepSeek researcher
+- NEW [[concepts/agent-human-oversight-failure]] — scaleX study: humans miss 33% of agent threats across 40k runs
+- NEW [[concepts/consumer-voice-assistants]] — LLM-era voice assistants landscape: Alexa+, Siri AI, Google Assistant
+- NEW [[concepts/llm-policies-open-source]] — Rust, Debian, Linux kernel OSS LLM contribution policies
+
+**Raw articles saved** (4):
+- raw/articles/2026-08-05_pogueman_alexa-plus-buggy-embarrassment.md
+- raw/articles/2026-08-05_lwn_rust-llm-contribution-policy.md
+- raw/articles/2021-04-20_2104.09864_roformer-rotary-position-embedding.md
+- raw/articles/2026-08-06_scalexdev_agent-permission-human-failure.md
+
+**SCHEMA.md**: Added tags: `amazon`, `alexa`, `consumer`
+
+**Topics considered but already covered**: AMD/Taalas (newsletter pipeline enriched entities/amd.md earlier today), Qwen3.8 Max (concepts/qwen-3-8.md exists), GPT-5.6 Sol (well-covered), NVIDIA Vera (entities + concepts exist), DeepSeek (well-covered), DeepMind consciousness (concepts/ai-consciousness-debate.md exists)
+
 ## [2026-08-07] newsletter-wiki-ingest (10:40) | Take 3件 + Reference 5件をWiki反映
 
 - **Take (new entity): entities/taalas.md** — 新規エンティティ作成。AMDがカスタムAI推論シリコン企業Taalasを買収（2026-08-06発表）。Taalas公式X投稿全文引用:「hardware designed around the model... world's fastest and most cost-effective inference silicon」。taalas.comの自社説明（"The Model is The Computer"、Hardcore Models 1000x効率、Taalas Foundry）も収録。Custom ASIC推論の垂直統合トレンドの具体的事例。
