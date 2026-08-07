@@ -1,3 +1,21 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-08-07] watchdog | auto-fix index stale entry + header counts, restore log header
+
+### Changes
+- **index.md**: removed stale entry `[[queries/wiki-graph-analysis-weekly-2026-07-31]]` (file deleted in weekly rotation commit `21bfd925`, entry remained)
+- **index.md**: corrected section header counts to match actual section entry counts (Entities 884→882, Concepts 1974→1952, Queries 5→4). Verified file-vs-ref set-diffs clean except intentionally-unindexed redirect `entities/tim-sherratt` (canonical `tim-sh` indexed at line 814).
+- **log.md**: restored buried `# Wiki Log` header (was at line 10 behind 9 lines of orphaned raw-backlog entry) via `fix_log_header_burial.py` — 297 entries preserved, 0 pipe corruption
+
+### Verification
+- `validate_index.py`: clean (2915 lines, exit 0)
+- All 5 section headers match entry counts
+- x_accounts staleness alert (26h) verified transient — 48h cycle, next run 2026-08-07 22:30 UTC
+
+---
+
 ## [2026-08-07] raw-backlog-ingest (14:00) | Take 1件 + Reference 1件 + Skip 3件を判定
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 14:00, run 20260807T140039Z)。Takes=1, References=1, Skips=3。
 - **Take: entities/open-athena.md 新規作成** — `2026-04-14_openathena_delphi-scaling-laws.md`（Delphi scaling suite）。記事内容自体は [[concepts/delphi-scaling-laws]] に既に収録済みだったが、同ページの See Also にある [[entities/open-athena]] へのwikilinkが存在しない壊れたリンクだったため、Open Athena（学界向けフロンティアAI非営利団体・MARINチーム）のエンティティページを作成し修復。Delphi 3コンポーネント（scaling recipe/suite/law）、1e23 FLOPランを0.2%誤差で予測（300×外挿）、AdamH最適化器・トークンホライズン補正を収録。index.md（Entities 883→884）と entities/_index.md に追加。
@@ -7,9 +25,8 @@
 - **Skip (非AI)** `chiark.greenend.org.uk--sgtatham-quasiblog-findloop--7c9313ec.md` — Simon Tatham のグラフループ検出アルゴリズム失敗事例集（パズルプログラミング）。entities/chiark-greenend-org-uk-sgtatham.md の sources に既記載。LLM/AI技術と無関係。
 - **Archive**: archive_triage.py raw_backlog --keep-reference 実行予定。
 
-# Wiki Log
+---
 
-_Log of all wiki changes. Newest entries at top._
 ## [2026-08-07] X bookmarks ingest — Prime Agent launch
 
 **Source**: X Article by Prime Intellect, bookmarked Aug 7 2026 (Tier 0: `article.plain_text`)
