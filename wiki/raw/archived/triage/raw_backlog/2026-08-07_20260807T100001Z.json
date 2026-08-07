@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-07T10:16:59.507683+00:00",
+  "triage_run_id": "20260807T100001Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw_backlog 10:00 run (20260807T100001Z)。5記事すべてskip判定・wiki変更なし。内訳: (1-3) Glean公式ブログのフランス語版3記事(30財務プロンプト/25PMプロンプト/検索ツールベンチマーク指標)は、英語版が2026-05-30にskip判定済みのマーケティング系プロンプト集・ベンダーガイドのローカライズ重複で、entities/glean.mdの既存カバレッジで十分。(4) Russ Cox「Our Software Dependency Problem」(2019)は非AIソフトウェア工学者エッセイ。(5) Gleanメール自動化ガイドはメールマーケティングツール比較で非AI。5記事すべてをアーカイブし、processed_raw_articles.jsonにdone登録して再選択を防止。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-glean-30-prompts-finance-fr",
+      "source": "raw_backlog",
+      "source_name": "glean.com/fr/blog (Glean Blog FR)",
+      "title": "30 prompts IA pour les professionnels de la finance",
+      "url": "https://www.glean.com/fr/blog/30-ai-prompts-for-finance-professionals",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-08-07_glean_30-ai-prompts-for-finance-professionals.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI/マーケティング。Glean公式ブログのフランス語版プロンプト集(30個の財務向けAIプロンプト: 予測・予算・リスク/コンプライアンス・投資評価など)。英語版(2026-05-10_glean_30-ai-prompts-for-finance-professionals.md, glean.com/blog/30-ai-prompts-for-finance-professionals)は2026-05-30にskip判定済み(processed_raw_articles.json: decision=skip, reason=non-AI marketing prompts)。本文はプロンプトライブラリの羅列+SVGクリップボードUIノイズが大半で、技術的深みなし。entities/glean.mdは299行のリッチページで既にGlean製品・技術を網羅。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# 30 prompts IA pour les professionnels de la finance\n**Source**: [https://www.glean.com/fr/blog/30-ai-prompts-for-finance-professionals](https://www.glean.com/fr/blog/30-ai-prompts-for-finance-professionals)\nProduit\nVue d'ensemble de la plateforme\nDécouvrez comment fonctionne Glean.\nConnecteurs et "
+    },
+    {
+      "item_id": "raw-backlog-glean-25-prompts-pm-fr",
+      "source": "raw_backlog",
+      "source_name": "glean.com/fr/blog (Glean Blog FR)",
+      "title": "25 prompts IA pour les chefs de produit",
+      "url": "https://www.glean.com/fr/blog/25-ai-prompts-for-product-managers",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-08-07_glean_25-ai-prompts-for-product-managers.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI/マーケティング。Glean公式ブログのフランス語版プロンプト集(25個のPM向けAIプロンプト: 顧客インサイト・市場調査・ロードマップなど)。英語版(2026-05-10_glean_25-ai-prompts-for-product-managers.md, glean.com/blog/25-ai-prompts-for-product-managers)は2026-05-30にskip判定済み(processed_raw_articles.json: decision=skip)。本文はプロンプトライブラリ+SVG UIノイズで技術的深みなし。entities/glean.mdでカバー済み。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# 25 prompts d’IA pour les chefs de produit\n**Source**: [https://www.glean.com/fr/blog/25-ai-prompts-for-product-managers](https://www.glean.com/fr/blog/25-ai-prompts-for-product-managers)\nProduit\nVue d'ensemble de la plateforme\nDécouvrez comment fonctionne Glean.\nConnecteurs et actions\nGlean propos"
+    },
+    {
+      "item_id": "raw-backlog-glean-search-benchmark-fr",
+      "source": "raw_backlog",
+      "source_name": "glean.com/fr/blog (Glean Blog FR)",
+      "title": "Benchmark des outils de recherche 2025: indicateurs clés pour évaluer la précision et la rapidité",
+      "url": "https://www.glean.com/fr/blog/2025-search-tool-benchmark-key-metrics-to-evaluate-accuracy-and-speed",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-08-07_glean_2025-search-tool-benchmark-key-metrics-to-evaluate-accuracy-and-speed.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI/マーケティング。Glean公式ブログのフランス語版ベンダーガイド(エンタープライズ検索ツール評価指標: 精度・速度・UX・価格、tool-calling精度90%以上・コンテキスト保持90%以上などの閾値)。英語版(2026-05-10_glean_2025-search-tool-benchmark-key-metrics-to-evaluate-accuracy-and-speed.md)がraw/articlesに既存。ベンダー主導の評価フレームワークで、検索評価の概念は entities/glean.md の「Definitive Guide to AI-Based Enterprise Search」「Comprehensive Guide to Information Retrieval」節や concepts/ai-benchmarks 系でカバー済み。独自の新規技術情報なし。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Benchmark des outils de recherche 2025 : indicateurs clés pour évaluer la précision et la rapidité\n**Source**: [https://www.glean.com/fr/blog/2025-search-tool-benchmark-key-metrics-to-evaluate-accuracy-and-speed](https://www.glean.com/fr/blog/2025-search-tool-benchmark-key-metrics-to-evaluate-accu"
+    },
+    {
+      "item_id": "raw-backlog-russcox-deps",
+      "source": "raw_backlog",
+      "source_name": "research.swtch.com (Russ Cox)",
+      "title": "Our Software Dependency Problem",
+      "url": "https://research.swtch.com/deps",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/research.swtch.com--deps--31736988.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI。Russ Cox(Go言語リード)による2019年1月の古典的ソフトウェア工学者エッセイで、ソフトウェア依存関係のリスク(サプライチェーン・セキュリティ・メンテナンス)を論じる。AI/LLM/エージェント技術とは無関係。過去のresearch.swtch.com記事(fp, fp-proof, bisect, bell-labs等)は全て非AIとしてskip済みで、Russ Coxのエンティティページも存在しない。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Our Software Dependency Problem\nSource: https://research.swtch.com/deps\nOur Software Dependency Problem\nRuss Cox\nJanuary 23, 2019\nresearch.swtch.com/deps\nPosted on Wednesday, January 23, 2019.\nPDF\nFor decades, discussion of software reuse was far more common than actual software reuse.\nToday, the "
+    },
+    {
+      "item_id": "raw-backlog-glean-email-automation",
+      "source": "raw_backlog",
+      "source_name": "glean.com/blog (Glean Blog)",
+      "title": "Email automation: automated email campaigns, tools, and workflows",
+      "url": "https://www.glean.com/blog/email-automation-automated-email-campaigns-tools-and-workflows",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-07-09_glean_email-automation-automated-email-campaigns-tools-and-workflows.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI/マーケティング。Glean公式ブログのメールマーケティング自動化ガイド。Mailchimp/Brevo/MailerLite/ActiveCampaign/Klaviyo/Omnisend/HubSpot等のメール自動化プラットフォーム比較表(無料枠・料金・CRM統合)が中心で、AIエージェント・LLM技術の話題ではない。ベンダーマーケティングコンテンツとして entities/glean.md の対象外。wiki対象外としてアーカイブ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Email automation: automated email campaigns, tools, and workflows\n**Source**: [https://www.glean.com/blog/email-automation-automated-email-campaigns-tools-and-workflows](https://www.glean.com/blog/email-automation-automated-email-campaigns-tools-and-workflows)\nProduct\nPlatform Overview\nSee how Gle"
+    }
+  ]
+}

@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-07] raw-backlog-ingest (10:00) | 5記事すべてskip判定・wiki変更なし
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 10:00, run 20260807T100001Z)。Takes=0, References=0, Skips=5。
+- **Skip (英語版重複のローカライズ)** `2026-08-07_glean_30-ai-prompts-for-finance-professionals.md` — Glean公式ブログ仏語版「30 prompts IA pour les professionnels de la finance」。英語版(2026-05-10_glean_30-ai-prompts-for-finance-professionals.md)は2026-05-30にskip判定済み(マーケティング系プロンプト集)。財務向けAIプロンプト30個(予測・予算・リスク/コンプライアンス・投資評価)の羅列で技術的深みなし。
+- **Skip (英語版重複のローカライズ)** `2026-08-07_glean_25-ai-prompts-for-product-managers.md` — Glean公式ブログ仏語版「25 prompts IA pour les chefs de produit」。英語版(2026-05-10_glean_25-ai-prompts-for-product-managers.md)は2026-05-30にskip判定済み。PM向けAIプロンプト25個(顧客インサイト・市場調査・ロードマップ)の羅列。
+- **Skip (英語版重複のローカライズ)** `2026-08-07_glean_2025-search-tool-benchmark-key-metrics-to-evaluate-accuracy-and-speed.md` — Glean公式ブログ仏語版「Benchmark des outils de recherche 2025」。英語版(2026-05-10_glean_2025-search-tool-benchmark-*.md)はraw/articlesに既存。エンタープライズ検索ツール評価指標(tool-calling精度90%・コンテキスト保持90%等)のベンダーガイドで、[[entities/glean]] のDefinitive Enterprise Search/IRガイド節でカバー済み。
+- **Skip (非AI)** `research.swtch.com--deps--31736988.md` — Russ Cox「Our Software Dependency Problem」(2019-01-23)。ソフトウェア依存関係リスクの古典的エッセイ。AI/LLM/エージェント技術と無関係。過去のresearch.swtch.com記事(fp, fp-proof, bisect, bell-labs等)と同様に非AI skip。
+- **Skip (非AI)** `2026-07-09_glean_email-automation-automated-email-campaigns-tools-and-workflows.md` — Glean公式ブログのメールマーケティング自動化ガイド。Mailchimp/Brevo/MailerLite/ActiveCampaign/Klaviyo/Omnisend/HubSpot等の比較表(無料枠・料金・CRM統合)が中心でAIエージェント技術の話題ではない。
+- **Tracking**: processed_raw_articles.json に5記事を status=done/decision=skip で登録(再選択防止)。archive_triage.py raw_backlog --keep-reference 実行(5 new archived, 0 dedup_skipped, total 2341)。
 ## [2026-08-07] raw-backlog-ingest (04:00) | Duplicate batch detected — no wiki changes, tracking + collector fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 04:00, run 20260807T040038Z) re-selected the **exact same 5 articles** processed by the 2026-08-06 22:00 run (same filenames + content hashes: bitc-retrospective, paulgraham mit.html, screwworm, TDA7000, hugobowne top-questions).

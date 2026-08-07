@@ -1272,6 +1272,7 @@
     "https://research.sierra.ai/mubench/",
     "https://research.swtch.com/bell-labs",
     "https://research.swtch.com/bisect",
+    "https://research.swtch.com/deps",
     "https://research.swtch.com/fp-knuth",
     "https://righto.com/2026/06/intel-8087-adder-reverse-engineered.html",
     "https://sakana.ai/fugu",
@@ -1964,6 +1965,7 @@
     "https://www.glean.com/blog/",
     "https://www.glean.com/blog/agent-orchestration-platforms-compared",
     "https://www.glean.com/blog/create-ai-strategy-2024",
+    "https://www.glean.com/blog/email-automation-automated-email-campaigns-tools-and-workflows",
     "https://www.glean.com/blog/enterprise-knowledge-graph-cases-7-applications-that-deliver-roi",
     "https://www.glean.com/blog/generative-ai-for-software-engineers-is-more-than-code-completion",
     "https://www.glean.com/blog/generative-ai-stack-for-software-engineers",
@@ -1982,6 +1984,9 @@
     "https://www.glean.com/blog/what-is-no-code-automation",
     "https://www.glean.com/blog/work-ai-index-australia",
     "https://www.glean.com/blog/work-ai-index-uk",
+    "https://www.glean.com/fr/blog/2025-search-tool-benchmark-key-metrics-to-evaluate-accuracy-and-speed",
+    "https://www.glean.com/fr/blog/25-ai-prompts-for-product-managers",
+    "https://www.glean.com/fr/blog/30-ai-prompts-for-finance-professionals",
     "https://www.goodfire.ai/research/the-world-inside-neural-networks",
     "https://www.hamiltonnolan.com/p/if-you-take-the-weasel-job-then-you?r=qy6gq",
     "https://www.harvey.ai",
@@ -2337,5 +2342,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-06T22:12:06.743742+00:00"
+  "updated": "2026-08-07T10:16:59.508236+00:00"
 }
