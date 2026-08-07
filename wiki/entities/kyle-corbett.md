@@ -1,28 +1,20 @@
 ---
 title: "Kyle Corbett"
 type: entity
+redirect: kyle-corbitt
+aliases:
+  - Kyle Corbett
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-08-07
 tags:
   - person
   - software-engineering
   - openpipe
-sources:
-  - https://www.dwarkesh.com/p/alex-imas-phil-trammell
+sources: []
 ---
 
 # Kyle Corbett
 
-Kyle Corbett is a researcher and engineer focused on production-ready AI agents. He works alongside Will Brown on developing agentic workflows and area protocols.
+> This page is a redirect. See [[entities/kyle-corbitt]] for the canonical entity page.
 
-## Research Focus
-- **Agentic Engineering**: Developing robust systems for autonomous AI operation.
-- **MCP (Model Context Protocol)**: Working on standards for model-data interaction.
-- **Reinforcement Learning**: Implementing RL techniques for production-grade agents.
-
-## Roles
-- Researcher/Engineer at OpenPipe.
-
-## Related Concepts
-- [[concepts/agentic-engineering]]
-- [[concepts/mcp]]
+**2026-08-07 verification note:** This page was created as "Kyle Corbett" but is a misspelled duplicate of [[entities/kyle-corbitt]] (OpenPipe CTO, co-instructor with Will Brown on "Production-Ready Agent Engineering: From MCP to RL"). The original stub's claims (works alongside Will Brown, MCP, RL, agentic workflows) match Corbitt's verified profile exactly. The cited Dwarkesh source (Alex Imas and Phil Trammell) was misattributed and does not mention Corbett/Corbitt.

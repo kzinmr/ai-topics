@@ -120,7 +120,7 @@
 - [[entities/bryan-bischof]] — Bryan Bischof — Theory Ventures data scientist; creator of BBPlot eval-driven chart library; featured on Show Us Your Agent Skills EP 02 (June 27)
 - [[entities/bryan-catanzaro]] — Bryan Catanzaro
 - [[entities/burke-holland]] — Burke Holland — GitHub developer advocate; "harness is all you need (mostly)" thesis; 8-step Copilot workflow — prototype/plan/implement/review (July 29)
-- [[entities/buildy]] — Buildy
+- [[entities/buildy]] — Buildy — AI agent app runtime; "software that's finally yours"; real URL + persistent storage; works across ChatGPT/Claude/Codex/OpenClaw; MCP Apps inline rendering
 - [[entities/bytedance]] — ByteDance
 - [[entities/byterover]] — byterover
 - [[entities/caisi]] — Center for AI Standards and Innovation (CAISI)
@@ -451,7 +451,7 @@
 - [[entities/kore-ai]] — Kore.ai
 - [[entities/koylan-ai]] — Muratcan Koylan (Koylan AI)
 - [[entities/krebsonsecurity-com]] — Brian Krebs
-- [[entities/kyle-corbett]] — Kyle Corbett — Researcher/engineer at OpenPipe; agentic workflows, MCP, RL for agents
+- [[entities/kyle-corbett]] — Kyle Corbett — Redirect → [[entities/kyle-corbitt]] (misspelled duplicate; verification note 2026-08-07)
 - [[entities/kyle-corbitt]] — Kyle Corbitt
 - [[entities/kyle-jeong]] — Kyle Jeong — Browserbase growth engineer; browser agent harness + CDP explainer
 - [[entities/lance-martin]] — Lance Martin
@@ -689,7 +689,7 @@
 - [[entities/rivet-dev]] — Rivet
 - [[entities/rlancemartin]] — Lance Martin (@rlancemartin)
 - [[entities/rob-hoeijmakers]] — Rob Hoeijmakers
-- [[entities/roborev]] — RoboRev
+- [[entities/roborev]] — RoboRev — Continuous background code review daemon by Wes McKinney/Kenn Software; post-commit + agent hooks for 10+ agents; v0.64.0
 - [[entities/rogo]] — Rogo
 - [[entities/romain-huet]] — Romain Huet
 - [[entities/ronin-deronin]] — 19-year-old AI entrepreneur, CEO of CloseAI_hq, Advisor at MindoAI. Creator of the Skill Graph architecture for AI-po...

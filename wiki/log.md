@@ -1,6 +1,16 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-07] skeleton-enrich-daily | roborev + buildy L2→L3; kyle-corbett → redirect (duplicate detection); openpipe W&B migration
+
+- **[[entities/roborev]]** — Enriched L2→L3 from GitHub API + README + kenn.io: repo moved from `roborev-dev/roborev` to **kenn-io/roborev** (Kenn Software, kenn.io — Wes McKinney's company); MIT license; created 2026-01-05; ~1,600 stars / 143 forks; latest release **v0.64.0** (2026-08-06, GitLab MR support + Grok Build + ACP/Goose). Added two-layer automation (post-commit reviews + agent hooks for 9 harnesses), 10-agent support matrix, `roborev analyze` types, `compact`/`export` commands, recent release highlights table, Claude Code proxy routing, security model + telemetry, kata/beads integrations. Fixed broken wikilinks (agents-view → agentsview; removed non-existent kata/middleman links).
+- **[[entities/buildy]]** — Enriched L2→L3 from buildy.so homepage + llms.txt stack: new tagline "Software that's finally yours"; expanded agent support (ChatGPT/Claude/Grok/Perplexity/OpenClaw/Goose + editors); **MCP Apps inline rendering**; full agent-facing doc surface table (llms.txt, docs/llms.txt, api/llms.txt, start/build-mcp/build-http/open/design/inspo/remix/profile); remix/fork + context-aware builds features; For Work tier.
+- **[[entities/kyle-corbett]]** — **Duplicate detection**: page was a misspelled stub for OpenPipe's Kyle **Corbitt**. Source URL (Dwarkesh Alex Imas/Phil Trammell) was misattributed; stub claims (works with Will Brown, MCP, RL) match kyle-corbitt.md exactly. Converted to `redirect: kyle-corbitt` with verification note; removed bad source.
+- **[[entities/kyle-corbitt]]** — Added aliases (Kyle Corbett, corbtt); bumped updated date.
+- **[[entities/openpipe]]** — Added "Migration to W&B (May 2026)" section (training/inference migrating to Weights & Biases; legacy platform EOL July 30, 2026); deduplicated `agent-training` tag; added W&B blog source.
+- **index.md** — Updated descriptions for roborev, buildy, kyle-corbett entries.
+- **Sources**: api.github.com/repos/kenn-io/roborev, raw.githubusercontent.com/kenn-io/roborev README, kenn.io, buildy.so (+ llms.txt), openpipe.ai (+ about + blog), xurl user lookups.
+
 ## [2026-08-07] dreaming-wiki-ingest | Confirmation — upstream saturation pass verified, Takes=0 (no enrichment)
 
 - Upstream dreaming-group (18:08) committed saturation pass at `628838b3` (18:15) — archive + log entry already on main. Downstream read `triage_latest.json` (7 decisions, all skip) and the 4,497-line cron output file (18:15:59) — the output analysis matches the committed triage exactly (no hidden richer pass).

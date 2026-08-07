@@ -2,19 +2,19 @@
 title: OpenPipe
 type: entity
 created: 2026-06-10
-updated: 2026-06-11
+updated: 2026-08-07
 tags:
   - company
   - reinforcement-learning
   - fine-tuning
   - ai-agents
   - agent-training
-  - agent-training
 sources:
   - https://openpipe.ai/
   - https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl
   - raw/articles/2025-04-14_corbt_art-trainer-new-rl-trainer
   - raw/articles/2025-04-29_corbt_art-e-mail-agent
+  - https://openpipe.ai/blog/openpipe-training-inference-migrating-to-wandb
 ---
 
 # OpenPipe
@@ -105,6 +105,9 @@ Both companies are co-represented in the **"Production-Ready Agent Engineering: 
 
 ### Acquisition by CoreWeave
 OpenPipe was acquired by **CoreWeave** alongside **Weights & Biases**, consolidating the RL post-training and experiment tracking layers into CoreWeave's GPU cloud infrastructure. This acquisition reflects the industry trend of vertical integration: compute (CoreWeave GPUs) + training (OpenPipe RL) + observability (W&B) as a unified platform for agent development.
+
+### Migration to W&B (May 2026)
+On May 18, 2026, OpenPipe announced that **training and inference are migrating to Weights & Biases**; the legacy OpenPipe platform stopped supporting new training and inference on July 30, 2026. The company continues to support ART and managed SFT workflows through the W&B integration. [Source](https://openpipe.ai/blog/openpipe-training-inference-migrating-to-wandb)
 
 ## Course Integration
 
