@@ -4346,3 +4346,10 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Created entities/koray-kavukcuoglu.md**: New SVP of Google DeepMind; 13+ years tenure; WaveNet/DQN; reports to Sundar Pichai
 - **Created entities/jeff-dean.md**: Departing Google after 27 years; launching PBC with Sanjay Ghemawat for ML/science/engineering
 - **Updated wiki/index.md**: Added 2 new entity pages (876→878 entities)
+
+## 2026-08-07 — Weekly Wiki Graph Analysis
+- Ran `scripts/wiki_graph_analysis_weekly.py` + `scripts/_weekly_graph_report.py` + deep_link_audit + `scripts/wiki_graph.py --format json`
+- Report saved: `wiki/queries/wiki-graph-analysis-weekly-2026-08-07.md`
+- Headline: 2,917 L2 pages; 43 orphans (shallow) / ~472 orphans >=20 lines (deep); 3,390 broken wikilinks (shallow) / 2,487 true broken (deep); 16 duplicate groups; 976 tag violations; 1,204 stale pages
+- index.md: added new weekly report entry (Queries 4→5)
+- No structural fixes applied this week (analysis-only job); recommendations in report

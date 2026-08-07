@@ -2907,9 +2907,10 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (4 pages)
+## Queries (5 pages)
 
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
 - [[queries/wiki-graph-analysis-weekly-2026-07-31]] — Weekly Wiki Graph Analysis (2026-07-31) — 2,877 pages scanned; 45 orphans, 3,261 broken links (146 fixable), 16 dup groups, 978 stale pages; 188P × 1,864C graph
+- [[queries/wiki-graph-analysis-weekly-2026-08-07]] — Weekly Wiki Graph Analysis (2026-08-07) — 2,917 pages scanned; 43 orphans, 3,390 broken links (187 fixable), 16 dup groups, 1,204 stale pages
