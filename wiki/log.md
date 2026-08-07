@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-07] raw-backlog-ingest (18:00) | Duplicate batch detected — no wiki changes, tracking fixed
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 18:00, run 20260807T180019Z) re-selected the **exact same 5 articles** processed by the 2026-08-07 14:00 run (same filenames + content hashes: wheresyoured.at ai-is-slowing-down, paulgraham guidetoinvestors, openathena delphi-scaling-laws, karpathy microgpt, sgtatham findloop).
+- **Root cause**: the 14:00 run completed its wiki work (entities/open-athena.md created, karpathy sources added, 3 skips logged, archive `raw_backlog/2026-08-07_20260807T140039Z.json` saved, wiki/ committed) but did NOT record completion in `${HERMES_HOME}/processed_raw_articles.json` — entries stayed `status: processing`, so the collector's >1h stuck-timeout re-selected them.
+- **Fix**: marked all 5 entries `done`/`skipped` (per 14:00 decisions: 1 take, 1 reference, 3 skips) and added them to the `processed_articles` sub-registry (checked first by the collector, line 192) so the 20:00 run will not re-select them.
+- **No wiki changes** — all 5 articles already processed; verified: entities/open-athena.md (61 lines), microgpt covered in andrej-karpathy.md/karpathy-projects.md, ed-zitron.md L399+ AI Is Slowing Down section, paulgraham-com.md + chiark-greenend-org-uk-sgtatham.md sources.
+
+---
+
 ## [2026-08-07] watchdog | auto-fix index stale entry + header counts, restore log header
 
 ### Changes
