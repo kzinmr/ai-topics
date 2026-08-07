@@ -2,7 +2,7 @@
 title: "Google Gemini"
 type: concept
 created: 2026-04-19
-updated: 2026-08-03
+updated: 2026-08-07
 tags:
   - concept
   - google
@@ -15,11 +15,13 @@ related:
   - concepts/local-llm/model-distillation
   - concepts/inference-speed-development
   - concepts/gemini/gemini-robotics-2
+  - entities/semianalysis
 sources:
   - raw/articles/2026-06-10_deepmind-model-cards-page.md
   - raw/newsletters/2026-08-01-ainews-not-much-happened-today.md
   - raw/newsletters/2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md
   - raw/newsletters/2026-08-02-deepseek-s-flash-sale-google-s-gemini-finds-its-feet-and-music-copyright-bites-b.md
+  - raw/newsletters/2026-08-07-gemini-is-cooked-but-gcp-is-cooking.md
   - https://deepmind.google/models/model-cards/
 ---
 
@@ -257,6 +259,21 @@ The core tension: Gemini scores well on standardized [[concepts/ai-benchmarks/if
 - Adds unsolicited content or takes its own approach
 - Struggles with multi-step agentic tasks requiring precise instruction compliance
 - Underperforms on tool use compared to benchmark expectations
+
+## SemiAnalysis Institutional Bear Thesis (August 2026)
+
+In "Gemini is Cooked but GCP is Cooking" (August 6-7, 2026), [[entities/semianalysis|SemiAnalysis]] published an institutional investor bear thesis on Gemini, arguing **DeepMind is "no longer a frontier lab"** while Google Cloud thrives. Key claims:
+
+- **Gemini 3.5 Pro silently canceled**: Google "silently canceled Gemini 3.5 Pro" and is "coping by hyping up Gemini 4 instead," releasing **Gemini 3.6 Flash** as a bridge model
+- **Model ranking**: Gemini "is currently in 8th or 9th place" in frontier model rankings
+- **API token growth deceleration**: Gemini first-party API token growth slowed from **60% (1Q26) to 38% (2Q26)**
+- **Gemini ARR**: ~**$12B** in 2Q26
+- **GCP growth**: **82%** year-over-year, the bright spot of the thesis
+- **TPU economics**: ~**$35B revenue per gigawatt** of TPU capacity
+- **Anthropic direct TPU purchases**: **more than 20% of total TPU shipments from 3Q26 to 4Q27 are being sold directly to Anthropic** — externalizing Google's hardware moat
+- **Internal politics**: **Thomas Kurian** (Google Cloud CEO) has "won" the internal political battle, prioritizing GCP monetization over frontier model supremacy
+
+The thesis distinguishes the *model business* (bearish: canceled 3.5 Pro, slowing token growth, mid-pack rankings) from the *infrastructure business* (bullish: 82% GCP growth, TPU monetization via Anthropic). This contrasts sharply with [[entities/martin-alderson|Martin Alderson]]'s May 2026 "TPU Advantage" thesis above — where Gemini's model-specific silicon was seen as a structural moat, SemiAnalysis frames TPU sales to Anthropic as *cannibalizing* that moat while boosting GCP revenue. SemiAnalysis's analysis draws on its proprietary Tokenomics Model. (Source: SemiAnalysis newsletter, 2026-08-07)
 
 ## Competition with OpenAI
 

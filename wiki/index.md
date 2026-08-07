@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (879 pages)
+## Entities (880 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -777,6 +777,7 @@
 - [[entities/tailcalled]] — tailcalled
 - [[entities/takuya-akiba]] — Takuya Akiba (@iwiwi)
 - [[entities/talkie]] — Talkie
+- [[entities/taalas]] — Taalas — custom AI inference silicon startup ("The Model is The Computer"); acquired by AMD Aug 2026
 - [[entities/tambo]] — Tambo — Open-source Generative UI toolkit for React; 1.0 with SOC 2/HIPAA, 11K+ stars
 - [[entities/tedium-the-dull-side-of-the-internet]] — Ernie Smith (Tedium)
 - [[entities/teknium]] — Ryan (Teknium)

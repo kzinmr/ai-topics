@@ -1,7 +1,7 @@
 ---
 title: Cloudflare
 created: 2026-05-01
-updated: 2026-06-21
+updated: 2026-08-07
 type: entity
 tags: [company, platform, ai-agents, infrastructure, open-source]
 sources:
@@ -13,6 +13,7 @@ sources:
   - https://blog.cloudflare.com/internal-ai-engineering-stack/
   - raw/articles/2026-06-19_cloudflare_temporary-accounts-agents.md
   - https://open.substack.com/pub/bensbites/p/building-gets-easier
+  - raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md
 ---
 
 # Cloudflare
@@ -46,6 +47,16 @@ A next-generation agents platform announced during Agents Week 2026. Builds on t
 ### Registrar API (Beta, April 2026)
 
 Developers and AI agents can search, check availability, and register domains at cost directly from editor, terminal, or agent — without leaving the workflow.
+
+### Kitesurf — Stateless Browser on Workers (August 2026)
+
+During **Agents Week**, Cloudflare highlighted **Kitesurf**, a stateless browser running entirely on Workers, designed for agent use cases where full Chromium is overkill:
+
+- **Architecture**: splits **script/DOM from rendering**, lazily instantiating renderer workers only when needed
+- **Efficiency**: dramatically cuts **CPU and memory overhead** relative to standard browser automation
+- **Positioning**: targets agent workloads that need a browser surface (navigation, form-filling, page interaction) without the resource cost of a full Chromium instance
+
+Kitesurf extends Cloudflare's agent-browser story alongside the Agents SDK's Browser Run and [[concepts/computer-use|computer-use]] tooling, giving agents a lightweight browser substrate on the same edge platform. (Source: AINews, 2026-08-07)
 
 ## Autonomous Agent Provisioning (with Stripe Projects)
 

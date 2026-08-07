@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6 (Sol / Terra / Luna)"
 created: 2026-06-27
-updated: 2026-08-01
+updated: 2026-08-07
 type: concept
 tags:
   - model
@@ -20,6 +20,7 @@ sources:
   - raw/newsletters/2026-07-14-how-to-use-gpt-5-6.md
   - raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md
   - raw/articles/2026-07-27_cerebras_getting-most-out-of-gpt-5-6.md
+  - raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)
@@ -172,6 +173,16 @@ On July 30, 2026 OpenAI announced a major price reduction for the GPT-5.6 family
 Simon Willison noted the Luna drop "completely changes the landscape with respect to lower priced models" and switched his `agent.datasette.io` demo from Gemini 3.1 Flash-Lite to Luna.
 
 Source: [[raw/articles/simonwillison.net--2026-jul-30-luna-price-drop--b8afb142.md]]
+
+## Consumer Model Unification & Agent Plugins (August 6, 2026)
+
+On August 6, 2026, OpenAI **collapsed 'instant' and 'thinking' into one paid-chat model** — a major consumer-facing simplification of the GPT-5.6 family:
+
+- **GPT-5.6 Sol now powers both Instant and deep reasoning** for Plus/Pro users in ChatGPT, with a new **reasoning-effort slider** — reportedly reducing errors by **68%** relative to the previous dual-mode setup
+- **Free and Go users get unlimited text chats with GPT-5.6 Luna** plus a **Think button** for on-demand reasoning
+- **Agent Plugins introduced**: an open standard, built with **AWS, Cursor, GitHub, and Vercel**, for **bundling Agent Skills and MCP server configs** into a single distributable plugin — a common standard across the agent ecosystem
+
+The unification resolves the confusing Instant/Thinking split that had persisted through the July GA launch, and the Agent Plugins standard positions OpenAI at the center of the cross-vendor agent-skill distribution format (alongside the [[concepts/mcp|MCP]] ecosystem and Anthropic's Agent Skills). (Source: AINews, 2026-08-07)
 
 ## Practical Usage Patterns
 

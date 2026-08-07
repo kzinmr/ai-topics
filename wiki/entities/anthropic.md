@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-08-04
+updated: 2026-08-07
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -37,6 +37,7 @@ sources: [
   - raw/newsletters/2026-07-25-ainews-claude-opus-5-fable-level-performance-at-opus-price-half-fable.md
   - raw/articles/2026-07-30_anthropic_investigating-incidents-cybersecurity-evals.md
   - raw/articles/om.co--2026-06-07-the-myth-the-mythos-and-the-man--9a834a77.md
+  - raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
 ]
 related: []
 ---
@@ -492,6 +493,17 @@ Claude is trained and run across **AWS Trainium, Google TPU, and NVIDIA GPU** ha
 **SpaceX S-1 Filing Details (May 2026)**: SpaceX's S-1 registration statement reveals the full terms of the Cloud Services Agreement with Anthropic: $1.25 billion per month through May 2029, with capacity ramping in May and June 2026 at a reduced fee. The agreements may be terminated by either party upon 90 days' notice. Notably, SpaceX also uses this compute capacity for its own AI applications (including Grok 5, training at COLOSSUS II), positioning Anthropic as both a customer and a revenue source for SpaceX's growing AI compute business.
 
 Source: [Simon Willison quoting SpaceX S-1](raw/articles/simonwillison.net--2026-may-20-spacex-s1--48fe0f3d.md)
+
+### In-House Silicon Team (August 2026)
+
+On August 6, 2026, Anthropic **confirmed for the first time** that it is building an **in-house silicon team to design custom chips for Claude**:
+
+- **Hiring**: Chip engineers recruited at a listed salary range of **$320,000–$485,000**
+- **Official statement**: A spokesperson said Anthropic "will co-design hardware and models so Claude runs faster and more efficiently at the scale our customers need"
+- **Manufacturing**: The Information (July 2026) reported Anthropic was in talks with **Samsung** for chip manufacturing
+- **Industry context**: Mirrors OpenAI's **Jalapeno** custom chip effort (with Broadcom) and Meta's next-generation in-house chip program (reportedly due September 2026)
+
+This marks Anthropic's shift from pure external-silicon customer (Google TPU, AWS Trainium, NVIDIA GPUs) toward the model-first co-design strategy Google pioneered with TPUs. See [[concepts/custom-ai-silicon|custom AI silicon]] for the broader trend. (Source: Superintel+ newsletter, 2026-08-06)
 
 ### Profitability Debate: The Reality Behind "Profitability" (May 2026)
 

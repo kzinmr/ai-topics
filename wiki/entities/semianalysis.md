@@ -2,7 +2,7 @@
 title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
-updated: 2026-08-02
+updated: 2026-08-07
 tags:
   - company
   - lab
@@ -18,6 +18,7 @@ related:
   - [[concepts/ai-lab-subscription-vs-api-economics]]
   - [[concepts/post-training/grpo-infrastructure]]
   - [[concepts/post-training/asynchronous-rl]]
+  - [[concepts/gemini/index]]
 sources:
   - raw/articles/2026-05-20_semianalysis_clustermax-2-gpu-cloud-ratings.md
   - raw/articles/substack.com--app-link-post--1509e963.md
@@ -27,6 +28,7 @@ sources:
   - https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data
   - raw/newsletters/2026-06-18-stop-saying-half-of-2026-us-datacenter-capacity-is-canceled.md
   - raw/newsletters/2026-07-06-nvidia-gpu-debt-backstop-unleashes-the-ai-project-trinity-capital-offtake-and-da.md
+  - raw/newsletters/2026-08-07-gemini-is-cooked-but-gcp-is-cooking.md
   - https://semianalysis.com/
 ---
 
@@ -150,6 +152,19 @@ A companion report to "RL Systems: Mind the Gap" analyzing the full RL stack for
 - **RSI already playing out**: Claude 4 system card evals (compiler, kernel, quadruped RL), OpenAI Codex building next model version
 
 Source: raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md. See [[concepts/post-training/rl-environments]] and [[concepts/recursive-self-improvement]] for the derived concept pages.
+
+### Gemini is Cooked but GCP is Cooking (August 2026)
+
+An institutional investor bear thesis on Google's Gemini model business, published August 6-7, 2026:
+
+- **DeepMind "no longer a frontier lab"** — Gemini ranked 8th or 9th among frontier models
+- **Gemini 3.5 Pro silently canceled**; Gemini 3.6 Flash released as a bridge model while Google hypes Gemini 4
+- **Gemini first-party API token growth decelerated**: 60% (1Q26) → 38% (2Q26); Gemini ARR ~$12B (2Q26)
+- **GCP is the bright spot**: 82% YoY growth; TPU economics ~$35B revenue per gigawatt
+- **>20% of total TPU shipments (3Q26-4Q27) sold directly to Anthropic** — externalizing the hardware moat
+- **Thomas Kurian has won the internal political battle** (GCP monetization over frontier model supremacy)
+
+Distinguishes the model business (bearish) from the infrastructure business (bullish). Derived concept page: [[concepts/gemini/index#semianalysis-institutional-bear-thesis-august-2026|Gemini index — SemiAnalysis bear thesis]].
 
 ## Industry Influence
 

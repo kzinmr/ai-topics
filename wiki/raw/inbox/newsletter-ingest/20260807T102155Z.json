@@ -1,0 +1,232 @@
+{
+  "run_id": "20260807T102155Z",
+  "triaged_at": "2026-08-07T10:21:55Z",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "summary": "5 newsletters processed (Aug 6-7, 2026). 3 critical, 2 high-importance items for wiki. Key themes: AI chip M&A (AMD/Taalas), Google DeepMind leadership reorg (Hassabis promotion + research exodus), Google Cloud vs Gemini divergence, agent apps/tools proliferation, AI policy (White House open models exemption).",
+  "newsletters": [
+    {
+      "id": "ainews-amd-buys-taalas",
+      "subject": "[AINews] AMD buys Taalas",
+      "date": "2026-08-07",
+      "source": "swyx / Latent Space",
+      "source_url": "https://www.latent.space/p/ainews-amd-buys-taalas",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md",
+      "importance": "critical",
+      "wiki_relevance_tags": ["ai-chips", "acquisitions", "amd", "open-models", "ai-policy"],
+      "actionable_links": [
+        {
+          "url": "https://www.wsj.com/.../white-houses-ai-guidelines-exempt-u-s-open-models...",
+          "description": "White House AI guidelines exempt US open models from regulation",
+          "importance": "high"
+        },
+        {
+          "url": "https://artificialanalysis.ai/?intelligence=agentic-index",
+          "description": "Artificial Analysis agentic intelligence index",
+          "importance": "high"
+        },
+        {
+          "url": "https://primeintellect.ai/blog/prime-agent",
+          "description": "PrimeIntellect Prime Agent launch — distributed agentic AI",
+          "importance": "high"
+        },
+        {
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+          "description": "Prime Agent open-source repo",
+          "importance": "high"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/26603",
+          "description": "llama.cpp PR #26603 — new feature/optimization",
+          "importance": "medium"
+        }
+      ],
+      "notes": "AMD acquiring Taalas is a major AI chip ecosystem event. Also covers White House open-models policy exemption and PrimeIntellect's distributed agent launch. Multiple wiki-relevant entities to potentially create/update."
+    },
+    {
+      "id": "google-shakeup-hassabis",
+      "subject": "🧠 Google Shakeup: Hassabis Moves Up, Google's Research Legends Walk Out",
+      "date": "2026-08-06",
+      "source": "Beehiiv AI newsletter",
+      "source_url": "https://link.mail.beehiiv.com/...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md",
+      "importance": "critical",
+      "wiki_relevance_tags": ["google", "deepmind", "demis-hassabis", "ai-orgs", "leadership"],
+      "actionable_links": [],
+      "notes": "Demis Hassabis promoted at Google (likely SVP or similar). Senior Google research figures departing. This is a critical AI-org event that directly impacts existing wiki entity pages (Google, DeepMind, Hassabis). Beehiiv redirect links need manual resolution in downstream."
+    },
+    {
+      "id": "gemini-cooked-gcp-cooking",
+      "subject": "Gemini is Cooked but GCP is Cooking",
+      "date": "2026-08-07",
+      "source": "Semi Analysis (Dylan Patel)",
+      "source_url": "https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-07-gemini-is-cooked-but-gcp-is-cooking.md",
+      "importance": "critical",
+      "wiki_relevance_tags": ["google-gemini", "gcp", "ai-infrastructure", "semianalysis", "alphabet-earnings"],
+      "actionable_links": [
+        {
+          "url": "https://blog.google/.../alphabet-earnings-q2-2026/",
+          "description": "Alphabet Q2 2026 earnings",
+          "importance": "high"
+        },
+        {
+          "url": "https://semianalysis.com/accelerator-hbm-model/",
+          "description": "Semi Analysis accelerator HBM model analysis",
+          "importance": "high"
+        },
+        {
+          "url": "https://semianalysis.com/tokenomics-model/",
+          "description": "Semi Analysis token economics model",
+          "importance": "high"
+        }
+      ],
+      "notes": "Semi Analysis argues Gemini model performance is struggling while GCP cloud revenue/hardware is thriving. Important for Google/Gemini entity pages and AI inference economics concepts. Author: @mlkan, @joeysemianalysis, @mule, @semianalysis."
+    },
+    {
+      "id": "true-positive-weekly-172",
+      "subject": "True Positive Weekly #172",
+      "date": "2026-08-06",
+      "source": "AI Weekly / swyx",
+      "source_url": "https://aiweekly.substack.com/p/true-positive-weekly-172",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-06-true-positive-weekly-172.md",
+      "importance": "high",
+      "wiki_relevance_tags": ["agent-autonomy", "local-models", "ai-safety", "deepmind", "anthropic"],
+      "actionable_links": [
+        {
+          "url": "https://newsletter.posthog.com/p/agent-autonomy",
+          "description": "PostHog blog post on agent autonomy levels",
+          "importance": "high"
+        },
+        {
+          "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+          "description": "DeepMind WeatherNext AI model for cyclone forecasting",
+          "importance": "medium"
+        },
+        {
+          "url": "https://www.theguardian.com/.../anthropic-ai-destroying-books",
+          "description": "Guardian report on Anthropic AI destroying books (copyright/training data)",
+          "importance": "high"
+        },
+        {
+          "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
+          "description": "Vicki Boykis on running local models (improvements in local inference)",
+          "importance": "medium"
+        },
+        {
+          "url": "https://microsoft.github.io/flint-chart/",
+          "description": "Microsoft Flint chart — likely a tool or visualization",
+          "importance": "low"
+        }
+      ],
+      "notes": "Strong AI Weekly roundup. Key items: PostHog's agent autonomy framework (good concept page candidate), Anthropic copyright controversy, DeepMind weather AI, local models progress. All worth tracking."
+    },
+    {
+      "id": "bens-bites-new-agent-app",
+      "subject": "I'm using a new agent app",
+      "date": "2026-08-06",
+      "source": "Ben's Bites",
+      "source_url": "https://www.bensbites.com/p/im-using-a-new-agent-app",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-06-i-m-using-a-new-agent-app.md",
+      "importance": "high",
+      "wiki_relevance_tags": ["agent-apps", "coding-agents", "meta-muse", "openai-security"],
+      "actionable_links": [
+        {
+          "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+          "description": "Meta introduces Muse Code and Muse Spark 1.2 — AI coding/creative tools",
+          "importance": "critical"
+        },
+        {
+          "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
+          "description": "OpenAI third-party cyber evaluations report",
+          "importance": "medium"
+        },
+        {
+          "url": "https://github.com/bentossell/bb-plugin-factory-droid",
+          "description": "Ben's Bites plugin factory Droid — agent tool building",
+          "importance": "medium"
+        },
+        {
+          "url": "https://github.com/fayazara/cloudtable",
+          "description": "CloudTable — likely a data/cloud tool",
+          "importance": "low"
+        },
+        {
+          "url": "https://power2026.ai/",
+          "description": "Power2026.ai — AI event or product",
+          "importance": "low"
+        }
+      ],
+      "notes": "Ben's Bites personal take on agent apps. Key item: Meta Muse Code/Spark 1.2 release is the standout — Meta entering the coding agent space. Also covers OpenAI cyber evals and community agent tools."
+    }
+  ],
+  "priority_actions": [
+    {
+      "action": "create_or_update_entity",
+      "target": "AMD (entity)",
+      "reason": "AMD acquires Taalas — major AI chip M&A event",
+      "importance": "critical",
+      "source_url": "https://www.latent.space/p/ainews-amd-buys-taalas"
+    },
+    {
+      "action": "create_entity",
+      "target": "Taalas (entity)",
+      "reason": "AI chip startup acquired by AMD — needs entity page",
+      "importance": "critical"
+    },
+    {
+      "action": "create_entity",
+      "target": "Prime Intellect / Prime Agent (entity)",
+      "reason": "Distributed agentic AI platform + open-source agent",
+      "importance": "high"
+    },
+    {
+      "action": "update_entity",
+      "target": "Google DeepMind / Demis Hassabis (entity)",
+      "reason": "Leadership reorg: Hassabis promoted, research legends departing",
+      "importance": "critical",
+      "source_url": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md"
+    },
+    {
+      "action": "update_entity",
+      "target": "Google Gemini (entity)",
+      "reason": "Semi Analysis: Gemini model struggling while GCP thrives",
+      "importance": "high",
+      "source_url": "https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking"
+    },
+    {
+      "action": "create_entity",
+      "target": "Meta Muse / Muse Code / Muse Spark (entity)",
+      "reason": "Meta's new AI coding and creative tools — significant new entrant in agent/code space",
+      "importance": "high",
+      "source_url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2"
+    },
+    {
+      "action": "create_concept",
+      "target": "Agent Autonomy Levels",
+      "reason": "PostHog's framework for categorizing agent autonomy — good concept page candidate",
+      "importance": "medium",
+      "source_url": "https://newsletter.posthog.com/p/agent-autonomy"
+    },
+    {
+      "action": "update_concept",
+      "target": "White House AI Policy / Open Models Exemption",
+      "reason": "US policy exempts open models from regulation — affects open-source AI ecosystem",
+      "importance": "high",
+      "source_url": "https://www.wsj.com/.../white-houses-ai-guidelines-exempt-u-s-open-models..."
+    },
+    {
+      "action": "track",
+      "target": "Anthropic copyright controversy (books destruction)",
+      "reason": "Guardian report on Anthropic training data practices — could become major issue",
+      "importance": "medium",
+      "source_url": "https://www.theguardian.com/.../anthropic-ai-destroying-books"
+    },
+    {
+      "action": "track",
+      "target": "Artificial Analysis Agentic Index",
+      "reason": "New benchmark/index for agentic AI intelligence — useful for wiki benchmark tracking",
+      "importance": "medium",
+      "source_url": "https://artificialanalysis.ai/?intelligence=agentic-index"
+    }
+  ]
+}

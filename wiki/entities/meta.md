@@ -2,7 +2,7 @@
 title: Meta
 type: entity
 created: 2026-04-09
-updated: 2026-08-06
+updated: 2026-08-07
 tags:
   - company
   - model
@@ -14,6 +14,7 @@ aliases:
 sources:
   - raw/newsletters/2026-07-09-the-future-of-meta-superintelligence-a-1-year-progress-update.md
   - raw/newsletters/2026-07-19-google-clones-you-meta-powers-anthropic-and-thinking-machines-opens-the-vault.md
+  - raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
   - [The Future of Meta Superintelligence: A 1 Year Progress Update (SemiAnalysis, Jul 2026)](https://open.substack.com/pub/semianalysis/p/the-future-of-meta-superintelligence)
 ---
 
@@ -173,6 +174,16 @@ See: [[concepts/ranking-engineer-agent]]
 - Part of broader industry trend: companies using employee data as training material for autonomous AI agents
 
 See: [[concepts/agent-transformation-accelerator]]
+
+## GEM — Ad Recommendation Foundation Model (August 2026)
+
+Meta published how it trains **GEM**, the foundation model behind ad recommendations on Facebook and Instagram — a hybrid recommendation + LLM architecture:
+
+- **Scale**: runs on **several thousand of Meta's latest-generation GPUs**, carrying **trillions of sparse parameters alongside billions of dense ones**
+- **Training efficiency**: Meta says it **doubled end-to-end training efficiency to 20-25% MFU** and **scaled training compute fourfold in twelve months**
+- **Architecture**: hybrid recommender+LLM design — connecting the classical sparse-parameter recommendation stack (like the Andromeda Ads Model) with LLM capabilities
+
+GEM represents Meta's production-grade convergence of recommendation systems and generative AI — the model behind the ads business that funds everything else, now trained with LLM-era efficiency techniques. (Source: Superintel+ newsletter, 2026-08-06)
 
 ## Open Source History
 

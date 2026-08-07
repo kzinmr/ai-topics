@@ -1,7 +1,7 @@
 ---
 title: Google DeepMind
 created: 2026-05-15
-updated: 2026-08-06
+updated: 2026-08-07
 type: entity
 tags:
   - company
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-05-25_deepmind-agents-at-scale-youtube.md
   - raw/newsletters/2026-05-13-the-ai-cursor-arrives.md
   - raw/newsletters/2026-08-06-ainews-jeff-sanjay-oriol-and-quoc-depart-deepmind-demis-to-chair-koray-to-svp-wh.md
+  - raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md
   - https://deepmind.google/blog/ai-pointer/
   - https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/
 ---
@@ -118,6 +119,17 @@ The AI Pointer represents a shift from **chat-box AI** to **ambient/operating-la
 | **AI Pointer** | 2026 | Context-aware cursor; AI at the operating layer |
 | **AlphaProof Nexus** | 2026 | LLM+Lean formal proof search; 9 Erdős problems solved |
 | **Gemma 4** | 2025-26 | Open-weight models; MTP drafters for 3x faster inference |
+
+### WeatherNext 2 — Cyclone Forecasting Breakthrough (August 2026)
+
+Google DeepMind open-sourced **WeatherNext 2** (published in *Nature*) with **code and model weights** — a high-impact AI-for-science release:
+
+- **~1 extra day of lead time** on tropical cyclone forecasting — described as "about a decade of forecasting progress in a single jump"
+- **Probabilistic ensemble**: ~1,000 forecast members per storm
+- **Validated real-world case**: predicted Hurricane Melissa's **Category 5 landfall 5 days ahead with 80% confidence**
+- **Significance**: a concrete demonstration of DeepMind's weather/AI-science lineage (continuing GraphCast/GenCast work) now shipping as open weights
+
+See also [[concepts/open-science]] and [[concepts/ai-mathematics-theorem-proving]] for adjacent AI-for-science themes. (Source: AINews via DeepMind blog, 2026-08-07)
 
 ## Related Entities
 

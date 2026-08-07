@@ -1,7 +1,7 @@
 ---
 title: Custom AI Silicon
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-08-07
 type: concept
 tags:
   - concept
@@ -12,11 +12,13 @@ tags:
   - nvidia
   - amd
   - industry
+  - asic
 sources:
   - raw/articles/2026-05-27_trendforce-ai-server-2026-asic.md
   - raw/articles/2026-05-27_cerebras-kimi-k26-981-tokens.md
   - raw/articles/2026-05-27_nvidia-vera-rubin-q3-2026.md
   - raw/articles/2026-05-27_amd-mi355x-mlperf-inference-v6.md
+  - raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
 ---
 
 # Custom AI Silicon
@@ -173,6 +175,17 @@ The shift toward custom silicon is driven by a fundamental change in AI workload
 2. **KV-cache and memory bandwidth** are the primary bottlenecks — not raw FLOPS — favoring architectures with massive on-chip memory (Cerebras WSE-3) or specialized memory hierarchies (NVIDIA ICMS)
 3. **Cost per token** is the competitive axis: 10× reductions per generation (Blackwell → Vera Rubin) compress the window for GPU-only architectures
 4. **Open-weight models at trillion-parameter scale** (Kimi K2.6, DeepSeek V4, GPT-OSS) require inference infrastructure that can handle MoE routing and multi-wafer distribution efficiently
+
+## Frontier Lab In-House Silicon: Anthropic (August 2026)
+
+The custom silicon trend extended to AI labs themselves in August 2026. **[[entities/anthropic|Anthropic]]** confirmed for the first time that it is building an **in-house silicon team to design custom chips for Claude** — the first official acknowledgment of the lab's own chip program. Details:
+
+- **Hiring**: Chip engineers recruited at a listed range of **$320,000–$485,000**
+- **Positioning**: A spokesperson said Anthropic "will co-design hardware and models so Claude runs faster and more efficiently at the scale our customers need"
+- **Manufacturing**: Reports (The Information, July 2026) indicated Anthropic was in talks with **Samsung** for chip manufacturing
+- **Context**: This mirrors [[entities/openai|OpenAI]]'s **Jalapeno** custom chip effort with Broadcom, and [[entities/meta|Meta]]'s next-generation in-house chip program (reportedly due September 2026)
+
+Anthropic's move shifts it from pure external-silicon customer (TPUs via Google, Trainium via AWS, GPUs via NVIDIA/Microsoft) toward the **co-design model-first silicon strategy** that Google pioneered with TPUs. The `$320K-$485K` salary band signals serious senior engineering investment. (Source: Superintel+ newsletter, 2026-08-06)
 
 ## Implications
 

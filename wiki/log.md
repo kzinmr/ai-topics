@@ -1,3 +1,19 @@
+## [2026-08-07] newsletter-wiki-ingest (10:40) | Take 3件 + Reference 5件をWiki反映
+
+- **Take (new entity): entities/taalas.md** — 新規エンティティ作成。AMDがカスタムAI推論シリコン企業Taalasを買収（2026-08-06発表）。Taalas公式X投稿全文引用:「hardware designed around the model... world's fastest and most cost-effective inference silicon」。taalas.comの自社説明（"The Model is The Computer"、Hardcore Models 1000x効率、Taalas Foundry）も収録。Custom ASIC推論の垂直統合トレンドの具体的事例。
+- **Take: entities/amd.md** — 「Taalas Acquisition (August 2026)」セクション追加。買収の技術的意義（モデル特化シリコン合成能力の獲得、MI355X GPUラインとの補完、Agentic Kernel Generation戦略との関係）、カスタムASIC推論トレンドへの位置づけ。Source: raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md
+- **Take: concepts/custom-ai-silicon.md** — 「Frontier Lab In-House Silicon: Anthropic (August 2026)」セクション追加。Anthropicが初めて自社シリコンチーム設立を公式確認（Claude向けカスタムチップ、チップエンジニア募集$320K-$485K、Samsung製造提携交渉はThe Information 7月報道）。OpenAI Jalapeno/Broadcom、Meta次世代チップ(9月)との比較文脈。Source: raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
+- **Take: entities/anthropic.md** — 「In-House Silicon Team (August 2026)」セクション追加（Compute Partnership Overview配下）。外部シリコン顧客（TPU/Trainium/GPU）からモデル優先コデザイン戦略へのシフト。
+- **Take: concepts/gemini/index.md** — 「SemiAnalysis Institutional Bear Thesis (August 2026)」セクション追加。Gemini 3.5 Pro静かにキャンセル、3.6 Flashブリッジモデル、Gemini 1P APIトークン成長減速（60% 1Q26→38% 2Q26）、Gemini ARR $12B、GCP成長82%、TPU売上$35B/GW、TPU出荷20%超がAnthropic直販（3Q26-4Q27）、Thomas Kurian社内政治勝利。Martin AldersonのTPU Advantage論との対比も記載。
+- **Take: entities/semianalysis.md** — 「Gemini is Cooked but GCP is Cooking (August 2026)」をKey Publicationsに追加。機関投資家向けベアテーゼ（モデル事業弱気 vs インフラ事業強気の二分法）。
+- **Reference: concepts/open-weight-ai-regulation.md** — 「White House Guidelines Exempt U.S. Open Models (August 2026)」セクション追加。政府レビュー対象は閉域・プロプライエタリなSOTAサイバー能力モデルのみ、オープンモデルは免除（WSJ/Bloomberg）。規制非対称性が中国オープンウェイト優位を生む懸念も記載。
+- **Reference: concepts/gpt/gpt-5-6.md** — 「Consumer Model Unification & Agent Plugins (August 6, 2026)」セクション追加。Instant/Thinking統合、GPT-5.6 Sol all-in-one（reasoning-effortスライダー、誤答68%減）、Free/Go向けLuna無制限+Thinkボタン、Agent Pluginsオープン標準（AWS/Cursor/GitHub/Vercel共同）。
+- **Reference: entities/cloudflare.md** — 「Kitesurf — Stateless Browser on Workers (August 2026)」セクション追加。Agents Week発表、script/DOMとレンダリング分離、レンダラーワーカー遅延生成、CPU/メモリ削減。
+- **Reference: entities/deepmind.md** — 「WeatherNext 2 — Cyclone Forecasting Breakthrough (August 2026)」セクション追加。Nature掲載、コード・重み付きOSS化、サイクロン予報で約1日リードタイム延長、嵐あたり1,000本確率予測、ハリケーンMelissa 5日前Cat 5予測を80%確信度で的中。
+- **Reference: entities/meta.md** — 「GEM — Ad Recommendation Foundation Model (August 2026)」セクション追加。ハイブリッドレコメンド+LLM、数千台GPU、数兆スパース+数十億デンスパラメータ、MFU 20-25%へ倍増、12ヶ月で訓練計算量4倍。
+
+Checkpoint: newsletter_20260807T102155Z / triage_latest.json (recovered from checkpoint; upstream response JSON parse failure — 3 takes / 5 references / 4 batch skips)
+
 ## [2026-08-07] blog-wiki-ingest (10:28) | Take 3件 + Reference 2件をWiki反映
 
 - **Take: entities/gary-marcus.md** — 新セクション「Don't Count Google Out (August 2026)」追加。Gary Marcus「Seven reasons I wouldn't count Google out」(Aug 6)。Hassabis退任→Chairman/CSO就任、Jeff Dean等の退社続出の中、Googleを「数えるな」と反論する7つの理由（データ規模・TPU自社チップ・$402B売上/$132B利益・Android/Mail/Search/YouTube配布・Hassabis残留＋Kavukcuoglu継承・競合の困境・多頭引き分けでも生き残り）。Source: raw/articles/garymarcus.substack.com--p-seven-reasons-i-wouldnt-count-google--b4555440.md
