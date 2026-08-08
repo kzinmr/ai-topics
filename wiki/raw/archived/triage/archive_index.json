@@ -182,6 +182,7 @@
     "https://danluu.com/cache-incidents/",
     "https://danluu.com/deconstruct-files/",
     "https://danluu.com/google-sre-book/",
+    "https://danluu.com/julialang/",
     "https://danluu.com/nothing-works/",
     "https://danluu.com/startup-options/",
     "https://daringfireball.net/2018/12/electron_and_the_decline_of_native_apps",
@@ -939,6 +940,7 @@
     "https://micahflee.com/mandatory-update-a-short-story/",
     "https://micahflee.com/practical-defenses-against-technofascism/",
     "https://micahflee.com/read-cindy-cohns-new-book-privacys-defender-my-thirty-year-fight-against-digital-surveillance/",
+    "https://michael.stapelberg.ch/posts/2025-07-13-nixos-nas-network-storage-config/",
     "https://michael.stapelberg.ch/posts/2026-04-05-stamp-it-all-programs-must-report-their-version/",
     "https://michael.stapelberg.ch/posts/2026-05-24-minimal-memory-safe-go-rsync-vulns/",
     "https://micro.mu/tools-for-agents",
@@ -1274,6 +1276,7 @@
     "https://read.getsuperintel.com/p/the-only-moat-that-survives-ai",
     "https://refactoringenglish.com",
     "https://refactoringenglish.com/blog/useful-feedback-on-design-docs/",
+    "https://refactoringenglish.com/chapters/rules-for-software-tutorials/",
     "https://refactoringenglish.com/excerpts/commit-messages/",
     "https://refactoringenglish.com/excerpts/passive-voice-considered-harmful/",
     "https://refactoringenglish.com/excerpts/release-announcements/",
@@ -2377,5 +2380,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-08T14:11:28.543058+00:00"
+  "updated": "2026-08-08T18:09:26.011065+00:00"
 }

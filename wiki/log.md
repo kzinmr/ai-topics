@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-08] raw-backlog-ingest (18:00) | Enrich 1件 (harvey) + Skip 4件
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 18:00, run 20260808T180025Z)。Takes=1, References=0, Skips=4。
+- **Enrich: [[entities/harvey]]** — 「Legal Discovery & Defensible AI Protocols (June 2026)」セクション追加。Harvey Blog 2026-06-05公開「How Legal Teams are Using AI for Legal Discovery」: ディスカバリーをEDRMライフサイクル全体のアーキテクチャ問題と再定義（Information Governance→Presentationの各段階でAI適用）、TAR（Da Silva Moore 2012 / Rio Tinto 2015 / Hyles 2016の判例史）vs 生成AIレビューの3次元トレードオフ表、防御可能なAIディスカバリープロトコル5要素（書面ESIプロトコル・検証方法論・サンプリングQC・監査証跡・meet-and-confer開示、FRCP Rule 26(b)(1)/(f)/(b)(5)・FRE 502基盤）、特権レビュー経済性（理由付けタスクとしての特権判断、FRE 502(d)オーダー標準化、Rule 26(b)(5)準拠特権ログ生成）、時間圧縮レビューでの価値曲線（HSRセカンドリクエスト、Lynn Pinker Hurst and Schwegmann事例: 週8時間超/弁護士節約・48時間以内対応で新規案件獲得）、法律グレードAI選定5基準（ドメイン特化訓練・引用グラウンディング・検証ツーリング・セキュリティ・ワークフロー統合）、エージェントシフト（Harvey AgentsのPlan/Research/Work/Deliver/Review、Reed Smith・Vinson and Elkins、複合エラー伝播リスク）。sourcesに raw/articles/2026-06-06_harvey_how-to-use-ai-for-legal-discovery.md 追加、updated: 2026-08-08。
+- **Skip: danluu.com--julialang--efa2d4b6.md** — 本日04:00実行で既処理（entities/dan-luu Notable Essays (Non-AI) にJulia言語レビュー収録済み）。same-day dedup。
+- **Skip: berthub.eu--articles-posts-ai-voor-wie-erover-gaat--4bd1470e.md** — entities/berthub-eu.md「AI Policy Analysis (July 2026)」で全文収録済み（FOMO採用・環境コスト・IP危機・デジタル主権・循環金融バブル・ジュニア/シニアパイプライン・認知的オフローディング・未測定パイロットの8論点）。sources/References両方に登録済み、archive_status: already_archived。
+- **Skip: michael.stapelberg.ch--posts-2025-07-13-nixos-nas-network-storage-config--3539d582.md** — 非AIインフラ記事（2102行のNixOS NAS移行ハウツー）。entities/michael-stapelberg.md「The NixOS Conversion」節に要約済み。
+- **Skip: refactoringenglish.com--chapters-rules-for-software-tutorials--52bcc5a7.md** — バッチスキップパターン。entities/refactoring-english.mdのSample Chapters/Other Topicsに既収録、Referencesにも既登録。
+
 ## [2026-08-08] watchdog | auto-fix: log header, index counts, 5 misplaced tag-list frontmatters
 
 - **Log header burial**: `# Wiki Log` was at line 19 (entries prepended above header). Restored via fix_log_header_burial.py — header now line 1, 309 entries preserved, 0 pipe corruption.

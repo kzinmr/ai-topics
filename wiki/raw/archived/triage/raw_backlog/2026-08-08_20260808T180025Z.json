@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-08T18:09:26.010513+00:00",
+  "triage_run_id": "20260808T180025Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest (18:00) バッチ: raw_backlog_collect.py --sort ai-hint --limit 5 (20260808T180025Z)。Takes=1, References=0, Skips=4。Take: entities/harvey に「Legal Discovery & Defensible AI Protocols (June 2026)」セクション追記（EDRMライフサイクル全体のAI適用、TAR vs 生成AIレビュー、5要素の防御可能プロトコル、特権レビュー経済性、エージェントシフト）。Skip 4件の内訳: dan-luu Julia記事は本日04:00実行で既処理、berthub AI政策記事はentities/berthub-eu.mdの「AI Policy Analysis (July 2026)」セクションで全文収録済み、Stapelberg NixOS NAS移行は非AIインフラ記事でエンティティのNixOS Conversion節に要約済み、refactoringenglishチュートリアル執筆ルール章はエンティティのSample Chapters/Other Topicsに既収録（バッチスキップパターン）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-danluu-julia",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "A review of the Julia language",
+      "url": "https://danluu.com/julialang/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--julialang--efa2d4b6.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同一日04:00のraw-backlog-ingest実行で既処理。wiki/log.md 2026-08-08 (04:00) に「Enrich: [[entities/dan-luu]] — Notable Essays (Non-AI) セクション追加。(3) A review of the Julia language (2015/2022更新: コア言語のバグ、例外処理、テスト文化、Zygote/ReverseDiff.jlの誤勾配=MLツール関連、co-creatorの否定パターン)」と記録済み。sources追加・updated: 2026-08-08完了。再処理不要（same-day dedup）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# A review of the Julia language\nSource: https://danluu.com/julialang/\nHere's a language that gives near-C performance that feels like Python or Ruby with optional type annotations (that you can feed to\none of two\nstatic analysis tools\n) that has good support for macros plus decent-ish support for F"
+    },
+    {
+      "item_id": "raw-backlog-stapelberg-nixos-nas",
+      "source": "raw_backlog",
+      "source_name": "michael.stapelberg.ch",
+      "title": "Migrating my NAS from CoreOS/Flatcar Linux to NixOS (2025)",
+      "url": "https://michael.stapelberg.ch/posts/2025-07-13-nixos-nas-network-storage-config/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/michael.stapelberg.ch--posts-2025-07-13-nixos-nas-network-storage-config--3539d582.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIインフラ記事（2102行のNixOS NAS移行ハウツー: CoreOS/Flatcar→NixOS、systemdユニット→ネイティブNixOSモジュール、Docker廃止）。AI/LLM/エージェント関連性なし。entities/michael-stapelberg.mdの「The NixOS Conversion」節に「Migrating his NAS from CoreOS/Flatcar to NixOS, replacing Docker with native NixOS modules」として既に要約済み。wiki価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Migrating my NAS from CoreOS/Flatcar Linux to NixOS (2025)\nSource: https://michael.stapelberg.ch/posts/2025-07-13-nixos-nas-network-storage-config/\nTable of contents\nIn this article, I want to show how to migrate an existing Linux server to NixOS\n— in my case the CoreOS/Flatcar Linux installation "
+    },
+    {
+      "item_id": "raw-backlog-refactoring-tutorials-rules",
+      "source": "raw_backlog",
+      "source_name": "refactoringenglish.com",
+      "title": "Rules for Writing Software Tutorials",
+      "url": "https://refactoringenglish.com/chapters/rules-for-software-tutorials/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/refactoringenglish.com--chapters-rules-for-software-tutorials--52bcc5a7.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ バッチスキップパターン（refactoringenglish.com書籍章）。entities/refactoring-english.mdのSample Chaptersに「Rules for Writing Software Tutorials (Jan 2025)」として既収録、Other Topicsの「Tutorials: Rules for writing tutorials that respect the reader's time」にも言及、Referencesに refactoringenglish.com--chapters-rules-for-software-tutorials--52bcc5a7 が既登録。本文（初心者向け執筆・明確なタイトル・コピペ可能なコード・冗長な作業の排除・動作状態の維持・完全な例へのリンク等のルール群）はエンティティの書籍章カタログに整合。AI特化コンテンツでもなく、新規情報なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Rules for Writing Software Tutorials\nSource: https://refactoringenglish.com/chapters/rules-for-software-tutorials/\nRules for Writing Software Tutorials\nby\nMichael Lynch\n, published\nJanuary 2, 2025, last revised\nJanuary 31, 2025\nMost software tutorials are tragically flawed.\nTutorials often forget "
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-05
+updated: 2026-08-08
 tags:
   - security
   - company
@@ -19,6 +19,7 @@ sources:
   - raw/articles/2026-05-26_harvey-ai-initial-results-legal-agent-benchmark.md
   - raw/articles/2026-06-02_harvey_why-we-built-our-own-cloud-agent-infrastructure.md
   - raw/articles/2026-06-02_harvey_how-ai-is-transforming-contract-review-software.md
+  - raw/articles/2026-06-06_harvey_how-to-use-ai-for-legal-discovery.md
   - raw/articles/2026-06-17_harvey_harvey-copilot-cowork-launch.md
   - raw/articles/2026-07-01_harvey_sonnet-5-in-harvey.md
   - raw/articles/2026-07-17_harvey_y-combinator-backed-benchmark-joins-harvey.md
@@ -267,6 +268,78 @@ The guide argues **AI governance is the new responsibility that didn't exist fiv
 The guide explicitly contrasts **general-purpose AI tools** (require lawyer to do most framing/verification) with **platforms built specifically for legal work** (ground outputs in cited sources lawyers can verify) — positioning Harvey in the latter category. Scale signal cited: 142,000+ legal professionals, 1,500+ customers in 60+ countries, 60%+ of AmLaw 100.
 
 Source: raw/articles/2026-06-19_harvey_legal-operations-management.md
+
+## Legal Discovery & Defensible AI Protocols (June 2026)
+
+Harvey published a guide (Jun 5, 2026) on how litigation teams use AI for discovery — arguing that discovery has shifted from a single-tool problem (TAR at the relevance stage) to an **architectural question across the full Electronic Discovery Reference Model (EDRM)**. Three AI modes now coexist with different defensibility profiles and cost curves: **predictive coding** (ranks documents using attorney-trained models), **generative AI review** (reads documents and produces relevance determinations with cited reasoning), and **agentic AI** (executes multi-step review workflows under attorney supervision).
+
+### AI Across the EDRM Lifecycle
+
+- **Information Governance / Identification** — early case assessment models surface likely custodians, communication patterns, and dispositive documents before formal review
+- **Preservation / Collection** — AI applied narrowly: deduplication across sources, gap analysis on custodian coverage
+- **Processing** — older analytics still do the heaviest work: email threading, near-duplicate detection, language identification; dedup alone often eliminates large portions of the corpus
+- **Review** — the most consequential shift of the past three years: predictive coding and generative review coexist as the two primary approaches
+- **Analysis / Production** — AI drafts privilege log entries, identifies privilege indicators across large corpora, generates production-ready metadata
+- **Presentation** — generative tools support deposition prep, witness kit assembly, exhibit selection
+
+### TAR vs Generative Review: The Tradeoffs
+
+| Dimension | Predictive Coding (TAR) | Generative AI Review |
+|-----------|------------------------|----------------------|
+| Mechanism | Attorney-trained classification models; TAR 2.0 = continuous active learning | Reads each document, produces determination + written reasoning with citations |
+| Defensibility | Settled case law: *Da Silva Moore v. Publicis Groupe* (2012), *Rio Tinto v. Vale* (2015), *Hyles v. NYC* (2016) — all Judge Peck | Newer; case law developing, courts receptive where protocol is rigorous |
+| Explainability | Ranking only | Structural advantage — transparent, interrogable record |
+| Best fit | High-volume reviews, narrow criteria | Complex, fact-intensive cases where reasoning matters |
+
+Working decision rule settling in practice: predictive coding for high-volume narrow-criteria reviews; generative for complex fact-intensive cases; many protocols combine both (predictive triage at corpus level → generative on the most-likely-relevant or most-ambiguous set).
+
+### Five Elements of a Defensible AI Discovery Protocol
+
+> "Defensibility is a documentation problem, not a technology problem. Courts evaluate process, not algorithms."
+
+The legal substrate: FRCP Rule 26(b)(1) (proportionality), Rule 26(f) (meet-and-confer), Rule 26(b)(5) (privilege assertions), and FRE 502 (inadvertent waiver).
+
+1. **Written ESI protocol** — discloses the AI methodology in operational terms (workflow, not model architecture): how the corpus was collected, which tools at each stage, who makes final determinations, how results are validated
+2. **Validation methodology** — recall/precision/elusion rates against a statistically valid control set the model has not seen; sample size and confidence intervals documented in advance; results preserved in the work product file
+3. **Sampling-based quality control** — random samples of model-classified documents pulled during review, verified by attorneys, results logged
+4. **Audit trail** — human decisions, model versions, methodology changes mid-review (seed set recalibration, model switches, manual routing)
+5. **Meet-and-confer disclosure** — calibrated to the case; Sedona Conference cooperation principles; disclosure of generative AI use remains less settled than TAR disclosure
+
+### Privilege Review: Where AI Changes Economics Most Dramatically
+
+Privilege review is the most time-consuming and expensive phase of complex document review, and privilege errors are asymmetric — a relevance error is a marginal inefficiency, a privilege error is an inadvertent waiver putting attorney-client communications in an adversary's hands. Generative AI is structurally suited because **privilege determination is a reasoning task, not a classification task**.
+
+- **Operational pattern**: human-in-the-loop — the model surfaces privilege candidates (attorney involvement, legal advice content, work product characteristics), produces draft determinations with cited reasoning and draft privilege log entries meeting the Rule 26(b)(5) descriptive standard; the attorney confirms/modifies/rejects; the audit trail captures both the model's proposal and the attorney's decision
+- **Validation focus**: false negatives (privileged → non-privileged) are more consequential than false positives (over-designation)
+- **FRE 502 safety net**: 502(b) for unintentional disclosures, 502(d) for court-ordered non-waiver protections — a 502(d) order is now standard practice in any matter using AI for privilege review
+- **Privilege log generation**: turns a multi-week paralegal deliverable into structured review of model-generated entries, with time savings flowing to partner-level review
+
+### Time-Compressed Reviews: Where the Value Curve is Steepest
+
+AI's value in discovery scales with time pressure — the binding constraint shifts from cost to capacity. Canonical scenarios: **HSR Second Request** (millions of documents; certification speed is a competitive variable in transaction timing), **regulatory investigations** (SEC/DOJ/FTC subpoenas with production windows measured in weeks), **internal investigations** with board-reporting deadlines.
+
+- **Staffing shift**: the 50-attorney contract review team assembled within 72 hours is giving way to a smaller team of associates + senior reviewers alongside generative review and continuous learning models
+- **First 48 hours**: early case assessment surfaces dispositive documents and key custodian communications — historically weeks of attorney work; changes the posture at the agency meet-and-confer and lets boards get a preliminary factual map within days
+- **Case study — Lynn Pinker Hurst and Schwegmann** (Chambers Band 1 litigation boutique, financial services/healthcare/insurance): litigators use Harvey for early case assessment across hundreds of files, saving **8+ hours per lawyer per week**; reported winning new business because the platform allows responding to urgent client requests in **under 48 hours** (previously required preexisting familiarity or weekend staffing)
+
+### Legal-Grade AI Selection Criteria (vs General-Purpose Models)
+
+1. **Domain-specific training** — trained on legal corpora and tasks, not a general-purpose model with a legal interface; recognizes structural conventions of contracts, pleadings, and correspondence (Harvey: used by more than 60% of the AmLaw 100)
+2. **Citation grounding** — every output points back to a source document the reviewing attorney can verify; the single most important defensibility feature
+3. **Validation tooling** — native recall/precision/elusion metrics with documented sample sizes and confidence intervals, producible in complete form at a hearing
+4. **Security architecture** — matter-level data isolation, no model training on client data, SOC 2 Type II minimum, ISO 27001 where applicable, encryption in transit and at rest
+5. **Workflow integration** — fits the tools teams already use (iManage, NetDocuments, Microsoft 365, review platforms); separate workflows erode adoption and introduce security exposure
+
+### The Agentic Shift
+
+Discovery AI is moving from single-task tools to platforms that execute multi-step workflows under attorney supervision. An agentic platform takes an abstract instruction ("prepare an early case assessment for this matter") and executes the underlying steps without requiring direction of each one. Working example from the article: an associate receives a securities class action complaint at 9 a.m. with 14 defendants; by 2 p.m. the partner has a working briefing that historically took a week — the associate reviewing each step, modifying the custodian list, narrowing the date range, approving the next phase.
+
+- **Harvey Agents** execute legal work across a **Plan, Research, Work, Deliver, Review** sequence, with the attorney retaining final judgment at each decision point; Reed Smith and Vinson & Elkins are among major AmLaw firms building toward agentic workflow adoption
+- **Governance requirement**: agentic platforms require *more* rigorous audit trails, not fewer — longer decision chains, and validation must account for compounded error propagation across multi-step workflows
+- **Practical starting point**: one well-scoped use case (regulatory response, contained contract dispute, scoped internal investigation); bounded dataset (ideally under a million documents for first deployment); a measurable success metric (review hours per GB, cost per matter, time from collection to first factual map); four roles in the kickoff — partner sponsor, eDiscovery lead, data scientist/vendor counterpart, IT/security representative
+- **Adoption anti-pattern**: deploying AI across all matters simultaneously fails because protocols aren't stable, institutional muscle for failure modes doesn't exist, and the validation record is thin — "one matter at a time, with each matter strengthening the protocol that the next matter inherits"
+
+Source: raw/articles/2026-06-06_harvey_how-to-use-ai-for-legal-discovery.md
 
 ## Related
 
