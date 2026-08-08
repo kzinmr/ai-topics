@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (884 pages)
+## Entities (886 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -889,7 +889,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1952 pages)
+## Concepts (1976 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -911,6 +911,7 @@
 - [[concepts/agent-communication-standards]] — Agent Communication Standards — ACP, A2A, BeeAI
 - [[concepts/agent-distillation]] — Agent Distillation
 - [[concepts/agent-orchestration-runtime]] — Agent Orchestration Runtime — Turning agent orchestration into software engineering via a VM with persistent state, type guarantees, and control flow; Onyx VM by Random Labs
+- [[concepts/agent-plugins-1-0-0]] — Agent Plugins 1.0.0 — Open standard for portable AI agent component packages (portable skills/tools); backed by Vercel, AWS, Google, Microsoft, OpenAI; sits alongside MCP and A2A (Aug 2026)
 - [[concepts/agent-documentation]] — agent-documentation
 - [[concepts/agent-driven-ranker-optimization]] — Agent-Driven Ranker Optimization
 - [[concepts/agent-economics]] — Agent Economics
@@ -974,6 +975,7 @@
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
 - [[concepts/ai-enabled-terrorism]] — AI-Enabled Terrorism — CASP report on Boko Haram using frontier AI for tactical planning and logistics
+- [[concepts/ai-energy]] — AI Energy — AI energy consumption and data center sustainability; training and inference power costs, GPU power envelopes (NVIDIA Vera), efficiency techniques (quantization, speculative decoding, sparsity); major lab sustainability commitments (Aug 2026)
 - [[concepts/ai-preflight-safety-testing]] — AI Preflight Safety Testing — Proposed mandatory safety evaluations for frontier AI before deployment
 - [[concepts/apple-speechanalyzer]] — Apple SpeechAnalyzer — Next-generation on-device speech recognition API (iOS 26/macOS 26), 2.12% WER on LibriSpeech, 3-4× improvement over legacy SFSpeechRecognizer
 - [[concepts/bonsai-27b]] — Bonsai 27B — Prism ML's 27B-parameter model running on phones via extreme quantization

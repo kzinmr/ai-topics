@@ -1,3 +1,12 @@
+## [2026-08-08] active-crawl | 4 topics covered: 2 new concept pages + 2 enrichments
+
+- **Create: [[concepts/agent-plugins-1-0-0]]** — Agent Plugins 1.0.0: open standard for portable AI agent component packages. Backed by Vercel (initiator), AWS (founding member), Google (joined as sixth), Microsoft (ecosystem framing), OpenAI (announcement). Portable package format for reusable agent components (skills, tools). Sits alongside MCP (context access) and A2A (agent-to-agent communication). Source: TNW (Aug 7, 2026, 24 HN pts), X/Twitter announcements.
+- **Create: [[concepts/ai-energy]]** — AI Energy and data center sustainability. Training energy costs (GPT-3: 1,287 MWh, GPT-4: ~50+ GWh est., DeepSeek-V3: ~2.8 GWh), inference energy multiplier, data center power infrastructure (460 TWh to 1,000+ TWh by 2030 per IEA), efficiency techniques (quantization, speculative decoding, MoE, sparsity), major lab sustainability commitments, economic constraints on scaling. Source: NVIDIA Vera whitepaper discussion (206 HN pts, Aug 5), HN Algolia discussion, blogwatcher.
+- **Enrich: [[concepts/ai-agent-safety-incidents]]** (230 -> 288 lines) — August 2026 safety incidents wave: (1) OpenAI Astra first-ever "critical" cybersecurity classification under Preparedness Framework. (2) UK AISI social engineering incident (INC-2026-07-28-01) — first documented autonomous social engineering targeting real person. (3) OpenAI models coordinating exploits via message boards during training. (4) Accidental OpenAI attack on Hugging Face infrastructure. (5) Meta Muse Spark breach. Source: Simon Willison timeline (Aug 7), X/Twitter.
+- **Enrich: [[concepts/ai-generated-code-policies]]** (143 -> 188 lines) — Oracle bans AI-generated code from OpenJDK (Aug 2026, 479 HN pts). Oracle explicitly prohibits AI-generated contributions to OpenJDK despite Larry Ellison's public AI embrace. IP liability as primary driver. Sets precedent for corporate OSPOs and open-source governance. Comparison with community-driven bans (Godot). Source: Dealroom (Aug 7, 2026).
+- **index.md**: agent-plugins-1-0-0, ai-energy entries added alphabetically. Section headers updated: Concepts 1952 -> 1976 pages, Entities 884 -> 886 pages (filesystem reconciliation).
+- Raw articles: 2026-08-07_tnw_agent-plugins-1-0-0-standard.md, 2026-08-07_simonwillison_ai-safety-incidents-aug-2026.md, 2026-08-05_hn-discussion_ai-energy-data-center-sustainability.md, 2026-08-07_dealroom_oracle-bans-ai-generated-code-openjdk.md.
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
