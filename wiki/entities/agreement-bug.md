@@ -2,14 +2,24 @@
 title: Agreement is a Bug
 type: concept
 created: 2026-04-27
-updated: 2026-05-27
-status: L2
+updated: 2026-08-08
+status: L3
 sources: [https://x.com/nyk_builderz/status/2041091619848634661, https://x.com/nyk_builderz/status/2037870116059201828, https://x.com/nyk_builderz/status/2038519372541730819]
 tags:
   - anthropic
   - multi-agent
   - ai-agents
+  - orchestration
+  - agent-design-patterns
+  - agent-orchestration
 aliases: [structured-disagreement, claude-code-subagent-disagreement]
+related:
+  - "[[concepts/multi-agents/multi-agent-consensus-patterns]]"
+  - "[[concepts/back-of-house-multi-agent-patterns]]"
+  - "[[concepts/multi-agents/multi-agent-orchestration-patterns]]"
+  - "[[concepts/subagents]]"
+  - "[[concepts/excessive-agency]]"
+  - "[[concepts/multi-agents/agentic-conflict-resolution]]"
 ---
 # Agreement is a Bug
 
@@ -54,11 +64,26 @@ This approach inverts the conventional "multi-agent collaboration" idea:
 - **Conventional**: Multiple agents agree to reach a conclusion
 - **NYK Framework**: Multiple agents **disagree together**, surfacing blind spots before reaching consensus
 
-This differs from the [[concepts/back-of-house-multi-agent-patterns]] "Back of House" pattern, focusing instead on **decision quality**.
+This differs from the [[concepts/back-of-house-multi-agent-patterns]] "Back of House" pattern, focusing instead on **decision quality**. It also contrasts with [[concepts/multi-agents/multi-agent-consensus-patterns]]: consensus patterns aim to *reach* agreement reliably across distributed agents (supervisor, voting, quorum), while structured disagreement treats premature agreement itself as the failure mode. The two are complementary — structured disagreement *generates* diverse candidate positions that consensus protocols can then *aggregate*.
+
+## Graph Structure Query
+
+```
+[this-concept] ──author──→ [entity: nyk-builderz]
+[this-concept] ──contrasts──→ [concept: multi-agent-consensus-patterns]
+[this-concept] ──contrasts──→ [concept: back-of-house-multi-agent-patterns]
+[this-concept] ──relates-to──→ [concept: agentic-conflict-resolution]
+[this-concept] ──relates-to──→ [concept: subagents]
+[this-concept] ──embodies──→ [concept: agent-design-patterns]
+```
+
+This concept informs graph queries: it is a **deliberate disagreement** pattern for [[concepts/subagents]], contrasted with agreement-seeking [[concepts/multi-agents/multi-agent-consensus-patterns]], and related to [[concepts/multi-agents/agentic-conflict-resolution]] (how agents surface and resolve conflicts rather than papering over them).
 
 ## Related Concepts
 
 - [[concepts/back-of-house-multi-agent-patterns]] — Multi-agent workflows
 - [[concepts/multi-agents/multi-agent-orchestration-patterns]] — Multi-agent orchestration
+- [[concepts/multi-agents/multi-agent-consensus-patterns]] — Agreement-seeking consensus protocols (inverse of this pattern)
+- [[concepts/multi-agents/agentic-conflict-resolution]] — Conflict resolution among agents
 - [[concepts/subagents]] — Subagent patterns
 - [[concepts/excessive-agency]] — Limits of agent autonomy

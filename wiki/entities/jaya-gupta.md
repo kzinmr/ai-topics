@@ -1,13 +1,13 @@
 ---
 title: "Jaya Gupta"
 created: 2026-05-11
-updated: 2026-06-13
+updated: 2026-08-08
 type: entity
-status: L2
-tags: [person, blogger, x-account, ai-adoption, governance, token-economics]
+status: L3
+tags: [person, blogger, x-account, ai-adoption, governance, token-economics, vc, investor, enterprise-ai, knowledge-graph]
 aliases: ["@JayaGup10"]
-sources: [raw/articles/2026-05-08_jaya-gupta_next-biggest-moat-in-ai.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, raw/articles/2026-06-12_jayagup10_openai-vs-anthropic-enterprise.md]
-related: [concepts/organizational-moat, concepts/context-graphs, concepts/token-to-outcome-attribution]
+sources: [raw/articles/2026-05-08_jaya-gupta_next-biggest-moat-in-ai.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, raw/articles/2026-06-12_jayagup10_openai-vs-anthropic-enterprise.md, raw/articles/2039441705586602134_The-Trillion-Dollar-Loop-B2B-Never-Had.md, raw/articles/2039737982576636294_Googles-20-Year-Secret-Is-Now-Available-to-Every-Enterprise.md]
+related: [concepts/organizational-moat, concepts/context-engineering/context-graph, concepts/token-to-outcome-attribution, concepts/company-vc-foundation-capital-context-graph-investor]
 ---
 
 # Jaya Gupta
@@ -26,7 +26,19 @@ Partner at **Foundation Capital**, leading early-stage investments across the en
 ## Notable Contributions
 
 ### Context Graphs (Jan 2026)
-Co-authored with Ashu Garg: *"AI's trillion-dollar opportunity: Context Graphs"* — introduced the concept that decision traces (the "why" behind the "what") form the structural advantage for next-generation AI agent companies. Widely cited across the AI industry.
+Co-authored with Ashu Garg: *"AI's trillion-dollar opportunity: Context Graphs"* — introduced the concept that decision traces (the "why" behind the "what") form the structural advantage for next-generation AI agent companies. Widely cited across the AI industry. See [[concepts/context-engineering/context-graph|Context Graph]] for the wiki concept page.
+
+### The Trillion Dollar Loop B2B Never Had (Apr 2026)
+Wrote the X article *"The Trillion Dollar Loop B2B Never Had"* (also syndicated as *"Google's 20-Year Secret Is Now Available to Every Enterprise"*) — argues that consumer platforms (Netflix, Meta, Amazon, TikTok, Google) compounded **behavioral traces** for two decades, while enterprise software never built an equivalent loop because enterprise decisions are multiplayer negotiations (sales, finance, legal, ops) that were harder to observe. Key framework:
+
+- **Decision traces vs behavioral traces**: Enterprise systems record end state, not reasoning — a discount field shows the final number, not why it was justified. The missing layer is decision lineage.
+- **Write path vs read path**: To capture decision traces you must be present when the decision is made (the approval, redline, escalation, agent proposal, human override) — incumbents (Salesforce, ServiceNow, Workday) and warehouses (Snowflake, Databricks) sit in the read path or after-the-fact ETL; systems-of-agents startups sit in the write path by default.
+- **Agents as instrumentation**: When a human edits an agent's proposal, tacit expertise becomes a structured signal — agent-mediated workflows cross the threshold where enough judgment becomes explicit to learn from.
+- **Permissioned inference**: Decision traces are too sensitive for ordinary access controls; the layer requires permissioned inference, not just permissioned retrieval.
+- **Three context graph axes**: operational (how the company tactically runs), customer-facing (sales/support/retention), and strategic (executive decisions) — each with distinct confidentiality and outcome signals.
+- **From retrieval to prediction**: Once graphs become dense, the game shifts from "how did we handle this last time?" to "if we structured the deal this way, what's likely to happen?" — grounded in the organization's own decision history.
+
+This is the most operational articulation of her [[concepts/context-engineering/context-graph|Context Graphs]] thesis — extending it from *why decision traces matter* to *who is architecturally positioned to capture them*. [[raw/articles/2039441705586602134_The-Trillion-Dollar-Loop-B2B-Never-Had]] [[raw/articles/2039737982576636294_Googles-20-Year-Secret-Is-Now-Available-to-Every-Enterprise]]
 
 ### Organizational Moat Theory (May 2026)
 Wrote *"The next biggest moat in AI"* — argued that in an era where products, interfaces, and technology converge and become copyable, **the shape of the company itself** (who you hire, who has power, how work is organized, what is high/low status) becomes the only durable competitive advantage. 3.2M views, 7K bookmarks within 24 hours.
@@ -43,7 +55,7 @@ Wrote *"Token Budget Wars"* — analyzed the emerging enterprise dynamics as inf
 - **Decision traces**: Argues that AI agent traces — every retrieval, tool call, retry, and human correction — become a durable organizational memory more valuable than cost reports.
 - **Enterprise transformation**: Predicts token-to-outcome attribution will arrive like ERP and BI did — as a CEO-driven program with new infrastructure.
 
-This article extends her earlier [[concepts/context-graphs|Context Graphs]] thesis into the operational measurement domain. See [[concepts/token-to-outcome-attribution]] for the full framework.
+This article extends her earlier [[concepts/context-engineering/context-graph|Context Graphs]] thesis into the operational measurement domain. See [[concepts/token-to-outcome-attribution]] for the full framework.
 
 ### Enterprise AI Adoption Patterns (Jun 2026)
 
@@ -69,5 +81,7 @@ Posted observations on OpenAI vs Anthropic enterprise positioning across Fortune
 
 ## See Also
 - [[concepts/organizational-moat]]
-- [[concepts/context-graphs]]
+- [[concepts/context-engineering/context-graph]]
+- [[concepts/token-to-outcome-attribution]]
+- [[concepts/company-vc-foundation-capital-context-graph-investor]]
 - Foundation Capital

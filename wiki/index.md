@@ -20,7 +20,7 @@
 - [[entities/agi-bot]] — AgiBot
 - [[entities/agibot-10000-units]] — Agibot 10000 Units
 - [[entities/agno]] — Agno — Open-source agent platform SDK and runtime (AgentOS); model/framework/cloud agnostic; multi-user sessions, RBAC, tracing (June 29)
-- [[entities/agreement-bug]] — Agreement is a Bug
+- [[entities/agreement-bug]] — Agreement is a Bug — NYK Builderz "structured disagreement" framework for Claude Code subagents; 11 parallel perspectives to surface blind spots
 - [[entities/ahmed-awadallah]] — Ahmed Awadallah — Principal Researcher at Microsoft Research AI Frontiers; ECHO terminal-agent RL, OmniParser, Explorer web agents, Phi-3
 - [[entities/ai-engineer-youtube]] — AI Engineer (YouTube Channel)
 - [[entities/ai21-labs]] — AI21 Labs
@@ -404,7 +404,7 @@
 - [[entities/jason-liu--rag-framework]] — Jason Liu — RAG Philosophy & Framework
 - [[entities/jay-alammar]] — Jay Alammar
 - [[entities/jay-mody]] — Educator and developer specializing in LLM internals — known for picoGPT (GPT-2 in 60 lines of NumPy) and clear expla...
-- [[entities/jaya-gupta]] — Jaya Gupta
+- [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner; Context Graphs, Organizational Moat, Token Budget Wars, decision traces (Trillion Dollar Loop)
 - [[entities/jayden-milne]] — Jayden Milne
 - [[entities/jeff-geerling]] — Jeff Geerling — Author and Raspberry Pi expert; writes on self-hosting, edge AI, local LLMs
 - [[entities/jeff-huber]] — Jeff Huber
@@ -680,7 +680,7 @@
 - [[entities/rehan-van-der-merwe]] — Rehan van der Merwe
 - [[entities/reiner-pope]] — Reiner Pope
 - [[entities/replicate]] — Replicate — Serverless GPU inference platform; Cog containerization for ML models
-- [[entities/richard-ngo]] — Richard Ngo
+- [[entities/richard-ngo]] — Richard Ngo — AI alignment researcher; scale-free theory (coalitional agency), belief webs, formal scientific epistemology, AI 2040 critique
 - [[entities/richard-susskind]] — Professor Richard Susskind CBE KC is President of the Society for Computers and Law, Special Envoy for Justice and AI...
 - [[entities/richard-sutton]] — Richard Sutton
 - [[entities/righto-com]] — Ken Shirriff

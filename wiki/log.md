@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-08] skeleton-enrich-daily — richard-ngo, jaya-gupta, agreement-bug L2→L3
+- **Enrich: [[entities/richard-ngo]] (L2→L3)** — 2025-2026年のMind the Future投稿7本を追加: On Pessimization (Aug 2025), Distributed vs Centralized Agents (Feb 2026), Aligning to Virtues (Feb 2026), Economic Efficiency Often Undermines Sociopolitical Autonomy (Mar 2026), Towards a Formal Scientific Epistemology (Jun 2026, Garrabrant induction), Agents as Webs of Beliefs (Jun 2026, belief webs / self-predictive actions / drives vs anchors / emergent agency), Selective Optimism: AI 2040 critique (Jul 2026, AI Futures Project consultant)。Key IdeasにBelief Webs・Emergent Agencyを追加、[[concepts/coalitional-agency]]との相互リンク、tagsにepistemology/philosophy-of-science/forecasting/governance追加。
+- **Enrich: [[entities/jaya-gupta]] (L2→L3)** — 未リンクだったX記事2本 (The Trillion Dollar Loop B2B Never Had / Googles 20-Year Secret, 2026-04-27) をsourcesに追加し、Decision Tracesフレームワーク (write path vs read path, permissioned inference, 3 context graph axes) のセクションを新設。壊れリンク [[concepts/context-graphs]] を [[concepts/context-engineering/context-graph]] に修正。tagsにvc/investor/enterprise-ai/knowledge-graph追加。
+- **Enrich: [[entities/agreement-bug]] (L2→L3)** — multi-agent-consensus-patternsとの対比 (structured disagreement vs agreement-seeking consensus) を追加、Graph Structure Queryセクション新設、related frontmatterに6概念リンク追加。
+- index.mdの3エントリを詳細説明付きに更新。sources: mindthefuture.info archive + Jina Reader scraping (2026-08-08)。
+
+
 ## [2026-08-08] dreaming wiki-ingest | Downstream verification + ElevenLabs ElevenReader enrichment
 - Downstream confirmation of upstream saturation pass (commit 4ede49f3, archive-only). Output file 2026-08-08_18-18-14.md (4,655 lines) cross-checked — its cluster analysis matches the committed log entry; no unpersisted second pass.
 - Triage JSON (18:16): 29 decisions, 0 takes, 1 reference, 28 skips. Deep Sleep verification gate: reference candidate verified against entity page content.
