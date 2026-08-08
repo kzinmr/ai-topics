@@ -3,7 +3,7 @@ title: Dan Luu
 description: Software reliability engineer and data analyst known for systematic incident analysis and empirical studies of tech company failure modes.
 type: entity
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-08-08
 aliases:
   - danluu
   - daniel-luu
@@ -12,6 +12,9 @@ tags:
   - infrastructure
 sources:
   - raw/articles/danluu.com--cache-incidents--1d05e743.md
+  - raw/articles/danluu.com--startup-options--a3b4b12e.md
+  - raw/articles/danluu.com--ballmer--7af5f7cf.md
+  - raw/articles/danluu.com--julialang--efa2d4b6.md
   - https://danluu.com/cache-incidents/
   - https://danluu.com/
 ---
@@ -55,6 +58,14 @@ The cache failure modes documented by Luu are highly relevant to modern AI infra
 - **Distributed inference**: Multi-node AI serving architectures face the same cache consistency and host ejection challenges documented in Twitter's memcached infrastructure
 - **Prompt caching**: AI systems increasingly cache prompts and intermediate results, introducing similar staleness and inconsistency risks
 - **Capacity planning**: The gap between announced and operational capacity that Luu documented in Twitter's infrastructure parallels current debates about AI data center buildout claims
+
+## Notable Essays (Non-AI)
+
+Luu's blog spans topics beyond reliability engineering. These essays are general-interest (compensation, tech leadership, programming languages) — catalogued here for author completeness; they are NOT AI/LLM-focused content and were triaged as non-takes by the raw-backlog pipeline.
+
+- **[Startup options v. cash](https://danluu.com/startup-options/)** (2013, updated 2020) — Argues startup equity packages rarely beat cash+public-equity comp. Covers the risk-reward proportionality fallacy (only undiversifiable risk earns a premium; VCs diversify, employees don't), preferred vs common stock (liquidation preferences, anti-dilution — Mayhar dilution example), Black-Scholes inapplicability to startup options, strike-price/public-valuation misrepresentations, ~5% exercise rates, ISO/AMT/QSBS tax treatment, and debunks retention/incentive-alignment rationales (Netflix/Headlands cash-pay counterexamples). 2020 update: investing ~$25k/yr in seed rounds is strictly superior to early-employee equity on risk-adjusted return.
+- **[Steve Ballmer was an underrated CEO](https://danluu.com/ballmer/)** (2024) — Revisionist analysis of Microsoft under Ballmer: revenue $14–22B → $83B, $27B profit on exit, and deep long-term bets (Azure, Office 365, Bing, Xbox, enterprise sales org) that set up Nadella's success. Documents the antitrust-constrained context (Microsoft chose not to kill Google for PR reasons) and internal-politics cleanup. Appendix covers TypeScript, vscode, LINQ, and Sumit Gulwani's program-synthesis work behind Excel autocomplete.
+- **[A review of the Julia language](https://danluu.com/julialang/)** (2015, updated 2022) — Critique of Julia's correctness culture: 4 core-language bugs in a half-hour script, plotting regressions, non-deterministic exception handling, weak testing (FactCheck barely used; coverage tool only counted functions with non-zero coverage), slow git-backed package manager, benchmark gaming, and contributor barriers. The 2022 update documents a continued stream of silent-wrong-result bugs — including incorrect gradients in Zygote/ReverseDiff.jl AD (users switching to PyTorch/JAX) — and co-creator dismissal patterns ("illegitimate / fixed soon / already fixed").
 
 ## References
 

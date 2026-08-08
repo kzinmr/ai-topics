@@ -1,6 +1,12 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-08] raw-backlog-ingest (04:00) | Enrich 2件 (hex-technologies + dan-luu) + Skip 1件
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 04:00, run 20260808T040046Z)。Takes=0, References=0, Skips=0 — 内訳: Enrichment 2件 (hex-technologies, dan-luu) + Skip 1件。
+- **Enrich: [[entities/hex-technologies]]** — 「Notebook Agent Prompting Guide (September 2025)」セクション追加。Alex Brumas (Product) 著・2025-09-24公開。4 capabilities (agentic search / building a plan / executing analysis / summarizing results)、メンタルモデル (structured prompting Context/Task/Guidelines/Constraints、conversational prompting、meta-prompting plan→feed-back、@taggingによるcontext scoping、分析手法明示、business-impact framing、Workspace rules file=組織レベル注入コンテキスト、expert consultantとしての扱い)、テンプレート (data discovery、notebook cleanup & dependency mapping、cross-project prompt chaining/context seeding等)。sources追加、updated: 2026-08-08。
+- **Enrich: [[entities/dan-luu]]** — 「Notable Essays (Non-AI)」セクション追加。3本の非AIエッセイを著者カタログとして収録: (1) Startup options v. cash (2013/2020更新: リスク-リワード比例の誤謬、preferred vs common stock、Black-Scholes不適用、ISO/AMT/QSBS税制、シード投資$25k/yr優位論)、(2) Steve Ballmer was an underrated CEO (2024: Azure/Office 365/Bing/Xbox/エンタープライズ営業、反トラスト制約、TypeScript/vscode/LINQ)、(3) A review of the Julia language (2015/2022更新: コア言語のバグ、例外処理、テスト文化、Zygote/ReverseDiff.jlの誤勾配=MLツール関連、co-creatorの否定パターン)。sources追加、updated: 2026-08-08。
+- **Skip: berthub.eu「AI: Overwegingen voor wie erover gaat」** — entities/berthub-eu.md に「AI Policy Analysis (July 2026)」セクションとして既に完全カバー済み (sources frontmatterに同一raw記事パス記載、本文に要旨全文反映済み)。
 ## [2026-08-08] raw-backlog-ingest (00:00) | Take 2件 (boris-cherny + ed-zitron) + Skip 3件
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 00:00, run 20260808T000017Z)。Takes=2, References=0, Skips=3。

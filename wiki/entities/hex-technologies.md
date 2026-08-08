@@ -2,13 +2,14 @@
 title: "Hex Technologies"
 type: entity
 created: 2026-05-08
-updated: 2026-06-03
+updated: 2026-08-08
 tags:
   - company
 aliases: ["Hex", "Hex Tech"]
 sources:
   - https://hex.tech
   - raw/articles/2026-05-23_hex-technologies_evaluate-data-agents.md
+  - raw/articles/2026-05-10_hex-technologies_notebook-agent-prompting-guide-agentic-analytics.md
 ---
 
 # Hex Technologies
@@ -37,7 +38,29 @@ Hex is an AI analytics platform that combines collaborative notebooks, conversat
 - **Hex CLI**: Terminal-based analytics control.
 - Graph-based execution model for reproducibility at scale.
 
+### Notebook Agent Prompting Guide (September 2025)
 
+Authored by Alex Brumas (Product), September 24, 2025 (Olivia Koshy was PM of the team that built the Notebook Agent). The guide codifies prompting patterns for Hex's Notebook Agent — an "analytical partner" that knows data-project best practices and is "really good at writing SQL, Python, and configuring viz." The author's framing explicitly transfers vibe-coding learnings (from Lovable, a Hex customer) to agentic analytics.
+
+**Four key capabilities:**
+- **Agentic search** — discovers the right data sources without remembering exact table names/schemas (planned: search across docs, projects, components)
+- **Building a plan** — translates business questions into a structured analytical approach
+- **Executing analysis** — writes and runs code to transform, visualize, and model data
+- **Summarizing results** — explains insights in plain language
+
+**Mental models for prompting:**
+- **Structured prompting**: Context / Task / Guidelines / Constraints template (e.g., "You are analyzing customer transaction data to help improve marketing targeting...")
+- **Conversational prompting**: DM-style prompts that implicitly carry the same structure — fine for most interactions
+- **Meta-prompting**: the biggest piece of advice — have the agent craft a concrete plan, critique/refine it, then feed the plan back to the agent for step-by-step execution
+- **Scoping context**: deliberately scope the agent with `@` tags — `@customer_transactions` table references or `[@Prophet Model Components Analysis]` cell references focus the agent on the right context
+- **Specify analysis methods**: state the model/technique explicitly (e.g., "Build a random forest classifier... using feature importance") or ask for suggestions first, then narrow down
+- **Business-impact framing**: tie analysis to decisions (e.g., "which channels to increase investment in for our Q4 campaign planning")
+- **Workspace rules file**: organization-level injected context applied to every agent interaction — PII handling, source-of-truth tables, business definitions (MRR, churn, LTV), required analysis patterns (YoY+MoM together, 13-week rolling forecast baseline), data quality warnings (duplicate rows, delayed feeds), stakeholder preferences, industry benchmarks
+- **Treat the agent like an expert consultant**, not a code jockey — ask it for advice, industry standards, and technique explanations
+
+**Copy-paste template categories:** data discovery, notebook cleanup & dependency mapping (orphaned/duplicative cell detection), analyzing teammates' work, **cross-project prompt chaining** (have the agent generate a portable context prompt in one notebook, paste it into a new notebook to seed context), and template-replication prompts (k-means/hierarchical clustering, LTV modeling, geospatial viz, EDA, e-commerce KPIs, cohorts, market basket analysis).
+
+Source: raw/articles/2026-05-10_hex-technologies_notebook-agent-prompting-guide-agentic-analytics.md (published 2025-09-24)
 
 ### Repos as Agent Context (May 2026)
 
