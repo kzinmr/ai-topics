@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-08-01
+updated: 2026-08-08
 tags:
   - company
   - voice-ai
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-08-01_elevenlabs_what-is-multilingual-transcription.md
   - raw/articles/2026-07-30_elevenlabs_ai-virtual-receptionist.md
   - raw/articles/2026-07-30_elevenlabs_valiant-finance.md
+  - raw/articles/2026-08-08_elevenlabs_how-elevenreader-used-elevenagents.md
 ---
 
 # ElevenLabs
@@ -361,6 +362,30 @@ Source: raw/articles/2026-07-30_elevenlabs_ai-virtual-receptionist.md
 - **In-hours agent**: Developing an agent to reconnect with historically unassisted customers against expanded lending options (90+ partners)
 
 Source: raw/articles/2026-07-30_elevenlabs_valiant-finance.md
+
+### ElevenReader Voice Chat Case Study — ElevenAgents on a Consumer Product (August 2026)
+
+ElevenLabs published a case study (Aug 7, 2026) on **ElevenReader Voice Chat**: an in-app conversational agent that lets readers talk to the same voice narrating their audiobook — asking about a character, clarifying a plot point, or digging into a theme without leaving the story. The entire experience is built on **ElevenAgents** with the native mobile SDKs, and is a flagship example of ElevenLabs deploying its own agent platform on its own consumer product.
+
+**Adoption metrics:**
+- **50,000+ unique users** engaged with Voice Chat across a dozen languages since launch
+- **24% increase in listening time** — comparing each user's listening in the month before vs after their first conversation
+- **78% book completion rate** for users with 5+ Voice Chat sessions; strong correlation between Voice Chat engagement and completion rate
+
+**Architecture & design:**
+- Native mobile agent SDKs (Android/iOS) integrated directly into the ElevenReader app; text-based conversation supported with seamless voice/text switching — users keep listening while chatting side-by-side
+- System prompt defines the agent as a "reading companion": helps readers understand, enjoy, and reflect; gives accurate insight without spoiling unless asked
+- **Context variables** tied to the reader's current position — book title, description, author, book summary, current chapter, and current paragraph — enable location-specific answers instead of generic whole-book responses
+- **Planned**: tool calls so the agent can control playback directly (jump to a chapter, resume narration after a conversation ends)
+
+**Guardrails & evaluation:**
+- Guardrails keep the agent from going off-topic; the team actively tried to break their own guardrails inside the app before launch and hand-reviewed conversations in the first days to strengthen them (example: an off-topic "fast food" question was redirected back to the *Treasure Island* story)
+- Usage is classified by reader intent, conversation theme, and positive-interaction criteria — not just conversation volume
+- **Top query: summarize the plot (40% of conversations)**; hundreds of weekly conversations on quote analysis from specific passages — the reason location context matters
+
+**Significance**: Part of ElevenLabs' thesis that content and IP experiences become interactive (comparing to MasterClass-style "speak with a well-known coach" experiences), with audiobooks expected to form deeper bonds between readers, authors, and even characters. See [[concepts/voice-agent-evaluation]] for the related evaluation-methodology coverage.
+
+Source: raw/articles/2026-08-08_elevenlabs_how-elevenreader-used-elevenagents.md
 
 ---
 

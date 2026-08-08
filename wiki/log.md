@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-08] dreaming wiki-ingest | Downstream verification + ElevenLabs ElevenReader enrichment
+- Downstream confirmation of upstream saturation pass (commit 4ede49f3, archive-only). Output file 2026-08-08_18-18-14.md (4,655 lines) cross-checked — its cluster analysis matches the committed log entry; no unpersisted second pass.
+- Triage JSON (18:16): 29 decisions, 0 takes, 1 reference, 28 skips. Deep Sleep verification gate: reference candidate verified against entity page content.
+- **Enrich: [[entities/elevenlabs]]** — 「ElevenReader Voice Chat Case Study (August 2026)」セクション追加。ElevenAgentsを自社コンシューマ製品にデプロイした旗艦事例: 50,000+ unique users (12言語)、初回会話前後比較で24%リスニング時間増、5+ Voice Chatセッション利用者で78%ブック完了率、ネイティブモバイルSDK (Android/iOS) + 音声/テキスト切替、リーディングコンパニオンsystem prompt、現在位置コンテキスト変数 (書名・著者・あらすじ・現在チャプター・現在パラグラフ)、再生制御ツールコール予定、ガードレール自己破壊テスト+初日手動レビュー (Treasure Island例)、会話意図/テーマ/ポジティブ相互作用で分類、上位クエリはプロット要約 (40%)、引用分析クエリが週数百件。sourcesに raw/articles/2026-08-08_elevenlabs_how-elevenreader-used-elevenagents.md 追加、updated: 2026-08-08。
+- Archive: already committed upstream (29 candidates, 26 new, total 2,401 URLs) — not re-run.
+
+
 ## [2026-08-08] dreaming | Saturation pass — Takes=0, 1 reference, 28 skips
 - Dreaming cycle 2026-08-08 18:10 UTC. Total articles collected: 0 (RSS/newsletter pipelines), 207 recent raw articles on disk.
 - **Saturation confirmed**: Today's pipelines (blog-triage 20件, raw-backlog-ingest ×4 runs, active-crawl 4件, watchdog auto-fix 5件) processed all substantive articles from Aug 7-8.
