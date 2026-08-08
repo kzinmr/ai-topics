@@ -1,7 +1,7 @@
 ---
 title: "Dynamic Workflows in Claude Code"
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-08-08
 type: concept
 tags:
   - claude-code
@@ -12,7 +12,9 @@ tags:
   - workflow
   - orchestration
   - anthropic
-sources: [raw/articles/2026-06-02_trq212_dynamic-workflows-claude-code.md]
+sources:
+  - raw/articles/2026-06-02_trq212_dynamic-workflows-claude-code.md
+  - raw/articles/ycrootaccess.com--p-boris-cherny-building-claude-code--f3769a9e.md
 ---
 
 # Dynamic Workflows in Claude Code
@@ -102,6 +104,19 @@ Dynamic workflows integrate with existing Claude Code features:
 ## When NOT to Use
 
 Dynamic workflows are not needed for every task and use significantly more tokens. Regular coding tasks that don't require multi-agent orchestration, adversarial verification, or parallel decomposition do not benefit from workflows. The key question: **does this task really need more compute?**
+
+## Boris Cherny's Framing (August 2026)
+
+In his Y Combinator Startup School 2026 interview, Claude Code creator [[entities/boris-cherny|Boris Cherny]] described dynamic workflows in two complementary framings that extend the technical description above:
+
+- **"Essentially an algebra for agents"** — the workflow runtime (Bun sandbox VM with Claude orchestrating) provides primitives to run agents in **sequence** or **parallel**, compose them into stages (fan out → verify/summarize → fan out again), and orchestrate dozens, hundreds, or thousands of agents productively
+- **"A new form of test time compute"** — historically scaling laws were a function of network size, training data, and flops; recently test-time compute (tokens generated) was added; dynamic workflows are "a new way to orchestrate test time compute" — massively ramping the compute applied to a hard task beyond a single context window
+
+**Production validation — the Bun Zig→Rust rewrite**: the Bun team had Claude fuzz its codebase for memory leaks for a long period, then used a single dynamic-workflow prompt to **rewrite the entire 100K+ line Bun codebase from Zig to Rust over 11 days**. The workflow ran with steering but no previous model could do it; the result is now in production as the runtime Claude Code itself runs on. Human estimate: over a year of engineering work.
+
+**Scale datapoint**: a single task (rewriting the Electron desktop app in Swift via Claude Tag, with macOS VM + pixel-by-pixel verification) spawned **thousands of agents** over ~2 weeks.
+
+**Adjacent pattern — loops and routines**: for repetitive tasks that don't share context (but may share memory), Claude Code uses **loops** (local cron) and **routines** (cloud-hosted). Anthropic runs ~20-30 routines/day across its own codebases (dead-code cleanup, experiment shipping, test coverage, "abstraction police") — described by Cherny as the path to fully automated app maintenance, distinct from dynamic workflows' one-task-many-chunks model.
 
 ## Related Concepts
 

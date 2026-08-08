@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-08-06
+updated: 2026-08-08
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -43,6 +43,7 @@ sources:
   - raw/articles/wheresyoured.at--the-openai-bubble--eb7fc2d4.md
   - raw/articles/wheresyoured.at--the-more-you-buy-the-more-you-lose--890d90aa.md
   - raw/articles/wheresyoured.at--the-ai-demand-bubble--3cf6131f.md
+  - raw/articles/wheresyoured.at--four-horsemen-of-the-aipocalypse--4b0fae4c.md
 ---
 
 # Ed Zitron
@@ -789,6 +790,40 @@ Key figures from the disclosure:
 Zitron's framing: *"It's impossible to ignore that Microsoft has spent $270 billion in capital expenditures to prop up a single client, and that its overall AI plays have failed to create any significant revenue growth or opportunities."* He positions this as the strongest evidence yet for his [[concepts/ai-bubble-economics]] thesis — the hyperscalers have demolished free cash flow to support a customer base of two labs that cannot afford their compute bills.
 
 Source: [[raw/articles/wheresyoured.at--news-microsoft-disclosures-suggest-openai-sales-account-for---1a97a7c8.md]]
+
+## Four Horsemen of the AIpocalypse (Late April 2026)
+
+In "[Four Horsemen of the AIpocalypse](https://www.wheresyoured.at/four-horsemen-of-the-aipocalypse/)" (late April 2026), Zitron organized his AI-bubble reporting into four "pale horses" — signs the bubble is unwinding — with Anthropic's capacity/quality crisis as the lead story. The piece is a synthesis of his recurring themes (circular economy, subsidized subscriptions, capacity math) plus several new data points.
+
+### Pale Horse 1: Anthropic's Availability Crisis
+
+- Anthropic uptime over the prior 90 days (as of writing): **Claude Chatbot 98.79%**, platform/console 99.14%, API 99.09%, Claude Code 99.25% — vs the four-nines (99.99%) standard; 98.79% equals ~4.5 days/year of downtime. Notably **Claude for Government sits at 99.91%**
+- WSJ reported outages since mid-February were driving enterprise clients to competitors; Retool CEO David Hsu switched from Opus 4.6 to OpenAI for his agent product: "Anthropic has just been going down all the time"
+- **Opus 4.7 regression controversy**: Reddit post "Claude Opus 4.7 is a serious regression, not an upgrade" with 2,300 upvotes; an X post suggesting 4.7 wasn't an improvement over 4.6 got 14,000 likes; informal tests showed 4.7 saying there were two Ps in "strawberry" and refusing to cross-reference ("being lazy"); users reported résumés being rewritten with new schools/last names. Boris Cherny responded that "adaptive thinking lets the model decide when to think, which performs better"
+- Zitron's framing: a company worth hundreds of billions that raised **$30B** can't keep services online, appears to make products worse, and refuses to address it — users complaining about models getting "dumber" go back to 2024
+
+### Pale Horse 2: Capacity Plans Don't Add Up
+
+- Anthropic's expansion relies on **Broadcom deals "starting in 2027"**, near-theoretical capacity with **Hut8** ("does not appear to have ever built an AI data center"), and **CoreWeave** (only ~850MW active power / ~653MW compute at end of 2025, up from 360MW at end of 2024; still not at full capacity for its 2025 OpenAI deals)
+- **Claude Mythos held back by capacity, not safety** (per FT): sources suggested the limited release was because Anthropic couldn't reliably serve the model — "anyone in the media who bought the line of shit from Dario Amodei that this was 'too dangerous to release' is a mark" (Zitron also pointed to the Claude Code source-code leak as evidence Mythos wasn't being used to check its own security)
+- **Data center construction math**: of 114GW due by end of 2028, only **15.2GW is under construction** (Sightline Climate), of which OpenAI's Stargate accounts for 4.6GW (Abilene 1.2GW, Shackelford 1.4GW, Dona Ana 1GW, Port Washington 1GW) with at least another ~4GW reserved for Anthropic via Microsoft/Google/Amazon
+- **NVIDIA sales vs installable capacity**: $285.7B of GPUs (71,429 NVL72 racks at ~$4M each) could be installed in the 11.2GW of critical IT under construction — vs NVIDIA's claimed $500B in 2025-26 orders and **$1T in sales through 2027**. "Why anyone is buying more GPUs, as there's nowhere to fucking put them." Quanta's inventory spiked from $10.54B (Q3 2025) to $16.3B (Q4 2025) — a leading indicator of GPU pile-up
+
+### Pale Horse 3: The Cost Crisis Reaches Customers
+
+- **Goldman Sachs report**: inference costs in engineering approaching **~10% of headcount cost**, "on track to be on par with headcount costs in the next several quarters"
+- **Uber**: CTO Praveen Neppalli Naga said Claude Code usage maxed out the full-year AI budget "a few months into 2026" ("I'm back to the drawing board"); ~**11% of real backend code updates are written by AI agents** built on Claude Code, up from a fraction of a percent three months earlier
+- **Spotify math exercise**: if Spotify (3,000 engineers at ~$192K median) spent 10% of engineering headcount on inference (~$57.6M), that's ~4.1% of its FY2025 R&D; at 100% it would approach half the R&D budget
+- **Token-based billing wave**: Microsoft moving GitHub Copilot to token-based billing and suspending new paid signups (costs nearly doubled week-over-week since January; Copilot at ~$1.08B revenue end of 2025); Anthropic already moved enterprise customers to a flat $20/seat plus per-token rates. Prediction: by end of 2026, a majority of AI services move to token-based billing
+
+### Pale Horse 4: Revenue Fraud & "Contracted ARR"
+
+- Per founder Scott Stevenson, **50%+ of enterprise AI startups** pump values with "contracted ARR": 3-year enterprise deals with discounted year 1 booked at full ARR, plus a 12-month opt-out — "It's not actually a 3 year contract"
+- Industry-wide revenues: **~$65B last year including neocloud/hyperscaler compute** (OpenAI + Anthropic theoretical revenues $13.1B + $4.5B); Zitron calls AI startups' revenue disclosures misleading, citing Anthropic CFO Krishna Rao's affidavit (revenue "exceeding" $5B through March 9, 2026) vs annualized figures
+- Cursor reportedly at **$6B annualized revenue** ($500M/month) and "gross margin positive" — which Zitron doubts given its $3B+ raise and reported $2B more
+- Conclusion — "This Is The Era of AI Hysteria": agent hype (Aaron Levie's screeds), theoretical gigawatts, and NVIDIA selling more GPUs than can possibly be installed; "AI does not provide even an iota of the benefits — economic or otherwise — to justify its ruinous costs"
+
+Source: [[raw/articles/wheresyoured.at--four-horsemen-of-the-aipocalypse--4b0fae4c]]
 
 ## Cross-References
 

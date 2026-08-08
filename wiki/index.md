@@ -101,7 +101,7 @@
 - [[entities/block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-...
 - [[entities/boaz-barak]] — Boaz Barak — Harvard CS professor; theoretical CS, cryptography, AI safety, co-author of 'Computational Complexity: A Modern Approach' (June 27)
 - [[entities/bogdanthegeek-s-blog]] — Bogdan Ionescu (BogdanTheGeek)
-- [[entities/boris-cherny]] — Boris Cherny
+- [[entities/boris-cherny]] — Boris Cherny; enriched with YC Startup School 2026 interview — Opus 5 prompt-injection defense (3 layers), 80% system prompt ablation, product overhang, dynamic workflows as "algebra for agents", self-maintaining routines (Aug 8)
 - [[entities/boris-cherny--claude-code-development]] — Boris Cherny — Claude Code Development Story
 - [[entities/boris-cherny--core-ideas]] — Boris Cherny — Core Ideas & Philosophy
 - [[entities/boris-cherny--key-work]] — Boris Cherny — Key Work & Impact
@@ -246,7 +246,7 @@
 - [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with "The next big breakthrough" article — RLVR generalization limits, OPSD/dreaming as 4th scaling axis, computer use grindability, 35M× KV cache vs weight density gap (June 27)
 - [[entities/dylan-patel]] — Dylan Patel
 - [[entities/dynomight-net]] — Dynomight
-- [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1); The AI Demand Bubble — Barclays/UBS/Wells Fargo analyst concentration data (Aug 4)
+- [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1); The AI Demand Bubble — Barclays/UBS/Wells Fargo analyst concentration data (Aug 4); Four Horsemen of the AIpocalypse — Anthropic uptime/Opus 4.7 regression, 15.2GW construction math, contracted-ARR fraud (Aug 8)
 - [[entities/eleanor-berger]] — Eleanor Berger
 - [[entities/eleutherai]] — Grassroots research collective turned non-profit that started the modern open-source AI movement
 - [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24)
@@ -1611,7 +1611,7 @@
 - [[concepts/dual-process-theory]] — Dual Process Theory (AI)
 - [[concepts/durable-execution]] — Durable Execution — Fault-tolerant, stateful execution model for long-running agent workflows
 - [[concepts/dynamic-software]] — The paradigm shift from static (deterministic, hard-coded) software to dynamic (model-driven, non-deterministic, agen...
-- [[concepts/dynamic-workflows]] — Dynamic Workflows in Claude Code
+- [[concepts/dynamic-workflows]] — Dynamic Workflows in Claude Code; enriched with Boris Cherny "algebra for agents" framing + Bun Zig→Rust production rewrite (Aug 8)
 - [[concepts/eagle-3-1]] — EAGLE 3.1
 - [[concepts/earendil]] — Earendil Inc. — AI agent infrastructure company (Armin Ronacher, Colin); Pi coding agent, Absurd durable execution; session portability advocacy
 - [[concepts/ecs-fargate-scaling]] — ECS Fargate Scaling

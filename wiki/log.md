@@ -1,6 +1,15 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-08] raw-backlog-ingest (00:00) | Take 2件 (boris-cherny + ed-zitron) + Skip 3件
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 00:00, run 20260808T000017Z)。Takes=2, References=0, Skips=3。
+- **Take: [[entities/boris-cherny]]** — 「Startup School 2026 Interview (August 2026)」セクション追加。Opus 5のARC AGI 3 30%・プロンプトインジェクション耐性（アラインメント+Crysola機械的可解釈性分類器+auto mode分類器の3層）・システムプロンプト80%削除とsimple modeアブレーション・product overhang/unhobbling・dynamic workflowsを「algebra for agents」「新たなtest time compute」と定義・Bun Zig→Rust 11日書き換え（100K+行、本番稼働）・loops/routinesによるClaude自己メンテナンス（abstraction police等20-30 routines/日）・Claude Tag 2週間Electron→Swift書き換え。sources追加、updated: 2026-08-08。
+- **Take: [[entities/ed-zitron]]** — 「Four Horsemen of the AIpocalypse (Late April 2026)」セクション追加。4つのpale horse: (1) Anthropic可用性危機（Chatbot 98.79%等のuptime、Opus 4.7回帰論争: Reddit 2,300 upvotes/「strawberry」2 P問題/adaptive reasoning、Boris Cherny反論）、(2) 容量計画の矛盾（Broadcom 2027/Hut8/CoreWeave 850MW、Mythosが容量制約で保留というFT報道、114GW中15.2GWのみ建設中、NVIDIA $285.7B GPU vs $1T売上）、(3) コスト危機（Goldman 10% headcount、Uber年間予算使い切り+11%バックエンド更新がAI、Spotify試算、トークン課金移行）、(4) contracted ARR詐欺（Scott Stevenson、50%+のAIスタートアップ）。sources追加、updated: 2026-08-08。
+- **Enrich: [[concepts/dynamic-workflows]]** — 「Boris Cherny's Framing (August 2026)」セクション追加。algebra for agents・新たなtest time compute枠組み、Bun Zig→Rust本番書き換え、loops/routinesとの区別。sources追加、updated: 2026-08-08。
+- **Skip (3件)**: dario-amodei Policy on the AI Exponential（[[entities/dario-amodei]]に完全収録済み）、openai-developers-blog skills-agents-sdk（[[concepts/agent-skills]] OSS Maintenance Case Studyに収録済み: 457 PRs等）、filfre.net Omikron（非AIビデオゲーム史）。
+- **index.md**: boris-cherny, ed-zitron, dynamic-workflows の3エントリ説明更新（ページ数変動なし）。
+- **Tracking**: processed_raw_articles.json に5記事を status=done/decision 登録（再選択防止）。
 ## [2026-08-07] x-bookmarks-ingest | 1 bookmark → SIE (multi-model GPU serving) + 2 entities + concept enrichment
 
 - **Bookmark**: X Article "How to serve 5 models on one GPU (100% open-source)" by Superlinked (2026-08-05). Full article text available via `article.plain_text`.

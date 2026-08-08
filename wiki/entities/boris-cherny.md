@@ -2,7 +2,7 @@
 title: Boris Cherny
 type: entity
 created: 2026-04-13
-updated: 2026-07-25
+updated: 2026-08-08
 tags:
   - person
   - x-account
@@ -17,6 +17,7 @@ tags:
 sources:
   - raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md
   - raw/articles/simonwillison.net--2026-jul-25-boris-cherny--d1edc7f3.md
+  - raw/articles/ycrootaccess.com--p-boris-cherny-building-claude-code--f3769a9e.md
 ---
 
 
@@ -296,6 +297,62 @@ ultracode  orchestrate sub-agents to ship the feature  # 2 · fan out
 → cloud / desktop app                                  # 4 · close the laptop
 → chrome ext · sim MCP · live server                   # 5 · self-verify, then halt
 ```
+
+## Startup School 2026 Interview (August 2026)
+
+In an interview with Diana Hu at Y Combinator Startup School 2026 (published Aug 2026, fresh off the Opus 5 launch), Boris discussed how the Claude Code team rebuilds the harness for every new model, Opus 5's safety properties, and what "building products on an accelerating substrate" means. Key points:
+
+### Opus 5: Prompt-Injection Resistance & Long-Running Autonomy
+
+- **ARC AGI 3 score of 30%** (previous best was low single digits / low teens) as a headline capability jump
+- Opus 5 can run **for days/weeks/months** with Auto Mode — "you don't even need scaffolding... it just won't stop"
+- **Prompt injection resistance** ("cannot demonstrate prompt injection anymore") built from three layers:
+  1. A **well-aligned model** (three years of alignment research; resistance present since Opus 4.7/4.8 and Sonnet 5)
+  2. A **prompt injection classifier** run on all traffic, based on **Crysola's mechanistic interpretability** work — literally watching neurons that "light up" when prompt injection happens
+  3. The **auto mode classifier**
+- This changes harness/agent/product design: instructions read on the internet no longer trigger destructive actions
+
+### "Press Delete": The 80% System Prompt Ablation
+
+- Claude Code **deleted over 80% of its system prompt** for Opus 5 — most of it corrected behaviors the model now "just does"
+- Every model release triggers an **ablation**: delete the system prompt, then bring it back line-by-line to measure each line's impact; the same process applies to tools ("we unship tools all the time")
+- **Simple mode** (`CLAUDE_CODE_SIMPLE=1` env var) deletes ALL system prompts including tool prompts — used as an ablation. Findings: the model is "a little bit more intelligent" without the prompts, but the prompts are kept for product behavior
+- Advice to users: every six months, delete your CLAUDE.md, skills, and hooks — "see what the model does and it might surprise you"
+- **Rebuilding rule**: run the product, see where it repeatedly stumbles, add instructions back only then — "don't guess what instruction the model needs"
+
+### Product Overhang / Unhobbling
+
+- **Hobbling** = product getting in the way of model capability; **product overhang** = capabilities the *current* model has that no product elicits yet
+- Claude Code's origin story as overhang: Sonnet 3.5 could write entire files, but existing products only did single-line autocomplete → the simplest possible harness (full terminal access) unlocked it
+- Argues there is "so much product overhang" today that startups are not yet capturing; examples: rewriting any codebase between languages, and the viral internal discovery that Opus 5 can **draw with OpenCV** (portraits, animals, landscapes) despite never being trained to draw
+- Recommendation: give the model **slightly harder tasks than you think it can do** — describe the task, guardrails, and exit criteria, then "let the model cook"
+
+### Dynamic Workflows as "Algebra for Agents"
+
+- Dynamic workflows are described as **"essentially an algebra for agents"** — primitives to run agents in sequence or parallel inside a Bun sandbox VM, orchestrated by Claude itself
+- Framed as **"a new form of test time compute"** — a way to ramp up test-time compute far beyond a single context window
+- **Bun Zig→Rust rewrite**: the Bun team had Claude fuzz for memory leaks, then threw a "rewrite it" test at each new model; starting with Fable the model could do it. One dynamic workflow prompt, 11 days, **rewrote the entire 100K+ line Bun codebase from Zig to Rust** — now in production as what Claude Code runs on. "This would have taken over a year" for human engineers
+- Spawning scale: one task can spawn **thousands of agents** (a two-week Electron→Swift desktop app rewrite via Claude Tag spawned thousands)
+
+### Claude Maintaining Itself: Loops & Routines
+
+- **Loops** = local cron jobs for Claude; **routines** = same but cloud-hosted (close your laptop)
+- Anthropic now runs **20-30 routines per day across all Claude Code codebases** (CLI, iOS, Android, desktop):
+  - Daily dead-code cleanup ("one sentence prompt — it just figured it out")
+  - Shipping fully-rolled-out experiments
+  - Writing tests for uncovered areas; deleting useless tests added by older models
+  - **"Abstraction police"**: finding nearly-duplicated abstractions across codebases and unifying them
+- "Hundreds of agents every day, sometimes thousands... doing the work of dozens or hundreds of engineers" — the path to fully automated app maintenance
+- Example task: rewrite the Electron desktop app in Swift via Claude Tag, run it in a macOS VM (GitHub runner), screenshot and compare **pixel by pixel** against the original — "don't stop until you're done"
+
+### Coding Is (Almost) Solved — and What CS Students Should Still Learn
+
+- Caveat: coding is solved **for the kind of coding he does** — deep systems code, distributed systems, and pixel-level UI verification still struggle
+- The top-1% skill is **being empirical**: forget priors about past models, look at where the model struggles, adjust. Verification ("give Claude a way to verify its work") is the single most important thing people get wrong
+- CS students: learn to *apply* CS — build startups, develop design sense, talk to users; "learn how to apply it" alongside the theory. Boris's own origin: learned to code on TI-83 calculators (BASIC → assembly) to cheat on math tests
+- Promo note: Startup School attendees received **Max 20X** accounts
+
+Source: [[raw/articles/ycrootaccess.com--p-boris-cherny-building-claude-code--f3769a9e]]
 
 ## Related
 
