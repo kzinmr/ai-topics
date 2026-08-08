@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-08] dreaming | Saturation pass — Takes=0, 1 reference, 28 skips
+- Dreaming cycle 2026-08-08 18:10 UTC. Total articles collected: 0 (RSS/newsletter pipelines), 207 recent raw articles on disk.
+- **Saturation confirmed**: Today's pipelines (blog-triage 20件, raw-backlog-ingest ×4 runs, active-crawl 4件, watchdog auto-fix 5件) processed all substantive articles from Aug 7-8.
+- **Already covered (spot-checked)**: Dwarkesh continual learning (continual-learning.md L6+), OpenAI HF Black Hat timeline (openai-huggingface-incident-july-2026.md), Ed Zitron NVIDIA Part 2 (ed-zitron.md Winstar/Lucent), Prime Agent (prime-agent.md), Oracle OpenJDK ban (ai-generated-code-policies.md), Giles Thomas Chinchilla check (gilesthomas.md L70+), ScalexDev agent oversight (agent-human-oversight-failure.md), Agent Plugins 1.0.0 (agent-plugins-1-0-0.md).
+- **Reference candidate**: entities/elevenlabs.md — ElevenReader case study (24% listening lift) not yet in entity page. Minor enrichment opportunity.
+- **Batch skips**: Glean FR localized ×8, Harvey author index page, ElevenLabs short product announcements ×3, Decagon engineering blog ×2, Factory signing announcement, Cohere partnership, Superlinked GPU sharing, Gary Marcus paid post.
+- Archive: 29 candidates, 26 newly archived, 3 dedup skipped. Total archive URLs: 2,401.
+
 ## [2026-08-08] raw-backlog-ingest (18:00) | Enrich 1件 (harvey) + Skip 4件
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 18:00, run 20260808T180025Z)。Takes=1, References=0, Skips=4。
