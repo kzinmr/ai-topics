@@ -1,0 +1,21 @@
+{
+  "archived_at": "2026-08-08T22:08:54.894273+00:00",
+  "triage_run_id": "20260808T220017Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest (22:00) バッチ: raw_backlog_collect.py --sort ai-hint --limit 5 (20260808T220017Z)。Takes=0, References=0, Skips=5 — 全記事が本日既処理の重複。harvey legal discoveryは18:00バッチで entities/harvey に収録済み（本スキップでアーカイブ索引に登録し再選択防止）、danluu Juliaは04:00バッチで entities/dan-luu に収録済み、berthub AI政策エッセイは entities/berthub-eu.md「AI Policy Analysis (July 2026)」で全文カバー済み、Stapelberg NixOS NAS移行は非AIインフラ記事でエンティティのNixOS Conversion節に要約済み、refactoringenglishチュートリアル執筆ルール章はエンティティの章カタログに既収録（バッチスキップパターン）。日次パイプライン飽和状態でTakes=0は正常。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-harvey-legal-discovery",
+      "source": "raw_backlog",
+      "source_name": "Harvey Blog",
+      "title": "How Legal Teams are Using AI for Legal Discovery",
+      "url": "https://www.harvey.ai/blog/how-to-use-ai-for-legal-discovery",
+      "raw_path": "wiki/raw/articles/2026-06-06_harvey_how-to-use-ai-for-legal-discovery.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 本日18:00バッチ（run 20260808T180025Z）で既に take 処理済み。entities/harvey.md に「Legal Discovery & Defensible AI Protocols (June 2026)」セクション（272行目〜）として全文収録済み: EDRMライフサイクル全体のAI適用、TAR判例史 vs 生成AIレビュー、5要素の防御可能プロトコル、特権レビュー経済性、Harvey Agentsのエージェントシフト。sources frontmatter にも raw/articles/2026-06-06_harvey_how-to-use-ai-for-legal-discovery.md 追加済み。重複処理を回避し、本スキップ判定によりURLをアーカイブ索引に登録して再選択を防止する。",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": "# How Legal Teams are Using AI for Legal Discovery\n**Source**: [https://www.harvey.ai/blog/how-to-use-ai-for-legal-discovery](https://www.harvey.ai/blog/how-to-use-ai-for-legal-discovery)\nHarvey Agents execute legal work end-to-end\nLearn more\nHarvey Agents execute legal work end-to-end\nLearn more\nHa",
+      "stars": 1
+    }
+  ]
+}

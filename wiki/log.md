@@ -1,3 +1,8 @@
+## [2026-08-08] raw-backlog-ingest (22:00) | Skip 5件 — 18:00バッチと完全重複（Takes=0）
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 22:00, run 20260808T220017Z)。Takes=0, References=0, Skips=5。
+- 5記事すべて本日既処理の重複: (1) harvey legal discovery — 18:00バッチでentities/harvey.md「Legal Discovery & Defensible AI Protocols (June 2026)」に収録済み、(2) danluu Juliaレビュー — 04:00バッチでentities/dan-luu.md「Notable Essays (Non-AI)」に収録済み、(3) berthub.eu AI政策エッセイ（オランダ語） — entities/berthub-eu.md「AI Policy Analysis (July 2026)」で全文カバー済み、(4) Stapelberg NixOS NAS移行 — 非AIインフラ記事でentities/michael-stapelberg.mdのNixOS Conversion節に要約済み、(5) refactoringenglishチュートリアル執筆ルール章 — entities/refactoring-english.mdの章カタログに既収録（バッチスキップパターン）。
+- archive_triage.py raw_backlog --keep-reference: candidates=5, new_archived=1（harvey URLをアーカイブ索引に登録し再選択防止）, dedup_skipped=4, total=2402。日次パイプライン飽和状態の正常なTakes=0。
+---
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
