@@ -6,7 +6,7 @@ aliases:
   - lifelong-learning-ai
   - incremental-learning
 created: 2026-04-27
-updated: 2026-06-27
+updated: 2026-08-08
 tags:
 sources: []
   - concept
@@ -82,6 +82,7 @@ Many of these have been criticized as "not even trying to solve the right proble
 - [Improving Composer through Real-Time RL](../raw/articles/2026-04_cursor_real-time-rl-for-composer.md) (2026-04, Cursor) — Production real-time RL for coding agents
 - [Continual Learning with Prime Intellect: part 1](../raw/articles/2026-04-06_27upon2_continual-learning-prime-intellect.md) (2026-04-06, @27upon2) — Open-source continual learning CLI
 - [The Next Paradigm — AIs Learning on the Job](../raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md) (2026-06-26, Dwarkesh Patel) — RLVR generalization limits, OPSD, dreaming, and the 4th scaling axis
+- [8 Predictions for the Era of Continual Learning](../raw/articles/dwarkesh.com--p-era-of-continual-learning--b0d4301d.md) (2026-08-08, Dwarkesh Patel) — Safety, alignment, moats, inference economics, and deployment pressure predictions
 
 ## Real-World Implementations
 
@@ -128,6 +129,33 @@ The fundamental tension: the KV cache in Llama 3 70B stores ~320KB per token, wh
 ### 2027 Vision
 
 Progression: RLVR → competent deployment agents → OPSD/dreaming distills session learnings back into weights → AIs improve from deployment experience, not just pre-release training. *"Every time you interact with AI, it'll be smarter — not only from your previous sessions but from all its interactions with all the other users."*
+
+## 8 Predictions for the Era of Continual Learning — Dwarkesh Patel (Aug 2026)
+
+Dwarkesh Patel's August 2026 essay ["8 Predictions for the Era of Continual Learning"](https://www.dwarkesh.com/p/era-of-continual-learning) extends his June analysis with concrete predictions about how continual learning will reshape the AI landscape.
+
+### The Saxophone Analogy
+Patel argues that current session-based learning is fundamentally limited: *"Imagine if the way students had to learn to play the saxophone is that one student tries to play it from a cold start, then writes down notes, then the next student reads all their notes before trying to play... there's no sequence of text they could write together that would allow the Nth student to play proficiently on their first try."* At some point, experience must accumulate into the brain (weights).
+
+### 8 Predictions
+
+1. **Safety evaluations must shift to continuous inspection** — Pre-deployment checks become meaningless when models update daily from millions of deployment sessions. Monthly/quarterly risk inspections replace one-time gates.
+
+2. **Technical alignment must be totally redesigned** — Current techniques assume frozen weights during deployment. Continual learning requires guarantees that constant weight updates never produce jailbreaks or deceptive personas — closer to the human alignment problem.
+
+3. **Diversity of AI minds will increase** — Currently <5 prominent AI minds trained on similar data. With continual learning, different deployment experiences will produce genuinely different AI systems.
+
+4. **Returns to being ahead will accelerate** — Better model → more users → more feedback → even better model. A flywheel effect that current static deployments don't have.
+
+5. **Labs will feel pressure to deploy smartest models earlier** — Anthropic used Mythos internally since February but shipped to public in June. In a continual learning regime, a 4-month gap means ceding 4 months of deployment learning to competitors.
+
+6. **Continual learning will create clear moats** — Currently no switching cost between AI models. With continual learning, switching means "firing an employee with months of context" and retraining from scratch. Labs can demand hefty margins.
+
+7. **Economies of scale in inference for end users** — Optimal inference batch size for DeepSeek V3 is >2,400 sequences. Serving personalized weights efficiently requires large concurrent traffic — strongly favoring big organizations over individuals (100x+ compute penalty at batch size 1).
+
+8. **Labs will subsidize users who allow training on sessions** — Just as Google gives away search, labs may give away AI access to users who allow deployment learning. Conversely, enterprises refusing to let models learn from their sessions may be denied access to the best models.
+
+Source: [[raw/articles/dwarkesh.com--p-era-of-continual-learning--b0d4301d.md]]
 
 ## Related Concepts
 

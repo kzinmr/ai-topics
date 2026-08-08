@@ -183,6 +183,29 @@ Thomas is a **Python Software Foundation (PSF) Fellow** and an advocate of **Ext
 - **PythonAnywhere** — Thomas's foundational creation. The platform-as-a-service for Python developers shaped his engineering perspective and continues to influence his ML work (cloud GPU usage patterns, platform economics awareness).
 - **Anaconda** — Acquired PythonAnywhere in 2022. Thomas worked at Anaconda as team lead through 2025, and his ML research uses Anaconda's Python distribution ecosystem.
 
+### Chinchilla Scaling Law Check (August 2026)
+
+Thomas published "[A quick(ish) Chinchilla check](https://www.gilesthomas.com/2026/08/chinchilla-check)" (August 2026) — an empirical test of the Chinchilla scaling law heuristic (~20 tokens per parameter) at small scale.
+
+**Experimental setup:**
+- Baseline: 163M parameter GPT-2 style model trained Chinchilla-optimal (~3.26B tokens)
+- Overtrained: Same model trained on 2× tokens (~6.52B tokens) — achieving test loss 3.324953
+- Chinchilla-scaled: ~230M parameter model trained on ~4.61B tokens (same total compute as overtrained, but split equally between parameters and tokens)
+
+**Key results:**
+- Chinchilla-scaled model achieved test loss **3.280028** — beating the overtrained model's 3.324953 by ~1.35%
+- A second slightly smaller variant (226M params) achieved 3.292937 — still beating overtrained by ~0.96%
+- The improvement was **statistically plausible but not definitive** — within 3 standard deviations of random initialization variance
+
+**Practical learnings:**
+- Scaling a model is harder than it sounds — even with just two dials (layers and embedding dimensions), getting the right parameter count required messy spreadsheet hacking
+- Embedding dimensions change in coarse 64-unit increments, making fine-grained scaling difficult
+- Thomas used the Chinchilla paper's Appendix F formulae to estimate training FLOPs, confirming compute equivalence
+
+**Conclusion:** *"Chinchilla held: scaling up the model and the number of tokens evenly did give us a better model than just scaling up the number of tokens."* But the effect was small enough at this scale to potentially be noise — a tentative success.
+
+Source: [[raw/articles/gilesthomas.com--2026-08-chinchilla-check--1041e22c.md]]
+
 ## References
 
 - gilesthomas.com--2025-12-beginners-guide-to-smolagents-2--493ac600

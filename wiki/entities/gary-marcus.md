@@ -339,6 +339,18 @@ Marcus concluded: Google "definitely doesn't look unassailable like they once di
 
 Source: [[raw/articles/garymarcus.substack.com--p-seven-reasons-i-wouldnt-count-google--b4555440.md]]
 
+### CPUs and the Rise of Neurosymbolic AI (August 2026)
+
+On August 8, 2026, Marcus published "[CPUs and the rise of neurosymbolic AI](https://garymarcus.substack.com/p/cpus-and-the-rise-of-neurosymbolic)" — a paid post making a hardware argument for the neurosymbolic paradigm shift. Key thesis:
+
+- **Pure neural networks (2012–mid 2023)**: Dominated by GPUs for parallel matrix arithmetic
+- **Neurosymbolic AI (mid 2023–present)**: Frontier labs quietly incorporated symbolic code interpreters, requiring both CPUs (general-purpose computation) and GPUs (neural inference)
+- The hardware shift from GPU-only to CPU+GPU reflects the architectural shift from pure deep learning to hybrid neurosymbolic systems
+
+This extends Marcus's long-standing argument that pure scaling has hit a wall, now framed through the lens of hardware requirements.
+
+Source: [[raw/articles/garymarcus.substack.com--p-cpus-and-the-rise-of-neurosymbolic--dcfbfaa2.md]]
+
 ### Key Works
 
 ### Newsletter: Marcus on AI

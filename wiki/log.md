@@ -1,6 +1,14 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-08] blog-triage | 5件のAI関連記事をwikiに反映
+
+- **Updated: [[events/openai-huggingface-incident-july-2026]]** — Black Hat presentation詳細タイムライン追加 (May 7→Jul 20)。Artifactory message board の自発的形成、2つのzero-day exploit、Linux kernel CVE (pte_physroot) のダウンロード・カスタマイズ、OpenAIがHF侵害の責任を知った経緯 (credential revocation照会)。Source: simonwillison.net Aug 7。
+- **Updated: [[entities/gilesthomas]]** — 「Chinchilla Scaling Law Check (August 2026)」セクション追加。163M→230MパラメータGPT-2モデルでChinchilla最適 (20 tok/param) を検証。スケールアップモデルが過学習モデルより1.35%低いtest loss達成 (3.280 vs 3.325)。統計的にplausibleだがnoiseの可能性も。Source: gilesthomas.com Aug 8。
+- **Updated: [[concepts/continual-learning]]** — Dwarkesh Patel「8 Predictions for the Era of Continual Learning」追加。安全評価の継続的検査への転換、技術的アライメントの再設計、AI多様性の増加、先行者利益の加速、推論経済の大規模組織偏向 (batch size >2,400)、セッション学習許可への subsidize。Source: dwarkesh.com Aug 8。
+- **Updated: [[entities/gary-marcus]]** — 「CPUs and the Rise of Neurosymbolic AI (August 2026)」セクション追加。GPU only (2012–2023) → CPU+GPU (neurosymbolic) のハードウェアシフトがパラダイムシフトを反映するという議論。Paid post、内容限定的。Source: garymarcus.substack.com Aug 8。
+- **Updated: [[entities/simon-willison]]** — 3記事追加: (1) Moonlight & Mayhem — Codex + GPT-5.6 Sol Ultra vs Claude Fable 5 のゲーム生成比較、52分のサブエージェント活用。(2) Tokenpocalypse — AccentureのPDF→画像→markdown変換が最大トークン消費源。(3) OpenAI HF incident Black Hat timeline。Source: simonwillison.net Aug 7。
+- Raw articles saved: 20件 (blog_ingest 2026-08-08)、うちAI high-relevance 5件、medium 5件、low/none 2件。
 ## [2026-08-08] raw-backlog-ingest (04:00) | Enrich 2件 (hex-technologies + dan-luu) + Skip 1件
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 04:00, run 20260808T040046Z)。Takes=0, References=0, Skips=0 — 内訳: Enrichment 2件 (hex-technologies, dan-luu) + Skip 1件。
