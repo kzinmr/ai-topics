@@ -1,0 +1,129 @@
+{
+  "run_id": "20260808T102036Z",
+  "triaged_at": "2026-08-08T10:25:00Z",
+  "total_newsletters": 7,
+  "classified": [
+    {
+      "uid": "478",
+      "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
+      "source": "Simon Willison (simonw)",
+      "date": "2026-08-08",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-08-now-we-have-a-timeline-of-the-openai-accidental-attack-against-hugging-face.md",
+      "canonical_url": "https://open.substack.com/pub/simonw/p/now-we-have-a-timeline-of-the-openai",
+      "classification": "critical",
+      "reason": "Simon Willison's investigation into an OpenAI incident that affected Hugging Face — involves two major AI entities (OpenAI, Hugging Face), AI safety/governance angle, timeline reconstruction suggests detailed analysis. Simon Willison is a tracked entity in the wiki.",
+      "suggested_actions": [
+        "Scrape full article from canonical URL",
+        "Update existing entity pages: [[openai]], [[hugging-face]], [[simon-willison]]",
+        "Potentially create event page: openai-hugging-face-incident-2026"
+      ],
+      "relevant_topics": ["openai", "hugging-face", "ai-safety", "ai-governance", "ai-incidents"]
+    },
+    {
+      "uid": "479",
+      "title": "[AINews] Zawinski's Law of MultiAgents",
+      "source": "swyx (Latent Space / AINews)",
+      "date": "2026-08-08",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-08-ainews-zawinski-s-law-of-multiagents.md",
+      "canonical_url": "https://open.substack.com/pub/swyx/p/ainews-zawinskis-law-of-multiagents",
+      "classification": "critical",
+      "reason": "Directly relevant to the wiki's core domain — AI agents and multi-agent systems. Zawinski's Law (originally about software feature bloat) applied to multi-agents is a conceptual framework worth documenting. swyx/Latent Space is a key AI community source.",
+      "suggested_actions": [
+        "Scrape full article from canonical URL",
+        "Create or update concept page: multi-agent-systems or zawinskis-law-of-multiagents",
+        "Update entity page: [[swyx]] if exists"
+      ],
+      "relevant_topics": ["multi-agent-systems", "ai-agents", "software-engineering-principles", "latent-space"]
+    },
+    {
+      "uid": "474",
+      "title": "Claude Design Can Replicate Any Brand",
+      "source": "The Signal (Alex Banks)",
+      "date": "2026-08-07",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-07-claude-design-can-replicate-any-brand.md",
+      "canonical_url": "https://open.substack.com/pub/thesignal/p/claude-design-can-replicate-any-brand",
+      "classification": "high",
+      "reason": "Claude's design/brand replication capabilities — relevant to Claude entity page, AI capabilities, and potentially AI safety (IP/brand misuse). Publication ID 293154 = The Signal by Alex Banks.",
+      "suggested_actions": [
+        "Scrape full article from canonical URL",
+        "Update entity page: [[claude-anthropic]]",
+        "Consider concept page on AI design/brand replication capabilities"
+      ],
+      "relevant_topics": ["claude", "anthropic", "ai-capabilities", "ai-design", "brand-replication"]
+    },
+    {
+      "uid": "475",
+      "title": "TikTok's Owner Builds a Secret AI Giant on Mythos-level",
+      "source": "Beehiiv newsletter",
+      "date": "2026-08-07",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-07-tiktok-s-owner-builds-a-secret-ai-giant-on-mythos-level.md",
+      "canonical_url": null,
+      "classification": "high",
+      "reason": "ByteDance's secret AI infrastructure buildout — major industry development relevant to AI compute, competition landscape. Beehiiv links need resolution to get the actual article URL.",
+      "suggested_actions": [
+        "Resolve Beehiiv redirect to get actual article URL",
+        "Create or update entity page: [[bytedance]]",
+        "Update AI infrastructure/compute landscape if significant"
+      ],
+      "relevant_topics": ["bytedance", "ai-infrastructure", "ai-compute", "ai-competition"]
+    },
+    {
+      "uid": "476",
+      "title": "SpaceX 10GW in 2027 – Why It's Real, Will Drive $500B ARR, and Why Microsoft Will Be the Largest Offtaker",
+      "source": "SemiAnalysis",
+      "date": "2026-08-07",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-07-spacex-10gw-in-2027-why-it-s-real-will-drive-500b-arr-for-spacex-and-why-microso.md",
+      "canonical_url": "https://open.substack.com/pub/semianalysis/p/spacex-10gw-in-2027-why-its-real",
+      "classification": "high",
+      "reason": "SemiAnalysis deep-dive on SpaceX energy capacity for AI compute, Microsoft as primary offtaker. Directly relevant to AI infrastructure, compute supply chain, and hyperscaler dynamics. SemiAnalysis is a premier AI infrastructure analysis source.",
+      "suggested_actions": [
+        "Scrape full article from canonical URL (likely paywalled)",
+        "Update entity pages: [[spacex]], [[microsoft]]",
+        "Create or update concept page: ai-compute-infrastructure"
+      ],
+      "relevant_topics": ["spacex", "microsoft", "ai-compute", "ai-infrastructure", "energy", "semianalysis"]
+    },
+    {
+      "uid": "477",
+      "title": "Exclusive Early Access: Chapters 1-5 of The Hundred-Page Deep Reinforcement Learning Book",
+      "source": "AI Weekly",
+      "date": "2026-08-07",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-07-exclusive-early-access-chapters-1-5-of-the-hundred-page-deep-reinforcement-learn.md",
+      "canonical_url": "https://open.substack.com/pub/aiweekly/p/exclusive-early-access-chapters-1-e4a",
+      "classification": "low",
+      "reason": "Educational resource announcement (book early access). Relevant to ML education but not a high-priority wiki target. Could be useful if we track RL/reinforcement-learning concepts.",
+      "suggested_actions": [
+        "Scrape if capacity permits",
+        "Consider as source for a reinforcement-learning concept page"
+      ],
+      "relevant_topics": ["reinforcement-learning", "ml-education", "books"]
+    },
+    {
+      "uid": "473",
+      "title": "Ben's session",
+      "source": "Ben's Bites",
+      "date": "2026-08-07",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-07-ben-s-session.md",
+      "canonical_url": "https://open.substack.com/pub/bensbites/p/bens-session",
+      "classification": "low",
+      "reason": "Ben's Bites is a known AI newsletter but the subject 'Ben's session' is vague. Publication ID 4379299 = Ben's Bites. Cannot determine specific content from subject alone. Requires scraping to assess actual relevance.",
+      "suggested_actions": [
+        "Scrape canonical URL to determine actual content",
+        "Classify further once content is known"
+      ],
+      "relevant_topics": ["ai-newsletter", "bens-bites"]
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 3,
+    "low": 2,
+    "top_stories": [
+      "OpenAI accidental attack against Hugging Face (Simon Willison timeline investigation)",
+      "Zawinski's Law of MultiAgents (swyx/AINews conceptual framework)",
+      "SpaceX 10GW AI infrastructure for Microsoft (SemiAnalysis)",
+      "TikTok/ByteDance secret AI giant buildout",
+      "Claude brand replication capabilities"
+    ]
+  }
+}

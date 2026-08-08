@@ -11,7 +11,7 @@ sources: []
   - evaluation
   - inference
 created: 2026-04-24
-updated: 2026-05-10
+updated: 2026-08-07
 ---
 
 # Entity Pages
@@ -250,6 +250,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[entities/shlok-khemani]] — Writer and programmer based in Gurgaon, India. Currently researching personal AI and memory systems for AI agents. Previously at Decentralised.co, building products for the crypto space. Author of Ope
 - [[entities/shreya-shankar]] — Shreya Shankar is a PhD candidate at UC Berkeley EECS (advised by Aditya G. Parameswaran) and one of the most influential voices in AI evaluation methodology. Alongside Hamel Husain, she co-created th
 - [[entities/shunyu-yao]] — Shunyu Yao is one of the most influential researchers in the language agent space. His work spans from the foundational ReAct paradigm (2022) through Tree of Thoughts (2023), Reflexion (2023), CoALA (
+- [[entities/sie-superlinked-inference-engine]] — Open-source inference engine for multi-model pipelines on shared GPU infrastructure. 100+ models through unified API with extract, score, and generate primitives. Built by Superlinked. Apache-2.0, ~2,670 GitHub stars.
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of [Datasette](https://datasette.io/) and prolific blogger at simonwillison.net.
 - [[entities/simone-salis]] — Simone Salis is a creative engineer who bridges Italian aesthetics with American pragmatism. His work sits at the intersection of media production, technology philosophy, and digital minimalism. After
 - [[entities/skyfall-dev]] — His projects span a wide range: a newspaper bot for Hack Club that handles story writing, editor approvals, and newsletter generation; a real-time inventory and price monitoring system for Hack Club's

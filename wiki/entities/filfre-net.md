@@ -2,7 +2,7 @@
 title: Jimmy Maher — The Digital Antiquarian
 type: entity
 created: 2026-04-09
-updated: 2026-08-05
+updated: 2026-08-08
 tags:
 - person
 - blogger
@@ -148,6 +148,9 @@ But this transparency strengthens rather than weakens his historical work. By ac
 ### Heroes of Might and Magic History
 - **Heroes III Design Philosophy** (2025) — Jon Van Caneghem's "design evolution, not revolution" approach and why it made Heroes III the definitive entry in the series
 
+### Maxis / Will Wright Series (2026)
+- **The Life and Times of Maxis** (Jul–Aug 2026, 3 parts) — Multi-part corporate history of Maxis from SimCity through The Sims. Part 1 "SimEverything" covers the founding and early simulation philosophy; Part 2 "SimWorld" covers SimEarth/SimAnt; Part 3 "The Sims" documents how the Oakland Firestorm of 1991, Christopher Alexander's *A Pattern Language*, and collaborators (not a lone auteur) shaped the best-selling game line in boxed-game history.
+
 ### Companion Site: The Analog Antiquarian
 - **The Voyage of Magellan** (ongoing series, 2024–2026) — Historical chronicle running in parallel with Digital Antiquarian content, demonstrating Maher's broader interest in historical narrative as a craft
 - **Epilogue: Infinity Embraced** (Mar 2026) — Conclusion to a long-running historical series
@@ -195,3 +198,4 @@ But this transparency strengthens rather than weakens his historical work. By ac
 - filfre.net--2026-04-this-week-on-the-analog-antiquarian--a61b592d
 - filfre.net--2026-07-the-life-and-times-of-maxis-part-1-simeverything--9504892c
 - filfre.net--2026-07-the-life-and-times-of-maxis-part-2-simworld--8970f588
+- filfre.net--2026-08-the-life-and-times-of-maxis-part-3-the-sims--d7b90741

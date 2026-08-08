@@ -1,3 +1,12 @@
+## [2026-08-08] raw-backlog-ingest (14:00) | Reference 1件 (filfre-net) + Skip 4件
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 14:00, run 20260808T140051Z)。Takes=0, References=1, Skips=4。
+- **Reference: [[entities/filfre-net]]** — Maxis連載Part 3「The Life and Times of Maxis, Part 3: The Sims」をカタログ更新。Recent Themesに「Maxis / Will Wright Series (2026)」サブセクション新設（Part 1 SimEverything / Part 2 SimWorld / Part 3 The Sims）。本文はThe Sims開発史: 1991年オークランド大火災→Will Wrightの生活シミュレーション着想、Christopher Alexander『A Pattern Language』の影響、Dollhouse→The Simsへの8年半の変遷、単独天才神話の否定。ReferencesにPart 3 (filfre.net--2026-08-the-life-and-times-of-maxis-part-3-the-sims--d7b90741) 追記、updated: 2026-08-08。
+- **Skip: 2026-08-08_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md** — Glean知識グラフ記事のフランス語版。2026-07-28英語オリジナルが既にentities/glean.md「Enterprise Knowledge Graph Cases (July 2026)」に全文収録済み（7ユースケース表・市場$2.89B・GraphRAG比較・採用ガイド）。ローカライズ版に新規情報なし。
+- **Skip: 2026-05-10_hex-technologies_notebook-agent-prompting-guide-agentic-analytics.md** — 本日04:00のraw-backlog-ingestでentities/hex-technologies.mdに「Notebook Agent Prompting Guide (September 2025)」セクション追加済み。重複回避。
+- **Skip: danluu.com--startup-options--a3b4b12e.md / danluu.com--ballmer--7af5f7cf.md** — 本日04:00のraw-backlog-ingestでentities/dan-luu.md「Notable Essays (Non-AI)」に収録済み（Startup options v. cash / Steve Ballmer was an underrated CEO）。重複回避。
+- Archive: archive_triage.py raw_backlog --keep-reference 実行（5件新規アーカイブ、total 2376）。
+
 ## [2026-08-08] active-crawl | 4 topics covered: 2 new concept pages + 2 enrichments
 
 - **Create: [[concepts/agent-plugins-1-0-0]]** — Agent Plugins 1.0.0: open standard for portable AI agent component packages. Backed by Vercel (initiator), AWS (founding member), Google (joined as sixth), Microsoft (ecosystem framing), OpenAI (announcement). Portable package format for reusable agent components (skills, tools). Sits alongside MCP (context access) and A2A (agent-to-agent communication). Source: TNW (Aug 7, 2026, 24 HN pts), X/Twitter announcements.

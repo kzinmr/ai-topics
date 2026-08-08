@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-08T14:11:28.542498+00:00",
+  "triage_run_id": "20260808T140051Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw記事バックログ5件を処理（run 20260808T140051Z）。Reference 1件: filfre.net Maxis連載Part 3 (The Sims) を entities/filfre-net.md の「Maxis / Will Wright Series (2026)」サブセクション＋Referencesへ追記（非AI・連載シリーズ継続分のカタログ更新）。Skip 4件: (1) Glean知識グラフ記事フランス語版は2026-07-28英語オリジナルが既にentities/glean.mdに全文収録済みの重複、(2) Hex Notebook Agent Prompting Guideは本日04:00にentities/hex-technologies.mdへ処理済み、(3)(4) Dan LuuのStartup options/Ballmerエッセイは本日04:00にentities/dan-luu.mdのNotable Essaysへ処理済み。新規概念ページなし。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-glean-fr-kg-cases",
+      "source": "raw_backlog",
+      "source_name": "glean.com (Glean Blog, French locale)",
+      "title": "Cas d'usage des graphes de connaissances en entreprise : 7 applications qui génèrent un ROI",
+      "url": "https://www.glean.com/fr/blog/enterprise-knowledge-graph-cases-7-applications-that-deliver-roi",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-08-08_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存カバー済み（英語オリジナルが同一内容で取得済み）。本記事は2026-07-28英語版 enterprise-knowledge-graph-cases-7-applications-that-deliver-roi のフランス語ローカライズ（fr/blog、Last updated Jul 14 2026）。entities/glean.md の「Enterprise Knowledge Graph Cases (July 2026)」セクションに7ユースケース表（Content as structure / Institutional knowledge / AI grounding (GraphRAG) / Drug discovery / Fraud & risk / Workflow automation / Security-compliance）、市場規模$2.89B・21-33% CAGR、GraphRAG vs vector RAG比較、採用ガイド、knowledge graph vs context graph FAQが全文収録済み。フランス語版本文（300-419行目）は同一の7ユースケース・同一統計（McKinsey 20%、Pyron 47%、hallucination 77%/47%）で新規情報なし。raw/articles/2026-07-28版がsourcesに登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Cas d’usage des graphes de connaissances en entreprise : 7 applications qui génèrent un ROI\n**Source**: [https://www.glean.com/fr/blog/enterprise-knowledge-graph-cases-7-applications-that-deliver-roi](https://www.glean.com/fr/blog/enterprise-knowledge-graph-cases-7-applications-that-deliver-roi)\nP"
+    },
+    {
+      "item_id": "raw-backlog-filfre-maxis-part3",
+      "source": "raw_backlog",
+      "source_name": "filfre.net (The Digital Antiquarian)",
+      "title": "The Life and Times of Maxis, Part 3: The Sims",
+      "url": "https://www.filfre.net/2026/08/the-life-and-times-of-maxis-part-3-the-sims/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/filfre.net--2026-08-the-life-and-times-of-maxis-part-3-the-sims--d7b90741.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 非AIコンテンツだが追跡ブログ（entities/filfre-net.md）の連載シリーズ継続分としてカタログ更新。The Sims開発史（1991年オークランド大火災→Will Wrightの「生活のシミュレーション」着想、Christopher Alexander『A Pattern Language』の影響、Dollhouse→The Simsへの8年半の変遷、単独天才神話の否定＝チーム貢献の実態）を392行で詳述。既存ページのReferencesにPart 1 (SimEverything)・Part 2 (SimWorld)が収録済みでPart 3が未収録だったため、「Maxis / Will Wright Series (2026)」サブセクションをRecent Themesに追加しReferencesへPart 3を追記。AI関連の概念ページ新設は不要。",
+      "candidate_wiki_path": "entities/filfre-net.md",
+      "body_excerpt": "# The Life and Times of Maxis, Part 3: The Sims\nSource: https://www.filfre.net/2026/08/the-life-and-times-of-maxis-part-3-the-sims/\nI don’t think people realize how much tactical and strategic forethought goes into their daily lives. There’s a whole subconscious time-efficiency layer in our lives. I"
+    },
+    {
+      "item_id": "raw-backlog-hex-notebook-agent",
+      "source": "raw_backlog",
+      "source_name": "hex.tech (Hex Technologies Blog)",
+      "title": "How to Work with Hex's Notebook Agent: A Prompting Guide",
+      "url": "https://hex.tech/blog/notebook-agent-prompting-guide-agentic-analytics/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_hex-technologies_notebook-agent-prompting-guide-agentic-analytics.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 本日04:00のraw-backlog-ingestで処理済み。wiki/log.md 2026-08-08 04:00エントリ確認: entities/hex-technologies.md に「Notebook Agent Prompting Guide (September 2025)」セクション追加済み（4 capabilities: agentic search / building a plan / executing analysis / summarizing results、メンタルモデル: structured prompting Context/Task/Guidelines/Constraints、conversational prompting、meta-prompting、@tagging context scoping、Workspace rules file、テンプレート: data discovery / notebook cleanup / cross-project prompt chaining）。sources追加・updated: 2026-08-08済み。重複処理を回避。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# How to Work with Hex's Notebook Agent: A Prompting Guide | Hex \n**Source**: [https://hex.tech/blog/notebook-agent-prompting-guide-agentic-analytics/](https://hex.tech/blog/notebook-agent-prompting-guide-agentic-analytics/)\nSkip to main content\n📊\nAI analytics use case:\nhow Mercor unlocked $100M in "
+    },
+    {
+      "item_id": "raw-backlog-danluu-startup-options",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Startup options v. cash",
+      "url": "https://danluu.com/startup-options/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--startup-options--a3b4b12e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本日04:00のraw-backlog-ingestで処理済み。wiki/log.md 2026-08-08 04:00エントリ確認: entities/dan-luu.md の「Notable Essays (Non-AI)」セクションに「Startup options v. cash (2013/2020更新)」として収録済み（リスク-リワード比例の誤謬、preferred vs common stock、Black-Scholes不適用、ISO/AMT/QSBS税制、シード投資$25k/yr優位論）。非AIエッセイのため新規概念ページ不要。重複処理を回避。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Startup options v. cash\nSource: https://danluu.com/startup-options/\nI often talk to startups that claim that their compensation package has a higher expected value than the equivalent package at a place like Facebook, Google, Twitter, or Snapchat. One thing I don’t understand about this claim is, "
+    },
+    {
+      "item_id": "raw-backlog-danluu-ballmer",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Steve Ballmer was an underrated CEO",
+      "url": "https://danluu.com/ballmer/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--ballmer--7af5f7cf.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本日04:00のraw-backlog-ingestで処理済み。wiki/log.md 2026-08-08 04:00エントリ確認: entities/dan-luu.md の「Notable Essays (Non-AI)」セクションに「Steve Ballmer was an underrated CEO (2024)」として収録済み（Azure/Office 365/Bing/Xbox/エンタープライズ営業、反トラスト制約、TypeScript/vscode/LINQ）。非AIエッセイのため新規概念ページ不要。重複処理を回避。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Steve Ballmer was an underrated CEO\nSource: https://danluu.com/ballmer/\nThere's a common narrative that Microsoft was moribund under Steve Ballmer and then later saved by the miraculous leadership of Satya Nadella. This is the dominant narrative in every online discussion about the topic I've seen"
+    }
+  ]
+}
