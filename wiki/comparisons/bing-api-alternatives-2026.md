@@ -2,12 +2,12 @@
 type: comparison
 title: "Bing Search API Alternatives — 2026 Comparison"
 tags:
-sources: []
   - comparison
   - search
   - developer-tooling
   - ai-agents
   - tool
+sources: []
 date: 2026-02-16
 source: https://parallel.ai/articles/bing-api-comparison
 aliases: [bing-api-alternatives, bing-search-api-replacement]

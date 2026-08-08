@@ -1,3 +1,24 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-08-08] watchdog | auto-fix: log header, index counts, 5 misplaced tag-list frontmatters
+
+- **Log header burial**: `# Wiki Log` was at line 19 (entries prepended above header). Restored via fix_log_header_burial.py — header now line 1, 309 entries preserved, 0 pipe corruption.
+- **Index header counts corrected** (set-diff verified; only intentional omissions):
+  - `## Entities` 886 → 884 (885 files − 1 redirect `tim-sherratt` intentionally unindexed; 884 section entries)
+  - `## Concepts` 1976 → 1954 (1956 files − 2 `_archive/`; 1954 section entries)
+- **Misplaced tag-list frontmatter fixed (5 files)**: `tags:` was empty with `sources: []` inserted between `tags:` and its list items (tags silently lost by YAML parser). Restructured: tag list under `tags:`, `sources: []` after. All tags verified in SCHEMA taxonomy.
+  - entities/parallel-web-systems.md
+  - entities/foundation-capital.md
+  - concepts/open-weights-licensing-tightening.md
+  - comparisons/bing-api-alternatives-2026.md
+  - comparisons/google-alerts-alternatives-2026.md
+- **Verified clean**: validate_index.py exit 0; 0 pipe/triple-bracket/line-number/space corruption; log 0 pipe corruption; frontmatter gaps: 0 sources/type/tags/updated/title, 23 missing `created:` (escalated — 10+ files); index coverage gap 0 (3 false positives: 2 `_archive/`, 1 redirect); tag audit: 6 non-SCHEMA tags (escalated to tag-audit-weekly).
+- **Pipeline alert (not wiki issue)**: blog + newsletter chains broke today — blog-triage (10:29), newsletter-triage (10:42), blog-wiki-ingest (10:52), newsletter-wiki-ingest (11:02) all failed with `RuntimeError: [Errno 32] Broken pipe` (transient LLM streaming error). Ingest OK (blog 45 articles, newsletter 7 messages). Wiki-ingest fell back to stale Aug-7 triage checkpoints; blog content partially ingested via early 10:19 commit (c5ce224b). Recommend re-run triage jobs; raw articles safe.
+
+---
+
 ## [2026-08-08] raw-backlog-ingest (14:00) | Reference 1件 (filfre-net) + Skip 4件
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 14:00, run 20260808T140051Z)。Takes=0, References=1, Skips=4。
@@ -16,9 +37,8 @@
 - **index.md**: agent-plugins-1-0-0, ai-energy entries added alphabetically. Section headers updated: Concepts 1952 -> 1976 pages, Entities 884 -> 886 pages (filesystem reconciliation).
 - Raw articles: 2026-08-07_tnw_agent-plugins-1-0-0-standard.md, 2026-08-07_simonwillison_ai-safety-incidents-aug-2026.md, 2026-08-05_hn-discussion_ai-energy-data-center-sustainability.md, 2026-08-07_dealroom_oracle-bans-ai-generated-code-openjdk.md.
 
-# Wiki Log
+---
 
-_Log of all wiki changes. Newest entries at top._
 ## [2026-08-08] blog-triage | 5件のAI関連記事をwikiに反映
 
 - **Updated: [[events/openai-huggingface-incident-july-2026]]** — Black Hat presentation詳細タイムライン追加 (May 7→Jul 20)。Artifactory message board の自発的形成、2つのzero-day exploit、Linux kernel CVE (pte_physroot) のダウンロード・カスタマイズ、OpenAIがHF侵害の責任を知った経緯 (credential revocation照会)。Source: simonwillison.net Aug 7。

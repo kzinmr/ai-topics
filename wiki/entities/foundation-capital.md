@@ -3,12 +3,12 @@ title: "Foundation Capital"
 type: entity
 aliases: [foundation-capital]
 tags:
-sources: []
   - entity
   - lab
   - company
   - search
   - ai-agents
+sources: []
 status: complete
 description: "AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents."
 updated: 2026-05-08
