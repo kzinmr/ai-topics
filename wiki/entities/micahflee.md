@@ -1,9 +1,11 @@
 ---
 title: "Micah Lee"
 tags: [person, coding-agents, local-llm]
-sources: [raw/articles/micahflee.com--agentic-coding-techniques--fc5e06aa.md]
+sources:
+  - raw/articles/micahflee.com--agentic-coding-techniques--fc5e06aa.md
+  - raw/articles/micahflee.com--mandatory-update-a-short-story--a332b287.md
 created: 2026-04-24
-updated: 2026-08-04
+updated: 2026-08-09
 type: entity
 ---
 
@@ -115,7 +117,7 @@ In his August 2026 essay *Agentic coding techniques*, Lee describes coding agent
 
 **2025:** Founded the [[concepts/lockdown-systems-collective]] and began developing [[concepts/cyd]], an open-source app for local-first personal data backup. Delivered his BSidesPDX keynote on technofascism. Published critical analysis of the ICEBlock app as "activism theater." Co-reported on TeleMessage spyware. Published Epstein files analysis for .
 
-**2026:** Built the DHS Contracts Explorer from hacked immigration enforcement data. Published practical guides on Signal group security (nicknames as identity verification). Continued analysis of mercenary spyware threats (Paragon/Graphite, NSO/Pegasus) and platform complicity. Active on the kill switch podcast discussing app censorship. Published *Agentic coding techniques* (August 2026) on [[concepts/agentic-engineering|agentic engineering]] — local open-weight models, LLM skills, and Docker-sandboxed coding agents.
+**2026:** Built the DHS Contracts Explorer from hacked immigration enforcement data. Published practical guides on Signal group security (nicknames as identity verification). Continued analysis of mercenary spyware threats (Paragon/Graphite, NSO/Pegasus) and platform complicity. Active on the kill switch podcast discussing app censorship. Published *Agentic coding techniques* (August 2026) on [[concepts/agentic-engineering|agentic engineering]] — local open-weight models, LLM skills, and Docker-sandboxed coding agents. Also wrote his first short story, *Mandatory Update* (DEF CON 34 Creative Writing Contest entry; AI deepfake theme via the fictional SlopstreamAI).
 
 ---
 
@@ -173,3 +175,4 @@ Cellebrite — Device extraction company analyzed in Lee's technofascism framewo
 - micahflee.com--we-are-currently-clean-on-opsec-the-signalgate-saga--e8b6d537
 - micahflee.com--why-hack-the-dhs-i-can-think-of-a-couple-pretti-good-reasons--be35e375
 - micahflee.com--agentic-coding-techniques--fc5e06aa
+- micahflee.com--mandatory-update-a-short-story--a332b287

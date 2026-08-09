@@ -1825,7 +1825,7 @@
 - [[concepts/gpt/gpt-rosalind-5-5-system-card]] — GPT-Rosalind-5.5 System Card
 - [[concepts/gpt/gpt-sora-2-system-card]] — Sora 2 System Card
 - [[concepts/gpt/gpt-system-card-milestones]] — OpenAI System Cards — Key Milestones Timeline
-- [[concepts/gpt/image-2-vs-nano-banana-2]] — gpt-image-2-vs-nano-banana-2
+- [[concepts/gpt/image-2-vs-nano-banana-2]] — GPT Image 2 vs Nano Banana 2 (redirect → [[comparisons/gpt-image-2-vs-nano-banana-2]])
 - [[concepts/gpt/index]] — GPT Models
 - [[concepts/gpt/memory-systems-chatgpt-vs-claude-vs-cognition]] — AI Memory Systems — ChatGPT vs Claude vs Cognition
 - [[concepts/gpt/milestones]] — GPT Model Milestones

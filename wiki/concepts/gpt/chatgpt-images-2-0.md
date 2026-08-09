@@ -2,7 +2,7 @@
 title: "ChatGPT Images 2.0"
 type: concept
 created: 2026-04-24
-updated: 2026-04-28
+updated: 2026-08-09
 tags:
   - product
   - openai
@@ -12,6 +12,7 @@ aliases: ["ChatGPT Images v2", "GPT Image 2"]
 sources:
   - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
+  - raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--f32f4ce4.md
 ---
 # ChatGPT Images 2.0
 
@@ -56,6 +57,8 @@ ChatGPT Images 2.0 introduces a revolutionary **Thinking mode** that performs we
 April 2026 benchmarks:
 - **#1 on all Image Arena leaderboards** with unprecedented margins
 - Beat Google's Nano Banana models by **+242 points** (largest gap ever recorded) in Text-to-Image
+- **Arena Elo scores** (AINews, 2026-04-22): **1512** text-to-image, **1513** single-image edit, **1464** multi-image edit — a **+242 Elo lead** over the next-best model on text-to-image
+- Available in **Thinking and non-Thinking variants** (thinking mode reserved for paid tiers)
 - Market position: shifts image generation from creative novelty to production-grade visual system
 
 Key reasoning features:
@@ -107,7 +110,11 @@ Alex Banks (primary LLM user for knowledge work uses Claude) has pivoted to Open
 ### Developer Access (April 2026)
 - **API Pricing**: $30 per 1,000 output tokens
 - **Availability**: All ChatGPT users can generate; "thinking" features reserved for Plus, Pro, and Business tiers
-- **Partner Integrations**: Already integrated into workflows for **Canva, Figma, and Adobe**
+- **Partner Integrations**: Already integrated into workflows for **Canva, Figma, Adobe, Firefly, fal, and Hermes Agent** (AINews, 2026-04-22)
+
+### Systems Implication: Image Generation as a Front-End for Coding Agents
+
+The most interesting downstream pattern (AINews, 2026-04-22): image generation is becoming a **front-end for coding agents** — generate a UI spec / mockup as an image, then have Codex or another code agent implement against that visual reference. This positions GPT-Image-2 as a component in agentic UI workflows, not just a standalone art tool.
 
 ### Reasoning Before Drawing
 When activated, the system searches the web and plans the image structure first, representing a shift from pure generation to multi-step reasoning. This allows for:
@@ -117,6 +124,7 @@ When activated, the system searches the web and plans the image structure first,
 
 ## Sources
 
+- [AINews: "OpenAI launches GPT-Image-2"](https://substack.com/redirect/2/eyJlIj...X0FY) (2026-04-22) — Arena Elo scores (1512/1513/1464), thinking variants, integrations (Firefly, fal, Hermes Agent), image-gen-as-coding-agent-front-end insight
 - [Alex Banks, The Signal: "ChatGPT Images 2.0 is genuinely fantastic"](https://thesignal.substack.com/p/chatgpt-images-20-is-genuinely-fantastic) (2026-04-24) — detailed comparative review
 - [OpenAI Engineering: ChatGPT Images 2.0](https://openai.com/index/) — official announcement
 - [Ben's Bites: ChatGPT's Nano Banana]
