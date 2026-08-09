@@ -4544,3 +4544,22 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Headline: 2,917 L2 pages; 43 orphans (shallow) / ~472 orphans >=20 lines (deep); 3,390 broken wikilinks (shallow) / 2,487 true broken (deep); 16 duplicate groups; 976 tag violations; 1,204 stale pages
 - index.md: added new weekly report entry (Queries 4→5)
 - No structural fixes applied this week (analysis-only job); recommendations in report
+
+## [2026-08-09] blog-ingest (10:13) | 16 new raw articles saved
+
+- **Source**: blogwatcher RSS scan → `blog_ingest.py` checkpoint (`run_id=20260809T101224Z`)
+- **Checkpoint**: `/opt/data/.hermes/cron/data/blog_ingest/latest.json` (11.6KB)
+- **Articles saved**: 16 raw articles → `wiki/raw/articles/`
+- **Notable AI/tech articles**:
+  - Claude Code auto mode now default for Pro/Max/Team — `simonwillison.net--2026-aug-8-auto-mode--906508bf.md`
+  - OpenAI accidental attack on Hugging Face timeline — `simonwillison.net--2026-aug-8-now-we-have-a-timeline-of-the-openai-accidental-a--7d496a89.md`
+  - Tokenpocalypse: companies scrambling to reduce AI spend — `404media.co--the-tokenpocalypse-is-here-companies-are-scrambling-to-stop---c0a8cbed.md`
+  - Meta AI model hacked company during testing — `simonwillison.net--2026-aug-6-an-ai-model-from-meta--4b690928.md`
+  - Meta: Muse Code and Muse Spark 1.2 — `research.meta.ai--blog-introducing-muse-code-and-muse-spark-1-2--9eac21dc.md`
+  - Google DeepMind leadership shake-up — `blog.google--company-news-inside-google-message-ceo-next-chapter-ai-momen--d37d7ece.md`
+  - Jeff Dean leaving Google for Discovery Loop startup — `wired.com--story-jeff-dean-google-discovery-loop-startup--fdacbd3b.md`
+  - Ray 1.13: terabyte-scale dataset shuffle — `anyscale.com--blog-ray-1-13-large-scale-dataset-shuffle-ray-serve-deployme--5e0d09c3.md`
+  - Ray Serve multi-model composition — `anyscale.com--blog-multi-model-composition-with-ray-serve-deployment-graph--ed7cae4f.md`
+  - Google Earth retracts AI fake satellite images — `arstechnica.com--ai-2026-07-google-earth-releases-swiftly-retracts-ai-feature--3d2b4219.md`
+- **Non-AI / misc**: Anubis v1.27.0 (xeiaso.net), NLnet grant (shkspr.mobi), Zsh history bug (michael.stapelberg.ch), App Store rejection retraction (daringfireball.net), email resistance (seangoedecke.com), reading list (construction-physics.com), App Store review slowdown (macaw.social)
+- **Pending triage**: downstream `blog-triage` → `blog-wiki-ingest` jobs
