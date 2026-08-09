@@ -73,7 +73,7 @@
 - [[entities/arlan-r]] — Arlan Rakhmetzhanov
 - [[entities/armin-ronacher]] — Armin Ronacher; enriched with "The Coming Loop" essay — harness-level vs agent-level loops, code quality from autonomous looping, software-as-organism metaphor (June 24)
 - [[entities/ash-vardanyan]] — Ash Vardanyan; SIMD/vectorized kernels (NumKong, StringZilla, USearch); StringZilla Unicode search 50x ICU (May 2026); SimSIMD v5.3 SVE2 set intersections (Aug 2026)
-- [[entities/ashe-magalhaes]] — Ashe Magalhaes
+- [[entities/ashe-magalhaes]] — Ashe Magalhaes — Founder of Hearth AI; relational intelligence thesis, Ashe AI second brain, builder-as-artist (L3)
 - [[entities/ashpreet-bedi]] — Ashpreet Bedi
 - [[entities/ashwingop]] — Ashwin Gopinath
 - [[entities/atal-upadhyay]] — Atal Upadhyay
@@ -354,7 +354,7 @@
 - [[entities/hark]] — Hark
 - [[entities/harrison-chase]] — Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framewor...
 - [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5)
-- [[entities/hearth-ai]] — Hearth AI
+- [[entities/hearth-ai]] — Hearth AI — First agentic CRM; Salesforce Ventures Generative AI Fund; relational intelligence category (L3)
 - [[entities/halo-tamper-evident-agent-runtime]] — Open-source tamper-evident runtime evidence for AI agents; append-only hash-chained log (Apache-2.0)
 - [[entities/hebbia]] — Hebbia
 - [[entities/herman-s-blog]] — Herman Martinus
@@ -889,7 +889,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1954 pages)
+## Concepts (1956 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2358,6 +2358,7 @@
 - [[concepts/person]] — person
 - [[concepts/person-foundation-capital-investor-context-graph]] — Person Foundation Capital Investor Context Graph
 - [[concepts/persona-engineering]] — Persona Engineering — Methodology for crafting synthetic AI personas for market research, agent testing, and red-teaming; covers failure modes, prompt techniques, and evaluation metrics (July 2026)
+- [[concepts/personal-ai]] — Personal AI — AI systems as aligned extensions of a single individual; umbrella for relational intelligence and personal OS patterns
 - [[concepts/personal-os-for-ai-agents]] — Personal OS for AI Agents
 - [[concepts/personal-software]] — Personal Software
 - [[concepts/personal-superintelligence]] — Personal Superintelligence — The Evolution and Philosophical Tensions of Personal AI
@@ -2517,6 +2518,7 @@
 - [[concepts/redux]] — Redux
 - [[concepts/reflexion]] — Reflexion
 - [[concepts/reflexive-ai]] — Reflexive AI
+- [[concepts/relational-intelligence]] — Relational Intelligence — AI that reasons about who we're connected to and why; the Hearth Thesis category (Ashe Magalhaes, relationscape)
 - [[concepts/reliable-agent-patterns]] — Reliable Agent Patterns
 - [[concepts/renderers-token-level-templating]] — renderers: Token-Level Templating for Agentic RL
 - [[concepts/replaid-continuous-diffusion]] — RePlaid (Continuous Diffusion Scaling)

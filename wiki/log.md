@@ -1,6 +1,16 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-09] skeleton-enrich-daily | L2→L3: Ashe Magalhaes + Hearth AI (relational intelligence); backfilled concepts/personal-ai + concepts/relational-intelligence
+
+- **Enriched: [[entities/ashe-magalhaes]]** (76→168 lines, L2→L3). Multi-source research: ashe.ai homepage + timeline + agency page, X handle corrected from non-existent @ashemagalhaes to verified **@ashebytes** (21.5K followers, xurl-verified), Salesforce Ventures announcement. Added full career timeline (Facebook 2014/15, NASA Ames ISS geolocation, Stanford Space Dev Lab LMRST watchdog, Stanford US-Russia Forum, Oxford, Bridgestone World Solar Challenge aero/telemetry/driver with 82 CAD iterations +74% aero, Pear VC EIR, Airbnb ML intern, Edinburgh MSc AI Distinction, Apple ML consultant, Civis Analytics >$100M ad spend, Schmidt Futures Rise/Afghan Future Fund, Hearth AI 2022-25, Thrive Capital AI Product Engineer, Edge City Patagonia residency, Vibe Code Camp, Builders Unscripted Ep.2). Added Relational Intelligence (Hearth Thesis) core idea, Ashe AI second-brain system section (morning/day/evening rituals, Rolodex, goals, curated X feed), Writing & Blog table (13 essays), Media Appearances expansion, Consulting & Agency pricing. Frontmatter: aliases [ashe, ashebytes], 8 sources, tags +relational-intelligence, status L3.
+- **Enriched: [[entities/hearth-ai]]** (69→148 lines, L2→L3). Added Funding & Recognition (Salesforce Ventures Generative AI Fund initial cohort Mar 2023 alongside Anthropic/Cohere/You.com, later doubled to $500M; Forbes Cloud 100 Rising Stars 2023; Forbes 30 Under 30 2024), Evolution section (agentic CRM → relational intelligence, hearth.ai now "Your Second Brain for Your People", Ashe stepped back spring 2025), Timeline table (2022→2025), people-as-primitives philosophy. Tags +relational-intelligence, crm, product, vc.
+- **Backfilled: [[concepts/personal-ai]]** — broken wikilink referenced by 5+ pages (ashe-magalhaes, hearth-ai, personal-software, gemini/gemini-spark, super-agent-platform-thesis, folk-app) but file did not exist. Created concept page: aligned-extension-of-individual definition, trusted memory, ritual-embedded, implementation patterns table (second-brain agentic / file-based OS / relational layer / bespoke software), graph query.
+- **Created: [[concepts/relational-intelligence]]** — new concept page for the Hearth Thesis category (Dec 2024): people as primitives, relationscape optimization landscape, three questions (who am I / who are you / who are you to me), Ashe AI as concrete implementation.
+- **SCHEMA.md**: registered tags `relational-intelligence`, `relationscape`, `second-brain` (Domain Concepts) + `crm` (Products).
+- **index.md**: +2 Concepts (1954→1956), updated entity descriptions for ashe-magalhaes + hearth-ai.
+- Sources: ashe.ai + timeline + second-brain blog + hearth-thesis blog, salesforce.com/news/stories/generative-ai-investing, hearth.ai, xurl @ashebytes profile.
+
 
 ## [2026-08-09] dreaming | wiki-ingest — enriched Fireworks+Voyage AI partnership (upstream deferred)
 
