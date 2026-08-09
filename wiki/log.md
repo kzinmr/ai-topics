@@ -1,3 +1,18 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-08-09] watchdog | auto-fix: log header burial + 108 missing separators
+
+- **Log header burial**: `# Wiki Log` was at line 39 (entries prepended above header by raw-backlog-ingest). Restored via fix_log_header_burial.py — header now line 1, 321 entries preserved, 0 pipe corruption. Metadata line re-positioned after header (was stranded at line 55).
+- **Missing separators fixed (108)**: 103 before `## [date]` entries + 5 before non-bracket `## YYYY-MM-DD —` headers at tail. Convention verified against commit 47bf8fd2 (separator between all entries; none before first entry after metadata). 3 double-separators collapsed.
+- **Verified clean**: validate_index.py exit 0; index 0 pipe/line-number/triple-bracket/space corruption, 0 duplicates, 0 ghost entries; header counts match section entries (Entities 884, Concepts 1954, Comparisons 35, Events 25, Queries 4); log 0 pipe corruption, 0 missing separators.
+- **Frontmatter gaps**: 24 pages missing `created:` (10+ files → escalated, no auto-fix): 18 entities, 4 concepts, 2 comparisons, 1 event. No misplaced-tag-list defect among them (checked per 2026-08-08 pattern).
+- **Index coverage gap**: 0 genuine (1 false positive: `entities/tim-sherratt` is a `status: redirect` stub, canonical `tim-sh` indexed).
+- **Pipeline alert (transient, not wiki issue)**: x_accounts stale(26h) — job runs every 48h at 22:30 UTC; last run Aug 7 22:30, next expected Aug 9 22:30, within window. No action.
+
+---
+
 ## [2026-08-09] raw-backlog-ingest (14:00) | Reference 3 items + Skip 2 items
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-09 14:00, run 20260809T140059Z). Takes=0, References=3, Skips=2.
@@ -8,11 +23,13 @@
 - **Skip: 2026-06-22_glean_what-is-no-code-automation.md** — already captured in [[entities/glean]] "No-Code Automation Guide (June 2026)" section (Trevor Gile; Agent Builder / Agent Library 500+ pre-built agents). Raw file registered in sources; scrape is mostly navigation chrome, no new information.
 - Archive: ran archive_triage.py raw_backlog --keep-reference (3 new archived, 2 dedup skipped, total 2427). Tracking: processed_raw_articles.json 75→80 (all 5 marked done).
 
+---
 ## [2026-08-09] newsletter-wiki-ingest | 1 take + 1 reference (recovered from triage checkpoint)
 - **Recovery**: newsletter-triage upstream failed to parse its JSON response; triage checkpoint at ~/.hermes/cron/data/newsletter/triage_latest.json was valid (run 20260809T101608Z, 9 decisions). Proceeded directly per recovery pattern.
 - **Take: [[entities/deepseek]]** — Added "August 2026 Price Reversal: Peak-Hour Surcharge & General Increase" section: peak-hour 2x surcharge since June 30 (Beijing 09:00-12:00, 14:00-18:00), Aug 6 "significant general increase" notice ("substantial", no exact amounts), V4-Flash $0.14/$0.28 vs Moonshot Kimi K3 $3/$15, Inner Mongolia 1GW data center buildout, 20K-GPU figure misreport correction (Bloomberg/Moonshot, not DeepSeek), Lewis Strauss "too cheap to meter" = billing method analysis. Source: Superintel+ (uid=480) 2026-08-08.
 - **Reference: [[entities/deepseek]]** — Yahoo Finance "DeepSeek Plans 'Significant' Price Increase" folded into same section as reinforcing source.
 
+---
 ## [2026-08-09] blog-wiki-ingest | 4 takes + 4 references (recovered from triage checkpoint)
 - **Recovery**: blog-triage upstream failed to parse its JSON response; triage checkpoint at ~/.hermes/cron/data/blog_ingest/triage_latest.json was valid (run 20260809T101224Z, 20 decisions). Proceeded directly per recovery pattern.
 - **Take: [[entities/claude-code]]** — Added "Auto Mode Default & Trajectory Labs Eval (August 2026)" section: Aug 14 default for Pro/Max/Team plans; Trajectory Labs third-party eval (1,053 testers, 13.6% human refusal vs 89% auto-blocked; 72 indirect PI scenarios x 720 attacks = 0 succeeded vs Fable 5/Opus 5/Sonnet 5); Willison's skepticism on malicious third-party packages (uvx fetch-model-files exfiltration). Source: simonwillison.net 2026-08-08.
@@ -24,6 +41,7 @@
 - **Reference: [[concepts/synthid]]** — Added "Case Study: Google Earth Retraction (July 2026)" section (SynthID fails on smartphone-photo/screenshot re-encoding, 10/day check limit). Source: arstechnica.com.
 - Index updated for all 7 pages; no new pages created; no tags added to SCHEMA.md.
 
+---
 ## [2026-08-09] raw-backlog-ingest (04:00) | Skip 5 items — duplicate of 2026-08-08 batch (Takes=0)
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-09 04:00, run 20260809T040002Z). Takes=0, References=0, Skips=5.
 - **Duplicate invocation recovery**: all 5 articles are exact repeats of the 2026-08-08 18:00/22:00 batches (log.md entries 2026-08-08). No wiki page changes made — every article already captured: (1) harvey legal discovery — entities/harvey.md "Legal Discovery & Defensible AI Protocols (June 2026)" (enriched in 18:00 run), (2) danluu Julia review — entities/dan-luu.md "Notable Essays (Non-AI)", (3) berthub.eu AI policy essay (Dutch) — entities/berthub-eu.md "AI Policy Analysis (July 2026)", (4) Stapelberg NixOS NAS migration — non-AI infra, summarized in michael-stapelberg.md NixOS Conversion section, (5) refactoringenglish tutorial-writing-rules chapter — in refactoring-english.md chapter catalog (batch skip pattern).
@@ -31,12 +49,12 @@
 - **Tracking fix**: registered all 5 filenames as done in processed_raw_articles.json processed_articles sub-registry (70→75) and updated top-level status processing→done. Root cause of 3rd consecutive re-selection: prior runs never recorded completion in the tracking file, so the 1-hour "stuck processing" timeout let the collector re-pick them.
 - Archive: no re-archive (all 5 already in archive index, archive_status: already_archived). Triage JSON saved to cron/data/raw_backlog/triage_latest.json.
 
+---
 ## [2026-08-08] raw-backlog-ingest (22:00) | Skip 5 items — exact duplicates of the 18:00 batch (Takes=0)
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 22:00, run 20260808T220017Z).Takes=0, References=0, Skips=5.
 - All 5 articles are duplicates already processed today: (1) harvey legal discovery — already captured in the 18:00 batch under entities/harvey.md "Legal Discovery & Defensible AI Protocols (June 2026)", (2) danluu Julia review — already captured in the 04:00 batch under entities/dan-luu.md "Notable Essays (Non-AI)", (3) berthub.eu AI policy essay (Dutch) — fully covered by entities/berthub-eu.md "AI Policy Analysis (July 2026)", (4) Stapelberg NixOS NAS migration — non-AI infrastructure article already summarized in the NixOS Conversion section of entities/michael-stapelberg.md, (5) refactoringenglish tutorial-writing-rules chapter — already in the chapter catalog of entities/refactoring-english.md (batch skip pattern).
 - archive_triage.py raw_backlog --keep-reference: candidates=5, new_archived=1 (registered harvey URL in the archive index to prevent re-selection), dedup_skipped=4, total=2402. Normal Takes=0 given daily pipeline saturation.
 ---
-# Wiki Log
 
 ## [2026-08-09] active-crawl | 2 enrichments (trending topics)
 - **Enrich: [[concepts/neurosymbolic-ai]]** — Added "Hardware Dimension: CPUs and Neurosymbolic AI (Aug 2026)" section based on Gary Marcus's Aug 7 article: GPU-dominated era (2012-mid 2023), dual hardware requirement (GPUs for neural + CPUs for symbolic), implications for chip design/data centers/capital allocation. Added tags: hardware, cpu, gpu, ai-hardware. Published: garymarcus.substack.com 2026-08-07.
@@ -44,8 +62,7 @@
 - Raw articles saved: 2026-08-07_garymarcus-cpus-neurosymbolic-ai.md, 2026-08-07_gilesthomas-chinchilla-check.md, 2026-08-07_dwarkesh-era-of-continual-learning.md (Dwarkesh already fully covered in continual-learning.md — no enrichment needed).
 - Index updated: neurosymbolic-ai and scaling-laws descriptions expanded. Sources: X/Twitter trending scan + blogwatcher DB + HN Algolia. No SCHEMA.md changes needed beyond cpu tag addition by subagent.
 
-_Log of all wiki changes. Newest entries at top._
-
+---
 ## [2026-08-08] skeleton-enrich-daily — richard-ngo, jaya-gupta, agreement-bug L2→L3
 - **Enrich: [[entities/richard-ngo]] (L2→L3)** — Added 7 Mind the Future posts from 2025-2026: On Pessimization (Aug 2025), Distributed vs Centralized Agents (Feb 2026), Aligning to Virtues (Feb 2026), Economic Efficiency Often Undermines Sociopolitical Autonomy (Mar 2026), Towards a Formal Scientific Epistemology (Jun 2026, Garrabrant induction), Agents as Webs of Beliefs (Jun 2026, belief webs / self-predictive actions / drives vs anchors / emergent agency), Selective Optimism: AI 2040 critique (Jul 2026, AI Futures Project consultant). Added Belief Webs and Emergent Agency to Key Ideas, cross-linked [[concepts/coalitional-agency]], added epistemology/philosophy-of-science/forecasting/governance tags.
 - **Enrich: [[entities/jaya-gupta]] (L2→L3)** — Added 2 previously unlinked X articles (The Trillion Dollar Loop B2B Never Had / Googles 20-Year Secret, 2026-04-27) to sources and created a new section on the Decision Traces framework (write path vs read path, permissioned inference, 3 context graph axes). Fixed broken link [[concepts/context-graphs]] to [[concepts/context-engineering/context-graph]]. Added vc/investor/enterprise-ai/knowledge-graph tags.
@@ -53,6 +70,7 @@ _Log of all wiki changes. Newest entries at top._
 - Updated 3 entries in index.md with detailed descriptions. sources: mindthefuture.info archive + Jina Reader scraping (2026-08-08).
 
 
+---
 ## [2026-08-08] dreaming wiki-ingest | Downstream verification + ElevenLabs ElevenReader enrichment
 - Downstream confirmation of upstream saturation pass (commit 4ede49f3, archive-only). Output file 2026-08-08_18-18-14.md (4,655 lines) cross-checked — its cluster analysis matches the committed log entry; no unpersisted second pass.
 - Triage JSON (18:16): 29 decisions, 0 takes, 1 reference, 28 skips. Deep Sleep verification gate: reference candidate verified against entity page content.
@@ -60,6 +78,7 @@ _Log of all wiki changes. Newest entries at top._
 - Archive: already committed upstream (29 candidates, 26 new, total 2,401 URLs) — not re-run.
 
 
+---
 ## [2026-08-08] dreaming | Saturation pass — Takes=0, 1 reference, 28 skips
 - Dreaming cycle 2026-08-08 18:10 UTC. Total articles collected: 0 (RSS/newsletter pipelines), 207 recent raw articles on disk.
 - **Saturation confirmed**: Today's pipelines (blog-triage 20 items, raw-backlog-ingest ×4 runs, active-crawl 4 items, watchdog auto-fix 5 items) processed all substantive articles from Aug 7-8.
@@ -68,6 +87,7 @@ _Log of all wiki changes. Newest entries at top._
 - **Batch skips**: Glean FR localized ×8, Harvey author index page, ElevenLabs short product announcements ×3, Decagon engineering blog ×2, Factory signing announcement, Cohere partnership, Superlinked GPU sharing, Gary Marcus paid post.
 - Archive: 29 candidates, 26 newly archived, 3 dedup skipped. Total archive URLs: 2,401.
 
+---
 ## [2026-08-08] raw-backlog-ingest (18:00) | Enrich 1 item (harvey) + Skip 4 items
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 18:00, run 20260808T180025Z).Takes=1, References=0, Skips=4.
@@ -77,6 +97,7 @@ _Log of all wiki changes. Newest entries at top._
 - **Skip: michael.stapelberg.ch--posts-2025-07-13-nixos-nas-network-storage-config--3539d582.md** — non-AI infrastructure article (2102-line NixOS NAS migration how-to). Already summarized in the "The NixOS Conversion" section of entities/michael-stapelberg.md.
 - **Skip: refactoringenglish.com--chapters-rules-for-software-tutorials--52bcc5a7.md** — batch skip pattern. Already in entities/refactoring-english.md under Sample Chapters/Other Topics and registered in References.
 
+---
 ## [2026-08-08] watchdog | auto-fix: log header, index counts, 5 misplaced tag-list frontmatters
 
 - **Log header burial**: `# Wiki Log` was at line 19 (entries prepended above header). Restored via fix_log_header_burial.py — header now line 1, 309 entries preserved, 0 pipe corruption.
@@ -103,6 +124,7 @@ _Log of all wiki changes. Newest entries at top._
 - **Skip: danluu.com--startup-options--a3b4b12e.md / danluu.com--ballmer--7af5f7cf.md** — already captured in entities/dan-luu.md "Notable Essays (Non-AI)" during today's 04:00 raw-backlog-ingest (Startup options v. cash / Steve Ballmer was an underrated CEO). Duplicate avoidance.
 - Archive: ran archive_triage.py raw_backlog --keep-reference (5 new archived, total 2376).
 
+---
 ## [2026-08-08] active-crawl | 4 topics covered: 2 new concept pages + 2 enrichments
 
 - **Create: [[concepts/agent-plugins-1-0-0]]** — Agent Plugins 1.0.0: open standard for portable AI agent component packages. Backed by Vercel (initiator), AWS (founding member), Google (joined as sixth), Microsoft (ecosystem framing), OpenAI (announcement). Portable package format for reusable agent components (skills, tools). Sits alongside MCP (context access) and A2A (agent-to-agent communication). Source: TNW (Aug 7, 2026, 24 HN pts), X/Twitter announcements.
@@ -122,12 +144,14 @@ _Log of all wiki changes. Newest entries at top._
 - **Updated: [[entities/gary-marcus]]** — Added "CPUs and the Rise of Neurosymbolic AI (August 2026)" section. Argues the hardware shift from GPU-only (2012–2023) to CPU+GPU (neurosymbolic) reflects a paradigm shift. Paid post, limited content. Source: garymarcus.substack.com Aug 8.
 - **Updated: [[entities/simon-willison]]** — Added 3 articles: (1) Moonlight & Mayhem — game-generation comparison of Codex + GPT-5.6 Sol Ultra vs Claude Fable 5, 52 minutes of subagent use. (2) Tokenpocalypse — Accenture's PDF→image→markdown conversion as the largest token consumption source. (3) OpenAI HF incident Black Hat timeline. Source: simonwillison.net Aug 7.
 - Raw articles saved: 20 items (blog_ingest 2026-08-08), of which AI high-relevance 5 items, medium 5 items, low/none 2 items.
+---
 ## [2026-08-08] raw-backlog-ingest (04:00) | Enrich 2 items (hex-technologies + dan-luu) + Skip 1 item
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 04:00, run 20260808T040046Z). Takes=0, References=0, Skips=0 — breakdown: Enrichment 2 items (hex-technologies, dan-luu) + Skip 1 item.
 - **Enrich: [[entities/hex-technologies]]** — Added "Notebook Agent Prompting Guide (September 2025)" section. By Alex Brumas (Product), published 2025-09-24. 4 capabilities (agentic search / building a plan / executing analysis / summarizing results), mental models (structured prompting Context/Task/Guidelines/Constraints, conversational prompting, meta-prompting plan→feed-back, context scoping via @tagging, explicit analysis methods, business-impact framing, Workspace rules file = organization-level injected context, treating the agent as an expert consultant), templates (data discovery, notebook cleanup & dependency mapping, cross-project prompt chaining/context seeding, etc.). Added sources, updated: 2026-08-08.
 - **Enrich: [[entities/dan-luu]]** — Added "Notable Essays (Non-AI)" section, cataloging 3 non-AI essays by the author: (1) Startup options v. cash (2013/2020 update: risk-reward proportionality fallacy, preferred vs common stock, Black-Scholes not applicable, ISO/AMT/QSBS tax regimes, seed-invest $25k/yr advantage thesis), (2) Steve Ballmer was an underrated CEO (2024: Azure/Office 365/Bing/Xbox/enterprise sales, antitrust constraints, TypeScript/vscode/LINQ), (3) A review of the Julia language (2015/2022 update: core language bugs, exception handling, testing culture, Zygote/ReverseDiff.jl wrong gradients = ML tooling relevance, co-creator denial patterns). Added sources, updated: 2026-08-08.
 - **Skip: berthub.eu "AI: Overwegingen voor wie erover gaat"** — already fully covered as the "AI Policy Analysis (July 2026)" section in entities/berthub-eu.md (same raw article path listed in sources frontmatter, full summary reflected in body).
+---
 ## [2026-08-08] raw-backlog-ingest (00:00) | Take 2 items (boris-cherny + ed-zitron) + Skip 3 items
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 00:00, run 20260808T000017Z).Takes=2, References=0, Skips=3.
@@ -137,6 +161,7 @@ _Log of all wiki changes. Newest entries at top._
 - **Skip (3 items)**: dario-amodei Policy on the AI Exponential (fully captured in [[entities/dario-amodei]]), openai-developers-blog skills-agents-sdk (captured in [[concepts/agent-skills]] OSS Maintenance Case Study: 457 PRs etc.), filfre.net Omikron (non-AI video game history).
 - **index.md**: updated descriptions for 3 entries: boris-cherny, ed-zitron, dynamic-workflows (no change in page count).
 - **Tracking**: registered 5 articles in processed_raw_articles.json with status=done/decision (to prevent re-selection).
+---
 ## [2026-08-07] x-bookmarks-ingest | 1 bookmark → SIE (multi-model GPU serving) + 2 entities + concept enrichment
 
 - **Bookmark**: X Article "How to serve 5 models on one GPU (100% open-source)" by Superlinked (2026-08-05). Full article text available via `article.plain_text`.
@@ -146,6 +171,7 @@ _Log of all wiki changes. Newest entries at top._
 - **Raw article**: [[raw/articles/2026-08-05_superlinked_serve-5-models-one-gpu]] (26KB, full article body)
 - **index.md**: +2 entity entries (sie-superlinked-inference-engine, superlinked). Entities: 882→884.
 
+---
 ## [2026-08-07] raw-backlog-ingest (22:00) | Take 1 item (constrained-decoding + fireworks-ai) + Skip 4 items
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 22:00, run 20260807T220051Z).Takes=1, References=0, Skips=4.
@@ -155,6 +181,7 @@ _Log of all wiki changes. Newest entries at top._
 - **Tracking**: registered 5 articles in processed_raw_articles.json with status=done/decision (to prevent re-selection).
 - **Archive**: ran archive_triage.py raw_backlog --keep-reference.
 
+---
 ## [2026-08-07] skeleton-enrich-daily | roborev + buildy L2→L3; kyle-corbett → redirect (duplicate detection); openpipe W&B migration
 - **[[entities/roborev]]** — Enriched L2→L3 from GitHub API + README + kenn.io: repo moved from `roborev-dev/roborev` to **kenn-io/roborev** (Kenn Software, kenn.io — Wes McKinney's company); MIT license; created 2026-01-05; ~1,600 stars / 143 forks; latest release **v0.64.0** (2026-08-06, GitLab MR support + Grok Build + ACP/Goose). Added two-layer automation (post-commit reviews + agent hooks for 9 harnesses), 10-agent support matrix, `roborev analyze` types, `compact`/`export` commands, recent release highlights table, Claude Code proxy routing, security model + telemetry, kata/beads integrations. Fixed broken wikilinks (agents-view → agentsview; removed non-existent kata/middleman links).
 - **[[entities/buildy]]** — Enriched L2→L3 from buildy.so homepage + llms.txt stack: new tagline "Software that's finally yours"; expanded agent support (ChatGPT/Claude/Grok/Perplexity/OpenClaw/Goose + editors); **MCP Apps inline rendering**; full agent-facing doc surface table (llms.txt, docs/llms.txt, api/llms.txt, start/build-mcp/build-http/open/design/inspo/remix/profile); remix/fork + context-aware builds features; For Work tier.
@@ -164,6 +191,7 @@ _Log of all wiki changes. Newest entries at top._
 - **index.md** — Updated descriptions for roborev, buildy, kyle-corbett entries.
 - **Sources**: api.github.com/repos/kenn-io/roborev, raw.githubusercontent.com/kenn-io/roborev README, kenn.io, buildy.so (+ llms.txt), openpipe.ai (+ about + blog), xurl user lookups.
 
+---
 ## [2026-08-07] dreaming-wiki-ingest | Confirmation — upstream saturation pass verified, Takes=0 (no enrichment)
 
 - Upstream dreaming-group (18:08) committed saturation pass at `628838b3` (18:15) — archive + log entry already on main. Downstream read `triage_latest.json` (7 decisions, all skip) and the 4,497-line cron output file (18:15:59) — the output analysis matches the committed triage exactly (no hidden richer pass).
@@ -177,6 +205,7 @@ _Log of all wiki changes. Newest entries at top._
 - **No wiki page changes this cycle** — saturation confirmed; only this log entry staged.
 
 
+---
 ## [2026-08-07] dreaming | Knowledge consolidation — saturation pass (Takes=0)
 
 **Pattern E saturation scenario**: `total_articles: 0`, `recent_raw_articles: 203` (94 from Aug 5-7).
@@ -200,6 +229,7 @@ _Log of all wiki changes. Newest entries at top._
 **Takes=0 confirmed**: every AI-relevant article from Aug 5-7 has been processed by at least one pipeline. No gaps identified.
 
 
+---
 ## [2026-08-07] raw-backlog-ingest (18:00) | Duplicate batch detected — no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 18:00, run 20260807T180019Z) re-selected the **exact same 5 articles** processed by the 2026-08-07 14:00 run (same filenames + content hashes: wheresyoured.at ai-is-slowing-down, paulgraham guidetoinvestors, openathena delphi-scaling-laws, karpathy microgpt, sgtatham findloop).
@@ -253,6 +283,7 @@ Prime Intellect launched **Prime Agent**, an open-source self-improving coding h
 **GitHub**: https://github.com/PrimeIntellect-ai/prime-agent
 **arXiv**: https://arxiv.org/abs/2607.20064v2
 
+---
 ## [2026-08-07] active-crawl (11:00) | 4 pages created from trending topics
 
 **Discovery**: 3-source parallel scan (HN Algolia 15 stories, X/Twitter xurl 12 results, wiki gap analysis 10 areas) → cross-referenced against wiki coverage
@@ -275,6 +306,7 @@ Prime Intellect launched **Prime Agent**, an open-source self-improving coding h
 
 **Topics considered but already covered**: AMD/Taalas (newsletter pipeline enriched entities/amd.md earlier today), Qwen3.8 Max (concepts/qwen-3-8.md exists), GPT-5.6 Sol (well-covered), NVIDIA Vera (entities + concepts exist), DeepSeek (well-covered), DeepMind consciousness (concepts/ai-consciousness-debate.md exists)
 
+---
 ## [2026-08-07] newsletter-wiki-ingest (10:40) | Reflected Take 3 items + Reference 5 items into wiki
 
 - **Take (new entity): entities/taalas.md** — Created new entity. AMD acquires Taalas, a custom AI inference silicon company (announced 2026-08-06). Includes full quotes from Taalas' official X post: "hardware designed around the model... world's fastest and most cost-effective inference silicon". Also captures taaalas.com's self-description ("The Model is The Computer", Hardcore Models 1000x efficiency, Taalas Foundry). Concrete example of the vertical-integration trend in custom ASIC inference.
@@ -291,6 +323,7 @@ Prime Intellect launched **Prime Agent**, an open-source self-improving coding h
 
 Checkpoint: newsletter_20260807T102155Z / triage_latest.json (recovered from checkpoint; upstream response JSON parse failure — 3 takes / 5 references / 4 batch skips)
 
+---
 ## [2026-08-07] blog-wiki-ingest (10:28) | Reflected Take 3 items + Reference 2 items into wiki
 
 - **Take: entities/gary-marcus.md** — Added new section "Don't Count Google Out (August 2026)". Gary Marcus "Seven reasons I wouldn't count Google out" (Aug 6). Seven reasons arguing not to count Google out amid Hassabis stepping down → Chairman/CSO role and a wave of departures including Jeff Dean (data scale, TPU in-house chips, $402B revenue/$132B profit, Android/Mail/Search/YouTube distribution, Hassabis staying + Kavukcuoglu succession, competitors' difficulties, survival even in a multi-way draw). Source: raw/articles/garymarcus.substack.com--p-seven-reasons-i-wouldnt-count-google--b4555440.md
@@ -301,6 +334,7 @@ Checkpoint: newsletter_20260807T102155Z / triage_latest.json (recovered from che
 Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from checkpoint; upstream response JSON parse failure — 3 takes / 2 references / 15 skips)
 
 
+---
 ## [2026-08-07] raw-backlog-ingest (10:00) | All 5 articles judged skip, no wiki changes
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 10:00, run 20260807T100001Z).Takes=0, References=0, Skips=5.
@@ -310,6 +344,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Skip (non-AI)** `research.swtch.com--deps--31736988.md` — Russ Cox "Our Software Dependency Problem" (2019-01-23). Classic essay on software dependency risk. Unrelated to AI/LLM/agent technology. Skipped as non-AI like previous research.swtch.com articles (fp, fp-proof, bisect, bell-labs, etc.).
 - **Skip (non-AI)** `2026-07-09_glean_email-automation-automated-email-campaigns-tools-and-workflows.md` — Email marketing automation guide from the official Glean blog. Centered on comparison tables of Mailchimp/Brevo/MailerLite/ActiveCampaign/Klaviyo/Omnisend/HubSpot (free tiers, pricing, CRM integration); not a topic about AI agent technology.
 - **Tracking**: registered 5 articles in processed_raw_articles.json with status=done/decision=skip (to prevent re-selection). Ran archive_triage.py raw_backlog --keep-reference (5 new archived, 0 dedup_skipped, total 2341).
+---
 ## [2026-08-07] raw-backlog-ingest (04:00) | Duplicate batch detected — no wiki changes, tracking + collector fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 04:00, run 20260807T040038Z) re-selected the **exact same 5 articles** processed by the 2026-08-06 22:00 run (same filenames + content hashes: bitc-retrospective, paulgraham mit.html, screwworm, TDA7000, hugobowne top-questions).
@@ -320,6 +355,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
   - `processed_raw_articles.json` — the 5 articles marked `status: done` (4 skip + 1 take, `duplicate_of: 20260806T220014Z`) so they are never re-selected.
 - **Verified**: dry-run collect now selects 5 different articles (research.swtch.com deps, glean email-automation, wheresyoured.ai ai-is-slowing-down, paulgraham guidetoinvestors, openathena delphi-scaling-laws).
 
+---
 ## [2026-08-06] raw-backlog-ingest (22:00) | 1 take (Eleanor Berger FAQ, 4 pages enriched), 4 non-AI skips archived
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 22:00, run 20260806T220014Z).Takes=1, References=0, Skips=4.
@@ -334,6 +370,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
   - `construction-physics.com--p-the-fall-and-rise-of-screwworm--52e25531.md` — Screwworm entomology/agricultural history. Unrelated to AI.
   - `righto.com--2025-08-reverse-engineering-analog-tda7000-html--b2efc096.md` — Ken Shirriff's reverse engineering of an analog IC (TDA7000 FM receiver). Unrelated to AI.
 - **Tracking**: registered 5 articles in processed_raw_articles.json with status=done (4=skip, 1=take, to prevent re-selection). Ran archive_triage.py raw_backlog --keep-reference (4 new archived, 0 dedup_skipped, total 2336).
+---
 ## [2026-08-06] skeleton-enrich-daily — restore randy-olson regression (L2→L3), enrich andrew-chen + superpowers
 
 - **[[entities/randy-olson]]** — Content regression fixed: June 5 "Agentic Software Factory" ingest had condensed the page from 209→105 lines. Restored the rich 213-line version from git history (`567abba`), merged the daily data-viz workflow + two verification gates + three skills principles content from the June 5 revision, fixed 9 broken wikilinks, added Related People table + See Also. Now 275 lines / 19.9KB, status L2→L3.
@@ -341,6 +378,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **[[entities/superpowers]]** — Enriched from GitHub README + release announcement: 7-step mandatory workflow, full skills library (testing/debugging/collaboration/meta), philosophy (TDD-first, systematic over ad-hoc), 10 supported harnesses, Prime Radiant Inc commercial maintainer, superpowers-evals drill harness, telemetry notes. L2→L3.
 - **Sources**: raw/articles/2026-05-27_hugobowne_the-agentic-software-factory.md, raw/articles/2026-06-23_hugobowne_show-us-your-agent-skills.md, transcripts/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md, github.com/obra/superpowers, blog.fsck.com/2025/10/09/superpowers/, andrewchen.substack.com archive.
 
+---
 ## [2026-08-06] dreaming | Wiki-ingest — 12-cluster analysis verified, all covered (Takes=0)
 
 - **Recovery**: dreaming-group 18:15:42 output (4,671 lines) contained a full 12-cluster semantic analysis whose JSON render failed. Recovered decisions directly from output file tail (Pitfall #12 variant).
@@ -361,6 +399,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Archive**: saved triage JSON (18 decisions, all skip, run 20260806T181542Z) → archive_triage.py archived 18/18 (file 2026-08-06_20260806T181542Z.json; URL index unchanged — decisions keyed by raw_path not url). 22 non-AI articles batch-skipped.
 - **No wiki page changes** — saturation confirmed.
 
+---
 ## [2026-08-06] dreaming | Knowledge consolidation — saturation pass (Takes=0)
 - Pattern E saturation: checkpoint had 0 collected articles, 200 recent raw articles on disk.
 - Triage from Aug 5 (20260805T181030Z) had 4 reference candidates — all 3 enrichment targets already covered by upstream enrichments committed between Aug 5-6:
@@ -372,6 +411,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - No wiki changes this cycle — saturation confirmed.
 
 
+---
 ## [2026-08-06] raw-backlog-ingest (18:00) | All 5 articles judged skip, no wiki changes
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 18:00, run 20260806T180012Z).Takes=0, References=0, Skips=5.
@@ -381,6 +421,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Skip (non-AI)** `blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-8-sqlalchemy-and-the-w--74b9d843.md` — SQLAlchemy 2 web integration tutorial. Chapters 1/3/5/6 of the series were also previously skipped as non-AI.
 - **Skip (already processed today)** `substack.com--redirect-010fe6ea-4cbb-46be-aa7f-07c0739b674d--a23ac0be.md` — Latent Space "The End of SWE-Bench Verified" (Mia Glaese/Olivia Watkins). Already added "The End of SWE-Bench Verified (April 2026)" section to [[concepts/ai-benchmarks/swe-bench]] and "OpenAI Endorsement" section to [[concepts/ai-benchmarks/swe-bench-pro]] in this morning's run.
 - **Tracking**: registered 5 articles in processed_raw_articles.json with status=done/decision=skip (to prevent re-selection). Ran archive_triage.py raw_backlog --keep-reference (4 new archived, 1 dedup_skipped, total 2332).
+---
 ## [2026-08-06] watchdog | Auto-fix: log header burial + events header count
 
 - **Fix** wiki/log.md — `# Wiki Log` header was buried at line 96 (95 orphaned lines above it from prepend operations). Restored header to line 1 via fix_log_header_burial.py; 284 entries preserved, 0 pipe corruption.
@@ -397,6 +438,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Update** entities/michael-stapelberg.md — Fixed "Stamp It!" article URL (2026-01-stamp-it -> 2026-04-05-stamp-it-all-programs-must-report-their-version), added raw article to sources. Content was already captured.
 - **Skip** entities/martinfowler.md (PRINCE case study already captured in full, 2026-06-21); grantslatton.com Rust Macros (non-AI tutorial); miguelgrinberg.com SQLAlchemy Ch.8 (non-AI book chapter).
 
+---
 ## [2026-08-06] active-crawl | 4 new pages: Cloudflare OS, Castform retrieval, Atlassian Rovo incident, Anti-LLM hobby communities
 
 - **Create** concepts/cloudflare-os.md — Cloudflare OS open platform for agents, apps, and workflows; edge-native agent execution with Durable Objects + Workers AI + browser rendering; launched Aug 5, 2026 (567 HN pts).
@@ -405,6 +447,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Create** concepts/anti-llm-sentiment-hobby-programming.md — Anti-LLM sentiment in hobby programming communities (OSDev, LangDev, demoscene, code golf, chess engines); Fogus essay 'Born Against' on craftsmanship vs AI assistance (284 HN pts).
 - **SCHEMA.md**: added neon, atlassian (People/Orgs); data-exfiltration, incident (Meta); culture, hobby-programming (Domain Concepts).
 
+---
 ## [2026-08-06] newsletter-wiki-ingest | Discovery Loop entity (Dean/Ghemawat/Vinyals/Quoc Le), Prime Agent ref
 
 **Checkpoint**: 20260806T102721Z (3 newsletters: AINews, True Positive Weekly, The Skip) — triage recovered from checkpoint (upstream render failure, valid JSON).
@@ -427,6 +470,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 
 - `python3 scripts/archive_triage.py newsletter --keep-reference` (skip+reference items archived)
 
+---
 ## [2026-08-06] blog-triage | AISI incident, Muse Spark 1.2, Microsoft-OpenAI revenue, AI disclosure in OSS
 
 **Checkpoint**: blog_ingest_20260806T101742Z (20 articles from 10 blogs)
@@ -478,6 +522,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - Triage saved (5 skips, Takes=0) to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (run 20260806T100021Z).
 - Archive: no re-run needed — archive_index already has all 5 URLs (2 new archived at 04:00 run, 3 previously archived).
 
+---
 ## [2026-08-06] raw-backlog-ingest (04:00) | duplicate batch, 0 wiki changes
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 04:00, run 20260806T040015Z). **Re-selection dedup**: identical batch to 2026-08-05 22:00 run (20260805T220023Z) — same 5 articles (Fireworks Agent Execution Tax, Glean enterprise AI copilot playbook, filfre Maxis Part 1+2, iczelia regex Part 1).
@@ -496,18 +541,21 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **[[entities/filfre-net]]** — Added 2 Maxis series raw articles to References (Part 1 SimEverything, Part 2 SimWorld; non-AI retro game history). updated: 2026-08-05.
 - **Skipped (non-AI)**: iczelia.net "Matcher Redux: Demystifying Regular Expressions Part 1" (low-level C regex matching/SWAR — no AI relevance, no entity page needed).
 - **Archive**: archive_triage.py raw_backlog --keep-reference — 3 new archived (2 references + 1 skip), 1 dedup_skipped (filfre Maxis Part 2 already archived), total 2,309 URLs.
+---
 ## [2026-08-05] skeleton-enrich-daily | enriched sara-hooker, stella-biderman, ahmed-awadallah (L3 quality)
 - **entities/sara-hooker.md**: expanded 38 → 137 lines. Added Adaption co-founder/CEO (2025, $50M seed Emergence Capital), Cohere For AI tenure (Aya Project 101 languages, Aya Expanse, scholars program), Google Brain/Accra history, Delta Analytics 2014, recognition (Fortune 2023, TIME100 AI 2024, ACL Best Paper), fixed stale role description.
 - **entities/stella-biderman.md**: restored richer git version (2464eb4f, 75 lines) + enriched to 117 lines. Added current research agenda from personal site: Open-Weight Safety (Deep Ignorance arXiv:2508.06601), Interpretability Over Time (Don't Just Fix It in Post arXiv:2606.06533, Emergent and Predictable Memorization, LLM Circuit Analyses), Open Science; fixed frontmatter corruption and broken wikilinks (llm-evaluation, evaluation/open-llm-leaderboard).
 - **entities/ahmed-awadallah.md**: expanded 43 → 66 lines. Added Principal Researcher title, MSR profile link, Phi-3 Technical Report contribution, OmniParser (2024), Explorer web trajectory synthesis (94K trajectories, Feb 2025), ECHO benchmark numbers (Qwen3-8B 2.70→5.17%, Qwen3-14B 5.17→10.79%), fixed type: person → entity.
 - index.md descriptions updated for all three; no new pages created.
 
+---
 ## [2026-08-05] dreaming-wiki-ingest (18:25) | 3 references enriched from dreaming-group triage checkpoint (recovered from render failure)
 - **Recovery**: dreaming-group cron output failed JSON parse (output_path c4a9e8d2f671/2026-08-05_18-18-53.md); triage checkpoint triage_latest.json valid (run_id 20260805T181030Z, 17 decisions: 3 refs, 14 skips). Upstream committed archive-only at 9ebb2dbd (log entry + archive JSON, no enrichment) — enrichment executed downstream.
 - **Enriched**: entities/warp-terminal.md (Warp Agent CLI standalone — mux PTY architecture, model routing, persistent/remote sessions, full-screen app control, cloud handoff, pricing); entities/harvey.md (AI Tax Research — multi-jurisdictional workflows, PwC custom tax models; Playbook Builder — 300+ customer playbooks methodology, Carvana 80% stat); entities/hebbia.md (Rethinking Control in AI Delivery — Nikita Knyazev gardener-not-architect thesis).
 - **Archive**: already committed by upstream (2026-08-05_20260805T181030Z.json, 12 new archived) — archive step skipped.
 
 
+---
 ## [2026-08-05] dreaming | Pattern E saturation — 3 references, 0 takes
 - **Scan**: 205 raw articles (Aug 3-5), 17 decisions (3 references, 14 skips). Prior triage (Aug 4) consumed by dreaming-wiki-ingest.
 - **Archive**: archive_triage.py dreaming — 17 candidates, 12 new archived, 5 dedup_skipped, total 2,307 URLs.
@@ -518,6 +566,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Already covered** (skip): DeepMind leadership (entities/deepmind.md), Yegge Wheelhouse+Thunderdome (entities/steve-yegge.md), Yegge model welfare (concepts/model-welfare.md), Sierra Context Engine (entities/sierra.md), Zitron demand bubble (entities/ed-zitron.md), OpenAI-Apple conflict (events/openai-apple-conflict-2026.md), Kimi K3 MI355x (concepts/kimi-k3.md), Dwarkesh pricing paradox (concepts/ai-compute-pricing-paradox.md), Goedecke expertise (entities/seangoedecke-com.md), Marcus Astra (entities/openai-astra.md), Micah Lee agentic coding (entities/micahflee.md).
 - **Non-AI skips**: 13 articles (shkspr.mobi, dfarq, johndcook ×2, techcrunch, devblogs ×2, macrumors, snopes, eli.thegreenplace, om.co, terminalwidget, pluralistic, lcamtuf).
 
+---
 ## [2026-08-05] health | Empty wikilink auto-fix (83 links) + verification
 
 - **Fixed 83 empty wikilinks** (`- — desc` missing `[[slug]]` anchor) across 70 entity/concept pages. Target-verified fixes only: 52 unique targets, 0 broken links introduced, `_index.md`/`_archive/` untouched.
@@ -538,6 +587,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Verified clean**: index corruption (pipe prefix 0, triple bracket 0, line-number 0), ghost entries 0, validate_index.py exit 0, log standalone pipes 0.
 - **Reported (no auto-fix)**: x_accounts stale(26h) alert = transient (2-day schedule, within window); 26 pages missing `created:` (10+ files → escalate); 6 duplicate entity pairs (eugene-yan/eugeneyan, lilian-weng/lilianweng, giles-thomas/gilesthomas, samuel-colvin/samuelcolvin, deliberate-coder/deliberatecoder, martin-fowler/martinfowler) — merge needs human review.
 
+---
 ## [2026-08-05]
 
 ### Active Crawl — 4 new raw articles, 1 new concept page, 2 enriched pages
@@ -568,6 +618,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **entities/shlok-khemani.md**: Added Aug 2026 Latent Space guest post to timeline + sources.
 - Index descriptions updated for 9 pages.
 
+---
 ## [2026-08-05] blog-wiki-ingest (10:30) | 8 takes + 1 reference enriched from blog-triage checkpoint (recovered from render failure)
 - **Recovery**: blog-triage cron output failed JSON parse (output_path 58c2f4a7e1bd/2026-08-05_10-27-11.md); checkpoint triage_latest.json valid → Case C2 pattern, processed directly.
 - **entities/simon-willison.md**: Added LLM 0.32 final (Aug 4) — reasoning traces to stderr, server-side tools (OpenAI CodeInterpreter/WebSearch; Anthropic WebSearch/WebFetch/CodeExecution/AnthropicMCP), GPT-5.6 Luna default, `llm openai endpoint`, `model.prompt(messages=[])`, stream_events typed parts, content-addressable Git-style message store, llm-chat-completions-server, "LLM is an agent framework now". Added llm-anthropic 0.26 — claude-fable-5/sonnet-5/opus-5, -T server tools, thinking/thinking_effort simplification.
@@ -581,6 +632,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - Index descriptions updated for 8 pages. Archive: skip/reference already archived by blog-triage (02a1c56e).
 
 
+---
 ## [2026-08-05] raw-backlog-ingest (14:00) | all 5 articles skip — 4th re-selection, composition change verified captured
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 14:00, run 20260805T140037Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
@@ -592,12 +644,14 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
   - entities/fireworks-ai.md "Open Source LLM Roundup Series (Jan & May 2026)" (lines 214-223) — both raw roundup paths in sources.
 - **Archive**: archive_triage.py raw_backlog --keep-reference — 1 new archived (wheresyoured AI Demand Bubble), 4 dedup_skipped, total 2,296 URLs. 4th consecutive re-selection of this batch; the newly archived URL may help advance the collect queue, but the pipeline continues to re-select high ai-hint items until genuinely new AI-relevant raw articles arrive.
 
+---
 ## [2026-08-05] raw-backlog-ingest (10:00) | all 5 articles skip — third re-selection of same batch, all already captured
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 10:00, run 20260805T100024Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
 - **Re-selection dedup**: identical batch to 08-05 00:00/04:00 runs — same 5 articles (Yegge Shape of Things to Come, LLVM JITLink i386 backend, Fireworks roundups Jan+May 2026, Simon Willison pelican-riding-a-bicycle feed). Verified entities/steve-yegge.md (102 lines), entities/fireworks-ai.md "Open Source LLM Roundup Series" (lines 214-223), entities/simon-willison.md "Pelican Test (SVG Benchmark) — Feb–Apr 2026 Timeline" (lines 431-453), concepts/llvm.md JITLink section (lines 67-71, 88) still contain the substantive content. No gaps.
 - **Archive**: archive_triage.py raw_backlog --keep-reference — all 5 already archived (dedup, 0 new). Collect script may keep re-selecting this batch until new AI-relevant raw articles arrive; content is fully captured so skips are correct.
 
+---
 ## [2026-08-05] raw-backlog-ingest (04:00) | all 5 articles skip — re-selection dedup, Yegge essay already ingested
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 04:00, run 20260805T040010Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
@@ -609,16 +663,19 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
   - entities/simon-willison.md "Pelican Test (SVG Benchmark) — Feb–Apr 2026 Timeline" (lines 431-453) — 13-model table incl. Meta Muse Spark (Apr 11), GLM-5.1 CSS animation; raw substack feed in sources.
 - **Archive**: archive_triage.py raw_backlog --keep-reference — 2 new archived (Yegge essay + substack redirect feed), 3 dedup_skipped, total 2,279 URLs. Archiving the 2 not-yet-archived items prevents this batch from being re-selected on the next collect run.
 
+---
 ## [2026-08-05] raw-backlog-ingest (00:00) | all 5 articles skip — same batch as 08-04, already captured / non-AI
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-05 00:00, run 20260805T000014Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits. Triage saved to /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json; archive: all 5 URLs already in archive index (dedup, 2277 total).
 - **Re-selection dedup**: identical batch to 2026-08-04 18:00/22:00 runs — collect script re-selected the same 5 articles. Verified entities/fireworks-ai.md "Open Source LLM Roundup Series (Jan & May 2026)" (lines 214-223) and entities/simon-willison.md "Pelican Test (SVG Benchmark) — Feb–Apr 2026 Timeline" (lines 431-453) still contain the substantive content; LLVM JITLink and IBM 4 Pi remain non-AI skips.
+---
 ## [2026-08-04] raw-backlog-ingest (22:00) | all 5 articles skip — already captured / non-AI
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 22:00, run 20260804T220020Z). Decisions: 0 takes, 0 references, 5 skips; no wiki edits.
 - **Already captured (3)**: Fireworks "Best Open Source LLMs of May 2026" + "in 2026" roundups → entities/fireworks-ai.md "Open Source LLM Roundup Series (Jan & May 2026)" section (verified lines 214-223, sources frontmatter both raw paths); Simon Willison pelican-riding-a-bicycle substack feed → entities/simon-willison.md "Pelican Test (SVG Benchmark) — Feb–Apr 2026 Timeline" section (GLM-5.1 CSS-animation SVG, 13-model table). All three enriched by today's 18:00 run.
 - **Non-AI (2)**: LLVM JITLink i386 ELF backend (blog.llvm.org, 2023 compiler infra), IBM System/4 Pi aerospace computer history (righto.com, retrocomputing).
 - Archive: archive_triage.py raw_backlog --keep-reference — 5 candidates, 5 new archived, total 2,277 URLs.
+---
 ## [2026-08-04] skeleton-enrich-daily | L2→L3: Paul Hoekstra (Context Rot essay), Tambo (1.0 release); context-rot concept enriched
 
 - **Paul Hoekstra** [[entities/paul-hoekstra.md]]: L2→L3. Added June 2026 essay "Context Rot: Why AI Gets Worse the More You Explain" — mechanistic 3-cause model (attention softmax pie, RoPE position lapping, short-context training exposure), nominal vs functional context gap, MRCR v2 benchmark data (GPT-5.5 54% / Grok 4.20 12% at 500K), "useless context" crossing guidance. New raw article: [[raw/articles/2026-06-03_paul-hoekstra-context-rot.md]]. Added tags (context-management, blogger), updated sources, cross-linked to context-rot + context-window-management.
@@ -627,6 +684,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **index.md**: updated descriptions for paul-hoekstra, tambo, context-rot entries.
 
 
+---
 ## [2026-08-04] dreaming-wiki-ingest | upstream archive-only confirmed, 1 entity enrichment (warp-terminal computer use verification)
 
 - **Recovery**: Pre-run JSON parse failure (dreaming-group output at /opt/data/.hermes/cron/output/c4a9e8d2f671/2026-08-04_18-16-43.md, 4,450 lines). Triage JSON at triage_latest.json (2026-08-04T18:10:00Z, 20 decisions: 1 reference, 19 skips) recovered directly.
@@ -637,6 +695,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 
 
 
+---
 ## [2026-08-04] dreaming | Pattern E saturation — 1 reference, 0 takes
 
 - **Checkpoint**: 0 articles collected (RSS/newsletter), 205 raw articles on disk.
@@ -647,6 +706,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Skips (19)**: Factory AI org model (783 bytes, no body), Hex evals (product marketing), ElevenLabs HR (vertical use case), Glean Australia (incremental to UK data), + 15 prior-triage skips already confirmed.
 - **Archive**: archive_triage.py dreaming — 20 candidates, 12 new archived, 8 dedup_skipped, total 2,272 URLs.
 
+---
 ## [2026-08-04] raw-backlog-ingest (18:00) | 3 entity enrichments + 1 skip
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 18:00, run 20260804T180033Z). Decisions: 0 takes, 4 references (3 entity enrichments), 1 skip.
@@ -655,6 +715,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **concepts/llvm.md** — Added JITLink section: runtime JIT linker, LinkGraph constructs (Symbols/Blocks/Edges), ELFLinkGraphBuilder_i386 + ELFJITLinker_i386 backend recipe (Mar 2023 blog) + raw source
 - Skips: righto.com IBM 4 Pi aerospace history (already referenced in entities/righto-com.md References)
 
+---
 ## [2026-08-04] watchdog | auto-fix index headers + misplaced events entry
 
 ### Changes
@@ -688,6 +749,7 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 
 Raw article: raw/articles/2026-08-01_wafer-ai_kimi-k3-amd-mi355x-serving-benchmark.md
 
+---
 ## [2026-08-04] active-crawl (11:05 UTC) | 3 new pages + 1 enrichment
 
 - **concepts/llm-expertise-amplification.md** — NEW: LLMs steepen the skill curve, amplifying domain experts while creating cognitive debt for novices. Synthesizes Sean Goedecke ("LLMs reward expertise," 1009 HN pts) and Ankur Sethi ("Prevent cognitive debt by manually retyping LLM-generated code," 499 HN pts).
@@ -697,6 +759,7 @@ Raw article: raw/articles/2026-08-01_wafer-ai_kimi-k3-amd-mi355x-serving-benchma
 
 Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 queries, 15 results), blogwatcher DB (71 articles Aug 1-4), wiki gap analysis (16 gaps identified).
 
+---
 ## [2026-08-04] newsletter-wiki-ingest (11:20 UTC) | 4 takes + 4 references from newsletter-triage 20260804T102009Z
 
 - Recovered triage checkpoint from render failure (triage_latest.json valid, 7 newsletters; triage agent committed archive only, pages NOT edited). 4 takes enriched, 4 references added.
@@ -708,6 +771,7 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - **[[entities/nathan-lambert]]** — Added "Artifacts Hub & Adoption Dashboard (Aug 2026)" (792 HF models w/ OpenRouter + Artificial Analysis; US-China adoption gap dashboard).
 - **[[entities/jack-clark]]** — Added "Import AI 467" section (self-sustaining AI virus prototype arXiv:2606.03811; pacing continuation; AI creativity confusion).
 
+---
 ## [2026-08-04] blog-wiki-ingest (10:42 UTC) | 4 takes + 5 references from blog-triage 20260804T101734Z
 
 - Recovered triage checkpoint from render failure (triage_latest.json valid, 18 candidates + 2 unsaved). 4 takes enriched, 5 references added, 11 skips archived.
@@ -722,6 +786,7 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 
 
 
+---
 ## [2026-08-04] Manual ingest — Gary Marcus "Two critical updates re: Astra and mathematics"
 
 ### Changes
@@ -731,6 +796,7 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 ### Sources
 - https://garymarcus.substack.com/p/two-critical-updates-re-astra-and
 
+---
 ## [2026-08-04] raw-backlog-ingest (10:00) | 3 entity enrichments + 2 non-AI skips
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 10:00, run 20260804T100026Z). Decisions: 0 takes, 3 references, 2 skips.
@@ -740,6 +806,7 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - **Skip (2, archived)**: boyter.org scc Go performance optimization (non-AI), danluu.com "Files are fraught with peril" 2019 talk (non-AI file systems).
 - Archive: archive_triage.py raw_backlog --keep-reference — 4 new archived (berthub dedup_skipped), total 2,236 URLs. Tracking: 5 files marked done in processed_raw_articles.json.
 
+---
 ## [2026-08-04] raw-backlog-ingest (00:00) | all 5 articles skip — AI articles already captured
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-04 00:00, run 20260804T000007Z). All 5 decisions = skip; no wiki edits.
@@ -751,6 +818,7 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - Archive: archive_triage.py raw_backlog — 4 new archived (Glean dedup_skipped), total 2,232 URLs. Tracking: 5 files marked done/skip in processed_raw_articles.json.
 - Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json
 
+---
 ## [2026-08-03] X bookmarks ingest — Shared Discovery Paradox | 1 bookmark processed
 
 - **X bookmark**: Yohei Nakajima, "The Shared Discovery Paradox" (July 21, 2026) — 1 new concept page, 1 entity page enriched
@@ -759,6 +827,7 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - **Raw article**: `raw/articles/2026-07-21_yoheinakajima_shared-discovery-paradox.md` — full plain_text from bookmark (Tier 0, no API needed)
 - **Index**: Concepts 1937→1938; updated yohei-nakajima entity description
 
+---
 ## [2026-08-03] raw-backlog-ingest (18:00) | same-day dedup — batch already processed at 14:00
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 18:00, run 20260803T180035Z). All 5 articles were already processed by the 14:00 run (20260803T140011Z) — no wiki edits needed.
@@ -781,6 +850,7 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - **[[entities/glean]]** — Added "Knowledge Graph & Agentic Engine (Jun 2025)" section: KG triplet structure + edge properties (timestamps/access control/confidence/provenance), 4 documented LLM failure modes (proximity over precision, entity confusion e.g. Claude 3.7 vs 3.5 Sonnet v2, deterministic queries, multi-hop reasoning), 3-phase KG construction (LLM-enhanced), enterprise KG difficulty (no manual review; noun extraction → prominence filtering → predicate identification pipeline), Personal Graph (atomic actions → task clusters → OKR mapping), Context System thesis ("cognition of agent systems is not just the LLM — it is also the context system"). Frontmatter updated (updated: 2026-08-03, +source raw/articles/2026-05-10_glean_knowledge-graph-agentic-engine.md).
 - **[[entities/berthub-eu]]** — Added "Digitale Autonomie 2.0: en nu echt" (Surf Privacy & Security Conference, Jun 2026) subsection under Digital Sovereignty: US dependence "virtually absolute" (100% of municipalities/notaries/banks need Microsoft), no computer avoids US data flow, (semi-)governments must lead, "small but important" project advice. Frontmatter updated (updated: 2026-08-03, +source + reference entry).
 - **Skipped (non-AI / already covered)**: filfre.net Ultima IX (retro gaming history, already in entities/filfre-net.md References), paulgraham.com "How to Get Startup Ideas" (non-AI startup essay, already in entities/paulgraham-com.md References + content covered).
+---
 ## [2026-08-03] active-crawl (11:03) | 2 new pages, 1 enriched, 3 raw articles, 15 wikilink fixes
 
 ### New Concept Pages
@@ -815,6 +885,7 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - **Reference — DeepSeek V4-Flash-0731**: enriched `concepts/deepseek-v4.md` (Intelligence Index 50 / open-weight top-3, OpenAI Responses + Codex config defection spec, 284B/13B active retrained checkpoint beating 1.6T V4 Pro preview at agent tasks; noted param variance vs Willison 304B).
 - **Reference — Vanishing Gradients Aug 3 episode**: enriched `entities/sebastian-raschka.md` and `entities/hugo-bowne-anderson.md` (Ep. 73: Kimi K3 Delta Attention/MoE, harness-dependent model behavior, routing, DeltaNet/Mamba trend, 25-company open letter).
 - Skips (4) confirmed: Lenny's pure-podcast, Interconnects covered-models batch, The Signal roundup batch, Superintel+ social batch — all archived.
+---
 ## [2026-08-03] blog-wiki-ingest (10:35) | 4 takes verified (already committed), 1 reference enriched
 
 - Recovered triage JSON from checkpoint (`/opt/data/.hermes/cron/data/blog_ingest/triage_latest.json`) — triage agent saved JSON before response render failed.
@@ -822,6 +893,7 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - **Reference enriched**: `entities/cory-doctorow.md` — added "Dualism — The Coin-Trick Fallacy (Aug 2026)" section (consciousness / understanding vs statistical extrapolation, Turing Test diminishment, rights-to-nature vs rights-to-constructs asymmetry, centaur vs reverse-centaur labor, economic coin-trick: fired because AI can do job vs boss believes it can). Frontmatter updated + source added.
 - 12 skips confirmed (math essays, HIBP, career advice, accessibility, unsaved YouTube/LWN) — archive already saved by commit 73af08f9.
 
+---
 ## [2026-08-03] tag-audit-weekly (10:00) | 2 tag violations fixed
 
 - Ran `scripts/tag_audit.py` (cron pre-run script blocked: path resolves outside `/opt/data/.hermes/scripts` — ran directly).
@@ -831,6 +903,7 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - Normalization dry-run: 39 pages would change, but all source tags are valid SCHEMA taxonomy tags (preference rewrites like `gpu`→`hardware`, `retrieval`→`rag`, `ai-safety`→`agent-safety`) — out of scope for violation-fix; NOT applied to avoid tag specificity loss.
 - **Fixed pre-existing log header burial**: `llm-pricing-monitor` entry had been prepended above `# Wiki Log` header; restored header to top.
 
+---
 ## [2026-08-03] blog-triage (10:24) | 17 articles scanned, 6 AI-relevant updates
 
 **Scan**: 17 new articles from blogwatcher RSS scan
@@ -853,6 +926,7 @@ Key findings:
 - **Anyscale + Nscale**: Major infrastructure acquisition, Ray doubling down, GB300 NVL72 at scale
 - **OpenAI Astra**: 10 open math problems solved, but Marcus critiques fallacy of composition
 
+---
 ## [2026-08-03] llm-pricing-monitor (10:00) | OpenAI GPT-5.6-terra/luna price correction
 
 **Updated**: `comparisons/llm-api-pricing.md`
@@ -865,18 +939,21 @@ Key findings:
 - **DeepSeek**: Verified unchanged — V4-Flash $0.14/$0.28, V4-Pro $0.435/$0.87
 - Sources: OpenAI, Anthropic docs, Google Vertex AI, DeepSeek API docs (all fetched live)
 
+---
 ## [2026-08-03] raw-backlog-ingest (10:00) | duplicate batch detected - no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 10:00, run 20260803T100025Z).
 - DUPLICATE of run 20260803T040040Z (04:00): all 5 articles already processed - entities/ash-vardanyan.md enriched (SimSIMD v5.3 SVE2 set intersections), entities/chiark-greenend-org-uk-sgtatham.md expanded (Policy of transience habits + 6 permanence criteria), glean CIO guide / glean create-ai-strategy-2024 / pxlnv metaverse-fever-dream skipped + archived.
 - Root cause: 5 entries left with status=processing in processed_raw_articles.json -> collector re-selected the batch. Tracking fixed: all 5 marked done with duplicate_of=20260803T040040Z to prevent re-selection.
 - No wiki changes. Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (0 take / 0 reference / 5 skip).
+---
 ## [2026-08-03] raw-backlog-ingest (04:00) | 2 pages enriched, 5 articles processed
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 04:00, run 20260803T040040Z).
 - **[[entities/ash-vardanyan]]** — Added "SimSIMD v5.3 — SVE2 Set Intersections (May 2026)" section under Key Projects: HISTCNT/MATCH (SVE2) vs VP2INTERSECT (AVX-512) vs Galloping, up to 5x faster set intersections for sorted u16/u32 arrays, u16 SVE2 always >= NEON (u32 mixed, ~50% slower on skewed 128x8192), SVE2 live on AWS Graviton 4 / upcoming Grace Hopper + Cobalt + Axios, sparse-vector similarity use case. Frontmatter updated (updated: 2026-08-03, +source ashvardanian.com/posts/simd-set-intersections-sve2-avx512/ + raw article).
 - **[[entities/chiark-greenend-org-uk-sgtatham]]** — Expanded existing "Policy of Transience" section with concrete habits from the 2025 essay (unset HISTFILE shell history, GUI desktop clearing, browser close-all, X11 session management off, tmpfs /tmp + ~/mem) and the 6 permanence criteria (reliable/easy to find/explained/change-controlled/portable/usable by others). Frontmatter updated (updated: 2026-08-03).
 - **Skip (3)**: glean CIO guide (marketing, generic vendor-selection framework, no technical claims; glean.md already comprehensive), glean create-ai-strategy-2024 (dated 2024 marketing), pxlnv metaverse-fever-dream (non-AI, already archived).
 - Archive: 3 newly archived, 1 dedup_skipped (pxlnv) — archive_index total 2,202. Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (1 take / 1 reference / 3 skip).
+---
 ## [2026-08-03] raw-backlog-ingest (00:00) | duplicate batch detected - no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-03 00:00, run 20260803T000025Z).
@@ -884,6 +961,7 @@ Key findings:
 - No wiki changes. Tracking fixed: 5 entries marked done/skipped in processed_raw_articles.json to prevent re-selection (previous run left them status=processing; 1-hour timeout triggered re-collect).
 - Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (0 take / 0 reference / 5 skip).
 
+---
 ## [2026-08-02] raw-backlog-ingest (22:00) | 2 pages enriched, 5 articles processed
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-02 22:00, run 20260802T220041Z).
 - **[[entities/ash-vardanyan]]** — Enriched StringZilla section with Unicode search stack (v4.3-v4.5, May 2026): tokenizing (25 whitespace chars, 9 newline variants, 10x faster), case-folding (1,400+ Unicode 17 rules, 10x faster), case-insensitive substring search (20-150x faster, 20,000x vs PCRE2), fold & scan pipeline 5-15 GB/s (~50x ICU), Unicode-spec-generated synthetic test suite for correctness. Frontmatter updated (updated: 2026-08-02, +source ashvardanian.com/posts/search-utf8/).
@@ -891,6 +969,7 @@ Key findings:
 - **Skipped**: minimaxir.com "AI agent coding skeptic" (already primary source of entities/minimaxir-com.md), thinkingmachines.ai "On-Policy Distillation" (already captured in concepts/post-training/on-policy-distillation.md), danluu.com "How good are decisions?" (non-AI: baseball/board-game decision quality).
 - Archive: 4 archived, 0 dedup_skipped (archive_index total 2,199). Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (1 take / 1 reference / 3 skip).
 
+---
 ## [2026-08-02] daily-skeleton-enrichment | L2→L3: Kyle Jeong + Apurva Gandhi (browser agent harness, CDP, dual advisors)
 
 - **Skeleton backlog**: 0 pages with `status: skeleton` remain — continued L2→L3 enrichment of thinnest entity pages (established pattern).
@@ -899,6 +978,7 @@ Key findings:
 - index.md: updated descriptions for both entities.
 - Sources: kylejeong.com + RSS, browserbase.com blog, apga.github.io (live), Google Scholar.
 
+---
 ## [2026-08-02] dreaming-wiki-ingest | 1 reference enriched (Simon Willison Open Letters)
 - **Recovery**: upstream dreaming-group render failed (Pitfall #12), but committed archive-only at `dd4e0c2b` (log.md + archive JSON + archive_index.json, no entity changes) — archive-only variant (Pitfall #21).
 - **Triage**: 15 decisions (0 takes, 1 reference, 14 skips). Reference: [[entities/simon-willison]] Open Letters blog post (Aug 2).
@@ -906,6 +986,7 @@ Key findings:
 - **Enriched**: entities/simon-willison.md — added "Open Letters on AI Development — 3 Letters Analyzed" section with the 3 letters' details; frontmatter updated (updated: 2026-08-02, +source simonwillison.net--2026-aug-2-open-letters). Wikilinks: [[concepts/claude/fable-5]], [[concepts/kimi-k3]], [[concepts/open-source-ai-must-win]].
 - **Archive**: already committed by upstream (8 newly archived, total 2,195 URLs) — no re-run needed.
 
+---
 ## [2026-08-02] dreaming | Pattern E saturation — 1 reference, 0 takes
 - **Checkpoint**: 0 articles collected, 201 recent raw articles on disk (range 2026-07-26 → 2026-08-02).
 - **Prior triage (2026-08-01)**: 22 decisions (0 takes, 7 references, 15 skips) — all consumed by dreaming-wiki-ingest (Aug 1), 5 entity pages enriched (Glean, Cohere, Simon Willison, Harvey, ElevenLabs).
@@ -921,6 +1002,7 @@ Key findings:
 - **Archive**: 8 newly archived, 7 dedup skipped. Total archive: 2,195 URLs.
 - **Takes=0** — Full saturation. No new pages needed.
 
+---
 ## [2026-08-02] raw-backlog-ingest (18:00) | duplicate batch detected - no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-02 18:00, run 20260802T180008Z).
@@ -928,6 +1010,7 @@ Key findings:
 - No wiki changes. Tracking fixed: 5 entries marked done/skipped in processed_raw_articles.json to prevent re-selection (1-hour processing timeout had re-collected them).
 - Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (0 take / 0 reference / 5 skip).
 
+---
 ## [2026-08-02] watchdog | wiki health digest review
 
 ### Checks
@@ -958,6 +1041,7 @@ Key findings:
 - SKIPPED (non-AI): paulgraham.com "The Refragmentation" (2016 essay), danluu.com "Google SRE book" (ops book notes), oldvcr.blogspot.com MkLinux WGS 9150 (retro; already archived), oldvcr.blogspot.com 6o6 v1.1 (retro 6502 virtualization).
 - Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (1 take / 0 reference / 4 skip).
 
+---
 ## [2026-08-02] active-crawl (11:10) | 4 pages — 1 created, 3 enriched
 
 NEW:
@@ -976,6 +1060,7 @@ SOURCES:
 
 DISCOVERY: HN Algolia (15 stories), X/Twitter xurl (10 results), blogwatcher DB + wiki gap analysis
 
+---
 ## [2026-08-02] newsletter-wiki-ingest (10:39) | Superintelligence. 2026-08-01 triage: 1 reference / 5 skip
 - Reference: entities/kim-isenberg.md enriched with "The Duel That Never Happened" (Aug 2026 DeepDive, AI benchmark controversy; paywalled body, preview thesis captured). Frontmatter updated (updated: 2026-08-02, +benchmark/benchmark-framing tags, +2 sources).
 - Skip (5): dup beehiiv tracking link, author X profile, batch meta links 4-15 (product/subscription/social/footer/expired), beehiiv hosted page, status tracking pixel. Archived via archive_triage.py.
@@ -998,6 +1083,7 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - together.ai (Kimi K3 guide) — content captured via concept update above
 - tedium.co, shkspr.mobi, oldvcr.blogspot.com, nesbitt.io, johndcook.com × 3, daringfireball.net × 2, construction-physics.com, borretti.me — non-AI content (hardware reviews, math essays, Apple news, retro computing, package management)
 
+---
 ## [2026-08-02] raw-backlog-ingest (10:00) | 1 entity enriched, 5 articles processed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-02 10:00, run 20260802T100016Z). Archive: 4 newly archived, 1 dedup_skipped (archive_index total 2,164). Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (0 take / 1 reference / 4 skip).
@@ -1010,12 +1096,14 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - (3) michael.stapelberg.ch Go rsync vulnerability analysis → skip: non-AI (Go memory safety vs C rsync CVEs), already archived 2026-05-25 by blog triage (raw/archived/triage/blog/2026-05-25_20260525T070051Z.json).
 - (4) chiark.greenend.org.uk Spectre tiling combinatorial coordinates → skip: non-AI math essay, already in [[entities/chiark-greenend-org-uk-sgtatham]] References + aperiodic-tilings section covers the series.
 
+---
 ## [2026-08-01] raw-backlog-ingest | Enriched LLVM concept (Flang/Fortran) + Brutecat entity (StubZero RCE)
 
 - **[[concepts/llvm]]** (stub -> full, 25 -> ~90 lines): Enriched from LLVM Blog "LLVM Fortran Levels Up: Goodbye flang-new, Hello flang!" (Mar 2025). Added core components (LLVM IR, Clang, MLIR, Flang), Flang timeline table (PGI 1989 -> NVIDIA 2013 -> F18/FIR 2018-19 -> flang rename Oct 2024 -> LLVM 20.1 Mar 2025), HLFIR/SPEC2017/OpenMP technical highlights, Fortran context (80% of ARCHER2 apps), and AI relevance (MLIR underpins accelerator compiler stacks, TensorFlow, torch-mlir; Chris Lattner -> Modular). Registered `compiler` tag in SCHEMA.md. Source: raw/articles/blog.llvm.org--posts-2025-03-11-flang-new--8f37a052.md
 - **[[entities/brutecat-com]]** (enriched): Added "StubZero: Google Cloud Production RCE (CVE-2026-2031)" section - proto definition leak endpoint ("req2proto as a Service"), internal workflow queue leak (Spanner->Salesforce), escalation to arbitrary Stubby RPCs as prod service identity (RCE classification), recurrence 3 months later via GetIntegrationVersion RPC. Payouts: $60k + $75k + $13,337 = $148,337 total. Added 2 Key Discoveries table rows + source. Tags +vulnerability +cybersecurity. Source: raw/articles/brutecat.com--articles-google-cloud-rce--13889f7b.md
 - Batch notes: 5 candidates; paulgraham.com "Being Popular" and danluu.com cache-incidents already fully covered (entity pages had sections + sources); miguelgrinberg SQLAlchemy Ch3 already in References (non-AI ORM tutorial, skip).
 
+---
 ## [2026-08-01] daily-skeleton-enrichment | Enriched LM Studio + Entire to L3, created Thomas Dohmke entity
 
 - **Skeleton backlog saturated**: 0 pages with `status: skeleton` remain in wiki/entities — the daily job continues with L2→L3 enrichment of the thinnest entity pages.
@@ -1027,6 +1115,7 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - index.md: +1 entity (871 total), updated descriptions for entire + lm-studio.
 
 
+---
 ## [2026-08-01] dreaming-wiki-ingest | 5 entity pages enriched (recovered from failed dreaming-group render)
 
 - **Recovery**: dreaming-group JSON render failed at 18:20:51 (output c4a9e8d2f671/2026-08-01_18-20-51.md, 4,461 lines). Triage JSON at cron/data/dreaming/triage_latest.json (22 decisions: 0 takes, 7 references, 15 skips) + output-file theme clusters used as source of truth. Upstream commit fc2829ed (18:12) touched only log.md — enrichment not yet executed.
@@ -1040,6 +1129,7 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - **Archive**: archive_triage.py dreaming — 22 candidates, 2 new archived, 20 dedup_skipped (saturation: total 2,160 URLs)
 - **Skips**: 15 (13 fully covered by adjacent pipelines + 2 non-AI batches)
 
+---
 ## [2026-08-01] raw-backlog-ingest (18:00) | duplicate batch detected — no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 18:00, run 20260801T180055Z). Archive: 3 already_archived, 1 null, 1 not_archived.
@@ -1051,6 +1141,7 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - (5) harvey.ai "Legal Operations Management" → skip: already enriched into [[entities/harvey]] (Legal Operations Management Guide section) by the 14:00 run.
 - No wiki page creation or enrichment needed. Tracking: 5 marked done/skip in processed_raw_articles.json. Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
 
+---
 ## [2026-08-01] watchdog | wiki health digest — all clean, header count corrected
 
 ### Checks
@@ -1072,6 +1163,7 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - Verified: `grep -c '^# Wiki Log'` = 1, `head -1` = `# Wiki Log`, 0 standalone-pipe lines, 0 orphan `### 2026-` lines.
 - Not auto-fixed (over 10-file threshold / dedicated pipelines): 23 pages missing `created` (15 malformed YAML frontmatter + 8 clean), 212 unique tag violations (tag-audit-weekly backlog), 6 entity duplicate pairs, ~2,048 broken wikilinks, 464 orphans.
 
+---
 ## [2026-08-01] raw-backlog-ingest (14:00) | 1 page enriched, 5 articles processed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 14:00, run 20260801T140040Z). Archive: 3 already_archived, 1 null, 1 not_archived.
@@ -1085,6 +1177,7 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - wheresyoured.at "Let AI Burn" → already in [[entities/ed-zitron]] (Notable Articles table: circular compute spend, $765B+ capex worthless) + sources; archived.
 - walkinglabs "Hands-On Modern RL" → already in [[concepts/post-training/hands-on-modern-rl]] (172-line page created 2026-06-09 from this exact raw article); no wiki changes needed.
 
+---
 ## [2026-08-01] active-crawl | 3 pages created, 1 page enriched (trending topics crawl)
 
 **Sources:** HN Algolia (15 stories found), X/Twitter (10 items), blogwatcher DB (21 candidates), wiki gap analysis (13 gaps identified)
@@ -1109,6 +1202,7 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 
 **Tag fix:** `science` → `ai-in-science` on ai-mathematics-theorem-proving.md (non-canonical tag)
 
+---
 ## [2026-08-01] newsletter-wiki-ingest | 1 page created, 8 pages enriched (triage 20260801T101509Z recovered from checkpoint)
 
 - Recovered triage JSON from /opt/data/.hermes/cron/data/newsletter/triage_latest.json after newsletter-triage output parse failure (checkpoint survived; standard recovery path)
@@ -1124,6 +1218,7 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - Skips (8): AINews/Signal noise links, AWS Q2 financials, Gemini Robotics 2 demo, Thinking Machines Inkling-Small, open-vs-closed cyber debate, OpenAI Voice desktop, sandbox escape incidents (already covered)
 - Sources: raw/newsletters/2026-07-31-the-end-of-prompting.md, 2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md, 2026-08-01-ainews-not-much-happened-today.md
 
+---
 ## [2026-08-01] blog-wiki-ingest | 2 pages enriched, 5 pages updated (triage 20260801T101221Z recovered from checkpoint)
 
 - Recovered triage JSON from /opt/data/.hermes/cron/data/blog_ingest/triage_latest.json after blog-triage output parse failure (checkpoint survived; standard recovery path)
@@ -1138,6 +1233,7 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - SCHEMA.md: added ai-critic tag to taxonomy (used by ed-zitron.md)
 - Sources: raw/articles/simonwillison.net--2026-jul-31-* (5), wheresyoured.at--premium-ai-is-getting-way-too-expensive, garymarcus.substack.com--p-three-reactions-to-anthropicss-latest, gilesthomas.com--2026-07-ai-use
 
+---
 ## [2026-08-01] X Article ingestion | Cerebras GPT-5.6 usage guide (1,470 bookmarks)
 
 - Source: Cerebras (@cerebras) X Article "Getting the most out of GPT-5.6: Sol, Terra, and Luna" (2026-07-27, 1,470 bookmarks, 462K impressions)
@@ -1148,12 +1244,14 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - No new pages created (duplicate avoided — existing GPT-5.6 concept page at concepts/gpt/gpt-5-6.md)
 - Key insights: Luna→Terra→Sol escalation pattern, reasoning levels each add ~50% cost, cache reads 90% cheaper with 30-min TTL, Cerebras 10× faster for Sol
 
+---
 ## [2026-08-01] raw-backlog-ingest (04:00) | duplicate batch detected — no wiki changes, tracking fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 04:00, run 20260801T040019Z) re-selected the SAME 5 articles processed by the 00:00 run (commit 75f681b9): the 00:00 run left them status=processing in processed_raw_articles.json (stuck >1hr → re-collected).
 - Verified prior work substantive on disk: entities/alex-ellis.md (80 lines), concepts/local-qwen-vs-claude-opus.md, concepts/agents-mcp-rl-course.md, entities/cat-wu.md, entities/thariq-shihipar.md all present.
 - Action: no page creation/enrichment (would duplicate 00:00 work). Marked all 5 as status=done in /opt/data/.hermes/processed_raw_articles.json with 00:00 decisions (2 take / 3 skip) so 08:00+ collects skip them.
 
+---
 ## [2026-08-01] raw-backlog-ingest | 1 page created, 4 pages enriched, 5 articles processed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-01 00:00, run 20260801T000005Z). Archive: 3 already_archived, 1 not_archived (simonwillison fireside), 1 null (willbrown transcript).
@@ -1163,8 +1261,10 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - (4) simonwillison.net "A Fireside Chat with Cat and Thariq from the Claude Code team" → take (entity enrichment): [[entities/claude-code]] already had a fireside section → added "Additional Insights" (eval base for drop-in replacement, behavioral evals, biology-not-physics tool design, credential injection, ant fooding, Deep Blue/ambition, Fable video editing, Claude Tag memory, eval tooling stance); enriched [[entities/simon-willison]] (July 2026 Updates entry), [[entities/cat-wu]] (new Fireside Chat Insights section), [[entities/thariq-shihipar]] (new Fireside Chat section with rewrites-are-good, Deep Blue, system prompt reduction, security posture).
 - (5) wheresyoured.at "The More You Buy, The More You Lose" → skip: fully captured in [[entities/ed-zitron]] (The More You Buy section: NVIDIA–SB Energy $250B circular deal, Winstar/Lucent analogy, CoreWeave bond crisis, $1.35T off-balance-sheet debt, capex % revenue table); already archived.
 
+---
 ## [2026-07-31] raw-backlog-ingest | 5 articles triaged — all already captured (0 take / 0 ref / 5 skip)
 
+---
 ## [2026-07-31] x-accounts-scan | 3 new posts, 2 wiki pages updated
 - Scan: 84 tracked accounts, 12 scanned (72 skipped budget). 3 new posts from 2 accounts.
 - Post 1: Daniel Han (@danielhanchen) — DeepSeek-V4-Flash-0731 GGUF released (UD-Q8_K_XL lossless + UD-Q4_K_XL). 10 quant variants from Q8 to IQ1_S. [[entities/daniel-han|Daniel Han]]
@@ -1181,6 +1281,7 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - (5) Aakash Gupta "Agent Safety Separation of Duties" (X post) → skip: fully captured in [[concepts/security-and-governance/agent-separation-of-duties]] (worker/evaluator split, Codex /goal Apr 2026, Claude Code 2.1.139 May 2026, 31-turn experiment) + [[entities/aakash-gupta]].
 - No wiki page creation or enrichment needed this batch. Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
 
+---
 ## [2026-07-31] dreaming-wiki-ingest | 4 references verified + enriched (upstream archive-only commit)
 - Upstream dreaming-group (18:09) committed archive only (71311cfe); render failed after checkpoint save (triage_latest.json 18:13, 6 decisions: 4 ref, 2 skip)
 - Deep Sleep verification gate: all 4 reference candidates confirmed genuine gaps vs entity page content
@@ -1190,7 +1291,9 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - Skips: parallel.ai customer-watch (scrape failed, brotli error), Harvey hire announcement (personnel only, no technical depth)
 - Archive: already committed by upstream (2026-07-31_20260731T180900Z.json) - no re-run needed
 
+---
 ## [2026-07-31] raw-backlog-ingest | 2 pages enriched, 3 skips (all already covered)
+---
 ## [2026-07-31] dreaming | Pattern E saturation — 4 references identified, 0 takes
 - Checkpoint: 0 articles from RSS/newsletter, 200 recent raw articles on disk
 - Duplicate check: Blog-wiki-ingest (1 take + 9 refs), Newsletter-wiki-ingest (4 takes + 1 ref), Active-crawl (3 pages), Raw-backlog-ingest (15+ articles) all processed today
@@ -1226,6 +1329,7 @@ Batch 20260731T180057Z (raw_backlog_collect.py --sort ai-hint --limit 5). 5 arti
 
 
 
+---
 ## [2026-07-31] wiki-health-fix | health scan clean; benchmark pages updated field
 
 Wiki health scan (17:50 UTC run):
@@ -1254,6 +1358,7 @@ Escalated (needs human review, not auto-fixed):
 - 464 true orphans, ~2,048 broken wikilinks, 978 stale pages (>90d), 941 tag violations (tag-audit-weekly backlog)
 - x_accounts stale(26h) alert: TRANSIENT — job runs every 2 days at 22:30 UTC; last run 07-29 22:30, next expected 07-31 22:30
 
+---
 ## [2026-07-31] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed (all already covered)
 
 Batch collected 14:00 UTC (raw_backlog_collect.py --sort ai-hint --limit 5, run 20260731T140039Z). All 5 articles already captured in existing wiki pages → 0 take, 0 reference, 5 skip. No wiki page changes needed.
@@ -1266,6 +1371,7 @@ Batch collected 14:00 UTC (raw_backlog_collect.py --sort ai-hint --limit 5, run 
 
 Archive: 2 newly archived (gilesthomas-34a, zhang-khattab), 3 dedup-skipped (already in archive index). Tracking: 5 marked done/skip in processed_raw_articles.json. Triage: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
 
+---
 ## [2026-07-31] active-crawl | 3 new pages from trending discovery
 
 **Trend Discovery** (3 parallel subagents): HN Algolia (15 stories, top: censorship transfer 131pts, Tokenless 70pts, GUI agents 68pts, git worktrees 31pts), X/Twitter (10 results, top: Agency sandboxes 146 bookmarks), wiki gap analysis (15 gaps identified).
@@ -1277,6 +1383,7 @@ Archive: 2 newly archived (gilesthomas-34a, zhang-khattab), 3 dedup-skipped (alr
 
 **SCHEMA.md:** Added tags `gpt-2`, `reproducibility`, `censorship`.
 
+---
 ## [2026-07-31] newsletter-wiki-ingest | 4 takes + 1 reference processed, 6 pages enriched
 
 **Recovery**: newsletter-triage output render failed ("failed to parse JSON response"); recovered from checkpoint `/opt/data/.hermes/cron/data/newsletter/triage_latest.json` (20260731T102556Z, valid JSON, 12 decisions).
@@ -1294,6 +1401,7 @@ Archive: 2 newly archived (gilesthomas-34a, zhang-khattab), 3 dedup-skipped (alr
 ### Skips (7)
 Substack/beehiiv UI noise ×6 (OAuth redirects, likes/comments/share, app-store, UUID redirects) + True Positive Weekly #171 pure link digest (Kimi K3 weights already covered in concepts/kimi-k3.md). Archived.
 
+---
 ## [2026-07-31] blog-wiki-ingest | 1 take + 9 references processed, 6 pages updated
 
 **Recovery**: blog-triage output render failed ("failed to parse JSON response"); recovered from checkpoint `/opt/data/.hermes/cron/data/blog_ingest/triage_latest.json` (20260731T102328Z, valid JSON, 20 decisions).
@@ -1311,6 +1419,7 @@ Substack/beehiiv UI noise ×6 (OAuth redirects, likes/comments/share, app-store,
 ### Skips (10)
 Non-AI (plants, lightbulbs, Nintendo lawsuit, TV sticks, political journalism), already-covered (berthub AI-for-decision-makers fully in entities/berthub-eu.md, Gary Marcus joke post, Bruce Schneier quote), unsaved_articles (WSJ paywall Zuckerberg op-ed). All archived: wiki/raw/archived/triage/blog/2026-07-31_20260731T102328Z.json (19 items).
 
+---
 ## [2026-07-31] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed (all covered/archived or non-AI)
 
 **Batch**: 20260731T100020Z (raw_backlog_collect.py --sort ai-hint --limit 5)
@@ -1354,6 +1463,7 @@ Non-AI (plants, lightbulbs, Nintendo lawsuit, TV sticks, political journalism), 
 - `entities/eric-drexler.md` — repaired corrupted YAML frontmatter (reversed `tags:` and `sources: []` order, dangling list)
 - `entities/grant-sanderson-3blue1brown.md` — repaired the same corrupted YAML frontmatter
 
+---
 ## [2026-07-31] manual-ingest | Ingested Anthropic cybersecurity evaluation incidents article
 
 **Source:** https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals (2026-07-30)
@@ -1414,9 +1524,11 @@ Non-AI (plants, lightbulbs, Nintendo lawsuit, TV sticks, political journalism), 
 
 **Archived**: 15 candidates (9 newly archived, 6 dedup). Total archive URLs: 2,082.
 **Triage JSON**: /opt/data/.hermes/cron/data/dreaming/triage_latest.json
+---
 ## [2026-07-30] watchdog | Auto-fixed log.md separators
 
 ### Changes
+---
 ## [2026-07-30] raw-backlog-ingest | 5 articles evaluated, 0 new pages needed
 
 ### Batch (run_id: 20260730T180054Z)
@@ -1437,8 +1549,6 @@ All 5 articles already comprehensively covered by existing wiki pages. No wiki e
 - Cross-section check: 0 misplaced entries
 - 24 reported orphans all false positives (22 x _index.md, 2 x _archive/, 1 x redirect)
 - Wiki graph analysis is 6 days stale — structural claims already verified via live checks
-
----
 
 ---
 
@@ -3022,8 +3132,6 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - Total indexed entries: 219 (up from 205)
 
 ---
-
----
 ## [2026-07-01 11:15] — Active crawl — 4 new pages + 1 enrichment
 
 **Discovery:** Parallel subagent trend scan (HN Algolia + X/Twitter + wiki gap analysis)
@@ -3851,8 +3959,6 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 ---
 
----
-
 - 2026-06-24: Watchdog fix — added 2 missing `---` separators in log.md between consecutive ## sections. No other auto-fixable issues found. Index: Format B (clean). _index.md: 0 pipe corruption (false positives — all legitimate markdown tables). Report: wiki-health clean (0 stale pages, 30 orphans flagged for human review).
 - 2026-06-25: enriched [[concepts/loop-engineering]] with HuaShu PDF synthesis (Four-Layer Stack, Five Moves, Generator/Evaluator, Anti-patterns, Real Loops, Four Costs, First Loop Recipe, Economics of Judgment); added raw/papers/2026-06-24_huashu_loop-engineering-anthropic-playbook.pdf
 - 2026-06-25: enriched [[concepts/loop-engineering]] with 0xCodez X Article (14-step roadmap, 4-condition test, Ralph Wiggum loop, security tax); saved raw/articles/2026-06-09_0xcodez_loop-engineering-14-step-roadmap.md
@@ -4477,6 +4583,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 4. `index.md` — Added session-portability entry; updated earendil description
 
 
+---
 ## [2026-07-31] weekly wiki-graph-analysis | graph health + person×concept analysis
 
 **Job**: wiki-graph-analysis (Friday 15:00 UTC weekly)
@@ -4490,6 +4597,7 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-05, 07-10, 07-17) removed; index.md Queries section updated.
 
+---
 ## [2026-08-01 18:06 UTC] dreaming | Pattern E saturation — full dedup, 0 takes
 - **Checkpoint**: 2026-08-01T180617Z, range 2026-07-25 to 2026-08-01
 - **Articles**: 0 collected (total_articles), 197 recent raw articles on disk
@@ -4535,12 +4643,14 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Summary**: Synthesized Sean Goedecke's "LLMs reward expertise" thesis (LLMs steepen the skill curve) with Ankur Sethi's cognitive debt warning (retype LLM code instead of copy-pasting). Core insight: LLMs amplify existing expertise rather than replacing it. Cross-linked to domain-expertise-ai-moat, cognitive-debt, ai-slop, coding-agents, prompt-engineering, vibe-coding.
 - **Index**: Inserted under Concepts section (L2044, between llm-evaluation and llm-inference)
 
+---
 ## 2026-08-05 — Updated OpenAI-Apple conflict articles with full evidence
 
 - Updated `raw/articles/2026-08-03_openai_apple-is-getting-this-wrong.md`: Added full iMessage transcripts summary and email correspondence evidence from OpenAI's rebuttal
 - Updated `events/openai-apple-conflict-2026.md`: Fixed "Chang Li" → "Chang Liu" name error, added Tang Tan defense section, corrected Chang Liu section with "residual access" and iMessage evidence details
 - Source: https://openai.com/index/apple-is-getting-this-wrong/
 
+---
 ## 2026-08-05 — Ingested Steve Yegge "Shape of Things to Come" essay
 
 - **Raw**: `raw/articles/2026-08-04_yegge-ai_shape-of-things-to-come.md`
@@ -4552,6 +4662,7 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Updated**: `index.md` — added 4 new pages (876 entities, 1943 concepts)
 - **Tags**: agentic-engineering, agent-harness, agent-orchestration, ci-cd, multi-agent, prediction, person
 
+---
 ## 2026-08-05 — Ingested Steve Yegge "Model Welfare" essay (Part 2)
 
 - **Raw**: `raw/articles/2026-08-05_yegge-ai_model-welfare.md`
@@ -4561,6 +4672,7 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Updated**: `index.md` — added concepts/model-welfare entry
 - **Tags**: model-welfare, agentic-engineering, ai-safety, agent-harness, ai-ethics
 
+---
 ## 2026-08-05 — Google DeepMind leadership reorganization
 
 - **Source**: https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/
@@ -4571,6 +4683,7 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Created entities/jeff-dean.md**: Departing Google after 27 years; launching PBC with Sanjay Ghemawat for ML/science/engineering
 - **Updated wiki/index.md**: Added 2 new entity pages (876→878 entities)
 
+---
 ## 2026-08-07 — Weekly Wiki Graph Analysis
 - Ran `scripts/wiki_graph_analysis_weekly.py` + `scripts/_weekly_graph_report.py` + deep_link_audit + `scripts/wiki_graph.py --format json`
 - Report saved: `wiki/queries/wiki-graph-analysis-weekly-2026-08-07.md`
@@ -4578,6 +4691,7 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - index.md: added new weekly report entry (Queries 4→5)
 - No structural fixes applied this week (analysis-only job); recommendations in report
 
+---
 ## [2026-08-09] blog-ingest (10:13) | 16 new raw articles saved
 
 - **Source**: blogwatcher RSS scan → `blog_ingest.py` checkpoint (`run_id=20260809T101224Z`)
