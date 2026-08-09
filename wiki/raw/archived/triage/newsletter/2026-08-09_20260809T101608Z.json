@@ -1,0 +1,91 @@
+{
+  "archived_at": "2026-08-09T10:58:36.499245+00:00",
+  "triage_run_id": "20260809T101608Z",
+  "source": "newsletter",
+  "summary_ja": "SuperIntel+（uid=480, read.getsuperintel.com）2026-08-08号「📉 Who Is Really Paying for Cheap Intelligence」をトリアージ。20リンク中、メイン記事1件をtake（entities/deepseek.mdへの「August 2026 Price Reversal」セクション追加：6/30からのピーク時2倍課金と8/6の値上げ通知、Moonshot 20K-GPU誤報訂正）、DeepSeek値上げYahoo記事1件をreference、残り18件をskip（GPT-5.6価格改定・OpenAI公式ブログ・Sonnet 5導入価格は既存Wikiでカバー済み、リンク9-20は購読/ソーシャルボイラープレート）。GPT-5.6価格改定の詳細（Luna 80%値下げ等）は concepts/gpt/gpt-5-6.md に既存。",
+  "decisions": [
+    {
+      "item_id": "<20260808.183422.32de1172@mta20>-7",
+      "source": "newsletter",
+      "source_name": "SuperIntel+ (uid=480, read.getsuperintel.com)",
+      "title": "DeepSeek Plans 'Significant' Price Increase for Its AI Services (Yahoo Finance)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/deepseek-plans-significant-price-increase-025333567.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-08-who-is-really-paying-for-cheap-intelligence.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ entities/deepseek.md の上記takeセクションへの補強ソース。本文はDeepSeekが木曜（8/6）のユーザー通知で具体的な増分を明示せず「substantial」と呼び、計画を促したと記載。現在価格V4-Flash $0.14/$0.28（入力/出力100万トークン）に対し中国ライバルMoonshotのKimi K3は$3/$15。値上げの理由として内モンゴルに1GW AIデータセンター建設（Bloomberg報道、NVIDIA Jensen Huangの1GW設備見積もり）の資金調達が必要と分析。2H26の中国消費者AI需要はDeepSeek・ByteDance寡占が続く見通し。",
+      "candidate_wiki_path": "entities/deepseek.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-08\n**Subject:** 📉 Who Is Really Paying for Cheap Intelligence\n**Collected:** 2026-08-09T10:16:07.542802+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/5adfe863764b8e09824df5ae59b9c4347d9ccf2b6a4271a2be58a4f6b241ca5b29d6ae407a9af8a"
+    },
+    {
+      "item_id": "<20260808.183422.32de1172@mta20>-2",
+      "source": "newsletter",
+      "source_name": "SuperIntel+ (uid=480, read.getsuperintel.com)",
+      "title": "Link 2 (duplicate of main article)",
+      "url": "https://link.mail.beehiiv.com/v2/c/d0b2a6396c23b80481c9e484243aa0835e187dc4fc04fa5bacac2100b2ce2bf4b4baacb1c933b32bb59cb30b52f23ef0d0b2fa53926c5a8b2cd55ce559d910c13222959b5d445afa734b14e8e63f183348dc61233fc850399cee34eb5796191cb41d66d5b36849bd68d6a6e4a6f1a6d5e5e1136575be3ea8409f492feed6af8f9eb412f0f1a883f6f81bff89525e948a91ae3644346c34f871586ba37a4a5f67/1be775df1da8879f",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-08-who-is-really-paying-for-cheap-intelligence.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 本文タイトルがLink 1（メイン記事）と同一「📉 Who Is Really Paying for Cheap Intelligence」で重複。解像度確認済み（title=同一）。全ビーハイブ追跡URLの重複パターンに該当し、同一記事の別認証状態リンクと判定。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-08\n**Subject:** 📉 Who Is Really Paying for Cheap Intelligence\n**Collected:** 2026-08-09T10:16:07.542802+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/5adfe863764b8e09824df5ae59b9c4347d9ccf2b6a4271a2be58a4f6b241ca5b29d6ae407a9af8a"
+    },
+    {
+      "item_id": "<20260808.183422.32de1172@mta20>-4",
+      "source": "newsletter",
+      "source_name": "SuperIntel+ (uid=480, read.getsuperintel.com)",
+      "title": "Advancing the Price-Performance Frontier with GPT-5.6 (OpenAI)",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-08-who-is-really-paying-for-cheap-intelligence.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ OpenAI公式ブログ（7/29〜30の価格改定発表）。内容（Luna 80%値下げ・Terra 20%・Sol駆動のTriton/Gluonカーネル自動書き換えによる20%サービスコスト削減・投機的デコーディング15%効率向上）は concepts/gpt/gpt-5-6.md 「Price-Performance Frontier (Jul 30, 2026)」セクションに詳細カバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-08\n**Subject:** 📉 Who Is Really Paying for Cheap Intelligence\n**Collected:** 2026-08-09T10:16:07.542802+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/5adfe863764b8e09824df5ae59b9c4347d9ccf2b6a4271a2be58a4f6b241ca5b29d6ae407a9af8a"
+    },
+    {
+      "item_id": "<20260808.183422.32de1172@mta20>-5",
+      "source": "newsletter",
+      "source_name": "SuperIntel+ (uid=480, read.getsuperintel.com)",
+      "title": "GPT-5.6 (OpenAI product page)",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-08-who-is-really-paying-for-cheap-intelligence.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ OpenAI GPT-5.6製品ページ。Sol/Terra/Luna三層モデルファミリーの仕様・ベンチマークは concepts/gpt/gpt-5-6.md に詳細カバー済み（Agents' Last Exam 53.6、SWE-bench Pro 64.6等）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-08\n**Subject:** 📉 Who Is Really Paying for Cheap Intelligence\n**Collected:** 2026-08-09T10:16:07.542802+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/5adfe863764b8e09824df5ae59b9c4347d9ccf2b6a4271a2be58a4f6b241ca5b29d6ae407a9af8a"
+    },
+    {
+      "item_id": "<20260808.183422.32de1172@mta20>-6",
+      "source": "newsletter",
+      "source_name": "SuperIntel+ (uid=480, read.getsuperintel.com)",
+      "title": "How GPT-5.6 Fuses Frontier Intelligence with Frontier Efficiency (OpenAI)",
+      "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-08-who-is-really-paying-for-cheap-intelligence.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ OpenAI効率化ブログ。Solによるカーネル最適化・投機的デコーディング改善は concepts/gpt/gpt-5-6.md の「Sol-driven inference optimization」箇所（7/30価格改定セクション）に既に統合済み。新情報なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-08\n**Subject:** 📉 Who Is Really Paying for Cheap Intelligence\n**Collected:** 2026-08-09T10:16:07.542802+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/5adfe863764b8e09824df5ae59b9c4347d9ccf2b6a4271a2be58a4f6b241ca5b29d6ae407a9af8a"
+    },
+    {
+      "item_id": "<20260808.183422.32de1172@mta20>-8",
+      "source": "newsletter",
+      "source_name": "SuperIntel+ (uid=480, read.getsuperintel.com)",
+      "title": "Is Power Ever Too Cheap to Meter? (Atlantic Council)",
+      "url": "https://www.atlanticcouncil.org/blogs/energysource/is-power-ever-too-cheap-to-meter/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-08-who-is-really-paying-for-cheap-intelligence.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ エネルギー経済の一般論（Strauss 1954年の電力言説の検証）。AI固有の技術的・経済的具体性に欠け、WikiのAIトピック焦点（LLM/エージェント/インフラ）から外れる。Strauss枠組み自体はメイン記事（Link 1）のtakeで言及済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-08\n**Subject:** 📉 Who Is Really Paying for Cheap Intelligence\n**Collected:** 2026-08-09T10:16:07.542802+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/5adfe863764b8e09824df5ae59b9c4347d9ccf2b6a4271a2be58a4f6b241ca5b29d6ae407a9af8a"
+    },
+    {
+      "item_id": "<20260808.183422.32de1172@mta20>-9..20",
+      "source": "newsletter",
+      "source_name": "SuperIntel+ (uid=480, read.getsuperintel.com)",
+      "title": "Links 9-20 (subscription / social / boilerplate)",
+      "url": "https://link.mail.beehiiv.com/v2/c/7c98f4c1c6013773f6e04473a79886e37eec71709a9493396e1f4d3036925d3d93f8c06d394bb24bd37fced188d07085a39799cb4b66b5ed70ee2121ca517977fa85ac83e6766b0885e89921e26f578bed768466317016b846e4ff033a203cfe9c5f03679695ba3fcbb97791ad7c9573879ab834d9b689ddb957ca71be6322fa50e1e279fdbb99b1e4605c0426ca26501e6f4f8a8a8fd10d45bcb38b090ae0ca/39f5a6ede52e305c",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 購読・ソーシャル・プラットフォーム系ボイラープレートのバッチスキップ（12リンク）。inbox pre-triage確認済み：9=購読ホワイトリスト（getsuperintel.com/plus-whitelist）、10=アップグレードページ、11/17=Xプロフィール（@getsuperintel）、12=Instagram、13=Threads、14=YouTube、15=TikTok、16=LinkedIn、18=広告ページ、19=メール設定、20=beehiivホーム。コンテンツ価値ゼロ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（ボイラープレート — 本文なし。購読/アップグレード/ソーシャルプロフィール/広告/設定ページ群）"
+    }
+  ]
+}
