@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-08-01
+updated: 2026-08-09
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -24,6 +24,8 @@ sources:
   - https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/
   - raw/newsletters/2026-08-01-ainews-not-much-happened-today.md
   - raw/newsletters/2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md
+  - raw/newsletters/2026-08-08-who-is-really-paying-for-cheap-intelligence.md
+  - https://finance.yahoo.com/technology/ai/articles/deepseek-plans-significant-price-increase-025333567.html
 ---
 
 # DeepSeek
@@ -408,6 +410,26 @@ On **July 31, 2026**, DeepSeek launched **DeepSeek-V4-Flash**'s official API in 
 Analysts describe the jump as a **post-training win, not a scaling-law story** — the underlying architecture is unchanged.
 
 **Pricing-war framing (Superintel+):** [[entities/openai]] cut GPT-5.6 Luna prices **80%** ($1/$6 → $0.20/$1.20 per M tokens) on July 30; Terra followed at ~-20%. DeepSeek answered **within a day** at roughly **a quarter of Luna's output price**. Against **Claude Opus 4.8** (Anthropic's frontier model at $5/$25): DeepSeek-V4-Flash comes within 4 points on 5 of 9 benchmarks and within half a point on Agents' Last Exam at ~90x less per output token — though NL2Repo (54.2 vs 69.7) and DSBench-Hard (59.6 vs 71.7) still go to Opus by double digits. V4-Flash speaking the Responses API natively turns switching providers into a **config change**.
+
+### August 2026 Price Reversal: Peak-Hour Surcharge & General Increase
+
+In a sharp reversal of the July price war, DeepSeek began **charging double during peak hours** and on **August 6, 2026** warned customers that a **significant general increase** was coming — at the same time [[entities/openai]] cut GPT-5.6 Luna prices 80% and left its frontier model untouched (Superintel+ deepdive, Aug 8, 2026). The direction change documented in the [[#V4-Pro Permanent Discount (May 2026)|May 2026 V4-Pro permanent discount]] and [[#V4-Flash-0731 & the July 2026 Price War (Jul 31)|July price war]] sections above is now reversing at the low end.
+
+**Peak-hour 2× surcharge (in effect since June 30):**
+- Double pricing applied during Beijing time **09:00–12:00 and 14:00–18:00** peak windows
+- Already in effect at the end of June, predating the July price-war narrative — the "cheap intelligence" story was always partly peak-time pricing
+
+**August 6 increase notice:**
+- DeepSeek told users a "significant general increase" was coming; a notice on Thursday Aug 6 called the increases "substantial" **without specifying exact amounts**, urging users to plan accordingly (Yahoo Finance)
+- Current pricing before the increase: V4-Flash **$0.14/M input, $0.28/M output** — vs Chinese rival Moonshot's **Kimi K3 at $3/$15 per M tokens**, i.e. the low end remains ~20× cheaper than the nearest Chinese competitor
+- Analysts tie the increase to **infrastructure buildout**: DeepSeek plans a massive data center in **Inner Mongolia** as part of a plan to secure **1 gigawatt of AI computing power** (Bloomberg; Jensen Huang has cited ~1 GW as a typical frontier facility scale)
+- **2H26 outlook**: Chinese consumer AI demand is expected to remain a **DeepSeek/ByteDance duopoly** (Yahoo Finance)
+
+**Misreport correction (20,000-GPU figure):** The **20,000-GPU figure** circulated in connection with DeepSeek's increase originates from a **Bloomberg report about Moonshot** — a different company (wccftech, Aug 6). It should not be attributed to DeepSeek.
+
+**Analysis framework (Superintel+):** Lewis Strauss's 1954 "too cheap to meter" is a claim about **billing method, not price**. The real question of the current market — "who is really paying for cheap intelligence" — is now being answered by the cheapest end of the market itself: DeepSeek signaling ultra-low prices are unsustainable even as OpenAI cuts frontier-adjacent prices.
+
+> Sources: [Superintel+ — "📉 Who Is Really Paying for Cheap Intelligence"](https://read.getsuperintel.com/p/who-is-really-paying-for-cheap-intelligence) (Aug 8, 2026) · [Yahoo Finance — "DeepSeek Plans 'Significant' Price Increase for Its AI Services"](https://finance.yahoo.com/technology/ai/articles/deepseek-plans-significant-price-increase-025333567.html) (Aug 7, 2026)
 
 ### DeepSeek OCR: Text Compression via Visual Representation (May 2026)
 

@@ -1,0 +1,101 @@
+{
+  "run_id": "20260809T101608Z",
+  "triaged_at": "2026-08-09T10:20:00Z",
+  "source": "newsletter-ingest",
+  "newsletter": {
+    "subject": "📉 Who Is Really Paying for Cheap Intelligence",
+    "date": "2026-08-08",
+    "source_label": "uid=480",
+    "source_name": "SuperIntel (read.getsuperintel.com)",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-08-who-is-really-paying-for-cheap-intelligence.md"
+  },
+  "summary": "SuperIntel newsletter covering GPT-5.6 launch (price-performance frontier, efficiency gains), DeepSeek pricing changes, and the economics of cheap AI intelligence. Links 9-20 are social media / subscription boilerplate — not article content.",
+  "articles": [
+    {
+      "index": 1,
+      "title": "Who Is Really Paying for Cheap Intelligence",
+      "resolved_url": "https://read.getsuperintel.com/p/who-is-really-paying-for-cheap-intelligence",
+      "beehiiv_url": "https://link.mail.beehiiv.com/v2/c/5adfe863764b8e09824df5ae59b9c4347d9ccf2b6a4271a2be58a4f6b241ca5b29d6ae407a9af8a80b7c916dd5a2f60d82db543b92eef5820edd92c0ddeddc4884465f08e4cd4790dcfc7fe42294f56ad7bb1cc98e643007aa8e8b310b273b44510a36f3eb3faaf7cbb0ddb730387039410a4ed068431ba147789ac3f3f9a64f285cf3dcb16d160699f3fe0ce0d995b638042d49a6916a821d3897eb32abbb1a/7b7f21686cf68fca",
+      "classification": "critical",
+      "reason": "Main newsletter article — editorial on economics of cheap AI intelligence, directly relevant to AI pricing/cost dynamics wiki coverage",
+      "wiki_relevance": "ai-pricing, llm-economics, ai-industry"
+    },
+    {
+      "index": 4,
+      "title": "Advancing the Price-Performance Frontier with GPT-5.6",
+      "resolved_url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "classification": "critical",
+      "reason": "OpenAI official blog — GPT-5.6 pricing and performance benchmarks, major product release",
+      "wiki_relevance": "gpt-5-6, openai, ai-pricing, model-releases"
+    },
+    {
+      "index": 5,
+      "title": "GPT-5.6",
+      "resolved_url": "https://openai.com/index/gpt-5-6/",
+      "classification": "critical",
+      "reason": "OpenAI official GPT-5.6 product page — model capabilities, architecture details",
+      "wiki_relevance": "gpt-5-6, openai, model-releases"
+    },
+    {
+      "index": 6,
+      "title": "GPT-5.6 Frontier Intelligence Efficiency",
+      "resolved_url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency/",
+      "classification": "critical",
+      "reason": "OpenAI official blog — GPT-5.6 efficiency gains, inference cost reduction",
+      "wiki_relevance": "gpt-5-6, openai, inference-optimization, ai-pricing"
+    },
+    {
+      "index": 7,
+      "title": "DeepSeek Plans Significant Price Increase",
+      "resolved_url": "https://finance.yahoo.com/technology/ai/articles/deepseek-plans-significant-price-increase-025333567.html",
+      "classification": "high",
+      "reason": "DeepSeek pricing changes — relevant to AI cost dynamics and competitive landscape",
+      "wiki_relevance": "deepseek, ai-pricing, llm-economics"
+    },
+    {
+      "index": 8,
+      "title": "Is Power Ever Too Cheap to Meter?",
+      "resolved_url": "https://www.atlanticcouncil.org/blogs/energysource/is-power-ever-too-cheap-to-meter/",
+      "classification": "low",
+      "reason": "Energy economics article — tangentially relevant to AI infrastructure costs but not AI-specific",
+      "wiki_relevance": "ai-infrastructure, energy"
+    },
+    {
+      "index": 3,
+      "title": "kimmonismus (X/Twitter)",
+      "resolved_url": "https://x.com/kimmonismus",
+      "classification": "low",
+      "reason": "X/Twitter profile link — may be author/influencer reference, not an article",
+      "wiki_relevance": "x-accounts"
+    }
+  ],
+  "skipped_links": [
+    {"index": 2, "reason": "Duplicate of Link 1 (same article URL)"},
+    {"index": 9, "reason": "Subscription whitelist page (getsuperintel.com/plus-whitelist)"},
+    {"index": 10, "reason": "Upgrade page (read.getsuperintel.com/upgrade)"},
+    {"index": 11, "reason": "Social media — X/Twitter profile (@getsuperintel)"},
+    {"index": 12, "reason": "Social media — Instagram profile"},
+    {"index": 13, "reason": "Social media — Threads profile"},
+    {"index": 14, "reason": "Social media — YouTube channel"},
+    {"index": 15, "reason": "Social media — TikTok profile"},
+    {"index": 16, "reason": "Social media — LinkedIn company page"},
+    {"index": 17, "reason": "Social media — X/Twitter profile (duplicate of Link 11)"},
+    {"index": 18, "reason": "Advertising page"},
+    {"index": 19, "reason": "Email preferences page"},
+    {"index": 20, "reason": "Beehiiv homepage (platform link)"}
+  ],
+  "counts": {
+    "total_links": 20,
+    "articles": 7,
+    "critical": 4,
+    "high": 1,
+    "low": 2,
+    "skipped": 13
+  },
+  "recommended_actions": [
+    "Scrape and save OpenAI GPT-5.6 blog posts (3 articles) to wiki/raw/articles/ — these are critical product releases",
+    "Scrape DeepSeek pricing article — high relevance to AI economics coverage",
+    "Fetch main newsletter article for full text — editorial content on AI intelligence economics",
+    "Consider adding @kimmonismus to x-accounts.yaml if relevant AI commentator"
+  ]
+}
