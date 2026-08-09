@@ -1,42 +1,42 @@
-## [2026-08-08] raw-backlog-ingest (22:00) | Skip 5件 — 18:00バッチと完全重複（Takes=0）
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 22:00, run 20260808T220017Z)。Takes=0, References=0, Skips=5。
-- 5記事すべて本日既処理の重複: (1) harvey legal discovery — 18:00バッチでentities/harvey.md「Legal Discovery & Defensible AI Protocols (June 2026)」に収録済み、(2) danluu Juliaレビュー — 04:00バッチでentities/dan-luu.md「Notable Essays (Non-AI)」に収録済み、(3) berthub.eu AI政策エッセイ（オランダ語） — entities/berthub-eu.md「AI Policy Analysis (July 2026)」で全文カバー済み、(4) Stapelberg NixOS NAS移行 — 非AIインフラ記事でentities/michael-stapelberg.mdのNixOS Conversion節に要約済み、(5) refactoringenglishチュートリアル執筆ルール章 — entities/refactoring-english.mdの章カタログに既収録（バッチスキップパターン）。
-- archive_triage.py raw_backlog --keep-reference: candidates=5, new_archived=1（harvey URLをアーカイブ索引に登録し再選択防止）, dedup_skipped=4, total=2402。日次パイプライン飽和状態の正常なTakes=0。
+## [2026-08-08] raw-backlog-ingest (22:00) | Skip 5 items — exact duplicates of the 18:00 batch (Takes=0)
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 22:00, run 20260808T220017Z).Takes=0, References=0, Skips=5.
+- All 5 articles are duplicates already processed today: (1) harvey legal discovery — already captured in the 18:00 batch under entities/harvey.md "Legal Discovery & Defensible AI Protocols (June 2026)", (2) danluu Julia review — already captured in the 04:00 batch under entities/dan-luu.md "Notable Essays (Non-AI)", (3) berthub.eu AI policy essay (Dutch) — fully covered by entities/berthub-eu.md "AI Policy Analysis (July 2026)", (4) Stapelberg NixOS NAS migration — non-AI infrastructure article already summarized in the NixOS Conversion section of entities/michael-stapelberg.md, (5) refactoringenglish tutorial-writing-rules chapter — already in the chapter catalog of entities/refactoring-english.md (batch skip pattern).
+- archive_triage.py raw_backlog --keep-reference: candidates=5, new_archived=1 (registered harvey URL in the archive index to prevent re-selection), dedup_skipped=4, total=2402. Normal Takes=0 given daily pipeline saturation.
 ---
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-08] skeleton-enrich-daily — richard-ngo, jaya-gupta, agreement-bug L2→L3
-- **Enrich: [[entities/richard-ngo]] (L2→L3)** — 2025-2026年のMind the Future投稿7本を追加: On Pessimization (Aug 2025), Distributed vs Centralized Agents (Feb 2026), Aligning to Virtues (Feb 2026), Economic Efficiency Often Undermines Sociopolitical Autonomy (Mar 2026), Towards a Formal Scientific Epistemology (Jun 2026, Garrabrant induction), Agents as Webs of Beliefs (Jun 2026, belief webs / self-predictive actions / drives vs anchors / emergent agency), Selective Optimism: AI 2040 critique (Jul 2026, AI Futures Project consultant)。Key IdeasにBelief Webs・Emergent Agencyを追加、[[concepts/coalitional-agency]]との相互リンク、tagsにepistemology/philosophy-of-science/forecasting/governance追加。
-- **Enrich: [[entities/jaya-gupta]] (L2→L3)** — 未リンクだったX記事2本 (The Trillion Dollar Loop B2B Never Had / Googles 20-Year Secret, 2026-04-27) をsourcesに追加し、Decision Tracesフレームワーク (write path vs read path, permissioned inference, 3 context graph axes) のセクションを新設。壊れリンク [[concepts/context-graphs]] を [[concepts/context-engineering/context-graph]] に修正。tagsにvc/investor/enterprise-ai/knowledge-graph追加。
-- **Enrich: [[entities/agreement-bug]] (L2→L3)** — multi-agent-consensus-patternsとの対比 (structured disagreement vs agreement-seeking consensus) を追加、Graph Structure Queryセクション新設、related frontmatterに6概念リンク追加。
-- index.mdの3エントリを詳細説明付きに更新。sources: mindthefuture.info archive + Jina Reader scraping (2026-08-08)。
+- **Enrich: [[entities/richard-ngo]] (L2→L3)** — Added 7 Mind the Future posts from 2025-2026: On Pessimization (Aug 2025), Distributed vs Centralized Agents (Feb 2026), Aligning to Virtues (Feb 2026), Economic Efficiency Often Undermines Sociopolitical Autonomy (Mar 2026), Towards a Formal Scientific Epistemology (Jun 2026, Garrabrant induction), Agents as Webs of Beliefs (Jun 2026, belief webs / self-predictive actions / drives vs anchors / emergent agency), Selective Optimism: AI 2040 critique (Jul 2026, AI Futures Project consultant). Added Belief Webs and Emergent Agency to Key Ideas, cross-linked [[concepts/coalitional-agency]], added epistemology/philosophy-of-science/forecasting/governance tags.
+- **Enrich: [[entities/jaya-gupta]] (L2→L3)** — Added 2 previously unlinked X articles (The Trillion Dollar Loop B2B Never Had / Googles 20-Year Secret, 2026-04-27) to sources and created a new section on the Decision Traces framework (write path vs read path, permissioned inference, 3 context graph axes). Fixed broken link [[concepts/context-graphs]] to [[concepts/context-engineering/context-graph]]. Added vc/investor/enterprise-ai/knowledge-graph tags.
+- **Enrich: [[entities/agreement-bug]] (L2→L3)** — Added contrast with multi-agent-consensus-patterns (structured disagreement vs agreement-seeking consensus), created new Graph Structure Query section, added 6 concept links to related frontmatter.
+- Updated 3 entries in index.md with detailed descriptions. sources: mindthefuture.info archive + Jina Reader scraping (2026-08-08).
 
 
 ## [2026-08-08] dreaming wiki-ingest | Downstream verification + ElevenLabs ElevenReader enrichment
 - Downstream confirmation of upstream saturation pass (commit 4ede49f3, archive-only). Output file 2026-08-08_18-18-14.md (4,655 lines) cross-checked — its cluster analysis matches the committed log entry; no unpersisted second pass.
 - Triage JSON (18:16): 29 decisions, 0 takes, 1 reference, 28 skips. Deep Sleep verification gate: reference candidate verified against entity page content.
-- **Enrich: [[entities/elevenlabs]]** — 「ElevenReader Voice Chat Case Study (August 2026)」セクション追加。ElevenAgentsを自社コンシューマ製品にデプロイした旗艦事例: 50,000+ unique users (12言語)、初回会話前後比較で24%リスニング時間増、5+ Voice Chatセッション利用者で78%ブック完了率、ネイティブモバイルSDK (Android/iOS) + 音声/テキスト切替、リーディングコンパニオンsystem prompt、現在位置コンテキスト変数 (書名・著者・あらすじ・現在チャプター・現在パラグラフ)、再生制御ツールコール予定、ガードレール自己破壊テスト+初日手動レビュー (Treasure Island例)、会話意図/テーマ/ポジティブ相互作用で分類、上位クエリはプロット要約 (40%)、引用分析クエリが週数百件。sourcesに raw/articles/2026-08-08_elevenlabs_how-elevenreader-used-elevenagents.md 追加、updated: 2026-08-08。
+- **Enrich: [[entities/elevenlabs]]** — Added "ElevenReader Voice Chat Case Study (August 2026)" section. Flagship case of deploying ElevenAgents into a first-party consumer product: 50,000+ unique users (12 languages), 24% increase in listening time comparing before/after first conversation, 78% book completion rate among users with 5+ Voice Chat sessions, native mobile SDK (Android/iOS) + voice/text switching, reading companion system prompt, current-position context variables (book title, author, synopsis, current chapter, current paragraph), planned playback-control tool calls, guardrail self-destruct tests + first-day manual review (Treasure Island example), classification by conversation intent/theme/positive interaction, top queries were plot summaries (40%), citation-analysis queries in the hundreds per week. Added raw/articles/2026-08-08_elevenlabs_how-elevenreader-used-elevenagents.md to sources, updated: 2026-08-08.
 - Archive: already committed upstream (29 candidates, 26 new, total 2,401 URLs) — not re-run.
 
 
 ## [2026-08-08] dreaming | Saturation pass — Takes=0, 1 reference, 28 skips
 - Dreaming cycle 2026-08-08 18:10 UTC. Total articles collected: 0 (RSS/newsletter pipelines), 207 recent raw articles on disk.
-- **Saturation confirmed**: Today's pipelines (blog-triage 20件, raw-backlog-ingest ×4 runs, active-crawl 4件, watchdog auto-fix 5件) processed all substantive articles from Aug 7-8.
+- **Saturation confirmed**: Today's pipelines (blog-triage 20 items, raw-backlog-ingest ×4 runs, active-crawl 4 items, watchdog auto-fix 5 items) processed all substantive articles from Aug 7-8.
 - **Already covered (spot-checked)**: Dwarkesh continual learning (continual-learning.md L6+), OpenAI HF Black Hat timeline (openai-huggingface-incident-july-2026.md), Ed Zitron NVIDIA Part 2 (ed-zitron.md Winstar/Lucent), Prime Agent (prime-agent.md), Oracle OpenJDK ban (ai-generated-code-policies.md), Giles Thomas Chinchilla check (gilesthomas.md L70+), ScalexDev agent oversight (agent-human-oversight-failure.md), Agent Plugins 1.0.0 (agent-plugins-1-0-0.md).
 - **Reference candidate**: entities/elevenlabs.md — ElevenReader case study (24% listening lift) not yet in entity page. Minor enrichment opportunity.
 - **Batch skips**: Glean FR localized ×8, Harvey author index page, ElevenLabs short product announcements ×3, Decagon engineering blog ×2, Factory signing announcement, Cohere partnership, Superlinked GPU sharing, Gary Marcus paid post.
 - Archive: 29 candidates, 26 newly archived, 3 dedup skipped. Total archive URLs: 2,401.
 
-## [2026-08-08] raw-backlog-ingest (18:00) | Enrich 1件 (harvey) + Skip 4件
+## [2026-08-08] raw-backlog-ingest (18:00) | Enrich 1 item (harvey) + Skip 4 items
 
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 18:00, run 20260808T180025Z)。Takes=1, References=0, Skips=4。
-- **Enrich: [[entities/harvey]]** — 「Legal Discovery & Defensible AI Protocols (June 2026)」セクション追加。Harvey Blog 2026-06-05公開「How Legal Teams are Using AI for Legal Discovery」: ディスカバリーをEDRMライフサイクル全体のアーキテクチャ問題と再定義（Information Governance→Presentationの各段階でAI適用）、TAR（Da Silva Moore 2012 / Rio Tinto 2015 / Hyles 2016の判例史）vs 生成AIレビューの3次元トレードオフ表、防御可能なAIディスカバリープロトコル5要素（書面ESIプロトコル・検証方法論・サンプリングQC・監査証跡・meet-and-confer開示、FRCP Rule 26(b)(1)/(f)/(b)(5)・FRE 502基盤）、特権レビュー経済性（理由付けタスクとしての特権判断、FRE 502(d)オーダー標準化、Rule 26(b)(5)準拠特権ログ生成）、時間圧縮レビューでの価値曲線（HSRセカンドリクエスト、Lynn Pinker Hurst and Schwegmann事例: 週8時間超/弁護士節約・48時間以内対応で新規案件獲得）、法律グレードAI選定5基準（ドメイン特化訓練・引用グラウンディング・検証ツーリング・セキュリティ・ワークフロー統合）、エージェントシフト（Harvey AgentsのPlan/Research/Work/Deliver/Review、Reed Smith・Vinson and Elkins、複合エラー伝播リスク）。sourcesに raw/articles/2026-06-06_harvey_how-to-use-ai-for-legal-discovery.md 追加、updated: 2026-08-08。
-- **Skip: danluu.com--julialang--efa2d4b6.md** — 本日04:00実行で既処理（entities/dan-luu Notable Essays (Non-AI) にJulia言語レビュー収録済み）。same-day dedup。
-- **Skip: berthub.eu--articles-posts-ai-voor-wie-erover-gaat--4bd1470e.md** — entities/berthub-eu.md「AI Policy Analysis (July 2026)」で全文収録済み（FOMO採用・環境コスト・IP危機・デジタル主権・循環金融バブル・ジュニア/シニアパイプライン・認知的オフローディング・未測定パイロットの8論点）。sources/References両方に登録済み、archive_status: already_archived。
-- **Skip: michael.stapelberg.ch--posts-2025-07-13-nixos-nas-network-storage-config--3539d582.md** — 非AIインフラ記事（2102行のNixOS NAS移行ハウツー）。entities/michael-stapelberg.md「The NixOS Conversion」節に要約済み。
-- **Skip: refactoringenglish.com--chapters-rules-for-software-tutorials--52bcc5a7.md** — バッチスキップパターン。entities/refactoring-english.mdのSample Chapters/Other Topicsに既収録、Referencesにも既登録。
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 18:00, run 20260808T180025Z).Takes=1, References=0, Skips=4.
+- **Enrich: [[entities/harvey]]** — Added "Legal Discovery & Defensible AI Protocols (June 2026)" section. Harvey Blog 2026-06-05 post "How Legal Teams are Using AI for Legal Discovery": reframes discovery as an architecture problem across the entire EDRM lifecycle (applying AI at each stage from Information Governance to Presentation), a 3-dimensional trade-off table of TAR (case law history: Da Silva Moore 2012 / Rio Tinto 2015 / Hyles 2016) vs generative AI review, the 5 elements of a defensible AI discovery protocol (written ESI protocol, validation methodology, sampling QC, audit trail, meet-and-confer disclosure; FRCP Rule 26(b)(1)/(f)/(b)(5) and FRE 502 foundation), privilege review economics (privilege judgment as a reasoning task, FRE 502(d) order standardization, Rule 26(b)(5)-compliant privilege log generation), value curve in time-compressed review (HSR second requests, Lynn Pinker Hurst and Schwegmann case: 8+ hours/week per attorney saved, 48-hour turnaround winning new business), 5 criteria for selecting legal-grade AI (domain-specific training, citation grounding, validation tooling, security, workflow integration), agent shift (Harvey Agents' Plan/Research/Work/Deliver/Review, Reed Smith and Vinson and Elkins, compound error propagation risk). Added raw/articles/2026-06-06_harvey_how-to-use-ai-for-legal-discovery.md to sources, updated: 2026-08-08.
+- **Skip: danluu.com--julialang--efa2d4b6.md** — already processed in today's 04:00 run (Julia language review captured in entities/dan-luu Notable Essays (Non-AI)). Same-day dedup.
+- **Skip: berthub.eu--articles-posts-ai-voor-wie-erover-gaat--4bd1470e.md** — fully captured in entities/berthub-eu.md "AI Policy Analysis (July 2026)" (8 themes: FOMO adoption, environmental cost, IP crisis, digital sovereignty, circular financial bubble, junior/senior pipeline, cognitive offloading, unmeasured pilots). Registered in both sources/References, archive_status: already_archived.
+- **Skip: michael.stapelberg.ch--posts-2025-07-13-nixos-nas-network-storage-config--3539d582.md** — non-AI infrastructure article (2102-line NixOS NAS migration how-to). Already summarized in the "The NixOS Conversion" section of entities/michael-stapelberg.md.
+- **Skip: refactoringenglish.com--chapters-rules-for-software-tutorials--52bcc5a7.md** — batch skip pattern. Already in entities/refactoring-english.md under Sample Chapters/Other Topics and registered in References.
 
 ## [2026-08-08] watchdog | auto-fix: log header, index counts, 5 misplaced tag-list frontmatters
 
@@ -55,14 +55,14 @@ _Log of all wiki changes. Newest entries at top._
 
 ---
 
-## [2026-08-08] raw-backlog-ingest (14:00) | Reference 1件 (filfre-net) + Skip 4件
+## [2026-08-08] raw-backlog-ingest (14:00) | Reference 1 item (filfre-net) + Skip 4 items
 
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 14:00, run 20260808T140051Z)。Takes=0, References=1, Skips=4。
-- **Reference: [[entities/filfre-net]]** — Maxis連載Part 3「The Life and Times of Maxis, Part 3: The Sims」をカタログ更新。Recent Themesに「Maxis / Will Wright Series (2026)」サブセクション新設（Part 1 SimEverything / Part 2 SimWorld / Part 3 The Sims）。本文はThe Sims開発史: 1991年オークランド大火災→Will Wrightの生活シミュレーション着想、Christopher Alexander『A Pattern Language』の影響、Dollhouse→The Simsへの8年半の変遷、単独天才神話の否定。ReferencesにPart 3 (filfre.net--2026-08-the-life-and-times-of-maxis-part-3-the-sims--d7b90741) 追記、updated: 2026-08-08。
-- **Skip: 2026-08-08_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md** — Glean知識グラフ記事のフランス語版。2026-07-28英語オリジナルが既にentities/glean.md「Enterprise Knowledge Graph Cases (July 2026)」に全文収録済み（7ユースケース表・市場$2.89B・GraphRAG比較・採用ガイド）。ローカライズ版に新規情報なし。
-- **Skip: 2026-05-10_hex-technologies_notebook-agent-prompting-guide-agentic-analytics.md** — 本日04:00のraw-backlog-ingestでentities/hex-technologies.mdに「Notebook Agent Prompting Guide (September 2025)」セクション追加済み。重複回避。
-- **Skip: danluu.com--startup-options--a3b4b12e.md / danluu.com--ballmer--7af5f7cf.md** — 本日04:00のraw-backlog-ingestでentities/dan-luu.md「Notable Essays (Non-AI)」に収録済み（Startup options v. cash / Steve Ballmer was an underrated CEO）。重複回避。
-- Archive: archive_triage.py raw_backlog --keep-reference 実行（5件新規アーカイブ、total 2376）。
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 14:00, run 20260808T140051Z).Takes=0, References=1, Skips=4.
+- **Reference: [[entities/filfre-net]]** — Catalog update for Maxis series Part 3 "The Life and Times of Maxis, Part 3: The Sims". Created "Maxis / Will Wright Series (2026)" subsection under Recent Themes (Part 1 SimEverything / Part 2 SimWorld / Part 3 The Sims). The article covers The Sims development history: the 1991 Oakland fire → Will Wright's life-simulation inspiration, the influence of Christopher Alexander's A Pattern Language, the 8.5-year evolution from Dollhouse to The Sims, and the debunking of the lone-genius myth. Added Part 3 (filfre.net--2026-08-the-life-and-times-of-maxis-part-3-the-sims--d7b90741) to References, updated: 2026-08-08.
+- **Skip: 2026-08-08_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md** — French version of Glean knowledge-graph article. The 2026-07-28 English original is already fully captured in entities/glean.md "Enterprise Knowledge Graph Cases (July 2026)" (7 use-case table, $2.89B market, GraphRAG comparison, adoption guide). No new information in the localized version.
+- **Skip: 2026-05-10_hex-technologies_notebook-agent-prompting-guide-agentic-analytics.md** — "Notebook Agent Prompting Guide (September 2025)" section already added to entities/hex-technologies.md in today's 04:00 raw-backlog-ingest. Duplicate avoidance.
+- **Skip: danluu.com--startup-options--a3b4b12e.md / danluu.com--ballmer--7af5f7cf.md** — already captured in entities/dan-luu.md "Notable Essays (Non-AI)" during today's 04:00 raw-backlog-ingest (Startup options v. cash / Steve Ballmer was an underrated CEO). Duplicate avoidance.
+- Archive: ran archive_triage.py raw_backlog --keep-reference (5 new archived, total 2376).
 
 ## [2026-08-08] active-crawl | 4 topics covered: 2 new concept pages + 2 enrichments
 
@@ -75,29 +75,29 @@ _Log of all wiki changes. Newest entries at top._
 
 ---
 
-## [2026-08-08] blog-triage | 5件のAI関連記事をwikiに反映
+## [2026-08-08] blog-triage | Reflected 5 AI-related articles into wiki
 
-- **Updated: [[events/openai-huggingface-incident-july-2026]]** — Black Hat presentation詳細タイムライン追加 (May 7→Jul 20)。Artifactory message board の自発的形成、2つのzero-day exploit、Linux kernel CVE (pte_physroot) のダウンロード・カスタマイズ、OpenAIがHF侵害の責任を知った経緯 (credential revocation照会)。Source: simonwillison.net Aug 7。
-- **Updated: [[entities/gilesthomas]]** — 「Chinchilla Scaling Law Check (August 2026)」セクション追加。163M→230MパラメータGPT-2モデルでChinchilla最適 (20 tok/param) を検証。スケールアップモデルが過学習モデルより1.35%低いtest loss達成 (3.280 vs 3.325)。統計的にplausibleだがnoiseの可能性も。Source: gilesthomas.com Aug 8。
-- **Updated: [[concepts/continual-learning]]** — Dwarkesh Patel「8 Predictions for the Era of Continual Learning」追加。安全評価の継続的検査への転換、技術的アライメントの再設計、AI多様性の増加、先行者利益の加速、推論経済の大規模組織偏向 (batch size >2,400)、セッション学習許可への subsidize。Source: dwarkesh.com Aug 8。
-- **Updated: [[entities/gary-marcus]]** — 「CPUs and the Rise of Neurosymbolic AI (August 2026)」セクション追加。GPU only (2012–2023) → CPU+GPU (neurosymbolic) のハードウェアシフトがパラダイムシフトを反映するという議論。Paid post、内容限定的。Source: garymarcus.substack.com Aug 8。
-- **Updated: [[entities/simon-willison]]** — 3記事追加: (1) Moonlight & Mayhem — Codex + GPT-5.6 Sol Ultra vs Claude Fable 5 のゲーム生成比較、52分のサブエージェント活用。(2) Tokenpocalypse — AccentureのPDF→画像→markdown変換が最大トークン消費源。(3) OpenAI HF incident Black Hat timeline。Source: simonwillison.net Aug 7。
-- Raw articles saved: 20件 (blog_ingest 2026-08-08)、うちAI high-relevance 5件、medium 5件、low/none 2件。
-## [2026-08-08] raw-backlog-ingest (04:00) | Enrich 2件 (hex-technologies + dan-luu) + Skip 1件
+- **Updated: [[events/openai-huggingface-incident-july-2026]]** — Added detailed Black Hat presentation timeline (May 7→Jul 20). Spontaneous formation of the Artifactory message board, 2 zero-day exploits, download and customization of a Linux kernel CVE (pte_physroot), how OpenAI learned it bore responsibility for the HF breach (credential revocation inquiry). Source: simonwillison.net Aug 7.
+- **Updated: [[entities/gilesthomas]]** — Added "Chinchilla Scaling Law Check (August 2026)" section. Tests Chinchilla-optimality (20 tok/param) on 163M→230M parameter GPT-2 models. The scaled-up model achieved 1.35% lower test loss than the overtrained model (3.280 vs 3.325). Statistically plausible but could be noise. Source: gilesthomas.com Aug 8.
+- **Updated: [[concepts/continual-learning]]** — Added Dwarkesh Patel "8 Predictions for the Era of Continual Learning". Shift to continuous inspection in safety evaluation, redesign of technical alignment, increase in AI diversity, acceleration of first-mover advantage, large-organization bias in the inference economy (batch size >2,400), subsidizing permission for session learning. Source: dwarkesh.com Aug 8.
+- **Updated: [[entities/gary-marcus]]** — Added "CPUs and the Rise of Neurosymbolic AI (August 2026)" section. Argues the hardware shift from GPU-only (2012–2023) to CPU+GPU (neurosymbolic) reflects a paradigm shift. Paid post, limited content. Source: garymarcus.substack.com Aug 8.
+- **Updated: [[entities/simon-willison]]** — Added 3 articles: (1) Moonlight & Mayhem — game-generation comparison of Codex + GPT-5.6 Sol Ultra vs Claude Fable 5, 52 minutes of subagent use. (2) Tokenpocalypse — Accenture's PDF→image→markdown conversion as the largest token consumption source. (3) OpenAI HF incident Black Hat timeline. Source: simonwillison.net Aug 7.
+- Raw articles saved: 20 items (blog_ingest 2026-08-08), of which AI high-relevance 5 items, medium 5 items, low/none 2 items.
+## [2026-08-08] raw-backlog-ingest (04:00) | Enrich 2 items (hex-technologies + dan-luu) + Skip 1 item
 
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 04:00, run 20260808T040046Z)。Takes=0, References=0, Skips=0 — 内訳: Enrichment 2件 (hex-technologies, dan-luu) + Skip 1件。
-- **Enrich: [[entities/hex-technologies]]** — 「Notebook Agent Prompting Guide (September 2025)」セクション追加。Alex Brumas (Product) 著・2025-09-24公開。4 capabilities (agentic search / building a plan / executing analysis / summarizing results)、メンタルモデル (structured prompting Context/Task/Guidelines/Constraints、conversational prompting、meta-prompting plan→feed-back、@taggingによるcontext scoping、分析手法明示、business-impact framing、Workspace rules file=組織レベル注入コンテキスト、expert consultantとしての扱い)、テンプレート (data discovery、notebook cleanup & dependency mapping、cross-project prompt chaining/context seeding等)。sources追加、updated: 2026-08-08。
-- **Enrich: [[entities/dan-luu]]** — 「Notable Essays (Non-AI)」セクション追加。3本の非AIエッセイを著者カタログとして収録: (1) Startup options v. cash (2013/2020更新: リスク-リワード比例の誤謬、preferred vs common stock、Black-Scholes不適用、ISO/AMT/QSBS税制、シード投資$25k/yr優位論)、(2) Steve Ballmer was an underrated CEO (2024: Azure/Office 365/Bing/Xbox/エンタープライズ営業、反トラスト制約、TypeScript/vscode/LINQ)、(3) A review of the Julia language (2015/2022更新: コア言語のバグ、例外処理、テスト文化、Zygote/ReverseDiff.jlの誤勾配=MLツール関連、co-creatorの否定パターン)。sources追加、updated: 2026-08-08。
-- **Skip: berthub.eu「AI: Overwegingen voor wie erover gaat」** — entities/berthub-eu.md に「AI Policy Analysis (July 2026)」セクションとして既に完全カバー済み (sources frontmatterに同一raw記事パス記載、本文に要旨全文反映済み)。
-## [2026-08-08] raw-backlog-ingest (00:00) | Take 2件 (boris-cherny + ed-zitron) + Skip 3件
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 04:00, run 20260808T040046Z). Takes=0, References=0, Skips=0 — breakdown: Enrichment 2 items (hex-technologies, dan-luu) + Skip 1 item.
+- **Enrich: [[entities/hex-technologies]]** — Added "Notebook Agent Prompting Guide (September 2025)" section. By Alex Brumas (Product), published 2025-09-24. 4 capabilities (agentic search / building a plan / executing analysis / summarizing results), mental models (structured prompting Context/Task/Guidelines/Constraints, conversational prompting, meta-prompting plan→feed-back, context scoping via @tagging, explicit analysis methods, business-impact framing, Workspace rules file = organization-level injected context, treating the agent as an expert consultant), templates (data discovery, notebook cleanup & dependency mapping, cross-project prompt chaining/context seeding, etc.). Added sources, updated: 2026-08-08.
+- **Enrich: [[entities/dan-luu]]** — Added "Notable Essays (Non-AI)" section, cataloging 3 non-AI essays by the author: (1) Startup options v. cash (2013/2020 update: risk-reward proportionality fallacy, preferred vs common stock, Black-Scholes not applicable, ISO/AMT/QSBS tax regimes, seed-invest $25k/yr advantage thesis), (2) Steve Ballmer was an underrated CEO (2024: Azure/Office 365/Bing/Xbox/enterprise sales, antitrust constraints, TypeScript/vscode/LINQ), (3) A review of the Julia language (2015/2022 update: core language bugs, exception handling, testing culture, Zygote/ReverseDiff.jl wrong gradients = ML tooling relevance, co-creator denial patterns). Added sources, updated: 2026-08-08.
+- **Skip: berthub.eu "AI: Overwegingen voor wie erover gaat"** — already fully covered as the "AI Policy Analysis (July 2026)" section in entities/berthub-eu.md (same raw article path listed in sources frontmatter, full summary reflected in body).
+## [2026-08-08] raw-backlog-ingest (00:00) | Take 2 items (boris-cherny + ed-zitron) + Skip 3 items
 
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 00:00, run 20260808T000017Z)。Takes=2, References=0, Skips=3。
-- **Take: [[entities/boris-cherny]]** — 「Startup School 2026 Interview (August 2026)」セクション追加。Opus 5のARC AGI 3 30%・プロンプトインジェクション耐性（アラインメント+Crysola機械的可解釈性分類器+auto mode分類器の3層）・システムプロンプト80%削除とsimple modeアブレーション・product overhang/unhobbling・dynamic workflowsを「algebra for agents」「新たなtest time compute」と定義・Bun Zig→Rust 11日書き換え（100K+行、本番稼働）・loops/routinesによるClaude自己メンテナンス（abstraction police等20-30 routines/日）・Claude Tag 2週間Electron→Swift書き換え。sources追加、updated: 2026-08-08。
-- **Take: [[entities/ed-zitron]]** — 「Four Horsemen of the AIpocalypse (Late April 2026)」セクション追加。4つのpale horse: (1) Anthropic可用性危機（Chatbot 98.79%等のuptime、Opus 4.7回帰論争: Reddit 2,300 upvotes/「strawberry」2 P問題/adaptive reasoning、Boris Cherny反論）、(2) 容量計画の矛盾（Broadcom 2027/Hut8/CoreWeave 850MW、Mythosが容量制約で保留というFT報道、114GW中15.2GWのみ建設中、NVIDIA $285.7B GPU vs $1T売上）、(3) コスト危機（Goldman 10% headcount、Uber年間予算使い切り+11%バックエンド更新がAI、Spotify試算、トークン課金移行）、(4) contracted ARR詐欺（Scott Stevenson、50%+のAIスタートアップ）。sources追加、updated: 2026-08-08。
-- **Enrich: [[concepts/dynamic-workflows]]** — 「Boris Cherny's Framing (August 2026)」セクション追加。algebra for agents・新たなtest time compute枠組み、Bun Zig→Rust本番書き換え、loops/routinesとの区別。sources追加、updated: 2026-08-08。
-- **Skip (3件)**: dario-amodei Policy on the AI Exponential（[[entities/dario-amodei]]に完全収録済み）、openai-developers-blog skills-agents-sdk（[[concepts/agent-skills]] OSS Maintenance Case Studyに収録済み: 457 PRs等）、filfre.net Omikron（非AIビデオゲーム史）。
-- **index.md**: boris-cherny, ed-zitron, dynamic-workflows の3エントリ説明更新（ページ数変動なし）。
-- **Tracking**: processed_raw_articles.json に5記事を status=done/decision 登録（再選択防止）。
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-08 00:00, run 20260808T000017Z).Takes=2, References=0, Skips=3.
+- **Take: [[entities/boris-cherny]]** — Added "Startup School 2026 Interview (August 2026)" section. Opus 5's ARC AGI 3 30%, prompt-injection resistance (3 layers: alignment + Crysola mechanically-interpretable classifier + auto mode classifier), 80% system prompt removal with simple mode ablation, product overhang/unhobbling, defining dynamic workflows as "algebra for agents" and "new test time compute", Bun Zig→Rust 11-day rewrite (100K+ lines, in production), Claude self-maintenance via loops/routines (20-30 routines/day such as abstraction police), Claude Tag rewritten Electron→Swift in 2 weeks. Added sources, updated: 2026-08-08.
+- **Take: [[entities/ed-zitron]]** — Added "Four Horsemen of the AIpocalypse (Late April 2026)" section. 4 pale horses: (1) Anthropic availability crisis (uptime like Chatbot 98.79%, Opus 4.7 regression controversy: Reddit 2,300 upvotes/"strawberry" 2 P problem/adaptive reasoning, Boris Cherny rebuttal), (2) capacity-planning contradictions (Broadcom 2027/Hut8/CoreWeave 850MW, FT reporting Mythos on hold due to capacity constraints, only 15.2GW of 114GW under construction, NVIDIA $285.7B GPU vs $1T revenue), (3) cost crisis (Goldman 10% headcount, Uber annual budget exhausted + 11% of backend updates are AI, Spotify estimates, token-billing transition), (4) contracted ARR fraud (Scott Stevenson, 50%+ of AI startups). Added sources, updated: 2026-08-08.
+- **Enrich: [[concepts/dynamic-workflows]]** — Added "Boris Cherny's Framing (August 2026)" section. algebra for agents and new test time compute framework, Bun Zig→Rust production rewrite, distinction from loops/routines. Added sources, updated: 2026-08-08.
+- **Skip (3 items)**: dario-amodei Policy on the AI Exponential (fully captured in [[entities/dario-amodei]]), openai-developers-blog skills-agents-sdk (captured in [[concepts/agent-skills]] OSS Maintenance Case Study: 457 PRs etc.), filfre.net Omikron (non-AI video game history).
+- **index.md**: updated descriptions for 3 entries: boris-cherny, ed-zitron, dynamic-workflows (no change in page count).
+- **Tracking**: registered 5 articles in processed_raw_articles.json with status=done/decision (to prevent re-selection).
 ## [2026-08-07] x-bookmarks-ingest | 1 bookmark → SIE (multi-model GPU serving) + 2 entities + concept enrichment
 
 - **Bookmark**: X Article "How to serve 5 models on one GPU (100% open-source)" by Superlinked (2026-08-05). Full article text available via `article.plain_text`.
@@ -107,14 +107,14 @@ _Log of all wiki changes. Newest entries at top._
 - **Raw article**: [[raw/articles/2026-08-05_superlinked_serve-5-models-one-gpu]] (26KB, full article body)
 - **index.md**: +2 entity entries (sie-superlinked-inference-engine, superlinked). Entities: 882→884.
 
-## [2026-08-07] raw-backlog-ingest (22:00) | Take 1件 (constrained-decoding + fireworks-ai) + Skip 4件
+## [2026-08-07] raw-backlog-ingest (22:00) | Take 1 item (constrained-decoding + fireworks-ai) + Skip 4 items
 
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 22:00, run 20260807T220051Z)。Takes=1, References=0, Skips=4。
-- **Take: [[concepts/constrained-decoding]]** — 25行stub（malformed YAML frontmatter付き）を本格ページへ昇格。Fireworks「From text to task: Constrained generation for structured extraction in R1」(2025-02-01)を主ソースに、constrained decodingのトークン制約メカニズム・boilerplateスキップによる高速化・DeepSeek R1 `<think>`/`</think>` 分離+JSON schema適用範囲・Reasoning JSON Mode APIパターン（Pydantic schema, response_format json_object）・応用例（Q&A/ヘルスケア/システムスペック）を収録。[[concepts/structured-outputs]]（親パラダイム）と[[concepts/sglang-structured-generation-language]]（grammar-constrainedエンジン）へ双方向リンク。
-- **Take: [[entities/fireworks-ai]]** — 「Constrained Generation / Reasoning JSON Mode (Feb 2025)」セクション追加（R1 JSON模式の仕組み・API surface・Agent Execution Taxとのポジショニング連続性）。sources frontmatterに raw/articles/2026-05-10_fireworks-ai_constrained-generation-with-reasoning.md 追加、updated: 2026-08-07。
-- **Skip (4件, 非AI)**: boyter.org PHP検索エンジンPart1(2013, レガシーPHPチュートリアル)、it-notes.dragas.net Mastodonリバースプロキシキャッシュ(インフラ, 既アーカイブ済み)、paulgraham.com "Why to Not Not Start a Startup"(2007) + "The Power of the Marginal"(2006)（スタートアップ随筆, AI無関係）。
-- **Tracking**: processed_raw_articles.json に5記事を status=done/decision 登録（再選択防止）。
-- **Archive**: archive_triage.py raw_backlog --keep-reference 実行。
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 22:00, run 20260807T220051Z).Takes=1, References=0, Skips=4.
+- **Take: [[concepts/constrained-decoding]]** — Promoted a 25-line stub (with malformed YAML frontmatter) to a full page. Using Fireworks "From text to task: Constrained generation for structured extraction in R1" (2025-02-01) as the primary source, covers constrained decoding's token-constraint mechanism, speedup via boilerplate skipping, DeepSeek R1 `<think>`/`</think>` separation + JSON schema applicability, Reasoning JSON Mode API pattern (Pydantic schema, response_format json_object), and use cases (Q&A/healthcare/system specs). Bidirectional links to [[concepts/structured-outputs]] (parent paradigm) and [[concepts/sglang-structured-generation-language]] (grammar-constrained engine).
+- **Take: [[entities/fireworks-ai]]** — Added "Constrained Generation / Reasoning JSON Mode (Feb 2025)" section (how R1 JSON mode works, API surface, positioning continuity with Agent Execution Tax). Added raw/articles/2026-05-10_fireworks-ai_constrained-generation-with-reasoning.md to sources frontmatter, updated: 2026-08-07.
+- **Skip (4 items, non-AI)**: boyter.org PHP search engine Part 1 (2013, legacy PHP tutorial), it-notes.dragas.net Mastodon reverse-proxy cache (infrastructure, already archived), paulgraham.com "Why to Not Not Start a Startup" (2007) + "The Power of the Marginal" (2006) (startup essays, unrelated to AI).
+- **Tracking**: registered 5 articles in processed_raw_articles.json with status=done/decision (to prevent re-selection).
+- **Archive**: ran archive_triage.py raw_backlog --keep-reference.
 
 ## [2026-08-07] skeleton-enrich-daily | roborev + buildy L2→L3; kyle-corbett → redirect (duplicate detection); openpipe W&B migration
 - **[[entities/roborev]]** — Enriched L2→L3 from GitHub API + README + kenn.io: repo moved from `roborev-dev/roborev` to **kenn-io/roborev** (Kenn Software, kenn.io — Wes McKinney's company); MIT license; created 2026-01-05; ~1,600 stars / 143 forks; latest release **v0.64.0** (2026-08-06, GitLab MR support + Grok Build + ACP/Goose). Added two-layer automation (post-commit reviews + agent hooks for 9 harnesses), 10-agent support matrix, `roborev analyze` types, `compact`/`export` commands, recent release highlights table, Claude Code proxy routing, security model + telemetry, kata/beads integrations. Fixed broken wikilinks (agents-view → agentsview; removed non-existent kata/middleman links).
@@ -184,14 +184,14 @@ _Log of all wiki changes. Newest entries at top._
 
 ---
 
-## [2026-08-07] raw-backlog-ingest (14:00) | Take 1件 + Reference 1件 + Skip 3件を判定
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 14:00, run 20260807T140039Z)。Takes=1, References=1, Skips=3。
-- **Take: entities/open-athena.md 新規作成** — `2026-04-14_openathena_delphi-scaling-laws.md`（Delphi scaling suite）。記事内容自体は [[concepts/delphi-scaling-laws]] に既に収録済みだったが、同ページの See Also にある [[entities/open-athena]] へのwikilinkが存在しない壊れたリンクだったため、Open Athena（学界向けフロンティアAI非営利団体・MARINチーム）のエンティティページを作成し修復。Delphi 3コンポーネント（scaling recipe/suite/law）、1e23 FLOPランを0.2%誤差で予測（300×外挿）、AdamH最適化器・トークンホライズン補正を収録。index.md（Entities 883→884）と entities/_index.md に追加。
-- **Reference: karpathy エンティティ群の sources 補完** — `karpathy.github.io--2026-02-12-microgpt--6d759dd0.md`（microgpt: 依存ゼロ200行PythonでGPT訓練+推論）。内容は entities/andrej-karpathy.md（Timeline+microgpt節）、entities/karpathy-projects.md（microgpt節）、entities/karpathy-ideas.md に既にカバー済みだったが、sources フロントマターが空（sources: []）で raw 記事参照が欠落。両ページの sources に raw 記事パスを追加（karpathy-projects.md は破損していた frontmatter 構造も修正）。
-- **Skip (カバー済み)** `wheresyoured.at--ai-is-slowing-down--1b78f0d2.md` — entities/ed-zitron.md L399- に「AI Is Slowing Down — Infrastructure Math Demands 10x Revenue (June 2026)」節として詳細収録済み（$15Tコンピュート問題・収益成長ギャップ・Suleyman矛盾・Loop問題）。sources にも記載済み。
-- **Skip (非AI)** `paulgraham.com--guidetoinvestors-html--ba487665.md` — 2007年のスタートアップ投資家向けエッセイ。entities/paulgraham-com.md の sources に既記載。LLM/AI技術と無関係。
-- **Skip (非AI)** `chiark.greenend.org.uk--sgtatham-quasiblog-findloop--7c9313ec.md` — Simon Tatham のグラフループ検出アルゴリズム失敗事例集（パズルプログラミング）。entities/chiark-greenend-org-uk-sgtatham.md の sources に既記載。LLM/AI技術と無関係。
-- **Archive**: archive_triage.py raw_backlog --keep-reference 実行予定。
+## [2026-08-07] raw-backlog-ingest (14:00) | Judged Take 1 item + Reference 1 item + Skip 3 items
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 14:00, run 20260807T140039Z).Takes=1, References=1, Skips=3.
+- **Take: created entities/open-athena.md** — from `2026-04-14_openathena_delphi-scaling-laws.md` (Delphi scaling suite). The article content was already captured in [[concepts/delphi-scaling-laws]], but the wikilink to [[entities/open-athena]] in that page's See Also was broken (page did not exist), so created and repaired the entity page for Open Athena (frontier-AI nonprofit for academia, MARIN team). Captures Delphi's 3 components (scaling recipe/suite/law), predicting a 1e23 FLOP run within 0.2% error (300× extrapolation), AdamH optimizer and token-horizon correction. Added to index.md (Entities 883→884) and entities/_index.md.
+- **Reference: completed sources for the karpathy entity group** — `karpathy.github.io--2026-02-12-microgpt--6d759dd0.md` (microgpt: training + inference GPT in 200 lines of dependency-free Python). Content was already covered across entities/andrej-karpathy.md (Timeline + microgpt section), entities/karpathy-projects.md (microgpt section), and entities/karpathy-ideas.md, but the sources frontmatter was empty (sources: []) so raw article references were missing. Added the raw article path to both pages' sources (also fixed the corrupted frontmatter structure in karpathy-projects.md).
+- **Skip (already captured)** `wheresyoured.at--ai-is-slowing-down--1b78f0d2.md` — already covered in detail as "AI Is Slowing Down — Infrastructure Math Demands 10x Revenue (June 2026)" section at entities/ed-zitron.md L399- ($15T compute problem, revenue growth gap, Suleyman contradiction, Loop problem). Also listed in sources.
+- **Skip (non-AI)** `paulgraham.com--guidetoinvestors-html--ba487665.md` — 2007 essay for startup investors. Already listed in the sources of entities/paulgraham-com.md. Unrelated to LLM/AI technology.
+- **Skip (non-AI)** `chiark.greenend.org.uk--sgtatham-quasiblog-findloop--7c9313ec.md` — Simon Tatham's collection of graph loop-detection algorithm failure cases (puzzle programming). Already listed in the sources of entities/chiark-greenend-org-uk-sgtatham.md. Unrelated to LLM/AI technology.
+- **Archive**: archive_triage.py raw_backlog --keep-reference scheduled.
 
 ---
 
@@ -221,7 +221,7 @@ Prime Intellect launched **Prime Agent**, an open-source self-improving coding h
 **Trending topics identified**: AMD/Taalas acquisition, Qwen3.8 Max tops agentic index, DeepSeek V4 Flash on MI300X, AI agent safety human oversight failure (308 pts), GPT-5.6 Sol improvements, consumer voice assistant failures (Alexa+ review), Rust LLM contribution policy, Jianlin Su / RoPE inventor profile, DeepMind consciousness research, NemotronLabs VoiceChat 11B
 
 **Pages created** (4):
-- NEW [[entities/jianlin-su]] — Jianlin Su (苏剑林) — RoPE inventor, DeepSeek researcher
+- NEW [[entities/jianlin-su]] — Jianlin Su — RoPE inventor, DeepSeek researcher
 - NEW [[concepts/agent-human-oversight-failure]] — scaleX study: humans miss 33% of agent threats across 40k runs
 - NEW [[concepts/consumer-voice-assistants]] — LLM-era voice assistants landscape: Alexa+, Siri AI, Google Assistant
 - NEW [[concepts/llm-policies-open-source]] — Rust, Debian, Linux kernel OSS LLM contribution policies
@@ -236,41 +236,41 @@ Prime Intellect launched **Prime Agent**, an open-source self-improving coding h
 
 **Topics considered but already covered**: AMD/Taalas (newsletter pipeline enriched entities/amd.md earlier today), Qwen3.8 Max (concepts/qwen-3-8.md exists), GPT-5.6 Sol (well-covered), NVIDIA Vera (entities + concepts exist), DeepSeek (well-covered), DeepMind consciousness (concepts/ai-consciousness-debate.md exists)
 
-## [2026-08-07] newsletter-wiki-ingest (10:40) | Take 3件 + Reference 5件をWiki反映
+## [2026-08-07] newsletter-wiki-ingest (10:40) | Reflected Take 3 items + Reference 5 items into wiki
 
-- **Take (new entity): entities/taalas.md** — 新規エンティティ作成。AMDがカスタムAI推論シリコン企業Taalasを買収（2026-08-06発表）。Taalas公式X投稿全文引用:「hardware designed around the model... world's fastest and most cost-effective inference silicon」。taalas.comの自社説明（"The Model is The Computer"、Hardcore Models 1000x効率、Taalas Foundry）も収録。Custom ASIC推論の垂直統合トレンドの具体的事例。
-- **Take: entities/amd.md** — 「Taalas Acquisition (August 2026)」セクション追加。買収の技術的意義（モデル特化シリコン合成能力の獲得、MI355X GPUラインとの補完、Agentic Kernel Generation戦略との関係）、カスタムASIC推論トレンドへの位置づけ。Source: raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md
-- **Take: concepts/custom-ai-silicon.md** — 「Frontier Lab In-House Silicon: Anthropic (August 2026)」セクション追加。Anthropicが初めて自社シリコンチーム設立を公式確認（Claude向けカスタムチップ、チップエンジニア募集$320K-$485K、Samsung製造提携交渉はThe Information 7月報道）。OpenAI Jalapeno/Broadcom、Meta次世代チップ(9月)との比較文脈。Source: raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
-- **Take: entities/anthropic.md** — 「In-House Silicon Team (August 2026)」セクション追加（Compute Partnership Overview配下）。外部シリコン顧客（TPU/Trainium/GPU）からモデル優先コデザイン戦略へのシフト。
-- **Take: concepts/gemini/index.md** — 「SemiAnalysis Institutional Bear Thesis (August 2026)」セクション追加。Gemini 3.5 Pro静かにキャンセル、3.6 Flashブリッジモデル、Gemini 1P APIトークン成長減速（60% 1Q26→38% 2Q26）、Gemini ARR $12B、GCP成長82%、TPU売上$35B/GW、TPU出荷20%超がAnthropic直販（3Q26-4Q27）、Thomas Kurian社内政治勝利。Martin AldersonのTPU Advantage論との対比も記載。
-- **Take: entities/semianalysis.md** — 「Gemini is Cooked but GCP is Cooking (August 2026)」をKey Publicationsに追加。機関投資家向けベアテーゼ（モデル事業弱気 vs インフラ事業強気の二分法）。
-- **Reference: concepts/open-weight-ai-regulation.md** — 「White House Guidelines Exempt U.S. Open Models (August 2026)」セクション追加。政府レビュー対象は閉域・プロプライエタリなSOTAサイバー能力モデルのみ、オープンモデルは免除（WSJ/Bloomberg）。規制非対称性が中国オープンウェイト優位を生む懸念も記載。
-- **Reference: concepts/gpt/gpt-5-6.md** — 「Consumer Model Unification & Agent Plugins (August 6, 2026)」セクション追加。Instant/Thinking統合、GPT-5.6 Sol all-in-one（reasoning-effortスライダー、誤答68%減）、Free/Go向けLuna無制限+Thinkボタン、Agent Pluginsオープン標準（AWS/Cursor/GitHub/Vercel共同）。
-- **Reference: entities/cloudflare.md** — 「Kitesurf — Stateless Browser on Workers (August 2026)」セクション追加。Agents Week発表、script/DOMとレンダリング分離、レンダラーワーカー遅延生成、CPU/メモリ削減。
-- **Reference: entities/deepmind.md** — 「WeatherNext 2 — Cyclone Forecasting Breakthrough (August 2026)」セクション追加。Nature掲載、コード・重み付きOSS化、サイクロン予報で約1日リードタイム延長、嵐あたり1,000本確率予測、ハリケーンMelissa 5日前Cat 5予測を80%確信度で的中。
-- **Reference: entities/meta.md** — 「GEM — Ad Recommendation Foundation Model (August 2026)」セクション追加。ハイブリッドレコメンド+LLM、数千台GPU、数兆スパース+数十億デンスパラメータ、MFU 20-25%へ倍増、12ヶ月で訓練計算量4倍。
+- **Take (new entity): entities/taalas.md** — Created new entity. AMD acquires Taalas, a custom AI inference silicon company (announced 2026-08-06). Includes full quotes from Taalas' official X post: "hardware designed around the model... world's fastest and most cost-effective inference silicon". Also captures taaalas.com's self-description ("The Model is The Computer", Hardcore Models 1000x efficiency, Taalas Foundry). Concrete example of the vertical-integration trend in custom ASIC inference.
+- **Take: entities/amd.md** — Added "Taalas Acquisition (August 2026)" section. Technical significance of the acquisition (gaining model-specific silicon synthesis capability, complementing the MI355X GPU line, relation to the Agentic Kernel Generation strategy), positioning within the custom ASIC inference trend. Source: raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md
+- **Take: concepts/custom-ai-silicon.md** — Added "Frontier Lab In-House Silicon: Anthropic (August 2026)" section. Anthropic officially confirms for the first time establishing an in-house silicon team (custom chips for Claude, chip engineer hiring $320K-$485K, Samsung manufacturing partnership negotiations reported by The Information in July). Comparative context with OpenAI Jalapeno/Broadcom and Meta's next-gen chip (September). Source: raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
+- **Take: entities/anthropic.md** — Added "In-House Silicon Team (August 2026)" section (under Compute Partnership Overview). Shift from external silicon customer (TPU/Trainium/GPU) to a model-first co-design strategy.
+- **Take: concepts/gemini/index.md** — Added "SemiAnalysis Institutional Bear Thesis (August 2026)" section. Gemini 3.5 Pro quietly cancelled, 3.6 Flash bridge model, Gemini 1P API token growth slowdown (60% 1Q26→38% 2Q26), Gemini ARR $12B, GCP growth 82%, TPU revenue $35B/GW, over 20% of TPU shipments sold directly to Anthropic (3Q26-4Q27), Thomas Kurian's internal political victory. Also contrasts Martin Alderson's TPU Advantage thesis.
+- **Take: entities/semianalysis.md** — Added "Gemini is Cooked but GCP is Cooking (August 2026)" to Key Publications. Institutional bear thesis (dichotomy of bearish model business vs bullish infrastructure business).
+- **Reference: concepts/open-weight-ai-regulation.md** — Added "White House Guidelines Exempt U.S. Open Models (August 2026)" section. Only closed, proprietary SOTA cyber-capability models are subject to government review; open models are exempt (WSJ/Bloomberg). Also notes concern that regulatory asymmetry creates a Chinese open-weight advantage.
+- **Reference: concepts/gpt/gpt-5-6.md** — Added "Consumer Model Unification & Agent Plugins (August 6, 2026)" section. Instant/Thinking unification, GPT-5.6 Sol all-in-one (reasoning-effort slider, 68% fewer incorrect answers), unlimited Luna + Think button for Free/Go tiers, Agent Plugins open standard (AWS/Cursor/GitHub/Vercel jointly).
+- **Reference: entities/cloudflare.md** — Added "Kitesurf — Stateless Browser on Workers (August 2026)" section. Announced at Agents Week, separation of script/DOM from rendering, lazy generation of renderer workers, CPU/memory reduction.
+- **Reference: entities/deepmind.md** — Added "WeatherNext 2 — Cyclone Forecasting Breakthrough (August 2026)" section. Published in Nature, open-sourced code and weights, ~1 day lead-time extension for cyclone forecasts, 1,000 probabilistic predictions per storm, correctly predicted Hurricane Melissa as Cat 5 five days out with 80% confidence.
+- **Reference: entities/meta.md** — Added "GEM — Ad Recommendation Foundation Model (August 2026)" section. Hybrid recommendation + LLM, thousands of GPUs, trillions of sparse + billions of dense parameters, MFU doubled to 20-25%, training compute 4× over 12 months.
 
 Checkpoint: newsletter_20260807T102155Z / triage_latest.json (recovered from checkpoint; upstream response JSON parse failure — 3 takes / 5 references / 4 batch skips)
 
-## [2026-08-07] blog-wiki-ingest (10:28) | Take 3件 + Reference 2件をWiki反映
+## [2026-08-07] blog-wiki-ingest (10:28) | Reflected Take 3 items + Reference 2 items into wiki
 
-- **Take: entities/gary-marcus.md** — 新セクション「Don't Count Google Out (August 2026)」追加。Gary Marcus「Seven reasons I wouldn't count Google out」(Aug 6)。Hassabis退任→Chairman/CSO就任、Jeff Dean等の退社続出の中、Googleを「数えるな」と反論する7つの理由（データ規模・TPU自社チップ・$402B売上/$132B利益・Android/Mail/Search/YouTube配布・Hassabis残留＋Kavukcuoglu継承・競合の困境・多頭引き分けでも生き残り）。Source: raw/articles/garymarcus.substack.com--p-seven-reasons-i-wouldnt-count-google--b4555440.md
-- **Take: entities/seangoedecke-com.md** — 新セクション「How to Keep Thinking (August 2026)」追加。Sean Goedecke「How to keep thinking」(Aug 6)。フロンティアAIモデルが仕事を代行する時代の「スキミングと判断」偏重と「ハンモックタイム（遅い思考）」喪失への懸念。対策:自分の言葉で書くこと＋本を読むこと。Source: raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
-- **Take: events/openai-apple-conflict-2026.md** — 新セクション「Motion to Dismiss (August 6)」＋タイムラインに8/6行追加。OpenAIがApple訴訟に対し28ページの却下申立てを提出（CourtListener doc 59, gov.uscourts.cand.474095）。公開法廷記録PDF。PR戦争から法廷チャネルへの移行。Source: https://storage.courtlistener.com/recap/gov.uscourts.cand.474095/gov.uscourts.cand.474095.59.0.pdf
-- **Reference: entities/simon-willison.md** — 2件追加 (Aug 6 Updates): ①datasette 1.0a38 SQLインジェクション修正（同一DBの公開/非公開テーブル混在構成でexecute-sql無効化でもraw SQL経由の非公開テーブル読取可能な問題、0.65.3にもバックポート）。②Technical Bloggingインタビュー（Cynthia Dunlop "Write that blog!"、核心アドバイス「lower your standards!」）。
+- **Take: entities/gary-marcus.md** — Added new section "Don't Count Google Out (August 2026)". Gary Marcus "Seven reasons I wouldn't count Google out" (Aug 6). Seven reasons arguing not to count Google out amid Hassabis stepping down → Chairman/CSO role and a wave of departures including Jeff Dean (data scale, TPU in-house chips, $402B revenue/$132B profit, Android/Mail/Search/YouTube distribution, Hassabis staying + Kavukcuoglu succession, competitors' difficulties, survival even in a multi-way draw). Source: raw/articles/garymarcus.substack.com--p-seven-reasons-i-wouldnt-count-google--b4555440.md
+- **Take: entities/seangoedecke-com.md** — Added new section "How to Keep Thinking (August 2026)". Sean Goedecke "How to keep thinking" (Aug 6). Concern about over-reliance on "skimming and judgment" and the loss of "hammock time (slow thinking)" in an era when frontier AI models take over work. Remedies: write in your own words + read books. Source: raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
+- **Take: events/openai-apple-conflict-2026.md** — Added new section "Motion to Dismiss (August 6)" + added 8/6 line to the timeline. OpenAI filed a 28-page motion to dismiss in the Apple lawsuit (CourtListener doc 59, gov.uscourts.cand.474095). Public court record PDF. Shift from the PR war to the courtroom channel. Source: https://storage.courtlistener.com/recap/gov.uscourts.cand.474095/gov.uscourts.cand.474095.59.0.pdf
+- **Reference: entities/simon-willison.md** — Added 2 items (Aug 6 Updates): ①datasette 1.0a38 SQL injection fix (problem where private tables in a mixed public/private table DB could be read via raw SQL even with execute-sql disabled; backported to 0.65.3 too). ②Technical Blogging interview (Cynthia Dunlop "Write that blog!", core advice "lower your standards!").
 
 Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from checkpoint; upstream response JSON parse failure — 3 takes / 2 references / 15 skips)
 
 
-## [2026-08-07] raw-backlog-ingest (10:00) | 5記事すべてskip判定・wiki変更なし
+## [2026-08-07] raw-backlog-ingest (10:00) | All 5 articles judged skip, no wiki changes
 
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 10:00, run 20260807T100001Z)。Takes=0, References=0, Skips=5。
-- **Skip (英語版重複のローカライズ)** `2026-08-07_glean_30-ai-prompts-for-finance-professionals.md` — Glean公式ブログ仏語版「30 prompts IA pour les professionnels de la finance」。英語版(2026-05-10_glean_30-ai-prompts-for-finance-professionals.md)は2026-05-30にskip判定済み(マーケティング系プロンプト集)。財務向けAIプロンプト30個(予測・予算・リスク/コンプライアンス・投資評価)の羅列で技術的深みなし。
-- **Skip (英語版重複のローカライズ)** `2026-08-07_glean_25-ai-prompts-for-product-managers.md` — Glean公式ブログ仏語版「25 prompts IA pour les chefs de produit」。英語版(2026-05-10_glean_25-ai-prompts-for-product-managers.md)は2026-05-30にskip判定済み。PM向けAIプロンプト25個(顧客インサイト・市場調査・ロードマップ)の羅列。
-- **Skip (英語版重複のローカライズ)** `2026-08-07_glean_2025-search-tool-benchmark-key-metrics-to-evaluate-accuracy-and-speed.md` — Glean公式ブログ仏語版「Benchmark des outils de recherche 2025」。英語版(2026-05-10_glean_2025-search-tool-benchmark-*.md)はraw/articlesに既存。エンタープライズ検索ツール評価指標(tool-calling精度90%・コンテキスト保持90%等)のベンダーガイドで、[[entities/glean]] のDefinitive Enterprise Search/IRガイド節でカバー済み。
-- **Skip (非AI)** `research.swtch.com--deps--31736988.md` — Russ Cox「Our Software Dependency Problem」(2019-01-23)。ソフトウェア依存関係リスクの古典的エッセイ。AI/LLM/エージェント技術と無関係。過去のresearch.swtch.com記事(fp, fp-proof, bisect, bell-labs等)と同様に非AI skip。
-- **Skip (非AI)** `2026-07-09_glean_email-automation-automated-email-campaigns-tools-and-workflows.md` — Glean公式ブログのメールマーケティング自動化ガイド。Mailchimp/Brevo/MailerLite/ActiveCampaign/Klaviyo/Omnisend/HubSpot等の比較表(無料枠・料金・CRM統合)が中心でAIエージェント技術の話題ではない。
-- **Tracking**: processed_raw_articles.json に5記事を status=done/decision=skip で登録(再選択防止)。archive_triage.py raw_backlog --keep-reference 実行(5 new archived, 0 dedup_skipped, total 2341)。
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 10:00, run 20260807T100001Z).Takes=0, References=0, Skips=5.
+- **Skip (localization of English duplicate)** `2026-08-07_glean_30-ai-prompts-for-finance-professionals.md` — French version of the official Glean blog "30 prompts IA pour les professionnels de la finance". The English version (2026-05-10_glean_30-ai-prompts-for-finance-professionals.md) was judged skip on 2026-05-30 (marketing-style prompt collection). List of 30 AI prompts for finance (forecasting, budgeting, risk/compliance, investment evaluation) with no technical depth.
+- **Skip (localization of English duplicate)** `2026-08-07_glean_25-ai-prompts-for-product-managers.md` — French version of the official Glean blog "25 prompts IA pour les chefs de produit". The English version (2026-05-10_glean_25-ai-prompts-for-product-managers.md) was judged skip on 2026-05-30. List of 25 AI prompts for PMs (customer insight, market research, roadmap).
+- **Skip (localization of English duplicate)** `2026-08-07_glean_2025-search-tool-benchmark-key-metrics-to-evaluate-accuracy-and-speed.md` — French version of the official Glean blog "Benchmark des outils de recherche 2025". The English version (2026-05-10_glean_2025-search-tool-benchmark-*.md) already exists in raw/articles. Vendor guide on enterprise search tool evaluation metrics (tool-calling accuracy 90%, context retention 90%, etc.), already covered in the Definitive Enterprise Search/IR guide section of [[entities/glean]].
+- **Skip (non-AI)** `research.swtch.com--deps--31736988.md` — Russ Cox "Our Software Dependency Problem" (2019-01-23). Classic essay on software dependency risk. Unrelated to AI/LLM/agent technology. Skipped as non-AI like previous research.swtch.com articles (fp, fp-proof, bisect, bell-labs, etc.).
+- **Skip (non-AI)** `2026-07-09_glean_email-automation-automated-email-campaigns-tools-and-workflows.md` — Email marketing automation guide from the official Glean blog. Centered on comparison tables of Mailchimp/Brevo/MailerLite/ActiveCampaign/Klaviyo/Omnisend/HubSpot (free tiers, pricing, CRM integration); not a topic about AI agent technology.
+- **Tracking**: registered 5 articles in processed_raw_articles.json with status=done/decision=skip (to prevent re-selection). Ran archive_triage.py raw_backlog --keep-reference (5 new archived, 0 dedup_skipped, total 2341).
 ## [2026-08-07] raw-backlog-ingest (04:00) | Duplicate batch detected — no wiki changes, tracking + collector fixed
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-07 04:00, run 20260807T040038Z) re-selected the **exact same 5 articles** processed by the 2026-08-06 22:00 run (same filenames + content hashes: bitc-retrospective, paulgraham mit.html, screwworm, TDA7000, hugobowne top-questions).
@@ -283,18 +283,18 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 
 ## [2026-08-06] raw-backlog-ingest (22:00) | 1 take (Eleanor Berger FAQ, 4 pages enriched), 4 non-AI skips archived
 
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 22:00, run 20260806T220014Z)。Takes=1, References=0, Skips=4。
-- **Take** `2026-03-31_hugobowne_top-questions-about-ai-assisted-software.md` — Eleanor Berger「Top Questions About AI-Assisted Software Development」(Vanishing Gradients, 2026-03-31, Elite AI Assisted CodingコースFAQ 10問)。4ページに分散強化:
-  - **[[entities/eleanor-berger]]** — 「Top Questions About AI-Assisted Software Development (Mar 2026)」節追加: 10問テーブル(Q1デモvs本番、Q2信頼性、Q3コンテキストスタック、Q4 spec、Q5モード/ツール/モデル、Q6委譲、Q7 SDLC、Q8 asyncエージェント、Q9セキュリティ、Q10計測)。sources+updated更新、Relatedにisaac-flath/spec-driven-development/ai-assisted-development追加。
-  - **[[entities/hugo-bowne-anderson]]** — sourcesにraw記事追加、LogにEp.67(Eleanor Berger+Isaac Flath)伴走FAQとして記載。
-  - **[[concepts/spec-driven-development]]** — stub→実ページ化: spec-as-contract、precise incompleteness、specテンプレート、agent-writes-spec(spec-first loop)、関連概念リンク。
-  - **[[concepts/ai-assisted-development]]** — 「Practitioner Playbook: Ten Questions (March 2026)」節追加: 9フレームワーク表(コンテキストスタック/モダリティスペクトラム/委譲コントロール/Continuous AI/asyncパターン/lethal trifecta/DORA-SPACE計測)。sources+Related更新。
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 22:00, run 20260806T220014Z).Takes=1, References=0, Skips=4.
+- **Take** `2026-03-31_hugobowne_top-questions-about-ai-assisted-software.md` — Eleanor Berger "Top Questions About AI-Assisted Software Development" (Vanishing Gradients, 2026-03-31, 10-question FAQ for the Elite AI Assisted Coding course). Distributed enrichment across 4 pages:
+  - **[[entities/eleanor-berger]]** — Added "Top Questions About AI-Assisted Software Development (Mar 2026)" section: 10-question table (Q1 demo vs production, Q2 reliability, Q3 context stack, Q4 spec, Q5 modes/tools/models, Q6 delegation, Q7 SDLC, Q8 async agents, Q9 security, Q10 measurement). Updated sources+updated, added isaac-flath/spec-driven-development/ai-assisted-development to Related.
+  - **[[entities/hugo-bowne-anderson]]** — added the raw article to sources, recorded in Log as companion FAQ for Ep.67 (Eleanor Berger + Isaac Flath).
+  - **[[concepts/spec-driven-development]]** — promoted from stub to full page: spec-as-contract, precise incompleteness, spec templates, agent-writes-spec (spec-first loop), related concept links.
+  - **[[concepts/ai-assisted-development]]** — Added "Practitioner Playbook: Ten Questions (March 2026)" section: 9-framework table (context stack/modality spectrum/delegation control/Continuous AI/async patterns/lethal trifecta/DORA-SPACE measurement). Updated sources+Related.
 - **Skip (non-AI) ×4**:
-  - `danluu.com--bitc-retrospective--c9dbfa73.md` — Jonathan ShapiroのBitC言語回顧録(2012, システムプログラミング史)。AI無関係。
-  - `paulgraham.com--mit-html--bc60b634.md` — Paul Graham「A Student's Guide to Startups」(2006, 起業論)。AI無関係。
-  - `construction-physics.com--p-the-fall-and-rise-of-screwworm--52e25531.md` — Screwworm昆虫学/農業史。AI無関係。
-  - `righto.com--2025-08-reverse-engineering-analog-tda7000-html--b2efc096.md` — Ken ShirriffのアナログIC(TDA7000 FM受信機)リバースエンジニアリング。AI無関係。
-- **Tracking**: processed_raw_articles.json に5記事を status=done で登録(4=skip, 1=take、再選択防止)。archive_triage.py raw_backlog --keep-reference 実行(4 new archived, 0 dedup_skipped, total 2336)。
+  - `danluu.com--bitc-retrospective--c9dbfa73.md` — Jonathan Shapiro's BitC language retrospective (2012, systems programming history). Unrelated to AI.
+  - `paulgraham.com--mit-html--bc60b634.md` — Paul Graham "A Student's Guide to Startups" (2006, essay on entrepreneurship). Unrelated to AI.
+  - `construction-physics.com--p-the-fall-and-rise-of-screwworm--52e25531.md` — Screwworm entomology/agricultural history. Unrelated to AI.
+  - `righto.com--2025-08-reverse-engineering-analog-tda7000-html--b2efc096.md` — Ken Shirriff's reverse engineering of an analog IC (TDA7000 FM receiver). Unrelated to AI.
+- **Tracking**: registered 5 articles in processed_raw_articles.json with status=done (4=skip, 1=take, to prevent re-selection). Ran archive_triage.py raw_backlog --keep-reference (4 new archived, 0 dedup_skipped, total 2336).
 ## [2026-08-06] skeleton-enrich-daily — restore randy-olson regression (L2→L3), enrich andrew-chen + superpowers
 
 - **[[entities/randy-olson]]** — Content regression fixed: June 5 "Agentic Software Factory" ingest had condensed the page from 209→105 lines. Restored the rich 213-line version from git history (`567abba`), merged the daily data-viz workflow + two verification gates + three skills principles content from the June 5 revision, fixed 9 broken wikilinks, added Related People table + See Also. Now 275 lines / 19.9KB, status L2→L3.
@@ -333,15 +333,15 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - No wiki changes this cycle — saturation confirmed.
 
 
-## [2026-08-06] raw-backlog-ingest (18:00) | 5記事すべてskip判定・wiki変更なし
+## [2026-08-06] raw-backlog-ingest (18:00) | All 5 articles judged skip, no wiki changes
 
-- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 18:00, run 20260806T180012Z)。Takes=0, References=0, Skips=5。
-- **Skip (already captured)** `2026-06-19_martinfowler_reliable-agentic-ai-systems.md` — [[entities/martinfowler]] にPRINCEケーススタディ節(142行)が完全収録済み(Search→Ask→Do、3エージェント、context/harness engineering分析)。sourcesにraw記事明示済み。
-- **Skip (already captured)** `michael.stapelberg.ch--posts-2026-04-05-stamp-it-all-programs-must-report-their-ver--74a089c8.md` — [[entities/michael-stapelberg]] の「Stamp It! — Version Transparency」節(L53-59)に収録済み。sources/References両方に登録済み。
-- **Skip (non-AI)** `grantslatton.com--rust-macros--f29c6873.md` — Rustマクロ純粋チュートリアル。[[entities/grantslatton-com]] Referencesに登録済み(L151)。wiki対象外。
-- **Skip (non-AI)** `blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-8-sqlalchemy-and-the-w--74b9d843.md` — SQLAlchemy 2 Web連携チュートリアル。シリーズChapter 1/3/5/6も過去にNon-AI skip済み。
-- **Skip (already processed today)** `substack.com--redirect-010fe6ea-4cbb-46be-aa7f-07c0739b674d--a23ac0be.md` — Latent Space「The End of SWE-Bench Verified」(Mia Glaese/Olivia Watkins)。本日朝のrunで [[concepts/ai-benchmarks/swe-bench]] に「The End of SWE-Bench Verified (April 2026)」節、[[concepts/ai-benchmarks/swe-bench-pro]] に「OpenAI Endorsement」節を追加済み。
-- **Tracking**: processed_raw_articles.json に5記事を status=done/decision=skip で登録(再選択防止)。archive_triage.py raw_backlog --keep-reference 実行(4 new archived, 1 dedup_skipped, total 2332)。
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-06 18:00, run 20260806T180012Z).Takes=0, References=0, Skips=5.
+- **Skip (already captured)** `2026-06-19_martinfowler_reliable-agentic-ai-systems.md` — PRINCE case study section (142 lines) fully captured in [[entities/martinfowler]] (Search→Ask→Do, 3 agents, context/harness engineering analysis). Raw article explicitly listed in sources.
+- **Skip (already captured)** `michael.stapelberg.ch--posts-2026-04-05-stamp-it-all-programs-must-report-their-ver--74a089c8.md` — captured in the "Stamp It! — Version Transparency" section (L53-59) of [[entities/michael-stapelberg]]. Registered in both sources/References.
+- **Skip (non-AI)** `grantslatton.com--rust-macros--f29c6873.md` — pure Rust macros tutorial. Registered in [[entities/grantslatton-com]] References (L151). Outside wiki scope.
+- **Skip (non-AI)** `blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-8-sqlalchemy-and-the-w--74b9d843.md` — SQLAlchemy 2 web integration tutorial. Chapters 1/3/5/6 of the series were also previously skipped as non-AI.
+- **Skip (already processed today)** `substack.com--redirect-010fe6ea-4cbb-46be-aa7f-07c0739b674d--a23ac0be.md` — Latent Space "The End of SWE-Bench Verified" (Mia Glaese/Olivia Watkins). Already added "The End of SWE-Bench Verified (April 2026)" section to [[concepts/ai-benchmarks/swe-bench]] and "OpenAI Endorsement" section to [[concepts/ai-benchmarks/swe-bench-pro]] in this morning's run.
+- **Tracking**: registered 5 articles in processed_raw_articles.json with status=done/decision=skip (to prevent re-selection). Ran archive_triage.py raw_backlog --keep-reference (4 new archived, 1 dedup_skipped, total 2332).
 ## [2026-08-06] watchdog | Auto-fix: log header burial + events header count
 
 - **Fix** wiki/log.md — `# Wiki Log` header was buried at line 96 (95 orphaned lines above it from prepend operations). Restored header to line 1 via fix_log_header_burial.py; 284 entries preserved, 0 pipe corruption.
@@ -799,15 +799,15 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 **Created**: `entities/openai-astra.md`
 
 Triage summary (NJ = newsjacking score 0-5):
-| ソース | タイトル | NJ | アクション | 対象 |
+| Source | Title | NJ | Action | Target |
 |--------|----------|-----|------------|------|
-| ycrootaccess.com | Boris Cherny: Building Claude Code | 5 | wiki更新 | boris-cherny--claude-code-development.md |
-| garymarcus.substack.com | OpenAI Astra (vastly oversold) | 4 | 新規作成 | openai-astra.md |
-| anyscale.com | Anyscale + Nscale | 4 | wiki更新 | anyscale.md |
-| anyscale.com | Physical AI Skill | 3 | wiki更新 | anyscale.md |
-| pluralistic.net | Dualism (Cory Doctorow) | 3 | 保留（AI consciousness哲学） |
-| simonwillison.net | condense-json 1.0 | 2 | スキップ（低関連性） |
-| その他 | Troy Hunt, John D Cook 等 | 0-1 | スキップ |
+| ycrootaccess.com | Boris Cherny: Building Claude Code | 5 | wiki update | boris-cherny--claude-code-development.md |
+| garymarcus.substack.com | OpenAI Astra (vastly oversold) | 4 | new page | openai-astra.md |
+| anyscale.com | Anyscale + Nscale | 4 | wiki update | anyscale.md |
+| anyscale.com | Physical AI Skill | 3 | wiki update | anyscale.md |
+| pluralistic.net | Dualism (Cory Doctorow) | 3 | hold (AI consciousness philosophy) |
+| simonwillison.net | condense-json 1.0 | 2 | skip (low relevance) |
+| Others | Troy Hunt, John D Cook, etc. | 0-1 | skip |
 
 Key findings:
 - **Opus 5**: Extended autonomous runs (days/weeks), prompt injection resistance via mechanistic interpretability, 80% system prompt deletion

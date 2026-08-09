@@ -21,7 +21,7 @@ sources: [raw/articles/2026-05-20_tencent-hy3-preview.md, https://www.tencent.co
 
 # Tencent Hy3 Preview
 
-**Hy3 Preview** is Tencent's latest open-source Mixture-of-Experts (MoE) language model, released as part of the Hunyuan (混元) series in May 2026. It is the most intelligent model in the Hy series to date, designed for enhanced agent capabilities and real-world usability.
+**Hy3 Preview** is Tencent's latest open-source Mixture-of-Experts (MoE) language model, released as part of the Hunyuan series in May 2026. It is the most intelligent model in the Hy series to date, designed for enhanced agent capabilities and real-world usability.
 
 ## Overview
 

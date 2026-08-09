@@ -127,7 +127,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[entities/geohot-github-io]] — George Hotz (geohot) is a hacker, entrepreneur, and software engineer best known for being the first person to carrier-unlock the iPhone and hack the PlayStation 3. He founded comma.ai in 2015 to buil
 - [[entities/georgi-gerganov]] — Georgi Gerganov is the principal architect of the local AI inference stack. By re-implementing heavy neural network models in pure, dependency-free C/C++, he made it possible to run state-of-the-art L
 - [[entities/gkisokay]] — gkisokay (Graeme) is an AI agent practitioner, founder of Amplifi, and Hermes Agent advanced user. Known for "Building AGI for my Hermes Agent" series, agent watchdog architecture, and structured research pipeline pattern.
-- [[entities/glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai (智谱AI).
+- [[entities/glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai.
 - [[entities/glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
 - [[entities/gm8xx8]] — gm8xx8 is a highly active AI/ML paper curator on X/Twitter and HuggingFace, known for sharing cutting-edge research papers across an unusually broad range of topics (proof theory, scaling laws, robotics, compression). With 89K+ HuggingFace followers and 17K+ posts, operates as a high-signal research scanner rather than a traditional researcher or developer.
 - [[entities/google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized TPU 8t (training) and TPU 8i (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Experts (MoEs)
