@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-08-07
+updated: 2026-08-09
 tags:
   - entity
   - company
@@ -36,6 +36,7 @@ sources:
   - raw/articles/2026-07-27_fireworks-ai_best-open-source-llms-may-2026.md
   - raw/articles/2026-05-21_fireworks-ai_agent-execution-tax.md
   - raw/articles/2026-05-10_fireworks-ai_constrained-generation-with-reasoning.md
+  - raw/articles/2026-08-08_fireworks-ai_voyage-ai-models-now-on-fireworks.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -635,6 +636,52 @@ Fireworks ran controlled SFT experiments on **Qwen3.5-9B** to answer when a Full
 Published July 2026.
 
 **Source:** [[raw/articles/2026-07-31_fireworks-ai_three-tests-to-run-before-you-switch-from-LoRa-to-FullFT]]
+
+## Voyage AI (MongoDB) Partnership — Native Embeddings & Reranking (August 2026)
+
+Fireworks became the **first and only dedicated inference platform** partnered with **Voyage AI by MongoDB** (announced August 5, 2026), bringing the full Voyage lineup natively onto Fireworks: the **Voyage 4 family** (voyage-4-large, voyage-4, voyage-4-lite, voyage-4-nano), **voyage-multimodal-3.5**, and **rerank-2.5**. The entire retrieval-to-response pipeline (embed → retrieve → rerank → generate) now runs on one platform, one API, one latency domain — alongside Fireworks' open-weight model serving and post-training.
+
+### Core Thesis
+
+> Retrieval quality, not model size, is what limits AI built on your data.
+
+A stronger generalist model does not rescue a weak retrieval layer — accuracy is won or lost at the embedding and reranking stage. The post frames this as half of Fireworks' "specialized intelligence" thesis: a general model spends most of its finite capacity being adequate at tasks you never run, whereas post-training an open base model concentrates capability on your actual work. Voyage AI is the frontier of the retrieval half — grounding intelligence in data only you have.
+
+### Benchmark Position
+
+Average retrieval quality comparison (Voyage 4 series vs competitors) — voyage-4-large is top-performing, surpassing:
+
+| vs Model | Advantage |
+|----------|-----------|
+| voyage-4 | +1.87% |
+| voyage-4-lite | +4.80% |
+| Gemini Embedding 001 | +3.87% |
+| Cohere Embed v4 | +8.20% |
+| OpenAI v3 Large | +14.05% |
+
+### Platform Consolidation Argument
+
+Previously teams faced a tradeoff: route retrieval to a separate specialist vendor (two bills, two latency profiles, an extra network hop per call, wider security/compliance surface) or consolidate on one platform and accept whatever retrieval it happened to offer (capping retrieval quality). Voyage on Fireworks removes the overhead without giving up frontier retrieval quality — proprietary data stays inside fewer trust boundaries under one review.
+
+### Model Tuning per Workload
+
+- **voyage-4-large** — where accuracy matters most
+- **voyage-4** — balancing accuracy with speed
+- **voyage-4-lite** — optimized for latency and cost
+- **voyage-4-nano** — ideal for local development
+- **voyage-multimodal-3.5** — interleaved text and visual corpora (multimodal RAG with vision-capable LLMs)
+- **rerank-2.5** — refining retrieval results; instruction-following targets long-horizon agents fetching context mid-loop
+
+### Use Cases
+
+1. **Customer-facing support/documentation agents** — voyage-4-large embeddings + rerank-2.5 + LLM on Fireworks (accuracy first)
+2. **Internal knowledge assistants** — Voyage 4 Lite + rerank-2.5 (cost-optimized, high volume)
+3. **Grounded retrieval inside agentic systems** — rerank-2.5's instruction following suits long-horizon agents; retrieval becomes a tool the agent calls with the reasoning model served on Fireworks, avoiding a per-step hop to another vendor
+4. **Embeddings-only workloads** — large-scale semantic search, recommendation, and deduplication run on embeddings/reranking alone at millions of items
+
+This extends Fireworks' earlier embedding work ([[concepts/rag-systems]]), including the July 2026 contrastive fine-tuning recipe for embedding LLMs and the MongoDB Atlas RAG integrations from May 2026. See [[entities/voyage-ai]] for the model provider side.
+
+**Source:** [[raw/articles/2026-08-08_fireworks-ai_voyage-ai-models-now-on-fireworks]]
 
 ## Sources
 

@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-09] dreaming | wiki-ingest — enriched Fireworks+Voyage AI partnership (upstream deferred)
+
+- Upstream dreaming-group committed only the archive + log entry (39fe0394); reference enrichment was explicitly deferred to downstream ("Deferred to downstream enrichment").
+- **Enriched: [[entities/fireworks-ai]]** — Added "Voyage AI (MongoDB) Partnership — Native Embeddings & Reranking (August 2026)" section: first/only dedicated inference platform partner for Voyage AI by MongoDB (Aug 5, 2026); Voyage 4 family + voyage-multimodal-3.5 + rerank-2.5 natively hosted; benchmark table (voyage-4-large +8.20% vs Cohere Embed v4, +14.05% vs OpenAI v3 Large); consolidation tradeoff argument (separate vendor vs capped retrieval); per-workload model tuning; use cases incl. agentic retrieval with rerank-2.5 instruction-following. Cross-links [[concepts/rag-systems]] + [[entities/voyage-ai]]. Added raw/articles/2026-08-08_fireworks-ai_voyage-ai-models-now-on-fireworks.md to sources, updated: 2026-08-09.
+- **Enriched: [[entities/voyage-ai]]** (dual-enrichment) — Added "Fireworks Partnership — Native Inference Platform (August 2026)" section: Fireworks as first dedicated inference platform partner; embed→retrieve→rerank→generate on one platform; benchmark position; Related updated with [[entities/fireworks-ai]]. Added same raw article to sources, updated: 2026-08-09.
+- Archive: upstream already committed 2026-08-09_20260809T180932Z.json (9 candidates, 2 newly archived). No archive re-run needed.
+
 
 
 ## [2026-08-09] dreaming | Saturation pass — Takes=0, 1 reference, 8 skips

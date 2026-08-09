@@ -2,7 +2,7 @@
 title: "Voyage AI"
 type: entity
 created: 2026-05-08
-updated: 2026-06-30
+updated: 2026-08-09
 tags:
   - company
   - rag
@@ -11,6 +11,7 @@ sources:
   - https://www.voyageai.com/
   - https://blog.voyageai.com/
   - raw/articles/blog.voyageai.com--2026-06-29-voyage-context-4--47aada90.md
+  - raw/articles/2026-08-08_fireworks-ai_voyage-ai-models-now-on-fireworks.md
 ---
 
 # Voyage AI
@@ -58,8 +59,17 @@ voyage-context-4 is the next-generation contextualized chunk embedding model fro
 
 **Availability:** Available via Voyage API and MongoDB Atlas (Atlas Embedding and Reranking API). First 200M tokens free.
 
+## Fireworks Partnership — Native Inference Platform (August 2026)
+
+On August 5, 2026, Fireworks AI announced it became the **first and only dedicated inference platform** Voyage AI has partnered with. The full Voyage lineup now runs natively on Fireworks — the **Voyage 4 family** (voyage-4-large, voyage-4, voyage-4-lite, voyage-4-nano), **voyage-multimodal-3.5**, and **rerank-2.5** — enabling a complete embed → retrieve → rerank → generate pipeline on one platform, one API, one latency domain. [[entities/fireworks-ai]] also serves open-weight generation models and post-training (RFT), closing the loop between retrieval grounding and specialized intelligence.
+
+**Benchmark position (Voyage 4 series, average retrieval quality):** voyage-4-large is top-performing — +1.87% vs voyage-4, +4.80% vs voyage-4-lite, +3.87% vs Gemini Embedding 001, **+8.20% vs Cohere Embed v4**, and **+14.05% vs OpenAI v3 Large**.
+
+**Positioning:** The partnership resolves the consolidation tradeoff — teams previously chose between a separate retrieval vendor (two bills, two latency profiles, wider security/compliance surface) or a single platform with capped retrieval quality. Voyage on Fireworks keeps proprietary data inside fewer trust boundaries without sacrificing frontier retrieval quality.
+
 ## Related
 
+- [[entities/fireworks-ai]] — first dedicated inference platform partner (August 2026); native Voyage lineup hosting
 - [[entities/harvey]] — partnered to build custom legal embeddings
 - [[entities/anthropic]] — officially recommends Voyage embeddings for RAG
 - [[entities/langchain]] — integrates with Voyage for embedding and retrieval pipelines
