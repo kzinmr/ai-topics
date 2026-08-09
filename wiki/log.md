@@ -2,6 +2,21 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+
+## [2026-08-09] dreaming | Saturation pass — Takes=0, 1 reference, 8 skips
+
+- Dreaming cycle 2026-08-09 18:10 UTC. Total articles collected: 0 (RSS/newsletter pipelines), 201 recent raw articles on disk.
+- **Duplicate check**: All Aug 8-9 AI-relevant articles already processed by adjacent jobs:
+  - blog-wiki-ingest (10:13): 4 takes (Claude Code auto mode, Discovery Loop funding, Muse Spark Code, seangoedecke resistance) + 4 references
+  - newsletter-wiki-ingest: 1 take (DeepSeek peak-hour surcharge) + 1 reference
+  - raw-backlog-ingest (04:00, 14:00, 18:00): Dwarkesh continual learning, Giles Thomas Chinchilla Check, Dan Luu, Paul Graham, Max Bernstein, Ben Boyter refs
+  - active-crawl: 2 enrichments
+  - Prior dreaming (2026-08-08): consumed — ElevenLabs ElevenReader enriched
+- **Reference: [[entities/fireworks-ai]]** — Fireworks+Voyage AI (MongoDB) integration: Voyage 4 family, voyage-multimodal-3.5, rerank-2.5 natively on Fireworks. Benchmark: voyage-4-large +8.20% vs Cohere Embed v4, +14.05% vs OpenAI v3 Large. Single platform embed→retrieve→rerank→generate. Not yet in entity page (Agent Execution Tax section only). Deferred to downstream enrichment.
+- **Skips**: ElevenLabs lead-qual (scrape failed), Harvey Engram (author page nav), Harvey transformation (marketing, 1,400+ customers already in entity), Glean FR ×2 (localized), Stapelberg zsh (non-AI), Nesbitt pkg-mgmt (non-AI), Pluralistic (non-AI)
+- **Archive**: 9 candidates → 2 newly archived, 7 dedup (2,429 total URLs)
+- **Saturation confirmed**: All daily pipeline outputs verified. No genuine gaps.
 ## [2026-08-09] raw-backlog-ingest (18:00) | Reference 2 items + Skip 3 items
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-09 18:00, run 20260809T180010Z). Takes=0, References=2, Skips=3.
