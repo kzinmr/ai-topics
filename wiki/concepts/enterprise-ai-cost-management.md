@@ -1,7 +1,7 @@
 ---
 title: "Enterprise AI Tool Cost Management"
 created: "2026-06-05"
-updated: "2026-06-16"
+updated: "2026-08-09"
 type: concept
 tags:
   - company
@@ -12,6 +12,7 @@ sources:
   - "raw/articles/2026-06-03_simonwillison_uber-caps-ai-tool-costs.md"
   - https://simonwillison.net/2026/Jun/3/uber-caps-usage/
   - "raw/articles/2026-06-15_langchain_introducing-llm-gateway.md"
+  - raw/articles/404media.co--the-tokenpocalypse-is-here-companies-are-scrambling-to-stop---c0a8cbed.md
 ---
 
 # Enterprise AI Tool Cost Management
@@ -75,6 +76,15 @@ LangChain's approach treats cost management as a **system problem** rather than 
 3. **Hard limits need soft workflows**: Engineers need early warnings and auditable exception processes, not just hard caps.
 
 **Source:** [[raw/articles/2026-06-15_langchain_introducing-llm-gateway]]
+
+## Tokenpocalypse: Per-Token Billing Shift (August 2026)
+
+404 Media's "The Tokenpocalypse Is Here" report (August 2026) documented the escalation of enterprise AI cost pressure:
+
+- **Accenture internal scramble**: leaked audio shows Accenture trying to stop non-technical workers from blowing through companies' AI token budgets on trivial tasks (e.g., converting PDFs to presentation slides).
+- **Provider pricing shift**: "Some AI providers like GitHub are now charging customers per token rather than a flat subscription fee" — a structural move away from flat subscriptions.
+- **Uber cap precedent**: Uber recently capped employees' use of AI tools like Claude Code and Cursor (see Uber case study above).
+- **Framing**: "the end of the wave of unconstrained AI growth" — companies actively managing token spend as a budget line.
 
 ## Broader Implications
 

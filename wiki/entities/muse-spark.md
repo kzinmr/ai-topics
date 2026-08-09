@@ -2,13 +2,14 @@
 title: Muse Spark
 type: entity
 created: 2026-04-09
-updated: 2026-08-06
+updated: 2026-08-09
 tags:
   - model
   - emerging
 aliases:
 - Meta Muse Spark
-sources: []
+sources:
+  - raw/articles/research.meta.ai--blog-introducing-muse-code-and-muse-spark-1-2--9eac21dc.md
 ---
 
 # Muse Spark
@@ -54,6 +55,16 @@ Key details:
 ### Muse Code
 
 Meta shipped **Muse Code**, their own coding agent, alongside Muse Spark 1.2. Simon Willison's key observation: *"Yet more evidence that the most important characteristic of any model these days is long-sequence agentic tool calling. Meta shipped their own coding agent as part of getting that to work!"*
+
+### Muse Code Technical Details (Official Blog, August 2026)
+
+Meta's official announcement added implementation details for Muse Code (beta), a terminal coding agent powered by Muse Spark 1.2, available on macOS/Linux via `curl -fsSL https://dev.meta.ai/install.sh | bash`:
+
+- **Runtime design — local event log**: Muse Code appends every model call, tool run, approval, and edit to a local event log. This single source of truth makes the runtime **replay-exact and restart-safe** — after a crash the agent resumes precisely where it stopped, enabling long-running tasks (1,000+ tool calls, up to 24 hours).
+- **Async background agents**: Muse Code runs a simple agent loop plus persistent async background agents that remain active throughout the session (rather than spawned per task), reducing redundant information gathering and latency on difficult multi-step tasks. Named components: **Photon Sphere**, **Embervault**, **Avo Lawn**.
+- **Bundled skills**: `/plan` turns a task into an approval-gated plan; `/grill` stress-tests the plan until it holds up; `/goal` works toward successful completion of the specified objective.
+- **Self-improvement loop**: Muse Spark 1.1 generated challenging coding environments and instruction-following templates; the model graded candidate solutions, producing a scalable training dataset for Muse Spark 1.2.
+- **Kernel optimization case study**: tested on KDA and MLA kernels for NVIDIA Hopper GPUs. Muse Spark 1.2 designed a two-kernel Triton pipeline combining fusion/tiling with KDA-specific optimizations (re-centering the gated cumulative decay at the chunk midpoint) and MLA-specific optimizations (reusing the shared KV latent as both K and V). Benchmarked at batch size 1, 64 heads, sequence length 8192, latent dimension 512 against a PyTorch reference.
 
 ### Pricing (two-tier)
 

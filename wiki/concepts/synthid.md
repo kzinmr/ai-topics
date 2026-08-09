@@ -1,7 +1,7 @@
 ---
 title: SynthID
 created: 2026-05-27
-updated: 2026-07-06
+updated: 2026-08-09
 type: concept
 tags:
   - concept
@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-05-27_heise-uniform-ai-labeling-synthid.md
   - raw/articles/seangoedecke.com--text-ai-watermarks--cd663c94.md
   - raw/articles/seangoedecke.com--c2pa-only-works-if-everything-is-signed--ae4eb8f4.md
+  - raw/articles/arstechnica.com--ai-2026-07-google-earth-releases-swiftly-retracts-ai-feature--3d2b4219.md
 ---
 
 # SynthID
@@ -155,6 +156,15 @@ Despite the momentum, significant challenges remain:
 - **Platform lock-in risk**: Google's shutdown of the registration-free portal means users must use Google services to verify Google-generated content — a tension between accessibility and ecosystem control.
 - **Text watermarking adoption**: Open-sourcing text watermarking is necessary but not sufficient — widespread developer integration and verification tooling are still nascent.
 - **Video and audio coverage**: Current Chrome/Search verification is image-only; video and audio expansion is planned but not yet shipped.
+
+### Case Study: Google Earth Retraction (July 2026)
+
+Google Earth briefly released an AI feature for generating fake satellite images, then **swiftly retracted it** after misuse — including users depicting bomb craters on a Gaza hospital. Ars Technica verification highlighted SynthID's practical limits:
+
+- **SynthID failed to verify** an AI-altered image when Ars photographed it with a smartphone camera (re-encoding via photo capture breaks the watermark)
+- **Screenshot re-encoding** similarly defeated verification
+- SynthID limits image checks to about **10 per day** per user
+- Reinforces the "detection asymmetry" caveat: watermarks only help when the file survives clean re-encoding; real-world distribution of AI-manipulated imagery frequently defeats them
 
 ### Text Watermark Criticism: The Removal Argument
 

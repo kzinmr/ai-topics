@@ -147,7 +147,7 @@
 - [[entities/chris-tate]] — Chris Tate; added emulate (local API emulation for CI/no-network sandboxes) to key projects (June 25)
 - [[entities/christian-catalini]] — Christian Catalini — Lightspark co-founder, MIT economist; "The Only Moat That Survives AI": measurable things get automated, open-weight ~4mo lag flat, value moves to shipping judgment (Aug 2026)
 - [[entities/claris-filemaker-agentic-coding]] — Claris FileMaker Agentic Coding Strategy
-- [[entities/claude-code]] — Claude Code
+- [[entities/claude-code]] — Claude Code; Auto Mode default for Pro/Max/Team (Aug 14) + Trajectory Labs eval (13.6% human refusal vs 89% auto-blocked; 0/720 prompt-injection attacks) (Aug 2026)
 - [[entities/claude-code--architecture]] — Claude Code — Architecture
 - [[entities/claude-code--capabilities]] — Claude Code — Capabilities & Features
 - [[entities/claude-code--history]] — Claude Code — Development History
@@ -224,7 +224,7 @@
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy) — Pragmatic Leverage, FIC, 12-Factor Agents
 - [[entities/dimillian]] — Guillaume Charpiat (dimillian)
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
-- [[entities/discovery-loop]] — Discovery Loop — PBC founded Aug 2026 by Jeff Dean, Sanjay Ghemawat, Oriol Vinyals, Quoc Le; mission: automate machine research
+- [[entities/discovery-loop]] — Discovery Loop — PBC founded Aug 2026 by Jeff Dean, Sanjay Ghemawat, Oriol Vinyals, Quoc Le; mission: automate machine research; funding details (Khosla Ventures + Radical Ventures, Jordan Jacobs board, Pichai retention attempts, Google compute+investment deal)
 - [[entities/dji]] — DJI
 - [[entities/dolt]] — Dolt
 - [[entities/dorialexander]] — Pierre-Carl Langlais
@@ -556,7 +556,7 @@
 - [[entities/moondream]] — Moondream — VLM company building small vision-language models and the Photon inference engine; uses pipelined decoding to eliminate GPU bubbles, achieving 35% higher decode throughput on NVIDIA B200 (June 30)
 - [[entities/moonshot-ai]] — Moonshot AI
 - [[entities/muratcan-koylan]] — Muratcan Koylan
-- [[entities/muse-spark]] — Muse Spark; 1.1 GA with API access (first Spark model with API), agentic tool calling improvements, llm-meta-ai plugin, "Attractor States in Self-Conversation" finding (July 2026)
+- [[entities/muse-spark]] — Muse Spark; 1.1 GA with API access (first Spark model with API), agentic tool calling improvements, llm-meta-ai plugin, "Attractor States in Self-Conversation" finding (July 2026); Muse Code beta technicals (event log runtime, Photon Sphere/Embervault/Avo Lawn agents, KDA/MLA kernel case study) (Aug 2026)
 - [[entities/mustafa-suleyman]] — Mustafa Suleyman
 - [[entities/nader-dabit]] — Nader Dabit
 - [[entities/nathan-flurry]] — Nathan Flurry
@@ -721,7 +721,7 @@
 - [[entities/scott-stevenson]] — Scott Stevenson
 - [[entities/scott-wu]] — Scott Wu
 - [[entities/screenpipe]] — Screenpipe (YC S26) — 24/7 local AI screen and mic recording, turns computer activity into agent-accessible data; 20.5K GitHub stars, Rust, MCP integration (Jul 26)
-- [[entities/seangoedecke-com]] — Sean Goedecke; "How to Keep Thinking" section (Aug 6: hammock time in the LLM-agent era, write in your own words, read books)
+- [[entities/seangoedecke-com]] — Sean Goedecke; "How to Keep Thinking" section (Aug 6: hammock time in the LLM-agent era, write in your own words, read books); "I got an email about resistance" response to complicity critics (Aug 9)
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. Provides 6 specialized tools for code analysis, search, and retrieval from any...
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka — ML researcher, 'Build a Reasoning Model (From Scratch)', LLM architecture analysis
@@ -1638,7 +1638,7 @@
 - [[concepts/enpire]] — ENPIRE — Agentic Robot Policy Self-Improvement
 - [[concepts/enshittification]] — enshittification
 - [[concepts/enterprise-agents]] — Enterprise Agents
-- [[concepts/enterprise-ai-cost-management]] — Enterprise AI Tool Cost Management
+- [[concepts/enterprise-ai-cost-management]] — Enterprise AI Tool Cost Management; Tokenpocalypse per-token billing shift (GitHub per-token, Accenture token waste) (Aug 2026)
 - [[concepts/enterprise-ai-deployment-jv]] — Enterprise AI Deployment Joint Ventures
 - [[concepts/enterprise-rle]] — Enterprise RLE (Reinforcement Learning Environments) — In-product RL training where models learn inside the actual product harness, with externalized context/skills/tools for model independence
 - [[concepts/enterprise-ai-operating-model]] — Enterprise AI Operating Model
@@ -2490,7 +2490,7 @@
 - [[concepts/rag-systems]] — RAG Systems — Retrieval-Augmented Generation architectures, from naive RAG to advanced agentic retrieval patterns
 - [[concepts/ragatouille]] — RAGatouille
 - [[concepts/rags]] — RAGs (Retrieval-Augmented Generation)
-- [[concepts/ray]] — Ray — Open-source distributed computing framework for Python; ML training, serving, tuning at scale; production deployments at Ant Group (60K cores)
+- [[concepts/ray]] — Ray — Open-source distributed computing framework for Python; ML training, serving, tuning at scale; production deployments at Ant Group (60K cores); Ray 1.13 (Aug 2026): Datasets shuffle alpha, Serve Deployment Graph API
 - [[concepts/rahul-sengottuvelu]] — Rahul Sengottuvelu
 - [[concepts/rakhim.exotext.com]] — rakhim.exotext.com
 - [[concepts/ranjay-krishna]] — ranjay-krishna
@@ -2707,7 +2707,7 @@
 - [[concepts/synth]] — SYNTH
 - [[concepts/synthetic-data]] — synthetic-data
 - [[concepts/synthetic-research-interns]] — Synthetic Research Interns
-- [[concepts/synthid]] — SynthID
+- [[concepts/synthid]] — SynthID; Google Earth AI satellite image retraction case (Jul 2026): SynthID fails on smartphone-photo/screenshot re-encoding, 10/day check limit
 - [[concepts/system-prompt-learning]] — System Prompt Learning
 - [[concepts/systems-programming]] — Systems Programming
 - [[concepts/talk]] — talk

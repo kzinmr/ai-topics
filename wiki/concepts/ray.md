@@ -1,7 +1,7 @@
 ---
 title: "Ray (distributed computing framework)"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-08-09
 type: concept
 tags:
   - architecture
@@ -10,6 +10,8 @@ tags:
 sources:
   - raw/articles/anyscale.com--blog-building-highly-available-and-scalable-online-applicati--7faef8c2.md
   - raw/articles/anyscale.com--blog-online-resource-allocation-with-ray-at-ant-group--487de159.md
+  - raw/articles/anyscale.com--blog-ray-1-13-large-scale-dataset-shuffle-ray-serve-deployme--5e0d09c3.md
+  - raw/articles/anyscale.com--blog-multi-model-composition-with-ray-serve-deployment-graph--ed7cae4f.md
 related:
   - entities/anyscale
   - concepts/ml-training-infrastructure
@@ -71,6 +73,25 @@ The Ant Group deployment uses a three-tier computation model:
 3. **Offline**: Flow estimation, minutes-level (historical data)
 
 This pattern enables real-time decision-making with LP duality — dual variables computed offline/nearline serve as fast parameters for online reranking.
+
+## Ray 1.13 (August 2026)
+
+Anyscale released **Ray 1.13** with:
+
+- **Scalable shuffle in Ray Datasets (alpha)**: improved support for shuffling terabyte-scale and larger datasets (`random_shuffle`/`sort` via a new shuffle algorithm)
+- **Ray Serve Deployment Graph API**: performance fixes and enhancements, approaching beta
+- **KubeRay autoscaling**: stabilization (alpha)
+- **Usage stats data collection**: now on by default
+
+### Ray Serve Deployment Graph API
+
+The Deployment Graph API (alpha) allows developers to build scalable inference serving pipelines as **directed acyclic graphs (DAGs)** defined Python-natively (vs. handwritten YAML in other frameworks). Supports:
+
+- **Model chains** — sequential pipelines of models
+- **Fan-out / ensemble** — parallel model composition
+- **Dynamic dispatch** — request-routing between models
+- Node-independent scaling (each graph node scales separately)
+- Ray 2.0 plans a unified DAG API
 
 ## Why Ray for ML Infrastructure
 

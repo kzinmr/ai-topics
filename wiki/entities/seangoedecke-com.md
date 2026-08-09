@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-08-07
+updated: 2026-08-09
 type: entity
 sources:
   - raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
@@ -18,7 +18,8 @@ sources:
   - raw/articles/seangoedecke.com--c2pa-only-works-if-everything-is-signed--ae4eb8f4.md
   - raw/articles/seangoedecke.com--overtraining-as-the-path-to-human-like-ai--67c86c06.md
   - raw/articles/seangoedecke.com--llms-reward-expertise--30a0ed12.md
-|---
+  - raw/articles/seangoedecke.com--i-got-an-email-about-resistance--efd1b4a4.md
+---
 
 # Sean Goedecke
 
@@ -199,6 +200,19 @@ On June 3, 2026, Goedecke published "[Anti-AI nostalgia and the cult of the past
 **The disillusioned elite danger**: Goedecke's central concern is that software engineers whose skills are devalued by AI will form the same kind of "disillusioned elite" that historically gravitated toward fascism. Engineers who believed their job was "to be excellent at their craft" rather than "producing shareholder value" are now confronting the end of ZIRP and AI disruption simultaneously — a susceptible audience for movements promising a return to an idealized past.
 
 References: [[concepts/ai-criticism-politics]]
+
+### Response to Resistance Critics (August 2026)
+
+On August 9, 2026, Goedecke published "[I got an email about resistance](https://seangoedecke.com/i-got-an-email-about-resistance/)" — publishing in full a reader email from **William Murray** plus his response. Murray criticized Goedecke's "elegiac approach" to AI-driven job displacement as **complicit**: "You present your elegiac approach as mature / pragmatic / realistic. I'd call it complicit," comparing Goedecke to Wonka ("You write like a passenger on a crazy train going who-knows-where! But you are an agent. You are in control of your life!").
+
+Goedecke's full response:
+
+- **Industrial Revolution analogy**: programmers are "high-status craftspeople who find ourselves alternately threatened and empowered by automation," like framework-knitters in the early 1800s. Many Luddites shot factory-owners, smashed machines, and burned factories — prompting a crackdown with tens of thousands of British soldiers occupying counties in a police state. "History judges the Luddites kindly for this. Does that mean it worked?"
+- **His audience**: "I don't care about the judgment of history... What I care about is the people in my industry who don't know what to do." He reports hundreds of emails from scared junior/mid-level engineers; he has seen idealistic engineers stick their necks out and, post-ZIRP, get cut off.
+- **The moral core**: "I think it's morally wrong that so many engineers — either in safe sinecures in big tech or literally retired — seem to be trying to foment a second Luddite revolution... Every 'AI is fascist, stand up and resist!' post that goes viral ruins some poor idealistic junior's career."
+- **His counterfactual**: if he were a textiles worker in 1810s England, he would warn friends and loved ones that this was the most dangerous time in the industry and that they "ought to be very damn careful so they don't get shot, or arrested, or hanged" — not urge machine-smashing.
+- **An ethics line**: "I do accept the existence of some kind of line: I think Industrial-Revolution-collaborating was OK but Nazi-collaborating wasn't."
+- **Ambivalence preserved**: he remains "deeply ambivalent" about the Luddite movement itself and modern attempts to resurrect it for anti-AI activism.
 
 > "If you are good at code review, you will be good at using AI agents."
 > "If you are good at code review, you will be good at using AI agents."
