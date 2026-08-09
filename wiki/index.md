@@ -2248,7 +2248,7 @@
 - [[concepts/nemotron-labs-diffusion]] — Nemotron-Labs Diffusion
 - [[concepts/network-programming]] — Network Programming
 - [[concepts/neural-garbage-collection]] — Neural Garbage Collection
-- [[concepts/neurosymbolic-ai]] — Neurosymbolic AI
+- [[concepts/neurosymbolic-ai]] — Neurosymbolic AI — hybrid neural+symbolic architecture; taxonomy (Brinzeu 2025), Dual Process Theory mapping, hardware dimension (CPUs + GPUs), Claude Code as neurosymbolic case study (Gary Marcus, Aug 2026)
 - [[concepts/newsjack]] — Newsjack (Agent PR Skills)
 - [[concepts/newsjacking-framework]] — Newsjacking Framework
 - [[concepts/nextpad-ai-development]] — Nextpad++ and AI Development Quality
@@ -2566,7 +2566,7 @@
 - [[concepts/sarah-chieng]] — sarah-chieng
 - [[concepts/scaffold-vs-rl-debate]] — Scaffold vs RL Debate
 - [[concepts/scaling-hypothesis]] — Scaling Hypothesis
-- [[concepts/scaling-laws]] — Scaling Laws — empirical power-law relationships for loss vs model size, data, compute; Kaplan (2020) vs Chinchilla (2022) reconciliation, data-limited scaling (Muennighoff, Lovelace), practical fitting challenges; based on Lilian Weng's comprehensive survey (June 26)
+- [[concepts/scaling-laws]] — Scaling Laws — empirical power-law relationships for loss vs model size, data, compute; Kaplan (2020) vs Chinchilla (2022) reconciliation, data-limited scaling (Muennighoff, Lovelace), practical fitting challenges, Chinchilla re-evaluation at 163M scale (Giles Thomas, Aug 2026)
 - [[concepts/scaling-without-slop]] — Scaling without Slop
 - [[concepts/scenario-based-simulation]] — Scenario-Based Simulation
 - [[concepts/schedulefree-plus]] — ScheduleFree+

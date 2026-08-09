@@ -28,6 +28,12 @@
 ---
 # Wiki Log
 
+## [2026-08-09] active-crawl | 2 enrichments (trending topics)
+- **Enrich: [[concepts/neurosymbolic-ai]]** — Added "Hardware Dimension: CPUs and Neurosymbolic AI (Aug 2026)" section based on Gary Marcus's Aug 7 article: GPU-dominated era (2012-mid 2023), dual hardware requirement (GPUs for neural + CPUs for symbolic), implications for chip design/data centers/capital allocation. Added tags: hardware, cpu, gpu, ai-hardware. Published: garymarcus.substack.com 2026-08-07.
+- **Enrich: [[concepts/scaling-laws]]** — Added "Chinchilla Re-Evaluation (Giles Thomas, Aug 2026)" section: practical experiment at 163M scale testing equal N+D scaling vs overtraining. Both Chinchilla-scaled models beat overtrained ones (0.96-1.35% improvement), tentatively confirming Chinchilla directionally. Practical caveat: marginal gain must be weighed against engineering friction; overtraining still pragmatic for RAM-constrained deployment. Published: gilesthomas.com 2026-08-07.
+- Raw articles saved: 2026-08-07_garymarcus-cpus-neurosymbolic-ai.md, 2026-08-07_gilesthomas-chinchilla-check.md, 2026-08-07_dwarkesh-era-of-continual-learning.md (Dwarkesh already fully covered in continual-learning.md — no enrichment needed).
+- Index updated: neurosymbolic-ai and scaling-laws descriptions expanded. Sources: X/Twitter trending scan + blogwatcher DB + HN Algolia. No SCHEMA.md changes needed beyond cpu tag addition by subagent.
+
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-08] skeleton-enrich-daily — richard-ngo, jaya-gupta, agreement-bug L2→L3

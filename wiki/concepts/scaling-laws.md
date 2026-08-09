@@ -1,7 +1,7 @@
 ---
 title: "Scaling Laws"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-09
 type: concept
 tags:
   - training
@@ -18,6 +18,7 @@ sources:
   - https://arxiv.org/abs/2406.12907
   - https://arxiv.org/abs/2305.16264
   - https://arxiv.org/abs/2605.01640
+  - "[[raw/articles/2026-08-07_gilesthomas-chinchilla-check]]"
 related:
   - "[[entities/lilian-weng]]"
   - "[[concepts/chinchilla]]"
@@ -102,6 +103,37 @@ Scaling law fitting is sensitive to:
 - Informs **training efficiency** (when to stop, how to balance N and D)
 - Foundation for [[concepts/compute-optimal-training|compute-optimal training]] strategies
 - Critical input for [[concepts/ai-economics|AI economics]] and infrastructure planning
+
+## Chinchilla Re-Evaluation (Giles Thomas, Aug 2026)
+
+Giles Thomas conducted a practical re-evaluation of the Chinchilla heuristic (20 tokens per parameter) using GPT-2-style models at ~163M parameter scale. His experiment tested whether scaling model size and tokens equally truly outperforms simply overtraining a smaller model on more data.
+
+**Experimental Setup**: Thomas trained GPT-2-style models (no weight-tying, no QKV bias) with three configurations on a held-back test set:
+- **jax-gpt2-chinchilla**: 163M params, trained on ~3.26B tokens (20 tokens/param) — Chinchilla-optimal baseline
+- **jax-gpt2-2x-chinchilla**: same size, trained on ~6.52B tokens (40 tokens/param) — overtrained
+- **jax-gpt2-2-epoch-chinchilla**: same size, ~3.26B unique tokens repeated (2 epochs) — compute-matched control
+
+The overtrained models achieved test loss of ~3.325 vs 3.419 for the Chinchilla-optimal baseline, confirming that overtraining improves absolute performance on a fixed-size model.
+
+**Chinchilla-Scaled Comparison**: To match the compute budget of the overtrained models (~7.09 × 10^18 FLOPs), Thomas scaled both parameters and tokens by √2 (since FLOPs ≈ 6ND). Target: ~231M params trained on ~4.6B tokens. He trained two architectural variants:
+- **slightly-larger**: 15 layers, d_emb=896, 14 heads → ~236M params (+2.21% over target, ~4.6% more FLOPs)
+- **slightly-smaller**: 14 layers, d_emb=896, 14 heads → ~226M params (-1.97% under target, ~4% fewer FLOPs)
+
+**Key Results** (test loss, lower is better):
+
+| Model | Test Loss | Improvement vs overtrained |
+|-------|-----------|---------------------------|
+| slightly-larger | 3.280 | 1.35% |
+| slightly-smaller | 3.293 | 0.962% |
+| jax-gpt2-2x-chinchilla | 3.325 | — (baseline) |
+| jax-gpt2-chinchilla | 3.419 | — |
+
+Both Chinchilla-scaled models beat the overtrained ones. Notably, the slightly-smaller model achieved this despite using ~4% less compute — a strong directional signal. However, the improvement (~0.96–1.35%) was small enough that it could fall within the noise of random weight initialization: an earlier three-seed analysis estimated 3σ ≈ 0.026, comparable to the 0.032–0.045 absolute gap. Thomas characterized this as a "tentative success" — directional confirmation, not a slam dunk.
+
+**Practical Insight — Scaling Models Is Non-Trivial**: A key lesson from the experiment is that "scale N and D equally" glosses over the real engineering difficulty. With d_emb constrained to multiples of 64 (matching GPT-2's head:dimension ratio of 1/64), granularity is coarse — going from d_emb=896 to 832 overshoots by 9.25%. Even with only two architectural dials (layers, embedding dimension), hitting an exact target parameter count required curve-fitting to GPT-2 paper configurations and iterative spreadsheet work. FLOPs estimation using Chinchilla Appendix F formulas was necessary because embedding parameters dominate at small scales.
+
+**Implications for Practitioners**: Chinchilla's core claim held directionally — equal scaling of N and D produced better models than overtraining alone. However, the marginal gain (~1%) must be weighed against the engineering friction of designing correctly-sized architectures. For deployment-constrained scenarios (e.g., mobile devices with fixed RAM budgets), overtraining a smaller model may remain the pragmatic choice even if it is not compute-optimal in theory. Thomas noted that the experiment used a single random seed for each scaled model vs. a different seed for the overtrained models, so a multi-seed study would be needed for statistical rigor.
+
 
 ## See Also
 
