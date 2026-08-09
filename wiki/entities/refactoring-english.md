@@ -3,8 +3,9 @@ title: refactoring-english
 tags: []description: Technical blog and forthcoming book by Michael Lynch about effective writing for software developers — covering commit messages, design docs, AI vs human writing quality, passive voice, and blog craftsmanship.
 url: https://refactoringenglish.com
 type: entity
-updated: 2026-04-30
-sources: []
+updated: 2026-08-09
+sources:
+  - raw/articles/refactoringenglish.com--blog-interview-adam-gordon-bell--9925d3ab.md
 ---
 
 # Refactoring English
@@ -110,6 +111,7 @@ Articles about writing and software engineering:
 - **"Which Design Doc Did a Human Write?"** (Mar 2026) — AI vs. human design doc experiment
 - **"The Software Essays that Shaped Me"** (Sep 2025)
 - **"What Makes the Intro to Crafting Interpreters so Good?"** (Nov 2025)
+- **"Adam Gordon Bell on Attracting Customers through Blogging"** (2026) — Interview with the CoRecursive host about his developer-relations blogging at Earthly. Key takeaways: (1) follow investor Mitch Wainer's DigitalOcean playbook — write genuinely useful posts about the customer's problem, not marketing; (2) tutorial/example-app posts "never worked" for discovery — competing with obscurity requires outsized bets; (3) Michael's 40-hour-per-post example (power law: HN front page vs. missing it is orders of magnitude in readership); (4) the technique of writing deliberately HN-optimized posts as an acquisition channel.
 
 ### Sample Chapters
 

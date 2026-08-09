@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-09] raw-backlog-ingest (18:00) | Reference 2 items + Skip 3 items
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-09 18:00, run 20260809T180010Z). Takes=0, References=2, Skips=3.
+- **Reference: [[entities/dan-luu]]** — Added "Cocktail party ideas" (site undated, ~2021; references Hillel Wayne's trad-engineering crossover project) to Notable Essays (Non-AI). Essay on the illusion of explanatory depth: cocktail-party-level confident fixes vs. hidden field complexity. Cases: civil-engineering misconceptions (bridge predictability myths, geotechnical/preload), "building a plane while flying" trope, Lawson's bicycle-drawing study (60/94 non-working bikes), jam-experiment folktale (Manzi's *Uncontrolled*), dual-core "staple two cores together" anecdote + Intel's twice-failed SMT verification. Added raw/articles/danluu.com--cocktail-ideas--305e725e.md to sources, updated: 2026-08-09.
+- **Reference: [[entities/refactoring-english]]** — Added "Adam Gordon Bell on Attracting Customers through Blogging" (2026) to Blog Posts: interview with CoRecursive host on devrel blogging at Earthly. Takeaways: Mitch Wainer's DigitalOcean playbook (solve customer's problem, not marketing), tutorial posts "never worked" for discovery, 40-hour-per-post power law (HN front page = orders of magnitude), HN-optimized posts as acquisition channel. Added raw/articles/refactoringenglish.com--blog-interview-adam-gordon-bell--9925d3ab.md to sources, updated: 2026-08-09.
+- **Skip (3, archived/covered)**: micahflee.com mandatory-update short story (already archived 2026-07-14 as fiction, no AI relevance), substack redirect [AINews] OpenAI GPT-Image-2 (fully covered by concepts/gpt/chatgpt-images-2-0.md + comparisons/gpt-image-2-vs-nano-banana-2.md + ai-image-generation.md; URL is auth-walled redirect), righto.com cargo cult metaphor (non-AI; already referenced in entities/righto-com.md References).
+
 ## [2026-08-09] watchdog | auto-fix: log header burial + 108 missing separators
 
 - **Log header burial**: `# Wiki Log` was at line 39 (entries prepended above header by raw-backlog-ingest). Restored via fix_log_header_burial.py — header now line 1, 321 entries preserved, 0 pipe corruption. Metadata line re-positioned after header (was stranded at line 55).
