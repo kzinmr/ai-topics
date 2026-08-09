@@ -1,6 +1,25 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-09] entity-creation | Created [[entities/vasuman]] — CEO of Varick Agents (enterprise AI implementation)
+- Key theses: Barbell Distribution of enterprise AI adoption, "AI Adoption is a Myth" (binary metrics vs skill spectrum), Background AI (embed agents in existing systems of record), Forward Deployed Engineering as defining role, "People don't want a tool — they want the work done"
+- Publications: "Forward Deployed Engineering 101" (May 2026), "AI Adoption is a Myth" (Aug 2026)
+- Links: [[entities/varick-agents]], [[concepts/ai-adoption-barbell]], [[concepts/forward-deployed-engineering]], [[concepts/enterprise-agents]]
+- Sources: raw/articles/2026-05-20_varick_forward-deployed-engineering-101.md, raw/articles/2026-08-07_varick_ai-adoption-is-a-myth.md
+
+
+## [2026-08-09] concept-creation | Created [[concepts/ai-adoption-barbell]] — Barbell distribution of enterprise AI adoption
+- Source: [[raw/articles/2026-08-07_varick_ai-adoption-is-a-myth]] by @vasuman (CEO, Varick Agents)
+- Key theses: 10-70-20 barbell split (5-10% power users, ~20% mediocre, ~70% non-users), binary adoption metrics vs skill spectrum, token concentration (10% burn 90%), incentive misalignment, four-part solution framework (diagnostic training, skill publishing, background AI, metric reform)
+- Links: [[concepts/enterprise-agents]], [[concepts/forward-deployed-engineering]], [[concepts/ai-adoption-failures-and-enterprise-psychosis]], [[concepts/enterprise-ai-scaling-patterns]], [[concepts/ai-services-joint-ventures]], [[concepts/ai-benchmarks/ram-relative-adoption-metric]], [[concepts/enterprise-ai-cost-management]]
+- Entities: [[entities/vasuman]] (created), [[entities/varick-agents]] (created)
+- index.md: +1 Concepts (1956→1957)
+
+## [2026-08-09] entity-creation | Created [[entities/varick-agents]] (enterprise AI implementation company)
+
+- **Created: [[entities/varick-agents]]** — Enterprise AI implementation company founded by @vasuman. Designs and deploys agent systems inside enterprise workflows ($500M+ revenue companies). Key concepts: Background AI (agents that run without employees learning prompting), Forward Deployed Engineering, AI Adoption is a Myth thesis. Domains: finance, sales, procurement, operations, HR. Integrates with Salesforce, NetSuite, Dynamics. Tags: company, enterprise-ai, enterprise-agents, applied-ml, consulting, fde, ai-automation, agentic-engineering.
+- **Updated: [[entities/_index]]** — Added Varick Agents entry (alphabetical, between varun-trivedy and vtrivedy10).
+- Sources: https://varickagents.com, https://x.com/varickagents, https://www.linkedin.com/company/varick-agents/, https://varickagents.com/newsletter
 
 ## [2026-08-09] raw-backlog-ingest (22:00) | Reference 2 items + Skip 3 items
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-09 22:00, run 20260809T220019Z). References=2, Skips=3.

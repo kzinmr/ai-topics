@@ -163,3 +163,4 @@ This is the "services layer" that makes enterprise agents work in practice — a
 - [[concepts/agent-ontology]] — How ontology serves as the memory system for enterprise agents
 - [[concepts/harness-engineering/agent-patterns]] — Human-in-the-loop patterns applicable to enterprise contexts
 - [[concepts/ai-services-joint-ventures]] — The industry pivot to the FDE model
+- [[concepts/ai-adoption-barbell]] — The barbell distribution of enterprise AI adoption — 10-70-20 split, binary adoption metrics vs skill spectrum

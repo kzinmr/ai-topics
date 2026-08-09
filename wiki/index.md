@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (884 pages)
+## Entities (886 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -832,7 +832,9 @@
 - [[entities/vaishnavi-shrivastava]] — Vaishnavi Shrivastava
 - [[entities/vannevar-labs]] — Vannevar Labs
 - [[entities/vanta]] — Vanta
+- [[entities/varick-agents]] — Varick Agents — Enterprise AI implementation company; builds background agents in systems of record (Salesforce, NetSuite, Dynamics) for $500M+ revenue companies
 - [[entities/varun-trivedy]] — Varun Trivedy
+- [[entities/vasuman]] — @vasuman — CEO of Varick Agents; enterprise AI implementation, barbell distribution of AI adoption, Background AI, forward deployed engineering
 - [[entities/vast-data]] — VAST Data — Data storage and AI infrastructure company ($30B); GPU starvation problem, data-centric design (Jul 20)
 - [[entities/vera-rubin]] — NVIDIA Vera Rubin
 - [[entities/vercel]] — Vercel Inc.; frontend cloud platform, expanded into AI with Eve filesystem-first agent framework, deepsec security harness, AI SDK, and Vercel Sandbox microVMs (June 28)
@@ -889,7 +891,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1956 pages)
+## Concepts (1957 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1003,6 +1005,7 @@
 - [[concepts/ai-and-authenticity]] — AI and Authenticity
 - [[concepts/ai-and-software-engineering]] — AI and Software Engineering
 - [[concepts/ai-hallucination-factuality]] — AI Hallucination and Factuality — Types, causes, detection, and mitigation of LLM factual errors; sycophancy, RAG grounding, benchmark overview
+- [[concepts/ai-adoption-barbell]] — AI Adoption Barbell Distribution — Enterprise AI usage follows a 10-70-20 barbell; binary adoption metrics mask the skill spectrum; power users burn 90% of tokens; solution: diagnostic training, skill publishing, background agents
 - [[concepts/ai-adoption-failures-and-enterprise-psychosis]] — AI Adoption Failures and Enterprise AI Psychosis
 - [[concepts/ai-api-abuse]] — AI API Abuse
 - [[concepts/ai-as-abstraction-layer]] — ai-as-abstraction-layer
