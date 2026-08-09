@@ -9,6 +9,7 @@
     "http://karpathy.github.io/2026/02/12/microgpt/",
     "http://workos.com/auth-md?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026",
     "http://www.paulgraham.com/guidetoinvestors.html",
+    "http://www.paulgraham.com/icad.html",
     "http://www.paulgraham.com/marginal.html",
     "http://www.paulgraham.com/mit.html",
     "http://www.paulgraham.com/notnot.html",
@@ -83,6 +84,7 @@
     "https://augmentcode.com/blog/cosmos-the-platform-for-ai-native-engineering-teams",
     "https://basicappleguy.com/basicappleblog/macos-golden-gate-icon-comparison",
     "https://bernsteinbear.com/blog/inlining-heuristics/",
+    "https://bernsteinbear.com/blog/inlining-heuristics/?utm_source=rss",
     "https://bernsteinbear.com/blog/travel-notes-pldi-boulder/?utm_source=rss",
     "https://berthub.eu/articles/posts/ai-for-decision-makers/",
     "https://berthub.eu/articles/posts/ai-voor-wie-erover-gaat/",
@@ -135,6 +137,7 @@
     "https://borretti.me/article/on-vulgar-materialism",
     "https://borretti.me/article/review-job-less-utopia",
     "https://boyter.org/2013/01/code-for-a-search-engine-in-php-part-1/",
+    "https://boyter.org/2017/05/identify-software-licenses-python-vector-space-search-ngram-keywords/",
     "https://boyter.org/posts/abusing-aws-to-make-a-search-engine/",
     "https://boyter.org/posts/sloc-cloc-code-performance/",
     "https://brutecat.com/articles/google-cloud-rce",
@@ -2425,5 +2428,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-09T10:58:36.499845+00:00"
+  "updated": "2026-08-09T14:15:19.861272+00:00"
 }

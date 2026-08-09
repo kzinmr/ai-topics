@@ -1,9 +1,10 @@
 ---
 title: "Max Bernstein"
 tags: [person]
-sources: []
+sources:
+  - raw/articles/bernsteinbear.com--blog-inlining-heuristics--48699265.md
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-08-09
 type: entity
 ---
 
@@ -86,6 +87,7 @@ Bernstein's commitment to education extends beyond his blog. At Dartmouth, he te
 - **Performance visualization** — Using Perfetto for tracing JIT side-exits and deoptimizations
 - **Scrapscript implementation** — Building a compiler IR, garbage collector, and baseline compiler for a small language
 - **SSA and IR design** — Systematic catalogs of SSA generation methods, side effects, and IR design patterns
+- **Inlining heuristics survey** — "A survey of inlining heuristics" (2026): systematic catalog of JIT inlining heuristics across HotSpot C1/C2, V8 Hydrogen/TurboFan/Maglev, PyPy, YJIT, ZJIT, Cranelift/Wasmtime, and Graal, plus the academic literature including ML-based heuristic construction
 - **Type propagation** — Interprocedural sparse conditional type propagation (with Maxime Chevalier-Boisvert)
 - **Academic publication** — "Partial Evaluation, Whole-Program Compilation" at PLDI 2025 (with Chris Fallin)
 - **Recurse Center** — Half-batch participant (Fall 2 2024); part of the broader RC community

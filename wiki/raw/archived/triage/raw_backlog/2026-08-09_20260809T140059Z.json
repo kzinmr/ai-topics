@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-09T14:15:19.860667+00:00",
+  "triage_run_id": "20260809T140059Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest (14:00) バッチ: raw_backlog_collect.py --sort ai-hint --limit 5 (20260809T140059Z)。Takes=0, References=3, Skips=2。参照追記3件: (1) paulgraham.com「Revenge of the Nerds」(2002) — entities/paulgraham-com.mdにpointy-haired boss/Lispの9アイデア節を追加し、企業AI強制パターン（concepts/ai-adoption-failures-and-enterprise-psychosis）との同型性を明記、(2) bernsteinbear.com「A survey of inlining heuristics」— entities/max-bernstein.mdのRecent ThemesにJITインライン化ヒューリスティクス調査を追記、(3) boyter.orgソフトウェアライセンス識別(2017) — entities/ben-boyter.mdのBlog節にlcツール起源として追記。スキップ2件は既収録: ludic.mataroa「AI Mania Is Eviscerating Global Decision-Making」は concepts/ai-adoption-failures-and-enterprise-psychosis.md の一次ソースとして全文カバー済み、Glean no-code自動化ガイドは entities/glean.md「No-Code Automation Guide (June 2026)」節に収録済み。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-pg-revenge-nerds",
+      "source": "raw_backlog",
+      "source_name": "raw-backlog-ingest",
+      "title": "Revenge of the Nerds",
+      "url": "http://www.paulgraham.com/icad.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--icad-html--2f0356db.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ エンティティ参照追記。Paul Grahamの古典エッセイ（2002年5月）。本文で「pointy-haired boss」（技術を知らない管理職がJava等を強制する構図）と「言語は等価ではない」論、Lispは1958年の数学であり2つの進化の樹（数学起源 vs 機械アーキテクチャ起源）が収束してきた歴史、Lispの9つのアイデア（条件分岐/関数型/再帰/動的型付け/GC/式から成るプログラム/シンボル型/コードをツリーで表記/言語全体が常に利用可能）を確認。entities/paulgraham-com.mdに「Revenge of the Nerds (May 2002)」節を追記し、pointy-haired bossパターンが企業AI強制（concepts/ai-adoption-failures-and-enterprise-psychosis のHeretics Will Be Shot）と同型である点を明記。sourcesにraw記事追加、updated 2026-08-09。",
+      "candidate_wiki_path": "entities/paulgraham-com.md",
+      "body_excerpt": "# Revenge of the Nerds\nSource: http://www.paulgraham.com/icad.html\nMay 2002\n\"We were after the C++ programmers. We managed to drag a \nlot of them about halfway to Lisp.\"\n- Guy Steele, co-author of the Java spec\nIn the software business there is an ongoing\nstruggle between the pointy-headed academics"
+    },
+    {
+      "item_id": "raw-backlog-bernstein-inlining",
+      "source": "raw_backlog",
+      "source_name": "raw-backlog-ingest",
+      "title": "A survey of inlining heuristics",
+      "url": "https://bernsteinbear.com/blog/inlining-heuristics/?utm_source=rss",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/bernsteinbear.com--blog-inlining-heuristics--48699265.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ エンティティ参照追記。Max BernsteinによるJITインライン化ヒューリスティクスの体系調査（2026年6月）。本文でHotSpot C1/C2、V8 Hydrogen/TurboFan/Maglev、PyPy、YJIT、ZJIT、Cranelift/Wasmtime、Graalの各インライナー方式と、機械学習によるヒューリスティクス自動構築を含む論文群を確認。コンパイラ寄りでLLM直接関連は薄いが、著者のカタログ系エッセイとしてentities/max-bernstein.mdのRecent Themesに追記、sourcesにraw記事追加、updated 2026-08-09。",
+      "candidate_wiki_path": "entities/max-bernstein.md",
+      "body_excerpt": "# A survey of inlining heuristics\nSource: https://bernsteinbear.com/blog/inlining-heuristics/?utm_source=rss\nCompilers, especially method just-in-time compilers, operate on one function at\na time. It is a natural code unit size, especially for a dynamic language JIT:\nat a given point in time, what m"
+    },
+    {
+      "item_id": "raw-backlog-boyter-license",
+      "source": "raw_backlog",
+      "source_name": "raw-backlog-ingest",
+      "title": "How to identify software licenses using Python, Vector Space Search and Ngram Keywords",
+      "url": "https://boyter.org/2017/05/identify-software-licenses-python-vector-space-search-ngram-keywords/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/boyter.org--2017-05-identify-software-licenses-python-vector-space-searc--bdadcd78.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ エンティティ参照追記。Ben Boyterの2017年記事。本文でSPDXライセンスコーパス（Blackduck上位20+全SPDX）をベクトル空間検索+ngramキーワードで照合しプロジェクトライセンスを識別する手法（searchcode serverのライセンスフィルタ機能、後のlc CLIの起源）を確認。LLM以前の古典IR手法でAI関連性は低いが、entities/ben-boyter.mdのBlog節にlcツールの起源として追記、sourcesにURL追加、updated 2026-08-09。",
+      "candidate_wiki_path": "entities/ben-boyter.md",
+      "body_excerpt": "# How to identify software licenses using Python, Vector Space Search and Ngram Keywords\nSource: https://boyter.org/2017/05/identify-software-licenses-python-vector-space-search-ngram-keywords/\nEDIT\n– I have since taken the ideas below improved them and released a command line application you can us"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ tags:
 status: complete
 description: "Creator of searchcode.com, scc (Sloc Cloc and Code), and cs (Code Spelunker). Author of the 'Marketing to the Machine' B2A thesis."
 created: 2026-04-30
-updated: 2026-08-02
+updated: 2026-08-09
 sources:
   - "https://boyter.org/about/"
   - "https://github.com/boyter"
@@ -17,6 +17,7 @@ sources:
   - "https://boyter.org/posts/searchcode-has-been-rebooted/"
   - "https://boyter.org/posts/abusing-aws-to-make-a-search-engine/"
   - "https://x.com/boyter"
+  - "https://boyter.org/2017/05/identify-software-licenses-python-vector-space-search-ngram-keywords/"
 related:
   - "[[entities/searchcode-com]]"
   - "[[concepts/code-intelligence-for-llms]]"
@@ -77,6 +78,7 @@ Blog at [boyter.org](https://boyter.org/) covering code search, testing, Go, sea
 - Abusing AWS Lambda to make an Aussie Search Engine (Bonzamate, updated 2025)
 - Code Spelunker CLI Tool Redux (Feb 2026)
 - Boilerplate Tax: Ranking languages by density (Feb 2026)
+- How to identify software licenses using Python, Vector Space Search and Ngram Keywords (May 2017) — origin of the **lc** license-checker CLI; vector-space model + n-gram keyword matching against an SPDX license corpus to classify project licenses (built as a searchcode server feature, later released standalone)
 - searchcode.com reboot (Aug 2025, Mar 2026)
 - Running 3M+ LLM requests without spending $100K (Jun 2025)
 
