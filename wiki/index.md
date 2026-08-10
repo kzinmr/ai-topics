@@ -2,9 +2,10 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (887 pages)
+## Entities (889 pages)
 
 - [[entities/0xjeff]] — 0xJeff
+- [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box; AI-powered enterprise content management, Box AI, AI trust layer
 - [[entities/abacaj]] — abacaj — Independent AI researcher
@@ -663,6 +664,7 @@
 - [[entities/quarq-labs]] — Quarq Labs
 - [[entities/qwen]] — Qwen — Alibaba's family of large language models (Tongyi Qianwen)
 - [[entities/qwen-3-7-max]] — Qwen 3.7 Max
+- [[entities/qwen-mm-plugins]] — Qwen-MM-Plugins — Alibaba open-source multimodal plugin system for agent harnesses; 6 capabilities (vision, video memory, video edit, Blender 3D, FreeCAD, edu-agent); supports Claude Code, Codex, Qoder, OpenClaw, Qwen Code, Gemini CLI (July 2026)
 - [[entities/qwen3-6-plus]] — Qwen3.6-Plus
 - [[entities/rachelbythebay-com]] — Rachel by the Bay
 - [[entities/radical-ai]] — Radical AI

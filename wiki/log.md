@@ -1,3 +1,14 @@
+# Wiki Log
+
+## [2026-08-10] x-bookmarks-ingest | 2 bookmarks: Qwen-MM-Plugins entity + Graph Engineering 14-step enrichment + 0xMovez AI entity
+
+- **Create: [[entities/qwen-mm-plugins]]** — Qwen-MM-Plugins: Alibaba open-source multimodal plugin system for agent harnesses (572 stars, Apache-2.0). 6 capabilities: core (vision/OCR/grounding/ASR/web search), video-memory (hierarchical graph for long videos), video-edit (editing + generation), blender (3D via 22 tools), freecad (CAD via 14 tools), edu-agent (skill-only). Skill + MCP server architecture. Supports Claude Code, Codex, Qoder, OpenClaw, Qwen Code, Gemini CLI. Links to [[entities/qwen]], [[concepts/agent-plugins-1-0-0]]. Source: raw/articles/2026-07-29_qwen_qwen-mm-plugins.md.
+
+- **Create: [[entities/0xmovez-ai]]** — 0xMovez AI: pseudonymous AI educator on Substack (movez.substack.com) and X (@0xMovez). Published "Graph Engineering with Claude: 14-Step roadmap from 0 to graph architect (Full Course)" (July 2026) as viral X Article. Focuses on Claude Code dynamic workflows, agent graph patterns, and practical JavaScript orchestration. Links to [[concepts/graph-engineering]], [[concepts/dynamic-workflows]]. Source: raw/articles/2026-07-20_movez_graph-engineering-claude-14-step.md.
+
+- **Enrich: [[concepts/graph-engineering]]** — Added "Claude Code Implementation: The 0xMovez 14-Step Course (July 2026)" section with 14-step summary table (nodes/edges, degenerate graphs, JSON schema contracts, edge data flow, parallel() fan-out, barrier semantics, diamond topology, conditional routing, adversarial verification, worktree isolation, loop-until-dry cycles, model tiering, topology as cost lever, self-routing) + 11 key patterns + practical takeaway (zero-token JavaScript coordination, .claude/workflows/ reusability, /deep-research production graph). Added 0xMovez AI to Key Figures, [[concepts/dynamic-workflows]] to Related Concepts, raw article to sources. 137→193 lines. Source: raw/articles/2026-07-20_movez_graph-engineering-claude-14-step.md.
+
+- index.md: +2 Entities (887→889).
 ## [2026-08-10] active-crawl | 4 concept pages: AI Agent Permission Oversight (ScaleX study), LLM-Assisted Learning (Raducu methodology), WeatherNext (DeepMind cyclone forecasting), Genesis Open Models Initiative (DOE/ANL)
 
 | 2026-08-10 | concepts/ai-agent-permission-oversight.md | created | ScaleX study on human oversight failures in AI agent command approval (338 HN pts) |
@@ -39,8 +50,6 @@
 - **Verify**: `tag_audit.py` re-run → 0 tags NOT in taxonomy. Pre-commit tag validator passes.
 
 ---
-
-# Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
 ## [2026-08-10] raw-backlog-ingest | Automated Alignment Researcher, Muse Spark harness, Harness design grading criteria
@@ -4850,3 +4859,5 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Create: raw/articles/2026-08-10_research-meta-ai_introducing-muse-glimmer.md** — Raw article scrape of Meta's Muse Glimmer announcement blog post.
 - **Update: [[entities/muse-spark]]** — Added "Muse Glimmer (August 10, 2026)" section referencing the new 30B distilled model. Updated date to 2026-08-10.
 - **Update: [[wiki/index]]** — Added Muse Glimmer entry. Bumped entity count 886→887.
+- **Create: [[entities/qwen-mm-plugins]]** — Open-source multimodal plugin system (skills + MCP servers) for AI agent harnesses from Alibaba's Qwen team; 6 capabilities (core, video-memory, video-edit, blender, freecad, edu-agent); supports Claude Code, Codex, Qoder, OpenClaw, Qwen Code, Gemini CLI; 572 GitHub stars, Apache-2.0. Source: raw/articles/2026-07-29_qwen_qwen-mm-plugins.md.
+- **Update: [[entities/_index]]** — Added qwen-mm-plugins entry. Bumped entity count 887→888.
