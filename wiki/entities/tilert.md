@@ -1,7 +1,7 @@
 ---
 title: TileRT
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-08-10
 type: entity
 tags:
   - inference
@@ -14,6 +14,7 @@ sources:
   - raw/articles/2026-06-08_xiaomi-mimo-tilert-1000tps.md
   - raw/articles/2026-06-08_tilert_breaking-1000-tps.md
   - raw/articles/2026-05-21_zrdianjiao-glm51-highspeed-tilert.md
+  - raw/newsletters/2026-08-10-ultra-high-interactivity-on-nvidia-gpus-tilert-inferencex.md
 related:
   - "[[entities/xiaomi-mimo]]"
   - "[[concepts/glm-5-1]]"
@@ -103,3 +104,26 @@ Unlike Cerebras (wafer-scale) or Groq (pure SRAM), TileRT achieves extreme speed
 - Blog: https://www.tilert.ai/blog/breaking-1000-tps.html
 - GitHub: https://github.com/tile-ai/TileRT
 - Contact: tile-ai@outlook.com
+
+## SemiAnalysis InferenceX Benchmark (Aug 2026)
+
+In August 2026, **SemiAnalysis** published an independent benchmark of TileRT in their InferenceX dataset (newsletter: *Ultra-High Interactivity on NVIDIA GPUs? - TileRT InferenceX*, 2026-08-10), using **tokens/s/user** as the primary interactivity metric.
+
+### Results
+
+- **8k/1k context, 8×B200 node**: TileRT reached **340 tokens/s/user**. The previous fastest result in the dataset was **181.4 tokens/s/user** (GB300 NVL72, NVFP4 + MTP) — **1.9× faster** on this metric.
+- **1k/1k context, FP8**: TileRT reached **494.2 tokens/s/user**, **3.6×** the previous best FP8 result in the dataset.
+
+### Architecture: PD Separation
+
+- **Prefill/decode (PD) separation**: vLLM/SGLang handles prefill; TileRT serves as the decode engine.
+
+### Constraint: Single-Request-Per-Node
+
+- 1 decode node = 1 request (single-request-per-node) — raw throughput is traded for per-user interactivity.
+- Premium "fast modes" demonstrate that users pay more for lower latency / faster tokens, potentially yielding higher gross margins.
+
+### Comparison & Development Pace
+
+- Positioned against Cerebras, Groq LPU, and SambaNova.
+- Development is slow because the design is constraint-driven: the single-request-per-node decode constraint and PD separation limit generality, trading raw throughput for per-user interactivity.

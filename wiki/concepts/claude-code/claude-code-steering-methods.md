@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Steering Methods"
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-08-10
 type: concept
 tags:
   - claude-code
@@ -13,7 +13,9 @@ tags:
   - rules
   - claudefile
   - developer-tooling
-sources: [raw/articles/2026-06-18_anthropic_steering-claude-code-skills-hooks-rules-subagents-and-more.md]
+sources:
+  - raw/articles/2026-06-18_anthropic_steering-claude-code-skills-hooks-rules-subagents-and-more.md
+  - raw/newsletters/2026-08-09-claude-code-5.md
 ---
 
 # Claude Code Steering Methods
@@ -142,6 +144,25 @@ The `append-system-prompt` flag adds instructions to Claude's default role witho
 - Diminishing returns for adherence with more instructions
 - Contradicting instructions reduce effectiveness
 - Higher input tokens (though prompt caching reduces cost)
+
+## Claude Code 5 Setup Guidance (Aug 2026)
+
+With the 5-series models (Opus 5 / Fable 5 line), Anthropic deleted roughly 80% of Claude Code's system prompt — and the model performed **better** without it. The verbose instructions written for last year's model have become a liability. As Thariq Shihipar put it: *"The instructions you wrote for last year's model are now the thing holding this year's model back."*
+
+**Why this matters for your setup:**
+- The trimmed system prompt assumes the 5-series models can infer more on their own; hand-holding written for the previous generation now competes with stronger native behavior
+- Most existing CLAUDE.md files are "flooding with junk context" — guidance that compensated for limitations of older models that no longer exist
+- Customizations tuned for previous models can degrade performance on the new line rather than improve it
+
+**Practical guidance:**
+- Run in **safe mode** first to establish a baseline — observe how the 5-series models behave with a minimal configuration before re-adding customizations
+- **Trim customizations**: audit CLAUDE.md and remove rules that exist only to compensate for old-model limitations
+- **Move information out of CLAUDE.md into specific skills**: skills load only when invoked, so procedural and reference material costs nothing until needed (lower context cost, per the loading model in [Skills](#3-skills) above)
+- Expect CLAUDE.md to shrink over time — what once required explicit instruction is increasingly default behavior
+
+**New feature:** Claude Code 5 supports **sending messages across sessions**, so context can carry between separate working sessions instead of being rebuilt from scratch.
+
+The core takeaway: revisit CLAUDE.md and customizations with each major model release. What was essential for the previous generation may now be the thing holding the current one back.
 
 ## Method Comparison
 

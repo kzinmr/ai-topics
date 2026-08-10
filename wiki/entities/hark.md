@@ -2,7 +2,7 @@
 title: "Hark"
 type: entity
 created: 2026-05-22
-updated: 2026-05-25
+updated: 2026-08-10
 tags:
   - company
   - infrastructure
@@ -11,6 +11,7 @@ aliases: ["Hark AI"]
 sources:
   - raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa.md
   - raw/newsletters/2026-05-24-google-goes-agentic-hark-s-big-bet-and-starbucks-milk-run.md
+  - raw/newsletters/2026-08-09-google-sells-the-shovels-the-great-hark-handoff-and-bytedance-s-bigger-picture.md
 ---
 
 # Hark
@@ -51,9 +52,27 @@ Having four major chipmakers (Nvidia, AMD, Intel, Qualcomm) on the same cap tabl
 
 Hark's strategy is to first demonstrate AI model capability, then ship physical devices that bring that intelligence to consumers.
 
+## Hark Handoff (August 2026)
+
+Hark Labs introduced **Handoff**, a computer-using agent claimed to be independently verified as the best internet-use model ever built, outperforming ChatGPT 5.4 and Claude Opus 4.8.
+
+| | |
+|---|---|
+| **Product** | Handoff (computer-using agent) |
+| **Claim** | Independently verified best internet-use model ever built |
+| **Outperforms** | ChatGPT 5.4, Claude Opus 4.8 |
+| **Pricing (input)** | $0.18 / M tokens (vs $5.00 for GPT 5.5 and Claude Opus 4.8) |
+| **Per-turn speed** | 5 seconds (down from 15 seconds at launch) |
+| **Primary source** | hark.com/articles/introducing-hark-handoff |
+
+- **Pricing** — $0.18 per million input tokens vs $5.00 for GPT 5.5 (and Claude Opus 4.8), a dramatic cost advantage
+- **Speed** — per-turn latency dropped from 15 seconds at the start to 5 seconds now
+- **Context** — 74.9% of screen time happens in a browser, motivating computer-use agents like Handoff
+- Announced via Hark Labs under Brett Adcock, extending Hark from GPU infrastructure into agentic software
+
 ## Related
 
-
+- [[concepts/computer-use]] — Computer-using agents (Handoff's category)
 - [[entities/brett-adcock]] — Founder & CEO
 - [[entities/modal-labs]] — Competitor in GPU cloud infrastructure
 - [[entities/together-ai]] — Competitor in AI infrastructure

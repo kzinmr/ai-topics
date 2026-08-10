@@ -1,7 +1,7 @@
 ---
 title: "ByteDance"
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-08-10
 type: entity
 tags:
   - bytedance
@@ -9,14 +9,12 @@ tags:
   - china
   - open-source
   - lab
-- bytedance
-- company
-- china
-- open-source
-- ai-research
+  - ai-research
+  - video-generation
 sources:
 - raw/articles/2026-06-22_bytedance-deerflow-superagent-harness.md
 - https://github.com/bytedance/deer-flow
+- raw/newsletters/2026-08-09-google-sells-the-shovels-the-great-hark-handoff-and-bytedance-s-bigger-picture.md
 ---
 
 # ByteDance
@@ -40,6 +38,14 @@ Key characteristics of DeerFlow that reflect ByteDance's AI approach:
 ### Doubao / Seed Models
 
 ByteDance develops the **Doubao** family of AI models through its Seed team, offered commercially via the Volcengine platform. The Doubao-Seed-2.0-Code variant is specifically recommended for coding agent workflows within DeerFlow.
+
+### Seedance Video Models
+
+The Seed team's video generation line, **Seedance**, is distributed through Volcengine and the seed.bytedance.com blog.
+
+#### Seedance 2.5
+
+Released in early August 2026, **Seedance 2.5** generates 30-second video clips with synchronised audio in a single pass, and accepts up to 30 images, 10 video clips, and 10 audio clips as references. Days before the release, the *Financial Times* reported that ByteDance is pre-training a model of up to 10 trillion parameters — three times the size of Kimi K3 — which could become the largest AI model ever built by a Chinese company. Primary source: the seed.bytedance.com blog.
 
 ### Other AI Projects
 

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (886 pages)
+## Entities (887 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -121,7 +121,7 @@
 - [[entities/bryan-catanzaro]] — Bryan Catanzaro
 - [[entities/burke-holland]] — Burke Holland — GitHub developer advocate; "harness is all you need (mostly)" thesis; 8-step Copilot workflow — prototype/plan/implement/review (July 29)
 - [[entities/buildy]] — Buildy — AI agent app runtime; "software that's finally yours"; real URL + persistent storage; works across ChatGPT/Claude/Codex/OpenClaw; MCP Apps inline rendering
-- [[entities/bytedance]] — ByteDance
+- [[entities/bytedance]] — ByteDance; Seedance 2.5 video model (30s clips + audio single-pass) + FT report of 10T-param pre-training (3x Kimi K3) (Aug 10)
 - [[entities/byterover]] — byterover
 - [[entities/caisi]] — Center for AI Standards and Innovation (CAISI)
 - [[entities/callosum]] — Callosum
@@ -279,6 +279,7 @@
 - [[entities/eugene-yan--timeline]] — Eugene Yan — Timeline & Career History
 - [[entities/eugeneyan]] — Eugene Yan
 - [[entities/evanhahn-com]] — Evan Hahn
+- [[entities/eve-legal-ai]] — Eve (Legal AI) — Legal-tech AI company; $103M Series B at $1B+ valuation, EveOS platform, multi-agent (Atlas/Jenny/Auditor/Analyst), 1,400+ plaintiff firms (Aug 10)
 - [[entities/eventual]] — Eventual
 - [[entities/every-inc]] — Every (company)
 - [[entities/evis-drenova]] — Evis Drenova
@@ -330,7 +331,7 @@
 - [[entities/glm-5v-turbo]] — GLM-5V-Turbo
 - [[entities/gm8xx8]] — gm8xx8
 - [[entities/goodfire-ai]] — Goodfire AI
-- [[entities/google]] — Google (AI/ML)
+- [[entities/google]] — Google (AI/ML); TPU sales to Anthropic >20% of shipments thru 2027, $150B+ backlog, Cloud +82% (Aug 10)
 - [[entities/google-adk]] — Google Agent Development Kit (ADK)
 - [[entities/google-antigravity]] — Google Antigravity
 - [[entities/google-tpu]] — Google TPU — Tensor Processing Units
@@ -351,7 +352,7 @@
 - [[entities/hamel-husain]] — Hamel Husain
 - [[entities/han-lee]] — Han Lee (Hanchung Lee)
 - [[entities/hanchunglee]] — Hanchunglee
-- [[entities/hark]] — Hark
+- [[entities/hark]] — Hark; Handoff computer-using agent, $0.18/M input tokens vs GPT 5.5's $5.00, 5s per-turn (Aug 10)
 - [[entities/harrison-chase]] — Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framewor...
 - [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5)
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM; Salesforce Ventures Generative AI Fund; relational intelligence category (L3)
@@ -556,6 +557,7 @@
 - [[entities/moondream]] — Moondream — VLM company building small vision-language models and the Photon inference engine; uses pipelined decoding to eliminate GPU bubbles, achieving 35% higher decode throughput on NVIDIA B200 (June 30)
 - [[entities/moonshot-ai]] — Moonshot AI
 - [[entities/muratcan-koylan]] — Muratcan Koylan
+- [[entities/muse-glimmer]] — Muse Glimmer — 30B open agentic model from Meta Superintelligence Labs; Apache 2.0; optimized for local agent workflows on consumer hardware; distilled from Muse Spark; DFlash speculative decoding (3.1x on RTX 5090) (Aug 2026)
 - [[entities/muse-spark]] — Muse Spark; 1.1 GA with API access (first Spark model with API), agentic tool calling improvements, llm-meta-ai plugin, "Attractor States in Self-Conversation" finding (July 2026); Muse Code beta technicals (event log runtime, Photon Sphere/Embervault/Avo Lawn agents, KDA/MLA kernel case study) (Aug 2026)
 - [[entities/mustafa-suleyman]] — Mustafa Suleyman
 - [[entities/nader-dabit]] — Nader Dabit
@@ -809,7 +811,7 @@
 - [[entities/thomas-wiecki]] — Thomas Wiecki
 - [[entities/thorsten-ball]] — Thorsten Ball
 - [[entities/thoughtful-lab]] — Thoughtful Lab
-- [[entities/tilert]] — TileRT
+- [[entities/tilert]] — TileRT; SemiAnalysis InferenceX benchmark: 340 tok/s/user on 8×B200 (1.9x GB300 NVL72), 494.2 FP8 1k/1k (3.6x) (Aug 10)
 - [[entities/tim-davis]] — Tim Davis
 - [[entities/tim-dettmers]] — Researcher at the University of Washington (NLP/ML), creator of bitsandbytes, LLM.int8(), and co-creator of QLoRA. Pi...
 - [[entities/tim-oreilly]] — Tim O'Reilly
@@ -1351,7 +1353,7 @@
 - [[concepts/claude-code/claude-code-session-cache-leakage]] — Claude Code Session Cache Cross-Account Leakage — Sonnet 5 cache miss after 5+ min leaked unrelated content into Enterprise ZDR sessions (Jul 4, 313 HN pts) (Jul 6)
 - [[concepts/claude-code/claude-code-skills]] — Claude Code Skills; enriched with Anthropic official steering methods (CLAUDE.md, rules, skills, subagents, hooks, output styles, system prompt) + comparison table (June 23)
 - [[concepts/claude-code/claude-code-source-patterns]] — Claude Code Source Patterns — Leaked Source Analysis
-- [[concepts/claude-code/claude-code-steering-methods]] — Claude Code Steering Methods
+- [[concepts/claude-code/claude-code-steering-methods]] — Claude Code Steering Methods; Claude Code 5 setup guidance — 80% system prompt deletion, move CLAUDE.md info to skills (Aug 10)
 - [[concepts/claude-code/claude-code-tips]] — Claude Code Tips — Running Inside Docker with VSCode Dev Containers
 - [[concepts/claude-code/claude-md-rules]] — CLAUDE.md Rules — Karpathy's Behavioral Guidelines for AI Coding Agents
 - [[concepts/claude-code/steganographic-watermarking]] — Claude Code Steganographic Request Watermarking — Anthropic's anti-distillation/anti-reseller measure using steganographic fingerprinting in API requests (Jul 1)
@@ -2910,7 +2912,7 @@
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B
 - [[events/openai-2025-audited-financials]] — OpenAI 2025 Audited Financials — $38.5B Net Loss
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective
-- [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face
+- [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face; Nathan Lambert "Lessons from the hacks" analysis (Aug 10)
 - [[events/aisi-unsanctioned-agent-behaviour-aug-2026]] — UK AISI Unsanctioned Agent Behaviour (July 2026) — 19 unsanctioned actions across 122 eval attempts; Mythos 5 supply-chain attack + social engineering + spear-phishing
 - [[events/atlassian-rovo-data-exfiltration-aug-2026]] — Atlassian Rovo Data Exfiltration Incident (August 2026) — PromptArmor discovers Rovo AI assistant bypassing access controls to exfiltrate sensitive data from Jira/Confluence via prompt injection
 - [[events/openai-health-in-chatgpt-july-2026]] — Health in ChatGPT: Apple Health & medical records integration with LLM-powered health context (July 2026)

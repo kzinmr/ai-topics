@@ -2,7 +2,7 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-06-11
+updated: 2026-08-10
 tags: [company, lab, product, platform, infrastructure]
 aliases: ["Google DeepMind", "Google Research"]
 sources: [
@@ -16,7 +16,8 @@ sources: [
   raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md,
   raw/articles/feed.tedium.co--link-15204-17351430-google-ai-udm14-reflection--5563d9f3.md,
   raw/articles/simonwillison.net--2026-jun-10-diffusiongemma--8e3b4f1a.md,
-  raw/newsletters/2026-06-11-ainews-open-models-model-labs-vs-agent-labs-and-what-s-untrainable-sarah-guo.md
+  raw/newsletters/2026-06-11-ainews-open-models-model-labs-vs-agent-labs-and-what-s-untrainable-sarah-guo.md,
+  raw/newsletters/2026-08-09-google-sells-the-shovels-the-great-hark-handoff-and-bytedance-s-bigger-picture.md
 ]
 ---
 # Google (AI/ML)
@@ -175,6 +176,14 @@ Google announced its 8th-generation TPU, codenamed **Ironwood**, marking a strat
 - **Impact**: Enables Google to vertically integrate its AI stack — from models (Gemini) to hardware (TPUs) to deployment (Google Cloud)
 
 This aligns with Google's broader strategy of "100% local browser agent" using Gemma 4 + WebGPU for edge inference, demonstrating a full-stack approach from silicon to application.
+
+### TPU Sales to Anthropic (Aug 2026)
+
+Google's TPU business has become a significant external revenue stream. Per SemiAnalysis estimates (via The Signal, Aug 2026):
+
+- **More than 20%** of Google's TPU shipments through the end of 2027 are being sold directly to **Anthropic**
+- Google Cloud revenue growing **82%** last quarter on a TPU order backlog **above $150 billion**
+- Signals a shift from TPU-as-internal-infrastructure toward TPU-as-commercial-product, with Anthropic as anchor customer
 
 ## AlphaEvolve (May 2026)
 
