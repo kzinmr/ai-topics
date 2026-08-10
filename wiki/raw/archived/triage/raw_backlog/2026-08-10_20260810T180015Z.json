@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-10T18:09:13.185160+00:00",
+  "triage_run_id": "20260810T180015Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest (18:00) バッチ: raw_backlog_collect.py --sort ai-hint --limit 5 (20260810T180015Z)。Takes=0, References=1, Skips=4。参照追記1件: paulgraham.com「Mind the Gap」(2004年5月) — entities/paulgraham-com.mdのSuperlinear Returnsセクションに前身エッセイとして追記（2004年時点での才能格差・富の創造・所得変動の健康性論、2023年「Superlinear Returns」の直接の祖先）。スキップ4件: OpenClaw from Scratch workshop（entities/ivan-leo.mdに本rawファイルがsources登録済み＋完全なWorkshopセクションあり）、AINews GPT-Image-2速報（2026-04-22にconcepts/gpt/chatgpt-images-2-0.md / entities/kimi / concepts/deep-research / concepts/ml-internへdelta-enrichment済み。本ファイルは同一速報の重複rawキャプチャ）、Bad Apple in Minecraft（非AIデモシーン）、SQLAlchemy 2 in Practice Chapter 4（非AI Python ORM書籍章）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-pg-mind-the-gap",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com",
+      "title": "Mind the Gap",
+      "url": "http://www.paulgraham.com/gap.html",
+      "raw_path": "wiki/raw/articles/paulgraham.com--gap-html--e5deadf2.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/paulgraham-com.mdのSuperlinear Returnsセクションに前身エッセイとして追記。2004年5月の本エッセイは、あらゆる熟練領域（Leonardo vs Borgognone、Raymond Chandler vs 平均的探偵小説家、トップ棋士 vs クラブプレイヤー）に存在する才能格差を論じ、金銭稼ぎも同じパターンだと主張。子供時代の「Daddy Model」（富は親から流れてくる固定量）・歴史的に不名誉な富の起源・所得格差が社会を損なう懸念の3理由を反駁し、現代民主主義では所得変動は健康の証だと結論。富は分配されるものではなく創造されるもの、というコアの移動は2023年「Superlinear Returns」の直接の祖先。既にReferencesリストにrawファイルは存在したが本文言及がなかった。Recent Themes表に2004行追加、Sources一覧に追加、frontmatter sourcesにraw/articles/paulgraham.com--gap-html--e5deadf2.md追加、updated: 2026-08-10。",
+      "candidate_wiki_path": "entities/paulgraham-com.md",
+      "body_excerpt": "# Mind the Gap\nSource: http://www.paulgraham.com/gap.html\nMay 2004\nWhen people care enough about something to do it well, those who\ndo it best tend to be far better than everyone else.  There's a\nhuge gap between Leonardo and second-rate contemporaries like\nBorgognone.  You see the same gap between "
+    },
+    {
+      "item_id": "raw-backlog-openclaw-workshop",
+      "source": "raw_backlog",
+      "source_name": "YouTube / Vanishing Gradients",
+      "title": "Building Your Own OpenClaw from Scratch — Workshop (Ivan Leo)",
+      "url": "https://www.youtube.com/watch?v=dDQ4rKXeHRw",
+      "raw_path": "wiki/raw/articles/2026-02-28_youtube_openclaw-from-scratch-workshop.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 完全にカバー済み。本rawファイル（およびtranscripts版）はentities/ivan-leo.mdのsources frontmatterに登録済みで、「Building Agents That Build Themselves」Workshop (Feb 2026)セクションに全文要約あり（AgentTool factoryパターン、importlib.reload()ホットリロード、on_model_response/on_tool_call/on_tool_result hooks、タイムスタンプMarkdownメモリ圧縮）。entities/hugo-bowne-anderson.mdのWorkshops & Educationセクションとentities/openclaw.mdにも言及。新規コンテンツなし。",
+      "candidate_wiki_path": "entities/ivan-leo.md",
+      "body_excerpt": "# Building Your Own OpenClaw from Scratch with Ivan Leo (Manus)\n96-minute live workshop walkthrough. GitHub companion: https://github.com/hugobowne/build-your-own-ai-assistant\n## Chapters\n00:00 Live Workshop Kickoff\n00:35 Discord Q&A And Announcements\n03:39 Workshop Roadmap Overview\n05:15 What Is An"
+    },
+    {
+      "item_id": "raw-backlog-ainews-gpt-image-2",
+      "source": "raw_backlog",
+      "source_name": "AINews / Latent Space",
+      "title": "[AINews] OpenAI launches GPT-Image-2",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194979573&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...zQzw",
+      "raw_path": "wiki/raw/articles/substack.com--app-link-post--86a3bf28.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 完全にカバー済み。2026-04-22の同速報（redirect-2 raw variant）からdelta-enrichment済み: GPT-Image-2（Image Arena 1512 T2I / 1513 single-edit / 1464 multi-edit、+242 Elo、Thinking/non-Thinking、Figma/Canva/Firefly/fal/Hermes Agent連携、画像生成=コーディングエージェントのフロントエンド化）→ concepts/gpt/chatgpt-images-2-0.md; Kimi K2.6/FlashKDA → entities/kimi; Deep Research Max → concepts/deep-research; ml-intern → concepts/ml-intern。本ファイルは同一速報のapp-link-post重複キャプチャ。2026-08-10 00:00バッチでも同一速報の重複を確認済み。",
+      "candidate_wiki_path": "concepts/gpt/chatgpt-images-2-0.md",
+      "body_excerpt": "# [AINews] OpenAI launches GPT-Image-2\nSource: https://substack.com/app-link/post?publication_id=1084089&post_id=194979573&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lk"
+    },
+    {
+      "item_id": "raw-backlog-bad-apple-minecraft",
+      "source": "raw_backlog",
+      "source_name": "purplesyringa.moe",
+      "title": "We built the best \"Bad Apple!!\" in Minecraft",
+      "url": "https://purplesyringa.moe/blog/./we-built-the-best-bad-apple-in-minecraft/",
+      "raw_path": "wiki/raw/articles/purplesyringa.moe--blog-we-built-the-best-bad-apple-in-minecraft--f6db9c11.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI。Minecraft内でデモシーン映像「Bad Apple!!」を20fps・512x384・グレースケールで再現した技術ブログ（2024-10-10、Alisa Sireneva）。コマンドブロック不使用、VulkanMod/Sodium最適化、ディザリング技術など高度なエンジニアリングだが、LLM/AIエージェント技術との関連なし。エンティティページなし、単発記事にページ作成は過剰。アーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# We built the best \"Bad Apple!!\" in Minecraft\nSource: https://purplesyringa.moe/blog/./we-built-the-best-bad-apple-in-minecraft/\nWe built the best \"Bad Apple!!\" in Minecraft\nOctober 10, 2024\nHacker News\nDemoscene is the art of pushing computers to perform tasks they weren’t designed to handle. One "
+    },
+    {
+      "item_id": "raw-backlog-sqlalchemy-ch4",
+      "source": "raw_backlog",
+      "source_name": "blog.miguelgrinberg.com",
+      "title": "SQLAlchemy 2 In Practice - Chapter 4 - Many-To-Many Relationships",
+      "url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-4---many-to-many-relationships",
+      "raw_path": "wiki/raw/articles/blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-4-many-to-many-relatio--d7e49b59.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI。Miguel Grinberg著書『SQLAlchemy 2 in Practice』第4章（多対多リレーションシップ、join table、association tableパターン）の書籍章公開。Python ORMのデータベース設計チュートリアルであり、LLM/AIエージェント技術との関連なし。entities/miguel-grinbergは存在するが（blog-ingest由来）、書籍章1件をAI wikiに追加する価値なし。アーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# SQLAlchemy 2 In Practice - Chapter 4 - Many-To-Many Relationships\nSource: https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-4---many-to-many-relationships\nThis is the fourth chapter of my\nSQLAlchemy 2 in Practice\nbook. If you'd like to support my work, I encourage you to buy "
+    }
+  ]
+}

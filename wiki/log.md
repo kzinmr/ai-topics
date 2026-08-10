@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-08-10] raw-backlog-ingest (18:00) | Reference 1 item + Skip 4 items
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-10 18:00, run 20260810T180015Z). Takes=0, References=1, Skips=4.
+- **Reference: [[entities/paulgraham-com]]** — Added "Mind the Gap" (May 2004) as the intellectual precursor to the documented Superlinear Returns thesis. New "Intellectual precursor" paragraph in section 1 (Superlinear Returns): the gap between best and rest is a feature of any skilled domain (Leonardo vs Borgognone, Raymond Chandler vs average detective novelist, top chess player vs club player); making money is no different. Graham's three reasons society treats income inequality differently (childhood "Daddy Model" of wealth as fixed stock distributed by authorities; historically disreputable origins of fortunes; worry that income variation harms society) — all rebutted; conclusion that in a modern democracy variation in income is a sign of health. The essay's core move (wealth is created, not distributed; outcome variation inherent to high-performance domains) is the direct ancestor of "Superlinear Returns" (2023). Also: Recent Themes table 2004 row, Sources list entry, frontmatter sources + raw/articles/paulgraham.com--gap-html--e5deadf2.md, updated: 2026-08-10. (Raw file was already in References list but absent from page body — content gap filled.)
+- Skip: OpenClaw from Scratch workshop (2026-02-28 YouTube, Ivan Leo × Hugo Bowne-Anderson) — already fully captured in [[entities/ivan-leo]] (this exact raw file in sources + complete "Building Agents That Build Themselves" workshop section: AgentTool factory, importlib.reload() hot reload, hooks, markdown memory compaction); also referenced in [[entities/hugo-bowne-anderson]] and [[entities/openclaw]].
+- Skip: [AINews] OpenAI launches GPT-Image-2 (2026-04-22 bulletin) — already delta-enriched into [[concepts/gpt/chatgpt-images-2-0]] (Arena Elo 1512/1513/1464, +242, Thinking/non-Thinking, downstream integrations), [[entities/kimi]] (K2.6/FlashKDA), [[concepts/deep-research]] (Deep Research Max), [[concepts/ml-intern]]. This raw file is a duplicate app-link-post capture of the same bulletin (redirect-2 variant already in sources; same bulletin confirmed duplicate in 00:00 batch).
+- Skip: purplesyringa.moe "We built the best Bad Apple!! in Minecraft" (2024-10-10) — non-AI demoscene engineering (20fps, 512x384 grayscale, no command blocks). No entity page, no AI relevance.
+- Skip: blog.miguelgrinberg.com "SQLAlchemy 2 In Practice - Chapter 4 - Many-To-Many Relationships" — non-AI Python ORM book chapter (join table / association table pattern). [[entities/miguel-grinberg]] exists (blog-ingest) but a single ORM book chapter adds no AI-wiki value.
+- Archive: wiki/raw/archived/triage/raw_backlog/2026-08-10_20260810T180015Z.json (5 candidates archived: 1 ref + 4 skip; total_archive_urls 2460).
+
+# Wiki Log
+
 ## [2026-08-10] watchdog | Auto-fix: index dedup, modelcrafting registration, header counts, frontmatter tags
 
 ### Changes

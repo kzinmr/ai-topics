@@ -2,7 +2,7 @@
 title: Paul Graham
 type: entity
 created: 2026-04-09
-updated: 2026-08-09
+updated: 2026-08-10
 tags:
   - person
   - blogger
@@ -16,6 +16,7 @@ sources:
   - http://www.paulgraham.com/popular.html
   - raw/articles/paulgraham.com--popular-html--c633a6dc.md
   - raw/articles/paulgraham.com--icad-html--2f0356db.md
+  - raw/articles/paulgraham.com--gap-html--e5deadf2.md
 ---
 
 # Paul Graham
@@ -47,6 +48,8 @@ Two mechanisms drive superlinear returns:
 - **Thresholds (Step Functions):** Winner-take-all dynamics where crossing a specific bar yields disproportionate rewards. Sports, proving theorems, market dominance.
 
 **Implication:** Inequality is inherent in superlinear domains. The steeper the return curve, the greater the variation in outcomes. This is not a moral judgment — it's a mathematical reality.
+
+**Intellectual precursor:** "Mind the Gap" (May 2004) was Graham's early formulation of this thesis. Written two decades before "Superlinear Returns," it argued that the gap between the best and the rest is a feature of *any* skilled domain — Leonardo vs. Borgognone, Raymond Chandler vs. the average detective novelist, a top chess player vs. a club player — and that making money is no different. Graham identified three reasons society treats income inequality differently (the childhood "Daddy Model" of wealth as a fixed stock distributed by authorities; the historically disreputable origins of fortunes; and the worry that income variation harms society), rebutted all three, and concluded that in a modern democracy variation in income is actually a sign of health. The essay's core move — treating wealth as something *created* rather than distributed, and outcome variation as inherent to high-performance domains — is the direct ancestor of the superlinear-returns framework above.
 
 ### 2. How to Do Great Work: The Recipe
 
@@ -183,6 +186,7 @@ The essay catalogs **nine ideas** Lisp embodied, adopted piecemeal by the mainst
 | Period | Focus | Key Essays |
 |--------|-------|------------|
 | **2001** | Programming language adoption, expert influence | "Being Popular" |
+| **2004** | Wealth creation, income variation, the gap between best and rest | "Mind the Gap" |
 | **2023** | Superlinear returns, compounding dynamics | "Superlinear Returns" |
 | **2024** | How to do great work, founder management, essay theory | "How to Do Great Work", "Founder Mode", "The Best Essay" |
 | **2025** | Writing philosophy, essay audience theory | "Good Writing", "Fierce Nerds", "The Shape of the Essay Field" |
@@ -244,6 +248,7 @@ Graham's recent work reflects the transition from a **software-eats-the-world** 
 
 - [paulgraham.com/essays.html](https://paulgraham.com/essays.html)
 - [paulgraham.com/ideas.html](http://www.paulgraham.com/ideas.html) — "Ideas for Startups" (Oct 2005)
+- "Mind the Gap" (May 2004)
 - "Superlinear Returns" (October 2023)
 - "How to Do Great Work" (August 2023)
 - "Founder Mode" (September 2024)

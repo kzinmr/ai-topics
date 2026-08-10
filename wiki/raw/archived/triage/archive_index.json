@@ -8,6 +8,7 @@
     "http://antirez.com/news/171",
     "http://karpathy.github.io/2026/02/12/microgpt/",
     "http://workos.com/auth-md?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026",
+    "http://www.paulgraham.com/gap.html",
     "http://www.paulgraham.com/guidetoinvestors.html",
     "http://www.paulgraham.com/icad.html",
     "http://www.paulgraham.com/marginal.html",
@@ -124,6 +125,7 @@
     "https://blog.llvm.org/posts/2025-03-11-flang-new/",
     "https://blog.miguelgrinberg.com/post/i-am-not-a-reverse-centaur",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-3---one-to-many-relationships",
+    "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-4---many-to-many-relationships",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-5---advanced-many-to-many-relationships",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-8-sqlalchemy-and-the-web",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---solutions-to-the-exercises",
@@ -1299,6 +1301,7 @@
     "https://purplesyringa.moe/blog/./impressions-of-teal/",
     "https://purplesyringa.moe/blog/./optimal-parse-with-phminposuw/",
     "https://purplesyringa.moe/blog/./thoughts-on-simd-in-pure-python/",
+    "https://purplesyringa.moe/blog/./we-built-the-best-bad-apple-in-minecraft/",
     "https://pxlnv.com/blog/metaverse-fever-dream/",
     "https://qwen.ai/blog?id=qwen3.8",
     "https://qwenlm.github.io/blog/qwen3.8-max/",
@@ -1695,6 +1698,7 @@
     "https://substack.com/app-link/post?...submitLike=true",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2...XajU",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...XajU",
+    "https://substack.com/app-link/post?publication_id=1084089&post_id=194979573&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...zQzw",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=199994886&utm_source=post-email-title",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=200249307",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=200432443&utm_source=post-email-title",
@@ -2398,6 +2402,7 @@
     "https://www.youtube.com/watch?v=WkBPX-oDMnA",
     "https://www.youtube.com/watch?v=Yk87oUPVaxU",
     "https://www.youtube.com/watch?v=ZyIoTOAbRfs",
+    "https://www.youtube.com/watch?v=dDQ4rKXeHRw",
     "https://www.youtube.com/watch?v=d_Ftrl3vfV0",
     "https://www.youtube.com/watch?v=hF8swzNR1-o",
     "https://www.youtube.com/watch?v=hacEQHHhu2Q",
@@ -2456,5 +2461,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-10T10:40:59.652313+00:00"
+  "updated": "2026-08-10T18:09:13.185741+00:00"
 }
