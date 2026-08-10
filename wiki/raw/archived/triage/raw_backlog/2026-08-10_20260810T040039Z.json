@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-10T04:17:46.653588+00:00",
+  "triage_run_id": "20260810T040039Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest (04:00) バッチ: raw_backlog_collect.py --sort ai-hint --limit 5 (20260810T040039Z)。Takes=0, References=2, Skips=3。参照追記2件: (1) danluu.com「Latency mitigation strategies (by John Carmack)」— entities/dan-luu.md Notable Essays (Non-AI)に追加（Carmack消失記事のアーカイブ、VR motion-to-photons 20ms目標）; (2) harvey.ai「The Practitioner's Guide to Legal Operations Optimization」— entities/harvey.mdにLegal Operations Optimization Guideセクション追加（6レバー、4段階成熟度モデル、CLOC 2026データ、ROI 3分類）。スキップ3件: v8.dev Sea of Nodes（非AIコンパイラ記事）、michael.stapelberg.ch zsh historyバグ（非AI・既アーカイブskip済み）、lukhuang async RL（entities/luke-j-huang + concepts/post-training/asynchronous-rlで完全カバー済み）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-danluu-latency",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Latency mitigation strategies (by John Carmack)",
+      "url": "https://danluu.com/latency-mitigation/",
+      "raw_path": "wiki/raw/articles/danluu.com--latency-mitigation--06d7b2ea.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 非AIだがDan LuuのNotable Essays (Non-AI)コレクションに追加。Carmackの消失記事アーカイブで、motion-to-photons 20ms目標、センサ/ディスプレイ/ホスト処理のレイテンシ内訳、高速度カメラ計測、GPUバッファリング防止戦略を体系的に記述。entities/dan-luu.mdのNotable Essays (Non-AI)セクションに追記済み（sources frontmatterにも追加）。",
+      "candidate_wiki_path": "entities/dan-luu.md",
+      "body_excerpt": "# Latency mitigation strategies (by John Carmack)\nSource: https://danluu.com/latency-mitigation/\nthis is an archive of an old article by John Carmack which seems to have disappeared off of the internet\nAbstract\nVirtual reality (VR) is one of the most demanding human-in-the-loop applications from a l"
+    },
+    {
+      "item_id": "raw-backlog-harvey-legalops-opt",
+      "source": "raw_backlog",
+      "source_name": "Harvey Blog",
+      "title": "The Practitioner's Guide to Legal Operations Optimization",
+      "url": "https://www.harvey.ai/blog/legal-operations-optimization",
+      "raw_path": "wiki/raw/articles/2026-06-19_harvey_legal-operations-optimization.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/harvey.mdのLegal Operationsセクションを拡張。既存のManagement Guideとは別のOptimization Guide（2026-06-18）で、6レバー、30-60日診断＋6指標、4段階成熟度モデル（Reactive→Standardized→Integrated→AI-Native）、CLOC 2026データ（法規制コンプライアンス需要+63%、サイバーセキュリティ+58%、外部カウンセル支出58%→37%）、ROI 3分類（ハードドル/キャパシティ回収/リスク調整価値、$2.25M事例）、12ヶ月プランを追記。harvey.mdに新サブセクション追加済み。",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": "# The Practitioner's Guide to Legal Operations Optimization\n**Source**: [https://www.harvey.ai/blog/legal-operations-optimization](https://www.harvey.ai/blog/legal-operations-optimization)\nHarvey Agents execute legal work end-to-end\nLearn more\nHarvey Agents execute legal work end-to-end\nLearn more\nH"
+    },
+    {
+      "item_id": "raw-backlog-v8-sea-of-nodes",
+      "source": "raw_backlog",
+      "source_name": "v8.dev",
+      "title": "Land ahoy: leaving the Sea of Nodes",
+      "url": "https://v8.dev/blog/leaving-the-sea-of-nodes",
+      "raw_path": "wiki/raw/articles/v8.dev--blog-leaving-the-sea-of-nodes--2ca9374f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI。V8 TurbofanがSea of Nodes IRからTurboshaft（CFGベースIR）へ移行した理由を解説するJavaScriptコンパイラ内部記事。JSエンジンのJITコンパイラ設計でありLLM/AIエージェント技術との関連なし。v8.devのエンティティページも存在せず、単発のコンパイラ記事にページ作成は過剰。アーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Land ahoy: leaving the Sea of Nodes\nSource: https://v8.dev/blog/leaving-the-sea-of-nodes\nV8’s end-tier optimizing compiler, Turbofan, is famously one of the few large-scale production compilers to use\nSea of Nodes\n(SoN). However, since almost 3 years ago, we’ve started to get rid of Sea of Nodes a"
+    }
+  ]
+}

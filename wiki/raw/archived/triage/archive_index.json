@@ -191,6 +191,7 @@
     "https://danluu.com/deconstruct-files/",
     "https://danluu.com/google-sre-book/",
     "https://danluu.com/julialang/",
+    "https://danluu.com/latency-mitigation/",
     "https://danluu.com/nothing-works/",
     "https://danluu.com/startup-options/",
     "https://daringfireball.net/2018/12/electron_and_the_decline_of_native_apps",
@@ -1903,6 +1904,7 @@
     "https://tyler.io/2026/07/05/escape-from-squircle-jail/",
     "https://underpassapp.com/StopTheScript/",
     "https://unsloth.ai/blog/kimi-k3",
+    "https://v8.dev/blog/leaving-the-sea-of-nodes",
     "https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises",
     "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
     "https://wafer.ai/blog/kimi-k3-amd-mi355x",
@@ -2085,6 +2087,7 @@
     "https://www.harvey.ai/blog/how-to-use-ai-for-legal-discovery",
     "https://www.harvey.ai/blog/legal-agent-benchmark-in-house-contracting",
     "https://www.harvey.ai/blog/legal-ai-vs-traditional-legal-research",
+    "https://www.harvey.ai/blog/legal-operations-optimization",
     "https://www.harvey.ai/blog/legal-workflow-automation",
     "https://www.harvey.ai/blog/m-and-a-due-diligence-checklist",
     "https://www.harvey.ai/blog/nijanthan-hariharan",
@@ -2430,5 +2433,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-09T18:16:16.871180+00:00"
+  "updated": "2026-08-10T04:17:46.654139+00:00"
 }

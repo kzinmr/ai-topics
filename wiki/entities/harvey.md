@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-08
+updated: 2026-08-10
 tags:
   - security
   - company
@@ -26,6 +26,7 @@ sources:
   - raw/articles/2026-07-28_harvey_scaling-document-processing-across-harvey.md
   - raw/articles/2026-07-31_harvey_ai-trademark-search.md
   - raw/articles/2026-06-19_harvey_legal-operations-management.md
+  - raw/articles/2026-06-19_harvey_legal-operations-optimization.md
   - raw/articles/2026-08-01_harvey_legal-ai-vs-traditional-legal-research.md
   - raw/articles/2026-08-05_harvey_ai-tax-research.md
   - raw/articles/2026-08-05_harvey_playbook-builder-in-harvey.md
@@ -268,6 +269,57 @@ The guide argues **AI governance is the new responsibility that didn't exist fiv
 The guide explicitly contrasts **general-purpose AI tools** (require lawyer to do most framing/verification) with **platforms built specifically for legal work** (ground outputs in cited sources lawyers can verify) — positioning Harvey in the latter category. Scale signal cited: 142,000+ legal professionals, 1,500+ customers in 60+ countries, 60%+ of AmLaw 100.
 
 Source: raw/articles/2026-06-19_harvey_legal-operations-management.md
+
+## Legal Operations Optimization Guide (June 2026)
+
+Harvey published a companion guide (Jun 18, 2026) on **legal operations optimization** — positioned as the continuous-improvement layer *above* legal ops management: management runs the function day-to-day; optimization measures how the function performs and improves it on a deliberate cadence. Framed around the structural shift in which legal departments must "absorb the demand" — CLOC's 2026 State of the Industry Report (Mar 2026, built on the 2025 Harbor Law Department Survey) found regulatory compliance demand up **+63%** and cybersecurity demand up **+58%** YoY while budget growth flattened and headcount plans tightened.
+
+### Six Levers of Optimization
+
+Most departments work on three levers and leave the other three alone; the asymmetry of returns sits in the ones left alone:
+
+1. **Standardized intake** — single front door with mandatory fields (matter type, business impact, deadline, jurisdiction) and automated triage routing; cheapest and most often skipped lever
+2. **Templates, playbooks, clause libraries** — version-controlled, centrally stored, with fallback positions for top-10 negotiation points
+3. **Matter and spend visibility** — single system of record + eBilling layer enforcing guidelines (precondition for every honest cost conversation)
+4. **Outside counsel discipline** — panel rationalization, rate negotiation, AFAs on predictable work, quarterly performance reviews; CLOC 2026 data shows outside counsel spend expectations down from 58% to 37% in a single year
+5. **AI and workflow automation** — targeted deployment on repeatable tasks: intake triage, first-pass contract review against playbook, invoice anomaly detection, regulatory document summarization
+6. **Data and reporting cadence** — monthly dashboard with the same six baseline metrics (median contract cycle time, average cost per matter type, legal request volume/month, outside counsel spend %, % matters under AFAs, invoice rejection rate)
+
+### Diagnostic Before Playbook
+
+The first 30-60 days are a learning phase: matter intake audit, top-10 firms/matters spend audit with AFA penetration, cycle-time sampling on the three most common workflows (NDA review, commercial negotiation, litigation hold), and structured stakeholder interviews. Deliverable: a one-page diagnostic summary the GC can hand to the CFO. Swimlane mapping of sampled workflows typically reveals 3-5 idle hand-offs per workflow.
+
+### Four-Stage Maturity Model
+
+| Stage | Characteristics | Next Move |
+|-------|-----------------|-----------|
+| 1. Reactive | No intake standardization, fragmented tooling, monthly/quarterly spend visibility | Standardized intake first — ahead of any software or AI pilot |
+| 2. Standardized | Single intake, basic matter mgmt, eBilling; quarterly reporting | Integration ahead of automation (share a data layer before automating) |
+| 3. Integrated | CLM + eBilling + matter mgmt + doc mgmt sharing data; real-time dashboards; rationalized panel | First AI use case, chosen carefully: one process, one metric, one quarter |
+| 4. AI-Native | AI for drafting/review/intake/spend audit with human verification; continuous optimization with quarterly retrospectives | Governance and measurement — keeping AI accurate, accountable, aligned with risk tolerance |
+
+### AI as the Operating Model
+
+The guide's distinctive claim: **AI changes which tasks exist rather than sitting on top of existing ones** — routine NDA review, invoice line-item audit, regulatory summarization, and request triage stop being human time and become "AI outputs that humans verify." Measurable-gain workflows: intake triage/routing, NDA and routine contract self-service, first-pass review of third-party paper against a position library, invoice anomaly detection, regulatory document summarization, matter-specific drafting from the matter's own documents. Governance discipline: privilege handling on every input/output, training-data isolation across client matters, citation grounding, human-in-the-loop on anything leaving the building.
+
+### ROI Economics (Three Non-Stackable Categories)
+
+1. **Hard dollar savings** — rate reductions, invoice write-downs, AFA arbitrage (mechanical, CFO-verifiable)
+2. **Capacity reclamation** — hours returned via automation/self-service; report as *growth absorbed*, not headcount savings
+3. **Risk-adjusted value** — faster contract cycles accelerating revenue recognition, fewer compliance incidents
+
+Worked example: 200-person department with $20M outside counsel spend → 5% rate reduction = $1M + 15% invoice line-item reduction = $750K + AFAs on top-3 repeatable matters = $500K → **$2.25M identified value before any technology spend**. Rule: never stack savings across categories; report the dominant return per initiative.
+
+### 12-Month Plan (Stage 1/2 starting point)
+
+- **Months 1-3**: run diagnostic, stand up intake form, publish billing guidelines, define five baseline KPIs
+- **Months 3-6**: rationalize matter mgmt/eBilling, centralize templates/playbooks, begin quarterly outside counsel reviews
+- **Months 6-9**: automate judgment-free work, choose ONE AI pilot (one process, one metric, one quarter)
+- **Months 9-12**: first formal retrospective with finance, kill initiatives that didn't move baseline KPIs, set next year's targets in October
+
+Honest limits: AI doesn't replace legal judgment, doesn't handle novel fact patterns, doesn't eliminate specialized counsel — "push AI hardest into volume work and leave judgment work alone."
+
+Source: raw/articles/2026-06-19_harvey_legal-operations-optimization.md
 
 ## Legal Discovery & Defensible AI Protocols (June 2026)
 
