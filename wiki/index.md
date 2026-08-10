@@ -175,7 +175,7 @@
 - [[entities/content-engine]] — Content Engine
 - [[entities/contextarena]] — Context Arena
 - [[entities/conviction]] — Conviction — AI-focused VC firm founded by Sarah Guo; portfolio includes Baseten, Mistral, Cognition, Harvey, HeyGen; No Priors podcast, Embed grant program (June 24)
-- [[entities/copilot-cli]] — GitHub Copilot CLI
+- [[entities/copilot-cli]] — GitHub Copilot CLI — terminal agentic coding; sub-agents, MCP, BYOK/local models, sandbox, LSP; v1.0.79 (Aug 2026); token-based billing shift
 - [[entities/corbett]] — Corbett (Kyle Corbitt)
 - [[entities/core-auto]] — Core Auto
 - [[entities/coreweave]] — CoreWeave
@@ -242,7 +242,7 @@
 - [[entities/drew-breunig--timeline]] — Drew Breunig — Timeline & Career History
 - [[entities/drew-breunig--writings]] — Drew Breunig  Writings
 - [[entities/drmaciver]] — David R. MacIver (DRMacIver)
-- [[entities/droid]] — Droid (Factory)
+- [[entities/droid]] — Droid (Factory) — enterprise agent-native dev platform; Software Factory vision, Router, Shield 2.0, Deferred Context Engine (Aug 2026)
 - [[entities/dsprrr]] — dsprrr
 - [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with "The next big breakthrough" article — RLVR generalization limits, OPSD/dreaming as 4th scaling axis, computer use grindability, 35M× KV cache vs weight density gap (June 27)
 - [[entities/dylan-patel]] — Dylan Patel

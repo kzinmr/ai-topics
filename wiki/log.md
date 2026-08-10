@@ -3,6 +3,12 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-10] skeleton-enrich-daily | L2→L3: GitHub Copilot CLI + Droid (Factory) — coding agent harness deep-dive
+
+- **Enriched: [[entities/copilot-cli]]** (114→180 lines, L2→L3). Research: GitHub repo (11,076★, v1.0.79 Aug 10 2026, near-daily releases), README, changelog v1.0.77–1.0.79, Simon Willison + Where's Your Ed At coverage of the Copilot billing shift. Added: GitHub stats + expanded install methods (brew/winget/npm), Development History section (BYOK 2026-04-07, sandbox maturation, v1.0.79 worktree/prompt-pinning/sessions sidebar/tgrep/kimi-k3), Sandbox & Safety section (per-path enforcement, MDM policy floors, auth isolation, allow-auto-only), LSP Server Support section (~/.copilot/lsp-config.json + .github/lsp.json), Billing & Pricing Context (token-based billing transition Apr 2026, Opus 4.7 restricted to Pro+, premium-request quota), Related section. Frontmatter: +4 sources (README, changelog, 2 raw billing articles), status L3, updated 2026-08-10.
+- **Enriched: [[entities/droid]]** (131→231 lines, L2→L3). Research: factory.ai homepage/news, docs.factory.ai, Jina Reader extraction of Software Factory 2.0 / Router / Droid Shield 2.0 / Deferred Context Engine articles, GitHub API (repo is placeholder, 1★). Added: Software Factory Vision (Factory 2.0, Jun 15 2026 — model independence / sovereign intelligence / continual learning pillars, NVIDIA/EY/Adobe/PANW/Adyen/Blackstone/Wipro/Comarch deployments), Factory Router (20–25% token savings, 99% Opus 4.7 pass rate at 20% lower cost on Terminal-Bench 2), Droid Shield 2.0 (risk/downgrade gates, Qwen 3.6 35B A3B LoRA adapters, recall 0.698 vs GPT-5.5 0.588 at FPR≤0.05, open-weight HF releases), Deferred Context Engine (15.1% avg / 39.4% p90 / 50.8% at 100+ tools input-token reduction), Company Timeline (2023 $5M Sequoia+Lux seed → Aug 2026 Open Weights letter, incl. Lumetric acquisition, Droid Computers, AutoWiki, Incident Response, Sydney office, Marcello Gallo CRO), Related + Sources sections. Frontmatter: +7 raw article sources, status L3, updated 2026-08-10.
+- index.md: updated descriptions for copilot-cli + droid entries. No new pages created; header counts unchanged.
+
 ## [2026-08-10] dreaming-wiki-ingest | Confirmation — upstream dreaming-group already committed saturation pass (Takes=0)
 
 - Pre-run script failed to parse dreaming-group JSON (render failure), but triage_latest.json (18:16 UTC) was valid: Takes=0, References=0, Skips=10.
