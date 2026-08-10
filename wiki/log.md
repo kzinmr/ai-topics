@@ -1,5 +1,23 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-08-10] dreaming-wiki-ingest | Confirmation — upstream dreaming-group already committed saturation pass (Takes=0)
+
+- Pre-run script failed to parse dreaming-group JSON (render failure), but triage_latest.json (18:16 UTC) was valid: Takes=0, References=0, Skips=10.
+- Upstream dreaming-group commit a9606145 (18:17:34 UTC) already committed the log.md entry + archive (wiki/raw/archived/triage/dreaming/2026-08-10_20260810T181019Z.json, 10 candidates: 8 newly archived, 2 dedup; total_archive_urls 2466).
+- Independent verification of skip decisions against wiki content confirmed full coverage:
+  - seangoedecke-com.md L106 "Disagreement as Sycophancy" — blog-wiki-ingest took it
+  - cory-doctorow.md L316 "Bureaucratic AI Arms-Race" — blog-wiki-ingest took it
+  - muse-glimmer.md exists — active-crawl created it
+  - jeff-dean.md L35 "New Venture: Discovery Loop" — covered
+  - enterprise-ai-cost-management.md L80 "Tokenpocalypse" — covered
+  - gary-marcus.md L326 "Don't Count Google Out" — blog-wiki-ingest took it
+- Takes=0 is the post-enrichment state; no re-enrichment performed.
+- No archive re-run (upstream archive already committed).
+
+
 ## [2026-08-10] raw-backlog-ingest (18:00) | Reference 1 item + Skip 4 items
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-10 18:00, run 20260810T180015Z). Takes=0, References=1, Skips=4.
@@ -10,7 +28,6 @@
 - Skip: blog.miguelgrinberg.com "SQLAlchemy 2 In Practice - Chapter 4 - Many-To-Many Relationships" — non-AI Python ORM book chapter (join table / association table pattern). [[entities/miguel-grinberg]] exists (blog-ingest) but a single ORM book chapter adds no AI-wiki value.
 - Archive: wiki/raw/archived/triage/raw_backlog/2026-08-10_20260810T180015Z.json (5 candidates archived: 1 ref + 4 skip; total_archive_urls 2460).
 
-# Wiki Log
 
 ## [2026-08-10] watchdog | Auto-fix: index dedup, modelcrafting registration, header counts, frontmatter tags
 
@@ -76,8 +93,6 @@
 - **Verify**: `tag_audit.py` re-run → 0 tags NOT in taxonomy. Pre-commit tag validator passes.
 
 ---
-
-_Log of all wiki changes. Newest entries at top._
 
 
 ## [2026-08-10] dreaming | Saturation pass - Takes=0, 0 references, 10 skips
@@ -166,7 +181,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Enriched: [[entities/fireworks-ai]]** — Added "Voyage AI (MongoDB) Partnership — Native Embeddings & Reranking (August 2026)" section: first/only dedicated inference platform partner for Voyage AI by MongoDB (Aug 5, 2026); Voyage 4 family + voyage-multimodal-3.5 + rerank-2.5 natively hosted; benchmark table (voyage-4-large +8.20% vs Cohere Embed v4, +14.05% vs OpenAI v3 Large); consolidation tradeoff argument (separate vendor vs capped retrieval); per-workload model tuning; use cases incl. agentic retrieval with rerank-2.5 instruction-following. Cross-links [[concepts/rag-systems]] + [[entities/voyage-ai]]. Added raw/articles/2026-08-08_fireworks-ai_voyage-ai-models-now-on-fireworks.md to sources, updated: 2026-08-09.
 - **Enriched: [[entities/voyage-ai]]** (dual-enrichment) — Added "Fireworks Partnership — Native Inference Platform (August 2026)" section: Fireworks as first dedicated inference platform partner; embed→retrieve→rerank→generate on one platform; benchmark position; Related updated with [[entities/fireworks-ai]]. Added same raw article to sources, updated: 2026-08-09.
 - Archive: upstream already committed 2026-08-09_20260809T180932Z.json (9 candidates, 2 newly archived). No archive re-run needed.
-
 
 
 ## [2026-08-09] dreaming | Saturation pass — Takes=0, 1 reference, 8 skips
@@ -766,7 +780,6 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 ---
 
 
-
 ## [2026-08-05] watchdog | auto-fix log header burial + Concepts header count
 
 - **Log header burial**: `# Wiki Log` was buried at line 15 by an orphaned Active Crawl entry prepended before it. Restored header to line 1 via `fix_log_header_burial.py` (272 entries preserved, 0 pipe corruption).
@@ -881,7 +894,6 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Archive**: skipped re-run — upstream already committed archive (cf0643f9, 12 new archived, total 2,272 URLs).
 
 
-
 ---
 ## [2026-08-04] dreaming | Pattern E saturation — 1 reference, 0 takes
 
@@ -970,7 +982,6 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - **[[entities/dynomight-net]]** — Added "Evolution as Outer Optimizer: Alignment Lessons (Aug 2026)": outer/inner optimizer framing, subgoal alignment (Kenrick et al. 2010 7 subgoals, avg 8.2/10), decomposition failure as reward hacking, AI cultural evolution risk.
 - **[[entities/anthropic]]** — Added "Naming Criticism: Mythos vs Logos (Om Malik, Jun 2026)": mythos-vs-logos epistemology, manufactured-credibility reading of White House/Pope visits, Augustus/Aeneid + Silicon Valley myth parallels.
 - Archive: archive_triage.py blog --keep-reference run.
-
 
 
 ---
@@ -1515,7 +1526,6 @@ Batch 20260731T180057Z (raw_backlog_collect.py --sort ai-hint --limit 5). 5 arti
 - Cross-links: [[concepts/glut-of-circuits.md]] — added [[entities/niplav]] to related frontmatter + thesis wikilink, fixed broken concepts/reward-hacking → concepts/evaluation/reward-hacking; [[concepts/vibe-ceo.md]] and [[concepts/harness-engineering/agentic-workflows/vibe-coding.md]] — added [[entities/levelsio]] backlinks. Index.md descriptions updated for both entities.
 
 
-
 ---
 ## [2026-07-31] wiki-health-fix | health scan clean; benchmark pages updated field
 
@@ -1878,7 +1888,6 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 
 - Enriched [[entities/vicki-boykis.md]] — Upgraded from L2 (47 lines) to comprehensive (117 lines). Added: professional background (Mozilla.ai, Duo, Tumblr, startup), Viberary project, Embeddings paper (DOI), Normconf conference organiser, keynote history (AMLC 2026, Pycon Italia 2024, PyData 2023), notable blog post timeline, writing style analysis, expanded cross-references. Status: L3.
 - Enriched [[entities/fastmcp.md]] — Upgraded from L2 (64 lines) to comprehensive (97 lines). Added: GitHub stats (26.9K stars, 2.2K forks), three pillars architecture (Servers, Apps, Clients), adoption metrics (1M downloads/day, 70% of MCP servers), Prefect Horizon enterprise gateway, Quick Start code example, installation guide, documentation links. Status: enriched.
-
 
 
 | 2026-07-28 | dreaming-wiki-ingest | Enriched: entities/fireworks-ai.md (+Fireworks Nexus enterprise cost optimization platform: FireConnect/FireRouter/Faros/Arize validations; +K3 LoRA Training on Fireworks: serverless LoRA, $65/20-step RL, Countdown/FrozenLake). Enriched: concepts/kimi-k3.md (+LoRA Training on Fireworks subsection: Multi-LoRA serving, KV-cache awareness, dense/sparse reward design). Enriched: entities/cohere.md (+North Automations: $550B market opp, plain-language workflow, per-step model routing, Plan mode, governance analytics). Enriched: entities/harvey.md (+Document Processing Infrastructure: Job Framework rebuild, pipeline splitting, UDF format p50 -19%, Vector DB live migration, Arrow IPC, backpressure architecture). Archive: 4 candidates triaged, 3 newly archived (total: 2,018 URLs). Source: dreaming-group output 2026-07-28T18:14:15. |
@@ -3375,7 +3384,6 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 ---
 
 
-
 ## [2026-06-30 11:15] — Active crawl — 4 new pages + 1 enriched
 
 **Discovery:** Parallel subagent trend scan (HN Algolia + X/Twitter + wiki gap analysis)
@@ -3477,7 +3485,6 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 **Skipped/reference (pipeline saturation)**: RLVR Generalization (Dwarkesh: 222-line entity covers fully), GPT-5.6/Mythos (events + concepts pages), AI Bubble (GM 310-line Fizzle section, Zitron 528-line Cargo Culture), DeepSpec/DSpark (active-crawl created concept), Prompt Injection (concept page has 80+ line Role Confusion section), jax-js (below threshold), AI Liability (110-line concept page), Non-AI batch (17 articles).
 
 **Summary**: 9 themes / 27 articles from fallback file. 1 genuine gap identified and enriched.
-
 
 
 ---
