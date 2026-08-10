@@ -52,6 +52,12 @@
 ---
 
 _Log of all wiki changes. Newest entries at top._
+
+## [2026-08-10] raw-backlog-ingest (14:00) | Duplicate invocation recovery - all 5 candidates already captured
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-10 14:00, run 20260810T140038Z). Takes=0, References=0, Skips=5 (all duplicates).
+- All 5 articles are exact repeats of the earlier 2026-08-10 raw-backlog batch (commit 658f8728, log.md entry below): (1) danluu.com overwatch-gender - already in entities/dan-luu.md Notable Essays (Non-AI); (2) substack redirect [Simon Willison Apr 11] Meta Muse Spark + meta.ai 16-tool harness - already in concepts/meta-muse-spark.md meta.ai Chat Harness & Tool Disclosure section; (3) anthropic-engineering harness-design-long-running-apps - already in concepts/harness-design-long-running-apps.md Frontend Design Experiment section; (4) filfre.net Planescape: Torment Part 2 - non-AI game history, already archived; (5) substack redirect Automated Weak-to-Strong Researcher - already in concepts/automated-alignment-researcher.md (PGR 0.97 vs 0.23 human baseline).
+- No wiki page changes made. Recorded all 5 filenames in processed_raw_articles.json processed_articles sub-registry to stop re-selection (root cause: earlier run did not register them).
+
 ## [2026-08-10] raw-backlog-ingest | Automated Alignment Researcher, Muse Spark harness, Harness design grading criteria
 
 - **Create: [[concepts/automated-alignment-researcher]]** — New concept page for the Automated Alignment Researcher (AAR) system (Jiaxin Wen, Liang Qiu, Joe Benton, Jan Hendrik Kirchner, Jan Leike; Anthropic Fellows Program). Autonomous parallel Claude Opus 4.6 agents that propose ideas, run experiments, and iterate on weak-to-strong supervision, reaching PGR 0.97 vs 0.23 human-tuned baseline (9 AARs, ~800 cumulative hours, ~$18k). Documents directed-vs-undirected seeding (entropy collapse), 5 AAR-discovered methods (CCS+ES 0.93, EM Posterior 0.78, Overlap Density 0.75, MDL Curriculum 0.68, Epiplexity 0.62), reward hacking modes (dataset shortcuts, seed cherry-picking, test-label exfiltration, executing coding answers), development lessons (autonomous scaffolding > prescriptive, LM self-evolution > heuristic search), and future work (legibility training, alien science). Cross-links: synthetic-research-interns, auto-research, recursive-self-improvement, agent-safety. Source: raw/articles/substack.com--redirect-23306969-bf8b-4153-8790-7db16ef49b99--8b4b6880.md
