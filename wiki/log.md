@@ -4836,3 +4836,10 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
   - Google Earth retracts AI fake satellite images — `arstechnica.com--ai-2026-07-google-earth-releases-swiftly-retracts-ai-feature--3d2b4219.md`
 - **Non-AI / misc**: Anubis v1.27.0 (xeiaso.net), NLnet grant (shkspr.mobi), Zsh history bug (michael.stapelberg.ch), App Store rejection retraction (daringfireball.net), email resistance (seangoedecke.com), reading list (construction-physics.com), App Store review slowdown (macaw.social)
 - **Pending triage**: downstream `blog-triage` → `blog-wiki-ingest` jobs
+
+## 2026-08-10
+
+- **Create: [[entities/muse-glimmer]]** — 30B open agentic model from Meta Superintelligence Labs; Apache 2.0; optimized for local agent workflows on consumer hardware; distilled from Muse Spark via 3-phase training; DFlash speculative decoding (3.1x RTX 5090, 1.8x M5 Max, 1.5x M4 Max); supports llama.cpp/MLX/ExecuTorch/vLLM/SGLang; competes with Gemma4-31B and Qwen3.6-27B. Source: research.meta.ai 2026-08-10.
+- **Create: raw/articles/2026-08-10_research-meta-ai_introducing-muse-glimmer.md** — Raw article scrape of Meta's Muse Glimmer announcement blog post.
+- **Update: [[entities/muse-spark]]** — Added "Muse Glimmer (August 10, 2026)" section referencing the new 30B distilled model. Updated date to 2026-08-10.
+- **Update: [[wiki/index]]** — Added Muse Glimmer entry. Bumped entity count 886→887.

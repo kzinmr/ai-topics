@@ -2,7 +2,7 @@
 title: Muse Spark
 type: entity
 created: 2026-04-09
-updated: 2026-08-09
+updated: 2026-08-10
 tags:
   - model
   - emerging
@@ -74,6 +74,10 @@ Meta's official announcement added implementation details for Muse Code (beta), 
 | `muse-spark-1.2-contributor` | $0.10/M | $0.20/M | Data sharing discount ("to improve our products") |
 
 The contributor tier is priced close to GPT-5.6 Luna ($0.20/$1.20) and Gemini 3.1 Flash-Lite ($0.25/$1.50).
+
+## Muse Glimmer (August 10, 2026)
+
+Meta released **[[entities/muse-glimmer|Muse Glimmer]]**, a 30B-parameter open agentic model distilled from Muse Spark, optimized for local agent workflows on consumer hardware. Released under Apache 2.0 with weights on HuggingFace. Uses 3-phase training (pre-training logit distillation → mid-training → post-training SFT+RL) and ships with DFlash speculative decoding for 3.1x speedup on RTX 5090.
 
 ## Capability Positioning
 
