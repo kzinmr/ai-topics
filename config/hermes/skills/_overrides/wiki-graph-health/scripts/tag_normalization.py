@@ -602,6 +602,12 @@ TAG_NORMALIZATION = {
     'longtermism': 'existential-risk',
     'wiki-maintenance': 'wiki',
     'graph-analysis': 'wiki',
+
+    # 2026-08-10 weekly audit: multi-use non-SCHEMA tags (2x+)
+    'wealth-distribution': 'wealth-concentration',
+    'roi': 'business-model',
+    'ai-cost': 'cost',
+    'token-billing': 'token-economics',
 }
 
 def extract_tags_from_frontmatter(front):

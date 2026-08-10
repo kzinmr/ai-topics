@@ -6,8 +6,8 @@ type: concept
 tags:
   - economics
   - token-economics
-  - roi
-  - ai-cost
+  - business-model
+  - cost
   - hardware
   - llm-inference
   - sustainability
@@ -15,8 +15,7 @@ tags:
   - platform-economics
   - labor-economics
   - post-scarcity
-  - wealth-distribution
-  - token-billing
+  - wealth-concentration
   - controversy
   - prediction
   - valuation

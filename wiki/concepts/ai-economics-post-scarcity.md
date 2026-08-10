@@ -8,8 +8,7 @@ tags:
   - agi
   - labor-economics
   - post-scarcity
-  - wealth-distribution
-  - political-economy
+  - wealth-concentration
 aliases:
   - AGI Economics
   - Post-Scarcity Economics

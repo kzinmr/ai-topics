@@ -5,11 +5,11 @@ created: 2026-06-15
 updated: 2026-06-15
 tags:
   - economics
-  - roi
-  - ai-cost
+  - business-model
+  - cost
   - company
   - ai-adoption
-  - token-billing
+  - token-economics
 aliases:
   - AI ROI Problem
   - AI Cost Measurement

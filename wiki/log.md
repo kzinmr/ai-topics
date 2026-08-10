@@ -1,3 +1,17 @@
+## [2026-08-10] tag-audit-weekly | Tag taxonomy audit & auto-fix — 7 violations resolved
+
+- **Audit**: `tag_audit.py` — 0 composite kebab-case tags; 7 non-SCHEMA tags (4 multi-use, 3 one-off).
+- **Mapped (2x+ multi-use, canonical targets verified in SCHEMA.md)**: `wealth-distribution`→`wealth-concentration`, `roi`→`business-model`, `ai-cost`→`cost`, `token-billing`→`token-economics`.
+  - `wiki/concepts/ai-affordability-crisis.md` — mapped roi/ai-cost/wealth-distribution/token-billing (deduped duplicate token-economics)
+  - `wiki/concepts/ai-doesnt-have-roi.md` — mapped roi/ai-cost/token-billing
+  - `wiki/concepts/ai-economics-post-scarcity.md` — mapped wealth-distribution, removed one-off `political-economy`
+- **Deleted (1x one-off noise)**: `political-economy`, `compute-efficiency` (wiki/concepts/ai-compute-pricing-paradox.md), `graph-engineering` (wiki/concepts/model-switching-in-graph-workflows.md).
+- **TAG_NORMALIZATION dict**: +4 mappings (2026-08-10 weekly audit section) in config/hermes/skills/_overrides/wiki-graph-health/scripts/tag_normalization.py.
+- **NOT run**: wholesale `tag_normalization.py` — 96 pages would get valid SCHEMA tags rewritten to less-specific canonicals (known preference-rewrite pitfall, e.g. knowledge-graph→rag, gpu→hardware). Applied fixes manually instead.
+- **Verify**: `tag_audit.py` re-run → 0 tags NOT in taxonomy. Pre-commit tag validator passes.
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

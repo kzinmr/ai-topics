@@ -3,7 +3,7 @@ title: "AI Compute Pricing Paradox"
 created: 2026-08-04
 updated: 2026-08-04
 type: concept
-tags: [inference, pricing, economics, gpu, ai-infrastructure, reasoning, ai-economics, token-economics, compute-efficiency, scaling-laws]
+tags: [inference, pricing, economics, gpu, ai-infrastructure, reasoning, ai-economics, token-economics, scaling-laws]
 sources: [raw/articles/2026-07-29_dwarkesh_ai-compute-pricing-paradox.md]
 ---
 
