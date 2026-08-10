@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-08-10T10:40:59.651741+00:00",
+  "triage_run_id": "20260810T102925Z",
+  "source": "newsletter",
+  "summary_ja": "6ニュースレター（106リンク）をトリアージ。実質コンテンツ6本から take 6件（TileRT InferenceX独立ベンチ、Claude Code 5設定ガイド、Nathan Lambert「Lessons from the hacks」、Hark Handoff、ByteDance Seedance 2.5、Eve CEOインタビュー）、reference 1件（Google TPU×Anthropic統計）、skip 9件（Lenny's Podcast採用トーク、The Signalオピニオン、Aakash週間ニュース、各UIノイズ）。Google経営刷新（Discovery Loop等）は既存ページでカバー済みと確認。",
+  "decisions": [
+    {
+      "item_id": "signal-google-tpu-anthropic",
+      "source": "newsletter",
+      "source_name": "The Signal (Alex Banks)",
+      "title": "Google Sells the Shovels: TPU shipments to Anthropic, Cloud backlog",
+      "url": "https://thesignal.substack.com/p/google-sells-the-shovels-the-great",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-09-google-sells-the-shovels-the-great-hark-handoff-and-bytedance-s-bigger-picture.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ ★★★☆☆ Google経営刷新（Hassabis会長就任、Jeff Dean退任→Discovery Loop設立）は entities/jeff-dean.md・entities/demis-hassabis.md・entities/discovery-loop で既に詳細カバー済み。本記事独自の数値は「SemiAnalysis estimates more than 20% of Google's TPU shipments through the end of 2027 are being sold directly to Anthropic」「Google Cloud revenue growing 82% last quarter on a TPU order backlog above $150 billion」で、entities/google.md に1-2行の追記候補。",
+      "candidate_wiki_path": "entities/google.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-09\n**Subject:** Google Sells the Shovels, The Great Hark Handoff, and ByteDance's Bigger Picture\n**Collected:** 2026-08-10T10:29:14.810580+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29"
+    },
+    {
+      "item_id": "lenny-adam-ward-talent",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter (Lenny Rachitsky)",
+      "title": "The playbook for building high talent density teams | Adam Ward, Head of Talent at Cursor",
+      "url": "https://www.lennysnewsletter.com/p/the-playbook-for-building-high-talent",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-09-the-playbook-for-building-high-talent-density-teams-adam-ward-head-of-talent-at-.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ ★★☆☆☆ ピュアポッドキャスト配信（本文は章見出し+リンク集のみ）。Cursor採用責任者Adam Wardの「funnel of doom」採用論・タレント密度の話で、AI技術的含意は薄い。isAccessibleForFree:false だが実質本文なし。entities/cursor-ai.md への補足価値も限定的。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-09\n**Subject:** The playbook for building high talent density teams | Adam Ward, Head of Talent at Cursor\n**Collected:** 2026-08-10T10:29:12.552469+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2"
+    },
+    {
+      "item_id": "aibyaakash-news-roundup",
+      "source": "newsletter",
+      "source_name": "AI by Aakash (aibyaakash)",
+      "title": "Week's news: Google leadership, Meta Muse Code, Nvidia Alpamayo 2, biosecurity",
+      "url": "https://www.aibyaakash.com/p/claude-code-5",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-09-claude-code-5.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ ★★☆☆☆ 週間ニュースまとめ部分（BrinがGemini直接統括、Meta Muse Spark 1.2/Muse Code、Nvidia Alpamayo 2 Super+UberのAV転換、AI設計ウイルス16種、Wispr Flow Notetaker等）は二次情報で、他パイプライン（sitemap/blog）で個別カバーされる見込み。個別takeにはしない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-09\n**Subject:** Claude Code 5.\n**Collected:** 2026-08-10T10:29:21.225723+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYWlieWFha2FzaC5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjc"
+    },
+    {
+      "item_id": "interconnects-noise",
+      "source": "newsletter",
+      "source_name": "Interconnects (Nathan Lambert)",
+      "title": "Substack UI noise (comments, likes, shares, redirects, mentions)",
+      "url": "https://www.interconnects.ai/p/lessons-from-the-hacks",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-09-lessons-from-the-hacks.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ ★☆☆☆☆ 20リンク中大半がUIノイズ。@natolambert作者プロフィール、open.substack.com/users/41984689-florian-brand（Florian Brand言及リンク=記事内で引用済み）、redirect UUID等。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-09\n**Subject:** Lessons from the hacks\n**Collected:** 2026-08-10T10:29:17.309233+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1ha"
+    },
+    {
+      "item_id": "semianalysis-noise",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "Substack UI noise (comments, likes, shares, redirects, author profiles)",
+      "url": "https://newsletter.semianalysis.com/p/ultra-high-interactivity-on-nvidia",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-10-ultra-high-interactivity-on-nvidia-gpus-tilert-inferencex.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ ★☆☆☆☆ 20リンク中大半がUIノイズ。@cheese01/@semianalysis等の作者プロフィール、redirect UUID、subscribe-widget。本記事の実質トピックはtakeで別途判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-10\n**Subject:** Ultra-High Interactivity on NVIDIA GPUs? - TileRT InferenceX\n**Collected:** 2026-08-10T10:29:23.227661+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJ"
+    },
+    {
+      "item_id": "eve-noise",
+      "source": "newsletter",
+      "source_name": "Superintel+ (getsuperintel, Kim Isenberg)",
+      "title": "Beehiiv tracking links (duplicates / social / footer)",
+      "url": "https://read.getsuperintel.com/p/exclusive-interview-with-the-co-founder-ceo-of-eve-jay-madheswaran",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-09-exclusive-interview-with-the-co-founder-ceo-of-eve-jay-madheswaran.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ ★☆☆☆☆ beehiivトラッキング20リンク中、Link 1のみ解決して本文取得（read.getsuperintel.com、uid=443）。残り19リンクは同一記事への重複/ソーシャル/フッター系と推定（~30%重複密度の既知パターン）。実質トピックはtakeで別途判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-09\n**Subject:** Exclusive Interview with the Co-Founder & CEO of Eve: Jay Madheswaran\n**Collected:** 2026-08-10T10:29:19.200999+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/064d4c7277302ecbd80c8598b86e03bd2c05a071c6a4210711a9159"
+    }
+  ]
+}
