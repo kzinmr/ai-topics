@@ -1,6 +1,11 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-10] raw-backlog-ingest (00:00) | Duplicate invocation recovery - all 5 candidates already captured
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-10 00:00, run 20260810T000036Z). Takes=0, References=0, Skips=5 (all duplicates).
+- All 5 articles are exact repeats of the 2026-08-09 18:00/22:00 batches (log.md entries 2026-08-09): (1) micahflee.com Mandatory Update short story - already in entities/micahflee.md 2026 section; (2) substack redirect [AINews] OpenAI GPT-Image-2 - already in concepts/gpt/chatgpt-images-2-0.md sources + Arena Elo section (1512/1513/1464, +242) + comparisons/gpt-image-2-vs-nano-banana-2.md; (3) danluu.com cocktail-ideas - already in entities/dan-luu.md Notable Essays (Non-AI); (4) refactoringenglish.com Adam Gordon Bell interview - already in entities/refactoring-english.md Blog Posts; (5) righto.com cargo cult metaphor - non-AI, already in entities/righto-com.md References.
+- No wiki page changes made. Recorded all 5 filenames in processed_raw_articles.json processed_articles sub-registry to stop re-selection.
+
 ## [2026-08-09] entity-creation | Created [[entities/vasuman]] — CEO of Varick Agents (enterprise AI implementation)
 - Key theses: Barbell Distribution of enterprise AI adoption, "AI Adoption is a Myth" (binary metrics vs skill spectrum), Background AI (embed agents in existing systems of record), Forward Deployed Engineering as defining role, "People don't want a tool — they want the work done"
 - Publications: "Forward Deployed Engineering 101" (May 2026), "AI Adoption is a Myth" (Aug 2026)
