@@ -74,4 +74,5 @@ Evaluated on LongBench v2 (126 questions, 0-100k token documents):
 - [[concepts/latent-briefing]] — Ramp Labs' implementation
 - [[concepts/multi-agents/multi-agent-systems]] — Multi-agent architectures where this is most relevant
 - [[concepts/context-engineering/context-management|Context Management]] — Managing context across agents
+- [[concepts/model-switching-in-graph-workflows]] — How KV cache compaction applies to model switching in graph-based workflows
 - [[entities/ramp-labs]] — Company that developed Latent Briefing

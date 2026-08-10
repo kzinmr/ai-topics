@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-07-18
+updated: 2026-08-10
 tags:
   - model
   - claude-fable-5
@@ -36,6 +36,7 @@ sources:
   - raw/newsletters/2026-07-06-fable-5-is-back-stop-wasting-it-on-tasks-sonnet-can-do.md
   - raw/newsletters/2026-07-07-ainews-the-field-guide-to-fable.md
   - raw/articles/simonwillison.net--2026-jul-18-claude-make-fable-5-permanent--c4a972b2.md
+  - raw/articles/simonwillison.net--2026-aug-9-claude-opus-5-system-prompt--29bd0ff6.md
 ---
 
 # Claude Fable 5
@@ -416,6 +417,23 @@ The Fable 5 redeployment marks the end of an ~18-day global suspension — the f
 The redeployment also highlighted the tension between safety-driven false-positive costs and developer productivity — a trade-off that Anthropic acknowledged will require ongoing attention.
 
 Source: raw/articles/simonwillison.net--2026-jun-30-anthropic--7acc1e0a.md and the Anthropic official statement (https://www.anthropic.com/news/redeploying-fable-5).
+
+### System Prompt Handling of Post-Cutoff Events (August 2026)
+
+The Claude Opus 5 system prompt embeds a **dated factual notice** about the export-control timeline — June 9 release, June 12 suspension, June 30 lift, July 1 restore — because those events postdate Claude's training-data cutoff ([Simon Willison, 08/09/2026](https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/), quoting the Opus 5 system prompt):
+
+> Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Department lifted those controls on June 30, 2026, and Anthropic restored access on July 1, 2026. These events are after Claude's training-data cutoff, so Claude knows about them only from this notice. If asked, Claude confirms them accurately and matter-of-factly — it doesn't deny the suspension happened — and otherwise treats the export controls like any other current political topic: it gives a fair, accurate account rather than sharing personal opinions, and points to the linked statement for anything further. Things may have developed since this notice, so Claude checks for newer information when it can search, and otherwise suggests checking Anthropic's site.
+
+The notice instructs Claude to:
+
+- **Confirm the timeline matter-of-factly** — acknowledge the suspension happened rather than deny it, with accurate dates (June 9 release / June 12 suspension / June 30 lift / July 1 restore)
+- **Treat export controls as a current political topic** — give a fair, accurate account without sharing personal opinions
+- **Point to Anthropic's statement** (https://www.anthropic.com/news/fable-mythos-access) for anything further
+- **Check for newer information** when search is available, since the situation may have developed since the notice; otherwise suggest checking Anthropic's site
+
+This demonstrates Anthropic's approach to keeping models accurate on **post-cutoff events**: **notice-based knowledge injection** (embedding dated facts in the system prompt) rather than denial or silence. The notice explicitly flags the cutoff gap, prescribes matter-of-fact confirmation, and defines fallback behavior (search, or pointing to Anthropic's site) when the embedded facts may be stale — a template for keeping a model truthful about events that occurred after its training data ended. [[entities/simon-willison]] highlighted the notice as Anthropic "ensuring Claude doesn't provide incorrect answers about the export controls situation."
+
+Source: raw/articles/simonwillison.net--2026-aug-9-claude-opus-5-system-prompt--29bd0ff6.md
 
 ## Post-Redeployment: GPU Kernel Generation
 

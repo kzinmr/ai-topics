@@ -154,3 +154,4 @@ This aligns with the "Harness > Model" consensus: the orchestration layer captur
 - [[concepts/multi-agents/multi-agent-orchestration]] — Multi-agent orchestration patterns
 - [[concepts/inference-optimization]] — Inference cost optimization
 - [[concepts/harness-commoditization]] — The harness layer as competitive moat
+- [[concepts/model-switching-in-graph-workflows]] — KV cache and context carryover when switching models in graph-based workflows

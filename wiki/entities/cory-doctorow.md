@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-08-05
+updated: 2026-08-10
 status: L3
 sources:
   - https://pluralistic.net/
@@ -20,6 +20,7 @@ sources:
   - raw/articles/pluralistic.net--2026-08-01-dare-snot--cd886481.md
   - raw/articles/pluralistic.net--2026-08-03-andor--5e30d1be.md
   - raw/articles/pluralistic.net--2026-08-04-technology-freedom-cooperative--182f3215.md
+  - raw/articles/pluralistic.net--2026-08-10-deep-state-wopr--e31c0b9a.md
 tags: [person]
 ---
 
@@ -311,6 +312,41 @@ In "[Post-American compute for a post-American Internet](https://pluralistic.net
 **Cross-reference**: This post is the concrete organizational manifestation of the [AI Digital Sovereignty framework](#ai-digital-sovereignty--the-problem--ai--problem--ai-framework-june-2026) from June 2026. Where that essay argued that AI sovereignty fears distract from real platform-dependency risks, the Cooperative operationalizes the fix: jurisdictionally federated compute, self-owned open models, and skills training instead of reliance on US tech giants.
 
 Source: [[raw/articles/pluralistic.net--2026-08-04-technology-freedom-cooperative--182f3215.md]]
+
+### The Bureaucratic AI Arms-Race — Mutually Assured Destruction (August 2026)
+
+In \"[The bureaucratic AI arms-race is mutually assured destruction](https://pluralistic.net/2026/08/10/deep-state-wopr/)\" (Aug 10, 2026), Doctorow dismantles an *Economist* editorial claiming that \"AI is breaking the British state\" by making it too easy to file complaints, demands and appeals, which will \"drown the state\" with \"demands as well-crafted as a first-class lawyer's.\" His counter-thesis: the coming war between robo-bureaucrats and robo-lawyers is **mutually assured destruction** — and the people caught in the crossfire are the citizens who need public services.
+
+**The Economist's Credulity — Hallucination and Automation Blindness**:
+- Doctorow scoffs at the magazine's \"touching credulity about AI's coming legal mastery\": the law is where AI is *most* prone to \"hallucinate\" (\"produce defective outputs\"), which \"can only be sorted through by skilled practitioners whose experience gives them the discernment to distinguish useful arguments from foolish ones\" — a direct extension of his [Discernment condition](#discernment--expertise-as-prerequisite-for-ai-utility-july-2026)
+- Even those practitioners must resist **\"automation blindness\"** — the vigilance failure that has turned every TSA agent into \"the water-bottle-detectingest motherfucker the human race has ever produced,\" who \"still misses 95% of the guns that red teams bring through the checkpoint\"
+
+**The Economist's Solution — Prune Rights, Add More AI**:
+- The editorial's proposed fix: \"stop creating entitlements that are ripe for AI-fuelled claims…prune the mass of procedural rights\"
+- And replace the bureaucrats processing \"complaints, demands and appeals\" with *more* AI, which would \"arbitrarily decide who gets what\" through \"personalised welfare interventions\" that are \"not based on any kind of guaranteed rights\" — a proposal whose conservative valence echoes the dynamics catalogued in [[concepts/ai-criticism-politics]]
+
+**Farrell's Robot Solutionism — The Arms Race**:
+Political scientist Henry Farrell (programmablemutter.com) argues in \"The Downside of Robot Solutionism\" that this ends in \"AI-based robot wars in which increasingly stingy and pernickety robo-bureaucrats create demand for progressively more aggressive robo-lawyers\":
+- **The Abelard Snazz parable**: Farrell invokes Alan Moore's 1980s *2000 AD* character Abelard Snazz, \"the man with the two-storey brain,\" who \"solves\" the street crime epidemic on the planet Twopp with \"Big Police Robots\" that spiral out of control, arresting citizens for trivial crimes like wearing brown shoes with a blue suit (\"breaking the laws of good taste\")
+- Snazz's fix — \"Big Criminal Robots\" whose \"cunning, efficient\" crimes \"take up all the police's time\" — leaves Twopp in \"high-stakes Big Robot crimewars,\" with the Twoppians as \"collateral damage in a robotic forever war (on crime)\"
+- **Already happening in US health care**: an army of insurance company robo-claim-deniers has been countered with a doctors' army of robot-claim-appealers (NYT, July 2024)
+
+**The Problem Factory — Davies on War Footing**:
+- Dan \"Accountability Sink\" Davies (Niskanen Center) describes how increasing bureaucratic defenses against frivolous or dishonest claims \"drives the participants in these processes to assume a war footing and approach the system as a battlefield,\" causing the very runaway cost inflation the bureaucratic process was instituted to prevent
+
+**The Spam Wars Analogy**:
+- Easy mail servers → spam → blocklists → spammers adapt → stricter, more onerous standards → today most of the internet's email is run by a handful of giant, mostly US-based corporations
+- If one of those companies decides your mail server is spamming, \"you effectively disappear from the internet\" — while the giants themselves emit \"an avalanche\" of spam that no one blocks, because blocking them would cut off billions of legitimate email users
+- Parallel: the content moderation wars, where trolls mastered the platforms' ever-more-detailed speech rules and weaponized them against their victims
+
+**The MAD Conclusion**:
+Farrell criticizes the *Economist*'s answer as \"solutionism\" — Evgeny Morozov's term for \"recasting all complex social situations either as neat problems with definite, computable solutions.\" Using AI to root out AI-generated appeals sacrifices the system's putative purpose — delivering services — in the name of defending it from abuse:
+
+> \"The purpose of a system is what it does.\" If your bureaucracy is more concerned with fighting fraud than delivering service, then it isn't a service delivery system at all – it's a **service denial system**. (Stafford Beer, quoted by Doctorow)
+
+People need health care and public services; responding to waste at the margins with more advanced red tape \"just requires the people who legitimately need these services to employ more aggressive tactics.\" As the Twoppians can attest, everyone ends up collateral damage in the robot wars.
+
+Source: [[raw/articles/pluralistic.net--2026-08-10-deep-state-wopr--e31c0b9a.md]]
 
 ## Related Pages
 

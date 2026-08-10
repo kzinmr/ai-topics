@@ -67,4 +67,5 @@ Evaluated on LongBench v2 (Claude Sonnet 4 orchestrator, Qwen-14B worker):
 - [[concepts/kv-cache-compaction]] — The underlying technique
 - [[concepts/multi-agents/multi-agent-systems]] — Where this is applied
 - [[concepts/recursive-language-models]] — The RLM framework used
+- [[concepts/model-switching-in-graph-workflows]] — How Latent Briefing applies to cross-model context carryover in graph workflows
 - [[entities/ramp-labs]] — Developer of Latent Briefing

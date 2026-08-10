@@ -891,7 +891,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1958 pages)
+## Concepts (1959 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1772,6 +1772,7 @@
 - [[concepts/gguf-quantization]] — gguf-quantization
 - [[concepts/github-copilot-agent-platform]] — GitHub Copilot Agent Platform
 - [[concepts/github-copilot-billing]] — GitHub Copilot Token-Based Billing
+- [[concepts/github-models]] — GitHub Models — retired multi-provider LLM playground + unified inference API (GitHub Actions ambient-key prompts); retired Aug 2026 under coding-agent demand economics
 - [[concepts/glass-slipper-effect]] — Glass Slipper Effect
 - [[concepts/gliclass]] — GLiClass
 - [[concepts/gliner-model-family]] — GLiNER Model Family — Bidirectional encoder-based SLM family (GLiNER/GLiNER2/GLiGuard/GLiNER2-PII); NER→multi-task info extraction→safety moderation→PII detection; 205M parameter model surpassing ChatGPT; 42 PII entity types; Exceeds OpenAI Privacy Filter accuracy (July 2🆕)
@@ -2890,7 +2891,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (25 pages)
+## Events (26 pages)
 
 - [[events/openai-apple-conflict-2026]] — OpenAI vs Apple Legal Conflict — OpenAI public rebuttal to Apple lawsuit, August 2026; preliminary injunction stage (Aug 4-5); OpenAI 28-page motion to dismiss (Aug 6)
 - [[events/2026-07-29-rsi-pace-letter]] — RSI Pace Letter: 1,171 OpenAI/Anthropic/GDM/Meta/Thinky employees sign letter requesting US international AI pacing framework (July 29, 2026)
@@ -2903,6 +2904,7 @@
 - [[events/2026-06-27-openai-gpt-5-6-sol]] — OpenAI GPT-5.6 Sol Restricted Preview — first U.S. government-mediated frontier model release; limited to ~20 trusted partners at government request (June 27)
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026
 - [[events/claude-opus-5-release-july-2026]] — Anthropic releases Claude Opus 5 (July 2026) — Near-Fable-5 at half price, leads Artificial Analysis leaderboard, proactive CV pipeline
+- [[events/dark-hours-controversy-2026]] — Dark Hours App Controversy (August 2026) — Terry Godier's Claude-built astronomy app blocked by Apple, appeared to copy an open-source app; John Gruber's rare retraction
 - [[events/distillation-attacks-2026]] — Industrial-Scale Distillation Attacks Accusation
 - [[events/google-io-2026]] — Google I/O 2026
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B

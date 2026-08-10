@@ -1,0 +1,81 @@
+{
+  "run_id": "20260810T102925Z",
+  "triaged_at": "2026-08-10T10:30:00+00:00",
+  "total_newsletters": 6,
+  "total_articles_extracted": 120,
+  "classifications": [
+    {
+      "source": "SemiAnalysis — Ultra-High Interactivity on NVIDIA GPUs? - TileRT InferenceX",
+      "date": "2026-08-10",
+      "importance": "critical",
+      "reason": "Directly covers TileRT InferenceX, an inference optimization engine for NVIDIA GPUs. TileRT already has an entity page in wiki (entities/tilert.md). SemiAnalysis is a leading AI infrastructure analysis outlet. This article likely provides new technical details on TileRT's InferenceX variant targeting ultra-high interactivity. Should update the existing TileRT entity page.",
+      "canonical_url": "https://open.substack.com/pub/semianalysis/p/ultra-high-interactivity-on-nvidia",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-10-ultra-high-interactivity-on-nvidia-gpus-tilert-inferencex.md",
+      "wiki_targets": ["entities/tilert (update)"],
+      "action": "scrape_article_then_enrich_tilert_page"
+    },
+    {
+      "source": "aibyaakash — Claude Code 5.",
+      "date": "2026-08-09",
+      "importance": "critical",
+      "reason": "Directly about Claude Code, Anthropic's flagship coding agent tool. Claude Code is a core wiki topic (coding agents). The title 'Claude Code 5.' suggests coverage of version 5, which could be a major release. No existing Claude Code entity page found — this could seed one. aibyaakash is an AI-focused Substack covering AI tools and agents.",
+      "canonical_url": "https://open.substack.com/pub/aibyaakash/p/claude-code-5",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-09-claude-code-5.md",
+      "wiki_targets": ["entities/claude-code (create or update)"],
+      "action": "scrape_article_then_create_or_update_claude_code_page"
+    },
+    {
+      "source": "robotic (Nato Lambert) — Lessons from the hacks",
+      "date": "2026-08-09",
+      "importance": "high",
+      "reason": "From 'robotic' newsletter by Nato Lambert, covering lessons from AI/robotics security incidents. AI safety and security is a core wiki topic. Nato Lambert is a known AI safety/alignment researcher. Content likely covers real-world AI system vulnerabilities and security lessons.",
+      "canonical_url": "https://open.substack.com/pub/robotic/p/lessons-from-the-hacks",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-09-lessons-from-the-hacks.md",
+      "wiki_targets": ["concepts/ai-safety (update)", "entities/nato-lambert (create or update)"],
+      "action": "scrape_article_then_update_safety_pages"
+    },
+    {
+      "source": "The Signal (Alex Banks) — Google Sells the Shovels, The Great Hark Handoff, and ByteDance's Bigger Picture",
+      "date": "2026-08-09",
+      "importance": "high",
+      "reason": "Covers Google's AI infrastructure strategy ('selling shovels' = cloud/AI compute), ByteDance's AI ambitions, and the AI industry power dynamics. Google and ByteDance are existing wiki entities. 'The Great Hark Handoff' may refer to an AI agent framework transition or capability handoff. Relevant to AI industry dynamics and infrastructure topics.",
+      "canonical_url": "https://open.substack.com/pub/thesignal/p/google-sells-the-shovels-the-great",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-09-google-sells-the-shovels-the-great-hark-handoff-and-bytedance-s-bigger-picture.md",
+      "wiki_targets": ["entities/google (update)", "entities/bytedance (update)"],
+      "action": "scrape_article_then_update_entity_pages"
+    },
+    {
+      "source": "Newsletter — Exclusive Interview with the Co-Founder & CEO of Eve: Jay Madheswaran",
+      "date": "2026-08-09",
+      "importance": "medium",
+      "reason": "Interview with Jay Madheswaran, co-founder & CEO of Eve. Eve is likely an AI startup (possibly legal tech AI or personal AI assistant). Needs article scraping to determine specific AI relevance. Could seed an Eve entity page and a Jay Madheswaran entity page if the company is AI-focused.",
+      "canonical_url": "https://link.mail.beehiiv.com/v2/c/064d4c7277302ecbd80c8598b86e03bd2c05a071c6a4210711a91597bcf283ab96bff3df98b7dafeaddcb6e3e7f4df273cd0c4fe2bce6b116161145e272cf0feb3ab5699474d37faa78717ee90fc94d7c68c2041534bf570fe4457d571654079334b7334b89842e20b04c11b43523c999b419104e2aa1a12a9b64e4c694add45391dcd9b31f629268b88eb02c9e2ccb3feaa90ecc178921ef8dee6433ef991f2/2c00f19f1b29c3ac",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-09-exclusive-interview-with-the-co-founder-ceo-of-eve-jay-madheswaran.md",
+      "wiki_targets": ["entities/eve (create, conditional)", "entities/jay-madheswaran (create, conditional)"],
+      "action": "scrape_article_then_evaluate_relevance"
+    },
+    {
+      "source": "Lenny Rachitsky — The playbook for building high talent density teams | Adam Ward, Head of Talent at Cursor",
+      "date": "2026-08-09",
+      "importance": "medium",
+      "reason": "Podcast/interview about talent strategy at Cursor (AI coding editor). Cursor is a key AI entity in the wiki, but content is about hiring/talent management rather than AI technology directly. Worth noting for Cursor entity page context.",
+      "canonical_url": "https://open.substack.com/pub/lenny/p/the-playbook-for-building-high-talent",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-09-the-playbook-for-building-high-talent-density-teams-adam-ward-head-of-talent-at-.md",
+      "wiki_targets": ["entities/cursor (supplementary context only)"],
+      "action": "scrape_article_then_append_to_cursor_entity_if_substantive"
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 2,
+    "medium": 2,
+    "skip": 0,
+    "top_actions": [
+      "1. Scrape SemiAnalysis TileRT InferenceX article → update entities/tilert.md with InferenceX details",
+      "2. Scrape Claude Code 5 article → create entities/claude-code.md or update existing",
+      "3. Scrape robotic 'Lessons from the hacks' → update ai-safety concepts",
+      "4. Scrape The Signal Google/ByteDance article → update relevant entity pages",
+      "5. Scrape Eve CEO interview → evaluate AI relevance → create entity pages if warranted"
+    ]
+  }
+}

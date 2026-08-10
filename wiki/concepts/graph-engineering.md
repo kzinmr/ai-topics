@@ -120,6 +120,7 @@ Anthropic's multi-agent research system outperformed single Opus by 90.2% on int
 - [[concepts/agent-loop-orchestration]] — Technical architecture of the think-act-evaluate cycle. Graph engineering is the coordination layer above.
 - [[concepts/harness-engineering/agentic-loop]] — The ReAct/ralph loop pattern. A graph's node is often a single loop instance.
 - [[concepts/compound-engineering-loop]] — Related framework for compound engineering loops.
+- [[concepts/model-switching-in-graph-workflows]] — How different models handle KV cache and context when switching between graph nodes.
 
 ## Key Figures
 

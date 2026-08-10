@@ -86,6 +86,7 @@ Source: [[raw/articles/2026-06-29_cognition-devin-fusion-multi-model-harness]]
 - [[concepts/llm-cost-optimization]]
 - [[concepts/coding-agents/ai-coding-cost-optimization]] — Ronin's complete system with manual config-based router
 - [[concepts/multi-model-synthesis-strategies]] — Broader taxonomy of multi-model approaches (sidekick, panel synthesis, orchestration)
+- [[concepts/model-switching-in-graph-workflows]] — KV cache and context management when switching models in graph-based workflows
 
 ## Manual Router Architecture (Ronin, May 2026)
 

@@ -2,13 +2,13 @@
 title: Jim Nielsen
 type: entity
 created: 2026-04-09
-updated: 2026-07-28
+updated: 2026-08-10
 tags:
   - person
   - developer-tooling
   - writing
   - hn-popular
-sources: [raw/articles/blog.jim-nielsen.com--2026-intelligence-isnt-enough--dd2462b6.md, raw/articles/collective-speed-isnt-the-sum-of-individual-speed--5ba65187.md, raw/articles/blog.jim-nielsen.com--2026-tide-lifts-all-boats--e619bcd4.md]
+sources: [raw/articles/blog.jim-nielsen.com--2026-intelligence-isnt-enough--dd2462b6.md, raw/articles/collective-speed-isnt-the-sum-of-individual-speed--5ba65187.md, raw/articles/blog.jim-nielsen.com--2026-tide-lifts-all-boats--e619bcd4.md, raw/articles/blog.jim-nielsen.com--2026-license-to-act--14b5afa9.md]
 ---
 
 
@@ -55,6 +55,20 @@ Jim advocates for treating code as **a means of thinking, not just a means of pr
 - The value isn't in the output (the code), it's in the process (the thinking)
 
 This connects to his broader theme: **friction can be productive.** The difficulty of writing code isn't a bug — it's a feature that forces rigor.
+
+### A License to Act (2026)
+
+Jim's warning about the hidden cost of delegating understanding to LLMs. In the past, search engines and the open web granted access to other people's knowledge, but the task of synthesizing that knowledge into a capability to act fell to you. Now, LLMs make it possible to build things you don't fully understand — which then require a **perpetual license** in order to have the capacity to maintain and modify them:
+
+> *"LLMs don't just do things for you, they do things instead of you — and the doing is a huge part of the point. The struggle to understand, to synthesize, to explain, it all has a byproduct: you! Your own capacity to act in the world."*
+
+The **capability-byproduct argument**: the struggle itself is what builds you. You can now rent that capacity, but every time you reach for the LLM instead of struggling through it yourself, you're borrowing against someone else's capacity that you're not developing in yourself.
+
+His **car mechanic analogy**: fixing his own car produced a working car — the output he wanted — but it also produced a capability within himself to fix the next one that came along. Now, for expedience and speed, he drops all his cars off at the LLM dealer for fixes and maintenance. Fast and efficient — but also more dependent than ever.
+
+This extends his [[#Code as a Tool of Process]] and **productive friction** themes: the difficulty of understanding isn't a bug to be abstracted away — it's the process that produces the byproduct of *you*. When tools abstract away the thinking, they also abstract away the capacity to act that the thinking builds. (See also: Eric Bailey on evolved antennas.)
+
+Source: [[raw/articles/blog.jim-nielsen.com--2026-license-to-act--14b5afa9.md]]
 
 ### The Blandness of Systematic Rules vs. The Delight of Localized Sensitivity
 
