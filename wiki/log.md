@@ -79,6 +79,19 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-08-10] dreaming | Saturation pass - Takes=0, 0 references, 10 skips
+- Checkpoint range: 2026-08-03 to 2026-08-10 (206 recent raw articles)
+- All AI-relevant articles already processed by today's pipelines:
+  - blog-wiki-ingest: 3 takes (Dark Hours controversy, GitHub Models, sycophancy) + 4 refs
+  - newsletter-wiki-ingest: 6 takes (TileRT InferenceX, Claude Code 5 guide, Lambert lessons, Hark Handoff, Seedance 2.5, Eve entity) + 1 ref (Google TPU)
+  - active-crawl: 4 concepts (AI Agent Permission Oversight, LLM-Assisted Learning, WeatherNext, Genesis Open Models) + Muse Glimmer entity
+  - x-bookmarks-ingest: 2 bookmarks (Qwen-MM-Plugins, Graph Engineering, 0xMovez AI)
+  - raw-backlog-ingest x4 batches (Paul Graham, Muse Spark, Harness design, Alignment researcher)
+  - watchdog: auto-fixes (index dedup, modelcrafting, header counts, tags)
+  - tag-audit-weekly: 7 tag violations resolved
+- Key articles verified as covered: Jeff Dean Discovery Loop, Gary Marcus Google defense, Ed Zitron Tokenpocalypse, Krebs Snowflake extortion (non-AI), Sierra Context Engine, Hebbia delivery control, Warp Agent CLI, Prime Agent, Rust LLM contribution policy, Glean blog batch x10, non-AI batch x30+
+- Archive: wiki/raw/archived/triage/dreaming/2026-08-10_20260810T181019Z.json (10 candidates: 8 newly archived, 2 dedup; total_archive_urls 2466)
 ## [2026-08-10] raw-backlog-ingest (14:00) | Duplicate invocation recovery - all 5 candidates already captured
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-10 14:00, run 20260810T140038Z). Takes=0, References=0, Skips=5 (all duplicates).
 - All 5 articles are exact repeats of the earlier 2026-08-10 raw-backlog batch (commit 658f8728, log.md entry below): (1) danluu.com overwatch-gender - already in entities/dan-luu.md Notable Essays (Non-AI); (2) substack redirect [Simon Willison Apr 11] Meta Muse Spark + meta.ai 16-tool harness - already in concepts/meta-muse-spark.md meta.ai Chat Harness & Tool Disclosure section; (3) anthropic-engineering harness-design-long-running-apps - already in concepts/harness-design-long-running-apps.md Frontend Design Experiment section; (4) filfre.net Planescape: Torment Part 2 - non-AI game history, already archived; (5) substack redirect Automated Weak-to-Strong Researcher - already in concepts/automated-alignment-researcher.md (PGR 0.97 vs 0.23 human baseline).

@@ -509,6 +509,7 @@
     "https://garymarcus.substack.com/p/no-need-to-panic-about-anthropics",
     "https://garymarcus.substack.com/p/off-for-adventures",
     "https://garymarcus.substack.com/p/openais-amazing-but-vastly-oversold",
+    "https://garymarcus.substack.com/p/seven-reasons-i-wouldnt-count-google",
     "https://garymarcus.substack.com/p/slop-productivity-and-why-the-ai",
     "https://garymarcus.substack.com/p/sorry-sam-and-elon-we-have-not-reached",
     "https://garymarcus.substack.com/p/the-ai-trial-of-the-century-ends",
@@ -1325,6 +1326,7 @@
     "https://repebble.com/blog/how-i-use-my-index-01-production-update",
     "https://repebble.com/blog/index-01-is-in-mass-production",
     "https://replicate.com/",
+    "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
     "https://research.nvidia.com/labs/eai/blogs/kv-cache-compression-and-its-infra-problems/",
     "https://research.perplexity.ai/articles/rethinking-search-as-code-generation",
     "https://research.sierra.ai/mubench/",
@@ -1337,6 +1339,7 @@
     "https://sakana.ai/fugu/",
     "https://sambanova.ai/",
     "https://screenpipe.com",
+    "https://seangoedecke.com/advanced-ai-sycophancy/",
     "https://seangoedecke.com/ai-models-need-moral-support",
     "https://seangoedecke.com/ai-models-need-moral-support/",
     "https://seangoedecke.com/blog-about-things-you-dont-understand-yet/",
@@ -1422,6 +1425,7 @@
     "https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything",
     "https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything",
     "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/#atom-everything",
+    "https://simonwillison.net/2026/Aug/10/openclaw/",
     "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
     "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
     "https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything",
@@ -1941,6 +1945,7 @@
     "https://writing.antonleicht.me/p/betting-on-humans",
     "https://www.404media.co/apple-hide-my-email-vulnerability-reveals-peoples-real-email-addresses/",
     "https://www.404media.co/hackers-simply-asked-meta-ai-to-give-them-access-to-high-profile-instagram-accounts-it-worked/",
+    "https://www.404media.co/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop-it/",
     "https://www.404media.co/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop-spending-so-much-on-ai/",
     "https://www.abortretry.fail/p/matrox",
     "https://www.aibyaakash.com/p/claude-code-5",
@@ -2385,6 +2390,7 @@
     "https://www.wheresyoured.at/the-openai-bubble/",
     "https://www.wheresyoured.at/the-revenge-of-the-business-idiot/",
     "https://www.wheresyoured.at/the-subprime-data-center-crisis/",
+    "https://www.wired.com/story/jeff-dean-google-discovery-loop-startup/",
     "https://www.wsj.com/opinion/the-ai-future-is-for-everyone-a0c24e20?st=T6AAwM",
     "https://www.wsj.com/tech/ai/top-american-ai-execs-sound-alarm-on-chinese-models-3c74f8c1",
     "https://www.wsj.com/tech/apple-raises-prices-on-macs-ipads-by-200-or-more-on-some-models-a7463f99?st=zse57R",
@@ -2461,5 +2467,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-10T18:09:13.185741+00:00"
+  "updated": "2026-08-10T18:16:59.636019+00:00"
 }

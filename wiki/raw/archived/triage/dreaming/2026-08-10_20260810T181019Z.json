@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-08-10T18:16:59.635438+00:00",
+  "triage_run_id": "20260810T181019Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming saturation pass — 2026-08-10。全パイプライン稼働済み: blog-wiki-ingest (3 takes: Dark Hours, GitHub Models, sycophancy), newsletter-wiki-ingest (6 takes: TileRT, Claude Code 5, Lambert, Hark, Seedance, Eve), active-crawl (4 concepts: AI Agent Permission, LLM-Assisted Learning, WeatherNext, Genesis Open Models), x-bookmarks-ingest (2: Qwen-MM-Plugins, Graph Engineering), raw-backlog-ingest ×4 batches (Paul Graham, Muse Spark, Harness design, Alignment researcher)。206 raw articles中、全AI関連記事が既存パイプラインで処理済み。Takes=0, References=0, Skips=11。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-seangoedecke-sycophancy",
+      "source": "dreaming",
+      "source_name": "seangoedecke.com",
+      "title": "Advanced AI Sycophancy",
+      "url": "https://seangoedecke.com/advanced-ai-sycophancy/",
+      "raw_path": "wiki/raw/articles/seangoedecke.com--advanced-ai-sycophancy--ba81ae26.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ blog-wiki-ingestが同日処理済み（entities/seangoedecke-com.md『Disagreement as Sycophancy』セクション追加）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Advanced AI sycophancy\nSource: https://seangoedecke.com/advanced-ai-sycophancy/\nEveryone knows that\nAI sycophancy\nis when the model tells you how smart you are. Wow, you’re absolutely right. That’s not just a new idea — it’s genuinely groundbreaking. You’re a very special user. Easy to spot, isn’t"
+    },
+    {
+      "item_id": "dreaming-skip-meta-muse-glimmer",
+      "source": "dreaming",
+      "source_name": "research.meta.ai",
+      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your Device",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "raw_path": "wiki/raw/articles/2026-08-10_research-meta-ai_introducing-muse-glimmer.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★★ active-crawlが同日処理済み（entities/muse-glimmer.md作成、entities/muse-spark.md更新）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Introducing Muse Glimmer: An Open Agentic Model That Runs on Your Device\n**Source**: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model\n**Published**: 2026-08-10\n**Author**: Meta Superintelligence Labs\n## Summary\nMuse Glimmer is a 30-billion-parameter open agentic model from"
+    },
+    {
+      "item_id": "dreaming-skip-simonwillison-openclaw-quote",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "A quote from OpenClaw",
+      "url": "https://simonwillison.net/2026/Aug/10/openclaw/",
+      "raw_path": "wiki/raw/articles/simonwillison.net--2026-aug-10-openclaw--5ea75c59.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 短い引用（OpenClaw API認証バグ）。entities/openclaw.mdでカバー済みの範囲",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# A quote from OpenClaw\nSource: https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything\n10th August 2026\nThe API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've moved fr"
+    },
+    {
+      "item_id": "dreaming-skip-jeff-dean-discovery-loop",
+      "source": "dreaming",
+      "source_name": "wired.com",
+      "title": "Google's Top AI Brains Are Leaving to Launch Discovery Loop",
+      "url": "https://www.wired.com/story/jeff-dean-google-discovery-loop-startup/",
+      "raw_path": "wiki/raw/articles/wired.com--story-jeff-dean-google-discovery-loop-startup--fdacbd3b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存カバレッジ: entities/jeff-dean.md『New Venture: Discovery Loop』セクション + entities/discovery-loop.md",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Google’s Top AI Brains Are Leaving to Launch Discovery Loop\nSource: https://www.wired.com/story/jeff-dean-google-discovery-loop-startup/?ref=spyglass.org\nAt first, the team envisions that those ideas will be codeveloped with humans, but their goal is deeply automating the process. If it works out,"
+    },
+    {
+      "item_id": "dreaming-skip-gary-marcus-google-defense",
+      "source": "dreaming",
+      "source_name": "garymarcus.substack.com",
+      "title": "Seven reasons I wouldn't count Google out",
+      "url": "https://garymarcus.substack.com/p/seven-reasons-i-wouldnt-count-google",
+      "raw_path": "wiki/raw/articles/garymarcus.substack.com--p-seven-reasons-i-wouldnt-count-google--b4555440.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ blog-wiki-ingestが同日処理済み（entities/gary-marcus.md『Don't Count Google Out』セクション追加）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Seven reasons I wouldn’t count Google out\nSource: https://garymarcus.substack.com/p/seven-reasons-i-wouldnt-count-google\nIn huge news, in case you missed it, Sir Demis Hassabis has given up the reins at GoogleDeepMind (moving aside to be Chairman and Alphabet’s Chief Science Officer), and the righ"
+    },
+    {
+      "item_id": "dreaming-skip-ed-zitron-tokenpocalypse",
+      "source": "dreaming",
+      "source_name": "404media.co",
+      "title": "The Tokenpocalypse Is Here",
+      "url": "https://www.404media.co/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop-it/",
+      "raw_path": "wiki/raw/articles/404media.co--the-tokenpocalypse-is-here-companies-are-scrambling-to-stop---c0a8cbed.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既存カバレッジ: concepts/enterprise-ai-cost-management.md『Tokenpocalypse』セクション + entities/simon-willison.md",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI\nSource: https://www.404media.co/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop-spending-so-much-on-ai/\nConsulting giant Accenture is trying to figure out how to stop non-technical workers from blowing "
+    },
+    {
+      "item_id": "dreaming-skip-glean-batch",
+      "source": "dreaming",
+      "source_name": "glean.com",
+      "title": "Glean blog batch (Aug 7-8, 10 articles)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ バッチスキップ: Gleanマーケティングブログ×10（guardrail decisions, agent architecture, finance agents, prompts, predictions, search benchmark, roundup, collaboration platforms等）。entities/glean.mdで主要記事カバー済み（token efficiency, knowledge graph, information retrieval, UK Work AI Index）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Glean blog articles on enterprise AI agent architecture, guardrail decisions, finance AI agents, prompt collections, and search benchmarks."
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch",
+      "source": "dreaming",
+      "source_name": "misc",
+      "title": "Non-AI content batch (Aug 3-10)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ バッチスキップ: non-AI記事群（John D Cook数学×5, shkspr.mobi Edinburgh Fringe×3, construction-physics.com×2, filfre.net Maxis history, oldvcr UPS tariff, dfarq Radio Shack, johndcook corrupted apostrophes, devblogs.microsoft.com oldnewthing×2, jeffgeerling Intel efficiency, tedium Glen Hansard, mediapost BMW, underpassapp StopTheScript, tigrisdata SigV4, macaw.social）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Non-AI blog content: math essays, Edinburgh Fringe reviews, retro computing history, hardware reviews, Apple news, package management roundups."
+    }
+  ]
+}
