@@ -2,7 +2,7 @@
 title: "Meta Muse Spark"
 type: concept
 created: 2026-04-13
-updated: 2026-08-06
+updated: 2026-08-10
 tags:
   - concept
   - methodology
@@ -12,7 +12,8 @@ related:
   - concepts/anthropic/openclaw-conflict
   - concepts/open-model-consortium
   - concepts/claude-mythos-preview
-sources: []
+sources:
+  - raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--7a245459.md
 ---
 
 # Meta Muse Spark
@@ -46,6 +47,29 @@ sources: []
   - **#2** on Finance Agent v1.1
   - **#3** on overall Vals Index
   - **#1** on visual reasoning, embodied reasoning, multimodal understanding
+
+## meta.ai Chat Harness & Tool Disclosure (April 2026)
+
+Simon Willison's April 2026 newsletter documented the meta.ai chat harness by asking the model directly for its tool list — **16 tools** disclosed with names, parameters, and descriptions (Meta did not instruct the bot to hide them). Highlights:
+
+| Tool | Function |
+|------|----------|
+| `browser.search` / `browser.open` / `browser.find` | Web search through an undisclosed engine; load full page; pattern-match against returned content |
+| `meta_1p.content_search` | Semantic search across Instagram, Threads, Facebook posts (only posts user can view, created since 2025-01-01). Powerful params: `author_ids`, `key_celebrities`, `commented_by_user_ids`, `liked_by_user_ids` |
+| `meta_1p.meta_catalog_search` | Search Meta's product catalog (Shopping option) |
+| `media.image_gen` | Image generation (likely Emu or updated version) — modes "artistic"/"realistic", returns square/vertical/landscape, saves to sandbox |
+| `container.python_execution` | Code Interpreter — Python 3.9 (EOL) with pandas, numpy, matplotlib, plotly, scikit-learn, PyMuPDF, Pillow, OpenCV; files persist at `/mnt/data/` |
+| `container.create_web_artifact` | Create HTML+JS/SVG files served as sandboxed iframe interactives (Claude Artifacts style) |
+| `container.download_meta_1p_media` | Pull Instagram/Facebook/Threads media or catalog images into the sandbox |
+| `container.file_search` | Search uploaded files in conversation |
+| `container.view` / `container.insert` / `container.str_replace` | Text-editor file commands — same common pattern as Claude's text editor across file-equipped agent harnesses |
+| `container.visual_grounding` | Analyze image, label/locate/count objects — formats `bbox`/`point`/`count`. Initially assumed to be Meta's Segment Anything; actually a native model feature via tool call with custom system prompt (no pixel-level masks) |
+| `subagents.spawn_agent` | Sub-agent-as-a-tool pattern: "Spawn an independent sub-agent for research, analysis, or delegation" |
+| `third_party.link_third_party_account` | Account linking for Google Calendar, Outlook Calendar, Gmail, Outlook |
+
+**Pelican test (April 2026, chat UI)**: the "Instant" mode output an SVG directly (with code comments); the "Thinking" mode wrapped the SVG in a thin HTML shell with unused Playables SDK v1.0.0 JavaScript libraries. The harness also chains tools (image generation → Python/OpenCV analysis → visual_grounding with custom HTML visualization of results).
+
+The same newsletter noted Meta's self-reported benchmarks put Muse Spark "competitive with Opus 4.6, Gemini 3.1 Pro, and GPT 5.4 on selected benchmarks, though notably behind on Terminal-Bench 2.0", and that Meta "continue to invest in areas with current performance gaps, such as long-horizon agentic systems and coding workflows". It also covered Anthropic's [[concepts/claude/mythos-glasswing|Project Glasswing]] (restricting Claude Mythos to security researchers) and the Axios supply chain attack using individually targeted social engineering.
 
 ## Strategic Significance
 

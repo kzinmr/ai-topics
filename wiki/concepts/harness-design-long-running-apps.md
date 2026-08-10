@@ -1,9 +1,10 @@
 ---
 title: "Harness Design for Long-Running Apps — Anthropic's Multi-Agent Architecture"
 tags: [harness-engineering, multi-agent, agentic-engineering]
-sources: []
+sources:
+  - raw/articles/2026-05-08_anthropic-engineering_harness-design-long-running-apps.md
 created: 2026-04-13
-updated: 2026-05-27
+updated: 2026-08-10
 type: concept
 ---
 
@@ -27,6 +28,24 @@ Long-running autonomous agents consistently degrade through two failure modes:
 ### 2. Self-Evaluation Bias
 
 LLMs tend to be overconfident in their own intermediate outputs. Separating generation and evaluation is crucial.
+
+## Frontend Design Experiment: Making Subjective Quality Gradable
+
+Before scaling to full-stack coding, Rajasekaran validated the GAN-inspired loop on frontend design, where the self-evaluation problem is most visible (untouched Claude gravitates to safe, predictable layouts). Two insights shaped the harness:
+
+1. **Subjective quality can be made gradable** — "Is this design beautiful?" is hard to answer consistently, but "does this follow our principles for good design?" gives Claude something concrete to grade against.
+2. **Separating generation from grading** creates a feedback loop that drives stronger outputs.
+
+**Four grading criteria** (given to both generator and evaluator, with design quality and originality weighted most heavily to counteract "AI slop" patterns):
+
+| Criterion | Definition |
+|-----------|-----------|
+| **Design quality** | Coherent whole vs collection of parts; distinct mood and identity |
+| **Originality** | Custom decisions vs template layouts, library defaults, purple-gradient AI tells |
+| **Craft** | Typography hierarchy, spacing, color harmony, contrast (competence check) |
+| **Functionality** | Usability independent of aesthetics — can users complete tasks without guessing |
+
+**Mechanics**: built on the Claude Agent SDK; generator creates HTML/CSS/JS; evaluator uses **Playwright MCP** to navigate the live page, screenshot, and study the implementation before scoring each criterion and writing a detailed critique. 5–15 iterations per generation (full runs up to 4 hours); the generator decides after each evaluation whether to refine the current direction or pivot aesthetics entirely. The evaluator was calibrated with few-shot examples with detailed score breakdowns to align judgment and reduce score drift. A striking result: on a Dutch art museum prompt, iteration 10 scrapped the polished landing page and reimagined the site as a 3D room with CSS-perspective checkered floor and doorway-based navigation — a creative leap unseen in single-pass generation. The criteria wording itself steered output (e.g., "museum quality" phrasing caused visual convergence), and later iterations trended more complex but were not always preferred over middle iterations.
 
 ## Multi-Agent Architecture: GAN-Inspired Loop
 
@@ -97,6 +116,7 @@ As model capabilities improve, harness complexity is systematically reduced:
 ## Sources
 
 - [Harness Design for Long-Running Application Development](https://www.anthropic.com/engineering/harness-design-long-running-apps) — Prithvi Rajasekaran, Anthropic Labs, Mar 24, 2026
+- [[raw/articles/2026-05-08_anthropic-engineering_harness-design-long-running-apps.md]] — Raw article (published 2026-03-24, scraped 2026-05-08)
 
 ## See Also
 

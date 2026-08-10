@@ -891,7 +891,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1957 pages)
+## Concepts (1958 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1258,6 +1258,7 @@
 - [[concepts/austral]] — Austral
 - [[concepts/auto-research]] — AutoResearch
 - [[concepts/autodata-agentic-data-creation]] — Autodata: Agentic Data Creation
+- [[concepts/automated-alignment-researcher]] — Automated Alignment Researcher (AAR) — autonomous Claude agents that beat human researchers on weak-to-strong supervision (PGR 0.97 vs 0.23)
 - [[concepts/automated-competitor-analysis]] — Automated Competitor Analysis with AI Agents
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
 - [[concepts/autonomous-agent-marketplace-stack]] — Autonomous Agent Marketplace Stack
@@ -2198,7 +2199,8 @@
 - [[concepts/model-quantization-for-local-llms]] — Model Quantization for Local LLMs
 - [[concepts/model-spec-midtraining]] — Model Spec Midtraining (MSM)
 - [[concepts/model-training-as-code]] — Model Training as Code (MTaC) — Imperative code representation of end-to-end model training pipelines; composability, consensus, provenance via Flyte + W&B trunk-based development
-- [[concepts/modelcrafting]] — Modelcrafting
+- [[concepts/model-switching-in-graph-workflows]] — Model Switching in Graph Workflows — KV cache invalidation, context carryover techniques, Latent Briefing applicability, framework comparison (LangGraph/AutoGen/LlamaIndex/ADK), best practices for multi-model graph nodes
+- [[concepts/model-welfare]]
 - [[concepts/modern-retrieval-toolkit]] — Modern Retrieval Toolkit
 - [[concepts/modernbert]] — modernbert
 - [[concepts/moe-train-inference-mismatch]] — MoE Train-Inference Mismatch
