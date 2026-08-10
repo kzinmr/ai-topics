@@ -893,7 +893,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1959 pages)
+## Concepts (1963 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -978,6 +978,7 @@
 - [[concepts/ai-agent-memory]] — AI Agent Memory; Reflection Engine behavioral-record extraction (Aug 2026)
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
+- [[concepts/ai-agent-permission-oversight]] — AI Agent Permission Oversight — ScaleX study: humans miss 1 in 3 threats when approving AI coding agent commands across 40K game runs (Aug 2026)
 - [[concepts/ai-enabled-terrorism]] — AI-Enabled Terrorism — CASP report on Boko Haram using frontier AI for tactical planning and logistics
 - [[concepts/ai-energy]] — AI Energy — AI energy consumption and data center sustainability; training and inference power costs, GPU power envelopes (NVIDIA Vera), efficiency techniques (quantization, speculative decoding, sparsity); major lab sustainability commitments (Aug 2026)
 - [[concepts/ai-preflight-safety-testing]] — AI Preflight Safety Testing — Proposed mandatory safety evaluations for frontier AI before deployment
@@ -1766,6 +1767,7 @@
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/generative-ai]] — generative-ai
 - [[concepts/generative-app-evolution]] — The evolutionary staircase of generative applications: from generative UI components to stateless generative apps to ...
+- [[concepts/genesis-open-models-initiative]] — Genesis Open Models Initiative — U.S. DOE initiative at Argonne National Lab to develop open-source AI models for scientific research (Aug 2026)
 - [[concepts/generative-ui]] — Generative UI (Claude Visualizer)
 - [[concepts/generic-agent-self-evolving]] — GenericAgent: Token-Efficient Self-Evolving Agent
 - [[concepts/genie]] — genie
@@ -2054,6 +2056,7 @@
 - [[concepts/linguistic-vertigo]] — A cognitive phenomenon affecting human language perception through daily interaction with LLMs, and the concepts of l...
 - [[concepts/lisp]] — Lisp
 - [[concepts/llama-4]] — LLaMA 4
+- [[concepts/llm-assisted-learning]] — LLM-Assisted Learning — systematic methodology for using LLMs to learn complex topics via iterative knowledge-building and simulation (Laurentiu Raducu, Aug 2026)
 - [[concepts/llama-cpp]] — Llama Cpp
 - [[concepts/llm-architecture-complexity]] — LLM Architecture Complexity — Attention mechanism proliferation, composability; Raschka's KV cache analysis, RLVR/PRM predictions, shrinking harnesses
 - [[concepts/llm-assisted-development]] — LLM-Assisted Development
@@ -2814,6 +2817,7 @@
 - [[concepts/vllm]] — vLLM
 - [[concepts/voice-agent-evaluation]] — Voice Agent Evaluation; new page with Six-Pillar Framework (TTS quality, conversation quality, tool usage, intelligence, compliance, reliability), production targets, industry-specific weighting (June 24)
 - [[concepts/vulnhunter-agentic-code-security]] — VulnHunter agentic AI security tool by Capital One (Claude Code skills, falsification engine, Apache 2.0)
+- [[concepts/weathernext]] — WeatherNext — Google DeepMind AI weather forecasting model; breakthrough cyclone prediction with extra day of warning; open-sourced (Aug 2026)
 - [[concepts/waluigi-effect]] — A phenomenon where training an LLM to satisfy a desirable property P makes it easier to elicit the exact opposite pro...
 - [[concepts/warm-start-optimization]] — Warm Start Optimization
 - [[concepts/wayfinder-router]] — Wayfinder Router — Deterministic, offline LLM query router; scores prompt structural complexity (0.0–1.0) and routes easy prompts to local models, hard ones to cloud models with no model call needed (June 30)

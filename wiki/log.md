@@ -1,3 +1,10 @@
+## [2026-08-10] active-crawl | 4 concept pages: AI Agent Permission Oversight (ScaleX study), LLM-Assisted Learning (Raducu methodology), WeatherNext (DeepMind cyclone forecasting), Genesis Open Models Initiative (DOE/ANL)
+
+| 2026-08-10 | concepts/ai-agent-permission-oversight.md | created | ScaleX study on human oversight failures in AI agent command approval (338 HN pts) |
+| 2026-08-10 | concepts/llm-assisted-learning.md | created | Laurentiu Raducu's systematic LLM-assisted learning methodology (659 HN pts) |
+| 2026-08-10 | concepts/weathernext.md | created | Google DeepMind WeatherNext AI cyclone forecasting breakthrough (441 HN pts) |
+| 2026-08-10 | concepts/genesis-open-models-initiative.md | created | U.S. DOE Genesis Open Models Initiative at Argonne National Lab (353 HN pts) |
+
 ## [2026-08-10] newsletter-wiki-ingest | 6 takes + 1 ref (TileRT InferenceX, Claude Code 5 guide, Lambert lessons, Hark Handoff, Seedance 2.5, Eve entity; Google TPU ref)
 - **Update: [[entities/tilert]]** — Added 'SemiAnalysis InferenceX Benchmark (Aug 2026)' section: 340 tok/s/user on 8x B200 node at 8k/1k (1.9x vs previous best 181.4 tok/s/user on GB300 NVL72 NVFP4+MTP); 494.2 tok/s/user at 1k/1k FP8 (3.6x); PD separation (vLLM/SGLang prefill + TileRT decode engine); single-request-per-node constraint; vs Cerebras/Groq LPU/SambaNova. Source: raw/newsletters/2026-08-10-ultra-high-interactivity-on-nvidia-gpus-tilert-inferencex.md.
 - **Update: [[concepts/claude-code/claude-code-steering-methods]]** — Added 'Claude Code 5 Setup Guidance (Aug 2026)': Anthropic deleted 80% of Claude Code system prompt for 5-series and it performed better (Thariq Shihipar); CLAUDE.md flooding with junk context; safe-mode baseline + trim customizations; move CLAUDE.md info into skills; cross-session message sending. Source: raw/newsletters/2026-08-09-claude-code-5.md.
