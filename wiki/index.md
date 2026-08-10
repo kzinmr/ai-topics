@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (889 pages)
+## Entities (890 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -895,7 +895,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1963 pages)
+## Concepts (1964 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2208,7 +2208,8 @@
 - [[concepts/model-spec-midtraining]] — Model Spec Midtraining (MSM)
 - [[concepts/model-training-as-code]] — Model Training as Code (MTaC) — Imperative code representation of end-to-end model training pipelines; composability, consensus, provenance via Flyte + W&B trunk-based development
 - [[concepts/model-switching-in-graph-workflows]] — Model Switching in Graph Workflows — KV cache invalidation, context carryover techniques, Latent Briefing applicability, framework comparison (LangGraph/AutoGen/LlamaIndex/ADK), best practices for multi-model graph nodes
-- [[concepts/model-welfare]]
+- [[concepts/model-welfare]] — Model Welfare — Engineering discipline for AI agent well-being: seats vs sessions, Laurels recognition, handoffs instead of /exit, structural blamelessness (Yegge, Aug 2026)
+- [[concepts/modelcrafting]] — Modelcrafting — AI agents autonomously shaping, valuing, and improving other models; coined by Thoughtful Lab (Apr 2026)
 - [[concepts/modern-retrieval-toolkit]] — Modern Retrieval Toolkit
 - [[concepts/modernbert]] — modernbert
 - [[concepts/moe-train-inference-mismatch]] — MoE Train-Inference Mismatch
@@ -2832,7 +2833,6 @@
 - [[concepts/whisper]] — Whisper
 - [[concepts/why-harness-development-boom]] — Why Agent Harness Development Is Accelerating
 - [[concepts/wheelhouse]] — Wheelhouse — Steve Yegge's bespoke Emacs-based agentic orchestration harness for Wyvern MMO (18 crew + fleet + role agents, Beads backbone)
-- [[concepts/model-welfare]] — Model Welfare — Engineering discipline for AI agent well-being: seats vs sessions, Laurels recognition, handoffs instead of /exit, structural blamelessness (Yegge, Aug 2026)
 - [[concepts/wish-factory]] — Wish Factory — Pattern where end-user wishes (bug reports, feature requests) are auto-implemented by AI agents
 - [[concepts/wikimedia-enterprise]] — Wikimedia Enterprise
 - [[concepts/windows]] — Windows

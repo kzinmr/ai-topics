@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-08-10] watchdog | Auto-fix: index dedup, modelcrafting registration, header counts, frontmatter tags
+
+### Changes
+- **Index dedup**: Removed duplicate `[[concepts/model-welfare]]` entry (was listed twice — bare at line 2211 + described at line 2835 in drifted position). Kept single entry with description at alphabetical position.
+- **Coverage gap**: Registered `[[concepts/modelcrafting]]` in index.md (concepts section, after model-welfare / before modern-retrieval-toolkit).
+- **Header counts corrected** (per section-entry counts, baseline 4b): Entities 889→890, Concepts 1963→1964.
+- **Frontmatter misplaced tag-list fix** (2 files, structural defect — tags were lost as YAML null):
+  - `concepts/coding-agents/normalization-of-deviance-in-ai-coding.md`
+  - `concepts/post-training/rl-harness-lifecycle.md`
+- **Verified clean**: validate_index.py exit 0; 0 pipe/triple-bracket/line-number corruption; 0 genuine ghost entries; log header at line 1; 0 standalone pipe lines in log.
+- **Not auto-fixed (escalated)**: 26 pages missing `created:` frontmatter field (10+ files → human-directed batch); 6 known entity duplicate pairs (pre-existing, dedup merge needs human decision); weekly graph report items (472 orphans, 2,487 broken links, 976 tag violations — tag-audit-weekly + human review scope).
+
+---
+
 ## [2026-08-10] x-bookmarks-ingest | 2 bookmarks: Qwen-MM-Plugins entity + Graph Engineering 14-step enrichment + 0xMovez AI entity
 
 - **Create: [[entities/qwen-mm-plugins]]** — Qwen-MM-Plugins: Alibaba open-source multimodal plugin system for agent harnesses (572 stars, Apache-2.0). 6 capabilities: core (vision/OCR/grounding/ASR/web search), video-memory (hierarchical graph for long videos), video-edit (editing + generation), blender (3D via 22 tools), freecad (CAD via 14 tools), edu-agent (skill-only). Skill + MCP server architecture. Supports Claude Code, Codex, Qoder, OpenClaw, Qwen Code, Gemini CLI. Links to [[entities/qwen]], [[concepts/agent-plugins-1-0-0]]. Source: raw/articles/2026-07-29_qwen_qwen-mm-plugins.md.

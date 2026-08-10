@@ -3,11 +3,11 @@ title: "RL-Harness Lifecycle"
 status: draft
 type: concept
 tags:
-sources: []
   - concept
   - reinforcement-learning
   - harness-engineering
   - architecture
+sources: []
 aliases:
   - rl-harness-lifecycle
   - rl-harness-feedback-loop
