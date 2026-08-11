@@ -61,7 +61,7 @@
 - [[entities/anthropic-computer-use]] — Anthropic Computer Use
 - [[entities/anthropic-labs]] — Anthropic Labs
 - [[entities/antirez-com]] — Salvatore Sanfilippo (antirez)
-- [[entities/antoine-buteau]] — Antoine Buteau
+- [[entities/antoine-buteau]] — Antoine Buteau — BizOps leader (Shakepay, ex-Replit, ex-Coveo) and prolific writer: 10-part Automation Series, AI Control Plane Series, AI-Native GTM, 100+ Lessons From profiles
 - [[entities/antoine-chaffin]] — Antoine Chaffin
 - [[entities/anyscale]] — Anyscale — Company behind Ray distributed computing framework; enterprise ML infrastructure at scale (Ant Group: 60K cores, 5K nodes)
 - [[entities/applied-intuition]] — Applied Intuition
@@ -791,7 +791,7 @@
 - [[entities/tedium-the-dull-side-of-the-internet]] — Ernie Smith (Tedium)
 - [[entities/teknium]] — Ryan (Teknium)
 - [[entities/telegram]] — Telegram
-- [[entities/telegram-managed-bots]] — Telegram Managed Bots
+- [[entities/telegram-managed-bots]] — Telegram Managed Bots — No-code multi-tenant bot creation platform (Bot API 9.6): manager bots, getManagedBotToken, share links, Bot-to-Bot Communication
 - [[entities/tencent]] — Tencent
 - [[entities/tencent-hy3]] — Tencent Hy3 Preview
 - [[entities/teortaxestex]] — TeortaxesTex

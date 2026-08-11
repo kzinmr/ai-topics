@@ -2,8 +2,8 @@
 title: Antoine Buteau
 type: entity
 created: 2026-05-02
-updated: 2026-05-02
-status: L2
+updated: 2026-08-11
+status: L3
 tags:
   - person
   - coding-agents
@@ -13,11 +13,14 @@ tags:
   - architecture
   - strategy-execution
   - technical-literacy
+  - ai-governance
+  - human-in-the-loop
 aliases:
   - anbuteau
   - Antoine Buteau
 sources:
   - https://www.antoinebuteau.com/
+  - https://www.antoinebuteau.com/about/
   - https://x.com/anbuteau
   - raw/articles/2026-05-02_antoine-buteau_automation-series-1.md
   - raw/articles/2026-05-02_antoine-buteau_automation-series-2.md
@@ -33,18 +36,18 @@ sources:
 
 # Antoine Buteau
 
-**Antoine Buteau** (@anbuteau) is a BizOps leader and writer whose work sits at the intersection of automation architecture, organizational power dynamics, individual agency, and technical leadership. He is currently **Head of BizOps at Shakepay** (Canada's leading Bitcoin rewards platform) and was previously **Head of BizOps at Replit**. Before moving into tech leadership, he spent five years building a boutique consulting firm specialized in strategy execution, and began his career in professional services implementing enterprise search engines.
+**Antoine Buteau** (@anbuteau) is a BizOps leader and writer whose work sits at the intersection of automation architecture, organizational power dynamics, individual agency, and technical leadership. He is currently **Head of BizOps at Shakepay** (Canada's leading Bitcoin rewards platform) and was previously **Head of BizOps at Replit**. His career path — **Coveo → The PNR → Replit → Shakepay** — moves through enterprise search, strategy consulting, developer tools, and fintech, all unified by the same question he names on his About page: "how do smart people turn ambiguity into action?"
 
-His writing — published at [antoinebuteau.com](https://www.antoinebuteau.com/) — spans hundreds of articles across multiple series, most notably a 10-part **Automation Series** that has become a reference framework for building safe, scalable AI-augmented workflows. He lives in Quebec with his wife, two kids, and a dog.
+His writing — published at [antoinebuteau.com](https://www.antoinebuteau.com/) — has grown into a large public notebook: **3,900+ posts** spanning essays, 100+ "Lessons From" profiles of operators and thinkers, book notes, daily digests, and PDF libraries. His flagship 10-part **Automation Series** has become a reference framework for building safe, scalable AI-augmented workflows, and a newer 10-part **AI Control Plane** series extends the same discipline to AI governance at the organizational level. He lives in Quebec City with his wife, two kids, and a dog.
 
 ## Career
 
 | Period | Role |
 |--------|------|
-| Early Career | Professional services — implemented enterprise search engines |
-| ~5 years | Founder, boutique consulting firm specializing in strategy execution |
-| Past | Head of BizOps at **Replit** |
-| Current | Head of BizOps at **Shakepay** (Canada) |
+| Early Career | **Coveo** — professional services implementing enterprise search engines (Quebec-based enterprise search/AI company) |
+| ~5 years | **The PNR** — founder, boutique consulting firm specializing in strategy execution |
+| Past | Head of BizOps at **Replit** (developer platform; AI-assisted coding era) |
+| Current | Head of BizOps at **Shakepay** (Canada's Bitcoin rewards platform) |
 
 ## Writing Series
 
@@ -67,11 +70,20 @@ Buteau's flagship series — the key work documented in this wiki — delivers a
 
 ### Other Series
 
-- **Agency Series** — Individual agency within organizations; how to operate effectively regardless of formal authority
-- **Power Series** — Organizational power dynamics, influence, and navigating corporate structures
-- **Technical Literacy Series** — Making technical concepts accessible to non-engineers in business roles
-- **Live Player Series** — Patterns for being an effective, engaged professional ("live player" vs "dead player")
-- **"Lessons From" Profiles** — Hundreds of profiles distilling lessons from industry leaders across tech, finance, and other domains
+- **AI Control Plane Series** (10 parts, May 2026) — The management layer around AI systems: identity & permissions, tool access & action boundaries, model routing & capability tiers, budgets & usage controls, memory & context governance, evals & release gates, observability & audit logs, escalation & human review, and a closing audit. Core thesis: AI needs *runtime* governance ("guardrails, not gates"), not just policy documents. Includes standalone deep dives: "AI Costs Need a Control Plane" and "AI Inference Gateways and Control Planes — Industry Deep Dive".
+- **AI-Native GTM Series** (8+ parts) — How go-to-market systems change when workflows become agentic; positions GTM as a "revenue learning system" with a "GTM signal layer" and an "AI-native revenue operating model".
+- **The Builder Shift Series** (9 parts) — "SaaS was a compromise": the rise of internal builders, build-around-buy, shadow IT becoming shadow product, the maintenance trap, and what not to build.
+- **Shipping Velocity Series** (8 parts) — Scope as the first velocity lever, decision latency as a hidden tax, rework as design failure, and constraint-focused optimization.
+- **Operating Cadence & Management Systems Series** (10 parts) — Weekly reviews, planning cycles, one-on-ones, staff meetings, operating reviews, decision forums, and information flow as architecture.
+- **Technical Literacy Series** (10 parts) — Why technical judgment is a learnable skill; engineering taste as the meta-skill; the debugging mindset; developer empathy as a technical advantage; why technical literacy is now a leadership skill.
+- **Agency Series** (10 parts) — Agency is not confidence, it's responsibility; judgment makes agency useful; training for agency; the enemies of agency (helplessness, drift, dependency).
+- **Live Player Series** (10 parts) — Patterns for being an effective, engaged professional: independent judgment as an operating asset, option creation beats perfect planning, update faster than the organization, build reality loops.
+- **Power Series** (10 parts) — Power as the ability to make work happen; authority/influence/legitimacy as different currencies; decision rights; the invisible power map; and "AI Is Rewriting the Power Map".
+- **Recurring Patterns Series** — Cross-domain pattern extractions: founders, AI builders, venture capital, product management, leadership, go-to-market, science & technology, and more.
+- **Book Notes** — Summaries of durable books (e.g., *Tape Sucks*, *Stray Reflections*, *Sales Pitch*, *Extend Your Mind*, *The SaaS Sales Method*).
+- **Research & Deep Dives** — Industry maps and paper explainers (Lakehouse analytics platforms; LeAct / "Silent Expert Systems Can Teach Models to Reason"; data labelling industry).
+- **Daily Digest & Monthly Learnings** — Daily reading notes on AI, strategy, operations, and company-building; monthly learning syntheses.
+- **"Lessons From" Profiles** — 100+ profiles distilling lessons from industry leaders across tech, finance, and other domains (e.g., Alex Blania/Worldcoin, Zico Kolter, Guillaume Lample, Aidan Gomez, Bret Taylor); the "Human Performance Edge" synthesis covers 19 patterns across 123 profiles and 5,722 lessons.
 
 ## Key Ideas
 
@@ -113,6 +125,18 @@ Buteau's practical model for AI agents: constrained operators within defined wor
 3. **Assisted Mode** — AI acts on low-risk, humans review rest
 4. **Full Automation** — Low-risk, reversible, well-observed work only
 
+## Recent AI Essays & Paper Explainers
+
+Since the Automation Series, Buteau's AI writing has shifted toward **research explainers** — translating academic papers into operator-relevant lessons — and the **governance layer** around AI systems:
+
+- **"Why AI Coding Agents Fail When Software Gets Real"** (May 2026) — Explainers of the *Constraint Decay* paper (Dente, Satriani & Papotti, arXiv:2605.06445). As constraints stack up (framework → architecture → database → ORM), agent success drops ~30 points (Level 0→3); PostgreSQL caused the steepest decline; the strongest config reached 78.6% assertion pass but only 8.3% pass@1 on complex greenfield tasks. Durable lesson: *functionality is easier than structure* — teams need structural-compliance tests, skeleton repos as scaffolding, and constraint-aware planning. Validates his Automation Series thesis that bounded, structured workflows outperform freestyle agents.
+- **"AI Can Drain the Expert Pipeline Before Anyone Notices"** (Aug 2026) — Nolan Lovett's *Tragedy of the Cognitive Commons* (Human Resource Development Review, Jul 2026): AI raises today's output while quietly removing the junior work that creates tomorrow's experts. Expertise as a reservoir; entry-level work is the inflow; the stock of senior experts can look healthy for years after the flow weakens.
+- **"When AI Makes Execution Cheap, Verification Captures the Value"** (Aug 2026) — Catalini, Hui & Wu's *Some Simple Economics of AGI* (arXiv:2602.20946): execution and value are not the same thing. As agentic systems lower the cost of measurable execution, the scarce input becomes **verification bandwidth**; the gap between the cost-to-automate and cost-to-verify curves creates a **Measurability Gap**. Verification, provenance, and liability capture the value.
+- **"Silent Expert Systems Can Teach Models to Reason"** (Aug 2026) — LeAct explainer: turning the actions of solvers, planners, and controllers into reasoning data by keeping only explanations that help a model recover the expert decision.
+- **"Post-Training Is Where Models Learn Bad Habits"** — On how post-training (not pretraining) is where models acquire undesirable behaviors.
+
+Together these essays form a coherent operator's lens on AI: **bound the agent, verify the output, protect the human pipeline, and govern at runtime.**
+
 ## Key Quotes
 
 > "The fastest way to build bad automation is to treat it as a single category."
@@ -131,18 +155,35 @@ Buteau's practical model for AI agents: constrained operators within defined wor
 
 ## Related Concepts
 
-- Automation architecture
-- Human-in-the-loop design patterns
-- Operationalizing AI confidence scores
-- Bounded agent workflows
-- Workflow boundary mapping (code vs model vs human)
+- [[concepts/harness-engineering]] — His Automation + AI Control Plane series are an operator's view of harness engineering: bounding agents, runtime governance, and human review
+- [[concepts/agentic-engineering]] — Bounded agent workflows and human-in-the-loop as design patterns
+- [[concepts/human-in-the-loop]] — "Human-in-the-Loop Is a Design Pattern, Not a Failure" is a canonical HITL framing
+- [[concepts/managed-agents]] — The AI Control Plane series describes the management layer that managed-agent platforms productize
+- Agent observability — Observability, auditability, and replay (Automation Series #7)
+- Automation architecture — deterministic/probabilistic/accountable work classification
+- Operationalizing AI confidence scores — "decorative confidence scores" critique
+- Workflow boundary mapping — code vs model vs human
+
+## Graph Structure Query
+
+```
+[antoine-buteau] ──author──→ [concept: automation-architecture-framework (Automation Series)]
+[antoine-buteau] ──author──→ [concept: ai-control-plane (AI Control Plane Series)]
+[antoine-buteau] ──teaches──→ [concept: human-in-the-loop]
+[antoine-buteau] ──relates-to──→ [concept: harness-engineering]
+[antoine-buteau] ──relates-to──→ [concept: agentic-engineering]
+```
 
 ## Links
 
-- [antoinebuteau.com](https://www.antoinebuteau.com/) — Personal site and writing
+- [antoinebuteau.com](https://www.antoinebuteau.com/) — Personal site and writing (3,900+ posts: essays, profiles, book notes, digests, PDF libraries)
+- [About](https://www.antoinebuteau.com/about/) — Bio and values (curiosity, grit, integrity)
+- [The AI Control Plane — Series Index](https://www.antoinebuteau.com/the-ai-control-plane-series-index/)
 - [X/Twitter: @anbuteau](https://x.com/anbuteau)
 
 ## Sources
 
-- [antoinebuteau.com](https://www.antoinebuteau.com/)
+- [antoinebuteau.com](https://www.antoinebuteau.com/) (scraped 2026-08-11)
+- [About page](https://www.antoinebuteau.com/about/) (scraped 2026-08-11)
 - Automation Series raw articles in `wiki/raw/articles/`
+- Recent essay URLs: why-ai-coding-agents-fail-when-software-gets-real / ai-can-drain-the-expert-pipeline-before-anyone-notices / when-ai-makes-execution-cheap-verification-captures-the-value / the-ai-control-plane-series-index
