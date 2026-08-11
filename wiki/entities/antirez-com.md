@@ -52,6 +52,7 @@ His 2025 project voxtral.c — a bare-metal, pure-C implementation of a multimod
 | 2026 | Published "First Token Cutoff LLM sampling" — critiques nucleus sampling (top-p) and proposes a new algorithm to avoid selecting suboptimal tokens that push generation toward hallucination |
 | 2026 | Published "Being Linux Torvalds" — draws parallels between Linus Torvalds' role as project leader and the role programmers should assume when working with AI agents |
 | 2026-05 | Released DS4 (DwarfStar 4) — local AI inference project running DeepSeek V4 Flash with asymmetric 2/8-bit quantization on consumer Macs. Achieved viral growth in first week. |
+| 2026-08 | Released H3-metal (h3.c) — native MiniMax-H3 video/multimodal inference engine for Apple Silicon, written in C using the Metal GPU API, with zero Python or framework dependencies. |
 
 ## Core Ideas
 
@@ -141,6 +142,7 @@ Sanfilippo crafts his own data structures (SDS for strings, Rax for radix trees)
 - **LLM sampling research**: Investigating token probability distributions, critiquing nucleus sampling, and proposing first-token cutoff methods to reduce hallucination risk
 - **Joy-driven development**: Left and returned to Redis based on whether the work brought fulfillment
 - **Local AI frontier**: DS4 proves that quasi-frontier models can run on consumer hardware, challenging the cloud-only paradigm
+- **Native video generation on Apple Silicon**: H3-metal (h3.c) extends local AI from text to video/multimodal generation, using direct Metal API access for performance without framework overhead
 
 ### DS4 (DwarfStar 4) — Local Inference Frontier (May 2026)
 

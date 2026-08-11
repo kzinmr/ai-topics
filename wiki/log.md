@@ -1,3 +1,27 @@
+## [2026-08-11] active-crawl (11:00) | 5 new pages + 2 enrichments
+
+**Discovery**: 3 parallel subagents — HN Algolia (15 trending articles, 46 AI-relevant with >=10 pts), X/Twitter xurl (10 substantive topics), Wiki gap analysis (11 coverage gaps across 10 key areas). Selected 5 topics with strong signal AND genuine wiki gap.
+
+**Pages created**:
+- [[concepts/inference/h3-metal-apple-silicon]] — antirez's native MiniMax-H3 inference for Apple Silicon in C with Metal GPU API (HN 293 pts, Aug 11)
+- [[concepts/local-llm/needle2-agentic-edge-llm]] — Cactus Compute's 14MB/45M-param agentic LLM for edge devices with tool calling (HN 358 pts, Aug 10)
+- [[concepts/coding-agents/programming-language-tokenizer-efficiency]] — Dan Luu's empirical challenge to 'dense languages are more token-efficient' for coding agents (HN 193 pts, Aug 10)
+- [[concepts/coding-agents/docker-sandboxes-ai-agents]] — Docker's official disposable microVM sandboxes for AI agents (HN 657 pts, Aug 10)
+- [[concepts/coding-agents/databricks-ai-coding-cost-management]] — Databricks' enterprise AI coding cost management: efficiency frontier, model routing, AI Gateway (HN 315 pts, Aug 7)
+- [[entities/cactuscompute]] — Entity page for Cactus Compute (Needle2 creator)
+
+**Pages enriched**:
+- [[entities/antirez-com]] — Added H3-metal timeline entry and engineering philosophy note
+- [[entities/databricks]] — Added AI Coding Cost Management at Scale section
+
+**Raw articles saved**: 2026-08-11_h3-metal.md, 2026-08-10_needle2-agentic-llm.md, 2026-08-10_dan-luu-pl-tokens-coding-agents.md, 2026-08-10_docker-sandboxes-ai-agents.md, 2026-08-07_databricks-managing-ai-coding-costs.md
+
+**Topics considered but deferred** (no accessible source article):
+- NVIDIA NOOA Agent Framework (X 164 bookmarks) — no public blog post yet
+- AISI Model Social-Engineering Incident (X 348 bookmarks) — source is tweet only
+- AI Price War / FLI Safety Index / Black Hat AI Cyberattack — reference topics for future crawls
+
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

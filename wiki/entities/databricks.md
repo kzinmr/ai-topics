@@ -2,7 +2,7 @@
 title: 'Databricks'
 type: entity
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-08-11
 tags: [company, platform, mlops]
 aliases:
   - databricks-inc
@@ -167,6 +167,13 @@ Databricks published an internal benchmark evaluating coding agents (Claude Code
 Key finding: token price is a poor proxy for task cost — harness architecture and model routing matter more. Databricks is using these insights to drive task-aware model selection via Omnigent and Unity AI Gateway.
 
 Full concept page: [[concepts/coding-agents/databricks-coding-agent-benchmark]]
+
+
+### AI Coding Cost Management at Scale (August 2026)
+
+Databricks published a comprehensive guide to managing AI coding costs at enterprise scale, drawing on internal experience and conversations with Stripe, Coinbase, Uber, and Ramp. The framework identifies four key cost levers: moving to efficient open-source models, dynamic request/task routing, progressive spend gates with visibility and downshifting, and reducing token overhead. Key infrastructure includes the Omnigent meta-harness for model independence and Unity AI Gateway with Smart Routing, which reduces average task cost by 30%+ while maintaining quality. The approach achieves a "dual mandate" of broad AI access with cost containment.
+
+Full concept page: [[concepts/coding-agents/databricks-ai-coding-cost-management]]
 
 ### Known Challenges
 

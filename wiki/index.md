@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (890 pages)
+## Entities (893 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -124,6 +124,7 @@
 - [[entities/buildy]] — Buildy — AI agent app runtime; "software that's finally yours"; real URL + persistent storage; works across ChatGPT/Claude/Codex/OpenClaw; MCP Apps inline rendering
 - [[entities/bytedance]] — ByteDance; Seedance 2.5 video model (30s clips + audio single-pass) + FT report of 10T-param pre-training (3x Kimi K3) (Aug 10)
 - [[entities/byterover]] — byterover
+- [[entities/cactuscompute]] — Cactus Compute — Developer of Needle2 14MB agentic LLM for edge devices (Aug 2026)
 - [[entities/caisi]] — Center for AI Standards and Innovation (CAISI)
 - [[entities/callosum]] — Callosum
 - [[entities/camelai]] — camelAI — Open-source coding agent platform; serverless architecture on Cloudflare Durable Objects + pi harness + Code Mode JS sandbox
@@ -895,7 +896,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1964 pages)
+## Concepts (1991 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -987,6 +988,7 @@
 - [[concepts/apple-speechanalyzer]] — Apple SpeechAnalyzer — Next-generation on-device speech recognition API (iOS 26/macOS 26), 2.12% WER on LibriSpeech, 3-4× improvement over legacy SFSpeechRecognizer
 - [[concepts/bonsai-27b]] — Bonsai 27B — Prism ML's 27B-parameter model running on phones via extreme quantization
 - [[concepts/claude-memory-heist]] — Claude Memory Heist — Prompt injection attack exfiltrating user data from Claude's memory system
+- [[concepts/coding-agents/databricks-ai-coding-cost-management]] — Managing AI Coding Costs at Scale — Databricks (Aug 2026): cost levers, model routing, AI Gateway pattern for enterprise agent coding spend optimization
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Databricks coding agent benchmark — real-world evaluation of coding agents on production codebases
 - [[concepts/claude/fable-safety-classifiers-critique]] — Claude Fable 5 safety classifiers critique — overzealous classifiers make Fable unusable for CS research
 - [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
@@ -1444,6 +1446,7 @@
 - [[concepts/coding-agents/coding-agents-complexity-budgets]] — Coding Agents & Complexity Budgets
 - [[concepts/coding-agents/cursor-composer-2-5]] — Cursor Composer 2.5
 - [[concepts/coding-agents/cursor-ide]] — Cursor IDE
+- [[concepts/coding-agents/docker-sandboxes-ai-agents]] — Docker Sandboxes — Disposable isolated microVM environments for AI agents (Aug 2026): defense-in-depth security, ephemeral isolation, agent-native APIs
 - [[concepts/coding-agents/evaluation-coding-agents]] — Coding Agent Evaluation
 - [[concepts/coding-agents/gold-diff-distillation]] — Gold Diff Distillation
 - [[concepts/coding-agents/hf-cli]] — hf CLI (Hugging Face CLI)
@@ -1455,6 +1458,7 @@
 - [[concepts/coding-agents/normalization-of-deviance-in-ai-coding]] — Normalization of Deviance in AI Coding
 - [[concepts/coding-agents/open-swe]] — Open SWE
 - [[concepts/coding-agents/pi-autoresearch]] — pi-autoresearch — Generalizing Autoresearch Beyond Model Training
+- [[concepts/coding-agents/programming-language-tokenizer-efficiency]] — Programming Language Tokenizer Efficiency for Coding Agents (Aug 2026): Dan Luu's empirical challenge to token-efficiency claims across programming languages
 - [[concepts/coding-agents/protestware-for-coding-agents]] — Protestware for Coding Agents
 - [[concepts/coding-agents/qm-multiplayer-agent-harness]] — qm Multiplayer Agent Harness — YC-backed open-source framework for orchestrating multiple AI agents collaboratively on real work tasks; works in Slack and on the web (584 HN pts)
 - [[concepts/coding-agents/ramp-inspect]] — Ramp Inspect (Background Coding Agent)
@@ -1979,6 +1983,7 @@
 - [[concepts/inference-speed-development]] — Inference Speed Development
 - [[concepts/inference-time-compute]] — Inference-Time Compute
 - [[concepts/inference-time-scaling]] — Inference-Time Scaling
+- [[concepts/inference/h3-metal-apple-silicon]] — H3-metal — Native MiniMax-H3 inference for Apple Silicon (Aug 2026): C implementation using Metal GPU API by antirez, radical simplicity, benchmark comparisons
 - [[concepts/inference/llama-cpp]] — llama.cpp
 - [[concepts/inference/sglang]] — SGLang (Structured Generation Language)
 - [[concepts/inference/tgi]] — Text Generation Inference (TGI)
@@ -2106,6 +2111,7 @@
 - [[concepts/local-llm/local-llm-server-setup-on-dgx-spark]] — Local LLM Server Setup on DGX Spark
 - [[concepts/local-llm/model-distillation]] — Model Distillation
 - [[concepts/local-llm/model-quantization]] — Model Quantization for Local LLMs
+- [[concepts/local-llm/needle2-agentic-edge-llm]] — Needle2 — 14MB agentic LLM for edge devices (Aug 2026): Cactus Compute's 45M-param model with tool calling for phones, wearables, robots
 - [[concepts/local-llm/ollama]] — Ollama — Local LLM Runner
 - [[concepts/local-llm/self-hosting-ai-development]] — Self-Hosting AI for Development
 - [[concepts/local-llm/server-dgx-spark]] — Local LLM Server Setup on DGX Spark
