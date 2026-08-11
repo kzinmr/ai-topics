@@ -6,7 +6,7 @@ aliases:
   - text-to-image
   - image-synthesis
 created: 2026-04-25
-updated: 2026-04-29
+updated: 2026-08-11
 tags:
   - concept
   - image-generation
@@ -14,6 +14,7 @@ tags:
   - multimodal
 status: complete
 sources:
+  - raw/articles/minimaxir.com--2025-11-nano-banana-prompts--a1691cff.md
   - url: "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana"
     title: "The Ultimate Nano Banana Prompting Guide (Google Cloud)"
   - url: "https://arxiv.org/abs/2204.06125"
@@ -44,6 +45,7 @@ Training through competition between generator and discriminator:
 ### Autoregressive Models
 - Parti (Google): Transformer-based
 - DALL-E 1/2: VQ-VAE + Transformer
+- **Nano Banana** (Gemini 2.5 Flash Image, 2025): Google's autoregressive image model (1,290 tokens/image); Gemini 2.5 Flash-derived text encoder gives exceptional prompt adherence (Markdown rule lists, JSON character descriptions, buzzword composition control — see [[entities/minimaxir-com]] for Max Woolf's Nov 2025 prompt-engineering analysis)
 
 ## Feature Comparison (2026)
 
@@ -82,7 +84,8 @@ Negative prompt: distorted hands, 6 fingers, deformed face, low quality, blurry
 
 ## Related Concepts
 
-- [[concepts/nano-banana-2]] — Google's latest image generation model
+- [[concepts/nano-banana-2]] — Google's latest image generation model (successor to Nano Banana)
+- [[entities/minimaxir-com]] — Max Woolf's Nano Banana prompt-engineering methodology (Nov 2025)
 - [[concepts/reverse-engineering]] — Image generation model analysis
 - [[concepts/inference/sglang]] — Inference optimization (also applied to image generation)
 

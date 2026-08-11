@@ -542,7 +542,7 @@
 - [[entities/mimi]] — Mimi (Kyutai)
 - [[entities/mimo]] — MiMo (Xiaomi)
 - [[entities/minimax]] — MiniMax; H3 open weights (first open model to top Artificial Analysis video ranking) + MLX port for Apple Silicon (Aug 2026)
-- [[entities/minimaxir-com]] — Max Woolf
+- [[entities/minimaxir-com]] — Max Woolf; Nano Banana prompt-engineering analysis (Nov 2025)
 - [[entities/mira-murati]] — Mira Murati
 - [[entities/mistral-ai]] — Mistral AI; Shieldstral 3B on-device safety model (Aug 2026)
 - [[entities/mistral-voxtral-tts]] — Mistral Voxtral TTS
@@ -1159,7 +1159,7 @@
 - [[concepts/ai-generated-code-policies]] — AI-Generated Code Policies — Governance rules for AI-authored code contributions in open source projects; Godot engine ban case study
 - [[concepts/ai-generated-issues-in-oss]] — AI-Generated Issues in Open Source
 - [[concepts/ai-governance-political-pressure]] — AI Governance Under Political Pressure — Anthropic-Trump Case
-- [[concepts/ai-image-generation]] — AI Image Generation
+- [[concepts/ai-image-generation]] — AI Image Generation; Nano Banana prompt-engineering findings (2025)
 - [[concepts/ai-in-military-wargames]] — AI in Military Wargames
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
 - [[concepts/ai-industry-economics]] — AI Industry Economics — The June 2026 Financial Reckoning + GLM 5.2 margin collapse (2026-07-07)

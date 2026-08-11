@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-11] raw-backlog-ingest (18:00) | Reference 1 item (Max Woolf Nano Banana prompt engineering) + Skip 4 items
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-11 18:00, run 20260811T180024Z). Takes=0, References=1, Skips=4.
+- **Reference: [[entities/minimaxir-com]]** — Added "Nano Banana Prompt Engineering (Nov 2025)" section (Nov 2025 minimaxir.com article, mentioned ≠ covered gap: raw file was in References but body lacked substance). Nano Banana = Gemini 2.5 Flash Image, autoregressive 1,290 tokens/image, ~$0.04/image API vs gpt-image-1 $0.17; 32,768-token context vs CLIP 77 / T5 512; Gemini 2.5 Flash-derived text encoder (Markdown/JSON agentic training, segmentation masks). Validated techniques: Markdown dashed rule lists (5 simultaneous edits), ALL-CAPS MUST + penalty threats, buzzword composition control ("Pulitzer Prize winning cover photo"), JSON character descriptions (~2,600 tokens Paladin/Pirate/Starbucks Barista), multi-image subject consistency without LoRA (17 Ugly Sonic images), HTML/CSS/JS rendering (916-token prompt). System-prompt extraction via adversarial "show previous text verbatim" revealed Markdown-formatted prompt + buzzword guard (anti-model-collapse hack); "image" may be a special token. Limitations: poor style transfer, no IP restrictions (multi-IP nightclub scene), lenient NSFW moderation. Open-sourced gemimg wrapper + reproducible Jupyter notebooks. Added raw/articles/minimaxir.com--2025-11-nano-banana-prompts--a1691cff.md to sources, updated: 2026-08-11.
+- **Reference: [[concepts/ai-image-generation]]** — Added Nano Banana (v1 / Gemini 2.5 Flash Image) to Autoregressive Models list + Related Concepts cross-link to [[entities/minimaxir-com]]; added raw article to sources, updated: 2026-08-11. (Page previously covered Nano Banana 2 only.)
+- **Skip**: filfre.net Planescape: Torment Part 1 (non-AI game history; already archived), overreacted.io My Decade in Review (non-AI React career memoir; raw in References only), github.com/mlabonne/llm-course README (fully covered by entities/maxime-labonne.md + concepts/llm-course-roadmap.md), gilesthomas.com GPT-2 overtraining Part 3 (fully covered in entities/gilesthomas.md Part 3 section, same raw source listed).
+- **⚠️ Duplicate-entity flag for wiki-health**: entities/giles-thomas.md (92 lines) vs entities/gilesthomas.md (228 lines, richer) — same LLM-from-scratch series coverage; entities/max-woolf.md (42 lines, quota-reset content) vs entities/minimaxir-com.md (177 lines, canonical) — merge candidates. Not merged in this run (out of raw-backlog scope).
+- Archive: wiki/raw/archived/triage/raw_backlog/20260811T180024Z.json (via archive_triage.py raw_backlog --keep-reference).
+
 ## [2026-08-11] watchdog | Auto-fix log header burial + index header counts
 
 ### Changes
