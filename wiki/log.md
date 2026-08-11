@@ -1,6 +1,17 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-11] raw-backlog-ingest (22:00) | Duplicate batch — all 5 articles already processed at 18:00 (tracking registry fix applied)
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-11 22:00, run 20260811T220022Z). Takes=0, References=0, Skips=5. **No wiki content changes.**
+- All 5 selected articles are exact repeats of the 2026-08-11 18:00 batch (20260811T180024Z; log entry below; archive wiki/raw/archived/triage/raw_backlog/2026-08-11_20260811T180024Z.json):
+  1. `filfre.net--2026-05-planescape-torment-part-1-from-the-tabletop` — skip (non-AI: 1999 CRPG game history)
+  2. `overreacted.io--my-decade-in-review` — skip (non-AI: Dan Abramov personal memoir; entities/overreacted-io.md has raw ref)
+  3. `github.com--mlabonne-llm-course` — skip (already covered: entities/maxime-labonne.md + concepts/llm-course-roadmap.md)
+  4. `gilesthomas.com--2026-07-why-do-openai-gpt2-weights-beat-mine-3-overtraining` — skip (fully captured in entities/gilesthomas.md "Part 3 — Testing Overtraining" section: 6.4B tokens, test loss 3.325897 vs OpenAI small 3.499677, 2-epoch 3.324953, overtraining didn't help instruction-following)
+  5. `minimaxir.com--2025-11-nano-banana-prompts` — skip as duplicate of 18:00 reference (verified: entities/minimaxir-com.md "Nano Banana Prompt Engineering (Nov 2025)" section + concepts/ai-image-generation.md Nano Banana v1 entry both present)
+- **Root cause + fix**: the 18:00 agent did not mark the 5 files `status: done` in `~/.hermes/processed_raw_articles.json`, so the 22:00 collect re-selected them (same failure class as the 14:00 incident). This run marked all 5 as `done` in BOTH the top-level tracking and the `processed_articles` sub-registry, with decision=skip and processed_at, so future runs will exclude them. Archive run confirmed all URLs already in archive_index (dedup, 0 new).
+- Triage JSON: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (5 skip decisions, run 20260811T220022Z).
+
 ## [2026-08-11] skeleton-enrich-daily | L2→L3: Telegram Managed Bots + Antoine Buteau
 
 - **[[entities/telegram-managed-bots]]** (L2→L3, 99→158 lines): Fixed misclassification (was `type: concept` in entities/ with empty tags + self-referencing wikilinks). Now `type: entity`, tags from taxonomy (platform, tool, multi-tenancy, api, managed-agents, agent-orchestration). Added: official managed-bot lifecycle from Telegram docs (BotFather Bot Management Mode → `t.me/newbot/{manager}/{username}` share links → `managed_bot`/ManagedBotUpdated events → getManagedBotToken takeover; third-party manager bots enable marketplace/SaaS models), Security & Abuse Prevention (token custody + replaceManagedBotToken, spam amplification risk, Bot-to-Bot Communication Mode as prompt-injection surface, Privacy Mode), Ecosystem & Adoption (3,362 bookmarks / 1.28M impressions launch signal, Bot API 9.6 surface), comparison table vs Anthropic Managed Agents, Graph Structure Query. Fixed `[[browser-agent/death-of-browser]]` → `[[concepts/browser-agent/death-of-browser]]`; replaced self-links with [[entities/telegram]] + [[concepts/telegram-bots]]. Sources: core.telegram.org/bots/features (scraped 2026-08-11) + existing raw articles. TODO items resolved.
