@@ -196,6 +196,7 @@
     "https://danluu.com/julialang/",
     "https://danluu.com/latency-mitigation/",
     "https://danluu.com/nothing-works/",
+    "https://danluu.com/programming-books/",
     "https://danluu.com/startup-options/",
     "https://daringfireball.net/2018/12/electron_and_the_decline_of_native_apps",
     "https://daringfireball.net/2025/12/meta_says_fuck_that_metaverse_shit",
@@ -1140,6 +1141,7 @@
     "https://open.substack.com/pub/swyx/p/aiewf-daily-dispatch-agency",
     "https://open.substack.com/pub/swyx/p/ainews-ai-is-eating-finance-aie-nyc",
     "https://open.substack.com/pub/swyx/p/ainews-anthropic-raises-965b-series",
+    "https://open.substack.com/pub/swyx/p/ainews-black-forest-labs-flux-3-multimodal",
     "https://open.substack.com/pub/swyx/p/ainews-claude-opus-5-fable-level",
     "https://open.substack.com/pub/swyx/p/ainews-claude-tag-multiplayer-proactive",
     "https://open.substack.com/pub/swyx/p/ainews-codex-usage-up-10x-in-6-months",
@@ -1702,6 +1704,7 @@
     "https://substack.com/app-link/post?...submitLike=true",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2...XajU",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...XajU",
+    "https://substack.com/app-link/post?publication_id=1084089&post_id=194979573",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=194979573&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...zQzw",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=199994886&utm_source=post-email-title",
     "https://substack.com/app-link/post?publication_id=1084089&post_id=200249307",
@@ -2075,6 +2078,7 @@
     "https://www.glean.com/blog/the-enterprise-ai-copilot-playbook-for-business-leaders",
     "https://www.glean.com/blog/the-enterprise-cios-definitive-guide-to-selecting-ai-driven-collaboration-software",
     "https://www.glean.com/blog/token-efficiency-enterprise-ai",
+    "https://www.glean.com/blog/top-5-no-code-automation-tools",
     "https://www.glean.com/blog/what-are-digital-assistants",
     "https://www.glean.com/blog/what-are-the-best-ai-tools-for-enterprises-in-2026",
     "https://www.glean.com/blog/what-is-no-code-automation",
@@ -2467,5 +2471,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-10T18:16:59.636019+00:00"
+  "updated": "2026-08-11T10:14:54.047473+00:00"
 }

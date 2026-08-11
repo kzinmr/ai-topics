@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-08-05
+updated: 2026-08-11
 tags:
   - company
   - search
@@ -22,6 +22,7 @@ sources:
   - raw/articles/2026-06-04_glean_introducing-glean-mcp-gateway.md
   - raw/articles/2026-06-05_glean_generative-ai-for-software-engineers-is-more-than-code-completion.md
   - raw/articles/2026-06-22_glean_what-is-no-code-automation.md
+  - raw/articles/2026-05-10_glean_top-5-no-code-automation-tools.md
   - raw/articles/2026-07-01_glean_introducing-independent-agents.md
   - raw/articles/2026-08-01_glean_agent-orchestration-platforms-compared.md
   - raw/articles/2026-08-01_glean_glean-information-retrieval.md
@@ -193,6 +194,24 @@ Source: raw/articles/2026-06-05_glean_generative-ai-for-software-engineers-is-mo
 Glean Assistant gained the ability to **query Snowflake data warehouses directly via natural language**, bridging enterprise search with structured data analytics. Users can ask questions about sales, customer, or operational data stored in Snowflake without SQL knowledge. The integration follows Glean's enterprise context layer pattern — Snowflake tables and views are indexed through the Enterprise Graph, enabling cross-source queries that combine documents, chat logs, and database records in a single interaction.
 
 Source: raw/articles/2026-06-03_glean_query-snowflake-data-in-glean-assistant.md
+
+### Top 5 No-Code Automation Tools (May 2026)
+
+Glean published a five-tool comparison of no-code automation platforms built around a **two-layer architecture** framing: traditional no-code tools form the "execution layer" (fast, deterministic, event-driven workflows) while context-aware AI agents form a complementary "context + reasoning layer" that can read enterprise knowledge, plan multi-step actions, and decide when to invoke no-code tools for reliable execution.
+
+**The five tools evaluated:**
+
+| Tool | Position | Key limitations |
+|------|----------|-----------------|
+| **Zapier** | Best for fast, lightweight automations (SMB/team-level) | Weak governance/RBAC at scale; no native understanding of enterprise knowledge |
+| **Make** (formerly Integromat) | Best for visual power users | Steeper learning curve; rule-based, no organizational context |
+| **Workato** | Best for enterprise-grade iPaaS | Heavier setup/governance overhead; recipes don't understand content or relationships |
+| **Slack Workflow Builder** | Best for in-channel automations | Constrained logic; doesn't span the enterprise stack |
+| **Glean Agent Builder** | No-code AI agents grounded in enterprise context | — (positioned as the context + reasoning layer) |
+
+**Integration pattern**: Agents can trigger workflows in Zapier, Workato, and Make via Glean Actions when a deterministic flow is the right answer; those platforms can also call into a Glean Agent when deeper understanding is needed (e.g., "Summarize all relevant knowledge about this incident" or "Generate a renewal brief"). The article's decision guide: use classic no-code when the process is well understood with structured inputs/outputs ("if X, then Y"); use agents when work is knowledge-heavy, the path isn't fully known up front, or you want a single layer that understands the question, retrieves context, and decides which tools to call.
+
+Source: raw/articles/2026-05-10_glean_top-5-no-code-automation-tools.md
 
 ### No-Code Automation Guide (June 2026)
 

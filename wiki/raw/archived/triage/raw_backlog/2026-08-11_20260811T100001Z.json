@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-11T10:14:54.046891+00:00",
+  "triage_run_id": "20260811T100001Z",
+  "source": "raw_backlog",
+  "summary_ja": "2026-08-11 10:00バッチ（raw_backlog_collect.py --sort ai-hint --limit 5, run 20260811T100001Z）。Takes=0, References=2, Skips=3。reference: (1) entities/dan-luu.md Notable Essays (Non-AI)にprogramming-booksエッセイ追加、(2) entities/glean.mdにTop 5 No-Code Automation Tools (May 2026)サブセクション追加。skip: AINews FLUX 3ブリテン（entities/black-forest-labs.md + concepts/flux-video-action-models.mdでカバー済み）、Pragmatic Engineer Meta記事（entities/meta.md Engineering Culture Collapseでカバー済み）、GPT-Image-2ブリテン重複（concepts/gpt/chatgpt-images-2-0.md等でカバー済み）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-danluu-programming-books",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Programming book recommendations and anti-recommendations",
+      "url": "https://danluu.com/programming-books/",
+      "raw_path": "wiki/raw/articles/danluu.com--programming-books--e046e92b.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 非AIエッセイだが、entities/dan-luu.mdのNotable Essays (Non-AI)セクションに未収録のためreferenceとして追加。本文で「the field is too broad for almost any topic to be required reading for all programmers」という前提から、分野別の推薦・非推薦を提示：アルゴリズム（Dasguptaは入門最適、CLRS/Kleinbergは教科書向きで入門には不適、ランダム化アルゴリズム本は実務で最も活用）、OS（xv6本、LoveのLinux Kernel Development、RussinovichのWindows Internals）、計算機アーキテクチャ（Hennessy & Pattersonの定量的アプローチ、データセンター設計章）、オークション理論/メカニズムデザイン（Krishna、FCCスペクトラムオークション本）、雑多（Google SRE本批判、Refactoring、Peoplewareへの懐疑、Microsoft/Twitter文化本、Galenson）、数学（Apostol推奨、Stewart批判）、ハードウェア（nand2tetris、CMOS、固体デバイス）。非推薦パターン（版を重ねるだけの教科書、入門書としてのCLRS）も明示。既存のNotable Essays (Non-AI)の6エッセイ（startup-options, ballmer, julialang, cocktail-ideas, latency-mitigation, overwatch-gender）と同じく著者完全性のためのカタログ化。",
+      "candidate_wiki_path": "entities/dan-luu.md",
+      "body_excerpt": "# Programming book recommendations and anti-recommendations\nSource: https://danluu.com/programming-books/\nThere are a lot of “12 CS books every programmer must read” lists floating around out there. That's nonsense. The field is too broad for almost any topic to be required reading for all programme"
+    },
+    {
+      "item_id": "raw-backlog-glean-top5-nocode",
+      "source": "raw_backlog",
+      "source_name": "glean.com",
+      "title": "Top 5 no-code automation tools in 2026 (and why you also need AI agents with context)",
+      "url": "https://www.glean.com/blog/top-5-no-code-automation-tools",
+      "raw_path": "wiki/raw/articles/2026-05-10_glean_top-5-no-code-automation-tools.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/glean.mdに「No-Code Automation Guide (June 2026)」セクションはあるが、本記事（2026-05-10）は別内容で未収録のためreferenceとして追加。本文で「Traditional no-code automation tools are excellent for fast, deterministic, event-driven workflows (the execution layer), but they struggle with complex, knowledge-heavy processes that require context, reasoning, and adaptation」という2層アーキテクチャ（実行層 vs コンテキスト+推論層）を提示。5ツール比較：Zapier（軽量・スケールでガバナンス不足）、Make（ビジュアルパワーユーザー向け・学習曲線急）、Workato（エンタープライズiPaaS・セットアップ重）、Slack Workflow Builder（チャネル内軽量・複雑ワークフローに不向き）、Glean Agent Builder（エンタープライズコンテキスト基盤のno-code AIエージェント）。統合パターン（Glean ActionsがZapier/Workato/Makeの決定的フローをトリガー、逆にそれらがGlean Agentを呼び出す）と意思決定ガイド（if X then Y型→no-code、知識集約・探索・適応型→エージェント）を含む。本文はナビゲーションチャーム混入が多いが、L223-449に実質コンテンツあり。",
+      "candidate_wiki_path": "entities/glean.md",
+      "body_excerpt": "# Top 5 no‑code automation tools in 2026 (and why you also need AI agents with context)\n**Source**: [https://www.glean.com/blog/top-5-no-code-automation-tools](https://www.glean.com/blog/top-5-no-code-automation-tools)\nProduct\nWORK AI PLATFORM\nPlatform Overview\nGlean Assistant\nYour personal AI assis"
+    },
+    {
+      "item_id": "raw-backlog-ainews-flux3",
+      "source": "raw_backlog",
+      "source_name": "AINews (Latent Space)",
+      "title": "[AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-black-forest-labs-flux-3-multimodal",
+      "raw_path": "wiki/raw/articles/2026-07-24_ainews-flux3.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 本rawファイルはentities/black-forest-labs.mdのsources frontmatter（L8, L67）に登録済みで、同ページの「FLUX 3 - Multimodal Flow Models (July 2026)」セクション（Self-Flowアーキテクチャ、画像/動画/音声/アクション予測の統一模態、FLUX 3 Video早期アクセス、FLUX-mimicロボティクス連携、Audiテスト）とconcepts/flux-video-action-models.md（FLUX 3 x mimicアーキテクチャ詳細、JEPA世界モデルとの関連、RT-2/Octo/π0との比較）に全文要約済み。本文の主要トピックはFLUX 3で、その他のダイジェスト項目（The Stack v3、Qwen-Audio-3.0-TTS、Etched $300M Series C、EnigmaEval、Hugging Faceインシデント等）は日次ブリテンの簡潔な言及のみで、個別ページ作成に足る本文深さがない。FLUX 3のコアコンテンツは既存ページで完全カバー済みのため新規コンテンツなし。※観察メモ：entities/etched.mdは未作成（Etched Series C $10.3B評価額は本ブリテンのみ言及）。",
+      "candidate_wiki_path": "entities/black-forest-labs.md",
+      "body_excerpt": "# [AINews] Black Forest Labs FLUX 3 - Multimodal Flow Models that beat Seedance 2.0, Gemini Omni and Grok Imagine, and FLUX-mimic video-action robotics model\n**Source**: https://open.substack.com/pub/swyx/p/ainews-black-forest-labs-flux-3-multimodal\n**Date**: 2026-07-24\n**Author**: swyx/AINews\n**Des"
+    },
+    {
+      "item_id": "raw-backlog-ainews-gpt-image-2",
+      "source": "raw_backlog",
+      "source_name": "AINews (Latent Space)",
+      "title": "[AINews] OpenAI launches GPT-Image-2",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194979573",
+      "raw_path": "wiki/raw/articles/substack.com--app-link-post--bf8ae5e3.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 既知の重複（log.md 2026-08-09/08-10エントリ参照）。GPT-Image-2ローンチブリテンはconcepts/gpt/chatgpt-images-2-0.md（Image Arena Elo 1512/1513/1464、+242リード、Thinking/non-Thinking、下流統合）とcomparisons/gpt-image-2-vs-nano-banana-2.mdに詳細統合済み。同じブリテンのKimi K2.6/FlashKDA、Deep Research Max、ml-internトピックもentities/kimi.md / concepts/deep-research.md / concepts/ml-intern.mdに収録済み。本rawファイルは同一ブリテンの重複app-link-postキャプチャ（auth-walled redirect URLで本文取得不可）。新規コンテンツなし。",
+      "candidate_wiki_path": "concepts/gpt/chatgpt-images-2-0.md",
+      "body_excerpt": "# [AINews] OpenAI launches GPT-Image-2\nSource: https://substack.com/app-link/post?publication_id=1084089&post_id=194979573&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ5Nzk1NzMsImlhdCI6MTc3NjgxNzQ3OCwiZXhwIjoxNzc5N"
+    }
+  ]
+}
