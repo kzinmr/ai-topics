@@ -4,7 +4,7 @@ type: concept
 aliases:
   - vibe-coding
 created: 2026-04-12
-updated: 2026-05-26
+updated: 2026-08-11
 tags:
   - concept
   - agentic-engineering
@@ -13,6 +13,7 @@ sources:
   - "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/"
   - "https://simonwillison.net/guides/agentic-engineering-patterns/"
   - "raw/articles/2025-04-27_karpathy-vibe-coding-menugen.md"
+  - "raw/articles/tedium.co--2026-08-09-vibe-coding-insincerity--8f971830.md"
 ---
 
 # Vibe Coding
@@ -191,6 +192,11 @@ Hetzner's €8/month plan offers roughly **3.5x cost difference** compared to Di
 - **Startup CTO**: Wants to set up company tools and infrastructure at low cost
 - **However**, apps with guaranteed explosive growth (10x users/day) may still be better suited to traditional serverless
 
+### Dark Hours: The Limits of Vibe-Coded Originality (August 2026)
+
+In "[Vibe-Coded Flattery](https://tedium.co/2026/08/09/vibe-coding-insincerity/)" (Aug 9, 2026, via Daring Fireball), Ernie Smith uses the **Dark Hours** App Store incident as the cautionary tale for vibe coding's originality problem: Terry Godier's Claude-built astronomy app was rejected from the App Store as "astrology" (it started as one), then appeared to be a close copy of an existing open-source Claude-built app — leading to Gruber's rare retraction and Godier pulling the app. Smith connects this to the broader surge of AI-flattered project emails: "Even the email is AI, which is why it's so flattering." The lesson for vibe coders: "there has to be a point when the tool stops and you begin" — an infusion of your own interests and personality is what makes a vibe-coded project yours.
+
+Source: [[raw/articles/tedium.co--2026-08-09-vibe-coding-insincerity--8f971830.md]]
 ## Tim O'Reilly's Perspective: CHOP Paradigm and Historical Context
 
 Tim O'Reilly (O'Reilly Media founder) positioned [[entities/tim-oreilly|Vibe Coding]] in his February 2025 article "[The End of Programming as We Know It](https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/)" as the latest wave in the long history of programming abstraction.

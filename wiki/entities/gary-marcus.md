@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-08-07
+updated: 2026-08-11
 tags:
   - lab
   - benchmark
@@ -34,6 +34,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-circular-financing-aint-what-it-used--e1df8edb.md
   - raw/articles/garymarcus.substack.com--p-dario-takes-it-on-the-chin--5226b0ee.md
   - raw/articles/garymarcus.substack.com--p-sorry-sam-and-elon-we-have-not-reached--4ddac824.md
+  - raw/articles/garymarcus.substack.com--p-open-source-is-not-the-same-as-open--04dad8e9.md
 ---
 
 # Gary Marcus
@@ -350,6 +351,19 @@ On August 8, 2026, Marcus published "[CPUs and the rise of neurosymbolic AI](htt
 This extends Marcus's long-standing argument that pure scaling has hit a wall, now framed through the lens of hardware requirements.
 
 Source: [[raw/articles/garymarcus.substack.com--p-cpus-and-the-rise-of-neurosymbolic--dcfbfaa2.md]]
+
+### Open-Source Is NOT the Same as Open-Weight (Aug 2026)
+
+On August 10, 2026, Marcus published "[Open-source is NOT the same as open-weight](https://garymarcus.substack.com/p/open-source-is-not-the-same-as-open)" — prompted by The New York Times reporting on Meta's new model (Muse Glimmer) as "open-source". Core argument: **open-source and open-weight are two very different things**.
+
+- **Essence of open-source is twofold: transparency and customizability** — you look at the code to see how it works, and you can change/fork literally anything.
+- **Open-weight releases only the weights** (the candidate/base model — the output of a complex process), not the full pipeline: no training data, no preprocessing, no exact algorithms and parameters. "Open-weight piggybacks onto all the great press that open-source has but offers few of the advantages."
+- **What you cannot do with open-weight models**: developers can't remove Reddit data from training, can't filter training by domain (e.g., common law vs statutory law), can't run the training process on their own data; regulators can't inspect training-data bias or bioweapon-related instructions; scientists can't investigate regurgitation vs. extension beyond training data, can't check whether benchmark answers are in the training data, can't audit copyrighted-material share — "perhaps part of why none of the big companies want to release true open-source".
+- **True open-source examples**: AllenAI's Olmo and Nvidia's Nemotron — "open weights, training data, and recipes".
+- **Zuckerberg got the terminology right** (Muse Code tweet, Aug 5: "Releasing Muse Code in beta today... Powered by Muse Spark 1.2") while the Times did not — putting scare quotes around open-source doesn't make an open-weight model more open.
+- **Nadella bait-and-switch critique**: Marcus calls out Satya Nadella's July 24 open-weight advocacy tweet ("Open-weight models are essential to a healthy AI ecosystem") followed by releasing a model that is NOT open-source — "hoping you wouldn't notice the difference between the two."
+
+Source: [[raw/articles/garymarcus.substack.com--p-open-source-is-not-the-same-as-open--04dad8e9.md]]
 
 ### Key Works
 

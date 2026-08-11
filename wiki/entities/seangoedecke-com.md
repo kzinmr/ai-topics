@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-08-10
+updated: 2026-08-11
 type: entity
 sources:
   - raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
@@ -20,6 +20,7 @@ sources:
   - raw/articles/seangoedecke.com--llms-reward-expertise--30a0ed12.md
   - raw/articles/seangoedecke.com--i-got-an-email-about-resistance--efd1b4a4.md
   - raw/articles/seangoedecke.com--advanced-ai-sycophancy--ba81ae26.md
+  - raw/articles/seangoedecke.com--local-models-will-not-win--058304e1.md
 ---
 
 # Sean Goedecke
@@ -51,6 +52,7 @@ His writing philosophy is evident in his book's distribution model: **print at c
 | Date | Event |
 |------|-------|
 | **2026-08-10** | Publishes "Advanced AI sycophancy" — argues the best way to be sycophantic to smart people is to disagree without making them feel stupid; disagreement as sophisticated sycophancy |
+| **2026-08-11** | Publishes "No, local models will not win" — argues most inference will always happen in AI datacenters; local models are always a generation behind, ~30x less resource-efficient, and remain a niche for latency-sensitive or privacy/control-minded users |
 | ~2021 | Begins blogging about software engineering and AI |
 | 2022–2023 | Establishes reputation with posts on large tech company dynamics and AI coding tools |
 | 2024 | Podcast appearances begin (Exponent, The Staff Plus Journey) |
@@ -446,6 +448,20 @@ On August 6, 2026, Goedecke published "[How to keep thinking](https://seangoedec
 **Why it matters**: Even purely for work, losing the slow-thinking habit entirely would be a mistake — current LLMs still can't do "large refactor on a complicated codebase" *tastefully*, and some problems must be thought through entirely with your own brain. This connects to his [[#LLMs Reward Expertise (July 2026)]] thesis (domain knowledge requires deep understanding) and the broader agentic engineering discourse on cognitive load management (see [[concepts/agentic-engineering]]).
 
 Source: [[raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md]]
+
+### No, Local Models Will Not Win (Aug 2026)
+
+In "[No, local models will not win](https://seangoedecke.com/local-models-will-not-win/)" (Aug 11, 2026), Goedecke rebuts the "local models are the future" narrative: **no matter how strong open-weight models get, most inference will always happen in AI datacenters.**
+
+**Local models are too weak to be widely used**: frontier models (closed and open-weights) are far too big for anything but a full GPU cluster; smaller models get more intelligent over time, but "in a year you might be able to run something about as strong as GPT-5.6-Sol on your laptop. But by then, you'll think of GPT-5.6-Sol as too weak to be useful." Almost everyone's **revealed preference is to use the strongest available model in their price range** — expectations grow with capability, and people pick the model that frustrates them less.
+
+**Local models are more expensive and less efficient**: the setup price of a low-end home lab buys several years of a paid AI subscription, plus $50-$300/month in power. Datacenter inference is inherently more efficient because of **batching** (a GPU can do hundreds of thousands of ops as quickly as one; single-user token generation can't batch, so home utilization is terrible) and **larger, more efficient GPUs** (a B200 gets ~3x the flops and just under 4x the memory bandwidth of an RTX 4090 at the same power). Between batching and GPU efficiency, running locally uses **~30x the resources**. Efficiency-minded users should push *more* inference into datacenters, not less — even small models are best used via a Luna-class API rather than self-hosted.
+
+**How local models might win anyway**: only if governments ban AI datacenters outright; if AI progress stalls for very large models while small ones progress; or if models get so good a 30B model genuinely suffices (which he doesn't buy).
+
+**The niche that remains**: latency-sensitive applications (Thinking Machines' "Interaction Models" — a small fast local model handles voice, delegating hard thinking to a large model; OpenAI does the same), local steering as a killer feature, total control over infrastructure, and unreliable internet. "I wouldn't be surprised if most AI use in five years is mediated through a local model on your phone or laptop (though in this world almost all the work would still be done via AI datacenters)." But this is always going to be a niche group.
+
+Source: [[raw/articles/seangoedecke.com--local-models-will-not-win--058304e1.md]]
 
 ## Sources
 

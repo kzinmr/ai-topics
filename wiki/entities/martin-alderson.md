@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-08-02
+updated: 2026-08-11
 tags:
   - person
   - blogger
@@ -23,6 +23,7 @@ sources:
   - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-1-glm-5-2--20d7e445.md
   - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-2-winners-and-los--2b401389.md
   - raw/articles/martinalderson.com--posts-speed-vs-intelligence--7a7e675b.md
+  - raw/articles/martinalderson.com--posts-watch-out-for-cache-read-costs--ff6254a6.md
 ---
 
 
@@ -201,6 +202,28 @@ Research increasingly targets eliminating the quadratic attention bottleneck ent
 Across nine years of ~100x compression, surprisingly little showed up as cheaper token prices. Most efficiency was spent on **longer context windows** — 4K became 128K became 1M. Much like video codecs were spent on higher resolutions rather than smaller files, KV cache compression keeps being spent on more capable agents. And with memory now one of the hardest constraints on AI buildout, this trend is expected to continue.
 
 Source: [[raw/articles/martinalderson.com--posts-a-brief-history-of-kv-cache-compression-developments--c7414ee7.md]]
+
+### Cache Read Costs — "Watch Out for Cache Read Costs" (Aug 2026)
+
+In "[Watch out for cache read costs](https://martinalderson.com/posts/watch-out-for-cache-read-costs/)" (Aug 11, 2026), Martin argues the wrong number to watch in pricing tables is **cache read cost** — for agentic workloads, cache reads are almost certainly the biggest driver of costs, and long context windows require updating the mental maths around pricing.
+
+**Quantitative model** (hypothetical agentic session: 60k context start, 500 tokens written + 5,000 tokens read per tool call):
+
+| Model | 20 turns — cache read share | 100 turns — cache read share |
+|-------|------|------|
+| DeepSeek V4-Flash | $0.03 (18.4%) | $0.19 (48.1%) |
+| Claude Opus 5 | $2.32 (44.9%) | $21.34 (76.4%) |
+| GPT 5.6 Sol | $2.16 (48.1%) | $36.20 (81.6%) |
+
+The main cost driver becomes cache reads — while only ~5.5k tokens are added per turn, the *existing* context window must be read on each turn, so **cumulative cost grows quadratically with the number of turns**. Cutting turns by 10% reduces cost per agent run by ~16%, making tool-call reduction an outsized lever.
+
+**The case of the shrinking KV cache**: DeepSeek's KV cache algorithms (Compressed Sparse Attention / Heavily Compressed Attention) allow a 1M context window at ~fp8 precision in around 5GB, enabling offload to system memory and NVMe flash — explaining why NVMe costs have skyrocketed. A 1-5GB KV cache can be written to SSD and read back in well under 100ms (PCIe 5.0, RAID-style setups), and with Nvidia/AMD direct NVMe-GPU reads it doesn't touch system RAM — a bank of NVMe drives can host tens of thousands of agentic sessions. DeepSeek sells cache reads at a tenth of competitors' prices (rumoured to be increasing due to hardware imbalance).
+
+**"This is (probably?) a huge profit centre"**: Cache reads are almost certainly outrageously profitable for frontier labs — you're effectively renting a few GB of system RAM at a spectacular markup. The 100-turn Opus 5 run spends $16.31 on cache reads: ~3.3 hours at ~330k average context ≈ 10GB held ≈ **$0.5 per GB-hour**, versus AWS renting memory for well under a cent per GB-hour. Tiered KV cache storage has real networking costs at huge scale, but for local/on-prem solutions the cost is minimal.
+
+Key takeaway: cache read costs are increasingly the main cost to watch in agentic workloads; huge innovation in shrinking caches hasn't been reflected in the pricing mechanism yet.
+
+Source: [[raw/articles/martinalderson.com--posts-watch-out-for-cache-read-costs--ff6254a6.md]]
 
 ## Blog Themes
 

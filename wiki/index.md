@@ -313,7 +313,7 @@
 - [[entities/future-of-humanity-institute]] — Future of Humanity Institute (FHI)
 - [[entities/galileo-eval-engineer]] — Galileo Eval Engineer
 - [[entities/garry-tan]] — Garry Tan — CEO of Y Combinator; investor in AI startups, voice on AI regulation
-- [[entities/gary-marcus]] — Gary Marcus; "Don't Count Google Out" section (Aug 6: seven reasons Google survives DeepMind leadership churn)
+- [[entities/gary-marcus]] — Gary Marcus; "Don't Count Google Out" section (Aug 6: seven reasons Google survives DeepMind leadership churn); "Open-Source Is NOT the Same as Open-Weight" (Aug 10: NYT confusion over Muse Glimmer, open-weight vs open-source distinction, Nadella bait-and-switch)
 - [[entities/gemma-4]] — Google Gemma 4
 - [[entities/geoffrey-hinton]] — Geoffrey Hinton — "Godfather of AI"; Nobel Prize in Physics 2024; pioneer of deep learning, backpropagation
 - [[entities/geoffrey-litt]] — Geoffrey Litt
@@ -497,7 +497,7 @@
 - [[entities/mark-chen]] — Mark Chen
 - [[entities/mark-mcquade]] — Mark McQuade
 - [[entities/mark-saroufim]] — Mark Saroufim
-- [[entities/martin-alderson]] — Martin Alderson; ML Research + Open-Weight Margin Collapse section (July 7)
+- [[entities/martin-alderson]] — Martin Alderson; ML Research + Open-Weight Margin Collapse section (July 7); Cache Read Costs (Aug 11: cache reads dominate agentic workload costs, quadratic turn growth, ~$0.5/GB-h profit centre)
 - [[entities/martin-fowler]] — Martin Fowler (redirect)
 - [[entities/martin-kleppmann]] — Martin Kleppmann
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
@@ -725,7 +725,7 @@
 - [[entities/scott-stevenson]] — Scott Stevenson
 - [[entities/scott-wu]] — Scott Wu
 - [[entities/screenpipe]] — Screenpipe (YC S26) — 24/7 local AI screen and mic recording, turns computer activity into agent-accessible data; 20.5K GitHub stars, Rust, MCP integration (Jul 26)
-- [[entities/seangoedecke-com]] — Sean Goedecke; "How to Keep Thinking" section (Aug 6: hammock time in the LLM-agent era, write in your own words, read books); "I got an email about resistance" response to complicity critics (Aug 9)
+- [[entities/seangoedecke-com]] — Sean Goedecke; "How to Keep Thinking" section (Aug 6: hammock time in the LLM-agent era, write in your own words, read books); "I got an email about resistance" response to complicity critics (Aug 9); "No, Local Models Will Not Win" (Aug 11: batching + GPU efficiency ~30x, revealed preference for strongest model, niche remains)
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. Provides 6 specialized tools for code analysis, search, and retrieval from any...
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka — ML researcher, 'Build a Reasoning Model (From Scratch)', LLM architecture analysis
@@ -753,7 +753,7 @@
 - [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026); Context Engine — customer relationships as moat (Aug 4)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
-- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6)
+- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test)
 - [[entities/simone-salis]] — Simone Salis
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent)
 - [[entities/siyan-zhao]] — Siyan Zhao
@@ -1913,7 +1913,7 @@
 - [[concepts/harness-engineering/agentic-workflows/subagents]] — Subagents — Parallel AI Agent Delegation
 - [[concepts/harness-engineering/agentic-workflows/throw-away-draft-pattern]] — Throw-Away First Draft Pattern
 - [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — Using Git with Coding Agents
-- [[concepts/harness-engineering/agentic-workflows/vibe-coding]] — Vibe Coding
+- [[concepts/harness-engineering/agentic-workflows/vibe-coding]] — Vibe Coding; Dark Hours App Store incident as originality cautionary tale (Aug 9, via Tedium/Daring Fireball)
 - [[concepts/harness-engineering/context-engineering]] — Context Engineering — Unified Framework for Context Optimization
 - [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — Advanced Tool Use
 - [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — Agent Loop Orchestration

@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-11] blog-wiki-ingest (10:50) | 3 takes + 2 references (Case C2 recovery — triage checkpoint valid)
+- Recovered from "failed to parse JSON response from blog-triage output" by reading triage_latest.json directly (checkpoint was saved before response render failure). Triage commit 9379e70a was archive-only (3 take, 2 ref, 12 skip).
+- **Take: [[entities/martin-alderson]]** — Added "Cache Read Costs" section (Aug 11: agentic workloads dominated by cache reads; 60k→100-turn model shows cache read share 44.9%→81.6% for Opus 5; quadratic turn-growth cost; DeepSeek CSA/HCA 1M ctx ≈ 5GB fp8 → NVMe offload; ~$0.5/GB-h cache-read profit centre vs AWS <$0.01/GB-h). Added raw/articles/martinalderson.com--posts-watch-out-for-cache-read-costs--ff6254a6.md to sources, updated: 2026-08-11.
+- **Take: [[entities/gary-marcus]]** — Added "Open-Source Is NOT the Same as Open-Weight" section (Aug 10: NYT mislabeled Meta Muse Glimmer as open-source; transparency+customizability essence; open-weight = weights only, no data/algorithm/recipes; Olmo/Nemotron as true open-source; Zuckerberg correct terminology vs Nadella bait-and-switch). Added raw/articles/garymarcus.substack.com--p-open-source-is-not-the-same-as-open--04dad8e9.md to sources, updated: 2026-08-11.
+- **Take: [[entities/seangoedecke-com]]** — Added Timeline row + "No, Local Models Will Not Win" Recent Articles section (Aug 11: local always a generation behind; batching + B200-vs-RTX4090 efficiency ≈ ~30x resource advantage; revealed preference for strongest model; local niche = latency/steering/control). Added raw/articles/seangoedecke.com--local-models-will-not-win--058304e1.md to sources, updated: 2026-08-11.
+- **Reference: [[entities/simon-willison]]** — Appended "Introducing Muse Glimmer" entry to August 2026 Updates (Aug 10: LM Studio 18.16GB quantized run, llm-coding-agent Datasette auth-exploration transcript, vision description test, LLM 0.32 llm-lmstudio patch; 32GB+ RAM sweet spot). Added raw/articles/simonwillison.net--2026-aug-10-introducing-muse-glimmer--d8fd569f.md to sources, updated: 2026-08-11. Muse Glimmer model itself covered by [[entities/muse-glimmer]] (official source).
+- **Reference: [[concepts/harness-engineering/agentic-workflows/vibe-coding]]** — Added "Dark Hours: The Limits of Vibe-Coded Originality" section (Aug 9, Tedium via Daring Fireball: Claude-built astronomy app rejected as astrology + copied open-source app; Gruber retraction; "there has to be a point when the tool stops and you begin"). Added raw/articles/tedium.co--2026-08-09-vibe-coding-insincerity--8f971830.md to sources, updated: 2026-08-11.
+- Archive: blog triage archive already committed by triage agent (2026-08-11_20260811T101550Z.json); no re-archive needed.
+
 
 ## [2026-08-11] raw-backlog-ingest (10:00) | Reference 2 items (dan-luu programming books, Glean no-code top-5) + Skip 3 items
 
