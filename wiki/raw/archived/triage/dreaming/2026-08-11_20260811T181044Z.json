@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-08-11T18:14:03.397259+00:00",
+  "triage_run_id": "20260811T181044Z",
+  "source": "dreaming",
+  "summary_ja": "Dreaming saturation pass — 2026-08-11。全パイプライン稼働済み: active-crawl (5 pages: H3-metal, Needle2, PL tokenizer efficiency, Docker sandboxes, Databricks AI coding cost + 2 enrichments: antirez, databricks), raw-backlog-ingest x2 (1 ref: Nano Banana prompt engineering; 5 duplicate skips), blog-wiki-ingest (Muse Glimmer, cache read costs, local models debate), newsletter-wiki-ingest (Import AI 468: RSI+PostTrainBench+, OpenAI Astra cybersecurity, Claude Code 5 steering, Mistral ABN AMRO, Google TPU sales, biodefense viruses, Nathan Lambert textbook). 215 raw articles中、全AI関連記事が既存パイプラインで処理済み。Takes=0, References=0, Skips=6。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-muse-glimmer",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "Introducing Muse Glimmer",
+      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
+      "raw_path": "wiki/raw/articles/simonwillison.net--2026-aug-10-introducing-muse-glimmer--d8fd569f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ active-crawl (11:00) + newsletter-wiki-ingestで処理済み: entities/muse-glimmer.md作成、concepts/personal-superintelligence.md更新、concepts/claude/sonnet-5.md永久価格更新",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Introducing Muse Glimmer\nSource: https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything\nIntroducing Muse Glimmer\n(\nvia\n) Meta are back in the open weights game! Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license (a step up from the janky Llama licenses "
+    },
+    {
+      "item_id": "dreaming-skip-cache-read-costs",
+      "source": "dreaming",
+      "source_name": "martinalderson.com",
+      "title": "Watch out for cache read costs",
+      "url": "https://martinalderson.com/posts/watch-out-for-cache-read-costs/",
+      "raw_path": "wiki/raw/articles/martinalderson.com--posts-watch-out-for-cache-read-costs--ff6254a6.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ blog-wiki-ingestで処理済み: entities/martin-alderson.mdに「Cache Read Costs」セクション追加済み（DeepSeek KV cache, cumulative quadratic cost, 10% turn reduction = 16% cost saving）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Watch out for cache read costs\nSource: https://martinalderson.com/posts/watch-out-for-cache-read-costs/?utm_source=rss&utm_medium=rss&utm_campaign=feed\nI know I'm guilty of just scanning OpenRouter's pricing tables and looking at input and output costs per million token. I've realised that's the w"
+    },
+    {
+      "item_id": "dreaming-skip-local-models-debate",
+      "source": "dreaming",
+      "source_name": "seangoedecke.com",
+      "title": "No, local models will not win",
+      "url": "https://seangoedecke.com/local-models-will-not-win/",
+      "raw_path": "wiki/raw/articles/seangoedecke.com--local-models-will-not-win--058304e1.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ blog-wiki-ingestで処理済み: entities/seangoedecke-com.mdに「No, Local Models Will Not Win」セクション追加済み（batching効率、datacenter 3x flops、niche用途は残る）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# No, local models will not win\nSource: https://seangoedecke.com/local-models-will-not-win/\nEvery time a new open-weight AI model is released, people\nsay\nthat local models are the future. Why spend billions of dollars building out datacenters when everyone will just be able to run AI models on their"
+    },
+    {
+      "item_id": "dreaming-skip-claude-content-marking",
+      "source": "dreaming",
+      "source_name": "support.claude.com",
+      "title": "How Claude marks AI-generated content",
+      "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+      "raw_path": "wiki/raw/articles/2026-08-10_claude-marks-ai-generated-content.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ support.claude.comのヘルプページ — UI/navigation chromeのみで記事本文なし。content watermarkingトピックはconcepts/synthid.mdでカバー済み",
+      "candidate_wiki_path": null,
+      "body_excerpt": "--- Source: https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content ---\n How Claude marks AI-generated content | Claude Help Center Skip to main content API Docs Release Notes How to Get Support English Français Deutsch Bahasa Indonesia Italiano 日本語 한국어 Português Pусски"
+    },
+    {
+      "item_id": "dreaming-skip-humanising-llm-outputs",
+      "source": "dreaming",
+      "source_name": "kuber.studio",
+      "title": "Humanising LLM Outputs Is Dumb",
+      "url": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
+      "raw_path": "wiki/raw/articles/2026-08-10_humanising-llm-outputs-is-dumb.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ kuber.studio — ブログ記事リスト/ナビゲーションchromeのみで記事本文なし。AI relevance低（一般opinion piece）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "--- Source: https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb ---\n Humanising LLM Outputs is Dumb — Kuber Mehta ᨒ MindDump Search Search Dark mode Light mode Blogs AI AI Can Hang Up Now, It Still Takes the Abuse Anthropic Wrote 244 Pages About an AI Model That's \"Too Dang"
+    },
+    {
+      "item_id": "dreaming-skip-gary-marcus-open-weight",
+      "source": "dreaming",
+      "source_name": "garymarcus.substack.com",
+      "title": "Open-source is NOT the same as open-weight",
+      "url": "https://garymarcus.substack.com/p/open-source-is-not-the-same-as-open",
+      "raw_path": "wiki/raw/articles/garymarcus.substack.com--p-open-source-is-not-the-same-as-open--04dad8e9.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ entities/gary-marcus.mdでカバー済みの可能性高 — open-source vs open-weight区別はconcepts/open-source-ai.md + concepts/open-weights-licensing-tightening.mdでも網羅。短いX投稿ベースのSubstack（3.29K views, 43 likes）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Open-source is NOT the same as open-weight\nSource: https://garymarcus.substack.com/p/open-source-is-not-the-same-as-open\nSad to see the  confuse open-source (fully transparent) with open-weight models (less transparent; no access eg to training data).\nThe new Meta model is open-weight but not open"
+    }
+  ]
+}

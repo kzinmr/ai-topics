@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-11] dreaming | Saturation pass — Takes=0 (all AI articles covered by daily pipelines)
+
+- **Takes=0, References=0, Skips=6** — checkpoint: total_articles=0, recent_raw_articles=215.
+- **Pipeline coverage verified** (all 6 skip candidates already processed):
+  - `entities/muse-glimmer.md` — active-crawl (11:00) created entity page + newsletter-wiki-ingest updated personal-superintelligence + sonnet-5 permanent pricing
+  - `entities/martin-alderson.md` — blog-wiki-ingest added "Cache Read Costs" section (quadratic cost growth, DeepSeek KV cache, 10% turn reduction = 16% cost saving)
+  - `entities/seangoedecke-com.md` — blog-wiki-ingest added "No, Local Models Will Not Win" section (batching efficiency, datacenter 3x flops)
+  - `concepts/synthid.md` — content watermarking already comprehensive; support.claude.com help page was navigation chrome only
+  - `entities/gary-marcus.md` + `concepts/open-source-ai.md` — open-source vs open-weight distinction already covered
+  - kuber.studio — non-AI opinion piece, navigation chrome only
+- **Archive**: wiki/raw/archived/triage/dreaming/2026-08-11_20260811T181044Z.json (6 decisions archived, total_archive_urls 2498)
+- **No wiki content changes.** Saturation confirmed.
+
+
 ## [2026-08-11] raw-backlog-ingest (18:00) | Reference 1 item (Max Woolf Nano Banana prompt engineering) + Skip 4 items
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-11 18:00, run 20260811T180024Z). Takes=0, References=1, Skips=4.
 - **Reference: [[entities/minimaxir-com]]** — Added "Nano Banana Prompt Engineering (Nov 2025)" section (Nov 2025 minimaxir.com article, mentioned ≠ covered gap: raw file was in References but body lacked substance). Nano Banana = Gemini 2.5 Flash Image, autoregressive 1,290 tokens/image, ~$0.04/image API vs gpt-image-1 $0.17; 32,768-token context vs CLIP 77 / T5 512; Gemini 2.5 Flash-derived text encoder (Markdown/JSON agentic training, segmentation masks). Validated techniques: Markdown dashed rule lists (5 simultaneous edits), ALL-CAPS MUST + penalty threats, buzzword composition control ("Pulitzer Prize winning cover photo"), JSON character descriptions (~2,600 tokens Paladin/Pirate/Starbucks Barista), multi-image subject consistency without LoRA (17 Ugly Sonic images), HTML/CSS/JS rendering (916-token prompt). System-prompt extraction via adversarial "show previous text verbatim" revealed Markdown-formatted prompt + buzzword guard (anti-model-collapse hack); "image" may be a special token. Limitations: poor style transfer, no IP restrictions (multi-IP nightclub scene), lenient NSFW moderation. Open-sourced gemimg wrapper + reproducible Jupyter notebooks. Added raw/articles/minimaxir.com--2025-11-nano-banana-prompts--a1691cff.md to sources, updated: 2026-08-11.

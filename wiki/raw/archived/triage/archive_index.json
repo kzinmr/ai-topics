@@ -513,6 +513,7 @@
     "https://garymarcus.substack.com/p/if-enough-other-companies-report",
     "https://garymarcus.substack.com/p/no-need-to-panic-about-anthropics",
     "https://garymarcus.substack.com/p/off-for-adventures",
+    "https://garymarcus.substack.com/p/open-source-is-not-the-same-as-open",
     "https://garymarcus.substack.com/p/openais-amazing-but-vastly-oversold",
     "https://garymarcus.substack.com/p/seven-reasons-i-wouldnt-count-google",
     "https://garymarcus.substack.com/p/slop-productivity-and-why-the-ai",
@@ -710,6 +711,7 @@
     "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
     "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
     "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
+    "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
     "https://langchain.dev/blog/building-100x-cheaper-trace-judge-fireworks",
     "https://lapcatsoftware.com/articles/2026/6/5.html",
     "https://latent.space/p/ainews-openai-reports-median-internal",
@@ -934,6 +936,7 @@
     "https://martinalderson.com/posts/is-datacentre-sovereignty-really-that-important/",
     "https://martinalderson.com/posts/speed-vs-intelligence/",
     "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-2-winners-and-losers/",
+    "https://martinalderson.com/posts/watch-out-for-cache-read-costs/",
     "https://martinalderson.com/posts/whats-going-on-with-gemini/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
     "https://martinalderson.com/posts/xais-new-rental-business/",
     "https://martinfowler.com/articles/reliable-llm-bayer.html",
@@ -1364,6 +1367,7 @@
     "https://seangoedecke.com/impro/",
     "https://seangoedecke.com/in-defense-of-not-understanding-your-codebase/",
     "https://seangoedecke.com/llms-reward-expertise/",
+    "https://seangoedecke.com/local-models-will-not-win/",
     "https://seangoedecke.com/overtraining-as-the-path-to-human-like-ai/",
     "https://seangoedecke.com/playing-politics/",
     "https://seangoedecke.com/powerful-ais-might-escape-by-releasing-open-weight-models/",
@@ -1440,6 +1444,7 @@
     "https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything",
     "https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything",
     "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/#atom-everything",
+    "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
     "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
     "https://simonwillison.net/2026/Aug/10/openclaw/",
     "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
@@ -1908,6 +1913,7 @@
     "https://substack.com/redirect/ef0fd5d1-db2c-41db-b4d7-9a98032d5206?j=eyJ1Ij...tf6E",
     "https://substack.com/redirect/fdd685f2-331e-4661-a348-60ecc2d13a83?j=eyJ1Ij...tf6E",
     "https://superlinked.com/blog/serve-5-models-one-gpu",
+    "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
     "https://susam.net/do-not-roll-your-own.html",
     "https://talkingpointsmemo.com/edblog/trump-can-tear-down-statue-of-liberty-says-trump-lawyer",
     "https://tapbots.com/pastebot/",
@@ -2493,5 +2499,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-11T18:10:25.658607+00:00"
+  "updated": "2026-08-11T18:14:03.397852+00:00"
 }
