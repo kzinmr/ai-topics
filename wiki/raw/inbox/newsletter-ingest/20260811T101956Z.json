@@ -1,0 +1,142 @@
+{
+  "triage_run_id": "20260811T101956Z",
+  "triaged_at": "2026-08-11T10:25:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "total_newsletters": 5,
+  "total_links_extracted": 100,
+  "classifications": [
+    {
+      "subject": "Import AI 468: 23 RSI ideas; PostTrainBench+; and how trust and transparency interplay with AI racing",
+      "date": "2026-08-10",
+      "source": "Import AI (Jack Clark)",
+      "source_label": "uid=487",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-10-import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interpl.md",
+      "importance": "critical",
+      "wiki_topics": ["recursive-self-improvement", "post-training", "ai-benchmarks", "ai-safety", "ai-racing", "ai-trust", "ai-transparency"],
+      "action": "ingest_articles",
+      "resolved_articles": [
+        {"title": "Preparing for AI Research Automation", "url": "https://ifp.org/preparing-for-ai-research-automation/", "topic": "AI research automation / RSI"},
+        {"title": "Coming of a New Sun (fiction by vgel)", "url": "https://vgel.me/fiction/coming-of-a-new-sun/", "topic": "AI fiction / speculation"},
+        {"title": "arXiv: 2607.27638", "url": "https://arxiv.org/abs/2607.27638", "topic": "Research paper (architecture-related)"},
+        {"title": "Scaling Automated Post-Training (Intology AI)", "url": "https://intology.ai/blog/scaling-automated-post-training", "topic": "Automated post-training scaling"},
+        {"title": "Import AI 449: LLMs Training Other LLMs, 72B Distributed Training Run", "url": "https://jack-clark.net/2026/03/16/importai-449-llms-training-other-llms-72b-distributed-training-run-computer-vision-is-harder-than-generative-text/", "topic": "LLM self-training / distributed training"},
+        {"title": "Import AI 455: Automating AI Research", "url": "https://jack-clark.net/2026/05/04/import-ai-455-automating-ai-research/", "topic": "AI research automation"},
+        {"title": "The Bitter Lesson for Post-Training (Import AI 466)", "url": "https://importai.substack.com/p/import-ai-466-the-bitter-lesson-for", "topic": "Post-training scaling"},
+        {"title": "OpenAI Timeline (Simon Willison)", "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/", "topic": "OpenAI history / timeline"},
+        {"title": "Zvi on AI safety (X post)", "url": "https://x.com/TheZvi/status/2086121319305793615", "topic": "AI safety commentary"},
+        {"title": "FAR AI", "url": "https://www.far.ai/", "topic": "AI safety organization"},
+        {"title": "A Safe Path to Open Weights (Thinking Machines)", "url": "https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/", "topic": "Open weights safety"}
+      ],
+      "notes": "Jack Clark's weekly roundup. Key themes: 23 ideas for recursive self-improvement (RSI), PostTrainBench+ benchmark, trust/transparency in AI race context. Multiple high-value links for wiki. Simon Willison OpenAI timeline and Thinking Machines safe open-weights article are especially relevant."
+    },
+    {
+      "subject": "[AINews] Muse Glimmer and Spark: Open Weights return Personal Superintelligence promise",
+      "date": "2026-08-11",
+      "source": "AINews (swyx / Latent Space)",
+      "source_label": "uid=491",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md",
+      "importance": "critical",
+      "wiki_topics": ["open-weights-models", "meta-ai", "personal-superintelligence", "model-releases"],
+      "action": "ingest_articles",
+      "resolved_articles": [
+        {"title": "Meta Superintelligence", "url": "https://www.meta.com/superintelligence/", "topic": "Meta's superintelligence initiative"},
+        {"title": "AINews: Dreamer Joins Meta Superintelligence", "url": "https://www.latent.space/p/ainews-dreamer-joins-meta-superintelligence", "topic": "Meta hiring / superintelligence lab"},
+        {"title": "AINews: Meta Superintelligence Labs", "url": "https://www.latent.space/p/ainews-meta-superintelligence-labs", "topic": "Meta Superintelligence Labs overview"},
+        {"title": "AINews: Jeff, Sanjay, Oriol, and Quoc", "url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc", "topic": "Meta AI team hires"},
+        {"title": "Mark Zuckerberg (finkd) X post on Muse/Glimmer/Spark", "url": "https://x.com/finkd/status/2086754845218726027", "topic": "Zuckerberg on Meta AI"},
+        {"title": "The Future is For Everyone (Meta)", "url": "https://www.meta.com/thefutureisforeveryone/", "topic": "Meta AI vision"},
+        {"title": "AI at Meta model announcement (X)", "url": "https://x.com/AIatMeta/status/2086757844544811485", "topic": "Meta AI model release"},
+        {"title": "OpenClaw creator Peter Steinberger (Business Insider)", "url": "https://www.businessinsider.com/openclaw-creator-peter-steinberger-gets-feedback-from-mark-zuckerberg", "topic": "OpenClaw / Meta ecosystem"},
+        {"title": "news.smol.ai", "url": "https://news.smol.ai/", "topic": "smol.ai AI news hub"},
+        {"title": "Latent Space 2026", "url": "https://www.latent.space/p/2026", "topic": "Latent Space annual overview"},
+        {"title": "Zuckerberg follow-up X post", "url": "https://x.com/finkd/status/2086755195535413696", "topic": "Zuckerberg on Meta AI models"}
+      ],
+      "notes": "swyx's AINews covers Meta releasing 'Muse', 'Glimmer', and 'Spark' open-weight models promising personal superintelligence. Meta Superintelligence Labs context with key hires. Multiple primary sources (Meta.com, Zuckerberg's X, AIatMeta). High wiki relevance for open-weights model releases and Meta AI entity pages."
+    },
+    {
+      "subject": "5 useful things you'll learn in my new post-training textbook (shipping now!)",
+      "date": "2026-08-10",
+      "source": "Nathan Lambert (robotic.substack.com)",
+      "source_label": "uid=488",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-10-5-useful-things-you-ll-learn-in-my-new-post-training-textbook-shipping-now.md",
+      "importance": "high",
+      "wiki_topics": ["rlhf", "post-training", "reward-models", "policy-gradients", "rejection-sampling", "character-training"],
+      "action": "ingest_articles",
+      "resolved_articles": [
+        {"title": "RLHF Book - Rejection Sampling", "url": "https://rlhfbook.com/c/09-rejection-sampling", "topic": "Rejection sampling technique"},
+        {"title": "RLHF Book - Reward Models", "url": "https://rlhfbook.com/c/05-reward-models#outcome-reward-models", "topic": "Outcome reward models"},
+        {"title": "RLHF Book - Character Training", "url": "https://rlhfbook.com/c/17-product#character-training", "topic": "Character / personality training"},
+        {"title": "RLHF Book (main)", "url": "https://rlhfbook.com/", "topic": "Full RLHF textbook"},
+        {"title": "RLHF Book - Course", "url": "https://rlhfbook.com/course", "topic": "RLHF course companion"},
+        {"title": "RLHF Book - YouTube lectures", "url": "https://www.youtube.com/playlist?list=PLL1tdVxB1CpVpEtMHxwuR4uI4Lxjw00_y", "topic": "Video lectures"},
+        {"title": "RLHF Book - Code (GitHub)", "url": "https://github.com/natolambert/rlhf-book/tree/main/code", "topic": "Companion code"},
+        {"title": "RLHF Book (Manning)", "url": "https://www.manning.com/books/reinforcement-learning-from-human-feedback", "topic": "Physical book (Manning)"},
+        {"title": "RLHF Book (Amazon)", "url": "https://www.amazon.com/RLHF-Book-Reinforcement-alignment-post-training/dp/1633434303", "topic": "Physical book (Amazon)"},
+        {"title": "RLHF Book - Policy Gradients", "url": "https://rlhfbook.com/c/06-policy-gradients#deriving-the-policy-gradient", "topic": "Policy gradient derivation"}
+      ],
+      "notes": "Nathan Lambert announces his RLHF textbook is shipping. Multiple chapter links from rlhfbook.com covering core post-training concepts. Lambert already has an entity page in the wiki. Update his page with book publication status. Concept pages for RLHF, reward models, policy gradients should reference this textbook."
+    },
+    {
+      "subject": "🎙️ How I AI: Build an AI code review bot in 30 minutes + Claude Code for normal people",
+      "date": "2026-08-10",
+      "source": "Lenny Rachitsky (How I AI)",
+      "source_label": "uid=490",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-10-how-i-ai-build-an-ai-code-review-bot-in-30-minutes-claude-code-for-normal-people.md",
+      "importance": "high",
+      "wiki_topics": ["ai-coding-agents", "claude-code", "code-review", "ai-bots", "vercel"],
+      "action": "ingest_articles",
+      "resolved_articles": [
+        {"title": "How I AI - Build an AI Code Review Bot in 30 Minutes (YouTube)", "url": "https://www.youtube.com/watch?v=cmATJGbA8bI", "topic": "AI code review bot tutorial"},
+        {"title": "How I AI podcast (Spotify)", "url": "https://open.spotify.com/episode/7xtVYingoRlpoHQ3vwppEe", "topic": "Podcast: code review bot"},
+        {"title": "How I AI podcast (Apple)", "url": "https://podcasts.apple.com/us/podcast/build-an-ai-code-review-bot-in-30-minutes-with-vercel-eve/id1809663079?i=1000780042283", "topic": "Podcast: code review bot"},
+        {"title": "Merge Mommy: Vercel Eve AI Bot for Auto-Reviewing PRs (chatPRD)", "url": "https://www.chatprd.ai/how-i-ai/merge-mommy-vercel-eve-ai-bot-for-auto-reviewing-pull-requests", "topic": "Vercel Eve PR bot"},
+        {"title": "Claude Code for Normal People (YouTube)", "url": "https://www.youtube.com/watch?v=o_eg2TtXAO0", "topic": "Claude Code tutorial"},
+        {"title": "Claude Code for Normal People (Spotify)", "url": "https://open.spotify.com/episode/1iRsM2kTnmtuptKylwTMua", "topic": "Podcast: Claude Code"},
+        {"title": "Claude Code for Normal People (Apple)", "url": "https://podcasts.apple.com/us/podcast/claude-code-for-normal-people-skills-voice-mode-and/id1809663079?i=1000781957473", "topic": "Podcast: Claude Code"}
+      ],
+      "notes": "Two practical tutorials: (1) Building an AI code review bot with Vercel's Eve, (2) Claude Code accessibility guide. Directly relevant to ai-coding-agents and claude-code wiki pages. The Vercel Eve PR bot is a new entity worth documenting."
+    },
+    {
+      "subject": "🛑 The Model OpenAI Won't Release",
+      "date": "2026-08-10",
+      "source": "Unknown newsletter (behiiv)",
+      "source_label": "uid=489",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-10-the-model-openai-won-t-release.md",
+      "importance": "high",
+      "wiki_topics": ["openai", "model-safety", "model-withholding", "ai-safety"],
+      "action": "resolve_and_ingest",
+      "resolved_articles": [],
+      "notes": "Beehiiv newsletter about an unreleased OpenAI model. Could not resolve redirect URLs (behiiv uses JS-based redirects). Content likely covers OpenAI safety decisions, model capability thresholds, or staged release policies. Needs manual URL resolution or direct article scraping. Subject implies significant AI safety / OpenAI governance content."
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 3,
+    "low": 0,
+    "skip": 0,
+    "key_themes": [
+      "Meta releases Muse/Glimmer/Spark open-weight models (personal superintelligence)",
+      "Jack Clark's 23 RSI ideas + PostTrainBench+ benchmark",
+      "Nathan Lambert's RLHF textbook shipping",
+      "AI code review bots + Claude Code practical tutorials",
+      "OpenAI unreleased model safety discussion"
+    ],
+    "existing_pages_to_update": [
+      "entities/jack-clark.md",
+      "entities/nathan-lambert.md",
+      "entities/swyx.md",
+      "entities/openai.md",
+      "entities/meta-ai.md",
+      "concepts/recursive-self-improvement.md",
+      "concepts/rlhf.md",
+      "concepts/post-training.md",
+      "concepts/ai-safety.md",
+      "entities/claude-code.md"
+    ],
+    "new_pages_to_create": [
+      "concepts/posttrainbench.md (benchmark page under concepts/ai-benchmarks/)",
+      "events/meta-muse-glimmer-spark-release.md",
+      "entities/vercel-eve.md (if confirmed as distinct product)"
+    ]
+  }
+}
