@@ -1,15 +1,3 @@
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
-
-## [2026-08-11] watchdog | Auto-fix log header burial + index header counts
-
-### Changes
-- Restored `# Wiki Log` header to line 1 in log.md (was buried at line 38 by a raw-backlog-ingest prepend); metadata relocated to line 3; 355 entries preserved; 0 pipe corruption.
-- Corrected index.md section header counts to authoritative section-entry counts: Entities 893→891, Concepts 1991→1969 (headers were inflated by _index.md files; 2 gpt/_archive + 1 redirect tim-sherratt intentionally unindexed, verified via set-diff).
-- Verified clean: validate_index.py exit 0; 0 pipe/triple-bracket/line-number/space-prefix corruption; 0 ghost entries; 0 true index duplicates (6 flagged were embedded-wikilink false positives); no new entity duplicates (6 known pairs unchanged).
-
----
 ## [2026-08-11] raw-backlog-ingest (14:00) | Duplicate batch — all 5 articles already processed at 10:00 (skip-all) + tracking registry fix
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-11 14:00, run 20260811T140021Z). Takes=0, References=0, Skips=5. **No wiki content changes.**
@@ -46,7 +34,10 @@ _Log of all wiki changes. Newest entries at top._
 - AISI Model Social-Engineering Incident (X 348 bookmarks) — source is tweet only
 - AI Price War / FLI Safety Index / Black Hat AI Cyberattack — reference topics for future crawls
 
----
+
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-11] newsletter-wiki-ingest (11:00) | 3 takes + 11 references (Case C2 recovery — triage checkpoint valid)
 
@@ -1865,6 +1856,8 @@ All 5 articles already comprehensively covered by existing wiki pages. No wiki e
 - Cross-section check: 0 misplaced entries
 - 24 reported orphans all false positives (22 x _index.md, 2 x _archive/, 1 x redirect)
 - Wiki graph analysis is 6 days stale — structural claims already verified via live checks
+
+---
 
 ---
 ## [2026-07-30] X bookmarks ingest — Unsloth Kimi K3 local inference + Dex Horthy Pragmatic Leverage
