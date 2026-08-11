@@ -1,3 +1,16 @@
+## [2026-08-11] raw-backlog-ingest (14:00) | Duplicate batch — all 5 articles already processed at 10:00 (skip-all) + tracking registry fix
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-11 14:00, run 20260811T140021Z). Takes=0, References=0, Skips=5. **No wiki content changes.**
+- All 5 selected articles are exact repeats of the 2026-08-11 10:00 batch (commit e28ecd51; log entry above; archive wiki/raw/archived/triage/raw_backlog/2026-08-11_20260811T100001Z.json):
+  - danluu.com programming-books — reference already applied to [[entities/dan-luu]] (Notable Essays (Non-AI), L76; raw file in sources).
+  - 2026-05-10_glean_top-5-no-code-automation-tools — reference already applied to [[entities/glean]] (Top 5 No-Code Automation Tools (May 2026) subsection, L198).
+  - [AINews] FLUX 3 bulletin (2026-07-24) — already consumed by [[entities/black-forest-labs]] (FLUX 3 Multimodal Flow Models + FLUX-mimic sections) and [[concepts/flux-video-action-models]].
+  - Pragmatic Engineer "Why is Meta destroying its engineering organization?" — fully captured in [[entities/meta]] (2026 Updates: Engineering Culture Collapse, L196-242; same URL in Sources).
+  - [AINews] OpenAI GPT-Image-2 (app-link-post duplicate capture) — already delta-enriched into [[concepts/gpt/chatgpt-images-2-0]] (Arena Elo 1512/1513/1464, +242) + [[entities/kimi]] (K2.6/FlashKDA) + [[concepts/deep-research]] + [[concepts/ml-intern]] (log 2026-08-09/08-10).
+- **Root-cause fix (tracking registry):** the 10:00 batch processed the wiki + archive but never recorded completion in `~/.hermes/processed_raw_articles.json` — all 5 filenames were left stuck at top-level `status: processing`, so raw_backlog_collect.py re-selected them at 14:00. Added all 5 filenames to the `processed_articles` sub-registry (status done, decision recorded) and flipped the top-level entries processing→done. Future runs will skip them.
+- Archive: no new archive file needed — 10:00 archive file holds 4 decisions (Pragmatic Engineer URL deduped: already present in archive_index from an earlier run); `archive_triage.py raw_backlog --keep-reference` re-run confirms "All items already archived (dedup)" (total_archive_urls 2489).
+- Triage checkpoint: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json refreshed with run id 20260811T140021Z (5 decisions, all skip).
+
 ## [2026-08-11] active-crawl (11:00) | 5 new pages + 2 enrichments
 
 **Discovery**: 3 parallel subagents — HN Algolia (15 trending articles, 46 AI-relevant with >=10 pts), X/Twitter xurl (10 substantive topics), Wiki gap analysis (11 coverage gaps across 10 key areas). Selected 5 topics with strong signal AND genuine wiki gap.
