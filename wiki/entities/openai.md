@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-07-31
+updated: 2026-08-11
 tags:
   - company
   - model
@@ -14,6 +14,9 @@ tags:
   - inference
   - infrastructure
   - coding-agents
+  - cybersecurity
+  - daybreak
+  - gpt-5-5-cyber
   - methodology
 aliases: ["OpenAI Inc."]
 sources:
@@ -47,6 +50,7 @@ sources:
   - raw/articles/9to5mac.com--2026-07-09-openai-announcing-the-next-chapter-for-chatgpt-to--a8f56e74.md
   - raw/newsletters/2026-07-30-1-billion-chatgpt-users.md
   - raw/newsletters/2026-07-30-gpt-5-6-just-made-itself-15-more-efficient.md
+  - raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
 ---
 
 # OpenAI
@@ -265,6 +269,15 @@ OpenAI launched **Daybreak**, a cybersecurity initiative combining frontier mode
 - **Philosophy**: "Safer software, resilient by design" — AI should find and patch vulnerabilities, and software should be resilient to them from the start
 - **Positioning**: Direct competitor to Anthropic's Claude Security / Project Glasswing
 - **Codex Security**: Agentic harness for security workflows — secure code review, threat modeling, patch validation, dependency risk analysis
+
+#### GPT-5.6-Cyber (August 2026)
+
+On **August 10–11, 2026**, OpenAI launched **GPT-5.6-Cyber**, a specialized defensive-cybersecurity variant released under **restricted access**, alongside an expansion of its Daybreak initiative. See [[concepts/gpt/gpt-5-6]] for general GPT-5.6 family details.
+
+- **Positioning**: Explicitly built for advanced, **authorized defensive** security work — extending the GPT-5.5-Cyber line rather than a general-purpose model
+- **Zero-day discovery**: OpenAI reports improved zero-day discovery capabilities over prior Cyber variants
+- **Access model**: Released under restricted access, consistent with Daybreak's trusted-access approach for verified defenders
+- **Distinction from GPT-5.6 Sol**: GPT-5.6-Cyber is the specialized defensive-cyber variant, whereas GPT-5.6 Sol is the general frontier model — Sol rates **High** (not **Critical**) on cyber per OpenAI's Preparedness Framework
 
 ### Codex Mobile & ChatGPT Personal Finance (May 2026)
 

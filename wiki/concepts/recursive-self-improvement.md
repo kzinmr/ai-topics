@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-08-02
+updated: 2026-08-11
 type: concept
 tags:
   - concept
@@ -22,6 +22,7 @@ sources:
   - raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
   - https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data
+  - raw/newsletters/2026-08-10-import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interpl.md
 description: "The feedback loop where an AI improves the machinery that produces its intelligence. Near-term RSI runs through harness engineering — optimizing context, workflow, and code — rather than direct weight rewriting."
 ---
 
@@ -185,6 +186,18 @@ Humans should move up the stack, not be removed from the loop — providing over
 | **KernelBench** | GPU kernel generation (250 tasks) | — |
 | **TerminalBench-2** | Coding agent benchmark | — |
 
+### PostTrainBench+: Beyond the 10-Hour Wall-Clock Limit (August 2026)
+
+**PostTrainBench+** is a variant of PostTrainBench that goes above the original 10-hour wall-clock limit, testing whether models can sustain long-horizon post-training engineering (data pipelines, training runs, evaluation loops) instead of collapsing to narrow strategies under time pressure — the failure mode documented for [[concepts/gpt/gpt-5-6|GPT-5.6]] on PostTrainBench-Lite.
+
+| Result | Score |
+|--------|-------|
+| **Intology** (4,000+ hours of H100 GPU time) | **51.6%** — first human-baseline-beating result on this harder variant |
+| Opus 4.8 | 44.3% |
+| GLM 5.2 | 42.7% |
+
+Intology's result demonstrates that with a sufficient compute budget, automated post-training can exceed the human baseline even on this harder, longer-horizon variant — a step beyond the production self-optimization in the GPT-5.6 Sol case above. Source: Import AI 468 (Aug 10, 2026).
+
 ## Industry Evidence: Anthropic's RSI Trajectory (June 2026)
 
 [[entities/anthropic|Anthropic]] published the most comprehensive public disclosure by any frontier lab of internal AI-accelerated development metrics. The Anthropic Institute's ["When AI builds itself"](https://www.anthropic.com/recursive-self-improvement) (Favaro & Clark, June 2026) frames RSI as Anthropic's explicit strategic path.
@@ -280,6 +293,20 @@ Anthropic's policy stance on RSI governance:
 - AI training runs are far easier to conceal than missile silos or centrifuges
 - Unilateral pause is achievable immediately but only changes who the front-runner is
 - The Anthropic Institute committed to organizing policy conversations about RSI governance
+
+### IFP's 23 'Low-Regret' RSI Policy Recommendations (August 2026)
+
+In August 2026, the **Institute for Progress (IFP)** published 23 'low-regret' RSI policy recommendations across seven categories, aimed at helping policymakers address the risks of further automating AI R&D — the most concrete governance roadmap for the near-term RSI trajectory to date:
+
+1. **Transparency of automated AI R&D** — visibility into how much AI R&D is being automated, and by whom
+2. **National capabilities** — building domestic capacity to understand, track, and evaluate automated AI R&D
+3. **Risk management strategies** — practical measures for labs and governments to manage escalation risks
+4. **Verification technologies** — tools for verifying compliance with any agreed constraints
+5. **Resilience** — hardening institutions and infrastructure against fast RSI-driven change
+6. **Maintaining US leadership** — framing RSI policy in terms of competitive advantage
+7. **International coordination** — the collective-action dimension of RSI governance
+
+The 'low-regret' framing means the recommendations are designed to be worth implementing even if the most extreme RSI scenarios never materialize. Covered in Import AI 468 (Aug 10, 2026); complements the verification/pause debate above by translating it into concrete policy categories.
 
 ### The Dual Framing Problem
 

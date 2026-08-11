@@ -2,15 +2,21 @@
 title: "Trusted Access Biodefense"
 type: concept
 created: 2026-05-30
-updated: 2026-06-08
+updated: 2026-08-11
 tags:
   - agent-safety
   - evaluation
   - openai
   - announcement
   - policy
+  - biotech
+  - biology
+  - ai-in-science
+  - safety
+  - ai-safety
 sources:
   - https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense
+  - raw/newsletters/2026-08-10-the-model-openai-won-t-release.md
 ---
 
 # Trusted Access Biodefense
@@ -83,6 +89,20 @@ On June 2026, the CEOs of the three leading AI labs — **Sam Altman** (OpenAI),
 > "Screening the DNA works because it sits outside the AI."
 
 The letter represents a rare instance of **cross-competitor cooperation** on biosecurity policy, with the three CEOs coordinating their message to Congress rather than competing on safety positioning.
+
+## AI-Designed Viruses (August 2026)
+
+On **August 6, 2026**, researchers at **Stanford** and the **Arc Institute** published work in *Science* showing that generative genome language models can now design complete, functional viral genomes from scratch — a concrete step beyond models merely *answering* biology questions.
+
+- **Models**: Two genome language models, **Evo 1** and **Evo 2**, generated **hundreds of candidate designs** for complete bacteriophage genomes
+- **Result**: **16 of the candidates were working viruses** — genomes written by the model that came alive and functioned in the lab
+- **Significance**: Moves the biosecurity frontier from AI-assisted knowledge (see the June 2026 DNA screening letter above) to AI-authored biological payloads; the manufacturing chokepoint argument for screening synthetic DNA orders becomes more urgent
+
+**Biosecurity relevance: ★★★☆☆** — the design step has been automated, so the remaining safeguard is human process, not capability limits:
+
+> "A generative model can now write a genome that comes alive in a dish, which leaves the review process around these labs as the only real safeguard."
+
+This directly validates the **trusted access** thesis on this page: as generative models cross the threshold from describing biology to writing functional genomes, controlling who gets model access and reviewing what those labs do with it becomes the primary defense — reinforcing the case for programs like [[concepts/gpt/gpt-rosalind|GPT-Rosalind]] and mandatory DNA order screening.
 
 ## Related
 

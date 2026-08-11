@@ -2,11 +2,13 @@
 title: Mistral AI
 type: entity
 created: 2026-05-04
-updated: 2026-08-05
+updated: 2026-08-11
 tags:
   - company
   - model
   - open-source
+  - partnership
+  - sovereign-ai
 aliases:
   - Mistral
   - Mistral AI SAS
@@ -15,6 +17,7 @@ sources:
   - raw/articles/2026-05-24_mistral-ai_accelerate-ai-native-industry.md
   - raw/articles/substack.com--app-link-post--7e552b79.md
   - raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md
+  - raw/newsletters/2026-08-10-the-model-openai-won-t-release.md
 ---
 
 # Mistral AI
@@ -113,6 +116,15 @@ Mistral announced **Leanstral**, a project applying LLMs to formal proof generat
 > *Source: [[raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md|AINews — Aug 5 2026]]*
 
 Mistral launched **Shieldstral**, a **3B open-weights safety/moderation model** designed for **on-device moderation/classification**. [[entities/vllm|vLLM]] shipped day-0 serving support and highlighted: **one-forward-pass safety scoring**, multimodal input, **12 languages**, and **32k context**. This aligns with Mistral's "deployable specialization" strategy (see Model Architecture Philosophy below) — small, specialized, open models alongside frontier efforts.
+
+## ABN AMRO Partnership & Dutch Banking Deals (Aug 2026)
+
+> *Source: [[raw/newsletters/2026-08-10-the-model-openai-won-t-release.md|Superintel+ — Aug 10 2026]]*
+
+Two consecutive days of Dutch banking deals (Aug 4–5) underscore Mistral's European sovereign-AI purchasing pattern (★★★☆☆):
+
+- **Aug 4, 2026** — **Rabobank** said it would invest **up to €2 billion over three years** in data, IT and AI.
+- **Aug 5, 2026** — **ABN AMRO** announced a **strategic partnership with Mistral AI** — the first between the French lab and a leading Dutch bank. ABN AMRO cited access to frontier AI **"developed and governed in Europe, reducing dependence on non-European technology providers"** — a concrete enterprise sovereign-AI adoption case consistent with Mistral's European government contracts and on-premise positioning (see Competitive Position above).
 
 ## Forge: Enterprise Fine-Tuning Platform
 

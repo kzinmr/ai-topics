@@ -2,18 +2,23 @@
 title: "OpenAI Astra"
 type: entity
 created: 2026-08-03
-updated: 2026-08-04
+updated: 2026-08-11
 tags:
   - model
   - openai
   - mathematics
   - reasoning
   - ai-safety
+  - preparedness-framework
+  - cybersecurity
+  - safety
 sources:
   - raw/articles/garymarcus.substack.com--p-openais-amazing-but-vastly-oversold--9b1f0537.md
   - raw/articles/garymarcus.substack.com--p-two-critical-updates-re-astra-and--79f7c1a6.md
+  - raw/newsletters/2026-08-10-the-model-openai-won-t-release.md
 related:
   - entities/openai
+  - concepts/gpt/gpt-5-6
   - concepts/ai-reasoning
   - concepts/ai-benchmarks
 ---
@@ -28,6 +33,14 @@ related:
 - Published a 249-page paper with results (but notably, no methodology or model details)
 - Superseded previous GPT-5.6 as the leading math/reasoning model
 - Elon Musk cited it as evidence of reaching The Singularity
+
+## Preparedness Framework: Critical Cybersecurity Rating (August 2026)
+
+On Friday, August 7, 2026, [[entities/openai|OpenAI]] said it can no longer rule out that Astra meets the **Critical** cybersecurity bar in its own Preparedness Framework — the level at which a model finds and weaponizes zero-day flaws in hardened real systems with no human in the loop. This makes Astra the **first model ever treated as Critical** under the framework.
+
+- **First-ever Critical rating**: No prior model has been treated as Critical. [[concepts/gpt/gpt-5-6|GPT-5.6 Sol]] sat one rung lower, at **High** — consistent with the GPT-5.6 documentation, which states Sol did NOT cross the Cyber Critical threshold.
+- **Work paused**: Internal work on Astra is paused pending stronger controls: sealed test environments, restricted network and tool access, sandboxed execution, and chain-of-thought monitoring.
+- **Release implications**: With Critical on the table, releasing Astra becomes a governance problem, not just a capability milestone — a sharp counterpoint to the math-breakthrough narrative.
 
 ## Critical Analysis: The Fallacy of Composition
 

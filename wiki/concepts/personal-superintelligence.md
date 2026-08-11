@@ -7,13 +7,18 @@ aliases:
   - ambient-computing-agents
   - context-aware-ai
 created: 2026-04-15
-updated: 2026-05-26
+updated: 2026-08-11
 tags:
   - concept
   - methodology
   - personal-ai
+  - superintelligence
+  - meta
+  - ai-safety
+  - governance
 status: active
-sources: []
+sources:
+  - raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
 ---
 # Personal Superintelligence — Evolution and Philosophical Tensions
 
@@ -98,6 +103,25 @@ Meta plans **$115B-$135B** in capital expenditure for 2026. Cutting VR/Reality L
 
 The OpenClaw community, Sero's "Freedom Tech," and local LLM enthusiasts advocate for **"the user's right to own their agent and data."** [[concepts/anthropic/openclaw-conflict]] was a turning point for this movement.
 
+## Zuckerberg's "The Future is for Everyone" (Aug 10, 2026)
+
+On **August 10, 2026**, Mark Zuckerberg ([[entities/meta|Meta]]) published a sequel essay, *"The Future is for Everyone"*, expanding his July 2025 "Personal Superintelligence" vision into **six core predictions**:
+
+1. **Personal agent for everyone** — everyone will have an exceptionally capable personal agent that understands you
+2. **Creation tools for everyone** — everyone will have incredible tools for creation
+3. **PhD-level tutor and coach** — everyone will have a personalized tutor and coach with a PhD in every subject
+4. **Entrepreneurial economy** — everyone will be able to start and scale a business
+5. **Accelerated scientific progress** — science advances dramatically faster
+6. **Low-price access** — all of the above available at a low price
+
+He also named **three core risks**:
+
+- **Job Growth and The Economy** — labor market disruption from AI-driven automation
+- **Alignment With People and Addressing Existential Risk** — keeping superintelligence aligned with human values
+- **Maintaining Control of Superintelligence** — ensuring humans retain control over the systems they build
+
+The essay accompanied the release of [[entities/muse-glimmer]], Meta Superintelligence Labs' first open-weights frontier-ish small LLM (model details covered separately on that page).
+
 ## Concept Map
 
 ```
@@ -165,3 +189,4 @@ Personal Superintelligence
 - [Meta Positions AI Glasses and Personal Agents at Center of Growth (AI Insider, Jan 2026)](https://theaiinsider.tech/2026/01/29/meta-positions-ai-glasses-and-personal-agents-at-the-center-of-its-next-growth-phase/)
 - [Anthropic-OpenClaw Conflict (Apr 2026)](~/wiki/concepts/anthropic/openclaw-conflict.md)
 - [Shlok Khemani — Personal AI Research](~/wiki/entities/shlok-khemani.md)
+- [AINews: Muse Glimmer and Spark — Open Weights return Personal Superintelligence promise (Aug 11, 2026)](~/wiki/raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md)

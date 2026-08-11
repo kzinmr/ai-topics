@@ -2,17 +2,19 @@
 title: "Claude Sonnet 5"
 type: concept
 created: 2026-07-01
-updated: 2026-07-07
+updated: 2026-08-11
 tags:
   - anthropic
   - model
   - ai-agents
+  - pricing
 aliases: ["Sonnet 5", "Claude Sonnet 5"]
 sources:
   - raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md
   - raw/articles/2026-07-01_harvey_sonnet-5-in-harvey.md
   - raw/newsletters/2026-07-01-ainews-sonnet-5-today-and-fable-5-tomorrow.md
   - raw/newsletters/2026-07-06-how-i-ai-sonnet-5-review-how-to-run-autonomous-coding-agents-from-your-phone.md
+  - raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
 ---
 
 # Claude Sonnet 5
@@ -30,8 +32,10 @@ Sonnet 5 represents a significant upgrade over [[concepts/claude/sonnet-4-6|Sonn
 | **Max output** | 128,000 tokens |
 | **Input price** | $3.00 / million tokens |
 | **Output price** | $15.00 / million tokens |
-| **Intro discount** | $2.00 / $10.00 (until Aug 31, 2026) |
-| **Pricing status** | Same as Sonnet 4.6 list, but intro discount |
+| **Intro discount** | $2.00 / $10.00 per million tokens — originally listed "until Aug 31, 2026"; made **permanent** (Aug 11, 2026) |
+| **Pricing status** | Same as Sonnet 4.6 list, with intro discount — intro pricing made permanent Aug 11, 2026 (no longer expiring Aug 31) |
+
+**Pricing update (2026-08-11):** Anthropic announced that Sonnet 5's introductory pricing ($2/M input, $10/M output) would become **permanent** instead of expiring on Aug 31, 2026 — a move widely read as competitive pressure amid a rapidly strengthening open weights ecosystem. Source: raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
 
 ## Key Technical Changes
 

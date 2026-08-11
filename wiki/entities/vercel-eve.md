@@ -1,7 +1,7 @@
 ---
 title: "Vercel Eve"
 created: 2026-06-28
-updated: 2026-06-28
+updated: 2026-08-11
 type: entity
 tags:
   - entity
@@ -15,6 +15,11 @@ tags:
   - sandbox
   - open-source
   - company
+  - vercel
+  - agent-framework
+  - code-review
+  - case-study
+  - ai-adoption
 aliases:
   - Eve framework
   - eve
@@ -27,6 +32,7 @@ sources:
   - https://github.com/vercel/eve
   - https://vercel.com/docs/eve
   - https://vercel.com/blog/introducing-eve
+  - raw/newsletters/2026-08-10-how-i-ai-build-an-ai-code-review-bot-in-30-minutes-claude-code-for-normal-people.md
 ---
 
 # Vercel Eve
@@ -186,6 +192,20 @@ eve dev                          # boots an interactive agent in your terminal
 | **Auth brokering** | Built-in (Vercel Connect) | Manual | Manual | Manual |
 | **License** | Apache 2.0 | Proprietary (Anthropic) | Apache 2.0 | MIT |
 
+## Case Study: Merge Mommy (AI Code-Review Bot)
+
+**Merge Mommy** is an AI agent built on Eve that reviews pull requests, scores each PR's risk, auto-approves the safest ones, and sends anything questionable to Slack for human review. It is a concrete third-party adoption case (★★★☆☆) — a real-world deployment showing Eve's framework primitives (tools, channels, evals, human-in-the-loop) composing into a production workflow.
+
+Reported on *Lenny's Newsletter* ("How I AI", episode with Claire, Aug 10, 2026). The agent was built in a single Codex session, notable for how quickly it went from idea to a bot trusted to merge code.
+
+Key design points:
+
+- **Six-dimension risk scoring** — the risk model scores each PR across six dimensions, including size of the change, blast radius, how easily it can be reversed, and data/security sensitivity (plus likely more).
+- **Auto-approve + Slack routing** — the safest PRs are approved automatically; anything questionable is routed to Slack for a human. This is Eve's human-in-the-loop pattern applied to code review: move fast on low-risk actions, keep human judgment on the rest.
+- **Intercom precedent** — at Intercom, PRs approved by its AI system move **five times as fast**, cited as the precedent for letting an AI approve PRs.
+- **SOC 2 + auto-approval coexistence** — the case notes that SOC 2 compliance can coexist with agent auto-approval, an early signal for governance of autonomous code review.
+- **Eval discipline** — stresses evaluating the agent (Eve's `agent/evals/`) before relying on its approvals.
+
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — Eve is a harness that provides the execution environment for agents; the "agent = model + harness" philosophy
@@ -201,3 +221,4 @@ eve dev                          # boots an interactive agent in your terminal
 - [Eve concepts](https://vercel.com/docs/eve/concepts) — Architecture overview
 - [Introduction to Eve (D.AI.R)](https://academy.dair.ai/labs/intro-to-eve) — Free hands-on lab
 - [Building Agents with Vercel's Eve Framework](https://x.com/i/article/2069825847729508352) — X Article deep-dive
+- [How I AI: Build an AI code review bot in 30 minutes](https://open.substack.com/pub/lenny/p/how-i-ai-build-an-ai-code-review) — Lenny's Newsletter podcast episode (Aug 10, 2026); source of the Merge Mommy case study

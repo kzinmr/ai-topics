@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-08-04
+updated: 2026-08-11
 type: entity
 aliases:
   - natolambert
@@ -19,6 +19,7 @@ sources:
   - raw/newsletters/2026-07-12-6-months-to-live-for-open-models.md
   - raw/newsletters/2026-08-02-latest-open-artifacts-23-laguna-s2-1-inkling-kimi-k3-show-the-utility-of-open-mo.md
   - raw/newsletters/2026-08-03-introducing-our-artifacts-hub-and-adoption-dashboard.md
+  - raw/newsletters/2026-08-10-5-useful-things-you-ll-learn-in-my-new-post-training-textbook-shipping-now.md
 ---
 
 # Nathan Lambert (@natolambert)
@@ -64,7 +65,9 @@ His unconventional path — starting his Ph.D. in MEMS/physics, being rejected b
 ### The RLHF Book
 - Open-source textbook at [rlhfbook.com](https://rlhfbook.com) (1,764+ GitHub stars)
 - Covers RLHF from fundamentals through advanced topics: Constitutional AI, synthetic data, over-optimization, character training
-- Also available as a Manning MEAP (print publication estimated Summer 2026)
+- **Now shipping** (Aug 2026): physical copies available via Manning, 50% off until Aug 19, 2026
+- Comes with a full **12-hour course**; the book is ~25% RL by word/page count
+- Includes the **PPO clipping figure** — the surrogate objective reduces to six regions
 
 ### ATOM Project (American Truly Open Models)
 - Launched in 2025 as a community movement to reinvigorate U.S. investment in open AI models
@@ -105,7 +108,7 @@ See [[raw/articles/2026-05-04_interconnects_distillation-panic]] and [[concepts/
 - Agentic AI and OpenClaw will spur mass experimentation with open models
 - Key success factors: licensing simplicity, ecosystem support, release cadence
 
-**RLHF Book Completed**: The RLHF Book is done and ready for pre-order via Manning (also available free at rlhfbook.com with 1,764+ GitHub stars).
+**RLHF Book Completed — Now Shipping**: The RLHF Book is now shipping in physical copies via Manning (also available free at rlhfbook.com with 1,764+ GitHub stars), 50% off until Aug 19, 2026, with a full 12-hour course included.
 
 **Post-Training Course**: Announced development of a comprehensive post-training course covering SFT, DPO, RLVR, and synthetic data pipelines.
 

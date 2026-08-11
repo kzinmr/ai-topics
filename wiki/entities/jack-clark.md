@@ -1,7 +1,7 @@
 ---
 title: "Jack Clark"
 created: 2026-05-05
-updated: 2026-08-04
+updated: 2026-08-11
 type: entity
 tags: [person, company, anthropic, safety, prediction, governance]
 sources:
@@ -9,6 +9,7 @@ sources:
   - raw/newsletters/2026-05-26-import-ai-458-reckoning-with-the-future-and-a-singularity-story.md
   - raw/newsletters/2026-06-01-import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-.md
   - raw/newsletters/2026-08-03-import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-a.md
+  - raw/newsletters/2026-08-10-import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interpl.md
 ---
 
 # Jack Clark
@@ -95,6 +96,18 @@ See [[raw/newsletters/2026-05-26-import-ai-458-reckoning-with-the-future-and-a-s
 - **AI and creativity confusion**: the ongoing public debate over whether AI-generated work constitutes creativity
 
 See [[raw/newsletters/2026-08-03-import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-a.md]] for full text.
+
+### Import AI 468: 23 RSI ideas; PostTrainBench+ (August 2026)
+
+**"Import AI 468: 23 RSI ideas; PostTrainBench+; and how trust and transparency interplay with AI racing" (Aug 10, 2026)**: Multiple substantive topics:
+
+**23 'low-regret' RSI policy ideas**: The Institute for Progress (IFP) published 23 policy recommendations across seven categories aimed at helping policymakers address the risks of further automating AI R&D: (a) transparency of automated AI R&D, (b) national capabilities, (c) risk management strategies, (d) verification technologies, (e) resilience, (f) maintaining US leadership, (g) international coordination — a concrete governance roadmap for the RSI trajectory Clark has tracked since Import AI 455 (see [[concepts/recursive-self-improvement]]).
+
+**PostTrainBench+**: Coverage of the harder PostTrainBench variant that goes above the 10-hour wall-clock limit — Intology scored 51.6% using 4,000+ hours of H100 GPU time (the first human-baseline-beating result on this variant), versus 44.3 for Opus 4.8 and 42.7 for GLM 5.2.
+
+**Trust, transparency, and AI racing**: How trust and transparency interplay with the AI race — continuing the pacing/collective-action theme from Import AI 467.
+
+See [[raw/newsletters/2026-08-10-import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interpl.md]] for full text.
 
 ## Writing Style
 Clark writes with a distinctive combination of technical precision and literary flair. His newsletter intros often set context through historical analogies or science fiction references before diving into data. He is notably willing to make concrete, falsifiable predictions with explicit probability estimates.

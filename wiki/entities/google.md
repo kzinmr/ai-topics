@@ -2,8 +2,8 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-08-10
-tags: [company, lab, product, platform, infrastructure]
+updated: 2026-08-11
+tags: [company, lab, product, platform, infrastructure, gemini, ai-industry-economics, business-model]
 aliases: ["Google DeepMind", "Google Research"]
 sources: [
   raw/articles/theverge.com--tech-933415-google-io-2026-biggest-announcements-ai-gemini--e73abf5d.md,
@@ -17,7 +17,8 @@ sources: [
   raw/articles/feed.tedium.co--link-15204-17351430-google-ai-udm14-reflection--5563d9f3.md,
   raw/articles/simonwillison.net--2026-jun-10-diffusiongemma--8e3b4f1a.md,
   raw/newsletters/2026-06-11-ainews-open-models-model-labs-vs-agent-labs-and-what-s-untrainable-sarah-guo.md,
-  raw/newsletters/2026-08-09-google-sells-the-shovels-the-great-hark-handoff-and-bytedance-s-bigger-picture.md
+  raw/newsletters/2026-08-09-google-sells-the-shovels-the-great-hark-handoff-and-bytedance-s-bigger-picture.md,
+  raw/newsletters/2026-08-10-the-model-openai-won-t-release.md
 ]
 ---
 # Google (AI/ML)
@@ -184,6 +185,14 @@ Google's TPU business has become a significant external revenue stream. Per Semi
 - **More than 20%** of Google's TPU shipments through the end of 2027 are being sold directly to **Anthropic**
 - Google Cloud revenue growing **82%** last quarter on a TPU order backlog **above $150 billion**
 - Signals a shift from TPU-as-internal-infrastructure toward TPU-as-commercial-product, with Anthropic as anchor customer
+
+### Gemini First-Party API Revenue — SemiAnalysis Tokenomics Estimate (Aug 2026)
+
+SemiAnalysis's Tokenomics Model (via Superintel+, Aug 2026) estimates Gemini first-party API quarterly revenue at **~$2.3B by 2Q26**:
+
+- **Chart**: 3Q24 through 2Q26 — bars climb without pause, ending near **$2.3B** in 2Q26
+- **QoQ growth slowing**: from roughly **70% QoQ in 1Q26** to about **40% QoQ in 2Q26** — "steeper than a base effect alone explains"
+- **Scope**: First-party API = the channel Google sells directly to developers (distinct from reseller/third-party channels)
 
 ## AlphaEvolve (May 2026)
 
