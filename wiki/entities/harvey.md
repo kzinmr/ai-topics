@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-10
+updated: 2026-08-11
 tags:
   - security
   - company
@@ -30,6 +30,7 @@ sources:
   - raw/articles/2026-08-01_harvey_legal-ai-vs-traditional-legal-research.md
   - raw/articles/2026-08-05_harvey_ai-tax-research.md
   - raw/articles/2026-08-05_harvey_playbook-builder-in-harvey.md
+  - raw/articles/2026-08-11_harvey_corporate-compliance-ai.md
 ---
 
 # Harvey
@@ -527,3 +528,26 @@ Harvey's **playbook builder** (Aug 4, 2026) turns existing standards, past docum
 This complements the June 2026 Agent Builder story — the playbook remains "the asset," and the builder lowers the cost of creating it from firm precedent.
 
 Source: raw/articles/2026-08-05_harvey_playbook-builder-in-harvey.md
+
+## Corporate Compliance AI (August 2026)
+
+Harvey published a product guide (Aug 10, 2026) on **corporate compliance AI** — how in-house legal and compliance teams use AI to interpret regulatory change, map obligations, and update policies faster, without losing attorney oversight.
+
+**Definition**: Corporate compliance AI helps organizations *do compliance work* — tracking regulatory change, interpreting how new requirements apply, and keeping policies/contracts/procedures aligned. It is explicitly distinguished from **AI governance**, which concerns managing an organization's own AI systems (model risk, transparency, accountability, bias). The two appear together in search results but solve different problems; teams modernizing regulatory change management need the former.
+
+**Why manual change tracking breaks down**: Regulatory intelligence platforms do the monitoring step well; the hard problem begins after the alert — determining applicability, translating legal language into operational obligations, identifying affected policies and contracts, coordinating updates, and documenting reasoning. Large organizations face hundreds of regulatory developments per year across multiple jurisdictions, often managed via spreadsheets, inboxes, and manual review.
+
+**Six-stage regulatory change management workflow** (manual vs AI-assisted):
+
+| Stage | Manual Approach | AI-Assisted Approach |
+|---|---|---|
+| Monitoring | Staff monitor agency websites/newsletters, often inconsistently | AI synthesizes updates across regulatory sources into a unified view |
+| Interpretation | Individual analysts review each regulation | AI produces plain-language summaries and flags applicability by entity type/business/jurisdiction |
+| Obligation mapping | Teams translate regulations into spreadsheets | AI breaks regulations into obligations, deadlines, owners; maps to existing policies |
+| Gap analysis | Line-by-line policy review after every change | AI compares policies/contracts against new requirements, flags gaps with source citations |
+| Policy & documentation updates | Draft revisions manually from scratch | AI drafts policy updates, checklists, implementation summaries for legal review |
+| Audit trail | Reconstruct documentation after implementation | AI maintains traceable record of changes, decisions, sources, resulting actions |
+
+**Agentic workflows**: increasingly the sequence — monitor regulatory developments, interpret what they mean, act on the results — is executed by agentic workflows that transform regulatory updates into concrete compliance work for legal professionals to review and approve. The guide explicitly frames AI as accelerating the work *between* "a regulation changed" and "the organization responded," not replacing attorney judgment.
+
+Source: raw/articles/2026-08-11_harvey_corporate-compliance-ai.md

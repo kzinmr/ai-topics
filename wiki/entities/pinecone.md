@@ -2,7 +2,7 @@
 title: "Pinecone"
 type: entity
 created: 2026-05-08
-updated: 2026-07-17
+updated: 2026-08-11
 tags:
   - company
   - search
@@ -17,6 +17,8 @@ sources:
   - raw/articles/2026-06-06_pinecone_nexus-ea-benchmarks.md
   - raw/articles/2026-07-17_pinecone_sparse-v3.md
   - raw/articles/2026-07-17_pinecone_text-match-filters.md
+  - raw/articles/2026-08-11_pinecone_the-ceiling-was-never-the-model.md
+  - raw/articles/2026-08-11_pinecone_pinecone-nexus-generally-available.md
 ---
 
 # Pinecone
@@ -146,6 +148,30 @@ Pinecone introduced **Full Text Search filters** designed specifically for AI ag
 No pre-labeling is required. This is critical for [[concepts/agentic-rag|agentic pipelines]] where bad retrievals compound wasted tool calls. In **public preview**.
 
 Source: raw/articles/2026-07-17_pinecone_text-match-filters.md
+
+## Nexus GA — "It's the Knowledge, Not the Models" (August 2026)
+
+Pinecone announced **Nexus GA** (Aug 6, 2026) — generally available for deployment in a customer's own cloud, five weeks after Public Preview opened. Two companion posts ("[The Ceiling Was Never the Model](https://www.pinecone.io/blog/the-ceiling-was-never-the-model/)" and "[Nexus GA: It's the Knowledge, Not the Models](https://www.pinecone.io/blog/pinecone-nexus-generally-available/)") frame the launch around a shared industry conclusion: in enterprise production, **it is the knowledge, not the model, that decides whether AI works**.
+
+**The Sierra connection**: Sierra AI (Bret Taylor's company) "AI-pilled" its whole company with an internal agent named **Pinecone**. On τ-Knowledge, the benchmark Sierra itself built, an agent using Pinecone Nexus posted the top score — ahead of agents running on frontier models alone. Both companies landed on the same thesis independently.
+
+**τ-Knowledge benchmark results** (agent + Nexus layer vs same frontier models with the benchmark's own tools):
+- GPT-5.2 + Nexus: **+12% accuracy at 80% lower cost** (tool calls 42.5→17.7, model calls 81.7→42.6)
+- GPT-5.5 + Nexus: held accuracy at **77% lower cost** (tool calls 28.6→16.0, model calls 60.9→39.4)
+- Task cost fell from **$1.45 to $0.53**; the advantage held on 96 of 97 tasks
+- Across the full benchmark: agent with Nexus posted **47.4% vs best frontier model 46.4%, at 74% less cost per task**
+
+**Retrieval is the cost driver**: Blended inference prices fell ~67% YoY, but enterprise AI budgets kept climbing because one task fans out into dozens of model calls. More than **85% of an agent's effort** goes to fetching knowledge before it reasons; Goldman Sachs projects token consumption to **multiply 24x by 2030**; 68% of teams cap agents at ten steps before human intervention. A bigger model doesn't fix a bill that scales with retrieval.
+
+**Moat argument (Nadella/Karp)**: Models are becoming interchangeable commodities; the durable enterprise advantage is its own knowledge and working practices. Satya Nadella: the moat that lasts is enterprise data/context/memory under its own control. Alex Karp (Palantir): frontier labs oversold their models while absorbing the proprietary edge of paying companies — "the moat leaks out one API call at a time."
+
+**Pinecone's own support queue**: After pointing Nexus at its own support queue (July 17), ticket resolution rose from **24.6% to 55.1%** — more than half of tickets close without a person touching them.
+
+**Scale of early adoption**: 800+ organizations signed up for early access; 100+ enterprises (many among the largest in the world) ran their data through it; engagements compiled **3.5M source chunks into ~26,000 structured knowledge artifacts**. Nexus curates incrementally so only what changes gets recompiled.
+
+**Key architecture**: Nexus compiles data once, ahead of time, into governed domain-specific knowledge; agents query it via **KnowQL** (a query language built for agents) and get typed, cited answers in a single call. Every field carries a citation + confidence score; access control is applied at retrieval time, not prompt time. Runs in your own cloud on the models you choose with no standing Pinecone access to customer data.
+
+Source: raw/articles/2026-08-11_pinecone_the-ceiling-was-never-the-model.md, raw/articles/2026-08-11_pinecone_pinecone-nexus-generally-available.md
 
 ## Related
 

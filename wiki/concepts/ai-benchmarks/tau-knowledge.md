@@ -5,7 +5,7 @@ aliases:
   - tau-knowledge
   - τ-Knowledge
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-08-11
 tags:
   - benchmark
   - fintech
@@ -14,6 +14,7 @@ tags:
 sources:
   - raw/papers/2026-03-04_2603.04370_tau-knowledge-unstructured-knowledge.md
   - raw/articles/sierra.ai--blog-tau-knowledge--5dda7a09.md
+  - raw/articles/2026-08-11_pinecone_the-ceiling-was-never-the-model.md
 ---
 
 # τ-Knowledge
@@ -78,6 +79,20 @@ Sierra evaluated 11 frontier model variants at maximum reasoning effort over the
 | GPT-5.5 + xhigh reasoning | **37.4%** | **20.6%** | Current leaderboard leader |
 
 **GPT-5.5 improvements**: +11.9pt in pass^1, more than 2x improvement in pass^4. Still fails on ~60% of tasks, meaning τ-Knowledge is far from saturated.
+
+### Knowledge-Layer Results — Pinecone Nexus (August 2026)
+
+In August 2026, **[[entities/pinecone|Pinecone]]** reported results giving a **compiled knowledge layer (Nexus)** to the same frontier models on τ-Knowledge's banking domain — the first published evidence that a retrieval/knowledge architecture, not just a stronger model, moves the leaderboard:
+
+| Configuration | Result | Cost effect |
+|---------------|--------|-------------|
+| GPT-5.2 + Nexus | **+12% accuracy** | **80% lower cost** (tool calls 42.5→17.7, model calls 81.7→42.6) |
+| GPT-5.5 + Nexus | accuracy held | **77% lower cost** (tool calls 28.6→16.0, model calls 60.9→39.4) |
+| Agent + Nexus (full benchmark) | **47.4%** | vs best frontier model 46.4%, **74% less cost per task** |
+
+Per-task cost fell from **$1.45 to $0.53**; the advantage held on 96 of 97 banking tasks. Pinecone's framing: "in enterprise production, it is the knowledge, not the model, that decides whether AI works" — the same conclusion Sierra reached independently. The results are notable because τ-Knowledge's original analysis identified retrieval as a major bottleneck (only ~25% autonomous success vs ~40% oracle) — Nexus's compiled-knowledge approach attacks exactly that bottleneck, and at scale (3.5M source chunks compiled into ~26K structured knowledge artifacts across 100+ enterprise engagements).
+
+Source: raw/articles/2026-08-11_pinecone_the-ceiling-was-never-the-model.md
 
 ### Behavioral Patterns Distinguishing Strong and Weak Agents
 

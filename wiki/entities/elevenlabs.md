@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-08-08
+updated: 2026-08-11
 tags:
   - company
   - voice-ai
@@ -10,6 +10,9 @@ tags:
 aliases: ["11labs", "Eleven Labs"]
 sources:
   - https://elevenlabs.io
+  - raw/articles/2026-08-11_elevenlabs_webinar-recap-how-admiral-handles-insurance-calls-with-ai-agents.md
+  - raw/articles/2026-08-11_elevenlabs_deutsche-telekom.md
+  - raw/articles/2026-08-11_elevenlabs_finch.md
   - raw/articles/2026-05-19_elevenlabs_building-elevenagents-with-claude-code.md
   - raw/articles/2026-05-22_elevenlabs_elevenreader-launches-premium-audiobooks.md
   - raw/articles/2026-05-23_elevenlabs_22-million-earned-by-voice-creators-on-elevenlabs.md
@@ -386,6 +389,46 @@ ElevenLabs published a case study (Aug 7, 2026) on **ElevenReader Voice Chat**: 
 **Significance**: Part of ElevenLabs' thesis that content and IP experiences become interactive (comparing to MasterClass-style "speak with a well-known coach" experiences), with audiobooks expected to form deeper bonds between readers, authors, and even characters. See [[concepts/voice-agent-evaluation]] for the related evaluation-methodology coverage.
 
 Source: raw/articles/2026-08-08_elevenlabs_how-elevenreader-used-elevenagents.md
+
+### Admiral Case Study — Insurance Calls with AI Agents (August 2026)
+
+ElevenLabs published a webinar recap (Aug 10, 2026) with **Admiral**, the UK insurance group handling millions of customer interactions a year across the UK, Italy, France, and Spain. Dominika Kampa (Group Head of Generative AI) walked through the AI layer her team built.
+
+**Goals**: Admiral's north star was the most trusted customer experience in insurance; primary metric was **90% first contact resolution**, with 24/7 availability, concise interactions, and higher NPS as secondary. Containment was deliberately secondary — a deliberate handoff to a human is never counted as a failure as long as the customer got what they called for.
+
+**Regulated-industry bar**: "We want to raise the validation bar, but not lower the compliance bar." Edge-case knowledge that used to live in the instincts of the most tenured agents now has to be tested explicitly per use case. Vulnerability and arrears cases stay routed to humans while the team learns edge cases.
+
+**Architecture (Demo 1 — settlement quotes)**:
+- Authentication runs as its own sub-agent at the start of the workflow, before anything else executes
+- A **sentry sub-agent** checks eligibility — vulnerable customers and customers in arrears are transferred to a priority queue with a human
+- API-driven rather than screen-driven: the same journey takes ~2.5 minutes with the agent vs ~5 minutes with a human
+- A feedback agent asks customers to rate 1-5 at call end; non-escalated calls come through almost entirely as 4s and 5s
+
+**Localization (Demo 2 — Olivia at L'Olivier)**: The team built a knowledge-base agent on ElevenLabs, live on the site, with system prompt, first message, workflows, and sub-agent written **directly in French** (not translated from English) — Dan Clark cites research that prompting in the customer's language engages the model differently and got significantly better results. Olivia auto-detects and responds in English when needed. Real customer conversations are reviewed against the knowledge base to spot gaps, with fixes reflected in the live agent within 1-2 hours.
+
+**Rollout model**: choose one part of the group to experiment deeply on one topic, then copy learnings everywhere ("fast follows first and a full rollout after") — a discipline against reinventing the wheel ten times.
+
+Source: raw/articles/2026-08-11_elevenlabs_webinar-recap-how-admiral-handles-insurance-calls-with-ai-agents.md
+
+### Deutsche Telekom Case Study — Carrier-Grade Voice AI (August 2026)
+
+ElevenLabs published a customer story (Aug 10, 2026) with **Deutsche Telekom**, Europe's largest telecommunications company, bringing AI voice technology across the network itself, from consumer products to customer service.
+
+**Magenta AI Call Assistant**: unveiled at Mobile World Congress (March 2026) as the **world's first network-integrated AI call assistant** — ElevenAgents embedded directly in network infrastructure so the assistant works on any mobile device that can make a phone call. Capabilities: contextual assistance (answering questions, retrieving info, performing tasks in real time), real-time translation (each party speaks and listens in their own language), and call summarization (notes + follow-ups retrievable from the Magenta app). Requires low-latency, high-concurrency, carrier-grade audio quality.
+
+**Contact center**: Deutsche Telekom handles millions of contact center calls a year; ElevenLabs voice quality earns trust from the first "hello" — a greater share of customers give the AI agent a chance to resolve questions end to end. "Given the state-of-the-art voice quality that ElevenLabs has, customers will give us a chance." — Sahil Sakhuja, Head of AI Products.
+
+Source: raw/articles/2026-08-11_elevenlabs_deutsche-telekom.md
+
+### Finch Legal Case Study — Pre-Litigation Legal Ops (August 2026)
+
+ElevenLabs published a customer story (Aug 6, 2026) with **Finch Legal**, which runs pre-litigation operations for personal injury cases — call-heavy work spanning insurance carriers and medical providers (phone trees, confirming receipt of requests, following up on records).
+
+**Results**: call success rate went from **59% to 93%** in the first month of deployment; weekly volume grew from ~500 to 3,800+ calls (15K+ calls/month); the team spends roughly **a sixth of the time on the phone** it used to, keeping pace with growth without scaling headcount in lockstep.
+
+**Why they switched**: their previous vendor handled only 59% of calls successfully with little visibility into what ran under the hood or control over voice quality, latency, or reasoning models. ElevenAgents offered a configurable platform: choice of leading LLMs, control over voices and conversational behavior, tuning tradeoffs between response latency / voice quality / reasoning depth, and a more comprehensive analytics suite.
+
+Source: raw/articles/2026-08-11_elevenlabs_finch.md
 
 ---
 
