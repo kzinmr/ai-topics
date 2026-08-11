@@ -3,6 +3,20 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-11] raw-backlog-ingest (04:00) | Duplicate batch — all 5 articles already processed (skip-all) + tracking registry fix
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-11 04:00, run 20260811T040022Z). Takes=0, References=0, Skips=5. **No wiki content changes.**
+- All 5 selected articles are exact repeats of the 2026-08-10 18:00 batch (log.md entry + archive wiki/raw/archived/triage/raw_backlog/2026-08-10_20260810T180015Z.json):
+  - paulgraham.com "Mind the Gap" — reference already applied to [[entities/paulgraham-com]] (Intellectual precursor paragraph in Superlinear Returns section, L52; Recent Themes 2004 row; sources updated).
+  - OpenClaw from Scratch workshop (2026-02-28 YouTube, Ivan Leo x Hugo Bowne-Anderson) — fully captured in [[entities/ivan-leo]] (this exact raw file in sources + complete workshop section); also in [[entities/hugo-bowne-anderson]] and [[entities/openclaw]].
+  - [AINews] OpenAI launches GPT-Image-2 (2026-04-22 bulletin) — delta-enriched into [[concepts/gpt/chatgpt-images-2-0]] (Arena Elo 1512/1513/1464, +242 lead verified at L57-62), [[entities/kimi]] (K2.6/FlashKDA), [[concepts/deep-research]] (Deep Research Max), [[concepts/ml-intern]] (Three-Phase Workflow). Duplicate app-link-post capture of the same bulletin.
+  - purplesyringa.moe "Bad Apple!! in Minecraft" — non-AI demoscene engineering. Skip (archive only).
+  - blog.miguelgrinberg.com SQLAlchemy 2 In Practice Ch.4 — non-AI Python ORM book chapter. Skip (archive only).
+- Archive: `archive_triage.py raw_backlog --keep-reference` → "All items already archived (dedup)" (all 5 URLs in archive_index from the 2026-08-10 run; total_archive_urls unchanged).
+- **Root-cause fix (tracking registry):** the 2026-08-10 18:00 batch never recorded completion in `~/.hermes/processed_raw_articles.json` `processed_articles` sub-registry (only log.md + archive), so raw_backlog_collect.py kept re-selecting the same 5 files (observed repeats at 08-09 18:00/22:00, 08-10 00:00/18:00, 08-11 04:00). Added all 5 filenames to `processed_articles` with status done + flipped top-level entries processing->done. Future runs will skip them.
+- Triage checkpoint: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (5 decisions, all skip).
+
+
 ## [2026-08-10] skeleton-enrich-daily | L2→L3: GitHub Copilot CLI + Droid (Factory) — coding agent harness deep-dive
 
 - **Enriched: [[entities/copilot-cli]]** (114→180 lines, L2→L3). Research: GitHub repo (11,076★, v1.0.79 Aug 10 2026, near-daily releases), README, changelog v1.0.77–1.0.79, Simon Willison + Where's Your Ed At coverage of the Copilot billing shift. Added: GitHub stats + expanded install methods (brew/winget/npm), Development History section (BYOK 2026-04-07, sandbox maturation, v1.0.79 worktree/prompt-pinning/sessions sidebar/tgrep/kimi-k3), Sandbox & Safety section (per-path enforcement, MDM policy floors, auth isolation, allow-auto-only), LSP Server Support section (~/.copilot/lsp-config.json + .github/lsp.json), Billing & Pricing Context (token-based billing transition Apr 2026, Opus 4.7 restricted to Pro+, premium-request quota), Related section. Frontmatter: +4 sources (README, changelog, 2 raw billing articles), status L3, updated 2026-08-10.
