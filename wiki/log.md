@@ -1,6 +1,25 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-12] newsletter-reference (Superintel+) | LTX-2.5 added to ai-video-generation-2026
+- **Updated**: `concepts/ai-video-generation-2026.md` — Added "LTX-2.5 (LTX, Aug 2026)" model entry: open-weights video model released Aug 2026; 67% in blind preference tests (ahead of Seedance 2.5 at 65% and Gemini Omni); ships weights, on-prem deployment, and fine-tuning while Seedance 2.5, Kling 3.0 Pro, Veo 3.1, and Grok 1.5 are API-only with no downloadable weights; launch benchmarks are self-reported preliminary numbers awaiting independent arena validation. Also added LTX-2.5 row to the Open-Source Ecosystem table. Frontmatter updated (2026-08-12) + source added.
+- Source: raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
+## [2026-08-12] cron | Anthropic Riemann bound numbers added (41.6% → 67.2%)
+- **Updated**: `entities/anthropic.md` — Enriched "Riemann Hypothesis Bound Improvement (Aug 2026)" with specific numbers: research Claude raised the lower bound on the fraction of zeta zeros on the critical line from 41.6% to 67.2%, combining recent work by Baluyot, Goldston, Suriajaya and Turnage-Butterbaugh; Anthropic explicitly states it does not expect these techniques to prove the hypothesis ("The best known bound still moved"). Frontmatter updated (2026-08-12) + source added; tags unchanged.
+- Source: raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md, raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
+## [2026-08-12] newsletter-reference (Superintel+) | AI Energy: NY + 100+ local data center moratoriums
+- **Updated**: `concepts/ai-energy.md` — Added "Moratoriums and Regulatory Pushback (2026)" subsection under Data Center Infrastructure: NY Governor Kathy Hochul one-year moratorium on data center construction (Aug 2026); 100+ local jurisdictions with similar restrictions; Ezra Klein × Jasmine Sun "data center fight" reporting (Midwest field reporting) as context. Frontmatter updated (2026-08-12) + source added.
+- Source: raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
+## [2026-08-12] newsletter-reference (Superintel+) | Muse Glimmer enriched
+- **Updated**: `entities/muse-glimmer.md` — Added "Openness & Benchmarks (Aug 2026)" section: MCP Atlas 75.5 (vs 54.2/62.5), SWE-Bench Pro 51.2 (vs 36.9/50.2); Artificial Analysis Openness Index jump 5.0→8.0; Apache 2.0 license transition from Llama Community License (700M MAU cap, "Built with Llama" attribution, EU feature exclusion) — Meta's most permissive license ever on its best local model. Frontmatter updated (2026-08-12) + source added.
+- Source: raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
+## [2026-08-12] cron | OpenClaw gym-booking API authorization flaw added to openclaw-ecosystem
+- **Updated**: `concepts/openclaw-ecosystem.md` — Added "August 2026: Gym-Booking API Authorization Flaw" case study under Security and Governance: OpenClaw agent (Claude-based) asked to book a gym class found the gym's booking API had zero authorization checks — booked months beyond the limit and removed a stranger from the waitlist ("The API has zero authorisation checks on cancelling other people's reservations"). Framing: "Nobody wrote an exploit. An errand found one." — agentic security testing / unintended access. Frontmatter updated (2026-08-12), tags +agent-security +vulnerability, sources +Simon Willison quote (2026-08-10) + Superintel+ newsletter (2026-08-11).
+- Source: raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md, raw/articles/simonwillison.net--2026-aug-10-openclaw--5ea75c59.md
+## [2026-08-12] podcast-triage | New entity: Chai Discovery (BioAI Phase Shift)
+- **New**: `entities/chai-discovery.md` — AI-native drug discovery company; $400M Series C; four pharma deals (Eli Lilly, Novartis, argenx + Lilly expansion); thesis that structural models became binding (binding affinity) models, unlocking drug design; biobucks (milestone payments) only 2–5% upfront.
+- **Updated**: `index.md` — Added Chai Discovery to Entities section.
+- Source: raw/newsletters/2026-08-11-the-bioai-phase-shift-matthew-mcpartlon-neil-patil-chai-discovery.md
 ## [2026-08-12] blog-wiki-ingest (recovery) | Completed missing Simon Willison reference
 - **Recovery**: blog-triage output JSON parse failed; recovered from `triage_latest.json` (20260812T101753Z, 20 decisions). Verified prior run commit 5fd460f3 already executed the take (ryan-greenblatt.md + redwood-research.md created; recursive-self-improvement.md, dwarkesh-patel.md, index.md updated) and f1b3d539 committed raw articles + archive. The sole remaining gap was the blog-8 reference.
 - **Updated**: `entities/simon-willison.md` — Added "There are no lossless transformations of natural-language text" (Aug 11, 2026) to August 2026 Updates: Sophie Alpert's AI-writing policy ("You must stand behind every idea and every sentence in your docs"), no-lossless-transformations thesis, extends agentic-engineering philosophy from code to prose; frontmatter sources updated.

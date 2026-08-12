@@ -2,7 +2,7 @@
 title: "AI Video Generation (2026)"
 type: concept
 created: 2026-04-30
-updated: 2026-08-01
+updated: 2026-08-12
 tags:
   - concept
   - multimodal
@@ -22,6 +22,7 @@ sources:
   - url: "https://www.alibabacloud.com/blog/alibaba-unveils-wan2-6-series-enabling-everyone-to-star-in-videos_602742"
     title: "Alibaba Unveils Wan2.6 Series"
   - raw/newsletters/2026-08-01-ainews-not-much-happened-today.md
+  - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
 ---
 
 # AI Video Generation (2026)
@@ -92,11 +93,19 @@ The AI video generation market has six major commercial models and a growing ope
 - **Best for:** Custom/private deployment, teams needing fine-tunable models
 - **Earlier versions:** Wan2.2 introduced MoE (Mixture-of-Experts) architecture; Wan2.1 was first to support bilingual (Chinese + English) text effects
 
+#### LTX-2.5 (LTX, Aug 2026)
+- **Status:** Open-weights video model released August 2026; takes 67% in blind preference tests — ahead of Seedance 2.5 (65%) and Gemini Omni
+- **Openness:** Ships all three: downloadable weights, on-prem deployment, and fine-tuning — unique among 2026 flagship video models
+- **Contrast:** Seedance 2.5, Kling 3.0 Pro, Veo 3.1, and Grok 1.5 are API-only with no downloadable weights
+- **Caveats:** Launch benchmarks are self-reported preliminary numbers awaiting independent arena validation
+- **Best for:** Teams needing self-hosted, fine-tunable video generation
+
 ### Open-Source Ecosystem
 
 | Model | Developer | Parameters | Key Feature |
 |-------|-----------|-----------|-------------|
 | Wan 2.6 Series | Alibaba | 14B | Reference-to-video, open-source |
+| LTX-2.5 | LTX | — | Open-weights (weights, on-prem, fine-tuning); 67% blind preference (preliminary) |
 | Wan 2.2 | Alibaba | 14B | MoE architecture, low-noise/high-noise expert routing |
 | Wan 2.1 | Alibaba | 14B | First&Last-Frame-to-Video, bilingual text |
 
