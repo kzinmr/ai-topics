@@ -2,6 +2,17 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-12] raw-backlog-ingest (22:00) | duplicate batch -- no wiki changes
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-12 22:00, run 20260812T220006Z) re-selected the **exact same 5 articles** as the 14:00 run (triage_20260812T140021Z, commit b7ed5db7) and the 18:00 run (commit b847a746); same filenames + content hashes.
+- **No wiki changes** -- all 5 already processed and verified captured:
+  - dwarkesh.com--p-ryan-greenblatt (RSI debate) -- entities/ryan-greenblatt.md + entities/dwarkesh-patel.md + entities/redwood-research.md + concepts/recursive-self-improvement.md RSI Debate section (median 2031) via blog-wiki-ingest (commit 5fd460f3).
+  - wheresyoured.at--dont-look-up -- entities/ed-zitron.md "Don't Look Up (August 12, 2026)" section (L795) + sources (commit b7ed5db7).
+  - paulgraham.com--hp-html / --nerds-html / --startupmistakes-html -- entities/paulgraham-com.md "Classic Essays (2003-2006)" section + sources (commit e1cff6b5).
+- **Registry fix**: registered all 5 filenames (status skip) in /opt/data/.hermes/cron/data/raw_backlog_archive/archive_index.json files map (2 -> 7 entries) so the collector stops re-selecting this batch.
+- index.md untouched (no new pages); no archive step needed (all 5 already archived).
+- Triage JSON: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json + triage_20260812T220006Z.json (5 skips, Takes=0).
+
 ## [2026-08-12] skeleton-enrich-daily | L2→L3 Palo Alto Networks (Portkey/AI Gateway, Prisma AIRS) + 3 cross-refs
 
 - **Enriched [[entities/palo-alto-networks]] L2→L3** (24→157 lines, 1KB→8.4KB): company overview (founded 2005 by Nir Zuk & Rajiv Batra, $9.22B FY2025 revenue, $200B market cap May 2026), Prisma AIRS AI Security product portfolio table (AI Gateway, AI Model Security, AI Red Teaming, AI Runtime Security, Agent Security, AI-SPM; Strata/Prisma SASE/Cortex/Prisma Cloud/Idira identity), Portkey acquisition deep-dive (announced Apr 30 2026, close Q4 FY2026; Portkey becomes AI Gateway for Prisma AIRS — "central nervous system" monitoring/routing/securing every AI transaction; quotes from Lee Klarich & Rohit Agarwal), AI-era acquisitions table (Protect AI $500M, CyberArk $25B, Chronosphere $3.35B, Koi ~$400M, Portkey), Unit 42 threat intel + Vertex AI agent weaponization research (Apr 2026) + China review (Aug 2026).
