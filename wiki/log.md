@@ -1,6 +1,13 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-12] raw-backlog-ingest (00:00) | Skip all 5 — 2 duplicate Simon Willison Muse Spark newsletter + 3 non-AI
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-12 00:00, run 20260812T000035Z). Takes=0, References=0, Skips=5. **No wiki content changes.**
+- **Skip (dup, already captured ×2)**: `substack.com--app-link-post--d017c432.md` + `substack.com--app-link-post--34f75969.md` — Simon Willison 2026-04-11 newsletter "Meta's new model is Muse Spark, and meta.ai chat has interesting new tools". Same content already exists as `raw/articles/substack.com--redirect-2-eyj...7a245459.md` and is fully captured in [[concepts/meta-muse-spark]] "meta.ai Chat Harness & Tool Disclosure (April 2026)" section (16 tools: browser.search/open/find, meta_1p.content_search, media.image_gen, container.python_execution, container.visual_grounding, subagents.spawn_agent, etc.; pelican test), [[entities/muse-spark]], [[entities/simon-willison]] "Pelican Test Timeline" (Muse Spark Apr 11 + GLM-5.1 CSS animation), [[entities/project-glasswing]] / concepts/claude/mythos-glasswing. Axios supply-chain attack + Glasswing coverage confirmed present.
+- **Skip (non-AI ×3)**: righto.com Apollo Up-Data Link Confidence Test Set reverse engineering (Ken Shirriff, hardware history); it-notes.dragas.net FreeBSD/ZFS backup server build (Part 2); chiark.greenend.org.uk PuTTY Windows on Arm port (Simon Tatham, 2019).
+- Tracking registry: all 5 marked `done` in ~/.hermes/processed_raw_articles.json (top-level + processed_articles sub-registry) to prevent re-selection.
+- Archive: wiki/raw/archived/triage/raw_backlog/2026-08-12_20260812T000035Z.json (5 decisions, total_archive_urls 2506→2511). Triage JSON: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
+
 ## [2026-08-11] raw-backlog-ingest (22:00) | Duplicate batch — all 5 articles already processed at 18:00 (tracking registry fix applied)
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-11 22:00, run 20260811T220022Z). Takes=0, References=0, Skips=5. **No wiki content changes.**
 - All 5 selected articles are exact repeats of the 2026-08-11 18:00 batch (20260811T180024Z; log entry below; archive wiki/raw/archived/triage/raw_backlog/2026-08-11_20260811T180024Z.json):

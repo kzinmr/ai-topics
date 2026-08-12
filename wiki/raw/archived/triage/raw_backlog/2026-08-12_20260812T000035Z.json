@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-12T00:42:42.345372+00:00",
+  "triage_run_id": "20260812T000035Z",
+  "source": "raw_backlog",
+  "summary_ja": "rawバックログ収集（--sort ai-hint --limit 5、run 20260812T000035Z）の5記事を評価。Takes=0 / References=0 / Skips=5。2件はSimon Willison 2026-04-11ニュースレター「Meta's new model is Muse Spark」のapp-link重複スクレイプで、同一内容が既存 raw/articles/substack.com--redirect-2-eyj...7a245459.md 経由で concepts/meta-muse-spark.md（meta.ai 16ツール開示節）、entities/muse-spark.md、entities/simon-willison.md（Pelican Test Timeline）、entities/project-glasswing.md に取り込み済み。残り3件（righto.com Apollo Up-Data Link、dragas.net FreeBSDバックアップ、PuTTY Windows on Arm）は非AIコンテンツ。Wiki編集なし。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-substack-muse-spark-dup-1",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Meta's new model is Muse Spark, and meta.ai chat has interesting new tools (Simon Willison newsletter, app-link dup 1)",
+      "url": "https://substack.com/app-link/post?publication_id=1173386&post_id=193797318&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...QRQc",
+      "raw_path": "raw/articles/substack.com--app-link-post--d017c432.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ すでに取り込み済み（同一内容の重複スクレイプ）: 本ニュースレター（Simon Willison、2026-04-11）の同一内容が raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--7a245459.md として既存し、concepts/meta-muse-spark.md「meta.ai Chat Harness & Tool Disclosure (April 2026)」節（16ツール一覧: browser.search/open/find、meta_1p.content_search、media.image_gen、container.python_execution、container.visual_grounding、subagents.spawn_agent等、pelican test詳細）に全文取り込み済み。Muse Spark発表（hosted/private API preview、Instant/Thinking/Contemplating、Artificial Analysis 52点）、Anthropic Project Glasswing/Claude Mythos制限公開、Axiosサプライチェーン攻撃、GLM-5.1 pelican CSSアニメーションも entities/muse-spark.md、entities/project-glasswing.md、concepts/claude/mythos-glasswing.md、entities/simon-willison.md「Pelican Test Timeline」でカバー済み。新規ギャップなし。",
+      "candidate_wiki_path": "concepts/meta-muse-spark.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-substack-muse-spark-dup-2",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Meta's new model is Muse Spark, and meta.ai chat has interesting new tools (Simon Willison newsletter, app-link dup 2)",
+      "url": "https://substack.com/app-link/post?publication_id=1173386&post_id=193797318&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2...QRQc",
+      "raw_path": "raw/articles/substack.com--app-link-post--34f75969.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ すでに取り込み済み（同一内容の重複スクレイプ）: d017c432 と同一のSimon Willison 2026-04-11ニュースレター（別トラッキングURLのみ差分、546行同一本文）。concepts/meta-muse-spark.md のmeta.aiツール開示節、entities/muse-spark.md、entities/simon-willison.md Pelican Test Timeline、entities/project-glasswing.md に全文カバー済み。新規ギャップなし。",
+      "candidate_wiki_path": "concepts/meta-muse-spark.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-righto-apollo-up-data",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Reverse engineering the mysterious Up-Data Link Test Set from Apollo",
+      "url": "http://www.righto.com/2025/07/reverse-engineering-mysterious-up-data.html",
+      "raw_path": "raw/articles/righto.com--2025-07-reverse-engineering-mysterious-up-data-html--b3bbe849.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ: Ken Shirriff（righto.com）によるApollo時代のUp-Data Link Confidence Test Set（Motorola製、13ピン封止モジュール）のリバースエンジニアリング記事（2025-07）。Lumafield 3D X線スキャナ、フリップフロップ/論理ゲート/オプトアイソレータ等のハードウェア歴史解説。LLM/AI Agent技術と無関係のためWiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-dragas-freebsd-backup",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Make Your Own Backup System - Part 2: Forging the FreeBSD Backup Stronghold",
+      "url": "https://it-notes.dragas.net/2025/07/29/make-your-own-backup-system-part-2-forging-the-freebsd-backup-stronghold/",
+      "raw_path": "raw/articles/it-notes.dragas.net--2025-07-29-make-your-own-backup-system-part-2-forging-the-fr--a16081cc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ: FreeBSD/ZFSベースのバックアップサーバ構築ガイド（it-notes.dragas.net、2025-07-29、パート2）。jail/VM分離、WireGuard VPN、IPv4 NAT/IPv6ルーティング、Tarsnap/Proxmox Backup Server言及。インフラ運用記事でありLLM/AI Agent技術と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-putty-woa",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Porting PuTTY to Windows on Arm",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-woa/",
+      "raw_path": "raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-putty-woa--045f42f9.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ: Simon TathamのPuTTY Windows on Arm移植記（2019-03-05）。Arm Development Solutions Group勤務とSSHクライアント移植の技術史。AI要素なし（同一ソースの過去記事 chiark.greenend.org.uk--sgtatham-quasiblog-parsing も同様にskip済み）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

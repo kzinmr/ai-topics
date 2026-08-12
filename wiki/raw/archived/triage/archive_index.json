@@ -16,6 +16,7 @@
     "http://www.paulgraham.com/notnot.html",
     "http://www.paulgraham.com/popular.html",
     "http://www.paulgraham.com/re.html",
+    "http://www.righto.com/2025/07/reverse-engineering-mysterious-up-data.html",
     "http://www.righto.com/2025/08/reverse-engineering-analog-TDA7000.html",
     "http://www.righto.com/2026/03/ibm-4-pi-computer-history.html",
     "http://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html",
@@ -686,6 +687,7 @@
     "https://inessential.com/2026/06/15/netnewswire-status.html",
     "https://inessential.com/2026/06/15/netnewswire_status",
     "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+    "https://it-notes.dragas.net/2025/07/29/make-your-own-backup-system-part-2-forging-the-freebsd-backup-stronghold/",
     "https://it-notes.dragas.net/2026/05/18/fedimeteo-haproxy-and-the-art-of-not-wasting-snac-threads/",
     "https://it-notes.dragas.net/2026/05/25/fedimeteo-timezones-and-the-art-of-not-breaking-what-already-works/",
     "https://it-notes.dragas.net/2026/05/26/copying-remote-command-output-to-your-macos-clipboard/",
@@ -1753,6 +1755,8 @@
     "https://substack.com/app-link/post?publication_id=10845&post_id=205675851&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2...YyPo&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email",
     "https://substack.com/app-link/post?publication_id=10845&post_id=205675851&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...YyPo",
     "https://substack.com/app-link/post?publication_id=10845&post_id=207214207",
+    "https://substack.com/app-link/post?publication_id=1173386&post_id=193797318&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2...QRQc",
+    "https://substack.com/app-link/post?publication_id=1173386&post_id=193797318&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...QRQc",
     "https://substack.com/app-link/post?publication_id=293154&post_id=201763738",
     "https://substack.com/app-link/post?publication_id=293154&post_id=202440777&...action=share",
     "https://substack.com/app-link/post?publication_id=293154&post_id=202440777&...comments=true&action=post-comment",
@@ -2017,6 +2021,7 @@
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-spectre/",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/c11-generic/",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/findloop/",
+    "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-woa/",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/transience/",
     "https://www.cmpnd.ai/blog/separating-task-from-model.html",
     "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
@@ -2507,5 +2512,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-11T18:26:29.423088+00:00"
+  "updated": "2026-08-12T00:42:42.345956+00:00"
 }
