@@ -1,0 +1,82 @@
+{
+  "triage_run_id": "20260812T102618Z",
+  "triaged_at": "2026-08-12T10:26:18Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletter_count": 5,
+  "triage": [
+    {
+      "message_id": "<20260812071108.3.8723287c56555048@mg-d0.substack.com>",
+      "subject": "[AINews] How to steal a Reasoning Trace",
+      "date": "2026-08-12",
+      "source": "swyx / AI News (Substack)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-12-ainews-how-to-steal-a-reasoning-trace.md",
+      "importance": "critical",
+      "reason": "Directly covers LLM reasoning trace extraction/theft — core AI safety and model IP topic. From swyx's AI News, a primary source for LLM ecosystem news.",
+      "action": "scrape_and_ingest",
+      "primary_url": "https://open.substack.com/pub/swyx/p/ainews-how-to-steal-a-reasoning-trace",
+      "wiki_targets": ["concepts/reasoning-traces", "concepts/ai-safety", "events/2026-08"]
+    },
+    {
+      "message_id": "<20260811130330.3.0a20902f219f4bcc@mg2.substack.com>",
+      "subject": "Make it readable",
+      "date": "2026-08-11",
+      "source": "Ben's Bites (Substack)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-11-make-it-readable.md",
+      "importance": "high",
+      "reason": "Ben's Bites is a major AI newsletter. 'Make it readable' likely covers AI-assisted code readability or LLM output formatting — relevant to developer tooling and prompt engineering.",
+      "action": "scrape_and_ingest",
+      "primary_url": "https://open.substack.com/pub/bensbites/p/make-it-readable",
+      "wiki_targets": ["concepts/prompt-engineering", "concepts/developer-tooling"]
+    },
+    {
+      "message_id": "<20260811.155236.2da0ae00@mta22>",
+      "subject": "Meta's Big Open Source Comeback",
+      "date": "2026-08-11",
+      "source": "beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md",
+      "importance": "high",
+      "reason": "Meta's open-source AI strategy (LLaMA models, open weights) is a core wiki topic. 'Big Open Source Comeback' suggests new model releases or policy changes.",
+      "action": "scrape_and_ingest",
+      "primary_url": null,
+      "note": "All URLs are beehiiv tracking redirects — need to resolve the primary content link from the newsletter body",
+      "wiki_targets": ["entities/meta", "concepts/open-source-llms", "events/2026-08"]
+    },
+    {
+      "message_id": "<20260811210350.3.c39173ace03958b0@mg-d0.substack.com>",
+      "subject": "🔬The BioAI Phase Shift - Matthew McPartlon & Neil Patil, Chai Discovery",
+      "date": "2026-08-11",
+      "source": "swyx (Substack)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-11-the-bioai-phase-shift-matthew-mcpartlon-neil-patil-chai-discovery.md",
+      "importance": "high",
+      "reason": "AI for drug discovery (BioAI) is an important application domain. Chai Discovery is an AI-native biotech company. Interview format with founders — useful for entity pages.",
+      "action": "scrape_and_ingest",
+      "primary_url": "https://open.substack.com/pub/swyx/p/chai-discovery",
+      "wiki_targets": ["entities/chai-discovery", "concepts/ai-drug-discovery", "concepts/bioai"]
+    },
+    {
+      "message_id": "<20260811133107.3.134500eb03d28e4b@mg-d1.substack.com>",
+      "subject": "How to make people care about your startup",
+      "date": "2026-08-11",
+      "source": "Lenny's Newsletter (Substack)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-11-how-to-make-people-care-about-your-startup.md",
+      "importance": "low",
+      "reason": "Lenny's Newsletter is a product management / growth newsletter. Not AI-specific. May contain references to AI startups but is not a primary source for LLM/agent knowledge.",
+      "action": "skip",
+      "primary_url": "https://open.substack.com/pub/lenny/p/how-to-make-people-care-about-your",
+      "wiki_targets": []
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 3,
+    "low": 1,
+    "to_scrape": 4,
+    "to_skip": 1,
+    "top_stories": [
+      "[AINews] How to steal a Reasoning Trace — AI safety / model IP extraction techniques",
+      "Meta's Big Open Source Comeback — Meta open-source AI strategy update",
+      "The BioAI Phase Shift — Chai Discovery founders on AI drug discovery",
+      "Make it readable (Ben's Bites) — AI-assisted readability / developer tooling"
+    ]
+  }
+}
