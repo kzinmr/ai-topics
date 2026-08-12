@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-12T14:16:40.929880+00:00",
+  "triage_run_id": "20260812T140021Z",
+  "source": "raw_backlog",
+  "summary_ja": "rawバックログ収集（--sort ai-hint --limit 5、run 20260812T140021Z）の5記事を評価。Takes=0 / References=1 / Skips=4。reference 1件: Ed Zitron「Don't Look Up」（2026-08-12）— entities/ed-zitron.mdに「Don't Look Up (August 12, 2026)」セクションを追記（BloombergによるOpenAI=Microsoft AI収益70%超の確認、2027年コンピュート支出$197Bトラップ、H1 2026調達$217B、OpenAI $750Bコミットメント、NVIDIA $500B MOU批判、190GW vs $110B需要）。skip 4件: Dwarkesh x Ryan Greenblatt RSI討論（本日blog-wiki-ingestでentities/ryan-greenblatt.md・entities/dwarkesh-patel.md・concepts/recursive-self-improvement.mdに完全収録済み）とPaul Graham古典エッセイ3本（entities/paulgraham-com.mdに収録済み、commit e1cff6b5）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-dwarkesh-greenblatt-rsi",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Ryan Greenblatt - What happens once AI can automate AI research? (Dwarkesh Podcast)",
+      "url": "https://www.dwarkesh.com/p/ryan-greenblatt",
+      "raw_path": "raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 本日（2026-08-12）blog-triage→blog-wiki-ingestで既に完全処理済み。entities/ryan-greenblatt.md（本日作成、sourcesに本raw記事）がRSIタイムライン中央値2031・検証容易性・アライメント懸念（aligned to whom?・報酬ハッキング→乗っ取り外挿・OAI/HuggingFaceハック前例）を要約し、entities/dwarkesh-patel.mdのタイムライン（Aug 2026行）とBlog Postsセクションにも同内容が収録、concepts/recursive-self-improvement.mdには「Dwarkesh Patel x Ryan Greenblatt: RSI Debate (Aug 2026)」節（332行目〜）がある。3ページ全てに本raw記事がsourcesとして登録済み。重複作成の価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-pg-startup-mistakes",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "The 18 Mistakes That Kill Startups (Paul Graham, Oct 2006)",
+      "url": "http://www.paulgraham.com/startupmistakes.html",
+      "raw_path": "raw/articles/paulgraham.com--startupmistakes-html--38e869c5.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ（2006年のスタートアップ失敗論エッセイ）。entities/paulgraham-com.md（501行）に「The 18 Mistakes That Kill Startups (Oct 2006)」節（199行目）とタイムライン表（210行目）として既に収録済み。sources frontmatterにも本raw記事が登録済み（commit e1cff6b5, raw-backlog-ingest 5 articles）。追加作業不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-pg-nerds",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Why Nerds are Unpopular (Paul Graham, Feb 2003)",
+      "url": "http://www.paulgraham.com/nerds.html",
+      "raw_path": "raw/articles/paulgraham.com--nerds-html--d2271270.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ（2003年のエッセイ）。entities/paulgraham-com.mdに「Why Nerds are Unpopular (Feb 2003)」節（195行目）とタイムライン表（208行目）として既に収録済み。sources frontmatterに本raw記事が登録済み（commit e1cff6b5）。追加作業不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-pg-hackers-painters",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Hackers and Painters (Paul Graham, May 2003)",
+      "url": "http://www.paulgraham.com/hp.html",
+      "raw_path": "raw/articles/paulgraham.com--hp-html--75db41c1.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ（2003年のエッセイ、ハッカーと画家の比較）。entities/paulgraham-com.mdに「Hackers and Painters (May 2003)」節（191行目）とタイムライン表（208行目）として既に収録済み。sources frontmatterに本raw記事が登録済み（commit e1cff6b5）。追加作業不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

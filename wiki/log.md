@@ -1,3 +1,8 @@
+## [2026-08-12] raw-backlog-ingest (14:00) | 1 reference + 4 skips
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-12 14:00, run 20260812T140021Z). Takes=0, References=1, Skips=4.
+- **Reference**: `entities/ed-zitron.md` — Added "Don't Look Up (August 12, 2026)" section: Bloomberg confirmation (24h after Aug 4 piece) that OpenAI alone = 70%+ of Microsoft FY2026 AI revenues; $197B combined lab compute spend projected for 2027 on Google Cloud/AWS/Azure (Wells Fargo/Barclays/UBS, likely ~$220B with full FY27 Azure); $217B raised by OpenAI+Anthropic in H1 2026; OpenAI $750B compute commitments through 2030; Torsten Slok margin-concentration quote; analyst update (Ju/Turrin/Gawrelski/Zelnick); Microsoft non-OpenAI AI revenue ~$10.33B; NVIDIA $500B MOU-as-financing critique; 190GW capacity vs ~$110B demand math; Harvey $500M raise at $15.5B valuation. Source: raw/articles/wheresyoured.at--dont-look-up--b2b70566.md
+- **Skips (already captured)**: dwarkesh.com--p-ryan-greenblatt (RSI debate — covered in entities/ryan-greenblatt.md, entities/dwarkesh-patel.md, concepts/recursive-self-improvement.md by blog-wiki-ingest today); paulgraham.com--hp-html, paulgraham.com--nerds-html, paulgraham.com--startupmistakes-html (classic essays — covered in entities/paulgraham-com.md, commit e1cff6b5)
 ## [2026-08-12] active-crawl | 4 new pages + 1 enriched + 6 raw articles
 
 - **New**: `entities/mojo.md` — Mojo programming language; Python-compatible, AI/ML focused; reached 1.0 on Aug 11, 2026; created by Chris Lattner at Modular; MLIR compiler backend; Qualcomm acquired Modular for ~$4B (393 HN points)

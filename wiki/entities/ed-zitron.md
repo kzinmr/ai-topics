@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-08-08
+updated: 2026-08-12
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -44,6 +44,7 @@ sources:
   - raw/articles/wheresyoured.at--the-more-you-buy-the-more-you-lose--890d90aa.md
   - raw/articles/wheresyoured.at--the-ai-demand-bubble--3cf6131f.md
   - raw/articles/wheresyoured.at--four-horsemen-of-the-aipocalypse--4b0fae4c.md
+  - raw/articles/wheresyoured.at--dont-look-up--b2b70566.md
 ---
 
 # Ed Zitron
@@ -790,6 +791,43 @@ Key figures from the disclosure:
 Zitron's framing: *"It's impossible to ignore that Microsoft has spent $270 billion in capital expenditures to prop up a single client, and that its overall AI plays have failed to create any significant revenue growth or opportunities."* He positions this as the strongest evidence yet for his [[concepts/ai-bubble-economics]] thesis — the hyperscalers have demolished free cash flow to support a customer base of two labs that cannot afford their compute bills.
 
 Source: [[raw/articles/wheresyoured.at--news-microsoft-disclosures-suggest-openai-sales-account-for---1a97a7c8.md]]
+
+## Don't Look Up (August 12, 2026)
+
+In "[Don't Look Up](https://www.wheresyoured.at/dont-look-up/)" (August 12, 2026), Zitron followed up on "The AI Demand Bubble" after **Bloomberg ran a story within 24 hours of the Aug 4 piece** estimating that OpenAI alone contributed **70% or more of Microsoft's AI revenues for FY2026** (based on the $24.1B contribution to Microsoft's FY2026 revenues). The piece consolidates the analyst consensus into a stark dependency claim: the future growth trajectories of Microsoft, Google and Amazon are contingent on Anthropic and OpenAI spending **$197B+ on compute in 2027** (Wells Fargo/Barclays/UBS estimates, likely >$220B counting full-year Azure) — and on those labs' continued ability to raise capital.
+
+### The 2027 Compute Spend Trap
+
+- **OpenAI + Anthropic raised $217B combined in H1 2026** — nearly a quarter-trillion dollars — to afford their estimated **$100B combined 2026 compute spend**; Zitron projects they will need to raise **~$150B each** leading into 2027
+- Wells Fargo, Barclays and UBS estimate the two labs will spend **$197B on compute in 2027** across Google Cloud, AWS and Azure alone (excluding CoreWeave, Cerebras, Oracle); the Microsoft Azure estimate covers only the first two quarters of FY27, so the real figure is likely **~$220B**
+- **OpenAI is on the hook for a reported $750B in compute commitments through 2030**; combined lab spending commitments exceed **$1.1 trillion**
+- Apollo chief economist **Torsten Slok**: profit margins in AI are "higher the further you get from the end user" — the most profitable part of the AI value chain depends on the least profitable part continuing to grow revenue or raise capital. Zitron's gloss: "Capital can bridge the gap for a while, but not indefinitely."
+
+### Analyst Concentration Update
+
+- **Stephen Ju (UBS)**: Amazon AI revenue — 73%+ of it OpenAI+Anthropic compute spend (per Barclays) — is **26% of AWS 2026 revenue and 30% of AWS 2027 revenue**
+- **Michael Turrin (Wells Fargo)**: AI is 25% of Azure CY2026 revenue (OpenAI ~70% of it); **Ken Gawrelski (Wells Fargo)**: the two labs drive **60% of AWS revenue growth**; **Brad Zelnick (Deutsche Bank)**: AI = 33%+ of Azure FY2027 revenue, rising to **37% of all Microsoft cloud revenues in FY2029**
+- Amazon and Google alone sent a combined **$115 billion to the labs in 2026**
+- **Microsoft's non-OpenAI AI business is catastrophic**: ~$34.43B total FY26 AI revenue, 70% from OpenAI → **$10.33B for every other AI service** (365 Copilot: an "atrocious" $3.858B; all other AI GPU/API revenue: $5.2B) — less than a third of Microsoft's $41B Q4FY26 capex. Wells Fargo FY2027 AI revenue estimate: $54.5B (+58.8% YoY) vs consensus capex of **$186.4B FY27 / $214.3B FY28**
+
+### Why Everybody Was Wrong (2021 Hangover)
+
+Zitron argues the AI capex boom masks the end of hyperscaler hypergrowth: Microsoft FY2023 revenue growth 6.9%, NVIDIA FY2023 flat (0.2%), Google 41.6%→10.3%/9.7% (2021→2022/23), Meta 37.2%→-1.1%, Amazon 37.6%→21.7%→9.4%→1.8%. The 2022 growth wall was papered over by the ChatGPT moment (Nov 2022) and NVIDIA's Hopper launch (Mar 2022). Media credulousness (Business Insider, The Guardian) credited AI for growth that was mostly OpenAI compute spend — Microsoft FY2025 AI revenue: $14.86B (5.28% of revenue; only ~$5.7B ex-OpenAI).
+
+### NVIDIA's Circular "Financing"
+
+- The "$500 billion" NVIDIA deal with Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs and KKR is **an MOU, not a deal** — "Memorandums of understanding… to create dedicated pools of capital"; no money raised, no contracts signed (the WSJ deleted a paragraph noting the commitments would come via "different vehicles")
+- NVIDIA's **$100B OpenAI investment was also an MOU that never materialized** — Huang: "It was never a commitment… we will invest one step at a time"; residual-value support capped at 25% per opportunity
+- NVIDIA FY2026 revenue: **$215.9B, 89% data center**, vs consensus **$393.7B FY2027 → $565.7B FY2028 → $694B FY2029** — requiring revenue to nearly triple in two years
+
+### Demand-Side Math and the Harvey Example
+
+- For the **190GW of capacity in planning**, Zitron estimates **$1.62T–$2.92T in annual compute spend** is needed vs a best-case **~$110B in annual demand** (90%+ from two VC-fed companies); hyperscalers carry **$1.65T in off-balance-sheet obligations**
+- **Harvey** is raising **$500M at a $15.5B valuation** on $350M annualized revenue ($29.1M/month) — after raising $200M at $11B in March; ~$1.2B raised in a year with no public reconciliation of the revenue/valuation gap
+
+Zitron's conclusion: Microsoft, Google and Amazon's hypergrowth era ends if Anthropic and OpenAI can't spend hundreds of billions on compute; Oracle, CoreWeave, Nebius and IREN face "apocalyptic circumstances" when they fail to do so; NVIDIA's future depends on the labs' ability to convince credit markets everything will be fine.
+
+Source: [[raw/articles/wheresyoured.at--dont-look-up--b2b70566.md]]
 
 ## Four Horsemen of the AIpocalypse (Late April 2026)
 

@@ -249,7 +249,7 @@
 - [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with Ryan Greenblatt RSI debate (Aug 2026) — recursive self-improvement plausibility, median 2031 for automating AI R&D, alignment implications, reward hacking → takeover extrapolation
 - [[entities/dylan-patel]] — Dylan Patel
 - [[entities/dynomight-net]] — Dynomight
-- [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1); The AI Demand Bubble — Barclays/UBS/Wells Fargo analyst concentration data (Aug 4); Four Horsemen of the AIpocalypse — Anthropic uptime/Opus 4.7 regression, 15.2GW construction math, contracted-ARR fraud (Aug 8)
+- [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1); The AI Demand Bubble — Barclays/UBS/Wells Fargo analyst concentration data (Aug 4); Four Horsemen of the AIpocalypse — Anthropic uptime/Opus 4.7 regression, 15.2GW construction math, contracted-ARR fraud (Aug 8); Don't Look Up — Bloomberg 70% confirmation, $197B 2027 compute spend trap, NVIDIA MOU "financing" (Aug 12)
 - [[entities/eleanor-berger]] — Eleanor Berger
 - [[entities/eleutherai]] — Grassroots research collective turned non-profit that started the modern open-source AI movement
 - [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24)

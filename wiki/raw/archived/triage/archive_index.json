@@ -10,12 +10,15 @@
     "http://workos.com/auth-md?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q32026",
     "http://www.paulgraham.com/gap.html",
     "http://www.paulgraham.com/guidetoinvestors.html",
+    "http://www.paulgraham.com/hp.html",
     "http://www.paulgraham.com/icad.html",
     "http://www.paulgraham.com/marginal.html",
     "http://www.paulgraham.com/mit.html",
+    "http://www.paulgraham.com/nerds.html",
     "http://www.paulgraham.com/notnot.html",
     "http://www.paulgraham.com/popular.html",
     "http://www.paulgraham.com/re.html",
+    "http://www.paulgraham.com/startupmistakes.html",
     "http://www.righto.com/2025/07/reverse-engineering-mysterious-up-data.html",
     "http://www.righto.com/2025/08/reverse-engineering-analog-TDA7000.html",
     "http://www.righto.com/2026/03/ibm-4-pi-computer-history.html",
@@ -2081,6 +2084,7 @@
     "https://www.dwarkesh.com/p/blog-prize-winners",
     "https://www.dwarkesh.com/p/era-of-continual-learning",
     "https://www.dwarkesh.com/p/grant-sanderson-2",
+    "https://www.dwarkesh.com/p/ryan-greenblatt",
     "https://www.dwarkesh.com/p/the-next-paradigm",
     "https://www.dwarkesh.com/p/the-sample-efficiency-black-hole",
     "https://www.dwarkesh.com/p/the-sample-efficiency-black-hole-2",
@@ -2547,5 +2551,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-12T10:54:45.190216+00:00"
+  "updated": "2026-08-12T14:16:40.930450+00:00"
 }
