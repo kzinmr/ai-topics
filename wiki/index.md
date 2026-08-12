@@ -414,6 +414,7 @@
 - [[entities/jeff-huber]] — Jeff Huber
 - [[entities/jeff-dean]] — Jeff Dean — Google Senior Fellow (27 years); co-created MapReduce, BigTable, TensorFlow, Google Brain; co-founder of Discovery Loop PBC (Aug 2026) with Ghemawat, Vinyals & Quoc Le
 - [[entities/jensen-huang]] — Jensen Huang — CEO and co-founder of NVIDIA; driving force behind GPU computing and AI hardware infrastructure
+- [[entities/jesse-zhang]] — Jesse Zhang — Co-founder & CEO of Decagon AI; product-driven critique of FDE-heavy deployment model
 - [[entities/jeremiah-lowin]] — Jeremiah Lowin
 - [[entities/jianlin-su]] — Jianlin Su — Chinese AI researcher; inventor of Rotary Position Embedding (RoPE), adopted by Llama, DeepSeek, Qwen, Mistral, and virtually all major open-source LLMs; DeepSeek researcher
 - [[entities/jim-fan]] — Jim Fan

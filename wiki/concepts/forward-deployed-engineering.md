@@ -2,7 +2,7 @@
 title: "Forward Deployed Engineering (FDE)"
 type: concept
 created: 2026-05-18
-updated: 2026-05-25
+updated: 2026-08-12
 tags:
   - company
   - strategy
@@ -11,6 +11,7 @@ sources:
   - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
   - raw/articles/2026-05-20_varick_forward-deployed-engineering-101.md
   - raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md
+  - raw/articles/2026-08-11_thejessezhang_to-fde-or-not-to-fde.md
 ---
 
 # Forward Deployed Engineering (FDE)
@@ -123,6 +124,27 @@ A top-level FDE is not someone who "can build anything for any customer." It is 
 
 > Those who stand at the boundary between FDE and SaaS are the rarest and most valuable positions in the AI agent era.
 
+## The Anti-FDE Critique: Product-Driven Alternative (Aug 2026)
+
+[[entities/jesse-zhang]] (CEO, [[entities/decagon]]) offers a founder's counterpoint to the FDE bandwagon. His cofounder Ashwin Sreenivas is ex-Palantir, giving the critique direct lineage knowledge.
+
+### The Trap: Not Starting Is Fine, Not Stopping Is Fatal
+FDEs let you avoid every hard product tradeoff. Nobody has to say no to anyone. No painful architectural call gets made. The customer is delighted. But your cost to serve doesn't decline, margins stay capped, and growth is bounded by hiring. Every bespoke fix in the field is a product decision you chose not to make.
+
+### FDE ≠ Implementation
+"Build this integration into their ticketing system" is real, necessary work, but it's execution against a known spec, not discovery of an unknown one. Bundling the two under one title is how companies convince themselves a growing services org is a product investment.
+
+### Palantir's Lesson (Correctly Read)
+Palantir's FDEs succeeded because they encoded field problems as **platform primitives** (ontology, object models, permissioning, workflow engines). As Foundry matured, gross margins climbed into the 80s and they shifted away from FDE-led motion. The FDE team wasn't the business model — it was the way to build the right product.
+
+### Diagnosis Framework
+> Is the bespokeness in your customer's environment, or in your own product gaps? Is the last mile irreducible, or just unbuilt? Are your FDEs discovering something, or absorbing something?
+
+### Decagon's Alternative
+Two-thirds of deployment work now runs autonomously through Duet (A/B testing, simulation, Watchtower QA). Days to launch first AOP even for large enterprises. Customer-specific engineering decreases as product matures.
+
+Source: [To FDE, or not to FDE? — @thejessezhang](https://x.com/thejessezhang/status/2087198484093149421) (1104 bookmarks, 2026-08-11)
+
 ## Open Questions
 
 - Does FDE scale linearly with headcount, or can tooling make it self-service?
@@ -135,3 +157,5 @@ A top-level FDE is not someone who "can build anything for any customer." It is 
 - [[entities/openai]] — OpenAI's Deployment Company strategy
 - [[entities/anthropic]] — Anthropic's enterprise JV
 - [[entities/google]] — Google's compute advantage and enterprise push
+- [[entities/jesse-zhang]] — Product-driven critique of the FDE model
+- [[entities/decagon]] — Example of product-driven alternative to FDE-heavy deployment

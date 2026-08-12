@@ -2,7 +2,7 @@
 title: "Decagon"
 type: entity
 created: 2026-05-08
-updated: 2026-06-24
+updated: 2026-08-12
 tags:
   - company
   - ai-agents
@@ -20,7 +20,7 @@ Decagon is an AI-powered customer support platform that builds, optimizes, and s
 |---|---|
 | **Type** | AI Platform / Enterprise SaaS |
 | **Founded** | 2023 (San Francisco, CA) |
-| **Leadership** | Jesse Zhang (Co-founder & CEO), Ashwin Sreenivas (Co-founder & President) |
+| **Leadership** | [[entities/jesse-zhang]] (Co-founder & CEO), Ashwin Sreenivas (Co-founder & President) |
 | **Key Products** | Decagon AI Agents (voice, chat, email), Decagon Duet, Agent Workbench, Watchtower (QA), Proactive Agents |
 | **Website** | [decagon.ai](https://decagon.ai) |
 | **Tech Blog** | [decagon.ai/blog](https://decagon.ai/blog) |
@@ -64,8 +64,23 @@ Decagon launched **Duet Autopilot**, a paradigm shift in how AI customer support
 
 Source: [How Decagon is redefining forward deployment — Decagon Blog](https://decagon.ai/blog/how-decagon-is-redefining-forward-deployment)
 
+## Anti-FDE Philosophy: Product-Driven Deployment (Aug 2026)
+
+Jesse Zhang's "To FDE, or not to FDE?" (2026-08-11, 1104 bookmarks) articulates Decagon's explicit rejection of the FDE-heavy model that Palantir pioneered and Anthropic/OpenAI are now adopting:
+
+- **Two-thirds of deployment work now autonomous through Duet** — configuration, iteration, and tuning that used to require a human in the loop
+- **Days to launch first AOP** — even for big banks, airlines, telcos
+- **Product-driven bet**: Customer service is high-volume, repeatable, decomposable — the FDE model's bespoke approach is structurally mismatched
+- **Key tradeoff**: Refused to hack solutions in the field when faster; turned escalations into requirements instead of patches
+- **Core insight**: FDEs should be a discovery tool that feeds product, not a permanent business model. "FDEs eat pain and excrete product. If yours are eating pain and excreting more pain, you don't have an FDE team. You have a services business."
+
+Source: [To FDE, or not to FDE? — @thejessezhang](https://x.com/thejessezhang/status/2087198484093149421)
+
 ## Related
 
+- [[entities/jesse-zhang]] — Co-founder & CEO
+- [[entities/palantir]] — Origin of the FDE model; co-founder Ashwin Sreenivas is ex-Palantir
+- [[concepts/forward-deployed-engineering]] — The FDE paradigm Decagon explicitly challenges
 - [[entities/modal-labs]] — infrastructure partner for real-time voice AI deployment
 - [[entities/openai]] — uses GPT-family models alongside proprietary fine-tuned models
 - [[entities/glean]] — fellow enterprise AI platform, focused on search vs. customer support

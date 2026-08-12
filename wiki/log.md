@@ -1,3 +1,11 @@
+## [2026-08-12] X Article ingestion: Jesse Zhang "To FDE, or not to FDE?"
+
+- **New**: `entities/jesse-zhang.md` — Co-founder & CEO of Decagon AI; product-driven critique of FDE-heavy deployment model; Palantir lineage through cofounder Ashwin Sreenivas
+- **Raw**: `raw/articles/2026-08-11_thejessezhang_to-fde-or-not-to-fde.md` — X Article (1104 bookmarks, 259K impressions); argues FDEs should be discovery tool not business model; Decagon's Duet handles 2/3 of deployment autonomously
+- **Updated**: `entities/decagon.md` — Added Anti-FDE Philosophy section, linked to Jesse Zhang entity, updated date
+- **Updated**: `concepts/forward-deployed-engineering.md` — Added "Anti-FDE Critique: Product-Driven Alternative" section with diagnosis framework; added source and See Also links
+- Source: https://x.com/thejessezhang/status/2087198484093149421
+
 ## [2026-08-12] raw-backlog-ingest (14:00) | 1 reference + 4 skips
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-12 14:00, run 20260812T140021Z). Takes=0, References=1, Skips=4.
