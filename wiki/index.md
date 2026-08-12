@@ -2526,6 +2526,7 @@
 - [[concepts/reasoning-model-cost-transparency]] — Reasoning Model Cost Transparency
 - [[concepts/reasoning-model-quality-degradation]] — Reasoning Model Quality Degradation — Token clustering and hidden constraints that degrade reasoning model performance; GPT-5.5 Codex case study
 - [[concepts/reasoning-models]] — Reasoning Models
+- [[concepts/reasoning-trace-extraction-vulnerability]] — Reasoning Trace Extraction Vulnerability — Critical architectural flaw in Anthropic/OpenAI/Google APIs enabling extraction of hidden reasoning via weaker sibling models (Aug 2026)
 - [[concepts/reasoning-retrieval]] — Reasoning Retrieval
 - [[concepts/recommendation-systems]] — recommendation-systems
 - [[concepts/recurse-center]] — Recurse Center
