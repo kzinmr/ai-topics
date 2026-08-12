@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-12T04:21:20.146904+00:00",
+  "triage_run_id": "20260812T040058Z",
+  "source": "raw_backlog",
+  "summary_ja": "rawバックログ収集（--sort ai-hint --limit 5、run 20260812T040058Z）の5記事を評価。Takes=0 / References=1 / Skips=4。reference 1件: Simon WillisonのLenny's Podcast出演ハイライトニュースレター（2026-04-10）— entities/simon-willison.mdの「Blog articles (unprocessed)」一覧に未処理として明記されており、Lenny's Podcast出演セクション（2025年11月変曲点、ダークファクトリー95%ルール、中堅エンジニア淘汰論、agency論、AIセキュリティ研究信頼性、OpenClaw=デジタルペット、2026年末予測）とMr. Chatterbox（ビクトリア朝テキストのみで訓練した340M LLM、llm-mrchatterboxプラグイン）をエンティティページに追記予定。skip 4件: Drexler EA Global 2018講演（concepts/cais.md+comprehensive-ai-services.md+k-eric-drexler.mdでカバー済み）、AINews GPT-Image-2速報（chatgpt-images-2-0.md等に統合済みの重複）、Lingon macOSアプリ（非AI・アーカイブ済み）、dynomightビタミンD（非AI・アーカイブ済み）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-simonw-lennys-podcast",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Highlights from my conversation about agentic engineering on Lenny's Podcast (Simon Willison newsletter, 2026-04-10)",
+      "url": "https://substack.com/redirect/2/eyJlIj...U_8U?&utm_source=substack&utm_medium=email",
+      "raw_path": "raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--01ab480d.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Simon WillisonのLenny's Podcast出演ハイライト（2026-04-10発行、エピソード「An AI state of the union: We've passed the inflection point, dark factories are coming, and automation timelines」）。entities/simon-willison.md（827行）の「Blog articles (unprocessed)」一覧に本ニュースレターが未処理として明記されており実質ギャップ。本文には2025年11月の変曲点（GPT-5.1+Opus 4.5で「almost all of the time it does what you told it to do」）、ダークファクトリーの現実（書いたコードの95%は自分でタイプしていない／次のルールは誰もコードを読まない＝StrongDM）、中堅エンジニア淘汰論（ThoughtWorksオフサイト理論）、agencyこそ普遍スキル（「AI can never have agency」）、AIセキュリティ研究者としての信頼性（Ptacekの「Vulnerability Research Is Cooked」、Anthropic-Firefoxの検証パターン）、OpenClaw＝デジタルペット（Tamagotchi／Mac Miniは水槽）、プロトタイピングの優位性消失、2026年末までにエンジニア50%が95% AIコード予測、AI幻覚判例DB 1,228件などが含まれる。同ニュースレター内のMr. Chatterbox（Trip Venturella作、英国図書館のビクトリア朝テキスト28,035冊のみで訓練した340MパラメータLLM）はSimonがClaude Codeでllm-mrchatterboxプラグインを構築したプロジェクトで、パブリックドメインデータ訓練の論点として言及価値あり。dark-factory概念ページは既に本エピソードの95%引用を含むが、エンティティページ側に出演記録がない。entities/simon-willison.mdにLenny's Podcast出演セクション＋Mr. Chatterboxプロジェクト節を追記する。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-drexler-ea-global-2018",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Reframing Superintelligence (Eric Drexler, EA Global 2018 London talk transcript)",
+      "url": "https://www.effectivealtruism.org/articles/ea-global-2018-reframing-superintelligence",
+      "raw_path": "raw/articles/ea-global-2018-reframing-superintelligence.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ DrexlerのEA Global 2018 London講演トランスクリプト。CAIS（Comprehensive AI Services）フレームワークの原型で、concepts/cais.md（169行）が2019年FHIテクニカルレポート（210ページ）ベースで本講演と同じ論点（R&D自動化による再帰的改善、サービスとしての知能、学習と能力の分離、エージェント中心モデル批判、人間の懸念の予測モデル）を詳細カバー済み。concepts/comprehensive-ai-services.md（91行）とentities/k-eric-drexler.md（69行）も存在。本講演は2019年レポートの前身であり新規情報なし。過去のraw-backlog-ingestでも同一内容（reframing-superintelligence-fhi-2019.md）を繰り返しskip判定済み。",
+      "candidate_wiki_path": "concepts/cais.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-ainews-gpt-image-2",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "[AINews] OpenAI launches GPT-Image-2 (2026-04-22 bulletin, redirect-acb6764f variant)",
+      "url": "https://substack.com/redirect/acb6764f-5d4b-4ff8-80ec-0b33f3475bc5?j=eyJ1Ij...tf6E",
+      "raw_path": "raw/articles/substack.com--redirect-acb6764f-5d4b-4ff8-80ec-0b33f3475bc5--e7f9a9e8.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 既知の重複。AINews GPT-Image-2ローンチ速報（2026-04-22）は既にconcepts/gpt/chatgpt-images-2-0.md（Image Arena Elo 1512/1513/1464、+242リード、Thinking/non-Thinking、Firefly/fal/Hermes Agent等の下流統合、画像生成=コーディングエージェントのフロントエンド化）とcomparisons/gpt-image-2-vs-nano-banana-2.mdに統合済み（log.md 2026-08-09/08-10/08-11エントリ複数）。同一ブリテンのKimi K2.6/FlashKDA、Deep Research Max、ml-internトピックもentities/kimi.md / concepts/deep-research.md / concepts/ml-intern.mdに収録済み。本rawファイルは同一ブリテンの別トラッキングURLキャプチャで新規コンテンツなし。",
+      "candidate_wiki_path": "concepts/gpt/chatgpt-images-2-0.md",
+      "body_excerpt": ""
+    }
+  ]
+}
