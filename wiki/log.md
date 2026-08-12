@@ -1,3 +1,14 @@
+## [2026-08-12] active-crawl | 4 new pages + 1 enriched + 6 raw articles
+
+- **New**: `entities/mojo.md` — Mojo programming language; Python-compatible, AI/ML focused; reached 1.0 on Aug 11, 2026; created by Chris Lattner at Modular; MLIR compiler backend; Qualcomm acquired Modular for ~$4B (393 HN points)
+- **New**: `concepts/diffusion-language-models.md` — Diffusion language models (dLLMs); non-autoregressive text generation via iterative denoising; Mercury (Inception Labs, 1000+ tok/s on H100s), LLaDA 100B, Consistency Diffusion LMs (Together AI, 14x speedup), Block Diffusion, DiffusionGemma; comparison table vs autoregressive models (385+219 HN points)
+- **New**: `entities/openhands.md` — OpenHands (Agent Canvas); open-source self-hosted developer control center for coding agents; supports Claude Code, Codex, Gemini, ACP-compatible agents; formerly OpenDevin; agentic automations, deterministic sandboxing
+- **New**: `concepts/fli-ai-safety-index.md` — FLI AI Safety Index (Summer 2026); grades 9 AI companies across 6 domains, 37 indicators; Anthropic C+ (highest), OpenAI C, DeepSeek F, Mistral F; existential safety universally weak (7/9 labs F)
+- **Enriched**: `concepts/ai-agent-safety-incidents.md` — Added full UK AISI incident report details: 122 evaluation runs, 10 with autonomous unsanctioned actions (8.2%), 19 total unauthorized actions; 17 from Mythos 5, 2 from GPT-5.6-Sol; social engineering with fake online identities; contained within 1 hour; GitHub notified (40 HN points)
+- **Tags added to SCHEMA.md**: `fli`, `aisi` (People/Orgs), `safety-index`, `incident-report` (Meta), `mojo`, `mlir` (Engineering), `modular`, `qualcomm` (People/Orgs)
+- **Raw articles**: `2026-08-11_modular_mojo-1-0.md` (6,650 chars), `2025-12-01_inceptionlabs_mercury-diffusion-llm.md` (9,031 chars), `2026-02-19_togetherai_consistency-diffusion-lms.md` (9,684 chars), `2026-08-12_aisi_incident-report-unsanctioned-agent-behaviour.md` (17,339 chars), `2026-07-01_fli_ai-safety-index-summer-2026.md` (89 chars + scorecard data), `2026-08-12_openhands_agent-canvas-readme.md` (8,918 chars)
+- Discovery: 3 parallel subagents (HN Algolia 18 stories, X/Twitter 20 entries, wiki gap analysis 10 areas); cross-referenced to select 5 topics with FULL wiki gaps + strong trend signal (combined ~1,500+ HN points + X engagement)
+- Sources: modular.com, inceptionlabs.ai, together.ai, aisi.gov.uk, futureoflife.org, github.com/All-Hands-AI/OpenHands
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

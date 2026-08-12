@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (891 pages)
+## Entities (896 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -557,6 +557,7 @@
 - [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25)
 - [[entities/modal-sandbox]] — Modal Sandbox (Claude Managed Agents)
 - [[entities/modular]] — Modular — AI infrastructure startup co-founded by Chris Lattner (LLVM, Swift) and Tim Davis; creator of Mojo programming language and MAX AI platform; acquired by Qualcomm for ~$4B (June 24, 2026)
+- [[entities/mojo]] — Mojo — Python-compatible programming language for AI/ML workloads; created by Chris Lattner at Modular; reached 1.0 in August 2026; MLIR compiler backend; Qualcomm acquired Modular for ~$4B
 - [[entities/moondream]] — Moondream — VLM company building small vision-language models and the Photon inference engine; uses pipelined decoding to eliminate GPU bubbles, achieving 35% higher decode throughput on NVIDIA B200 (June 30)
 - [[entities/moonshot-ai]] — Moonshot AI
 - [[entities/muratcan-koylan]] — Muratcan Koylan
@@ -599,6 +600,7 @@
 - [[entities/omar-khattab/baleen]] — Baleen — Multi-Hop Retrieval-Augmented Reasoning
 - [[entities/omar-khattab/collaborations]] — Omar Khattab — Collaborations
 - [[entities/omar-khattab/impact-metrics]] — Omar Khattab — Impact Metrics
+- [[entities/openhands]] — OpenHands (Agent Canvas) — Open-source self-hosted developer control center for coding agents; supports Claude Code, Codex, Gemini, ACP-compatible agents; formerly OpenDevin
 - [[entities/omar-khattab/publications]] — Omar Khattab — Key Publications
 - [[entities/omar-khattab/quotes]] — Omar Khattab — Key Quotes
 - [[entities/omar-khattab/research-trajectory]] — Omar Khattab — Research Trajectory
@@ -899,7 +901,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1969 pages)
+## Concepts (1972 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -993,7 +995,9 @@
 - [[concepts/claude-memory-heist]] — Claude Memory Heist — Prompt injection attack exfiltrating user data from Claude's memory system
 - [[concepts/coding-agents/databricks-ai-coding-cost-management]] — Managing AI Coding Costs at Scale — Databricks (Aug 2026): cost levers, model routing, AI Gateway pattern for enterprise agent coding spend optimization
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Databricks coding agent benchmark — real-world evaluation of coding agents on production codebases
+- [[concepts/diffusion-language-models]] — Diffusion Language Models — Non-autoregressive text generation via iterative denoising; Mercury, LLaDA, Consistency Diffusion LMs; 10-14x faster inference
 - [[concepts/claude/fable-safety-classifiers-critique]] — Claude Fable 5 safety classifiers critique — overzealous classifiers make Fable unusable for CS research
+- [[concepts/fli-ai-safety-index]] — FLI AI Safety Index — Future of Life Institute periodic evaluation grading AI companies on safety/security practices across 6 domains, 37 indicators; Summer 2026: Anthropic C+, OpenAI C, DeepSeek F
 - [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
 - [[concepts/flux-video-action-models]] — Video-Action Models (VAMs) — From Media Generation to Physical AI — FLUX 3 x mimic architecture; Self-Flow unified multimodal training; video pre-training transfers to robot control; dexterous manipulation at Audi; comparison with RT-2, Octo, π0 (July 2026)
 - [[concepts/gpt-live]] — GPT-Live — OpenAI full-duplex real-time voice interaction mode (July 2026)
