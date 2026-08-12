@@ -1,6 +1,15 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-12] raw-backlog-ingest (10:00) | 5 articles enriched existing entity pages
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-12 10:00, run 20260812T100039Z). Takes=0 (no new pages - all 5 map to existing rich entity pages), References=5.
+- **Updated: [[entities/paulgraham-com]]** - Added "Classic Essays (2003-2006)" section: "Hackers and Painters" (maker identity, computer science as grab bag, AI-era craft debate), "Why Nerds are Unpopular" (nerd identity), "The 18 Mistakes That Kill Startups" (single root cause + 18 failure modes); Recent Themes table extended with 2003/2006 rows; sources updated.
+- **Updated: [[entities/hyperbo]]** - Added "Early AI Coding: The ChatGPT Pair-Programming Report (Jun 2023)" section: 10 PRs / ~4,100 LOC on Artichoke Ruby with free ChatGPT (May 24 version), 2,000-line no_std String#unpack iterator (100% coverage), "highly technical junior engineer" framing, tests as strongest output, code-review prompting as best technique, precursor to harness engineering.
+- **Updated: [[entities/ryan-lopopolo]]** - Added "I Wrote 4,000 Lines of Code with ChatGPT in a Weekend" to Blog / Key Writings with summary; sources updated.
+- **Updated: [[entities/ryan-lopopolo--writings]]** - Synced the ChatGPT-4000 bullet into the writings sub-page.
+- **Updated: [[entities/overreacted-io]]** - Added Timeline row (2024) + "The Two-Computer Problem: Impossible Components" Core Ideas subsection (RSC motivation, backend/frontend components terminology note, ten-year prediction); sources updated.
+- No new pages; index.md unchanged (all entities already listed). Sources: raw/articles/paulgraham.com--hp-html--75db41c1.md, paulgraham.com--nerds-html--d2271270.md, paulgraham.com--startupmistakes-html--38e869c5.md, hyperbo.la--w-chatgpt-4000--06a17be6.md, overreacted.io--impossible-components--a22447e4.md
+
 ## [2026-08-12] Manual: Stealing Reasoning Traces paper — raw article + concept page
 - **New**: `raw/articles/2026-08-11-stealing-reasoning-traces-from-proprietary-llm-apis.md` — Full paper summary from Alexander Panfilov's viral tweet (10.8K likes, 7.5K bookmarks). Paper: "Stealing Reasoning Traces from Proprietary LLM APIs" (Panfilov et al., 2026). Demonstrates extraction of hidden reasoning from Anthropic/OpenAI/Google APIs via weaker sibling models.
 - **New**: `concepts/reasoning-trace-extraction-vulnerability.md` — Comprehensive concept page covering the architectural vulnerability, two-call extraction method, four attack vectors (anti-distillation, PII extraction, hazardous disclosure, prompt injection), experimental validation across all three providers, Kimi-K3 case study, summary unfaithfulness findings, and proposed mitigations.

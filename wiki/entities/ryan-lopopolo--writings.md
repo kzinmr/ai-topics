@@ -3,12 +3,13 @@ title: "Ryan Lopopolo — Writings & Speaking"
 type: entity
 parent: ryan-lopopolo
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-08-12
 tags:
   - person
   - blog
   - writing
-sources: []
+sources:
+  - raw/articles/hyperbo.la--w-chatgpt-4000--06a17be6.md
 ---
 
 # Ryan Lopopolo: Writings & Speaking
@@ -48,6 +49,8 @@ Back to main profile: [[entities/ryan-lopopolo]]
 - **[Scaling Myself by Letting My Team Fail](https://hyperbo.la/w/scaling-myself-by-letting-my-team-fail/)** (Jul 2023) — As a Staff+ engineer, learning to delegate by allowing controlled failure.
 
 - **[Do the Simplest Thing That Could Possibly Work](https://hyperbo.la/w/do-the-simplest-thing/)** (Aug 2023) — To build iteratively and shed complexity, start with the simplest possible solution.
+
+- **[I Wrote 4,000 Lines of Code with ChatGPT in a Weekend](https://hyperbo.la/w/chatgpt-4000/)** (Jun 2023) — Earliest documented AI pair-programming experiment on hyperbo.la: a weekend with the free ChatGPT (May 24 version) on Artichoke Ruby's Rust codebase, 10 PRs / ~4,100 LOC, 2,000-line `no_std` iterator for `String#unpack`. Framed ChatGPT as "a highly technical junior engineer"; tests were the strongest output; prompting for code review was the best technique. Precursor to harness engineering.
 
 ### Podcasts & Media Appearances
 

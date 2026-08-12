@@ -1,9 +1,10 @@
 ---
 title: "Dan Abramov"
 tags: [person]
-sources: []
+sources:
+  - raw/articles/overreacted.io--impossible-components--a22447e4.md
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-08-12
 type: entity
 ---
 
@@ -38,6 +39,7 @@ His writing is characterized by deep conceptual exploration, animated explanatio
 | 2022 | Published "Before You useReducer()" — arguing state machines for most use cases |
 | 2023 | Published "React Canaries: Incremental Feature Rollout for Ecosystem Libraries" |
 | 2023 | Published "Can AI Save Programming?" — skeptical examination of AI code generation |
+| 2024 | Published "Impossible Components" — the two-computer problem that motivates React Server Components |
 | 2024 | Published "How to Make a React App from Scratch" — frameworkless React setup |
 | 2024 | Published "Why Is React Called 'React'?" — historical deep dive |
 | 2025 | Published "My Apology to the React Community" — acknowledging React's communication failures around RSC |
@@ -85,6 +87,10 @@ Dan's most recent major post, "A Social Filesystem" (January 2026), is a deep ex
 ### RSC: Transparency Over Abstraction
 
 His RSC Explorer tool (December 2025) embodies his teaching philosophy: instead of documenting React Server Components abstractly, he built an interactive debugger that lets you step through the actual protocol. His approach is consistently "show, don't tell" — he wants developers to understand the mechanics, not just the interface.
+
+### The Two-Computer Problem: "Impossible Components"
+
+In "Impossible Components" (Dec 2024), Dan frames the core motivation for React Server Components as a distributed-systems problem: some UI genuinely cannot be built on one computer alone. The running example — greeting a user in "my favorite color" — needs your name from *your* computer and my color from *my* computer; no amount of client-side trickery reconciles the two. The post walks through naive attempts, shows why each fails, and introduces RSC as the model that makes "impossible components" possible: "backend components" (Server Components) and "frontend components" (Client Components) composed in one tree. He deliberately avoids the official terminology until the end to sidestep the knee-jerk assumption that "client loads from the server" rather than "server renders the client," and closes with a prediction that the Server/Client split as modeled by RSC may become the generally accepted model of distributed composable user interfaces "within the next ten years."
 
 ### Self-Correction as a Feature
 

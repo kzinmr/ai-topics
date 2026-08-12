@@ -3,7 +3,7 @@ title: Ryan Lopopolo
 type: entity
 handle: "@_lopopolo"
 created: 2026-04-13
-updated: 2026-06-03
+updated: 2026-08-12
 depth: 22000
 tags:
   - person
@@ -15,7 +15,8 @@ tags:
   - ai-agents
   - agentic-engineering
   - developer-tooling
-sources: []
+sources:
+  - raw/articles/hyperbo.la--w-chatgpt-4000--06a17be6.md
 ---
 
 
@@ -217,6 +218,8 @@ Ryan's work at OpenAI Frontier points to safe, observable, governable agent depl
 - **[Scaling Myself by Letting My Team Fail](https://hyperbo.la/w/scaling-myself-by-letting-my-team-fail/)** (Jul 2023) — As a Staff+ engineer, learning to delegate by allowing controlled failure.
 
 - **[Do the Simplest Thing That Could Possibly Work](https://hyperbo.la/w/do-the-simplest-thing/)** (Aug 2023) — To build iteratively and shed complexity, start with the simplest possible solution.
+
+- **[I Wrote 4,000 Lines of Code with ChatGPT in a Weekend](https://hyperbo.la/w/chatgpt-4000/)** (Jun 2023) — The earliest documented AI pair-programming experiment on hyperbo.la: a weekend with the free ChatGPT (May 24 version) on Artichoke Ruby's Rust codebase, producing 10 PRs / ~4,100 LOC including a 2,000-line `no_std` iterator for `String#unpack` (100% coverage). Framed ChatGPT as "a highly technical junior engineer" — knows a lot but needs requirements-shaped prompting; tests were the model's strongest output; prompting for code review was the most successful technique. *"I ran towards my fears and got my hands dirty with AI"* — the direct precursor to harness engineering.
 
 ### Latent Space Podcast Interview (Apr 2026)
 

@@ -7,10 +7,11 @@ tags:
   - software-engineering
 type: entity
 status: active
-updated: 2026-07-18
+updated: 2026-08-12
 sources:
   - raw/articles/hyperbo.la--w-code-reds-need-maintenance-loops--83920e0a.md
   - raw/articles/hyperbo.la--w-token-mandates--2d279dd2.md
+  - raw/articles/hyperbo.la--w-chatgpt-4000--06a17be6.md
 ---
 
 # hyperbo
@@ -62,6 +63,21 @@ The steel case:
 - A small central AI team is fraught because leadership doesn't yet know which practitioners belong on it — it might pick the best brand marketer and miss the person quietly automating campaign production.
 
 Token mandates enable randomized hill climbing to discover what patterns are possible. Last mile deployment is not yet handled by models themselves (as of July 2026), so this discovery must be done by the existing set of expert humans in the business.
+
+## Early AI Coding: The ChatGPT Pair-Programming Report (Jun 2023)
+
+Hyperbo's earliest documented AI coding experiment — and the direct precursor to the harness-engineering work that would define the blog three years later. In June 2023, the author pair-programmed with the free ChatGPT (May 24 version) on **Artichoke Ruby**'s Rust codebase over a single weekend, authoring 10 PRs totaling ~4,100 lines changed/added. The standout artifact was artichoke/artichoke#2605: a 2,000-line, 100% code-coverage, `no_std` iterator parsing Ruby's `String#unpack` format strings.
+
+Key findings that foreshadow later themes:
+
+- **The "highly technical junior engineer" model** — ChatGPT knows a lot but can't deploy that knowledge alone; the human supplies requirements and iteration. *"I spoke to ChatGPT like I would any other engineer: I gave it requirements, and then more requirements, as we went."*
+- **No ego, defers to direction, writes code rapidly** — *"The experience of working with ChatGPT was similar to pair programming with another person"* minus the ego management.
+- **Tests are the model's strong suit** — ChatGPT "understands" APIs of the relevant modules and can infer expected behavior from docs and similar training code.
+- **More context = more capability** — pasting bug reports and impacted code enabled quick bug fixes and regression tests.
+- **Prompt engineering as code review** — prompting ChatGPT to review and guide refactors of existing code was the most successful technique, a foreshadowing of later reviewer-agent patterns.
+- **Conversational search** — using ChatGPT as a "conversational Google" for Dockerfile improvements and other infrastructure tasks.
+
+The author opened with a deliberate stance: *"I consider myself skeptical of AI... So, much like I did with Bazel last year, I ran towards my fears and got my hands dirty with AI."* — the same fear-facing methodology that later produced the Frontier 1M-LOC, 0% human code experiment.
 
 ## Agent Engineering Connections
 

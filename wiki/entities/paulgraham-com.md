@@ -2,7 +2,7 @@
 title: Paul Graham
 type: entity
 created: 2026-04-09
-updated: 2026-08-10
+updated: 2026-08-12
 tags:
   - person
   - blogger
@@ -17,6 +17,9 @@ sources:
   - raw/articles/paulgraham.com--popular-html--c633a6dc.md
   - raw/articles/paulgraham.com--icad-html--2f0356db.md
   - raw/articles/paulgraham.com--gap-html--e5deadf2.md
+  - raw/articles/paulgraham.com--hp-html--75db41c1.md
+  - raw/articles/paulgraham.com--nerds-html--d2271270.md
+  - raw/articles/paulgraham.com--startupmistakes-html--38e869c5.md
 ---
 
 # Paul Graham
@@ -181,12 +184,30 @@ The essay catalogs **nine ideas** Lisp embodied, adopted piecemeal by the mainst
 
 **AI Relevance:** The pointy-haired boss pattern — non-technical executives mandating specific technologies they don't understand — maps directly onto the enterprise AI mandate dynamics documented in [[concepts/ai-adoption-failures-and-enterprise-psychosis]] ("Heretics Will Be Shot"). The essay's "languages are not equivalent" argument also prefigures modern debates about whether AI coding tools are interchangeable commodities or differ in kind.
 
+## Classic Essays (2003–2006)
+
+Graham's early 2000s essays established the themes he would develop for two decades. Three of the most influential:
+
+### Hackers and Painters (May 2003)
+
+Graham's founding essay on the maker identity: hackers and painters are both makers trying to make good things, and programming is a creative medium rather than a branch of science. The essay's famous dismissal of "computer science" as "a grab bag of tenuously related areas thrown together by an accident of history, like Yugoslavia" and its account of the hacker's way of working — building prototypes, learning from concrete artifacts, working in small explorable steps — anticipated the modern debate about whether AI coding tools augment craft or replace it. The essay also introduced the idea that great software comes from people who treat code the way painters treat canvas — a lens still used to argue that AI-generated code needs human taste at the top of the stack.
+
+### Why Nerds are Unpopular (Feb 2003)
+
+A memoir-essay on the American secondary-school social order: smart kids are unpopular not because intelligence is despised but because nerds opt out of the popularity game — they prefer the world of ideas to the rituals of adolescent status competition. Graham's analysis of school as a "closed world" where the normal escape valves of adult life are unavailable became a canonical statement of nerd identity in tech culture.
+
+### The 18 Mistakes That Kill Startups (Oct 2006)
+
+Graham's systematic inversion of startup advice: if you avoid every cause of failure, you succeed. The essay collapses all failure into one root cause — **not making something users want** — and enumerates 18 specific ways startups fail to do so: single founder, bad location, marginal niche, derivative idea, obstinacy, hiring bad programmers, choosing the wrong platform, slowness in launching, launching too early, having no specific user in mind, raising too little money, spending too much, raising too much money, poor investor management, sacrificing users to profit, not wanting to get your hands dirty, fights between founders, and a half-hearted effort. The framework remains the canonical YC-era diagnostic for startup failure modes.
+
 ## Recent Themes
 
 | Period | Focus | Key Essays |
 |--------|-------|------------|
 | **2001** | Programming language adoption, expert influence | "Being Popular" |
+| **2003** | Maker identity, nerd culture | "Hackers and Painters", "Why Nerds are Unpopular" |
 | **2004** | Wealth creation, income variation, the gap between best and rest | "Mind the Gap" |
+| **2006** | Startup failure modes | "The 18 Mistakes That Kill Startups" |
 | **2023** | Superlinear returns, compounding dynamics | "Superlinear Returns" |
 | **2024** | How to do great work, founder management, essay theory | "How to Do Great Work", "Founder Mode", "The Best Essay" |
 | **2025** | Writing philosophy, essay audience theory | "Good Writing", "Fierce Nerds", "The Shape of the Essay Field" |
