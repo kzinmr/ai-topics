@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-08-09
+updated: 2026-08-12
 tags:
   - entity
   - company
@@ -37,6 +37,7 @@ sources:
   - raw/articles/2026-05-21_fireworks-ai_agent-execution-tax.md
   - raw/articles/2026-05-10_fireworks-ai_constrained-generation-with-reasoning.md
   - raw/articles/2026-08-08_fireworks-ai_voyage-ai-models-now-on-fireworks.md
+  - raw/articles/2026-08-12_fireworks-ai_meta-muse-glimmer.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -361,6 +362,22 @@ Fireworks launched **GLM 5.2 Fast**, a speed-optimized inference tier for GLM 5.
 **Benchmark:** 77.8% on SWE-bench Verified at a fraction of closed-model token cost.
 
 Source: raw/articles/2026-07-01_fireworks-ai_glm-5p2-fast.md
+
+## Meta Muse Glimmer on Fireworks (August 2026)
+
+Fireworks launched **[[entities/muse-glimmer|Meta Muse Glimmer]]** (Meta's 30B open agentic model, Apache 2.0) on **serverless and on-demand** deployments on Aug 10, 2026 — **deliberately a day later than other providers**.
+
+**Why the day-later launch**: Fireworks took the extra day "on purpose" to get the serving right — correcting the model's shipped generation config and wiring **reasoning-effort control end-to-end** (`Reasoning strength: <value>` in the system prompt, low/medium/high/xhigh), so users get the exact performance/control/reliability expected from day one.
+
+**Agent-traffic positioning**: The launch post explicitly targets "always-on agents" — Fireworks autoscales for bursty agent workloads (spike unpredictably, no peak provisioning). Muse Glimmer's architecture (sliding-window attention over 2,048 tokens on most layers, full global attention every fourth layer, 2 KV heads) keeps the KV cache small, making long-context agent sessions economical to serve at high concurrency — including 100K-token accumulated tool output.
+
+**Key data points**:
+- Meta-recommended sampling: temperature = 1.0, top_p = 0.95, top_k = 64
+- Benchmark leads vs Gemma 4 31B / Qwen 3.6 27B at high reasoning effort: MCP Atlas 75.5, DeepSearch QA 74.6, SWE-Bench Pro 51.2 (Meta-reported)
+- DFlash speculative decoding supported for lower latency
+- Path symmetry: prototype on the quantized workstation build, deploy the same weights on Fireworks at production concurrency
+
+Source: raw/articles/2026-08-12_fireworks-ai_meta-muse-glimmer.md
 
 ## MiniMax M3 Sparse Attention on Blackwell (July 2026)
 

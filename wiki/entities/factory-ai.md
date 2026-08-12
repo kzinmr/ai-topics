@@ -2,7 +2,7 @@
 title: "Factory.ai"
 type: entity
 created: 2026-06-03
-updated: 2026-07-12
+updated: 2026-08-12
 tags:
   - company
   - coding-agents
@@ -14,6 +14,7 @@ sources:
   - https://factory.ai/news/factory-router
   - raw/articles/2026-06-03_factory_factory-router.md
   - raw/articles/2026-06-15_factory-ai_software-factory-2.0.md
+  - raw/articles/2026-08-12_factory_nvidia-dgx-spark.md
 ---
 
 # Factory.ai
@@ -63,6 +64,18 @@ Factory announced **Incident Response** functionality for its Droid autonomous a
 The incident response capability is described as a 2-minute-read feature announcement, positioning it as a practical operational extension of Factory's autonomous agent platform rather than a major product release.
 
 Source: raw/articles/2026-07-11_factory_incident-response.md
+
+## Local Autonomous Software Engineering on NVIDIA DGX Spark (August 2026)
+
+Factory announced (Aug 11, 2026) that **security-sensitive teams can run the autonomous software factory locally on NVIDIA DGX Spark with NVIDIA Nemotron 3.5 Lightning**, keeping source code, operational context, and execution entirely inside their own environment.
+
+Key points:
+- **Local deployment for high-security environments**: the full Factory autonomous software engineering loop (Droids, Automations, Missions) runs on-prem on DGX Spark hardware
+- **NVIDIA Nemotron 3.5 Lightning** serves as the local model for the agent stack
+- **Data sovereignty**: source code, operational context, and execution never leave the customer environment — a concrete realization of the "Sovereign Intelligence" pillar from Factory 2.0 (self-hosted deployment with full data ownership)
+- Complements the existing NVIDIA relationship: NVIDIA is already a Factory 2.0 production customer and Fireworks' LangChain Deep Agents work runs Nemotron on NVIDIA Blackwell
+
+Source: raw/articles/2026-08-12_factory_nvidia-dgx-spark.md
 
 ## Related
 

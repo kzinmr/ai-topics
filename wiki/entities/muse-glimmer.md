@@ -19,6 +19,7 @@ aliases:
 sources:
   - raw/articles/2026-08-10_research-meta-ai_introducing-muse-glimmer.md
   - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
+  - raw/articles/2026-08-12_fireworks-ai_meta-muse-glimmer.md
 ---
 
 # Muse Glimmer
@@ -78,6 +79,44 @@ Muse Glimmer is downloadable today as a 30B model under **Apache 2.0**, running 
 - **EU feature exclusion** — feature parity restored for EU users
 
 This makes Apache 2.0 Meta's most permissive license ever on its best local model.
+
+## Architecture Details & Fireworks Serving (Aug 2026)
+
+[Fireworks AI's launch post](https://fireworks.ai/blog/meta-muse-glimmer) (Aug 10, 2026) adds concrete architecture and serving specifics:
+
+### Architecture Specs
+
+- **30B dense model, 52 transformer layers**, grouped-query attention with **32 query heads and 2 KV heads**, SwiGLU feed-forward layers
+- **~1.8B perception encoder** gives native image understanding alongside text
+- **128K+ token context window**
+- **Sliding-window attention over 2,048 tokens on most layers**, with a full global attention layer every fourth layer — paired with just 2 KV heads this keeps the KV cache small, the core reason long-context agent workloads are economical to serve at high concurrency
+- Built to fit in 24GB (quantized); the same design makes serverless concurrency affordable
+- Supports **DFlash speculative decoding** for lower-latency generation
+- **Knowledge cutoff: January 4, 2026** — time-sensitive agent work needs tools
+
+### Benchmark Table vs Size-Class Peers (all at high reasoning effort, per Meta)
+
+| Benchmark | Muse Glimmer 30B | Gemma 4 31B (Thinking) | Qwen 3.6 27B (Thinking) |
+|-----------|------------------|------------------------|-------------------------|
+| MCP Atlas (Public) | 75.5 | 54.2 | 62.5 |
+| DeepSearch QA | 74.6 | 61.7 | 71.1 |
+| Gaia2 | 43.3 | 36.4 | 40.0 |
+| WildClawBench | 47.6 | 37.6 | 43.2 |
+| SWE-Bench Pro | 51.2 | 36.9 | 50.2 |
+
+Also leads its class on **CharXiv Reasoning (78.8)** and **SciCode (43.6)**. Benchmark figures are Meta-reported.
+
+### Reasoning-Effort & Sampling Controls
+
+- Reasoning effort is set via system prompt: **`Reasoning strength: <value>`** with low/medium/high/xhigh — use high or xhigh for agentic and coding work
+- Meta-recommended sampling: **temperature = 1.0, top_p = 0.95, top_k = 64**
+
+### Fireworks Deployment
+
+- Available on Fireworks in **serverless and on-demand** deployments
+- Fireworks shipped **a day later than other providers deliberately** — correcting the model's shipped generation config and wiring reasoning-effort control end-to-end before launch
+- Positioned for **bursty agent traffic**: autoscaling rather than peak provisioning, given agent workloads spike unpredictably
+- Prototype against the quantized build on a workstation, deploy the same model on Fireworks to serve thousands of sessions — a symmetric path enabled by Apache 2.0
 
 ## Local Deployment
 

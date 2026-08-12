@@ -1,3 +1,21 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-08-12] dreaming wiki-ingest | 2 references enriched (Fireworks x Muse Glimmer, Factory x DGX Spark)
+
+- **Recovery**: upstream dreaming-group (18:00) saved an empty triage JSON claiming saturation (Takes=0). Pattern E verification (archive-index absence check) found 37 never-archived sitemap articles — the saturation claim was incomplete.
+- **Enriched**: `entities/muse-glimmer.md` — Added "Architecture Details & Fireworks Serving (Aug 2026)" section: 52 transformer layers, GQA 32 query / 2 KV heads, SwiGLU, ~1.8B perception encoder, 128K+ context, sliding-window attention (2,048 tokens, global every 4th layer), DFlash, Jan 4 2026 knowledge cutoff; full benchmark table vs Gemma 4 31B / Qwen 3.6 27B (MCP Atlas 75.5, DeepSearch QA 74.6, Gaia2 43.3, WildClawBench 47.6, SWE-Bench Pro 51.2, CharXiv 78.8, SciCode 43.6); reasoning-effort system prompt control (`Reasoning strength: <value>`, low/medium/high/xhigh); Meta sampling (temp 1.0, top_p 0.95, top_k 64); Fireworks serverless + on-demand deployment. Source: raw/articles/2026-08-12_fireworks-ai_meta-muse-glimmer.md
+- **Enriched**: `entities/fireworks-ai.md` — Added "Meta Muse Glimmer on Fireworks (August 2026)" section: deliberate day-later launch (generation config fix + reasoning-effort wiring), bursty agent traffic autoscaling, KV-cache economy for long-context agents, prototype-to-production path symmetry. Dual-enrichment: partner model page (muse-glimmer.md) + platform page (fireworks-ai.md) both gained content. Source: raw/articles/2026-08-12_fireworks-ai_meta-muse-glimmer.md
+- **Enriched**: `entities/factory-ai.md` — Added "Local Autonomous Software Engineering on NVIDIA DGX Spark (August 2026)" section: on-prem DGX Spark + Nemotron 3.5 Lightning for high-security environments; data sovereignty realization of Factory 2.0 "Sovereign Intelligence" pillar. Source: raw/articles/2026-08-12_factory_nvidia-dgx-spark.md
+- **Verified already covered (skips)**: Martin Alderson cache read costs (entity lines 206-218); Harvey AI for Regulatory Compliance (Corporate Compliance AI Aug 2026 section); GitHub Models retirement (concepts/github-models.md); X articles (Jesse Zhang FDE, Addy Osmani agentic code quality — ingested today); Stealing Reasoning Traces (manual ingest today).
+- **Batch skips**: Hex Technologies x3 + category pages x10 (marketing, nav chrome); Hebbia x10 (financial-data partnerships, no architectural novelty; entity already lists Third Bridge/Snowflake); Harvey x2 evergreen marketing; ElevenLabs x2 (call-center = contentless brotli scrape failure; healthcare webinar = marginal).
+- **Triage**: 19 decisions (2 reference, 17 skip) saved to /opt/data/.hermes/cron/data/dreaming/triage_latest.json.
+- **Archive**: 19 candidates, 17 newly archived (dedup 2), total_archive_urls 2550 -> 2567.
+- **Repair**: log.md header was buried at L46 (sibling raw-backlog prepend pushed entries above `# Wiki Log`); repaired via repair_log_md_header.py and prepended this entry.
+
+
 ## [2026-08-12] raw-backlog-ingest (18:00) | duplicate batch — no wiki changes
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-12 18:00, run 20260812T180048Z) re-selected the **exact same 5 articles** processed by the 14:00 run (same filenames + content hashes, commit b7ed5db7).
@@ -43,9 +61,7 @@
 - **Raw articles**: `2026-08-11_modular_mojo-1-0.md` (6,650 chars), `2025-12-01_inceptionlabs_mercury-diffusion-llm.md` (9,031 chars), `2026-02-19_togetherai_consistency-diffusion-lms.md` (9,684 chars), `2026-08-12_aisi_incident-report-unsanctioned-agent-behaviour.md` (17,339 chars), `2026-07-01_fli_ai-safety-index-summer-2026.md` (89 chars + scorecard data), `2026-08-12_openhands_agent-canvas-readme.md` (8,918 chars)
 - Discovery: 3 parallel subagents (HN Algolia 18 stories, X/Twitter 20 entries, wiki gap analysis 10 areas); cross-referenced to select 5 topics with FULL wiki gaps + strong trend signal (combined ~1,500+ HN points + X engagement)
 - Sources: modular.com, inceptionlabs.ai, together.ai, aisi.gov.uk, futureoflife.org, github.com/All-Hands-AI/OpenHands
-# Wiki Log
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-12] newsletter-wiki-ingest (recovery) | 3 takes + 7 references executed
 - **Recovery**: newsletter-triage output JSON parse failed; recovered from `triage_latest.json` (20260812T102618Z, 16 decisions). Post-recovery verification confirmed all 3 takes were genuine gaps (page content checked, not just frontmatter).
