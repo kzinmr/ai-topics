@@ -1,6 +1,20 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+
+## [2026-08-12] newsletter-wiki-ingest (recovery) | 3 takes + 7 references executed
+- **Recovery**: newsletter-triage output JSON parse failed; recovered from `triage_latest.json` (20260812T102618Z, 16 decisions). Post-recovery verification confirmed all 3 takes were genuine gaps (page content checked, not just frontmatter).
+- **New**: `entities/chai-discovery.md` — AI-native drug discovery company; $400M Series C; 4 pharma deals (Eli Lilly, Novartis, argenx + Lilly expansion); structural→binding (binding affinity) model thesis; biobucks 2–5% upfront (Latent Space BioAI Phase Shift, 2026-08-11).
+- **Updated**: `concepts/openai-daybreak.md` — August 2026 two-tier restructure: Daybreak Blue (frontier models incl. GPT-5.6 Sol to approved defenders) / Daybreak Red (GPT-5.6-Cyber gated for vulnerability research).
+- **Updated**: `entities/unitree-robotics.md` — STAR Market IPO (Aug 6, 2026): 150.80 yuan/share, 40.45M shares (10% capital), ~$904M raised, ~$9B valuation; first profitable humanoid company to IPO; 2025 revenue 1.699B yuan, 60.13% gross margin.
+- **Updated**: `entities/nvidia-nemotron-3-ultra.md` — Nemotron 3.5 Lightning (30B MoE, ~3B active) for always-on agent workloads; 4× throughput, 1M context.
+- **Updated**: `entities/muse-glimmer.md` — MCP Atlas 75.5, SWE-Bench Pro 51.2, Openness Index 5.0→8.0, Apache 2.0 license transition.
+- **Updated**: `concepts/openclaw-ecosystem.md` — gym-booking API authorization flaw case study (Aug 2026).
+- **Updated**: `entities/anthropic.md` — Riemann zeta lower bound 41.6%→67.2% specifics.
+- **Updated**: `concepts/ai-video-generation-2026.md` — LTX-2.5 open-weights video model (67% blind preference).
+- **Updated**: `concepts/ai-energy.md` — NY Hochul 1-year data center moratorium + 100+ local jurisdictions.
+- **Updated**: `concepts/prompt-engineering.md` — ASD-STE100 + ADHD custom-instruction readability technique (Ben Tossell).
+- Sources: raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md, raw/newsletters/2026-08-11-the-bioai-phase-shift-matthew-mcpartlon-neil-patil-chai-discovery.md, raw/newsletters/2026-08-12-ainews-how-to-steal-a-reasoning-trace.md, raw/newsletters/2026-08-11-make-it-readable.md
 ## [2026-08-12] newsletter-reference (Superintel+) | LTX-2.5 added to ai-video-generation-2026
 - **Updated**: `concepts/ai-video-generation-2026.md` — Added "LTX-2.5 (LTX, Aug 2026)" model entry: open-weights video model released Aug 2026; 67% in blind preference tests (ahead of Seedance 2.5 at 65% and Gemini Omni); ships weights, on-prem deployment, and fine-tuning while Seedance 2.5, Kling 3.0 Pro, Veo 3.1, and Grok 1.5 are API-only with no downloadable weights; launch benchmarks are self-reported preliminary numbers awaiting independent arena validation. Also added LTX-2.5 row to the Open-Source Ecosystem table. Frontmatter updated (2026-08-12) + source added.
 - Source: raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md

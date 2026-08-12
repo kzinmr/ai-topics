@@ -2,12 +2,13 @@
 title: "OpenAI Daybreak"
 type: concept
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-08-12
 tags:
   - daybreak
   - gpt-5-5-cyber
   - openai
   - security
+  - cybersecurity
   - vulnerability
   - coding-agents
   - agent-safety
@@ -21,6 +22,7 @@ aliases:
   - OpenAI Daybreak Initiative
 sources:
   - raw/articles/2026-06-22_openai_daybreak-securing-the-world.md
+  - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
 ---
 
 # OpenAI Daybreak
@@ -93,10 +95,32 @@ Daybreak launches into a rapidly evolving landscape:
 
 Daybreak is OpenAI's bet that the right response to cyber frontier models is not withholding but productizing — building controlled, defender-oriented tools that can match the pace of AI-accelerated threats.
 
+## August 2026 Restructure: Daybreak Blue and Daybreak Red
+
+On August 11, 2026, OpenAI restructured Daybreak into **two access tiers** — Daybreak Blue and Daybreak Red — separating general defender access from tightly-vetted research access. The restructure places a purpose-trained cyber model behind the tighter tier, formalizing the controlled-deployment model the initiative launched with.
+
+### Daybreak Blue
+
+Daybreak Blue is the broader access tier, opening frontier models — including [[concepts/gpt/gpt-5-6|GPT-5.6 Sol]] — to approved defenders for:
+
+- **Incident response**: AI-assisted triage and remediation during active security events.
+- **Malware analysis**: Reverse engineering and behavioral analysis of malicious code.
+- **Patch validation**: Verifying that generated patches actually close vulnerabilities.
+
+### Daybreak Red
+
+Daybreak Red gates the new **GPT-5.6-Cyber** — the successor to GPT-5.5-Cyber, built on the [[concepts/gpt/gpt-5-6|GPT-5.6]] family — behind stricter vetting for:
+
+- **Vulnerability research**: Finding and characterizing exploitable bugs in target systems.
+- **Exploit validation**: Confirming whether reported vulnerabilities are genuinely exploitable.
+
+The Blue/Red split mirrors the two-sided nature of the program's own analysis: defender-oriented operations (incident response, malware analysis, patch validation) get broad access to frontier models like GPT-5.6 Sol, while the purpose-trained cyber model — the highest-risk capability — requires stricter vetting. This restructures the access-control layer described above: rather than a single Daybreak product with uniform access, OpenAI now tiers both the models and the vetting by use case, keeping the most sensitive capabilities (GPT-5.6-Cyber, vulnerability research, exploit validation) behind the tighter Red gate.
+
 ## See Also
 
 - [[entities/openai]] — OpenAI entity overview
 - [[concepts/gpt/gpt-5-5]] — GPT-5.5 base model architecture
+- [[concepts/gpt/gpt-5-6]] — GPT-5.6 model family (Sol / Terra / Luna)
 - [[entities/openai-codex]] — OpenAI Codex agent platform
 - [[concepts/claude/mythos]] — Anthropic's security-specialized model (withheld)
 - [[concepts/cyber-frontier-models]] — The broader category of security-specialized frontier LLMs

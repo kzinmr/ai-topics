@@ -135,6 +135,7 @@
 - [[entities/centaur]] — Centaur
 - [[entities/cerebras-systems]] — Cerebras Systems
 - [[entities/chad-nauseam-home]] — Chad Nauseam
+- [[entities/chai-discovery]] — Chai Discovery — AI-native drug discovery company; $400M Series C; four pharma deals (Eli Lilly, Novartis, argenx + Lilly expansion); structural models → binding (binding affinity) models thesis; biobucks 2–5% upfront (Aug 2026)
 - [[entities/chalk]] — Chalk
 - [[entities/chan-zuckerberg-initiative]] — Chan Zuckerberg Initiative (CZI)
 - [[entities/charles-frye]] — Charles Frye

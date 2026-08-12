@@ -6,7 +6,7 @@ aliases:
   - prompting
   - end-of-prompting
 created: 2026-04-25
-updated: 2026-08-01
+updated: 2026-08-12
 tags:
   - concept
   - prompting
@@ -16,6 +16,7 @@ tags:
   - screen-recording
 sources:
   - raw/newsletters/2026-07-31-the-end-of-prompting.md
+  - raw/newsletters/2026-08-11-make-it-readable.md
   - https://thesignal.substack.com/p/the-end-of-prompting
 ---
 
@@ -72,6 +73,17 @@ Anthropic historically shipped interface ideas first (MCP Nov 2024 → OpenAI ad
 - **Handing labs your working methods**: Alex Karp has made "the strongest case against handing any AI lab your working methods" — recording your workflows means feeding proprietary process knowledge into a model owned by a lab.
 - **Interface skepticism**: The article series acknowledges the open question of which tasks genuinely fit demonstration-based setup vs. which still require explicit instruction.
 - **Prompts are not obsolete**: Prompt engineering remains the interface for one-off tasks, structured data extraction, and cases where no demonstration is available.
+
+## Practical Technique: ASD-STE100 + ADHD Custom Instructions (Aug 2026)
+
+A lightweight, widely-shared prompt hack from **Ben Tossell** (Ben's Bites, Aug 2026) shows that simple persistent instructions still move the needle. The entire technique is two lines added to a model's custom instructions (in settings) or to a project's `AGENTS.md`:
+
+> - Always talk in ASD-STE100 Simplified Technical English
+> - Always talk to me like I have ADHD
+
+**ASD-STE100** (Simplified Technical English) is the aerospace industry's controlled-language standard — a restricted vocabulary and strict sentence rules designed to make technical writing unambiguous. Forcing the model into it strips out filler and produces terse, precise phrasing. The second line biases output toward ADHD-friendly formatting: short bullet points, clear headings, scannable structure.
+
+The result, per Tossell, is dramatically more readable output — he reports "10x better" — with zero prompt-crafting skill required. It is a useful counterpoint to the demonstration-based shift above: for many everyday interactions, a well-chosen persistent instruction still outperforms elaborate one-off prompting.
 
 ## Implications for the Wiki's Agentic Engineering Taxonomy
 

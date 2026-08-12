@@ -1,11 +1,12 @@
 ---
 title: Unitree Robotics
 created: 2026-04-26
-updated: 2026-04-26
+updated: 2026-08-12
 type: entity
 tags: [company, product]
 sources: []
   - "raw/newsletters/2026-06-08-china-s-unitree-will-dominate-global-robotics.md"
+  - "raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md"
 related:
   - entities/china-ai-industry
   - entities/dji
@@ -41,6 +42,15 @@ Core conviction: humanoid robots only matter at scale if affordable at scale. Ag
 - **10,000 sqm factory** opened in Hangzhou (2025)
 - Listed on **Amazon** for direct-to-consumer global sales
 - **2026 Spring Festival Gala**: Unitree humanoid robots performed martial arts routines (sword forms, nunchaku, 3-meter aerial flips, drunken boxing) — broadcast to ~600 million viewers, serving as an implicit product launch
+
+## IPO (STAR Market, August 2026)
+
+- **Pricing**: Priced its STAR Market IPO on **August 6, 2026** at **150.80 yuan/share**, selling **40.45 million shares** (10% of post-offering capital)
+- **Raise**: ~**6.1 billion yuan** (~$904 million) at a valuation near **61 billion yuan** (~$9 billion)
+- **Timeline**: Subscriptions opened **August 10**, close **August 12, 2026**
+- **Profitability**: Unitree is profitable — almost unique among humanoid robot makers. 2025 revenue **1.699 billion yuan** (~$238M) at a **60.13%** gross margin
+- **Milestones**: 5,500+ humanoids shipped (world's most); first humanoid company to be profitable and the first to IPO
+- Makes Unitree the flagship public-market play on [[entities/china-ai-industry]]'s robotics ecosystem
 
 ## Technology
 

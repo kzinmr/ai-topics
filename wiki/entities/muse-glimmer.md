@@ -2,7 +2,7 @@
 title: Muse Glimmer
 type: entity
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-08-12
 tags:
   - model
   - ai-agents
@@ -18,6 +18,7 @@ aliases:
   - Muse Glimmer 30B
 sources:
   - raw/articles/2026-08-10_research-meta-ai_introducing-muse-glimmer.md
+  - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
 ---
 
 # Muse Glimmer
@@ -52,6 +53,31 @@ Evaluated under Meta's Advanced AI Scaling Framework for open-weight release.
 ## Performance
 
 Competes with Gemma4-31B and Qwen3.6-27B, performing strongly for its size class across agentic, coding, multimodal, safety, and reasoning benchmarks. Detailed evaluation methodology available at `/static/muse-glimmer-methodology`.
+
+## Openness & Benchmarks (Aug 2026)
+
+Coverage from [Superintel+ (2026-08-11)](https://getsuperintel.com) highlights Muse Glimmer's headline benchmark results, Meta's jump on the Artificial Analysis Openness Index, and the Apache 2.0 license shift.
+
+### Benchmarks
+
+| Benchmark | Muse Glimmer 30B | Comparison 1 | Comparison 2 |
+|-----------|------------------|--------------|--------------|
+| MCP Atlas | 75.5 | 54.2 | 62.5 |
+| SWE-Bench Pro | 51.2 | 36.9 | 50.2 |
+
+### Openness Index
+
+Meta jumped from **5.0 to 8.0** on the [Artificial Analysis Openness Index](https://artificialanalysis.ai) with the Muse Glimmer release.
+
+### Apache 2.0 License Transition
+
+Muse Glimmer is downloadable today as a 30B model under **Apache 2.0**, running on a single consumer GPU when quantized under 20GB. The release marks a deliberate transition from Meta's previous **Llama Community License**, dropping:
+
+- **700M MAU cap** — no monthly-active-user ceiling
+- **"Built with Llama" attribution** — no mandatory branding requirement
+- **EU feature exclusion** — feature parity restored for EU users
+
+This makes Apache 2.0 Meta's most permissive license ever on its best local model.
 
 ## Local Deployment
 

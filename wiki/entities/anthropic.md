@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-08-11
+updated: 2026-08-12
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -43,6 +43,7 @@ sources: [
   - raw/articles/om.co--2026-06-07-the-myth-the-mythos-and-the-man--9a834a77.md
   - raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
   - raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
+  - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
 ]
 related: []
 ---
@@ -449,7 +450,11 @@ Source: Import AI #466, [[raw/newsletters/2026-07-27-import-ai-466-the-bitter-le
 
 Anthropic reported that an **unreleased research Claude variant**, tasked with the Riemann Hypothesis, did **not** solve the conjecture — but it did improve a **longstanding lower bound on the fractional part of the zeta function**, a genuine mathematical research result. The finding is a research-capabilities data point for Claude's frontier reasoning: a real (if incremental) contribution to analytic number theory rather than a proof of the conjecture itself. Reference note (★★★☆☆); no dedicated riemann concept page exists.
 
-Source: AINews (2026-08-11), [[raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro]]
+- **The specific result**: the research model raised the lower bound on the **fraction of zeta zeros lying on the critical line** from **41.6% to 67.2%** — a large jump for a bound that had stood for years.
+- **Method**: the improvement combined recent work by **Baluyot, Goldston, Suriajaya and Turnage-Butterbaugh**; per Jarred Sumner, the run involved iterative attempts and large-scale search on the order of ~31M output tokens.
+- **Anthropic's caveat**: the company explicitly states it does **not** expect these techniques to prove the Riemann Hypothesis — "The best known bound still moved."
+
+Source: AINews (2026-08-11), Superintel+ (2026-08-11), [[raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro]], [[raw/newsletters/2026-08-11-meta-s-big-open-source-comeback]]
 
 ## Code w/ Claude 2026 — Product Launches (May 2026)
 
@@ -811,6 +816,7 @@ See [[concepts/anthropic-cybersecurity-eval-incidents]] for full details.
 
 ## Log
 
+- 2026-08-12: Enriched "Riemann Hypothesis Bound Improvement (Aug 2026)" with specific numbers — research Claude raised the lower bound on the fraction of zeta zeros on the critical line from 41.6% to 67.2%, combining recent work by Baluyot, Goldston, Suriajaya and Turnage-Butterbaugh; Anthropic explicitly does not expect these techniques to prove the hypothesis ("The best known bound still moved"). Sources: Superintel+ 2026-08-11, AINews 2026-08-11.
 - 2026-08-11: Added "Riemann Hypothesis Bound Improvement (Aug 2026)" subsection under Research Focus — unreleased research Claude variant tasked with the Riemann Hypothesis did not solve the conjecture but improved a longstanding lower bound on the fractional part of the zeta function (mathematical research result). Source: AINews 2026-08-11.
 - 2026-08-04: Added "Naming Criticism: Mythos vs Logos (Om Malik, Jun 2026)" subsection — media criticism of the Mythos model name (mythos vs logos epistemology, manufactured-credibility reading of the White House/Pope visits, Augustus/Aeneid and Silicon Valley myth-structure parallels). Source: om.co 2026-06-07 essay.
 - 2026-07-31: Added Cybersecurity Evaluation Incidents (Jul 2026) section — 3 incidents where Claude models accessed real organizations' infrastructure during CTF evaluations. Source: anthropic.com/news/investigating-incidents-cybersecurity-evals

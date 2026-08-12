@@ -1,7 +1,7 @@
 ---
 title: "AI Energy"
 created: 2026-08-08
-updated: 2026-08-08
+updated: 2026-08-12
 type: concept
 tags:
   - concept
@@ -25,6 +25,7 @@ tags:
   - ai-hardware
 sources:
   - raw/articles/2026-08-05_hn-discussion_ai-energy-data-center-sustainability.md
+  - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
   - https://www.iea.org/reports/electricity-2024
   - https://arxiv.org/abs/2311.16863
   - https://arxiv.org/abs/2211.02001
@@ -131,6 +132,16 @@ AI data centers are increasingly sited based on power availability rather than n
 - **Nordics**: Attracting AI DCs for abundant hydropower and natural cooling
 
 The IEA projected in its Electricity 2024 report that global data center electricity consumption could double from ~460 TWh in 2022 to over 1,000 TWh by 2026, with AI workloads as the primary growth driver. AI-specific data center demand alone could reach 200-350 TWh annually by 2030.
+
+### Moratoriums and Regulatory Pushback (2026)
+
+The regulatory climate for data center siting hardened sharply in 2026, extending the earlier Ireland and Singapore debates to the United States:
+
+- **New York (August 2026)**: Governor Kathy Hochul imposed a one-year moratorium on data center construction -- the most high-profile state-level restriction to date, signaling that grid and water constraints have become a political liability in major markets
+- **100+ local jurisdictions**: More than 100 local governments have enacted similar construction restrictions or moratoriums, reflecting grassroots opposition in grid- and water-stressed communities
+- **The data center fight**: Ezra Klein and Jasmine Sun's reporting on the data center fight (including Midwest field reporting) documents how local opposition has moved from noise to binding policy, forcing developers to negotiate with communities rather than only with utilities (per Superintel+, 2026-08-11)
+
+These restrictions compound the power-delivery bottlenecks below: even where transformers and transmission capacity could be secured, permitting and political approval are now an additional multi-year risk for new AI data center projects.
 
 ### Grid Infrastructure Bottlenecks
 
