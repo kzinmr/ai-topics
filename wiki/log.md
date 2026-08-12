@@ -1,3 +1,14 @@
+## [2026-08-12] raw-backlog-ingest (18:00) | duplicate batch — no wiki changes
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-12 18:00, run 20260812T180048Z) re-selected the **exact same 5 articles** processed by the 14:00 run (same filenames + content hashes, commit b7ed5db7).
+- **No wiki changes** — all 5 articles already processed; verified:
+  - dwarkesh.com--p-ryan-greenblatt (RSI debate) — covered in entities/ryan-greenblatt.md + entities/dwarkesh-patel.md + entities/redwood-research.md + concepts/recursive-self-improvement.md (RSI Debate section, median 2031) via blog-wiki-ingest recovery (commit 5fd460f3).
+  - wheresyoured.at--dont-look-up — covered in entities/ed-zitron.md "Don't Look Up (August 12, 2026)" section (L795) with raw source linked (commit b7ed5db7).
+  - paulgraham.com--hp-html, paulgraham.com--nerds-html, paulgraham.com--startupmistakes-html — classic essays covered in entities/paulgraham-com.md "Classic Essays (2003-2006)" section + sources + References (commit e1cff6b5).
+- index.md untouched (no new pages); no archive step needed (articles already archived).
+
+---
+
 ## [2026-08-12] watchdog | auto-fix index header count (Entities 896 -> 897)
 
 ### Changes
