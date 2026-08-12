@@ -1,3 +1,13 @@
+## [2026-08-12] watchdog | auto-fix index header count (Entities 896 -> 897)
+
+### Changes
+- Recomputed `## Entities (N pages)` header from actual section entries (897) in wiki/index.md.
+- Verified: 0 pipe/line-number/triple-bracket corruption in index.md; validate_index.py clean (2951 lines).
+- Graph analysis (2026-08-07, weekly) claims verified against filesystem: all 10 top orphans exist; tim-sherratt is a redirect page (intentionally not indexed).
+- No pipeline watchdog alerts. log.md clean (0 orphan ### timestamps).
+
+---
+
 ## [2026-08-12] X Article ingestion: Jesse Zhang "To FDE, or not to FDE?"
 
 - **New**: `entities/jesse-zhang.md` — Co-founder & CEO of Decagon AI; product-driven critique of FDE-heavy deployment model; Palantir lineage through cofounder Ashwin Sreenivas
