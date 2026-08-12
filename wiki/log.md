@@ -1,6 +1,10 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-12] blog-wiki-ingest (recovery) | Completed missing Simon Willison reference
+- **Recovery**: blog-triage output JSON parse failed; recovered from `triage_latest.json` (20260812T101753Z, 20 decisions). Verified prior run commit 5fd460f3 already executed the take (ryan-greenblatt.md + redwood-research.md created; recursive-self-improvement.md, dwarkesh-patel.md, index.md updated) and f1b3d539 committed raw articles + archive. The sole remaining gap was the blog-8 reference.
+- **Updated**: `entities/simon-willison.md` — Added "There are no lossless transformations of natural-language text" (Aug 11, 2026) to August 2026 Updates: Sophie Alpert's AI-writing policy ("You must stand behind every idea and every sentence in your docs"), no-lossless-transformations thesis, extends agentic-engineering philosophy from code to prose; frontmatter sources updated.
+- Source: raw/articles/simonwillison.net--2026-aug-11-there-are-no-lossless-transformations-of-natural--3fc5b143.md
 ## [2026-08-12] blog-triage | Dwarkesh × Greenblatt RSI debate + 1 new entity skeleton
 - **Triage**: 20 blog articles scanned (2026-08-12). AI-relevant: Dwarkesh × Greenblatt RSI debate (★★★★★), Reasoning trace extraction (already covered today), Pluralistic model collapse (cultural lens, skip). Non-AI: Edinburgh Fringe reviews, gadget reviews, Microsoft security roundup, cryptography/statistics, tech commentary.
 - **Updated**: `entities/dwarkesh-patel.md` — Added Ryan Greenblatt RSI debate to timeline (Aug 2026), Blog Posts section, Sources, and Related. Added Jul 2026 compute pricing entry to timeline.
