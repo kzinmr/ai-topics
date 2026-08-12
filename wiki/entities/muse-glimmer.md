@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-08-10_research-meta-ai_introducing-muse-glimmer.md
   - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
   - raw/articles/2026-08-12_fireworks-ai_meta-muse-glimmer.md
+  - raw/articles/2026-08-11_rasbt_meta-muse-glimmer-gemma-like.md
 ---
 
 # Muse Glimmer
@@ -148,6 +149,10 @@ Ships with a lightweight drafter model based on [DFlash](https://arxiv.org/abs/2
 - [HuggingFace: meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Developer Documentation](https://dev.meta.ai/docs)
 - [Meta AI Developer Center](https://developer.meta.com/ai/models/muse-glimmer/)
+
+## Community Reception
+
+[Sebastian Raschka](https://x.com/rasbt/status/2087180773497421926) (Aug 11, 2026) framed the release as Meta's **first open-weight model "since the good old Llama days"**, describing Muse Glimmer as a **30B multimodal reasoning model with a Gemma-like architecture design** — noting the grouped-query attention, sliding-window attention, and SwiGLU layers mirror Google's [[entities/gemma-4|Gemma]] family. He also observed that "Glimmer" is likely a wordplay on "Spark," the [[entities/muse-spark|Muse Spark]] teacher model it is distilled from.
 
 ## Related
 

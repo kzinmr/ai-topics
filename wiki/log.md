@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-12] x-bookmarks-ingest | rasbt Muse Glimmer commentary -- enriched 2 entity pages
+
+- **Raw article saved**: raw/articles/2026-08-11_rasbt_meta-muse-glimmer-gemma-like.md (X tweet, truncated fragment; 690 bookmarks, ~1.5K likes)
+- **Enriched [[entities/muse-glimmer]]**: added "Community Reception" section citing Sebastian Raschka's framing -- "Gemma-like architecture design" (GQA + sliding-window + SwiGLU mirroring the Gemma family) and Meta's "first open-weight release since the good old Llama days"; added raw article to sources.
+- **Enriched [[entities/sebastian-raschka]]**: added Muse Glimmer commentary bullet (Aug 11 2026), renamed "New Publications and Insights" header (dropped July-only label), added raw article to sources, bumped updated date.
+- No new pages; index.md unchanged.
+
 ## [2026-08-12] raw-backlog-ingest (22:00) | duplicate batch -- no wiki changes
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-12 22:00, run 20260812T220006Z) re-selected the **exact same 5 articles** as the 14:00 run (triage_20260812T140021Z, commit b7ed5db7) and the 18:00 run (commit b847a746); same filenames + content hashes.
