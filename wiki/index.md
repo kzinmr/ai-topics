@@ -625,7 +625,7 @@
 - [[entities/openrouter]] — OpenRouter
 - [[entities/overreacted-io]] — Dan Abramov
 - [[entities/palantir]] — Palantir Technologies
-- [[entities/palo-alto-networks]] — Palo Alto Networks
+- [[entities/palo-alto-networks]] — Palo Alto Networks — Global cybersecurity leader; Prisma AIRS AI Security Platform; Portkey acquisition (Apr 2026) establishes AI Gateway control plane for agents
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc.
 - [[entities/parchi]] — Parchi
 - [[entities/parsagon]] — Parsagon

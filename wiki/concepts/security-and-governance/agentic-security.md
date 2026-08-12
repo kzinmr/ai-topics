@@ -4,13 +4,13 @@ type: concept
 status: incomplete
 description: "Agentic security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and the agent-to-API communication layer."
 created: 2026-04-27
-updated: 2026-05-22
+updated: 2026-08-12
 tags:
-sources: []
   - concept
   - security
   - ai-agents
   - mcp
+sources: []
 aliases: [AI agent security, MCP security, agent stack security]
 ---
 
@@ -114,6 +114,7 @@ This is particularly relevant for agentic security because **agents routinely pe
 | **Invariant Labs** | Tool Poisoning Attacks research |
 | **Akto** | Full-stack agentic AI security platform |
 | **Prompt Security** | Agent monitoring and guardrails |
+| **Palo Alto Networks** | Prisma AIRS AI Security Platform: AI Gateway (via [[entities/portkey|Portkey]] acquisition), Agent Security, AI Red Teaming, AI Runtime Security; Unit 42 agent-threat research (e.g., Vertex AI agent weaponization, Apr 2026) |
 
 ## Related Concepts
 

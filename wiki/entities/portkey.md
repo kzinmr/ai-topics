@@ -1,7 +1,7 @@
 ---
 title: Portkey
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-08-12
 type: entity
 tags:
   - security
@@ -43,4 +43,4 @@ Palo Alto Networks' acquisition of Portkey signals that AI agent security is mat
 - Part of the [[concepts/security-and-governance/agentic-security|Agentic Security]] ecosystem
 - Addresses the visibility gap in [[concepts/shadow-ai-governance|Shadow AI Governance]]
 - Complements [[concepts/zero-trust-agentic-ai|Zero Trust Agentic AI]] architectures
-- Will integrate with Palo Alto Networks' broader security platform
+- Post-close, becomes the **AI Gateway for Prisma AIRS** ([[entities/palo-alto-networks|Palo Alto Networks]]' AI Runtime Security platform) — the "central nervous system" monitoring, routing, and securing every AI transaction, with AI Identity Security enforcing least-privilege controls per agent interaction

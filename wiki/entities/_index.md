@@ -213,6 +213,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[entities/openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the landmark State of AI 2025 study with a16z analyzing 100T tokens of real-world LLM usage.
 - [[entities/openclaw]] — Open-source always-on AI assistant framework created by Peter Steinberger (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate with me
 - [[entities/overreacted-io]] — Dan Abramov is a core contributor to React and a prominent voice in the frontend development community. He co-created Redux and Create React App, and has worked at Meta on the React team. His blog ove
+- [[entities/palo-alto-networks]] — Global cybersecurity leader (NASDAQ: PANW, founded 2005). Prisma AIRS AI Security Platform; April 2026 Portkey acquisition establishes the AI Gateway as security-native control plane for autonomous agents; $200B market cap (May 2026).
 - [[entities/parchi]] — Parchi — AI-powered browser copilot (open-source Chrome/Firefox extension). Chat-driven browser automation. BYOK or credits. MIT license. Created by 0xSero.
 
 - [[entities/paulgraham-com]] — Paul Graham is a programmer, essayist, and venture capitalist. Co-founder of Y Combinator (2005), the startup accelerator that has funded over 4,000 companies including Airbnb, Stripe, Dropbox, and Re

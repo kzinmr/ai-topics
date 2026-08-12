@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-12] skeleton-enrich-daily | L2→L3 Palo Alto Networks (Portkey/AI Gateway, Prisma AIRS) + 3 cross-refs
+
+- **Enriched [[entities/palo-alto-networks]] L2→L3** (24→157 lines, 1KB→8.4KB): company overview (founded 2005 by Nir Zuk & Rajiv Batra, $9.22B FY2025 revenue, $200B market cap May 2026), Prisma AIRS AI Security product portfolio table (AI Gateway, AI Model Security, AI Red Teaming, AI Runtime Security, Agent Security, AI-SPM; Strata/Prisma SASE/Cortex/Prisma Cloud/Idira identity), Portkey acquisition deep-dive (announced Apr 30 2026, close Q4 FY2026; Portkey becomes AI Gateway for Prisma AIRS — "central nervous system" monitoring/routing/securing every AI transaction; quotes from Lee Klarich & Rohit Agarwal), AI-era acquisitions table (Protect AI $500M, CyberArk $25B, Chronosphere $3.35B, Koi ~$400M, Portkey), Unit 42 threat intel + Vertex AI agent weaponization research (Apr 2026) + China review (Aug 2026).
+- **Cross-refs (hidden connection pattern)**: [[concepts/security-and-governance/agent-control-plane]] now lists PAN in Background + new "Palo Alto Networks / Portkey (AI Gateway)" Industry Direction subsection (security-native vs ServiceNow/Workday orchestration angle); [[concepts/security-and-governance/agentic-security]] Industry Response table + PAN row (also fixed pre-existing malformed frontmatter tags/sources); [[entities/portkey]] Connections updated to AI Gateway for Prisma AIRS role + updated dates.
+- **Indexes**: wiki/index.md + entities/_index.md descriptions updated.
+- **Sources**: Wikipedia (scraped 2026-08-12), PAN press release Apr 30 2026, raw/articles/2026-05-05_ai-agent-news-weekly-apr28-may4.md.
+
 
 ## [2026-08-12] dreaming wiki-ingest | 2 references enriched (Fireworks x Muse Glimmer, Factory x DGX Spark)
 

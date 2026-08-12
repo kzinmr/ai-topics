@@ -2,7 +2,7 @@
 title: "Agent Control Plane"
 type: concept
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-08-12
 tags:
   - ai-agents
   - control-plane
@@ -30,7 +30,7 @@ related:
 
 ## Background
 
-In the structural shift from [[concepts/saas-agent-era|SaaS to the Agent Era]], enterprises increasingly need to manage AI Agents just like human employees. Major platforms including [[entities/palantir|Palantir]], [[entities/workday|Workday]], [[entities/servicenow|ServiceNow]], and Google are building agent control infrastructure because **as agent count grows, the risk of unmanaged operation grows exponentially**. Deloitte predicts "control centers" and agent marketplaces will become critical by 2026.
+In the structural shift from [[concepts/saas-agent-era|SaaS to the Agent Era]], enterprises increasingly need to manage AI Agents just like human employees. Major platforms including [[entities/palantir|Palantir]], [[entities/workday|Workday]], [[entities/servicenow|ServiceNow]], [[entities/palo-alto-networks|Palo Alto Networks]], and Google are building agent control infrastructure because **as agent count grows, the risk of unmanaged operation grows exponentially**. Deloitte predicts "control centers" and agent marketplaces will become critical by 2026.
 
 ## Core Components
 
@@ -59,6 +59,9 @@ Google offers a platform centered on Agent Identity, Agent Registry, Agent Gatew
 
 ### ServiceNow
 Positioning its platform as the "control tower" for agents, coordinating multiple agents cross-departmentally via **Agent Orchestrator**.
+
+### Palo Alto Networks / Portkey (AI Gateway)
+Through its April 2026 acquisition of [[entities/portkey|Portkey]] (closing Q4 FY2026), [[entities/palo-alto-networks|Palo Alto Networks]] establishes the **AI Gateway for Prisma AIRS** as the security-native control plane for agent fleets: monitoring, routing, and securing every AI transaction, with AI Identity Security enforcing least-privilege controls per agent interaction. Where ServiceNow and Workday approach the control plane from orchestration and HR-system-of-record angles, PAN approaches it from the security angle — gateway inspection, runtime policy, and identity for agents as "highly privileged insiders."
 
 ### Workday Agent System of Record
 Registers, manages, and measures AI Agents like human employees, providing **lifecycle management** from onboarding to retirement within the same framework as HR systems.
