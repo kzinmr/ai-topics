@@ -5169,3 +5169,6 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Update: [[wiki/index]]** — Added Muse Glimmer entry. Bumped entity count 886→887.
 - **Create: [[entities/qwen-mm-plugins]]** — Open-source multimodal plugin system (skills + MCP servers) for AI agent harnesses from Alibaba's Qwen team; 6 capabilities (core, video-memory, video-edit, blender, freecad, edu-agent); supports Claude Code, Codex, Qoder, OpenClaw, Qwen Code, Gemini CLI; 572 GitHub stars, Apache-2.0. Source: raw/articles/2026-07-29_qwen_qwen-mm-plugins.md.
 - **Update: [[entities/_index]]** — Added qwen-mm-plugins entry. Bumped entity count 887→888.
+- **Create: raw/articles/2026-08-12_addyosmani_agentic-code-quality.md** — Raw article of Addy Osmani's X Article "Agentic Code Quality" (1067 bookmarks, 584 likes). Quality gates, constraints, and back-pressure as the foundation of agent code quality.
+- **Update: [[entities/addy-osmani]]** — Added "Agentic Code Quality" to Key Publications table and Sources section.
+- **Update: [[concepts/coding-agents/ai-code-quality]]** — Added Osmani's "Agentic Code Quality" as a source reference; updated date.

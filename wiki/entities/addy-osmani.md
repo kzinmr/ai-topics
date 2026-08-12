@@ -147,6 +147,7 @@ Key contributions from this article:
 | 2026 Agentic Coding Trends Guide | 2026 | addyosmani.com |
 | From Prompting Agents to Loop Engineering (cited) | Jun 2026 | DAIR.AI Academy |
 | Loop Engineering (Orange Book v260615) | Jun 2026 | huasheng.ai/orange-books |
+| Agentic Code Quality | Aug 2026 | X Article |
 
 ## Speaking
 
@@ -207,3 +208,4 @@ This framing positions Osmani in the "human outer loop" camp, alongside Geoffrey
 - [O'Reilly CodeCon 2026 Talk Slides](https://talks.addy.ie/oreilly-codecon-march-2026/) (Mar 2026)
 - [Addy Osmani's Blog](https://addyosmani.com/)
 - [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]] — Elvis Saravia (DAIR.AI), "From Prompting Agents to Loop Engineering" (Jun 19, 2026). References Osmani on AI-assisted coding loops.
+- [[raw/articles/2026-08-12_addyosmani_agentic-code-quality]] — "Agentic Code Quality" (Aug 12, 2026). X Article on quality gates, constraints, and back-pressure as the foundation of agentic code quality.

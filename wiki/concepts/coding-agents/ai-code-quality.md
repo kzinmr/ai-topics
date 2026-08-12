@@ -2,7 +2,7 @@
 title: "AI Code Quality"
 type: concept
 created: 2026-04-25
-updated: 2026-05-26
+updated: 2026-08-12
 tags:
   - concept
   - coding-agents
@@ -13,6 +13,7 @@ tags:
 sources:
   - raw/articles/2026-05-25_nolanlawson_using-ai-to-write-better-code-slowly.md
   - https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/
+  - raw/articles/2026-08-12_addyosmani_agentic-code-quality.md
 ---
 
 # AI Code Quality
@@ -52,3 +53,4 @@ The debate is not about whether AI can produce quality code, but about **incenti
 - [[concepts/ai-coding|AI Coding]] — Broader AI-assisted programming landscape
 - [[concepts/vibe-coding]] — The low-quality / high-velocity approach
 - [[concepts/agentic-engineering]] — How developers structure AI-assisted workflows
+- [[entities/addy-osmani]] — "Agentic Code Quality" (Aug 2026): quality gates, constraints, and back-pressure as the foundation of agentic code quality
