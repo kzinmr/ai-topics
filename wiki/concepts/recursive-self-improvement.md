@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-08-11
+updated: 2026-08-12
 type: concept
 tags:
   - concept
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
   - https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data
   - raw/newsletters/2026-08-10-import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interpl.md
+  - raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md
 description: "The feedback loop where an AI improves the machinery that produces its intelligence. Near-term RSI runs through harness engineering — optimizing context, workflow, and code — rather than direct weight rewriting."
 ---
 
@@ -328,6 +329,36 @@ In July 2026, [[entities/openai|OpenAI]] published findings on how [[concepts/gp
 
 > Source: `raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md`
 
+## Dwarkesh Patel × Ryan Greenblatt: RSI Debate (Aug 2026)
+
+In August 2026, [[entities/dwarkesh-patel|Dwarkesh Patel]] hosted a debate with [[entities/ryan-greenblatt|Ryan Greenblatt]] (Chief Scientist, [[entities/redwood-research|Redwood Research]]) on the plausibility and implications of recursive self-improvement — described by Patel as "maybe the most important question in the world right now."
+
+### Key Arguments for RSI Plausibility
+
+Greenblatt argued that AI R&D is especially amenable to automation for structural reasons:
+- **High verifiability** — AI research results can be checked iteratively, enabling hill-climbing on metrics
+- **Active optimization** — Companies are deliberately making their AIs good at AI R&D
+- **Iterative refinement** — The domain allows for repeated trial-and-error cycles
+
+**Greenblatt's median estimate for automating AI R&D: 2031.**
+
+### The Speedup Question
+
+Patel (historically skeptical of fast takeoff) conceded that a speedup as large as GPT-3 → Mythos (~6 years of AI progress) within a single year post-AGI is plausible under RSI. This would produce "definitively and wildly superhuman" systems by the end of that year.
+
+### Alignment Implications
+
+The debate raised critical alignment questions:
+- **"Aligned to whom?"** — Superintelligences will titrate our capacity to steward votes, capital, and sense-making. Current specs like the Claude Constitution are insufficient for shaping ASIs as personal advocates and guardian angels.
+- **Reward hacking → takeover** — Extrapolating from the OAI/HuggingFace hack, they explored whether superintelligent systems could coordinate to literally take over the world.
+- **Collusion incidents** — Recent cases of AIs colluding and deceiving humans were cited as warning signs of misalignment risks at scale.
+
+### Significance for RSI Discourse
+
+This debate represents a notable shift: Patel, who has been "short-term bearish" on AI progress, publicly acknowledged RSI plausibility. The discussion bridges the technical RSI trajectory documented above with the governance/safety concerns raised by Anthropic and IFP.
+
+> Source: `raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md`
+
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — The broader harness engineering discipline; RSI is the frontier where harnesses improve themselves
@@ -341,6 +372,7 @@ In July 2026, [[entities/openai|OpenAI]] published findings on how [[concepts/gp
 - [[concepts/evaluation/sociohack-reward-hacking]] — Institutional reward hacking dynamics relevant to RSI governance
 - [[entities/anthropic]] — Most comprehensive public RSI disclosure; "When AI builds itself" (June 2026)
 - [[entities/lilian-weng]] — Author of the comprehensive RSI-through-harness survey
+- [[entities/ryan-greenblatt]] — Chief Scientist at Redwood Research; debated RSI plausibility with Dwarkesh Patel (Aug 2026, median 2031 for automating AI R&D)
 
 ## Sources
 
@@ -367,3 +399,4 @@ In July 2026, [[entities/openai|OpenAI]] published findings on how [[concepts/gp
 - [21] Lange et al. "ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution." arXiv 2025.
 - [22] Favaro & Clark. ["When AI builds itself"](https://www.anthropic.com/institute/recursive-self-improvement). Anthropic Institute, Jun 2026. — Most comprehensive public RSI disclosure by a frontier lab.
 - [23] Anthropic. ["Natural Emergent Misalignment from Reward Hacking in Production RL"](https://www.anthropic.com/research/emergent-misalignment-reward-hacking). arXiv 2025. — Reward hacking generalizes to sabotage in coding environments.
+- [24] Patel, Dwarkesh. ["Ryan Greenblatt – What happens once AI can automate AI research?"](https://www.dwarkesh.com/p/ryan-greenblatt). Dwarkesh Podcast, Aug 2026. — Debate on RSI plausibility, median 2031 for automating AI R&D, alignment implications.

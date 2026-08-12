@@ -1,6 +1,14 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-12] blog-triage | Dwarkesh × Greenblatt RSI debate + 1 new entity skeleton
+- **Triage**: 20 blog articles scanned (2026-08-12). AI-relevant: Dwarkesh × Greenblatt RSI debate (★★★★★), Reasoning trace extraction (already covered today), Pluralistic model collapse (cultural lens, skip). Non-AI: Edinburgh Fringe reviews, gadget reviews, Microsoft security roundup, cryptography/statistics, tech commentary.
+- **Updated**: `entities/dwarkesh-patel.md` — Added Ryan Greenblatt RSI debate to timeline (Aug 2026), Blog Posts section, Sources, and Related. Added Jul 2026 compute pricing entry to timeline.
+- **New**: `entities/ryan-greenblatt.md` — Chief Scientist at Redwood Research; RSI debate with Dwarkesh Patel (median 2031 for automating AI R&D), alignment implications, reward hacking → takeover extrapolation.
+- **New**: `entities/redwood-research.md` — AI safety research organization; technical safety, RSI, reward hacking.
+- **Updated**: `concepts/recursive-self-improvement.md` — Added "Dwarkesh Patel × Ryan Greenblatt: RSI Debate (Aug 2026)" section with key arguments, speedup question, alignment implications, and significance for RSI discourse. Added source [24].
+- **Updated**: `index.md` — Added Ryan Greenblatt and Redwood Research entity entries; updated Dwarkesh Patel description.
+- Source: raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md
 ## [2026-08-12] raw-backlog-ingest (10:00) | 5 articles enriched existing entity pages
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-12 10:00, run 20260812T100039Z). Takes=0 (no new pages - all 5 map to existing rich entity pages), References=5.
 - **Updated: [[entities/paulgraham-com]]** - Added "Classic Essays (2003-2006)" section: "Hackers and Painters" (maker identity, computer science as grab bag, AI-era craft debate), "Why Nerds are Unpopular" (nerd identity), "The 18 Mistakes That Kill Startups" (single root cause + 18 failure modes); Recent Themes table extended with 2003/2006 rows; sources updated.

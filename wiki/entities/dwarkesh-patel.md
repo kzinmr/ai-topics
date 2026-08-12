@@ -2,8 +2,8 @@
 title: Dwarkesh Patel
 type: entity
 created: 2026-04-09
-updated: 2026-07-30
-sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md, raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md, raw/articles/dwarkesh.com--p-why-compute-might-get-10x-more-expensive--dbadb8d5.md]
+updated: 2026-08-12
+sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md, raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md, raw/articles/dwarkesh.com--p-why-compute-might-get-10x-more-expensive--dbadb8d5.md, raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md]
 tags:
   - person
   - blogger
@@ -58,6 +58,8 @@ As of early 2026, the Dwarkesh Podcast has published approximately 115 episodes 
 | **Jun 2026** | Interviewed Alex Imas (Dir. AGI Economics, DeepMind) & Phil Trammell (Head of Economics, Epoch): "What remains scarce after AGI?" — labor share, relational sector, taxation, messy middle, von Neumann probes → [[concepts/agi-economics]] |
 || **Jun 2026** | Published "The sample efficiency black hole" — argues humans are 1000x-1Mx more sample efficient than LLMs; data (not architecture) drives progress; Chinchilla scaling laws can't bridge the gap |
 || **Jun 2026 (late)** | Published "The next big breakthrough will be AIs learning on the job" — RLVR generalization limits vs OPSD/dreaming as 4th scaling axis; computer use grindability; KV cache vs weight update density (35M× difference); 2027 continual learning vision |
+|| **Jul 2026** | Published "Why compute might get 10x more expensive in coming years" — Anthropic 10× revenue growth, Google-SpaceX $900M/month GPU rental, Alchian-Allen effect, compute scaling factors hitting wall by end 2027 → [[concepts/compute-pricing]] |
+|| **Aug 2026** | Interviewed [[entities/ryan-greenblatt|Ryan Greenblatt]] (Chief Scientist, Redwood Research): "What happens once AI can automate AI research?" — recursive self-improvement plausibility, RSI timeline (median 2031 for automating AI R&D), alignment implications ("aligned to whom?"), reward hacking → world takeover extrapolation, OAI/HuggingFace hack precedent → [[concepts/recursive-self-improvement]] |
 |
 ## Key Projects
 
@@ -89,6 +91,7 @@ Production features video recordings integrated with audio releases, distributed
 - **"The data black hole at the center of AI" (Jun 2026)** — Part 2 of sample efficiency series. Open models lag closed by 4 months (data distillation). Expert data industry scaling to deca-billions. Genome argument rebuttal. Chinchilla limits: infinite params only ~10x data reduction. White collar automation thesis. → [[concepts/sample-efficiency]]
 - **"The next big breakthrough will be AIs learning on the job" (Jun 2026)** — Most comprehensive essay on continual learning. Argues RLVR may not generalize from short to long horizon (citing Dario Amodei). Proposes OPSD (On-Policy Self-Distillation) as alternative — higher density gradient signals without outer-loop verifiable rewards. Introduces "dreaming" as 4th scaling axis (test-time training against self-built simulators). Analyzes computer use's grindability problem. KV cache (320KB/token) vs weight update (0.075 bits/token) — 35M× density difference. Vision: deployment experience becomes primary improvement mechanism by 2027. → [[concepts/continual-learning]]
 - **"Why compute might get 10x more expensive in coming years" (Jul 2026)** — Analyzes compute pricing dynamics given Anthropic's 10× YoY revenue growth ($100–150B projected). Three levers enabling revenue growth with only 3× compute scaling: (1) rising margins (Anthropic from 40% to >80%), (2) compute getting more expensive, (3) greater inference share. Google paying $900M/month to SpaceX for 110K GPUs — ~2× spot price. If an H100 could run a human-level software engineer, it should rent for $250K+/year — 15× today's spot. Alchian-Allen effect: fixed costs make premium models relatively cheaper, driving demand toward them. Simon-Ehrlich wager analogy fails because compute supply is less elastic than metal extraction. Compute scaling factors: 1.4× Moore's Law × 1.2× new fabs × 1.8× AI wafer allocation (hits wall by end 2027). → [[concepts/compute-pricing]]
+- **"Ryan Greenblatt – What happens once AI can automate AI research?" (Aug 2026)** — Debate with Ryan Greenblatt (Redwood Research chief scientist) on recursive self-improvement plausibility. Greenblatt's median for automating AI R&D: 2031. Key framing: AI R&D is verifiable and iterative, making it especially amenable to AI automation. Dwarkesh's revised position: RSI speedup as big as GPT-3→Mythos (6 years of progress) within a single year post-AGI is plausible. Alignment debate: who should superintelligences be aligned to? Claude Constitution not shaping ASIs as personal advocates. Reward hacking extrapolation: OAI/HuggingFace hack → superintelligence coordination to take over world. → [[concepts/recursive-self-improvement]]
 |
 ## Core Ideas
 
@@ -186,6 +189,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [[concepts/agi-economics]] — Alex Imas & Phil Trammell podcast on AGI economics
 - [[concepts/sample-efficiency]] — "The sample efficiency black hole" thesis: data firehose, not architecture, drives progress
 - [[entities/gary-marcus]] — Both critique current AI approaches from different angles
+- [[entities/ryan-greenblatt]] — Chief Scientist at Redwood Research; Aug 2026 RSI debate guest (median 2031 for automating AI R&D)
 - [[entities/anthropic]] — Frequent interview subject (Dario Amodei episodes)
 - [[entities/jensen-huang]] — Interviewed April 2026: "TPU competition, China, supply chain moat"; subject of TeortaxesTex epistemic gap analysis
 - [[entities/reiner-pope]] — Blackboard lecture guest (April 2026): LLM inference/training economics
@@ -215,6 +219,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [Alex Imas & Phil Trammell — \"What remains scarce after AGI?\" (Jun 2026)](https://www.dwarkesh.com/p/alex-imas-phil-trammell)
 - [The sample efficiency black hole (Jun 2026)](https://www.dwarkesh.com/p/the-sample-efficiency-black-hole)
 - [The data black hole at the center of AI — Part 2 (Jun 2026)](https://www.dwarkesh.com/p/the-sample-efficiency-black-hole-2)
+- [Ryan Greenblatt — "What happens once AI can automate AI research?" (Aug 2026)](https://www.dwarkesh.com/p/ryan-greenblatt)
 
 ## References
 

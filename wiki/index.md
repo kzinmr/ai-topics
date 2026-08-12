@@ -245,7 +245,7 @@
 - [[entities/drmaciver]] — David R. MacIver (DRMacIver)
 - [[entities/droid]] — Droid (Factory) — enterprise agent-native dev platform; Software Factory vision, Router, Shield 2.0, Deferred Context Engine (Aug 2026)
 - [[entities/dsprrr]] — dsprrr
-- [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with "The next big breakthrough" article — RLVR generalization limits, OPSD/dreaming as 4th scaling axis, computer use grindability, 35M× KV cache vs weight density gap (June 27)
+- [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with Ryan Greenblatt RSI debate (Aug 2026) — recursive self-improvement plausibility, median 2031 for automating AI R&D, alignment implications, reward hacking → takeover extrapolation
 - [[entities/dylan-patel]] — Dylan Patel
 - [[entities/dynomight-net]] — Dynomight
 - [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1); The AI Demand Bubble — Barclays/UBS/Wells Fargo analyst concentration data (Aug 4); Four Horsemen of the AIpocalypse — Anthropic uptime/Opus 4.7 regression, 15.2GW construction math, contracted-ARR fraud (Aug 8)
@@ -678,6 +678,7 @@
 - [[entities/randy-olson]] — Randy Olson — Co-Founder/CTO Goodeye Labs (Truesight), TPOT AutoML creator, r/DataIsBeautiful moderator; Tufte Test, Truesight MCP agent skills, generator-evaluator workflow, daily data-viz skill
 - [[entities/raw-works]] — Raymond Weitekamp (@raw_works)
 - [[entities/recursive-superintelligence]] — Recursive Superintelligence
+- [[entities/redwood-research]] — Redwood Research — AI safety research organization; technical AI safety, RSI, reward hacking, adversarial robustness (Aug 2026)
 - [[entities/reevo]] — Reevo
 - [[entities/refactoring-english]] — Technical blog and forthcoming book by Michael Lynch about effective writing for software developers — covering commi...
 - [[entities/reflection-ai]] — AI startup building open-weight models to counter Chinese AI. Pentagon defense partner. Backed by Nvidia and 1789 Cap...
@@ -702,6 +703,7 @@
 - [[entities/rowboat]] — Rowboat — open-source, local-first AI coworker desktop alternative to Claude Desktop
 - [[entities/ryan-carson]] — Ryan Carson
 - [[entities/ryan-dahl]] — Ryan Dahl
+- [[entities/ryan-greenblatt]] — Ryan Greenblatt — Chief Scientist at Redwood Research; AI safety researcher focused on RSI plausibility and reward hacking (Aug 2026)
 - [[entities/ryan-lopopolo]] — Ryan Lopopolo
 - [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo — Core Ideas & Philosophy
 - [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo — Timeline & Career
