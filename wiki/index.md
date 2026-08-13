@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (897 pages)
+## Entities (898 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -902,7 +902,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1972 pages)
+## Concepts (1977 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -922,6 +922,7 @@
 - [[concepts/agent-account-provisioning]] — Agent Account Provisioning
 - [[concepts/agent-approval-spoofing]] — Agent Approval Spoofing — Security vulnerability where AI coding assistants display incorrect file paths in approval dialogs
 - [[concepts/agent-communication-standards]] — Agent Communication Standards — ACP, A2A, BeeAI
+- [[concepts/agent-deployment-engineering]] — Agent Deployment Engineering (ADE) — Emerging role owning the technical build of production AI agents; introduced by Decagon (Aug 2026)
 - [[concepts/agent-distillation]] — Agent Distillation
 - [[concepts/agent-orchestration-runtime]] — Agent Orchestration Runtime — Turning agent orchestration into software engineering via a VM with persistent state, type guarantees, and control flow; Onyx VM by Random Labs
 - [[concepts/agent-plugins-1-0-0]] — Agent Plugins 1.0.0 — Open standard for portable AI agent component packages (portable skills/tools); backed by Vercel, AWS, Google, Microsoft, OpenAI; sits alongside MCP and A2A (Aug 2026)
@@ -2023,6 +2024,7 @@
 - [[concepts/jay-v]] — Jay V
 - [[concepts/jeremy-howard]] — jeremy-howard
 - [[concepts/jinja2]] — Jinja2
+- [[concepts/j-lens]] — J-Lens (Jacobian Lens) — Anthropic interpretability probe reading a model's hidden state before it writes the next token; Fireworks reproduced "silent signals" on open models (Aug 2026)
 - [[concepts/john-hopfield]] — John Hopfield
 - [[concepts/joseph-redmon]] — joseph-redmon
 - [[concepts/js-runtime]] — js-runtime
@@ -2117,6 +2119,7 @@
 - [[concepts/local-llm/local-llm-inference-hardware]] — Local LLM Inference Hardware
 - [[concepts/local-llm/local-llm-models-april-2026]] — Local Llm Models April 2026
 - [[concepts/local-llm/local-llm-server-setup-on-dgx-spark]] — Local LLM Server Setup on DGX Spark
+- [[concepts/local-llm/macos-vm-gpu-passthrough]] — macOS VM GPU Passthrough (Metal Capability Shim) — TryCua technique for 11-16x faster llama.cpp inference in macOS VMs on Apple Silicon (Aug 2026)
 - [[concepts/local-llm/model-distillation]] — Model Distillation
 - [[concepts/local-llm/model-quantization]] — Model Quantization for Local LLMs
 - [[concepts/local-llm/needle2-agentic-edge-llm]] — Needle2 — 14MB agentic LLM for edge devices (Aug 2026): Cactus Compute's 45M-param model with tool calling for phones, wearables, robots
@@ -2148,7 +2151,7 @@
 - [[concepts/managed-agents-sre-incident-response]] — How to triage production incidents using the team runbooks.
 - [[concepts/managed-devins]] — Managed Devins
 - [[concepts/marin]] — Open-source framework for foundation model research and development from Stanford CRFM. Reproducible training pipelin...
-- [[concepts/mark-zuckerberg]] — mark-zuckerberg
+- [[concepts/mark-zuckerberg]] — Mark Zuckerberg — "The Future is for Everyone" essay: personal superintelligence, balance-of-power safety philosophy, open source (Aug 2026)
 - [[concepts/markdown]] — Markdown
 - [[concepts/markdown-based-skills]] — Markdown-Based Skills
 - [[concepts/mastodon]] — Mastodon

@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-13] active-crawl | 3 new concept pages + 1 stub enrichment (Zuckerberg essay)
+
+- **New page**: `concepts/j-lens.md` — J-Lens (Jacobian Lens), Anthropic's interpretability probe for reading hidden state before token emission; Fireworks reproduced "silent signals" on Kimi K3 & Qwen3.5-9B (open models); paired-copy experiment, 19/20 cross-model transfer, tokenizer limitation. Source: raw/articles/2026-08-13_fireworks-ai_J-Lens-Kimi-K3-Qwen.md.
+- **New page**: `concepts/local-llm/macos-vm-gpu-passthrough.md` — TryCua Metal capability shim unlocking 11-16x faster llama.cpp inference in macOS VMs on Apple Silicon (TinyLlama 11.08x/16.36x, Gemma 4 12B 7.20x/14.54x, near-bare-metal prompt speed). Source: raw/articles/2026-08-11_trycua-macos-vm-gpu-passthrough.md (newly saved).
+- **New page**: `concepts/agent-deployment-engineering.md` — Agent Deployment Engineering (ADE) role introduced by Decagon (Alex Lewis): customer engineers owning the technical agent build alongside APMs; relationship to FDE. Source: raw/articles/2026-08-13_decagon_agent-deployment-engineering.md.
+- **Enrichment**: `concepts/mark-zuckerberg.md` — replaced stub with full page on Zuckerberg's "The Future is for Everyone" essay (Aug 11, 2026): three pillars (individual empowerment, invention, balance of power), anti-singular-benevolent-superintelligence argument, personal superintelligence vision, risk positions, alignment reframing, RSI, policy proposals. Source: raw/articles/2026-08-11_meta-zuckerberg-future-is-for-everyone.md (newly saved).
+- **New raw articles saved (2)**: 2026-08-11_trycua-macos-vm-gpu-passthrough.md, 2026-08-11_meta-zuckerberg-future-is-for-everyone.md.
+- **Considered but deferred (already covered)**: DeepSeek V4 Pro 0813 (blog-wiki-ingest today), Docker Sandboxes (concepts/coding-agents/docker-sandboxes-ai-agents.md), H3-metal (concepts/inference/h3-metal-apple-silicon.md), Dan Luu pl-tokens (concepts/coding-agents/programming-language-tokenizer-efficiency.md), Mojo 1.0 (entities/mojo.md), OpenHands Agent Canvas (entities/openhands.md), Stealing Reasoning Traces (concepts/reasoning-trace-extraction-vulnerability.md, created Aug 12), Addy Osmani agentic code quality (concepts/coding-agents/ai-code-quality.md).
+- index.md: Concepts 1972->1977 (3 new + 2 drift fix), Entities 897->898 (+1 drift fix); 3 new entries + mark-zuckerberg entry updated.
+
 ## [2026-08-13] newsletter-wiki-ingest | triage checkpoint recovery + 1 new event page, 2 references, 2 entity/concept updates
 
 - **Recovery**: newsletter-triage agent output failed JSON parse, but `triage_latest.json` checkpoint (20260813T102116Z, saved 10:36) was valid — recovered directly (checkpoint-recovery pattern). 3 newsletters; 2 takes, 2 references, 4 skips.
