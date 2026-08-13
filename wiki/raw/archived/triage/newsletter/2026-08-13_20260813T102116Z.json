@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-08-13T10:37:04.047811+00:00",
+  "triage_run_id": "20260813T102116Z",
+  "source": "newsletter",
+  "summary_ja": "2026-08-12/13 のニュースレター3通をトリアージ。AINews バージンより Grok 4.6 と Grok Bot のリリースが最重要ニュース（xAI エンティティのモデル一覧が 4.5 で止まっており、新規イベントページが必要）。Nathan Lambert の AI 教科書エッセイはエンティティページ未収録のため take。Qwen3.8-Max の 95B active MoE 仕様と Claude テキスト透かしロールアウトは既存概念ページへの reference。beehiiv ニュースレターは全トラッキングURLが 403 期限切れのため件名レベルで skip。DeepSeek V4 Pro GA は本日 blog-triage が take 済みのため skip。",
+  "decisions": [
+    {
+      "item_id": "<20260813015348.3.ed064bb7db55e920@mg2.substack.com>-10",
+      "source": "newsletter",
+      "source_name": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
+      "title": "Qwen3.8-Max open weights: 2.4T total / 95B active MoE",
+      "url": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ concepts/qwen-3-8.md の補完。同ページは Qwen3.8-Max（8月3日）を既に収録するが「Active parameter count: What fraction of the 2.4T parameters are active per token?」を未確定項目としていた。AINews 本文で「Qwen3.8-Max dropped as an open-weight 2.4T total / 95B active MoE. Community notes emphasize its scale, day-0 serving, and long-context/agent orientation: Yuchen Jin called it...」と 95B active を明示。この仕様追記と Yuchen Jin コメントの言及を提案。",
+      "candidate_wiki_path": "concepts/qwen-3-8.md",
+      "body_excerpt": "Qwen3.8-Max open weights are out: Alibaba's Qwen3.8-Max dropped as an open-weight 2.4T total / 95B active MoE. Community notes emphasize its scale, day-0 serving, and long-context/agent orientation: Yuchen Jin called it..."
+    },
+    {
+      "item_id": "<20260812.175142.2b4b46e0@mta21>-1",
+      "source": "newsletter",
+      "source_name": "🤖 Elon Just Hired A Bot Into Your Company",
+      "title": "Elon Just Hired A Bot Into Your Company (beehiiv newsletter, 20 links batch)",
+      "url": "https://link.mail.beehiiv.com/v2/c/114772d9a8f9cb4025c4bd66062e144618694f7e4eaa7f8c8c6e1ba43fe92b7eb5359d7dd8eeff260aef93805692357d50c9f760fb907257d1865b6fd0a213c542fda0e57b2150137777f07c461159d2448e33d4953c4b5e5157f2a12c86c9e6f3b003a18d69da0bf5360ec981c6e60a39a8ed0057b7dad7e385065693ff17796a32049f64e7a9c9705322b6c7c7e6781ca310adc46617d42b73563ce1330286/f5a08ac1e3973493",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 全20リンクの beehiiv トラッキングURLが HTTP 403（トークン期限切れ、0リダイレクト）。テスト1リンクでバッチ全体の期限切れを確認。inbox summary は出版元を特定できず件名レベル（エンタープライズAIエージェント/Elon/xAI）の推測のみ。本文到達不能のため take 不可。トピック（企業へのAIボット導入）は Grok Bot take と既存エージェント概念（agent-team-swarm 等）でカバーされるため skip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（beehiiv tracking URL 403 expired — 本文抽出不可。件名: 🤖 Elon Just Hired A Bot Into Your Company。inbox summary: enterprise AI agent deployment / autonomous bots in business contexts）"
+    }
+  ]
+}
