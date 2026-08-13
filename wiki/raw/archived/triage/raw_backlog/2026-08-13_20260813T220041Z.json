@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-13T22:20:30.812486+00:00",
+  "triage_run_id": "20260813T220041Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog 22:00バッチ（5記事）。Takes=0、References=2、Skips=3。Zuckerberg「The Future is for Everyone」・ESNIタイムライン予測・Simon Willison Lennyポッドキャストハイライトは既存ページで完全カバー済み（スキップ）。予測市場スタブ（concepts/prediction-markets.md）をJoan Westenberg批判エッセイで実質化し、paulgraham-comに「A Plan for Spam」ベイズフィルタ節を追加（各reference）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-swe-timelines-esni-2200",
+      "source": "raw_backlog",
+      "source_name": "substack redirect (unidentified author)",
+      "title": "AIs can now often do massive easy-to-verify SWE tasks and I've updated towards shorter timelines",
+      "url": "https://substack.com/redirect/83a03e0e-24ff-40d0-8d66-d76a255c3ac2",
+      "raw_path": "~/wiki/raw/articles/substack.com--redirect-83a03e0e-24ff-40d0-8d66-d76a255c3ac2--89f6ff53.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ スキップ（既存ページで完全カバー済み）。本文はES/ESNIタスク分類、METR 50%-reliability time horizonの超指数関数的進歩、AI R&D自動化確率30%（EOY 2028）、Cotra parityマイルストーン表を報告。この正確なraw記事ファイルが concepts/ai-timelines-esni-tasks.md（92行）のsourcesに記載されており、既に処理済み（前回raw-backlog takeで作成）。重複処理を避けるためスキップ。",
+      "candidate_wiki_path": "concepts/ai-timelines-esni-tasks",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-joan-westenberg-prediction-markets",
+      "source": "raw_backlog",
+      "source_name": "joanwestenberg.com",
+      "title": "Why prediction markets are a sure sign that our civilisation is in decay",
+      "url": "https://www.joanwestenberg.com/why-prediction-markets-are-a-sure-sign-that-our-civilisation-is-in-decay/",
+      "raw_path": "~/wiki/raw/articles/joanwestenberg.com--why-prediction-markets-are-a-sure-sign-that-our-civilisation--61e5f297.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 参照（既存スタブ拡充）。concepts/prediction-markets.md は25行のstatus: stubで本文ゼロ（frontmatterも不正）。本文は2003年DARPA Policy Analysis Market即死（24時間で中止、Poindexter辞任）と2024-26年のPolymarket/Kalshi常態化を対比し、エピステミクスvsプロダクト、Sandelの市場腐敗論、Jim Bell/Nick Szabo暗殺市場インセンティブ、'laziness dividend'（価格があると報道・分析が停止）を論じる。AIフォアキャスティング（タイムライン市場、Metaculus）の参照インフラとして予測市場の批判的対立軸を提供。スタブを実質化（66行）し entities/joan-westenberg.md にエッセイ節を追加。",
+      "candidate_wiki_path": "concepts/prediction-markets",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-simon-willison-lenny-highlights",
+      "source": "raw_backlog",
+      "source_name": "simonwillison.net (substack app-link)",
+      "title": "Highlights from my conversation about agentic engineering on Lenny's Podcast",
+      "url": "https://substack.com/app-link/post?publication_id=1173386&post_id=193034652",
+      "raw_path": "~/wiki/raw/articles/substack.com--app-link-post--6ab3a67b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ スキップ（既存ページでカバー済み）。本文はLenny Rachitskyポッドキャスト「An AI state of the union」出演ハイライト（GPT-5.1/Opus 4.5 inflection point、1日1万行コーディング、dark factory 95%コード未入力、ThoughtWorks mid-careerエンジニア圧迫説、hallucination cases DB 1,228件）。entities/simon-willison.md の「Lenny's Podcast: An AI State of the Union (April 2026)」節（11 bullet）が同一エピソードの主要ポジションを網羅済み。重複のためスキップ。",
+      "candidate_wiki_path": "entities/simon-willison",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-paulgraham-plan-for-spam",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com",
+      "title": "A Plan for Spam",
+      "url": "http://www.paulgraham.com/spam.html",
+      "raw_path": "~/wiki/raw/articles/paulgraham.com--spam-html--1eade79d.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 参照（エンティティ拡充）。本文（2002年8月）はArc検証用メールリーダーで実装したベイズ型スパムフィルタの設計論：手書きルール6ヶ月の限界、単語ベイズ組み合わせでspam 5/1000未満・偽陽性ゼロ、偽陽性の経済学（正常メール喪失はスパム受信より桁違いに悪い）、トークナイズが実質的なフィルタ（ダッシュ・アポストロフィ・ドル記号をトークン内に含める）、SpamAssassinスコア方式との比較。素朴ベイズ実用化の古典でありNLP/ML史の参照点。entities/paulgraham-com.md はReferencesリストにファイル名のみ記載で本文要約が無かったため、「A Plan for Spam (August 2002): Bayesian Filtering as Practical ML」節を追加しsourcesに登録。",
+      "candidate_wiki_path": "entities/paulgraham-com",
+      "body_excerpt": ""
+    }
+  ]
+}

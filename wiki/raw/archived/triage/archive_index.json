@@ -19,6 +19,7 @@
     "http://www.paulgraham.com/notnot.html",
     "http://www.paulgraham.com/popular.html",
     "http://www.paulgraham.com/re.html",
+    "http://www.paulgraham.com/spam.html",
     "http://www.paulgraham.com/startupmistakes.html",
     "http://www.righto.com/2025/07/reverse-engineering-mysterious-up-data.html",
     "http://www.righto.com/2025/08/reverse-engineering-analog-TDA7000.html",
@@ -1818,6 +1819,7 @@
     "https://substack.com/app-link/post?publication_id=10845&post_id=205675851&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2...YyPo&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email",
     "https://substack.com/app-link/post?publication_id=10845&post_id=205675851&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...YyPo",
     "https://substack.com/app-link/post?publication_id=10845&post_id=207214207",
+    "https://substack.com/app-link/post?publication_id=1173386&post_id=193034652",
     "https://substack.com/app-link/post?publication_id=1173386&post_id=193797318&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2...QRQc",
     "https://substack.com/app-link/post?publication_id=1173386&post_id=193797318&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2...QRQc",
     "https://substack.com/app-link/post?publication_id=293154&post_id=201763738",
@@ -1956,6 +1958,7 @@
     "https://substack.com/redirect/6c02c4f7-4c73-4574-9c82-b78565f9b71d?j=eyJ1Ij...tf6E",
     "https://substack.com/redirect/760164ce-aa5e-4f1d-b5e9-50da604229a3?j=eyJ1Ij...tf6E",
     "https://substack.com/redirect/782bf441-6149-42f0-a20c-1858aa6e83cc?j=eyJ1Ij...tf6E",
+    "https://substack.com/redirect/83a03e0e-24ff-40d0-8d66-d76a255c3ac2",
     "https://substack.com/redirect/83dbda6a-f2cb-49b2-8c74-08661d4a8e30",
     "https://substack.com/redirect/88800e7c-de9e-41f9-ba65-29c1cc57f600?j=eyJ1Ij...tf6E",
     "https://substack.com/redirect/8b76ad88-36bc-404b-b585-a35c1d052daa",
@@ -2287,6 +2290,7 @@
     "https://www.joanwestenberg.com/nobody-is-destined-for-greatness/",
     "https://www.joanwestenberg.com/the-costco-theory-of-the-internet/",
     "https://www.joanwestenberg.com/why-i-cant-stand-the-word-driven/",
+    "https://www.joanwestenberg.com/why-prediction-markets-are-a-sure-sign-that-our-civilisation-is-in-decay/",
     "https://www.johndcook.com/blog/2026/05/19/closer-look-at-an-identity/",
     "https://www.johndcook.com/blog/2026/05/19/square-root-of-x-squared-minus-one/",
     "https://www.johndcook.com/blog/2026/05/19/zagiers-equation/",
@@ -2610,5 +2614,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-13T18:15:41.168604+00:00"
+  "updated": "2026-08-13T22:20:30.813074+00:00"
 }

@@ -2,13 +2,14 @@
 title: Paul Graham
 type: entity
 created: 2026-04-09
-updated: 2026-08-12
+updated: 2026-08-13
 tags:
   - person
   - blogger
   - hn-popular
   - company
   - developer-tooling
+  - bayesian
 aliases:
 - paulgraham.com
 - pg
@@ -18,6 +19,7 @@ sources:
   - raw/articles/paulgraham.com--icad-html--2f0356db.md
   - raw/articles/paulgraham.com--gap-html--e5deadf2.md
   - raw/articles/paulgraham.com--hp-html--75db41c1.md
+  - raw/articles/paulgraham.com--spam-html--1eade79d.md
   - raw/articles/paulgraham.com--nerds-html--d2271270.md
   - raw/articles/paulgraham.com--startupmistakes-html--38e869c5.md
 ---
@@ -183,6 +185,16 @@ In "Revenge of the Nerds", Graham uses the **pointy-haired boss** archetype — 
 The essay catalogs **nine ideas** Lisp embodied, adopted piecemeal by the mainstream: (1) conditionals, (2) a function type, (3) recursion, (4) dynamic typing, (5) garbage collection, (6) programs composed of expressions, (7) a symbol type, (8) a notation for code using trees of symbols, and (9) "the whole language there all the time" — no distinction between read-time, compile-time, and runtime, enabling macros and code-as-data. Ideas 8-9 ("you can write programs that write programs") are still unique to Lisp; a language that adds that "final increment of power" becomes merely "a new dialect of Lisp."
 
 **AI Relevance:** The pointy-haired boss pattern — non-technical executives mandating specific technologies they don't understand — maps directly onto the enterprise AI mandate dynamics documented in [[concepts/ai-adoption-failures-and-enterprise-psychosis]] ("Heretics Will Be Shot"). The essay's "languages are not equivalent" argument also prefigures modern debates about whether AI coding tools are interchangeable commodities or differ in kind.
+
+### A Plan for Spam (August 2002): Bayesian Filtering as Practical ML
+
+Graham's essay on the spamproof web mail reader he built to exercise Arc is an early landmark of practical machine learning — a working Bayesian classifier described for a general technical audience. Key claims:
+
+- **Statistical approach beats hand-crafted rules**: after six months writing software that recognized individual spam features, Graham found that catching the last few percent of spams got very hard and stricter rules produced more false positives. A "Bayesian combination of the spam probabilities of individual words" missed fewer than 5 per 1,000 spams with 0 false positives ("using a slightly tweaked Bayesian filter"). A simple rule like looking for "click" caught 79.7% of his spam corpus but with 1.2% false positives — the residual was the hard part.
+- **False-positive economics**: "missing legitimate email is an order of magnitude worse than receiving spam" — and the better filters get, the more dangerous false positives become, because users trust the filter and stop checking the spam folder. He added a slight bias in the probability combination specifically to protect against false positives.
+- **Tokenization as the real filter**: the essay's most consequential engineering insight was that how you split messages into tokens — treating dashes, apostrophes, and dollar signs as part of tokens, everything else as separators, ignoring tokens that occur too rarely — is where most of the filtering power lives. The follow-up "Better Bayesian Filtering" (2002) refined the algorithm.
+- **Comparison with scored filters**: Graham argues the Bayesian approach's real advantage over rule-scored filters (he explicitly cites SpamAssassin) is that probabilities are commensurable across tokens, while arbitrary spam "scores" are not.
+- **AI relevance**: the essay is a canonical early demonstration that simple probabilistic classifiers (naive Bayes on token features) outperform expert hand-crafted rule systems for real-world text classification — the same "statistical approach beats hand-crafted rules" pattern that recurred across NLP and prefigured modern ML. It also shows Graham's characteristic move of building a small product (a mail reader) to exercise a language (Arc), later described in "Arc's Implementation" (2003).
 
 ## Classic Essays (2003–2006)
 

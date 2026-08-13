@@ -2464,7 +2464,7 @@
 - [[concepts/post-training/unsloth]] — Unsloth — Fast Fine-Tuning
 - [[concepts/post-training/verifiers-rl]] — Verifiers
 - [[concepts/powerdns]] — powerdns
-- [[concepts/prediction-markets]] — Prediction Markets
+- [[concepts/prediction-markets]] — Prediction Markets — Polymarket/Kalshi aggregation epistemology, DARPA PAM history, Westenberg critical essay, AI-forecasting relevance (May 2026)
 - [[concepts/predictive-v-information]] — Predictive \mathcal{V}-Information
 - [[concepts/pretraining-parallelisms]] — Pretraining Parallelisms
 - [[concepts/princeton-cos597r-deep-dive-llm]] — Princeton COS597R — Deep Dive into Large Language Models
