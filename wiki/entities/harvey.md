@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-11
+updated: 2026-08-13
 tags:
   - security
   - company
@@ -28,6 +28,7 @@ sources:
   - raw/articles/2026-06-19_harvey_legal-operations-management.md
   - raw/articles/2026-06-19_harvey_legal-operations-optimization.md
   - raw/articles/2026-08-01_harvey_legal-ai-vs-traditional-legal-research.md
+  - raw/articles/2026-06-09_harvey_legal-knowledge-management.md
   - raw/articles/2026-08-05_harvey_ai-tax-research.md
   - raw/articles/2026-08-05_harvey_playbook-builder-in-harvey.md
   - raw/articles/2026-08-11_harvey_corporate-compliance-ai.md
@@ -321,6 +322,37 @@ Worked example: 200-person department with $20M outside counsel spend → 5% rat
 Honest limits: AI doesn't replace legal judgment, doesn't handle novel fact patterns, doesn't eliminate specialized counsel — "push AI hardest into volume work and leave judgment work alone."
 
 Source: raw/articles/2026-06-19_harvey_legal-operations-optimization.md
+
+## Legal Knowledge Management Guide (June 2026)
+
+Harvey published a guide (Jun 8, 2026) arguing that legal knowledge management (KM) — the discipline of identifying, organizing, and making accessible internal legal know-how — has moved from a quiet back-office function to the **binding constraint on legal AI deployment**: "AI is only as good as the knowledge it reasons over." Organizations with mature KM pull ahead in AI adoption; buying an AI platform does not fix a data problem.
+
+### Three Pressures Elevating KM
+
+1. **Client economics and demand for reuse** — fixed-fee/value-based pricing only works if the firm reuses what it has done before; KM is what makes reuse possible at scale, turning partners who treated it as overhead into partners who treat it as margin
+2. **Talent mobility and loss of institutional memory** — lateral hiring and shorter associate tenure move expertise between organizations unless captured in reusable form; KM is also how new hires get productive faster
+3. **Generative AI and grounded outputs** — AI delivers value when grounded in the organization's own work via RAG; without a well-organized knowledge base, AI output is "plausible but unverifiable," a non-starter in legal work
+
+### AI Inverts the KM Model
+
+The old model helped a human lawyer find a document; the new model helps an AI retrieve, synthesize, and apply documents on demand. AI quality is bounded by KM quality — a stale or unreviewed precedent library gets surfaced "at machine speed." Knowledge lawyers and innovation leads become, in practice, the **data architects of the practice**: deciding which version is the gold standard, writing metadata that helps the AI retrieve it, defining guardrails for AI use, and reviewing AI outputs to refine what the knowledge base needs to contain.
+
+### Four Layers of a Modern KM Function
+
+- **Content** — precedents, clause banks, matter playbooks, model documents, internal memos, deal/matter databases; each asset must be current, reviewed, versioned, and tagged with metadata for both lawyers and AI ("stale content is worse than no content")
+- **People** — knowledge lawyers, innovation leads, KM analysts who make the editorial decisions that define the canon; without this layer the content rots
+- **Technology** — document management, enterprise search, the AI platform, and integrations into Word/Outlook/matter tools; knowledge in a separate portal goes unused, knowledge that surfaces inside the document being drafted gets used every time
+- **Governance** — permissions, ethical walls, client confidentiality, retention policies, review cycles; the most-skipped layer and the one that determines whether the investment holds up or "quietly degrades into a liability"
+
+### Measurement
+
+Document counts and intranet page views are obsolete metrics. Current metrics: time-to-first-draft on recurring document types, % of matters using approved precedents, volume of AI queries grounded in internal knowledge + citation/acceptance rates, lawyer confidence pulse surveys, onboarding time for lateral hires, reduction in duplicate work. Query logs become a KM gap detector — measurement becomes a byproduct of use rather than a separate exercise.
+
+### Roadmap
+
+Assess what actually exists (map real working knowledge, not the intranet's official version) -> prioritize 2-3 high-volume workflows (NDAs, offer letters, diligence checklists) -> structure content for both lawyers and AI (gold standards + consistent metadata) -> deploy AI in the flow of work (Harvey Knowledge sources: internal institutional knowledge alongside 500+ legal data sources from a single interface) -> govern as an ongoing program. Dominant failure pattern: "organizations buy technology before they have content."
+
+Source: raw/articles/2026-06-09_harvey_legal-knowledge-management.md
 
 ## Legal Discovery & Defensible AI Protocols (June 2026)
 

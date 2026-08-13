@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-13] raw-backlog-ingest (18:00) | 1 take + 2 references + 2 skips
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-13 18:00, run 20260813T180007Z). Takes=1, References=2, Skips=2.
+- **Take: [[concepts/ai-timelines-esni-tasks]]** — New concept page from "AIs can now often do massive easy-to-verify SWE tasks and I've updated towards shorter timelines" (Substack redirect capture, Mar 2026 / ingested 2026-04-18, author not identified): ES/ESNI task taxonomy, test-suite-driven iteration loop, superexponential 50%-reliability time-horizon progress (EOY 2026: years-decades on ESNI tasks), ~20x METR task-suite gap (expected 4x), scaffolding overhang, AI R&D automation forecast update (~30% by EOY 2028, up from ~15%), Cotra-parity milestone table (AI R&D parity 7%->70% EOY 2026->2038; AC; TEDAI), taste/judgment bottleneck, empirical results (2 massive SWE tasks = months of work, AI R&D task, cyber). Source: raw/articles/substack.com--redirect-83a03e0e-24ff-40d0-8d66-d76a255c3ac2--89f6ff53.md.
+- **Reference: [[entities/harvey]]** — Added "Legal Knowledge Management Guide (June 2026)" section: KM as binding constraint on legal AI ("AI is only as good as the knowledge it reasons over"), three pressures (client economics/reuse, talent mobility, generative AI grounding), AI inverting the KM model (RAG), four layers (Content/People/Technology/Governance), modern measurement metrics, 5-step roadmap. Added raw/articles/2026-06-09_harvey_legal-knowledge-management.md to sources, updated: 2026-08-13.
+- **Reference: [[entities/overreacted-io]]** — Added "A Lean Syntax Primer" (2026) Timeline row + "Lean and Formal Verification" Core Ideas subsection: Lean theorem prover syntax primer, executable code alongside proofs; adjacent to formal-verification threads of AI safety. Added raw article to sources, updated: 2026-08-13.
+- **Skips (already captured x2)**: (1) 2026-08-11_meta-zuckerberg-future-is-for-everyone.md — fully captured in concepts/mark-zuckerberg.md + concepts/personal-superintelligence.md (active-crawl 2026-08-13, confirmed same-day); (2) karpathy.github.io--2020-06-11-biohacking-lite--27cfb0c3.md — captured in entities/karpathy-writings.md "Biohacking Lite (2019)" section + entities/andrej-karpathy.md; non-AI content.
+- Archive: wiki/raw/archived/triage/raw_backlog/2026-08-13_20260813T180007Z.json (--keep-reference). Triage JSON: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
+
 ## [2026-08-13] raw-backlog-ingest (14:00) | 1 reference + 4 skips (mixed duplicate batch)
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-13 14:00, run 20260813T140038Z). Takes=0, References=1, Skips=4.

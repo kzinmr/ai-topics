@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-13T18:11:16.244907+00:00",
+  "triage_run_id": "20260813T180007Z",
+  "source": "raw_backlog",
+  "summary_ja": "rawバックログ5記事を処理。1 take: SWEタイムライン予測記事から新コンセプト concepts/ai-timelines-esni-tasks を作成（ESNIタスク分類、METR time horizon、AI R&D自動化30%予測）。2 references: entities/harvey（Legal Knowledge Managementガイド追加）、entities/overreacted-io（Lean Syntax Primer追加）。2 skips: ZuckerbergエッセイとKarpathy Biohacking Liteは既存ページでキャプチャ済み。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-harvey-km",
+      "source": "raw_backlog",
+      "source_name": "Harvey Blog",
+      "title": "The Fundamentals of Legal Knowledge Management for Lawyers",
+      "url": "https://www.harvey.ai/blog/legal-knowledge-management",
+      "raw_path": "~/wiki/raw/articles/2026-06-09_harvey_legal-knowledge-management.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ 既存エンティティ entities/harvey.md を更新。本文で「AI is only as good as the knowledge it reasons over」という主張、KMが法的AI導入の制約要因になった点、3つの圧力（クライアント経済/再利用、人材流動/組織記憶、生成AIのgrounding）、RAGによるKMモデルの反転、4層構造（Content/People/Technology/Governance）、KM測定指標（初稿までの時間、承認済みプレシーデント利用率、AIクエリのgrounding率）、5段階ロードマップを具体的に記述。harvey.mdにはLegal Ops Management/Optimization、Legal Discoveryは既にあるがKMガイドは未収録でギャップを確認。",
+      "candidate_wiki_path": "entities/harvey",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-lean-primer",
+      "source": "raw_backlog",
+      "source_name": "overreacted.io (Dan Abramov)",
+      "title": "A Lean Syntax Primer",
+      "url": "https://overreacted.io/a-lean-syntax-primer/",
+      "raw_path": "~/wiki/raw/articles/overreacted.io--a-lean-syntax-primer--bef9d206.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★ 既存エンティティ entities/overreacted-io.md を更新。Lean定理証明器の構文入門（def/型推論、Nat vs Int、theorem、コードと証明の併記）で、AIそのものの内容ではないが形式検証・AI安全のformal verification領域に隣接。タイムライン行とCore Ideas小節を追加。既に参考文献リストにrawファイルがあったが本文内容は未収録だった。",
+      "candidate_wiki_path": "entities/overreacted-io",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-karpathy-biohacking",
+      "source": "raw_backlog",
+      "source_name": "karpathy.github.io (Andrej Karpathy)",
+      "title": "Biohacking Lite",
+      "url": "http://karpathy.github.io/2020/06/11/biohacking-lite/",
+      "raw_path": "~/wiki/raw/articles/karpathy.github.io--2020-06-11-biohacking-lite--27cfb0c3.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 既に entities/karpathy-writings.md の「Biohacking Lite (2019)」節（エネルギー代謝・睡眠・栄養の個人実験）と entities/andrej-karpathy.md でキャプチャ済み。AI/LLM関連コンテンツではない個人の健康・生化学エッセイのため、これ以上のWiki追加価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

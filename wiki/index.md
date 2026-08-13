@@ -357,7 +357,7 @@
 - [[entities/hanchunglee]] — Hanchunglee
 - [[entities/hark]] — Hark; Handoff computer-using agent, $0.18/M input tokens vs GPT 5.5's $5.00, 5s per-turn (Aug 10)
 - [[entities/harrison-chase]] — Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framewor...
-- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5)
+- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8)
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM; Salesforce Ventures Generative AI Fund; relational intelligence category (L3)
 - [[entities/halo-tamper-evident-agent-runtime]] — Open-source tamper-evident runtime evidence for AI agents; append-only hash-chained log (Apache-2.0)
 - [[entities/hebbia]] — Hebbia
@@ -623,7 +623,7 @@
 - [[entities/openknowledge]] — OpenKnowledge — Open-source AI-native markdown editor with Claude/Codex/Cursor integration (373 HN pts)
 - [[entities/openpipe]] — OpenPipe
 - [[entities/openrouter]] — OpenRouter
-- [[entities/overreacted-io]] — Dan Abramov
+- [[entities/overreacted-io]] — Dan Abramov; Lean Syntax Primer & formal verification exploration (2026)
 - [[entities/palantir]] — Palantir Technologies
 - [[entities/palo-alto-networks]] — Palo Alto Networks — Global cybersecurity leader; Prisma AIRS AI Security Platform; Portkey acquisition (Apr 2026) establishes AI Gateway control plane for agents
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc.
@@ -902,7 +902,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1977 pages)
+## Concepts (1978 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1215,6 +1215,7 @@
 - [[concepts/ai-subprime-crisis]] — AI Subprime Crisis
 - [[concepts/ai-supply-chain-security]] — AI Supply Chain Security
 - [[concepts/ai-sycophancy]] — AI Sycophancy
+- [[concepts/ai-timelines-esni-tasks]] — AI Timelines & ESNI Tasks — easy-and-cheap-to-verify SWE task taxonomy, superexponential 50%-reliability time-horizon progress, updated AI R&D automation forecasts (30% by EOY 2028), Cotra-parity milestone table (Mar 2026)
 - [[concepts/ai-video-generation-2026]] — AI Video Generation (2026)
 - [[concepts/ai-voice-fraud]] — AI Voice Fraud — voice cloning scams, three-second theft attacks, deepfake audio fraud vectors, why traditional defences fail against AI-driven voice fraud, mitigation strategies
 - [[concepts/ai-vulnerability-detection-at-scale]] — AI Vulnerability Detection at Scale

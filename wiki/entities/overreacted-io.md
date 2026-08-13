@@ -3,8 +3,9 @@ title: "Dan Abramov"
 tags: [person]
 sources:
   - raw/articles/overreacted.io--impossible-components--a22447e4.md
+  - raw/articles/overreacted.io--a-lean-syntax-primer--bef9d206.md
 created: 2026-04-24
-updated: 2026-08-12
+updated: 2026-08-13
 type: entity
 ---
 
@@ -46,6 +47,7 @@ His writing is characterized by deep conceptual exploration, animated explanatio
 | 2025 | Published "Progressive JSON" — exploring the RSC protocol internals |
 | 2025 | Published "Introducing RSC Explorer" — interactive tool for understanding React Server Components |
 | 2026 | Published "A Social Filesystem" — exploring AT Protocol and Bluesky's data model |
+| 2026 | Published "A Lean Syntax Primer" — opinionated introduction to the Lean theorem prover's syntax and interactive proof development |
 | 2026 | Announced relocation to Japan for independent work |
 
 ## Core Ideas
@@ -98,6 +100,10 @@ Perhaps Dan's most influential meta-contribution is his willingness to change hi
 - In 2018 he promoted hooks enthusiastically, then spent years documenting their pitfalls
 - In 2019 he promoted clean code patterns, then published "Goodbye, Clean Code" arguing that naming and conventions can hurt more than help
 - In 2025 he apologized for React's communication around Server Components, acknowledging that the team had made it too difficult for developers to understand what was happening
+
+### Lean and Formal Verification
+
+In "A Lean Syntax Primer" (2026) Dan documents his own learning path into the Lean theorem prover, writing the primer he wishes he had been given: definitions and type inference, `Nat` vs `Int`, theorem statements, and executable code written alongside proofs ("I've never written code alongside proofs like this before"). Not AI content per se, the essay reflects his ongoing interest in formal systems and verified software — adjacent to the formal-verification threads of AI safety work.
 
 ## Key Quotes
 
