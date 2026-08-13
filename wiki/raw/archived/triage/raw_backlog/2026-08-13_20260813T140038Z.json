@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-13T14:18:43.521553+00:00",
+  "triage_run_id": "20260813T140038Z",
+  "source": "raw_backlog",
+  "summary_ja": "rawバックログ収集（--sort ai-hint --limit 5、run 20260813T140038Z）の5記事を評価。Takes=0 / References=1 / Skips=4。reference 1件: Dan Luu「Measurement, benchmarking, and data analysis are underrated」— entities/dan-luu.mdのNotable Essays (Non-AI)節に収録＋sources更新（Jepsen/AI eval文化への示唆を明記）。skip 4件: Zuckerberg「The Future is for Everyone」はconcepts/mark-zuckerberg.md（本日active-crawl）に完全収録済み、hyperbo.la ChatGPT-4000とoverreacted.io Impossible Componentsは2026-08-12 10:00バッチでentities/hyperbo.md・entities/ryan-lopopolo.md・entities/overreacted-io.mdに収録済み、timsh.org Scam Telegramは非AI（暗号資産ドレイナー調査）。新規ページなし。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-zuckerberg-future",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "The Future is for Everyone (Mark Zuckerberg / Meta, Aug 11 2026)",
+      "url": "https://www.meta.com/thefutureisforeveryone/",
+      "raw_path": "raw/articles/2026-08-11_meta-zuckerberg-future-is-for-everyone.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 既に完全キャプチャ済み。本文はMetaの「パーソナル超知能」哲学エッセイ（個人のエンパワーメント／発明／勢力均衡の3本柱、単一の慈悲深い超知能への反論、アライメント再定義、RSIジレンマ、中間チェックポイントの政府共有提案）。concepts/mark-zuckerberg.md（87行、2026-08-13 active-crawlが本エッセイ全文を3本柱・リスク表・政策提案まで網羅）とconcepts/personal-superintelligence.md（2026-08-11更新）に完全収録済み。同一raw記事が両ページのsourcesにある。追加アクション不要。",
+      "candidate_wiki_path": "concepts/mark-zuckerberg.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-hyperbo-chatgpt-4000",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "I Wrote 4,000 Lines of Code with ChatGPT in a Weekend (Ryan Lopopolo / hyperbo.la, Jun 2023)",
+      "url": "https://hyperbo.la/w/chatgpt-4000/",
+      "raw_path": "raw/articles/hyperbo.la--w-chatgpt-4000--06a17be6.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 既にキャプチャ済み（2026-08-12 10:00 raw-backlog-ingest）。本文は2023年6月に無料ChatGPTとArtichoke Ruby（Rust）で週末ペアプログラミング、10 PR / ~4,100 LOC、2000行no_std String#unpackイテレータ（100%カバレッジ）、「ハイテク新人ジュニアエンジニア」的評価、テスト生成が最強、コードレビュー型プロンプトが最良という初期AIコーディング体験記。entities/hyperbo.md「Early AI Coding: The ChatGPT Pair-Programming Report (Jun 2023)」節（L67）、entities/ryan-lopopolo.md Blog/Key Writings（L222）、entities/ryan-lopopolo--writings.mdに収録済み。追加アクション不要。",
+      "candidate_wiki_path": "entities/hyperbo.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-overreacted-impossible-components",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Impossible Components (Dan Abramov / overreacted.io, Dec 2024)",
+      "url": "https://overreacted.io/impossible-components/",
+      "raw_path": "raw/articles/overreacted.io--impossible-components--a22447e4.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 既にキャプチャ済み（2026-08-12 10:00 raw-backlog-ingest）。本文はReact Server Componentsの動機を分散システム問題として説明する「2台のコンピュータ問題」（自分の好きな色×あなたの名前）。entities/overreacted-io.mdにTimeline行（2024）+「The Two-Computer Problem: Impossible Components」Core Ideas節（L91）で収録済み。フロントエンド記事でありLLM/AI技術スコープ外のため、追加のconcept化は不要。",
+      "candidate_wiki_path": "entities/overreacted-io.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-danluu-why-benchmark",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Measurement, benchmarking, and data analysis are underrated (Dan Luu)",
+      "url": "https://danluu.com/why-benchmark/",
+      "raw_path": "raw/articles/danluu.com--why-benchmark--b53029a8.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ エンティティページ補完（今回entities/dan-luu.mdを更新）。本文は「測定はビルドより高ROI」というLuuの測定哲学の代表作：Jepsen（Kyle Kingsbury）による分散システム正しさ検証が業界を変えた事例（Redisパーティション中56%書き込み喪失、MongoDB大量データ喪失、RabbitMQ約35% ack喪失、Elasticsearchスプリットブレイン中green報告）、キーボードレイテンシ計測→メーカーが入力遅延最適化、Consumer Reportsヘッドライト/ABS計測→Teslaブレーキ修正、レビュー業界の構造的欠陥（メーカー提供レビュー機、Wirecutterの方法論問題）を論じる。非AI一般エッセイだがAI eval文化（独立ベンチマークがラボを改善させるJepsenパターン、評価汚染問題）に示唆が強い。entities/dan-luu.md「Notable Essays (Non-AI)」節に収録＋sources追加済み（2026-08-13）。新規ページ不要。",
+      "candidate_wiki_path": "entities/dan-luu.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-timsh-scam-telegram",
+      "source": "raw_backlog",
+      "source_name": "raw backlog",
+      "title": "Scam Telegram: Uncovering a network of groups spreading crypto drainers (timsh.org)",
+      "url": "https://timsh.org/scam-telegram-investigation/",
+      "raw_path": "raw/articles/timsh.org--scam-telegram-investigation--d507827d.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。本文はWeb3/DeFiの偽サポートチャット群（Inferno Drainer等のウォレットドレイナーを配布）を数ヶ月かけて調査したセキュリティ記事。SEAL（Security Alliance）との共同調査、偽チャットのネットワーク可視化、ドレイナーJSコード解析（Claudeを補助利用した言及はあるが本題ではない）。暗号資産詐欺調査でありLLM/AIエージェント技術スコープ外。エンティティ作成対象外（timsh.org著者はwiki内entities/tim-sh.mdのTim Sherratt（GLAM歴史家）とは別人 — 誤帰属注意）。アーカイブのみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}
