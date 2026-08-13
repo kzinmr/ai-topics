@@ -667,7 +667,7 @@
 - [[entities/qdrant]] — Qdrant
 - [[entities/qiaochu-yuan]] — QC (Qiaochu Yuan) is a mathematician, philosopher, and writer. Former MIRI researcher, PhD student in mathematics at ...
 - [[entities/quarq-labs]] — Quarq Labs
-- [[entities/qwen]] — Qwen — Alibaba's family of large language models (Tongyi Qianwen)
+- [[entities/qwen]] — Qwen — Alibaba's open-weight LLM family (Tongyi Qianwen); dense + MoE from 0.5B to ~2.4T (Qwen3.8-Max), Apache 2.0, agentic 2026 pivot (3.7/3.8 Max, MM-Plugins, AgentWorld), 234M app users
 - [[entities/qwen-3-7-max]] — Qwen 3.7 Max
 - [[entities/qwen-mm-plugins]] — Qwen-MM-Plugins — Alibaba open-source multimodal plugin system for agent harnesses; 6 capabilities (vision, video memory, video edit, Blender 3D, FreeCAD, edu-agent); supports Claude Code, Codex, Qoder, OpenClaw, Qwen Code, Gemini CLI (July 2026)
 - [[entities/qwen3-6-plus]] — Qwen3.6-Plus
@@ -798,7 +798,7 @@
 - [[entities/teknium]] — Ryan (Teknium)
 - [[entities/telegram]] — Telegram
 - [[entities/telegram-managed-bots]] — Telegram Managed Bots — No-code multi-tenant bot creation platform (Bot API 9.6): manager bots, getManagedBotToken, share links, Bot-to-Bot Communication
-- [[entities/tencent]] — Tencent
+- [[entities/tencent]] — Tencent — Chinese conglomerate; Hunyuan family via Tencent Hy Team, 2026 Hy3 (295B/21B MoE, Apache 2.0) near-frontier agentic capability, ARGUS telemetry, Yuanbao/CodeBuddy/WorkBuddy integration
 - [[entities/tencent-hy3]] — Tencent Hy3 Preview
 - [[entities/teortaxestex]] — TeortaxesTex
 - [[entities/terrible-software]] — Terrible Software

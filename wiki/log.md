@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-13] skeleton-enrich-daily | L2→L3: Qwen + Tencent entity pages
+
+- **[[entities/qwen]]** (L2→L3, 30→211 lines, 9.3KB): Researched via Wikipedia + Qwen blog + local raw articles. Added: full model lineage table (Qwen 1 2023 → Qwen2 → Qwen2.5 → QwQ/QvQ → Qwen3 → Qwen3.5 → Qwen3.6 → Qwen3.7 Max → Qwen3.8), Qwen 3.8 frontier push (2.4T/95B MoE, 1M ctx, $2/$6 pricing, oh-my-cli 448-commit autonomy, revenue-threshold license shift), architecture highlights (hybrid Gated DeltaNet, thinking preservation, DFlash 6x), agent ecosystem (MM-Plugins, AgentWorld, Accio), organization (Alibaba Token Hub, Lin Junyang resignation, Qwen Exodus → modelfit.io), ecosystem/derivatives (200K+ HF variants, Sea-Lion), competitive positioning table vs DeepSeek/Tencent/Kimi. Fixed broken self-reference: entity page now links to concepts/qwen for family details. Tags: qwen, alibaba, model, company, open-source, multimodal, china, local-llm, reasoning, coding-agents.
+- **[[entities/tencent]]** (L2→L3, 30→176 lines, 7KB): Researched via Tencent site + GitHub Tencent-Hunyuan + HuggingFace tencent + local raw articles. Added: company overview (product-driven AI strategy, Feb 2026 infra rebuild principles), Hunyuan lineage table (Hy → Hy2 → Hy3 Preview → Hy3 Apache 2.0 → Hy-MT2), Hy3 details (benchmark leads with fewest active params, 495-step agent tasks, product gains, OpenRouter mystery), generative model portfolio (HunyuanVideo 12.4K stars, HunyuanImage-3.0, Hunyuan3D-2.1, HunyuanOCR, DepthCrafter), AI infrastructure (ARGUS, AngelSlim, CL-bench), products (Yuanbao, CodeBuddy/WorkBuddy, Docs AI PPT, WeChat, TokenHub, Hy-Embodied), Yao Shunyu quote, competitive positioning vs DeepSeek/Qwen.
+- index.md: updated descriptions for both entities (Qwen entry now covers 2026 agentic pivot; Tencent entry covers Hy3/ARGUS). entities/_index.md: added missing qwen + tencent entries (both were absent). No skeleton backlog remains (0 pages with `status: skeleton`); continuing established L2→L3 thinnest-pages pattern.
+
+
+
 ## [2026-08-13] dreaming wiki-ingest | confirmation — upstream already committed enrichment (Takes=0 post-enrichment)
 - Upstream dreaming-group (18:00 UTC) enriched [[entities/decagon]] (Browser Actions section) and committed archive at 7be9e887 before its response render was rejected ("considered high risk"); no re-enrichment performed.
 - Verification: decagon.md diff real (+19 lines, updated 2026-08-13); triage_latest.json = 1 reference + 20 skips; archive JSON 19 decisions, 2 dedup (dfarq + martinalderson already in archive index).
