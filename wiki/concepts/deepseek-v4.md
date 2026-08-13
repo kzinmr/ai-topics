@@ -1,7 +1,7 @@
 ---
 title: DeepSeek-V4
 created: 2026-05-08
-updated: 2026-08-03
+updated: 2026-08-13
 type: concept
 tags:
   - model
@@ -23,6 +23,7 @@ sources:
   - raw/newsletters/2026-06-09-deepseekv4-1-6t-day-0-to-day-43-performance-over-time-huawei-gb300-nvl72-mi355x-.md
   - raw/articles/simonwillison.net--2026-jul-31-deepseek-v4-flash-0731--91e3e788.md
   - raw/newsletters/2026-08-02-deepseek-s-flash-sale-google-s-gemini-finds-its-feet-and-music-copyright-bites-b.md
+  - raw/articles/simonwillison.net--2026-aug-12-deepseek-v4-pro-0813--f7172b1e.md
 ---
 
 # DeepSeek-V4
@@ -327,6 +328,19 @@ Key characteristics:
 - **GGUF quantizations**: [[entities/daniel-han|Daniel Han]]/Unsloth released 10 quantization variants for V4-Flash-0731 the same day (see [[entities/daniel-han]])
 
 Source: [[raw/articles/simonwillison.net--2026-jul-31-deepseek-v4-flash-0731--91e3e788.md]]; The Signal (2026-08-02) for OpenAI-compat/defection details
+
+## V4-Pro-0813 (August 13, 2026)
+
+On August 13, 2026, DeepSeek released **V4 Pro 0813**, a new checkpoint in the V4-Pro line, **available via API only** (as of Willison's Aug 12 post). There was no official announcement page at launch — [[entities/simon-willison|Simon Willison]] linked to **OpenRouter** as the access point.
+
+Key characteristics:
+- **API-only release**: No DeepSeek announcement page detected at launch; OpenRouter was the accessible route
+- **Open-weight prospects unconfirmed**: Willison could not confirm whether open weights would be released, but noted that weights are available for both April's `deepseek-ai/DeepSeek-V4-Pro` and July's `deepseek-ai/DeepSeek-V4-Flash-0731` — making an open-weight release seem likely
+- **Reasoning-level output variance**: Willison observed markedly different output (his pelican SVG test) across the three reasoning levels — low, medium, and high — a difference he had not noticed with any other model
+- **Benchmark release route**: Benchmarks were released to the Official DeepSeek WeChat Group, then copied to a Reddit post (deleted by moderators as "low-effort"), then copied into an ASCII-art table on Hacker News — consistent with DeepSeek's pattern of informal checkpoint announcements
+- **Continuation of checkpoint cadence**: Follows the V4-Flash-0731 pattern (July 31) — DeepSeek is shipping frequent checkpoint updates rather than waiting for major version releases
+
+Source: [[raw/articles/simonwillison.net--2026-aug-12-deepseek-v4-pro-0813--f7172b1e.md]] (Simon Willison, 2026-08-12)
 
 ## Pricing: Permanent 75% Cut (May 2026)
 

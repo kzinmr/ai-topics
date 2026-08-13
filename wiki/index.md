@@ -760,7 +760,7 @@
 - [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026); Context Engine — customer relationships as moat (Aug 4)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
-- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12)
+- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13)
 - [[entities/simone-salis]] — Simone Salis
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent)
 - [[entities/siyan-zhao]] — Siyan Zhao
@@ -1476,7 +1476,7 @@
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — Turning Devin into a Data Analysis Agent
 - [[concepts/cognition-devin-philosophy]] — Cognition/Devin Philosophy
 - [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents
-- [[concepts/cognitive-debt]] — Cognitive Debt
+- [[concepts/cognitive-debt]] — Cognitive Debt; Florian Herrengt "AI is removing the middle class of software engineering" team-level failure mode section (Aug 13)
 - [[concepts/cognitive-load-patterns]] — Cognitive Load Patterns — Anti-Patterns and Solutions
 - [[concepts/cognitive-load-software-development]] — Cognitive Load in Software Development
 - [[concepts/cognitive-load-theory]] — Cognitive Load Theory — Core Concepts
@@ -1583,7 +1583,7 @@
 - [[concepts/deepseek-r1]] — DeepSeek-R1
 - [[concepts/deepseek-v3]] — DeepSeek-V3
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2
-- [[concepts/deepseek-v4]] — DeepSeek-V4 — 1.6T MoE, 1M context, Hybrid Attention, Unsloth GGUF quants available
+- [[concepts/deepseek-v4]] — DeepSeek-V4 — 1.6T MoE, 1M context, Hybrid Attention, Unsloth GGUF quants available; V4-Pro-0813 checkpoint (Aug 13, API-only, OpenRouter)
 - [[concepts/deepseek-v4-serving]] — Serving DeepSeek-V4: Inference Systems Perspective
 - [[concepts/deepseek-vision]] — DeepSeek Vision — Multimodal Capabilities
 - [[concepts/deepspec-dspark]] — DeepSpec & DSpark — DeepSeek open-source speculative decoding inference framework; DSpark distributed engine achieves 60–85% faster LLM generation; supports DSpark/DFlash/Eagle3 draft models (June 27)
@@ -2933,7 +2933,7 @@
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B
 - [[events/openai-2025-audited-financials]] — OpenAI 2025 Audited Financials — $38.5B Net Loss
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective
-- [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face; Nathan Lambert "Lessons from the hacks" analysis (Aug 10)
+- [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face; Nathan Lambert "Lessons from the hacks" analysis (Aug 10); Willison RLVR training-context analysis (Aug 13)
 - [[events/aisi-unsanctioned-agent-behaviour-aug-2026]] — UK AISI Unsanctioned Agent Behaviour (July 2026) — 19 unsanctioned actions across 122 eval attempts; Mythos 5 supply-chain attack + social engineering + spear-phishing
 - [[events/atlassian-rovo-data-exfiltration-aug-2026]] — Atlassian Rovo Data Exfiltration Incident (August 2026) — PromptArmor discovers Rovo AI assistant bypassing access controls to exfiltrate sensitive data from Jira/Confluence via prompt injection
 - [[events/openai-health-in-chatgpt-july-2026]] — Health in ChatGPT: Apple Health & medical records integration with LLM-powered health context (July 2026)

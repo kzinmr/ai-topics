@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-08-12
+updated: 2026-08-13
 status: L3
   sources: [raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md]
   tags: [person, blogger]
@@ -855,3 +855,6 @@ Cross-wikilink: See [[entities/muse-glimmer]]
 
 **There are no lossless transformations of natural-language text** (Aug 11, 2026): Simon highlighted Sophie Alpert's "internal policy on acceptable use of AI writing by engineers" — a short read supporting its own recommendations. His key rule for LLM-assisted writing: *"You must stand behind every idea and every sentence in your docs... If a reviewer asks, 'What did you mean by this line?', it's not acceptable to reply with 'Oh sorry, AI wrote that, just ignore it.'"* The title idea: **there are no lossless transformations of natural-language text** — every rewrite and rephrase changes the meaning of your writing, and if done by an entity without the most detailed mental representation of what you personally were trying to communicate, information will be lost. Extends his agentic-engineering philosophy from code to prose (cf. [[#Don't Be a Meat Proxy (Aug 3, 2026)]], [[#Simon Willison on Technical Blogging (Aug 6, 2026)]]) — AI output, whether code or writing, must pass through human understanding, validation, and ownership before being shared (see [[concepts/agentic-engineering]]).
 Source: [[raw/articles/simonwillison.net--2026-aug-11-there-are-no-lossless-transformations-of-natural--3fc5b143.md]]
+
+**alchemy-utils 0.1a0** (Aug 12, 2026): Simon released `alchemy-utils`, the database-agnostic version of his sqlite-utils Python library and CLI, backed by SQLAlchemy so it works across PostgreSQL, SQLite, and DuckDB. Built as a literal "shower project": he tasked Codex and GPT-5.6 Sol Ultra with a research spike to reimplement sqlite-utils's core API (insert/upsert/insert_all/upsert_all/create/update + table introspection) on SQLAlchemy, with red/green TDD, pytest, uv init, and early-and-often git commits — and it took very few follow-up prompts to produce an alpha-ready project. Demonstrates his agentic-engineering workflow (see [[concepts/agentic-engineering]]) on a greenfield library: one-shot prototype + a couple of optimization passes (he had Codex optimize a DuckDB bulk-insert example from ~1 hour down to ~35 seconds). Example usage: `uvx --with 'alchemy-utils[postgresql]' alchemy-utils rows 'postgresql+psycopg://...'` to list rows in a table.
+Source: [[raw/articles/simonwillison.net--2026-aug-12-alchemy-utils--3f0ac12e.md]]

@@ -1,3 +1,11 @@
+## [2026-08-13] blog-wiki-ingest | triage checkpoint recovery + 1 take, 3 references
+
+- **Recovery**: blog-triage agent output failed JSON parse, but `triage_latest.json` checkpoint (20260813T101840Z) was valid — recovered directly (checkpoint-recovery pattern). 19 candidates + 1 unsaved; 1 take, 3 references, 16 skips. Archive already saved by triage agent (2026-08-13_20260813T101840Z.json).
+- **Take**: `concepts/deepseek-v4.md` — added "V4-Pro-0813 (August 13, 2026)" section (API-only via OpenRouter, no announcement page; open-weight prospects unconfirmed but likely; reasoning-level output variance on pelican test; benchmark release via WeChat Group → deleted Reddit post → HN ASCII table). Source: simonwillison.net--2026-aug-12-deepseek-v4-pro-0813--f7172b1e.
+- **Reference**: `events/openai-huggingface-incident-july-2026.md` — added "Simon Willison: RLVR Training Context (Aug 8, 2026)" subsection (RLVR mechanics, safety behaviors added later in training, thousands of parallel tasks explain lax monitoring, "can't just leave racism out" analogy). Source: simonwillison.net--2026-aug-8-now-we-have-a-timeline-of-the-openai-accidental-a--e76a3ac1.
+- **Reference**: `entities/simon-willison.md` — added "alchemy-utils 0.1a0 (Aug 12, 2026)" entry to August 2026 Updates (SQLAlchemy-backed database-agnostic sqlite-utils port; Codex + GPT-5.6 Sol Ultra shower project; red/green TDD + uv init + early commits; DuckDB insert optimized 1hr → 35s).
+- **Reference**: `concepts/cognitive-debt.md` — added "Florian Herrengt: AI Is Removing the Middle Class of Software Engineering (Aug 2026)" section (AI removed the speed limit; weak engineering culture fails faster; cognitive debt as labor-market structure). Source: simonwillison.net--2026-aug-12-florian-herrengt--ed1fe385.
+- index.md: 4 entries updated. No new pages created.
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

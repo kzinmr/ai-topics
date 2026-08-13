@@ -4,7 +4,7 @@ type: concept
 aliases:
   - cognitive-debt
 created: 2026-04-25
-updated: 2026-05-18
+updated: 2026-08-13
 tags:
   - concept
   - methodology
@@ -13,6 +13,7 @@ tags:
 sources:
   - "raw/articles/xeiaso.net--blog-2026-ai-abstraction--744b692b.md"
   - "raw/articles/2026-05-17_addy-osmani_dont-outsource-learning.md"
+  - "raw/articles/simonwillison.net--2026-aug-12-florian-herrengt--ed1fe385.md"
 ---
 
 # Cognitive Debt
@@ -74,6 +75,16 @@ Cognitive debt explains several observed phenomena in agent-assisted development
 2. **Why "first run the tests" works** ([[concepts/harness-engineering/agentic-workflows/first-run-the-tests]]) — establishing a baseline before changes mitigates cognitive debt
 3. **Context window limits** — as context grows, the agent's effective "abstraction level" rises, accumulating cognitive debt in the session
 4. **Review burden** — [[concepts/cognitive-cost-of-agents]] — the human still needs to understand what the agent produced
+
+## Florian Herrengt: AI Is Removing the Middle Class of Software Engineering (Aug 2026)
+
+In "AI is removing the middle class of software engineering" (blog.florianherrengt.com, Aug 2026), Florian Herrengt describes the team-level failure mode of unmanaged cognitive debt: *"AI removed the speed limit"* and *"AI makes projects with weak engineering culture fail much faster."*
+
+The scenario (quoted via [[entities/simon-willison|Simon Willison]], Aug 12, 2026): a team ships AI-generated code so fast that no one understands the system — a bug goes unfixed on the 4th attempt, "not even Fable can figure it out," and the original author answers "I don't know, let me ask Claude" when asked where the data comes from:
+
+> "This project has become so convoluted, with so many layers and services, that no one on your team could possibly start to understand what's going on."
+
+Herrengt's framing connects cognitive debt to **labor-market structure**: when AI removes the speed limit on code production, the binding constraint becomes the ability to *understand* and *maintain* what is produced — the "middle class" of software engineering (the layer that once translated between product intent and implementation) is squeezed out, while the remaining work bifurcates into high-judgment architecture and low-level remediation. This is the organizational-scale version of the individual cognitive debt documented above (cf. [[concepts/cognitive-surrender]]).
 
 ## Managing Cognitive Debt
 
