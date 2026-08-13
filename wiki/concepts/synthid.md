@@ -1,7 +1,7 @@
 ---
 title: SynthID
 created: 2026-05-27
-updated: 2026-08-09
+updated: 2026-08-13
 type: concept
 tags:
   - concept
@@ -19,6 +19,7 @@ sources:
   - raw/articles/seangoedecke.com--text-ai-watermarks--cd663c94.md
   - raw/articles/seangoedecke.com--c2pa-only-works-if-everything-is-signed--ae4eb8f4.md
   - raw/articles/arstechnica.com--ai-2026-07-google-earth-releases-swiftly-retracts-ai-feature--3d2b4219.md
+  - raw/newsletters/2026-08-13-ainews-spacexai-grok-4-6-and-grok-bot.md
 ---
 
 # SynthID
@@ -101,6 +102,16 @@ Kakao became the **first company in Asia** to adopt SynthID, applying it to its 
 ### Open-Sourcing Text Watermarking
 
 Google open-sourced SynthID's text watermarking technology at I/O 2026, making it available to any developer without using Google's proprietary systems. This creates a potential de facto standard for AI text provenance without formal legislation, with applications in academic integrity, journalism, and regulatory compliance.
+
+### Anthropic: Claude Text Watermarking Rollout (August 2026)
+
+In August 2026, [[entities/anthropic|Anthropic]] announced that Claude models launched on or after **August 2, 2026** embed an **imperceptible model-level text watermark** intended to survive copy-paste, plus signed metadata on files — a production rollout distinct from earlier Google-only text watermarking. Key technical points from community discussion (AINews recap):
+
+- **Mechanism — keyed sampling bias**: during next-token generation, the model slightly boosts a secret, context-dependent subset of tokens (green-list tokens); detection requires knowledge of the key.
+- **Reference paper**: Nature publication "Scalable watermarking for identifying large language model outputs" cited as the technical basis.
+- **False-positive risk**: commenters note the risk of coincidental green-list token matches in human text, and the tradeoff between watermark strength and output quality degradation.
+- **File metadata**: Anthropic also adds signed metadata to files, complementing the in-text watermark (survives copy-paste; metadata does not).
+- **Context**: The rollout follows the earlier text-watermarking criticism debate (see below) and Google's open-sourcing of SynthID text watermarking, suggesting convergence on text provenance tooling across frontier labs.
 
 ## Integration Across Google Products
 

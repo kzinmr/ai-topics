@@ -1,7 +1,7 @@
 ---
 title: "Qwen 3.8"
 created: 2026-07-19
-updated: 2026-08-04
+updated: 2026-08-13
 type: concept
 tags:
   - qwen
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-08-03_qwen-qwen3.8-max-release.md
   - raw/newsletters/2026-08-04-ainews-qwen-3-8-max-2-4t-and-27b-new-open-weights-models-for-coding-and-cowork.md
   - raw/newsletters/2026-08-03-the-agent-that-never-stopped-coding.md
+  - raw/newsletters/2026-08-13-ainews-spacexai-grok-4-6-and-grok-bot.md
 ---
 
 # Qwen 3.8
@@ -33,7 +34,7 @@ The announcement generated significant community attention, reaching 206 points 
 | Organization | Alibaba (Qwen Team) |
 | Model Type | Mixture of Experts (MoE) |
 | Total Parameters | **~2.4 Trillion** |
-| Active Parameters | TBD (awaiting technical report) |
+| Active Parameters | **95B** (2.4T total / 95B active MoE, per AINews Aug 13, 2026) |
 | Context Window | TBD (awaiting technical report) |
 | License | Open-weight (Apache 2.0 expected) |
 | Predecessor | [[concepts/qwen-3-6-35b|Qwen 3.6-35B-A3B]] (35B total / 3B active) |
@@ -110,7 +111,6 @@ At ~2.4T parameters, self-hosting Qwen 3.8 will require substantial infrastructu
 
 ## Open Questions
 
-- **Active parameter count**: What fraction of the 2.4T parameters are active per token? This determines practical inference cost
 - **Architecture details**: Attention mechanism, activation function, training innovations (pending technical report)
 - **License specifics**: Confirmation of Apache 2.0 or other permissive license
 - **Independent benchmarks**: Full evaluation on standard benchmarks (MMLU, HumanEval, SWE-bench, GPQA, etc.)

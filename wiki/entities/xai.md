@@ -1,7 +1,7 @@
 ---
 title: xAI
 created: 2026-05-02
-updated: 2026-07-09
+updated: 2026-08-13
 type: entity
 tags:
   - company
@@ -13,6 +13,7 @@ sources:
   - https://wccftech.com/xai-using-just-11-percent-gpus/
   - raw/articles/martinalderson.com--posts-xais-new-rental-business--bb5df5aa.md
   - raw/newsletters/2026-07-09-ainews-spacexai-launches-grok-4-5-first-opus-class-model-post-cursor-acquisition.md
+  - raw/newsletters/2026-08-13-ainews-spacexai-grok-4-6-and-grok-bot.md
 ---
 
 # xAI
@@ -39,6 +40,7 @@ xAI has rapidly iterated through Grok versions:
 | Grok 4.20 | Early 2026 | Healthcare/legal leader, video understanding |
 | Grok 4.3 | **May 2026** | Always-on reasoning, 1M context, Custom Voices |
 | Grok 4.5 | **July 2026** | Coding & agents focused, co-trained with Cursor, Opus-class, faster and lower cost |
+| Grok 4.6 | **Aug 2026** | Frontier price/performance (AA Intelligence Index 61), 1.5T params, agentic RL (kernel opt, web dev, CAD), powers Grok Bot |
 
 See [[entities/grok-4-3]] for detailed model specs.
 
@@ -81,6 +83,22 @@ xAI launched **Grok 4.5** on July 9, 2026 — a coding-and-agents-focused fronti
 - Distinct from Cursor Composer 2.5 — different model weight classes
 
 See [[events/grok-4-5-launch]] for the full event page.
+
+### Grok 4.6 — Frontier Price/Performance Model (August 2026)
+
+xAI released **Grok 4.6** on August 13, 2026 — described by AINews as "a major step up from 4.5 at the same price" and "arguably the second best knowledge work model in the world." Key details:
+
+- **Confirmed 1.5T parameter model**; Artificial Analysis Intelligence Index ~61 (behind Claude Opus/Fable, but strong agentic results; near GPT-5.6 Sol and Claude Fable on webdev tasks)
+- **Large gains on AA-Briefcase** (agentic knowledge work benchmark) at substantially lower cost than leading models
+- **Training**: longer supplemental training run than 4.5; curated model-generated data for reasoning; Grok 4.5 regenerated SFT trajectories (reasoning, agent harnesses, STEM, software engineering, knowledge work) with model-based filtering; wide agentic RL coverage (kernel optimization, web development, CAD)
+- **Positioning**: practitioners framed it as the new default for coding and bug-finding workloads; pricing materially below frontier peers
+- **Roadmap**: Grok 4.7 initial training complete, supplemental training on SpaceX internal data planned
+
+### Grok Bot — AI Teammates (August 2026)
+
+Announced alongside Grok 4.6 in early beta: **Grok Bot** ("Bots are AI teammates that do real work for you. They sign in to your tools, use them just like you do, and come back with finished work."). AINews calls it the AI teammate/[[concepts/multi-agents/agent-team-swarm|multi-agent]] category's most significant new entrant — coding agents breaking containment into knowledge work. Competing with Claude Tag (which requires a more technical user), Grok Bot targets the knowledge-work teammate slot.
+
+See [[events/grok-4-6-launch]] for the full event page.
 
 ## Datacenter-as-a-Service Pivot (June 2026)
 
@@ -144,6 +162,8 @@ xAI positions Grok as "value leader" with aggressive API pricing:
 
 ## Related Pages
 - [[entities/grok-4-3]] — Latest Grok model release
+- [[events/grok-4-6-launch]] — Grok 4.6 + Grok Bot launch event (Aug 2026)
+- [[events/grok-4-5-launch]] — Grok 4.5 launch event (Jul 2026)
 - [[concepts/grok-computer]] — Autonomous desktop agent
 - [[entities/deepseek]] — Chinese competitor also driving cost disruption
 - [[entities/anthropic]] — Competitor (Claude Opus 4.7)

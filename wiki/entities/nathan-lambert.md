@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-08-11
+updated: 2026-08-13
 type: entity
 aliases:
   - natolambert
@@ -20,6 +20,7 @@ sources:
   - raw/newsletters/2026-08-02-latest-open-artifacts-23-laguna-s2-1-inkling-kimi-k3-show-the-utility-of-open-mo.md
   - raw/newsletters/2026-08-03-introducing-our-artifacts-hub-and-adoption-dashboard.md
   - raw/newsletters/2026-08-10-5-useful-things-you-ll-learn-in-my-new-post-training-textbook-shipping-now.md
+  - raw/newsletters/2026-08-12-i-wrote-an-ai-textbook-how-long-until-ai-can-do-it-better.md
 ---
 
 # Nathan Lambert (@natolambert)
@@ -232,6 +233,19 @@ Interconnects expanded its open-models coverage into standalone tracking project
 - **Adoption Dashboard**: a living dashboard of download and derivative-model numbers by geography and organization — visualizing the US-China adoption gap and growing players in the open ecosystem
 
 Source: [Introducing our Artifacts Hub and Adoption Dashboard](https://www.interconnects.ai/p/introducing-our-artifacts-hub-and) (Aug 2026).
+
+### August 2026: "I wrote an AI textbook — how long until AI can do it better?"
+
+**"I wrote an AI textbook — how long until AI can do it better?"** (Aug 12, 2026, Robotic/Interconnects): Lambert reflected on writing his RLHF post-training textbook ([[concepts/post-training/rlhf|Reinforcement Learning from Human Feedback]], Manning) and argued that **models have stagnated in long-form, non-fiction writing** — a capability he considers a prerequisite for autonomous open-science problem solving:
+
+- **Stagnation thesis**: "Models being stagnant in long-form, non-fiction writing should be alarming to those reliant on models autonomously solving grand, open science problems in the near future. The models today struggle to organize and compellingly present some of the most established science in their area." He calls current long-form output "entropy-increasing" and writes that today's LLMs cannot "express the full extent of their knowledge in underspecified problems."
+- **Concrete model experience**: GPT models excel at finding typos — GPT 5.5 Pro found deep, surprising typos across his 200-300 page near-final PDF manuscript. Claude models are more useful as an editor: "a lot more taste," better understanding of the task's mental model, and suggestions that unstick writer's block. The recurring failure mode: models check every unit (sentence/equation/figure) but cannot revisit components and string them together as additions compound.
+- **AI usage in the book**: Less than 1% of the book's sentences came from AI models — the few included because he, as an expert, felt the reader needed that exact sentence. Used Claude Code to process editor comments in LaTeX (navigating delimiter-marked comments, printing context, classifying typo vs. nuanced fix) and to sync Markdown/LaTeX versions of the book — an agent task he estimates would have taken five times longer manually.
+- **Capability assessment**: Models are great in two contexts — (1) truly verifiable domains and (2) given a ton of context and making a small edit (bug-finding, specific math problems, feedback) — but not open-ended prose generation. He calls long-form writing "a strong tell" that inference-time scaling remains unlocked for one of the great intellectual pursuits.
+- **Prediction**: "In 2-5 years I still expect the best textbooks to be heavily crafted by the human hand" — longer than many predicted, though long-form writing will fall before creative writing.
+- **Context**: Written the same day Anthropic published a blog post on Claude making progress on a famous open science problem; Lambert notes scientific problems have vast breadth and "I don't think current AI models have as much coverage as many think."
+
+Source: [I wrote an AI textbook — how long until AI can do it better?](https://www.interconnects.ai/p/i-wrote-an-ai-textbook-how-long-until) (Aug 12, 2026, Robotic/Interconnects).
 
 ## Core Ideas
 

@@ -1,0 +1,68 @@
+{
+  "run_id": "20260813T102116Z",
+  "triaged_at": "2026-08-13T10:21:16Z",
+  "source": "newsletter-ingest",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "archive_path": "/opt/data/.hermes/cron/data/newsletter/newsletter_20260813T102116Z.json",
+  "summary": "3 newsletters processed. 1 high-priority (Grok 4.6 release), 1 medium-high (enterprise AI agents), 1 medium (AI textbook authoring reflection).",
+  "newsletters": [
+    {
+      "message_id": "<20260813015348.3.ed064bb7db55e920@mg2.substack.com>",
+      "subject": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
+      "date": "2026-08-13",
+      "source": "swyx AINews (Substack, pub 1084089)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-ainews-spacexai-grok-4-6-and-grok-bot.md",
+      "classification": "high",
+      "rationale": "Major model release: Grok 4.6 from xAI/SpaceX AI. Grok @Bot feature launch is relevant to AI agents and bot integrations. swyx AINews is a high-signal AI newsletter. Would update xAI entity page and potentially create Grok 4.6 event page.",
+      "action": "scrape_and_ingest",
+      "priority_url": "https://open.substack.com/pub/swyx/p/ainews-spacexai-grok-46-and-grok",
+      "potential_wiki_targets": [
+        "entities/xai.md (update with Grok 4.6 release)",
+        "events/ (new: Grok 4.6 release event)",
+        "concepts/ai-agents (if @Bot has agent capabilities)"
+      ],
+      "tags": ["model-release", "grok", "xai", "ai-agents", "bots"]
+    },
+    {
+      "message_id": "<20260812.175142.2b4b46e0@mta21>",
+      "subject": "🤖 Elon Just Hired A Bot Into Your Company",
+      "date": "2026-08-12",
+      "source": "Beehiiv newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-12-elon-just-hired-a-bot-into-your-company.md",
+      "classification": "medium-high",
+      "rationale": "Appears to cover enterprise AI agent deployment / autonomous bots in business contexts. Elon/enterprise angle suggests xAI or Tesla AI integration. Highly relevant to wiki's AI agent focus. Title suggests practical AI agent adoption in companies.",
+      "action": "scrape_and_ingest",
+      "potential_wiki_targets": [
+        "concepts/ai-agents (enterprise deployment patterns)",
+        "concepts/enterprise-ai (if exists or create)",
+        "entities/ related to the product/service discussed"
+      ],
+      "tags": ["ai-agents", "enterprise", "automation", "elon-musk"]
+    },
+    {
+      "message_id": "<20260812130116.3.bc217823817c6fe3@mg-d0.substack.com>",
+      "subject": "I wrote an AI textbook — how long until AI can do it better?",
+      "date": "2026-08-12",
+      "source": "robotic Substack by Nathan Lambert (@natolambert)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-12-i-wrote-an-ai-textbook-how-long-until-ai-can-do-it-better.md",
+      "classification": "medium",
+      "rationale": "Reflective piece by Nathan Lambert (known AI/ML educator, robotic newsletter author) on AI's capability to author technical textbooks. Relevant to AI capabilities and content generation, but more editorial/reflective than actionable technical news. Good for entity page enrichment (Nathan Lambert) and potential concept page on AI content generation.",
+      "action": "scrape_if_capacity",
+      "priority_url": "https://open.substack.com/pub/robotic/p/i-wrote-an-ai-textbook-how-long-until",
+      "potential_wiki_targets": [
+        "entities/nathan-lambert.md (if exists, enrich with this post)",
+        "concepts/ai-content-generation (if exists or create)"
+      ],
+      "tags": ["ai-capabilities", "content-generation", "education", "opinion"]
+    }
+  ],
+  "actions": {
+    "high_priority": 1,
+    "medium_priority": 2,
+    "low_priority": 0,
+    "skip": 0,
+    "total_to_scrape": 2,
+    "scrape_if_capacity": 1
+  },
+  "notes": "All three newsletters contain only tracking/redirect URLs (Substack app-links, Beehiiv redirects). The actual article content must be fetched by following the priority_url or primary redirect links. Grok 4.6 is the most newsworthy item for the wiki."
+}

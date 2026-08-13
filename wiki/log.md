@@ -1,3 +1,18 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-08-13] newsletter-wiki-ingest | triage checkpoint recovery + 1 new event page, 2 references, 2 entity/concept updates
+
+- **Recovery**: newsletter-triage agent output failed JSON parse, but `triage_latest.json` checkpoint (20260813T102116Z, saved 10:36) was valid — recovered directly (checkpoint-recovery pattern). 3 newsletters; 2 takes, 2 references, 4 skips.
+- **New page**: `events/grok-4-6-launch.md` — xAI Grok 4.6 (Aug 13, 2026): confirmed 1.5T model, Artificial Analysis Intelligence Index ~61, large AA-Briefcase gains at lower cost; longer supplemental training run + curated model-generated data + agentic RL (kernel optimization, web dev, CAD); Grok Bot early beta — AI teammates that sign into tools and return finished work; Grok 4.7 roadmap. Source: raw/newsletters/2026-08-13-ainews-spacexai-grok-4-6-and-grok-bot.md.
+- **Update**: `entities/xai.md` — added Grok 4.6 row to model family table + "Grok 4.6 — Frontier Price/Performance Model" and "Grok Bot — AI Teammates" sections; related-page links to grok-4-6-launch.
+- **Update**: `entities/nathan-lambert.md` — added "August 2026: I wrote an AI textbook" section (models stagnant in long-form non-fiction writing; GPT 5.5 Pro typo detection on 200-300 page manuscript; Claude as editor with taste; <1% AI sentences in RLHF book; Claude Code editor-comment workflow; 2-5 year prediction). Source: raw/newsletters/2026-08-12-i-wrote-an-ai-textbook-how-long-until-ai-can-do-it-better.md.
+- **Reference**: `concepts/qwen-3-8.md` — resolved Active Parameters TBD → **95B active / 2.4T total MoE** (per AINews Aug 13); removed active-parameter-count from Open Questions; source added.
+- **Reference**: `concepts/synthid.md` — added "Anthropic: Claude Text Watermarking Rollout (August 2026)" section (Claude models on/after Aug 2 embed imperceptible model-level text watermark surviving copy-paste + signed file metadata; keyed sampling bias mechanism; Nature scalable-watermarking paper; false-positive risk).
+- **Skips (4)**: DeepSeek V4 Pro GA (already taken by blog-wiki-ingest today → concepts/deepseek-v4.md V4-Pro-0813); Microsoft MAI-Thinking-1 (covered in concepts/microsoft-mai-models.md + entities/mai-thinking-1.md); beehiiv "Elon Just Hired A Bot Into Your Company" (all tracking URLs 403 expired, body unreachable); AINews minor mentions batch (LTX-2.5, Cohere North Micro Vision, SL2T, etc. — shallow digest mentions).
+- index.md: Events 26 → 27 pages; grok-4-6-launch entry added.
+
 ## [2026-08-13] blog-wiki-ingest | triage checkpoint recovery + 1 take, 3 references
 
 - **Recovery**: blog-triage agent output failed JSON parse, but `triage_latest.json` checkpoint (20260813T101840Z) was valid — recovered directly (checkpoint-recovery pattern). 19 candidates + 1 unsaved; 1 take, 3 references, 16 skips. Archive already saved by triage agent (2026-08-13_20260813T101840Z.json).
@@ -6,9 +21,6 @@
 - **Reference**: `entities/simon-willison.md` — added "alchemy-utils 0.1a0 (Aug 12, 2026)" entry to August 2026 Updates (SQLAlchemy-backed database-agnostic sqlite-utils port; Codex + GPT-5.6 Sol Ultra shower project; red/green TDD + uv init + early commits; DuckDB insert optimized 1hr → 35s).
 - **Reference**: `concepts/cognitive-debt.md` — added "Florian Herrengt: AI Is Removing the Middle Class of Software Engineering (Aug 2026)" section (AI removed the speed limit; weak engineering culture fails faster; cognitive debt as labor-market structure). Source: simonwillison.net--2026-aug-12-florian-herrengt--ed1fe385.
 - index.md: 4 entries updated. No new pages created.
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 ## [2026-08-13] raw-backlog-ingest (10:00) | duplicate batch -- no wiki changes
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-13 10:00, run 20260813T100014Z) re-selected the **exact same 5 articles** as the 2026-08-12 14:00/18:00/22:00 runs and the 2026-08-13 04:00 run (5th consecutive duplicate selection). Same filenames + content hashes; all 5 `archive_status: already_archived`.
