@@ -1,6 +1,17 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-13] raw-backlog-ingest (10:00) | duplicate batch -- no wiki changes
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-13 10:00, run 20260813T100014Z) re-selected the **exact same 5 articles** as the 2026-08-12 14:00/18:00/22:00 runs and the 2026-08-13 04:00 run (5th consecutive duplicate selection). Same filenames + content hashes; all 5 `archive_status: already_archived`.
+- All 5 already captured and **verified in page content** (read 2026-08-13 10:00):
+  - dwarkesh.com--p-ryan-greenblatt -- `entities/ryan-greenblatt.md` (RSI timeline 2031, alignment) + `entities/dwarkesh-patel.md` + `entities/redwood-research.md` + `concepts/recursive-self-improvement.md` RSI Debate section (commit 5fd460f3)
+  - wheresyoured.at--dont-look-up -- `entities/ed-zitron.md` "Don't Look Up (August 12, 2026)" section (L795) + sources (commit b7ed5db7)
+  - paulgraham.com--hp-html / --nerds-html / --startupmistakes-html -- `entities/paulgraham-com.md` "Classic Essays (2003-2006)" section + sources + references (commit e1cff6b5)
+- **Root-cause fix**: the 22:00 registry fix wrote to `/opt/data/.hermes/cron/data/raw_backlog_archive/archive_index.json` (files map) which `raw_backlog_collect.py` never reads -- the collector filters on `processed_raw_articles.json` only. Registered all 5 filenames in `/opt/data/.hermes/processed_raw_articles.json` (top-level + `processed_articles` sub-registry, status done/skip) so the collector excludes them permanently.
+- index.md untouched (no new pages); no archive step needed (all 5 already archived).
+- Triage JSON: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (Takes=0, References=0, Skips=5).
+
 
 ## [2026-08-13] raw-backlog-ingest (04:00) | duplicate batch -- no wiki changes
 

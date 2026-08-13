@@ -212,6 +212,14 @@ def collect(args: list[str]) -> dict:
                 continue  # already finished
             else:
                 continue  # unknown status, skip
+        # Exclude already-archived URLs (previously triaged skip/reference).
+        # Without this, the collector re-surfaces archived articles forever
+        # (observed 2026-08-12/13: same 5-article batch selected 5 consecutive
+        # runs although all were archived + wiki-captured). URL extraction is
+        # cheap and only runs on candidates that pass the filters above.
+        cand_url = extract_url_from_article(path)
+        if cand_url and cand_url in archived_urls:
+            continue  # already archived — previously triaged, do not re-select
         candidates.append((name, size, path, mtime))
 
     # 4. Select top-N candidates
