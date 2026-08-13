@@ -1,0 +1,161 @@
+{
+  "archived_at": "2026-08-13T18:15:41.168011+00:00",
+  "triage_run_id": "20260813T181541Z",
+  "source": "dreaming",
+  "summary_ja": "",
+  "decisions": [
+    {
+      "title": "Decagon: Browser Actions",
+      "url": "https://decagon.ai/blog/browser-actions",
+      "raw_path": "2026-08-13_decagon_browser-actions.md",
+      "recommended_action": "reference",
+      "candidate_wiki_path": "entities/decagon.md",
+      "reason_ja": "New computer-use capability for CX agents — entity page had no Browser Actions coverage",
+      "body_excerpt": ""
+    },
+    {
+      "title": "DeepSeek V4 Pro 0813",
+      "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+      "raw_path": "simonwillison.net--2026-aug-12-deepseek-v4-pro-0813--f7172b1e.md",
+      "recommended_action": "skip",
+      "reason_ja": "Already covered in deepseek-v4.md L332-343",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Decagon: Agent Deployment Engineering",
+      "url": "https://decagon.ai/blog/agent-deployment-engineering",
+      "raw_path": "2026-08-13_decagon_agent-deployment-engineering.md",
+      "recommended_action": "skip",
+      "reason_ja": "Active-crawl created agent-deployment-engineering.md today",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Fireworks: J-Lens Kimi K3 Qwen",
+      "url": "https://fireworks.ai/blog/J-Lens-Kimi-K3-Qwen",
+      "raw_path": "2026-08-13_fireworks-ai_J-Lens-Kimi-K3-Qwen.md",
+      "recommended_action": "skip",
+      "reason_ja": "Active-crawl created j-lens.md today",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Harvey: New Harvey for Outlook",
+      "url": "https://www.harvey.ai/blog/the-new-harvey-for-outlook",
+      "raw_path": "2026-08-13_harvey_the-new-harvey-for-outlook.md",
+      "recommended_action": "skip",
+      "reason_ja": "Product announcement, low technical depth; Harvey entity page already covers Outlook integration (Shift 4)",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Harvey: Employment Contract Drafting",
+      "url": "https://www.harvey.ai/blog/employment-contract-drafting",
+      "raw_path": "2026-08-13_harvey_employment-contract-drafting.md",
+      "recommended_action": "skip",
+      "reason_ja": "Product feature announcement; Harvey entity page covers document drafting extensively",
+      "body_excerpt": ""
+    },
+    {
+      "title": "ElevenLabs: Voice Cloning API",
+      "url": "https://elevenlabs.io/blog/voice-cloning-api",
+      "raw_path": "2026-08-13_elevenlabs_voice-cloning-api.md",
+      "recommended_action": "skip",
+      "reason_ja": "Generic 'what to look for' guide; entity page already covers Voice Cloning and Marketplace",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hebbia x Third Bridge",
+      "url": "https://www.hebbia.com/blog/hebbia-and-third-bridge-launch-strategic-integration-to-enhance-financia",
+      "raw_path": "2026-08-12_hebbia_hebbia-and-third-bridge-launch-strategic-integration-to-enhance-financial.md",
+      "recommended_action": "skip",
+      "reason_ja": "Integration partnership, no technical depth",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hebbia x Azure AI Foundry",
+      "url": "https://www.hebbia.com/blog/hebbia-integrates-with-microsoft-azure-ai-foundry-to-elevate-financial",
+      "raw_path": "2026-08-12_hebbia_hebbia-integrates-with-microsoft-azure-ai-foundry-to-elevate-financial.md",
+      "recommended_action": "skip",
+      "reason_ja": "Integration partnership, no technical depth",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hebbia x FactSet",
+      "url": "https://www.hebbia.com/blog/hebbia-partners-with-factset-to-power-ai-driven-financial-research",
+      "raw_path": "2026-08-12_hebbia_hebbia-partners-with-factset-to-power-ai-driven-financial-research.md",
+      "recommended_action": "skip",
+      "reason_ja": "Integration partnership, no technical depth",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hebbia SF Office + CTO",
+      "url": "https://www.hebbia.com/blog/hebbia-opens-doors-in-san-francisco-and-welcomes-new-cto",
+      "raw_path": "2026-08-12_hebbia_hebbia-opens-doors-in-san-francisco-and-welcomes-new-cto.md",
+      "recommended_action": "skip",
+      "reason_ja": "Company update, no technical depth",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hebbia x Preqin",
+      "url": "https://www.hebbia.com/blog/hebbia-preqin-integration",
+      "raw_path": "2026-08-12_hebbia_hebbia-preqin-integration.md",
+      "recommended_action": "skip",
+      "reason_ja": "Integration partnership, no technical depth",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hebbia x Fitch Solutions",
+      "url": "https://www.hebbia.com/blog/hebbia-partners-with-fitch-solutions",
+      "raw_path": "2026-08-12_hebbia_hebbia-partners-with-fitch-solutions.md",
+      "recommended_action": "skip",
+      "reason_ja": "Integration partnership, no technical depth",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hebbia x Seyfarth",
+      "url": "https://www.hebbia.com/blog/seyfarth-leads-next-phase-of-deal-execution-and-diligence-through-ai",
+      "raw_path": "2026-08-12_hebbia_seyfarth-leads-next-phase-of-deal-execution-and-diligence-through-ai.md",
+      "recommended_action": "skip",
+      "reason_ja": "Customer case study, no technical depth",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hebbia x SS&C Intralinks",
+      "url": "https://www.hebbia.com/blog/hebbia-integrates-with-ss-and-c-intralinks-to-connect-live-deal-data-to-ai-workflows",
+      "raw_path": "2026-08-12_hebbia_hebbia-integrates-with-ss-and-c-intralinks-to-connect-live-deal-data-to-ai-workflows.md",
+      "recommended_action": "skip",
+      "reason_ja": "Integration partnership, no technical depth",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hebbia x ICE",
+      "url": "https://www.hebbia.com/blog/hebbia-and-intercontinental-exchange-bring-institutional-pricing-data-into-ai-workflows",
+      "raw_path": "2026-08-12_hebbia_hebbia-and-intercontinental-exchange-bring-institutional-pricing-data-into-ai-workflows.md",
+      "recommended_action": "skip",
+      "reason_ja": "Integration partnership, no technical depth",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hebbia x Snowflake",
+      "url": "https://www.hebbia.com/blog/hebbia-integrates-with-snowflake-ai-data-cloud",
+      "raw_path": "2026-08-12_hebbia_hebbia-integrates-with-snowflake-ai-data-cloud.md",
+      "recommended_action": "skip",
+      "reason_ja": "Integration partnership, no technical depth",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Hex Technologies x10",
+      "url": "",
+      "raw_path": "hex-technologies_*.md",
+      "recommended_action": "skip",
+      "reason_ja": "Category pages, data/analytics marketing, non-AI",
+      "body_excerpt": ""
+    },
+    {
+      "title": "Rasbt: Meta Muse Glimmer Gemma-like",
+      "url": "",
+      "raw_path": "2026-08-11_rasbt_meta-muse-glimmer-gemma-like.md",
+      "recommended_action": "skip",
+      "reason_ja": "Already processed by prior dreaming cycle (Fireworks x Muse Glimmer enrichment Aug 12)",
+      "body_excerpt": ""
+    }
+  ]
+}

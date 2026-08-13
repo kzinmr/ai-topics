@@ -2,6 +2,12 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-13] dreaming consolidation | 1 reference + 20 skips (Pattern E saturation)
+- Checkpoint: total_articles=0, recent_raw_articles=236. Pattern E filesystem scan + archive-index absence check (29 never-archived articles).
+- **Reference: [[entities/decagon]]** — Added "Browser Actions" section: computer-use capability for CX agents to navigate web-based systems without API integrations (claims systems, partner portals, legacy tools). Sandboxed SOC-2/GDPR/HIPAA execution, full audit logging, failure-step escalation. Source: raw/articles/2026-08-13_decagon_browser-actions.md. Updated: 2026-08-13.
+- **Skips**: DeepSeek V4 Pro 0813 (covered deepseek-v4.md L332-343), Decagon ADE + Fireworks J-Lens (active-crawl today), Harvey Outlook + employment contract (low technical depth, entity pages cover integration), ElevenLabs voice cloning API (generic guide), Hebbia x8 integration partnerships, Hex Technologies x10 category pages, dfarq/Martin Alderson/Rasbt (non-AI or prior triage).
+- Archive: wiki/raw/archived/triage/dreaming/2026-08-13_20260813T181541Z.json (21 candidates, 19 new, 2 dedup). Total archive URLs: 2,609.
+
 ## [2026-08-13] raw-backlog-ingest (18:00) | 1 take + 2 references + 2 skips
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-13 18:00, run 20260813T180007Z). Takes=1, References=2, Skips=2.

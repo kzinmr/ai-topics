@@ -2,7 +2,7 @@
 title: "Decagon"
 type: entity
 created: 2026-05-08
-updated: 2026-08-12
+updated: 2026-08-13
 tags:
   - company
   - ai-agents
@@ -10,6 +10,7 @@ aliases: ["Decagon AI"]
 sources:
   - https://decagon.ai/
   - https://decagon.ai/about
+  - raw/articles/2026-08-13_decagon_browser-actions.md
 ---
 
 # Decagon
@@ -75,6 +76,22 @@ Jesse Zhang's "To FDE, or not to FDE?" (2026-08-11, 1104 bookmarks) articulates 
 - **Core insight**: FDEs should be a discovery tool that feeds product, not a permanent business model. "FDEs eat pain and excrete product. If yours are eating pain and excreting more pain, you don't have an FDE team. You have a services business."
 
 Source: [To FDE, or not to FDE? — @thejessezhang](https://x.com/thejessezhang/status/2087198484093149421)
+
+## Browser Actions — Computer Use for CX Agents (August 2026)
+
+Decagon launched **Browser Actions**, a computer-use capability that lets AI agents log into, navigate, and complete tasks inside web-based systems that lack traditional API integrations — internal claims systems, partner portals, vendor dashboards, and legacy on-prem tools.
+
+**Key capabilities:**
+- **Direct page interaction**: Reads on-screen content, clicks elements, fills fields, waits for page loads — operates the same UI a human would use
+- **No integration build required**: Uses the existing website/application login, not a backend API connection
+- **Security**: Runs inside SOC-2/GDPR/HIPAA/CCPA-compliant sandboxed containers with full audit logging of every click, field entry, and page transition
+- **Failure handling**: If an expected field is missing or a screen fails to load, the agent stops and escalates at the exact failure step
+
+**Use case example**: A banking customer reporting a lost/stolen account — the agent navigates the multi-step help center flow (routing depends on customer answers), fills forms, submits the report end-to-end without the customer leaving the chat.
+
+**Significance**: Browser Actions extends Decagon's agent capabilities beyond API-connected systems into the long tail of enterprise software that only exposes a web UI — addressing the "last mile" of enterprise automation where legacy systems have no API.
+
+Source: [Introducing Browser Actions — Decagon Blog](https://decagon.ai/blog/browser-actions) (Bihan Jiang, Director of Product, Aug 5, 2026)
 
 ## Related
 
