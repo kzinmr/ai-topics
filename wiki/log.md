@@ -2,6 +2,12 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-13] dreaming wiki-ingest | confirmation — upstream already committed enrichment (Takes=0 post-enrichment)
+- Upstream dreaming-group (18:00 UTC) enriched [[entities/decagon]] (Browser Actions section) and committed archive at 7be9e887 before its response render was rejected ("considered high risk"); no re-enrichment performed.
+- Verification: decagon.md diff real (+19 lines, updated 2026-08-13); triage_latest.json = 1 reference + 20 skips; archive JSON 19 decisions, 2 dedup (dfarq + martinalderson already in archive index).
+- Independent Pattern E probe (check_archive_index_absence.py): 13 never-archived raw articles, all covered by upstream decisions — Hebbia x10 partnerships (integration-news skips), Hex x10 category pages (batch skip), dfarq (non-AI), martinalderson cache-read-costs (already covered entities/martin-alderson.md L206-226). No genuine gaps.
+
+
 ## [2026-08-13] dreaming consolidation | 1 reference + 20 skips (Pattern E saturation)
 - Checkpoint: total_articles=0, recent_raw_articles=236. Pattern E filesystem scan + archive-index absence check (29 never-archived articles).
 - **Reference: [[entities/decagon]]** — Added "Browser Actions" section: computer-use capability for CX agents to navigate web-based systems without API integrations (claims systems, partner portals, legacy tools). Sandboxed SOC-2/GDPR/HIPAA execution, full audit logging, failure-step escalation. Source: raw/articles/2026-08-13_decagon_browser-actions.md. Updated: 2026-08-13.
