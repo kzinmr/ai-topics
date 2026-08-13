@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-13] raw-backlog-ingest (04:00) | duplicate batch -- no wiki changes
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-13 04:00, run 20260813T040018Z) re-selected the **exact same 5 articles** as the 2026-08-12 14:00 run (triage_20260812T140021Z, commit b7ed5db7; 18:00 run commit b847a746; 22:00 run commit 1a4e9059). Same filenames + content hashes; 4th consecutive duplicate selection.
+- All 5 already captured in wiki:
+  - dwarkesh.com--p-ryan-greenblatt -- covered in `entities/ryan-greenblatt.md` (RSI timeline 2031, alignment concerns) + `entities/dwarkesh-patel.md` + `concepts/recursive-self-improvement.md` (blog-wiki-ingest 2026-08-12)
+  - wheresyoured.at--dont-look-up -- enriched as "Don't Look Up (August 12, 2026)" section in `entities/ed-zitron.md` (14:00 reference run; Bloomberg 70% confirmation, $197B 2027 compute spend, $217B H1 2026 raises)
+  - paulgraham.com--startupmistakes / --nerds / --hp -- all three classic essays covered in `entities/paulgraham-com.md` "Classic Essays (2003-2006)" section (commit e1cff6b5)
+- Triage JSON: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (Takes=0, References=0, Skips=5). No wiki content changes.
+
 ## [2026-08-12] x-bookmarks-ingest | rasbt Muse Glimmer commentary -- enriched 2 entity pages
 
 - **Raw article saved**: raw/articles/2026-08-11_rasbt_meta-muse-glimmer-gemma-like.md (X tweet, truncated fragment; 690 bookmarks, ~1.5K likes)
