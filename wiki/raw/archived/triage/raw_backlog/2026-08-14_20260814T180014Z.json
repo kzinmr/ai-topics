@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-14T18:11:19.315579+00:00",
+  "triage_run_id": "20260814T180014Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest 18:00 バッチ (5記事)。Cursorのfast-regex-search記事を take として新概念ページ concepts/code-search-indexing を作成 (エージェント向け正規表現検索インデックス)。Dan Luu 2本 (talent / essential-complexity) と Harvey legal-tech ガイド、Mitchell HashimotoのZig AstGen解説を既存ページへの reference 追記として処理。全5記事を処理済みレジストリに登録。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-danluu.com-talent-62694a87",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Misidentifying talent",
+      "url": "https://danluu.com/talent/",
+      "raw_path": "~/wiki/raw/articles/danluu.com--talent--62694a87.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Dan Luuの非AIエッセイ。野球スカウティングレポート (Jeter/Abbott/Eaton/Pujols) を題材に、測定可能な分野でさえ才能を見誤る歴史を分析。身長/外見のハロー効果がプログラミング/コンサル職の成功と野球以上に相関するという主張、チェス/囲碁/将棋トップ選手が平均身長に集まるデータ、履歴書ネームバイアス研究 (Bertrand & Mullainathan) を収録。既存 entities/dan-luu.md の 'Notable Essays (Non-AI)' カタログに追記 (AI採用/評価バイアス議論への背景として価値)。",
+      "candidate_wiki_path": "entities/dan-luu",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-danluu.com-essential-complexity-83af4861",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Against essential and accidental complexity",
+      "url": "https://danluu.com/essential-complexity/",
+      "raw_path": "~/wiki/raw/articles/danluu.com--essential-complexity--83af4861.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Dan Luuの非AIエッセイ。Brooks『No Silver Bullet』(1986) の '本質的複雑性は複雑性の1/2以上' という上限論を体系的に反駁: 上限は将来ツールを予測できない限り計算不能、Brooksが書き切ったカテゴリ (スクリプト言語、GC言語、fuzzer、CI/CD、VCS) がその後爆発、AIをAIが音声/画像認識を統一する直前に退けた。付録のPresto/ggplot実務例で '本質的複雑性は1%未満' と主張。既存 entities/dan-luu.md の 'Notable Essays (Non-AI)' カタログに追記 (エージェント型コーディングの生産性主張への関連フレーミングとして [[concepts/agentic-engineering]] に言及)。",
+      "candidate_wiki_path": "entities/dan-luu",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-2026-06-19-harvey-legal-tech",
+      "source": "raw_backlog",
+      "source_name": "harvey.ai",
+      "title": "What is Legal Tech? A Guide for Modern Legal Professionals",
+      "url": "https://www.harvey.ai/blog/legal-tech",
+      "raw_path": "~/wiki/raw/articles/2026-06-19_harvey_legal-tech.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Harveyのカテゴリ解説記事 (Jun 18 2026)。本文で法務テックの6カテゴリ (practice/case management, document management & automation, AI-powered legal research, contract review & due diligence, e-discovery, client service/billing/payments)、2020-22クラウド導入期→2024-26 AI本番期の2フェーズ史、citation groundingがベースライン期待になった点、契約レビューが最も成熟したAIユースケース (週→時間) を記載。既存 entities/harvey.md (612行、多数のガイド収録済み) に 'Legal Tech Overview Guide (June 2026)' セクションとして追記。同ページ内の他ガイドへのアンブレラ分類として機能。",
+      "candidate_wiki_path": "entities/harvey",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-mitchellh.com-zig-astgen-13b49ec8",
+      "source": "raw_backlog",
+      "source_name": "mitchellh.com",
+      "title": "Zig AstGen: AST => ZIR",
+      "url": "https://mitchellh.com/zig/astgen",
+      "raw_path": "~/wiki/raw/articles/mitchellh.com--zig-astgen--13b49ec8.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Mitchell HashimotoのZigコンパイラ内部解説 (AstGenステージ: AST→ZIR)。本文でZIR (untyped IR) の命令エンコーディングを具体例付きで解説: extended struct_decl, block_inline, int, break_inline、名前のインターン (line/hashメタデータ)。AI関連ではないが、既存 concepts/zig.md (anti-LLMポリシー中心、64行) に 'Compiler Architecture' セクションとして追記し、entities/mitchell-hashimoto.md のBlog欄に記事エントリを追加。compilerタグをzig.mdに登録 (SCHEMA.md既存タグ)。",
+      "candidate_wiki_path": "concepts/zig",
+      "body_excerpt": ""
+    }
+  ]
+}

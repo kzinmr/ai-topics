@@ -33,6 +33,7 @@ sources:
   - raw/articles/2026-08-05_harvey_playbook-builder-in-harvey.md
   - raw/articles/2026-08-11_harvey_corporate-compliance-ai.md
   - raw/articles/2026-05-10_harvey_ai-due-diligence-for-m-and-a.md
+  - raw/articles/2026-06-19_harvey_legal-tech.md
 ---
 
 # Harvey
@@ -452,6 +453,26 @@ Discovery AI is moving from single-task tools to platforms that execute multi-st
 - **Adoption anti-pattern**: deploying AI across all matters simultaneously fails because protocols aren't stable, institutional muscle for failure modes doesn't exist, and the validation record is thin — "one matter at a time, with each matter strengthening the protocol that the next matter inherits"
 
 Source: raw/articles/2026-06-06_harvey_how-to-use-ai-for-legal-discovery.md
+
+## Legal Tech Overview Guide (June 2026)
+
+Harvey's category-level explainer, "[What is Legal Tech?](https://www.harvey.ai/blog/legal-tech)" (Jun 18, 2026), frames legal tech as the software, data, and AI systems legal teams use to deliver legal work, and positions Harvey's products within the six core categories. By end of 2025, AI legal platforms "moved past pilot status and became daily infrastructure" for hundreds of thousands of legal professionals.
+
+**Two-phase industry history:**
+- **2020–2022**: baseline cloud adoption — case management, e-signature, virtual consultation tools standardized during remote operations
+- **2024–2026**: AI moves from pilots into production workflows; **domain-specific legal models replace general-purpose AI tools**; AI lives inside tools lawyers already use (Word, Outlook, iManage, NetDocuments, Box)
+
+**Six core categories:**
+1. **Practice and case management** — the "operating system" of the firm (calendaring, contacts, tasks, timekeeping, billing); AI now sits inside the case-management layer (deadline surfacing, matter-history summaries, routine correspondence drafting)
+2. **Document management and automation** — central repositories with version control/full-text search/audit trails; document automation generates NDAs, engagement letters, corporate minutes from templates; AI pre-fills clauses by jurisdiction/deal size/matter type
+3. **AI-powered legal research** — conversational queries grounded in case law/statutes/regulations; **citation grounding became the baseline expectation** — tools that hallucinate citations are "no longer viable" and ruled out by buyers
+4. **Contract review and due diligence** — most mature AI use case; weeks of associate first-pass review compressed to hours with risk-scored exceptions surfaced for human judgment
+5. **E-discovery and litigation support** — AI clusters similar documents, flags anomalies, prioritizes likely-relevant material, compressing month-long review timelines
+6. **Client service, billing, and payments** — secure portals, online intake, integrated payments, automated status updates; consumer-tech expectations (banking apps, real-time tracking) define legal client service
+
+**Architectural shift**: AI became the "connective layer" running through every category — buyers evaluate platforms on integration and security, not standalone tools. This guide functions as the umbrella taxonomy for the other Harvey guides catalogued on this page ([[#Legal Operations Management Guide (June 2026)|Legal Ops]], [[#Legal Knowledge Management Guide (June 2026)|KM]], [[#Legal Discovery & Defensible AI Protocols (June 2026)|Discovery]]).
+
+Source: raw/articles/2026-06-19_harvey_legal-tech.md
 
 ## Related
 

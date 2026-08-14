@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-07-02
+updated: 2026-08-14
 type: entity
 tags:
   - entity
@@ -29,6 +29,7 @@ sources:
   - raw/newsletters/2026-06-18-the-first-big-exit-in-ai.md
   - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
   - raw/newsletters/2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md
+  - raw/articles/2026-05-10_cursor_fast-regex-search.md
 ---
 
 
@@ -411,6 +412,18 @@ Agents create and maintain a shared context folder (`Field Guide`) — index.md 
 - Blog: [Agent Swarm Model Economics](https://cursor.com/ja/blog/agent-swarm-model-economics) (July 2026)
 
 See: [[concepts/multi-agents/cursor-agent-swarm-architecture]]
+
+## Fast Regex Search Research (March 2026)
+
+Cursor published a deep technical post, "[Fast regex search: indexing text for agent tools](https://cursor.com/blog/fast-regex-search)" (research author Vicent Marti), describing how it indexes source code so agent grep/regex lookups return candidates in milliseconds instead of scanning every file. See [[concepts/code-search-indexing]] for the full concept page.
+
+Key points:
+- **Problem**: agent harnesses default to ripgrep, which scans all files; on large Enterprise monorepos `rg` invocations routinely exceed 15s, stalling agent workflows. Grep is one of the few agent operations whose latency scales with repo size.
+- **Technique**: n-gram inverted indexes (Zobel/Moffat/Sacks-Davis 1993; Russ Cox 2012) with trigram decomposition; explores suffix arrays; uses **sparse n-grams** (variable-length, deterministic CRC32-weighted — same family as ClickHouse regex and GitHub Code Search) with `build_all` at index time and `build_covering` at query time.
+- **Deployment**: indexes are built and queried **client-side** (unlike server-side semantic indexes) — freshness (agent reads its own writes), latency (Composer's high TPS makes roundtrips costly), and privacy. Sync based on a Git commit; two-file layout: postings file on disk + mmap'd sorted hash→offset lookup table with binary search.
+- **Results**: "instant grep" with Composer 2 creates a qualitative difference for agentic workflows, especially bug investigation in large repos (chromium examples); complements semantic indexes which handle meaning-based queries.
+
+Source: `raw/articles/2026-05-10_cursor_fast-regex-search.md`
 
 ## Sources
 

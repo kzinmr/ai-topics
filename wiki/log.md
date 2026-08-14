@@ -2,6 +2,18 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-08-14] raw-backlog-ingest (18:00) | 1 take (code-search-indexing created), 4 references
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-14 18:00, run 20260814T180014Z). Takes=1, References=4, Skips=0.
+- **Create: [[concepts/code-search-indexing]]** — Code Search Indexing for Agent Tools. Cursor "Fast regex search" research (Vicent Marti, Mar 23 2026): n-gram/trigram/sparse n-gram inverted indexes so agent grep/regex lookups skip full scans; client-side deployment (git-commit sync, mmap lookup table + postings file); "instant grep" with Composer 2 creates qualitative gain; complements semantic indexes. Related: cursor-ai, lexical-search, agentic-retrieval, code-intelligence-for-llms. Source: raw/articles/2026-05-10_cursor_fast-regex-search.md.
+- **Enriched: [[entities/cursor-ai]]** — Added "Fast Regex Search Research (March 2026)" section + source + updated date.
+- **Enriched: [[entities/dan-luu]]** — Added two non-AI essay catalog entries (Misidentifying talent; Against essential and accidental complexity) + sources.
+- **Enriched: [[entities/harvey]]** — Added "Legal Tech Overview Guide (June 2026)" section (six core categories, two-phase history, citation-grounding baseline) + source.
+- **Enriched: [[concepts/zig]] + [[entities/mitchell-hashimoto]]** — Added Zig Compiler Architecture section (AstGen -> ZIR pipeline) + Mitchell's Zig AstGen blog entry; `compiler` tag added to zig.md.
+- Tracking: all 5 filenames registered in /opt/data/.hermes/processed_raw_articles.json processed_articles sub-registry (status done) to prevent re-selection.
+- Archive: wiki/raw/archived/triage/raw_backlog/2026-08-14_20260814T180014Z.json (4 reference candidates, --keep-reference).
+
 ## [2026-08-14] watchdog | auto-fix header count + missing sources
 
 ### Changes

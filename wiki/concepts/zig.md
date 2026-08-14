@@ -2,12 +2,13 @@
 title: "zig"
 type: concept
 created: 2026-04-25
-updated: 2026-05-01
-tags: [concept, programming-language, open-source, developer-tooling]
+updated: 2026-08-14
+tags: [concept, programming-language, open-source, developer-tooling, compiler]
 status: L2
 sources:
   - "raw/articles/simonwillison.net--2026-apr-30-zig-anti-ai--e30e52cf.md"
   - "raw/articles/simonwillison.net--2026-apr-30-andrew-kelley--7be6c476.md"
+  - "raw/articles/mitchellh.com--zig-astgen--13b49ec8.md"
 ---
 
 # Zig
@@ -45,6 +46,14 @@ Bun maintains its own fork of Zig and achieved a **4× performance improvement**
 > "We do not currently plan to upstream this, as Zig has a strict ban on LLM-authored contributions."
 
 A Zig core contributor later noted the patch would have been rejected on technical grounds anyway (parallel semantic analysis has language-level implications), independent of the LLM policy.
+
+## Compiler Architecture
+
+Zig's compiler pipeline uses multiple intermediate representations. The first IR form, **ZIR (Zig Intermediate Representation)**, is an untyped IR generated per source file by the compiler stage internally called **AstGen**, which converts the AST directly into a sequence of instructions. The multi-IR pipeline is documented in detail by [[entities/mitchell-hashimoto]]'s compiler-construction series (mitchellh.com/zig/): AST → ZIR (AstGen) → later typed/analyzed forms → machine code.
+
+ZIR instruction encoding (from the AstGen deep-dive): a tiny Zig file like `const result = 42; export fn hello() u8 { return result; }` compiles to an `extended (struct_decl ...)` instruction containing a `block_inline` with `int (42)` and `break_inline` instructions; names are interned with line/hash metadata. ZIR is deliberately untyped — type checking and semantic analysis happen in subsequent stages — which keeps AstGen fast and simple.
+
+Source: `raw/articles/mitchellh.com--zig-astgen--13b49ec8.md` ([Zig AstGen: AST => ZIR](https://mitchellh.com/zig/astgen))
 
 ## Broader Implications for Open Source
 

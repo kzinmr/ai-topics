@@ -3,7 +3,7 @@ title: Mitchell Hashimoto
 type: entity
 handle: "@mitchellh"
 created: 2026-04-13
-updated: 2026-06-03
+updated: 2026-08-14
 depth: 22000
 status: L3
 tags:
@@ -233,6 +233,8 @@ Mitchell walked Richard Feldman through his actual AI-assisted workflow on a Gho
 - **[We Rewrote the Ghostty GTK Application](https://mitchellh.com/writing/ghostty-gtk-rewrite)** (Aug 14, 2025) — Deep technical post on interfacing GObject type system from Zig and verifying with Valgrind. "Our Zig codebase had one leak and one undefined memory access. That was really surprising to me (in a good way)."
 
 - **[Talk: Introducing Ghostty and Some Useful Zig Patterns](https://mitchellh.com/writing/ghostty-and-useful-zig-patterns)** (Sep 12, 2023) — Zig Showtime talk covering comptime interfaces, Swift integration, and Ghostty's architecture.
+
+- **[Zig AstGen: AST => ZIR](https://mitchellh.com/zig/astgen)** (2026) — Compiler deep-dive on how the Zig compiler converts the AST into ZIR (Zig Intermediate Representation), the untyped first IR form, via the "AstGen" stage. Documents ZIR's instruction encoding (extended struct_decl, block_inline, int, break_inline), name interning with line/hash metadata, and the multi-IR pipeline (AST → ZIR → later typed forms). Part of Mitchell's Zig compiler-construction series — see [[concepts/zig]] for the compiler-architecture summary.
 
 ### Performance Work
 
