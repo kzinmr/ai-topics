@@ -2,6 +2,22 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-14] watchdog | auto-fix header count + missing sources
+
+### Changes
+- `wiki/index.md`: Concepts header count 1981 → 1979 (2 `_archive` files were inflating it; entry count is authoritative per baseline §4b)
+- `wiki/concepts/reasoning-trace-extraction-vulnerability.md`: add missing `sources: []` frontmatter field
+
+### Verified healthy
+- validate_index.py: exit 0 (2961 lines, clean)
+- index corruption: 0 pipe prefixes, 0 triple brackets, 0 line-number prefixes
+- ghost entries: 0 (recursive scan); stale index entries: 0 (report's 8 = false positive)
+- log.md: header at line 1, 0 standalone pipes, 5399 lines
+- index dedup: 0 true duplicates (6 "2x" hits all redirect pairs)
+- frontmatter gaps: 1 sources (fixed), 26 created (escalate)
+
+---
+
 ## [2026-08-14] raw-backlog-ingest (14:00) | 0 takes, 4 references (entity enrichment), 1 skip
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-14 14:00, run 20260814T140029Z). Takes=0, References=4, Skips=1.
