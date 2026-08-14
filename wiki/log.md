@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-14] dreaming consolidation | 0 takes, 0 references, 11 skips (full saturation)
+- **Takes=0 saturation confirmed**: Checkpoint had `total_articles: 0`, `recent_raw_articles: 228`. All 24 unarchived articles from the 3-day window verified against today's pipeline outputs.
+- **Duplicate check**: Today's pipelines already processed all AI-relevant content — active-crawl (11:00: GLM-5.3, parametric-factuality, how-organizations-use-ai + GPT-5.6/Mistral OCR 4.1 enriched), blog-wiki-ingest (10:45: voyage-code-4, Gemini 3.7 Flash, Hadamard-668), newsletter-wiki-ingest (11:00: grok-4-6 enriched, lovable entity), raw-backlog-ingest (10:00/14:00/18:00: danlark, harvey, PG, zig, cursor-ai, overreacted-io, sgtatham, code-search-indexing).
+- **Skips**: Harvey The Brief (monthly roundup, harvey entity enriched today), ElevenLabs healthcare agent (tutorial guide), ElevenLabs Sounds (product announcement, no technical depth), Factory Agent Effectiveness (599B, too thin), Hebbia Third Bridge (already in entity page), OpenHands Agent Canvas (entity created yesterday), AISI incident report (comprehensive coverage in ai-agent-safety-incidents.md L233-255+), Modular Mojo 1.0 (entity page L2 coverage), TryCua macOS VM (page created 08-12), FLI Safety Index (page created 08-12), Simon Willison LLM Gemini (blog-wiki-ingest today).
+- Archive: wiki/raw/archived/triage/dreaming/2026-08-14_20260814T181151Z.json (11 candidates, 11 new archived, 0 dedup). Total archive URLs: 2,658.
+
+
 
 ## [2026-08-14] raw-backlog-ingest (18:00) | 1 take (code-search-indexing created), 4 references
 

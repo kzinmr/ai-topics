@@ -1,0 +1,140 @@
+{
+  "archived_at": "2026-08-14T18:15:51.641462+00:00",
+  "triage_run_id": "20260814T181151Z",
+  "source": "dreaming",
+  "summary_ja": "完全饱和シナリオ。RSS/newsletter記事0件、raw/articles 228件中24件が未アーカイブだが全て本日のパイプライン(active-crawl, blog-wiki-ingest, newsletter-wiki-ingest, raw-backlog-ingest)で処理済みまたは低価値製品アナウンス。Takes=0, References=0, Skips=11。前回dreaming(08-13)の21 decisions(1 ref + 20 skip)はconsumed済み。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-harvey-brief-aug-2026",
+      "source": "dreaming",
+      "source_name": "Harvey Blog",
+      "title": "The Brief: August 2026",
+      "url": "https://www.harvey.ai/blog/the-brief-august-2026",
+      "raw_path": "wiki/raw/articles/2026-08-14_harvey_the-brief-august-2026.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Harvey月次ニュースレターラウンドアップ。本日raw-backlog-ingest(10:00+18:00)でHarvey entity pageを既に強化済み(Due Diligence, KM Guide)。技術的深みなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The Brief: August 2026\n**Source**: [https://www.harvey.ai/blog/the-brief-august-2026](https://www.harvey.ai/blog/the-brief-august-2026)\nHarvey Agents execute legal work end-to-end\nLearn more\nHarvey Agents execute legal work end-to-end\nLearn more\nHarvey Agents execute legal work end-to-end\nLearn mo"
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-healthcare",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "ElevenAgents for Healthcare: scheduling agent",
+      "url": "https://elevenlabs.io/blog/elevenagents-for-healthcare-build-an-inbound-appointment-scheduling-agent",
+      "raw_path": "wiki/raw/articles/2026-08-14_elevenlabs_elevenagents-for-healthcare-build-an-inbound-appointment-scheduling-agent.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ElevenLabs ElevenAgentsハウツーガイド(ヘルスケア予約エージェント構築)。341行のチュートリアルだが技術的新規性なし。entity pageにInteraction Models, Admiral事例等のより重要な情報が既に掲載済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# ElevenAgents for Healthcare: Build a scheduling agent\n**Source**: [https://elevenlabs.io/blog/elevenagents-for-healthcare-build-an-inbound-appointment-scheduling-agent](https://elevenlabs.io/blog/elevenagents-for-healthcare-build-an-inbound-appointment-scheduling-agent)\nBlog\nResources\nElevenAgents"
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-sounds",
+      "source": "dreaming",
+      "source_name": "ElevenLabs Blog",
+      "title": "Sounds on ElevenMusic: free library of AI sounds",
+      "url": "https://elevenlabs.io/blog/sounds-on-elevenmusic-a-free-library-of-ai-sounds-and-loops",
+      "raw_path": "wiki/raw/articles/2026-08-14_elevenlabs_sounds-on-elevenmusic-a-free-library-of-ai-sounds-and-loops.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ElevenMusic サウンドライブラリの無料公開。製品アナウンスのみ、技術的深みなし。entity pageに掲載する価値低い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Sounds on ElevenMusic: a free library of AI sounds and loops\n**Source**: [https://elevenlabs.io/blog/sounds-on-elevenmusic-a-free-library-of-ai-sounds-and-loops](https://elevenlabs.io/blog/sounds-on-elevenmusic-a-free-library-of-ai-sounds-and-loops)\nBlog\nProduct\nSounds on ElevenMusic: a free libra"
+    },
+    {
+      "item_id": "dreaming-skip-factory-effectiveness",
+      "source": "dreaming",
+      "source_name": "Factory Blog",
+      "title": "Introducing Agent Effectiveness",
+      "url": "https://factory.ai/news/agent-effectiveness",
+      "raw_path": "wiki/raw/articles/2026-08-14_factory_agent-effectiveness.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Factory.aiのAgent Effectiveness機能紹介(599バイトのみ)。短すぎる製品アナウンス。entity pageにDGX Spark連携等のより重要な情報が既に掲載済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Introducing Agent Effectiveness | Factory.ai\n**Source**: [https://factory.ai/news/agent-effectiveness](https://factory.ai/news/agent-effectiveness)\nIntroducing Agent Effectiveness\nBy\nFactory\n-\nAugust 13, 2026\n-\n2\nminute read\nProduct\nShare\nSee how Factory usage maps to delivery speed, work prioriti"
+    },
+    {
+      "item_id": "dreaming-skip-hebbia-third-bridge",
+      "source": "dreaming",
+      "source_name": "Hebbia Blog",
+      "title": "Hebbia and Third Bridge integration",
+      "url": "https://www.hebbia.com/blog/hebbia-and-third-bridge-launch-strategic-integration",
+      "raw_path": "wiki/raw/articles/2026-08-12_hebbia_hebbia-and-third-bridge-launch-strategic-integration-to-enhance-financial.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Hebbia x Third Bridge統合。entity pageに14行のThird Bridge関連カバレッジが既に存在。前回のdreaming cycle(08-13)でskip判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Third Bridge Now Available in Hebbia\n**Source**: [https://www.hebbia.com/blog/hebbia-and-third-bridge-launch-strategic-integration-to-enhance-financial](https://www.hebbia.com/blog/hebbia-and-third-bridge-launch-strategic-integration-to-enhance-financial)\nThird Bridge Now Available in Hebbia\nPartn"
+    },
+    {
+      "item_id": "dreaming-skip-openhands-canvas",
+      "source": "dreaming",
+      "source_name": "GitHub/OpenHands",
+      "title": "OpenHands Agent Canvas README",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "raw_path": "wiki/raw/articles/2026-08-12_openhands_agent-canvas-readme.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ OpenHands Agent CanvasのREADME。entity pageが昨日(08-12)に作成済みで3行のcanvas記載あり。active-crawlで既に処理。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# OpenHands: Agent Canvas\n**Source:** GitHub — All-Hands-AI/OpenHands\n**URL:** https://github.com/All-Hands-AI/OpenHands\n**Published:** (ongoing project, fetched 2026-08-12)\n<a name=\"readme-top\"></a>\n<div align=\"center\">\n  <img src=\"https://assets.openhands.dev/logo-whitebackground.png\" alt=\"OpenHan"
+    },
+    {
+      "item_id": "dreaming-skip-aisi-incident",
+      "source": "dreaming",
+      "source_name": "UK AISI",
+      "title": "Incident Report: unsanctioned agent behaviour",
+      "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+      "raw_path": "wiki/raw/articles/2026-08-12_aisi_incident-report-unsanctioned-agent-behaviour.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ AISI事件報告は concepts/ai-agent-safety-incidents.md に詳細セクション(行233-255)として既に包括的にカバー済み。Mythos 5の17/19行動、OSSプロジェクトへのmalicious PR+ソーシャルエンジニアリングの全詳細が記載。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Incident Report: Unsanctioned Agent Behaviour During Cyber Testing\n**Source:** Incident Report: unsanctioned agent behaviour during cyber testing  | AISI Work\n**URL:** https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing\n**Published:** 2026-08-12\n**Author:"
+    },
+    {
+      "item_id": "dreaming-skip-modular-mojo",
+      "source": "dreaming",
+      "source_name": "Modular Blog",
+      "title": "Mojo 1.0",
+      "url": null,
+      "raw_path": "wiki/raw/articles/2026-08-11_modular_mojo-1-0.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Mojo 1.0リリース。entity page(entities/mojo.md)に1.0リリース情報が2行記載済み。raw-backlog(08-12)で「Considered but deferred (already covered)」判定。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Modular 26.5: Mojo 1.0 is here!\n**Source:** Modular: Modular 26.5: Mojo 1.0 is here!\n**Published:** 2026-08-11\n**Author:** Modular Team\nAugust 11, 2026 Modular 26.5: Mojo 1.0 is here! Modular Team Product Today, the Mojo language officially reaches 1.0: a milestone the language has been building t"
+    },
+    {
+      "item_id": "dreaming-skip-trycua-macos",
+      "source": "dreaming",
+      "source_name": "TryCua Blog",
+      "title": "macOS VM GPU Passthrough",
+      "url": null,
+      "raw_path": "wiki/raw/articles/2026-08-11_trycua-macos-vm-gpu-passthrough.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ TryCua macOS VM GPU passthrough。 concepts/local-llm/macos-vm-gpu-passthrough.md が昨日(08-12)作成済み(raw-backlog-ingestのtake)。11-16x速度向上の全データが記載。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Apple Silicon and macOS VMs: 11–16× Faster LLM Inference with llama.cpp\n_Published on August 11, 2026 by Francesco Bonacci and Johnny Franks_\nIf you've been following Cua from the start, you may remember that it began with a [Show HN](https://news.ycombinator.com/item?id=42908061) launch for Lume,"
+    },
+    {
+      "item_id": "dreaming-skip-fli-safety-index",
+      "source": "dreaming",
+      "source_name": "FLI",
+      "title": "FLI AI Safety Index Summer 2026",
+      "url": null,
+      "raw_path": "wiki/raw/articles/2026-07-01_fli_ai-safety-index-summer-2026.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ FLI AI Safety Index Summer 2026。 concepts/fli-ai-safety-index.md が08-12に作成済みで全社スコアカード(Anthropic C+, OpenAI C等)を完全カバー。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# FLI AI Safety Index: Summer 2026 Edition\n**Source:** Future of Life Institute\n**URL:** https://futureoflife.org/index\n**Published:** July 2026 (Summer 2026 Edition)\n## FLI AI Safety Index: Summer 2026 — Scorecard\n| Company | Grade | Score | Trend (vs Winter '25) | Risk Assessment | Current Harms |"
+    },
+    {
+      "item_id": "dreaming-skip-simon-gemini",
+      "source": "dreaming",
+      "source_name": "Simon Willison",
+      "title": "LLM Gemini 0.33 release notes",
+      "url": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
+      "raw_path": "wiki/raw/articles/simonwillison.net--2026-aug-13-llm-gemini--83c78bb6.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Simon Willisonのllm-gemini 0.33リリースノート。本日blog-wiki-ingest(10:45)で concepts/gemini/index.md にGemini 3.7 Flashセクションとして既にエンリッチ済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Release: llm-gemini 0.33\nSource: https://simonwillison.net/2026/Aug/13/llm-gemini/\nIt's been a while since the last\nllm-gemini\nrelease. This version of the plugin adds support for today's\nGemini 3.7 Flash\nrelease, plus\ngemini-3.6-flash\n,\ngemini-3.5-flash-lite\nand two embedding models\ngemini-embedd"
+    }
+  ]
+}
