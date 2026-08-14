@@ -416,7 +416,7 @@
 - [[entities/jeff-dean]] — Jeff Dean — Google Senior Fellow (27 years); co-created MapReduce, BigTable, TensorFlow, Google Brain; co-founder of Discovery Loop PBC (Aug 2026) with Ghemawat, Vinyals & Quoc Le
 - [[entities/jensen-huang]] — Jensen Huang — CEO and co-founder of NVIDIA; driving force behind GPU computing and AI hardware infrastructure
 - [[entities/jesse-zhang]] — Jesse Zhang — Co-founder & CEO of Decagon AI; product-driven critique of FDE-heavy deployment model
-- [[entities/jeremiah-lowin]] — Jeremiah Lowin
+- [[entities/jeremiah-lowin]] — Jeremiah Lowin — Founder & CEO of Prefect; creator of FastMCP (70% of MCP servers); agent-skills practitioner; 2026 Prefect × Dagster Labs acquisition
 - [[entities/jianlin-su]] — Jianlin Su — Chinese AI researcher; inventor of Rotary Position Embedding (RoPE), adopted by Llama, DeepSeek, Qwen, Mistral, and virtually all major open-source LLMs; DeepSeek researcher
 - [[entities/jim-fan]] — Jim Fan
 - [[entities/jim-nielsen]] — Jim Nielsen
@@ -591,7 +591,7 @@
 - [[entities/nvidia]] — NVIDIA; Alpamayo 2 Super AV reasoning model (Aug 2026)
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3
 - [[entities/nvidia-dgx-spark]] — NVIDIA DGX Spark
-- [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw
+- [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw — open-source reference stack for sandboxed AI agents (OpenClaw, Hermes, LangChain Deep Agents) inside OpenShell; managed inference + network policy + MCP management on DGX Spark
 - [[entities/nvidia-nemotron-3-nano-omni]] — NVIDIA Nemotron 3 Nano Omni
 - [[entities/nvidia-nemotron-3-ultra]] — NVIDIA Nemotron 3 Ultra
 - [[entities/nvidia-nemotron-labs-diffusion]] — NVIDIA Nemotron-Labs-Diffusion

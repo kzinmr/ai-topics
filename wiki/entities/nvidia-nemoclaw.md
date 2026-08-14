@@ -3,20 +3,39 @@ title: NVIDIA NemoClaw
 type: entity
 aliases: [nemoclaw, nemo-claw]
 created: 2026-04-15
-updated: 2026-04-15
-status: L2
+updated: 2026-08-14
 sources:
   - https://github.com/NVIDIA/NemoClaw
+  - https://docs.nvidia.com/nemoclaw/latest/
+  - https://docs.nvidia.com/nemoclaw/latest/about/ecosystem.html
   - https://nemoclawai.io/blog/getting-started-nemoclaw-dgx-spark/
   - https://build.nvidia.com/spark/nemoclaw/instructions
-tags: [entity, ai-agents, local-llm, nvidia, security, hardware]
+tags: [entity, ai-agents, local-llm, nvidia, security, hardware, sandbox, agent-runtime, open-source]
+related:
+  - entities/nvidia-openshell
+  - entities/nvidia-dgx-spark
+  - entities/peter-steinberger
+  - entities/openclaw
+  - entities/hermes-agent
+  - concepts/security-and-governance/agent-sandboxing
+  - concepts/harness-engineering
 ---
 
 # NVIDIA NemoClaw
 
-NVIDIA NemoClaw is a secure AI agent development framework designed for running AI agents with enterprise-grade isolation. It bundles **OpenShell** (sandbox runtime), **OpenClaw** (agent framework), a **Privacy Router** (data routing control), and a **Network Policy Engine** (deny-by-default networking). The stack is designed to run locally on hardware like the DGX Spark, with full support for local inference via Ollama.
+NVIDIA NemoClaw is an open-source **reference stack for sandboxed AI agents** — an Apache-2.0 project that runs supported agents (OpenClaw by default, plus Hermes and LangChain Deep Agents Code) more safely inside **OpenShell** containers. It combines a host CLI, a versioned blueprint, an agent-specific integration layer, managed inference, network policy, MCP server management, snapshots, and lifecycle operations. The stack is designed to run locally on hardware like the DGX Spark, with full support for local inference via Ollama, vLLM, llama.cpp, and NVIDIA NIM.
 
-Official GitHub: https://github.com/NVIDIA/NemoClaw (19K+ stars)
+Official GitHub: https://github.com/NVIDIA/NemoClaw (22K+ stars, 3K+ forks, active daily releases)
+
+> **Positioning**: NemoClaw sits *above* OpenShell — it calls OpenShell APIs/CLI to create and configure the sandbox that runs the agent. OpenShell is the execution environment (sandbox lifecycle, network/filesystem/process policy, inference routing); NemoClaw is the NVIDIA reference stack on the host (`nemoclaw` CLI, versioned blueprint, managed inference, MCP servers, messaging channels, host readiness, lifecycle operations). If you want maximum flexibility with custom images, use OpenShell directly; if you want a tested, hardened OpenClaw/Hermes/Deep-Agents setup, use NemoClaw.
+
+## Supported Agents
+
+| Agent | Status | Guide |
+|-------|--------|-------|
+| **OpenClaw** | Default | [Quickstart with OpenClaw](https://docs.nvidia.com/nemoclaw/latest/get-started/quickstart.html) |
+| **Hermes** | Supported | [Quickstart with Hermes](https://docs.nvidia.com/nemoclaw/latest/get-started/quickstart-hermes.html) |
+| **LangChain Deep Agents Code** | Supported | [Quickstart with Deep Agents](https://docs.nvidia.com/nemoclaw/latest/user-guide/deepagents/get-started/quickstart.html) |
 
 ## Architecture
 
@@ -47,18 +66,26 @@ DGX Spark (Ubuntu 24.04, aarch64, cgroup v2, 128 GB unified memory)
 - **Deny-by-default network policy**: Explicit allowlists required for outbound connections
 - **PII redaction**: Automatic detection and redaction of sensitive data in logs
 - **Audit logging**: Immutable audit logs for all agent actions
+- **Credential custody**: Inference credentials and managed MCP bearer values live *outside* the sandbox — OpenShell replaces real credentials with placeholder tokens at egress via its L7 proxy; NemoClaw auto-creates providers during onboarding and filters sensitive host env vars (API keys, `DISCORD_BOT_TOKEN`, `SLACK_BOT_TOKEN`, `TELEGRAM_BOT_TOKEN`) from sandbox creation commands to prevent leakage through build args
+- **Process limits**: Best-effort `ulimit -u 512` applied in the container entrypoint
+- **Sandbox hardening**: Capability drops, `setpriv` privilege transitions (replacing legacy gosu), corporate CA trust staging, credential rotation, trusted computing base reviews (including OpenShell 0.0.71/0.0.72 security reviews)
 
 ### Local Inference Support
 - **Ollama integration**: Run models locally on DGX Spark's GPU
-- **Supported models**: Nemotron 3 Super 120B, Nemotron 120B MoE (INT4 quantized)
+- **vLLM, llama.cpp, NVIDIA NIM**: Supported local inference servers (incl. two-node DGX Spark / DGX Station setups)
+- **Supported models**: Nemotron 3 Super 120B, Nemotron 120B MoE (INT4 quantized), Nemotron 3.5 Lightning
 - **No API key required**: Fully local operation with proper hardware
 - **Model size**: ~87 GB for 120B parameter GGUF models
+- **Managed inference routing**: `inference.local` route with provider validation, model capability audit, timeouts, and shared gateway routes
 
 ### Agent Framework
 - **Blueprint system**: Pre-built agent configurations (customer-support, sales-ops, security-ops, infra-management, code-review, data-pipeline)
 - **Concurrent tasks**: Support for up to 8 concurrent agent tasks
 - **Human approval workflows**: Operator approval for high-risk actions
 - **Web dashboard**: Real-time monitoring at `http://127.0.0.1:18789`
+- **MCP server management**: Authenticated HTTPS Streamable HTTP MCP servers for all supported agent runtimes, with credential placeholders replaced at approved egress boundaries
+- **Snapshots & recovery**: Create/restore snapshots, rebuild/recover sandboxes, host readiness reporting
+- **Messaging channels**: Telegram, Discord, Slack, WhatsApp (QR-paired sessions) with channel-specific policy
 
 ## Installation on DGX Spark
 
@@ -180,13 +207,21 @@ cd ~/.nemoclaw/source
 
 **Note:** Uninstaller removes sandboxes, gateway, npm package, Docker artifacts, and state dirs. Preserves Docker, Node.js, npm, Ollama binaries.
 
+## Release Cadence
+
+NemoClaw is an **alpha project** with near-daily release notes (v0.0.108 as of August 12, 2026). Recent highlights include: read-only host mounts (`--host-mount`), an Experimental **Muse Glimmer** managed vLLM profile for one DGX Spark, onboarding recovery improvements, messaging credential rotation, stricter inference validation, MCP registration into the OpenClaw workspace config, Hermes configuration validation, and hardened managed images (Node.js 22.23.2, `setpriv`, BuildKit attestation verification, Sigstore auditing).
+
 ## Related
 
+- [[entities/nvidia-openshell]] — OpenShell sandbox runtime, the layer below NemoClaw
 - [[entities/nvidia-dgx-spark]] — DGX Spark hardware platform
 - [[entities/peter-steinberger]] — OpenClaw creator, OpenAI
+- [[entities/hermes-agent]] — Hermes agent runtime, supported by NemoClaw
 - [[concepts/local-llm/server-dgx-spark]] — Complete DGX Spark setup guide
 - [[concepts/local-llm/_index]] — Local LLM inference overview
-- [[concepts/capabilities-based-security]] — Security philosophy matching NemoClaw's approach
+- [[concepts/capability-based-security]] — Security philosophy matching NemoClaw's approach
+- [[concepts/security-and-governance/agent-sandboxing]] — Agent sandboxing patterns
+- [[concepts/harness-engineering]] — Harness engineering umbrella
 
 ## References
 
