@@ -66,6 +66,13 @@ def extract_url_from_article(path: Path) -> str | None:
                 url = line.split(":", 1)[1].strip().strip('"').strip("'")
                 if url.startswith("http"):
                     return url
+            if line.startswith("source:"):
+                # Some raw articles store the canonical URL in source: frontmatter
+                # (e.g. meta.com essays, michaellivs.com blog posts). Only accept
+                # http(s) values — non-URL sources (names, domains) are ignored.
+                url = line.split(":", 1)[1].strip().strip('"').strip("'")
+                if url.startswith("http"):
+                    return url
             if line.startswith("- **Source:**"):
                 # Format: - **Source:** [text](url) or - **Source:** url
                 import re
@@ -75,6 +82,19 @@ def extract_url_from_article(path: Path) -> str | None:
     except Exception:
         pass
     return None
+
+
+def normalize_archive_url(url: str) -> str:
+    """Normalize URLs for archive-dedup comparison.
+
+    Substack email tracking links carry time-limited signed query tokens
+    (e.g. /redirect/<uuid>?j=eyJ1Ij...). The stable identity is the path
+    (the UUID), so strip the query for /redirect/ URLs. Other URLs are
+    kept as-is to avoid collapsing distinct pages onto generic paths.
+    """
+    if "/redirect/" in url:
+        return url.split("?", 1)[0]
+    return url
 
 
 def extract_body_excerpt(path: Path, length: int = BODY_EXCERPT_LENGTH) -> str:
@@ -151,6 +171,7 @@ def collect(args: list[str]) -> dict:
     # 2. Load archive index for cross-reference
     archive = load_archive_index()
     archived_urls = set(archive.get("urls", []))
+    archived_urls_norm = {normalize_archive_url(u) for u in archived_urls}
 
     # 3. List raw articles, filter unprocessed — pre-compute mtime
     now_ts = datetime.now(timezone.utc).timestamp()
@@ -218,7 +239,8 @@ def collect(args: list[str]) -> dict:
         # runs although all were archived + wiki-captured). URL extraction is
         # cheap and only runs on candidates that pass the filters above.
         cand_url = extract_url_from_article(path)
-        if cand_url and cand_url in archived_urls:
+        if cand_url and (cand_url in archived_urls
+                         or normalize_archive_url(cand_url) in archived_urls_norm):
             continue  # already archived — previously triaged, do not re-select
         candidates.append((name, size, path, mtime))
 

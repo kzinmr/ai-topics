@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-08-14T04:20:47.562430+00:00",
+  "triage_run_id": "20260814T040058Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog 04:00バッチ（5記事）。Takes=0、References=0、Skips=5。Zuckerberg「The Future is for Everyone」（concepts/mark-zuckerberg.md + personal-superintelligence.md）、ESNI SWEタイムライン予測（concepts/ai-timelines-esni-tasks.md）、Simon Willison Lennyポッドキャストハイライト（entities/simon-willison.md）、Justine Tunney rseq（entities/justine-tunney.md）、Michaelliv generative UI（entities/michael-lively.md + concepts/generative-ui.md）は全て既存ページで完全カバー済み。全5件スキップ。同時に processed_raw_articles.json のトラッキングを完了状態（skipped + processed_articles サブレジストリ）に更新し、同一バッチの再選択ループ（8/12-13に5回連続発生）を解消。collector に source: frontmatter パースと substack /redirect/ クエリ正規化によるアーカイブ照合改善を追加（dry-run で再選択されないことを確認）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-justine-tunney-rseq-0400",
+      "source": "raw_backlog",
+      "source_name": "justine.lol (Justine Tunney)",
+      "title": "Restartable Sequences",
+      "url": "https://justine.lol/rseq/",
+      "raw_path": "~/wiki/raw/articles/justine.lol--rseq--3947646a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ スキップ（既存ページで完全カバー済み）。本文は Linux 4.18+ の restartable sequences (rseq) チュートリアル：ロック/アトミックなしのスレッドセーフデータ構造、コア数に応じた malloc 高速化（RPI5 4コア 3x、Ampere Altra 128コア 34x、Threadripper 96コア 43x）、ヒットカウンタで mutex 比100万倍、cosmopolitan libc での活用、LLM はまだ rseq 構築を支援できないという見解、Google Gradient Canopy（TPU/Gemini）からのオファー。entities/justine-tunney.md の「Restartable Sequences (rseq) — May 2026」節に性能表・主要洞察・キャリア更新として完全キャプチャ済み（raw ファイルは sources に登録済み）。スキップ。",
+      "candidate_wiki_path": "entities/justine-tunney",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-michaelliv-generative-ui-0400",
+      "source": "raw_backlog",
+      "source_name": "michaellivs.com (Michael Lively)",
+      "title": "Reverse-engineering Claude's generative UI - then building it for the terminal",
+      "url": "https://michaellivs.com/blog/reverse-engineering-claude-generative-ui",
+      "raw_path": "~/wiki/raw/articles/2026-03-13_michaellivs_reverse-engineering-claude-generative-ui.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ スキップ（既存ページで完全カバー済み）。本文は claude.ai の generative UI 実装のリバースエンジニアリング：show_widget はツールコール（markdown ではなくパラメータペイロード）、read_me による progressive disclosure、モジュール体系（diagram/mockup/interactive/chart/art）、ストリーミング DOM 注入、CSP サンドボックス、それを pi ターミナルエージェント用に Glimpse + morphdom で再実装。entities/michael-lively.md（49行）はこの raw 記事を sources として作成済み、concepts/generative-ui.md（151行）がシステム全体をカバー。スキップ。",
+      "candidate_wiki_path": "entities/michael-lively",
+      "body_excerpt": ""
+    }
+  ]
+}
