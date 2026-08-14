@@ -2,7 +2,7 @@
 title: Paul Graham
 type: entity
 created: 2026-04-09
-updated: 2026-08-13
+updated: 2026-08-14
 tags:
   - person
   - blogger
@@ -22,6 +22,7 @@ sources:
   - raw/articles/paulgraham.com--spam-html--1eade79d.md
   - raw/articles/paulgraham.com--nerds-html--d2271270.md
   - raw/articles/paulgraham.com--startupmistakes-html--38e869c5.md
+  - raw/articles/paulgraham.com--growth-html--28e90f17.md
 ---
 
 # Paul Graham
@@ -152,6 +153,20 @@ Graham distinguishes sharply between "work" (your portable intellectual output) 
 - Your **work** is something you carry from job to job — it's your portfolio
 - Don't equate work with a job; treat your output as your identity
 - Develop a **habit of working on your own projects** even while employed
+
+### 10. Startup = Growth: The Definition of a Startup (September 2012)
+
+Graham's canonical definitional essay: **"A startup is a company designed to grow fast."** Being newly founded is not sufficient — nor is working on technology, taking VC funding, or having an "exit." Everything else associated with startups follows from growth, which makes growth usable as a compass for nearly every startup decision.
+
+**Redwoods vs. bean sprouts** — a startup is different by nature, not just by intention. To grow really big, a company must (a) make something lots of people want, and (b) reach and serve all those people. Most businesses are tightly constrained on one or both axes (a barbershop passes (a) but fails (b)); the distinctive feature of successful startups is being constrained on neither. Software is the classic way to solve (b).
+
+**Constraints protect ordinary companies** — a niche both limits and defines a business (bar + neighborhood is a sufficient idea for a small business). Startups face ferocious competition precisely because the prize is larger, and the obvious startup ideas are already taken — so successful founders usually see problems others can't (Wozniak wanting his own computer in 1975; Page and Brin noticing search engines were worse than they could be). Two distinct connections between startups and technology: rapid change uncovers big soluble problems, and startups create new ways of doing things.
+
+**Rate: the one number every founder should know** — "startup" is a pole, not a threshold; success is defined by the growth rate, measured as a ratio (new customers / existing customers), not an absolute count. Growth follows a three-phase S-curve (slow start while figuring out what to do → rapid ascent → slowing as a big company), and the slope of the ascent defines the company. YC measures weekly: **5-7% a week is good, 10% exceptional, 1% a sign you haven't figured it out**. Measure revenue; active users is a reasonable proxy when not charging.
+
+**Compass: growth as an optimization problem** — pick a target growth rate and hit it every week; "if they hit that number, they're successful for that week... if they don't, they've failed in the only thing that mattered." This reduces the bewilderingly multifarious problem of starting a startup to a single problem — anything that gets you the target growth rate is ipso facto right. The compounding math is stark: 1%/week grows 1.7x/year vs 5%/week at 12.6x/year; a company making $1,000/month growing 5%/week makes $25M/month four years later (vs $7,900 at 1%). Small variations in growth rate produce qualitatively different outcomes — which is also why startup failure rates are high and expected: in an efficient market, failed startups should be proportionate to the size of successes.
+
+The essay is the foundation of YC's growth-obsessed methodology and one of Graham's most-cited definitions of the startup category. It complements "Superlinear Returns" (Core Idea 1): growth rate is the operational, measurable proxy for the compounding dynamics that make startup outcomes superlinear.
 
 ## Programming Language Popularity Theory (May 2001)
 

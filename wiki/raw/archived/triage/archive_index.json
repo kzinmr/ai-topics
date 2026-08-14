@@ -130,6 +130,7 @@
     "https://blog.jim-nielsen.com/2026/tide-lifts-all-boats/",
     "https://blog.llvm.org/posts/2023-03-16-adding-new-llvm-jitlink-target-object-backend/",
     "https://blog.llvm.org/posts/2025-03-11-flang-new/",
+    "https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server",
     "https://blog.miguelgrinberg.com/post/i-am-not-a-reverse-centaur",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-3---one-to-many-relationships",
     "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-4---many-to-many-relationships",
@@ -2058,6 +2059,7 @@
     "https://www.aibyaakash.com/p/claude-code-5",
     "https://www.aibyaakash.com/p/gpt-5-6-setup-guide",
     "https://www.alibabacloud.com/en/campaign/ai-landing-page-token",
+    "https://www.anthropic.com/engineering/claude-code-best-practices",
     "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
     "https://www.anthropic.com/news/claude-opus-5",
     "https://www.anthropic.com/news/confidential-draft-s1-sec",
@@ -2616,5 +2618,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-14T04:20:47.563002+00:00"
+  "updated": "2026-08-14T10:20:08.655542+00:00"
 }

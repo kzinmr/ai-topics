@@ -197,6 +197,7 @@
 - [[entities/daniel-miessler]] — Daniel Miessler
 - [[entities/daniel-tunkelang]] — Daniel Tunkelang
 - [[entities/daniel-van-strien]] — Daniel van Strien
+- [[entities/danlark-org]] — Daniel Kutenin (danlark) — Search infrastructure engineer (ex-Yandex, Google); C++ performance, algorithms, and large-scale systems blog; Telegram Data Clustering Contest 3rd place write-up (fastText/CLD2/HNSW news aggregator)
 - [[entities/daringfireball-net]] — John Gruber
 - [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)
 - [[entities/databricks]] — Databricks
@@ -357,7 +358,7 @@
 - [[entities/hanchunglee]] — Hanchunglee
 - [[entities/hark]] — Hark; Handoff computer-using agent, $0.18/M input tokens vs GPT 5.5's $5.00, 5s per-turn (Aug 10)
 - [[entities/harrison-chase]] — Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framewor...
-- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8)
+- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8); AI-Powered Due Diligence for M&A — data room workflows, GSK Stockmann 15-75% savings, PwC 10k+ workflows, 25k+ custom agents (Apr 2026)
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM; Salesforce Ventures Generative AI Fund; relational intelligence category (L3)
 - [[entities/halo-tamper-evident-agent-runtime]] — Open-source tamper-evident runtime evidence for AI agents; append-only hash-chained log (Apache-2.0)
 - [[entities/hebbia]] — Hebbia
@@ -631,7 +632,7 @@
 - [[entities/parsagon]] — Parsagon
 - [[entities/paul-hoekstra]] — Paul Hoekstra — Agentic Engineering 4-layer framework, Context Rot mechanistic explanation (Paul's Pipeline)
 - [[entities/paul-iuzstin]] — Paul Iusztin
-- [[entities/paulgraham-com]] — Paul Graham
+- [[entities/paulgraham-com]] — Paul Graham; Startup = Growth definitional essay (growth rate as the one number founders must know), YC weekly 5-7% benchmark, growth-as-compass methodology (Sep 2012)
 - [[entities/perceptron-ai]] — Perceptron AI
 - [[entities/periodic-ai]] — Periodic AI (Periodic Labs) — RL research company led by William Fedus (ex-OpenAI); AI Scientist
 - [[entities/perplexity]] — Perplexity

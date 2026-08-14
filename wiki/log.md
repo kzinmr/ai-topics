@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-14] raw-backlog-ingest (10:00) | 3 takes (danlark entity created, harvey + PG enriched), 2 skips
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-14 10:00, run 20260814T100030Z). Takes=3, References=0, Skips=2.
+- **Create: [[entities/danlark-org]]** — Daniel Kutenin (danlark), search infrastructure engineer (ex-Yandex, Google). New entity page built from the backlog batch + 9 other unprocessed danlark raw articles; core section covers "News Aggregator from Scratch in 2 Weeks" (Telegram Data Clustering Contest, 3rd place): patched Gumbo parser (16-18k articles/sec), CLD2 language detection (99.35% PR via Toloka), fastText news/category classification (SSE4.2 rebuild), SLINK thread clustering + Siamese triplet-loss embeddings, HNSW k-NN dynamic server with protobuf sharding. Source: raw/articles/danlark.org--2020-07-31-news-aggregator-from-scratch-in-2-weeks--d0a26858.md.
+- **Enriched: [[entities/harvey]]** — Added "AI-Powered Due Diligence for M&A (April 2026)" section: data room organization -> contract review -> synthesis workflow, M&A lifecycle coverage, 4 attributes separating legal-grade from general-purpose AI (model evals, citation grounding, data security, workflow integration), customer evidence (GSK Stockmann 15-20% / up to 75% unstructured, Bruchou & Funes, PwC 10,000+ workflows, McKinsey), 5-question selection framework, agentic next phase + 50-75% cost-drop economics. Source added: raw/articles/2026-05-10_harvey_ai-due-diligence-for-m-and-a.md.
+- **Enriched: [[entities/paulgraham-com]]** — Added "Startup = Growth (September 2012)" as Core Idea 10: startup = company designed to grow fast, redwoods vs bean sprouts, (a)/(b) market constraint model, constraints protect ordinary companies, growth rate as the one number (ratio, not absolute), YC weekly 5-7%/10%/1% benchmarks, growth-as-compass optimization framing, compounding math (1%/wk 1.7x vs 5%/wk 12.6x per year). Source added: raw/articles/paulgraham.com--growth-html--28e90f17.md.
+- **Skips (already captured):** 2026-05-08_anthropic-engineering_claude-code-best-practices.md (concepts/claude-code/claude-code-best-practices.md exists, 159 lines, same raw source); blog.miguelgrinberg.com--post-how-to-host-your-own-email-server--850145a7.md (entities/miguel-grinberg.md timeline + quotes + References already cover it).
+- Tracking: all 5 filenames registered in /opt/data/.hermes/processed_raw_articles.json processed_articles sub-registry (status done) to prevent re-selection.
+- Archive: wiki/raw/archived/triage/raw_backlog/2026-08-14_20260814T100030Z.json (3 skip candidates, --keep-reference).
+
 ## [2026-08-14] raw-backlog-ingest (04:00) | 5 skips (all already captured) + collector dedup fix
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-14 04:00, run 20260814T040058Z). Takes=0, References=0, Skips=5.

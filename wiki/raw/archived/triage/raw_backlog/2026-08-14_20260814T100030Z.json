@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-08-14T10:20:08.654950+00:00",
+  "triage_run_id": "20260814T100030Z",
+  "source": "raw_backlog",
+  "summary_ja": "raw-backlog-ingest 10:00バッチ（5記事）を処理。3 takes / 2 skips。danlark.org（Daniel Kutenin）の新規エンティティページ作成（Telegram Data Clustering Contest 3位のニュースアグリゲータ記事: Gumboパーサ高速化、CLD2言語検出99.35%PR、fastText分類、SLINK/HNSWクラスタリング）。harvey.md に「AI-Powered Due Diligence for M&A (Apr 2026)」セクション追記（データルーム組織化→契約レビュー→レポート生成、汎用AIが不足する4属性、GSK Stockmann 15-75%削減、PwC 1万+ワークフロー、25k+カスタムエージェント）。paulgraham-com.md に「Startup = Growth (Sep 2012)」をCore Idea 10として追記（成長率が唯一の指標、YC週次5-7%ベンチマーク）。スキップ2件は既存ページで完全カバー済み（claude-code-best-practices概念ページ、miguel-grinbergエンティティ）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-claude-code-best-practices-1000",
+      "source": "raw_backlog",
+      "source_name": "Anthropic Engineering",
+      "title": "Best practices for Claude Code - Claude Code Docs",
+      "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+      "raw_path": "~/wiki/raw/articles/2026-05-08_anthropic-engineering_claude-code-best-practices.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ スキップ（既存ページで完全カバー済み）。concepts/claude-code/claude-code-best-practices.md（159行、2026-06-02作成）が存在し、sourcesに本raw記事と同一URLを明示。本文はコンテキストウィンドウ管理を軸に、検証手段の提供（テスト・スクリーンショット）、explore→plan→code、CLAUDE.md作成、権限設定、MCPサーバ接続、hooks、skills、サブエージェント、非対話モード、auto mode等を網羅するが、これらは全て既存概念ページに収録済み。",
+      "candidate_wiki_path": "concepts/claude-code/claude-code-best-practices.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-miguelgrinberg-email-server-1000",
+      "source": "raw_backlog",
+      "source_name": "miguelgrinberg.com",
+      "title": "How to Host your Own Email Server",
+      "url": "https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server",
+      "raw_path": "~/wiki/raw/articles/blog.miguelgrinberg.com--post-how-to-host-your-own-email-server--850145a7.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ スキップ（既存ページで完全カバー済み＋非AI）。entities/miguel-grinberg.mdのTimeline 2026行に「self-hosted email server guide」記載、Core Ideasに本記事の引用（「Because the prospect of adding yet another dependency on Big Tech is depressing...」）が2箇所、Referencesに同一rawファイル名が掲載済み。本文はPostfix/DKIM/SPF/DMARC/逆引きDNSによる自己ホストメールの手順解説で、LLM/AIエージェント関連性も低い。",
+      "candidate_wiki_path": "entities/miguel-grinberg.md",
+      "body_excerpt": ""
+    }
+  ]
+}

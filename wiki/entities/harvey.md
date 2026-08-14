@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-13
+updated: 2026-08-14
 tags:
   - security
   - company
@@ -32,6 +32,7 @@ sources:
   - raw/articles/2026-08-05_harvey_ai-tax-research.md
   - raw/articles/2026-08-05_harvey_playbook-builder-in-harvey.md
   - raw/articles/2026-08-11_harvey_corporate-compliance-ai.md
+  - raw/articles/2026-05-10_harvey_ai-due-diligence-for-m-and-a.md
 ---
 
 # Harvey
@@ -173,6 +174,32 @@ Harvey published a comparison of AI-native legal research against traditional da
 **Evaluation framework — five questions for a skeptical buyer:** What sources ground the answers (and can you see them)? Is every statement traceable to an opinion or statute you can open? How does the system handle negative treatment? Has performance been measured on realistic legal tasks rather than demos? How is client data handled? Harvey points to its published results on **BigLaw Bench** (realistic legal tasks) and the **Legal Agent Bench** (agentic work) as the standard any platform should meet, and recommends the cheapest test: bring a real matter already researched by your team to the demo and compare the grounded answer.
 
 Source: raw/articles/2026-08-01_harvey_legal-ai-vs-traditional-legal-research.md
+
+## AI-Powered Due Diligence for M&A (April 2026)
+
+Harvey's practical guide to AI due diligence frames it as closing a coverage gap: when associates review a data room manually, volume and time pressure mean not every document gets the same depth of analysis. AI applies a consistent analytical framework across the full dataset — extracting key provisions, cross-referencing obligations across thousands of contracts, and producing structured reports for lawyers to review.
+
+**The AI due diligence workflow maps to review-process stages:**
+1. **Data room organization** — AI classification models categorize documents by type, jurisdiction, party, and subject matter, compressing what traditionally took the first week of diligence into a day-scale task. On the sell side the same models flag employee data and competitively sensitive information and propose redactions.
+2. **Contract review and risk assessment** — The full document population is analyzed with a consistent framework (anchor client contracts and ten-year-old vendor agreements get the same rigor), with anomalies flagged and structured outputs produced.
+3. **Synthesis and reporting** — Generative models draft diligence summaries, red flag reports, and issues lists organized by risk category, priority, and deal relevance, with citations back to specific provisions. Outputs are explicitly framed as first drafts for lawyers to review, not final work product.
+
+**Across the M&A lifecycle**: pre-deal outside-in diligence (EY cited: public-source analysis that used to take a week of analyst work can be assembled in hours), data room ingestion, contract review, deal-document review (flagging inconsistencies with the term sheet), and post-close integration (obligation tracking, compliance monitoring, contract migration — still emerging).
+
+**Why general-purpose AI falls short** — four attributes separate legal-grade platforms: (1) **model evaluations** calibrated against how lawyers actually summarize, draft memos, and redline; (2) **citation grounding** — every finding must trace to a specific document and clause (Bloomberg Law noted courts sanctioning fabricated AI citations); (3) **data security** — matter-level isolation so one client's deal documents are never accessible to another's queries, plus contractual guarantees that customer data is not used for model training; (4) **workflow integration** — meeting lawyers inside iManage or Microsoft 365 rather than forcing tool-switching.
+
+**Customer evidence in the guide:**
+- **GSK Stockmann** — 15-20% time savings on standard diligence workflows; up to **75%** on unstructured data rooms (documents not pre-organized or indexed).
+- **Bruchou & Funes de Rioja** — automated document categorization, risk identification, and contract-term analysis; surfaced critical insights early in a recent transaction.
+- **PwC** — co-developed diligence workflows executed **over 10,000 times**, generating red flag reports on live deal processes; Harvey used end-to-end across PwC's Deals practice.
+- **McKinsey observation** — the next wave of advantage goes to firms that systematically capture and curate proprietary datasets, building institutional knowledge into AI workflows.
+- Platform scale cited: **25,000+ custom agents** on Harvey's platform; 100,000+ legal professionals across 1,500+ organizations.
+
+**Selection framework (five questions)**: models trained specifically for legal work; every output traceable to source (with sentence-level citations and LexisNexis good-law validation); data protection built for deal-level sensitivity (logical separation, regional residency US/EU/AU, SOC 2 Type II / ISO 27001 / ISO 27701); integration with existing tools; and ability to handle real-world complexity (multi-jurisdictional, multi-language, compressed timelines).
+
+**Direction**: the guide positions the next phase as **agentic** — agents that ingest a full data room, run a structured review protocol, flag issues, draft a preliminary report, and route findings to team members, checking in with humans at decision points. Economic framing: when the cost of reviewing a full contract population drops 50-75%, deals too small to justify full diligence become viable and the labor component of diligence shrinks relative to the judgment component.
+
+Source: raw/articles/2026-05-10_harvey_ai-due-diligence-for-m-and-a.md
 
 ## Agentic Security Operations Center (May 2026)
 
