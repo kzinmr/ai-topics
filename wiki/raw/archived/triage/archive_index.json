@@ -204,11 +204,13 @@
     "https://danluu.com/bitc-retrospective/",
     "https://danluu.com/branch-prediction/",
     "https://danluu.com/cache-incidents/",
+    "https://danluu.com/codenames/",
     "https://danluu.com/deconstruct-files/",
     "https://danluu.com/essential-complexity/",
     "https://danluu.com/google-sre-book/",
     "https://danluu.com/julialang/",
     "https://danluu.com/latency-mitigation/",
+    "https://danluu.com/look-stupid/",
     "https://danluu.com/nothing-works/",
     "https://danluu.com/programming-books/",
     "https://danluu.com/startup-options/",
@@ -651,6 +653,7 @@
     "https://hex.tech/blog/analytics-tools-non-technical-teams/",
     "https://hex.tech/blog/caching-is-all-you-need",
     "https://hex.tech/blog/category/",
+    "https://hex.tech/blog/comprehensive-guide-to-natural-language-algorithms/",
     "https://hex.tech/blog/context-engineering-best-practices/",
     "https://hex.tech/blog/data-analytics-ai-adoption-strategy/",
     "https://hex.tech/blog/data-literacy-vs-data-fluency",
@@ -2207,6 +2210,7 @@
     "https://www.gilesthomas.com/2026/08/chinchilla-check",
     "https://www.glean.com/blog/",
     "https://www.glean.com/blog/agent-orchestration-platforms-compared",
+    "https://www.glean.com/blog/best-ai-tools-for-software-engineers",
     "https://www.glean.com/blog/create-ai-strategy-2024",
     "https://www.glean.com/blog/email-automation-automated-email-campaigns-tools-and-workflows",
     "https://www.glean.com/blog/enterprise-knowledge-graph-cases-7-applications-that-deliver-roi",
@@ -2252,6 +2256,7 @@
     "https://www.harvey.ai/blog/benefits-of-ai-in-legal-operations",
     "https://www.harvey.ai/blog/caryn-sandler-is-shaping-future-of-legal-innovation",
     "https://www.harvey.ai/blog/contract-review-checklist",
+    "https://www.harvey.ai/blog/contract-review-process",
     "https://www.harvey.ai/blog/contract-review-software",
     "https://www.harvey.ai/blog/corporate-compliance-ai",
     "https://www.harvey.ai/blog/employment-contract-drafting",
@@ -2662,5 +2667,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-14T18:23:54.734058+00:00"
+  "updated": "2026-08-14T22:12:54.681121+00:00"
 }

@@ -34,6 +34,7 @@ sources:
   - raw/articles/2026-08-11_harvey_corporate-compliance-ai.md
   - raw/articles/2026-05-10_harvey_ai-due-diligence-for-m-and-a.md
   - raw/articles/2026-06-19_harvey_legal-tech.md
+  - raw/articles/2026-06-19_harvey_contract-review-process.md
 ---
 
 # Harvey
@@ -162,6 +163,16 @@ Harvey's contract review software evolved from single-shot prompts to a full pla
 - Custom workflows reduce 3-4 hour tasks to 3-4 minutes
 
 See also: [[entities/claude]] (ABA Opinion 512 compliance via citation grounding), [[concepts/ai-agent-engineering]] (multi-step decomposition, agent classification/document extraction pipelines).
+
+### Contract Review Process Guide (June 2026)
+
+Harvey's process explainer (Jun 19, 2026) walks the full contract review lifecycle — stages (intake → initial assessment → substantive review → approvals → pre-signature check), a seven-area checklist (scope of work, payment terms, liability/indemnity, exit rights, dispute resolution, data/IP, boilerplate), and the common roadblocks (messy intake, template drift, capacity, visibility). Three AI-relevant contributions:
+
+- **Bridgewater Associates case study**: Harvey Contract Intelligence cut Bridgewater's contract reviews from an average of **two days to two hours**, automating the first-pass review that doesn't call for legal judgment. (Bridgewater is also a Harvey customer in asset-management workflows — see [[#Benchmark Acquisition (July 2026)|Benchmark Acquisition]].)
+- **AI rollout guidance ("start small")**: automate low-risk agreements first (NDAs, routine supplier contracts in 2026-2027), prove the process, then widen as templates and playbooks mature — teams that try to automate everything at once stall.
+- **Five-year outlook**: AI takes initial review and clause extraction; lawyers concentrate on negotiation strategy and judgment-heavy provisions; business teams self-serve low-risk agreements through guided workflows. Harvey's platform play: Vault ingests hundreds of contracts into structured tables, Assistant drafts/redlines grounded in firm playbooks, Workflow Agents automate the intake → review → approval path, with citation-grounded outputs inside iManage, Word, and Outlook.
+
+Source: raw/articles/2026-06-19_harvey_contract-review-process.md
 
 ## Legal Research vs Traditional Tools (July 2026)
 

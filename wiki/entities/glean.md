@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-08-11
+updated: 2026-08-14
 tags:
   - company
   - search
@@ -30,6 +30,7 @@ sources:
   - raw/articles/2026-05-10_glean_knowledge-graph-agentic-engine.md
   - raw/articles/2026-07-28_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md
   - raw/articles/2026-07-09_glean_the-enterprise-ai-copilot-playbook-for-business-leaders.md
+  - raw/articles/2026-05-10_glean_best-ai-tools-for-software-engineers.md
 ---
 
 # Glean
@@ -188,6 +189,17 @@ Glean published research examining the gap between perceived and actual AI produ
 **Customer examples:** LinkedIn reported $2.4M in savings in the first year using Glean's context layer for developer onboarding; Uber saw 20% faster onboarding for new engineering hires.
 
 Source: raw/articles/2026-06-05_glean_generative-ai-for-software-engineers-is-more-than-code-completion.md
+
+### Engineering AI Tool Landscape (May 2026)
+
+Glean's "Best AI tools for software engineers" guide (updated May 5, 2026) surveys the engineering AI stack by category and codifies a **two-layer model** (context layer + coding surfaces) — the same framing as the [[#Research: AI Productivity Paradox for Software Engineers|AI Productivity Paradox]] research. Distinctive content:
+
+- **Evaluation criteria (four questions)**: What context does the tool actually see (repo-only vs cross-system)? How is trust earned (grounding/citations)? Where does data go and who can act on it (tenant, VPC, egress, retention, audit)? Does it fit existing workflows (GitHub/Jira/observability/Slack, coexist with IDE copilots)?
+- **Gap statistics**: 41% of developers say outdated, inconsistent, or siloed information is their biggest productivity drain; 62% (2025 JetBrains survey) say non-technical factors (collaboration, communication, clarity) are as critical to performance as technical ones; 79% of engineering teams are exploring AI for incident-tracking tasks.
+- **METR follow-up**: the randomized controlled trial found AI-coding tasks took **19% longer** (vs a 24% expected speedup); a larger-cohort follow-up begun August 2025 showed mixed results complicated by selection bias, but the perception gap persisted.
+- **Category landscape**: coding assistants (Cursor, GitHub Copilot, Claude Code, Windsurf — noting Cognition's mid-2025 acquisition and that the original founders joined Google DeepMind, Sourcegraph Cody — enterprise-only after July 2025 tier discontinuation); context layer (Glean); incident/observability (PagerDuty, Datadog, ServiceNow); agent platforms (OpenAI ChatGPT Enterprise, Anthropic Console + Claude with MCP, Microsoft Foundry, Google Gemini Enterprise Agent Platform, Amazon Bedrock). Glean-reported results: 20% faster time-to-ship at Uber, $2.4M annual engineering savings at LinkedIn (Threat-bot agent).
+
+Source: raw/articles/2026-05-10_glean_best-ai-tools-for-software-engineers.md
 
 ### Snowflake Data Integration (June 2026)
 
