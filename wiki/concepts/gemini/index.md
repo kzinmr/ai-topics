@@ -2,7 +2,7 @@
 title: "Google Gemini"
 type: concept
 created: 2026-04-19
-updated: 2026-08-07
+updated: 2026-08-14
 tags:
   - concept
   - google
@@ -22,6 +22,7 @@ sources:
   - raw/newsletters/2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md
   - raw/newsletters/2026-08-02-deepseek-s-flash-sale-google-s-gemini-finds-its-feet-and-music-copyright-bites-b.md
   - raw/newsletters/2026-08-07-gemini-is-cooked-but-gcp-is-cooking.md
+  - raw/articles/simonwillison.net--2026-aug-13-llm-gemini--83c78bb6.md
   - https://deepmind.google/models/model-cards/
 ---
 
@@ -34,6 +35,16 @@ sources:
 ## Recent Updates — Gemini Drops (July 2026)
 
 In late July 2026, Google's **"Gemini Drops"** update (announced via @GeminiApp) added **Gemini 3.6 Flash** and **Gemini 3.5 Flash-Lite** to the family, alongside a wider Gemini Spark rollout, app integrations, voice support on macOS, and personalized image/avatar features (source: AINews 2026-08-01). Per the Artificial Analysis Intelligence Index v4.1 (Superintel+ chart, 2026-07-31), Gemini 3.6 Flash scores ~**50.1 intelligence index** at ~**$0.50 per task**. Pricing/GA details for the new models are not yet captured in the table below — this is a reference-level note pending a dedicated model page.
+
+## Gemini 3.7 Flash (August 13, 2026)
+
+On August 13, 2026, Google released **Gemini 3.7 Flash**, confirmed via Simon Willison's `llm-gemini` 0.33 plugin release notes (the release notes are the current best public source of model availability). The plugin added support for **gemini-3.7-flash**, **gemini-3.6-flash**, **gemini-3.5-flash-lite**, and two embedding models — **gemini-embedding-2** and **gemini-embedding-001**.
+
+**Model deltas:**
+- **`minimal` thinking-effort option removed**: Gemini 3.6 Flash offered a `minimal` thinking effort; 3.7 Flash drops it, leaving high/medium/low (per Willison's pelican SVG test at all three levels).
+- **Server-side tools**: `llm -m gemini-3.7-flash -T CodeExecution` enables server-side CodeExecution via LLM 0.32's `-T` interface — the plugin is upgraded for LLM 0.32 compatibility, exposing reasoning traces to stderr.
+
+Positioning: 3.7 Flash lands as a fast-track successor to the July 2026 Gemini 3.6 Flash ([[concepts/gemini/index#Gemini Drops (July 2026)]]), extending the Flash-tier lineup alongside 3.5 Flash-Lite. Pricing/GA details and benchmark scores not yet public as of 2026-08-14 — reference-level note pending a dedicated [[concepts/gemini/gemini-3-7-flash]] page.
 
 ## Gemini Robotics 2 (August 2026)
 

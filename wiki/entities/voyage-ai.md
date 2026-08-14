@@ -2,7 +2,7 @@
 title: "Voyage AI"
 type: entity
 created: 2026-05-08
-updated: 2026-08-09
+updated: 2026-08-14
 tags:
   - company
   - rag
@@ -12,6 +12,7 @@ sources:
   - https://blog.voyageai.com/
   - raw/articles/blog.voyageai.com--2026-06-29-voyage-context-4--47aada90.md
   - raw/articles/2026-08-08_fireworks-ai_voyage-ai-models-now-on-fireworks.md
+  - raw/articles/blog.voyageai.com--2026-08-13-voyage-code-4--cce0287e.md
 ---
 
 # Voyage AI
@@ -66,6 +67,25 @@ On August 5, 2026, Fireworks AI announced it became the **first and only dedicat
 **Benchmark position (Voyage 4 series, average retrieval quality):** voyage-4-large is top-performing — +1.87% vs voyage-4, +4.80% vs voyage-4-lite, +3.87% vs Gemini Embedding 001, **+8.20% vs Cohere Embed v4**, and **+14.05% vs OpenAI v3 Large**.
 
 **Positioning:** The partnership resolves the consolidation tradeoff — teams previously chose between a separate retrieval vendor (two bills, two latency profiles, wider security/compliance surface) or a single platform with capped retrieval quality. Voyage on Fireworks keeps proprietary data inside fewer trust boundaries without sacrificing frontier retrieval quality.
+
+## Voyage-code-4 — Code Retrieval for Coding Agents (August 2026)
+
+On August 13, 2026, Voyage AI released **voyage-code-4**, a next-generation code embedding model purpose-built for the retrieval patterns of coding agents. Since voyage-code-3 launched in December 2024, coding *agents* now issue many of the code retrieval queries — they explore, backtrack, and re-query across multiple steps, often starting from a goal as vague as *"find everywhere we mishandle empty arrays."* voyage-code-4 targets exactly that workload.
+
+**Key innovations:**
+- **New training corpus mined from completed pull requests**: conventional code embedding corpora (source files paired with docstrings/comments) teach what code *says* but not what code *does wrong* — the context an agent needs when starting from a bug report. The new corpus spans hundreds of thousands of natural-language queries across hundreds of programming languages and tens of thousands of repositories, substantially larger than the voyage-code-3 corpus.
+- **Matryoshka learning**: supports 2048, 1024, 512, and 256 dimensional embeddings.
+- **Quantization**: float32, signed/unsigned int8, and binary precision with minimal quality loss.
+- **Pricing**: $0.12 per 1M tokens — a third below voyage-code-3.
+
+**Performance:**
+- **Agentic code retrieval** (new benchmark of 19 datasets built from issue-fixing pull requests, where each query is an issue description and relevant documents are the files the merged fix touched): voyage-code-4 outperforms voyage-code-3, Cohere Embed v4, Gemini Embedding 2, and OpenAI v3 large by **27.54%, 28.25%, 31.03%, and 48.58%** respectively (NDCG@10).
+- **Traditional code search** (the 28 voyage-code-3 evaluation datasets across five categories): outperforms the same models by **13.98%, 19.21%, 16.01%, and 40.06%** respectively.
+- The agentic benchmarks are being added to the RTEB evaluation suite.
+
+**Why agents need semantic retrieval:** most agents today rely on full-text search (grep), which works when the agent knows the identifier it seeks but returns no useful hits for symptom-based queries (e.g., a bug report). Semantic retrieval with voyage-code-4 complements full-text search and significantly reduces wasted token usage — an agent may issue dozens of retrieval queries per task, each consuming prompt tokens, output tokens, and wall-clock time.
+
+**Availability:** via the Voyage API and MongoDB Atlas Embedding and Reranking API; first 200 million tokens free.
 
 ## Related
 

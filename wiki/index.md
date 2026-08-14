@@ -51,7 +51,7 @@
 - [[entities/andrej-karpathy]] — Andrej Karpathy — Founding member of OpenAI, former Sr. Director of AI at Tesla, creator of nanogpt/micrograd; pioneer of LLM wiki patterns
 - [[entities/andrew-chen]] — Andrew Chen — a16z General Partner (Speedrun), author of The Cold Start Problem; local AI home lab practitioner (May 2026); essays on viral loops, vibe coding, GPT wrapper defensibility
 - [[entities/andrew-ho]] — Andrew Ho; ex-OpenAI, bearish on frontier lab valuations, Hayekian economic analysis of AI industry (Jul 30)
-- [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26); GitHub Actions registry from Homebrew parts — gh-actions-lock, OCI immutable actions (Aug 4)
+- [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26); GitHub Actions registry from Homebrew parts — gh-actions-lock, OCI immutable actions (Aug 4); Supplier Security Questionnaire satire — AI governance questions (5.1-5.6), prompt injection, autonomous-agent contributors (Aug 13)
 - [[entities/andriy-burkov]] — Andriy Burkov
 - [[entities/andy-nguyen]] — Founder & CEO of ByteRover, building an agentic memory layer for coding agents
 - [[entities/anildash]] — Anil Dash; enriched with "How we'll fight the platform war against Big AI" — 4 tactics (disintermediation, provider portability, economic value destruction, channel anger) (June 24)
@@ -761,7 +761,7 @@
 - [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026); Context Engine — customer relationships as moat (Aug 4)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
-- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13)
+- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13); sqlite-utils 4.2.1 crash fix + `uv run --isolated --no-default-groups` dependency-isolation smoke test (Aug 13)
 - [[entities/simone-salis]] — Simone Salis
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent)
 - [[entities/siyan-zhao]] — Siyan Zhao
@@ -857,7 +857,7 @@
 - [[entities/vicki-boykis]] — Vicki Boykis
 - [[entities/vincent-warmerdam]] — Vincent Warmerdam
 - [[entities/vincent-weisser]] — Vincent Weisser
-- [[entities/voyage-ai]] — Voyage AI
+- [[entities/voyage-ai]] — Voyage AI; voyage-code-4 code embedding for coding agents — agentic code retrieval benchmark, PR-mined corpus, $0.12/1M (Aug 13)
 - [[entities/vtrivedy10]] — Vivek 'Varun' Trivedy (@vtrivedy10)
 - [[entities/wafer-ai]] — Wafer; cross-platform model serving across NVIDIA, AMD, TPUs; Kimi K3 on MI355X benchmark (Aug 2026)
 - [[entities/walden-yan]] — Walden Yan
@@ -1374,7 +1374,7 @@
 - [[concepts/claude-code/claude-md-rules]] — CLAUDE.md Rules — Karpathy's Behavioral Guidelines for AI Coding Agents
 - [[concepts/claude-code/steganographic-watermarking]] — Claude Code Steganographic Request Watermarking — Anthropic's anti-distillation/anti-reseller measure using steganographic fingerprinting in API requests (Jul 1)
 - [[concepts/claude-design]] — Claude Design
-- [[concepts/claude-fable-jacobian-conjecture]] — Claude Fable Jacobian Conjecture Counterexample — Fable 5 disproves 85-year-old conjecture; explicit degree-7 polynomial counterexample, Lean-formalized verification (July 2026)
+- [[concepts/claude-fable-jacobian-conjecture]] — Claude Fable Jacobian Conjecture Counterexample — Fable 5 disproves 85-year-old conjecture; explicit degree-7 polynomial counterexample, Lean-formalized verification (July 2026); follow-up: Alpoge + Claude finds Hadamard matrix of order 668, filling all gaps below 2000 (Aug 12-13)
 - [[concepts/claude-science]] — Claude Science — Anthropic's AI workbench for life sciences; reproducible computational biology with native visualization, compute management, and Modal GPU integration (Jul 1)
 - [[concepts/claude-tag]] — Claude Tag — Anthropic's team-oriented AI agent for Slack; multiplayer chat, persistent channel memory, proactive/async capabilities, separate from Claude Code's individual developer focus (June 24)
 - [[concepts/claude/design-entity]] — Claude Design
@@ -1779,7 +1779,7 @@
 - [[concepts/gemini/gemini-managed-agents]] — Gemini Managed Agents
 - [[concepts/gemini/gemini-robotics-2]] — Gemini Robotics 2 — whole-body humanoid control family (3 models); Apptronik Apollo 2 demo, 32–92% multi-finger success, <200-example adaptation, ER 2 long-horizon planning (Aug 2026)
 - [[concepts/gemini/gemini-spark]] — Gemini Spark
-- [[concepts/gemini/index]] — Google Gemini
+- [[concepts/gemini/index]] — Google Gemini; Gemini 3.7 Flash release confirmed via llm-gemini 0.33 (Aug 13) — minimal thinking effort removed, server-side CodeExecution, gemini-embedding-2/001
 - [[concepts/gemma-family]] — Gemma Model Family
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/generative-ai]] — generative-ai

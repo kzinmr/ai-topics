@@ -1,7 +1,7 @@
 ---
 title: Claude Fable Jacobian Conjecture Breakthrough
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-08-14
 type: concept
 tags:
   - model
@@ -13,6 +13,7 @@ tags:
   - lab
 sources:
   - raw/articles/2026-07-20_claude-fable-jacobian-conjecture.md
+  - raw/articles/johndcook.com--blog-2026-08-13-constructing-hadamard-matrices--510024ee.md
 ---
 
 # Claude Fable Jacobian Conjecture Breakthrough
@@ -95,6 +96,14 @@ This breakthrough is part of a rapid series of AI-driven mathematical achievemen
 | July 2026 | Counterexample to Jacobian Conjecture | Claude Fable 5 |
 
 The discovery exemplifies how [[concepts/reasoning-models]] can tackle problems previously requiring deep mathematical intuition. However, **human expertise remained essential** -- the problem was selected by domain experts, and the prompt was crafted by a mathematician (Alpoge is a Harvard valedictorian). The **Leiden Declaration on AI and Mathematics** (June 2026) had already urged guardrails around transparency and attribution in AI-assisted mathematics.
+
+## August 2026 Follow-up: Hadamard Order-668 Discovery
+
+On August 12, 2026, **Levent Alpoge** — the same Anthropic mathematician behind the Jacobian Conjecture counterexample — announced via X that he and collaborators had found a **Hadamard matrix of order 668** using Claude AI (confirmed August 13, 2026 via [[entities/john-d-cook-applied-mathematics-consulting|John D. Cook]]'s post on constructing Hadamard matrices).
+
+**Significance:** Hadamard's conjecture — that a Hadamard matrix exists for every order n divisible by 4 — remains open, but 668 was the **smallest multiple of 4 for which no Hadamard matrix was known** (previous verification extended only to n ≤ 428 per a 1996 reference). The 668 construction **filled in all remaining gaps below 2000**: the set S of known Hadamard orders now contains {1, 2, 4, 8, 12, 16, ..., 2000}, with 2004 not yet known.
+
+**Context:** The result extends the same pattern as the Jacobian Conjecture work — Alpoge using [[concepts/claude/fable-5]] (and related Claude models) for computational discovery in pure mathematics, with the find reported openly on X. Hadamard matrices have real applications (error-correcting codes, e.g., NASA's Mariner 9 image encoding, sphere packing), so constructive results matter even while the conjecture remains open. This is the second major AI-assisted mathematics result from Alpoge within a month, reinforcing the narrative of [[entities/anthropic]] as a hub for AI-in-mathematics research (see also the [[concepts/ai-mathematics-theorem-proving|Leiden Declaration]] guardrails discussion above).
 
 ## Open Questions
 
