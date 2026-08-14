@@ -1,0 +1,92 @@
+{
+  "archived_at": "2026-08-14T10:38:59.132167+00:00",
+  "triage_run_id": "20260814T102346Z",
+  "source": "newsletter",
+  "summary_ja": "3ニュースレター（Ben's Bites Grok Bot実機レビュー、True Positive Weekly #173、Superintel+ Grok 4.6価格特集）を処理。主トピックはxAI Grok 4.6/Grok Bot周り。events/grok-4-6-launch.md は2026-08-13にAINews由来で既存だが、Superintel+記事の具体的価格（$2/$6 per M）・AA-Briefcase Elo 1577・Cursor訓練データ混入/CursorBench再構築は未収録のためtake（既存ページ更新）。Ben's BitesのGrok Bot実機レビュー、BrinのGoogle RSI主導、Anthropic $2tn IPO観測、SSI小規模推論エンジン、ChatGPTのClaude Codeインポート、Vercelエージェントファクトリー35%はreference。TPW #173は純リンクダイジェストのためskip。合計 take 1 / reference 8 / skip 10。",
+  "decisions": [
+    {
+      "item_id": "<20260813130239.3.cec027a1ad0f6fda@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Superintel+",
+      "title": "Grok Bot is not what you think (Ben's Bites hands-on)",
+      "url": "https://www.bensbites.com/p/grok-bot-is-not-what-you-think",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Ben's Bites（Ben Tossell）のGrok Bot実機レビュー。events/grok-4-6-launch.md のGrok Bot節に欠ける独自情報: エージェントの'personify'方式（各エージェントにシステムプロンプト例'you are ben's money manager agent'、エージェント同士がメッセージ送信可能、各自の仮想コンピュータを閲覧可能）、$200プラン（CursorまたはGrok）必須、Grok 4.6搭載・4.7は数週間後、'CodexやClaudeでも同じことはできるが数ステップ複雑'という比較。entities/xai.md のGrok Bot節へも追記候補。",
+      "candidate_wiki_path": "events/grok-4-6-launch.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-13\n**Subject:** Grok Bot is not what you think\n**Collected:** 2026-08-14T10:23:42.252234+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249Z"
+    },
+    {
+      "item_id": "<20260813.191154.6f3d90ca@mta28>-4",
+      "source": "newsletter",
+      "source_name": "Superintel+",
+      "title": "Brin steers Google toward self-improving AI (Reuters)",
+      "url": "https://read.getsuperintel.com/p/xai-s-grok-4-6-released-frontier-intelligence-at-insane-pricing",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-xai-s-grok-4-6-released-frontier-intelligence-at-insane-pricing.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Google共同創業者Sergey Brinが役職なしでGoogleのAIリソースを再帰的自己改善（人間介入なしでAIが改善する段階）へ向けている（Reuters報道）。concepts/recursive-self-improvement.md は2026-08-12更新でLilian Weng/SemiAnalysis等をカバーするが、Brin/Googleの組織的動きの言及はゼロ。大手ラボのRSI戦略として追記価値あり（★はreference相当）。",
+      "candidate_wiki_path": "concepts/recursive-self-improvement.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-13\n**Subject:** 🛰️ xAI's Grok 4.6 Released: Frontier Intelligence At Insane Pricing\n**Collected:** 2026-08-14T10:23:45.588784+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/00fd438110f81cd11a366a2b8687a4ed7501b183cc8c86638f35acf7e"
+    },
+    {
+      "item_id": "<20260813130239.3.cec027a1ad0f6fda@mg-d0.substack.com>-9",
+      "source": "newsletter",
+      "source_name": "Superintel+",
+      "title": "ChatGPT now lets you import projects, agent sessions, skills from Claude Code",
+      "url": "https://learn.chatgpt.com/docs/import",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ ChatGPTがClaude Code等の他製品からプロジェクト・エージェントセッション・スキルをインポート/同期可能に。concepts/session-portability.md は存在するがimport/skillsの記載なし（grep確認済み）。クロスプロバイダのセッション可搬性の具体的事例として追記価値あり。",
+      "candidate_wiki_path": "concepts/session-portability.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-13\n**Subject:** Grok Bot is not what you think\n**Collected:** 2026-08-14T10:23:42.252234+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249Z"
+    },
+    {
+      "item_id": "<20260813130239.3.cec027a1ad0f6fda@mg-d0.substack.com>-14",
+      "source": "newsletter",
+      "source_name": "Superintel+",
+      "title": "seangoedecke.com — how-to-keep-thinking",
+      "url": "https://www.seangoedecke.com/how-to-keep-thinking/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Ben's Bitesのcuratedリンクに登場したSean Goedeckeの新エッセイ'How to keep thinking'。entities/seangoedecke-com.md は多数のエッセイを収録済みだが本エッセイの記載なし（grepで該当ファイル未確認）。思考維持テクニック（エージェント時代の開発者向け）として追記候補。",
+      "candidate_wiki_path": "entities/seangoedecke-com.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-13\n**Subject:** Grok Bot is not what you think\n**Collected:** 2026-08-14T10:23:42.252234+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249Z"
+    },
+    {
+      "item_id": "<20260813175655.3.abcda32998a02aae@mg2.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "Superintel+",
+      "title": "True Positive Weekly #173 (Andriy Burkov) — pure link digest",
+      "url": "https://aiweekly.substack.com/p/true-positive-weekly-173",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-true-positive-weekly-173.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ True Positive Weekly #173は純リンクダイジェスト（skillのpure-link-digest規則）。本文は10段落の浅い箇条書きで編集分析なし: Claude透かし（Ars）、フォント型AIスクレイパー対策（Ars）、AIエージェントの法的責任（Guardian）、Erdos問題とAI（Quanta）、WASTE推論エンジン（Kimi K3 2.78Tを29GB RAMで実行）、Qwen3.8-Max（concepts/qwen-3-8.md で既カバー、raw記事2026-08-03）。inbox summaryは'high'と過大評価（link-digest-trapパターン）。個別リンクは全て既存カバーまたは浅い1行言及のためskip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-13\n**Subject:** True Positive Weekly #173\n**Collected:** 2026-08-14T10:23:43.983204+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
+    },
+    {
+      "item_id": "<20260813130239.3.cec027a1ad0f6fda@mg-d0.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "Superintel+",
+      "title": "Ben's Bites — substack UI noise links (comment/like/share/app-store)",
+      "url": "https://substack.com/redirect/2/eyJ...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Ben's BitesのLink 1-7はsubstack UI要素（redirect/2 OAuth、comments=true、submitLike=true、action=share、app-store、read-in-app）。スキルのnoiseフィルタ表に全該当。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-13\n**Subject:** Grok Bot is not what you think\n**Collected:** 2026-08-14T10:23:42.252234+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249Z"
+    },
+    {
+      "item_id": "<20260813130239.3.cec027a1ad0f6fda@mg-d0.substack.com>-8",
+      "source": "newsletter",
+      "source_name": "Superintel+",
+      "title": "Ben's Bites — remaining substack redirect links (curated links assessed from body)",
+      "url": "https://substack.com/redirect/91403e1f-ad25-45c0-9ff1-2c895d7cd14e?j=...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Ben's BitesのLink 8-20はsubstack redirect UUID（メールセッション認証必須、スキル表でSkip指定）。記事本文のcuratedリンク群は投稿ボディから抽出・評価済み（SSI推論エンジン、ChatGPT import、Vercelファクトリー、seangoedeckeはreference、残りは低価値: Claude WiFi修正エピソード、Pangram検知回避、hackableエッセイ、arc-code等はスキップ対象）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-13\n**Subject:** Grok Bot is not what you think\n**Collected:** 2026-08-14T10:23:42.252234+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249Z"
+    }
+  ]
+}
