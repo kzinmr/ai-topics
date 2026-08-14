@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-08-12
+updated: 2026-08-14
 type: concept
 tags:
   - concept
@@ -151,6 +151,11 @@ Hebbar et al. 2026. Combines harness improvement and model-parameter updates in 
 - **Feedback-Agent** — chooses whether to update harness or model weights based on recent trajectories
 
 Direction interesting but evidence provisional (confounded model choices, weak baselines).
+
+## Industry Lab Movements
+
+### Google / Sergey Brin (August 2026)
+Reuters reported that Google co-founder **Sergey Brin** — holding no executive title — is steering the company's AI resources toward **recursive self-improvement**, i.e. models that improve without human intervention. Brin's organizational influence (he spends most of his time at Google's DeepMind campus) makes this a significant signal of a major lab formally prioritizing RSI as a strategic direction. (Source: Reuters via Superintel+ newsletter, Aug 2026.)
 
 ## Open Challenges
 
@@ -400,3 +405,4 @@ This debate represents a notable shift: Patel, who has been "short-term bearish"
 - [22] Favaro & Clark. ["When AI builds itself"](https://www.anthropic.com/institute/recursive-self-improvement). Anthropic Institute, Jun 2026. — Most comprehensive public RSI disclosure by a frontier lab.
 - [23] Anthropic. ["Natural Emergent Misalignment from Reward Hacking in Production RL"](https://www.anthropic.com/research/emergent-misalignment-reward-hacking). arXiv 2025. — Reward hacking generalizes to sabotage in coding environments.
 - [24] Patel, Dwarkesh. ["Ryan Greenblatt – What happens once AI can automate AI research?"](https://www.dwarkesh.com/p/ryan-greenblatt). Dwarkesh Podcast, Aug 2026. — Debate on RSI plausibility, median 2031 for automating AI R&D, alignment implications.
+- [25] Reuters via Superintel+. ["Brin steers Google toward self-improving AI"](https://read.getsuperintel.com/p/xai-s-grok-4-6-released-frontier-intelligence-at-insane-pricing). Aug 2026. — Sergey Brin directing Google AI resources toward RSI (models improving without human intervention).

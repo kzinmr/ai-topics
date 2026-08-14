@@ -1,0 +1,59 @@
+{
+  "triage_timestamp": "2026-08-14T10:23:46Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletter_count": 3,
+  "newsletters": [
+    {
+      "subject": "Grok Bot is not what you think",
+      "date": "2026-08-13",
+      "source": "Ben's Bites (substack, publication_id=4379299)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md",
+      "main_article_url": "https://open.substack.com/pub/bensbites/p/grok-bot-is-not-what-you-think",
+      "classification": "high",
+      "reason": "Grok Bot analysis from Ben's Bites — relevant to xAI/Grok entity and AI chatbot products. External links (8-20) are substack redirects that need URL resolution to identify actual articles.",
+      "wiki_relevance": ["entities/xai", "entities/grok", "concepts/ai-chatbots"],
+      "external_links_count": 13,
+      "external_links_note": "Links 8-20 are substack redirect URLs requiring resolution to get actual article URLs",
+      "action": "follow_redirects_and_ingest"
+    },
+    {
+      "subject": "True Positive Weekly #173",
+      "date": "2026-08-13",
+      "source": "AI Weekly (substack, publication_id=61455)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-true-positive-weekly-173.md",
+      "main_article_url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-173",
+      "classification": "high",
+      "reason": "Weekly curated AI/ML newsletter roundup — likely contains multiple high-value articles across AI ecosystem. External links (10-19) are substack redirects needing resolution.",
+      "wiki_relevance": ["varies — depends on curated articles"],
+      "external_links_count": 10,
+      "external_links_note": "Links 10-19 are substack redirect URLs requiring resolution to get actual article URLs",
+      "action": "follow_redirects_and_ingest"
+    },
+    {
+      "subject": "xAI's Grok 4.6 Released: Frontier Intelligence At Insane Pricing",
+      "date": "2026-08-13",
+      "source": "beehiiv newsletter (unknown publication)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-13-xai-s-grok-4-6-released-frontier-intelligence-at-insane-pricing.md",
+      "main_article_url": null,
+      "classification": "critical",
+      "reason": "Major model release: xAI Grok 4.6 with aggressive pricing. Directly relevant to xAI entity page, Grok model family, and AI pricing/competition concepts. This is a significant frontier model release event.",
+      "wiki_relevance": ["entities/xai", "entities/grok", "entities/elon-musk", "concepts/llm-pricing", "events/grok-4-6-release"],
+      "external_links_count": 20,
+      "external_links_note": "All 20 links are beehiiv tracking URLs requiring resolution to get actual article/destination URLs",
+      "action": "follow_redirects_and_ingest_high_priority"
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 2,
+    "low": 0,
+    "total_external_links_to_resolve": 43,
+    "primary_themes": ["xAI Grok 4.6 release", "Grok Bot analysis", "AI weekly roundup"],
+    "recommended_wiki_updates": [
+      "Create/update event page: events/grok-4-6-release",
+      "Update entity: entities/xai (Grok 4.6 release, pricing)",
+      "Update entity: entities/grok (new model version 4.6)",
+      "Review and ingest curated articles from True Positive Weekly"
+    ]
+  }
+}

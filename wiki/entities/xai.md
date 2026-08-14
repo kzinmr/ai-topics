@@ -1,7 +1,7 @@
 ---
 title: xAI
 created: 2026-05-02
-updated: 2026-08-13
+updated: 2026-08-14
 type: entity
 tags:
   - company
@@ -14,6 +14,7 @@ sources:
   - raw/articles/martinalderson.com--posts-xais-new-rental-business--bb5df5aa.md
   - raw/newsletters/2026-07-09-ainews-spacexai-launches-grok-4-5-first-opus-class-model-post-cursor-acquisition.md
   - raw/newsletters/2026-08-13-ainews-spacexai-grok-4-6-and-grok-bot.md
+  - raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md
 ---
 
 # xAI
@@ -97,6 +98,8 @@ xAI released **Grok 4.6** on August 13, 2026 — described by AINews as "a major
 ### Grok Bot — AI Teammates (August 2026)
 
 Announced alongside Grok 4.6 in early beta: **Grok Bot** ("Bots are AI teammates that do real work for you. They sign in to your tools, use them just like you do, and come back with finished work."). AINews calls it the AI teammate/[[concepts/multi-agents/agent-team-swarm|multi-agent]] category's most significant new entrant — coding agents breaking containment into knowledge work. Competing with Claude Tag (which requires a more technical user), Grok Bot targets the knowledge-work teammate slot.
+
+**Hands-on details (Ben's Bites, Aug 2026)**: Users "personify" their agents — each gets a system prompt such as "you are ben's money manager agent"; agents can send messages to one another and each has access to its own virtual computer (which the user can watch them use). Currently accessible only on the $200/month plan (Cursor or Grok). Powered by Grok 4.6, with 4.7 expected within weeks. Ben Tossell's comparison: "Codex or Claude can do the same things but require a few more steps."
 
 See [[events/grok-4-6-launch]] for the full event page.
 

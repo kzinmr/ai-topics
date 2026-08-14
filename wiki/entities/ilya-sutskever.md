@@ -2,7 +2,7 @@
 title: Ilya Sutskever
 type: entity
 created: 2026-04-13
-updated: 2026-05-15
+updated: 2026-08-14
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
@@ -11,6 +11,7 @@ tags:
   - openai
 sources:
   - raw/newsletters/2026-05-13-the-ai-cursor-arrives.md
+  - raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md
 ---
 
 
@@ -144,6 +145,9 @@ SSI's research direction emphasizes:
 - **Interpretability-first**: Understanding model internals before scaling capabilities
 - **Gradual capability increase**: Careful, measured progression with safety gates at each step
 - **No product pressure**: Unlike OpenAI or Anthropic, SSI has no commercial products to ship, allowing pure research focus
+
+### 2026 Signal: Small Reasoning Engine (August 2026)
+An unverified X post (by @iruletheworldmo, circulated via Ben's Bites) claimed SSI has **built a small reasoning engine** and that Sutskever is "about to take his first tentative steps out of the age of research and back into the age of scale." **⚠️ Rumor-level, unconfirmed** — record as a tracking signal: SSI may be shifting from pure safety research toward building/scaling models. No official SSI statement at time of writing.
 
 ## Core Philosophy
 

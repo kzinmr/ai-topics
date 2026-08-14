@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (898 pages)
+## Entities (899 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -484,6 +484,7 @@
 - [[entities/lm-studio]] — LM Studio — Local LLM desktop app + Bionic agent for open models (Element Labs)
 - [[entities/lmsys-org]] — LMSYS Org
 - [[entities/lora-fine-tuning]] — LoRA (Low-Rank Adaptation) — efficient fine-tuning method for LLMs, and the Doc-to-LoRA / Text-to-LoRA paradigm from ...
+- [[entities/lovable]] — Lovable — Swedish vibe-coding startup; $400M raise at $13.3B valuation (double Dec 2025), $600M revenue run rate (Aug 2026)
 - [[entities/lucas-atkins]] — Lucas Atkins
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley
@@ -2926,7 +2927,7 @@
 - [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
 - [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft
 - [[events/2026-07-08-openai-gpt-live]] — OpenAI GPT-Live: real-time voice model with GPT-5.5 delegation (July 8); full-duplex redesign (Aug 2026)
-- [[events/grok-4-6-launch]] — xAI releases Grok 4.6 (frontier price/performance, AA Intelligence Index 61) + Grok Bot AI teammates (Aug 13)
+- [[events/grok-4-6-launch]] — xAI releases Grok 4.6 (frontier price/performance, AA Intelligence Index 61, $2/$6 per M pricing, AA-Briefcase Elo 1577) + Grok Bot AI teammates (Aug 13; enriched with Superintel+ pricing & Ben's Bites hands-on Aug 14)
 - [[events/grok-4-5-launch]] — SpaceXAI launches Grok 4.5, first Opus-class coding & agents model co-trained with Cursor (July 9)
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan
 - [[events/2026-06-24-qualcomm-acquires-modular]] — Qualcomm Acquires Modular — Qualcomm acquires AI infrastructure startup Modular (~$4B); implications for Mojo language, MAX platform, and AI chip-software consolidation; 238 HN pts, 125 comments (June 24, 2026)

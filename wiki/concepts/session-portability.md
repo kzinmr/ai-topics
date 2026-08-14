@@ -2,7 +2,7 @@
 title: "Session Portability"
 type: concept
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-14
 tags:
   - inference-api
   - session-portability
@@ -17,6 +17,7 @@ aliases:
   - "portable inference"
 sources:
   - raw/articles/2026-07-30_earendil_session-portability.md
+  - raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md
 related:
   - concepts/context-engineering/context-lock-in
   - concepts/earendil
@@ -90,6 +91,10 @@ Session portability is the user-level manifestation of the [[concepts/context-en
 | **Switching cost** | Rebuild enterprise context | Lose reasoning, search evidence, agent history |
 | **Proprietary elements** | MCP tools, knowledge graphs, eval sets | Encrypted reasoning, compaction, subagent messages |
 
+## Industry Example: ChatGPT Import from Claude Code (August 2026)
+
+A concrete cross-provider portability development: **ChatGPT now lets users import and sync projects, agent sessions, skills and more from other products like Claude Code** (learn.chatgpt.com/docs/import, Aug 2026). Chats started via Claude's Chrome extension are saved to the user's account and accessible from Desktop, mobile or web app. This is a notable step toward cross-provider session portability — the importer recognizes Claude Code's project/session/skill structure and maps it into ChatGPT's equivalents, directly addressing the "switching cost" dimension of the context lock-in table above. It remains a one-way import (ChatGPT-to-ChatGPT export is not a full open handoff), so provider-sealed state still applies on the OpenAI side.
+
 ## Open Questions
 
 - Will providers adopt readable handoff representations alongside encrypted state?
@@ -102,4 +107,5 @@ Session portability is the user-level manifestation of the [[concepts/context-en
 - [The Session You Cannot Take With You](https://earendil.com/posts/session-portability/) — Earendil Engineering (2026-07-30)
 - [Encrypt multi-agent v2 message payloads](https://github.com/openai/codex/commit/5f4d06ef186b896d316620556e561d59206c3ebf) — Codex commit (June 2026)
 - [Codex issue #28058](https://github.com/openai/codex/issues/28058) — request for readable audit copy in encrypted agent messages
+- [ChatGPT Import docs](https://learn.chatgpt.com/docs/import) — import/sync projects, agent sessions, skills from Claude Code (Aug 2026)
 - [OpenAI API Model Distillation](https://openai.com/index/api-model-distillation/) — first-party distillation workflow

@@ -1,7 +1,7 @@
 ---
 title: "Vercel"
 created: 2026-05-06
-updated: 2026-06-28
+updated: 2026-08-14
 type: entity
 tags:
   - entity
@@ -21,6 +21,7 @@ sources:
   - raw/newsletters/2026-05-05-codex-is-gaining-steam.md
   - https://open.substack.com/pub/bensbites/p/codex-is-gaining-steam
   - raw/articles/2026-06-27_vercel-building-agents-with-eve-framework.md
+  - raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md
 ---
 
 
@@ -74,6 +75,10 @@ Vercel is expanding beyond its frontend hosting roots into AI infrastructure:
 - **AI SDK**: Helping developers build AI-powered web applications
 - **OpenAI Agents SDK support**: Listed as a sandbox provider for OpenAI's Agents SDK (v0.14.0)
 - **World ID / AgentKit**: "Human in the loop" authentication live on Vercel
+
+### Software Factory of Agents (August 2026)
+
+Vercel disclosed it is using a **software factory of agents** to build its AI SDK, with **35% of PRs coming from the factory** (Ben's Bites, Aug 2026). This is a concrete instance of the [[concepts/agent-team-swarm|software factory]] pattern — a fleet of coding agents autonomously producing a meaningful share of production PRs on a flagship open-source library, consistent with the Dark Factory / L5 tier of the 5-level agent-team model.
 
 ## Related Concepts
 

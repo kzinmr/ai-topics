@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-14] newsletter-wiki-ingest (11:00) | 1 take (grok-4-6-launch enriched), 7 refs, lovable entity created
+
+- Recovered triage from checkpoint after newsletter-triage agent's cron response failed JSON parse (triage_latest.json valid; archive already committed as d79e6d87).
+- **Enriched: [[events/grok-4-6-launch]]** (TAKE, ★★★★☆) — Added Superintel+ specifics absent from the AINews-created page: Grok 4.6 API pricing $2/M input & $6/M output (vs GPT-5.6 Sol's $5); AA Intelligence Index 61 exactly level with Sol and two points off Claude Opus 5 (Grok 4.5 was 56 in early July); AA-Briefcase Elo 1577 (2nd behind Opus 5's 1715, above Fable 5's 1574, above Sol's 1502); Cursor data contamination (earlier codebase snapshot accidentally in training; CursorBench being rebuilt); Grok 4.7 expected within weeks. Added Ben's Bites Grok Bot hands-on: personify approach, agents message each other, own virtual computers, $200 plan (Cursor or Grok) requirement. Sources added: raw/newsletters/2026-08-13-xai-s-grok-4-6-released-frontier-intelligence-at-insane-pricing.md + 2026-08-13-grok-bot-is-not-what-you-think.md.
+- **Enriched: [[entities/xai]]** — Added Ben's Bites Grok Bot hands-on details to Grok Bot section (personify, virtual computers, $200 plan, 4.7 timing); source added.
+- **Enriched: [[concepts/recursive-self-improvement]]** — Added "Industry Lab Movements > Google / Sergey Brin (August 2026)": Reuters report that Brin (no executive title) steers Google AI resources toward RSI (models improving without human intervention); source [25] added.
+- **Enriched: [[entities/anthropic]]** — Added contested $2tn IPO observation (FT via Superintel+, Aug 2026): half a dozen backers expect October float at $2tn+ (largest IPO ever), $100-120bn annualized revenue by year-end (800% growth); flagged as conflicting with WSJ-derived $400-500B target (contested/superseded).
+- **Enriched: [[entities/ilya-sutskever]]** — Added "2026 Signal: Small Reasoning Engine (August 2026)": unverified X post claiming SSI built a small reasoning engine and Sutskever moving "back into the age of scale"; flagged as rumor-level tracking signal.
+- **Enriched: [[concepts/session-portability]]** — Added "Industry Example: ChatGPT Import from Claude Code (August 2026)": ChatGPT can import/sync projects, agent sessions, skills from Claude Code (learn.chatgpt.com/docs/import); cross-provider portability example.
+- **Enriched: [[entities/vercel]]** — Added "Software Factory of Agents (August 2026)": Vercel builds AI SDK with a software factory of agents, 35% of PRs from the factory; software-factory theme instance (agent-team-swarm).
+- **Created: [[entities/lovable]]** — Skeleton entity: Swedish vibe-coding startup; $400M raise at $13.3B valuation (double Dec 2025), Menlo Ventures/EQT Scaleup Europe Fund co-led, Tencent/Balderton; $600M revenue run rate.
+- **Skipped (reference no-op): [[entities/seangoedecke-com]]** — "How to Keep Thinking" already captured in entity page (Aug 2026 section, lines 438-450); triage reference was a false positive.
+- Triage JSON: /opt/data/.hermes/cron/data/newsletter/triage_latest.json (19 decisions: 1 take, 8 refs, 10 skips).
+
 ## [2026-08-14] blog-wiki-ingest (10:45) | 3 takes (voyage-code-4, Gemini 3.7 Flash, Hadamard-668), 2 refs
 
 - Recovered triage from checkpoint after blog-triage agent's cron response failed JSON parse (triage_latest.json valid; archive already committed as 7e6ba774).

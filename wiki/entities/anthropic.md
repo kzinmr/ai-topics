@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-08-12
+updated: 2026-08-14
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -44,6 +44,7 @@ sources: [
   - raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
   - raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
   - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
+  - raw/newsletters/2026-08-13-xai-s-grok-4-6-released-frontier-intelligence-at-insane-pricing.md
 ]
 related: []
 ---
@@ -208,6 +209,7 @@ Anthropic leads enterprise AI adoption with strong market metrics:
 - **$45B ARR expected** — 5x jump from $9B run-rate at end of 2025 (Financial Times, May 2026)
 - **$50B raise at ~$1T valuation** in talks — would surpass OpenAI's $852B mark
 - **IPO target**: October 2026 at $400–500B valuation (pre-$1T talks)
+- **⚠️ Contested higher valuation (Aug 2026)**: Financial Times reported (via Superintel+) that "half a dozen backers" expect an October float at **$2tn or more** — which would be the largest IPO ever — and annualized revenue of **$100–120bn by year-end** (800% growth). This supersedes/conflicts with the earlier WSJ-derived $400–500B October target; treat the $2tn figure as investor speculation rather than a confirmed valuation.
 - Revenue growth driven by enterprise Claude adoption and Code with Claude 2026 launches (M365 GA, Dreaming, Managed Agents)
 - Cleaner unit economics than OpenAI; focused on enterprise over consumer scale
 
