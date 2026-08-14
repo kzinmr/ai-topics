@@ -160,7 +160,10 @@ def main():
     for key in sorted(results['pages'].keys()):
         if key.endswith('/_index'):
             continue
-        has_inbound = any(key in targets for targets in inbound.values())
+        # Orphan = page never targeted by any wikilink (no inbound links).
+        # Fixed 2026-08-14: previous `any(key in targets ...)` checked source
+        # membership (outbound links), reporting dead-ends instead of orphans.
+        has_inbound = key in inbound
         if not has_inbound:
             lines = results['pages'][key]['lines']
             size = results['pages'][key]['size']

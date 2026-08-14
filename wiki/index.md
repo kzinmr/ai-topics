@@ -2958,4 +2958,4 @@
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
-- [[queries/wiki-graph-analysis-weekly-2026-08-07]] — Weekly Wiki Graph Analysis (2026-08-07) — 2,917 pages scanned; 43 orphans, 3,390 broken links (187 fixable), 16 dup groups, 1,204 stale pages
+- [[queries/wiki-graph-analysis-weekly-2026-08-14]] — Weekly Wiki Graph Analysis (2026-08-14) — 2,962 pages scanned; 479 orphans, 3,463 broken links (209 fixable), 16 dup groups, 1,313 stale pages

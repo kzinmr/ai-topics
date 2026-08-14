@@ -1,85 +1,86 @@
 ---
 title: Weekly Wiki Graph Analysis
-created: 2026-08-07
-updated: 2026-08-07
+created: 2026-08-14
+updated: 2026-08-14
 type: query
-tags: []
+tags: [wiki-maintenance, graph-analysis]
 sources: []
 ---
 
 # Weekly Wiki Graph Analysis
 
-**Date**: 2026-08-07 15:11 UTC
+**Date**: 2026-08-14 15:15 UTC
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Total pages scanned | 2917 |
-| Entities | 884 |
-| Concepts | 1968 |
+| Total pages scanned | 2962 |
+| Entities | 901 |
+| Concepts | 1995 |
 | Comparisons | 35 |
-| Queries | 5 |
-| Events | 25 |
-| Orphans (no inbound links) | 43 |
-| Content-rich orphans | 43 |
-| Broken wikilinks | 3390 |
-| Fixable wikilinks | 187 |
+| Queries | 4 |
+| Events | 27 |
+| Orphans (no inbound links) | 479 |
+| Content-rich orphans | 476 |
+| Broken wikilinks | 3463 |
+| Fixable wikilinks | 209 |
 | Duplicate groups | 16 |
-| Oversized pages (>200 lines) | 292 |
+| Oversized pages (>200 lines) | 303 |
 | Missing sources | 4 (0%) |
-| Tag violations | 976 |
-| Stale pages (>90 days) | 1204 |
+| Tag violations | 1021 |
+| Stale pages (>90 days) | 1313 |
 | Skeleton pages | 0 |
 | Not indexed in index.md | 26 |
-| Stale index entries | 7 |
+| Stale index entries | 8 |
 
 ## 1. Orphan Pages
 
-43 pages have zero inbound links from other wiki pages.
+479 pages have zero inbound links from other wiki pages.
 
 ### Content-Rich Orphans (top 15)
 
-- **concepts/local-llm/dgx-spark-nim** — 302 lines, 0 outbound links
-- **concepts/automation-series** — 281 lines, 0 outbound links
-- **concepts/qlora** — 234 lines, 0 outbound links
-- **comparisons/codex-app-server-vs-agent-protocols** — 209 lines, 0 outbound links
-- **comparisons/harness-backend-routing** — 185 lines, 0 outbound links
-- **concepts/ai-benchmarks/simpleqa** — 175 lines, 0 outbound links
-- **concepts/ai-benchmarks/ifeval** — 173 lines, 0 outbound links
-- **concepts/ai-benchmarks/mrcr** — 162 lines, 0 outbound links
-- **entities/antoine-buteau** — 149 lines, 0 outbound links
-- **concepts/ai-benchmarks/bfcl-v3** — 147 lines, 0 outbound links
-- **concepts/cloudflare-email-sending** — 131 lines, 0 outbound links
-- **concepts/good-regulator-theorem** — 125 lines, 0 outbound links
-- **concepts/hermes-codex-app-server-runtime** — 125 lines, 0 outbound links
-- **comparisons/google-alerts-alternatives-2026** — 120 lines, 0 outbound links
-- **entities/luke-curley** — 116 lines, 0 outbound links
+- **concepts/harness-engineering/system-architecture/claude-code-best-practices** — 385 lines, 19 outbound links
+- **concepts/multi-objective-policy-distillation** — 279 lines, 24 outbound links
+- **concepts/ai-energy** — 274 lines, 27 outbound links
+- **entities/openenv** — 234 lines, 6 outbound links
+- **concepts/claude/system-card-milestones** — 231 lines, 6 outbound links
+- **entities/ibrahim-diallo** — 227 lines, 9 outbound links
+- **concepts/symphony** — 208 lines, 9 outbound links
+- **concepts/autonomous-agent-marketplace-stack** — 199 lines, 7 outbound links
+- **concepts/ai-benchmarks/skillspector** — 188 lines, 13 outbound links
+- **concepts/llm-memory-architecture** — 188 lines, 6 outbound links
+- **concepts/mistral-ocr-4** — 188 lines, 11 outbound links
+- **concepts/hegel-property-based-testing** — 187 lines, 14 outbound links
+- **concepts/spine-swarm-agents** — 187 lines, 15 outbound links
+- **concepts/nvidia-blackwell-architecture** — 186 lines, 15 outbound links
+- **comparisons/codex-app-server-vs-claude-agent-sdk** — 185 lines, 1 outbound links
 
 ### All Orphans by Category
-- content-rich: 43
+- content-rich: 476
+- skeleton: 3
 
 ## 2. Broken Wikilinks
 
-3390 total broken links.
+3463 total broken links.
 
 | Issue Type | Count | Description |
 |------------|-------|-------------|
-| bare-wikilink-missing | 1709 | Bare name, target page does not exist |
-| missing | 1494 | Namespaced link to a page that does not exist |
-| cross-namespace | 125 | Entity ↔ concept namespace mismatch (auto-fixable) |
-| bare-wikilink | 62 | Bare name without namespace prefix (auto-fixable) |
+| bare-wikilink-missing | 1765 | Bare name, target page does not exist |
+| missing | 1489 | Namespaced link to a page that does not exist |
+| cross-namespace | 124 | Entity ↔ concept namespace mismatch (auto-fixable) |
+| bare-wikilink | 85 | Bare name without namespace prefix (auto-fixable) |
 
 ### Top Broken Targets (pages that need creating)
 
 - [[concepts/claude-code/claude-code]] — 35 references
 - [[agent-evaluation]] — 23 references
 - [[grpo]] — 22 references
+- [[]] — 21 references
 - [[gaia-benchmark]] — 19 references
 - [[reinforcement-learning]] — 18 references
 - [[entities/sglang]] — 17 references
 - [[concepts/agent-evaluation]] — 16 references
-- [[]] — 15 references
 - [[hal-leaderboard]] — 15 references
 - [[agentdojo]] — 14 references
 - [[concepts/agent-memory]] — 13 references
@@ -90,9 +91,11 @@ sources: []
 
 ### Fixable Links (sample)
 
-187 links can be auto-fixed (cross-namespace or bare → namespaced).
+209 links can be auto-fixed (cross-namespace or bare → namespaced).
 
 - `entities/alex-ellis`: [[concepts/opencode]] → [[entities/opencode]]
+- `entities/cactuscompute`: [[edge-llm-microcontroller]] → [[concepts/edge-llm-microcontroller]]
+- `entities/cactuscompute`: [[small-language-models]] → [[concepts/small-language-models]]
 - `entities/claude-code`: [[entities/coding-agents]] → [[concepts/coding-agents]]
 - `entities/deepmind`: [[concepts/gemma-4]] → [[entities/gemma-4]]
 - `entities/denseon-lateon`: [[concepts/embeddings]] → [[entities/embeddings]]
@@ -100,9 +103,7 @@ sources: []
 - `entities/drew-breunig`: [[entities/dspy]] → [[concepts/dspy]]
 - `entities/dsprrr`: [[entities/dspy]] → [[concepts/dspy]]
 - `entities/harvey`: [[entities/claude]] → [[concepts/claude]]
-- `entities/hugo-bowne-anderson`: [[entities/show-us-your-agent-skills]] → [[concepts/show-us-your-agent-skills]]
-- `entities/jina-ai`: [[concepts/embeddings]] → [[entities/embeddings]]
-- ... and 177 more
+- ... and 199 more
 
 ## 3. Duplicate / Similar Pages
 
@@ -128,7 +129,7 @@ sources: []
 ## 4. Index Reconciliation
 
 - **26 pages** are on disk but not listed in index.md
-- **7 index entries** reference files that no longer exist
+- **8 index entries** reference files that no longer exist
 
 ### Not-Indexed by Category
 
@@ -138,37 +139,37 @@ sources: []
 
 ## 5. Oversized Pages (>200 lines)
 
-292 pages exceed the 200-line threshold.
+303 pages exceed the 200-line threshold.
 
 - **concepts/agentic-search** — 1191 lines
-- **entities/ed-zitron** — 812 lines
-- **entities/simon-willison** — 809 lines
-- **entities/anthropic** — 807 lines
+- **entities/ed-zitron** — 885 lines
+- **entities/simon-willison** — 863 lines
+- **entities/anthropic** — 827 lines
 - **concepts/rlm-recursive-language-models** — 742 lines
+- **entities/fireworks-ai** — 711 lines
 - **concepts/dspy-rlm** — 698 lines
-- **entities/fireworks-ai** — 634 lines
-- **entities/openai** — 598 lines
-- **entities/openai-codex** — 593 lines
-- **entities/claude-code** — 575 lines
-- ... and 282 more
+- **entities/claude-code** — 629 lines
+- **entities/harvey** — 613 lines
+- **entities/openai** — 611 lines
+- ... and 293 more
 
 ## 6. Stale Pages (>90 days since update)
 
-1204 pages have not been updated in over 90 days.
+1313 pages have not been updated in over 90 days.
 
 ## 7. Tag Violations
 
-976 pages use non-canonical tags.
+1021 pages use non-canonical tags.
 
 ## 8. Recommended Actions
 
-- [MEDIUM] Fix 187 cross-namespace / bare wikilinks
-- [MEDIUM] Add inbound links to 43 content-rich orphan pages
+- [MEDIUM] Fix 209 cross-namespace / bare wikilinks
+- [MEDIUM] Add inbound links to 476 content-rich orphan pages
 - [HIGH] Review and consolidate 16 potential duplicate groups
-- [LOW] Consider splitting 292 oversized pages (>200 lines)
-- [HIGH] Fix 976 pages with non-canonical tags
-- [MEDIUM] Remove 7 stale index entries (files missing)
-- [LOW] 1204 pages stale >90 days - review needed
+- [LOW] Consider splitting 303 oversized pages (>200 lines)
+- [HIGH] Fix 1021 pages with non-canonical tags
+- [MEDIUM] Remove 8 stale index entries (files missing)
+- [LOW] 1313 pages stale >90 days - review needed
 
 ---
 *Generated by `scripts/_weekly_graph_report.py`*

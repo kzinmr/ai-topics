@@ -122,7 +122,11 @@ for key, data in pages.items():
 for key in sorted(pages.keys()):
     if key.endswith('/_index'):
         continue
-    has_in = any(key in targets for targets in inbound.values())
+    # Orphan = page that is never a TARGET of any wikilink (no inbound links).
+    # NOTE: previous logic `any(key in targets for targets in inbound.values())`
+    # checked whether the page appeared as a SOURCE (i.e. had outbound links),
+    # which reported dead-ends instead of orphans. Fixed 2026-08-14.
+    has_in = key in inbound
     if not has_in:
         data = pages[key]
         if data['lines'] >= 20 or data['size'] >= 500:
