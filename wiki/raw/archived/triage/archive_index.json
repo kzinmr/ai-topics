@@ -19,6 +19,7 @@
     "http://www.paulgraham.com/notnot.html",
     "http://www.paulgraham.com/popular.html",
     "http://www.paulgraham.com/re.html",
+    "http://www.paulgraham.com/say.html",
     "http://www.paulgraham.com/spam.html",
     "http://www.paulgraham.com/startupmistakes.html",
     "http://www.righto.com/2025/07/reverse-engineering-mysterious-up-data.html",
@@ -200,6 +201,7 @@
     "https://danluu.com/bad-decisions/",
     "https://danluu.com/ballmer/",
     "https://danluu.com/bitc-retrospective/",
+    "https://danluu.com/branch-prediction/",
     "https://danluu.com/cache-incidents/",
     "https://danluu.com/deconstruct-files/",
     "https://danluu.com/google-sre-book/",
@@ -1297,6 +1299,7 @@
     "https://overreacted.io/impossible-components/",
     "https://overreacted.io/my-decade-in-review/",
     "https://overreacted.io/there-are-no-instances-in-atproto/",
+    "https://overreacted.io/writing-resilient-components/",
     "https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf",
     "https://oztalking.com/en/issues/hidden-4gb-ai-model",
     "https://paper.design/",
@@ -2116,6 +2119,7 @@
     "https://www.cerebras.ai/blog/how-we-built-our-knowledge-base",
     "https://www.chatprd.ai/how-i-ai/my-gpt-56-sol-benchmark-game-changing-workflows",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-spectre/",
+    "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/bugtracker-separate/",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/c11-generic/",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/findloop/",
     "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-woa/",
@@ -2597,6 +2601,7 @@
     "https://x.com/aakashgupta/status/2067550891843186980",
     "https://x.com/blyons151/status/2045273056214470915",
     "https://x.com/getsuperintel",
+    "https://x.com/i/article/2056841484502962176",
     "https://x.com/i/article/2059652660022910976",
     "https://x.com/i/article/2060308122531418112",
     "https://x.com/i/article/2061440101411102721",
@@ -2642,5 +2647,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-14T10:38:59.132820+00:00"
+  "updated": "2026-08-14T14:17:18.754449+00:00"
 }

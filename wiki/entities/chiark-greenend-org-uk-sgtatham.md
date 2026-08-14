@@ -2,14 +2,16 @@
 title: Simon Tatham
 type: entity
 created: 2026-04-09
-updated: 2026-08-03
+updated: 2026-08-14
 tags:
   - person
   - blogger
   - hn-popular
   - developer-tooling
   - open-source
-sources: []
+sources:
+  - raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-bugtracker-separate--51ba701d.md
+  - https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/bugtracker-separate/
 ---
 
 
@@ -82,6 +84,8 @@ Across his projects, Tatham consistently applies Unix philosophy principles:
 - **spigot** separates mathematical computation from presentation, enabling exact real arithmetic
 
 His bug tracker essay argues that **issue tracking should separate report, diagnosis, and fix** rather than conflating them into a single thread. Each concern has different participants, different lifecycles, and different resolution criteria.
+
+The essay's central complaint is the Jira **Fix Version** field, which conflates three kinds of information with very different change probabilities and owners: a fact about the past (a bug fixed in an already-released version), a fact about the present (a fix landed on the branch for an unreleased version — "probably"), and an intention for the future (project management "wants" it fixed for 2.0.0, until a "Rapid Descoping Phase" bulk-updates it). Because release numbers don't sort released-before-unreleased (patch 1.2.1 may still be in the future after 1.3.0 ships), a query like "bugs with Fix Version < 1.3.0" unavoidably mixes facts and hopes. He likewise critiques two-tier Status/Resolution fields ('Closed' + 'Won't Fix'): finding "what bugs exist in the code" requires querying Open *and* Closed/Won't Fix, since the latter are still bugs. His preferred direction: separate fields for 'Target Version' (intent) vs 'Fixed In Version' (fact) — the right idea, though "not going far enough".
 
 ### Mathematical Curiosities as Engineering Practice
 

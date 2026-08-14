@@ -4,8 +4,9 @@ tags: [person]
 sources:
   - raw/articles/overreacted.io--impossible-components--a22447e4.md
   - raw/articles/overreacted.io--a-lean-syntax-primer--bef9d206.md
+  - raw/articles/overreacted.io--writing-resilient-components--7d6249a1.md
 created: 2026-04-24
-updated: 2026-08-13
+updated: 2026-08-14
 type: entity
 ---
 
@@ -33,6 +34,7 @@ His writing is characterized by deep conceptual exploration, animated explanatio
 | 2018 | Published "Wrote a hook. Lost my mind." — a self-critical reflection on over-engineering |
 | 2019 | Published "How Are Function Components Different from Classes?" |
 | 2019 | Published "Before You memo()" — arguing that memoization is often premature |
+| 2019 | Published "Writing Resilient Components" — component design principles over style guides |
 | 2020 | Published "Why Do React Elements Have a $$typeof Property?" — on security and serialization |
 | 2020 | Published "Goodbye, Clean Code" — challenging rigid code review conventions |
 | 2021 | Published "Why React Re-Renders" — deep dive into rendering semantics |
@@ -73,6 +75,10 @@ In "Before You memo()" (2019), Dan challenged the reflexive use of `React.memo()
 > "React is pretty fast by default. Most of the time, you don't need to optimize renders. When you do need to optimize, reach for memo as a last resort."
 
 The same pattern appears in "Before You useReducer()" (2022), where he argues that most state management is better served by colocated useState and the occasional state machine than by useReducer.
+
+### Component Design Principles: "Writing Resilient Components"
+
+In "Writing Resilient Components" (Nov 2019), Dan pivoted from style-guide debates to design principles that actually matter for correctness. His four rules: **don't stop the data flow** (avoid `shouldComponentUpdate` and memoization that block updates), **always be ready to render** (components must not assume they render once), **no component is a singleton** (never hold one-off state on the module or class level), and **keep the state local** (don't lift state up prematurely). The essay is also his most direct critique of linter-enforced style: rules that never caught a bug should be turned off, Prettier should handle formatting, and the linter should hunt bugs, not aesthetics — the "enforcer mindset" makes people opinionated about things that "don't bring a meaningful difference" while lulling them into a false sense of accomplishment.
 
 ### Frameworkless React
 

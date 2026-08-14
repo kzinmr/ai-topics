@@ -625,7 +625,7 @@
 - [[entities/openknowledge]] — OpenKnowledge — Open-source AI-native markdown editor with Claude/Codex/Cursor integration (373 HN pts)
 - [[entities/openpipe]] — OpenPipe
 - [[entities/openrouter]] — OpenRouter
-- [[entities/overreacted-io]] — Dan Abramov; Lean Syntax Primer & formal verification exploration (2026)
+- [[entities/overreacted-io]] — Dan Abramov; resilient component design principles (Writing Resilient Components), Lean Syntax Primer & formal verification exploration (2026)
 - [[entities/palantir]] — Palantir Technologies
 - [[entities/palo-alto-networks]] — Palo Alto Networks — Global cybersecurity leader; Prisma AIRS AI Security Platform; Portkey acquisition (Apr 2026) establishes AI Gateway control plane for agents
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc.

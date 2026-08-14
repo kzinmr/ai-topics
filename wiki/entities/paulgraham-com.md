@@ -23,6 +23,7 @@ sources:
   - raw/articles/paulgraham.com--nerds-html--d2271270.md
   - raw/articles/paulgraham.com--startupmistakes-html--38e869c5.md
   - raw/articles/paulgraham.com--growth-html--28e90f17.md
+  - raw/articles/paulgraham.com--say-html--efb002f7.md
 ---
 
 # Paul Graham
@@ -223,6 +224,10 @@ Graham's founding essay on the maker identity: hackers and painters are both mak
 
 A memoir-essay on the American secondary-school social order: smart kids are unpopular not because intelligence is despised but because nerds opt out of the popularity game — they prefer the world of ideas to the rituals of adolescent status competition. Graham's analysis of school as a "closed world" where the normal escape valves of adult life are unavailable became a canonical statement of nerd identity in tech culture.
 
+### What You Can't Say (January 2004)
+
+Graham's essay on **moral fashion**: every era believes things that are ridiculous and believes them so strongly that saying otherwise gets you fired, ostracized, imprisoned, or killed — and ours is almost certainly no exception. He opens with the **Conformist Test** (if you have no opinions you'd be reluctant to express in front of your peers, you're probably just thinking what you're told) and the mapmakers' deliberate-mistake analogy (if everyone reproduces the same "mistakes," they didn't arrive at them independently — "it would be like someone claiming they had independently decided in 1972 that bell-bottom jeans were a good idea"). The essay then develops a method for surfacing taboo ideas: note what people in other eras believed that was ridiculous, work backwards from the fashions of our own time, and use the "time machine" test to find the moral equivalents today. It concludes with the pragmatic strategy of working on forbidden questions quietly and letting the work speak. The essay is the philosophical foundation of Graham's career-long insistence on questioning received wisdom — the direct ancestor of his later independent-mindedness and "Do Things that Don't Scale" theses.
+
 ### The 18 Mistakes That Kill Startups (Oct 2006)
 
 Graham's systematic inversion of startup advice: if you avoid every cause of failure, you succeed. The essay collapses all failure into one root cause — **not making something users want** — and enumerates 18 specific ways startups fail to do so: single founder, bad location, marginal niche, derivative idea, obstinacy, hiring bad programmers, choosing the wrong platform, slowness in launching, launching too early, having no specific user in mind, raising too little money, spending too much, raising too much money, poor investor management, sacrificing users to profit, not wanting to get your hands dirty, fights between founders, and a half-hearted effort. The framework remains the canonical YC-era diagnostic for startup failure modes.
@@ -233,7 +238,7 @@ Graham's systematic inversion of startup advice: if you avoid every cause of fai
 |--------|-------|------------|
 | **2001** | Programming language adoption, expert influence | "Being Popular" |
 | **2003** | Maker identity, nerd culture | "Hackers and Painters", "Why Nerds are Unpopular" |
-| **2004** | Wealth creation, income variation, the gap between best and rest | "Mind the Gap" |
+| **2004** | Wealth creation, income variation, moral fashion | "Mind the Gap", "What You Can't Say" |
 | **2006** | Startup failure modes | "The 18 Mistakes That Kill Startups" |
 | **2023** | Superlinear returns, compounding dynamics | "Superlinear Returns" |
 | **2024** | How to do great work, founder management, essay theory | "How to Do Great Work", "Founder Mode", "The Best Essay" |

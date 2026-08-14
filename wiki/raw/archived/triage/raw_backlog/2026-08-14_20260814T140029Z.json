@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-14T14:17:18.753851+00:00",
+  "triage_run_id": "20260814T140029Z",
+  "source": "raw_backlog",
+  "summary_ja": "rawバックログ5記事を処理。take 0件、reference 4件(既存エンティティページのenrichment: overreacted-ioのWriting Resilient Components、sgtathamのbug tracker分離原則の具体例、dan-luuのbranch prediction講演、paulgrahamのWhat You Can't Say)、skip 1件(autonomous agent stackはconcepts/autonomous-agent-marketplace-stack.mdに完全収録済み)。全記事が非AI系バックログであり、新規ページ作成なし、既存ページへのreference追記のみ。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-overreacted-writing-resilient-components",
+      "source": "raw_backlog",
+      "source_name": "overreacted.io",
+      "title": "Writing Resilient Components",
+      "url": "https://overreacted.io/writing-resilient-components/",
+      "raw_path": "~/wiki/raw/articles/overreacted.io--writing-resilient-components--7d6249a1.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Dan Abramovの既存エンティティページ(entities/overreacted-io.md, 208行)に本稿の内容は未収録(Referencesにrawファイル名のみ)。2019年の名著で、スタイルガイド批判(バグを取ったことのないlintルールはオフに、整形はPrettier、linterは美学ではなくバグ追跡用)と4つのコンポーネント設計原則(Don't stop the data flow / Always be ready to render / No component is a singleton / Keep the state local)を提示。TimelineとCore Ideasに追記する価値あり。AI関連ではないが著名エンティティの充実としてreference。",
+      "candidate_wiki_path": "entities/overreacted-io",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-sgtatham-bugtracker-separate",
+      "source": "raw_backlog",
+      "source_name": "chiark.greenend.org.uk/~sgtatham",
+      "title": "Separation of concerns in a bug tracker",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/bugtracker-separate/",
+      "raw_path": "~/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-bugtracker-separate--51ba701d.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/chiark-greenend-org-uk-sgtatham.md(153行)のSeparation of Concerns in Tooling節に本稿のテーゼ1行は既収録だが、具体的な論点(JiraのFix Versionフィールドが「過去の事実/現在の見込み/未来の意図」を混同、Status/Resolution二段階分離でも「コードに存在するバグ」検索にWon't Fixの拾い漏れが生じる)は未収録。具体的例を2-3文追記するreference相当のenrichment。AI関連ではないが著名OSS作者( PuTTY )のページ充実。",
+      "candidate_wiki_path": "entities/chiark-greenend-org-uk-sgtatham",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-danluu-branch-prediction",
+      "source": "raw_backlog",
+      "source_name": "Dan Luu",
+      "title": "Branch prediction (talk transcript)",
+      "url": "https://danluu.com/branch-prediction/",
+      "raw_path": "~/wiki/raw/articles/danluu.com--branch-prediction--2971bd41.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/dan-luu.md(84行)のNotable Essays (Non-AI)節(作者網羅目的で非AIエッセイをカタログ化)に本稿は未収録。2017年のTwo Sigma/RC 'localhost'講演の疑似トランスクリプトで、分岐予測の動機(パイプライン深層化)から静的予測(BTFNT)、1-bit/2-bit飽和カウンタ、大域履歴・相関分岐、最新予測器まで解説。AI関連ではないが同節のパターンに沿って1項目追記するreference。",
+      "candidate_wiki_path": "entities/dan-luu",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-paulgraham-say",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com",
+      "title": "What You Can't Say",
+      "url": "http://www.paulgraham.com/say.html",
+      "raw_path": "~/wiki/raw/articles/paulgraham.com--say-html--efb002f7.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/paulgraham-com.md(528行, 本日10:00ランでもenrich済み)のClassic Essays (2003-2006)節に本稿は未収録(Referencesにrawファイル名のみ)。2004年1月の古典で、道徳的ファッション(道徳的流行)、コンフォーミスト・テスト、地図製作者の意図的誤りアナロジー、タブーなアイデアの発見法を提示。PGの独立心テーゼの哲学的基盤であり、Classic Essays節に1項目追記するreference。",
+      "candidate_wiki_path": "entities/paulgraham-com",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "raw-backlog-autonomous-agent-technical-stack",
+      "source": "raw_backlog",
+      "source_name": "X Article (unknown author)",
+      "title": "The Technical Stack for Autonomous Agents",
+      "url": "https://x.com/i/article/2056841484502962176",
+      "raw_path": "~/wiki/raw/articles/2026-05-19_autonomous-agent-technical-stack.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 既に完全にcapture済み。concepts/autonomous-agent-marketplace-stack.md(198行, 2026-05-20作成)が本稿を一次ソースとして全10レイヤー(Trust Plane 1-3 / Market Plane 4-7 / Control Plane 8-10)と戦略的示唆を詳細に展開済み。sources frontmatterに raw/articles/2026-05-19_autonomous-agent-technical-stack.md が明記されており、本文にもERC-8004, x402, Moody's for Machines等の具体数字(128,000 agents, 24 chains, Gartner 40%等)が収録済み。重複作成は不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}
