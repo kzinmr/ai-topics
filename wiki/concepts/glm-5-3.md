@@ -1,0 +1,102 @@
+---
+title: "GLM-5.3"
+created: 2026-08-14
+updated: 2026-08-14
+type: concept
+tags:
+  - model
+  - open-weight
+  - coding-agents
+  - cybersecurity
+  - china
+  - benchmark
+  - reasoning
+  - agentic-rl
+  - long-horizon
+  - inference
+sources:
+  - raw/articles/2026-08-14_zai_glm-5-3.md
+---
+
+# GLM-5.3
+
+**GLM-5.3** is a frontier open-weights language model released by [[entities/glm-5-zai|Z.AI (Zhipu AI)]] on August 14, 2026. It is the successor to [[concepts/glm-5-2|GLM-5.2]], and — unusually — uses the **same base model as GLM-5.2**, with every capability gain coming from post-training. It is notable for two things: it is the most capable open-weights coding model at release, and its cyber capabilities "developed faster than expected" during post-training, making it the first open-weights model to be competitive with the closed frontier on vulnerability discovery.
+
+## Release Summary
+
+| Attribute | Detail |
+|-----------|--------|
+| **Base model** | Same as GLM-5.2 (post-training-only upgrade) |
+| **Released** | August 14, 2026 |
+| **Weights** | Open ~2 weeks after launch (pending safety evaluation/hardening) |
+| **Coding** | Most capable open-weights model for coding; +50% over GLM-5.2 on Z.ai Code Bench |
+| **Cyber** | SOTA on CyberGym for vulnerability discovery |
+| **Training stack** | slime (open-source RL framework) + Megatron + SGLang |
+
+## Coding Capability
+
+GLM-5.3 achieves open-source SOTA on public benchmarks including Terminal Bench 3.0 and Agents' Last Exam:
+
+| Benchmark | GLM-5.2 | GLM-5.3 |
+|-----------|---------|---------|
+| Terminal-Bench 3.0 | 4.6 | **28.3** |
+| DeepSWE v1.1 | 46.2 | **66.9** |
+| Agents' Last Exam | 23.8 | **28.5** |
+
+### Z.ai Code Bench
+
+Z.ai introduced an in-house benchmark evaluating coding agents in realistic local development environments along two dimensions: end-to-end completion rate and fine-grained checklist accuracy. GLM-5.3 improves both performance and token efficiency:
+
+- **Max effort**: 34.5% at ~75K output tokens/task (vs. GLM-5.2's 23.4% at 96K)
+- **High effort**: 31.4% at ~50K tokens, surpassing Claude Opus 4.8 (29.5% at 120K)
+- Remains behind [[entities/fable|Claude Fable 5]] (39.5% at Max effort)
+
+## Emergent Cyber Capabilities
+
+The most discussed aspect of the release. Vulnerability-discovery data and environments were added to the training mix, and cyber capability scaled faster than expected — the model began reasoning across multiple exploitation stages and forming coherent plans for complete exploitation chains:
+
+| Benchmark | GLM-5.2 | GLM-5.3 | Mythos 5 | GPT-5.6 Sol |
+|-----------|---------|---------|----------|-------------|
+| CyberGym (vuln discovery) | 77.2% | **84.5%** | 83.8% | 83.6% |
+| ExploitBench | 24.4% | **54.4%** | 78.0% | 76.5% |
+| ExploitGym (tasks/2h, /6h) | 29, 39 | **105, 130** | 181, 247 | — |
+
+The pattern across the three is consistent: **the further up the exploitation chain a benchmark sits, the larger the gain from GLM-5.2 — and the wider the remaining gap to the closed frontier.** GLM-5.3 tops the closed frontier on CyberGym but remains well behind [[entities/anthropic|Anthropic]]'s Mythos 5 on end-to-end exploitation (ExploitBench, ExploitGym).
+
+### Real-World Disclosure Ledger
+
+Working with security teams in China against real-world codebases, GLM-5.3 identified **2,436 vulnerabilities across 269 projects** (1,097 medium-to-high severity), spanning kernels, OSes, browser engines, and network protocols. The oldest flaw dated to 1981; on average a vulnerability lived 26.6 years before discovery. This became the **Z.ai Security Disclosure Ledger** (cvd.z.ai), a public record of findings as they move through coordinated disclosure.
+
+The emergent-cyber framing connects GLM-5.3 to the broader [[concepts/china-agentic-coding-sprint|Chinese open-weights competition]] and the debate over closed-model cyber gating (see [[concepts/cyber-frontier-models|cyber capability]] and Anthropic's Mythos/Fable access restrictions).
+
+## Post-Training Approach: Environment Scaling
+
+As agent capability improves, the difficulty of scaling post-training shifts from the model to the **environment**. Z.ai built pipelines that synthesize long-horizon environments end to end (research agents collect task patterns; a judge agent verifies solvability; verifiers are synthesized without access to reference solutions). GLM-5.3 carries over GLM-5.2's RL strategies including **SAO with compaction**, which helps gains persist on long-horizon tasks.
+
+## Training Infrastructure (slime)
+
+GLM-5.3 runs on **slime**, Z.ai's open-source post-training framework, with Megatron on the training side and [[concepts/inference/sglang|SGLang]] on the rollout side. Notable improvements:
+
+- **Algorithmic**: top-p mask, top-k and full-vocabulary OPD, R3-style setups, full numerical training–rollout alignment (logprob difference at 1e-7, >99.99% reduction).
+- **Resource efficiency**: local-storage caching layer, multi-teacher OPD with dynamic teacher switching, workload-aware heuristics — improving end-to-end RL training throughput by **>2.3×**.
+
+## Access and Pricing
+
+- API model `glm-5.3` with three thinking effort levels (`reasoning_effort`).
+- **GLM Coding Plan** moved to a **points-based quota** system (input/cached/output priced separately); off-peak hours (outside 14:00–18:00 UTC+8 weekdays) consume 50% of standard points.
+- **98%+ cache hit rate** (~30% more effective tokens); **1.5× limited-time quota boost** (up to 180% standard quota through August 31).
+
+## Position in the Open-Weights Landscape
+
+GLM-5.3 continues the rapid pace of Chinese open-weights development documented in [[concepts/china-agentic-coding-sprint]] and [[concepts/glm-5-2]]. Its post-training-only upgrade (same base as GLM-5.2) is an unusual demonstration that frontier-scale gains can be achieved without new pretraining — a signal for the [[concepts/post-training/post-training|post-training]]-centric direction of current open-model competition. Its emergent cyber capabilities also make it a focal point in the debate over whether open weights plus removable guardrails change the attacker/defender balance (see the HN discussion around release).
+
+## Related Pages
+
+- [[concepts/glm-5-2]] — Predecessor (same base model)
+- [[concepts/glm-5-1]] — Earlier generation
+- [[entities/glm-5-zai]] — Z.AI (Zhipu AI) entity
+- [[concepts/china-agentic-coding-sprint]] — Chinese open-weights competition context
+- [[concepts/index-share]] — IndexShare attention (GLM-5.2)
+- [[concepts/post-training/post-training]] — Post-training concepts
+- [[entities/fable]] — Claude Fable 5 (closed-frontier benchmark reference)
+- [[entities/anthropic]] — Mythos/Fable cyber-gating context

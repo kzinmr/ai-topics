@@ -1,7 +1,7 @@
 ---
 title: "Mistral OCR 4"
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-08-14
 type: concept
 tags:
   - ocr
@@ -18,11 +18,27 @@ tags:
   - translation
 sources:
   - raw/articles/2026-06-24_mistral-ai_ocr-4.md
+  - raw/articles/2026-08-13_mistral-ai_ocr-4-1.md
 ---
 
 # Mistral OCR 4
 
 Mistral OCR 4 is a state-of-the-art optical character recognition model released by [[entities/mistral-ai]] on June 23, 2026. It represents the fourth generation of Mistral's document extraction technology, moving beyond simple text extraction to structured document understanding with bounding boxes, block classification, and inline confidence scores.
+
+## OCR 4.1 (August 2026)
+
+A minor-version update surfaced on Hacker News August 13, 2026 (Mistral docs list the v4.1 model lifecycle as "Public Preview" July 16, 2026). Model ID `mistral-ocr-4-1`.
+
+**New capabilities** (relative to OCR 4):
+- **Native paragraph-level bounding box extraction** — bounding boxes at paragraph granularity rather than only text-element level
+- **Structural block labels** — explicit semantic block classification (titles, tables, equations, etc.)
+- **Block-level confidence scores** — confidence at the block level in addition to per-word scores
+
+**Pricing**: $4 / 1,000 pages (OCR); $5 / 1,000 annotated pages (Document AI mode, unchanged from OCR 4).
+
+**Endpoints**: BBox Extraction and OCR via `/v1/ocr`; Annotations — Structured; batching via `/v1/batch`.
+
+The update tightens OCR 4's existing structured-output value proposition (see "Structured Document Representation" above), making block-level structure and confidence first-class outputs for downstream RAG, citation, and human-in-the-loop verification pipelines.
 
 ## Overview
 

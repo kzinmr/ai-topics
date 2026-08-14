@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6 (Sol / Terra / Luna)"
 created: 2026-06-27
-updated: 2026-08-07
+updated: 2026-08-14
 type: concept
 tags:
   - model
@@ -21,6 +21,8 @@ sources:
   - raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md
   - raw/articles/2026-07-27_cerebras_getting-most-out-of-gpt-5-6.md
   - raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md
+  - raw/articles/2026-08-13_openai_gpt-5-6-sol-ultrafast.md
+  - raw/articles/2026-08-13_cerebras_gpt-5-6-sol-ultrafast.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)
@@ -231,6 +233,31 @@ Sol weighs options and sets direction, then hands off implementation to Terra (f
 
 ### External Models in Codex
 Codex supports local providers (Ollama, LM Studio) and custom providers via configuration — enabling Kimi K2.7 Code, GLM-5.2 for bounded subagent work.
+
+## Ultrafast Mode (August 13, 2026)
+
+On August 13, 2026, OpenAI and [[entities/cerebras-systems|Cerebras]] jointly previewed **Ultrafast mode** — a new GPT-5.6 Sol service tier that runs **up to 14× faster than Standard processing** and up to **750 output tokens/second**, launching first in the OpenAI API (limited preview to a select group of customers).
+
+### Positioning
+
+Ultrafast resolves the classic speed-vs-intelligence tradeoff. Previously, real-time speed meant choosing a smaller or more specialized model; Ultrafast keeps frontier intelligence on the critical path of time-sensitive work. Per Cerebras (Artificial Analysis output speeds), Sol Ultrafast runs **11× faster than Fable 5** and **5× faster than Opus 4.8 on Fast mode**.
+
+### Benchmarks (Cerebras)
+
+- **Humanity's Last Exam** (2,500 PhD-level questions): Sol Ultrafast completed all questions in **11 hours 11 minutes** vs. Claude Fable 5's **78 hours 27 minutes** — comparable accuracy nearly **7× faster**.
+- **GDP-Val** (economically valuable knowledge work): **5.6× end-to-end speedup** with no quality degradation.
+
+### Architecture
+
+Powered by Cerebras' **Wafer-Scale Engine**: 44 GB of SRAM per wafer-sized chip keeps weights on-chip, eliminating the GPU memory-bandwidth bottleneck (weights repeatedly shuttled between on-chip and off-chip memory). Tokens flow through layers pipelined across wafers.
+
+### Use Cases
+
+OpenAI highlighted: incident response/reliability (root-cause while the outage unfolds), financial research/security, real-time customer support and voice, commerce (resolve checkout before hesitation), and live research (overnight runs become interactive sessions). Early customers: Jane Street, Podium, Basis, Rogo.
+
+### Relationship to Prior Speed Efforts
+
+Ultrafast extends the Cerebras collaboration first documented in the "Cerebras Usage Guide (July 2026)" section (Sol at 750 tok/s for interactive use). It is distinct from the **"Fast mode"** announced in the July 30 price-performance update (2.5× speed for 2× price) — Ultrafast is an order-of-magnitude speed class, not a price tier.
 
 ## Related Pages
 - [[concepts/gpt/gpt-5-5]] — Predecessor model

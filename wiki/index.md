@@ -904,7 +904,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1978 pages)
+## Concepts (1981 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1800,6 +1800,7 @@
 - [[concepts/gliner-model-family]] — GLiNER Model Family — Bidirectional encoder-based SLM family (GLiNER/GLiNER2/GLiGuard/GLiNER2-PII); NER→multi-task info extraction→safety moderation→PII detection; 205M parameter model surpassing ChatGPT; 42 PII entity types; Exceeds OpenAI Privacy Filter accuracy (July 2🆕)
 - [[concepts/glm-5-1]] — GLM-5.1
 - [[concepts/glm-5-2]] — GLM-5.2
+- [[concepts/glm-5-3]] — GLM-5.3 — Frontier open-weights coding model with emergent cyber capabilities (Aug 2026)
 - [[concepts/glut-of-circuits]] — GLUT-of-Circuits (LLM Model)
 - [[concepts/gm8xx8-gm8xx8-ai-paper-curator]] — gm8xx8 (@gm8xx8) — AI Paper Curator
 - [[concepts/gnap-git-native-agent-protocol]] — GNAP (Git-Native Agent Protocol)
@@ -2344,6 +2345,7 @@
 - [[concepts/openai/economic-futures-age-of-ai]] — OpenAI Foundation: Economic Futures in the Age of AI
 - [[concepts/openai/enterprise-adoption-patterns]] — OpenAI vs Anthropic Enterprise Adoption Patterns
 - [[concepts/openai/frontier-governance-framework]] — OpenAI Frontier Governance Framework
+- [[concepts/openai/how-organizations-use-ai-evidence-from-chatgpt]] — How Organizations Use AI: Evidence from ChatGPT (OpenAI working paper)
 - [[concepts/openai/index]] — OpenAI Platform & APIs
 - [[concepts/openai/model-spec]] — OpenAI Model Spec
 - [[concepts/openai/realtime-2]] — OpenAI GPT-Realtime-2
@@ -2382,6 +2384,7 @@
 - [[concepts/package-management]] — Package Management
 - [[concepts/palantir-ai-fde]] — AI FDE (Foundry Decision Engine)
 - [[concepts/pallets]] — Pallets
+- [[concepts/parametric-factuality-recall-bottleneck]] — Parametric Factuality: Recall Is the Bottleneck — Google Research knowledge-profiling framework (Aug 2026)
 - [[concepts/passive-reconnaissance]] — Passive Reconnaissance
 - [[concepts/peft-lora-and-qlora]] — Peft Lora And Qlora
 - [[concepts/pentagon-ai-contracts-2026]] — Pentagon AI Contracts (May 2026)
