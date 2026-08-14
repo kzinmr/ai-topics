@@ -904,7 +904,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1980 pages)
+## Concepts (1981 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1057,6 +1057,7 @@
 - [[concepts/ai-benchmarks/crmarena-pro]] — CRMArena-Pro
 - [[concepts/ai-benchmarks/cursorbench]] — CursorBench
 - [[concepts/ai-benchmarks/cybench]] — Cybench
+- [[concepts/ai-benchmarks/databench]] — DataBench — Hex's agentic analytics benchmark; 100 realistic Q&A/open-ended tasks in Shorelane warehouse; GPT-5.6 Sol LLM judge; Fable 5 best, Opus 5 effort regressions, Luna Pareto frontier (Aug 14)
 - [[concepts/ai-benchmarks/decodingtrust]] — DecodingTrust
 - [[concepts/ai-benchmarks/deepresearch-bench]] — DeepResearch Bench
 - [[concepts/ai-benchmarks/deepswe-benchmark]] — DeepSWE Benchmark (Datacurve)

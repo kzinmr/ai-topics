@@ -2,7 +2,7 @@
 title: "Hex Technologies"
 type: entity
 created: 2026-05-08
-updated: 2026-08-08
+updated: 2026-08-14
 tags:
   - company
 aliases: ["Hex", "Hex Tech"]
@@ -10,6 +10,7 @@ sources:
   - https://hex.tech
   - raw/articles/2026-05-23_hex-technologies_evaluate-data-agents.md
   - raw/articles/2026-05-10_hex-technologies_notebook-agent-prompting-guide-agentic-analytics.md
+  - raw/articles/2026-08-14_hex-technologies_databench-agentic-analytics-benchmark.md
 ---
 
 # Hex Technologies
@@ -104,6 +105,24 @@ Hex created a fully synthetic B2B2C office-supplies platform called **Shorelane 
 
 Authored by Izzy Miller, Engineering (May 22, 2026).
 
+### DataBench — Agentic Analytics Benchmark (August 2026)
+
+In August 2026, Hex released **DataBench**, a frontier benchmark for agentic analytics built on the Shorelane environment (see above). It addresses the gap between existing analytics benchmarks (which Hex calls "overspecified pub trivia" — e.g., Sonnet 4.5 at 90% on Spider 2.0, Claude Haiku 4.5 at 89% on DABstep) and realistic user prompts, which are vague, directional, and often unanswerable with the available data.
+
+**Design**: 100 realistic analytical tasks (Q&A + open-ended) in the Shorelane Commerce workspace, judged by a GPT-5.6 Sol LLM judge with plain-language rubric briefs (majority of 3 judge runs, 96% agreement). Ten tasks are deliberately crafted "signature traps" with obvious-but-wrong answers.
+
+**Key findings**:
+- No model/effort pair scores below 50%; the analytical floor is higher than expected
+- **GPT-5.6 Luna** forms the entire pre-elbow of the Pareto frontier — near-Sol performance at ~1/14th the cost
+- **Test-time scaling regressions**: unlike coding benchmarks (CursorBench), higher effort can *hurt* — Opus 5 "gets devastated" at xhigh/max, talking itself past correct simple answers
+- **Claude Fable 5 is the exception**: only model where scaling effort consistently buys better outcomes (85/100 top score)
+- Task breakdown: 75% Q&A, 66% open-ended, 54% traps — the gap is *judgment*, not evidence gathering
+- Failure mode: "manufacturing certainty" — Opus 5 at max effort produced 11 minutes of correct arithmetic then promoted correlation into a causal law and wrote a confident (wrong) recommendation
+
+Hex plans to open-source the Shorelane analytical environment (DataBench itself stays private to avoid training contamination). Full details: [[concepts/ai-benchmarks/databench]].
+
+Source: raw/articles/2026-08-14_hex-technologies_databench-agentic-analytics-benchmark.md
+
 ### Hex in Codex Integration (June 2, 2026)
 
 Hex launched as an **OpenAI Codex plugin**, enabling Codex users to invoke Hex for analytics without leaving the coding agent. Three integration modes:
@@ -122,3 +141,4 @@ Source: raw/articles/2026-06-03_hex-technologies_hex-in-codex.md
 - [[entities/anthropic]] — customer using Hex for data analytics
 - [[entities/palantir]] — founders' previous employer
 - [[concepts/data-notebooks]] — notebook paradigm evolution
+- [[concepts/ai-benchmarks/databench]] — Hex's agentic analytics benchmark (August 2026)

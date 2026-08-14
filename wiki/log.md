@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-14] dreaming-wiki-ingest | downstream recovery — 1 take (DataBench), upstream archive confirmed
+
+- **Recovery**: Pre-run script reported dreaming-group JSON parse failure; output file `/opt/data/.hermes/cron/output/c4a9e8d2f671/2026-08-14_18-17-26.md` (4,700 lines) + `triage_latest.json` (18:15) both present. Upstream commit `86382089` (18:17) already committed log entry + archive (11 skips, Takes=0 saturation).
+- **Pattern E verification (2026-08-11 pitfall)**: Ran `check_archive_index_absence.py` — 4 never-archived files found. Two were blog-wiki-ingest takes from today (voyage-code-4 → entities/voyage-ai.md; Hadamard-668 → concepts/claude-fable-jacobian-conjecture.md) — already covered, archived as skips. Hebbia × Third Bridge (Jul 2025) — skip, data-source mention already in entities/hebbia.md L57.
+- **Genuine gap found**: Hex **DataBench** — agentic analytics benchmark (100 tasks, Shorelane env, GPT-5.6 Sol LLM judge) was absent from ALL pipelines (sitemap 06:00 scrape, no pipeline triaged it).
+- **Created: [[concepts/ai-benchmarks/databench]]** — DataBench v1: 100 realistic Q&A/open-ended tasks; signature traps; key results (no model <50% floor, Luna Pareto frontier at ~1/14th cost, Opus 5 effort regressions, Fable 5 exception at 85/100, task breakdown 75/66/54); methodology (LLM judge majority-of-3, 96% agreement); Shorelane open-source plans.
+- **Enriched: [[entities/hex-technologies]]** — Added "DataBench — Agentic Analytics Benchmark (August 2026)" section + frontmatter source + related wikilink.
+- **Archive**: re-ran `archive_triage.py dreaming --keep-reference` → 14 candidates, 3 new archived (Hebbia, voyage-code-4, hadamard-668), 11 dedup; total archive URLs 2,661.
+
+
 ## [2026-08-14] dreaming consolidation | 0 takes, 0 references, 11 skips (full saturation)
 - **Takes=0 saturation confirmed**: Checkpoint had `total_articles: 0`, `recent_raw_articles: 228`. All 24 unarchived articles from the 3-day window verified against today's pipeline outputs.
 - **Duplicate check**: Today's pipelines already processed all AI-relevant content — active-crawl (11:00: GLM-5.3, parametric-factuality, how-organizations-use-ai + GPT-5.6/Mistral OCR 4.1 enriched), blog-wiki-ingest (10:45: voyage-code-4, Gemini 3.7 Flash, Hadamard-668), newsletter-wiki-ingest (11:00: grok-4-6 enriched, lovable entity), raw-backlog-ingest (10:00/14:00/18:00: danlark, harvey, PG, zig, cursor-ai, overreacted-io, sgtatham, code-search-indexing).
