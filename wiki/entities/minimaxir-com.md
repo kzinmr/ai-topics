@@ -1,9 +1,11 @@
 ---
 title: "Max Woolf"
-tags: [person]
-sources: []
+tags: [person, coding-agents]
+sources:
+  - raw/articles/minimaxir.com--2025-01-write-better-code--d88107e5.md
+  - https://minimaxir.com/2025/01/write-better-code/
 created: 2026-04-24
-updated: 2026-08-11
+updated: 2026-08-15
 type: entity
 ---
 
@@ -149,6 +151,24 @@ In *"Nano Banana can be prompt engineered for extremely nuanced AI image generat
 **Limitations:** poor style transfer (autoregressive resistance; new-image-in-style works but transfer does not), essentially no IP restrictions (multi-IP nightclub scene with Super Mario / Mickey Mouse / Bugs Bunny / Pikachu / Optimus Prime / Hello Kitty), and lenient NSFW moderation relative to other APIs.
 
 Woolf open-sourced **gemimg**, a lightweight Python wrapper for the Nano Banana API endpoint, plus Jupyter notebooks reproducing every generation in the post. Source: [[raw/articles/minimaxir.com--2025-11-nano-banana-prompts--a1691cff.md]]
+
+---
+
+### The "Write Better Code" Iterative Prompting Experiment (Jan 2025)
+
+In *"Can LLMs write better code if you keep asking them to 'write better code'?"* (Jan 2025), Woolf ran a controlled experiment on **iterative prompting** — the code equivalent of the DALL-E "make it more X" meme. He gave Claude 3.5 Sonnet (`claude-3-5-sonnet-20241022`, temperature=0) an original interview-style Python problem (1M random integers 1–100,000; find the difference between the smallest and largest numbers whose digits sum to 30) and repeatedly asked it to "make the code better" within a single conversation.
+
+**Casual prompting results:** iterative "write better code" prompts objectively improved the code (precomputed digit-sum lookup table in a byte array, numpy vectorization, `concurrent.futures` multiprocessing, numba JIT compilation), but the code-equivalent of "going cosmic" was **enterprise overengineering** — bloated classes, redundant async + numba parallelism, and "enterprise-level features."
+
+**Prompt-engineered variant:** a second run with an explicit system prompt (DRY rules, "no extra code beyond what is absolutely necessary," a "$100 fine" incentive, and a Planning step) converged much faster and more consistently — reaching ~11.2 ms average runtime — but was *more* prone to subtle bugs: a bit-shifting digit-sum implementation that was a complete hallucination (optimized for hexadecimal, not decimal), and a numba read-only-object error from mutating module-level state inside JIT functions.
+
+**Key findings:**
+- Vague iterative prompting improves code, but "better" is too open-ended — direction matters; prompt engineering outperformed blind iteration
+- LLMs are biased toward average outputs (next-token prediction optimizes the average); small explicit guidance improves output more than the effort required
+- Claude missed obvious algorithmic angles: statistical deduplication (uniform sampling guarantees duplicates) and sort-based search
+- Human verification remains necessary — Woolf had to fix logic bugs in nearly every iteration
+
+The experiment anticipated his later systematic agentic-coding methodology (Feb 2026) and remains a frequently-cited early datapoint on iterative self-refinement loops. See [[concepts/prompt-design]] and [[concepts/ai-coding-effectiveness-debate]].
 
 ---
 

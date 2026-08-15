@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-15] raw-backlog-ingest | 2 entity enrichments, 3 already-captured skips
+
+- Batch: raw-backlog-collect 20260815T140004Z (ai-hint sort, 5 candidates).
+- **[[entities/minimaxir-com]]** +The "Write Better Code" Iterative Prompting Experiment (Jan 2025): controlled Claude 3.5 Sonnet iterative-prompting study (casual "make it better" loop → enterprise overengineering as code's "cosmic" endpoint; explicit system-prompt variant → 11.2ms avg runtime but hex-vs-decimal bit-shift hallucination + numba read-only bug; LLM average-output bias; missed dedup/sort algorithmic angles). Frontmatter: sources + raw article, tags +coding-agents, updated 2026-08-15.
+- **[[entities/ash-vardanyan]]** +Parsing JSON in C & C++: Singleton Tax (Jan 2025): allocator-pattern essay (nlohmann/json, yyjson, simdjson no custom allocator, RapidJSON, Glaze), 4KB on-stack arena for MTU-sized short JSON, two-counter arena (total_allocated/total_reclaimed), "singletons are a significant code smell" thesis tying to ForkUnion philosophy. Frontmatter: sources + raw article, updated 2026-08-15.
+- Skipped (already captured in wiki, raw article already in page sources): fireworks-ai_kimi-qkclip (entities/fireworks-ai §MLA/QK-Clip + entities/kimi + concepts/attention-mechanism-variants), harvey_how-to-choose-best-legal-ai-platform (entities/harvey §How to Choose the Right Legal AI Platform Apr 2026), glean_retrieval-augemented-generation-vs-fine-tuning (entities/glean §RAG vs Fine-Tuning Guide Feb 2026).
+
+
 ## [2026-08-15] active-crawl | 5 new concept pages (3 raw articles + 2 raw papers)
 
 - Batch: active-crawl 2026-08-15 (parallel discovery: HN Algolia + X/Twitter xurl + arXiv/official blogs). 5 full-gap topics selected. Raw: raw/articles/2026-08-13_google_gemini-3-7-flash.md, raw/articles/2026-08-13_deepseek-harness-agent-runtime.md, raw/articles/2026-08-14_anthropic_claude-text-watermarking.md, raw/papers/2026-08-14_anthropic_rsp-risk-report.md, raw/papers/2026-08-05_2608.05223_malicious-skill-files-coding-agents.md.

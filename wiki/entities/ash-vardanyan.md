@@ -2,7 +2,7 @@
 title: "Ash Vardanyan"
 type: entity
 created: 2026-05-27
-updated: 2026-08-03
+updated: 2026-08-15
 tags:
   - person
   - simd-optimization
@@ -22,7 +22,9 @@ sources:
   - https://ashvardanian.com/posts/javascript-ai-vector-search/
   - https://ashvardanian.com/posts/apple-m1/
   - https://ashvardanian.com/posts/simd-set-intersections-sve2-avx512/
+  - https://ashvardanian.com/posts/parsing-json-with-allocators-cpp/
   - raw/articles/ashvardanian.com--posts-simd-set-intersections-sve2-avx512--529f4680.md
+  - raw/articles/ashvardanian.com--posts-parsing-json-with-allocators-cpp--80b0c3c1.md
 ---
 
 # Ash Vardanyan
@@ -89,6 +91,10 @@ SIMD-optimized string processing library. v4 added CUDA GPU acceleration, delive
 
 ### USearch
 Vector search engine that uses NumKong for distance calculations and OpenMP for job scheduling. Supports bindings for NodeJS and other runtimes. Enables SIMD-accelerated ANN search on ARM Neoverse N2 (AWS Graviton3) with 10× performance boost over pure AVX2 baselines.
+
+### Parsing JSON in C & C++: Singleton Tax (Jan 2025)
+
+Essay on memory-allocator patterns in JSON parsing libraries, framed around the thesis that **"singletons are a significant code smell"** — the default global memory allocator being the most common singleton of all. Survey of popular C/C++ parsers: nlohmann/json (most popular, "Modern C++"), yyjson (most portable, pure C), simdjson (fastest on large inputs, SIMD — but no custom allocator support), RapidJSON (Tencent), and Glaze (Stephen Berry). For short JSON (config files, network packets), the bottleneck shifts from SIMD string parsing to state-machine logic and allocation overhead — motivating a **fixed-size on-stack 4 KB arena** (one page, sized to MTU-range packets) for DOM-style parsing with XSS scanning of payloads. The arena keeps just two monotonic counters (`total_allocated`/`total_reclaimed`) instead of free-list bookkeeping, resetting the buffer when reclaimed catches allocated. Consistent with the "No hidden allocations. No hidden threads." philosophy of his ForkUnion thread pool.
 
 ## Hardware Architecture Philosophy
 
