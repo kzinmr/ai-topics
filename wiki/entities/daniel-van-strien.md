@@ -1,8 +1,4 @@
 ---
-
-## Related Entities
-
-- [[entities/martin-kleppmann]]
 title: Daniel van Strien
 type: entity
 handle: "@vanstriendaniel"
@@ -22,6 +18,10 @@ sources:
   - https://github.com/davanstrien/uv-scripts-for-ai
   - raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms
 ---
+
+## Related Entities
+
+- [[entities/martin-kleppmann]]
 
 
 # Daniel van Strien (@vanstriendaniel)

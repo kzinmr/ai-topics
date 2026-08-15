@@ -17,9 +17,9 @@ aliases:
   - "dexhorthy"
 sources:
   - "https://x.com/dexhorthy"
-  - "https://hlyr.dev/ace" — Y Combinator talk: "Getting AI to Work in Complex Codebases" (August 2025)
-  - "https://hlyr.dev/12fa" — 12-Factor Agents
-  - "https://hlyr.dev/he-gh" — BAML live-coding session
+  - "https://hlyr.dev/ace — Y Combinator talk: Getting AI to Work in Complex Codebases (August 2025)"
+  - "https://hlyr.dev/12fa — 12-Factor Agents"
+  - "https://hlyr.dev/he-gh — BAML live-coding session"
   - "https://github.com/humanlayer/humanlayer"
   - "raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-agents.md"
   - "raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md"

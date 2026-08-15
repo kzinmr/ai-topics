@@ -1,10 +1,4 @@
 ---
-
-## Related Entities
-
-- [[entities/steve-blank]]
-- [[entities/drmaciver]]
-- [[entities/akira-realmcore]]
 title: Scott Wu
 type: entity
 handle: "@ScottWu46"
@@ -19,6 +13,12 @@ tags:
   - company
 sources: []
 ---
+
+## Related Entities
+
+- [[entities/steve-blank]]
+- [[entities/drmaciver]]
+- [[entities/akira-realmcore]]
 
 
 # Scott Wu

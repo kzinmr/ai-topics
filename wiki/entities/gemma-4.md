@@ -10,13 +10,6 @@ tags:
   - open-weight
   - inference
   - mtp
-- entity
-- model
-- google
-- open-weight
-- gemma
-- speculative-decoding
-- mtp
 related:
 - google-deepmind
 - open-models

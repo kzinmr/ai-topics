@@ -1,8 +1,8 @@
 ---
 title: "Pydantic — Data Validation Using Python Type Hints"
 tags:
-sources: []
   - developer-tooling
+sources: []
 created: 2026-04-16
 updated: 2026-04-24
 type: concept

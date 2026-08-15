@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-15] skeleton-enrich-daily | L2→L3: Max Rumpf + nrehiew (wh)
+
+- **[[entities/max-rumpf]]** (L2→L3, 129→165 lines, ~9.8KB): Researched via maxrumpf.com (new July 2026 essay link discovered) and SID.ai research page. Added: new essay **"Will There Be Only One Superintelligence?"** (July 4, 2026) — winner-take-all singularity critique (a lesser intelligence cannot predict a greater one; maintained lead not a foregone conclusion); new section **"SID-1 Training Infrastructure & SID-2 (2026)"** — May 2026 turbopuffer guest post with Sam Dauncey (4,096 rollouts/step, 1k+ QPS bursts, ~81,920 searches/step, turbopuffer backend migration, emergent ANN preference + HyDE + parallel BM25 mixes, SID-2 in training). Fixed 5 broken wikilinks (grpo→[[concepts/post-training/grpo]], rag→[[concepts/retrieval-augmented-generation]], magistral/moravecs-paradox/amdahls-law→plain text pending pages), added related frontmatter (agentic-search, sid, turbopuffer) + Sources section + raw article [[raw/articles/2026-07-04_maxrumpf_only-one-superintelligence]] (saved new).
+
+- **[[entities/nrehiew]]** (L2→L3, 129→144 lines, ~7.7KB): Researched via GitHub API (134 followers, 23 repos — up from 67/21). Added: updated Open Source Projects table (r-nn 73★, Eagle 56★, Grove 7★, + fyp, VisionMamba, prime-rl, renderers, verifiers, proximal-bug-injection) and new subsection **"RL Training Infrastructure Focus (2026)"** — prime-rl (Agentic RL Training at Scale), verifiers (RL environments), renderers (chat templates) showing deepened RL infra investment paired with distributional-lens writing. Fixed broken related links (over-editing→plain text, on-policy-distillation path correction).
+
+
 ## [2026-08-15] dreaming wiki-ingest | confirmation — upstream dreaming-group already committed enrichment
 - Upstream dreaming-group (18:00 UTC) committed `80bc3d3a` before its JSON render failed: [[concepts/agent-experience]] (Pinecone AX API design principles) and [[entities/harvey]] (Review Table post-training) already enriched; 10 decisions archived.
 - Triage JSON Takes=0 is the intended post-enrichment state (2 refs, 9 skips). No downstream enrichment performed.

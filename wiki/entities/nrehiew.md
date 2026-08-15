@@ -1,9 +1,9 @@
 ---
 title: "wh / nrehiew"
 created: 2026-05-11
-updated: 2026-05-23
+updated: 2026-08-15
 type: entity
-status: L2
+status: L3
 tags:
   - person
   - blogger
@@ -23,9 +23,8 @@ sources:
   - https://github.com/nrehiew
   - https://x.com/nrehiew_
 related:
-  - concepts/on-policy-distillation
+  - concepts/post-training/on-policy-distillation
   - concepts/post-training-distributional-view
-  - concepts/over-editing
 ---
 
 # wh / nrehiew (@nrehiew_)
@@ -38,7 +37,7 @@ related:
 |-------|-------|
 | X Handle | [@nrehiew_](https://x.com/nrehiew_) |
 | Website | [nrehiew.github.io](https://nrehiew.github.io/) |
-| GitHub | [github.com/nrehiew](https://github.com/nrehiew) (67 followers, 21 repos) |
+| GitHub | [github.com/nrehiew](https://github.com/nrehiew) (134 followers, 23 repos) |
 | Affiliation | Independent researcher / Software Engineer |
 | Focus Areas | Post-training, RL, OPD, generative models, coding model evaluation |
 | Writing Style | Distribution-theoretic mental models, technical explainers |
@@ -100,12 +99,28 @@ wh maintains a personal blog at [nrehiew.github.io](https://nrehiew.github.io/) 
 
 | Repository | Description | Stars | Language |
 |-----------|-------------|-------|----------|
-| r-nn | Tensor library with autograd using only Rust's standard library | 71 | Rust |
-| Eagle | Convert broadcast data to tracking data using Computer Vision | 41 | Python |
+| r-nn | Tensor library with autograd using only Rust's standard library | 73 | Rust |
+| Eagle | Convert broadcast data to tracking data using Computer Vision | 56 | Python |
 | minARImageGen | Autoregressive Image Generation | 31 | Python |
+| fyp | (Final-year project) | 17 | Python |
 | loss | Visualising Losses in Deep Neural Networks | 16 | Python |
+| Grove | A lightweight hierarchical vector database | 7 | Python |
 | minTTC | Experiments for Test Time Compute/Reasoning | 6 | Python |
-| Grove | A lightweight hierarchical vector database | 5 | Python |
+| VisionMamba | Exploring Mamba as a drop-in replacement for ViTs | 5 | Python |
+| prime-rl | Agentic RL Training at Scale | 0 | — |
+| renderers | Programmable chat templates for LLM training and inference | 0 | — |
+| verifiers | Environments for LLM Reinforcement Learning | 0 | — |
+| proximal-bug-injection | (RL/eval experiment) | 0 | Python |
+
+### RL Training Infrastructure Focus (2026)
+
+wh's 2026 GitHub activity shows a deepening investment in RL infrastructure for agentic models — repos that pair with their distributional-lens writing:
+
+- **prime-rl** ("Agentic RL Training at Scale") and **verifiers** ("Environments for LLM Reinforcement Learning") — RL harness/environment tooling for training agentic models
+- **renderers** ("Programmable chat templates for LLM training and inference") — templating layer for chat-format training data
+- **proximal-bug-injection** — likely an evaluation/perturbation experiment (last pushed June 2026)
+
+This mirrors their published thesis (see [[concepts/post-training-distributional-view]]) that post-training method choice — SFT vs RL vs on-policy distillation — is best reasoned about at the level of data distributions, and that RL infrastructure quality determines what can be explored. r-nn also saw continued maintenance through August 2026, indicating sustained Rust/autograd work.
 
 ## Intellectual Positioning
 
@@ -119,7 +134,7 @@ wh's analysis consistently emphasizes:
 
 - [[concepts/post-training/on-policy-distillation]] — On-policy distillation techniques
 - [[concepts/post-training-distributional-view]] — Distributional lens on post-training
-- [[concepts/over-editing]] — Over-editing in coding models
+- Over-editing in coding models — covered in "Coding Models Are Doing Too Much" (no concept page yet)
 
 ## Sources
 

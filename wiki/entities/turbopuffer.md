@@ -1,11 +1,11 @@
 ---
 title: "turbopuffer"
 tags:
-sources: []
   - entity
   - service
   - search
   - protocol
+sources: []
 created: 2026-05-07
 updated: 2026-06-03
 team:

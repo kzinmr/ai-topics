@@ -1,11 +1,11 @@
 ---
 title: "Managed Agents — SRE Incident Response Pattern"
 tags:
-sources: []
   - ai-agents
   - human-in-the-loop
   - automation
   - infrastructure
+sources: []
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

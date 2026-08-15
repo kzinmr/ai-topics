@@ -1,9 +1,4 @@
 ---
-
-## Related Entities
-
-- [[entities/scott-wu]]
-- [[entities/ryan-lopopolo]]
 title: Steve Blank
 type: entity
 created: 2026-04-09
@@ -16,6 +11,11 @@ tags:
   - ai-agents
 sources: []
 ---
+
+## Related Entities
+
+- [[entities/scott-wu]]
+- [[entities/ryan-lopopolo]]
 
 
 # Steve Blank

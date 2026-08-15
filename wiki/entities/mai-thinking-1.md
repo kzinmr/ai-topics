@@ -15,7 +15,7 @@ related:
   - [[concepts/mixture-of-experts]]
   - [[concepts/post-training/grpo]]
 sources:
-  - [MAI-Thinking-1: Building a Hill-Climbing Machine](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)
+  - "[MAI-Thinking-1: Building a Hill-Climbing Machine](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)"
   - raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md
 ---
 

@@ -1,9 +1,4 @@
 ---
-
-## Related Entities
-
-- [[entities/chip-huyen]]
-- [[entities/will-brown]]
 title: "Lilian Weng (@lilianweng)"
 tags: [entity]
 sources:
@@ -12,6 +7,11 @@ created: 2026-04-24
 updated: 2026-07-08
 type: entity
 ---
+
+## Related Entities
+
+- [[entities/chip-huyen]]
+- [[entities/will-brown]]
 
 # Lilian Weng (@lilianweng)
 

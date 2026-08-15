@@ -2,10 +2,10 @@
 title: "EPD Disaggregation"
 type: concept
 tags:
-sources: []
   - vlm
   - sglang
   - multimodal
+sources: []
 status: active
 created: 2026-04-27
 updated: 2026-04-27

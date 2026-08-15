@@ -6,7 +6,7 @@ type: concept
 tags: [coding-agents, context-engineering, evaluation, benchmark, swere-bench, agents-md]
 aliases: ["AGENTS.md evaluation", "Evaluating AGENTS.md paper", "AGENTBENCH"]
 sources: [raw/articles/2026-06-07_karpathy-do-agents-md-help.md, https://arxiv.org/abs/2602.11988]
-related: [[concepts/claude-code/claude-md-rules]], [[concepts/context-engineering|Context Engineering]], [[concepts/agent-skills]], [[entities/andrej-karpathy]]
+related: "[[concepts/claude-code/claude-md-rules]], [[concepts/context-engineering|Context Engineering]], [[concepts/agent-skills]], [[entities/andrej-karpathy]]"
 ---
 
 # AGENTS.md Evaluation — Do Context Files Help Coding Agents?

@@ -4,11 +4,11 @@ type: concept
 created: 2026-06-11
 updated: 2026-06-11
 tags:
-sources: []
   - agent-safety
   - governance
   - security
   - ai-agents
+sources: []
 status: active
 ---
 

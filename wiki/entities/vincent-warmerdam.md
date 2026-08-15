@@ -12,7 +12,7 @@ tags:
   - notebook-agents
 aliases:
   - Koaning
-  - @koaning
+  - "@koaning"
 sources:
   - raw/newsletters/2026-05-20-agent-harness-ipynb.md
   - https://open.substack.com/pub/hugobowne/p/agent-harnessipynb

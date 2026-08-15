@@ -1,11 +1,6 @@
 ---
-
-## Related Entities
-
-- [[entities/jason-liu]]
 title: "Rahul Sengottuvelu"
 tags:
-sources: []
   - ai-agents
   - model
   - prompting
@@ -13,10 +8,15 @@ sources: []
   - rag
   - evaluation
   - inference
+sources: []
 created: 2026-04-24
 updated: 2026-06-03
 type: entity
 ---
+
+## Related Entities
+
+- [[entities/jason-liu]]
 
 # Rahul Sengottuvelu
 

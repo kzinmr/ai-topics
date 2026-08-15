@@ -1,6 +1,7 @@
 ---
 title: "Claris FileMaker Agentic Coding Strategy"
-type: entityurl: "https://wiki.ai-topics/entities/claris-filemaker-agentic-coding"
+type: entity
+url: "https://wiki.ai-topics/entities/claris-filemaker-agentic-coding"
 date: 2026-05-07
 tags: [entity]
 sources: []

@@ -4,9 +4,9 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags:
-sources: []
   - concept
   - model
+sources: []
 status: complete
 description: "Large language model architecture, training, and research."
 ---

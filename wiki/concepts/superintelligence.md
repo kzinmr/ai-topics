@@ -7,7 +7,7 @@ tags:
   - agent-safety
   - agi
 sources:
-  - [Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)
+  - "[Reframing Superintelligence: Comprehensive AI Services as General Intelligence](https://owainevans.github.io/pdfs/Reframing_Superintelligence_FHI-TR-2019.pdf)"
 ---
 # Superintelligence
 

@@ -1,6 +1,7 @@
 ---
 title: "Jo Kristian Bergum"
-tags: []type: entity
+tags: []
+type: entity
 redirect: jo-kristian-bergum
 aliases:
   - jo-bergum

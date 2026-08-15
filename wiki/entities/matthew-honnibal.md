@@ -12,7 +12,7 @@ tags:
   - coding-agents
 aliases:
   - Matt Honnibal
-  - @honnibal
+  - "@honnibal"
 sources:
   - transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
   - https://github.com/honnibal

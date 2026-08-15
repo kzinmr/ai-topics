@@ -1,11 +1,11 @@
 ---
 title: "Claude Memory — File-Based Memory Architecture"
 tags:
-sources: []
   - memory-systems
   - anthropic
   - developer-tooling
   - context-management
+sources: []
 created: 2026-04-13
 updated: 2026-04-26
 type: concept

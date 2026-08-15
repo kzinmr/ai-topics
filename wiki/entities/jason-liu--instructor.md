@@ -5,11 +5,10 @@ parent: jason-liu
 created: 2026-04-27
 updated: 2026-04-27
 tags:
-sources: []
   - developer-tooling
   - structured-outputs
   - model
-
+sources: []
 ---
 
 # Jason Liu: Instructor Library & Structured Outputs

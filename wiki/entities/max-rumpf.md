@@ -3,9 +3,9 @@ title: Max Rumpf
 type: entity
 aliases: [Maximilian-David Rumpf, maxrumpf]
 created: 2026-05-13
-updated: 2026-05-13
-status: L2
-sources: [https://maxrumpf.com/, https://www.sid.ai/, https://www.sid.ai/research/sid-1, https://www.sid.ai/research/sid-1-technical-report, https://x.com/maxrumpf, https://ycombinator.com/companies/sid]
+updated: 2026-08-15
+status: L3
+sources: [https://maxrumpf.com/, https://www.sid.ai/, https://www.sid.ai/research/sid-1, https://www.sid.ai/research/sid-1-technical-report, https://x.com/maxrumpf, https://ycombinator.com/companies/sid, https://maxrumpf.com/writing/2026-07-04-only-one-superintelligence.html, raw/articles/2026-07-04_maxrumpf_only-one-superintelligence.md]
 tags:
   - person
   - lab
@@ -15,6 +15,13 @@ tags:
   - blogger
   - x-account
   - ycombinator
+  - superintelligence
+related:
+  - concepts/agentic-search
+  - concepts/post-training/grpo
+  - entities/sid
+  - entities/turbopuffer
+  - concepts/retrieval-augmented-generation
 
 ---
 
@@ -100,6 +107,23 @@ Applies Amdahl's Law to AI productivity. The productivity ceiling of AI apps is 
 ### Arxiv Might Kill Small Universities and Labs (May 2024, X Thread)
 While acknowledging arXiv's open access value, questions the secondary impact of unfiltered publishing on academia's trust structures.
 
+### Will There Be Only One Superintelligence? (July 2026)
+Questions the "winner-take-all" singularity narrative: the story that the first superintelligence compounds its lead until it alone controls everything assumes the leader can predict the future well enough to pick optimal research directions. But superintelligence is itself the largest and most irreducible source of uncertainty about the future — a lesser intelligence cannot predict a greater one, including its own descendants and its rivals' future versions. Uncertainty doesn't make a maintained lead impossible, but it's not a foregone conclusion. Notable for coming from a hard-nosed RL/search practitioner rather than an AI-safety theorist.
+
+> "A lesser intelligence cannot predict a greater one. Its own descendants will be smarter than it is now, so it cannot know what they will do or which strategy is optimal for producing them."
+
+## SID-1 Training Infrastructure & SID-2 (2026)
+
+In May 2026, Rumpf and SID researcher Sam Dauncey published a detailed guest post on the turbopuffer blog describing how SID-1 was trained at scale — and disclosed that **SID-2 is already in training**. Key facts:
+
+- **RL rollout scale**: 256 questions × 16 attempts = 4,096 rollouts per training step, >1,000 steps, up to ~81,920 searches per step with 1k+ QPS bursts in the opening ~10s window of each step
+- **Corpora**: 10M+ document indexes spanning finance, science, legal, email, and general knowledge (5,000 curated abstracts to internet scale)
+- **Search backend**: SID migrated to [[entities/turbopuffer]] because search latency bottlenecked GPU utilization — its stateless query tier over object storage absorbs bursty RL traffic
+- **Emergent tool preferences**: SID-1 learned to prefer ANN over BM25, uses HyDE (hypothetical document embeddings) natively, issues parallel overdetermined/underdetermined keyword mixes, and never fully abandons BM25
+- **SID-2**: In training as of May 2026, expected to extend SID-1's speed and recall advantages beyond the current frontier LLM generation
+
+Rumpf frames the meta-lesson: "If RL makes a model prefer some tool, it is likely a better tool" — an AlphaGo-style argument that learned tool preferences can outperform expert-designed pipelines. See [[concepts/agentic-search]] for the full RL infrastructure analysis and [[entities/sid]] for the company entity.
+
 ## Quotes & Ideas
 
 ### RL Framework Instability (December 2025, Pinned Post)
@@ -121,9 +145,21 @@ On Lukas Petersson's Audio Tokens podcast, in relation to the debate about horiz
 ## Related Pages
 
 - [[concepts/sid-1]] - SID first agentic retrieval model
-- [[grpo]] - Group Relative Policy Optimization
+- [[concepts/post-training/grpo]] - Group Relative Policy Optimization
 - [[concepts/agentic-retrieval]] - Agentic information retrieval
-- [[magistral]] - Developer of the modified GRPO used for SID-1 training
-- [[moravecs-paradox]] - Foundation concept for "Robots Might Be 1000x Harder"
-- [[amdahls-law]] - Theoretical foundation for Amdahl's Argument for AI
-- [[rag]] - Retrieval-Augmented Generation where Max has deep expertise
+- Magistral - Developer of the modified GRPO used for SID-1 training (no wiki page yet)
+- Moravec's Paradox - Foundation concept for "Robots Might Be 1000x Harder" (no wiki page yet)
+- Amdahl's Law - Theoretical foundation for Amdahl's Argument for AI (no wiki page yet)
+- [[concepts/retrieval-augmented-generation]] - Retrieval-Augmented Generation where Max has deep expertise
+- [[entities/sid]] - SID AI company entity (SID-1, SID-2, platform)
+- [[entities/turbopuffer]] - Search backend used for SID-1 RL training
+- [[concepts/agentic-search]] - Full agentic search concept (SID-1 as core reference implementation)
+
+## Sources
+
+- [maxrumpf.com](https://maxrumpf.com/) — Personal site and essays
+- [Will There Be Only One Superintelligence?](https://maxrumpf.com/writing/2026-07-04-only-one-superintelligence.html) (July 2026) — [[raw/articles/2026-07-04_maxrumpf_only-one-superintelligence]]
+- [Training SID-1 to beat GPT-5 at search with 1k+ QPS RL rollouts](https://turbopuffer.com/blog/reinforcement-learning-sid-ai) (May 2026, with Sam Dauncey) — [[raw/articles/2026-05-20_turbopuffer_reinforcement-learning-sid-ai]]
+- [SID-1 research page](https://www.sid.ai/research/sid-1) — [[raw/articles/2025-12-04_sid-1-agentic-retrieval]]
+- [SID-1 Technical Report](https://www.sid.ai/research/sid-1-technical-report)
+- [X: @maxrumpf](https://x.com/maxrumpf)

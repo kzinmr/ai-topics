@@ -24,7 +24,7 @@ sources:
   - "https://yoheinakajima.com/the-future-of-autonomous-agents/"
   - "https://yoheinakajima.com/better-ways-to-build-self-improving-ai-agents/"
   - "https://github.com/yoheinakajima/babyagi3"
-aliases: [@yoheinakajima, BabyAGI creator]
+aliases: ["@yoheinakajima", BabyAGI creator]
 ---
 
 # Yohei Nakajima

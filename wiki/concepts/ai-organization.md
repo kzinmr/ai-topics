@@ -6,11 +6,11 @@ description: "AI Organization explores how human organizations transform when AI
 created: 2026-04-27
 updated: 2026-04-28
 tags:
-sources: []
   - concept
   - company
   - governance
   - workflow
+sources: []
 aliases: [AI org, agentic organization, ai-org]
 ---
 

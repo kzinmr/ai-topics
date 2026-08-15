@@ -1,7 +1,6 @@
 ---
 title: "Hamel Husain"
 tags:
-sources: []
   - person
   - ai-agents
   - agent-safety
@@ -9,6 +8,7 @@ sources: []
   - harness-engineering
   - developer-tooling
   - coding-agents
+sources: []
 created: 2026-04-24
 updated: 2026-06-15
 type: entity

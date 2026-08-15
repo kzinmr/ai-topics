@@ -4,9 +4,9 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags:
-sources: []
   - concept
   - prompting
+sources: []
 status: complete
 description: "Prompt design, instruction fine-tuning, and system prompt engineering."
 ---

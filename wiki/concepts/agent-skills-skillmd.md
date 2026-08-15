@@ -6,8 +6,8 @@ aliases:
 created: 2026-04-25
 updated: 2026-05-27
 tags:
-sources: []
   - concept
+sources: []
 status: redirected
 redirect: concepts/agent-skills
 ---

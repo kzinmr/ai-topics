@@ -1,10 +1,10 @@
 ---
 title: "Intent-Based Engineering"
 tags:
-sources: []
   - prompting
   - evaluation
   - agentic-engineering
+sources: []
 created: 2026-05-03
 updated: 2026-05-03
 type: concept

@@ -1,9 +1,9 @@
 ---
 title: "Eugene Yan — Core Ideas & Frameworks"
 tags:
-sources: []
   - person
   - methodology
+sources: []
 created: 2026-04-27
 updated: 2026-04-27
 type: entity

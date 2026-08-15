@@ -9,10 +9,10 @@ aliases:
 created: 2026-05-01
 updated: 2026-05-27
 tags:
-sources: []
   - concept
   - multimodal
   - model
+sources: []
 status: L3
 related:
   - concepts/speech-audio-asr-tts-voice

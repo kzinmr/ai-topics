@@ -1,10 +1,10 @@
 ---
 title: "Chief of Staff Agent Patterns"
 tags:
-sources: []
   - claude-code
   - orchestration
   - ai-agents
+sources: []
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

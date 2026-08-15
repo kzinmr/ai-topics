@@ -517,7 +517,7 @@
 - [[entities/matx]] — MatX
 - [[entities/maurycyz-com]] — Maurycy Cyz
 - [[entities/max-bernstein]] — Max Bernstein
-- [[entities/max-rumpf]] — Max Rumpf
+- [[entities/max-rumpf]] — Max Rumpf (CEO SID.ai; SID-1 agentic retrieval RL, SID-2 in training, superintelligence essay)
 - [[entities/maxime-labonne]] — Maxime Labonne
 - [[entities/max-woolf]] — Max Woolf (minimaxir) — Data scientist and blogger analyzing AI coding agent economics; quota reset analysis (July 2026)
 - [[entities/maximor]] — Maximor
@@ -586,7 +586,7 @@
 - [[entities/notion]] — Notion
 - [[entities/noumena-network]] — Noumena Network
 - [[entities/nous-research]] — Nous Research
-- [[entities/nrehiew]] — wh / nrehiew
+- [[entities/nrehiew]] — wh / nrehiew (distributional lens on post-training; RL infra repos)
 - [[entities/nuro]] — Nuro
 - [[entities/nvidia]] — NVIDIA; Alpamayo 2 Super AV reasoning model (Aug 2026)
 - [[entities/nvidia-cosmos-3]] — NVIDIA Cosmos 3

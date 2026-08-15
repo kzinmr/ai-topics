@@ -5,7 +5,7 @@ updated: 2026-08-12
 type: concept
 tags: [fli, safety-index, ai-safety, benchmark, evaluation, policy, governance, safety, comparison]
 sources: [raw/articles/2026-07-01_fli_ai-safety-index-summer-2026.md]
-related: [[concepts/security-and-governance/ai-safety]], [[concepts/ai-agent-safety-incidents]], [[concepts/ai-governance-political-pressure]], [[concepts/security-and-governance/agent-governance]], [[concepts/openai/frontier-governance-framework]]
+related: "[[concepts/security-and-governance/ai-safety]], [[concepts/ai-agent-safety-incidents]], [[concepts/ai-governance-political-pressure]], [[concepts/security-and-governance/agent-governance]], [[concepts/openai/frontier-governance-framework]]"
 ---
 
 # FLI AI Safety Index

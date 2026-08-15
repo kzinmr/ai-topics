@@ -10,7 +10,7 @@ tags:
   - education
   - content-creator
 aliases:
-  - @pauliusztin
+  - "@pauliusztin"
 sources:
   - transcripts/2026-05-21_vanishing-gradients_show-us-your-agent-skills-ep3.md
   - https://www.pauliusztin.ai/

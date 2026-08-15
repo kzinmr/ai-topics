@@ -1,6 +1,7 @@
 ---
 title: ysymyth
-tags: []type: entity
+tags: []
+type: entity
 redirect: shunyu-yao
 updated: 2026-05-08
 sources: []

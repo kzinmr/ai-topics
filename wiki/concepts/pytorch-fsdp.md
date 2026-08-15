@@ -4,11 +4,11 @@ type: concept
 created: 2026-05-04
 updated: 2026-06-15
 tags:
-sources: []
   - training
   - pytorch
   - infrastructure
   - optimization
+sources: []
 aliases: [fsdp, fully-sharded-data-parallel, zero3, zero-redundancy-optimizer]
 redirect: concepts/post-training/pytorch-fsdp
 ---

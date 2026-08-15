@@ -1,8 +1,8 @@
 ---
 title: "Pydantic AI — Type-Safe Python Agent Framework"
 tags:
-sources: []
   - ai-agents
+sources: []
 created: 2026-04-16
 updated: 2026-04-24
 type: concept

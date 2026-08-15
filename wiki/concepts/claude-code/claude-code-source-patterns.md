@@ -1,11 +1,11 @@
 ---
 title: "Claude Code Source Patterns — Leaked Source Analysis"
 tags:
-sources: []
   - claude-code
   - prompting
   - context-management
   - architecture
+sources: []
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

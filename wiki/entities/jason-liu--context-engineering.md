@@ -5,12 +5,11 @@ parent: jason-liu
 created: 2026-04-27
 updated: 2026-04-27
 tags:
-sources: []
   - context-engineering
   - rag
   - ai-agents
   - model
-
+sources: []
 ---
 
 # Jason Liu: Context Engineering

@@ -1,12 +1,12 @@
 ---
 title: "Agent Team / Swarm"
 tags:
-sources: []
   - concept
   - ai-agents
   - model
   - evaluation
   - rag
+sources: []
 created: 2026-04-24
 updated: 2026-04-24
 ---

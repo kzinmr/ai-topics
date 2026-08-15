@@ -11,7 +11,7 @@ related:
   - [[entities/dario-amodei]]
   - [[entities/anthropic]]
 sources:
-  - [Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential)
+  - "[Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential)"
 ---
 # AI Policy
 

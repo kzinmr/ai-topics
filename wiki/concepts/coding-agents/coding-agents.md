@@ -6,10 +6,10 @@ aliases:
 created: 2026-04-25
 updated: 2026-07-19
 tags:
-sources: []
   - concept
   - coding-agents
   - ai-agents
+sources: []
 status: complete
 description: "LLM-powered coding agents — tools, environments, and optimization patterns for agent-driven development."
 ---

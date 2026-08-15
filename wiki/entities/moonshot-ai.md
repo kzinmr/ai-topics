@@ -1,6 +1,7 @@
 ---
 title: Moonshot AI
-tags: []type: entity
+tags: []
+type: entity
 redirect: kimi
 aliases:
   - moonshot-ai

@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-06-09
+updated: 2026-08-15
 type: concept
 tags:
   - search
@@ -126,12 +126,12 @@ The paradigm shift: instead of R(q_t), use R(τ_t, q_t) — the retriever sees b
 
 The training enabler is **DR-Synth**, a data synthesis pipeline that converts standard (Q, A, P) QA triples into sub-query-level training instances via agent rollouts + oracle reranking. Key design insight: **joint embedding outperforms pipeline architecture** — training the retriever to internalize the reasoning/query relationship is more effective than separating translation and retrieval into discrete steps.
 
-|| Approach | Architecture | Accuracy | Params |
-||----------|-------------|----------|--------|
-|| BM25 (baseline) | Lexical | 33.98% | — |
-|| Q2Q Reformulation | Pipeline: translate → retrieve | ~57.9% (rel. +8%) | 8B |
-|| Q2Q + LLM Rerank | Pipeline + reranker | 55.66% | 4B + 8B reranker |
-|| **AgentIR-4B** | **Joint embedding** | **66.27–68.07%** | **4B** |
+| Approach | Architecture | Accuracy | Params |
+|----------|-------------|----------|--------|
+| BM25 (baseline) | Lexical | 33.98% | — |
+| Q2Q Reformulation | Pipeline: translate → retrieve | ~57.9% (rel. +8%) | 8B |
+| Q2Q + LLM Rerank | Pipeline + reranker | 55.66% | 4B + 8B reranker |
+| **AgentIR-4B** | **Joint embedding** | **66.27–68.07%** | **4B** |
 
 > **Connection to Q2Q**: Q2Q Reformulation (Meng et al.) is a preprocessing technique — it converts agent reasoning into a natural language query for any off-the-shelf retriever. AgentIR (Chen et al.) is a **retriever co-design** approach — it trains the embedding model to natively understand reasoning traces. Both exploit the same free signal, but AgentIR achieves 2.3× the accuracy gain by eliminating the information loss at the pipeline boundary.
 

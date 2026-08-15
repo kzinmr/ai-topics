@@ -5,11 +5,10 @@ parent: jason-liu
 created: 2026-04-27
 updated: 2026-04-27
 tags:
-sources: []
   - rag
   - evaluation
   - model
-
+sources: []
 ---
 
 # Jason Liu: RAG Philosophy & Framework

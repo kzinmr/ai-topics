@@ -8,11 +8,10 @@ aliases:
 created: 2026-04-25
 updated: 2026-06-03
 tags:
-sources: []
   - entity
   - person
   - search
-
+sources: []
 ---
 
 # Jo Kristian Bergum

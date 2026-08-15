@@ -1,10 +1,10 @@
 ---
 title: "Reasoning Models"
 tags:
-sources: []
   - reasoning
   - model
   - evaluation
+sources: []
 created: 2026-04-14
 updated: 2026-04-17
 type: concept

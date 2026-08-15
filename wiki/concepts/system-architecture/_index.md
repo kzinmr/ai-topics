@@ -6,8 +6,8 @@ aliases:
 created: 2026-04-25
 updated: 2026-04-25
 tags:
-sources: []
   - concept
+sources: []
 status: stub
 ---
 

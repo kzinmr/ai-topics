@@ -1,6 +1,7 @@
 ---
 title: "Alex Imas"
-tags: []type: entity
+tags: []
+type: entity
 redirect: alex-imas
 aliases:
   - alex-imus

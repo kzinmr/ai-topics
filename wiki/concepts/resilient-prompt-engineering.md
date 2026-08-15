@@ -1,10 +1,10 @@
 ---
 title: "Resilient Prompt Engineering"
 tags:
-sources: []
   - prompting
   - infrastructure
   - methodology
+sources: []
 created: 2026-04-13
 updated: 2026-05-27
 type: concept

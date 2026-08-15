@@ -13,7 +13,7 @@ tags:
   - company
   - ai-governance
 aliases: [nadella-reverse-paradox, enterprise-trust-boundary, reverse-arrow-paradox]
-related: [[concepts/token-capital]], [[concepts/ai-economics]], [[entities/satya-nadella]], [[entities/palantir]]
+related: "[[concepts/token-capital]], [[concepts/ai-economics]], [[entities/satya-nadella]], [[entities/palantir]]"
 sources:
   - raw/articles/2026-07-12_satya-nadella_reverse-information-paradox.md
   - https://x.com/i/article/2076319195718090753

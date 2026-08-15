@@ -1,10 +1,10 @@
 ---
 title: "Structured Outputs — Reliable LLM Output via Schema Validation"
 tags:
-sources: []
   - model
   - developer-tooling
   - infrastructure
+sources: []
 created: 2026-04-15
 updated: 2026-04-24
 type: concept

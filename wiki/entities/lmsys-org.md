@@ -2,11 +2,11 @@
 title: "LMSYS Org"
 type: entity
 tags:
-sources: []
   - company
   - lab
   - sglang
   - evaluation
+sources: []
 status: active
 created: 2026-04-27
 updated: 2026-04-27

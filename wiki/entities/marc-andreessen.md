@@ -10,7 +10,7 @@ tags:
 aliases:
   - Marc Andreessen
   - pmarca
-  - @pmarca
+  - "@pmarca"
 sources:
   - raw/articles/substack.com--app-link-post--48be8440.md
   - https://a16z.com/

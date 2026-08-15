@@ -4,10 +4,10 @@ type: concept
 created: 2026-04-25
 updated: 2026-06-15
 tags:
-sources: []
   - training
   - pytorch
   - infrastructure
+sources: []
 redirect: concepts/post-training/pytorch-fsdp-distributed-training
 ---
 

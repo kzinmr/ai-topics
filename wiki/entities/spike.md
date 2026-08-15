@@ -1,13 +1,13 @@
 ---
 title: "Spike (Mike Doan)"
 tags:
-sources: []
   - training
   - ai-agents
   - model
   - entity
   - rag
   - inference
+sources: []
 created: 2026-04-24
 updated: 2026-04-24
 type: entity

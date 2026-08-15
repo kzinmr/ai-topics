@@ -9,11 +9,11 @@ aliases:
 created: 2026-05-04
 updated: 2026-05-04
 tags:
-sources: []
   - concept
   - agent-safety
   - policy
   - security
+sources: []
 status: active
 
 ---

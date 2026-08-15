@@ -4,10 +4,10 @@ type: concept
 created: 2026-04-27
 updated: 2026-04-27
 tags:
-sources: []
   - ai-agents
   - memory-systems
   - context-engineering
+sources: []
 aliases: [filesystem-memory, agent-filesystem-memory]
 ---
 

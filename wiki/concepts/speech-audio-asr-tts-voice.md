@@ -4,12 +4,12 @@ type: concept
 aliases:
   - speech-audio-asr-tts-voice
 created: 2026-04-25
-updated: 2026-06-02
+updated: 2026-08-15
 tags:
-sources: []
   - concept
   - multimodal
   - ai-agents
+sources: []
 status: L3
 ---
 
@@ -144,13 +144,13 @@ Small models (≤4B params) can run on edge devices:
 - **ElevenLabs**: Proprietary, highest-quality voice cloning
 
 ### Competitive Positioning
-|| Provider | TTS Quality | Voice Cloning | Open Weights | Edge Support | Languages | Multi-Speaker | Max Duration |
-||----------|-------------|---------------|--------------|--------------|-----------|--------------|-------------|
-|| Mistral Voxtral TTS | Frontier | Zero-shot (3s clip) | ✅ Apache 2.0 | ✅ (≥16GB VRAM) | 9 | ❌ | Standard |
-|| OpenAI TTS | HD quality | Enterprise custom | ❌ | ❌ | English-optimized | ❌ | Standard |
-|| xAI Grok TTS | Natural | ❌ | ❌ | ❌ | 25 (STT) | ❌ | Standard |
-|| **Microsoft VibeVoice** | **Frontier** | **Prompt-based** | **✅ MIT** | ❌ | **EN, ZH** | **✅ Up to 4** | **~90 min** |
-|| ElevenLabs | Industry-best | Best-in-class | ❌ | ❌ | 32+ | Limited | Limited |
+| Provider | TTS Quality | Voice Cloning | Open Weights | Edge Support | Languages | Multi-Speaker | Max Duration |
+|----------|-------------|---------------|--------------|--------------|-----------|--------------|-------------|
+| Mistral Voxtral TTS | Frontier | Zero-shot (3s clip) | ✅ Apache 2.0 | ✅ (≥16GB VRAM) | 9 | ❌ | Standard |
+| OpenAI TTS | HD quality | Enterprise custom | ❌ | ❌ | English-optimized | ❌ | Standard |
+| xAI Grok TTS | Natural | ❌ | ❌ | ❌ | 25 (STT) | ❌ | Standard |
+| **Microsoft VibeVoice** | **Frontier** | **Prompt-based** | **✅ MIT** | ❌ | **EN, ZH** | **✅ Up to 4** | **~90 min** |
+| ElevenLabs | Industry-best | Best-in-class | ❌ | ❌ | 32+ | Limited | Limited |
 
 ## Related
 

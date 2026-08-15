@@ -5,10 +5,10 @@ description: "OpenAI's acquisition of Astral (creators of uv, Ruff, ty) and its 
 category: concepts
 sub_category: AI Ecosystem
 tags:
-sources: []
   - openai
   - developer-tooling
   - company
+sources: []
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

@@ -10,14 +10,6 @@ tags:
   - benchmark
   - context-management
   - inference
-- entity
-- model
-- open-weight
-- mixture-of-experts
-- benchmark
-- long-context
-- sparse-attention
-- speculative-decoding
 related:
 - chinese-ai
 - open-weights

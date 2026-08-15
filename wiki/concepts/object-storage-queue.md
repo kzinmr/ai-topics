@@ -1,10 +1,10 @@
 ---
 title: "Object Storage Queue Pattern"
 tags:
-sources: []
   - concept
   - protocol
   - infrastructure
+sources: []
 created: 2026-05-07
 updated: 2026-05-27
 type: concept

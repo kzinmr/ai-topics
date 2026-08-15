@@ -15,7 +15,7 @@ sources:
   - raw/newsletters/2026-07-09-the-future-of-meta-superintelligence-a-1-year-progress-update.md
   - raw/newsletters/2026-07-19-google-clones-you-meta-powers-anthropic-and-thinking-machines-opens-the-vault.md
   - raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
-  - [The Future of Meta Superintelligence: A 1 Year Progress Update (SemiAnalysis, Jul 2026)](https://open.substack.com/pub/semianalysis/p/the-future-of-meta-superintelligence)
+  - "[The Future of Meta Superintelligence: A 1 Year Progress Update (SemiAnalysis, Jul 2026)](https://open.substack.com/pub/semianalysis/p/the-future-of-meta-superintelligence)"
 ---
 
 # Meta

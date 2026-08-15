@@ -16,18 +16,18 @@ status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
 updated: 2026-08-14
-sources: [
-  "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
-  "https://x.com/RLanceMartin/status/2041927992986009773",
-  "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
-  "raw/newsletters/2026-04-26-openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
-  "raw/articles/2026-04-28-anthropic-claude-creative-coalition.md",
-  "raw/articles/2026-04-30-anthropic-claude-security-public-beta.md",
-  "raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md",
-  "raw/articles/2026-05-01_pentagon-seven-ai-deals-anthropic-excluded.md",
-  "raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md",
-  "raw/articles/2026-05-04_anthropic-enterprise-ai-services.md",
-  "raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md",
+sources:
+  - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
+  - "https://x.com/RLanceMartin/status/2041927992986009773"
+  - "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
+  - "raw/newsletters/2026-04-26-openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
+  - "raw/articles/2026-04-28-anthropic-claude-creative-coalition.md"
+  - "raw/articles/2026-04-30-anthropic-claude-security-public-beta.md"
+  - "raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md"
+  - "raw/articles/2026-05-01_pentagon-seven-ai-deals-anthropic-excluded.md"
+  - "raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md"
+  - "raw/articles/2026-05-04_anthropic-enterprise-ai-services.md"
+  - "raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md"
   - raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md
   - raw/newsletters/2026-05-15-codex-goes-everywhere.md
   - raw/articles/2026-05-18_sap-anthropic-claude-business-ai-platform.md
@@ -45,7 +45,6 @@ sources: [
   - raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
   - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
   - raw/newsletters/2026-08-13-xai-s-grok-4-6-released-frontier-intelligence-at-insane-pricing.md
-]
 related: []
 ---
 

@@ -8,11 +8,11 @@ aliases:
 created: 2026-04-27
 updated: 2026-08-08
 tags:
-sources: []
   - concept
   - ai-agents
   - model
   - training
+sources: []
 status: complete
 description: "Continual learning for AI agents and models — a framework across three layers: model, harness, and context."
 ---

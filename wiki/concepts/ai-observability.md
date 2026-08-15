@@ -1,10 +1,10 @@
 ---
 title: "AI Observability — Monitoring and Debugging LLM Applications"
 tags:
-sources: []
   - infrastructure
   - ai-agents
   - developer-tooling
+sources: []
 created: 2026-04-15
 updated: 2026-04-24
 type: concept

@@ -9,11 +9,6 @@ tags:
   - hn-popular
   - formal-methods
   - evaluation
-- person
-- blogger
-- hn-popular
-- formal-methods
-- llm-evaluation
 aliases:
 - johndcook.com
 - john-d-cook-applied-mathematics-consulting

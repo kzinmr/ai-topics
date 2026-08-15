@@ -11,7 +11,7 @@ tags:
   - ai-product
 aliases:
   - gian-segato
-  - @giansegato
+  - "@giansegato"
 sources:
   - https://giansegato.com/
   - https://giansegato.com/essays/probabilistic-era

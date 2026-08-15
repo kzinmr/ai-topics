@@ -1,8 +1,8 @@
 ---
 title: "AI Programming as Theory Building"
 tags:
-sources: []
   - software-engineering
+sources: []
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

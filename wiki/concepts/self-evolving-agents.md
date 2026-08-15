@@ -1,11 +1,11 @@
 ---
 title: "Self-Evolving Agents"
 tags:
-sources: []
   - self-improving
   - coding-agents
   - harness-engineering
   - architecture
+sources: []
 created: 2026-04-13
 updated: 2026-05-28
 type: concept

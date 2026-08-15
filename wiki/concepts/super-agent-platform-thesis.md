@@ -16,7 +16,7 @@ tags:
   - permission
 aliases: ["super-agent thesis", "US super-agent", "permissioned agent layer"]
 sources: [raw/articles/2026-06-04_super-agent-us-platform-thesis.md, https://x.com/i/article/2062555164540903424]
-related: [[concepts/apple]], [[entities/palantir]], [[concepts/enterprise-ai]], [[concepts/personal-ai]]
+related: "[[concepts/apple]], [[entities/palantir]], [[concepts/enterprise-ai]], [[concepts/personal-ai]]"
 ---
 
 # Super-Agent Platform Thesis — US AI's Answer to the Chinese Super-App

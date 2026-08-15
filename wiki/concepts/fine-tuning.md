@@ -2,9 +2,9 @@
 title: "Fine-Tuning"
 type: concept
 tags:
-sources: []
   - fine-tuning
   - training
+sources: []
 status: redirect
 created: 2026-04-27
 updated: 2026-06-15

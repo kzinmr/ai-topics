@@ -2,11 +2,11 @@
 title: "Elastic EP (Expert Parallelism)"
 type: concept
 tags:
-sources: []
   - infrastructure
   - inference
   - sglang
   - model
+sources: []
 status: active
 created: 2026-04-27
 updated: 2026-04-27

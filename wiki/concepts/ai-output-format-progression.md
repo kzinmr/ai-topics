@@ -1,11 +1,11 @@
 ---
 title: "AI Output Format Progression"
 tags:
-sources: []
   - concept
   - agent-communication
   - developer-tooling
   - human-in-the-loop
+sources: []
 created: 2026-05-11
 updated: 2026-05-19
 type: concept

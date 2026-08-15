@@ -9,7 +9,7 @@ tags:
   - ai-agents
   - blogger
   - indie-maker
-aliases: [@mattppal, mattppal]
+aliases: ["@mattppal", mattppal]
 related: [entities/hermes-agent, concepts/agent-hosting-aws]
 sources: [raw/articles/2026-05-26_matt-palmer_hermes-agent-deployment-fly-modal.md]
 ---

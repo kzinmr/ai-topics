@@ -5,9 +5,9 @@ description: "Identity and access management for AI agents — treating agents a
 category: concepts
 sub_category: AI Security
 tags:
-sources: []
   - security
   - product
+sources: []
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

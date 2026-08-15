@@ -1,8 +1,4 @@
 ---
-
-## Related Entities
-
-- [[entities/scott-wu]]
 title: "Akira (@realmcore_) / Random Labs"
 type: entity
 handle: "@realmcore_"
@@ -16,6 +12,10 @@ tags:
   - rlm
 sources: []
 ---
+
+## Related Entities
+
+- [[entities/scott-wu]]
 
 
 # Akira (@realmcore_) — Random Labs / Slate

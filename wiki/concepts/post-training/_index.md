@@ -1,11 +1,11 @@
 ---
 title: "Post-Training — Overview"
 tags:
-sources:
-  - raw/articles/2026-07-24_leerob_how-we-teach-ai-models.md
   - training
   - reinforcement-learning
   - fine-tuning
+sources:
+  - raw/articles/2026-07-24_leerob_how-we-teach-ai-models.md
 created: 2026-04-19
 updated: 2026-06-12
 ---

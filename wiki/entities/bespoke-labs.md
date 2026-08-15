@@ -1,6 +1,7 @@
 ---
 title: Bespoke Labs
-type: entitycreated: 2026-05-08
+type: entity
+created: 2026-05-08
 updated: 2026-06-25
 tags:
   - company

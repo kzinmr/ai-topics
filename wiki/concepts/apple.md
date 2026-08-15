@@ -6,10 +6,10 @@ aliases:
 created: 2026-04-25
 updated: 2026-07-08
 tags:
-sources:
-  - raw/articles/techcrunch.com--2026-07-06-you-can-now-customize-siris-pace-and-expressivity--0f64c66e.md
   - concept
   - company
+sources:
+  - raw/articles/techcrunch.com--2026-07-06-you-can-now-customize-siris-pace-and-expressivity--0f64c66e.md
 ---
 
 # Apple

@@ -1,8 +1,4 @@
 ---
-
-## Related Entities
-
-- [[entities/theodoros-galanos]]
 title: "Vivek 'Varun' Trivedy (@vtrivedy10)"
 type: entity
 handle: "@vtrivedy10"
@@ -16,6 +12,10 @@ sources:
   - raw/articles/2024-03-26_hamel-revenge-data-scientist.md
   - raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md
 ---
+
+## Related Entities
+
+- [[entities/theodoros-galanos]]
 
 # Vivek 'Varun' Trivedy (@vtrivedy10)
 

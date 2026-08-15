@@ -10,7 +10,7 @@ tags:
   - developer-tooling
 aliases:
   - Simon Last
-  - @simonlast
+  - "@simonlast"
 sources:
   - raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--c27d9b81.md
   - https://www.linkedin.com/in/simon-last-41404140

@@ -6,8 +6,8 @@ aliases:
 created: 2026-04-25
 updated: 2026-06-02
 tags:
-sources: []
   - concept
+sources: []
 status: redirect
 redirect_to: concepts/ai-consciousness-debate.md
 ---

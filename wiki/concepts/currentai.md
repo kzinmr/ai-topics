@@ -7,10 +7,10 @@ aliases:
 created: 2026-04-25
 updated: 2026-07-05
 tags:
-sources: []
   - concept
   - open-source
   - ecosystem
+sources: []
 ---
 
 # CurrentAI

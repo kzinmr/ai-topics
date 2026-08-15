@@ -9,7 +9,7 @@ tags:
   - open-source
   - infrastructure
 aliases:
-  - @ctnzr
+  - "@ctnzr"
 sources:
   - raw/articles/substack.com--redirect-fc937db9-1f9f-4d17-8d14-568f58e27526--f7737c4f.md
   - https://www.linkedin.com/in/bryan-catanzaro/

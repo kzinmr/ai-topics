@@ -10,7 +10,7 @@ tags:
   - company
   - platform-economics
 aliases: [organizational-learning-loop, nadella-ai-framework, hill-climbing-machine]
-related: [[concepts/reverse-information-paradox]], [[concepts/organizational-moat]], [[concepts/forward-deployed-engineering]], [[concepts/model-labs-to-agent-labs]], [[concepts/the-untrainable]], [[concepts/harness-commoditization]], [[entities/satya-nadella]]
+related: "[[concepts/reverse-information-paradox]], [[concepts/organizational-moat]], [[concepts/forward-deployed-engineering]], [[concepts/model-labs-to-agent-labs]], [[concepts/the-untrainable]], [[concepts/harness-commoditization]], [[entities/satya-nadella]]"
 sources:
   - raw/articles/2026-06-14_satya-nadella_frontier-ecosystem-token-capital.md
 ---

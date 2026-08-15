@@ -5,10 +5,10 @@ description: "Agent workflow architecture pattern using PostgreSQL with filesyst
 category: concepts
 sub_category: AI Agent Architecture
 tags:
-sources: []
   - database
   - developer-tooling
   - rag
+sources: []
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

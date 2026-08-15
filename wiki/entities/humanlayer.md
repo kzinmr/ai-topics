@@ -17,8 +17,8 @@ aliases:
   - "humanlayerhq"
 sources:
   - "https://humanlayer.dev/"
-  - "https://hlyr.dev/ace" — Y Combinator talk: "Getting AI to Work in Complex Codebases" (August 2025)
-  - "https://hlyr.dev/12fa" — 12-Factor Agents
+  - "https://hlyr.dev/ace — Y Combinator talk: Getting AI to Work in Complex Codebases (August 2025)"
+  - "https://hlyr.dev/12fa — 12-Factor Agents"
   - "https://github.com/humanlayer/humanlayer"
   - "raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-agents.md"
 related:
