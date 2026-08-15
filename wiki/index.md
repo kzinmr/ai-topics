@@ -905,7 +905,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1981 pages)
+## Concepts (1986 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1587,6 +1587,7 @@
 - [[concepts/deep-research]] — Deep Research — Autonomous multi-step research agents that synthesize findings from web search and document analysis
 - [[concepts/deep-research-agent-from-scratch]] — Deep Research Agent from Scratch
 - [[concepts/deepclaude]] — DeepClaude - Claude Code Agent Loop with DeepSeek V4 Pro
+- [[concepts/deepseek-harness]] — DeepSeek Harness (dsh) — open-source "everything is a plugin" agent harness on Cordis; ~106k GitHub stars in 48h, MIT
 - [[concepts/deepseek-r1]] — DeepSeek-R1
 - [[concepts/deepseek-v3]] — DeepSeek-V3
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2
@@ -1778,6 +1779,7 @@
 - [[concepts/gemini/gemini-3-1-flash-lite]] — Gemini 3.1 Flash-Lite
 - [[concepts/gemini/gemini-3-2-flash]] — Gemini 3.2 Flash
 - [[concepts/gemini/gemini-3-5-flash]] — Gemini 3.5 Flash
+- [[concepts/gemini/gemini-3-7-flash]] — Gemini 3.7 Flash — Google's most intelligent workhorse model for coding/agents; FrontierCode 43.6%, DeepSWE 65.3%, $0.75/$3.75 per MTok intro; powers Gemini Spark
 - [[concepts/gemini/gemini-cli]] — Gemini CLI
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/gemini/gemini-managed-agents]] — Gemini Managed Agents
@@ -2631,6 +2633,7 @@
 - [[concepts/security-and-governance/agent-sandboxing-patterns]] — Agent Sandbox Architecture Patterns
 - [[concepts/security-and-governance/agent-security-landscape-2026]] — Agent Security Landscape (2026)
 - [[concepts/security-and-governance/agent-separation-of-duties]] — Agent Separation of Duties — Structural Accountability for AI Agents
+- [[concepts/security-and-governance/agent-skill-supply-chain-attacks]] — Agent Skill Supply-Chain Attacks — malicious skill files compromise Gemini CLI ~96% / Qwen Code ~72% of runs (arXiv 2608.05223)
 - [[concepts/security-and-governance/agentic-ai-governance]] — Frameworks for governing autonomous AI agents in enterprise — identity-based access, three-tiered guardrails, HITL/HO...
 - [[concepts/security-and-governance/agentic-identity]] — Agentic Identity — Modeling AI Agents as Financial Actors
 - [[concepts/security-and-governance/agentic-security]] — Agentic security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and t...
@@ -2638,10 +2641,12 @@
 - [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — Ai Safety Alignment Rlhf Scalable Oversight Interpretability
 - [[concepts/security-and-governance/ai-safety-and-alignment]] — ai-safety-and-alignment
 - [[concepts/security-and-governance/ai-safety-military-governance-claude]] — Ai Safety Military Governance Claude
+- [[concepts/security-and-governance/ai-text-watermarking]] — AI Text Watermarking — SynthID-Text-based model watermarking for EU AI Act; Anthropic ships on future Claude models
 - [[concepts/security-and-governance/ai-worming]] — AI Worming — Self-replicating prompt injection attacks; hidden instructions propagate via AI-assisted document workflows (Microsoft Copilot/Word, July 2026)
 - [[concepts/security-and-governance/gitlost-agent-prompt-injection]] — GitLost: prompt injection attack against GitHub AI agent leaking private repos (Noma Security, July 2026)
 - [[concepts/security-and-governance/model-cards-system-cards]] — Model Cards and System Cards
 - [[concepts/security-and-governance/open-model-safety]] — Open Model Safety
+- [[concepts/security-and-governance/responsible-scaling-policy]] — Responsible Scaling Policy — Anthropic's RSP + Aug 2026 Risk Report: 3 autonomy threat models, misalignment risk Low
 - [[concepts/self-driving-codebases]] — Self-Driving Codebases
 - [[concepts/self-evolving-agents]] — Self-Evolving Agents
 - [[concepts/self-harness]] — Self-Harness — LLM-based agent that iteratively improves its own operating harness (Shanghai AI Lab, arXiv:2606.09498)

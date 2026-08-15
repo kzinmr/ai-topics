@@ -42,5 +42,7 @@
   "arxiv:2402.01030": "2024-02-01_2402.01030_codeact.md",
   "arxiv:2605.05242": "wiki/raw/papers/2026-05-03_2605.05242_direct-corpus-interaction.md",
   "https://cdn.openai.com/pdf/5d1e1489-21c0-43e4-9d42-f87efdbf0082/the-shift-to-agentic-ai-evidence-from-codex.pdf": "2026-06-25_openai-shift-to-agentic-ai.md",
-  "arxiv:2607.01232": "2026-07-02_2607.01232_single-transformer-layer-rl.md"
+  "arxiv:2607.01232": "2026-07-02_2607.01232_single-transformer-layer-rl.md",
+  "https://www.anthropic.com/aug-2026-risk-report": "2026-08-14_anthropic_rsp-risk-report.md",
+  "arxiv:2608.05223": "2026-08-05_2608.05223_malicious-skill-files-coding-agents.md"
 }

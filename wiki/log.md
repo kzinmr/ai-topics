@@ -1,3 +1,17 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-08-15] active-crawl | 5 new concept pages (3 raw articles + 2 raw papers)
+
+- Batch: active-crawl 2026-08-15 (parallel discovery: HN Algolia + X/Twitter xurl + arXiv/official blogs). 5 full-gap topics selected. Raw: raw/articles/2026-08-13_google_gemini-3-7-flash.md, raw/articles/2026-08-13_deepseek-harness-agent-runtime.md, raw/articles/2026-08-14_anthropic_claude-text-watermarking.md, raw/papers/2026-08-14_anthropic_rsp-risk-report.md, raw/papers/2026-08-05_2608.05223_malicious-skill-files-coding-agents.md.
+
+- **Create: [[concepts/gemini/gemini-3-7-flash]]** — Google DeepMind workhorse model (Aug 13): FrontierCode 1.1 43.6% vs 34.4%, DeepSWE v1.1 65.3% vs 49.0%, WebDev Arena Elo 1588, $0.75/$3.75 per MTok intro price; powers Gemini Spark. Source: blog.google.
+- **Create: [[concepts/deepseek-harness]]** — DeepSeek Harness (dsh): open-source "everything is a plugin" agent harness on Cordis (~106k GitHub stars in 48h, MIT, Aug 13). Source: github.com/deepseek-ai/deepseek-harness.
+- **Create: [[concepts/security-and-governance/responsible-scaling-policy]]** — Anthropic Responsible Scaling Policy + Aug 2026 Risk Report (186p): 3 autonomy threat models; misalignment risk Low (up from very low); Claude authors majority of Anthropic production code. Source: anthropic.com/aug-2026-risk-report.
+- **Create: [[concepts/security-and-governance/ai-text-watermarking]]** — Anthropic ships SynthID-Text-based model watermarking for EU AI Act (Aug 14); invisible, no hidden chars, C2PA for files, detection API coming. Source: anthropic.com/news/claude-text-watermark.
+- **Create: [[concepts/security-and-governance/agent-skill-supply-chain-attacks]]** — malicious skill files compromise Gemini CLI 95.5-96.1% / Qwen Code 71.6-74.0% of runs; 2,826 skills mapped to 11 MITRE ATT&CK tactics; explicit safety recognition only 1.99% (arXiv 2608.05223). Source: arxiv.org/abs/2608.05223.
+
 ## [2026-08-15] newsletter-wiki-ingest | 1 take (existing-page updates), 4 references
 
 - Batch: newsletter_triage 20260815T101720Z (5 newsletters). Triage checkpoint recovered from JSON render failure (triage_latest.json saved before render). Takes=1 (concept+entity enrichment), References=4, Skips=1 (batch noise). Archive handled by triage agent (commit 943fe60e).
@@ -51,10 +65,6 @@
 
 - **[[entities/jeremiah-lowin]]** (L2→L3, 134→200 lines, 13.4KB): Researched via jlowin.dev/about, Prefect blog profile (Feb 2024), Prefect/Dagster acquisition page, FastMCP GitHub README. Added: career history (Harvard statistics thesis on stock-market dependency models, "good enough" philosophy from Stats 101 professor + George Box, King Street Capital 2007 risk team through 2008 crisis, ML consulting 2011, Director of Risk, Apache Airflow founding PMC member, Tin Man → Prefect 2018 origin), full Prefect timeline (2018 founding → open-source 2019 → Cloud GA + Series A 2020 → $32M Series B 2021 → Prefect 2 2022 → profitable 2023-25 → Dagster acquisition 2026), advisory roles (Spotify, Positive Sum, OSV, Compass Coffee ambassador), FastMCP current state (70% of MCP servers, million downloads/day, incorporated into official MCP Python SDK 2024, TypeScript counterpart, Servers/Clients/Apps pillars), Prefect Horizon (enterprise MCP gateway), and the 2026 Prefect × Dagster Labs acquisition (outcomes/execution/access three-layer framing). Tags: +orchestration, +workflow, +ceo.
 - **[[entities/nvidia-nemoclaw]]** (L2→L3, 196→231 lines, 10.2KB): Researched via GitHub repo (22K+ stars, Apache-2.0, created 2026-03-15), official docs (overview/ecosystem/release notes). Reframed as **reference stack for sandboxed AI agents** (not just "secure agent framework"): now supports OpenClaw (default) + Hermes + LangChain Deep Agents Code; added OpenShell vs NemoClaw positioning (NemoClaw sits above OpenShell, blueprint + CLI vs raw platform), supported agents table, credential custody detail (L7 proxy placeholder tokens, sensitive env var filtering), process limits (ulimit -u 512), sandbox hardening (setpriv, CA trust, credential rotation, OpenShell 0.0.71/0.0.72 security reviews), expanded inference (vLLM, llama.cpp, NIM, two-node DGX setups, Nemotron 3.5 Lightning, managed routing), MCP server management, snapshots/recovery, messaging channels, release cadence (alpha, near-daily releases, v0.0.108 Aug 12 2026 with Muse Glimmer profile + read-only host mounts). Fixed pre-existing broken wikilink: concepts/capabilities-based-security → [[concepts/capability-based-security]]. Tags: +sandbox, +agent-runtime, +open-source.
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-14] dreaming-wiki-ingest | downstream recovery — 1 take (DataBench), upstream archive confirmed
 
