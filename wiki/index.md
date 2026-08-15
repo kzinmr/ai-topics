@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (899 pages)
+## Entities (900 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -707,6 +707,7 @@
 - [[entities/ronin-deronin]] — 19-year-old AI entrepreneur, CEO of CloseAI_hq, Advisor at MindoAI. Creator of the Skill Graph architecture for AI-po...
 - [[entities/roocode]] — RooCode
 - [[entities/rowboat]] — Rowboat — open-source, local-first AI coworker desktop alternative to Claude Desktop
+- [[entities/russ-cox]] — Russ Cox — Go tech lead 2012-2023; research.swtch.com essays (code search trigram index, Zip Files All The Way Down, Running the Reflections on Trusting Trust compiler — Ken Thompson's actual nih.a backdoor code)
 - [[entities/ryan-carson]] — Ryan Carson
 - [[entities/ryan-dahl]] — Ryan Dahl
 - [[entities/ryan-greenblatt]] — Ryan Greenblatt — Chief Scientist at Redwood Research; AI safety researcher focused on RSI plausibility and reward hacking (Aug 2026)
@@ -2705,7 +2706,7 @@
 - [[concepts/software-minimalism]] — Software Minimalism
 - [[concepts/software-rendering]] — software-rendering
 - [[concepts/software-simplicity]] — Software Simplicity
-- [[concepts/software-supply-chain-security]] — Software Supply Chain Security
+- [[concepts/software-supply-chain-security]] — Software Supply Chain Security — trusting-trust compiler backdoor (Ken Thompson 1983 / Russ Cox nih.a walkthrough), reproducible builds, AI-era pipeline attacks
 - [[concepts/solo-founder-philosophy]] — solo-founder-philosophy
 - [[concepts/sovereign-ai]] — Sovereign AI
 - [[concepts/sp500-ai-exclusion]] — S&P 500 AI Company Exclusion

@@ -2,7 +2,7 @@
 title: Simon Tatham
 type: entity
 created: 2026-04-09
-updated: 2026-08-14
+updated: 2026-08-15
 tags:
   - person
   - blogger
@@ -91,6 +91,16 @@ The essay's central complaint is the Jira **Fix Version** field, which conflates
 
 Tatham's series on aperiodic tilings (five parts and counting) and his essay on brute-forcing Langley's geometry problem with field extensions demonstrate a rare blend: **treating mathematical recreation with the same engineering rigor as production software**. He builds finite-state transducers to generate tilings, implements exact arithmetic to avoid floating-point errors, and publishes the code alongside the mathematics.
 
+### Full-Stack Feature Implementation (PuTTY Certificates)
+
+In ["Implementing OpenSSH certificate support in PuTTY"](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-certificates/) (2022-12-03), Tatham documents what happens when a feature is *hard almost everywhere*: certificate support touched every part of PuTTY except terminal emulation — internal public-key APIs, SSH host-key acceptance, Pageant, the UI, and the configuration data format. His strategy is a direct counter to subsystem-by-subsystem planning:
+
+- **Parallel implementation over sequential layering**: because the design requirements of every layer affect each other, he implemented all pieces in parallel, switching back and forth and revising each part as other parts revealed new needs. He never had to completely tear down and redo a part — "it's cheaper to rework something that's only half done than it is once it's all done."
+- **The emotional cost of context switching**: switching between "boring" and "interesting" subsystems requires consciously readjusting one's feelings about the code, to resist doing a sloppy rush job on whichever part currently seems unmotivating.
+- **UI polish as a security consideration**: line wrapping in a dialog box *is* a security consideration — if important information falls off the right-hand edge of the window, the user won't know the thing they need to.
+- **Making a certificates-shaped space**: refactoring to create room for the feature — including replacing hand-baked dialog text with automatic word-wrapped layout, and introducing PuTTY's first-ever **global configuration** (CA trust settings that apply regardless of saved session), which required separating the cross-platform dialog layout mechanism from its original single caller.
+- **The hardest part is the last thing settled**: initial certificate support worked within two weeks, but the host-CA configuration design (wildcards, exceptions like `top-secret.example.com`, what a CA may be trusted to sign) took another month of deliberation — "look for whatever got done last."
+
 ## Key Quotes
 
 > *"Code review can also be a powerful tool for totally different purposes. When a reviewer turns to the dark side, they have a huge choice of ways to obstruct or delay improvements to the code, to annoy patch authors or discourage them completely."*
@@ -123,6 +133,7 @@ Tatham's series on aperiodic tilings (five parts and counting) and his essay on 
 - [Aperiodic Tilings series](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/) (Parts I-V, 2023-2024)
 - [Brute-forcing Langley's geometry problem with field extensions](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/langley/)
 - [Coroutines in C](https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html)
+- [Implementing OpenSSH certificate support in PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-certificates/) (Dec 2022)
 - [Writing commit messages](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/commit-messages/)
 - [Symbiosisware](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/symbiosisware/)
 

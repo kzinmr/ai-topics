@@ -3,7 +3,7 @@ title: "Miguel Grinberg"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-06-13
+updated: 2026-08-15
 type: entity
 ---
 
@@ -163,6 +163,7 @@ Go — Language Grinberg has explored for systems programming
 - *Tokenless CSRF Protection* (December 2025)
 - *Interactive Maps (Zero-API)* (January 2026)
 - *Date Arithmetic in Bash* (February 2026)
+- *SQLAlchemy 2 in Practice — Chapter 7: Asynchronous SQLAlchemy* (book chapter serialization) — async engine/session/ORM adaptation, function coloring, aiosqlite/asyncpg/asyncmy drivers
 - *Benchmarking MicroPython* (July 2025)
 - *Create a React + Flask Project in 2025* (May 2025)
 - [Microdot GitHub](https://github.com/miguelgrinberg/microdot)
@@ -184,4 +185,5 @@ Go — Language Grinberg has explored for systems programming
 - blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-4-many-to-many-relatio--d7e49b59
 - blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-5-advanced-many-to-man--ffc1a277
 - blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-6-a-page-analytics-sol--1731e3e7
+- blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-7-asynchronous-sqlalch--071ae6d9
 - blog.miguelgrinberg.com--post-i-am-not-a-reverse-centaur--a49e2d68

@@ -1,3 +1,14 @@
+## [2026-08-15] raw-backlog-ingest (04:00) | 1 take, 4 references (entity enrichment)
+
+- Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-15 04:00, run 20260815T040003Z). Takes=1, References=4, Skips=0.
+- **Create: [[entities/russ-cox]]** — New entity for Russ Cox (Go tech lead 2012-2023, research.swtch.com). Flagship essay: "Running the Reflections on Trusting Trust Compiler" (2023-10-25) — obtained Ken Thompson's actual nih.a backdoor code (first request in 40 years), walked through the 3-step trusting-trust attack, ran it on a Research Unix V6 emulator. Source: raw/articles/research.swtch.com--nih--2cd8df91.md.
+- **Update: [[concepts/software-supply-chain-security]]** — Stub (25 lines, status: stub) promoted to substantive page: trusting-trust problem (quine / compiler learns / login backdoor), nih.a execution walkthrough, countermeasures (reproducible builds, minimal bootstrapping, SBOMs), AI-era extension links to [[concepts/ai-supply-chain-security]] + [[concepts/openai/tanstack-supply-chain-2026]]. updated: 2026-08-15.
+- **[[entities/dan-luu]]** +1 essay entry in Notable Essays (Non-AI): "Notes on concurrency bugs" (MySQL 2003-2009 + Lu et al. ASPLOS '08: 63% non-deadlock vs 40% deadlock, 97% atomicity/order violations, 15% semantic/latent failures; thd->proc_info check-then-use race; Firefox PR_CreateThread ordering bug) — non-AI, catalogued for author completeness with agentic-engineering reliability link. updated: 2026-08-15.
+- **[[entities/joan-westenberg]]** +Key Insights section: "The Loop: everything has happened before..." (2026) — cyclical-history essay (bubbles incl. 2026 AI stocks, strongmen, scapegoats, moral panics, adaptation lag); AI relevance via ai-industry-economics/valuation/technology-criticism links. updated: 2026-08-15.
+- **[[entities/chiark-greenend-org-uk-sgtatham]]** +Core Ideas subsection: "Full-Stack Feature Implementation (PuTTY Certificates)" (2022-12-03) — parallel implementation over sequential layering, emotional cost of context switching, UI polish as security, PuTTY's first global configuration, host-CA design as hardest part. Raw already in References; added Sources URL. updated: 2026-08-15.
+- **[[entities/miguel-grinberg]]** +book-chapter entry: SQLAlchemy 2 in Practice Chapter 7 (Asynchronous SQLAlchemy) — async engine/session/ORM, function coloring, aiosqlite/asyncpg/asyncmy drivers; added to Sources + References. updated: 2026-08-15.
+- Archive: wiki/raw/archived/triage/raw_backlog/2026-08-15_20260815T040003Z.json (5 candidates, 4 new archived; total archive URLs updated).
+
 ## [2026-08-14] raw-backlog-ingest (22:00) | 0 takes, 4 references (entity enrichment), 1 skip
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-14 22:00, run 20260814T220049Z). Takes=0, References=4, Skips=1.

@@ -2,7 +2,7 @@
 title: "Joan Westenberg"
 type: entity
 created: 2026-05-13
-updated: 2026-08-13
+updated: 2026-08-15
 tags:
   - person
   - strategy
@@ -15,6 +15,7 @@ sources:
   - https://www.joanwestenberg.com/position-or-perish-the-narrative-blueprint/
   - https://www.joanwestenberg.com/why-prediction-markets-are-a-sure-sign-that-our-civilisation-is-in-decay/
   - raw/articles/joanwestenberg.com--why-prediction-markets-are-a-sure-sign-that-our-civilisation--61e5f297.md
+  - raw/articles/joanwestenberg.com--the-loop-everything-has-happened-before-and-everything-will---a70e4e53.md
 ---
 
 # Joan Westenberg
@@ -62,6 +63,17 @@ Westenberg's framework is particularly applicable to AI startups, where:
 - The "AI" category is becoming overcrowded, making differentiation critical
 - Pricing signals credibility in a market full of vaporware
 - Hiring competition for AI talent is fierce, making narrative a recruiting tool
+
+### The Loop: Everything Has Happened Before, and Everything Will Happen Again (2026)
+
+A cyclical-history essay arguing that humans repeat near-identical patterns — financial bubbles, strongmen, scapegoats, moral panics, empires — because "the loop is our operating system": the Paleolithic brain is the kernel that never gets patched, while politics, technology, and ideology are only the application layer. Westenberg catalogs the bubble sequence (1637 tulips → South Sea → Mississippi → railways → radio → dot-com → 2008 mortgages → 2021 JPEGs → **2026 AI stocks**), the strongman cycle (Caesar → Napoleon → Mussolini → Hitler → Perón, ~30-year collapse-to-collapse), Girard's scapegoat mechanism, and the technology arc (printing press → religious war; radio → Hitler; social media → connection as the problem; generative AI adopted in half the time of the smartphone).
+
+Key arguments:
+- **The bubble**: every bubble is preceded by a book claiming the last one can't recur ("This time is different"); markets aggregate miscalculations into stampedes, not wisdom; Solomon Asch's conformity experiments show people deny their own eyes to agree with a confident group — "bubbles are Asch experiments with money on the line."
+- **The strongman**: the human brain under stress wants authority, not deliberation; ambiguity activates amygdala responses close to fear; the frightened population and the would-be strongman "produce each other."
+- **The scapegoat**: in-group/out-group sorting happens in under 200ms, before conscious perception; demagogues weaponize a perceptual shortcut humans can't turn off.
+- **The adaptation lag**: telegraph took 50 years to saturate, internet 20, smartphone 10, generative AI half of that — the lag stays constant, so each new technology is more disruptive than the last.
+- **AI relevance**: the essay places the 2026 AI stock surge in the same historical bubble taxonomy ([[concepts/ai-industry-economics]], [[concepts/valuation]]), and its moral-panic framework maps onto AI-panic cycles ([[concepts/ai-society]], [[concepts/technology-criticism]]). Counter-position to techno-optimist singularity narratives: the kernel doesn't change even as the applications do.
 
 ### Why Prediction Markets Are a Sure Sign That Our Civilisation Is in Decay (May 2026)
 

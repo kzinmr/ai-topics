@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-08-15T04:18:24.075430+00:00",
+  "triage_run_id": "20260815T040003Z",
+  "source": "raw_backlog",
+  "summary_ja": "rawバックログ04:00バッチ。5記事中1件をtake（software-supply-chain-security.mdをstubから実ページ化＋russ-cox.md新規作成。Russ CoxがKen Thompson本人から入手した実バックドアコードnih.aの実行解説が核）、4件をreference（dan-luu.mdにconcurrency-bugs調査、joan-westenberg.mdにThe Loop循環史論、sgtathamページにPuTTY証明書フルスタック実装論、miguel-grinberg.mdにSQLAlchemy非同期章を追記）。新規ページ1件。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-danluu.com-concurrency-bugs-e85e551f",
+      "source": "raw_backlog",
+      "source_name": "danluu.com",
+      "title": "Notes on concurrency bugs",
+      "url": "https://danluu.com/concurrency-bugs/",
+      "raw_path": "wiki/raw/articles/danluu.com--concurrency-bugs--e85e551f.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 既存ページ更新。dan-luu.mdのNotable Essays (Non-AI)節パターンに従い作者完全性のため追記。本文でMySQL 2003-2009調査とLu et al. ASPLOS '08を引用し、63% non-deadlock vs 40% deadlock、97%がatomicity/order violation、15% semantic/latent failure、thd->proc_infoチェックその後使用レースなど具体数値を報告。agentic-engineeringの再現性論につながる背景素材としてリンク付きで追記済み。",
+      "candidate_wiki_path": "entities/dan-luu.md",
+      "body_excerpt": "# Notes on concurrency bugs\nSource: https://danluu.com/concurrency-bugs/\nDo concurrency bugs matter? From the literature, we know that\nmost reported bugs in distributed systems\nhave really simple causes and can be caught by trivial tests, even when we only look at bugs that cause really bad failures"
+    },
+    {
+      "item_id": "raw-backlog-joanwestenberg.com-the-loop-a70e4e53",
+      "source": "raw_backlog",
+      "source_name": "joanwestenberg.com",
+      "title": "The Loop: everything has happened before, and everything will happen again",
+      "url": "https://www.joanwestenberg.com/the-loop-everything-has-happened-before-and-everything-will-happen-again/",
+      "raw_path": "wiki/raw/articles/joanwestenberg.com--the-loop-everything-has-happened-before-and-everything-will---a70e4e53.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 既存エンティティ財富化。joan-westenberg.mdのKey Insights節にThe Loop論を追加。本文はバブル連鍍（1637チューリップ→2026 AI株）・強者サイクル・スケープゴート・道徳パニックの循環史論で、AI株バブル論と技術適応ラグの論点がai-industry-economics/technology-criticismにリンクできる。",
+      "candidate_wiki_path": "entities/joan-westenberg.md",
+      "body_excerpt": "# The Loop: everything has happened before, and everything will happen again\nSource: https://www.joanwestenberg.com/the-loop-everything-has-happened-before-and-everything-will-happen-again/\nThis newsletter is free to read, and it’ll stay that way. But if you want more - extra posts each month, no sp"
+    },
+    {
+      "item_id": "raw-backlog-chiark-putty-certificates-f5adb297",
+      "source": "raw_backlog",
+      "source_name": "Simon Tatham (chiark.greenend.org.uk)",
+      "title": "Implementing OpenSSH certificate support in PuTTY",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-certificates/",
+      "raw_path": "wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-putty-certificates--f5adb297.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 既存エンティティ財富化。sgtathamページ（chiark-greenend-org-uk-sgtatham.md）は既にReferencesにラウ文字判存在だが本文要約なし。本文の要請――フルスタック機能の平行実装戦略、コンテキストスイッチの情緒的コスト、UI完成度はセキュリティ問題、PuTTY初のグローバル設定導入、host-CA設計が最難所――をCore Ideas節に追加済み。",
+      "candidate_wiki_path": "entities/chiark-greenend-org-uk-sgtatham.md",
+      "body_excerpt": "# Implementing OpenSSH certificate support in PuTTY\nSource: https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-certificates/\nImplementing OpenSSH certificate support in PuTTY\n[Simon Tatham, 2022-12-03]\nIn 2022, PuTTY gained support for the OpenSSH certificate system, allowing you to config"
+    },
+    {
+      "item_id": "raw-backlog-miguelgrinberg-sqlalchemy-async-071ae6d9",
+      "source": "raw_backlog",
+      "source_name": "blog.miguelgrinberg.com",
+      "title": "SQLAlchemy 2 In Practice - Chapter 7: Asynchronous SQLAlchemy",
+      "url": "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-7-asynchronous-sqlalchemy",
+      "raw_path": "wiki/raw/articles/blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-7-asynchronous-sqlalch--071ae6d9.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ 既存エンティティ財富化（非AIカタログ）。miguel-grinberg.mdのSources/Referencesに書籍章として追加。本文はSQLAlchemy 2のasyncio対応（async engine/session/ORM、function coloring、aiosqlite/asyncpg/asyncmyドライバ）を解説するチュートリアル章で、AI直接関連なし。作者ページの参考リスト完整のため追記。",
+      "candidate_wiki_path": "entities/miguel-grinberg.md",
+      "body_excerpt": "# SQLAlchemy 2 In Practice - Chapter 7: Asynchronous SQLAlchemy\nSource: https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-7-asynchronous-sqlalchemy\nThis is the seventh chapter of my\nSQLAlchemy 2 in Practice\nbook. If you'd like to support my work, I encourage you to buy this boo"
+    }
+  ]
+}
