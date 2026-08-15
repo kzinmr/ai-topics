@@ -2,7 +2,7 @@
 title: "Multi-Teacher On-Policy Distillation (MOPD)"
 type: concept
 created: 2026-05-04
-updated: 2026-07-06
+updated: 2026-08-15
 tags:
   - concept
   - training
@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-06-08_chinmaykarkar_opd-survey-2026.md
   - https://chinmaykarkar.com/blog/OPD_blog/
   - https://arxiv.org/abs/2606.30406
+  - raw/articles/2026-08-14_nvidia_nemotron-teacher-competition-coding.md
 ---
 
 
@@ -67,6 +68,12 @@ All four major 2026 frontier models converged on MOPD using different strategies
 - **GLM-5 (Capability Recovery):** Focuses on recovering performance lost during sequential RL stages (Reasoning → Agentic → General)
 - **Nemotron-Cascade 2 (Mid-pipeline Reset):** Uses MOPD as a periodic "re-anchor" to prevent math reasoning decay during instruction-following RL. Found MOPD significantly more sample-efficient than GRPO
 - **DeepSeek-V4 (Massive Scale):** Distills from 10+ teachers across 4 domains and 3 "reasoning-effort" modes (Non-think, Think High, Think Max)
+
+### Nemotron 3 Ultra Teacher Release (Aug 2026)
+
+NVIDIA's [[entities/nvidia-nemotron-3-ultra|Nemotron 3 Ultra]] uses MOPD as its **final production stage**, distilling from **more than ten domain-specialized teacher models**. In August 2026, NVIDIA began releasing these teacher checkpoints as standalone models on Hugging Face, starting with **NVIDIA-Nemotron-Labs-Teacher-Competition-Coding** — a coding-specialized teacher (550B total / 55B active, LatentMoE) produced by adding a coding-focused SFT + RL round (execution-verified solutions, compiler/test-verified RL) on top of the post-trained Nemotron 3 Ultra student.
+
+The release matters because it makes MOPD research *inspectable*: researchers can now study the actual teacher distributions that drive frontier distillation rather than inferring them from the final model. Nathan Lambert noted the accessibility win while flagging that these remain "big models for most researchers" (minimum 4×GB200/B200/GB300/B300 or 8×H100).
 
 ## Engineering & Infrastructure (DeepSeek-V4)
 

@@ -1,7 +1,7 @@
 ---
 title: Cerebras Systems
 created: 2026-05-14
-updated: 2026-08-01
+updated: 2026-08-15
 type: entity
 tags:
   - entity
@@ -132,6 +132,10 @@ The AI/Growth team (Isaac @hi_im_isaac_, Daniel @learnwdaniel, Zenghao Gao @gaoz
 ### GPT-5.6 Acceleration (July 2026)
 
 Cerebras serves as the high-speed inference backend for OpenAI's [[concepts/gpt/gpt-5-6|GPT-5.6]] family. GPT-5.6-Sol runs on Cerebras at **750 tokens/second** — up to **10× faster** than regular Sol mode. This makes Cerebras the go-to platform for users who want Sol's intelligence at interactive latency. The Cerebras AI/Growth team published a detailed guide on model selection, reasoning levels, and cache optimization strategies for the GPT-5.6 family.
+
+### Big Chip Club (Interview Series)
+
+Cerebras runs **Big Chip Club**, an interview series advancing its speed/latency thesis through conversations with AI practitioners. Recent episodes include **Logan Kilpatrick** (OpenAI) on why speed will define the next generation of AI products, **Jeffrey Wang** (OpenAI) on turning compute into intelligence, and **Ro Varma** (OpenAI, Codex) on why speed changes what AI agents can do — the argument that faster inference is a capability unlock for agents, not just a latency optimization. The series is frequently shared by AI educator [[entities/milksandmatcha|Sarah Chieng]], among others.
 
 ## Relationship to Other Wiki Pages
 

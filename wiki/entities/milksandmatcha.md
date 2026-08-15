@@ -6,7 +6,7 @@ tags:
   - writing
 sources: []
 created: 2026-04-24
-updated: 2026-05-23
+updated: 2026-08-15
 type: entity
 ---
 
@@ -61,13 +61,20 @@ Sarah advocates for:
 - **Zhenwei Gao, James Wang** — Provided input on Back of House research and trials.
 - **[@halleychangg](https://x.com/halleychangg)** — Illustrator for Back of House pattern diagrams.
 
-## Recent Activity (May 2026)
+## Recent Activity
+
+### May 2026
 
 - **Jason Liu (OpenAI) on Building with Zero-Latency AI** (shared May 21, 2026) — Sarah shared this YouTube interview featuring Jason Liu ([@jxnlco](https://x.com/jxnlco)), DX Engineer on the Codex team at OpenAI and creator of the Instructor library (6M+ monthly downloads). The conversation covers practical strategies for building AI-powered applications that feel instantaneous to users, context engineering approaches, and the Codex platform capabilities. [[entities/jason-liu]]
   - 📺 [Watch on YouTube](https://www.youtube.com/watch?v=z_7GCp0BApc)
 
 - **Sara Hooker (Adaption) on GPU Bottlenecks and the Future of AI** (shared May 22, 2026) — Sarah shared this Big Chip Club interview with Sara Hooker, author of "The Hardware Lottery" and researcher at Google DeepMind. The discussion explores how GPU availability and hardware constraints shape AI research directions, the economics of large-scale training, and the future of AI hardware. [[entities/sara-hooker]]
   - 📺 [Watch on YouTube](https://www.youtube.com/watch?v=ys5mjpOs6_o)
+
+### August 2026
+
+- **Ro Varma (OpenAI, Codex) on Why Speed Changes What AI Agents Can Do** (shared Aug 13, 2026) — Sarah shared the latest [[entities/cerebras-systems|Cerebras]] Big Chip Club interview, "Inside Codex with OpenAI's Ro Varma." Ro Varma, from OpenAI's Codex team, discusses how dramatically faster inference changes what AI agents are capable of — the thesis that inference speed is a capability unlock, not merely a latency optimization.
+  - 📺 [Watch on YouTube](https://www.youtube.com/watch?v=p5Zvrcfsx28)
 
 ## Related Concepts
 

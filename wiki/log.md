@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-15] x-accounts-scan 22:30 | NVIDIA MOPD teacher model + Cerebras Big Chip Club interview
+
+- **Create: raw/articles/2026-08-14_nvidia_nemotron-teacher-competition-coding.md** — Raw scrape of NVIDIA's HF model card for NVIDIA-Nemotron-Labs-Teacher-Competition-Coding (Nemotron 3 Ultra MOPD teacher; 550B total / 55B active LatentMoE, OpenMDW-1.1).
+- **Update: [[concepts/multi-teacher-on-policy-distillation]]** — Added "Nemotron 3 Ultra Teacher Release (Aug 2026)" subsection: Nemotron 3 Ultra uses MOPD as its final stage with 10+ domain-specialized teachers; NVIDIA released these teachers as standalone checkpoints (Teacher-Competition-Coding first), making frontier MOPD research inspectable.
+- **Update: [[entities/nvidia-nemotron-3-ultra]]** — Added "Companion Release: MOPD Teacher — Teacher Competition Coding" section.
+- **Update: [[entities/milksandmatcha]]** — Added Aug 2026 entry to Recent Activity: shared Cerebras Big Chip Club interview with Ro Varma (OpenAI Codex) on why speed changes what AI agents can do.
+- **Update: [[entities/cerebras-systems]]** — Added "Big Chip Club (Interview Series)" subsection (Logan Kilpatrick / Jeffrey Wang / Ro Varma episodes).
+- Nathan Lambert's GLM-5.3 Interconnects post (Aug 14) already ingested via newsletter pipeline — no duplicate page created. Sandro Puppo's local.ai "claim your name" reply skipped (non-substantive).
+
 ## [2026-08-15] raw-backlog-ingest 22:00 | duplicate batch verified + collector re-selection loop fixed (tracking registration)
 
 - **Duplicate batch (3rd occurrence today)**: All 5 candidates (fireworks-ai kimi-qkclip, harvey how-to-choose-best-legal-ai-platform, glean RAG-vs-FT, minimaxir write-better-code, ashvardanian JSON singleton tax) were already processed and enriched earlier today — 10:00 run (commit 33fb5d88: attention-mechanism-variants / kimi / fireworks-ai / harvey / glean) and 14:00 run (commit 228fadbd: minimaxir-com / ash-vardanyan). Verified each page's content sections contain the article's specific claims (QK-Clip normalization fix, 10-criteria legal AI evaluation guide, RAG-vs-FT decision guidance, iterative prompting experiment, singleton-tax allocator essay). No wiki page changes made.

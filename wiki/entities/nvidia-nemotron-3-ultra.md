@@ -2,7 +2,7 @@
 title: "NVIDIA Nemotron 3 Ultra"
 type: entity
 created: 2026-06-05
-updated: 2026-08-12
+updated: 2026-08-15
 tags:
   - model
   - open-source
@@ -13,6 +13,7 @@ aliases: [Nemotron 3 Ultra, Nemotron-3-Ultra]
 sources:
   - raw/newsletters/2026-06-05-ainews-not-much-happened-today.md
   - raw/newsletters/2026-08-12-ainews-how-to-steal-a-reasoning-trace.md
+  - raw/articles/2026-08-14_nvidia_nemotron-teacher-competition-coding.md
 ---
 
 # NVIDIA Nemotron 3 Ultra
@@ -45,6 +46,12 @@ A smaller companion model — 0.6B parameter streaming ASR model with 40 languag
 ## Companion Release: Nemotron 3.5 Lightning
 
 Released August 2026, **Nemotron 3.5 Lightning** is a 30B parameter [[concepts/mixture-of-experts|Mixture-of-Experts (MoE)]] model with roughly 3B active parameters, positioned for always-on agent workloads. It delivers up to 4× throughput with a 1M context window, and ships open, customizable release artifacts. Available via Together AI, Ollama, Baseten, vLLM, and the Perplexity API; @kimmonismus dubbed it NVIDIA's "local agent workhorse."
+
+## Companion Release: MOPD Teacher — Teacher Competition Coding
+
+In August 2026 NVIDIA released **NVIDIA-Nemotron-Labs-Teacher-Competition-Coding**, a coding-specialized teacher model that supplies training signal to Nemotron 3 Ultra's [[concepts/multi-teacher-on-policy-distillation|Multi-Teacher On-Policy Distillation (MOPD)]] stage. It is produced by taking the post-trained Nemotron 3 Ultra student and adding a coding-focused SFT + RL round (execution-verified solutions, compiler/test-verified RL). It is released as a standalone checkpoint (550B total / 55B active, OpenMDW-1.1 license) because it is a strong competitive-coding model in its own right — and, more importantly, as one of **10+ domain-specialized teachers** whose public release makes Nemotron 3 Ultra's MOPD recipe inspectable for researchers.
+
+Source: [[raw/articles/2026-08-14_nvidia_nemotron-teacher-competition-coding]]
 
 ## Related
 
