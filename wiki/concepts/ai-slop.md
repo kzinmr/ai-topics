@@ -2,7 +2,7 @@
 title: AI Slop
 type: concept
 created: 2026-05-25
-updated: 2026-08-04
+updated: 2026-08-15
 tags:
   - ai-slop
   - coding-agents
@@ -16,6 +16,7 @@ sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-05-24-the-eternal-sloptember-html--06dfb1d8.md
   - raw/articles/lucumr.pocoo.org--2026-5-24-pi-oss--32605b95.md
   - raw/articles/2026-05-30_exm7777_fix-ai-slop-using-hermes.md
+  - raw/articles/krebsonsecurity.com--2026-08-whos-tracking-you-use-this-new-service-to-find-out--2df50888.md
 ---
 
 # AI Slop
@@ -117,3 +118,15 @@ This represents a new class of AI-slop attack vector: **flooding vulnerability d
 ### Source
 
 [[raw/articles/2026-07-30_jfrog_sqlite-cves-llm-slop]] — JFrog Security Research, July 30, 2026
+
+## Malvertising Targeting AI Slop Sites (Aug 2026)
+
+KrebsOnSecurity's introduction of **DecryptAds** (a free adtech-transparency service) surfaced a concrete security dimension of AI slop: **malvertising is far more commonly found on newly generated AI slop websites than on high-traffic destinations**. Key findings (Aug 2026):
+
+- Adtech data shows AI-generated slop content farms are not paying for the kinds of protection high-traffic sites buy — in Krebs's words, "None of these slop AI content farms are paying for that kind of protection... it essentially becomes a greased rail to target the users of those sites with malicious ads"
+- A malware-ridden **H96 streaming stick** was observed masquerading as a mobile device and clicking ads on AI slop sites (Bitsight investigation) — bots inflating ad impressions on slop properties
+- **DecryptAds** scrapes and correlates adtech data so users can identify which entities track them; its data is also useful for detecting the growing swarms of AI-generated slop websites and apps
+
+This connects the AI-slop content-quality problem to **malvertising and ad-fraud** — the low-quality content ecosystem becomes an attractive target for malicious ads precisely because its operators cut corners on security.
+
+Source: [[raw/articles/krebsonsecurity.com--2026-08-whos-tracking-you-use-this-new-service-to-find-out--2df50888.md]]

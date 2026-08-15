@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-08-12
+updated: 2026-08-15
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -104,6 +104,7 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | Jul 2026 | The OpenAI Bubble | Largest free newsletter. "Lehman Brothers of the AI bubble" thesis — OpenAI collapse would trigger trillions in worthless capex. $852B burn through 2030. "Cult-like psychosis" framing. Synthesis of 6 months of research. |
 | Jul 2026 | Premium: The Hater's Guide To The Memory Crisis | HBM cost $15.27/GB, $316K per NVL72 rack, $1.894B per 1GW data center; DRAM prices up 60%; memory triopoly (Samsung/SK Hynix/Micron); NVIDIA consumes 65% of all HBM; consumer electronics price hikes |
 | Jul 2026 | Premium: AI Is Getting Way Too Expensive | Industry TTM revenue $110B < OpenAI's $122B raised in March; $145B less than Q1 2026 AI startup funding; Anthropic/OpenAI economic indices as marketing operations |
+| Aug 2026 | Premium: How Much Money Does AI Need? | 3-fiscal-year funding-need framing: OpenAI's $750B compute spend through 2030 and hyperscalers' $1.65T off-balance-sheet debt; per-company funding requirements by hyperscaler/semiconductor/neocloud/lab |
 
 ## AI Is Too Expensive (May 2026)
 
@@ -882,3 +883,4 @@ Source: [[raw/articles/wheresyoured.at--four-horsemen-of-the-aipocalypse--4b0fae
 - [The Argument Mag: "AI's biggest critic has lost the plot" (Kelsey Piper)](https://www.theargumentmag.com/p/ais-biggest-critic-has-lost-the-plot)
 - [The Guardian profile (Jan 2026)](https://www.theguardian.com/technology/2026/jan/19/ed-zitron-on-big-tech-backlash-boom-and-bust-ai-has-taught-us-that-people-are-excited-to-replace-human-beings)
 - [Premium: The Hater's Guide To The Memory Crisis (Jul 2026)](https://www.wheresyoured.at/premium-the-haters-guide-to-the-memory-crisis/)
+- [Premium: How Much Money Does AI Need? (Aug 2026)](https://www.wheresyoured.at/premium-how-much-money-does-ai-need/)

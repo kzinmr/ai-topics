@@ -1,3 +1,13 @@
+## [2026-08-15] blog-wiki-ingest | 1 take (entity enrichment), 5 references
+
+- Batch: blog_ingest 20260815T101417Z (16 candidates + 4 unsaved). Triage checkpoint recovered from JSON render failure (triage_latest.json saved 10:27Z). Takes=1, References=5, Skips=14 (mostly non-AI).
+- **[[entities/cats-with-power-tools]]** +LLM-Assisted Code Porting: The Bonk.io RL Project section (Aug 2026): extracting Box2DWeb physics from JScrambler-obfuscated client (31,339 lines deobfuscated; pure-function engine rebuilt from JSON each frame), LLM-driven Rust port with bit-identical parity (1,961/1,961 maps; 7-decimal SafeTrig rounding; correctly-rounded JSON parser), scratch PPO with cuBLAS + 31 custom CUDA kernels (TF.js GPU slower than CPU: 4k vs 41k fps), 8 rollout workers x 512 instances, league training (self/reservoir/exploiters, horizontal mirror), 10B frames, Elo 5th/522. Timeline row added; wikilink to agentic-engineering. updated: 2026-08-15.
+- **[[entities/ed-zitron]]** +Notable Articles row + References entry: Premium: How Much Money Does AI Need? (Aug 14, 2026) — 3-fiscal-year funding-need framing (OpenAI $750B compute spend through 2030, hyperscalers $1.65T off-balance-sheet). updated: 2026-08-15.
+- **[[entities/simon-willison]]** +August 2026 Updates entry: Don't classify. Hallucinate! (Aug 14, 2026) — Doug Turnbull's free-generation + vector-embedding tag-matching technique for 1,856-tag vocabularies; wikilink to vector-databases. updated: 2026-08-15.
+- **[[entities/cory-doctorow]]** +Chatbot Anti-Circumvention Responsibility subsection (Capital formation, Aug 14, 2026): DMCA 1201 liability transfers to the chatbot prompter, not the machine; wikilink to agent-safety + openai-huggingface-incident-july-2026. updated: 2026-08-15.
+- **[[entities/ramp-labs]]** +Integrations That Write Themselves (Aug 14, 2026): Ramp Builders agentic system autonomously building/maintaining integrations; extends Inspect background-agent pattern (title+desc only, JS-rendered). updated: 2026-08-15.
+- **[[concepts/ai-slop]]** +Malvertising Targeting AI Slop Sites section (Aug 2026): DecryptAds/KrebsOnSecurity — slop content farms skip ad protection ("greased rail" for malicious ads), H96 stick mobile-spoof ad fraud (Bitsight), DecryptAds as slop-site detection tool. updated: 2026-08-15.
+
 ## [2026-08-15] raw-backlog-ingest (10:00) | 3 takes (entity enrichment), 2 skips (already processed)
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-15 10:00, run 20260815T100032Z). Takes=3, References=0, Skips=2. Archive: wiki/raw/archived/triage/raw_backlog/2026-08-15_20260815T100032Z.json (2 new archived; total archive URLs 2672).

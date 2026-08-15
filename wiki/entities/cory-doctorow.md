@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-08-10
+updated: 2026-08-15
 status: L3
 sources:
   - https://pluralistic.net/
@@ -21,6 +21,7 @@ sources:
   - raw/articles/pluralistic.net--2026-08-03-andor--5e30d1be.md
   - raw/articles/pluralistic.net--2026-08-04-technology-freedom-cooperative--182f3215.md
   - raw/articles/pluralistic.net--2026-08-10-deep-state-wopr--e31c0b9a.md
+  - raw/articles/pluralistic.net--2026-08-14-one-chokable-throat--72f647b4.md
 tags: [person]
 ---
 
@@ -347,6 +348,14 @@ Farrell criticizes the *Economist*'s answer as \"solutionism\" — Evgeny Morozo
 People need health care and public services; responding to waste at the margins with more advanced red tape \"just requires the people who legitimately need these services to employ more aggressive tactics.\" As the Twoppians can attest, everyone ends up collateral damage in the robot wars.
 
 Source: [[raw/articles/pluralistic.net--2026-08-10-deep-state-wopr--e31c0b9a.md]]
+
+### Chatbot Anti-Circumvention Responsibility — "Capital Formation" (Aug 14, 2026)
+
+In "[Capital formation](https://pluralistic.net/2026/08/14/one-chokable-throat/)" (Aug 14, 2026), Doctorow's essay on anti-circumvention law (DMCA 1201) and adversarial interoperability includes a pointed warning about **using chatbots to bypass DRM**: people who ask a chatbot to reverse-engineer and modify firmware on their tractors, wheelchairs, ebooks, or iPhones cannot hide behind the machine. His framing of liability:
+
+> "You can't put a chatbot in prison for violating anti-circumvention law, right? I regret to inform you that if you did this... they wouldn't blame your chatbot for writing the exploit: they'd blame you for prompting the chatbot to create this new tool."
+
+The point extends his long-running DMCA critique into the agentic-AI era: prompting an LLM to produce circumvention tooling transfers legal responsibility to the prompter rather than diffusing it. Relevant to [[concepts/agent-safety]] and digital-rights discourse, and a novel angle on who is accountable for agent-generated actions (cf. the agent-liability debates in [[events/openai-huggingface-incident-july-2026]]).
 
 ## Related Pages
 

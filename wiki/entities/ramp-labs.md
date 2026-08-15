@@ -6,10 +6,11 @@ tags: [entity, company, ai-agents, fintech, coding-agents, multi-agent, kv-cache
 status: complete
 description: "Financial technology company with an AI research division (Ramp Labs). Creator of Inspect — a background coding agent handling ~30% of merged PRs. Also known for Latent Briefing research."
 created: 2026-04-27
-updated: 2026-04-30
+updated: 2026-08-15
 sources: [
   "https://x.com/RampLabs/status/2042660310851449223",
-  "https://builders.ramp.com/post/why-we-built-our-background-agent"
+  "https://builders.ramp.com/post/why-we-built-our-background-agent",
+  "https://builders.ramp.com/post/integrations-that-write-themselves"
 ]
 related: []
 ---
@@ -72,6 +73,10 @@ In hierarchical multi-agent architectures (orchestrator → worker), redundant i
 1. **Slack Bot** — Auto-classification, public channel virality, Block Kit updates
 2. **Web Interface** — Hosted VS Code, streamed desktop for visual verification, merge rate tracking
 3. **Chrome Extension** — Visual editing for non-engineers, DOM/React internals extraction
+
+### Integrations That Write Themselves (Aug 2026)
+
+Ramp Builders published "[Integrations That Write Themselves](https://builders.ramp.com/post/integrations-that-write-themselves)" (Aug 14, 2026) describing an agentic system that **autonomously builds and maintains integrations as customers ask for them** — extending the Inspect background-agent philosophy from internal PRs to customer-facing integration coverage. The post extends the "background agent" pattern (see Inspect above) toward autonomous, self-maintaining tooling; content is JS-rendered so only the title/description were extractable at triage time.
 
 ## Research Approach
 

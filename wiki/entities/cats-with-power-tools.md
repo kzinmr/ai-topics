@@ -1,9 +1,10 @@
 ---
 title: "Pixelmelt (Cats with Power Tools)"
 tags: [person]
-sources: []
+sources:
+  - raw/articles/blog.pixelmelt.dev--training-a-reinforcement-learning-model-to-play-bonk-io--dbec950e.md
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-08-15
 type: entity
 ---
 
@@ -41,6 +42,7 @@ Pixelmelt's work sits at the intersection of reverse engineering and web applica
 | 2025 | "A Clever But Not-So-Good Scraper Protection" — critique of an anti-scraping mechanism |
 | 2025 | "The Webs Digital Locks Have Never Had a Stronger Opponent" — broader analysis of web-based DRM trends |
 | 2026 | Blog remains active; continues publishing on JS reverse engineering and web security |
+| Aug 2026 | "Training a Reinforcement Learning Model to Play Bonk.io" — extracts the game's Box2D physics engine from JScrambler-obfuscated JS, ports it to Rust with an LLM (1961/1961 bit-identical maps), and trains a scratch PPO agent (10B frames, Elo 5th/522) |
 
 ## Core Ideas
 
@@ -148,6 +150,31 @@ function foo(input) {
 The key insight is that **the error is the intended control flow mechanism**, not a bug to be handled. By chaining multiple try-catch blocks with error objects carrying state information, developers can create execution graphs that are nearly impossible to follow through static analysis alone.
 
 > "A lot of VMs I worked on in the past would also exploit errors to force a catch execution to continue." — Draco (commenter)
+
+### LLM-Assisted Code Porting: The Bonk.io RL Project (Aug 2026)
+
+In "[Training a Reinforcement Learning Model to Play Bonk.io](https://blog.pixelmelt.dev/training-a-reinforcement-learning-model-to-play-bonk-io/)" (Aug 2026), Pixelmelt demonstrates the full pipeline of using **LLMs for verifiable code porting** — an extension of the blog's reverse-engineering ethos into game AI:
+
+**Extracting the physics engine from obfuscated JS:**
+- Bonk.io's client is protected with **JScrambler** and is "completely incomprehensible"; a friend (Ciaran) did the heavy lifting deobfuscating the JScrambler build, while Pixelmelt reversed the remaining non-JScrambler bonk-specific obfuscation
+- The game runs a modified build of **Box2DWeb** (a JS port of the flash-era Box2D engine). Because Bonk.io uses deterministic lockstep networking, every client simulates the entire game locally and the physics is a **pure function**: same state + same inputs → same floats, bit for bit. The game rebuilds the entire physics world from scratch every frame from a plain JSON state — no persistent world
+- After staring at **31,339 lines** of deobfuscated code, the engine was confirmed to be exactly the pure function needed for RL training
+
+**LLM-driven Rust port with bit-identical parity:**
+- Pixelmelt used an LLM to rewrite the library in **Rust** — "the siren song of making an LLM rewrite the library in rust was too strong"
+- This is a great LLM use case because correctness is **extremely verifiable**: two goals — execution speed and parity to the JS implementation. "Getting the rust port 'close' to the JavaScript version fails"
+- The port mirrors every float expression in shape and evaluation order; all math goes through wrappers rounding to **7 decimals** like the game's SafeTrig utilities; even the JSON parser had to be correctly rounded ("parity breaks at the first division")
+- Test harness: a corpus of **1,961 real maps** from the game with frame-by-frame comparison against the original implementation — came out **1961/1961 bit-identical**
+
+**Training a scratch PPO agent:**
+- Trainer is TypeScript on Bun, Rust engine loaded over FFI. TensorFlow.js on GPU was slower than CPU (4k fps vs 41k) because the network is tiny, so PPO was written **from scratch** with cuBLAS matmuls and **31 custom CUDA kernels**
+- Eight rollout workers run 512 game instances against each other; a central inference server batches policy evaluations into GPU waves; PPO updates happen on the same GPU between waves
+- Input: 385 floats — 14 numbers about its own disc + 19 about the opponent, stacked over 7 frames at offsets (0,1,3,7,15,30,60), decaying traces of its own buttons, 16 raycasts into map geometry, stacked 4 deep
+- League training: ~1/3 games vs current self, 1/3 vs a reservoir of past versions, 1/3 vs "exploiters" (policies trained to beat the main agent); every sample mirrored horizontally to double data and force policy symmetry
+- Reward: +1 win, −1 loss, −0.3 draw. The bot makes decisions every 2 physics frames (15 Hz)
+- Result: current training run passed **10 billion frames** ("at 30 fps that's over ten years of continuous play"); best deployed policy sits **5th out of 522 tracked players** on a live Elo table, behind four very good humans
+
+The project connects Pixelmelt's web-security reverse engineering to both [[concepts/agentic-engineering]] (LLM-verified code porting with bit-exact test harnesses) and reinforcement learning practice — a rare combination of JScrambler RE, LLM-assisted porting, and RL training in one post.
 
 ## Notable Projects
 
