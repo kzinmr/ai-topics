@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-15T10:35:05.704416+00:00",
+  "triage_run_id": "20260815T101720Z",
+  "source": "newsletter",
+  "summary_ja": "5ニュースレターを処理。GLM-5.3はconcepts/glm-5-3.md（active-crawl 08-14作成）で事実を完全カバー済みのため、Interconnects（Nathan Lambert）の戦略分析のみtakeとして既存ページ追記を推奨（約750Bパラメータ、Z.ai vs Kimiのpost-training/pre-training比較、中国ラボのリリースサイクル優位、中国RLデータ産業）。Superintel+のOpenAI $40B年間収益、The SignalのAI悲嘆エッセイ、Ben's Bites/AI by AakashのGrok Botレビューはreference。サブスタックUI・リダイレクト・重複beehiivトラッキングはスキップ。",
+  "decisions": [
+    {
+      "item_id": "<20260814.190125.4739b7b1@mta27>-1",
+      "source": "newsletter",
+      "source_name": "Superintel+ (getsuperintel.com)",
+      "title": "GLM-5.3 Released: Nobody Taught It To Hack",
+      "url": "https://read.getsuperintel.com/p/glm-5-3-released-nobody-taught-it-to-hack",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-14-glm-5-3-released-nobody-taught-it-to-hack.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ GLM-5.3本体の事実（CyberGym 84.5%、2,436 vulns/269 projects、weights 2週間後、同ベースモデル+post-training）は concepts/glm-5-3.md で完全カバー済み。固有データは二次トピック：OpenAI年間収益$40B超（Bloomberg、2025年末比約2倍、両ラボがIPO機密書類提出）→ entities/openai.md の収益データ更新に有用。Gemini 3.7 Flash（$0.75/$3.75、blog-wiki-ingest 08-14で取得済）、GPT-5.6 Sol Ultrafast/Cerebras 750tok/s（concepts/gpt/gpt-5-6.md カバー済）、Texas建設一時停止（マイナー、ai-regulation-2026にTexas言及あり）。",
+      "candidate_wiki_path": "entities/openai.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-14\n**Subject:** 🐛 GLM-5.3 Released: Nobody Taught It To Hack\n**Collected:** 2026-08-15T10:17:17.613997+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/b896cb011acec98c1587a39ea22b4a93a2aaa91379de060c65093de15595f19c0a1b2bec6b20e155"
+    },
+    {
+      "item_id": "<20260814134954.3.957d1fdca03486ef@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "The Signal (Alex Banks)",
+      "title": "People are grieving their AI",
+      "url": "https://thesignal.substack.com/p/people-are-grieving-their-ai",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-14-people-are-grieving-their-ai.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ AIへの感情的愛着・喪失のエッセイ（有料記事、プレビュー10段落読了）。Roomba所有者の愛着（Georgia Tech研究）、Tamagotchi effect、catfishアナロジー、LLMが「気にかけてくれる誰か」の次語を生成する構造、GPT-4o退役時の反発と悲嘆（2025年8月、OpenAIが一部撤回）。concepts/ai-consciousness-debate.md（Gullibility Gap/anthropomorphism言及あり）への人間-AI感情的愛着セクション追加が価値。新ページ化するほどの技術データはないが、社会現象の記録としてreference。",
+      "candidate_wiki_path": "concepts/ai-consciousness-debate.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-14\n**Subject:** People are grieving their AI\n**Collected:** 2026-08-15T10:17:16.515963+00:00\n**Articles linked:** 15\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWl"
+    },
+    {
+      "item_id": "<20260814130403.3.1bc1ab05ed53b1a1@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Ben's Bites (Ben Tossell)",
+      "title": "Ben's session #2 — personal agents are just files and folders",
+      "url": "https://www.bensbites.com/p/bens-session-2",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-14-ben-s-session-2.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ パーソナルエージェントの本質論（「nothing special to being a personal bot — it's a file and folder system」）。Grok Botのアーキテクチャ詳細（各エージェント個別スレッド、共有コンピュータ、エージェント個別メモリ=テキストファイル、teach機能、自動化ルーチン）は events/grok-4-6-launch.md のGrok Botセクション補強に有用（同ページは08-13「Grok Bot is not what you think」を既にソース参照、session #2は08-14のフォローアップ）。OpenClaw/Hermes/Grok Bot比較、コンパクション+ファイル永続化の考察。",
+      "candidate_wiki_path": "events/grok-4-6-launch.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-14\n**Subject:** Ben's session #2\n**Collected:** 2026-08-15T10:17:15.431101+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2N"
+    },
+    {
+      "item_id": "<20260814215505.3.c57b71768cc70926@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "AI by Aakash (Aakash Gupta)",
+      "title": "Grok Bot.",
+      "url": "https://www.aibyaakash.com/p/grok-bot",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-14-grok-bot.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Grok Bot実機レビュー（7日間トライアル）。xAIのCursor $60B買収クローズ、マルチエージェント基盤（各ボット永続クラウドコンピュータ、アプリログイン、承認時のみ人間介入、複数ボット自動調整）、スキル自己進化（Hermes類似）、Chief of Staff調整機能、評決「Autoresearch/GBrain/Hermes/ChatGPT Work/Claude Design/Coworkより良い製品があるがxAI最強エントリー」。events/grok-4-6-launch.md のGrok Bot節（既に08-13 AINews/Superintel+/Ben's Bitesでカバー）＋entities/aakash-gupta.md への追記推奨。Anthropic透かしは concepts/synthid.md でカバー済み、OpenClawメルボルン事件は周辺。",
+      "candidate_wiki_path": "events/grok-4-6-launch.md + entities/aakash-gupta.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-14\n**Subject:** Grok Bot.\n**Collected:** 2026-08-15T10:17:19.754871+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYWlieWFha2FzaC5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZS"
+    },
+    {
+      "item_id": "<20260815T101720Z>-batch-noise",
+      "source": "newsletter",
+      "source_name": "Batch (all 5 newsletters)",
+      "title": "Substack UI noise / redirect links / duplicate beehiiv tracking links",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★ サブスタックUIノイズ（submitLike/reaction、action=post-comment、action=share、app-store/read-in-app、restack-comment）、メールセッション認証必須のsubstack.com/redirectリンク（curlでは解決不可、本文は既に解決済み記事で取得）、@natolambert/@alexbanks等の著者プロフィール、および同一記事の別認証状態に過ぎない重複beehiivトラッキングURL（Superintel+の20リンク中1本目を解決済み=read.getsuperintel.com/p/glm-5-3-released-nobody-taught-it-to-hack、残りは同記事の重複）。コンテンツ価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "ノイズリンク（サブスタックUI・リダイレクト・重複トラッキング）— 抽出可能な記事コンテンツなし。"
+    }
+  ]
+}
