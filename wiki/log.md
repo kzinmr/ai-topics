@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-15] watchdog | auto-fix samuelcolvin.md malformed YAML frontmatter
+
+- Fixed `tags: []type: entity` merged on one line in `entities/samuelcolvin.md` (redirect stub) — split into `tags: []` + `type: entity`. YAML now parses cleanly.
+- Verified: index.md clean (validate_index exit 0), no pipe/triple-bracket/line-number corruption, log header at line 1, header counts all match section entries (Entities 900, Concepts 1986, Comparisons 35, Events 27, Queries 4), index coverage gap = 0 genuine (3 non-indexed are 2 `_archive/` files + 1 redirect `tim-sherratt`).
+- Escalated (not auto-fixed): 24 pages missing `created:` (10+ threshold; 0 misplaced-tag defect, plain missing-field gap per 2026-08-14 precedent); 6 known duplicate pairs unchanged (2 redirects, 4 pending merge); 3,463 broken wikilinks / 479 orphans / 1,021 tag violations / 1,313 stale pages per weekly graph report 2026-08-14.
+- Pipeline: `x_accounts` stale(26h) alert is transient (2-day cycle, 22:30 UTC) — no action.
+
+---
+
 ## [2026-08-15] raw-backlog-ingest | 2 entity enrichments, 3 already-captured skips
 
 - Batch: raw-backlog-collect 20260815T140004Z (ai-hint sort, 5 candidates).
