@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-08-15T10:12:19.028406+00:00",
+  "triage_run_id": "20260815T100032Z",
+  "source": "raw_backlog",
+  "summary_ja": "rawバックログ10:00バッチ。5記事中3件をtake（既存ページ更新のみ・新規ページなし）、2件をskip（処理済み）。take: (1) Fireworks AIのKimi QK-Clip深掘り記事→attention-mechanism-variants.mdのMLA節にQK-Clipサブセクション追加＋kimi.md・fireworks-ai.mdに追記。(2) Harveyの「How to Choose the Right Legal AI Platform」評価ガイド（10基準テーブル、92%月次採用率、25h/月削減）→harvey.mdにセクション追加。(3) GleanのRAG vs ファインチューニング完全ガイド（日本語版、Traditional/Agentic RAG、フル/PEFT/継続事前学習、ハイブリッド）→glean.mdにセクション追加。skip: research.swtch.com nih（04:00ランでruss-cox.md作成＋software-supply-chain-security.md実ページ化済み）、X記事「What to Learn, Build, and Skip in AI Agents」（2026-04-30にagent-engineering-guide-2026.mdとして処理済み）。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-research.swtch.com-nih-2cd8df91",
+      "source": "raw_backlog",
+      "source_name": "Russ Cox (research.swtch.com)",
+      "title": "Running the \"Reflections on Trusting Trust\" Compiler",
+      "url": "https://research.swtch.com/nih",
+      "raw_path": "wiki/raw/articles/research.swtch.com--nih--2cd8df91.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 処理済み。04:00ラン（20260815T040003Z）でtake済み: entities/russ-cox.md新規作成＋concepts/software-supply-chain-security.mdをstubから実ページ化（log.md 2026-08-15エントリで確認、ソースも同raw記事）。重複処理なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Running the “Reflections on Trusting Trust” Compiler\nSource: https://research.swtch.com/nih\nRunning the “Reflections on Trusting Trust” Compiler\nRuss Cox\nOctober 25, 2023\nresearch.swtch.com/nih\nPosted on Wednesday, October 25, 2023.\nSupply chain security is a hot topic today, but it is a very old "
+    },
+    {
+      "item_id": "raw-backlog-x-what-to-learn-build-skip-ai-agents-36646aa99aba",
+      "source": "raw_backlog",
+      "source_name": "X Article (anonymous practitioner)",
+      "title": "What to Learn, Build, and Skip in AI Agents (2026)",
+      "url": "https://x.com/i/article/2049548305408131349",
+      "raw_path": "wiki/raw/articles/2026-04-30_x--what-to-learn-build-skip-ai-agents.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 処理済み。2026-04-30にconcepts/harness-engineering/agent-engineering-guide-2026.mdとして取り込み済み（sources: raw/articles/2026-04-30_x--what-to-learn-build-skip-ai-agents.md）。Five-Part Filter、学習推奨プリミティブ、スキップ推奨リストまでページ本文に完全収録。重複作成を避けスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Every day brings a new framework, a new benchmark, a new \"10x\" launch. The question stops being \"how do I keep up.\" It becomes: what's actually signal here, and what's noise wearing the costume of urgency.\nEvery roadmap goes obsolete a month after launch. The framework you mastered last quarter is n"
+    }
+  ]
+}

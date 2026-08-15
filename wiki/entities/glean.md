@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-08-14
+updated: 2026-08-15
 tags:
   - company
   - search
@@ -13,6 +13,7 @@ aliases: ["Glean Work", "Gleanwork"]
 sources:
   - https://www.glean.com/
   - https://www.glean.com/about
+  - raw/articles/2026-05-10_glean_retrieval-augemented-generation-vs-fine-tuning.md
   - raw/articles/2026-05-10_glean_the-definitive-guide-to-ai-based-enterprise-search-for-2025.md
   - raw/articles/2026-05-15_glean_cowork-mcp-eval.md
   - raw/articles/2026-05-21_glean_health-agents-2026.md
@@ -267,6 +268,21 @@ Glean published an educational IR guide explaining retrieval fundamentals as app
 - **IR model families**: Boolean model (logical operators AND/OR/NOT), vector space model (documents/queries as vectors), probabilistic model (relevance as probability), language model (documents as sequences from a generative language model). Modern systems combine sparse keyword retrieval with dense neural retrieval in a hybrid approach.
 - **System components**: document collection, indexing, query processor, ranking algorithm, user interface.
 - **Five enterprise use cases**: document management, customer service (knowledge base retrieval), data analytics, e-discovery (legal), and enterprise search — Glean Search brings these together with permission-aware, cited results across email, documents, tickets, and chat.
+
+### RAG vs Fine-Tuning Guide (Feb 2026)
+
+Glean's educational guide comparing retrieval-augmented generation against fine-tuning for enterprise LLM applications (scraped from the Japanese localization glean.com/jp; sitemap lastmod 2026-02-12; author Stephanie Baladi).
+
+- **RAG fundamentals**: three steps — retrieval (search external knowledge sources), augmentation (feed retrieved facts to the LLM), generation (context-aware answer). Two types: **Traditional RAG** (static, single-step retrieval over pre-indexed sources) vs **Agentic RAG** (AI iteratively searches, evaluates, and refines retrieval based on query context — suited to complex multi-step problems).
+- **RAG benefits**: real-time insight, hallucination reduction (fact-checking mechanism), flexibility (update knowledge without full retraining).
+- **Fine-tuning fundamentals**: adapting a pretrained LLM on curated domain data. Three approaches — **full fine-tuning** (all params; most comprehensive, most compute), **parameter-efficient fine-tuning** (subset of params; e.g., LoRA, prefix tuning), **continued pretraining** (incorporate new data while retaining existing knowledge).
+- **FT benefits**: domain expertise (generalist → specialist), retains general capabilities.
+- **Decision guidance**: choose RAG for frequently-updated data, real-time integration, rapid deployment, dynamic content; choose fine-tuning for stable specific domains, high accuracy on specialized tasks, consistent reproducible outputs.
+- **Use cases — RAG**: sales enablement (live competitor/pricing data), IT helpdesk, financial analysis, HR dynamic FAQs. **FT**: healthcare chatbots (medically accurate triage), industry-specific document summarization, compliance monitoring (contract non-compliance language), customer sentiment analysis.
+- **Hybrid approach**: fine-tuned model + RAG for real-time data — combines domain precision with fresh relevance. Costs: infrastructure complexity, compute, cost, data quality/governance.
+- **Challenges — RAG**: data privacy/security (GDPR/CCPA compliance, leakage risk), retrieval bias and knowledge gaps, latency, infrastructure complexity. **FT**: expensive curated datasets, overfitting risk, high compute cost, ongoing retraining maintenance, per-task scaling.
+
+Related: [[concepts/retrieval-augmented-generation]], [[concepts/fine-tuning]], [[concepts/rag-systems]].
 
 ### Definitive Guide to AI-Based Enterprise Search (May 2026)
 

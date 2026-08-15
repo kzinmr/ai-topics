@@ -2,7 +2,7 @@
 title: "Attention Mechanism Variants in Modern LLMs"
 type: concept
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-15
 tags:
   - architecture
   - methodology
@@ -11,6 +11,7 @@ tags:
 aliases: ["attention-mechanisms", "transformer-attention", "GQA", "MLA", "SWA", "scaled-dot-product-attention"]
 sources:
   - raw/articles/2022-10-22_jaymody-attention-intuition.md
+  - raw/articles/2026-05-10_fireworks-ai_kimi-qkclip.md
 ---
 
 # Attention Mechanism Variants
@@ -65,6 +66,19 @@ Compresses full-resolution K/V tensors into a latent representation for caching,
 - **Key insight:** "MLA only works well at a certain size. For smaller models, let's say <100B, GQA seems to work better, or, is at least easier to tune and get right."
 - **Examples:** DeepSeek V3, Kimi K2, GLM-5, Ling 2.5, Mistral Large 3, Sarvam 105B
 - **Use case:** Models >100B, scale-driven efficiency
+
+#### QK-Clip: Training-Time Normalization Fix for MLA (Kimi K2, July 2025)
+
+Fireworks AI's widely-cited deep-dive (published 2025-07-22) explains the **training/inference asymmetry of MLA** and why Kimi introduced **QK-Clip**. The problem surfaced through a comment exchange on Su Jianlin's kexue.fm blog: *"why during decoding, you cannot fully materialize the k you get during training."*
+
+- **The asymmetry**: during training, Keys are fully materialized (Q/K projections applied to the latent representation), which permits normalization (e.g., RMSNorm). During decoding/inference, the projection is skipped for efficiency, so the Key is not fully materialized — runtime normalization breaks.
+- **Root cause Kimi identified**: Muon (an optimizer without weight decay) causes **MaxLogit explosions** — huge pre-Softmax values.
+- **The fix**: instead of runtime norms (impossible in MLA decoding), QK-Clip clips the Wq and Wk weights **during training** when the max logit S_max^(l,h) exceeds a threshold tau:
+  - Column-wise weights (Wqc, Wkc): W ← W × sqrt(tau / S_max^(l,h))
+  - Row-wise weights (Wqr, Wkr): W ← W × tau / S_max^(l,h)
+- **Why elegant**: the bound is enforced at training time, so inference stays cheap; no runtime normalization needed. Fireworks noted anecdotal quality trade-offs with MLA, and QK-Clip may be a "secret ingredient" for efficient inference across labs.
+
+Source: raw/articles/2026-05-10_fireworks-ai_kimi-qkclip.md
 
 ## 4. Sliding Window Attention (SWA)
 

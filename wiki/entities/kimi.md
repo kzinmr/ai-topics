@@ -10,9 +10,9 @@ tags:
   - china
   - open-source
 created: 2026-04-30
-updated: 2026-07-17
+updated: 2026-08-15
 type: entity
-sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]]", "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md"]
+sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]]", "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md", "raw/articles/2026-05-10_fireworks-ai_kimi-qkclip.md"]
 ---
 
 # Moonshot AI / Kimi
@@ -110,6 +110,8 @@ K3 (Jul 2026) introduced a **new license** — no longer "modified MIT." It requ
 | Multimodality | Native (text, images, video without separate vision modules) |
 | Optimizer | MuonClip (Moonshot's custom optimizer for trillion-param MoE stability) |
 | Activation | SwiGLU |
+
+**QK-Clip**: Kimi K2 introduced **QK-Clip** to fix MLA training/inference normalization asymmetry (documented in Fireworks AI's July 2025 deep-dive). Moonshot's Muon-family optimizers (no weight decay) cause "MaxLogit explosions" — huge pre-Softmax values; instead of runtime normalization (which breaks during MLA decoding because keys are not fully materialized), QK-Clip clips Wq/Wk weights at training time when max logits exceed a threshold. MuonClip in the table above is the lineage continuation of this approach. See [[concepts/attention-mechanism-variants]].
 
 ### Four Variants
 

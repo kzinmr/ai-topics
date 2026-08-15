@@ -305,7 +305,7 @@
 - [[entities/finbarr-timbers]] — Finbarr Timbers
 - [[entities/fintool]] — Fintool
 - [[entities/fiona-fung]] — Fiona Fung
-- [[entities/fireworks-ai]] — Fireworks AI; added Frontier Training Infrastructure (zero-KLD train/serve alignment, batch invariance for MoEs, DeepGEMM, GLM 5.2 managed service) + Hybrid Harness GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp) (June 25)
+- [[entities/fireworks-ai]] — Fireworks AI; added Frontier Training Infrastructure (zero-KLD train/serve alignment, batch invariance for MoEs, DeepGEMM, GLM 5.2 managed service) + Hybrid Harness GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp) (June 25); MLA/QK-Clip technical explainer (July 2025)
 - [[entities/florian-brand]] — Florian Brand
 - [[entities/flue]] — Flue
 - [[entities/folk-app]] — folk
@@ -329,7 +329,7 @@
 - [[entities/giles-thomas]] — Giles Thomas; enriched with Part 34b (JAX GPT-2 Small) and Poppy training box hardware (July 9)
 - [[entities/gilesthomas]] — Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technica...
 - [[entities/gkisokay]] — gkisokay
-- [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons + enterprise knowledge graph cases (Aug 2026)
+- [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons + enterprise knowledge graph cases (Aug 2026); RAG vs fine-tuning guide (Feb 2026)
 - [[entities/glimpse]] — Glimpse
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
 - [[entities/glm-5v-turbo]] — GLM-5V-Turbo
@@ -358,7 +358,7 @@
 - [[entities/hanchunglee]] — Hanchunglee
 - [[entities/hark]] — Hark; Handoff computer-using agent, $0.18/M input tokens vs GPT 5.5's $5.00, 5s per-turn (Aug 10)
 - [[entities/harrison-chase]] — Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framewor...
-- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8); AI-Powered Due Diligence for M&A — data room workflows, GSK Stockmann 15-75% savings, PwC 10k+ workflows, 25k+ custom agents (Apr 2026); Legal Tech Overview guide — six core categories, citation grounding baseline (Jun 18)
+- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8); AI-Powered Due Diligence for M&A — data room workflows, GSK Stockmann 15-75% savings, PwC 10k+ workflows, 25k+ custom agents (Apr 2026); Legal Tech Overview guide — six core categories, citation grounding baseline (Jun 18); How-to-Choose Legal AI Platform evaluation guide — 10 criteria, 92% adoption, 25h/mo savings (Apr 2026)
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM; Salesforce Ventures Generative AI Fund; relational intelligence category (L3)
 - [[entities/halo-tamper-evident-agent-runtime]] — Open-source tamper-evident runtime evidence for AI agents; append-only hash-chained log (Apache-2.0)
 - [[entities/hebbia]] — Hebbia
@@ -451,7 +451,7 @@
 - [[entities/kieran-klaassen]] — Kieran Klaassen
 - [[entities/kilo]] — Kilo (Kilo Code)
 - [[entities/kim-isenberg]] — Kim 'Chubby' Isenberg
-- [[entities/kimi]] — Moonshot AI / Kimi
+- [[entities/kimi]] — Moonshot AI / Kimi; MLA + QK-Clip normalization fix (Kimi K2, July 2025), MuonClip optimizer lineage
 - [[entities/knowledgator]] — Knowledgator
 - [[entities/koog]] — Koog
 - [[entities/kore-ai]] — Kore.ai
@@ -1272,7 +1272,7 @@
 - [[concepts/ask-user-question-pattern]] — AskUserQuestion Pattern
 - [[concepts/assembly-optimization]] — assembly-optimization
 - [[concepts/at-protocol]] — AT Protocol
-- [[concepts/attention-mechanism-variants]] — Attention Mechanism Variants in Modern LLMs
+- [[concepts/attention-mechanism-variants]] — Attention Mechanism Variants in Modern LLMs; MLA QK-Clip training-time normalization fix (Kimi K2)
 - [[concepts/attractor-models]] — Attractor Models
 - [[concepts/audio-tokenizer-comparison]] — Audio Tokenizer Comparison — SoundStream / EnCodec / DAC / SpeechTokenizer / Mimi
 - [[concepts/aurora-optimizer]] — Aurora Optimizer

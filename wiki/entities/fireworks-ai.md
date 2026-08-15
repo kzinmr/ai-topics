@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-08-12
+updated: 2026-08-15
 tags:
   - entity
   - company
@@ -15,6 +15,7 @@ aliases:
 sources:
   - raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md
   - raw/articles/2026-05-10_fireworks-ai_best-llms-for-coding.md
+  - raw/articles/2026-05-10_fireworks-ai_kimi-qkclip.md
   - raw/articles/2026-05-29_fireworks-ai_best-llm-api-providers.md
   - raw/articles/2026-06-02_fireworks-ai_Trilogy.md
   - raw/articles/2026-06-15_langchain_building-100x-cheaper-trace-judge-fireworks.md
@@ -80,6 +81,10 @@ An internal database and automation system that predicts optimal deployment conf
 
 ### Custom Speculator Training
 Fireworks helps customers train **custom draft models (speculators)** for their fine-tuned models. Unlike generic speculative decoding, a speculator trained on the fine-tuned model's specific output distribution achieves significantly higher token acceptance rates, directly translating to faster inference.
+
+### MLA / QK-Clip Technical Explainer (July 2025)
+
+Fireworks published one of the most widely-cited deep-dives on **Multi-Head Latent Attention (MLA)** training/inference asymmetry and **QK-Clip**, the fix introduced by Kimi (Moonshot AI) — starting from a comment exchange on Su Jianlin's kexue.fm blog. The explainer documents why keys are fully materialized during training (permitting RMSNorm) but not during decoding, and how QK-Clip clips Wq/Wk weights at training time when max logits exceed a threshold (root cause: Muon optimizer without weight decay → "MaxLogit explosions"), avoiding runtime normalization that would break MLA inference. Includes an animated visualization of the training vs decoding paths. See [[concepts/attention-mechanism-variants]].
 
 ## Model Customization
 

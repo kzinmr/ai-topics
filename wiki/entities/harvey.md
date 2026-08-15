@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-14
+updated: 2026-08-15
 tags:
   - security
   - company
@@ -16,6 +16,7 @@ aliases:
 sources:
   - https://www.harvey.ai/
   - https://www.harvey.ai/blog
+  - raw/articles/2026-05-10_harvey_how-to-choose-best-legal-ai-platform.md
   - raw/articles/2026-05-26_harvey-ai-initial-results-legal-agent-benchmark.md
   - raw/articles/2026-06-02_harvey_why-we-built-our-own-cloud-agent-infrastructure.md
   - raw/articles/2026-06-02_harvey_how-ai-is-transforming-contract-review-software.md
@@ -212,6 +213,31 @@ Harvey's practical guide to AI due diligence frames it as closing a coverage gap
 **Direction**: the guide positions the next phase as **agentic** — agents that ingest a full data room, run a structured review protocol, flag issues, draft a preliminary report, and route findings to team members, checking in with humans at decision points. Economic framing: when the cost of reviewing a full contract population drops 50-75%, deals too small to justify full diligence become viable and the labor component of diligence shrinks relative to the judgment component.
 
 Source: raw/articles/2026-05-10_harvey_ai-due-diligence-for-m-and-a.md
+
+## How to Choose the Right Legal AI Platform (April 2026)
+
+Harvey's vendor-evaluation guide (published Apr 3, 2026) for law firms and in-house teams selecting a legal AI platform. Positions evaluation as a structured process: start from operating context (firm vs in-house, team size, priority workflows), evaluate against core criteria, validate with evidence, and avoid common pitfalls.
+
+**Ten-criteria evaluation table:**
+
+| Consideration | Why It Matters | What to Look For |
+|---|---|---|
+| Firms vs In-House | Different risk tolerances, workflows, success metrics | Purpose-built for both: matter-centric controls for firms; enterprise architecture + usage analytics for in-house |
+| Team Size | 10-person boutique vs 1,000-attorney global firm | Flexible deployment, configurable permissions, usage analytics |
+| Accuracy | No room for hallucination | Domain-specific training, citations tied to verified sources, human oversight |
+| Security | Sensitive client data | SOC 2 Type II, ISO 27001/27701 (and ISO 42001), GDPR/CCPA, encryption at rest/in transit, BYOK, RBAC, ethical walls, matter-level permissions |
+| Features | Generic features serve no industry well | Purpose-built contract analysis, due diligence, legal research, matter-centric governance |
+| Usability | Adoption is the biggest ROI predictor | Intuitive interface, structured onboarding, workflows mirroring legal practice |
+| Integrations | Disconnected platforms slow teams | Native integrations: Word, DMS (iManage), Outlook, LexisNexis, InTapp, Aderant |
+| Scalability | Needs evolve | Multi-region support, enterprise infrastructure, customer success |
+| ROI | More complex than time savings | ROI calculators + change-management assessment |
+| Social Proof | Real-world evidence is the strongest signal | Case studies from comparable orgs; G2 / Gartner Peer Insights |
+
+**Metrics cited:** 92% monthly adoption rate; users save 25+ hours/month; 100,000+ lawyers across 1,000+ organizations (the M&A guide cites 1,500+ orgs — figures differ by guide vintage); 500+ legal data sources via Harvey Knowledge (LexisNexis, EDGAR, EUR-Lex); multi-site architecture US/EU/CH/AU; member of the Coalition for Secure AI alongside Google, OpenAI, Anthropic; 150 engineers.
+
+**Three pitfalls to avoid:** (1) prioritizing breadth over depth — generic tools rarely meet legal standards; (2) undervaluing security — check team composition and track record beyond certifications; (3) skipping the adoption question — a platform the team won't use delivers no value.
+
+Source: raw/articles/2026-05-10_harvey_how-to-choose-best-legal-ai-platform.md
 
 ## Agentic Security Operations Center (May 2026)
 
