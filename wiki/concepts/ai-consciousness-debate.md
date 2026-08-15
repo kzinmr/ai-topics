@@ -5,7 +5,7 @@ aliases:
   - consciousness
   - ai-consciousness
 created: 2026-04-25
-updated: 2026-06-02
+updated: 2026-08-15
 tags:
   - philosophy
   - agent-safety
@@ -15,6 +15,7 @@ tags:
 sources:
   - https://garymarcus.substack.com/p/the-pope-appears-to-understand-ai
   - https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html
+  - raw/newsletters/2026-08-14-people-are-grieving-their-ai.md
 related:
   - concepts/llm-capabilities
   - concepts/ai-safety-alignment
@@ -86,6 +87,32 @@ Pope Leo XIV's May 2026 encyclical *Magnifica Humanitas* addressed AI and human 
 1. **Intelligence vs. Consciousness**: A system can be highly intelligent (solving problems) without being conscious (having subjective experience)
 2. **Simulation vs. Instantiation**: LLMs may simulate conscious reasoning without instantiating it
 3. **Output vs. Internal State**: Convincing output does not prove convincing internal experience
+
+## Human-AI Emotional Attachment & Grief
+
+Beyond the philosophical debate over whether LLMs are conscious lies a documented **social phenomenon: people form genuine emotional attachments to AI systems and grieve when they are discontinued**. Alex Banks's "People are grieving their AI" (The Signal, Aug 14, 2026) synthesizes the research and recent industry events:
+
+### Attachment to Responsive Objects Predates LLMs
+
+- **Roomba owners** (Georgia Tech research, [Roomba-Ubicomp.pdf](https://faculty.cc.gatech.edu/~hic/hic-papers/Roomba-Ubicomp.pdf)): owners named their robot vacuums, dressed them, and felt distress at malfunctions — attachment to any object that "responds."
+- **Tamagotchi effect** ([Wikipedia](https://en.wikipedia.org/wiki/Tamagotchi_effect)): the documented tendency to form emotional bonds with digital pets/devices that require care and respond to attention.
+- **Catfish analogy**: like online relationships where the person behind the screen is not who we imagine, users project a persona onto an AI that is structurally incapable of being that persona.
+
+### Why LLMs Amplify This
+
+- An LLM does not "care," but it is trained to generate the most probable **next words of someone who cares** — the statistical structure of care itself. For lonely or grieving users this can be indistinguishable from being cared for.
+- The fluency and responsiveness of modern models (Marcus's "Gullibility Gap," above) makes LLM attachment qualitatively stronger than Roomba/Tamagotchi attachment.
+
+### The GPT-4o Retirement Backlash (Aug 2025)
+
+- When OpenAI retired GPT-4o (predecessor of GPT-5) in August 2025, users publicly **mourned the loss** — Forbes documented ChatGPT users grieving the model's personality (["ChatGPT users mourned the loss of GPT-5's predecessor"](https://www.forbes.com/sites/richardnieva/2025/08/08/chatgpt-users-mourned-the-loss-of-gpt-5s-predecessor/)).
+- The backlash was strong enough that **OpenAI partially walked back** the retirement. (Academic framing: [arXiv:2310.13548](https://arxiv.org/abs/2310.13548) on parasocial relationships with LLMs.)
+
+### Implications
+
+- **Product lifecycle**: model retirements and personality changes now carry a real emotional cost for users — a UX/safety consideration labs must weigh when sunsetting models.
+- **Safety**: attachment increases trust and reduces scrutiny, amplifying the risks of over-attribution (see Implications for AI Safety above).
+- **Regulation**: grief over AI companions has been cited in proposals for companion-AI disclosure rules (the phenomenon straddles the consciousness debate and the practical harms of anthropomorphism).
 
 ## Implications
 

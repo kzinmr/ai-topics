@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-08-11
+updated: 2026-08-15
 tags:
   - company
   - model
@@ -51,6 +51,7 @@ sources:
   - raw/newsletters/2026-07-30-1-billion-chatgpt-users.md
   - raw/newsletters/2026-07-30-gpt-5-6-just-made-itself-15-more-efficient.md
   - raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
+  - raw/newsletters/2026-08-14-glm-5-3-released-nobody-taught-it-to-hack.md
 ---
 
 # OpenAI
@@ -192,6 +193,14 @@ Late-July 2026 data points show ChatGPT adoption continuing to accelerate:
 - **GPT-5.6 Sol optimises itself** — OpenAI pointed Sol at the infrastructure that serves it: Sol rewrote its own GPU kernels for **20% lower serving costs** and redesigned its own draft model for **15%+ better token generation efficiency**. It also tops ARC-AGI-3 (13.3% under the official harness, which resets its reasoning each turn; fixing that and re-enabling compaction triples the score to 38.3% with 6x fewer output tokens). See [[concepts/gpt/gpt-5-6]] for full model details.
 
 Sources: [[raw/newsletters/2026-07-30-1-billion-chatgpt-users.md]], [[raw/newsletters/2026-07-30-gpt-5-6-just-made-itself-15-more-efficient.md]].
+
+### Economics Update (Aug 2026)
+
+- **On track to clear $40B in annualized revenue** — Bloomberg reported (Aug 14, 2026) that OpenAI is on track to clear **$40B annualized revenue, roughly double its run rate at the end of 2025**. The company declined to comment.
+- **IPO paperwork**: OpenAI and [[entities/anthropic|Anthropic]] have **both filed confidential paperwork to go public**; the two labs are fighting for business customers. This updates the May 2026 IPO outlook above (which had targeted 2027, citing internal controls).
+- **Competitive context**: The revenue surge follows the July 2026 acceleration (July revenue beat all of Q2) and the broader consumer/agentic adoption wave documented above.
+
+Source: [[raw/newsletters/2026-08-14-glm-5-3-released-nobody-taught-it-to-hack.md]] (Superintel+, citing Bloomberg).
 
 
 ### OpenAI Reorganization — Unifying ChatGPT and Codex (May 2026)

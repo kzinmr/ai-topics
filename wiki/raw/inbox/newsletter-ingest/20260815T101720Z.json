@@ -1,0 +1,117 @@
+{
+  "triage_timestamp": "2026-08-15T10:17:20Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletter_count": 5,
+  "newsletters": [
+    {
+      "subject": "Ben's session #2",
+      "date": "2026-08-14",
+      "source": "Ben's Bites (substack, publication_id=4379299)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-14-ben-s-session-2.md",
+      "main_article_url": "https://www.bensbites.com/p/bens-session-2",
+      "classification": "high",
+      "reason": "Ben's Bites 'Session #2' format — AI industry curated content with embedded charts/images. All 20 links in the digest are image embeds or engagement links within the same article (no external article links). Ben's Bites is a mainstream AI newsletter covering industry trends.",
+      "wiki_relevance": ["entities/ben-tossell", "entities/bens-bites"],
+      "external_links_count": 0,
+      "external_links_note": "All non-main URLs are image embeds (substack-post-media S3) or Substack engagement links (like/comment/share). No external articles to resolve.",
+      "action": "ingest_main_article"
+    },
+    {
+      "subject": "People are grieving their AI",
+      "date": "2026-08-14",
+      "source": "The Signal (substack, publication_id=293154, author @alexbanks)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-14-people-are-grieving-their-ai.md",
+      "main_article_url": "https://thesignal.substack.com/p/people-are-grieving-their-ai",
+      "classification": "high",
+      "reason": "Explores emotional bonds people form with AI systems — directly relevant to AI safety, anthropomorphism, and AI-human interaction concepts. Resolved external links include: Tamagotchi effect Wikipedia page, academic paper on Roomba and ubicomp (Georgia Tech), arXiv paper 2310.13548, and Forbes article 'ChatGPT users mourned the loss of GPT-5's predecessor'. Strong conceptual relevance for wiki.",
+      "wiki_relevance": ["concepts/ai-safety", "concepts/ai-alignment", "entities/chatgpt"],
+      "external_links_count": 4,
+      "external_links_resolved": [
+        "https://faculty.cc.gatech.edu/~hic/hic-papers/Roomba-Ubicomp.pdf",
+        "https://en.wikipedia.org/wiki/Tamagotchi_effect",
+        "https://arxiv.org/abs/2310.13548",
+        "https://www.forbes.com/sites/richardnieva/2025/08/08/chatgpt-users-mourned-the-loss-of-gpt-5s-predecessor/"
+      ],
+      "action": "ingest_main_article_and_follow_links"
+    },
+    {
+      "subject": "🐛 GLM-5.3 Released: Nobody Taught It To Hack",
+      "date": "2026-08-14",
+      "source": "beehiiv newsletter (unknown publication)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-14-glm-5-3-released-nobody-taught-it-to-hack.md",
+      "main_article_url": null,
+      "classification": "critical",
+      "reason": "Major model release: GLM-5.3 from Zhipu AI (THUDM/ChatGLM). Title suggests focus on emergent safety properties ('nobody taught it to hack'). GLM is one of China's leading model families. This is a significant frontier model release event. All 20 links are beehiiv tracking URLs behind Cloudflare challenge — cannot resolve programmatically.",
+      "wiki_relevance": ["entities/zhipu-ai", "entities/glm", "events/glm-5-3-release", "concepts/ai-safety", "concepts/chinese-ai-labs"],
+      "external_links_count": 20,
+      "external_links_note": "All 20 links are beehiiv tracking URLs (link.mail.beehiiv.com) returning 403 Cloudflare challenge. Cannot resolve programmatically — will need manual browser resolution or alternative approach.",
+      "action": "follow_redirects_and_ingest_high_priority"
+    },
+    {
+      "subject": "GLM-5.3: How Chinese labs keep stride with the frontier",
+      "date": "2026-08-14",
+      "source": "Interconnects (substack, publication_id=48206, author Nathan Lambert)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-14-glm-5-3-how-chinese-labs-keep-stride-with-the-frontier.md",
+      "main_article_url": "https://www.interconnects.ai/p/glm-53-how-chinese-labs-keep-stride",
+      "classification": "critical",
+      "reason": "Deep analysis of GLM-5.3 and Chinese AI lab strategy by Nathan Lambert (prominent AI researcher, Interconnects blog). Most substantive content of this batch. Resolved links include: official Zhipu AI blog (z.ai/blog/glm-5.3), multiple arXiv papers on GLM model family (2103.10360, 2210.02414, 2406.12793), Hugging Face repos (glm-10b, glm-130b, chatglm-6b), and GLM university blog. Rich source material for wiki enrichment.",
+      "wiki_relevance": ["entities/zhipu-ai", "entities/glm", "entities/nathan-lambert", "entities/interconnects", "concepts/chinese-ai-labs", "events/glm-5-3-release"],
+      "external_links_count": 10,
+      "external_links_resolved": [
+        "https://z.ai/blog/glm-5.3",
+        "https://arxiv.org/abs/2103.10360",
+        "https://huggingface.co/zai-org/glm-10b",
+        "https://arxiv.org/abs/2210.02414",
+        "https://arxiv.org/abs/2406.12793",
+        "https://huggingface.co/THUDM/glm-130b",
+        "https://university.chatglm.cn/blog",
+        "https://huggingface.co/zai-org/chatglm-6b"
+      ],
+      "action": "ingest_main_article_and_follow_links_high_priority"
+    },
+    {
+      "subject": "Grok Bot.",
+      "date": "2026-08-14",
+      "source": "AI by Aakash (substack, publication_id=5747120, author Aakash Gupta)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-14-grok-bot.md",
+      "main_article_url": "https://www.aibyaakash.com/p/grok-bot",
+      "classification": "high",
+      "reason": "Analysis of Grok Bot from AI by Aakash newsletter. Resolved links include: X/Twitter post by Aakash Gupta (status/2046725431374877005), 'How Cursor Grows' article, and reference to Claude Skills article. Relevant to xAI/Grok entity and AI bot implementations.",
+      "wiki_relevance": ["entities/xai", "entities/grok", "entities/aakash-gupta"],
+      "external_links_count": 3,
+      "external_links_resolved": [
+        "https://x.com/aakashgupta/status/2046725431374877005",
+        "https://www.news.aakashg.com/p/how-cursor-grows",
+        "https://www.aibyaakash.com/p/claude-skills-7-laws"
+      ],
+      "action": "ingest_main_article_and_follow_links"
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 3,
+    "low": 0,
+    "total_newsletters": 5,
+    "total_external_links_resolved": 17,
+    "total_external_links_unresolved": 20,
+    "primary_themes": [
+      "GLM-5.3 model release (Zhipu AI / THUDM)",
+      "Chinese AI lab strategy and frontier model competition",
+      "AI-human emotional attachment and grief",
+      "Grok Bot analysis",
+      "AI industry session/roundup (Ben's Bites)"
+    ],
+    "recommended_wiki_updates": [
+      "Create/update event page: events/glm-5-3-release (CRITICAL — two newsletters covering same release)",
+      "Create/update entity: entities/zhipu-ai (GLM-5.3 release, Chinese AI lab)",
+      "Create/update entity: entities/glm (new model version 5.3, model family history)",
+      "Create/update entity: entities/nathan-lambert (Interconnects blog author)",
+      "Create/update entity: entities/interconnects (Nathan Lambert's blog)",
+      "Update entity: entities/xai (Grok Bot analysis)",
+      "Update entity: entities/grok (Grok Bot article)",
+      "Consider concept page: concepts/chinese-ai-labs (GLM-5.3 coverage suggests growing importance)",
+      "Review and ingest external articles from People are grieving their AI (AI safety angle)"
+    ],
+    "duplicate_coverage": "GLM-5.3 appears in two newsletters (#3 beehiiv, #4 Interconnects/Nathan Lambert) — prioritize Interconnects article for richer source material with resolved links"
+  }
+}

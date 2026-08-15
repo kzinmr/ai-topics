@@ -2933,7 +2933,7 @@
 - [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
 - [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft
 - [[events/2026-07-08-openai-gpt-live]] — OpenAI GPT-Live: real-time voice model with GPT-5.5 delegation (July 8); full-duplex redesign (Aug 2026)
-- [[events/grok-4-6-launch]] — xAI releases Grok 4.6 (frontier price/performance, AA Intelligence Index 61, $2/$6 per M pricing, AA-Briefcase Elo 1577) + Grok Bot AI teammates (Aug 13; enriched with Superintel+ pricing & Ben's Bites hands-on Aug 14)
+- [[events/grok-4-6-launch]] — xAI releases Grok 4.6 (frontier price/performance, AA Intelligence Index 61, $2/$6 per M pricing, AA-Briefcase Elo 1577) + Grok Bot AI teammates (Aug 13; enriched with Superintel+ pricing & Ben's Bites hands-on Aug 14; Aug 14 follow-ups: file-and-folder agent architecture, $60B Cursor acquisition closed, Aakash review)
 - [[events/grok-4-5-launch]] — SpaceXAI launches Grok 4.5, first Opus-class coding & agents model co-trained with Cursor (July 9)
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan
 - [[events/2026-06-24-qualcomm-acquires-modular]] — Qualcomm Acquires Modular — Qualcomm acquires AI infrastructure startup Modular (~$4B); implications for Mojo language, MAX platform, and AI chip-software consolidation; 238 HN pts, 125 comments (June 24, 2026)
