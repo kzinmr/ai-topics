@@ -2,6 +2,11 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-15] dreaming wiki-ingest | confirmation — upstream dreaming-group already committed enrichment
+- Upstream dreaming-group (18:00 UTC) committed `80bc3d3a` before its JSON render failed: [[concepts/agent-experience]] (Pinecone AX API design principles) and [[entities/harvey]] (Review Table post-training) already enriched; 10 decisions archived.
+- Triage JSON Takes=0 is the intended post-enrichment state (2 refs, 9 skips). No downstream enrichment performed.
+
+
 ## [2026-08-15] dreaming | Pattern E saturation — 2 references enriched, 9 skips archived
 - **Takes=0, References=2, Skips=9.** RSS/newsletter 0 articles. 218 raw articles on disk; 12 never-archived candidates from Aug 14-15 sitemap batch screened.
 - Daily pipelines already comprehensive: active-crawl (5 new concept pages), newsletter-wiki-ingest (1 take + 4 refs), blog-wiki-ingest (1 take + 5 refs), raw-backlog-ingest (2 enrichments).
