@@ -2,6 +2,19 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-15] raw-backlog-ingest | duplicate batch - all 5 candidates already processed (14:00 run)
+
+- Batch: raw-backlog-collect 20260815T180932Z (ai-hint sort, 5 candidates) - IDENTICAL to batch 20260815T140004Z processed in commit 228fadbd (2 entity enrichments + 3 already-captured skips).
+- Re-verified each candidate's wiki coverage; no page changes made this run:
+  - fireworks-ai_kimi-qkclip - captured: entities/fireworks-ai (MLA/QK-Clip Technical Explainer section), entities/kimi (QK-Clip), concepts/attention-mechanism-variants (QK-Clip subsection).
+  - harvey_how-to-choose-best-legal-ai-platform - captured: entities/harvey (How to Choose the Right Legal AI Platform, Apr 2026).
+  - glean_retrieval-augemented-generation-vs-fine-tuning - captured: entities/glean (RAG vs Fine-Tuning Guide, Feb 2026).
+  - minimaxir.com write-better-code - captured: entities/minimaxir-com (The "Write Better Code" Iterative Prompting Experiment, Jan 2025).
+  - ashvardanian parsing-json-with-allocators-cpp - captured: entities/ash-vardanyan (Parsing JSON in C & C++: Singleton Tax, Jan 2025).
+- Pipeline note: raw_backlog_collect re-selects take-processed raw files (archive_status not_archived; registry tracks archive/skip only). Consider marking take-processed files in the processed registry to avoid repeat batches.
+
+---
+
 ## [2026-08-15] watchdog | auto-fix samuelcolvin.md malformed YAML frontmatter
 
 - Fixed `tags: []type: entity` merged on one line in `entities/samuelcolvin.md` (redirect stub) — split into `tags: []` + `type: entity`. YAML now parses cleanly.
