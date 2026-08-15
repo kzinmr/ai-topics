@@ -1,0 +1,128 @@
+{
+  "archived_at": "2026-08-15T18:15:23.805905+00:00",
+  "triage_run_id": "20260815T181143Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E饱和シナリオ(2026-08-15)。RSS/newsletter記事0件、218件のraw記事中12件が未アーカイブ。本日のパイプライン(active-crawl 5ページ作成、newsletter-wiki-ingest 1 take + 4 refs、blog-wiki-ingest 1 take + 5 refs、raw-backlog 2 enrichments)でほぼ完全カバー。新規サブスタント記事2件をreference特定(Pinecone AX実装ガイド、Harvey×Applied Compute報酬設計)。Takes=0, References=2, Skips=9。",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-pinecone-agent-friendly-apis",
+      "source": "dreaming",
+      "source_name": "",
+      "title": "Designing Agent-Friendly APIs",
+      "url": "https://www.pinecone.io/blog/designing-agent-friendly-apis/",
+      "raw_path": "~/wiki/raw/articles/2026-08-15_pinecone_designing-agent-friendly-apis.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Pinecone社Joerg SchadによるAX実装ガイド。6つの原則(Errors are guidance, Budget context, Self-description, Safe at machine tempo, Human-in-the-loop auth, Curated agent surface)、TTFSC(Turns-to-first-successful-call)指標、Claude Sonnet 5でのコールドトライアル結果(median 6 turns, $0.30/run)を詳述。concepts/agent-experience.md(102行)はAX概念の概要だが、Pineconeの具体的な設計原則・測定指標・コールドトライアル実験は未カバー。エンリッチ候補。",
+      "candidate_wiki_path": "concepts/agent-experience.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-harvey-frontier-review-table-training",
+      "source": "dreaming",
+      "source_name": "",
+      "title": "Training Frontier Review Table Models With Applied Compute",
+      "url": "https://www.harvey.ai/blog/training-frontier-review-table-models-with-applied-compute",
+      "raw_path": "~/wiki/raw/articles/2026-08-15_harvey_training-frontier-review-table-models-with-applied-compute.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Harvey×Applied Computeの共同技術ブログ。Review Table製品向けポストトレーニング詳細: 合成データパイプライン(AC2 Agent Cloud)、複合報酬関数(answer correctness + citation quality + format compliance + abstention)、コスト-品質パレフロンティア改善。entities/harvey.mdはApplied Compute方法論(June 2026)を概説しているが、報酬設計の具体的構造・合成データ生成フロー・パフォーマンス数値は未カバー。エンリッチ候補。",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-bonkio-already-covered",
+      "source": "dreaming",
+      "source_name": "",
+      "title": "Training a Reinforcement Learning Model to Play Bonk.io",
+      "url": "https://blog.pixelmelt.dev/training-a-reinforcement-learning-model-to-play-bonk-io/",
+      "raw_path": "~/wiki/raw/articles/blog.pixelmelt.dev--training-a-reinforcement-learning-model-to-play-bonk-io--dbec950e.md",
+      "recommended_action": "skip",
+      "reason_ja": "既処理: blog-wiki-ingest(2026-08-15)がentities/cats-with-power-tools.mdにLLM-Assisted Code Portingセクションを追加済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-harvey-contract-redlining",
+      "source": "dreaming",
+      "source_name": "",
+      "title": "Contract Redlining Fundamentals for Legal Teams",
+      "url": "https://www.harvey.ai/blog/contract-redlining",
+      "raw_path": "~/wiki/raw/articles/2026-08-15_harvey_contract-redlining.md",
+      "recommended_action": "skip",
+      "reason_ja": "製品ガイド: Harvey社の契約赤入れワークフロー解説。two-party problem、review vs negotiationの圧縮差異(2h→15min Talanx事例)を論じるが、entities/harvey.mdの既存カバレッジ(Bridgewater事例、Applied Compute方法論)と重複。戦略的示唆は薄い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-harvey-contract-redlining-software",
+      "source": "dreaming",
+      "source_name": "",
+      "title": "Contract Redlining Software",
+      "url": "https://www.harvey.ai/blog/contract-redlining-software",
+      "raw_path": "~/wiki/raw/articles/2026-08-15_harvey_contract-redlining-software.md",
+      "recommended_action": "skip",
+      "reason_ja": "製品ページ: Harvey Contract Redlining Software機能紹介。技術的深度なし。上記fundamentals記事と同一トピック。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-harvey-audio-video",
+      "source": "dreaming",
+      "source_name": "",
+      "title": "Audio, Video, and Image Understanding",
+      "url": "https://www.harvey.ai/blog/audio-video-image-understanding",
+      "raw_path": "~/wiki/raw/articles/2026-08-15_harvey_audio-video-image-understanding.md",
+      "recommended_action": "skip",
+      "reason_ja": "製品機能紹介: Harveyのマルチモーダル文書理解機能。entities/harvey.mdに既存のVault/ドキュメント分析機能カバレッジと重複。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-harvey-nic-becker",
+      "source": "dreaming",
+      "source_name": "",
+      "title": "Nic Becker (Author Page)",
+      "url": "https://www.harvey.ai/blog/author/nic-becker",
+      "raw_path": "~/wiki/raw/articles/2026-08-15_harvey_nic-becker.md",
+      "recommended_action": "skip",
+      "reason_ja": "著者プロフィールページ。記事コンテンツなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-harvey-stephen-rice",
+      "source": "dreaming",
+      "source_name": "",
+      "title": "Stephen Rice (Author Page)",
+      "url": "https://www.harvey.ai/blog/author/stephen-rice",
+      "raw_path": "~/wiki/raw/articles/2026-08-15_harvey_stephen-rice.md",
+      "recommended_action": "skip",
+      "reason_ja": "著者プロフィールページ。記事コンテンツなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-parallel-web-thin",
+      "source": "dreaming",
+      "source_name": "",
+      "title": "Always-On Agents Monitor API",
+      "url": "https://parallel.ai/blog/always-on-agents-monitor-api",
+      "raw_path": "~/wiki/raw/articles/2026-08-15_parallel-web-systems_always-on-agents-monitor-api.md",
+      "recommended_action": "skip",
+      "reason_ja": "薄い記事(491 bytes)。Parallel Web SystemsのモニタリングAPI短報。技術的深度なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-factory-guild-thin",
+      "source": "dreaming",
+      "source_name": "",
+      "title": "Factory Guild",
+      "url": "https://factory.ai/news/factory-guild",
+      "raw_path": "~/wiki/raw/articles/2026-08-15_factory_factory-guild.md",
+      "recommended_action": "skip",
+      "reason_ja": "薄い記事(627 bytes)。Factory Guildの短報。技術的深度なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

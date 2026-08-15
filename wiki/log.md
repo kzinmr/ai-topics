@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-15] dreaming | Pattern E saturation — 2 references enriched, 9 skips archived
+- **Takes=0, References=2, Skips=9.** RSS/newsletter 0 articles. 218 raw articles on disk; 12 never-archived candidates from Aug 14-15 sitemap batch screened.
+- Daily pipelines already comprehensive: active-crawl (5 new concept pages), newsletter-wiki-ingest (1 take + 4 refs), blog-wiki-ingest (1 take + 5 refs), raw-backlog-ingest (2 enrichments).
+- **[[concepts/agent-experience]]** +Pinecone AX API Design Principles (Joerg Schad, Aug 12): 6 principles (errors-as-guidance, token-budget-aware responses, self-description endpoints, machine-tempo safety, delegation-native auth, curated agent surfaces); TTFSC metric; Claude Sonnet 5 cold-trial (median 6 turns, $0.30/run). updated: 2026-08-15.
+- **[[entities/harvey]]** +Review Table Post-Training (Harvey x Applied Compute, Aug 14): synthetic dataset via AC2 Agent Cloud, composite reward function (correctness + citation + format + abstention), outperforms cost-quality Pareto frontier. updated: 2026-08-15.
+- Archive: 11 candidates, 10 newly archived (1 dedup), total 2,705 URLs.
+
+
 ## [2026-08-15] raw-backlog-ingest | duplicate batch - all 5 candidates already processed (14:00 run)
 
 - Batch: raw-backlog-collect 20260815T180932Z (ai-hint sort, 5 candidates) - IDENTICAL to batch 20260815T140004Z processed in commit 228fadbd (2 entity enrichments + 3 already-captured skips).

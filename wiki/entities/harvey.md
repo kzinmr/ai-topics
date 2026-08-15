@@ -36,6 +36,7 @@ sources:
   - raw/articles/2026-05-10_harvey_ai-due-diligence-for-m-and-a.md
   - raw/articles/2026-06-19_harvey_legal-tech.md
   - raw/articles/2026-06-19_harvey_contract-review-process.md
+  - raw/articles/2026-08-15_harvey_training-frontier-review-table-models-with-applied-compute.md
 ---
 
 # Harvey
@@ -294,6 +295,19 @@ Harvey published its methodology for training domain-specific legal AI agents un
 This represents a broader trend of **vertical AI agent training** — companies with deep domain expertise building their own agent training pipelines rather than relying on frontier model APIs alone. Harvey's approach mirrors what coding agent companies (Cognition, Cursor) have done for software engineering, but applied to legal reasoning.
 
 Source: [Training a Legal Agent — Harvey Blog](https://www.harvey.ai/blog/training-a-legal-agent-with-applied-compute)
+
+### Review Table Post-Training (August 2026)
+
+Harvey and Applied Compute published details of their **specialized model for Review Table** — Harvey's highest inference-volume production workload. Review Table enables lawyers to upload up to 10,000 files, write questions per document, and receive structured grids of answers with citations.
+
+**Technical approach:**
+- **Synthetic dataset** via Applied Compute Agent Cloud (AC2): scraped open-source legal data (filings, contracts, emails) with metadata/embeddings for provenance, content, filetype, and length. Oracle agents with full tool access determined ground-truth answers, including abstention cases. Multiple rounds of human expert quality control.
+- **Composite reward function** grading per-cell across multiple dimensions: (1) identify correct document sections, (2) answer correctness (or abstain), (3) format compliance per user specifications, (4) correct value with correct citation evidence.
+- **Result**: Post-trained model outperforms the cost-quality Pareto frontier on Review Table tasks. Evaluated at minimal reasoning effort to meet product latency requirements. At production scale (hundreds of thousands of model calls per table), small per-call improvements compound into meaningful product-level gains.
+
+This extends the June 2026 Applied Compute methodology — the earlier post described the general framework; this post demonstrates it applied to a specific high-volume production workload with concrete reward engineering.
+
+Source: [Training Frontier Review Table Models — Harvey Blog](https://www.harvey.ai/blog/training-frontier-review-table-models-with-applied-compute)
 
 ## Legal Operations Management Guide (June 2026)
 
