@@ -2,6 +2,18 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-16] dreaming | Saturation pass — 0 articles collected, 8 filesystem probe articles all already covered
+
+- **Checkpoint**: `total_articles: 0`, `recent_raw_articles: 218`, range 2026-08-09 to 2026-08-16
+- **Pattern E probe**: 8 never-archived articles found via `check_archive_index_absence.py`
+  - 4 already processed by today's active-crawl: DeepSeek V4-Pro GA pricing, LittleLearner curriculum, Anthropic multiagent patterns, Anthropic CRI benchmark
+  - 2 already covered by prior enrichment: Max Rumpf entity, Hex DataBench benchmark
+  - 2 non-AI content (retro hardware/history): IBM PC printer, Commodore Amiga
+- **Prior triage carried forward**: 11 decisions (2 references, 9 skips) from prior cycle
+- **Combined decisions**: 19 total, 0 takes, 0 references, 19 skips
+- **Archive**: 19 candidates, 6 newly archived, 13 dedup-skipped (total index: 2737 URLs)
+- **Wiki changes**: None — all candidates verified as already covered with specific page/line references
+
 ## [2026-08-16] raw-backlog-ingest | Mistral vLLM UCX leak case study + Dan Abramov Open Social + PG classic essays + Probably Dance entity
 
 - **Enriched: [[concepts/vllm]]** — Added "Disaggregated Serving Memory Leak: UCX mmap Hook Case Study (Jan 2026)" section: 400 MB/min RSS leak in P/D disaggregated serving with NIXL; debugging ladder (Memray/Guppy -> Heaptrack -> pmap -> BPFtrace -> GDB conditional breakpoints); root cause = UCX GOT-patching mmap hook for RCache + unbounded invalidation queue (UCX_RCACHE_MAX_UNRELEASED=inf); fix UCX_MEM_MMAP_HOOK_MODE=none; Mistral fix merged into vLLM. Source: raw/articles/2026-05-10_mistral-ai_debugging-memory-leak-in-vllm.md.

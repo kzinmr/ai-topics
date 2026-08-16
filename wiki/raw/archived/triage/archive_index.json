@@ -52,6 +52,7 @@
     "https://aleph-alpha.com/en/blog/model-training-as-code/",
     "https://alexzhang13.github.io/blog/2026/harness/",
     "https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/",
+    "https://alignment.anthropic.com/2026/conceptual-reasoning-index/",
     "https://alignment.openai.com/beneficial-rl/",
     "https://allenpike.com/2025/why-is-chatgpt-so-good-claude/",
     "https://anildash.com/2026/06/23/fight-ai-platform-war/",
@@ -74,6 +75,7 @@
     "https://anyscale.com/blog/ray-train-data-dashboard",
     "https://anyscale.com/blog/streaming-distributed-execution-across-cpus-and-gpus",
     "https://apertus.ai",
+    "https://api-docs.deepseek.com/news/news260813/",
     "https://apnews.com/article/greece-germany-ryanair-passenger-457c424f541152af1becdb387c90cfdd",
     "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim",
     "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
@@ -674,6 +676,7 @@
     "https://hex.tech/blog/data-science-maturity/",
     "https://hex.tech/blog/data-transformation/",
     "https://hex.tech/blog/data-visualization-techniques",
+    "https://hex.tech/blog/databench-agentic-analytics-benchmark/",
     "https://hex.tech/blog/effective-context-engineering-for-ai-agents/",
     "https://hex.tech/blog/etl-pipeline",
     "https://hex.tech/blog/evals",
@@ -968,6 +971,7 @@
     "https://link.mail.beehiiv.com/v2/c/b1b7daf95c9a94b09e5d1a85cf16904c0429d67fbd35d1e2e673606ff0614acd237ddd62cb89ad9455ffb9ea6882148de847378b0140c698cc1b79f3ae992e61226d6df7454513a740f83f54b68d7ee58f83bf2809c5bf2be9a76ea7996ee01017fe2d45214b421ef862853c340d14a304054940ff048c793fd5abdd9f47778d2970bf76284d12f2f75eee157e0f0bd4336b9b390543342bda28155bea0a6d28/c7399ca6de579887",
     "https://link.mail.beehiiv.com/v2/c/d0b2a6396c23b80481c9e484243aa0835e187dc4fc04fa5bacac2100b2ce2bf4b4baacb1c933b32bb59cb30b52f23ef0d0b2fa53926c5a8b2cd55ce559d910c13222959b5d445afa734b14e8e63f183348dc61233fc850399cee34eb5796191cb41d66d5b36849bd68d6a6e4a6f1a6d5e5e1136575be3ea8409f492feed6af8f9eb412f0f1a883f6f81bff89525e948a91ae3644346c34f871586ba37a4a5f67/1be775df1da8879f",
     "https://link.mail.beehiiv.com/v2/c/f52a5de100eaa5894a10c2cfb3ac23ee77b46d58cc5d72c92302198b2cb3b9f464ecf300456b2e57e47948c47a047c2ed21962a83c52d430299630b5703d274a390fdc77a35a91c16bf56c9af0b83e8678e5e7b15bccb815f144f36a5eb75bdfbc3bb1c18fd9a1a465ee0375bc5116fde983977050654a72d51c6cbf8141427f3e9387d8299478a267bd7fbc25902aa473b36d1bb3cc724658562d63b92385f0/e20712002762b699",
+    "https://littlelearner-ll.github.io/",
     "https://lucumr.pocoo.org/2026/5/24/pi-oss/",
     "https://lucumr.pocoo.org/2026/5/26/clankers/",
     "https://lucumr.pocoo.org/2026/6/10/gaslighting/",
@@ -1048,6 +1052,7 @@
     "https://maurycyz.com/projects/glass/2/",
     "https://maurycyz.com/projects/glass/3/",
     "https://maven.com/will-brown-kyle-corbitt/agents-mcp-rl",
+    "https://maxrumpf.com/writing/2026-07-04-only-one-superintelligence.html",
     "https://micahflee.com/agentic-coding-techniques/",
     "https://micahflee.com/mandatory-update-a-short-story/",
     "https://micahflee.com/practical-defenses-against-technofascism/",
@@ -2150,6 +2155,7 @@
     "https://www.anthropic.com/news/when-ai-builds-itself",
     "https://www.anthropic.com/research/agentic-misalignment",
     "https://www.anthropic.com/research/global-workspace",
+    "https://www.anthropic.com/research/multiagent-systems",
     "https://www.anthropic.com/research/project-fetch-phase-two",
     "https://www.anyscale.com/blog/fast-flexible-scalable-data-loading-for-ml-training-with-ray",
     "https://www.anyscale.com/blog/rag-at-scale-10x-cheaper-embedding-computations-with-anyscale",
@@ -2732,5 +2738,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-16T10:35:09.373814+00:00"
+  "updated": "2026-08-16T18:10:49.512830+00:00"
 }

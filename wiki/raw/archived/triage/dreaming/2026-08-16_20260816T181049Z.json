@@ -1,0 +1,50 @@
+{
+  "archived_at": "2026-08-16T18:10:49.512228+00:00",
+  "triage_run_id": "20260816T181049Z",
+  "source": "dreaming",
+  "summary_ja": "Saturation pass: 0 articles collected, 8 filesystem probe articles all already covered by today's pipelines (active-crawl, blog-ingest, prior enrichment). 11 prior decisions carried forward.",
+  "decisions": [
+    {
+      "title": "DeepSeek V4-Pro GA peak/offpeak pricing",
+      "url": "https://api-docs.deepseek.com/news/news260813/",
+      "recommended_action": "skip",
+      "reason_ja": "active-crawl today: concepts/deepseek-v4.md exists",
+      "source": "dreaming"
+    },
+    {
+      "title": "LittleLearner curriculum exposure",
+      "url": "https://littlelearner-ll.github.io/",
+      "recommended_action": "skip",
+      "reason_ja": "active-crawl today: concepts/little-learner-llm.md exists",
+      "source": "dreaming"
+    },
+    {
+      "title": "Anthropic multiagent systems patterns and problems",
+      "url": "https://www.anthropic.com/research/multiagent-systems",
+      "recommended_action": "skip",
+      "reason_ja": "concepts/multi-agents/multi-agent-systems.md already covers Aug 13 post",
+      "source": "dreaming"
+    },
+    {
+      "title": "Anthropic Conceptual Reasoning Index (CRI)",
+      "url": "https://alignment.anthropic.com/2026/conceptual-reasoning-index/",
+      "recommended_action": "skip",
+      "reason_ja": "concepts/ai-benchmarks/conceptual-reasoning-index.md created today",
+      "source": "dreaming"
+    },
+    {
+      "title": "Max Rumpf: Only One Superintelligence",
+      "url": "https://maxrumpf.com/writing/2026-07-04-only-one-superintelligence.html",
+      "recommended_action": "skip",
+      "reason_ja": "entities/max-rumpf.md exists",
+      "source": "dreaming"
+    },
+    {
+      "title": "Hex DataBench agentic analytics benchmark",
+      "url": "https://hex.tech/blog/databench-agentic-analytics-benchmark/",
+      "recommended_action": "skip",
+      "reason_ja": "entities/hex-technologies.md + concepts/ai-benchmarks/databench.md both exist",
+      "source": "dreaming"
+    }
+  ]
+}
