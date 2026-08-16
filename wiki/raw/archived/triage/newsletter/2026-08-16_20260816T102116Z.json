@@ -1,0 +1,140 @@
+{
+  "archived_at": "2026-08-16T10:35:09.373167+00:00",
+  "triage_run_id": "20260816T102116Z",
+  "source": "newsletter",
+  "summary_ja": "2ニュースレターを処理。1) Latent Space「React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue」（uid=508、pub 1084089）: Fred SchottのFlue 2安定版（React流hooks基盤、16ビルトインフック、Pi上構築）をMacManusがインタビュー。entities/flue.mdとentities/fred-schott.mdはともに2026年5月のv1情報のみで、Flue 2詳細は未収録のため既存ページ更新1件（take）。2) Superintel+「Nobody Built a Bigger Model」（uid=509、beehiiv v2/c追跡URLがread.getsuperintel.comへ解決）: GLM-5.3のpost-training深掘り。concepts/glm-5-3.mdはベンチマーク数値を網羅済みだが、post-training経済学の枠組み（same-base純post-training、ドメイン別能力製造、post-training compute>pre-training compute告白）は新角度のためreference。残りはsubstack/beehiivノイズで全てskip（UIリンク、OAuth/UUID追跡、作者プロフィール、重複、追跡ピクセル）。",
+  "decisions": [
+    {
+      "item_id": "<20260815.191210.5da2d23d@mta19>-1",
+      "source": "newsletter",
+      "source_name": "Superintel+ (getsuperintel.com, beehiiv uid=509)",
+      "title": "Nobody Built a Bigger Model (GLM-5.3 post-training deepdive)",
+      "url": "https://read.getsuperintel.com/p/nobody-built-a-bigger-model",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-nobody-built-a-bigger-model.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ ★★★☆☆ Superintel+（uid=509、beehiiv v2/c追跡URLからread.getsuperintel.comへ解決成功）のGLM-5.3深掘り。本文で「GLM-5.3はGLM-5.2と同じ743Bベースモデルの上にpost-trainingのみで登場」「Terminal-Bench 3.0は4.6→28.3」「post-trainingが今や主役」「capabilityはドメイン単位で製造される」「post-training computeがpre-training computeを超えたと認めた企業が1社ありその曲線を公開」「これが機能しなくなる3つの壁」と具体的主張を展開（後半はペイウォール）。concepts/glm-5-3.mdはベンチマーク数値（Terminal-Bench 4.6→28.3含む）を既に網羅済みだが、post-training経済学の枠組み（same-base純post-trainingアップグレードの意味、能力のドメイン別製造）はページに未収録の新角度。GLM-5.3ページのPost-Training節への補足参照として価値あり。",
+      "candidate_wiki_path": "concepts/glm-5-3.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** Nobody Built a Bigger Model\n**Collected:** 2026-08-16T10:21:15.616303+00:00\n**Articles linked:** 19\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/b572e097fe5987d617c7b529d7bdb20adb3e53ae7d3eb73017c948a6e542bb5e609ce3cc0a661247c6d71a41473bd60de"
+    },
+    {
+      "item_id": "<20260815154623.3.179672023ad963f5@mg-d0.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx / AINews, pub 1084089)",
+      "title": "Link 1",
+      "url": "https://substack.com/redirect/2/eyJlIj...rtW4?",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-react-for-agents-astro-creator-brings-hooks-to-his-meta-harness-flue.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ OAuthリダイレクト（base64トークン、メールセッション認証必須）— 解決不可。記事本文は投稿ページに全収録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue\n**Collected:** 2026-08-16T10:21:14.314694+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91d"
+    },
+    {
+      "item_id": "<20260815154623.3.179672023ad963f5@mg-d0.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx / AINews, pub 1084089)",
+      "title": "Link 3 (author @ricmac)",
+      "url": "https://substack.com/@ricmac",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-react-for-agents-astro-creator-brings-hooks-to-his-meta-harness-flue.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 作者プロフィール（Richard MacManus）— 記事本文はメイン投稿で取得済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue\n**Collected:** 2026-08-16T10:21:14.314694+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91d"
+    },
+    {
+      "item_id": "<20260815154623.3.179672023ad963f5@mg-d0.substack.com>-4",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx / AINews, pub 1084089)",
+      "title": "Link 4 (like)",
+      "url": "https://substack.com/app-link/post?...submitLike=true...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-react-for-agents-astro-creator-brings-hooks-to-his-meta-harness-flue.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ いいねボタンUIリンク — ノイズ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue\n**Collected:** 2026-08-16T10:21:14.314694+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91d"
+    },
+    {
+      "item_id": "<20260815154623.3.179672023ad963f5@mg-d0.substack.com>-5",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx / AINews, pub 1084089)",
+      "title": "Link 5 (comments)",
+      "url": "https://substack.com/app-link/post?...comments=true...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-react-for-agents-astro-creator-brings-hooks-to-his-meta-harness-flue.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ コメントセクションリンク — ノイズ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue\n**Collected:** 2026-08-16T10:21:14.314694+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91d"
+    },
+    {
+      "item_id": "<20260815154623.3.179672023ad963f5@mg-d0.substack.com>-6",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx / AINews, pub 1084089)",
+      "title": "Link 6 (share)",
+      "url": "https://substack.com/app-link/post?...action=share...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-react-for-agents-astro-creator-brings-hooks-to-his-meta-harness-flue.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ シェアリンク — ノイズ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue\n**Collected:** 2026-08-16T10:21:14.314694+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91d"
+    },
+    {
+      "item_id": "<20260815154623.3.179672023ad963f5@mg-d0.substack.com>-7",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx / AINews, pub 1084089)",
+      "title": "Link 7 (restack)",
+      "url": "https://open.substack.com/pub/swyx/p/flue-2?action=restack-comment...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-react-for-agents-astro-creator-brings-hooks-to-his-meta-harness-flue.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ restackコメントUI — ノイズ。投稿URL自体はメイン記事で取得済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue\n**Collected:** 2026-08-16T10:21:14.314694+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91d"
+    },
+    {
+      "item_id": "<20260815154623.3.179672023ad963f5@mg-d0.substack.com>-8",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx / AINews, pub 1084089)",
+      "title": "Link 8 (read-in-app)",
+      "url": "https://open.substack.com/pub/swyx/p/flue-2?...email-read-in-app",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-react-for-agents-astro-creator-brings-hooks-to-his-meta-harness-flue.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ アプリ閲覧プロンプト — ノイズ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue\n**Collected:** 2026-08-16T10:21:14.314694+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91d"
+    },
+    {
+      "item_id": "<20260815.191210.5da2d23d@mta19>-2",
+      "source": "newsletter",
+      "source_name": "Superintel+ (getsuperintel.com, beehiiv uid=509)",
+      "title": "Link 2 (duplicate)",
+      "url": "https://link.mail.beehiiv.com/v2/c/36c522.../c5f3b721aeb6aca9",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-nobody-built-a-bigger-model.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 解決先がLink 1と同一記事（read.getsuperintel.com/p/nobody-built-a-bigger-model）— 重複。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** Nobody Built a Bigger Model\n**Collected:** 2026-08-16T10:21:15.616303+00:00\n**Articles linked:** 19\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/b572e097fe5987d617c7b529d7bdb20adb3e53ae7d3eb73017c948a6e542bb5e609ce3cc0a661247c6d71a41473bd60de"
+    },
+    {
+      "item_id": "<20260815.191210.5da2d23d@mta19>-3",
+      "source": "newsletter",
+      "source_name": "Superintel+ (getsuperintel.com, beehiiv uid=509)",
+      "title": "Link 3 (author X profile)",
+      "url": "https://link.mail.beehiiv.com/v2/c/325e4c.../6a0c6a41d3a46ca7",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-nobody-built-a-bigger-model.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 解決先は@kimmonismus（Chubby Isenberg / Superintel+作者）のXプロフィール — 低wiki価値。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** Nobody Built a Bigger Model\n**Collected:** 2026-08-16T10:21:15.616303+00:00\n**Articles linked:** 19\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/b572e097fe5987d617c7b529d7bdb20adb3e53ae7d3eb73017c948a6e542bb5e609ce3cc0a661247c6d71a41473bd60de"
+    },
+    {
+      "item_id": "<20260815.191210.5da2d23d@mta19>-19",
+      "source": "newsletter",
+      "source_name": "Superintel+ (getsuperintel.com, beehiiv uid=509)",
+      "title": "Link 19 (status pixel)",
+      "url": "https://email.beehiivstatus.com/aea8019819bcd84da7a654f6fae887be4399a367/hclick",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-nobody-built-a-bigger-model.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 配信ステータス追跡ピクセル — コンテンツ価値ゼロ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-15\n**Subject:** Nobody Built a Bigger Model\n**Collected:** 2026-08-16T10:21:15.616303+00:00\n**Articles linked:** 19\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/b572e097fe5987d617c7b529d7bdb20adb3e53ae7d3eb73017c948a6e542bb5e609ce3cc0a661247c6d71a41473bd60de"
+    }
+  ]
+}
