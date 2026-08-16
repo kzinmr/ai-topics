@@ -186,7 +186,7 @@
 - [[entities/courtlistener]] — CourtListener
 - [[entities/creao]] — CreaoAI (CREAO)
 - [[entities/cursor-3]] — Cursor 3
-- [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24); Fast regex search research — client-side n-gram indexing for agent grep (Mar 2026)
+- [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24); Fast regex search research — client-side n-gram indexing for agent grep (Mar 2026); MXFP8 MoE training kernels — 3.5x MoE layer / 1.5x end-to-end speedup on Blackwell (Aug 2025)
 - [[entities/cyrilxbt]] — @cyrilxbt
 - [[entities/dan-luu]] — Software reliability engineer and data analyst known for systematic incident analysis and empirical studies of tech c... (non-AI essay catalog includes cgroup throttling + normalization of deviance, Aug 2026)
 - [[entities/dan-mcinerny]] — Dan McInerney
@@ -329,7 +329,7 @@
 - [[entities/giles-thomas]] — Giles Thomas; enriched with Part 34b (JAX GPT-2 Small) and Poppy training box hardware (July 9)
 - [[entities/gilesthomas]] — Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technica...
 - [[entities/gkisokay]] — gkisokay
-- [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons + enterprise knowledge graph cases (Aug 2026); How-to-Choose AI Agent Builder guide — no-code/low-code/framework taxonomy, weighted scoring framework (Jan 2026); RAG vs fine-tuning guide (Feb 2026); Enterprise Search Evaluation vs ChatGPT/Claude — 1.9x/1.6x correctness preference on ~280 queries, context rot framing, MCP retrospective (May 2026)
+- [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons + enterprise knowledge graph cases + knowledge-graph-vs-vector-database guide (Aug 2026); How-to-Choose AI Agent Builder guide — no-code/low-code/framework taxonomy, weighted scoring framework (Jan 2026); RAG vs fine-tuning guide (Feb 2026); Enterprise Search Evaluation vs ChatGPT/Claude — 1.9x/1.6x correctness preference on ~280 queries, context rot framing, MCP retrospective (May 2026)
 - [[entities/glimpse]] — Glimpse
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
 - [[entities/glm-5v-turbo]] — GLM-5V-Turbo
@@ -546,7 +546,7 @@
 - [[entities/mimi]] — Mimi (Kyutai)
 - [[entities/mimo]] — MiMo (Xiaomi)
 - [[entities/minimax]] — MiniMax; H3 open weights (first open model to top Artificial Analysis video ranking) + MLX port for Apple Silicon (Aug 2026)
-- [[entities/minimaxir-com]] — Max Woolf; Nano Banana prompt-engineering analysis (Nov 2025)
+- [[entities/minimaxir-com]] — Max Woolf; Nano Banana prompt-engineering analysis (Nov 2025); IMDb rating prediction via text embeddings (Jun 2025)
 - [[entities/mira-murati]] — Mira Murati
 - [[entities/mistral-ai]] — Mistral AI; Shieldstral 3B on-device safety model (Aug 2026)
 - [[entities/mistral-voxtral-tts]] — Mistral Voxtral TTS
@@ -2216,7 +2216,7 @@
 - [[concepts/mistral-workflows]] — Mistral Workflows
 - [[concepts/mit-encompass]] — MIT EnCompass - AI Agent Search Framework
 - [[concepts/mixture-of-agents]] — Mixture of Agents (MoA) — Ensemble technique where multiple LLM instances collaborate via proposer-aggregator pattern; trace-level synthesis outperforms consensus voting
-- [[concepts/mixture-of-experts]] — Mixture-of-Experts
+- [[concepts/mixture-of-experts]] — Mixture-of-Experts; kernel-level low-precision optimization (MXFP8 grouped GEMM, Cursor Aug 2025)
 - [[concepts/ml-intern]] — HuggingFace ml-intern — Autonomous ML Engineer Agent
 - [[concepts/ml-research-practice]] — ML Research Practice
 - [[concepts/ml-systems]] — ML Systems

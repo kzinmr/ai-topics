@@ -32,6 +32,7 @@ sources:
   - raw/articles/2026-05-10_glean_knowledge-graph-agentic-engine.md
   - raw/articles/2026-05-10_glean_enterprise-search-evaluation-2026.md
   - raw/articles/2026-07-28_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md
+  - raw/articles/2026-05-10_glean_knowledge-graph-vs-vector-database.md
   - raw/articles/2026-07-09_glean_the-enterprise-ai-copilot-playbook-for-business-leaders.md
   - raw/articles/2026-05-10_glean_best-ai-tools-for-software-engineers.md
 ---
@@ -191,6 +192,25 @@ Glean's vendor-education piece frames enterprise knowledge graphs as company dat
 **Adoption guidance:** start with one domain + a pragmatic ontology ("model only what you'll actually query"), measure baseline then at 30/60/90 days; KG sits as a semantic layer above existing systems — no migration required. FAQ distinguishes a **knowledge graph** (stable domain facts) from a **context graph** (user intent, role, workflow state, recent activity — "especially useful for personalization and agentic AI"). Related skeptical view: [[concepts/graph-db-overengineering-rag|"You Don't Need a Graph DB for RAG (Probably)"]].
 
 Source: raw/articles/2026-07-28_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md
+
+### Knowledge Graph vs Vector Database (Mar 2026)
+
+Glean's comparison guide (Emrecan Dogan, Head of Product) frames KG vs vector DB as complementary problems — **structure vs semantics** — rather than competing stacks, and serves as a decision framework for enterprise AI foundations.
+
+**Knowledge graph strengths:** explainability and multi-hop reasoning (agents can trace "this incident → that service → owning team → runbook"); governance (permissions, roles, ownership as first-class entities); complex workflow queries ("which dashboards are used by teams working on this OKR?"); stable representation of core concepts. **Struggles:** upfront modeling + ongoing stewardship, messy unstructured content, approximate similarity, scale complexity.
+
+**Vector database strengths:** semantic search over unstructured content without hand-crafted taxonomies; fast path to value; tolerance for heterogeneous data; natural fit for LLM RAG pipelines. **Struggles:** opacity (can't explain *why* two items are similar), weak relationship modeling, governance/safety gaps, sensitivity to embedding-model drift.
+
+**Combining them (hybrid patterns):**
+- **Graph-scoped search** — narrow the search space with a graph query (e.g., "content owned by this team relevant to this account"), then vector-search within the subset
+- **Graph-informed ranking** — graph signals (recency, ownership, organizational proximity) rerank semantically relevant results; graphs excel at precision/ranking while vectors excel at recall/coverage
+- **Entity-aware agents** — agents reason over entities/relationships via the graph while pulling detailed context via vector retrieval
+
+**Decision criteria:** data reality (structured vs free-form content); risk profile & compliance (higher risk → graph-backed permissions with vectors layered on top, not the reverse); AI roadmap (lightweight assistant → vector-centric OK; action-taking agents → graph-backed); operational ownership of the graph.
+
+**Glean's position:** the either/or framing is wrong — Glean was built on the **Enterprise Graph** (entities, relationships, signals: views/edits/shares/approvals) + **hybrid retrieval** (vector embeddings + classical IR + graph structure feeding a single ranking system), orchestrated as a "system of context" so agents see permissioned, explainable evidence at every workflow step. Existing taxonomies/ontologies can be ingested as metadata signals into the Enterprise Graph.
+
+Source: raw/articles/2026-05-10_glean_knowledge-graph-vs-vector-database.md
 
 ### Research: AI Productivity Paradox for Software Engineers
 

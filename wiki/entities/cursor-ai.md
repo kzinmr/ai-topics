@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-08-14
+updated: 2026-08-16
 type: entity
 tags:
   - entity
@@ -30,6 +30,7 @@ sources:
   - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
   - raw/newsletters/2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md
   - raw/articles/2026-05-10_cursor_fast-regex-search.md
+  - raw/articles/2026-05-10_cursor_kernels.md
 ---
 
 
@@ -190,6 +191,34 @@ Cursor referenced previously published research on **long-running agents** as th
 - [Multi-Agent Kernels](https://cursor.com/blog/multi-agent-kernels)
 - [Scaling Agents](https://cursor.com/blog/scaling-agents)
 - [Agent Computer Use](https://cursor.com/blog/agent-computer-use)
+
+## Training Infrastructure: MXFP8 MoE Kernels (Aug 2025)
+
+Cursor's research team (Stuart Sul) published a kernel-level deep-dive on rebuilding their Mixture-of-Experts training layer from scratch for Blackwell GPUs, achieving a **3.5x MoE layer speedup** (forward + backward) and **1.5x end-to-end training speedup** on B200s (2x vs the original Hopper H100 setup, measured in tokens/sec/GPU).
+
+**Motivation:** Profiling showed the MegaBlocks-based MoE layer consumed ~53% of forward-pass time and ~27% of backward-pass time. Cursor rewrote the entire MoE layer at the GPU kernel level with zero CUDA-library dependencies (pure CUDA + PTX, with some ThunderKittens primitives), transitioning from BF16 to MXFP8 with near-zero training-quality loss.
+
+**Why MXFP8 on Blackwell is hard:**
+- Blackwell tensor cores double FP8 throughput (1,979 → 4,500 TFLOP/s) but FP32 CUDA cores only improve ~33% (60 → 80 TFLOP/s); dequantization on CUDA cores can take ~1.76x the matrix-multiply time (vs 1.03x on Hopper)
+- Results accumulate in tensor memory (TMEM) via `tcgen05.mma` instead of registers — custom accumulator arithmetic requires TMEM→register→TMEM round-trips that kill tensor-core occupancy
+- Naive approaches could not surpass Hopper's realistic 1,500 TFLOP/s FP8 throughput
+
+**Key engineering results:**
+- Expert-wise supergrouping (ThunderKittens L2-reuse heuristic applied per expert) achieved ~2,650 TFLOP/s grouped MXFP8 GEMM — only 4% below non-grouped; inefficient HBM access patterns could otherwise cost ~50% performance
+- Fastest MXFP8 quantization kernel: **6.2+ TB/s** sustained with `tcgen05.mma`-compatible scale layout (vs NVIDIA TransformerEngine ~5.2 TB/s, PyTorch TorchAO ~4.5 TB/s with reshape overhead)
+- 2-CTA matrix multiplication mode delivers ~15-20% speedup for MXFP8 GEMM
+- vs DeepSeek DeepGEMM (only open-source alternative): grouped Fprop/Dgrad 0.43ms vs 0.67ms, Wgrad 0.65ms vs 0.71ms — and DeepGEMM lacks optimized quantization kernels, which can degrade end-to-end below BF16
+
+**Measured MoE latency (internal model):**
+
+| Stage | Hopper BF16 | Blackwell BF16 | Blackwell MXFP8 |
+|-------|------------|----------------|-----------------|
+| MoE Forward | 32.36 ms | 25.96 ms | 9.45 ms |
+| MoE Backward | 63.24 ms | 59.17 ms | — |
+
+The post doubles as a low-precision training recipe: MXFP8 gains are not automatic — quantization kernels must saturate memory bandwidth and match the `tcgen05.mma` scale-factor layout to avoid "death by a thousand quantizations."
+
+Source: [[raw/articles/2026-05-10_cursor_kernels]]
 
 ## SpaceX-Cursor Acquisition (June 2026)
 

@@ -3,9 +3,10 @@ title: "Max Woolf"
 tags: [person, coding-agents]
 sources:
   - raw/articles/minimaxir.com--2025-01-write-better-code--d88107e5.md
+  - raw/articles/minimaxir.com--2025-06-movie-embeddings--220f5935.md
   - https://minimaxir.com/2025/01/write-better-code/
 created: 2026-04-24
-updated: 2026-08-15
+updated: 2026-08-16
 type: entity
 ---
 
@@ -169,6 +170,29 @@ In *"Can LLMs write better code if you keep asking them to 'write better code'?"
 - Human verification remains necessary — Woolf had to fix logic bugs in nearly every iteration
 
 The experiment anticipated his later systematic agentic-coding methodology (Feb 2026) and remains a frequently-cited early datapoint on iterative self-refinement loops. See [[concepts/prompt-design]] and [[concepts/ai-coding-effectiveness-debate]].
+
+### IMDb Rating Prediction via Text Embeddings (Jun 2025)
+
+In *"Predicting Average IMDb Movie Ratings Using Text Embeddings of Movie Metadata"* (Jun 2025), Woolf revisited a Reddit data-science take-home assignment — predict a movie's average IMDb rating from metadata — and turned it into a systematic comparison of LLM-era modeling approaches. Using the official **IMDb Non-Commercial Datasets** (242k movies with ≥30 votes as of May 2025), he converted each movie's raw metadata (title, year, genres, principals) into JSON, embedded it with **gte-modernbert-base** (768D), and fit traditional statistical models on top.
+
+**Results (test MSE, 20k-movie holdout):**
+
+| Model | Test MSE |
+|-------|----------|
+| Mean baseline | 1.637 |
+| Linear regression on embeddings | 1.187 |
+| GPU SVM (cuML, grid-searched) | 1.087 |
+| MLP on embeddings (dropout 0.6, 600 epochs) | 1.074 |
+| LLM trained from scratch on raw JSON | 1.026 |
+
+The GPU SVM beat the original Redditor's Keras neural network (1.096); the surprise winner was training a small LLM from scratch on raw JSON metadata — reaching the lowest MSE after only ~4 passes before overfitting. Embedding generation was cheap: 242k embeddings in 21 minutes at ~$0.28/hr GPU (~$0.10 total).
+
+**Key takeaways:**
+- All traditional statistical methods work on embeddings (coefficients just aren't interpretable) — embeddings are a strong, hard-to-beat baseline for structured-prediction tasks
+- Pretrained embedding models may leak knowledge about popular movies (award winners → high ratings), motivating the from-scratch LLM control
+- Woolf's recommendation: embeddings-first exploration in professional modeling work, while noting the UMAP visualizations would be a liability in job interviews
+
+Source: [[raw/articles/minimaxir.com--2025-06-movie-embeddings--220f5935]]
 
 ---
 
