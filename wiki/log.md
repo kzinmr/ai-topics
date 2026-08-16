@@ -1,6 +1,12 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-16] raw-backlog-ingest | harvey AI for General Counsel guide
+
+- **Enriched: [[entities/harvey]]** -- Added "AI for General Counsel Guide (June 2026)" section: 87% GC gen-AI adoption stat (FTI/Relativity GC Report), four high-volume workflows, four trust objections (citation grounding, SOC 2/ISO 27001/42001, no-training commitment, ABA 2024 guidance), shadow AI governance, GC as AI governance lead (66% directors use AI vs 22% governance), ROI measurement method, five-step adoption plan. Frontmatter +1 source (raw/articles/2026-06-24_harvey_ai-for-general-counsel.md).
+- **Skipped (already captured)**: concepts/wayfinder-router.md, concepts/gpt/chatgpt-app-design-patterns.md
+- **Skipped (out of scope)**: semianalysis IEDM 2025 (semiconductor fab tech), hex data-modeling listicle (2023, non-AI)
+
 
 
 ## [2026-08-16] skeleton-enrich-daily | L2→L3: Kilo (Kilo Code) + Parchi

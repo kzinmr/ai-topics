@@ -39,6 +39,7 @@ sources:
   - raw/articles/2026-06-19_harvey_contract-review-process.md
   - raw/articles/2026-08-15_harvey_training-frontier-review-table-models-with-applied-compute.md
   - raw/articles/2026-05-12_harvey_how-to-automate-contract-analysis-with-ai.md
+  - raw/articles/2026-06-24_harvey_ai-for-general-counsel.md
 ---
 
 # Harvey
@@ -404,6 +405,46 @@ Teams of 1-3 in-house lawyers should start with **habits, not hires**: basic int
 **FAQ highlights**: legal ops professionals do **not** need to be lawyers (finance, project management, IT, data analytics backgrounds are typical); AI's role is first-pass work (contract review, clause extraction, request triage, routine drafting) with mandatory lawyer review — "treating a first draft as a finished product is the fastest way to turn a productivity gain into a liability."
 
 Source: raw/articles/2026-06-23_harvey_in-house-legal-operations.md
+
+## AI for General Counsel Guide (June 2026)
+
+Harvey published **"The 2026 In-House Guide to AI for General Counsel"** (Jun 23, 2026) — a GC-centric adoption guide distinct from the in-house legal-ops guide above: it frames AI as capacity expansion for the legal department (time, speed, reach) rather than headcount reduction, and walks through which workflows to automate, how to answer trust objections, and how to govern shadow AI.
+
+### Adoption Statistics Cited
+- **87% of general counsel** reported their teams using generative AI in 2026, up from 44% a year earlier and 20% two years prior (FTI Consulting + Relativity, General Counsel Report)
+- **66% of directors** use AI for board work while only **22%** report having AI governance processes in place (Diligent Institute + Corporate Board Member, *What Directors Think 2026*) — the governance gap the guide argues lands on the GC
+- Harvey platform scale: **142,000+ lawyers across 1,500+ organizations**, 60%+ of the AmLaw 100, 500+ in-house legal teams
+
+### Four High-Volume Workflows
+1. **Contract review and drafting at volume** — first-pass review against the organization's playbook, flagging out-of-position terms and proposing redlines; template-driven drafting of routine agreements (NDAs to MSAs)
+2. **Legal research and regulatory tracking** — source-grounded answers plus continuous monitoring of regulatory change across jurisdictions
+3. **Matter intake, triage, and routing** — AI classifies requests at the front of the queue, drafts first responses to routine matters, routes the rest to the right lawyer
+4. **Knowledge retrieval across the department** — making prior advice, negotiated positions, and templates searchable (KM)
+
+### Four Trust Objections and the Answers
+- **Output accuracy** — answers grounded in citable sources the lawyer can open and check; accuracy becomes verification rather than trust
+- **Data security and confidentiality** — encryption in transit/at rest, permission-structure access controls, matter separation; ask for SOC 2 Type II, ISO 27001, ISO 42001, GDPR/CCPA/EU AI Act compliance
+- **Whether your data trains the model** — the evaluation-ending question; require a contractual commitment that customer data is not used to train models for others
+- **Professional responsibility** — ABA 2024 generative-AI guidance: lawyers may use tools but stay accountable; the verification duty is the same review good lawyers already perform
+
+### Shadow AI and the GC as AI Governance Lead
+- **Shadow AI**: business units pasting contracts/policy questions into consumer chatbots produce fluent, confidently wrong legal output — banning rarely works; the durable response is a sanctioned, source-grounded alternative plus a clear AI-use policy, turning shadow AI into managed governance
+- **GC as governance lead**: boards adopt AI faster than they govern it (66% vs 22% gap); the GC's existing ownership of legal risk and board advice makes them the natural owner of enterprise AI governance; leading internal AI adoption gives governance credibility from experience
+
+### Measuring Return on Legal AI
+ROI shows in three measures: capacity returned, cycle time, and share of work kept in-house vs outside counsel. Method: baseline a few high-volume workflows (contract review, intake, research), run with AI for a set period, compare; track which categories of outside-counsel work moved back inside and their avoided cost. Resist borrowed percentage claims — measure your own baseline first.
+
+### Five-Step Adoption Plan
+1. Pilot one or two high-volume workflows (contract review and intake are common first targets)
+2. Set governance and permissions before anyone logs in
+3. Connect to existing systems (DMS, CLM, Microsoft 365)
+4. Train on real matters rather than demos
+5. Measure against the baseline, then expand to the next workflow
+
+### Legal AI vs General Tools
+General-purpose tools return fluent answers with no source; legal platforms ground answers in citable sources, operate inside matters, and fit the systems legal work runs on. Evaluation checklist: models built/tuned for legal work, citation on every answer, security/access following org structure, integration with DMS/contract tools/email environment.
+
+Source: raw/articles/2026-06-24_harvey_ai-for-general-counsel.md
 
 ## Legal Operations Optimization Guide (June 2026)
 
