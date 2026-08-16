@@ -1,0 +1,81 @@
+{
+  "run_id": "20260816T102116Z",
+  "triaged_at": "2026-08-16T10:35:00Z",
+  "source": "newsletter-ingest",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletters": [
+    {
+      "message_id": "<20260815154623.3.179672023ad963f5@mg-d0.substack.com>",
+      "subject": "React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue",
+      "date": "2026-08-15",
+      "source_label": "uid=508",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-react-for-agents-astro-creator-brings-hooks-to-his-meta-harness-flue.md",
+      "classification": "critical",
+      "reason": "Latent Space article by Richard MacManus about Flue 2 — a major update to the Flue agent framework. Creator Fred Schott (of Astro fame) added React-like hooks and a meta-harness architecture for AI agents. Directly relevant to wiki's agent framework domain. Flue entity page already exists (created 2026-05-06) and needs enrichment with v2 details. Fred Schott needs a new entity page. Also touches on harness engineering concept.",
+      "publication": "Latent Space (swyx's newsletter)",
+      "author": "Richard MacManus (interviewer: swyx)",
+      "main_article_url": "https://www.latent.space/p/flue-2",
+      "relevant_topics": ["ai-agents", "agent-frameworks", "flue", "meta-harness", "react-hooks", "harness-engineering", "fred-schott", "astro", "developer-tooling"],
+      "total_links": 20,
+      "tracking_links_only": 18,
+      "actionable_links": [
+        {"label": "Main article", "url": "https://www.latent.space/p/flue-2"},
+        {"label": "Author profile (ricmac)", "url": "https://substack.com/@ricmac"}
+      ],
+      "existing_wiki_pages": [
+        {"path": "entities/flue.md", "status": "exists — needs v2 enrichment", "created": "2026-05-06"}
+      ],
+      "new_pages_needed": [
+        "entities/fred-schott.md — Astro creator, Flue creator"
+      ],
+      "suggested_actions": [
+        "Enrich entities/flue.md with Flue 2 info: React hooks API, meta-harness architecture, Fred Schott interview context",
+        "Create entities/fred-schott.md — bio, Astro framework, Flue project",
+        "Update concepts/harness-engineering.md if exists, or create with Flue 2 as primary example",
+        "Add source to wiki/raw/articles/ as processed article"
+      ]
+    },
+    {
+      "message_id": "<20260815.191210.5da2d23d@mta19>",
+      "subject": "Nobody Built a Bigger Model",
+      "date": "2026-08-15",
+      "source_label": "uid=509",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-15-nobody-built-a-bigger-model.md",
+      "classification": "high",
+      "reason": "Title indicates analysis of LLM scaling trends — the shift away from simply building bigger models. Relevant to wiki's LLM ecosystem coverage, model scaling concepts, and training infrastructure topics. Source newsletter unidentified (beehiiv, Cloudflare-blocked URLs prevent resolution).",
+      "publication": "unknown beehiiv newsletter",
+      "author": "unknown",
+      "main_article_url": "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f",
+      "relevant_topics": ["llm-scaling", "model-architecture", "training-infrastructure", "ai-industry-trends", "scaling-laws"],
+      "total_links": 19,
+      "tracking_links_only": 17,
+      "actionable_links": [
+        {"label": "Main article (Cloudflare-blocked)", "url": "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f"}
+      ],
+      "existing_wiki_pages": [],
+      "new_pages_needed": [],
+      "suggested_actions": [
+        "Attempt to fetch article content via browser or alternative method (beehiiv links are Cloudflare-challenged)",
+        "If content retrieved: evaluate for concepts/llm-scaling-trends or similar concept page",
+        "Identify the source newsletter — check beehiiv publication IDs against known subscriptions",
+        "May feed into existing scaling-laws or model-architecture concept pages"
+      ]
+    }
+  ],
+  "summary": {
+    "total_newsletters": 2,
+    "critical": 1,
+    "high": 1,
+    "low": 0,
+    "notes": [
+      "Newsletter 1 (Flue 2 / Latent Space) is the priority — clear entity enrichment path with existing wiki pages",
+      "Newsletter 2 content is Cloudflare-blocked; classification is based on title alone, may upgrade/downgrade after content retrieval",
+      "Both newsletters align with core wiki scope: AI agents and LLM ecosystem"
+    ],
+    "next_actions": [
+      "PRIORITY: Process swyx/Flue 2 article — enrich entities/flue.md with v2 React hooks + meta-harness details, create fred-schott.md entity",
+      "Attempt browser-based retrieval of 'Nobody Built a Bigger Model' article for content triage",
+      "Identify beehiiv newsletter source for uid=509 newsletter"
+    ]
+  }
+}

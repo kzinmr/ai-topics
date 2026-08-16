@@ -3,6 +3,10 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-16] blog-wiki-ingest | simonwillison CORS chat reference (post-recovery)
+- **Enriched: [[entities/simon-willison]]** — Added "Tool: CORS Chat (Aug 15, 2026)" reference entry to August 2026 Updates: OpenAI-Responses-compatible chat web UI built with GPT-5.6-Sol xhigh to test Qwen 3.8 27B in LM Studio on M5 MacBook Pro + NVIDIA DGX Spark; tested against LM Studio --cors option and OpenRouter; browser-persisted conversations exportable as JSON; progressive SVG rendering while tokens stream. Source: raw/articles/simonwillison.net--2026-aug-15-cors-chat--be52c1eb.md.
+- **Recovery**: blog-triage JSON render failure; checkpoint at ~/.hermes/cron/data/blog_ingest/triage_latest.json read directly (15 decisions: 1 reference, 14 skips). Verified same-day skips already processed in commit 495a60c7 (augment Auggie CLI v2, Goedecke watermarking). Archive committed earlier (2eb8b203).
+
 ## [2026-08-16] blog-ingest 10:14 | augment auggie CLI rebuild + goedecke watermarking + simonwillison CORS chat
 - **Enriched: [[entities/augment]]** — Added "Auggie CLI v2 — Harness Rebuild (August 2026)" section: forked Pi framework (Mario Zechner), 53% cost reduction on SWE-bench Pro ($2.70→$1.27/task, same pass rate), radical tool surface reduction (bash + 3 file tools), context engine single-call retrieval, proactive compaction on cheaper model, Terminal Bench 2.0 improvement (70.8→74.2%), development velocity doubled (92→221 commits/month). Source: raw/articles/augmentcode.com--blog-auggie-cli-harness-rebuild-53-percent-cheaper--20bec638.md.
 - **Enriched: [[entities/seangoedecke-com]]** — Added "AI Text Watermarking Is Not a Big Deal (Aug 2026)" section: 4 arguments (no quality degradation, already detectable via existing methods, not a privacy violation, inevitable under EU AI Act by 2027). Cross-linked to concepts/security-and-governance/ai-text-watermarking.md. Source: raw/articles/seangoedecke.com--ai-text-watermarking-is-not-a-big-deal--8795efe1.md.
