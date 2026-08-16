@@ -64,11 +64,12 @@ Source: [X thread](https://x.com/0xsero/status/2040012153885761973) — \"Free D
 - **Key finding**: 30.9% KV cache reduction on Qwen3.5-27B-AWQ (dense, 4-bit weights) on single RTX 5090; ~2x context window on dense models with 4x RTX 3090
 - Honest about limitations: "5.1x compression" claim is misleading — doesn't count Pi/S matrices or ring buffer overhead; honest figure ~4.6x at 4k tokens
 
-### Parchi (461+ stars)
+### Parchi (543 stars)
 - AI-powered browser copilot as a Chrome extension
 - Chat-driven browser automation: navigate, read, click, extract — all through natural language
 - Supports any OpenAI-compatible endpoint, with hosted proxy option
 - Includes a Relay daemon/CLI for exposing Parchi as a local automation endpoint
+- Maintenance mode since April 2026 (last release v0.6.5) — see [[entities/parchi]]
 
 ### vLLM Studio (366+ stars)
 - Unified local AI workstation for model lifecycle management

@@ -28,7 +28,7 @@ related:
   - "[[entities/opencode]]"
   - "[[entities/claude-code]]"
   - "[[concepts/agent-harnesses]]"
-  - "[[entities/0xsero]]"
+  - "[[entities/sero]]"
 ---
 
 # RooCode
@@ -163,7 +163,7 @@ RooCode extended Cline with custom modes, steer mode for local models, MCP serve
 
 ## Related Pages
 
-- [[entities/0xsero]] — 0xSero, local model advocate who ranked RooCode #4
+- [[entities/sero]] — 0xSero, local model advocate who ranked RooCode #4
 - [[entities/claude-code]] — Primary competing coding agent
 - [[entities/opencode]] — OpenCode, another coding agent
 - [[entities/pi]] — Pi coding agent

@@ -449,7 +449,7 @@
 - [[entities/khairallah-al-awady]] — AI educator and angel investor known for detailed 'Full Course' X Articles on AI agents, context engineering, and pra...
 - [[entities/khe-hy]] — Khe Hy
 - [[entities/kieran-klaassen]] — Kieran Klaassen
-- [[entities/kilo]] — Kilo (Kilo Code)
+- [[entities/kilo]] — Kilo (Kilo Code) — open-source agentic engineering platform (OpenCode fork, MIT); Anaconda acquisition Jul 2026; Kilo Memory, mobile app, Cloud Agents; 3M+ devs / ~10T tokens monthly
 - [[entities/kim-isenberg]] — Kim 'Chubby' Isenberg
 - [[entities/kimi]] — Moonshot AI / Kimi; MLA + QK-Clip normalization fix (Kimi K2, July 2025), MuonClip optimizer lineage
 - [[entities/knowledgator]] — Knowledgator
@@ -629,7 +629,7 @@
 - [[entities/palantir]] — Palantir Technologies
 - [[entities/palo-alto-networks]] — Palo Alto Networks — Global cybersecurity leader; Prisma AIRS AI Security Platform; Portkey acquisition (Apr 2026) establishes AI Gateway control plane for agents
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc.
-- [[entities/parchi]] — Parchi
+- [[entities/parchi]] — Parchi — AI browser copilot extension by 0xSero (MIT); #6 harness for local models; maintenance mode since Apr 2026
 - [[entities/parsagon]] — Parsagon
 - [[entities/paul-hoekstra]] — Paul Hoekstra — Agentic Engineering 4-layer framework, Context Rot mechanistic explanation (Paul's Pipeline)
 - [[entities/paul-iuzstin]] — Paul Iusztin

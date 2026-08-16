@@ -3,6 +3,14 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-16] skeleton-enrich-daily | L2→L3: Kilo (Kilo Code) + Parchi
+
+- Enriched [[entities/kilo.md]] — Upgraded from L2 (148 lines, 6.2KB) to comprehensive (249 lines, ~13KB). Fixed factual error: license is **MIT**, not Apache-2.0 (verified via GitHub API; the Feb 2026 "Fix LICENSE" commit added the opencode copyright line). Added major development: **Anaconda acquired Kilo Code (2026-07-15)** — ~10T tokens/month across 3M+ developers; "AI on Your Own Terms" enterprise governance framing. New sections: Anaconda Acquisition + Post-Acquisition Timeline (Jun–Aug 2026: Cloud Agents upgrade, Kilo App iOS/Android, native JetBrains, Kilo Memory project-scoped memory, Auto Model router test, open-weights data, code review analysis, Metabase incident, Nemotron 3.5 Lightning support, v7.4.22). Added AI Code Review Analysis (10,643 reviews; Kimi K2.7 Code led at 0.179 critical/review; open weights took 2 of top 3), Open-Weight Token Share (79.1% open-weight week of Jul 20 2026), Metabase Security Incident disclosure, updated release cadence (v7.4.22 Aug 13 2026), stars (26.9K), differentiators table (Memory/Mobile/Parent rows), Sources + Related Pages. Status: L3.
+- Enriched [[entities/parchi.md]] — Upgraded from L2 (192 lines, 8.2KB) to L3 (208 lines). Fixed broken wikilinks `[[entities/0xsero]]` → `[[entities/sero]]` (parchi + roocode frontmatter/related). Updated stats: stars 486→543, forks 47→53, last release v0.6.5 (2026-04-24, was v0.6.0), contributors (0xSero 354 commits). Added Release History table (v0.6.0–v0.6.5 with Droid integration rounds), confirmed maintenance mode (4 months no commits as of Aug 2026). Added tags browser-automation, desktop-automation; added [[entities/droid]] cross-ref; converted broken Playwright link to plain text. Status: L3.
+- Cross-links: [[entities/sero.md]] — updated Parchi section star count (461+ → 543) + maintenance-mode note + [[entities/parchi]] backlink. [[entities/roocode.md]] — fixed `[[entities/0xsero]]` → `[[entities/sero]]` (2 places). index.md: updated kilo + parchi descriptions. entities/_index.md: added missing kilo entry (was absent).
+- Research sources: GitHub API (Kilo-Org/kilocode, 0xSero/parchi), Kilo blog/Substack archive (anaconda-acquires-kilo-code, introducing-kilo-memory, kilo-app-for-ios-and-android-is-live, cloud-agents-upgrade, we-analyzed-10643-ai-code-reviews, open-weights-is-all-you-need, metabase-incident-impacting-kilo, nvidia-nemotron-3-5-lightning).
+
+
 ## [2026-08-16] dreaming wiki-ingest | second-pass saturation confirmation — upstream fully covered
 
 - **Upstream dreaming-group (18:10)** already committed saturation pass `46f4ca36`: 0 takes, 19 skips, 6 newly archived.

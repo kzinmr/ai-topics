@@ -3,8 +3,8 @@ title: Parchi
 type: entity
 aliases: [parchi-ai, parchi-browser-copilot]
 created: 2026-05-08
-updated: 2026-05-27
-status: L2
+updated: 2026-08-16
+status: L3
 tags:
   - entity
   - browser-agent
@@ -12,6 +12,8 @@ tags:
   - ai-agents
   - open-source
   - developer-tooling
+  - browser-automation
+  - desktop-automation
 sources:
   - https://github.com/0xSero/parchi
   - https://parchi.ai/
@@ -20,14 +22,14 @@ sources:
 related:
   - "[[entities/browser-use]]"
   - "[[entities/browserbase]]"
-  - "[[entities/0xsero]]"
+  - "[[entities/sero]]"
   - "[[concepts/agent-harnesses]]"
-  - "[[entities/playwright]]"
+  - "[[entities/droid]]"
 ---
 
 # Parchi
 
-> **Parchi** is an open-source AI-powered browser copilot (Chrome/Firefox extension) created by **0xSero**. It provides chat-driven browser automation in a side panel — navigate, read, click, type, extract, and summarize. 0xSero recommends it as **#6 best harness for local models**, highlighting its universal provider compatibility and simple UX.
+> **Parchi** is an open-source AI-powered browser copilot (Chrome/Firefox extension) created by **0xSero**. It provides chat-driven browser automation in a side panel — navigate, read, click, type, extract, and summarize. 0xSero recommends it as **#6 best harness for local models**, highlighting its universal provider compatibility and simple UX. The project has been in **maintenance mode since April 2026** (last commit v0.6.5).
 
 ## Basic Information
 
@@ -37,12 +39,12 @@ related:
 | Repository | [0xSero/parchi](https://github.com/0xSero/parchi) |
 | Official Site | [parchi.ai](https://parchi.ai) |
 | License | MIT |
-| GitHub Stars | 486 |
-| Forks | 47 |
-| Contributors | 2 (0xSero, claude) |
+| GitHub Stars | 543 (Aug 2026; was 486 in May 2026) |
+| Forks | 53 |
+| Contributors | 2 (0xSero 354 commits, claude) |
 | Environment | Chrome, Firefox (Browser Extension) |
-| Latest Release | v0.6.0 (2026-03-23) — UI Polish & Settings Cleanup |
-| Last Update | 2026-04-05 (last push) |
+| Latest Release | v0.6.5 (2026-04-24) — watchdog tuning, step header polish |
+| Last Push | 2026-04-24 (v0.6.5) |
 | Topics | agent, ai, browser-automation, browser-extension, model-agnostic, workflow |
 | Language | TypeScript (75%), CSS (9.4%), JavaScript (9.2%), HTML (3.4%), Python (2.6%) |
 
@@ -160,13 +162,25 @@ From 0xSero's ranking of best harnesses for local models (April 4, 2026):
 
 ## Project Status
 
-Parchi appears to be in a **maintenance mode** as of April 2026:
-- Last release: v0.6.0 (2026-03-23)
-- Last push: 2026-04-05
-- Single active contributor (0xSero, with AI assistant "claude")
-- 10 open issues, modest community activity
+Parchi is in **maintenance mode** — functionally complete but no longer actively developed:
 
-The project is functional, MIT-licensed, and fully self-hostable — but users should not expect rapid feature development based on recent commit history.
+- Last release: v0.6.5 (2026-04-24)
+- Last push: 2026-04-24 — 4 months without new commits (as of Aug 2026)
+- Single active contributor (0xSero, with AI assistant "claude"; 354 human commits)
+- 12 open issues; star count continues to grow slowly (486 → 543 since May 2026)
+- Parchi.dev (the companion website) appears dormant; homepage points to the GitHub repo
+
+### Release History
+
+| Version | Date | Highlights |
+|---------|------|-----------|
+| v0.6.0 | 2026-03-23 | UI Polish & Settings Cleanup |
+| v0.6.1 | 2026-04-11 | "droid round complete" — Droid integration round |
+| v0.6.2 | 2026-04-12 | Searchable model dropdown, checkbox model selector, Display tab |
+| v0.6.3 | 2026-04-13 | "droid round complete" — second Droid round |
+| v0.6.5 | 2026-04-24 | Watchdog silence threshold 240s→60s, step header highlight + stream indent |
+
+The project is functional, MIT-licensed, and fully self-hostable — but users should not expect rapid feature development based on recent commit history. 0xSero's attention has shifted to newer projects (Droid, vLLM Studio, Open Orchestra); see [[entities/sero]] for his current focus.
 
 ## Safety Notice
 
@@ -185,8 +199,9 @@ Unlike [[entities/browser-use]] (Python framework for AI browser automation) or 
 
 ## Related Pages
 
-- [[entities/0xsero]] — Creator of Parchi, local model advocate
+- [[entities/sero]] — Creator of Parchi (0xSero), local model advocate
 - [[entities/browser-use]] — Python framework for AI browser automation (complementary)
 - [[entities/browserbase]] — Cloud browser infrastructure (different approach)
+- [[entities/droid]] — 0xSero's newer coding agent harness; Parchi's v0.6.x releases integrated Droid rounds
 - [[concepts/agent-harnesses]] — Agent harness comparison
-- [[entities/playwright]] — Browser automation framework (underlying technology)
+- Playwright — Browser automation framework (underlying technology)
