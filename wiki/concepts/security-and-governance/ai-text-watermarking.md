@@ -1,7 +1,7 @@
 ---
 title: AI Text Watermarking
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-16
 type: concept
 tags:
   - ai-safety
@@ -15,6 +15,7 @@ tags:
 sources:
   - raw/articles/2026-08-14_anthropic_claude-text-watermarking.md
   - https://www.anthropic.com/news/claude-text-watermark
+  - raw/articles/seangoedecke.com--ai-text-watermarking-is-not-a-big-deal--8795efe1.md
 ---
 
 # AI Text Watermarking
@@ -44,3 +45,21 @@ As of August 2, 2026, the EU requires AI providers serving its market to mark AI
 - [[concepts/security-and-governance/ai-safety|AI Safety]]
 - [[concepts/ai-governance-political-pressure|AI Governance Political Pressure]]
 - [[entities/anthropic|Anthropic]]
+
+## Criticism and counterarguments
+
+### Sean Goedecke: "AI text watermarking is not a big deal" (2026-08-15)
+
+Goedecke argues that text watermarking is a non-event for four reasons:
+
+1. **No quality degradation.** Watermarking replaces the pseudo-random token sampler with a keyed, deterministic alternative. The probability distribution over next-tokens is unchanged; only the *source of randomness* shifts. The concern that watermarked models pick lower-quality tokens reflects a misunderstanding — if a model prefers "overcast" 80% / "grey" 20%, both watermarked and unwatermarked outputs preserve that ratio.
+
+2. **Already effectively detectable.** AI text has always carried stylistic fingerprints (em-dashes, rhetorical opposition, "claudese"). Classifier tools like Pangram already distinguish AI from human writing with high reliability. Watermarking adds marginal probabilistic certainty on top of what is already practically observable.
+
+3. **Not a privacy violation.** Watermarking encodes at most one bit per token (watermarked or not). Encoding user-identifying data into the watermark is far harder and less practical than simply logging model outputs server-side, which labs already do.
+
+4. **Inevitable under EU AI Act by 2027.** The EU AI Act (effective August 2, 2026) requires AI providers to mark AI-generated content. With the ~$60B EU market at stake, every major lab will implement watermarking. Regional scoping (watermarking only EU responses) is legally ambiguous — the Act appears to apply to any service *offered* in the EU, not just outputs to EU citizens.
+
+Goedecke's essay extends his earlier July 2026 analysis arguing watermarks are trivially removable, and his C2PA analysis — forming a coherent skepticism trilogy on AI provenance tools.
+
+Source: [[raw/articles/seangoedecke.com--ai-text-watermarking-is-not-a-big-deal--8795efe1.md]] | [seangoedecke.com](https://seangoedecke.com/ai-text-watermarking-is-not-a-big-deal/) | See also [[entities/seangoedecke-com]]

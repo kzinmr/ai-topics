@@ -2,7 +2,7 @@
 title: "Augment Code"
 type: entity
 created: 2026-05-08
-updated: 2026-06-04
+updated: 2026-08-16
 tags:
   - company
   - coding-agents
@@ -16,6 +16,7 @@ aliases: ["Augment", "Augment Inc."]
 sources:
   - https://www.augmentcode.com
   - raw/articles/2026-06-04_augment-code_cosmos-platform.md
+  - raw/articles/augmentcode.com--blog-auggie-cli-harness-rebuild-53-percent-cheaper--20bec638.md
 ---
 
 # Augment Code
@@ -71,6 +72,38 @@ AI coding platform originally built for software engineers working on complex, l
 #### Availability
 - Available to all team plans (June 2026)
 - Author of announcement: Chris Kelly (Product Lead, Cosmos), formerly at New Relic, GitHub, Salesforce, and FireHydrant
+
+### Auggie CLI v2 — Harness Rebuild (August 2026)
+
+In mid-2026 Augment rebuilt the Auggie CLI harness from the ground up after evaluating three foundations (Vercel AI SDK, Mastra, and Pi). The final choice was a fork of **Pi**, a minimal open-source terminal coding harness by Mario Zechner, with Augment's proprietary context engine moved into Pi's extension system.
+
+#### Key Results (SWE-bench Pro, 731 instances, opus 4.7)
+
+| Metric | Auggie v1 | Auggie v2 | Claude Code |
+|---|---|---|---|
+| Cost per task | — | **$1.27** | $2.70 |
+| Output tokens vs v1 | baseline | −32% | — |
+| Cache-read tokens vs v1 | baseline | −38% | — |
+| Mean wall-time | — | **330 s** | 409 s |
+
+- **53% cheaper** than Claude Code at the same pass rate; v2 is cheaper on 97% of tasks.
+- Pass rates within ~1 percentage point across all three agents — no quality trade-off.
+- On Terminal Bench 2.0: pass rate improved from 70.8% → 74.2% while cost dropped from $1.26 → $1.11 per passed trial.
+
+#### Architectural Decisions
+
+- **Reduced tool surface**: v1 exposed many specialized tools (`launch-process`, `read-process`, `kill-process`, `str-replace-editor`, `save-file`, etc.). v2 narrows the surface to **bash** + three file tools (**read**, **edit**, **write**), removing per-request schema overhead and orchestration tax.
+- **Context engine for single-call retrieval**: the `codebase-retrieval` tool answers cross-file questions in one call instead of multiple exploration turns, reducing both token spend and wall-time.
+- **Proactive compaction on cheaper model**: older conversation history is proactively summarized on a dedicated cheaper model before hitting context limits, preserving the original first user message verbatim.
+- **Extension architecture**: features (context engine, subagents, LSP, MCP, plugins, tool-permissions) are self-contained extension packages rather than coupled core code, roughly doubling commit rate after the rewrite.
+- **Pi fork**: `auggie-v2` was forked from `pi-mono`'s coding-agent package; upstream improvements (e.g. pi v0.74.0) continue to be synced.
+
+#### Timeline
+
+- Jan–Mar 2026: evaluated Vercel AI SDK, Mastra, and Pi as foundations.
+- v2 rolled out to Cosmos cloud agents first; CLI switched at end of July 2026 (v1 deprecated).
+
+> Source: [Augment Code Blog — How we rebuilt the Auggie CLI harness](https://augmentcode.com/blog/auggie-cli-harness-rebuild-53-percent-cheaper)
 
 ## Related
 - [[concepts/coding-agents/coding-agents]] — Coding agents category

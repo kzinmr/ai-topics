@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-08-11
+updated: 2026-08-16
 type: entity
 sources:
   - raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
@@ -21,6 +21,7 @@ sources:
   - raw/articles/seangoedecke.com--i-got-an-email-about-resistance--efd1b4a4.md
   - raw/articles/seangoedecke.com--advanced-ai-sycophancy--ba81ae26.md
   - raw/articles/seangoedecke.com--local-models-will-not-win--058304e1.md
+  - raw/articles/seangoedecke.com--ai-text-watermarking-is-not-a-big-deal--8795efe1.md
 ---
 
 # Sean Goedecke
@@ -52,7 +53,8 @@ His writing philosophy is evident in his book's distribution model: **print at c
 | Date | Event |
 |------|-------|
 | **2026-08-10** | Publishes "Advanced AI sycophancy" — argues the best way to be sycophantic to smart people is to disagree without making them feel stupid; disagreement as sophisticated sycophancy |
-| **2026-08-11** | Publishes "No, local models will not win" — argues most inference will always happen in AI datacenters; local models are always a generation behind, ~30x less resource-efficient, and remain a niche for latency-sensitive or privacy/control-minded users |
+|| **2026-08-11** | Publishes "No, local models will not win" — argues most inference will always happen in AI datacenters; local models are always a generation behind, ~30x less resource-efficient, and remain a niche for latency-sensitive or privacy/control-minded users |
+|| **2026-08-15** | Publishes "AI text watermarking is not a big deal" — argues text watermarking (SynthID-Text, TextSeal) doesn't degrade output quality, is already effectively redundant given detectable AI writing styles, doesn't violate privacy, and will be mandatory for all labs under the EU AI Act by 2027. → [[concepts/security-and-governance/ai-text-watermarking]] |
 | ~2021 | Begins blogging about software engineering and AI |
 | 2022–2023 | Establishes reputation with posts on large tech company dynamics and AI coding tools |
 | 2024 | Podcast appearances begin (Exponent, The Staff Plus Journey) |
@@ -462,6 +464,22 @@ In "[No, local models will not win](https://seangoedecke.com/local-models-will-n
 **The niche that remains**: latency-sensitive applications (Thinking Machines' "Interaction Models" — a small fast local model handles voice, delegating hard thinking to a large model; OpenAI does the same), local steering as a killer feature, total control over infrastructure, and unreliable internet. "I wouldn't be surprised if most AI use in five years is mediated through a local model on your phone or laptop (though in this world almost all the work would still be done via AI datacenters)." But this is always going to be a niche group.
 
 Source: [[raw/articles/seangoedecke.com--local-models-will-not-win--058304e1.md]]
+
+### AI Text Watermarking Is Not a Big Deal (Aug 2026)
+
+On August 15, 2026, Goedecke published "[AI text watermarking is not a big deal](https://seangoedecke.com/ai-text-watermarking-is-not-a-big-deal/)" — pushing back against the backlash to Anthropic's announcement that Claude will embed SynthID-Text watermarks in outputs.
+
+**No quality degradation**: Watermarking replaces the existing pseudo-random logit sampler with a deterministic-but-secret alternative (keyed by a secret + preceding tokens). The probability distribution over next-tokens is unchanged — if Claude prefers "overcast" 80% / "grey" 20%, both watermarked and unwatermarked models preserve that ratio. Only the *source of randomness* changes, not the probabilities.
+
+**Already effectively detectable**: AI text has always been "watermarked" stylistically — em-dashes, rhetorical opposition, punchy one-liners, "claudese" are all giveaways. Classifier tools like Pangram already distinguish AI from human writing. Watermarking adds marginal theoretical certainty (probabilistic, not definitive) on top of what is already practically observable.
+
+**Not a privacy violation**: Text watermarking encodes one bit per token (watermarked or not). Encoding user-identifying information into the watermark is technically far harder and far less practical than simply storing model responses server-side, which labs already do.
+
+**Inevitable under EU AI Act**: The EU AI Act (effective August 2, 2026) requires AI providers to mark AI-generated content. With a ~$60B EU market at stake, every major lab will implement watermarking by 2027. Regional scoping (watermarking only for EU users) is legally ambiguous — the Act appears to apply to any service *offered* in the EU, not just outputs to EU citizens.
+
+**Connection to earlier work**: This essay extends and simplifies his July 2026 analysis "Text AI watermarks will always be trivial to remove" (see [[#Text Watermark Criticism: The Removal Argument]]) and his C2PA analysis, forming a coherent skepticism trilogy on AI provenance tools. → [[concepts/security-and-governance/ai-text-watermarking]]
+
+Source: [[raw/articles/seangoedecke.com--ai-text-watermarking-is-not-a-big-deal--8795efe1.md]]
 
 ## Sources
 
