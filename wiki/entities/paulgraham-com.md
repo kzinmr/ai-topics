@@ -25,6 +25,8 @@ sources:
   - raw/articles/paulgraham.com--growth-html--28e90f17.md
   - raw/articles/paulgraham.com--say-html--efb002f7.md
   - raw/articles/paulgraham.com--gh-html--9976fc59.md
+  - raw/articles/paulgraham.com--lies-html--d78cc3e8.md
+  - raw/articles/paulgraham.com--really-html--4784bb5b.md
 ---
 
 # Paul Graham
@@ -245,6 +247,11 @@ A companion essay to "Mind the Gap" (derived from Graham's talk at Oscon 2004), 
 ### The 18 Mistakes That Kill Startups (Oct 2006)
 
 Graham's systematic inversion of startup advice: if you avoid every cause of failure, you succeed. The essay collapses all failure into one root cause — **not making something users want** — and enumerates 18 specific ways startups fail to do so: single founder, bad location, marginal niche, derivative idea, obstinacy, hiring bad programmers, choosing the wrong platform, slowness in launching, launching too early, having no specific user in mind, raising too little money, spending too much, raising too much money, poor investor management, sacrificing users to profit, not wanting to get your hands dirty, fights between founders, and a half-hearted effort. The framework remains the canonical YC-era diagnostic for startup failure modes.
+
+### More Classic Essays (2008–2009)
+
+- **Lies We Tell Kids (May 2008)** — A philosophical essay on the broad "conspiracy" of adult deception toward children: from Santa Claus to "Ask your parents" deflection, Graham catalogs which lies cultures tell and why, arguing that studying them clears our heads of inherited falsehoods (quoting Einstein's childhood reaction to discovering biblical stories were untrue — "youth is intentionally being deceived by the state through lies"). A precursor to his later independent-mindedness thesis (see Core Ideas #7).
+- **What Startups Are Really Like (Oct 2009)** — Derived from a 2009 Startup School talk; based on surveying ~100 YC founders about what surprised them. Key findings: cofounder selection (character and commitment over ability) was the #1 surprise; the cofounder relationship becomes "a marriage" and must be maintained; startups take over your life ("it never stops"); it is an emotional roller-coaster (things seem great one moment and hopeless a couple hours later); persistence matters more than intelligence; everything takes 2-3x longer than expected. The canonical YC-era corrective to the heroic-founder narrative — "starting a startup is fun the way a survivalist training course would be fun, if you're into that sort of thing."
 
 ## Recent Themes
 

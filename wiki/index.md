@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (900 pages)
+## Entities (901 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -660,6 +660,7 @@
 - [[entities/portkey]] — Portkey
 - [[entities/pratik-bhavsar]] — Pratik Bhavsar
 - [[entities/prefeitura-rio]] — Prefeitura Rio (IplanRIO)
+- [[entities/probablydance-com]] — Probably Dance (Malte Skarupke); C++ performance engineer; positive-sum view of AI automation (Babel review, May 2026)
 - [[entities/prime-intellect]] — Prime Intellect
 - [[entities/prism-ml]] — Prism ML — AI research company behind extreme low-bit quantization; creators of Bonsai 27B
 - [[entities/project-glasswing]] — Project Glasswing

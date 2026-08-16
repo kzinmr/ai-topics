@@ -5,6 +5,7 @@ sources:
   - raw/articles/overreacted.io--impossible-components--a22447e4.md
   - raw/articles/overreacted.io--a-lean-syntax-primer--bef9d206.md
   - raw/articles/overreacted.io--writing-resilient-components--7d6249a1.md
+  - raw/articles/overreacted.io--open-social--2f640746.md
 created: 2026-04-24
 updated: 2026-08-14
 type: entity
@@ -91,6 +92,8 @@ Dan's most recent major post, "A Social Filesystem" (January 2026), is a deep ex
 1. It extends far beyond React into distributed systems design
 2. It uses the same interactive, step-by-step reasoning style he's known for
 3. It culminates in the insight that **the file format is the API** — open data formats enable interoperability in ways that proprietary APIs cannot
+
+In "Open Social" (May 2026), Dan extended this thread into a manifesto for the **"open social"** movement: what open source did for code, open social does for data. He argues the AT Protocol is the most convincing take so far (with the disclosure that he worked on the Bluesky client app, not the protocol design), and predicts open social will eventually seem as inevitable as open source does now — a decades-long arc requiring sustained community effort. The essay frames atproto and its ecosystem (the Atmosphere) as changing the relationship between user, developer, and product, using the web's `<img src>` / `<a href>` linking model as the template for portable social data. Source: [[raw/articles/overreacted.io--open-social--2f640746.md]].
 
 ### RSC: Transparency Over Abstraction
 

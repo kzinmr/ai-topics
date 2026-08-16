@@ -14,6 +14,7 @@ aliases:
   - Mistral AI SAS
 sources:
   - raw/articles/2026-05-04_thorsten-ball-joy-and-curiosity-84.md
+  - raw/articles/2026-05-10_mistral-ai_debugging-memory-leak-in-vllm.md
   - raw/articles/2026-05-24_mistral-ai_accelerate-ai-native-industry.md
   - raw/articles/substack.com--app-link-post--7e552b79.md
   - raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md
@@ -80,6 +81,7 @@ On May 22, 2026, Mistral AI announced the acquisition of **Emmi AI**, an Austria
 
 - **$830M debt** for Nvidia chips (13,800 GPUs, new data center near Paris, March 2026)
 - Largest compute build-out by any European AI company
+- **vLLM disaggregated serving deep dive (Jan 2026)**: debut post of the Engineering Deep Dive series (Mathis Felardos) — debugged a ~400 MB/min memory leak in Prefill/Decode disaggregated serving with NIXL KV cache transfer; root cause was UCX's mmap hooking (GOT patching + RCache invalidation queue). Workaround `UCX_MEM_MMAP_HOOK_MODE=none`; fix merged upstream into vLLM. See [[concepts/vllm]] for the full case study.
 
 ## Competitive Position
 
