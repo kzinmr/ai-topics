@@ -2,7 +2,7 @@
 title: Paul Graham
 type: entity
 created: 2026-04-09
-updated: 2026-08-14
+updated: 2026-08-16
 tags:
   - person
   - blogger
@@ -24,6 +24,7 @@ sources:
   - raw/articles/paulgraham.com--startupmistakes-html--38e869c5.md
   - raw/articles/paulgraham.com--growth-html--28e90f17.md
   - raw/articles/paulgraham.com--say-html--efb002f7.md
+  - raw/articles/paulgraham.com--gh-html--9976fc59.md
 ---
 
 # Paul Graham
@@ -228,6 +229,19 @@ A memoir-essay on the American secondary-school social order: smart kids are unp
 
 Graham's essay on **moral fashion**: every era believes things that are ridiculous and believes them so strongly that saying otherwise gets you fired, ostracized, imprisoned, or killed — and ours is almost certainly no exception. He opens with the **Conformist Test** (if you have no opinions you'd be reluctant to express in front of your peers, you're probably just thinking what you're told) and the mapmakers' deliberate-mistake analogy (if everyone reproduces the same "mistakes," they didn't arrive at them independently — "it would be like someone claiming they had independently decided in 1972 that bell-bottom jeans were a good idea"). The essay then develops a method for surfacing taboo ideas: note what people in other eras believed that was ridiculous, work backwards from the fashions of our own time, and use the "time machine" test to find the moral equivalents today. It concludes with the pragmatic strategy of working on forbidden questions quietly and letting the work speak. The essay is the philosophical foundation of Graham's career-long insistence on questioning received wisdom — the direct ancestor of his later independent-mindedness and "Do Things that Don't Scale" theses.
 
+### Great Hackers (July 2004)
+
+A companion essay to "Mind the Gap" (derived from Graham's talk at Oscon 2004), "Great Hackers" argues that the variation between programmers is so great it becomes a **difference in kind** — and that technology lengthens the lever, so the most productive individuals' contribution grows with time ("when you reach the point where 90% of a group's output is created by 1% of its members, you lose big if something drags their productivity down to the average").
+
+- **Beyond Brooks's 10x**: Graham credits Fred Brooks (1974, citing a 1968 study) with documenting 10x programmer variation, but argues he underestimated it: "the hard part isn't solving problems, but deciding what problems to solve. Imagination is hard to measure, but in practice it dominates the kind of productivity that's measured in lines of code."
+- **What great hackers want**: (1) interesting work over money — "a great programmer might be ten or a hundred times as productive as an ordinary one, but he'll consider himself lucky to get paid three times as much"; (2) good tools — they refuse to work with bad infrastructure, and infrastructure choice is a *social* decision ("when you choose a language, you're also choosing a community"; great programmers would voluntarily choose Python over Java); (3) open source — not just because it's better but because it gives control; (4) offices as places to think (the Dilbert/cubicle critique); (5) interesting problems — "nasty little problems" (buggy interfaces, ill-defined client customization) are "the death of a thousand cuts" because you learn nothing from them.
+- **The design paradox**: if you're not a hacker (or don't have taste), you can't recognize good hackers or good designers — "you can't manage a process intended to produce beautiful things without knowing what beautiful is." Non-programmer managers of programmers can be condensed to two words: "give up."
+- **Clumping**: great hackers clump together (Xerox PARC); attraction scales like the *square* of the environment quality — "winner take all. At any given time, there are only about ten or twenty places where hackers most want to work."
+- **Recognition is nearly impossible**: "If there is a Michael Jordan of hacking, no one knows, including him" — you can only judge a hacker by working with him (Trevor Blackwell misjudged at first; resume/appearance signals are noise), which is why high-tech areas form around universities.
+- **Bottom-up programming / toolmakers**: partition companies so smart people build tools rather than face users' nasty little problems directly — a precursor to Graham's later thinking about leverage and platform economics.
+
+**AI relevance**: the essay's core mechanism — technology magnifies productivity variation and concentrates output in a tiny minority — is the direct intellectual ancestor of today's AI-leverage debates: if software already magnified individual output, AI (the "longer lever") extends the same logic to non-programmers and makes the "who decides what problems to solve" question even more dominant than "who writes the code." Complements [[concepts/superlinear-returns]] and the [[entities/warp-terminal|agentic development]] thesis that a few humans supervising fleets of agents inherit the great-hacker multiplier.
+
 ### The 18 Mistakes That Kill Startups (Oct 2006)
 
 Graham's systematic inversion of startup advice: if you avoid every cause of failure, you succeed. The essay collapses all failure into one root cause — **not making something users want** — and enumerates 18 specific ways startups fail to do so: single founder, bad location, marginal niche, derivative idea, obstinacy, hiring bad programmers, choosing the wrong platform, slowness in launching, launching too early, having no specific user in mind, raising too little money, spending too much, raising too much money, poor investor management, sacrificing users to profit, not wanting to get your hands dirty, fights between founders, and a half-hearted effort. The framework remains the canonical YC-era diagnostic for startup failure modes.
@@ -238,7 +252,7 @@ Graham's systematic inversion of startup advice: if you avoid every cause of fai
 |--------|-------|------------|
 | **2001** | Programming language adoption, expert influence | "Being Popular" |
 | **2003** | Maker identity, nerd culture | "Hackers and Painters", "Why Nerds are Unpopular" |
-| **2004** | Wealth creation, income variation, moral fashion | "Mind the Gap", "What You Can't Say" |
+| **2004** | Wealth creation, income variation, hacker productivity, moral fashion | "Mind the Gap", "Great Hackers", "What You Can't Say" |
 | **2006** | Startup failure modes | "The 18 Mistakes That Kill Startups" |
 | **2023** | Superlinear returns, compounding dynamics | "Superlinear Returns" |
 | **2024** | How to do great work, founder management, essay theory | "How to Do Great Work", "Founder Mode", "The Best Essay" |

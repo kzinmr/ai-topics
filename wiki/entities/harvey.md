@@ -38,6 +38,7 @@ sources:
   - raw/articles/2026-06-19_harvey_legal-tech.md
   - raw/articles/2026-06-19_harvey_contract-review-process.md
   - raw/articles/2026-08-15_harvey_training-frontier-review-table-models-with-applied-compute.md
+  - raw/articles/2026-05-12_harvey_how-to-automate-contract-analysis-with-ai.md
 ---
 
 # Harvey
@@ -176,6 +177,28 @@ Harvey's process explainer (Jun 19, 2026) walks the full contract review lifecyc
 - **Five-year outlook**: AI takes initial review and clause extraction; lawyers concentrate on negotiation strategy and judgment-heavy provisions; business teams self-serve low-risk agreements through guided workflows. Harvey's platform play: Vault ingests hundreds of contracts into structured tables, Assistant drafts/redlines grounded in firm playbooks, Workflow Agents automate the intake → review → approval path, with citation-grounded outputs inside iManage, Word, and Outlook.
 
 Source: raw/articles/2026-06-19_harvey_contract-review-process.md
+
+### Contract Analysis Automation Guide (May 2026)
+
+Harvey's implementation guide for AI-powered contract analysis (published May 11, 2026) decomposes contract work into the pattern-recognition tasks that precede judgment and provides a selection + adoption methodology. Distinctive content not in the June platform/five-shifts pieces:
+
+**Task decomposition (the "before judgment" work):** Extraction (defined terms, parties, dates, governing law, commercial provisions), Classification (clause type + conformance to the company's standard playbook), Risk flagging (deviations from preferred language, unusual indemnification terms, uncapped liability, missing clauses), and Obligation tracking (renewal dates, notice periods, performance milestones, payment schedules). The guide stresses AI works **alongside the CLM stack rather than replacing it** — the CLM manages the operational layer while Harvey applies legal reasoning across the same documents.
+
+**How AI reads a contract differently than keyword search:** (1) ingestion and structural comprehension — parsing clause boundaries, defined terms, and cross-section relationships (e.g., "Term" in Section 3.2 refers to the definition in Section 1.1; a limitation-of-liability carve-out lives in a different section); (2) comparison against internal standards (the company's playbook / preferred clause library, output as a structured comparison reviewable in minutes); (3) legal reasoning rather than general summarization — a general-purpose LLM can summarize a contract but cannot reliably cite the supporting clause, compare against the organization's preferred position, or maintain confidentiality barriers between matters. The underlying method is RAG: retrieve the contract, clause library, and playbook positions first, then reason over them.
+
+**Which workflows to automate first — three-factor test:** Volume (contracts per month), Repetitiveness (similarity of analysis tasks), and Consequence of error (cost when a provision is missed). High scores on all three → NDA review, lease abstraction, vendor agreement review, standard clause compliance checks. Warning: teams that stall try to automate everything at once; lawyers should pick the first use case.
+
+**Five evaluation criteria for choosing a platform:** domain specificity (built for legal work vs adapted after the fact), citations lawyers can verify (every extracted term / flagged deviation / identified obligation links to the original language), security that matches the work's sensitivity (matter-level data isolation — one client's contract data never accessible to another's queries; SOC 2 as baseline, not differentiator; permissions-based access + data residency), integration with existing workflows (Microsoft 365, iManage, DMS, CLM coexistence — "tools that require lawyers to leave their working environment see lower adoption"), and governance with leadership visibility (query guardrails, audit trails of AI-assisted work product).
+
+**Four-phase adoption roadmap:** 1) start with one workflow and one team (define concrete metrics, e.g., NDA review 45 min → 15 min, or 95% deviation-detection accuracy vs senior benchmarks; include a visible champion); 2) validate with evidence, not enthusiasm (measure against the metrics; collect qualitative trust signals); 3) expand deliberately — each expansion (new function, contract type) is its own mini-pilot; 4) move from task automation to workflow automation (coordinated sequences — review against playbook, flag deviations, draft redlines, compile a GC summary — with human review at defined checkpoints). "The timeline matters less than the sequence."
+
+**Value dimensions beyond time savings:** Time (hours per review cycle), Accuracy (consistent flagging on the 5th or the 500th contract; fewer missed obligations and post-execution disputes), and **Capacity** — previously impractical portfolio-wide analysis: compliance assessment across the entire contract portfolio, diligence breadth across a full data room, regulatory exposure across thousands of agreements in dozens of jurisdictions.
+
+**Bayer case study:** after implementing Harvey across global legal operations, Bayer's lawyers use AI to identify contract risks, surface suggested mitigation language, and standardize clauses across templates — each legal team member saves an average of ~**3 hours per week**, and turnaround on contracts/compliance summaries that previously took days was reduced significantly. The lasting value: legal repositioned from routine extraction/review to strategic analysis.
+
+**Next phase — agentic workflows and portfolio-level contract intelligence:** AI executing coordinated multi-step sequences (contract analysis + due diligence + regulatory review + reporting) with human oversight at defined decision points; questions like "how many vendor agreements contain force majeure provisions that would be triggered by a specific regulatory change" become answerable in minutes rather than weeks. Scale cited: 142,000+ legal professionals across 60 countries, 60%+ of the AmLaw 100.
+
+Source: raw/articles/2026-05-12_harvey_how-to-automate-contract-analysis-with-ai.md
 
 ## Legal Research vs Traditional Tools (July 2026)
 

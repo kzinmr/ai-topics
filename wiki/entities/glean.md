@@ -30,6 +30,7 @@ sources:
   - raw/articles/2026-08-01_glean_glean-information-retrieval.md
   - raw/articles/2026-08-01_glean_work-ai-index-uk.md
   - raw/articles/2026-05-10_glean_knowledge-graph-agentic-engine.md
+  - raw/articles/2026-05-10_glean_enterprise-search-evaluation-2026.md
   - raw/articles/2026-07-28_glean_enterprise-knowledge-graph-cases-7-applications-that-deliver-roi.md
   - raw/articles/2026-07-09_glean_the-enterprise-ai-copilot-playbook-for-business-leaders.md
   - raw/articles/2026-05-10_glean_best-ai-tools-for-software-engineers.md
@@ -71,6 +72,23 @@ Glean benchmarked its MCP server against off-the-shelf MCP tools (Atlassian Rovo
 **Authors**: Neil Dhruva (Engineering), Karthik Rajkumar (Applied Scientist), Chenhao Yang (Software Engineer), Julie Mills (PMM)
 
 The benchmark demonstrates that **context layer quality** (centralized indexing + knowledge graph) directly determines both output quality and token cost — a finding with direct ROI implications as enterprise token consumption accelerates.
+
+### Enterprise Search Evaluation vs ChatGPT/Claude (May 2026)
+
+Glean published a blind evaluation of its full search stack against **OpenAI ChatGPT's company knowledge** and **Anthropic Claude's enterprise search** — the head-to-head with new entrants that the MCP-vs-off-the-shelf benchmark did not cover. On ~280 complex, real-world enterprise queries over comparable data sources, human graders (when they had a preference) chose Glean's answer as correct **1.9x as often as ChatGPT's** and **1.6x as often as Claude's**, and favored Glean on completeness across all six query classes (analyze data, code/debug, decide, draft, learn, locate).
+
+**Evaluation design:** Glean used its own live deployment as a proxy enterprise (no customer data), mining ~280 queries that matched the aggregated customer query-class distribution, skewed toward "complex" queries (multi-source = multi-hop reasoning needed). Comparable connectors were connected per pairing: ChatGPT Business company knowledge (Google Drive, Calendar, GitHub, Slack — lacking Jira/Salesforce at the time) vs Glean on GPT-5.1; Claude Teams enterprise search on Sonnet 4.5 (Confluence, Jira, GitHub, Drive, Slack, Salesforce) vs Glean on Sonnet 4.5. Grading was blind, randomized, on a five-point preference scale for correctness + completeness, with citations shown and positional bias mitigated by random switching.
+
+**Context rot framing:** The article opens with the argument that models alone fall short on enterprise context — LLMs have a fixed attention budget, and as context expands, attention spreads thinner and interference blurs facts (the "context rot" phenomenon, citing the Adobe study via Timothy Lee's Understanding AI newsletter). Glean's thesis: agents are on the precipice of longer runs requiring far more context, so early retrieval errors carry forward and undermine the whole run. The piece is also a **one-year MCP retrospective**: "when MCP took off, it looked like a simple, plug-and-play way to wire AI to data... a year later, the question has shifted, as the quality of off-the-shelf MCP tools didn't deliver enterprise-grade quality." Industry context cited: Cursor uses code search to improve answer accuracy by 12.5%; Anthropic's context engineering guidance treats context as a critical resource; OpenAI's company knowledge itself includes some synced (indexed) connectors.
+
+**Competitor tool-calling strategies observed:**
+- **Claude takes a "deep" path** — thinks more about the question, issues sequential tool calls, reads entire results in depth, pivots when wrong. Because MCP-based tools have different defaults/limits/data shapes, Claude ends up with uneven context per source (long Slack threads can dominate the context window) and struggles to course-correct once committed to a path.
+- **ChatGPT takes a "wide" path** — parallel searches, snippet skimming, many documents touched, then deep dive into a few. Can lead to context overload and difficulty synthesizing conflicting (old vs new) data.
+- Both compensate for weaker search by **over-calling tools** — overfetching data is expensive and pulls in noise; every tool call is an expense and can hit rate limits.
+
+**Why Glean won (per the article):** finding the canonical document; per-enterprise semantic search models (trained and stored in the customer's VPC, attuned to company-specific jargon); the Enterprise Graph for disambiguating ambiguous queries (e.g., "What accounts in Salesforce is Martinique assigned to?" — Glean inferred she is a Customer Success Manager and returned 43 accounts, while Claude retrieved a single record listing her as account owner); and multiple specialized indexes (dedicated lexical + semantic indexes for code search).
+
+Source: raw/articles/2026-05-10_glean_enterprise-search-evaluation-2026.md. Related: [[concepts/context-engineering/context-rot]] (the degradation mechanism Glean argues its indexed context layer prevents), [[concepts/rag-systems]], [[concepts/ai-agent-engineering]] (tool-calling strategy analysis).
 
 ### Glean MCP Gateway (June 2026)
 

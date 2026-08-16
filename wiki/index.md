@@ -188,7 +188,7 @@
 - [[entities/cursor-3]] — Cursor 3
 - [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24); Fast regex search research — client-side n-gram indexing for agent grep (Mar 2026)
 - [[entities/cyrilxbt]] — @cyrilxbt
-- [[entities/dan-luu]] — Software reliability engineer and data analyst known for systematic incident analysis and empirical studies of tech c... (non-AI essay catalog includes cgroup throttling analysis, Aug 2026)
+- [[entities/dan-luu]] — Software reliability engineer and data analyst known for systematic incident analysis and empirical studies of tech c... (non-AI essay catalog includes cgroup throttling + normalization of deviance, Aug 2026)
 - [[entities/dan-mcinerny]] — Dan McInerney
 - [[entities/dan-shipper]] — Dan Shipper — CEO of Lex (formerly Lex.page); writer on AI productivity, agent workflows
 - [[entities/daniel-de-laney]] — Daniel De Laney
@@ -329,7 +329,7 @@
 - [[entities/giles-thomas]] — Giles Thomas; enriched with Part 34b (JAX GPT-2 Small) and Poppy training box hardware (July 9)
 - [[entities/gilesthomas]] — Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technica...
 - [[entities/gkisokay]] — gkisokay
-- [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons + enterprise knowledge graph cases (Aug 2026); How-to-Choose AI Agent Builder guide — no-code/low-code/framework taxonomy, weighted scoring framework (Jan 2026); RAG vs fine-tuning guide (Feb 2026)
+- [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons + enterprise knowledge graph cases (Aug 2026); How-to-Choose AI Agent Builder guide — no-code/low-code/framework taxonomy, weighted scoring framework (Jan 2026); RAG vs fine-tuning guide (Feb 2026); Enterprise Search Evaluation vs ChatGPT/Claude — 1.9x/1.6x correctness preference on ~280 queries, context rot framing, MCP retrospective (May 2026)
 - [[entities/glimpse]] — Glimpse
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
 - [[entities/glm-5v-turbo]] — GLM-5V-Turbo
@@ -358,7 +358,7 @@
 - [[entities/hanchunglee]] — Hanchunglee
 - [[entities/hark]] — Hark; Handoff computer-using agent, $0.18/M input tokens vs GPT 5.5's $5.00, 5s per-turn (Aug 10)
 - [[entities/harrison-chase]] — Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framewor...
-- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8); AI-Powered Due Diligence for M&A — data room workflows, GSK Stockmann 15-75% savings, PwC 10k+ workflows, 25k+ custom agents (Apr 2026); Legal Tech Overview guide — six core categories, citation grounding baseline (Jun 18); How-to-Choose Legal AI Platform evaluation guide — 10 criteria, 92% adoption, 25h/mo savings (Apr 2026); In-House Legal Operations guide — 89% outside-counsel spend stat, in-house role ladder, 6-18mo build sequence, small-team habits (Jun 22)
+- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8); AI-Powered Due Diligence for M&A — data room workflows, GSK Stockmann 15-75% savings, PwC 10k+ workflows, 25k+ custom agents (Apr 2026); Legal Tech Overview guide — six core categories, citation grounding baseline (Jun 18); How-to-Choose Legal AI Platform evaluation guide — 10 criteria, 92% adoption, 25h/mo savings (Apr 2026); In-House Legal Operations guide — 89% outside-counsel spend stat, in-house role ladder, 6-18mo build sequence, small-team habits (Jun 22); Contract Analysis Automation guide — task decomposition, 3-factor workflow selection, 5 evaluation criteria, 4-phase adoption, Bayer ~3h/wk case study (May 11)
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM; Salesforce Ventures Generative AI Fund; relational intelligence category (L3)
 - [[entities/halo-tamper-evident-agent-runtime]] — Open-source tamper-evident runtime evidence for AI agents; append-only hash-chained log (Apache-2.0)
 - [[entities/hebbia]] — Hebbia
@@ -633,7 +633,7 @@
 - [[entities/parsagon]] — Parsagon
 - [[entities/paul-hoekstra]] — Paul Hoekstra — Agentic Engineering 4-layer framework, Context Rot mechanistic explanation (Paul's Pipeline)
 - [[entities/paul-iuzstin]] — Paul Iusztin
-- [[entities/paulgraham-com]] — Paul Graham; Startup = Growth definitional essay (growth rate as the one number founders must know), YC weekly 5-7% benchmark, growth-as-compass methodology (Sep 2012)
+- [[entities/paulgraham-com]] — Paul Graham; Startup = Growth definitional essay (growth rate as the one number founders must know), YC weekly 5-7% benchmark, growth-as-compass methodology (Sep 2012); Great Hackers essay — programmer productivity variation, design paradox, clumping (Jul 2004)
 - [[entities/perceptron-ai]] — Perceptron AI
 - [[entities/periodic-ai]] — Periodic AI (Periodic Labs) — RL research company led by William Fedus (ex-OpenAI); AI Scientist
 - [[entities/perplexity]] — Perplexity
@@ -864,7 +864,7 @@
 - [[entities/wafer-ai]] — Wafer; cross-platform model serving across NVIDIA, AMD, TPUs; Kimi K3 on MI355X benchmark (Aug 2026)
 - [[entities/walden-yan]] — Walden Yan
 - [[entities/wandb-weave]] — W&B Weave
-- [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23)
+- [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23); Terminal Internals Explainer — PTY/line discipline/escape sequences deep dive (Jan 2023)
 - [[entities/weaviate]] — Weaviate; added Engram GA — memory-as-asynchronous-infrastructure for AI agents (June 25)
 - [[entities/webmcp]] — WebMCP
 - [[entities/weights-and-biases]] — Weights & Biases

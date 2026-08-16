@@ -1,7 +1,7 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-08-05
+updated: 2026-08-16
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-07-17_warp_how-to-build-a-cloud-software-factory-self-improving-code-review.md
   - raw/articles/2026-08-04_warp_how-to-build-a-cloud-software-factory-computer-use-verification.md
   - raw/articles/2026-08-05_warp_introducing-the-warp-agent-cli-coding-agent.md
+  - raw/articles/2026-05-10_warp_what-happens-when-you-open-a-terminal-and-enter-ls.md
 ---
 
 # Warp Terminal
@@ -250,6 +251,22 @@ On August 4, 2026, Warp launched the **Warp Agent CLI**, a standalone CLI versio
 **Pricing**: Warp subscription from $18/month ($20 of inference included); ad hoc credits from $10 without a subscription; or bring-your-own API key / OpenAI-compatible endpoint / SuperGrok login.
 
 The CLI release extends the [[concepts/agentic-engineering]] software factory trajectory — the agent now travels with the developer across any terminal rather than living only inside Warp Terminal.
+
+## Terminal Internals Explainer (January 2023)
+
+Warp's classic engineering explainer (by Suraj Gupta and Andy Carlson, published Jan 11, 2023) answers "what happens when you open a terminal emulator and enter `ls`" — the terminal-infrastructure heritage behind Warp's later agent work (the mux PTY architecture of the Warp Agent CLI is a direct descendant of this design space):
+
+- **History**: teletypes (TTY) → fully electronic terminals (DEC VT100, 1978, which popularized ANSI escape codes) → terminal emulators. The modern terminal architecture preserves the classic teletype model: a kernel **TTY driver** with a **line discipline** mediating between input and output, with the line discipline buffering characters until Enter and providing program-independent shortcuts (ctrl-w, etc.).
+- **PTY creation**: the terminal asks the kernel to create a **pseudo-TTY** — paired file descriptors replacing the old physical wire. The **leader** interfaces with the terminal emulator; the **follower** is a character device with an on-disk path (visible via the `tty` command) used by the shell and its child processes (stdin/stdout/stderr = fd 0-2).
+- **Shell initialization**: login vs non-login shells run different startup scripts (e.g., Zsh: `/etc/zshrc` + `$HOME/.zshrc` for non-login; `/etc/zprofile` + `$HOME/.zprofile` for login). Prompts are stored in variables (PS1) with placeholders; `precmd_functions` in Zsh runs arbitrary code per prompt (e.g., Conda env display).
+- **Keystroke handling**: keys are translated to ASCII and written to the PTY leader; the line discipline interprets special characters (backspace = ERASE edits its buffer; CTRL-C = ETX/INTR sends SIGINT to the follower and echoes `^C`; Enter = NL/CR forwards the buffered line). Modern shells disable line-discipline editing/echo (so they can implement tab completion and autosuggestions) but delegate special-character handling like ^C via the **termios** interface.
+- **Warp's difference**: a traditional terminal streams keystrokes to the PTY as typed; Warp buffers input at the app layer and only writes to the PTY on Enter (or a designated keystroke), enabling an **IDE-like editing experience** — an early architectural decision that later informed its agent-aware terminal infrastructure.
+- **Command execution**: the shell tokenizes/parses the command, resolves tokens through aliases → functions → environment variables → builtins → PATH executables (a recursive resolution), then forks a child process for executables (`ls` → `/bin/ls`), with the process tree visible via `pstree`. `cd` must be a builtin because it mutates the shell process's state, not a child's.
+- **Output & escape sequences**: child output flows through the PTY follower → line discipline → leader → terminal display. Programs emit escape sequences (starting with ESC, `\x1b`) to control color, cursor movement, and scrolling — the mechanism behind `ls --color`; an incompatible terminal simply ignores them.
+
+The explainer is pre-AI (2023) but documents the terminal primitives (PTY, line discipline, escape sequences) that Warp's agent harnesses later built on — e.g., the Warp Agent CLI's "mux PTY" layer gives agents native awareness of terminal I/O blocks. Non-AI content, catalogued as engineering heritage for the entity.
+
+Source: raw/articles/2026-05-10_warp_what-happens-when-you-open-a-terminal-and-enter-ls.md (article date Jan 11, 2023; filename uses scrape date).
 
 ## Strategic Context
 
