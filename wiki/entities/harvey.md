@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-15
+updated: 2026-08-16
 tags:
   - security
   - company
@@ -27,6 +27,7 @@ sources:
   - raw/articles/2026-07-28_harvey_scaling-document-processing-across-harvey.md
   - raw/articles/2026-07-31_harvey_ai-trademark-search.md
   - raw/articles/2026-06-19_harvey_legal-operations-management.md
+  - raw/articles/2026-06-23_harvey_in-house-legal-operations.md
   - raw/articles/2026-06-19_harvey_legal-operations-optimization.md
   - raw/articles/2026-08-01_harvey_legal-ai-vs-traditional-legal-research.md
   - raw/articles/2026-06-09_harvey_legal-knowledge-management.md
@@ -350,6 +351,36 @@ The guide argues **AI governance is the new responsibility that didn't exist fiv
 The guide explicitly contrasts **general-purpose AI tools** (require lawyer to do most framing/verification) with **platforms built specifically for legal work** (ground outputs in cited sources lawyers can verify) — positioning Harvey in the latter category. Scale signal cited: 142,000+ legal professionals, 1,500+ customers in 60+ countries, 60%+ of AmLaw 100.
 
 Source: raw/articles/2026-06-19_harvey_legal-operations-management.md
+
+## In-House Legal Operations Guide (June 2026)
+
+Harvey published the **"Complete Guide to In-House Legal Operations"** (Jun 22, 2026) — the in-house-specific counterpart to the [[#Legal Operations Management Guide (June 2026)|Legal Operations Management guide]], which covers the discipline generally (firm + in-house). This guide is framed around the GC's role shift from defensive risk manager to strategic business partner, and adds the operational detail that matters inside a corporate legal department.
+
+### Benefits (Five Areas)
+1. **Spend visibility and cost control** — most departments send **89% of external spend to outside counsel**; rate governance + e-billing + panel consolidation commonly cut outside counsel costs by double digits. Spend data feeds headcount planning and make-or-buy decisions.
+2. **Faster cycle times** — cycle time tracked from request to signature, broken down by stage; centralized intake + templates + playbooks can take a standard NDA from multi-day round trip to under an hour.
+3. **Better risk visibility** — litigation dashboards, regulatory exposure tracking, contract obligation registers turn one-matter-at-a-time risk into board-ready pattern visibility.
+4. **More productive, better-developed team** — KM surfaces prior work, intake routes correctly first pass, self-service absorbs routine questions; retention benefit from lawyers spending more time on substantive work.
+5. **Stronger outside counsel relationships** — annual business reviews, scorecards, convergence strategies for better rates, diversity reporting tied to engagement decisions.
+
+### Core Functions and Roles
+A mature function spans 8-12 areas (CLOC Core 12): financial management, technology (matter management, e-billing, CLM, e-signature, document management), process design/workflow, outside counsel management, knowledge management, data and reporting (KPIs like cycle time and spend by matter type), risk and compliance operations (GDPR/CCPA into workflows).
+
+**Role ladder specific to in-house teams:**
+- **Head of Legal Operations** (sometimes Director) — runs the function, owns operating model/tech roadmap/budget/outside counsel program; typically 8-15 years experience, partners with GC and CFO.
+- **Legal Operations Manager** — hands-on owner of systems/processes/provider relationships; often the **first dedicated hire** when the GC can no longer absorb ops work.
+- **Specialists** (larger teams) — Legal Technology Lead, Data and Reporting Analyst, E-billing Analyst.
+- **Hybrid/shared** — in smaller departments a senior paralegal or legal project manager carries ops duties alongside a primary job.
+
+### Build-Out Sequence (6-18 Months)
+Assessment (trace 3-4 recent matters from intake to closure, noting handoffs/delays) → prioritize **1-3 high-impact use cases** (contract intake, faster NDA, outside counsel management) → business case + executive sponsor → pilot with one team/region → change management (training, published guidance). Adoption, not tooling, is where these efforts succeed or stall.
+
+### Small and Scaling Teams
+Teams of 1-3 in-house lawyers should start with **habits, not hires**: basic intake form, standard templates, simple matter tracker, shared storage. The trigger for dedicated tools/CLM is when contract volume or outside counsel spend crosses a felt threshold; the trigger for a first legal ops hire is roughly **five lawyers** (or earlier with heavy outside counsel spend/contract volume), or when the GC spends a meaningful share of the week on budgeting/provider management/reporting.
+
+**FAQ highlights**: legal ops professionals do **not** need to be lawyers (finance, project management, IT, data analytics backgrounds are typical); AI's role is first-pass work (contract review, clause extraction, request triage, routine drafting) with mandatory lawyer review — "treating a first draft as a finished product is the fastest way to turn a productivity gain into a liability."
+
+Source: raw/articles/2026-06-23_harvey_in-house-legal-operations.md
 
 ## Legal Operations Optimization Guide (June 2026)
 

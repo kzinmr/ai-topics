@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-08-15
+updated: 2026-08-16
 tags:
   - company
   - search
@@ -14,6 +14,7 @@ sources:
   - https://www.glean.com/
   - https://www.glean.com/about
   - raw/articles/2026-05-10_glean_retrieval-augemented-generation-vs-fine-tuning.md
+  - raw/articles/2026-05-10_glean_choose-best-ai-agent-builder.md
   - raw/articles/2026-05-10_glean_the-definitive-guide-to-ai-based-enterprise-search-for-2025.md
   - raw/articles/2026-05-15_glean_cowork-mcp-eval.md
   - raw/articles/2026-05-21_glean_health-agents-2026.md
@@ -260,6 +261,18 @@ Glean published a six-platform comparison of agent orchestration options, sortin
 | **Microsoft Agent Framework + Foundry** | Framework + cloud | Graph workflow engine, deterministic branching; MCP + A2A, portability outside Microsoft needs testing |
 
 Key thesis: the category has blurred because every vendor uses "agent orchestration," but buyers differ by who owns workflows and where context lives. The article's rough test — "if the job fits one prompt and one tool call, skip the platform; if it needs routing, conditional logic, parallel work, human approval, or a durable record, orchestration belongs in production architecture." Context cites Glean's Work AI Index finding that while 87% use AI at work and 75% save ~11 hours/week, only 13% say their organizations perform significantly better — framing the gap as "an orchestration and governance problem." Also cites 36% of AI sessions failing outright, motivating checkpointing/durable-execution requirements.
+
+### How to Choose an AI Agent Builder (Jan 2026)
+
+Glean's vendor-selection guide (last updated Jan 27, 2026) complements the [[#Agent Orchestration Platforms Compared (August 2026)|August orchestration comparison]] with a **buyer-side evaluation methodology** rather than a feature-by-feature platform survey. Distinctive content:
+
+- **Three-category taxonomy**: no-code platforms (visual, drag-and-drop, for non-technical users), low-code platforms (simplified environments with some customization), developer-focused frameworks (full coding environments). The guide's decision rule ties category to team profile: business/operations → no-code; citizen developers/analysts → low-code; software engineers/data scientists → developer frameworks; mixed teams → hybrid platforms with both visual and code interfaces.
+- **Requirements-first checklist**: primary use cases, expected agent volume/user scale, required integrations, security/compliance/governance requirements, budget/TCO, deployment timeline — before comparing vendors.
+- **Five-platform comparison**: Vertex AI Agent Builder (enterprise-grade compliance/scalability), LangChain (deep customization, open-source), Lindy AI (no-code business automation), CrewAI (multi-agent workflows — 31,000+ GitHub stars, 900,000 downloads cited), and Glean Agent Builder (enterprise Work AI, 100+ app integration, cloud + on-premises).
+- **Prototype/PoC testing methodology**: seven-step structured test (setup/config → agent creation → data integration → testing/iteration → performance evaluation → team feedback → comparison matrix), designed to surface hidden costs (integration fees, API calls, enterprise features) before commitment.
+- **Weighted scoring framework**: Agent capabilities 25%, Integration breadth 20%, Security/compliance 20%, Ease of use 15%, Vendor reliability 10%, Total cost of ownership 10% — with explicit TCO and vendor-lock-in questions (can you export agent configurations? standard APIs/data formats? migration path?).
+
+Source: raw/articles/2026-05-10_glean_choose-best-ai-agent-builder.md
 
 ### Comprehensive Guide to Information Retrieval (August 2026)
 

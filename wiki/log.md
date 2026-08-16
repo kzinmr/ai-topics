@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-16] raw-backlog-ingest 00:00 | glean agent-builder guide + harvey in-house legal ops + danluu cgroup throttling
+
+- **Update: [[entities/glean]]** — Added "How to Choose an AI Agent Builder (Jan 2026)" section: no-code/low-code/developer-framework taxonomy with team-profile mapping (business -> no-code, citizen devs -> low-code, engineers -> frameworks, mixed -> hybrid), requirements-first checklist, five-platform comparison (Vertex AI Agent Builder / LangChain / Lindy AI / CrewAI with 31k GitHub stars & 900k downloads / Glean Agent Builder), seven-step PoC testing methodology, and weighted scoring framework (agent capabilities 25%, integration breadth 20%, security/compliance 20%, ease of use 15%, vendor reliability 10%, TCO 10%). Complements the Aug 2026 orchestration comparison. Source: raw/articles/2026-05-10_glean_choose-best-ai-agent-builder.md.
+- **Update: [[entities/harvey]]** — Added "In-House Legal Operations Guide (June 2026)": in-house-specific counterpart to the Legal Operations Management guide. Five benefits (89% of external spend to outside counsel stat, cycle-time reduction with NDA multi-day -> under-an-hour, risk visibility, team development/retention, outside counsel convergence), CLOC Core 12 functions, in-house role ladder (Head of Legal Ops 8-15 yrs experience; first Legal Ops Manager hire at ~5 lawyers; specialists; hybrid/shared), 6-18 month build sequence (assessment -> 1-3 use cases -> business case -> pilot -> change management), small-team habits-first guidance. Source: raw/articles/2026-06-23_harvey_in-house-legal-operations.md.
+- **Update: [[entities/dan-luu]]** — Catalogued "The container throttling problem" (Apr 2019 excerpt from internal Twitter doc co-authored with David Mackey) in Notable Essays (Non-AI): CFS bandwidth-control quota throttling failure mode, ~50% reserved-CPU fallover point, service-1 case study (~2x capacity from thread-pool reduction), critique of the 2x-logical-cores thread-pool advice; AI relevance noted for CPU-inference serving latency. Source: raw/articles/danluu.com--cgroup-throttling--9fe75aa2.md.
+- **Skip (non-AI)**: maskray.me SFrame remarks (stack-walking format for userspace profiling; compiler/toolchain content, no AI relevance, no existing entity); hex.tech Matplotlib/Plotly/Seaborn visualization tutorial (2023 data-viz guide, no agent/AI content).
+- Registered all 5 batch candidates as processed in processed_raw_articles.json (sub-registry 151 -> 156).
+
 ## [2026-08-15] x-accounts-scan 22:30 | NVIDIA MOPD teacher model + Cerebras Big Chip Club interview
 
 - **Create: raw/articles/2026-08-14_nvidia_nemotron-teacher-competition-coding.md** — Raw scrape of NVIDIA's HF model card for NVIDIA-Nemotron-Labs-Teacher-Competition-Coding (Nemotron 3 Ultra MOPD teacher; 550B total / 55B active LatentMoE, OpenMDW-1.1).
