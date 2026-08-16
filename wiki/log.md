@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-08-16] dreaming wiki-ingest | second-pass saturation confirmation — upstream fully covered
+
+- **Upstream dreaming-group (18:10)** already committed saturation pass `46f4ca36`: 0 takes, 19 skips, 6 newly archived.
+- **Archive-index absence probe**: 77 recent files scanned, 2 never-archived (both `dfarq.homeip.net` vintage computing: IBM PC printer + Commodore Amiga 1984) — zero AI relevance, batch-skipped.
+- **Archive result**: "All items already archived (dedup)" — 0 new, confirming upstream's archive covered all URLs.
+- **Pipeline saturation confirmed**: blog-wiki-ingest, newsletter-wiki-ingest, active-crawl, raw-backlog-ingest, trending-topics all ran today with full coverage.
+- **Takes=0, References=0, Enrichments=0** — genuine saturation, no wiki changes needed.
+
+
 ## [2026-08-16] dreaming | Saturation pass — 0 articles collected, 8 filesystem probe articles all already covered
 
 - **Checkpoint**: `total_articles: 0`, `recent_raw_articles: 218`, range 2026-08-09 to 2026-08-16
