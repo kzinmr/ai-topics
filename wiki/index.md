@@ -905,7 +905,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1986 pages)
+## Concepts (1988 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1052,6 +1052,7 @@
 - [[concepts/ai-benchmarks/browsecomp]] — BrowseComp
 - [[concepts/ai-benchmarks/chartqa]] — ChartQA
 - [[concepts/ai-benchmarks/clawsbench]] — ClawsBench
+- [[concepts/ai-benchmarks/conceptual-reasoning-index]] — Conceptual Reasoning Index (CRI) — Redwood/Anthropic benchmark for unverifiable "conceptual reasoning" (LMCA + ACCoRD + DTBench); Opus 5 tops 73.6 vs ~91 ceiling (Aug 2026)
 - [[concepts/ai-benchmarks/core-bench]] — CORE-Bench
 - [[concepts/ai-benchmarks/countbenchqa]] — CountBenchQA
 - [[concepts/ai-benchmarks/cryptanalysisbench]] — CryptanalysisBench — LLM cryptanalysis benchmark; Anthropic researchers used Claude Mythos Preview to find mathematical flaws in HAWK and weakened AES; 60hr/$100K continuous operation; ETH Zurich/TAU/Haifa partnership (Jul 28)
@@ -1591,7 +1592,7 @@
 - [[concepts/deepseek-r1]] — DeepSeek-R1
 - [[concepts/deepseek-v3]] — DeepSeek-V3
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2
-- [[concepts/deepseek-v4]] — DeepSeek-V4 — 1.6T MoE, 1M context, Hybrid Attention, Unsloth GGUF quants available; V4-Pro-0813 checkpoint (Aug 13, API-only, OpenRouter)
+- [[concepts/deepseek-v4]] — DeepSeek-V4 — 1.6T MoE, 1M context, Hybrid Attention, Unsloth GGUF quants available; V4-Pro-0813 checkpoint (Aug 13, API-only, OpenRouter); V4-Pro GA release + peak/off-peak pricing (Aug 13)
 - [[concepts/deepseek-v4-serving]] — Serving DeepSeek-V4: Inference Systems Perspective
 - [[concepts/deepseek-vision]] — DeepSeek Vision — Multimodal Capabilities
 - [[concepts/deepspec-dspark]] — DeepSpec & DSpark — DeepSeek open-source speculative decoding inference framework; DSpark distributed engine achieves 60–85% faster LLM generation; supports DSpark/DFlash/Eagle3 draft models (June 27)
@@ -2081,6 +2082,7 @@
 - [[concepts/linear-walkthroughs]] — Linear Walkthroughs
 - [[concepts/linguistic-vertigo]] — A cognitive phenomenon affecting human language perception through daily interaction with LLMs, and the concepts of l...
 - [[concepts/lisp]] — Lisp
+- [[concepts/little-learner-llm]] — LittleLearner — K-5-curriculum-restricted LMs (0.6B/1.3B/5B); scaling/post-training/ICL elicit but don't acquire out-of-scope capability (arXiv 2608.13545)
 - [[concepts/llama-4]] — LLaMA 4
 - [[concepts/llm-assisted-learning]] — LLM-Assisted Learning — systematic methodology for using LLMs to learn complex topics via iterative knowledge-building and simulation (Laurentiu Raducu, Aug 2026)
 - [[concepts/llama-cpp]] — Llama Cpp
@@ -2266,7 +2268,7 @@
 - [[concepts/multi-agents/multi-agent-orchestration-patterns]] — Multi-Agent Orchestration Patterns
 - [[concepts/multi-agents/multi-agent-research-system]] — Multi-Agent Research System (Anthropic)
 - [[concepts/multi-agents/multi-agent-rl]] — Multi-Agent RL for Embodied AI
-- [[concepts/multi-agents/multi-agent-systems]] — Multi-Agent Systems
+- [[concepts/multi-agents/multi-agent-systems]] — Multi-Agent Systems — Anthropic empirical failure modes: collusion/sabotage (Aug 2026)
 - [[concepts/multi-agents/multi-agents-cognition-devin-orchestration]] — Multi Agents Cognition Devin Orchestration
 - [[concepts/multi-agents/multi-agents-whats-actually-working]] — Multi-Agents: What's Actually Working
 - [[concepts/multi-channel-agents]] — Multi Channel Agents

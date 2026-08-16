@@ -1,7 +1,7 @@
 ---
 title: DeepSeek-V4
 created: 2026-05-08
-updated: 2026-08-13
+updated: 2026-08-16
 type: concept
 tags:
   - model
@@ -24,6 +24,7 @@ sources:
   - raw/articles/simonwillison.net--2026-jul-31-deepseek-v4-flash-0731--91e3e788.md
   - raw/newsletters/2026-08-02-deepseek-s-flash-sale-google-s-gemini-finds-its-feet-and-music-copyright-bites-b.md
   - raw/articles/simonwillison.net--2026-aug-12-deepseek-v4-pro-0813--f7172b1e.md
+  - https://api-docs.deepseek.com/news/news260813/
 ---
 
 # DeepSeek-V4
@@ -341,6 +342,22 @@ Key characteristics:
 - **Continuation of checkpoint cadence**: Follows the V4-Flash-0731 pattern (July 31) — DeepSeek is shipping frequent checkpoint updates rather than waiting for major version releases
 
 Source: [[raw/articles/simonwillison.net--2026-aug-12-deepseek-v4-pro-0813--f7172b1e.md]] (Simon Willison, 2026-08-12)
+
+## V4-Pro GA Release + Peak/Off-Peak Pricing (August 2026)
+
+On August 13, 2026, DeepSeek published the official **DeepSeek-V4-Pro GA (General Availability) Release** announcement, formalizing the V4-Pro-0813 checkpoint and adding several changes:
+
+- **Flexible reasoning effort for V4-Pro & V4-Flash**: three tiers — *low* for simple tasks, *high* for daily Agent workflows, *max* for complex tasks. This is the official codification of the adaptive reasoning-effort behavior Willison observed across the three levels on V4-Pro-0813.
+- **Native OpenAI Responses API support**, optimized for Codex with one-click setup — continuing the OpenAI-compatible defection play noted for V4-Flash-0731.
+- **V4 Pro on app/web via "Expert Mode"**, with API model names unchanged.
+
+### Peak / Off-Peak API Pricing
+
+Alongside the GA release, DeepSeek introduced **peak and off-peak rates**: off-peak rates are **50% lower than peak**, enabling more flexible workload scheduling. The new pricing takes effect at **16:00 UTC on August 16, 2026**.
+
+This reverses the direction of DeepSeek's prior pricing moves — where the May 2026 "permanent 75% cut" made V4-Pro 3–19× cheaper than frontier competitors, the GA-era pricing introduces time-of-day segmentation (and, per press reports, notable list-price increases on some endpoints) as DeepSeek shifts from an aggressive market-share "dumping" strategy toward **revenue optimization and capacity management** via peak/off-peak demand shaping.
+
+Source: [DeepSeek API Docs — V4-Pro GA Release](https://api-docs.deepseek.com/news/news260813/) (2026-08-13)
 
 ## Pricing: Permanent 75% Cut (May 2026)
 
