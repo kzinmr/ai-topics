@@ -17,6 +17,8 @@ tags:
 sources:
   - raw/articles/2026-08-14_zai_glm-5-3.md
   - raw/newsletters/2026-08-14-glm-5-3-how-chinese-labs-keep-stride-with-the-frontier.md
+  - raw/newsletters/2026-08-15-nobody-built-a-bigger-model.md
+  - https://read.getsuperintel.com/p/nobody-built-a-bigger-model
 ---
 
 # GLM-5.3
@@ -73,6 +75,18 @@ The emergent-cyber framing connects GLM-5.3 to the broader [[concepts/china-agen
 ## Post-Training Approach: Environment Scaling
 
 As agent capability improves, the difficulty of scaling post-training shifts from the model to the **environment**. Z.ai built pipelines that synthesize long-horizon environments end to end (research agents collect task patterns; a judge agent verifies solvability; verifiers are synthesized without access to reference solutions). GLM-5.3 carries over GLM-5.2's RL strategies including **SAO with compaction**, which helps gains persist on long-horizon tasks.
+
+## Post-Training Economics: Capability Is Manufactured One Domain at a Time (Superintel+)
+
+Superintel+'s ["Nobody Built a Bigger Model" deepdive](https://read.getsuperintel.com/p/nobody-built-a-bigger-model) (Aug 15, 2026, mostly paywalled) frames the same release as evidence that **post-training has "quietly become the main event"** — several labs froze pretraining and "went to work on what happens afterwards":
+
+- **"Scaling post-training is all we did for GLM-5.3"** — the article stresses this sentence from Z.ai's release post as something "frontier labs almost never write down": the underlying 743B base model was "left completely untouched."
+- **Uneven gains are the mechanism, not noise**: the same training run multiplied Terminal-Bench 3.0 by 6.15 (4.6→28.3 in the 59 days between release posts), roughly doubled ExploitBench (24.4→54.4), but moved Terminal-Bench 2.1 only 81.0→88.2 and ALE 23.8→28.5, with HLE with Tools at 54.7→62.5 — and the vendor "did not hide the losses" on three of the six published benchmarks. Superintel+ reads this as capability being **manufactured, one domain at a time** (the thesis in the article's section header).
+- **Two caveats attached to every number**: 28.3 still means the model "fails roughly seven tasks out of ten" (a move from near-total failure to mostly-failure), and every figure is vendor-produced with no independent evaluator verification.
+- **Post-training compute vs pretraining compute**: the article cites one company that "admitted its post-training compute exceeded its pre-training compute" and published the curve — the "clearest evidence" of the compute-shift thesis; it also argues such evidence keeps coming from Chinese/open-weight labs "and what their Western counterparts are not saying" (paywalled section).
+- **"Three walls where this stops working"**, including one a frontier lab documented against its own model (paywalled section).
+
+The framing complements [[entities/nathan-lambert|Lambert]]'s strategic analysis below and the [[concepts/post-training/post-training]]-centric direction of open-model competition — while adding the caveat that large post-training gains on hard-from-low-base benchmarks do not yet equal reliable task completion.
 
 ## Training Infrastructure (slime)
 
