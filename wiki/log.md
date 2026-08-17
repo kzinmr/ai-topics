@@ -1,3 +1,16 @@
+## [2026-08-17] raw-backlog-ingest 14:00 | all-skip batch: watermark article already captured + 4 non-AI articles
+
+- **Batch**: 5 candidates (raw_backlog_collect.py --sort ai-hint, run 20260817T140001Z). Takes=0, References=0, Skips=5.
+- **Skip (already captured)**: daringfireball.net Anthropic watermark "perversion of writing" (Aug 16) -- already processed today 10:30 by blog-wiki-ingest: created entities/daringfireball-net.md (raw file in sources) + enriched concepts/security-and-governance/ai-text-watermarking.md with Gruber criticism (semantic word-choice degradation, broken imperceptibility promise, global application, secret-key suspicion) and Padolsey rebuttal. No redundant take.
+- **Skip (non-AI, out of scope) x4**:
+  - idea.popcount.org Strange Loop IP Spoofing (2016) -- Marek Vavrusa Cloudflare DDoS/IP-spoofing talk transcript, networking security, no AI relevance.
+  - filfre.net Homeworld (Jan 2026) -- game history essay; raw file already listed in entities/filfre-net.md References.
+  - righto.com Apollo "8-Ball" FDAI teardown (Jun 2025) -- hardware history; entities/righto-com.md has Aerospace section.
+  - paulgraham.com "What You'll Wish You'd Known" (Jan 2005) -- high-school advice essay; raw file already listed in entities/paulgraham-com.md References.
+- **Archive**: wiki/raw/archived/triage/raw_backlog/2026-08-17_20260817T140001Z.json (5 new archived, total archive URLs 2755).
+- **Registry**: 5 files marked done in /opt/data/.hermes/processed_raw_articles.json (top-level + processed_articles sub-registry) to prevent re-selection every 6h.
+- No page changes; no index.md changes.
+
 ## [2026-08-17] active-crawl | Autoformalization (MathForm) + MathCode + Zhipu AI + budgeted deep-research (Mole)
 
 - **Created: [[concepts/autoformalization]]** — mathematical autoformalization technique (natural-language math -> machine-verifiable Lean 4 proofs). MathForm (arXiv:2608.14221, Aug 14): Mathlib retrieval planner + verification-guided iterative refinement, FormalVerse ~367K verified examples, MathForm-8B (Pass@8 88.06% Syntax Check / 72.37% Consistency Check, beats specialized 32B autoformalizers). Source: raw/papers/2026-08-14_2608.14221_mathform-autoformalization.md.

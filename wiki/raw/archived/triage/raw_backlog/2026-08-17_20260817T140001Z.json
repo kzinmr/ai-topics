@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-17T14:12:55.481627+00:00",
+  "triage_run_id": "20260817T140001Z",
+  "source": "raw_backlog",
+  "summary_ja": "rawバックログ14:00バッチ。5記事中take 0件、skip 5件。1件目（Daring FireballのAnthropicテキスト透かし批判）は本日10:30のblog-wiki-ingestでentities/daringfireball-net.md作成＋concepts/security-and-governance/ai-text-watermarking.md拡充済みのため既処理としてskip。残り4件（popcount IPスプーフィング、filfre Homeworld、righto Apollo FDAI、paulgraham hs.html）は全て非AIコンテンツで、うち2件は既に各ブログエンティティページのReferencesに掲載済み。新規ページ作成・既存ページ更新は不要。",
+  "decisions": [
+    {
+      "item_id": "raw-backlog-daringfireball-watermark-70e3a85a",
+      "source": "raw_backlog",
+      "source_name": "daringfireball.net",
+      "title": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+      "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/daringfireball.net--2026-08-anthropics-watermark-text-adulteration-in-claude-is---70e3a85a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本日10:30のblog-wiki-ingestで既処理済み。entities/daringfireball-net.md（2026-08-17 updated）が本raw記事をsourcesに記載し、concepts/security-and-governance/ai-text-watermarking.mdにGruber批判セクション（semantic word choice劣化、imperceptibility約束の破綻、グローバル適用、秘密鍵による普遍的疑念）を追加済み。log.md 2026-08-17 blog-wiki-ingestエントリで確認。重複take回避のためskip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing\nSource: https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing\nAnthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing\nSunday, 16 August 202"
+    },
+    {
+      "item_id": "raw-backlog-popcount-ip-spoofing-0010ef91",
+      "source": "raw_backlog",
+      "source_name": "idea.popcount.org",
+      "title": "Strange Loop - IP Spoofing",
+      "url": "https://idea.popcount.org/2016-09-20-strange-loop---ip-spoofing",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/idea.popcount.org--2016-09-20-strange-loop-ip-spoofing--0010ef91.md",
+      "recommended_action": "skip",
+      "body_excerpt": "# Strange Loop - IP Spoofing\nSource: https://idea.popcount.org/2016-09-20-strange-loop---ip-spoofing\nStrange Loop - IP Spoofing\n20 September 2016\nI recently gave a talk at the\nStrange Loop\nconference in St Louis.\nThe\nrecording\nand\nslides\nare available,\nbut for easier consumption here's a transcript.",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。2016年のDDoS/IPスプーフィング技術トーク（ネットワークセキュリティ）で、LLM/AIエージェント関連性なし。Wiki対象外のためskip。",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "raw-backlog-filfre-homeworld-e857fe8c",
+      "source": "raw_backlog",
+      "source_name": "filfre.net",
+      "title": "Homeworld (The Digital Antiquarian)",
+      "url": "https://www.filfre.net/2026/01/homeworld/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/filfre.net--2026-01-homeworld--e857fe8c.md",
+      "recommended_action": "skip",
+      "body_excerpt": "# The Digital Antiquarian\nSource: https://www.filfre.net/2026/01/homeworld/\nThe first-person shooter and the real-time-strategy game, those two genres that had come to absolutely dominate mainstream computer gaming by the end of the 1990s, were surprisingly different in their core technologies. The ",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。ゲーム史エッセイ（Homeworld RTS）でAI関連性なし。entities/filfre-net.mdのReferencesに本raw記事（filfre.net--2026-01-homeworld--e857fe8c）は既掲載。Wiki対象外のためskip。",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "raw-backlog-righto-apollo-fdai-3542d02d",
+      "source": "raw_backlog",
+      "source_name": "righto.com",
+      "title": "Inside the Apollo \"8-Ball\" FDAI (Flight Director / Attitude Indicator)",
+      "url": "http://www.righto.com/2025/06/inside-apollo-fdai.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/righto.com--2025-06-inside-apollo-fdai-html--3542d02d.md",
+      "recommended_action": "skip",
+      "body_excerpt": "# Inside the Apollo \"8-Ball\" FDAI (Flight Director / Attitude Indicator)\nSource: http://www.righto.com/2025/06/inside-apollo-fdai.html\nDuring the Apollo flights to the Moon, the astronauts observed the spacecraft's orientation on a special instrument\ncalled the FDAI (Flight Director / Attitude Indic",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。Apollo宇宙船計器（FDAI）のハードウェア分解解説でAI関連性なし。entities/righto-com.mdにAerospace & Apollo hardwareセクションは既存。Wiki対象外のためskip。",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "raw-backlog-paulgraham-hs-6a01ce4b",
+      "source": "raw_backlog",
+      "source_name": "paulgraham.com",
+      "title": "What You'll Wish You'd Known",
+      "url": "http://www.paulgraham.com/hs.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--hs-html--6a01ce4b.md",
+      "recommended_action": "skip",
+      "body_excerpt": "# What You'll Wish You'd Known\nSource: http://www.paulgraham.com/hs.html\nJanuary 2005\n(I wrote this talk for a\nhigh school.  I never actually \ngave it, because the school authorities vetoed the plan to invite me.)\nWhen I said I was speaking at a high school, my friends were curious.\nWhat will you sa",
+      "reason_ja": "★☆☆☆☆ 非AIコンテンツ。2005年の高校生向け人生アドバイスエッセイでAI関連性なし。entities/paulgraham-com.mdのReferencesに本raw記事（paulgraham.com--hs-html--6a01ce4b）は既掲載。Wiki対象外のためskip。",
+      "candidate_wiki_path": null
+    }
+  ]
+}

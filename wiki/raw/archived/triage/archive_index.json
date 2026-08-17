@@ -12,6 +12,7 @@
     "http://www.paulgraham.com/gap.html",
     "http://www.paulgraham.com/guidetoinvestors.html",
     "http://www.paulgraham.com/hp.html",
+    "http://www.paulgraham.com/hs.html",
     "http://www.paulgraham.com/icad.html",
     "http://www.paulgraham.com/marginal.html",
     "http://www.paulgraham.com/mit.html",
@@ -22,6 +23,7 @@
     "http://www.paulgraham.com/say.html",
     "http://www.paulgraham.com/spam.html",
     "http://www.paulgraham.com/startupmistakes.html",
+    "http://www.righto.com/2025/06/inside-apollo-fdai.html",
     "http://www.righto.com/2025/07/reverse-engineering-mysterious-up-data.html",
     "http://www.righto.com/2025/08/reverse-engineering-analog-TDA7000.html",
     "http://www.righto.com/2026/03/ibm-4-pi-computer-history.html",
@@ -245,6 +247,7 @@
     "https://daringfireball.net/2026/07/temu_is_a_comically_bad_app",
     "https://daringfireball.net/2026/07/ternus_apple_slippery_slope",
     "https://daringfireball.net/2026/07/whats_good_for_the_ios_goose_is_often_not_good_for_the_macos_gander",
+    "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
     "https://daringfireball.net/2026/08/followup_big_three_carrier_requirement",
     "https://daringfireball.net/2026/08/iphone_camera_lens_scratch_resistance",
     "https://daringfireball.net/2026/08/openai-apple-is-getting-this-wrong",
@@ -703,6 +706,7 @@
     "https://hyperbo.la/w/token-mandates/",
     "https://ianbarber.blog/2026/06/19/llms-are-complicated-now/",
     "https://iczelia.net/posts/matching1/",
+    "https://idea.popcount.org/2016-09-20-strange-loop---ip-spoofing",
     "https://idiallo.com/blog/100x-productivity-gain",
     "https://idiallo.com/blog/all-chinese-models-will-be-illegal",
     "https://idiallo.com/blog/amazon-basics-but-intellectual-property",
@@ -2244,6 +2248,7 @@
     "https://www.experimental-history.com/p/the-decline-of-deviance-2",
     "https://www.experimental-history.com/p/the-most-wonderful-thing-that-happened",
     "https://www.figma.com/blog/figma-make-now-on-your-local-code/",
+    "https://www.filfre.net/2026/01/homeworld/",
     "https://www.filfre.net/2026/03/the-mystery-of-rennes-le-chateau-part-1-the-priests-treasure/",
     "https://www.filfre.net/2026/05/planescape-torment-part-1-from-the-tabletop/",
     "https://www.filfre.net/2026/06/planescape-torment-part-2-to-the-desktop/",
@@ -2751,5 +2756,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-08-17T10:55:59.382451+00:00"
+  "updated": "2026-08-17T14:12:55.482238+00:00"
 }
