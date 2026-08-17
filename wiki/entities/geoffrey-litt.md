@@ -3,13 +3,14 @@ title: Geoffrey Litt
 type: entity
 handle: "@geoffreylitt"
 created: 2026-04-10
-updated: 2026-07-17
+updated: 2026-08-17
 tags:
   - person
   - model
   - developer-tooling
   - company
-sources: []
+sources:
+  - raw/articles/geoffreylitt.com--2023-03-25-llm-end-user-programming-html--17879d95.md
 ---
 
 
@@ -66,6 +67,8 @@ His key arguments:
 - **LLMs lower the barrier** to writing and modifying code, making it feasible for non-programmers to customize their tools.
 - **The interaction model matters** — chat is one option, but malleable environments that produce spreadsheets, GUIs, or other structured outputs can be more useful for many tasks.
 - **Iterative refinement is essential** — software created with LLM assistance must be tweakable by the user after generation. The model shouldn't just create a solution; it should teach the user how to create it themselves next time.
+- **Chat is an essentially limited interaction mode** — even a perfect bot cannot match direct-manipulation UIs (the iPhone video-trimming example; Winograd & Flores's "readiness-to-hand" steering wheel); the design space is open-ended computational media with LLMs as collaborators inside the medium.
+- **Double interaction loop** — the spreadsheet archetype: an inner loop of direct manipulation (edit a number) plus an outer loop that edits the tool itself (edit the formulas). LLMs make the outer loop available to non-programmers, with the LLM playing the "local developer" role from Nardi & Miller's 1990 Betty-and-Buzz spreadsheet study — ideally teaching the user so reliance on AI decreases over time.
 - **Platform context amplifies AI** — AI-generated tools gain additional value when they inherit platform capabilities like persistence, collaboration, and composition with existing tools.
 
 ### AI HUDs Over Copilots

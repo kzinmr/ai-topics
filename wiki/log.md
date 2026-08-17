@@ -1,6 +1,14 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-08-17] raw-backlog-ingest | Geoffrey Litt 2023 essay fills two concept stubs + Harvey legal document automation guide
+
+- **Enriched: [[concepts/malleable-software]]** (was 25-line stub) -- full page from geoffreylitt.com 2023-03-25 essay "Malleable software in the age of LLMs": Tchernavskij 2019 coinage, Ink & Switch 2025 principles (universal version control, live collaboration, gradual enrichment, AI-assisted development), programming bottleneck, chat as limited interaction mode, double interaction loop (spreadsheet archetype), LLM as local developer (Nardi & Miller 1990 Betty-and-Buzz), on-the-fly UI; projects table (Wildcard, Potluck, Embark, Patchwork, Ambsheets).
+- **Enriched: [[concepts/end-user-programming]]** (was 25-line stub) -- full page from same essay: programming bottleneck, five structural shifts (one-off scripts, one-off GUIs, build-don't-buy, modding, recombination), local developers (Betty and Buzz), interaction models, open-ended computational media.
+- **Enriched: [[entities/geoffrey-litt]]** -- added raw article to sources frontmatter; added "chat is an essentially limited interaction mode" and "double interaction loop" bullets to the LLMs and End-User Programming section (Winograd & Flores readiness-to-hand, Nardi & Miller 1990).
+- **Enriched: [[entities/harvey]]** -- added "Legal Document Automation Guide (May 2026)" section from raw/articles/2026-05-30_harvey_legal-document-automation-ai.md: front-of-lifecycle thesis, five high-ROI workflows (intake/triage, contract management with Adecco 8h/wk, document review, regulatory compliance monitoring, legal research/drafting), domain-specific vs general-purpose platform rationale (verifiable sources, 600+ knowledge sources, engagement-level isolation, Word Add-In), five evaluation dimensions, ROI beyond time savings (Bayer IP). Frontmatter +1 source.
+- **Skipped (non-AI, out of scope)**: research.swtch.com boolean formulas (Russ Cox, 2011 CS theory), michael.stapelberg.ch Wayland 2026 (Linux graphics), mitchellh.com Zig Sema (compiler internals). Archived to raw/archived/triage/raw_backlog_ingest/2026-08-17_20260817T040049Z.json.
+
 ## [2026-08-17] raw-backlog-ingest | duplicate-invocation recovery -- all 5 candidates already processed
 
 - **Batch verified as duplicate of 2026-08-16 run** (commit 9dd687c1): all 5 candidates were already wiki-captured or out-of-scope. No page changes needed.

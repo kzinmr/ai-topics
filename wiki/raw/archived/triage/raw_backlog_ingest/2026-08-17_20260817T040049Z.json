@@ -1,0 +1,43 @@
+{
+  "archive_date": "2026-08-17",
+  "run_id": "20260817T040049Z",
+  "total_candidates": 3,
+  "items": [
+    {
+      "item_id": "20260817-1",
+      "source": "raw_article",
+      "source_name": "Russ Cox (research.swtch.com)",
+      "title": "Minimal Boolean Formulas",
+      "url": "https://research.swtch.com/boolean",
+      "raw_path": "raw/articles/research.swtch.com--boolean--0794f8ba.md",
+      "recommended_action": "skip",
+      "reason_ja": "非AIコンテンツ。2011年の計算機科学理論記事（5変数ブール関数の最小AND/OR演算子数28をFloyd-Warshall変種で計算、Knuth Vol 4Aとの競争）。LLM/AIエージェントとの関連なし。entities/russ-cox.mdはGo言語の文脈でカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Russ Cox (May 18, 2011): 28 is the minimum number of AND or OR operators needed to write any Boolean function of five variables, computed with Alex Healy in April 2010 via a Floyd-Warshall all-pairs shortest paths adaptation; race with Knuth's Volume 4A."
+    },
+    {
+      "item_id": "20260817-2",
+      "source": "raw_article",
+      "source_name": "Michael Stapelberg",
+      "title": "Can I finally start using Wayland in 2026?",
+      "url": "https://michael.stapelberg.ch/posts/2026-01-04-wayland-sway-in-2026/",
+      "raw_path": "raw/articles/michael.stapelberg.ch--posts-2026-01-04-wayland-sway-in-2026--a6e7a27b.md",
+      "recommended_action": "skip",
+      "reason_ja": "非AIコンテンツ。Linuxグラフィックスタック（Wayland vs X11、NVIDIA GBM/explicit sync、8K TILEサポート、i3/sway移行）の技術記事。LLM/AIトピックとの関連なし。entities/michael-stapelberg.mdはi3/sway作者としてカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Michael Stapelberg (Jan 4, 2026): evaluates whether Wayland is finally usable -- NVIDIA driver 495 GBM support (2021), explicit sync in Sway 1.11/wlroots 0.19 (June 2025), remaining blockers incl. TILE support for 8K monitors."
+    },
+    {
+      "item_id": "20260817-3",
+      "source": "raw_article",
+      "source_name": "Mitchell Hashimoto (mitchellh.com)",
+      "title": "Zig Sema: ZIR => AIR",
+      "url": "https://mitchellh.com/zig/sema",
+      "raw_path": "raw/articles/mitchellh.com--zig-sema--1dd9defd.md",
+      "recommended_action": "skip",
+      "reason_ja": "非AIコンテンツ。Zigコンパイラ内部（Semaステージ、ZIRからAIRへの変換、comptime評価）の詳細解説。LLM/AIトピックとの関連なし。entities/mitchell-hashimoto.mdはGhostty/HashiCorpの文脈でカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Mitchell Hashimoto: the Sema compiler stage takes untyped ZIR from AstGen and produces fully-typed AIR, performing all comptime evaluation of Zig programs; AIR is generated per-function and lowered directly to machine code."
+    }
+  ]
+}

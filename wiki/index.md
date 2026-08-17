@@ -1664,7 +1664,7 @@
 - [[concepts/embedding-dimension-scaling-laws]] — Embedding Dimension Scaling Laws
 - [[concepts/embedding-long-context-degradation]] — Embedding Long-Context Degradation
 - [[concepts/embodied-ai]] — embodied-ai
-- [[concepts/end-user-programming]] — End-User Programming
+- [[concepts/end-user-programming]] — End-User Programming — normal people authoring software; LLMs as a step change past the programming bottleneck (Litt 2023)
 - [[concepts/engineering-management]] — Engineering Management
 - [[concepts/enpire]] — ENPIRE — Agentic Robot Policy Self-Improvement
 - [[concepts/enshittification]] — enshittification
@@ -2158,7 +2158,7 @@
 - [[concepts/mai-thinking-1-tech-report]] — Microsoft MAI-Thinking-1 Technical Report Deep Dive
 - [[concepts/main-branch-development]] — Main-Branch Development
 - [[concepts/makoto-kato]] — makoto-kato
-- [[concepts/malleable-software]] — Malleable Software
+- [[concepts/malleable-software]] — Malleable Software — user-editable, re-combinable software; LLM-era double interaction loop and on-the-fly UI (Litt 2023)
 - [[concepts/managed-agents]] — Managed Agents (Anthropic)
 - [[concepts/managed-agents-sre-incident-response]] — How to triage production incidents using the team runbooks.
 - [[concepts/managed-devins]] — Managed Devins

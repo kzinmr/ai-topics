@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-16
+updated: 2026-08-17
 tags:
   - security
   - company
@@ -40,6 +40,7 @@ sources:
   - raw/articles/2026-08-15_harvey_training-frontier-review-table-models-with-applied-compute.md
   - raw/articles/2026-05-12_harvey_how-to-automate-contract-analysis-with-ai.md
   - raw/articles/2026-06-24_harvey_ai-for-general-counsel.md
+  - raw/articles/2026-05-30_harvey_legal-document-automation-ai.md
 ---
 
 # Harvey
@@ -445,6 +446,43 @@ ROI shows in three measures: capacity returned, cycle time, and share of work ke
 General-purpose tools return fluent answers with no source; legal platforms ground answers in citable sources, operate inside matters, and fit the systems legal work runs on. Evaluation checklist: models built/tuned for legal work, citation on every answer, security/access following org structure, integration with DMS/contract tools/email environment.
 
 Source: raw/articles/2026-06-24_harvey_ai-for-general-counsel.md
+
+## Legal Document Automation Guide (May 2026)
+
+Harvey published a guide (May 29, 2026) on **AI-powered legal document automation** — where automation creates the most value in the document lifecycle, which workflows produce the strongest returns, and how to evaluate platforms. Central claim: the highest-value intervention sits at the **front of the lifecycle** — structuring unstructured inputs into structured data — not at output generation. "This approach keeps AI in the role it handles well, structuring messy data, while attorneys retain judgment over the final product."
+
+### Where Automation Fits in the Document Lifecycle
+
+Typical lifecycle: intake (emails, term sheets, meeting notes, questionnaires) → extraction and structuring → template population with conditional logic (jurisdiction, deal type, counterparty) → internal review → approval, execution, storage. Rules-based document assembly creates the most measurable impact at template population and clause selection; the emerging opportunity is AI reading unstructured inputs, extracting commercial terms, mapping them to template fields, and flagging gaps for human follow-up, with document generation remaining deterministic on pre-approved templates.
+
+### Five Workflows with the Strongest Returns
+
+1. **Legal intake and triage** — structured intake replaces email/Slack requests; AI classifies matter type and routes to the right lawyer or template; a request that took 30 minutes of triage can be routed in seconds, and structured intake yields real-time ops data (volume, turnaround, workload) for headcount and SLA decisions
+2. **Contract management** — most mature in-house category; The Adecco Group's lawyers save up to 8 hours/week using Harvey on contract work and routine tasks
+3. **Document review and analysis** — litigation hold review, M&A diligence, regulatory investigations, contract portfolio analysis; AI applies review criteria consistently at scale while lawyers validate outputs
+4. **Regulatory compliance monitoring** — AI monitors legislative/regulatory changes across jurisdictions, delivers tailored impact assessments, flags contracts/policies needing revision; moves teams from reactive triage to anticipatory risk management
+5. **Legal research and drafting** — synthesized analysis with citations in minutes instead of hours of case-law database research
+
+### Why Domain-Specific Platforms Outperform General-Purpose AI
+
+- **Outputs grounded in verifiable sources** — Harvey grounds work in internal content, selected knowledge sources, and legal research integrations (e.g., LexisNexis); general-purpose tools may cite cases or provisions that do not exist
+- **Jurisdictional awareness built into the knowledge architecture** — 600+ knowledge sources selected by the team; jurisdiction logic embedded in the knowledge layer rather than relying on per-prompt specification
+- **Data isolation meeting the confidentiality standard** — ethical walls and engagement-level isolation engineered into the platform; company inputs not used for model training; retention under department control; governance is structural, not procedural
+- **Integration with tools where legal work happens** — Harvey for Word Add-In (Harvey's own legal team uses it on nearly every commercial matter); AI operates inside Word, Outlook, and document management systems
+
+### Five Evaluation Dimensions
+
+1. **Security and compliance posture** — engagement-level data isolation, SOC 2 Type II, SAML SSO, audit logs, IP allow-listing, data residency/retention control
+2. **Integration depth** — native vs bolted-on integration with Word/Outlook/DMS/CLM; the single best predictor of adoption
+3. **Output reliability** — deterministic output for rules-based assembly; verifiable reasoning and visible sources for AI drafting; flagging uncertainty over fabricated references
+4. **Scalability across matter types** — one platform across commercial, litigation, employment, regulatory, IP; **Agent Builder** ships with 500+ out-of-the-box agents and has been used to build 25,000+ agentic custom workflows
+5. **Total cost of ownership** — training, change management, governance, and administration often exceed license fees; "the most expensive automation platform is the one that gets abandoned six months after purchase"
+
+### ROI Beyond Time Savings
+
+Time savings translate to capacity; automated documents from pre-approved templates eliminate copy-paste and jurisdiction errors (raising the quality floor); lawyer development is the most overlooked return — automation shortens the path from routine intake work to strategic contribution. Bayer IP team members used Harvey for patent drafting and redlining while spending more time on complex matters. Scale cited: 142,000+ legal professionals at 1,500+ customers across 60+ countries.
+
+Source: raw/articles/2026-05-30_harvey_legal-document-automation-ai.md
 
 ## Legal Operations Optimization Guide (June 2026)
 
