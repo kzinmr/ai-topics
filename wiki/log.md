@@ -9,6 +9,16 @@ _Log of all wiki changes. Newest entries at top._
   - [[concepts/gpt/chatgpt-app-design-patterns]] -- 125-line page, source raw/articles/2025-11-24_openai-developers-blog_what-makes-a-great-chatgpt-app.md listed. Take, already done.
   - substack.com--redirect-23c3967c... (SemiAnalysis IEDM 2025 chipmaking report) -- skip, out of scope (semiconductor fab tech, non-AI).
   - 2026-05-10_hex-technologies_best-data-modeling-tools.md -- skip, out of scope (2023 non-AI listicle).
+- **Tracking registry fix**: 5 files were stuck at status processing in /opt/data/.hermes/processed_raw_articles.json, causing re-selection every 6h. Marked done in both top-level entries and processed_articles sub-registry (collector dedup per raw_backlog_collect.py line 213). Verified via --dry-run: collector now selects a different batch (together.ai HF deploy, Mistral VLM satellite, GPT-OSS, trendingtopics GPT-6, DeepSeek harness runtime).
+
+## [2026-08-17] raw-backlog-ingest | duplicate-invocation recovery -- all 5 candidates already processed
+
+- **Batch verified as duplicate of 2026-08-16 run** (commit 9dd687c1): all 5 candidates were already wiki-captured or out-of-scope. No page changes needed.
+  - [[entities/harvey]] -- "AI for General Counsel Guide (June 2026)" section present (source raw/articles/2026-06-24_harvey_ai-for-general-counsel.md at line 42 + 447). Take, already done.
+  - [[concepts/wayfinder-router]] -- 137-line page, source raw/articles/2026-06-25_wayfinder-router_deterministic-llm-routing.md listed. Take, already done.
+  - [[concepts/gpt/chatgpt-app-design-patterns]] -- 125-line page, source raw/articles/2025-11-24_openai-developers-blog_what-makes-a-great-chatgpt-app.md listed. Take, already done.
+  - substack.com--redirect-23c3967c... (SemiAnalysis IEDM 2025 chipmaking report) -- skip, out of scope (semiconductor fab tech, non-AI).
+  - 2026-05-10_hex-technologies_best-data-modeling-tools.md -- skip, out of scope (2023 non-AI listicle).
 - **Tracking registry fix**: 5 files were stuck at `status: processing` in /opt/data/.hermes/processed_raw_articles.json, causing re-selection every 6h. Marked `done` in both top-level entries and `processed_articles` sub-registry (collector's dedup mechanism per raw_backlog_collect.py line 213). Verified via --dry-run: collector now selects a different batch (together.ai HF deploy, Mistral VLM satellite, GPT-OSS, trendingtopics GPT-6, DeepSeek harness runtime).
 
 ## [2026-08-16] raw-backlog-ingest | harvey AI for General Counsel guide
