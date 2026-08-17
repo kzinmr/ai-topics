@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (901 pages)
+## Entities (902 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -901,12 +901,13 @@
 - [[entities/zed]] — Zed
 - [[entities/zero-language]] — Zero (Programming Language)
 - [[entities/zhanshi-wang]] — Zhanshi (Jason) Wang
+- [[entities/zhipu]] — Zhipu AI — Chinese frontier AI lab; maker of the GLM model family (GLM-5.1/5.2/5.3, GLM-5V-Turbo); public (SEHK:2513), founded 2019, CEO Zhang Peng; Z.ai consumer platform
 - [[entities/zodchiii]] — zodchiii
 - [[entities/zoox-expansion]] — Zoox Robotaxi Expansion
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1988 pages)
+## Concepts (1991 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1281,6 +1282,7 @@
 - [[concepts/austral]] — Austral
 - [[concepts/auto-research]] — AutoResearch
 - [[concepts/autodata-agentic-data-creation]] — Autodata: Agentic Data Creation
+- [[concepts/autoformalization]] — Autoformalization — translating natural-language math into machine-verifiable formal proofs (Lean 4); MathForm (arXiv:2608.14221) retrieval + verification-guided refinement, FormalVerse 367K dataset, MathForm-8B (Aug 2026)
 - [[concepts/automated-alignment-researcher]] — Automated Alignment Researcher (AAR) — autonomous Claude agents that beat human researchers on weak-to-strong supervision (PGR 0.97 vs 0.23)
 - [[concepts/automated-competitor-analysis]] — Automated Competitor Analysis with AI Agents
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
@@ -1330,6 +1332,7 @@
 - [[concepts/browser-agent/deep-research]] — Deep Research — Agentic Browsing for Autonomous Research
 - [[concepts/browser-security]] — Browser Security
 - [[concepts/browser-use-production-architecture]] — Browser Use Production Architecture
+- [[concepts/budgeted-deep-research-agents]] — Budgeted Deep-Research Agents — deep research with an enforced cost budget, verified quotes, and a local-data privacy boundary; Mole (Go, MCP, Aug 2026) as exemplar
 - [[concepts/bug-bounty]] — bug-bounty
 - [[concepts/build-systems]] — build-systems
 - [[concepts/build-the-thing-meta-development]] — Build the Thing That Builds the Thing — Meta-Development Pattern
@@ -2168,6 +2171,7 @@
 - [[concepts/markdown-based-skills]] — Markdown-Based Skills
 - [[concepts/mastodon]] — Mastodon
 - [[concepts/mastra-acp-agents]] — Mastra ACP Agents
+- [[concepts/mathcode]] — MathCode — terminal AI coding agent with a Lean 4 formalization engine (autoformalization); 657 GitHub stars
 - [[concepts/max-irwin]] — Max Irwin
 - [[concepts/maxime-chevalier-boisvert]] — Maxime Chevalier-Boisvert
 - [[concepts/mcp]] — MCP (Model Context Protocol)
