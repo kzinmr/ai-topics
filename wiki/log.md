@@ -1,3 +1,16 @@
+## [2026-08-17] newsletter-wiki-ingest 10:55 | Cloudflare 402 payment rail + PJM capacity market + Anthropic Theseus (post-recovery)
+
+### Recovery note
+- Upstream newsletter-triage (Aug 17 10:50) failed to render JSON; stale `triage_latest.json` on disk was the already-consumed Aug 16 checkpoint (commit 7a4a385e). Re-triaged today's 5-newsletter batch (run 20260817T104823Z) directly from `latest.json`: 3 takes, 1 reference, 8 skips.
+
+### Changes
+- **Enriched: [[entities/cloudflare]]** — New section "AI Content Monetization & the 402 Payment Rail (Aug 2026)" from Superintel+ exclusive with CSO Stephanie Cohen: Sep 15 2026 default blocking of training/agent crawlers on ad pages, 2B HTTP 402 responses/day, 9.6:1 crawler-to-visitor ratio, pay-per-crawl → pay-per-use shift, Ceramic/You.com deals, People Inc. scarcity case.
+- **Enriched: [[concepts/ai-energy]]** — New section "PJM Capacity Market & Ratepayer Costs (Aug 2026)" from SemiAnalysis "Full of Cold Air": ~4GW fleet underestimation, ~$12B ratepayer waste 2025-2027, $63.6B auctions with only 4.8GW new capacity, Reliability Backstop Auction (Sep 30-Oct 21) risks, interconnection fast-track failures, AI-load grid collision.
+- **Enriched: [[entities/anthropic]]** — Compute Partnership Overview table extended: Theseus Infrastructure (with Macquarie Asset Management + GIC) and Riot Platforms 20-year $9B deal (Bloomberg, Aug 11) added from The Signal roundup.
+- **Enriched: [[events/grok-4-6-launch]]** — Added GitHub Copilot availability (github.blog changelog, Aug 14) distribution note from The Signal.
+- **Skipped (8)**: Qwen 3.8 27B newsletter (already captured by blog-wiki-ingest same day from simonwillison.net → concepts/qwen-3-8-27b.md), Lenny's Podcast Ian Silber (design-career, low AI value), Riemann hypothesis (covered), watermarking (covered), Gemini 3.7 Flash/Pixel 11 (covered/low value), Grok Bot (covered), Meta mention (1-line), substack/beehiiv UI noise batch.
+- Archive: `wiki/raw/archived/triage/newsletter/2026-08-17_20260817T104823Z.json` (9 candidates, 1 new archived, 8 dedup).
+
 ## [2026-08-17] blog-wiki-ingest 10:30 | Qwen 3.8 27B + Anthropic watermarking criticism wave + AI cost optimization
 
 ### Triage (15 articles scanned, 6 AI-relevant)

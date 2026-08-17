@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-08-14
+updated: 2026-08-17
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -43,6 +43,7 @@ sources:
   - raw/articles/om.co--2026-06-07-the-myth-the-mythos-and-the-man--9a834a77.md
   - raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
   - raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
+  - raw/newsletters/2026-08-16-anthropic-s-trust-equation-google-s-show-of-hands-and-grok-never-logs-off.md
   - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
   - raw/newsletters/2026-08-13-xai-s-grok-4-6-released-frontier-intelligence-at-insane-pricing.md
 related: []
@@ -504,8 +505,12 @@ Anthropic has secured multiple large-scale compute agreements:
 | **Google + Broadcom** | 5GW | Expected operational 2027 |
 | **Microsoft + NVIDIA** | $30B Azure capacity | Strategic partnership |
 | **Fluidstack** | $50B US AI infrastructure investment | Announced |
+| **Theseus Infrastructure** (with Macquarie Asset Management + GIC) | Data centres Anthropic will anchor | Formed (Aug 2026) |
+| **Riot Platforms** | 20-year, $9B cloud-computing deal | Reported Aug 2026 (Bloomberg) |
 
 Claude is trained and run across **AWS Trainium, Google TPU, and NVIDIA GPU** hardware.
+
+**Theseus Infrastructure & Riot Platforms (Aug 2026)**: The Signal reports Anthropic formed **Theseus Infrastructure** with **Macquarie Asset Management** and **GIC** to build data centres it will anchor, and is reported to be the "leading frontier AI lab" behind Riot Platforms' 20-year, **$9B** cloud-computing deal (Bloomberg, Aug 11 2026). This extends Anthropic's compute strategy beyond hyperscaler capacity into co-owned/anchored data centre infrastructure.
 
 **SpaceX S-1 Filing Details (May 2026)**: SpaceX's S-1 registration statement reveals the full terms of the Cloud Services Agreement with Anthropic: $1.25 billion per month through May 2029, with capacity ramping in May and June 2026 at a reduced fee. The agreements may be terminated by either party upon 90 days' notice. Notably, SpaceX also uses this compute capacity for its own AI applications (including Grok 5, training at COLOSSUS II), positioning Anthropic as both a customer and a revenue source for SpaceX's growing AI compute business.
 

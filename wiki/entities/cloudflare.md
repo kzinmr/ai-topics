@@ -1,7 +1,7 @@
 ---
 title: Cloudflare
 created: 2026-05-01
-updated: 2026-08-07
+updated: 2026-08-17
 type: entity
 tags: [company, platform, ai-agents, infrastructure, open-source]
 sources:
@@ -14,6 +14,7 @@ sources:
   - raw/articles/2026-06-19_cloudflare_temporary-accounts-agents.md
   - https://open.substack.com/pub/bensbites/p/building-gets-easier
   - raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md
+  - raw/newsletters/2026-08-16-there-is-no-market-without-scarcity-an-exclusive-interview-on-cloudflare-s-steph.md
 ---
 
 # Cloudflare
@@ -154,6 +155,16 @@ Cloudflare committed **$1M to an OSS fund** for the independent Vite ecosystem. 
 ## Strategic Positioning
 
 Cloudflare's bet: the containerless, serverless Workers platform (launched 2018) was purpose-built for the agent era. Unlike [[entities/anthropic]] (developer-owns-harness) or [[entities/openai]] (managed containers), Cloudflare provides the infrastructure layer — agents run on Cloudflare, not inside it.
+
+## AI Content Monetization & the 402 Payment Rail (Aug 2026)
+
+Cloudflare is positioning itself as the **rule-maker for the agentic web's content economy**, moving from bot-blocking tools to a payments rail built on the HTTP 402 status code. Details from a Superintel+ exclusive interview with CSO **Stephanie Cohen** (joined 2024, ex-Goldman Sachs; owns the bot-controls → licensing → payments file):
+
+- **The broken bargain, measured**: On Cloudflare's network, crawlers now take ~**9.6 pages for every visitor they send back** (vs ~7.5 a year ago). Traffic is **almost 60% non-human**. Cloudflare stands in front of >20% of all websites, 36% of the world's most-visited sites, and ~80% of leading AI companies.
+- **September 15, 2026 defaults**: From that date, **new domains on Cloudflare plus every existing free-tier site whose owner has not changed the AI-bot setting will block training and agent crawlers by default on pages that carry ads**; search stays allowed. Enforcement triggers when >20% of a site's traffic is non-human on ad pages.
+- **402 "payment required" scale**: More than **2 billion HTTP 402 responses/day** go out across Cloudflare's network (also shown at its June 2026 investor day); Cohen admits "the vast majority of those don't end in payment" — demand is deafening, settlement barely built.
+- **Pay-per-crawl → pay-per-use**: Shifting from charging per request (input) to charging when content is actually used in an AI answer (output). Deals with **Ceramic** (paying per use for content behind Cloudflare's network) and **You.com** exemplify the emerging ecosystem; **People Inc.** (CEO Neil Vogel) uses Cloudflare tools to create scarcity and negotiate better AI deals.
+- **Context**: This builds on Cloudflare's **Content Independence Day** (announced ~Aug 2025, "your content, your rules") — one-year anniversary with ~60% non-human traffic; also connects to the web-wide 402 trend and AI-search revenue sharing. See [[concepts/ai-economics-post-scarcity]] and [[concepts/agentic-search]] for adjacent frameworks.
 
 ## Key Events
 

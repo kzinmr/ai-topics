@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-08-17T10:55:59.381809+00:00",
+  "triage_run_id": "20260817T104823Z",
+  "source": "newsletter",
+  "summary_ja": "5ニュースレター（uid=510-514）を処理。take 3件: 1) Superintel+のCloudflare CSO Stephanie Cohen独占インタビュー（9月15日からのAIボットデフォルト遮断、HTTP 402「payment required」2B件/日、pay-per-crawl→pay-per-use移行）→entities/cloudflare.mdへ新節追加。2) SemiAnalysis「Full of Cold Air - PJM's $12B modeling mistake」→concepts/ai-energy.mdへPJM容量市場分析追加。3) The SignalのAnthropic節でTheseus Infrastructure（Macquarie Asset Management + GIC）とRiot Platforms 20年$9B契約が既存のCompute Partnership表に未収録→entities/anthropic.md追記。reference 1件（Grok 4.6のGitHub Copilot提供）。残りはskip: Qwen 3.8 27Bは本日blog-wiki-ingestでconcepts/qwen-3-8-27b.md作成済み（同一Simon Willison記事の重複）、Lenny's Podcastはデザインキャリア系ポッドキャストでAI技術価値低、Riemann仮説/ウォーターマーク批判/Grok 4.6本体は既存Wikiでカバー済み、残りはsubstack/beehiiv UIノイズ。",
+  "decisions": [
+    {
+      "item_id": "news-20260817-noise-batch",
+      "source": "newsletter",
+      "source_name": "batch (all 5 newsletters)",
+      "title": "Substack/beehiiv UI noise links (OAuth redirects, play cards, like/comment/share, UUID redirects, author profiles, tracking pixels)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★ 5ニュースレター全般のUIノイズ一括skip: substack OAuthリダイレクト（redirect/2/eyJ...、メールセッション認証必須）、play_audio/play_card系（ポッドキャストUI）、submitLike/comment/share（リアクションUI）、substack.com/redirect/<uuid>（追跡リンク、email-session auth必須）、@authorプロフィール、read-in-app、beehiiv statusピクセル、hp.beehiiv.comホストページ。実記事は各メインURL解決で処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "substack/beehiiv UIノイズ — 本文なし。"
+    }
+  ]
+}

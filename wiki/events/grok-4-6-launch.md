@@ -1,7 +1,7 @@
 ---
 title: "xAI Releases Grok 4.6 + Grok Bot — AI Teammates Enter the Frontier"
 created: 2026-08-13
-updated: 2026-08-15
+updated: 2026-08-17
 type: event
 tags:
   - xai
@@ -15,6 +15,7 @@ sources:
   - raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md
   - raw/newsletters/2026-08-14-ben-s-session-2.md
   - raw/newsletters/2026-08-14-grok-bot.md
+  - raw/newsletters/2026-08-16-anthropic-s-trust-equation-google-s-show-of-hands-and-grok-never-logs-off.md
 ---
 
 # Event: xAI Releases Grok 4.6 + Grok Bot
@@ -65,6 +66,8 @@ Two follow-up analyses the day after launch added architectural detail:
 - **Skill self-evolution**: bots can grow their own skills over time — an architecture similar to Hermes-style skill systems ([[concepts/ai-agent-engineering]]).
 - **Chief of Staff coordination**: xAI positions a coordinating agent that directs the other bots.
 - **Verdict**: better single products exist (Autoresearch, GBrain, Hermes, ChatGPT Work, Claude Design, Cowork), but Grok Bot is "xAI's strongest entry" into the AI teammate category.
+
+**Distribution — GitHub Copilot (Aug 14, 2026)**: Grok 4.6 became available inside **GitHub Copilot** (github.blog changelog, Aug 14), extending the model's distribution beyond xAI's own products into the mainstream coding-agent ecosystem. Artificial Analysis published benchmark coverage of Grok 4.6 the same day. (Source: The Signal roundup, 2026-08-16.)
 
 ## Strategic Context
 

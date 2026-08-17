@@ -1,7 +1,7 @@
 ---
 title: "AI Energy"
 created: 2026-08-08
-updated: 2026-08-12
+updated: 2026-08-17
 type: concept
 tags:
   - concept
@@ -26,6 +26,7 @@ tags:
 sources:
   - raw/articles/2026-08-05_hn-discussion_ai-energy-data-center-sustainability.md
   - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
+  - raw/newsletters/2026-08-16-12b-of-us-ratepayers-money-wasted-on-a-modeling-mistake-and-pjm-wants-to-do-it-a.md
   - https://www.iea.org/reports/electricity-2024
   - https://arxiv.org/abs/2311.16863
   - https://arxiv.org/abs/2211.02001
@@ -150,6 +151,15 @@ Power delivery, not GPU availability, is increasingly the binding constraint:
 - **Transmission capacity**: Interconnection queues in major markets (PJM, ERCOT) stretch 3-7 years
 - **On-site generation**: Microsoft, Google, and Amazon are contracting directly with nuclear and geothermal providers to bypass grid constraints
 - **Gas peaker plants**: Some developers propose behind-the-meter gas turbines as bridge power, undermining sustainability claims
+
+### PJM Capacity Market & Ratepayer Costs (Aug 2026)
+
+SemiAnalysis's reverse-engineered model of PJM (America's largest electricity market, 66M residents) documents how **grid modeling errors compound AI-load economics**. PJM's capacity market was designed two decades ago and never experienced demand growth until the AI data center boom; it is now **structurally anti-growth** with a governance "vetocracy" (rule changes need a two-thirds majority across five equally weighted member sectors, so any two sectors can veto):
+
+- **Modeling errors (~$12B waste)**: PJM underestimates its existing fleet by ~**4 GW** because its methodology (2024 shift from EFORd to Reserve Requirement Study) ignores winter cold-air efficiency gains (gas turbines produce up to 25% more power in cold, dense air) and post-Storm Elliott winterization (400 of ~700 gas plants invested in reliability measures by 2024). SemiAnalysis estimates this overstated the supply/demand shortfall, wasting **~$12B of ratepayer money from 2025-2027** — better modeling would have saved **$6.7B (2025/26)** and **$4.9B (2026/27)** with only 14MW less power procured.
+- **Auction economics**: Four record-breaking auctions since July 2024 procured 134-138 GW/year each at prices jumping from **$28.92 to $270-333 per MW-day**, totaling **$63.6B** — yet only **4.8 GW of new capacity** was procured. Existing generators bid at $8-14/MW-day (PJM's own monitor) vs GB's $18/MW-day comparison; the median existing combined-cycle plant made 407% of its going-forward costs in energy+ancillary markets alone. PJM cut new-generation lead time from 36 to 10 months (now 23), making new builds near-impossible.
+- **Emergency auction risk**: PJM plans a **Reliability Backstop Auction (Sep 30 - Oct 21, results Dec 2)** signing contracts to 2043 for new large loads (datacenters) with **no committed counter-parties**; every PJM state must pass cost-allocation policy (none have). Interconnection fast-tracks are failing: RRI (51 projects, 31.5% of MW withdrawn, first output 2030) and the Expedited Track (10 units/year, opened Jul 31 2026) have energized zero MW; a 220 GW interconnection application window reopened April 2026 after no study path since Oct 2021.
+- **AI relevance**: This is the clearest quantified case of **AI data center load growth colliding with legacy grid market design** — ratepayer costs, emergency auctions, and interconnection failure directly constrain the AI infrastructure buildout. See [[concepts/subprime-data-center-crisis]] and [[concepts/ai-economics]] for adjacent analyses.
 
 ---
 

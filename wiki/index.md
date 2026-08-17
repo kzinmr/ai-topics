@@ -163,7 +163,7 @@
 - [[entities/clefourrier--timeline]] — Clémentine Fourrier — Timeline
 - [[entities/clicky]] — Clicky
 - [[entities/cline]] — Cline — autonomous coding agent for VS Code (64K+ stars), IDE/CLI/SDK, multi-agent Kanban boards, model-agnostic (Jul 12)
-- [[entities/cloudflare]] — Cloudflare
+- [[entities/cloudflare]] — Cloudflare — agentic cloud stack (Agents SDK, iMARS, VoidZero, temporary accounts); AI content monetization & HTTP 402 payment rail, Sep 15 2026 bot-blocking defaults (Aug 2026)
 - [[entities/cloudflare-sandbox]] — Cloudflare Sandbox (Claude Managed Agents)
 - [[entities/cocoindex]] — CocoIndex — open-source code embedding framework specialized in vectorizing codebases; hierarchical code chunking, incremental re-embedding on commits, Postgres-native sync metadata; used by Cerebras Knowledge Base
 - [[entities/codapter]] — Codapter
@@ -994,7 +994,7 @@
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
 - [[concepts/ai-agent-permission-oversight]] — AI Agent Permission Oversight — ScaleX study: humans miss 1 in 3 threats when approving AI coding agent commands across 40K game runs (Aug 2026)
 - [[concepts/ai-enabled-terrorism]] — AI-Enabled Terrorism — CASP report on Boko Haram using frontier AI for tactical planning and logistics
-- [[concepts/ai-energy]] — AI Energy — AI energy consumption and data center sustainability; training and inference power costs, GPU power envelopes (NVIDIA Vera), efficiency techniques (quantization, speculative decoding, sparsity); major lab sustainability commitments (Aug 2026)
+- [[concepts/ai-energy]] — AI Energy — AI energy consumption and data center sustainability; training and inference power costs, GPU power envelopes (NVIDIA Vera), efficiency techniques (quantization, speculative decoding, sparsity); major lab sustainability commitments; PJM capacity market modeling errors & $12B ratepayer waste (Aug 2026)
 - [[concepts/ai-preflight-safety-testing]] — AI Preflight Safety Testing — Proposed mandatory safety evaluations for frontier AI before deployment
 - [[concepts/apple-speechanalyzer]] — Apple SpeechAnalyzer — Next-generation on-device speech recognition API (iOS 26/macOS 26), 2.12% WER on LibriSpeech, 3-4× improvement over legacy SFSpeechRecognizer
 - [[concepts/bonsai-27b]] — Bonsai 27B — Prism ML's 27B-parameter model running on phones via extreme quantization
@@ -2942,7 +2942,7 @@
 - [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
 - [[events/apple-sues-openai-2026]] — Apple Sues OpenAI for Trade Secret Theft (July 2026) — 400+ ex-Apple employees at OpenAI; hardware prototypes, supplier manipulation, confidential file theft
 - [[events/2026-07-08-openai-gpt-live]] — OpenAI GPT-Live: real-time voice model with GPT-5.5 delegation (July 8); full-duplex redesign (Aug 2026)
-- [[events/grok-4-6-launch]] — xAI releases Grok 4.6 (frontier price/performance, AA Intelligence Index 61, $2/$6 per M pricing, AA-Briefcase Elo 1577) + Grok Bot AI teammates (Aug 13; enriched with Superintel+ pricing & Ben's Bites hands-on Aug 14; Aug 14 follow-ups: file-and-folder agent architecture, $60B Cursor acquisition closed, Aakash review)
+- [[events/grok-4-6-launch]] — xAI releases Grok 4.6 (frontier price/performance, AA Intelligence Index 61, $2/$6 per M pricing, AA-Briefcase Elo 1577) + Grok Bot AI teammates (Aug 13; enriched with Superintel+ pricing & Ben's Bites hands-on Aug 14; Aug 14 follow-ups: file-and-folder agent architecture, $60B Cursor acquisition closed, Aakash review; GitHub Copilot availability Aug 14)
 - [[events/grok-4-5-launch]] — SpaceXAI launches Grok 4.5, first Opus-class coding & agents model co-trained with Cursor (July 9)
 - [[events/2026-06-08-openai-built-to-benefit-everyone]] — OpenAI 'Built to Benefit Everyone' Plan
 - [[events/2026-06-24-qualcomm-acquires-modular]] — Qualcomm Acquires Modular — Qualcomm acquires AI infrastructure startup Modular (~$4B); implications for Mojo language, MAX platform, and AI chip-software consolidation; 238 HN pts, 125 comments (June 24, 2026)
