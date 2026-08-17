@@ -1,3 +1,32 @@
+## [2026-08-17] blog-wiki-ingest 10:30 | Qwen 3.8 27B + Anthropic watermarking criticism wave + AI cost optimization
+
+### Triage (15 articles scanned, 6 AI-relevant)
+
+| Source | Title | Relevance | Action |
+|--------|-------|-----------|--------|
+| simonwillison.net | Qwen 3.8 27B is excellent, but defaults to wildly overthinking | HIGH | New concept page |
+| simonwillison.net | Quoting Dario Amodei (trust crisis) | MEDIUM | Skip (quote only) |
+| martinalderson.com | How I think about reducing AI costs | HIGH | Enriched existing entity |
+| garymarcus.substack.com | The hyping of Anthropic's IPO | HIGH | Enriched existing entity |
+| daringfireball.net | Anthropic's Watermark Text Adulteration Is a Perversion of Writing | HIGH | New entity + concept update |
+| blog.j11y.io | Anthropic's Weak Watermarks Appease a Weak Law | HIGH | Concept update |
+| johndcook.com | Proportion of 1s in a Hadamard matrix | LOW | Skip (math, not AI) |
+| LWN.net | The 7.2 kernel has been released | LOW | Skip (infra, not AI) |
+| pluralistic.net | Music Copyright, Creativity, and Culture | NONE | Skip (copyright, not AI) |
+| shkspr.mobi | Edinburgh Fringe as a newbie | NONE | Skip (travel) |
+| blog.jim-nielsen.com | Oops, Should've Thought of That | LOW | Skip (web dev) |
+| xcancel.com | XCancel mirror | NONE | Skip (tool) |
+
+### Changes
+
+- **Create: [[concepts/qwen-3-8-27b]]** — Dense 27B Apache 2.0 vision-capable LLM from Alibaba; xhigh reasoning default causes overthinking; MTP speed boost ~72%; coding agent capable (Pi framework); 17GB quantized. Source: simonwillison.net Aug 16 hands-on review.
+- **Create: [[entities/daringfireball-net]]** — Daring Fireball (John Gruber) tech commentary blog. Source: watermarking critique article.
+- **Enriched: [[entities/gary-marcus]]** — Added "The Hyping of Anthropic's IPO" (Aug 17) section: leaked revenue projections ($190-200B for 2028), SEC quiet period narrative shaping, All-In podcast claims. Source: garymarcus.substack.com.
+- **Enriched: [[entities/martin-alderson]]** — Added "How I Think About Reducing AI Costs" (Aug 17) section: 4-layer framework (audit, low-hanging fruit, move providers, agent optimization), QuickBooks MCP token disaster example, quarterly review cadence. Source: martinalderson.com.
+- **Enriched: [[concepts/security-and-governance/ai-text-watermarking]]** — Added Gruber criticism ("perversion of writing": semantic word choice degradation, broken imperceptibility promise, global application indefensible, secret keys create universal suspicion) and Padolsey criticism ("weak watermarks appease weak law": assistive use exemption ignored, penalizes disabled/neurodivergent, calculator analogy, compliance theatre, self-protection behavior).
+- **Enriched: [[concepts/qwen-3-8]]** — Added cross-link to new Qwen 3.8 27B dense variant page.
+- **Updated: [[wiki/index.md]]** — 6 index entries updated/added.
+
 ## [2026-08-17] tag-audit-weekly | Tag taxonomy audit — 5 violations → 0
 
 ### Changes

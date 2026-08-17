@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-08-11
+updated: 2026-08-17
 tags:
   - person
   - blogger
@@ -24,6 +24,7 @@ sources:
   - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-2-winners-and-los--2b401389.md
   - raw/articles/martinalderson.com--posts-speed-vs-intelligence--7a7e675b.md
   - raw/articles/martinalderson.com--posts-watch-out-for-cache-read-costs--ff6254a6.md
+  - raw/articles/martinalderson.com--posts-how-i-think-about-reducing-ai-costs--b34c39d8.md
 ---
 
 
@@ -264,6 +265,25 @@ Martin's conclusion: the UK should focus on attracting frontier lab offices and 
 > *"The bifurcation is real and seems to be, if anything, speeding up dramatically."*
 
 > *"While the world's been watching physical supply chains, a different kind of supply chain attack has been escalating in the open source ecosystem."*
+
+### How I Think About Reducing AI Costs (Aug 2026)
+
+Alderson published a comprehensive framework for enterprise AI cost reduction, structured as four layers:
+
+1. **Audit costs** — Understand what's driving the bill across all dimensions: which models are in use (legacy GPT-4o vs modern GPT-5.6 Luna at 1/10th the cost), and how spend breaks down across cached input, uncached input, and output tokens. Key pitfall: teams focus on API spend but miss enormous coding agent costs, or vice versa.
+
+2. **Low-hanging fruit** — Swap legacy models for cheaper successors from the same provider with a verification stage. Also: identify "overpowered" models for simple use cases.
+
+3. **Move providers** — Switch token-hungry workflows to hosted open-weights models (e.g., DeepSeek) at attractive prices. Can be done incrementally — move the heaviest workflows first while keeping frontier labs for the rest.
+
+4. **Agent/LLM optimization** — Deep-dive into top 10 highest-cost workflows:
+   - **Prompt bloat**: Including pages of documents when a search tool would be more token-efficient
+   - **Poorly optimized tools**: MCP servers returning tens of thousands of characters (e.g., QuickBooks Online MCP: 142 tools ~21K tokens per request; get_invoice_pdf returns base64-encoded PDFs as ~33K tokens of noise)
+   - **Tool failures**: Retry loops in long-running agents, especially failures near the end where cache read costs explode
+
+Best practice from even a year ago can be "actively harmful now." Teams should schedule at least quarterly reviews of token spend and model/agent landscape changes.
+
+Source: [How I think about reducing AI costs](https://martinalderson.com/posts/how-i-think-about-reducing-ai-costs/) (Aug 2026)
 
 ## Related
 

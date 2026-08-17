@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-08-11
+updated: 2026-08-17
 tags:
   - lab
   - benchmark
@@ -35,6 +35,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-dario-takes-it-on-the-chin--5226b0ee.md
   - raw/articles/garymarcus.substack.com--p-sorry-sam-and-elon-we-have-not-reached--4ddac824.md
   - raw/articles/garymarcus.substack.com--p-open-source-is-not-the-same-as-open--04dad8e9.md
+  - raw/articles/garymarcus.substack.com--p-the-hyping-of-anthropics-ipo--d43c684c.md
 ---
 
 # Gary Marcus
@@ -364,6 +365,19 @@ On August 10, 2026, Marcus published "[Open-source is NOT the same as open-weigh
 - **Nadella bait-and-switch critique**: Marcus calls out Satya Nadella's July 24 open-weight advocacy tweet ("Open-weight models are essential to a healthy AI ecosystem") followed by releasing a model that is NOT open-source — "hoping you wouldn't notice the difference between the two."
 
 Source: [[raw/articles/garymarcus.substack.com--p-open-source-is-not-the-same-as-open--04dad8e9.md]]
+
+### The Hyping of Anthropic's IPO (Aug 2026)
+
+On August 17, 2026, Marcus published "[The hyping of Anthropic's IPO](https://garymarcus.substack.com/p/the-hyping-of-anthropics-ipo)" dissecting leaked financial claims ahead of Anthropic's expected fall 2026 IPO ($2T valuation target):
+
+- **Reuters**: Anthropic "projecting 2028 revenue of roughly $190-200 billion" based on unnamed sources
+- **Bloomberg**: Leaked Q2 financial documents
+- **All-In podcast**: Gavin Baker claimed Anthropic was "making money on every token"
+- **Dwarkesh Patel**: Projected "$100-150B revenue" (partially walked back)
+
+Marcus argues these claims deserve scrutiny, particularly given Anthropic's SEC "quiet period" which limits official communications while leakers and AI bulls shape the narrative unchecked.
+
+Source: [[raw/articles/garymarcus.substack.com--p-the-hyping-of-anthropics-ipo--d43c684c.md]]
 
 ### Key Works
 

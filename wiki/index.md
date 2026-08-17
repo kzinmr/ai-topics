@@ -198,7 +198,7 @@
 - [[entities/daniel-tunkelang]] — Daniel Tunkelang
 - [[entities/daniel-van-strien]] — Daniel van Strien
 - [[entities/danlark-org]] — Daniel Kutenin (danlark) — Search infrastructure engineer (ex-Yandex, Google); C++ performance, algorithms, and large-scale systems blog; Telegram Data Clustering Contest 3rd place write-up (fastText/CLD2/HNSW news aggregator)
-- [[entities/daringfireball-net]] — John Gruber
+- [[entities/daringfireball-net]] — Daring Fireball (John Gruber); Anthropic Text Watermarking Criticism (Aug 2026: "a perversion of writing", semantic word choice degradation, EU regulation overreach, Declaude circumvention)
 - [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)
 - [[entities/databricks]] — Databricks
 - [[entities/datacurve]] — Datacurve
@@ -316,7 +316,7 @@
 - [[entities/future-of-humanity-institute]] — Future of Humanity Institute (FHI)
 - [[entities/galileo-eval-engineer]] — Galileo Eval Engineer
 - [[entities/garry-tan]] — Garry Tan — CEO of Y Combinator; investor in AI startups, voice on AI regulation
-- [[entities/gary-marcus]] — Gary Marcus; "Don't Count Google Out" section (Aug 6: seven reasons Google survives DeepMind leadership churn); "Open-Source Is NOT the Same as Open-Weight" (Aug 10: NYT confusion over Muse Glimmer, open-weight vs open-source distinction, Nadella bait-and-switch)
+- [[entities/gary-marcus]] — Gary Marcus; "Don't Count Google Out" section (Aug 6: seven reasons Google survives DeepMind leadership churn); "Open-Source Is NOT the Same as Open-Weight" (Aug 10: NYT confusion over Muse Glimmer, open-weight vs open-source distinction, Nadella bait-and-switch); "The Hyping of Anthropic's IPO" (Aug 17: leaked revenue projections, SEC quiet period, $2T valuation scrutiny)
 - [[entities/gemma-4]] — Google Gemma 4
 - [[entities/geoffrey-hinton]] — Geoffrey Hinton — "Godfather of AI"; Nobel Prize in Physics 2024; pioneer of deep learning, backpropagation
 - [[entities/geoffrey-litt]] — Geoffrey Litt
@@ -502,7 +502,7 @@
 - [[entities/mark-chen]] — Mark Chen
 - [[entities/mark-mcquade]] — Mark McQuade
 - [[entities/mark-saroufim]] — Mark Saroufim
-- [[entities/martin-alderson]] — Martin Alderson; ML Research + Open-Weight Margin Collapse section (July 7); Cache Read Costs (Aug 11: cache reads dominate agentic workload costs, quadratic turn growth, ~$0.5/GB-h profit centre)
+- [[entities/martin-alderson]] — Martin Alderson; ML Research + Open-Weight Margin Collapse section (July 7); Cache Read Costs (Aug 11: cache reads dominate agentic workload costs, quadratic turn growth, ~$0.5/GB-h profit centre); How I Think About Reducing AI Costs (Aug 17: 4-layer cost audit framework, MCP token waste, quarterly review cadence)
 - [[entities/martin-fowler]] — Martin Fowler (redirect)
 - [[entities/martin-kleppmann]] — Martin Kleppmann
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
@@ -2529,6 +2529,7 @@
 - [[concepts/qwen]] — Qwen Model Family
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B
 - [[concepts/qwen-3-8]] — Alibaba ~2.4T open-weight MoE; Qwen3.8-Max release (Aug 2026) w/ $2/$6 pricing, oh-my-cli autonomous agent, benchmark data
+- [[concepts/qwen-3-8-27b]] — Qwen 3.8 27B — Dense 27B Apache 2.0 vision-capable LLM; xhigh reasoning default (overthinking), MTP speed boost, coding agent capable; 17GB quantized (Aug 2026)
 - [[concepts/qwen-agentworld]] — Qwen-AgentWorld — Language world models for general agents; 397B MoE model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access (June 24)
 - [[concepts/qwen3-6-27b]] — Qwen3.6-27B
 - [[concepts/rabbithole]] — Rabbithole — Infinite canvas for learning with MCP server for coding agents; by Shlok Khemani
@@ -2644,7 +2645,7 @@
 - [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — Ai Safety Alignment Rlhf Scalable Oversight Interpretability
 - [[concepts/security-and-governance/ai-safety-and-alignment]] — ai-safety-and-alignment
 - [[concepts/security-and-governance/ai-safety-military-governance-claude]] — Ai Safety Military Governance Claude
-- [[concepts/security-and-governance/ai-text-watermarking]] — AI Text Watermarking — SynthID-Text-based model watermarking for EU AI Act; Anthropic ships on future Claude models
+- [[concepts/security-and-governance/ai-text-watermarking]] — AI Text Watermarking — SynthID-Text-based model watermarking for EU AI Act; Anthropic ships on future Claude models; criticism: Gruber "perversion of writing" (Aug 16), Padolsey "weak watermarks appease weak law" (Aug 12)
 - [[concepts/security-and-governance/ai-worming]] — AI Worming — Self-replicating prompt injection attacks; hidden instructions propagate via AI-assisted document workflows (Microsoft Copilot/Word, July 2026)
 - [[concepts/security-and-governance/gitlost-agent-prompt-injection]] — GitLost: prompt injection attack against GitHub AI agent leaking private repos (Noma Security, July 2026)
 - [[concepts/security-and-governance/model-cards-system-cards]] — Model Cards and System Cards

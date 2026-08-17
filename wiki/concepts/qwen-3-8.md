@@ -182,6 +182,7 @@ The release also surfaced organizational context around the **Qwen Exodus** — 
 
 ## Related Pages
 
+- [[concepts/qwen-3-8-27b|Qwen 3.8 27B]] — dense 27B variant for local inference (Aug 2026)
 - [[concepts/qwen]] — Qwen model family overview
 - [[concepts/kimi-k3]] — Moonshot Kimi K3 (2.8T open-weight MoE)
 - [[concepts/mixture-of-experts]] — MoE architecture

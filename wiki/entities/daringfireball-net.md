@@ -1,9 +1,10 @@
 ---
 title: "John Gruber"
 tags: [person]
-sources: []
+sources:
+  - raw/articles/daringfireball.net--2026-08-anthropics-watermark-text-adulteration-in-claude-is---70e3a85a.md
 created: 2026-04-24
-updated: 2026-07-05
+updated: 2026-08-17
 type: entity
 ---
 
@@ -141,11 +142,13 @@ Daring Fireball has operated as an independent publication for over two decades.
 - **Independent media model**: Continued operation of Daring Fireball as an independently owned, sponsorship-funded publication
 - **Markdown's expanding influence**: Observing how the format he created has become the universal input language for AI systems
 - **[AI Is Technology, Not a Product](https://daringfireball.net/2026/05/ai_is_technology_not_a_product)** (May 2026) — Counterpoint to Steven Levy's Wired article urging Apple to launch a "killer AI product." Gruber argues AI is pervasive technology like wireless networking, not a discrete product category. Critiques Levy's vision of always-on AI agents replacing phones as fever-dream hype. Defends John Ternus's stance that Apple ships products, not technologies — just as the iPod was about music, not MP3 files. Predicts phones remain the primary computing device through 2030.
+- **[Anthropic's Watermark Text Adulteration Is a Perversion of Writing](https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing)** (Aug 2026) — Extensive critique of Anthropic's plan to apply semantic watermarking to all Claude-generated text globally. Core arguments: (1) semantic word choice is not interchangeable — "leaped at the chance" ≠ "jumped at the opportunity"; (2) Anthropic broke their promise that watermarking would be "imperceptible"; (3) global application is indefensible when Anthropic claims inability to scope by region despite $2T IPO valuation; (4) Google SynthID equally flawed; (5) secret keys create universal suspicion about every word Claude generates; (6) proofreading becomes dangerous as human-written work risks being flagged as AI-generated. Referenced [Declaude](https://declaude.org) (James Padolsey) as circumvention tool and linked to Padolsey's "Weak Watermarks Appease a Weak Law" critique. Source: [[raw/articles/daringfireball.net--2026-08-anthropics-watermark-text-adulteration-in-claude-is---70e3a85a.md]]
 
 ## Related
 
 - [[concepts/aaron-swartz]] — Co-creator of Markdown; activist and programmer
 - [[concepts/markdown]] — Lightweight markup language created by Gruber and Swartz in 2004
+- [[concepts/security-and-governance/ai-text-watermarking]] — AI Text Watermarking — subject of Gruber's Aug 2026 critique
 - [[concepts/apple]] — Primary subject of Gruber's commentary and criticism
 - [[concepts/dan-abramov]] — Fellow influential tech blogger with a similar commitment to deep technical explanation
 - [[concepts/ben-thompson]] — Author of Stratechery; often linked and discussed by Gruber on Apple strategy
