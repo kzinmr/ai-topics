@@ -2,13 +2,12 @@
 title: "AI Economics: Post-Scarcity Dynamics"
 type: concept
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-08-17
 tags:
   - economics
   - agi
   - labor-economics
   - post-scarcity
-  - wealth-concentration
 aliases:
   - AGI Economics
   - Post-Scarcity Economics

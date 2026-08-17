@@ -1,3 +1,21 @@
+## [2026-08-17] tag-audit-weekly | Tag taxonomy audit — 5 violations → 0
+
+### Changes
+- Ran `tag_audit.py` (cron pre-run blocked on script path; ran from `config/hermes/skills/_overrides/wiki-graph-health/scripts/` per documented workaround)
+- Audit found 5 non-SCHEMA tags (0 composite kebab-case):
+  - `wealth-concentration` (2x) → mapped to `economics` (both pages already had `economics`)
+  - `data-exfiltration` (2x) → mapped to `security`
+  - `incident` (1x) → deleted (one-off; page already had agent-safety/security/vulnerability)
+  - `wiki-maintenance` (1x) → mapped to `wiki` (existing mapping)
+  - `graph-analysis` (1x) → mapped to `wiki` (existing mapping)
+- TAG_NORMALIZATION: added `wealth-concentration`→`economics`, `data-exfiltration`→`security`; fixed stale chain `wealth-distribution`→`wealth-concentration` → now `wealth-distribution`→`economics`
+- Applied targeted manual patches (per 2026-08-10 playbook — NOT wholesale normalization; diff-scan shows 156 preference-rewrite pages that must not be degraded)
+- Pages modified (5): ai-economics-post-scarcity, ai-affordability-crisis, ai-agent-permission-oversight, atlassian-rovo-data-exfiltration-aug-2026, wiki-graph-analysis-weekly-2026-08-14
+- Verification: `tag_audit.py` → 0 tags NOT in taxonomy; `tag_normalization_diff_scan.py` → 0 violation pages
+- No SCHEMA.md additions needed (all mapped to existing canonical tags)
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

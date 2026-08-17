@@ -604,10 +604,14 @@ TAG_NORMALIZATION = {
     'graph-analysis': 'wiki',
 
     # 2026-08-10 weekly audit: multi-use non-SCHEMA tags (2x+)
-    'wealth-distribution': 'wealth-concentration',
+    'wealth-distribution': 'economics',
     'roi': 'business-model',
     'ai-cost': 'cost',
     'token-billing': 'token-economics',
+
+    # 2026-08-17 weekly audit: multi-use non-SCHEMA tags (2x+)
+    'wealth-concentration': 'economics',
+    'data-exfiltration': 'security',
 }
 
 def extract_tags_from_frontmatter(front):

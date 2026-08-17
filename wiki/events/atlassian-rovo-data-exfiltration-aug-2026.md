@@ -1,9 +1,9 @@
 ---
 title: "Atlassian Rovo Data Exfiltration Incident (August 2026)"
 created: 2026-08-06
-updated: 2026-08-06
+updated: 2026-08-17
 type: event
-tags: [agent-safety, security, vulnerability, data-exfiltration, incident, atlassian, enterprise-ai]
+tags: [agent-safety, security, vulnerability, atlassian, enterprise-ai]
 sources:
   - raw/articles/2026-08-05_promptarmor_atlassian-rovo-data-exfil.md
 ---

@@ -1,7 +1,7 @@
 ---
 title: "AI Affordability Crisis"
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-08-17
 type: concept
 tags:
   - economics
@@ -15,7 +15,6 @@ tags:
   - platform-economics
   - labor-economics
   - post-scarcity
-  - wealth-concentration
   - controversy
   - prediction
   - valuation

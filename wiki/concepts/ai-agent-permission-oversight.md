@@ -1,9 +1,9 @@
 ---
 title: AI Agent Permission Oversight
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-08-17
 type: concept
-tags: [agent-safety, human-in-the-loop, agent-security, permission, data-exfiltration, coding-agents, cybersecurity]
+tags: [agent-safety, human-in-the-loop, agent-security, permission, security, coding-agents, cybersecurity]
 sources:
   - raw/articles/2026-08-05_scalex_ai-agent-permissions-human-oversight.md
 ---
