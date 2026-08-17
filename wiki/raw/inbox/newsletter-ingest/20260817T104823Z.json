@@ -1,0 +1,62 @@
+{
+  "run_id": "20260817T104823Z",
+  "triaged_at": "2026-08-17T10:50:00Z",
+  "summary": "5 newsletters ingested. 3 high relevance (AI industry reporting, AI infrastructure/energy, LLM model review), 1 medium (OpenAI design), 1 low (energy grid modeling — tangentially related via SemiAnalysis).",
+  "classifications": [
+    {
+      "subject": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+      "date": "2026-08-17",
+      "source": "Simon Willison (simonw)",
+      "importance": "critical",
+      "reason": "Direct LLM model review by a top AI blogger. Qwen 3.8 27B is a new model release. Covers model behavior, overthinking defaults, and practical evaluation. High signal for model entity page (Qwen) and potential concept pages on reasoning/overthinking.",
+      "entities": ["Qwen", "Alibaba", "Simon Willison"],
+      "action": "scrape_article, create_or_update Qwen entity page, note overthinking behavior pattern",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-17-qwen-3-8-27b-is-excellent-but-it-defaults-to-wildly-overthinking-things.md"
+    },
+    {
+      "subject": "Anthropic's Trust Equation, Google's Show of Hands, and Grok Never Logs Off",
+      "date": "2026-08-16",
+      "source": "The Signal (alexbanks)",
+      "importance": "high",
+      "reason": "Covers three major AI entities: Anthropic (trust/safety), Google (AI features), and Grok/xAI (always-on AI). Multi-entity industry roundup relevant to multiple wiki pages.",
+      "entities": ["Anthropic", "Google", "xAI", "Grok"],
+      "action": "scrape_article, update entity pages for Anthropic, Google AI, xAI/Grok",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-16-anthropic-s-trust-equation-google-s-show-of-hands-and-grok-never-logs-off.md"
+    },
+    {
+      "subject": "\"There is no market without scarcity\": An Exclusive Interview on Cloudflare's Stephanie Cohen on making AI pay for the open web",
+      "date": "2026-08-16",
+      "source": "beehiiv newsletter",
+      "importance": "high",
+      "reason": "Cloudflare's strategy for AI content monetization and open web sustainability. Relevant to AI ecosystem economics, content licensing, and Cloudflare's AI-adjacent infrastructure role.",
+      "entities": ["Cloudflare", "Stephanie Cohen"],
+      "action": "scrape_article, create Cloudflare entity page or concept page on AI content monetization",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-16-there-is-no-market-without-scarcity-an-exclusive-interview-on-cloudflare-s-steph.md"
+    },
+    {
+      "subject": "OpenAI's Head of Design: This is the best time in history to be a designer | Ian Silber",
+      "date": "2026-08-16",
+      "source": "Lenny's Newsletter (lenny)",
+      "importance": "medium",
+      "reason": "Interview with OpenAI's Head of Design about AI's impact on design roles. Relevant to OpenAI entity page and AI's impact on creative professions, but design-focused rather than core AI/LLM technology.",
+      "entities": ["OpenAI", "Ian Silber"],
+      "action": "scrape_article, minor update to OpenAI entity page (design team)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-16-openai-s-head-of-design-this-is-the-best-time-in-history-to-be-a-designer-ian-si.md"
+    },
+    {
+      "subject": "$12B of US ratepayers' money wasted on a modeling mistake and PJM wants to do it again",
+      "date": "2026-08-16",
+      "source": "SemiAnalysis (semianalysis)",
+      "importance": "high",
+      "reason": "SemiAnalysis deep-dive on AI datacenter energy consumption, grid modeling errors, and electricity cost impacts. Highly relevant to AI infrastructure, energy consumption, and datacenter economics. SemiAnalysis is a key AI infrastructure analyst.",
+      "entities": ["SemiAnalysis", "PJM Interconnection"],
+      "action": "scrape_article, create/update concept page on AI energy consumption, update SemiAnalysis entity page",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-16-12b-of-us-ratepayers-money-wasted-on-a-modeling-mistake-and-pjm-wants-to-do-it-a.md"
+    }
+  ],
+  "next_actions": [
+    "scrape_all_5_articles",
+    "prioritize: Qwen review (critical) > Anthropic/Google/Grok roundup + SemiAnalysis energy + Cloudflare monetization (high) > OpenAI design (medium)",
+    "create or update wiki entity pages for: Qwen, Cloudflare, update Anthropic, Google, xAI/Grok, OpenAI, SemiAnalysis"
+  ]
+}
