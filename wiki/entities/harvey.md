@@ -41,6 +41,9 @@ sources:
   - raw/articles/2026-05-12_harvey_how-to-automate-contract-analysis-with-ai.md
   - raw/articles/2026-06-24_harvey_ai-for-general-counsel.md
   - raw/articles/2026-05-30_harvey_legal-document-automation-ai.md
+  - raw/articles/2026-06-09_harvey_how-to-use-ai-as-a-lawyer.md
+  - raw/articles/2026-06-09_harvey_ai-agents-for-legal-work.md
+  - raw/articles/2026-06-13_harvey_ai-contract-drafting.md
 ---
 
 # Harvey
@@ -201,6 +204,79 @@ Harvey's implementation guide for AI-powered contract analysis (published May 11
 **Next phase — agentic workflows and portfolio-level contract intelligence:** AI executing coordinated multi-step sequences (contract analysis + due diligence + regulatory review + reporting) with human oversight at defined decision points; questions like "how many vendor agreements contain force majeure provisions that would be triggered by a specific regulatory change" become answerable in minutes rather than weeks. Scale cited: 142,000+ legal professionals across 60 countries, 60%+ of the AmLaw 100.
 
 Source: raw/articles/2026-05-12_harvey_how-to-automate-contract-analysis-with-ai.md
+
+## How to Use AI as a Lawyer: Workflows, Risks, Rules (June 2026)
+
+Harvey published a practitioner-facing guide (Jun 8, 2026) on the workflows, risks, and rules of legal AI — distinct from its platform-specific guides in that it addresses how an individual lawyer or firm should adopt AI: which use cases pay off, how to choose tools, and what the ethical floor is.
+
+**Workflows with the highest leverage:**
+- **Legal research** — "asking for the right altitude" (one-paragraph exec summary → one-page briefing → detailed outline); summaries must preserve nuance because in legal text the nuance is the risk allocation
+- **Document review and analysis** — summarize, extract, and compare across large document sets
+- **Client communication** — alerts, engagement letters, status updates; intake assistants with firm boundaries so they never give bespoke advice or imply a lawyer-client relationship
+- **Multilingual practice** — AI translates/adapts legal information, widening service without headcount
+
+**Choosing tools — four evaluation factors:** (1) legal accuracy first (a fast wrong answer costs more than no answer), (2) explainability (tool shows reasoning rather than handing over conclusions), (3) jurisdictional coverage (US authority won't help an English litigator), (4) fit with practice areas. Require documented benchmarks, case studies, references, and a **known-answer test** on historic matters (2022-2025) where the outcome is already known. "A model that never admits doubt is a model you have to second-guess on every answer."
+
+**Security floor — three questions:** Where does data physically live (EU/US servers, matching obligations)? Is it encrypted in transit and at rest? What happens concretely on incident? Bring IT, infosec, and risk teams into vetting before any tool touches a live matter.
+
+**Ethical and regulatory considerations:** All pre-AI duties (competence, confidentiality, candor to the court) remain in full — "regulators have been clear that competence now includes understanding your AI tools well enough to supervise them." Human review of every AI-generated analysis, draft, citation, and factual claim. Bias/fairness: models trained on historical data can reproduce disparities — highest stakes in risk assessments, sentencing tools, and employment analyses; courts/regulators (2023-2026) scrutinized algorithmic decision-making most sharply in criminal justice and immigration. Counterweight: legal aid and pro bono clinics use AI to scale basic legal information — real access-to-justice progress.
+
+**Implementation sequence:** staged rollout (pilot → evaluate → refine → expand), never firm-wide flip. Readiness: audit where hours actually go, score candidate projects on impact × risk axes (start with internal tasks like KM or nonconfidential templates). Pilots: 60-90 days, single practice area, clear question, measured against old way of working (time saved, error rates, user satisfaction, client feedback). Training: continuous standing program; paralegals/legal ops often become the strongest power users. Governance: written AI policy, central register of tools (kills "shadow AI"), annual review.
+
+**Where it's heading:** agentic workflows — AI runs multi-step tasks to completion (due diligence memo, contract review, regulatory filing) — change oversight from editing to auditing: "You have to understand the process itself, not only the output." Harvey cited as the platform built for this shift (142,000+ legal professionals, 60+ countries).
+
+Source: raw/articles/2026-06-09_harvey_how-to-use-ai-as-a-lawyer.md
+
+## AI Agents for Legal Work (June 2026)
+
+Harvey's explainer (Jun 8, 2026) on where AI agents create the most leverage in legal work, how they reshape associate development, and what governance determines whether an agent reaches production.
+
+**Where agents create leverage** — three traits: high volume, consistent structure across matters, human time as the throughput limit.
+- **Transactional work** — the structural fit: diligence, markup drafting, issues lists across thousands of pages; Harvey's library alone has 60+ agents across M&A and capital markets (escrow issues lists, underwriting agreement issue identification, acquisition-agreement markups against counterparty first cuts)
+- **Litigation** — slower absorption (more judgment, less volume), but high-volume corners absorb agents: witness examination outlines, exhibit-list vs pretrial-order comparison, responses to requests for production, extracting key allegations from government inquiry letters
+- **Compliance and regulatory** — where in-house teams get the most leverage: ESG disclosure vs regulatory requirements, permit application narratives, breach notification obligations across jurisdictions
+- **In-house operations** — MSA renewal-term assessment, employment agreements from offer letters, contract amendments, counterparty financial-statement issue identification
+
+**Associate craft shift:** a first-year who once spent 40 hours marking up a services agreement may spend 5 hours reviewing an agent's markup — the remaining 35 hours become judgment work (reading the agent's plan, catching scope errors, spotting citations that don't support claims, recognizing the issue the agent didn't flag). The concern: pattern recognition comes from doing the work yourself the first hundred times; firms gaining ground treat this as a **curriculum problem** — structured review programs, intentional friction (draft by hand before comparing to agent output) — "use agents in a way that produces the next generation of partners, not just the next generation of reviewers."
+
+**Six governance dimensions** (the questions that decide pilot → production):
+1. **Scope of access** — what an agent may read and which tools it may use; undefined access boundaries = confidentiality incident waiting to happen
+2. **Authorized actions** — distinguish run-without-intervention from human-sign-off actions (drafting an internal issues list vs finalizing a document that leaves the firm)
+3. **Reviewability and human-in-the-loop** — review as the work progresses, not only at the end; **citation auditability** is the mechanism that makes supervision practical (a markup with citations reviewed in minutes; without them, re-read from scratch)
+4. **Matter-level isolation and data governance** — work for one client walled off from another; what's retained, for how long, whether data trains models (answer: no)
+5. **Deployment and configuration governance** — who can configure/publish an agent for others to run; "publishing an agent is closer to writing a policy than to sharing a document"
+6. **Accountability and documentation** — who reviews what, what needs partner sign-off, audit trails of inputs/plans/steps/sources/outputs; "write the policy and build the logging before the rollout, not after the first incident"
+
+**What credible agents look like (3 things):** (1) built on a vetted library of legal tasks, (2) transparent reasoning with citations auditable at every step, (3) platform lets the organization turn its own templates/standards/review steps into custom agents. "Anything short of all 3 is a tool, not a platform."
+
+**Scale evidence cited:** used by more than half the AmLaw 100 (Reed Smith, Macfarlanes, Vinson and Elkins, Willkie Farr and Gallagher); 700,000+ daily tasks run using agents; 50 million terms extracted weekly; 500+ pre-built agents and a custom agent builder.
+
+**Six-month rollout pattern:** pilot with a single practice group (high-volume, well-bounded, partner genuinely interested) → measure in lawyer terms (quality, hours redirected, partner satisfaction — not usage counts) → build 2-3 internal champions per group → expand horizontally to an adjacent practice group before firm-wide. "Ambition is earned a practice group at a time."
+
+Source: raw/articles/2026-06-09_harvey_ai-agents-for-legal-work.md
+
+## AI Contract Drafting Guide (June 2026)
+
+Harvey's drafting-specific guide (Jun 12, 2026) — complements the review-focused pieces above with the drafting workflow: which contract types fit AI drafting, the five benefits, the three integration patterns, and the three-year outlook.
+
+**Workflow fit** — a bounded universe of variation: NDAs, SaaS and commercial agreement turnarounds (counterparty paper vs the team's playbook), employment offer letters across jurisdictions (structured clause library), procurement template population from a completed term sheet. The pattern to watch is the shape of the work: "Wherever a team finds itself repeating a drafting exercise that is 80% patterned and 20% judgment, the AI handles the 80% and returns the 20% to the lawyer."
+
+**Five benefits:** faster turnaround on repeatable work (first-pass NDA redlines in a fraction of the time; counterparty markups from most of a day to hours); higher draft quality from day one (first version the senior reviewer sees is already aligned to institutional standards); institutional knowledge as a retrievable asset for the whole team; more lawyer time on judgment work; capacity that grows without headcount.
+
+**Three integration patterns** ("the AI meets the lawyer where the work already is"):
+1. **Inside the document editor** — Word sidebar/command palette, redline against playbook with tracked changes
+2. **Inside email** — Outlook reviews attached contracts, drafts responses to counterparty redlines; Harvey customers run 12,000+ queries/week in Outlook
+3. **Inside the matter workspace** — tied to a deal-specific data room, drawing on that deal's precedents and playbook
+
+**Governance:** permissions respect ethical walls (a lawyer on one matter cannot retrieve data from a conflicted engagement), audit trails record every query/source/output, citations visible in output.
+
+**Knowledge rewiring and associate development:** every negotiated deal and approved fallback becomes a retrievable asset; the second-order question is whether the iterative drafting struggle that built junior judgment was load-bearing — "the tactical drafting skills are being rebuilt around reviewing and directing AI output, which is a different skill than generating from a blank page."
+
+**Adoption roadmap:** start narrow (NDAs are the canonical entry point — bounded variance, clearly evaluable output), codify what good looks like (reference library of accepted positions caps AI output quality), measure both sides of the ledger (time saved + quality signals: revisions before client-ready, negotiation cycles, senior-reviewer complaints), expand deliberately (one quarter to measurable throughput on the initial contract type; horizontal rollout across all types at once produces no real adoption anywhere).
+
+**Three-year outlook:** (1) **agentic workflows** — multi-step sequences (intake counterparty contract → run against approved positions → draft full counter-redline → client memo → negotiation talking points) with human review at checkpoints; Harvey's contract agents already work this way; (2) **cross-matter intelligence** — drafting tools learn from the firm's entire portfolio; Harvey **Contract Intelligence** keeps playbooks current from executed work and surfaces how clauses/positions trend across the business; (3) **integrated drafting across the lawyer's day** — Word, Outlook, and matter workspace converge into a single surface.
+
+Source: raw/articles/2026-06-13_harvey_ai-contract-drafting.md
 
 ## Legal Research vs Traditional Tools (July 2026)
 

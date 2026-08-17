@@ -2,7 +2,7 @@
 title: "Hex Technologies"
 type: entity
 created: 2026-05-08
-updated: 2026-08-14
+updated: 2026-08-17
 tags:
   - company
 aliases: ["Hex", "Hex Tech"]
@@ -11,6 +11,7 @@ sources:
   - raw/articles/2026-05-23_hex-technologies_evaluate-data-agents.md
   - raw/articles/2026-05-10_hex-technologies_notebook-agent-prompting-guide-agentic-analytics.md
   - raw/articles/2026-08-14_hex-technologies_databench-agentic-analytics-benchmark.md
+  - raw/articles/2026-05-10_hex-technologies_beginners-guide-to-python-notebooks.md
 ---
 
 # Hex Technologies
@@ -64,7 +65,6 @@ Authored by Alex Brumas (Product), September 24, 2025 (Olivia Koshy was PM of th
 Source: raw/articles/2026-05-10_hex-technologies_notebook-agent-prompting-guide-agentic-analytics.md (published 2025-09-24)
 
 ### Repos as Agent Context (May 2026)
-
 Hex added the ability to attach Git repos to workspaces, enabling the Hex Agent to analyze dbt models and application code. This bridges the gap between data warehouse context and code-level understanding.
 
 - **dbt repo use case**: Self-service users can query high-level tables while the agent crawls upstream dbt logic to understand filtering, collapsing, and category definitions
@@ -74,7 +74,11 @@ Hex added the ability to attach Git repos to workspaces, enabling the Hex Agent 
 
 Authored by Andrew Lee (May 15, 2026).
 
+### Python Notebooks Beginner's Guide (2022)
 
+Hex's earliest educational post (Sep 22, 2022) — a Jupyter/IPython tutorial predating the agent era. Documents the notebook paradigm Hex builds on: cells + kernel architecture, the "run code, explore data, present results" loop (Fernando Perez quote on IPython's origin as an "afternoon hack"), and production notebook use at Netflix (most data access via notebooks), Bloomberg (notebooks in the terminal), PayPal (Jupyter as a platform), and Lyft (LyftLearn, Jupyter in Kubernetes). Low AI-specific content; kept as context for the notebook lineage behind Hex's agentic notebooks.
+
+Source: raw/articles/2026-05-10_hex-technologies_beginners-guide-to-python-notebooks.md
 
 ## Data Agent Evaluation Lab (Shoebox)
 

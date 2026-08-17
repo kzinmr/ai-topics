@@ -1,6 +1,17 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+
+## [2026-08-17] raw-backlog-ingest | Harvey trio (lawyer workflows / legal agents / contract drafting) + ElevenLabs real-time STT architecture + Hex notebooks primer
+
+- **Enriched: [[entities/harvey]]** -- three new sections from sitemap-scraped Harvey blog articles:
+  - "How to Use AI as a Lawyer: Workflows, Risks, Rules (June 2026)" (raw/articles/2026-06-09_harvey_how-to-use-ai-as-a-lawyer.md): four high-leverage workflows (research at the right altitude, document review, client communication, multilingual), four tool-eval factors (accuracy, explainability, jurisdictional coverage, fit) + known-answer tests, security three questions, ethics (competence/supervision, bias/fairness, access-to-justice), staged rollout (60-90 day pilots, training as standing program, shadow-AI register), agentic shift from editing to auditing.
+  - "AI Agents for Legal Work (June 2026)" (raw/articles/2026-06-09_harvey_ai-agents-for-legal-work.md): leverage areas (transactional 60+ agents, litigation, compliance, in-house ops), associate craft shift (40h -> 5h review, curriculum problem), six governance dimensions (scope of access, authorized actions, reviewability/citation auditability, matter isolation, deployment config, accountability), 3 things credible agents need, scale stats (700K daily tasks, 50M terms/week, 500+ agents, >half AmLaw 100), six-month rollout pattern.
+  - "AI Contract Drafting Guide (June 2026)" (raw/articles/2026-06-13_harvey_ai-contract-drafting.md): 80/20 patterned-judgment rule, five benefits, three integration patterns (Word, Outlook 12K queries/wk, matter workspace), governance, associate development question, adoption roadmap (NDA-first), three-year outlook (agentic workflows, Contract Intelligence cross-matter, integrated drafting).
+- **Enriched: [[entities/elevenlabs]]** -- "Real-Time Speech-to-Text Architecture Guide (June 2026)" section (raw/articles/2026-06-26_elevenlabs_real-time-speech-to-text-under-200ms.md): Scribe v2 Realtime anchor (~150ms partials, 90+ langs, PCM/mu-law, VAD + manual commit), WebSocket vs WebRTC comparison table, partials vs finals semantics, chunk sizing (20-250ms, 100ms anchor ~3.2KB), AudioWorklet browser capture, server relay pattern, latency+WER benchmarking. Fills the gap next to the Voice Agent Latency Optimization stub.
+- **Enriched: [[entities/hex-technologies]]** -- "Python Notebooks Beginner's Guide (2022)" note (raw/articles/2026-05-10_hex-technologies_beginners-guide-to-python-notebooks.md): Jupyter/IPython paradigm (cells/kernel, Fernando Perez origin), production notebook use at Netflix/Bloomberg/PayPal/Lyft; low AI content, kept as notebook-lineage context for Hex agentic notebooks.
+- Frontmatter: +3 sources on harvey, +1 on elevenlabs, +1 on hex-technologies; updated dates bumped to 2026-08-17.
+
 ## [2026-08-17] raw-backlog-ingest | Geoffrey Litt 2023 essay fills two concept stubs + Harvey legal document automation guide
 
 - **Enriched: [[concepts/malleable-software]]** (was 25-line stub) -- full page from geoffreylitt.com 2023-03-25 essay "Malleable software in the age of LLMs": Tchernavskij 2019 coinage, Ink & Switch 2025 principles (universal version control, live collaboration, gradual enrichment, AI-assisted development), programming bottleneck, chat as limited interaction mode, double interaction loop (spreadsheet archetype), LLM as local developer (Nardi & Miller 1990 Betty-and-Buzz), on-the-fly UI; projects table (Wildcard, Potluck, Embark, Patchwork, Ambsheets).

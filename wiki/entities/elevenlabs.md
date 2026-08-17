@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-08-11
+updated: 2026-08-17
 tags:
   - company
   - voice-ai
@@ -27,6 +27,7 @@ sources:
   - raw/articles/2026-07-30_elevenlabs_ai-virtual-receptionist.md
   - raw/articles/2026-07-30_elevenlabs_valiant-finance.md
   - raw/articles/2026-08-08_elevenlabs_how-elevenreader-used-elevenagents.md
+  - raw/articles/2026-06-26_elevenlabs_real-time-speech-to-text-under-200ms.md
 ---
 
 # ElevenLabs
@@ -328,7 +329,37 @@ ElevenLabs published a technical deep-dive on voice agent latency optimization, 
 
 Source: [Voice Agent Latency Optimization — ElevenLabs Blog](https://elevenlabs.io/blog/voice-agent-latency-optimization)
 
+## Real-Time Speech-to-Text Architecture Guide (June 2026)
 
+ElevenLabs published an architecture guide (Jun 25, 2026) for building real-time STT pipelines under a 200ms budget, anchored on **Scribe v2 Realtime** (~150ms model latency for partials, 90+ languages, PCM 8kHz-48kHz and mu-law input, VAD + manual commit control). Central thesis: low-latency STT is "as much an architectural problem as a model one" — transport, chunking, end-pointing, and capture path each add latency.
+
+### WebSocket vs WebRTC
+
+| Dimension | WebSocket | WebRTC |
+|-----------|-----------|--------|
+| Transport | TCP (reliable, ordered) | UDP/SRTP (real-time, loss-tolerant) |
+| Packet loss behavior | Head-of-line blocking, bursty recovery | Graceful degradation |
+| Jitter handling | Your responsibility | Built-in jitter buffer |
+| NAT traversal | Not needed (client-initiated) | ICE/STUN/TURN |
+| Server complexity | Low | High (media server or SFU) |
+
+WebSocket is the right default for most pipelines (server-to-server, desktop apps, browser on broadband, contact-center backends). WebRTC when capturing from consumer devices on unreliable mobile networks, when already running a WebRTC stack for two-way audio (voice agents that also speak back), or when low-loss real-time behavior matters more than implementation simplicity.
+
+### Partials vs Finals
+- **Partials (interim)** — model's best guess given audio so far; unstable by design (revised as later context resolves ambiguity: "I want to" → "I want two tickets"); arrive fast (~150ms) and are meant to be overwritten; drive the live transcript UX
+- **Finals (committed)** — locked segments that persist; what you send to an LLM or store. Blurring the two breaks user experience, end-pointing, and persistence logic
+
+### End-pointing, VAD, and Chunk Sizing
+- **VAD** handles hands-free segmentation; **manual commit** gives the app an override when it knows the turn is over
+- **Chunk sizing is the lever that most directly shapes perceived latency**: 20-250ms per chunk is practical; 100ms anchor (~3,200 bytes at 16kHz mono 16-bit PCM); smaller chunks = lower latency to first partial
+- **Browser capture**: Web Audio API + **AudioWorklet** (runs on audio rendering thread, immune to main-thread jank), float → 16-bit PCM conversion, transferable buffer via `postMessage`
+- **Server relay pattern**: API key stays server-side; if the browser must talk to the recognizer directly, mint short-lived single-use tokens
+- **In-stream features**: language detection and speaker diarization; telephony audio arrives as 8kHz mu-law (Twilio) — forward in source format rather than transcoding twice
+
+### Benchmarking
+Measure latency (time-to-first-partial, end-to-end) and WER together — optimizing one alone is misleading. Scribe v2 Realtime positioned as the reference implementation of the guide's pipeline patterns.
+
+Source: raw/articles/2026-06-26_elevenlabs_real-time-speech-to-text-under-200ms.md
 
 ### AI Virtual Receptionist (July 2026)
 
