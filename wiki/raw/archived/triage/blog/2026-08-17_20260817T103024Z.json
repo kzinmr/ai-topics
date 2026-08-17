@@ -1,0 +1,128 @@
+{
+  "archived_at": "2026-08-17T10:50:19.065419+00:00",
+  "triage_run_id": "20260817T103024Z",
+  "source": "blog",
+  "summary_ja": "2026-08-17 blog-triage（重複起動リカバリ）: 13候補+unsaved 2件=15件。本日10:30のblog-wiki-ingest（commit f6c01f84）が同一バッチを処理済みのため、実行済み決定をミラーしてtriage JSONを再生成。take 5件（qwen-3-8-27b新規作成、gary-marcus/martin-alderson/daringfireball-netエンリッチ、ai-text-watermarking更新）は全てページ実体（updated: 2026-08-17）で確認済み。skip 10件（Dario引用、Markdown SVGツール、Hadamard数学、LWNカーネル、XCancel、Edinburgh Fringe、Pluralistic著作権、Jim Nielsen、WSJ/The Informationペイウォール2件）。前回実行が残したギャップ（triage_latest.json更新＋archive）を本ランで補完。",
+  "decisions": [
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "A quote from Dario Amodei",
+      "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-aug-16-dario-amodei--5560952a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 引用のみの投稿（Dario Amodei: AI否定的世論はマーケティング問題ではなく信頼の危機、実績で応えるべき）。既存ページ（anthropic、ai-safety関連）の内容と重複し、新規情報なし。本日10:30のblog-wiki-ingestでもskip判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# A quote from Dario Amodei\nSource: https://simonwillison.net/2026/Aug/16/dario-amodei/\nI do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks.  I think it is fundamentally "
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Markdown SVG upgrades",
+      "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-aug-16-markdown-svg-upgrades--911367f7.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 軽量ツール記事。markdown-svg-rendererツールの機能追加（PNG/JPEGタブ、新MP4タブ=ffmpeg.wasmでアニメSVGをブラウザ内MP4変換）。開発者向けユーティリティでAI/エージェント関連性なし。wiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Markdown SVG upgrades\nSource: https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/\n16th August 2026\nI started building my\nmarkdown-svg-renderer\ntool\nin May\n, but I've since added enough features to it that it's worth talking about here again.\nIt's evolved into my ideal tool for sharing Mar"
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Proportion of 1s in a Hadamard matrix",
+      "url": "https://www.johndcook.com/blog/2026/08/16/proportion-of-1s-in-a-hadamard-matrix/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-08-16-proportion-of-1s-in-a-hadamard-matrix--f1febd04.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 純粋数学記事（Hadamard行列の1の割合、Kronecker積、Sylvester構成）。AI/LLM関連性なし。wiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Proportion of 1s in a Hadamard matrix\nSource: https://www.johndcook.com/blog/2026/08/16/proportion-of-1s-in-a-hadamard-matrix/\nThe\nfirst post\nin the recent series of posts on Hadamard matrices describes a way of constructing new Hadamard matrices from two other Hadamard matrices by taking their\nKr"
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "LWN.net",
+      "title": "The 7.2 kernel has been released",
+      "url": "https://lwn.net/Articles/1088991/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/lwn.net--articles-1088991--84f70da9.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Linuxカーネル7.2リリースアナウンス。インフラ/OSニュースでAI/エージェント関連性なし。wiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The 7.2 kernel has been released\nSource: https://lwn.net/Articles/1088991/\nThe 7.2 kernel has been released\n[Posted August 16, 2026 by corbet]\nThe\n7.2 kernel\nhas been released.\nLinus said:\nWell, this last week of the release was - once again - bigger than\n\tI would have wished for, but hey, with th"
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "blog.jim-nielsen.com",
+      "title": "Oops, Should've Thought of That",
+      "url": "https://blog.jim-nielsen.com/2026/oops-shouldve-thought-of-that/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/blog.jim-nielsen.com--2026-oops-shouldve-thought-of-that--e3ac955f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Gordon Branderの引用コメント記事。Web開発の設計考察でAI/エージェント関連性なし（本日10:30のblog-wiki-ingestでもLOW/skip判定）。wiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Oops, Should’ve Thought of That\nSource: https://blog.jim-nielsen.com/2026/oops-shouldve-thought-of-that/\nGordon Brander\nwrites\n:\nThe thing about computers is that they can do anything you wish, so long as you specify your wish in exacting detail. However, LLMs relieve this constraint. An LLM can e"
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "XCancel",
+      "url": "https://xcancel.com/about",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/xcancel.com--about--928531e6.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ XCancel（Nitterインスタンス）のaboutページ。X代替フロントエンドツールの紹介でAI/エージェント関連性なし。wiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# XCancel\nSource: https://xcancel.com/about\nAbout\nXCancel is an instance of Nitter.\nNitter is a free and open source alternative Twitter front-end focused on\nprivacy and performance. The source is available on GitHub at\nhttps://github.com/zedeus/nitter\nNo JavaScript or ads\nAll requests go through th"
+    },
+    {
+      "item_id": "blog-12",
+      "source": "blog",
+      "source_name": "shkspr.mobi",
+      "title": "Thoughts on visiting the Edinburgh Fringe as a newbie",
+      "url": "https://shkspr.mobi/blog/2026/08/thoughts-on-the-edinburgh-fringe-as-a-newbie/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/shkspr.mobi--blog-2026-08-thoughts-on-the-edinburgh-fringe-as-a-newbie--1000972c.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ エディンバラ・フリンジ初参加の旅行感想エッセイ。非AIコンテンツでwiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Thoughts on visiting the Edinburgh Fringe as a newbie\nSource: https://shkspr.mobi/blog/2026/08/thoughts-on-the-edinburgh-fringe-as-a-newbie/\nThis was my first ever time at The Fringe™. Here are some scattered thoughts looking at the good, the bad, and the annoying aspects of this madly extravagant"
+    },
+    {
+      "item_id": "blog-13",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: Jennifer Jenkins' 'Music Copyright, Creativity, and Culture' (17 Aug 2026)",
+      "url": "https://pluralistic.net/2026/08/17/great-sousas-ghost/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-08-17-great-sousas-ghost--0782b77b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 音楽著作権の教科書レビュー（Jennifer Jenkins著、Sousaのゴースト）。著作権法/音楽史でAI/エージェント関連性なし。wiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Pluralistic: Jennifer Jenkins’ ‘Music Copyright, Creativity, and Culture’ (17 Aug 2026)\nSource: https://pluralistic.net/2026/08/17/great-sousas-ghost/\nToday's links\nJennifer Jenkins' 'Music Copyright, Creativity, and Culture'\n: The definitive textbook (with comics!).\nHey look at this\n: Delights to"
+    },
+    {
+      "item_id": "unsaved-1",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Trump Administration 'Not in Favor' of Apple Using Chinese RAM",
+      "url": "https://www.wsj.com/tech/apple-china-memory-chip-plan-57773a83?st=vfe1SA",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ unsaved_articles（抽出不可）。WSJペイウォール記事。Appleの中国製メモリチップ調達をめぐる政権方針で、AI/エージェント関連性なし。本文なしのためtake対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可、WSJペイウォール）"
+    },
+    {
+      "item_id": "unsaved-2",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "The Information Profiles Cami Clark — Dario Amodei's Wife, Ivanka Trump's Friend, One-Time Would-Be Pornographer, and Anthropic's 'First Lady'",
+      "url": "https://www.theinformation.com/articles/anthropics-first-lady-took-winding-road-top?rc=jfy0lk",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ unsaved_articles（抽出不可）。The Informationペイウォール記事。Anthropic CEO夫人の人物プロフィールで、技術的内容なし。AI/エージェントwikiの対象外。本文なしのためtake対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可、The Informationペイウォール）"
+    }
+  ]
+}
