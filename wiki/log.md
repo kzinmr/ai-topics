@@ -1,3 +1,18 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-08-17] watchdog | auto-fix log header burial + index concepts count
+
+- **Log header burial**: raw-backlog-ingest 14:00 prepend pushed `# Wiki Log` to line 82. Ran `config/hermes/skills/_overrides/wiki-graph-health/scripts/fix_log_header_burial.py` → header restored to line 1, metadata at line 3, 440 entries preserved, 0 pipe corruption. Deleted `log.md.bak` immediately after.
+- **Index header count**: concepts section had 1993 entry lines vs `## Concepts (1991 pages)` header → corrected to 1993 (filesystem set-diff 0/0 verified).
+- **Verified clean**: validate_index.py exit 0; index corruption 0/0/0/0 (pipe/triple/line-number); ghost entries 0; log pipe lines 0; frontmatter gaps: sources 0, type 0, tags 0, updated 0, title 0 (26 pages missing `created:` — escalated, see report).
+- **Escalated (no auto-fix)**: 26 pages missing `created:` (10+ file threshold); 6 known entity duplicate pairs (deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, giles-thomas/gilesthomas, lilian-weng/lilianweng, martin-fowler/martinfowler, samuel-colvin/samuelcolvin); 3,463 broken wikilinks + 479 orphans from stale weekly graph report (74h old — needs human-directed batch pass); tag violations (1,021) → tag-audit-weekly domain.
+- **Pipeline**: x_accounts stale(26h) = transient (48h schedule, 22:30 UTC every 2 days).
+
+---
+
 ## [2026-08-17] raw-backlog-ingest 14:00 | all-skip batch: watermark article already captured + 4 non-AI articles
 
 - **Batch**: 5 candidates (raw_backlog_collect.py --sort ai-hint, run 20260817T140001Z). Takes=0, References=0, Skips=5.
@@ -78,10 +93,6 @@
 - No SCHEMA.md additions needed (all mapped to existing canonical tags)
 
 ---
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-17] raw-backlog-ingest | Harvey trio (lawyer workflows / legal agents / contract drafting) + ElevenLabs real-time STT architecture + Hex notebooks primer
 
