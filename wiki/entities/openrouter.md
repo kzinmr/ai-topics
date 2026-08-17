@@ -2,7 +2,7 @@
 title: OpenRouter
 type: entity
 created: 2026-05-02
-updated: 2026-05-27
+updated: 2026-08-17
 tags:
   - entity
   - platform
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2025-12-01_openrouter-state-of-ai-2025.md
   - https://openrouter.ai/
   - raw/articles/minimaxir.com--2026-05-openrouter-hy3--e38b0f2d.md
+  - https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/
 ---
 
 
@@ -95,6 +96,18 @@ OpenRouter occupies a unique position in the LLM infrastructure stack — it is 
 By May 2026, OpenRouter was reported to be on a **decacorn trajectory** ($10B+ valuation potential), following [[entities/fireworks-ai]] and [[entities/baseten]] in the AI infrastructure decacorn wave. OpenRouter's position as a neutral model routing layer — aggregating 300+ models from competing providers — makes it a uniquely valuable infrastructure component as enterprises seek multi-provider strategies.
 
 Source: AINews (Latent Space), May 2026.
+
+## Stripe Acquisition (August 2026)
+
+Bloomberg reported on **2026-08-16** that **Stripe has finalized a deal to acquire OpenRouter for $7B+** (TechCrunch relay). Key context:
+
+- OpenRouter raised a **$113M Series B at a $1.3B valuation** in May 2026 (investors: Sequoia, a16z, Menlo Ventures, Alphabet's Capital G), then was reported to be on a "decacorn trajectory."
+- CEO **Alex Atallah** had described OpenRouter as "the equivalent of Stripe for AI" — a single access point preventing model lock-in. At acquisition time: **8M global users, 400+ models**.
+- The deal (reportedly ~$7B+, per Bloomberg) positions Stripe to own the **AI inference payment rail** — routing + billing for multi-provider LLM usage, complementing its existing payment infrastructure.
+- WSJ had reported acquisition talks in July 2026; Bloomberg confirmed the finalized deal on 8/16.
+- This is the largest consolidation in the AI gateway layer and signals payment processors treating model routing as core financial infrastructure. See also [[concepts/ai-gateway]] and [[concepts/multi-model-synthesis-strategies]].
+
+Source: [TechCrunch — Stripe will reportedly acquire OpenRouter for $7B+ (2026-08-16)](https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/)
 
 ## Related
 

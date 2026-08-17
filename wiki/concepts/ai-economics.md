@@ -2,13 +2,14 @@
 title: "AI Economics"
 type: concept
 created: 2026-06-18
-updated: 2026-07-13
+updated: 2026-08-17
 tags:
   - economics
   - agi
   - inference
   - company
   - platform-economics
+  - token-economics
 related:
   - [[entities/alex-imas]]
   - [[entities/phil-trammell]]
@@ -66,6 +67,18 @@ Key economic implications:
 This framework extends the inference economics analysis by identifying a **structural cost** beyond GPU pricing: the leakage of proprietary organizational knowledge through normal AI use.
 
 See: [[concepts/reverse-information-paradox]], [[concepts/token-capital]], [[entities/satya-nadella]]
+
+## Token Brokers & the AI Credit Resale Economy (Aug 2026)
+
+Vectoral's threat-research piece (Matt Lenhard, Aug 10, 2026, HN 301pts on Aug 16) documented a growing **secondary market for AI inference credits** — "token brokers" buying unused credits from startups and reselling them at steep discounts:
+
+- **Market mechanics**: Startups with pre-paid API credits (often from accelerator/VC deals or volume commitments) sell unused allocation at **40–50% off list**; brokers act as proxy relays, pooling provider keys and forwarding requests rather than handing over credentials. One broker offered **$100k/day in spend**.
+- **Infrastructure**: Dedicated marketplaces, bulk-discount routers, and message boards now list off-market inference; the practice is being "commercialized" beyond informal startup-forum swaps.
+- **Why it matters economically**: Resale arbitrage reveals the gap between **list price and marginal cost** of frontier inference — consistent with the inference-economics analysis above (70–80% gross margins leave room for a secondary market), and creates new risks for providers (ToS violations, key revocation, fraud laundering) and for buyers (no provider guarantees, ToS exposure).
+
+This is the inference-layer analogue of the "credit resale" pattern in cloud/GPU markets and signals maturing (and arbitrage-heavy) token economics.
+
+Sources: [Vectoral — Who Are the Token Brokers?](https://vectoral.com/blog/who-are-the-token-brokers) / [HN discussion](https://news.ycombinator.com/item?id=49329755)
 
 ## Sources
 - [Alex Imas and Phil Trammell - What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imus-phil-trammell)

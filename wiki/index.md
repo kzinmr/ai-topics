@@ -624,7 +624,7 @@
 - [[entities/openenv]] — OpenEnv
 - [[entities/openknowledge]] — OpenKnowledge — Open-source AI-native markdown editor with Claude/Codex/Cursor integration (373 HN pts)
 - [[entities/openpipe]] — OpenPipe
-- [[entities/openrouter]] — OpenRouter
+- [[entities/openrouter]] — OpenRouter; Stripe acquisition for $7B+ finalized (Aug 16, Bloomberg) — AI inference payment rail consolidation
 - [[entities/overreacted-io]] — Dan Abramov; resilient component design principles (Writing Resilient Components), Lean Syntax Primer & formal verification exploration (2026)
 - [[entities/palantir]] — Palantir Technologies
 - [[entities/palo-alto-networks]] — Palo Alto Networks — Global cybersecurity leader; Prisma AIRS AI Security Platform; Portkey acquisition (Apr 2026) establishes AI Gateway control plane for agents
@@ -1000,6 +1000,7 @@
 - [[concepts/apple-speechanalyzer]] — Apple SpeechAnalyzer — Next-generation on-device speech recognition API (iOS 26/macOS 26), 2.12% WER on LibriSpeech, 3-4× improvement over legacy SFSpeechRecognizer
 - [[concepts/bonsai-27b]] — Bonsai 27B — Prism ML's 27B-parameter model running on phones via extreme quantization
 - [[concepts/claude-memory-heist]] — Claude Memory Heist — Prompt injection attack exfiltrating user data from Claude's memory system
+- [[concepts/claude-system-prompts]] — Claude System Prompts — Anthropic publishes release notes for core claude.ai/mobile app system prompts; transparency milestone (Aug 2026, HN 687pts)
 - [[concepts/coding-agents/databricks-ai-coding-cost-management]] — Managing AI Coding Costs at Scale — Databricks (Aug 2026): cost levers, model routing, AI Gateway pattern for enterprise agent coding spend optimization
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Databricks coding agent benchmark — real-world evaluation of coding agents on production codebases
 - [[concepts/diffusion-language-models]] — Diffusion Language Models — Non-autoregressive text generation via iterative denoising; Mercury, LLaDA, Consistency Diffusion LMs; 10-14x faster inference
@@ -1161,7 +1162,7 @@
 - [[concepts/ai-digital-nato]] — AI Digital NATO — Frontier Model Forum Distillation Alliance
 - [[concepts/ai-doesnt-have-roi]] — AI Doesn't Have ROI
 - [[concepts/ai-economic-impact]] — AI Economic Impact
-- [[concepts/ai-economics]] — AI Economics; enriched with Inference Economics — A100 cost breakdown ($1/MTok estimate), 70-80% gross margins confirmed, DeepSeek R1 validation, inference-subsidizes-training thesis (June 27)
+- [[concepts/ai-economics]] — AI Economics; enriched with Inference Economics — A100 cost breakdown ($1/MTok estimate), 70-80% gross margins confirmed, DeepSeek R1 validation, inference-subsidizes-training thesis (June 27); Token Brokers & AI Credit Resale Economy — secondary market for unused API credits at 40-50% off (Aug 2026)
 - [[concepts/ai-economics-bubble-venture-capital-subprime]] — Ai Economics Bubble Venture Capital Subprime
 - [[concepts/ai-economics-post-scarcity]] — AI Economics: Post-Scarcity Dynamics
 - [[concepts/ai-education]] — ai-education
