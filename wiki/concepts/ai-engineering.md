@@ -2,13 +2,14 @@
 title: "AI Engineering"
 type: concept
 created: 2026-04-25
-updated: 2026-07-15
+updated: 2026-08-18
 tags:
   - ai-agents
   - ai-software-engineering
   - event
 sources:
   - raw/newsletters/2026-07-14-5-trends-that-defined-ai-engineering-at-world-s-fair-2026.md
+  - raw/articles/2026-08-14_andrewyng_ai-engineering-skills-map.md
 status: complete
 ---
 
@@ -62,6 +63,17 @@ Matt Pocock warns of 'skills hell' — comparable to framework hell — advising
 Y Combinator president [[entities/garry-tan]]: 'The AI native companies that I see inside YC encode all of that as skills, written procedures that their agents execute.'
 
 Tyler Brown: 'Autonomy without structure creates as much slop as leverage. Each time there's a new model release, it's as if you have a kid that grows from middle school to high school. You have to change the curriculum.'
+
+## 6. AI Engineering Skills Map (Andrew Ng, Aug 2026)
+
+[[entities/andrew-ng]] published a data-driven [AI Engineering Skills Map](raw/articles/2026-08-14_andrewyng_ai-engineering-skills-map.md) based on 10,000+ job postings and expert interviews. The map identifies four essential skills for all developers (not just "AI Engineers"):
+
+1. **Building and deploying AI applications** — LLMs, context engineering, RAG, agentic workflows, evals/error analysis loops
+2. **Software engineering fundamentals** — tradeoff recognition, system design, steering coding agents with precise engineering language
+3. **Using coding agents** — mental models, context management, planning vs execution, multi-agent orchestration, verifier/eval provision
+4. **Shaping the build** — product sense, spec authorship, ownership/agency, MVP vs careful-build decisions
+
+Key distinction: AI engineering **skills** (universal) vs "AI Engineer" **role** (specialized). Analogy: all devs need cloud skills, but only some have "Cloud Engineer" titles. See [[concepts/ai-engineering-skills-map]] for the full breakdown.
 
 ## Key Takeaways
 

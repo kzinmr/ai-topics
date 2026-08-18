@@ -52,6 +52,7 @@
 - [[entities/andrew-chen]] — Andrew Chen — a16z General Partner (Speedrun), author of The Cold Start Problem; local AI home lab practitioner (May 2026); essays on viral loops, vibe coding, GPT wrapper defensibility
 - [[entities/andrew-ho]] — Andrew Ho; ex-OpenAI, bearish on frontier lab valuations, Hayekian economic analysis of AI industry (Jul 30)
 - [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26); GitHub Actions registry from Homebrew parts — gh-actions-lock, OCI immutable actions (Aug 4); Supplier Security Questionnaire satire — AI governance questions (5.1-5.6), prompt injection, autonomous-agent contributors (Aug 13)
+- [[entities/andrew-ng]] — Andrew Ng — AI educator, DeepLearning.AI/LearnVector founder; AI Engineering Skills Map (4 core skills for all developers, 10K+ job postings analysis); ex-Google Brain, ex-Baidu, Coursera co-founder (Aug 2026)
 - [[entities/andriy-burkov]] — Andriy Burkov
 - [[entities/andy-nguyen]] — Founder & CEO of ByteRover, building an agentic memory layer for coding agents
 - [[entities/anildash]] — Anil Dash; enriched with "How we'll fight the platform war against Big AI" — 4 tactics (disintermediation, provider portability, economic value destruction, channel anger) (June 24)
@@ -1168,6 +1169,7 @@
 - [[concepts/ai-education]] — ai-education
 - [[concepts/ai-engineer-roadmap-2026]] — The 2026 AI Engineer Roadmap
 - [[concepts/ai-engineering]] — AI Engineering — 5 trends from AIEWF 2026: harness engineering, loop engineering, FDEs/software factories, context engineering, skill engineering
+- [[concepts/ai-engineering-skills-map]] — AI Engineering Skills Map — Andrew Ng's 4-skill framework: building AI apps, software fundamentals, coding agents, shaping the build (Aug 2026)
 - [[concepts/ai-engineering-metrics-vanity]] — AI Engineering Metrics — Vanity vs. Outcome Measurement
 - [[concepts/ai-evals-people]] — ai-evals-people
 - [[concepts/ai-executive-orders]] — AI Executive Orders — U.S. presidential directives governing frontier AI access, including government-mediated model release gatekeeping
