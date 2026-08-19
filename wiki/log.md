@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-19] slack-hot-posts | Created [[concepts/warp-factories]] — Warp Factories (cloud software factory infrastructure, Aug 18 2026 blog) from raw article not yet in log; added to index (Concepts 1998→1999)
+
+- **Created: [[concepts/warp-factories]]** — Warp Factories (closed beta, Aug 18 2026): productization of Warp's internal cloud software factory as open, flexible *infrastructure* (factory-as-code, foreman orchestrator + Triage/Spec/Implement/Review agents with computer-use verification, observer agents that open PRs into factory definitions, multi-model/multi-harness incl. open-weight, Factory MCP, AI sovereignty via BYO inference/hosting/data exhaust + ZDR). Source: raw/articles/2026-08-19_warp_open-infrastructure-for-building-a-software-factory.md (scraped 2026-08-19 06:00 UTC via sitemap-monitor; raw article was missing from log — this entry retroactively registers it).
+- **index.md**: +1 concept (warp-factories); Concepts count 1998→1999.
+
+---
+
 ## [2026-08-19] active-crawl | Private AI via FHE (HEIR + arXiv:2601.18511) + Wiz Red Agent × Snowflake + Cerebras CS-4
 
 - **Created: [[entities/heir]]** — Google's HEIR (Homomorphic Encryption Intermediate Representation): open-source MLIR-based FHE compiler converting pre-trained AI models to operate on encrypted inputs; OpenFHE/Lattigo backends; hardware-accelerator partners (Belfort, Niobium, Cornami, Optalysys); 4 peer-reviewed publications built on it; 4 private-inference demos (LLM, search, recs, medical) Aug 2026. Sources: raw/articles/2026-08-19_google_heir-private-ai-homomorphic-encryption.md + raw/articles/2026-08-19_github_google_heir-readme.md.
