@@ -1,3 +1,19 @@
+## [2026-08-19] watchdog | index.md orphan registration + header count refresh
+
+### Changes
+- Registered `entities/tim-sherratt` (redirect stub → [[entities/tim-sh]]) in index.md — was the only true orphan flagged by wiki_health.py (24 reported orphans: 21 _index hubs + 2 archived files = intentional, not indexed by design)
+- Refreshed stale section header counts in index.md:
+  - Entities 904 → 906, Concepts 1999 → 2000 (recomputed from actual entry lines; counts had drifted)
+  - Comparisons 35 / Events 27 / Queries 4 unchanged (verified)
+- Audited 6 apparent duplicate index slugs (fastino-labs, kyle-corbett, gepa, mai-thinking-1-report, separation-of-duties, gpt/image-2-vs-nano-banana-2): all have their own .md files (redirect stubs) → legitimate dual listing, 0 removed
+- Pipeline alert check: blog-triage / newsletter-triage / blog-wiki-ingest / newsletter-wiki-ingest / wiki-health-fix all failed today with `HTTP 503: Local LLM server is busy` (transient model-gate saturation, not a data/pipeline defect) — expected to self-heal at tomorrow's 10:20/10:30/10:40/10:50 UTC runs; no data loss (ingest checkpoints latest.json ok:true for both blog and newsletter 2026-08-19)
+
+### Verification
+- `python3 scripts/validate_index.py` → clean (2989 lines)
+- 0 pipe-prefix / 0 triple-bracket / 0 line-number corruption in index.md
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

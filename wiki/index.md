@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (904 pages)
+## Entities (906 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -831,6 +831,7 @@
 - [[entities/tim-dettmers]] — Researcher at the University of Washington (NLP/ML), creator of bitsandbytes, LLM.int8(), and co-creator of QLoRA. Pi...
 - [[entities/tim-oreilly]] — Tim O'Reilly
 - [[entities/tim-sh]] — Tim Sherratt — historian, hacker, GLAM Workbench creator
+- [[entities/tim-sherratt]] — Tim Sherratt (redirect → [[entities/tim-sh]])
 - [[entities/tobi-lutke]] — Tobi Lütke
 - [[entities/together-ai]] — Together AI
 - [[entities/tom-aarsen]] — Tom Aarsen
@@ -910,7 +911,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1999 pages)
+## Concepts (2000 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
