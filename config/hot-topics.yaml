@@ -25,7 +25,7 @@ topics:
   - concepts/agentic-engineering/_index
   notes: 22ページの大クラスタ。横方向の関連パラダイムを探索
   added: 2026-04-14
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-08-19'
 - slug: ai-agent-engineering
   title: AI Agent Engineering (Anthropic/OpenAI)
   crawl_policy: deepdive
@@ -159,7 +159,7 @@ topics:
   - concepts/capability-based-security
   notes: '横方向: capability-based security, seccomp, Firecracker等'
   added: 2026-04-14
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-08-19'
 - slug: neurosymbolic-ai
   title: Neurosymbolic AI
   crawl_policy: prerequisites
@@ -173,7 +173,7 @@ topics:
   notes: 'neuromorphic + symbolic reasoningの統合アプローチ。関連: reasoning models (o1-style,
     CoT, PRM)はニューラル単体だが異なる系統。前提: knowledge graphs, formal verification, theorem proving等'
   added: 2026-04-14
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-08-19'
 - slug: ai-bubble-economics
   title: AI Bubble Economics
   crawl_policy: monitor
@@ -200,7 +200,7 @@ topics:
   - concepts/ai-autonomy-debate
   notes: 関心はあるが積極的に取り込むほどではない
   added: 2026-04-14
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-08-19'
 - slug: autoresearch
   title: Autoresearch（自律的最適化ループ）
   crawl_policy: deepdive
