@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (902 pages)
+## Entities (904 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -340,6 +340,7 @@
 - [[entities/google-adk]] — Google Agent Development Kit (ADK)
 - [[entities/google-antigravity]] — Google Antigravity
 - [[entities/google-tpu]] — Google TPU — Tensor Processing Units
+- [[entities/heir]] — HEIR (Homomorphic Encryption Intermediate Representation) — Google's open-source MLIR-based FHE compiler for private AI inference; OpenFHE/Lattigo backends, hardware-accelerator partnerships (Aug 2026)
 - [[entities/gpjt]] — Giles Thomas (gpjt)
 - [[entities/gpt-oss]] — GPT-OSS (OpenAI Open Models)
 - [[entities/grad]] — Fares Obeid (@Grad62304977)
@@ -877,6 +878,7 @@
 - [[entities/will-mcgugan]] — Will McGugan
 - [[entities/william-fedus]] — William Fedus — CEO of Periodic Labs; former VP of Research at OpenAI, post-training for ChatGPT
 - [[entities/wirtzdan]] — Daniel Wirtz
+- [[entities/wiz]] — Wiz — cloud security company; Red Agent autonomous security agent (Aug 2026) found & exploited a live GitHub Actions injection in Snowflake's public repo, exfiltrating a Jira token
 - [[entities/xai]] — xAI
 - [[entities/xania-org]] — Matt Godbolt
 - [[entities/xeiaso-net]] — Xe Iaso
@@ -908,7 +910,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (1993 pages)
+## Concepts (1998 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1291,6 +1293,7 @@
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
 - [[concepts/autonomous-agent-marketplace-stack]] — Autonomous Agent Marketplace Stack
 - [[concepts/autonomous-component-optimization]] — Autonomous Component Optimization
+- [[concepts/autonomous-security-agents]] — Autonomous Security Agents — AI agents performing end-to-end vulnerability discovery, exploitation, and evidence (Wiz Red Agent × Snowflake case, Aug 2026)
 - [[concepts/autoresearch-bm25-msmarco]] — Autoresearch for BM25 Optimization on MSMarco
 - [[concepts/autoscientist]] — AutoScientist
 - [[concepts/autotts]] — AutoTTS (Agent-Discovered Test-Time Scaling)
@@ -1362,6 +1365,7 @@
 - [[concepts/chain-of-thought-reasoning]] — chain-of-thought-reasoning
 - [[concepts/chaos-engineering]] — Chaos Engineering for Microservices
 - [[concepts/chaos-engineering-for-microservices]] — Chaos Engineering for Microservices
+- [[concepts/cerebras-cs4]] — Cerebras CS-4 (Nexus Platform) — first Nexus generation rack (3× WSE-3 Turbo, 2 µs switch-less wafer interconnect, vendor-claimed 30× vs GPUs; Aug 2026)
 - [[concepts/chatferry]] — ChatFerry
 - [[concepts/chicago]] — Chicago
 - [[concepts/chief-of-staff-agent-patterns]] — Analyze the budget impact of a proposed action
@@ -1982,6 +1986,7 @@
 - [[concepts/hisparse]] — HiSparse
 - [[concepts/hoard-things-you-know-how-to-do]] — Hoard Things You Know How to Do
 - [[concepts/homelab]] — Homelab
+- [[concepts/homomorphic-encryption-ai]] — Homomorphic Encryption for AI — FHE-based private LLM inference; state of the art (Llama-3-8B at 18 s/token on 8× RTX PRO 6000), HEIR stack, limits (Aug 2026)
 - [[concepts/hornet]] — Hornet
 - [[concepts/how-coding-agents-work]] — How Coding Agents Work
 - [[concepts/how-to-design-programs]] — How to Design Programs
@@ -2491,6 +2496,7 @@
 - [[concepts/princeton-cos597r-deep-dive-llm]] — Princeton COS597R — Deep Dive into Large Language Models
 - [[concepts/privacy-engineering]] — Privacy Engineering
 - [[concepts/privacy-ethics]] — Privacy Ethics
+- [[concepts/privacy-preserving-computing]] — Privacy-Preserving Computing — FHE, TEE, PIR, differential privacy as a family of private-computing primitives for AI (Aug 2026)
 - [[concepts/probabilistic-engineering]] — Probabilistic Engineering
 - [[concepts/probabilistic-era-software]] — Probabilistic Era — Building AI Products After the Ontological Shift
 - [[concepts/probe-and-prefill]] — Probe&Prefill

@@ -2,6 +2,25 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-19] active-crawl | Private AI via FHE (HEIR + arXiv:2601.18511) + Wiz Red Agent × Snowflake + Cerebras CS-4
+
+- **Created: [[entities/heir]]** — Google's HEIR (Homomorphic Encryption Intermediate Representation): open-source MLIR-based FHE compiler converting pre-trained AI models to operate on encrypted inputs; OpenFHE/Lattigo backends; hardware-accelerator partners (Belfort, Niobium, Cornami, Optalysys); 4 peer-reviewed publications built on it; 4 private-inference demos (LLM, search, recs, medical) Aug 2026. Sources: raw/articles/2026-08-19_google_heir-private-ai-homomorphic-encryption.md + raw/articles/2026-08-19_github_google_heir-readme.md.
+- **Created: [[concepts/homomorphic-encryption-ai]]** — FHE-based private LLM inference: state-of-the-art table (arXiv:2601.18511: Llama-3-8B, CKKS, 128 encrypted tokens at 20s summarization / 18s-token on 8x RTX PRO 6000, vs prior SOTA 295s on H100-class; heterogeneous 4096-token mode), engineering stack (HEIR, OpenFHE, Lattigo, Bifrost TEE+FHE hybrid, GoldenRetriever private RAG, Cachemir FHE KV cache), key techniques (outlier mitigation via token prepending + orthogonal rotations, sparse-ciphertext polynomial SoftMax, shallow homomorphic attention circuit), limits (bootstrapping, memory bandwidth, 100-1000x latency). Sources: raw/papers/2026-01_2601.18511_scaling-fhe-llm-inference-llama3-8b.md + Google HEIR blog.
+- **Created: [[concepts/privacy-preserving-computing]]** — FHE/TEE/PIR/differential-privacy as a family of private-computing primitives for AI; trust-model comparison table; why it matters for regulated inference; open questions (trust trade-off, FHE cost curve, hybrid TEE+FHE, standardization). Source: raw/articles/2026-08-19_google_heir-private-ai-homomorphic-encryption.md.
+- **Created: [[concepts/autonomous-security-agents]]** — AI agents performing end-to-end vulnerability discovery + exploitation + evidence. Canonical case: **Wiz Red Agent x Snowflake** (Aug 17 2026, ~421 HN pts) — autonomous agent found a live GitHub Actions script-injection in snowflakedb/snowflake-connector-net (issue-title to shell echo breakout; no-op if: guard using github.event.pull_request.user.login which is null on issue events), self-corrected its own payload syntax error ( # -> ; echo '), exfiltrated a Jira token via oast.me callback, granted read access to Snowflake engineering/security-compliance/bug-bounty Jira; 5-day exposure; same-day patch (Jun 23); AI-code-gen angle: PR co-authored with GitHub Copilot which "identified it as all-clear." Design patterns: capability-specialized agents, exploit-with-evidence, self-healing payloads, short-lived credentials + rapid patch SLAs, audit-log attribution. Open questions: ethics of autonomous exploitation, arms-race dynamics, AI-generated-code accountability, missing benchmarks. Source: raw/articles/2026-08-19_wiz_red-agent-snowflake-copilot-cicd.md.
+- **Created: [[entities/wiz]]** — Wiz (cloud security company, founded 2020, NYC); Red Agent case summary with key 2026 facts. Source: same Wiz blog.
+- **Created: [[concepts/cerebras-cs4]]** — Cerebras CS-4 / Nexus Platform (Aug 2026, 305 HN pts): first Nexus generation rack; 3x WSE-3 Turbo; 2us switch-less wafer-to-wafer interconnect (new Wafer I/O Module); high-density power ~0.5mm from processor; Wafer-Scale Backpack (50% fewer components); PowerRack-first deployment; vendor claims up to 30x faster inference vs GPUs, >1000 tok/s on >10T-param models, 10x throughput/watt vs CS-3; first shipments Q3 2026. Caveats: all vendor claims, no independent benchmark as of Aug 19. Source: raw/articles/2026-08-19_cerebras_cs4-product-page.md.
+- **Enriched: [[entities/cerebras-systems]]** — new "CS-4 / Nexus Platform (Aug 2026)" subsection under Technology + updated sources/updated frontmatter.
+- **SCHEMA.md tags added**: wiz (People/Orgs); wafer-scale-integration (Infrastructure); homomorphic-encryption, privacy-preserving-computing, privacy-preserving-ml, trusted-execution-environments, ckks, ci-cd-security, vulnerability-discovery, autonomous-security-agents, ai-infra-security (Domain Concepts).
+- **index.md**: +2 entities (heir, wiz), +4 concepts (autonomous-security-agents, cerebras-cs4, homomorphic-encryption-ai, privacy-preserving-computing); counts updated Entities 902->904, Concepts 1993->1998.
+- **Selection rationale**: parallel discovery (HN front page + 7-day top-100pts + arXiv FHE search + wiki-gap grep). Top HN stories from the week were already covered by earlier crawls/pipelines (DeepSeek V4 Pro 0813, DeepSeek Harness, Gemini 3.7 Flash, Grok 4.6, Qwen 3.8 27B, watermarking wave, Scale AI failure taxonomy, Stripe x OpenRouter, token brokers, AI math memory, Anthropic IPO hype). Fresh gaps selected: private-AI/FHE (no concept pages existed), autonomous security agents (no concept page; Wiz case was a 421-pt HN story), Cerebras CS-4 (no page; 305-pt HN story + SemiAnalysis coverage pending).
+
+---
+
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
 
 ## [2026-08-17] watchdog | auto-fix log header burial + index concepts count
 

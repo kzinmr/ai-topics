@@ -1,7 +1,7 @@
 ---
 title: Cerebras Systems
 created: 2026-05-14
-updated: 2026-08-15
+updated: 2026-08-19
 type: entity
 tags:
   - entity
@@ -11,7 +11,7 @@ tags:
   - inference
   - mlops
   - search
-sources: [raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md, raw/articles/2026-05-10_parallel-web-systems_cerebras-fact-checker.md, raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md, raw/articles/2026-07-16_cerebras_knowledge-base-architecture.md, raw/articles/2026-07-27_cerebras_getting-most-out-of-gpt-5-6.md]
+sources: [raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md, raw/articles/2026-05-10_parallel-web-systems_cerebras-fact-checker.md, raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md, raw/articles/2026-07-16_cerebras_knowledge-base-architecture.md, raw/articles/2026-07-27_cerebras_getting-most-out-of-gpt-5-6.md, raw/articles/2026-08-19_cerebras_cs4-product-page.md]
 ---
 
 # Cerebras Systems
@@ -56,6 +56,20 @@ Cerebras claims **21× faster inference** than NVIDIA's DGX B200 Blackwell on Ll
 Cerebras demonstrated running **Kimi K2.6** (1 trillion parameters) on the WSE-3 at **981 tokens/second** — **6.7× faster** than the fastest GPU cloud, and **29× faster** than the official Kimi API endpoint (5.6s vs 163.7s end-to-end). This was Cerebras's first major public benchmark after its IPO, showcasing wafer-scale inference for frontier MoE models.
 
 As SemiAnalysis notes, the sparse FLOPs number (125 PFLOPs) is marketed prominently while dense FLOPs (~15.6 PFLOPs) is not — a pattern they call "Feldman's Formula" (analogous to "Jensen Math" for NVIDIA).
+
+### CS-4 / Nexus Platform (Aug 2026)
+
+The **CS-4** (announced Aug 2026; HN front page 305 pts) is the first generation of Cerebras's new **Nexus Platform Architecture** — a modular split of Compute / Power / I/O. Key claims (all vendor, no independent benchmark yet):
+
+- **3× WSE-3 Turbo per system**, each wafer ~2× the speed of WSE-3
+- **Wafer-to-wafer interconnect latency of 2 µs** — wafers linked within and across racks *without a switch* (new programmable Wafer I/O Module, 2× I/O bandwidth)
+- **High-density power delivery** ~0.5 mm from the processor (~100× closer than ~50 mm on GPU boards), nearly eliminating board-level loss and ~2×-ing power to the WSE-3T
+- **Wafer-Scale Backpack**: self-contained 3D package (wafer + power conversion + direct liquid cooling + I/O + control) with 50% fewer components; deployment "from days to hours"
+- **PowerRack-first deployment**: power/cooling/network installed and facility-qualified before compute arrives
+- **Performance**: up to 10× more throughput/watt than CS-3; **up to 30× faster inference than production GPU systems**; **>1,000 tokens/sec on models >10T parameters**
+- First shipments: **Q3 2026**
+
+SemiAnalysis covered the generation in its 2026-08-19 newsletter. Full breakdown: [[concepts/cerebras-cs4]].
 
 ## Business Model
 
