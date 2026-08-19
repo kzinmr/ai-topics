@@ -2,7 +2,7 @@
 title: "Scale AI"
 type: entity
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-08-19
 tags:
   - company
   - training
@@ -35,6 +35,7 @@ Scale AI is the data platform for artificial intelligence, providing high-qualit
 - Alexandr Wang joined Meta as Chief AI Officer in 2025, leading Superintelligence Labs
 - Pentagon contracts: test and evaluate LLM safety and reliability for military planning
 - Serves autonomous vehicle industry, government defense, and enterprise AI
+- Published "Model or Harness? An Interaction-Centric Taxonomy for Localizing Agent Failures" (arXiv:2607.28802, July 2026) — 41-mode interaction/fault-side framework for localizing agent failures; see [[concepts/interaction-centric-agent-failure-taxonomy]]
 
 ## Products & Technology
 

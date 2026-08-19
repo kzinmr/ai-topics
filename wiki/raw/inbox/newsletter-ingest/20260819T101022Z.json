@@ -1,0 +1,64 @@
+{
+  "run_id": "20260819T101022Z",
+  "triaged_at": "2026-08-19T10:30:00Z",
+  "summary": "5 newsletters ingested. 2 high relevance (AI agent tooling — Cursor making GitHub optional; AI infrastructure — Cerebras CS-4 hardware). 2 low-medium relevance (memory/HBM pricing impact on AI infra; community polling about personal agents). 1 low (Lenny's Jobs — non-AI product announcement).",
+  "classifications": [
+    {
+      "subject": "🔥 Cursor Just Made GitHub Optional",
+      "date": "2026-08-18",
+      "source": "beehiiv newsletter (AI/developer tooling)",
+      "importance": "high",
+      "reason": "Major development in AI coding agent tooling. Cursor making GitHub optional signals a shift in how AI coding agents interact with version control platforms. Highly relevant to coding agent ecosystem, developer tooling workflow, and potential new entity/comparison pages on AI coding agents vs traditional git workflows.",
+      "entities": ["Cursor", "GitHub", "Anysphere"],
+      "action": "scrape_article, create or update Cursor entity page, consider concept page on AI coding agent workflow changes",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-18-cursor-just-made-github-optional.md"
+    },
+    {
+      "subject": "Cerebras's Next Generation CS-4: Fast Just Got Faster",
+      "date": "2026-08-19",
+      "source": "SemiAnalysis (semianalysis)",
+      "importance": "high",
+      "reason": "New AI inference hardware generation from Cerebras (CS-4). SemiAnalysis is a key AI infrastructure analyst. Relevant to AI hardware/inference infrastructure entity pages, inference performance comparisons, and the competitive landscape of AI silicon (vs GPU-based approaches). New hardware generation impacts model serving economics and latency characteristics.",
+      "entities": ["Cerebras", "SemiAnalysis"],
+      "action": "scrape_article, create or update Cerebras entity page, note CS-4 specs/performance for inference infrastructure comparisons",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-19-cerebras-s-next-generation-cs-4-fast-just-got-faster.md"
+    },
+    {
+      "subject": "[AINews] Memory prices up 500% in 12 months",
+      "date": "2026-08-19",
+      "source": "AINews / swyx (Latent Space)",
+      "importance": "medium",
+      "reason": "DRAM/HBM memory price surge directly impacts AI infrastructure economics — datacenter costs, GPU/memory availability, and inference pricing. Relevant to AI infrastructure cost tracking and understanding constraints on scaling AI workloads. AINews is a daily AI industry digest by Latent Space (swyx).",
+      "entities": ["swyx", "Latent Space"],
+      "action": "scrape_article, note memory price data for AI infrastructure economics context, cross-reference with inference hardware pages",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-19-ainews-memory-prices-up-500-in-12-months.md"
+    },
+    {
+      "subject": "Do you use a personal agent?",
+      "date": "2026-08-18",
+      "source": "Ben's Bites (bensbites)",
+      "importance": "low",
+      "reason": "Community engagement/polling question about personal AI agents. Topical for AI agent adoption trends but the content is primarily a question to readers rather than substantive analysis. Low wiki value unless the responses reveal interesting adoption patterns.",
+      "entities": ["Ben's Bites"],
+      "action": "skip or low-priority scrape — only ingest if article contains substantive agent adoption data",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-18-do-you-use-a-personal-agent.md"
+    },
+    {
+      "subject": "Announcing Lenny's Jobs: The best place in the world to find, vet, and land your dream job",
+      "date": "2026-08-18",
+      "source": "Lenny's Newsletter (lenny)",
+      "importance": "low",
+      "reason": "Product launch announcement for a job platform by Lenny Rachitsky. Not related to AI/LLM/Agent technology — it's a career/recruiting product. No relevance to the AI knowledge wiki.",
+      "entities": [],
+      "action": "skip — not AI/LLM relevant",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-18-announcing-lenny-s-jobs-the-best-place-in-the-world-to-find-vet-and-land-your-dr.md"
+    }
+  ],
+  "next_actions": [
+    "scrape: Cursor GitHub optional article (beehiiv link — resolve beehiiv redirect to get actual URL)",
+    "scrape: Cerebras CS-4 SemiAnalysis post (open.substack.com/pub/semianalysis/p/cerebrass-next-generation-cs-4-fast)",
+    "scrape: AINews memory prices post (open.substack.com/pub/swyx/p/ainews-memory-prices-up-500-in-12)",
+    "priority: Cursor (high) > Cerebras CS-4 (high) > AINews memory (medium) > Ben's Bites (low) > Lenny's Jobs (skip)",
+    "note: beehiiv redirect URLs need resolution — use curl -L or browser to follow to final URL"
+  ]
+}

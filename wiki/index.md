@@ -2027,6 +2027,7 @@
 - [[concepts/intelligence-conflation]] — Intelligence Conflation
 - [[concepts/intent-based-engineering]] — Intent-Based Engineering
 - [[concepts/intent-formalization]] — Intent Formalization for AI Agents
+- [[concepts/interaction-centric-agent-failure-taxonomy]] — Interaction-Centric Agent Failure Taxonomy — Scale AI 41-mode edge/fault-side framework localizing agent failures to interaction + responsible component; agent-as-a-judge validation (κ=0.76)
 - [[concepts/interaction-models]] — Interaction Models
 - [[concepts/interactive-explanations]] — Moved to concepts/harness-engineering/agentic-workflows/interactive-explanations.md
 - [[concepts/interactive-fiction]] — interactive-fiction
