@@ -197,7 +197,7 @@
 - [[entities/daniel-kim-cerebras]] — Daniel Kim (@learnwdaniel) — Head of Growth at Cerebras; co-author of Cerebras Knowledge Base
 - [[entities/daniel-miessler]] — Daniel Miessler
 - [[entities/daniel-tunkelang]] — Daniel Tunkelang
-- [[entities/daniel-van-strien]] — Daniel van Strien
+- [[entities/daniel-van-strien]] — Daniel van Strien; British Library 1M book-image pipeline (Aug 2026): weak-label-distilled RF-DETR crop model ($3.24 GPU, zero human annotations) + semantic search Space
 - [[entities/danlark-org]] — Daniel Kutenin (danlark) — Search infrastructure engineer (ex-Yandex, Google); C++ performance, algorithms, and large-scale systems blog; Telegram Data Clustering Contest 3rd place write-up (fastText/CLD2/HNSW news aggregator)
 - [[entities/daringfireball-net]] — Daring Fireball (John Gruber); Anthropic Text Watermarking Criticism (Aug 2026: "a perversion of writing", semantic word choice degradation, EU regulation overreach, Declaude circumvention)
 - [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)
@@ -432,7 +432,7 @@
 - [[entities/john-d-cook-applied-mathematics-consulting]] — John D. Cook
 - [[entities/john-jumper]] — John Jumper
 - [[entities/john-schulman]] — John Schulman
-- [[entities/jonathan-whitaker]] — Jonathan Whitaker
+- [[entities/jonathan-whitaker]] — Jonathan Whitaker; officially left Answer.AI Aug 19 2026 for a sabbatical ("a few ideas to share soon")
 - [[entities/josh-barrow]] — Josh Barrow
 - [[entities/julien-bek]] — Julien Bek
 - [[entities/junior]] — Junior — Sentry's open-source AI coding agent with resource subscription architecture for autonomous PR lifecycle management

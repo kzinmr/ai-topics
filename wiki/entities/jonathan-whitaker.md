@@ -3,7 +3,7 @@ title: Jonathan Whitaker
 type: entity
 handle: "@johnowhitaker"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-08-19
 tags:
   - person
   - model
@@ -14,6 +14,7 @@ sources:
   - blog: johnowhitaker.dev
     rss: https://johnowhitaker.dev/index.xml
     x: "@johnowhitaker"
+  - raw/articles/2026-08-19_johnowhitaker_left-answer-ai-sabbatical.md
 ---
 
 
@@ -24,7 +25,7 @@ sources:
 | **X** | [@johnowhitaker](https://sigmoid.social/@johnowhitaker) |
 | **Blog** | [johnowhitaker.dev](https://johnowhitaker.dev) |
 | **GitHub** | [johnowhitaker](https://github.com/johnowhitaker) |
-| **Role** | AI Researcher & Educator at Answer.AI |
+| **Role** | AI Researcher & Educator (left Answer.AI Aug 2026, taking a sabbatical) |
 | **Known for** | Hugging Face Diffusion Models course, fastai Part 2, generative AI education, SpecID eval |
 | **Bio** | Jonathan Whitaker is an AI researcher and educator working at Answer.AI, where he focuses on making generative AI accessible through practical courses, open-source tools, and hands-on experiments. He co-created the Hugging Face Diffusion Models course, teaches fastai Part 2, and runs the Data Science Castnet YouTube channel. His work spans image generation, diffusion models, LLMs, and creative AI applications. |
 
@@ -136,7 +137,7 @@ This work challenges the traditional separation between discriminative and gener
 
 ### Professional Experience
 
-- **Answer.AI** (Jan 2024–present) — R&D in generative AI, education, and practical applications.
+- **Answer.AI** (Jan 2024 – Aug 19 2026) — R&D in generative AI, education, and practical applications. Officially left Aug 19 2026 ("I've officially left answer.ai") after a period of rest, travel & tinkering; he says he has a few ideas to share soon and is open to suggestions.
 - **PlaygroundAI, Builder-in-Residence** (Jan–Jun 2023) — Helped train first in-house Stable Diffusion variant; worked on guidance, instruction-following, and sampling improvements.
 - **Zindi, Senior Data Scientist** — Prepared data science competitions, built models, and mentored participants across Africa.
 - **Ixio Analytics / iXperience** — Created and delivered online courses in data science, ML, and big data; lead instructor for Data Science summer class.
@@ -146,6 +147,7 @@ This work challenges the traditional separation between discriminative and gener
 
 | Date | Title | Summary |
 |------|-------|---------|
+| Aug 2026 | (X) Left Answer.AI — sabbatical, "a few ideas to share soon" | Official departure from Answer.AI after rest, travel & tinkering; open to suggestions. |
 | Mar 2026 | Evals Skills for Coding Agents | Practical guide for teaching AI coding agents to evaluate their own outputs using instrumentation, traces, and experiments. |
 | Feb 2026 | Spectral Shifts with Pyoverdine pH | Biofluorescence experiments exploring how bacterial pigments change under different pH conditions. |
 | Aug 2025 | Diffusion Beats Autoregressive | Analysis of a paper showing diffusion models outperforming autoregressive models in data-constrained settings. |

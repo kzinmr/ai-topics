@@ -1,3 +1,32 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-08-19] x-accounts-scan | Ingested 2 new X posts: Jonathan Whitaker leaves Answer.AI + Daniel van Strien British Library book-image pipeline
+
+- **Raw articles created**:
+  - `raw/articles/2026-08-19_johnowhitaker_left-answer-ai-sabbatical.md` — Jonathan Whitaker (@johnowhitaker) announced he has officially left Answer.AI (Aug 19 2026, 136 likes / ~14.4K impressions): rest + travel & tinkering, "a few ideas to share soon," open to suggestions. Also captured his same-day reply to @mferraro89 on generative image puzzles (Jane Street jigsaw video).
+  - `raw/articles/2026-08-19_vanstriendaniel_bl-book-images-crop-search.md` — Daniel van Strien (@vanstriendaniel) shared the `biglam/british-library-book-images` dataset (1M public-domain British Library book images, `crop_masks` config), the `small-models-for-glam/bl-crop-tighten-rfdetrseg-clip10` RF-DETR crop-tightening model (trained by distillation from weak labels — zero human annotations, $3.24 GPU for the full 1M-image corpus), and the `davanstrien/bl-images-search` HF Space for text-to-image semantic search with clean cutouts.
+- **Enriched: [[entities/jonathan-whitaker]]** — Role now "left Answer.AI Aug 2026, sabbatical"; Professional Experience updated (Jan 2024 – Aug 19 2026); new Blog/Recent Posts row (Aug 2026 X departure post); source added.
+- **Enriched: [[entities/daniel-van-strien]]** — new "Models & Fine-tuning" entry (bl-crop-tighten-rfdetrseg-clip10) + new Blog/Recent Posts row (Aug 2026 1M book-image pipeline); source added; `updated` bumped.
+- **index.md**: entity summaries refreshed for both (no new slugs).
+- **Scan stats**: 11/84 accounts scanned (request budget 12), 5 new posts total, 0 errors; 73 accounts skipped for budget.
+
+
+## [2026-08-19] dreaming | Saturation pass — Pattern E enrichment of untriaged sitemap/blog batch (4 reference enrichments)
+
+- **Context**: dreaming checkpoint had 0 collected articles, but the archive-index absence probe surfaced 62 never-triaged raw articles (scraped 08-17..08-19 by sitemap-monitor + blog-watch). Today's downstream pipelines (blog-triage / newsletter-triage / blog-wiki-ingest / newsletter-wiki-ingest / wiki-health-fix) all failed with `HTTP 503: Local LLM server is busy`, so this batch was never triaged by any pipeline. Active-crawl had already covered the HEIR/Wiz/Cerebras/Warp-factories stories from the same window; Grok 4.6, DeepSWE, Qwen 3.8, and the watermarking/Anthropic-IPO stories were already covered by prior crawls — all skipped.
+- **Enriched: [[entities/cursor-ai]]** — new "Cursor Router — Data-Driven Model Routing (Aug 2026)" subsection: Compass complexity predictor + domain/task/modifier taxonomy router, 75% one-sided uplift gate, Auto Intelligence (68% lower cost, above Fable satisfaction) / Auto Balance (41% lower cost vs Opus 4.8), per-model strength map (Grok/Sol/Opus/Fable). Source: raw/articles/2026-08-18_cursor_how-cursor-router-works.md.
+- **Enriched: [[entities/decagon]]** — new "Flow-DPO / Flow-GRPO — Post-Training Flow-Matching TTS with RL (Aug 2026)" subsection: why DPO/GRPO break on deterministic flow trajectories (no waveform likelihood / no action log-probs), the negative-relative-flow-loss surrogate, same-prompt-contrast dataset requirement (cough-tag case). Source: raw/articles/2026-08-19_decagon_teaching-flow-matching-tts-with-rl.md.
+- **Enriched: [[entities/harvey]]** — new "Harvey II + Harvey Tenet" section: matter-native agents, persistent cross-tool memory (never used for training), template-native drafting; **Harvey Tenet** = Harvey's first model post-trained end-to-end for legal reasoning, frontier-level at "open-source cost," groundwork for per-client custom models. Source: raw/articles/2026-08-19_harvey_introducing-harvey-ii.md.
+- **Enriched: [[entities/together-ai]]** — new "Endpoint-Level A/B Testing for Models (Aug 2026)" subsection: why shadow traffic can't answer quality questions, endpoint-attached control/variant experiments, control-share re-sampling routing mechanics. Source: raw/articles/together.ai--blog-a-b-test-models-in-production--0e300cb3.md.
+- **Skipped (already covered)**: Grok 4.6 (events/grok-4-6-launch.md), DeepSWE / DeepSeek V4 Pro 0813 vs Fable/GPT-5.6 Sol cost comparisons (concepts/ai-benchmarks/deepswe-benchmark.md), Qwen 3.8 27B (concepts/qwen-3-8-27b.md), HEIR/FHE + Wiz Red Agent × Snowflake + Cerebras CS-4 + Warp Factories (today's active-crawl + slack-hot-posts), watermarking + Anthropic IPO hype + Scale AI failure taxonomy (prior crawls).
+- **Skipped (low AI/LLM value or broken)**: cursor mixture-of-kittens (scrape failed — brotli decoder error), cursor grok-4-6 blog (redundant with event page), cursor joining-spacex/vercel/firetiger/cloud-agent-environment/builds/aiuc-1/india-launch (product/marketing, no technical depth), factory batch (build-with-agents, code-droid 2024 technical report, code-review-benchmark, agent-effectiveness, agents-md, etc. — marketing + stale), elevenlabs instant-vs-professional-voice-cloning + elevenlabs-mcp-in-claude (product marketing), non-AI blog batch (pluralistic banaility/enron-corpus, garymarcus ×4, johndcook ×3, jeffgeerling cm5, wired cargo thieves, theguardian botiquette, 9to5mac antitrust, experimental-history, entropicthoughts, daringfireball, macrumors, troyhunt, simonwillison rare-books, wheresyoured openai-dies, chadnauseam agi, dfarq ×2, seangoedecke help-peer, borretti alignment-cliche, microsoft oldnewthing, jensenhuang X post, blog.j11y watermarking) — batch-skip.
+- **index.md**: no new pages — all 4 enrichments folded into existing entity pages, so no slug changes. (Repaired pre-existing duplicate `# Wiki Log` header state via repair_log_md_header.py.)
+- **Commit**: staged the 4 enriched entity pages + log.md selectively (saturated-day pattern; did not `git add wiki/` broadly).
+
+
 ## [2026-08-19] watchdog | index.md orphan registration + header count refresh
 
 ### Changes
@@ -14,9 +43,6 @@
 
 ---
 
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-19] slack-hot-posts | Created [[concepts/warp-factories]] — Warp Factories (cloud software factory infrastructure, Aug 18 2026 blog) from raw article not yet in log; added to index (Concepts 1998→1999)
 
@@ -37,13 +63,6 @@ _Log of all wiki changes. Newest entries at top._
 - **SCHEMA.md tags added**: wiz (People/Orgs); wafer-scale-integration (Infrastructure); homomorphic-encryption, privacy-preserving-computing, privacy-preserving-ml, trusted-execution-environments, ckks, ci-cd-security, vulnerability-discovery, autonomous-security-agents, ai-infra-security (Domain Concepts).
 - **index.md**: +2 entities (heir, wiz), +4 concepts (autonomous-security-agents, cerebras-cs4, homomorphic-encryption-ai, privacy-preserving-computing); counts updated Entities 902->904, Concepts 1993->1998.
 - **Selection rationale**: parallel discovery (HN front page + 7-day top-100pts + arXiv FHE search + wiki-gap grep). Top HN stories from the week were already covered by earlier crawls/pipelines (DeepSeek V4 Pro 0813, DeepSeek Harness, Gemini 3.7 Flash, Grok 4.6, Qwen 3.8 27B, watermarking wave, Scale AI failure taxonomy, Stripe x OpenRouter, token brokers, AI math memory, Anthropic IPO hype). Fresh gaps selected: private-AI/FHE (no concept pages existed), autonomous security agents (no concept page; Wiz case was a 421-pt HN story), Cerebras CS-4 (no page; 305-pt HN story + SemiAnalysis coverage pending).
-
----
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
-
 
 ## [2026-08-17] watchdog | auto-fix log header burial + index concepts count
 
@@ -179,7 +198,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Enriched: [[entities/harvey]]** -- Added "AI for General Counsel Guide (June 2026)" section: 87% GC gen-AI adoption stat (FTI/Relativity GC Report), four high-volume workflows, four trust objections (citation grounding, SOC 2/ISO 27001/42001, no-training commitment, ABA 2024 guidance), shadow AI governance, GC as AI governance lead (66% directors use AI vs 22% governance), ROI measurement method, five-step adoption plan. Frontmatter +1 source (raw/articles/2026-06-24_harvey_ai-for-general-counsel.md).
 - **Skipped (already captured)**: concepts/wayfinder-router.md, concepts/gpt/chatgpt-app-design-patterns.md
 - **Skipped (out of scope)**: semianalysis IEDM 2025 (semiconductor fab tech), hex data-modeling listicle (2023, non-AI)
-
 
 
 ## [2026-08-16] skeleton-enrich-daily | L2→L3: Kilo (Kilo Code) + Parchi
@@ -417,7 +435,6 @@ _Log of all wiki changes. Newest entries at top._
 - Archive: wiki/raw/archived/triage/dreaming/2026-08-14_20260814T181151Z.json (11 candidates, 11 new archived, 0 dedup). Total archive URLs: 2,658.
 
 
-
 ## [2026-08-14] raw-backlog-ingest (18:00) | 1 take (code-search-indexing created), 4 references
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-14 18:00, run 20260814T180014Z). Takes=1, References=4, Skips=0.
@@ -517,7 +534,6 @@ _Log of all wiki changes. Newest entries at top._
 - **[[entities/qwen]]** (L2→L3, 30→211 lines, 9.3KB): Researched via Wikipedia + Qwen blog + local raw articles. Added: full model lineage table (Qwen 1 2023 → Qwen2 → Qwen2.5 → QwQ/QvQ → Qwen3 → Qwen3.5 → Qwen3.6 → Qwen3.7 Max → Qwen3.8), Qwen 3.8 frontier push (2.4T/95B MoE, 1M ctx, $2/$6 pricing, oh-my-cli 448-commit autonomy, revenue-threshold license shift), architecture highlights (hybrid Gated DeltaNet, thinking preservation, DFlash 6x), agent ecosystem (MM-Plugins, AgentWorld, Accio), organization (Alibaba Token Hub, Lin Junyang resignation, Qwen Exodus → modelfit.io), ecosystem/derivatives (200K+ HF variants, Sea-Lion), competitive positioning table vs DeepSeek/Tencent/Kimi. Fixed broken self-reference: entity page now links to concepts/qwen for family details. Tags: qwen, alibaba, model, company, open-source, multimodal, china, local-llm, reasoning, coding-agents.
 - **[[entities/tencent]]** (L2→L3, 30→176 lines, 7KB): Researched via Tencent site + GitHub Tencent-Hunyuan + HuggingFace tencent + local raw articles. Added: company overview (product-driven AI strategy, Feb 2026 infra rebuild principles), Hunyuan lineage table (Hy → Hy2 → Hy3 Preview → Hy3 Apache 2.0 → Hy-MT2), Hy3 details (benchmark leads with fewest active params, 495-step agent tasks, product gains, OpenRouter mystery), generative model portfolio (HunyuanVideo 12.4K stars, HunyuanImage-3.0, Hunyuan3D-2.1, HunyuanOCR, DepthCrafter), AI infrastructure (ARGUS, AngelSlim, CL-bench), products (Yuanbao, CodeBuddy/WorkBuddy, Docs AI PPT, WeChat, TokenHub, Hy-Embodied), Yao Shunyu quote, competitive positioning vs DeepSeek/Qwen.
 - index.md: updated descriptions for both entities (Qwen entry now covers 2026 agentic pivot; Tencent entry covers Hy3/ARGUS). entities/_index.md: added missing qwen + tencent entries (both were absent). No skeleton backlog remains (0 pages with `status: skeleton`); continuing established L2→L3 thinnest-pages pattern.
-
 
 
 ## [2026-08-13] dreaming wiki-ingest | confirmation -- upstream already committed enrichment (Takes=0 post-enrichment)
