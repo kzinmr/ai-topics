@@ -2,19 +2,21 @@
 title: "Together AI"
 type: entity
 created: 2026-05-08
-updated: 2026-08-03
+updated: 2026-08-19
 tags:
   - company
   - infrastructure
   - open-source
   - inference
   - hardware
+  - evaluation
 aliases: ["Together Compute", "Together Computer Inc."]
 sources:
   - https://www.together.ai/
   - https://www.together.ai/blog
   - raw/articles/together.ai--blog-announcing-our-series-c--4c861109.md
   - raw/articles/2026-07-31_together-ai_autoscaling-endpoints-llm-inference.md
+  - raw/articles/together.ai--blog-a-b-test-models-in-production--0e300cb3.md
 ---
 
 # Together AI
@@ -73,6 +75,20 @@ Together AI introduced **autoscaling endpoints for Dedicated Model Inference** t
 **Configuration**: Replica bounds (min/max), metric selection with target values, and separate scale-up/scale-down windows that control scaling eagerness vs. patience. This enables more responsive and cost-effective autoscaling for LLM deployments compared to generic Kubernetes HPA on CPU metrics.
 
 Source: [[raw/articles/2026-07-31_together-ai_autoscaling-endpoints-llm-inference.md]]
+
+
+### Endpoint-Level A/B Testing for Models (Aug 2026)
+
+Together AI detailed how to run **A/B experiments at the endpoint level** for LLMs — the question "is the new model actually better for *our* users" (on retention, thumbs-up rate, task completion), which **shadow traffic cannot answer** (shadowing proves operational soundness — latency/errors/throughput — but discards responses so no user ever acts on them; quality questions need real end-user exposure where a slice of users gets model B and you compare outcomes).
+
+**Why not build it in the app layer:** the common DIY approach (a feature flag or hash-mod-100 on user ID, two hardcoded model strings, a spreadsheet defining the arms) entangles the experiment with application infrastructure — routing logic ships with the app, cohort splits drift as clients cache decisions, and the branching code lingers long after the experiment "ends" because nobody's sure it's safe to delete. Together instead attaches the experiment to the **endpoint**:
+
+- **Experiment shape**: exactly one **control** + one or more **variants**, each pointing at a deployment, each with a `percent` that must sum to 100 and controls traffic routing.
+- **Routing mechanics**: the experiment **subdivides the control's share** of the base traffic split — when a request resolves to the control, it is re-sampled among the experiment arms by their percents (e.g. 95% stays control, 5% goes to the variant). Because the control is the sole entrypoint, the arm percents are **absolute traffic shares**. A control whose split weight is 0 gives the experiment nothing to subdivide, so it receives no traffic at all.
+
+**Significance:** Pushing experimentation into the serving endpoint (rather than the app) isolates model-selection logic from application code and gives model teams production A/B harnessing comparable to what they'd otherwise wire up per-service. This is complementary to Together's endpoint autoscaling work and relevant to any team serving multiple model generations in production (cf. [[concepts/evaluation/ai-evaluation|LLM evaluation]] and online-vs-offline testing).
+
+Source: [A/B Test Models in Production — Together AI Blog](https://www.together.ai/blog/a-b-test-models-in-production) (Aug 2026)
 
 
 ## World's Fastest Speech-to-Text Stack (May 2026)

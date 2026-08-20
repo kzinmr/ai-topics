@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-08-15
+updated: 2026-08-19
 tags:
   - company
   - model
@@ -52,6 +52,7 @@ sources:
   - raw/newsletters/2026-07-30-gpt-5-6-just-made-itself-15-more-efficient.md
   - raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
   - raw/newsletters/2026-08-14-glm-5-3-released-nobody-taught-it-to-hack.md
+  - raw/articles/2026-08-17_jensenhuang_securing-infrastructure-intelligence.md
 ---
 
 # OpenAI
@@ -202,6 +203,13 @@ Sources: [[raw/newsletters/2026-07-30-1-billion-chatgpt-users.md]], [[raw/newsle
 
 Source: [[raw/newsletters/2026-08-14-glm-5-3-released-nobody-taught-it-to-hack.md]] (Superintel+, citing Bloomberg).
 
+### NVIDIA Compute Commitments — PORTS-Pike Tenant (Aug 2026)
+
+- **~12 GW of NVIDIA compute committed through 2030** (expandable to ~16 GW) — Huang's Aug 17 LPS post sizes the OpenAI-NVIDIA opportunity at roughly **$600B of compute**
+- **PORTS-Pike Technology Campus (Portsmouth, Ohio)**: OpenAI is the tenant for NVIDIA's LPS-secured site (4.25 GW initial, NVIDIA–SB Energy partnership) — OpenAI builds and operates the AI factory on the NVIDIA DSX platform, paying the lease; see [[entities/nvidia]] LPS Strategy section for the guarantee structure
+- **Context**: The commitment converts Ed Zitron's late-July "final boss of circular financing" analysis (WSJ-reported $250B NVIDIA backstop for a 10GW SB Energy site) into official deal terms — see [[entities/ed-zitron]] for the critique
+
+Source: [[raw/articles/2026-08-17_jensenhuang_securing-infrastructure-intelligence.md]]
 
 ### OpenAI Reorganization — Unifying ChatGPT and Codex (May 2026)
 

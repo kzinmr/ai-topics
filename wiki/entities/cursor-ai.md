@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-08-16
+updated: 2026-08-19
 type: entity
 tags:
   - entity
@@ -25,6 +25,7 @@ sources:
   - https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html
   - raw/newsletters/2026-05-19-ainews-how-to-land-a-job-at-a-frontier-lab-on-pretraining.md
   - raw/articles/2026-06-12_cursor_building-recursive-agent-systems.md
+  - raw/articles/2026-08-18_cursor_how-cursor-router-works.md
   - raw/articles/cnbc.com--2026-06-16-spacex-spcx-cursor-acquisition-ipo-html--cb9f7b0c.md
   - raw/newsletters/2026-06-18-the-first-big-exit-in-ai.md
   - raw/newsletters/2026-06-30-ainews-not-much-happened-today.md
@@ -296,6 +297,25 @@ Cursor launched **Cloud Agents** — AI agents running in dedicated cloud VMs wi
 - Cursor wants to offer model choice but is moving toward **auto-routing** (like the `auto` mode in desktop IDE).
 - Internal experiments show **synergistic output** from combining models across different providers (the "Council" pattern, named by Andrej Karpathy).
 - Best-of-N parallel agents run the same prompt across multiple models on isolated VMs — a significant advantage over local worktrees where port conflicts occur.
+
+### Cursor Router — Data-Driven Model Routing (Aug 2026)
+
+Cursor detailed the architecture behind **Cursor Router** (launched July 22, 2026), its production model-routing system that selects a price-efficient vs. frontier model per turn based on observed developer work rather than benchmark scores. By mid-August 2026, its two configurations had converged to strong cost/satisfaction tradeoffs relative to a fixed frontier baseline:
+
+- **Auto Intelligence**: above Fable-level user satisfaction at **68% lower cost** (a further 18% cost reduction since launch).
+- **Auto Balance**: outperforms Opus 4.8 at **41% lower cost** (a further 8% reduction), while raising user satisfaction by 3%.
+
+**Two-stage routing design:**
+1. **Compass (complexity predictor)**: predicts whether the user will be satisfied with the response, as a proxy for turn complexity. Turns rated likely-to-succeed got a positive performance signal 96% of the time vs. 71% for least-likely — so Compass's 0–1 score gates whether a turn stays on the price-efficient model or escalates to a frontier model.
+2. **Task taxonomy router**: for escalated turns, classifies the work across three dimensions learned from live traffic — **domains** (backend, database, frontend), **tasks** (bug-fixing, running commands, writing tests), and **modifiers** (bounded edits, product questions, visual-heavy changes). A model is eligible for a turn only if its observed performance on that label clears a **one-sided 75% uplift threshold** over the price-efficient model; the optimizer then picks the traffic-weighted mix with the largest expected performance gain within the mode's per-turn cost budget.
+
+**How it's learned:** built on a dataset of hundreds of thousands of sampled live turns (respecting privacy mode / data-retention settings). Performance is inferred from the user's next action — advancing to the next task is a strong positive signal, correcting the agent is strongly negative; cost is computed from API pricing + token usage including cache-miss costs that benchmarks miss. The Compass threshold and budget were tuned via cross-validation and validated on a held-out set, but Cursor notes live traffic remains the most representative test.
+
+**Per-model strengths it exploits** (no single model dominates): **Grok** = strong value on broad, routine work (low inference cost; Git commands, general DB ops); **Sol** = planning and codebase comprehension; **Opus** = execution-heavy work (devops, DB queries, perf optimization); **Fable** = debugging and visual implementation where its higher cost is justified.
+
+This is a concrete production example of [[concepts/evaluation/ai-evaluation|cost-performance-aware model routing]] — learned, not benchmark-derived — and complements the heterogeneous-ensemble "Council" pattern described above. It is directly analogous to the router cost-curve work documented by other vendors on the [[concepts/ai-benchmarks/deepswe-benchmark|DeepSWE]] board.
+
+Source: [How Cursor Router chooses the right model for the task — Cursor Blog](https://cursor.com/blog/how-cursor-router-works) (Connor O'Keefe & Yuri Volkov, Aug 2026)
 
 ### Subagents and Context Management
 

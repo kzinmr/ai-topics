@@ -1,7 +1,7 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-08-05
+updated: 2026-08-19
 type: entity
 tags: [company, platform]
 sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
@@ -14,6 +14,7 @@ sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
   - https://github.com/nvidia/skillspector
   - raw/newsletters/2026-07-28-opus-5-fable-5.md
   - raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md
+  - raw/articles/2026-08-17_jensenhuang_securing-infrastructure-intelligence.md
 ---
 
 # NVIDIA Corporation
@@ -101,6 +102,28 @@ This is significant because:
 - It marks Huang's debut on X/Twitter, a platform he had never personally used before
 - Positions NVIDIA as a champion of open-source AI, consistent with its Nemotron open model strategy
 - Responds to the open-weight regulation debate (see [[concepts/open-weight-ai-regulation]])
+
+## LPS Strategy — Land, Power, Shell (Aug 2026)
+
+> *Source: [[raw/articles/2026-08-17_jensenhuang_securing-infrastructure-intelligence.md|Jensen Huang X Article — "Securing the Infrastructure of Intelligence" (Aug 17, 2026)]]*
+
+Jensen Huang published a long X article introducing **LPS (Land, Power, Shell)** as "the next strategic resource" for AI factories — and announced that NVIDIA is now selectively securing LPS capacity itself, applying the same supply-chain discipline it uses for chips to the physical sites that host compute.
+
+**PORTS-Pike Technology Campus (Portsmouth, Ohio)**:
+- NVIDIA partnered with **SB Energy** (SoftBank affiliate) to secure LPS capacity at PORTS-Pike; **OpenAI will be the tenant**, building and operating a world-class AI factory on NVIDIA's full-stack DSX AI factory platform
+- Initial deployment: **4.25 GW** of AI factory capacity; NVIDIA may extend the arrangement to the remaining **3.75 GW** of the site
+- Each generation of deployed NVIDIA AI factory systems at the site could represent **~1.5M NVIDIA GPUs (~$150-200B in NVIDIA revenue)**; the 20-year-term site supports multiple upgrade cycles
+- NVIDIA's support is limited to defined portions of lease and power payments plus a specified residual-value commitment (not the full site cost), phasing in as data centers reach service between 2028 and 2030
+
+**Scale of the OpenAI opportunity**:
+- OpenAI's existing and planned NVIDIA compute commitments: **~12 GW through 2030**, expandable to ~16 GW if the PORTS-Pike extension is exercised — roughly **$600B of NVIDIA compute opportunity**
+
+**Strategic framing**:
+- Most NVIDIA customers (CSPs, investment-grade enterprises) will continue to secure LPS themselves; the vast majority of LPS hosting NVIDIA compute stays customer-secured. NVIDIA targets only "exceptional sites" with visible, durable demand
+- Huang addresses the circular-financing critique directly: "No. OpenAI will pay the lease." — positions the guarantee as supply-chain input securing, with CUDA making compute "versatile, fungible" and therefore rentable/financeable even if OpenAI departs
+- Framing: frontier labs are constrained not by algorithms or demand but by compute availability; LPS is now a first-class NVIDIA competitive asset, and "NVIDIA is the full-stack AI infrastructure platform"
+
+**Context**: This is the official confirmation of the NVIDIA–SB Energy OpenAI-backed data center deal that [[entities/ed-zitron]] had dissected in late July as "the final boss of circular financing" (Zitron's "The More You Buy, The More You Lose" analysis: WSJ-reported $250B financing guarantee for a 10GW SB Energy site, SB Cosmos spread widening 351→536bps, Lucent/Winstar parallel). Huang's post supplies the exact guarantee structure (4GW / 20-year / residual-value-limited, phased 2028-2030) that Zitron's version could only infer from the WSJ report.
 
 ## Nemotron Open Model Strategy
 

@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-17
+updated: 2026-08-19
 tags:
   - security
   - company
@@ -38,6 +38,7 @@ sources:
   - raw/articles/2026-06-19_harvey_legal-tech.md
   - raw/articles/2026-06-19_harvey_contract-review-process.md
   - raw/articles/2026-08-15_harvey_training-frontier-review-table-models-with-applied-compute.md
+  - raw/articles/2026-08-19_harvey_introducing-harvey-ii.md
   - raw/articles/2026-05-12_harvey_how-to-automate-contract-analysis-with-ai.md
   - raw/articles/2026-06-24_harvey_ai-for-general-counsel.md
   - raw/articles/2026-05-30_harvey_legal-document-automation-ai.md
@@ -410,6 +411,24 @@ Harvey and Applied Compute published details of their **specialized model for Re
 This extends the June 2026 Applied Compute methodology — the earlier post described the general framework; this post demonstrates it applied to a specific high-volume production workload with concrete reward engineering.
 
 Source: [Training Frontier Review Table Models — Harvey Blog](https://www.harvey.ai/blog/training-frontier-review-table-models-with-applied-compute)
+
+## Harvey II + Harvey Tenet — First Legal-Specific Post-Trained Model (Aug 2026)
+
+Harvey introduced **Harvey II**, a platform refresh built around **matter-native agents**, persistent cross-tool memory, and — most significantly — **Harvey Tenet**, Harvey's first model **post-trained end-to-end for legal reasoning**. This is the concrete payoff of the Applied Compute / vertical-model training trajectory documented above (June 2026 methodology + August 2026 Review Table post-training), now shipped as a general-purpose foundation for the whole platform.
+
+**Harvey II — three pillars:**
+- **Matter-native agents**: an agent opens *inside the matter or project*, with the documents, parties, tasks, permissions, and history already attached to the work — so you don't carry context over by hand as a matter moves between agents and lawyers (the "Spaces" model).
+- **Persistent cross-tool memory**: some preferences are told to Harvey directly and "stick"; the rest are picked up from your edits and corrections as you work. This memory **follows you across Harvey, Word, and Outlook**, and agents use what Harvey already knows about your preferences/patterns. Users can inspect, change, or fully turn off memory, and **it is never used to train models**.
+- **Template-native drafting**: Harvey II works from a firm's/in-house team's existing templates (headings, numbering, defined terms, citation style set once), so drafts arrive in the shape the team already uses — the more you use Harvey, the less you re-explain.
+
+**Harvey Tenet — the first legal-specific model:**
+- Until now Harvey relied on **general-purpose models**; legal work "has always pushed against their limits." Tenet is Harvey's first in-house model, **post-trained end-to-end for legal reasoning**.
+- **Frontier-level on prominent legal benchmarks, on par with the strongest general models but at an "open-source cost"** — the stated aim is making it practical to run agents *continuously across every matter* (cost is the unlock, not just quality).
+- **Groundwork for customer-specific models**: Harvey plans to partner with organizations to build specialized models around *their own* legal work — "two firms using Harvey will end up with different models and different outputs because their legal work has shaped their models differently."
+
+**Significance:** This extends the [[concepts/evaluation/ai-evaluation|domain-specific model]] trend from a single high-volume workload (Review Table) to a platform-wide foundation model, and moves from "run frontier general models at high cost" to "run a legal-tuned model at open-source cost continuously." It also surfaces a data-privacy guarantee (user memory is never used for training) that matters for regulated legal work, and previews a per-client custom-model moat.
+
+Source: [Introducing Harvey II — Harvey Blog](https://www.harvey.ai/blog/introducing-harvey-ii) (Aug 2026)
 
 ## Legal Operations Management Guide (June 2026)
 
