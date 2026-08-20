@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-08-19
+updated: 2026-08-20
 type: entity
 tags:
   - entity
@@ -32,6 +32,7 @@ sources:
   - raw/newsletters/2026-07-01-how-cursor-deploys-ai-inside-the-enterprise.md
   - raw/articles/2026-05-10_cursor_fast-regex-search.md
   - raw/articles/2026-05-10_cursor_kernels.md
+  - raw/articles/2026-08-18_cursor_aiuc-1.md
 ---
 
 
@@ -473,6 +474,22 @@ Key points:
 - **Results**: "instant grep" with Composer 2 creates a qualitative difference for agentic workflows, especially bug investigation in large repos (chromium examples); complements semantic indexes which handle meaning-based queries.
 
 Source: `raw/articles/2026-05-10_cursor_fast-regex-search.md`
+
+## AIUC-1 Agent Security Certification (Aug 2026)
+
+Cursor announced (Aug 13, 2026) that it is the first product to earn **AIUC-1 certification** — a new standard for AI agent security, safety, and reliability combining an organizational-controls audit with adversarial testing of the product itself.
+
+Key details:
+- **Standard**: developed with 100+ Fortune 500 CISOs; technical contributions from MITRE, Cloud Security Alliance, and Stanford; operationalizes NIST AI RMF, MITRE ATLAS, and OWASP agentic threat taxonomy into testable requirements
+- **Coding-agent areas**: secrets protection, secure code generation, MCP security, agent identity and permissions
+- **Testing**: independent audit by Schellman (first authorized AIUC-1 auditor; ANAB-accredited ISO 42001 body) + thousands of adversarial scenarios across two rounds, exercising rules, hooks, and Auto-review in a representative enterprise configuration covering IDE and cloud agent surfaces
+- **Outcome**: Cursor passed with its safeguards holding under both benign and adversarial conditions; full report on trust.cursor.com
+- **Cadence**: retest at least quarterly, full audit annually; the standard itself updates quarterly, so the bar rises over time
+- **Positioning**: complements SOC 2 Type II, pen testing, bug bounty, and ISO 27001/42001 work; Cursor noted "70% of the Fortune 500 use Cursor" as the enterprise evidence base for why agent-behavior certification matters
+
+See [[concepts/agent-security-certification]] for the concept page on AIUC-1 and its significance for agent adoption.
+
+Source: raw/articles/2026-08-18_cursor_aiuc-1.md
 
 ## Sources
 

@@ -911,7 +911,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2000 pages)
+## Concepts (2001 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -926,6 +926,7 @@
 - [[concepts/advanced-tool-use]] — Advanced Tool Use — Claude Developer Platform advanced tool usage patterns
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM (Adaptive Entropy Modulation)
+- [[concepts/agent-security-certification]] — Agent Security Certification (AIUC-1) — first certification standard for AI agent security/safety/reliability; organizational-controls audit + adversarial product testing; quarterly re-certification; Cursor first certified (Aug 2026)
 - [[concepts/after-automation]] — After Automation (Paradox)
 - [[concepts/ag2-autogen]] — AG2 / AutoGen — Multi-agent framework
 - [[concepts/agent-account-provisioning]] — Agent Account Provisioning

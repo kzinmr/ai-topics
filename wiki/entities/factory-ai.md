@@ -2,7 +2,7 @@
 title: "Factory.ai"
 type: entity
 created: 2026-06-03
-updated: 2026-08-12
+updated: 2026-08-20
 tags:
   - company
   - coding-agents
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-06-03_factory_factory-router.md
   - raw/articles/2026-06-15_factory-ai_software-factory-2.0.md
   - raw/articles/2026-08-12_factory_nvidia-dgx-spark.md
+  - raw/articles/2026-08-20_factory_factory-partner-network.md
 ---
 
 # Factory.ai
@@ -76,6 +77,12 @@ Key points:
 - Complements the existing NVIDIA relationship: NVIDIA is already a Factory 2.0 production customer and Fireworks' LangChain Deep Agents work runs Nemotron on NVIDIA Blackwell
 
 Source: raw/articles/2026-08-12_factory_nvidia-dgx-spark.md
+
+## Factory Partner Network (FPN) (August 2026)
+
+Factory announced the **Factory Partner Network (FPN)** on August 19, 2026 (blog post by Mark Kobe), committing **$100M to partnerships across training, deployment, solutions, and marketing**. The move positions Factory to scale the "Software Factory" model through an ecosystem of integration and delivery partners rather than direct sales alone — an ecosystem play that mirrors the partner-network strategies of larger agentic platforms.
+
+Source: raw/articles/2026-08-20_factory_factory-partner-network.md
 
 ## Related
 

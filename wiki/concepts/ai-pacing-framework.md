@@ -1,7 +1,7 @@
 ---
 title: "AI Pacing Framework"
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-08-20
 type: concept
 tags:
   - policy
@@ -145,6 +145,14 @@ Practical concerns include:
 - **Verification challenges**: How to verify that a lab in a non-signatory country isn't training at frontier scale?
 - **Definitional ambiguity**: What capability threshold triggers pacing measures, and who defines it?
 - **Regulatory capture risk**: Incumbent labs could use pacing frameworks to lock in market position against newcomers
+
+## OpenAI RL-Training Pause (Aug 2026)
+
+On August 18, 2026, Sam Altman posted on X that OpenAI had paused some frontier RL training to ensure alignment, security, and monitoring standards can be met for "the new level of capabilities in front of us" (173K views within hours). This is one of the first major-lab self-imposed pauses in the frontier-training era — and it was captured virally via Gary Marcus's "BREAKING: OpenAI's unraveling has begun" post, which framed the pause as a symptom of institutional decay rather than prudence.
+
+The pause matters for pacing frameworks in two ways:
+1. **Precedent**: it demonstrates that a single lab can voluntarily slow its own capability progress without formal coordination, supporting the "targeted intervention at capability thresholds" pillar
+2. **Framing contest**: the same event generated polarized interpretations (prudence vs unraveling), illustrating how pacing actions become political artifacts — the framing contest is part of the pacing landscape, not just the mechanism
 
 ## Related Pages
 

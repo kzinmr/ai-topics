@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-08-17
+updated: 2026-08-20
 tags:
   - lab
   - benchmark
@@ -36,6 +36,8 @@ sources:
   - raw/articles/garymarcus.substack.com--p-sorry-sam-and-elon-we-have-not-reached--4ddac824.md
   - raw/articles/garymarcus.substack.com--p-open-source-is-not-the-same-as-open--04dad8e9.md
   - raw/articles/garymarcus.substack.com--p-the-hyping-of-anthropics-ipo--d43c684c.md
+  - raw/articles/garymarcus.substack.com--p-breaking-openais-unraveling-has-begun--d2a047ba.md
+  - raw/articles/garymarcus.substack.com--p-googles-biggest-mistake--72e491b0.md
 ---
 
 # Gary Marcus
@@ -378,6 +380,18 @@ On August 17, 2026, Marcus published "[The hyping of Anthropic's IPO](https://ga
 Marcus argues these claims deserve scrutiny, particularly given Anthropic's SEC "quiet period" which limits official communications while leakers and AI bulls shape the narrative unchecked.
 
 Source: [[raw/articles/garymarcus.substack.com--p-the-hyping-of-anthropics-ipo--d43c684c.md]]
+
+### "OpenAI's unraveling has begun" — Altman's RL-Training Pause (Aug 2026)
+
+On August 18, 2026, Marcus published a post quoting Sam Altman's X announcement (173K views) that OpenAI had **paused some frontier RL training** to ensure alignment, security, and monitoring standards could be met "for the new level of capabilities in front of us." Marcus's framing: the pause is not a mark of institutional prudence but a symptom of "unraveling" — a lab so far ahead of its own governance that it must stop to catch up. This extends his critique that OpenAI's reputation and internal coherence are in decline. The same event was logged on the [[concepts/ai-pacing-framework|AI Pacing Framework]] page as an early precedent for single-lab self-paced capability gating.
+
+Source: [[raw/articles/garymarcus.substack.com--p-breaking-openais-unraveling-has-begun--d2a047ba.md]]
+
+### "Google's biggest mistake?" (Aug 2026)
+
+On August 19, 2026, Marcus published a paid post arguing Google's AI stumble traces to a **2023 strategic decision** — not money, data, or compute. His distal-cause thesis: a specific bet made three years ago (the post's paid section elaborates) ultimately cost Alphabet its lead, and he frames it as possibly the costliest mistake Sundar Pichai ever made. This is a sharp reversal of his "Seven reasons I wouldn't count Google out" (Aug 6, above), in which he made the contrarian case for Google's resilience. The two posts bracket a month of Google DeepMind leadership turmoil (Hassabis moving to Chairman/Chief Science Officer, Jumper, Silver, Rocktäschel, Shazeer departures).
+
+Source: [[raw/articles/garymarcus.substack.com--p-googles-biggest-mistake--72e491b0.md]]
 
 ### Key Works
 

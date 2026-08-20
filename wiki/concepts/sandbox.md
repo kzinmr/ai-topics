@@ -8,9 +8,9 @@ tags:
   - mcp
 status: L3
 created: 2026-04-27
-updated: 2026-04-28
+updated: 2026-08-20
 aliases: [Agent Sandboxing, AI Sandbox, Code Sandbox]
-sources: [https://firecracker-microvm.github.io/, https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/security]
+sources: [https://firecracker-microvm.github.io/, https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/security, raw/articles/simonwillison.net--2026-aug-19-smolmachines-untrusted-sandbox--50e1e147.md]
 ---
 
 
@@ -57,3 +57,4 @@ Sandboxing for AI agents is the practice of executing untrusted agent code in is
 - [Claude Code Security | Anthropic Docs](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/security)
 - [gVisor: Application Kernel for Containers | Google](https://gvisor.dev/)
 - [AWS Lambda MicroVMs](https://aws.amazon.com/lambda/lambda-microvms) — Firecracker-based sandbox primitive (2026-06)
+- **smolvm / smolmachines** (https://smolmachines.com) — KVM-based microVM sandbox for untrusted Python & JavaScript execution, with CPU/RAM limits, no network access, and filesystem access restricted to designated files (Aug 2026). Simon Willison's Claude Fable 5 agent (Claude Code for web) was tasked to evaluate smolmachines as a sandbox; the web container lacked `/dev/kvm` (nested virt unavailable inside its own Firecracker guest), so the agent improvised by installing smolvm on GitHub Actions runners (which expose `/dev/kvm`) and running its own test battery there — a documented case of an agent creatively working around its sandbox's environmental limits. `raw/articles/simonwillison.net--2026-aug-19-smolmachines-untrusted-sandbox--50e1e147.md`

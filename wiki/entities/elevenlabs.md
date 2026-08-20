@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-08-17
+updated: 2026-08-20
 tags:
   - company
   - voice-ai
@@ -10,6 +10,7 @@ tags:
 aliases: ["11labs", "Eleven Labs"]
 sources:
   - https://elevenlabs.io
+  - raw/articles/2026-08-18_elevenlabs_elevenlabs-mcp-in-claude.md
   - raw/articles/2026-08-11_elevenlabs_webinar-recap-how-admiral-handles-insurance-calls-with-ai-agents.md
   - raw/articles/2026-08-11_elevenlabs_deutsche-telekom.md
   - raw/articles/2026-08-11_elevenlabs_finch.md
@@ -110,6 +111,17 @@ Music v2 powers three platforms:
 **Pricing**: Music v1 and v2 prices cut by up to 50% for ElevenAPI and up to 40% for ElevenCreative.
 
 Source: raw/articles/2026-05-27_elevenlabs_introducing-music-v2.md
+
+## Hosted MCP in Claude (Aug 2026)
+
+ElevenLabs announced (Aug 17, 2026, by Boris Starkov and Eli Goodman) that its **hosted MCP is available in Claude** via the Claude connectors directory. Users sign in once with OAuth, then configure, monitor, and improve their voice and chat agents from Claude in natural language — turning Claude into a management console for ElevenLabs agents rather than just a coding or chat surface.
+
+Key points:
+- **Single-sign-on OAuth** — sign in once, stay in control across agent configurations
+- **Natural-language agent management** — configure, monitor, and improve voice/chat agents from within Claude
+- **Distribution milestone**: first major agent-platform integration of the ElevenLabs MCP, extending the May 2026 Claude Code skill integration from "build agents with Claude Code" to "manage running agents from Claude"
+
+Source: raw/articles/2026-08-18_elevenlabs_elevenlabs-mcp-in-claude.md
 
 ## AI Customer Service Agents (June 2026)
 

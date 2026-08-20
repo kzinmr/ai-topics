@@ -1,3 +1,39 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-08-20] Dreaming wiki-ingest | Saturation recovery — 1 new concept page + 6 entity/concept enrichments
+
+- **Recovery context**: dreaming-group JSON render failed (`failed to parse JSON response from dreaming-group output`); full analysis recovered from cron output file `c4a9e8d2f671/2026-08-20_18-34-10.md` (4717 lines, 16 theme clusters). `triage_latest.json` was stale (20260817T180105Z, 7 decisions from prior consumed run) — replaced with fresh decisions below.
+- **Checkpoint**: total_articles=0, recent_raw_articles=182 (2026-08-13 to 2026-08-20) -> Pattern E saturation scenario. Archive-index probe: 81 never-triaged raw articles (last 3 days).
+- **Duplicate check**: adjacent jobs already covered glm-5-3 (newsletter-wiki-ingest, commit 3be32389), warp-factories (slack-hot-posts), Grok 4.6 / Cursor+SpaceX / Decagon flow-matching TTS (xai/cursor-ai/decagon entities), active-crawl Aug 19 items (HEIR/Wiz/Cerebras, commit 822263d3), x-accounts Whitaker/van Strien (commit ee208447). No re-triage of those.
+- **NEW PAGE**: [[concepts/agent-security-certification]] — AIUC-1 agent security/safety/reliability certification (Cursor + ElevenLabs cross-source; MITRE/Stanford/Schellman; NIST AI RMF + MITRE ATLAS + OWASP agentic threat; quarterly re-certification; Cursor first certified Aug 13 2026).
+- **Enriched**:
+  - [[concepts/sandbox]] — smolvm/smolmachines KVM microVM sandbox for untrusted Python/JS; Fable 5 agent improvised a KVM test battery on GitHub Actions when Claude Code for web lacked /dev/kvm (simonwillison.net Aug 19)
+  - [[concepts/ai-pacing-framework]] — new "OpenAI RL-Training Pause (Aug 2026)" section: Altman X post (173K views) pausing frontier RL training; precedent + framing-contest framing; cross-linked to gary-marcus post
+  - [[entities/gary-marcus]] — 2 new post sections: "OpenAI's unraveling has begun" (RL-pause framing) and "Google's biggest mistake?" (2023 distal-cause thesis); 2 new sources
+  - [[entities/factory-ai]] — new "Factory Partner Network (FPN)" section ($100M commitment, Mark Kobe, Aug 19); source added
+  - [[entities/cursor-ai]] — new "AIUC-1 Agent Security Certification" section (first certifier, Schellman audit, quarterly cadence); source added; links to new concept page
+  - [[entities/elevenlabs]] — new "Hosted MCP in Claude (Aug 2026)" section (OAuth SSO, natural-language agent management via Claude connectors); source added
+- **Verification table (upstream references)**:
+
+| Candidate | Status | Details |
+|-----------|--------|---------|
+| AIUC-1 agent-security certification | ❌ Genuine gap -> new page | Zero "aiuc" matches in entities/concepts; cursor-ai.md had no certification section; created concepts/agent-security-certification.md + cursor-ai + elevenlabs sections |
+| smolvm/smolmachines sandbox | ❌ Genuine gap -> enriched | No smolvm page; concepts/sandbox.md had no entry; added microVM entry + Fable 5 KVM workaround case |
+| OpenAI RL-training pause | ❌ Genuine gap -> enriched | ai-pacing-framework.md covered RSI letter only; added Aug 2026 pause section with precedent framing |
+| Gary Marcus x3 posts | Partial -> 2 enriched, 1 skip | "unraveling" + "Google's biggest mistake" not in entity page (last updated Aug 17); Amazon VGT3 book-scanning: raw article is a failed scrape (no body) and Project Panama section already covers the books-scanning thesis -> skip |
+| Factory Partner Network | ❌ Genuine gap -> enriched | factory-ai.md had no FPN section; added with $100M commitment detail |
+| Together AI DeepSWE comparisons | ✅ Skip | benchmark-level content; deepseek-v4.md covers 0813 checkpoint |
+| ElevenLabs MCP in Claude | Enriched (beyond upstream "minor" call) | Distribution milestone distinct from May Claude Code skill integration; added as own section |
+| Cursor Grok 4.6 / SpaceX / Firetiger | ✅ Already covered | xai.md has Grok 4.6; cursor-ai.md has SpaceX acquisition (June 2026 section) |
+| Warp Factories | ✅ Already covered | concepts/warp-factories.md created 2026-08-19 (slack-hot-posts, commit f33e8162) |
+| Decagon Assist / flow-matching TTS | ✅ Already covered | decagon.md has Flow-DPO section |
+| ~70 batch skips | Non-AI/failed/minor | coredump.cx electronics, johndcook math, 9to5mac, guardian, wired, troyhunt, cursor router/kittens/builds, factory old marketing, failed scrapes (parallel, elevenlabs aiuc-1 stub) |
+- **Index**: +1 concept entry (agent-security-certification); Concepts count 2000 -> 2001.
+
+
 ## [2026-08-20] watchdog | Auto-fix run — 3 pages missing frontmatter closing `---`
 
 ### Changes
@@ -9,10 +45,6 @@
 - Verified tag audit clean (0 violations, 844/924 coverage)
 - Committed 6 uncommitted entity updates from 2026-08-19/20 ingest (cursor-ai, decagon, harvey, nvidia, openai, together-ai — NVIDIA LPS/PORTS-Pike content)
 - Pipeline alerts: blog + newsletter chains flagged `ingest_ok_but_triage_failed` — verified transient: blog triage JSON is from 2026-08-17 duplicate-run recovery (mirrored decisions, all 5 takes confirmed applied via page `updated:` dates); newsletter triage ran today (20260820T101038Z checkpoint, take: AINews GLM 5.3 → concepts/glm-5-3.md, commit 3be32389). No action needed.
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 
 ## [2026-08-20] newsletter-wiki-ingest | Enriched concepts/glm-5-3 with Jie Tang "Death of Params" post-training scaling framework (AINews/Latent Space)
