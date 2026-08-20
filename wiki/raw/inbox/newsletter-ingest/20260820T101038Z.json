@@ -1,0 +1,56 @@
+{
+  "run_id": "20260820T101038Z",
+  "triaged_at": "2026-08-20T10:35:00Z",
+  "summary": "2 newsletters ingested. 1 high relevance (AINews: Z.ai CEO Jie Tang on GLM 5.3 and post-training scaling law — directly extends existing GLM-5.3 concept page). 1 medium relevance (beehiiv newsletter 'OpenAI Hits the Brakes on Itself' — OpenAI-related but Cloudflare-blocked, cannot resolve individual links). 39 Substack/beehiiv UI noise links batch-skipped.",
+  "classifications": [
+    {
+      "subject": "[AINews] Death of Params: Z.ai CEO Jie Tang on GLM 5.3 and the new Post-training Scaling Law",
+      "date": "2026-08-20",
+      "source": "AINews / swyx (Latent Space, latent.space, pub 1084089)",
+      "importance": "high",
+      "reason": "Z.ai CEO Jie Tang discusses GLM 5.3 and a new 'Post-training Scaling Law' concept. Core claim: parameter count is no longer the sole measure of model capability — 'Parameter count is only meaningful alongside three others — how much data you have, where you intend to spend your compute, and who will run the model, under what conditions.' Context: open-weight Fable-class model predicted by end of 2026; Qwen 3.8 Max and Kimi K3 are 2-3T models with Fable estimated at 3-7T, only 2 points higher on AA index. This is directly relevant to the existing concepts/glm-5-3.md page (created Aug 14, enriched Aug 16 with Nathan Lambert strategic analysis + Superintel+ post-training economics) and concepts/scaling-laws or related pages. The 'Death of Params' framing (post-training as the new scaling axis) is a new conceptual angle not yet captured.",
+      "entities": ["Z.ai", "Jie Tang", "GLM 5.3", "Latent Space", "swyx"],
+      "resolved_url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
+      "action": "scrape_article, update concepts/glm-5-3.md with Jie Tang post-training scaling law quote, consider new concept page on post-training scaling laws or update existing scaling-laws concept page",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-20-ainews-death-of-params-z-ai-ceo-jie-tang-on-glm-5-3-and-the-new-post-training-sc.md"
+    },
+    {
+      "subject": "⏸️ OpenAI Hits the Brakes on Itself",
+      "date": "2026-08-19",
+      "source": "beehiiv newsletter (uid=526)",
+      "importance": "medium",
+      "reason": "OpenAI-related newsletter with 20 article links. Title suggests a significant OpenAI policy/strategy shift ('hits the brakes on itself' implies self-regulation or safety pivot). However, all 20 links are beehiiv tracking URLs (link.mail.beehiiv.com) that are Cloudflare-challenged — individual article titles and URLs cannot be resolved via CLI. The newsletter source itself is not identified in the checkpoint data. Classified as medium (not critical) because: (1) OpenAI is a core wiki entity, (2) the title suggests a significant development, but (3) actual content cannot be assessed without resolving the beehiiv links. The newsletter-wiki-ingest job will need to scrape the main article URL (beehiiv post) to determine if individual articles are wiki-worthy.",
+      "entities": ["OpenAI"],
+      "resolved_url": null,
+      "action": "scrape_newsletter_main_post (beehiiv post URL needed — not in checkpoint), classify individual articles after URL resolution, update entities/openai.md if substantive policy/strategy shift",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-19-openai-hits-the-brakes-on-itself.md"
+    },
+    {
+      "subject": "Substack UI noise (AINews newsletter)",
+      "date": "2026-08-20",
+      "source": "Substack (swyx/Latent Space, pub 1084089)",
+      "importance": "skip",
+      "reason": "18 out of 20 links in the AINews Substack email are UI noise: app-link redirects (post-email-title, post-email-like, post-email-comments, post-email-share, restack-comment, read-in-app), substack.com/redirect/UUID tracking links (links 8-20), and one open.substack.com post URL that resolves to the main article (already classified above). No wiki value.",
+      "entities": [],
+      "resolved_url": null,
+      "action": "skip — Substack email UI/tracking links",
+      "raw_path": null
+    },
+    {
+      "subject": "Beehiiv UI noise (OpenAI newsletter)",
+      "date": "2026-08-19",
+      "source": "beehiiv (uid=526)",
+      "importance": "skip",
+      "reason": "All 20 links in the 'OpenAI Hits the Brakes on Itself' newsletter are beehiiv tracking redirects (link.mail.beehiiv.com/v2/c/...). These are Cloudflare-challenged and cannot be resolved via curl. No individual article title, URL, or content can be extracted. The newsletter itself is the unit of triage (classified above as medium).",
+      "entities": [],
+      "resolved_url": null,
+      "action": "skip — beehiiv tracking links; classify at newsletter level",
+      "raw_path": null
+    }
+  ],
+  "next_actions": [
+    "PRIORITY 1 (high): Scrape AINews post at https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie — extract full text of Jie Tang interview/quote on post-training scaling law. Update concepts/glm-5-3.md with new 'Death of Params' section. Consider whether a standalone concepts/post-training-scaling-laws.md page is warranted.",
+    "PRIORITY 2 (medium): Identify the beehiiv newsletter source for 'OpenAI Hits the Brakes on Itself' (uid=526). The main beehiiv post URL is not in the checkpoint — check the raw newsletter file or email headers for the canonical post URL. Scrape it to extract individual article titles/URLs, then triage each.",
+    "PRIORITY 3 (low): If the beehiiv newsletter main post reveals an OpenAI safety/policy pivot, update entities/openai.md with the new development."
+  ]
+}
