@@ -6,6 +6,7 @@ updated: 2026-07-09
 tags: [entity, company, enterprise-ai, coding-agents]
 sources: []
 status: active
+---
 
 # UiPath
 

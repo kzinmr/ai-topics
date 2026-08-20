@@ -1,3 +1,15 @@
+## [2026-08-20] watchdog | Auto-fix run — 3 pages missing frontmatter closing `---`
+
+### Changes
+- Added missing frontmatter closing `---` separator to 3 pages (frontmatter was unclosed, making YAML frontmatter unparseable):
+  - `wiki/entities/uipath.md`
+  - `wiki/concepts/cursor-automations.md`
+  - `wiki/concepts/mistral-medium-3-5.md`
+- Verified index.md clean (validate_index.py pass, 0 corruption, 0 ghost entries, 0 top-level missing, 0 true dupes — 5 cross-namespace slugs confirmed legitimate)
+- Verified tag audit clean (0 violations, 844/924 coverage)
+- Committed 6 uncommitted entity updates from 2026-08-19/20 ingest (cursor-ai, decagon, harvey, nvidia, openai, together-ai — NVIDIA LPS/PORTS-Pike content)
+- Pipeline alerts: blog + newsletter chains flagged `ingest_ok_but_triage_failed` — verified transient: blog triage JSON is from 2026-08-17 duplicate-run recovery (mirrored decisions, all 5 takes confirmed applied via page `updated:` dates); newsletter triage ran today (20260820T101038Z checkpoint, take: AINews GLM 5.3 → concepts/glm-5-3.md, commit 3be32389). No action needed.
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

@@ -6,6 +6,7 @@ updated: 2026-07-09
 tags: [concept, coding-agents, cursor, developer-tooling]
 sources: []
 status: active
+---
 
 # Cursor Automations
 
