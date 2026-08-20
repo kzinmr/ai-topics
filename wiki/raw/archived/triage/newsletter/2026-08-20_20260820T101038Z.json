@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-20T10:57:59.630489+00:00",
+  "triage_run_id": "20260820T101038Z",
+  "source": "newsletter",
+  "summary_ja": "2ニュースレターを処理。take 1件: AINews（swyx/Latent Space）の「Death of Params: Z.ai CEO Jie Tang on GLM 5.3 and the new Post-training Scaling Law」→concepts/glm-5-3.mdへJie Tangのpost-training scaling law引用追加。既存ページ（Aug 14作成、Aug 16にNathan Lambert戦略分析+Superintel+ post-training economics追記済み）の「Death of Params」フレームワーク未収録。medium 1件: beehiivニュースレター「⏸️ OpenAI Hits the Brakes on Itself」→OpenAI関連だがbeehiiv全20リンクがCloudflare-challengedで個々の記事URL不可。主要beehiiv記事URLがcheckpointに無いためnewsletter-wiki-ingestで解消要。skip: Substack UIノイズ18件（app-link/redirect/UUID追跡リンク）、beehiiv UIノイズ20件（全リンクがbeehiiv tracking redirect）。",
+  "decisions": [
+    {
+      "item_id": "news-20260820-uid526-openai-brakes",
+      "source": "newsletter",
+      "source_name": "beehiiv newsletter (uid=526, source unidentified)",
+      "title": "⏸️ OpenAI Hits the Brakes on Itself",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-19-openai-hits-the-brakes-on-itself.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ ☆☆☆ 既存エンティティ更新候補。タイトルがOpenAIの自己規制・安全方針転換を示唆（「hits the brakes on itself」）。OpenAIはコアエンティティでentities/openai.mdが7月2026リリース群（GPT-5.6 GA、ChatGPT Work agent、Codex統合等）で最新化済み。ただし全20記事リンクがbeehiiv tracking URL（link.mail.beehiiv.com/v2/c/...）でCloudflare-challenged→curlでは403、個々の記事タイトル・URL・内容不可。主要beehiiv記事URL（hp.beehiiv.com/{uuid}）がcheckpointに無いため、newsletter-wiki-ingestでメールヘッダまたはbeehiiv APIから記事URLを解決して再トライエージが必要。現時点ではタイトルベースの分類のみ可能。",
+      "candidate_wiki_path": "entities/openai.md",
+      "body_excerpt": "# Newsletter Digest - 2026-08-19\n**Subject:** ⏸️ OpenAI Hits the Brakes on Itself\n**Collected:** 2026-08-20T10:10:36.475911+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/6ad2cde02bddcc9dc861680ca732d902958ea21822b3dbdd9525f0f6ea80de23b68079a65733e50cb21d34c6b"
+    },
+    {
+      "item_id": "news-20260820-noise-substack",
+      "source": "newsletter",
+      "source_name": "Substack (swyx/Latent Space)",
+      "title": "Substack UI noise (app-link redirects, UUID tracking links, OAuth sessions)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★ AINews Substackメールの20リンク中18件がUIノイズ: substack.com/app-link/post（post-email-title/like/comments/share/restack-comment/read-in-app、5件）、substack.com/redirect/<uuid>（追跡リンク、12件、email-session auth必須）、substack.com/redirect/2/eyJlIj（OAuthリダイレクト、1件）。open.substack.com/pub/swyx/p/ainews-death-of-params-zai-ceo-jieはメイン記事（既分類）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Substack メールUIノイズ — 本文なし。"
+    },
+    {
+      "item_id": "news-20260820-noise-beehiiv",
+      "source": "newsletter",
+      "source_name": "beehiiv (uid=526)",
+      "title": "Beehiiv tracking links (link.mail.beehiiv.com/v2/c/...)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★ 「OpenAI Hits the Brakes」beehiivメールの20リンク全件がbeehiiv tracking redirect（link.mail.beehiiv.com/v2/c/<hash>/<id>）でCloudflare-challenged。curlでは403 JSチャレンジページのみ返却。個々の記事解決はブラウザベースfetchまたはbeehiiv API必要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "beehiiv tracking URL — 本文なし。"
+    }
+  ]
+}

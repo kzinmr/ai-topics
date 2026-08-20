@@ -3,6 +3,18 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-20] newsletter-wiki-ingest | Enriched concepts/glm-5-3 with Jie Tang "Death of Params" post-training scaling framework (AINews/Latent Space)
+
+- **Triaged from**: `raw/newsletters/2026-08-20-ainews-death-of-params-z-ai-ceo-jie-tang-on-glm-5-3-and-the-new-post-training-sc.md` (checkpoint 20260820T101038Z; triage JSON at `~/.hermes/cron/data/newsletter/triage_latest.json`)
+- **Pages Updated**:
+  - `concepts/glm-5-3.md` — new section "Death of Params: Jie Tang on the Post-Training Scaling Law (Aug 2026)": Z.AI CEO Jie Tang's Aug 19 X post (~1.02M views) argues parameter count is insufficient as a scale metric without data volume, inference compute, post-training, and deployment conditions; "memorization prefers more parameters, reasoning prefers more post-training data and effective depth"; five scaling knobs incl. new XA-YB MoE-sparsity notation; advanced skills need long causal chains (20+ inference steps), not more parameters; end-to-end synthetic environments/judges ("all the way down") tied to the RSI storyline; open-weights Fable-class model by year-end prediction spot-checked (Qwen 3.8 Max + Kimi K3 at 2-3T vs Fable est. 3-7T, ~2 pts on AA index). Cross-linked to existing Superintel+ post-training economics and Lambert strategic-analysis sections.
+  - Frontmatter: `updated` bumped 2026-08-15 -> 2026-08-20; raw newsletter digest added to `sources`.
+- **Decisions (2026-08-20 run)**:
+  - `take` (1): AINews "Death of Params" -> concepts/glm-5-3.md enrichment (above). Body fetched via latent.space curl + <article> extraction (42 paras).
+  - `reference` (1): beehiiv uid=526 "OpenAI Hits the Brakes on Itself" (2026-08-19) — all 20 links are beehiiv v2 tracking URLs, unresolvable via CLI (Cloudflare-challenged); no article bodies reachable. No wiki change made; topic (OpenAI self-regulation/safety policy) to be re-triaged if content surfaces via another pipeline. Raw digest saved at `raw/newsletters/2026-08-19-openai-hits-the-brakes-on-itself.md`.
+  - `skip` (2): Substack UI noise (18 links, swyx post) + beehiiv tracking-link noise (20 links, uid=526).
+- **Note**: this run recovered from the newsletter-triage JSON-parse failure (pre-run script error); triage checkpoint `triage_latest.json` was valid and same-day (checkpoint_run_id=20260820T101038Z), so enrichment proceeded from the checkpoint.
+
 ## [2026-08-19] x-accounts-scan | Ingested 2 new X posts: Jonathan Whitaker leaves Answer.AI + Daniel van Strien British Library book-image pipeline
 
 - **Raw articles created**:

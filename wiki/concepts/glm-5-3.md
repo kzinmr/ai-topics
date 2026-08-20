@@ -1,7 +1,7 @@
 ---
 title: "GLM-5.3"
 created: 2026-08-14
-updated: 2026-08-15
+updated: 2026-08-20
 type: concept
 tags:
   - model
@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-08-14_zai_glm-5-3.md
   - raw/newsletters/2026-08-14-glm-5-3-how-chinese-labs-keep-stride-with-the-frontier.md
   - raw/newsletters/2026-08-15-nobody-built-a-bigger-model.md
+  - raw/newsletters/2026-08-20-ainews-death-of-params-z-ai-ceo-jie-tang-on-glm-5-3-and-the-new-post-training-sc.md
   - https://read.getsuperintel.com/p/nobody-built-a-bigger-model
 ---
 
@@ -150,6 +151,23 @@ Lambert draws a division of labor across the Chinese open-model ecosystem:
 ### Open-Weights Diffusion Concern
 
 - The strategic risk Lambert emphasizes: open-weights distribution of a model with emergent cyber capabilities (see the CyberGym/ExploitBench results above) is a **one-way door** — post-release, the model can be fine-tuned to remove safety guardrails, so the safety evaluation performed pre-release must be conservative. This connects to the broader debate in [[concepts/cyber-frontier-models|cyber capability gating]] and [[concepts/china-agentic-coding-sprint|Chinese open-weights competition]].
+
+## Death of Params: Jie Tang on the Post-Training Scaling Law (Aug 2026)
+
+[[entities/glm-5-zai|Z.AI]] founder/CEO Jie Tang published an X post (Aug 19, 2026, ~1.02M views) arguing that the industry's default shorthand for model scale — **parameter count — is no longer sufficient**. His core claim, relayed by AINews/Latent Space ("[Death of Params](https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie)", Aug 20, 2026):
+
+> "Parameter count is only meaningful alongside three others — how much data you have, where you intend to spend your compute, and who will run the model, under what conditions."
+
+Key points of the post as summarized by the AINews bulletin:
+
+- **Memorization vs reasoning split**: "Memorization prefers more parameters. Reasoning prefers more post-training data and effective depth." GLM-5.3's large benchmark jumps (see tables above) came **solely from RL on long-horizon environments** — consistent with the post-training-only release design and Lambert's analysis above.
+- **Five knobs of scaling**: Tang identifies five scaling dimensions — parameter count plus data volume, inference compute, post-training, and deployment conditions — and proposes a new **XA-YB notation** for MoE sparsity to end "parameter count obsession."
+- **Advanced skills are not retrieval problems**: tasks like vulnerability discovery require carrying **long causal chains (20+ inference steps)** without losing the thread — an ability that does not live in total parameter count once a knowledge-holding threshold is reached.
+- **Environment scaling continues**: as agent capability improves, "much of the difficulty in scaling post-training moves from the model to the environment." Z.ai now synthesizes environments end to end — research agents collect task patterns from real work and turn them into runnable long-horizon tasks covering production workflows (some representing several days of work for an experienced engineer), with the judging/verifier process itself synthetic ("all the way down" — flagged in the bulletin as directly relevant to the recursive-self-improvement storyline).
+
+The post also revived Tang's earlier prediction of an **open-weights Fable-class model by end of 2026**; AINews' spot check: with 134 days remaining, two 2–3T open models already exist (Qwen 3.8 Max, Kimi K3), Fable is estimated at 3–7T and only ~2 points ahead on the AA index.
+
+This framework complements the Superintel+ "post-training economics" analysis above (capability manufactured one domain at a time) and Lambert's Z.ai/Kimi post-training/pretraining division of labor — together they make GLM-5.3 a case study for the shift from pretraining-scale competition to post-training/environment-scale competition.
 
 ## Related Pages
 
