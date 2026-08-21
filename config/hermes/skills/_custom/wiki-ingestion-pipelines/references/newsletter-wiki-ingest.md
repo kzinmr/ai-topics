@@ -1,107 +1,100 @@
-# Newsletter Wiki Ingest — Full Reference
+---
+name: newsletter-wiki-ingest
+description: Newsletter wiki-ingest execution patterns — recover from triage parse failures, fetch take article bodies, enrich existing pages, archive, commit
+---
 
-Full procedure for the downstream newsletter/blog ingestion pipeline.
+# Newsletter Wiki Ingest
 
-## Input Format
-Triage checkpoint JSON (from `context_from` cron chaining or checkpoint file):
+Execution playbook for the `newsletter-wiki-ingest` cron job: consumes the triage checkpoint from `newsletter-triage` (via `semantic-article-grouping`) and performs the actual wiki enrichment. Triage logic lives in `semantic-article-grouping`; this skill covers the ingest side only.
+
+## Pipeline Position
+
 ```
-${HERMES_HOME}/cron/data/newsletter/triage_latest.json   (newsletter)
-${HERMES_HOME}/cron/data/blog_ingest/triage_latest.json   (blog)
-```
-
-Structure:
-```json
-{
-  "summary_ja": "...",
-  "decisions": [
-    {
-      "item_id": "...",
-      "source": "newsletter",
-      "title": "...",
-      "url": "...",
-      "recommended_action": "take",
-      "reason_ja": "★★★★★ ...",
-      "candidate_wiki_path": "concepts/slug"
-    }
-  ]
-}
+newsletter-ingest (07:10) -> newsletter-triage (07:20) -> newsletter-wiki-ingest (07:40)
+   checkpoint: latest.json     checkpoint: triage_latest.json     THIS JOB
+   path: ${HERMES_HOME}/cron/data/newsletter/latest.json
+         ${HERMES_HOME}/cron/data/newsletter/triage_latest.json
 ```
 
-## Checkpoint States
-- **State A** (ok=true, valid decisions): Filter to `recommended_action === "take"` decisions. If none, respond `[SILENT]`.
-- **State B** (no checkpoint file): Fall back to Triage Failure Recovery — scan raw newsletter files.
-- **State C** (ok=false, has output_path): Read the triage failure output file to extract embedded newsletter-ingest checkpoint candidates. The triage job's markdown output contains the full prompt including the `candidates` array. Parse candidates, resolve canonical newsletter URLs, perform triage manually. Most common recovery path.
+- `HERMES_HOME` = `/opt/data/.hermes` (hardcode in scripts; `os.path.expanduser("~/.hermes")` mis-resolves to a nested path in cron terminal context — see `semantic-article-grouping` §Pitfall).
+- Read `triage_latest.json` FIRST. Verify it is TODAY's run: `checkpoint_run_id` must start with today's date, and cross-check against the pre-run script error context if present.
+- `semantic-article-grouping` is listed for this job but is often NOT found in this profile — start the response with a brief "skill not found" notice; the triage skill's patterns are inlined in this skill's references.
 
-## Prior Batch Detection
-Scan last 30-50 lines of log.md for matching source title. If found:
-1. Read what was already processed
-2. Check if candidate_wiki_path files already exist
-3. If all concept-level pages exist, shift to entity-level updates
-4. Don't duplicate log entries — append as sub-section
+## Step 1 — Pre-Run Parse-Failure Recovery
 
-## Source File Fallback
-Raw newsletter files may be empty stubs (< 1KB). Fallback:
-1. Use `web_extract(url)` from the triage decision
-2. For redirect chains (substack.com/redirect/..., link.mail.beehiiv.com/...), search article title + source name
-3. Note the fallback in log entry
+When the pre-run script reports `failed to parse JSON response from newsletter-triage output` with an `output_path` under `~/.hermes/cron/output/<job-id>/`:
 
-## Triage Failure Recovery — Full Workflow
+1. **The triage checkpoint usually already contains valid JSON** — the upstream agent saves `triage_latest.json` before rendering its cron response, then fails at response rendering. Read it directly: `${HERMES_HOME}/cron/data/newsletter/triage_latest.json`. No re-run needed.
+2. Verify freshness: `checkpoint_run_id` date == today. A stale previous-day file is a duplicate, NOT a recovery source — in that case run `hermes cron run <newsletter-triage-job-id>` (or check `latest.json` + inbox summary and triage manually).
+3. Never trust the failed output's self-report ("0 candidates" while `latest.json` has 5). Checkpoint wins.
 
-When `ok: false` with a valid `output_path`:
-1. **Read the failed triage output**: `read_file <output_path>` — the markdown file contains the triage job's full prompt including the embedded newsletter-ingest checkpoint (the `candidates` array with all raw links)
-2. **Extract candidates from embedded script output**: The candidates include `publication_id`, `post_id`, and noise URLs. Parse `source_name` (subject line) and `raw_path` for each newsletter.
-3. **Resolve canonical newsletter URLs**: From the candidates, find `open.substack.com/pub/{publication}/p/{slug}` links (usually Link 7-9 in Substack emails). These resolve to the actual newsletter post body via `web_extract`.
-4. **Extract real article links** from the newsletter post body — NOT from the raw tracking URLs in the candidates array. The post body contains the actual curated article links, titles, and descriptions.
-5. **Filter Substack UI noise**: skip `app-link/post?...` with `submitLike=true`, `comments=true`, `action=share`, `@username` author profiles, `utm_campaign=email-read-in-app`, `redirect/app-store`
-6. **Triaged articles**: Assign star ratings using Value Assessment Matrix
-7. **Proceed to wiki-ingest**: Create/update pages → index.md → log.md → commit
-8. **Log**: "Newsletter pipeline: newsletter-triage failed to produce valid JSON; wiki-ingest performed triage directly"
+Validated: Aug 2026 run (AINews GLM 5.3 + beehiiv OpenAI) — checkpoint 20260820T101038Z valid despite parse failure; took 1, reference 1, skip 2.
 
-When no output_path or candidates are recoverable:
-1. Fall back to scanning raw newsletter files: `ls -la ~/wiki/raw/newsletters/*.md | sort -k5 -rn`
-2. Filter noise using Substack Noise Filtering
-3. Resolve canonical URLs and extract article links as above
-4. Assign star ratings
-5. Merge into normal workflow
-6. Log: "Triage recovery: Upstream checkpoint completely missing, scanned raw files"
+## Step 2 — Verify Each `take` Before Enriching
 
-## Noise Filtering Reference
-| Pattern | Type | Action |
-|---------|------|--------|
-| play_audio=true, play_card | Podcast/Audio UI | Skip |
-| post-comment, comments=true | Comment section | Skip |
-| submitLike=true, reaction | Like/heart button | Skip |
-| share=true | Share link | Skip |
-| redirect/app-store | App download page | Skip |
-| @username mentions | Author profile | Skip |
-| redirect/2/eyJ... or redirect/<uuid> | Obfuscated redirect | Try web_extract or skip |
-| utm_campaign=email-read-in-app | Read-in-app prompt | Skip |
-| link.mail.beehiiv.com | Link tracking | Resolve if possible |
-| open.substack.com/pub/{pub}/p/{slug} | ✅ **Canonical newsletter URL** | Use directly with web_extract to get post body |
-| app-link/post?publication_id=N&post_id=M | Email tracking link | Extract pub_id + post_id, then construct open.substack.com/pub/{pub}/p/{slug} |
+Triage may rate ★★★★★ content that another pipeline already processed the same day (blog-ingest 07:00, sitemap-monitor 06:00, raw-backlog 04:00 all overlap the newsletter window):
 
-## Substack URL Resolution (CRITICAL)
+1. `find ~/ai-topics/wiki/{concepts,entities} -name "{slug}.md"` — does the page exist?
+2. If yes, **read the page's content sections** (not just `sources` frontmatter). Does it contain the article's specific claims/numbers?
+3. Substantive match → downgrade to `reference` (bump `updated` only). Missing specific content → enrich the existing page (still a take, enrichment not creation).
+4. Page absent → create per triage recommendation.
 
-The raw newsletter checkpoint contains ONLY tracking/redirect URLs. To get the actual newsletter content:
+## Step 3 — Fetch the Article Body (take items)
 
-1. Find the `open.substack.com/pub/{publication}/p/{slug}` URL (usually Link 7-9 in the candidates)
-2. Call `web_extract` on that URL to get the newsletter post body
-3. From the post body, extract the REAL curated article links (with titles and descriptions)
-4. These extracted links are what you triage — NOT the tracking URLs in the candidates array
+The raw newsletter digest (`wiki/raw/newsletters/*.md`) contains only tracking/redirect URLs — never the body. Fetch it yourself:
 
-The `substack.com/redirect/2/eyJ...` and `substack.com/redirect/<uuid>` URLs resolve to app download pages or other noise — never to the actual article content.
+- Canonical URL comes from the triage JSON `url` field (e.g. `https://www.latent.space/p/{slug}`).
+- Cron-mode-safe fetch: `write_file` a Python script to `/tmp/` (unique name, e.g. `/tmp/fetch_ainews_glm53_YYYYMMDD.py` — sibling subagents race on shared `/tmp/` names in the 07:00-07:50 window), run via `terminal`. Script pattern: `curl -sL -A <browser UA>` → JSON-LD `headline` + `<article>` `<p>` extraction → save extracted JSON to `/tmp/`, print first ~25-40 paragraphs.
+- Domain notes: `www.latent.space/p/{slug}` and `open.substack.com/pub/{handle}/p/{slug}` → 200 + `<article>` tag (first paragraph is often chat-UI noise, strip it). `read.getsuperintel.com/p/{slug}` (beehiiv) → no `<article>` tag; JSON-LD title works; paywall marker "Subscribe to Superintel+ to read the rest" after ~17 paragraphs → use free preview only, mark `(mostly paywalled, free preview used)`.
 
-## Value Assessment Matrix
-| Rating | Criteria | Wiki Action |
-|--------|----------|-------------|
-| ★★★★★ | New AI/ML concept | New concept page |
-| ★★★★☆ | Significant update | Update existing page |
-| ★★★☆☆ | Minor add to entity | Entity page update |
-| ★★☆☆☆ | Minor mention only | Skip |
-| ★☆☆☆☆ | Not AI-related | Skip |
+Full script + domain table: `references/newsletter-take-body-fetch-pattern.md`.
 
-## Pitfalls
-- Always orient first (SCHEMA.md + index + log)
-- Japanese output mandatory for cron reports
-- Subagents need absolute paths
-- Commit early for large batches
+## Step 4 — Enrich the Wiki Page
+
+- **NEVER `write_file` a rich page (>40 lines)** — read existing content, then `patch` to insert the new section (usually before `## Related Pages`).
+- Frontmatter: bump `updated:` to today; append the raw digest path (`raw/newsletters/YYYY-MM-DD-...md`) and/or canonical URL to `sources:`.
+- Write the section with concrete quotes/numbers from the fetched body, cross-wikilink to adjacent existing sections on the same page (complementary analyses, not just external pages).
+- index.md: usually no new line for enrichment (page already indexed) — only update if the summary line becomes materially stale.
+- log.md: newest-first; insert after the `_Log of all wiki changes...` subtitle block via a Python script (write_file to /tmp + terminal), not `sed -i`. Record: triage source path, checkpoint run id, pages updated with content summary, ALL decisions of the run (take/reference/skip with reasons), and any recovery note.
+- **English-only policy**: pre-commit blocks CJK characters in non-`raw/` files. `log.md` entries must be English (yuan → "yuan", 億 → "billion").
+
+## Step 5 — Archive + Commit + Push
+
+```bash
+# archive skip+reference items (idempotent; "All items already archived" is a valid no-op)
+python3 ~/ai-topics/scripts/archive_triage.py newsletter --keep-reference
+# expected: {"newsletter": {"ok": true, "candidates": N, "new_archived": N, ...}}
+# NOTE: script may print a path under /opt/data/.hermes/home/ai-topics/... — that is a
+# symlink to the canonical repo. readlink -f first; do NOT move files.
+
+cd ~/ai-topics
+git add wiki/concepts/<page> wiki/log.md wiki/raw/newsletters/<digests> wiki/raw/archived/triage/...
+git commit -m 'wiki: newsletter-wiki-ingest YYYY-MM-DD — <summary>'
+git pull --rebase   # may fail: "cannot pull with rebase: You have unstaged changes"
+git push
+```
+
+- **Targeted `git add` only** (specific wiki files). NEVER `git add .` — sibling jobs (blog-wiki-ingest, skeleton-enrich) leave uncommitted entity-page edits in the same working tree; sweeping them corrupts their run.
+- `git pull --rebase` failing on unstaged sibling changes is EXPECTED in the parallel pipeline window. If `git push` then succeeds (no remote divergence), no action needed. Only rebase+retry if the push itself is rejected.
+- Commit message: single quotes around the message; no `&` chains; summary of pages touched.
+
+## Validation (always run)
+
+- Re-read the enriched page section you added (do not trust your own patch echo).
+- `python3 -c "import json; d=json.load(open('/opt/data/.hermes/cron/data/newsletter/triage_latest.json')); ..."` — no pipes (security scanner blocks pipe-to-interpreter).
+- `git log --oneline -1` + `git status --short -- wiki/` to confirm your files committed and sibling files remain unstaged.
+
+## Key Pitfalls
+
+- **Checkpoint self-report vs checkpoint file**: trust the file (see Step 1).
+- **`sources` listed ≠ content captured**: a page may reference the newsletter in `sources` while lacking its content — read the body sections.
+- **Same-day cross-pipeline saturation**: most newsletter takes overlap blog-ingest/sitemap content; the unique value is often the newsletter's framing/numbers, so enrichment (not creation) is the common outcome.
+- **Beephiiv/beehiiv all-403 batches** (triage stage, not here): when triage already marked items as unresolvable, do NOT re-burn URL resolution at ingest time — trust the triage decision, process only what has a resolvable body.
+- **Subagent early-commit hazard**: if you delegate enrichment to subagents, check `git log --oneline -3` after each block — a subagent may commit mid-run, capturing sibling uncommitted log entries.
+
+## References
+
+- `references/newsletter-take-body-fetch-pattern.md` — cron-safe body-fetch script + domain behavior table (latent.space, getsuperintel, substack variants)
+- `references/newsletter-triage-recovery-2026-08-20.md` — full Aug 20 recovery run (parse failure → checkpoint verify → enrich → archive → push) with commit hashes and the pull-rebase/push-despite-error outcome
+
+> **Superseded content note**: The prior version of this reference (archived in the repo's git history under `references/newsletter-wiki-ingest.md`) additionally covered checkpoint States A–D, Substack URL resolution / noise-filtering tables, the value-assessment matrix, the "org blog post = X/Twitter post" misattribution pattern, and a post-subagent verification checklist (wikilink slug correctness, table pipe corruption, index line-number shift, unclosed brackets). That material remains valid — the standalone `newsletter-wiki-ingest` skill was consolidated into this umbrella on 2026-08-21 and its newer SKILL.md replaced this reference; the earlier version's extra sections are recoverable from git history (`git log --follow -- references/newsletter-wiki-ingest.md`).
