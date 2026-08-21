@@ -148,7 +148,7 @@
 - [[entities/chris-fonnesbeck]] — Chris Fonnesbeck
 - [[entities/chris-hayduk]] — Chris Hayduk
 - [[entities/chris-olah]] — Chris Olah
-- [[entities/chris-tate]] — Chris Tate; added emulate (local API emulation for CI/no-network sandboxes) to key projects (June 25)
+- [[entities/chris-tate]] — Chris Tate; X activity Aug 2026: fx (tiny open Zig coding-agent harness), Knip (JS/TS dead-code tool), Vercel "Is Agentic" AI-agent readiness score (Aug 21)
 - [[entities/christian-catalini]] — Christian Catalini — Lightspark co-founder, MIT economist; "The Only Moat That Survives AI": measurable things get automated, open-weight ~4mo lag flat, value moves to shipping judgment (Aug 2026)
 - [[entities/claris-filemaker-agentic-coding]] — Claris FileMaker Agentic Coding Strategy
 - [[entities/claude-code]] — Claude Code; Auto Mode default for Pro/Max/Team (Aug 14) + Trajectory Labs eval (13.6% human refusal vs 89% auto-blocked; 0/720 prompt-injection attacks) (Aug 2026)
@@ -333,7 +333,7 @@
 - [[entities/gkisokay]] — gkisokay
 - [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons + enterprise knowledge graph cases + knowledge-graph-vs-vector-database guide (Aug 2026); How-to-Choose AI Agent Builder guide — no-code/low-code/framework taxonomy, weighted scoring framework (Jan 2026); RAG vs fine-tuning guide (Feb 2026); Enterprise Search Evaluation vs ChatGPT/Claude — 1.9x/1.6x correctness preference on ~280 queries, context rot framing, MCP retrospective (May 2026)
 - [[entities/glimpse]] — Glimpse
-- [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption (June 23)
+- [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption; fx.sh open-harness adoption note (Aug 19)
 - [[entities/glm-5v-turbo]] — GLM-5V-Turbo
 - [[entities/gm8xx8]] — gm8xx8
 - [[entities/goodfire-ai]] — Goodfire AI
@@ -421,7 +421,7 @@
 - [[entities/jesse-zhang]] — Jesse Zhang — Co-founder & CEO of Decagon AI; product-driven critique of FDE-heavy deployment model
 - [[entities/jeremiah-lowin]] — Jeremiah Lowin — Founder & CEO of Prefect; creator of FastMCP (70% of MCP servers); agent-skills practitioner; 2026 Prefect × Dagster Labs acquisition
 - [[entities/jianlin-su]] — Jianlin Su — Chinese AI researcher; inventor of Rotary Position Embedding (RoPE), adopted by Llama, DeepSeek, Qwen, Mistral, and virtually all major open-source LLMs; DeepSeek researcher
-- [[entities/jim-fan]] — Jim Fan
+- [[entities/jim-fan]] — Jim Fan; T-Rex tactile-reactive dexterous manipulation framework (100-hr dataset, variable-rate MoT, >30% SOTA on 12-task bimanual benchmark) (Aug 21)
 - [[entities/jim-nielsen]] — Jim Nielsen
 - [[entities/jina-ai]] — Jina AI
 - [[entities/jj-allaire]] — JJ Allaire

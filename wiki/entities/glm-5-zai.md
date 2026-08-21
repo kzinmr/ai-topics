@@ -2,7 +2,7 @@
 title: GLM-5 (Z.ai)
 type: entity
 created: 2026-04-10
-updated: 2026-06-30
+updated: 2026-08-21
 tags:
   - entity
   - model
@@ -20,6 +20,7 @@ sources:
 - raw/articles/2026-06-19_designarena_glm-52-beat-fable-5-website-design.md
 - raw/newsletters/2026-06-22-glm-5-2-is-the-step-change-for-open-agents.md
 - raw/newsletters/2026-06-29-how-i-ai-glm-5-2-review-how-gusto-built-a-new-product-line-with-claude-code.md
+- raw/articles/2026-08-19_ctatedev_fx-tiny-open-native-coding-agent.md
 ---
 
 # GLM-5 (Z.ai)
@@ -136,6 +137,11 @@ Claire from chatprd.ai/How I AI conducted a focused 45-minute autonomous bug tri
 - raw/articles/simonwillison.net--2026-jun-17-glm-52--41b7cb7d.md
 - raw/newsletters/2026-06-22-glm-5-2-is-the-step-change-for-open-agents.md
 - raw/newsletters/2026-06-29-how-i-ai-glm-5-2-review-how-gusto-built-a-new-product-line-with-claude-code.md
+- raw/articles/2026-08-19_ctatedev_fx-tiny-open-native-coding-agent.md
+
+## Ecosystem Adoption Note (Aug 19, 2026)
+
+[[entities/chris-tate|Chris Tate]] (Vercel) highlighted a fully-open agentic-coding stack built around GLM-5.2: the open-source [[concepts/harness-engineering|coding-agent harness]] **fx** ([fx.sh](https://fx.sh)) — a tiny, native CLI written in Zig (Apache-2.0, ~6.4 MiB) — with **GLM-5.2 as its default model**, free via BlackboxAI through Aug 27. A concrete example of GLM-5.2 being wired into third-party open harnesses as a capable open-weights coding model.
 
 ## Independent Review: Simon Willison (June 17, 2026)
 

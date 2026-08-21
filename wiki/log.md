@@ -2,6 +2,24 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-21] x-accounts-scan | 4 new posts ingested (drjimfan ×1, ctatedev ×3)
+
+- **Source:** `fetch_x_accounts.py` cron checkpoint `20260821T223005Z` — 84 tracked accounts, 11 scanned (budget 12), 73 skipped (budget), 4 substantive new posts, 0 errors. Cursor 27→38.
+
+**Raw articles created (4):**
+- `raw/articles/2026-08-21_drjimfan_t-rex-tactile-reactive-dexterous-manipulation.md` — T-Rex (UC Berkeley + NVIDIA tactile-reactive dexterous manipulation; 100-hr dataset, variable-rate MoT, >30% SOTA on 12-task bimanual benchmark).
+- `raw/articles/2026-08-19_ctatedev_fx-tiny-open-native-coding-agent.md` — fx (fx.sh), tiny open native Zig coding-agent harness + GLM-5.2 pairing.
+- `raw/articles/2026-08-21_ctatedev_is-agentic-vercel-ai-agent-readiness-score.md` — Is Agentic (is-agentic.com), Vercel AI-agent website readiness score.
+- `raw/articles/2026-08-19_ctatedev_knip-unused-files-deps-exports.md` — Knip JS/TS dead-code tool.
+
+**Entity updates (3):**
+- `entities/jim-fan.md` — added "T-Rex: Tactile-Reactive Dexterous Manipulation (Aug 2026)" to Key Work; bumped `updated`→2026-08-21, added source + robotics/embodied-ai links.
+- `entities/chris-tate.md` — new "X Activity Log (Aug 2026)" section (fx, Knip, Is Agentic); bumped `updated`→2026-08-21, added 3 sources.
+- `entities/glm-5-zai.md` — new "Ecosystem Adoption Note (Aug 19, 2026)" (fx.sh open-harness + GLM-5.2 default model); bumped `updated`→2026-08-21, added source.
+
+**index.md:** updated chris-tate, glm-5-zai, jim-fan entries (no page count change — all edits to existing pages).
+**Validation:** all new wikilinks resolve to existing files; all tags from SCHEMA.md taxonomy.
+
 ## [2026-08-21] skeleton enrichment | andrew-ng enriched + deeplearning-ai entity created
 
 - **andrew-ng.md**: removed `status: skeleton`, enriched to comprehensive profile. Added full Biography & Career (London 1976 birth, CMU/MIT/Berkeley education, Stanford GPU-for-DL 2008 advocacy, Coursera co-founder, Google Brain, Baidu iRnD, fast.ai, CS229), Key Ideas & Contributions, expanded Affiliations (now links [[entities/deeplearning-ai]] and [[entities/baidu]]), fixed broken concept links (context-engineering → `concepts/context-engineering/index`, evals-and-evaluation → `concepts/evaluation/ai-evals`, coding-agents → `concepts/coding-agents/coding-agents`). Sources: Wikipedia + raw skills-map + learnvector raw article.

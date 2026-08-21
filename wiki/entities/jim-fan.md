@@ -3,7 +3,7 @@ title: Jim Fan
 type: entity
 handle: "@jim-fan"
 created: 2026-04-10
-updated: 2026-05-27
+updated: 2026-08-21
 related:
   - "entities/nvidia-dgx-spark]]"
   - "concepts/embodied-ai]]"
@@ -17,7 +17,8 @@ tags:
   - robotics
   - nvidia
   - world-models
-sources: []
+sources:
+  - raw/articles/2026-08-21_drjimfan_t-rex-tactile-reactive-dexterous-manipulation.md
 ---
 
 
@@ -110,6 +111,16 @@ Open-source, open-weight Video World Model trained on 20 million hours of video 
 
 ### MineDojo (2022)
 An open framework for training generalist agents in Minecraft, combining a simulator, database, and model. Enables agents to discover new skills through exploration and learning.
+
+### T-Rex: Tactile-Reactive Dexterous Manipulation (Aug 2026)
+Announced via X on Aug 21, 2026. A UC Berkeley + NVIDIA (also Stanford, Panasonic, La Sapienza/ItalAI) framework for dexterous manipulation that makes learning-based Vision-Language-Action (VLA) models **react to high-frequency tactile signals**. Led by Dantong Niu, co-advised by [[entities/jim-fan]]'s Berkeley collaborators (Trevor Darrell), with Fan as co-author.
+
+- **Gap it addresses:** VLA manipulation models either ignore touch or use encoders that capture only *static* cues. T-Rex tackles the three obstacles — scarce diverse tactile data + standardized eval, VLA architectural limits, and static tactile encoders.
+- **T-Rex Dataset:** open-source **100-hour** tactile-synchronized teleoperation corpus. Data-efficient recipe emphasizing broad coverage of *elementary motor primitives* (207 objects × 22 primitives → 502 combinations, ~17 demos each) on a bimanual Dexmate Vega-1 with two 22-DoF Sharpa Wave hands. 30 Hz bundle of 3 RGB streams, proprioception, SE(3) wrist poses, per-fingertip tactile.
+- **Architecture:** a **variable-rate Mixture-of-Transformer (MoT)** — a low-rate action expert plus a high-rate tactile expert for reactive residual refinement — with a **temporal tactile VQ-VAE encoder** that compresses high-frequency touch into compact, drift-robust tokens.
+- **Recipe:** three-stage training (human egocentric pre-training → tactile-rich mid-training → lightweight fine-tuning), the first complete recipe for tactile dexterous manipulation.
+- **Results:** SOTA on a 12-task 58-DoF bimanual benchmark (force control, deformation, bimanual coordination), **>30% higher average success rate** than the strongest baseline.
+- Links: [project page](https://tactile-reactive-dexterous.github.io/) · [dataset (Hugging Face)](https://huggingface.co/datasets/zekaiwang/trex_dataset) · [[concepts/robotics]] · [[concepts/embodied-ai]]
 
 ### "The Second Pre-training Paradigm"
 A blog article exploring how foundation models are evolving beyond language into physical reasoning and embodied intelligence.
