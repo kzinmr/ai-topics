@@ -3,6 +3,22 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-21] blog-wiki-ingest | ChatGPT `site:` operator, Sierra release governance, Goedecke watermark quiz, Marcus "Leopold's Folly"
+
+- **Source**: blog-ingest checkpoint `20260821T100031Z` — 20 articles collected, 19 saved to `wiki/raw/articles/`, 1 unsaved (LWN Quickshell, non-AI, skipped). Full-pipeline State D (blog-ingest → triage → wiki-ingest in one session; no separate `triage_latest.json` checkpoint produced).
+
+**Takes (concept/enterprise content):**
+- `concepts/gpt/gpt-5-6.md` — New section "ChatGPT Search `site:` Operator at Scale (August 2026)": Promptwatch GEO tracking shows ChatGPT Search fanout queries containing the `site:` operator jumped from a 0.3–0.5% baseline to 16–17% on Aug 8, aligned with the GPT-5.6 rollout; ties to OpenAI's vague Aug 6 "more reliable with facts / more focused answers" note. Simon infers a `search(query, recency, domains)` shape and reports Promptwatch's Aug 18 finding that ChatGPT greatly reduced Reddit sourcing (unconfirmed via leaked system prompts). Bumped `updated` to 2026-08-21.
+- `entities/sierra.md` — New section "Release Governance — Guardrails for Agents at Scale (August 2026)": Agent Checks (agent linter, Ghostwriter suggested fixes), Simulations as production gates, merge approval workflows with a dedicated Reviewer role, and split traffic (canary) releases vs Experiments. Bumped `updated` to 2026-08-21; added source.
+
+**References (entity-page author perspective):**
+- `entities/simon-willison.md` — Two Aug 20 entries: ChatGPT search `site:` operator at scale (Promptwatch data, GEO framing) + Bun 1.4 `Bun.WebView` shot-scraper-style JSON API (first stable since Rust rewrite; 192–256MB container for full Chrome via cgroups).
+- `entities/seangoedecke-com.md` — Timeline row + source for "Readers can't identify watermarked AI text": empirical watermark-quiz (Qwen3-30B-A3B on rented H200, ~$2); after fixing a positional bias, mean 3.4/10 vs 3.333 random → readers can't detect the SynthID-Text watermark. Cross-linked [[concepts/synthid]]. Bumped `updated`.
+- `entities/gary-marcus.md` — New section "Leopold's Folly" (Aug 2026): check-kiting analogy for AI circular financing; carefully distinguishes from literal fraud. Added source; bumped `updated`.
+
+**Skips (non-AI or thin):** John Cook AI ASCII diagrams (light commentary), Jim Nielsen "sloppy UI is a security liability" (security-adjacent), Borretti "Our Servants Will Do That For Us" (philosophical, no new entity depth), OpenAI "AI Futures" strategic-futures blog launch + "Stampli cuts launch hours 68%" case study (thin/marketing, no entity page exists for AI Futures team; noted for a future page), OpenAI Apple Messages plugin (truncated to 662-byte tweet embed, not substantive), Mat Duggan Greek all-inclusive travel essay, Jeff Geerling Steam Deck LCD on RPi, matklad "Better Batteries" (language stdlib design), Old New Thing C++ template bloat, Adobe IPO anniversary, KDE Gear 26.08, LWN Quickshell (unsaved, non-AI).
+
+
 ## [2026-08-20] Dreaming wiki-ingest | Saturation recovery — 1 new concept page + 6 entity/concept enrichments
 
 - **Recovery context**: dreaming-group JSON render failed (`failed to parse JSON response from dreaming-group output`); full analysis recovered from cron output file `c4a9e8d2f671/2026-08-20_18-34-10.md` (4717 lines, 16 theme clusters). `triage_latest.json` was stale (20260817T180105Z, 7 decisions from prior consumed run) — replaced with fresh decisions below.

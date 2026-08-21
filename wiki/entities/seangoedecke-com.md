@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-08-16
+updated: 2026-08-21
 type: entity
 sources:
   - raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
@@ -22,6 +22,7 @@ sources:
   - raw/articles/seangoedecke.com--advanced-ai-sycophancy--ba81ae26.md
   - raw/articles/seangoedecke.com--local-models-will-not-win--058304e1.md
   - raw/articles/seangoedecke.com--ai-text-watermarking-is-not-a-big-deal--8795efe1.md
+  - raw/articles/seangoedecke.com--readers-cant-identify-watermarked-ai-text--d68a818a.md
 ---
 
 # Sean Goedecke
@@ -55,6 +56,7 @@ His writing philosophy is evident in his book's distribution model: **print at c
 | **2026-08-10** | Publishes "Advanced AI sycophancy" — argues the best way to be sycophantic to smart people is to disagree without making them feel stupid; disagreement as sophisticated sycophancy |
 || **2026-08-11** | Publishes "No, local models will not win" — argues most inference will always happen in AI datacenters; local models are always a generation behind, ~30x less resource-efficient, and remain a niche for latency-sensitive or privacy/control-minded users |
 || **2026-08-15** | Publishes "AI text watermarking is not a big deal" — argues text watermarking (SynthID-Text, TextSeal) doesn't degrade output quality, is already effectively redundant given detectable AI writing styles, doesn't violate privacy, and will be mandatory for all labs under the EU AI Act by 2027. → [[concepts/security-and-governance/ai-text-watermarking]] |
+|| **2026-08-20** | Publishes "Readers can't identify watermarked AI text" — empirical follow-up to his watermarking position: built a static quiz (https://sgoedecke.github.io/watermark-quiz/) where readers pick the SynthID-Text-watermarked response among three per prompt (30 responses, Qwen3-30B-A3B-Instruct-2507 on a rented H200, ~$2 GPU cost). After fixing a positional bias (watermark was option A 6/10 → a 6/10 score spike for "always pick first"), mean score settled at **3.4/10 vs. 3.333 random** — readers cannot detect the watermark. Argues a hands-on read of watermarked vs unwatermarked output should convince skeptics there is no quality difference. → [[concepts/synthid]] |
 | ~2021 | Begins blogging about software engineering and AI |
 | 2022–2023 | Establishes reputation with posts on large tech company dynamics and AI coding tools |
 | 2024 | Podcast appearances begin (Exponent, The Staff Plus Journey) |

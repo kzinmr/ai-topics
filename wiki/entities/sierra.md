@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-08-05
+updated: 2026-08-21
 type: entity
 tags:
   - company
@@ -29,6 +29,7 @@ sources:
   - raw/articles/2026-07-16_sierra_horizon-long-horizon-agents.md
   - raw/articles/2026-08-03_sierra_plaid-partnership-ai-agents.md
   - raw/articles/sierra.ai--blog-context-engine--100dce93.md
+  - raw/articles/sierra.ai--blog-release-governance-guardrails-for-agents-at-scale--af2b93a3.md
 ---
 
 # Sierra
@@ -227,6 +228,21 @@ On August 4, 2026 Sierra announced the **Context Engine**, its answer to the ent
 The announcement operationalizes the differentiation-moat thesis [[entities/bret-taylor|Bret Taylor]] articulated for Horizon — customer relationship data as a durable, defensible moat — with the Context Engine as the accumulating mechanism underneath rentable frontier intelligence.
 
 Source: [[raw/articles/sierra.ai--blog-context-engine--100dce93]]
+
+### Release Governance — Guardrails for Agents at Scale (August 2026)
+
+On August 20, 2026 Sierra published **release governance** built directly into the platform: the checks, approvals, and rollout strategies that move a change safely from a builder's Workspace to a live customer conversation — "the same discipline that carried software teams from a few developers to thousands — automated testing, code review, and staged rollouts — applied to the Agent Development Lifecycle."
+
+Three layers:
+
+- **Agent Checks** — a linter for the agent that surfaces warnings as you build, based on your journeys and the conversations they generate. Catches issues that are easy to miss but expensive to ship: a tool the prompt references but never made available, conflicting instructions, a lookup tool doing an action tool's job, a response that works on screen but falls apart on a call, or a sensitive-data lookup with insufficient authentication. Prioritized by severity; most come with a suggested fix from Ghostwriter that can be applied in place.
+- **Simulations** — teams can require [[concepts/deployment-simulation|Simulations]] to pass before moving toward production, alongside Agent Checks as automated quality gates built into the platform.
+- **Merge approval workflows** — organizations can require peer review before any change releases, just as software teams gate pull requests. A dedicated **Reviewer role** decides whose sign-off is needed (CX lead, compliance stakeholder, engineering manager, or domain expert); reviewers inspect line-by-line diffs, leave contextual comments, and request changes before a merge is approved.
+- **Split traffic releases** — incrementally roll out a release to a portion of customer traffic before expanding to everyone (canary strategy). Distinct from Experiments: Experiments determine which variation performs best; split traffic releases safely deploy the winning one. Every release is an immutable snapshot, so rollback is fast. A large airline, a travel marketplace, and a fintech company are already using split traffic.
+
+Sierra's framing: as the Agent Development Lifecycle matures, release governance "stops being overhead and becomes the thing that lets teams move quickly without holding their breath" — non-negotiable once hundreds of people build in parallel for an agent talking to customers around the clock.
+
+Source: [[raw/articles/sierra.ai--blog-release-governance-guardrails-for-agents-at-scale--af2b93a3]]
 
 ## Significance
 

@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6 (Sol / Terra / Luna)"
 created: 2026-06-27
-updated: 2026-08-14
+updated: 2026-08-21
 type: concept
 tags:
   - model
@@ -23,6 +23,7 @@ sources:
   - raw/newsletters/2026-08-07-ainews-amd-buys-taalas.md
   - raw/articles/2026-08-13_openai_gpt-5-6-sol-ultrafast.md
   - raw/articles/2026-08-13_cerebras_gpt-5-6-sol-ultrafast.md
+  - raw/articles/simonwillison.net--2026-aug-20-chatgpt-search-now-uses-the-siteoperator-at-scal--cbc2f5c3.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)
@@ -185,6 +186,14 @@ On August 6, 2026, OpenAI **collapsed 'instant' and 'thinking' into one paid-cha
 - **Agent Plugins introduced**: an open standard, built with **AWS, Cursor, GitHub, and Vercel**, for **bundling Agent Skills and MCP server configs** into a single distributable plugin — a common standard across the agent ecosystem
 
 The unification resolves the confusing Instant/Thinking split that had persisted through the July GA launch, and the Agent Plugins standard positions OpenAI at the center of the cross-vendor agent-skill distribution format (alongside the [[concepts/mcp|MCP]] ecosystem and Anthropic's Agent Skills). (Source: AINews, 2026-08-07)
+
+## ChatGPT Search `site:` Operator at Scale (August 2026)
+
+Promptwatch (GEO — Generative Engine Optimization, "the chatbot version of SEO") tracking data, highlighted by Simon Willison on August 20, shows a measurable shift in how ChatGPT Search constructs fan-out web queries: the share of ChatGPT Search fanout queries containing the `site:` operator hovered at 0.3–0.5% for weeks, briefly dipped to 0.15% Aug 3–5 (consistent with a staged rollout / pre-launch experiment), then jumped to **16–17% on August 8** — aligned with the GPT-5.6 rollout earlier in the month. This lines up with OpenAI's somewhat vague **August 6 announcement** that, for Plus and Pro users, GPT-5.6 Sol in Chat was updated "to be more reliable with facts and provide more focused answers."
+
+Simon notes the figures only reflect prompts with Promptwatch's automated tracking enabled, and that OpenAI's practice of actively obscuring system prompts hamsters direct confirmation. From poking at ChatGPT he infers the latest search tool now has a shape like `search(query, recency, domains)` rather than explicitly encouraging a `site:` operator. A follow-up Promptwatch report (August 18) found ChatGPT had also greatly reduced the likelihood of Reddit being used in those searches; Simon could not confirm a system-prompt change discouraging Reddit sourcing — the most thorough leaked system-prompt collection he knew of showed no relevant changes yet.
+
+Source: [[raw/articles/simonwillison.net--2026-aug-20-chatgpt-search-now-uses-the-siteoperator-at-scal--cbc2f5c3.md]]
 
 ## Practical Usage Patterns
 

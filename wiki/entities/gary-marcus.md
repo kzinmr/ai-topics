@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-08-20
+updated: 2026-08-21
 tags:
   - lab
   - benchmark
@@ -38,6 +38,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-the-hyping-of-anthropics-ipo--d43c684c.md
   - raw/articles/garymarcus.substack.com--p-breaking-openais-unraveling-has-begun--d2a047ba.md
   - raw/articles/garymarcus.substack.com--p-googles-biggest-mistake--72e491b0.md
+  - raw/articles/garymarcus.substack.com--p-leopolds-folly--46f3d5d4.md
 ---
 
 # Gary Marcus
@@ -392,6 +393,12 @@ Source: [[raw/articles/garymarcus.substack.com--p-breaking-openais-unraveling-ha
 On August 19, 2026, Marcus published a paid post arguing Google's AI stumble traces to a **2023 strategic decision** — not money, data, or compute. His distal-cause thesis: a specific bet made three years ago (the post's paid section elaborates) ultimately cost Alphabet its lead, and he frames it as possibly the costliest mistake Sundar Pichai ever made. This is a sharp reversal of his "Seven reasons I wouldn't count Google out" (Aug 6, above), in which he made the contrarian case for Google's resilience. The two posts bracket a month of Google DeepMind leadership turmoil (Hassabis moving to Chairman/Chief Science Officer, Jumper, Silver, Rocktäschel, Shazeer departures).
 
 Source: [[raw/articles/garymarcus.substack.com--p-googles-biggest-mistake--72e491b0.md]]
+
+### "Leopold's Folly" — AI Capital-Circularity (Aug 2026)
+
+On August 20, 2026, Marcus published "[Leopold's Folly](https://garymarcus.substack.com/p/leopolds-folly)," drawing on the classic **check-kiting** scam (Wikipedia summary referenced) to critique the generative-AI industry's circular financing. His careful framing: he is **not** saying the industry is literally check-kiting — "If Masa wants to take out loans on his OpenAI shares in order to buy more OpenAI shares, he's entitled to do that" — and not "blatant fraud the way that check-kiting is, where people know from the outset that the promises to pay will never bear out." But he "certainly see[s] circular elements that are reminiscent of check-kiting," and argues it is "not clear that all the debts that are being issued can actually be paid off. They are all extraordinarily speculative. Maybe there will be trillions of dollars in profits at the end of the rainbow, but maybe not." Extends his running AI-bubble / circular-financing critique (cf. "The Generative AI Fizzle™" and the Nvidia $250B backstop analysis above).
+
+Source: [[raw/articles/garymarcus.substack.com--p-leopolds-folly--46f3d5d4]]
 
 ### Key Works
 
