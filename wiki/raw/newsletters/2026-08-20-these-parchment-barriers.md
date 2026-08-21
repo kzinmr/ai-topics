@@ -1,0 +1,74 @@
+---
+title: "“These Parchment Barriers”"
+date: 2026-08-20
+processed_at: 2026-08-21T10:18:56.040479+00:00
+source_label: "uid=532"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-08-20
+
+**Subject:** “These Parchment Barriers”
+**Collected:** 2026-08-21T10:18:56.040487+00:00
+**Articles linked:** 15
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI9MmZseDYmbmV4dD1odHRwcyUzQSUyRiUyRnd3dy5oeXBlcmRpbWVuc2lvbmFsLmNvJTJGcCUyRnRoZXNlLXBhcmNobWVudC1iYXJyaWVycyIsInAiOjIxMjA1NzYxNywicyI6MjI0NDA0OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzg3MjU2NzA4LCJleHAiOjIxMDI4MzI3MDgsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.bJeLbjlUs8E77afVnEcKHt35WKABf0PgfshXovH6AEo?
+
+## 2. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=2244049&post_id=212057617&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTIwNTc2MTcsImlhdCI6MTc4NzI1NjcwOCwiZXhwIjoxNzg5ODQ4NzA4LCJpc3MiOiJwdWItMjI0NDA0OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.c7dagcBQBKoTgZY3gLan2kJ6NW-QUM2-abbz07Ibojw
+
+## 3. Link
+
+- **URL:** https://substack.com/@deanwball
+
+## 4. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=2244049&post_id=212057617&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTIwNTc2MTcsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzg3MjU2NzA4LCJleHAiOjE3ODk4NDg3MDgsImlzcyI6InB1Yi0yMjQ0MDQ5Iiwic3ViIjoicmVhY3Rpb24ifQ.DEFfZ7d-nqLGLOH_16YtPwrwJ8eYCzhzt7cI1RxkBr0&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=2244049&post_id=212057617&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTIwNTc2MTcsImlhdCI6MTc4NzI1NjcwOCwiZXhwIjoxNzg5ODQ4NzA4LCJpc3MiOiJwdWItMjI0NDA0OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.c7dagcBQBKoTgZY3gLan2kJ6NW-QUM2-abbz07Ibojw&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=2244049&post_id=212057617&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTIwNTc2MTcsImlhdCI6MTc4NzI1NjcwOCwiZXhwIjoxNzg5ODQ4NzA4LCJpc3MiOiJwdWItMjI0NDA0OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.c7dagcBQBKoTgZY3gLan2kJ6NW-QUM2-abbz07Ibojw
+
+## 7. Link
+
+- **URL:** https://open.substack.com/pub/hyperdimensional/p/these-parchment-barriers?utm_source=substack&utm_medium=email&utm_campaign=email-restack-comment&action=restack-comment&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTIwNTc2MTcsImlhdCI6MTc4NzI1NjcwOCwiZXhwIjoxNzg5ODQ4NzA4LCJpc3MiOiJwdWItMjI0NDA0OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.c7dagcBQBKoTgZY3gLan2kJ6NW-QUM2-abbz07Ibojw&utm_source=substack&utm_medium=email
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/hyperdimensional/p/these-parchment-barriers?utm_source=email&redirect=app-store-no-desktop&inbox=true&utm_campaign=email-read-in-app
+
+## 9. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9zdWJzY3JpYmU_dXRtX3NvdXJjZT1wb3N0JnV0bV9jYW1wYWlnbj1lbWFpbC1jaGVja291dCZuZXh0PWh0dHBzJTNBJTJGJTJGd3d3Lmh5cGVyZGltZW5zaW9uYWwuY28lMkZwJTJGdGhlc2UtcGFyY2htZW50LWJhcnJpZXJzJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzT0RjeU5UWTNNRGdzSW1WNGNDSTZNVGM0T1RnME9EY3dPQ3dpYVhOeklqb2ljSFZpTFRJeU5EUXdORGtpTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5LktCWXY0YzFPSGlWUHVYTGNHQy0ySk9faEVmdmRQYXBMazNEM203eWZTOGsiLCJwIjoyMTIwNTc2MTcsInMiOjIyNDQwNDksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4NzI1NjcwOCwiZXhwIjoyMTAyODMyNzA4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.SyPmyIuVGvWDB5ErlQER_Y1eBydjfApZd4QykeEYArQ?&utm_medium=email&utm_source=subscribe-widget&utm_content=212057617
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/7c1c3cf0-afa2-403e-908d-3454b8747688?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9zdWJzY3JpYmU_dXRtX3NvdXJjZT1wb3N0JnV0bV9jYW1wYWlnbj1lbWFpbC1jaGVja291dCZuZXh0PWh0dHBzJTNBJTJGJTJGd3d3Lmh5cGVyZGltZW5zaW9uYWwuY28lMkZwJTJGdGhlc2UtcGFyY2htZW50LWJhcnJpZXJzJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzT0RjeU5UWTNNRGdzSW1WNGNDSTZNVGM0T1RnME9EY3dPQ3dpYVhOeklqb2ljSFZpTFRJeU5EUXdORGtpTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5LktCWXY0YzFPSGlWUHVYTGNHQy0ySk9faEVmdmRQYXBMazNEM203eWZTOGsiLCJwIjoyMTIwNTc2MTcsInMiOjIyNDQwNDksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4NzI1NjcwOCwiZXhwIjoyMTAyODMyNzA4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.SyPmyIuVGvWDB5ErlQER_Y1eBydjfApZd4QykeEYArQ?&utm_medium=email&utm_source=subscribe-widget-preamble&utm_content=212057617
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/aa21722e-724f-4599-a6a5-330e7da3a344?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9zdWJzY3JpYmU_dXRtX3NvdXJjZT1wb3N0JnV0bV9jYW1wYWlnbj1lbWFpbC1jaGVja291dCZuZXh0PWh0dHBzJTNBJTJGJTJGd3d3Lmh5cGVyZGltZW5zaW9uYWwuY28lMkZwJTJGdGhlc2UtcGFyY2htZW50LWJhcnJpZXJzJnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzT0RjeU5UWTNNRGdzSW1WNGNDSTZNVGM0T1RnME9EY3dPQ3dpYVhOeklqb2ljSFZpTFRJeU5EUXdORGtpTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5LktCWXY0YzFPSGlWUHVYTGNHQy0ySk9faEVmdmRQYXBMazNEM203eWZTOGsiLCJwIjoyMTIwNTc2MTcsInMiOjIyNDQwNDksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4NzI1NjcwOCwiZXhwIjoyMTAyODMyNzA4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.SyPmyIuVGvWDB5ErlQER_Y1eBydjfApZd4QykeEYArQ?&utm_source=substack&utm_medium=email&utm_content=postcta
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9hY3Rpb24vZGlzYWJsZV9lbWFpbD90b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam95TVRJd05UYzJNVGNzSW1saGRDSTZNVGM0TnpJMU5qY3dPQ3dpWlhod0lqb3hPREU0TnpreU56QTRMQ0pwYzNNaU9pSndkV0l0TWpJME5EQTBPU0lzSW5OMVlpSTZJbVJwYzJGaWJHVmZaVzFoYVd3aWZRLnZmeUcyT19qZ0ZCalQ4dTZaOUkyNUs3YmlfdW1YdGN5M3BDb3Rub2ZCaDAiLCJwIjoyMTIwNTc2MTcsInMiOjIyNDQwNDksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4NzI1NjcwOCwiZXhwIjoyMTAyODMyNzA4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.F2joiNUTDvTNiw-vrU9ltQJKYLoVXBSr3u_Cjix8OQ0?
+
+## 15. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMTIwNTc2MTcsInMiOjIyNDQwNDksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4NzI1NjcwOCwiZXhwIjoyMTAyODMyNzA4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.GtNEWL5_3XMgvw7N-f5LiMTlSwGr80heOj2lZEeeiow?
+

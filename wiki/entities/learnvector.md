@@ -37,3 +37,4 @@ LearnVector is backed by a $100 million investment from Coursera, the MOOC platf
 - [[cohort-based-learning]] — The traditional group-paced learning model LearnVector moves away from
 - [[personal-software]] — Related to the trend of AI-powered bespoke, one-user experiences
 - [[ai-industry-economics]] — Broader context of AI investment and platform economics
+- [[deeplearning-ai]] — Andrew Ng's prior AI-engineering education platform (courses, "The Batch" newsletter) that LearnVector builds on top of

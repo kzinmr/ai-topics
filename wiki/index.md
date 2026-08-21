@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (906 pages)
+## Entities (907 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -223,6 +223,7 @@
 - [[entities/deliberatecoder]] — Steve Shogren (Deliberate Software)
 - [[entities/demis-hassabis]] — Demis Hassabis — Co-founder and CEO of Google DeepMind; Nobel Prize in Chemistry 2024 (AlphaFold)
 - [[entities/denseon-lateon]] — DenseOn & LateOn
+- [[entities/deeplearning-ai]] — DeepLearning.AI — Andrew Ng's AI-engineering education platform (AI Engineering curriculum, The Batch newsletter, open-source starter code); home of the 2026 AI Engineering Skills Map (Aug 21)
 - [[entities/derek-thompson]] — Derek Thompson
 - [[entities/descript-audio-codec]] — Descript Audio Codec (DAC)
 - [[entities/devin]] — Devin (Cognition AI)

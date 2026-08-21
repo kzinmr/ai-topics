@@ -195,6 +195,20 @@ Simon notes the figures only reflect prompts with Promptwatch's automated tracki
 
 Source: [[raw/articles/simonwillison.net--2026-aug-20-chatgpt-search-now-uses-the-siteoperator-at-scal--cbc2f5c3.md]]
 
+## GPT-5.6 Sol 50% Price Cut on OpenRouter (August 17, 2026)
+
+On August 17, 2026, OpenRouter listed **GPT-5.6 Sol at 50% off** — input **$5.00 → $2.50** and output **$15 → $7.50** per 1M tokens — via a `"discount": 0.5` on the OpenAI provider route only. The story hit HN at 632 points. Key facts:
+
+- **Channel-exclusive, not a list-price cut**: OpenAI's own API docs still show $5/$15. The discount applies only to the OpenAI-hosted provider **on OpenRouter** (Azure, Bedrock, and other OpenRouter providers unchanged). **Vercel's AI Gateway** offered the same 50% off.
+- **Funding attribution**: OpenRouter does not run sales (it takes a flat fee); OpenRouter attributed the promotion to **OpenAI** on X. HN consensus: OpenAI is subsidizing the channel-specific price.
+- **Effective trajectory**: Sol GA'd July 9 at $5/$15; the July 30 family cut hit Terra/Luna; this is the first major Sol-specific cut, landing six weeks after GA at $2.50/$7.50 via gateways.
+- **ZDR carve-out**: the discount is on the standard OpenAI route; users with zero-data-retention-only routing on OpenRouter do not get it.
+- **HN framing**: "opening salvos of an all-out token price war" — open-weight pressure (DeepSeek V4-Flash ~$0.18/1M, Kimi K3, GLM 5.2) is forcing frontier-lab price discipline; market-segmentation theories (price-sensitive gateway users vs list-price enterprise API/Bedrock/Azure customers) and A/B-testing theories (price test via third party before an official cut) both circulated.
+
+This is the first major instance of a **gateway-level frontier-model promotion** — a lab discounting its flagship through a third-party routing layer while holding its first-party list price. It interacts with the Stripe–OpenRouter acquisition (August 16) by making the gateway a distribution + payment instrument. See [[entities/openrouter]] and [[concepts/ai-economics]] / token pricing trends.
+
+Source: [[raw/articles/2026-08-17_openrouter_gpt-5-6-sol-50-percent-off]] — [OpenRouter GPT-5.6 Sol model page](https://openrouter.ai/openai/gpt-5.6-sol), [HN discussion (632 pts)](https://news.ycombinator.com/item?id=49337602).
+
 ## Practical Usage Patterns
 
 For a quick-reference guide to model selection and usage strategies, see [[concepts/gpt/gpt-5-6#practical-usage-patterns]].

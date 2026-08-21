@@ -4,9 +4,10 @@ tags:
   - reasoning
   - model
   - evaluation
-sources: []
+sources:
+  - raw/papers/2025-04-14_2504.09762_stop-anthropomorphizing-intermediate-tokens.md
 created: 2026-04-14
-updated: 2026-04-17
+updated: 2026-08-21
 type: concept
 ---
 
@@ -37,6 +38,20 @@ The Signal newsletter covered three key angles on reasoning model hallucination:
 3. **"Understanding Reasoning Models via Problem Complexity"** — Reasoning capability is problem-dependent, not universally improving with scale
 
 See: [[concepts/illusion-of-thinking]]
+
+## The Kambhampati Position: Stop Anthropomorphizing Thinking Traces (2025, trended Aug 2026)
+
+A position paper by **Subbarao Kambhampati et al. (arXiv:2504.09762**, Arizona State University AI planning group) — which returned to the HN front page in August 2026 (250 pts) as products shipped user-visible "thinking" traces — argues that calling intermediate tokens "reasoning traces" or "thinking traces" is actively harmful:
+
+- **No causal theory** links the semantics of intermediate tokens to the final solution; any human-readable meaning may be a spurious coincidence inherited from training data.
+- **Counterexample — DeepSeek R1-Zero**: when DeepSeek fine-tuned R1-Zero (which emitted mixed English/Chinese intermediate tokens) onto curated English traces, solution accuracy **worsened** with no improvement in trace validity. Plausible-looking traces are not more valid traces.
+- **Danger**: stylistically-plausible ersatz reasoning engenders **false user trust** in answers users cannot verify — "designing powerful AI systems that potentially exploit the cognitive flaws of users to convince them of the validity of incorrect answers."
+- **Call to action**: stop using human interpretation of traces as a proxy for solution trustworthiness; trust should come from **verification of the solution itself** (verifiers, third parties). Free research to optimize intermediate tokens purely for accuracy — including **non-linguistic intermediate representations** (arbitrary embedding-space vectors).
+- **Reframe — intermediate tokens as learned prompt augmentations**: for task T, an augmentation PA such that P(Sol(LLM(T+PA), T)) > P(Sol(LLM(T), T)); the LRM's job is learning the mapping T → PA, and the natural-language appearance of PA is incidental.
+
+The paper complements the existing "illusion of thinking" critique (user-facing traces are a performance, not transparent computation) by attacking the *research methodology* that treats trace readability as a signal.
+
+Source: [[raw/papers/2025-04-14_2504.09762_stop-anthropomorphizing-intermediate-tokens]] — [arXiv:2504.09762](https://arxiv.org/abs/2504.09762)
 
 ## Distinction from Neurosymbolic AI
 

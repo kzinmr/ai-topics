@@ -1,7 +1,7 @@
 ---
 title: "DeepSeek Vision — Multimodal Capabilities"
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-08-21
 type: concept
 tags:
   - deepseek
@@ -12,6 +12,7 @@ tags:
   - announcement
 sources:
   - raw/articles/2026-06-18_deepseek_vision-launch.md
+  - raw/articles/2026-08-21_deepseek-v4-flash-vision-exp-api.md
   - https://chat.deepseek.com/
   - https://news.ycombinator.com/item?id=48588409
 ---
@@ -47,6 +48,22 @@ The HN discussion highlighted several themes:
 - Interest in API availability and self-hosting options
 - Questions about the underlying model architecture
 - Practical applications for document analysis and visual understanding
+
+## V4-Flash Vision Experimental API (August 2026)
+
+On August 21, 2026, DeepSeek published an API docs guide for **`deepseek-v4-flash-vision-exp`** — an **experimental** vision model in the DeepSeek V4-Flash line (the 284B-total / 13B-active MoE; see [[concepts/deepseek-v4]]). This moves DeepSeek vision from the chat.deepseek.com consumer surface into the paid API, with these characteristics:
+
+- **Model**: `deepseek-v4-flash-vision-exp` (the `-exp` suffix marks it experimental; images in system/assistant messages return 400).
+- **Formats**: JPEG, PNG, GIF, WebP — detected from file content, not MIME type.
+- **Three input paths**: base64 data URL (48 MiB request body limit), external http(s) URL (8192-char URLs, 32 MiB images, 60s download budget), or **Files API file_id** (64 MiB per image, reusable across requests).
+- **Token billing**: images are auto-resized to ~800×800-equivalent pixel counts (small images scaled up from ~384×384), capping usage at **384 tokens per image**.
+- **Limits**: up to 600 images per request; 8192 px max dimension (4096 px when 15+ images in a request).
+- **Triple API compatibility**: the same model is served via the OpenAI-compatible Chat Completions endpoint, the **Anthropic-compatible `/messages` endpoint** (`https://api.deepseek.com/anthropic`), and the OpenAI **Responses API** — a notable multi-vendor compatibility move that lets existing OpenAI- or Anthropic-shaped client code call DeepSeek vision unchanged.
+- **Detail levels**: `low` (downscale to 512×512) vs `original`/`high`/`auto` (keep original resolution).
+
+No per-token vision pricing was listed on the guide as of retrieval; image tokens bill alongside V4-Flash text tokens.
+
+Source: [[raw/articles/2026-08-21_deepseek-v4-flash-vision-exp-api]] — [DeepSeek API docs, Vision guide](https://api-docs.deepseek.com/guides/vision/) (discovered via HN, 61 pts, Aug 21 2026).
 
 ## See Also
 

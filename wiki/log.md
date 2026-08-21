@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-21] skeleton enrichment | andrew-ng enriched + deeplearning-ai entity created
+
+- **andrew-ng.md**: removed `status: skeleton`, enriched to comprehensive profile. Added full Biography & Career (London 1976 birth, CMU/MIT/Berkeley education, Stanford GPU-for-DL 2008 advocacy, Coursera co-founder, Google Brain, Baidu iRnD, fast.ai, CS229), Key Ideas & Contributions, expanded Affiliations (now links [[entities/deeplearning-ai]] and [[entities/baidu]]), fixed broken concept links (context-engineering → `concepts/context-engineering/index`, evals-and-evaluation → `concepts/evaluation/ai-evals`, coding-agents → `concepts/coding-agents/coding-agents`). Sources: Wikipedia + raw skills-map + learnvector raw article.
+- **deeplearning-ai.md** (NEW entity): created the previously-missing entity page that andrew-ng.md linked to. Covers mission/positioning (practical-first AI engineering, "AI engineering is a universal skill"), offerings (AI Engineering specialization, The Batch newsletter, open-source starter code), ecosystem table, community links. Sources: `2026-05-22_deeplearning-ai_hermes-vs-openclaw-newsletter.md`, raw skills-map, deeplearning.ai website.
+- **learnvector.md**: added backlink to [[entities/deeplearning-ai]] (bidirectional cross-reference with the new entity).
+- **index.md**: +1 Entities (906 to 907), added [[entities/deeplearning-ai]] entry; **entities/_index.md**: added [[entities/deeplearning-ai]] entry.
+- **Validation**: all new wikilinks resolve to existing files (verified via `ls`). No new tags — all from SCHEMA.md taxonomy.
+
 ## [2026-08-21] dreaming wiki-ingest | Pattern E saturation — 3 sitemap-batch reference enrichments
 
 - **Context**: dreaming checkpoint `20260821T180059Z` had 0 collected articles (RSS 0 + newsletter 0 over 08-14..08-21) but 181 recent raw articles. Today's blog-wiki-ingest (10:01) already handled the full 10:01 blog batch (gpt-5-6 site: operator, sierra release governance, seangoedecke watermark quiz, gary-marcus Leopold's Folly). The archive-index absence probe surfaced the **06:00 sitemap-monitor batch** (Harvey ×2, Cohere, Decagon, Hex, ElevenLabs, Parallel) as never-triaged by any pipeline.
