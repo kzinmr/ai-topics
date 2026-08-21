@@ -1,7 +1,7 @@
 ---
 title: "Legal Agent Benchmark (LAB)"
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-08-21
 type: concept
 tags:
   - evaluation
@@ -45,6 +45,8 @@ Harvey baselined frontier models on a hold-out set mirroring the public LAB task
 | Gemini 3.5 Flash | 0.8% |
 
 **Key finding**: Under strict all-pass standards, frontier models complete **less than 10%** of legal tasks end-to-end. Legal work is far from saturated.
+
+**Harvey Tenet result (Aug 20, 2026)**: Harvey's open-weights legal model **Tenet** (a Kimi K3 base post-trained with [[entities/fireworks-ai|Fireworks]]) completes **~2× as many held-out LAB tasks** and **20% more on LAB contracts** than base Kimi K3 (+9 and +2 all-pass points), placing it **state-of-the-art on LAB Contracts and second on LAB overall**. See [[entities/harvey]] for the full post-training recipe (GSPO, Kimi 2.6 judge, cost-efficient reward shaping).
 
 ## Three Core Trends
 

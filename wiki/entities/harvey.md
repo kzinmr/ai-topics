@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-19
+updated: 2026-08-21
 tags:
   - security
   - company
@@ -39,6 +39,7 @@ sources:
   - raw/articles/2026-06-19_harvey_contract-review-process.md
   - raw/articles/2026-08-15_harvey_training-frontier-review-table-models-with-applied-compute.md
   - raw/articles/2026-08-19_harvey_introducing-harvey-ii.md
+  - raw/articles/2026-08-21_harvey_post-training-update-harvey-tenet.md
   - raw/articles/2026-05-12_harvey_how-to-automate-contract-analysis-with-ai.md
   - raw/articles/2026-06-24_harvey_ai-for-general-counsel.md
   - raw/articles/2026-05-30_harvey_legal-document-automation-ai.md
@@ -429,6 +430,19 @@ Harvey introduced **Harvey II**, a platform refresh built around **matter-native
 **Significance:** This extends the [[concepts/evaluation/ai-evaluation|domain-specific model]] trend from a single high-volume workload (Review Table) to a platform-wide foundation model, and moves from "run frontier general models at high cost" to "run a legal-tuned model at open-source cost continuously." It also surfaces a data-privacy guarantee (user memory is never used for training) that matters for regulated legal work, and previews a per-client custom-model moat.
 
 Source: [Introducing Harvey II — Harvey Blog](https://www.harvey.ai/blog/introducing-harvey-ii) (Aug 2026)
+
+### Harvey Tenet Post-Training Update — Open-Weights Model Details (Aug 20, 2026)
+
+Harvey published the technical detail behind **Harvey Tenet** (the open-weights, legal post-trained model introduced above), clarifying that it is a **Kimi K3 base post-trained with [[entities/fireworks-ai|Fireworks]] research** for long-horizon agentic legal work, plus harness improvements. This is the concrete recipe behind the "open-source cost" claim:
+
+- **Training data**: a combined corpus of synthetic data, publicly-available legal data, and human expert data (expert data built and scaled with [[entities/mercor|Mercor]] and others; no customer data used).
+- **Quality**: on LAB hold-out tasks, Tenet completes **~2× as many held-out tasks** and **20% more on LAB contracts** than base Kimi K3, lifting the all-pass rate by **9 and 2 percentage points** respectively. It places **state-of-the-art on LAB Contracts and second on LAB overall**.
+- **Transfer**: gains generalize to benchmarks never seen in training — Mercor APEX Agents (Corporate Law) and Crosby Redline Bench — while preserving knowledge benchmarks (Mercor APEX v1, Scale PRB, LegalBench, CUAD, MAUD), showing agentic post-training didn't erode parametric legal knowledge.
+- **Method**: group-sequence policy optimization (**GSPO**) with rubric-based LLM-as-judge reward (weighted granular rubric-criterion term + holistic issues-solved term + perfect-score bonus); ablations converged on **Kimi 2.6** as the optimal judge for quality/efficiency; double-sided clipping and high-importance-ratio masking prevent RL collapse; an intra-group length term favors concise deliverables.
+- **Cost-efficiency**: reward shaping explicitly incentivizes **efficient tool use and reasoning** — trajectories that reduce inference-time tokens at equivalent performance — so performance and cost are co-optimized (open-weights pricing + fewer tokens used).
+- **Capabilities as tools/sub-agents**: separate post-trained capability modules for **M&A Diligence** (post-training in RLM harnesses for high-scale, long-horizon coordination) and **Review Tables** (high-volume document review and structured extraction), which the core model can route to.
+
+Source: [Update on Harvey's Post-Training Effort — Harvey Blog](https://www.harvey.ai/blog/post-training-update-harvey-tenet) (Aug 2026)
 
 ## Legal Operations Management Guide (June 2026)
 

@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-08-01
+updated: 2026-08-21
 tags:
   - company
   - model
@@ -10,6 +10,9 @@ tags:
   - mcp
   - enterprise-saas
   - code-model
+  - alignment
+  - multilingual
+  - research
 aliases: ["Cohere Inc.", "Cohere AI"]
 sources:
   - https://cohere.com/
@@ -25,6 +28,7 @@ sources:
   - raw/articles/2026-07-11_cohere_hardware-aware-dynamic-speculative-decoding.md
   - raw/articles/2026-08-01_cohere_cohere-signs-eu-code-of-practice.md
   - raw/articles/2026-07-28_cohere_introducing-north-automations-ai-workflows.md
+  - raw/articles/2026-08-21_cohere_the-culture-funnel-you-cant-align-what-isnt-in-the-data.md
 ---
 
 # Cohere
@@ -259,6 +263,14 @@ North Automations is available to all North customers.
 [[concepts/agent-team-swarm]] | [[concepts/mcp]] | [[concepts/enterprise-ai]] | [[concepts/workflow-automation]]
 
 **Source:** [[raw/articles/2026-07-28_cohere_introducing-north-automations-ai-workflows]]
+
+## The Culture Funnel — You Can't Align What Isn't in the Data (August 2026)
+
+Cohere published "The Culture Funnel: You Can't Align What Isn't in the Data" (preprint on arXiv, [arXiv:2606.13808](https://arxiv.org/pdf/2606.13808)), a framework for tracing how **cultural representation narrows as data moves through the LLM training pipeline** — pretraining → SFT → alignment → reasoning. Tagging 5.6M training samples across pipeline stages with cultural signals (domains, task intent, language, geolocation, cultural characteristics per the AlKhamissi et al. 2026 taxonomy), they find **post-training data loses substantial cultural diversity**, with domain selection further shaping what survives. The conclusion inverts the prevailing alignment assumption: inference-time cultural interventions assume the model *already contains* sufficient cultural knowledge that just needs eliciting; the funnel shows the limitation often starts upstream, in the data itself. Scaling multilingual coverage alone does not guarantee culturally rich representation — it requires broader regional data coverage and intentional curation of culturally representative content. Companion dataset: [CohereLabs/CultureMarkers](https://huggingface.co/datasets/CohereLabs/CultureMarkers) on Hugging Face. This extends the 2025 principle that "every evaluation and data choice should be examined for culturally contingent considerations," establishing culture as a primary axis for data documentation and curation.
+
+[[concepts/ai-alignment]] | [[concepts/security-and-governance/ai-safety]] | [[concepts/llm-training-fundamentals]]
+
+**Source:** [[raw/articles/2026-08-21_cohere_the-culture-funnel-you-cant-align-what-isnt-in-the-data]]
 
 ## Related
 

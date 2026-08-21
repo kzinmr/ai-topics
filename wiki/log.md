@@ -2,6 +2,18 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-21] dreaming wiki-ingest | Pattern E saturation — 3 sitemap-batch reference enrichments
+
+- **Context**: dreaming checkpoint `20260821T180059Z` had 0 collected articles (RSS 0 + newsletter 0 over 08-14..08-21) but 181 recent raw articles. Today's blog-wiki-ingest (10:01) already handled the full 10:01 blog batch (gpt-5-6 site: operator, sierra release governance, seangoedecke watermark quiz, gary-marcus Leopold's Folly). The archive-index absence probe surfaced the **06:00 sitemap-monitor batch** (Harvey ×2, Cohere, Decagon, Hex, ElevenLabs, Parallel) as never-triaged by any pipeline.
+- **Takes**: 0. **Reference enrichments: 3** (all from the 08-21 06:00 sitemap batch, verified against existing pages):
+  - `entities/harvey.md` — new subsection "Harvey Tenet Post-Training Update" (Kimi K3 base + Fireworks; GSPO + Kimi 2.6 judge; ~2× held-out LAB tasks, SOTA LAB Contracts / 2nd on LAB; cost-efficient reward shaping; M&A + Review-Table capability modules). Frontmatter `updated` → 2026-08-21, source added.
+  - `entities/cohere.md` — new section "The Culture Funnel" (post-training cultural-diversity collapse across 5.6M samples; CultureMarkers dataset; inverts inference-time cultural-alignment assumption). Tags + alignment/multilingual/research, `updated` → 2026-08-21, source added.
+  - `entities/decagon.md` — new section "Scaling Real-Time TTS Inference — M* Streaming Architecture" (3-stage decomposition, packed prefill, paged KV cache, CUDA Graphs; 27–30 ms TTFA ~3× interleaved, ~10× throughput). Tag + inference, `updated` → 2026-08-21, source added.
+- **Cross-reference**: `concepts/ai-benchmarks/legal-agent-benchmark.md` — added Harvey Tenet SOTA result to the frontier-model all-pass table; `updated` → 2026-08-21.
+- **Skips (sitemap batch)**: `2026-08-21_harvey_can-ai-draft-discovery-requests` (product marketing, no new technical depth beyond existing harvey.md); `2026-08-21_elevenlabs_neural-text-to-speech-tts` + `2026-08-21_parallel-web-systems_parallel-search-fast` (scrape failed — brotli decoder error, 14-line files, no body); `2026-08-21_hex-technologies_next-bi-tool` (BI-tool strategy/marketing, no benchmark substance).
+- **Already covered (x-bookmarks + state-craft batch)**: `2026-08-17_openrouter_gpt-5-6-sol-50-percent-off` (already in `concepts/gpt/gpt-5-6.md` L198–210); `2026-08-17_responsiblestatecraft_israel-fake-think-tank-chatbots` (already in `concepts/state-sponsored-chatbot-influence.md`); `2026-08-21_deepseek-v4-flash-vision-exp-api` (already in `concepts/deepseek-vision.md` "V4-Flash Vision Experimental API" section, updated 2026-08-21 by an earlier pass this cycle).
+
+
 ## [2026-08-21] watchdog | Index registration + pipeline alert triage
 
 ### Changes

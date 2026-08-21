@@ -2,17 +2,19 @@
 title: "Decagon"
 type: entity
 created: 2026-05-08
-updated: 2026-08-19
+updated: 2026-08-21
 tags:
   - company
   - ai-agents
   - speech
+  - inference
 aliases: ["Decagon AI"]
 sources:
   - https://decagon.ai/
   - https://decagon.ai/about
   - raw/articles/2026-08-13_decagon_browser-actions.md
   - raw/articles/2026-08-19_decagon_teaching-flow-matching-tts-with-rl.md
+  - raw/articles/2026-08-21_decagon_scaling-real-time-tts-inference.md
 ---
 
 # Decagon
@@ -110,6 +112,26 @@ Decagon published the internals of its work on **post-training modern flow-match
 **Significance:** This is one of the first concrete recipes for bringing DPO/GRPO-style preference and group RL to *flow*-based (diffusion-like) generative models where the likelihood is not directly available — a relevant technique for any voice/[[entities/vibevoice|TTS]] stack built on flow matching rather than autoregressive token sampling. It also echoes Decagon's broader post-training focus on cutting tail failures in production voice rather than chasing average-case quality.
 
 Source: [Teaching flow-matching text-to-speech models with RL — Decagon Blog](https://decagon.ai/blog/teaching-flow-matching-tts-with-rl) (Aug 2026)
+
+## Scaling Real-Time TTS Inference — M* Streaming Architecture (Aug 2026)
+
+Decagon published "Scaling real-time text-to-speech inference," detailing its **streaming TTS serving architecture built on the M* inference framework** (modular scheduling, batching, caching, and streaming primitives). The headline result: first audio in **under 30 ms — ~3× faster than the earlier interleaved baseline (~95 ms)** — at **~10× the audio throughput** of the interleaved approach.
+
+**The problem**: streaming TTS isn't a single transformer forward pass. Each request processes variable-length text + reference audio, generates latent audio patches through **autoregressive + flow-matching** stages (diffusion-autoregressive architecture), and decodes them into waveform chunks. The naive implementation is one sequential Python loop (prompt → latent patch → decode → stream → repeat), which leaves parallelism on the table.
+
+**Stage decomposition**: split the loop into three independently-scheduled stages (AR generation, flow-matching fill, causal waveform decoding) so the scheduler can overlap requests at different generation positions — one request on its 4th patch while another is on its 1st. A single GPU batch then contains whichever requests are ready for each stage (e.g. at concurrency 8, the AR step averaged 3.81 requests/batch vs 7.39 for decoding).
+
+**Key techniques**:
+- **Packed prefill** — concatenate only useful positions across requests (sequence metadata + endpoint tracking keeps them separate) so the GPU sees one batch without padded positions.
+- **Paged KV caching** — replace fixed batch-one buffers with M*'s reusable GPU cache pages, adapting the model's attention path and cache layout per request lifecycle.
+- **Batched decoding with per-request history** — decode ready latents together without mixing context across requests.
+- **CUDA Graphs** — capture common generation/decode/prefill shapes for replay; prefill graphing drove the biggest TTFA gain since every request passes through it first. Unmatched shapes fall back to the eager packed path.
+
+**Findings**: interleaving improves *fairness*, not capacity (throughput stays flat as concurrency rises). The native M* implementation outperforms vLLM-Omni on request/audio throughput scaling and TTFA. Full-path batching reaches ~10× the interleaved baseline at 8 concurrent requests. Production tradeoffs remain: graph-shape warmup vs hot performance, and memory vs padding.
+
+[[concepts/inference]] | [[entities/vibevoice]] | [[concepts/ai-agents]]
+
+Source: [Scaling real-time text-to-speech inference — Decagon Blog](https://decagon.ai/blog/scaling-real-time-tts-inference) (Aug 2026)
 
 ## Related
 
