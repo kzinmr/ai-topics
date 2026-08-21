@@ -2,6 +2,18 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-21] graph-analysis | Weekly Wiki Graph Analysis (auto-cron)
+
+- Ran `wiki_graph.py --format json`, `wiki_graph_analysis_weekly.py`, `_weekly_graph_report.py` (rich report, last), and `deep_link_audit.py` for accurate counts.
+- Report saved to `queries/wiki-graph-analysis-weekly-2026-08-21.md` (auto-clean removed the 2026-08-14 report; index.md entry updated to match).
+- Headline numbers: 2,992 L2 pages; 477 true orphans (474 content-rich, deep audit 459 ≥20-line); 3,508 broken links (211 auto-fixable cross-namespace/bare); 16 duplicate candidate groups; 1,424 stale >90d pages; 1,083 pages with non-canonical tags.
+- Verified duplicate triage: martin-fowler → martinfowler (redirect stub, keep), samuelcolvin → samuel-colvin (redirect, keep), dspyrlm → dspy-rlm (redirect stub, keep). True merge candidates: eugene-yan/eugeneyan, lilian-weng/lilianweng, samuel-colvin/samuelcolvin, giles-thomas/gilesthomas, alpha-proof-nexus/alphaproof-nexus, deer-flow/deerflow, open-claw-ecosystem/openclaw-ecosystem. Cross-type splits (cline, qwen, agent-harnesses, evals-skills, llm-integration-patterns) intentional — keep.
+- Key broken-link clusters: `[[entities/dspy]]` (should be `concepts/dspy`, 37 refs), `[[entities/dspy]]`-style namespace errors, missing nested pages (rlhf/grpo live in concepts/post-training/, ai-safety in concepts/security-and-governance/, agent-harness in concepts/harness-engineering/, coding-agents in concepts/coding-agents/), missing `concepts/context-engineering` hub (dir exists, no flat page), missing entity stubs (cursor, sglang, reflexive-ai).
+- No wiki pages modified this run (analysis only). index.md + log.md updated.
+
+---
+
+
 
 ## [2026-08-21] blog-wiki-ingest | ChatGPT `site:` operator, Sierra release governance, Goedecke watermark quiz, Marcus "Leopold's Folly"
 

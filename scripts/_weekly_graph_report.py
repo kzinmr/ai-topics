@@ -216,7 +216,7 @@ title: Weekly Wiki Graph Analysis
 created: {report_date}
 updated: {report_date}
 type: query
-tags: [wiki-maintenance, graph-analysis]
+tags: []
 sources: []
 ---
 

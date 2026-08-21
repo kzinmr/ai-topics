@@ -59,15 +59,16 @@ Content-rich orphans (>100 lines with 0 inbound links) should be prioritized for
 ## 6. Duplicate Detection Caveats
 
 The duplicate detection normalizes slugs by removing hyphens and lowering case. This catches:
-- True duplicates (`deliberate-coder` vs `deliberatecoder`)
+- True duplicates (e.g. `eugene-yan` vs `eugeneyan`, `lilian-weng` vs `lilianweng`)
 - Cross-type duplicates (`entities/cline` vs `concepts/cline`)
 - Legitimate pairs that just happen to normalize the same (`entities/_index` vs `concepts/_index`)
+- **False positives from slug collisions between DIFFERENT people** (`deliberate-coder` = Ben Ilegbodu vs `deliberatecoder` = Steve Shogren — see §11 ground truth)
 
 Always verify before merging — the `_index` pair is intentional. Triage by reading frontmatter titles + line counts: hyphenated/unhyphenated same-person pairs (e.g. `eugene-yan`/`eugeneyan`, `lilian-weng`/`lilianweng`) are almost always true duplicates; `entities/X` vs `concepts/X` is usually an intentional product-vs-concept split but check if the entity page is a tiny stub.
 
 ## 7. Deep Audit Script (accurate counts)
 
-`scripts/deep_link_audit.py` in this skill walks ALL page depths and resolves links by exact / dir-index / `_index` / basename-across-namespaces (plus raw+transcripts). Use it to sanity-check weekly report numbers:
+`config/hermes/skills/_overrides/wiki-graph-health/scripts/deep_link_audit.py` (NOTE: lives in the repo's skill-override dir, NOT under `~/.hermes/skills/` — locate with `find /opt/data/ai-topics/config/hermes/skills -name deep_link_audit.py`) walks ALL page depths and resolves links by exact / dir-index / `_index` / basename-across-namespaces (plus raw+transcripts). Use it to sanity-check weekly report numbers:
 - 2026-07-31 comparison: weekly script reported 45 orphans / 3,261 broken links (after fixes); deep audit found **464 true orphans** (302 concepts, 146 entities) and **~2,048 true broken links** (bare links like `[[gaia-benchmark]]` resolving to nested `concepts/ai-benchmarks/gaia-benchmark` account for most of the difference).
 - Lesson: **the weekly report undercounts orphans (top-level scan only) and overcounts broken links (shallow resolution)**. Always run the deep audit before acting on counts.
 
@@ -76,3 +77,25 @@ Always verify before merging — the `_index` pair is intentional. Triage by rea
 - **`python3 | python3` is blocked in cron** (TIRITH: pipe_to_interpreter). To inspect `wiki_graph.py --format json`, write output to a file first (`> /tmp/wiki_graph_person.json`), then parse the file in a separate command. Same for any script whose stdout you want to pipe into another interpreter.
 - **`execute_code` is blocked in cron mode** — write analysis scripts with `write_file` to `/tmp/` and run via `terminal` (`python3 /tmp/script.py`).
 - **Shell heredocs and multi-line `printf` fail** in the Docker cron environment; append to `wiki/log.md` with a small Python script (`open(path, 'a').write(...)`) instead.
+
+## 9. Report Tag Taxonomy Failure (pre-commit block) — discovered 2026-08-07, generator fix verified 2026-08-21
+
+**Problem**: `wiki_graph_analysis_weekly.py` writes the saved report frontmatter with `tags: [wiki-maintenance, graph-analysis]` — neither tag is in `SCHEMA.md`'s taxonomy (894 canonical tags), so the pre-commit tag validator blocks the commit with `🚨 TAG TAXONOMY VIOLATIONS — COMMIT BLOCKED`.
+
+**Fix applied 2026-08-21**: Both `scripts/wiki_graph_analysis_weekly.py` (line 382) and `scripts/_weekly_graph_report.py` (line 219) now write `tags: []` directly — the generator is fixed at the source. The 2026-08-21 run hit this failure (stale `tags: [wiki-maintenance, graph-analysis]` still in the deployed generators) and was resolved by patching the report frontmatter + both generators in the same commit. Do NOT invent tags like `wiki-health` — they aren't canonical either; verify against `grep -oE '`[a-z][a-z0-9-]+`' wiki/SCHEMA.md | sort -u` first.
+
+## 10. Report Run-Order & Auto-Clean — discovered 2026-08-07
+
+**Two scripts write the same report path** `wiki/queries/wiki-graph-analysis-weekly-<date>.md`:
+- `scripts/wiki_graph_analysis_weekly.py` — full terminal report, but its saved markdown is a **degraded summary** (no sections 1–8).
+- `scripts/_weekly_graph_report.py` — writes the **rich report** (sections 1–8, tables) AND **auto-cleans older `wiki-graph-analysis-weekly-*.md` files** (keeps only the current one).
+
+**Run `_weekly_graph_report.py` LAST** so the rich report survives. Cron note: since the auto-clean deletes the previous week's report file, `wiki/index.md` still lists the old report entry — after running, add the new report entry to index.md and remove/replace the old one in the same commit (or `index.md` gains a stale entry pointing at a deleted file).
+
+## 11. Duplicate-Triage Ground Truth (2026-08-07)
+
+Verified cases to avoid re-triageing:
+- **`entities/deliberate-coder` vs `entities/deliberatecoder` = FALSE POSITIVE** — different people: deliberate-coder is Ben Ilegbodu (benmvp), deliberatecoder is Steve Shogren (Deliberate Software). Slug-normalization collision only.
+- **`entities/koylan-ai` vs `entities/muratcan-koylan` = TRUE duplicate, already marked** — koylan-ai frontmatter body says "Redirect/alias: This page is a duplicate of [[entities/muratcan-koylan]]". Person-similarity graph flags it (score 11.5) but no merge needed.
+- **`deedydas` vs `howdymary` = FALSE POSITIVE** — Deedy Das vs "mary"; high similarity (13.9) comes from shared concept tags (autoresearch, harness-engineering), not same person.
+- Cross-type entity/concept splits (`entities/cline`/`concepts/cline`, `entities/qwen`/`concepts/qwen`) are intentional product-vs-concept splits — keep, but check whether the entity side is a tiny stub that should redirect.

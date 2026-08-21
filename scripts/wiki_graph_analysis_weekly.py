@@ -379,7 +379,7 @@ def main():
         f.write(f"created: {datetime.now().strftime('%Y-%m-%d')}\n")
         f.write(f"updated: {datetime.now().strftime('%Y-%m-%d')}\n")
         f.write(f"type: query\n")
-        f.write(f"tags: [wiki-maintenance, graph-analysis]\n")
+        f.write(f"tags: []\n")
         f.write(f"sources: []\n")
         f.write(f"---\n\n")
         f.write("# Weekly Wiki Graph Analysis\n\n")
