@@ -911,7 +911,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2001 pages)
+## Concepts (2002 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2755,6 +2755,7 @@
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — Stanford CS336 — Language Modeling from Scratch
 - [[concepts/starchild-1]] — Starchild-1
 - [[concepts/state-of-open-source-ai-2026]] — Mozilla report: open weights closed the capability gap while inference cost collapsed 50× (July 2026)
+- [[concepts/state-sponsored-chatbot-influence]] — State-Sponsored AI Chatbot Influence — fake think-tank "data reports" engineered to steer LLM chatbot answers (Hanover Institute / Piro case, Aug 2026)
 - [[concepts/statistical-process-control]] — Statistical Process Control
 - [[concepts/steven-pinker]] — Steven Pinker
 - [[concepts/structured-outputs]] — Structured Outputs — Reliable LLM Output via Schema Validation

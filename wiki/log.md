@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-21] watchdog | Index registration + pipeline alert triage
+
+### Changes
+- Registered unindexed page `concepts/state-sponsored-chatbot-influence` in `index.md` (created 2026-08-21 by pipeline, missed index registration); bumped Concepts header 2001 → 2002
+- Verified live: index.md clean (validate_index.py exit 0), 0 ghost entries, 0 index corruption, 0 index duplicates, log.md header intact
+- Pipeline alerts triaged: `x_accounts stale(26h)` = transient (2-day schedule, next run 2026-08-21 22:30 UTC); `blog ingest_ok_but_triage_failed` = transient LLM 503 "Local LLM server is busy" on blog-triage (10:28 UTC) cascading to blog-wiki-ingest; both scheduled to re-run 2026-08-22 10:xx UTC
+
+### Escalated (not auto-fixable today)
+- 26 pages missing `created:` frontmatter (10+ file threshold — human-directed batch with git-log date sourcing)
+- 6 known entity duplicate pairs remain unmerged: deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, giles-thomas/gilesthomas, lilian-weng/lilianweng, martin-fowler/martinfowler, samuel-colvin/samuelcolvin
+- 3,508 broken wikilinks / 477 orphan pages / 1,083 tag violations / 309 oversized pages — weekly graph analysis follow-up (report: wiki/queries/wiki-graph-analysis-weekly-2026-08-21.md)
+
+---
+
 ## [2026-08-21] graph-analysis | Weekly Wiki Graph Analysis (auto-cron)
 
 - Ran `wiki_graph.py --format json`, `wiki_graph_analysis_weekly.py`, `_weekly_graph_report.py` (rich report, last), and `deep_link_audit.py` for accurate counts.
