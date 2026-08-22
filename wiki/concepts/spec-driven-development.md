@@ -80,7 +80,7 @@ This hints at a broader trajectory: as agents improve, the durable artefact may 
 
 - **[[concepts/ai-assisted-development]]** — Spec-driven development is one of the core practice patterns of AI-assisted development (Q4 of the ten-question playbook).
 - **[[concepts/agentic-engineering]]** — Spec-first workflows are a central agentic-engineering pattern; the spec is the primary human control surface for agent delegation.
-- **[[entities/dspy]]** — DSPy's declarative signature/module approach is a programmatic cousin of spec-first development (specifying inputs/outputs/constraints instead of prompt text).
+- **[[concepts/dspy]]** — DSPy's declarative signature/module approach is a programmatic cousin of spec-first development (specifying inputs/outputs/constraints instead of prompt text).
 
 ## Sources
 

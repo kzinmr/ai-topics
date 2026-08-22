@@ -462,7 +462,7 @@ AI and LLM concept pages organized by topic.
 
 ## Dspy
 
-- [[entities/dspy]] — DSPy is a framework developed by Omar Khattab's Stanford NLP group for declaratively programming LLMs as "optimizable modules" rather than through "prompts." Through the abstractions of Signature/Module/Teleprompter, it transforms manual prompt engineering into automatic compile-time optimization.
+- [[concepts/dspy]] — DSPy is a framework developed by Omar Khattab's Stanford NLP group for declaratively programming LLMs as "optimizable modules" rather than through "prompts." Through the abstractions of Signature/Module/Teleprompter, it transforms manual prompt engineering into automatic compile-time optimization.
 
 ## Ecs-Fargate-Scaling
 

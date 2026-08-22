@@ -91,7 +91,7 @@ Used in production by Shopify, Databricks, Dropbox, Pydantic, Nous Research, Ope
 - [[entities/hermes-agent]] — The agent framework GEPA optimizes skills for
 - [[entities/nous-research]] — Creator of Hermes Agent and the self-evolution companion repo
 - [[concepts/agent-skills]] — The skill files GEPA optimizes: Markdown playbooks with YAML frontmatter
-- [[entities/dspy]] — DSPy framework with built-in GEPA optimizer (`dspy.GEPA`)
+- [[concepts/dspy]] — DSPy framework with built-in GEPA optimizer (`dspy.GEPA`)
 - [[entities/omar-khattab]] — Lead author and principal investigator
 
 ## Merged Content (from deleted duplicate)

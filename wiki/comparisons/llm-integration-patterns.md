@@ -266,7 +266,7 @@ The common thread across DSPy, RLMs, and GEPA is that they do **not depend on sp
 
 ## See Also
 
-- [[entities/dspy]] — Declarative LM programming
+- [[concepts/dspy]] — Declarative LM programming
 - [[concepts/rlms]] — Recursive language models
 - [[concepts/gepa]] — Genetic prompt optimization
 - — Agent workflow patterns

@@ -142,7 +142,7 @@ LlamaIndex extends beyond passive retrieval into autonomous reasoning and action
 - [[llamaparse]] — Enterprise document parsing
 - [[llamacloud]] — Managed deployment platform
 - [[concepts/mcp]] — Model Context Protocol (natively supported in LlamaIndex)
-- [[entities/dspy]] — Declarative LM programming framework (alternative paradigm)
+- [[concepts/dspy]] — Declarative LM programming framework (alternative paradigm)
 
 ## Sources
 - [LlamaIndex Official Site](https://www.llamaindex.ai/)

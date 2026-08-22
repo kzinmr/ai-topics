@@ -164,7 +164,7 @@ Section IX:  Multimodal Models (VLM, VQ-VAE)
 | Vector Databases | [[concepts/vector-search]], [[concepts/rag-systems]] | Covered |
 | RAG | [[concepts/rag-systems]], [[concepts/retrieval-augmented-generation]], [[concepts/agentic-rag]] | Covered |
 | Agents / Tool Use | Multiple pages | Most comprehensive section |
-| DSPy | [[entities/dspy]], [[concepts/dspy-architecture]] | Covered |
+| DSPy | [[concepts/dspy]], [[concepts/dspy-architecture]] | Covered |
 | Synthetic Data | [[concepts/synthetic-data]] | Covered |
 | Representation Engineering | — | Missing |
 | Mechanistic Interpretability | [[concepts/mechanistic-interpretability]] | Covered |

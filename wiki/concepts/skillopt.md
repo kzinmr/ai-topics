@@ -110,4 +110,4 @@ SkillOpt's results are generally stronger in head-to-head comparisons where both
 - [[concepts/gepa]] — Genetic-Pareto Prompt Evolution: the evolutionary alternative to SkillOpt, used in [[entities/hermes-agent]]'s self-evolution pipeline
 - [[entities/hermes-agent]] — The agent framework where GEPA (and potentially SkillOpt) optimize skills
 - [[concepts/agent-skills]] — The skill files being optimized: Markdown playbooks with YAML frontmatter
-- [[entities/dspy]] — DSPy framework with built-in GEPA optimizer; could potentially integrate SkillOpt
+- [[concepts/dspy]] — DSPy framework with built-in GEPA optimizer; could potentially integrate SkillOpt

@@ -72,7 +72,7 @@ class Debate(dspy.Module):
 
 ## See Also
 
-- [[entities/dspy]] — Main DSPy concept page
+- [[concepts/dspy]] — Main DSPy concept page
 - [[concepts/dspy-architecture]] — Signatures, Modules, Teleprompters overview
 - [[concepts/dspy-optimization]] — How optimizers tune module behavior
-- [[entities/dspy]] — Main DSPy concept page
+- [[concepts/dspy]] — Main DSPy concept page

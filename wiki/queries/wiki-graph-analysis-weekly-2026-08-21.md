@@ -100,9 +100,9 @@ sources: []
 - `entities/cohere`: [[tools/wiz]] → [[entities/wiz]]
 - `entities/deepmind`: [[concepts/gemma-4]] → [[entities/gemma-4]]
 - `entities/denseon-lateon`: [[concepts/embeddings]] → [[entities/embeddings]]
-- `entities/drew-breunig--core-ideas`: [[entities/dspy]] → [[concepts/dspy]]
-- `entities/drew-breunig`: [[entities/dspy]] → [[concepts/dspy]]
-- `entities/dsprrr`: [[entities/dspy]] → [[concepts/dspy]]
+- `entities/drew-breunig--core-ideas`: [[concepts/dspy]] → [[concepts/dspy]]
+- `entities/drew-breunig`: [[concepts/dspy]] → [[concepts/dspy]]
+- `entities/dsprrr`: [[concepts/dspy]] → [[concepts/dspy]]
 - ... and 201 more
 
 ## 3. Duplicate / Similar Pages

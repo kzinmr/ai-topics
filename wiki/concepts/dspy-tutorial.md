@@ -176,7 +176,7 @@ Return the count as an integer.
 
 ## See Also
 
-- [[entities/dspy]] — DSPy framework overview, architecture, and adoption
+- [[concepts/dspy]] — DSPy framework overview, architecture, and adoption
 - [[concepts/dspy-optimization]] — Deep dive into teleprompters, assertions, and fine-tuning synergy
 - [[concepts/dspy-architecture]] — Signatures, Modules, Teleprompters in depth
 - [[entities/omar-khattab]] — Creator of DSPy

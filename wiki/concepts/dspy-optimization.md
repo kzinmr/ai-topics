@@ -69,7 +69,7 @@ Paper: *"Fine-Tuning and Prompt Optimization: Two Great Steps that Work Better T
 
 ## See Also
 
-- [[entities/dspy]] — Main DSPy concept page
+- [[concepts/dspy]] — Main DSPy concept page
 - [[concepts/dspy-architecture]] — How optimizers interact with Signatures and Modules
 - [[concepts/gepa]] — Genetic prompt evolution (advanced optimizer approach)
-- [[entities/dspy]] — Main DSPy concept page
+- [[concepts/dspy]] — Main DSPy concept page

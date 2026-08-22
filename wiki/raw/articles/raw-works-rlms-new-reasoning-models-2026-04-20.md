@@ -162,7 +162,7 @@ Root LM
 
 - [[recursive-language-model]] — RLM
 - [[raw/articles/raw-works-rlms-sota-on-longcot-2026-04-19.md]] — Long Chain-of-Thought benchmark
-- [[entities/dspy]] — DSPy framework
+- [[concepts/dspy]] — DSPy framework
 - [[reasoning-models]] — Reasoning models product category
 - [[concepts/chain-of-thought]] — CoT prompting
 - [[concepts/harness-engineering/system-architecture/advanced-tool-use.md]] — Tool use in LLMs

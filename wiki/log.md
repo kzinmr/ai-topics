@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-22] watchdog | Auto-fix: dspy namespace error + pipeline state verified
+
+- **dspy namespace fix**: 43 `[[entities/dspy]]` → `[[concepts/dspy]]` across 33 files. `entities/dspy.md` did not exist; `concepts/dspy.md` is the canonical rich page (16KB). Batch regex rename (Pattern A namespace error, per wiki-graph-health skill). Verified via git diff: 42 ins / 42 del, symmetric, 0 remaining bad refs.
+- **Verified clean (no action)**: index.md 0 corruption (0 pipe-prefix / 0 line-number / 0 triple-bracket / 0 space-prefix); 0 top-level pages missing frontmatter; log.md clean (1 header, 455 entries, 0 orphan ### timestamps); wiki_health.py --json → 0 page_name_policy violations, 23 "orphans" all `_index`/archive (by-design false positives).
+- **NEEDS-HUMAN**: (a) `concepts/context-engineering` hub missing — 190 refs, dir exists but no flat hub page (skill classifies as page-creation → manual); (b) pipeline-watchdog alerts: blog chain `ingest_ok_but_triage_failed` (last triage Aug 17), trending_topics & active_crawl in error_status — cron-level, not wiki-corruption.
+
+---
+
 ## [2026-08-21] x-accounts-scan | 4 new posts ingested (drjimfan ×1, ctatedev ×3)
 
 - **Source:** `fetch_x_accounts.py` cron checkpoint `20260821T223005Z` — 84 tracked accounts, 11 scanned (budget 12), 73 skipped (budget), 4 substantive new posts, 0 errors. Cursor 27→38.
@@ -60,7 +68,7 @@ _Log of all wiki changes. Newest entries at top._
 - Report saved to `queries/wiki-graph-analysis-weekly-2026-08-21.md` (auto-clean removed the 2026-08-14 report; index.md entry updated to match).
 - Headline numbers: 2,992 L2 pages; 477 true orphans (474 content-rich, deep audit 459 ≥20-line); 3,508 broken links (211 auto-fixable cross-namespace/bare); 16 duplicate candidate groups; 1,424 stale >90d pages; 1,083 pages with non-canonical tags.
 - Verified duplicate triage: martin-fowler → martinfowler (redirect stub, keep), samuelcolvin → samuel-colvin (redirect, keep), dspyrlm → dspy-rlm (redirect stub, keep). True merge candidates: eugene-yan/eugeneyan, lilian-weng/lilianweng, samuel-colvin/samuelcolvin, giles-thomas/gilesthomas, alpha-proof-nexus/alphaproof-nexus, deer-flow/deerflow, open-claw-ecosystem/openclaw-ecosystem. Cross-type splits (cline, qwen, agent-harnesses, evals-skills, llm-integration-patterns) intentional — keep.
-- Key broken-link clusters: `[[entities/dspy]]` (should be `concepts/dspy`, 37 refs), `[[entities/dspy]]`-style namespace errors, missing nested pages (rlhf/grpo live in concepts/post-training/, ai-safety in concepts/security-and-governance/, agent-harness in concepts/harness-engineering/, coding-agents in concepts/coding-agents/), missing `concepts/context-engineering` hub (dir exists, no flat page), missing entity stubs (cursor, sglang, reflexive-ai).
+- Key broken-link clusters: `[[concepts/dspy]]` (should be `concepts/dspy`, 37 refs), `[[concepts/dspy]]`-style namespace errors, missing nested pages (rlhf/grpo live in concepts/post-training/, ai-safety in concepts/security-and-governance/, agent-harness in concepts/harness-engineering/, coding-agents in concepts/coding-agents/), missing `concepts/context-engineering` hub (dir exists, no flat page), missing entity stubs (cursor, sglang, reflexive-ai).
 - No wiki pages modified this run (analysis only). index.md + log.md updated.
 
 ---
@@ -2937,7 +2945,7 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 ### Remaining Issues (human review)
 - 6 entity duplicate pairs detected: deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, giles-thomas/gilesthomas, lilian-weng/lilianweng, martin-fowler/martinfowler, samuel-colvin/samuelcolvin
 - 3 orphan files (not indexed): entities/tim-sherratt (322B stub), concepts/gpt/_archive/* (2 archive files, intentionally excluded)
-- Namespace errors: [[entities/dspy]] should be [[concepts/dspy]] (35x, 30 files), [[entities/coding-agents]] should be [[concepts/coding-agents]] (18x), [[entities/reflexive-ai]] should be [[concepts/reflexive-ai]] (9 files)
+- Namespace errors: [[concepts/dspy]] should be [[concepts/dspy]] (35x, 30 files), [[entities/coding-agents]] should be [[concepts/coding-agents]] (18x), [[entities/reflexive-ai]] should be [[concepts/reflexive-ai]] (9 files)
 - 11 genuinely missing bare wikilinks: agent-evaluation, grpo, gaia-benchmark, reinforcement-learning, hal-leaderboard, agentdojo, re-bench, agent-security-bench, agentharm, llm-as-judge
 
 ---
