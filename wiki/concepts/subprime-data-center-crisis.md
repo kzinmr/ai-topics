@@ -2,7 +2,7 @@
 title: "Subprime Data Center Crisis"
 type: concept
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-08-22
 tags:
   - economics
   - infrastructure
@@ -10,8 +10,10 @@ tags:
   - data-center
 sources:
   - raw/articles/wheresyoured.at--the-subprime-data-center-crisis--5c30f34c.md
+  - raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md
 related:
   - [[concepts/ai-bubble]]
+  - [[concepts/ai-bubble-economics]]
   - [[entities/coreweave]]
   - [[entities/ed-zitron]]
   - [[entities/openai]]
@@ -132,7 +134,7 @@ Zitron outlines several triggers and pathways:
 ## Related Concepts
 
 - [[concepts/ai-bubble]] — The broader AI bubble thesis
-- [[concepts/ai-economics]] — AI inference profitability and economic models
+- [[concepts/ai-bubble-economics]] — AI inference profitability and economic models (includes Gary Marcus's Aug 2026 "Data center madness" capex-to-revenue analysis)
 - [[entities/coreweave]] — Primary debt-issuing neocloud
 - [[entities/ed-zitron]] — Author and primary analyst
 - [[entities/openai]] — Largest AI compute customer, most likely trigger

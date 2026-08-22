@@ -2,9 +2,10 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-08-21
+updated: 2026-08-22
 type: entity
 sources:
+  - raw/articles/seangoedecke.com--you-should-never-be-angry-at-work--943567d1.md
   - raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
   - raw/articles/seangoedecke.com--prompts-are-technical-debt-too--2bd50f80.md
@@ -482,6 +483,16 @@ On August 15, 2026, Goedecke published "[AI text watermarking is not a big deal]
 **Connection to earlier work**: This essay extends and simplifies his July 2026 analysis "Text AI watermarks will always be trivial to remove" (see [[#Text Watermark Criticism: The Removal Argument]]) and his C2PA analysis, forming a coherent skepticism trilogy on AI provenance tools. → [[concepts/security-and-governance/ai-text-watermarking]]
 
 Source: [[raw/articles/seangoedecke.com--ai-text-watermarking-is-not-a-big-deal--8795efe1.md]]
+
+### You Should Never Be Angry at Work (Aug 2026)
+
+On August 21, 2026, Goedecke published "[You should never be angry at work](https://seangoedecke.com/you-should-never-be-angry-at-work/)" — a short piece on professional emotional regulation. His core claim: **anger is a self-sabotage loop, not a legitimate response to workplace friction.** The post is not about suppressing feelings but about *replacing* the anger response with a more useful one — identify the specific thing that's actually wrong, name it precisely, and either act on it or consciously drop it. Anger, by contrast, is undirected energy that makes you *less* effective at the thing you're angry about and makes colleagues avoid you.
+
+This fits a recurring thread in Goedecke's writing: he consistently argues for **precise, named dissatisfaction** over diffuse resentment. The "just-say-no engineer" post (May 2026) is about the *institutional* failure of a specific archetype; the "how to keep thinking" post (Aug 6, 2026) is about the *cognitive* failure of a specific habit (slow thought); this post is about the *emotional* failure of a specific reflex. Each post isolates one narrow mechanism and gives it a name — a pattern that extends to his broader argument that **senior engineering is mostly about precise self-diagnosis** (see [[#LLMs Reward Expertise (July 2026)]], where domain knowledge works the same way).
+
+The piece is also a quiet continuation of his "AI isn't the root cause of most engineering pain" thesis: when AI tools create new friction (sycophancy, cognitive debt, sycophantic disagreement loops, vibe-coded slop), the useful response is to name the specific friction and work on it, not to be *angry* about AI.
+
+Source: [[raw/articles/seangoedecke.com--you-should-never-be-angry-at-work--943567d1.md]]
 
 ## Sources
 

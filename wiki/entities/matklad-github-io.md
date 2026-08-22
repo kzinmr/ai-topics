@@ -2,7 +2,7 @@
 title: Aleksey Kladov
 type: entity
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-08-22
 tags:
   - person
   - blogger
@@ -11,7 +11,8 @@ tags:
 aliases:
 - matklad
 - matklad.github.io
-sources: []
+sources:
+- raw/articles/matklad.github.io--2026-08-21-rust-glancer-html--ac81b121.md
 ---
 
 # Aleksey Kladov
@@ -109,6 +110,30 @@ Kladov consistently advocates for implementing IDE features by "lowering to plai
 
 His "Missing IDE Feature" essay — advocating for "fold method bodies by default" — exemplifies this: rather than a sidebar outline panel, fold the implementation details in-place, preserving native editing workflows (Shift+Down, Ctrl+X/V to move functions between blocks).
 
+### Rust Glancer: A Three-Tier Analyzer Architecture (Aug 2026)
+
+In "[Rust Glancer](https://matklad.github.io/2026/08/21/rust-glancer.html)" (Aug 21, 2026), Kladov reacted to **Rust Glancer**, a new functional LSP server for Rust that claims to use **two orders of magnitude less RAM** than rust-analyzer. The post is a long-form architectural reflection (originally a lobste.rs comment) that doubles as a design memo for where rust-analyzer should go.
+
+**Core critique of the current rust-analyzer data model**: rust-analyzer uses **rowan** for syntax-tree representation and runs **Salsa** (incremental query computation) across *all* dependencies — including thousands of crates in `~/.cargo/registry/src` the user will never look at. Kladov's diagnosis: the "99% use case is all the code in your 6666 dependencies which you won't ever look at, but which needs to be at least shallowly analyzed." Even for an incremental refactoring tool, the primary AST structure should be a flat list of arrays, not a deep query graph.
+
+**The IntelliJ model as the template**: Kladov argues that the right architecture is the one IntelliJ uses for its **PSI API** — an abstract interface with **multiple interchangeable backends**, at least three in play simultaneously:
+
+1. **Open editor files** → PSI backed by concrete syntax trees
+2. **Rest of the project** → PSI backed by **Stub Trees** (compact on-disk representations storing only externally-visible parts — no function bodies). Transparently switches to syntax tree when the user navigates to a file.
+3. **Dependencies** → PSI backed by **compiled `.class` files** (in Rust: `.rmeta` files), decompiled on demand.
+
+**The "lowest-hanging watermelon"**: Kladov argues rust-analyzer should stop running Salsa over every dependency and instead read **rustc's `.rmeta` files** as the default dependency representation, switching to Salsa only when the user starts editing `~/.cargo/registry/src`. This requires defining an **abstract API for accessing Rust code** that treats `.rmeta` files as first-class inputs ("rmeta-transparent") — work Kladov notes started years ago ([hackmd](https://hackmd.io/ytd82QNiT_Ku2XFr1EAtiQ)) but was never completed.
+
+**Proc macros are the real bloat**: Kladov notes that in rust-analyzer, "30% of the binary size was attributed to JSON parsing code" — a direct consequence of running proc macros (i.e., real code) to expand macros. He proposes a **Sorbet-style trick**: don't run metaprogramming at all; instead expose a plugin interface that *explains* the effects of what the macro would have done (e.g., a shim that injects `impl Serialize for T {}` with an empty body instead of actually running `serde_derive`).
+
+**LSP protocol critique, revisited**: Kladov returned to his [LSP could have been better](https://matklad.github.io/2023/10/12/lsp-could-have-been-better.html) critique, noting that rust-analyzer's core data model is "very pedantic about always observing consistent snapshots of the code," but LSP only allows the client and server to be *heuristically* in sync, unlike the older Dart Analyzer protocol which had sound data synchronization. He also flags that rust-analyzer's file-watching implementation is "sketchy" — two backends (editor-side vs. server-side), with the native watcher's API being "fundamentally racy."
+
+> *"Right now rust-analyzer is a bit like that half-drawn horse meme, except that it's only the head half of the horse."*
+
+Kladov closes by endorsing the "glance analyzer" architecture — split the world into an **incremental tip of the iceberg** (the code the user is actively working on, served by Salsa) and a **mostly read-only, on-disk, compact** layer (the dependencies, served by `.rmeta`).
+
+Source: [[raw/articles/matklad.github.io--2026-08-21-rust-glancer-html--ac81b121.md]]
+
 ## Key Quotes
 
 > *"Code is read more often than written, and this is one of the best multipliers for readability. Most of the code is in method bodies, but most important code is in function signatures."*
@@ -131,6 +156,7 @@ His "Missing IDE Feature" essay — advocating for "fold method bodies by defaul
 - Continued development of tree-sitter ecosystem analysis and practical parsing tutorials
 
 ### IDE & Editor Tooling
+- **Rust Glancer** (Aug 2026) — Endorsed a three-tier "glance analyzer" architecture for rust-analyzer: syntax trees for open files, Stub Trees for the rest of the project, `.rmeta` files for dependencies; proposed a Sorbet-style plugin to avoid running proc macros
 - **A Missing IDE Feature** (Oct 2024) — Campaign for "fold method bodies by default" across all editors
 - **LSP could have been better** (Oct 2023, still widely cited) — Architectural critique of LSP's RPC model, advocacy for level-triggered state synchronization
 - **Zig Language Server And Cancellation** — Deep analysis of consistency models for language servers
@@ -157,6 +183,7 @@ His "Missing IDE Feature" essay — advocating for "fold method bodies by defaul
 
 ## Sources
 
+- [Rust Glancer](https://matklad.github.io/2026/08/21/rust-glancer.html) (Aug 2026)
 - [Against Query Based Compilers](https://matklad.github.io/2026/02/25/against-query-based-compilers.html) (Feb 2026)
 - [Parsing Advances](https://matklad.github.io/2025/12/28/parsing-advances.html) (Dec 2025)
 - [A Missing IDE Feature](https://matklad.github.io/2024/10/14/missing-ide-feature.html) (Oct 2024)

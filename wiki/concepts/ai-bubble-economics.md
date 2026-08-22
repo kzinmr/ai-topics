@@ -2,12 +2,12 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-06-09
+updated: 2026-08-22
 tags:
   - economics
   - company
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
-sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md, raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md, raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md]
+sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md, raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md, raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md, raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md]
 ---
 
 
@@ -466,6 +466,31 @@ Jessica Wachter (Wharton) & Jonathan Wachter (Point 72):
 - If boom fails: "largest misallocation of capital in history"
 
 
+## August 2026 Update: "Data Center Madness" — Public Opinion Turn (Gary Marcus)
+
+On August 21, 2026, **Gary Marcus** published ["Data center madness"](https://garymarcus.substack.com/p/data-center-madness), a two-part post that adds two new signals to the bubble-economics debate:
+
+### Part I: The capex-to-revenue gap, quantified by two independent economists
+
+Marcus cites two independent estimates of the revenue needed to justify the capital being poured into AI data centers:
+
+| Estimator | Assumptions | Required annual AI revenue |
+|-----------|-------------|---------------------------|
+| **Peter Berezin** (Chief Economist, BCA Research) | Baseline ROCE | **~$10 trillion** |
+| **Calum Williams** (The Economist) | Lower assumed ROCE, higher margin assumptions | **~$2.5 trillion** |
+
+Against this, current AI industry revenues are in the **tens of billions** (or low hundreds of billions if you're very optimistic), against hyperscaler capex projected to reach **$1 trillion in 2027**, most of it AI-related. Marcus: *"You don't have to be Einstein to see the math ain't mathing."* This is the most stark capex-to-revenue ratio yet published — even the conservative estimate requires ~50× current industry revenue.
+
+### Part II: Political / public-opinion signal — "Republicans abandoning data centers like rats abandoning sinking ships"
+
+Marcus's second part, which extends his August "Republicans panicking" post, claims a visible political shift: Republican-aligned figures and communities are **publicly turning against AI data centers** over the last 24 hours. He cites four new examples (collected by pollster Adam Carlson) of opposition to data center projects in Republican areas — a pattern he argues reflects the local externalities (power draw, water use, land use, tax burden) becoming politically salient even among traditionally pro-business voters.
+
+**Interpretation**: This adds a **demand-side / political-economy** data point to the AI-bubble literature, which has so far focused on unit economics and financing structure. If the political tailwind that funded the buildout erodes — particularly in the heartland states where much of the capex is landing — the financing cycle faces headwinds on top of the unit-economics problem.
+
+> "Nobody wants this, and the economics make no sense. Perhaps no industry in history has spoiled its own prospects faster than the AI industry. Through a mixture of greed, stupidity, and arrogance, the heroes of 2023 have become the villains of 2026." — Gary Marcus, Aug 21, 2026
+
+See also: [[concepts/subprime-data-center-crisis]] (Ed Zitron's structural-financing analogue) and [[concepts/ai-bubble]] (broader thesis).
+
 ## Sources
 
 - [Edward Zitron: How Much Of The AI Bubble Is Real?](https://www.wheresyoured.at/premium-how-much-of-the-ai-bubble-is-real/) (Mar 2026)
@@ -480,4 +505,5 @@ Jessica Wachter (Wharton) & Jonathan Wachter (Point 72):
 - [Business Insider: Tech Stock Crash & AI Skepticism](https://businessinsider.com/tech-stock-crash-ai-chatgpt5-gary-marcus-nvda-orcl-crwv-2026-2) (2026)
 - [The Economy: Private Credit Fuels AI Boom](https://economy.ac/news/2026/03/202603288769) (Mar 2026)
 - [Longbridge: AI Bubble — Catalyst for Quantitative Easing?](https://longbridge.com/news/282063902) (2026)
+- [Gary Marcus: Data center madness](https://garymarcus.substack.com/p/data-center-madness) (Aug 2026)
 - [US Recession News: When Will the AI Bubble Burst?](https://usrecessionnews.com/ai-bubble/) (2026)

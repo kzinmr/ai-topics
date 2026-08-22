@@ -318,7 +318,7 @@
 - [[entities/future-of-humanity-institute]] — Future of Humanity Institute (FHI)
 - [[entities/galileo-eval-engineer]] — Galileo Eval Engineer
 - [[entities/garry-tan]] — Garry Tan — CEO of Y Combinator; investor in AI startups, voice on AI regulation
-- [[entities/gary-marcus]] — Gary Marcus; "Don't Count Google Out" section (Aug 6: seven reasons Google survives DeepMind leadership churn); "Open-Source Is NOT the Same as Open-Weight" (Aug 10: NYT confusion over Muse Glimmer, open-weight vs open-source distinction, Nadella bait-and-switch); "The Hyping of Anthropic's IPO" (Aug 17: leaked revenue projections, SEC quiet period, $2T valuation scrutiny)
+- [[entities/gary-marcus]] — Gary Marcus; "Don't Count Google Out" section (Aug 6: seven reasons Google survives DeepMind leadership churn); "Open-Source Is NOT the Same as Open-Weight" (Aug 10: NYT confusion over Muse Glimmer, open-weight vs open-source distinction, Nadella bait-and-switch); "The Hyping of Anthropic's IPO" (Aug 17: leaked revenue projections, SEC quiet period, $2T valuation scrutiny); "Data center madness" (Aug 21: $10T Berezin / $2.5T Williams revenue-requirement estimates, political-economy signal of Republican-aligned opposition to data centers)
 - [[entities/gemma-4]] — Google Gemma 4
 - [[entities/geoffrey-hinton]] — Geoffrey Hinton — "Godfather of AI"; Nobel Prize in Physics 2024; pioneer of deep learning, backpropagation
 - [[entities/geoffrey-litt]] — Geoffrey Litt
@@ -513,7 +513,7 @@
 - [[entities/matduggan-com]] — Mat Duggan
 - [[entities/matei-zaharia]] — Matei Zaharia — CTO of Databricks (pre-$175B), co-creator of Apache Spark/MLflow, creator of Omnigent open-source meta-harness; new entity page (June 25)
 - [[entities/mathematical-methods]] — Philosophical paper by Terence Tao and Tanya Klowden examining the impact of AI on mathematical practice and human th...
-- [[entities/matklad-github-io]] — Aleksey Kladov
+- [[entities/matklad-github-io]] — Aleksey Kladov; "Rust Glancer" post (Aug 21: three-tier "glance analyzer" architecture for rust-analyzer — syntax trees for open files, Stub Trees for project, `.rmeta` for dependencies; Sorbet-style plugin for proc macros)
 - [[entities/matt-palmer]] — Matt Palmer
 - [[entities/matt-van-horn]] — Matt Van Horn
 - [[entities/matthew-honnibal]] — Matthew Honnibal
@@ -739,7 +739,7 @@
 - [[entities/scott-stevenson]] — Scott Stevenson
 - [[entities/scott-wu]] — Scott Wu
 - [[entities/screenpipe]] — Screenpipe (YC S26) — 24/7 local AI screen and mic recording, turns computer activity into agent-accessible data; 20.5K GitHub stars, Rust, MCP integration (Jul 26)
-- [[entities/seangoedecke-com]] — Sean Goedecke; "How to Keep Thinking" section (Aug 6: hammock time in the LLM-agent era, write in your own words, read books); "I got an email about resistance" response to complicity critics (Aug 9); "No, Local Models Will Not Win" (Aug 11: batching + GPU efficiency ~30x, revealed preference for strongest model, niche remains)
+- [[entities/seangoedecke-com]] — Sean Goedecke; "How to Keep Thinking" section (Aug 6: hammock time in the LLM-agent era, write in your own words, read books); "I got an email about resistance" response to complicity critics (Aug 9); "No, Local Models Will Not Win" (Aug 11: batching + GPU efficiency ~30x, revealed preference for strongest model, niche remains); "You should never be angry at work" (Aug 21: precise, named dissatisfaction over diffuse resentment — emotional-regulation corollary to the "AI isn't the root cause of most engineering pain" thesis)
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. Provides 6 specialized tools for code analysis, search, and retrieval from any...
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka — ML researcher, 'Build a Reasoning Model (From Scratch)', LLM architecture analysis
@@ -767,7 +767,7 @@
 - [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026); Context Engine — customer relationships as moat (Aug 4)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
-- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13); sqlite-utils 4.2.1 crash fix + `uv run --isolated --no-default-groups` dependency-isolation smoke test (Aug 13)
+- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13); sqlite-utils 4.2.1 crash fix + `uv run --isolated --no-default-groups` dependency-isolation smoke test (Aug 13); Bun 1.4 Bun.WebView JSON API prototype (Aug 20: 192–256MB container for full Chrome, shot-scraper-style API); "Stop Making TUIs" highlight of Thomas Ptacek's argument (Aug 21: coding agents have driven GUI cost toward zero, the old CLI/TUI cheap-default economics no longer hold); llm 0.32.1 + llm-openrouter 0.7 release notes (Aug 21: httpx/openai<3 stopgap, OpenRouter reasoning traces)
 - [[entities/simone-salis]] — Simone Salis
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent)
 - [[entities/siyan-zhao]] — Siyan Zhao
@@ -1155,7 +1155,7 @@
 - [[concepts/ai-benchmarks/yourbench]] — yourbench
 - [[concepts/ai-botsitting]] — AI Botsitting
 - [[concepts/ai-bubble]] — AI Bubble Debate (2025–2026)
-- [[concepts/ai-bubble-economics]] — AI Bubble Economics
+- [[concepts/ai-bubble-economics]] — AI Bubble Economics; includes August 2026 "Data center madness" update (Gary Marcus: $10T Berezin / $2.5T Williams revenue-requirement estimates vs $1T 2027 capex; political-economy signal of Republican-aligned opposition to data centers; cross-ref to [[concepts/subprime-data-center-crisis]])
 - [[concepts/ai-coding-tools]] — AI Coding Tools
 - [[concepts/ai-coding-workflows]] — AI Coding Workflows
 - [[concepts/ai-consciousness-debate]] — AI Consciousness Debate
@@ -2765,7 +2765,7 @@
 - [[concepts/subagents]] — Pattern where a main agent spawns independent sub-agents in parallel to delegate tasks.
 - [[concepts/subagents-parallel-ai-agent-delegation]] — Subagents — Parallel AI Agent Delegation
 - [[concepts/subquadratic-attention]] — Subquadratic Attention
-- [[concepts/subprime-data-center-crisis]] — The Subprime Data Center Crisis — Ed Zitron's analysis of AI data center debt as a functional analogue to 2008 subprime mortgages via SPVs, off-balance-sheet financing, and 15× overbuild
+- [[concepts/subprime-data-center-crisis]] — The Subprime Data Center Crisis — Ed Zitron's analysis of AI data center debt as a functional analogue to 2008 subprime mortgages via SPVs, off-balance-sheet financing, and 15× overbuild; August 2026 cross-reference to Gary Marcus's "Data center madness" (demand-side / political-economy corollary, see [[concepts/ai-bubble-economics]])
 - [[concepts/super-agent-platform-thesis]] — Super-Agent Platform Thesis — US AI's Answer to the Chinese Super-App
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
 - [[concepts/superlinear-returns]] — superlinear-returns

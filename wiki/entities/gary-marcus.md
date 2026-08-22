@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-08-21
+updated: 2026-08-22
 tags:
   - lab
   - benchmark
@@ -14,6 +14,7 @@ tags:
   - world-models
   - agent-safety
 sources:
+  - raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md
   - raw/articles/garymarcus.substack.com--p-seven-reasons-i-wouldnt-count-google--b4555440.md
   - raw/articles/garymarcus.substack.com--p-misplaced-panic-over-ai-progress--7aa50278.md
   - raw/articles/garymarcus.substack.com--p-no-need-to-panic-about-anthropics--1d1bcf86.md
@@ -449,6 +450,19 @@ An internal Anthropic document reportedly stated: **"we don't want it to be know
 Marcus's framing of the scandal emphasized the disconnect between Anthropic's public safety advocacy and its private conduct — a theme consistent with his broader critique of AI industry hypocrisy.
 
 Source: [[raw/articles/garymarcus.substack.com--p-dario-takes-it-on-the-chin--5226b0ee.md]]
+
+### "Data center madness" — Capex-to-Revenue Gap & Political Turn (Aug 2026)
+
+On August 21, 2026, Marcus published ["Data center madness"](https://garymarcus.substack.com/p/data-center-madness), a two-part post that quantifies the AI capex-to-revenue gap with two independent economic estimates and adds a new political-economy signal:
+
+- **Part I (the math)**: Marcus cites **Peter Berezin** (BCA Research), who estimates **~$10 trillion in annual AI revenue** would be required to monetize the capex being plowed into data centers, and **Calum Williams** (The Economist), whose more conservative calculation lands at **~$2.5 trillion**. Against current AI revenues in the tens of billions and hyperscaler capex projected to hit **$1 trillion in 2027**, Marcus: *"You don't have to be Einstein to see the math ain't mathing."*
+- **Part II (the politics)**: Extending his "Republicans panicking" post, Marcus claims Republican-aligned figures and communities are **publicly abandoning data centers** — citing four new examples (collected by pollster Adam Carlson) of opposition to data center projects in Republican areas. He reads this as local externalities (power, water, land, tax) becoming politically salient even among pro-business voters.
+
+> "Nobody wants this, and the economics make no sense. Perhaps no industry in history has spoiled its own prospects faster than the AI industry. Through a mixture of greed, stupidity, and arrogance, the heroes of 2023 have become the villains of 2026."
+
+This extends his running AI-bubble / circular-financing critique (cf. "Leopold's Folly" above) and pairs with Ed Zitron's [[concepts/subprime-data-center-crisis]] on the [[concepts/ai-bubble-economics]] theme — Marcus contributes the demand-side / political-economy angle that Zitron's financing-structure analysis leaves open.
+
+Source: [[raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md]]
 
 ## References
 
