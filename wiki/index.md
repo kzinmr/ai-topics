@@ -1071,7 +1071,7 @@
 - [[concepts/ai-benchmarks/databench]] — DataBench — Hex's agentic analytics benchmark; 100 realistic Q&A/open-ended tasks in Shorelane warehouse; GPT-5.6 Sol LLM judge; Fable 5 best, Opus 5 effort regressions, Luna Pareto frontier (Aug 14)
 - [[concepts/ai-benchmarks/decodingtrust]] — DecodingTrust
 - [[concepts/ai-benchmarks/deepresearch-bench]] — DeepResearch Bench
-- [[concepts/ai-benchmarks/deepswe-benchmark]] — DeepSWE Benchmark (Datacurve)
+- [[concepts/ai-benchmarks/deepswe-benchmark]] — DeepSWE Benchmark (Datacurve); + DeepSeek V4 Pro 0813 vs Claude Fable 5 head-to-head (Together AI Aug 2026): 90x cost gap, pass@4 88.5 vs 84.1, Pro-first cascade 82.7% at $8.28
 - [[concepts/ai-benchmarks/design-arena]] — Design Arena
 - [[concepts/ai-benchmarks/factorio-learning-environment]] — Factorio Learning Environment (FLE)
 - [[concepts/ai-benchmarks/freshstack-benchmark]] — FreshStack Benchmark
@@ -1606,7 +1606,7 @@
 - [[concepts/deepseek-r1]] — DeepSeek-R1
 - [[concepts/deepseek-v3]] — DeepSeek-V3
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2
-- [[concepts/deepseek-v4]] — DeepSeek-V4 — 1.6T MoE, 1M context, Hybrid Attention, Unsloth GGUF quants available; V4-Pro-0813 checkpoint (Aug 13, API-only, OpenRouter); V4-Pro GA release + peak/off-peak pricing (Aug 13)
+- [[concepts/deepseek-v4]] — DeepSeek-V4 — 1.6T MoE, 1M context, Hybrid Attention, Unsloth GGUF quants available; V4-Pro-0813 checkpoint (Aug 13, API-only, OpenRouter); V4-Pro GA release + peak/off-peak pricing (Aug 13); V4-Pro vs Fable 5 DeepSWE head-to-head: 90x cheaper, pass@4 88.5 vs 84.1, Pro-first cascade 82.7% at $8.28 (Aug 18-22)
 - [[concepts/deepseek-v4-serving]] — Serving DeepSeek-V4: Inference Systems Perspective
 - [[concepts/deepseek-vision]] — DeepSeek Vision — Multimodal Capabilities
 - [[concepts/deepspec-dspark]] — DeepSpec & DSpark — DeepSeek open-source speculative decoding inference framework; DSpark distributed engine achieves 60–85% faster LLM generation; supports DSpark/DFlash/Eagle3 draft models (June 27)

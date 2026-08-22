@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-08-22T18:39:00.722537+00:00",
+  "triage_run_id": "20260822T183000Z",
+  "source": "dreaming",
+  "summary_ja": "Second-pass dreaming (upstream dreaming-group failed on 503 JSON render; its Pattern E triage already committed at 2ead23f7). Archive-index absence probe over raw/articles found one genuine untriaged take: Together AI DeepSWE head-to-head (V4-Pro-0813 vs Fable 5, 90x cost gap, Pro-first cascade 82.7% at $8.28) - enriched concepts/ai-benchmarks/deepswe-benchmark.md + entities/together-ai.md. 5 skips archived: sibling GPT-5.6-Sol comparison, DCI (already covered), stale GPT-6 rumor, Mistral satellite VLM, and 7 link-stub-only newsletter digests.",
+  "decisions": [
+    {
+      "item_id": "dreaming-20260822-skip-deepswe-v4pro-vs-gpt56sol",
+      "source": "dreaming",
+      "source_name": "Together AI Blog",
+      "title": "DeepSeek V4 Pro 0813 vs GPT-5.6 Sol on DeepSWE",
+      "url": "https://www.together.ai/blog/deepseek-v4-pro-0813-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing",
+      "raw_path": "wiki/raw/articles/together.ai--blog-deepseek-v4-pro-0813-vs-gpt-5-6-sol-on-deepswe-cost-cod--27e5b29f.md",
+      "recommended_action": "skip",
+      "reason": "Sibling head-to-head post (GPT-5.6 Sol side of the same DeepSWE board); marginal incremental value vs the Fable-5 take already enriched - archived for dedup",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# DeepSeek V4 Pro 0813 vs GPT-5.6 Sol on DeepSWE: Cost, Coding, and Routing\nSource: https://www.together.ai/blog/deepseek-v4-pro-0813-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing\n‍\nIn our\nDeepSeek V4 Pro 0813\nvs GPT-5.6 Sol comparison on DeepSWE, a benchmark that tests a model's software engine"
+    },
+    {
+      "item_id": "dreaming-20260822-skip-together-dci",
+      "source": "dreaming",
+      "source_name": "Together AI Blog",
+      "title": "Deploy and inference any model from HuggingFace (DCI)",
+      "url": "https://www.together.ai/blog/deploy-and-inference-any-model-from-huggingface",
+      "raw_path": "wiki/raw/articles/together.ai--blog-deploy-and-inference-any-model-from-huggingface--6d3cfbd9.md",
+      "recommended_action": "skip",
+      "reason": "Already covered - entities/together-ai.md has 'Deploy and Inference Any Model (DCI) - May 2026' section with the same claims",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Deploy and inference any model from HuggingFace\nSource: https://www.together.ai/blog/deploy-and-inference-any-model-from-huggingface\nSomething real is shifting in how developers work. Agents open up work that used to be off-limits, not because it was technically impossible, but because it required"
+    },
+    {
+      "item_id": "dreaming-20260822-skip-gpt6-spud",
+      "source": "dreaming",
+      "source_name": "trendingtopics.eu",
+      "title": "Is This GPT-6? OpenAI Bets Everything on New Model Spud",
+      "url": "https://www.trendingtopics.eu/is-this-gpt-6-openai-bets-everything-on-new-model-spud/",
+      "raw_path": "wiki/raw/articles/trendingtopics.eu--is-this-gpt-6-openai-bets-everything-on-new-model-spud--f17ba49f.md",
+      "recommended_action": "skip",
+      "reason": "Stale April 2026 rumor post (codename Spud, Sora discontinuation) - superseded by later coverage; low wiki value",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Is This GPT-6? OpenAI Bets Everything on New Model \"Spud\"\nSource: https://www.trendingtopics.eu/is-this-gpt-6-openai-bets-everything-on-new-model-spud/\nOpenAI has made a significant internal strategic shift: the video AI tool\nSora is being discontinued\n, while the company has focused heavily on co"
+    },
+    {
+      "item_id": "dreaming-20260822-skip-mistral-satellite-vlm",
+      "source": "dreaming",
+      "source_name": "Mistral AI",
+      "title": "Unlocking the potential of vision language models on satellite imagery through fine-tuning",
+      "url": "https://mistral.ai/news/unlocking-potential-vision-language-models-satellite-imagery-fine-tuning",
+      "raw_path": "wiki/raw/articles/2026-05-10_mistral-ai_unlocking-potential-vision-language-models-satellite-imagery-fine-tuning.md",
+      "recommended_action": "skip",
+      "reason": "Old May 2026 case-study post; niche satellite-imagery fine-tuning tutorial without frontier relevance - archived for dedup",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Unlocking the potential of vision language models on satellite imagery through fine-tuning\n**Source**: [https://mistral.ai/news/unlocking-potential-vision-language-models-satellite-imagery-fine-tuning](https://mistral.ai/news/unlocking-potential-vision-language-models-satellite-imagery-fine-tuning"
+    },
+    {
+      "item_id": "dreaming-20260822-skip-newsletter-digests-batch",
+      "source": "dreaming",
+      "source_name": "Newsletter batch (AINews, Substack)",
+      "title": "7 raw newsletter digests 2026-08-21/22 (link-stub only)",
+      "url": "",
+      "raw_path": "wiki/raw/newsletters/2026-08-21-simulation-the-new-scaling-law-joon-sung-park-simile-ai.md",
+      "recommended_action": "skip",
+      "reason": "Digest files contain URL extracts only (no post bodies). Subject-line themes cross-referenced: simulation/scaling-law -> concepts/scenario-based-simulation + deployment-simulation; retrieval -> concepts/agentic-retrieval; agent harness -> concepts/agent-harnesses; data-center economics -> concepts/ai-bubble-economics + subprime-data-center-crisis (enriched 2026-08-22 by blog-ingest). No enrichment performed - bodies unreachable from link stubs.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-21\n**Subject:** Simulation: the new Scaling Law — Joon Sung Park, Simile AI\n**Collected:** 2026-08-22T10:29:03.429578+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNl"
+    }
+  ]
+}

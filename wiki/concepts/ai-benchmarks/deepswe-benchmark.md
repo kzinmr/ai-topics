@@ -1,7 +1,7 @@
 ---
 title: "DeepSWE Benchmark (Datacurve)"
 created: 2026-05-27
-updated: 2026-07-27
+updated: 2026-08-22
 type: concept
 tags:
   - evaluation
@@ -20,6 +20,8 @@ sources:
   - https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole
   - raw/articles/together.ai--blog-kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routi--a97a06f4.md
   - https://www.together.ai/blog/kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing
+  - raw/articles/together.ai--blog-deepseek-v4-pro-0813-vs-claude-fable-5-on-deepswe-cost---246b2add.md
+  - https://www.together.ai/blog/deepseek-v4-pro-0813-vs-claude-fable-5-on-deepswe-cost-coding-and-routing
 ---
 
 # DeepSWE Benchmark (Datacurve)
@@ -47,6 +49,8 @@ On SWE-Bench Pro, frontier models cluster within a narrow 30-point range, making
 | Kimi K2.6 | 24% | — |
 | Claude Haiku 4.5 | **0%** | From 39% on SWE-Bench Pro |
 | **Kimi K3** | **68.5% pass@1 / 89.4% pass@4** | New top pass@4 (July 2026) |
+| **Claude Fable 5** | **69.7% pass@1 / 84.1% pass@4** | Most expensive rollout on the board (Aug 2026) |
+| **DeepSeek V4 Pro 0813** | **62.8% pass@1 / 88.5% pass@4** | 90x cheaper than Fable 5; pass@4 leader (Aug 2026) |
 
 ### 2. Verifier Error Rate on SWE-Bench Pro: ~32%
 Datacurve audited 30 random tasks across both benchmarks with an LLM-based judge:
@@ -91,6 +95,8 @@ DeepSWE demands ~5.5× more code output with shorter prompts (half the length), 
 | GPT-5.4 | $3.30 | — | — |
 | Kimi K3 | $4.65 | — | 66 min |
 | GPT-5.6 Sol | $8.37 | — | 17 min |
+| Claude Fable 5 (max) | $21.63 | 115k out | ~31 min |
+| DeepSeek V4 Pro 0813 (max) | $0.24 | 101k out | ~35 min |
 | Claude Opus 4.7 | Significantly higher | — | — |
 
 GPT-5.4 at $3.30/trial represents the best value. Higher spend, more tokens, or longer runs did not correlate with higher pass rates — the relationship is not monotonic.
@@ -126,6 +132,20 @@ In July 2026, Together AI published a head-to-head comparison of **Kimi K3** (op
 - **Kimi-first cascade with verifier**: Run K3 first, escalate to Sol on test failure → **~85.6% accuracy**, covering 108/113 tasks (95.6%). This beats either model alone and even a perfect one-shot router (83.4%).
 - **Coverage vs reliability tradeoff**: K3 casts the wider net (89.4% coverage, 45 rock-solid tasks); Sol is steadier (85.8% coverage, 61 rock-solid tasks).
 
+### DeepSeek V4 Pro 0813 vs Claude Fable 5 (Together AI, Aug 2026)
+
+In August 2026, Together AI published a second head-to-head on DeepSWE: **DeepSeek V4 Pro 0813** (max) vs **Claude Fable 5** (max), 113 tasks, 4 trials each, 904 rollouts. The two sit at opposite ends of the price sheet — Fable is the most expensive rollout on the board, Pro one of the cheapest — so the comparison is about what a 90x premium actually buys.
+
+**Key findings:**
+- **Single-shot vs multi-attempt reversal**: Fable leads pass@1 (69.7% vs 62.8%), but the lead evaporates under retries — Pro pulls level at pass@2 (78.5 vs 77.1) and **wins pass@4 (88.5% vs 84.1%)**. A 90x-costlier model neither owns the ceiling nor holds its first-shot edge.
+- **Cost**: **$0.24/rollout vs $21.63** — 260 solves per $100 for Pro against Fable's 3. Widest cost gap of any pairing measured, with no speed penalty (median 35 vs 31 min — Fable is simply the most verbose model, 115k output tokens in 79 steps vs 101k in 146).
+- **Failure anatomy**: Both regress the test suite in only 11% of failures (GPT-family: ~20%). Fable has the largest big-miss share (18% vs 10%) — when wrong, badly wrong; Pro fails near-miss more often (66% vs 57%).
+- **Domain split**: Fable wins 6 of 8 domains (data modeling/serialization 88%, language internals 78%). Pro takes **concurrency and durability 58 vs 45** — Fable's weakest cell, where the cheaper model is the better engineer, not just the cheaper one.
+- **Language split**: Fable wins 4 of 5 languages; the price-justifying cell is **Rust (85% vs 65%)**. Pro takes TypeScript (61 vs 57).
+- **Complementarity**: Per-task correlation **0.39 — lowest of any Pro pairing**. Union covers 107/113 tasks (94.7%): Pro alone 12, Fable alone 7, only 6 defeat both.
+- **Routing**: Pro-first cascade (escalate to Fable on test-suite rejection) → **82.7% at $8.28/task** — 13 points above Fable alone (69.7% at $21.63) and above a perfect one-shot oracle router (78.8%). Order matters: Fable-first costs $21.71 for the same accuracy.
+- **Take**: Fable 5 is the hardest model on the board to justify as a default — buy it for Rust and serialization-heavy work; Pro is the high-volume/retry-tolerant pick. The best use of Fable is selective escalation behind a low-cost Pro first stage.
+
 ## Graph Structure Query
 
 ```
@@ -150,3 +170,4 @@ This section informs graph queries: authored by [[entities/datacurve]] and [[ent
 - [DeepSWE Blows Up the AI Coding Leaderboard](https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole) — VentureBeat, May 26, 2026
 - [Serena Ge announcement on X](https://x.com/serenaa_ge/status/2059308218564890875)
 - [Kimi K3 vs GPT-5.6 Sol on DeepSWE: Cost, Coding, and Routing](https://www.together.ai/blog/kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing) — Together AI Blog, July 2026
+- [DeepSeek V4 Pro 0813 vs Claude Fable 5 on DeepSWE: Cost, Coding, and Routing](https://www.together.ai/blog/deepseek-v4-pro-0813-vs-claude-fable-5-on-deepswe-cost-coding-and-routing) — Together AI Blog, Aug 2026 ([[entities/together-ai]])

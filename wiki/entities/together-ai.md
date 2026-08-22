@@ -2,7 +2,7 @@
 title: "Together AI"
 type: entity
 created: 2026-05-08
-updated: 2026-08-19
+updated: 2026-08-22
 tags:
   - company
   - infrastructure
@@ -17,6 +17,7 @@ sources:
   - raw/articles/together.ai--blog-announcing-our-series-c--4c861109.md
   - raw/articles/2026-07-31_together-ai_autoscaling-endpoints-llm-inference.md
   - raw/articles/together.ai--blog-a-b-test-models-in-production--0e300cb3.md
+  - raw/articles/together.ai--blog-deepseek-v4-pro-0813-vs-claude-fable-5-on-deepswe-cost---246b2add.md
 ---
 
 # Together AI
@@ -89,6 +90,20 @@ Together AI detailed how to run **A/B experiments at the endpoint level** for LL
 **Significance:** Pushing experimentation into the serving endpoint (rather than the app) isolates model-selection logic from application code and gives model teams production A/B harnessing comparable to what they'd otherwise wire up per-service. This is complementary to Together's endpoint autoscaling work and relevant to any team serving multiple model generations in production (cf. [[concepts/evaluation/ai-evaluation|LLM evaluation]] and online-vs-offline testing).
 
 Source: [A/B Test Models in Production — Together AI Blog](https://www.together.ai/blog/a-b-test-models-in-production) (Aug 2026)
+
+### DeepSWE Model Comparisons: V4 Pro 0813 vs Fable 5, Kimi K3 vs GPT-5.6 Sol (Jul–Aug 2026)
+
+Together AI has published a series of head-to-head cost/coding/routing comparisons on the [[concepts/ai-benchmarks/deepswe-benchmark|DeepSWE]] benchmark. The Aug 2026 installment pairs **DeepSeek V4 Pro 0813** (max, $0.24/rollout) against **Claude Fable 5** (max, $21.63/rollout) — a 90x cost gap:
+
+- Fable leads first-shot quality (69.7% vs 62.8% pass@1) but Pro erases the lead under retries (pass@4: 88.5% vs 84.1%)
+- 260 solves per $100 for Pro vs 3 for Fable; no speed penalty (Fable is simply far more verbose: 115k output tokens)
+- Fable's price-justifying cells: Rust (85% vs 65%) and serialization-heavy work; Pro wins concurrency and durability (58 vs 45)
+- Lowest per-task correlation of any measured pairing (0.39) → union covers 94.7% of tasks; Pro-first cascade reaches **82.7% at $8.28/task** (vs Fable alone 69.7% at $21.63, and above a one-shot oracle router at 78.8%)
+- Follow-up to the July 2026 Kimi K3 vs GPT-5.6 Sol comparison (85.6% cascade accuracy at 95.6% coverage)
+
+Full results and routing analysis: [[concepts/ai-benchmarks/deepswe-benchmark|DeepSWE Benchmark page]].
+
+Source: [DeepSeek V4 Pro 0813 vs Claude Fable 5 on DeepSWE — Together AI Blog](https://www.together.ai/blog/deepseek-v4-pro-0813-vs-claude-fable-5-on-deepswe-cost-coding-and-routing) (Aug 2026)
 
 
 ## World's Fastest Speech-to-Text Stack (May 2026)
