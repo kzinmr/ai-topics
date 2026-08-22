@@ -2,6 +2,17 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-22] dreaming wiki-ingest | Pattern E saturation — 1 sitemap-batch reference enrichment (Decagon Assist)
+
+- **Context**: dreaming checkpoint `20260822T180012Z` had 0 collected articles (RSS 0 + newsletter 0 over 08-15..08-22) but 179 recent raw articles. Today's blog-wiki-ingest (10:01, commit `5ab48c00`) already enriched the full 10:01 batch: `concepts/ai-bubble-economics` + `concepts/subprime-data-center-crisis` (Marcus "Data center madness" capex-to-revenue + political-economy), `entities/gary-marcus` (Data center madness section), `entities/matklad-github-io` (Rust Glancer three-tier analyzer), `entities/simon-willison` (Stop Making TUIs + llm 0.32.1 / llm-openrouter 0.7), `entities/seangoedecke-com` (never be angry at work). The archive-index absence probe surfaced the **08-20 06:00 sitemap batch** (Decagon Assist, Harvey drafting-clauses, ElevenLabs AIUC-1 — scrape failure, Parallel search API — scrape failure) and the **08-22 06:00 sitemap batch** (Harvey author page, ElevenLabs subtitle how-to) as never-triaged.
+- **Takes**: 0. **Reference enrichments: 1**:
+  - `entities/decagon.md` — new section "Decagon Assist — AI Copilot for Human Representatives (Aug 2026)": human-facing AI copilot for escalated cases; Summary / Next-step actions / Ask AI (zero-data-retention KB query) / cross-CRM (Salesforce, Zendesk, Front) / shared knowledge base between AI agent + human-assist layer / analytics hub by team/rep/workflow. Positions Decagon against the "AI replaces the rep" framing — quality bar doesn't drop at escalation. Frontmatter `updated` → 2026-08-22, source added.
+- **Skips**: `2026-08-22_harvey_connor-molloy` (sitemap author/profile page — nav chrome + bio only, no article content); `2026-08-22_elevenlabs_how-to-add-subtitles-to-a-video` (product how-to, no new technical depth). Scrape-failure files from 08-20 sitemap batch (`2026-08-20_elevenlabs_what-is-aiuc-1` 14 lines, `2026-08-20_parallel-web-systems_artifical-analysis-best-search-api` 14 lines) — no body, nothing to triage. `2026-08-20_harvey_drafting-clauses-in-legal-documents` — product marketing for drafting-clauses workflow; no new technical depth beyond existing harvey.md content.
+- **Archive**: 3 candidates, 3 newly archived (total archive URLs now 2,782). Archive: `wiki/raw/archived/triage/dreaming/2026-08-22_20260822T180012Z.json`.
+- **Saturation**: consecutive dreaming cycles (08-13, 08-14, 08-15, 08-19, 08-21, 08-22) all Pattern E saturation — archive index 2,782 URLs confirms comprehensive coverage; only sitemap-monitor batches occasionally surface a genuine gap (today: Decagon Assist, the first human-rep copilot product in Decagon's line).
+
+
+
 ## [2026-08-22] watchdog | Auto-fix: dspy namespace error + pipeline state verified
 
 - **dspy namespace fix**: 43 `[[entities/dspy]]` → `[[concepts/dspy]]` across 33 files. `entities/dspy.md` did not exist; `concepts/dspy.md` is the canonical rich page (16KB). Batch regex rename (Pattern A namespace error, per wiki-graph-health skill). Verified via git diff: 42 ins / 42 del, symmetric, 0 remaining bad refs.

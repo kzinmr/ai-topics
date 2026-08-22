@@ -1,0 +1,36 @@
+{
+  "archived_at": "2026-08-22T18:08:22.697880+00:00",
+  "triage_run_id": "20260822T180012Z",
+  "source": "dreaming",
+  "summary_ja": "Saturation cycle: 0 takes, 1 reference enrichment (Decagon Assist — human-rep AI copilot, new product absent from decagon.md), 2 skips (harvey author page = nav chrome only; elevenlabs subtitle how-to = non-technical product tutorial). Checkpoint had 0 collected articles over 08-15..08-22 but 179 recent raw articles; blog-wiki-ingest (10:01) already enriched gary-marcus / matklad / simon-willison / seangoedecke / ai-bubble-economics from the same 10:01 batch; archive-index probe surfaced the 08-20 06:00 sitemap batch (Decagon Assist, Harvey drafting-clauses, ElevenLabs AIUC-1 scrape failure, Parallel search API scrape failure) + 08-22 06:00 sitemap batch (Harvey author page, ElevenLabs subtitle how-to).",
+  "decisions": [
+    {
+      "source": "dreaming",
+      "recommended_action": "reference",
+      "title": "Decagon — Introducing Decagon Assist: Empower every representative to deliver concierge experiences",
+      "url": "https://decagon.ai/blog/decagon-assist",
+      "raw_path": "wiki/raw/articles/2026-08-20_decagon_decagon-assist.md",
+      "candidate_wiki_path": "entities/decagon.md",
+      "reason": "New product (Decagon Assist, Aug 19 2026) — AI copilot for human reps with Summary/Next-step/Ask-AI/cross-CRM/shared-KB/analytics-hub capabilities; zero coverage in entities/decagon.md (page already has Duet Autopilot + Browser Actions + TTS sections but no Decagon Assist)",
+      "body_excerpt": "# Introducing Decagon Assist: Empower every representative to deliver concierge experiences\n**Source**: [https://decagon.ai/blog/decagon-assist](https://decagon.ai/blog/decagon-assist)\nDecagon Dialogues 2026 is here.\nRegister today\nProduct\nProduct overview\nChannels\nVoice\nHuman-like conversation\nChat"
+    },
+    {
+      "source": "dreaming",
+      "recommended_action": "skip",
+      "title": "Harvey — Author page: Connor Molloy",
+      "url": "https://www.harvey.ai/blog/author/connor-molloy",
+      "raw_path": "wiki/raw/articles/2026-08-22_harvey_connor-molloy.md",
+      "reason": "Sitemap-scraped author/profile page — navigation chrome + bio only, no article content (Pattern E author-page skip)",
+      "body_excerpt": "# Connor Molloy, Author at Harvey\n**Source**: [https://www.harvey.ai/blog/author/connor-molloy](https://www.harvey.ai/blog/author/connor-molloy)\n:Harvey:\nPlatform\nSolutions\nCustomers\nSecurity\nResources\nCompany\nOverview\n→\nA unified view of how Harvey's products work together to support your entire pr"
+    },
+    {
+      "source": "dreaming",
+      "recommended_action": "skip",
+      "title": "ElevenLabs — How to add subtitles to a video",
+      "url": "https://elevenlabs.io/blog/how-to-add-subtitles-to-a-video",
+      "raw_path": "wiki/raw/articles/2026-08-22_elevenlabs_how-to-add-subtitles-to-a-video.md",
+      "reason": "Product how-to/tutorial (subtitles feature walkthrough); no technical depth, no new model or architecture detail beyond what entities/elevenlabs.md already covers",
+      "body_excerpt": "# How to add subtitles to a video: YouTube, desktop, mobile\n**Source**: [https://elevenlabs.io/blog/how-to-add-subtitles-to-a-video](https://elevenlabs.io/blog/how-to-add-subtitles-to-a-video)\nBlog\nResources\nHow to add subtitles to a video for wider audience reach\nWritten by\nJack\nLimebear\nPublished\n"
+    }
+  ]
+}

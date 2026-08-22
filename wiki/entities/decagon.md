@@ -2,7 +2,7 @@
 title: "Decagon"
 type: entity
 created: 2026-05-08
-updated: 2026-08-21
+updated: 2026-08-22
 tags:
   - company
   - ai-agents
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-08-13_decagon_browser-actions.md
   - raw/articles/2026-08-19_decagon_teaching-flow-matching-tts-with-rl.md
   - raw/articles/2026-08-21_decagon_scaling-real-time-tts-inference.md
+  - raw/articles/2026-08-20_decagon_decagon-assist.md
 ---
 
 # Decagon
@@ -132,6 +133,22 @@ Decagon published "Scaling real-time text-to-speech inference," detailing its **
 [[concepts/inference]] | [[entities/vibevoice]] | [[concepts/ai-agents]]
 
 Source: [Scaling real-time text-to-speech inference — Decagon Blog](https://decagon.ai/blog/scaling-real-time-tts-inference) (Aug 2026)
+
+## Decagon Assist — AI Copilot for Human Representatives (Aug 2026)
+
+Decagon launched **Decagon Assist**, a human-facing AI copilot for the customer support reps who handle escalated cases that the automated agents could not resolve end-to-end. The product targets the exact gap in the "human-in-the-loop" support model: when a case is escalated, the representative is left piecing together context from transcripts, juggling a CRM + knowledge base + 2-3 internal tools, then drafting the reply from scratch.
+
+**Core capabilities:**
+- **Summary**: injects context from the preceding Decagon-agent conversation into the rep's view, so they start caught up rather than re-deriving state mid-call.
+- **Next-step actions**: consolidates the steps scattered across CRM/knowledge-base/internal systems into a single console; recognizes known workflow matches and reduces the next step to a single click; drafts a reply grounded in the org's brand guidelines.
+- **Ask AI**: free-form query interface over the org's knowledge base for edge-case questions that fall outside any defined workflow — backed by enterprise security policies including zero data retention.
+- **Cross-channel + cross-CRM**: activates inside Salesforce, Zendesk, and Front; adds live transcription + next-step guidance on voice, real-time translation on chat.
+- **Shared knowledge base**: one knowledge base powers both the Decagon agent and the human-assist layer, plus taps into the internal-only knowledge bases reps already rely on — no duplicate content to keep in sync.
+- **Analytics hub**: adoption + outcome visibility by team / rep / workflow (CSAT, latency, which next-step actions fire, where adoption stalls), aligned with the platform's automated-side analytics so CX leaders see the full end-to-end picture.
+
+**Significance**: Decagon Assist extends Decagon's "concierge experience" standard from the AI-agent side of a support conversation to the human side — the company's explicit argument is that the quality bar shouldn't drop the moment a case escalates to a human. It also positions Decagon against the "AI replaces the rep" framing: the human rep becomes an extension of the same AI layer that resolves the automated cases, with a shared knowledge base and shared analytics rather than a parallel tool stack.
+
+Source: [Introducing Decagon Assist — Decagon Blog](https://decagon.ai/blog/decagon-assist) (Sambhav Jain, PM, Aug 19, 2026)
 
 ## Related
 
