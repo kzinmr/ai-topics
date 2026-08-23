@@ -2187,7 +2187,7 @@
 - [[concepts/max-irwin]] — Max Irwin
 - [[concepts/maxime-chevalier-boisvert]] — Maxime Chevalier-Boisvert
 - [[concepts/mcp]] — MCP (Model Context Protocol)
-- [[concepts/mcp-2026-07-28-spec]] — MCP 2026-07-28 Specification Update — Fifth major MCP release; streaming HTTP transport, stateless remote servers, JSON-RPC batching, App/Task/Managed Auth primitives
+- [[concepts/mcp-2026-07-28-spec]] — MCP 2026-07-28 Specification Update — Fifth major MCP release; streaming HTTP transport, stateless remote servers, JSON-RPC batching, App/Task/Managed Auth primitives; New MCP Roadmap (Aug 22): agentic messaging, HTTP-native transport, agent identity/enterprise security
 - [[concepts/mcp-desktop-extensions]] — Desktop Extensions (MCP Bundle)
 - [[concepts/mcp-enterprise-oauth]] — MCP Enterprise OAuth — Managed Authentication
 - [[concepts/mcp-protocol]] — MCP Protocol Testing & Security
@@ -2539,7 +2539,7 @@
 - [[concepts/pytorch-fsdp-distributed-training]] — PyTorch FSDP — Distributed Training
 - [[concepts/pytorch-reference-language]] — PyTorch: A Reference Language — Proposal to treat PyTorch programs as a formal reference language for ML computation; fundamental shift in ML compiler design
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
-- [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — Infrastructure Noise in Agentic Coding Evals — OpenAI analysis of SWE-Bench Pro reliability; benchmaxxing, harness variance, private benchmarks
+- [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — Infrastructure Noise in Agentic Coding Evals — OpenAI analysis of SWE-Bench Pro reliability; benchmaxxing, harness variance, private benchmarks; + local LLM inference-stack noise (Level1Techs, Aug 2026)
 - [[concepts/quepid]] — Quepid
 - [[concepts/query-understanding]] — Query Understanding
 - [[concepts/queueing-theory]] — Queueing Theory

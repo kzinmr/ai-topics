@@ -1,4 +1,14 @@
 # Wiki Log
+## [2026-08-23] trending-topics | Daily scan — 2 enrichments (MCP Roadmap, local LLM inference noise)
+
+- **Context**: 12:00 UTC trending-topics run. Sources: blogwatcher scan 20260823T100058Z (21 new, 13 saved; AI-relevant: simonwillison llm 0.33 + more-than-just-code-review + linus-torvalds quote, garymarcus ARR-vs-ARR, lucumr fast-hard-code), sitemap-monitor 06:00 (Parallel Web Systems "artificial-analysis best search API" — raw only), newsletter uid=543 (fully Cloudflare-blocked, 0 takes), HN front page (3-day window).
+- **Changes**:
+  - `concepts/mcp-2026-07-28-spec.md` — new section "New MCP Roadmap (Aug 22, 2026)": agentic messaging primitives, HTTP-native transport unification/hardening, agent identity + enterprise security, improved primitives/SDK DX, proposal prioritization; recap of 2026-07-28 landing (SEP-2575/2567 stateless sessions, server/discover, SEP-2549 cacheable lists, SEP-2663 Tasks extension, SEP-2322 multi round-trip requests); HN item 49399591 (222 pts); `updated` → 2026-08-23, source added.
+  - `concepts/quantifying-infrastructure-noise-in-agentic-coding-evals.md` — new section "Community Corroboration": Level1Techs "Why your local LLM feels dumber than it is" (HN 383 pts, item 49402232) — consumer-side echo of harness-variance finding (GPU instruction-set FP variance, quantization/stack artifacts, run-your-own-benchmarks prescription); `updated` → 2026-08-23, source added.
+- **index.md**: 2 entries bumped (mcp-2026-07-28-spec, quantifying-infrastructure-noise).
+- **Report**: `inbox/rss-scans/trending-topics-2026-08-23.md`.
+- **Not ingested (report-only)**: Prime Intellect NanoGPT Speedrun Frontier (153 runs / 18 frontier models; Fable 5 leads 81.7% gap closure at 8.7d) — candidate for `concepts/ai-benchmarks/nanogpt-speedrun` next cycle; Munder Difflin (HN #1 trending, 289 pts) — "office of clones" multi-agent harness; Reuters "Texas student blew whistle on rogue AI hacking attempt" (HN 171 pts, paywalled); "A week of using Codex more than Claude" (Codex vs Claude Code field notes); "ElevenLabs, TwelveLabs, ThirteenLabs…" (HN 415 pts, meta/naming-trend, low wiki actionability).
+
 ## [2026-08-23] newsletter-wiki-ingest | beehiiv uid=543 issue fully Cloudflare-blocked - 0 takes, 3 skips archived
 
 - **Context**: newsletter-triage JSON-parse failure recovery (pre-run script error); inbox pre-triage summary (`wiki/raw/inbox/newsletter-ingest/20260823T101317Z.json`) used as primary source since all beehiiv URLs returned HTTP 403.

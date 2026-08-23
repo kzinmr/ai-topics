@@ -4,7 +4,7 @@ type: concept
 aliases:
   - quantifying-infrastructure-noise-in-agentic-coding-evals
 created: 2026-04-25
-updated: 2026-07-09
+updated: 2026-08-23
 tags:
   - coding-agents
   - benchmark
@@ -16,6 +16,7 @@ tags:
 sources:
   - raw/articles/2026-07-08_openai_coding-evaluation-noise.md
   - https://openai.com/index/separating-signal-from-noise-coding-evaluations/
+  - https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917
 ---
 
 # Quantifying Infrastructure Noise in Agentic Coding Evals
@@ -49,6 +50,16 @@ OpenAI's post was released at a strategically notable time:
 - The post came days before OpenAI's anticipated **GPT-5.6 model family announcement** (Sol, Terra, Luna)
 
 Multiple HN commenters noted that the timing suggested OpenAI was establishing a narrative framework for evaluating its upcoming models — advocating for rigorous evaluation methodology before their own new models would be assessed.
+
+## Community Corroboration: "Why your local LLM feels dumber than it is" (Aug 2026)
+
+A Level1Techs forum post (HN 383 points, [item?id=49402232](https://news.ycombinator.com/item?id=49402232)) applied the same infrastructure-noise lens to **consumer/local LLM setups** — a different user base, same structural problem. The author's experiments argue that local inference "feels dumber than it is" because of implementation-specific hazards:
+
+- **Hardware variance**: Even with identical weights, different GPU generations/instruction sets execute floating-point math differently, so every home lab's results differ from the reference implementation the lab benchmarked.
+- **Quantization + serving stack**: A 2.58-bit GGUF inside Ollama with a couple of test prompts is not the reference configuration; benchmark deltas between "the model" and "your model" are often stack artifacts, not model capability gaps.
+- **Practical prescription**: Run multiple standard benchmarks representative of your actual workload before drawing conclusions about a local model's quality.
+
+This is the consumer-side echo of OpenAI's harness-variance finding: the gap between advertised benchmark numbers and perceived quality is dominated by the inference stack, and it applies to local/self-hosted deployments just as much as to agentic coding evals.
 
 ## Implications for Evaluation Design
 
