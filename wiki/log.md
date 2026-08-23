@@ -2,6 +2,11 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-23] slack hot-posts (morning) | DeepSWE V4-Pro-0813 vs Fable 5 delivery — cross-link enrichment
+
+- **Context**: morning slot (09:30 JST) post on the Aug 18 Together AI DeepSWE head-to-head (DeepSeek V4 Pro 0813 vs Claude Fable 5) — first delivery of this cluster. Dedup verified: no `concepts/ai-benchmarks/deepswe-benchmark`, `entities/together-ai`, `concepts/deepseek-v4`, or `concepts/claude/fable-5` wikilinks appear in the 8 recently covered Slack posts (most recent: 08-20 warp-factories / 08-20 FHE-HEIR / 08-19 warp+failure-taxonomy).
+- **Changes**: `concepts/deepseek-v4.md` — added one-line "DeepSWE head-to-head (Aug 2026)" pointer under Historical Significance + Related Pages entry to the benchmark page (detail stays on the benchmark page to avoid duplication); `updated` → 2026-08-23. index.md already reflected the head-to-head (08-22 dreaming pass). No new pages.
+
 ## [2026-08-22] dreaming wiki-ingest | DeepSWE head-to-head enrichment from untriaged raw backlog
 
 - **Context**: dreaming-group upstream failed on JSON render (local LLM 503 "Local LLM server is busy"), but had already run Pattern E, saved `triage_latest.json` (08:30 UTC: 1 reference + 2 skips) and committed the Decagon Assist enrichment + archive at 18:10 UTC (commit `2ead23f7`). This pass independently re-ran the Pattern E archive-index absence probe against `raw/articles/` (6,970 candidates per `raw_backlog_collect.py --dry-run`).

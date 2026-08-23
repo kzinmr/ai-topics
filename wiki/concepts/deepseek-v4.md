@@ -1,7 +1,7 @@
 ---
 title: DeepSeek-V4
 created: 2026-05-08
-updated: 2026-08-16
+updated: 2026-08-23
 type: concept
 tags:
   - model
@@ -399,6 +399,8 @@ DeepSeek-V4 is a milestone achievement in the following respects:
 6. **Agent-Native Design**: Interleaved Thinking, Quick Instruction — the first DeepSeek model designed from the start for agent use cases
 7. **SWE-bench 80.6%**: First open-weight model to break the 80% barrier. A landmark achievement in democratizing coding agent performance
 
+**DeepSWE head-to-head (Aug 2026)**: DeepSeek V4 Pro 0813 vs Claude Fable 5 on the [[concepts/ai-benchmarks/deepswe-benchmark|DeepSWE]] benchmark — Pro costs $0.24/rollout vs Fable's $21.63 (90× gap) yet wins pass@4 (88.5% vs 84.1%); Fable's price is justified only in Rust (85% vs 65%) and serialization-heavy work. Full analysis lives on the benchmark page.
+
 ## Related Pages
 
 - [[entities/deepseek]] — DeepSeek company overview
@@ -412,3 +414,4 @@ DeepSeek-V4 is a milestone achievement in the following respects:
 - [[fp4]] — 4-bit quantization
 - [[tilelang]] — Kernel development DSL
 - [[concepts/inference]] — Inference optimization techniques
+- [[concepts/ai-benchmarks/deepswe-benchmark]] — Aug 2026 head-to-head vs Claude Fable 5 (V4 Pro 0813: 90× cheaper, higher pass@4)
