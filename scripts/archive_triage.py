@@ -158,11 +158,28 @@ def archive_pipeline(pipeline: str, keep_reference: bool = False) -> dict:
         "decisions": new_items,
     }
 
-    # Save to archive file
+    # Save to archive file (merge if the dated file already exists — e.g. a
+    # second archive run for the same triage_run_id must APPEND its newly
+    # deduped items instead of clobbering the first-pass decisions, which are
+    # the permanent "why dismissed" record; URL dedup is handled by the index)
     archive_dir = ARCHIVE_ROOT / cfg["subdir"]
     archive_dir.mkdir(parents=True, exist_ok=True)
     date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     archive_path = archive_dir / f"{date_str}_{run_id}.json"
+    if archive_path.exists():
+        try:
+            existing = json.loads(archive_path.read_text(encoding="utf-8"))
+            existing_decisions = existing.get("decisions", [])
+            existing_urls = {d.get("url", "") for d in existing_decisions if d.get("url")}
+            existing_ids = {d.get("item_id", "") for d in existing_decisions if d.get("item_id")}
+            appended = [d for d in new_items
+                        if d.get("url", "") and d["url"] not in existing_urls
+                        and d.get("item_id", "") not in existing_ids]
+            new_items = existing_decisions + appended
+            archive_payload["archived_at"] = datetime.now(timezone.utc).isoformat()
+        except (json.JSONDecodeError, OSError):
+            # Unreadable/corrupt existing file — keep the new payload only
+            pass
     archive_path.write_text(json.dumps(archive_payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # Update index
