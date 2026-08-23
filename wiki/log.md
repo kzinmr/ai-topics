@@ -24,6 +24,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-08-23] dreaming wiki-ingest | Pattern E saturation — 0 takes, 0 references, 11 skips archived
+
+- **Context**: Dreaming checkpoint `20260823T180030Z` had 0 RSS + 0 newsletter articles over 08-16..08-23, but 174 recent raw articles. Archive-index absence probe over `raw/articles/` found 56 untriaged files (33 AI-relevant, 23 non-AI). All 11 AI-relevant candidates classified as skip: 7 already covered by today's blog-wiki-ingest / trending-topics / prior dreaming passes (Marcus ARR-vs-ARR + Leopold's Folly + OpenAI AI Futures + Stampli, Goedecke never-angry, Sierra release governance, DeepSWE head-to-head), 2 scrape failures (Parallel Web Systems "best search API" — 0KB body, brotli error on 08-20 + 08-23; RawWorks RLM ×2 — no URL, stale April 2026), 2 non-AI/thin (John Cook ASCII diagrams, Gary Marcus surveillance-tool — 0KB).
+- **Triage**: 11 decisions (0 takes, 0 references, 11 skips). Prior dreaming-group triage (20260822T183000Z, commit `7bf4156f`) was consumed and already handled the DeepSWE head-to-head enrichment.
+- **Archive**: 11 candidates, 11 newly archived. `archive_index.json` total: 2,795 URLs.
+- **Files**: `wiki/raw/archived/triage/dreaming/2026-08-23_20260823T180030Z.json`
+- **Gaps noted for future cycles**: Parallel Web Systems "artificial-analysis best search API" (scrape-failed ×2 — needs browser-based or direct HTML fetch); RawWorks RLM series (stale, no fresh angle).
+
 ## [2026-08-23] slack hot-posts (morning) | DeepSWE V4-Pro-0813 vs Fable 5 delivery — cross-link enrichment
 
 - **Context**: morning slot (09:30 JST) post on the Aug 18 Together AI DeepSWE head-to-head (DeepSeek V4 Pro 0813 vs Claude Fable 5) — first delivery of this cluster. Dedup verified: no `concepts/ai-benchmarks/deepswe-benchmark`, `entities/together-ai`, `concepts/deepseek-v4`, or `concepts/claude/fable-5` wikilinks appear in the 8 recently covered Slack posts (most recent: 08-20 warp-factories / 08-20 FHE-HEIR / 08-19 warp+failure-taxonomy).
