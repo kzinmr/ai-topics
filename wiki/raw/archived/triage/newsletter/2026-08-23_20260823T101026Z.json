@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-08-23T10:58:15.330320+00:00",
+  "triage_run_id": "20260823T101026Z",
+  "source": "newsletter",
+  "summary_ja": "1件のbeehiivニュースレターを処理。take 0件: 'Nobody Knows How Big the Biggest Run Is' (uid=543, 2026-08-22) - 全18リンクがbeehiiv tracking URLでHTTP 403 Cloudflare-blocked。inbox pre-triage summaryによるとトピックはAI/LLM-agentでは確認されておらず、件名からcrypto/markets可能性が高い。既存wikiへの追加価値なしと判断。skip 3件 (newsletter本体1件 + tracking links 1件 + UI noise 1件)。",
+  "decisions": [
+    {
+      "item_id": "news-20260823-uid543-biggest-run",
+      "source": "newsletter",
+      "source_name": "beehiiv newsletter (uid=543)",
+      "title": "Nobody Knows How Big the Biggest Run Is",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-22-nobody-knows-how-big-the-biggest-run-is.md",
+      "recommended_action": "skip",
+      "reason_ja": "全beehiiv URLが403期限切れ・inbox summary不在・件名から推測されるトピックは既存Wikiで詳細カバー済み",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-08-22\n**Subject:** Nobody Knows How Big the Biggest Run Is\n**Collected:** 2026-08-23T10:10:25.427407+00:00\n**Articles linked:** 18\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/aab7f654caccb2abc30ba6e00b2d15ca5122d15e5bbca59c44f93442a9e8f177d123476ae32a909c4e467"
+    },
+    {
+      "item_id": "news-20260823-noise-beehiiv-tracking",
+      "source": "newsletter",
+      "source_name": "beehiiv (uid=543)",
+      "title": "Beehiiv tracking links (Links 1-16)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "16個のbeehiiv tracking redirect (link.mail.beehiiv.com/v2/c/...) すべてHTTP 403 Cloudflare-challenged。個々の記事タイトル・URL・内容抽出不可。newsletterレベルで一括分類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "beehiiv tracking URL - 本文なし。"
+    },
+    {
+      "item_id": "news-20260823-noise-beehiiv-ui",
+      "source": "newsletter",
+      "source_name": "beehiiv platform",
+      "title": "Beehiiv UI/infra noise (Links 17-18)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "Link 17 = hp.beehiiv.com main post (Cloudflare 403 'Just a moment'), Link 18 = beehiiv status page (email.beehiivstatus.com/hclick) - pure platform noise. 記事コンテンツなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "beehiiv UI noise - 本文なし。"
+    }
+  ]
+}

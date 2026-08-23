@@ -1,4 +1,16 @@
 # Wiki Log
+## [2026-08-23] newsletter-wiki-ingest | beehiiv uid=543 issue fully Cloudflare-blocked - 0 takes, 3 skips archived
+
+- **Context**: newsletter-triage JSON-parse failure recovery (pre-run script error); inbox pre-triage summary (`wiki/raw/inbox/newsletter-ingest/20260823T101317Z.json`) used as primary source since all beehiiv URLs returned HTTP 403.
+- **Checkpoint**: `latest.json` run 20260823T101026Z - 1 newsletter ('Nobody Knows How Big the Biggest Run Is', uid=543, 2026-08-22, 18 links).
+- **Decisions (3)**:
+  - `skip`: newsletter body (uid=543 'Nobody Knows How Big the Biggest Run Is') - all 18 links beehiiv tracking/UI, HTTP 403 Cloudflare-challenged; inbox summary rates topic UNCONFIRMED as AI (likely crypto/markets given 'Run' + 'Biggest Run' framing). No wiki change.
+  - `skip`: 16 beehiiv tracking redirects (link.mail.beehiiv.com/v2/c/...) - unresolvable via CLI.
+  - `skip`: beehiiv UI/infra noise (Link 17 hp.beehiiv.com main post 403 'Just a moment'; Link 18 status pixel).
+- **Wiki changes**: none (0 takes).
+- **Archive**: 3 candidates, 3 newly archived. Archive: `wiki/raw/archived/triage/newsletter/2026-08-23_20260823T101026Z.json` (total archive URLs now 2,786).
+- **Note**: 3rd consecutive run with fully Cloudflare-blocked beehiiv issue (2026-08-19, 2026-08-20, 2026-08-22). Inbox recommendation: consider browser-based beehiiv resolver as a standing capability.
+
 
 _Log of all wiki changes. Newest entries at top._
 
