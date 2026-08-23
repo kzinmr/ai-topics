@@ -24,6 +24,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-23] dreaming wiki-ingest (2nd pass) | Saturation confirmed - archive-index probe: 0 new takes, 28 URL-keyed skips archived
+
+- **Context**: upstream dreaming-group JSON-render failure (Pitfall #12 variant) - its analysis was fully persisted in `ddd8566e` (Pattern E saturation, 0 takes / 0 refs / 11 skips) plus `triage_latest.json` (20260823T180030Z) and the 08-23 18:24 archive JSON. Second-pass independent verification: re-ran `check_archive_index_absence.py` -> 42 never-archived raw articles; all 28 URL-keyed ones cross-checked against today's log.md entries (blog-wiki-ingest `66fe7258`: 13 blog articles incl. Marcus data-center-madness, Simon Willison llm 0.33/0.32.1+openrouter 0.7/stop-making-TUIs, Goedecke never-angry-at-work, matklad Rust Glancer/Better Batteries, lucumr fast-hard-code; trending-topics `9201aefe`: MCP Roadmap + local-LLM inference noise; newsletter `c42926c1`: uid=543 403) - every one already classified skip. No new takes or references.
+- **Non-AI batch (URL-less, body-triage)**: 14 URL-less raw files from the 08-21/08-22 batch (construction-physics reading list, pluralistic epistemic-void, lwn, dfarq adobe-ipo, jeffgeerling steam-deck hat, anildash dashboard-touch, matduggan greek all-inclusive, bsky masnick post, timmarinin bluesky screenshots, troyhunt sri-lanka, corporate.walmart tap-to-pay, devblogs oldnewthing, blog.jim-nielsen sloppy-ui, simonwillison matt-webb) - non-AI or low wiki value, skip.
+- **RawWorks RLM x2**: April 2026, URL-less, stale - skip (topics covered by concepts/rlms + concepts/recursive-language-models).
+- **Archive**: 28 URL-keyed decisions appended to the dated archive JSON (11 first-pass + 28 second-pass = 39 total; RawWorks x2 URL-less, written to file but not URL-indexed by design - Pitfall #16 note). `archive_index.json` total: 2,795 URLs (8 new URL keys from second-pass batch).
+- **Known gap (unchanged, noted for next cycle)**: Parallel Web Systems artificial-analysis best-search-API - raw article on disk is 0KB (scrape failure x2); entities/parallel-web-systems.md lacks a search-API benchmark section. Needs browser-based or direct HTML fetch, out of scope for this pass.
+- **Commit scope**: archive files only (content files were all already committed by `ddd8566e`).
+
 
 ## [2026-08-23] dreaming wiki-ingest | Pattern E saturation — 0 takes, 0 references, 11 skips archived
 
@@ -59,8 +68,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Skips**: `2026-08-22_harvey_connor-molloy` (sitemap author/profile page — nav chrome + bio only, no article content); `2026-08-22_elevenlabs_how-to-add-subtitles-to-a-video` (product how-to, no new technical depth). Scrape-failure files from 08-20 sitemap batch (`2026-08-20_elevenlabs_what-is-aiuc-1` 14 lines, `2026-08-20_parallel-web-systems_artifical-analysis-best-search-api` 14 lines) — no body, nothing to triage. `2026-08-20_harvey_drafting-clauses-in-legal-documents` — product marketing for drafting-clauses workflow; no new technical depth beyond existing harvey.md content.
 - **Archive**: 3 candidates, 3 newly archived (total archive URLs now 2,782). Archive: `wiki/raw/archived/triage/dreaming/2026-08-22_20260822T180012Z.json`.
 - **Saturation**: consecutive dreaming cycles (08-13, 08-14, 08-15, 08-19, 08-21, 08-22) all Pattern E saturation — archive index 2,782 URLs confirms comprehensive coverage; only sitemap-monitor batches occasionally surface a genuine gap (today: Decagon Assist, the first human-rep copilot product in Decagon's line).
-
-
 
 ## [2026-08-22] watchdog | Auto-fix: dspy namespace error + pipeline state verified
 
@@ -132,8 +139,6 @@ _Log of all wiki changes. Newest entries at top._
 - No wiki pages modified this run (analysis only). index.md + log.md updated.
 
 ---
-
-
 
 ## [2026-08-21] blog-wiki-ingest | ChatGPT `site:` operator, Sierra release governance, Goedecke watermark quiz, Marcus "Leopold's Folly"
 
