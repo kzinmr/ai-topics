@@ -241,7 +241,7 @@
 - [[entities/doug-turnbull-speaking]] — Doug Turnbull - Speaking & Community
 - [[entities/doug-turnbull-timeline]] — Doug Turnbull - Career Timeline
 - [[entities/downtowndougbrown-com]] — Doug Brown (Downtown Doug Brown)
-- [[entities/drew-breunig]] — Drew Breunig; updated with drskill, skilled-proposer, and "Separating Task from Model" (July 25)
+- [[entities/drew-breunig]] — Drew Breunig; updated with "Fable & The End of the Free Lunch" (Aug 23) + dspy-monty-interpreter v0.4.1 (Aug 23)
 - [[entities/drew-breunig--core-ideas]] — Drew Breunig — Core Ideas & Philosophy
 - [[entities/drew-breunig--projects]] — Drew Breunig — Key Projects
 - [[entities/drew-breunig--timeline]] — Drew Breunig — Timeline & Career History
@@ -1607,7 +1607,7 @@
 - [[concepts/deepseek-r1]] — DeepSeek-R1
 - [[concepts/deepseek-v3]] — DeepSeek-V3
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2
-- [[concepts/deepseek-v4]] — DeepSeek-V4 — 1.6T MoE, 1M context, Hybrid Attention, Unsloth GGUF quants available; V4-Pro-0813 checkpoint (Aug 13, API-only, OpenRouter); V4-Pro GA release + peak/off-peak pricing (Aug 13); V4-Pro vs Fable 5 DeepSWE head-to-head: 90x cheaper, pass@4 88.5 vs 84.1, Pro-first cascade 82.7% at $8.28 (Aug 18-22)
+- [[concepts/deepseek-v4]] — DeepSeek-V4 — 1.6T MoE, 1M context, Hybrid Attention, Unsloth GGUF quants available; V4-Pro-0813 checkpoint (Aug 13, API-only, OpenRouter); V4-Pro GA release + peak/off-peak pricing (Aug 13); V4-Pro vs Fable 5 DeepSWE head-to-head: 90x cheaper, pass@4 88.5 vs 84.1, Pro-first cascade 82.7% at $8.28 (Aug 18-22); Breunig "End of the Free Lunch" (Aug 23): GLM-tier models + strong context now handle most rote coding, Fable reserved for design work
 - [[concepts/deepseek-v4-serving]] — Serving DeepSeek-V4: Inference Systems Perspective
 - [[concepts/deepseek-vision]] — DeepSeek Vision — Multimodal Capabilities
 - [[concepts/deepspec-dspark]] — DeepSpec & DSpark — DeepSeek open-source speculative decoding inference framework; DSpark distributed engine achieves 60–85% faster LLM generation; supports DSpark/DFlash/Eagle3 draft models (June 27)

@@ -2,7 +2,7 @@
 title: Drew Breunig
 type: entity
 created: 2026-04-10
-updated: 2026-07-25
+updated: 2026-08-23
 source: blog
 tags:
   - person
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-06-22_dbreunig_prompt-debt.md
   - raw/articles/2026-06-23_dbreunig_scaffold-docs-skill.md
   - raw/articles/2026-07-25_cmpnd.ai_separating-task-from-model.md
+  - raw/articles/2026-08-23_dbreunig_fable-end-of-moore-s-law.md
 ---
 
 
@@ -72,6 +73,7 @@ His blog at dbreunig.com, active since 2010, covers AI, geospatial technology, m
 | 2026 | "The Problem is Prompt Debt" — X Article analyzing prompt debt, fighting the weights, and algorithmic prompt search |
 | 2026 | Releases `drskill` — CLI tool for debugging agent skill/MCP loadouts and CI security |
 | 2026 | "Separating Task from Model" — argues for task-model separation as core DSPy/GEPA philosophy |
+| 2026-08-23 | "Fable & The End of the Free Lunch" — Fable ends the "free lunch": agentic coding now requires deliberate work-routing across model tiers (Fable for design, GLM 5.2 for execution) |
 
 ## Core Ideas
 
@@ -262,7 +264,7 @@ For keeping docs in sync as code evolves, the skill records the audience and the
 
 Breunig has been a significant contributor to the DSPy ecosystem, implementing RLM support and demonstrating practical applications:
 
-- **dspy-monty-interpreter**: Drop-in code interpreter using Monty Python emulator for DSPy's RLM module
+- **dspy-monty-interpreter**: Drop-in code interpreter using Monty Python emulator for DSPy's RLM module — v0.4.1 (Aug 23, 2026) brings it to the DSPy 3.3.1 CodeInterpreter protocol + Monty 0.0.20; tells the RLM about Monty's limitations and mounted files, adds callbacks
 - **dspy-tutorial-deep-research**: Tutorial materials for DSPy
 - Presented at Databricks Data + AI Summit 2025 on using DSPy for LLM pipeline optimization
 - Demonstrated optimizing conflation programs across multiple models (Qwen 3 0.6B → 91% performance, Llama 3.2 1B → 95% performance)

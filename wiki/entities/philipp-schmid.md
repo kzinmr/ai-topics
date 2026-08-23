@@ -3,7 +3,7 @@ title: Philipp Schmid
 type: entity
 handle: "@_philschmid"
 created: 2026-04-10
-updated: 2026-06-25
+updated: 2026-08-23
 tags:
   - person
   - model
@@ -159,6 +159,7 @@ Schmid was recognized as the **first German AWS Machine Learning Hero** in 2021,
 
 | Date | Title | Summary |
 |------|-------|---------|
+| 2026-08-21 | Gemini 3.1 Flash Live tops new Artificial Analysis Speech Agent Arena | Schmid highlights that the new blind-preference speech-to-speech arena (artificialanalysis.ai/speech-to-speech/arena) is #1'd by Gemini 3.1 Flash Live — humans prefer talking to Gemini. New evaluation surface for real-time voice agents; tracks live voice conversations with blind user preference. |
 | 2026-06-25 | Control an Android Phone with Gemini 3.5 Flash Computer Use | Comprehensive tutorial covering Gemini 3.5 Flash's Computer Use feature for Android — the screenshot→model→function_call→ADB execution loop, 10 supported mobile actions, normalized coordinate mapping, ADBBridge class, and setup instructions. Companion repo at github.com/google-gemini/gemini-android-computer-use-quickstart. See also: [[concepts/gemini-computer-use]] |
 | 2026-03-28 | How Kimi, Cursor, and Chroma Train Agentic Models with RL | Analysis of how leading AI companies use RL for agent training |
 | 2026-03-24 | Combine Built-in Tools and Function Calling in Gemini Interactions API | Guide to tool integration in Google's agent framework |

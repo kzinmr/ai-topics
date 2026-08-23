@@ -1,4 +1,18 @@
 # Wiki Log
+## [2026-08-23] x-accounts-scan | 7 new posts (11 accounts) — Breunig "Fable & The End of the Free Lunch"
+
+- **Context**: x-accounts-scan run 20260823T223019Z; 84 tracked → 11 scanned (request budget 12); 7 new posts across 6 accounts; cursor 38→49; processed cache 281 (TTL 90d).
+- **Primary ingest**: **Drew Breunig (`@dbreunig`)** — "Fable & The End of the Free Lunch" (dbreunig.com, 2026-08-23): Fable ended the "free lunch" era of agentic coding (analogy: single-thread Moore's Law stagnation); concrete tiering pattern = Fable for design interrogation → GLM 5.2 (~1/9th cost) for rote execution; falling inference prices benefit cheaper models + better harnesses/context; Fable's access controls / data retention lock in token-provenance thinking. 2nd post same day: dspy-monty-interpreter v0.4.1 (DSPy 3.3.1 CodeInterpreter protocol + Monty 0.0.20; RLM informed of Monty limitations + mounted files; callbacks).
+- **Files**:
+  - NEW `raw/articles/2026-08-23_dbreunig_fable-end-of-moore-s-law.md` (full scrape + analysis notes)
+  - `entities/drew-breunig.md` — timeline row + sources + dspy-monty v0.4.1 note; updated→2026-08-23
+  - `entities/drew-breunig--writings.md` — "Fable & The End of the Free Lunch" entry; updated→2026-08-23
+  - `entities/drew-breunig--projects.md` — dspy-monty-interpreter v0.4.1; updated→2026-08-23
+  - `entities/philipp-schmid.md` — Blog table row: Gemini 3.1 Flash Live #1 in new Artificial Analysis Speech Agent Arena (Aug 21); updated→2026-08-23
+  - `entities/mario-zechner.md` — hax (community Haxe game engine) mention; updated→2026-08-23
+  - `index.md` — 2 entries bumped (drew-breunig, deepseek-v4 note)
+- **Skipped (misc, no wiki action)**: `@hynek` argon2-cffi-bindings 26.1.0 (setuptools→scikit-build-core, pyemscripten/RISC-V wheels — Python tooling, non-AI); `@rahulgs` router.com launch (Ramp LLM gateway, "40% avg cost cut" — commercial routing launch, tracked via trending pipeline if it trends); `@karrisaarinen` Linear design-team YouTube video (Linear agent walkthrough — product/design, tangential).
+
 ## [2026-08-23] slack hot-posts (late-night) | NanoGPT Speedrun Frontier — new benchmark page
 
 - **Context**: late-night slot (01:30 JST) post on Prime Intellect's NanoGPT Speedrun Frontier leaderboard (Aug 22, HN 49404380) — first delivery of this cluster. Dedup verified: `concepts/ai-benchmarks/nanogpt-speedrun`, `entities/prime-intellect`, `concepts/ai-benchmarks/swe-bench` wikilinks do not appear in any of the 5 recently covered Slack posts (08-20 warp-factories ×2, 08-20 FHE-HEIR, 08-17 claude prompts, 08-17 watermarking).

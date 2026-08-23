@@ -3,7 +3,7 @@ title: "Drew Breunig — Key Projects"
 type: entity
 parent: drew-breunig
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-08-23
 tags:
   - person
   - methodology
@@ -57,7 +57,7 @@ A proof-of-concept tool for managing the [[concepts/spec-driven-development|Spec
 
 Breunig has been a significant contributor to the [[concepts/dspy|DSPy]] ecosystem, implementing RLM support and demonstrating practical applications:
 
-- **dspy-monty-interpreter**: Drop-in code interpreter using Monty Python emulator for DSPy's RLM module
+- **dspy-monty-interpreter**: Drop-in code interpreter using Monty Python emulator for DSPy's RLM module — v0.4.1 (2026-08-23): DSPy 3.3.1 CodeInterpreter protocol + Monty 0.0.20; RLM now informed of Monty limitations + mounted files; callbacks added
 - **dspy-tutorial-deep-research**: Tutorial materials for DSPy
 - Presented at Databricks Data + AI Summit 2025 on using DSPy for LLM pipeline optimization
 - Demonstrated optimizing conflation programs across multiple models (Qwen 3 0.6B → 91% performance, Llama 3.2 1B → 95% performance)

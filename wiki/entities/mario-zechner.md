@@ -3,7 +3,7 @@ title: Mario Zechner
 type: entity
 handle: "@badlogicgames"
 created: 2026-04-10
-updated: 2026-07-29
+updated: 2026-08-23
 tags:
   - person
   - x-account
@@ -119,6 +119,9 @@ A Java-based game development framework supporting desktop, Android, iOS, and HT
 
 ### Spine Runtimes
 2D skeletal animation software runtimes for multiple platforms (C, C++, C#, Java, Haxe, TypeScript, etc.). Zechner maintains the runtimes and has used his porting methodology (structured LLM programs with human checkpoints) to migrate between versions efficiently.
+
+### hax
+Community Haxe game engine (github.com/OleksandrChekhovskyi/hax) that Zechner publicly praised on Aug 23, 2026 — a Haxe-native alternative to libGDX in his long-time ecosystem.
 
 ### Cards for Ukraine (2022)
 Automated grocery voucher distribution for Ukrainian refugees in Austria:

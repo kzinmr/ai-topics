@@ -3,7 +3,7 @@ title: "Drew Breunig — Writings, Speaking & Key Quotes"
 type: entity
 parent: drew-breunig
 created: 2026-04-10
-updated: 2026-07-25
+updated: 2026-08-23
 tags:
   - person
   - writing
@@ -13,6 +13,7 @@ sources:
   - https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html
   - raw/articles/2026-06-23_drew-breunig-prompt-debt.md
   - raw/articles/2026-07-25_cmpnd.ai_separating-task-from-model.md
+  - raw/articles/2026-08-23_dbreunig_fable-end-of-moore-s-law.md
 ---
 
 # Drew Breunig: Writings, Speaking & Key Quotes
@@ -48,6 +49,7 @@ Since ChatGPT's launch, Breunig's writing shifted intensely toward AI:
 - **Prompt Debt**: "The Problem is Prompt Debt" (June 2026) — X Article analyzing how natural language prompts become a trap, introducing "fighting the weights" and algorithmic prompt search as solutions
 - **RLMs & DSPy**: "The Potential of RLMs" (2026), "Pipelines & Prompt Optimization with DSPy" (2024)
 - **Separating Task from Model**: "The Unreasonable Effectiveness of Separating the Task from the Model" (July 2026) — Argues that formally specifying your task independently of the implementation lets the system evolve as models and techniques change. A core argument for the DSPy/GEPA philosophy: define *what* you want, not *how* to achieve it. Published on cmpnd.ai.
+- **Fable & The End of the Free Lunch** (August 23, 2026): argues Claude Fable ended the "free lunch" era where each new cheaper model papered over weak harnesses — by analogy to single-thread Moore's Law stagnation forcing software to think about what work went where. Concrete tiering pattern: use Fable for design interrogation, hand off briefs to GLM 5.2 (~1/9th the cost) for rote coding; argues falling inference prices benefit cheaper models too (better harnesses + context = weaker models perform well), and Fable's access controls / data retention lock in token-provenance thinking. Raw: `raw/articles/2026-08-23_dbreunig_fable-end-of-moore-s-law.md`.
 - **Geospatial**: "Towards Standardizing Place" (2024), "DuckDB is Probably the Most Important Geospatial Software of the Last Decade" (2025)
 
 ## Speaking Engagements
