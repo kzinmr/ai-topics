@@ -1131,7 +1131,8 @@
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench & SWE-bench Verified — retired by OpenAI Apr 2026 (saturation + contamination); Pro endorsed
 - [[concepts/ai-benchmarks/swe-bench-agent-scaffolding]] — SWE-bench Agent Scaffolding (Claude 3.5 Sonnet)
 - [[concepts/ai-benchmarks/swe-bench-pro]] — SWE-bench Pro — OpenAI-endorsed successor (Apr 2026)
-- [[concepts/ai-benchmarks/swe-gym]] — SWE-Gym
+- [[concepts/ai-benchmarks/nanogpt-speedrun]] — NanoGPT Speedrun Frontier (Prime Intellect, Aug 2026) — 153 autonomous runs / 18 frontier models; harness×model leaderboard on a continuous-time optimization task; Fable 5 81.7% gap closure vs Opus 5 53.6% on 4.4× fewer tokens than Fable
+- [[concepts/ai-benchmarks/nemo-gym]] — NeMo Gym
 - [[concepts/ai-benchmarks/swe-lancer]] — SWE-Lancer
 - [[concepts/ai-benchmarks/swe-rebench]] — SWE-rebench
 - [[concepts/ai-benchmarks/tau-bench]] — τ-bench

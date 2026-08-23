@@ -1,4 +1,10 @@
 # Wiki Log
+## [2026-08-23] slack hot-posts (late-night) | NanoGPT Speedrun Frontier — new benchmark page
+
+- **Context**: late-night slot (01:30 JST) post on Prime Intellect's NanoGPT Speedrun Frontier leaderboard (Aug 22, HN 49404380) — first delivery of this cluster. Dedup verified: `concepts/ai-benchmarks/nanogpt-speedrun`, `entities/prime-intellect`, `concepts/ai-benchmarks/swe-bench` wikilinks do not appear in any of the 5 recently covered Slack posts (08-20 warp-factories ×2, 08-20 FHE-HEIR, 08-17 claude prompts, 08-17 watermarking).
+- **Changes**: NEW `concepts/ai-benchmarks/nanogpt-speedrun.md` (harness×model leaderboard on a continuous-time agentic optimization task; 153 runs / 18 models; snapshot table + token-cost analysis; links to [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] noise debate). NEW raw source `raw/articles/2026-08-23_primeintellect_nanoGPT-speedrun-frontier.md` (leaderboard snapshot captured live). `index.md`: +1 entry under ai-benchmarks.
+- **Note**: leaderboard is live — snapshot values (Fable 5 81.7% / 8.7d, Opus 5 53.6%, GPT-5.6 Sol 2.9B tokens) are point-in-time as of 2026-08-23 18:45 UTC.
+
 ## [2026-08-23] trending-topics | Daily scan — 2 enrichments (MCP Roadmap, local LLM inference noise)
 
 - **Context**: 12:00 UTC trending-topics run. Sources: blogwatcher scan 20260823T100058Z (21 new, 13 saved; AI-relevant: simonwillison llm 0.33 + more-than-just-code-review + linus-torvalds quote, garymarcus ARR-vs-ARR, lucumr fast-hard-code), sitemap-monitor 06:00 (Parallel Web Systems "artificial-analysis best search API" — raw only), newsletter uid=543 (fully Cloudflare-blocked, 0 takes), HN front page (3-day window).

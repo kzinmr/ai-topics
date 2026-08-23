@@ -1,0 +1,45 @@
+{
+  "run_id": "20260823T101026Z",
+  "triaged_at": "2026-08-23T10:13:17Z",
+  "summary": "1 beehiiv newsletter ingested: 'Nobody Knows How Big the Biggest Run Is' (uid=543, 2026-08-22, 18 links). All 18 links are unresolvable via CLI: 16 beehiiv tracking redirects (link.mail.beehiiv.com/v2/c/..., tested links 1/2/5/10/16 -> HTTP 403), 1 beehiiv main post (hp.beehiiv.com -> 403 Cloudflare 'Just a moment'), 1 beehiiv status page. No individual article title/URL/content can be extracted. Subject is topical (likely crypto/markets given 'Run' + 'Biggest Run'), NOT a confirmed AI/LLM-agent topic. Classified low: content is entirely inaccessible via CLI and topic relevance to the AI wiki is unconfirmed.",
+  "classifications": [
+    {
+      "subject": "Nobody Knows How Big the Biggest Run Is",
+      "date": "2026-08-22",
+      "source": "beehiiv newsletter (uid=543)",
+      "importance": "low",
+      "reason": "beehiiv-hosted newsletter with 18 article links. Subject title ('Nobody Knows How Big the Biggest Run Is') reads like a financial/crypto 'run' theme rather than an explicit AI/LLM-agent topic, so wiki relevance is UNCONFIRMED. The whole issue is inaccessible via CLI: all 16 link.mail.beehiiv.com/v2/c/... tracking redirects return HTTP 403 (Cloudflare-challenged, no redirect target — tested links 1, 2, 5, 10, 16); the main post hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f returns 403 with a 'Just a moment...' JS challenge; the remaining link is a beehiiv status page. No individual article title, URL, or content can be extracted to assess AI relevance. Because topic relevance cannot be confirmed AND content is fully Cloudflare-blocked, this is downgraded from the usual medium (used for clearly-AI OpenAI-type beehiiv issues in prior triage) to low. Browser-based fetch is the only path to resolve it.",
+      "entities": [],
+      "resolved_url": null,
+      "action": "No CLI action — all 18 links are Cloudflare-blocked. To ingest, use browser_navigate + browser_snapshot on the main post hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f to read the issue and extract individual article titles/URLs; then re-triage each. Given the ambiguous (likely non-AI) subject, only pursue if the main post confirms AI/LLM content.",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-22-nobody-knows-how-big-the-biggest-run-is.md"
+    },
+    {
+      "subject": "Beehiiv tracking links (Links 1-16)",
+      "date": "2026-08-22",
+      "source": "beehiiv (link.mail.beehiiv.com/v2/c/...)",
+      "importance": "skip",
+      "reason": "16 tracking-redirect URLs. Tested samples (1, 2, 5, 10, 16) all return HTTP 403 with no resolved redirect — unlike the 2026-08-16 Superintel+ batch where v2/c/ links resolved to 200, this batch is fully Cloudflare-blocked and yields no article title/URL/content. Classify at the newsletter level (above), not per-link.",
+      "entities": [],
+      "resolved_url": null,
+      "action": "skip — beehiiv tracking links, Cloudflare-blocked; classify at newsletter level",
+      "raw_path": null
+    },
+    {
+      "subject": "Beehiiv UI/infra noise (Links 17-18)",
+      "date": "2026-08-22",
+      "source": "beehiiv platform",
+      "importance": "skip",
+      "reason": "Link 17 = main newsletter post (hp.beehiiv.com/ccc0ac2a-...) — the only substantive target, but Cloudflare-blocked (403 'Just a moment'); covered at the newsletter level above. Link 18 = beehiiv status page (email.beehiivstatus.com/.../hclick) — pure platform noise, no article content.",
+      "entities": [],
+      "resolved_url": null,
+      "action": "skip — Link 17 handled at newsletter level; Link 18 is beehiiv status noise",
+      "raw_path": null
+    }
+  ],
+  "next_actions": [
+    "PRIORITY (low): No automated CLI ingestion possible this cycle — the entire beehiiv issue is Cloudflare-blocked and the subject is not a confirmed AI topic. If wiki-ingest still wants it, use browser_navigate on the main post (hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f) to read the issue, confirm whether it is actually AI/LLM content, and extract individual article URLs; otherwise skip the issue.",
+    "PRIORITY 2: No AI/LLM-agent entity or concept updates are warranted from this newsletter based on available data (no content accessible).",
+    "NOTE: This is the 3rd consecutive run where the beehiiv newsletter was fully Cloudflare-blocked (2026-08-19 OpenAI issue, 2026-08-20 OpenAI issue, 2026-08-22 this one). Consider a browser-based beehiiv resolver as a standing capability if beehiiv-sourced AI newsletters keep arriving."
+  ]
+}
