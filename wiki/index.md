@@ -913,7 +913,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2008 pages)
+## Concepts (2006 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1133,8 +1133,8 @@
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench & SWE-bench Verified — retired by OpenAI Apr 2026 (saturation + contamination); Pro endorsed
 - [[concepts/ai-benchmarks/swe-bench-agent-scaffolding]] — SWE-bench Agent Scaffolding (Claude 3.5 Sonnet)
 - [[concepts/ai-benchmarks/swe-bench-pro]] — SWE-bench Pro — OpenAI-endorsed successor (Apr 2026)
+- [[concepts/ai-benchmarks/swe-gym]] — SWE-Gym — training environment for SWE agents (arXiv 2412.21139)
 - [[concepts/ai-benchmarks/nanogpt-speedrun]] — NanoGPT Speedrun Frontier (Prime Intellect, Aug 2026) — 153 autonomous runs / 18 frontier models; harness×model leaderboard on a continuous-time optimization task; Fable 5 81.7% gap closure vs Opus 5 53.6% on 4.4× fewer tokens than Fable
-- [[concepts/ai-benchmarks/nemo-gym]] — NeMo Gym
 - [[concepts/ai-benchmarks/swe-lancer]] — SWE-Lancer
 - [[concepts/ai-benchmarks/swe-rebench]] — SWE-rebench
 - [[concepts/ai-benchmarks/tau-bench]] — τ-bench

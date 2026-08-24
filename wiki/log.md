@@ -1,3 +1,15 @@
+## [2026-08-24] wiki-health-fix | Auto-fix: 1 ghost entry removed, 1 orphan registered, Concepts header corrected
+
+- Phase 1 (corruption): index.md clean — 0 pipe-prefix, 0 line-number, 0 triple-bracket, 0 space-prefix. `validate_index.py` passed.
+- Phase 2 (structure):
+  - Removed 1 ghost entry `concepts/ai-benchmarks/nemo-gym` (indexed at line 1137, no file, no redirect, never existed in git).
+  - Added 1 orphan `concepts/ai-benchmarks/swe-gym` (real 67-line page, arXiv 2412.21139, was missing from index.md) into the swe-* cluster.
+  - Corrected `## Concepts` header count `2008 pages` → `2006 pages` (net −2: pre-existing overstatement of +2 vs true count; matches actual 2006 concept entries).
+- 24 reported "orphans" all confirmed false positives: 21 `_index.md` subdirectory hubs + 2 `_archive/` pages + `entities/_index` (intentionally not in main index.md).
+- Ghost re-scan after fix: 0 missing. Entity/concept/comparison headers all match filesystem counts.
+
+---
+
 ## [2026-08-24] watchdog | Daily health check — clean, 1 header count corrected
 
 - Verified pipeline_watchdog alerts: 0 (latest report `2026-08-24_12-26-02.md`, age 5.2h).
