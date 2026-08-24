@@ -1,0 +1,662 @@
+{
+  "generated_at": "2026-08-24T10:03:29.706797",
+  "summary": {
+    "total_overrides": 63,
+    "in_sync": 31,
+    "drifted": 23,
+    "formula_missing": 9,
+    "missing_override": 0,
+    "status_counts": {
+      "formula_has_new_files": 12,
+      "in_sync": 31,
+      "formula_updated": 11,
+      "formula_missing": 9
+    }
+  },
+  "paths": {
+    "note": "The script resolves ~ to /opt/data/.hermes/home (docker container home). The actual files are under /opt/data/.hermes and /opt/data/ai-topics via symlinks. The check is valid but displayed paths are the container-home mapping.",
+    "override_root_used": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides",
+    "formula_root_used": "/opt/data/.hermes/home/.hermes/skills"
+  },
+  "drifted_skills": [
+    {
+      "skill": "active-crawl-wiki",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/active-crawl-wiki",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/research/active-crawl-wiki",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "741ae549e594",
+          "override_mtime": "2026-06-03T11:13:18.623894",
+          "formula": "exists",
+          "formula_sha1": "4b1229772e5c",
+          "formula_mtime": "2026-08-17T11:18:45.288235"
+        }
+      ],
+      "only_formula_count": 18,
+      "only_formula_sample": [
+        "references/consolidated-log-recovery.py.md",
+        "references/hn-algolia-research.md",
+        "references/index-update-compact-format.py.md",
+        "references/index-update-script-pattern.md",
+        "references/jfrog-blog-extraction.md",
+        "references/js-blocked-sites-june-2026.md",
+        "references/mit-techreview-openai-fallback.md",
+        "references/parallel-subagent-prompts.md",
+        "references/parent-post-processing-log-index.py.md",
+        "references/pdf-linked-page-extraction.md"
+      ]
+    },
+    {
+      "skill": "agent-harness-research",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/agent-harness-research",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/research/agent-harness-research",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "e69c9874fb7c",
+          "override_mtime": "2026-05-18T00:51:51.617736",
+          "formula": "exists",
+          "formula_sha1": "dbbf9453ec57",
+          "formula_mtime": "2026-06-04T08:19:03.507566"
+        }
+      ],
+      "only_formula_count": 1,
+      "only_formula_sample": [
+        "references/codex-app-server-skills-protocol.md"
+      ]
+    },
+    {
+      "skill": "arxiv",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/arxiv",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/research/arxiv",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "c9fc9fddf2f0",
+          "override_mtime": "2026-05-07T01:44:25.683634",
+          "formula": "exists",
+          "formula_sha1": "695802df39dc",
+          "formula_mtime": "2026-08-19T12:11:43.581136"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "blog-writing",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/blog-writing",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/wiki/blog-writing",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "966dd1a0448f",
+          "override_mtime": "2026-06-03T09:29:12.810717",
+          "formula": "exists",
+          "formula_sha1": "ae7ff2a4390b",
+          "formula_mtime": "2026-08-07T09:23:54.540965"
+        }
+      ],
+      "only_formula_count": 2,
+      "only_formula_sample": [
+        "references/bitter-lesson-dev-methodology.md",
+        "references/multi-perspective-synthesis-to-blog.md"
+      ]
+    },
+    {
+      "skill": "blogwatcher",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/blogwatcher",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/research/blogwatcher",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "ce60b2468899",
+          "override_mtime": "2026-06-02T07:07:52.523037",
+          "formula": "exists",
+          "formula_sha1": "4f5d4bc194de",
+          "formula_mtime": "2026-07-21T07:05:54.256817"
+        }
+      ],
+      "only_formula_count": 2,
+      "only_formula_sample": [
+        "references/http-403-user-agent-recovery.md",
+        "references/ssr-to-rss-fallback.md"
+      ]
+    },
+    {
+      "skill": "claude-design",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/claude-design",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/creative/claude-design",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "ba847704bb6d",
+          "override_mtime": "2026-05-16T09:59:27",
+          "formula": "exists",
+          "formula_sha1": "c43aa381e055",
+          "formula_mtime": "2026-06-19T06:33:12.322679"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "codex",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/codex",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/autonomous-ai-agents/codex",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "447f7cbd3a8b",
+          "override_mtime": "2026-05-16T09:59:27",
+          "formula": "exists",
+          "formula_sha1": "8228a97d494c",
+          "formula_mtime": "2026-06-04T08:19:43.683561"
+        }
+      ],
+      "only_formula_count": 1,
+      "only_formula_sample": [
+        "references/codex-app-server-skills-protocol.md"
+      ]
+    },
+    {
+      "skill": "cron-job-management",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/cron-job-management",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/productivity/cron-job-management",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "411a749d1747",
+          "override_mtime": "2026-05-13T23:36:19.510921",
+          "formula": "exists",
+          "formula_sha1": "d071c67ebd85",
+          "formula_mtime": "2026-07-24T02:57:48.641122"
+        }
+      ],
+      "only_formula_count": 1,
+      "only_formula_sample": [
+        "references/deepseek-peak-valley-pricing.md"
+      ]
+    },
+    {
+      "skill": "documentation-page-ingestion",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/documentation-page-ingestion",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/wiki/documentation-page-ingestion",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "7ba48c18835a",
+          "override_mtime": "2026-06-03T04:36:02.620703",
+          "formula": "exists",
+          "formula_sha1": "1f8852be0764",
+          "formula_mtime": "2026-06-10T08:08:45.469361"
+        }
+      ],
+      "only_formula_count": 4,
+      "only_formula_sample": [
+        "references/ai-governance-doc-classification.md",
+        "references/conference-session-spa-extraction.md",
+        "references/pdf-extraction-workflow.md",
+        "references/ssr-content-extraction.md"
+      ]
+    },
+    {
+      "skill": "hermes-report-quality",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/hermes-report-quality",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/wiki-daily-report/hermes-report-quality",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "fe54a2bf7dfb",
+          "override_mtime": "2026-05-07T09:41:20.653309",
+          "formula": "exists",
+          "formula_sha1": "8713b0071ed2",
+          "formula_mtime": "2026-07-27T00:30:05.452712"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "kanban-orchestrator",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/kanban-orchestrator",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/devops/kanban-orchestrator",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "c903dc878e4a",
+          "override_mtime": "2026-05-06T23:22:21",
+          "formula": "exists",
+          "formula_sha1": "9603dcb84b4c",
+          "formula_mtime": "2026-06-01T02:36:16"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "kanban-worker",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/kanban-worker",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/devops/kanban-worker",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "93d62f2fb0f9",
+          "override_mtime": "2026-05-16T09:59:27",
+          "formula": "exists",
+          "formula_sha1": "e6718b51498e",
+          "formula_mtime": "2026-06-01T02:36:16"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "llm-wiki",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/llm-wiki",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/research/llm-wiki",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "4dd5a0550218",
+          "override_mtime": "2026-06-04T04:51:50.096535",
+          "formula": "exists",
+          "formula_sha1": "1377e763b20f",
+          "formula_mtime": "2026-06-08T08:39:09.432307"
+        }
+      ],
+      "only_formula_count": 2,
+      "only_formula_sample": [
+        "references/llm-pricing-monitor-runbook.md",
+        "references/moc-pattern-and-naming.md"
+      ]
+    },
+    {
+      "skill": "ocr-and-documents",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/ocr-and-documents",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/productivity/ocr-and-documents",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "references/temp-venv-pdf-extraction.md",
+          "override": "exists",
+          "override_sha1": "658f457ef00f",
+          "override_mtime": "2026-06-03T13:58:43.051982",
+          "formula": "exists",
+          "formula_sha1": "d5c41da10cf9",
+          "formula_mtime": "2026-06-10T08:23:09.647944"
+        },
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "6c51d25765c7",
+          "override_mtime": "2026-06-03T13:58:55.499988",
+          "formula": "exists",
+          "formula_sha1": "51ba898255f4",
+          "formula_mtime": "2026-06-10T08:23:32.909941"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "requesting-code-review",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/requesting-code-review",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/software-development/requesting-code-review",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "a5f5ed359d24",
+          "override_mtime": "2026-04-30T21:08:11",
+          "formula": "exists",
+          "formula_sha1": "b94af8bfa503",
+          "formula_mtime": "2026-06-01T02:36:16"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "subagent-driven-development",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/subagent-driven-development",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/software-development/subagent-driven-development",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "6d40c7541f39",
+          "override_mtime": "2026-05-17T23:28:46.690587",
+          "formula": "exists",
+          "formula_sha1": "874347c00b56",
+          "formula_mtime": "2026-06-01T02:36:16"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "systematic-debugging",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/systematic-debugging",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/software-development/systematic-debugging",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "443c338794e9",
+          "override_mtime": "2026-04-30T21:08:11",
+          "formula": "exists",
+          "formula_sha1": "130f41ad90c0",
+          "formula_mtime": "2026-06-01T02:36:16"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "trending-topics-reporting",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/trending-topics-reporting",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/research/trending-topics-reporting",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "1aba725e8877",
+          "override_mtime": "2026-06-02T12:09:08.954837",
+          "formula": "exists",
+          "formula_sha1": "fe595bea3659",
+          "formula_mtime": "2026-08-17T00:45:01.097520"
+        }
+      ],
+      "only_formula_count": 34,
+      "only_formula_sample": [
+        "references/active-crawl-output-reuse.md",
+        "references/ainews-fulltext-extraction.md",
+        "references/blogwatcher-db-recipes.md",
+        "references/cross-reference-2026-06-21.md",
+        "references/cross-reference-2026-07-01.md",
+        "references/cross-reference-2026-07-10.md",
+        "references/cross-reference-2026-07-11.md",
+        "references/cross-reference-2026-07-14.md",
+        "references/cross-reference-2026-07-16.md",
+        "references/cross-reference-2026-07-17.md"
+      ]
+    },
+    {
+      "skill": "wiki-concept-from-research",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/wiki-concept-from-research",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/wiki/wiki-concept-from-research",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "352c9ac02329",
+          "override_mtime": "2026-06-02T01:42:49.002867",
+          "formula": "exists",
+          "formula_sha1": "3c0588daa891",
+          "formula_mtime": "2026-08-07T11:32:12.677289"
+        },
+        {
+          "file": "references/batch-subagent-concept-creation.md",
+          "override": "exists",
+          "override_sha1": "d5dd0e81c09f",
+          "override_mtime": "2026-05-20T00:57:25.562727",
+          "formula": "exists",
+          "formula_sha1": "95ce3218bbf5",
+          "formula_mtime": "2026-06-11T04:53:07.604046"
+        }
+      ],
+      "only_formula_count": 5,
+      "only_formula_sample": [
+        "references/chinese-note-tweet-ingestion.md",
+        "references/github-raw-readme-extraction.md",
+        "references/multilingual-content-extraction.md",
+        "references/wikilink-corrections-july-2026.md",
+        "references/wikilink-verification.md"
+      ]
+    },
+    {
+      "skill": "wiki-daily-report",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/wiki-daily-report",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/wiki-daily-report",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "d7bb10b69a43",
+          "override_mtime": "2026-06-04T01:51:22.609576",
+          "formula": "exists",
+          "formula_sha1": "e4036667754a",
+          "formula_mtime": "2026-08-17T00:45:58.118546"
+        },
+        {
+          "file": "hermes-report-quality/SKILL.md",
+          "override": "exists",
+          "override_sha1": "fe54a2bf7dfb",
+          "override_mtime": "2026-06-04T01:51:22.609576",
+          "formula": "exists",
+          "formula_sha1": "8713b0071ed2",
+          "formula_mtime": "2026-07-27T00:30:05.452712"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "writing-plans",
+      "status": "formula_updated",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/writing-plans",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/software-development/writing-plans",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "b71f16bf5aba",
+          "override_mtime": "2026-05-17T23:28:47.702587",
+          "formula": "exists",
+          "formula_sha1": "3083fc4839c7",
+          "formula_mtime": "2026-06-01T02:36:16"
+        }
+      ],
+      "only_formula_count": 0,
+      "only_formula_sample": []
+    },
+    {
+      "skill": "xurl",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/xurl",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/social-media/xurl",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "cd1ddb4d2e54",
+          "override_mtime": "2026-05-29T05:19:36.235036",
+          "formula": "exists",
+          "formula_sha1": "6db8265faa49",
+          "formula_mtime": "2026-07-30T11:08:01.061903"
+        },
+        {
+          "file": "references/conversation-thread-search.md",
+          "override": "exists",
+          "override_sha1": "ccda8644d211",
+          "override_mtime": "2026-05-29T03:09:26.486931",
+          "formula": "exists",
+          "formula_sha1": "843d85815292",
+          "formula_mtime": "2026-06-10T10:04:30.527206"
+        }
+      ],
+      "only_formula_count": 11,
+      "only_formula_sample": [
+        "references/ai-trend-discovery-workflow.md",
+        "references/canonical-blog-url-fallback.md",
+        "references/fxtwitter-fallback.md",
+        "references/garry-tan-case-study.md",
+        "references/mem0-secondary-source-case-study.md",
+        "references/thariq-claude-code-skills-case-study.md",
+        "references/x-account-wiki-management.md",
+        "references/x-article-to-wiki-workflow.md",
+        "references/x-articles-wiki-ingestion.md",
+        "references/x-bookmarks-ingest.md"
+      ]
+    },
+    {
+      "skill": "youtube-content",
+      "status": "formula_has_new_files",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/youtube-content",
+      "formula_path": "/opt/data/.hermes/home/.hermes/skills/media/youtube-content",
+      "override_exists": true,
+      "formula_exists": true,
+      "modified": [
+        {
+          "file": "SKILL.md",
+          "override": "exists",
+          "override_sha1": "707e200cba0b",
+          "override_mtime": "2026-05-29T13:53:46.522777",
+          "formula": "exists",
+          "formula_sha1": "6c879b3c61f8",
+          "formula_mtime": "2026-07-18T04:50:12.071498"
+        }
+      ],
+      "only_formula_count": 3,
+      "only_formula_sample": [
+        "references/batch-transcript-ingestion.md",
+        "references/entity-enrichment-from-transcripts.md",
+        "references/long-transcript-chapter-extraction.md"
+      ]
+    }
+  ],
+  "formula_missing_skills": [
+    {
+      "skill": "blog-post-writing",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/blog-post-writing",
+      "override_exists": true,
+      "description": "\"Write and iteratively refine Japanese-language technical blog posts — wiki research first, humanize"
+    },
+    {
+      "skill": "goal-delegation-patterns",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/goal-delegation-patterns",
+      "override_exists": true,
+      "description": "\"Effective delegate_task goal patterns for 7 categories of autonomous work — QA overnight, research,"
+    },
+    {
+      "skill": "raw-article-filename-policy",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/raw-article-filename-policy",
+      "override_exists": true,
+      "description": "Naming convention for raw article files in wiki/raw/articles/ — always use the actual publication da"
+    },
+    {
+      "skill": "skill-archive-safety",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/skill-archive-safety",
+      "override_exists": true,
+      "description": "Pre-flight checklist and procedures for archiving, deleting, or migrating Hermes skills. Prevents ac"
+    },
+    {
+      "skill": "wiki-comparison-page-routing",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/wiki-comparison-page-routing",
+      "override_exists": true,
+      "description": ">-"
+    },
+    {
+      "skill": "wiki-graph-health",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/wiki-graph-health",
+      "override_exists": true,
+      "description": ">-"
+    },
+    {
+      "skill": "wiki-watchdog-auto-fix",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/wiki-watchdog-auto-fix",
+      "override_exists": true,
+      "description": "Daily wiki structural maintenance patterns — index reconciliation, log separator fixes, pipeline wat"
+    },
+    {
+      "skill": "x-article-getxapi-fallback",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/x-article-getxapi-fallback",
+      "override_exists": true,
+      "description": "Fallback approach for retrieving X/Twitter long-form article bodies (x.com/i/article/...) using GetX"
+    },
+    {
+      "skill": "x-article-retrieval",
+      "override_path": "/opt/data/.hermes/home/ai-topics/config/hermes/skills/_overrides/x-article-retrieval",
+      "override_exists": true,
+      "description": "Retrieve full content from X/Twitter's non-standard tweet types — Note Tweets (long-form truncated t"
+    }
+  ],
+  "missing_override_skills": []
+}
