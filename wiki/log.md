@@ -1,3 +1,15 @@
+## [2026-08-24] watchdog | Daily health check — clean, 1 header count corrected
+
+- Verified pipeline_watchdog alerts: 0 (latest report `2026-08-24_12-26-02.md`, age 5.2h).
+- `validate_index.py` passed (2997 lines). Live checks: 0 pipe-prefix, 0 line-number prefix, 0 triple-bracket, 0 space-prefix corruption in index.md.
+- Index vs filesystem: all 901 top-level entities and 1443 top-level concepts are indexed; 0 orphans.
+- **Fixed**: `## Concepts` header count `2005 pages` → `2008 pages` (matches actual `find` count).
+- No duplicates, no broken frontmatter, no new JP-language violations detected.
+- Deferred (weekly graph analysis backlog, needs human/weekly-judgment): 459 true orphans, 2,532 unresolvable broken links (211 auto-fixable — batch namespace fix recommended), 16 duplicate entity groups, missing hub page `concepts/context-engineering` (137 refs) and stubs for `entities/cursor`, `entities/sglang`, `entities/reflexive-ai`, `concepts/rag`.
+- Working tree note: uncommitted changes under `config/hermes/` (skill/cron drift from other jobs) left untouched — only `wiki/` committed.
+
+---
+
 ## [2026-08-24] active-crawl | 3 new pages + 3 enrichments (local-mixing obfuscation, shared-brain-for-agents, Vitalik entity; Ronacher Fast-and-Hard-Code, self-hosted factory case study, center-camp criticism update)
 
 - **Discovery**: HN Algolia (AI/LLM/agent, points>=15, since 2026-08-20 → 10 stories) + xurl scan (no additional signal above HN) + wiki gap grep. 6 candidates verified against index.md/log.md/filesystem.
