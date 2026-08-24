@@ -1,4 +1,20 @@
 # Wiki Log
+
+## [2026-08-24] llm-pricing-monitor | OpenAI GPT-5.6 promo + Google Gemini 3.7 Flash intro
+
+- **Context**: weekly price-monitor cron. Fetched live data from all 4 providers (OpenAI, Anthropic, Google/Vertex, DeepSeek). Last update was 2026-08-17; today 2026-08-24.
+- **Changes to `comparisons/llm-api-pricing.md`**:
+  - **OpenAI GPT-5.6 launch promo (50% off list, "at least through Nov 21 2026")**: GPT-5.6-sol Standard now bills $4/$20 (was $5/$30), GPT-5.6-terra $2/$12 (list $4/$24), GPT-5.6-luna $0.20/$1.20 (list $0.40/$2.40); cache reads → $0.40/$0.20/$0.02, cache writes $5.00/$2.50/$0.25. During promo Standard=Batch=Flex. Updated US Frontier, cache-read, batch, tier-analysis (Frontier US + Coding), and cost-comparison tables.
+  - **OpenAI "Priority" tier renamed "Fast mode" on 2026-07-30** (list-rate, 2.5× faster; service_tier still accepts "priority").
+  - **New OpenAI models**: gpt-5.6-cyber ($12.50/$75, cache write $15.625) and gpt-5.3-codex ($1.75/$14).
+  - **Google new Gemini 3.7 Flash** ($0.75/$3.75 intro through 2026-12-31; standard $1.50/$7.50 from 2027-01-01, cache $0.075).
+  - **Google Gemini 3.6 Flash → introductory $0.75/$3.75** (was recorded as standard $1.50/$7.50; same intro window).
+  - **Anthropic verified unchanged**: Sonnet 5 intro $2/$10 (through 08-31), Opus 5 $5/$25, Fable 5 $10/$50, Haiku 4.5 $1/$5.
+  - **DeepSeek verified unchanged**: V4-Flash $0.22/$0.66 & V4-Pro $0.66/$1.98 off-peak.
+  - Updated `updated:` frontmatter → 2026-08-24; expanded the `*` intro/promo footnote; rewrote Key Trends #3 (OpenAI promo + Fast mode) and #4 (Google dual-Flash intro); added 3 Changelog rows.
+- **Note**: GPT-5.6-sol list-price ($8/$40) matches the 2026-08-16 active-crawl note referencing "GPT-5.6 Sol's $5" (that was the pre-promo Standard $5/$30). The recorded wiki prices are now the *current promo* Standard rates; list prices documented in the footnote + changelog.
+- **Sources**: openai.com/api/docs/pricing, cloud.google.com/vertex-ai/generative-ai/pricing, docs.anthropic.com/en/docs/about-claude/models, api-docs.deepseek.com/quick_start/pricing (all fetched live 2026-08-24).
+
 ## [2026-08-24] slack hot-posts (morning) | Breunig "Fable & The End of the Free Lunch" — first delivery
 
 - **Context**: morning slot (09:30 JST) post on Drew Breunig's "Fable & The End of the Free Lunch" (dbreunig.com, 2026-08-23) — the thesis that Fable's cost shock ended the "free lunch" era of agentic coding, forcing deliberate model-tier routing. Dedup verified: `entities/drew-breunig`, `concepts/ai-benchmarks/deepswe-benchmark`, `concepts/ai-benchmarks/nanogpt-speedrun`, `entities/glm-5-zai`, `entities/fable`, `concepts/bitter-lesson-harnessing` appear in none of the 6 recently covered Slack posts (08-20 warp-factories ×3, 08-20 FHE-HEIR, 08-17 claude prompts, 08-17 watermarking). Note: DeepSWE + NanoGPT Speedrun numbers were delivered 08-23 but the *thesis* framing (Breunig) is the new angle.
