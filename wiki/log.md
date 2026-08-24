@@ -1,4 +1,10 @@
 # Wiki Log
+## [2026-08-24] slack hot-posts (morning) | Breunig "Fable & The End of the Free Lunch" — first delivery
+
+- **Context**: morning slot (09:30 JST) post on Drew Breunig's "Fable & The End of the Free Lunch" (dbreunig.com, 2026-08-23) — the thesis that Fable's cost shock ended the "free lunch" era of agentic coding, forcing deliberate model-tier routing. Dedup verified: `entities/drew-breunig`, `concepts/ai-benchmarks/deepswe-benchmark`, `concepts/ai-benchmarks/nanogpt-speedrun`, `entities/glm-5-zai`, `entities/fable`, `concepts/bitter-lesson-harnessing` appear in none of the 6 recently covered Slack posts (08-20 warp-factories ×3, 08-20 FHE-HEIR, 08-17 claude prompts, 08-17 watermarking). Note: DeepSWE + NanoGPT Speedrun numbers were delivered 08-23 but the *thesis* framing (Breunig) is the new angle.
+- **Changes**: `concepts/ai-benchmarks/deepswe-benchmark.md` — added cross-ref line to Breunig's thesis under Related Concepts (the DeepSWE Pro-first cascade data is the empirical core of the "end of free lunch" argument); index.md entry bumped.
+- **Note**: raw article `raw/articles/2026-08-23_dbreunig_fable-end-of-moore-s-law.md` already ingested by x-accounts-scan; no new raw ingest.
+
 ## [2026-08-23] x-accounts-scan | 7 new posts (11 accounts) — Breunig "Fable & The End of the Free Lunch"
 
 - **Context**: x-accounts-scan run 20260823T223019Z; 84 tracked → 11 scanned (request budget 12); 7 new posts across 6 accounts; cursor 38→49; processed cache 281 (TTL 90d).

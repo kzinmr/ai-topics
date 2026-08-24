@@ -165,6 +165,7 @@ This section informs graph queries: authored by [[entities/datacurve]] and [[ent
 - [[concepts/evaluation/evals-for-ai-agents]] — Broader agent evaluation framework
 - [[concepts/swe-bench-agent-scaffolding]] — Agent harness design for SWE-bench tasks
 - [[concepts/jagged-intelligence]] — Uneven capability profiles exposed by better benchmarks
+- [[entities/drew-breunig]] — "Fable & The End of the Free Lunch" (2026-08-23): argues this Pro-first cascade data is the empirical core of the "end of the free lunch" era — cost shock forces deliberate tiering across model tiers, and the best frontier model is no longer the default. See [[raw/articles/2026-08-23_dbreunig_fable-end-of-moore-s-law]].
 
 ## Sources
 - [DeepSWE Blows Up the AI Coding Leaderboard](https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole) — VentureBeat, May 26, 2026

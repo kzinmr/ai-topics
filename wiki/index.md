@@ -1071,7 +1071,7 @@
 - [[concepts/ai-benchmarks/databench]] — DataBench — Hex's agentic analytics benchmark; 100 realistic Q&A/open-ended tasks in Shorelane warehouse; GPT-5.6 Sol LLM judge; Fable 5 best, Opus 5 effort regressions, Luna Pareto frontier (Aug 14)
 - [[concepts/ai-benchmarks/decodingtrust]] — DecodingTrust
 - [[concepts/ai-benchmarks/deepresearch-bench]] — DeepResearch Bench
-- [[concepts/ai-benchmarks/deepswe-benchmark]] — DeepSWE Benchmark (Datacurve); + DeepSeek V4 Pro 0813 vs Claude Fable 5 head-to-head (Together AI Aug 2026): 90x cost gap, pass@4 88.5 vs 84.1, Pro-first cascade 82.7% at $8.28
+- [[concepts/ai-benchmarks/deepswe-benchmark]] — DeepSWE Benchmark (Datacurve); + DeepSeek V4 Pro 0813 vs Claude Fable 5 head-to-head (Together AI Aug 2026): 90x cost gap, pass@4 88.5 vs 84.1, Pro-first cascade 82.7% at $8.28; + Breunig "end of the free lunch" tiering thesis cross-ref
 - [[concepts/ai-benchmarks/design-arena]] — Design Arena
 - [[concepts/ai-benchmarks/factorio-learning-environment]] — Factorio Learning Environment (FLE)
 - [[concepts/ai-benchmarks/freshstack-benchmark]] — FreshStack Benchmark
