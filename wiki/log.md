@@ -1,3 +1,20 @@
+
+## [2026-08-24] dreaming wiki-ingest | Pattern E saturation — 2 reference enrichments (recovered from failed dreaming-group)
+
+- **Context**: dreaming-group (18:00 UTC) FAILED on JSON render ("Response truncated due to output length limit"); the 4,703-line output file was only the prompt + checkpoint dump, no theme-cluster analysis to recover. checkpoint run 20260824T180156Z reported total_articles=0 / recent_raw_articles=180. Ran my own Pattern E filesystem scan via check_archive_index_absence.py (50 never-archived URLs).
+- **Duplicate check**: blog-wiki-ingest (same-day, recovered from its own failed blog-triage) already took FT Anthropic revenue + open-weights summer; active-crawl already committed the self-hosted-factory research note + Ronacher Fast-and-Hard-Code + Vitalik local-mixing. Drew Breunig "Fable & The End of the Free Lunch" already in entities/drew-breunig (+--writings). No overlap with my picks.
+- **Reference enrichments (2)**:
+  - `entities/armin-ronacher.md` — added "Anger, Anxiety and Agency" (Aug 24, 2026) section: practitioner's emotional framework for AI disruption — anxiety/disorientation (no blame target) vs anger (needs a villain); the "easy to pick the wrong villain" trap; leadership cost-funneling to large labs ("at least one person at Meta wants that"); Europe-dependence worry; "stay curious, earn the right to decide when resistance is warranted" prescription. Extends the European-sovereignty / cost-funneling thread (Gaslighting Openness + Dangerous Technology For Americans Only). Cross-linked to [[concepts/coding-agents/ai-coding-agent-criticism]]. Frontmatter source + References link added. `updated:` 2026-08-24.
+  - `entities/simon-willison.md` — added "Verification over line-by-line review, and an AI that won't give up (Aug 22, 2026)" section covering two short posts: "More than just code review" (instruct + verify changes; eyeballing every line is never the most effective validation) and the Linus Torvalds "debug session from hell" quote (AI repeatedly declared the bug impossible/unsolvable yet kept adding useful debug code when pushed; "trained by people who may not be quite as stubborn as I am"). Cross-linked to [[concepts/agentic-engineering]]. Two raw sources added to frontmatter. `updated:` 2026-08-24.
+- **Verified reference candidates** (Takes=0, refs=2):
+  - armin-ronacher "Anger, Anxiety and Agency" -> GENUINE GAP: page had 327 lines but no anxiety-vs-anger / emotional-register / Meta-cost-funneling content. Enriched.
+  - simon-willison "More than just code review" + "Linus Torvalds quote" -> GENUINE GAP: page had no Aug 22 verification or Torvalds-debug entries. Enriched.
+- **Skips (48)**: active-crawl already-committed items (vitalik local-mixing, ronacher fast-and-hard-code, active-crawl research note) x3; blog-wiki-ingest already-processed batch (4x MaskRay non-AI LLVM, 2x John Cook math, Gary Marcus x2 thin X-posts, shkspr.mobi CSS, troyhunt, sixcolors, coredump.cx paradoxes, Drew Breunig Fable-End duplicate) x11; remaining non-AI (maskray.me x4, johndcook x3, troyhunt, sixcolors, shkspr, coredump.cx, blog.jim-nielsen LLM color-metadata, garymarcus substack x3, troyhunt IPL, bsky.app masnick, timmarinin bluesky, pluralistic world-historic-forces, dfarq quickbasic, filfre need-for-speed, daringfireball x2, techcrunch bluesky, walmart tap-to-pay, eli.thegreenplace concurrent-servers-part-8-go, evanhahn vim, construction-physics reading-list, borretti syncthing-sqlite, nesbitt package-management, simonwillison x6 already-covered-threads, lucumr fast-hard-code dup, matklad rust-glancer, and others) — all already covered or non-AI.
+- **index.md**: updated 2 summary lines (armin-ronacher, simon-willison).
+- **Archive**: see post-enrichment archive_triage.py run below.
+
+- **Sources**: raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md; raw/articles/simonwillison.net--2026-aug-22-more-than-just-code-review--54b6a31e.md; raw/articles/simonwillison.net--2026-aug-22-linus-torvalds--b52cb854.md.
+
 ## [2026-08-24] wiki-health-fix | Auto-fix: 1 ghost entry removed, 1 orphan registered, Concepts header corrected
 
 - Phase 1 (corruption): index.md clean — 0 pipe-prefix, 0 line-number, 0 triple-bracket, 0 space-prefix. `validate_index.py` passed.
@@ -111,7 +128,6 @@
 - **Archive**: 3 candidates, 3 newly archived. Archive: `wiki/raw/archived/triage/newsletter/2026-08-23_20260823T101026Z.json` (total archive URLs now 2,786).
 - **Note**: 3rd consecutive run with fully Cloudflare-blocked beehiiv issue (2026-08-19, 2026-08-20, 2026-08-22). Inbox recommendation: consider browser-based beehiiv resolver as a standing capability.
 
-
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-23] dreaming wiki-ingest (2nd pass) | Saturation confirmed - archive-index probe: 0 new takes, 28 URL-keyed skips archived
@@ -122,7 +138,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Archive**: 28 URL-keyed decisions appended to the dated archive JSON (11 first-pass + 28 second-pass = 39 total; RawWorks x2 URL-less, written to file but not URL-indexed by design - Pitfall #16 note). `archive_index.json` total: 2,795 URLs (8 new URL keys from second-pass batch).
 - **Known gap (unchanged, noted for next cycle)**: Parallel Web Systems artificial-analysis best-search-API - raw article on disk is 0KB (scrape failure x2); entities/parallel-web-systems.md lacks a search-API benchmark section. Needs browser-based or direct HTML fetch, out of scope for this pass.
 - **Commit scope**: archive files only (content files were all already committed by `ddd8566e`).
-
 
 ## [2026-08-23] dreaming wiki-ingest | Pattern E saturation — 0 takes, 0 references, 11 skips archived
 
@@ -204,7 +219,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Skips (sitemap batch)**: `2026-08-21_harvey_can-ai-draft-discovery-requests` (product marketing, no new technical depth beyond existing harvey.md); `2026-08-21_elevenlabs_neural-text-to-speech-tts` + `2026-08-21_parallel-web-systems_parallel-search-fast` (scrape failed — brotli decoder error, 14-line files, no body); `2026-08-21_hex-technologies_next-bi-tool` (BI-tool strategy/marketing, no benchmark substance).
 - **Already covered (x-bookmarks + state-craft batch)**: `2026-08-17_openrouter_gpt-5-6-sol-50-percent-off` (already in `concepts/gpt/gpt-5-6.md` L198–210); `2026-08-17_responsiblestatecraft_israel-fake-think-tank-chatbots` (already in `concepts/state-sponsored-chatbot-influence.md`); `2026-08-21_deepseek-v4-flash-vision-exp-api` (already in `concepts/deepseek-vision.md` "V4-Flash Vision Experimental API" section, updated 2026-08-21 by an earlier pass this cycle).
 
-
 ## [2026-08-21] watchdog | Index registration + pipeline alert triage
 
 ### Changes
@@ -245,7 +259,6 @@ _Log of all wiki changes. Newest entries at top._
 
 **Skips (non-AI or thin):** John Cook AI ASCII diagrams (light commentary), Jim Nielsen "sloppy UI is a security liability" (security-adjacent), Borretti "Our Servants Will Do That For Us" (philosophical, no new entity depth), OpenAI "AI Futures" strategic-futures blog launch + "Stampli cuts launch hours 68%" case study (thin/marketing, no entity page exists for AI Futures team; noted for a future page), OpenAI Apple Messages plugin (truncated to 662-byte tweet embed, not substantive), Mat Duggan Greek all-inclusive travel essay, Jeff Geerling Steam Deck LCD on RPi, matklad "Better Batteries" (language stdlib design), Old New Thing C++ template bloat, Adobe IPO anniversary, KDE Gear 26.08, LWN Quickshell (unsaved, non-AI).
 
-
 ## [2026-08-20] Dreaming wiki-ingest | Saturation recovery — 1 new concept page + 6 entity/concept enrichments
 
 - **Recovery context**: dreaming-group JSON render failed (`failed to parse JSON response from dreaming-group output`); full analysis recovered from cron output file `c4a9e8d2f671/2026-08-20_18-34-10.md` (4717 lines, 16 theme clusters). `triage_latest.json` was stale (20260817T180105Z, 7 decisions from prior consumed run) — replaced with fresh decisions below.
@@ -276,7 +289,6 @@ _Log of all wiki changes. Newest entries at top._
 | ~70 batch skips | Non-AI/failed/minor | coredump.cx electronics, johndcook math, 9to5mac, guardian, wired, troyhunt, cursor router/kittens/builds, factory old marketing, failed scrapes (parallel, elevenlabs aiuc-1 stub) |
 - **Index**: +1 concept entry (agent-security-certification); Concepts count 2000 -> 2001.
 
-
 ## [2026-08-20] watchdog | Auto-fix run — 3 pages missing frontmatter closing `---`
 
 ### Changes
@@ -288,7 +300,6 @@ _Log of all wiki changes. Newest entries at top._
 - Verified tag audit clean (0 violations, 844/924 coverage)
 - Committed 6 uncommitted entity updates from 2026-08-19/20 ingest (cursor-ai, decagon, harvey, nvidia, openai, together-ai — NVIDIA LPS/PORTS-Pike content)
 - Pipeline alerts: blog + newsletter chains flagged `ingest_ok_but_triage_failed` — verified transient: blog triage JSON is from 2026-08-17 duplicate-run recovery (mirrored decisions, all 5 takes confirmed applied via page `updated:` dates); newsletter triage ran today (20260820T101038Z checkpoint, take: AINews GLM 5.3 → concepts/glm-5-3.md, commit 3be32389). No action needed.
-
 
 ## [2026-08-20] newsletter-wiki-ingest | Enriched concepts/glm-5-3 with Jie Tang "Death of Params" post-training scaling framework (AINews/Latent Space)
 
@@ -312,7 +323,6 @@ _Log of all wiki changes. Newest entries at top._
 - **index.md**: entity summaries refreshed for both (no new slugs).
 - **Scan stats**: 11/84 accounts scanned (request budget 12), 5 new posts total, 0 errors; 73 accounts skipped for budget.
 
-
 ## [2026-08-19] dreaming | Saturation pass — Pattern E enrichment of untriaged sitemap/blog batch (4 reference enrichments)
 
 - **Context**: dreaming checkpoint had 0 collected articles, but the archive-index absence probe surfaced 62 never-triaged raw articles (scraped 08-17..08-19 by sitemap-monitor + blog-watch). Today's downstream pipelines (blog-triage / newsletter-triage / blog-wiki-ingest / newsletter-wiki-ingest / wiki-health-fix) all failed with `HTTP 503: Local LLM server is busy`, so this batch was never triaged by any pipeline. Active-crawl had already covered the HEIR/Wiz/Cerebras/Warp-factories stories from the same window; Grok 4.6, DeepSWE, Qwen 3.8, and the watermarking/Anthropic-IPO stories were already covered by prior crawls — all skipped.
@@ -324,7 +334,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Skipped (low AI/LLM value or broken)**: cursor mixture-of-kittens (scrape failed — brotli decoder error), cursor grok-4-6 blog (redundant with event page), cursor joining-spacex/vercel/firetiger/cloud-agent-environment/builds/aiuc-1/india-launch (product/marketing, no technical depth), factory batch (build-with-agents, code-droid 2024 technical report, code-review-benchmark, agent-effectiveness, agents-md, etc. — marketing + stale), elevenlabs instant-vs-professional-voice-cloning + elevenlabs-mcp-in-claude (product marketing), non-AI blog batch (pluralistic banaility/enron-corpus, garymarcus ×4, johndcook ×3, jeffgeerling cm5, wired cargo thieves, theguardian botiquette, 9to5mac antitrust, experimental-history, entropicthoughts, daringfireball, macrumors, troyhunt, simonwillison rare-books, wheresyoured openai-dies, chadnauseam agi, dfarq ×2, seangoedecke help-peer, borretti alignment-cliche, microsoft oldnewthing, jensenhuang X post, blog.j11y watermarking) — batch-skip.
 - **index.md**: no new pages — all 4 enrichments folded into existing entity pages, so no slug changes. (Repaired pre-existing duplicate `# Wiki Log` header state via repair_log_md_header.py.)
 - **Commit**: staged the 4 enriched entity pages + log.md selectively (saturated-day pattern; did not `git add wiki/` broadly).
-
 
 ## [2026-08-19] watchdog | index.md orphan registration + header count refresh
 
@@ -341,7 +350,6 @@ _Log of all wiki changes. Newest entries at top._
 - 0 pipe-prefix / 0 triple-bracket / 0 line-number corruption in index.md
 
 ---
-
 
 ## [2026-08-19] slack-hot-posts | Created [[concepts/warp-factories]] — Warp Factories (cloud software factory infrastructure, Aug 18 2026 blog) from raw article not yet in log; added to index (Concepts 1998→1999)
 
@@ -498,14 +506,12 @@ _Log of all wiki changes. Newest entries at top._
 - **Skipped (already captured)**: concepts/wayfinder-router.md, concepts/gpt/chatgpt-app-design-patterns.md
 - **Skipped (out of scope)**: semianalysis IEDM 2025 (semiconductor fab tech), hex data-modeling listicle (2023, non-AI)
 
-
 ## [2026-08-16] skeleton-enrich-daily | L2→L3: Kilo (Kilo Code) + Parchi
 
 - Enriched [[entities/kilo.md]] -- Upgraded from L2 (148 lines, 6.2KB) to comprehensive (249 lines, ~13KB). Fixed factual error: license is **MIT**, not Apache-2.0 (verified via GitHub API; the Feb 2026 "Fix LICENSE" commit added the opencode copyright line). Added major development: **Anaconda acquired Kilo Code (2026-07-15)** -- ~10T tokens/month across 3M+ developers; "AI on Your Own Terms" enterprise governance framing. New sections: Anaconda Acquisition + Post-Acquisition Timeline (Jun–Aug 2026: Cloud Agents upgrade, Kilo App iOS/Android, native JetBrains, Kilo Memory project-scoped memory, Auto Model router test, open-weights data, code review analysis, Metabase incident, Nemotron 3.5 Lightning support, v7.4.22). Added AI Code Review Analysis (10,643 reviews; Kimi K2.7 Code led at 0.179 critical/review; open weights took 2 of top 3), Open-Weight Token Share (79.1% open-weight week of Jul 20 2026), Metabase Security Incident disclosure, updated release cadence (v7.4.22 Aug 13 2026), stars (26.9K), differentiators table (Memory/Mobile/Parent rows), Sources + Related Pages. Status: L3.
 - Enriched [[entities/parchi.md]] -- Upgraded from L2 (192 lines, 8.2KB) to L3 (208 lines). Fixed broken wikilinks `[[entities/0xsero]]` → `[[entities/sero]]` (parchi + roocode frontmatter/related). Updated stats: stars 486→543, forks 47→53, last release v0.6.5 (2026-04-24, was v0.6.0), contributors (0xSero 354 commits). Added Release History table (v0.6.0–v0.6.5 with Droid integration rounds), confirmed maintenance mode (4 months no commits as of Aug 2026). Added tags browser-automation, desktop-automation; added [[entities/droid]] cross-ref; converted broken Playwright link to plain text. Status: L3.
 - Cross-links: [[entities/sero.md]] -- updated Parchi section star count (461+ → 543) + maintenance-mode note + [[entities/parchi]] backlink. [[entities/roocode.md]] -- fixed `[[entities/0xsero]]` → `[[entities/sero]]` (2 places). index.md: updated kilo + parchi descriptions. entities/_index.md: added missing kilo entry (was absent).
 - Research sources: GitHub API (Kilo-Org/kilocode, 0xSero/parchi), Kilo blog/Substack archive (anaconda-acquires-kilo-code, introducing-kilo-memory, kilo-app-for-ios-and-android-is-live, cloud-agents-upgrade, we-analyzed-10643-ai-code-reviews, open-weights-is-all-you-need, metabase-incident-impacting-kilo, nvidia-nemotron-3-5-lightning).
-
 
 ## [2026-08-16] dreaming wiki-ingest | second-pass saturation confirmation -- upstream fully covered
 
@@ -514,7 +520,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Archive result**: "All items already archived (dedup)" -- 0 new, confirming upstream's archive covered all URLs.
 - **Pipeline saturation confirmed**: blog-wiki-ingest, newsletter-wiki-ingest, active-crawl, raw-backlog-ingest, trending-topics all ran today with full coverage.
 - **Takes=0, References=0, Enrichments=0** -- genuine saturation, no wiki changes needed.
-
 
 ## [2026-08-16] dreaming | Saturation pass -- 0 articles collected, 8 filesystem probe articles all already covered
 
@@ -550,7 +555,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Enriched: [[concepts/glm-5-3]]** -- Added "Post-Training Economics: Capability Is Manufactured One Domain at a Time (Superintel+)" reference section: "Scaling post-training is all we did for GLM-5.3"; uneven-gain mechanism (Terminal-Bench 3.0 x6.15 in 59 days vs TB 2.1 81.0->88.2); vendor-only numbers caveat; post-training compute > pretraining compute admission; three walls where it stops working (paywalled). Source: read.getsuperintel.com deepdive, Aug 15 2026 (mostly paywalled, free preview used).
 - **Recovery**: newsletter-triage JSON render failure; checkpoint at ~/.hermes/cron/data/newsletter/triage_latest.json read directly (15 decisions: 1 take, 1 reference, 13 skips). Verified both Flue pages were v1-only (May 2026) before enriching. GLM-5.3 page benchmark coverage confirmed present; post-training economics framing was the genuine gap.
 
-
 ## [2026-08-16] blog-wiki-ingest | simonwillison CORS chat reference (post-recovery)
 - **Enriched: [[entities/simon-willison]]** -- Added "Tool: CORS Chat (Aug 15, 2026)" reference entry to August 2026 Updates: OpenAI-Responses-compatible chat web UI built with GPT-5.6-Sol xhigh to test Qwen 3.8 27B in LM Studio on M5 MacBook Pro + NVIDIA DGX Spark; tested against LM Studio --cors option and OpenRouter; browser-persisted conversations exportable as JSON; progressive SVG rendering while tokens stream. Source: raw/articles/simonwillison.net--2026-aug-15-cors-chat--be52c1eb.md.
 - **Recovery**: blog-triage JSON render failure; checkpoint at ~/.hermes/cron/data/blog_ingest/triage_latest.json read directly (15 decisions: 1 reference, 14 skips). Verified same-day skips already processed in commit 495a60c7 (augment Auggie CLI v2, Goedecke watermarking). Archive committed earlier (2eb8b203).
@@ -578,7 +582,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Update: [[entities/warp-terminal]]** -- Added "Terminal Internals Explainer (January 2023)": teletypes to terminal emulators, PTY leader/follower, line discipline (ERASE/INTR/NL), login vs non-login shell init, the Warp app-layer input buffering (IDE-like editing), token resolution (alias/function/env/builtin/PATH), escape sequences; noted as engineering heritage behind the Warp Agent CLI mux-PTY architecture. Source: raw/articles/2026-05-10_warp_what-happens-when-you-open-a-terminal-and-enter-ls.md (article date 2023-01-11).
 - **Update: [[entities/paulgraham-com]]** -- Added "Great Hackers (July 2004)" subsection under Classic Essays: Brooks 10x underestimation (imagination dominates lines-of-code productivity), great hackers want interesting work/tools/open source/offices, design paradox (cannot recognize great hackers without being one), clumping (square of environment quality), recognition impossibility ("Michael Jordan of hacking"), bottom-up programming/toolmakers; AI-leverage relevance noted. Updated Recent Themes 2004 row. Source: raw/articles/paulgraham.com--gh-html--9976fc59.md.
 - **Update: [[entities/dan-luu]]** -- Catalogued "Normalization of deviance" (danluu.com/wat/) in Notable Essays (Non-AI): @flaky pass-if-any-run, 2-nines platform reliability, unreproducible-result secrecy culture, Banja healthcare literature, Azure Nov 2014 config-override cascade, hand-washing/enforcement analogy; AI-infra relevance noted for guardrail enforcement and agent sandboxing. Source: raw/articles/danluu.com--wat--81291f57.md.
-
 
 ## [2026-08-16] raw-backlog-ingest 00:00 | glean agent-builder guide + harvey in-house legal ops + danluu cgroup throttling
 
@@ -609,11 +612,9 @@ _Log of all wiki changes. Newest entries at top._
 
 - **[[entities/nrehiew]]** (L2→L3, 129→144 lines, ~7.7KB): Researched via GitHub API (134 followers, 23 repos -- up from 67/21). Added: updated Open Source Projects table (r-nn 73★, Eagle 56★, Grove 7★, + fyp, VisionMamba, prime-rl, renderers, verifiers, proximal-bug-injection) and new subsection **"RL Training Infrastructure Focus (2026)"** -- prime-rl (Agentic RL Training at Scale), verifiers (RL environments), renderers (chat templates) showing deepened RL infra investment paired with distributional-lens writing. Fixed broken related links (over-editing→plain text, on-policy-distillation path correction).
 
-
 ## [2026-08-15] dreaming wiki-ingest | confirmation -- upstream dreaming-group already committed enrichment
 - Upstream dreaming-group (18:00 UTC) committed `80bc3d3a` before its JSON render failed: [[concepts/agent-experience]] (Pinecone AX API design principles) and [[entities/harvey]] (Review Table post-training) already enriched; 10 decisions archived.
 - Triage JSON Takes=0 is the intended post-enrichment state (2 refs, 9 skips). No downstream enrichment performed.
-
 
 ## [2026-08-15] dreaming | Pattern E saturation -- 2 references enriched, 9 skips archived
 - **Takes=0, References=2, Skips=9.** RSS/newsletter 0 articles. 218 raw articles on disk; 12 never-archived candidates from Aug 14-15 sitemap batch screened.
@@ -621,7 +622,6 @@ _Log of all wiki changes. Newest entries at top._
 - **[[concepts/agent-experience]]** +Pinecone AX API Design Principles (Joerg Schad, Aug 12): 6 principles (errors-as-guidance, token-budget-aware responses, self-description endpoints, machine-tempo safety, delegation-native auth, curated agent surfaces); TTFSC metric; Claude Sonnet 5 cold-trial (median 6 turns, $0.30/run). updated: 2026-08-15.
 - **[[entities/harvey]]** +Review Table Post-Training (Harvey x Applied Compute, Aug 14): synthetic dataset via AC2 Agent Cloud, composite reward function (correctness + citation + format + abstention), outperforms cost-quality Pareto frontier. updated: 2026-08-15.
 - Archive: 11 candidates, 10 newly archived (1 dedup), total 2,705 URLs.
-
 
 ## [2026-08-15] raw-backlog-ingest | duplicate batch - all 5 candidates already processed (14:00 run)
 
@@ -651,7 +651,6 @@ _Log of all wiki changes. Newest entries at top._
 - **[[entities/minimaxir-com]]** +The "Write Better Code" Iterative Prompting Experiment (Jan 2025): controlled Claude 3.5 Sonnet iterative-prompting study (casual "make it better" loop → enterprise overengineering as code's "cosmic" endpoint; explicit system-prompt variant → 11.2ms avg runtime but hex-vs-decimal bit-shift hallucination + numba read-only bug; LLM average-output bias; missed dedup/sort algorithmic angles). Frontmatter: sources + raw article, tags +coding-agents, updated 2026-08-15.
 - **[[entities/ash-vardanyan]]** +Parsing JSON in C & C++: Singleton Tax (Jan 2025): allocator-pattern essay (nlohmann/json, yyjson, simdjson no custom allocator, RapidJSON, Glaze), 4KB on-stack arena for MTU-sized short JSON, two-counter arena (total_allocated/total_reclaimed), "singletons are a significant code smell" thesis tying to ForkUnion philosophy. Frontmatter: sources + raw article, updated 2026-08-15.
 - Skipped (already captured in wiki, raw article already in page sources): fireworks-ai_kimi-qkclip (entities/fireworks-ai §MLA/QK-Clip + entities/kimi + concepts/attention-mechanism-variants), harvey_how-to-choose-best-legal-ai-platform (entities/harvey §How to Choose the Right Legal AI Platform Apr 2026), glean_retrieval-augemented-generation-vs-fine-tuning (entities/glean §RAG vs Fine-Tuning Guide Feb 2026).
-
 
 ## [2026-08-15] active-crawl | 5 new concept pages (3 raw articles + 2 raw papers)
 
@@ -726,13 +725,11 @@ _Log of all wiki changes. Newest entries at top._
 - **Enriched: [[entities/hex-technologies]]** -- Added "DataBench -- Agentic Analytics Benchmark (August 2026)" section + frontmatter source + related wikilink.
 - **Archive**: re-ran `archive_triage.py dreaming --keep-reference` → 14 candidates, 3 new archived (Hebbia, voyage-code-4, hadamard-668), 11 dedup; total archive URLs 2,661.
 
-
 ## [2026-08-14] dreaming consolidation | 0 takes, 0 references, 11 skips (full saturation)
 - **Takes=0 saturation confirmed**: Checkpoint had `total_articles: 0`, `recent_raw_articles: 228`. All 24 unarchived articles from the 3-day window verified against today's pipeline outputs.
 - **Duplicate check**: Today's pipelines already processed all AI-relevant content -- active-crawl (11:00: GLM-5.3, parametric-factuality, how-organizations-use-ai + GPT-5.6/Mistral OCR 4.1 enriched), blog-wiki-ingest (10:45: voyage-code-4, Gemini 3.7 Flash, Hadamard-668), newsletter-wiki-ingest (11:00: grok-4-6 enriched, lovable entity), raw-backlog-ingest (10:00/14:00/18:00: danlark, harvey, PG, zig, cursor-ai, overreacted-io, sgtatham, code-search-indexing).
 - **Skips**: Harvey The Brief (monthly roundup, harvey entity enriched today), ElevenLabs healthcare agent (tutorial guide), ElevenLabs Sounds (product announcement, no technical depth), Factory Agent Effectiveness (599B, too thin), Hebbia Third Bridge (already in entity page), OpenHands Agent Canvas (entity created yesterday), AISI incident report (comprehensive coverage in ai-agent-safety-incidents.md L233-255+), Modular Mojo 1.0 (entity page L2 coverage), TryCua macOS VM (page created 08-12), FLI Safety Index (page created 08-12), Simon Willison LLM Gemini (blog-wiki-ingest today).
 - Archive: wiki/raw/archived/triage/dreaming/2026-08-14_20260814T181151Z.json (11 candidates, 11 new archived, 0 dedup). Total archive URLs: 2,658.
-
 
 ## [2026-08-14] raw-backlog-ingest (18:00) | 1 take (code-search-indexing created), 4 references
 
@@ -827,19 +824,16 @@ _Log of all wiki changes. Newest entries at top._
 - **Skips (already captured x3)**: (1) 2026-08-11_meta-zuckerberg-future-is-for-everyone.md -- fully captured in concepts/mark-zuckerberg.md (87 lines) + concepts/personal-superintelligence.md (192 lines, active-crawl 2026-08-13; verified same-day at 14:00 and 18:00 runs); (2) substack.com--redirect-83a03e0e-24ff-40d0-8d66-d76a255c3ac2--89f6ff53.md (AI timelines / ESNI SWE forecasting post) -- already the primary source of concepts/ai-timelines-esni-tasks.md (92 lines, ES/ESNI taxonomy, superexponential time horizon, 30% AI R&D automation by EOY 2028, Cotra parity table); (3) substack.com--app-link-post--6ab3a67b.md (Simon Willison Lenny's Podcast "An AI State of the Union" highlights, Apr 2026) -- already captured in entities/simon-willison.md "Lenny's Podcast: An AI State of the Union (April 2026)" section (11 bullets: inflection point, 10k lines/day, dark factory 95%, mid-career squeeze, agency, AI security researchers, OpenClaw, journalists, 50% prediction, hallucination DB 1,228).
 - Archive: wiki/raw/archived/triage/raw_backlog/2026-08-13_20260813T220041Z.json (--keep-reference). Triage JSON: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json.
 
-
 ## [2026-08-13] skeleton-enrich-daily | L2→L3: Qwen + Tencent entity pages
 
 - **[[entities/qwen]]** (L2→L3, 30→211 lines, 9.3KB): Researched via Wikipedia + Qwen blog + local raw articles. Added: full model lineage table (Qwen 1 2023 → Qwen2 → Qwen2.5 → QwQ/QvQ → Qwen3 → Qwen3.5 → Qwen3.6 → Qwen3.7 Max → Qwen3.8), Qwen 3.8 frontier push (2.4T/95B MoE, 1M ctx, $2/$6 pricing, oh-my-cli 448-commit autonomy, revenue-threshold license shift), architecture highlights (hybrid Gated DeltaNet, thinking preservation, DFlash 6x), agent ecosystem (MM-Plugins, AgentWorld, Accio), organization (Alibaba Token Hub, Lin Junyang resignation, Qwen Exodus → modelfit.io), ecosystem/derivatives (200K+ HF variants, Sea-Lion), competitive positioning table vs DeepSeek/Tencent/Kimi. Fixed broken self-reference: entity page now links to concepts/qwen for family details. Tags: qwen, alibaba, model, company, open-source, multimodal, china, local-llm, reasoning, coding-agents.
 - **[[entities/tencent]]** (L2→L3, 30→176 lines, 7KB): Researched via Tencent site + GitHub Tencent-Hunyuan + HuggingFace tencent + local raw articles. Added: company overview (product-driven AI strategy, Feb 2026 infra rebuild principles), Hunyuan lineage table (Hy → Hy2 → Hy3 Preview → Hy3 Apache 2.0 → Hy-MT2), Hy3 details (benchmark leads with fewest active params, 495-step agent tasks, product gains, OpenRouter mystery), generative model portfolio (HunyuanVideo 12.4K stars, HunyuanImage-3.0, Hunyuan3D-2.1, HunyuanOCR, DepthCrafter), AI infrastructure (ARGUS, AngelSlim, CL-bench), products (Yuanbao, CodeBuddy/WorkBuddy, Docs AI PPT, WeChat, TokenHub, Hy-Embodied), Yao Shunyu quote, competitive positioning vs DeepSeek/Qwen.
 - index.md: updated descriptions for both entities (Qwen entry now covers 2026 agentic pivot; Tencent entry covers Hy3/ARGUS). entities/_index.md: added missing qwen + tencent entries (both were absent). No skeleton backlog remains (0 pages with `status: skeleton`); continuing established L2→L3 thinnest-pages pattern.
 
-
 ## [2026-08-13] dreaming wiki-ingest | confirmation -- upstream already committed enrichment (Takes=0 post-enrichment)
 - Upstream dreaming-group (18:00 UTC) enriched [[entities/decagon]] (Browser Actions section) and committed archive at 7be9e887 before its response render was rejected ("considered high risk"); no re-enrichment performed.
 - Verification: decagon.md diff real (+19 lines, updated 2026-08-13); triage_latest.json = 1 reference + 20 skips; archive JSON 19 decisions, 2 dedup (dfarq + martinalderson already in archive index).
 - Independent Pattern E probe (check_archive_index_absence.py): 13 never-archived raw articles, all covered by upstream decisions -- Hebbia x10 partnerships (integration-news skips), Hex x10 category pages (batch skip), dfarq (non-AI), martinalderson cache-read-costs (already covered entities/martin-alderson.md L206-226). No genuine gaps.
-
 
 ## [2026-08-13] dreaming consolidation | 1 reference + 20 skips (Pattern E saturation)
 - Checkpoint: total_articles=0, recent_raw_articles=236. Pattern E filesystem scan + archive-index absence check (29 never-archived articles).
@@ -904,7 +898,6 @@ _Log of all wiki changes. Newest entries at top._
 - index.md untouched (no new pages); no archive step needed (all 5 already archived).
 - Triage JSON: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (Takes=0, References=0, Skips=5).
 
-
 ## [2026-08-13] raw-backlog-ingest (04:00) | duplicate batch -- no wiki changes
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-13 04:00, run 20260813T040018Z) re-selected the **exact same 5 articles** as the 2026-08-12 14:00 run (triage_20260812T140021Z, commit b7ed5db7; 18:00 run commit b847a746; 22:00 run commit 1a4e9059). Same filenames + content hashes; 4th consecutive duplicate selection.
@@ -939,7 +932,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Indexes**: wiki/index.md + entities/_index.md descriptions updated.
 - **Sources**: Wikipedia (scraped 2026-08-12), PAN press release Apr 30 2026, raw/articles/2026-05-05_ai-agent-news-weekly-apr28-may4.md.
 
-
 ## [2026-08-12] dreaming wiki-ingest | 2 references enriched (Fireworks x Muse Glimmer, Factory x DGX Spark)
 
 - **Recovery**: upstream dreaming-group (18:00) saved an empty triage JSON claiming saturation (Takes=0). Pattern E verification (archive-index absence check) found 37 never-archived sitemap articles -- the saturation claim was incomplete.
@@ -951,7 +943,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Triage**: 19 decisions (2 reference, 17 skip) saved to /opt/data/.hermes/cron/data/dreaming/triage_latest.json.
 - **Archive**: 19 candidates, 17 newly archived (dedup 2), total_archive_urls 2550 -> 2567.
 - **Repair**: log.md header was buried at L46 (sibling raw-backlog prepend pushed entries above `# Wiki Log`); repaired via repair_log_md_header.py and prepended this entry.
-
 
 ## [2026-08-12] raw-backlog-ingest (18:00) | duplicate batch -- no wiki changes
 
@@ -998,7 +989,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Raw articles**: `2026-08-11_modular_mojo-1-0.md` (6,650 chars), `2025-12-01_inceptionlabs_mercury-diffusion-llm.md` (9,031 chars), `2026-02-19_togetherai_consistency-diffusion-lms.md` (9,684 chars), `2026-08-12_aisi_incident-report-unsanctioned-agent-behaviour.md` (17,339 chars), `2026-07-01_fli_ai-safety-index-summer-2026.md` (89 chars + scorecard data), `2026-08-12_openhands_agent-canvas-readme.md` (8,918 chars)
 - Discovery: 3 parallel subagents (HN Algolia 18 stories, X/Twitter 20 entries, wiki gap analysis 10 areas); cross-referenced to select 5 topics with FULL wiki gaps + strong trend signal (combined ~1,500+ HN points + X engagement)
 - Sources: modular.com, inceptionlabs.ai, together.ai, aisi.gov.uk, futureoflife.org, github.com/All-Hands-AI/OpenHands
-
 
 ## [2026-08-12] newsletter-wiki-ingest (recovery) | 3 takes + 7 references executed
 - **Recovery**: newsletter-triage output JSON parse failed; recovered from `triage_latest.json` (20260812T102618Z, 16 decisions). Post-recovery verification confirmed all 3 takes were genuine gaps (page content checked, not just frontmatter).
@@ -1089,7 +1079,6 @@ _Log of all wiki changes. Newest entries at top._
 - **[[entities/antoine-buteau]]** (L2→L3, 148→189 lines): Researched live site (3,900+ posts). Career path clarified: Coveo → The PNR → Replit → Shakepay (from About page; "how do smart people turn ambiguity into action?"). Added: 10-part AI Control Plane Series (runtime governance: identity/permissions, budgets, evals, observability, escalation -- "guardrails not gates"), AI-Native GTM (8+), Builder Shift (9), Shipping Velocity (8), Operating Cadence & Management Systems (10), Technical Literacy/Agency/Live Player/Power (10 each), Recurring Patterns, Book Notes, Daily Digest, 100+ "Lessons From" profiles (123 profiles / 5,722 lessons synthesis). New "Recent AI Essays & Paper Explainers": Constraint Decay (arXiv:2605.06445, 30-pt drop, 8.3% pass@1, "functionality is easier than structure"), Cognitive Commons expert-pipeline drain (Lovett, HRD Review Jul 2026), Verification bandwidth / Measurability Gap (Catalini et al., arXiv:2602.20946), LeAct explainer. Wikilinked to harness-engineering, agentic-engineering, human-in-the-loop, managed-agents; Graph Structure Query added; tags +ai-governance +human-in-the-loop. Sources: antoinebuteau.com + About page scraped 2026-08-11.
 - index.md: updated descriptions for both entities. No skeleton backlog remains (0 pages with `status: skeleton`); continuing established L2→L3 thinnest-pages pattern.
 
-
 ## [2026-08-11] dreaming-wiki-ingest | Pattern E gap-fill -- 4 references enriched (upstream saturation claim incomplete)
 
 - Recovered from "failed to parse JSON response from dreaming-group output": upstream committed `fc4b3b29` (18:14, saturation pass Takes=0, 6 skips, archive 6 decisions) but the 18:15 output file and triage_latest.json matched. **Deep Sleep verification found a genuine Pattern E gap**: the 06:00 sitemap-monitor batch (Pinecone ×2, Harvey ×2, ElevenLabs ×4) was scraped but never triaged by blog-triage (10:20 JSON covers only the 10:16 RSS batch) nor by the upstream saturation pass. URLs absent from archive_index → not archived = never decided.
@@ -1113,7 +1102,6 @@ _Log of all wiki changes. Newest entries at top._
   - kuber.studio -- non-AI opinion piece, navigation chrome only
 - **Archive**: wiki/raw/archived/triage/dreaming/2026-08-11_20260811T181044Z.json (6 decisions archived, total_archive_urls 2498)
 - **No wiki content changes.** Saturation confirmed.
-
 
 ## [2026-08-11] raw-backlog-ingest (18:00) | Reference 1 item (Max Woolf Nano Banana prompt engineering) + Skip 4 items
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-11 18:00, run 20260811T180024Z). Takes=0, References=1, Skips=4.
@@ -1185,7 +1173,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Reference: [[entities/google]]** -- Added "Gemini First-Party API Revenue -- SemiAnalysis Tokenomics Estimate (Aug 2026)" (~$2.3B by 2Q26; QoQ growth slowing from ~70% in 1Q26 to ~40% in 2Q26, "steeper than a base effect alone explains"). Added raw/newsletters/2026-08-10-the-model-openai-won-t-release.md to sources, updated: 2026-08-11.
 - (Additional reference log entries for [[concepts/trusted-access-biodefense]], [[concepts/personal-superintelligence]], [[concepts/claude/sonnet-5]] were appended individually by enrichment subagents above.)
 
-
 ## [2026-08-11] reference-update | AI-designed viruses (Stanford + Arc Institute, Evo 1/Evo 2)
 
 - **Reference: [[concepts/trusted-access-biodefense]]** -- Added "AI-Designed Viruses (August 2026)" section (Science, Aug 6 2026: Stanford + Arc Institute used genome language models Evo 1/Evo 2 to generate hundreds of complete bacteriophage genome candidates; 16 were working viruses that came alive in the lab; biosecurity relevance ★★★☆☆ -- "A generative model can now write a genome that comes alive in a dish, which leaves the review process around these labs as the only real safeguard"; ties to trusted access thesis + DNA screening chokepoint). Added raw/newsletters/2026-08-10-the-model-openai-won-t-release.md to sources, added biotech/biology/ai-in-science/safety/ai-safety tags, updated: 2026-08-11.
@@ -1212,7 +1199,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Reference: [[concepts/harness-engineering/agentic-workflows/vibe-coding]]** -- Added "Dark Hours: The Limits of Vibe-Coded Originality" section (Aug 9, Tedium via Daring Fireball: Claude-built astronomy app rejected as astrology + copied open-source app; Gruber retraction; "there has to be a point when the tool stops and you begin"). Added raw/articles/tedium.co--2026-08-09-vibe-coding-insincerity--8f971830.md to sources, updated: 2026-08-11.
 - Archive: blog triage archive already committed by triage agent (2026-08-11_20260811T101550Z.json); no re-archive needed.
 
-
 ## [2026-08-11] raw-backlog-ingest (10:00) | Reference 2 items (dan-luu programming books, Glean no-code top-5) + Skip 3 items
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-11 10:00, run 20260811T100001Z). Takes=0, References=2, Skips=3.
@@ -1236,7 +1222,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Root-cause fix (tracking registry):** the 2026-08-10 18:00 batch never recorded completion in `~/.hermes/processed_raw_articles.json` `processed_articles` sub-registry (only log.md + archive), so raw_backlog_collect.py kept re-selecting the same 5 files (observed repeats at 08-09 18:00/22:00, 08-10 00:00/18:00, 08-11 04:00). Added all 5 filenames to `processed_articles` with status done + flipped top-level entries processing->done. Future runs will skip them.
 - Triage checkpoint: /opt/data/.hermes/cron/data/raw_backlog/triage_latest.json (5 decisions, all skip).
 
-
 ## [2026-08-10] skeleton-enrich-daily | L2→L3: GitHub Copilot CLI + Droid (Factory) -- coding agent harness deep-dive
 
 - **Enriched: [[entities/copilot-cli]]** (114→180 lines, L2→L3). Research: GitHub repo (11,076★, v1.0.79 Aug 10 2026, near-daily releases), README, changelog v1.0.77–1.0.79, Simon Willison + Where's Your Ed At coverage of the Copilot billing shift. Added: GitHub stats + expanded install methods (brew/winget/npm), Development History section (BYOK 2026-04-07, sandbox maturation, v1.0.79 worktree/prompt-pinning/sessions sidebar/tgrep/kimi-k3), Sandbox & Safety section (per-path enforcement, MDM policy floors, auth isolation, allow-auto-only), LSP Server Support section (~/.copilot/lsp-config.json + .github/lsp.json), Billing & Pricing Context (token-based billing transition Apr 2026, Opus 4.7 restricted to Pro+, premium-request quota), Related section. Frontmatter: +4 sources (README, changelog, 2 raw billing articles), status L3, updated 2026-08-10.
@@ -1257,7 +1242,6 @@ _Log of all wiki changes. Newest entries at top._
 - Takes=0 is the post-enrichment state; no re-enrichment performed.
 - No archive re-run (upstream archive already committed).
 
-
 ## [2026-08-10] raw-backlog-ingest (18:00) | Reference 1 item + Skip 4 items
 
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-10 18:00, run 20260810T180015Z). Takes=0, References=1, Skips=4.
@@ -1267,7 +1251,6 @@ _Log of all wiki changes. Newest entries at top._
 - Skip: purplesyringa.moe "We built the best Bad Apple!! in Minecraft" (2024-10-10) -- non-AI demoscene engineering (20fps, 512x384 grayscale, no command blocks). No entity page, no AI relevance.
 - Skip: blog.miguelgrinberg.com "SQLAlchemy 2 In Practice - Chapter 4 - Many-To-Many Relationships" -- non-AI Python ORM book chapter (join table / association table pattern). [[entities/miguel-grinberg]] exists (blog-ingest) but a single ORM book chapter adds no AI-wiki value.
 - Archive: wiki/raw/archived/triage/raw_backlog/2026-08-10_20260810T180015Z.json (5 candidates archived: 1 ref + 4 skip; total_archive_urls 2460).
-
 
 ## [2026-08-10] watchdog | Auto-fix: index dedup, modelcrafting registration, header counts, frontmatter tags
 
@@ -1334,7 +1317,6 @@ _Log of all wiki changes. Newest entries at top._
 
 ---
 
-
 ## [2026-08-10] dreaming | Saturation pass - Takes=0, 0 references, 10 skips
 - Checkpoint range: 2026-08-03 to 2026-08-10 (206 recent raw articles)
 - All AI-relevant articles already processed by today's pipelines:
@@ -1384,7 +1366,6 @@ _Log of all wiki changes. Newest entries at top._
 - Links: [[entities/varick-agents]], [[concepts/ai-adoption-barbell]], [[concepts/forward-deployed-engineering]], [[concepts/enterprise-agents]]
 - Sources: raw/articles/2026-05-20_varick_forward-deployed-engineering-101.md, raw/articles/2026-08-07_varick_ai-adoption-is-a-myth.md
 
-
 ## [2026-08-09] concept-creation | Created [[concepts/ai-adoption-barbell]] -- Barbell distribution of enterprise AI adoption
 - Source: [[raw/articles/2026-08-07_varick_ai-adoption-is-a-myth]] by @vasuman (CEO, Varick Agents)
 - Key theses: 10-70-20 barbell split (5-10% power users, ~20% mediocre, ~70% non-users), binary adoption metrics vs skill spectrum, token concentration (10% burn 90%), incentive misalignment, four-part solution framework (diagnostic training, skill publishing, background AI, metric reform)
@@ -1414,14 +1395,12 @@ _Log of all wiki changes. Newest entries at top._
 - **index.md**: +2 Concepts (1954→1956), updated entity descriptions for ashe-magalhaes + hearth-ai.
 - Sources: ashe.ai + timeline + second-brain blog + hearth-thesis blog, salesforce.com/news/stories/generative-ai-investing, hearth.ai, xurl @ashebytes profile.
 
-
 ## [2026-08-09] dreaming | wiki-ingest -- enriched Fireworks+Voyage AI partnership (upstream deferred)
 
 - Upstream dreaming-group committed only the archive + log entry (39fe0394); reference enrichment was explicitly deferred to downstream ("Deferred to downstream enrichment").
 - **Enriched: [[entities/fireworks-ai]]** -- Added "Voyage AI (MongoDB) Partnership -- Native Embeddings & Reranking (August 2026)" section: first/only dedicated inference platform partner for Voyage AI by MongoDB (Aug 5, 2026); Voyage 4 family + voyage-multimodal-3.5 + rerank-2.5 natively hosted; benchmark table (voyage-4-large +8.20% vs Cohere Embed v4, +14.05% vs OpenAI v3 Large); consolidation tradeoff argument (separate vendor vs capped retrieval); per-workload model tuning; use cases incl. agentic retrieval with rerank-2.5 instruction-following. Cross-links [[concepts/rag-systems]] + [[entities/voyage-ai]]. Added raw/articles/2026-08-08_fireworks-ai_voyage-ai-models-now-on-fireworks.md to sources, updated: 2026-08-09.
 - **Enriched: [[entities/voyage-ai]]** (dual-enrichment) -- Added "Fireworks Partnership -- Native Inference Platform (August 2026)" section: Fireworks as first dedicated inference platform partner; embed→retrieve→rerank→generate on one platform; benchmark position; Related updated with [[entities/fireworks-ai]]. Added same raw article to sources, updated: 2026-08-09.
 - Archive: upstream already committed 2026-08-09_20260809T180932Z.json (9 candidates, 2 newly archived). No archive re-run needed.
-
 
 ## [2026-08-09] dreaming | Saturation pass -- Takes=0, 1 reference, 8 skips
 
@@ -1510,14 +1489,12 @@ _Log of all wiki changes. Newest entries at top._
 - **Enrich: [[entities/agreement-bug]] (L2→L3)** -- Added contrast with multi-agent-consensus-patterns (structured disagreement vs agreement-seeking consensus), created new Graph Structure Query section, added 6 concept links to related frontmatter.
 - Updated 3 entries in index.md with detailed descriptions. sources: mindthefuture.info archive + Jina Reader scraping (2026-08-08).
 
-
 ---
 ## [2026-08-08] dreaming wiki-ingest | Downstream verification + ElevenLabs ElevenReader enrichment
 - Downstream confirmation of upstream saturation pass (commit 4ede49f3, archive-only). Output file 2026-08-08_18-18-14.md (4,655 lines) cross-checked -- its cluster analysis matches the committed log entry; no unpersisted second pass.
 - Triage JSON (18:16): 29 decisions, 0 takes, 1 reference, 28 skips. Deep Sleep verification gate: reference candidate verified against entity page content.
 - **Enrich: [[entities/elevenlabs]]** -- Added "ElevenReader Voice Chat Case Study (August 2026)" section. Flagship case of deploying ElevenAgents into a first-party consumer product: 50,000+ unique users (12 languages), 24% increase in listening time comparing before/after first conversation, 78% book completion rate among users with 5+ Voice Chat sessions, native mobile SDK (Android/iOS) + voice/text switching, reading companion system prompt, current-position context variables (book title, author, synopsis, current chapter, current paragraph), planned playback-control tool calls, guardrail self-destruct tests + first-day manual review (Treasure Island example), classification by conversation intent/theme/positive interaction, top queries were plot summaries (40%), citation-analysis queries in the hundreds per week. Added raw/articles/2026-08-08_elevenlabs_how-elevenreader-used-elevenagents.md to sources, updated: 2026-08-08.
 - Archive: already committed upstream (29 candidates, 26 new, total 2,401 URLs) -- not re-run.
-
 
 ---
 ## [2026-08-08] dreaming | Saturation pass -- Takes=0, 1 reference, 28 skips
@@ -1645,7 +1622,6 @@ _Log of all wiki changes. Newest entries at top._
 - **Archive**: upstream already committed `2026-08-07_20260807T180841Z.json` (6 new / 1 dedup, total 2,368 URLs) -- archive re-run skipped per Pitfall #21 archive-existence check.
 - **No wiki page changes this cycle** -- saturation confirmed; only this log entry staged.
 
-
 ---
 ## [2026-08-07] dreaming | Knowledge consolidation -- saturation pass (Takes=0)
 
@@ -1668,7 +1644,6 @@ _Log of all wiki changes. Newest entries at top._
 **Archive**: saved triage JSON (7 decisions, all skip) -> archive_triage.py archived 6/1 (1 dedup by empty URL). Total archive URLs: 2368.
 
 **Takes=0 confirmed**: every AI-relevant article from Aug 5-7 has been processed by at least one pipeline. No gaps identified.
-
 
 ---
 ## [2026-08-07] raw-backlog-ingest (18:00) | Duplicate batch detected -- no wiki changes, tracking fixed
@@ -1774,7 +1749,6 @@ Checkpoint: newsletter_20260807T102155Z / triage_latest.json (recovered from che
 
 Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from checkpoint; upstream response JSON parse failure -- 3 takes / 2 references / 15 skips)
 
-
 ---
 ## [2026-08-07] raw-backlog-ingest (10:00) | All 5 articles judged skip, no wiki changes
 
@@ -1850,7 +1824,6 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - Aug 6 pipelines already processed today's content: active-crawl (4 new pages: Cloudflare OS, Castform retrieval, Atlassian Rovo incident, Anti-LLM hobby communities), newsletter-wiki-ingest (Jeff Dean enrichment), blog-triage (AISI incident, Muse Spark, Microsoft-OpenAI revenue).
 - Archive: 17 candidates, 1 newly archived, 16 dedup. Total archive URLs: 2,332.
 - No wiki changes this cycle -- saturation confirmed.
-
 
 ---
 ## [2026-08-06] raw-backlog-ingest (18:00) | All 5 articles judged skip, no wiki changes
@@ -1995,7 +1968,6 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Enriched**: entities/warp-terminal.md (Warp Agent CLI standalone -- mux PTY architecture, model routing, persistent/remote sessions, full-screen app control, cloud handoff, pricing); entities/harvey.md (AI Tax Research -- multi-jurisdictional workflows, PwC custom tax models; Playbook Builder -- 300+ customer playbooks methodology, Carvana 80% stat); entities/hebbia.md (Rethinking Control in AI Delivery -- Nikita Knyazev gardener-not-architect thesis).
 - **Archive**: already committed by upstream (2026-08-05_20260805T181030Z.json, 12 new archived) -- archive step skipped.
 
-
 ---
 ## [2026-08-05] dreaming | Pattern E saturation -- 3 references, 0 takes
 - **Scan**: 205 raw articles (Aug 3-5), 17 decisions (3 references, 14 skips). Prior triage (Aug 4) consumed by dreaming-wiki-ingest.
@@ -2018,7 +1990,6 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Informational (no action)**: 1855 stale pages (>30 days); 5119 unprocessed raw articles (raw-backlog-ingest pipeline owns this).
 
 ---
-
 
 ## [2026-08-05] watchdog | auto-fix log header burial + Concepts header count
 
@@ -2071,7 +2042,6 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **entities/lcamtuf.md**: Reference -- "Meta: 7,000" (Aug 4): party at the end of the internet, LLM slop killing organic search, HN dominated by AI press releases (added to Rejecting Algorithmic Content section).
 - Index descriptions updated for 8 pages. Archive: skip/reference already archived by blog-triage (02a1c56e).
 
-
 ---
 ## [2026-08-05] raw-backlog-ingest (14:00) | all 5 articles skip -- 4th re-selection, composition change verified captured
 
@@ -2123,7 +2093,6 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Tambo** [[entities/tambo.md]]: L2→L3. Updated to 1.0 status (Feb 2026 launch, SOC 2 + HIPAA, 8K stars at launch, 11.2K+ now, 500K+ messages). Added Interactable Components, Local Tools, full MCP protocol (tools/prompts/elicitations/sampling), Additional Context, Suggestions, templates, README comparison table (vs Vercel AI SDK / CopilotKit / Assistant UI), Creator section (Michael Magan + Michael Milstead). Fixed pre-existing broken wikilink vercel-ai-sdk → entities/vercel.
 - **index.md**: updated descriptions for paul-hoekstra, tambo, context-rot entries.
 
-
 ---
 ## [2026-08-04] dreaming-wiki-ingest | upstream archive-only confirmed, 1 entity enrichment (warp-terminal computer use verification)
 
@@ -2132,7 +2101,6 @@ Checkpoint: blog_ingest_20260807T101846Z / triage_latest.json (recovered from ch
 - **Deep Sleep verification**: [[entities/warp-terminal.md]] read in full (236 lines pre-enrichment); software factory series parts 1-3 covered (triage, spec-driven dev, self-improving code review), part 4 computer use verification absent -> genuine gap.
 - **Enriched**: [[entities/warp-terminal.md]] -- new "Computer Use Verification (August 2026)" section: verify-behavior skill (reproduce/verify modes, video capture), triage/implementation/review integration, spec-driven debug loop, cloud subagent fan-out, video-as-review-evidence, Nano Banana demo. Frontmatter updated + source added.
 - **Archive**: skipped re-run -- upstream already committed archive (cf0643f9, 12 new archived, total 2,272 URLs).
-
 
 ---
 ## [2026-08-04] dreaming | Pattern E saturation -- 1 reference, 0 takes
@@ -2222,7 +2190,6 @@ Sources: HN Algolia trending (87 AI stories, 5 queries), X/Twitter trending (8 q
 - **[[entities/dynomight-net]]** -- Added "Evolution as Outer Optimizer: Alignment Lessons (Aug 2026)": outer/inner optimizer framing, subgoal alignment (Kenrick et al. 2010 7 subgoals, avg 8.2/10), decomposition failure as reward hacking, AI cultural evolution risk.
 - **[[entities/anthropic]]** -- Added "Naming Criticism: Mythos vs Logos (Om Malik, Jun 2026)": mythos-vs-logos epistemology, manufactured-credibility reading of White House/Pope visits, Augustus/Aeneid + Silicon Valley myth parallels.
 - Archive: archive_triage.py blog --keep-reference run.
-
 
 ---
 ## [2026-08-04] Manual ingest -- Gary Marcus "Two critical updates re: Astra and mathematics"
@@ -2552,7 +2519,6 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
 - Sources: lmstudio.ai (homepage, changelog, docs/bionic, blog, pricing), entire.io (homepage, blog, company page, git network essay), Wikipedia (Dohmke).
 - index.md: +1 entity (871 total), updated descriptions for entire + lm-studio.
 
-
 ---
 ## [2026-08-01] dreaming-wiki-ingest | 5 entity pages enriched (recovered from failed dreaming-group render)
 
@@ -2744,7 +2710,6 @@ Blog ingest checkpoint: 20 articles from 9 blogs. Triage filtered to AI-relevant
   - Harvey Nijanthan Hariharan: personnel announcement, no technical depth. Skipped.
 - Archive: 6 candidates archived (0 dedup), total_archive_urls=2117
 
-
 Batch 20260731T180057Z (raw_backlog_collect.py --sort ai-hint --limit 5). 5 articles evaluated with body reading.
 
 ### Enriched
@@ -2764,7 +2729,6 @@ Batch 20260731T180057Z (raw_backlog_collect.py --sort ai-hint --limit 5). 5 arti
 - Enriched [[entities/levelsio.md]] -- Upgraded from L2 (63 lines, 3.5KB) to comprehensive (117 lines, 12KB). Added: blog stats (800+ posts since 2013), Lex Fridman Podcast, levels.vc fund (Oct 2025), AvatarAI.me $100K/10 days (2022); new "AI-Era Thesis (2026)" section (indie hackers going extinct -- execution cost flipped to ~$20/mo, BigAI cannibalization, cancelled all SaaS and vibecoded replacements, minimal stack = FOSS + VPS + AI API + R2/S3, Claude Code on VPS for ~a year, 4B requests/yr on $244/mo, vibe-coded Stripe dispute responder); Cross-References (solo-founder-philosophy, vibe-coding, vibe-ceo, solo-founder-stack, cloudflare-email-sending); Sources. Status: L3. Raw articles: wiki/raw/articles/2026-07-30_levelsio_indie-hackers-first-to-go-extinct.md, wiki/raw/articles/2026-07-26_levelsio_cancelled-saas-vibecoded.md.
 - Enriched [[entities/niplav.md]] -- Upgraded from L2 (48 lines, 2.2KB) to comprehensive (135 lines, 12KB). Added: Overview (pseudonymous researcher, niplav.site since 2019, Long Content/Gwern-inspired, heavy Claude/GPT/Gemini/Kimi collaboration); Forecasting Track Record table (Metaculus Brier 0.116 / 281 uniform-sampled questions, PredictionBook 0.2365, Manifold B-/profit, 38th baseline ranking); AI Alignment writings (BCI, TAI race with China, discontinuous takeoff, anti-superpersuasion, OSS patching); Forecasting methodology (question decomposition, Iqisa library); Quantified Self; Programming & Mathematics; expanded Style & Approach (literate-programming, Crocker's rules, AI-use transparency). Fixed broken related link (concepts/rlhf → concepts/post-training/rlhf). Status: L3.
 - Cross-links: [[concepts/glut-of-circuits.md]] -- added [[entities/niplav]] to related frontmatter + thesis wikilink, fixed broken concepts/reward-hacking → concepts/evaluation/reward-hacking; [[concepts/vibe-ceo.md]] and [[concepts/harness-engineering/agentic-workflows/vibe-coding.md]] -- added [[entities/levelsio]] backlinks. Index.md descriptions updated for both entities.
-
 
 ---
 ## [2026-07-31] wiki-health-fix | health scan clean; benchmark pages updated field
@@ -3059,7 +3023,6 @@ All 5 articles already comprehensively covered by existing wiki pages. No wiki e
 
 Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Opus 5, Codex 10M MAU), blog-wiki-ingest (CryptanalysisBench, Ed Zitron/Gary Marcus enrichment), X-bookmarks (camelAI), raw-backlog-ingest (all skip).
 
-
 ---
 ## [2026-07-29] dreaming | Saturation -- all pipelines already processed today
 - Takes=0: 10 marginal articles scanned via filesystem (Pattern E), all skip
@@ -3105,7 +3068,6 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 
 ---
 
-
 ## [2026-07-29] X bookmarks ingest -- camelAI architecture deep-dive
 
 | 2026-07-29 | x-bookmarks-ingest | Created: entities/camelai.md (camelAI -- open-source coding agent platform; serverless architecture on Cloudflare Durable Objects + pi harness + Code Mode JS sandbox). Enriched: entities/pi.md (+Production Harness: camelAI section -- first documented production SaaS built on Pi lower-level primitives). Enriched: entities/mario-zechner.md (+Production Adoption section -- Pi adopted as production harness by camelAI). Enriched: concepts/harness-engineering/agent-serverless.md (+Case Study: camelAI section -- production validation of agent serverless pattern). Saved: raw/articles/2026-07-28_camelai_agent-durable-object-pi-code-mode.md (X Article, ~10KB, full plain_text from article.title). Source: https://x.com/i/article/2082137754788646912 |
@@ -3127,7 +3089,6 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 - Enriched [[entities/vicki-boykis.md]] -- Upgraded from L2 (47 lines) to comprehensive (117 lines). Added: professional background (Mozilla.ai, Duo, Tumblr, startup), Viberary project, Embeddings paper (DOI), Normconf conference organiser, keynote history (AMLC 2026, Pycon Italia 2024, PyData 2023), notable blog post timeline, writing style analysis, expanded cross-references. Status: L3.
 - Enriched [[entities/fastmcp.md]] -- Upgraded from L2 (64 lines) to comprehensive (97 lines). Added: GitHub stats (26.9K stars, 2.2K forks), three pillars architecture (Servers, Apps, Clients), adoption metrics (1M downloads/day, 70% of MCP servers), Prefect Horizon enterprise gateway, Quick Start code example, installation guide, documentation links. Status: enriched.
 
-
 | 2026-07-28 | dreaming-wiki-ingest | Enriched: entities/fireworks-ai.md (+Fireworks Nexus enterprise cost optimization platform: FireConnect/FireRouter/Faros/Arize validations; +K3 LoRA Training on Fireworks: serverless LoRA, $65/20-step RL, Countdown/FrozenLake). Enriched: concepts/kimi-k3.md (+LoRA Training on Fireworks subsection: Multi-LoRA serving, KV-cache awareness, dense/sparse reward design). Enriched: entities/cohere.md (+North Automations: $550B market opp, plain-language workflow, per-step model routing, Plan mode, governance analytics). Enriched: entities/harvey.md (+Document Processing Infrastructure: Job Framework rebuild, pipeline splitting, UDF format p50 -19%, Vector DB live migration, Arrow IPC, backpressure architecture). Archive: 4 candidates triaged, 3 newly archived (total: 2,018 URLs). Source: dreaming-group output 2026-07-28T18:14:15. |
 
 ---
@@ -3138,7 +3099,6 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 ## [2026-07-28] raw-backlog-ingest -- MAI-Thinking-1 tech report enrichment
 
 | 2026-07-28 | raw-backlog-ingest | Enriched: concepts/microsoft-mai-models.md (+Hill-Climbing Machine framework with 3 design principles, Pre-Training Data Composition table with 7 source families, Self-Distillation for RL Stability mechanism, Adaptive Entropy Control in GRPO, Rocket RL Infrastructure -- Controller/Problem Worker/Rollout Worker architecture with two-stage early-exit strategy). Sources: raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md (109-page tech report, 372KB). Skipped (already archived): reframing-superintelligence-fhi-2019.md, dwarkesh.com--p-grant-sanderson-2--960d89cd.md. Skipped (already well-covered): benchflow-awesome-evals-2025.md, 2026-07-24_poolside-latent-space.md. |
-
 
 ---
 ## [2026-07-28] raw-backlog-ingest -- 2 entity page enrichments from podcast transcript
@@ -3302,7 +3262,6 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 ---
 ## [2026-07-26] Active crawl -- 2 new pages created, 1 page enriched
 
-
 ---
 ## [2026-07-26] Raw backlog ingest -- 3 enriched, 2 skipped (already archived)
 
@@ -3318,7 +3277,6 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 **Skipped (already archived):**
 - Reframing Superintelligence (FHI 2019) -- Eric Drexler paper, no wiki gaps to fill
 - Grant Sanderson -- AI and Future of Math (Dwarkesh podcast), already archived
-
 
 **Pipeline**: active-crawl (scheduled, 11:00 UTC)
 **Discovery**: HN Algolia (3 trending stories), X/Twitter (10 trending topics), wiki gap analysis. Cross-referenced with existing coverage. Weekend window -- 6 HN stories with pts≥10.
@@ -3434,9 +3392,7 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 
 | 2026-07-14 | SCHEMA.md | updated | Added tags: speech, p2p, edge-computing, opencode
 
-
 | 2026-07-14 | concepts/cais.md | enriched | Drexler FHI 2019 paper deep dive: service-centered architecture, R&D automation vs agent-centric model, learning vs competence distinction, safety afforances, risks (210-page technical report)
-
 
 | 2026-07-14 | entities/claude-code.md | updated | Added 2M users / $2.5B ARR metrics to Key Metrics
 
@@ -3530,7 +3486,6 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 
 ### Sources
 - raw/articles/2026-07-11_rasyidanaf_vim-of-coding-agents.md
-
 
 ### Enriched Pages
 - **[[entities/openai-codex]]** -- Added "GPT-5.6-Sol Operational Guidance (July 2026)" section based on Theo Browne's X Article. Covers reasoning level selection (medium/high/xhigh/Ultra), fast mode 2.5x multiplier warning, subagent management mitigations (lower reasoning, AGENTS.md directive, Fable orchestrator pattern), model selection (Sol/Terra/Luna), prompt engineering with clear stop points, and usage monitoring tools (ccusage, codexbar). Updated frontmatter: sources, date.
@@ -3961,7 +3916,6 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 - **Fixed** [[concepts/mai-thinking-1-report]] -- Converted duplicate 22-line stub into redirect page pointing to [[concepts/mai-thinking-1-tech-report]]
 - **Updated** index.md -- Updated descriptions for mai-thinking and marked mai-thinking-1-report as redirect
 
-
 ---
 ## [2026-07-09] Active Crawl -- 3 new concept pages + 1 enrichment
 
@@ -4104,7 +4058,6 @@ Sources: active-crawl (4 new pages), newsletter-wiki-ingest (RSI Pace Letter, Op
 
 ---
 
-
 ## [2026-07-08 08:00 UTC] raw-backlog-ingest | Archived 2 unprocessed raw articles (5 candidates: 3 already archived, 2 content-already-captured)
 
 **Processed 5 candidates from backlog (ai-hint sorted):**
@@ -4232,7 +4185,6 @@ SCHEMA.md: Added 3 new tags (consciousness, ai-hardware, chrome). Updated index.
 
 Sources: HN Algolia API, X/Twitter xurl search, arXiv, Anthropic Research, LTT Labs, OZ Talking. Cross-referenced against wiki gaps -- all 4 were genuine gaps.
 
-
 ---
 ## [2026-07-07 07:50 UTC] blog-wiki-ingest | 2 pages enriched from 1 blog take
 
@@ -4284,7 +4236,6 @@ Sources: HN Algolia API, X/Twitter xurl search, arXiv, Anthropic Research, LTT L
 Raw articles saved: 2026-06-30_pcgamer_godot-bans-ai-authored-code.md, 2026-06-27_github_gpt55-codex-reasoning-token-clustering.md, 2026-07-04_github_claude-code-session-cache-leakage.md, 2026-03-06_japannews_ai-cannot-be-patent-inventor.md
 
 Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions. Cross-referenced against wiki gaps -- all 4 were genuine gaps with no prior concept pages.
-
 
 ---
 ## [2026-07-06] blog-wiki-ingest | Enriched SynthID C2PA section + Sean Goedecke entity page
@@ -4411,7 +4362,6 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - 0 skeleton entities, 0 ghost entries
 
 ---
-
 
 ## 2026-07-05 -- Raw backlog ingest (5 articles)
 
@@ -4621,7 +4571,6 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 
 ---
 
-
 ## [2026-06-30 11:15] -- Active crawl -- 4 new pages + 1 enriched
 
 **Discovery:** Parallel subagent trend scan (HN Algolia + X/Twitter + wiki gap analysis)
@@ -4642,7 +4591,6 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 
 ### SCHEMA.md updated:
 - Added `moondream`, `hp` to People/Orgs tag taxonomy
-
 
 ---
 ## [2026-06-30 07:50] -- Blog wiki-ingest -- Ornith-1.0, voyage-context-4, Cory Doctorow enriched
@@ -4679,7 +4627,6 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 - `entities/tencent.md` -- Added ARGUS GPU cluster telemetry (10k GPU tracing)
 - `entities/cursor-ai.md` -- Added Cursor for iOS (always-on cloud agents, PR diff notifications)
 - `concepts/nemotron-3-ultra.md` -- Added Nemotron-TwoTower (98.7% AR quality, 2.42x throughput) + vLLM multi-node inference guide
-
 
 ---
 ## [2026-06-30 12:00] -- New concept page: Brain2Qwerty v2 (Meta)
@@ -4724,9 +4671,7 @@ Sources: HN Algolia API, GitHub Issues API, PC Gamer, Japan News, HN discussions
 
 **Summary**: 9 themes / 27 articles from fallback file. 1 genuine gap identified and enriched.
 
-
 ---
-
 
 ## [2026-06-29] Watchdog auto-fix
 
@@ -4933,7 +4878,6 @@ Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tribute
 ### Statistics
 - 8 files staged for commit: 4 wiki pages + 3 raw articles + index.md + log.md
 
-
 ---
 ## [2026-06-28 07:22] -- Newsletter Triage (Recovery): Super Intel Fable 5, all skip
 
@@ -5059,7 +5003,6 @@ Skipped: 9 non-AI or already-covered articles (security breach, Om Malik tribute
 ### Enriched
 - **[[entities/dean-ball]]** -- Added "What Should Be Done (Jun 2026)" section: EO as de facto licensing, administration knowledge gap, default denial pattern, IVO proposal for frontier labs, Obernolte-Trahan Great American AI Act endorsement. Source: Hyperdimensional Jun 26.
 - **[[entities/alex-banks]]** -- Added "You're Underestimating AI on Purpose (Jun 2026)" -- AI Perception Paradox, Amara's Law, systematic underestimation of AI progress. Source: The Signal Jun 26.
-
 
 ---
 ## [2026-06-26] -- Active Crawl: 3 new concept pages + 1 entity enrichment
@@ -5683,7 +5626,6 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - MEDIUM: Bulk refresh 106 stale pages (growing ~47/week)
 - MEDIUM: Fix 99 auto-fixable wikilinks
 
-
 ---
 ## [2026-07-17] Weekly wiki graph analysis
 
@@ -5796,7 +5738,6 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 
 ---
 
-
 ## [2026-07-20 18:10 UTC] dreaming | Knowledge consolidation -- full saturation, Takes=0
 
 **Checkpoint**: 20260720T180050Z | Range: 2026-07-13 → 2026-07-20 | Total articles: 0 | Raw articles on disk: 187
@@ -5875,7 +5816,6 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 - wiki/raw/articles/2026-07-10_databricks-coding-agent-benchmark.md → wiki/raw/articles/2026-07-08_databricks-coding-agent-benchmark.md (corrected pub date)
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] -- Enriched with task complexity distribution (25% low, 60% medium, 15% high), Haiku/GPT-5.4-Mini recommendation, DIY benchmarking takeaway
 - [[entities/databricks]] -- Added Coding Agent Benchmark subsection to Recent AI Research, added source URL
-
 
 ---
 ## [2026-07-22] Manual ingest -- DeepSeek Liang Wenfeng Leaked Investor Meeting (X Note Tweet)
@@ -6014,7 +5954,6 @@ Based on trending-topics-2026-06-23 and trending-topics-2026-06-24 analysis repo
 3. `concepts/earendil.md` -- Upgraded from stub to full page: company overview, products (Pi, Absurd, Lefos), session portability advocacy, distillation position
 4. `index.md` -- Added session-portability entry; updated earendil description
 
-
 ---
 ## [2026-07-31] weekly wiki-graph-analysis | graph health + person×concept analysis
 
@@ -6045,7 +5984,6 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - **Archive**: `archive_triage.py` returned "All items already archived (dedup)" -- 0 new URLs archived
 - **Wiki changes**: None (Takes=0, full saturation)
 
-
 ---
 
 ## [2026-08-03] Manual ingest -- Simon Willison "Stateless MCP" article
@@ -6063,7 +6001,6 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Raw article was already auto-ingested by blogwatcher; frontmatter enriched
 - MCP 2026-07-28 spec concept page (`concepts/mcp-2026-07-28-spec.md`) already had comprehensive coverage including Simon's 3-tool table in "Tooling & Ecosystem" section -- no updates needed
 - Primary value-add: dedicated section in Simon Willison entity page documenting his MCP stance reversal
-
 
 ---
 

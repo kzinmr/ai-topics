@@ -8,7 +8,7 @@ tags:
 created: 2026-04-24
 updated: 2026-08-24
 type: entity
-sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md]
+sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md, raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md]
 ---
 
 
@@ -265,6 +265,15 @@ Source: [[raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive]]
 
 Source: [[raw/articles/2026-08-22_ronacher_fast-and-hard-code]] (HN 17 pts, Aug 22 2026)
 
+**Anger, Anxiety and Agency — the Emotional Register of Disruption (August 2026):** In "Anger, Anxiety and Agency" (Aug 24, 2026), Ronacher answers a top Lobsters comment on Sean Goedecke's "never be angry at work" post — *how can you work in tech right now and not be angry?* — by drawing a sharp emotional distinction that runs through his AI commentary. His central claim: the healthy response to the AI/agent disruption is **anxiety and disorientation, not anger**.
+  - **Anxiety vs. anger:** Anxiety is a response to an uncertain future that *does not require someone to blame*; anger is different because it "needs to be directed somewhere" — it implies someone is doing something *to you*. That framing turns a loss of control into a "comforting story with a villain." On AI specifically, "it's easy to pick the wrong villain because of how disruptive the change is for everyone": your EM or leadership team may themselves be uncertain and just "projecting clarity and certainty" to stay afloat.
+  - **Productive substitutes:** Instead of anger, be **unsure** — uncertainty is more productive because it leads to curiosity ("we have access to magic machines, and we can poke at them and see what happens") — and beyond curiosity, genuine **excitement**: a "newfound feeling of power and freedom." He notes many AI gains are not showing up as company productivity gains but in "the number of side projects shipped by everybody not on their company's time."
+  - **Costs and the wrong villain:** The pervasive "gains benefit companies, not employees" narrative has some truth — "at least one person at Meta wants that" (an increasing share of leadership costs is "funneled directly to some large AI labs," with leaders privately worrying about their data and whether the big labs will step into their space rather than partner). But "that does not mean there are no villains": when it settles, "some will profit and many will not," and the industry is "completely ignoring the impact this has on society at large, the climate, and the balance of the world."
+  - **Europe, again:** This is the emotional register of his recurring Europe-dependence worry — "I worry about Europe's lack of ambition and growing dependence on other countries" — now framed as a personal, owner-level anxiety: as Earendil's founder he is "simultaneously tremendously excited, but also unsure," and "some days ... I wake up feeling like the ground is crumbling beneath me."
+  - **The prescription:** "Urge anyone who feels anger and looks for a villain ... to instead remain curious instead" — curious enough to understand what is changing, excited enough to experiment, and then "earn the right to decide when resistance is warranted and where to direct it." Extends the European-sovereignty / cost-funneling thread from "Dangerous Technology For Americans Only" and "Gaslighting Openness" into a practitioner's emotional framework. See [[concepts/coding-agents/ai-coding-agent-criticism]].
+
+Source: [[raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md]] (lucumr.pocoo.org, Aug 24 2026)
+
 ## Influence Metrics
 
 | Project | GitHub Stars | Language | Monthly Downloads | Notes |
@@ -315,6 +324,7 @@ Source: [[raw/articles/2026-08-22_ronacher_fast-and-hard-code]] (HN 17 pts, Aug 
 - https://lucumr.pocoo.org/2026/6/23/the-coming-loop/ — "The Coming Loop"
 - https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/ — "Better Models: Worse Tools"
 - https://lucumr.pocoo.org/2026/8/22/fast-hard-code/ — "Fast and Hard Code" (Aug 22, 2026)
+- https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/ — "Anger, Anxiety and Agency" (Aug 24, 2026)
 - https://lucumr.pocoo.org/2026/1/27/earendil — "Colin and Earendil"
 - https://lucumr.pocoo.org/2024/2/15/rye-grows-with-uv/ — "Rye Grows With UV"
 - https://lucumr.pocoo.org/projects/ — Projects page

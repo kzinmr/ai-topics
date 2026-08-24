@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-08-24T18:53:00.383227+00:00",
+  "triage_run_id": "20260823T180030Z",
+  "source": "dreaming",
+  "summary_ja": "Saturation confirmed (0 RSS + 0 newsletter articles, 174 recent raw files). Archive-index absence probe over raw/articles/ found 56 untriaged articles, of which 11 were already covered by today's blog-wiki-ingest / trending-topics / dreaming pipelines (Marcus ARR-vs-ARR, Leopold's Folly, OpenAI AI Futures + Stampli, Goedecke never-angry, Sierra release governance, DeepSWE head-to-head). One genuine gap: Parallel Web Systems 'best search API' post (scrape-failed on 08-20, re-scraped 08-23 with 0KB body) — marginal, no enrichment possible. 33 AI-relevant untriaged articles all classified as skip (already covered, non-AI, or too thin). 11 decisions: 0 takes, 0 references, 11 skips.",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-non-ai-batch",
+      "source": "dreaming",
+      "source_name": "multi-source",
+      "title": "Non-AI batch: filfre, matduggan, pluralistic x2, eli.thegreenplace, dfarq x2, devblogs, anildash, techcrunch, jeffgeerling, borretti x2, simonwillison x4, johndcook x3, troyhunt, evanhahn, bsky, lwn, daringfireball x2, construction-physics, nesbitt, matklad x2, anildash, hex, elevenlabs",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "Batch skip: non-AI content (philosophy, travel, book reviews, package management, number theory, UI design, Vim, government breach, etc.) or already covered by today's pipelines (simonwillison llm 0.33/linus-torvalds/more-than-just-code-review handled by trending-topics; borretti 'Our Servants' and 'Syncthing gotcha' already skipped by blog-wiki-ingest; matklad 'Rust Glancer' + 'Better Batteries' already skipped; construction-physics reading-list is a link digest; nesbitt package-management is non-AI; hex next-bi-tool already skipped; elevenlabs subtitles how-to already skipped).",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch of 25+ non-AI or already-covered articles. No individual triage needed."
+    },
+    {
+      "item_id": "dreaming-skip-raw-works-rlm",
+      "source": "dreaming",
+      "source_name": "raw-works",
+      "title": "RLMs: New Reasoning Models + SOTA on LongCoT",
+      "url": "",
+      "raw_path": "wiki/raw/articles/raw-works-rlms-new-reasoning-models-2026-04-20.md, wiki/raw/articles/raw-works-rlms-sota-on-longcot-2026-04-19.md",
+      "recommended_action": "skip",
+      "reason_ja": "2 raw files from RawWorks RLM series (April 2026, stale). No URL in frontmatter (raw_path-only recovery). Topics (reasoning language models, long-chain-of-thought) are covered by concepts/rlms.md and concepts/recursive-language-models.md. Stale date + no fresh angle.",
+      "candidate_wiki_path": "concepts/rlms",
+      "body_excerpt": ""
+    }
+  ]
+}

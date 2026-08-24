@@ -1,0 +1,66 @@
+{
+  "archived_at": "2026-08-24T18:55:33.357439+00:00",
+  "triage_run_id": "20260824T184500Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E saturation. dreaming-group FAILED on JSON render (output truncated). Ran my own filesystem scan (check_archive_index_absence.py, 50 never-archived URLs). 2 genuine reference enrichments applied: armin-ronacher 'Anger, Anxiety and Agency' (Aug 24) and simon-willison 'More than just code review' + Linus Torvalds debug quote (Aug 22). 48 skips (already-committed by active-crawl / blog-wiki-ingest, or non-AI).",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-armin-anger-anxiety",
+      "source": "dreaming",
+      "source_name": "lucumr.pocoo.org (Armin Ronacher)",
+      "title": "Anger, Anxiety and Agency",
+      "url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
+      "raw_path": "wiki/raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md",
+      "recommended_action": "reference",
+      "reason_ja": "Genuine gap: page had no anxiety-vs-anger emotional framework, Meta cost-funneling, or Europe-dependence content. Enriched entities/armin-ronacher.md.",
+      "candidate_wiki_path": "entities/armin-ronacher.md",
+      "body_excerpt": "# Anger, Anxiety and Agency\nSource: https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/\nAnger, Anxiety and Agency\nwritten on August 24, 2026\nSean Goedecke wrote a post arguing that\nyou should never be angry at\nwork\n— a post\nwith which I strongly agree.  Anger can be a useful signal, but being a"
+    },
+    {
+      "item_id": "dreaming-ref-simon-verify-review",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "More than just code review",
+      "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+      "raw_path": "wiki/raw/articles/simonwillison.net--2026-aug-22-more-than-just-code-review--54b6a31e.md",
+      "recommended_action": "reference",
+      "reason_ja": "Genuine gap: no Aug 22 verification-over-review entry. Enriched entities/simon-willison.md.",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# More than just code review\nSource: https://simonwillison.net/2026/Aug/22/more-than-just-code-review/\n22nd August 2026\nThe key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes have"
+    },
+    {
+      "item_id": "dreaming-ref-simon-linus-torvalds",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "A quote from Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+      "raw_path": "wiki/raw/articles/simonwillison.net--2026-aug-22-linus-torvalds--b52cb854.md",
+      "recommended_action": "reference",
+      "reason_ja": "Genuine gap: no Torvalds debug-session / calibrated-trust entry. Enriched entities/simon-willison.md.",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# A quote from Linus Torvalds\nSource: https://simonwillison.net/2026/Aug/22/linus-torvalds/\n22nd August 2026\nAnd this was a debug session from hell, enormously helped by an AI doing much of the grunt-work.\nI'd like to call it my tireless helper, but the AI several times stated flat out that this was"
+    },
+    {
+      "item_id": "dreaming-skip-active-crawl-batch",
+      "source": "dreaming",
+      "source_name": "active-crawl / blog-wiki-ingest (already committed)",
+      "title": "vitalik local-mixing + ronacher fast-hard-code + active-crawl research note + blog-wiki-ingest batch (4x MaskRay, 2x John Cook, 2x Gary Marcus, shkspr, troyhunt, sixcolors, coredump, Drew Breunig Fable-End dup)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "Already committed by active-crawl and blog-wiki-ingest earlier today (log.md + git log verified). No re-processing.",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dreaming-skip-non-ai-batch",
+      "source": "dreaming",
+      "source_name": "non-AI raw articles (maskray.me x4, johndcook x3, blog.jim-nielsen, garymarcus substack x3, bsky masnick, timmarinin bluesky, pluralistic, dfarq quickbasic, filfre, daringfireball x2, techcrunch bluesky, walmart, eli concurrent-servers, evanhahn vim, construction-physics, borretti syncthing, nesbitt pkg-mgmt, matklad rust-glancer, simonwillison already-covered threads, lucumr fast-hard-code dup)",
+      "title": "non-AI / already-covered / thin-link-stub raw articles",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI (hardware/LLVM internals, math, CSS, package management, Bluesky, Walmart) or already-covered threads or thin link-stubs with no own analysis. No wiki value beyond existing coverage.",
+      "candidate_wiki_path": null
+    }
+  ]
+}
