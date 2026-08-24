@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (907 pages)
+## Entities (908 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -505,7 +505,7 @@
 - [[entities/mark-chen]] — Mark Chen
 - [[entities/mark-mcquade]] — Mark McQuade
 - [[entities/mark-saroufim]] — Mark Saroufim
-- [[entities/martin-alderson]] — Martin Alderson; ML Research + Open-Weight Margin Collapse section (July 7); Cache Read Costs (Aug 11: cache reads dominate agentic workload costs, quadratic turn growth, ~$0.5/GB-h profit centre); How I Think About Reducing AI Costs (Aug 17: 4-layer cost audit framework, MCP token waste, quarterly review cadence)
+- [[entities/martin-alderson]] — Martin Alderson; ML Research + Open-Weight Margin Collapse section (July 7); Cache Read Costs (Aug 11: cache reads dominate agentic workload costs, quadratic turn growth, ~$0.5/GB-h profit centre); How I Think About Reducing AI Costs (Aug 17: 4-layer cost audit framework, MCP token waste, quarterly review cadence); The Summer of Open Weights (Aug 24: open-weight tipping point, OpenAI Luna -80%/Sol -20% cuts, Meta Muse Spark 1.2 $0.10/$0.20 + $0.002 cache reads, Anthropic compute-starved & least able to respond price-wise, commodity vs frontier-leap scenarios)
 - [[entities/martin-fowler]] — Martin Fowler (redirect)
 - [[entities/martin-kleppmann]] — Martin Kleppmann
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
@@ -864,6 +864,7 @@
 - [[entities/vicki-boykis]] — Vicki Boykis
 - [[entities/vincent-warmerdam]] — Vincent Warmerdam
 - [[entities/vincent-weisser]] — Vincent Weisser
+- [[entities/vitalik-buterin]] — Vitalik Buterin — Ethereum co-founder; 2026 obfuscation series on stopping LLMs from comprehending code (local mixing iO, Part III Aug 21 2026)
 - [[entities/voyage-ai]] — Voyage AI; voyage-code-4 code embedding for coding agents — agentic code retrieval benchmark, PR-mined corpus, $0.12/1M (Aug 13)
 - [[entities/vtrivedy10]] — Vivek 'Varun' Trivedy (@vtrivedy10)
 - [[entities/wafer-ai]] — Wafer; cross-platform model serving across NVIDIA, AMD, TPUs; Kimi K3 on MI355X benchmark (Aug 2026)
@@ -912,7 +913,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2002 pages)
+## Concepts (2005 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1044,6 +1045,7 @@
 - [[concepts/ai-benchmarks/agent-memory-bench]] — Agent Memory Benchmark
 - [[concepts/ai-benchmarks/agent-security-bench]] — Agent Security Bench (ASB)
 - [[concepts/ai-benchmarks/agent-survival-benchmark]] — Agent Survival Benchmark
+- [[concepts/ai-benchmarks/agentx-inferencex]] — AgentX / InferenceXv3 (SemiAnalysis, Aug 2026) — first open-source multi-turn agentic coding inference benchmark at 1M context (Apache 2.0, $3M dataset); ~2MW/1000+ chips; 50-70+ upstream vLLM/SGLang/Mooncake PRs; CUDA-moat test
 - [[concepts/ai-benchmarks/agentdojo]] — AgentDojo: prompt injection attacks/defenses for agents (ETH Zurich, NeurIPS 2024🆕)
 - [[concepts/ai-benchmarks/agentharm]] — AgentHarm
 - [[concepts/ai-benchmarks/ai-resistant-evaluations]] — AI-Resistant Technical Evaluations
@@ -1252,7 +1254,7 @@
 - [[concepts/antangelmed]] — AntAngelMed
 - [[concepts/anthropic-alibaba-claude-ip-dispute]] — Anthropic-Alibaba Claude IP Dispute — June 2026 Anthropic accusation of illicit Claude distillation by Alibaba; NSA/Mythos access loss, export controls, US-China AI tensions (June 25)
 - [[concepts/anthropic-copyright-settlement]] — Anthropic $1.5B Copyright Settlement — landmark Bartz v. Anthropic ruling: dual decision (training=fair use, piracy=illegal); ~$3,000/book for 482K titles; 91% claim rate (July 2026)
-- [[concepts/anthropic/2026-revenue-growth]] — Anthropic 2026 Revenue Growth ($44B ARR)
+- [[concepts/anthropic/2026-revenue-growth]] — Anthropic 2026 Revenue Growth ($44B ARR); FT July 2026 update (Aug 23: $65B annualized, Q3 profitability expected, 6,000 $100k+ customers, Ramp AI Index model-spend breakdown with Fable 5 at 8.0% trailing Opus 4.8 at 28.0%)
 - [[concepts/anthropic/agent-sdk-sre-patterns]] — Execute documented runbooks for common SRE incidents.
 - [[concepts/anthropic/dod-dispute]] — Anthropic–DoD Dispute
 - [[concepts/anthropic/index]] — Anthropic Platform & Business
@@ -2139,6 +2141,7 @@
 - [[concepts/local-first-architecture]] — Local-First Architecture
 - [[concepts/local-first-computing]] — Local-First Computing
 - [[concepts/local-first-software]] — Local-First Software
+- [[concepts/local-mixing-code-obfuscation]] — Local Mixing Code Obfuscation — Buterin's Part III: circuit-transformation iO (reversibility→hardening→gadgetization→mixing→fcompress); symmetric-crypto-style heuristics vs reduction-based iO; big-key regime, TB-scale traces (Aug 2026)
 - [[concepts/local-llm/dgx-spark-nim]] — DGX Spark (Local LLM Server)
 - [[concepts/local-llm/gguf]] — GGUF (GPT-Generated Unified Format)
 - [[concepts/local-llm/inference-hardware]] — Local LLM Inference Hardware
@@ -2691,6 +2694,7 @@
 - [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism
 - [[concepts/sglang-structured-generation-language]] — SGLang (Structured Generation Language)
 - [[concepts/shadow-ai-governance]] — Shadow AI Governance
+- [[concepts/shared-brain-for-agents]] — Shared Brain for Agents — one structured knowledge base read/written by multiple agent harnesses (OzBrain reference case); routing index + cross-harness memory vs per-product memory (Aug 2026)
 - [[concepts/shared-discovery-paradox]] — Shared Discovery Paradox — Game-theoretic model showing information sharing without action coordination degrades collective outcomes; implications for multi-agent systems with shared memory (Yohei Nakajima, July 2026)
 - [[concepts/shkspr.mobi]] — shkspr.mobi
 - [[concepts/shopify-ai-engineering]] — Shopify's AI-First Engineering

@@ -2,7 +2,7 @@
 title: "Self-Hosting AI for Development"
 type: concept
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-08-24
 tags:
   - infrastructure
   - local-llm
@@ -181,6 +181,12 @@ The setup takes ~2-3 hours and involves:
 
 ---
 
+## Case Study: One-Prompt Self-Hosted Agentic Software Factory (Aug 2026)
+
+Jake Saunders' post "Building an (almost) fully self-hosted, sandboxed, agentic software factory" (Aug 21, 2026, HN 116 pts) documents an end-to-end run where a single prompt produced: repo creation, application + tests, green CI, Postgres provisioning, and HTTPS deployment — "without another message from me."
+
+The "(almost)" qualifier matters: the **brain** (frontier LLM API) stays in the cloud, while the rest of the factory — agent harness, sandboxed execution, CI runner, database, TLS termination, deployment — is self-hosted. This is the recurring architecture in this wiki's self-hosting discourse (cf. [[entities/alex-finn|Alex Finn]]'s 24/7 local AI fleet): the model is rented, everything around it is owned. The sandbox emphasis matches the [[concepts/sandbox|agent sandboxing]] trend: the agent executes untrusted AI-generated code inside an isolated environment, so a bad loop can't touch the host.
+
 ## Connection to Other Patterns
 
 - [[concepts/cli-over-mcp-pattern]] — Self-hosted models still benefit from CLI-first interaction
@@ -192,3 +198,4 @@ The setup takes ~2-3 hours and involves:
 - [Peter Steinberger: Self-Hosting AI Models After Claude's Usage Limits](https://steipete.me/posts/2025/self-hosting-ai-models/) — Primary source, comprehensive infrastructure analysis
 - [Vast.ai Documentation](https://vast.ai/) — GPU marketplace for self-hosting
 - [vLLM Documentation](https://docs.vllm.ai/) — High-throughput inference server
+- [Jake Saunders: Building an (almost) fully self-hosted, sandboxed, agentic software factory](https://blog.jakesaunders.dev/building-an-almost-fully-self-hosted-sandboxed-agentic-software-factory/) — Aug 21, 2026; raw note: raw/articles/2026-08-24_active-crawl_research-note-self-hosted-factory-ozbrain-unix.md

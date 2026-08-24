@@ -2,7 +2,7 @@
 title: "AI Coding Agent Criticism"
 type: concept
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-08-24
 tags:
   - concept
   - coding-agents
@@ -58,6 +58,11 @@ Criticism from non-use tends to be more abstract:
 - "AI will replace all programmers"
 - "Coding agents produce unreviewable code"
 - "The technology is fundamentally unsafe"
+
+## Empirical Updates from the Center (2026)
+
+- **"Fast and Hard Code" (Ronacher, Aug 22, 2026):** a center-camp observation that LLMs have made language choice "much less consequential" — agents unlock "hard languages" (Rust, Zig) and gatekept low-level domains (DWARF, eBPF, custom network drivers, custom crypto, old hardware) for developers who previously stayed away. His ambivalent close is the center voice in miniature: "maybe the world will have more slop, but it might also have more developers in it, that want things to be fast and small." Concrete signals: Cloudflare Artifacts' pure-Zig Git-protocol engine (~100 KB WASM) and Vercel's `fx` Zig coding agent, both largely LLM-assisted. Source: [[raw/articles/2026-08-22_ronacher_fast-and-hard-code]]
+- **Adjacent center-camp pieces (same period):** "Stop Making TUIs" (Thomas Ptacek, via [[entities/simon-willison]]'s link blog, Aug 2026) — agents drive GUI cost to near-zero; and matklad's "lower to plain text" IDE philosophy (Rust Glancer, Aug 2026) — the interface layer is being redesigned *around* agents rather than for humans.
 
 ## Related
 

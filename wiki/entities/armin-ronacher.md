@@ -6,7 +6,7 @@ tags:
   - developer-tooling
   - web-framework
 created: 2026-04-24
-updated: 2026-07-17
+updated: 2026-08-24
 type: entity
 sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md]
 ---
@@ -250,12 +250,20 @@ Key architectural insights:
 - **Generalized, not GitHub-specific**: The subscription interface (`subscribeToResourceEvents`) is fully provider-agnostic — the same mechanism will be used for subagents
 - **Per-conversation, not global**: Subscriptions fire within an existing agent session, not as new sessions — the agent maintains context across the full PR lifecycle
 - **Follow-up vs steering messages**: Subscription notifications are injected as follow-up (not steering) messages, allowing the agent to act autonomously without user prompting
-- **`[[NO_REPLY]]` marker**: Prevents noisy visible responses when the agent handles events silently (e.g., auto-fixing a CI failure)
+- **`NO_REPLY` marker** (literal marker string, not a wikilink): Prevents noisy visible responses when the agent handles events silently (e.g., auto-fixing a CI failure)
 - **Batching**: Multiple events arriving in a short window are batched into a single notification
 
 Production result: Junior ~100% subscribes to PRs it creates, automatically resolves build failures, addresses review feedback, and updates Slack threads — producing a "much more natural" developer experience. The key insight: reactive agents (responding to events) are actually proactive agents (driving work forward without human intervention).
 
 Source: [[raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive]]
+
+**Fast and Hard Code — Agents Unlock the "Hard" Stack (August 2026):** In "Fast and Hard Code" (Aug 22, 2026), Ronacher observes that LLMs have made language choice "much less consequential" — the human friction of learning a language no longer matters when an agent can be made to pick (and rewrite in) a language the programmer is unfamiliar with. Two "vibe shifts" drive the result: (1) more talk about wanting fast software, and (2) LLMs being exceptional at optimizing code without regressing behavior. Consequences he documents:
+  - Previously-unlikely Rust shippers now ship Rust; performance-obsessed figures (Mitchell Hashimoto, Charlie Marsh, Jarred Sumner, Daniel Lemire) are also receptive to agents, so "fast and small" projects increasingly pick "hard languages" — even Zig (despite its community's AI-skepticism): Cloudflare's new Artifacts service uses a pure-Zig Git-protocol engine compiled to ~100 KB WebAssembly; Vercel released `fx`, a Zig coding agent advertised as small and fast.
+  - Developers are now doing "really impressive stuff with DWARF files, eBPF, custom network drivers, custom crypto and really old computing hardware" — domains previously off-limits or intentionally gatekept.
+  - His [[concepts/karpathy-loop|autoresearch]]-style observation: you don't need to know all the performance tricks, just put an agent on the problem ("though knowledge greatly helps!").
+  - Ends with his recurring ambivalence: "maybe the world will have more slop, but it might also have more developers in it, that want things to be fast and small."
+
+Source: [[raw/articles/2026-08-22_ronacher_fast-and-hard-code]] (HN 17 pts, Aug 22 2026)
 
 ## Influence Metrics
 
@@ -306,6 +314,7 @@ Source: [[raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive]]
 - https://lucumr.pocoo.org/2026/6/10/gaslighting/ — "Gaslighting Openness"
 - https://lucumr.pocoo.org/2026/6/23/the-coming-loop/ — "The Coming Loop"
 - https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/ — "Better Models: Worse Tools"
+- https://lucumr.pocoo.org/2026/8/22/fast-hard-code/ — "Fast and Hard Code" (Aug 22, 2026)
 - https://lucumr.pocoo.org/2026/1/27/earendil — "Colin and Earendil"
 - https://lucumr.pocoo.org/2024/2/15/rye-grows-with-uv/ — "Rye Grows With UV"
 - https://lucumr.pocoo.org/projects/ — Projects page
