@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-21
+updated: 2026-08-25
 tags:
   - security
   - company
@@ -46,6 +46,8 @@ sources:
   - raw/articles/2026-06-09_harvey_how-to-use-ai-as-a-lawyer.md
   - raw/articles/2026-06-09_harvey_ai-agents-for-legal-work.md
   - raw/articles/2026-06-13_harvey_ai-contract-drafting.md
+  - raw/articles/2026-08-25_harvey_legal-document-comparison-software.md
+  - raw/articles/2026-08-25_harvey_litigation-lawyer-to-legal-engineer.md
 ---
 
 # Harvey
@@ -924,3 +926,32 @@ Harvey published a product guide (Aug 10, 2026) on **corporate compliance AI** �
 **Agentic workflows**: increasingly the sequence — monitor regulatory developments, interpret what they mean, act on the results — is executed by agentic workflows that transform regulatory updates into concrete compliance work for legal professionals to review and approve. The guide explicitly frames AI as accelerating the work *between* "a regulation changed" and "the organization responded," not replacing attorney judgment.
 
 Source: raw/articles/2026-08-11_harvey_corporate-compliance-ai.md
+
+## Legal Document Comparison (Aug 2026)
+
+Harvey published a buying guide (Aug 25, 2026) framing the **legal document comparison** category and its new product capabilities. The core thesis: the category is shifting from **marking** where text moved to **reading** the legal meaning of each change and measuring it against the organization's own standard positions.
+
+**The capability split**: Most comparison software answers the *mechanical* question (what changed) well but is quiet on the *legal* question (does this change matter). A defined term shifting from "Affiliate" to "Subsidiary," a carve-out narrowed by a single adverb, or a cross-reference that now points to a different schedule each read as small textual changes but can carry real legal weight. General-purpose AI tools fall short here because they were trained on the whole web, not on how contracts and pleadings work.
+
+**Five traits that separate meaning-reading software from text-marking**:
+1. **Reads legal meaning** — recognizes that a defined-term shift or narrowed carve-out carries weight. Harvey runs on a model built and measured for legal work, tested on real legal tasks via **BigLaw Bench** and **LAB** (Harvey's proprietary benchmarks). **Repsol's legal team** ran a blind evaluation involving **50+ lawyers** and selected Harvey, citing higher accuracy and more reliable output.
+2. **Comparison against your own standard positions** — via **Contract Intelligence** and Playbooks, takes a first pass on inbound contracts applying the team's positions and updating them as new terms are accepted. **Bayer** adopted Harvey for consistency-at-scale across divisions.
+3. **Bulk/set-wide comparison** — most tools work two files at a time; **Harvey Vault** runs set-wide comparison in one workspace, with a single project supporting up to **100,000 documents**. In the independent **RSGI June 2026 report** commissioned by Harvey ("The Accelerating Impact of Legal AI"), **91% of in-house legal teams** reported spending less time reviewing contracts after adopting the platform. **Bridgewater** now completes contract reviews in days that once took weeks.
+4. **Grounded in your precedent** — knowledge sources ground output in the organization's own templates and prior matters. **Deutsche Telekom** CLO Dr. Peter Schichl cited tailoring as decisive.
+5. **Redlining inside Word + DMS** — the **Harvey for Word Add-In** brings comparison/redlining into the document being edited, with native Microsoft 365 (Outlook + Copilot) integration and connections to **iManage** and **NetDocuments**. **The Adecco Group** selected Harvey on domain-specific performance after a rigorous multi-tool pilot; **Talanx** (one of Europe's largest insurers) uses it for a consistent overview of contracts.
+
+Security posture: **SOC 2 Type II**, **ISO 27001**, matter-level access controls, and a commitment that Harvey does not use customer data to train its models.
+
+Source: raw/articles/2026-08-25_harvey_legal-document-comparison-software.md
+
+## Legal Engineer Role (Aug 2026)
+
+Harvey published a first-person essay (Aug 24, 2026, Connor Molloy) defining the emerging **Legal Engineer** role. Molloy spent seven years as a litigation/disputes lawyer before moving to Harvey; the role sits at the intersection of law, technology, and the business of legal work.
+
+**The "translator" frame**: A Legal Engineer sits between the people building/bringing technology to market and the lawyers who use it daily — understanding how lawyers actually work, where technology helps, and what it takes to get from one to the other. Much of the role is hands-on customer work: demoing Harvey, working with lawyers who already use it, and co-building solutions (e.g., a partner whose team had years of an internal playbook was shown the playbook builder and had it applied to a live document within a half-hour session).
+
+**Trust-based rollout**: Legal practice runs on precedent, not just legal precedent but the experience of people around it. Lawyers don't change how they work on a pitch alone; they want to hear from someone who has used the technology to solve similar problems and can be honest about where it works and where it doesn't. "The question is rarely 'who can sell me this product?' — it's 'who can I talk to about how this actually works?'"
+
+**Skills**: curiosity about the practice and business of law, communication, creativity, and comfort operating in ambiguity — "the job is creative thinking more than anything else." Molloy emphasizes that Legal Engineering is still a new profession with no fixed shape. Entry point: Harvey Academy's free, self-paced **Legal Engineering Certification**.
+
+Source: raw/articles/2026-08-25_harvey_litigation-lawyer-to-legal-engineer.md

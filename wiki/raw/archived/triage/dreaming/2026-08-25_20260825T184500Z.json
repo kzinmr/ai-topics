@@ -1,0 +1,22 @@
+{
+  "archived_at": "2026-08-25T18:59:48.389524+00:00",
+  "triage_run_id": "20260825T184500Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E saturation. dreaming-group FAILED on JSON render (output truncated); checkpoint run 20260825T180007Z reported total_articles=0 / recent_raw_articles=173. Ran my own filesystem scan via check_archive_index_absence.py (60 never-archived URLs, 08-23..08-25 window). 2 genuine takes: Factory/Droid 'model routing in the harness' (concepts/coding-agents/model-routing.md + entities/factory.md dual enrichment) and Harvey 'legal document comparison' (entities/harvey.md new section). 2 references: Harvey legal-engineer role essay, ElevenLabs CLI v1. 48 skips: 25 already-processed by today's pipelines (newsletter-wiki-ingest METR/SPADE, active-crawl vitalik/ronacher/thomson/sanglard/boydkane), 12 already-skipped by 08-24 dreaming wiki-ingest, ~11 non-AI (MaskRay x4, John Cook x3, sixcolors, shkspr, troyhunt, coredump, Windows 95, Columbia House, curmudgeon, foot-gun, oldnewthing, Apple news), 2 marginal (Gary Marcus thin posts, sierra Korea launch).",
+  "decisions": [
+    {
+      "item_id": "dreaming-batch-skip-nonai-0825",
+      "source": "dreaming",
+      "source_name": "dreaming Pattern E (filesystem scan)",
+      "title": "Batch skip: non-AI / already-covered blog articles (08-23..08-25 scrape batch)",
+      "url": "",
+      "raw_path": "~/wiki/raw/articles/",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ バッチ skip: (a) 08-24 dreaming wiki-ingest log entry で既に skip 済み — MaskRay x4 (LLVM), John Cook x3, shkspr.mobi, sixcolors, troyhunt, coredump.cx, simonwillison, Gary Marcus x2, Jim Nielsen, Drew Breunig, Martin Alderson, Simon Willison FT 引用; (b) 今日 pipeline 処理済み — METR note (concepts/ai-discovery-acceleration + entities/metR), SPADE arxiv (concepts/spade-self-play-environments), fabiensanglard AGENTS.md (concepts/agents-md-code-quality), boydkane inference engines (concepts/inference-engine-security), thomson-reuters (concepts/thomson-reuters-frontier-model); (c) 非AI — tedium Columbia House, dfarq Windows 95, bitcam-app, finalist.works, entropicthoughts curmudgeon, idiallo foot-gun, jyn.dev distributed identity, pluralistic elbows, daringfireball DMA, devblogs oldnewthing, developer.apple.com news, simonwillison sqlite executable (LLM 言及ない), eli.thegreenplace concurrent-servers part 8, evanhahn vim, construction-physics reading-list, borretti syncthing-sqlite, nesbitt package-management, downtowndougbrown eMachines BIOS (Claude 一言言及のみ, 技術寄与なし), sierra.ai Korea launch (地域展開のみ, 新規アーキテクチャなし; entities/sierra.md は日本/SoftBank セクションのみ), active-crawl research-note (research note として既に wiki に取り込み済み), ronacher fast-hard-code + vitalik local-mixing (active-crawl でページ作成済み)。",
+      "stars": 1,
+      "candidate_wiki_path": null,
+      "body_excerpt": "",
+      "batch_note": "no single raw file; individual bodies already read during filesystem scan and cross-referenced in reason_ja"
+    }
+  ]
+}

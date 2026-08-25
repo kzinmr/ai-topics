@@ -2,7 +2,7 @@
 title: Model Routing — Per-Turn Cost Optimization for AI Coding
 type: concept
 created: 2026-05-09
-updated: 2026-08-01
+updated: 2026-08-25
 tags:
   - inference
   - optimization
@@ -14,6 +14,8 @@ tags:
 sources:
   - https://x.com/i/article/2053183959341711361
   - "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]"
+  - "[[raw/articles/2026-08-25_factory_model-routing-belongs-in-the-harness]]"
+  - "https://factory.com/news/model-routing-belongs-in-the-harness"
 ---
 
 # Model Routing — Per-Turn Cost Optimization for AI Coding
@@ -78,6 +80,34 @@ Key distinction from per-turn routing: the sidekick pattern retains frontier int
 This approach is best understood as a synthesis strategy rather than pure routing. See [[concepts/multi-model-synthesis-strategies]] for the full taxonomy comparing Devin Fusion, OpenRouter Fusion, and Sakana Fugu.
 
 Source: [[raw/articles/2026-06-29_cognition-devin-fusion-multi-model-harness]]
+
+## Factory Droid: Routing in the Harness (Aug 2026)
+
+[[entities/factory|Factory]] published a position paper arguing that model routing **belongs in the agent harness, not at the gateway or model-serving layer** — a third architectural point distinct from both per-turn routing (Augment Prism) and mid-session synthesis (Devin Fusion). Factory's **Factory Router** has routed production customer work for 2+ months.
+
+### Production Results
+- **58% aggregate cost cut** vs pricing every call at the frontier model; **median routed session saved 76%**, and 9 in 10+ sessions saved at least half
+- Routed sessions **matched frontier-pinned sessions across 8 production measures** (task completion, command/test failures, repeated edits, delivered artifacts, user acceptance)
+- **Median turn latency fell 81s → 49s** (efficient models respond faster on the turns they handle)
+- Benchmarks: **99% of frontier pass rate on Terminal-Bench 2**, **96% on Legacy-Bench**, at ~20% lower cost per successful run
+
+### Why the Harness (vs Gateway)
+The three layers a request crosses — model serving, gateway, harness — each make the model choice with different information:
+- **Model serving** (deepest): sees capacity + endpoint state; routes across deployments for load balancing. No task context.
+- **Gateway**: sees every request, allowed-model policy, provider health; enforces the allowed set, picks provider, handles failover. Attractive for its central position, but it sees the request as an opaque completion — a cache-blind, request-sized view.
+- **Harness** (where the agent loop lives): owns **session cache state**, assembles the request's system instructions/tools/reasoning settings **around the chosen model before the request exists**, and observes **task outcomes** (test results, repeated edits, user acceptance) that no other layer sees.
+
+Two consequences make routing harness-only:
+1. **Cache-awareness**: switching models discards the warm prefix — the next call re-processes the accumulated transcript at fresh-input rates (5–10× the cached rate). Only the harness knows whether the work has stalled (worth paying fresh) or is on steady progress (stay on the warm model). "Staying put is itself a routing decision." A gateway that switches without preserving the warm prefix is cache-blind: in Factory's modeled data, fully-uncached cost exceeds the all-frontier baseline by turns 6–20 and reaches **2.12× at turns 61–150, 2.37× at turns 151–200**, while cache-aware routing stays at **0.19–0.28×** the same baseline.
+2. **Request building + outcome signal**: the harness must choose the model before assembling the request (model families aren't wire-compatible — switching can discard encrypted reasoning content). And because it runs the tools and checks the work, it can tie each routing decision to the outcome that followed, using that history to refine the routing policy.
+
+### Design Implications
+- **Subagent/mission splitting**: the harness writes each worker's spec and picks its model from the job description; a strong parent can use efficient workers for exploration while keeping its warm prefix. Median Factory Mission spans **423 turns / ~12 hours**; routing saved **37.8%** of complete mission cost.
+- **Validator model ≠ implementer model**: a useful review job fails where the implementer doesn't, so Factory's default validator comes from a different model family than its default implementer.
+
+This is a direct counterpoint to [[concepts/coding-agents/ai-coding-cost-optimization|Manifest's deprecation post-mortem]] (which argued routing complexity isn't worth it for mid-complexity routers) — Factory's position is that routing *is* worth it, provided it lives where cache state and task outcomes are visible.
+
+Source: [[raw/articles/2026-08-25_factory_model-routing-belongs-in-the-harness]]
 
 ## Related Concepts
 

@@ -2,7 +2,7 @@
 title: "Factory"
 type: entity
 created: 2026-05-08
-updated: 2026-05-22
+updated: 2026-08-25
 tags:
   - company
   - coding-agents
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-04-03-free-droid-for-all.md
   - https://www.businessinsider.com/coinbase-layoffs-ai-brian-armstrong-job-cuts-letter-2026-5
   - raw/newsletters/2026-05-22-bens-bites-googles-take-on-openclaw.md
+  - raw/articles/2026-08-25_factory_model-routing-belongs-in-the-harness.md
 related:
   - [[concepts/subagent-patterns]]
   - [[entities/cursor-ai]]
@@ -80,6 +81,16 @@ Fine-tune how independently agents operate:
 - Allow certain changes automatically while requiring approval for others
 - Ranges from fully supervised to fully autonomous execution
 - Developer sets the boundaries
+
+## Factory Router: Model Routing in the Harness (Aug 2026)
+
+In August 2026, Factory published a position paper (Abhay Singhal) arguing that model routing belongs in the **agent harness**, not the gateway or model-serving layer. Their production **Factory Router** has routed customer work for 2+ months:
+
+- **58% aggregate cost cut** vs all-frontier pricing; median routed session saved **76%**, 9/10+ sessions saved ≥50%
+- Routed sessions **matched frontier-pinned sessions on 8 production measures**; **median turn latency 81s → 49s**
+- Benchmarks: **99% of frontier pass rate on Terminal-Bench 2**, **96% on Legacy-Bench**, ~20% lower cost per successful run
+
+The core argument: only the harness owns **session cache state** and **task outcomes**. Switching models discards the warm prefix (next call reprocesses the transcript at 5–10× the cached rate), so the harness decides whether a switch is worth the cache miss based on whether work has stalled. A cache-blind gateway's fully-uncached cost hits **2.12× the all-frontier baseline at turns 61–150** (vs **0.19–0.28×** for cache-aware routing). The harness also assembles the request around the chosen model before the request exists, and uses task-outcome signals to refine the routing policy. Related: [[concepts/coding-agents/model-routing]].
 
 ## Enterprise Customers
 

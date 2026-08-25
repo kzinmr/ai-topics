@@ -1,3 +1,25 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-08-25] dreaming wiki-ingest | Pattern E saturation recovery - 2 takes + 2 refs enriched (upstream JSON-render failure)
+
+- **Upstream state**: dreaming-group (run 20260825T184500Z) FAILED on JSON render; `triage_latest.json` (18:34) saved cleanly before the failure (Pitfall #12). No enrichment committed upstream this cycle (no dreaming log entry / archive for 08-25; last dreaming commit `7e4987df` is 08-24). Enrichment executed by this pass.
+- **Triage**: 2 takes, 2 references, ~48 skips (25 already-processed by today's pipelines - METR/SPADE/vitalik/ronacher/thomson/sanglard/boydkane; 12 already-skipped by 08-24 dreaming; ~11 non-AI; 2 marginal).
+- **Deep Sleep verification gate** (independent, post-recovery): all 4 candidates verified against full page bodies + raw article bodies before enrichment. Factory raw article was a 24-line stub - re-fetched full article via urllib to confirm the 58%/76%/2.12x claims before writing.
+
+### Pages updated
+- `concepts/coding-agents/model-routing.md` - NEW "Factory Droid: Routing in the Harness (Aug 2026)" section (58% aggregate cost cut, 76% median session, 81s->49s latency, 99% Terminal-Bench 2 / 96% Legacy-Bench, 3-layer serving/gateway/harness argument, cache-blindness data 2.12x vs 0.19-0.28x, 423-turn mission 37.8% savings, validator-model != implementer). Dual-enriched with `entities/factory.md`.
+- `entities/factory.md` - NEW "Factory Router" section (production results + harness-vs-gateway thesis); updated 05-22 -> 08-25; +source.
+- `entities/harvey.md` - NEW "Legal Document Comparison (Aug 2026)" section (marking->reading frame, RSGI Jun 2026 91% in-house, Repsol 50+ lawyer blind eval, Vault 100K set-wide, Deutsche Telekom/Adecco/Talanx/Bayer/Bridgewater, Word add-in + iManage/NetDocuments, BigLaw Bench + LAB) AND NEW "Legal Engineer Role (Aug 2026)" section (Connor Molloy translator frame, trust-based rollout, Harvey Academy certification); updated 08-21 -> 08-25; +2 sources.
+- `entities/elevenlabs.md` - NEW "ElevenLabs CLI v1 (Aug 2026)" section (agents-as-code pull/push/dry-run/branches, --help vs --schema for agents, JSON errors, generate-skills); updated 08-20 -> 08-25; +source.
+
+- **log.md**: header was in single-header-burial state (header L190, italic L192) from a sibling prepend; repaired via `repair_log_md_header.py` (strips all header/italic lines, rebuilds head, prepends this entry). Header count now 1.
+- **index.md**: no new pages this cycle (all 4 updates are to existing pages already indexed), so no index.md edit required.
+- **Tags**: no new tags introduced (only `updated` bump + `sources` additions on pre-existing pages); pre-commit tag validation unaffected.
+
+
 ## [2026-08-25] watchdog | Registered 4 unindexed concept pages in index.md
 
 ### Changes
@@ -113,7 +135,6 @@
 - **Topics considered but deferred**: "AI refuser" quit AFL (SMH, paywalled, labor angle); Palantir Karp "drug addict" (CNBC, paywalled, 19 pts); Bastian Rieck "LLMs are proof that Unix won" (musing, covered under TUI/plain-text discourse — note in research note); Level1Techs "local LLM feels dumber" (already enriched 2026-08-23 into quantifying-infrastructure-noise); Andrew Ng skills map (created 2026-08-18).
 - **Index**: +1 entity, +2 concepts; headers bumped Entities 907→908, Concepts 2003→2005.
 
-# Wiki Log
 
 ## [2026-08-24] blog-wiki-ingest | 2026-08-24 blog batch — FT Anthropic revenue + open-weights summer (recovered from failed blog-triage)
 
@@ -189,7 +210,6 @@
 - **Archive**: 3 candidates, 3 newly archived. Archive: `wiki/raw/archived/triage/newsletter/2026-08-23_20260823T101026Z.json` (total archive URLs now 2,786).
 - **Note**: 3rd consecutive run with fully Cloudflare-blocked beehiiv issue (2026-08-19, 2026-08-20, 2026-08-22). Inbox recommendation: consider browser-based beehiiv resolver as a standing capability.
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-08-23] dreaming wiki-ingest (2nd pass) | Saturation confirmed - archive-index probe: 0 new takes, 28 URL-keyed skips archived
 

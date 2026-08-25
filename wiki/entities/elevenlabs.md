@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-08-20
+updated: 2026-08-25
 tags:
   - company
   - voice-ai
@@ -28,6 +28,7 @@ sources:
   - raw/articles/2026-07-30_elevenlabs_ai-virtual-receptionist.md
   - raw/articles/2026-07-30_elevenlabs_valiant-finance.md
   - raw/articles/2026-08-08_elevenlabs_how-elevenreader-used-elevenagents.md
+  - raw/articles/2026-08-25_elevenlabs_elevenlabs-cli-v1.md
   - raw/articles/2026-06-26_elevenlabs_real-time-speech-to-text-under-200ms.md
 ---
 
@@ -472,6 +473,21 @@ ElevenLabs published a customer story (Aug 6, 2026) with **Finch Legal**, which 
 **Why they switched**: their previous vendor handled only 59% of calls successfully with little visibility into what ran under the hood or control over voice quality, latency, or reasoning models. ElevenAgents offered a configurable platform: choice of leading LLMs, control over voices and conversational behavior, tuning tradeoffs between response latency / voice quality / reasoning depth, and a more comprehensive analytics suite.
 
 Source: raw/articles/2026-08-11_elevenlabs_finch.md
+
+## ElevenLabs CLI v1 (Aug 2026)
+
+ElevenLabs released **v1 of its CLI** (Aug 24, 2026), bringing the entire ElevenLabs API into the terminal with an **agents-first** design. Every endpoint in the published OpenAPI spec is available as a subcommand (`elevenlabs agents list --format json`, `elevenlabs music compose --prompt ...`, `elevenlabs text-to-speech convert ...`).
+
+**Agents-as-code**: agent configuration is treated like application code. The workflow is three commands — `elevenlabs agents pull` (every workspace agent becomes a local config file), edit the files, `elevenlabs agents push --dry-run` (preview the exact diff), then `elevenlabs agents push` (apply). **Branches** keep dev and production separate (a dev branch can use a test phone number and a cheaper LLM while production runs the real number and a frontier model), and `elevenlabs agents init` scaffolds new projects with starter templates. The framing: when managing a fleet of agents across hundreds of customer orgs or bulk-migrating from another platform, "files and version control are the only workflow that scales."
+
+**Designed for coding agents, not just humans**: an agent using a CLI fails differently than a person (it can't answer an interactive prompt, retries constantly, and learns from error messages). So:
+- **`--help` is for humans, `--schema` is for agents** — every command prints a machine-readable contract (typed inputs, where each goes, what's required, exact response shape) so an agent can construct a valid call without guessing.
+- **JSON error responses** — errors come back as parseable JSON for agents (with fix instructions); a plain, legible error is shown when a human TTY is detected.
+- **`generate-skills`** — beyond `--help`/`--schema`, skills teach a coding agent complete workflows (building an agent, generating speech, transcribing a call), installable into a project.
+
+A notable product milestone: it extends ElevenLabs' agentic positioning (ElevenAgents) into developer tooling, positioning the CLI as the surface where coding agents drive the voice/audio platform.
+
+Source: raw/articles/2026-08-25_elevenlabs_elevenlabs-cli-v1.md
 
 ---
 
