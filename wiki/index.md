@@ -916,7 +916,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2008 pages)
+## Concepts (2012 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -984,6 +984,7 @@
 - [[concepts/agentic-search]] — Agentic Search
 - [[concepts/agentic-theory]] — AI Programming as Theory Building
 - [[concepts/agentic-web]] — Agentic Web — The Web Paradigm Shift from Human-Centric to Agent-Centric
+- [[concepts/agents-md-code-quality]] — AGENTS.md Code-Quality Conventions (Sanglard)
 - [[concepts/agentty]] — Agentty — C++26 drop-in Claude Code alternative, 11MB static binary, sub-ms startup, MIT licensed
 - [[concepts/agents-architecture-scaffolding]] — Agents Architecture Scaffolding
 - [[concepts/agents-mcp-rl-course]] — Production-Ready Agent Engineering: From MCP to RL
@@ -1455,6 +1456,7 @@
 - [[concepts/codeless-software]] — codeless-software
 - [[concepts/codex-logging-bug]]
 - [[concepts/codex-resets]] — OpenAI Codex usage limit reset tracking — unscheduled quota replenishments in competitive dynamic with Anthropic (July 2026)
+- [[concepts/codex-vs-claude-one-week]] — Codex vs Claude Code — one-week field comparison (Ghinda)
 - [[concepts/codex/astral-acquisition]] — OpenAI's acquisition of Astral (creators of uv, Ruff, ty) and its implications for Codex — integrating foundational P...
 - [[concepts/codex/codex-agent-loop]] — Codex Agent Loop
 - [[concepts/codex/codex-app-server]] — Codex App Server
@@ -2020,6 +2022,7 @@
 - [[concepts/index-share]] — IndexShare
 - [[concepts/industrial-scale-distillation-attacks-accusation]] — Industrial-Scale Distillation Attacks Accusation
 - [[concepts/inference]] — Inference — LLM inference engine comparison; vLLM, SGLang, TGI, llama.cpp, and their trade-offs
+- [[concepts/inference-engine-security]] — Inference-Engine Security — LLM self-host exploitation surface
 - [[concepts/inference-hardware]] — Inference Hardware
 - [[concepts/inference-speed-development]] — Inference Speed Development
 - [[concepts/inference-time-compute]] — Inference-Time Compute
@@ -2813,6 +2816,7 @@
 - [[concepts/the-untrainable]] — The Untrainable
 - [[concepts/thin-bi]] — Thin BI
 - [[concepts/thinking-tokens]] — thinking-tokens
+- [[concepts/thomson-reuters-frontier-model]] — Thomson Reuters Frontier Model — first commercial frontier model (Aug 2026)
 - [[concepts/thunderagent]] — ThunderAgent — High-throughput agentic inference system with program-level scheduling (ICML 2026 Spotlight)
 - [[concepts/threat-modeling]] — Threat Modeling
 - [[concepts/throw-away-draft-pattern]] — throw-away-draft-pattern

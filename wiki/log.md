@@ -1,3 +1,22 @@
+## [2026-08-25] watchdog | Registered 4 unindexed concept pages in index.md
+
+### Changes
+- Auto-fixed 4 top-level concept pages created today but never registered in `index.md`:
+  - `concepts/agents-md-code-quality` (AGENTS.md Code-Quality Conventions, Sanglard)
+  - `concepts/codex-vs-claude-one-week` (Codex vs Claude Code field comparison)
+  - `concepts/inference-engine-security` (LLM self-host exploitation surface)
+  - `concepts/thomson-reuters-frontier-model` (first commercial frontier model)
+- Inserted alphabetically into the Concepts section; recomputed header count 2008 -> 2012.
+- All 4 use valid SCHEMA.md tags (verified); `validate_index.py` passes clean.
+- No page creation/deletion; existing pages only.
+
+### Pipeline note (not auto-fixable by watchdog)
+- Multiple cron jobs FAILED today on `HTTP 503: Local LLM server is busy` (blog-triage, blog-wiki-ingest, newsletter-triage, newsletter-wiki-ingest, trending-topics) plus `Response truncated` (newsletter-wiki-ingest) and a skill-name ambiguity (active-crawl).
+- Blog chain: today's blog-ingest (24 new, run 20260825T100044Z) has NOT been triaged -- last real triage checkpoint is 2026-08-17. Needs the local-LLM 503 resolved then re-run.
+- x_accounts stale ~26h. These are LLM-infrastructure issues; no wiki-content auto-fix applied.
+
+---
+
 
 ## [2026-08-25] newsletter-wiki-ingest | 2026-08-25 newsletter batch (5 pubs) — recovered from failed newsletter-triage (HTTP 503 local LLM busy)
 
