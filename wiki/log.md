@@ -1,4 +1,15 @@
 
+## [2026-08-25] X Article ingest: Alloomi AI — Self-Evolving AI Agents
+
+- **Source**: AlloomiAI X article "The New Frontier of AI Agents: Self-Evolving from Real-World Experiences" (tweet 2087704766868750787, article 2087699512223821824, 2026-08-13). Retrieved via `xurl /2/tweets/...?tweet.fields=article`.
+- **Changes**:
+  - `raw/articles/2026-08-13_alloomiai_self-evolving-ai-agents.md` — new raw X article (type: x_article).
+  - `entities/alloomi-ai.md` — new entity page: commercial "self-evolving digital employees" for professional services; full-stack "model + application" thesis (experience over intelligence); 4-layer self-evolving approach (holistic context, self-evolving memory model, expert anchoring, controlled evolution); contrast vs harnesses/RAG/fine-tuning/self-reflective; 9 self-reported benchmarks table (BEAM, LongMemEval-S, LoCoMo-V2, CL-Bench, CL-Bench-Life, Con.L Bench, GDPval-AA, JobBench, SWE-Bench-CL); early domains legal/insurance/financial advisory.
+  - `entities/opencontext.md` — new entity page: open-source context runtime / context harness (temporal context, memory & retrieval, context correction, multi-platform connectivity, proactive scheduling); powers Alloomi's holistic-context layer.
+  - `concepts/self-evolving-agents.md` — added "Alloomi AI Self-Evolving Digital Employees (Aug 2026)" real-world case-study section + frontmatter source/updated; cross-linked to [[alloomi-ai]] and [[opencontext]].
+- **index.md**: added `entities/alloomi-ai` and `entities/opencontext` entries.
+- **Note**: vendor-claimed benchmark results, independent verification pending.
+
 ## [2026-08-25] slack hot-posts (morning) | FT Ramp index + open-weight GPU repricing wildcard — first delivery of Fable-adoption cluster
 
 - **Context**: morning slot (09:30 JST) post on two same-week threads: (1) the FT report (via Simon Willison Link Blog, Aug 23) that Fable 5 — Anthropic's $10/$50 frontier model — is trailing much cheaper Opus 4.8 in the Ramp AI Index's July model-spend breakdown (8.0% vs 28.0%), with Anthropic July annualized revenue ~$65B and Q3 profitability expected; (2) Martin Alderson's "The Summer of Open Weights" (Aug 24) Gavin-Baker wildcard — expiring $2/GPU-hour 2-3 year GPU commitments repricing toward $4/GPU-hour, a 2x cost shock that inverts the open-weight price-war economics and makes token efficiency (not intelligence) the decisive axis. Dedup verified: `entities/martin-alderson`, `concepts/anthropic/2026-revenue-growth`, `concepts/gpt/gpt-5-6`, `concepts/deepseek-v4`, `concepts/ai-economics` appear in none of the 12 recently covered Slack posts (08-24 Fable-free-lunch / 08-24 DeepSWE+NaNogPT / 08-23 DeepSWE-V4-vs-Fable / 08-22 OpenAI-AI-Futures / 08-22 Poolside-NVIDIA / 08-22 Harvey-Tenet / 08-21 GLM-5.3×2 / 08-20 warp×2+FHE-HEIR / 08-20 FHE cluster). Note: `entities/fable` and `concepts/bitter-lesson-harnessing` were excluded from this post's wikilink set after a dedup pass — Fable-5 was just delivered in the 08-24 09:39 post, and the Breunig thesis framing is already in the recent-post set.

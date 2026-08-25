@@ -41,6 +41,7 @@
 - [[entities/alex-volkov]] — Alex Volkov (@altryne)
 - [[entities/alex-zhang]] — Alex L. Zhang
 - [[entities/ali-farhadi]] — Ali Farhadi
+- [[entities/alloomi-ai]] — Alloomi AI — self-evolving digital employees for professional services; full-stack "model + application" thesis (experience over intelligence); 4-layer self-evolving approach (holistic context, self-evolving memory, expert anchoring, controlled evolution); open-sources OpenContext context runtime; nine self-reported benchmarks incl. BEAM, LongMemEval-S, CL-Bench, SWE-Bench-CL (Aug 13)
 - [[entities/aman-sanger]] — Aman Sanger — Cursor co-founder and CTO; pioneered self-driving codebases, three eras of AI coding, artifacts paradigm
 - [[entities/amazon-bedrock-agentcore]] — Amazon Bedrock AgentCore
 - [[entities/amazon-rivr]] — Amazon Acquires Rivr
@@ -626,6 +627,7 @@
 - [[entities/opencode]] — OpenCode
 - [[entities/openenv]] — OpenEnv
 - [[entities/openknowledge]] — OpenKnowledge — Open-source AI-native markdown editor with Claude/Codex/Cursor integration (373 HN pts)
+- [[entities/opencontext]] — OpenContext — open-source context runtime / context harness for AI agents (by Alloomi); temporal context, memory & retrieval, context correction, multi-platform connectivity, proactive scheduling; powers Alloomi AI's holistic-context layer (Aug 13)
 - [[entities/openpipe]] — OpenPipe
 - [[entities/openrouter]] — OpenRouter; Stripe acquisition for $7B+ finalized (Aug 16, Bloomberg) — AI inference payment rail consolidation
 - [[entities/overreacted-io]] — Dan Abramov; resilient component design principles (Writing Resilient Components), Lean Syntax Primer & formal verification exploration (2026)

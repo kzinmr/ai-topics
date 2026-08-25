@@ -5,9 +5,10 @@ tags:
   - coding-agents
   - harness-engineering
   - architecture
-sources: []
+sources:
+  - raw/articles/2026-08-13_alloomiai_self-evolving-ai-agents.md
 created: 2026-04-13
-updated: 2026-05-28
+updated: 2026-08-25
 type: concept
 ---
 ---
@@ -143,6 +144,25 @@ This case study demonstrates self-evolving agents at **practical scale** (not ju
 
 Source: [raw/articles/2026-05-27_openai_building-self-improving-tax-agents-codex.md]
 
+---
+### Real-World Case Study: Alloomi AI Self-Evolving Digital Employees (Aug 2026)
+
+A commercial full-stack implementation arguing that **experience — not raw model intelligence — is the durable differentiator** for agents. Alloomi pairs an application layer with a model layer: agents work inside real professional-service workflows, capture private professional data, and have that learning built back into the model via post-training, so capability compounds inside the model rather than living in an external knowledge base.
+
+The team's four-layer self-evolving approach:
+
+1. **Holistic context** — unified view of people, conversations, documents, relationships, timelines, decisions, outcomes, and feedback; tracks the complete trajectory of work (the "how what happened became what is" problem, not just "what happened").
+2. **Self-evolving memory model** — real-work context, expert judgment, revision histories, delivery outcomes, and customer feedback are filtered, replayed, and used for post-training; experience is written into the model's own weights.
+3. **Expert anchoring** — learning is anchored to expert demonstrations and best-deliverable standards so the model does not circle at its own level or let errors compound.
+4. **Controlled evolution** — quality gates, continuous monitoring, and automatic rollback keep model changes verifiable, auditable, and reversible.
+
+Alloomi contrasts this against the alternatives it claims miss the core issue: application wrappers/harnesses (model stays static), RAG/external knowledge bases (cannot retrieve the expert's way of thinking), fine-tuning (expensive, slow, lagging), and unanchored self-reflective learning (circles or drifts). It reports nine self-reported benchmarks (BEAM, LongMemEval-S, LoCoMo-V2, CL-Bench, CL-Bench-Life, Con.L Bench, GDPval-AA, JobBench, SWE-Bench-CL) and open-sourced its context runtime, **OpenContext**.
+
+> Vendor-claimed results from Alloomi's Aug 13, 2026 X article; independent verification pending.
+
+See [[alloomi-ai]] and [[opencontext]] for details.
+
+Source: [raw/articles/2026-08-13_alloomiai_self-evolving-ai-agents.md]
 
 ## Related
 
