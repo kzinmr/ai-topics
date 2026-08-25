@@ -1,4 +1,29 @@
 
+## [2026-08-25] newsletter-wiki-ingest | 2026-08-25 newsletter batch (5 pubs) — recovered from failed newsletter-triage (HTTP 503 local LLM busy)
+
+- **Pipeline recovery**: upstream `newsletter-triage` failed with `RuntimeError: HTTP 503: Local LLM server is busy` and saved no triage JSON; the stale `triage_latest.json` was from Aug 23 (run 20260823T101026Z). This run performed the triage directly from `latest.json` (run 20260825T101037Z, 5 newsletters / 20 links each) and ingested the wiki-worthy content.
+- **Sources processed** (post bodies resolved via curl + `<article>` extraction):
+  - `Import AI 470` (Jack Clark, 2026-08-24, substack pub 1317673)
+  - `Lenny's "How I AI"` (Grok Bot + Grok 4.6 + Cursor Origin; Ryan Carson $20k Devin, 2026-08-24, pub 10845)
+  - `Superintel+ "Hugging Face Eyes A $13 Billion Exit"` (Kim Isenberg, beehiiv, 2026-08-24)
+  - `[AINews] Andrew Ng gets into AI Engineering` (swyx/Latent Space, 2026-08-25, pub 1084089)
+  - `[COPY] [COPY] Hermes Bot Mode.` (Aakash Gupta, 2026-08-25, pub 5747120) — **draft/empty post, no body** → skip
+- **New raw articles**:
+  - `raw/articles/2026-08-14_metr_have-we-seen-an-acceleration-in-discoveries.md` (METR, Cunningham & Rush)
+  - `raw/articles/2026-08-19_2608.19197_spade-self-play-adaptive-synthetic-environments.md` (SPADE, Bo Liu et al.)
+- **New pages**:
+  - `entities/metR.md` — new entity: METR (Model Evaluation & Threat Research) independent AI capability/safety lab.
+  - `concepts/ai-discovery-acceleration.md` — new concept: METR differential-acceleration finding (cyber vulnerabilities major acceleration / math minor / optimization none), three-domain table, four candidate explanations, public-discoveries caveat, cited examples (Anthropic Riemann, AlphaEvolve, Mythos Preview).
+  - `concepts/spade-self-play-environments.md` — new concept: SPADE self-play RL, single LLM = Environment Designer (executable Gym-style envs) + Reasoning Agent, privileged-hint reward, Qwen3-4/8/30B via GRPO; distinct from 2024 Shreya Shankar "SPADE".
+- **Enrichments (existing pages)**:
+  - `entities/hugging-face.md` — new "Exit / Sale at $13B+ (Aug 2026)" section: hired a bank, $13B+ (≈3× the 2023 $4.5B), 3M+ models / 1M+ datasets / ~half of Fortune 500, OpenRouter $8B comparable, timing vs the July 2026 OpenAI sandbox-escape breach; +2 milestone rows (Jul breach, Aug exit). `updated:` → 2026-08-25.
+  - `entities/andrew-ng.md` — added AINews (Aug 25) confirmation that DeepLearning.AI relaunched with an AI-Engineering focus on the four-skill map; "broadly applicable beyond the AI Engineer title"; 1000x-AI-Engineer + AI-PM-track lineage. `updated:` → 2026-08-25.
+  - `entities/deeplearning-ai.md` — added the same AINews relaunch-milestone note to Mission & Positioning. `updated:` → 2026-08-25.
+  - `events/grok-4-6-launch.md` — added Lenny "How I AI" hands-on follow-up (Aug 24): Grok 4.6 genuine frontier competitor (Claire Index, blind 70%-weight evals); Cursor Origin "compelling vision not quite ready"; Grok Bot multi-account connectors; Cursor+xAI coherent enterprise stack; Sonnet 5 still best for fun agent chat.
+  - `entities/devin.md` — new "Practitioner Case Study — Ryan Carson $20,000 on Devin in a month" (Aug 24): 15 concurrent threads in P0/P1/P2/Bugs folders, ~40 PRs/day, ~$20k/mo, Watchdog customer-success workflow, handwritten priorities, product skepticism, hiring-via-screen-recording. `updated:` → 2026-08-25.
+- **index.md**: added `entities/metR`, `concepts/ai-discovery-acceleration`, `concepts/spade-self-play-environments`; header counts Entities 908→909, Concepts 2006→2008.
+- **Skipped / reference-only**: `[COPY] [COPY] Hermes Bot Mode.` (draft, empty body); AINews secondary mentions already covered elsewhere (enterprise MCP managed auth → concepts/mcp-enterprise-oauth; GPT-5.6 Kiro/pricing, Qwen3.8-27B Code Arena, liquidai Pipette, Nanbeige4.2/LFM2.5 on-device, Groq 3 LPX, sPTC, Headlong microharness — noted for future ingest, not enough unique depth to warrant new pages this run).
+
 ## [2026-08-25] X Article ingest: Alloomi AI — Self-Evolving AI Agents
 
 - **Source**: AlloomiAI X article "The New Frontier of AI Agents: Self-Evolving from Real-World Experiences" (tweet 2087704766868750787, article 2087699512223821824, 2026-08-13). Retrieved via `xurl /2/tweets/...?tweet.fields=article`.

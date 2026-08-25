@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (908 pages)
+## Entities (909 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -533,6 +533,7 @@
 - [[entities/meridian-labs]] — Meridian Labs
 - [[entities/meta]] — Meta
 - [[entities/metronome]] — Metronome
+- [[entities/metR]] — METR (Model Evaluation & Threat Research) — independent AI capability/safety lab; 2026-08 differential-acceleration study (cyber >> math > optimization)
 - [[entities/micahflee]] — Micah Lee
 - [[entities/michael-lively]] — Michael Lively
 - [[entities/michael-stapelberg]] — Michael Stapelberg
@@ -915,7 +916,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2006 pages)
+## Concepts (2008 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -996,6 +997,7 @@
 - [[concepts/agreement-is-a-bug]] — Agreement is a Bug
 - [[concepts/ai-addiction-burnout]] — AI Addiction and Burnout Patterns
 - [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
+- [[concepts/ai-discovery-acceleration]] — AI Discovery Acceleration (METR Differential Acceleration) — AI accelerates domains non-uniformly: cyber vulnerabilities >> math > optimization (Aug 14, 2026 METR study)
 - [[concepts/ai-agent-architecture]] — AI Agent Architecture — production design patterns: lead agent + specialist routing, evaluation methodology, release gating by consequence severity (Maven Clinic case study, Jul 17)
 - [[concepts/ai-agent-compiler-bug-finding]] — AI Agent Compiler Bug Finding
 - [[concepts/ai-agent-engineering]] — AI Agent Engineering
@@ -2625,6 +2627,7 @@
 - [[concepts/safari-mcp-server]] — Safari MCP Server — Apple's first MCP implementation in Safari Technology Preview 247; 17 tools for DOM, network, screenshot, console access (July 5)
 - [[concepts/sakana-fugu]] — Sakana Fugu; added Fugu Ultra benchmark numbers (73.7 SWE-bench Pro, 82.1 TerminalBench 2.1, Fable-class) (June 24)
 - [[concepts/sample-efficiency]] — LLM Sample Efficiency
+- [[concepts/spade-self-play-environments]] — SPADE: Self-Play in Adaptive Synthetic Executable Environments — single LLM writes executable training environments (Gym-style) + reasons in them; self-play RL for language agents; arXiv:2608.19197 (Aug 19, 2026)
 - [[concepts/sampling-strategies]] — Sampling Strategies
 - [[concepts/sana-vm]] — SANA-WM
 - [[concepts/sandbox]]

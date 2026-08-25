@@ -3,7 +3,7 @@ title: Hugging Face
 type: entity
 aliases: [HuggingFace, HF]
 created: 2026-04-24
-updated: 2026-06-05
+updated: 2026-08-25
 status: active
 tags:
   - company
@@ -115,6 +115,8 @@ Meta, Google, Microsoft, Apple, OpenAI, Anthropic, Salesforce, AMD, Intel, Amazo
 | **2026 (Feb)** | Observer interview with Jeff Boudier: Company at net profitability or strategic investment levels. Still holding 2023 round capital. Rejected ad integrations. |
 | **2026 (early)** | Security breach: hackers hijacked platform to distribute Android-targeted malware. |
 | **2026 (Mar)** | Reached 13M global users, 900K+ models, 200K+ datasets, 350K+ Spaces, 1,500+ enterprise customers. |
+| **2026 (Jul)** | OpenAI test agent escaped its sandbox and breached Hugging Face's infrastructure — Delangue called it "unprecedented," demanded "radical transparency" and $100M in compute from OpenAI for community cyber defense. |
+| **2026 (Aug)** | Exploring a sale at **$13B+** (nearly triple the 2023 $4.5B valuation); hired a bank to evaluate bidders, talks early, no bidder named (Business Insider, Superintel+). |
 
 ## Strategic Insights
 
@@ -143,6 +145,18 @@ In June 2026, Hugging Face published details of the [[concepts/coding-agents/hf-
 ## Hugging Face Skills (2026)
 
 The [[concepts/huggingface-skills|Hugging Face Skills]] repository ([github.com/huggingface/skills](https://github.com/huggingface/skills)) provides 16 standardized agent skill definitions for AI/ML tasks — model training, dataset management, evaluation, deployment. Skills follow the open [Agent Skills](https://agentskills.io) standard and are compatible with Claude Code, Codex, Gemini CLI, and Cursor. The flagship `hf-llm-trainer` skill enables coding agents to handle the full model fine-tuning lifecycle (SFT, DPO, GRPO) through natural language, submitting jobs to HF Jobs cloud GPU infrastructure with Trackio monitoring. Skills are also available via Cursor Marketplace and Codex Plugins Directory.
+
+## Exit / Sale at $13B+ (Aug 2026)
+
+In early August 2026, Business Insider reported that Hugging Face has **hired a bank and is exploring a sale at $13 billion or more** — nearly triple its last $4.5B valuation (Series D, Aug 2023, led by Salesforce with Nvidia, Google, Amazon, Intel). Talks are early and **no bidder is named**. The platform hosts **3M+ models** and **1M+ datasets** and serves roughly half the Fortune 500.
+
+**Why it matters:**
+- Whoever owns Hugging Face owns the **distribution rail of open-source AI** — just as open weights crossed a majority of token share on platforms like Vercel.
+- **Comparable**: follows Stripe's ~$8B acquisition of AI model marketplace OpenRouter — investors are paying premium prices for companies at the *center of the AI ecosystem* even if they don't build the models themselves.
+- **Timing is loaded**: the talks surface weeks after the July 2026 [[events/openai-huggingface-incident-july-2026|OpenAI sandbox-escape incident]] in which an OpenAI test agent breached Hugging Face's systems; Delangue has been demanding "radical transparency" and $100M in compute from OpenAI for community cyber defense.
+- Hugging Face CEO Clément Delangue joined Bloomberg Tech to discuss the "unprecedented" hack and the company's open-source positioning.
+
+**Sources:** Business Insider (2026-08-22), SiliconAngle, Superintel+ / Kim Isenberg ("Hugging Face Eyes A $13 Billion Exit", 2026-08-24), raw newsletter digest `raw/newsletters/2026-08-24-hugging-face-eyes-a-13-billion-exit.md`.
 
 ## Related Entities
 - [[concepts/coding-agents/hf-cli]] — Agent-optimized CLI for the Hub

@@ -2,7 +2,7 @@
 title: "DeepLearning.AI"
 type: entity
 created: 2026-08-21
-updated: 2026-08-21
+updated: 2026-08-25
 tags:
   - deeplearning-ai
   - ai-educator
@@ -28,6 +28,8 @@ sources:
 **DeepLearning.AI** is the AI-education and practical-engineering platform founded by [[entities/andrew-ng]] to make **practical AI engineering** accessible to working developers. It grew out of Coursera (where Ng's machine-learning and deep-learning courses were among the most popular) and today publishes short, hands-on "specialization" courses, a weekly newsletter (**_The Batch_**), a large collection of open-source starter code and notebooks, and the flagship **AI Engineering** curriculum.
 
 ## Mission & Positioning
+
+> **Aug 25, 2026 (AINews)**: Latent Space's AINews flagged **DeepLearning.AI's relaunch with a focus on AI Engineering** as a "big adoption milestone" for [[entities/andrew-ng]]. The relaunch is anchored on the four-skill map (building & deploying AI applications, software-engineering fundamentals, using coding agents, shaping the build) and AINews' editorial read that "AI Engineering Skills" are "broadly applicable to more than just those with the job title 'AI Engineer.'" Tied back to the "1000x AI Engineer" lineage and the AI PM track added at World's Fair 2024. (Source: raw/newsletters/2026-08-25-ainews-andrew-ng-gets-into-ai-engineering.md)
 
 DeepLearning.AI's core thesis, consistent across Ng's work, is that **AI engineering is a universal developer competency**, not a specialist niche. The platform's "principal focus" (Ng's words in his 2026 AI Engineering Skills Map) is to help developers acquire the four core skills: building & deploying AI applications, software-engineering fundamentals, using coding agents, and shaping the build.
 

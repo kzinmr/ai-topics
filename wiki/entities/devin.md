@@ -2,7 +2,7 @@
 title: Devin (Cognition AI)
 type: entity
 created: 2026-04-30
-updated: 2026-06-03
+updated: 2026-08-25
 tags:
   - company
   - ai-agents
@@ -310,6 +310,22 @@ Devin Desktop's ACP integration positions Cognition as an **agent orchestrator p
 - **IDE as control plane**: Natural place to manage multi-agent workflows
 
 → [[comparisons/harness-backend-routing]], [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/codex-app-server-vs-agent-protocols]]
+
+## Practitioner Case Study — Ryan Carson "I spent $20,000 on Devin in a month" (Aug 24, 2026)
+
+Lenny Rachitsky's "How I AI" episode with **Ryan Carson**, solo founder of Untangle (B2B SaaS for family-law firms), documented one of the most aggressive individual Devin workloads to date:
+
+- **Up to 15 Devin threads running at once**, organized into **P0 / P1 / P2 / Bugs folders** — managed "the way a good manager treats a direct report" (clear goal, right priority, avoid under- or over-management).
+- **~40 pull requests a day**, spanning bugs, PRs, investor updates, and customer triage.
+- **~$20,000/month on Devin** (the "spend a month" headline) — combined with Codex and Claude Code.
+- **"The most important skill for a solo founder may be managing agents, not writing code."**
+- **Watchdog workflow** — Devin reviews every law-firm account, pulls recent activity + errors from Sentry/internal logs, surfaces the top-3 problems, and checks whether a recent PR already fixed each — an AI "customer success team."
+- **Handwritten weekly priorities** kept beside 8 screens as a deliberate attention-protection tool against a constant stream of agent-generated updates.
+- **Product skepticism**: "producing more with AI does not automatically lead to a better product" — agents don't know what customers need; product ideas/priorities still need a human.
+- **Frontend nuance**: Devin handles most cloud engineering work, but Codex still shines when the frontend needs close visual attention.
+- **Hiring signal**: the "best engineering interview may be a screen recording of the actual work" — candidates record themselves building a feature in an existing app, then get Devin access and get reviewed on agent-assisted output.
+
+(Sources: raw/newsletters/2026-08-24-how-i-ai-grok-bot-grok-4-6-what-s-great-and-what-s-still-hype-lessons-from-spend.md; chatprd.ai "How Ryan Carson Manages 40 PRs a Day with Devin and Codex")
 
 ## See Also
 

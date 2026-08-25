@@ -69,6 +69,14 @@ Two follow-up analyses the day after launch added architectural detail:
 
 **Distribution — GitHub Copilot (Aug 14, 2026)**: Grok 4.6 became available inside **GitHub Copilot** (github.blog changelog, Aug 14), extending the model's distribution beyond xAI's own products into the mainstream coding-agent ecosystem. Artificial Analysis published benchmark coverage of Grok 4.6 the same day. (Source: The Signal roundup, 2026-08-16.)
 
+**Lenny Rachitsky "How I AI" hands-on (Aug 24, 2026)**: Claire (solo episode) tested Grok Bot, **Cursor Origin**, and Grok 4.6 blind and added practitioner detail not in the launch coverage:
+- **Grok 4.6 is a genuine frontier competitor** — her blind evals (grading outputs herself, giving her own judgment 70% weight) placed Grok 4.6 alongside GPT-5.6 Sol at the top of her personal "Claire Index."
+- **Cursor Origin is "a compelling vision not quite ready for prime time"** — an agent-native alternative to GitHub (Bugbot + PR workflow designed around coding agents) makes sense, but today it still feels early.
+- **Grok Bot's multi-account connectors** are its standout — connect multiple email + Slack workspaces to a single bot, a gap most agent platforms ignore.
+- **Cursor + xAI are assembling a coherent enterprise stack**: Grok Bot (knowledge workers) + Origin (code hosting) + Grok 4.6 (default model) + Cursor IDE (developer center).
+- For sharp, enjoyable agent conversations **Sonnet 5 is still the model to beat** (concise, responsive, fun — "more like working with a strong collaborator").
+(Sources: raw/newsletters/2026-08-24-how-i-ai-grok-bot-grok-4-6-what-s-great-and-what-s-still-hype-lessons-from-spend.md; chatprd.ai hands-on review)
+
 ## Strategic Context
 
 Grok 4.6 continues xAI's capability-per-dollar strategy established with Grok 4.5 (co-trained with [[concepts/spacex-cursor-acquisition|Cursor]] following SpaceX's acquisition of Anysphere). The same-price upgrade at frontier-adjacent quality, combined with the Grok Bot teammate product, positions xAI against Anthropic's Claude teammate/agent products, OpenAI's agent stack, and the broader [[concepts/ai-agent-engineering|AI agent engineering]] landscape.

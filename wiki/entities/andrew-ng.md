@@ -2,7 +2,7 @@
 title: "Andrew Ng"
 type: entity
 created: 2026-08-18
-updated: 2026-08-21
+updated: 2026-08-25
 tags:
   - person
   - ai-educator
@@ -75,6 +75,8 @@ Ng's skills map, based on analysis of 10,000+ job postings and structured interv
 4. **Shaping the build** — product sense, business context, spec authorship, ownership and agency, MVP vs careful-build decisions
 
 Underlying all four: a mindset of **continuous learning**.
+
+> **Aug 25, 2026 (AINews / Latent Space)**: swyx's AINews confirmed that **DeepLearning.AI relaunched with an explicit focus on AI Engineering**, headlined by this skills map (derived from 10,000+ job postings + dozens of structured interviews). AINews noted the skills are "broadly applicable to more than just those with the job title 'AI Engineer'" — a "big adoption milestone" for Ng. The editorial also tied the skills to the "1000x AI Engineer" lineage (2023 Rise of the AI Engineer post) and the "AI PM track" added at World's Fair 2024. (Source: `[AINews] Andrew Ng gets into AI Engineering`, 2026-08-25, raw/newsletters/2026-08-25-ainews-andrew-ng-gets-into-ai-engineering.md)
 
 ## Key Distinction: AI Engineering Skills vs "AI Engineer" Role
 
