@@ -2,7 +2,7 @@
 title: "OpenAI Astra"
 type: entity
 created: 2026-08-03
-updated: 2026-08-11
+updated: 2026-08-24
 tags:
   - model
   - openai
@@ -16,6 +16,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-openais-amazing-but-vastly-oversold--9b1f0537.md
   - raw/articles/garymarcus.substack.com--p-two-critical-updates-re-astra-and--79f7c1a6.md
   - raw/newsletters/2026-08-10-the-model-openai-won-t-release.md
+  - raw/newsletters/2026-08-23-openai-slows-for-show-anthropic-s-strong-bonds-and-china-s-open-offensive.md
 related:
   - entities/openai
   - concepts/gpt/gpt-5-6
@@ -41,6 +42,17 @@ On Friday, August 7, 2026, [[entities/openai|OpenAI]] said it can no longer rule
 - **First-ever Critical rating**: No prior model has been treated as Critical. [[concepts/gpt/gpt-5-6|GPT-5.6 Sol]] sat one rung lower, at **High** — consistent with the GPT-5.6 documentation, which states Sol did NOT cross the Cyber Critical threshold.
 - **Work paused**: Internal work on Astra is paused pending stronger controls: sealed test environments, restricted network and tool access, sandboxed execution, and chain-of-thought monitoring.
 - **Release implications**: With Critical on the table, releasing Astra becomes a governance problem, not just a capability milestone — a sharp counterpoint to the math-breakthrough narrative.
+
+#### The "Slows for Show" interpretation (The Signal, Alex Banks, Aug 23 2026)
+
+[[entities/alex-banks|Alex Banks]] (The Signal) read the pause not as precaution but as **positioning ahead of an expected IPO filing**. Two concrete framings the wiki had not captured:
+
+- **The pause costs ~20% extra compute just to monitor** OpenAI's most capable models ("watching what they do"). Banks argues a lab genuinely alarmed by a dangerous model would not need a viral announcement to stop training it — so a public announcement signals confidence, not caution: "you can only sacrifice a lead you can afford to lose." Altman had confirmed near-term releases are unaffected, so "nothing customers touch actually slowed down."
+- **The same week shipped two desktop-privacy features that undercut the safety framing**: a **ChatGPT Apple Messages plugin** in the Mac desktop app (ChatGPT Work + Codex) that reads your iMessages, catches up on missed conversations, and drafts/sends replies; and **Computer History**, which lets ChatGPT remember your activity across every app and website on the computer so future answers need less explaining. Banks' read: the frontier-training pause and the always-watching desktop features landed in the same seven days.
+
+The pause section above remains the factual record (Aug 7 Critical rating, two-week RL pause, largest frontier training run on hold); this subsection records the contrarian narrative framing that circulated in the AI-press roundups of the week.
+
+Source: raw/newsletters/2026-08-23-openai-slows-for-show-anthropic-s-strong-bonds-and-china-s-open-offensive.md (The Signal).
 
 ## Critical Analysis: The Fallacy of Composition
 

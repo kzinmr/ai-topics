@@ -16,7 +16,7 @@ status: active
 > Sub-index of all individual AI benchmark, metric, and benchmark-methodology pages.
 > Part of the [[concepts/evaluation/ai-benchmarks-and-evals|MOC]].
 > All pages are in the `concepts/ai-benchmarks/` directory.
-> Total: 105 benchmark/tool pages (2026-06-26)
+> Total: 106 benchmark/tool pages (2026-08-24)
 
 ---
 
@@ -99,6 +99,7 @@ status: active
 
 ## Agent & Game Environments
 
+- [[concepts/ai-benchmarks/agentx-inferencex]] — AgentX / InferenceXv3 (SemiAnalysis, Aug 2026): first open-source multi-turn agentic coding inference benchmark at 1M context
 - [[concepts/ai-benchmarks/agent-survival-benchmark]] — Agent survival under PvP pressure
 - [[concepts/ai-benchmarks/agent-arena]] — Causal tracing agent comparison (Arena AI)
 - [[concepts/ai-benchmarks/vending-bench]] — Vending machine operation task

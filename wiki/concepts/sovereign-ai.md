@@ -1,7 +1,7 @@
 ---
 title: "Sovereign AI"
 created: "2026-06-17"
-updated: "2026-06-17"
+updated: "2026-08-24"
 type: "concept"
 tags:
   - geopolitics
@@ -24,6 +24,7 @@ sources:
   - raw/articles/2026-05-10_cohere_global-push-for-sovereign-ai.md
   - raw/articles/2026-05-20_cohere_cohere-acquires-reliant-ai-expand-sovereign-enterprise-ai.md
   - raw/articles/martinalderson.com--posts-is-datacentre-sovereignty-really-that-important--8195ad72.md
+  - raw/newsletters/2026-08-23-can-you-switch-your-inference-on-a-random-tuesday-an-exclusive-with-pandaos-on-w.md
 ---
 
 # Sovereign AI
@@ -174,6 +175,19 @@ The Rio de Janeiro / Nex-N2 incident exposed a credibility problem: claims of "s
 ### 6.5 Supply Chain Dependency
 
 Even with domestic datacenter infrastructure, sovereign AI remains dependent on foreign semiconductor supply chains (TSMC in Taiwan, ASML in the Netherlands for lithography equipment). True infrastructure sovereignty at the hardware level remains elusive for most nations.
+
+### 6.6 The Operational "Switching Test" (PandaOS, Aug 2026)
+
+A Superintelligence+ exclusive interview with PandaOS co-founders **Marco Szeidenleder** (managing partner at Pandata, the Berlin data consultancy that spun PandaOS out six months ago) and **Philipp Türker** reframes sovereign AI as a **continuity test** rather than a postcode test. Triggered by the June 2026 Anthropic shutoff (Fable 5 and Mythos 5 released 9 June; a US Commerce Department export-control directive forced a 3-day suspension for all users because Anthropic could not verify nationality in real time; lifted 30 June), the core question PandaOS poses is operational: **can you change models, keys, and providers without your operations breaking?**
+
+Key claims:
+
+- **A European postcode does not remove US jurisdiction.** The CLOUD Act follows a European data centre; sovereignty that is just "a data centre with a European postcode" is the easy version and leaves the hard dependencies intact.
+- **Frontier model development is still concentrated in the US/China.** Epoch AI's cumulative large-scale model chart shows Europe sitting inside "Other" with no band of its own; Austria's proposal to "establish Anthropic within the EU" treats an access problem as a real-estate problem.
+- **What 99% of companies can realistically own/switch/self-host is their data and their orchestration layer, not the chips or the models** — and for most firms, not on-premise either. PandaOS is a desktop-first, local-first AI workstation (editor, terminal, browser, databases, deploy tools, inbox) that runs on the user's own model keys and does not train on user content; its sovereignty value is portability across providers, not hardware ownership.
+- **The refusal to overclaim**: the founders explicitly say their product is not the chips, not the models, and for 99% of companies not on-premise — so the remaining sovereignty lever is data ownership + a switchable orchestration layer.
+
+Source: raw/newsletters/2026-08-23-can-you-switch-your-inference-on-a-random-tuesday-an-exclusive-with-pandaos-on-w.md. See [[concepts/sovereign-ai]] and the Anthropic Fable 5 export-control event for the triggering incident.
 
 ---
 

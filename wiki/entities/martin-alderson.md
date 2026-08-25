@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-08-17
+updated: 2026-08-24
 tags:
   - person
   - blogger
@@ -24,6 +24,7 @@ sources:
   - raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-2-winners-and-los--2b401389.md
   - raw/articles/martinalderson.com--posts-speed-vs-intelligence--7a7e675b.md
   - raw/articles/martinalderson.com--posts-watch-out-for-cache-read-costs--ff6254a6.md
+  - raw/articles/martinalderson.com--posts-the-summer-of-open-weights--58f8bbd1.md
   - raw/articles/martinalderson.com--posts-how-i-think-about-reducing-ai-costs--b34c39d8.md
 ---
 
@@ -111,6 +112,21 @@ Martin's second installment examines the structural winners and losers from the 
 - **Conclusion**: Margin in pure model inference is heading toward zero. Opportunity is captured either side of the model layer — the hardware supply chain underneath, and users on top. Frontier labs have two paths out: keep the intelligence lead, or wall models behind managed platforms. Whether this works depends on whether the lead stops shrinking
 
 Source: [[raw/articles/martinalderson.com--posts-the-upcoming-ai-margin-collapse-part-2-winners-and-los--2b401389.md]]
+
+#### The Summer of Open Weights (Aug 2026)
+
+Martin's Aug 2026 analysis framing the current moment as a "tipping point" for open-weight models, analogous to the post-Opus-4.5 winter 2025 surge in coding agents. Key moves:
+
+- **Aggressive pricing moves**: OpenAI cut the cost of **5.6 Luna** (its fast/cheapest tier) by **80%** and **Sol** (its flagship) by **20%**. Meta is offering open model **Muse Spark 1.2** at an almost-free contributor tier of **$0.10/$0.20 per MTok** (standard $1.25/$4.25), with cache reads as low as **$0.002/MTok** on that tier.
+- **Anthropic's price bind**: The FT's "poor uptake of Fable 5" story (Anthropic's $10/$50 frontier tier) plus Anthropic's Claude Developer account signalling it remains **compute-starved** (wanting to make weekly limit increases permanent but struggling for capacity) make Anthropic the lab with **the least ability to respond price-wise** due to its lack of available compute.
+- **Breadth of challengers**: At least five labs beyond OpenAI/Anthropic/Google now offer very good models — Z.AI, DeepSeek, Kimi, plus Meta and Grok. With Meta expected to release its frontier models as open weights, that's **four open-weight models of "good enough" quality to drive agentic sessions** (the Ox Alpha stealth model is also getting heavy hype).
+- **Two scenarios**: (1) the frontier-vs-open-weights gap keeps shrinking toward **commodity** status — "extremely bad news for labs built around proprietary models" (Martin's view of the current path); or (2) a huge frontier leap re-expands the gap (historically what has happened). Martin argues this time feels different — the gap has never been this small — but notes a leap could come via **token efficiency**, not just intelligence: flagship Anthropic/OpenAI models are ~5–10x more expensive per token than the best open-weight models, which tend to use far more tokens per task, so a hypothetical Fable 6 using 10x fewer tokens at equal intelligence would still be competitive.
+
+#### Gavin Baker wildcard: repricing of expiring GPU contracts (Aug 2026)
+
+Follow-up to the Summer of Open Weights post (2026-08-25). Martin amplifies a point from a Gavin Baker interview: a large share of the compute currently in the ecosystem was locked in at **$2/GPU-hour under 2–3 year commitments** that are now rolling off contract and getting repriced to current Blackwell rates. Baker's take: these providers are *hoping* to reprice at **$4/GPU-hour** — a doubling of the underlying cost base for everyone serving open models. If it materializes, the economics of the open-weight price war invert: the cheap-model story was "commodity inference at 1/5 the price," but a 2x cost shock on the supply side is exactly the condition under which **token efficiency becomes the decisive competitive axis** (more strongly than raw intelligence, in Martin's read). This strengthens the thesis that a frontier "leap" in the next cycle is more likely to show up as 10x better tokens-per-task than 10x smarter weights.
+
+Source: [[raw/articles/martinalderson.com--posts-the-summer-of-open-weights--58f8bbd1.md]] (Gavin Baker interview reference; follow-up post 2026-08-25)
 
 ### xAI as Datacentre REIT (June 2026)
 

@@ -1,7 +1,7 @@
 ---
 title: "Moonshot Kimi K3"
 created: 2026-07-17
-updated: 2026-08-04
+updated: 2026-08-24
 type: concept
 tags:
   - model
@@ -120,6 +120,8 @@ Kimi K3's self-reported benchmarks position it firmly in the frontier tier:
 | vs GPT-5.5 high | **Wins most** | Outperforms OpenAI's previous flagship |
 | vs Claude Fable 5 | **Loses** | Anthropic's ultra-premium model still leads |
 | vs GPT-5.6 Sol | **Loses** | OpenAI's latest flagship still ahead |
+
+**Cyber milestone (The Signal, Aug 23 2026):** Kimi K3 became the **first open-weight model** that cybersecurity evaluator **Irregular** has seen solve challenges on its cyber-scenario benchmark — a notable open-weights milestone, though it still trails the closed frontier on the same benchmark.
 
 ### Artificial Analysis Evaluation
 

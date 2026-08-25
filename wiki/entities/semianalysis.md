@@ -2,7 +2,7 @@
 title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
-updated: 2026-08-07
+updated: 2026-08-24
 tags:
   - company
   - lab
@@ -259,6 +259,14 @@ SemiAnalysis identified three structural obstacles before the GPU debt market ca
 - This analysis positions NVIDIA as not just a hardware supplier but a **financial infrastructure provider** for the AI industry
 
 Source: raw/newsletters/2026-07-06-nvidia-gpu-debt-backstop-unleashes-the-ai-project-trinity-capital-offtake-and-da.md
+
+### AgentX 1.0 / InferenceXv3: Does the CUDA Moat Hold up in Agentic Inferencing? (August 2026)
+
+On August 24, 2026 SemiAnalysis announced **AgentX 1.0** — the world's first fully open-source, multi-turn agentic coding inference benchmark at 1 million context, released under Apache 2.0 with a $3M open-sourced dataset. It adds an "agentic coding" scenario to the existing InferenceXv3 suite (fixed-sequence prefill/decode: 8k1k, 1k1k, 1k8k) and is now the canonical benchmark for production agentic inferencing. The full matrix runs on ~2 MW of continuously operated compute across 1,000+ chips (MI355X, GB300/GB200 NVL72, B300, B200, MI325, MI300X, H200, RTX Pro).
+
+Headline findings: NVIDIA leads on most frontier models; AMD is competitive in specific latency bands (ATOM MI355X beats GB300 NVL72 vLLM on perf/$ at 40–60s e2e latency). Post-Aug-21 vLLM optimizations from Inferact/NVIDIA pushed B200 vLLM perf/$ ahead of MI355X. B300 vLLM achieved a 91% HBM KV-cache hit rate at 384 concurrent traces; Qwen3.5 B300 FP4 is 12× H100 on perf/$. Most importantly, AgentX has already driven **50–70+ upstream PRs** across vLLM, SGLang, TensorRT-LLM, ATOM, AITER, Dynamo, LMCache, and Mooncake — evidence the [[concepts/cuda-moat|CUDA moat]] (incl. context-parallelism DCP/PCP) is still real while AMD closes fast on agentic-specific workloads. Full concept page: [[concepts/ai-benchmarks/agentx-inferencex]].
+
+Source: raw/newsletters/2026-08-24-agentx-inferencexv3-does-cuda-moat-hold-up-in-agentic-inferencing.md.
 
 ### AMD Advancing AI 2026 (July 2026)
 
