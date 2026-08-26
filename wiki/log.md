@@ -1,3 +1,43 @@
+## [2026-08-26] watchdog | Daily health scan — blog-triage chain break observed, wiki structure clean
+
+### Pipeline health
+- **blog chain alert**: `blog-triage` (58c2f4a7e1bd) last run 2026-08-26 10:29 UTC failed with `HTTP 503: Local LLM server is busy` — transient LLM backend error, NOT a script/data issue.
+- **blog-ingest** (1bf4c6492c1e) 10:04 UTC: OK — 33 new articles collected, checkpoint at `~/.hermes/cron/data/blog_ingest/latest.json` (run 20260826T100016Z).
+- **blog-wiki-ingest** (9a7d1e3c4b20) 10:47 UTC: OK — no-op, correctly verified the stale 08-17 checkpoint (`f5526627`).
+- Chain will self-heal on next blog-triage run (2026-08-27 10:20 UTC) unless the 503 persists. No manual action taken; watchdog does not trigger downstream cron jobs.
+- Note: same 503 class hit `Weekly AI digest` on 08-24 (skipped one cycle, recovered).
+
+### Wiki structure (live verification, all clean)
+- index.md: 0 pipe-prefix, 0 triple-bracket, 0 line-number corruption; `validate_index.py` exit 0 (3011 lines)
+- 0 duplicate index entries
+- `wiki_health.py --json`: 0 page-name-policy violations; orphan_count=23 → ALL false positives (21 `_index` hubs + 2 `_archive` files, 0 true orphans)
+- Entities: 912 index lines / 905 top-level files / 913 total incl. nested — header 909 is slightly stale (nested sub-pages now included in script total)
+
+### Weekly graph analysis (2026-08-21, 122h old — awaiting weekly cycle, no new issues)
+- 477 orphans, 3,508 broken links (211 auto-fixable), 16 duplicate groups — reported in `wiki/queries/wiki-graph-analysis-weekly-2026-08-21.md`; remediation belongs to the weekly graph-analysis pass, not this daily watchdog.
+
+### Actions
+- No file changes needed; no commit required.
+
+---
+
+## [2026-08-26] trending-topics | 1 new page + 4 enrichments (Z.ai Ox Alpha, Jalapeño results, Dwarkesh×Dylan Patel, AI bubble)
+
+### New pages
+- `concepts/z-ai-ox-alpha.md` — Z.ai confirmed (Bloomberg, Aug 26) that "Ox Alpha" is a new GLM-series open-weight model that will release weights; reportedly rivals DeepSeek. HN 138 pts. Stealth-release pattern in the Chinese open-weight race.
+
+### Enrichments
+- `concepts/openai-jalapeno-inference-chip.md` — Added "First Measured Results (Aug 25, 2026)" section: OpenAI published InferenceX benchmarks — 1.5–1.9× work/watt vs GB200/GB300, 1.7–3.6× lower end-to-end latency, 2.1–4.1× on interactive workloads across GPT-OSS 120B / DeepSeek R1 670B / Kimi K2.5 1T; 700 W TDP package; Gen 2/3 roadmap; caveat that results are OpenAI-published. HN 514 pts (SemiAnalysis).
+- `entities/dwarkesh-patel.md` — Added Aug 25 Dylan Patel (SemiAnalysis) interview link to Sources.
+- `concepts/ai-bubble-economics.md` — Added "Compute Centralization" section: Dwarkesh × Dylan Patel (Aug 25) claim that Anthropic + OpenAI will control most of the world's usable FLOPs within a few years (monetization-driven outbidding); >$10T capex → sovereign-debt-crisis scenario; inference→training shift; China <10% of new compute. Framed as the supply-side twin of Marcus/Zitron's capex-to-revenue critique.
+- `wiki/index.md` — registered `concepts/z-ai-ox-alpha`; Concepts count 2015→2016.
+
+### Raw articles saved
+- `raw/articles/2026-08-25_openai_jalapeno-first-results.md`
+- `raw/articles/2026-08-25_dwarkesh_dylan-patel-lab-economics-compute-centralization.md`
+- `raw/articles/2026-08-24_openai_gpt-5.6-sol-price-reduction.md`
+- `raw/articles/2026-08-24_9to5mac_openai-restores-5h-codex-work-limits.md`
+
 ## [2026-08-26] active-crawl | 3 new pages + 1 enrichment (MCP roadmap, Apple M6/M5 Ultra, Agent Lightning, Munder Difflin)
 
 ### New pages
