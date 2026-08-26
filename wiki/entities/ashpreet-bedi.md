@@ -3,7 +3,7 @@ title: "Ashpreet Bedi"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-05-04
+updated: 2026-08-25
 type: entity
 ---
 
@@ -52,6 +52,7 @@ His most significant conceptual contribution is the **Five Levels of Agentic Sof
 | Mar 2026 | Published "Building, running, and scaling agents as production services" |
 | Apr 2026 | Agno reached General Availability |
 || Apr 2026 | Published "Dynamic Software: The Shift from Static to Agentic" |
+| Aug 2026 | Agno team released [arc-agi-arcade](https://github.com/agno-agi/arc-agi-arcade), a live arcade of Agno agents playing the ARC-AGI-3 public set; verified 100.00 RHAE on the full 25-game public set by GPT-5.6 Sol (warm runs) |
 
 ## Core Ideas
 
@@ -139,6 +140,7 @@ Many agentic applications take 30 minutes to 3 hours to complete, spawning thous
 | Project | Description | Status |
 |---------|-------------|--------|
 | **Agno** (formerly Phidata) | Fastest framework for building multi-modal AI agents | Active, GA, 22K+ GitHub stars |
+| **arc-agi-arcade** | Live playground of Agno agents playing ARC-AGI-3 public set; verified 100.00 RHAE top score (Aug 2026) | Active |
 | **Learning Machine** | Unified learning system for agents with 4 learning stores | Phase 1 testing, Phase 2-3 planned |
 | **AgentOS** | Production runtime for agentic systems with FastAPI, PostgreSQL, and web UI | Active |
 | **Auto-RAG / Agentic RAG** | Early RAG system that became a foundational Agno feature | Active |
@@ -171,3 +173,5 @@ Many agentic applications take 30 minutes to 3 hours to complete, spawning thous
 - [Dynamic Software: The Shift from Static to Agentic](https://www.ashpreetbedi.com/dynamic-software)
 - [Ashpreet Bedi — Personal Website](https://www.ashpreetbedi.com/)
 - [Cohorte: Agno Practical Guide](https://www.cohorte.co/blog/agno-formerly-phidata-the-practical-guide-to-production-ready-memory-rich-agents-that-actually-ship)
+- [arc-agi-arcade repository](https://github.com/agno-agi/arc-agi-arcade) — Agno agents playing ARC-AGI-3 (Aug 2026)
+- [X announcement: 100% on ARC-AGI-3 public set](https://x.com/ashpreetbedi/status/2092002398805856339)

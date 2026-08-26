@@ -327,6 +327,20 @@ Lenny Rachitsky's "How I AI" episode with **Ryan Carson**, solo founder of Untan
 
 (Sources: raw/newsletters/2026-08-24-how-i-ai-grok-bot-grok-4-6-what-s-great-and-what-s-still-hype-lessons-from-spend.md; chatprd.ai "How Ryan Carson Manages 40 PRs a Day with Devin and Codex")
 
+## Practitioner Case Study — Eric Pardee "$266 and four AI models to own my tablet" (Aug 2026, HN 686 pts)
+
+Companion datapoint to the Carson story: the same "manage a fleet of coding agents" pattern applied to a **hardware security** task. Pardee (20 yrs tech, InfoSec background) spent $266.15 in agent compute to root a $114.26 Amazon Fire HD 10 that kept self-shutting-down:
+
+- **Kimi K3** (Moonshot, via opencode CLI) found the exploit in one 621-message / $164.25 / ~30-hour session: extracted Amazon's own OTA kernel image for the exact firmware, cross-checked every known Mali GPU bug, and identified **CVE-2022-38181** (use-after-free in Arm's Mali kernel driver) as still present in his un-updated 7.3.2.6 build. It explicitly reasoned about whether it *should* help (DMCA jailbreak exemptions, "rooting your own device" framing) and hedged its own per-attempt success odds in the same breath as announcing the find.
+- **GLM-5.2** ($21.90) caught fatal bugs in Kimi's exploit after a budget-driven handoff ("you have expired your budget Kimi K3. YOU MUST HAND THIS OFF TO GLM-5.2"); Kimi wrote a HANDOFF.md with every verified piece.
+- **GLM-5.3** finished the job in one day on an $80 subscription.
+- **Safeguard contrast**: Claude Fable 5 and Opus 4.8 both hit `[cyber]` safeguard flags — including on *summarizing the user's own prior session logs about his own device* — pointing to a "Cyber Verification Program"; Pardee named the session "claude-nerf." OpenAI's Codex also refused a related question. The Chinese open-weight models completed the task; the US frontier models were gated.
+- The exploit itself was a 500+-attempt kernel UAF grind against "the kernel's hottest slab cache," with automatic retries six times per boot — the agents were doing the patience work that makes exploit chains practical.
+
+Cross-link: [[concepts/codex-vs-claude-one-week]] (the safeguard-interference confound), [[entities/kimi]] (K3), [[entities/glm-5-zai]] / [[concepts/glm-5-3]] (GLM-5.2/5.3), [[concepts/inference-engine-security]] (adjacent model-vs-host security thread).
+
+(Source: raw/articles/2026-08-25_ericpardee_i-spent-266-and-four-ai-models-to-own-my-tablet.md; HN front page, 686 pts, Aug 25 2026)
+
 ## See Also
 
 - [[entities/scott-wu]] — Cognition CEO and co-founder
