@@ -87,6 +87,8 @@ This positions Perplexity in the growing AI supply-chain security space, alongsi
 - [[concepts/service-as-software]] — The broader shift from tools to outcomes
 - [[entities/anthropic]] — Competitor in finance vertical with agent templates
 - [[entities/openai]] — ChatGPT for Clinicians (healthcare competitor)
+- [[entities/perplexity-computer]] — Perplexity's autonomous digital worker (execution layer)
+- [[entities/perplexity-comet]] — Perplexity's AI-native browser (interface layer)
 
 ## Sources
 

@@ -3,6 +3,20 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-26] entities/perplexity-computer | NEW page
+
+- New entity page for **Perplexity Computer** — Perplexity's general-purpose autonomous "digital worker" product, the execution layer of the Perplexity stack (complement to Comet's browser interface).
+- Covers:
+  - Ecosystem position (Search → Comet browser → Computer autonomous worker)
+  - Voice interface at scale on OpenAI Realtime-1.5 (millions of voice sessions/month, March 2026) with 6 production lessons (chunked context, role semantics, Rust audio SDK, VAD tuning, voice lock, tool discipline)
+  - Professional Finance vertical (May 2026): 35 analyst workflows, FactSet/S&P Global data, Bloomberg Terminal competitor positioning
+  - Brain self-improving agent memory (June 2026): agent-written, persistent, self-improving — contrasted with Google Memory Bank and Anthropic session-centric managed agents
+- Wikilinks: perplexity, perplexity-comet, openai/realtime-api, ai-agent-memory, self-evolving-agents
+- Sources: OpenAI Developers Blog (2026-03-25), AINews (May 6 2026), Perplexity hub blog (Brain), perplexity-comet.md
+- `index.md` updated (entities section, alphabetical position after perplexity-comet)
+- `perplexity-comet.md` left as-is; Computer's Brain content already cross-referenced there.
+
+
 ## [2026-08-25] dreaming wiki-ingest | Pattern E saturation recovery - 2 takes + 2 refs enriched (upstream JSON-render failure)
 
 - **Upstream state**: dreaming-group (run 20260825T184500Z) FAILED on JSON render; `triage_latest.json` (18:34) saved cleanly before the failure (Pitfall #12). No enrichment committed upstream this cycle (no dreaming log entry / archive for 08-25; last dreaming commit `7e4987df` is 08-24). Enrichment executed by this pass.

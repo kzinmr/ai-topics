@@ -106,6 +106,7 @@ Brain represents Perplexity's answer to the agent memory problem — competing w
 - [[entities/openai-cua]] — OpenAI Computer-Using Agent
 - [[entities/webmcp]] — Standardization protocol
 - [[entities/manus]] — Local browser integration agent
+- [[entities/perplexity-computer]] — Perplexity's autonomous "digital worker" (the execution layer Comet hands tasks to)
 
 ## Sources
 

@@ -644,6 +644,7 @@
 - [[entities/periodic-ai]] — Periodic AI (Periodic Labs) — RL research company led by William Fedus (ex-OpenAI); AI Scientist
 - [[entities/perplexity]] — Perplexity
 - [[entities/perplexity-comet]] — Perplexity Comet; added Brain self-improving memory system for agents (June 24)
+- [[entities/perplexity-computer]] — Perplexity Computer; general-purpose autonomous digital worker; Realtime-1.5 voice layer (millions of sessions/month), Professional Finance vertical (May 2026), Brain self-improving agent memory (June 2026)
 - [[entities/peter-steinberger]] — Peter Steinberger — Creator of PSPDFKit; iOS developer tools expert; exploring MCP and AI developer tooling (June 27)
 - [[entities/peter-wang]] — Peter Wang
 - [[entities/petra-donka]] — Petra Donka
