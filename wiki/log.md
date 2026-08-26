@@ -3,6 +3,14 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-26] blog-wiki-ingest | duplicate-invocation verification -- no-op (batch already processed 2026-08-17)
+
+- **Context**: blog-triage (job 58c2f4a7e1bd) failed to parse JSON; `triage_latest.json` is the 2026-08-17 duplicate-run recovery checkpoint (checkpoint_run_id 20260817T103024Z, 15 items: 5 take + 10 skip). This is a stale checkpoint, NOT a recovery source for today's batch (per the stale-checkpoint-recovery pattern).
+- **Verification**: All 5 takes were already applied by the 2026-08-17 blog-wiki-ingest run (commit f6c01f84): `concepts/qwen-3-8-27b.md` (created), `concepts/security-and-governance/ai-text-watermarking.md` (Gruber + Padolsey criticism sections), `entities/gary-marcus.md`, `entities/martin-alderson.md`, `entities/daringfireball-net.md` (all updated). Page `updated:` dates and git history confirm enrichment.
+- **Archive**: 2026-08-17 archive file `wiki/raw/archived/triage/blog/2026-08-17_20260817T103024Z.json` (10 skip+reference items) and all 15 raw article files are committed. No new archive entries needed.
+- **Action**: No page changes. This run is a no-op confirmation; the stale checkpoint will be overwritten by the next real blog-triage run.
+
+
 ## [2026-08-26] entities/perplexity-computer | NEW page
 
 - New entity page for **Perplexity Computer** — Perplexity's general-purpose autonomous "digital worker" product, the execution layer of the Perplexity stack (complement to Comet's browser interface).
