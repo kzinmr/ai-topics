@@ -1,0 +1,46 @@
+{
+  "archived_at": "2026-08-26T18:15:26.181687+00:00",
+  "triage_run_id": "20260826T180023Z",
+  "source": "dreaming",
+  "summary_ja": "Pattern E saturation (checkpoint: 0 collected articles, 190 recent raw). check_archive_index_absence.py probe over 08-23..08-26 window. 0 takes, 1 reference enriched (ElevenLabs speaker-diaryzation guide), 1 direct patch applied (GPT-5.6 5h limit restoration). All other candidates verified as already covered by today's pipelines (trending-topics: jalapeno/dwarkesh; active-crawl: M6/agent-lightning/mcp-roadmap/munder; slack-hot-posts: thomson-reuters) or low-value marketing/stubs (fireworks security + factory personas stubs, harvest discovery educational guide covered by June EDRM section, elevenlabs composer section-by-section marketing, glean partner network, parallel gcp marketplace).",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-elevenlabs-diarization",
+      "source": "dreaming",
+      "source_name": "dreaming Pattern E (filesystem scan)",
+      "title": "Speaker diarization: What is it, how it works, and use cases | ElevenLabs",
+      "url": "https://elevenlabs.io/blog/what-is-speaker-diarization",
+      "raw_path": "~/wiki/raw/articles/2026-08-26_elevenlabs_what-is-speaker-diarization.md",
+      "recommended_action": "reference",
+      "reason_ja": "Speaker diarization technical guide (VAD->segmentation->embedding->clustering pipeline, pyannote.audio/WhisperX/NeMo open source landscape, DER/JER metrics). entities/elevenlabs.md has diarization mentioned (in-stream features, multilingual guide) but no dedicated diarization-technology section. Genuine gap - enriched.",
+      "stars": 3,
+      "candidate_wiki_path": "entities/elevenlabs.md",
+      "enrichment": "entities/elevenlabs.md: added 'Speaker Diarization Guide (Aug 2026)' section + source; updated -> 2026-08-26",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-already-covered-batch",
+      "source": "dreaming",
+      "source_name": "dreaming Pattern E (filesystem scan)",
+      "title": "Batch skip: already covered by today's pipelines",
+      "url": "",
+      "raw_path": "~//wiki/raw/articles/",
+      "recommended_action": "skip",
+      "reason_ja": "Already processed today by other jobs: (a) trending-topics 08-26 - openai jalapeno first results (concepts/openai-jalapeno-inference-chip.md 'First Measured Results' section), dwarkesh dylan-patel lab economics (enriched per log entry, raw cited), openai gpt-5.6 sol price reduction (concepts/gpt/gpt-5-6 pricing + llm-api-pricing monitor); (b) active-crawl 08-26 - apple m6/m5 ultra (concepts/apple-silicon-m6-m5-ultra.md new), microsoft agent-lightning v1 (concepts/agent-lightning.md new), mcp roadmap (enriched), munder difflin (new page); (c) slack-hot-posts 08-26 - thomson-reuters thomson-llm-launch (concepts/thomson-reuters-frontier-model.md enriched with full PR raw); (d) prior dreaming 08-25 - factory model routing (concepts/coding-agents/model-routing.md + entities/factory.md), harvey document comparison + legal engineer role (entities/harvey.md), elevenlabs CLI v1 (entities/elevenlabs.md); (e) garymarcus anthropics-30-trillion-fantasy - thin commentary, ai-bubble pages already cover; (f) sierra Korea launch - regional expansion, no new architecture; (g) 9to5mac/garymarcus/simonwillison paul-dix/eve-online-python3/executable-sqlite - non-AI or already covered elsewhere.",
+      "batch_note": "no single raw file; cross-referenced against wiki/log.md entries 2026-08-25..26 and archive_index.json",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-low-value-marketing",
+      "source": "dreaming",
+      "source_name": "dreaming Pattern E (filesystem scan)",
+      "title": "Batch skip: low-value marketing/stub/educational articles (08-26 sitemap batch)",
+      "url": "",
+      "raw_path": "~//wiki/raw/articles/",
+      "recommended_action": "skip",
+      "reason_ja": "Low standalone value: (a) fireworks DeepSeek-V4-Pro-Security - scrape stub (title 'Fireworks AI', body is nav chrome only, 148 lines of chrome); (b) fireworks DeepSeekV4Pro-Fable5 - benchmark comparison already in concepts/ai-benchmarks/deepswe-benchmark.md (Togeter AI DeepSWE board + SWE-bench numbers tracked elsewhere; Fireworks' SWE-Bench Verified 95.2% / LiveCodeBench / Aider / Terminal-Bench 2.1 numbers are marginal vs existing coverage); (c) factory personas-and-connectors - 23-line scrape stub, no article body; (d) harvey legal-discovery-process - educational EDRM guide (6 stages, RAND 73% cost stat); entities/harvey.md already has comprehensive 'Legal Discovery & Defensible AI Protocols (June 2026)' section covering EDRM/TAR/generative/agentic modes - marginal value; (e) elevenlabs composer section-by-section - ElevenMusic product marketing, no AI/LLM depth; (f) glean partner network + award winners - partner marketing, entities/glean.md covers; (g) parallel gcp-marketplace full api suite - distribution/partnership announcement, entities/parallel-web-systems.md covers.",
+      "batch_note": "individual bodies read during filesystem scan; cross-referenced against entity/concept pages",
+      "body_excerpt": ""
+    }
+  ]
+}

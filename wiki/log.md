@@ -1,3 +1,38 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-08-26] dreaming wiki-ingest | Pattern E saturation - 2 enrichments (GPT-5.6 5h limit restoration + ElevenLabs diarization guide)
+
+**Checkpoint**: `20260826T180023Z` — 0 collected articles (RSS 0 + newsletter 0), 190 recent raw. Pattern E filesystem scan via `check_archive_index_absence.py` (95 recent files, 2,802 archive URLs).
+
+**Duplicate check**: all major 08-24..08-26 items already handled by today's jobs — trending-topics (Jalapeño measured results, Dwarkesh × Dylan Patel lab economics, GPT-5.6 Sol price cut), active-crawl (Apple M6/M5 Ultra, Agent Lightning, Munder Difflin, MCP roadmap), slack-hot-posts (Thomson Reuters in-house LLM), prior dreaming 08-25 (Factory model-routing, Harvey doc comparison + legal engineer, ElevenLabs CLI v1).
+
+**Enriched**:
+- `concepts/gpt/gpt-5-6.md` — new "5-Hour Codex/Work Limit Restored (Aug 24, 2026)" section (Sottiaux: 5-hour cap returns to Codex + ChatGPT Work for Plus from Aug 25 after weeks of weekly-cap-only operation; credit purchases / free + banked resets) + matching bullet in Usage Limit Management + source added. `updated:` → 2026-08-26.
+- `entities/elevenlabs.md` — new "Speaker Diarization Guide (Aug 2026)" section: VAD → segmentation → embedding → clustering pipeline; diarization vs segmentation vs identification; pyannote.audio / WhisperX / NeMo open-source landscape; DER/JER metrics. `updated:` → 2026-08-26.
+
+**Skips (verified)**:
+| Candidate | Status | Details |
+|-----------|--------|---------|
+| OpenAI Jalapeño first results | ✅ Covered | trending-topics 08-26: concepts/openai-jalapeno-inference-chip.md "First Measured Results" (InferenceX 1.5–1.9× work/watt, latency data) |
+| Dwarkesh × Dylan Patel lab economics | ✅ Covered | trending-topics 08-26 enrichment (raw cited in log entry L37) |
+| GPT-5.6 Sol price reduction | ✅ Covered | llm-api-pricing monitor 08-24 + gpt-5-6.md; raw cited in trending entry L38 |
+| Apple M6/M5 Ultra, Agent Lightning, MCP roadmap, Munder Difflin | ✅ Covered | active-crawl 08-26: 3 new pages + MCP roadmap enrichment |
+| Thomson Reuters in-house frontier LLM | ✅ Covered | slack-hot-posts 08-26: thomson-reuters-frontier-model enriched with full PR |
+| Fireworks DeepSeek V4 Pro (security + Fable 5) | ⏭ Skip | security post = scrape stub (nav chrome only); Fable 5 comparison marginal vs existing deepswe-benchmark.md + SWE-bench coverage |
+| Factory personas & connectors | ⏭ Skip | 23-line scrape stub, no article body |
+| Harvey legal discovery process | ⏭ Marginal | entities/harvey.md already has comprehensive "Legal Discovery & Defensible AI Protocols (June 2026)" EDRM section |
+| ElevenLabs composer section-by-section | ⏭ Skip | ElevenMusic product marketing, no AI/LLM depth |
+| Glean partner network / awards, Parallel GCP marketplace | ⏭ Skip | partner/distribution marketing; entities/glean.md + entities/parallel-web-systems.md cover |
+| Gary Marcus "Anthropic's $30T fantasy" | ⏭ Skip | thin commentary; ai-bubble pages already cover the thesis |
+
+**Archive**: `archive_triage.py dreaming --keep-reference` → run result in report.
+
+**Staging**: selective — 2 content files + log.md + archive JSON only (dirty sibling tree: skills/ + jobs.json + config from other sessions).
+
+
 ## [2026-08-26] watchdog | Daily health scan — blog-triage chain break observed, wiki structure clean
 
 ### Pipeline health
@@ -65,10 +100,6 @@
 - Tags: all SCHEMA-valid after replacing non-canonical `on-device-ai` with `local-llm` on the Apple page.
 - index.md: 3 entries inserted alphabetically (verified neighbors); Concepts 2012 -> 2015, header matches `grep -c`.
 - Discovered via HN Algolia (Aug 22-26 window, points>=10). X/Twitter + gap-analysis subagents hit LLM 503; gap analysis completed directly by parent via find/grep.
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 
 ## [2026-08-26] blog-wiki-ingest | duplicate-invocation verification -- no-op (batch already processed 2026-08-17)

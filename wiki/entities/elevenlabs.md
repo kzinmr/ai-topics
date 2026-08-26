@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-08-25
+updated: 2026-08-26
 tags:
   - company
   - voice-ai
@@ -488,6 +488,18 @@ ElevenLabs released **v1 of its CLI** (Aug 24, 2026), bringing the entire Eleven
 A notable product milestone: it extends ElevenLabs' agentic positioning (ElevenAgents) into developer tooling, positioning the CLI as the surface where coding agents drive the voice/audio platform.
 
 Source: raw/articles/2026-08-25_elevenlabs_elevenlabs-cli-v1.md
+
+## Speaker Diarization Guide (Aug 2026)
+
+ElevenLabs published an educational guide on **speaker diarization** (Aug 2026) — the process of partitioning an audio stream into speaker-labeled segments ("who spoke when?"), which makes multi-speaker audio (meetings, call centers, podcasts, legal records) usable. Key content:
+
+- **Pipeline**: voice activity detection (VAD) → segmentation at speaker-change points → speaker embedding extraction → clustering (the system infers the number of speakers). Labels are anonymous and internally consistent; assigning real identities is the separate task of **speaker identification**, and **segmentation** (finding change boundaries) is just one stage within diarization — the three are often conflated.
+- **Open-source landscape**: **pyannote.audio** (PyTorch toolkit with pretrained VAD/segmentation/embedding/clustering pipelines, the most common diarization layer), **WhisperX** (Whisper + forced word-level alignment + pyannote diarization, adding speaker labels to transcripts), **NVIDIA NeMo** (diarization among a broader audio toolkit), plus other options — choice driven by audio type, latency, and deployment constraints.
+- **Evaluation metrics**: **DER** (diarization error rate, overall accuracy) and **JER** (Jaccard error rate, per-speaker fairness), plus the practical challenges of real-time diarization.
+
+The guide extends the STT/transcription coverage in this page (Scribe v2, Fyxer case study, in-stream diarization) with an explicit taxonomy of the diarization stack and its evaluation.
+
+Source: raw/articles/2026-08-26_elevenlabs_what-is-speaker-diarization.md
 
 ---
 

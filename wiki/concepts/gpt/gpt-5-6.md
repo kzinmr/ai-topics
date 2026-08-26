@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6 (Sol / Terra / Luna)"
 created: 2026-06-27
-updated: 2026-08-21
+updated: 2026-08-26
 type: concept
 tags:
   - model
@@ -24,6 +24,7 @@ sources:
   - raw/articles/2026-08-13_openai_gpt-5-6-sol-ultrafast.md
   - raw/articles/2026-08-13_cerebras_gpt-5-6-sol-ultrafast.md
   - raw/articles/simonwillison.net--2026-aug-20-chatgpt-search-now-uses-the-siteoperator-at-scal--cbc2f5c3.md
+  - raw/articles/2026-08-24_9to5mac_openai-restores-5h-codex-work-limits.md
 ---
 
 # GPT-5.6 (Sol / Terra / Luna)
@@ -149,6 +150,9 @@ OpenAI temporarily removed the 5-hour usage limit restriction for all Plus, Busi
 
 OpenAI reported **6M active users** as of this date, signaling rapid adoption since the July 9 general availability launch.
 
+### 5-Hour Codex/Work Limit Restored (Aug 24, 2026)
+Thibault Sottiaux announced that the **5-hour usage limit returns to Codex and ChatGPT Work for Plus subscribers starting Aug 25, 2026**, ending several weeks of temporary operation under the weekly cap alone. After hitting the 5-hour or weekly limit, users can wait for the next reset cycle or purchase additional credits; OpenAI also occasionally resets limits for free, and banked resets can be earned through promotions/referral offers. The temporary lift had coincided with milestone celebrations and early weekly-cap resets. (Source: 9to5Mac, Aug 24, 2026; HN 116 pts)
+
 ### Operational Fixes (Jul 13-14, 2026)
 
 The Codex/Codex Work team rolled out multiple fixes for GPT-5.6 Sol after usage ramp:
@@ -222,6 +226,7 @@ For a quick-reference guide to model selection and usage strategies, see [[conce
 - Higher thinking levels (high, xhigh, max) consume usage limits much faster. Ultra mode in particular 'burns through usage limits' rapidly — author was nearly out of Codex usage for the first time.
 - Recommended daily defaults: sol medium for building/creativity, background agents for harder tasks, luna xhigh for day-to-day productivity.
 - OpenAI temporarily removed the 5-hour usage limit for all paid plans (July 12, 2026). Users should be aware they may exhaust weekly limits in one session.
+- The 5-hour limit for Codex and ChatGPT Work on Plus was **restored Aug 25, 2026** after weeks of weekly-cap-only operation; free/banked resets and credit purchases remain available.
 - OpenAI reset usage 4-5 times during the weekend of July 11-12 while fixing bugs from the ChatGPT macOS + Codex app merge.
 
 ### ChatGPT Work
