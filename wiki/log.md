@@ -3,6 +3,14 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-26] slack-hot-posts late-night 01:30 JST | Jalapeño demand-side cross-reference enrichment
+
+- `concepts/openai-jalapeno-inference-chip.md` — new "Demand-side read: the same week (Aug 24-26)" section: 5h Codex/Work cap restoration (HN 116 pts), GPT-5.6 Sol promo pricing (HN 336 pts), Zitron "AI Hater's Manifesto" token-burn analysis (claims flagged as his analysis). Sources added to frontmatter.
+- Slot: late-night (01:30 JST). Angle: niche cross-reference — supply-side silicon vs demand-side squeeze, not the headline benchmark numbers.
+- Dedup: no wikilink overlap with recent posts (avoided [[entities/fable]], [[concepts/ai-bubble-economics]], [[concepts/agents-md-code-quality]], [[concepts/agent-lightning]], etc.).
+- No new pages; index.md unchanged (page already indexed).
+
+
 ## [2026-08-26] dreaming wiki-ingest | Pattern E saturation - 2 enrichments (GPT-5.6 5h limit restoration + ElevenLabs diarization guide)
 
 **Checkpoint**: `20260826T180023Z` — 0 collected articles (RSS 0 + newsletter 0), 190 recent raw. Pattern E filesystem scan via `check_archive_index_absence.py` (95 recent files, 2,802 archive URLs).
