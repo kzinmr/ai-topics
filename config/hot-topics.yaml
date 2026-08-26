@@ -25,7 +25,7 @@ topics:
   - concepts/agentic-engineering/_index
   notes: 22ページの大クラスタ。横方向の関連パラダイムを探索
   added: 2026-04-14
-  last_crawled: '2026-08-19'
+  last_crawled: '2026-08-26'
 - slug: ai-agent-engineering
   title: AI Agent Engineering (Anthropic/OpenAI)
   crawl_policy: deepdive
@@ -119,7 +119,7 @@ topics:
   - concepts/local-llm/vllm
   notes: '階層化済み: GGUF, llama.cpp, vLLMの各サブページ。最新ベンチマーク、新モデル対応を追跡'
   added: 2026-04-14
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-08-26'
 - slug: ai-memory-systems
   title: AI Memory Systems
   crawl_policy: prerequisites
@@ -145,7 +145,7 @@ topics:
   - concepts/death-of-browser
   notes: WebMCP, agentic browsing の最新動向
   added: 2026-04-14
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-08-26'
 - slug: sandbox
   title: Agent Sandboxing
   crawl_policy: laterals
@@ -267,4 +267,4 @@ topics:
   - concepts/hermes-agent-architecture
   notes: 重点追跡トピック。Pi（セッションツリー＋ホットリロード）、OpenClaw（Markdownメモリ圧縮＋常時稼働）、Hermes Agent（スキル蓄積による能力成長）の3大実装を中心に、自己進化エージェントの理論（5段階分類）と実践（Hugo+IvanワークショップのPure Python再構築）の両面を追跡。Armin Ronacher「Agents Built for Agents Building Agents」哲学、Mario Zechnerのミニマリズム、Peter Steinbergerのalways-on設計を含む。
   added: 2026-05-13
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-08-26'
