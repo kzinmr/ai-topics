@@ -917,7 +917,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2012 pages)
+## Concepts (2015 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -952,6 +952,7 @@
 - [[concepts/agent-harnesses]] — Agent Harnesses — Bitter Lesson philosophy, practical construction patterns, shrinking harnesses as models improve
 - [[concepts/agent-human-oversight-failure]] — Agent-Human Oversight Failure — Empirical evidence that humans miss ~33% of dangerous AI agent actions; attention fatigue, habituation, and implications for agent safety architecture
 - [[concepts/agent-integration-platforms]] — Agent Integration Platforms — middleware for connecting AI agents to SaaS tools (Nango, Composio, Arcade)
+- [[concepts/agent-lightning]] — Agent Lightning (Microsoft) — 3,500-line open-source agentic RL framework; trains agents inside their real unmodified harnesses via an API Gateway proxy; 6K samples take Qwen3.5-9B coding agent SWE-bench Verified 41.8% -> 56.4%; native Kubernetes rollouts; v1.0 (Aug 24, 2026)
 - [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
 - [[concepts/agent-media]] — Design philosophy for evolving a structured knowledge base (wiki) into an audience-aware, multi-channel distribution ...
 - [[concepts/agent-native-cloud]] — Agent-Native Cloud
@@ -1010,6 +1011,7 @@
 - [[concepts/ai-enabled-terrorism]] — AI-Enabled Terrorism — CASP report on Boko Haram using frontier AI for tactical planning and logistics
 - [[concepts/ai-energy]] — AI Energy — AI energy consumption and data center sustainability; training and inference power costs, GPU power envelopes (NVIDIA Vera), efficiency techniques (quantization, speculative decoding, sparsity); major lab sustainability commitments; PJM capacity market modeling errors & $12B ratepayer waste (Aug 2026)
 - [[concepts/ai-preflight-safety-testing]] — AI Preflight Safety Testing — Proposed mandatory safety evaluations for frontier AI before deployment
+- [[concepts/apple-silicon-m6-m5-ultra]] — Apple M6 & M5 Ultra — M6 first 2nm Apple silicon (Dual 16-core Neural Engine, 12-core GPU w/ Neural Accelerators, 32GB/170GB/s); M5 Ultra first quad-die SoC (36-core CPU, 80-core GPU, 512GB unified memory @ 1.2TB/s) for on-device frontier LLMs (Aug 25, 2026)
 - [[concepts/apple-speechanalyzer]] — Apple SpeechAnalyzer — Next-generation on-device speech recognition API (iOS 26/macOS 26), 2.12% WER on LibriSpeech, 3-4× improvement over legacy SFSpeechRecognizer
 - [[concepts/bonsai-27b]] — Bonsai 27B — Prism ML's 27B-parameter model running on phones via extreme quantization
 - [[concepts/claude-memory-heist]] — Claude Memory Heist — Prompt injection attack exfiltrating user data from Claude's memory system
@@ -2199,11 +2201,12 @@
 - [[concepts/max-irwin]] — Max Irwin
 - [[concepts/maxime-chevalier-boisvert]] — Maxime Chevalier-Boisvert
 - [[concepts/mcp]] — MCP (Model Context Protocol)
-- [[concepts/mcp-2026-07-28-spec]] — MCP 2026-07-28 Specification Update — Fifth major MCP release; streaming HTTP transport, stateless remote servers, JSON-RPC batching, App/Task/Managed Auth primitives; New MCP Roadmap (Aug 22): agentic messaging, HTTP-native transport, agent identity/enterprise security
+- [[concepts/mcp-2026-07-28-spec]] — MCP 2026-07-28 Specification Update — Fifth major MCP release; streaming HTTP transport, stateless remote servers, JSON-RPC batching, App/Task/Managed Auth primitives; New MCP Roadmap (Aug 22): five priority areas — agentic messaging (server-initiated events, Tasks to spec), HTTP-native transport unification, agent identity (DPoP, Workload Identity Federation, ID-JAG), tool result contracts + progressive discovery, SDK DX
 - [[concepts/mcp-desktop-extensions]] — Desktop Extensions (MCP Bundle)
 - [[concepts/mcp-enterprise-oauth]] — MCP Enterprise OAuth — Managed Authentication
 - [[concepts/mcp-protocol]] — MCP Protocol Testing & Security
 - [[concepts/mcporter]] — MCPorter — TypeScript runtime, CLI, and code-generation toolkit for MCP; auto-discovers servers from Cursor/Claude/Codex/Windsurf/VS Code; 4.7k★ (June 27)
+- [[concepts/munder-difflin]] — Munder Difflin — Open-source multi-agent harness running an "office of your clones": wraps 12 CLI coding agents (Claude Code/Codex/Grok/...), per-person persistent clones with shared MemPalace memory, E2E-encrypted clone-to-clone messaging, local-first nodes + optional 24/7 sandbox VMs; #1 GitHub Trending (Aug 22, 2026)
 - [[concepts/mu-tools-for-agents]] — Mu — Open-source suite of 18+ developer tools for AI agents, distributed as an MCP server in Go; browser, git, image, video, file system, and social media integrations (Aug 2026)
 - [[concepts/mechanistic-interpretability]] — mechanistic-interpretability
 - [[concepts/megakernel-for-llm-inference]] — Megakernel for LLM Inference (redirect → megakernel-inference)

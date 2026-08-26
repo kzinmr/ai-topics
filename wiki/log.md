@@ -1,3 +1,31 @@
+## [2026-08-26] active-crawl | 3 new pages + 1 enrichment (MCP roadmap, Apple M6/M5 Ultra, Agent Lightning, Munder Difflin)
+
+### New pages
+- `concepts/apple-silicon-m6-m5-ultra.md` — Apple M6 (first 2nm chip: 12-core CPU, 12-core GPU w/ per-core Neural Accelerators, Dual 16-core Neural Engine, 32GB @ 170GB/s) and M5 Ultra (first quad-die M-series SoC via UltraFusion: 36-core CPU, 80-core GPU, 32-core Neural Engine, 512GB unified memory @ 1.2TB/s) — on-device frontier LLM inference positioning. HN 1,159 pts (Aug 25).
+- `concepts/agent-lightning.md` — Microsoft's 3,500-line open-source agentic RL framework (v1.0/v1.0.1, Aug 24); trains agents inside their real unmodified harnesses via API Gateway proxy; 3-component architecture (verl+vLLM Trainer, API Gateway, K8s-native Rollout Controller); headline: 6K samples take Qwen3.5-9B coding agent SWE-bench Verified 41.8% -> 56.4% (+14.6pp); arXiv:2608.17528 "Towards Harnessed Agentic RL"; community: Youtu-Agent (128-GPU), AgentFlow (Stanford).
+- `concepts/munder-difflin.md` — MIT-licensed multi-agent harness, #1 GitHub Trending (Aug 22, HN 311 pts); "office of your clones": wraps 12 CLI coding agents, per-person persistent clones (GOD orchestrator + role agents in isolated git worktrees, MemPalace per-machine memory), E2E-encrypted (X25519/AES-256-GCM) clone-to-clone messaging, local-first nodes + optional 24/7 sandbox VMs; consumer $20/mo PRO / $39/seat TEAMS.
+
+### Enrichment
+- `concepts/mcp-2026-07-28-spec.md` — expanded the "New MCP Roadmap (Aug 22, 2026)" section from a 5-item outline to full detail: five priority areas (agentic messaging w/ server-initiated events + Tasks-to-spec; HTTP-native transport unification incl. Streamable HTTP over stdio; agent identity w/ DPoP + Workload Identity Federation + ID-JAG + IETF OAuth/WIMSE; tool result contracts + progressive discovery; SDK DX for agent-authored MCP code), the March-lookback (SEP-2575/2567/2549/2663/2322, Contributor Ladder, CIMD), and SEP prioritization rules. Updated frontmatter `updated` + raw source. Index entry description refreshed to match.
+
+### Raw articles saved
+- `raw/articles/2026-08-22_mcp-roadmap.md` (official MCP blog, David Soria Parra & Den Delimarsky)
+- `raw/articles/2026-08-25_apple-m6-m5-ultra.md` (Apple Newsroom press release)
+- `raw/articles/2026-08-24_microsoft-agent-lightning-v1.md` (GitHub release + README + arXiv ref)
+- `raw/articles/2026-08-22_munder-difflin.md` (product site; vendor claims marked unverified)
+
+### Topics considered but deferred
+- GLM-5.3 "Ox Alpha" open-weight confirmation (Bloomberg, Aug 26) — paywalled; `concepts/glm-5-3.md` + `entities/zhipu.md` exist and can be enriched when a free source appears.
+- Qwen3.8-Flash-Next (125B-A6B, ModelScope, Aug 25) — `concepts/qwen-3-8.md` exists; ModelScope page is JS-heavy, defer.
+- OpenAI GPT-5.6 Sol 20% price cut (Aug 22) — pricing update belongs on `wiki/concepts/` pricing pages; low standalone value.
+- Thomson Reuters frontier model (Aug 25) — already ingested today by slack hot-posts pipeline (`concepts/thomson-reuters-frontier-model`).
+
+### Verification
+- Wikilinks: all 4 pages pass (0 broken, incl. frontmatter `related:`).
+- Tags: all SCHEMA-valid after replacing non-canonical `on-device-ai` with `local-llm` on the Apple page.
+- index.md: 3 entries inserted alphabetically (verified neighbors); Concepts 2012 -> 2015, header matches `grep -c`.
+- Discovered via HN Algolia (Aug 22-26 window, points>=10). X/Twitter + gap-analysis subagents hit LLM 503; gap analysis completed directly by parent via find/grep.
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
