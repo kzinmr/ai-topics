@@ -2,7 +2,7 @@
 title: Addy Osmani
 type: entity
 created: 2026-04-10
-updated: 2026-07-02
+updated: 2026-08-27
 source: "x-account"
 tags:
   - person
@@ -181,6 +181,10 @@ Osmani introduced the **Agency Ladder** concept to distinguish capability from a
 > *"That inner loop is capability. The outer loop is agency."* — Addy Osmani, AIEWF 2026
 
 This framing positions Osmani in the "human outer loop" camp, alongside Geoffrey Litt (anti-factory thread) and Paul Bakaus (Impeccable — "there is no auto"), as opposed to the autonomous factory vision of Introspection and Cursor.
+
+## Recent X Shares (Aug 2026)
+
+- **Lars Faye, "AI Coding will Prevent Expertise"** (shared Aug 26, 2026, [larsfaye.com](https://larsfaye.com/articles/ai-coding-will-prevent-expertise)): Osmani's one-liner — *"Friction is what builds taste and mastery. The tools that remove it also remove what made us good enough to use them well. Worth reading if you're leading teams or are an early-career engineer."* The article argues the **Expert Novice paradox** (AI coding demands the expertise that AI-assisted learning suppresses), cites the JetBrains "Widening Gap" novice study (heavy AI users developed an "illusion of competence"; those who mitigated AI use performed best via "negative expertise") and UPenn's 1,000-student math study (unassisted LLM use → 17% worse results, self-assessments inverted), and prescribes **Friction First**: use LLMs as Socratic tutors/documentation rather than code generators. A sharp counterweight to Osmani's own productivity-leaning agentic-coding content — he's curating the skeptic case for his audience. Full notes: [[raw/articles/2026-08-26_larsfaye_ai-coding-will-prevent-expertise]].
 
 ## Open Source & Projects
 

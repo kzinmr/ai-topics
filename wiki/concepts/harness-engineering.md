@@ -2,7 +2,7 @@
 title: "Harness Engineering"
 type: concept
 created: 2026-04-30
-updated: 2026-08-01
+updated: 2026-08-27
 tags:
   - concept
   - evaluation
@@ -48,6 +48,7 @@ sources:
   - https://github.com/picrew/Awesome-Agent-Harness
   - raw/articles/2026-07-04_lilianweng-harness-engineering-self-improvement.md
   - raw/newsletters/2026-08-01-ainews-not-much-happened-today.md
+  - https://github.com/lopopolo/harness-engineering
 description: "The practice of building evaluation and constraint systems around LLMs for production reliability. Includes production case studies from LangChain, Addy Osmani's Agent = Model + Harness framework, and the Agent Harness Engineering discipline."
 ---
 
@@ -555,6 +556,13 @@ This design dimension connects [[concepts/agentic-engineering]] (how humans use 
 This makes Echoverse a notable datapoint for the harness-engineering thesis that the evaluation environment is not a neutral testbed but a component whose quality directly shapes deployed performance.
 
 **Source**: AINews (2026-08-01) — Microsoft Echoverse.
+
+## Distribution as Agent-Consumable Context
+
+Harness-engineering discourse increasingly ships as **agent context** rather than human-only prose:
+
+- **[[entities/ryan-lopopolo|Ryan Lopopolo]] — harness-engineering GitHub bundle** (shared Aug 27, 2026): [github.com/lopopolo/harness-engineering](https://github.com/lopopolo/harness-engineering) — self-described "anthology, field guide, and **agent context bundle** for harness engineering." His pitch on X: "Point your agent at this" — the discipline (anchored by his Feb 2026 OpenAI post, ["Harness engineering: leveraging Codex in an agent-first world"](https://openai.com/index/harness-engineering/)) is packaged so a coding agent can ingest it whole in one pass. The methodology's distribution channel becomes the methodology's own thesis: the harness includes its own onboarding documentation.
+- This follows the broader pattern already visible in this ecosystem: AGENTS.md files, LangChain's better-harness hill-climbing recipes, and Addy Osmani's "Agent = Model + Harness" framing all treat the surrounding context as a first-class artifact. The lopopolo bundle is one of the first curated, named "context bundle" for a named discipline.
 
 ## References
 

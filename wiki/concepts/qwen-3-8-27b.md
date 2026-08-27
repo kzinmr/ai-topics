@@ -2,7 +2,7 @@
 title: "Qwen 3.8 27B"
 type: concept
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-08-27
 tags:
   - model
   - qwen
@@ -43,7 +43,7 @@ This is distinct from the larger [[concepts/qwen-3-8|Qwen 3.8 Max]] (2.4T MoE), 
 
 The model defaults to `xhigh` reasoning effort, which causes it to spend enormous amounts of tokens on reasoning traces even for simple tasks. Simon Willison found that asking it to "draw an svg of a circle" triggered a multi-minute internal deliberation about Bauhaus aesthetics and animation frameworks before producing an elaborate animated circle — entirely unsolicited.
 
-**Recommendation**: Run on `low` or no reasoning initially. The `xhigh` default is entertaining but impractical for consumer hardware.
+**Recommendation**: Run on `low` or no reasoning initially. The `xhigh` default is entertaining but impractical for consumer hardware. (Simon later confirmed the upside of the default: in an Aug 18 X reply, "I got a fantastic pelican out of that one!" — the `xhigh` overthinking produced his best local-model pelican SVG ever. See "Vision and bounding boxes" below.)
 
 ### Vision and bounding boxes
 

@@ -3,7 +3,7 @@ title: Ryan Lopopolo
 type: entity
 handle: "@_lopopolo"
 created: 2026-04-13
-updated: 2026-08-12
+updated: 2026-08-27
 depth: 22000
 tags:
   - person
@@ -167,6 +167,7 @@ Ryan's work at OpenAI Frontier points to safe, observable, governable agent depl
 - Scaled throughput from 3.5 → 5-10 PRs/engineer/day
 - Built Symphony orchestration layer in Elixir/BEAM
 - Token consumption: >1B tokens/day (~$2-3k/day at market rates + caching)
+- **harness-engineering GitHub repo** (shared on X, Aug 27, 2026): [github.com/lopopolo/harness-engineering](https://github.com/lopopolo/harness-engineering) — "anthology, field guide, and **agent context bundle** for harness engineering." Explicitly packaged as something you "point your agent at": a reusable context bundle that lets a coding agent ingest the entire harness-engineering discipline (his Feb 2026 OpenAI post "Harness engineering: leveraging Codex in an agent-first world" is the anchor document) in one pass. Notable distribution model: the methodology itself ships as agent-consumable context rather than human-only prose.
 
 ### Stripe
 - Engineering role in payments infrastructure

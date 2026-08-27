@@ -3,6 +3,23 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-27] x-accounts-scan | 6 new posts (11 accounts) — lopopolo "agent context bundle" + Willison smolvm sandbox
+
+- **Context**: x-accounts-scan run 20260827T223044Z; 84 tracked → 11 scanned (request budget 12, cursor 60→71); 6 new posts across 3 accounts; processed cache 280 (TTL 90d).
+- **Primary ingest**:
+  - **Ryan Lopopolo (`@_lopopolo`)** — two back-to-back replies to @hunvreus (Aug 27, 00:15/00:16 UTC) promoting his new [github.com/lopopolo/harness-engineering](https://github.com/lopopolo/harness-engineering) — "anthology, field guide, and **agent context bundle** for harness engineering" ("Point your agent at this") — plus a nudge to his Feb 2026 OpenAI post ["Harness engineering: leveraging Codex in an agent-first world"](https://openai.com/index/harness-engineering/) ("I hope you've read this from back in February"). Evaluated as a group: the pair is a distribution event for the harness-engineering discipline, packaged as agent-consumable context.
+  - **Simon Willison (`@simonw`)** — 3 posts: (1) Aug 20 reply sharing his smolmachines/smolvm untrusted-sandbox research (notes post + simonw/research report); (2) Aug 18 reply re Qwen 3.8 27B ("I got a fantastic pelican out of that one!" — xhigh-overthinking upside confirmation); (3) Aug 20 User Mag archive link on AI-harm stories (no standalone value, misc).
+  - **Addy Osmani (`@addyosmani`)** — Aug 26 share of Lars Faye's ["AI Coding will Prevent Expertise"](https://larsfaye.com/articles/ai-coding-will-prevent-expertise) ("Friction is what builds taste and mastery...") with team-leads/early-career audience targeting.
+- **Files**:
+  - NEW `raw/articles/2026-08-26_larsfaye_ai-coding-will-prevent-expertise.md` (full scrape: Expert Novice paradox, JetBrains "Widening Gap" novice study, UPenn 1,000-student math study −17%, "inverted learning", Friction-First prescription)
+  - `entities/simon-willison.md` — new "Research: smolmachines/smolvm sandbox (Aug 19–20)" section (Fable 5 KVM workaround: no /dev/kvm in Claude Code for web → agent improvised GitHub Actions runner test battery; smolvm 1.8.3 verdict for untrusted Python/JS); updated→2026-08-27
+  - `entities/ryan-lopopolo.md` — Key Work: harness-engineering GitHub repo as "agent context bundle" (Aug 27); updated→2026-08-27
+  - `concepts/harness-engineering.md` — new "Distribution as Agent-Consumable Context" section (lopopolo bundle; AGENTS.md / context-as-artifact pattern); source added; updated→2026-08-27
+  - `concepts/qwen-3-8-27b.md` — xhigh recommendation now cross-referenced with Simon's Aug 18 "fantastic pelican" X confirmation; updated→2026-08-27
+  - `entities/addy-osmani.md` — new "Recent X Shares (Aug 2026)" section (Lars Faye expertise-formation article + Osmani's framing); updated→2026-08-27
+  - `index.md` — 4 entries bumped (qwen-3-8-27b, ryan-lopopolo, harness-engineering; simon-willison entry already carries Aug coverage)
+- **Dedup note**: `raw/articles/simonwillison.net--2026-aug-19-smolmachines-untrusted-sandbox--50e1e147.md` and `...aug-16-qwen-38-27b--e8876b7c.md` already saved by blog-wiki-ingest; `concepts/sandbox.md` already carries the smolvm/Fable-5 KVM entry (Aug 20) — entity-page reference was the only gap. OpenAI harness-engineering post already in raw (openai-harness-engineering-lopopolo.md) and in ryan-lopopolo.md sources.
+
 ## [2026-08-27] dreaming wiki-ingest | 503-upstream saturation, 1 reference enrichment
 
 Upstream dreaming-group (18:05 UTC) failed with `HTTP 503: Local LLM server is busy` - no theme analysis in the cron output file (4,729 lines = prompt + injected checkpoint only), no partial triage committed. This is the 503-upstream variant: checkpoint's candidate list was incomplete, so the **backlog** is the untriaged pool, not just today's sitemap batch.

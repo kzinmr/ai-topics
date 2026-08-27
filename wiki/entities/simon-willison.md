@@ -901,6 +901,12 @@ Two related release notes on August 21, 2026:
 
 Source: [[raw/articles/simonwillison.net--2026-aug-21-llm--25e33af5.md]], [[raw/articles/simonwillison.net--2026-aug-21-llm-openrouter--66e8f01c.md]]
 
+### Research: smolmachines / smolvm as a sandbox for untrusted Python & JS (Aug 19–20, 2026)
+
+Simon published a research report on **smolmachines / smolvm** (smolmachines.com) as a sandbox for **untrusted Python and JavaScript** data transformations. Tasked **Claude Fable 5 in Claude Code for web** to put smolmachines "through its paces as a fast secure sandbox" — the goal: run user-provided tasks with limited RAM/CPU (guarding against "while true"), **no network**, and filesystem access restricted to designated files. Fable 5 quickly hit an environmental wall: its web container is itself a Firecracker guest with **no `/dev/kvm`** (no nested virt), so `smolvm machine run` failed with "kvm not available". The agent then improvised **Plan B on its own**: install smolvm on a GitHub Actions runner (which does expose `/dev/kvm`), run the full test battery there via a temporary workflow on the branch, collect logs, and remove the workflow in the final commit — "a creative solution to the environmental limits," and "another example of Fable being relentlessly proactive." Verdict from the report: smolvm 1.8.3 is well suited for sandboxing untrusted Python/JS using hardware-isolated VMs rather than shared-kernel containers — offline local images, no-network execution, CPU/RAM limits. Simon published both the notes post and the full research report (simonw/research repo). A concrete case for [[concepts/sandbox]]-class microVM isolation (Firecracker/KVM) as the agent-era default for running untrusted code.
+Source: [[raw/articles/simonwillison.net--2026-aug-19-smolmachines-untrusted-sandbox--50e1e147.md]]
+Cross-wikilink: See [[concepts/sandbox]], [[entities/fable]]
+
 ### Conceptual integrity & lines of code — the "10,000 lines/day" argument (Aug 23, 2026)
 
 In a Link post headlined "Conceptual integrity and counting lines of code," Simon developed the clearest version of his **pro-lines-of-code productivity argument** (originally from a "Talking Postgres" episode with Claire Giordano on how AI is changing software development):

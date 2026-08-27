@@ -720,7 +720,7 @@
 - [[entities/ryan-carson]] — Ryan Carson
 - [[entities/ryan-dahl]] — Ryan Dahl
 - [[entities/ryan-greenblatt]] — Ryan Greenblatt — Chief Scientist at Redwood Research; AI safety researcher focused on RSI plausibility and reward hacking (Aug 2026)
-- [[entities/ryan-lopopolo]] — Ryan Lopopolo
+- [[entities/ryan-lopopolo]] — Ryan Lopopolo (harness-engineering GitHub "agent context bundle" shared Aug 27)
 - [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo — Core Ideas & Philosophy
 - [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo — Timeline & Career
 - [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo — Writings & Speaking
@@ -1914,7 +1914,7 @@
 - [[concepts/hanna-hajishirzi]] — hanna-hajishirzi
 - [[concepts/harness-commoditization]] — Harness Commoditization
 - [[concepts/harness-design-long-running-apps]] — Harness Design for Long-Running Apps — Anthropic's Multi-Agent Architecture
-- [[concepts/harness-engineering]] — The practice of building evaluation and constraint systems around LLMs for production reliability. Includes productio...
+- [[concepts/harness-engineering]] — The practice of building evaluation and constraint systems around LLMs for production reliability. Includes productio...; "Distribution as Agent-Consumable Context" — lopopolo harness-engineering GitHub "agent context bundle" (Aug 27)
 - [[concepts/harness-engineering/agent-architecture-decomposition]] — Agent Architecture Decomposition: Model / Runtime / Harness
 - [[concepts/harness-engineering/agent-client-protocol]] — Agent Client Protocol (ACP)
 - [[concepts/harness-engineering/agent-design-patterns]] — Agent Design Patterns
@@ -2566,7 +2566,7 @@
 - [[concepts/qwen]] — Qwen Model Family
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B
 - [[concepts/qwen-3-8]] — Alibaba ~2.4T open-weight MoE; Qwen3.8-Max release (Aug 2026) w/ $2/$6 pricing, oh-my-cli autonomous agent, benchmark data
-- [[concepts/qwen-3-8-27b]] — Qwen 3.8 27B — Dense 27B Apache 2.0 vision-capable LLM; xhigh reasoning default (overthinking), MTP speed boost, coding agent capable; 17GB quantized (Aug 2026)
+- [[concepts/qwen-3-8-27b]] — Qwen 3.8 27B — Dense 27B Apache 2.0 vision-capable LLM; xhigh reasoning default (overthinking), MTP speed boost, coding agent capable; 17GB quantized (Aug 2026); Simon's "fantastic pelican" xhigh confirmation (Aug 18 X)
 - [[concepts/qwen-agentworld]] — Qwen-AgentWorld — Language world models for general agents; 397B MoE model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access (June 24)
 - [[concepts/qwen3-6-27b]] — Qwen3.6-27B
 - [[concepts/rabbithole]] — Rabbithole — Infinite canvas for learning with MCP server for coding agents; by Shlok Khemani
