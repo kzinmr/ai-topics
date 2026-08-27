@@ -105,6 +105,7 @@ She limits internet access as much as possible and keeps the agent segregated on
 
 ## Related
 - [[entities/matthew-honnibal]] — spaCy founder; Episode 3 co-guest; security discussion on HTML smuggling in skills
+- [[entities/chris-fonnesbeck]] — Fellow agentic engineering commentator; shared ai-safety and agent-skills interests
 - [[entities/simon-willison]] — Originator of the "lethal trifecta" security concept
 - [[entities/hermes-agent]] — Hermes agent harness
 - [[entities/hugo-bowne-anderson]] — Vanishing Gradients host; published her course FAQ guest post (Mar 2026)

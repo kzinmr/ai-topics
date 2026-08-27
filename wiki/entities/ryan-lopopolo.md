@@ -283,6 +283,7 @@ Ryan's work at OpenAI Frontier points to safe, observable, governable agent depl
 - **[[entities/simon-willison]]** — Overlapping focus on agentic engineering patterns and practical AI workflows
 - **[[entities/jason-liu]]** — Complementary perspectives: Jason on structured outputs, Ryan on agent orchestration
 - **[[entities/boris-cherny]]** — Both work on agent workflow optimization at scale; Ryan's enterprise focus vs. Boris's CLI focus
+- **[[entities/wes-mckinney]]** — Fellow harness-engineering practitioner; complementary tooling focus
 
 ## Related Concepts
 

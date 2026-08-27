@@ -132,5 +132,6 @@ Theo's direct communication with the Codex team represents a model of developer-
 ## See Also
 
 - [[entities/simon-willison]] — Fellow practitioner-commentator on AI coding agents; both emphasize practical, experience-driven advice
+- [[entities/peter-steinberger]] — Fellow agentic engineering practitioner; shared agentic engineering / vibe-coding discourse
 - [[entities/antirez-com]] — Another developer who has deeply engaged with AI coding tools while maintaining a critical, practical perspective
 - [[concepts/vibe-coding]] — Theo's approach is distinctly on the "agentic engineering" side of the spectrum, not vibe coding

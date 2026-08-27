@@ -235,6 +235,9 @@ This aligns with McKinney's broader philosophy: the **harness** should be minima
 - [[entities/randy-olson]] — Fellow guest, Good Eye Labs CTO
 - [[entities/jesse-vincent]] — Creator of Superpowers skills framework
 - [[entities/hugo-bowne-anderson]] — Host of *Show Us Your Agent Skills*, Vanishing Gradients
+- [[entities/hamel-husain]] — Fellow agentic engineering commentator; shared harness-engineering interests
+- [[entities/ido-pesok]] — Former Cognition engineer; shared agentic engineering / code-review focus
+- [[entities/ryan-lopopolo]] — Fellow harness-engineering practitioner; OpenAI Symphony vs. McKinney's tooling
 
 ## Links
 

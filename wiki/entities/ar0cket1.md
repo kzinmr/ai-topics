@@ -54,6 +54,7 @@ ar0cket1 communicates in a first-person, transparent style — openly sharing ex
 - [[concepts/gepa]] — GEPA: the evolutionary algorithm used for hint optimization
 - [[entities/will-brown]] — Will Brown (@willccbb): credited for inspiration and suggesting GEPA
 - [[entities/nrehiew]] — wh (@nrehiew_): credited for articles and insight
+- [[entities/siyan-zhao]] — Core OPSD/OPD researcher; ar0cket1's OPSD optimization work builds on these techniques
 - [[concepts/post-training/on-policy-distillation]] — OPD: the baseline compared against
 - [[concepts/post-training/sdar-self-distilled-agentic-rl]] — SDAR: downstream application of OPSD for agent training
 

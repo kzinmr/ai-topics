@@ -83,6 +83,7 @@ Built a domain-adapted LLM for JEE Main math achieving **90.2% accuracy (+35.5 p
 
 ## Related Pages
 
+- [[entities/siyan-zhao]] — Core OPSD/OPD researcher; overlapping on-policy distillation and GRPO interests
 - [[concepts/post-training/on-policy-distillation]] — Core OPD concept
 - [[concepts/post-training/on-policy-self-distillation]] — OPSD concept
 - [[concepts/multi-teacher-on-policy-distillation]] — MOPD concept

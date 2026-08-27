@@ -117,6 +117,7 @@ Modem targets the gap between agent-generated code and engineering team workflow
 - [[entities/modem]] — Agentic PM tool (with Leos email agent)
 - [[concepts/agentic-engineering]] — Quality concerns, pacing philosophy
 - [[concepts/harness-engineering]] — Model selection debate (manual vs. automatic)
+- [[entities/ryan-lopopolo]] — Fellow agentic engineering commentator; shared harness-engineering interests
 - [[concepts/slop-fork]] — Legal implications recognized early
 - [[concepts/agent-security]] — Agents finding vulnerabilities
 

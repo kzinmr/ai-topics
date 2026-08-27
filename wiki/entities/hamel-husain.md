@@ -185,6 +185,7 @@ Hamel appeared as a guest on the Season 1 finale of [[entities/hugo-bowne-anders
 -   [[entities/drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design.
 -   [[entities/shreya-shankar]] — Co-creator of AI evals course, collaborator on Applied LLMs guide.
 -   [[concepts/harness-engineering]] — His core engineering philosophy.
+-   [[entities/wes-mckinney]] — Fellow agentic engineering commentator; shared harness-engineering and agent-skills interests.
 -   [[concepts/evaluation/critique-shadowing]] — His signature methodology.
 -   [[concepts/evaluation/llm-as-judge]] — Core evaluation technique he critiques and teaches.
 -   [[entities/ben-clavie]] — Co-author of the "RAG Is Not Dead" series; featured expert in Part 1 on the modern retrieval toolkit.

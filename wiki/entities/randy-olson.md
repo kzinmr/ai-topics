@@ -248,6 +248,7 @@ Olson's visualization of gender distribution across U.S. college majors from 197
 | **[[entities/wes-mckinney\|Wes McKinney]]** | Fellow guest on Show Us Your Agent Skills Ep. 1; generator-evaluator patterns in the agentic software factory |
 | **[[entities/jeremiah-lowin\|Jeremiah Lowin]]** | Fellow guest; skills-as-polite-notes framing |
 | **[[entities/hugo-bowne-anderson\|Hugo Bowne-Anderson]]** | Host of Show Us Your Agent Skills; interviewed Olson on The Agentic Software Factory |
+| **[[entities/chris-fonnesbeck\|Chris Fonnesbeck]]** | Fellow agentic engineering commentator; shared agent-skills interests |
 
 ## See Also
 

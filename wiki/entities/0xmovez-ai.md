@@ -124,6 +124,7 @@ Compared to other AI engineering writers, 0xMovez AI sits in a distinct lane: mo
 - [[entities/hamel-husain]] — Popularized the shift from loop engineering to graph engineering discourse
 - [[entities/peter-steinberger]] — Asked "Are we still talking loops or did we shift to graphs yet?"
 - [[entities/thariq-shihipar]] — Anthropic engineer whose dynamic workflows and HTML-first output essays parallel 0xMovez AI's practical focus
+- [[entities/boris-cherny]] — Claude Code's lead engineer; both work on agent workflow and loop engineering
 - [[concepts/agent-architecture]] — The broader discipline within which graph engineering sits
 - [[concepts/orchestration]] — Multi-agent coordination patterns
 

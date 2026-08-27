@@ -94,6 +94,7 @@ Matthew shared his agent workflow philosophy and security concerns, with deep in
 
 ## Related
 - [[entities/eleanor-berger]] — Episode 3 co-guest; shared security concerns about HTML smuggling in skills
+- [[entities/chris-fonnesbeck]] — Fellow agentic engineering commentator; shared agent-skills interests
 - [[entities/alan-nichol]] — Rasa CTO; Episode 3 co-guest
 - [[entities/nico-gerold]] — Amp engineer; discussed coding agent harness redesign
 - [[entities/vincent-warmerdam]] — Former colleague on spaCy; Episode 3 co-guest

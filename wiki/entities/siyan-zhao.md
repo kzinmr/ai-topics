@@ -89,6 +89,8 @@ Novel approach using inpainting as a mechanism for policy optimization in diffus
 
 ## Related Pages
 
+- [[entities/ar0cket1]] — Researcher optimizing OPSD (hint optimization via GEPA); related OPD/OPSD work
+- [[entities/chinmay-karkar]] — Researcher on on-policy distillation and GRPO; overlapping OPD/OPSD interests
 - [[concepts/post-training/on-policy-self-distillation]] — OPSD technique
 - [[concepts/post-training/sdar-self-distilled-agentic-rl]] — SDAR: OPSD adapted for agent training
 - [[concepts/post-training/on-policy-distillation]] — Broader OPD paradigm

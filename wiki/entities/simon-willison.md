@@ -386,6 +386,7 @@ Source: [[raw/articles/simonwillison.net--2026-jun-14-why-ai-hasnt-replaced-soft
 - [[entities/sankalp-sinha]]
 - [[concepts/structured-outputs]]
 - [[entities/qwen]] — Qwen3.8-Flash-Next local testing on DGX Spark (Aug 2026)
+- [[entities/antirez-com]] — Fellow systems-programming commentator on AI-assisted development (agentic engineering, vibe-coding)
 
 ### Blog articles (unprocessed)
 - [llm-0-32a0-refactor-simon-willison](llm-0-32a0-refactor-simon-willison.md)

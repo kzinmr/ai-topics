@@ -426,6 +426,7 @@ This essay extends antirez's earlier work on AI-assisted programming by providin
 
 - [[concepts/ai-assisted-development]] — antirez's broader position on AI-assisted coding
 - [[concepts/vibe-coding]] — the phenomenon antirez distinguishes "automatic programming" from
+- [[entities/simon-willison]] — Fellow systems-programming commentator on AI-assisted development (agentic engineering, vibe-coding)
 - [Original blog post](http://antirez.com/news/171) — includes YouTube video transcription
 
 ### AI Safety Views (July 2026)

@@ -203,4 +203,5 @@ Steinberger maintains a live blurb at **whatmodelispeterusing.com** — tracking
 - [[entities/simon-willison]] — Fellow opinion leader on agentic engineering
 - [[entities/xeiaso-net]] — Infrastructure engineer; creator of Anubis anti-scraper
 - [[entities/anildash]] — Tech commentator; agentic engineering and coding culture
+- [[entities/theo-browne]] — Fellow agentic engineering practitioner; shared vibe-coding / agentic engineering discourse
 - [[concepts/harness-engineering/agentic-workflows/vibe-coding]] — The coding approach Steinberger evolved into "AI-native development"

@@ -97,6 +97,7 @@ Appeared as a guest on the Season 1 finale of Hugo Bowne-Anderson and Thomas Wie
 - [[entities/hamel-husain]] — Episode 4 fellow panelist, agent skills ecosystem
 - [[entities/doug-turnbull]] — Episode 4 fellow panelist, search relevance expert
 - [[entities/hugo-bowne-anderson]] — Co-host of Show Us Your Agent Skills
+- [[entities/randy-olson]] — Shared agentic engineering interests (agent skills, agent-skills discourse)
 
 ## Related Concepts
 

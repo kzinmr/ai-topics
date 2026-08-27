@@ -360,6 +360,7 @@ Source: [[raw/articles/ycrootaccess.com--p-boris-cherny-building-claude-code--f3
 - 
 - [[entities/ryan-lopopolo]]
 - [[entities/simon-willison]]
+- [[entities/0xmovez-ai]] — Pseudonymous agent-workflow course author; parallel focus on loop/dynamic workflows
 - [[concepts/karpathy]]
 
 ## Sources
