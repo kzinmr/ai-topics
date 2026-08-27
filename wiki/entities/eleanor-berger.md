@@ -108,6 +108,7 @@ She limits internet access as much as possible and keeps the agent segregated on
 - [[entities/chris-fonnesbeck]] — Fellow agentic engineering commentator; shared ai-safety and agent-skills interests
 - [[entities/simon-willison]] — Originator of the "lethal trifecta" security concept
 - [[entities/hermes-agent]] — Hermes agent harness
+- [[entities/hamel-husain]] — Fellow agent-safety commentator; shared ai-safety and coding-agents interests
 - [[entities/hugo-bowne-anderson]] — Vanishing Gradients host; published her course FAQ guest post (Mar 2026)
 - [[entities/isaac-flath]] — Co-creator of Elite AI Assisted Coding course; Vanishing Gradients Ep. 67 co-guest
 - [[concepts/agentic-engineering]] — Agentic engineering patterns

@@ -2,10 +2,10 @@
 
 _Log of all wiki changes. Newest entries at top._
 
-## [2026-08-27] watchdog | Graph cross-links: 14 person-link gaps fixed
+## [2026-08-27] watchdog | Graph cross-links: 15 person-link gaps fixed
 
 ### Changes
-- Added 28 bidirectional wikilinks (14 entity pairs × 2 directions) to close person-link gaps reported by `wiki_graph.py` (score ≥ 10.5, shared ≥ 2 concepts, no direct link):
+- Added 30 bidirectional wikilinks (15 entity pairs × 2 directions) to close person-link gaps reported by `wiki_graph.py` (score ≥ 10.5, shared ≥ 2 concepts, no direct link):
   - chris-fonnesbeck ↔ randy-olson (13.5)
   - 0xmovez-ai ↔ boris-cherny (12.0)
   - ar0cket1 ↔ siyan-zhao (12.0)
@@ -13,6 +13,7 @@ _Log of all wiki changes. Newest entries at top._
   - hamel-husain ↔ wes-mckinney (12.0)
   - ido-pesok ↔ wes-mckinney (12.0)
   - ryan-lopopolo ↔ wes-mckinney (12.0)
+  - eleanor-berger ↔ hamel-husain (12.0)
   - eleanor-berger ↔ chris-fonnesbeck (10.5)
   - peter-steinberger ↔ theo-browne (11.1)
   - addy-osmani ↔ elvis-sun (10.5)
@@ -20,6 +21,7 @@ _Log of all wiki changes. Newest entries at top._
   - ben-vinegar ↔ ryan-lopopolo (10.5)
   - chinmay-karkar ↔ siyan-zhao (10.5)
 - Files touched: 19 entity pages (links inserted into Related / Related People / Cross-References / See Also sections)
+- Post-fix verification: `wiki_graph.py --format json` gap_recommendations now 0
 - No new pages created; no index.md changes (all entities already indexed)
 - Pipeline note: blog/newsletter triage chains failed today on local LLM 503/OOM (infra issue, not wiki data); no wiki changes resulted from those failures
 
