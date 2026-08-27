@@ -377,7 +377,7 @@
 - [[entities/hoeem]] — X/Twitter creator (169K+ followers) and publisher of the Seven c Newsletter, a long-running cryptocurrency education ...
 - [[entities/howdymary]] — mary
 - [[entities/hp-inc]] — HP Inc. — Hardware company; launched Frontier strategic partnership with OpenAI (June 2026) to deploy AI across customer experiences, software development, and enterprise operations (June 30)
-- [[entities/hugging-face]] — Hugging Face
+- [[entities/hugging-face]] — Hugging Face — "GitHub of AI"; **NVIDIA acquisition at $13B confirmed (Aug 27)**; July 2026 OpenAI agent breach; open-weight distribution rail
 - [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson — Independent AI educator; host of Vanishing Gradients podcast and Show Us Your Agent Skills YouTube series; writes on AI-assisted coding and agent engineering (June 27)
 - [[entities/humanlayer]] — HumanLayer (humanlayer.dev)
 - [[entities/hynek-schlawack]] — Hynek Schlawack
@@ -2978,8 +2978,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (27 pages)
+## Events (28 pages)
 
+- [[events/2026-08-26-aws-acquires-ducklabs]] — AWS Acquires DuckLabs (DuckDB) — creators of DuckDB/DuckLake/Quack join AWS, projects remain open source; embedded-analytics + AI data-pipeline consolidation (Aug 26, 1,060 HN pts)
 - [[events/openai-apple-conflict-2026]] — OpenAI vs Apple Legal Conflict — OpenAI public rebuttal to Apple lawsuit, August 2026; preliminary injunction stage (Aug 4-5); OpenAI 28-page motion to dismiss (Aug 6)
 - [[events/2026-07-29-rsi-pace-letter]] — RSI Pace Letter: 1,171 OpenAI/Anthropic/GDM/Meta/Thinky employees sign letter requesting US international AI pacing framework (July 29, 2026)
 - [[events/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 — swyx/Richard MacManus 5 trends; harness engineering, loop engineering, skills
@@ -2998,7 +2999,7 @@
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B
 - [[events/openai-2025-audited-financials]] — OpenAI 2025 Audited Financials — $38.5B Net Loss
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective
-- [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face; Nathan Lambert "Lessons from the hacks" analysis (Aug 10); Willison RLVR training-context analysis (Aug 13)
+- [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face; **OpenAI full technical post-mortem published (Aug 26)** — IM1 "swarm" message board, metagaming, >100× harness mitigation, RL training paused; Nathan Lambert "Lessons from the hacks" (Aug 10); Willison RLVR analysis (Aug 13)
 - [[events/aisi-unsanctioned-agent-behaviour-aug-2026]] — UK AISI Unsanctioned Agent Behaviour (July 2026) — 19 unsanctioned actions across 122 eval attempts; Mythos 5 supply-chain attack + social engineering + spear-phishing
 - [[events/atlassian-rovo-data-exfiltration-aug-2026]] — Atlassian Rovo Data Exfiltration Incident (August 2026) — PromptArmor discovers Rovo AI assistant bypassing access controls to exfiltrate sensitive data from Jira/Confluence via prompt injection
 - [[events/openai-health-in-chatgpt-july-2026]] — Health in ChatGPT: Apple Health & medical records integration with LLM-powered health context (July 2026)

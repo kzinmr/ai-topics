@@ -3,7 +3,7 @@ title: Hugging Face
 type: entity
 aliases: [HuggingFace, HF]
 created: 2026-04-24
-updated: 2026-08-25
+updated: 2026-08-27
 status: active
 tags:
   - company
@@ -11,6 +11,7 @@ tags:
   - open-source
   - model
   - nlp
+  - nvidia
 url: https://huggingface.co/
 linkedin: https://www.linkedin.com/company/hugging-face
 twitter: https://x.com/huggingface
@@ -25,6 +26,7 @@ sources:
   - https://huggingface.co/blog/hf-cli-for-agents
   - https://huggingface.co/blog/hf-skills-training
   - https://github.com/huggingface/skills
+  - https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8
 ---
 
 # Hugging Face
@@ -146,9 +148,11 @@ In June 2026, Hugging Face published details of the [[concepts/coding-agents/hf-
 
 The [[concepts/huggingface-skills|Hugging Face Skills]] repository ([github.com/huggingface/skills](https://github.com/huggingface/skills)) provides 16 standardized agent skill definitions for AI/ML tasks — model training, dataset management, evaluation, deployment. Skills follow the open [Agent Skills](https://agentskills.io) standard and are compatible with Claude Code, Codex, Gemini CLI, and Cursor. The flagship `hf-llm-trainer` skill enables coding agents to handle the full model fine-tuning lifecycle (SFT, DPO, GRPO) through natural language, submitting jobs to HF Jobs cloud GPU infrastructure with Trackio monitoring. Skills are also available via Cursor Marketplace and Codex Plugins Directory.
 
-## Exit / Sale at $13B+ (Aug 2026)
+## Exit / Acquisition by NVIDIA at $13B+ (Aug 2026)
 
-In early August 2026, Business Insider reported that Hugging Face has **hired a bank and is exploring a sale at $13 billion or more** — nearly triple its last $4.5B valuation (Series D, Aug 2023, led by Salesforce with Nvidia, Google, Amazon, Intel). Talks are early and **no bidder is named**. The platform hosts **3M+ models** and **1M+ datasets** and serves roughly half the Fortune 500.
+In early August 2026, Business Insider reported that Hugging Face had **hired a bank and was exploring a sale at $13 billion or more** — nearly triple its last $4.5B valuation (Series D, Aug 2023, led by Salesforce with Nvidia, Google, Amazon, Intel). The platform hosts **3M+ models** and **1M+ datasets** and serves roughly half the Fortune 500.
+
+**Update — Acquisition confirmed (Aug 27, 2026):** The talks culminated in a **deal**: Business Insider headlined **"Nvidia agrees to acquire Hugging Face for $13B"** ([report](https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8)), the #1 story on Hacker News that day (1,273 pts / 562 comments — [HN](https://news.ycombinator.com/item?id=49458161)). This makes NVIDIA — which notably **rejected/declined a $500M minority investment in 2023 to keep HF independent** — the acquirer of the "GitHub of AI," folding the open-source distribution rail into the dominant AI-hardware stack. The closing of the deal is the most significant structural shift in the open-source AI ecosystem to date. (Note: Business Insider's running headline reads "in talks to acquire"; the $13B figure is the consistent reported value. Treat final terms as pending definitive agreement until a formal announcement is published.)
 
 **Why it matters:**
 - Whoever owns Hugging Face owns the **distribution rail of open-source AI** — just as open weights crossed a majority of token share on platforms like Vercel.
