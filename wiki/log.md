@@ -2,6 +2,26 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-26] skeleton-enrich-daily | L2→L3: meridian-labs, agi-bot, fourier-intelligence, xpeng, quarq-labs (+ cross-refs)
+
+**Skeleton backlog**: 0 pages with `status: skeleton` remain. Continued established L2→L3 pattern — enriched the thinnest non-redirect entity pages (all <2KB before this run; git history check found no richer versions for any of them).
+
+**Enriched (5 pages)**:
+- `entities/meridian-labs.md` — biggest win: web research revealed Meridian Labs (meridianlabs.ai) is the 501(c)(3) nonprofit **behind the Inspect AI ecosystem** (Inspect AI, Scout, Petri, Flow), used by UK AISI, US CAISI, EU AI Office, Japan/Korea AISI, METR, Apollo, Epoch, SecureBio, Redwood, RAND. Full founding team (J.J. Allaire, Charles Teague, Eric Patey, Alexandra Abbas, Ransom Richardson, Kai Fronsdal, Matthew Brandly), project table, Petri transfer significance, timeline. Sources: meridianlabs.ai/about + /team (scraped 2026-08-26).
+- `entities/agi-bot.md` — Wikipedia enrichment: founded Feb 2023 by ex-Huawei engineers Deng Taihua + Peng Zhihui; investors (HongShan, Hillhouse, BYD); full product line (RAISE A1, Yuanzheng A2/A2-Max/A2-W, Lingxi X1, X2, Genie G1/G2, C5, OmniHand); software (GO-1 embodied foundation model, Lingqu OS, Genie Envisioner, LinkCraft, AgiBot World, AIDEA); A2 Guinness 106.286 km walk; mass production timeline.
+- `entities/fourier-intelligence.md` — Wikipedia enrichment: founded 2015 by Alex Gu (SJTU, ex-NI); rehab-robotics origin (X1 exoskeleton, EXOPS platform, 200+ hospitals via RHK acquisition); GR-1 (2019 dev start, 2022 walking, WAIC 2023 unveil) → GR-2 (53 DoF, 63 kg) → GR-3 series; IDG Capital + Saudi Aramco backing.
+- `entities/xpeng.md` — Wikipedia enrichment: "global embodied intelligence" pivot (2025 AI Day); IRON humanoid (5'8", 70 kg, 200 DoF, Nov 2024; mass production end-2026 under He Xiaopeng per Reuters June 2026); PX5 quadruped; AeroHT flying vehicle; VLA 2.0 driving (rolled out Mar 2026) + robotaxi mass production May 2026; Turing SoC (750 TOPS, 30B param models).
+- `entities/quarq-labs.md` — ecosystem-position enrichment: new "Scaffold-Over-Size Thesis" section with comparison table placing Quarq's LongCoT result alongside raw-works (Weitekamp, dspy.RLM SOTA) and Alex Zhang (RLM + tips 65.6%); X handle @quarqlabs; frontmatter tags/sources/related updated.
+
+**Cross-references added**:
+- `entities/inspect-ai.md` — new "Related" section linking to meridian-labs + jj-allaire; `updated:` → 2026-08-26
+- `entities/jj-allaire.md` — timeline rows (2025 co-founded Meridian; 2026 stewards + US CAISI visiting researcher) + related-entity link; `updated:` → 2026-08-26
+- `entities/clefourrier.md` — "Sub-pages" subsection in Related linking all 5 clefourrier--* sub-pages (key-quotes/core-ideas/timeline/influence/sources) that were previously orphaned (no inbound links from main page)
+
+**index.md**: 5 description updates (agi-bot, fourier-intelligence, meridian-labs, quarq-labs, xpeng). No new entries (all slugs pre-existed). No SCHEMA.md tag changes needed (tags used: nonprofit, organization, ai-safety, robotics, embodied-ai, humanoid-robot, autonomous-driving, research-lab, china, company, lab, open-source, context-management, safety, evaluation, agent-safety — all verified in taxonomy).
+
+**Not enriched (deliberate)**: doug-turnbull-blog.md (sub-page; parent doug-turnbull.md already 25.6KB), kyle-corbett.md (redirect; canonical kyle-corbitt.md is thin but has no new source material available this run), xiaomi.md (thin but xiaomi-mimo.md already covers the AI angle; company page has no new material).
+
 
 ## [2026-08-26] slack-hot-posts late-night 01:30 JST | Jalapeño demand-side cross-reference enrichment
 

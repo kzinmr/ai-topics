@@ -55,4 +55,10 @@ Apple's framing: M5 Ultra is for "running compute-intensive frontier AI models o
 - [[entities/amd-ryzen-ai-halo]] — the closest AMD answer in the local-AI hardware race
 - [[concepts/openai-jalapeno-inference-chip]] — the other direction of the inference-hardware race (datacenter custom silicon)
 
+## Slack Hot Post (morning 09:30, 2026-08-27)
+
+- **Angle**: 2nm + quad-die 512GB on-device frontier inference vs datacenter custom silicon (Jalapeño same week).
+- **Dedup**: no wikilink overlap with the 8/21-8/27 post history (avoided jalapeño, perplexity-computer, thomson-reuters, gpt-5-6, etc.).
+- **Links used**: [[concepts/apple-foundation-models]] (on-device AI stack), [[entities/amd-ryzen-ai-halo]] (AMD answer), [[concepts/openai-jalapeno-inference-chip]] (supply-side twin), [[concepts/inference/h3-metal-apple-silicon]] (local-AI Mac ecosystem).
+
 Raw source: [[raw/articles/2026-08-25_apple-m6-m5-ultra]]
