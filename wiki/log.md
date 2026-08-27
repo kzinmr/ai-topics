@@ -2,6 +2,35 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-08-27] dreaming wiki-ingest | 503-upstream saturation, 1 reference enrichment
+
+Upstream dreaming-group (18:05 UTC) failed with `HTTP 503: Local LLM server is busy` - no theme analysis in the cron output file (4,729 lines = prompt + injected checkpoint only), no partial triage committed. This is the 503-upstream variant: checkpoint's candidate list was incomplete, so the **backlog** is the untriaged pool, not just today's sitemap batch.
+
+**Duplicate check (Step 0):** Today's pipelines were dense - trending-topics (OpenAI HF incident post-mortem, NVIDIA $13B Hugging Face acquisition, AWS acquires DuckLabs), active-crawl (GLM-5.3-Flash, WebMCP, Gemini 3.5 Transcribe, VM Containment, OpenExecutive), blog-ingest (Qwen3.8-Flash-Next, Gates AI-plan essay, John Cook code-quality, ChatGPT for Teachers), slack-hot-posts (Apple M6/M5 Ultra on-device inference, Jalapeno). No re-processing.
+
+**Pattern E filesystem scan:** `check_archive_index_absence.py` probe found **103 recent raw articles never triaged** (absent from `archive_index.json`, 2,803 URLs). Decisive dedup signal confirmed a saturation day - the 06:00 sitemap batch (Glean, Harvey, Hebbia, Pinecone, ElevenLabs, Fireworks, Factory) and individual-blog articles were untriaged because the upstream LLM was busy.
+
+**Enrichment (1 genuine gap):**
+- `entities/fireworks-ai.md` - added "Harvey Tenet - Post-Training Kimi K3 for Long-Horizon Legal Work (August 2026)" section. Fireworks × Harvey post-trained a Kimi K3 base (async RL on the Training API) into Harvey Tenet for long-horizon legal work. Concrete results the Fireworks page lacked: LAB all-pass 19.7% vs 10.8% base K3, LAB Contracts 11.3% vs 9.3% (SOTA on Contracts, 2nd on LAB), Mercor APEX Corporate Law 58.8% -> 74.0%, Crosby Redline 49.3% -> 55.5% (cross-harness transfer), $5.92 vs $5.62 per LAB task (flat cost, ~2x tasks). Ties the June "Frontier Training Infrastructure" numerics/batch-invariance section to a real 2.8T open-weight vertical application. Harvey-side methodology (GSPO + rubric LLM-as-judge) already in `entities/harvey.md` L436-447 (not duplicated).
+
+**Verification table:**
+
+| Candidate | Status | Details |
+|-----------|--------|---------|
+| Fireworks x Harvey Tenet (K3 post-training) | Enriched | entities/fireworks-ai.md - application section absent; Harvey methodology already in entities/harvey.md L436-447 |
+| OpenAI HF post-mortem + NVIDIA $13B HF + AWS/DuckLabs | Already covered | events/openai-huggingface-incident-july-2026, entities/hugging-face, events/2026-08-26-aws-acquires-ducklabs (trending-topics today) |
+| GLM-5.3-Flash / WebMCP / Gemini 3.5 Transcribe / VM Containment / OpenExecutive | Already covered | active-crawl today (4 concepts + 1 entity new) |
+| Qwen3.8-Flash-Next / Gates / John Cook / ChatGPT Teachers | Already covered | blog-ingest today |
+| Pinecone "One Year In" (Nexus >90% tokens / 30x) | Already covered | entities/pinecone.md L54-106 Nexus token-reduction benchmarks |
+| Harvey "Memory is Here" / Hebbia Matrix 2.0 / Glean x4 / ElevenLabs ADR | Skip | marketing/nav-chrome or no new technical depth; memory already in entities/harvey.md L424 |
+| tedium / lwn / dfarq / shkspr / devblogs / johndcook / 9to5mac | Skip | non-AI general tech |
+
+**Archive:** `archive_triage.py dreaming --keep-reference` - 1 URL newly archived (Fireworks x Harvey Tenet), total_archive_urls 2803 -> 2804. 2 URL-less batch skips written to dated JSON (not URL-indexed, expected).
+
+**Pages:** 1 enriched (fireworks-ai.md), 0 created. Takes=0.
+
+
 ## [2026-08-27] watchdog | Graph cross-links: 15 person-link gaps fixed
 
 ### Changes

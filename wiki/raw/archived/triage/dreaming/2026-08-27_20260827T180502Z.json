@@ -1,0 +1,48 @@
+{
+  "archived_at": "2026-08-27T18:38:08.519753+00:00",
+  "triage_run_id": "20260827T180502Z",
+  "source": "dreaming",
+  "summary_ja": "503-upstream saturation (checkpoint: 0 collected articles, 195 recent raw; dreaming-group LLM HTTP 503 busy - no analysis in output file, no partial triage committed). archive-index-absence probe: 103 recent raw articles never triaged. Today's pipelines already dense (trending-topics: OpenAI HF post-mortem + NVIDIA $13B HF acquisition + AWS/DuckLabs; active-crawl: GLM-5.3-Flash/WebMCP/Gemini 3.5 Transcribe/VM Containment/OpenExecutive; blog-ingest: Qwen3.8-Flash-Next/Gates/John Cook/ChatGPT Teachers; slack: Apple M6-M5 Ultra/Jalapeno). 1 genuine reference enrichment from 06:00 sitemap batch: Fireworks x Harvey Tenet (K3 base, async RL) long-horizon legal post-training -> entities/fireworks-ai.md (K3 x Harvey application section was absent; Harvey-side GSPO methodology already in entities/harvey.md). 2 batch skips (already-covered-today + marketing/chrome).",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-fireworks-harvey-tenet-k3",
+      "source": "dreaming",
+      "source_name": "dreaming Pattern E (filesystem scan, 503-upstream variant)",
+      "title": "Post-training Kimi K3 with Harvey for long-horizon legal work",
+      "url": "https://fireworks.ai/blog/post-training-kimi-k3-with-harvey-for-long-horizon-legal-work",
+      "raw_path": "~/wiki/raw/articles/2026-08-27_fireworks-ai_post-training-kimi-k3-with-harvey-for-long-horizon-legal-work.md",
+      "recommended_action": "reference",
+      "reason_ja": "Fireworks-side technical detail for Harvey Tenet (Kimi K3 base, async RL on Training API). entities/fireworks-ai.md had the June train/infer-numerics + batch-invariance infra section but NO K3 x Harvey Tenet application section with concrete long-horizon legal results (LAB all-pass 19.7% vs 10.8%, Apex 58.8->74.0, Redline cross-harness transfer, $5.92 vs $5.62/task). Genuine gap - enriched. Harvey-side methodology (GSPO/LLM-judge) already in entities/harvey.md L436-447.",
+      "stars": 4,
+      "candidate_wiki_path": "entities/fireworks-ai.md",
+      "body_excerpt": "",
+      "enrichment": "entities/fireworks-ai.md: added 'Harvey Tenet - Post-Training Kimi K3 for Long-Horizon Legal Work (August 2026)' section + source; updated -> 2026-08-27"
+    },
+    {
+      "item_id": "dreaming-skip-already-covered-today-batch",
+      "source": "dreaming",
+      "source_name": "dreaming Pattern E (filesystem scan, 503-upstream variant)",
+      "title": "Batch skip: already covered by today's pipelines (08-27)",
+      "url": "",
+      "raw_path": "~//wiki/raw/articles/",
+      "recommended_action": "skip",
+      "reason_ja": "Already processed today by other jobs: (a) trending-topics 08-27 - OpenAI Hugging Face incident post-mortem (events/openai-huggingface-incident-july-2026 + entities/hugging-face NVIDIA $13B acquisition), AWS acquires DuckLabs (events/2026-08-26-aws-acquires-ducklabs new); (b) active-crawl 08-27 - GLM-5.3-Flash, WebMCP, Gemini 3.5 Transcribe, VM Containment, OpenExecutive (4 concepts + 1 entity new); (c) blog-ingest 08-27 - Qwen3.8-Flash-Next (simonwillison.net--2026-aug-26-qwen38-flash-next), Gates AI-plan essay endorsement, John Cook AI-code-quality critique, ChatGPT for Teachers expansion; (d) slack-hot-posts 08-27 - Apple M6/M5 Ultra on-device frontier inference, Jalapeno demand-side cross-reference; (e) user-request 08-27 - LangChain WikiBench (concepts/openwiki). simonwillison.net qwen38-flash-next + garymarcus gates-essay + openai chatgpt-for-teachers + 9to5mac iphone-18-foldable all consumed by above.",
+      "stars": 1,
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-marketing-chrome-batch",
+      "source": "dreaming",
+      "source_name": "dreaming Pattern E (filesystem scan, 503-upstream variant)",
+      "title": "Batch skip: marketing / nav-chrome / already-covered sitemap articles (08-27 06:00 batch)",
+      "url": "",
+      "raw_path": "~//wiki/raw/articles/",
+      "recommended_action": "skip",
+      "reason_ja": "Low standalone value or already covered: (a) harvey memory-is-here-harvey-personalized - Harvey II persistent cross-tool memory already in entities/harvey.md L424 (Persistent cross-tool memory pillar), nav chrome; (b) harvey legal-ai-adoption-barriers - marketing/ops content, ~50 lines nav chrome, no new technical depth; (c) hebbia introducing-matrix-2-0 - product announcement (diligence workflow), no AI/LLM technical depth; (d) pinecone one-year-in-just-getting-started - marketing/financial (retention 130%, margins, Edo stepping back); Nexus token-reduction claims (>90% tokens, 30x faster) already in entities/pinecone.md L54-106 Nexus sections; (e) glean go-cost-governance / glean-transform / glean-agents-go / glean partner-award-winners - partner/enterprise marketing, entities/glean.md covers; (f) elevenlabs what-is-adr-in-film - film production guide, no AI/LLM depth (distinct from Aug 26 diarization guide already enriched); (g) tedium self-hosting-third-place-strategy - non-AI; (h) lwn.net x2, dfarq digg-v4/linux-kernel-1991, shkspr gadget-review/theatre, devblogs oldnewthing, johndcook junk-solutions/ultraspherical - non-AI general tech.",
+      "stars": 1,
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

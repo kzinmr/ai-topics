@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-08-15
+updated: 2026-08-27
 tags:
   - entity
   - company
@@ -39,6 +39,7 @@ sources:
   - raw/articles/2026-05-10_fireworks-ai_constrained-generation-with-reasoning.md
   - raw/articles/2026-08-08_fireworks-ai_voyage-ai-models-now-on-fireworks.md
   - raw/articles/2026-08-12_fireworks-ai_meta-muse-glimmer.md
+  - raw/articles/2026-08-27_fireworks-ai_post-training-kimi-k3-with-harvey-for-long-horizon-legal-work.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -346,6 +347,29 @@ With importance-sampling and clipping (the industry crutch), ~45% of every batch
 - **Co-located**: trainer and deployment on managed infrastructure for fast weight sync
 
 **Sources:** [[raw/articles/2026-06-25_fireworks-ai_frontier-lab-training-infrastructure-as-a-service]]
+
+## Harvey Tenet — Post-Training Kimi K3 for Long-Horizon Legal Work (August 2026)
+
+A concrete production application of the frontier training infrastructure above: [[entities/harvey|Harvey]] partnered with Fireworks to post-train a **Kimi K3** base (async RL on the Fireworks Training API) into **Harvey Tenet**, its first model built specifically for long-horizon legal work. This is the first time the train/infer-numerics + batch-invariance stack (documented for GLM 5.2 in June) has been applied to a 2.8T open-weight model for a vertical domain.
+
+**Performance (Legal Agent Benchmark, all-pass — every rubric criterion must clear):**
+- Tenet **19.7%** vs base Kimi K3 **10.8%** (+8.9 pp) — almost twice as many held-out LAB tasks completed
+- LAB Contracts **11.3%** vs **9.3%** (+2 pp) — state-of-the-art on LAB Contracts, second on LAB overall
+- Gains grounded in broad criteria improvements around answer detail and citation quality
+
+**Generalization (benchmarks never seen in training):**
+- Mercor APEX Agents (Corporate Law): **58.8% → 74.0%**
+- Crosby Redline Bench: **49.3% → 55.5%** — and Redline ran in a *different harness* than the training harness, so the learned behavior transferred across both benchmarks and harnesses
+
+**Minimal regression:** Tenet holds base K3's performance on knowledge/parametric benchmarks (LegalBench, CUAD, MAUD, Mercor APEX-v1) — the agentic gains did not erode broader legal knowledge.
+
+**Cost:** **$5.92 per LAB task** vs **$5.62** for base Kimi K3 — effectively flat while completing nearly twice as many tasks. Two enablers: open-weight per-token pricing, and the reward shaping that incentivizes efficient tool use / reasoning. (Baselines from the Vals LAB leaderboard.)
+
+**Infrastructure behind the run:** Tens of thousands of long-horizon rollouts per checkpoint — each running past 50 turns and 100,000 generated tokens in a live sandbox. Two platform properties matter most: (1) **numeric alignment** — training and serving share the same numerics, so the post-trained checkpoint is the one that runs; divergence would surface as token clipping and past a threshold, reward collapse mid-run. (2) **Batch invariance** — identical results regardless of co-batch traffic, via deterministic attention-reduction ordering, sparse-attention token selection, expert-matmul kernel selection, router tie-breaking, and cross-GPU all-reduce. A promising checkpoint can be promoted and validated *while training continues*, then moved to production without leaving the platform.
+
+A detailed technical write-up of the training methodology (reward design, async RL setup, long-horizon rollout lessons) was announced to follow. This complements Harvey's own post-training methodology write-up (GSPO + rubric-based LLM-as-judge) covered on the [[entities/harvey|Harvey]] entity page.
+
+**Source:** [[raw/articles/2026-08-27_fireworks-ai_post-training-kimi-k3-with-harvey-for-long-horizon-legal-work]]
 
 ### GLM 5.2 Fast (June 2026)
 
