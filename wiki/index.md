@@ -18,7 +18,7 @@
 - [[entities/agentcraft]] — AgentCraft
 - [[entities/agentmemory]] — agentmemory
 - [[entities/agentsview]] — AgentsView
-- [[entities/agi-bot]] — AgiBot
+- [[entities/agi-bot]] — AgiBot — Shanghai humanoid robotics co. (founded 2023, ex-Huawei); A2/G2 robots, 5,168 units shipped 2025, GO-1 embodied foundation model
 - [[entities/agibot-10000-units]] — Agibot 10000 Units
 - [[entities/agno]] — Agno — Open-source agent platform SDK and runtime (AgentOS); model/framework/cloud agnostic; multi-user sessions, RBAC, tracing (June 29)
 - [[entities/agreement-bug]] — Agreement is a Bug — NYK Builderz "structured disagreement" framework for Claude Code subagents; 11 parallel perspectives to surface blind spots
@@ -246,7 +246,7 @@
 - [[entities/drew-breunig--core-ideas]] — Drew Breunig — Core Ideas & Philosophy
 - [[entities/drew-breunig--projects]] — Drew Breunig — Key Projects
 - [[entities/drew-breunig--timeline]] — Drew Breunig — Timeline & Career History
-- [[entities/drew-breunig--writings]] — Drew Breunig  Writings
+- [[entities/drew-breunig--writings]] — Drew Breunig Writings
 - [[entities/drmaciver]] — David R. MacIver (DRMacIver)
 - [[entities/droid]] — Droid (Factory) — enterprise agent-native dev platform; Software Factory vision, Router, Shield 2.0, Deferred Context Engine (Aug 2026)
 - [[entities/dsprrr]] — dsprrr
@@ -314,7 +314,7 @@
 - [[entities/folk-app]] — folk
 - [[entities/forrest-chang]] — Forrest Chang
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta publishe...
-- [[entities/fourier-intelligence]] — Fourier Intelligence
+- [[entities/fourier-intelligence]] — Fourier — Shanghai robotics co. (founded 2015, Alex Gu); rehab exoskeletons → GR-1/GR-2/GR-3 humanoids
 - [[entities/fred-schott]] — Fred K. Schott (@FredKSchott)
 - [[entities/future-of-humanity-institute]] — Future of Humanity Institute (FHI)
 - [[entities/galileo-eval-engineer]] — Galileo Eval Engineer
@@ -530,7 +530,7 @@
 - [[entities/mercor]] — Mercor
 - [[entities/merge]] — Merge
 - [[entities/merge-dev]] — Merge.dev (Merge Agent Handler)
-- [[entities/meridian-labs]] — Meridian Labs
+- [[entities/meridian-labs]] — Meridian Labs — 501(c)(3) nonprofit behind Inspect AI (UK AISI eval framework) + Petri alignment auditing (donated by Anthropic May 2026)
 - [[entities/meta]] — Meta
 - [[entities/metronome]] — Metronome
 - [[entities/metR]] — METR (Model Evaluation & Threat Research) — independent AI capability/safety lab; 2026-08 differential-acceleration study (cyber >> math > optimization)
@@ -676,7 +676,7 @@
 - [[entities/promptfoo]] — Promptfoo
 - [[entities/qdrant]] — Qdrant
 - [[entities/qiaochu-yuan]] — QC (Qiaochu Yuan) is a mathematician, philosopher, and writer. Former MIRI researcher, PhD student in mathematics at ...
-- [[entities/quarq-labs]] — Quarq Labs
+- [[entities/quarq-labs]] — Quarq Labs — research lab (LongCoT SOTA with Qwen3.5-9B + scaffold, Apr 2026); scaffold-over-size thesis alongside raw-works/RLM and Alex Zhang
 - [[entities/qwen]] — Qwen — Alibaba's open-weight LLM family (Tongyi Qianwen); dense + MoE from 0.5B to ~2.4T (Qwen3.8-Max), Apache 2.0, agentic 2026 pivot (3.7/3.8 Max, MM-Plugins, AgentWorld), 234M app users
 - [[entities/qwen-3-7-max]] — Qwen 3.7 Max
 - [[entities/qwen-mm-plugins]] — Qwen-MM-Plugins — Alibaba open-source multimodal plugin system for agent harnesses; 6 capabilities (vision, video memory, video edit, Blender 3D, FreeCAD, edu-agent); supports Claude Code, Codex, Qoder, OpenClaw, Qwen Code, Gemini CLI (July 2026)
@@ -833,7 +833,7 @@
 - [[entities/thoughtful-lab]] — Thoughtful Lab
 - [[entities/tilert]] — TileRT; SemiAnalysis InferenceX benchmark: 340 tok/s/user on 8×B200 (1.9x GB300 NVL72), 494.2 FP8 1k/1k (3.6x) (Aug 10)
 - [[entities/tim-davis]] — Tim Davis
-- [[entities/tim-dettmers]] — Researcher at the University of Washington (NLP/ML), creator of bitsandbytes, LLM.int8(), and co-creator of QLoRA. Pi...
+- [[entities/tim-dettmers]] — Researcher at the University of Washington (NLP/ML), creator of bitsandbytes, LLM.int8, and co-creator of QLoRA. Pi...
 - [[entities/tim-oreilly]] — Tim O'Reilly
 - [[entities/tim-sh]] — Tim Sherratt — historian, hacker, GLAM Workbench creator
 - [[entities/tim-sherratt]] — Tim Sherratt (redirect → [[entities/tim-sh]])
@@ -894,7 +894,7 @@
 - [[entities/xinming-tu]] — Xinming Tu
 - [[entities/xiuyu-li]] — Xiuyu Li
 - [[entities/xjdr]] — xjdr (Jeff Rose)
-- [[entities/xpeng]] — XPeng
+- [[entities/xpeng]] — XPeng — Chinese EV maker pivoting to "global embodied intelligence": IRON humanoid (2024, 200 DoF, mass production end-2026), PX5 quadruped, VLA 2.0 driving, Turing AI chip
 - [[entities/yacine-mahdid]] — Yacine Mahdid
 - [[entities/yadl]] — YADL (Yet Another Data Lake)
 - [[entities/yan5xu]] — AI researcher and former engineer at Manus AI and Monica. Known for deep analyses of AI agent infrastructure, CLI des...
@@ -917,7 +917,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2015 pages)
+## Concepts (2016 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -2409,7 +2409,7 @@
 - [[concepts/openlayer-multi-agent-architecture-2026]] — openlayer-multi-agent-architecture-2026
 - [[concepts/openrouter-state-of-ai-2025]] — OpenRouter State of AI 2025
 - [[concepts/opensource-connections]] — OpenSource Connections
-- [[concepts/openwiki]] — OpenWiki — LangChain's open-source agent/CLI for generating and maintaining codebase documentation wikis; wiki-as-context pattern for coding agents (July 2)
+- [[concepts/openwiki]] — OpenWiki — LangChain's open-source agent/CLI for generating and maintaining codebase documentation wikis; wiki-as-context pattern for coding agents (July 2); WikiBench evaluation (Aug 26)
 - [[concepts/operating-systems]] — Operating Systems
 - [[concepts/opus-data-selection]] — OPUS (Optimizer-induced Projected Utility Selection)
 - [[concepts/orchestration-tax]] — The structural cost of coordinating multiple AI agents through a single human bottleneck. Coined by Richard Seroter a...
@@ -2927,6 +2927,7 @@
 - [[concepts/zaya1-74b-preview]] — ZAYA1-74B-Preview
 - [[concepts/zaya1-8b]] — ZAYA1-8B
 - [[concepts/zaya1-vl-8b]] — ZAYA1-VL-8B
+- [[concepts/z-ai-ox-alpha]] — Z.ai Ox Alpha — stealth open-weight GLM-series model confirmed Aug 26, 2026 (Bloomberg); will release weights; reportedly rivals DeepSeek
 - [[concepts/zephyr]] — Zephyr
 - [[concepts/zero-disk-architecture]] — Zero Disk Architecture
 - [[concepts/zero-trust-agentic-ai]] — Zero Trust for Agentic AI

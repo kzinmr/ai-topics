@@ -231,6 +231,8 @@ The cross-domain transfer result is particularly notable: a model fine-tuned *on
 
 In July 2026, **Harrison Chase** (@hwchase17) laid out the current LangChain ecosystem map around three pillars — **LangGraph**, **DeepAgents**, and **LangSmith** — emphasizing **standardized internal evals** and **Harbor-based task conversion** (see [[concepts/multi-agents/agent-team-swarm]]). The throughline: evaluation infrastructure is shifting from ad hoc notebooks to reproducible, organization-owned systems, making [[concepts/llm-evaluation]] a first-class, standardized component of agent engineering rather than an afterthought.
 
+In August 2026 LangChain published **WikiBench** (see [[concepts/openwiki]]), a Harbor-based benchmark that evaluates generated codebase wikis by how well a "reader agent" answers codebase-grounded questions — concretely operationalizing that standardized-evals direction for OpenWiki.
+
 ## References
 
 - 2026-04-25-langchain-anatomy-agent-harness

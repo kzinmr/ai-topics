@@ -2,7 +2,7 @@
 title: "OpenWiki"
 type: concept
 created: 2026-07-02
-updated: 2026-07-17
+updated: 2026-08-27
 tags:
   - coding-agents
   - developer-tooling
@@ -20,7 +20,9 @@ related:
 sources:
   - raw/articles/2026-07-01_bracesproul_openwiki-langchain.md
   - raw/articles/2026-07-16_langchain_openwiki-0.2-okf.md
+  - raw/articles/2026-08-26_langchain_openwiki-wikibench.md
   - https://github.com/langchain-ai/openwiki
+  - https://x.com/LangChain/status/2092631796252839949
 ---
 
 # OpenWiki
@@ -95,6 +97,54 @@ OpenWiki operationalizes the pattern where [coding agents](../concepts/coding-ag
 - GitHub Action → automated freshness guarantee
 
 This is complementary to [[concepts/context-engineering]] — OpenWiki generates the context that agents consume.
+
+## Evaluation: WikiBench (Aug 2026)
+
+LangChain built **WikiBench**, a benchmark for measuring whether a generated wiki actually helps coding agents — and whether OpenWiki itself is improving. The motivation is twofold: (1) does a wiki genuinely help coding agents, and (2) do changes to OpenWiki actually make it better?
+
+### Design: Reader-Agent Verifier
+
+WikiBench runs on **Harbor**, a framework for evaluating agents on long-running tasks. A Harbor task has three components — environment, agent, verifier:
+
+- **Environment**: a repository checked out at a pinned commit
+- **Agent**: runs OpenWiki initialization on that repo and produces the initial wiki
+- **Verifier**: a "reader agent" that attempts to answer questions about the repository, using the generated wiki (sometimes with source code, sometimes by itself). The wiki is judged by how much it actually helps the reader agent on real tasks.
+
+This framing is key: it also lets them test whether the wiki helps *at all* by giving the reader agent the raw source directly and asking it to answer the same questions.
+
+### Question Generation
+
+Questions are generated automatically against the pinned commit, by identifying larger thematic areas (packages, subsystems). Two types:
+
+- **Coverage questions** — a shared template: "I need to make a change to how [area] works. Where in this repository does that live, what does it interact with that I should know about before touching it, and how would I check I didn't break something?"
+- **Retrieval questions** — written individually around specific behavior (e.g., "A tool call in a Deep Agents run returns far more output than fits in context. What does the model actually receive in place of it, where does the real content go, and how is that path different from what happens when the whole conversation grows too large?").
+
+Each question ships with a JSON rubric: a list of facts the answer should contain.
+
+### Scoring
+
+A series of LLM judges score each fact in the rubric:
+1. One judge checks whether the fact is **present** in the answer.
+2. A second judge checks whether the fact is **grounded** in pages the agent actually read.
+
+An answer earns credit only if it is both correct *and* grounded. The per-question score is the fraction of facts correct (e.g., 3 of 5 → 0.6); the overall wiki score is the average across all questions.
+
+### Results
+
+**Benchmarking different harnesses** — three harnesses (Bare DeepAgents, OpenWiki 0.2.5, OpenWiki 0.3.0) compared. High-performing runs diverge widely in cost and time: GLM 5.2 at $9.18 / 50 min vs Luna at $0.44 / 11 min. DeepSeek Flash and GLM 5.2 both perform well but at very different cost points (Flash ~1/6 the cost of GLM 5.2).
+
+**Where the extra cost/time goes** — DeepSeek and GLM read roughly **3× as many files** as Luna but write only **1.2–1.5× as many pages**. Their extra work goes into understanding more of the repository, not producing more output.
+
+**Does the wiki help?** — the reader agent was run under three setups:
+1. Wiki only
+2. Source (raw code) only
+3. Both
+
+**Combining wiki + source produced the highest mean score at lower cost than source alone.** The wiki acts as an **index**: it gives the reader a starting point instead of making it reconstruct the repository from scratch. The wiki *alone* performed much worse — it works best as a **guide, not a replacement** for the source. Together, the wiki and source made the reader both more accurate and more cost-efficient.
+
+### Why It Matters
+
+WikiBench is a reusable signal: because the verifier is a reader agent, the same benchmark measures both the *value* of a wiki (vs. raw source) and the *quality delta* between wiki versions. LangChain uses it actively to guide OpenWiki development. It extends the "standardized internal evals" direction Harrison Chase outlined for the LangChain ecosystem (see [[entities/langchain]]).
 
 ## Related Pages
 

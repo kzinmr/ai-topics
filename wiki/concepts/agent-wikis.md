@@ -75,7 +75,7 @@ Frames documentation as a build artifact in CI terms. Two-pass analysis: structu
 
 ### OpenWiki (LangChain)
 
-Open-source CLI for codebase wikis, later expanded with **OpenWiki Brains**: Code Brain (repos) + Personal Brain (Gmail, Notion, git, X, Hacker News, web search). Output is structured markdown optimized for LLM context — written for the reader that will actually read it (the model).
+Open-source CLI for codebase wikis, later expanded with **OpenWiki Brains**: Code Brain (repos) + Personal Brain (Gmail, Notion, git, X, Hacker News, web search). Output is structured markdown optimized for LLM context — written for the reader that will actually read it (the model). LangChain built **WikiBench** (Aug 2026) to measure whether the generated wiki actually helps coding agents (reader-agent verifier; wiki + source beats source alone).
 
 See: [[concepts/openwiki]]
 
