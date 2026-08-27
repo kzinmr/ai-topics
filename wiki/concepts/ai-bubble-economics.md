@@ -2,7 +2,7 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-08-22
+updated: 2026-08-26
 tags:
   - economics
   - company
@@ -491,6 +491,19 @@ Marcus's second part, which extends his August "Republicans panicking" post, cla
 
 See also: [[concepts/subprime-data-center-crisis]] (Ed Zitron's structural-financing analogue) and [[concepts/ai-bubble]] (broader thesis).
 
+## August 2026 Update: Compute Centralization — Two Labs Will Hold Most of the World's FLOPs (Dwarkesh × Dylan Patel, Aug 25)
+
+On August 25, 2026, Dwarkesh Patel interviewed **Dylan Patel (SemiAnalysis)** on lab economics ([dwarkesh.com/p/dylan-patel-3](https://www.dwarkesh.com/p/dylan-patel-3)). Core claims that feed directly into the bubble/centralization debate:
+
+- **Compute concentration**: Anthropic and OpenAI are "on track to control most of the world's usable FLOPs within the next few years" — not because they build all the silicon, but because they **monetize compute better** and can therefore **outbid everyone** in the compute market. "Every force is screeching towards centralization" (economies of scale in training, scarcity of compute, and eventually continual learning / RSI).
+- **$6B fab capex → $1T+ end revenue**: the leverage structure by which frontier labs convert billions of chip-fab spend into trillion-dollar end-market revenue claims.
+- **Compute price pressure**: if the two labs keep outbidding everyone, compute prices rise for everyone else — a direct channel from lab economics to the rest of the economy.
+- **Sovereign-debt-crisis scenario**: >$10T of total AI capex by end of decade could raise hyperscaler-debt-driven interest rates, drive non-AI-exposed countries into bankruptcy, and crash non-AI equities. (Unresolved in the episode.)
+- **Inference → training shift**: labs are moving compute from serving inference to R&D as RSI approaches — the demand structure itself is rotating.
+- **China asymmetry**: China gets <10% of new compute but its labs need less (distillation + smaller-model strategy), so the concentration claim is a US-lab phenomenon.
+
+**Interpretation**: this is the **supply-side twin** of Marcus/Zitron's capex-to-revenue critique. Marcus (Aug 21) argues the buildout is politically and economically unsustainable; Dylan Patel (Aug 25) argues the buildout is so monetizable for the two biggest labs that it *accelerates* — and that the resulting concentration is the defining macro risk of the next few years. The two positions bracket the same question: who captures the AI surplus, and can the financing structure carry it.
+
 ## Sources
 
 - [Edward Zitron: How Much Of The AI Bubble Is Real?](https://www.wheresyoured.at/premium-how-much-of-the-ai-bubble-is-real/) (Mar 2026)
@@ -506,4 +519,5 @@ See also: [[concepts/subprime-data-center-crisis]] (Ed Zitron's structural-finan
 - [The Economy: Private Credit Fuels AI Boom](https://economy.ac/news/2026/03/202603288769) (Mar 2026)
 - [Longbridge: AI Bubble — Catalyst for Quantitative Easing?](https://longbridge.com/news/282063902) (2026)
 - [Gary Marcus: Data center madness](https://garymarcus.substack.com/p/data-center-madness) (Aug 2026)
+- [Dwarkesh × Dylan Patel: Anthropic & OpenAI will have most of the world's compute by 2028](https://www.dwarkesh.com/p/dylan-patel-3) (Aug 2026)
 - [US Recession News: When Will the AI Bubble Burst?](https://usrecessionnews.com/ai-bubble/) (2026)

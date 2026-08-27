@@ -238,6 +238,14 @@ Fourrier's work consistently emphasizes **openness, transparency, and reproducib
 
 ## Related
 
+### Sub-pages (detailed profiles)
+
+- [[entities/clefourrier--timeline]] — Full career timeline (Hugging Face, Zephyr, SmolLM, sabbatical)
+- [[entities/clefourrier--core-ideas]] — Deep dive into her evaluation methodology theses
+- [[entities/clefourrier--key-quotes]] — Curated quotes from talks, tweets, and the Zephyr paper
+- [[entities/clefourrier--influence]] — Impact on the LLM evaluation ecosystem (LightEval, leaderboards, CO2 transparency)
+- [[entities/clefourrier--sources]] — Complete bibliography of talks, articles, and projects
+
 - [[lighteval]] — Open-source LLM evaluation toolkit from Hugging Face
 - [[concepts/evaluation/open-llm-leaderboard]] — Community-standard ranking of open language models
 - [[gaia-benchmark]] — Benchmark for General AI Assistants (Meta × Hugging Face × AutoGPT)

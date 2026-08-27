@@ -1,7 +1,7 @@
 ---
 title: "Inspect AI"
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-08-26
 type: entity
 tags:
   - product
@@ -274,6 +274,11 @@ Inspect AI occupies the **evaluation/harness engineering** space:
 - [[concepts/harness-engineering]] — Inspect embodies the principle that eval tooling is fundamental
 - vs. Promptfoo, LangSmith, Braintrust — Inspect is a framework (code-first, OSS) rather than a platform (UI-first, SaaS)
 - vs. [[concepts/evaluation/eval-frameworks]] — Inspect is the research/safety-oriented choice, adopted by major AI labs
+
+## Related
+
+- [[entities/meridian-labs]] — The 501(c)(3) nonprofit that now stewards Inspect AI, Inspect Scout, Inspect Petri, and Inspect Flow
+- [[entities/jj-allaire]] — Author; co-founder of Meridian Labs
 
 ## Sources
 

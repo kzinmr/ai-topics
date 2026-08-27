@@ -1,7 +1,7 @@
 ---
 title: "JJ Allaire"
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-08-26
 type: entity
 tags:
   - person
@@ -64,10 +64,13 @@ JJ's work is characterized by:
 | 2023 | Began collaboration with UK AI Safety Institute on Inspect AI |
 | Jan 2024 | Presented Inspect AI at Hamel Husain's AI Evals course |
 | 2024 | Company renamed to Posit, shifting focus to Python tools |
+| 2025 | Co-founded [[entities/meridian-labs\|Meridian Labs]] (with Charles Teague and Eric Patey) to steward Inspect AI as a nonprofit |
+| 2026 | Meridian Labs stewards Inspect AI, Inspect Scout, Inspect Petri (from Anthropic, May 2026), and Inspect Flow; Allaire also a visiting researcher at US CAISI |
 
 ## Related Entities
 
 - [[entities/inspect-ai]] — The LLM eval framework he developed
+- [[entities/meridian-labs]] — Nonprofit he co-founded in 2025 to steward the Inspect ecosystem
 - [[entities/posit]] (formerly RStudio) — The company he founded
 - [[entities/hamel-husain]] — Hosted JJ's Inspect AI presentation
 - [[concepts/evaluation/ai-evals]] — The evaluation domain Inspect operates in

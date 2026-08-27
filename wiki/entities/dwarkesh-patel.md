@@ -2,7 +2,7 @@
 title: Dwarkesh Patel
 type: entity
 created: 2026-04-09
-updated: 2026-08-12
+updated: 2026-08-26
 sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md, raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md, raw/articles/dwarkesh.com--p-why-compute-might-get-10x-more-expensive--dbadb8d5.md, raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md]
 tags:
   - person
@@ -220,6 +220,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [The sample efficiency black hole (Jun 2026)](https://www.dwarkesh.com/p/the-sample-efficiency-black-hole)
 - [The data black hole at the center of AI — Part 2 (Jun 2026)](https://www.dwarkesh.com/p/the-sample-efficiency-black-hole-2)
 - [Ryan Greenblatt — "What happens once AI can automate AI research?" (Aug 2026)](https://www.dwarkesh.com/p/ryan-greenblatt)
+- [Dylan Patel — "Anthropic & OpenAI will have most of the world's compute by 2028" (Aug 2026)](https://www.dwarkesh.com/p/dylan-patel-3)
 
 ## References
 
