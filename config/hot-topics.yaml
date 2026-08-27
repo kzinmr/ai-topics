@@ -13,7 +13,7 @@ topics:
   - concepts/kv-cache
   notes: Karpathy提唱。前提としてtoken economics, attention mechanism等が必要か
   added: 2026-04-14
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-08-27'
 - slug: agentic-engineering
   title: Agentic Engineering
   crawl_policy: laterals
@@ -25,7 +25,7 @@ topics:
   - concepts/agentic-engineering/_index
   notes: 22ページの大クラスタ。横方向の関連パラダイムを探索
   added: 2026-04-14
-  last_crawled: '2026-08-26'
+  last_crawled: '2026-08-27'
 - slug: ai-agent-engineering
   title: AI Agent Engineering (Anthropic/OpenAI)
   crawl_policy: deepdive
@@ -145,7 +145,7 @@ topics:
   - concepts/death-of-browser
   notes: WebMCP, agentic browsing の最新動向
   added: 2026-04-14
-  last_crawled: '2026-08-26'
+  last_crawled: '2026-08-27'
 - slug: sandbox
   title: Agent Sandboxing
   crawl_policy: laterals
