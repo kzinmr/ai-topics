@@ -22,6 +22,7 @@ sources:
   - raw/articles/2026-04-15_qwen-3.6-35b-a3b.md
   - raw/articles/2026-07-19_qwen-3-8-launch.md
   - raw/articles/2026-08-03_qwen-qwen3.8-max-release.md
+  - raw/articles/simonwillison.net--2026-aug-26-qwen38-flash-next--c0a0e5d0.md
   - raw/articles/2026-07-29_qwen_qwen-mm-plugins.md
   - raw/articles/2026-06-24_arxiv-2606.24597_qwen-agentworld.md
   - https://en.wikipedia.org/wiki/Qwen
@@ -57,7 +58,7 @@ By 2026 Qwen models had been downloaded **40M+ times** (Wikipedia citation, 2024
 | Qwen3.5 | Feb 2026 | Open Qwen3.5 + proprietary 3.5-Plus | Desktop/mobile app operation; Coder-Next |
 | Qwen3.6 | Apr 2026 | 35B-A3B (open), 3.6-Plus (proprietary), 3.6-27B | Hybrid Gated DeltaNet→MoE architecture; thinking preservation; SWE-bench Verified 73.4% |
 | Qwen3.7 Max | May 2026 | 3.7-Max, 3.7-Plus | 1M context; AA Intelligence Index 56.6; long-horizon agent focus |
-| Qwen3.8 | Jul–Aug 2026 | **3.8-Max** (~2.4T total / 95B active MoE), 3.8-27B | First open-weight Max-class release; $2/$6 per M pricing; Qwen3.8-2.4T-A95B weights Aug 12 |
+| Qwen3.8 | Jul–Aug 2026 | **3.8-Max** (~2.4T total / 95B active MoE), 3.8-27B, **3.8-Flash-Next** | First open-weight Max-class release; $2/$6 per M pricing; Qwen3.8-2.4T-A95B weights Aug 12; Flash-Next (Aug 26): multimodal MoE, 125B total / 6B active, early Qwen4 architecture preview |
 
 ### Qwen 3.8 — the frontier push (July–August 2026)
 
@@ -66,6 +67,10 @@ Qwen3.8-Max is the largest model in the family: **~2.4T total / ~95B active** sp
 Key features: `reasoning_effort` control (xhigh/medium/low), "self-evolving" feedback loops during autonomous operation, and the **oh-my-cli** demonstration — a 448+ commit, 125-hour autonomous research loop and an autonomous chip design flow (GCD/RSA accelerator, 8,298→678 gates) run without human-written commits.
 
 **License note**: Qwen3.8-2.4T-A95B requires a commercial license from Alibaba for providers generating >US$50M revenue within 12 months — a shift from the pure Apache 2.0 pattern of earlier generations.
+
+**Qwen3.8-Flash-Next (Aug 26, 2026)**: A second open-weights 3.8-generation release — a **multimodal MoE with ~125B total parameters but only 6B active**, described by [[entities/simon-willison|Simon Willison]] as "an early preview of the architecture used in Qwen4." The 6B-active profile targets a significant inference-speed boost over 3.8-Max at lower cost. Simon was among the first to run it locally on a **DGX Spark** using **Unsloth** quantized builds (72.5GB UD-IQ1_S and 78.9GB UD-Q2_K_XL), with best results at **xhigh reasoning effort** — consistent with the efficiency-MoE pattern of Qwen3.6-35B-A3B (see [[concepts/local-qwen-vs-claude-opus]]).
+
+Source: [[raw/articles/simonwillison.net--2026-aug-26-qwen38-flash-next--c0a0e5d0.md]]
 
 ## Architecture & Technical Highlights
 
@@ -79,6 +84,7 @@ Key features: `reasoning_effort` control (xhigh/medium/low), "self-evolving" fee
 
 - **[[entities/qwen-mm-plugins|Qwen-MM-Plugins]]** (Jul 2026) — open-source skill+MCP plugin system making any agent harness multimodal-native: vision, video-memory, video-edit, Blender 3D, FreeCAD, edu-agent. Supports Claude Code, Codex, Qoder, OpenClaw, Qwen Code, Gemini CLI
 - **[[concepts/qwen-agentworld|Qwen-AgentWorld]]** (Jun 2026) — 397B MoE language world model trained via CPT→SFT→RL on 7 domain environments; enables agent policy training without real environment access
+- **Qwen3.8-Flash-Next** (Aug 26, 2026) — open-weights multimodal MoE, ~125B total / 6B active; early preview of the Qwen4 architecture. See Model Lineage above.
 - **oh-my-cli** — autonomous coding agent built on Qwen3.8-Max (see above)
 - **Accio** — Alibaba's B2B AI-native shopping/sourcing app built on Qwen
 

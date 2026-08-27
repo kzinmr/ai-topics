@@ -2,6 +2,24 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-27] blog-ingest | 2026-08-27 batch — Qwen3.8-Flash-Next, Gates essay endorsement, John Cook code-quality critique, ChatGPT for Teachers expansion
+
+**Source**: blog_ingest checkpoint `20260827T100049Z` (43 new articles scanned, 20 listed, 14 saved to `wiki/raw/articles/`). Full-pipeline state (State D): triage performed inline in this run.
+
+**Pages updated (4)**:
+- `entities/qwen.md` — Added **Qwen3.8-Flash-Next** (Aug 26): open-weights multimodal MoE, ~125B total / 6B active, "early preview of the architecture used in Qwen4"; Model Lineage row + dedicated subsection + Agent Ecosystem bullet; sources updated.
+- `entities/simon-willison.md` — New "Qwen3.8-Flash-Next — Early Qwen4 Architecture on DGX Spark (Aug 26, 2026)" entry: Simon's early local testing on DGX Spark with Unsloth quants (72.5GB UD-IQ1_S, 78.9GB UD-Q2_K_XL), xhigh reasoning effort; cross-links to concepts/local-qwen-vs-claude-opus + entities/qwen; Related section link; `updated` bumped.
+- `entities/gary-marcus.md` — New "Bill Gates' 'Coherent AI Plan' Essay — Endorsement with One Addition (Aug 2026)" section: alignment with *Taming Silicon Valley* (decision-window, risk list, missing plan, civil society, domestic/international framework, tax rebalancing); Gates' new "AI could stunt our kids' development" risk; Marcus's addition that independent scientists must be centrally involved; References entry added.
+- `concepts/coding-agents/ai-code-quality.md` — New "The Quality Gap in AI-Generated Code — Practitioner Observations (Aug 2026)" section from [[entities/john-d-cook-applied-mathematics-consulting|John D. Cook]]: 2–3× code-volume bloat, 30min-write/4h-simplify asymmetry, no file-decomposition instinct, helper reinvention, fat signatures, terminology drift; his ask for a code-quality benchmark for frontier coding models (verifiable → amenable to post-training); positioned as third independent voice after Nolan Lawson and Addy Osmani; Related link added; `updated` + sources updated.
+- `entities/john-d-cook-applied-mathematics-consulting.md` — New "The Quality Gap in AI-Written Software (Aug 2026)" entry under LLM-Assisted Formal Proofs lineage; References + `updated` bumped.
+- `entities/openai.md` — New "ChatGPT for Teachers Expansion — 16-State National Data Privacy Agreement (Aug 26, 2026)" section: 55 new districts/20 states → 100+ K–12 orgs/30 states/300K+ educators; 16-state National Data Privacy Agreement via Student Data Privacy Consortium (industry first); FERPA/managed workspaces; 1.9M educator time-saving messages; AI Skills Jams + AFT 400K-educator program; source frontmatter updated.
+
+**Index updated**: gary-marcus, john-d-cook, openai, qwen, simon-willison, ai-code-quality entries bumped.
+
+**Raw-only / skipped** (low AI-relevance for wiki synthesis, archived as raw): LWN LibreOffice 26.8 + Armbian 26.8 release notes, Old New Thing MS-DOS emulator history, Digg v4 post-mortem (dfarq), Apple polishing cloth $9 + iPhone 18 Pro event (9to5mac via daringfireball), Tedium self-hosting simplicity, shkspr Thermal Master P3 lens review, johndcook Ultraspherical + Junk solutions (math posts). Unsaved: LWN paywalled weekly/AGPL items, Wikipedia POSIWID, xeiaso.net VS Code notes ×2, LWN security updates.
+
+**Pipeline note**: blog-triage checkpoint was stale (2026-08-17); watchdog on 08-26 flagged a transient 503 on blog-triage. This run performed inline triage + enrichment per State D pattern; checkpoint remains valid for downstream dedup.
+
 ## [2026-08-26] skeleton-enrich-daily | L2→L3: meridian-labs, agi-bot, fourier-intelligence, xpeng, quarq-labs (+ cross-refs)
 
 **Skeleton backlog**: 0 pages with `status: skeleton` remain. Continued established L2→L3 pattern — enriched the thinnest non-redirect entity pages (all <2KB before this run; git history check found no richer versions for any of them).

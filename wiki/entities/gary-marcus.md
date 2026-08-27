@@ -464,6 +464,23 @@ This extends his running AI-bubble / circular-financing critique (cf. "Leopold's
 
 Source: [[raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md]]
 
+### Bill Gates' "Coherent AI Plan" Essay — Endorsement with One Addition (Aug 2026)
+
+On August 26, 2026, Marcus published [an endorsement of Bill Gates' new essay](https://garymarcus.substack.com/p/excellent-new-bill-gates-essay-on) calling for a coherent, systematic AI plan from society — framing it as "echoing many of the themes I have been writing about here and in my 2024 book *Taming Silicon Valley*."
+
+Points of alignment Marcus highlights:
+- **Lasting importance of the decisions made now** — the critical, non-reversible window
+- **Risk list** — bioterrorism, deepfakes, disinformation, cyberattacks; Gates: "Even criminals with very limited skills will be able to target victims at every scale"
+- **New risk Gates adds** — "AI could stunt our kids' development and replace human relationships" (a theme Marcus says he did not anticipate in his 2024 book)
+- **The missing plan** — urgent need for, and lack of, a systematic plan for how society addresses AI
+- **Civil society's role** — not just government and tech companies should devise the plan
+- **Domestic and international framework** for dealing with AI
+- **Tax rebalancing** — structures/incentives to keep humans employed; "rebalanc[ing] how we tax labor and capital"
+
+**Marcus's one addition**: independent **scientists** must be centrally involved in devising the plan — a role Gates does not make explicit. This extends Marcus's recurring critique (cf. the CAISI report coverage in his July 2026 open letter to David Sacks) that top-down government-consultative processes systematically exclude independent research voices.
+
+Source: [[raw/articles/garymarcus.substack.com--p-excellent-new-bill-gates-essay-on--94b72ad8.md]]
+
 ## References
 
 - [Misplaced panic over AI progress](https://garymarcus.substack.com/p/misplaced-panic-over-ai-progress) (May 2026)
@@ -471,3 +488,4 @@ Source: [[raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.
 - [The AI trial of the century ends with a whimper](https://garymarcus.substack.com/p/the-ai-trial-of-the-century-ends) (May 19, 2026) — On the OpenAI vs Musk trial verdict: jury rejected Musk's claims on statute of limitations grounds, never weighed in on OpenAI's legitimacy. See [[events/openai-musk-trial-verdict-2026|OpenAI vs Musk Trial Verdict]].
 - [No need to panic about Anthropic's new blog](https://garymarcus.substack.com/p/no-need-to-panic-about-anthropics) (June 4, 2026) — Marcus argues AGI ≠ RSI, Anthropic conflating coding speed with general intelligence; neurosymbolic AI rescue thesis
 - [An open letter to David Sacks](https://garymarcus.substack.com/p/an-open-letter-to-david-sacks) (July 24, 2026) — Marcus responds to David Sacks (former Trump Crypto and AI Czar) using the CAISI report and Lutnick tweet to advocate minimal AI regulation and US AI dominance; argues the US should consider coordinating AI policy with China rather than escalating competition
+- [Excellent new Bill Gates essay on the urgency of having a coherent AI plan](https://garymarcus.substack.com/p/excellent-new-bill-gates-essay-on) (August 26, 2026) — Endorsement of Bill Gates' systematic-AI-plan essay; Marcus adds that independent scientists must be centrally involved

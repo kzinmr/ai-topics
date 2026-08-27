@@ -319,7 +319,7 @@
 - [[entities/future-of-humanity-institute]] — Future of Humanity Institute (FHI)
 - [[entities/galileo-eval-engineer]] — Galileo Eval Engineer
 - [[entities/garry-tan]] — Garry Tan — CEO of Y Combinator; investor in AI startups, voice on AI regulation
-- [[entities/gary-marcus]] — Gary Marcus; "Don't Count Google Out" section (Aug 6: seven reasons Google survives DeepMind leadership churn); "Open-Source Is NOT the Same as Open-Weight" (Aug 10: NYT confusion over Muse Glimmer, open-weight vs open-source distinction, Nadella bait-and-switch); "The Hyping of Anthropic's IPO" (Aug 17: leaked revenue projections, SEC quiet period, $2T valuation scrutiny); "Data center madness" (Aug 21: $10T Berezin / $2.5T Williams revenue-requirement estimates, political-economy signal of Republican-aligned opposition to data centers)
+- [[entities/gary-marcus]] — Gary Marcus; "Don't Count Google Out" section (Aug 6: seven reasons Google survives DeepMind leadership churn); "Open-Source Is NOT the Same as Open-Weight" (Aug 10: NYT confusion over Muse Glimmer, open-weight vs open-source distinction, Nadella bait-and-switch); "The Hyping of Anthropic's IPO" (Aug 17: leaked revenue projections, SEC quiet period, $2T valuation scrutiny); "Data center madness" (Aug 21: $10T Berezin / $2.5T Williams revenue-requirement estimates, political-economy signal of Republican-aligned opposition to data centers); Bill Gates "coherent AI plan" essay endorsement (Aug 26: alignment with Taming Silicon Valley, civil-society + tax-rebalancing demands, Marcus adds independent scientists)
 - [[entities/gemma-4]] — Google Gemma 4
 - [[entities/geoffrey-hinton]] — Geoffrey Hinton — "Godfather of AI"; Nobel Prize in Physics 2024; pioneer of deep learning, backpropagation
 - [[entities/geoffrey-litt]] — Geoffrey Litt
@@ -431,7 +431,7 @@
 - [[entities/joan-westenberg]] — Joan Westenberg
 - [[entities/john-berryman]] — John Berryman
 - [[entities/john-carmack]] — John Carmack — Legendary game developer (id Software, Doom, Quake); AGI researcher at Keen Technologies
-- [[entities/john-d-cook-applied-mathematics-consulting]] — John D. Cook
+- [[entities/john-d-cook-applied-mathematics-consulting]] — John D. Cook; "What is the quality of software that AI writes?" (Aug 26: 2–3× code bloat, 30min-write/4h-simplify asymmetry, no code-quality benchmark for frontier coding models)
 - [[entities/john-jumper]] — John Jumper
 - [[entities/john-schulman]] — John Schulman
 - [[entities/jonathan-whitaker]] — Jonathan Whitaker; officially left Answer.AI Aug 19 2026 for a sabbatical ("a few ideas to share soon")
@@ -616,7 +616,7 @@
 - [[entities/omri-weinstein]] — Omri Weinstein
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
 - [[entities/open-athena]] — Open Athena — nonprofit accelerating academia with frontier AI capabilities; developer of the Delphi open scaling suite (300× extrapolation, AdamH optimizer)
-- [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot
+- [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot; ChatGPT for Teachers expansion to 100+ K–12 orgs/30 states + 16-state National Data Privacy Agreement (Aug 26)
 - [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition
 - [[entities/openai-codex]] — OpenAI Codex; ChatGPT Work architecture deep-dive (Aug 2026) + Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
@@ -677,7 +677,7 @@
 - [[entities/qdrant]] — Qdrant
 - [[entities/qiaochu-yuan]] — QC (Qiaochu Yuan) is a mathematician, philosopher, and writer. Former MIRI researcher, PhD student in mathematics at ...
 - [[entities/quarq-labs]] — Quarq Labs — research lab (LongCoT SOTA with Qwen3.5-9B + scaffold, Apr 2026); scaffold-over-size thesis alongside raw-works/RLM and Alex Zhang
-- [[entities/qwen]] — Qwen — Alibaba's open-weight LLM family (Tongyi Qianwen); dense + MoE from 0.5B to ~2.4T (Qwen3.8-Max), Apache 2.0, agentic 2026 pivot (3.7/3.8 Max, MM-Plugins, AgentWorld), 234M app users
+- [[entities/qwen]] — Qwen — Alibaba's open-weight LLM family (Tongyi Qianwen); dense + MoE from 0.5B to ~2.4T (Qwen3.8-Max), Apache 2.0, agentic 2026 pivot (3.7/3.8 Max, MM-Plugins, AgentWorld), 234M app users; Qwen3.8-Flash-Next open-weights multimodal MoE (125B total/6B active, early Qwen4 architecture, Aug 26)
 - [[entities/qwen-3-7-max]] — Qwen 3.7 Max
 - [[entities/qwen-mm-plugins]] — Qwen-MM-Plugins — Alibaba open-source multimodal plugin system for agent harnesses; 6 capabilities (vision, video memory, video edit, Blender 3D, FreeCAD, edu-agent); supports Claude Code, Codex, Qoder, OpenClaw, Qwen Code, Gemini CLI (July 2026)
 - [[entities/qwen3-6-plus]] — Qwen3.6-Plus
@@ -771,7 +771,7 @@
 - [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026); Context Engine — customer relationships as moat (Aug 4)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
-- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13); sqlite-utils 4.2.1 crash fix + `uv run --isolated --no-default-groups` dependency-isolation smoke test (Aug 13); Bun 1.4 Bun.WebView JSON API prototype (Aug 20: 192–256MB container for full Chrome, shot-scraper-style API); "Stop Making TUIs" highlight of Thomas Ptacek's argument (Aug 21: coding agents have driven GUI cost toward zero, the old CLI/TUI cheap-default economics no longer hold); llm 0.32.1 + llm-openrouter 0.7 release notes (Aug 21: httpx/openai<3 stopgap, OpenRouter reasoning traces); "More than just code review" (verify agent changes, don't just eyeball) + Linus Torvalds "debug session from hell" quote on an AI that won't give up (Aug 22); "Conceptual integrity and counting lines of code" — pro-lines-of-code productivity argument, cognitive capacity as the new limit, conceptual integrity as the casualty (Aug 23)
+- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13); sqlite-utils 4.2.1 crash fix + `uv run --isolated --no-default-groups` dependency-isolation smoke test (Aug 13); Bun 1.4 Bun.WebView JSON API prototype (Aug 20: 192–256MB container for full Chrome, shot-scraper-style API); "Stop Making TUIs" highlight of Thomas Ptacek's argument (Aug 21: coding agents have driven GUI cost toward zero, the old CLI/TUI cheap-default economics no longer hold); llm 0.32.1 + llm-openrouter 0.7 release notes (Aug 21: httpx/openai<3 stopgap, OpenRouter reasoning traces); "More than just code review" (verify agent changes, don't just eyeball) + Linus Torvalds "debug session from hell" quote on an AI that won't give up (Aug 22); "Conceptual integrity and counting lines of code" — pro-lines-of-code productivity argument, cognitive capacity as the new limit, conceptual integrity as the casualty (Aug 23); Qwen3.8-Flash-Next early local testing on DGX Spark with Unsloth quants (Aug 26: 125B/6B-active MoE as early Qwen4 architecture preview)
 - [[entities/simone-salis]] — Simone Salis
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent)
 - [[entities/siyan-zhao]] — Siyan Zhao
@@ -1471,7 +1471,7 @@
 - [[concepts/codex/codex-superapp]] — OpenAI Codex Superapp
 - [[concepts/coding-agents/agentic-coding]] — Agentic Coding
 - [[concepts/coding-agents/ai-code-porting]] — AI Code Porting
-- [[concepts/coding-agents/ai-code-quality]] — AI Code Quality
+- [[concepts/coding-agents/ai-code-quality]] — AI Code Quality; John Cook "quality of software that AI writes" Aug 2026: 2–3× bloat, simplification asymmetry, code-quality benchmark ask
 - [[concepts/coding-agents/ai-coding-agent-criticism]] — AI Coding Agent Criticism
 - [[concepts/coding-agents/ai-coding-cost-optimization]] — AI Coding Cost Optimization — Ronin's Complete System
 - [[concepts/coding-agents/ai-coding-reliability]] — AI Coding Reliability

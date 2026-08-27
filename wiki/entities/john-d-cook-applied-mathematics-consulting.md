@@ -2,7 +2,7 @@
 title: John D. Cook
 type: entity
 created: 2026-04-09
-updated: 2026-06-30
+updated: 2026-08-27
 tags:
   - person
   - blogger
@@ -116,6 +116,21 @@ This is the fourth in Cook's experimental series demonstrating LLM reliability p
 
 Sources: raw/articles/johndcook.com--blog-2026-06-29-who-you-gonna-believe--ef670d0e.md
 
+### The Quality Gap in AI-Written Software (Aug 2026)
+
+In ["What is the quality of software that AI writes?"](https://www.johndcook.com/blog/2026/08/26/what-is-the-quality-of-software-that-ai-writes/) (Aug 26, 2026), Cook — from daily use of GPT-5.5/5.6 at extra-high reasoning in Codex on a Python research codebase — documents the default-behavior quality gap in agent-written code:
+
+- **2–3× code-volume bloat** — the agent's primary impulse is to add, not simplify
+- **Simplification asymmetry** — one session: 30 minutes to write a few hundred lines, **4 hours** to get the agent to shorten them
+- **No file-decomposition instinct** (files past 10,000 lines), helper reinvention across modules, 10–20 argument lists where parameter objects belong
+- **Terminology drift and magic constants** — invented jargon that "cannot instantly be understood by the reader"
+
+When pressed, the models improve (5.6 Ultra produced a good domain-matched object design on explicit "look hard at the problem" instruction), but Cook's conclusion: good code quality should not require extreme guidance engineering. His open ask: **a widely accepted code-quality benchmark for frontier coding models**, playing the role SWE-bench played for capability — "especially interesting because many aspects of code quality are verifiable, making the problem seemingly quite amenable to treatment in post-training."
+
+See [[concepts/coding-agents/ai-code-quality]] for the full context (third independent voice after Nolan Lawson and Addy Osmani).
+
+Source: raw/articles/johndcook.com--blog-2026-08-26-what-is-the-quality-of-software-that-ai-writ--f2beafe1.md
+
 ## Key Quotes
 
 > *"Models are capable, but effective integration can be lacking. Without improvements for cases like this, customers will not be satisfied users of these new AI tools."*
@@ -181,4 +196,5 @@ Sources: raw/articles/johndcook.com--blog-2026-06-29-who-you-gonna-believe--ef67
 - johndcook.com--blog-2026-04-25-nth-derivative-of-a-quotient--1ec0ba72
 - johndcook.com--blog-2026-04-28-circular-arc-approximation--73d10e2a
 - johndcook.com--blog-2026-04-28-even-series-trick--74cb4171
+- johndcook.com--blog-2026-08-26-what-is-the-quality-of-software-that-ai-writ--f2beafe1
 - johndcook.com--blog-2026-06-20-z3-python-claude--6dbfee73

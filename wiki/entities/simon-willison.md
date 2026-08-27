@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-08-24
+updated: 2026-08-27
 status: L3
 sources: [raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--01ab480d.md, raw/articles/simonwillison.net--2026-jul-7-sqlite-utils-4.0--f5c4e8a2.md, raw/articles/simonwillison.net--2026-jul-8-github-code--b7d2f9e1.md, raw/articles/simonwillison.net--2026-jul-8-introducing-gptlive--94860320.md, raw/articles/simonwillison.net--2026-jul-8-rewriting-bun-in-rust--13af90c8.md, raw/articles/simonwillison.net--2026-jul-8-kenton-varda--84dd5805.md, raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md, raw/articles/simonwillison.net--2026-jul-16-inkling--4c6392f3.md, raw/articles/simonwillison.net--2026-jul-16-bad-codex-bug--2d7cb47a.md, raw/articles/simonwillison.net--2026-jul-16-linus-torvalds--881be321.md, raw/articles/simonwillison.net--2026-jul-17-spot-birds-not-golf--9b2b5171.md, raw/articles/simonwillison.net--2026-jul-16-firefox-in-webassembly--26721bbf.md, raw/articles/simonwillison.net--2026-jul-19-ai-mania--44d772e4.md, raw/articles/simonwillison.net--2026-jul-19-claude-code-in-bun-in-rust--2c8078d9.md, raw/articles/simonwillison.net--2026-jul-18-sqlite-query-explainer--767c42a6.md, raw/articles/simonwillison.net--2026-jul-24-introducing-claude-opus-5--8e564905.md, raw/articles/simonwillison.net--2026-jul-26-relay-market--f93ad63e.md, raw/articles/simonwillison.net--2026-jul-27-an-opinionated-guide-to-which-ai-to-use-to-do-st--0856cb2c.md, raw/articles/simonwillison.net--2026-jul-28-discovering-cryptographic-weaknesses-with-claude--6abd4154.md, raw/articles/simonwillison.net--2026-jul-28-anatomy-of-a-frontier-lab-agent-intrusion--9b765fc9.md, raw/articles/simonwillison.net--2026-jul-29-ai-worming-through-word--b33b2dde.md, raw/articles/simonwillison.net--2026-jul-31-deepseek-v4-flash-0731--91e3e788.md, raw/articles/simonwillison.net--2026-jul-31-stateless-mcp--b7e83578.md, raw/articles/simonwillison.net--2026-jul-31-datasette-agent--b9c43e7d.md, raw/articles/simonwillison.net--2026-jul-31-oxide-and-friends--7762fb39.md, raw/articles/simonwillison.net--2026-jul-31-smevals--e6e7fe34.md, raw/articles/simonwillison.net--2026-aug-2-open-letters--a9aa5c8a.md, raw/articles/simonwillison.net--2026-aug-3-devtools-must-be-open-source-exedev--9e71e78e.md, raw/articles/simonwillison.net--2026-aug-3-david-crawshaw--d6f9528e.md, raw/articles/simonwillison.net--2026-aug-3-dont-be-a-meat-proxy--0c121b01.md, raw/articles/simonwillison.net--2026-aug-4-new-release-of-llm--9d816776.md, raw/articles/simonwillison.net--2026-aug-4-llm-anthropic--0e99a87e.md, raw/articles/simonwillison.net--2026-aug-6-datasette--fb22af1b.md, raw/articles/simonwillison.net--2026-aug-6-simon-willison-on-technical-blogging--f19c28db.md, raw/articles/substack.com--redirect-8b76ad88-36bc-404b-b585-a35c1d052daa--e67c8708.md, raw/articles/simonwillison.net--2026-aug-9-sqlite-text-history-prototype--40d193a4.md, raw/articles/simonwillison.net--2026-aug-10-introducing-muse-glimmer--d8fd569f.md, raw/articles/simonwillison.net--2026-aug-11-there-are-no-lossless-transformations-of-natural--3fc5b143.md, raw/articles/simonwillison.net--2026-aug-13-sqlite-utils-2--06b58c78.md, raw/articles/simonwillison.net--2026-aug-14-dont-classify-hallucinate--3b5e1414.md, raw/articles/simonwillison.net--2026-jun-30-claude-sonnet-5--6e28b886.md, raw/articles/simonwillison.net--2026-jun-30-shot-scraper-video--c7629dc2.md, raw/articles/simonwillison.net--2026-jul-4-better-models-worse-tools--5db73ef4.md, raw/articles/simonwillison.net--2026-jul-5-sqlite-utils-fable--1e3a50d4.md, raw/articles/simonwillison.net--2026-jul-3-judgement--0a2730d6.md, raw/articles/simonwillison.net--2026-jul-2-llm-coding-agent--6340f228.md, raw/articles/simonwillison.net--2026-aug-15-cors-chat--be52c1eb.md, raw/articles/simonwillison.net--2026-aug-22-more-than-just-code-review--54b6a31e.md, raw/articles/simonwillison.net--2026-aug-22-linus-torvalds--b52cb854.md]
 tags: [person, blogger]
@@ -118,6 +118,14 @@ In the same essay, Simon quoted David Crawshaw's nightly cron prompt as a concre
 The pattern — an agent autonomously rebasing local modifications on upstream changes, verifying the result, and replacing the running version — turns the "freedom to modify" open source software into a near-zero-maintenance proposition, and is the practical realization of the "path to habitual modification" Simon describes.
 
 Source: [[raw/articles/simonwillison.net--2026-aug-3-david-crawshaw--d6f9528e.md]]
+
+### Qwen3.8-Flash-Next — Early Qwen4 Architecture on DGX Spark (Aug 26, 2026)
+
+Simon published a link-blog post on Qwen's new open-weights release, **Qwen3.8-Flash-Next** — "a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4": ~125B total parameters with only **6B active**, a significant inference-speed boost. He was among the first to run it on a **DGX Spark** using **Unsloth** quantized builds (72.5GB UD-IQ1_S, 78.9GB UD-Q2_K_XL), finding the best results at **xhigh reasoning effort** (with his signature pelican test images from each quantization level).
+
+The local-early-adoption pattern mirrors his Qwen3.6-35B-A3B laptop coverage (see [[concepts/local-qwen-vs-claude-opus]]); model details on [[entities/qwen]].
+
+Source: [[raw/articles/simonwillison.net--2026-aug-26-qwen38-flash-next--c0a0e5d0.md]]
 
 ### Writing Code is Cheap — The Need for New Habits
 > "The cost of writing code has dropped to near zero. The cost of understanding it, maintaining it, and integrating it into a larger system has not."
@@ -377,6 +385,7 @@ Source: [[raw/articles/simonwillison.net--2026-jun-14-why-ai-hasnt-replaced-soft
 - [[entities/anildash]]
 - [[entities/sankalp-sinha]]
 - [[concepts/structured-outputs]]
+- [[entities/qwen]] — Qwen3.8-Flash-Next local testing on DGX Spark (Aug 2026)
 
 ### Blog articles (unprocessed)
 - [llm-0-32a0-refactor-simon-willison](llm-0-32a0-refactor-simon-willison.md)

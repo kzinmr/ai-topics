@@ -53,6 +53,7 @@ sources:
   - raw/newsletters/2026-08-11-ainews-muse-glimmer-and-spark-open-weights-return-personal-superintelligence-pro.md
   - raw/newsletters/2026-08-14-glm-5-3-released-nobody-taught-it-to-hack.md
   - raw/articles/2026-08-17_jensenhuang_securing-infrastructure-intelligence.md
+  - raw/articles/openai.com--index-bringing-chatgpt-for-teachers-to-more-us-school-distri--7e008cb7.md
 ---
 
 # OpenAI
@@ -202,6 +203,17 @@ Sources: [[raw/newsletters/2026-07-30-1-billion-chatgpt-users.md]], [[raw/newsle
 - **Competitive context**: The revenue surge follows the July 2026 acceleration (July revenue beat all of Q2) and the broader consumer/agentic adoption wave documented above.
 
 Source: [[raw/newsletters/2026-08-14-glm-5-3-released-nobody-taught-it-to-hack.md]] (Superintel+, citing Bloomberg).
+
+### ChatGPT for Teachers Expansion — 16-State National Data Privacy Agreement (Aug 26, 2026)
+
+OpenAI expanded **ChatGPT for Teachers** to **55 additional school systems across 20 states** (100,000+ more educators), bringing the program to **100+ K–12 organizations across 30 states** and 300,000+ educators — up from ~150,000 at the 2025 launch. New cohorts include 1 in 5 of America's 20 largest public districts. Two notable elements:
+
+- **16-state National Data Privacy Agreement** (industry first) via the Student Data Privacy Consortium framework — General Offers covering IL, IA, ME, MA, MO, NE, NH, NJ, NY, OH, RI, TN, TX, VT, VA, WA (CA covered separately), giving districts a common framework to evaluate ChatGPT for Teachers against student data privacy requirements without district-by-district negotiation
+- **Education-grade privacy**: workspace data not used for training by default; role-based managed workspaces supporting FERPA; free for verified US K–12 educators through June 2028
+
+**Usage data** (privacy-preserving analysis, Jan 1–Jul 16): 1.9M+ educator messages on time-saving tasks — 900K report cards/progress reports, 800K lesson planning, 100K+ each on substitute plans and teacher evaluations. Adjacent programs: **OpenAI Academy AI Skills Jams** (1,600+ educators this summer with the Walton Family Foundation; 93% left with something reusable, 96% planned application within 30 days) and a five-year National Academy for AI Instruction with the American Federation of Teachers targeting 400,000 K–12 educators. VP of Education: Leah Belsky.
+
+Source: [[raw/articles/openai.com--index-bringing-chatgpt-for-teachers-to-more-us-school-distri--7e008cb7.md]]
 
 ### NVIDIA Compute Commitments — PORTS-Pike Tenant (Aug 2026)
 
