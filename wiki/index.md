@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (909 pages)
+## Entities (913 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -608,6 +608,7 @@
 - [[entities/omar-khattab/baleen]] — Baleen — Multi-Hop Retrieval-Augmented Reasoning
 - [[entities/omar-khattab/collaborations]] — Omar Khattab — Collaborations
 - [[entities/omar-khattab/impact-metrics]] — Omar Khattab — Impact Metrics
+- [[entities/openexecutive]] — OpenExecutive — Open-source AI CEO agent (Aug 2026)
 - [[entities/openhands]] — OpenHands (Agent Canvas) — Open-source self-hosted developer control center for coding agents; supports Claude Code, Codex, Gemini, ACP-compatible agents; formerly OpenDevin
 - [[entities/omar-khattab/publications]] — Omar Khattab — Key Publications
 - [[entities/omar-khattab/quotes]] — Omar Khattab — Key Quotes
@@ -917,7 +918,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2016 pages)
+## Concepts (2020 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1023,6 +1024,8 @@
 - [[concepts/fli-ai-safety-index]] — FLI AI Safety Index — Future of Life Institute periodic evaluation grading AI companies on safety/security practices across 6 domains, 37 indicators; Summer 2026: Anthropic C+, OpenAI C, DeepSeek F
 - [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
 - [[concepts/flux-video-action-models]] — Video-Action Models (VAMs) — From Media Generation to Physical AI — FLUX 3 x mimic architecture; Self-Flow unified multimodal training; video pre-training transfers to robot control; dexterous manipulation at Audi; comparison with RT-2, Octo, π0 (July 2026)
+- [[concepts/gemini-3-5-transcribe]] — Gemini 3.5 Transcribe — Google speech-to-text model (Aug 2026)
+- [[concepts/glm-5-3-flash]] — GLM-5.3-Flash — Z.ai open-weights frontier model (Aug 2026)
 - [[concepts/gpt-live]] — GPT-Live — OpenAI full-duplex real-time voice interaction mode (July 2026)
 - [[concepts/gpt-red]] — GPT-Red — OpenAI's automated LLM red-teaming system using self-play to discover prompt injection attacks (84% vs 13% human)
 - [[concepts/inference-provisioned-throughput]] — Provisioned Throughput — reserved inference capacity for open-weight models with token pricing and 99% SLA (Together AI, July 2026)
@@ -1031,6 +1034,8 @@
 - [[concepts/lingbot-world-infinity]] — LingBot-World-Infinity — Open-source world model with 60-minute coherent rollouts from Tsinghua THU-KING-NIC-Lab
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
 - [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
+- [[concepts/webmcp-protocol]] — WebMCP Protocol — Web standard for agent tool discovery (Aug 2026)
+- [[concepts/vm-containment-ai-agents]] — VM Containment of Cyber-Capable AI Agents — Trail of Bits research (Aug 2026)
 - [[concepts/wiki-memory]] — Wiki Memory — Agent-maintained file-based knowledge layer pattern (Harrison Chase, 2026)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Fedora/GitLost/NanoGPT sandbox escape, AI cybersecurity trend (OpenAI-Hugging Face incident, specialized cyber models, July 24)
 - [[concepts/ai-agent-security]] — AI Agent Security

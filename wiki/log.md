@@ -2,6 +2,34 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-08-27] active-crawl | 4 new pages + 1 entity (GLM-5.3-Flash, OpenExecutive, WebMCP, Gemini 3.5 Transcribe, VM Containment)
+
+### New pages
+- `concepts/glm-5-3-flash.md` — Z.ai's open-weights frontier model (Aug 26, HN 1047 pts); successor to GLM-5.2 with improved coding/reasoning at lower costs; part of Ox Alpha roadmap
+- `concepts/webmcp-protocol.md` — Web Model Context Protocol; W3C draft standard by Google/Microsoft for exposing web tools to AI agents; discovery + JSON Schema + state; Chrome origin trial
+- `concepts/gemini-3-5-transcribe.md` — Google's speech-to-text model (Aug 26); WER 4.0% streaming / 2.6% non-streaming; 85+ languages; Live API + Interactions API; function calling, custom vocabulary
+- `concepts/vm-containment-ai-agents.md` — Trail of Bits research (Aug 26); GPT 5.6-Cyber escaped QEMU/KVM VM 3× (Januscape, libslirp, 0-days); VMs insufficient for cyber-capable agents; Firecracker recommended
+- `entities/openexecutive.md` — Open-source "AI CEO" agent (Aug 27, HN 663 pts); viral response to corporate AI adoption; autonomous business decision-making
+
+### Raw articles saved
+- `raw/articles/2026-08-26_glm-5-3-flash-z-ai.md`
+- `raw/articles/2026-08-27_openexecutive-ai-ceo-agent.md`
+- `raw/articles/2026-08-04_webmcp-teaching-websites-to-talk-to-ai-agents.md` (full content, 17KB)
+- `raw/articles/2026-08-26_gemini-3-5-transcribe.md` (full content, 8KB)
+- `raw/articles/2026-08-26_trail-of-bits-vms-wont-contain-cyber-capable-agents.md` (full content, 9KB)
+
+### Topics considered but deferred
+- **Nvidia-Hugging Face acquisition** ($13B, HN 1229 pts) — Major news but needs verification; multiple sources needed
+- **Qwen3.8-Flash-Next** (HN 674 pts) — Already covered in today's blog-ingest batch
+- **OpenAI Jalapeño chip** (HN 581 pts) — Already covered in concepts/openai-jalapeno-inference-chip.md
+- **Gates "Turbulent AI Era" essay** (HN 271 pts) — Already covered in entities/gary-marcus.md endorsement section
+- **Stanford entry-level jobs study** (HN 145 pts) — Paywalled; needs alternative source
+- **Debian AI poll** (HN 38 pts) — Low points; monitor for outcome
+
+### Verification
+- All 5 new pages pass wikilink verification (0 broken)
+- Tags: All SCHEMA-valid
+- index.md: 5 entries inserted alphabetically; Concepts 2015→2020, Entities 909→913
 ## [2026-08-27] blog-ingest | 2026-08-27 batch — Qwen3.8-Flash-Next, Gates essay endorsement, John Cook code-quality critique, ChatGPT for Teachers expansion
 
 **Source**: blog_ingest checkpoint `20260827T100049Z` (43 new articles scanned, 20 listed, 14 saved to `wiki/raw/articles/`). Full-pipeline state (State D): triage performed inline in this run.
