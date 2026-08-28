@@ -1,3 +1,9 @@
+## [2026-08-28] update | warp-factories: closed-loop self-improvement spec (hot-post support)
+
+- Trigger: late-night hot post on Warp's Aug 27 follow-up "Closing the loop with self-improving cloud software factories" (raw: 2026-08-28_warp_agent-self-improving-software-factories.md, sitemap scrape).
+- `concepts/warp-factories.md` — new "Closed-Loop Spec" section: 5 acceptance criteria table (factory-as-code / cloud-resident / API-first / built-in metrics / multi-model), scorer mechanics, 4-step improvement loop, benchmarks-vs-loop distinction. Sources + updated bumped, index entry refreshed.
+- Note: Factory blog article (same-day sitemap batch) failed brotli scrape — skipped; no Factory-side page updates.
+
 ## [2026-08-28] update | wiki-health-fix: index orphan registration
 
 - Verified reported index corruption (pipe/line-number/triple-bracket/space-prefix): 0 found — already clean upstream.

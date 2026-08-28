@@ -1,7 +1,7 @@
 ---
 title: "Warp Factories (Cloud Software Factory Infrastructure)"
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-08-28
 type: concept
 tags:
   - coding-agents
@@ -20,6 +20,7 @@ related:
   - concepts/interaction-centric-agent-failure-taxonomy
 sources:
   - raw/articles/2026-08-19_warp_open-infrastructure-for-building-a-software-factory.md
+  - raw/articles/2026-08-28_warp_agent-self-improving-software-factories.md
   - https://www.warp.dev/blog/open-infrastructure-for-building-a-software-factory
 ---
 
@@ -46,6 +47,26 @@ Per Warp's framing (echoes of their June 2026 "factory engineers" memo):
 | **Benchmarks** | Repeatable cross-configuration comparisons on curated tasks (e.g. "GLM 5.2 in Warp harness vs. Claude Code running Opus" on frontend tasks) |
 | **Factory MCP** | Interop: any coding agent (Claude Code, Codex, Cursor) can push work in, pull work down, or guide sessions |
 | **AI sovereignty** | BYO inference / BYO hosting / host all data exhaust (conversations, evals, memories) / zero-data-retention option |
+
+## Closed-Loop Spec (Aug 27, 2026 follow-up: "Closing the loop with self-improving cloud software factories")
+
+Warp's Aug 27 follow-up formalizes the self-improvement loop as an engineering discipline ("meta-engineering"), with five acceptance criteria for evaluating any factory platform:
+
+| Criterion | Detail |
+|---|---|
+| Factory-as-code | `factory.yaml` manifest + directory hierarchy of agent definitions, skills, MCPs, model routing rules — version-controlled, **editable by agents via diffs** (the basis of self-improvement) |
+| Cloud-resident | Local-first ≠ factory: agents must run 24/7 in cloud dev environments; all traces/telemetry stored centrally as "raw material of improvement"; team-tool (Slack/Jira/GitHub) integration |
+| API-first runtime | Launch/steer/retrieve-history/telemetry APIs — makes the factory *observable by other agents*; CLIs and MCPs are built on top, AWS/GCloud-style |
+| Built-in metrics | DORA-adjacent but inner-loop: **PR throughput, avg cost per PR, automation percent (human touchpoints per PR), savings vs human work**; shipped-product acceleration is the hard-to-measure fifth |
+| Multi-model/multi-agent | Model routing must be swappable so model/harness improvements flow through automatically |
+
+**Scorers**: grade functions (human / code / LLM-as-judge) over agent run traces + human-interaction data from integrated tools; Warp ships defaults for correctness, cost efficiency, verbosity. Sampling strategy matters — scorers cost money.
+
+**The 4-step loop**: (1) factory agents build → (2) scorer agents grade runs every ~2h → (3) self-improvement agents review graded runs and open diff PRs against the factory definition → (4) humans review & merge.
+
+**Benchmarks vs self-improvement loops**: the loop is "an intelligent person suggesting changes from past results"; true A/B confidence needs the benchmark system — pick 5–10 reference tasks, run configurations (e.g. model mixtures for frontend work, incl. open-weight viability) in parallel, score with the same scorers, output a results matrix; an agent synthesizes the winner into a factory-definition diff. Closes the loop again.
+
+^ [raw/articles/2026-08-28_warp_agent-self-improving-software-factories.md]
 
 ## Positioning in the wiki's thread
 

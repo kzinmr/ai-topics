@@ -15,6 +15,7 @@ sources:
   - https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/
   - raw/articles/2026-08-12_addyosmani_agentic-code-quality.md
   - raw/articles/johndcook.com--blog-2026-08-26-what-is-the-quality-of-software-that-ai-writ--f2beafe1.md
+  - raw/articles/claude-load-bearing-vocabulary-louis-abraham.md
 ---
 
 # AI Code Quality
