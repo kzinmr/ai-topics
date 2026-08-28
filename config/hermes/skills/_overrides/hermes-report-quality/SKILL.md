@@ -1,138 +1,139 @@
 ---
 name: hermes-report-quality
-description: Gwern-inspired quality techniques for Hermes AI reports — Anti-Examples stripping, Manual of Style (MoS), Atomic Snippets multi-level abstraction, Generate-Rank-Select iteration, and Engram knowledge pathways. Improves report tone, consistency, depth, and usefulness.
+category: writing
+description: >-
+  Gwern-inspired quality techniques for Hermes AI reports — applying the 5
+  principles (T1-T5) from [[concepts/llm-creative-writing]] to eliminate
+  ChatGPT-style slop, enforce concise Japanese, and produce atomic, densely
+  linked reports.
 tags:
-  - report-writing
   - quality
-  - anti-examples
-  - style-guide
+  - writing
   - gwern
-  - atomic-snippets
+  - anti-patterns
+  - japanese
+related_skills:
+  - wiki-daily-report
+  - trending-topics-reporting
+sources:
+  - wiki/concepts/llm-creative-writing
 ---
 
-# Hermes Report Quality — Gwern-Inspired Techniques
+# Hermes Report Quality — Gwern Techniques
 
-A set of 5 quality techniques distilled from [[concepts/llm-creative-writing|Gwern's LLM Creative Writing methodology]], adapted specifically for Hermes' wiki reports, digests, and knowledge summaries.
+This skill captures the 5 quality techniques (T1–T5) used during Hermes AI
+reports (daily digests, weekly digests, trending-topics reports). Apply all 5
+in sequence before delivering any report that will be read by a human.
 
-## Technique 1: Anti-Examples Slop Stripping
+## T1: Anti-Examples — Slop Removal
 
-**Problem**: AI-generated reports default to a generic, "ChatGPTese" tone — verbose, hedging, and formulaic.
+**Problem**: ChatGPT-style generic language — "interesting development,"
+"demonstrates the power of," "it's worth noting that," "in recent years,"
+"landscape," "revolutionize," "game-changer."
 
-**Workflow**:
-1. **Generate the report** as usual
-2. **Self-critique**: After writing, add a self-review step: "Identify 3-5 phrases in this report that sound like generic AI prose. Explain why they're weak, then rewrite them."
-3. **Reverse fix**: Apply the rewritten versions
-4. **Meta-cognition check**: Force reasoning about *why* the original phrasing was weak, not just what to change
+**Process**:
+1. Generate the first pass normally
+2. Self-review every paragraph. Flag any sentence that could come from any model
+   about any topic
+3. Replace with: specific claims, exact numbers, concrete comparisons
+4. Delete adverbial throat-clearing ("Importantly,", "Notably,", "It should be
+   noted that")
+5. If a bullet point has no specific number or source, kill it
 
-**Example application**: In daily hot-posts reports, after listing topics, add a self-review phase checking for:
-- Overused transitions ("Meanwhile", "Notably", "It's worth noting")
-- Vague praise ("impressive", "significant", "important" without context)
-- Formulaic sentence structure (topic sentence → explanation → implication)
+**Examples**:
 
-## Technique 2: Manual of Style (MoS) for Reports
+| ❌ Slop | ✅ Specific |
+|---------|-------------|
+| "This represents a significant leap forward" | "+38pt leap — largest between model releases" |
+| "The model demonstrates impressive capabilities" | "pass@1 68.5% vs 69.9%, 1.4pt gap" |
+| "It's worth noting that costs are lower" | "2.8× cheaper ($4.65 vs $13.41/rollout)" |
+| "This development could have implications" | "Debian GR: 3 alternatives — total ban / pragmatic rejection / conditional permit" |
 
-**Definition**: An explicit style guide for Hermes' voice across all report types.
+## T2: Manual of Style
 
-### Core Style Rules
-- **Japanese for Discord/Telegram reports**: Concise bullet-driven format
-- **English for Slack/technical analysis**: Precise, data-rich, no filler
-- **Every claim needs a source**: Wikilink or URL citation mandatory
-- **One sentence per insight**: No padding paragraphs
-- **Use comparison tables** for multi-entity analysis
+### Language & Tone
+- **Japanese** for reports targeting the user (the default)
+- **English** for technical terms, model names, syntactic concepts
+- No ChatGPT-esque "ですます調" — use plain 「だ・である」調
+- No exclamation marks unless in quoted material
+- No rhetorical questions
 
-### Anti-Examples (what NOT to do)
-- ❌ "It is worth noting that..." → ✅ Just state the fact
-- ❌ "This represents a significant development in the field of..." → ✅ Name the specific field + why
-- ❌ "As we move forward, it will be interesting to see..." → ✅ Make a specific prediction or state uncertainty
-- ❌ Hedging everything ("may", "could", "might", "potentially") → ✅ State confidence level explicitly ("60% probability", "speculative")
-- ❌ "In today's rapidly evolving AI landscape..." → ✅ Delete. Start with the content.
+### Structure per Section
+- **1 line = 1 insight**. No filler. If a line doesn't add information, delete it.
+- **Wikilinks on every topic**: minimum 2 per section ([[entities/foo]] or [[concepts/bar]])
+- **Tables for comparisons**: model vs model, option vs option, before vs after
+- **Source links**: every factual claim points to a wiki raw article or URL
 
-## Technique 3: Atomic Snippets — Multi-Level Abstraction
+### Prohibited
+- "It is important to note that…" — just say the thing
+- "Showcasing the power of…" — just say what happened
+- "Ultimately, this suggests…" — cut the word "ultimately" from your vocabulary
+- Descriptive section headers like "Background" / "Overview" — use specific headers
+- Generic introductory paragraphs before the actual content
 
-**Idea**: Present the same content at multiple granularity levels so the reader picks their depth.
+## T3: Atomic Snippets
 
-### Three-Level Format (recommended for reports)
+Every major section (3+ bullets) follows the 3-tier format:
 
 ```
-## 🔍 Topic: X (1-line summary)
-**One-liner**: X just released Y, competing with Z on W.
-
-**Details**:
-- Key metric: ...
-- Architecture: ...
-- Comparison: ...
-
-**Deep dive** (collapsible or optional section):
-- Technical architecture details
-- Benchmark methodology
-- Implications for the ecosystem
+**▶ 一言要約**: (15–30 tokens — one sentence, claim with number)
+**詳細**: (bullet points, 100–300 tokens)
+**深掘り**: (optional — technical detail, architecture, methodology)
 ```
 
-**Implementation**: Start every report section with a one-liner (mandatory for all readers), then progressively add detail. Readers stop when satisfied.
+The 一言要約 must be **standalone** — a reader who reads nothing else gets the
+signal. It must contain a concrete number or specific claim, not a generality.
 
-### When to use each level
+## T4: Generate-Rank-Select
 
-| Level | Token budget | Use case |
-|-------|-------------|----------|
-| One-liner | 15-30 tokens | Quick scan, headline readers |
-| Details | 100-300 tokens | Interested readers, daily digest |
-| Deep dive | 300-1000+ tokens | Technical deep-dive, wiki pages |
+For **titles** and **opening paragraphs**:
 
-## Technique 4: Generate-Rank-Select for Critical Reports
+1. Generate 2–3 variants
+2. Rank by: specificity > brevity > signal > style
+3. Pick the best and delete the rest
 
-**Problem**: First-draft reports have hidden quality variance. Gwern's insight: "Adding bits beats slop" — the value is in the search process.
+Never publish the first generation without at least one revision.
 
-**Workflow for important reports**:
-1. **Generate N variants** (2-3) of the report title and opening paragraph
-2. **Self-rank** by criteria: informativeness, conciseness, engagement
-3. **Select & merge** the best elements
-4. **Write the rest** using the selected tone
+### Title patterns that work:
+- "🏆 [Topic] — [Key numbers/contrast]"
+  e.g., "Claude Opus 5 — Fable級知能を半額で"
+- "📊 [Topic]: [number] vs [number], [ratio]倍の[metric]"
+  e.g., "Kimi K3 vs Fable 5: 1.4pt差、1/3コスト"
 
-**When to apply**: When a report has strategic importance (trend analysis, ecosystem comparison, or any report with decision-making implications). Skip for routine "no change" reports.
+Patterns that **do not work** (too generic):
+- "The State of [Topic]"
+- "[Topic]: What You Need to Know"
+- "Analyzing the Latest [Topic]"
 
-**Catch**: Don't spend tokens on G-R-S for every report — reserve for:
-- Weekly digests
-- Trend analysis
-- Reports with specific predictions
-- Reports the user has indicated high interest in
+## T5: Engram Pathways — Wiki Link Embedding
 
-## Technique 5: Engram Knowledge Pathways
+Before writing:
+1. Search the wiki for related entity and concept pages
+2. Embed at least 2 [[wikilinks]] per major section
+3. Link to raw articles in `sources:` frontmatter
+4. Create cross-references between related topics
 
-**Problem**: The model has knowledge it can't recall at generation time — like engrams with few access paths.
+Common link targets for AI reports:
+- [[entities/anthropic]], [[entities/openai]], [[entities/moonshot-ai]] — labs
+- [[concepts/cuda-moat]], [[concepts/ai-containment-escape]] — concepts
+- [[concepts/edge-llm-microcontroller]], [[concepts/ai-adoption-failures-and-enterprise-psychosis]] — new pages
 
-**Workflow before report generation**:
-1. **Pre-load context**: Scan wiki for 3-5 related pages before writing
-2. **Cross-reference injection**: Embed wikilinks to related concepts inline
-3. **Tag expansion**: Include tags from related pages in the report's reference section
-4. **Multiple query angles**: Before writing, ask yourself "what are 3 different ways this topic connects to existing wiki knowledge?" — then use the richest angle
+## Verification Checklist (post-write)
 
-**Anti-pattern**: Generating a report from scratch without checking what the wiki already knows about the entities and concepts mentioned.
+- [ ] T1: All ChatGPT-isms removed? Any sentence that sounds like it could
+      appear in any blog post about any topic?
+- [ ] T2: Japanese (だ・である), concise bullets, wikilinks, source links?
+- [ ] T3: Atomic 3-tier format on 3+ bullet sections?
+- [ ] T4: Title and opening paragraph are post-revision (not first generation)?
+- [ ] T5: ≥2 wikilinks per major topic?
+- [ ] No section with zero concrete numbers?
+- [ ] Every factual claim has a source (URL or raw article)?
+- [ ] Tables where comparisons would make sense?
 
-## Applying to Existing Cron Jobs
+## Fallback: When Not To Apply
 
-### Slack Hot Posts (`ai-topics-slack-hot-posts` — every 4h)
-This is the highest-visibility report.
-
-**Current impl status (May 2026):** T1-T5 instructions are embedded **inline in the prompt body** (not just via skill loading). Do NOT suggest adding T1-T5 — it's already done. The prompt has explicit:
-- T1 Anti-Examples slop-stripping checklist
-- T2 MoS (style, wikilinks, comparison tables)
-- T3 Atomic Snippets (One-liner + Details)
-- T5 Engram Pathways (pre-scan related_wiki_pages)
-- Per-slot posting guidance (morning/midday/evening/night/late-night/pre-morning)
-
-**If adding new quality guidance:** Append to the existing Quality Requirements section in the prompt rather than duplicating.
-
-### Dreaming Wiki Ingest (`dreaming-wiki-ingest` — daily)
-- **Anti-Examples (T1)**: Strip generic analysis from nightly consolidation
-- **Generate-Rank-Select (T4)**: For the top 1-2 findings, generate alternatives
-- **Atomic Snippets (T3)**: Summary → Detailed findings → Technical appendix
-- **Engram (T5)**: Cross-wiki context for each consolidated theme
-
-### Weekly AI Digest (telegram, weekly)
-- **All 5 techniques** — this is the highest-stakes report
-
-## Reference
-
-- [[concepts/llm-creative-writing]] — Full Gwern methodology
-- [[entities/gwern]] — Gwern Branwen
-- [[wiki/index.md]] — Current wiki state
+- Internal notes, raw article saves, debugging logs — skip quality techniques
+- Very short responses (<100 words) — T4 applies (title variants) but others may
+  be overkill
+- Technical how-tos (setup guides, code examples) — prioritize clarity over
+  density
