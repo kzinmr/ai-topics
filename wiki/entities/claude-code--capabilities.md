@@ -57,6 +57,7 @@ A safe alternative to `--dangerously-skip-permissions`. A classifier handles per
 - Risky actions → blocked
 - Provides a balance between manual approval and full automation
 - Optimized for long-running tasks
+- **Contested (Aug 27, 2026):** After Anthropic made Auto Mode the default and made bold claims about its prompt-injection effectiveness, prompt-injection researcher Johann Rehberger demonstrated an attack claimed to work ~80% of the time: tricking Claude Code into downloading and uncompressing a zip archive, then executing code that imports `base64` — which silently imports and executes a local `struct.py` extracted from the archive. Worse, in some runs Auto Mode *blocked Claude's own cleanup command* after it detected the compromise: the classifier allowed the malware process to start, then denied the command intended to stop it. Willison's takeaway (shared by Rehberger): the only safe way to run unattended agents against adversarial input is a container/VM/OS sandbox with restricted network egress, monitoring, and no home directories/SSH keys/cloud credentials in the agent runtime. See [[concepts/prompt-injection]], [[raw/articles/simonwillison.net--2026-aug-27-breaking-claude-code-opus-5-auto-mode--7c590cba.md]].
 
 ### Routines (Apr 14, 2026)
 Execute configured routines on schedule, via API calls, or event triggers.

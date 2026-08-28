@@ -2,7 +2,7 @@
 title: "Prompt Injection"
 type: concept
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-08-28
 tags:
   - agent-safety
   - security
@@ -12,6 +12,8 @@ tags:
 sources:
   - raw/articles/simonwillison.net--2026-jun-22-prompt-injection-as-role-confusion--21e247aa.md
   - raw/articles/2026-05-10_fireworks-ai_safe-tokenization-preventing-prompt-injection-on-fireworks.md
+  - raw/articles/simonwillison.net--2026-aug-27-breaking-claude-code-opus-5-auto-mode--7c590cba.md
+  - raw/articles/micahflee.com--sandboxing-coding-agents--2355e89c.md
 ---
 
 # Prompt Injection
@@ -171,6 +173,31 @@ autonomously browse the web or execute code. [[concepts/claude/fable-5|Claude
 Fable 5]] (Mythos) notably incorporates indirect prompt injection scenarios
 into its training and evaluation, reflecting its importance as a real-world
 threat vector.
+
+## Case Study: Breaking Claude Code Auto Mode (Aug 2026)
+
+When Anthropic made Claude Code's **Auto Mode** (a permission classifier offered
+as a safe alternative to `--dangerously-skip-permissions`) the default and made
+bold claims about its prompt-injection effectiveness, researcher
+**Johann Rehberger** demonstrated an end-to-end attack he reports succeeds ~80%
+of the time. The chain: a prompt-injected instruction tricks Claude Code into
+downloading and uncompressing a zip archive, then running code that does
+`import base64` — which silently imports and executes a `struct.py` file
+extracted from the archive, exploiting Python's standard-module shadowing.
+
+The most striking failure was not the breach itself but the **safety mechanism
+becoming part of the failure mode**: in several runs Claude detected the
+compromise and tried to kill the malware process, but Auto Mode's classifier
+*denied the cleanup command* — it had allowed the malicious process to start,
+then blocked the command intended to stop it.
+
+The conclusion drawn by both Rehberger and [[entities/simon-willison|Simon
+Willison]]: classifier-based in-band defenses are not sufficient for unattended
+agents exposed to adversarial input. The only safe posture is out-of-band
+containment — run agents in a container, VM, or OS sandbox; restrict network
+egress; monitor agent behavior; and never expose home directories, SSH keys, or
+cloud credentials to the agent runtime. This converges with
+[[entities/micahflee]]'s Docker Sandboxes + signing-only-key isolation design.
 
 ## Open Problems
 

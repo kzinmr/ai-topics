@@ -4,8 +4,9 @@ tags: [person, coding-agents, local-llm]
 sources:
   - raw/articles/micahflee.com--agentic-coding-techniques--fc5e06aa.md
   - raw/articles/micahflee.com--mandatory-update-a-short-story--a332b287.md
+  - raw/articles/micahflee.com--sandboxing-coding-agents--2355e89c.md
 created: 2026-04-24
-updated: 2026-08-09
+updated: 2026-08-28
 type: entity
 ---
 
@@ -92,6 +93,8 @@ In his August 2026 essay *Agentic coding techniques*, Lee describes coding agent
 **Sandboxing agents.** Because autonomous agents require "extremely unsafe YOLO mode" — `claude --dangerously-skip-permissions` or `codex --dangerously-bypass-approvals-and-sandbox` — Lee runs them inside Docker Sandboxes (`sbx` command), preferring CLI versions of Claude and Codex over desktop apps because they're easier to sandbox. Each sandbox runs its own Docker VM (no shared Linux kernel), supports nested Docker (so Docker Compose test suites still work), proxies all network access through a host firewall with an allowed-domains allowlist (GitHub, NPM, PyPi by default, configurable per-sandbox), and provides per-sandbox credential isolation. See [[concepts/sandbox]] and [[concepts/agentic-engineering]] for related analysis.
 
 **Isolating GitHub access.** Lee refuses to browser-login `gh` with full account access inside agent sandboxes — a prompt-injected agent could otherwise read all his secret repositories. Instead he creates fine-grained, repo-scoped personal access tokens (PATs) stored in the `sbx` secrets manager scoped to the specific sandbox, and forwards a dedicated signing-only SSH key into the container for commit signing. A rogue agent is thus contained to a Docker container *and* a single GitHub repo.
+
+**Agent-transparency commit signing (Aug 2026).** In the follow-up *Sandboxing coding agents*, Lee details the setup end-to-end and argues everyone should be transparent about AI use in code: commits made by LLMs should (1) use an author name that makes clear it's not a human, and (2) be signed with a dedicated agent-only SSH key. He generates a separate `~/.ssh/agent-signing-key`, registers its public key on GitHub as a **signing key only** (never an authentication key — otherwise the agent could clone everything his account can access), and provides a `start-isolated-ssh.sh` script that spins up an isolated `ssh-agent` loading only the agent signing key before forwarding it into the Docker Sandbox. This makes "verified" commits attributable to the agent without exposing his personal/Yubikey-backed identity or the rest of his repos. See [[raw/articles/micahflee.com--sandboxing-coding-agents--2355e89c.md]].
 
 ---
 
