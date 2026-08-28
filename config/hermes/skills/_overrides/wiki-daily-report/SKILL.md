@@ -123,6 +123,7 @@ If **no NJ ≥ 4 articles exist**, lead with `📊 Today's Wiki Updates` instead
 - **Raw articles without wiki pages**: Include raw articles in the report even if no concept/entity page was created yet.
 - **Files modified but not new**: If a file was modified from a previous job's run (e.g., dreaming updated frontmatter), note it as "updated" not "new".
 - **Git push may fail in cron**: Report git status clearly but don't retry.
+- **Skill loading is ambiguous by bare name** (observed 2026-08-17): `skill_view(name='wiki-daily-report')` returns "Ambiguous skill name" because the local copy and `~/ai-topics/config/hermes/skills/_overrides/wiki-daily-report/` copy are identical. Workaround: read either file directly with read_file (content is identical), or use the categorized path. Same collision class affects `trending-topics-reporting` and `hermes-report-quality` (reported "not found and skipped" by cron — non-blocking). Note `skill_manage` patch accepts the bare name.
 
 ## Writing Quality Techniques (Gwern-inspired)
 
