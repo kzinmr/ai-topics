@@ -157,9 +157,9 @@ trending-topics (12:00 UTC / 21:00 JST) — トレンドリサーチ
 x-bookmarks-ingest (11:30, 23:30 UTC) — Xブックマークからの記事取り込み
 x-accounts-scan (22:30, 2日毎) — 追跡Xアカウントの新規投稿スキャン
 skeleton-enrich-daily (19:00 UTC) — スケルトンページの強化
-raw-backlog-ingest (0,4,8,12,16,20 UTC) — 未処理raw記事バックログの段階的処理（LANローカルLLM: hermes-llm-serial-gate）
+raw-backlog-ingest — cron停止中。手動バルク処理として `bin/hermes-lucy-raw-backlog dry-run --count N` → `bin/hermes-lucy-raw-backlog run --count N` で実行
   ↑ script: raw_backlog_collect_cron.sh → raw_backlog_collect.py (--sort ai-hint)
-  ↑ 5記事/バッチ × 6回/日 = 30記事/日 → ~200日で全6000件処理
+  ↑ dry-runで選択件数・残件数・過去成功履歴ベースの推定処理時間を確認
   ↑ アーカイブ対比: archive_index.json と照合して既判定済み記事をスキップ
 ```
 
@@ -191,8 +191,8 @@ check-skill-inventory (日 16:00 UTC) — スキル棚卸し
 ### 配信パイプライン
 
 ```
-ai-topics-slack-hot-posts (00:30, 06:30, 12:30 UTC) ──→ ai-topics-discord-hot-posts (00:45, 06:45, 12:45 UTC)
-  ↑ script: ai_topics_slack_hot_posts_context.py            ↑ script: discord_slack_relay.py (no_agent relay)
+ai-topics-slack-hot-posts (00:30, 06:30, 12:30 UTC) — Discord hot-postスレッドへ直送（旧 Slack→Discord リレーは2026-08-28廃止）
+  ↑ script: ai_topics_slack_hot_posts_context.py（Slack履歴はdedup目的でのみ参照）
 
 Weekly AI digest (月 00:00 UTC) → Telegram
 ```
@@ -225,7 +225,7 @@ pipeline-watchdog (2時間毎) ← no_agent, パイプラインヘルスチェ�
 | `papers_index.py` | arXiv論文インデックス管理 | 手動 |
 | `youtube_meta.py` | YouTube動画メタデータ取得 | 手動 |
 | `cloudflare_email.py` | Cloudflare Email Routing経由配信 | 手動 |
-| `raw_backlog_collect.py` | 未処理raw記事の収集（AI優先ソート＋アーカイブ対比） | raw-backlog-ingest |
+| `raw_backlog_collect.py` / `raw_backlog_manual.py` | 未処理raw記事の手動バルク収集・実行（dry-run推定＋AI優先ソート＋アーカイブ対比） | raw-backlog-ingest（cron停止中） |
 | `archive_triage.py` | トリアージskip/reference記事のアーカイブ保存 | blog/newsletter/dreaming-triage-checkpoint |
 
 ---

@@ -263,8 +263,9 @@ the same candidate pool and often re-picks the same topics.
 #### Real Example (Slack hot-posts → Discord relay)
 
 The `ai-topics-slack-hot-posts` job at `5e91a0b47c32` runs every 4 hours (0,4,8,12,16,20
-UTC; 9,13,17,21,1,5 JST). The `ai-topics-discord-hot-posts` job (`56548a0ed1bf`) relays
-Slack output to Discord verbatim 15 min later.
+UTC; 9,13,17,21,1,5 JST) and delivers directly to the Discord hot-post thread
+(legacy Slack→Discord relay job `56548a0ed1bf` / `discord_slack_relay.py` was retired
+2026-08-28; Slack history is still fetched by the context script for dedup only).
 
 **Problem:** 05:30 JST (20:30 UTC, "pre-morning") and 09:30 JST (00:30 UTC, "morning")
 reported the same RL training library topic because 12 wiki pages were created in one
