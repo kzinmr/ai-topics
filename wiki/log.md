@@ -3,6 +3,12 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-08-28] create | concepts/expert-novice-paradox.md (hot-post support)
+
+- Trigger: night-slot hot post on Lars Faye "AI Coding will Prevent Expertise" (raw ingested 2026-08-27 via x-accounts-scan, shared by Addy Osmani Aug 26).
+- Consolidates 4 converging studies (JetBrains Widening Gap, UPenn −17%/+127%, Anthropic 2026 trial, Anthropic skill-formation) already scattered across raw + cognitive-debt pages into one concept page; temporalizes the llm-expertise-amplification thesis ("the moat is no longer being dug").
+- NEW `concepts/expert-novice-paradox.md` (confidence: medium, single-source causal claim flagged contested vs agentic-engineering counterweight). Index entry added.
+
 ## [2026-08-27] x-accounts-scan | 6 new posts (11 accounts) — lopopolo "agent context bundle" + Willison smolvm sandbox
 
 - **Context**: x-accounts-scan run 20260827T223044Z; 84 tracked → 11 scanned (request budget 12, cursor 60→71); 6 new posts across 3 accounts; processed cache 280 (TTL 90d).

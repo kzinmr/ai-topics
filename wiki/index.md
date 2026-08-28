@@ -1763,6 +1763,7 @@
 - [[concepts/exec-plans]] — Execution Plans
 - [[concepts/exhaustive-agentic-search]] — Exhaustive Agentic Search — Filesystem Metaphor and BEAM Traversal
 - [[concepts/experience-is-a-tax]] — Experience is Now a Tax
+- [[concepts/expert-novice-paradox]] — Expert Novice Paradox — AI demands expert-level judgment while removing the friction that builds it; 4 converging studies (JetBrains / UPenn −17%/+127% / Anthropic) on skill formation (added 2026-08-28)
 - [[concepts/experiential-memory]] — Experiential Memory
 - [[concepts/facilitation]] — facilitation
 - [[concepts/fast-plaid]] — FastPLAID
