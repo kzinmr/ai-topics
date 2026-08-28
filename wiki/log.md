@@ -1,3 +1,10 @@
+## [2026-08-28] update | wiki-health-fix: index orphan registration
+
+- Verified reported index corruption (pipe/line-number/triple-bracket/space-prefix): 0 found — already clean upstream.
+- Registered 3 real orphan pages in index.md: entities/bill-gates, entities/louis-abraham, concepts/ai-employment-displacement (all created 2026-08-28, real files, not aliases).
+- Remaining 23 reported orphans are _index.md hubs / _archive paths — intentionally not in main index (false positives per watchdog baseline).
+- Section counts bumped: Entities 913→915, Concepts 2020→2021. validate_index.py passes.
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

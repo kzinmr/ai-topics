@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 
-## Entities (913 pages)
+## Entities (915 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -99,6 +99,7 @@
 - [[entities/benny-chen]] — Benny Chen
 - [[entities/bernstein]] — Bernstein
 - [[entities/berthub-eu]] — Bert Hubert
+- [[entities/bill-gates]] — Bill Gates — Microsoft co-founder, Gates Foundation chair; AI policy commentary (Turbulent AI Era essay, UBI support, work-week shortening) (Aug 2026)
 - [[entities/bespoke-labs]] — Bespoke Labs; added OpenThoughts-Agent pipeline — open curation/training pipeline for agentic models with 100+ controlled ablations (June 25)
 - [[entities/black-forest-labs]] — Black Forest Labs (BFL) — Multimodal AI company; FLUX 3 multimodal Flow Models (image/video/audio/action), FLUX-mimic robotics (July 24)
 - [[entities/block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-...
@@ -493,6 +494,7 @@
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley
 - [[entities/luke-j-huang]] — Luke J. Huang
+- [[entities/louis-abraham]] — Louis Abraham — French open-source developer & data tinkerer (louisabraham.github.io); HN-blogger on LLM code quality ('load-bearing vocabulary') (Aug 2026)
 - [[entities/maarten-grootendorst]] — Data scientist, AI educator, and author of the widely-read 'Visual Guide' series on LLM concepts (quantization, atten...
 - [[entities/machina]] — Machina
 - [[entities/mahadk]] — Technical writer covering AI, web development, and practical software engineering. Writes about LLM applications, clo...
@@ -918,7 +920,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2020 pages)
+## Concepts (2021 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1011,6 +1013,7 @@
 - [[concepts/ai-agent-permission-oversight]] — AI Agent Permission Oversight — ScaleX study: humans miss 1 in 3 threats when approving AI coding agent commands across 40K game runs (Aug 2026)
 - [[concepts/ai-enabled-terrorism]] — AI-Enabled Terrorism — CASP report on Boko Haram using frontier AI for tactical planning and logistics
 - [[concepts/ai-energy]] — AI Energy — AI energy consumption and data center sustainability; training and inference power costs, GPU power envelopes (NVIDIA Vera), efficiency techniques (quantization, speculative decoding, sparsity); major lab sustainability commitments; PJM capacity market modeling errors & $12B ratepayer waste (Aug 2026)
+- [[concepts/ai-employment-displacement]] — AI Employment Displacement — labor displacement frameworks, UBI/de-work proposals, historical-vs-AI-era comparisons (Aug 2026)
 - [[concepts/ai-preflight-safety-testing]] — AI Preflight Safety Testing — Proposed mandatory safety evaluations for frontier AI before deployment
 - [[concepts/apple-silicon-m6-m5-ultra]] — Apple M6 & M5 Ultra — M6 first 2nm Apple silicon (Dual 16-core Neural Engine, 12-core GPU w/ Neural Accelerators, 32GB/170GB/s); M5 Ultra first quad-die SoC (36-core CPU, 80-core GPU, 512GB unified memory @ 1.2TB/s) for on-device frontier LLMs (Aug 25, 2026)
 - [[concepts/apple-speechanalyzer]] — Apple SpeechAnalyzer — Next-generation on-device speech recognition API (iOS 26/macOS 26), 2.12% WER on LibriSpeech, 3-4× improvement over legacy SFSpeechRecognizer
