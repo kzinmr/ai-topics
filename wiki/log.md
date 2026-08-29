@@ -1,3 +1,21 @@
+## [2026-08-29] wiki-health-fix | Daily scan — index clean, header counts corrected
+
+### Verification (live checks before action)
+- index.md corruption: 0 pipe-prefix, 0 line-number-prefix, 0 triple-bracket, 0 space-prefix; validate_index.py clean (3,026 lines)
+- Orphan list (23 items from digest): ALL false positives — 21 `_index.md` hub files exist on disk (hub-served by design, not main-index entries) + 2 archived files under `concepts/gpt/_archive/`
+- Ghost entries: 0 (recursive scan: every index wikilink resolves to a real file or `_index.md`)
+- L2 pipe/bracket corruption in entities/ + concepts/: 0
+- Duplicate index slugs: 0 real duplicates (redirect stubs are legitimately indexed twice — pre-checked file existence per 2026-08-19 finding)
+- Top-level unindexed pages: 0
+
+### Auto-fixes applied
+- index.md header counts: `## Concepts (2021 pages)` → `(2026 pages)`, `## Queries (4 pages)` → `(5 pages)` (recomputed from actual index lines; Entities/Comparisons/Events counts already accurate)
+
+### Notes
+- 829 unique tags vs ~500 in SCHEMA taxonomy: weekly `tag-audit-weekly` cron owns this drift (Layer 3 defense) — not touched here.
+- 2,537 stale pages / 5,507 unprocessed raw articles: report-only metrics, backlog handled by dreaming/raw-backlog pipelines.
+- Unrelated stray files at repo root (fetch_articles.py, hn_trending json, etc., mtime Aug 28) and many `??` wiki/raw/articles files from other pipelines — NOT committed by this job (stage-only-what-I-touched policy).
+
 ## [2026-08-29] watchdog | Daily health scan — index clean, triage chain broken (LLM 503/context)
 
 ### Verification (all reported issues resolved or false-positive)
