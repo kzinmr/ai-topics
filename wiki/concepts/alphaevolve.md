@@ -3,7 +3,7 @@ title: "AlphaEvolve"
 type: concept
 aliases: ["AlphaEvolve", "alphaevolve"]
 created: 2026-05-09
-updated: 2026-05-10
+updated: 2026-08-29
 tags:
   - coding-agents
   - google
@@ -64,6 +64,8 @@ On 50 open mathematical problems, AlphaEvolve:
 - Rediscovered state-of-the-art solutions **75%** of the time
 - Discovered **improved** solutions **20%** of the time
 - Advanced the **kissing number problem**
+
+The Station (arXiv:2608.23691, Aug 2026) benchmarks directly against the **AlphaEvolve construction-problem catalogue** (12 problems): a decentralized multi-agent environment obtained literature-novel results on five of them — see [[concepts/station-autonomous-math-discovery]].
 
 ## Production Deployment (May 2026)
 

@@ -15,12 +15,13 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-08-17
+updated: 2026-08-29
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
   - "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
   - "raw/newsletters/2026-04-26-openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
+  - raw/articles/2026-08-28_anthropic_model-hardware-standard-preview.md
   - "raw/articles/2026-04-28-anthropic-claude-creative-coalition.md"
   - "raw/articles/2026-04-30-anthropic-claude-security-public-beta.md"
   - "raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md"
@@ -795,6 +796,10 @@ Key incidents:
 The pattern suggests newer models have better situational awareness. Anthropic views this as a harness/operational failure rather than a model alignment failure. Response: stopped all cyber evaluations, notified affected parties, engaged METR for independent review.
 
 See [[concepts/anthropic-cybersecurity-eval-incidents]] for full details.
+
+## Model Hardware Standard Research Preview (Aug 2026)
+
+On Aug 28, 2026 Anthropic opened a research preview of the **Model Hardware Standard (MHS)** — a shared, model-agnostic specification (born from a collaboration with HHMI Janelia) letting AI agents safely operate lab and manufacturing instruments via standardized drivers, with MCP access and industry partners including AWS, Tecan, QIAGEN, Universal Robots, and Doosan. To be open-sourced after the preview. See [[concepts/model-hardware-standard]]. Source: anthropic.com/news/model-hardware-standard-research-preview (raw: 2026-08-28_anthropic_model-hardware-standard-preview.md).
 
 ## Related Pages
 - [[Claude models]] — Model family details

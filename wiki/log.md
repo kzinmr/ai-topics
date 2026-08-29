@@ -1,3 +1,17 @@
+## [2026-08-29] active-crawl | 3 new pages + 1 stub enriched + 4 enrichments (MHS, Station, Materialized Memory, Cursor wind-down)
+
+- Discovery: HN Algolia window Aug 25–29 (00:20 UTC slot, ≥30 pts → 15 stories). GLM-5.3 open-weight already covered (concepts/glm-5-3.md, Aug 27 batch); Anthropic blacklisting ruling is paywalled news → deferred to trending-topics; non-AI items (OpenTIE, Flatpak, StemDeck, GrapheneOS) skipped.
+- NEW `concepts/model-hardware-standard.md` — Anthropic Model Hardware Standard research preview (Aug 28, HN 133): standardized drivers + read/write primitives for agents operating lab/manufacturing hardware; MCP-accessible, model-agnostic; HHMI Janelia origin; partners AWS Strands Robots, Tecan, QIAGEN, Universal Robots, Doosan, MBF Bioscience, Danaher, Automata; physical-reasoning safety limits (Genentech foaming example).
+  - raw: `raw/articles/2026-08-28_anthropic_model-hardware-standard-preview.md` (full scrape, sha256 1b31c92d…)
+- NEW `concepts/station-autonomous-math-discovery.md` — arXiv:2608.23691 (Chung/Du/Wesley, Aug 24, HN 108): decentralized multi-agent "Station" math discovery; 5 literature-novel results on AlphaEvolve-catalogue problems (Kakeya, kissing-604-dim11, Book Ramsey, Erdős min-overlap); theorems + released dialogues/proofs.
+  - raw: `raw/articles/2026-08-24_arxiv_autonomous-mathematical-discovery-station.md` (abstract + notes, sha256 f6c8717d…)
+- NEW `concepts/materialized-agent-memory.md` — pwning.systems "LLM memory as program analysis" (Aug 28, HN 164): Datalog-backed truth-maintenance for long-horizon vuln-research agents; dependency-tracked materialization replaces RAG-over-transcripts; incremental belief invalidation.
+  - raw: `raw/articles/2026-08-28_pwning-systems_llm-memory-as-program-analysis.md` (full scrape, sha256 ca8a2138…)
+- ENRICHED `concepts/datalog.md` — stub → complete; Datalog-as-LLM-memory-substrate section; formal-methods/agent-memory tags.
+- ENRICHED `concepts/spacex-cursor-acquisition.md` — new section: OpenAI winds down Cursor model contract (Aug 28, HN 548; Nov 12 2026 shutoff; ToS-violation rationale; Astra accountability). raw: `raw/articles/2026-08-28_openai_cursor-contract-wind-down.md` (sha256 f085464e…)
+- ENRICHED `entities/anthropic.md` (MHS preview section), `entities/openai-astra.md` (Cursor wind-down source), `concepts/ai-mathematics-theorem-proving.md` + `concepts/alphaevolve.md` (Station cross-links).
+- SCHEMA.md: `arxiv` tag added to Meta taxonomy (was used pre-taxonomization). index.md: 3 entries added, count 2680.
+
 ## [2026-08-28] update | warp-factories: closed-loop self-improvement spec (hot-post support)
 
 - Trigger: late-night hot post on Warp's Aug 27 follow-up "Closing the loop with self-improving cloud software factories" (raw: 2026-08-28_warp_agent-self-improving-software-factories.md, sitemap scrape).

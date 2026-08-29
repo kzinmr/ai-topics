@@ -1,7 +1,7 @@
 ---
 title: "SpaceX Acquires Cursor — $60B Coding Agent Acquisition"
 created: 2026-06-20
-updated: 2026-07-09
+updated: 2026-08-29
 type: concept
 tags:
   - company
@@ -15,6 +15,7 @@ sources:
   - https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/
   - https://www.sec.gov/Archives/edgar/data/1181412/000162828026043411/spaceexplorationtechnologi.htm
   - raw/newsletters/2026-07-09-ainews-spacexai-launches-grok-4-5-first-opus-class-model-post-cursor-acquisition.md
+  - raw/articles/2026-08-28_openai_cursor-contract-wind-down.md
 ---
 
 # SpaceX Acquires Cursor — $60B Coding Agent Acquisition
@@ -104,6 +105,12 @@ This integration also validates the thesis that coding agent usage data is a str
 ### Relationship to Grok Build
 
 xAI had previously launched [[entities/grok-build|Grok Build]] (May 2026) as a terminal-based coding agent. Grok 4.5 provides the underlying model capability that could power both Grok Build and Cursor's agent harness, blurring the lines between xAI's in-house coding agent and the acquired Cursor platform.
+
+## Post-Acquisition: OpenAI Winds Down Cursor Model Contract (Aug 28, 2026)
+
+On August 28, 2026, OpenAI announced it will **wind down its contract providing OpenAI models to Cursor**, with a proposed shutoff date of **November 12, 2026** — the maximum notice allowed by the contract. The post (HN 548 pts) cited: (1) Musk-era Twitter/xAI violations of OpenAI's terms of service, with Musk having admitted under oath that xAI violated them; (2) a change-of-control cancellation window in the custom Cursor agreement; and (3) a new accountability posture around the upcoming **Astra** model — OpenAI will not supply future models to Cursor. OpenAI emphasized support for affected developers ("go above and beyond"). ^[raw/articles/2026-08-28_openai_cursor-contract-wind-down.md]
+
+This makes the acquisition's model-vendor split concrete: post-ShutOff, Cursor's model menu narrows to SpaceXAI/Grok (co-trained since July), Anthropic, and open weights — accelerating the model-portability question the acquisition itself raised (see [[concepts/coding-agents/model-routing]]), and confirming the concentration-risk themes HN commenters flagged in June.
 
 ## See Also
 

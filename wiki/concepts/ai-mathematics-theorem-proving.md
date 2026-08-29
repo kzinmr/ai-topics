@@ -1,7 +1,7 @@
 ---
 title: "AI for Mathematical Theorem Proving and Theoretical Computer Science"
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-08-29
 type: concept
 tags:
   - model
@@ -69,6 +69,7 @@ Several open questions remain about the role of AI in mathematical research. How
 ## Related Pages
 
 - [[entities/openai|OpenAI]] — Company behind the Astra model and these results
+- [[concepts/station-autonomous-math-discovery|Station]] — Decentralized multi-agent math discovery on the AlphaEvolve catalogue (arXiv:2608.23691, Aug 24, 2026); complementary paradigm: multi-model collaboration vs. Astra's single-model depth + Lean certificates
 - [[gpt/gpt-rosalind|GPT-Rosalind]] — OpenAI's model for scientific discovery in biology
 - [[claude-science|Claude Science]] — Anthropic's AI workbench for life sciences
 - [[formal-verification-llm-agents|Formal Verification for LLM Agents]] — Broader context for AI and formal methods

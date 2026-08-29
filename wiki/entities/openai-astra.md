@@ -2,7 +2,7 @@
 title: "OpenAI Astra"
 type: entity
 created: 2026-08-03
-updated: 2026-08-24
+updated: 2026-08-29
 tags:
   - model
   - openai
@@ -17,6 +17,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-two-critical-updates-re-astra-and--79f7c1a6.md
   - raw/newsletters/2026-08-10-the-model-openai-won-t-release.md
   - raw/newsletters/2026-08-23-openai-slows-for-show-anthropic-s-strong-bonds-and-china-s-open-offensive.md
+  - raw/articles/2026-08-28_openai_cursor-contract-wind-down.md
 related:
   - entities/openai
   - concepts/gpt/gpt-5-6
