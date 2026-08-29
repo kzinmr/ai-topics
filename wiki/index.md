@@ -757,7 +757,7 @@
 - [[entities/serena-ge]] — Serena Ge
 - [[entities/sero]] — Sero (0xSero)
 - [[entities/servicenow]] — ServiceNow
-- [[entities/seshadri]] — Seshadri / sseshadri43
+- [[entities/seshadri]] — Shrikar Seshadri (@sseshadri43) — LangChain Deep Agents engineer; co-authored RubricMiddleware (Grading Rubrics) with Sydney Runkle
 - [[entities/seth-karten]] — Seth Karten
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, co-founder of Lunar Strategy (250+ projects), AI marketer and Herme...
 - [[entities/sheshansh-agrawal]] — Sheshansh Agrawal
@@ -802,7 +802,7 @@
 - [[entities/supermemory]] — Supermemory (SMFS)
 - [[entities/superpowers]] — Superpowers — Jesse Vincent/Prime Radiant agent skills framework; 7-step TDD methodology, spec interviews, subagent-driven development; used by Wes McKinney
 - [[entities/susam-net]] — Susam Pal
-- [[entities/sydney-runkle]] — Sydney Runkle / sydneyrunkle
+- [[entities/sydney-runkle]] — Sydney Runkle (@sydneyrunkle) — LangChain/LangGraph staff engineer; leads Deep Agents runtime (DeltaChannel, Grading Rubrics)
 - [[entities/tailcalled]] — tailcalled
 - [[entities/takuya-akiba]] — Takuya Akiba (@iwiwi)
 - [[entities/talkie]] — Talkie

@@ -52,6 +52,7 @@ This is part of LangChain's broader push toward **long-running, production-grade
 
 - [[concepts/harness-profiles|Harness Profiles]] — model-specific agent optimization
 - [[entities/langchain|LangChain]] — the framework behind DeltaChannel
+- [[entities/sydney-runkle|Sydney Runkle]] — authored the DeltaChannel runtime work
 - [[concepts/deep-agents|Deep Agents]] — LangChain's agent framework using DeltaChannel
 - [[concepts/agent-memory|Agent Memory]] — broader context for state management in agents
 - [[concepts/durable-execution|Durable Execution]] — related pattern for long-running agent reliability

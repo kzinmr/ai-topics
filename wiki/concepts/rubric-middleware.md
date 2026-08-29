@@ -158,6 +158,7 @@ RubricMiddleware is in **beta** (June 2026) and the API may change.
 - [[concepts/agent-evaluation]] — Broader evaluation patterns for AI agents
 - [[concepts/evaluation/llm-as-judge]] — LLM-as-judge: the evaluation paradigm RubricMiddleware formalizes into middleware
 - [[entities/langchain]] — The company behind Deep Agents and RubricMiddleware
+- [[entities/sydney-runkle]] / [[entities/seshadri]] — The LangChain engineers who authored it
 
 ## Sources
 

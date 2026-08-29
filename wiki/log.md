@@ -1,3 +1,27 @@
+## [2026-08-29] skeleton-enrich | Sydney Runkle + Shrikar Seshadri (LangChain)
+
+### Trigger
+Both `wiki/entities/sydney-runkle.md` and `wiki/entities/seshadri.md` arrived as `status: skeleton` (generated 2026-06-03 from the RubricMiddleware X Article by Seshadri and Runkle). No richer git-history version existed — first commit was the skeleton. Enriched from scratch via multi-source research.
+
+### Sydney Runkle -> full profile (~6.7 KB)
+Verified facts: **UC Santa Barbara CS undergrad**; worked on **PyMC** (probabilistic programming) before LangChain; **first LangChain open-source contribution = a documentation typo fix**; described as LangGraph **core maintainer** (Deep Dive with Sydney Runkle, youtube 7lZKkOTGIWo). GitHub API: **937 authored issues/PRs in the `langchain-ai` org**; 1,650+ commits in `langchain-ai/langchain`, including Pydantic AI harness integration (2026-08). Top repos: `deltatangram` (DeltaChannel runtime, "tangible progress" backronym), `context-delta`, `pyvtr` (PyMC VTR sampler), `agent-authoring`, `databricks-ai-bridge`. Contributions also in `deepagents`, `open_deep_research`, `ag-ui`, `langgraph`, `py-pydantic-ai`. Two talks: DeepLearning.AI *How Agents Can Improve Themselves*, AI Engineer *Agentic Context Engineering / EvoJson*. Public footprint is mostly threads/Substack commentary (The Missing Bit: *Claude Code Loops*, Devs Near You) rather than long-form essays — recorded as such rather than inventing an essay record. Cross-linked to new concept pages [[concepts/delta-channels]] (Runkle's own runtime writeup) and [[concepts/rubric-middleware]], and to [[entities/varun-trivedy]] (co-author of the Deep Agents evals methodology).
+
+### Shrikar Seshadri -> profile (~4.5 KB)
+Identity resolved via GitHub, not X/Grokipedia (both returned nothing): **@sseshadri43 = @sseshadri = Shrikar Seshadri**, Kaglyn AI/ML Engineering Intern, research at the **intersection of IR and agentic systems**. Google Scholar confirms **three first-author papers** (formerly listed as "Seshadri S"): *DeepXiv* (arXiv 2510.22330 — open academic search plus an **Explainable Retrieval Evaluation** metric), *Towards Highly Effective Retrieval Techniques for Biomedical RAG* (ACM 2024), *Query-Only Vector Search with Query-Aware Reranking* (ICT4AI 2023 at SIGIR). `DeepXiv` repo confirmed live on GitHub; **`Agent-Workspace-API` repo confirmed live** — independently corroborates the *Introducing Agent Workspace API* X Article that the RubricMiddleware raw article referenced. Same-benchmark results were already wiki-documented in [[concepts/recall-over-precision]] (DeepXiv-Mix-004) and [[concepts/agentic-hybrid-retrieval]] (DeepXiv-003, HotpotQA Recall@5 0.671). Also cross-linked to [[entities/vivek-trivedy]] (LangChain Retrieval lead) and [[concepts/llms-as-research-agents]].
+
+### Honest uncertainty recorded (not fabricated)
+- **No employer stated for Sydney Runkle on any primary source reached** — LangChain affiliation is inferred from her repos (all `langchain-ai` org) and talks. Stated as such on the page.
+- **No LinkedIn/Crunchbase record found for Seshadri**, and no public GitHub activity under Seshadri's handle in the `langchain-ai` org. Both noted explicitly on the page.
+
+### Cross-references added
+- `wiki/index.md` — both one-line entries upgraded from "Name / handle" stubs to substantive descriptions
+- `wiki/concepts/delta-channels.md` — added `[[entities/sydney-runkle]]` to Related Concepts
+- `wiki/concepts/rubric-middleware.md` — added `[[entities/sydney-runkle]]` / `[[entities/seshadri]]` line (both author entities existed but were unlinked)
+- Both entity pages: `related:` frontmatter and References lists extended (verified no duplicate entries)
+
+### Verification
+`python3 scripts/validate_index.py` -> clean (3,026 lines). `status: skeleton` removed from both files, `type: entity` set. Staged only the 5 files this run touched (`wiki/entities/{sydney-runkle,seshadri}.md`, `wiki/concepts/{delta-channels,rubric-middleware}.md`, `wiki/index.md`) — the working tree carries many unrelated sibling-process changes (skills/, inbox/rss-scans/, raw/articles/) deliberately excluded from this commit.
+
 ## [2026-08-29] wiki-health-fix | Daily scan — index clean, header counts corrected
 
 ### Verification (live checks before action)
