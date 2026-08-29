@@ -1,3 +1,20 @@
+## [2026-08-29] watchdog | Daily health scan — index clean, triage chain broken (LLM 503/context)
+
+### Verification (all reported issues resolved or false-positive)
+- index.md: 0 pipe-prefix, 0 line-number-prefix, 0 triple-bracket; validate_index.py clean (3,026 lines)
+- concepts/ai-employment-displacement gap from last week's graph report: already fixed upstream (indexed at line 1017)
+- Duplicate groups / orphans / broken links: reported in weekly graph analysis 2026-08-28 (5 real dupes pending human merge decision; 478 orphans stable)
+
+### Pipeline alerts (NEEDS-HUMAN, root cause identified)
+- blog-triage and newsletter-triage both failed today with `Context length exceeded (~48.7K tokens, cannot compress)`; newsletter-triage also hit `HTTP 503: Local LLM server is busy`
+- Cascade: downstream blog/newsletter-wiki-ingest and dreaming-wiki-ingest also status=error; yesterday's triage failures were also context-length related
+- x-accounts-scan stale(26h): benign — every-2-days schedule, last run 2026-08-27 22:30 UTC status=ok (6 new posts, budget-capped scan)
+- Suggested human fix: raise context budget or shrink checkpoint payload for triage jobs (checkpoint ~12.5KB + skill templates exceed the local model's window when fallback lands on a small model)
+
+No wiki file changes made this run.
+
+---
+
 ## [2026-08-29] trending-topics | ingest | Terminal-Bench-Science 0.1
 - Source: https://www.terminal-bench-science.ai/announcement (HN 115 pts, item 49472820, Aug 28)
 - Saved: raw/articles/2026-08-29_terminal-bench-science-0-1-announcement.md (70 expert-curated science workflow tasks; Claude Opus 5 / Claude Code top at 30.0%, GPT-5.6 Sol 22.4%)
