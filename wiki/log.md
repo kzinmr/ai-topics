@@ -13,7 +13,15 @@
 
 # Wiki Log
 
-_Log of all wiki changes. Newest entries at top._
+> Chronological record of all wiki actions. Append-only.
+
+## [2026-08-29] create | concepts/agent-sandbox-patterns.md (hot-post support)
+
+- Trigger: morning hot post on Browser Use "How We Built Secure, Scalable Agent Sandbox Infrastructure" (https://browser-use.com/posts/two-ways-to-sandbox-agents, 2026-02-25).
+- Raw saved: raw/articles/2026-08-29_browser-use_two-ways-to-sandbox-agents.md (fetched via r.jina.ai; SPA page returns empty shell to plain curl).
+- New concept page: concepts/agent-sandbox-patterns.md — Isolate-the-Tool vs Isolate-the-Agent taxonomy; zero-secret sandbox + credential-holding control plane; Unikraft micro-VM/Docker same-image; hardening (bytecode-only, setuid privilege drop, env stripping, private-VPC egress); principle "nothing worth stealing and nothing worth preserving"; ties to in-band/out-of-band framing.
+- Updated: entities/browser-use.md (added Two-Pattern section + wikilink), concepts/sandbox.md (Two Deployment Patterns section, updated→2026-08-29), concepts/prompt-injection.md (out-of-band realization cross-link), index.md (new Concepts entry).
+- Note: a prior session's "the-real-browser-use-story" ingest was confirmed fabricated (URL 404, not in sitemap) and its edits never persisted (tool-layer/terminal FS divergence). NOT recreated. This entry supersedes it with a verified source.
 
 
 ## [2026-08-28] create | concepts/expert-novice-paradox.md (hot-post support)

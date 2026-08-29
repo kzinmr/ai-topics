@@ -965,6 +965,7 @@
 - [[concepts/agent-quota-resets]] — Agent Quota Resets — Economics of weekly quota resets by Anthropic/OpenAI for coding agent subscriptions; behavioral distortion and competitive dynamics (July 2026)
 - [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
 - [[concepts/agent-safety-incidents-open-source]] — AI Agent Safety Incidents in Open-Source Communities
+- [[concepts/agent-sandbox-patterns]] — Agent Sandbox Patterns — Isolate-the-Tool vs Isolate-the-Agent; zero-secret agent + credential-holding control plane (Unikraft micro-VM); Browser Use production architecture (Feb 2026)
 - [[concepts/agent-security-patterns]] — Agent Security Patterns
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
 - [[concepts/agent-skills-skillmd]] — Agent Skills (SKILL.md)

@@ -94,7 +94,16 @@ await agent.run()
 - [Everything I Got Wrong in the Last 4,000 Commits](https://browser-use.com/posts/everything-i-got-wrong)
 - [The Bitter Lesson of Agent Harnesses](https://browser-use.com/posts/bitter-lesson-agent-harnesses)
 - [BUX: Your 24/7 Remote Agent](https://browser-use.com/posts/bux-launch-blog)
-- [How We Built Secure, Scalable Agent Sandbox Infrastructure](https://browser-use.com/posts/two-ways-to-sandbox-agents)
+- [How We Built Secure, Scalable Agent Sandbox Infrastructure](https://browser-use.com/posts/two-ways-to-sandbox-agents) (2026-02-25) — "two ways to sandbox an agent." → [[concepts/agent-sandbox-patterns]]
+
+## Sandbox Architecture: Two Patterns (2026-02-25)
+
+To isolate code-executing agents running at scale, Browser Use framed two options and migrated from the first to the second:
+
+- **Pattern 1 — Isolate the tool**: agent loop runs on your infra; only code-exec/terminal run in an HTTP-callable sandbox. Problem: agent loop shared the REST-API process → redeploys killed running agents.
+- **Pattern 2 — Isolate the agent**: the *entire* agent runs with **zero secrets**, reaching the world only through a stateless **control plane** that holds all credentials (proxies LLM calls, S3 via presigned URLs, billing/cost caps). Sandbox gets 3 env vars, nothing else.
+
+Runtime: same image everywhere — **Unikraft micro-VM** in prod (<1s boot, scale-to-zero, multi-metro) vs **Docker** in dev/evals. Hardening: bytecode-only (`.py` deleted), `setuid` privilege drop, `os.environ` stripping, private-VPC egress. Governing principle: *"your agent should have nothing worth stealing and nothing worth preserving."* → [[concepts/agent-sandbox-patterns]]
 
 ## Philosophy: "The Bitter Lesson of Agent Harnesses"
 

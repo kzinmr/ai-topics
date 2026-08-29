@@ -198,6 +198,10 @@ containment — run agents in a container, VM, or OS sandbox; restrict network
 egress; monitor agent behavior; and never expose home directories, SSH keys, or
 cloud credentials to the agent runtime. This converges with
 [[entities/micahflee]]'s Docker Sandboxes + signing-only-key isolation design.
+A production-scale realization of this out-of-band posture is Browser Use's
+**"isolate the agent"** control-plane pattern — the agent runs with zero secrets
+and reaches the world only through a credential-holding proxy. See
+[[concepts/agent-sandbox-patterns]].
 
 ## Open Problems
 

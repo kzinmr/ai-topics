@@ -8,7 +8,7 @@ tags:
   - mcp
 status: L3
 created: 2026-04-27
-updated: 2026-08-20
+updated: 2026-08-29
 aliases: [Agent Sandboxing, AI Sandbox, Code Sandbox]
 sources: [https://firecracker-microvm.github.io/, https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/security, raw/articles/simonwillison.net--2026-aug-19-smolmachines-untrusted-sandbox--50e1e147.md]
 ---
@@ -42,6 +42,10 @@ Sandboxing for AI agents is the practice of executing untrusted agent code in is
 - **Browser Automation**: browser-use and Playwright MCP run browser instances in isolated containers, preventing access to the user's actual browser data or credentials
 - **Multi-Tenant Agent Platforms**: Claude Managed Agents and OpenAI Responses API run each customer's agents in separate microVMs with Firecracker
 - **Plugin/MCP Server Isolation**: Each MCP server runs in its own sandboxed process, preventing a compromised server from affecting other servers or the agent runtime
+
+## Two Deployment Patterns: Isolate the Tool vs Isolate the Agent
+
+Browser Use (Feb 2026) names the two architectures for sandboxing a **code-executing** agent: **Pattern 1 — isolate the tool** (agent on your infra, dangerous ops in an HTTP-callable sandbox) vs **Pattern 2 — isolate the agent** (the whole agent runs with zero secrets, reaching the world only through a credential-holding control plane). They migrated 1→2 and settled on the principle *"your agent should have nothing worth stealing and nothing worth preserving."* Full anatomy (Unikraft micro-VM, bytecode-only, privilege drop, env stripping, presigned-URL egress): [[concepts/agent-sandbox-patterns]]. `raw/articles/2026-08-29_browser-use_two-ways-to-sandbox-agents.md`
 
 ## Related Concepts
 
