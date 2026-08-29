@@ -2,7 +2,7 @@
 title: "Terminal-Bench"
 type: concept
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-29
 tags:
   - benchmark
   - evaluation
@@ -14,6 +14,10 @@ sources:
     stars: "2.4k"
     affiliation: "Stanford / Harbor"
     year: 2025
+  - title: "Terminal-Bench-Science 0.1 Leaderboard Announcement"
+    url: "https://www.terminal-bench-science.ai/announcement"
+    affiliation: "Stanford / Terminal-Bench team"
+    year: 2026
 related_concepts:
   - concepts/ai-benchmarks/swe-bench
   - concepts/ai-benchmarks/appworld
@@ -52,6 +56,25 @@ Terminal-Bench evaluates:
 - Agents frequently make errors in command syntax, flag usage, and tool invocation order
 - The benchmark reveals important gaps in agents' understanding of system-level concepts
 - Performance varies significantly by task complexity and domain
+
+## Terminal-Bench-Science 0.1 (2026-08-28)
+
+The Terminal-Bench team (Stanford) extended the harness from software engineering to **science**:
+70 expert-curated research workflows spanning life, physical, Earth, mathematical, and engineering
+sciences. Practicing scientists (not model developers or data vendors) author and grade tasks, which
+are scored on concrete artifacts (analyses, simulations, proofs, code, data products) via
+task-specific reproducible tests. Unlike most scientific benchmarks, it is designed as a **continuous
+benchmark** with regular releases rather than a one-shot paper artifact.
+
+**0.1 Leaderboard (resolution rate):** Claude Opus 5 / Claude Code **30.0%** · GPT-5.6 Sol / Codex 22.4% ·
+Claude Fable 5 / Claude Code 21.4% · Claude Opus 4.8 / Claude Code 10.5% · GPT-5.6 Terra / Codex 8.6% ·
+GLM 5.3 / Claude Code 8.1% · Kimi K3 / Claude Code 7.1% · Grok 4.6 / Grok Build 7.1% · GPT-5.6 Luna / Codex 3.3%.
+
+Significance: even the best model resolves under a third of real research workflows — headroom for
+agents in science remains large, and the leaderboard doubles as a harness×model dataset (Codex line =
+OpenAI, Claude Code line = Anthropic + open-weight ports; see
+[[concepts/ai-benchmarks/nanogpt-speedrun-frontier]]). Announced 2026-08-28
+(HN: https://news.ycombinator.com/item?id=49472820, 115 pts).
 
 ## Related Benchmarks
 

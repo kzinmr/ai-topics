@@ -1,3 +1,10 @@
+## [2026-08-29] trending-topics | ingest | Terminal-Bench-Science 0.1
+- Source: https://www.terminal-bench-science.ai/announcement (HN 115 pts, item 49472820, Aug 28)
+- Saved: raw/articles/2026-08-29_terminal-bench-science-0-1-announcement.md (70 expert-curated science workflow tasks; Claude Opus 5 / Claude Code top at 30.0%, GPT-5.6 Sol 22.4%)
+- Updated: concepts/ai-benchmarks/terminal-bench.md (new "Terminal-Bench-Science 0.1" section + leaderboard + source; updated date bumped)
+- Updated: concepts/ai-benchmarks/nanogpt-speedrun.md (Related Pages link for harness x model lineage)
+- Report: inbox/rss-scans/trending-topics-2026-08-29.md
+
 ## [2026-08-29] active-crawl | 3 new pages + 1 stub enriched + 4 enrichments (MHS, Station, Materialized Memory, Cursor wind-down)
 
 - Discovery: HN Algolia window Aug 25–29 (00:20 UTC slot, ≥30 pts → 15 stories). GLM-5.3 open-weight already covered (concepts/glm-5-3.md, Aug 27 batch); Anthropic blacklisting ruling is paywalled news → deferred to trending-topics; non-AI items (OpenTIE, Flatpak, StemDeck, GrapheneOS) skipped.

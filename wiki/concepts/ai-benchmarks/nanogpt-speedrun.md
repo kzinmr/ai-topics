@@ -54,5 +54,6 @@ This leaderboard is a constructive datapoint for [[concepts/quantifying-infrastr
 - [[entities/prime-intellect]] — publisher; open stack for self-improving agents
 - [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — OpenAI's harness-variance analysis; consumer-side corroboration
 - [[concepts/ai-benchmarks/swe-bench]] — boolean-task coding benchmark family
+- [[concepts/ai-benchmarks/terminal-bench]] — same harness×model leaderboard lineage, now extended to science workflows (Terminal-Bench-Science 0.1)
 - [[concepts/self-evolving-agents]] — agents that improve their own toolchains
 - [[concepts/ai-evals]] — evaluation methodology overview
