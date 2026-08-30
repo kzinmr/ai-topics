@@ -1,3 +1,26 @@
+## [2026-08-30] x-accounts-scan | Brace Sproul enriched from X timeline — OpenWiki 0.4.0 (claims runtime for forgetting/self-correction, wiki evals, OKF 2.0)
+
+**Trigger**: `x-accounts-scan` cron. No `status: skeleton` pages remain in `wiki/entities/` (0 matches), so the run pivoted to incremental enrichment of pages with unresolved TODO markers, driven by fresh X timeline data.
+
+**Pages updated**: 1
+- `entities/brace-sproul.md` — added "OpenWiki 0.4.0 (late Aug 2026)" + "Broader LangChain themes" sections; `updated` bumped to 2026-08-30; index.md entry rewritten.
+
+**Key facts ingested** (source: `xurl /2/users/797465269/tweets`, 20 posts, 2026-08-29→30):
+- Brace Sproul = "Brace", Head of Applied AI at @LangChain, prev @anything; 6,583 followers, 3,198 tweets.
+- **OpenWiki 0.4.0** — claims runtime gives a wiki a persistent source of truth so it can *forget* and self-correct; coding-agent integrations; OKF 2.0 / 0.2 support.
+- Brace: *"Figuring out how to make an agent 'forget' things is a super tricky problem."*
+- Brace: *"Evaluating wikis is a really tricky and nuanced problem... evals for the different components of a wiki agent"* — incl. whether wikis are helpful at all.
+- Harrison Chase (amplified): model labs will build great harnesses but **block model access to other labs' harnesses** (harness-as-moat); DeepAgents becoming a **multiplayer harness** (auth, memory).
+- LangSmith Engine >2x on internal benchmarks; traces mined into environments to hill-climb agents.
+
+**Process note (reusable)**: `xurl` does not accept `-n`; correct form is `xurl "/2/users/<id>/tweets?max_results=20" > /tmp/out.json` (avoid piping xurl output into a python interpreter — blocked by security scan). Resolve user ID first via `xurl /2/users/by/username/<handle>`.
+
+**Remaining TODO clusters** (not processed this run — need non-X sources):
+- Anthropic Claude Labs / Claude Design product-architecture specifics (819-line `entities/anthropic.md` has no TODOs but `concepts/anthropic-claude-labs.md` does — thin public sourcing).
+- `entities/solo-founder-stack.md`, `entities/tilert.md`, `entities/eleanor-berger.md`, `entities/fourier-intelligence.md` — single-mention entities, low value for enrichment effort.
+
+**Pages created**: 0
+**Raw archived**: 0
 ## [2026-08-30] dreaming | Weekly consolidation scan — 70 recent never-archived articles triaged (0 pages; upstream collect pipeline emitted 0, Dwarkesh OpenAI/HF incident already covered)
 
 **Scope**: Pattern-E filesystem backlog scan (70 recent never-archived raw articles, all fetched 2026-08-29/30 via blog RSS). Checkpoint payload emitted 0 articles (`collect→group` produced no candidate pool — see Observations), so this run used the recent-raw backlog directly.

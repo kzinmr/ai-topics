@@ -110,7 +110,7 @@
 - [[entities/boris-cherny--core-ideas]] — Boris Cherny — Core Ideas & Philosophy
 - [[entities/boris-cherny--key-work]] — Boris Cherny — Key Work & Impact
 - [[entities/box-com]] — Box (box.com)
-- [[entities/brace-sproul]] — Brace Sproul — Head of Applied AI at LangChain; led OpenWiki release (July 2)
+- [[entities/brace-sproul]] — Brace Sproul — Head of Applied AI at LangChain; leads OpenWiki (v0.4.0 claims runtime for agent forgetting/self-correction, wiki evals) (Aug 30)
 - [[entities/brad-lyons]] — Brad Lyons; enriched from skeleton to comprehensive entity page with AI Investment Supercycle Hypothesis, Revenue Segmentation, multi-sector coverage (SaaS, semis, nuclear, gaming), and expanded research methodology (June 23)
 - [[entities/bradford-morgan-white]] — Bradford Morgan White
 - [[entities/brain-co]] — Brain Co.
