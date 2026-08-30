@@ -1,3 +1,16 @@
+## [2026-08-30] lint | wiki-health-fix — all clean, no action
+
+Verification pass over reported health digest. No remediation applied (none warranted).
+
+- **Index corruption**: 0 (pipe_prefix / line_number_prefix / triple_bracket / space_prefix / double_pipe all 0). `validate_index.py` exit 0, 3026 lines clean.
+- **Ghost entries**: recursive `os.walk` scan of all 3009 unique index wikilink targets → 0 real ghosts (skill's `wiki/`-prefix + `_index` dir-link pitfalls avoided).
+- **Orphan gaps**: reported 23 all false positives — 21 are `_index.md` design hubs, 2 are `_archive/` files (per skill: nested pages served by hub pages are by-design, not index entries).
+- **Stale pages** (2542) and **unprocessed raw** (5519) are informational backlog, not auto-fixable.
+
+Pipeline healthy; watchdog shifts to verification/gap-reporting role.
+
+---
+
 ## [2026-08-29] skeleton-enrich | Sydney Runkle + Shrikar Seshadri (LangChain)
 
 ### Trigger
