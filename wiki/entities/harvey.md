@@ -12,7 +12,9 @@ tags:
   - benchmark
   - harness-engineering
 aliases:
-  - "Harvey Agentic SOC" ["Harvey AI", "Counsel AI Corporation"]
+  - "Harvey Agentic SOC"
+  - "Harvey AI"
+  - "Counsel AI Corporation"
 sources:
   - https://www.harvey.ai/
   - https://www.harvey.ai/blog

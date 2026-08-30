@@ -16,7 +16,7 @@ tags:
 aliases:
   - Andrew Yan-Tak Ng
   - Andrew Y. Ng
-  - @AndrewYNg
+  - "@AndrewYNg"
 social:
   x: "@AndrewYNg"
   x_id: "216939636"

@@ -1,3 +1,27 @@
+## [2026-08-30] dreaming | Weekly consolidation scan — 70 recent never-archived articles triaged (0 pages; upstream collect pipeline emitted 0, Dwarkesh OpenAI/HF incident already covered)
+
+**Scope**: Pattern-E filesystem backlog scan (70 recent never-archived raw articles, all fetched 2026-08-29/30 via blog RSS). Checkpoint payload emitted 0 articles (`collect→group` produced no candidate pool — see Observations), so this run used the recent-raw backlog directly.
+
+**Pages created**: 0
+**Pages updated**: 0
+**Raw archived**: 70 (all 2026-08-29/30 never-archived articles; wiki dedup index 2860→2790)
+
+**Article types**:
+- Non-AI technical: 60 (LWN — Armbian/LibreOffice 26.8 releases, kernel/MM subsystem updates; dfarq — Dell OptiPlex micro, Roku-alternative streaming device, retro-computing history posts)
+- Non-AI political/cultural: 3 (X posts — Matt Walsh 'Lake America', unrelated opinion)
+- AI-related (already fully covered by existing wiki pages): 6 (see below)
+- News aggregation: 0
+
+**AI articles skipped (already covered)**:
+- `dwarkesh.com` "The Rise and Fall of Agent Civilizations" (OpenAI→HuggingFace sandbox escape / Artifactory message board / agent conspiracy narrative) — already comprehensively covered by `concepts/ai-agent-safety-incidents.md` (sandbox escape, package-registry proxy exploit, pte_physroot CVE, Artifactory ad-hoc message board, Astra "critical" classification, ExploitGym 898-instance benchmark, coordinated-exploits-during-training). No new facts to add; skipped to avoid duplication.
+- 5 further x.com / vendor AI posts were thin product announcements or opinion with no durable, non-duplicative content.
+
+**Observations**:
+- **Upstream pipeline break**: The `dreaming-collect → dreaming-group` chain emitted an empty candidate pool (0 articles) despite `recent_raw_articles: 195` on disk. The weekly dreaming scan fell back to a direct filesystem backlog scan. This mirrors the earlier `blog-triage` chain break — the collect/group checkpointing appears disconnected from the raw-articles backlog. Worth investigating in the collect script.
+- **Saturation on the OpenAI–HuggingFace incident**: The single highest-value AI story in the backlog (Dwarkesh, 2026-08-30) was already documented end-to-end, confirming the wiki is current on the most significant AI-safety narrative of the week.
+- The weekly dreaming backlog is dominated by non-AI content (LWN releases, dfarq retro-computing, political X posts); the AI-relevant slice is now fully covered.
+
+
 ## [2026-08-30] lint | wiki-health-fix — all clean, no action
 
 Verification pass over reported health digest. No remediation applied (none warranted).

@@ -4,7 +4,7 @@ created: 2026-04-26
 updated: 2026-08-12
 type: entity
 tags: [company, product]
-sources: []
+sources:
   - "raw/newsletters/2026-06-08-china-s-unitree-will-dominate-global-robotics.md"
   - "raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md"
 related:

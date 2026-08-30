@@ -4,9 +4,8 @@ created: 2026-04-26
 updated: 2026-08-19
 type: entity
 tags: [company, platform]
-sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
-  - raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md,
-  - raw/articles/2026-04-25-nvidia-dynamo-agentic-inference.md
+sources:
+  - raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md
   - raw/articles/2026-01-05_nvidia_vera-rubin-platform.md
   - https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-says-nvidia-now-has-zero-percent-market-share-in-china
   - raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md
