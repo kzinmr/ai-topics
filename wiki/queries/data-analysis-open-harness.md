@@ -1,7 +1,7 @@
 ---
-title: "データ分析に適したOpen Harnessはあるか？"
+title: "Is There an Open Harness Suited for Data Analysis?"
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-08-30
 type: query
 tags:
   - query

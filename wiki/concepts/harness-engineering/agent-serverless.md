@@ -25,7 +25,7 @@ source_slack_channel: C077ACXR5UY
 source_slack_date: 2026-03-24
 source_slack_user: U076RPG60QY (Kazuki Inamura)
 source_message: |
-  "言ってて思ったけど, エージェント's サーバレスが今後育つとしたら, SaaS連携と権限とセキュリティ's 完備されたマネージド環境だろうな. ログが揮発する/しないとかでエンプラプランで搾り取るみたいなやつ (すでにありそう)"
+  "Thinking as I say this: if agent serverless ever takes off, it will be a managed environment with SaaS integrations, permissions, and security fully built in. The kind that squeezes enterprises via plans distinguishing volatile vs. persistent logs (probably already exists)"
 ---
 
 # Agent Serverless

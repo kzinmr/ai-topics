@@ -13,6 +13,7 @@ tags:
 aliases:
   - "session-portability"
   - "セッション可搬性"
+  - Session Portability
   - "session ownership"
   - "portable inference"
 sources:

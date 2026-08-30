@@ -3,7 +3,7 @@ title: "Proprietary Context — Organizational Governance in the AI Era and the 
 type: concept
 aliases:
   - proprietary-context-ai-era-organizational-governance-and-diamond-chart
-  - proprietary-context-ai時代の組織ガバナンスとdiamond型組織図
+  - Organizational governance and diamond-shaped org charts in the proprietary-context AI era
 created: 2026-04-25
 updated: 2026-04-25
 tags:

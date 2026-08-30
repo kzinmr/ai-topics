@@ -17,9 +17,9 @@ source_slack_channel: C077ACXR5UY
 source_slack_date: "2026-03-24 18:56, 2026-03-30 21:29-30"
 source_slack_user: U076RPG60QY (Kazuki Inamura)
 source_messages:
-  - "3/24 18:56: LLMができることの幅が進化し続ける→自由型が有利 / 幅が収束しつつある→フレームワーク化が有利"
-  - "3/30 21:29: モデルをある程度固定したらHarnessingが重要、って話はありつつ、モデルが賢くなったらHarnessingの重要度が減る、って話はあるんだよな（The Bitter Lesson）"
-  - "3/30 21:30: Harnessingの重要度が減るほどモデルが賢くなってきた場合、人間がAIにお願いする仕事は、いよいよ coder というよりも PM に対するそれにまた一段次元が上がることになる"
+  - "3/24 18:56: If the range of what LLMs can do keeps evolving -> free-form wins; if the range is converging -> frameworkization wins"
+  - "3/30 21:29: There is the familiar point that Harnessing matters once you fix the model to some degree, but there is also the point that as models get smarter, the importance of Harnessing diminishes (The Bitter Lesson)"
+  - "3/30 21:30: Once models get smart enough that Harnessing matters less, the work humans ask of AI rises another dimension -- becoming closer to what you delegate to a PM than to a coder"
 ---
 
 # The Bitter Lesson and Harnessing Evolution

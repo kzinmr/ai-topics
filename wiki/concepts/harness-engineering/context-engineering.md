@@ -3,7 +3,7 @@ title: "Context Engineering — Unified Framework for Context Optimization"
 type: concept
 aliases:
   - context-engineering
-  - コンテキストエンジニアリング
+  - Context Engineering (Japanese alias removed)
 created: 2026-04-13
 updated: 2026-05-13
 tags:

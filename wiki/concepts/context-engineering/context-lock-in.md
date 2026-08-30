@@ -12,6 +12,7 @@ tags:
 aliases:
   - "context-lock-in"
   - "文脈ロックイン"
+  - Context Lock-in
   - "context lock-in"
   - "context lockin"
 sources:
