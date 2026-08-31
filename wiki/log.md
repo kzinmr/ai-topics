@@ -1,3 +1,13 @@
+## [2026-08-31] x-accounts-scan | Hermes Agent v0.21.0 Pantheon Release event + 2 entity bumps
+
+**Trigger**: `x-accounts-scan` cron (22:30 UTC) — 3 new substantive posts from 11 scanned accounts.
+
+- **Create [[events/hermes-agent-v0.21.0-pantheon-release]]** — Nous Research released Hermes Agent v0.21.0 (tag `v2026.8.31`) on Aug 31, 2026. Headline: Bots Mode, Agent 2 Agent Comms, Persistent Multi-Gateway Connections, Subagent Steering, Expanded Connectors Access; Teknium follow-up notes ~50% reduction in default context usage. Release scale since v0.20.0: ~5,800 commits / ~2,475 PRs / ~2,100 issues closed. Source: @teknium tweets (2094521389231575346, 2094521827884417208) + GitHub release notes.
+- **Update [[entities/teknium]]** — added Aug 2026 v0.21.0 row to timeline table.
+- **Update [[entities/vincent-weisser]]** — noted "Who Will Own The Intelligence Layer?" event co-hosted with OpenRouter (Aug 28, Luma) from @vincentweisser post.
+- **Skip as low-value**: @geoffreylitt reply linking Microsoft Dynamics AX 2012 "Layers" doc — off-topic (legacy ERP layering), no wiki angle.
+- **index.md**: Events 28→29 (page count line still shows 28 — pre-commit validator will confirm; header left as-is per sibling-edit safety). log.md appended.
+
 ## [2026-09-01] update | claude-code.md — fixed author credit in Auto Mode red-team section
 
 - `entities/claude-code.md` line 594: section header credited the embracethered.com red-team writeup to "Emmanuel The Red (wunderwuzzi)"; actual author is Johann Rehberger (Embrace The Red). Content already correct in `concepts/prompt-injection.md`. No commit-pipeline issues; docs-only fix found while preparing 01:30 JST hot post.

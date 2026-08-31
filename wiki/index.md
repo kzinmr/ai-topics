@@ -2989,6 +2989,7 @@
 
 ## Events (28 pages)
 
+- [[events/hermes-agent-v0.21.0-pantheon-release]] — Hermes Agent v0.21.0 "Pantheon Release" (Aug 31, 2026) — Bots Mode, Agent 2 Agent Comms, Persistent Multi-Gateway Connections, Subagent Steering, ~50% default context reduction; ~5,800 commits since v0.20.0
 - [[events/2026-08-26-aws-acquires-ducklabs]] — AWS Acquires DuckLabs (DuckDB) — creators of DuckDB/DuckLake/Quack join AWS, projects remain open source; embedded-analytics + AI data-pipeline consolidation (Aug 26, 1,060 HN pts)
 - [[events/openai-apple-conflict-2026]] — OpenAI vs Apple Legal Conflict — OpenAI public rebuttal to Apple lawsuit, August 2026; preliminary injunction stage (Aug 4-5); OpenAI 28-page motion to dismiss (Aug 6)
 - [[events/2026-07-29-rsi-pace-letter]] — RSI Pace Letter: 1,171 OpenAI/Anthropic/GDM/Meta/Thinky employees sign letter requesting US international AI pacing framework (July 29, 2026)

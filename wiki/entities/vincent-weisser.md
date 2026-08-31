@@ -42,7 +42,8 @@ Vincent advocates for commoditizing compute and intelligence through decentraliz
 
 ## Related Pages
 
-- [[entities/prime-intellect]] — company page
+- **[[entities/prime-intellect]]** — company page
+- **[[entities/openrouter]]** — co-hosted "Who Will Own The Intelligence Layer?" event with OpenRouter (2026-08-28, [Luma](https://luma.com/openro-3qtx)) on whether AI consolidates around frontier labs or intelligence becomes an open, competitive commodity
 - [[entities/will-brown]] — Research, Prime Intellect
 - [[entities/florian-brand]] — Research Engineer, evals
 - [[entities/elie-bakouch]] — Training LLMs

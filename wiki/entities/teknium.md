@@ -162,6 +162,7 @@ Nous Research's decentralized training infrastructure (DiStrO) and Psyche Networ
 | Feb 2026 | Hermes Agent v0.8.0; 43,700 GitHub stars in under 2 months; 1,000+ PRs merged |
 | Apr 2026 | Hermes Agent v2026.4.8; 68,500+ stars; 300+ contributors; platform registry refactor proposed |
 | Apr 2026 | Teknium opens 10+ PRs in single week: OAuth lifecycle, Codex fast mode, workspace RAG, Discord introspection, Mistral structured blocks |
+| Aug 2026 | Hermes Agent v0.21.0 "Pantheon Release" announced (Bots Mode, Agent 2 Agent Comms, Subagent Steering, ~50% default context reduction) |
 
 ## Related
 
