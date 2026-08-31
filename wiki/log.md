@@ -10,6 +10,16 @@
 
 ---
 
+## [2026-08-31] trending-topics | Scan + report + 5 pages updated
+- Report: inbox/rss-scans/trending-topics-2026-08-31.md (8 topics, HN Algolia supplement)
+- Raw saved: wiki/raw/articles/simonwillison.net--2026-aug-29-dont-defang-your-agents-on-purpose--df7f2a91.md (partial — full body unrecoverable)
+- entities/simon-willison.md — 'Understanding ChatGPT Work' (Aug 30: 223 tools via self-documentation trick, 44 skills, control-browser) + 'Don't Defang Your Agents' (moz:fest)
+- entities/claude-code.md — embracethered 'Breaking Claude Code Opus 5 Auto Mode' (415->curl->ZIP->struct.py stdlib shadowing, 60-80% ASR vs 0.32% eval)
+- entities/openclaw.md — OpenClaw 2.0 'Accidentally' (933 contributors, 16k PRs) + Summer Yue inbox deletion
+- concepts/ai-agent-safety-incidents.md — Summer Yue / Meta MSR inbox deletion: instruction loss under context compaction
+- concepts/open-source-llm-governance-debian-gr.md — GR passed Aug 29 (HN 507pts, LWN), links to ai-skepticism-movement
+- index.md: added entities/mo-hit-main
+
 ## [2026-08-30] x-accounts-scan | Brace Sproul enriched from X timeline — OpenWiki 0.4.0 (claims runtime for forgetting/self-correction, wiki evals, OKF 2.0)
 
 **Trigger**: `x-accounts-scan` cron. No `status: skeleton` pages remain in `wiki/entities/` (0 matches), so the run pivoted to incremental enrichment of pages with unresolved TODO markers, driven by fresh X timeline data.

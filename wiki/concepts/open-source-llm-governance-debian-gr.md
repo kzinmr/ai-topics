@@ -1,7 +1,7 @@
 ---
 title: "Open Source LLM Governance — Debian General Resolution"
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-08-31
 type: concept
 tags:
   - governance
@@ -32,6 +32,12 @@ The GR presents three options for Debian contributors:
 Debian's governance structure uses general resolutions for project-wide policy decisions. The discussion period began in late July 2026; the voting period date had not been set as of the initial LWN report.
 
 ### Why This Matters
+
+### Update: GR Passed (August 29, 2026)
+
+Debian **voted to allow "responsible use of generative AI"** — the conditional-allowance alternative prevailed. The result hit the HN front page (~507 points, [LWN report](https://lwn.net/Articles/1091231/), [HN discussion](https://news.ycombinator.com/item?id=49489982)), and became the flagship data point for a broader wave of open-source AI-skepticism organizing tracked in [[concepts/ai-skepticism-movement]].
+
+
 
 Debian is one of the most influential Linux distributions, serving as the foundation for Ubuntu and hundreds of derivatives. A formal policy on LLM contributions would set a precedent for the broader open-source ecosystem.
 

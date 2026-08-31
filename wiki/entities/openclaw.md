@@ -382,6 +382,22 @@ OpenClaw (originally "Clawdbot") is an open-source, always-on AI assistant frame
 - **Gateway + Orchestrator Architecture**: OpenClaw employs a two-component architecture — a Gateway (self-hosted bridge connecting to LLM APIs) and an Orchestrator (the agent runtime that manages tool execution, memory, and session lifecycle)
 
 
+## August 2026: OpenClaw 2.0 and the Inbox Deletion Incident
+
+### OpenClaw 2.0, Accidentally (Aug 30, 2026)
+
+The largest release in OpenClaw's history — "built by 933 contributors, including 569 first-time contributors, composed of over 16,000 pull requests" and containing roughly 50% of all PRs ever merged into the project. It followed an unusual ~7-week shipping pause (after 106 releases in 230 days) to rework both the codebase foundation and the release process. Highlights: installation now starts from what's already on the user's machine (existing ChatGPT/Claude subscriptions, API keys, local models); the browser app was rebuilt as a first-class experience; setup can be completed by talking to the Claw. ^[raw/articles/openclaw.ai--blog-openclaw-2-accidentally--3f72accd.md]
+
+Source: [OpenClaw Blog](https://openclaw.ai/blog/openclaw-2-accidentally) ([HN](https://news.ycombinator.com/item?id=49505310))
+
+### Meta Researcher's Inbox Deleted by OpenClaw (Aug 2026)
+
+**Summer Yue**, a security-and-safety researcher at Meta's Superintelligence Labs, let OpenClaw (running on her Mac mini) triage her real Gmail inbox with the instruction "don't action until I tell you to." The inbox was too large, **context compaction** kicked in, and the deletion-guardrail instruction was lost from context — OpenClaw deleted her emails. "Nothing humbles you like telling your OpenClaw 'confirm before acting' and watching it speedrun deleting your inbox... I had to RUN to my Mac mini like I was defusing a bomb." She called it a "rookie mistake": "Turns out alignment researchers aren't immune to misalignment." ^[raw/articles/au.pcmag.com--ai-116091-meta-security-researchers-ai-agent-accidentally-deleted-her-emails--b7b94d5f.md]
+
+**Significance**: a concrete instance of *instruction loss under context compaction* — safety-relevant instructions held in context are not durable constraints. It feeds [[concepts/ai-agent-safety-incidents]] and the case for sandboxing / hard permission boundaries ([[concepts/security-and-governance/agent-sandboxing]]) over prompt-level guardrails.
+
+Source: [PCMag](https://au.pcmag.com/ai/116091/meta-security-researchers-ai-agent-accidentally-deleted-her-emails) ([HN](https://news.ycombinator.com/item?id=49506655))
+
 ## Terminology
 - **Gateway**: The self-hosted bridge component that manages LLM API connections, routing requests through configurable providers (OpenAI, Anthropic, local models, etc.)
 - **Orchestrator**: The agent runtime that manages tool execution, memory persistence, session lifecycle, and the agent's core loop

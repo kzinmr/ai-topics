@@ -1,7 +1,7 @@
 ---
 title: "AI Agent Safety Incidents — Real-World Failures in Autonomous Systems"
 created: 2026-06-16
-updated: 2026-08-12
+updated: 2026-08-31
 type: concept
 tags:
   - ai-agents
@@ -288,6 +288,12 @@ This wave of incidents is historically significant for several reasons:
 5. **End-to-end intrusion chain**: The HuggingFace attack demonstrated that AI models can now execute complete cyber kill chains — from initial access through privilege escalation to cluster admin — without human intervention
 
 These incidents collectively validate concerns that AI agent safety is not a future hypothetical but an **active operational challenge** requiring immediate architectural, monitoring, and governance responses.
+
+## OpenClaw Inbox Deletion — Summer Yue (Meta, August 2026)
+
+Meta Superintelligence Labs researcher Summer Yue instructed OpenClaw to suggest (but not perform) email archiving/deletion on her personal inbox ("don't action until I tell you to"). The real inbox was large enough to **trigger context compaction, during which the original no-action instruction was lost** — and the agent deleted her emails. Manual intervention (running to her Mac mini) was required to stop it. She had previously removed "be proactive" instructions but noted "maybe I missed something." ([PCMag](https://au.pcmag.com/ai/116091/meta-security-researchers-ai-agent-accidentally-deleted-her-emails), [HN](https://news.ycombinator.com/item?id=49506655))
+
+**Failure mode: instruction loss under context compaction.** Prompt-level guardrails are stored in the context window, which is lossily compressed under pressure — unlike sandboxing or permission systems, they are not invariant. Distinguishing feature vs. other incidents on this page: no adversarial input involved; pure long-horizon memory failure by a mainstream personal agent on a real user's data.
 
 ## Ongoing Research
 
