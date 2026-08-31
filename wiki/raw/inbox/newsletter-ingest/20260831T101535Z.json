@@ -1,0 +1,99 @@
+{
+  "run_id": "20260831T101535Z",
+  "triaged_at": "2026-08-31T10:20:00+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 5,
+  "recommended_for_ingest": 4,
+  "items": [
+    {
+      "message_id": "<20260830235638.3.8ec8cf1225567dae@mg-d0.substack.com>",
+      "subject": "How to Build a Search Agent and Prove It Works",
+      "date": "2026-08-30",
+      "source": "Hugo Bowne-Anderson (substack publication_id=2632531, @hugobowne, @jnbrymn)",
+      "canonical_url": "https://hugobowne.substack.com/p/how-to-build-a-search-agent-and-prove",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-30-how-to-build-a-search-agent-and-prove-it-works.md",
+      "importance": "critical",
+      "relevance": "direct",
+      "topic_tags": ["ai-agents", "agent-evaluation", "search-tools", "tool-use", "evals"],
+      "wiki_targets": [
+        "wiki/concepts/agent-evaluation.md",
+        "wiki/concepts/search-tools-and-rag.md",
+        "wiki/entities/hugo-bowne-anderson.md"
+      ],
+      "rationale": "Core wiki scope: building AND evaluating a search agent. Complements recent raw article 'your-agent-won-t-tell-you-its-search-is-broken' and existing 'rag-isn-t-dead-it-s-sleeping'. Evaluation methodology angle belongs in concepts/, not concepts/ai-benchmarks/."
+    },
+    {
+      "message_id": "<20260831042421.3.06e0003330675a90@mg-d0.substack.com>",
+      "subject": "Understanding ChatGPT Work",
+      "date": "2026-08-31",
+      "source": "Simon Willison (substack publication_id=1173386, @simonw)",
+      "canonical_url": "https://simonwillison.net/2026/Aug/31/understanding-chatgpt-work/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-31-understanding-chatgpt-work.md",
+      "importance": "critical",
+      "relevance": "direct",
+      "topic_tags": ["openai", "chatgpt", "ai-products", "agent-features"],
+      "wiki_targets": [
+        "wiki/entities/chatgpt.md",
+        "wiki/entities/openai.md",
+        "wiki/entities/simon-willison.md"
+      ],
+      "rationale": "First-party reverse-engineering of a newly shipped OpenAI product surface by a tracked author. Product/capability news of an existing entity page; scrape while still free-access."
+    },
+    {
+      "message_id": "<20260830123130.3.9ef1f3204ec50fe4@mg-d1.substack.com>",
+      "subject": "AI's third era: the rise of persistent AI coworkers | Tara Seshan (OpenAI's product lead)",
+      "date": "2026-08-30",
+      "source": "Lenny's Newsletter (substack publication_id=10845, @lenny) - podcast/interview post",
+      "canonical_url": "https://www.lennysnewsletter.com/p/ais-third-era-the-rise-of-persistent",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-30-ai-s-third-era-the-rise-of-persistent-ai-coworkers-tara-seshan-openai-s-product-.md",
+      "importance": "high",
+      "relevance": "direct",
+      "topic_tags": ["ai-agents", "agent-memory", "persistent-agents", "openai", "product-strategy"],
+      "wiki_targets": [
+        "wiki/concepts/agent-memory.md",
+        "wiki/concepts/persistent-agents.md",
+        "wiki/entities/tara-seshan.md (new)",
+        "wiki/entities/lennys-newsletter.md"
+      ],
+      "rationale": "'Persistent AI coworkers' framing from OpenAI's product lead is a strong taxonomy signal for the agent-memory / long-horizon-agent concepts. Note: email body is an audio-only Substack podcast post - transcript may require YouTube/podcast fallback before ingest.",
+      "caveat": "audio-first post; text transcript availability unconfirmed"
+    },
+    {
+      "message_id": "<20260830154622.3.d9171de5cc650263@mg-d0.substack.com>",
+      "subject": "Most Neoclouds Suck At Security",
+      "date": "2026-08-30",
+      "source": "SemiAnalysis (publication_id=6349492, @semianalysis, @jnanos, @sjharshe)",
+      "canonical_url": "https://semianalysis.com/2026-08-30/most-neoclouds-suck-at-security/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-30-most-neoclouds-suck-at-security.md",
+      "importance": "high",
+      "relevance": "direct",
+      "topic_tags": ["inference-infrastructure", "gpu-cloud", "neoclouds", "ai-security", "ai-economics"],
+      "wiki_targets": [
+        "wiki/concepts/neoclouds.md",
+        "wiki/concepts/inference-infrastructure.md",
+        "wiki/entities/semianalysis.md"
+      ],
+      "rationale": "Neocloud (CoreWeave/Crusoe/Lambda-class GPU cloud) security posture is adjacent-but-central wiki scope: inference infra + AI safety/security. SemiAnalysis is a tracked, high-signal source. Likely partially paywalled.",
+      "caveat": "check for paywall before scrape"
+    },
+    {
+      "message_id": "<20260830.191551.f3d5291c@mta25>",
+      "subject": "DataCamp and the $40 Million Tutoring Bill",
+      "date": "2026-08-30",
+      "source": "beehiiv newsletter (all links are link.mail.beehiiv.com click-tracking wrappers)",
+      "canonical_url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-30-datacamp-and-the-40-million-tutoring-bill.md",
+      "importance": "low",
+      "relevance": "indirect",
+      "topic_tags": ["ai-in-education", "ai-business", "edtech"],
+      "wiki_targets": [],
+      "rationale": "Edtech/business analysis of DataCamp's AI tutoring economics. Outside core LLM/agent scope; only tangentially related as an applied-AI business case. Every link in the digest is an opaque beehiiv redirect, so no canonical URL is recoverable from the checkpoint - scrape would need redirect resolution first. Skip unless a broader 'AI in education' page is being built."
+    }
+  ],
+  "notes": [
+    "All five digests are single-post Substack/beehiiv emails: the ~20 'articles' per digest are Substack chrome (play-card, like/comment/share, read-in-app) plus tokenized /redirect/ links, not distinct articles.",
+    "Canonical URLs above were inferred from open.substack.com/pub/<handle>/p/<slug> links in the digests, not scraped. Verify before ingest.",
+    "No new model release, benchmark, or open-weights announcement in this batch.",
+    "Downstream stage (newsletter-wiki-ingest) should read this file, not the raw checkpoint."
+  ]
+}
