@@ -1,3 +1,15 @@
+## [2026-08-31] lint | tag-audit-weekly — CLEAN, 0 violations (no fixes needed)
+
+**Trigger**: `tag-audit-weekly` cron (Mondays 10:00 UTC).
+
+**Script note**: cron pre-run blocked `tag_audit.py` again ("resolves outside the scripts directory") — ran directly from `config/hermes/skills/_overrides/wiki-graph-health/scripts/tag_audit.py` per documented workaround (Section J / 2026-08-17 session).
+
+**Audit results**: 3,080 pages scanned, 846 unique tags in use, 926 tags in SCHEMA taxonomy. Composite kebab-case tags: **0**. Non-SCHEMA tags: **0**. Coverage 100%.
+
+**Actions taken**: none. Per `references/tag-audit-session-2026-08-03.md` (skip normalization when audit clean), no `tag_normalization.py` run, no page edits, no SCHEMA/TAG_NORMALIZATION changes, no commit. Untracked raw articles from concurrent pipelines intentionally left unstaged.
+
+---
+
 ## [2026-08-30] x-accounts-scan | Brace Sproul enriched from X timeline — OpenWiki 0.4.0 (claims runtime for forgetting/self-correction, wiki evals, OKF 2.0)
 
 **Trigger**: `x-accounts-scan` cron. No `status: skeleton` pages remain in `wiki/entities/` (0 matches), so the run pivoted to incremental enrichment of pages with unresolved TODO markers, driven by fresh X timeline data.
