@@ -1,3 +1,17 @@
+## [2026-08-31] wiki-health-fix | Index clean + 1 ghost fixed (mo-hit-main stub created)
+
+**Trigger**: `wiki-health-fix` cron (17:50 UTC), unified scan → auto-fix → report job.
+
+**Phase 1 (index corruption)**: All clean — pipe_prefix 0, line_number_prefix 0, triple_bracket 0, space_prefix 0, double_pipe 0. `validate_index.py` exit 0 (3027 lines). No sed fixes needed.
+
+**Phase 2 (ghost entries)**: Recursive wikilink-vs-filesystem scan found **1** broken index entry: `entities/mo-hit-main`. Root cause: today's `trending-topics` run added it to index.md (log entry above) but never created the file. Fixed by creating a minimal stub `wiki/entities/mo-hit-main.md` (`status: stub`, `confidence: low`) reconstructed from the index one-liner, marked TODO for enrichment. No orphan_index registrations needed (24 report "orphans" are all `_index.md` hubs + `gpt/_archive/` files — known false positives).
+
+**Untouched (informational)**: 2563 stale pages (>30d), 5466 unreferenced raw articles, 830 unique tags (tag audit ran clean today, 0 taxonomy violations).
+
+**Files**: wiki/entities/mo-hit-main.md (new), wiki/log.md.
+
+---
+
 ## [2026-08-31] lint | tag-audit-weekly — CLEAN, 0 violations (no fixes needed)
 
 **Trigger**: `tag-audit-weekly` cron (Mondays 10:00 UTC).
