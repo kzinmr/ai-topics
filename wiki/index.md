@@ -336,7 +336,7 @@
 - [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons + enterprise knowledge graph cases + knowledge-graph-vs-vector-database guide (Aug 2026); How-to-Choose AI Agent Builder guide — no-code/low-code/framework taxonomy, weighted scoring framework (Jan 2026); RAG vs fine-tuning guide (Feb 2026); Enterprise Search Evaluation vs ChatGPT/Claude — 1.9x/1.6x correctness preference on ~280 queries, context rot framing, MCP retrospective (May 2026)
 - [[entities/glimpse]] — Glimpse
 - [[entities/glm-5-zai]] — GLM-5 (Z.ai) — Open-weight frontier model; enriched with Nate Lambert strategic analysis, economic impact, ecosystem adoption; fx.sh open-harness adoption note (Aug 19)
-- [[entities/glm-5v-turbo]] — GLM-5V-Turbo
+- [[entities/glm-5v-turbo]] — GLM-5V-Turbo — Z.ai's proprietary vision-language flagship (design-to-code); sibling to open-weights GLM-5.x text line (enriched Aug 31)
 - [[entities/gm8xx8]] — gm8xx8
 - [[entities/goodfire-ai]] — Goodfire AI
 - [[entities/google]] — Google (AI/ML); TPU sales to Anthropic >20% of shipments thru 2027, $150B+ backlog, Cloud +82% (Aug 10)
@@ -665,7 +665,7 @@
 - [[entities/pliny-prompter]] — Pliny the Prompter
 - [[entities/pluralistic-net]] — Cory Doctorow
 - [[entities/pointer]] — Pointer
-- [[entities/pointer-ai]] — Pointer AI
+- [[entities/pointer-ai]] — Pointer AI — computer-use agent company; OSWorld SOTA 83.6% (Opus 4.7) vs human 72.4%; Feasibility Gate/Planner/Executor harness, open-sourced May 2026
 - [[entities/polar-prorl-agent-server]] — Polar (ProRL-Agent-Server)
 - [[entities/poolside]] — Poolside — Foundation model lab focused on agentic coding models; Laguna M.1 (Apache 2.0), Laguna XS.2 (open-weight), Laguna S 2.1 (118B MoE/8B active, Jul 2026), Model Factory (10K-20K experiments/month, Blender streaming data, zero call events, YOLO-to-rigor); open-weights as default commitment (enriched Jul 28)
 - [[entities/portkey]] — Portkey

@@ -2,6 +2,15 @@
 
 - `entities/claude-code.md` line 594: section header credited the embracethered.com red-team writeup to "Emmanuel The Red (wunderwuzzi)"; actual author is Johann Rehberger (Embrace The Red). Content already correct in `concepts/prompt-injection.md`. No commit-pipeline issues; docs-only fix found while preparing 01:30 JST hot post.
 
+## [2026-08-31] skeleton-enrich-daily — L2→L3: glm-5v-turbo + pointer-ai enriched
+
+**Trigger**: daily skeleton enrichment. No `status: skeleton` pages remain (0 matches); continued established L2→L3 pattern on thinnest non-redirect entity pages (git-history check found no richer versions for either target).
+
+- **entities/glm-5v-turbo.md** (33 lines → enriched): Z.ai's proprietary vision-language flagship. Documented the GLM text-vs-vision family split (GLM-5.x open weights/MIT vs GLM-5V-Turbo API-only), design-to-code positioning, open questions (no published params/benchmarks). Sources: zhipu company reference raw article + Willison GLM-5.2 note (both already in wiki/raw).
+- **entities/pointer-ai.md** (41 → enriched): Feasibility Gate / Planner / Executor architecture table with model assignments, GUI-first + "two strikes then switch" principles, phantom-tool-call finding (~5% hallucinated tool calls), VS Code 95.7% / multi-apps 74.4% domain results, hiring-focus roadmap mapping. Sources: pointer-osworld-sota + may-june trending raw articles.
+- **index.md**: descriptions updated for both entries (bare → one-line summaries).
+- Tags added from SCHEMA.md taxonomy only (`computer-use`, `vision`, `zhipu`, `glm`, `china`, `multimodal`) — no new tags needed.
+
 ## [2026-08-31] wiki-health-fix | Index clean + 1 ghost fixed (mo-hit-main stub created)
 
 **Trigger**: `wiki-health-fix` cron (17:50 UTC), unified scan → auto-fix → report job.
