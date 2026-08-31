@@ -1,3 +1,7 @@
+## [2026-09-01] update | claude-code.md — fixed author credit in Auto Mode red-team section
+
+- `entities/claude-code.md` line 594: section header credited the embracethered.com red-team writeup to "Emmanuel The Red (wunderwuzzi)"; actual author is Johann Rehberger (Embrace The Red). Content already correct in `concepts/prompt-injection.md`. No commit-pipeline issues; docs-only fix found while preparing 01:30 JST hot post.
+
 ## [2026-08-31] wiki-health-fix | Index clean + 1 ghost fixed (mo-hit-main stub created)
 
 **Trigger**: `wiki-health-fix` cron (17:50 UTC), unified scan → auto-fix → report job.
