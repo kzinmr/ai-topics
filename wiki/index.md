@@ -1603,7 +1603,7 @@
 - [[concepts/dan-abramov]] — Dan Abramov
 - [[concepts/dangerzone]] — Dangerzone
 - [[concepts/daniel-jackson]] — Daniel Jackson
-- [[concepts/dark-factory-software-factory]] — Dark Factory Software Factory
+- [[concepts/dark-factory-software-factory]] — Dark Factory Software Factory; + Uber enterprise-scale case study (Aug 2026: >70% agent-authored PRs, cost equation, -34%/-52% cost curves)
 - [[concepts/data-analysis-agents]] — AI Data Analysis Agents
 - [[concepts/data-breach]] — Data Breach
 - [[concepts/data-engineering]] — Data Engineering
@@ -1707,7 +1707,7 @@
 - [[concepts/enpire]] — ENPIRE — Agentic Robot Policy Self-Improvement
 - [[concepts/enshittification]] — enshittification
 - [[concepts/enterprise-agents]] — Enterprise Agents
-- [[concepts/enterprise-ai-cost-management]] — Enterprise AI Tool Cost Management; Tokenpocalypse per-token billing shift (GitHub per-token, Accenture token waste) (Aug 2026)
+- [[concepts/enterprise-ai-cost-management]] — Enterprise AI Tool Cost Management; Tokenpocalypse per-token billing shift (GitHub per-token, Accenture token waste) (Aug 2026); Uber shift from $1,500 caps to token-efficiency engineering (Sep 2026)
 - [[concepts/enterprise-ai-deployment-jv]] — Enterprise AI Deployment Joint Ventures
 - [[concepts/enterprise-rle]] — Enterprise RLE (Reinforcement Learning Environments) — In-product RL training where models learn inside the actual product harness, with externalized context/skills/tools for model independence
 - [[concepts/enterprise-ai-operating-model]] — Enterprise AI Operating Model

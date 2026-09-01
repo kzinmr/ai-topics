@@ -1,3 +1,12 @@
+## [2026-09-01] ingest | Uber Engineering X Article: Running a Software Factory Efficiently at Uber Scale
+
+**Trigger**: User request (Discord) to ingest https://x.com/ubereng/status/2093444169037762840 (X Article 2090828118454071296, Tier 1.5 xurl OAuth2 retrieval, 18.4KB plain_text, 10,751 bookmarks).
+
+- **Create [[raw/articles/2026-08-28_ubereng_running-software-factory-efficiently-at-uber-scale]]** — full X Article body (Uber Engineering, AI Engineer 2026 companion). Key data: >70% PRs agent-attributed, 3,600+ agent skills, 30K skill executions/day, 7x WAU / 9.4x requests growth with stabilized spend, cost/1k requests -34%, cost/session -52%.
+- **Update [[concepts/enterprise-ai-cost-management]]** — new section "Uber Case Evolution: From Caps to Cost Engineering (August 2026)": full lever-inventory table (Pareto benchmark-driven model selection, cheap subagent defaults, 400k compaction, Medium reasoning, 1h cache TTL, MCP-via-CLI, code-mode, AI Context Graph, session analytics dashboard). Contrasts June caps policy with new visibility+nudges approach.
+- **Update [[concepts/dark-factory-software-factory]]** — new case study section: Uber as first Fortune-500-scale software factory with public cost curves; 5-level model positioning; 4-way comparison table (StrongDM/Warp/Factory.ai/Uber).
+- **index.md**: descriptions updated for both concept pages. log.md appended.
+
 ## [2026-08-31] x-accounts-scan | Hermes Agent v0.21.0 Pantheon Release event + 2 entity bumps
 
 **Trigger**: `x-accounts-scan` cron (22:30 UTC) — 3 new substantive posts from 11 scanned accounts.

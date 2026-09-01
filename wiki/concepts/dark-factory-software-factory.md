@@ -2,7 +2,7 @@
 title: "Dark Factory Software Factory"
 type: concept
 created: 2026-04-13
-updated: 2026-06-28
+updated: 2026-09-01
 tags:
   - concept
   - multi-agent
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agents.md
   - raw/articles/2026-06-15_factory-ai_software-factory-2.0.md
   - raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers.md
+  - raw/articles/2026-08-28_ubereng_running-software-factory-efficiently-at-uber-scale.md
 ---
 
 # Dark Factory Software Factory
@@ -309,6 +310,40 @@ Oz is Warp's cloud software factory platform — the infrastructure through whic
 | **Ultimate goal** | Level 5 autonomy | Level 4 productivity | Spectrum from L3-L5 | **Recursive self-improvement** |
 
 Source: [[raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers]]
+
+## Case Study: Uber's Software Factory at Enterprise Scale (August 2026)
+
+**Source:** Uber Engineering (@UberEng, post author @udaykiran) — [Running a Software Factory Efficiently at Uber Scale](https://x.com/ubereng/status/2093444169037762840) (X Article, 2026-08-28; companion to their AI Engineer 2026 talk)
+
+Uber is the first public report of a **Fortune-500-scale software factory with measured cost curves** — the "is this economical?" question that StrongDM (3-person team) and Warp (startup memo) could not answer.
+
+### Reported Scale (Feb–Aug 2026)
+
+- **>70% of pull requests** attributed to local or cloud agents
+- **3,600+ agent skills** built across the SDLC; **30K+ agent skill executions per day**
+- Weekly active users across all agentic offerings grew **7x**; weekly agentic requests **9.4x**
+- Growing share of sessions initiated by **managed agents, not humans**: code review, self-healing CI, E2E PRs with visual validation, on-call triage, bug debugging — with human review/escalation
+- Cost trend despite that growth: total AI spend **stable since April**; cost per 1,000 model requests **-34%** from peak; cost per session **-52%** from June peak
+
+### The Factory Cost Equation
+
+Uber decomposes any agent session's cost into independently measurable terms — adoption/engagement terms (to grow) and three optimization terms: **price per token × tokens per request × requests per turn**. The "work the agent does on its own behalf" (extra turns, errors, search overhead) is where most optimization effort goes. Full lever inventory is detailed in [[concepts/enterprise-ai-cost-management]] (benchmark-driven Pareto model selection, cheap-model subagent defaults, 400k compaction, Medium reasoning default, 1-hour cache TTL, MCP-via-CLI + tool search, code-mode batching, AI Context Graph grounding, 16-anti-pattern session analytics).
+
+### Position on the 5-Level Model
+
+Uber sits at a **hybrid Level 3→4**: majority agent-authored code (Level 4 territory) but humans retain review and escalation gates; the managed-agent fleet (uReview, self-healing CI, on-call triage) pushes individual SDLC stages toward higher autonomy via a per-agent roadmap of target metrics → eval benchmark → Pareto-optimal model. Notably, Uber's answer to Warp's "factory efficiency = shipped product / (inference + human cost)" framing is operational: measure every term of the cost equation weekly, and treat token waste as an engineering bug rather than a budget cap.
+
+### Comparison with Other Factory Approaches
+
+| Aspect | StrongDM | Warp Factory | Factory.ai 2.0 | **Uber** |
+|--------|----------|--------------|----------------|----------|
+| Scale | 3-person team | Own product team | Enterprise customers | **~all employees, Fortune 500** |
+| Public cost data | None | Efficiency formula | None | **Full cost curves (-34%/-52%)** |
+| Model strategy | Claude-only | Oz platform | Router | **Per-workload Pareto selection, benchmarked** |
+| Context strategy | Digital Twin | Self-improvement agents | Platform memory | **AI Context Graph (24M nodes)** |
+| Cost governance | n/a | Token-waste analysis | Budgets | **Visibility + nudges, no hard caps** (post-June) |
+
+Source: [[raw/articles/2026-08-28_ubereng_running-software-factory-efficiently-at-uber-scale]]
 
 ## Related
 
