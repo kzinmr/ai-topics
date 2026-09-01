@@ -1,0 +1,100 @@
+{
+  "run_id": "20260901T101029Z",
+  "triaged_at": "2026-09-01T10:15:00+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 5,
+  "recommended_for_ingest": 4,
+  "items": [
+    {
+      "message_id": "<20260831133106.3.1a2d35cfdfa1900b@mg2.substack.com>",
+      "subject": "Import AI 471: Why Hugging Face worries me; space mining; Five Eyes on AI",
+      "date": "2026-08-31",
+      "source": "Import AI (jackclark.net / substack publication_id=1317673, @importai)",
+      "canonical_url": "https://importai.substack.com/p/import-ai-471-why-hugging-face-worries",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-31-import-ai-471-why-hugging-face-worries-me-space-mining-five-eyes-on-ai.md",
+      "importance": "critical",
+      "relevance": "direct",
+      "topic_tags": ["hugging-face", "ai-policy", "ai-governance", "open-source-ai", "ai-safety"],
+      "wiki_targets": [
+        "wiki/entities/hugging-face.md",
+        "wiki/concepts/ai-policy.md",
+        "wiki/concepts/ai-governance-political-pressure.md"
+      ],
+      "rationale": "Two direct-scope threads in one issue. (1) 'Why Hugging Face worries me' — Jack Clark's take on Hugging Face lines up with the existing entities/hugging-face page (recent NVIDIA $13B acquisition Aug 27, July 2026 OpenAI agent breach, open-weight distribution rail). High-value first-party commentary on an already-tracked entity. (2) 'Five Eyes on AI' — intelligence-alliance AI governance maps to concepts/ai-policy and concepts/ai-governance-political-pressure. Import AI is a high-signal tracked source; 'space mining' item is out of scope.",
+      "caveat": "importai substack slug inferred from open.substack.com/pub/importai link — verify canonical URL before scrape; typically free-access"
+    },
+    {
+      "message_id": "<20260901043655.3.8f83c731ffbc8e80@mg-d0.substack.com>",
+      "subject": "[AINews] Fal's H3 Max Live breaks the infinite videogen barrier",
+      "date": "2026-09-01",
+      "source": "AINews / smol.ai (swyx, publication_id=1084089)",
+      "canonical_url": "https://news.smol.ai/p/ainews-fals-h3-max-live-breaks-the",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-09-01-ainews-fal-s-h3-max-live-breaks-the-infinite-videogen-barrier.md",
+      "importance": "high",
+      "relevance": "adjacent",
+      "topic_tags": ["video-generation", "ai-models", "inference-infrastructure", "fal", "generative-media"],
+      "wiki_targets": [
+        "wiki/concepts/ai-video-generation-2026.md",
+        "wiki/concepts/inference-infrastructure.md"
+      ],
+      "rationale": "Fal 'H3 Max Live' is a real-time/infinite video-generation model release — directly feeds the actively-maintained concepts/ai-video-generation-2026 page. Video gen is adjacent to core LLM/agent scope but the existing page shows the wiki tracks this line. The AINews digest form is a broad daily roundup (20 redirect links) — downstream scrape should extract the lead videogen item and skip noise.",
+      "caveat": "ainews digest aggregates many links; scrape should focus on the videogen lead, not the whole roundup. smol.ai substack may be free-access."
+    },
+    {
+      "message_id": "<20260831150159.3.35bd35d848bf482d@mg2.substack.com>",
+      "subject": "🎙️ How I AI: How this PM uses Claude to handle 70% to 80% of his workday",
+      "date": "2026-08-31",
+      "source": "Lenny's Newsletter (substack publication_id=10845, @lenny) — 'How I AI' podcast/workflow post",
+      "canonical_url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-pm-uses-claude",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-31-how-i-ai-how-this-pm-uses-claude-to-handle-70-to-80-of-his-workday.md",
+      "importance": "high",
+      "relevance": "direct",
+      "topic_tags": ["claude-code", "ai-agents", "coding-agents", "prompt-engineering", "ai-workflows", "product-management"],
+      "wiki_targets": [
+        "wiki/concepts/claude-code/claude-code-best-practices.md",
+        "wiki/concepts/claude-code/claude-code-steering-methods.md",
+        "wiki/entities/lenny.md"
+      ],
+      "rationale": "Concrete Claude usage workflow (PM offloading 70-80% of workday) is practical material for the Claude Code best-practices / steering-methods and AI-workflow concept pages. Lenny is a tracked entity. Applied-agent-usage angle is squarely in wiki scope.",
+      "caveat": "'How I AI' is podcast-led; text transcript availability unconfirmed before ingest — may need YouTube/podcast fallback."
+    },
+    {
+      "message_id": "<20260831.190616.3ec869fb@mta8>",
+      "subject": "Korea Just Made AI a Public Utility, Free for Everyone",
+      "date": "2026-08-31",
+      "source": "beehiiv newsletter (all links are link.mail.beehiiv.com click-tracking wrappers)",
+      "canonical_url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-31-korea-just-made-ai-a-public-utility-free-for-everyone.md",
+      "importance": "medium",
+      "relevance": "indirect",
+      "topic_tags": ["ai-policy", "korean-ai", "ai-economics", "public-ai-infrastructure"],
+      "wiki_targets": [
+        "wiki/concepts/korean-ai.md",
+        "wiki/concepts/ai-policy.md"
+      ],
+      "rationale": "A national AI-as-public-utility policy move is a strong signal for concepts/korean-ai and concepts/ai-policy (sovereign/public AI infrastructure trend). Kept at medium because it is policy/industry news rather than core LLM/agent tech, and every link is an opaque beehiiv redirect wrapper — no canonical URL recoverable from the checkpoint, so scrape requires redirect resolution first.",
+      "caveat": "beehiiv redirect links only; resolve redirect to get canonical URL before scrape"
+    },
+    {
+      "message_id": "<20260831223908.3.1d2e543823dfcce4@mg2.substack.com>",
+      "subject": "Exclusive Early Access: Final 3 Chapters of The Hundred-Page Deep Reinforcement Learning Book",
+      "date": "2026-08-31",
+      "source": "AI Weekly (publication_id=61455, @aiweekly) — paywalled promotional post",
+      "canonical_url": "https://aiweekly.substack.com/p/exclusive-early-access-final-3-chapters",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-08-31-exclusive-early-access-final-3-chapters-of-the-hundred-page-deep-reinforcement-l.md",
+      "importance": "low",
+      "relevance": "indirect",
+      "topic_tags": ["reinforcement-learning", "book-promotion"],
+      "wiki_targets": [],
+      "rationale": "Promotional/marketing email for a paid RL book early-access offer (Link 10 is an explicit paywall/coupon redirect). No novel technical content, no release or research contribution. Out of core LLM/agent wiki scope; skip unless a reinforcement-learning concept page is being seeded, in which case a source is the book itself, not this ad.",
+      "caveat": "paywalled promotional content; not worth scraping"
+    }
+  ],
+  "notes": [
+    "All five digests are single-post Substack/beehiiv emails: the ~19-20 'articles' per digest are Substack chrome (post-title, like/comment/share, read-in-app, subscribe-widget) plus tokenized /redirect/ links, not distinct articles.",
+    "Canonical URLs were inferred from open.substack.com/pub/<handle>/p/<slug> links in the digests, not scraped. Verify before ingest.",
+    "Notable batch themes: (1) Hugging Face governance concern (Import AI) lands right after the tracked NVIDIA $13B acquisition — worth a same-day entities/hugging-face touch; (2) a real-time videogen model release (Fal H3 Max Live) continues the ai-video-generation-2026 thread; (3) sovereign/public AI infrastructure (Korea utility policy) is an emerging ai-policy sub-theme.",
+    "Korea and DataCamp-style beehiiv posts have no recoverable canonical URL from the checkpoint — downstream must resolve click-tracking redirects before scraping.",
+    "Downstream stage (newsletter-wiki-ingest) should read this file, not the raw checkpoint."
+  ]
+}
