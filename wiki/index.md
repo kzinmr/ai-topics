@@ -1250,6 +1250,7 @@
 - [[concepts/ai-services-joint-ventures]] — AI Services Joint Ventures
 - [[concepts/ai-slop]] — AI Slop
 - [[concepts/ai-slop-productivity-paradox]] — AI Slop and the Productivity Paradox
+- [[concepts/ai-skepticism-movement]] — 2026 developer-culture backlash against default-on AI assistance (No AI Fridays, Rust contribution policy)
 - [[concepts/ai-subprime]] — AI Subprime Crisis
 - [[concepts/ai-subprime-crisis]] — AI Subprime Crisis
 - [[concepts/ai-supply-chain-security]] — AI Supply Chain Security
@@ -2987,7 +2988,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (28 pages)
+## Events (29 pages)
 
 - [[events/hermes-agent-v0.21.0-pantheon-release]] — Hermes Agent v0.21.0 "Pantheon Release" (Aug 31, 2026) — Bots Mode, Agent 2 Agent Comms, Persistent Multi-Gateway Connections, Subagent Steering, ~50% default context reduction; ~5,800 commits since v0.20.0
 - [[events/2026-08-26-aws-acquires-ducklabs]] — AWS Acquires DuckLabs (DuckDB) — creators of DuckDB/DuckLake/Quack join AWS, projects remain open source; embedded-analytics + AI data-pipeline consolidation (Aug 26, 1,060 HN pts)
