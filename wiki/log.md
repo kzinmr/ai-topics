@@ -1,3 +1,13 @@
+## [2026-09-01] lint | wiki-health-fix cron — all items clean, 1 index header fix
+
+**Trigger**: daily `wiki-health-fix` cron (wiki_health.py --json + independent verification).
+
+- **Index corruption**: pipe_prefix / line_number_prefix / triple_bracket / space_prefix / double-pipe all = 0. `validate_index.py` exit 0 (3029 lines).
+- **Orphan pages (reported 23)**: ALL false positives. 21 are `_index.md` subdirectory hub pages (parent dirs already indexed), 2 are archived files under `concepts/gpt/_archive/`. Top-level not-indexed count = 0. No action.
+- **L2 pipe-prefix corruption** (entities+concepts): 0.
+- **Real fix applied**: `index.md` Events section header `28 -> 29` pages (29 entries = 29 disk files; stale count from 08-31 Pantheon event ingest, flagged in that log entry). Committed `0e2f0fdb`.
+- **Stale pages (2575) / unprocessed raw (5490)**: informational, no auto-fix scope.
+
 ## [2026-09-01] ingest | Uber Engineering X Article: Running a Software Factory Efficiently at Uber Scale
 
 **Trigger**: User request (Discord) to ingest https://x.com/ubereng/status/2093444169037762840 (X Article 2090828118454071296, Tier 1.5 xurl OAuth2 retrieval, 18.4KB plain_text, 10,751 bookmarks).
