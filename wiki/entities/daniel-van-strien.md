@@ -3,7 +3,7 @@ title: Daniel van Strien
 type: entity
 handle: "@vanstriendaniel"
 created: 2026-04-10
-updated: 2026-08-19
+updated: 2026-09-01
 tags:
   - person
   - model
@@ -18,6 +18,7 @@ sources:
   - https://github.com/davanstrien/uv-scripts-for-ai
   - raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms
   - raw/articles/2026-08-19_vanstriendaniel_bl-book-images-crop-search.md
+  - raw/articles/2026-08-25_vanstriendaniel_britannica-illustrated-pages.md
 ---
 
 ## Related Entities
@@ -104,6 +105,7 @@ Daniel has been a vocal advocate for **community evals** over black-box leaderbo
 - **hub-semantic-search-mcp** — An [[concepts/mcp]] server for semantic search across the Hugging Face Hub, enabling natural language queries like "Find around 10 reasoning Hugging Face datasets published in 2025 focusing on topics other than maths and science."
 - **Genstruct 7B** — Contributed to an instruction-generation model designed to create valid instructions given raw text, part of the synthetic data generation ecosystem.
 - **bl-crop-tighten-rfdetrseg-clip10** (`small-models-for-glam` org, Aug 2026) — RF-DETR segmentation model that tightens crops on British Library book images to the object of interest; trained entirely by distillation from weak labels (no human annotations), $3.24 GPU for the 1M-image corpus. Pairs with the `biglam/british-library-book-images` dataset and the `davanstrien/bl-images-search` semantic-search Space.
+- **britannica-illustrated-pages** (`biglam` org, Aug 2026) — 115,293 illustrated pages from Encyclopaedia Britannica editions 1 (1768)–14 (1929), uploaded to the HF Hub as a public-domain corpus for VLM research and digital humanities.
 - **ColPali + Qdrant pipelines** — Built multivector indexing and search systems for specialized document datasets (e.g., UFO document collections).
 
 ### Academic & Institutional Work
@@ -117,6 +119,7 @@ Daniel has been a vocal advocate for **community evals** over black-box leaderbo
 
 | Date | Title | Topic |
 |------|-------|-------|
+| Aug 2026 | **115K Britannica illustrated pages (1768–1929)** (X, Aug 25) | `biglam/britannica-illustrated-pages` dataset — 115,293 illustrated pages from Encyclopaedia Britannica 1st (1768) to 14th (1929) edition, public domain, on the HF Hub |
 | Aug 2026 | **1M British Library book images: crop-tightening model + semantic search** (X, Aug 18–19) | `biglam/british-library-book-images` dataset (1M public-domain book images, `crop_masks` config); RF-DETR segmentation model `bl-crop-tighten-rfdetrseg-clip10` distilled from weak labels — zero human annotations, $3.24 GPU for the full corpus; `davanstrien/bl-images-search` Space for text-to-image semantic search with clean cutouts |
 | Jun 2026 | **polars-hf** — Read & Write HF Hub Buckets with Polars | Pure-Python IO plugin for HF Buckets; PEP 723 scripts for HF Jobs |
 | Jun 2026 | **uv-scripts-for-ai** — 30+ OCR models, one command each | Self-contained UV scripts for OCR, vision, audio, embeddings, inference — built for humans and agents |
