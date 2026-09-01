@@ -313,7 +313,7 @@
 - [[entities/florian-brand]] — Florian Brand
 - [[entities/flue]] — Flue
 - [[entities/folk-app]] — folk
-- [[entities/forrest-chang]] — Forrest Chang
+- [[entities/forrest-chang]] — Forrest Chang — author of andrej-karpathy-skills CLAUDE.md (209K stars); Multica co-founder
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta publishe...
 - [[entities/fourier-intelligence]] — Fourier — Shanghai robotics co. (founded 2015, Alex Gu); rehab exoskeletons → GR-1/GR-2/GR-3 humanoids
 - [[entities/fred-schott]] — Fred K. Schott (@FredKSchott)

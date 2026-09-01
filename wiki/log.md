@@ -1,6 +1,16 @@
 ## [2026-09-01] lint | wiki-health-fix cron — all items clean, 1 index header fix
 
 **Trigger**: daily `wiki-health-fix` cron (wiki_health.py --json + independent verification).
+## [2026-09-01] enrich | skeleton-enrich-daily — forrest-chang
+
+- **Enriched** `entities/forrest-chang.md` from skeleton to full profile (~7.6KB):
+  - **andrej-karpathy-skills** repo (created 2026-01-27, multica-ai org): **209,359 stars / 21,302 forks** verified via GitHub API; fork ecosystem table (Chinese translation, Cursor/VS Code port, Codex conversion).
+  - **Multica** (multica.ai) — open-source human+agent team PM platform; works with Claude Code/Codex/Gemini CLI/OpenClaw/OpenCode; co-founded with Jiayuan (JY) Zhang (@jiayuan_jy, ex-Devv AI, ex-TikTok US, blog.jiayuanzhang.com).
+  - Notable quotes on LLM ambiguity handling; tags normalized to SCHEMA taxonomy; git history checked (no richer version existed).
+- Updated `concepts/claude-code/claude-md-rules.md` Related link (star count 120K→209K, Multica mention, updated date) and `index.md` entry.
+- Sources: GitHub API, multica.ai + /docs (Jina Reader), xurl @jiayuan_jy.
+- Remaining skeleton entities: 7 (0xmovez-ai, antoine-buteau, solo-founder-stack, tilert, brace-sproul, eleanor-berger, fourier-intelligence).
+
 
 - **Index corruption**: pipe_prefix / line_number_prefix / triple_bracket / space_prefix / double-pipe all = 0. `validate_index.py` exit 0 (3029 lines).
 - **Orphan pages (reported 23)**: ALL false positives. 21 are `_index.md` subdirectory hub pages (parent dirs already indexed), 2 are archived files under `concepts/gpt/_archive/`. Top-level not-indexed count = 0. No action.

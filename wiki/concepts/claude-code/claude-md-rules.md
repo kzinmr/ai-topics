@@ -1,7 +1,7 @@
 ---
 title: "CLAUDE.md Rules — Karpathy's Behavioral Guidelines for AI Coding Agents"
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-09-01
 type: concept
 tags: [claude-code, agentic-engineering, context-engineering, coding-agents, developer-tooling]
 sources: [raw/articles/2026-05-09_mnilax_claude-md-12-rules.md]
@@ -67,7 +67,7 @@ The broader lesson: behavioral constraints beat feature checklists for directing
 ## Related
 
 - [[entities/andrej-karpathy]] — Originator of the observations
-- [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo
+- [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo; also co-founder of [[entities/forrest-chang|Multica]] (human+agent team platform). Repo has since grown to 209K+ stars (verified 2026-09-01).
 - [[entities/claude-code]] — Claude Code
 - [[concepts/context-engineering|Context Engineering]] — Context engineering discipline
 - [[concepts/agentic-engineering]] — Agent-centric software engineering
