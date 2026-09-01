@@ -60,4 +60,6 @@ The skepticism also expresses itself through binding policy, tracked separately:
 - [[concepts/open-source-llm-governance-debian-gr]] — Debian's formal GR on LLM usage
 - [[concepts/llm-policies-open-source]] — per-project LLM contribution policies
 - [[concepts/ai-agent-safety-incidents]] — safety incidents that fuel skepticism
+- [[concepts/dark-factory-software-factory]] — the Level-5 automation thesis this movement resists (Uber: >70% of PRs agent-authored)
+- [[concepts/bitter-lesson-harnessing]] — harness engineering erodes as models improve; skill atrophy is the human-side mirror
 - [[entities/simon-willison]] — proponent of "deep human understanding" as the AI-era differentiator
