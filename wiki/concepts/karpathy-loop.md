@@ -266,6 +266,7 @@ The Karpathy Loop's core insight — that constraint quality determines autonomy
 - [Autoresearch Complete 2026 Guide](https://o-mega.ai/articles/karpathy-autoresearch-complete-2026-guide) — Technical guide
 - [[concepts/harness-engineering]] — Simon Willison's agentic engineering framework- [[concepts/harness-engineering]] — Ryan Lopopolo's harness engineering concept
 - [[entities/andrej-karpathy]] — Andrej Karpathy entity page
+- [[entities/autoreason]] — SHL0MS + Hermes Agent extension of AutoResearch to subjective reasoning domains
 
 ---
 

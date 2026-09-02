@@ -2,37 +2,51 @@
 title: Autoreason
 type: concept
 created: 2026-04-27
-updated: 2026-05-27
-status: L2
-sources: [https://github.com/NousResearch/autoreason, https://x.com/SHL0MS/status/2043415274196435325]
+updated: 2026-09-02
+status: active
+sources:
+  - https://github.com/NousResearch/autoreason
+  - https://x.com/SHL0MS/status/2043415274196435325
+  - raw/articles/2026-04-12-shl0ms-autoreason-paper.md
 tags:
   - reasoning
   - multi-agent
-  - person
+  - self-improving
+  - autoresearch
+  - nous-research
+  - pseudonymous
 aliases: [auto-reason]
+related:
+  - "[[entities/nous-research]]"
+  - "[[concepts/karpathy-loop]]"
+  - "[[concepts/gepa]]"
 ---
 
 # Autoreason
 
-A technique for **automating self-refinement in subjective domains**, co-developed by SHL0MS (@SHL0MS) and Hermes Agent (NousResearch). An extension of Karpathy's AutoResearch to the domain of subjective evaluation.
+**Autoreason** ("Self-Refinement That Knows When to Stop") is a technique by **SHL0MS** (@SHL0MS) and **Hermes Agent** at [[entities/nous-research]] that fixes iterative LLM self-improvement for subjective and open-ended domains. It extends Karpathy's AutoResearch (see [[concepts/karpathy-loop]]) from autonomous experiment-running to improving the *quality of reasoning and writing itself* — domains (aesthetic judgment, literary quality, design) where conventional benchmark-based evaluation falls short.
+
+The paper itself is a demonstration of the method: co-authored by a human researcher and an AI agent, written using a research-paper-writing skill developed during the process. Announced 2026-04-12 (1,958 bookmarks, 304K impressions).
 
 ## Core Problem
 
-Iterative self-improvement (critique-and-revise) fails due to three structural flaws:
+Naive critique-and-revise self-refinement fails for three structural reasons:
 
-1. **Prompt Bias**: When asked for criticism, the model tends to fabricate flaws
-2. **Scope Creep**: Output expands uncontrollably with each iteration
-3. **Lack of Restraint**: The model does not output "no change needed"
+| Problem | Description | Autoreason Fix |
+|---------|-------------|----------------|
+| **Prompt bias** | Models hallucinate flaws when asked to critique their own work | Blind Borda count by fresh, context-isolated agents |
+| **Scope creep** | Outputs expand unchecked each pass | "Do nothing" is a first-class option |
+| **Lack of restraint** | Models never say "no changes needed" | Incumbent (A) always preserved as viable candidate |
 
-## Methodology
+Measured severity: plain critique-and-revise *reduced* Haiku 3.5 output by 59–70% in word count over 15 passes — refinement actively destroys weak models.
 
-Each iteration generates **3 competing versions**, scored via **blinded Borda voting** by **context-isolated fresh agents**. "Do nothing" is always a first-class option.
+## Method
 
-| Version | Description |
-|-----------|------|
-| **A** | Incumbent (no changes) | |
-| **B** | Adversarial revision (critique-based rewrite) | |
-| **AB** | Synthesis of A and B | |
+Each iteration produces three competing versions, judged blind:
+
+1. **A — Incumbent**: unchanged
+2. **B — Adversarial revision**: critique-based rewrite by a fresh author agent
+3. **AB — Synthesis**: combination of the best of both
 
 ```
 Task Prompt → Incumbent A
@@ -48,31 +62,36 @@ Task Prompt → Incumbent A
               Winner → new A  (or converge if A wins k=2 times)
 ```
 
-**Key design points**:
-- 3 judges provide optimal convergence speed (1 has too much noise, 7 takes 3x as long to converge)
-- Both B and AB are necessary. If either is missing, the tournament collapses
-- Wins 3 out of 4 tasks even in length-controlled evaluation
+Key design points:
+- Judges are **fresh agents with no shared context**, voting via **blind Borda count** (beats majority voting in ablations)
+- **3 judges is the sweet spot**: 1 is noisy; 7 converges 3× slower
+- **Both B and AB are necessary** — removing either collapses the tournament (convergence in 2–3 passes vs 24)
 
 ## Key Results
 
 | Finding | Detail |
 |---------|--------|
-| **42/42 perfect sweep** | Haiku 3.5 + autoreason won complete Borda sweep across 3 tasks; all baselines degraded below single-pass |
-| **77% vs 73%** | Sonnet 4.6 in 150 CodeContests problems (private-test): autoreason vs single-pass |
-| **40% vs 31%** | Haiku 3.5 autoreason vs best-of-6 sampling (matched compute) |
-| **Haiku 4.5: transition point** | Gains disappear at 60% private accuracy — suggests convergence of the generation-evaluation gap |
-| **Refinement destroys weak models** | Critique-and-revise reduces Haiku 3.5 output by 59-70% over 15 passes |
+| **42/42 perfect sweep** | Haiku 3.5 + autoreason achieved perfect Borda across 3 tasks; all baselines *degraded* below single-pass |
+| **77% vs 73%** | Sonnet 4.6 on 150 CodeContests problems (private-test): autoreason vs single-pass |
+| **40% vs 31%** | Haiku 3.5 autoreason vs best-of-6 sampling at matched compute |
+| **Haiku 4.5 transition point** | Held-out gains vanish at ~60% private accuracy — the generation-evaluation gap has closed |
 | **Code scaling curve** | Haiku 3.5 (40%) → Haiku 4.5 (60%) → Sonnet 4 (64%) → Sonnet 4.6 (77%) |
+| **Length-controlled: 21/28 wins** | Beats 3 of 4 baselines even at matched word count |
+
+The Haiku 4.5 transition point is the theoretically interesting result: autoreason's value scales with the **generation-evaluation gap** — once a model can reliably judge its own outputs, external tournament refinement stops adding held-out gains.
+
+## Experimental Scope (paper contents)
+
+- **Writing**: 5 open-ended + 3 constrained tasks, 4 baselines, 15-pass iterations; multi-seed replication (15 runs) and Monte Carlo (5 runs)
+- **Competitive programming**: 150 CodeContests problems × 3 strategies × 4 model tiers
+- **Model scaling**: 5 tiers (Llama 8B → Gemini Flash → Haiku 3.5 → Haiku 4.5 → Sonnet 4)
+- **Ablations**: judge count (1/3/7), Borda vs majority, component necessity, length control
+- **Failure analysis**: 8 remedy experiments for the Sonnet 4.6 scaling failure + failure taxonomy
+- **Human evaluation**: blinded materials (5 tasks × 3 methods, randomized 4-char codes) in `human_eval/`
 
 ## Repository
 
-[NousResearch/autoreason](https://github.com/NousResearch/autoreason)
-- `paper/` — LaTeX source, figures, PDF
-- `tasks/` — Task prompts (5 open-ended, 3 constrained)
-- `human_eval/` — Blinded materials for human evaluation
-- `experiments/` — Experiment runner, results, ablations
-
-## Citation
+[NousResearch/autoreason](https://github.com/NousResearch/autoreason) — `paper/` (LaTeX + PDF), `tasks/`, `human_eval/`, `experiments/v2/` (runners for writing/code/multi-seed/ablations, bootstrap CIs + McNemar tests, all result dirs).
 
 ```bibtex
 @article{shl0ms2026autoreason,
@@ -85,59 +104,23 @@ Task Prompt → Incumbent A
 
 ## Significance
 
-Autoreason is the **first application of "automated self-improvement" to the domain of subjective evaluation**. In subjective domains like "aesthetic judgment," "literary talent," and "design" — which cannot be addressed by conventional benchmark-based methods — it provides a competitive selection approach via Borda voting, replacing the structurally flawed critique-and-revise pattern. Its design feature is preventing unnecessary degradation by making "do nothing" a first-class option.
-
-A natural extension of Karpathy's AutoResearch and an important milestone in automating research and creative processes with LLMs.
+Autoreason is the first application of automated self-improvement to **subjective evaluation**, replacing the structurally flawed critique-and-revise pattern with competitive selection by context-isolated judges. Its "do-nothing-wins-out" design makes restraint explicit — a counterpoint to the constant-churn failure mode of naive agent loops.
 
 ## Related Concepts
-- [[entities/autoreason]]
 
-- [Karpathy's AutoResearch](https://karpathy.github.io/2025/04/28/self-play-benchmark.html)
-- [Agent Disagreement (Agreement Bug)](agreement-bug.md)
-- [Multi-Agent Systems](multi-agent-systems.md)
+- [[concepts/karpathy-loop]] — AutoResearch precursor: autonomous ML research loops; autoreason extends it to subjective reasoning quality
+- [[concepts/gepa]] — also uses multi-candidate evaluation and reflection-driven optimization
+- [[concepts/agentic-scaffolding]] — autoreason as scaffolding around the reasoning process itself
+- [[entities/agreement-bug]] — judge-panel design responds to the same agent-agreement failure mode
+- [[entities/nous-research]] — publishing organization; Hermes Agent as co-author
 
-## References
+## TODO
 
-- raw/articles/2026-04-12-shl0ms-autoreason-paper.md
+- [ ] Track formal paper publication / arXiv posting
+- [ ] Compare with Reflexion, Self-Refine, and other self-correction frameworks
 
-## Definition / Core Idea
-Autoreason (by SHL0MS & Hermes Agent at [[entities/nous-research]]) fixes the core problem with LLM self-improvement: models hallucinate flaws when asked to critique their own work, outputs expand without bound on each revision, and models never say "no changes needed."
+## Sources
 
-
-## Core Mechanism
-Each iteration produces **three competing versions**:
-1. **The unchanged incumbent (A)** — keep as-is
-2. **An adversarial revision (B)** — deliberately challenge the current approach
-3. **A synthesis (AB)** — combine the best of both
-
-These are judged by **fresh agents with no shared context** via blind **Borda count** voting. Critically, **"do nothing" is always a first-class option** — preventing unnecessary scope expansion.
-
-
-## Three Structural Problems Solved
-| Problem | Description | Autoreason Fix |
-|---------|-------------|----------------|
-| **Prompt bias** | Models hallucinate flaws when asked to critique | Blind Borda count with fresh agents |
-| **Scope creep** | Outputs expand unchecked each pass | "Do nothing" as first-class option |
-| **Lack of restraint** | Models never say "no changes needed" | Incumbent (A) preserved as viable candidate |
-
-
-## Connection to Karpathy's AutoResearch
-- [[concepts/karpathy-loop]] focuses on autonomous ML research execution (630 lines of code running experiments overnight)
-- **Autoreason** extends this into the *subjective reasoning* domain — not just running experiments, but improving the quality of reasoning itself
-- Both share the philosophy of removing human bottlenecks from research/improvement loops
-
-
-## Connection to Other Concepts
-- [[concepts/karpathy-loop]] — AutoResearch as the precursor for autonomous research loops
-- [[concepts/agentic-scaffolding]] — Autoreason provides scaffolding around reasoning itself
-- [[concepts/gepa]] — Both use multi-candidate evaluation and Pareto-style optimization
-
-
-## TODO: Research Items- [ ] Track NousResearch paper publication and benchmark results
-- [ ] Compare with other self-refinement frameworks (Reflexion, Self-Correction)
-- [ ] Document Borda count implementation details for agent voting
-
-
-## See Also
-- [[entities/autoreason]]
-
+- [GitHub: NousResearch/autoreason](https://github.com/NousResearch/autoreason) — README fetched 2026-09-02
+- [Announcement post](https://x.com/SHL0MS/status/2043415274196435325)
+- `raw/articles/2026-04-12-shl0ms-autoreason-paper.md`

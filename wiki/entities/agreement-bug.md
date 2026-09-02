@@ -87,3 +87,4 @@ This concept informs graph queries: it is a **deliberate disagreement** pattern 
 - [[concepts/multi-agents/agentic-conflict-resolution]] — Conflict resolution among agents
 - [[concepts/subagents]] — Subagent patterns
 - [[concepts/excessive-agency]] — Limits of agent autonomy
+- [[entities/autoreason]] — context-isolated judge panels designed against shared-context agreement failures

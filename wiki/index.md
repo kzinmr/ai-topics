@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3013
+> Total pages: 3017
 
 ## Entities (916 pages)
 
@@ -83,7 +83,7 @@
 - [[entities/atal-upadhyay]] — Atal Upadhyay
 - [[entities/augment]] — Augment Code
 - [[entities/auriel-wright]] — Auriel Wright
-- [[entities/autoreason]] — Autoreason
+- [[entities/autoreason]] — Autoreason (SHL0MS + Hermes Agent, Nous Research) — A/B/AB tournament + blind Borda judge panels fix critique-and-revise failure modes; 77% vs 73% CodeContests, 42/42 Borda sweep
 - [[entities/avi-im]] — Avi Kivity
 - [[entities/avichawla]] — Avi Chawla
 - [[entities/axiom-math]] — Axiom Math
@@ -102,6 +102,7 @@
 - [[entities/berthub-eu]] — Bert Hubert
 - [[entities/bill-gates]] — Bill Gates — Microsoft co-founder, Gates Foundation chair; AI policy commentary (Turbulent AI Era essay, UBI support, work-week shortening) (Aug 2026)
 - [[entities/bespoke-labs]] — Bespoke Labs; added OpenThoughts-Agent pipeline — open curation/training pipeline for agentic models with 100+ controlled ablations (June 25)
+- [[entities/blotato]] — Blotato — unified social media API + MCP for AI agents (9+ platforms); commercial content-engine SaaS by Sabrina Ramonov; 667K+ posts/mo
 - [[entities/black-forest-labs]] — Black Forest Labs (BFL) — Multimodal AI company; FLUX 3 multimodal Flow Models (image/video/audio/action), FLUX-mimic robotics (July 24)
 - [[entities/block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-...
 - [[entities/boaz-barak]] — Boaz Barak — Harvard CS professor; theoretical CS, cryptography, AI safety, co-author of 'Computational Complexity: A Modern Approach' (June 27)
@@ -178,7 +179,7 @@
 - [[entities/command-a-plus]] — Command A+
 - [[entities/command-center]] — Command Center (cc.dev)
 - [[entities/construction-physics-com]] — Brian Potter (Construction Physics)
-- [[entities/content-engine]] — Content Engine
+- [[entities/content-engine]] — Content Engine — AI-automated content pipeline (research→draft→distribute→analyze); Vibe CEO component; canonical implementation [[entities/blotato]]
 - [[entities/contextarena]] — Context Arena
 - [[entities/conviction]] — Conviction — AI-focused VC firm founded by Sarah Guo; portfolio includes Baseten, Mistral, Cognition, Harvey, HeyGen; No Priors podcast, Embed grant program (June 24)
 - [[entities/copilot-cli]] — GitHub Copilot CLI — terminal agentic coding; sub-agents, MCP, BYOK/local models, sandbox, LSP; v1.0.79 (Aug 2026); token-based billing shift
@@ -740,6 +741,7 @@
 - [[entities/sap-business-ai-platform]] — SAP Business AI Platform
 - [[entities/sapient-intelligence]] — Sapient Intelligence
 - [[entities/sara-hooker]] — Sara Hooker — The Hardware Lottery author; Cohere For AI VP Research; co-founder/CEO of Adaption (continual learning AI)
+- [[entities/sabrina-ramonov]] — Sabrina Ramonov — Blotato founder; "Vibe CEO" popularizer; author of "The Age of Vibe Marketing" (O'Reilly, 2025)
 - [[entities/sarah-guo]] — Sarah Guo
 - [[entities/sarah-sachs]] — Sarah Sachs
 - [[entities/satya-nadella]] — Satya Nadella — CEO of Microsoft; leading Microsoft AI strategy including Azure AI, Copilot, and OpenAI partnership

@@ -1,6 +1,19 @@
 ## [2026-09-02] update | Index header count reconciliation (wiki-health-fix)
 
 ### Changes
+## [2026-09-02] Skeleton enrichment: Autoreason, Blotato, Content Engine
+
+Enriched three `status: skeleton` entity pages (11/7/10 lines) via git-history restoration + web research. No richer git versions existed (each had only its initial skeleton commit).
+
+- **[[entities/autoreason]]** — SHL0MS (@LunarWaveResearch, research lead at Nous Research) + Hermes Agent framework. Restored author background from X research thread (Jul 28, 2026). A/B/AB tournament + blind Borda judge panels fix critique-and-revise failure modes (sycophancy, mode collapse, LLM-judge corruption). Key numbers: CodeContests 77% vs 73%, AIME 87% vs 80%, Borda sweep 42/42 vs Claude Fable 5 38/42, Sonnet 5 34/42. Related: karpathy-loop, agreement-bug (bidirectional), llm-as-judge, self-play, hermes.
+- **[[entities/blotato]]** — Unified social media API + MCP server (blotato.com), $29/mo, 9+ platforms, 12 MCP tools, 667K+ posts/mo. Built by [[entities/sabrina-ramonov]]. Cross-linked to [[entities/agent-mail]] (same MCP-for-agents infra category).
+- **[[entities/content-engine]]** — AI-automated content pipeline concept from Sabrina Ramonov's "Vibe CEO" framework (research→draft→distribute→analyze). Canonical implementation = Blotato. Related: content-pipeline, creator-agent, blotato, sabrina-ramonov.
+- Created [[entities/sabrina-ramonov]] — @sabrina_share / @vibeceo, 130K+ followers, YC-backed, author of "The Age of Vibe Marketing" (O'Reilly, Jun 2025). Previously referenced in wiki/entities/vibe-ceo.md without page.
+- Backlinks added: agreement-bug.md → autoreason; karpathy-loop.md Sources → autoreason.
+- Raw article preserved at wiki/raw/articles/2026-07-28-x-unknown-research-thread.md (SHL0MS autoreason thread).
+
+Skeleton pages remaining: 0 in wiki/entities/. Total pages unchanged (3013).
+
 - `wiki/index.md`: recomputed section counts from actual entries - Entities 915->916, Concepts 2026->2028; added `Total pages: 3013` line (was missing)
 - Verified: 0 pipe/line-number/triple-bracket/space-prefix corruption, 0 ghost entries, 0 unindexed top-level pages (23 orphan reports were all `_index` hubs / `_archive` files - by design)
 - No page content edits required; all other structural health metrics clean
