@@ -1625,6 +1625,7 @@
 - [[concepts/deep-agents]] — Deep Agents — Autonomous Multi-Step AI Agents
 - [[concepts/deep-agents-runtime]] — Production runtime primitives for deep AI agents — durable execution, memory, multi-tenancy, HITL, guardrails, observ...
 - [[concepts/deep-learning]] — deep-learning
+- [[concepts/delegated-access-token-less-agents]] — Delegated Access / WorkOS Relay — token-less agent auth: token leaks via 7 ordinary runtime paths; scope/rotation can't fix; credential injected at proxy egress (Sept 2026)
 - [[concepts/deep-research]] — Deep Research — Autonomous multi-step research agents that synthesize findings from web search and document analysis
 - [[concepts/deep-research-agent-from-scratch]] — Deep Research Agent from Scratch
 - [[concepts/deepclaude]] — DeepClaude - Claude Code Agent Loop with DeepSeek V4 Pro
