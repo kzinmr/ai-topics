@@ -1,3 +1,23 @@
+## [2026-09-02] watchdog | auto-fix — index gap repaired, ai-employment-displacement indexed
+
+**Trigger**: daily `wiki-watchdog-fix` cron (17:35 UTC). Context: pipeline watchdog alert (blog chain broken) + weekly graph report (2026-08-28).
+
+### Verification (all clean, no fixes needed)
+- `validate_index.py` exit 0 (3,030 lines); pipe/line-number/triple-bracket/double-pipe corruption: 0 each.
+- `wiki_health.py --json`: 0 name-policy violations, 0 skeleton entities; orphan report 100% `_index`/`_archive` false positives.
+- Last week's real index gap (`concepts/ai-employment-displacement`) already repaired by a later run — confirmed present at index line 1018, not touched again.
+
+### Auto-fixed
+- `concepts/ai-employment-displacement.md` — frontmatter `tags:` contained `industry` (not in SCHEMA taxonomy; would block pre-commit). Replaced with existing `ai-industry-economics`; `updated` bumped to 2026-09-02. Residual tag violations now 0.
+
+### Pipeline alert (needs attention, not auto-fixable)
+- `blog` chain: ingest_ok_but_triage_failed — `blog-triage` (58c2f4a7e1bd) failed 2026-09-02 10:25 UTC with `RuntimeError: Context length exceeded (47,655 tokens). Cannot compress further.` on a 20-candidate checkpoint batch. Yesterday's triage outputs were also 422 bytes (error stubs). ingest and downstream wiki-ingest healthy (19 raw articles saved, wiki commits landed). Downstream `blog-wiki-ingest` has own checkpoint fallback, so no data loss expected.
+
+### Snapshot
+- Entities 917 / concepts 2,050 / comparisons 35 / L2 total 3,002 / raw articles 9,283.
+
+---
+
 ## [2026-09-02] update | Slack-hot-post support (night 21:30 JST): cognitive-debt evidence consolidation + orphan-page backlinks
 
 **Trigger**: 21:30 JST hot post (night slot, contrarian angle) on "the AI skepticism movement's claims are weaker than its evidence" — synthesized from [[concepts/ai-skepticism-movement]], [[concepts/cognitive-debt]], [[concepts/expert-novice-paradox]].
