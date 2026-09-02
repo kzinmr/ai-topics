@@ -1,3 +1,12 @@
+## [2026-09-02] update | Index header count reconciliation (wiki-health-fix)
+
+### Changes
+- `wiki/index.md`: recomputed section counts from actual entries - Entities 915->916, Concepts 2026->2028; added `Total pages: 3013` line (was missing)
+- Verified: 0 pipe/line-number/triple-bracket/space-prefix corruption, 0 ghost entries, 0 unindexed top-level pages (23 orphan reports were all `_index` hubs / `_archive` files - by design)
+- No page content edits required; all other structural health metrics clean
+
+---
+
 ## [2026-09-02] watchdog | auto-fix — index gap repaired, ai-employment-displacement indexed
 
 **Trigger**: daily `wiki-watchdog-fix` cron (17:35 UTC). Context: pipeline watchdog alert (blog chain broken) + weekly graph report (2026-08-28).
