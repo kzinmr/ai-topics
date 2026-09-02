@@ -1,7 +1,7 @@
 ---
 title: "LLM Expertise Amplification"
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-09-02
 type: concept
 tags:
   - llm
@@ -64,6 +64,7 @@ These two perspectives converge on a unified insight:
 
 ## Open Questions
 
+- **Cognitive debt** — see [[concepts/cognitive-debt]] and [[concepts/ai-skepticism-movement]]. Anthropic's early-2026 randomized trial is the sharpest datum: comprehension 50% (AI) vs 67% (manual) at equal task speed, with the decisive split being copy-pasters (<40%) vs conceptual-askers (>65%) — "the posture, not the tool."
 - Can tooling be designed to reduce cognitive debt (e.g., explanation-first generation, forced comprehension checks) or is the retyping approach inherently necessary?
 - Does the expertise amplification effect apply uniformly across all domains, or are some fields more susceptible to AI-driven deskilling?
 - At what point does [[vibe-coding]] -- coding by prompting without understanding -- cross from productive prototyping into dangerous debt accumulation?

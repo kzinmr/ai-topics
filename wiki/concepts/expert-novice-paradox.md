@@ -1,7 +1,7 @@
 ---
 title: "Expert Novice Paradox"
 created: 2026-08-28
-updated: 2026-08-28
+updated: 2026-09-02
 type: concept
 tags:
   - coding-agents
@@ -45,6 +45,7 @@ Status: single-source concept (Faye) corroborated by cited studies; the causal c
 
 ## Related
 
+- [[concepts/ai-skepticism-movement]] — the organized-movement version (No AI Fridays, Debian GR vote)
 - [[concepts/cognitive-debt]] — individual accumulation mechanism
 - [[concepts/llm-expertise-amplification]] — steepening-curve thesis this paradox temporalizes
 - [[concepts/harness-engineering]] — the discipline that reintroduces friction as tests/specs/review

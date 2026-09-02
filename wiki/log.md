@@ -1,3 +1,12 @@
+## [2026-09-02] update | Slack-hot-post support (night 21:30 JST): cognitive-debt evidence consolidation + orphan-page backlinks
+
+**Trigger**: 21:30 JST hot post (night slot, contrarian angle) on "the AI skepticism movement's claims are weaker than its evidence" — synthesized from [[concepts/ai-skepticism-movement]], [[concepts/cognitive-debt]], [[concepts/expert-novice-paradox]].
+
+- `concepts/ai-skepticism-movement.md` — new "Cognitive-Debt Data (Anthropic RCT)" section: 4-row study table (Anthropic RCT 50% vs 67% comprehension at equal speed; copy-pasters <40% vs conceptual-askers >65%; MIT 83% can't quote own output; CHI 2026 anchoring). Related links + updated date bumped.
+- `concepts/llm-expertise-amplification.md` — Open Questions: added Anthropic-RCT cognitive-debt pointer (was an orphan page — zero inbound links).
+- `concepts/expert-novice-paradox.md` — Related: added backlink to ai-skepticism-movement (was only linked from index).
+- No new pages; index descriptions unchanged (summaries still accurate).
+
 ## [2026-09-01] lint | wiki-health-fix cron — all items clean, 1 index header fix
 
 **Trigger**: daily `wiki-health-fix` cron (wiki_health.py --json + independent verification).
