@@ -573,7 +573,7 @@
 - [[entities/mojo]] — Mojo — Python-compatible programming language for AI/ML workloads; created by Chris Lattner at Modular; reached 1.0 in August 2026; MLIR compiler backend; Qualcomm acquired Modular for ~$4B
 - [[entities/moondream]] — Moondream — VLM company building small vision-language models and the Photon inference engine; uses pipelined decoding to eliminate GPU bubbles, achieving 35% higher decode throughput on NVIDIA B200 (June 30)
 - [[entities/moonshot-ai]] — Moonshot AI
-- [[entities/mo-hit-main]] — Mo Hit Main — Takumi Handa's Japanese LLM/generative-AI publishing hub (52k+ X followers, 5,600+ note writers, 1,000+ articles, weekly AI news 300+ issues)
+- [[entities/mo-hit-main]] — ⚠️ UNVERIFIED (suspected hallucination) — claimed Japanese LLM publishing hub; identity checks failed 2026-09-03
 - [[entities/muratcan-koylan]] — Muratcan Koylan
 - [[entities/muse-glimmer]] — Muse Glimmer — 30B open agentic model from Meta Superintelligence Labs; Apache 2.0; optimized for local agent workflows on consumer hardware; distilled from Muse Spark; DFlash speculative decoding (3.1x on RTX 5090) (Aug 2026)
 - [[entities/muse-spark]] — Muse Spark; 1.1 GA with API access (first Spark model with API), agentic tool calling improvements, llm-meta-ai plugin, "Attractor States in Self-Conversation" finding (July 2026); Muse Code beta technicals (event log runtime, Photon Sphere/Embervault/Avo Lawn agents, KDA/MLA kernel case study) (Aug 2026)

@@ -1,6 +1,30 @@
+# Wiki Log
+
+> Chronological record of all wiki actions. Append-only.
+> Format: `## [YYYY-MM-DD] action | subject`
+> Older entries archived in log-2026.md
+
+
 ## [2026-09-03] watchdog | auto-fix — index counts reconciled, 3 orphans indexed, log rotated
 
 **Trigger**: daily `wiki-watchdog-fix` cron (17:35 UTC).
+
+## [2026-09-03] skeleton-enrich-daily | mo-hit-main: identity verification FAILED -- marked suspected hallucination
+
+**Trigger**: skeleton-enrich-daily cron. No `status: skeleton` pages remain in `wiki/entities/` (0 matches). Pivoted to the only remaining unresolved page: `entities/mo-hit-main.md` (`status: stub`, `confidence: low`), created 2026-08-31 as a ghost-entry fix for a trending-topics index entry.
+
+**Verification result (negative)**: Could not confirm the entity exists.
+- `note.com/mohejapan` is a real note profile publishing a Kojiki mythology series, not an LLM publishing hub
+- X `@handaline`: does not exist (API resource-not-found); `@moheji1`: different person (Hideki Motegi)
+- JP web searches (Moheji+LLM, Handalin, Handa Takumi (romaji search terms)): no corroborating results
+- The trending-topics 2026-08-31 report itself contains no mention of the entity -- the index entry has no traceable source
+
+**Provenance conclusion**: Likely LLM hallucination in the trending-topics 2026-08-31 generation step. Not deleted (pending manual review), but downgraded: page rewritten with `status: needs-identification`, explicit warning banner, full verification record; index.md one-liner rewritten to flag UNVERIFIED / suspected hallucination.
+
+**Files**: wiki/entities/mo-hit-main.md (rewritten), wiki/index.md (entry flagged), wiki/raw/articles/2026-09-03_note-mohejapan-profile-scrape.md (new verification record), wiki/log.md.
+
+---
+
 
 ### Auto-fixed
 - `wiki/index.md`: removed dangling entry for `wiki-graph-analysis-weekly-2026-08-28-annotations` (no file on disk).
@@ -18,11 +42,21 @@
 - `x-accounts-scan` stale 26h (every-2-days schedule — likely benign).
 - Weekly graph (2026-08-28) recommended: merge 3 person-page duplicates (`lilian-weng`/`lilianweng` contested, `eugene-yan`/`eugeneyan`, `giles-thomas`/`gilesthomas`) — judged human-review per no-page-deletion rule.
 
-# Wiki Log
+## [2026-09-03] skeleton-enrich-daily | mo-hit-main: identity verification FAILED -- marked suspected hallucination
 
-> Chronological record of all wiki actions. Append-only.
-> Format: `## [YYYY-MM-DD] action | subject`
-> Older entries archived in log-2026.md
+**Trigger**: skeleton-enrich-daily cron. No `status: skeleton` pages remain in `wiki/entities/` (0 matches). Pivoted to the only remaining unresolved page: `entities/mo-hit-main.md` (`status: stub`, `confidence: low`), created 2026-08-31 as a ghost-entry fix for a trending-topics index entry.
+
+**Verification result (negative)**: Could not confirm the entity exists.
+- `note.com/mohejapan` is a real note profile publishing a Kojiki mythology series, not an LLM publishing hub
+- X `@handaline`: does not exist (API resource-not-found); `@moheji1`: different person (Hideki Motegi)
+- JP web searches (Moheji+LLM, Handalin, Handa Takumi (romaji search terms)): no corroborating results
+- The trending-topics 2026-08-31 report itself contains no mention of the entity -- the index entry has no traceable source
+
+**Provenance conclusion**: Likely LLM hallucination in the trending-topics 2026-08-31 generation step. Not deleted (pending manual review), but downgraded: page rewritten with `status: needs-identification`, explicit warning banner, full verification record; index.md one-liner rewritten to flag UNVERIFIED / suspected hallucination.
+
+**Files**: wiki/entities/mo-hit-main.md (rewritten), wiki/index.md (entry flagged), wiki/raw/articles/2026-09-03_note-mohejapan-profile-scrape.md (new verification record), wiki/log.md.
+
+---
 
 ## [2026-08-12] raw-backlog-ingest (10:00) | 5 articles enriched existing entity pages
 - Batch: raw_backlog_collect.py --sort ai-hint --limit 5 (2026-08-12 10:00, run 20260812T100039Z). Takes=0 (no new pages - all 5 map to existing rich entity pages), References=5.
