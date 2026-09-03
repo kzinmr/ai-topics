@@ -1,9 +1,9 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3017
+> Total pages: 3021
 
-## Entities (916 pages)
+## Entities (918 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -558,6 +558,7 @@
 - [[entities/minimaxir-com]] — Max Woolf; Nano Banana prompt-engineering analysis (Nov 2025); IMDb rating prediction via text embeddings (Jun 2025)
 - [[entities/mira-murati]] — Mira Murati
 - [[entities/mistral-ai]] — Mistral AI; Shieldstral 3B on-device safety model (Aug 2026)
+- [[entities/multiverse-computing]] — Multiverse Computing; Quasar 438B open-weights model (HLE 44.7%, Apache 2.0, Cohere-hosted) billed "Europe's leading AI model" (Sep 2026)
 - [[entities/mistral-voxtral-tts]] — Mistral Voxtral TTS
 - [[entities/mit-ibm-computing-research-lab]] — Joint MIT-IBM research lab (est. April 2026) exploring convergence of AI, algorithms, and quantum computing. Successo...
 - [[entities/mitchell-hashimoto]] — Mitchell Hashimoto
@@ -882,6 +883,7 @@
 - [[entities/walden-yan]] — Walden Yan
 - [[entities/wandb-weave]] — W&B Weave
 - [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23); Terminal Internals Explainer — PTY/line discipline/escape sequences deep dive (Jan 2023)
+- [[entities/world-labs]] — World Labs; Fei-Fei Li's spatial-intelligence startup; Marble 3D world model (persistent Gaussian-splat worlds, editor, API, paid tiers) — only shipped structured-3D world model (Sep 2026)
 - [[entities/weaviate]] — Weaviate; added Engram GA — memory-as-asynchronous-infrastructure for AI agents (June 25)
 - [[entities/webmcp]] — WebMCP
 - [[entities/weights-and-biases]] — Weights & Biases
@@ -924,7 +926,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2028 pages)
+## Concepts (2030 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1250,6 +1252,7 @@
 - [[concepts/ai-regulation-2026]] — AI Regulation (2026)
 - [[concepts/ai-retail-experiments]] — AI-run Retail Experiments
 - [[concepts/ai-services]] — AI Services (CAIS)
+- [[concepts/ai-search-visibility]] — AI Search Visibility (AEO); Trelly audit: ~51% of AI-engine citations are manufactured sources (branded content / self-owned / AI-generated), systemic across 91.4% of provider-industry combos (Sep 2026)
 - [[concepts/ai-services-joint-ventures]] — AI Services Joint Ventures
 - [[concepts/ai-slop]] — AI Slop
 - [[concepts/ai-slop-productivity-paradox]] — AI Slop and the Productivity Paradox

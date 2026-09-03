@@ -1,104 +1,67 @@
 ---
-title: "Functional Taxonomy of World Models"
+title: "World Model Taxonomy"
+created: 2026-09-03
+updated: 2026-09-03
 type: concept
-created: 2026-06-09
-updated: 2026-06-09
-tags:
-  - world-models
-  - spatial-intelligence
-  - taxonomy
-  - reinforcement-learning
-  - robotics
-  - model
+tags: [world-models, spatial-intelligence, video-generation, research]
 sources:
-  - raw/articles/2026-06-03_fei-fei-li_x_article_world-model-taxonomy.md
-  - https://x.com/drfeifei/status/2062247238143996275
+  - raw/articles/worldlabs-ai--blog-atlas.md
+related:
+  - concepts/world-models-science
+  - concepts/world-models-for-agents
+  - entities/world-labs
+  - entities/fei-fei-li
+  - entities/deepmind
+confidence: medium
 ---
 
-# Functional Taxonomy of World Models
+# World Model Taxonomy
 
-A framework proposed by [[entities/fei-fei-li|Fei-Fei Li]] and the [[world-labs|World Labs]] team that classifies "world models" into three functional categories based on what they output from the agent-environment interaction loop: **renderers**, **simulators**, and **planners**.
+A classification of how "world model" is used across the industry, derived from the World Labs / Google DeepMind / NVIDIA / OpenAI / Meta / Tencent / Decart competitive scan of September 2026. The term covers at least six distinct technical commitments; conflating them makes vendor claims impossible to evaluate. See [[concepts/world-models-science]] and [[concepts/world-models-for-agents]] for the broader concept and [[entities/world-labs]] for the flagship commercial example.
 
-## The POMDP Loop
+## The Six Categories
 
-The taxonomy is grounded in the classical reinforcement learning framework (Sutton & Barto): the **partially observable Markov decision process** (POMDP). An agent takes **actions** that affect the **state** of the world. The agent never sees state directly — it receives **observations** (photons, sensor readings, pixels). New observations inform new actions, and the loop continues.
+| Category | Output | Mechanism | Examples | Maturity |
+|----------|--------|-----------|----------|----------|
+| **1. Gaussian Splat world model** | Persistent, editable 3D Gaussian fields | AI generates a scene → it exists as a queryable 3D data structure | [[entities/world-labs]] Marble (persistent worlds, editor, API) | Commercial (paid tiers) |
+| **2. Interactive video-gen world model** | Pixels, no persistent state | Real-time autoregressive video diffusion conditioned on actions | Genie 3 ([[entities/deepmind]]), Oasis (Decart), Cosmos (NVIDIA), HunyuanWorld (Tencent), Meta's "Vidolmolins" | Demo/research stage |
+| **3. Action-conditioned video** | Pixels driven by action conditioning | Sora-style generation steered by actions | [[entities/openai]] "toynet" prototypes | Prototype |
+| **4. Latent-prediction world model** | Latent states (not media) | V-JEPA 2-style prediction in representation space | [[entities/meta]] V-JEPA 2 | Research |
+| **5. Video-as-reality-simulator** | Pixels, framed as physical truth | Video generation repositioned as embodied simulation | [[entities/deepmind]] Veo 3.1 claim: "world's best video model… a real reality simulator" | Marketing layer on category 2 |
+| **6. Voxel / CAD world model** | Structured 3D (voxel meshes, geometry) | Generation into explicit geometric representations | Tencent HunyuanWorld variants | Research/early |
 
-The term "world model" traces to Kenneth Craik's 1943 proposal that minds reason by running "small-scale models" of reality. Different things now called "world models" are in fact different projections of this same loop — each outputs a different piece of it.
+## Why the Distinction Matters
 
-## Three Functional Categories
+Categories 1 and 6 commit to **persistent, queryable 3D structure**: geometry exists independent of observation, is exportable (to game engines, USDZ/GLB), and survives being looked away from. Categories 2, 3, and 5 commit only to **pixels** — what Fei-Fei Li calls "reality synthesis." The open question is whether pixel-only world models can guarantee spatial consistency at scale:
 
-### 1. Renderer (Observations → Pixels)
+> *"You cannot build a persistent, editable, spatially coherent world by only synthesizing the pixels that humans perceive — no matter how good the models get. They can look extremely convincing, but nothing guarantees that the underlying space is coherent."* — [[entities/fei-fei-li|Fei-Fei Li]]
 
-- **Outputs**: Observations in the form of pixels for human eyes
-- **Quality metric**: Visual fidelity
-- **Examples**: Text-to-video models, Google Genie 3, World Labs RTFM
-- **Limitation**: No explicit understanding of 3D structure; produces what a viewer *would see*, not what *is*
-- **Maturity**: Most commercially mature category
+^[[raw/articles/worldlabs-ai--blog-atlas.md]]
 
-### 2. Simulator (State → Geometry/Physics/Dynamics)
+Category 4 (latent prediction) is orthogonal to the pixels-vs-structure axis: it produces no media at all and is aimed at robot planning rather than content — the same motivation behind DeepMind's Gemini Robotics 2 effort (see [[concepts/gemini/gemini-robotics-2]]).
 
-- **Outputs**: Geometrically, physically, or dynamically faithful representations of world state
-- **Quality metric**: Structural accuracy — geometry that holds up under inspection, physics that respects Newton's laws
-- **Serves two consumers**:
-  - Human professionals (architects, designers, filmmakers, game developers)
-  - Computer programs (RL agents, robot controllers, autonomous vehicles)
-- **Why it's the linchpin**: Bridge between renderers and planners; the structural backbone from which both visual appearance and action consequences can be derived
-- **Commercial surface area**: NVIDIA Omniverse targets >$1T addressable market in factories, warehouses, supply chains, digital twins
+## Vendor Claims (September 2026)
 
-### 3. Planner (Observations → Actions)
+- **World Labs (Marble)** — the only company currently claiming a *shipped* 3D world model; "first 3D world model accessible to everyone," paid tiers with API coming (0.2 update, 2026-09-02).
+- **NVIDIA (Cosmos)** — positions its world foundation models as a *simulation layer* for physical AI developers rather than a consumer product.
+- **OpenAI** — action-conditioned video exploration, no structured-3D product announced.
+- **Meta** — "Vidolmolins" described as a "full-scale world model that can be played"; demo-stage.
 
-- **Outputs**: Actions — what the agent should do next given an observation and a goal
-- **Quality metric**: Task success, safety, efficiency
-- **Inverse of the renderer**: Takes observations as input, produces actions as output (closing the perception-action loop)
-- **Examples**: Vision-Language-Action (VLA) models, model-based systems, World Action Models
-- **Maturity**: Most nascent; robotics demos impressive but confined to constrained lab setups
+## Open Questions
 
-## Key Insight: Convergence
-
-The three categories are not fundamentally separate. The same underlying knowledge — geometry, physics, dynamics — sits beneath all of them. A model that can render a cup from any angle ought to simulate what happens when the cup is pushed and plan a hand to pick it up. The three categories are **three projections of a single underlying understanding**.
-
-Recent work demonstrates convergence:
-- Pretrained video renderers used as backbone for joint world-and-action prediction
-- World Labs' Marble outputs Gaussian splats + collision meshes from a single model (renderer ↔ simulator boundary dissolving)
-- Renderers becoming action-conditioned, simulators becoming more controllable, planners deliberating rather than reacting
-
-## The Logical Endpoint: Unified World Model
-
-One foundation model that can:
-1. Render photorealistic views
-2. Produce physically accurate structure
-3. Plan action sequences
-
-...switching between output modalities depending on what the downstream consumer needs.
-
-## Open Problems
-
-| Challenge | Description |
-|-----------|-------------|
-| **Data scarcity** | Renderers awash in internet video; simulators/planners face acute shortages of 3D assets and robot demonstrations |
-| **Beauty vs. precision** | Optimizing for visual beauty can sacrifice the precision a robot or simulation needs |
-| **Sim-to-real gap** | Difference between simulation behavior and real-world behavior persists |
-| **Generative geometry risks** | AI-generated geometry can look correct but contain self-intersections or wrong scale producing nonsensical physics |
-| **Multi-physics at scale** | Rigid bodies + deformable objects + fluids + cloth interacting is orders of magnitude more expensive than single-domain simulation |
-
-## Comparison with Existing World Model Concepts
-
-| Dimension | This Taxonomy | [[world-models-for-agents\|ECHO / Agent World Models]] | [[world-models-science\|Scientific World Models]] |
-|-----------|---------------|------|------|
-| **Scope** | Physical/spatial world | Terminal/software environments | Scientific domains |
-| **Agent type** | Robots, embodied systems | CLI/browser agents | Research agents |
-| **"World" means** | 3D space, physics, dynamics | Terminal output, tool responses | Biological/physical systems |
-| **Key output** | Pixels, state, actions | Next-token predictions | Hypotheses, experiments |
-
-## Related Concepts
-
-- [[concepts/world-models-for-agents]] — World models for software agents (ECHO, VAGEN)
-- [[concepts/world-models-science]] — World models for scientific discovery
-- [[entities/fei-fei-li]] — Author; CEO of World Labs
-- [[world-labs]] — Company building spatial intelligence and Marble
+- Can video-only models (categories 2/3/5) be regularized into genuine spatial consistency, or does persistence require an explicit 3D representation?
+- Will Gaussian-splat pipelines (category 1) scale to large, dynamic scenes, or remain a "spatial generation" tool for static scenes?
+- Does the market need one taxonomy — or are "world model" products competing on fundamentally different axes and merely sharing a label?
 
 ## See Also
 
-- [[entities/fei-fei-li]] — Author and proposer of the taxonomy
-- [[world-labs]] — World Labs, building Marble (first renderer+simulator product)
-- [[concepts/world-models-for-agents]] — Complementary perspective: world models in software agent training
+- [[concepts/world-models-science]] — scientific world models
+- [[concepts/world-models-for-agents]] — world models for agents
+- [[concepts/jepa-world-models]] — the latent-prediction approach (category 4)
+- [[entities/world-labs]] — Marble product and Spatial Intelligence thesis
+- [[entities/deepmind]] — Genie 3, Veo 3.1 framing
+- [[entities/nvidia]] — Cosmos world foundation models
+
+## Sources
+
+- raw/articles/worldlabs-ai--blog-atlas.md

@@ -1,7 +1,7 @@
 ---
 title: "Perplexity"
 created: 2026-05-06
-updated: 2026-05-27
+updated: 2026-09-03
 type: entity
 tags:
   - entity
@@ -89,6 +89,7 @@ This positions Perplexity in the growing AI supply-chain security space, alongsi
 - [[entities/openai]] — ChatGPT for Clinicians (healthcare competitor)
 - [[entities/perplexity-computer]] — Perplexity's autonomous digital worker (execution layer)
 - [[entities/perplexity-comet]] — Perplexity's AI-native browser (interface layer)
+- [[concepts/ai-search-visibility]] — Citation audit finding ~53.5% of Perplexity's citations resolve to manufactured sources (Sep 2026)
 
 ## Sources
 

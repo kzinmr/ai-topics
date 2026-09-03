@@ -2,7 +2,7 @@
 title: Mistral AI
 type: entity
 created: 2026-05-04
-updated: 2026-08-11
+updated: 2026-09-03
 tags:
   - company
   - model
@@ -118,6 +118,10 @@ Mistral announced **Leanstral**, a project applying LLMs to formal proof generat
 > *Source: [[raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md|AINews — Aug 5 2026]]*
 
 Mistral launched **Shieldstral**, a **3B open-weights safety/moderation model** designed for **on-device moderation/classification**. [[entities/vllm|vLLM]] shipped day-0 serving support and highlighted: **one-forward-pass safety scoring**, multimodal input, **12 languages**, and **32k context**. This aligns with Mistral's "deployable specialization" strategy (see Model Architecture Philosophy below) — small, specialized, open models alongside frontier efforts.
+
+## European Competition: Quasar 438B (Sep 2026)
+
+Spanish compression-specialist [[entities/multiverse-computing|Multiverse Computing]] released **Quasar 438B** (Sep 1, 2026) — 30B active parameters, HLE 44.7%, Apache 2.0 open weights, hosted exclusively by Cohere — explicitly billing itself as "Europe's leading AI model" and framing its strategy as *not* a Mistral clone: where Mistral pursued smaller/cheaper European alternatives, Multiverse bets that extreme quantum-inspired compression is Europe's path to frontier capability. First credible challenge to Mistral's "European sovereign-AI champion" positioning.
 
 ## ABN AMRO Partnership & Dutch Banking Deals (Aug 2026)
 

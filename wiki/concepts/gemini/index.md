@@ -36,6 +36,10 @@ sources:
 
 In late July 2026, Google's **"Gemini Drops"** update (announced via @GeminiApp) added **Gemini 3.6 Flash** and **Gemini 3.5 Flash-Lite** to the family, alongside a wider Gemini Spark rollout, app integrations, voice support on macOS, and personalized image/avatar features (source: AINews 2026-08-01). Per the Artificial Analysis Intelligence Index v4.1 (Superintel+ chart, 2026-07-31), Gemini 3.6 Flash scores ~**50.1 intelligence index** at ~**$0.50 per task**. Pricing/GA details for the new models are not yet captured in the table below — this is a reference-level note pending a dedicated model page.
 
+## Gemini 3.8 Flash & 3.8 Flash Cyber (September 1, 2026)
+
+The September 2026 "Gemini Drops" release added **Gemini 3.8 Flash** (global in the Gemini app + `gemini-flash-latest` preview endpoint; positioned as best-in-class for coding/agentic tasks, 2x faster time-to-first-intelligent-token than Claude Opus 4.7 on LMArena Search), **Gemini 3.8 Flash Cyber** (defensive security variant for vulnerability finding/patching, gated behind Google's Trusted Access Program), and an on-device **Gemini Nano** refresh (~5x faster on Android/Chrome). See the dedicated page: [[concepts/gemini/gemini-3-8-flash|Gemini 3.8 Flash & Flash Cyber]].
+
 ## Gemini 3.7 Flash (August 13, 2026)
 
 On August 13, 2026, Google released **Gemini 3.7 Flash**, confirmed via Simon Willison's `llm-gemini` 0.33 plugin release notes (the release notes are the current best public source of model availability). The plugin added support for **gemini-3.7-flash**, **gemini-3.6-flash**, **gemini-3.5-flash-lite**, and two embedding models — **gemini-embedding-2** and **gemini-embedding-001**.

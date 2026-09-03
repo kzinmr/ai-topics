@@ -3,7 +3,7 @@ title: "Fei-Fei Li"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-06-09
+updated: 2026-09-03
 type: entity
 ---
 
@@ -68,6 +68,7 @@ type: entity
 - **April 2024**: Co-founded World Labs. Serves as CEO.
 - **Funding**: $230M+, valuation >$1B.
 - **Mission**: Operationalize spatial reasoning for robotics and generative 3D AI. Focus on physics-based constraints and real-world deployment.
+- **Marble 0.2 (Sep 2026)**: Marble shipped as the first commercial 3D world model — persistent Gaussian-splat worlds, world editor, API access, paid tiers ($28–$220/mo). Li's September 2026 essay argues pixel-only "reality synthesis" cannot guarantee spatial coherence; persistent worlds require explicit 3D representation. See [[entities/world-labs]] and [[concepts/world-model-taxonomy]].
 
 ### Twitter/X Corp (May 2020–Present)
 

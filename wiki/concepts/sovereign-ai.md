@@ -1,7 +1,7 @@
 ---
 title: "Sovereign AI"
 created: "2026-06-17"
-updated: "2026-08-24"
+updated: "2026-09-03"
 type: "concept"
 tags:
   - geopolitics
@@ -94,7 +94,7 @@ In 2026, the city of Rio de Janeiro claimed to have developed a sovereign LLM fo
 
 - **[[entities/mistral-ai|Mistral AI]]** (France): Positioned as "Europe's sovereign AI champion," Mistral develops both open-weight and proprietary models with a strategy of "Smaller, Cheaper, and Not American." Raised ~$3.72B as of 2026.
 - **Germany**: Multiple initiatives including government partnerships and Cohere's Berlin-based operations; Reliant AI had a Berlin office before Cohere acquisition.
-- **Spain**: IndraMind sovereign intelligence initiative, partnered with Cohere (May 2026) to develop LLMs for Castilian Spanish, Catalan, Valencian, Basque, and Galician.
+- **Spain**: IndraMind sovereign intelligence initiative, partnered with Cohere (May 2026) to develop LLMs for Castilian Spanish, Catalan, Valencian, Basque, and Galician. **Multiverse Computing** (San Sebastián) released **Quasar 438B** (Sep 2026, Apache 2.0, HLE 44.7%) billing itself as "Europe's leading AI model" — but hosted its inference exclusively with **Cohere** (Canada), illustrating the sovereignty trade-off between model origin and inference jurisdiction. See [[entities/multiverse-computing]].
 - **Japan**: National AI strategy with domestic LLM development for Japanese language and cultural context.
 - **South Korea**: Significant government investment in domestic AI infrastructure and Korean-language models (see [[concepts/korean-ai]]).
 
