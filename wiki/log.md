@@ -5,6 +5,28 @@
 > Older entries archived in log-2026.md
 
 
+## [2026-09-03] x-accounts-scan | ingest — 2 new posts (Eugene Yan) → Fable 5.1 event page
+
+**Trigger**: `x-accounts-scan` cron (11 accounts scanned, budget 12/12; 73 skipped by budget).
+
+**New posts**: 2, both from @eugeneyan (2026-09-01), linking to 2 Anthropic announcements:
+1. "Introducing Claude Fable 5.1 and Claude Mythos 5.1" — https://www.anthropic.com/claude-fable-and-mythos-5-1
+2. "Developing Enterprise Frontier Safeguards with our customers" — https://www.anthropic.com/news/enterprise-frontier-safeguards
+
+Both tweets are replies but carry standalone value (link to new model release / safety program + substantive commentary). Full article text captured via SPA extraction (pymupdf4llm on readable text).
+
+**Wiki updates**:
+- 🆕 `wiki/events/claude-fable-5-1-release-sep-2026.md` — consolidated event page: Fable 5.1 / Mythos 5.1 benchmarks (Bench1-4), capability shifts (long-horizon autonomy, 1M-token context, self-improvement, cyber-bio risk), enterprise pricing (Fable $10/$50, Mythos $25/$125 per Mtok), Project Glasswing, and EFS (BYOC inference, own KMS keys, zero data retention, misuse monitoring).
+- 🆕 `wiki/raw/articles/anthropic.com--news-introducing-claude-fable-5-1-and-claude-mythos-5-1--e7232d52.md` (full text)
+- 🆕 `wiki/raw/articles/anthropic.com--news-developing-enterprise-frontier-safeguards-with-our-customers--b085c7f1.md` (full text)
+- `wiki/index.md` + `wiki/log.md` updated.
+
+**Commit**: 4919d081 — `wiki: ingest Fable 5.1 / Mythos 5.1 + Enterprise Frontier Safeguards announcements` (pushed).
+
+**Notes**: Eugene Yan's "effort curve shifting up and to the left" framing + EFS BYOC angle are the two takes worth tracking. Existing pages `entities/eugeneyan-com.md`, `concepts/byoc-deployment.md`, `concepts/regulated-industry-deployment.md`, `entities/anthropic.md` already cross-linked from the event page.
+
+---
+
 ## [2026-09-03] watchdog | auto-fix — index counts reconciled, 3 orphans indexed, log rotated
 
 **Trigger**: daily `wiki-watchdog-fix` cron (17:35 UTC).
