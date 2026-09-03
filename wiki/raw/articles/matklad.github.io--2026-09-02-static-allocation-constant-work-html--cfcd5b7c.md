@@ -1,0 +1,274 @@
+---
+title: "Static Allocation, Constant Work"
+url: "https://matklad.github.io/2026/09/02/static-allocation-constant-work.html"
+fetched_at: 2026-09-03T10:00:50.103871+00:00
+source: "matklad.github.io"
+tags: [blog, raw]
+---
+
+# Static Allocation, Constant Work
+
+Source: https://matklad.github.io/2026/09/02/static-allocation-constant-work.html
+
+Static Allocation, Constant Work
+Sep 2, 2026
+In reply to this email:
+Memory Safety’s Hardest Problem
+named something I’d hit but couldn’t articulate.
+Your case is a pointer into one union variant surviving a write of a different
+variant, so live typed pointers end up reading bytes that belong to something
+else now.
+Last year I wrote a limit-order matching engine and shipped a use-after-free: a
+cancelled order was released back to the pool while it was still linked into its
+price level, so the next allocation handed that memory to a new order and the
+stale link kept resolving. I’d filed it under “I was careless with lifetimes.”
+After your post I’m not sure that’s what it was. A recycling pool looks like a
+tagged union where the tag is “which generation of object currently lives in
+this slot,” and nothing in the type system tracks it. Is that a fair reading, or
+does the pool case stay genuinely easier because generational indices actually
+solve it and the union case has no equivalent?
+Yes, object pools are an interesting case to think about, as they clarify the
+relation between
+memory
+safety and and more general correctness.
+First
+, consider the case where no object pool is used, and we
+malloc
+and
+free
+order objects. In this case, the logical error of use-after-free turns
+into physical type confusion, and can easily lead to arbitrary code execution
+and the like. If you have two objects of different
+types
+sharing the same
+memory location, a user-controlled integer in one object might be a function
+pointer in the other: an exploitable
+goto
+primitive
+Now, what happens if we introduce an object pool which stores a list of “dead”
+objects of type
+T
+? Logical use-after-free is still possible, but its physical
+effect is now different — we still get aliasing of memory, but there’s no type
+confusion. You can’t necessarily fiddle with an integer and change a function
+pointer, unless you additionally hit the hard case, where the object in question
+stores an inline enum. Assuming that doesn’t hapen, you get a perfectly defined,
+deterministic behavior, even if you are not happy about the result.
+This suggests an interesting solution for hardening code, which I’ve learned
+from
+Fil
+.
+If
+your allocation function is typed
+(it takes a
+T
+comptime parameter or runtime type witness, rather than a
+runtime type-erased size and alignment), you can write an allocator that uses
+type-segregated pools internally. This will be somewhat less memory efficient,
+as the allocator won’t be able to re-use freed memory of objects of type
+U
+for
+objects of type
+T
+, but the memory overhead will probably be small (rare object
+types do not matter, popular object types will have a lot of intra-type re-use),
+you might actually gain in memory locality,
+and
+solve most of type confusions.
+Again, inline enums break this, but, curiously, if you always heap allocate enum
+variants, then this works again. Fil-C can’t use this, because C allocator’s
+interface is untyped, but someone else could :P
+But this is academic. How do we avoid the bugs? Generational indexes are a
+popular remedy, but I have never used them, so I don’t have any non-common
+knowledge insights about this pattern. Instead, I will share another pair of tricks
+from
+TigerStyle
+.
+I have only a vague understanding of what an order matching engine is, but I
+suspect these tricks might help there
+The first one is:
+No dynamic memory allocation after initialization
+https://www.youtube.com/watch?v=GRJtYwneG2Q&t=1823s
+This is the pool idea, taken to its logical conclusion. We specify the maximum
+number of orders we are willing to work with at startup, and never go beyond
+that. So, you might start the program as
+$
+order-engine --orders-max=1_000_000
+and then one of the first lines in its
+main
+function would be :
+const
+orders: []Order =
+try
+gpa.alloc(Order, cli_args.orders_max);
+If, at runtime, more than
+orders_max
+requests come in, the surplus requests
+are rejected. Someone might object: “But what if I actually have some spare
+memory for one more order? Wouldn’t it be a good idea to at least try to handle
+it?”
+My rejoinder would be “Well, what if you don’t?”. Systems operating at capacity
+without
+strict limits fail catastrophically. Attempting to allocate just one
+more
+Order
+could cause kernel’s OOM killer to terminate the entire order
+matching engine, losing the other million orders, or, better yet, to kill the
+supervisor process so that you can’t even restart.
+Static allocation gives you peace of mind. The system might fail to start if you
+don’t have enough memory, but, if it did start, you can be rest assured that it
+would handle overload gracefully, continuing to render the service while you are
+provisioning a beefier machine.
+What would you do with the slice of orders? One approach is to
+@memset(orders, undefined)
+and hand the slice over to a pool which tracks spare objects with a bit set:
+const
+OrderPool =
+struct
+{
+orders: []Order,
+free: DynamicBitSet,
+fn
+acquire
+(pool:
+*
+OrderPool) ?
+*
+Order { ... }
+fn
+release
+(pool:
+*
+OrderPool, order:
+*
+Order) { ... }
+};
+or with a free list:
+const
+OrderPool =
+struct
+{
+orders: []
+union
+{
+order: Order,
+next_free: ?
+u32
+,
+},
+first_free: ?
+u32
+,
+};
+But there’s an alterative approach. Instead of thinking about a limit on the
+number of orders, you could instead design the system to
+always
+have a fixed
+amount of orders, by introducing a no-op, neutral order:
+const
+Order = {
+id:
+u128
+,
+price:
+u32
+,
+count:
+u32
+,
+tag:
+enum
+{ bid, ask, reserved },
+pub
+const
+reserved: Order = .{
+.id =
+0
+,
+.price =
+0
+,
+.count =
+0
+,
+.tag = .reserved,
+};
+};
+Your initialization then becomes
+@memset(orders, .reserved)
+.
+One benefit here is cognitive, you no longer think in terms of creating and
+destroying orders. Instead, the orders merely circulate in the system according
+to the law of the conservation of the number of orders. It becomes harder to
+loose track of an order if you must always pay attention not only to where the
+order goes, but also to where it came from. You explicitly write state
+transition functions for each
+pair
+of states, and that makes it easier to
+exhaustively enumerate all the cases. And you double check that with asserting,
+at every point, that the state is what you expect it to be (and then you DST the
+asserts) .
+Another benefit is code simplification and predictability. You no longer need to
+track a separate collection of “live” orders. Instead, you always iterate the
+full set, doing no-ops for reserved. This feels wasteful: should we make the
+code run faster when there are few orders? But consider this: by specifying the
+limit of orders up-front, you commit to be able to serve that amount.
+If
+the
+maximum amount of orders is active, does the system have acceptable performance?
+If not, that is a bug! Gray failure (system becoming unusably slow) is another
+way to break when reaching the limit.
+Avoiding indexes improves performance for the maximal load case. This
+for
+(orders)
+|
+order
+|
+{
+process(order)
+}
+is much easier for compiler to vectorize, and for CPU Cache to prefetch, than
+this:
+for
+(orders_active)
+|
+order_index
+|
+{
+const
+order = orders[order_index];
+process(order);
+}
+Similarly to static allocation, the
+Constant Work
+principle gives you peace of
+mind with respect to performance. P100 latency stays flat regardless of the
+load. Insufficient performance is discovered when you roll out the system, not
+during Black Friday on-call.
+At TigerBeetle, we apply this pattern in the small. Rather than writing a
+search loop with an early return:
+const
+item =
+for
+(items)
+|
+item
+|
+{
+if
+(predicate(item))
+break
+item;
+}
+else
+null
+;
+we sometimes let the loop to run its full natural course, additionally asserting
+that theres a
+unique
+matching item:
+https://github.com/tigerbeetle/tigerbeetle/blob/0.17.9/src/vsr/grid.zig#L715-L725
+As usual, this is
+a
+trick which is useful to have in your arsenal, but it
+isn’t a universal solution to all programming’s problems.
