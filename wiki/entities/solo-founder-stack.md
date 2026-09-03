@@ -108,6 +108,7 @@ See [[entities/shopify|Shopify entity page]] for full breakdown.
 - [[claude-perfect-memory]] — Core of context engineering
 - [[entities/company-ai-pilled]] — Organizational AI-driven transformation
 - [[entities/content-engine]] — AI content automation
+- [[entities/blotato]] — commercial content-engine SaaS used in solo-founder stacks
 
 ## References
 

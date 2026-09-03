@@ -69,6 +69,7 @@ Nous Research emphasizes open-source, human-centric design with practical self-i
 ## Related Pages
 
 - [[entities/hermes-agent]] — flagship agent framework
+- [[entities/autoreason]] — self-refinement technique co-authored by Hermes Agent (SHL0MS + Hermes, 2026)
 - [[entities/hermes-4]] — hybrid reasoning model family
 - [[concepts/gepa]] — Genetic-Pareto Prompt Evolution (ICLR 2026 Oral)
 - [[entities/akshay-pachaar]] — author of the Hermes Agent masterclass guide

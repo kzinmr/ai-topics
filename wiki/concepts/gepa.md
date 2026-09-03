@@ -93,6 +93,7 @@ Used in production by Shopify, Databricks, Dropbox, Pydantic, Nous Research, Ope
 - [[concepts/agent-skills]] — The skill files GEPA optimizes: Markdown playbooks with YAML frontmatter
 - [[concepts/dspy]] — DSPy framework with built-in GEPA optimizer (`dspy.GEPA`)
 - [[entities/omar-khattab]] — Lead author and principal investigator
+- [[entities/autoreason]] — SHL0MS + Hermes Agent: blind Borda judge panels for self-refinement (companion multi-candidate selection technique)
 
 ## Merged Content (from deleted duplicate)
 

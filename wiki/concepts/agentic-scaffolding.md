@@ -99,3 +99,4 @@ See [[concepts/autonomous-component-optimization]] for the complementary improve
 - [[concepts/autonomous-component-optimization]] — Miessler's Universal Improvement Cycle
 - [[concepts/intent-based-engineering]] — Miessler's articulation gap concept
 - [[entities/daniel-miessler]] — Author of the Scaffolding Ratio thesis
+- [[entities/autoreason]] — tournament/judge scaffolding wrapped around reasoning quality itself
