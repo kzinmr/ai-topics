@@ -1,0 +1,59 @@
+{
+  "run_id": "20260903T101009Z",
+  "triaged_at": "2026-09-03T10:10:09+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 2,
+  "method_note": "Both digests are single-post emails; their ~20 'articles' are Substack/beehiiv chrome + tokenized redirect links, not distinct articles. Beehiiv v2/c/ links return HTTP 403 (Cloudflare) so the uid=592 digest could only be classified from title + companion AINews. Substack open.substack.com redirect resolved to latent.space (HTTP 200); full AINews body was scraped to recover real tip topics and external links.",
+  "newsletters": [
+    {
+      "message_id": "<20260903043833.3.62e5b7f3f9a175b4@mg2.substack.com>",
+      "source_label": "uid=593",
+      "source": "AINews (Latent Space, swyx)",
+      "date": "2026-09-03",
+      "canonical_url": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
+      "url_recovered": true,
+      "importance": "critical",
+      "ai_relevance": "high",
+      "verdict": "ingest",
+      "lead_story": {
+        "topic": "Meta Muse Spark 1.3",
+        "claim": "Muse Spark 1.3 rolls out with frontier-level coding/agentic performance (reported #3 model, comparable to GPT-5.6-Sol and Opus-5), >90% discount if you opt into training use, open weights 'coming soon'. Confirms Meta Superintelligence as a frontier lab.",
+        "wiki_action": "UPDATE entities/muse-spark.md — currently updated:2026-08-10 and predates the 1.3 release. This is a real coverage gap, not a duplicate.",
+        "newsjacking_score": 5,
+        "related_entities": ["entities/meta.md", "entities/muse-glimmer.md", "entities/muse-spark.md"]
+      },
+      "secondary_stories": [
+        {"topic": "Stanford AI-native SE curriculum reset (agent skills, context eng, MCP, agent-ready codebases; CS329Z: Engineering AI Agents)", "wiki_action": "optional: entities/stanford.md or ai-agents curriculum note", "newsjacking_score": 4},
+        {"topic": "Google Gemini 3.8 Flash Cyber cybersecurity model (86.2% CyberGym, 47.2% CWE-Bench)", "wiki_action": "optional: entities/google.md update", "newsjacking_score": 3},
+        {"topic": "ByteDance Seed HarnessDev paper — agent eval centered on harness + token-cost objective (2,207 held-out instances)", "wiki_action": "optional: concepts/harness-engineering (existing harness-eval thread)", "newsjacking_score": 3},
+        {"topic": "rasbt on OpenAI 'Astra looped transformer' rumor — modest architectural tweak, not CoT suppression; Nanbeige 4.2-3B precedent", "wiki_action": "optional: entities/openai-astra.md update (existing page)", "newsjacking_score": 3},
+        {"topic": "Skill Retrieval-Invoked Actual-Use Effect — aggregate lift can mask negative same-task effect on retrieval-triggered tasks", "wiki_action": "optional: concepts/tool-retrieval / skill-retrieval", "newsjacking_score": 3},
+        {"topic": "SGLang 'Miles' RL-as-a-service / RL post-training productization (Baseten, NVIDIA Dynamo)", "wiki_action": "optional: concepts (RL post-training)", "newsjacking_score": 2},
+        {"topic": "Alibaba Wan 3.0 top video-model leaderboards; Marin 535B-A23B open model 13% trained (Huang Foundation / CoreWeave)", "wiki_action": "optional: entities/wan.md / ai-video-generation-2026 thread", "newsjacking_score": 2},
+        {"topic": "Photon 2.1 realtime multimodal serving (NVIDIA B200); Baseten GLM-5.3 Fast hosted", "wiki_action": "optional (existing realtime-serving threads)", "newsjacking_score": 1}
+      ]
+    },
+    {
+      "message_id": "<20260902.191050.df90187a@mta21>",
+      "source_label": "uid=592",
+      "source": "Beehiiv AI newsletter (unresolved — Cloudflare)",
+      "date": "2026-09-02",
+      "canonical_url": null,
+      "url_recovered": false,
+      "importance": "low",
+      "ai_relevance": "medium",
+      "verdict": "skip (covered elsewhere)",
+      "classification_basis": "HTTP 403 on all tested v2/c/ beehiiv links; classified from subject line + companion AINews 2026-09-02 (which covers the same Claude Fable 5.1 / GPT-Astra news).",
+      "headlines": [
+        {"topic": "Claude Fable 5.1 ships", "wiki_action": "already covered — entities/fable.md exists; no new action from triage", "newsjacking_score": 3},
+        {"topic": "GPT-Astra stops showing its work (hidden reasoning / CoT)", "wiki_action": "already tracked — entities/openai-astra.md exists; hidden-reasoning angle also in AINews rasbt tip", "newsjacking_score": 3}
+      ]
+    }
+  ],
+  "notes": [
+    "Only one net-new wiki action for downstream (newsletter-wiki-ingest): UPDATE entities/muse-spark.md for Muse Spark 1.3 (currently stale at 2026-08-10). Everything else is either already covered (fable.md, openai-astra.md) or optional enrichment.",
+    "Beehiiv uid=592 digest not scrapeable in cron (Cloudflare 403); its two headlines duplicate the already-covered AINews 2026-09-02 news.",
+    "Substack redirect resolution recipe confirmed: open.substack.com/pub/swyx/p/<slug> -> latent.space (HTTP 200); body-markup div parses cleanly for tip extraction.",
+    "Downstream should read this file, not the raw checkpoint."
+  ]
+}
