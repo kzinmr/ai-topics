@@ -11,7 +11,28 @@ Many modern blogs and documentation sites use client-side rendering (React, Next
 - JSON-LD metadata is present but the article body is absent
 - The page content is loaded from a `.md` file or JS bundle at runtime
 
-## Solution: browser_console + innerText
+## Solution 1: delegate_task with browser toolset (preferred for openai.com, other Next.js SPAs)
+
+When direct `browser_navigate`/`browser_console` tools are not available in the current context (e.g., terminal-only sessions), delegate to a subagent with browser access:
+
+```python
+delegate_task(
+    goal="Fetch the full article content from <URL> using web browser. "
+         "The page is a Next.js SPA that requires JavaScript rendering. "
+         "Extract the complete article text, including all sections, headings, and details. "
+         "Return the full article content as plain text, preserving structure.",
+    context="The URL is <URL>. I need the full article body text for wiki ingestion.",
+    toolsets=["web", "browser"]
+)
+```
+
+**Proven SPA sites** requiring this approach:
+- `openai.com/index/*` — Next.js with `__NEXT_DATA__`, returns CSS/JS shell only via curl
+- Any site returning "Enable JavaScript and cookies to continue" via curl
+
+**Subagent caveat**: Subagent summaries are self-reported. For critical content, verify the returned text against the page's meta description (og:title, og:description) — if those match, the extraction is likely genuine.
+
+## Solution 2: browser_console + innerText (when browser tools are directly available)
 
 Instead of scrolling through truncated `browser_snapshot` output, use `browser_console` with a JavaScript expression to extract all text in one shot:
 

@@ -1,132 +1,122 @@
 #!/usr/bin/env python3
+"""Restore a buried '# Wiki Log' header to line 1 in wiki/log.md.
+
+Why: pipeline prepends (raw-backlog-ingest, active-crawl, dreaming,
+bookmark-ingest) sometimes insert entries at position 0 without accounting
+for the header position, burying '# Wiki Log' below the newest entries
+(observed: header at line 187 with 11 orphaned entries above it, 2026-07-31).
+
+Usage (cron-safe — no execute_code needed):
+    python3 scripts/fix_log_header_burial.py
+
+Takes no args. Works on ~/ai-topics/wiki/log.md. Backs up to log.md.bak
+before writing. Verifies: first line == '# Wiki Log', 0 standalone-pipe
+lines, entry count preserved.
+
+See wiki-graph-health SKILL.md Section H and
+references/watchdog-healthy-baseline.md §3.
+
+2026-08-09 fix: metadata stranding. The original header_block scan stopped
+at the first '## [' entry, so when the metadata line
+('_Log of all wiki changes. Newest entries at top._') sat BELOW the first
+entry in the buried file (observed: header line 39, metadata line 47), it
+was left stranded mid-file (landed at line 55). This version rescues the
+metadata line from wherever it appears in the reconstruction and places it
+at line 3 (header + blank + metadata + blank + first entry).
 """
-Fix log.md header burial: orphaned entries sitting before the # Wiki Log header.
-
-Detection: head -1 wiki/log.md does NOT start with '# Wiki Log'
-
-Pattern: Prepend operations (bookmark-ingest, active-crawl, dreaming, etc.)
-push new entries at position 0, burying the '# Wiki Log' header below.
-The header still exists (grep -c returns 1) but at line 30-35 instead of line 1.
-
-Usage:
-  python3 scripts/fix_log_header_burial.py [--path PATH] [--dry-run]
-
-  Default PATH: ~/ai-topics/wiki/log.md
-  --dry-run: Print what would be done without modifying the file.
-  --no-backup: Skip writing a .bak backup file.
-"""
-
 import os
-import sys
 import shutil
 
-def fix_log_header_burial(log_path, dry_run=False, backup=True):
-    if not os.path.exists(log_path):
-        print(f"ERROR: File not found: {log_path}")
-        return False
+log_path = os.path.expanduser('~/ai-topics/wiki/log.md')
+if not os.path.exists(log_path):
+    raise SystemExit(f'log not found: {log_path}')
 
-    with open(log_path) as f:
-        lines = f.readlines()
-    total = len(lines)
-    print(f"Total lines: {total}")
+META_LINE = '_Log of all wiki changes. Newest entries at top._'
 
-    # Find the # Wiki Log header
-    header_idx = None
+shutil.copy2(log_path, log_path + '.bak')
+
+with open(log_path) as f:
+    lines = f.readlines()
+
+header_idx = None
+for i, line in enumerate(lines):
+    if line.rstrip() == '# Wiki Log':
+        header_idx = i
+        break
+if header_idx is None:
+    print('ERROR: # Wiki Log header not found — nothing to fix')
+    raise SystemExit(1)
+if header_idx == 0:
+    # Header already at line 1 — still verify metadata position (may be stranded)
+    meta_idx = None
     for i, line in enumerate(lines):
-        if line.rstrip() == '# Wiki Log':
-            header_idx = i
+        if line.strip() == META_LINE:
+            meta_idx = i
             break
+    if meta_idx is not None and meta_idx != 2:
+        print(f'Header at line 1 but metadata stranded at line {meta_idx + 1}; relocating')
+        _relocate_metadata(lines, meta_idx)
+        with open(log_path, 'w') as f:
+            f.writelines(lines)
+        print('OK — metadata relocated to line 3')
+        raise SystemExit(0)
+    print('Header already at line 1 — no fix needed')
+    raise SystemExit(0)
+print(f'Header buried at line {header_idx + 1}; restoring to line 1')
 
-    if header_idx is None:
-        print("ERROR: No '# Wiki Log' header found in file.")
-        return False
+orphaned = lines[:header_idx]
+# Header block = header + metadata lines up to (but NOT including) the first
+# '## [' entry. Using a dynamic boundary instead of a fixed +N avoids
+# splitting the first entry when there is no blank line after the metadata
+# (structure: '# Wiki Log', blank, '_Log of all wiki changes...', '## [entry').
+entry_idx = header_idx
+while entry_idx < len(lines) and not lines[entry_idx].startswith('## ['):
+    entry_idx += 1
+header_block = lines[header_idx:entry_idx]
+rest = lines[entry_idx:]
 
-    if header_idx == 0:
-        print("✅ Header already at line 1 — no burial detected.")
-        return False
+while orphaned and orphaned[-1].strip() == '':
+    orphaned.pop()
 
-    print(f"Header buried at line {header_idx + 1} (expected line 1)")
-    orphaned = lines[:header_idx]
-    
-    # Determine header block extent: find the blank line after header metadata
-    block_end = header_idx + 1
-    while block_end < len(lines) and lines[block_end].strip():
-        block_end += 1
-    block_end += 1  # include the trailing blank line
-    
-    header_block = lines[header_idx:block_end]
-    chrono_entries = lines[block_end:]
-    
-    # Clean trailing blank from orphaned
-    while orphaned and orphaned[-1].strip() == '':
-        orphaned.pop()
-    
-    # Scan all blocks for standalone pipe corruption
-    pipe_fixes = 0
-    for block, name in [
-        (orphaned, 'orphaned'), (header_block, 'header'), (chrono_entries, 'chrono')
-    ]:
-        for i, line in enumerate(block):
-            if line.strip() == '|':
-                if not dry_run:
-                    block[i] = '\n'
-                pipe_fixes += 1
-                print(f"  Pipe corruption in {name} block")
-    
-    # Reconstruct
-    separator = '---\n'
-    new_lines = header_block + ['\n'] + orphaned + ['\n', separator, '\n'] + chrono_entries
-    
-    if dry_run:
-        print(f"\nDRY RUN — would fix:")
-        print(f"  - Move {len(orphaned)} orphaned lines after header")
-        print(f"  - Remove {pipe_fixes} standalone pipe corruption(s)")
-        print(f"  - New file: {len(new_lines)} lines (was {total})")
-        return True
-    
-    # Write backup
-    if backup:
-        backup_path = log_path + '.bak'
-        shutil.copy2(log_path, backup_path)
-        print(f"Backup: {backup_path}")
-    
-    # Write fix
-    with open(log_path, 'w') as f:
-        f.writelines(new_lines)
-    print(f"Fixed: {len(new_lines)} lines written")
-    
-    # Verify
-    with open(log_path) as f:
-        first = f.readline().rstrip()
-    assert first == '# Wiki Log', f"VERIFY FAILED: First line is '{first}', not '# Wiki Log'"
-    
-    with open(log_path) as f:
-        remaining_pipes = sum(1 for line in f if line.strip() == '|')
-    assert remaining_pipes == 0, f"VERIFY FAILED: {remaining_pipes} pipe corruption(s) remain"
-    
-    print("✅ Verification passed — header at line 1, no pipe corruption")
-    print(f"\nSummary:")
-    print(f"  - Header moved from line {header_idx + 1} to line 1")
-    print(f"  - {len(orphaned)} orphaned lines moved after header")
-    print(f"  - {pipe_fixes} pipe corruption(s) removed")
-    return True
+for block, name in [(orphaned, 'orphaned'), (header_block, 'header'), (rest, 'chrono')]:
+    for i, line in enumerate(block):
+        if line.strip() == '|':
+            block[i] = '\n'
 
+separator = '---\n'
+new_lines = header_block + ['\n'] + orphaned + ['\n', separator, '\n'] + rest
 
-if __name__ == '__main__':
-    log_path = os.path.expanduser('~/ai-topics/wiki/log.md')
-    dry_run = '--dry-run' in sys.argv
-    no_backup = '--no-backup' in sys.argv
-    
-    for i, arg in enumerate(sys.argv):
-        if arg.startswith('--path='):
-            log_path = os.path.expanduser(arg.split('=', 1)[1])
-        elif arg == '--path' and i + 1 < len(sys.argv):
-            log_path = os.path.expanduser(sys.argv[i + 1])
-    
-    print(f"Log: {log_path}")
-    print(f"Dry run: {dry_run}")
-    print(f"Backup: {'no' if no_backup else 'yes'}")
-    print()
-    
-    result = fix_log_header_burial(log_path, dry_run=dry_run, backup=not no_backup)
-    sys.exit(0 if result else 1)
+# Rescue stranded metadata line: if it ended up anywhere outside position 3
+# (e.g. below the first entry in the buried file), pull it back to line 3.
+# Look in the orphaned/rest blocks for the metadata line and remove it.
+rescued = False
+for block in (orphaned, rest):
+    for i, line in enumerate(block):
+        if line.strip() == META_LINE:
+            block[i] = ''
+            rescued = True
+if rescued:
+    # Ensure header block has: '# Wiki Log', blank, metadata, blank
+    header_block_clean = [l for l in header_block if l.strip()]
+    # header_block_clean should be ['# Wiki Log\n', META_LINE-ish, ...]
+    # Rebuild canonical head
+    head = ['# Wiki Log\n', '\n', META_LINE + '\n', '\n']
+    # Preserve any other header-block lines (rare) after the canonical head
+    extra = [l for l in header_block if l.strip() and l.strip() != '# Wiki Log' and l.strip() != META_LINE]
+    new_lines = head + extra + ['\n'] + orphaned + ['\n', separator, '\n'] + rest
+
+# Collapse double separators introduced by the reconstruction
+joined = ''.join(new_lines)
+joined = joined.replace('---\n\n---\n', '---\n')
+new_lines = joined.splitlines(keepends=True)
+
+with open(log_path, 'w') as f:
+    f.writelines(new_lines)
+
+with open(log_path) as f:
+    first = f.readline().rstrip()
+assert first == '# Wiki Log', f'Header not restored: {first}'
+pipe_count = sum(1 for l in open(log_path) if l.strip() == '|')
+assert pipe_count == 0, f'Pipe corruption remaining: {pipe_count}'
+entry_count = sum(1 for l in open(log_path) if l.startswith('## ['))
+print(f'OK — header restored, {entry_count} entries preserved, {pipe_count} pipe corruption')

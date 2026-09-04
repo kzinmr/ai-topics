@@ -1,7 +1,7 @@
 ---
 title: "AI Slop and the Productivity Paradox"
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-09-04
 type: concept
 tags:
   - ai-slop
@@ -14,6 +14,7 @@ tags:
 sources:
   - raw/articles/2026-06-07_gary-marcus-ai-slop-productivity.md
   - https://garymarcus.substack.com/p/slop-productivity-and-why-the-ai
+  - raw/articles/news.smashingmagazine.com--2026-09-02-ai-design-quietly-undermining-accessibility--7c28e822.md
 ---
 
 # AI Slop and the Productivity Paradox
@@ -63,3 +64,9 @@ Traditional GDP accounting counts any paid activity — "paying people to dig an
 - [[concepts/compute-scaling-bottlenecks|Compute Scaling Bottlenecks]]
 - [[concepts/google-spacex-ai-compute-deal|Google-SpaceX AI Compute Deal]]
 - [[entities/gary-marcus|Gary Marcus]]
+
+## Corroboration: Measured Quality Stagnation (September 2026)
+
+The Smashing Magazine / AXe study of 51 AI-generated vs 50 human-built websites (Sep 2, 2026) provides quantitative corroboration of Marcus's thesis in a narrow, measurable domain: AI-generated sites produce slightly *fewer* accessibility issues than human sites (3.33 vs 3.54 per site) but resolve only ~25% of issues vs ~70% for human sites — "AI doesn't cause all that many new accessibility errors, but it also doesn't fix the ones that already exist, and that's what drags the web down." Nominal output volume rises while net quality improvement stalls: exactly the slop-productivity gap, observed at the artifact level. See [[concepts/ai-slop#September 2026: Slop Goes Mainstream (Workplace + Web Design)]] for details.
+
+Source: [[raw/articles/news.smashingmagazine.com--2026-09-02-ai-design-quietly-undermining-accessibility--7c28e822.md]]

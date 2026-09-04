@@ -2,7 +2,7 @@
 title: "OpenAI Daybreak"
 type: concept
 created: 2026-06-23
-updated: 2026-08-12
+updated: 2026-09-04
 tags:
   - daybreak
   - gpt-5-5-cyber
@@ -115,6 +115,10 @@ Daybreak Red gates the new **GPT-5.6-Cyber** — the successor to GPT-5.5-Cyber,
 - **Exploit validation**: Confirming whether reported vulnerabilities are genuinely exploitable.
 
 The Blue/Red split mirrors the two-sided nature of the program's own analysis: defender-oriented operations (incident response, malware analysis, patch validation) get broad access to frontier models like GPT-5.6 Sol, while the purpose-trained cyber model — the highest-risk capability — requires stricter vetting. This restructures the access-control layer described above: rather than a single Daybreak product with uniform access, OpenAI now tiers both the models and the vetting by use case, keeping the most sensitive capabilities (GPT-5.6-Cyber, vulnerability research, exploit validation) behind the tighter Red gate.
+
+## September 2026: Daybreak for Frontline Defenders ($1B)
+
+On September 3, 2026 — one day before the GPT-6 Astra release — OpenAI announced **Daybreak for Frontline Defenders**, a $1 billion initiative subsidizing Daybreak access for defenders of essential services (water/wastewater, electric grid, state/local government, community banks, open-source maintainers). Includes the "Daybreak for America" umbrella, an MS-ISAC pilot, a 35+ product "Daybreak Defense Network," and a stated target of consuming the commitment within six months. Full analysis: [[concepts/daybreak-for-frontline-defenders]].
 
 ## See Also
 

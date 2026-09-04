@@ -2,7 +2,7 @@
 title: Anil Dash
 type: entity
 created: 2026-04-09
-updated: 2026-07-25
+updated: 2026-09-04
 tags:
   - person
   - blogger
@@ -26,6 +26,18 @@ sources: []
 | **Bio** | Anil Dash is a technologist, writer, and advocate for humane technology. He has been writing about the intersection of culture, technology, and society since 1999. Former VP at Six Apart (TypePad/Movable Type), founder of Fog Creek Software. His blog is one of the longest-running personal tech blogs, covering topics from open web advocacy to AI ethics to coding culture. He is a prominent voice arguing against the hype-driven narratives pushed by Big Tech. |
 
 ## Core Ideas
+
+### Cancer Capital: VC as Extraction Engine (September 2026)
+
+Dash's September 2, 2026 essay extends his platform-extraction critique to capital itself ([original](https://anildash.com/2026/09/02/cancer-capital/), full analysis at [[concepts/cancer-capital]]):
+
+- **Thesis**: VC no longer behaves as high-risk/high-reward portfolio allocation; it is "surplus money that must chase returns wherever it can" — cancer capital, exploiting the economy's processes to "absorb more and more energy, without giving anything back."
+- **2021 was not a bubble**: "the boom we went through in 2021? That was all of it. That was the peak." The misallocation is the steady state, not a temporary excess.
+- **OpenAI as paradigm case**: "the largest charity in world history" — Microsoft's $13B+ becoming an $800B majority-stake valuation — "the greatest wealth transfer in human history."
+- **Externalities**: unregulated data center construction, toxic forever chemicals, communities living "in the shadow of these buildings."
+- **Prescription**: "We must do what we can to stop cancer before it spreads beyond the point of remission" — build institutions serving broad human flourishing rather than investors' need to deploy capital.
+
+The essay is the 2026 follow-through on his 2013 *VC isn't VC anymore* and unifies his open-web and AI-hype critiques under a single extraction frame.
 
 ### The Endgame for the Open Web
 
@@ -156,6 +168,7 @@ The skill either generates new documents following these rules or reviews existi
 ## Sources
 
 - [Endgame for the Open Web](https://anildash.com/2026/03/27/endgame-open-web/) (Mar 2026)
+- [VC isn't VC anymore — understanding the rise of Cancer Capital](https://anildash.com/2026/09/02/cancer-capital/) (Sep 2026)
 - [Coding agents as the new compilers](https://anildash.com/2026/02/11/coding-agents-as-the-new-compilers) (Feb 2026)
 - [What do coders do after AI?](https://anildash.com/2026/03/13/coders-after-ai/) (Mar 2026)
 - [Vibe Coding: Empowering and Imprisoning](https://anildash.com/2025/12/02/vibe-coding-empowering-and-imprisoning/) (Dec 2025)

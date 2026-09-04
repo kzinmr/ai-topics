@@ -49,6 +49,18 @@ Example from "Cerebras — Faster Tokens Please" (post_id=197494856):
 
 These section titles can be extracted from the HTML even when the content is paywalled. They reveal the article's structure and coverage areas.
 
+## `<article>` Tag Extraction from Raw HTML (June 2026 finding)
+
+Even when `isAccessibleForFree: false` in JSON-LD, the raw HTML `<article>` tag extraction from `open.substack.com/pub/semianalysis/p/{slug}` can yield **30K+ characters** of usable content — well beyond the ~500-char free preview that `web_extract` returns. Observed June 17, 2026 with the "RL Systems Mind the Gap" article (33,208 chars extracted).
+
+This is the **same pattern** documented for AINews in `references/substack-publication-patterns.md` — the `isAccessibleForFree` flag reflects the publication's default paywall setting, not whether the `<article>` tag is served in the raw HTML. The `<article>` tag may contain:
+- The full free preview plus partial premium content
+- Section headings and sub-headings
+- Embedded external links (arXiv, GitHub, YouTube)
+- Technical details and benchmark numbers
+
+**Recommendation**: Always try curl + `<article>` tag extraction from `open.substack.com` before assuming a SemiAnalysis post is fully paywalled. Only fall back to section-heading extraction (from HTML anchor links) if the `<article>` tag is clearly truncated or behind a login interstitial.
+
 ## Strategy for Paywalled SemiAnalysis Articles
 
 1. Extract the public preview via web_extract (captures thesis, intro, and first ~5K chars)

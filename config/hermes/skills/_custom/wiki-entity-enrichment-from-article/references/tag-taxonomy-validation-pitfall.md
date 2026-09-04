@@ -13,7 +13,21 @@ Error message:
 
 ## Common Violations
 
-### 1. Plural vs Singular Mismatch
+### 1. X Article Entity/Person Name Tags
+When ingesting X Articles, tags like product names or author names are often NOT in SCHEMA.md's canonical taxonomy. This is the most common source of violations:
+
+| Violating Tag | Why Used | Fix |
+|---|---|---|
+| `deepwiki` | Product name from article | Use `cognition` (company tag) or remove |
+| `karpathy` | Author name from article | Use `person` or `openai` (company) |
+| `factory` | Company name from article | Use `company` or add to SCHEMA.md first |
+| `mem0`, `zep`, `letta` | Product names | Check if in SCHEMA.md; if not, use `memory-systems` or add first |
+
+**Lesson (2026-07-07)**: Harrison Chase "Wiki Memory" X Article → used `deepwiki` and `karpathy` as tags → pre-commit blocked → had to replace with `cognition` and `person`.
+
+**Prevention**: Before creating a concept page from an X Article, grep SCHEMA.md for each planned tag. If not found, either use an existing synonym or add the tag to SCHEMA.md first.
+
+### 2. Plural vs Singular Mismatch
 SCHEMA.md uses **singular** for some tags:
 - ✅ `model` — NOT `models`
 - ✅ `framework` — NOT `frameworks`

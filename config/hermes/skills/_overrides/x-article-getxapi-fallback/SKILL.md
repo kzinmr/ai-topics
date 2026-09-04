@@ -79,9 +79,28 @@ Each `unstyled` block may have `inlineStyleRanges`:
 ```
 Available styles: `"Bold"`, `"Italic"`.
 
-## Retrieval Strategy — Five Tiers
+## Retrieval Strategy — Six Tiers
 
 When encountering an X Article URL (`x.com/user/status/NNN` linking to `x.com/i/article/...`):
+
+### Tier 0: Bookmark JSON `article.plain_text` (zero-cost, zero-API) ⭐ ALWAYS CHECK FIRST
+
+When processing bookmarks from the `x-bookmarks-ingest` cron pipeline (`fetch_x_bookmarks.py`), the incoming bookmark JSON already contains `article.plain_text` — the FULL article body extracted by the pre-run script. **Check this before any API call.**
+
+```python
+# In the bookmark JSON from fetch_x_bookmarks.py output:
+bookmark["article"]["plain_text"]  # ~2KB-15KB of full article text
+```
+
+The pre-run script calls `xurl --auth oauth2 "/2/tweets/<ID>?tweet.fields=article"` and stores `article.plain_text` in the output JSON. If `article.plain_text` has substantial content (>2KB), save it directly as the raw article — **no Tier 1/1.5/2/3/4 needed.** 
+
+Validated successes:
+- camelAI architecture deep-dive (July 2026): ~10KB of full article text from `article.plain_text`, saved directly.
+- Varick Agents "AI Adoption is a Myth" (Aug 2026): ~11.5KB, saved directly with zero API calls.
+
+**Manual (interactive) ingestion has no bookmark JSON** — when the user pastes an X Article URL directly (not from the bookmark pipeline), skip Tier 0 and go straight to Tier 1.5. It works for corporate/brand accounts (e.g. @UberEng) as well as personal accounts, and one call returns body + engagement metadata for the frontmatter. See `references/ubereng-software-factory-case-study.md`.
+
+Only proceed to lower tiers when `article.plain_text` is missing, empty, or too short to be useful.
 
 ### Tier 1: xurl metadata (fast, free)
 ```bash
@@ -128,6 +147,9 @@ Use when you need the full structured article content with section headings, inl
 **If GETXAPI_KEY is not set**, skip Tier 3 and go directly to Tier 4.
 
 ### Tier 4: Secondary source discovery (when GetXAPI unavailable)
+
+**⚠️ Cron-mode limitation**: `web_search` is NOT available in cron jobs. Tier 4 is effectively unreachable from `x-bookmarks-ingest` and `x-accounts-scan` cron pipelines. In cron mode, if Tier 0 (`article.plain_text`) is empty and Tiers 1-3 fail, the article cannot be recovered — save as metadata-only and move on. Tier 4 works in interactive sessions only.
+
 When direct retrieval fails (no GETXAPI key, browser unavailable, cookie wall, nitter down), use **web_search** to find news outlets or blogs that published summaries or translations of the article:
 
 ```python
@@ -158,7 +180,7 @@ web_search(query="<author name> \"<article title>\" <year>")
 4. Note in the raw article body that content is reconstructed from secondary sources
 
 **Full retrieval chain (tried in order):**
-Tier 1 (xurl metadata) → Tier 2 (web_extract tweet URL) → Tier 3 (GetXAPI) → browser_navigate → web_extract article URL → xcancel/nitter → **Tier 4 (web_search → secondary source)** ✅
+Tier 0 (bookmark `article.plain_text`) → Tier 1 (xurl metadata) → Tier 2 (web_extract tweet URL) → Tier 3 (GetXAPI) → browser_navigate → web_extract article URL → xcancel/nitter → **Tier 4 (web_search → secondary source)** ✅
 
 **Real example (Garry Tan "Meta-Meta-Prompting"):**
 - Tiers 1-3 + browser + nitter all failed
@@ -222,16 +244,17 @@ Mark the article with `getxapi: true` and `source_fallback: false` (to indicate 
 
 ## Before/After Comparison
 
-| Aspect | xurl read (T1) | xurl + article fields (T1.5) | xurl + GetXAPI (T3+) |
-|--------|-----------|----------------|----------------|
-| Article title | ✅ `article.title` | ✅ Same | ✅ Same |
-| **Article body** | ❌ Not available | ✅ Full `plain_text` | ✅ With section structure |
-| Author metadata | ✅ Basic | ✅ Basic | ✅ Rich (followers, bio, blue check) |
-| Engagement metrics | ✅ like/RT/reply/bookmark | ✅ Same | ✅ Same + view count |
-| Inline formatting | N/A | ❌ Plain text only | ✅ Bold/italic ranges |
-| Embedded images | N/A | ✅ Cover media ID | ✅ URLs with dimensions |
-| Cost | Free (X API credits) | Free (X API credits) | Paid (GetXAPI) |
-| Reliability | Highest | High | Medium (depends on 3rd party) |
+| Aspect | Bookmark JSON (T0) | xurl read (T1) | xurl + article fields (T1.5) | xurl + GetXAPI (T3+) |
+|--------|-------------------|-----------|----------------|----------------|
+| Article title | ✅ `article.title` | ✅ `article.title` | ✅ Same | ✅ Same |
+| **Article body** | ✅ Full `article.plain_text` | ❌ Not available | ✅ Full `plain_text` | ✅ With section structure |
+| Author metadata | ✅ From bookmark | ✅ Basic | ✅ Basic | ✅ Rich (followers, bio, blue check) |
+| Engagement metrics | ✅ From bookmark | ✅ like/RT/reply/bookmark | ✅ Same | ✅ Same + view count |
+| Inline formatting | ❌ Plain text only | N/A | ❌ Plain text only | ✅ Bold/italic ranges |
+| Embedded images | ✅ Cover media ID | N/A | ✅ Cover media ID | ✅ URLs with dimensions |
+| Cost | Free (pre-fetched) | Free (X API credits) | Free (X API credits) | Paid (GetXAPI) |
+| Reliability | Highest (already fetched) | Highest | High | Medium (depends on 3rd party) |
+| API call needed | None — already in JSON | 1 xurl call | 1 xurl call | 1 xurl + 1 curl |
 
 ## Pitfalls
 
@@ -247,6 +270,7 @@ Mark the article with `getxapi: true` and `source_fallback: false` (to indicate 
 - **Preview text duplication** — The `preview_text` field often duplicates the first `unstyled` block. Don't double-include it.
 - **Compliance note** — GetXAPI is a third-party data broker. Content retrieved this way may have different ToS constraints than direct X API access.
 - **Secondary sources vary in quality** — Machine-translated summaries may miss nuance. Prefer English-language tech media or bilingual outlets. Always note `summary_source` and `source_fallback: secondary` in frontmatter.
+- **Invisible Unicode in article content** — X Article `plain_text` (from Tier 1.5 xurl) frequently contains invisible Unicode (U+200B zero-width space, etc.) that triggers the cron injection scanner. `fetch_x_bookmarks.py` sanitizes via `_sanitize_dict()`. If GetXAPI content also has these chars, sanitize with the same `_INVISIBLE_CHARS` strip set before passing to the agent prompt.
 
 ## Supporting References
 
@@ -254,3 +278,4 @@ Mark the article with `getxapi: true` and `source_fallback: false` (to indicate 
 - `references/garry-tan-case-study.md` — Full walkthrough of the 8-step retrieval chain that succeeded via Tier 4 secondary source discovery, with the Garry Tan "Meta-Meta-Prompting" article as a worked example.
 - `references/mem0-secondary-source-case-study.md` — Mem0 as a secondary source mirror for coding-agent memory X Articles, with the Codex Memory Pipeline article as a worked example.
 - `references/thariq-claude-code-skills-case-study.md` — Clean Tier 3 GetXAPI success path: web_extract → GetXAPI full body → raw article → concept page with mechanism + role taxonomy. Thariq Shihipar's "Lessons from Building Claude Code: How We Use Skills" as a worked example.
+- `references/ubereng-software-factory-case-study.md` — Clean Tier 1.5 success on a corporate-account X Article (Uber Engineering, Aug 2026): single xurl OAuth2 call returns full body + metadata; manual (non-bookmark) ingestion; enriching existing concept pages instead of creating a standalone page.

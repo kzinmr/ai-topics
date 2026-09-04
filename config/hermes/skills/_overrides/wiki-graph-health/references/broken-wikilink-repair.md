@@ -29,6 +29,8 @@ grep -rn '^-  — ' entities/ concepts/ | cut -d: -f1 | sort | uniq -c | sort -r
 
 A script exists at `scripts/fix_broken_wikilinks.py` under the `wiki-graph-health` skill.
 
+**⚠️ Script location pitfall**: The canonical path is `config/hermes/skills/_overrides/wiki-graph-health/scripts/fix_broken_wikilinks.py`, NOT `~/ai-topics/scripts/fix_broken_wikilinks.py`. The script also requires `pyyaml` which may not be installed (`ModuleNotFoundError: No module named 'yaml'`). If the module is missing, use the manual approach below instead.
+
 ### How it works
 
 1. Builds a search index of ALL existing wiki pages (entities + concepts) from frontmatter title,

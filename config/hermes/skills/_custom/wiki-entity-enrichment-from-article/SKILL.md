@@ -1,7 +1,18 @@
 ---
 name: wiki-entity-enrichment-from-article
 description: Create or enrich wiki entity and concept pages from raw articles, multi-source web research, newsletters, and tool/project investigations. Supports both article-driven enrichment and from-scratch entity page creation via website + docs + X/Twitter + GitHub/NPM research.
-trigger: When asked to explain an article, create concept pages from raw content, convert newsletter articles into wiki entries, ingest a lecture/workshop transcript (see references/transcript-ingestion.md), create a comprehensive entity page for a tool/project from scratch via multi-source research, create an AI model entity page from arXiv paper + project page + HuggingFace sources, enrich a status:skeleton entity page from scratch, batch-create company entity pages, batch-create person entity pages from X handles (see references/batch-person-entity-creation.md), ingest a conference/event summary article (see references/event-summary-article-workflow.md), ingest an X/Twitter post into the wiki (see references/x-note-tweet-ingestion.md), ingest a research paper with benchmark dataset (see references/research-paper-ingestion.md), OR cross-reference a newly ingested article with existing concept pages (connect/relate/link to PTC, RLM, SaC, etc.).
+trigger: >-
+  When asked to explain an article, create concept pages from raw content, convert
+  newsletter articles into wiki entries (see references/newsletter-take-body-fetch-pattern.md),
+  ingest a lecture/workshop transcript (see references/transcript-ingestion.md), create
+  entity pages from scratch: tool/project via multi-source web research, AI model from
+  arXiv + project + HF sources, status:skeleton, batch company, batch person from X
+  handles (see references/batch-person-entity-creation.md)),
+  ingest a conference/event summary article (see references/event-summary-article-workflow.md),
+  enrich an existing wiki page with an arXiv paper (see references/arxiv-to-existing-page.md),
+  ingest an X/Twitter post into the wiki (see references/x-note-tweet-ingestion.md for
+  full Note Tweet ingestion pattern), or ingest a critical/controversial article about
+  an existing entity (see references/critical-article-ingestion-pattern.md)
 ---
 
 # Wiki Article Processing & Concept Creation

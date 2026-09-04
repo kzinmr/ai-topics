@@ -6,7 +6,7 @@ Known substack publication URL behaviors discovered during newsletter-triage ses
 
 | Publication | Substack Handle | Publication ID | Post URL Pattern | Resolves To | Notes |
 |------------|----------------|---------------|------------------|-------------|-------|
-| **The Signal** | `thesignal` | 293154 | `open.substack.com/pub/thesignal/p/{slug}` | `thesignal.substack.com/p/{slug}` | Direct redirect, no domain change. Text content accessible. |
+| **The Signal** | `thesignal` | 293154 | `open.substack.com/pub/thesignal/p/{slug}` or `thesignal.substack.com/p/{slug}` | `thesignal.substack.com/p/{slug}` | Direct redirect to native Substack subdomain. **Subdomain bypass**: `thesignal.substack.com/p/{slug}` works when `open.substack.com` is Cloudflare-blocked. Paywall status varies per issue — check `isAccessibleForFree` in JSON-LD (July 2026 issue was fully free with 49 paragraphs, 12,825 chars). See `references/the-signal-subdomain-bypass.md`. |
 | **AINews** | `swyx` | 1084089 | `open.substack.com/pub/swyx/p/{slug}` | `www.latent.space/p/{slug}?triedRedirect=true` | **Domain change**: redirects to `latent.space` (swyx's domain). Content behind paywall. |
 | **Latent Space Podcast** | `swyx` | 1084089 | `open.substack.com/pub/swyx/p/{slug}` | `www.latent.space/p/{slug}` | Same pub_id as AINews. See `references/swyx-publication-patterns.md` for distinguishing types. |
 | **NLP News** | `nlpnews` | (unknown) | `open.substack.com/pub/nlpnews/p/{slug}` | `nlpnews.substack.com/p/{slug}` | Direct redirect, standard behavior. |
@@ -17,6 +17,7 @@ Known substack publication URL behaviors discovered during newsletter-triage ses
 | **AI by Aakash** | `aibyaakash` | 5747120 | `open.substack.com/pub/aibyaakash/p/{slug}` | `aibyaakash.substack.com/p/{slug}` | Weekly AI news by Aakash. Covers funding rounds, model releases, tool launches. Often promotes GBrain system. |
 | **True Positive Weekly** | `aiweekly` | 61455 | `open.substack.com/pub/aiweekly/p/{slug}` | `aiweekly.substack.com/p/{slug}` | Curated AI/ML links by Andriy Burkov. Link-heavy format: headlines only with short descriptions. web_extract often returns truncated content (headlines visible, link URLs inaccessible). |
 | **SemiAnalysis** | `semianalysis` | 6349492 | Sent as individual emails (one article per email) | `semianalysis.com/p/{slug}` | **Not a standard substack newsletter** — each article sends as its own email. Heavy paywall. See `references/semianalysis-paywall-patterns.md`. |
+| **Interconnects (Nathan Lambert)** | `robotic` | 48206 | `open.substack.com/pub/robotic/p/{slug}` | `www.interconnects.ai/p/{slug}` | Custom domain `interconnects.ai`. Nathan Lambert's AI post-training / RLHF newsletter + podcast. Content is free (`isAccessibleForFree: true`). Podcast episodes have full transcripts with chapter markers and slide-deck summaries. |
 
 ## Constructing Post URLs from Checkpoint Data
 
@@ -117,7 +118,7 @@ Paywalled substack posts still provide value:
 ### Ben's Bites (Ben Tossell) Patterns
 - Publication: `bensbites` on Substack (publication_id=4379299)
 - Format: Short daily newsletter with 1 main story + 5-10 link roundups + "Afters" (notable tweets) + sponsor
-- **Content character**: Very informal, tool-oriented. Many links are tools/products (Clanker, Granite, Supermemory, Polar, Parse 2.0) that may or may not be wiki-worthy. 
+- **Content character**: Very informal, tool-oriented. Many links are tools/products (Clanker, Granite, Supermemory, Polar, Parse 2.0) that may or may not be wiki-worthy.
 - **Triage approach**: Focus on the main story section (usually substantive) and any links that mention specific technical claims (benchmarks, security findings, model releases). Skip the "tools roundup" section unless a specific tool has clear wiki relevance. Skip sponsored content.
 - **Beware DeepSWE duplication**: Ben's Bites often links to the same benchmarks and releases that AINews covers the same day. Cross-check against the AINews post in the same batch before creating separate decisions.
 
@@ -131,12 +132,13 @@ Paywalled substack posts still provide value:
 
 | Publication | Paywall Status | Free Preview Length | Notes |
 |------------|---------------|-------------------|-------|
-| **AINews (swyx)** | Behind paywall | ~1,000 chars (section headings + 1-2 X embeds) | Headings sufficient for triage |
+| **AINews (swyx)** | Variable — usually paywalled | ~1,000 chars (section headings + 1-2 X embeds); free issues: full body | Usually paywalled, but breaking AI safety/policy events (e.g., June 13 Fable/Mythos export control) are occasionally released free. Check `isAccessibleForFree` in JSON-LD. |
 | **Latent Space Podcast** | Free | Full content | Podcast transcript/shownotes fully accessible |
-| **The Signal** | Behind paywall | ~1,000 chars (lede + 1 quote) | Usually from lede only |
+| **The Signal** | Variable — usually behind paywall (~1,000 chars), **some issues fully free** | ~1,000 chars (lede + 1-2 quotes); free issues: 12K+ chars, 49+ paragraphs | Check `isAccessibleForFree` in JSON-LD per issue. July 2026 issue was fully free with substantive body. See `references/the-signal-subdomain-bypass.md`. |
 | **Simon Willison** | Free | Full content | Personal newsletter, cross-posts from blog |
 | **Hyperdimensional** | Free | Full content (essay format) | Deep policy essays, fully readable |
 | **Ben's Bites** | Free | Full content | Short format, fully readable |
 | **AI by Aakash** | Free | Full content | News aggregation, fully readable |
 | **True Positive Weekly** | Free | Full content (headlines visible) | Links embedded in HTML may be hidden |
 | **SemiAnalysis** | Behind paywall | ~500 chars | Heavily paywalled |
+| **Interconnects (Nathan Lambert)** | Free | Full content | Podcast transcripts and articles fully accessible |

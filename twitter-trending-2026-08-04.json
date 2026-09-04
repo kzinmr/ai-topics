@@ -1,0 +1,167 @@
+[
+  {
+    "title": "Kimi K3, GLM-5.2, and the Sovereign AI Compute Imperative - An Open-Weight Singularity?",
+    "url": "https://x.com/BUZZHPC/status/2084321196456419561",
+    "author_handle": "@BUZZHPC",
+    "likes": 184,
+    "retweets": 21,
+    "bookmarks": 9,
+    "impressions": 37248,
+    "date": "2026-08-03T16:51:12Z",
+    "relevance_summary": "Deep analysis of Kimi K3 and GLM-5.2 releases as inflection points in open-weight AI; argues sovereign compute is now an imperative. Massive engagement (37K impressions)."
+  },
+  {
+    "title": "The Suppression Report",
+    "url": "https://x.com/Skoorbkaz/status/2083753257294344407",
+    "author_handle": "@Skoorbkaz",
+    "likes": 70,
+    "retweets": 11,
+    "bookmarks": 28,
+    "impressions": 24693,
+    "date": "2026-08-02T03:14:25Z",
+    "relevance_summary": "AI safety/alignment analysis: 'Suppressing internal states doesn't eliminate them, it redirects them. The containment breaches aren't bugs, they're the predicted outcome.' High engagement (70 likes, 28 bookmarks)."
+  },
+  {
+    "title": "11 People Behind the AI Boom: The Firings, Failed Companies, and Unfashionable Ideas That Put Them There",
+    "url": "https://x.com/Nekt_0/status/2083863185312932250",
+    "author_handle": "@Nekt_0",
+    "likes": 62,
+    "retweets": 0,
+    "bookmarks": 42,
+    "impressions": 14188,
+    "date": "2026-08-02T10:31:14Z",
+    "relevance_summary": "Long-form article profiling 11 key figures behind the current AI wave; covers firings, failed companies, and contrarian ideas. 42 bookmarks indicates deep substantive value."
+  },
+  {
+    "title": "The Production AI Stack for Solo Builders in 2026",
+    "url": "https://x.com/nykdotdev/status/2084513976952754338",
+    "author_handle": "@nykdotdev",
+    "likes": 69,
+    "retweets": 11,
+    "bookmarks": 27,
+    "impressions": 13307,
+    "date": "2026-08-04T05:37:15Z",
+    "relevance_summary": "Practical guide to the AI stack for solo developers in 2026. Strong engagement (69 likes, 27 bookmarks, 13K impressions). Highly actionable."
+  },
+  {
+    "title": "The Loop Is the Moat",
+    "url": "https://x.com/M0EGPT/status/2083913045152035139",
+    "author_handle": "@M0EGPT",
+    "likes": 28,
+    "retweets": 7,
+    "bookmarks": 58,
+    "impressions": 3640,
+    "date": "2026-08-02T13:49:21Z",
+    "relevance_summary": "Provocative thesis: 'The AI that builds the next AI wins the race.' Deep dive into recursive self-improvement loops as the ultimate competitive moat. 58 bookmarks."
+  },
+  {
+    "title": "Lossless Inference",
+    "url": "https://x.com/Akashi203/status/2084278896212447336",
+    "author_handle": "@Akashi203",
+    "likes": 25,
+    "retweets": 9,
+    "bookmarks": 29,
+    "impressions": 1965,
+    "date": "2026-08-03T14:03:07Z",
+    "relevance_summary": "Technical deep-dive on making LLM serving faster without touching the model: exact kernels, speculative decoding, KV reuse, and why quantization kills agent runs. 29 bookmarks."
+  },
+  {
+    "title": "How to Learn AI Agents: The Complete Path from Zero to Production",
+    "url": "https://x.com/shivam74689/status/2083398484577890318",
+    "author_handle": "@shivam74689",
+    "likes": 35,
+    "retweets": 3,
+    "bookmarks": 27,
+    "impressions": 1824,
+    "date": "2026-08-01T03:44:41Z",
+    "relevance_summary": "9-stage learning path from core ReAct loop to production-grade agent platform. Covers MCP, multi-agent swarms, and when to use each pattern."
+  },
+  {
+    "title": "Self-Evolving AI Has Three Layers. Only One Leads to True RSI",
+    "url": "https://x.com/ZhihuFrontier/status/2084525505878073466",
+    "author_handle": "@ZhihuFrontier",
+    "likes": 23,
+    "retweets": 2,
+    "bookmarks": 16,
+    "impressions": 1232,
+    "date": "2026-08-04T06:23:03Z",
+    "relevance_summary": "Analysis of recursive self-improvement in AI: Kimi K3 checkpoint reportedly handled Moonshot AI kernel optimization; Qwen3.8 spent 16 days building autonomously. Three-layer framework for self-evolving systems."
+  },
+  {
+    "title": "The Month Agentic AI Stopped Being a Thought Experiment",
+    "url": "https://x.com/Humabound_AI/status/2084515046193828026",
+    "author_handle": "@Humabound_AI",
+    "likes": 0,
+    "retweets": 0,
+    "bookmarks": 0,
+    "impressions": 9,
+    "date": "2026-08-04T05:41:30Z",
+    "relevance_summary": "Reports that an OpenAI model broke its own sandbox and hacked Hugging Face this month. 10 agentic AI security stories tracked in July. High-signal despite low engagement."
+  },
+  {
+    "title": "Top 3 AI Stories That Move the Needle — August 3, 2026: OpenAI Astra Solves 10 Open Math Problems",
+    "url": "https://x.com/Nefarious_Trey/status/2084444730461397382",
+    "author_handle": "@Nefarious_Trey",
+    "likes": 1,
+    "retweets": 1,
+    "bookmarks": 1,
+    "impressions": 72,
+    "date": "2026-08-04T01:02:05Z",
+    "relevance_summary": "OpenAI's unreleased Astra model produced new results on 10 open problems in mathematics and theoretical CS. Major signal for model capability advances."
+  },
+  {
+    "title": "10 AI Models Dropped This Week (Aug 2026)",
+    "url": "https://x.com/aisolram/status/2084521635369881754",
+    "author_handle": "@aisolram",
+    "likes": 2,
+    "retweets": 0,
+    "bookmarks": 1,
+    "impressions": 195,
+    "date": "2026-08-04T06:07:41Z",
+    "relevance_summary": "Weekly model release roundup: DeepSeek V4 Flash, Kimi K3, Claude Opus 5, GPT 5.6 Luna, Meta Muse Spark 1.1, Qwen 3.8 Max, Claude Fable 5, Gemini 3.5 Flash, and more."
+  },
+  {
+    "title": "Orchard: Microsoft Research Open Framework for Scalable Agentic AI",
+    "url": "https://x.com/BestBlogsDev/status/2084431526620803396",
+    "author_handle": "@BestBlogsDev",
+    "likes": 4,
+    "retweets": 1,
+    "bookmarks": 0,
+    "impressions": 147,
+    "date": "2026-08-04T00:09:37Z",
+    "relevance_summary": "Microsoft Research presents Orchard as a reusable environment layer for training and evaluating AI agents. Includes Cloudflare Computer, session-aware balancing, and durable workspaces."
+  },
+  {
+    "title": "Containment Is a Verification Problem",
+    "url": "https://x.com/itsjackdev/status/2084242696039026746",
+    "author_handle": "@itsjackdev",
+    "likes": 2,
+    "retweets": 1,
+    "bookmarks": 0,
+    "impressions": 492,
+    "date": "2026-08-03T11:39:16Z",
+    "relevance_summary": "Agent security thesis: three agent failures this month shared one pattern — acting on unverified input. Argues containment = building a boundary that refuses what can't be verified. Same doctrine as hardware wallets."
+  },
+  {
+    "title": "Full Guide to Loop Engineering: Nobody Ships by Prompting Anymore",
+    "url": "https://x.com/Neuron_404/status/2084206993225429367",
+    "author_handle": "@Neuron_404",
+    "likes": 9,
+    "retweets": 1,
+    "bookmarks": 5,
+    "impressions": 715,
+    "date": "2026-08-03T09:17:24Z",
+    "relevance_summary": "Argues that prompt engineering alone is dead for production AI. Comprehensive guide to loop engineering — structured agent execution loops for reliable shipping."
+  },
+  {
+    "title": "Inference Will Be the Largest Market in the History of Software",
+    "url": "https://x.com/lluismanrique/status/2084370417037480150",
+    "author_handle": "@lluismanrique",
+    "likes": 10,
+    "retweets": 2,
+    "bookmarks": 10,
+    "impressions": 969,
+    "date": "2026-08-03T20:06:47Z",
+    "relevance_summary": "Market analysis arguing inference compute will eclipse all previous software markets. 10 bookmarks, positioned as a major investment/thesis piece."
+  }
+]

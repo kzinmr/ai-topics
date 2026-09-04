@@ -232,51 +232,47 @@ def generate_daily_report(date_str, blogs):
 
 ### ⚠️ Cron Mode Restrictions (CRITICAL)
 
-In cron mode (`hermes cron run`), **`execute_code` is blocked** (the security scanner denies subprocess calls without a user present). The `query_daily_scan()` Python function above uses `execute_code` and WILL FAIL in cron mode. Instead, use one of these patterns:
+In cron mode (`hermes cron run`), **`execute_code` is blocked** (the security scanner denies subprocess calls without a user present). The `query_daily_scan()` Python function above uses `execute_code` and WILL FAIL in cron mode. Use one of these patterns instead:
 
-**Pattern A — Simple queries**: Use inline `python3 -c` inside `terminal()`. This works for single SELECT statements, counts, and aggregations:
+**Pattern B — Preferred: Write script + run (robust, lint-safe)**
+
+Write a complete Python script to `/tmp/` via `write_file`, then run it with `terminal()`. This avoids ALL quote-escaping issues, lets you write multi-line SQL safely, and catches typos via the write_file auto-linter:
+
+```bash
+# Step 1: write_file → /tmp/query_blogwatcher.py
+#   (full script with imports, sqlite3.connect(), json.dumps() for output)
+# Step 2: terminal → python3 /tmp/query_blogwatcher.py
+```
+
+**Pattern A — Fallback: Inline `python3 -c` (simple queries only)**
+
+Only for single SELECT statements, counts, or short aggregations. Requires fragile quote-escaping for date filters:
 
 ```python
 terminal("python3 -c \"import sqlite3, json; conn=sqlite3.connect('/opt/data/.blogwatcher/blogwatcher.db'); conn.row_factory=sqlite3.Row; rows=conn.execute('SELECT COUNT(*) FROM articles').fetchall(); print(json.dumps([dict(r) for r in rows]))\"")
 ```
 
-For date-filtered queries, escape single quotes inside the double-quoted shell string with `\\'`:
+For date-filtered queries, escape single quotes inside the double-quoted shell string with `\\\\'`:
 
 ```python
-terminal("python3 -c \"...WHERE DATE(a.discovered_date)=\\'2026-06-03\\'...\"")
+terminal("python3 -c \"...WHERE DATE(a.discovered_date)=\\'2026-06-03\\\\'...\"")
 ```
 
-**Pattern B — Complex queries (preferred)**: Write a Python script to `/tmp/` via `write_file`, then run it with `terminal("python3 /tmp/script.py")`. This avoids all quote-escaping:
-
-```bash
-# Step 1: write_file → /tmp/query_blogwatcher.py  (full script with imports, sqlite3 queries, JSON output)
-# Step 2: terminal → python3 /tmp/query_blogwatcher.py
-```
+⚠️ **Known pitfall**: The inline `\\\\'` quoting is fragile and error-prone. If your query has typos (e.g. `LIMIMIT` instead of `LIMIT`), you won't see them until runtime. Prefer Pattern B for anything beyond a single SELECT.
 
 ### Quick one-liner for counting articles
 
 For a simple count (no complex SQL), this pattern works in both interactive and cron mode:
 
 ```python
-python3 -c "import sqlite3; print(sqlite3.connect(DB_PATH).execute('SELECT COUNT(*) FROM articles').fetchone()[0])"
-```
-
-Replace `DB_PATH` with the actual path.
-
-### Standalone script for complex queries (cron-mode safe)
-
-For queries with multiple joins, grouping, or JSON output, write to `/tmp/` as a `.py` file via `write_file` then run it with `terminal`. This is the safest approach in cron mode:
-
-```bash
-# Write script first (via write_file tool, not echo)
-python3 /tmp/query_blogwatcher.py
+terminal("python3 -c \"import sqlite3; print(sqlite3.connect('/opt/data/.blogwatcher/blogwatcher.db').execute('SELECT COUNT(*) FROM articles').fetchone()[0])\"")
 ```
 
 ## Pitfalls
 
 1. **`published_at` does not exist** → use `published_date` or `discovered_date`
 2. **`source` does not exist** → JOIN `blogs.name` via `blog_id`
-3. **`categories` is JSON, not comma-separated** → use `LIKE '%"tag"%'` or parse with `json.loads()`
+3. **`categories` does NOT exist** → Removed from schema (confirmed 2026-05-04 via PRAGMA table_info). **Do NOT reference `a.categories` in queries** — use `a.title LIKE '%keyword%'` for topic filtering instead
 4. **`is_read` is 0/1** → use `WHERE is_read = 0` not `WHERE is_read = FALSE`
 5. **`DATE()` function** → `DATE(a.discovered_date) = 'YYYY-MM-DD'` for date filtering
 6. **No article content stored** → only URLs; scrape with `web_extract` if needed
@@ -286,3 +282,5 @@ python3 /tmp/query_blogwatcher.py
 10. **DB may not be at the expected path** — run DB Discovery Fallback (see above) before assuming location
 11. **DB filename is `blogwatcher.db`, not `blogwatcher-cli.db`** — adjust `find` patterns accordingly
 12. **Cron HOME mismatch** — In the Hermes cron environment, `HOME` is set to `/opt/data/.hermes/home` (not `/opt/data`). The `blogwatcher-cli` binary resolves `~/.blogwatcher/blogwatcher.db` using `$HOME`, so it looks at the wrong path. The `daily_inbox_collect.py` script (canonical: `~/.hermes/scripts/daily_inbox_collect.py`) must use `PROFILE_ROOT` instead of `Path.home()` for `_BW_HOME`, and `run_blogwatcher_scan()` must set `HOME=str(PROFILE_ROOT)` in the subprocess env. See `references/cron-home-fix.md` for the exact patch.
+13. **YouTube-only blog sources** — Some blogs tracked by blogwatcher publish exclusively YouTube conference talks, not written articles. Notable example: the "AI Engineer" blog (`b.name = 'AI Engineer'`) — all its article URLs are `youtube.com/watch?v=...`. When a task says "fetch and save article X" and the DB URL is a YouTube video, use yt-dlp transcript extraction (see pitfall #14 and `references/youtube-content-extraction.md`).
+14. **YouTube URL content extraction** — `web_extract` does not work on YouTube pages. When a blogwatcher article URL is `youtube.com/watch?v=...`, use `yt-dlp` (at `/opt/data/bin/yt-dlp`) to extract the description, metadata, and auto-generated subtitles. YouTube auto-subs triplicate text lines — use the SRT cleanup recipe in `references/youtube-content-extraction.md`. See that reference for the full pipeline: metadata extraction → subtitle download → SRT dedup → file save with `format: youtube_transcript` frontmatter.

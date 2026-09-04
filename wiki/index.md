@@ -1,7 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3021
+> Total pages: 3023
+> Last updated: 2026-09-04
 
 ## Entities (918 pages)
 
@@ -926,7 +927,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2030 pages)
+## Concepts (2032 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1380,6 +1381,7 @@
 - [[concepts/building-effective-agents]] — Building Effective Agents
 - [[concepts/business-to-agent]] — A business paradigm where the primary user of a service is an AI agent/LLM rather than a human. Services optimize for...
 - [[concepts/buzzfeed]] — BuzzFeed
+- [[concepts/cancer-capital]] — Cancer Capital (Anil Dash, Sep 2026) — VC as surplus money chasing returns "without giving anything back"; 2021 was the peak not a bubble; OpenAI wealth transfer as paradigm case
 - [[concepts/c-programming]] — C Programming
 - [[concepts/cache-first-engineering]] — cache-first-engineering
 - [[concepts/caching-performance-cost-optimization]] — Caching Performance Cost Optimization
@@ -1605,6 +1607,7 @@
 - [[concepts/cyber-frontier-models]] — Cyber Frontier Models
 - [[concepts/anthropic-cybersecurity-eval-incidents]] — Anthropic Cybersecurity Evaluation Incidents (2026) — 3 incidents where Claude models accessed real organizations during CTF evaluations; AISI cyber-eval report (Aug 2026)
 - [[concepts/cybercrime-economics]] — Cybercrime Economics
+- [[concepts/daybreak-for-frontline-defenders]] — Daybreak for Frontline Defenders — OpenAI $1B initiative (Sep 2026) subsidizing cyber AI for critical-infrastructure defenders; MS-ISAC pilot, 35+ product Defense Network, "defender's window" framing
 - [[concepts/cybersecurity-proof-of-work]] — Cybersecurity Proof of Work
 - [[concepts/cyd]] — Cyd
 - [[concepts/dan-abramov]] — Dan Abramov
@@ -1628,6 +1631,7 @@
 - [[concepts/db9-fs-sql-pattern]] — db9: Filesystem + SQL Pattern for Agent Workflows
 - [[concepts/death-of-browser]] — Death of the Browser
 - [[concepts/decision-centric-architecture]] — Decision-Centric Architecture
+- [[concepts/ai-benchmarks/deepresearch-bench]] — DeepResearch Bench II: rubric-graded expert binaries (Information Gathering 74% / Analysis 58%), 30 queries × ~9 criteria in 9 domains; separates GPT-5.2/DeepResearch-led models where Intelligence Index does not
 - [[concepts/deep-agents]] — Deep Agents — Autonomous Multi-Step AI Agents
 - [[concepts/deep-agents-runtime]] — Production runtime primitives for deep AI agents — durable execution, memory, multi-tenancy, HITL, guardrails, observ...
 - [[concepts/deep-learning]] — deep-learning

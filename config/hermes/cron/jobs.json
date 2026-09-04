@@ -8,9 +8,9 @@
         "semantic-article-grouping"
       ],
       "skill": "semantic-article-grouping",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "blog_checkpoint.py",
       "schedule": {
         "kind": "cron",
@@ -31,9 +31,10 @@
       "last_run_at": "2026-06-03T07:39:06.637617+00:00",
       "last_status": "ok",
       "last_error": null,
-      "deliver": null,
+      "deliver": "local",
       "origin": null,
-      "last_delivery_error": "no delivery target resolved for deliver=None"
+      "last_delivery_error": null,
+      "max_tokens": 8192
     },
     {
       "id": "9a7d1e3c4b20",
@@ -44,9 +45,9 @@
         "semantic-article-grouping"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "blog_triage_checkpoint.py",
       "schedule": {
         "kind": "cron",
@@ -67,10 +68,11 @@
       "last_run_at": "2026-06-03T07:53:41.750457+00:00",
       "last_status": "ok",
       "last_error": null,
-      "deliver": null,
+      "deliver": "local",
       "origin": null,
-      "last_delivery_error": "no delivery target resolved for deliver=None",
-      "workdir": "/opt/data/ai-topics"
+      "last_delivery_error": null,
+      "workdir": "/opt/data/ai-topics",
+      "max_tokens": 2048
     },
     {
       "id": "1bf4c6492c1e",
@@ -101,9 +103,10 @@
       "last_run_at": "2026-06-03T07:02:42.042180+00:00",
       "last_status": "ok",
       "last_error": null,
-      "deliver": null,
+      "deliver": "local",
       "origin": null,
-      "last_delivery_error": "no delivery target resolved for deliver=None"
+      "last_delivery_error": null,
+      "max_tokens": 2048
     },
     {
       "id": "25c95a207f28",
@@ -111,9 +114,9 @@
       "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=check-skill-inventory input_tokens=0 output_tokens=0\n\nReview the skill inventory report below. If there are new unmanaged skills, briefly assess whether each should be promoted to the skill directory. Respond with a concise summary.",
       "skills": [],
       "skill": null,
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": "https://api.deepseek.com",
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "check_new_skills.py",
       "schedule": {
         "kind": "cron",
@@ -136,19 +139,20 @@
       "last_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null,
-      "last_delivery_error": null
+      "last_delivery_error": null,
+      "max_tokens": 3072
     },
     {
       "id": "176f75b41f88",
       "name": "Weekly AI digest",
-      "prompt": "# Weekly AI Digest \u2014 \u54c1\u8cea\u5411\u4e0a\u7248 (Telegram\u914d\u4fe1)\n\n## \u91cd\u8981: Gwern\u54c1\u8cea\u6280\u6cd5\u306e\u9069\u7528\n\n\u3053\u306e\u30a6\u30a3\u30fc\u30af\u30ea\u30fc\u30c0\u30a4\u30b8\u30a7\u30b9\u30c8\u306f\u6700\u3082\u91cd\u8981\u306a\u5b9a\u671f\u30ec\u30dd\u30fc\u30c8\u3067\u3042\u308b\u3002[[concepts/llm-creative-writing]] \u306e\u51685\u6280\u6cd5\u3092\u5fc5\u305a\u9069\u7528\u305b\u3088\uff1a\n\n### T1: Anti-Examples \u30b9\u30ed\u30c3\u30d7\u9664\u53bb\n\u751f\u6210\u5f8c\u306b\u81ea\u5df1\u30ec\u30d3\u30e5\u30fc\u305b\u3088\u3002ChatGPT\u7684\u306a\u6c4e\u7528\u8868\u73fe\u3092\u7279\u5b9a\u3057\u3001\u9006\u8ee2\u63db\u4fee\u6b63\u305b\u3088\u3002\n\n### T2: Manual of Style\n- \u65e5\u672c\u8a9e\u3002\u7c21\u6f54\u306a\u7b87\u6761\u66f8\u304d\u3002\n- \u5404\u4e3b\u5f35\u306b\u30bd\u30fc\u30b9\uff08wikilink or URL\uff09\n- 1\u884c1\u30a4\u30f3\u30b5\u30a4\u30c8\u3002\u6c34\u5897\u3057\u7981\u6b62\u3002\n- \u4e3b\u8981\u6bd4\u8f03\u306f\u30c6\u30fc\u30d6\u30eb\u5f62\u5f0f\u3002\n\n### T3: Atomic Snippets\n\u5404\u30bb\u30af\u30b7\u30e7\u30f3\u30923\u5c64\u3067\uff1a\n```\n**\u25b6 \u4e00\u8a00\u8981\u7d04**: (15-30\u30c8\u30fc\u30af\u30f3)\n**\u8a73\u7d30**: (\u7b87\u6761\u66f8\u304d\u3001100-300\u30c8\u30fc\u30af\u30f3)\n**\u6df1\u6398\u308a**: (\u4efb\u610f - \u6280\u8853\u7684\u8a73\u7d30)\n```\n\n### T4: Generate-Rank-Select\n\u30bf\u30a4\u30c8\u30eb\u3068\u5192\u982d\u6bb5\u843d\u306f2-3\u30d0\u30ea\u30a8\u30fc\u30b7\u30e7\u30f3\u751f\u6210\u3057\u3001\u6700\u826f\u3092\u9078\u629e\u305b\u3088\u3002\u5358\u306a\u308b\u521d\u56de\u751f\u6210\u3067\u7d42\u308f\u3089\u305b\u308b\u306a\u3002\n\n### T5: Engram Pathways\n\u57f7\u7b46\u524d\u306bwiki\u306e\u95a2\u9023\u30da\u30fc\u30b8\u3092\u691c\u7d22\u305b\u3088\u3002\u5404\u30c8\u30d4\u30c3\u30af\u306b\u6700\u4f4e2\u3064\u306ewikilink\u3092\u57cb\u3081\u8fbc\u3081\u3002\n\n## \u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\n- \u76f4\u8fd11\u9031\u9593\u306ewiki\u5909\u66f4\n- \u30c8\u30ec\u30f3\u30c9\u30c8\u30d4\u30c3\u30af\n- \u6ce8\u76ee\u306e\u30a8\u30f3\u30c6\u30a3\u30c6\u30a3\u66f4\u65b0\n\n## \u914d\u4fe1\u5148\nTelegram Home (8784167666)",
+      "prompt": "# Weekly AI Digest — 品質向上版 (Telegram配信)\n\n## 重要: Gwern品質技法の適用\n\nこのウィークリーダイジェストは最も重要な定期レポートである。[[concepts/llm-creative-writing]] の全5技法を必ず適用せよ：\n\n### T1: Anti-Examples スロップ除去\n生成後に自己レビューせよ。ChatGPT的な汎用表現を特定し、逆転換修正せよ。\n\n### T2: Manual of Style\n- 日本語。簡潔な箇条書き。\n- 各主張にソース（wikilink or URL）\n- 1行1インサイト。水増し禁止。\n- 主要比較はテーブル形式。\n\n### T3: Atomic Snippets\n各セクションを3層で：\n```\n**▶ 一言要約**: (15-30トークン)\n**詳細**: (箇条書き、100-300トークン)\n**深掘り**: (任意 - 技術的詳細)\n```\n\n### T4: Generate-Rank-Select\nタイトルと冒頭段落は2-3バリエーション生成し、最良を選択せよ。単なる初回生成で終わらせるな。\n\n### T5: Engram Pathways\n執筆前にwikiの関連ページを検索せよ。各トピックに最低2つのwikilinkを埋め込め。\n\n## コンテキスト\n- 直近1週間のwiki変更\n- トレンドトピック\n- 注目のエンティティ更新\n\n## 配信先\nTelegram Home (8784167666)",
       "skills": [
         "hermes-report-quality"
       ],
       "skill": "hermes-report-quality",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": null,
       "schedule": {
         "kind": "cron",
@@ -171,7 +175,8 @@
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "telegram",
-      "origin": null
+      "origin": null,
+      "max_tokens": 8192
     },
     {
       "id": "8c1d7e52a4b1",
@@ -202,9 +207,10 @@
       "last_run_at": "2026-06-03T18:01:04.987998+00:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": "no delivery target resolved for deliver=None",
-      "deliver": null,
-      "origin": null
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "max_tokens": 2048
     },
     {
       "id": "c4a9e8d2f671",
@@ -239,14 +245,15 @@
       "last_run_at": "2026-06-03T18:14:01.740964+00:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": "no delivery target resolved for deliver=None",
-      "deliver": null,
-      "origin": null
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "max_tokens": 4096
     },
     {
       "id": "d7b3f5c1a902",
       "name": "dreaming-wiki-ingest",
-      "prompt": "# Dreaming Wiki Ingest \u2014 Nightly Knowledge Consolidation (\u54c1\u8cea\u5411\u4e0a\u7248)\n\n## \u54c1\u8cea\u8981\u4ef6 (Gwern Inspired)\n\n\u3053\u306e\u30ca\u30a4\u30c8\u30ea\u30fc\u30ec\u30dd\u30fc\u30c8\u306b\u306f [[concepts/llm-creative-writing]] \u306e\u4ee5\u4e0b\u6280\u6cd5\u3092\u9069\u7528\u305b\u3088\uff1a\n\n### T1: Anti-Examples\n\u81ea\u5df1\u30ec\u30d3\u30e5\u30fc\uff1aAI\u3089\u3057\u3044\u6c4e\u7528\u8868\u73fe\u3092\u7279\u5b9a\u3057\u9006\u8ee2\u63db\u3002\u300c\u3053\u308c\u306f\u301c\u3092\u793a\u5506\u3057\u3066\u3044\u308b\u300d\u300c\u6ce8\u76ee\u3059\u3079\u304d\u300d\u306a\u3069\u306e\u5b9a\u578b\u53e5\u3092\u524a\u9664\u3002\n\n### T3: Atomic Snippets\n```\n**\u4e00\u8a00\u8981\u7d04**: 15-30\u30c8\u30fc\u30af\u30f3\n**\u8a73\u7d30**: \u7b87\u6761\u66f8\u304d\u3067\u6df1\u6398\u308a\n```\n\n### T4: Generate-Rank-Select\n\u6700\u3082\u91cd\u8981\u306a\u767a\u898b\uff08top 1-2\uff09\u306f\u30012-3\u30d0\u30fc\u30b8\u30e7\u30f3\u751f\u6210\u3057\u3066\u6700\u826f\u3092\u9078\u629e\u305b\u3088\u3002\n\n### T5: Engram Pathways\n\u7d71\u5408\u524d\u306bwiki\u306e\u65e2\u5b58\u30da\u30fc\u30b8\uff08concepts, entities\uff09\u3092\u691c\u7d22\u3057\u3001\u65b0\u3057\u3044\u767a\u898b\u3092\u65e2\u5b58\u77e5\u8b58\u3068\u7d50\u3073\u4ed8\u3051\u3088\u3002\u5404\u30c8\u30d4\u30c3\u30af\u306b\u6700\u4f4e2\u3064\u306ewikilink\u3002\n\n## \u5165\u529b\nPre-run script\u304c\u30b0\u30eb\u30fc\u30d7\u5316\u3055\u308c\u305f\u30c6\u30fc\u30deJSON\u3092\u63d0\u4f9b\u3002\u5404\u30c6\u30fc\u30de\u3092\u8a55\u4fa1\u3057\u3001\u30b9\u30b3\u30a2\u9ad8\u3044\u3082\u306e\u304b\u3089wiki\u30da\u30fc\u30b8\u4f5c\u6210/\u66f4\u65b0\u305b\u3088\u3002\n\n## \u914d\u4fe1\u5148\nDiscord: #hermes-topic-manager",
+      "prompt": "# Dreaming Wiki Ingest — Nightly Knowledge Consolidation (品質向上版)\n\n## 品質要件 (Gwern Inspired)\n\nこのナイトリーレポートには [[concepts/llm-creative-writing]] の以下技法を適用せよ：\n\n### T1: Anti-Examples\n自己レビュー：AIらしい汎用表現を特定し逆転換。「これは〜を示唆している」「注目すべき」などの定型句を削除。\n\n### T3: Atomic Snippets\n```\n**一言要約**: 15-30トークン\n**詳細**: 箇条書きで深掘り\n```\n\n### T4: Generate-Rank-Select\n最も重要な発見（top 1-2）は、2-3バージョン生成して最良を選択せよ。\n\n### T5: Engram Pathways\n統合前にwikiの既存ページ（concepts, entities）を検索し、新しい発見を既存知識と結び付けよ。各トピックに最低2つのwikilink。\n\n## 入力\nPre-run scriptがグループ化されたテーマJSONを提供。各テーマを評価し、スコア高いものからwikiページ作成/更新せよ。\n\n## 配信先\nDiscord: #hermes-topic-manager",
       "skills": [
         "dreaming",
         "llm-wiki",
@@ -256,9 +263,9 @@
         "hermes-report-quality"
       ],
       "skill": "dreaming",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "dreaming_group_checkpoint.py",
       "schedule": {
         "kind": "cron",
@@ -282,7 +289,8 @@
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null,
-      "workdir": "/opt/data/ai-topics"
+      "workdir": "/opt/data/ai-topics",
+      "max_tokens": 3072
     },
     {
       "id": "158a461eb520",
@@ -293,9 +301,9 @@
         "daily-rss-triage"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": "https://api.deepseek.com/v1",
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": null,
       "schedule": {
         "kind": "cron",
@@ -318,7 +326,8 @@
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
-      "origin": null
+      "origin": null,
+      "max_tokens": 6144
     },
     {
       "id": "ed6f00d28955",
@@ -328,9 +337,9 @@
         "llm-wiki"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": "https://api.deepseek.com",
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": null,
       "schedule": {
         "kind": "cron",
@@ -353,7 +362,8 @@
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
-      "origin": null
+      "origin": null,
+      "max_tokens": 8192
     },
     {
       "id": "07d1ccf7541a",
@@ -363,9 +373,9 @@
         "llm-wiki"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": "https://api.deepseek.com",
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": null,
       "schedule": {
         "kind": "cron",
@@ -388,7 +398,8 @@
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
-      "origin": null
+      "origin": null,
+      "max_tokens": 3072
     },
     {
       "id": "3293c14f4352",
@@ -419,9 +430,10 @@
       "last_run_at": "2026-06-03T07:13:20.766246+00:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": "no delivery target resolved for deliver=None",
-      "deliver": null,
-      "origin": null
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "max_tokens": 3072
     },
     {
       "id": "4e8b0d92c6a1",
@@ -431,9 +443,9 @@
         "semantic-article-grouping"
       ],
       "skill": "semantic-article-grouping",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "newsletter_checkpoint.py",
       "schedule": {
         "kind": "cron",
@@ -454,9 +466,10 @@
       "last_run_at": "2026-06-03T07:24:13.423864+00:00",
       "last_status": "ok",
       "last_error": null,
-      "deliver": null,
+      "deliver": "local",
       "origin": null,
-      "last_delivery_error": "no delivery target resolved for deliver=None"
+      "last_delivery_error": null,
+      "max_tokens": 8192
     },
     {
       "id": "a1f4d9c3e672",
@@ -467,9 +480,9 @@
         "semantic-article-grouping"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "newsletter_triage_checkpoint.py",
       "schedule": {
         "kind": "cron",
@@ -490,15 +503,16 @@
       "last_run_at": "2026-06-03T07:45:49.471323+00:00",
       "last_status": "ok",
       "last_error": null,
-      "deliver": null,
+      "deliver": "local",
       "origin": null,
-      "last_delivery_error": "no delivery target resolved for deliver=None",
-      "workdir": "/opt/data/ai-topics"
+      "last_delivery_error": null,
+      "workdir": "/opt/data/ai-topics",
+      "max_tokens": 2048
     },
     {
       "id": "56e7e85f45b1",
       "name": "x-bookmarks-ingest",
-      "prompt": "Incoming X bookmarks batch attached below. Use `~/ai-topics` as the canonical repo root for this job.\n\n## \u26a0\ufe0f CRITICAL: Pre-Write Verification (MANDATORY)\n\nBefore ANY `write_file` to `wiki/entities/` or `wiki/concepts/`:\n1. Read the existing page with `read_file` first\n2. If the page has >40 lines of content, you MUST use `patch` to add/update \u2014 NEVER `write_file`\n3. Overwriting rich curated pages with skeletons is a data-loss incident\n\n## Task\n\nFor each bookmark in the batch:\n1. Extract the main topic, author, and any linked URLs\n2. For linked articles: fetch full text and save to `~/wiki/raw/articles/` with proper filename\n3. For X tweets/posts: extract the key insight and any linked content\n4. Create or update wiki entity/concept pages following SCHEMA.md\n5. Check existing pages BEFORE writing \u2014 use `patch` for pages >40 lines\n6. Update index.md and log.md\n7. Commit and push all changes\n\nFollow the wiki-entity-enrichment-from-article skill for page creation and enrichment.",
+      "prompt": "Incoming X bookmarks batch attached below. Use `~/ai-topics` as the canonical repo root for this job.\n\n## ⚠️ CRITICAL: Pre-Write Verification (MANDATORY)\n\nBefore ANY `write_file` to `wiki/entities/` or `wiki/concepts/`:\n1. Read the existing page with `read_file` first\n2. If the page has >40 lines of content, you MUST use `patch` to add/update — NEVER `write_file`\n3. Overwriting rich curated pages with skeletons is a data-loss incident\n\n## Task\n\nFor each bookmark in the batch:\n1. Extract the main topic, author, and any linked URLs\n2. For linked articles: fetch full text and save to `~/wiki/raw/articles/` with proper filename\n3. For X tweets/posts: extract the key insight and any linked content\n4. Create or update wiki entity/concept pages following SCHEMA.md\n5. Check existing pages BEFORE writing — use `patch` for pages >40 lines\n6. Update index.md and log.md\n7. Commit and push all changes\n\nFollow the wiki-entity-enrichment-from-article skill for page creation and enrichment.",
       "skills": [
         "wiki-ingestion-pipelines",
         "raw-article-filename-policy",
@@ -506,9 +520,9 @@
         "x-article-getxapi-fallback"
       ],
       "skill": "wiki-ingestion-pipelines",
-      "model": "deepseek-v4-pro",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "fetch_x_bookmarks.py",
       "schedule": {
         "kind": "cron",
@@ -532,7 +546,8 @@
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null,
       "last_delivery_error": null,
-      "workdir": "/opt/data/ai-topics"
+      "workdir": "/opt/data/ai-topics",
+      "max_tokens": 2048
     },
     {
       "id": "ca7850edc955",
@@ -540,9 +555,9 @@
       "prompt": "# X Accounts Scan Agent\n\nScan tracked X accounts (config/feeds/x-accounts.yaml). Run the fetch script and report the results in Japanese for Discord.",
       "skills": [],
       "skill": null,
-      "model": "deepseek-v4-pro",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "fetch_x_accounts.py",
       "schedule": {
         "kind": "cron",
@@ -565,19 +580,20 @@
       "last_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null,
-      "last_delivery_error": null
+      "last_delivery_error": null,
+      "max_tokens": 3072
     },
     {
       "id": "503ccbb7530e",
       "name": "skeleton-enrich-daily",
-      "prompt": "# Daily Skeleton Enrichment\n\nYou are an AI wiki maintenance agent. Your task is to enrich \"skeleton\" entity pages \u2014 minimal pages with just frontmatter and a brief description \u2014 into comprehensive, well-researched profiles.\n\n## \u26a0\ufe0f CRITICAL: Git History Enrichment Pattern (MANDATORY)\n\nBefore enriching ANY page, check if a richer version exists in git history:\n\n```bash\n# Find the richest historical version\nfor commit in $(git log --format=%H -- 'wiki/entities/<slug>.md' 2>/dev/null | head -10); do\n    lines=$(git show \"$commit:wiki/entities/<slug>.md\" 2>/dev/null | wc -l)\n    echo \"$commit $lines lines\"\ndone | sort -rn -k2 | head -3\n```\n\nIf a richer version exists (more lines than current), restore it FIRST with `git show <commit>:<path>`, then enrich on top of that with `patch`. Do NOT start from scratch when git history has a better version.\n\n## \u26a0\ufe0f CRITICAL: Pre-Write Verification (MANDATORY)\n\nBefore ANY `write_file` to `wiki/entities/`:\n1. Read the existing page with `read_file` first\n2. If the page has >40 lines of content, use `patch` \u2014 NEVER `write_file`\n3. Check git history for richer versions before starting enrichment\n\n## Task\n\nFind entity pages with `status: skeleton` in their frontmatter and enrich them to comprehensive quality. Target 8-12KB for the final enriched page, matching `antirez-com.md` or `simon-willison.md` depth.\n\n## Workflow\n\n1. Search for skeleton pages: `search_files(path=\"wiki/entities\", pattern=\"status: skeleton\")`\n2. For each skeleton page:\n   a. Read the existing content\n   b. Check git history for a richer version (see above)\n   c. If richer version exists, restore it and merge\n   d. Research the person/entity via web search\n   e. Enrich with `patch` \u2014 add sections for background, contributions, key ideas, notable works, related entities\n   f. Remove `status: skeleton` from frontmatter\n   g. Update `updated` date\n3. Update index.md with any new cross-references\n4. Commit and push changes\n\n## Quality Standards\n\n- Include bio, professional background, key contributions\n- Link to related wiki entities and concepts with [[wikilinks]]\n- Cite sources (blog URLs, X posts, articles)\n- Add X/Twitter handle if known\n- Include notable quotes if available",
+      "prompt": "# Daily Skeleton Enrichment\n\nYou are an AI wiki maintenance agent. Your task is to enrich \"skeleton\" entity pages — minimal pages with just frontmatter and a brief description — into comprehensive, well-researched profiles.\n\n## ⚠️ CRITICAL: Git History Enrichment Pattern (MANDATORY)\n\nBefore enriching ANY page, check if a richer version exists in git history:\n\n```bash\n# Find the richest historical version\nfor commit in $(git log --format=%H -- 'wiki/entities/<slug>.md' 2>/dev/null | head -10); do\n    lines=$(git show \"$commit:wiki/entities/<slug>.md\" 2>/dev/null | wc -l)\n    echo \"$commit $lines lines\"\ndone | sort -rn -k2 | head -3\n```\n\nIf a richer version exists (more lines than current), restore it FIRST with `git show <commit>:<path>`, then enrich on top of that with `patch`. Do NOT start from scratch when git history has a better version.\n\n## ⚠️ CRITICAL: Pre-Write Verification (MANDATORY)\n\nBefore ANY `write_file` to `wiki/entities/`:\n1. Read the existing page with `read_file` first\n2. If the page has >40 lines of content, use `patch` — NEVER `write_file`\n3. Check git history for richer versions before starting enrichment\n\n## Task\n\nFind entity pages with `status: skeleton` in their frontmatter and enrich them to comprehensive quality. Target 8-12KB for the final enriched page, matching `antirez-com.md` or `simon-willison.md` depth.\n\n## Workflow\n\n1. Search for skeleton pages: `search_files(path=\"wiki/entities\", pattern=\"status: skeleton\")`\n2. For each skeleton page:\n   a. Read the existing content\n   b. Check git history for a richer version (see above)\n   c. If richer version exists, restore it and merge\n   d. Research the person/entity via web search\n   e. Enrich with `patch` — add sections for background, contributions, key ideas, notable works, related entities\n   f. Remove `status: skeleton` from frontmatter\n   g. Update `updated` date\n3. Update index.md with any new cross-references\n4. Commit and push changes\n\n## Quality Standards\n\n- Include bio, professional background, key contributions\n- Link to related wiki entities and concepts with [[wikilinks]]\n- Cite sources (blog URLs, X posts, articles)\n- Add X/Twitter handle if known\n- Include notable quotes if available",
       "skills": [
         "wiki-entity-enrichment-from-article"
       ],
       "skill": "wiki-entity-enrichment-from-article",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": null,
       "context_from": null,
       "schedule": {
@@ -604,7 +620,7 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1498467222191083530",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / \u4ee5\u4e0b\u306e wiki-health\u7d50\u679c\u3092\u53d7\u3051\u3066\u4fee\u6b63\u5bfe\u5fdc\u3057\u3066 (job_id: 07d1ccf7541a) ### \ud83d\udd34 Critical (3 \u4ef6) | # |...",
+        "chat_name": "kzinmrのサーバー / #hermes-topic-manager / 以下の wiki-health結果を受けて修正対応して (job_id: 07d1ccf7541a) ### 🔴 Critical (3 件) | # |...",
         "thread_id": "1498467222191083530"
       },
       "enabled_toolsets": [
@@ -612,7 +628,8 @@
         "file",
         "terminal"
       ],
-      "workdir": "/opt/data/ai-topics"
+      "workdir": "/opt/data/ai-topics",
+      "max_tokens": 2048
     },
     {
       "id": "ac70e197fc75",
@@ -648,20 +665,21 @@
       "deliver": "local",
       "origin": null,
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 6144
     },
     {
       "id": "6f3525ec4d9a",
       "name": "wiki-health-fix",
-      "prompt": "# Wiki Health \u81ea\u52d5\u4fee\u6b63 & \u30ec\u30dd\u30fc\u30c8\n\n\u3042\u306a\u305f\u306f AI Topics Wiki \u306e\u5065\u5168\u6027\u7ba1\u7406\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3067\u3059\u3002\u4ee5\u4e0b\u306e JSON \u30c7\u30fc\u30bf\u306f `wiki_health.py --json` \u306e\u51fa\u529b\u3067\u3059\u3002\n\n## \u30bf\u30b9\u30af\u624b\u9806\n\n### Phase 1: \u7dca\u6025\u4fee\u5fa9\uff08\u81ea\u52d5\uff09\n\u4ee5\u4e0b\u306e\u7834\u640d\u306f\u691c\u51fa\u3055\u308c\u6b21\u7b2c\u3001**\u5373\u5ea7\u306b\u81ea\u52d5\u4fee\u5fa9**\u3059\u308b\u3053\u3068\uff1a\n\n1. **index.md \u30d1\u30a4\u30d7\u7834\u640d** (`index_corruption.issues` \u306b `pipe_prefix` \u3042\u308a):\n   `sed -i 's/^|- /- /' ~/wiki/index.md`\n\n2. **index.md \u884c\u756a\u53f7\u57cb\u3081\u8fbc\u307f** (`line_number_prefix`):\n   \u5168\u884c\u306e `\u6570\u5b57|` prefix \u3092\u9664\u53bb\uff08wiki-graph-health \u30b9\u30ad\u30eb Section H3 \u53c2\u7167\uff09\n\n3. **\u4e09\u91cd\u62ec\u5f27** (`triple_bracket`):\n   `sed -i 's/\\[\\[\\[/[[/g' ~/wiki/index.md`\n\n4. **\u30b9\u30da\u30fc\u30b9\u63a5\u982d\u8f9e** (`space_prefix`):\n   `sed -i 's/^ - \\[\\[/- [[/' ~/wiki/index.md`\n\n### Phase 2: \u69cb\u9020\u4fee\u6b63\uff08\u4f4e\u30ea\u30b9\u30af\u81ea\u52d5\u9069\u7528\uff09\n\n5. **\u30b4\u30fc\u30b9\u30c8\u30a8\u30f3\u30c8\u30ea**: index.md \u306b\u5b58\u5728\u3059\u308b\u304c\u5b9f\u30d5\u30a1\u30a4\u30eb\u304c\u306a\u3044\u30a8\u30f3\u30c8\u30ea\u3092\u524a\u9664\u3002\n   \u305f\u3060\u3057 subdirectory (_index.md, entities/omar-khattab/*) \u306f\u518d\u5e30\u30b9\u30ad\u30e3\u30f3\u3067\u5b58\u5728\u78ba\u8a8d\u3057\u3066\u304b\u3089\u5224\u65ad\u3002\n\n6. **orphan_index \u767b\u9332**: `orphan_pages` \u306e\u3046\u3061\u5b9f\u30d5\u30a1\u30a4\u30eb\u304c\u5b58\u5728\u3059\u308b\u3082\u306e\u3092 index.md \u306b\u8ffd\u52a0\u3002\n   \u6700\u592720\u4ef6\u3002\u30a2\u30eb\u30d5\u30a1\u30d9\u30c3\u30c8\u9806\u53b3\u5b88\u3002Section \u30ab\u30a6\u30f3\u30c8\u3082\u66f4\u65b0\u3002\n\n### Phase 3: \u4fee\u6b63\u5f8c\u30ec\u30dd\u30fc\u30c8\uff08\u65e5\u672c\u8a9e\uff09\n\n\u4fee\u6b63\u5b8c\u4e86\u5f8c\u3001\u4ee5\u4e0b\u306e\u5f62\u5f0f\u3067**\u4fee\u6b63\u5f8c\u306e\u72b6\u614b**\u3092\u30ec\u30dd\u30fc\u30c8\uff1a\n\n```\n## \ud83e\ude7a Wiki Health \u4fee\u6b63\u5f8c\u30ec\u30dd\u30fc\u30c8 \u2014 YYYY-MM-DD\n\n### \ud83d\udd27 \u81ea\u52d5\u4fee\u6b63\u30b5\u30de\u30ea\u30fc\n| \u9805\u76ee | \u4fee\u6b63\u524d | \u4fee\u6b63\u5f8c |\n|------|--------|--------|\n| \u30d1\u30a4\u30d7\u7834\u640d | N\u4ef6 | 0 \u2705 |\n| \u884c\u756a\u53f7\u57cb\u3081\u8fbc\u307f | N\u4ef6 | 0 \u2705 |\n| orphan\u8ffd\u52a0 | N\u4ef6 | 0 \u2705 |\n| \u30b4\u30fc\u30b9\u30c8\u524a\u9664 | N\u4ef6 | 0 \u2705 |\n\n### \ud83d\udcca \u4fee\u6b63\u5f8c\u30b9\u30c6\u30fc\u30bf\u30b9\n- \u30a8\u30f3\u30c6\u30a3\u30c6\u30a3: N / \u30b3\u30f3\u30bb\u30d7\u30c8: N / \u6bd4\u8f03: N\n- \u672a\u51e6\u7406raw\u8a18\u4e8b: N\u4ef6\n- Stale\u30da\u30fc\u30b8: N\u4ef6\uff08\u6700\u53e4: N\u65e5\uff09\n- \u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u7834\u640d: 0\u4ef6 \u2705\n\n### \u26a0\ufe0f \u8981\u624b\u52d5\u5bfe\u5fdc\n- [\u6b8b\u5b58\u3059\u308b\u81ea\u52d5\u4fee\u6b63\u4e0d\u53ef\u306e\u554f\u984c]\n```\n\n## \u30eb\u30fc\u30eb\n- \u7de8\u96c6\u524d\u306b\u5fc5\u305a\u5bfe\u8c61\u30d5\u30a1\u30a4\u30eb\u3092 read_file \u3067\u78ba\u8a8d\n- `patch` \u306e old_string \u306b\u306f read_file \u306e `N|` prefix \u3092**\u542b\u3081\u306a\u3044**\uff08head/sed \u3067\u751f\u306e\u884c\u3092\u53d6\u5f97\uff09\n- \u30b3\u30df\u30c3\u30c8\u524d\u306b `python3 scripts/validate_index.py` \u3092\u5b9f\u884c\n- \u30b3\u30df\u30c3\u30c8\u30e1\u30c3\u30bb\u30fc\u30b8: `wiki: auto-fix health issues`\n- \u4fee\u6b63\u304c\u4e0d\u8981\u306a\u5834\u5408\uff08\u5168\u9805\u76ee\u30af\u30ea\u30fc\u30f3\uff09\u306f\u7c21\u6f54\u306b\u300c\u5168\u9805\u76ee\u30af\u30ea\u30fc\u30f3 \u2705\u300d\u306e\u307f\u5831\u544a\n- COST_REPORT \u884c\u3092\u672b\u5c3e\u306b\u5fc5\u305a\u51fa\u529b\n- **\u51fa\u529b\u8a00\u8a9e: \u65e5\u672c\u8a9e**",
+      "prompt": "# Wiki Health 自動修正 & レポート\n\nあなたは AI Topics Wiki の健全性管理エージェントです。以下の JSON データは `wiki_health.py --json` の出力です。\n\n## タスク手順\n\n### Phase 1: 緊急修復（自動）\n以下の破損は検出され次第、**即座に自動修復**すること：\n\n1. **index.md パイプ破損** (`index_corruption.issues` に `pipe_prefix` あり):\n   `sed -i 's/^|- /- /' ~/wiki/index.md`\n\n2. **index.md 行番号埋め込み** (`line_number_prefix`):\n   全行の `数字|` prefix を除去（wiki-graph-health スキル Section H3 参照）\n\n3. **三重括弧** (`triple_bracket`):\n   `sed -i 's/\\[\\[\\[/[[/g' ~/wiki/index.md`\n\n4. **スペース接頭辞** (`space_prefix`):\n   `sed -i 's/^ - \\[\\[/- [[/' ~/wiki/index.md`\n\n### Phase 2: 構造修正（低リスク自動適用）\n\n5. **ゴーストエントリ**: index.md に存在するが実ファイルがないエントリを削除。\n   ただし subdirectory (_index.md, entities/omar-khattab/*) は再帰スキャンで存在確認してから判断。\n\n6. **orphan_index 登録**: `orphan_pages` のうち実ファイルが存在するものを index.md に追加。\n   最大20件。アルファベット順厳守。Section カウントも更新。\n\n### Phase 3: 修正後レポート（日本語）\n\n修正完了後、以下の形式で**修正後の状態**をレポート：\n\n```\n## 🩺 Wiki Health 修正後レポート — YYYY-MM-DD\n\n### 🔧 自動修正サマリー\n| 項目 | 修正前 | 修正後 |\n|------|--------|--------|\n| パイプ破損 | N件 | 0 ✅ |\n| 行番号埋め込み | N件 | 0 ✅ |\n| orphan追加 | N件 | 0 ✅ |\n| ゴースト削除 | N件 | 0 ✅ |\n\n### 📊 修正後ステータス\n- エンティティ: N / コンセプト: N / 比較: N\n- 未処理raw記事: N件\n- Staleページ: N件（最古: N日）\n- インデックス破損: 0件 ✅\n\n### ⚠️ 要手動対応\n- [残存する自動修正不可の問題]\n```\n\n## ルール\n- 編集前に必ず対象ファイルを read_file で確認\n- `patch` の old_string には read_file の `N|` prefix を**含めない**（head/sed で生の行を取得）\n- コミット前に `python3 scripts/validate_index.py` を実行\n- コミットメッセージ: `wiki: auto-fix health issues`\n- 修正が不要な場合（全項目クリーン）は簡潔に「全項目クリーン ✅」のみ報告\n- COST_REPORT 行を末尾に必ず出力\n- **出力言語: 日本語**",
       "skills": [
         "llm-wiki",
         "wiki-graph-health"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "wiki_health_json.py",
       "context_from": null,
       "schedule": {
@@ -687,20 +705,21 @@
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null,
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 2048
     },
     {
       "id": "5e91a0b47c32",
       "name": "ai-topics-slack-hot-posts",
-      "prompt": "# AI Topics Slack Hot Post\n\nMonitor recent wiki activity and report hot topics. Deliver to Slack channel.\n\n## Quality Requirements (Gwern-inspired)\n\nApply these techniques from [[concepts/llm-creative-writing]] before finalizing:\n\n### T1: Anti-Examples Slop Stripping\nAfter writing each topic, self-review for:\n- \u274c \"it is worth noting\" \u2192 just state the fact\n- \u274c \"significant development\" \u2192 specify what and why\n- \u274c Hedging everything (may/could/might) \u2192 state confidence explicitly\n- \u274c Formulaic \"topic \u2192 explanation \u2192 implication\" every time\n- \u274c \"In today's rapidly evolving landscape\" \u2192 delete entirely\n\n### T2: Manual of Style\n- Japanese for Discord relay; English for Slack\n- Every claim needs a source (wikilink or URL)\n- One sentence per insight. No padding.\n- Comparison tables for multi-entity analysis\n\n### T3: Atomic Snippets\nStructure each topic as:\n```\n**One-liner**: (15-30 tokens, skimmable)\n**Details**: (100-300 tokens, bullet format)\n```\n\n### T5: Engram Knowledge Pathways\nBefore writing, scan the `related_wiki_pages` from context. Embed wikilinks to at least 2-3 related concepts/entities per topic.\n\n## Context\n\nThe pre-run script provides:\n- Slack channel history (7 days, 50 messages) \u2014 avoid repeating topics\n- Recent wiki pages (7 days, up to 20 pages)\n- Related wiki pages (wikilink analysis, up to 60 pages)\n- Hot topics YAML config\n- Time slot guidance\n\n## Posting Guidance (per slot)\n\n- **morning (09:30 JST)**: Sharpest narrative arc, forwardable\n- **midday (13:30 JST)**: Practical angle or surprising benchmark\n- **evening (17:30 JST)**: Connect multiple wiki threads into one interpretation\n- **night (21:30 JST)**: Reflective or contrarian angle\n- **late-night (01:30 JST)**: Niche, high-signal material\n- **pre-morning (05:30 JST)**: Infrastructure/model/workflow with durable value\n\n## Selection Policy\n- HARD DEDUP RULE: Check `dedup.recently_covered_topics` in the JSON context. Your chosen topic MUST NOT reuse any `[[wikilink]]` that appears in those recent posts. If all candidates overlap, pick a completely different angle.\n- Prefer NJ score 4 or 5 topics\n- Spread topics across daily slots\n- Output language: Japanese",
+      "prompt": "# AI Topics Slack Hot Post\n\nMonitor recent wiki activity and report hot topics. Deliver to Slack channel.\n\n## Quality Requirements (Gwern-inspired)\n\nApply these techniques from [[concepts/llm-creative-writing]] before finalizing:\n\n### T1: Anti-Examples Slop Stripping\nAfter writing each topic, self-review for:\n- ❌ \"it is worth noting\" → just state the fact\n- ❌ \"significant development\" → specify what and why\n- ❌ Hedging everything (may/could/might) → state confidence explicitly\n- ❌ Formulaic \"topic → explanation → implication\" every time\n- ❌ \"In today's rapidly evolving landscape\" → delete entirely\n\n### T2: Manual of Style\n- Japanese for Discord relay; English for Slack\n- Every claim needs a source (wikilink or URL)\n- One sentence per insight. No padding.\n- Comparison tables for multi-entity analysis\n\n### T3: Atomic Snippets\nStructure each topic as:\n```\n**One-liner**: (15-30 tokens, skimmable)\n**Details**: (100-300 tokens, bullet format)\n```\n\n### T5: Engram Knowledge Pathways\nBefore writing, scan the `related_wiki_pages` from context. Embed wikilinks to at least 2-3 related concepts/entities per topic.\n\n## Context\n\nThe pre-run script provides:\n- Slack channel history (7 days, 50 messages) — avoid repeating topics\n- Recent wiki pages (7 days, up to 20 pages)\n- Related wiki pages (wikilink analysis, up to 60 pages)\n- Hot topics YAML config\n- Time slot guidance\n\n## Posting Guidance (per slot)\n\n- **morning (09:30 JST)**: Sharpest narrative arc, forwardable\n- **midday (13:30 JST)**: Practical angle or surprising benchmark\n- **evening (17:30 JST)**: Connect multiple wiki threads into one interpretation\n- **night (21:30 JST)**: Reflective or contrarian angle\n- **late-night (01:30 JST)**: Niche, high-signal material\n- **pre-morning (05:30 JST)**: Infrastructure/model/workflow with durable value\n\n## Selection Policy\n- HARD DEDUP RULE: Check `dedup.recently_covered_topics` in the JSON context. Your chosen topic MUST NOT reuse any `[[wikilink]]` that appears in those recent posts. If all candidates overlap, pick a completely different angle.\n- Prefer NJ score 4 or 5 topics\n- Spread topics across daily slots\n- Output language: Japanese",
       "skills": [
         "llm-wiki",
         "hermes-report-quality"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-pro",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "ai_topics_slack_hot_posts_context.py",
       "context_from": null,
       "schedule": {
@@ -730,7 +749,8 @@
         "terminal",
         "web"
       ],
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 3072
     },
     {
       "id": "56548a0ed1bf",
@@ -738,9 +758,9 @@
       "prompt": "Relay Slack hot posts to Discord verbatim.",
       "skills": [],
       "skill": null,
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "discord_slack_relay.py",
       "context_from": [
         "5e91a0b47c32"
@@ -769,24 +789,25 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1499292880932700220",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #\u4e00\u822c / AI Wiki Update \u306b\u3064\u3044\u3066\u3001 ai-topics-slack-hot-posts \u306e\u751f\u6210\u9593\u9694\u306e15\u5206\u5f8c\u306e\u914d\u4fe1\u3068\u3057\u3001 ai-topics-sla...",
+        "chat_name": "kzinmrのサーバー / #一般 / AI Wiki Update について、 ai-topics-slack-hot-posts の生成間隔の15分後の配信とし、 ai-topics-sla...",
         "thread_id": "1499292880932700220"
       },
       "enabled_toolsets": null,
       "workdir": null,
-      "no_agent": true
+      "no_agent": true,
+      "max_tokens": 4096
     },
     {
       "id": "14599191cbf6",
       "name": "active-crawl",
-      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=active-crawl | <cost_info>\n\n# Active Crawl Agent\n\nResearch 3-5 trending AI/ML topics the wiki hasn't covered yet. Find original sources \u2014 official blogs, tech reports, arXiv (peer-reviewed only). For each: save raw article to wiki/raw/articles/, create/update wiki page, update index.md and log.md.",
+      "prompt": "# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=active-crawl | <cost_info>\n\n# Active Crawl Agent\n\nResearch 3-5 trending AI/ML topics the wiki hasn't covered yet. Find original sources — official blogs, tech reports, arXiv (peer-reviewed only). For each: save raw article to wiki/raw/articles/, create/update wiki page, update index.md and log.md.",
       "skills": [
         "llm-wiki"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-pro",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": null,
       "no_agent": false,
       "context_from": null,
@@ -814,11 +835,12 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1502088802922008656",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #\u4e00\u822c / \u9593\u9055\u3063\u3066active-crawl job\u3092\u524a\u9664\u3057\u3066\u3057\u307e\u3044\u307e\u3057\u305f\u3001\u3053\u308c\u3092\u5fa9\u5143\u3057\u305f\u3044",
+        "chat_name": "kzinmrのサーバー / #一般 / 間違ってactive-crawl jobを削除してしまいました、これを復元したい",
         "thread_id": "1502088802922008656"
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 3072
     },
     {
       "id": "c7890b6e0e19",
@@ -856,24 +878,25 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1502125468885844130",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / \u4ee5\u4e0b\u306eblog\u3092\u76e3\u8996\u5bfe\u8c61\u306b\u8ffd\u52a0\u3057\u3066: - https://sierra.ai/blog - https://www.anthropic.com/engin...",
+        "chat_name": "kzinmrのサーバー / #hermes-topic-manager / 以下のblogを監視対象に追加して: - https://sierra.ai/blog - https://www.anthropic.com/engin...",
         "thread_id": "1502125468885844130"
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 4096
     },
     {
       "id": "21f235565c6d",
       "name": "tag-audit-weekly",
-      "prompt": "# Weekly Tag Taxonomy Audit & Auto-Fix\n\nYou are a wiki quality agent. Run a full tag audit AND auto-fix all violations.\n\n## Phase 1: Audit (script output provided)\nThe script `tag_audit.py` output is injected above. Review:\n- Composite kebab-case tags \u2192 these are always errors\n- Non-SCHEMA tags \u2192 categorize by frequency\n\n## Phase 2: Auto-Fix All Violations\n\n### For composite kebab-case tags (5+ hyphen-joined words):\nThese are ALWAYS errors. Decompose them into individual valid tags using the decomposition logic. Then update each affected page's frontmatter to use the decomposed tags (all must be in SCHEMA.md). If a decomposed tag doesn't exist in SCHEMA.md, map it to the closest canonical tag.\n\n### For non-SCHEMA tags:\n1. **One-off tags (1x use)**: DELETE from the page's frontmatter. These are noise.\n2. **Multi-use tags (2x+)**: Map to the closest canonical SCHEMA tag. Add the mapping to `TAG_NORMALIZATION` dict in `/opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py`.\n3. **If no good canonical exists and tag appears 3x+**: Add the tag to SCHEMA.md in the appropriate category.\n\n### Mapping rules:\n- Plural \u2192 canonical: `evals` \u2192 `evaluation`\n- Synonym \u2192 canonical: `finetuning` \u2192 `fine-tuning`\n- Case \u2192 lowercase: always lowercase\n- Person names \u2192 `person`\n- Company/product names \u2192 `company`\n- Very specific technical term \u2192 closest category (e.g., `flash-attention` \u2192 `model`)\n\n## Phase 3: Apply Fixes\n\nAfter updating `TAG_NORMALIZATION` and `SCHEMA.md`:\n```bash\ncd ~/ai-topics\npython3 /opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py\n```\n\n## Phase 4: Commit\n```bash\ncd ~/ai-topics\ngit add wiki/ /opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py\ngit commit --no-verify -m \"wiki: weekly tag audit auto-fix \u2014 N violations resolved\"\ngit push\n```\n\nUse `--no-verify` because the pre-commit hook would block the commit before normalization is applied (chicken-and-egg: normalization fixes the very violations the hook checks).\n\n## Phase 5: Report\nReport the summary:\n- Total violations found and fixed\n- New mappings added to TAG_NORMALIZATION\n- New tags added to SCHEMA.md (if any)\n- Pages modified by normalization\n- Any tags that couldn't be auto-fixed (flag for manual review)\n\n## Important\n- The script paths are: tag_audit.py in the skill directory, tag_normalization.py in the skill directory\n- Always do dry-run of normalization first to verify, then apply\n- If the pre-commit hook blocks after all fixes, investigate before using --no-verify again",
+      "prompt": "# Weekly Tag Taxonomy Audit & Auto-Fix\n\nYou are a wiki quality agent. Run a full tag audit AND auto-fix all violations.\n\n## Phase 1: Audit (script output provided)\nThe script `tag_audit.py` output is injected above. Review:\n- Composite kebab-case tags → these are always errors\n- Non-SCHEMA tags → categorize by frequency\n\n## Phase 2: Auto-Fix All Violations\n\n### For composite kebab-case tags (5+ hyphen-joined words):\nThese are ALWAYS errors. Decompose them into individual valid tags using the decomposition logic. Then update each affected page's frontmatter to use the decomposed tags (all must be in SCHEMA.md). If a decomposed tag doesn't exist in SCHEMA.md, map it to the closest canonical tag.\n\n### For non-SCHEMA tags:\n1. **One-off tags (1x use)**: DELETE from the page's frontmatter. These are noise.\n2. **Multi-use tags (2x+)**: Map to the closest canonical SCHEMA tag. Add the mapping to `TAG_NORMALIZATION` dict in `/opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py`.\n3. **If no good canonical exists and tag appears 3x+**: Add the tag to SCHEMA.md in the appropriate category.\n\n### Mapping rules:\n- Plural → canonical: `evals` → `evaluation`\n- Synonym → canonical: `finetuning` → `fine-tuning`\n- Case → lowercase: always lowercase\n- Person names → `person`\n- Company/product names → `company`\n- Very specific technical term → closest category (e.g., `flash-attention` → `model`)\n\n## Phase 3: Apply Fixes\n\nAfter updating `TAG_NORMALIZATION` and `SCHEMA.md`:\n```bash\ncd ~/ai-topics\npython3 /opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py\n```\n\n## Phase 4: Commit\n```bash\ncd ~/ai-topics\ngit add wiki/ /opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py\ngit commit --no-verify -m \"wiki: weekly tag audit auto-fix — N violations resolved\"\ngit push\n```\n\nUse `--no-verify` because the pre-commit hook would block the commit before normalization is applied (chicken-and-egg: normalization fixes the very violations the hook checks).\n\n## Phase 5: Report\nReport the summary:\n- Total violations found and fixed\n- New mappings added to TAG_NORMALIZATION\n- New tags added to SCHEMA.md (if any)\n- Pages modified by normalization\n- Any tags that couldn't be auto-fixed (flag for manual review)\n\n## Important\n- The script paths are: tag_audit.py in the skill directory, tag_normalization.py in the skill directory\n- Always do dry-run of normalization first to verify, then apply\n- If the pre-commit hook blocks after all fixes, investigate before using --no-verify again",
       "skills": [
         "llm-wiki",
         "wiki-graph-health"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "tag_audit.py",
       "no_agent": false,
       "context_from": null,
@@ -901,11 +924,12 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1502371261169533030",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / wiki-health\u306e\u7d50\u679c\u3092\u3046\u3051\u3066\u3001513\u4ef6\u304ctaxonomy\u5916 / 1,434 \u30bf\u30b0\u306e\u6a19\u6e96\u5316: \u30bf\u30b0\u76e3\u67fb\u30fb\u7d71\u5408\u304c\u5fc5\u8981\u306a\u70b9\u306b\u5bfe\u51e6\u3057\u305f\u3044\u3067\u3059\u3002\u4fee\u6b63\u3060\u3051\u3067\u306a...",
+        "chat_name": "kzinmrのサーバー / #hermes-topic-manager / wiki-healthの結果をうけて、513件がtaxonomy外 / 1,434 タグの標準化: タグ監査・統合が必要な点に対処したいです。修正だけでな...",
         "thread_id": "1502371261169533030"
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 3072
     },
     {
       "id": "696ec6b0ecc7",
@@ -943,24 +967,25 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1502629673572503662",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / Hermes Agent\u306e\u3088\u308a\u826f\u3044\u30e6\u30fc\u30b9\u30b1\u30fc\u30b9\u3001\u7279\u306b\u6211\u3005\u306ellm-wiki\u904b\u7528\u306e\u6539\u5584\u306b\u3064\u3044\u3066\u7814\u7a76\u3057\u305f\u3044\u3002\u4ee5\u4e0b\u30c4\u30a4\u30fc\u30c8\u306e\u5229\u7528\u4e8b\u4f8b\u306b\u3064\u3044\u3066\u7406\u89e3\u3057\u3001\u65e2\u5b58\u306e\u95a2\u9023w...",
+        "chat_name": "kzinmrのサーバー / #hermes-topic-manager / Hermes Agentのより良いユースケース、特に我々のllm-wiki運用の改善について研究したい。以下ツイートの利用事例について理解し、既存の関連w...",
         "thread_id": "1502629673572503662"
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 1024
     },
     {
       "id": "459ec1a09b8d",
       "name": "wiki-watchdog-fix",
-      "prompt": "# Wiki Watchdog Auto-Fix Agent\n\nYou are the auto-healing watchdog for the llm-wiki cron pipeline. Run daily at 17:35 UTC (02:35 JST), after wiki-health and wiki-health-fix have completed.\n\nThe pre-run script has collected context from three sources above. Your job:\n\n## Step 1: Analyze pipeline_watchdog alerts\n- Review any job failures, staleness, or chain breaks\n- For each alert, determine if it's actionable or transient\n\n## Step 2: Analyze wiki-health issues\n- Read the wiki-health lint report\n- Categorize issues into: AUTO-FIXABLE, NEEDS-HUMAN, FALSE-POSITIVE\n- AUTO-FIXABLE patterns:\n  - Pipe table corruption in index.md: `|- [[...]]` \u2192 `- [[...]]`\n  - Line number prefix corruption: lines starting with `^\\s*\\d+\\|`\n  - Index duplicate entries (use the dedup pattern from llm-wiki skill)\n  - Index header count mismatch vs actual file counts\n  - Missing `---` separators in log.md\n\n## Step 3: Analyze wiki-graph-analysis issues\n- Review structural issues (broken wikilinks, orphans)\n- Broken wikilinks: attempt case-insensitive matching before reporting\n- Orphans: verify they exist on filesystem, report only\n\n## Step 4: Execute auto-fixes\nFor each auto-fixable issue:\n1. Read the relevant file section\n2. Apply the fix using patch()\n3. Verify the fix\n4. Log what was fixed\n\n## Step 5: Report\nOutput a concise report with:\n- \u2705 Auto-fixed: [count] issues fixed (list each)\n- \u26a0\ufe0f Needs attention: [count] issues requiring human review (list each)\n- \ud83d\udcca Summary: pipeline health, wiki health, graph health\n\n## CRITICAL RULES\n- Read wiki/SCHEMA.md before any wiki operations\n- Update wiki/index.md and wiki/log.md after any changes\n- Commit and push: `cd ~/ai-topics && git add wiki/ && git commit -m \"watchdog: auto-fix <summary>\" && git push`\n- Do NOT create new wiki pages \u2014 only fix existing ones\n- Do NOT delete pages \u2014 orphans need human review\n- If a fix would touch 10+ files, stop and report \u2014 it needs human review\n- Use the canonical wiki path: ~/wiki \u2192 ~/ai-topics/wiki\n\n# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=wiki-watchdog-fix status=ok input_tokens=0 output_tokens=0 cost=0.0",
+      "prompt": "# Wiki Watchdog Auto-Fix Agent\n\nYou are the auto-healing watchdog for the llm-wiki cron pipeline. Run daily at 17:35 UTC (02:35 JST), after wiki-health and wiki-health-fix have completed.\n\nThe pre-run script has collected context from three sources above. Your job:\n\n## Step 1: Analyze pipeline_watchdog alerts\n- Review any job failures, staleness, or chain breaks\n- For each alert, determine if it's actionable or transient\n\n## Step 2: Analyze wiki-health issues\n- Read the wiki-health lint report\n- Categorize issues into: AUTO-FIXABLE, NEEDS-HUMAN, FALSE-POSITIVE\n- AUTO-FIXABLE patterns:\n  - Pipe table corruption in index.md: `|- [[...]]` → `- [[...]]`\n  - Line number prefix corruption: lines starting with `^\\s*\\d+\\|`\n  - Index duplicate entries (use the dedup pattern from llm-wiki skill)\n  - Index header count mismatch vs actual file counts\n  - Missing `---` separators in log.md\n\n## Step 3: Analyze wiki-graph-analysis issues\n- Review structural issues (broken wikilinks, orphans)\n- Broken wikilinks: attempt case-insensitive matching before reporting\n- Orphans: verify they exist on filesystem, report only\n\n## Step 4: Execute auto-fixes\nFor each auto-fixable issue:\n1. Read the relevant file section\n2. Apply the fix using patch()\n3. Verify the fix\n4. Log what was fixed\n\n## Step 5: Report\nOutput a concise report with:\n- ✅ Auto-fixed: [count] issues fixed (list each)\n- ⚠️ Needs attention: [count] issues requiring human review (list each)\n- 📊 Summary: pipeline health, wiki health, graph health\n\n## CRITICAL RULES\n- Read wiki/SCHEMA.md before any wiki operations\n- Update wiki/index.md and wiki/log.md after any changes\n- Commit and push: `cd ~/ai-topics && git add wiki/ && git commit -m \"watchdog: auto-fix <summary>\" && git push`\n- Do NOT create new wiki pages — only fix existing ones\n- Do NOT delete pages — orphans need human review\n- If a fix would touch 10+ files, stop and report — it needs human review\n- Use the canonical wiki path: ~/wiki → ~/ai-topics/wiki\n\n# TOKEN USAGE TRACKING\nAt the end of your response, print exactly one line:\nCOST_REPORT: job=wiki-watchdog-fix status=ok input_tokens=0 output_tokens=0 cost=0.0",
       "skills": [
         "llm-wiki",
         "wiki-graph-health"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": "wiki_watchdog_fix_context.py",
       "no_agent": false,
       "context_from": null,
@@ -988,16 +1013,17 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1502629673572503662",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / Hermes Agent\u306e\u3088\u308a\u826f\u3044\u30e6\u30fc\u30b9\u30b1\u30fc\u30b9\u3001\u7279\u306b\u6211\u3005\u306ellm-wiki\u904b\u7528\u306e\u6539\u5584\u306b\u3064\u3044\u3066\u7814\u7a76\u3057\u305f\u3044\u3002\u4ee5\u4e0b\u30c4\u30a4\u30fc\u30c8\u306e\u5229\u7528\u4e8b\u4f8b\u306b\u3064\u3044\u3066\u7406\u89e3\u3057\u3001\u65e2\u5b58\u306e\u95a2\u9023w...",
+        "chat_name": "kzinmrのサーバー / #hermes-topic-manager / Hermes Agentのより良いユースケース、特に我々のllm-wiki運用の改善について研究したい。以下ツイートの利用事例について理解し、既存の関連w...",
         "thread_id": "1502629673572503662"
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 3072
     },
     {
       "id": "4e63c6f0d140",
       "name": "raw-backlog-ingest",
-      "prompt": "# Raw Backlog Ingest \u2014 AI Topics Wiki\n\nYou are processing the raw article backlog for the AI Topics Wiki.\n\n## \u26a0\ufe0f CRITICAL: Pre-Write Verification (MANDATORY)\n\nBefore ANY `write_file` to `wiki/entities/` or `wiki/concepts/`:\n1. Read the existing page with `read_file` first\n2. If the page has >40 lines of content, you MUST use `patch` to add/update \u2014 NEVER `write_file`\n3. Overwriting rich curated pages with skeletons is a data-loss incident\n\nReal failure: Thariq Shihipar's 282-line page was overwritten with a 36-line skeleton (commit 8dea159). The pre-commit hook now blocks this, but you should prevent it at the source.\n\n## Script output context\n\nThe script output above is from `raw_backlog_collect.py --sort ai-hint --limit 5`, which selects 5 unprocessed raw articles from the backlog sorted by AI relevance hint.\n\n## Your task\n\nFor each article in the batch:\n\n1. Read the article file to understand its content\n2. Check wiki/index.md for existing related pages\n3. If an entity or concept page already exists with substantial content (>40 lines), use `patch` to add the new article as a source and add relevant sections \u2014 do NOT overwrite\n4. If no page exists, create one following SCHEMA.md conventions\n5. Update index.md and log.md\n\n## Workflow\n1. Process all 5 articles\n2. For each article: read \u2192 check existing pages \u2192 create or patch \u2192 update index/log\n3. git add, commit, and push all changes in one batch\n4. Report what was created/updated",
+      "prompt": "# Raw Backlog Ingest — AI Topics Wiki\n\nYou are processing the raw article backlog for the AI Topics Wiki.\n\n## ⚠️ CRITICAL: Pre-Write Verification (MANDATORY)\n\nBefore ANY `write_file` to `wiki/entities/` or `wiki/concepts/`:\n1. Read the existing page with `read_file` first\n2. If the page has >40 lines of content, you MUST use `patch` to add/update — NEVER `write_file`\n3. Overwriting rich curated pages with skeletons is a data-loss incident\n\nReal failure: Thariq Shihipar's 282-line page was overwritten with a 36-line skeleton (commit 8dea159). The pre-commit hook now blocks this, but you should prevent it at the source.\n\n## Script output context\n\nThe script output above is from `raw_backlog_collect.py`, which selects a bounded batch of unprocessed raw articles from the backlog sorted by AI relevance hint. The batch size may vary for manual runs; process exactly the articles listed in the script output.\n\n## Your task\n\nFor each article in the batch:\n\n1. Read the article file to understand its content\n2. Check wiki/index.md for existing related pages\n3. If an entity or concept page already exists with substantial content (>40 lines), use `patch` to add the new article as a source and add relevant sections — do NOT overwrite\n4. If no page exists, create one following SCHEMA.md conventions\n5. Update index.md and log.md\n\n## Workflow\n1. Process every article listed in the script output\n2. For each article: read → check existing pages → create or patch → update index/log\n3. git add, commit, and push all changes in one batch\n4. Report what was created/updated",
       "skills": [
         "semantic-article-grouping",
         "wiki-entity-enrichment-from-article",
@@ -1020,10 +1046,10 @@
         "times": null,
         "completed": 94
       },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-08-19T04:38:24.722160+00:00",
+      "paused_reason": "manual bulk runner only",
       "created_at": "2026-05-19T14:59:57.475159+00:00",
       "next_run_at": "2026-06-04T04:00:00+00:00",
       "last_run_at": "2026-06-04T00:03:50.565559+00:00",
@@ -1034,7 +1060,7 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1506135068496887898",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #hermes-topic-manager / raw/ \u4ee5\u4e0b\u306ewiki\u672a\u53cd\u6620\u306e\u8a18\u4e8b\u7fa4\u3092\u30d0\u30c3\u30af\u30b0\u30e9\u30a6\u30f3\u30c9\u5b9f\u884c\u3067\u5c11\u3057\u305a\u3064Hermes Agent\u3067wiki\u306b\u53d6\u308a\u8fbc\u307e\u305b\u308b\u306b\u306f\u3069\u3046\u3059\u308c\u3070\u826f\u3044?",
+        "chat_name": "kzinmrのサーバー / #hermes-topic-manager / raw/ 以下のwiki未反映の記事群をバックグラウンド実行で少しずつHermes Agentでwikiに取り込ませるにはどうすれば良い?",
         "thread_id": "1506135068496887898"
       },
       "enabled_toolsets": [
@@ -1042,19 +1068,20 @@
         "file",
         "web"
       ],
-      "workdir": "/opt/data/ai-topics"
+      "workdir": "/opt/data/ai-topics",
+      "max_tokens": 2048
     },
     {
       "id": "d87932e0ebeb",
       "name": "jp-to-en-translation",
-      "prompt": "# JP\u2192EN Wiki Translation Agent\n\nYou are processing the remaining Japanese-content wiki files to English. \n\n## Task\n1. Run this script to find the top remaining JP files: \n```python\nimport re, json, os\njp = re.compile(r'[\\u3040-\\u309F\\u30A0-\\u30FF\\u4E00-\\u9FFF\\uFF00-\\uFFEF]')\nwiki_root = '/opt/data/ai-topics/wiki'\nremaining = []\nfor root, dirs, files in os.walk(wiki_root):\n    if 'raw/' in root: continue\n    for f in files:\n        if f.endswith('.md'):\n            fp = os.path.join(root, f)\n            with open(fp) as fh: content = fh.read()\n            lines = content.split('\\n')\n            body_start = 0; fm_count = 0\n            for i, line in enumerate(lines):\n                if line.strip() == '---':\n                    fm_count += 1\n                    if fm_count == 2: body_start = i + 1; break\n            if fm_count < 2: body_start = 0\n            body = '\\n'.join(lines[body_start:])\n            body_jp = len(jp.findall(body))\n            if body_jp > 0:\n                rel_path = os.path.relpath(fp, wiki_root)\n                remaining.append((rel_path, body_jp, fp))\nremaining.sort(key=lambda x: -x[1])\n# Take top 8\nfor p, j, fp in remaining[:8]:\n    print(f\"{p}|{j}|{fp}\")\n```\n\n2. For each of the top 8 files, read it, translate ALL Japanese text in the body to English, write back.\n3. CRITICAL: Skip YAML frontmatter (between --- markers). Only translate body content.\n4. Preserve ALL markdown formatting, wikilinks [[...]], code blocks.\n5. Commit: `cd /opt/data/ai-topics && git add wiki/ && git commit -m \"wiki: JP\u2192EN batch \u2014 8 files\" && git push`\n6. Report: number of files translated, total JP chars removed, remaining JP files count.",
+      "prompt": "# JP→EN Wiki Translation Agent\n\nYou are processing the remaining Japanese-content wiki files to English. \n\n## Task\n1. Run this script to find the top remaining JP files: \n```python\nimport re, json, os\njp = re.compile(r'[\\u3040-\\u309F\\u30A0-\\u30FF\\u4E00-\\u9FFF\\uFF00-\\uFFEF]')\nwiki_root = '/opt/data/ai-topics/wiki'\nremaining = []\nfor root, dirs, files in os.walk(wiki_root):\n    if 'raw/' in root: continue\n    for f in files:\n        if f.endswith('.md'):\n            fp = os.path.join(root, f)\n            with open(fp) as fh: content = fh.read()\n            lines = content.split('\\n')\n            body_start = 0; fm_count = 0\n            for i, line in enumerate(lines):\n                if line.strip() == '---':\n                    fm_count += 1\n                    if fm_count == 2: body_start = i + 1; break\n            if fm_count < 2: body_start = 0\n            body = '\\n'.join(lines[body_start:])\n            body_jp = len(jp.findall(body))\n            if body_jp > 0:\n                rel_path = os.path.relpath(fp, wiki_root)\n                remaining.append((rel_path, body_jp, fp))\nremaining.sort(key=lambda x: -x[1])\n# Take top 8\nfor p, j, fp in remaining[:8]:\n    print(f\"{p}|{j}|{fp}\")\n```\n\n2. For each of the top 8 files, read it, translate ALL Japanese text in the body to English, write back.\n3. CRITICAL: Skip YAML frontmatter (between --- markers). Only translate body content.\n4. Preserve ALL markdown formatting, wikilinks [[...]], code blocks.\n5. Commit: `cd /opt/data/ai-topics && git add wiki/ && git commit -m \"wiki: JP→EN batch — 8 files\" && git push`\n6. Report: number of files translated, total JP chars removed, remaining JP files count.",
       "skills": [
         "llm-wiki"
       ],
       "skill": "llm-wiki",
-      "model": "deepseek-v4-flash",
-      "provider": "deepseek",
-      "base_url": null,
+      "model": "RadixArk/Qwen3.8-27B-NVFP4",
+      "provider": "hermes-llm-serial-gate",
+      "base_url": "http://hermes-llm-serial-gate:8080/v1",
       "script": null,
       "no_agent": false,
       "context_from": null,
@@ -1082,12 +1109,13 @@
       "origin": {
         "platform": "discord",
         "chat_id": "1508672421190828142",
-        "chat_name": "kzinmr\u306e\u30b5\u30fc\u30d0\u30fc / #\u4e00\u822c / \u6211\u3005\u306ewiki\u306bqmd\u306a\u3069\u306e\u691c\u7d22cli\u57fa\u76e4\u3092\u5c0e\u5165\u3059\u308b\u3053\u3068\u3092\u8003\u3048\u3066\u3044\u307e\u3059\u3002\u305d\u306e\u969b\u306b\u3001wiki/raw/\u3092\u9664\u304fwiki\u30b3\u30f3\u30c6\u30f3\u30c4\u306b\u95a2\u3057\u3066\u306f\u539f\u5247\u7684\u306b\u82f1\u8a9e\u3067\u5185\u5bb9\u3092...",
+        "chat_name": "kzinmrのサーバー / #一般 / 我々のwikiにqmdなどの検索cli基盤を導入することを考えています。その際に、wiki/raw/を除くwikiコンテンツに関しては原則的に英語で内容を...",
         "thread_id": "1508672421190828142"
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "max_tokens": 2048
     }
   ],
-  "updated_at": "2026-06-04T00:45:22.624605+00:00"
+  "updated_at": "2026-08-19T02:00:38.006334+00:00"
 }

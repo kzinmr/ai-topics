@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-08-22
+updated: 2026-09-04
 type: entity
 sources:
   - raw/articles/seangoedecke.com--you-should-never-be-angry-at-work--943567d1.md
@@ -292,6 +292,8 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - Regular podcast guest on engineering and AI topics
 
 ## Recent Articles
+
+- **How to protect yourself from workslop** (2026-09-02): Names and attacks "workslop" — colleagues communicating by pasting big chunks of AI-generated text. Core mechanism: **effort asymmetry "like a denial-of-service attack"** — near-zero cost to produce, full cost to read. Doc-writing used to be a "canary task" reliably signaling real effort; AI destroys that signal. Prescriptions: hand-write docs as the polite default, demand specifics "that an LLM wouldn't be able to come up with unless somebody had actually done some work," and (as manager) state clearly when AI docs are acceptable. Diagnostic insight: the harm isn't the prose volume — it's that "you're no longer sure which parts of your coworkers' communication are real." Filed into [[concepts/ai-slop]]. ^[raw/articles/seangoedecke.com--how-to-protect-yourself-from-workslop--b1b3e70a.md]
 
 - **Anti-AI nostalgia and the cult of the past** (2026-06-03): Philosophical analysis of anti-AI rhetoric through Umberto Eco's Ur-Fascism framework. Warns that disillusioned elite software engineers are susceptible to fascist-adjacent movements promising return to an idealized past. References: [[concepts/ai-criticism-politics]]
 

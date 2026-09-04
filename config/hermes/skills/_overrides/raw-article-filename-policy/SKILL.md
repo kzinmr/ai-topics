@@ -99,6 +99,19 @@ For X Article and X Note Tweet raw articles:
 5. **Search engine snippet** — Google/Bing search results often show publication dates
 6. **Social media cross-post** — Check the X/Twitter or LinkedIn post announcing the article. For LinkedIn posts specifically, extract `datePublished` from JSON-LD `SocialMediaPosting` — see `references/linkedin-date-extraction.md`.
 
+### arXiv Papers
+
+For arXiv-backed sources (project pages, blogs that cite an arXiv ID), get the exact publication date from the abs page — fetch `https://arxiv.org/abs/{arxiv_id}` and extract `[Submitted on ...]`:
+
+```python
+import urllib.request, re
+body = urllib.request.urlopen(f"https://arxiv.org/abs/{arxiv_id}", timeout=30).read().decode("utf-8", "replace")
+m = re.search(r'\[Submitted on ([0-9]{1,2} [A-Za-z]+ [0-9]{4})', body)
+# e.g. "13 Aug 2026" -> use 2026-08-13 as the filename date
+```
+
+Use the v1 `Submitted on` date as the publication date (first public release). This is more precise than the ID prefix (`2608.13545` = Aug 2026) or the HN discovery date. Verified in the Aug 16 crawl: LittleLearner (arXiv:2608.13545) → 13 Aug 2026; CRI's LMCA paper (arXiv:2607.27499) → 29 Jul 2026.
+
 ### Verification Steps
 
 ```python

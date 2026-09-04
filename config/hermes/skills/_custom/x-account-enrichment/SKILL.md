@@ -132,6 +132,13 @@ What they tweet about most frequently.
 - **Frontmatter**: No `status: skeleton` tag
 - **Cross-references**: Link to other wiki entities using `[[entity-name]]` format
 
+## Related References
+
+- `references/scan-naming-conventions.md` — Filename conventions for scan-sourced pages
+- `references/tweet-content-extraction.md` — Extracting full content from tweets
+- `references/x-accounts-scan-json-structure.md` — JSON structure of `x_accounts_latest_full.json`
+- `references/x-scan-discord-report-template.md` — Japanese Discord report format template for x-accounts-scan cron job
+
 ## Known Subagent Pitfalls
 
 1. **Filename aliasing**: Subagents create files with different names than specified (e.g., `hynek-schlawack.md` instead of `hynek.md`). Always audit post-batch for duplicates.
@@ -144,6 +151,11 @@ What they tweet about most frequently.
 
 5. **Successful pattern confirmed (2026-04-10)**: 8 entities enriched in 4 parallel batches of 2 each, completed in ~6 minutes with file sizes 12.5-18.7KB (exceeding 8-15KB target). This confirms the 2-per-subagent batching strategy works well.
 
+6. **Handle ≠ filename during scan ingest**: When processing scan results, the X handle (e.g., `dbreunig`) often does NOT match the entity page filename (e.g., `drew-breunig.md`). Always search for the entity page by content/grep before concluding it's MISSING:
+   ```bash
+   grep -rl 'dbreunig' ~/wiki/entities/ 2>/dev/null
+   ```
+
 ## Research Strategy
 
 For each person:
@@ -153,3 +165,24 @@ For each person:
 4. Find interviews, talks, or presentations
 5. Search for mentions in AI community discussions
 6. Cross-reference with other wiki entities for related connections
+
+## x-accounts Scan → Wiki Ingest (different workflow)
+
+This skill covers **enriching skeleton entity pages** for tracked X accounts. A separate workflow exists for **processing new posts from x-accounts scans** into wiki pages (creating concept pages from shared links, updating entity pages with new blog posts, etc.).
+
+For the scan→ingest workflow, see `wiki-ingestion-pipelines` → `references/x-accounts-scan-ingest-workflow.md`.
+
+**Key distinction**:
+- **This skill**: Take a `status: skeleton` entity page → research the person → write 8-15KB full page
+- **Scan ingest**: Take `new_posts` from `x_accounts_latest_full.json` → evaluate each post's external URLs → create concept pages or update existing entity pages
+
+**Post evaluation quick reference**:
+| Signal | Action |
+|--------|--------|
+| Reply without standalone value | Skip |
+| Multiple replies from same account forming coherent thread (same topic, consecutive timestamps) | Evaluate as group — may have standalone value together |
+| Non-AI domain link | Skip |
+| Link to own blog post (entity exists) | Update entity's Blog/Recent Posts |
+| arXiv paper (no existing page) | Create concept page |
+| Official docs link | Add to relevant entity sources |
+| Conference appearance | Add to entity's Speaking Engagements |

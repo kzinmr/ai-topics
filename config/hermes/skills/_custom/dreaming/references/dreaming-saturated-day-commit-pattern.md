@@ -62,3 +62,13 @@ Pre-commit hooks are appropriate for validating new wiki content. Only bypass wh
 - Archive: `wiki/raw/archived/triage/dreaming/2026-07-07_20260707T180001Z.json` (12 candidates, 8 new)
 - Git status showed 100+ stale files from prior sessions
 - Selective staging + `--no-verify` → clean commit → successful push
+
+## Correction: `--no-verify` Is NOT the Default (validated 2026-08-26)
+The `--no-verify` above was a workaround for stale files, not a requirement. On 2026-08-26 the same selective-staging pattern run WITHOUT `--no-verify` passed both hooks cleanly:
+- Staged: 2 enriched content pages + `wiki/log.md` + archive JSON + `archive_index.json` (explicit paths, NOT `git add wiki/`)
+- Result: `✅ Tag validation passed — 3 files, all tags in SCHEMA taxonomy`, language check clean, commit `31ec9e2f` pushed.
+
+Rule: run the pre-commit hooks normally; only fall back to `--no-verify` when the staged set provably contains pre-existing violations from stale sibling files.
+
+## Post-Commit Pull Failure on Dirty Sibling Tree (observed 2026-08-26)
+`git pull --rebase` after the commit can fail with `cannot pull with rebase: You have unstaged changes` — the sibling tree (skills/, jobs.json, AGENTS.md) is permanently dirty between sessions. This is harmless when your commit is the only delta vs `main`: `git push` alone succeeds. If push is rejected because remote moved, use `git pull --rebase --autostash` instead. Never stage sibling files to satisfy the rebase — they are not part of this cycle.

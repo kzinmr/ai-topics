@@ -99,3 +99,56 @@ Verified cases to avoid re-triageing:
 - **`entities/koylan-ai` vs `entities/muratcan-koylan` = TRUE duplicate, already marked** — koylan-ai frontmatter body says "Redirect/alias: This page is a duplicate of [[entities/muratcan-koylan]]". Person-similarity graph flags it (score 11.5) but no merge needed.
 - **`deedydas` vs `howdymary` = FALSE POSITIVE** — Deedy Das vs "mary"; high similarity (13.9) comes from shared concept tags (autoresearch, harness-engineering), not same person.
 - Cross-type entity/concept splits (`entities/cline`/`concepts/cline`, `entities/qwen`/`concepts/qwen`) are intentional product-vs-concept splits — keep, but check whether the entity side is a tiny stub that should redirect.
+
+## 12. Stale Generator Source Despite "FIXED" Doc Marker (discovered 2026-08-21)
+
+**Symptom**: The weekly report frontmatter contained `tags: [wiki-maintenance, graph-analysis]` even though §9 documented the fix as "applied" — the deployed generators were NOT actually fixed.
+
+**Root cause**: The pitfalls doc claimed the fix was in place, but the actual generators (`scripts/_weekly_graph_report.py` line 219, `scripts/wiki_graph_analysis_weekly.py` line 382) still hardcoded the non-canonical tag list. The fix was documented but never landed in the scripts (or regressed via sync/rollback).
+
+**Lesson — verify generator source at runtime, not docs**: Before trusting a "FIXED <date>" marker in any pitfalls reference, `grep -n 'tags:' scripts/_weekly_graph_report.py scripts/wiki_graph_analysis_weekly.py` to confirm the CURRENT source matches the documented state. Docs describe intent; source is truth. This applies to ALL "FIXED" markers in this file (§1 filename bug, §1b template bug) — re-verify if the symptom reappears.
+
+**Fix applied 2026-08-21**: Both generators patched to write `tags: []`. Verified end-to-end: report generated → frontmatter clean → commit passes pre-commit tag validator without `--no-verify`. If a future run hits `🚨 TAG TAXONOMY VIOLATIONS` on the weekly report, check the generator source first, not the doc.
+
+## 13. Deep Audit as the Ground-Truth Count Source (workflow re-confirmed 2026-08-21)
+
+Re-confirmed: `deep_link_audit.py` (at `config/hermes/skills/_overrides/wiki-graph-health/scripts/deep_link_audit.py`) produces the accurate orphan/broken-link counts; `wiki_graph_analysis_weekly.py` undercounts orphans (top-level scan only: reported 480 vs deep audit 459 ≥20-line) and overcounts broken links (shallow resolution: reported 4,978 vs deep audit 2,532 true). Run deep audit AFTER the weekly script + rich report, and cite the deep-audit numbers in the final user-facing report. The weekly script's "recommended actions" section uses its own (less accurate) counts — re-label when presenting to the user.
+
+## 14. Duplicate-Triage Verification Loop (confirmed reusable 2026-08-21)
+
+For each of the ~16 duplicate groups the weekly script reports, verify triage with one shell loop:
+```bash
+for pair in "A B" "C D" ...; do
+  set -- $pair
+  a=$(wc -l < wiki/$1.md); b=$(wc -l < wiki/$2.md)
+  at=$(grep -m1 '^title:' wiki/$1.md | head -c 60)
+  bt=$(grep -m1 '^title:' wiki/$2.md | head -c 60)
+  echo "$1 ($a lines) $at || $2 ($b lines) $bt"
+done
+```
+Decision rule (§11 ground truth + 2026-08-21 verification):
+- One side is a **redirect stub** (≤25 lines, `redirect:` in frontmatter, "moved" body) → already dedup'd, keep, report as "keep as-is".
+- Both sides have **substantial content** (100+ lines each, similar titles) → true merge candidate; list both line counts so the merge preserves the richer page.
+- **Cross-type** (entities/X vs concepts/X, or concepts/X vs comparisons/X) → intentional product-vs-concept split, keep; note if one side is a tiny stub that could redirect.
+- Slug-collision between **different people** (e.g. `deliberate-coder` vs `deliberatecoder`) → false positive, skip.
+
+## 15. Broken-Link Triage Technique (2026-08-21)
+
+The top-missing-targets list from the weekly script mixes three distinct problem classes. Before recommending "create page", check the filesystem:
+```bash
+for t in <top-missing-targets>; do
+  [ -f "wiki/$t.md" ] && echo "EXISTS: $t" || echo "MISSING: $t"
+  find wiki -name "$(basename $t)*" | head -3   # catch nested/subdir files
+done
+```
+Three outcomes:
+1. **File exists at a nested path** (e.g. `concepts/post-training/rlhf.md` linked as `[[concepts/rlhf]]`) → link-fix, not page-creation. This is the majority class.
+2. **Directory exists but no flat hub page** (e.g. `concepts/context-engineering/` has children but no `concepts/context-engineering.md`) → create hub page (high value: 137 refs in one session).
+3. **Genuinely missing** (e.g. `entities/cursor`, `entities/sglang`, `entities/reflexive-ai`) → create stub with `status: stub`.
+
+## 16. Commit-Hygiene for the Weekly Report (2026-08-21)
+
+- The report file lands at `wiki/queries/wiki-graph-analysis-weekly-<date>.md`. The pre-commit tag validator blocks it if frontmatter tags are non-canonical — patch to `tags: []` (or rely on the §12 generator fix).
+- After `_weekly_graph_report.py` auto-cleans the previous week's report file, `index.md` still lists the old entry → REPLACE the old entry with the new one in the same commit (not append), or you leave a stale index entry pointing at a deleted file.
+- Append the log entry to `wiki/log.md` with a Python script (write_file to `/tmp/` → `python3 /tmp/append_log_entry.py`), inserting after the `_Log of all wiki changes..._` line. `execute_code` is blocked in cron mode (see §8).
+- Commit everything in one shot: `git add wiki/queries/wiki-graph-analysis-weekly-<date>.md wiki/index.md wiki/log.md scripts/_weekly_graph_report.py scripts/wiki_graph_analysis_weekly.py && git commit -m "wiki: weekly graph analysis <date> — ..." && git push`. Include generator fixes in the same commit when you patch them.

@@ -52,30 +52,37 @@ The error output is precise. Example:
 
 **Response**: Add `openrouter` to the Products category in SCHEMA.md, `git add`, retry commit.
 
-## Common Patterns
+## Common Non-Canonical → Canonical Mappings
 
-### New Product/Platform Name
-```markdown
-# In SCHEMA.md, Products line:
-..., obsidian, openrouter
+| Non-Canonical | Canonical | Notes |
+|---|---|---|
+| `rl` | `reinforcement-learning` | Shorthand never works |
+| `llm-training` | `training` | Drop the `llm-` prefix |
+| `llm-infrastructure` | `ai-infrastructure` | Use `ai-` not `llm-` |
+| `exploration` | (no canonical) | Use `inference`, `reasoning`, or `scaling` |
+| `interview` | (no canonical) | Use `career` |
+| `dllm` | (no canonical) | Use `reinforcement-learning` or `diffusion` |
+| `ai-alignment` | `alignment` | Drop the `ai-` prefix |
+| `benchmarking` | `benchmark` | Noun form, not gerund |
+| `cuda` | `gpu` | Use the broader `gpu` tag; CUDA-specific context goes in page body |
+| `decentralized-ai` | `sovereign-ai` | Use `sovereign-ai` for decentralized/distributed AI philosophy |
+| `agentic-model` | `ai-agents` + `model` | Use both existing tags; compound model-type tags are rarely canonical |
+| `legal` | `law` | Use `law` for legal disputes, lawsuits, regulatory actions |
+| `learning` | `education` | Use `education` for learning tools, pedagogy, educational content |
+| `ui` | `frontend` | Use `frontend` OR `gui` for user interface topics |
+| `infinite-canvas` | (no canonical) | Drop it — the concept doesn't fit a single canonical tag; describe in page body |
 
-# In page frontmatter:
-tags: [entity, model, llm, openrouter, ...]
-```
-
-### New Company/Lab
-```markdown
-# In SCHEMA.md, People/Orgs line:
-..., mit, palantir, tencent, siliconflow
-
-# In page frontmatter:
-tags: [entity, company, llm-proxy, siliconflow, ...]
-```
-
-### Pricing-related Tag for Models
-The `pricing` tag already exists in SCHEMA.md under Products. Use it directly — no SCHEMA.md change needed.
+See also: `references/tag-taxonomy-quick-reference.md` for the full mapping table.
+See also: `references/tag-taxonomy-openai-concept-mappings.md` for OpenAI/company concept page tag mappings and Japanese content policy.
 
 ## Historical Incidents
 
 - **2026-05-27**: Agent added `openrouter` tag to `entities/tencent-hy3.md` without registering it in SCHEMA.md. Pre-commit hook blocked commit. Fixed by adding `openrouter` to Products category.
 - **2026-05-13 (batch-person-entity)**: Tags `researcher` and `pseudonymous` added to person pages without SCHEMA.md registration. Hook blocked commit. Also: `llm-proxy` was inserted into Engineering AND Infrastructure categories due to `patch` fuzzy matching on long lines.
+- **2026-06-12 (RL interview pages)**: Multiple non-canonical tags in batch-created pages: `rl` (→ `reinforcement-learning`), `interview` (no canonical), `llm-training` (→ `training`), `llm-infrastructure` (→ `ai-infrastructure`), `dllm` (no canonical), `exploration` (no canonical). Required two fix rounds. Lesson: when creating pages from a non-English source (Chinese Zhihu interview list), the translated topic names rarely match canonical tags — always validate against SCHEMA.md before the first commit attempt.
+- **2026-06-15 (PerfCodeBench arxiv ingestion)**: Tag `cuda` used in `kernelbench.md` frontmatter — not in SCHEMA.md taxonomy. Pre-commit hook blocked commit. Fixed by replacing `cuda` with canonical `gpu`. Lesson: even obvious technology names (CUDA, cuDNN, Triton) must be checked against SCHEMA.md — prefer broader existing tags (`gpu`, `hardware`) and put specificity in the page body.
+- **2026-07-11 (blog-triage)**: Tags `decentralized-ai` and `legal` used in new entity/event pages without SCHEMA.md registration. Pre-commit hook blocked commit. Fixed by mapping `decentralized-ai` → `sovereign-ai` and `legal` → `law`. Lesson: descriptive compound tags (`decentralized-ai`, `legal-tech`-adjacent) often aren't canonical — prefer existing single-word or established tags.
+- **2026-07-29 (blog-wiki-ingest, cryptanalysisbench)**: Tags `ai-benchmarks`, `llm-security`, `model-evaluation`, `cryptography` used in new `concepts/ai-benchmarks/cryptanalysisbench.md` — none in SCHEMA.md taxonomy. Fixed by mapping `ai-benchmarks` → `benchmark`, `llm-security` → `security`, `model-evaluation` → `evaluation`, `cryptography` → `crypto`. Lesson: the `concepts/ai-benchmarks/` directory name is a strong attractor for the compound tag `ai-benchmarks`, but the canonical tag is just `benchmark` (Techniques section). Always destructure compound names into existing single-word tags.
+- **2026-08-02 (newsletter-wiki-ingest, kim-isenberg enrichment)**: Raw article `raw/articles/2026-08-01-the-duel-that-never-happened.md` carried frontmatter tags `[ai-benchmarks, ai-evaluation, ai-industry, paywalled]` — NONE canonical. Layer-1 raw files are NOT hook-validated, so they can carry non-canonical tags; do NOT copy raw frontmatter tags verbatim into Layer-2 entity/concept pages. Mapped to `benchmark`, `benchmark-framing` (+ existing `ai-governance`, `ai-adoption`) and the commit passed validation first try. Lesson: when enriching from a raw article, treat its frontmatter tags as a *suggestion*, always re-validate against SCHEMA.md (raw tags `ai-evaluation` → use `evaluation` or `benchmark-framing` contextually).
+- **2026-08-10 (manual article ingestion, Meta Muse Glimmer)**: Tag `agentic-model` used in `entities/muse-glimmer.md` frontmatter — not in SCHEMA.md taxonomy. Pre-commit hook blocked commit. Fixed by removing `agentic-model` and adding `ai-agents` (existing canonical tag for agent-related models). Lesson: compound descriptive tags like `agentic-model`, `coding-model`, `reasoning-model` are rarely canonical — prefer the existing `model` tag plus a domain tag (`ai-agents`, `code-model`, `reasoning`) from the taxonomy.
+- **2026-08-05 (manual article ingestion, Yegge "Shape of Things to Come")**: Tags `emacs` and `bespoke` used in `concepts/wheelhouse.md` frontmatter — neither in SCHEMA.md taxonomy. Pre-commit hook blocked commit. Fixed by replacing both with `customization` (existing canonical tag). Lesson: tool/IDE names (`emacs`, `vim`, `ghostty`) and descriptive adjectives (`bespoke`, `custom`, `tailored`) are almost never canonical tags — map to broader categories like `customization`, `ide`, or `terminal`.

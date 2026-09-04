@@ -40,6 +40,28 @@ Always include a pre-replacement assertion in your execute_code enrichment scrip
 assert old_string in content, f"Anchor not found! Verify with: sed -n 'LINEp' path"
 ```
 
+## new_string Contamination (June 2026)
+
+The same read_file display artifacts can contaminate **new_string** in patch operations — not just old_string matching failures.
+
+**What happens**: When you build `new_string` from read_file output (which shows `72|- Content`), the `|` from the line-number prefix can end up in `new_string`. The patch tool writes it into the file as `|- Content` instead of `- Content`.
+
+**Real-world case (June 24, 2026)**: `concepts/sakana-fugu.md` — patching the Benchmark Performance section:
+
+- read_file showed `72|- Shoulder-to-shoulder with...` (the `72|` is display-only)
+- new_string inadvertently used `|- Shoulder-to-shoulder...` instead of `- Shoulder-to-shoulder...`
+- Result: the file had `|- Shoulder-to-shoulder...` which is invalid markdown list syntax
+- Detected by re-reading the file; fixed with a second patch
+
+**Detection**: After every patch that targets content read via read_file, `read_file` the patched area and scan for lines starting with `|- ` instead of `- `. The pipe prefix is invalid markdown list syntax.
+
+**Fix**: A second patch replacing `|-` with `-` for the affected lines.
+
+**Prevention**:
+- **NEVER copy `new_string` directly from read_file output.** The line-number prefix (`N|`) is not part of the file content
+- Build `new_string` from scratch using your knowledge of the file content, or verify with `sed -n 'LINEp' FILE | cat -A` to see raw bytes
+- After any patch to markdown list content (bullet points, index entries), always verify the result
+
 ## Related Pitfalls
 
 - **`read_file` line-number corruption** (llm-wiki skill): When `read_file` output is pasted directly into wiki files, the `     1|...` prefixes corrupt the markdown.

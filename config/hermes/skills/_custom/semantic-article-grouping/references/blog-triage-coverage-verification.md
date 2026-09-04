@@ -104,6 +104,27 @@ The `concepts/managed-agents.md` page was about **Anthropic's specific managed a
 
 **Rule**: When a concept page is vendor-specific (check frontmatter `aliases` and `tags` for hints — e.g., `Managed Agents (Anthropic)`), a blog article about the broader category may still represent a wiki gap. If the article covers cross-provider analysis, vendor-independent strategy, or the general phenomenon, it needs its own section or a separate general page.
 
+### Consecutive Follow-Up Articles on Same Event — New Technical Depth (Jul 2026)
+
+When a prolific blogger publishes **multiple articles on the same ongoing incident** over several days, earlier articles may have been used to create an event/concept page, but **later articles can contain significant new technical details** that warrant enrichment rather than a skip.
+
+**Concrete case**: Simon Willison published three articles on the OpenAI/Hugging Face agent intrusion incident (July 2026):
+- Jul 22 — Initial analysis (→ used to create `events/openai-huggingface-incident-july-2026.md`)
+- Jul 23 — "First known runaway AI agent" (→ also incorporated into event page)
+- Jul 28 — "Technical Timeline" with NEW details not in earlier articles: JFrog Artifactory 7.161.15 with 8 CVEs credited to OpenAI, Jinja2 template injection payload (`cycler.__init__.__globals__`), Python socket monkey-patching (`socket.getaddrinfo = lambda...`), Tailscale exfiltration, Modal confirmation as third-party provider, Hugging Face "machine-speed offense" quote
+
+**Detection**: When you see an article referencing an incident already documented in an event page, check:
+1. Article publication date vs event page's `created` date
+2. Does the event page's `sources` list earlier articles by the same author on the same topic?
+3. If the article is **newer** than the event page, read it for new technical depth
+
+**Decision rule**:
+- Zero new facts beyond the event page → Skip
+- Modest new context/framing → Reference for `entities/{author}.md`
+- Concrete new technical details (CVE numbers, exploit payloads, provider confirmations) → Reference for BOTH `entities/{author}.md` AND the event page (update `updated` + `sources`)
+
+This pattern is about **temporal depth**: a follow-up that became available only because the story developed between the first and later articles. Distinct from "broader-section mention" or "mentioned ≠ covered."
+
 ### Same-Name, Different-Project (DS4 × 2 — May 2026)
 
 The existing `concepts/ds4-deepseek-flash-metal.md` described **Armin Ronacher's fork** (ds4.c — Apple Silicon Metal optimization). antirez's new article was about his own **DwarfStar 4** (the original project, not the fork). Both share the "DS4" shorthand but are separate projects.
@@ -118,6 +139,73 @@ In a May 2026 batch of 20 blog articles from 14 sources, realized yields were:
 - 11 Skips
 
 This is significantly more takes than the reference's "Mixed batch: 1 take, 8 refs, 10 skips" guideline. Reason: Wednesday May 14 was an unusually high-content day with major AI developments (DS4 launch, M5 exploit). **The yield guidance is a baseline — actual yield varies with news velocity.**
+
+## Page Depth Verification Technique (Dreaming-Group Validated)
+
+When checking whether an existing wiki page already covers a topic, use this 3-step technique to quickly classify pages as "substantively covered" vs "stub/needs enrichment":
+
+### Step 1: Line Count Check
+```bash
+wc -l ~/wiki/concepts/{page}.md ~/wiki/entities/{page}.md 2>/dev/null
+```
+- **<60 lines**: Effectively a stub — treat as "not covered" even if the page exists
+- **60-150 lines**: May have partial coverage — proceed to Step 2
+- **>150 lines**: Likely substantive — proceed to Step 2 to confirm
+
+### Step 2: Keyword Presence Check
+```bash
+grep -c "specific-term" ~/wiki/concepts/{page}.md 2>/dev/null
+```
+- **0 matches**: Topic keyword absent — genuine gap regardless of page size
+- **1-2 matches**: Likely just a mention in sources/References — read content to confirm
+- **3+ matches**: Probably covered — read content to confirm depth
+
+### Step 3: Frontmatter + Content Spot-Check
+```bash
+# Check status and sources
+head -20 ~/wiki/concepts/{page}.md | grep -A5 "sources:\|status:"
+# Check for content sections matching the article's topic
+grep -A2 "## .*keyword" ~/wiki/concepts/{page}.md
+```
+
+### Decision Matrix
+
+| Line Count | Keyword Count | Verdict |
+|-----------|---------------|---------|
+| <60 | any | ★★★★☆ — stub, needs enrichment |
+| 60-150 | 0 | ★★★★☆ — topic absent from substantial page |
+| 60-150 | 1-2 | ★★★☆☆ — read body to confirm depth |
+| 60-150 | 3+ | ★★☆☆☆ — likely covered, verify |
+| >150 | 0 | ★★★★☆ — genuine gap in comprehensive page |
+| >150 | 1-2 | ★★★☆☆ — mention only, check if substantive |
+| >150 | 3+ | ★★☆☆☆ — skip unless article adds new data |
+
+**Concrete validation (June 2026 dreaming-group)**: This technique classified 281 articles in ~10 minutes:
+- `search-as-code.md` (204 lines, 0 missing keywords) → skip (fully covered)
+- `cursor-composer-2-5.md` (53 lines) → take (stub, needs enrichment)
+- `microsoft-mai-models.md` (70 lines, MAI-Thinking-1 keywords present) → skip (covered by mai-thinking-1-tech-report.md 220 lines)
+- `agentic-engineering.md` (219 lines, Van Horn hacks all present) → skip (fully covered)
+
+### Simon Willison Model-Release Coverage Pattern (validated July 2026)
+
+When a major model release (Claude Sonnet 5, Fable 5, GPT-5.x) lands on the same day, **both the blog pipeline (Simon Willison) and newsletter pipeline (AINews, Ben's Bites) cover it independently**. The typical blog triage question is: is Simon's article a take (new concept), a reference (entity enrichment), or already captured?
+
+**Decision rule**: Simon's technical analysis of new models — tokenizer benchmarks, pricing analysis, API change observations, government/regulatory context — is best treated as **entity-page enrichment** (★★★☆☆ reference for `entities/simon-willison.md`), not concept creation. Reasons:
+- The newsletter pipeline (AINews daily bulletins) reliably creates concept pages for major model releases (e.g., `concepts/claude/sonnet-5.md`)
+- Simon's value add is his **hands-on testing data** (token counts per language, pricing sensitivity analysis) — material the AINews curator doesn't produce
+- The entity page's "June 2026 Updates" section is the natural home for this granular, measurement-first reporting
+
+**When to upgrade to take (★★★★☆)**: If Simon's article contains the ONLY hands-on measurements available — e.g., Sonnet 5 tokenizer benchmarks showing English 1.42x, Chinese 1.01x, Python 1.28x token growth. These are wiki-primary-source data points that only exist because he ran his Claude Token Counter tool. They belong in both the entity page (as Simon's finding) AND as a `body_sources` reference in the concept page.
+
+### Educational Series Author as Take Signal (validated July 2026)
+
+A technical/educational series author publishing regularly on LLM training, inference, or agent infrastructure may have **no existing entity page** despite producing substantive content. Signal indicators:
+- 2000+ lines per article (e.g., Giles Thomas's LLM-from-scratch series: 2808 lines in part 34a)
+- 30+ parts in an ongoing series
+- Cross-framework educational value (e.g., JAX/NNX/Optax version of a PyTorch-based curriculum)
+- No existing wiki entity for the author
+
+**Decision rule**: Rate as ★★★★★ take (new entity creation). The entity page documents the series as a whole (methodology, framework choices, unique insights) rather than each individual part. This is distinct from high-frequency bloggers (Simon Willison, Ed Zitron) whose entity pages already exist — educational series authors represent a **entity gap that blog triage is uniquely positioned to find** because the newsletter pipeline rarely covers them.
 
 ## Yield Expectations
 

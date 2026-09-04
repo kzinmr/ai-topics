@@ -1,0 +1,141 @@
+{
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "fetched_at": "2026-06-29",
+  "pricing_unit": "per 1M tokens unless noted",
+  "currency": "USD",
+  "tiers": ["Standard", "Batch", "Flex", "Priority"],
+  "models": {
+    "gpt-5.5": {
+      "standard": {"input": 5.00, "cached_input": 0.50, "output": 30.00},
+      "long_context_standard": {"input": 2.50, "cached_input": 0.25, "output": 15.00},
+      "flex": {"input": 12.50, "cached_input": 1.25, "output": 75.00}
+    },
+    "gpt-5.5-pro": {
+      "standard": {"input": 30.00, "cached_input": null, "output": 180.00},
+      "long_context_standard": {"input": 15.00, "cached_input": null, "output": 90.00}
+    },
+    "gpt-5.4": {
+      "standard": {"input": 2.50, "cached_input": 0.25, "output": 15.00},
+      "long_context_standard": {"input": 1.25, "cached_input": 0.13, "output": 7.50},
+      "flex": {"input": 5.00, "cached_input": 0.50, "output": 30.00}
+    },
+    "gpt-5.4-mini": {
+      "standard": {"input": 0.75, "cached_input": 0.075, "output": 4.50},
+      "long_context_standard": {"input": 0.375, "cached_input": 0.0375, "output": 2.25},
+      "batch": {"input": 0.375, "cached_input": 0.0375, "output": 2.25},
+      "flex": {"input": 0.375, "cached_input": 0.0375, "output": 2.25},
+      "priority": {"input": 1.50, "cached_input": 0.15, "output": 9.00}
+    },
+    "gpt-5.4-nano": {
+      "standard": {"input": 0.20, "cached_input": 0.02, "output": 1.25},
+      "long_context_standard": {"input": 0.10, "cached_input": 0.01, "output": 0.625},
+      "batch": {"input": 0.10, "cached_input": 0.01, "output": 0.625},
+      "flex": {"input": 0.10, "cached_input": 0.01, "output": 0.625}
+    },
+    "gpt-5.4-pro": {
+      "standard": {"input": 30.00, "cached_input": null, "output": 180.00},
+      "long_context_standard": {"input": 15.00, "cached_input": null, "output": 90.00}
+    },
+    "gpt-5.2": {
+      "standard": {"input": 1.75, "cached_input": 0.175, "output": 14.00},
+      "batch": {"input": 0.875, "cached_input": 0.0875, "output": 7.00},
+      "flex": {"input": 0.875, "cached_input": 0.0875, "output": 7.00},
+      "priority": {"input": 3.50, "cached_input": 0.35, "output": 28.00}
+    },
+    "gpt-5.2-pro": {
+      "standard": {"input": 21.00, "cached_input": null, "output": 168.00}
+    },
+    "gpt-5.1": {
+      "standard": {"input": 1.25, "cached_input": 0.125, "output": 10.00},
+      "batch": {"input": 0.625, "cached_input": 0.0625, "output": 5.00},
+      "flex": {"input": 0.625, "cached_input": 0.0625, "output": 5.00},
+      "priority": {"input": 2.50, "cached_input": 0.25, "output": 20.00}
+    },
+    "gpt-5": {
+      "standard": {"input": 1.25, "cached_input": 0.125, "output": 10.00},
+      "batch": {"input": 0.625, "cached_input": 0.0625, "output": 5.00},
+      "flex": {"input": 0.625, "cached_input": 0.0625, "output": 5.00},
+      "priority": {"input": 2.50, "cached_input": 0.25, "output": 20.00}
+    },
+    "gpt-5-mini": {
+      "standard": {"input": 0.25, "cached_input": 0.025, "output": 2.00},
+      "batch": {"input": 0.125, "cached_input": 0.0125, "output": 1.00},
+      "flex": {"input": 0.125, "cached_input": 0.0125, "output": 1.00},
+      "priority": {"input": 0.45, "cached_input": 0.045, "output": 3.60}
+    },
+    "gpt-5-nano": {
+      "standard": {"input": 0.05, "cached_input": 0.005, "output": 0.40},
+      "batch": {"input": 0.025, "cached_input": 0.0025, "output": 0.20},
+      "flex": {"input": 0.025, "cached_input": 0.0025, "output": 0.20}
+    },
+    "gpt-5-pro": {
+      "standard": {"input": 15.00, "cached_input": null, "output": 120.00},
+      "batch": {"input": 7.50, "cached_input": null, "output": 60.00}
+    },
+    "gpt-4.1": {
+      "standard": {"input": 2.00, "cached_input": 0.50, "output": 8.00}
+    },
+    "gpt-4.1-mini": {
+      "standard": {"input": 0.40, "cached_input": 0.10, "output": 1.60}
+    },
+    "gpt-4.1-nano": {
+      "standard": {"input": 0.10, "cached_input": 0.025, "output": 0.40}
+    },
+    "gpt-4o": {
+      "standard": {"input": 2.50, "cached_input": 1.25, "output": 10.00}
+    },
+    "gpt-4o-mini": {
+      "standard": {"input": 0.15, "cached_input": 0.075, "output": 0.60}
+    },
+    "o3": {
+      "standard": {"input": 2.00, "cached_input": 0.50, "output": 8.00},
+      "batch": {"input": 1.00, "cached_input": 0.25, "output": 4.00}
+    },
+    "o3-mini": {
+      "standard": {"input": 1.10, "cached_input": 0.55, "output": 4.40}
+    },
+    "o3-pro": {
+      "standard": {"input": 20.00, "cached_input": null, "output": 80.00}
+    },
+    "o4-mini": {
+      "standard": {"input": 1.10, "cached_input": 0.275, "output": 4.40},
+      "batch": {"input": 0.55, "cached_input": 0.138, "output": 2.20}
+    },
+    "o1": {
+      "standard": {"input": 15.00, "cached_input": 7.50, "output": 60.00}
+    },
+    "o1-mini": {
+      "standard": {"input": 1.10, "cached_input": 0.55, "output": 4.40}
+    },
+    "o1-pro": {
+      "standard": {"input": 150.00, "cached_input": null, "output": 600.00}
+    },
+    "text-embedding-3-small": {"standard": {"input": 0.02}},
+    "text-embedding-3-large": {"standard": {"input": 0.13}},
+    "text-embedding-ada-002": {"standard": {"input": 0.10}},
+    "omni-moderation-latest": {"standard": {"input": "Free"}},
+    "gpt-4o-transcribe": {"standard": {"input": 2.50, "output": 10.00, "estimated_per_minute": 0.006}},
+    "gpt-4o-mini-transcribe": {"standard": {"input": 1.25, "output": 5.00, "estimated_per_minute": 0.003}},
+    "gpt-realtime-2": {
+      "audio": {"input": 32.00, "cached_input": 0.40, "output": 64.00},
+      "text": {"input": 4.00, "cached_input": 0.40, "output": 24.00},
+      "image": {"input": 5.00, "cached_input": 0.50, "output": null}
+    },
+    "computer-use-preview": {"standard": {"input": 1.50, "output": 6.00}},
+    "o3-deep-research": {"standard": {"input": 5.00, "output": 20.00}, "batch": {"input": 10.00, "cached_input": 2.50, "output": 40.00}},
+    "o4-mini-deep-research": {"standard": {"input": 1.00, "output": 4.00}, "batch": {"input": 2.00, "cached_input": 0.50, "output": 8.00}},
+    "sora-2": {"standard_per_second": 0.10, "batch_per_second": 0.05},
+    "sora-2-pro": {"standard_per_second_720p": 0.30, "standard_per_second_1024p": 0.50, "standard_per_second_1080p": 0.70},
+    "gpt-image-2": {"standard": {"image_input": 8.00, "image_cached": 2.00, "image_output": 30.00, "text_input": 5.00, "text_cached": 1.25}},
+    "gpt-image-1.5": {"standard": {"image_input": 8.00, "image_cached": 2.00, "image_output": 32.00, "text_input": 5.00, "text_cached": 1.25, "text_output": 10.00}},
+    "gpt-image-1-mini": {"standard": {"image_input": 2.50, "image_cached": 0.25, "image_output": 8.00, "text_input": 2.00, "text_cached": 0.20}}
+  },
+  "tools": {
+    "web_search": "$10.00 / 1k calls",
+    "web_search_preview_reasoning": "$10.00 / 1k calls",
+    "web_search_preview_non_reasoning": "$25.00 / 1k calls",
+    "file_search_storage": "$0.10 / GB per day (1 GB free)",
+    "file_search_tool_call": "$2.50 / 1k calls",
+    "containers": "1GB $0.03, 4GB $0.12, 16GB $0.48, 64GB $1.92 per 20-min session"
+  }
+}

@@ -67,11 +67,15 @@ When the new information adds a system to an existing comparison:
 
 Update all index entries for modified pages, prepend log entry, commit and push.
 
+## Historical Evolution Pattern
+
+When sources span a project's history (precursor → current release), add an evolution table showing the timeline of name changes, architectural pivots, and scope shifts. See `references/project-evolution-timeline-enrichment.md` for the full pattern.
+
 ## Pitfalls
 
 - **Subagent fetch failures**: Browser-based subagents often time out on JS-heavy sites. If a subagent returns sparse results, retry with direct `curl` or `terminal` commands with a browser User-Agent header.
 - **Multiple ACPs**: The same acronym can mean different things in different contexts (e.g., ACP = Agent Client Protocol vs Agent Control Plane vs Agent Context Protocol). Always verify which meaning applies.
-- **Comparison page expansion**: When adding a 4th system to a 3-way comparison, update the title, verdict, all matrix rows, strengths section, architecture diagram, and decision guide — not just the matrix.
+- **Comparison page expansion — multi-row patching**: When adding an Nth system to a comparison with tables spanning 4+ rows (e.g., Memory Hierarchy, Retrieval Methods, Embedding Strategy), use a **single `mode: patch` with `*** Begin Patch` / `*** End Patch`** to update all table rows, title, sources, selection guide, philosophy table, architecture classification, and limitations in one atomic operation. Individual `mode: replace` patches per table section are fragile — they can mismatch context or miss a table. See the 2026-06-04 Dreaming ingestion session for a working example of a 10-section multi-table patch.
 - **Analytical framing**: When the user provides analytical context (e.g., "this relates to our OpenClaw discussion"), capture it as a "Strategic Significance" section, not just factual content.
 
 ## Example Session

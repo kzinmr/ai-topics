@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-08-29
+updated: 2026-09-04
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -91,7 +91,7 @@ See [[concepts/anthropic/managed-agents]] for full details.
 - **Revenue inconsistencies**: Anthropic's ARR claims ($14B Feb → $19B Mar → $30B Apr) are difficult to reconcile with CFO Krishna Rao's sworn testimony (Mar 9) stating revenues "exceeding $5 billion to date."
 - **Prepayment booking**: Zitron argues Anthropic likely books enterprise token prepayments ($50M+ for 12-month deals) as immediate revenue before compute delivery, inflating numbers.
 - **Total compute cost estimate**: With SpaceX ($1.25B/mo) + Google/Amazon/Microsoft deals, estimated compute spend is ~$3.75B/month ($45B/year) — wiping out any real profitability.
-- **Context**: This is consistent with Zitron's broader [[concepts/ai-bubble-thesis]], arguing Anthropic's economics depend on circular capital flows from hyperscaler investors who also bill them for compute.
+- **Context**: This is consistent with Zitron's broader [[concepts/ai-bubble-economics]], arguing Anthropic's economics depend on circular capital flows from hyperscaler investors who also bill them for compute.
 
 ### Live Artifacts in Cowork
 
@@ -387,7 +387,7 @@ Felix Rieseberg, Engineering Lead for Claude Cowork and Claude Code Desktop at A
 
 Rieseberg hacked a $20 hardware "Claude buddy" device as a proof-of-concept — demonstrating Anthropic's internal culture of rapid, playful experimentation with AI integration.
 
-See also: [[concepts/agentic-engineering]] section on [[concepts/agentic-engineering/context-window-management|context window management]] and [[concepts/agentic-engineering/red-green-tdd|Red/Green TDD pattern]].
+See also: [[concepts/context-engineering/context-window-management|context window management]] and [[concepts/harness-engineering/agentic-workflows/red-green-tdd|Red/Green TDD pattern]].
 
 
 ### Jack Clark's Predictions (May 2026)
@@ -741,6 +741,17 @@ Anthropic launched **Claude Opus 5** in July 2026 — a major model release deli
 
 Sources: AINews (2026-07-25), Simon Willison blog-triage entry.
 
+### GPT-6 Astra Competitive Pressure (September 3, 2026)
+
+OpenAI's soft release of [[entities/openai-astra|GPT-6 Astra]] ($10/M input, $50/M output, 1M context) reset the frontier race one day before Google's Gemini 3.5 was reportedly scheduled to ship (per Marcus). Anthropic's positions under pressure:
+
+- **Artificial Analysis Intelligence Index**: Claude Fable 5.1 (max with fallback) leads at **66**, 5 points above Astra (61, tied with GPT-5.6 Sol) — but Astra trails Meta's Muse Spark 1.3 too, so Anthropic's lead is over one competitor while a second trails Astra.
+- **ARC-AGI-3**: Astra claims 99.9% (OpenAI custom harness) vs 62.7% (default ARC harness); **Fable 5 has no published ARC-AGI-3 result**, leaving the claim uncontested publicly.
+- **Coding Agent Index**: Astra undercuts Anthropic on economics — **less than half the per-task cost of Claude Fable 5 for the same score**.
+- **Gary Marcus's caution**: Astra's math claims are "promising but unverified" until independent third-party evals land — a standard he notes also protects Anthropic's own claims.
+
+Sources: [[raw/articles/simonwillison.net--2026-sep-3-gpt6-astra--74293eba.md]], [[raw/articles/garymarcus.substack.com--p-hot-take-on-gpt-6-astra--fbf12bd8.md]].
+
 
 ## Safety & Honesty
 
@@ -815,6 +826,8 @@ On Aug 28, 2026 Anthropic opened a research preview of the **Model Hardware Stan
 - [[entities/fable]] — Fable coding harness (links to harness engineering + cognitive UX design patterns)
 - [[entities/sap-business-ai-platform]] — SAP partnership (May 2026)
 - [[concepts/anthropic/managed-agents]] — Managed Agents platform details
+- [[entities/openai-astra]] — GPT-6 Astra (Sep 2026, primary competitor model)
+- [[concepts/ai-benchmarks/deepresearch-bench]] — DeepResearch Bench II (Anthropic research agent: best Information Gathering, mid-table Analysis)
 - [[entities/project-glasswing]] — Defensive security initiative
 
 ## References
@@ -827,6 +840,7 @@ On Aug 28, 2026 Anthropic opened a research preview of the **Model Hardware Stan
 
 ## Log
 
+- 2026-09-04: Added "GPT-6 Astra Competitive Pressure (September 3, 2026)" section — Fable 5.1 leads Artificial Analysis Intelligence Index (66 vs Astra 61), no published Fable ARC-AGI-3 result vs Astra's 99.9%/62.7% harness split, Astra at <half Fable 5 per-task cost on Coding Agent Index. Sources: Simon Willison, Gary Marcus (Sep 3-4).
 - 2026-08-12: Enriched "Riemann Hypothesis Bound Improvement (Aug 2026)" with specific numbers — research Claude raised the lower bound on the fraction of zeta zeros on the critical line from 41.6% to 67.2%, combining recent work by Baluyot, Goldston, Suriajaya and Turnage-Butterbaugh; Anthropic explicitly does not expect these techniques to prove the hypothesis ("The best known bound still moved"). Sources: Superintel+ 2026-08-11, AINews 2026-08-11.
 - 2026-08-11: Added "Riemann Hypothesis Bound Improvement (Aug 2026)" subsection under Research Focus — unreleased research Claude variant tasked with the Riemann Hypothesis did not solve the conjecture but improved a longstanding lower bound on the fractional part of the zeta function (mathematical research result). Source: AINews 2026-08-11.
 - 2026-08-04: Added "Naming Criticism: Mythos vs Logos (Om Malik, Jun 2026)" subsection — media criticism of the Mythos model name (mythos vs logos epistemology, manufactured-credibility reading of the White House/Pope visits, Augustus/Aeneid and Silicon Valley myth-structure parallels). Source: om.co 2026-06-07 essay.

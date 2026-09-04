@@ -2,7 +2,7 @@
 title: "OpenAI Astra"
 type: entity
 created: 2026-08-03
-updated: 2026-08-29
+updated: 2026-09-04
 tags:
   - model
   - openai
@@ -18,6 +18,8 @@ sources:
   - raw/newsletters/2026-08-10-the-model-openai-won-t-release.md
   - raw/newsletters/2026-08-23-openai-slows-for-show-anthropic-s-strong-bonds-and-china-s-open-offensive.md
   - raw/articles/2026-08-28_openai_cursor-contract-wind-down.md
+  - raw/articles/simonwillison.net--2026-sep-3-gpt6-astra--74293eba.md
+  - raw/articles/garymarcus.substack.com--p-hot-take-on-gpt-6-astra--fbf12bd8.md
 related:
   - entities/openai
   - concepts/gpt/gpt-5-6
@@ -92,6 +94,32 @@ A postscript illustrates Brandolini's law, with engineer Wouter Vreugdenhil's ob
 - Military strategy or open-ended world reasoning
 - Autoformalization (turning human math into Lean/Coq formal proofs)
 - General AGI/ASI
+
+## Soft Release as GPT-6 Astra (September 3, 2026)
+
+On September 3, 2026, OpenAI **soft-released Astra as "GPT-6 Astra"** — resolving the naming indecision Marcus had flagged in August ([[#Reproducibility & Follow-up (Aug 2026)]]). Rollout: a limited set of organizations first, then all ChatGPT Plus/Pro/Business/Enterprise users plus the OpenAI API and AWS. API model label: `gpt-6-astra`.
+
+**Pricing**: $10/M input, $50/M output — priced identically to [[events/claude-fable-5-1-release-sep-2026|Claude Fable 5/5.1]], making it explicitly OpenAI's Fable competitor (see [[comparisons/llm-api-pricing]]).
+
+### Benchmark results (OpenAI self-reported + Artificial Analysis)
+
+- **ARC-AGI-3: 99.9%** — but with a critical harness caveat: the score was achieved for **$19K using OpenAI's custom "Provider Adapter harness"**, which preserves opaque reasoning state between requests and compacts long conversations so the model reuses prior work. Under the **default ARC-AGI harness the model scored 62.7%** (for $26K). Fable 5 has no published ARC-AGI-3 result (see [[concepts/ai-benchmarks/arc-agi-3]]). This is a textbook benchmark-framing case (cf. [[concepts/ai-benchmarks/benchmaxxing]]): a 37-point spread between harnesses on the same model.
+- **Security (post-Hugging-Face-incident posture)**: 100% on ExploitBench (GPT-5.6 Sol: 78.5%), 42.4% on ExploitGym (Sol: 30.3%), 99.2% within four attempts on SRE-Bench binary reverse engineering (Sol: 68.7%). Consistent with the first-ever Critical cybersecurity rating in August ([[#Preparedness Framework: Critical Cybersecurity Rating (August 2026)]]).
+- **Long context**: 100% at 256K–512K and 96.3% at 512K–1M on OpenAI's eight-needle benchmark — potentially "vanquishing" one of long-context's ongoing challenges (cf. [[concepts/context-engineering/context-rot]], [[concepts/embedding-long-context-degradation]]).
+- **Artificial Analysis Intelligence Index**: 61 — equal to GPT-5.6 Sol, **5 points below Claude Fable 5.1** (max with fallback), and trailing Meta's Muse Spark 1.3 (max). Astra does **not** top the leaderboard.
+- **Coding Agent Index**: leads the cost-efficiency frontier — at max effort, same cost as Sol (max) with 2 points higher score, and **less than half the per-task cost of Claude Fable 5 for the same score**.
+
+### Gary Marcus's "hot take" (Sep 3, 2026)
+
+Gary Marcus's immediate reaction zeroed in on the same mechanism as the ARC harness caveat: Astra "creates a dense compact symbolic world model to complete ARC-AGI-3 environments" — e.g., in environment s5i5, recording level/hub-orientation/mechanism lengths as structured text state ("L8: hub q2 (8↓). Lengths: 14=1…") and mapping operations to exact controls. This fits Marcus's standing theses: the [[#Critical Analysis: The Fallacy of Composition|fallacy of composition]] (narrow-suite dominance ≠ generality) and the world-models-over-autoregression argument ([[concepts/world-models-for-agents]]) — the "world model" here being an in-context scaffold the harness preserves, not evidence the base model has world modeling.
+
+**Contested (2026-09-03):** OpenAI frames Astra as the leading frontier model; Artificial Analysis places it below Fable 5.1 on general intelligence, above it on coding-agent cost-efficiency. Both readings are current record until independent third-party evals land.
+
+Source: [[raw/articles/simonwillison.net--2026-sep-3-gpt6-astra--74293eba.md]] (Simon Willison), [[raw/articles/garymarcus.substack.com--p-hot-take-on-gpt-6-astra--fbf12bd8.md]] (Gary Marcus).
+
+### Same-Day Context: Daybreak for Frontline Defenders
+
+The Astra release was announced alongside **Daybreak for Frontline Defenders** — a $1B initiative subsidizing defender access to OpenAI's cyber capabilities for critical-infrastructure teams — published one day earlier as the policy answer to Astra's Critical rating. The pairing is strategic: the Critical rating creates urgency, the subsidy channels it into defender-oriented deployment. See [[concepts/daybreak-for-frontline-defenders]].
 
 ## Broader Context
 

@@ -61,6 +61,17 @@ python3 scripts/validate_index.py
 grep -n '[[entities/<slug>]]' wiki/index.md  # count == 1 for primary, >1 is inline cross-refs
 ```
 
+## Post-Dedup Header Count Verification
+
+After removing duplicate entries, **always re-verify the section header count** matches the actual `- [[...]]` entry lines:
+
+```bash
+# Count actual entries in the section
+grep -c '^- \[\[concepts/' wiki/index.md   # should match ## Concepts header
+```
+
+**2026-08-24 worked example**: Dedup removed 1 ghost entry + added 1 orphan (net −1 from 2008 → 2007), but the true entry count was 2006 (the prior day's watchdog had set the header to the recursive file count of 2008, not the entry count). After the dedup edit, the header was 2007 but actual entries were 2006 — a 1-entry gap that required a second patch to correct. Rule: after any index edit that changes entry counts, run `grep -c` and patch the header to match exactly.
+
 ## Automated Script
 
 For bulk dedup:

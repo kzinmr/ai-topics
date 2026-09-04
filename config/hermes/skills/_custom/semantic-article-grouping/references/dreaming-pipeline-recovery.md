@@ -45,7 +45,7 @@ The downstream `dreaming-wiki-ingest` reads this checkpoint file directly. The f
 ```python
 import json, os
 
-hermes_home = os.environ.get('HERMES_HOME', os.path.expanduser('~/.hermes'))
+hermes_home = os.environ.get('HERMES_HOME', '/opt/data/.hermes')
 triage_path = os.path.join(hermes_home, 'cron/data/dreaming/triage_latest.json')
 
 if os.path.exists(triage_path):

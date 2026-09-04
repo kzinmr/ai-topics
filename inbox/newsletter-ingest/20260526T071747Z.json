@@ -1,0 +1,101 @@
+{
+  "run_id": "20260526T071406Z",
+  "triaged_at": "2026-05-26T07:30:00Z",
+  "total_newsletters": 3,
+  "relevant_count": 2,
+  "classifications": [
+    {
+      "message_id": "<20260525150259.3.b9b99a9ff9ae7bb6@mg-d0.substack.com>",
+      "subject": "\ud83c\udf99\ufe0f How I AI: How the engineer behind Claude Cowork actually uses Claude Cowork & What launched at Google I/O 2026",
+      "source": "Lenny's Newsletter (uid=136)",
+      "date": "2026-05-25",
+      "importance": "critical",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-25-how-i-ai-how-the-engineer-behind-claude-cowork-actually-uses-claude-cowork-what-.md",
+      "reason": "Core AI agent topic: Claude Cowork usage patterns by Anthropic engineering lead Felix Rieseberg. Covers AI coding agent workflows, model selection heuristics (Opus vs Sonnet), Live Artifacts/Connectors, and Google I/O 2026 AI launches. Directly relevant to LLM/AI Agent wiki \u2014 multiple entity enrichment opportunities (Felix Rieseberg, Claude Cowork, Claude Code, Google I/O 2026).",
+      "suggested_actions": [
+        "Enrich or create entity page for Felix Rieseberg (Anthropic engineering lead)",
+        "Create/update concept page for Claude Cowork / Claude Code Desktop",
+        "Create event page for Google I/O 2026 AI launches",
+        "Save linked blog posts as raw articles for deeper wiki enrichment",
+        "Extract model selection heuristic as concept note"
+      ],
+      "key_entities": [
+        "Felix Rieseberg",
+        "Claude Cowork",
+        "Claude Code",
+        "Anthropic",
+        "Google I/O 2026",
+        "Gemini",
+        "Google"
+      ],
+      "key_concepts": [
+        "AI coding agents",
+        "AI agent workflows",
+        "model selection",
+        "live artifacts",
+        "AI personal automation",
+        "Google AI strategy"
+      ],
+      "linked_articles_of_interest": [
+        "https://www.chatprd.ai/how-i-ai/felix-rieseberg-claude-code-cowork-workflows-for-3d-house-design-and-hardware-buddy",
+        "https://www.chatprd.ai/how-i-ai/workflows/how-to-build-a-20-physical-ai-buddy-with-claude-code",
+        "https://www.chatprd.ai/how-i-ai/workflows/how-to-create-an-interactive-3d-house-model-from-a-floor-plan-using-ai",
+        "https://www.chatprd.ai/how-i-ai/workflows/how-to-build-a-live-auto-updating-personal-dashboard-with-claude"
+      ]
+    },
+    {
+      "message_id": "<20260525.155142.5f2ebc43@mta16>",
+      "subject": "AlphaProof Nexus Takes AI Math Beyond Olympiads",
+      "source": "Beehiiv newsletter (uid=137)",
+      "date": "2026-05-25",
+      "importance": "high",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-25-alphaproof-nexus-takes-ai-math-beyond-olympiads.md",
+      "reason": "AlphaProof Nexus is a multi-agent LLM-based formal proof system using Gemini 3.1 Pro + Lean compiler. Demonstrates AI agent architecture (4 agent tiers A/B/C/D with evolutionary search). Directly relevant to AI agents, LLM applications, formal verification, and AI reasoning. Paper on arXiv (2605.22763v1).",
+      "suggested_actions": [
+        "Create entity page for AlphaProof Nexus",
+        "Create concept page for LLM-based formal proof search",
+        "Link to existing AlphaProof / DeepMind entity pages",
+        "Save arXiv paper 2605.22763 as raw article",
+        "Extract multi-agent architecture pattern (Agent A/B/C/D) as concept"
+      ],
+      "key_entities": [
+        "AlphaProof Nexus",
+        "DeepMind",
+        "Gemini 3.1 Pro",
+        "Lean (proof assistant)",
+        "AlphaProof"
+      ],
+      "key_concepts": [
+        "formal verification",
+        "AI math reasoning",
+        "multi-agent architecture",
+        "evolutionary proof search",
+        "LLM + symbolic feedback"
+      ],
+      "linked_articles_of_interest": [
+        "https://arxiv.org/abs/2605.22763",
+        "https://github.com/google-deepmind/alphaproof-nexus-results",
+        "https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/"
+      ]
+    },
+    {
+      "message_id": "<20260526053701.3.7e9623dae2b852d1@mg-d0.substack.com>",
+      "subject": "Inside the 800VDC Revolution \u2013 Part 1",
+      "source": "SemiAnalysis (uid=138)",
+      "date": "2026-05-26",
+      "importance": "skip",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-26-inside-the-800vdc-revolution-part-1.md",
+      "reason": "Datacenter power infrastructure (800VDC power distribution for GPU racks). While tangentially related to AI training infrastructure, this is electrical engineering / power systems content, not about LLM/AI Agent technologies, models, tools, or frameworks. Out of wiki scope.",
+      "suggested_actions": [],
+      "key_entities": [],
+      "key_concepts": [],
+      "linked_articles_of_interest": []
+    }
+  ],
+  "stats": {
+    "critical": 1,
+    "high": 1,
+    "low": 0,
+    "skip": 1
+  }
+}

@@ -16,13 +16,28 @@ This umbrella skill covers all wiki health, maintenance, and remediation operati
 
 ## Core: Graph Health Detection Patterns
 
-Uses `scripts/wiki_graph.py` output to detect wiki data quality issues.
+Uses `scripts/wiki_graph.py` output to detect wiki data quality issues. **Weekly cron: see `references/weekly-graph-analysis.md`.** However, `--format json` only outputs **person similarity scores** (`person_similarity` array) — it does NOT include orphan pages, broken links, or duplicate groups. Those data points come from the **stdout human-readable report** or `--html` output. For a full quality scan, use `--html` or capture stdout; use `--format json` only for dedup/disambiguation analysis of person pairs.
+
+### Related References
+- [`references/full-graph-remediation-workflow.md`](references/full-graph-remediation-workflow.md) — **START HERE**: complete fix sequence (wikilinks → ghost pages → duplicates → stale → oversized → tag → index)
+- [`references/weekly-graph-analysis-pitfalls.md`](references/weekly-graph-analysis-pitfalls.md) — Known bugs & workarounds for the weekly analysis: hardcoded filename + template expansion bugs (both FIXED), report run-order & auto-clean behavior, report tag-taxonomy pre-commit failures, `deep_link_audit.py` location, duplicate-triage ground truth, and JSON export workaround for security scan blocks
+- [`references/duplicate-page-merge.md`](references/duplicate-page-merge.md) — entity-concept duplicate detection & merge workflow (with content preservation)
+- [`references/bulk-wikilink-auto-fix.md`](references/bulk-wikilink-auto-fix.md) — bare wikilink and cross-namespace bulk fix procedure
+- [`references/sources-field-bulk-population.md`](references/sources-field-bulk-population.md) — bulk-add `sources: []` to pages missing the field
 
 ### CRITICAL: Index.md Pipe Corruption Pattern (Discovered 2026-05-10)
 
 **Symptom**: Lines like `|- [[entities/foo]]` instead of `- [[entities/foo]]` in `index.md`
 **Root cause**: `read_file` output with `N|` line numbers accidentally pasted into files via `patch` operations
-**Detection**: `grep -c '^\s*\d+\|' wiki/index.md` — returns count of corrupted lines
+**Detection**: Use Python for accurate detection — `grep` BRE mode parses `\|` as the alternation operator (OR), not a literal pipe, returning the total line count as a false positive:
+
+```python
+import re
+with open("wiki/index.md") as f: content = f.read()
+print(len(re.findall(r'^\s*\d+\|', content, re.MULTILINE)))
+```
+
+Alternatively, use `grep -Pc '^\s*\d+\|'` (Perl regex where `\|` IS a literal pipe) or `grep -E -c '^\s*[0-9]+\|'` (ERE where `\|` = literal pipe).
 **Fix**:
 ```python
 import re
@@ -39,18 +54,12 @@ fixed = re.sub(r'^\|-\s+\[\[(?:entities|concepts|comparisons|queries)/',
 ### Index Header Count Decay
 
 **WARNING**: The "Total pages: N" and section counts in `index.md` header become stale quickly at scale (1000+ pages). Discrepancies of 600+ observed.
-**Always verify with filesystem**: `ls ~/wiki/concepts/*.md | wc -l` — do NOT trust header numbers.
+**Always verify with filesystem**: use recursive `find` — flat `ls` misses subdirectory files (see `references/watchdog-stale-entries-false-positive.md`). Do NOT trust header numbers.
 **Auto-correct during lint**: Re-compute counts from actual directory listing and update header.
 
 ### Broken Wikilink Subdirectory vs Flat Path Issue
 
-**Pattern**: Links like `[[concepts/harness-engineering/agentic-engineering]]` vs actual file `concepts/agentic-engineering.md`
-**Root cause**: Subdirectory organization (`concepts/harness-engineering/page.md`) vs flat organization (`concepts/page.md`) confusion
-**Detection**: For each broken link, check:
-  1. Does file exist at exact path?
-  2. Does file exist at flat path `concepts/<last-part>.md`?
-  3. Does file exist at subdirectory path `concepts/<first-part>/<last-part>.md`?
-**Fix**: Update link to point to actual file path, or create redirect stub if file exists elsewhere
+**Pattern**: Links like `[[concepts/harness-engineering/agentic-engineering]]` vs actual file `concepts/agentic-engineering.md`. Root cause: subdirectory vs flat org confusion. Detection: for each broken link check exact path, flat `concepts/<last-part>.md`, and subdir `concepts/<first-part>/<last-part>.md`. Fix: point to actual file, or create redirect stub. Full 3-sub-pattern breakdown (namespace errors / slug mismatches / missing stubs): Section 4.
 
 ### 1. Duplicate Entities (High Priority)
 - **Pattern**: Two person/concept slugs with high similarity score (≥9.0) sharing multiple concepts/tags
@@ -96,47 +105,33 @@ Two distinct sub-patterns:
 - **Fix**: Use slug lookup table to find correct paths, apply `patch` per file
 
 **Pattern B: Empty/zero-length wikilinks (`- — description` without `[[slug]]`)**
-- **Pattern**: Lines in `## Related` like `- — Previous employer, Zephyr and TRL work` where the `[[slug]]` anchor was lost
-- **Detection**: `grep -rn '^-  — ' entities/ concepts/ | wc -l`
-- **Auto-fix**: `scripts/fix_broken_wikilinks.py` uses fuzzy word-overlap matching against all existing wiki pages
-  - `python3 scripts/fix_broken_wikilinks.py --apply --threshold 0.4` (recommended)
-  - See `references/broken-wikilink-repair.md` for detailed instructions and threshold guide
-- **Manual fix**: Descriptions below threshold need human recognition of the intended slug
+- **Pattern**: `## Related` lines with the `[[slug]]` anchor lost. Two byte formats: single-space `- — ` (~9) and DOUBLE-space `-  — ` (~352, dominant).
+- **Detection**: `grep -rn '^-  — \|^- — ' entities/ concepts/ | wc -l` (exclude `_archive/`)
+- **Auto-fix**: `scripts/fix_broken_wikilinks.py` — NOT fuzzy matching (hardcoded KNOWN_MAPPINGS only). Traps (2026-08-05): 73% of proposals → non-existent files (stale map); `replace('- — ')` misses double-space form (phantom fixes); no flags = APPLIES; needs venv python (PyYAML). **Safe path**: `scripts/fix_empty_wikilinks_safe.py` — regex, target verification, OVERRIDES map, bare→`entities/` prefix, dry-run default; verify via git-diff added links. ⚠️ **Actual script locations (verified 2026-08-13)**: BOTH fixer scripts live at `~/ai-topics/config/hermes/skills/_overrides/wiki-graph-health/scripts/` — NOT `~/ai-topics/scripts/`, NOT the home skill dir (its scripts/ is empty). Run with `/opt/data/.hermes/venv/bin/python` (PyYAML). Residual is stable at 279 (0 fixable, 2026-08-13). Details: `references/empty-wikilink-fix-2026-08-05.md`, `references/watchdog-session-2026-08-13.md`.
+- **Manual fix**: no reliable mapping → leave, report residual (279 remained; multi-line artifacts).
 
 **Sub-pattern C: Prefix-style wikilinks (false positives — valid Obsidian syntax)**
 - **Pattern**: Links like `[[concepts/agent-harness]]` or `[[entities/openai]]` — wikilinks with path prefixes. These are **valid** in Obsidian/wiki tools and resolve to files in subdirectories. NOT broken.
 - **Categories**: `concepts/` prefix, `entities/` prefix, `comparisons/` prefix, `raw/` prefix, subdirectory paths like `harness-engineering/system-architecture/`
-- **Detection**: To find genuinely missing pages (not these prefixes), write an analysis script:
-  ```python
-  import re, glob, os
-  from collections import Counter
-  all_links = []
-  for f in glob.glob('wiki/entities/*.md') + glob.glob('wiki/concepts/*.md') + glob.glob('wiki/comparisons/*.md'):
-      with open(f) as fh:
-          for m in re.findall(r'\[\[([^\]|]+)', fh.read()):
-              all_links.append(m)
-  existing = set()
-  for root, dirs, files in os.walk('wiki'):
-      for f in files:
-          existing.add(os.path.splitext(f)[0])
-  missing = Counter()
-  for l in all_links:
-      slug = l.split('#')[0].split('|')[0]
-      if slug not in existing:
-          missing[l] += 1
-  for m, count in missing.most_common(50):
-      is_prefix = m.startswith(('entities/', 'concepts/', 'comparisons/', 'raw/'))
-      is_arxiv = (m[:2].isdigit() and len(m) <= 12)
-      print(f'{count:3d}x  [{"PREFIX" if is_prefix else "REAL"}]  [[{m}]]')
-  ```
-- **Genuine count**: Filter out prefix + arxiv entries. The remainder is the true broken-link count (often <5).
+- **Detection**: To find genuinely missing pages (not these prefixes), use the corrected scanner in [`references/broken-link-scanner-pitfalls.md`](references/broken-link-scanner-pitfalls.md). ⚠️ **Two pitfalls (2026-08-06)**: (1) build `existing` with `os.path.splitext(os.path.relpath(os.path.join(root, f), 'wiki'))[0]` — the naive `os.path.splitext(f)[0]` on os.walk paths keeps the `wiki/` prefix while slugs are `entities/foo`, making EVERY prefix-style link falsely report as missing (observed: 6,260 phantom refs / 0 REAL); (2) `[[concepts/post-training]]`-style dir links are VALID when `concepts/post-training/_index.md` exists — add `existing.add(rel.rsplit('/', 1)[0])` for `_index` files (confirmed dirs: post-training, coding-agents, multi-agents, security-and-governance, evaluation, harness-engineering, local-llm).
 
 ### 5. Pages Missing Frontmatter
 
 **Sub-pattern A: No frontmatter at all**
 - **Pattern**: Page starts with a heading `# Title` or body content, no `---` at line 1
-- **Fix**: Prepend frontmatter with `title:`, `type:`, `created:`, `updated:`, `tags:`, `status: active`
-- **Safety**: Use `patch` on the first line (prepend new content before it) or `write_file` to rewrite. Verify first 5 bytes with `head -c 5` before and after.
+- **Detection — find ALL such pages** (not just those in health reports):
+  ```bash
+  python3 -c "import os; no_fm = []; [no_fm.append(os.path.join(r,f)) for r,_,fs in os.walk('wiki/entities') for f in fs if f.endswith('.md') and not f.startswith('_index') and not open(os.path.join(r,f)).readline().startswith('---')]; [no_fm.append(os.path.join(r,f)) for r,_,fs in os.walk('wiki/concepts') for f in fs if f.endswith('.md') and not f.startswith('_index') and not open(os.path.join(r,f)).readline().startswith('---')]; print(f'Found {len(no_fm)}'); [print(f'  {p}') for p in no_fm]"
+  ```
+  Run this in `~/ai-topics/`. Covers entities, concepts, comparisons, events, queries.
+- **Fix**: Prepend frontmatter with `title:`, `type:`, `created:`, `updated:`, `tags:`, `sources: []`, `status: active`
+- **Date sourcing for legacy pages**: Use `git log --follow --oneline -- "<path>"` to find the creation commit, then `git show --no-patch --format="%ai" <hash>` to get the date. All pages created by the same bulk pipeline job share the same creation commit.
+- **Tag taxonomy check**: Before committing, verify every tag in the new frontmatter exists in `wiki/SCHEMA.md`:
+  ```bash
+  grep '`<tag>`' wiki/SCHEMA.md || grep -q '<tag>' <(sed -n 's/^- \*\*[^*]*\*\*: //p' wiki/SCHEMA.md)
+  ```
+  If a tag is missing, either (a) pick an existing synonym (`enterprise-automation` → `enterprise-ai`, which exists) or (b) add the new tag to SCHEMA.md under the appropriate category. The pre-commit hook blocks commits with non-SCHEMA tags.
+- **Safety**: Use `patch` on the first line or paragraph (include enough surrounding context to ensure uniqueness — `# Title` alone may appear in table headers). Verify first 5 bytes with `head -c 5` before and after.
 
 **Sub-pattern B: Line-number corruption (baked-in read_file format)**
 - **Pattern**: Page starts with `1|---` or `     1|---` — line numbers from `read_file` output pasted into the file. Every line has a `     N|` prefix baked in.
@@ -154,36 +149,22 @@ Two distinct sub-patterns:
 - **Pattern**: Pages with no `[[wikilinks]]` at all (not raw articles)
 - **Fix**: Add `## See Also` section and keyword-based related pages
 
-### 7. Graph-Induced Cross-Link Remediation (Score-Order Workflow)
-When the cron job `wiki-graph-analysis` produces a report with unlinked pairs:
-
-**Workflow:**
+### 7. Graph-Induced Cross-Link Remediation
+When `wiki-graph-analysis` reports unlinked pairs:
 1. `python3 ~/ai-topics/scripts/wiki_graph.py` — read the report
-2. **Process score-descending**: highest score first (9.6 → 9.0 → 7.2 → 6.6 → ...)
-3. **Differentiate person pairs vs concept pairs**: person pairs = cross-links between entity pages; concept pairs = cross-links between concept pages
-4. For each pair: read both pages, find the `## Related` or `## See Also` section, add `[[other-slug]]` with a brief description
-5. **Commit after each logical batch** (not after every single pair)
-6. **Re-run verification**: `python3 ~/ai-topics/scripts/wiki_graph.py | grep -E "❌|🔗"` to confirm fixes
+2. **Process score-descending** (highest first)
+3. **Differentiate person pairs vs concept pairs** (cross-links between entity pages vs concept pages)
+4. For each pair: read both pages, find `## Related` / `## See Also`, add `[[other-slug]]` with a brief description
+5. **Commit after each logical batch** (not every pair)
+6. **Re-run verification**: `python3 ~/ai-topics/scripts/wiki_graph.py | grep -E "❌|🔗"`
 
-**Batch processing (efficiency technique):**
-- When many pairs cluster around the same person (e.g., `drmaciver` ↔ 3 people, `anildash` ↔ 3 people), process ALL partners in one edit to that person's page
-- Use `delegate_task` to process 10+ pairs in one batch — pass the full pair list with reading/editing instructions
-- After delegate_task returns, verify by re-running the graph analysis
+**Batch processing**: when many pairs cluster around one person, process all partners in one edit; use `delegate_task` for 10+ pairs with the full pair list. After it returns, re-run the graph analysis to verify.
 
-**Dedup detection during graph review:**
-- High-score pairs (≥9.0) sharing project names (Flask, Jinja2) are likely the SAME person under GitHub handle vs real name
-- Pattern: `mitsuhiko` = Armin Ronacher (score 9.0) → merge, don't cross-link
-- Always check: `search_files "[[handle-slug]]"` to find incoming links before deciding merge vs cross-link
+**Dedup detection during graph review**: high-score pairs (≥9.0) sharing project names (Flask, Jinja2) are likely the SAME person under GitHub handle vs real name — merge, don't cross-link. Always `search_files "[[handle-slug]]"` to find incoming links first.
 
-**Concept redirect stubs:**
-- Some concept pages are just redirects: `concepts/agentic-engineering.md` → `Moved to [[concepts/harness-engineering/agentic-engineering]]`
-- When adding concept cross-links, use the redirect target path or the redirect slug (both work)
-- Check file existence: `search_files target=files path=~/wiki/concepts pattern=...`
+**Concept redirect stubs**: some concept pages are just redirects (`concepts/agentic-engineering.md` → `Moved to [[concepts/harness-engineering/agentic-engineering]]`). Use the redirect target path or slug (both work). Check file existence via `search_files target=files`.
 
-**Skip non-existent concept pairs:**
-- When ❌ pairs reference concept pages that don't exist yet, skip them
-- Shared persons being sub-pages (e.g., `drew-breunig--core-ideas`) is a false positive from page splitting — skip
-- These are artifacts, not real missing links
+**Skip non-existent concept pairs**: ❌ pairs referencing pages that don't exist yet; shared persons being sub-pages (`drew-breunig--core-ideas`) are page-splitting false positives — artifacts, not real missing links.
 
 ### Watchdog Pipeline Timing — Verifying Health Report Claims
 
@@ -210,9 +191,11 @@ When the cron job `wiki-graph-analysis` produces a report with unlinked pairs:
    - Check `|` display-text syntax: `[[slug|Display Text]]` is valid Obsidian syntax where `slug` IS the actual target
    - Check for `_index.md` files — these are real files and valid index entries
    - **Check `→` redirect syntax**: Entries like `[[entities/pi-coding-agent]] → [[entities/pi]]` use a non-standard redirect pattern. The primary wikilink target (`pi-coding-agent`) has no file, but that's intentional — the redirect arrow points to the canonical page, and the slug is typically listed as an alias in the canonical page's frontmatter. This is NOT a ghost entry.
+   - **Check `_archive/` subdirectories**: Files under `concepts/gpt/_archive/`, etc. are intentionally not in the index — they are archived content, not ghosts.
    - In the 2026-05-13 session: 21 "ghost" entries all resolved to existing files when scanned recursively
+- **NEW 2026-08-13: "Not indexed" scan false positives — nested pages are by design.** A recursive `os.walk` scan comparing every `.md` relpath under entities/+concepts/ against index.md wikilink slugs reports **570 "missing" pages**, but ALL are nested subdirectory pages (`concepts/ai-benchmarks/*`, `concepts/claude/*`, `concepts/gpt/*`, `entities/omar-khattab/*`) intentionally served by `_index.md` hub pages (21 hubs), NOT entries in main index.md. **Filter to top-level only** (`'/' not in relpath`) → 0 real gaps. Never "fix" nested pages into index.md. See `references/watchdog-session-2026-08-13.md`.
 
-**Escalation pattern**: If all reported corruption issues are already resolved by wiki-health-fix, the watchdog's value shifts from remediation to **verification and gap reporting** (header count mismatches, orphan pages, tag taxonomy drift, pipeline staleness). This is the expected behavior of a healthy pipeline.
+**Escalation pattern**: If all reported corruption issues are already resolved by wiki-health-fix, the watchdog's value shifts from remediation to **verification and gap reporting** (header count mismatches, orphan pages, tag taxonomy drift, pipeline staleness) — the expected behavior of a healthy pipeline.
 
 **Pitfall — `wiki_health.py --json` only detects structural index corruption.** The `--json` output reports pipe prefixes, triple brackets, line-number corruption, and frontmatter syntax errors — but does NOT detect:
 - **Index-to-filesystem gaps** (pages on disk with no index.md entry) — may be 30-48% of the wiki and entirely unreported
@@ -258,7 +241,7 @@ cp ~/ai-topics/scripts/wiki_health_json.py /opt/data/.hermes/scripts/wiki_health
 **`wiki_health.py` optimization (0.28s vs minutes)**:
 - **Single-pass read**: `load_l2_pages()` now reads each file ONCE and retains both frontmatter AND full content. Previously `section_unprocessed_raw()` re-read all ~1,800 files to build a blob string.
 - **Set-based matching**: `_build_referenced_stems()` extracts raw article references from L2 content using prefix-scanning into a Python set. Previously used O(N×M) substring search (`stem in giant_blob`) against a ~10MB string for 5,868 raw articles.
-- **`--json` flag**: Structured JSON output for agent consumption (`wiki_health.py --json`). Includes `index_corruption` auto-detection (pipe prefix, line numbers, triple brackets, space prefix).
+- **`--json` flag**: Structured JSON output for agent consumption (`wiki_health.py --json`). ⚠️ **As of 2026-07-13 the JSON output does NOT include `index_corruption`** — corruption must be verified independently with `grep` and `validate_index.py`. The JSON contains `overview`, `page_name_policy`, `orphan_count`, and `orphans` as top-level keys.
 - **Wrapper**: `scripts/wiki_health_json.py` — calls `wiki_health.py --json` for cron pre-run scripts.
 
 **Index corruption auto-detection** built into script output:
@@ -342,6 +325,12 @@ See `references/wiki-health-remediation.md` for full procedure.
 
 **Proactive Check**: Before committing wiki changes, run `grep -rn '^  - ' wiki/entities/*.md wiki/concepts/*.md | grep -v SCHEMA` to spot-check for tags that might not be in taxonomy.
 
+### A3c: Pre-Commit JP Language Check False Positive
+
+**Symptom**: commit blocked with `NEW Japanese introduced to clean file: wiki/log.md` while diff adds no JP. Cause (fixed 2026-08-03): `pre-commit-jp-check.py` `count_jp()` treated first two `---` lines as frontmatter; in log.md they're entry separators → position-dependent false positive (JP already in HEAD).
+
+**Debug — never `--no-verify` first**: (1) `git diff --cached <file> | grep -P '[\x{3040}-\x{30FF}\x{4E00}-\x{9FFF}]'` empty ⇒ not your change; (2) `git show HEAD:<file> | grep -n 'ソース'` — triage tables intentionally Japanese; don't delete; (3) pre-existing ⇒ fix hook (skip frontmatter only when file starts with `---`), don't bypass. See `references/jp-check-false-positive.md`.
+
 ### A4: Tag Consolidation
 
 When 500+ unique tags or malformed YAML tags deviate from SCHEMA taxonomy:
@@ -356,7 +345,7 @@ When 500+ unique tags or malformed YAML tags deviate from SCHEMA taxonomy:
 - Very specific → category: `attention` → `model`, `docker` → `developer-tooling`
 - Add new canonical tags to `SCHEMA.md` when needed
 
-**🛑 Phase 2.5 — Verify canonical targets exist in SCHEMA.md:** Before applying the mapping, check that EVERY canonical target used as a value in new mappings is already in SCHEMA.md. Example: if you add `'symphony': 'harness-engineering'`, verify `harness-engineering` is in SCHEMA.md (it is). If you add `'aec': 'industry'`, verify `industry` is in SCHEMA.md — if not, add it to SCHEMA.md first. The pre-commit hook validates ALL tags including the canonical targets, so a missing target will block the commit. Quick check: `grep -c '\`<target>\`' ~/wiki/SCHEMA.md`.
+**🛑 Phase 2.5 — Verify canonical targets exist in SCHEMA.md:** Before applying the mapping, check that EVERY canonical target used as a value in new mappings is already in SCHEMA.md (add to SCHEMA.md first if missing; the pre-commit hook validates targets too). ⚠️ Stale chains: mapping VALUES can be non-SCHEMA (`'wealth-distribution': 'wealth-concentration'` — target never added); fix BOTH sides. Quick check: `grep -c '\`<target>\`' ~/wiki/SCHEMA.md`. See `references/tag-audit-session-2026-08-17.md`.
 
 **Phase 3 — Apply:** `python3 /opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py`
 
@@ -388,86 +377,11 @@ After Phase 3, many non-SCHEMA tags will be one-offs — tags that appear on exa
 # Use string replacement, not regex — safer.
 ```
 
-**Recommended approach — single pass over all files, both formats:**
-
-```python
-import os, re
-from collections import Counter, defaultdict
-
-wiki = os.path.expanduser('~/ai-topics/wiki')
-
-# Load valid tags (same method as tag_audit.py — see load_valid_tags())
-valid_tags = set()  # populate from SCHEMA.md
-
-# Phase A: Scan all files for one-off non-SCHEMA tags
-file_tags = defaultdict(list)  # path -> [non-schema tags]
-tag_count = Counter()
-
-for root, dirs, files in os.walk(wiki):
-    rel = os.path.relpath(root, wiki)
-    if rel.startswith(('.git', 'raw', 'queries', '_archive')):
-        continue
-    for f in files:
-        if not f.endswith('.md') or f in ('index.md', 'log.md', 'log-2026.md', 'SCHEMA.md'):
-            continue
-        path = os.path.join(root, f)
-        if not os.path.isfile(path):
-            continue
-        with open(path) as fh:
-            content = fh.read()
-
-        # Block format: tags:\n  - tag1\n  - tag2
-        m = re.search(r'^tags:\s*\n((?:[ \t]*- .*\n?)+)', content, re.MULTILINE)
-        if m:
-            for line in m.group(1).split('\n'):
-                ls = line.strip()
-                if ls.startswith('- '):
-                    tag = ls[2:].strip().strip('"\'').strip()
-                    if tag and tag not in valid_tags:
-                        file_tags[path].append(tag)
-                        tag_count[tag] += 1
-        else:
-            # Inline format: tags: [tag1, tag2]  (used by _index.md files)
-            m2 = re.search(r'^tags:\s*\[(.+)\]', content, re.MULTILINE)
-            if m2:
-                for t in m2.group(1).split(','):
-                    tag = t.strip().strip('"\'').strip()
-                    if tag and tag not in valid_tags:
-                        file_tags[path].append(tag)
-                        tag_count[tag] += 1
-
-# Phase B: Delete only one-off tags (count == 1)
-for path, bad_tags in sorted(file_tags.items()):
-    one_offs = [t for t in bad_tags if tag_count[t] == 1]
-    if not one_offs:
-        continue
-    with open(path) as fh:
-        content = fh.read()
-
-    # Block format fix
-    m = re.search(r'^tags:\s*\n((?:[ \t]*- .*\n?)+)', content, re.MULTILINE)
-    if m:
-        block = m.group(1)
-        kept = [l for l in block.split('\n')
-                if not (l.strip().startswith('- ') and
-                        l.strip()[2:].strip().strip('"\'').strip() in one_offs)]
-        kept_lines = [l for l in kept if l.strip()]
-        if kept_lines:
-            content = content.replace(block, '\n'.join(kept_lines) + '\n', 1)
-        else:
-            content = re.sub(r'^tags:\s*\n(?:[ \t]*- .*\n?)+', 'tags: []\n', content, 1, re.MULTILINE)
-    else:
-        # Inline format fix
-        m2 = re.search(r'^tags:\s*\[(.+)\]', content, re.MULTILINE)
-        if m2:
-            all_tags = [t.strip().strip('"\'').strip() for t in m2.group(1).split(',')]
-            kept = [t for t in all_tags if t not in one_offs]
-            new_val = ', '.join(kept) if kept else ''
-            content = content.replace(f'tags: [{m2.group(1)}]', f'tags: [{new_val}]', 1)
-
-    with open(path, 'w') as fh:
-        fh.write(content)
-```
+**Recommended approach — single pass over all files, both formats:** See the full script and pitfalls in `references/tag-bulk-delete-oneoffs.md`. The approach:
+- Scan all files for non-SCHEMA tags (block format `  - tagname` and inline format `tags: [tagname]`)
+- Count occurrences per tag
+- Delete tags appearing on exactly 1 page from both formats
+- Re-run `tag_audit.py` to verify
 
 **Verification**: After bulk-delete, re-run `tag_audit.py`. If 0-5 violations remain, those are likely `_index.md` inline-format tags that need individual handling. Read the specific `_index.md` file and verify with `read_file` to confirm the exact tag format before applying a targeted `str.replace()`.
 
@@ -504,7 +418,7 @@ assert tags_line and 'offending-tag' not in tags_line.group(1), f'Tag still pres
 - `llm-wiki` skill TAG GATE rule prevents pipeline-created pages from using ad-hoc tags
 - Weekly `tag-audit-weekly` cron job detects drift and fixes automatically
 
-**See also:** `references/tag-normalization.md` for full procedure, pitfalls (including the critical body-dropping bug), and a comprehensive synonym map.
+**See also:** `references/tag-normalization.md` for full procedure, pitfalls (including the critical body-dropping bug), and a comprehensive synonym map. For the bulk one-off deletion workflow, see `references/tag-bulk-delete-oneoffs.md`.
 
 ### A4.1: Malformed YAML Tags (Non-Indented Duplicate Blocks)
 
@@ -528,6 +442,8 @@ tags:
 **Encountered in**: `entities/pluralistic-net.md` (2026-05-11 session) — this single file blocked the final commit after all other 1,255 pages were clean.
 
 ### A4b: Index Dedup
+
+**⚠️ 2026-08-19 watchdog finding — redirect stubs are legitimately indexed twice.** A slug appearing twice in index.md is NOT always a bulk-duplication bug: this wiki indexes redirect stubs (e.g. `entities/kyle-corbett` "Redirect → [[entities/kyle-corbitt]]") as their own index lines, so the canonical slug and its redirect stub BOTH appear. **Pre-check before removing any "duplicate" line: does the duplicate slug have its own `.md` file?** (`[ -f wiki/<slug>.md ]`) If yes → it's an intentional redirect entry, leave it. 2026-08-19: 6 apparent dups (fastino-labs, kyle-corbett, gepa, mai-thinking-1-report, separation-of-duties, gpt/image-2-vs-nano-banana-2) ALL had files → all legitimate, 0 removed.
 
 See `references/wiki-index-dedup.md` for the full procedure, including:
 - **Pre-check**: Filter primary vs inline cross-reference links before counting duplicates (48 of 67 are often false positives)
@@ -575,102 +491,15 @@ For small batches, use the existing `patch` method:
 4. **Patch with unique anchor**: Include 2-3 adjacent lines as context. Use `head -N file` or `sed -n 'M,Np' file` for clean content (not `read_file` which adds `N|` prefixes).
 5. **Verify**: `search_files path=~/wiki/index.md pattern=<slug>` should return count=1.
 
-#### Approach B: Python batch insertion (10+ items)
-For larger batches, use `execute_code` with a Python script that reads, inserts alphabetically, and writes — proven on 20-item batch (2026-05-17):
+**Approach B: Python batch insertion (10+ items)**
+For larger batches, use a Python script that reads, inserts alphabetically, and writes. See the full worked example in `references/orphan-index-insertion.md`. The pattern (proven on 14-20 item batches):
 
-```python
-import os, re
-
-wiki = '/opt/data/ai-topics/wiki'
-index_path = os.path.join(wiki, 'index.md')
-
-with open(index_path) as f:
-    lines = f.readlines()
-lines = [l.rstrip('\n') for l in lines]
-
-# Define entries as (slug, index_line) tuples for each section
-entity_additions = [
-    ('cerebras-systems', '- [[entities/cerebras-systems]] — Cerebras Systems — Wafer-scale AI chips'),
-    ('fred-schott', '- [[entities/fred-schott]] — Fred K. Schott — Creator of Astro'),
-    # ... add all entries you need
-]
-concept_additions = [
-    ('ai-and-authenticity', '- [[concepts/ai-and-authenticity]] — AI and Authenticity'),
-    ('coding-agents', '- [[concepts/coding-agents]] — Coding Agents'),
-    # ... add all entries you need
-]
-
-# Find section boundaries
-entity_start = entity_end = concept_start = concept_end = None
-for i, line in enumerate(lines):
-    if line.startswith('## Entities'):
-        entity_start = i + 1
-    elif line.startswith('## Concepts'):
-        entity_end = i
-        concept_start = i + 1
-    elif line.startswith('## Events'):
-        concept_end = i
-
-def find_alphabetical_insertion(section_lines, new_slug, extract_pattern):
-    for i, line in enumerate(section_lines):
-        m = re.search(extract_pattern, line)
-        if m and new_slug.lower() < m.group(1).lower():
-            return i
-    return len(section_lines)
-
-# Process entities: build insertion points, sort bottom-up, insert
-entity_section = lines[entity_start:entity_end]
-entity_actions = []
-for slug, entry in entity_additions:
-    idx = find_alphabetical_insertion(entity_section, slug, r'\[\[entities/([^|\]]+)\]\]')
-    entity_actions.append((idx, slug, entry))
-    entity_section.insert(idx, entry)
-
-entity_actions.sort(key=lambda x: x[0], reverse=True)
-for idx, slug, entry in entity_actions:
-    lines.insert(entity_start + idx, entry)
-
-# Adjust concept_start by entity insertions, then repeat for concepts
-concept_start += len(entity_additions)
-concept_section = lines[concept_start:concept_end]
-concept_actions = []
-for slug, entry in concept_additions:
-    idx = find_alphabetical_insertion(concept_section, slug, r'\[\[concepts/([^|\]]+)\]\]')
-    concept_actions.append((idx, slug, entry))
-    concept_section.insert(idx, entry)
-
-concept_actions.sort(key=lambda x: x[0], reverse=True)
-for idx, slug, entry in concept_actions:
-    lines.insert(concept_start + idx, entry)
-
-# Update header counts
-total_added = len(entity_additions) + len(concept_additions)
-for i, line in enumerate(lines):
-    m = re.match(r'^## Entities \((\d+) pages\)', line)
-    if m:
-        lines[i] = f'## Entities ({int(m.group(1)) + len(entity_additions)} pages)'
-        break
-for i, line in enumerate(lines):
-    m = re.match(r'^## Concepts \((\d+) pages\)', line)
-    if m:
-        lines[i] = f'## Concepts ({int(m.group(1)) + len(concept_additions)} pages)'
-        break
-for i, line in enumerate(lines):
-    if 'Total pages:' in line:
-        m = re.search(r'Total pages: (\d+)', line)
-        if m:
-            lines[i] = line.replace(f'Total pages: {m.group(1)}', f'Total pages: {int(m.group(1)) + total_added}')
-        m2 = re.search(r'Indexed entries: (\d+)', line)
-        if m2:
-            lines[i] = lines[i].replace(f'Indexed entries: {m2.group(1)}', f'Indexed entries: {int(m2.group(1)) + total_added}')
-        m3 = re.search(r'Not in index: (\d+)', line)
-        if m3:
-            lines[i] = lines[i].replace(f'Not in index: {m3.group(1)}', f'Not in index: {int(m3.group(1)) - total_added}')
-        break
-
-with open(index_path, 'w') as f:
-    f.write('\n'.join(lines) + '\n')
-```
+1. Build a deduped orphan list from filesystem (not just `wiki_health.py --json` which is alphabetically biased)
+2. Filter: skip stubs, skeletons, date-prefixed slugs, and `_index` files
+3. Find insertion points via alphabetical string comparison (case-insensitive)
+4. Insert bottom-up (reverse sort by index) to preserve line numbers
+5. Recompute header counts from actual `- [[concepts/` / `- [[entities/` line counts
+6. Verify with `python3 scripts/validate_index.py`
 
 **Pitfalls of Python batch approach:**
 - The `find_alphabetical_insertion` function must insert a **placeholder** into the working section copy after each entry is planned, so subsequent lookups find the correct alphabetical position relative to previously-planned entries.
@@ -724,7 +553,8 @@ with open(index_path, 'w') as f:
 2. **Date-prefixed slugs** (e.g., `2026-04-23-how-anthropic...`) — these are raw articles that were accidentally placed in concepts/ directory. They belong in `raw/articles/`.
 3. **`@`-prefixed slugs** (e.g., `@milksandmatcha`) — these are utility/redirect pages, not real knowledge content.
 4. **Already indexed**: Check `set(re.findall(r'concepts/[a-z0-9][a-z0-9-]+', index_content))` against the orphan candidate slug to avoid duplicate entries.
-5. **TODO-only stubs**: Skip pages where the only body content is `> **TODO**: Enrich this page.` and the file is <300 bytes — these are placeholders from the dreaming pipeline.
+5. **TODO-only stubs**: Skip pages <300 B whose only content is `> **TODO**: Enrich this page.` — dreaming pipeline placeholders.
+6. **Redirect pages** (`status: redirect`): Skip — canonical counterpart already in index.
 
 **Batch add at section boundary**: When the section has visible non-alphabetical drift (concepts section at 922+ lines may have `agents-that-build-themselves` after `ai-agent-memory-middleware`), batch-append 20 entries at the section boundary using the last entry + next section header as the `patch` anchor. This is preferred over individual alphabetical insertion for batches >5 entries in a drifted section.
 
@@ -747,11 +577,8 @@ read_file(offset=158, limit=10)  # get broader context to find unique anchor
 
 **Pitfalls:**
 - **Alphabetical ordering is mandatory**: New entries must be inserted in correct alphabetical position within their section. After adding, verify with `grep -n "concepts/" ~/wiki/index.md | sort -t'/' -k2 -c` (or manual inspection for small batches).
-- **Header count must be updated**: After adding entries, update the section count in the header (e.g., `## Concepts (1286 pages)` → `## Concepts (1306 pages)`). Use `patch` with the exact old count string as anchor.
+- **Header count update — conditional**: After adding entries, check if the section header has a count suffix (e.g., `## Concepts (1286 pages)` vs plain `## Concepts`). If a count exists, increment it (e.g., `1286` → `1306`). If absent, skip — the count was either removed by a previous cleanup or was never tracked. Use `patch` with the exact old header string as anchor. Do NOT fabricate a count that wasn't there — the validate_index.py parser does not require counts.
 - **`||-` corruption variant**: When patching, ensure list items use `- ` or `|- ` prefix — NEVER `||- ` (double-pipe). This can occur if you accidentally include a pipe from a previous patch operation. Fix immediately: `patch(old_string="||- [[slug]]", new_string="- [[slug]]", replace_all=True)`.
-- **index.md is very large** (1500+ lines) — `read_file` with offset/limit pagination means you may not see all duplicate patterns. Always verify uniqueness with `search_files` before patching.
-- **Entity section uses mixed formatting** (`-` vs `|-` prefixes) — match the prefix style of surrounding lines.
-- **After adding entries, the total page count in the header** (`## Entities (N pages)`) **must be incremented** to match actual page count, or `validate_index.py` will flag it.
 - **index.md is very large** (1500+ lines) — `read_file` with offset/limit pagination means you may not see all duplicate patterns. Always verify uniqueness with `search_files` before patching.
 - **Entity section uses mixed formatting** (`-` vs `|-` prefixes) — match the prefix style of surrounding lines.
 - **After adding entries, the total page count in the header** (`## Entities (N pages)`) **must be incremented** to match actual page count, or `validate_index.py` will flag it.
@@ -800,6 +627,8 @@ See `references/wiki-entity-dedup.md` for full procedure.
 |-----------|-----------|--------|
 | `buttondown-com-hillelwayne.md` | `hillel-wayne.md` | Newsletter domain vs person name |
 | `mitsuhiko.md` | `armin-ronacher.md` | GitHub handle vs real name; shared Flask/Jinja2/Werkzeug |
+
+**False-positive check (2026-08-13)**: high-sim pairs are NOT always duplicates — before merging check: (1) `status: redirect`; (2) slug in other's aliases; (3) `--subsection` page-split; (4) both cite each other as separate individuals. Details: `references/watchdog-session-2026-08-13.md`.
 
 ### Prevention Rules
 - Before creating new entity: `grep -i <name> wiki/entities/*.md`
@@ -917,34 +746,7 @@ See `references/wiki-bare-wikilink-fix.md` for the full script and worked exampl
 
 ## Section D: Bulk Link Fix (wiki-bulk-link-fix)
 
-See `references/wiki-bulk-link-fix.md` for full procedure.
-
-**For bare wikilinks lacking namespace prefixes** (e.g., `[[openai]]` instead of `[[entities/openai]]`), use the batch approach in `references/bare-wikilink-batch-fix.md` instead of per-page patch. Three-phase process: scan→map→regex-replace across all wiki files. Handles 300+ links in under a minute.
-
-### Phase 1: Analyze
-```python
-import os, re
-wikilink_re = re.compile(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]')
-```
-
-### Phase 2: Categorize
-| Category | Pattern | Fix Strategy |
-|----------|---------|--------------|
-| entities/ prefix | `[[entities/samuel-colvin]]` | Strip prefix → `[[samuel-colvin]]` |
-| concepts/ prefix | `[[concepts/agentic-engineering]]` | Strip prefix |
-| Case sensitivity | `[[Anthropic]]` vs `[[anthropic]]` | Normalize to lowercase |
-| Relative paths | `[[../agentic-engineering]]` | Resolve to absolute path |
-| Subdirectory/_index | `[[harness-engineering/_index]]` | → `[[harness-engineering]]` |
-
-### Phase 3: Fix by Category
-- Prefix stripping (highest volume): regex `\[\[entities/` → `[[`
-- Subdirectory/_index normalization: regex `[[[^\]]*/_index]]` → `[[...]]`
-
-### Phase 4: Stub Creation for Missing Pages
-For high-frequency missing pages where content exists in subdirectories.
-
-### Verification
-Re-run the analysis script to confirm fixes.
+See `references/wiki-bulk-link-fix.md` for full procedure. Batch approach for bare wikilinks lacking namespace prefixes (e.g., `[[openai]]` → `[[entities/openai]]`): scan→map→regex-replace across all wiki files. Phases: (1) analyze with `wikilink_re = re.compile(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]')`; (2) categorize — entities/ prefix (strip prefix), concepts/ prefix (strip), case sensitivity (lowercase), relative paths (resolve), `_index` (→ `[[dir]]`); (3) fix by category — strip `[[entities/` → `[[`, normalize `[[.../_index]]` → `[[...]]`, create stubs for missing high-frequency pages; (4) verify by re-running the analysis script. Handles 300+ links in under a minute.
 
 ---
 
@@ -1050,6 +852,8 @@ Merge an `entity-name--subsection.md` sub-page back into its parent entity page.
 - **Duplicate content**: The parent page may already contain some of the sub-page content. Only merge what's unique. Check the parent's existing sections carefully before adding.
 - **Sub-Pages section**: If the parent has a `## Sub-Pages` list, the merged subsection's wikilink MUST be removed. Don't forget this step — otherwise you'll have a broken wikilink.
 - **Index.md entity count**: After removing the sub-page entry, decrement the count in the header. Use `patch` with the exact old count string as anchor.
+- See `references/weekly-graph-analysis-pitfalls.md` for script bugs, workarounds.
+- See `references/truncation-error-detection.md` for detecting clipped-wikilink artifacts (e.g. `[[deepmin]]` → `[[entities/deepmind]]`)
 - **Cross-references**: Search for any other pages that wikilink to `parent--subsection`. If found, update them to point to `parent.md` instead.
 - **Preceding blank line after index.md removal**: Removing a line from the alphabetically-ordered `index.md` list using `patch` with an empty `new_string` leaves a blank line. Run a second `patch` to collapse it: merge the line above and below the gap into a single anchor string.
 - **Parent updated date**: Update the `updated:` field in the parent page's frontmatter to today's date.
@@ -1072,15 +876,7 @@ head -5 ~/ai-topics/wiki/entities/parent.md
 
 ## Section K: File Move / Directory Elimination (wiki-file-move)
 
-See `references/wiki-file-move.md` for full procedure, including the **merge/consolidation** and **deletion-with-reference-fixup** sub-patterns.
-
-When moving wiki pages between directories, consolidating multiple stubs into one canonical, or eliminating empty directory hierarchies — follow the reference. Key operations covered:
-- Single file move with reference checking
-- Multi-file merge: stubs/redirects → single canonical destination
-- Batch cross-reference fixing using `execute_code` + `patch()` with absolute paths
-- Deletion with inbound wikilink redirect
-
-Pitfall: `patch()` inside `execute_code` needs absolute paths (`/opt/data/wiki/...`), not relative.
+See `references/wiki-file-move.md` for the full procedure (merge/consolidation, deletion-with-reference-fixup). Pitfall: `patch()` inside `execute_code` needs absolute paths (`/opt/data/wiki/...`), not relative.
 
 ---
 
@@ -1112,10 +908,10 @@ All wiki-ingestion cron jobs load `llm-wiki`: blog-wiki-ingest, newsletter-wiki-
 **Job**: `tag-audit-weekly` (ID: `21f235565c6d`), Mondays 10:00 UTC
 **Script**: `/opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_audit.py` → agent auto-fix → `/opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_normalization.py` → commit
 
-**⚠️ Cron pre-run script path issue**: The cron job's `script:` field for `tag_audit.py` may fail with `Blocked: script path resolves outside the scripts directory (/opt/data/.hermes/scripts/)`. This is because the audit script lives in the skill directory, not in the restricted `~/.hermes/scripts/` directory. When this happens:
+**⚠️ Cron pre-run script path issue**: The cron job's `script:` field for `tag_audit.py` may fail with `Blocked: script path resolves outside the scripts directory (/opt/data/.hermes/scripts/)`. The canonical scripts are at `~/ai-topics/scripts/tag_audit.py` and `~/ai-topics/config/hermes/skills/_overrides/wiki-graph-health/scripts/tag_normalization.py`. When this happens:
 1. **Don't fail the job** — run both scripts from the skill directory directly instead of via the cron pre-run mechanism
 2. The order is: `tag_audit.py` (identify violations) → agent maps them → `tag_normalization.py` (apply) → commit
-3. Both scripts accept `--dry-run` for preview: `python3 /opt/data/.hermes/skills/wiki/wiki-graph-health/scripts/tag_audit.py`
+3. `tag_audit.py` lacks `--dry-run`; run directly to see violations: `python3 ~/ai-topics/scripts/tag_audit.py`
 
 Runs a full tag audit comparing all used tags against SCHEMA.md, then **auto-fixes ALL violations**:
 - Composite kebab-case tags (5+ hyphen-joined words) — decomposes into individual valid tags
@@ -1190,15 +986,10 @@ The `tag_audit.py` script's `load_valid_tags()` function (as of 2026-05-08 fix) 
 - **SCHEMA.md category format: ALL categories MUST use bold (`**Category**:`)** — The pre-commit tag validator only parses lines matching `- **Category**: tag1, tag2`. If a category line uses non-bold format (`- Category: tag1, tag2`), the validator silently skips ALL tags on that line. When adding new categories to SCHEMA.md, always wrap the name in double asterisks. Discovered when `- Meta:` was fixed to `- **Meta**:` after validator falsely reported `blogger`, `x-account`, `educator`, `content-creator` as unknown despite being present on the Meta line.
 - **Process tasks in priority/score-descending order** — user prefers systematic sequential execution by severity score, not arbitrary ordering
 - **After each batch, commit + push + re-run graph analysis** to verify fixes before moving on
-- **Space-prefixed list marker corruption** — a variant of pipe corruption where entries have
-  ` - [[` (leading space + dash + space) instead of `- [[`. This occurs when agents paste
-  `read_file` output that includes leading whitespace. Detection: `grep -c '^ - \\[\\[' wiki/index.md`.
-  Fix: normalize with `sed` or `patch` to remove the leading space. Always use `read_file` with
-  exact offset to verify anchor lines before patching — the space prefix creates a third variant
-  alongside `- ` and `|- `, causing patch ambiguity.
+- **Space-prefixed list marker corruption** — a pipe-corruption variant where entries have ` - [[` (leading space) instead of `- [[`, from pasting `read_file` output with leading whitespace. Detection: `grep -c '^ - \[\[' wiki/index.md`. Fix: normalize to remove the leading space. This is a third variant alongside `- ` and `|- `, causing patch ambiguity — verify anchor lines with `read_file` exact offset before patching.
 - **REGEX-ARTIFACT FALSE POSITIVES in broken link scans**: When scanning for bare wikilinks, certain patterns look like wikilinks but are actually code artifacts. `[[:alnum:]]` and `[[:space:]]` are POSIX regex character classes from code blocks. `[[gnu::packed]]` and `[[fallthrough]]` are C++ attribute syntax. `[[wikilinks]]` is a generic documentation term. These typically have 3-17 references each (same code block copied across pages). Detection: they look "technical" rather than topical. Skip them — do NOT try to "fix" them.
-- **BARE WIKILINK BATCH FIX (preferred over per-page patch)**: When 50+ bare wikilinks (e.g., `[[openai]]` instead of `[[entities/openai]]`) need namespace prefixing, use the batch approach in `references/bare-wikilink-batch-fix.md`. Three phases: (1) scan all files to build fix_map, (2) resolve each slug to entities/ or concepts/ by checking file existence, (3) regex-replace all in one pass. Process in batches of ~30 slugs, re-scanning after each batch. This fixes ~300 links across 500+ files in under a minute — vastly faster than per-page `patch`.
-- **CRITICAL — multi-line patch across section boundaries drops content**: When using `patch` with an `old_string` that spans across section boundaries (e.g., last concept entry + blank line + Events header + first event entry), the `new_string` MUST include EVERY line from the `old_string` that should survive, not just the lines you intend to change. In the 2026-05-16 session, a patch anchor spanning `concept-entry\n\n## Events (N pages)\n\nevent-entry\n\n## Comparisons` inadvertently **dropped the first event entry** from the index because the `new_string` only covered the concepts insertion + Events header but omitted the existing event entry. **Recovery**: use `grep -n 'expected-slug'` to detect the missing entry, then a second targeted `patch` to restore it. **Prevention**: Always verify existing entries survived after every multi-line patch using `grep -n` on the affected section. Never remove content from the `old_string` that isn't meant to be dropped — even if you're just adding lines, every line in `old_string` must also be in `new_string`.
+- **BARE WIKILINK BATCH FIX (preferred over per-page patch)**: See Section D — scan→map→regex-replace in ~30-slug batches; fixes hundreds of links across 500+ files in under a minute. **Mechanical namespace-fixes touching 30+ files are still safe auto-fixes** (the "10+ files → stop" rule guards *judgment* edits, not pure renames whose target page already exists/rich) — verify symmetric `git diff` + pre-commit tag pass. **Stage only files you touched** (`git diff --name-only -- wiki/` → `xargs git add --`; never `git add -A`). Recipe: `references/batch-namespace-fix-and-scoped-staging.md`.
+- **CRITICAL — multi-line patch across section boundaries drops content**: When a `patch` `old_string` spans section boundaries (last entry + blank + next `## ` header + first entry), the `new_string` MUST include EVERY surviving line, not just the changed ones. A 2026-05-16 patch that spanned `concept-entry\n\n## Events (N pages)\n\nevent-entry\n\n## Comparisons` dropped the first event entry because `new_string` covered the insertion + Events header but omitted the existing event entry. **Recovery**: `grep -n 'expected-slug'` to find the missing entry, then a targeted `patch` to restore. **Prevention**: after every multi-line patch, `grep -n` the affected section to confirm existing entries survived. Every line in `old_string` that should keep living must also appear in `new_string` — even for pure insertions.
 
 ## Section K: Raw Article Coverage Audit (wiki-raw-coverage-gap)
 
@@ -1273,14 +1064,39 @@ rm -r -f /opt/data/home/wiki /opt/data/home/ai-topics
 - Ensure `AGENTS.md` documents canonical paths prominently
 - Verify subagent output paths after `delegate_task` — check `/opt/data/ai-topics/wiki/` not `/opt/data/home/`
 
+## Wikilink Auto-Fix from Graph Analysis
+
+After running `wiki_graph.py --format json`, the analysis report identifies broken wikilinks in four categories:
+- `bare-wikilink`: `[[foo]]` without namespace prefix (auto-fixable)
+- `cross-namespace`: `[[entities/foo]]` when file exists in `concepts/` (auto-fixable)
+- `missing`: namespaced link to a page that doesn't exist (needs page creation)
+- `bare-wikilink-missing`: bare name, target doesn't exist (needs page creation)
+
+The first two are auto-fixable. **`scripts/fix_wikilinks.py` does NOT exist** at the canonical path (confirmed 2026-07-07). Instead, use the batch regex-replace approach in `references/bare-wikilink-batch-fix.md` / Section D (scan→map→fix).
+
+**Key pitfall**: `wiki_graph.py` uses `--format json`, NOT `--json`. The old `--json` flag was removed; using it produces an "unrecognized arguments" error.
+
+### Expected volume
+The graph analysis typically detects ~1,000 fixable links, but actual runs can fix 10,000+ (same patterns across log files, _index.md, archived content). Normal — the fix is idempotent and safe to re-run.
+
+### Post-fix workflow
+1. Run the batch fix dry-run first (see `references/bare-wikilink-batch-fix.md`)
+2. Review sample output for correctness
+3. Apply the fix
+4. Verify with `git diff --stat wiki/` — expect ~1,000 files changed
+5. Commit: `git add wiki/ && git commit -m "wiki: fix auto-fixable wikilinks (N links)"`
+6. Push: `git push`
+
 ## Support Files
 
-- `scripts/add_updated_dates.py` — Batch-add `updated` date to wiki pages that have frontmatter but lack the field. Skips _index.md and raw/articles. Run with `python3 scripts/add_updated_dates.py [--date YYYY-MM-DD]`.
+- `scripts/yaml_validate_frontmatter.py` — full-wiki frontmatter YAML scan (wiki_health.py returns {} on YAML failure → blind spot). Patterns + scoping rule: `references/yaml-frontmatter-corruption-2026-08-15.md`
+- `scripts/add_updated_dates.py` — Batch-add `updated` date to pages lacking it. Skips _index.md and raw/articles. `python3 scripts/add_updated_dates.py [--date YYYY-MM-DD]`.
 - `references/cron-mode-pitfalls.md` — Cron-mode `execute_code` blocks, `_index.md` counting in health reports, `str.replace()` anchor swallowing
-- `references/watchdog-healthy-baseline.md` — Structured baseline for watchdog runs: metric thresholds, verification commands, auto-fix scope limits, escalation report format, and decision flow.
-- `scripts/fix_broken_wikilinks.py` — Auto-fix empty wikilinks via fuzzy matching
-- `scripts/tag_normalization.py` — Comprehensive tag normalization (synonym mapping, body-safe)
-- `scripts/tag_audit.py` — Tag analysis and auditing
+- `references/watchdog-healthy-baseline.md` — watchdog baseline: thresholds, verify cmds, auto-fix scope, escalation report format, decision flow. See `watchdog-session-2026-08-25.md`.
+- `scripts/fix_broken_wikilinks.py` — Raw empty-wikilink fixer (KNOWN_MAPPINGS only, NOT fuzzy; verify targets, see Pattern B). Safe: `scripts/fix_empty_wikilinks_safe.py`
+- `scripts/tag_normalization.py` — tag normalization (synonym mapping, body-safe)
+- `scripts/tag_normalization_diff_scan.py` — classify dry-run: violations vs preference rewrites (ref 2026-08-10)
+- `scripts/tag_audit.py` — Tag analysis and auditing (canonical: `~/ai-topics/scripts/tag_audit.py`)
 - `scripts/validate_index.py` — Pre-commit validator for baked-in numbers, pipe prefixes, truncation artifacts in wiki/index.md. Run with `python3 scripts/validate_index.py`; exit 0 = clean, 1 = issues found. Called by `.githooks/pre-commit`. See Section H for recovery procedure.
 - `.githooks/pre-commit` — Git hook that runs `validate_index.py` on staged `wiki/index.md`. Activated via `git config core.hooksPath .githooks`. Tracked in-repo.
 - `references/wiki-health-script-optimization.md` — Performance optimization of wiki_health.py: single-pass read pattern, set-based matching, 0.28s (2026-05-13)
@@ -1305,7 +1121,10 @@ rm -r -f /opt/data/home/wiki /opt/data/home/ai-topics
 - `references/tag-normalization-session-2026-05-11.md` — Session-specific mapping batch: 82 new synonym→canonical entries, 471 pages fixed across 2 passes
 - `references/log-rotation.md` — Log rotation procedure: when, how, and automated cron integration
 - `references/concept-cluster-overview.md` — Concept cluster overview pattern: when to create a parent hub page, 4-layer classification, template, post-creation steps
-- `references/weekly-tag-audit-categorization.md` — Analysis pattern for categorizing tag audit results into SCHEMA-candidates, normalization-candidates, and noise
+- `references/tag-audit-session-2026-07-27.md` — scope expansion (`events/`,`queries/`), SCHEMA `[truncated]` corruption, inline one-off deletion, no-verify pass
+- `references/tag-audit-session-2026-08-03.md` — dry-run ≠ audit violations; skip normalization when audit clean
+- `references/tag-audit-session-2026-08-10.md` — dry-run scope ≫ violations; patch manually, never wholesale-normalize
+- `references/tag-audit-session-2026-08-17.md` — stale-chain fix (mapping VALUE non-SCHEMA: `wealth-distribution`→`wealth-concentration`); bump `updated:` on tag-only patches
 - `.githooks/pre-commit-tag-validator.py` — Pre-commit hook that validates all staged wiki page tags against SCHEMA.md taxonomy. Blocks commits with non-taxonomy tags or composite kebab-case errors. See Section J.
 
 ---
@@ -1318,9 +1137,14 @@ Index.md is vulnerable to two distinct corruption mechanisms that **compound**: 
 
 | Pattern | Example | Detection |
 |---------|---------|-----------|
-| Single-layer baked-in number | `     9|- [[entities/dean-ball]]` | `grep -c '^\\s*\\d\\+|' wiki/index.md` — every line starts with `N|` |
+| Single-layer baked-in number | `     9|- [[entities/dean-ball]]` | `grep -c '^\\s*\\d+\\|' wiki/index.md` — every line starts with `N|` |
 | Nested baked-in number | `   184|   1|- [[entities/flue]]` | The regex `^\\s*\\d+\\|` matches once; `1|` remains as a second layer |
-| Pipe prefix (bare) | `|- [[entities/tim-dettmers]]` | Line starts with `|-` or `||-` instead of `-` |
+| Quadruple bracket in L2/query pages | `[[[[concepts/foo]]]]` in `queries/` or `entities/` | `content.count('[[[[')` in Python; affects query pages, entity pages, concept pages — not just index.md |
+| Pipe prefix in L2 pages | `|- [[entities/mario-zechner]]` in `entities/armin-ronacher.md` | `grep -rn '|- \\[' wiki/entities/ wiki/concepts/` |
+
+**⚠️ Pipe prefix scan scope**: Use the exact scope above (`entities/` + `concepts/`). Scanning `wiki/` recursively catches log archive files whose markdown table rows match `|- [[` — 300K+ false positives detected in one run (2026-07-11). Never scan log-2026-\* files for this pattern.
+
+**L2 pipe-prefix corruption (`|- ` bullets, `||- ` double-pipe, merged headings, whole-block `|` prefixes)**: distinct from index corruption — these live inside entity/concept pages. Detection, fix variants, and the batch Python procedure (bottom-up line-numbered ops, double-space artifact after `||- ` stripping, whole-block `|` strip): [`references/l2-pipe-prefix-corruption.md`](references/l2-pipe-prefix-corruption.md).
 | Truncation artifact | `... [OUTPUT TRUNCATED ...]` | File contains literal `[OUTPUT TRUNCATED]` text |
 | Truncation fragment | `isualization-focused tools (DWH...` | Partial line from a truncated read_file boundary |
 
@@ -1328,18 +1152,7 @@ Index.md is vulnerable to two distinct corruption mechanisms that **compound**: 
 
 ### H1b: Triple Bracket Corruption (`[[[`)
 
-A corruption variant discovered 2026-05-10 where index entries gain a third opening bracket: `[[[concepts/foo]]` instead of `[[concepts/foo]]`. This renders the wikilink unparseable — Obsidian and wiki tools see it as malformed markdown rather than a link.
-
-**Detection**: `str.count('[[[')` in Python, or grep with Perl regex `grep -cP '\[\[\[' wiki/index.md`. **Do NOT rely on basic regex `grep -c '\[\[\['`** — shell escaping of brackets in BRE mode can silently return 0 even when triple brackets exist (observed in 2026-05-20: manual grep returned 0 while `wiki_health.py --json` found 8). Best practice: run `python3 -c "open('wiki/index.md').read().count('[[[')"` for authoritative count.
-
-**Fix**: Replace `[[[` with `[[` globally — this is always a corruption, never intentional:
-```python
-import re
-with open("wiki/index.md") as f: content = f.read()
-fixed = content.replace('[[[', '[[')
-with open("wiki/index.md", 'w') as f: f.write(fixed)
-```
-**Root cause**: Likely an index `patch` operation where the `new_string` accidentally included an extra `[` character, or a copy-paste artifact from multi-bracket markdown rendering.
+Index entries gain a third opening bracket: `[[[concepts/foo]]`. Authoritative detection: `python3 -c "open('wiki/index.md').read().count('[[[')"` (BRE `grep -c '\[\[\['` can silently return 0 — use `grep -cP '\[\[\['` or Python). Fix: replace `[[[` → `[[` globally (always corruption, never intentional). Root cause: `patch` `new_string` accidentally included an extra `[`, or a copy-paste artifact from multi-bracket markdown rendering.
 
 ### H1c: Index Entry Points to Wrong Directory
 
@@ -1418,13 +1231,11 @@ Two defenses are already deployed — any future agent must maintain them:
 
 **Activation** (may need re-run after clone): `cd ~/ai-topics && git config core.hooksPath .githooks`
 
-### CRITICAL — Never use `terminal` for log.md Python prepend (Discovered 2026-05-13, reinforced 2026-05-20)
+### CRITICAL — Never use `terminal` for log.md prepend
 
-**TWO DISTINCT FAILURE MODES** when using `terminal()` with `python3 -c "..."` to prepend log entries:
-
-**Failure 1: `---` anchor trap** (2026-05-13). Using `---` as `old_string` in `patch` matches the first occurrence (often a frontmatter delimiter or horizontal rule), not the intended section separator. See below for recovery.
-
-**Failure 2: Bash backtick command substitution** (2026-05-20). When the Python string contains backticks (e.g., `` `raw/articles/file.md` ``, `` `https://example.com/feed.xml` ``), bash interprets them as command substitution BEFORE Python sees them. The backtick-wrapped content is replaced with empty string (or worse, executed). This silently corrupts wikilinks, URLs, and inline code in the log entry.
+Two failure modes with `terminal()` + `python3 -c "..."`:
+1. **`---` anchor trap**: Using `---` as `patch(old_string=...)` matches the first occurrence in the file, not the intended section separator.
+2. **Bash backtick substitution**: Backticks in Python strings (`` `url` ``, `` `code` ``) are interpreted by bash as command substitution before Python sees them, silently corrupting content.
 
 **Symptom**: A `patch` call intended to append an entry to `log.md` instead corrupts a previous entry, fragments content across multiple orphaned lines, or produces a duplicate section header.
 
@@ -1436,7 +1247,7 @@ Two defenses are already deployed — any future agent must maintain them:
 
 When `patch` finds multiple matches for `---`, it matches the **first** occurrence, which is almost never the one you intended. The result is a corrupted entry at an arbitrary position.
 
-**Prevention — never use `---` as old_string, and never pipe Python with backticks through bash**:
+**Prevention — never use `---` as old_string, never pipe Python with backticks through bash, and note: `execute_code` is BLOCKED in cron mode (approvals.cron_mode) — use write_file → `python3 /tmp/script.py` instead. Ready-made: `scripts/fix_log_header_burial.py` (see references/watchdog-healthy-baseline.md §3):**
 ```python
 # WRONG (Failure 1) — will match first `---` in file
 patch(old_string="---", new_string="...")
@@ -1466,36 +1277,17 @@ patch(
 ```
 
 **Recovery from `---` corruption**:
-If you DO trigger this corruption (as happened 2026-05-13):
-1. Read the full log.md with `read_file` to assess damage
-2. Identify all fragments created by the botched match (orphaned section headers, orphaned continuation lines)
-3. Fix each fragment with targeted `patch` calls using long unique strings as `old_string`
-4. After cleanup, verify: only one `# Wiki Log` header, clean section transitions, no orphaned lines
-5. Validate with `grep -c '^# Wiki Log' wiki/log.md` (must return exactly 1)
+If triggered, assess damage via `read_file`, fix each fragment with targeted `patch` (long unique strings as `old_string`), verify only one `# Wiki Log` header. If damage >4 lines, rewrite the affected section via `execute_code` Python rather than iterative `patch`.
 
-**Watch for nested corruption**: Each fixup `patch` call on a damaged log.md creates additional risk — a runaway chain of 4+ `patch` calls to fix one bad `---` match was observed (2026-05-13 session). If damage is >4 lines, prefer rewriting the affected section via `execute_code` with Python `with open()` rather than iterative `patch`.
-
-**Preferred alternative: prepend via `execute_code` Python `with open()`**:
-Instead of using `patch` to prepend log entries, use Python to read, prepend, and write:
+**Preferred: prepend via `execute_code` Python `with open()`**:
 ```python
 import os
 log_path = os.path.expanduser("~/ai-topics/wiki/log.md")
-with open(log_path) as f:
-    content = f.read()
-
-new_entry = """## [YYYY-MM-DD] action | subject
-
-### Changes
-- ...
-
----
-
-""" + content
-
-with open(log_path, 'w') as f:
-    f.write(new_entry)
+with open(log_path) as f: content = f.read()
+new_entry = "## [YYYY-MM-DD] action | subject\n\n### Changes\n- ...\n\n---\n\n"
+with open(log_path, 'w') as f: f.write(new_entry + content)
 ```
-This avoids both the `---` anchor trap and the header-swallowing issue. Verify with `head -5 ~/ai-topics/wiki/log.md` after prepending.
+Avoids the `---` anchor trap. Verify with `head -5 ~/ai-topics/wiki/log.md` after prepending.
 
 ### Orphan `###` Timestamp Lines in log.md (Discovered 2026-05-19)
 
@@ -1561,7 +1353,7 @@ grep -c '^## \[' ~/wiki/log.md        # count of proper log entries
 grep -c '^### 2026-' ~/wiki/log.md    # remaining standalone ### entries (should be 0 for sub-pattern 1)
 ```
 
-### Batch Append at End of Drifted Section (2026-05-13 technique)
+**Batch Append at End of Drifted Section (2026-05-13 technique, refined 2026-07-07)**
 
 When the concepts section in index.md has drifted so far from alphabetical order that individual insertion points are indeterminable (observed: in a 922-line index, `agents-that-build-themselves` appeared after `ai-agent-memory-middleware`), use batch append at the section boundary instead:
 
@@ -1579,7 +1371,9 @@ patch(
     path="~/wiki/index.md"
 )
 
-# 4. Update header counts after insertion
+# 4. Update header counts after insertion — check if counts exist first:
+   grep -c '## Concepts (' ~/wiki/index.md  # if 0, header has no count suffix — skip
+   grep '## Concepts' ~/wiki/index.md       # verify actual format
 patch(old_string="## Concepts (1253 pages)", new_string="## Concepts (1273 pages)", path="~/wiki/index.md")
 patch(old_string="Total pages: 1834", new_string="Total pages: 1854", path="~/wiki/index.md")
 ```
@@ -1591,14 +1385,7 @@ patch(old_string="Total pages: 1834", new_string="Total pages: 1854", path="~/wi
 
 **After batch append**: Always verify with `validate_index.py` — the file structure (sections, headers, blank lines) must be intact even if internal ordering has drifted.
 
-### CRITICAL—read_file Trap Reinforcement
-
-> **Never use content from `read_file` output directly in a `patch` or file write.** The output format `LINE_NUM|CONTENT` means every line has a `N|` prefix baked in. If you paste it into a file, ALL lines acquire a numeric prefix. If you then `patch` with that content, the prefix becomes permanent.
->
-> **Safe alternatives**: `head -N file`, `sed -n 'M,Np' file`, `grep -n ... file`, or `terminal('cat file')` — these give clean content without framing.
->
-> **If corruption IS introduced**: Don't try to fix individual lines — batch-strip with the iterative procedure in H3, then validate with `scripts/validate_index.py`.
-
+See also: [`references/stale-job-alert-analysis.md`](references/stale-job-alert-analysis.md) — analyzing stale cron alerts for multi-day schedule jobs (false positives).
 ## Section L: Frontmatter `sources` Gap at Scale
 
 When health checks reveal hundreds of pages missing the `sources` frontmatter field (as observed 2026-05-13: 770+ out of 810 broken pages), this is a systemic gap — pages were created without recording their source articles.

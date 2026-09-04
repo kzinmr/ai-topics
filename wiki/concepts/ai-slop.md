@@ -2,7 +2,7 @@
 title: AI Slop
 type: concept
 created: 2026-05-25
-updated: 2026-08-15
+updated: 2026-09-04
 tags:
   - ai-slop
   - coding-agents
@@ -17,6 +17,8 @@ sources:
   - raw/articles/lucumr.pocoo.org--2026-5-24-pi-oss--32605b95.md
   - raw/articles/2026-05-30_exm7777_fix-ai-slop-using-hermes.md
   - raw/articles/krebsonsecurity.com--2026-08-whos-tracking-you-use-this-new-service-to-find-out--2df50888.md
+  - raw/articles/seangoedecke.com--how-to-protect-yourself-from-workslop--b1b3e70a.md
+  - raw/articles/news.smashingmagazine.com--2026-09-02-ai-design-quietly-undermining-accessibility--7c28e822.md
 ---
 
 # AI Slop
@@ -32,6 +34,27 @@ Key characteristics:
 - **Over-engineered**: Local defenses, redundant fallbacks, migrations, and test scaffolding for problems that should be fixed at the root
 - **Hard to detect**: As models improve, the brokenness becomes subtler — harder to spot in code review
 - **Volume-driven**: Quantity overwhelms quality, making maintainer review the bottleneck
+
+## September 2026: Slop Goes Mainstream (Workplace + Web Design)
+
+Two September 2, 2026 articles mark slop's expansion from an open-source maintenance problem into two new domains:
+
+**"Workslop" — the workplace variant** ([Sean Goedecke](https://seangoedecke.com/how-to-protect-yourself-from-workslop/), [raw](raw/articles/seangoedecke.com--how-to-protect-yourself-from-workslop--b1b3e70a.md)): Goedecke (former Slack ML engineer, now TechLead content creator) names the phenomenon of colleagues communicating by pasting big chunks of AI-generated text. The core mechanism is **effort asymmetry, "like a denial-of-service attack"**: near-zero cost to produce, full cost to read.
+
+- **Prevalence**: 175 HN comments on a companion post; a 4chan-originated joke spreadsheet of "workslop instances" got "way more engagement than I expected, as people saw it as permission to talk about a thing everyone experienced but nobody named."
+- **Why it's rising**: AI can pass work off as done. Doc-writing used to be a "canary task" — reliable evidence of real effort ("if you did the work of writing a doc, it was pretty likely you'd also done some of the harder work of actually thinking about the problem"). AI kills that signal; even AI-resistant managers can't police whether every doc/email was hand-written.
+- **Diagnostic framing**: "How does this differ from regular corporate bs? Probably not much, actually, but in a world where people used to never send you walls of text you were forced to read it does feel like a real change in kind." The real harm: "you're no longer sure which parts of your coworkers' communication are real."
+- **Prescriptions**: (1) "be the change you want to see" — hand-write docs when possible because "it's the polite thing to do," like dressing for an interview; (2) demand specificity — "ask them for details of the problem that an LLM wouldn't be able to come up with unless somebody had actually done some work"; (3) as a manager, be clear about when AI docs are acceptable, e.g., explicitly ask for a hand-written doc with detail when evaluating someone for promotion.
+- **The open question Goedecke doesn't resolve**: "what proportion of your org's work happens by reading or writing documents (vs just actually doing things)." Related: his scaling-effort analysis at [[concepts/scaling-without-slop]].
+
+**AI design undermining accessibility** (Paweł Huryn, Smashing Magazine, [raw](raw/articles/news.smashingmagazine.com--2026-09-02-ai-design-quietly-undermining-accessibility--7c28e822.md)): the first measured study of accessibility decay in AI-generated websites — 51 AI-generated sites vs 50 human-built sites, analyzed with AXe (open-source AI accessibility auditor, [GitHub](https://github.com/dequelabs-ai-studio/axe-code-equity)).
+
+- **Core finding**: "AI doesn't cause all that many new accessibility errors, but it also doesn't fix the ones that already exist, and that's what drags the web down." AI sites produce ~6% fewer issues (3.33 vs 3.54 per site) but resolve only **~25% of issues** vs **~70%** for human sites.
+- **Compounding mechanism**: AI builds "on top of existing code, reusing the same patterns and mistakes, which makes the same mistakes spread across the codebase"; models trained on the current web inherit its errors (W3C: 95.6% of top-1M homepages failed WCAG checks in June 2025).
+- **Failure distribution**: color contrast worst category (~14,500 issues); form labels highest-impact (AI sites: 55% more, human sites: 28% more); 67% of AI sites had at least one issue at critical severity.
+- **Author's conclusion**: "accessibility can no longer be left as something that happens at the end, it needs to be built into the process from day one. Requirements, checks, and reviews all have to be part of the workflow from the very beginning."
+
+Together these extend the slop thesis: in code review (Ronacher), in workplace communication (Goedecke), and in generated UIs (Huryn), AI shifts cost from *production* to *verification* — and existing quality systems weren't built for that asymmetry. The eval-loop answer generalizes: embed quality checks in the generation loop rather than reviewing after the fact.
 
 ## Two Complementary Critiques
 
@@ -88,7 +111,7 @@ This perspective reframes the slop discussion from "can it be fixed?" to "here i
 
 - [[entities/george-hotz]] — "The Eternal Sloptember" and broader AI skepticism
 - [[entities/armin-ronacher]] — "Building Pi With Pi" and open source maintenance burden
-- [[concepts/pi-agent-harness]] — The agent harness experiencing this slop problem firsthand
+- [[entities/pi]] — The agent harness (Armin Ronacher's Pi) experiencing this slop problem firsthand
 - [[entities/gary-marcus]] — LLM skepticism, "Gullibility Gap"
 - [[concepts/open-source-ai-destruction]] — Broader tension between AI and open source
 - [[concepts/coding-agents/ai-coding-reliability]] — Reliability challenges in AI-assisted coding

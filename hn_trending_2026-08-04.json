@@ -1,0 +1,137 @@
+[
+  {
+    "title": "LLMs reward expertise",
+    "url": "https://www.seangoedecke.com/llms-reward-expertise/",
+    "points": 1009,
+    "num_comments": 425,
+    "date": "2026-08-03T21:13:53Z",
+    "objectID": "49161518",
+    "relevance_summary": "LLM/model release or capability"
+  },
+  {
+    "title": "SQLite Critical CVEs or LLM Slop?",
+    "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+    "points": 713,
+    "num_comments": 365,
+    "date": "2026-08-03T11:28:54Z",
+    "objectID": "49154332",
+    "relevance_summary": "LLM/model release or capability"
+  },
+  {
+    "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+    "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+    "points": 499,
+    "num_comments": 409,
+    "date": "2026-08-03T09:32:07Z",
+    "objectID": "49153374",
+    "relevance_summary": "LLM/model release or capability; AI coding tools/benchmarks; AI industry/economic impact"
+  },
+  {
+    "title": "AI financial advice is surprisingly good, especially if you ask right questions",
+    "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+    "points": 349,
+    "num_comments": 398,
+    "date": "2026-08-01T22:25:12Z",
+    "objectID": "49139102",
+    "relevance_summary": "general AI/ML topic"
+  },
+  {
+    "title": "Flint: A Visualization Language for the AI Era",
+    "url": "https://microsoft.github.io/flint-chart/",
+    "points": 274,
+    "num_comments": 69,
+    "date": "2026-08-01T02:45:09Z",
+    "objectID": "49130604",
+    "relevance_summary": "general AI/ML topic"
+  },
+  {
+    "title": "AI doesn't generate working products, that's still your job",
+    "url": "https://weeraman.com/the-prototype-isnt-the-product/",
+    "points": 265,
+    "num_comments": 293,
+    "date": "2026-08-01T07:52:10Z",
+    "objectID": "49132130",
+    "relevance_summary": "AI industry/economic impact"
+  },
+  {
+    "title": "AirLLM 70B inference with single 4GB GPU",
+    "url": "https://github.com/lyogavin/airllm",
+    "points": 222,
+    "num_comments": 80,
+    "date": "2026-08-03T11:15:48Z",
+    "objectID": "49154228",
+    "relevance_summary": "LLM/model release or capability; reasoning/inference/training techniques"
+  },
+  {
+    "title": "OpenAI's super PAC is funding AI-generated news site attacking industry critics",
+    "url": "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
+    "points": 205,
+    "num_comments": 106,
+    "date": "2026-08-03T02:30:30Z",
+    "objectID": "49150561",
+    "relevance_summary": "major AI lab news"
+  },
+  {
+    "title": "My personal AI benchmark: \u201cGenerate an SVG of a frog with a Habsburg jaw\u201d",
+    "url": "https://frogs.vaguespac.es/",
+    "points": 153,
+    "num_comments": 86,
+    "date": "2026-08-02T19:42:08Z",
+    "objectID": "49147622",
+    "relevance_summary": "AI evaluation/benchmarks"
+  },
+  {
+    "title": "AI poster wins Ohio State Fair contest",
+    "url": "https://www.ohiostatefair.com/p/get-involved/arts/poster-contest",
+    "points": 141,
+    "num_comments": 183,
+    "date": "2026-08-02T22:43:47Z",
+    "objectID": "49149188",
+    "relevance_summary": "general AI/ML topic"
+  },
+  {
+    "title": "On the non-use of AI in my writing process",
+    "url": "https://www.antipope.org/charlie/blog-static/2026/08/on-the-non-use-of-ai-in-my-wri.html",
+    "points": 130,
+    "num_comments": 135,
+    "date": "2026-08-01T12:56:54Z",
+    "objectID": "49134038",
+    "relevance_summary": "general AI/ML topic"
+  },
+  {
+    "title": "The AI Productivity Gap",
+    "url": "https://bjorg.bjornroche.com/management/ai-productivity-gap/",
+    "points": 124,
+    "num_comments": 108,
+    "date": "2026-08-03T07:07:20Z",
+    "objectID": "49152222",
+    "relevance_summary": "AI industry/economic impact"
+  },
+  {
+    "title": "Show HN: Sprocket \u2013 The Best AI Agent for Hardware and Software Development",
+    "url": "https://sprocket-demo.spikonado.com",
+    "points": 124,
+    "num_comments": 14,
+    "date": "2026-08-02T16:26:19Z",
+    "objectID": "49145934",
+    "relevance_summary": "AI agents/autonomous systems"
+  },
+  {
+    "title": "Show HN: Nightcrawler \u2013 A local AI pentesting agent running on a smartphone",
+    "url": "https://github.com/garagehq/nightcrawler/",
+    "points": 111,
+    "num_comments": 32,
+    "date": "2026-08-03T11:06:15Z",
+    "objectID": "49154127",
+    "relevance_summary": "AI agents/autonomous systems; AI safety/alignment/security"
+  },
+  {
+    "title": "What's the largest software project AI can complete on its own?",
+    "url": "https://epoch.ai/MirrorCode",
+    "points": 92,
+    "num_comments": 92,
+    "date": "2026-08-03T16:16:40Z",
+    "objectID": "49157786",
+    "relevance_summary": "general AI/ML topic"
+  }
+]

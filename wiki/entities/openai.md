@@ -552,6 +552,12 @@ GPT-5.6 is now the **preferred model in Microsoft 365 Copilot**, replacing GPT-5
 ### GPT-5.5 Bio Bug Bounty
 OpenAI launched a **Bio Bug Bounty** program specifically for GPT-5.5, inviting security researchers to test biological safety guardrails.
 
+## September 2026: GPT-6 Astra Launch + $1B Defender Initiative
+
+- **GPT-6 Astra soft release (Sep 3)**: OpenAI released Astra as "GPT-6 Astra," the first broadly deployed model rated **Critical for cybersecurity** under its Preparedness Framework. Details: [[entities/openai-astra#Soft Release as GPT-6 Astra (September 3, 2026)]].
+- **Daybreak for Frontline Defenders ($1B, Sep 3)**: same-day announcement subsidizing frontier cyber capabilities for critical-infrastructure defenders — MS-ISAC pilot, 35+ product "Daybreak Defense Network," $1B targeted for consumption within six months. Analysis: [[concepts/daybreak-for-frontline-defenders]].
+- **Combined reading**: launching a Critical-rated cyber model while announcing a billion-dollar defender subsidy pairs capability escalation with its product-side mitigation — the "defender's window" framing does governance work ahead of regulation.
+
 ## Related Concepts
 - [[concepts/openai/agents-sdk]] — OpenAI's agent development framework
 - [[concepts/openai/workspace-agents]] — Codex-powered enterprise shared agents

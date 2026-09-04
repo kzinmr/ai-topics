@@ -5,19 +5,23 @@ Picks N articles that haven't been triaged yet, cross-references against
 the archive index for comparison context, and outputs JSON for the agent.
 
 Usage:
-    python3 scripts/raw_backlog_collect.py          # default: 5 articles, 500B+ min
+    python3 scripts/raw_backlog_collect.py
     python3 scripts/raw_backlog_collect.py --count 10 --min-size 1000
-    python3 scripts/raw_backlog_collect.py --dry-run  # don't update tracking
+    python3 scripts/raw_backlog_collect.py --dry-run --estimate --count 10
 """
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import os
+import re
+import statistics
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
 
 HERMES_HOME = Path(os.environ.get("HERMES_HOME", Path.home() / ".hermes"))
@@ -25,10 +29,13 @@ WIKI_ROOT = Path(os.environ.get("WIKI_ROOT", Path.home() / "ai-topics" / "wiki")
 RAW_ARTICLES = WIKI_ROOT / "raw" / "articles"
 ARCHIVE_INDEX = WIKI_ROOT / "raw" / "archived" / "triage" / "archive_index.json"
 TRACKING_FILE = HERMES_HOME / "processed_raw_articles.json"
+O11Y_DIR = HERMES_HOME / "o11y"
 
+RAW_BACKLOG_JOB_ID = "4e63c6f0d140"
 DEFAULT_COUNT = 5
 DEFAULT_MIN_SIZE = 500  # bytes
 BODY_EXCERPT_LENGTH = 400
+DEFAULT_SORT = "ai-hint"
 
 
 def load_tracking() -> dict:
@@ -47,7 +54,7 @@ def save_tracking(data: dict) -> None:
 
 
 def load_archive_index() -> dict:
-    """Return {url: archived_item_info} or {}."""
+    """Return archive index data or an empty index."""
     if not ARCHIVE_INDEX.exists():
         return {"urls": []}
     try:
@@ -67,15 +74,10 @@ def extract_url_from_article(path: Path) -> str | None:
                 if url.startswith("http"):
                     return url
             if line.startswith("source:"):
-                # Some raw articles store the canonical URL in source: frontmatter
-                # (e.g. meta.com essays, michaellivs.com blog posts). Only accept
-                # http(s) values — non-URL sources (names, domains) are ignored.
                 url = line.split(":", 1)[1].strip().strip('"').strip("'")
                 if url.startswith("http"):
                     return url
             if line.startswith("- **Source:**"):
-                # Format: - **Source:** [text](url) or - **Source:** url
-                import re
                 match = re.search(r"\(?(https?://[^\s\)]+)\)?", line)
                 if match:
                     return match.group(1)
@@ -85,13 +87,7 @@ def extract_url_from_article(path: Path) -> str | None:
 
 
 def normalize_archive_url(url: str) -> str:
-    """Normalize URLs for archive-dedup comparison.
-
-    Substack email tracking links carry time-limited signed query tokens
-    (e.g. /redirect/<uuid>?j=eyJ1Ij...). The stable identity is the path
-    (the UUID), so strip the query for /redirect/ URLs. Other URLs are
-    kept as-is to avoid collapsing distinct pages onto generic paths.
-    """
+    """Normalize URLs for archive-dedup comparison."""
     if "/redirect/" in url:
         return url.split("?", 1)[0]
     return url
@@ -118,10 +114,7 @@ def extract_body_excerpt(path: Path, length: int = BODY_EXCERPT_LENGTH) -> str:
                 body_lines.append(line)
                 if sum(len(l) for l in body_lines) >= length:
                     break
-        result = "\n".join(body_lines)[:length]
-        # Clean up common scraper noise
-        result = result.replace("\n\n", "\n").strip()
-        return result
+        return "\n".join(body_lines)[:length].replace("\n\n", "\n").strip()
     except Exception:
         return ""
 
@@ -134,37 +127,135 @@ def get_article_hash(path: Path) -> str:
         return path.name[:12]
 
 
-def collect(args: list[str]) -> dict:
+def parse_args(argv: list[str]) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--count", "--limit", dest="count", type=int, default=DEFAULT_COUNT)
+    parser.add_argument("--min-size", type=int, default=DEFAULT_MIN_SIZE)
+    parser.add_argument("--sort", choices=["ai-hint", "recent", "size"], default=DEFAULT_SORT)
+    parser.add_argument("--dry-run", action="store_true", help="do not mark selected articles as processing")
+    parser.add_argument("--estimate", action="store_true", help="include time estimates from successful job history")
+    parser.add_argument("--history-limit", type=int, default=60, help="max successful trace samples to use")
+    args = parser.parse_args(argv)
+    if args.count < 1:
+        parser.error("--count must be positive")
+    if args.min_size < 0:
+        parser.error("--min-size must be non-negative")
+    return args
+
+
+def _parse_iso(value: str | None) -> datetime | None:
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
+def _article_count_from_response(text: str) -> int | None:
+    patterns = [
+        r"処理[:：]\s*(\d+)\s*件",
+        r"All\s+(\d+)\s+articles",
+        r"(\d+)\s+articles\s+(?:triaged|processed)",
+        r"(\d+)\s*記事",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            try:
+                return int(match.group(1))
+            except ValueError:
+                return None
+    return None
+
+
+def estimate_from_history(selected_count: int, total_candidate_count: int, history_limit: int = 60) -> dict[str, Any]:
+    """Estimate runtime from successful raw-backlog-ingest o11y traces."""
+    samples: list[dict[str, Any]] = []
+    if O11Y_DIR.exists():
+        for trace_path in sorted(O11Y_DIR.glob("traces-*.jsonl"), reverse=True):
+            try:
+                lines = trace_path.read_text(encoding="utf-8", errors="replace").splitlines()
+            except Exception:
+                continue
+            for line in reversed(lines):
+                if RAW_BACKLOG_JOB_ID not in line:
+                    continue
+                try:
+                    trace = json.loads(line)
+                except Exception:
+                    continue
+                if not trace.get("completed") or trace.get("interrupted"):
+                    continue
+                session_id = str(trace.get("session_id") or "")
+                if f"cron_{RAW_BACKLOG_JOB_ID}" not in session_id:
+                    continue
+                start = _parse_iso(trace.get("start_time"))
+                end = _parse_iso(trace.get("end_time"))
+                if not start or not end:
+                    continue
+                duration = max(0.0, (end - start).total_seconds())
+                if duration <= 0:
+                    continue
+                metadata = trace.get("metadata") if isinstance(trace.get("metadata"), dict) else {}
+                response = str(metadata.get("last_assistant_response") or "")
+                article_count = _article_count_from_response(response)
+                inferred_article_count = article_count is None
+                if article_count is None:
+                    article_count = DEFAULT_COUNT
+                samples.append({
+                    "trace_file": trace_path.name,
+                    "session_id": session_id,
+                    "start_time": trace.get("start_time"),
+                    "duration_seconds": round(duration, 1),
+                    "article_count": article_count,
+                    "article_count_inferred": inferred_article_count,
+                    "turn_count": metadata.get("turn_count"),
+                    "llm_calls": metadata.get("total_llm_calls"),
+                    "llm_duration_ms": metadata.get("total_llm_duration_ms"),
+                })
+                if len(samples) >= history_limit:
+                    break
+            if len(samples) >= history_limit:
+                break
+
+    if not samples:
+        return {
+            "available": False,
+            "basis": "no successful raw-backlog-ingest o11y traces found",
+            "selected_count": selected_count,
+            "total_candidate_count": total_candidate_count,
+        }
+
+    per_article = [s["duration_seconds"] / max(1, int(s["article_count"])) for s in samples]
+    batch_seconds = [s["duration_seconds"] for s in samples]
+    median_per_article = statistics.median(per_article)
+    median_batch = statistics.median(batch_seconds)
+    p80_per_article = sorted(per_article)[min(len(per_article) - 1, int(len(per_article) * 0.8))]
+
+    return {
+        "available": True,
+        "basis": "successful raw-backlog-ingest o11y traces; per-article scaling is linearized from historical batches",
+        "history_samples": len(samples),
+        "median_batch_seconds": round(median_batch, 1),
+        "median_per_article_seconds": round(median_per_article, 1),
+        "p80_per_article_seconds": round(p80_per_article, 1),
+        "selected_count": selected_count,
+        "estimated_selected_seconds_median": round(median_per_article * selected_count, 1),
+        "estimated_selected_seconds_p80": round(p80_per_article * selected_count, 1),
+        "total_candidate_count": total_candidate_count,
+        "estimated_all_candidates_seconds_median": round(median_per_article * total_candidate_count, 1),
+        "samples": samples[:10],
+    }
+
+
+def collect(argv: list[str] | argparse.Namespace) -> dict[str, Any]:
     """Main collection logic. Returns JSON-serializable result."""
-    count = DEFAULT_COUNT
-    min_size = DEFAULT_MIN_SIZE
-    dry_run = False
-
-    for a in args:
-        if a == "--dry-run":
-            dry_run = True
-        elif a.startswith("--count="):
-            count = int(a.split("=")[1])
-        elif a == "--count":
-            pass  # handled below
-        elif a.startswith("--min-size="):
-            min_size = int(a.split("=")[1])
-
-    # Parse --count N (positional after flag)
-    i = 0
-    while i < len(args):
-        if args[i] == "--count" and i + 1 < len(args):
-            count = int(args[i + 1])
-            break
-        i += 1
+    args = parse_args(argv) if isinstance(argv, list) else argv
 
     # 1. Load tracking data
     tracking = load_tracking()
     processed_filenames = set(tracking.keys())
-    # Honor the processed_articles sub-registry too: pipeline agents record
-    # completion there, and the collector must not re-select those files.
-    # (Observed 2026-08-07: the batch processed 2026-08-06 22:00 was re-selected
-    # at 04:00 because only top-level keys were consulted.)
     sub_registry = tracking.get("processed_articles")
     sub_done = set(sub_registry.keys()) if isinstance(sub_registry, dict) else set()
 
@@ -173,89 +264,98 @@ def collect(args: list[str]) -> dict:
     archived_urls = set(archive.get("urls", []))
     archived_urls_norm = {normalize_archive_url(u) for u in archived_urls}
 
-    # 3. List raw articles, filter unprocessed — pre-compute mtime
+    # 3. List raw articles, filter unprocessed; pre-compute mtime
     now_ts = datetime.now(timezone.utc).timestamp()
     all_articles = []
-    for f in RAW_ARTICLES.iterdir():
-        if not f.is_file() or not f.name.endswith(".md"):
-            continue
-        st = f.stat()
-        size = st.st_size
-        if size < min_size:
-            continue
-        mtime = st.st_mtime
-        all_articles.append((f.name, size, f, mtime))
+    if RAW_ARTICLES.exists():
+        for f in RAW_ARTICLES.iterdir():
+            if not f.is_file() or not f.name.endswith(".md"):
+                continue
+            st = f.stat()
+            size = st.st_size
+            if size < args.min_size:
+                continue
+            all_articles.append((f.name, size, f, st.st_mtime))
 
-    # Parse --sort flag
-    sort_mode = "size"  # default
-    for a in args:
-        if a.startswith("--sort="):
-            sort_mode = a.split("=")[1]
+    if args.sort == "recent":
+        all_articles.sort(key=lambda x: (-x[3], -x[1]))
+    elif args.sort == "ai-hint":
+        ai_terms = [
+            "agent", "llm", "gpt", "claude", "openai", "ai-", "model",
+            "deepseek", "anthropic", "mistral", "gemini", "huggingface",
+            "transformer", "fine-tun", "rag", "prompt", "inference",
+            "coding-agent", "harness", "language-model", "rlhf",
+        ]
 
-    # Sort based on mode
-    if sort_mode == "recent":
-        all_articles.sort(key=lambda x: (-x[3], -x[1]))  # x[3] = mtime
-    elif sort_mode == "ai-hint":
-        ai_terms = ["agent", "llm", "gpt", "claude", "openai", "ai-", "model",
-                     "deepseek", "anthropic", "mistral", "gemini", "huggingface",
-                     "transformer", "fine-tun", "rag", "prompt", "inference",
-                     "coding-agent", "harness", "language-model", "rlhf"]
-        def ai_score(item):
+        def ai_score(item: tuple[str, int, Path, float]) -> int:
             name = item[0].lower()
-            return sum(1 for t in ai_terms if t in name)
-        all_articles.sort(key=lambda x: (-ai_score(x), -x[3], -x[1]))  # x[3] = mtime
+            return sum(1 for term in ai_terms if term in name)
+
+        all_articles.sort(key=lambda x: (-ai_score(x), -x[3], -x[1]))
     else:
         all_articles.sort(key=lambda x: (-x[1], x[0]))
 
-    # Filter: exclude already processed (skip "processing" stuck >1hr)
     candidates = []
+    skipped_processing_fresh = 0
+    skipped_processed = 0
+    skipped_archived = 0
     for name, size, path, mtime in all_articles:
         if name in sub_done:
-            continue  # recorded in processed_articles registry — done
+            skipped_processed += 1
+            continue
         if name in processed_filenames:
             entry = tracking[name]
-            status = entry.get("status", "")
+            status = entry.get("status", "") if isinstance(entry, dict) else ""
             if status == "processing":
-                # Check if stuck
-                collected_at = entry.get("collected_at", "")
+                collected_at = entry.get("collected_at", "") if isinstance(entry, dict) else ""
                 if collected_at:
                     try:
                         ts = datetime.fromisoformat(collected_at).timestamp()
-                        if now_ts - ts > 3600:  # 1 hour timeout
-                            pass  # fall through: re-collect
-                        else:
-                            continue  # still processing, skip
+                        if now_ts - ts <= 3600:
+                            skipped_processing_fresh += 1
+                            continue
                     except Exception:
+                        skipped_processing_fresh += 1
                         continue
                 else:
+                    skipped_processing_fresh += 1
                     continue
             elif status in ("done", "skipped", "error"):
-                continue  # already finished
+                skipped_processed += 1
+                continue
             else:
-                continue  # unknown status, skip
-        # Exclude already-archived URLs (previously triaged skip/reference).
-        # Without this, the collector re-surfaces archived articles forever
-        # (observed 2026-08-12/13: same 5-article batch selected 5 consecutive
-        # runs although all were archived + wiki-captured). URL extraction is
-        # cheap and only runs on candidates that pass the filters above.
+                skipped_processed += 1
+                continue
+
         cand_url = extract_url_from_article(path)
-        if cand_url and (cand_url in archived_urls
-                         or normalize_archive_url(cand_url) in archived_urls_norm):
-            continue  # already archived — previously triaged, do not re-select
+        if cand_url and (cand_url in archived_urls or normalize_archive_url(cand_url) in archived_urls_norm):
+            skipped_archived += 1
+            continue
         candidates.append((name, size, path, mtime))
 
-    # 4. Select top-N candidates
-    selected = candidates[:count]
+    selected = candidates[:args.count]
 
-    # 5. Build output
-    output = {
+    output: dict[str, Any] = {
         "collect_run_id": datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ"),
         "collected_at": datetime.now(timezone.utc).isoformat(),
+        "dry_run": bool(args.dry_run),
+        "selection": {
+            "requested_count": args.count,
+            "sort": args.sort,
+            "min_size": args.min_size,
+        },
         "total_raw_articles": len(all_articles),
         "already_processed": len(processed_filenames),
+        "processed_articles_registry_count": len(sub_done),
         "archived_urls_count": len(archived_urls),
+        "skipped_processing_fresh": skipped_processing_fresh,
+        "skipped_processed": skipped_processed,
+        "skipped_archived": skipped_archived,
+        "candidate_count": len(candidates),
         "candidates_selected": len(selected),
         "candidates_remaining": len(candidates) - len(selected),
+        "candidate_bytes_total": sum(size for _, size, _, _ in candidates),
+        "selected_bytes_total": sum(size for _, size, _, _ in selected),
         "articles": [],
     }
 
@@ -263,35 +363,40 @@ def collect(args: list[str]) -> dict:
         url = extract_url_from_article(path)
         body_excerpt = extract_body_excerpt(path)
         content_hash = get_article_hash(path)
-
-        # Cross-reference with archive
         archive_status = None
         if url and url in archived_urls:
             archive_status = "already_archived"
         elif url:
             archive_status = "not_archived"
 
-        article_info = {
+        output["articles"].append({
             "filename": name,
             "raw_path": str(path),
             "size_bytes": size,
+            "mtime": datetime.fromtimestamp(mtime, timezone.utc).isoformat(),
             "url": url,
             "content_hash": content_hash,
             "archive_status": archive_status,
             "body_excerpt": body_excerpt,
-        }
-        output["articles"].append(article_info)
+        })
 
-        # Mark as "processing" in tracking (unless dry-run)
-        if not dry_run:
+        if not args.dry_run:
             tracking[name] = {
                 "status": "processing",
                 "collected_at": datetime.now(timezone.utc).isoformat(),
                 "size_bytes": size,
                 "url": url,
+                "pipeline": "raw-backlog-ingest",
             }
 
-    if not dry_run:
+    if args.estimate or args.dry_run:
+        output["estimate"] = estimate_from_history(
+            selected_count=len(selected),
+            total_candidate_count=len(candidates),
+            history_limit=args.history_limit,
+        )
+
+    if not args.dry_run:
         save_tracking(tracking)
 
     return output

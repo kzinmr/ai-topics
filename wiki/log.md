@@ -5173,3 +5173,18 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - No wiki file changes
 
 - 2026-09-03 22:30 UTC — **x-accounts-scan** — 11 accounts scanned (budget 12/12 requests, 73 skipped, cursor 20→31), 2 new substantive posts from @eugeneyan, 0 errors. Scraped both Anthropic announcements to `wiki/raw/articles/anthropic.com--news-introducing-claude-fable-5-1-and-claude-mythos-5-1--e7232d52.md` and `wiki/raw/articles/anthropic.com--news-developing-enterprise-frontier-safeguards-with-our-customers--b085c7f1.md`. **Create [[events/claude-fable-5-1-release-sep-2026]]** — Fable 5.1 / Mythos 5.1 release: cache reads $0.25/MTok (-75%), typical workload ~25% / agentic up to ~45% cheaper; vendor benchmark table (Terminal-Bench-Science 52.6%, Terminal-Bench 4.0 55.8%, CursorBench 73.4%, HLE 60.9/65.0%); precision cyber/bio safeguards (-60%/-85% interventions); anti-distillation context-editing block for new API accounts; EU watermark detection API; protein design/Venus DEM/GPU kernel science results; Enterprise Frontier Safeguards (customer-owned storage + CMEK, automated review flags routed to customer, no Anthropic human review, no Anthropic charge). **Update index.md** Events section.
+
+## [2026-09-04] ingest | Active crawl: Daybreak $1B, GPT-6 Astra, AI slop mainstreaming, Cancer Capital
+- Trigger: active-crawl cron; hot-topics.yaml empty + all prior crawl topics covered → pivoted to Sep 2-4 blog/newsletter signals
+- Created:
+  - concepts/daybreak-for-frontline-defenders.md — OpenAI $1B defender initiative (raw saved)
+  - concepts/cancer-capital.md — Anil Dash's VC-as-extraction thesis (raw saved)
+- Updated:
+  - concepts/ai-slop.md — new section "September 2026: Slop Goes Mainstream" (workslop + accessibility study), +2 sources
+  - concepts/ai-slop-productivity-paradox.md — corroboration section (AXe accessibility study as measured slop-productivity gap)
+  - concepts/openai-daybreak.md — September 2026 $1B section
+  - entities/openai.md — September 2026 section (GPT-6 Astra + $1B initiative)
+  - entities/openai-astra.md — same-day Daybreak context
+  - entities/anildash.md — Cancer Capital core-ideas section + source
+  - entities/seangoedecke-com.md — workslop article entry
+- Index: +2 concept entries, total 3023
