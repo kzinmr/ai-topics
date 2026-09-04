@@ -5167,4 +5167,9 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Delivered Discord hot-post based on concepts/world-model-taxonomy, entities/world-labs, entities/fei-fei-li
 - No wiki file changes
 
+## [2026-09-04] query | Hot-post (morning slot 09:30 JST) — Claude Fable 5.1 / Mythos 5.1 + EFS
+- Delivered Discord hot-post based on events/claude-fable-5-1-release-sep-2026, concepts/claude/effort-control, concepts/claude/fable-safety-classifiers-critique, concepts/claude/mythos
+- Angles: effort-curve shift-left, cache-read -75%, Enterprise Frontier Safeguards, false-positive reduction vs Fable 5 guardrail-sabotage backlash
+- No wiki file changes
+
 - 2026-09-03 22:30 UTC — **x-accounts-scan** — 11 accounts scanned (budget 12/12 requests, 73 skipped, cursor 20→31), 2 new substantive posts from @eugeneyan, 0 errors. Scraped both Anthropic announcements to `wiki/raw/articles/anthropic.com--news-introducing-claude-fable-5-1-and-claude-mythos-5-1--e7232d52.md` and `wiki/raw/articles/anthropic.com--news-developing-enterprise-frontier-safeguards-with-our-customers--b085c7f1.md`. **Create [[events/claude-fable-5-1-release-sep-2026]]** — Fable 5.1 / Mythos 5.1 release: cache reads $0.25/MTok (-75%), typical workload ~25% / agentic up to ~45% cheaper; vendor benchmark table (Terminal-Bench-Science 52.6%, Terminal-Bench 4.0 55.8%, CursorBench 73.4%, HLE 60.9/65.0%); precision cyber/bio safeguards (-60%/-85% interventions); anti-distillation context-editing block for new API accounts; EU watermark detection API; protein design/Venus DEM/GPU kernel science results; Enterprise Frontier Safeguards (customer-owned storage + CMEK, automated review flags routed to customer, no Anthropic human review, no Anthropic charge). **Update index.md** Events section.
