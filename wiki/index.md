@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3023
+> Total pages: 3024
 > Last updated: 2026-09-04
 
 ## Entities (918 pages)
@@ -927,7 +927,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2032 pages)
+## Concepts (2033 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1337,6 +1337,7 @@
 - [[concepts/axe-framework]] — Axe — Lightweight AI Agent CLI Framework
 - [[concepts/axolotl-fine-tuning-framework]] — Axolotl — Fine-Tuning Framework
 - [[concepts/axpo]] — AXPO (Agent eXplorative Policy Optimization)
+- [[concepts/ban-artificial-superintelligence-act]] — Ban Artificial Superintelligence Act (Sanders-Casar, 2026) — most restrictive US federal AI bill to date
 - [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
 - [[concepts/back-of-house-patterns]] — Back of House Multi-Agent Patterns
 - [[concepts/base-consistency]] — BASE Consistency Model
