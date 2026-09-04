@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3024
+> Total pages: 3025
 > Last updated: 2026-09-04
 
-## Entities (918 pages)
+## Entities (919 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -252,6 +252,7 @@
 - [[entities/drew-breunig--timeline]] — Drew Breunig — Timeline & Career History
 - [[entities/drew-breunig--writings]] — Drew Breunig Writings
 - [[entities/drmaciver]] — David R. MacIver (DRMacIver)
+- [[entities/dshr]] — David S. H. Rosenthal (DSHR) — Google Chrome OS/Chromebook co-creator; "long archive" digital-preservationist; AI Affordability Crisis + absorption frontier / preservation wall; storage economics, session portability, Google Profile sunset
 - [[entities/droid]] — Droid (Factory) — enterprise agent-native dev platform; Software Factory vision, Router, Shield 2.0, Deferred Context Engine (Aug 2026)
 - [[entities/dsprrr]] — dsprrr
 - [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with Ryan Greenblatt RSI debate (Aug 2026) — recursive self-improvement plausibility, median 2031 for automating AI R&D, alignment implications, reward hacking → takeover extrapolation

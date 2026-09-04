@@ -198,3 +198,4 @@ However, these counterpoints don't address the fundamental math: even with effic
 - [[entities/anthropic]] — Anthropic company overview
 - [[entities/deepseek]] — DeepSeek open-weight models
 - [[entities/meta]] — Meta AI (Llama models)
+- [[entities/dshr]] — David Rosenthal (DSHR) — author of the "AI Affordability Crisis" thesis and its long-archive / absorption-frontier extension

@@ -3,6 +3,11 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
+## [2026-09-04] entity: David Rosenthal (DSHR) — Chrome OS co-creator / long-archive preservationist
+
+Enriched previously-unindexed DSHR blogger into canonical entity page [[entities/dshr]] from four archived blog posts. Identity verified: **David S. H. Rosenthal**, co-creator/co-leader of Google Chrome OS / Chromebook (bio corroborated via search snippets; Wikipedia 403-blocks crawl, dshr.io/about is 404 — finer tenure claims left as unverified). Core thesis: the **long archive** — "the bits you can't open, or can't afford to keep, don't exist" — via (1) the format trap / "choose your own document formats carefully" and (2) "it's the storage, stupid" (sustainable free storage: charge for work, data dies unless someone cares, must be sustainable). Extends his **AI Affordability Crisis** into the **absorption frontier / preservation wall**: data is AI's non-renewable resource; accessibility decay is a slow brake on AI capability. Also captured: **Google Profile near-death** (My Activity export removal vs 2011 "Download Your Data" promise → [[concepts/google-profile-sunset]], [[concepts/session-portability]]) and **"Vibe Coding is Not New"** (hobby COBOL report-card generator, anti-monetization). Added SCHEMA tags `digital-preservation`, `storage-economics`. Backlinked from [[concepts/ai-affordability-crisis]]. Raw: [[raw/articles/2026-09-04_dshr-david-rosenthal-bio-verification.md]], [[raw/articles/2026-09-04_dshr-you-cant-read-the-databits-you-cant-afford-to-store.md]]. index.md +1 (919 entities, total 3025).
+
+
 
 
 ## [2026-09-04] watchdog | wiki-health-fix verification pass
