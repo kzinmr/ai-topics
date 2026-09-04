@@ -1,9 +1,15 @@
 # Wiki Log
-
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
+
+
+## [2026-09-04] watchdog | wiki-health-fix verification pass
+
+- Index corruption: all clean (pipe/line-number/triple-bracket/space-prefix = 0; validate_index.py pass, 3042 lines).
+- Orphan list (24 items): 21 are `_index`/`_archive` files (intentionally not in main index); 1 (`concepts/gemini/gemini-3-8-flash`) already indexed via gemini hub + sibling convention; fixed 1 misplaced insertion (`concepts/ban-artificial-superintelligence-act` was landing after `back-of-house-*` entries instead of `axpo`) - net index entry count unchanged.
+- No ghosts, no skeletons. Stale (2599) and raw backlog (5564) unchanged - manual pipeline work.
 
 ## [2026-09-03] x-accounts-scan | ingest — 2 new posts (Eugene Yan) → Fable 5.1 event page
 
