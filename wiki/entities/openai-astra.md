@@ -2,7 +2,7 @@
 title: "OpenAI Astra"
 type: entity
 created: 2026-08-03
-updated: 2026-09-04
+updated: 2026-09-05
 tags:
   - model
   - openai
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-08-28_openai_cursor-contract-wind-down.md
   - raw/articles/simonwillison.net--2026-sep-3-gpt6-astra--74293eba.md
   - raw/articles/garymarcus.substack.com--p-hot-take-on-gpt-6-astra--fbf12bd8.md
+  - raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-astra.md
 related:
   - entities/openai
   - concepts/gpt/gpt-5-6
@@ -116,6 +117,12 @@ Gary Marcus's immediate reaction zeroed in on the same mechanism as the ARC harn
 **Contested (2026-09-03):** OpenAI frames Astra as the leading frontier model; Artificial Analysis places it below Fable 5.1 on general intelligence, above it on coding-agent cost-efficiency. Both readings are current record until independent third-party evals land.
 
 Source: [[raw/articles/simonwillison.net--2026-sep-3-gpt6-astra--74293eba.md]] (Simon Willison), [[raw/articles/garymarcus.substack.com--p-hot-take-on-gpt-6-astra--fbf12bd8.md]] (Gary Marcus).
+
+### Developer guidance: "Rethinking skills and prompts for GPT-6 Astra"
+
+Eric Provencher (OpenAI Codex DX) published an X Article (Sep 4) framing Astra as an inflection point for agent-scaffolding best practices: accumulated instructions — Skills, AGENTS.md, task prompts — that steered older models now often over-constrain Astra. Key advice: keep skill descriptions minimal (overloaded skills cause Codex to truncate descriptions and misroute), design skills as progressive-disclosure routers rather than elaborate recipes, and re-audit AGENTS.md line-by-line since Astra can decide what to read itself. Full details: [[concepts/agent-skills#\"Rethinking Skills for GPT-6 Astra\" (OpenAI Codex DX, September 2026)]].
+
+Source: raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-astra.md
 
 ### Same-Day Context: Daybreak for Frontline Defenders
 

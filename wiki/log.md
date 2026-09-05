@@ -5199,3 +5199,8 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
   - entities/anildash.md — Cancer Capital core-ideas section + source
   - entities/seangoedecke-com.md — workslop article entry
 - Index: +2 concept entries, total 3023
+
+## 2026-09-05 (ingest: pvncher X Article — Rethinking skills and prompts for GPT-6 Astra)
+- Raw: raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-astra.md (X Article via xurl tweet.fields=article)
+- concepts/agent-skills.md — new section "'Rethinking Skills for GPT-6 Astra' (OpenAI Codex DX, September 2026)": 3 failure modes (description bloat/skill overload, progressive-disclosure routers, overly-specific guidance now hinders) + multi-model caveat + AGENTS.md re-audit; source added; updated 2026-09-05
+- entities/openai-astra.md — "Developer guidance" subsection linking to agent-skills; source added; updated 2026-09-05

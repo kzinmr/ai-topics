@@ -2,7 +2,7 @@
 title: "Agent Skills"
 type: concept
 created: 2026-04-25
-updated: 2026-06-28
+updated: 2026-09-05
 tags:
   - architecture
   - mcp
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-03-09_openai-developers-blog_skills-agents-sdk.md
   - raw/articles/2026-02-11_openai-developers-blog_skills-shell-tips.md
   - raw/articles/2026-01-24_openai-developers-blog_eval-skills.md
+  - raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-astra.md
 related:
   - building-effective-agents
   - effective-harnesses-for-long-running-agents
@@ -141,6 +142,18 @@ OpenAI recommends evaluating skills with the same rigor as any prompt. The metho
 4. **Rubric-based grading** -- use `--output-schema` for structured qualitative checks (component structure, style conventions)
 
 Glean reported that a Salesforce-oriented skill increased eval accuracy from 73% to 85% and reduced time-to-first-token by 18.1% after applying negative examples and edge-case coverage in descriptions.
+
+### "Rethinking Skills for GPT-6 Astra" (OpenAI Codex DX, September 2026)
+
+Eric Provencher (@pvncher), OpenAI's Codex DX lead, published an official course-correction on skills authoring alongside the GPT-6 Astra release ([[entities/openai-astra]]). His thesis: best practices are deflating — *what used to require handholding and scaffolding no longer does*, and instructions accumulated over the past year (Skills, AGENTS.md, task prompts) are now often liabilities. Three failure modes drove an update to the `$skill-creator` skill's guidance:
+
+1. **Description bloat / skill overload** — every skill's `name` + `description` is always loaded into context so the model can route. Too many skills, or descriptions that are too long, cause Codex to *shorten descriptions to fit*, so the model sees less of each and routes worse. Contradictory or "pick me" descriptions load instructions that don't help the task. Fix: descriptions as short as possible while making the trigger condition clear (e.g. "when handling a migration", not "anything database-related").
+2. **Progressive disclosure as the key marker of a useful skill** — reading a skill consumes context, pushing toward compaction and injecting guidance that may not apply. For multi-workflow skills, the root document should be a *minimal router* pointing to supporting docs/scripts — enough to know where to look, without forcing reads that don't matter in the moment. (Consistent with the L1/L2/L3 design above.)
+3. **Overly specific guidance now hinders** — many skills were written as elaborate itineraries/recipes. Models got much better at nuance and ambiguity, so prescriptive step-by-step instructions that previously helped can now constrain results.
+
+He adds a multi-model caveat: repo skills also steer *other contributors' agents*, possibly running different models — guidance tuned for one model may overconstrain GPT-6 Astra. And for AGENTS.md (which applies on every repo task): revisit each instruction and ask whether the task still needs it — requiring a full repo map before a typo fix is excessive, since Astra can decide what to read itself. See [[concepts/agents-md-code-quality]] for the complementary "AGENTS.md as conventions" view.
+
+Source: raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-astra.md
 
 ### Comparison: Anthropic vs OpenAI Skill Patterns
 
