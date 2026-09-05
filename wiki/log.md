@@ -3,7 +3,14 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
-## [2026-09-05] blog-ingest: 24 new; 18 saved + 1 placeholder, 1 unsaved. **GPT-6 Astra announcement** (openai.com/index/gpt-6-astra) scrape failed — placeholder saved for retry; high priority (feeds [[entities/openai-astra]], [[concepts/ai-mathematics-theorem-proving]]). Other AI-relevant raw: simonwillison astra-pelicans + rogue-agent-wikis, garymarcus pause-openai-now, jyn.dev a-year-to-fix-security, nesbitt.io oss-data-trust. **Skip as raw-only**: wheresyoured.at circular-financing-pt2 (economics), daringfireball relays (TestFlight, NBA/Clippers, Adobe CEO, Vinted), filfre.net Porsche, dfarq, anildash VC (already covered by active-crawl 09-04), pluralistic Google skates, johndcook matrix rank, jeffgeerling GPS server, oldnewthing GCL_CBWNDEXTRA, bernsteinbear local variables. No Layer-2 updates this batch (triage stage owns those).
+## [2026-09-05] watchdog | auto-fix: index counts + stray placeholder dedup
+
+- index.md header counts re-synced to filesystem: Entities 919→921, Concepts 2035→2055, Total 3027→3045 (index structure already clean: validate_index.py pass, 0 pipe/line-number/triple-bracket corruption).
+- Removed stray duplicate placeholder `raw/articles/2026-09-04_openai_gpt-6-astra-announcement.md` (left by an interrupted recovery session); canonical recovered text lives at `raw/articles/openai.com--index-gpt-6-astra--gpt-6-astra-new-generation-of-intelligence.md`. Fixed dangling wikilink + prose path in `entities/openai-astra.md`.
+- Pipeline: x-accounts-scan stale (26h) — schedule is every-other-day 22:30, next fire 09-05 22:30 UTC, false positive. blog/newsletter triage+wiki-ingest context-length failures diagnosed → live fix applied to `config/cron-jobs.json` (see config commit).
+- Graph issues (117 dup groups, 2,683 broken links, 468 orphans, 55 missing-frontmatter) verified upstream-clean / NEEDS-HUMAN — see 2026-09-04 graph report; no action this run.
+
+## [2026-09-05] blog-ingest: 24 new; 18 saved + 1 placeholder, 1 unsaved. **GPT-6 Astra announcement** (openai.com/index/gpt-6-astra) scrape initially failed; **recovered 2026-09-05 via x-article-getxapi-fallback** — full announcement body (10,613 chars, sha256-verified) now at `raw/articles/openai.com--index-gpt-6-astra--gpt-6-astra-new-generation-of-intelligence.md` (feeds [[entities/openai-astra]], [[concepts/ai-mathematics-theorem-proving]]). Other AI-relevant raw: simonwillison astra-pelicans + rogue-agent-wikis, garymarcus pause-openai-now, jyn.dev a-year-to-fix-security, nesbitt.io oss-data-trust. **Skip as raw-only**: wheresyoured.at circular-financing-pt2 (economics), daringfireball relays (TestFlight, NBA/Clippers, Adobe CEO, Vinted), filfre.net Porsche, dfarq, anildash VC (already covered by active-crawl 09-04), pluralistic Google skates, johndcook matrix rank, jeffgeerling GPS server, oldnewthing GCL_CBWNDEXTRA, bernsteinbear local variables. No Layer-2 updates this batch (triage stage owns those).
 
 ## [2026-09-04] entity: David Rosenthal (DSHR) — Chrome OS co-creator / long-archive preservationist
 

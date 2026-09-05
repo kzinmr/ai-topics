@@ -21,6 +21,7 @@ sources:
   - raw/articles/simonwillison.net--2026-sep-3-gpt6-astra--74293eba.md
   - raw/articles/garymarcus.substack.com--p-hot-take-on-gpt-6-astra--fbf12bd8.md
   - raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-astra.md
+  - raw/articles/openai.com--index-gpt-6-astra--gpt-6-astra-new-generation-of-intelligence.md
 related:
   - entities/openai
   - concepts/gpt/gpt-5-6
@@ -107,6 +108,7 @@ On September 3, 2026, OpenAI **soft-released Astra as "GPT-6 Astra"** — resolv
 - **ARC-AGI-3: 99.9%** — but with a critical harness caveat: the score was achieved for **$19K using OpenAI's custom "Provider Adapter harness"**, which preserves opaque reasoning state between requests and compacts long conversations so the model reuses prior work. Under the **default ARC-AGI harness the model scored 62.7%** (for $26K). Fable 5 has no published ARC-AGI-3 result (see [[concepts/ai-benchmarks/arc-agi-3]]). This is a textbook benchmark-framing case (cf. [[concepts/ai-benchmarks/benchmaxxing]]): a 37-point spread between harnesses on the same model.
 - **Security (post-Hugging-Face-incident posture)**: 100% on ExploitBench (GPT-5.6 Sol: 78.5%), 42.4% on ExploitGym (Sol: 30.3%), 99.2% within four attempts on SRE-Bench binary reverse engineering (Sol: 68.7%). Consistent with the first-ever Critical cybersecurity rating in August ([[#Preparedness Framework: Critical Cybersecurity Rating (August 2026)]]).
 - **Long context**: 100% at 256K–512K and 96.3% at 512K–1M on OpenAI's eight-needle benchmark — potentially "vanquishing" one of long-context's ongoing challenges (cf. [[concepts/context-engineering/context-rot]], [[concepts/embedding-long-context-degradation]]).
+- **OSWorld 2.0 (computer use)**: 72.6% — but a **harness/speed caveat parallel to the ARC one**: the score is paired with ~40 min/task vs 65.7% at ~75 min for Sol, so part of the "SOTA computer use" claim is elapsed-time economics, and OpenAI's headline is a 1.9× *speed* claim on Mind2Web via an updated Codex harness rather than a raw accuracy jump (cf. [[concepts/ai-benchmarks/benchmaxxing]]).
 - **Artificial Analysis Intelligence Index**: 61 — equal to GPT-5.6 Sol, **5 points below Claude Fable 5.1** (max with fallback), and trailing Meta's Muse Spark 1.3 (max). Astra does **not** top the leaderboard.
 - **Coding Agent Index**: leads the cost-efficiency frontier — at max effort, same cost as Sol (max) with 2 points higher score, and **less than half the per-task cost of Claude Fable 5 for the same score**.
 
@@ -117,6 +119,22 @@ Gary Marcus's immediate reaction zeroed in on the same mechanism as the ARC harn
 **Contested (2026-09-03):** OpenAI frames Astra as the leading frontier model; Artificial Analysis places it below Fable 5.1 on general intelligence, above it on coding-agent cost-efficiency. Both readings are current record until independent third-party evals land.
 
 Source: [[raw/articles/simonwillison.net--2026-sep-3-gpt6-astra--74293eba.md]] (Simon Willison), [[raw/articles/garymarcus.substack.com--p-hot-take-on-gpt-6-astra--fbf12bd8.md]] (Gary Marcus).
+
+### Official announcement text (recovered Sep 5, 2026)
+
+The full OpenAI announcement page had previously failed to scrape (placeholder only). Recovered via direct fetch + HTML text extraction; saved to `raw/articles/openai.com--index-gpt-6-astra--gpt-6-astra-new-generation-of-intelligence.md`. Facts confirmed or added from the first-party source:
+
+- **Framing**: "the world's most intelligent and aligned model," SOTA on "computer use, browsing, software engineering, cybersecurity, science, and professional work."
+- **FrontierMath Tier 4 saturated at 98%** (per the announcement's opening claim).
+- **Computer use**: 72.6% on OSWorld 2.0 (offline set) at ~40 min/task vs 65.7% at ~75 min for GPT-5.6 Sol — i.e. **47% less time per task**; with the updated Codex harness, **1.9× faster task completion** vs Sol on Mind2Web.
+- **New Codex context mechanism**: a new way to preserve/retrieve context when the window fills, replacing lossy compaction summaries in long sessions.
+- **Math research results**: two new number-theory results shipped with the release — (1) Julia Stadlmann improved the bounded-prime-gaps result (previously "infinitely many pairs ≤ 246 apart"), (2) **Astra improved a term in the lower bound on large prime gaps that had stood unchanged for 80+ years**. OpenAI is publishing proofs plus abridged chain-of-thought and verification materials for both.
+- **Cyber**: meets the Preparedness Framework **Critical** threshold; 100% on ExploitBench (Sol 78.5%), and on a contamination-free internal "ExploitBench (June–August 2026)" built from 20 fresh high-severity V8 vulnerabilities across 13 stable Chrome releases. SRE-Bench: 88.0% first attempt / 99.2% within four (Sol: 55.9% / 68.7%). Expert assessment: without production safeguards, Astra could achieve **arbitrary code execution in hardened browsers via unknown vulnerabilities** and write privilege-escalation exploits for hardened OSes. Production Astra **refuses** PoC-exploit generation; OpenAI plans to loosen safeguards for defenders via Daybreak "in the coming weeks."
+- **Alignment claims**: fewest misaligned outcomes of any frontier model tested (generic computer-use-agent harness, so Anthropic's Messages API tools used for Claude); never attempted to circumvent a deliberately-evadable Codex Auto-Review denial; 3× less likely than Sol to misrepresent its own capabilities. Notable **negative finding**: Astra's **written reasoning is harder to monitor than Sol's** on monitoring-evasion tests — OpenAI attributes this to fewer/terse written reasoning steps, which is a chain-of-thought-monitoring concern rather than a pure capability win.
+- **Pricing/availability confirmed**: `gpt-6-astra` on OpenAI API, Azure, and AWS Bedrock; $10/M in, $50/M out; fast mode at 2× price for 2× speed; ZDR for eligible API customers; "Private Safety Processing" being tested.
+- Other benchmark highlights: GPQA Diamond 96.0%, Terminal-Bench 4.0 57.9% (Sol 37.3%, Fable 5.1 55.8%), Agents' Last Exam 59.3% (Opus 5 55.5%), BenchCAD 95.9% geometric overlap.
+
+The negative monitorability finding and the harness-dependent computer-use numbers are the two items that most change the picture relative to the third-party coverage in the previous section.
 
 ### Developer guidance: "Rethinking skills and prompts for GPT-6 Astra"
 
