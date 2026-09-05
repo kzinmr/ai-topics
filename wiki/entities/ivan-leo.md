@@ -1,9 +1,9 @@
 ---
 title: "Ivan Leo"
 created: 2026-05-13
-updated: 2026-06-05
+updated: 2026-09-05
 type: entity
-status: L2
+status: L3
 tags:
   - person
   - ai-agents
@@ -14,6 +14,7 @@ sources:
   - raw/articles/2026-02-28_substack_agents-that-build-themselves.md
   - raw/articles/2026-02-28_youtube_openclaw-from-scratch-workshop.md
   - raw/articles/2026-03-28_youtube_deep-research-agent-workshop.md
+  - raw/articles/2026-09-05_ivanleo_blog-scrape.md
   - transcripts/2026-02-28_youtube_openclaw-from-scratch-workshop.md
   - transcripts/2026-03-28_youtube_deep-research-agent-workshop.md
 ---
@@ -94,10 +95,47 @@ Across both workshops, Ivan demonstrates a consistent pedagogical approach:
 
 ### Blog (ivanleo.com)
 
-Technical deep-dives on agent architecture published at [ivanleo.com](https://ivanleo.com):
-- [It's Alive!](https://ivanleo.com/blog/its-alive) — Tool calling loop, tool factory, self-extension
-- [ET Phone Home](https://ivanleo.com/blog/phone-home) — Hooks, FastAPI server, Telegram integration
-- [Total Recall](https://ivanleo.com/blog/total-recall) — SQLite session persistence, LLM compaction, guardrails
+Technical deep-dives on agent architecture published at [ivanleo.com](https://ivanleo.com). Full essay inventory scraped 2026-09-05 ([[raw/articles/2026-09-05_ivanleo_blog-scrape]]):
+
+- [Value Maxxing](https://ivanleo.com/blog/value-maxxing) (Sep 2026) — Anti token-burn-anxiety: "burning tokens is just a byproduct"; start from small everyday friction, encode "good" into prompts/skills/scripts, and customize software to your exact routine (his Korean-learning workflow: Grokbot Telegram vocab drills, generated quiz web apps, Gemini TTS audio lessons)
+- [How Simple Grep Beats Naive SQL](https://ivanleo.com/blog/grep-beats-sqlite-fts) (Jun 2026) — Benchmark: raw bash (grep/view_file) beat naive SQLite FTS on 300k-token / 94-file Google API docs corpus — 29.6% cheaper, 33.8% fewer conversation steps on multi-hop retrieval. Code: `ivanleomk/agent-search`; traces on Harbor Hub
+- [Three Lessons I've Learned at Manus](https://ivanleo.com/blog/three-lessons-manus) (Dec 2025) — See Manus section below
+- [Agentic Search](https://ivanleo.com/blog/agentic-search) (Oct 2025) — Building self-sufficient context gathering: Exa web search + grep/glob + bash; "what separates a command-line tool from a true AI assistant? the ability to find its own answers"
+- [Building a Coding CLI with React Ink](https://ivanleo.com/blog/migrating-to-react-ink) (Jul 2025) — readlines → React Ink migration with streaming and tool-call refactoring
+- [Building Reliable LLM Applications](https://ivanleo.com/blog/building-reliable-llm-applications) (Jan 2025, NUS talk write-up) — deploy-first paradigm inversion, structured outputs beyond raw JSON, Kura for query understanding, synthetic-data validation
+- Eval trilogy (Nov–Dec 2024): [Write Stupid Evals](https://ivanleo.com/blog/write-stupid-evals), [Simplify your LLM Evals](https://ivanleo.com/blog/writing-extraction-evals) (binary evals for subjective tasks), [Are your eval improvements just pure chance?](https://ivanleo.com/blog/report-error-bars) (error bars for LLM evals), plus [You're probably not doing experiments right](https://ivanleo.com/blog/running-better-experiments) (Nov 2024)
+- [How Instructor Works](https://ivanleo.com/blog/how-does-instructor-work) (Sep 2024) — from_openai / AsyncOpenAI / response_model internals
+
+### Manus tenure (Jul–Mar 2026) — from "Three Lessons I've Learned at Manus" (Dec 22, 2025)
+
+Joined Manus July 27, 2025; on Dec 17, 2025 Manus announced **$100M ARR in 8 months** — the fastest startup ever to that milestone. Ivan's shipped artifacts from this period: Mail Manus (with demo video), the Manus API (became its main developer after weekend bug-fixes), a Stripe integration he validated with real charges on his personal credit card, file suggestions (UX rework: sequential 7s spinner → instant-feel flow with content-type discovery), an AI Engineer Summit NY talk, and internal use of **Kura** (a clustering library he brought with him) to analyze failure modes across Manus's 17+ locales.
+
+Three lessons:
+1. **Your responsibility doesn't end when you ship** — ownership spans first commit to last user: demos, docs with marketing, answering support on X, watching non-engineers use the product to find where it breaks
+2. **Prototypes over plans** — first-day task: email-trigger demo shipped live by Friday ("if it's not real, what's the point?" — boss Panpan); working prototypes buy investment decisions better than documents; scaffolding-balance discovery only comes from fast prototyping against model base tendencies
+3. **Don't pigeonhole yourself** — job title is "AI engineer," actual job is achieving the desired effect: wrote production Go learned by immersion (read PRs, use models to parse unfamiliar patterns, "be wrong fast" with small PRs, ask well-framed questions)
+
+Bar for shipping: a feature has to be "fucking sick or it doesn't ship. Any model with a basic harness can build a landing page. We're chasing the tasks that make you go 'holy shit.'"
+
+## Google DeepMind (Mar 2026–present)
+
+Announced via X on **2026-03-25**: "Life update — I've moved to San Francisco and joined @GoogleDeepMind," joining a developer-relations/DevRel orbit around Logan Kilpatrick, Philipp Schmid, Clemencia Serejo Paige, Thorin Kliesath, and others. Role emphasis per his own posts: spreading Gemini for agentic use cases and developer evangelism.
+
+Observed activities (2026):
+- **Vanishing Gradients deep-research workshop** (Mar 28, 2026) delivered two days after starting — built on Exa + Gemini 3 models
+- **Developer hackathons**: Google DeepMind hackathons including a Stanford edition; recruiting posts ("Join the @GoogleDeepMind team and hack with us")
+- **Science Skills**: `ivanleomk/science-skills` — "GDM Science Skills to speed up agentic scientific workflows with better grounding"; promoted in Value Maxxing alongside Antigravity + AlphaGenome/UniProt literature-lookup workflows
+- **Antigravity demos** (`ivanleomk/Antigravity-Demo`) and **Kaggle benchmark hosting** (`kaggle-benchmark-starter-template`)
+- **FDE-style tooling**: `gdm-trace-analysis` — support-agent traces → loss-pattern analysis take-home (Sep 2026)
+- Also active as an **angel investor** in the agent space ("Looking to angel invest in a few more startups this year," 2026)
+
+## Open-Source Footprint
+
+GitHub ([@ivanleomk](https://github.com/ivanleomk), Singapore-based, 212 public repos):
+- **Core contributor to `instructor`** (structured LLM outputs) and **Kura** (embedding clustering library) — his GitHub bio: "Full Stack programmer turned LLM affectionado"
+- **`gil`** (Apr 2026, ⭐35) — zero-ceremony ergonomic HTTP client for Zig 0.16 (JSON structs in/out, automatic gzip/deflate/zstd) — reflects his systems-side interests beyond Python
+- **`agent-search`** — corpus/code for the grep-vs-FTS benchmark; **`harbor`** — port of the agent-evals/RL-environments framework; **`building-an-agent`** — Claude-based coding agent tutorial
+
 
 ## Design Philosophy
 
@@ -112,5 +150,13 @@ Technical deep-dives on agent architecture published at [ivanleo.com](https://iv
 - [[concepts/agents-that-build-themselves]] — Core concept from the workshop
 - [[entities/openclaw]] — OpenClaw architecture explored in the workshop
 - [[entities/pi]] — Pi coding agent philosophy
-- [[entities/manus]] — Former employer
+- [[entities/manus]] — Former employer (Jul 2025 – Mar 2026, $75M → $100M ARR)
+- [[entities/deepmind]] — Current employer (Mar 2026–present, SF)
+- [[entities/logan-kilpatrick]] — DeepMind colleague / DevRel orbit
 - [[concepts/self-evolving-agents]] — Related concept
+
+## Sources
+
+- [[raw/articles/2026-09-05_ivanleo_blog-scrape]] — Full blog essay inventory + "Three Lessons I've Learned at Manus" (scraped 2026-09-05)
+- [X: @ivanleomk](https://x.com/ivanleomk) — Bio, DeepMind joining post (2026-03-25), Manus/launch posts
+- [GitHub: @ivanleomk](https://github.com/ivanleomk) — 212 repos incl. instructor/Kura contributions, `gil`, `agent-search`, `science-skills`

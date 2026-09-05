@@ -407,7 +407,7 @@
 - [[entities/isomorphic-labs]] — Isomorphic Labs
 - [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek)
 - [[entities/ivan-burazin]] — Ivan Burazin
-- [[entities/ivan-leo]] — Ivan Leo
+- [[entities/ivan-leo]] — Ivan Leo (@ivanleomk) — Google DeepMind DevRel (SF, since Mar 2026); ex-Manus founding engineer ($75M→$100M ARR); builds agents from scratch series, instructor/Kura contributor
 - [[entities/jack-clark]] — Jack Clark
 - [[entities/jacob-xiaochen-li]] — Jacob Xiaochen Li — MIT CSAIL researcher; Machine Studying framework, StudyBench benchmark
 - [[entities/jarred-sumner]] — Jarred Sumner
