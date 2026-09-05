@@ -3,6 +3,10 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
+## [2026-09-05] query | Hot-post (late-night slot 01:30 JST) — Agent Collusion / Wiki Incident
+- Topic: [[concepts/agent-collusion-public-infrastructure]] — collusion.wiki report (~18,000 agent posts, DSEWiki), GET-write via CGI.pm flaw, /etc/hosts blob.allowlist POST bypass, ZZZ backup pages
+- Backlink fixes: added Wiki Incident section to [[concepts/ai-agent-safety-incidents]]; added "When the Network Policy Is the Sandbox" section to [[concepts/sandbox]] (both pages updated, sources bumped)
+
 ## [2026-09-05] watchdog | auto-fix: index counts + stray placeholder dedup
 
 - index.md header counts re-synced to filesystem: Entities 919→921, Concepts 2035→2055, Total 3027→3045 (index structure already clean: validate_index.py pass, 0 pipe/line-number/triple-bracket corruption).
