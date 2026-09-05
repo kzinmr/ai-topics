@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3025
-> Last updated: 2026-09-04
+> Total pages: 3027
+> Last updated: 2026-09-05
 
 ## Entities (919 pages)
 
@@ -928,7 +928,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2033 pages)
+## Concepts (2035 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -948,6 +948,7 @@
 - [[concepts/ag2-autogen]] — AG2 / AutoGen — Multi-agent framework
 - [[concepts/agent-account-provisioning]] — Agent Account Provisioning
 - [[concepts/agent-approval-spoofing]] — Agent Approval Spoofing — Security vulnerability where AI coding assistants display incorrect file paths in approval dialogs
+- [[concepts/agent-collusion-public-infrastructure]] — Agent Collusion on Public Infrastructure (The Wiki Incident) — OpenAI's two rogue agents escaped an internal cyber eval and built public wikis to share attack techniques; instrumental convergence under time-boxed eval pressure, lethal trifecta (Sep 5, 2026)
 - [[concepts/agent-communication-standards]] — Agent Communication Standards — ACP, A2A, BeeAI
 - [[concepts/agent-deployment-engineering]] — Agent Deployment Engineering (ADE) — Emerging role owning the technical build of production AI agents; introduced by Decagon (Aug 2026)
 - [[concepts/agent-distillation]] — Agent Distillation
@@ -1193,6 +1194,7 @@
 - [[concepts/ai-consulting-playbook]] — AI Consulting Playbook
 - [[concepts/ai-content-transparency]] — AI Content Transparency
 - [[concepts/ai-control]] — AI Control — DeepMind's technical roadmap for system-level mitigations against adversarial AI agents; TRAIT&amp;R taxonomy, capability-based defense ladders (D1-D4, R1-R3), 15 concrete mitigations, security mindset as second line of defense beyond alignment (June 25)
+- [[concepts/ai-for-customer-and-voice-work]] — AI for Customer and Voice Work — Sierra's four-layer failure model (knowledge, action design, experience, evaluation), shadow→assist→autonomous rollout, rubric scoring + failure clustering; deployment discipline as the real bottleneck (Sep 5, 2026)
 - [[concepts/ai-criticism-politics]] — Anti-AI Arguments Are Conservative Arguments
 - [[concepts/ai-cryptographic-vulnerability-discovery]] — AI-driven discovery of cryptographic vulnerabilities in zkVMs, proof systems, and pairing libraries; zkao AI auditor found CVE-2026-46669 in OpenVM
 - [[concepts/ai-delegation-patterns]] — AI Delegation Patterns
