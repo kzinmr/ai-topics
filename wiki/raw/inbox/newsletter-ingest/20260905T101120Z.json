@@ -1,0 +1,83 @@
+{
+  "schema_version": "newsletter-triage/1.0",
+  "run_id": "20260905T101120Z",
+  "triaged_at": "2026-09-05T10:35:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 3,
+  "notes": "Redirect resolution done via curl (no browser). Substack redirect links for uid=602 mostly decode to the newsletter post itself (img anchors); uid=603 redirect links decode to real external sources. All 20 beehiiv v2/c/ links for uid=604 returned HTTP 403 (Cloudflare-challenged this run, unlike 2026-08-16 sample) — classified from subject alone.",
+  "classifications": [
+    {
+      "message_id": "<20260904152318.3.2aac335c61dca092@mg-d0.substack.com>",
+      "source": "The Signal (thesignal.substack.com, pub_id=293154) by Alex Banks",
+      "subject": "AI is phasing out the entry-level job",
+      "importance": "high",
+      "newsjacking_score": 4,
+      "relevance": "core",
+      "summary_ja": "AIによるエントリーレベル職の消滅を扱ったエッセイ。外部リンクから一次資料が特定できた: Stanford Digital Economy Lab の Canaries 報告（若年層のAI雇用ギャップ19%に拡大）、Dallas Fed の賃金データ分析（AIは補助と置換を同時に進行）、Indeed 2026 中期UK雇用レポート、Forbes の新卒向け分析、QJE 論文。",
+      "existing_wiki_pages": ["concepts/ai-labor-displacement.md", "concepts/ai-employment-displacement.md"],
+      "recommended_actions": [
+        "concepts/ai-labor-displacement.md を更新: Stanford DSEL Canaries Aug-2026（19% gap）、Dallas Fed 2026-02-24、Indeed UK mid-year report を出典追加",
+        "raw/articles/ へ Stanford DSEL と Dallas Fed ページをスクレイプ保存"
+      ],
+      "key_links": [
+        {"url": "https://thesignal.substack.com/p/ai-is-phasing-out-the-entry-level", "title": "AI is phasing out the entry-level job", "status": 200, "note": "本体記事（paywall可能性あり）"},
+        {"url": "https://digitaleconomy.stanford.edu/news/canariesaug26/", "title": "No Widespread Displacement, but the AI Employment Gap for Young Workers Has Widened to 19%", "status": 200},
+        {"url": "https://www.dallasfed.org/research/economics/2026/0224", "title": "AI is simultaneously aiding and replacing workers, wage data suggest", "status": 200},
+        {"url": "https://hiringlab.indeed.com/uk/blog/2026-08-03/mid-year-uk-jobs-hiring-trends-report/", "title": "Indeed 2026 Mid-Year UK Jobs & Hiring Trends Report", "status": 200},
+        {"url": "https://www.forbes.com/sites/michaeltnietzel/2026-08-02/what-the-changes-in-entry-level-jobs-mean-for-new-college-graduates/", "title": "What The Changes In Entry-Level Jobs Mean For New College Graduates", "status": 200},
+        {"url": "https://academic.oup.com/qje/article-abstract/132/4/1593/3861633", "title": "QJE paper (403 to curl; likely Autor-class task framework paper)", "status": 403},
+        {"url": "https://highfliers.co.uk/publication-the-graduate-market-report", "title": "High Fliers Graduate Market Report (from redirect body)", "status": "unresolved"}
+      ]
+    },
+    {
+      "message_id": "<20260904.190319.27d592ec@mta10>",
+      "source": "beehiiv newsletter (likely Superintel / AI roundup)",
+      "subject": "GPT-6 Astra: OpenAI Calls It the AGI Era",
+      "importance": "critical",
+      "newsjacking_score": 5,
+      "relevance": "core",
+      "summary_ja": "GPT-6 Astra（OpenAIのAGI Era声明）を特集するラウンドアップ。20本のbeehiiv v2/c/リンクは全てHTTP 403（Cloudflare）で解決不可のため件名ベース判定。ただしトピック自体はwikiで重複カバー済み。",
+      "existing_wiki_pages": [
+        "entities/openai-astra.md",
+        "raw/articles/openai.com--index-gpt-6-astra--gpt-6-astra-new-generation-of-intelligence.md",
+        "raw/articles/simonwillison.net--2026-sep-3-gpt6-astra--74293eba.md",
+        "raw/articles/simonwillison.net--2026-sep-4-astra-pelicans--23d7e501.md",
+        "raw/articles/garymarcus.substack.com--p-hot-take-on-gpt-6-astra--fbf12bd8.md",
+        "raw/articles/trendingtopics.eu--is-this-gpt-6-openai-bets-everything-on-new-model-spud--f17ba49f.md",
+        "raw/newsletters/2026-09-04-ainews-gpt-6-astra-openai-s-biggest-llm-launch-of-all-time.md"
+      ],
+      "recommended_actions": [
+        "新規ページ不要 — entities/openai-astra.md は既に存在し、Simon Willison / Gary Marcus / 公式発表のraw記事も揃っている",
+        "newsletter-wiki-ingest では entities/openai-astra.md の sources に本ニュースレターダイジェストを追記するに留める"
+      ],
+      "key_links": [
+        {"url": "https://link.mail.beehiiv.com/v2/c/... (x20)", "title": "all 20 tracking links", "status": 403, "note": "Cloudflare challenge this run; per pitfall #10 re-test in next cycle if content needed"}
+      ]
+    },
+    {
+      "message_id": "<20260904145617.3.b0b2756f849edec9@mg-d0.substack.com>",
+      "source": "Ben's Bites (bensbites.com, pub_id=4379299) by Ben Tossell",
+      "subject": "Scraping 107M rows of data to build this",
+      "importance": "low",
+      "newsjacking_score": 1,
+      "relevance": "peripheral",
+      "summary_ja": "Ben Tossell のセッション#5。英格兰地方議会支出データ（107M行）をスクレイプして対話型マップを作る開発ノット。外部リンクは bentossell.com/council-spend/（Council Spend Map）と同 sessions/ のみで、AI/LLM との直接の関連は薄い。データエンジニアリング/スクレイプ事例としてのみ辺縁的に関連。",
+      "existing_wiki_pages": [],
+      "recommended_actions": [
+        "スキップ推奨 — wiki閾値（Page Thresholds）未達。Ben's Bites / Ben Tossell のentityページが既にあれば1行追記程度"
+      ],
+      "key_links": [
+        {"url": "https://www.bensbites.com/p/scraping-107m-rows-of-data-to-build", "title": "Scraping 107M rows of data to build this (Ben's session #5)", "status": 200},
+        {"url": "https://bentossell.com/council-spend/", "title": "Council Spend Map (demo)", "status": 200}
+      ]
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 1,
+    "low": 1,
+    "wiki_actions_recommended": 1,
+    "skip": 1,
+    "already_covered": 1
+  }
+}
