@@ -1,0 +1,70 @@
+{
+  "schema_version": "newsletter-triage/1.0",
+  "run_id": "20260906T101041Z",
+  "triaged_at": "2026-09-06T10:20:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 2,
+  "notes": "Redirect resolution done via curl (no browser, per pitfall #4). uid=605 Substack redirect/app-link links resolve (via open.substack.com canonical) to the post itself: https://www.latent.space/p/grok-bot (Latent.Space / swyx, pub_id=1084089) — full body fetched via JSON blob (wordcount 2284, guest author Dan McAteer). uid=606's 15 beehiiv v2/c/ links returned HTTP 403 (Cloudflare, consistent with 2026-09-05 run); hp.beehiiv.com link 301-redirects only to /tou (ToS), so the newsletter identity is NOT recoverable — classified from subject alone.",
+  "classifications": [
+    {
+      "message_id": "<20260905150102.3.f4e1d5aaead4531a@mg-d1.substack.com>",
+      "source": "Latent.Space (latent.space, pub_id=1084089) by swyx — guest post by Dan McAteer (@danielmac8, author of Attention Heads / attentionheads.blog, Latent.Space contributor)",
+      "subject": "OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot",
+      "canonical_url": "https://www.latent.space/p/grok-bot",
+      "importance": "high",
+      "newsjacking_score": 4,
+      "relevance": "core",
+      "summary_ja": "AIライター／アジェンティックエンジニアの Dan McAteer が、SpaceXAI の **Grok Bot** を5日間毎日使い込んだレビュー（Latent.Space ゲストポスト、2284語）。主張の核は「Grok Bot は OpenClaw と同程度のプログラミング能力を持ちながら、異なる抽象レベルでプログラム可能」というもの。プラグインカタログからのワンクリック認証（MCPサーバーのJSON設定やAPI鍵の貼り付けが不要）、クラウド上の永続コンピュータ（常時稼働・Update/Reset による状態管理）、デバイス間シームレス移動、仮想ブラウザによる『普通のWebサイトを自動化ワークフロー化』（Freshdeskを15分間隔で巡回する例）を評価する一方、トレードオフとして『モデルピッカーの欠如』『コンテキスト管理レバー（compact/スレッド管理）の隠蔽』『Bot間分離は組織境界であってセキュリティ境界ではない』ことを指摘。結論は『深い実装作業ではなく、その周囲（管理・要約・検索・PM）で輝く“デジタル秘書長（digital chief of staff）”』。OpenClaw（自分宅のベ basement desktop運用、OpenClaw 2.0 の Hostinger ワンクリック管理デプロイにも言及）との直接的比較が主題。",
+      "existing_wiki_pages": [
+        "entities/openclaw.md",
+        "entities/xai.md",
+        "concepts/grok-computer.md",
+        "events/grok-4-6-launch.md"
+      ],
+      "recommended_actions": [
+        "新規 raw記事として https://www.latent.space/p/grok-bot の本文を wiki/raw/articles/ に保存（body-fetch は既に検証済み・curl で本文取得可能）",
+        "entities/openclaw.md を更新: Grok Bot との『抽象レベル／運用責任』比較（自前ホスト管理 vs マネージド永続コンピュータ、OpenClaw 2.0 Hostinger マネージドデプロイ）を出典付きで追記。patchで追記、上書き禁止。",
+        "新規 concept『grok-bot.md』作成を検討（現在 grok bot は passing mention のみ。概念として独立 page 閾値を満たす十分リッチな一次レビューが存在。tags: ai-agents, automation, agent-product; 既存 concepts/grok-computer.md と相互リンク）",
+        "entities/dan-mcateer.md / attention-heads entity が無ければ、Latent.Space contributor として作成候補（低優先）"
+      ],
+      "key_links": [
+        {"url": "https://www.latent.space/p/grok-bot", "title": "OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot", "status": 200, "note": "本体記事（guest: Dan McAteer, 2284語, 本文curl取得可）"},
+        {"url": "https://cursor.com/help/grok-bot/connect-plugins", "title": "Grok Bot plugin catalog / connect plugins (docs)", "status": "unresolved", "note": "本文中の一次リンク。プラグイン認証フローの公式ドキュメント"},
+        {"url": "https://x.com/RhysSullivan/status/2093082308073185516", "title": "Rhys Sullivan: grok bot architecture = real persistent computer", "status": "embedded", "note": "Grok Bot アーキテクチャ（永続マシン上の実エージェント）についてのツイート埋め込み"},
+        {"url": "https://www.attentionheads.blog", "title": "Attention Heads (Dan McAteer の主场newsletter)", "status": "unresolved"}
+      ]
+    },
+    {
+      "message_id": "<20260905.190444.530c2db0@mta31>",
+      "source": "beehiiv AI newsletter (identity NOT recoverable — all v2/c/ links 403, hp.beehiiv link 301→/tou)",
+      "subject": "Why the Same AI Scored 63% and 99% on the Same Test",
+      "importance": "high",
+      "newsjacking_score": 4,
+      "relevance": "core",
+      "summary_ja": "同一のAIモデルが同一テストで63%と99%という乖離スコアを出した理由を扱う記事（ presumably ベンチマーク再現性／スコアリング分散／eval noise／プロンプト依存性）。AI評価の信頼性という wiki 中核テーマに直結。ただし15本の beehiiv v2/c/ リンクが全て HTTP 403（Cloudflare）で、送信ニュースレターの特定も一次記事のURLも回復できず、判定は件名ベースに留まる。",
+      "existing_wiki_pages": [
+        "concepts/ai-evaluation.md",
+        "concepts/llm-evaluation.md",
+        "concepts/quantifying-infrastructure-noise-in-agentic-coding-evals.md",
+        "concepts/ai-benchmarks/"
+      ],
+      "recommended_actions": [
+        "wiki-wiki-ingest でリンク解決を再試行（Cloudflare challenge はランダム通過の可能性。2026-08-16 サンプルでは成功実績 — pitfall #10）。解決できれば一次記事を raw/articles/ に保存",
+        "解決できた場合、AI評価の分散／再現性論点として concepts/llm-evaluation.md（または concepts/evaluation/ 配下）へ出典追記",
+        "解決不可が続く場合、件名トピック（ベンチマークスコアの分散）は concepts/ai-benchmarks/・concepts/llm-evaluation.md で既に網羅済みの可能性が高く、新規ページ不要。送信ニュースレター名の確定を次サイクルに持ち越し"
+      ],
+      "key_links": [
+        {"url": "https://link.mail.beehiiv.com/v2/c/... (x15)", "title": "all 15 tracking links", "status": 403, "note": "Cloudflare challenge this run; re-test in wiki-ingest. Newsletter identity unrecoverable (hp.beehiiv link → /tou only)."}
+      ]
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 2,
+    "low": 0,
+    "wiki_actions_recommended": 2,
+    "skip": 0,
+    "already_covered": 0,
+    "new_pages_candidates": ["concepts/grok-bot.md", "entities/dan-mcateer.md (low priority)"]
+  }
+}
