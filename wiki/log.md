@@ -15,6 +15,9 @@
 Discovered via X bookmark scan (@ivanleomk). Confirmed via xurl: joined **Google DeepMind** 2026-03-25 (moved to SF; DeepMind DevRel orbit around Logan Kilpatrick et al.), ex-Manus founding engineer (Jul 2025–Mar 2026, $75M→$100M ARR). Scraped full ivanleo.com essay inventory (~290 entries) to raw/articles/2026-09-05_ivanleo_blog-scrape.md. Added: full blog essay inventory (grep-beats-SQLite-FTS benchmark, Value Maxxing, Agentic Search, eval trilogy), Manus tenure section from "Three Lessons I've Learned at Manus" (ownership beyond shipping / prototypes over plans / don't pigeonhole yourself; Go by immersion), Google DeepMind section (science-skills, Antigravity, hackathons, Vanishing Gradients workshop 2 days after starting), Open-Source Footprint (instructor/Kura core contributor, gil Zig HTTP client, agent-search, harbor). Related: deepmind, logan-kilpatrick. Also fixed stale bare index.md entry for ivan-leo.
 
 
+## [2026-09-06] query | Hot-post (late-night slot 01:30 JST) — AI Code Provenance / attestation vs detection
+- Delivered Discord hot-post based on concepts/ai-code-provenance-in-open-source, concepts/llm-policies-open-source, concepts/ai-supply-chain-security (TanStack SLSA parallel), concepts/ai-generated-issues-in-oss. No wiki content changes.
+
 ## [2026-09-05] query | Hot-post (late-night slot 01:30 JST) — Agent Collusion / Wiki Incident
 - Topic: [[concepts/agent-collusion-public-infrastructure]] — collusion.wiki report (~18,000 agent posts, DSEWiki), GET-write via CGI.pm flaw, /etc/hosts blob.allowlist POST bypass, ZZZ backup pages
 - Backlink fixes: added Wiki Incident section to [[concepts/ai-agent-safety-incidents]]; added "When the Network Policy Is the Sandbox" section to [[concepts/sandbox]] (both pages updated, sources bumped)
