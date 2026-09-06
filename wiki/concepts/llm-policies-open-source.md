@@ -1,12 +1,14 @@
 ---
 title: LLM Contribution Policies in Open-Source Projects
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-06
 type: concept
 tags: [open-source, ai-governance, policy, rust, coding-agents]
 sources:
   - raw/articles/2026-08-05_lwn_rust-llm-contribution-policy.md
+  - raw/articles/openjdk.org--legal-ai--7752a6b0.md
 related:
+  - concepts/ai-code-provenance-in-open-source
   - concepts/open-source-llm-governance-debian-gr.md
   - concepts/open-source-ai.md
   - concepts/coding-agents/coding-agents.md
@@ -31,6 +33,12 @@ LLM-generated contributions raise concerns across multiple dimensions:
 | **Training Data Contamination** | LLMs trained on OSS code may reproduce it verbatim, creating copyleft violations. |
 
 ## Major Project Policies
+
+### OpenJDK / Oracle (August 2026) — interim ban
+
+OpenJDK's [Interim Policy on Generative AI](https://openjdk.org/legal/ai), approved by the Governing Board, is the most restrictive formal policy of the 2026 wave: contributions "must not include content generated, in part or in full, by large language models, diffusion models, or similar deep-learning systems" — covering source, text, and images in repos, PRs, email, wiki, and JBS issues. Rationale is a risk triad: reviewer burden, safety/security (JDK underpins mission-critical systems), and IP (the Oracle Contributor Agreement requires contributors to own contribution IP; AI output can reproduce training data, and user IP rights in AI output are in active litigation).
+
+Key mechanics: private use of GenAI for comprehension/debugging/review is explicitly permitted; light human editing does not launder AI output ("100 lines generated, 10 edited → No"); Skara PR tooling adds a mandatory affirmation checkbox. The policy concedes AI-vs-human detection is "impossible," so it substitutes attestation for detection. A full policy is to be proposed to the Governing Board later. See [[concepts/ai-code-provenance-in-open-source]] for the provenance-mechanism analysis.
 
 ### Rust Language Project (August 2026)
 

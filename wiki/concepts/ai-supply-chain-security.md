@@ -1,7 +1,7 @@
 ---
 title: AI Supply Chain Security
 created: 2026-05-21
-updated: 2026-06-26
+updated: 2026-09-06
 type: concept
 tags:
   - concept
@@ -66,6 +66,10 @@ Andrew Nesbitt's fictional "Incident Report: CVE-2026-LGTM" (June 2026) serves a
 
 Related: [[entities/andrew-nesbitt]]
 
+### 6. Code Provenance for AI Contributions (Sep 2026)
+
+A distinct supply-chain dimension emerged in the 2026 policy wave: provenance of the *contributed code itself* (human vs AI-generated), as opposed to provenance of the build pipeline. OpenJDK's Skara PR affirmation checkbox is effectively a lightweight, human-scale attestation mechanism analogous to SLSA attestations — but, like SLSA (see TanStack worm above), it attests only what the attester claims, not what was actually generated. See [[concepts/ai-code-provenance-in-open-source]] for the OpenJDK/Rust/Debian mechanism comparison and why detection-based verification remains out of reach (C2PA-style watermarking for code is the open research question).
+
 ## Responses and Mitigations
 
 Organizations are responding with:
@@ -76,6 +80,8 @@ Organizations are responding with:
 
 ## Related Pages
 - [[concepts/security-and-governance/ai-safety]] — Broader AI safety framework
+- [[concepts/ai-code-provenance-in-open-source]] — human-scale provenance attestation for AI contributions
+- [[concepts/llm-policies-open-source]] — OSS project LLM contribution policies
 - [[entities/openai-codex]] — Codex command injection incident
 - [[concepts/openai/tanstack-supply-chain-2026]] — TanStack worm detailed analysis
 - [[events/distillation-attacks-2026]] — Related: supply chain concerns in model distillation

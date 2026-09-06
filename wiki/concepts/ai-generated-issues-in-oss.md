@@ -1,7 +1,7 @@
 ---
 title: AI-Generated Issues in Open Source
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-09-06
 type: concept
 tags:
   - ai-agents
@@ -107,9 +107,23 @@ Current approaches being tried by affected projects:
 - **Issue templates** that enforce the 4-point human-observation format and discourage AI-generated analysis in the issue body
 - **Community norms** — educating users that LLM-generated issue reports harm maintainers and slow down fixes
 
+## Policy Responses (2026)
+
+Projects have responded with formal contribution policies — see [[concepts/llm-policies-open-source]] for the full landscape and [[concepts/ai-code-provenance-in-open-source]] for the attestation/detection mechanics:
+
+| Project | Policy outcome (as of Sep 2026) | Relationship to issue/PR spam |
+|---|---|---|
+| OpenJDK | Interim **ban** on all GenAI-generated content + mandatory Skara PR affirmation checkbox | Ban eliminates the artifact-level spam vector; checkbox creates a paper trail for post-hoc enforcement |
+| Rust | Disclosure + contributor verification burden | Assisted work OK; generated output must be disclosed and verified by the contributor |
+| Debian | General Resolution (three-way vote: ban / as-far-as-practical / conditional) | Democratic process itself strained by AI-generated mailing-list volume |
+| Gentoo | Ban (2024, early mover) | Copyright rationale predates the spam wave |
+| Pi (Ronacher) | Auto-close ~80% of external issues/PRs with manual reopen | Pure triage strategy — no formal policy, tooling-only defense |
+
 ## See Also
 
 - [[pi-coding-agent]] — the project whose maintainers documented this crisis
 - [[entities/armin-ronacher]] — primary source and advocate for better issue quality
 - [[open-source-ai-era]] — broader implications of AI on open source collaboration
 - [[over-engineering-by-llms]] — the parallel problem of LLM-generated code complexity
+- [[concepts/llm-policies-open-source]] — formal project policies responding to this crisis
+- [[concepts/ai-code-provenance-in-open-source]] — attestation-vs-detection mechanics behind those policies
