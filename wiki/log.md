@@ -1,3 +1,12 @@
+## [2026-09-06] watchdog | wiki-health-fix auto-repair
+
+- Verified index.md clean: pipe/line-number/triple-bracket/space-prefix corruption = 0, validate_index.py passed.
+- Orphan index registration: added 3 real pages to index.md — `concepts/llm-idea-convergence`, `concepts/gemini/gemini-3-8-flash`, `queries/agent-capability-set-hyperbo-decomposition`.
+- Remaining 22 reported orphans are `_index.md` hub files (20) and `_archive/` pages (2) — intentionally not indexed. Ghost entries: 0.
+- Counts updated: Concepts 2035→2037, Queries 5→6, Total 3028→3031.
+
+---
+
 # Wiki Log
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`

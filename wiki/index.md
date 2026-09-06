@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3028
+> Total pages: 3031
 > Last updated: 2026-09-06
 
 ## Entities (919 pages)
@@ -928,7 +928,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2035 pages)
+## Concepts (2037 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1046,6 +1046,7 @@
 - [[concepts/jepa-world-models]] — JEPA World Models — Joint Embedding Predictive Architecture for world models (LeCun, LeMario)
 - [[concepts/juggler]] — Juggler — Open-source GUI coding agent by JUCE creator Julian Storer
 - [[concepts/lingbot-world-infinity]] — LingBot-World-Infinity — Open-source world model with 60-minute coherent rollouts from Tsinghua THU-KING-NIC-Lab
+- [[concepts/llm-idea-convergence]] — LLM Idea Convergence — parallel/independent invention of the same LLM tooling ideas across the ecosystem
 - [[concepts/materialized-agent-memory]] — Materialized Agent Memory — Datalog-backed truth-maintenance for long-horizon agents; incremental invalidation of derived beliefs (pwning.systems, Aug 2026)
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
 - [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
@@ -1838,6 +1839,7 @@
 - [[concepts/gemini/gemini-3-2-flash]] — Gemini 3.2 Flash
 - [[concepts/gemini/gemini-3-5-flash]] — Gemini 3.5 Flash
 - [[concepts/gemini/gemini-3-7-flash]] — Gemini 3.7 Flash — Google's most intelligent workhorse model for coding/agents; FrontierCode 43.6%, DeepSWE 65.3%, $0.75/$3.75 per MTok intro; powers Gemini Spark
+- [[concepts/gemini/gemini-3-8-flash]] — Gemini 3.8 Flash
 - [[concepts/gemini/gemini-cli]] — Gemini CLI
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/gemini/gemini-managed-agents]] — Gemini Managed Agents
@@ -3037,10 +3039,11 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (5 pages)
+## Queries (6 pages)
 
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
 - [[queries/wiki-graph-analysis-weekly-2026-08-28]] — Weekly Wiki Graph Analysis (2026-08-28) — 3,021 pages scanned; 478 orphans (475 content-rich), 3,555 broken links (197 fixable), 16 dup groups (8 false positives), 1,725 stale pages
 - [[queries/wiki-graph-analysis-weekly-2026-08-28-annotations]] — Human-adjudicated verdicts on this week's 16 duplicate groups (5 real dups incl. Lilian Weng fact conflict) + false-positive metrics in the auto report
+- [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
