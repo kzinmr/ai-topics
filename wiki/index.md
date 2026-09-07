@@ -4,7 +4,7 @@
 > Total pages: 3031
 > Last updated: 2026-09-06
 
-## Entities (919 pages)
+## Entities (920 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -410,6 +410,7 @@
 - [[entities/ivan-leo]] — Ivan Leo (@ivanleomk) — Google DeepMind DevRel (SF, since Mar 2026); ex-Manus founding engineer ($75M→$100M ARR); builds agents from scratch series, instructor/Kura contributor
 - [[entities/jack-clark]] — Jack Clark
 - [[entities/jacob-xiaochen-li]] — Jacob Xiaochen Li — MIT CSAIL researcher; Machine Studying framework, StudyBench benchmark
+- [[entities/jakub-pachocki]] — Jakub Pachocki — OpenAI Chief Scientist; IMO medalist; author of "An Alien Mind" (6 Sep 2026) framing GPT-6 Astra as alien superintelligence rather than AGI
 - [[entities/jarred-sumner]] — Jarred Sumner
 - [[entities/jason-liu]] — Jason Liu
 - [[entities/jason-liu--context-engineering]] — Jason Liu — Context Engineering
@@ -928,11 +929,12 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2037 pages)
+## Concepts (2038 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
 - [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)
+- [[concepts/agi-declaration-controversy-2026]] — The AGI Declaration Controversy (Sep 2026) — Jensen Huang's "race to AGI is over" claim after GPT-6 Astra; no definition/evidence, Marcus + Chollet (ARC-AGI 3) counter-evidence, incentive table, tension with Pachocki's "alien mind" framing
 - [[concepts/abliteration]] — Abliteration
 - [[concepts/absurd-durable-execution]] — Absurd (Postgres-Native Durable Execution)
 - [[concepts/activation-steering]] — Activation Steering — Technique for modifying model behavior by manipulating internal activations

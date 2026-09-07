@@ -11,6 +11,12 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
+## [2026-09-07] trending-topics | 7 topics report + index registration
+- Report: inbox/rss-scans/trending-topics-2026-09-07.md (Discord delivery)
+- Register in index.md: concepts/agi-declaration-controversy-2026, entities/jakub-pachocki (created earlier today by morning pipelines, missing from index)
+- Recompute raw sha256: 2026-09-07 raw files (4)
+- Topics: (1) RSI day at OpenAI — Pachocki "An Alien Mind" 425pts + Research acceleration 185pts, (2) AGI declaration controversy (Huang/Marcus/Chollet), (3) Alderson "AI safety vs security" frontier-lab sandbox escapes, (4) Lopopolo agent platform capability composition, (5) AI code provenance in OSS (OpenJDK), (6) Nitter/XCancel legal aftermath, (7) skills-file management discourse (Ask HN 166pts)
+
 ## [2026-09-05] enrich | entities/ivan-leo (L2→L3)
 Discovered via X bookmark scan (@ivanleomk). Confirmed via xurl: joined **Google DeepMind** 2026-03-25 (moved to SF; DeepMind DevRel orbit around Logan Kilpatrick et al.), ex-Manus founding engineer (Jul 2025–Mar 2026, $75M→$100M ARR). Scraped full ivanleo.com essay inventory (~290 entries) to raw/articles/2026-09-05_ivanleo_blog-scrape.md. Added: full blog essay inventory (grep-beats-SQLite-FTS benchmark, Value Maxxing, Agentic Search, eval trilogy), Manus tenure section from "Three Lessons I've Learned at Manus" (ownership beyond shipping / prototypes over plans / don't pigeonhole yourself; Go by immersion), Google DeepMind section (science-skills, Antigravity, hackathons, Vanishing Gradients workshop 2 days after starting), Open-Source Footprint (instructor/Kura core contributor, gil Zig HTTP client, agent-search, harbor). Related: deepmind, logan-kilpatrick. Also fixed stale bare index.md entry for ivan-leo.
 
