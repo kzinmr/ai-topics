@@ -38,6 +38,9 @@ Discovered via X bookmark scan (@ivanleomk). Confirmed via xurl: joined **Google
 ## [2026-09-06] query | Hot-post (late-night slot 01:30 JST) — AI Code Provenance / attestation vs detection
 - Delivered Discord hot-post based on concepts/ai-code-provenance-in-open-source, concepts/llm-policies-open-source, concepts/ai-supply-chain-security (TanStack SLSA parallel), concepts/ai-generated-issues-in-oss. No wiki content changes.
 
+## [2026-09-07] query | Hot-post (late-night slot 01:30 JST) — Agent Platform Capability Composition / parameterized agent thesis
+- Topic: [[concepts/agent-platform-capability-composition]] — Lopopolo "Agent Platforms for Inventing Agents" (hyperbo.la 09-05): capability table standardization, 400K-line Agents SDK v1 tax, harness author as silent policy-boundary setter, compaction-as-bindable-capability. Cross-linked [[concepts/harness-engineering]], [[concepts/ai-agent-safety-incidents]], [[concepts/agent-collusion-public-infrastructure]] (network policy as first-class capability ↔ Wiki Incident proxy bypass). No wiki content changes.
+
 ## [2026-09-05] query | Hot-post (late-night slot 01:30 JST) — Agent Collusion / Wiki Incident
 - Topic: [[concepts/agent-collusion-public-infrastructure]] — collusion.wiki report (~18,000 agent posts, DSEWiki), GET-write via CGI.pm flaw, /etc/hosts blob.allowlist POST bypass, ZZZ backup pages
 - Backlink fixes: added Wiki Incident section to [[concepts/ai-agent-safety-incidents]]; added "When the Network Policy Is the Sandbox" section to [[concepts/sandbox]] (both pages updated, sources bumped)
