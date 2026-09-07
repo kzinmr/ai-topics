@@ -2,14 +2,17 @@
 title: Hynek Schlawack
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-09-05
 tags:
   - person
   - developer-tooling
   - open-source
   - software-engineering
   - testing
-sources: []
+sources:
+  - raw/articles/github.com--hynek-pgbg--45a5ace0.md
+  - raw/articles/bgt.hynek.me----dbcb8683.md
+
 ---
 
 
@@ -111,6 +114,41 @@ He advocates for:
 | **PyOpenSSL** | Python wrapper for OpenSSL | Core cryptography infrastructure |
 | **Twisted** | Event-driven networking engine | Long-time contributor and committer |
 | **cryptography** | Python cryptographic primitives | Rust backend advocate |
+| **pgbg** | PostgreSQL-orchestrated background threads for Python (Psycopg 3) | Announced 2026-09-02 as his first free-threading-era contribution; NOTIFY dispatcher + supervisor + PG leader election |
+| **bgt** | Database-agnostic supervised background threads (crash-only service loops, backoff, structlog+Prometheus) | Split out of pgbg on 2026-09-04; the "engine underneath pgbg" |
+| **argon2-cffi-bindings** | Low-level CFFI bindings for Argon2 | Ships pre-built Pyodide/Emscripten (WASM) wheels as of PR #129 (2026-08-29) |
+
+### Free-threading (nogil) contributions
+
+Hynek has long advocated for **free-threaded CPython (PEP 703 / nogil)**. His
+recurring argument: don't judge threads by the APIs Python *has*, but by the
+APIs people will build *once threads are worth the trouble*. In September 2026
+he delivered his own first contribution in that world:
+
+- **pgbg** (2026-09-02) — "PostgreSQL-orchestrated background threads for
+  Python". A NOTIFY dispatcher (one DB connection per process waking many
+  subscribers) plus a supervisor that runs your code as a crash-only service
+  loop in a background thread, with PostgreSQL-based leader election and
+  automatic failover. Wakeups fire on `NOTIFY`, fixed intervals, or both. Core
+  targets Psycopg 3 only; optional SQLAlchemy and `psycopg-pool` extras.
+  ([announcement tweet](https://x.com/hynek/status/2095138703593144424),
+  [repo](https://github.com/hynek/pgbg), docs at pgbg.hynek.me)
+- **bgt** (2026-09-04) — "I've decided to cut pgbg in two and liberate the
+  database-agnostic parts." `bgt` is the supervised-service engine underneath
+  pgbg: `bgt.SupervisedService.start(...)` runs a bounded work unit in a loop
+  in a background thread, restarting with exponential backoff on crashes,
+  instrumented with structlog and Prometheus, with flexible wakeup policies
+  (e.g. `IntervalOnlyWakeup`). pgbg layers PostgreSQL LISTEN/NOTIFY wakeups and
+  leader election on top.
+  ([announcement tweet](https://x.com/hynek/status/2095915683846480161),
+  [docs](https://bgt.hynek.me/))
+- **pyodide / WASM wheels** (2026-08-29) — shipped pre-built Pyodide
+  (Emscripten) wheels for argon2-cffi-bindings (PR #129). WASM/pyodide
+  compatibility had existed for years; the change is that wheels are now
+  pre-built, removing the configuration pain ("pyiodide was a PITA to configure
+  but no code changes").
+  ([PR](https://github.com/hynek/argon2-cffi-bindings/pull/129))
+
 
 ### Notable Blog Posts
 

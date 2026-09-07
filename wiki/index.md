@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3033
+> Total pages: 3034
 > Last updated: 2026-09-07
 
 ## Entities (922 pages)
@@ -3009,7 +3009,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (30 pages)
+## Events (31 pages)
+
+- [[events/neomme-release-sep-2026]] — NeoMME Release (H Company, Sep 3, 2026) — 260M/800M multimodal-native multilingual encoders trained from scratch (no vision tower, masked-diffusion); dual dense+late-interaction retriever heads on ViDoRe v3 Pareto frontier; 255× late-interaction index compression; Apache 2.0
 
 - [[events/claude-fable-5-1-release-sep-2026]] — Claude Fable 5.1 & Mythos 5.1 Release (September 2026) — same model/different safeguards; cache reads -75%, agentic benchmark gains, precision safeguards, Enterprise Frontier Safeguards (EFS), anti-distillation context-editing block
 - [[events/hermes-agent-v0.21.0-pantheon-release]] — Hermes Agent v0.21.0 "Pantheon Release" (Aug 31, 2026) — Bots Mode, Agent 2 Agent Comms, Persistent Multi-Gateway Connections, Subagent Steering, ~50% default context reduction; ~5,800 commits since v0.20.0

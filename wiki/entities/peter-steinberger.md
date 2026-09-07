@@ -4,8 +4,8 @@ type: entity
 entity_type: person
 status: L3
 created: 2026-04-13
-updated: 2026-06-21
-sources: [https://steipete.me/, https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/, https://github.com/steipete, raw/articles/2026-05-30_steipete_my-agent-stack-for-automating-my-personal-life.md, raw/articles/2026-06-07_steipete-design-loops-dont-prompt.md, raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing.md, raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md]
+updated: 2026-09-05
+sources: [https://steipete.me/, https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/, https://github.com/steipete, raw/articles/2026-05-30_steipete_my-agent-stack-for-automating-my-personal-life.md, raw/articles/2026-06-07_steipete-design-loops-dont-prompt.md, raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing.md, raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md, raw/articles/github.com--openclaw-releases-tag-v2026.9.2--14c620a1.md]
 tags:
   - person
   - ai-agents
@@ -39,6 +39,7 @@ Peter Steinberger grew up in rural Austria and bootstrapped **PSPDFKit**, a mobi
 | Feb 2026 | Joined OpenAI | Sam Altman welcomed him to "drive next generation of personal agents" |
 | Apr 2026 | Anthropic-OpenClaw Conflict | Anthropic blocked third-party tools; Steinberger's account suspended then restored |
 | 2026 | Prolific Open-Source | 15k+ GitHub stars across projects; 46k+ GitHub followers |
+| Sep 2026 | OpenClaw 2026.9.2 | Ships Muse Spark 1.3 + Astra model support (announced via X, Sep 5 2026) |
 
 ## Core Ideas
 
@@ -187,6 +188,18 @@ Steinberger maintains a live blurb at **whatmodelispeterusing.com** — tracking
 
 - **"Build the Thing That Builds the Thing"** (Jun 2026, Microsoft Build BRK245): 45-min breakout on the meta-development philosophy behind OpenClaw's automation ecosystem — ClawSweeper (auto-closing 15K issues), Octopus (API token balancing), Crab Box (isolated cloud test infra), Auto Review (iterative agent self-review), Core Patch (parallel audits), Crab Fleet (multiplayer agent dev). [[raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing]]
 - **"Builders Unscripted: Ep. 1 — Peter Steinberger, Creator of OpenClaw"** (Feb 2026): 31-min interview with Romain Huet (OpenAI). Covers OpenClaw's viral growth, building with Codex, "vibe coding" critique, and open source philosophy. Recorded prior to joining OpenAI. [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]
+
+
+### OpenClaw 2026.9.2 — Muse Spark 1.3 & Astra Support (Sep 2026)
+
+On 2026-09-05 Steinberger shipped **OpenClaw v2026.9.2** ("just finished", per his X post — macOS builds trailing the other platforms). Highlights per the release notes:
+
+- **Muse Spark 1.3 and Astra model support** added — extending OpenClaw's model coverage to the newest OpenAI-lineage models.
+- **Faster, more responsive chat**: chat, dashboards, and session interactions stay responsive while long transcripts and disk usage are processed in the background (direct dashboard lookup, less blocking work on the hot path).
+
+The release is a small but telling data point on OpenClaw's cadence: model-support lag against new frontier releases is now measured in days, and the release itself is shipped by Steinberger's own agent-driven process ("Build the Thing That Builds the Thing" applied to OpenClaw maintenance).
+
+Source: [[raw/articles/github.com--openclaw-releases-tag-v2026.9.2--14c620a1.md]]; announcement: [@steipete on X](https://x.com/steipete).
 
 ## Sources
 

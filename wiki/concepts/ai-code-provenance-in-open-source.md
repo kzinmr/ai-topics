@@ -14,7 +14,7 @@ related:
   - concepts/ai-generated-issues-in-oss
   - concepts/open-source-sustainability
   - concepts/agent-security
-confidence: high
+confidence: medium   # single primary policy source + one secondary (LWN Rust); claims traceable but thinly corroborated
 ---
 
 # AI Code Provenance in Open Source

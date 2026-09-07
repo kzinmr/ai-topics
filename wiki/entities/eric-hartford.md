@@ -3,7 +3,7 @@ title: Eric Hartford
 type: entity
 handle: "@QuixiAI"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-09-07
 tags:
   - person
   - model
@@ -119,6 +119,15 @@ His work was **sponsored by a16z**, which provided compute resources for Dolphin
 - **Pankaj Mathur** — Microsoft researcher on the Orca paper that inspired Dolphin
 - **Wing "Caseus" Lian** — OpenAccess AI Collective; Dolphin collaborator
 - **Tom "TheBloke" Jobbins** — Quantized Dolphin models for community use
+
+## Dataset Defense (September 2026)
+
+In a Sept 7 exchange involving @OpenAI and @AnthropicAI (distillation debate),
+Hartford asserted "I make awesome datasets!" and pointed to his QuixiAI Hugging Face
+datasets, explicitly denying they are OpenAI distillation products:
+https://huggingface.co/QuixiAI/datasets — consistent with his long-standing position
+that open fine-tuning datasets are independently built, not scraped from frontier-lab
+outputs.
 
 ## X Activity Themes
 

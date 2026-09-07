@@ -2,7 +2,7 @@
 title: Eric Zhang
 type: entity
 created: 2025-11-17 16:10:46
-updated: 2026-04-10 10:00:00
+updated: 2026-09-07
 aliases: [ekzhang, Eric Zhang]
 status: active
 description: "Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab."
@@ -177,6 +177,19 @@ Photorealistic path tracer for rendering 3D scenes. Won top project out of 100 s
 - Container sandboxing via gVisor and eBPF network infrastructure
 - WireGuard-based VPN
 - Modal Notebooks with real-time collaboration and GPUs
+
+## Recent Notes
+
+- **jax-js maturity (Sep 4, 2026):** told @JesseMMichel that jax-js is "very ready,"
+  supporting broader coverage than TensorFlow.js and running "quite a bit faster";
+  also highlighted a differentiable programming-languages demo (Fluent by mlajtos).
+  Docs: https://jax-js.com/docs/README
+- **"RL is the 2026 big data" (Aug 28, 2026):** while reading for the NY Systems
+  Reading Group, quipped that RL resembles the 2014 "big data" wave — "really simple
+  ideas, and just scale it up a ton: add fault-tolerance, evolving standards,
+  schedulers, observability, queues, 12 competing frameworks." A systems-engineering
+  reading of the RL boom: the differentiator is plumbing, not algorithms.
+  (NY SRG: https://notes.ekzhang.com/events/nysrg)
 
 ## Related Wikilinks
 

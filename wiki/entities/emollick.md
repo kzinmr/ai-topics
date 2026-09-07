@@ -3,7 +3,7 @@ title: Ethan Mollick
 type: entity
 handle: "@emollick"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-09-07
 tags:
   - person
   - education
@@ -132,6 +132,19 @@ Mollick's Substack "One Useful Thing" publishes multiple times per week and cove
 - **Darius Teter** — Host of Stanford GSB podcast featuring Mollick's AI masterclass
 - **Simon Willison** — Fellow public AI educator with overlapping audiences but different technical focus
 - **Andrej Karpathy** — Both explore how to use AI effectively; Karpathy from engineering, Mollick from business/education
+
+## Notable X Posts (September 2026)
+
+- **AI Referee Paper Leaderboard (Sep 6):** highlighted an experiment from
+  Georgetown's AI, Analytics, and the Future of Work Initiative where an ensemble of
+  LLM referees retroactively scores finance & economics working papers, publicly
+  surfacing both opportunities and problems in published research. Mollick called it
+  "a sign of a tsunami coming for academia" — AI reading the research backlog at
+  scale and publishing judgements. Leaderboard: https://d3jhl7jsny6f2h.cloudfront.net/
+- **GPT-6 D&D demo (Sep 7):** re-ran a years-old D&D encounter experiment "with
+  GPT-6" — a fully rolled mind flayer vs. drow duel rendered as a cinematic 3D
+  Underdark webpage (underdark-duel.netlify.app); noted the model got the 5E 2014
+  stat block right (101-bone skeletal rig) with no major rules errors.
 
 ## X Activity Themes
 

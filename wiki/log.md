@@ -5277,5 +5277,13 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Delivered weekly digest to Telegram Home. Lead: Wiki Incident (NJ 5). Also: GPT-6 Astra, Fable 5.1, Daybreak $1B, AI code provenance, hallucinated-entity catch (mo-hit-main).
 - No wiki content changes.
 
+## [2026-09-07] ingest | x-accounts-scan: NeoMME release + entity patches
+- Trigger: x-accounts-scan cron (11 new linked posts from 11 accounts; cursor 53→64).
+- Raw: raw/articles/2026-09-03_hcompany_neomme-multimodal-native-multilingual-encoder.md (HF blog, scraped via curl).
+- Created: events/neomme-release-sep-2026.md — H Company NeoMME 260M/800M multimodal-native multilingual encoders (Sep 3, Apache 2.0); trained from scratch w/ masked discrete diffusion, single bidirectional transformer (no vision tower/causal LM); dual dense+late-interaction heads; ViDoRe v3 0.523/0.556; 255× index compression; promoted by @tomaarsen Sep 7.
+- Updated: entities/tom-aarsen.md (NeoMME promotion section), entities/eric-zhang.md (Recent Notes: jax-js maturity vs tfjs; "RL is the 2026 big data" quip), entities/emollick.md (AI Referee Paper Leaderboard "tsunami for academia"; GPT-6 D&D duel demo), entities/doug-turnbull.md (Maven enterprise-agents course closing; Kim Falk "AI Recommender Systems" book), entities/eric-hartford.md (dataset defense vs distillation claims).
+- Skipped: yacine-mahdid MyoHub/myosuite reply (off-topic musculoskeletal simulation reply-chain); tomaarsen duplicate NeoMME thread tweets (2 of 3 folded into one event); ekzhang jax-js already covered by raw article 2026-06-26.
+- index.md: +1 event entry; total 3033 -> 3034.
+
 ---
 

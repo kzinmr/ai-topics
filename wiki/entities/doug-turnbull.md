@@ -2,7 +2,7 @@
 title: Doug Turnbull
 type: entity
 created: 2026-04-10
-updated: 2026-06-09
+updated: 2026-09-07
 tags:
   - person
   - developer-tooling
@@ -267,6 +267,20 @@ Turnbull offers $12,000 team training courses (up to 12 participants) covering:
 - Generative AI Augmented Retrieval
 
 He describes himself as available as a "fractional search team lead" for organizations needing search expertise.
+
+### Build Production-Ready AI Agents for the Enterprise (Maven, 2026)
+
+Maven course co-taught with Hugo Bowne-Anderson: building and reasoning about
+enterprise agents grounded in a team's knowledge base. Enrollment closed late
+Aug 2026 ("It's down to the wire folks :)", Aug 31).
+https://maven.com/softwaredoug/build-enterprise-agents
+
+## Community Shout-outs
+
+- **Sep 4, 2026:** promoted his "good friend" **Kim Falk**'s second book, *AI
+  Recommender Systems* (Manning) — a guided tour of the new era of recommenders
+  powered by LLMs, agents, and context engineering, from first introduction to
+  production-ready systems. https://www.manning.com/books/ai-recommender-systems
 
 ## Speaking & Community
 

@@ -3,7 +3,7 @@ title: Tom Aarsen
 type: entity
 handle: "@tomaarsen"
 created: 2026-04-10
-updated: 2026-07-13
+updated: 2026-09-07
 tags:
   - person
   - model
@@ -135,6 +135,14 @@ Tom Aarsen announced an update to the MTEB Leaderboard in June 2026, highlightin
 - **API**: Scores available via CSV download or API endpoint
 
 The leaderboard is available at: https://huggingface.co/spaces/mteb/leaderboard
+
+## NeoMME Promotion (September 2026)
+
+On 2026-09-07 Aarsen promoted **NeoMME** on X — H Company's 260M/800M
+multimodal-native, multilingual encoders (Apache 2.0), fine-tunable with Sentence
+Transformers. He credited model authors @tonywu_71 and @Aurelien_L_, and pointed
+developers at the H Company blog post covering architecture, training, and retrieval
+results ("or point your Agent at the URL"). See [[events/neomme-release-sep-2026]].
 
 ## X Activity Themes
 

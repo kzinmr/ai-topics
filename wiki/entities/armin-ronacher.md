@@ -6,9 +6,9 @@ tags:
   - developer-tooling
   - web-framework
 created: 2026-04-24
-updated: 2026-08-24
+updated: 2026-09-05
 type: entity
-sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md, raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md]
+sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md, raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md, raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md]
 ---
 
 
@@ -273,6 +273,15 @@ Source: [[raw/articles/2026-08-22_ronacher_fast-and-hard-code]] (HN 17 pts, Aug 
   - **The prescription:** "Urge anyone who feels anger and looks for a villain ... to instead remain curious instead" — curious enough to understand what is changing, excited enough to experiment, and then "earn the right to decide when resistance is warranted and where to direct it." Extends the European-sovereignty / cost-funneling thread from "Dangerous Technology For Americans Only" and "Gaslighting Openness" into a practitioner's emotional framework. See [[concepts/coding-agents/ai-coding-agent-criticism]].
 
 Source: [[raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md]] (lucumr.pocoo.org, Aug 24 2026)
+
+**Latent Powers — LLM-Driven Idea Convergence (September 2026):** In "Latent Powers" (Sep 5, 2026), Ronacher turns his CarPlay-dongle hacking anecdote into a thesis about how LLMs shape *which* projects independent people start. Key moves:
+  - **The anecdote:** he asked Fable and Sol (via Pi) what to do with a cheap CarPlay bridge; the model surfaced **CatPlay** (a Rust reimplementation of the CarPlay protocol for Carlinkit devices). The Amazon unit he received had a *different SoC* than CatPlay's original author used — normally a dead end, but with Kimi K3 and Sol he figured out how to flash it and port CatPlay. "In the past, I would abandon many such projects for lack of tenacity. But my clanker is tenacious. But so are all of our clankers."
+  - **The convergence observation:** an acquaintance independently decided to hook his own agent into his car and — also from an LLM, around the same time — discovered the same CarPlay hacking community. "Completely independent people end up building things they believe are their own ideas. Yet they were inspired or pushed towards doing something by a conversation with an LLM — a conversation that someone else also had."
+  - **The sharper question:** "What if we took paths, because those were the paths that were more likely with current generation models?" — the running joke that AI builders are all building the same thing may reflect the shared model distribution, not just obviousness.
+  - **Second example:** Lucas Meijer's idea of having models produce HTML reports instead of Markdown looked unique; now it's the default for many, partly because models are increasingly *trained* for it (e.g. Claude Artifacts).
+  - See [[concepts/llm-idea-convergence]] for the full concept page; high engagement (230 likes, ~150 bookmarks within hours).
+
+Source: [[raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md]] (lucumr.pocoo.org, Sep 5 2026; [tweet](https://x.com/mitsuhiko/status/2096221291455947172))
 
 ## Influence Metrics
 

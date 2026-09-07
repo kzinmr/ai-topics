@@ -16,6 +16,7 @@ tags:
   - agentic-engineering
   - developer-tooling
 sources:
+  - raw/articles/2026-09-07_hyperbo-lagent-platform.md
   - raw/articles/hyperbo.la--w-chatgpt-4000--06a17be6.md
 ---
 
@@ -189,6 +190,21 @@ Ryan's work at OpenAI Frontier points to safe, observable, governable agent depl
 ## Blog / Key Writings
 
 ### Harness Engineering & Agent Systems (hyperbo.la)
+
+- **[Agent Platforms for Inventing Agents](https://hyperbo.la/w/agent-platform/)** (5 Sep 2026) — Ryan's most architectural statement, and a direct sequel to his harness-engineering line. Central thesis: **"An agent is a parameterized program over a set of capabilities."** By late 2026 the industry has converged on a recognisable *standard set* of agent capabilities — model + config, inference-and-tool-calling loop, computer, disk, context, skills, tools, connectors, programming runtimes, network policy, agent identity, IAM bundle, guardrails, I/O channels, system prompt — but **not** on their implementations.
+
+  His core argument is that **we do not know how to build agents generally**: "We have figured out how to build individual agents. We have not figured out how to generalize what it means to mint an arbitrary agent." The capabilities are recognizable while their implementations remain welded together inside particular systems. Therefore the correct platform posture is not to freeze a best-guess implementation but to make every capability a *bindable parameter* — because **"every dependency hidden inside the harness is a parameter the builder cannot bind."** Freezing choices inside a harness "puts everyone building on it at the mercy of its authors": the next experiment depends on whether someone anticipated it, exposed the right config knob, or will put it on their roadmap.
+
+  Evidence is a capability-by-capability table of real agents he has built or worked on — ChatGPT with external connectors (gpt-4o / Harmony / Python tool / opaque connector backends), an agentic data scientist (gpt-5 + gpt-5-codex snapshots, Codex, host-user credentials via a credential-injecting proxy), "FDE team in a box" (Agents SDK v1 spawning 12 collaborating subagents), an agentic TPM (gpt-5.4 + gpt-5-mini subagents on a cloud VM with an EBS-like block device), an agentic engineering manager in Symphony (Elixir actor system delegating tickets to remote Codex CLI workers), and an agentic SRE on Google Cloud (Vertex-selected models, Antigravity, microVMs, Agent Gateway). The killer data point: **building a general knowledge-worker agent on Agents SDK v1 required 400,000 lines of code on top of the SDK** — skills, sandboxes, Python environments, dependency management, worktrees, credential-injecting proxies — all "undifferentiated work" the platform had no reusable primitives for. Some eventually landed in Agents SDK v2 via the container and bundled-skills APIs.
+
+  Two governance extensions make the argument more than architectural:
+
+  1. **Composability as an adoption ceiling.** An organization cannot make a hosted agent (ChatGPT Workspace Agents, Claude Tag) an expert in its own network topology "if it has no way to supply that context. The organization may have the information and know how to prepare it, but the agent cannot use it. The missing interface prevents the people who understand the task from making the agent good enough to do it." His anecdote: Japanese banks using ChatGPT Enterprise had to request *bespoke product work* just for an admin toggle to disable web search — which did not generalize to Codex or the API.
+  2. **Customers must control the conditions of autonomy.** Working on agentic SRE taught him that customers enable autonomy against controls they trust, and "a model or harness upgrade should not silently change the conditions they approved." His example is **auto mode**: an LLM judge approving/denying tool calls against a rubric. Antigravity exposes no auto mode; Codex and Claude Code "do not let the builder inject an arbitrary rubric or judge into theirs" — so *the harness author ends up defining the policy boundary of autonomous execution*. A platform should let the builder bind policy independently of the loop, and let the customer serve its own rubric/judge/approval mechanism through an API the customer controls.
+
+  He also reframes **compaction** as a bindable capability rather than a fixed model feature: a compaction tool can itself be backed by another agent composed from the same pieces, using its own model, prompt, context, and tools, with the working agent deciding when to invoke it. "A tool backed by an agent is another parameterized program over capabilities. The same construction works recursively."
+
+  The closing move is reflexive: the platform itself should be structured this way, because "no one knows how to build agents generally" — composable providers distribute discovery across teams and companies, making it "as much a way of operating as a systems architecture: the platform makes experimentation possible without requiring its authors to anticipate the results." See [[concepts/agent-platform-capability-composition]] for the concept page.
 
 - **[Harness Engineering the Blog Build (Again)](https://hyperbo.la/w/harness-engineering-blog-build/)** (Feb 2026) — Vite-native SSR and assets, MDX posts, typed React composition, and static output that still deploys to GitHub Pages. Demonstrates applying harness principles to blog infrastructure.
 
