@@ -15,6 +15,9 @@
 Discovered via X bookmark scan (@ivanleomk). Confirmed via xurl: joined **Google DeepMind** 2026-03-25 (moved to SF; DeepMind DevRel orbit around Logan Kilpatrick et al.), ex-Manus founding engineer (Jul 2025–Mar 2026, $75M→$100M ARR). Scraped full ivanleo.com essay inventory (~290 entries) to raw/articles/2026-09-05_ivanleo_blog-scrape.md. Added: full blog essay inventory (grep-beats-SQLite-FTS benchmark, Value Maxxing, Agentic Search, eval trilogy), Manus tenure section from "Three Lessons I've Learned at Manus" (ownership beyond shipping / prototypes over plans / don't pigeonhole yourself; Go by immersion), Google DeepMind section (science-skills, Antigravity, hackathons, Vanishing Gradients workshop 2 days after starting), Open-Source Footprint (instructor/Kura core contributor, gil Zig HTTP client, agent-search, harbor). Related: deepmind, logan-kilpatrick. Also fixed stale bare index.md entry for ivan-leo.
 
 
+## [2026-09-07] query | Hot-post (morning slot 09:30 JST) — GPT-6 Astra: capability headline vs Critical rating / $1B Daybreak pairing
+- Delivered Discord hot-post based on entities/openai-astra (soft release 09-03, ARC-AGI-3 harness spread 62.7%→99.9%, first-ever Critical cyber rating, harder-to-monitor reasoning), concepts/daybreak-for-frontline-defenders ($1B, launched 09-02, one day before Astra), concepts/ban-artificial-superintelligence-act (Sanders-Casar 09-03). No wiki content changes.
+
 ## [2026-09-06] query | Hot-post (late-night slot 01:30 JST) — AI Code Provenance / attestation vs detection
 - Delivered Discord hot-post based on concepts/ai-code-provenance-in-open-source, concepts/llm-policies-open-source, concepts/ai-supply-chain-security (TanStack SLSA parallel), concepts/ai-generated-issues-in-oss. No wiki content changes.
 
