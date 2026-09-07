@@ -5250,3 +5250,9 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Updated: concepts/llm-policies-open-source.md (OpenJDK interim-ban subsection + related link + raw source + date bump), concepts/ai-generated-issues-in-oss.md (new "Policy Responses (2026)" table incl. OpenJDK row + 2 See-Also links + date bump), concepts/ai-supply-chain-security.md (new "Code Provenance for AI Contributions" subsection + 2 Related Pages + date bump).
 - index.md: +1 concept entry; total 3027 -> 3028; Last updated -> 2026-09-06.
 - Note: an earlier crashed session had claimed entity-page updates (entities/openjdk, entities/rust-project-governance) that never persisted to disk; the concept-page updates were re-verified and (re-)applied in this run.
+## [2026-09-07] report | Weekly AI Digest (Aug 31 - Sep 6)
+- Delivered weekly digest to Telegram Home. Lead: Wiki Incident (NJ 5). Also: GPT-6 Astra, Fable 5.1, Daybreak $1B, AI code provenance, hallucinated-entity catch (mo-hit-main).
+- No wiki content changes.
+
+---
+
