@@ -1,3 +1,14 @@
+## [2026-09-07] watchdog | pipeline verification + 1 orphan index registration
+
+- Pipeline healthy: newsletter/blog/dreaming chains fresh (watchdog report 5.6h old, 0 alerts). wiki-graph-analysis report 74h old (weekly Fri cadence — normal).
+- Index corruption re-verified live: line-number/pipe/triple-bracket prefixes = 0; validate_index.py passed.
+- Registered 1 real orphan in index.md: `concepts/agent-platform-capability-composition` (created 09-07 by morning trending-topics run, after the 12:00 index commit — index was never re-written for it). Tags verified against SCHEMA taxonomy.
+- Counts corrected to filesystem: Entities 920→922, Concepts 2038→2040, Total 3031→3033 (drift from 09-07 trending-topics commits that skipped the index).
+- Other 4 new untracked pages (agi-declaration-controversy-2026, llm-idea-convergence, jakub-pachocki, query page) already indexed by upstream jobs — no action.
+- Working tree has 8 modified + several untracked wiki files from concurrent running pipelines — deliberately NOT staged; leaving to their owning jobs to commit.
+
+---
+
 ## [2026-09-06] watchdog | wiki-health-fix auto-repair
 
 - Verified index.md clean: pipe/line-number/triple-bracket/space-prefix corruption = 0, validate_index.py passed.

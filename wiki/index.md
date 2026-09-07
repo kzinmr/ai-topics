@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3031
-> Last updated: 2026-09-06
+> Total pages: 3033
+> Last updated: 2026-09-07
 
-## Entities (920 pages)
+## Entities (922 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -929,7 +929,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2038 pages)
+## Concepts (2040 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -971,6 +971,7 @@
 - [[concepts/agent-media]] — Design philosophy for evolving a structured knowledge base (wiki) into an audience-aware, multi-channel distribution ...
 - [[concepts/agent-native-cloud]] — Agent-Native Cloud
 - [[concepts/agent-ontology]] — Agent Ontology
+- [[concepts/agent-platform-capability-composition]] — Agent Platform Capability Composition — parameterizing "the agent" as a composable capability set (runtime, memory, tools, orchestration, governance) rather than a monolithic product
 - [[concepts/agent-productivity]] — Agent Productivity and Cognitive Effects
 - [[concepts/agent-resource-subscriptions]] — Agent Resource Subscriptions — Design pattern for coding agents to subscribe to external resource events as follow-up messages within ongoing conversations
 - [[concepts/agent-quota-resets]] — Agent Quota Resets — Economics of weekly quota resets by Anthropic/OpenAI for coding agent subscriptions; behavioral distortion and competitive dynamics (July 2026)
