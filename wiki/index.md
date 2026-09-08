@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3034
-> Last updated: 2026-09-07
+> Total pages: 3035
+> Last updated: 2026-09-08
 
-## Entities (922 pages)
+## Entities (923 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -12,6 +12,7 @@
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box; AI-powered enterprise content management, Box AI, AI trust layer
 - [[entities/abacaj]] — abacaj — Independent AI researcher
 - [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
+- [[entities/jan-leike]] — Jan Leike — Anthropic co-lead of agentic safety research; former OpenAI superalignment lead; warns AI research automation is 'the big thing coming in the next year'
 - [[entities/adam-mastroianni]] — Adam Mastroianni — Experimental psychologist and writer; author of Experimental History substack
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Engineering leader at Google Chrome team
@@ -929,12 +930,12 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2040 pages)
+## Concepts (2041 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
 - [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)
-- [[concepts/agi-declaration-controversy-2026]] — The AGI Declaration Controversy (Sep 2026) — Jensen Huang's "race to AGI is over" claim after GPT-6 Astra; no definition/evidence, Marcus + Chollet (ARC-AGI 3) counter-evidence, incentive table, tension with Pachocki's "alien mind" framing
+- [[concepts/agi-declaration-controversy-2026]] — The AGI Declaration Controversy (Sep 2026) — Jensen Huang's "race to AGI is over" claim after GPT-6 Astra; no definition/evidence, Marcus + Chollet (ARC-AGI 3) counter-evidence, incentive table, tension with Pachocki's "alien mind" framing + Leike's AI-research-automation warning
 - [[concepts/abliteration]] — Abliteration
 - [[concepts/absurd-durable-execution]] — Absurd (Postgres-Native Durable Execution)
 - [[concepts/activation-steering]] — Activation Steering — Technique for modifying model behavior by manipulating internal activations

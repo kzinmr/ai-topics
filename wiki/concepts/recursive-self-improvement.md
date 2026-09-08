@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-08-14
+updated: 2026-09-08
 type: concept
 tags:
   - concept
@@ -18,6 +18,7 @@ tags:
   - agent-safety
 sources:
   - raw/articles/2026-07-04_lilianweng-harness-engineering-self-improvement.md
+  - raw/newsletters/2026-09-08-chip-huyen-used-1-409-agents-on-one-project.md
   - https://lilianweng.github.io/posts/2026-07-04-harness/
   - raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
@@ -334,6 +335,26 @@ In July 2026, [[entities/openai|OpenAI]] published findings on how [[concepts/gp
 
 > Source: `raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md`
 
+## AI Research Automation as an Industry (September 2026)
+
+The September 2026 AGI-declaration wave converged on a structural thesis distinct from the capability claims: **AI research automation has moved from academic demonstration to funded industry.** The most concrete articulation came from Anthropic's Jan Leike (co-lead, agentic safety research), in a Dwarkesh Patel interview shortly before the GPT-6 Astra announcement:
+
+> "The thing that I think is most concerning — and that we don't quite have language for yet — is AI research automation. That's the big thing coming in the next year, and we won't have time to prepare for it."
+
+### The evidence three commentators assembled
+
+- **SemiAnalysis (Dylan Patel):** Anthropic and OpenAI are "funding approximately 90% of all compute spend today" — the AI lab capex wave *is* the research-automation investment cycle. Their analysis of the AGI moment: scaling "remains the dominant paradigm," with post-training and RL environments as secondary axes.
+- **Dwarkesh Patel:** called the current era "the age of the boring AGI" — the milestone arriving as an unremarkable, incremental product release rather than a dramatic rupture, precisely *because* AI research automation compresses the distance between capability jumps.
+- **Gary Marcus:** flagged the missing evidence — "no published papers, no peer review, no third-party evaluations have surfaced" behind the GPT-6 Astra AGI framing; the definitional groundlessness is easier to hide when the automation machinery itself is opaque.
+
+^[raw/newsletters/2026-09-08-chip-huyen-used-1-409-agents-on-one-project.md]
+
+### Why this matters for the RSI debate
+
+The Greenblatt–Patel debate above established *technical* plausibility and a median 2031 estimate for automating AI R&D. The September 2026 wave shifted the question to *visibility*: if labs' internal research-automation pipelines are themselves proprietary, then progress toward RSI becomes harder to audit externally at exactly the moment it accelerates. This is the same asymmetry — rapid capability development versus slow governance response — documented in Anthropic's RSI disclosures.
+
+Note: none of the September 2026 sources provide a precise date for the research-automation inflection; Leike's "next year" framing is the most specific anchor. Treat as `confidence: medium`.
+
 ## Dwarkesh Patel × Ryan Greenblatt: RSI Debate (Aug 2026)
 
 In August 2026, [[entities/dwarkesh-patel|Dwarkesh Patel]] hosted a debate with [[entities/ryan-greenblatt|Ryan Greenblatt]] (Chief Scientist, [[entities/redwood-research|Redwood Research]]) on the plausibility and implications of recursive self-improvement — described by Patel as "maybe the most important question in the world right now."
@@ -378,6 +399,8 @@ This debate represents a notable shift: Patel, who has been "short-term bearish"
 - [[entities/anthropic]] — Most comprehensive public RSI disclosure; "When AI builds itself" (June 2026)
 - [[entities/lilian-weng]] — Author of the comprehensive RSI-through-harness survey
 - [[entities/ryan-greenblatt]] — Chief Scientist at Redwood Research; debated RSI plausibility with Dwarkesh Patel (Aug 2026, median 2031 for automating AI R&D)
+- [[concepts/agi-declaration-controversy-2026]] — The Sept 2026 AGI wave reframed RSI as a visible industry
+- [[entities/jan-leike]] — Anthropic agentic-safety lead; 'AI research automation is the big thing coming'
 
 ## Sources
 

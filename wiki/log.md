@@ -28,6 +28,15 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
+## [2026-09-08] active-crawl | AI research automation as industry (Anthropic/Leike angle)
+- Discovered via morning newsletter digest (Superhuman AI, 2026-09-08): Anthropic's Jan Leike Dwarkesh interview + SemiAnalysis 90%-compute stat + "boring AGI" framing
+- Raw: raw/newsletters/2026-09-08-chip-huyen-used-1-409-agents-on-one-project.md (saved by newsletter pipeline; sha256 recomputed)
+- Create: entities/jan-leike (new entity — Anthropic agentic safety co-lead, ex-OpenAI superalignment, AlphaFold/Scout/Cooper history)
+- Update: concepts/agi-declaration-controversy-2026 (+Leike "AI research automation" section, reciprocal links, sources, updated date)
+- Update: concepts/recursive-self-improvement (+"AI Research Automation as an Industry (Sep 2026)" section bridging Greenblatt 2031 median → visibility question; sources, related, updated date)
+- Index: +1 entity (923), concept summary extended, total 3035
+- Notes: Anthropic official pages (alignment/a-index) are SPA-rendered — curl returns empty shells; Dwarkesh transcript behind paywall. Leike claims kept confidence: medium (newsletter-summary sourcing). Skipped page creation for Hyperbolic platform / borretti doomer tweet (single-mention, below page threshold).
+
 ## [2026-09-07] trending-topics | 7 topics report + index registration
 - Report: inbox/rss-scans/trending-topics-2026-09-07.md (Discord delivery)
 - Register in index.md: concepts/agi-declaration-controversy-2026, entities/jakub-pachocki (created earlier today by morning pipelines, missing from index)

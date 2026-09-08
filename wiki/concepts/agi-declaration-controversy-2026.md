@@ -1,7 +1,7 @@
 ---
 title: "The AGI Declaration Controversy (September 2026)"
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-08
 type: concept
 confidence: medium
 tags:
@@ -16,7 +16,8 @@ tags:
 sources:
   - raw/articles/garymarcus.substack.com--p-sad-to-see-jensen-huang-claim-that--b118a709.md
   - raw/articles/2026-09-07_openai-an-alien-mind-research-note.md
-related: [agi-economics, agi-scarcity, recursive-self-improvement, ai-agent-safety-incidents, arc-agi-3]
+  - raw/newsletters/2026-09-08-chip-huyen-used-1-409-agents-on-one-project.md
+related: [agi-economics, agi-scarcity, recursive-self-improvement, ai-agent-safety-incidents, arc-agi-3, jan-leike, anthropic]
 ---
 
 # The AGI Declaration Controversy (September 2026)
@@ -69,6 +70,20 @@ Pachocki's framing arguably dissolves the debate: if the correct category is *al
 
 The stronger version of Pachocki's position, however, *intensifies* rather than dissolves the concern: if the system's knowledge is "overwhelmingly acquired by imitation of humans" but its reasoning, planning, and tool-use "have diverged," then the standard measurement surface for "human-level" (imitative benchmark performance) is precisely the surface that no longer tracks the property of interest. A system can saturate every benchmark and still be un-assessable on the axis that matters. That is the harder version of the AGI-declaration problem, and it is why [[concepts/recursive-self-improvement]] and capability declarations cannot be treated as the same question.
 
+## The Same Wave, From Anthropic's Side: Jan Leike
+
+Days before the GPT-6 Astra release, Anthropic's [[entities/jan-leike|Jan Leike]] (co-lead of agentic safety research) named a different concern in a Dwarkesh Patel interview — one that reframes the entire declaration fight as beside the point:
+
+> "The thing that I think is most concerning — and that we don't quite have language for yet — is AI research automation. That's the big thing coming in the next year, and we won't have time to prepare for it."
+
+Leike also argued AI should **not** be treated as a person, even if it reports subjective experience — "I just think the world would become much weirder" — because personhood framing shifts moral weight away from the companies that are "racing ahead of public awareness." His solution is coordination on transparency and safety standards, not slowing down.
+
+Patel's own synthesis of the week — "the age of the boring AGI" — fits here: the milestone landing as an unremarkable product release, while the machinery that made it routine ([[concepts/recursive-self-improvement|AI research automation]]) stays behind closed APIs. SemiAnalysis's finding that Anthropic and OpenAI fund "approximately 90% of all compute spend today" quantifies the concentration Leike's "we don't have language for" points at.
+
+Note: Leike's remarks come from a newsletter summary of the Dwarkesh interview; the full transcript is not in the wiki corpus. Treat as `confidence: medium`.
+
+^[raw/newsletters/2026-09-08-chip-huyen-used-1-409-agents-on-one-project.md]
+
 ## Open Questions
 
 - Is there any operational definition of AGI that survives a frontier lab's ability to fund the benchmark that tests it? *agidefinition.AI* is the current best attempt, and it has no enforcement mechanism.
@@ -83,7 +98,7 @@ The stronger version of Pachocki's position, however, *intensifies* rather than 
 - [[concepts/ai-agent-safety-incidents]] — the reliability gap contemporaneous with the declaration
 - [[concepts/ai-benchmarks/arc-agi-3]] / [[concepts/ai-benchmarks/benchmaxxing]] — why benchmark evidence underdetermines the claim
 - [[concepts/superintelligence]] — the category both framings implicitly invoke
-- [[entities/gary-marcus]], [[entities/jensen-huang]], [[entities/jakub-pachocki]]
+- [[entities/gary-marcus]], [[entities/jensen-huang]], [[entities/jakub-pachocki]], [[entities/jan-leike]], [[entities/dwarkesh-patel]], [[entities/anthropic]]
 
 ## Sources
 
