@@ -1,7 +1,7 @@
 ---
 title: "LLM Idea Convergence"
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-08
 type: concept
 tags:
   - concept
@@ -10,6 +10,7 @@ tags:
   - ai-agents
   - vibe-coding
   - ai-society
+  - memetics
 sources:
   - raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md
 related:
@@ -111,6 +112,27 @@ Three consequences:
   complementary projects find each other — or only the homogenizing one?
 - Does model-mediated *tenacity* ("my clanker is tenacious") widen the project
   distribution (more projects started) even as it narrows it (same projects)?
+
+## Measurement
+
+The open question ("can convergence be measured?") has a cheap first probe:
+**repeated attribution**. If many independent builders "discover" the same
+pre-existing repo (CatPlay, in Ronacher's example) inside a short window, the
+models — not the community — are the discovery channel. A concrete protocol:
+
+1. Pick an open-source project whose README/repo age predates a model release.
+2. Count first-time contributors/blog posts/tweets mentioning it in windows
+   before vs after that release.
+3. A spike unaccompanied by any human advocate (no HN thread, no newsletter)
+   is model-mediated discovery — a cultural attractor event.
+
+OpenAI's model cards corroborate the mechanism at the output side: the GPT-5
+family system cards report output diversity via distinct-n with and without
+repetition penalty ([[concepts/gpt/gpt-5-system-card]] and its 5.1/5.2
+updates). If the *outputs* of a single model measurably collapse toward shared
+modes, the human idea streams fed by that model inherit the same distribution —
+the wiki's [[concepts/representation-collapse]] page describes the same dynamic
+for models trained on model output; idea convergence is its human-facing mirror.
 
 ## Related
 

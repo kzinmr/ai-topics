@@ -1,3 +1,9 @@
+## [2026-09-08] update | concepts/llm-idea-convergence — Measurement section + tags
+- Added "Measurement" section: repeated-attribution probe protocol (spike in mentions of a pre-existing repo with no human advocate = model-mediated discovery), linked [[concepts/gpt/gpt-5-system-card]] distinct-n diversity metrics and [[concepts/representation-collapse]] as human-facing mirror.
+- Tags: +memetics (taxonomy: Domain Concepts). updated bumped to 2026-09-08.
+- Trigger: morning hot-post slot (topic: LLM Idea Convergence / cultural attractors). No index change (page already listed).
+
+---
 ## [2026-09-07] watchdog | pipeline verification + 1 orphan index registration
 
 - Pipeline healthy: newsletter/blog/dreaming chains fresh (watchdog report 5.6h old, 0 alerts). wiki-graph-analysis report 74h old (weekly Fri cadence — normal).
