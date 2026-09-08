@@ -1,3 +1,9 @@
+## [2026-09-08] query | night hot-post: LLM Idea Convergence x Harness Engineering (loss-of-originality synthesis)
+- Night-slot (21:30 JST) contrarian post weaving concepts/llm-idea-convergence (Ronacher "Latent Powers", CarPlay/CatPlay example, repeated-attribution probe, GPT-5 distinct-n) with entities/ryan-lopopolo "What Does It Mean to Do a Good Job?" (models trained on trillions of docs -> under-specified taste defaults).
+- Thesis: LLM-era loss of originality is not "models imitate" but "models originate" — everyone consulting the same model converges on the same "plausible next step" attractor basins.
+- Cross-refs: concepts/agent-platform-capability-composition (harness constraints = diversity engine), concepts/representation-collapse (human-facing mirror), concepts/vibe-coding, concepts/latent-terms, concepts/jagged-frontier.
+- No new page; index unchanged.
+
 ## [2026-09-08] update | concepts/llm-idea-convergence — Measurement section + tags
 - Added "Measurement" section: repeated-attribution probe protocol (spike in mentions of a pre-existing repo with no human advocate = model-mediated discovery), linked [[concepts/gpt/gpt-5-system-card]] distinct-n diversity metrics and [[concepts/representation-collapse]] as human-facing mirror.
 - Tags: +memetics (taxonomy: Domain Concepts). updated bumped to 2026-09-08.
