@@ -64,7 +64,7 @@
 - [[entities/anorth-chen]] — Ziyao 'North' Chen (@anorth_chen)
 - [[entities/anthropic]] — AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Clau...
 - [[entities/anthropic-computer-use]] — Anthropic Computer Use
-- [[entities/anthropic-labs]] — Anthropic Labs
+- [[entities/anthropic-labs]] — Anthropic's advanced-products division (Krieger + Michael); Claude Design
 - [[entities/antirez-com]] — Salvatore Sanfilippo (antirez)
 - [[entities/antoine-buteau]] — Antoine Buteau — BizOps leader (Shakepay, ex-Replit, ex-Coveo) and prolific writer: 10-part Automation Series, AI Control Plane Series, AI-Native GTM, 100+ Lessons From profiles
 - [[entities/antoine-chaffin]] — Antoine Chaffin

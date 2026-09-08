@@ -1,3 +1,12 @@
+## [2026-09-08] skeleton-enrich | entities/anthropic-labs (Anthropic Labs division)
+- Enriched skeleton `entities/anthropic-labs` (was 42 lines) to ~110 lines from verified in-wiki sources; no external web data invented.
+- Division co-led by **Mike Krieger** (Instagram co-founder; Anthropic's first CPO) per [[raw/articles/2026-05-06_simon-willison_code-w-claude-2026]]. Second co-lead name not documented in wiki sources. Krieger was succeeded as CPO by **Ami Vora** (introduced at the event).
+- Formed under CEO **Daniela Amodei**'s "Big Swing" strategy; first product **Claude Design** (2026-04-17, powered by Claude Opus 4.7).
+- Structure disclosed at **Code w/ Claude** developer event (2026-05-06) per [[events/anthropic-code-w-claude-2026]]; Krieger keynote there.
+- Added graph structure query, Key People / Products / Strategy sections; removed `status: skeleton`; tags all in SCHEMA taxonomy (company, lab, anthropic, product, ai-product).
+- Dropped `[[entities/claude-opus-4-7]]` (no page yet) and `[[entities/mike-krieger]]` (no page yet) to avoid broken links — left as plain text.
+- index.md: expanded one-line entry for anthropic-labs.
+
 ## [2026-09-08] query | night hot-post: LLM Idea Convergence x Harness Engineering (loss-of-originality synthesis)
 - Night-slot (21:30 JST) contrarian post weaving concepts/llm-idea-convergence (Ronacher "Latent Powers", CarPlay/CatPlay example, repeated-attribution probe, GPT-5 distinct-n) with entities/ryan-lopopolo "What Does It Mean to Do a Good Job?" (models trained on trillions of docs -> under-specified taste defaults).
 - Thesis: LLM-era loss of originality is not "models imitate" but "models originate" — everyone consulting the same model converges on the same "plausible next step" attractor basins.

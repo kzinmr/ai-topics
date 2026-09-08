@@ -41,6 +41,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[entities/anildash]] — Anil's most urgent recent thesis: 2026 is the decisive year for whether the open web survives. He argues that Big Tech's "hectobillionaires" are conducting a final assault on the open internet:
 - [[entities/ankur-goyal]] — Ankur Goyal is a serial entrepreneur and AI industry veteran best known as the founder and CEO of Braintrust Data, an end-to-end platform for building and evaluating AI applications. Braintrust helps 
 - [[entities/anthropic-computer-use]] — Task instruction → screenshot capture → vision model recognizes UI elements →
+- [[entities/anthropic-labs]] — Anthropic's experimental advanced-products division (co-led by Mike Krieger), formed under the "Big Swing" strategy; first product Claude Design.
 - [[entities/anthropic]] — AI safety research company, developer of the Claude model family.
 - [[entities/antirez-com]] — Salvatore "antirez" Sanfilippo is one of the most influential systems programmers of the modern era. He created Redis in 2009, which became one of the most widely deployed in-memory data stores in the
 - [[entities/arize]] — AI observability platform positioned as 'Datadog for agents' — monitoring agent decision quality, reasoning paths, and evaluation metrics at scale
