@@ -5306,5 +5306,9 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Skipped: yacine-mahdid MyoHub/myosuite reply (off-topic musculoskeletal simulation reply-chain); tomaarsen duplicate NeoMME thread tweets (2 of 3 folded into one event); ekzhang jax-js already covered by raw article 2026-06-26.
 - index.md: +1 event entry; total 3033 -> 3034.
 
+## [2026-09-08] report | Discord hot-post (late-night slot 01:30 JST)
+- Topic: "The 400,000-line tax" — capability-composition thread across [[concepts/agent-platform-capability-composition]], [[entities/ryan-lopopolo]], [[concepts/llm-idea-convergence]].
+- No wiki content changes.
+
 ---
 
