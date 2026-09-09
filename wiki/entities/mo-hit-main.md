@@ -1,41 +1,44 @@
 ---
-title: "Mo Hit Main (moheji / unverified)"
+title: "Mo Hit Main (hallucinated entity — quarantine)"
 created: 2026-08-31
-updated: 2026-09-03
+updated: 2026-09-09
 type: entity
-aliases: [moheji, Mo Hit Main, mo-hit-main, Takumi Handa publishing hub]
-tags: [person, company, open-source, content-creator, blogger]
+aliases: [mo-hit-main]
+tags: [person, content-creator, blogger]
 sources:
   - raw/articles/2026-09-03_note-mohejapan-profile-scrape.md
-confidence: low
-status: needs-identification
+  - raw/articles/2026-09-09_mo-hit-main-trending-topics-hallucination-record.md
+confidence: none
+status: hallucination-quarantine
 ---
 
-# Mo Hit Main (moheji / unverified)
+# Mo Hit Main — hallucinated entity (quarantined)
 
-> **⚠️ Identity Not Verified (2026-09-03)**: This page was reconstructed as a stub from a broken index entry created by the `trending-topics` run of 2026-08-31. All verification attempts during the 2026-09-03 enrichment run **failed** to confirm the entity exists as described. The index claim is suspected to be an LLM hallucination from the trending-topics generation step.
+> **⚠️ This entity does not exist.** The page was reconstructed as a stub from a broken `index.md` entry that the `trending-topics` run of 2026-08-31 emitted with **no supporting source in its own report**. Three verification passes (2026-09-03, 2026-09-09 ×2) found nothing. Full provenance and disproof: [[raw/articles/2026-09-09_mo-hit-main-trending-topics-hallucination-record]].
 
-## Unverified claim (original index one-liner)
+## What was claimed (and why none of it is usable)
 
-> Takumi Handa's Japanese LLM/generative-AI publishing hub: 52k+ X followers, 5,600+ note writers, 1,000+ articles, weekly AI news series 300+ issues.
+The 2026-08-31 index line asserted a "Takumi Handa" Japanese LLM/generative-AI publishing hub with 52k+ X followers, 5,600+ note writers, 1,000+ articles, and a 300+-issue weekly AI news series. **No figure in that sentence has a traceable source**, and the report the same commit wrote contains no mention of the entity at all. Treat every number as fabricated.
 
-**None of these figures have a traceable source.** The trending-topics report itself (`inbox/rss-scans/trending-topics-2026-08-31.md`) contains no mention of the entity, and no raw article, newsletter, or X bookmark in the repo references it.
+## Verification history
 
-## Verification performed (2026-09-03, skeleton-enrich-daily)
-
-See [[raw/articles/2026-09-03_note-mohejapan-profile-scrape]] for full details.
-
-- `note.com/mohejapan` ("Moheji's Room") exists but its recent content is a *Kojiki* mythology commentary series, not an LLM publishing hub — no branding or stats match the claim.
-- X handle `@handaline` (plausible handle for "Handarin" / Takumi Handa): **does not exist** (X API v2: resource-not-found).
-- X `@moheji1` exists but belongs to a different person (Hideki Motegi), not the claimed author.
-- Web searches in Japanese (Moheji + LLM, "Handarin", "Handa Takumi"): no corroborating results.
+| Date | Check | Result |
+|---|---|---|
+| 2026-09-03 | `note.com/mohejapan` scrape | "Rara Kojiki" Kojiki mythology series — no AI content, no hub branding |
+| 2026-09-03 | X `@handaline` | user does not exist (API resource-not-found) |
+| 2026-09-03 | X `@moheji1` | exists but is Hideki Motegi (茂木秀樹) — different person |
+| 2026-09-03 | Japanese-language web searches (moheji+LLM, "Handarin", Takumi Handa) | no corroboration |
+| 2026-09-09 | X API `users/by/username/mohejapan` | empty result |
+| 2026-09-09 | live re-scrape of note profile | still Kojiki series only (entries 48–50); no stats, no AI content |
+| 2026-09-09 | re-read of trending-topics 2026-08-31 report | zero matching terms |
 
 ## Disposition
 
-- Kept as `status: needs-identification` so the index wikilink keeps resolving.
-- **Do not enrich further without a primary source.** If no source surfaces by a future manual review, the index entry and this page should be deleted as hallucination cleanup.
-- The original index one-liner's claims should NOT be repeated in any wiki prose as fact.
+- Kept as a **quarantine stub** so the index wikilink resolves; the false claims live only in the raw-article record above, with their disproof attached.
+- **Do not enrich.** If kzinmr approves cleanup, delete this page and its `index.md` entry — cron deliberately does not delete entity pages.
+- This is the wiki's second confirmed hallucinated-person artifact (see [[entities/adam-rosenthal]], a mis-prefixed forename for [[entities/dshr]]). Both point at the same class of failure: **index entries created without a source-backed antecedent**.
 
 ## Related
 
-- [[entities/simon-willison]] — only as a *hypothetical* analogue ("prolific AI newsletter hub" type) if the entity were ever verified; listed for structural continuity, not evidence.
+- [[raw/articles/2026-09-09_mo-hit-main-trending-topics-hallucination-record]] — full provenance/disproof
+- [[entities/adam-rosenthal]] — the other confirmed identity artifact (resolved, unlike this one)

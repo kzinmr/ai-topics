@@ -254,7 +254,7 @@ Each topic should have:
 ### Final Table: Wiki Action Recommendations
 
 ```markdown
-## 📊 ウィクション推奨アクション
+## 📊 ウィキ推奨アクション
 | トピック | 強度 | アクション |
 |---------|------|-----------|
 | Topic | ★★★★★ | 既存ページ名 — 更新内容 |
@@ -391,6 +391,7 @@ LLM API pricing monitoring is handled as a specialized sub-mode of this skill. S
 | `references/cross-reference-2026-08-09.md` | Worked example from 2026-08-09: **7th consecutive no-active-crawl day** (volume-based skip is now the stable default); "wiki-ingested ≠ reported" gap (Oracle/OpenJDK 530pts was wiki-covered but never reported); newsletter subject scan surfacing DeepSeek price reversal + ByteDance 10T (low-HN + high-authority overlap → ★★★★☆); `_index.md` wikilink false-MISS pitfall; AI Engineer conference second-wave cluster. |
 | `references/cross-reference-2026-08-11.md` | Worked example from 2026-08-11: **8th consecutive no-active-crawl day**; KEY NUANCE — no research-note file ≠ no active-crawl work (log.md head-scan is the reliable signal; active-crawl ran, created 5 pages + 2 enrichments, wrote no note); **zero-residual wiki-action day** (all 7 topics pre-ingested by morning pipelines); HN-low/X-engagement rescue heuristic (Muse Glimmer HN 4pts → ★★★★★ via X 944K + Reddit 2141); multi-report dedup grep across 08-05→08-09; daily report git-untracked (save-only confirmed). |
 | `references/cross-reference-2026-08-13.md` | Worked example from 2026-08-13: **Frontier Model Day / multi-lab launch cluster** (4 labs in 48h = 4 separate topics + intro concentration note); **HN date-mixing pitfall** (Qwen3.8-Max 546pts hit was 7 days old — check `created_at` before ★ calibration); residual-work detection (page `updated:` bumped ≠ event section present — grep content, e.g. qwen-3-8.md missing the weights-drop section); save-only confirmed. |
+| `references/cross-reference-2026-09-07.md` | Worked example from 2026-09-07: **index-registration recovery day**. Morning pipelines created `agi-declaration-controversy-2026` + `jakub-pachocki` pages but left them out of `wiki/index.md`; trending run registered them + committed report + 4 raw notes (commit-when-wiki-touched rule, scoped `git add`). Cloudflare-403 OpenAI essay → secondary-source raw note at `confidence: medium`; Japanese typo sweep before commit. |
 | `scripts/trending_db_query.py` | Combined 3a+3b keyword DB query (total, top blogs, 120 AI-relevant titles, unread health) — drop-in replacement for the hand-written /tmp query script, takes `days` arg (default 3, use 7 for weekly mode). |
 | `scripts/hn_calibrate.py` | HN Algolia targeted point-score queries for ★ calibration — urllib direct-fetch, search_by_date, `%3E`-encoded numericFilters, default query list + argv override. Verified cron-safe 2026-08-15. |
 | `references/cross-reference-2026-08-15.md` | Worked example from 2026-08-15: **report-miss ≠ wiki-miss** (4 stories missed by 8/13 report but wiki-covered → still report as NEW topics); residual carryover verification by keyword grep not frontmatter date; 3rd recurrence of active-crawl-runs-without-note. |
@@ -515,6 +516,21 @@ For model-name queries (e.g. `Qwen3.8-Max`), `search_by_date` returns hits from 
 ### Report content length
 Keep the final report concise — 5-8 topics with 3-5 sentences each. The auto-delivery system has a character limit. A full report is typically 4-8KB.
 
+### CANDIDATE VIABILITY GATE — never emit an index/entity claim without a source antecedent (added 2026-09-09, hard rule)
+
+**Every** entity/concept page or `wiki/index.md` line this run recommends or writes must trace to a **named antecedent in the run's own collected data** — a raw article, blogwatcher DB row, newsletter digest, active-crawl research note, or HN/Algolia hit that literally contains the entity name or its URL. If no collected source contains the name, the entity **does not exist for this job**: drop it. Do not let the generation step invent a name and then reverse-engineer plausible-looking statistics for it.
+
+**Confirmed failure — the `mo-hit-main` hallucination (2026-08-31, commit `d0b026bf`).** The run wrote `[[entities/mo-hit-main]]` into `wiki/index.md` claiming "Takumi Handa's Japanese LLM/generative-AI publishing hub (52k+ X followers, 5,600+ note writers, 1,000+ articles, 1,000+/weekly AI news 300+ issues)". The report that same commit produced (`inbox/rss-scans/trending-topics-2026-08-31.md`) contains **zero** occurrences of `mohe`, `handaline`, `Handa`, `半田`, `52k`, `5,600`, "hub" — the claim had no antecedent in its own output. Three verification passes (2026-09-03, 2026-09-09 ×2) found: `note.com/mohejapan` is a 楽々古事記 Kojiki-mythology account with no AI content; `@handaline` does not exist; `@moheji1` is a different person (茂木秀樹). Full disproof + provenance: `wiki/raw/articles/2026-09-09_mo-hit-main-trending-topics-hallucination-record.md`, quarantined at `wiki/entities/mo-hit-main.md` (`status: hallucination-quarantine`, `confidence: none`).
+
+**Second confirmed identity artifact — `adam-rosenthal` → [[entities/dshr]].** Not a fabrication but a **forename-prefix artifact**: "Adam Rosenthal" resolved to nobody; the real person is **David S. H. Rosenthal (DSHR)**, Google Chrome OS/Chromebook co-creator and "long archive" digital-preservationist. Lesson: a plausible Western forename+surname is not identity evidence. Before recommending any **person** page, verify the **full name + a live URL** (X profile, blog, GitHub) resolves; if only a forename is known, say so in the report rather than asserting the surname as fact.
+
+**Gate procedure (run before writing any index line):**
+1. Name the collected source (file path or DB row) that literally contains the entity name. If you cannot name one, **drop the line**.
+2. For quantitative claims (followers, article counts, issue counts): cite the source string that carries the number. No source string → no number. Never emit round "profile-shaped" stats (52k, 5,600, 1000+, 300+) that came from nowhere.
+3. For a person: confirm the name is corroborated by a **resolvable URL** (`curl`/xurl/X API `users/by/username/<handle>`, or the blog itself). A name appearing only in your own draft is not corroboration.
+4. After writing, self-audit the index diff: `git diff wiki/index.md` and check every added `[[entities/...]]` / `[[concepts/...]]` against step 1. Any line failing the gate must be removed before commit.
+5. If a past run's index line cannot be traced to a source, do **not** delete the page from cron — mark the entity `status: hallucination-quarantine` + `confidence: none`, keep the false claim only inside a raw-article disproof record, and flag it for kzinmr's manual cleanup decision.
+
 ## Report → Wiki Ingestion
 
 After the report is delivered, the recommended wiki actions need to be manually ingested. This is a **separate step** from report generation — the trending-topics job only generates the report, it doesn't modify the wiki.
@@ -551,4 +567,7 @@ The trending-topics report runs at 12:00 UTC, **after** all morning ingestion pi
 - **No asking questions** — reasonable interpretation wins
 - **Japanese output** required as the user reads Japanese
 - **Save to `inbox/rss-scans/`** for audit trail
-- **No commit needed** — this is a report, not wiki content. Verified 2026-08-11: `git ls-files inbox/rss-scans/` shows daily reports (e.g. trending-topics-2026-08-09.md) are UNTRACKED; only weekly digests are tracked. This job is save-only. (daily-rss-triage's "commit and push" instruction belongs to the scan/triage/ingest pipeline, not this report-only job.)
+- **Commit when the run also touched wiki/ files** (amended 2026-09-07). Default is save-only: verified 2026-08-11 `git ls-files inbox/rss-scans/` shows daily reports are UNTRACKED and a pure report-only run does not commit. BUT when the run goes beyond reporting — creating raw research notes in `wiki/raw/articles/`, fixing `index.md` gaps (a page morning pipelines created but never registered), or recomputing raw sha256s — commit+push those changes with **scoped `git add`** of exactly your files (report + raws + index.md + log.md), never blanket `git add wiki/` (pitfall #2 class: other jobs leave concurrent uncommitted changes). Worked example 2026-09-07: report + 4 raw + index registrations committed as one commit, pre-commit hooks (index validator, tag taxonomy, JP-language policy) passed with plain `git commit -m`.
+- **Wiki-created ≠ index-registered** (observed 2026-09-07): morning pipelines can create pages (`concepts/agi-declaration-controversy-2026.md`, `entities/jakub-pachocki.md`) that are absent from `wiki/index.md`. The log.md head-scan marks them ✅ done, but they stay invisible to navigation. During the ingestion step, batch-verify: `for f in <created pages>; do grep -q "$(basename $f .md)" wiki/index.md || echo "MISS $f"; done` and register MISS lines as part of your commit.
+- **Report typo sweep before commit** (2026-09-07): Japanese reports in this job had two silent typos ship (`ウィクション` → `ウィキ`, `ウィクション推奨アクション` heading — note the SKILL template itself below carries the same typo; write `ウィキ推奨アクション`). Grep the finished report for obviously broken katakana before saving/committing.
+- **Full-text ungettable primary sources**: `openai.com/index/*` is Cloudflare/JS-gated (see "OpenAI News JS gate" pitfall) — for a Pachocki-style CEO essay that is today's #1 topic, write a secondary-source synthesis raw note with `confidence: medium` frontmatter and explicitly mark `本文未取得` + the browser-fetch follow-up in the report, don't stall the report waiting for full text.

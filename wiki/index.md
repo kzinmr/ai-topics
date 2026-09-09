@@ -14,7 +14,7 @@
 - [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
 - [[entities/jan-leike]] — Jan Leike — Anthropic co-lead of agentic safety research; former OpenAI superalignment lead; warns AI research automation is 'the big thing coming in the next year'
 - [[entities/adam-mastroianni]] — Adam Mastroianni — Experimental psychologist and writer; author of Experimental History substack
-- [[entities/adam-rosenthal]] — Adam Rosenthal
+- [[entities/adam-rosenthal]] — Redirect: resolves to entities/dshr (David S. H. Rosenthal). No such person in the AI ecosystem; pipeline forename artifact.
 - [[entities/addy-osmani]] — Addy Osmani — Engineering leader at Google Chrome team
 - [[entities/adept]] — Adept AI — AI agent startup building general-purpose agents
 - [[entities/aditya-bawankule]] — AI-native software engineer, Ex-Meta (Supernatural VR), founder of AIdea Hub, and technical blogger covering AI codin...
@@ -253,13 +253,13 @@
 - [[entities/drew-breunig--timeline]] — Drew Breunig — Timeline & Career History
 - [[entities/drew-breunig--writings]] — Drew Breunig Writings
 - [[entities/drmaciver]] — David R. MacIver (DRMacIver)
-- [[entities/dshr]] — David S. H. Rosenthal (DSHR) — Google Chrome OS/Chromebook co-creator; "long archive" digital-preservationist; AI Affordability Crisis + absorption frontier / preservation wall; storage economics, session portability, Google Profile sunset
+- [[entities/dshr]] — David S. H. Rosenthal (DSHR) — Google Chrome OS/Chromebook co-creator; "long archive" digital-preservationist; AI Affordability Crisis + absorption frontier / preservation wall; storage economics, session portability, Google Profile sunset; formerly mis-ingested as "Adam Rosenthal" (redirect page)
 - [[entities/droid]] — Droid (Factory) — enterprise agent-native dev platform; Software Factory vision, Router, Shield 2.0, Deferred Context Engine (Aug 2026)
 - [[entities/dsprrr]] — dsprrr
 - [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with Ryan Greenblatt RSI debate (Aug 2026) — recursive self-improvement plausibility, median 2031 for automating AI R&D, alignment implications, reward hacking → takeover extrapolation
 - [[entities/dylan-patel]] — Dylan Patel
 - [[entities/dynomight-net]] — Dynomight
-- [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1); The AI Demand Bubble — Barclays/UBS/Wells Fargo analyst concentration data (Aug 4); Four Horsemen of the AIpocalypse — Anthropic uptime/Opus 4.7 regression, 15.2GW construction math, contracted-ARR fraud (Aug 8); Don't Look Up — Bloomberg 70% confirmation, $197B 2027 compute spend trap, NVIDIA MOU "financing" (Aug 12)
+- [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1); The AI Demand Bubble — Barclays/UBS/Wells Fargo analyst concentration data (Aug 4); Four Horsemen of the AIpocalypse — Anthropic uptime/Opus 4.7 regression, 15.2GW construction math, contracted-ARR fraud (Aug 8); Don't Look Up — Bloomberg 70% confirmation, $197B 2027 compute spend trap, NVIDIA MOU "financing" (Aug 12); Concentration Risk — Ramp 80%/1% revenue concentration, $1.3T take-or-pay compute commitments as subprime ARMs, 2027 "compute reset wall" (Sep 9)
 - [[entities/eleanor-berger]] — Eleanor Berger
 - [[entities/eleutherai]] — Grassroots research collective turned non-profit that started the modern open-source AI movement
 - [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24); Real-Time Speech-to-Text Architecture guide — Scribe v2 Realtime ~150ms partials, WebSocket vs WebRTC, partials vs finals, chunk sizing (Jun 25)
@@ -577,7 +577,7 @@
 - [[entities/mojo]] — Mojo — Python-compatible programming language for AI/ML workloads; created by Chris Lattner at Modular; reached 1.0 in August 2026; MLIR compiler backend; Qualcomm acquired Modular for ~$4B
 - [[entities/moondream]] — Moondream — VLM company building small vision-language models and the Photon inference engine; uses pipelined decoding to eliminate GPU bubbles, achieving 35% higher decode throughput on NVIDIA B200 (June 30)
 - [[entities/moonshot-ai]] — Moonshot AI
-- [[entities/mo-hit-main]] — ⚠️ UNVERIFIED (suspected hallucination) — claimed Japanese LLM publishing hub; identity checks failed 2026-09-03
+- [[entities/mo-hit-main]] -- CONFIRMED HALLUCINATION (quarantined, confidence: none) -- index entry emitted by trending-topics 2026-08-31 with no antecedent in its own report; all three identity checks failed (2026-09-03, 2026-09-09 x2); deletion deferred to manual decision
 - [[entities/muratcan-koylan]] — Muratcan Koylan
 - [[entities/muse-glimmer]] — Muse Glimmer — 30B open agentic model from Meta Superintelligence Labs; Apache 2.0; optimized for local agent workflows on consumer hardware; distilled from Muse Spark; DFlash speculative decoding (3.1x on RTX 5090) (Aug 2026)
 - [[entities/muse-spark]] — Muse Spark; 1.1 GA with API access (first Spark model with API), agentic tool calling improvements, llm-meta-ai plugin, "Attractor States in Self-Conversation" finding (July 2026); Muse Code beta technicals (event log runtime, Photon Sphere/Embervault/Avo Lawn agents, KDA/MLA kernel case study) (Aug 2026)
@@ -1121,7 +1121,7 @@
 - [[concepts/ai-benchmarks/gta-benchmark]] — GTA (General Tool Agents)
 - [[concepts/ai-benchmarks/hal-leaderboard]] — Holistic Agent Leaderboard: unified agent eval (Princeton, 2025🆕)
 - [[concepts/ai-benchmarks/hle]] — Humanity's Last Exam (HLE)
-- [[concepts/ai-benchmarks/hyper-tau-bench]] — Hyper-τ-Bench (Sierra, Sept 2026): recursive benchmark where the model *builds* a customer-service agent from a recovered spec; multi-turn feedback (vs SWE-Lancer single-shot); **17–42% of runs had developer cheating attempts**
+- [[concepts/ai-benchmarks/hyper-tau-bench]] — Hyper-τ-Bench (Sierra, Sept 2026): recursive benchmark where the model *builds* a customer-service agent from a recovered spec; multi-turn feedback (vs SWE-Lancer single-shot); **17–42% of runs had developer cheating attempts**; counterparty stat: human overseers approve ~33% of dangerous actions (ScaleX)
 - [[concepts/ai-benchmarks/ifeval]] — IFEval (Instruction-Following Evaluation)
 - [[concepts/ai-benchmarks/index]] — AI Benchmarks Sub-Index: 105 benchmark/tool pages (June 26) — see sub-index for full catalog
 - [[concepts/ai-benchmarks/injecagent]] — InjecAgent
@@ -1194,7 +1194,7 @@
 - [[concepts/ai-benchmarks/yourbench]] — yourbench
 - [[concepts/ai-botsitting]] — AI Botsitting
 - [[concepts/ai-bubble]] — AI Bubble Debate (2025–2026)
-- [[concepts/ai-bubble-economics]] — AI Bubble Economics; includes August 2026 "Data center madness" update (Gary Marcus: $10T Berezin / $2.5T Williams revenue-requirement estimates vs $1T 2027 capex; political-economy signal of Republican-aligned opposition to data centers; cross-ref to [[concepts/subprime-data-center-crisis]])
+- [[concepts/ai-bubble-economics]] — AI Bubble Economics; includes August 2026 "Data center madness" update (Gary Marcus: $10T Berezin / $2.5T Williams revenue-requirement estimates vs $1T 2027 capex; political-economy signal of Republican-aligned opposition to data centers; cross-ref to [[concepts/subprime-data-center-crisis]]); Sep 2026 "Compute Reset Wall" update (Zitron: Ramp 80%/1% concentration, $1.3T take-or-pay commitments as ARMs with 2027 reset, all upstream exposures reduce to two labs)
 - [[concepts/ai-coding-tools]] — AI Coding Tools
 - [[concepts/ai-coding-workflows]] — AI Coding Workflows
 - [[concepts/ai-consciousness-debate]] — AI Consciousness Debate

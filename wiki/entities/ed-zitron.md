@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-08-15
+updated: 2026-09-09
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -864,6 +864,36 @@ In "[Four Horsemen of the AIpocalypse](https://www.wheresyoured.at/four-horsemen
 
 Source: [[raw/articles/wheresyoured.at--four-horsemen-of-the-aipocalypse--4b0fae4c]]
 
+## Concentration Risk — The "Compute Reset Wall" (Sep 9, 2026)
+
+In "[Concentration Risk](https://www.wheresyoured.at/concentration-risk/)" (Sep 9, 2026), Zitron argues a Silicon Valley financial crisis is brewing because *every layer* of the AI industry is a concentration bet on the same two customers — OpenAI and Anthropic — whose own revenue is a bet on venture capital. He opens by attacking the week's AGI hype cycle as misdirection: Jensen Huang declared "AGI has arrived" over the Abilene Stargate campus (per sources, at most 4 of 8 buildings functional), OpenAI's Mark Chen claimed "80% of the way to AGI," and Brockman declared the "AGI era" — all "to stop you thinking about what's actually happening — that the underlying financials and demand do not make sense."
+
+### Risk 1: AI startups are the NINJA borrowers of AI
+
+- Per **Ramp** data, **80% of OpenAI/Anthropic enterprise revenue comes from 1% of customers** — unchanged for three years, and per Ramp's lead economist Ara Kharazian "unseen in any other software category" tracked
+- The top 1% skews to AI startups that **subsidize users' token burn** (users can burn far more than subscription price), so the labs' revenue is contingent on startups' continued VC access — not cashflow. Zitron: this "isn't real revenue"; startups are in a Red Queen's Race where they must offer the latest models at any cost to stay current
+- Scale example: **Cursor** (now part of SpaceX) was set to send OpenAI **$1B+ in 2026** (~3% of OpenAI's projected $30B revenue) while OpenAI is only 5% of Cursor's traffic — so billions more likely flow to Anthropic, an exposure that could evaporate at Musk's whim. Cursor only afforded this via $3.2B raised in four months
+- Analogue: 36.5–37.9% of 2005–06 US mortgages had little/no income documentation; today **50% of all global VC flowed into AI in 2025**. The "houses" are startup valuations (e.g., Perplexity at a potential $30B)
+
+### Risk 2: Only the tech industry actually pays for AI
+
+Outside VC-subsidized AI startups, the big spenders are tech companies themselves — peer pressure and C-suite software willingness, not proven utility. After three years of saturation coverage, "the only people the tech industry can get to spend significant money on AI is the tech industry itself," and this spend is also flight risk to cheaper open-source/on-device models.
+
+### Risk 3: $1.3T in compute commitments = the subprime mortgages; 2027 is the reset wall
+
+- OpenAI projects **$750B+ compute spend through 2030** (WSJ, July 2026); Anthropic has signed **~$517B in agreements in 11 months** (The Information) — take-or-pay deals Zitron treats as **debt obligations**, echoing Groundbreaker's (else "Claudeslop") framing: "a take-or-pay contract is, in economic substance, a lease... the payment does not flex with utilization"
+- **Exposure to hyperscalers**: ~70% of Microsoft's FY2026 AI revenue tied to OpenAI (Bloomberg); UBS sees Anthropic+OpenAI at **48% of Google Cloud revenue in 2027** ($84–100B); $200B+ combined expected revenue to MSFT/GOOG/AMZN in 2027 alone; >half of hyperscalers' $1.5T backlog attributable to the two labs
+- **The reset-wall mechanic**: like 2/28 ARMs, these contracts have a "teaser period" — small upfront fees while capacity is pre-online, then payments "coming due in ugly chunks" starting **2027** (~$200B/yr at first, growing). In 2007 the ~$1T of ARMs reset into payments 30–50% higher and delinquencies peaked at 11.49%; Zitron's version: neither lab can afford its commitments without ~10x growth plus profitability, i.e., at least a trillion dollars of external funding
+- Context: OpenAI 2025 opex $34B on $13.07B revenue; **Q2 2026 operating margin −183%**; 2026 compute spend tracking to ~$48.4B. Zitron estimates only **~$22B/yr of non-OpenAI/Anthropic AI compute demand** exists — "someone else will buy the compute: no they won't"
+
+### Risk 4: One abstraction up, the profitable companies are exposed too
+
+NVIDIA's customer base is "effectively Anthropic and OpenAI" directly or by proxy: 44% of FY2027 revenue so far from three customers; ~50–60% of data center revenue from five hyperscalers (UBS/Deutsche Bank). Revenue backlogs — CoreWeave's $104B (OpenAI $22.4B, Meta $21B, Jane Street $6B, NVIDIA backstop $6.3B), SB Energy's $439B (**99.4% earmarked for OpenAI**) — are "financialized marketing," used as proof of "insatiable demand." **Broadcom**: Anthropic and OpenAI become its largest and second-largest customers next fiscal year, putting its estimated $230B FY2028 revenue behind the same two names. Closing: "the AI bubble is based on the whims of maybe a few hundred companies spending money on two companies to justify five companies spending money with one company... everything will seem like it's fine right up until somebody can't raise money and make a payment."
+
+**Interpretation**: this is Zitron's most complete *structural* statement of the concentration thesis — where earlier pieces (Don't Look Up, Four Horsemen) assembled the data, "Concentration Risk" names the mechanism (teaser-period take-or-pay debt → dated reset wall in 2027) and the single point of failure (two labs). It converts the "AI bubble" debate from a revenue-growth argument into a maturity-schedule argument: the crisis, on this view, has a start date.
+
+Source: [[raw/articles/wheresyoured.at--concentration-risk--80837245.md]]
+
 ## Cross-References
 
 - [[entities/anthropic]] — Central subject of Zitron's circular dependency analysis
@@ -884,3 +914,4 @@ Source: [[raw/articles/wheresyoured.at--four-horsemen-of-the-aipocalypse--4b0fae
 - [The Guardian profile (Jan 2026)](https://www.theguardian.com/technology/2026/jan/19/ed-zitron-on-big-tech-backlash-boom-and-bust-ai-has-taught-us-that-people-are-excited-to-replace-human-beings)
 - [Premium: The Hater's Guide To The Memory Crisis (Jul 2026)](https://www.wheresyoured.at/premium-the-haters-guide-to-the-memory-crisis/)
 - [Premium: How Much Money Does AI Need? (Aug 2026)](https://www.wheresyoured.at/premium-how-much-money-does-ai-need/)
+- [Concentration Risk (Sep 2026)](https://www.wheresyoured.at/concentration-risk/)

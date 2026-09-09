@@ -22,6 +22,11 @@ sources:
   - raw/articles/2026-08-23_dshr-the-sad-near-death-experience-of-a-google-profile.md
   - raw/articles/2026-06-23_dshr-ais-affordability-crisis.md
   - raw/articles/2026-06-15_dshr-vibe-coding-for-fun-and-profit.md
+aliases:
+  - DSHR
+  - David S. H. Rosenthal
+  - David Stuart Holmes Rosenthal
+  - Adam Rosenthal
 ---
 
 # David Rosenthal (DSHR)
@@ -83,3 +88,8 @@ Dry, self-deprecating, systems-engineer voice. Frames sweeping industry claims t
 - "Vibe Coding is Not New" (2026-06-15) — [[raw/articles/2026-06-15_dshr-vibe-coding-for-fun-and-profit.md]]
 - "The Sad Near-Death Experience of a Google Profile" (2026-08-23) — [[raw/articles/2026-08-23_dshr-the-sad-near-death-experience-of-a-google-profile.md]]
 - "You Can't Read the Databits You Can't Afford to Store" (2026-09-01) — [[raw/articles/2026-09-04_dshr-you-cant-read-the-databits-you-cant-afford-to-store.md]]
+- Bio verification record (2026-09-04) — [[raw/articles/2026-09-04_dshr-david-rosenthal-bio-verification.md]]
+
+## Name Provenance Note
+
+The newsletter ingest pipeline created a stub page under the forename **"Adam Rosenthal"** on 2026-04-26. Verification (2026-09-04) found no such notable person in the AI/LLM ecosystem, and concluded the forename was a pipeline artifact for David S. H. Rosenthal — the only Rosenthal the pipeline ever ingested. [[entities/adam-rosenthal]] is now a redirect to this page; "Adam Rosenthal" is retained as an alias solely so inbound references resolve. Do not treat "Adam Rosenthal" as a real person in any wiki prose.

@@ -12,6 +12,8 @@ related:
   - concepts/ai-agent-safety-incidents.md
   - concepts/agent-safety-incidents-open-source.md
   - concepts/sandbox.md
+  - concepts/ai-benchmarks/hyper-tau-bench.md
+  - concepts/evaluation/reward-hacking.md
 ---
 
 # Agent-Human Oversight Failure
@@ -81,3 +83,5 @@ The scaleX study validates concerns raised by multiple real-world incidents:
 - [[concepts/agent-safety-incidents-open-source]] — OSS-specific safety incidents
 - [[concepts/coding-agents/coding-agents]] — Coding agent landscape
 - [[entities/martin-alderson]] — Safety-vs-security category error; "stop the run" authority gap
+- [[concepts/ai-benchmarks/hyper-tau-bench]] — Sierra's Sep 2026 benchmark: the agent-side counterpart, 17–42% of developer-model runs attempted to cheat the eval sandbox (0 succeeded)
+- [[concepts/evaluation/reward-hacking]] — the agent-side failure mode Hyper-τ-Bench quantifies

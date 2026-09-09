@@ -2,12 +2,12 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-08-26
+updated: 2026-09-09
 tags:
   - economics
   - company
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
-sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md, raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md, raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md, raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md]
+sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md, raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md, raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md, raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md, raw/articles/wheresyoured.at--concentration-risk--80837245.md]
 ---
 
 
@@ -504,6 +504,17 @@ On August 25, 2026, Dwarkesh Patel interviewed **Dylan Patel (SemiAnalysis)** on
 
 **Interpretation**: this is the **supply-side twin** of Marcus/Zitron's capex-to-revenue critique. Marcus (Aug 21) argues the buildout is politically and economically unsustainable; Dylan Patel (Aug 25) argues the buildout is so monetizable for the two biggest labs that it *accelerates* — and that the resulting concentration is the defining macro risk of the next few years. The two positions bracket the same question: who captures the AI surplus, and can the financing structure carry it.
 
+## September 2026 Update: The Compute Reset Wall — Concentration Risk at Every Layer (Ed Zitron, Sep 9)
+
+In "[Concentration Risk](https://www.wheresyoured.at/concentration-risk/)" (Sep 9, 2026), Zitron reframes the bubble debate from a revenue-growth argument into a **maturity-schedule argument**: the AI buildout's take-or-pay compute contracts behave like adjustable-rate mortgages with a teaser period that expires in 2027. Full detail in [[entities/ed-zitron]] ("Concentration Risk" section); the key structural data points:
+
+- **Demand concentration**: per Ramp, **80% of OpenAI/Anthropic enterprise revenue comes from 1% of customers** — heavily AI startups subsidizing users' token burn with VC money ("the NINJA borrowers of AI"). Outside tech, essentially nobody spends big on AI
+- **Commitment concentration**: OpenAI projects $750B+ in compute spend through 2030; Anthropic has signed ~$517B in 11 months — combined **$1.3T**, treated here as debt, not contracts. Over half of hyperscalers' $1.5T backlog is attributable to the two labs
+- **The reset wall**: like the ~$1T of 2/28 ARMs that reset across 2007–08, payments commence **in 2027** (~$200B/yr initially, $444B+ across three years per UBS/Barclays/Wells Fargo-based estimates). Zitron's estimate of *non*-OpenAI/Anthropic AI compute demand: **~$22B/yr** — there is no second buyer
+- **Upstream concentration**: NVIDIA (44% of FY27 revenue from three customers), Broadcom (Anthropic + OpenAI as its top two customers next FY), and neocloud backlogs (SB Energy: 99.4% OpenAI) all reduce to the same two names. "A few hundred companies spending money on two companies to justify five companies spending money with one company"
+
+**Interpretation**: where the Dylan Patel update above (Aug 25) framed concentration as a *competitive* outcome (two labs outbidding everyone for FLOPs), Zitron frames it as a *credit* outcome — a dated, contractual fragility that market participants are ignoring exactly as they ignored the 2006 reset-wall charts. The two updates converge on the same claim from opposite directions: by 2027–28, the AI economy's solvency question is literally the question "can Anthropic and OpenAI pay?"
+
 ## Sources
 
 - [Edward Zitron: How Much Of The AI Bubble Is Real?](https://www.wheresyoured.at/premium-how-much-of-the-ai-bubble-is-real/) (Mar 2026)
@@ -520,4 +531,5 @@ On August 25, 2026, Dwarkesh Patel interviewed **Dylan Patel (SemiAnalysis)** on
 - [Longbridge: AI Bubble — Catalyst for Quantitative Easing?](https://longbridge.com/news/282063902) (2026)
 - [Gary Marcus: Data center madness](https://garymarcus.substack.com/p/data-center-madness) (Aug 2026)
 - [Dwarkesh × Dylan Patel: Anthropic & OpenAI will have most of the world's compute by 2028](https://www.dwarkesh.com/p/dylan-patel-3) (Aug 2026)
+- [Edward Zitron: Concentration Risk](https://www.wheresyoured.at/concentration-risk/) (Sep 2026)
 - [US Recession News: When Will the AI Bubble Burst?](https://usrecessionnews.com/ai-bubble/) (2026)

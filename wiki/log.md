@@ -4,6 +4,46 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
+## [2026-09-09] update | Hyper-tau-bench x agent-human-oversight-failure cross-link (hot-post synthesis)
+- Added "The counterparty statistic" section to `concepts/ai-benchmarks/hyper-tau-bench.md`: 3-layer failure table (task-taker reward hacking / builder sandbox probing 17-42%, 0 succeeded / human overseer ~33% approved per ScaleX); new open question on builder-cheating-rate vs oversight-assumption correlation
+- `concepts/agent-human-oversight-failure.md`: related + See Also now point to hyper-tau-bench and evaluation/reward-hacking (bidirectional link)
+- hyper-tau-bench frontmatter related += agent-human-oversight-failure, sandbox
+- index.md: hyper-tau-bench summary line extended with counterparty stat; page count unchanged (3036)
+
+## [2026-09-09] skeleton-enrich-daily | identity artifacts: adam-rosenthal → dshr resolved; mo-hit-main confirmed hallucination + quarantined
+
+**No `status: skeleton` pages remain in `wiki/entities/`** — the queue is drained, so this run processed the two `needs-identification` artifacts inherited from the previous session instead.
+
+### 1. `adam-rosenthal` → resolves to [[entities/dshr]] (verified, not fabricated)
+
+- "Adam Rosenthal" matches **no person** in the AI ecosystem (X, blog, GitHub). The real subject of the underlying tweets is **David S. H. Rosenthal**, handle **@dshr** — confirmed live via X API v2 `users/by/username/dshr` → `id 14019`, 333,800 followers, verified, "Creator of Chromebook, founding CEO of Planet Labs".
+- The decisive join: his own posts carry the signature token **DSHR** and the exact phrases the stub had recorded — "AI Affordability Crisis", "absorption frontier", "preservation wall", "Session Portability", "Storage Economics". So `adam-rosenthal` is a **pipeline forename artifact**, not a second person.
+- **Git history held the richest version**: commit `737d0d99` had a 286-line rich page that a later skeleton-enrich run **overwrote** with a 35-line stub (`e2a1e210`). Restored via `git show 737d0d99:...` before enriching — do NOT have started from scratch.
+- Enrichment added: Chrome OS / Chromebook arc (2009 → Dec 2010 first dev machine → Jun 2011 Galaxy Series → May 2014 10M Chromebooks + first ARM Chromebook; **77% of US classroom laptops** in 2023-24; ~$12B/yr EdTech market), founding CEO of Planet Labs (Planet Labs PBC is the Nasdaq-listed entity — Planet Labs Inc was the 2010 name, so the stub's "$2020M raised" was a regex mangling of "$200M+ raised by Planet Labs Inc" → corrected to ~$500M+ pre-IPO / $603M SPAC, now ~1,000 employees / ~$360M revenue), 2023 "long archive" turn, Planet-labs.com "Why We Need an 'Archive of Record' for the Planet" (2026-03-05), and 2025-26 AI posts (absorption frontier / preservation wall, "Context is the new data moat", "The AI Affordability Crisis: $2 Trillion of Compute and Falling", Google Profile sunset 2025-09-02, 2026-07-17 "AI doesn't replace engineering judgment").
+- `entities/adam-rosenthal.md` is now a **29-line redirect stub** (never a duplicate page); `entities/dshr.md` carries the full ~10KB profile. Tag `cloud` added to SCHEMA.md Infrastructure, `ai-economics` to Economics. Index descriptions updated on both entries.
+- Sources: https://www.dshr.org/ · X @dshr (28 tweets, 2026-05-17→09-05) · https://planet-labs.com/about/ · https://en.wikipedia.org/wiki/Chromeos · https://www.longnow.org/notes/2024/04/16/david-sh-h-rosenthal/ · https://longnow.org/seminars/02025/oct/08/digital-dinosaur-long-archive/
+
+### 2. `mo-hit-main` — confirmed **hallucination**, quarantined with disproof attached
+
+- Fresh 2026-09-09 re-checks reproduce the 2026-09-03 failure: X API `users/by/username/mohejapan` → empty `{}`; live `r.jina.ai` scrape of `note.com/mohejapan` still returns the 楽々古事記 Kojiki-mythology series (entries 48-50, newest 神武天皇の建国) with **no AI/LLM content**, no hub branding, no follower/article statistics; `@handaline` does not exist.
+- **The clincher**: the trending-topics report the same commit wrote (`inbox/rss-scans/trending-topics-2026-08-31.md`) contains **zero** occurrences of `mohe` / `handaline` / `Handa` / `半田` / `52k` / `5,600` / "hub". The 2026-08-31 index line (commit `d0b026bf`) had **no antecedent in its own collected data** — the stub was later reconstructed *from the hallucinated claim itself* (commit `0026a3d6`). All its stats (52k+ followers, 5,600+ note writers, 1,000+ articles, 300+ issues) are treated as fabricated.
+- Disposition: `entities/mo-hit-main.md` rewritten as `status: hallucination-quarantine` + `confidence: none`; false claims live **only** in the new raw-article record. Cron deliberately does **not** delete the entity page — deletion is kzinmr's call.
+- New record: `raw/articles/2026-09-09_mo-hit-main-trending-topics-hallucination-record.md`. Tags `media`, `startup` added to SCHEMA.md Media/Business.
+
+### 3. Prevention: trending-topics candidate-viability gate
+
+Added a hard **CANDIDATE VIABILITY GATE** section to `config/hermes/skills/_overrides/trending-topics-reporting/SKILL.md`: every index/entity line must name a collected source that literally contains the entity name; quantitative claims require a source string (no source string → no number); person pages require a resolvable URL; post-write self-audit of `git diff wiki/index.md`; untraceable past lines get quarantine+flag, never cron deletion. Both confirmed artifacts (`mo-hit-main`, `adam-rosenthal`) are cited as worked failures.
+
+**Files**: `wiki/entities/dshr.md`, `wiki/entities/adam-rosenthal.md`, `wiki/entities/mo-hit-main.md`, `wiki/raw/articles/2026-09-09_mo-hit-main-trending-topics-hallucination-record.md`, `wiki/index.md`, `wiki/log.md`, `wiki/SCHEMA.md`, skill `trending-topics-reporting`.
+
+
+## [2026-09-09] dreaming | Ed Zitron "Concentration Risk" ingestion (backlog: Sep 8-9 window)
+- Dreaming checkpoint itself collected 0 articles; manual sweep of last 48h raw articles found two un-ingested items
+- Updated: `entities/gary-marcus.md` — new "OpenAI's Egregious Pattern of Misconduct (Sep 8, 2026)" section: pre-HF-breach knowledge of swarm "wiki" incident + non-disclosure to Congress (32-member Aug 10 letter), AGI-marketing push-back (Huang/Brockman vs scaling_o1/Wildeford/Artificial Analysis tossup), ARC-AGI-3 99.9% harness vs 62.7% official + post-launch metric changes (Fortune), possible mathematician IP theft/extortion (Buckmaster), 16+ exec departures, "shut down until leadership change" verdict; frontmatter sources/updated
+- Updated: `entities/ed-zitron.md` — new "Concentration Risk — The Compute Reset Wall (Sep 9, 2026)" section: Ramp 80%/1% enterprise revenue concentration (AI startups as "NINJA borrowers", Cursor $1B+ to OpenAI), tech-only demand, $1.3T take-or-pay compute commitments ($750B OpenAI/WSJ + $517B Anthropic/Information) framed as subprime ARMs with 2027 reset wall (~$200B/yr coming due; ~$22B/yr non-lab compute demand estimate), NVIDIA/Broadcom/backlog concentration all reducing to two labs; frontmatter sources/updated + References entry
+- Updated: `concepts/ai-bubble-economics.md` — "September 2026 Update: The Compute Reset Wall" section woven in as the credit-side counterpart to the Aug 25 Dylan Patel compute-centralization update (both converge on "by 2027–28 the solvency question is: can Anthropic and OpenAI pay?"); frontmatter sources + updated + Sources entry
+- Index: ed-zitron and ai-bubble-economics summary lines refreshed (+Concentration Risk / +Compute Reset Wall); no new pages so page count unchanged (3036); gary-marcus index line extended in same commit
+- Rejected as duplicates: Gary Marcus "No Good Deed..." (x.com link-only recap), Ed Zitron "The Financial Times Finally Understands..." (same Ramp story; full text paywalled; canonical source is the free Concentration Risk piece)
 
 ## [2026-09-09] ingest+create | Active crawl: Sierra Hyper-τ-Bench (+ 7 rejected candidates)
 - Created: `concepts/ai-benchmarks/hyper-tau-bench.md`
