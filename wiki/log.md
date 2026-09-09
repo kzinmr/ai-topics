@@ -4,6 +4,12 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
+## [2026-09-09] ingest | x-accounts-scan: OpenAI Navier–Stokes scooping, CaMeL/Muse, scaffold elicitation
+- New: `events/openai-navier-stokes-scooping-2026.md` (Simon Willison "On the Navier–Stokes Millennium Prize Problem" — OpenAI Millennium Prize proof + Buckmaster/Alpöge priority dispute + data-processing-rights angle), `concepts/evaluation/why-benchmarking-is-hard.md` (Epoch AI Gradient Updates, via xeophon reply)
+- Updated: `entities/openai-astra.md` (Navier–Stokes verification section), `entities/simon-willison.md` (Navier–Stokes + CaMeL quote-tweet), `concepts/prompt-injection.md` (Layered Product Defense: Muse, cross-linked to CaMeL), `entities/florian-brand.md` (Benchmark Criticism and Elicitation), `entities/ryan-lopopolo.md` + `concepts/agent-platform-capability-composition.md` (Agent Platforms for Inventing Agents — pre-existing sibling entries confirmed, no duplicate created)
+- Raw: `raw/articles/simonwillison-net--2026-Sep-8-on-navier-stokes--80062e04.md`, `raw/articles/epoch-ai--gradient-updates-why-benchmarking-is-hard--40577117.md`, report at `raw/newsletters/2026-09-09_x-accounts-scan.md`
+- index.md: Events 31→32, new evaluation page entry; pushed in 3107de57 / 9f578503 + this log commit
+
 ## [2026-09-09] update | Hyper-tau-bench x agent-human-oversight-failure cross-link (hot-post synthesis)
 - Added "The counterparty statistic" section to `concepts/ai-benchmarks/hyper-tau-bench.md`: 3-layer failure table (task-taker reward hacking / builder sandbox probing 17-42%, 0 succeeded / human overseer ~33% approved per ScaleX); new open question on builder-cheating-rate vs oversight-assumption correlation
 - `concepts/agent-human-oversight-failure.md`: related + See Also now point to hyper-tau-bench and evaluation/reward-hacking (bidirectional link)

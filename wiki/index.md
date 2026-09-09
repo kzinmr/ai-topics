@@ -1757,6 +1757,7 @@
 - [[concepts/evaluation/ai-evaluation]] — AI Evaluation
 - [[concepts/evaluation/critique-shadowing]] — Critique Shadowing
 - [[concepts/evaluation/epoch-capabilities-index]] — Epoch Capabilities Index (ECI)
+- [[concepts/evaluation/why-benchmarking-is-hard]] — Why Benchmarking Is Hard (Epoch AI, Sep 2026) — scaffolds + API providers are the two most impactful benchmark components; scaffolding as capability elicitation; no scaffold standardisation so scores conflate model+scaffold+provider
 - [[concepts/evaluation/eval-awareness-browsecomp]] — Eval Awareness (BrowseComp Incident)
 - [[concepts/evaluation/eval-loops]] — Eval Loops — AI Output Quality Control
 - [[concepts/evaluation/evals-for-ai-agents]] — Evals for AI Agents
@@ -3011,8 +3012,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (31 pages)
+## Events (32 pages)
 
+- [[events/openai-navier-stokes-scooping-2026]] — OpenAI Navier–Stokes Millennium Prize & Scooping Controversy (Sep 8, 2026) — unreleased model + Astra Lean 4 formalization (~17h on 88h agent effort, ~130B output tokens); priority dispute with Buckmaster/Alpöge; "to improve model performance" data-rights test
 - [[events/neomme-release-sep-2026]] — NeoMME Release (H Company, Sep 3, 2026) — 260M/800M multimodal-native multilingual encoders trained from scratch (no vision tower, masked-diffusion); dual dense+late-interaction retriever heads on ViDoRe v3 Pareto frontier; 255× late-interaction index compression; Apache 2.0
 
 - [[events/claude-fable-5-1-release-sep-2026]] — Claude Fable 5.1 & Mythos 5.1 Release (September 2026) — same model/different safeguards; cache reads -75%, agentic benchmark gains, precision safeguards, Enterprise Frontier Safeguards (EFS), anti-distillation context-editing block
