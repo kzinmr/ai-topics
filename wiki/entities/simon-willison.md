@@ -376,6 +376,12 @@ Simon's moz:fest 2026 talk argues against pre-emptively removing agent capabilit
 
 Source: [Simon Willison](https://simonwillison.net/2026/Aug/29/dont-defang-your-agents-on-purpose/)
 
+### On the Navier–Stokes Millennium Prize Problem (September 8, 2026)
+
+Simon's analysis of OpenAI's Navier–Stokes resolution and scooping controversy against Buckmaster/Alpöge — full details on [[events/openai-navier-stokes-scooping-2026]]. His two takeaways: (1) rumors of an unpublished solution may now trigger scooping runs in mathematics the same way rumors of an unpatched bug trigger exploit-hunting agents (citing Anil Madhavapeddy); (2) the episode exposes that **"used to improve model performance" remains undefined** — his new hypothetical: if I use Codex to partially solve a Millennium Prize problem, could my sessions train a later model that helps a competitor solve it first? He also estimated OpenAI's compute at ~300B output tokens ≈ **$15M at public GPT-6 Astra prices**.
+
+Source: [[raw/articles/simonwillison.net--2026-sep-8-on-navier-stokes--9538509f.md]]
+
 ## Key Quotes
 
 > *"I think of vibe coding using its original definition of coding where you pay no attention to the code at all, which today is often associated with non-programmers using LLMs to write code. Agentic Engineering represents the other end of the scale: professional software engineers using coding agents to improve and accelerate their work by amplifying their existing expertise."*

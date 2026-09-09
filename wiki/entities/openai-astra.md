@@ -146,6 +146,10 @@ Source: raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-
 
 The Astra release was announced alongside **Daybreak for Frontline Defenders** — a $1B initiative subsidizing defender access to OpenAI's cyber capabilities for critical-infrastructure teams — published one day earlier as the policy answer to Astra's Critical rating. The pairing is strategic: the Critical rating creates urgency, the subsidy channels it into defender-oriented deployment. See [[concepts/daybreak-for-frontline-defenders]].
 
+### Navier–Stokes Verification & the Scooping Controversy (September 8, 2026)
+
+Astra's Lean formalization and verification of OpenAI's **Navier–Stokes Millennium Prize resolution** ran ~17 hours on top of an 88-hour unreleased-model agent effort (~130B output tokens for Navier–Stokes alone, ~300B across all attempted Millennium problems). The announcement triggered a priority dispute with Tristan Buckmaster (NYU) and Levent Alpöge (Anthropic), who had used Codex (mainly GPT-5.6 Sol) for most of a year on related problems; OpenAI declined to answer whether the model was trained on their sessions and excluded Alpöge from co-authorship over the Anthropic rivalry. Full analysis: [[events/openai-navier-stokes-scooping-2026]].
+
 ## Broader Context
 
 The Astra announcement illustrates a recurring pattern in AI: impressive narrow capabilities are extrapolated to universal intelligence claims. The gap between "excellent at some math" and "AGI" remains vast, and the methodology behind the results remains opaque.

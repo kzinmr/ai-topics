@@ -144,6 +144,24 @@ This layering aligns with [[concepts/defense-in-depth|defense in depth]]
 principles: no single layer is sufficient, but together they raise the cost of
 successful attack.
 
+### Layered Product Defense: "Muse" (September 2026)
+
+David Singleton (@dps), in the technical thread accompanying the **Muse** agent
+launch (Sep 8, 2026), described prompt injection as handled "in layers":
+(1) the model is trained to recognize and resist it; (2) **the harness marks
+anything coming from an untrusted source**; (3) **deterministic code checks the
+result**; (4) **an ensemble of classifiers runs where the agent can't reach
+them**. Simon Willison observed that step (3) — deterministic code checking the
+agent's output rather than trusting the model's own judgment — "sounds like they
+might be implementing a variant of the DeepMind **CaMeL** paper"
+([simonwillison.net/2025/Apr/11/camel](https://simonwillison.net/2025/Apr/11/camel/)),
+i.e. separating control flow from untrusted data flow so injected content can
+never steer the program. The Muse stack maps cleanly onto the layering above:
+trained resistance (role-aware training) + harness provenance marks +
+deterministic post-hoc checking (CaMeL-style) + out-of-reach classifiers
+(guardrails). Notably the classifiers run *outside* the agent's reach, matching
+the control-plane-sandbox principle in [[concepts/agent-sandbox-patterns]].
+
 ## Relationship to Jailbreaking
 
 Prompt injection is a superset technique that often enables jailbreaking.
