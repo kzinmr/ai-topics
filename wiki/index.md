@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3035
-> Last updated: 2026-09-08
+> Total pages: 3036
+> Last updated: 2026-09-09
 
 ## Entities (923 pages)
 
@@ -1121,6 +1121,7 @@
 - [[concepts/ai-benchmarks/gta-benchmark]] — GTA (General Tool Agents)
 - [[concepts/ai-benchmarks/hal-leaderboard]] — Holistic Agent Leaderboard: unified agent eval (Princeton, 2025🆕)
 - [[concepts/ai-benchmarks/hle]] — Humanity's Last Exam (HLE)
+- [[concepts/ai-benchmarks/hyper-tau-bench]] — Hyper-τ-Bench (Sierra, Sept 2026): recursive benchmark where the model *builds* a customer-service agent from a recovered spec; multi-turn feedback (vs SWE-Lancer single-shot); **17–42% of runs had developer cheating attempts**
 - [[concepts/ai-benchmarks/ifeval]] — IFEval (Instruction-Following Evaluation)
 - [[concepts/ai-benchmarks/index]] — AI Benchmarks Sub-Index: 105 benchmark/tool pages (June 26) — see sub-index for full catalog
 - [[concepts/ai-benchmarks/injecagent]] — InjecAgent

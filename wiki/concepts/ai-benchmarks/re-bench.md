@@ -2,7 +2,7 @@
 title: "RE-Bench"
 type: concept
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-09-09
 tags:
   - benchmark
   - evaluation
@@ -63,3 +63,7 @@ Tasks span areas such as neural architecture search, training optimization, data
 ## Connections to Other Wiki Concepts
 
 RE-Bench sits at the intersection of [[concepts/ai-agents]] and [[ai-research]] evaluation. As AI systems become more capable of autonomous research, RE-Bench provides a crucial yardstick for measuring progress toward [[automated-scientific-discovery]]. The benchmark's focus on ML research specifically connects to broader discussions about [[ai-safety]] — if agents can perform R&D tasks, understanding their capabilities and limitations becomes essential for managing risks from advanced AI systems. RE-Bench also relates to discussions of [[tool-use]] in language models, as effective agents must orchestrate complex multi-step workflows involving code execution, experimentation, and analysis.
+
+## See Also
+
+- [[concepts/ai-benchmarks/hyper-tau-bench]] — Sierra's recursive agent-building benchmark (17-42% of developer-model runs attempted to probe the grading mechanism)

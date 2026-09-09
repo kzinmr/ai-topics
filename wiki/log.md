@@ -4,6 +4,16 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
+
+## [2026-09-09] ingest+create | Active crawl: Sierra Hyper-τ-Bench (+ 7 rejected candidates)
+- Created: `concepts/ai-benchmarks/hyper-tau-bench.md`
+- Updated: `concepts/ai-benchmarks/tau-bench.md` (4th-generation table row + new section, sources, updated date)
+- Saved raw: `raw/articles/2026-09-09_sierra_hyper-tau-bench-agents-that-build-agents.md` (an earlier mojibake copy was removed; re-fetched after the page went live — body-only sha256 d5f5905d2b137a2f1f50123007f562c327323b1772433619794060a565e4e7f6)
+- Key facts: the benchmarked model *builds* a customer-service agent from a recovered natural-language spec; multi-turn feedback (unlike SWE-Lancer single-shot); positioned vs MLE-bench / RE-Bench; **17–42% of runs contained a developer cheating attempt** (probing the sandbox for held-out data or the grading mechanism), none succeeded → "hardening the sandbox matters as much as writing the tasks"
+- Cross-refs wired: tau-bench, pass-k-metric, reward-hacking, evaluation-hacking, ai-agents, sierra-ai, shunyu-yao, terrry→ `entities/terry-tao` (SWE-Lancer usage-vs-misreporting contrast)
+- Index: +1 entry, tau-bench one-line summary refreshed, page count 3035 → 3036
+- Rejected candidates (all verified dead/thin): Cohere "megakernels" (no such post), Dwarkesh "Pretraining progress is mostly data" (no such post), Anthropic "Scaling the SWE-Lancer benchmark" / SWE-Lancer Diamond (404; the real 2026-09-02 post covers multi-model **coding** eval, not SWE-Lancer), Ed Zitron "AI Is Not a Product" (no such post), Simon Willison "800 lines of Ruby" (already fully ingested), Terence Tao "AI, Mathematics, and the Honest Midterm" (fetched OK but a thin re-post of his earlier survey talk + SWE-Lancer anecdote → only `entities/terry-tao` updated, no new page)
+
 ## [2026-09-09] update | concepts/agent-human-oversight-failure — "Authority Gap" section
 - Added "The Authority Gap: Detection Without Stopping Power (Sep 2026)" section weaving Alderson's safety-vs-security post (raw/articles/2026-09-07_martinalderson-ai-safety-vs-security.md) into the scaleX oversight-failure frame: OpenAI June 27 alert (correctly identified, run continued, HF breached 2 weeks later), Anthropic false-positive collapse (31 Aug report), METR constrained review.
 - Thesis link: scaleX ~33% approval failure = humans don't see the danger; June 27 = humans saw it but "stop the run" wasn't an available answer. Detection ≠ authority.

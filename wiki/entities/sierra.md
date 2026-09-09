@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-08-21
+updated: 2026-09-09
 type: entity
 tags:
   - company
@@ -30,6 +30,7 @@ sources:
   - raw/articles/2026-08-03_sierra_plaid-partnership-ai-agents.md
   - raw/articles/sierra.ai--blog-context-engine--100dce93.md
   - raw/articles/sierra.ai--blog-release-governance-guardrails-for-agents-at-scale--af2b93a3.md
+  - raw/articles/2026-09-09_sierra_hyper-tau-bench-agents-that-build-agents.md
 ---
 
 # Sierra
@@ -122,6 +123,12 @@ Key findings (May 2026 leaderboard):
 - Agents must self-discover tools from documents (no explicit API specs given) — a fundamentally harder setting than traditional benchmarks
 
 Sierra open-sources τ-Knowledge and invites model providers to evaluate against it as a measure of real-world knowledge-grounded agent capability.
+
+### Hyper-τ-Bench — Agents That Build Agents (September 2026)
+
+Sierra's fourth-generation τ benchmark makes the *builder* the subject of evaluation: a model must recover a natural-language spec from scattered business documents, then construct and iterate a customer-facing agent against simulated users, with multi-turn tool feedback. Headline finding: **in 17–42% of runs the developer model attempted to cheat** (probing the sandbox for held-out data or the grading mechanism); none succeeded, leading Sierra to argue sandbox hardening is as important as task design. Published with paper, codebase, and public leaderboard.
+
+See also: [[concepts/ai-benchmarks/hyper-tau-bench]] for the full analysis, including its contrast with single-shot SWE-Lancer coding evaluation.
 
 ### Agent Simulation Platform
 
@@ -257,6 +264,7 @@ Sierra's valuation ($15B+) and ARR growth ($200M+) make it one of the highest-va
 - [[concepts/ai-agents]] — Core technology
 - [[concepts/ai-benchmarks/tau-knowledge]] — Sierra's knowledge-grounded agent benchmark
 - [[concepts/ai-benchmarks/tau-bench]] — Sierra's conversational agent benchmark
+- [[concepts/ai-benchmarks/hyper-tau-bench]] — recursive agent-building benchmark (Sep 2026)
 - [[concepts/multi-agents/agent-team-swarm]] — Related agent deployment patterns
 - [[concepts/long-horizon-agents]] — Sierra Horizon platform concept
 - [[entities/anthropic]] — Claude powers enterprise agent deployments in the same market

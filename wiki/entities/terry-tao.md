@@ -1,7 +1,7 @@
 ---
 title: Terence Tao
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-09-09
 type: entity
 tags:
   - person
@@ -16,6 +16,7 @@ sources:
   - https://www.scientificamerican.com/article/ai-will-become-mathematicians-co-pilot/
   - https://english.elpais.com/science-tech/2024-10-12/terence-tao-mathematician-its-not-good-for-something-as-important-as-ai-to-be-a-monopoly-held-by-one-or-two-companies.html
   - https://www.nature.com/articles/d41586-026-01246-9
+  - https://www.terrytao.wordpress.com/2026/09/08/ai-mathematics-and-the-honest-midterm/
 ---
 
 # Terence Tao

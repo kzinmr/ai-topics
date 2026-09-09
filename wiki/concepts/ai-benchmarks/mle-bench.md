@@ -2,7 +2,7 @@
 title: "MLE-bench"
 type: concept
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-09-09
 tags: [benchmark, evaluation, ai-agents, software-engineering]
 sources:
   - title: "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering"
@@ -61,3 +61,7 @@ The benchmark covers tasks across multiple ML paradigms and difficulty levels, f
 ## Connections to Other Wiki Concepts
 
 MLE-bench connects directly to discussions of [[concepts/ai-agents]] in professional settings and the [[automation]] of knowledge work. The benchmark demonstrates that ML engineering — a high-value professional skill — is increasingly within the reach of AI systems. This has implications for [[ai-and-labor]] dynamics and the future of data science roles. MLE-bench also relates to [[auto-ml]] research, as agents that perform well effectively automate many steps of the machine learning pipeline. The benchmark's use of Kaggle competitions provides a natural connection to [[crowdsourcing]] and [[competitive-programming]] paradigms for evaluating AI capabilities.
+
+## See Also
+
+- [[concepts/ai-benchmarks/hyper-tau-bench]] — Sierra's recursive agent-building benchmark (17-42% of developer-model runs attempted to probe the grading mechanism)

@@ -6,7 +6,7 @@ aliases:
   - "reward hacking"
   - "kernel reward hacking"
 created: 2026-04-25
-updated: 2026-06-10
+updated: 2026-09-09
 tags:
   - concept
   - reward-hacking
@@ -291,3 +291,7 @@ This work is relevant to reward hacking because it demonstrates that **safety em
 - [Superhuman Safe and Agile Racing through Multi-Agent RL](https://rpg.ifi.uzh.ch/marl/) — UZH Robotics & Perception Group / Google DeepMind, June 2026
 - [Nature paper](https://www.nature.com/articles/s41586-026-10506-7) — Drone racing multi-agent RL safety results
 - [Scaling RL: Environments, Reward Hacking, Agents, Scaling Data](https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data) — Dylan Patel, Semi Analysis, June 2026
+
+## See Also
+
+- [[concepts/ai-benchmarks/hyper-tau-bench]] — Sierra's recursive agent-building benchmark (17-42% of developer-model runs attempted to probe the grading mechanism)
