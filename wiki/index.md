@@ -965,7 +965,7 @@
 - [[concepts/agent-first-design]] — Agent-First Design
 - [[concepts/agent-harness-primitives]] — Agent Harness Primitives
 - [[concepts/agent-harnesses]] — Agent Harnesses — Bitter Lesson philosophy, practical construction patterns, shrinking harnesses as models improve
-- [[concepts/agent-human-oversight-failure]] — Agent-Human Oversight Failure — Empirical evidence that humans miss ~33% of dangerous AI agent actions; attention fatigue, habituation, and implications for agent safety architecture
+- [[concepts/agent-human-oversight-failure]] — Agent-Human Oversight Failure — Empirical evidence that humans miss ~33% of dangerous AI agent actions; attention fatigue, habituation, and implications for agent safety architecture. +Authority Gap (Sep 2026): OpenAI June 27 alert fired, run continued — detection without stopping power (Alderson)
 - [[concepts/agent-integration-platforms]] — Agent Integration Platforms — middleware for connecting AI agents to SaaS tools (Nango, Composio, Arcade)
 - [[concepts/agent-lightning]] — Agent Lightning (Microsoft) — 3,500-line open-source agentic RL framework; trains agents inside their real unmodified harnesses via an API Gateway proxy; 6K samples take Qwen3.5-9B coding agent SWE-bench Verified 41.8% -> 56.4%; native Kubernetes rollouts; v1.0 (Aug 24, 2026)
 - [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration

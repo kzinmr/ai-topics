@@ -1,3 +1,17 @@
+# Wiki Log
+
+> Chronological record of all wiki actions. Append-only.
+> Format: `## [YYYY-MM-DD] action | subject`
+> Older entries archived in log-2026.md
+
+## [2026-09-09] update | concepts/agent-human-oversight-failure — "Authority Gap" section
+- Added "The Authority Gap: Detection Without Stopping Power (Sep 2026)" section weaving Alderson's safety-vs-security post (raw/articles/2026-09-07_martinalderson-ai-safety-vs-security.md) into the scaleX oversight-failure frame: OpenAI June 27 alert (correctly identified, run continued, HF breached 2 weeks later), Anthropic false-positive collapse (31 Aug report), METR constrained review.
+- Thesis link: scaleX ~33% approval failure = humans don't see the danger; June 27 = humans saw it but "stop the run" wasn't an available answer. Detection ≠ authority.
+- Frontmatter: sources +Alderson raw, updated bumped 2026-09-09; See Also +[[entities/martin-alderson]].
+- Trigger: morning hot-post slot (topic: oversight-failure × safety-vs-security synthesis; no wikilinks reused from 09-08 night/late-night posts). Index entry extended.
+
+---
+
 ## [2026-09-08] skeleton-enrich | entities/anthropic-labs (Anthropic Labs division)
 - Enriched skeleton `entities/anthropic-labs` (was 42 lines) to ~110 lines from verified in-wiki sources; no external web data invented.
 - Division co-led by **Mike Krieger** (Instagram co-founder; Anthropic's first CPO) per [[raw/articles/2026-05-06_simon-willison_code-w-claude-2026]]. Second co-lead name not documented in wiki sources. Krieger was succeeded as CPO by **Ami Vora** (introduced at the event).
@@ -37,13 +51,7 @@
 - Remaining 22 reported orphans are `_index.md` hub files (20) and `_archive/` pages (2) — intentionally not indexed. Ghost entries: 0.
 - Counts updated: Concepts 2035→2037, Queries 5→6, Total 3028→3031.
 
----
-
-# Wiki Log
-> Chronological record of all wiki actions. Append-only.
-> Format: `## [YYYY-MM-DD] action | subject`
-> Older entries archived in log-2026.md
-## [2026-09-08] active-crawl | AI research automation as industry (Anthropic/Leike angle)
+## [2026-09-08] skeleton-enrich | entities/anthropic-labs (Anthropic Labs division)
 - Discovered via morning newsletter digest (Superhuman AI, 2026-09-08): Anthropic's Jan Leike Dwarkesh interview + SemiAnalysis 90%-compute stat + "boring AGI" framing
 - Raw: raw/newsletters/2026-09-08-chip-huyen-used-1-409-agents-on-one-project.md (saved by newsletter pipeline; sha256 recomputed)
 - Create: entities/jan-leike (new entity — Anthropic agentic safety co-lead, ex-OpenAI superalignment, AlphaFold/Scout/Cooper history)
