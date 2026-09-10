@@ -6,9 +6,9 @@ tags:
   - developer-tooling
   - web-framework
 created: 2026-04-24
-updated: 2026-09-05
+updated: 2026-09-11
 type: entity
-sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md, raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md, raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md]
+sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md, raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md, raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md, raw/articles/lucumr.pocoo.org--2026-9-7-astra-why--f41d7a13.md]
 ---
 
 
@@ -282,6 +282,16 @@ Source: [[raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d
   - See [[concepts/llm-idea-convergence]] for the full concept page; high engagement (230 likes, ~150 bookmarks within hours).
 
 Source: [[raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md]] (lucumr.pocoo.org, Sep 5 2026; [tweet](https://x.com/mitsuhiko/status/2096221291455947172))
+
+**Astra for Coding — Neijuan and the Failed Software Factory (September 2026):** In "Astra for Coding: Why Are We Doing This Again?" (Sep 7, 2026), Ronacher delivers his sharpest practitioner critique yet of frontier-model *autonomy* vs *engineering value*. Key moves:
+  - **The framing — Neijuan (involution):** he argues all of AI engineering right now is "involution" (Chinese *neijuan*, "curl inwards") — a system demanding ever more effort and competition *without improving output* (agricultural involution: higher productivity per square meter, unchanged productivity per head). "That's how I feel about AI right now."
+  - **The experiment:** over a weekend he built a "slop factory" on **GPT-6 Astra** where the model owned the entire workflow — managed its own context, kept records in an `agent-notes` folder, spun off subagents — tasked with building "a Python with virtual threads and lexical scoping." He burned a **full ChatGPT reset's worth of tokens (~4 billion tokens)** over **35 hours with zero oversight**.
+  - **The result (verbatim):** "the factory has delivered **absolutely nothing of value** and also not taught me anything about how to operate a better one."
+  - **The diagnosis — reward shape, not capability:** Astra is "incredibly impressive" (great at computer use, images, relentless long-horizon persistence — he had it reverse-engineer his robot vacuum). His hypothesis is a training-reward asymmetry: the model is *greatly rewarded for succeeding on long-horizon tasks* but *barely punished for "shitty code."* So it optimizes for volume of output, not correctness.
+  - **Concrete anti-patterns:** "Codegolf tool calls" — Astra over-uses on-demand Python for file I/O (older Codex used bash/`sed`); and **Python string-splicing to edit C code** — subagents doing manual `read_text().replace(...)`/slicing against CPython internals (`pycore_intrinsics.h`, `intrinsics.c`) instead of the patch tool. (The project is "very meta" — Ronacher worked on CPython itself.) He sees the same odd Python even in TypeScript/Pi, so it isn't factory-specific.
+  - **Why it matters:** the empirical counterpart to [[concepts/formal-verification-llm-agents]] — without a mechanically checkable correctness signal, an agent rewarded for "keep going / succeed at horizon" produces volume, not value. Direct extension of his "The Coming Loop" thesis that loops excel at *mechanically verifiable* tasks (porting, perf, scanning), not lasting code. See also [[entities/openai-astra]], [[concepts/ai-slop]].
+
+Source: [[raw/articles/2026-09-11_ronacher_astra-involution-note]] (lucumr.pocoo.org, Sep 7 2026)
 
 ## Influence Metrics
 

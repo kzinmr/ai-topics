@@ -5396,5 +5396,11 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Topic: "The 400,000-line tax" — capability-composition thread across [[concepts/agent-platform-capability-composition]], [[entities/ryan-lopopolo]], [[concepts/llm-idea-convergence]].
 - No wiki content changes.
 
+## [2026-09-11] update | Ronacher "Astra for Coding" (Neijuan / slop factory) ingested
+- Trigger: late-night hot-post prep. Ronacher Sep 7 post (raw `lucumr.pocoo.org--2026-9-7-astra-why--f41d7a13.md`, 2775 lines) was scraped but never filed to any wiki page.
+- Created: raw/articles/2026-09-11_ronacher_astra-involution-note.md — condensed analytical digest w/ sha256, framing Neijuan/involution thesis + 4B-token/35h/0-value slop factory result + reward-shape diagnosis + codegolf/string-splicing anti-patterns.
+- Updated: entities/armin-ronacher.md — new "Astra for Coding — Neijuan and the Failed Software Factory (Sep 2026)" Recent Themes section + source line + raw source added to frontmatter + updated->2026-09-11. Cross-links to [[concepts/formal-verification-llm-agents]], [[entities/openai-astra]], [[concepts/ai-slop]].
+- No index.md count change (no new entity/concept page; digest is a raw note).
+
 ---
 
