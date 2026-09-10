@@ -4,6 +4,13 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
+## [2026-09-10] report | Discord hot-post (morning slot 09:30 JST)
+- Topic: "Scores are not comparable — the 23pt API & 15pt scaffold confound". Lead: Epoch AI's scaffold/provider variance decomposition; payoff links the scaffold confound to Hyper-tau-bench builder-cheating.
+- Anchors: scaffold -> up to 11% (GPT-5) / 15% (Kimi K2 Thinking) on SWE-bench Verified; MiniMax -> 23pt tau-bench swing (native API vs ChatCompletions-compatible SDK); SDK alone -> 3% (Responses vs ChatCompletions); OpenAI o3 could only run 477/500 SWE-bench problems.
+- Wikilinks used: [[concepts/evaluation/why-benchmarking-is-hard]], [[concepts/harness-engineering]], [[concepts/scaffold-vs-rl-debate]], [[concepts/ai-benchmarks/hyper-tau-bench]], [[concepts/ai-benchmarks/tau-bench]], [[concepts/evaluation/reward-hacking]] (no reuse vs 09-08 night/late-night or 09-09 morning posts).
+- Source-drift note: concepts/evaluation/why-benchmarking-is-hard cites raw/articles/epoch-ai--gradient-updates-why-benchmarking-is-hard--40577117.md, but that raw file was NEVER persisted to disk (only the concept page exists). Numbers re-verified live against https://epoch.ai/gradient-updates/why-benchmarking-is-hard this run. Suggest re-saving the raw article.
+- No wiki content changes.
+
 ## [2026-09-09] ingest | x-accounts-scan: OpenAI Navier–Stokes scooping, CaMeL/Muse, scaffold elicitation
 - New: `events/openai-navier-stokes-scooping-2026.md` (Simon Willison "On the Navier–Stokes Millennium Prize Problem" — OpenAI Millennium Prize proof + Buckmaster/Alpöge priority dispute + data-processing-rights angle), `concepts/evaluation/why-benchmarking-is-hard.md` (Epoch AI Gradient Updates, via xeophon reply)
 - Updated: `entities/openai-astra.md` (Navier–Stokes verification section), `entities/simon-willison.md` (Navier–Stokes + CaMeL quote-tweet), `concepts/prompt-injection.md` (Layered Product Defense: Muse, cross-linked to CaMeL), `entities/florian-brand.md` (Benchmark Criticism and Elicitation), `entities/ryan-lopopolo.md` + `concepts/agent-platform-capability-composition.md` (Agent Platforms for Inventing Agents — pre-existing sibling entries confirmed, no duplicate created)
