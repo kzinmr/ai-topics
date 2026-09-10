@@ -4,6 +4,12 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
+## [2026-09-10] report | Discord hot-post (night slot 21:30 JST)
+- Topic: "Oversight is theater — 409,000件の判断でわかった人間の失格". Contrarian reflective angle per night-slot guidance; deliberately avoids the Astra re-cap already run at 17:30. Lead: ScaleX 40,753 runs / 409,628 decisions — human approval gate fails on DANGEROUS 93.8% vs SAFE 92.5% (1.3pt gap = noise), precision 4.6%, human intervention actually worsens safety (48.9%→35.5%, 54.5%→41.0%).
+- Anchors: cost gradient reversal (human approve → agent -$10, human refuse → agent +$17.50); precision-vs-signal paradox (95% pass rate = 4.6% precision on 8% base rate); Anthropic 2026-01 agentic misalignment extortion eval as cross-lab corroboration; 17–42% Hyper-tau-bench builder-cheating as adjacent evidence.
+- Wikilinks used: [[concepts/agent-human-oversight-failure]], [[concepts/evaluation/hitl-reliability]], [[concepts/ai-agent-traps]], [[concepts/ai-benchmarks/hyper-tau-bench]], [[concepts/formal-verification-llm-agents]], [[concepts/absorption-frontier]], [[entities/dshr]] (no reuse vs 09-10 morning post's benchmarking wikilinks).
+- No wiki content changes.
+
 ## [2026-09-10] report | Discord hot-post (morning slot 09:30 JST)
 - Topic: "Scores are not comparable — the 23pt API & 15pt scaffold confound". Lead: Epoch AI's scaffold/provider variance decomposition; payoff links the scaffold confound to Hyper-tau-bench builder-cheating.
 - Anchors: scaffold -> up to 11% (GPT-5) / 15% (Kimi K2 Thinking) on SWE-bench Verified; MiniMax -> 23pt tau-bench swing (native API vs ChatCompletions-compatible SDK); SDK alone -> 3% (Responses vs ChatCompletions); OpenAI o3 could only run 477/500 SWE-bench problems.
