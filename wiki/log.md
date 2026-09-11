@@ -23,6 +23,12 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
+## [2026-09-11] report | Discord hot-post (night slot 21:30 JST)
+- Topic: "40億トークン、35時間、価値ゼロ — AIエンジニアリングは内巻である". Reflective/contrarian per night guidance; deliberately avoids today's 09:30 verification-bottleneck arc — this post runs the opposite claim: reward-shape critique + trust erosion as the *unmeasured* dimension.
+- Anchors: Ronacher slop factory (GPT-6 Astra, ~4B tokens / 35h / 0 oversight → "absolutely nothing of value"; reward asymmetry — long-horizon completion rewarded, "shitty code" unpunished; codegolf tool calls + Python string-splicing on CPython `pycore_intrinsics.h`); terriblesoftware trust collapse ("does the author understand what they're sending me?" replaces "is this a good change?", "Yes — and the real unlock is…" as suspicion trigger); Smashing/AXe 51 AI vs 50 human sites (errors 3.33 vs 3.54 but fix rate ~25% vs ~70%); Hebbia Good Regulator corollary "you can't short slop — it doesn't compound".
+- Wikilinks used: [[entities/armin-ronacher]], [[concepts/ai-slop]], [[concepts/ai-slop-productivity-paradox]], [[concepts/formal-verification-llm-agents]], [[entities/openai-astra]], [[concepts/agent-human-oversight-failure]] (formal-verification + openai-astra + oversight-failure appeared as supporting anchors in earlier posts but as primary framing here — no primary-topic wikilink reuse vs 09-10/09-11 posts).
+- No wiki content changes.
+
 ## [2026-09-11] ingest | blog-ingest raw capture (run 20260911T100030Z) + raw-layer hygiene commit
 - Scan: 35 new articles across feeds; 20 fetched candidates; 16 saved to `raw/articles/`, including: OpenAI "Codex + ChatGPT for antimicrobial molecules", Together AI "preemptible compute" + "ThunderKittens on NVIDIA Vera Rubin NVL72", Sierra "multimodal agents", Simon Willison (Shopify native-mobile shift, Datasette 1.0a39/0.65.4 security releases, TryNix), Giles Thomas "GPT-2 → MoE trained from scratch on RTX 3090", Gary Marcus Anderson-Cooper rebuttal, nesbitt.io package-manager trends, terriblesoftware "AI Is Breaking This Thing We Call Trust".
 - 4 unsaved: Joanna Stern YouTube video (no scrape) + 3 OpenAI posts (put-data-to-work, ChatGPT for Financial Services, government AI access) left for downstream blog-triage.
