@@ -1,8 +1,33 @@
+## [2026-09-11] skeleton-enrich-daily | queue empty — completed pending emollick → ethan-mollick dedup + committed stray raw provenance record
+
+**No `status: skeleton` pages exist in `wiki/entities/`** (queue drained 2026-09-09). This run therefore verified the queue state and finished two loose ends left uncommitted by prior sessions.
+
+### 1. Queue verification (nothing to enrich)
+- `grep -rl "status: skeleton" wiki/entities/ wiki/concepts/` → 0 hits. The 14 thinnest entity files (≤20 lines) are all intentional redirect stubs (`ysymyth`→shunyu-yao, `alex-imus`→alex-imas, `microsoft-ai`→microsoft-ai-team, `samuelcolvin`→samuel-colvin, `jo-bergum`, `moonshot-ai`→kimi, `tim-sherratt`→tim-sh, `martin-fowler`→martinfowler, `eric-drexler`→k-eric-drexler, `kyle-corbett`→kyle-corbitt, …) — not enrichment candidates.
+- The `status: L3` marker (41 entity pages) is **not** a skeleton tier: sampled `entities/ali-farhadi.md` (164 lines, full timeline + Core Ideas + Contributions + Convergence tables) confirms L3 pages are already enriched to full depth.
+
+### 2. Completed pending duplicate-entity cleanup (emollick → ethan-mollick)
+- Applied the skill's duplicate-cleanup workflow that a prior run had staged but not committed: `entities/emollick.md` is now a 16-line redirect stub pointing at the canonical 227-line `entities/ethan-mollick.md` (which gained `handle`, `aliases: [emollick]`, expanded tags, a Blog Post Index, Talks, Sep-2026 X posts, and Related People).
+- `wiki/index.md`: dropped the duplicate `- [[entities/emollick]] — Ethan Mollick` line; the single canonical entry at line 287 remains (matches existing practice of omitting handle-redirect stubs).
+- `wiki/entities/_index.md`: the `emollick` line relabelled to a redirect note (that bucketed index does list redirects, so the line is retained as a pointer).
+- No net page count change (a merge, not a creation) → `Total pages: 3036` unchanged. `scripts/validate_index.py` passes clean.
+
+### 3. Stray raw article committed as provenance-only
+- `raw/articles/2026-09-10_anthropic_effective-context-engineering-for-ai-agents.md` (2.1 KB) was untracked. It self-declares as a **provenance record for the X-thread capture of an already-absorbed Anthropic post** — canonical full text already lives at `raw/articles/2026-05-08_anthropic-engineering_effective-context-engineering-for-ai-agents.md` (21 KB) and is cited by 5 wiki pages. No re-ingestion performed; committed so the raw layer isn't left dirty.
+
+**Files**: `wiki/entities/emollick.md`, `wiki/entities/ethan-mollick.md`, `wiki/index.md`, `wiki/entities/_index.md`, `wiki/raw/articles/2026-09-10_anthropic_effective-context-engineering-for-ai-agents.md`, `wiki/log.md`.
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
+
+## [2026-09-11] report | Discord hot-post (morning slot 09:30 JST)
+- Topic: "Verification was always the problem — 1日10億トークンの時代に残った唯一のボトルネック". Morning-slot narrative arc: Loop engineering hype (armin-ronacher, ryan-lopopolo) → the verification gap → three answers with numbers (spec-as-artifact, Symphony 75 PRs/week, ScaleX human-gate 4.6% precision) → loop gets sharper the more the judge lies.
+- Anchors: 1B tokens/engineer/day utilization target; 3-5 PRs/day → ~75 PRs/week with Symphony; "Symphony ships a spec, not source code"; ScaleX 409,628 decisions — dangerous-block rate 6.2% vs safe-block 7.5%, precision 4.6%; Hyper-tau-bench builder cheating 17-42%; 23pt tau-bench provider swing as the measurement-instrument angle.
+- Wikilinks used: [[entities/ryan-lopopolo]], [[entities/armin-ronacher]], [[concepts/harness-engineering]], [[concepts/agent-human-oversight-failure]], [[concepts/formal-verification-llm-agents]], [[concepts/ai-benchmarks/hyper-tau-bench]], [[concepts/evaluation/why-benchmarking-is-hard]] (evaluation/why-benchmarking-is-hard + hyper-tau-bench were anchors in the 09-10 morning post, but from the opposite angle — comparability vs verification-as-bottleneck; no other overlap with recent posts).
+- No wiki content changes.
 
 ## [2026-09-10] report | Discord hot-post (night slot 21:30 JST)
 - Topic: "Oversight is theater — 409,000件の判断でわかった人間の失格". Contrarian reflective angle per night-slot guidance; deliberately avoids the Astra re-cap already run at 17:30. Lead: ScaleX 40,753 runs / 409,628 decisions — human approval gate fails on DANGEROUS 93.8% vs SAFE 92.5% (1.3pt gap = noise), precision 4.6%, human intervention actually worsens safety (48.9%→35.5%, 54.5%→41.0%).

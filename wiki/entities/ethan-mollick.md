@@ -1,9 +1,11 @@
 ---
 title: "Ethan Mollick"
-tags: [person]
+handle: "@emollick"
+aliases: [emollick]
+tags: [person, education, developer-tooling, ai-adoption]
 sources: []
 created: 2026-04-24
-updated: 2026-06-15
+updated: 2026-09-10
 type: entity
 ---
 
@@ -175,6 +177,41 @@ Mollick consistently raises questions about the ethical implications of AI in wo
 - **Academic record**: Most-cited article in management on crowdfunding; papers in top management journals
 - **Media coverage**: Regularly featured in Knowledge at Wharton, CNN, _The New York Times_, Vox
 - **Speaking**: Frequent keynote speaker at AI and education conferences worldwide
+
+## Blog Post Index (One Useful Thing)
+
+- ["A Guide to Which AI to Use in the Agentic Era"](https://www.oneusefulthing.org/p/real-ai-agents-and-real-work/) (Feb 2026) — Framework for choosing AI tools as agents become the dominant paradigm
+- ["GPT-5: It Just Does Stuff"](https://www.oneusefulthing.org/) (Aug 2025) — Analysis of GPT-5's agentic capabilities and what they mean for work
+- ["Using AI Right Now: A Quick Guide"](https://www.oneusefulthing.org/) (Jun 2025) — Current recommendations for which AIs to use and how
+- ["15 Times to Use AI, and 5 Not To"](https://www.oneusefulthing.org/p/15-times-to-use-ai-and-5-not-to) (Dec 2024) — Practical framework for AI usage decisions
+- ["Thinking Like an AI"](https://www.oneusefulthing.org/p/thinking-like-an-ai) (Oct 2024) — How understanding LLM mechanics improves usage
+- ["What OpenAI Did"](https://www.oneusefulthing.org/p/what-openai-did) (May 2024) — Analysis of GPT-4o's implications
+- ["What Can be Done in 59 Seconds"](https://www.oneusefulthing.org/p/what-can-be-done-in-59-seconds-an) (Jan 2024) — Demonstrating AI productivity at scale
+
+### Talks and Appearances
+
+- Stanford Graduate School of Business — "Co-Intelligence: An AI Masterclass" (June 2024)
+- Thinkers & Ideas Podcast — "Co-Intelligence with Ethan Mollick" (April 2024)
+
+## Notable X Posts (September 2026)
+
+- **AI Referee Paper Leaderboard (Sep 6):** highlighted an experiment from
+  Georgetown's AI, Analytics, and the Future of Work Initiative where an ensemble of
+  LLM referees retroactively scores finance & economics working papers, publicly
+  surfacing both opportunities and problems in published research. Mollick called it
+  "a sign of a tsunami coming for academia" — AI reading the research backlog at
+  scale and publishing judgements. Leaderboard: https://d3jhl7jsny6f2h.cloudfront.net/
+- **GPT-6 D&D demo (Sep 7):** re-ran a years-old D&D encounter experiment "with
+  GPT-6" — a fully rolled mind flayer vs. drow duel rendered as a cinematic 3D
+  Underdark webpage (underdark-duel.netlify.app); noted the model got the 5E 2014
+  stat block right (101-bone skeletal rig) with no major rules errors.
+
+## Related People
+
+- **Andriy Burkov** — Shares practical ML education philosophy; both emphasize accessible AI knowledge
+- **Chip Huyen** — Complementary perspective: Mollick focuses on usage and adoption, Huyen on engineering and production
+- **Eugene Yan** — Both write extensively about practical AI/ML patterns for production systems
+- **Darius Teter** — Host of Stanford GSB podcast featuring Mollick's AI masterclass
 
 ## Sources
 

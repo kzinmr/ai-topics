@@ -104,7 +104,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[entities/elvis-sun]] — Elvis spent 8 years at Google building Firebase before becoming a generalist founder who can build the entire business — product, code, ops, marketing, sales. In the AI era, he argues one person can b
 - [[entities/elvis]] — Conducted a 9-hour side-by-side source code study of Hermes Agent and OpenClaw, producing one of the most detailed public comparisons of agent architecture patterns.
 - [[entities/embeddings]] — Single-vector embedding models — strengths, limitations, and theoretical constraints (LIMIT dataset, drowning-in-documents paradox)
-- [[entities/emollick]] — Ethan Mollick is one of the most influential public educators on practical AI usage. As a professor at the Wharton School of the University of Pennsylvania, he has spent over two decades studying inno
+- [[entities/emollick]] — *Redirect to [[entities/ethan-mollick]] (X handle slug).*
 - [[entities/entropicthoughts-com]] — Chris is the author of Entropic Thoughts, a blog that applies rigorous quantitative thinking — statistics, queueing theory, information theory, and Bayesian reasoning — to software engineering, produc
 - [[entities/eric-hartford]] — Eric Hartford is one of the most prominent independent creators in the open-source LLM fine-tuning ecosystem. He is best known as the creator of the Dolphin series of models — uncensored, instruction-
 - [[entities/eric-zhang]] — Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab.

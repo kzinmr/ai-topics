@@ -273,7 +273,6 @@
 - [[entities/embeddings]] — Single-vector embedding models — strengths, limitations, and the theoretical constraints of embedding-based retrieval...
 - [[entities/embra]] — Embra
 - [[entities/emmanuel-ameisen]] — Emmanuel Ameisen
-- [[entities/emollick]] — Ethan Mollick
 - [[entities/encodec]] — EnCodec
 - [[entities/entire]] — Entire — Agent observability, sessions & distributed Git network for the agent era (CEO: Thomas Dohmke)
 - [[entities/entropicthoughts-com]] — Chris of Entropic Thoughts
