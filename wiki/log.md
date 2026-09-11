@@ -23,6 +23,14 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Older entries archived in log-2026.md
 
+## [2026-09-11] ingest | blog-ingest raw capture (run 20260911T100030Z) + raw-layer hygiene commit
+- Scan: 35 new articles across feeds; 20 fetched candidates; 16 saved to `raw/articles/`, including: OpenAI "Codex + ChatGPT for antimicrobial molecules", Together AI "preemptible compute" + "ThunderKittens on NVIDIA Vera Rubin NVL72", Sierra "multimodal agents", Simon Willison (Shopify native-mobile shift, Datasette 1.0a39/0.65.4 security releases, TryNix), Giles Thomas "GPT-2 → MoE trained from scratch on RTX 3090", Gary Marcus Anderson-Cooper rebuttal, nesbitt.io package-manager trends, terriblesoftware "AI Is Breaking This Thing We Call Trust".
+- 4 unsaved: Joanna Stern YouTube video (no scrape) + 3 OpenAI posts (put-data-to-work, ChatGPT for Financial Services, government AI access) left for downstream blog-triage.
+- Hygiene: 57 untracked raw files left by earlier runs (blog + company-blog captures) were batch-committed so the raw layer stays clean; checkpoint at `cron/data/blog_ingest/latest.json` for blog-triage.
+- No entity/concept pages created this run (page creation is blog-wiki-ingest's job).
+
+**Files**: 57 files under `wiki/raw/articles/`, `wiki/log.md`.
+
 ## [2026-09-11] report | Discord hot-post (morning slot 09:30 JST)
 - Topic: "Verification was always the problem — 1日10億トークンの時代に残った唯一のボトルネック". Morning-slot narrative arc: Loop engineering hype (armin-ronacher, ryan-lopopolo) → the verification gap → three answers with numbers (spec-as-artifact, Symphony 75 PRs/week, ScaleX human-gate 4.6% precision) → loop gets sharper the more the judge lies.
 - Anchors: 1B tokens/engineer/day utilization target; 3-5 PRs/day → ~75 PRs/week with Symphony; "Symphony ships a spec, not source code"; ScaleX 409,628 decisions — dangerous-block rate 6.2% vs safe-block 7.5%, precision 4.6%; Hyper-tau-bench builder cheating 17-42%; 23pt tau-bench provider swing as the measurement-instrument angle.
