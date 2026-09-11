@@ -1,3 +1,8 @@
+## [2026-09-11] update | mixture-of-experts — Giles Thomas single-GPU MoE from-scratch replication
+- Source: Giles Thomas, "From GPT-2 to MoE" (https://gilesthomas.com/writing/llms/gpt-2-to-moe), raw at `raw/articles/gilesthomas.com--2026-09-gpt-2-to-moe--d0033616.md` (sha256 9b9924a3…).
+- **Changes**: `concepts/mixture-of-experts.md` — added "Single-GPU MoE From-Scratch Replication (Giles Thomas, Sep 2026)": GPT-2 Small → 8-expert top-1 sparse MoE on one RTX 3090; router collapse at α=0 (7/8 experts starved), α=0.005 best (loss 6.106 / aux 25.21) with one dominant expert persisting; loss 6.088 @5.44B tokens beats finetuned GPT-2 Small (6.604) but loses to dense GPT-2 Medium (6.039); DART SFT → GSM8K 25.6% vs 19.9% (+29%), MMLU flat ~25; UMAP router probe shows no clear category specialization at 154M scale; scaling walls = TinyStories data exhaustion + multi-node need. `index.md`: MoE entry summary extended.
+- **Note**: page remains a partial stub (`> **TODO**: Enrich this page.` still present) — section added incrementally.
+
 ## [2026-09-11] watchdog | auto-fix: index orphan + pipeline health report
 
 - Auto-fixed: registered `entities/emollick` redirect stub in index.md (was the only top-level page missing from index; `_index` hubs excluded by design). Index count header left untouched (redirect stubs not counted, per 2026-08-19 convention).

@@ -1,0 +1,94 @@
+---
+title: "Everyone needs a Muse"
+date: 2026-09-10
+processed_at: 2026-09-11T10:11:26.814012+00:00
+source_label: "uid=626"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-09-10
+
+**Subject:** Everyone needs a Muse
+**Collected:** 2026-09-11T10:11:26.814022+00:00
+**Articles linked:** 20
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2NyaWJlJnI9MmZseDYmbmV4dD1odHRwcyUzQSUyRiUyRnd3dy5iZW5zYml0ZXMuY29tJTJGcCUyRmV2ZXJ5b25lLW5lZWRzLWEtbXVzZSIsInAiOjIxNTAwNjQ2NywicyI6NDM3OTI5OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzg5MDQ1OTk1LCJleHAiOjIxMDQ2MjE5OTUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.NsdfmRBwW2QArsx3q5iHBTy4CWIpr-o8SButuNn3G8Y?
+
+## 2. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=4379299&post_id=215006467&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTUwMDY0NjcsImlhdCI6MTc4OTA0NTk5NSwiZXhwIjoxNzkxNjM3OTk1LCJpc3MiOiJwdWItNDM3OTI5OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.5CajkKlp7t52LJ2M48GgXjBjmJDJxQixbr_R4RQIEOQ
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=4379299&post_id=215006467&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTUwMDY0NjcsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzg5MDQ1OTk1LCJleHAiOjE3OTE2Mzc5OTUsImlzcyI6InB1Yi00Mzc5Mjk5Iiwic3ViIjoicmVhY3Rpb24ifQ.WT-VnSdgy_ll9A3A9Fqb3g3Eqa92G80j7TnsamRGgUQ&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 4. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=4379299&post_id=215006467&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTUwMDY0NjcsImlhdCI6MTc4OTA0NTk5NSwiZXhwIjoxNzkxNjM3OTk1LCJpc3MiOiJwdWItNDM3OTI5OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.5CajkKlp7t52LJ2M48GgXjBjmJDJxQixbr_R4RQIEOQ&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=4379299&post_id=215006467&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTUwMDY0NjcsImlhdCI6MTc4OTA0NTk5NSwiZXhwIjoxNzkxNjM3OTk1LCJpc3MiOiJwdWItNDM3OTI5OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.5CajkKlp7t52LJ2M48GgXjBjmJDJxQixbr_R4RQIEOQ
+
+## 6. Link
+
+- **URL:** https://open.substack.com/pub/bensbites/p/everyone-needs-a-muse?utm_source=substack&utm_medium=email&utm_campaign=email-restack-comment&action=restack-comment&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTUwMDY0NjcsImlhdCI6MTc4OTA0NTk5NSwiZXhwIjoxNzkxNjM3OTk1LCJpc3MiOiJwdWItNDM3OTI5OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.5CajkKlp7t52LJ2M48GgXjBjmJDJxQixbr_R4RQIEOQ&utm_source=substack&utm_medium=email
+
+## 7. Link
+
+- **URL:** https://open.substack.com/pub/bensbites/p/everyone-needs-a-muse?utm_source=email&redirect=app-store-no-desktop&inbox=true&utm_campaign=email-read-in-app
+
+## 8. Link
+
+- **URL:** https://substack.com/redirect/ceed55b9-366f-40d9-901c-55607ed225af?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 9. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9hcGkvdjEvcG9sbC92b3RlL2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNVFV3TURZME5qY3NJbkJ2Ykd4ZmFXUWlPakV4T1RVNE1EQXNJbkJ2Ykd4ZmIzQjBhVzl1WDJsa0lqb3lNekEyTlRjMkxDSnBZWFFpT2pFM09Ea3dORFU1T1RVc0ltVjRjQ0k2TVRjNU1UWXpOems1TlN3aWFYTnpJam9pY0hWaUxUUXpOemt5T1RraUxDSnpkV0lpT2lKd2IyeHNMWFp2ZEdVaWZRLnA0TDF1cThqVUxsNkZNUmxjbjIxeUV3SVJnZktzc3R5STVxUFVvSTBudU0iLCJwIjoyMTUwMDY0NjcsInMiOjQzNzkyOTksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4OTA0NTk5NSwiZXhwIjoyMTA0NjIxOTk1LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.XKBXiMJSt7jvm4k0wvXFQt9SR2VDt7ML0Vu7-FHkvTc?
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9hcGkvdjEvcG9sbC92b3RlL2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNVFV3TURZME5qY3NJbkJ2Ykd4ZmFXUWlPakV4T1RVNE1EQXNJbkJ2Ykd4ZmIzQjBhVzl1WDJsa0lqb3lNekEyTlRjM0xDSnBZWFFpT2pFM09Ea3dORFU1T1RVc0ltVjRjQ0k2TVRjNU1UWXpOems1TlN3aWFYTnpJam9pY0hWaUxUUXpOemt5T1RraUxDSnpkV0lpT2lKd2IyeHNMWFp2ZEdVaWZRLkZqZHFad09YMV9ZdzZqeWhHNkF5OHl3T3BsaV9hYWY4WXRGdjhDOWEyM1EiLCJwIjoyMTUwMDY0NjcsInMiOjQzNzkyOTksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4OTA0NTk5NSwiZXhwIjoyMTA0NjIxOTk1LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.xejDvFyMTGoKveu-urU6RvkQQVs5M9QzHwFJJuXeqrY?
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9hcGkvdjEvcG9sbC92b3RlL2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNVFV3TURZME5qY3NJbkJ2Ykd4ZmFXUWlPakV4T1RVNE1EQXNJbkJ2Ykd4ZmIzQjBhVzl1WDJsa0lqb3lNekEyTlRjNExDSnBZWFFpT2pFM09Ea3dORFU1T1RVc0ltVjRjQ0k2TVRjNU1UWXpOems1TlN3aWFYTnpJam9pY0hWaUxUUXpOemt5T1RraUxDSnpkV0lpT2lKd2IyeHNMWFp2ZEdVaWZRLm9BXzVjVXZObHF0ekJOOXlRRzhXTFpGSDRMcDEtQnl2dE5HajlmM0xLWk0iLCJwIjoyMTUwMDY0NjcsInMiOjQzNzkyOTksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4OTA0NTk5NSwiZXhwIjoyMTA0NjIxOTk1LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.OxjwBlwYZAve6_NibL7oDFpV1vmh79zFi-Z64GFkTnY?
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9hcGkvdjEvcG9sbC92b3RlL2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNVFV3TURZME5qY3NJbkJ2Ykd4ZmFXUWlPakV4T1RVNE1EQXNJbkJ2Ykd4ZmIzQjBhVzl1WDJsa0lqb3lNekEyTlRjNUxDSnBZWFFpT2pFM09Ea3dORFU1T1RVc0ltVjRjQ0k2TVRjNU1UWXpOems1TlN3aWFYTnpJam9pY0hWaUxUUXpOemt5T1RraUxDSnpkV0lpT2lKd2IyeHNMWFp2ZEdVaWZRLkttRHRTSkF2TEVRSUtnVjBxdDRoQl8tSUUwZ3RMaFlvbl9ZclRpVVBzdXciLCJwIjoyMTUwMDY0NjcsInMiOjQzNzkyOTksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4OTA0NTk5NSwiZXhwIjoyMTA0NjIxOTk1LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.mtz_tL__4lNtfQQPsLwKV_ocJmGe-hSIfe6AwY9gBNE?
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9hcGkvdjEvcG9sbC92b3RlL2VtYWlsP3Rva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNVFV3TURZME5qY3NJbkJ2Ykd4ZmFXUWlPakV4T1RVNE1EQXNJbkJ2Ykd4ZmIzQjBhVzl1WDJsa0lqb3lNekEyTlRnd0xDSnBZWFFpT2pFM09Ea3dORFU1T1RVc0ltVjRjQ0k2TVRjNU1UWXpOems1TlN3aWFYTnpJam9pY0hWaUxUUXpOemt5T1RraUxDSnpkV0lpT2lKd2IyeHNMWFp2ZEdVaWZRLmNaWkFSX01tc1FxSmJVVDBTY3BmdGRZRFFPUGZwSzlBc1RaLVg3cDIwb2MiLCJwIjoyMTUwMDY0NjcsInMiOjQzNzkyOTksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc4OTA0NTk5NSwiZXhwIjoyMTA0NjIxOTk1LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.6jtmZ44EYs68uzM2DdcSc6-K0QoKjWwj3mQ0SZv1RdU?
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/443b8cab-0f75-4831-95a8-c95c3c6b1873?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 15. Link
+
+- **URL:** https://substack.com/redirect/c2527803-42d5-4929-a529-9626ecf3f30a?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 16. Link
+
+- **URL:** https://substack.com/redirect/265769dc-1030-48eb-bf4b-7b7517adfdf7?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 17. Link
+
+- **URL:** https://substack.com/redirect/fe1b3f56-566f-4f03-b400-548653b9a5cf?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 18. Link
+
+- **URL:** https://substack.com/redirect/da024cd2-9320-4425-9b83-05696351b012?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 19. Link
+
+- **URL:** https://substack.com/redirect/082ed958-6592-44ae-8733-b8481d5202b1?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 20. Link
+
+- **URL:** https://substack.com/redirect/eadd0048-2519-4179-a231-fb40a8a0aca7?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+

@@ -2289,7 +2289,7 @@
 - [[concepts/mistral-workflows]] — Mistral Workflows
 - [[concepts/mit-encompass]] — MIT EnCompass - AI Agent Search Framework
 - [[concepts/mixture-of-agents]] — Mixture of Agents (MoA) — Ensemble technique where multiple LLM instances collaborate via proposer-aggregator pattern; trace-level synthesis outperforms consensus voting
-- [[concepts/mixture-of-experts]] — Mixture-of-Experts; kernel-level low-precision optimization (MXFP8 grouped GEMM, Cursor Aug 2025)
+- [[concepts/mixture-of-experts]] — Mixture-of-Experts; kernel-level low-precision optimization (MXFP8 grouped GEMM, Cursor Aug 2025); single-GPU from-scratch MoE replication (Giles Thomas, Sep 2026 — top-1 routing, α=0.005 aux loss, GSM8K 25.6%)
 - [[concepts/ml-intern]] — HuggingFace ml-intern — Autonomous ML Engineer Agent
 - [[concepts/ml-research-practice]] — ML Research Practice
 - [[concepts/ml-systems]] — ML Systems
