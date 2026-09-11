@@ -931,7 +931,7 @@ See `references/delegate-task-web-extraction-fallback.md` for the `delegate_task
 
 ## Manual Article Ingest Patterns
 
-See `references/reddit-url-resolution-pattern.md` for resolving blocked Reddit URLs via short-URL redirect → HN API → source article scraping.
+See `references/reddit-url-resolution-pattern.md` for blocked Reddit URLs; `references/candidate-viability-gate.md` for the active-crawl gate.
 
 See `references/manual-article-ingest-patterns.md` for:
 - **Author identification** via secondary search when `web_extract()` omits the byline

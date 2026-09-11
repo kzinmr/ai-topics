@@ -90,9 +90,10 @@ topics:
   - concepts/ai-evals
   - concepts/evaluation-flywheel
   - comparisons/eval-tools-comparison
+  - concepts/ai-benchmarks/hyper-tau-bench
   notes: '横方向: LLM-as-judge, offline evaluation, regression testing等'
   added: 2026-04-14
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-09-09'
 - slug: dspy
   title: DSPy / Declarative LM Programming
   crawl_policy: deepdive
@@ -268,3 +269,20 @@ topics:
   notes: 重点追跡トピック。Pi（セッションツリー＋ホットリロード）、OpenClaw（Markdownメモリ圧縮＋常時稼働）、Hermes Agent（スキル蓄積による能力成長）の3大実装を中心に、自己進化エージェントの理論（5段階分類）と実践（Hugo+IvanワークショップのPure Python再構築）の両面を追跡。Armin Ronacher「Agents Built for Agents Building Agents」哲学、Mario Zechnerのミニマリズム、Peter Steinbergerのalways-on設計を含む。
   added: 2026-05-13
   last_crawled: '2026-08-26'
+- slug: sierra
+  title: Sierra (Bret Taylor) / tau-bench family
+  crawl_policy: prerequisites
+  priority: high
+  search_hints:
+  - Sierra tau-bench agent evaluation
+  - hyper-tau-bench agents that build agents
+  - agent sandbox hardening reward hacking
+  wiki_pages:
+  - entities/sierra
+  - concepts/ai-benchmarks/tau-bench
+  - concepts/ai-benchmarks/hyper-tau-bench
+  - concepts/ai-benchmarks/tau-knowledge
+  - entities/shunyu-yao
+  notes: "tau系ベンチマーク群。Hyper-tau-bench (Sep 2026) で「エージェントを構築する能力」自体を評価する段階に入った。隣接トピック: sandbox hardening, developer reward hacking, eval-resistant benchmark design"
+  added: 2026-09-09
+  last_crawled: '2026-09-09'

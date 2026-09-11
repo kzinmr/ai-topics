@@ -204,7 +204,7 @@ When `wiki-graph-analysis` reports unlinked pairs:
 
 The 0.28s optimization (2026-05-13) traded content-validation breadth for speed. The watchdog MUST run its own independent checks for these gaps using `os.walk()` and frontmatter scanning (see `references/watchdog-healthy-baseline.md` §7 for the full verification checklist). Never trust a `0` count from `wiki_health.py --json` as authoritative for anything beyond index corruption.
 
-**Reference**: `references/watchdog-healthy-baseline.md` defines the full verification checklist, metric thresholds, auto-fix scope limits, and decision flow for every watchdog run. Read this before starting any watchdog session.
+- `references/watchdog-healthy-baseline.md` defines the full verification checklist, metric thresholds, auto-fix scope limits, and decision flow for every watchdog run. See `watchdog-session-2026-08-25.md`, `-09-04.md`, `watchdog-session-2026-09-08.md`.
 
 ### Unified Wiki-Health Pipeline (Deployed 2026-05-13)
 
@@ -1092,7 +1092,7 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 - `scripts/yaml_validate_frontmatter.py` — full-wiki frontmatter YAML scan (wiki_health.py returns {} on YAML failure → blind spot). Patterns + scoping rule: `references/yaml-frontmatter-corruption-2026-08-15.md`
 - `scripts/add_updated_dates.py` — Batch-add `updated` date to pages lacking it. Skips _index.md and raw/articles. `python3 scripts/add_updated_dates.py [--date YYYY-MM-DD]`.
 - `references/cron-mode-pitfalls.md` — Cron-mode `execute_code` blocks, `_index.md` counting in health reports, `str.replace()` anchor swallowing
-- `references/watchdog-healthy-baseline.md` — watchdog baseline: thresholds, verify cmds, auto-fix scope, escalation report format, decision flow. See `watchdog-session-2026-08-25.md`.
+- `references/watchdog-healthy-baseline.md` — watchdog baseline: thresholds, verify cmds, auto-fix scope, escalation report format, decision flow. See `watchdog-session-2026-08-25.md`, `-09-04/07.md`.
 - `scripts/fix_broken_wikilinks.py` — Raw empty-wikilink fixer (KNOWN_MAPPINGS only, NOT fuzzy; verify targets, see Pattern B). Safe: `scripts/fix_empty_wikilinks_safe.py`
 - `scripts/tag_normalization.py` — tag normalization (synonym mapping, body-safe)
 - `scripts/tag_normalization_diff_scan.py` — classify dry-run: violations vs preference rewrites (ref 2026-08-10)

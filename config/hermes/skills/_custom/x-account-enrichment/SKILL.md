@@ -8,6 +8,11 @@ category: wiki
 
 Enrich skeleton entity pages for X/Twitter accounts tracked in `~/x-accounts.yaml`.
 
+## Entity page names may differ from the handle or display name
+
+- Before creating/updating an entity page for an account, `grep -ril "<person name or handle>" wiki/entities/` — pages are titled by display name (`xeophon` → `florian-brand.md`, `_lopopolo` → `ryan-lopopolo.md`), and a handle-grep alone misses them.
+- A person may have TWO pages: a person page and a blog/writings page (`ryan-lopopolo.md` vs `ryan-lopopolo--writings.md`). Article-analysis content belongs on the writings page; tweet-level activity on the person page. Check both before creating anything new.
+
 ## Workflow
 
 > **⚠️ CRITICAL: Git History Check First**

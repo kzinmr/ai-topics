@@ -314,7 +314,6 @@ For the full workflow from retrieval → raw article save → entity page update
 For Note Tweet-specific pitfalls (tag taxonomy, engagement thresholds, case study), see `references/x-note-tweet-wiki-ingestion-pitfalls.md`.
 
 ## Pitfalls
-
 - **Mixing `note_tweet` + `article` in tweet.fields → silent data loss** — `article.plain_text` is dropped. Always use separate requests.
 - **`xurl read` does NOT fetch Note Tweet full text or Article body** — always use raw v2 endpoint with explicit `tweet.fields`.
 - **OAuth2 is mandatory for X Article body** — app-only bearer tokens get 453.

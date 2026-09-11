@@ -14,6 +14,7 @@ End-to-end workflow for ingesting an X Article or Note Tweet into the wiki knowl
 xurl "/2/tweets/<TWEET_ID>?tweet.fields=note_tweet,created_at,author_id,public_metrics,entities&expansions=author_id&user.fields=name,username,description"
 ```
 - Check response: does it have `article.title`? → X Article. Does it have `note_tweet.text`? → Note Tweet.
+- **Field-detection quirk (verified 2026-09-05, tweet 2095991462416490862)**: the metadata call requesting `note_tweet,...` can return the `article` field (title only) in the response even though `article` was not requested, while `note_tweet` is absent. Detection should therefore be: `article.title` present in ANY response → X Article, then always follow with the dedicated `tweet.fields=article` call for the body. Do not conclude "not an article" just because the field was unrequested.
 - Extract: `created_at`, `author_id`, author `username`/`name`, `public_metrics` (bookmark_count is a quality signal).
 
 ### 2. Fetch Full Content
@@ -65,9 +66,12 @@ For existing entity pages (most common pattern):
 ```bash
 cd ~/ai-topics && git add wiki/ && git commit -m "wiki: <summary>" && git push
 ```
+- **Check for foreign staged files before committing**: `git add wiki/` stages ALL pending changes under `wiki/`, which routinely includes raw articles left uncommitted by cron pipelines (blog-wiki-ingest, x-bookmarks-ingest, raw-backlog). The commit summary then misrepresents the change set. If foreign files appear in `git status`, either commit them separately with their own message first, or stage selectively (`git add wiki/raw/articles/<your-file>.md wiki/concepts/<page>.md ...`).
+- **Transient 503 from the model provider mid-task**: if the turn died with "HTTP 503: Local LLM server is busy" and the user says 再試行/retry, re-inspect filesystem state first (raw file saved? pages patched? log appended?) and resume from the first incomplete step — do not re-fetch or re-write completed steps.
 
 ## Pitfalls
 - **Don't mix note_tweet and article in tweet.fields** — see main SKILL.md
+- **Wiki commit hygiene** — `git add wiki/` sweeps uncommitted cron-pipeline files into your commit; check `git status --short wiki/` and stage selectively. Full playbook + interrupted-turn resumption checklist: `wiki-entity-enrichment-from-article` → `references/wiki-commit-hygiene-and-resumption.md`.
 - **Don't use today's date for raw article filename** — use `created_at` from the API
 - **X Article plain_text may contain invisible unicode** (U+200B, U+200C, U+FEFF) — strip before saving if the content will be used in cron jobs
 - **Author may not have an entity page yet** — search before assuming. Create a skeleton if the person is notable (OpenAI/Codex team, well-known AI practitioner)

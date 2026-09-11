@@ -1,4 +1,11 @@
-# Cron-Mode Constraints for Wiki Maintenance Jobs
+# Cron-Mode Constraints
+
+> Also see: `references/failed-scrape-primary-source-recovery.md` — recipe for recovering JS-heavy announcement pages (curl + stdlib HTML paragraph extraction) when the original scrape left a placeholder; detection grep, frontmatter/sha256 rules, and what third-party coverage systematically misses.
+> ⛔ Tool budget: cron sessions cap the number of tool-call iterations. Commit after each topic cluster (not once at the end) so a budget cutoff never strands completed work uncommitted — and report uncommitted state explicitly in the final response.
+
+> Also see: `references/concurrent-writer-clobber-recovery.md` — sibling subagents can silently overwrite wiki pages mid-session; pre-write git guard, recovery, and commit-early discipline.
+
+# Constraints for Wiki Maintenance Jobs
 
 These constraints apply to any Hermes cron job that performs wiki maintenance,
 translation sweeps, health checks, or ingestion steps in the ai-topics repo.

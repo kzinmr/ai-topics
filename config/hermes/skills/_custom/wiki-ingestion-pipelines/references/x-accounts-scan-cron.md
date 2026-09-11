@@ -45,6 +45,43 @@ dedups and attaches link metadata; wiki ingestion is the agent's job.
 - `referenced_tweet_types: ["replied_to"]` means the post is a reply — its
   standalone text may be meaningless without the parent. Always fetch the parent.
 
+## Skill file lives in the repo, not ~/.hermes/skills
+
+- `skill_manage(action="patch")` with `file_path=references/...` works ONLY when
+  the `name` parameter is also passed explicitly (omitting name → "Skill '' not
+  found"). This skill is authored in-repo at
+  `/opt/data/ai-topics/config/hermes/skills/_custom/wiki-ingestion-pipelines/`
+  (registered for skill_view, absent from `~/.hermes/skills/`). If skill_manage
+  still rejects the skill name, use the `patch` tool on the repo path directly,
+  then `git add config/hermes/skills/... && git commit && git push` like any
+  other repo change. Same for `_overrides/` skills.
+
+## Confirm-before-create for topics other cranes already ingested
+
+- Before creating a page for a tweet's article, `grep -rn "<article-url-or-slug>"
+  wiki/` — blog-ingest/hot-post cranes often ingested the same URL earlier under
+  a different page name (e.g. hyperbo.la/w/agent-platform/ already had a full
+  concept page + Lopopolo entity entry before the 2026-09-09 scan; the earlier
+  session had already done most of this run's ingestion, which only became
+  visible by grepping before writing). If detailed content exists, skip
+  creation, cross-link only, and say so in the report.
+- When resuming after a context compaction, re-verify state with grep/`git show
+  --stat` before redoing work — commit messages and stat output tell you exactly
+  what's already ingested.
+
+## Index/log bookkeeping is the agent's job, not the fetch script's
+
+- New concept/event pages must be added to `wiki/index.md` under the right
+  section by hand — the fetch scripts do not touch index for concept/event
+  pages. Check with `grep -n "<new-page-slug>" wiki/index.md` before committing;
+  an absent page is an orphan the watchdog flags later. Bump the section count
+  (e.g. `## Events (31 pages)` → 32).
+- Append a `## [YYYY-MM-DD] ingest | x-accounts-scan: ...` entry to `wiki/log.md`
+  (directly after the header block, before older same-day entries). A commit
+  with index/log pushes cleanly even when `git pull --rebase` refuses due to
+  sibling jobs' unstaged changes elsewhere in the repo — don't fight the rebase,
+  just `git push origin HEAD:main`.
+
 ## Tag taxonomy gotcha
 
 - The pre-commit tag validator blocks non-taxonomy tags (e.g. `release` is NOT in
@@ -55,6 +92,10 @@ dedups and attaches link metadata; wiki ingestion is the agent's job.
   use `--no-verify`.
 - Another blocked tag seen on 2026-09-09: `training-data` is NOT in SCHEMA.md —
   for data-rights/ToS data-usage stories use `datasets` (or `ai-ethics`) instead.
+- The tag validator runs as a pre-commit HOOK that aborts the whole `git commit`,
+  so a chained `git add && git commit && git push` silently pushes nothing even
+  though the shell prints later commands' output. After any first commit of a
+  session, verify `git log --oneline -1` shows YOUR message before trusting push.
 
 ## Sibling-edit warning
 
