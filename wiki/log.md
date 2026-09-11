@@ -1,3 +1,11 @@
+## [2026-09-11] watchdog | auto-fix: index orphan + pipeline health report
+
+- Auto-fixed: registered `entities/emollick` redirect stub in index.md (was the only top-level page missing from index; `_index` hubs excluded by design). Index count header left untouched (redirect stubs not counted, per 2026-08-19 convention).
+- Verified clean: index.md (0 pipe/line-number/triple-bracket corruption, validate_index.py pass), log.md (single header), L2 pipe-prefix scan (0).
+- Pipeline alerts reported (needs-human): x-accounts-scan schedule skip (26h stale), wiki-graph-analysis 09-11 run failed (HTTP 503 local LLM busy), systemic context-length-exceeded errors across 10 daily pipelines, wiki_health:null (wiki-health-fix 503 at 17:50).
+
+---
+
 ## [2026-09-11] skeleton-enrich-daily | queue empty — completed pending emollick → ethan-mollick dedup + committed stray raw provenance record
 
 **No `status: skeleton` pages exist in `wiki/entities/`** (queue drained 2026-09-09). This run therefore verified the queue state and finished two loose ends left uncommitted by prior sessions.

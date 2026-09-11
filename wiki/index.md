@@ -285,6 +285,7 @@
 - [[entities/ericmigi]] — Eric Migicovsky
 - [[entities/ethan-he]] — Ethan He
 - [[entities/ethan-mollick]] — Ethan Mollick — Wharton professor; author of "Co-Intelligence"; AI in education and work research
+- [[entities/emollick]] — Redirect → [[entities/ethan-mollick]] (@emollick is Ethan Mollick's X handle)
 - [[entities/eugene-yan]] — Eugene Yan (Ziyou Yan)
 - [[entities/eugene-yan--core-ideas]] — Eugene Yan — Core Ideas & Frameworks
 - [[entities/eugene-yan--key-quotes]] — Eugene Yan — Key Quotes
