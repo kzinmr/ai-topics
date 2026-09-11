@@ -891,7 +891,7 @@ The agent cron job receives a JSON payload with `new_posts[]` array. Each post c
 ### Deliverable Format (cron)
 Japanese-language report auto-delivered to Discord. See `references/x-accounts-scan-report.md` for the report template and formatting standards.
 
-> **⚠️ `wiki-daily-report` skill collision**: The X accounts scan agent may attempt to load `wiki-daily-report` for report formatting guidance. Due to a known skill collision (two copies at `~/.hermes/skills/wiki-daily-report/` and `config/hermes/skills/_overrides/wiki-daily-report/`), `skill_view(name='wiki-daily-report')` returns "Ambiguous skill name" and refuses to load. **Workaround**: Load with explicit path `wiki/raw-article-filename-policy` instead, or use `skill_view(name='wiki-ingestion-pipelines', file_path='references/x-accounts-scan-report.md')` for the report template if it exists. This mirrors the dreaming and daily-rss-triage collision patterns documented in Section F and Section H.
+> **ℹ️ `wiki-daily-report` collision RESOLVED (2026-09-11 curator pass)**: The duplicate local copy at `~/.hermes/skills/wiki-daily-report/` was archived (the override at `config/hermes/skills/_overrides/wiki-daily-report/` is now the single canonical copy), so bare `skill_view(name='wiki-daily-report')` resolves again. For report formatting guidance prefer `skill_view(name='wiki-daily-report')` or `skill_view(name='wiki-ingestion-pipelines', file_path='references/x-accounts-scan-report.md')`. The `dreaming` and `daily-rss-triage` collisions were likewise resolved earlier (local duplicates archived, repo copy canonical).
 
 ### ⚠️ Cross-Pipeline Same-Day Enrichment Collision
 

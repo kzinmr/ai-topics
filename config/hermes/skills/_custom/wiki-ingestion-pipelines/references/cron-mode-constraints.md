@@ -1,6 +1,7 @@
 # Cron-Mode Constraints
 
 > Also see: `references/failed-scrape-primary-source-recovery.md` — recipe for recovering JS-heavy announcement pages (curl + stdlib HTML paragraph extraction) when the original scrape left a placeholder; detection grep, frontmatter/sha256 rules, and what third-party coverage systematically misses.
+> Also see: `references/cron-hygiene-and-report.md` (in `wiki-ingestion-pipelines`) — end-of-run raw-dir hygiene: batch-commit untracked strays left by earlier ingest runs, rebase around a dirty `config/hermes/skills` dir, log.md insertion-point locating, and the clean-working-tree final check.
 > ⛔ Tool budget: cron sessions cap the number of tool-call iterations. Commit after each topic cluster (not once at the end) so a budget cutoff never strands completed work uncommitted — and report uncommitted state explicitly in the final response.
 
 > Also see: `references/concurrent-writer-clobber-recovery.md` — sibling subagents can silently overwrite wiki pages mid-session; pre-write git guard, recovery, and commit-early discipline.

@@ -18,6 +18,11 @@ triggers:
   - "rename wiki page"
   - "relocate wiki page"
   - "wiki directory restructuring"
+  - "pricing monitor"
+  - "check LLM pricing"
+  - "update API pricing"
+  - "pricing comparison"
+  - "llm-pricing-monitor"
 ---
 
 # Wiki Maintenance
@@ -131,6 +136,16 @@ Consecutive `## [YYYY-MM-DD]` headers without `---`. Pre-flight: verify ALL `## 
 → **Full detail**: `references/comparison-page-updates.md`
 → **Case study**: `references/llm-api-pricing-fable5-update.md`
 
+### Scheduled Pricing Monitor (absorbed from `llm-api-pricing-monitor`)
+
+When running the periodic LLM API pricing monitor cron (or "check LLM pricing" / "update API pricing"):
+
+1. **Fetch live pricing** from verified provider URLs and parse per the extraction recipes in `references/llm-pricing-extraction-recipes.md` (OpenAI = Astro SSR props, no `__NEXT_DATA__`; Anthropic = docs.anthropic.com RSC data, NOT the JS-rendered claude.com redirect; Google = `cloud.google.com` standard HTML tables, `ai.google.dev` blocked by lookalike-TLD detection; DeepSeek = `api-docs.deepseek.com`, NOT `platform.deepseek.com` which 403s).
+2. **Cross-check** uncertain prices via the OpenRouter API (`references/llm-api-pricing-verification.md`).
+3. **Update** `wiki/comparisons/llm-api-pricing.md` using the 8-section workflow above; watch promo/intro pricing windows (record live rate + list price in footnote) and peak/off-peak structures. DeepSeek historical structure: `references/deepseek-pricing-structure.md`.
+4. **Commit narrowly**: stage ONLY `wiki/comparisons/llm-api-pricing.md` and `wiki/log.md` — the repo carries unrelated sibling-cron edits; blind `git add wiki/` sweeps them in. If the tree is dirty, `git stash && git pull --rebase && git stash pop` first.
+5. **log.md prepend hazard**: after prepending your entry, verify the pre-existing first entry still has its `## [date]` header immediately after yours; re-insert with `patch` if the merge stripped it.
+
 ---
 
 ## 3. Page Relocation & Restructuring
@@ -216,6 +231,8 @@ Consecutive `## [YYYY-MM-DD]` headers without `---`. Pre-flight: verify ALL `## 
 | `references/orphan-page-deletion-example.md` | wiki-page-relocation | Orphan page detection and deletion |
 | `references/post-relocation-enrichment-pattern.md` | wiki-page-relocation | Enriching relocated pages from past sessions |
 | `references/batch-directory-reorganization-pitfalls.md` | wiki-maintenance | Symlink+git trap, double-nesting, tag validation, scope estimation, checklist |
+| `references/llm-pricing-extraction-recipes.md` | llm-api-pricing-monitor | Verified per-provider fetch URLs, extraction patterns, model lineup snapshot, monitor pitfalls |
+| `references/deepseek-pricing-structure.md` | llm-api-pricing-monitor | DeepSeek full pricing table with historical comparison (cache hit/miss, peak/off-peak) |
 
 ### Scripts
 | File | Source | Content |
