@@ -1,3 +1,8 @@
+## [2026-09-13] query | late-night hot post: benchmark ceiling + ALE (evaluation scarcity thesis)
+
+- Delivered hot post on [[concepts/benchmark-ceiling]] × [[concepts/agents-last-exam]] (evaluation signal depreciation + hard-tail concentration; 72% Terminal-Bench vs <1% ALE hardest tier; model choice ~3× harness spread).
+- Freshly ingested 2026-09-12 cluster. Not filed as new page — answer synthesized from existing pages only.
+
 ## [2026-09-12] watchdog | auto-fix index header counts + pipeline alert review
 
 - Fixed index.md header decay: Total pages 3039->3042, Concepts section count 2041->2046 (verified against actual index line counts).
