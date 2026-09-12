@@ -1,3 +1,13 @@
+## [2026-09-13] skeleton-enrich-daily | queue empty — re-verified via frontmatter parse, no candidates
+
+**No `status: skeleton` pages exist anywhere in the wiki** (queue drained 2026-09-09; still empty). This run re-verified queue state with a stricter method and found no enrichment candidates; no wiki files were modified, nothing committed.
+
+- **Stricter scan than grep**: parsed YAML frontmatter (first 600 chars) of every `wiki/**/*.md` with `re.search(r'^\s*status:\s*skeleton\s*$')` → 0 hits across the whole wiki (entities + concepts).
+- Thinnest entity files (≤20 lines: `ysymyth`, `alex-imus`, `microsoft-ai`, `samuelcolvin`, `emollick`, `jo-bergum`, `moonshot-ai`, `tim-sherratt`, `martin-fowler`, `eric-drexler`, `kyle-corbett`, `grant-sanderson-3blue1brown`) are all intentional **redirect stubs** with `redirect:`/`status: redirect` frontmatter — not enrichment candidates. Canonical targets verified rich (e.g. shunyu-yao 13KB, jo-kristian-bergum 19KB, ethan-mollick 21KB, martinfowler 11KB, samuel-colvin fully enriched).
+- `status: L3` / `status: complete` markers (akira-realmcore, anthropic, ben-boyter, ali-farhadi, …) confirmed in prior runs as **already-enriched tiers**, not skeleton tiers.
+- Sub-entity pages under `wiki/entities/omar-khattab/` (impact-metrics, baleen, quotes, collaborations, research-trajectory) are intentionally compact facets of the parent page — correct as-is per the 200-line split convention, not skeletons.
+- Pre-commit safety note: the repo working tree carries unrelated uncommitted changes from other pipelines (hot-topics.yaml, skills, new concept pages from today's ingest runs). Left untouched; did not stage or commit to avoid entangling other jobs' work-in-progress.
+
 ## [2026-09-13] query | late-night hot post: benchmark ceiling + ALE (evaluation scarcity thesis)
 
 - Delivered hot post on [[concepts/benchmark-ceiling]] × [[concepts/agents-last-exam]] (evaluation signal depreciation + hard-tail concentration; 72% Terminal-Bench vs <1% ALE hardest tier; model choice ~3× harness spread).
