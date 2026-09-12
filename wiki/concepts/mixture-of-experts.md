@@ -54,3 +54,6 @@ Giles Thomas (author of the *Writing an LLM from scratch* series) ported his fin
 - [[concepts/moe-training-noumena-methodology]] — MoE training methodology synthesis
 - [[concepts/rdep]] — RDEP expert parallelism
 - [[entities/deepseek]] — DeepSeek (major MoE practitioner)
+- [[concepts/moe-train-inference-mismatch]] — aux-loss tradeoffs, DeepSeek's aux-loss-free load balancing
+- [[concepts/scaling-laws]] — Chinchilla re-evaluation (same author, same GPU: the 3.2B-token run was Chinchilla-optimal for 163M, not 446M)
+- [[concepts/data-repetition-in-training]] — TinyStories data wall at 5.44B tokens

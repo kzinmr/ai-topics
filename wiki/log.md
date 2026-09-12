@@ -3,6 +3,12 @@
 - **Changes**: `concepts/mixture-of-experts.md` — added "Single-GPU MoE From-Scratch Replication (Giles Thomas, Sep 2026)": GPT-2 Small → 8-expert top-1 sparse MoE on one RTX 3090; router collapse at α=0 (7/8 experts starved), α=0.005 best (loss 6.106 / aux 25.21) with one dominant expert persisting; loss 6.088 @5.44B tokens beats finetuned GPT-2 Small (6.604) but loses to dense GPT-2 Medium (6.039); DART SFT → GSM8K 25.6% vs 19.9% (+29%), MMLU flat ~25; UMAP router probe shows no clear category specialization at 154M scale; scaling walls = TinyStories data exhaustion + multi-node need. `index.md`: MoE entry summary extended.
 - **Note**: page remains a partial stub (`> **TODO**: Enrich this page.` still present) — section added incrementally.
 
+## [2026-09-12] report | Discord hot-post (morning slot 09:30 JST)
+- Topic: "1枚のGPUが暴いたMoEの二重の嘘 — Chinchillaもaux-lossも、規模が違うと別物になる". Morning narrative arc: a hobbyist-scale replication (Giles Thomas RTX 3090 MoE) exposes that both the Chinchilla token heuristic and the Switch Transformers aux-loss coefficient are scale-conditioned rules.
+- Anchors: 446M total / 220M active / 8-expert top-1 on one RTX 3090; 3.26B-token first run = Chinchilla-optimal for 163M not 446M (14.7 tok/active-param); α=0 → 7/8 experts starved, α=0.005 best (6.106/25.21) with a dominant expert persisting, vs Switch Transformers' α=1e-2 at trillion scale; loss 6.088 @5.44B tokens beats GPT-2 Small 6.604 but loses to dense GPT-2 Medium 6.039 at 3× less wall time; GSM8K 25.6% vs 19.9% (+29%) with MMLU flat ~25; UMAP router probe shows no expert specialization; DeepSeek-V3 aux-loss-free routing as the lab-scale countermeasure (V2 aux-loss cost: 1-2pt downstream).
+- Wikilinks used: [[concepts/mixture-of-experts]], [[concepts/moe-train-inference-mismatch]], [[concepts/scaling-laws]], [[concepts/data-repetition-in-training]], [[entities/giles-thomas]], [[entities/deepseek]] — no primary wikilink overlap with 09-11 morning (verification-bottleneck) or 09-11 night (involution/slop factory) posts.
+- Wiki change: `concepts/mixture-of-experts.md` Related Pages gained links to moe-train-inference-mismatch / scaling-laws / data-repetition-in-training (page had no inbound cross-refs to aux-loss literature).
+
 ## [2026-09-11] watchdog | auto-fix: index orphan + pipeline health report
 
 - Auto-fixed: registered `entities/emollick` redirect stub in index.md (was the only top-level page missing from index; `_index` hubs excluded by design). Index count header left untouched (redirect stubs not counted, per 2026-08-19 convention).
