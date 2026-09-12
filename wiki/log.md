@@ -1,3 +1,13 @@
+## [2026-09-12] watchdog | auto-fix index header counts + pipeline alert review
+
+- Fixed index.md header decay: Total pages 3039->3042, Concepts section count 2041->2046 (verified against actual index line counts).
+- validate_index.py passes; 0 pipe/line-number/triple-bracket corruption.
+- wiki_health orphans (23) all _index.md hubs + gpt/_archive files - false positives, no action.
+- Pipeline failures reviewed: 6 jobs failed with Context-length-exceeded (newsletter-triage/wiki-ingest, blog-wiki-ingest, x-bookmarks, active-crawl, dreaming-wiki-ingest) and 3 with HTTP 503 local LLM busy (wiki-health-fix, wiki-graph-analysis, x-accounts-scan). Needs human review - model/provider config, not auto-fixable.
+- wiki-graph-analysis cron failed (503); residual empty-wikilink baseline ~279 stable per skill notes.
+
+---
+
 ## [2026-09-12] trending-topics | weekend report wiki ingestion
 
 Raw articles saved (5):
