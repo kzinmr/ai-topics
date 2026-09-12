@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3036
-> Last updated: 2026-09-09
+> Total pages: 3039
+> Last updated: 2026-09-12
 
 ## Entities (923 pages)
 
@@ -825,7 +825,7 @@
 - [[entities/tencent-hy3]] — Tencent Hy3 Preview
 - [[entities/teortaxestex]] — TeortaxesTex
 - [[entities/terrible-software]] — Terrible Software
-- [[entities/terry-tao]] — Terence Tao — Fields Medalist mathematician; AI as "co-pilot" for mathematics, Lean proof assistant advocacy, open-source AI proponent
+- [[entities/terry-tao]] — Terence Tao — Fields Medalist mathematician; AI as "co-pilot" for mathematics, Lean proof assistant advocacy, open-source AI proponent; co-signed 25-Fields-Medalist "Severe Misalignment of AI in Mathematics" declaration (2026-09-11)
 - [[entities/theo-browne]] — Theo Browne (t3.gg) — CEO at t3.chat, creator of create-t3-app (38K+ stars), tech YouTuber, and coding agent practitioner
 - [[entities/textarena]] — TextArena
 - [[entities/thariq-shihipar]] — Thariq Shihipar
@@ -960,6 +960,7 @@
 - [[concepts/agent-documentation]] — agent-documentation
 - [[concepts/agent-driven-ranker-optimization]] — Agent-Driven Ranker Optimization
 - [[concepts/agent-economics]] — Agent Economics
+- [[concepts/economic-world-models]] — Economic World Models (EWM) — six-level ladder from rule-based agent worlds to sim-to-real economic twins; survey finds work stuck at lower levels (arXiv, Aug 2026)
 - [[concepts/agent-experience]] — Agent Experience (AX) — Design philosophy for cloud infrastructure optimized for autonomous AI agents rather than human developers
 - [[concepts/agent-first-codebase-design]] — Agent-First Codebase Design
 - [[concepts/agent-first-design]] — Agent-First Design
@@ -1008,6 +1009,7 @@
 - [[concepts/agentty]] — Agentty — C++26 drop-in Claude Code alternative, 11MB static binary, sub-ms startup, MIT licensed
 - [[concepts/agents-architecture-scaffolding]] — Agents Architecture Scaffolding
 - [[concepts/agents-mcp-rl-course]] — Production-Ready Agent Engineering: From MCP to RL
+- [[concepts/agents-last-exam]] — Agents' Last Exam (ALE) — 1K+ real economically-valuable agent tasks (O*NET, remote-VM scoring); mainstream agents <1% on hardest tier (arXiv, Jun 2026)
 - [[concepts/agents-md-evaluation]] — AGENTS.md Evaluation — Do Context Files Help Coding Agents?
 - [[concepts/agents-planning-orchestration]] — Agents Planning Orchestration
 - [[concepts/agents-scaffolding-composition-inference-scaling-hypothesis]] — Agents Scaffolding Composition Inference Scaling Hypothesis
@@ -1056,6 +1058,7 @@
 - [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
 - [[concepts/model-hardware-standard]] — Model Hardware Standard (MHS) — Anthropic spec for AI agents operating lab/manufacturing hardware; MCP-accessible, open-source planned (Aug 2026)
 - [[concepts/station-autonomous-math-discovery]] — Station — Decentralized multi-agent mathematical discovery; 5 literature-novel results on AlphaEvolve catalogue problems (arXiv:2608.23691)
+- [[concepts/waymo-effect-research-collaboration]] — Deployment field sites as research environments; lab/field role blurring (Waymo Effect)
 - [[concepts/webmcp-protocol]] — WebMCP Protocol — Web standard for agent tool discovery (Aug 2026)
 - [[concepts/vm-containment-ai-agents]] — VM Containment of Cyber-Capable AI Agents — Trail of Bits research (Aug 2026)
 - [[concepts/wiki-memory]] — Wiki Memory — Agent-maintained file-based knowledge layer pattern (Harrison Chase, 2026)
@@ -1747,6 +1750,7 @@
 - [[concepts/eureka-labs]] — eureka-labs
 - [[concepts/evals-skills-for-coding-agents]] — Evals Skills for Coding Agents
 - [[concepts/evals-skills]] — Evals Skills for Coding Agents
+- [[concepts/benchmark-ceiling]] — The Benchmark Ceiling — evaluation scarcity & political economy of AI capability measurement; valid signal concentrates in the expert-authored hard tail (arXiv, Jun 2026)
 - [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]] — Evaluation Coding Agents Mcp Automation Harness Engineering
 - [[concepts/evaluation-development-process-quality]] — Evaluation Development Process Quality
 - [[concepts/evaluation/agent-evaluation-methodology]] — Agent Evaluation Methodology — Floor Raising vs Benchmark Maxxing

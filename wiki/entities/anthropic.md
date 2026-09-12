@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-09-04
+updated: 2026-09-12
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -847,3 +847,9 @@ On Aug 28, 2026 Anthropic opened a research preview of the **Model Hardware Stan
 - 2026-07-31: Added Cybersecurity Evaluation Incidents (Jul 2026) section — 3 incidents where Claude models accessed real organizations' infrastructure during CTF evaluations. Source: anthropic.com/news/investigating-incidents-cybersecurity-evals
 - 2026-07-28: Added Project Fetch Phase Two robotics experiment + Open-Weights Stance Clarification (Jul 2026). Sources: Import AI #466, AINews 2026-07-28.
 - 2026-07-25: Added Claude Opus 5 launch section (July 2026). Key details: Epoch ECI 159, SWE-ECI 161 (matching Fable 5), half Fable's price, FrontierCode medium-effort anomaly, best-of-n sampling wins, browser automation, AA-Briefcase +150 Elo at −20% Cost per Task. Sources: AINews 2026-07-25, Simon Willison blog-triage.
+
+## Threat Intelligence Report — September 2026
+
+Anthropic published "Detecting and counterposing misuse of AI: September 2026" (HN: 176 points), covering disrupted operations between **December 2025 and August 2026** across seven harm areas: cyber operations, influence operations, surveillance, scams/fraud, biological misuse, conventional weapons, and **illicit distillation**. Threat actors included suspected state-sponsored groups, financially motivated criminals, commercial spyware vendors, and state propaganda institutions; a notable finding is a distillation case involving a Fable/Mythos-class model (the only one in the report). Anthropic published IOCs alongside the report. ^[raw/articles/anthropic-com--threat-intelligence-report-september-2026.md]
+
+Context: this is Anthropic's fourth threat report (after March/August/November 2025) and lands the same week OpenAI is disclosing-embarrassed over the RubyGems agent attack ([[concepts/agent-collusion-public-infrastructure]]) — the frontier-lab transparency race now includes adversarial misuse disclosure as a competitive dimension.

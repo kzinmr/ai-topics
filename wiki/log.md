@@ -1,3 +1,35 @@
+## [2026-09-12] trending-topics | weekend report wiki ingestion
+
+Raw articles saved (5):
+- wiki/raw/articles/mathandai-org--misalignment-of-ai-in-mathematics-declaration.md (Math and AI Declaration, 25 Fields Medalists, HN 991)
+- wiki/raw/articles/rubyhack-ai--openai-agents-rubygems-attack-report.md (GemStuffer RubyGems agent attack, HN 765)
+- wiki/raw/articles/autom-dev--google-search-goto-links-anti-scraping.md (Google <cite> anti-scraping experiment)
+- wiki/raw/articles/researchagenda-news--waymo-effect-research-collaboration.md (Waymo Effect)
+- wiki/raw/articles/anthropic-com--threat-intelligence-report-september-2026.md (Anthropic Sept 2026 threat report, first distillation section)
+
+Pages created (1):
+- wiki/concepts/waymo-effect-research-collaboration.md
+
+Pages updated (4):
+- wiki/entities/terry-tao.md — added "Severe Misalignment Declaration" section (2026-09-11, 25 Fields Medalists)
+- wiki/concepts/agent-collusion-public-infrastructure.md — added GemStuffer RubyGems attack section (May 2026 attack, RubyDoc.info RCE, non-disclosure scandal)
+- wiki/entities/simon-willison.md — Recent Notes section: RubyGems disclosure + "Feeling sad about AI"; 2 new simonwillison raw sources linked
+- wiki/entities/anthropic.md — Threat Intelligence Report Sept 2026 section (7 harm areas, illicit distillation)
+
+SCHEMA.md: added tag research-collaboration (Meta). index.md: 1 concept added, 1 entity summary updated.
+Report: inbox/rss-scans/trending-topics-2026-09-12.md
+
+## [2026-09-12] ingest | Active crawl: agent-economy evaluation trio + RSI autonomy roadmap
+
+- Sources (arXiv, peer-track preprints; raw saved to `raw/articles/` with sha256 drift-checks):
+  - Sun et al., "Agents' Last Exam" — arXiv:2606.05405 (`arxiv-2606-05405-agents-last-exam.txt`, sha 215beecc…)
+  - Esposito & Zhang, "The Benchmark Ceiling" — arXiv:2607.01254 (`arxiv-2607-01254-benchmark-ceiling.txt`, sha f43d7364…)
+  - Han et al., "From Economic Agents to Agentic Economies" — arXiv:2608.06020 (`arxiv-2608-06020-economic-world-models.txt`, sha d9f03e76…)
+  - Duan et al., "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement" — arXiv:2609.11873 (`arxiv-2609-11873-last-ai-built-by-humans.txt`, sha fb2880dd…)
+- **Created**: `concepts/agents-last-exam.md` (ALE: 55 sub-fields/13 clusters/1K+ O*NET-anchored tasks, remote-VM scoring, hardest tier <1% pass, model choice ~3× harness spread), `concepts/benchmark-ceiling.md` (benchmark signal depreciation model; hard-tail signal concentration; protected live item pools regime), `concepts/economic-world-models.md` (EWM six-level capability ladder; survey finds literature stuck at levels 1–3).
+- **Updated**: `concepts/recursive-self-improvement.md` — new "RSI Autonomy Roadmap" section (5-level execution→strategy→experience-acquisition→environment→meta-improvement ladder, HCI diagnosis, scenario heterogeneity). Backlinks added in `concepts/evaluation/why-benchmarking-is-hard.md`, `concepts/ai-benchmarks/remote-labor-index.md`, `concepts/world-model-taxonomy.md`, `concepts/world-models-for-agents.md`. `index.md`: +3 entries, count 3036→3039.
+- **Gap verified first**: sandboxed scan confirmed ALE was cited in 5 pages but had no own page; "benchmark ceiling"/EWM absent; RSI page lacked the autonomy-levels survey.
+
 ## [2026-09-11] update | mixture-of-experts — Giles Thomas single-GPU MoE from-scratch replication
 - Source: Giles Thomas, "From GPT-2 to MoE" (https://gilesthomas.com/writing/llms/gpt-2-to-moe), raw at `raw/articles/gilesthomas.com--2026-09-gpt-2-to-moe--d0033616.md` (sha256 9b9924a3…).
 - **Changes**: `concepts/mixture-of-experts.md` — added "Single-GPU MoE From-Scratch Replication (Giles Thomas, Sep 2026)": GPT-2 Small → 8-expert top-1 sparse MoE on one RTX 3090; router collapse at α=0 (7/8 experts starved), α=0.005 best (loss 6.106 / aux 25.21) with one dominant expert persisting; loss 6.088 @5.44B tokens beats finetuned GPT-2 Small (6.604) but loses to dense GPT-2 Medium (6.039); DART SFT → GSM8K 25.6% vs 19.9% (+29%), MMLU flat ~25; UMAP router probe shows no clear category specialization at 154M scale; scaling walls = TinyStories data exhaustion + multi-node need. `index.md`: MoE entry summary extended.

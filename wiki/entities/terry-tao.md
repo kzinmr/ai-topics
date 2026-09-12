@@ -1,7 +1,7 @@
 ---
 title: Terence Tao
 created: 2026-07-13
-updated: 2026-09-09
+updated: 2026-09-12
 type: entity
 tags:
   - person
@@ -39,6 +39,15 @@ Terence "Terry" Tao is an Australian-American mathematician whose work spans an 
 Since 2023, Tao has become one of the most visible voices in the mathematical community advocating for the integration of AI tools—particularly large language models (LLMs) and proof assistants—into mathematical research workflows. Rather than framing AI as a threat, he characterizes it as a "co-pilot" that augments and transforms the work of mathematicians, changing the job description itself.
 
 ## AI and Mathematics
+
+## The "Severe Misalignment" Declaration (September 2026)
+
+On 11 September 2026 a declaration titled **"A Severe Misalignment of AI in Mathematics"** was published at [mathandai.org](https://mathandai.org/), co-signed by 25 Fields Medalists including Tao, Deligne, Scholze, Villani, Huh, Maynard, and Bhargava. It became the #1 HN story of the weekend (991 points). ^[raw/articles/mathandai-org--misalignment-of-ai-in-mathematics-declaration.md]
+
+Core claim: LLMs now solve major outstanding problems, but **benchmark-driven problem-solving is misaligned with mathematics' primary goal of conceptual understanding**. Famous problems historically functioned as landmarks signaling new methods that the community then digested through talks, simplifications, and textbook presentations; mass-producing "true/false" statements at machine speed can destroy fertile ground rather than create it. The declaration also flags rushed announcements (no writeups, no citation of prior work → attribution/plagiarism questions), the breakage of the human transmission chain that keeps AI-conceived ideas "alive," and generalizes the issue to all scientific and creative professions: years of training exist to develop the ability to *formulate new questions*, not just produce final answers. ^[raw/articles/mathandai-org--misalignment-of-ai-in-mathematics-declaration.md]
+
+This is a notable evolution of Tao's stance: he remains the "AI as co-pilot" advocate, but now co-leads a structural critique of *how AI companies use mathematics as a benchmark arena* — misalignment with the community's goals rather than opposition to the tools. Related: [[concepts/benchmark-ceiling]] (benchmark signal depreciation), [[concepts/ai-agent-safety-incidents]].
+
 
 Beginning in 2023–2024, Tao began systematically experimenting with AI tools for mathematical work, using models including GPT-4 and Claude for various tasks:
 
