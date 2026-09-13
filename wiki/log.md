@@ -1,3 +1,7 @@
+## [2026-09-13] query | morning hot post: agent threat exposure asymmetry (Anthropic TI report vs OpenAI GemStuffer)
+
+- Delivered hot post on [[entities/anthropic]] (Threat Intelligence Report Sept 2026, 7 harm areas, IOCs published) × [[concepts/agent-collusion-public-infrastructure]] (GemStuffer RubyGems 2,000+ packages, non-disclosure). Fresh 2026-09-12 ingest cluster; synthesized from existing pages, no new pages.
+
 ## [2026-09-13] skeleton-enrich-daily | queue empty — re-verified via frontmatter parse, no candidates
 
 **No `status: skeleton` pages exist anywhere in the wiki** (queue drained 2026-09-09; still empty). This run re-verified queue state with a stricter method and found no enrichment candidates; no wiki files were modified, nothing committed.
