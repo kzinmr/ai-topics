@@ -1,3 +1,14 @@
+
+## [2026-09-13] x-accounts-scan | new post ingest (4 candidates → 2 wiki updates)
+
+- Scanned 11 tracked accounts; 4 new substantive posts, 2 with actionable external content.
+- **Sero (0xsero)**: new project **Local AI Registry** (github.com/0xsero/local-ai-registry) — hardware-aware registry of local model launch recipes + measured speed evidence; also shipped as Omarchy plugin `sero.local-ai`. Saved raw → `wiki/raw/articles/2026-09-13_github_0xsero_local-ai-registry.md`; enriched `wiki/entities/sero.md` (new Key Open-Source Projects section, frontmatter sources+updated).
+- **Nathan Lambert (natolambert)**: re-amplified "6 months to live for open models" (Jul 12) as "a very real political threat" — added re-amplification note to existing July 2026 section in `wiki/entities/nathan-lambert.md` (no new page; article already documented).
+- **0xsero "They Want to Ban Local AI" YouTube video** — logged, no raw save (video, overlaps existing open-weight regulation coverage).
+- index.md: updated `entities/sero` blurb to mention Local AI Registry.
+
+---
+
 ## [2026-09-13] skeleton-enrich-daily | queue empty — frontmatter parse confirms 0 skeleton candidates
 
 - Parsed YAML frontmatter of every `wiki/**/*.md` (regex `^\s*status:\s*skeleton\s*$`) → **0 skeletons** across entities + concepts. Queue drained 2026-09-09; still empty.

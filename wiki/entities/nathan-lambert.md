@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-08-15
+updated: 2026-09-13
 type: entity
 aliases:
   - natolambert
@@ -214,6 +214,8 @@ Nathan Lambert **departed the Allen Institute for AI (Ai2)** in June 2026, marki
 - **Coalition building**: Lambert urges the diffuse open-source community to organize lobbying efforts immediately, as "everyone else outside the frontier labs needs to start working today."
 
 Source: [6 months to live for open models](https://www.interconnects.ai/p/6-months-to-live-for-open-models) (Jul 12, 2026, Robotic/Interconnects)
+
+**Re-amplification (Sep 13, 2026)**: Lambert re-shared the post on X as a reply — *"This is why I wrote this -- its a very real political threat"* — signaling the July 12 analysis remains his standing position as the open-model regulatory threat continues to develop. Consistent with his warning that the 6-month window (to roughly Jan 2027) is the critical period for open-weights policy action.
 
 ### August 2026: Open Artifacts #23 — the consolidation prediction was wrong
 

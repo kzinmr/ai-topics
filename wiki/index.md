@@ -764,7 +764,7 @@
 - [[entities/sequent]] — Sequent
 - [[entities/sequoia-capital]] — Sequoia Capital
 - [[entities/serena-ge]] — Serena Ge
-- [[entities/sero]] — Sero (0xSero)
+- [[entities/sero]] — Sero (0xSero) — open-source AI infra builder; Local AI Registry (hardware-aware launch-recipe registry + Omarchy plugin, Sep 2026); local.ai #1; "Open Source Must Win" manifesto
 - [[entities/servicenow]] — ServiceNow
 - [[entities/seshadri]] — Shrikar Seshadri (@sseshadri43) — LangChain Deep Agents engineer; co-authored RubricMiddleware (Grading Rubrics) with Sydney Runkle
 - [[entities/seth-karten]] — Seth Karten

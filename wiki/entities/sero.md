@@ -1,9 +1,11 @@
 ---
 title: "Sero (0xSero)"
 tags: [person]
-sources: []
+sources:
+  - https://github.com/0xsero/local-ai-registry
+  - https://plugins.omarchy.org/plugin.html?id=sero.local-ai
 created: 2026-04-24
-updated: 2026-07-17
+updated: 2026-09-13
 type: entity
 ---
 
@@ -88,6 +90,18 @@ Source: [X thread](https://x.com/0xsero/status/2040012153885761973) — \"Free D
 - Terminal web browser written in Rust
 - Features AI chat integration, tool-calling, multi-engine search
 - Part of his broader "Freedom Tech" philosophy
+
+### Local AI Registry (September 2026)
+- **Hardware-aware registry of local model artifacts, launch recipes, measured speed sweeps, and public quality leaderboards** — "one validated recipe per machine, with the evidence attached."
+- Data-first design: clients read from disk, serve as static JSON, or resolve over any static HTTP host. Progressive-disclosure rule (index → choice → exact record) via discovery shards in `registry/index/`.
+- **Trust boundary**: `validated` = revision+runtime pinned with launch-contract acceptance evidence; `candidate` = useful compat/speed evidence but not yet reproducible-launch guaranteed (LocalMaxxing, local.ai Postgres, mlx.fast imports are always candidate).
+- Collections: hardware / model / model-instance / recipe (artifact × hardware × engine) / speed-sweep / benchmark / price / asset. Contract defined in both JSON Schema and TypeScript.
+- Hardware coverage spans Apple M1–M5 (Pro/Max/Ultra memory tiers), RTX 30/40/50, NVIDIA workstation, four AMD local-AI targets, Intel Arc, audited server classes.
+- Next.js site reads `registry/` directly at runtime; read-only `/api/v1` JSON API (no write path).
+- Also published as an **Omarchy community plugin** `sero.local-ai` (Sep 13, 2026 — "Omarchy will be a beautiful home. Local AI").
+- Directly extends his local.ai benchmark work and "Open Source Must Win" mission.
+
+Source: [[raw/articles/2026-09-13_github_0xsero_local-ai-registry]] · [X post](https://x.com/0xsero/status/2099182703694266727)
 
 ### factory-cursor-bridge (62 stars)
 - Unified BYOK proxy that wires ~/.factory/config.json models into Cursor IDE
