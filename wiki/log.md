@@ -1,3 +1,11 @@
+## [2026-09-13] skeleton-enrich-daily | queue empty — frontmatter parse confirms 0 skeleton candidates
+
+- Parsed YAML frontmatter of every `wiki/**/*.md` (regex `^\s*status:\s*skeleton\s*$`) → **0 skeletons** across entities + concepts. Queue drained 2026-09-09; still empty.
+- The thinnest entity files (ysymyth, samuelcolvin, alex-imus, emollick, jo-bergum, moonshot-ai, tim-sherratt, martin-fowler, eric-drexler, kyle-corbett) are intentional redirect stubs (verified in prior runs; canonical targets rich). Not enrichment candidates.
+- No wiki files modified. Working tree carries 65 unrelated uncommitted files from active-crawl/newsletter pipelines — left untouched per pipeline-isolation policy. Nothing committed/pushed.
+
+---
+
 ## [2026-09-13] watchdog | wiki-health-fix run — all clean, 0 actions taken
 
 - Phase 1 (index corruption): pipe_prefix=0, line_number_prefix=0, triple_bracket=0, space_prefix=0 — clean, no fix needed. `validate_index.py` pass (3069 lines).
