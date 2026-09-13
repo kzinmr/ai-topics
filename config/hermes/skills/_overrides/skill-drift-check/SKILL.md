@@ -24,8 +24,32 @@ When new unmanaged skills are identified during inventory checks:
 
 ### Inventory Check Commands
 ```bash
+# Canonical baseline state used by check_new_skills.py (authoritative for diffs):
+#   /opt/data/.hermes/scripts/cache/skills_baseline.json
+# Verify it against the live tree before trusting a cron report:
+python3 -c "
+import json, pathlib
+base=json.load(open('/opt/data/.hermes/scripts/cache/skills_baseline.json'))
+skills=pathlib.Path('/opt/data/.hermes/skills')
+actual={}
+for sm in skills.rglob('SKILL.md'):
+    if '.archive' in sm.parts: continue
+    parts=sm.parent.relative_to(skills).parts
+    if len(parts)==2: actual[parts[1]]=parts[0]
+    elif len(parts)==1: actual[parts[0]]='uncategorized'
+print('baseline',len(base),'actual',len(actual))
+print('stale:',sorted(k for k in base if k not in actual))
+print('new:',sorted(k for k in actual if k not in base))
+"
+
 # Count managed skills (git-tracked)
-find ~/ai-topics/config/hermes/skills -name "SKILL.md" | wc -l
+find ~/ai-topics/config/hermes/skills -name SKILL.md | wc -l
+
+# IMPORTANT: archived skills must have SKILL.md RENAMED (e.g. SKILL.md.disabled).
+# `.archive` is in the path, so rglob-based finders already skip them, but a plain
+# `find ~/.hermes/skills -name SKILL.md` will still count them — do not use that
+# count as the unmanaged total.
+```
 
 # Count unmanaged skills (local runtime)
 find ~/.hermes/skills -name "SKILL.md" | wc -l
