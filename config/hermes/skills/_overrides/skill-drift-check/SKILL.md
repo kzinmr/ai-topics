@@ -14,6 +14,22 @@ category: devops
 - **Archive convention**: Unmanaged skills in `.archive` subdirectories (e.g., `~/.hermes/skills/.archive/baoyu-comic/`) are deprecated but still counted as unmanaged in inventory checks
 
 ### Promotion Workflow (Unmanaged → Managed)
+
+**HEALTH CHECK — run first, do not blindly "promote everything unmanaged":**
+The unmanaged count is ~95 by design and does NOT mean there is work to do. Before
+suggesting any promotions, bucket every unmanaged skill:
+- **already canonical** — content already lives in a managed umbrella skill or in
+  `AGENTS.md`/`SCHEMA.md` (e.g. `himalaya` vs the AGENTS.md email mandate, `linear`/`airtable`
+  under the `productivity` umbrellas). No action; archiving them is what makes them show up
+  as "removed" noise later.
+- **generic Hermes builtins** — `ascii-art`, `baoyu-*`, `comfyui`, `excalidraw`, `p5js`,
+  `pixel-art`, `manim-video`, `pokemon-player`, `minecraft-modpack-server`, `godmode`,
+  `openhue`, `imessage`/`findmy`/`apple-*` (no macOS host here). Not AI-topics knowledge;
+  leave local or archive, never promote.
+- **genuinely new + reusable AI-topics workflow knowledge** — the only real promotion
+  candidates. This bucket has been empty for every check to date.
+Assume the answer is "nothing to promote" and justify each exception.
+
 When new unmanaged skills are identified during inventory checks:
 1. **Assess value**: Does the skill encode reusable workflow knowledge (not session-specific hacks)?
 2. **Check for duplicates**: `find ~/ai-topics/config/hermes/skills -type d -name "<skill-name>"` — don't promote if a managed version already exists
