@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-09-08
+updated: 2026-09-12
 type: concept
 tags:
   - concept
@@ -25,6 +25,7 @@ sources:
   - https://newsletter.semianalysis.com/p/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data
   - raw/newsletters/2026-08-10-import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interpl.md
   - raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md
+  - raw/articles/arxiv-2609-11873-last-ai-built-by-humans.txt
 description: "The feedback loop where an AI improves the machinery that produces its intelligence. Near-term RSI runs through harness engineering — optimizing context, workflow, and code — rather than direct weight rewriting."
 ---
 
@@ -384,6 +385,27 @@ The debate raised critical alignment questions:
 This debate represents a notable shift: Patel, who has been "short-term bearish" on AI progress, publicly acknowledged RSI plausibility. The discussion bridges the technical RSI trajectory documented above with the governance/safety concerns raised by Anthropic and IFP.
 
 > Source: `raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md`
+
+## RSI Autonomy Roadmap: "The Last AI Built by Humans" (September 2026)
+
+Duan et al., ["The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement"](https://arxiv.org/abs/2609.11873) (arXiv:2609.11873, Sept 10, 2026) contributes the first *systems-engineering* roadmap for RSI, structured as five escalating autonomy levels:
+
+| Level | Autonomy over... | Meaning |
+|-------|-----------------|---------|
+| 1 | Improvement **execution** | AI runs improvement procedures humans design (current frontier: harness engineering, AutoResearch clones) |
+| 2 | Improvement **strategy** | AI chooses *which* improvement approach to pursue (evolutionary search, curriculum, data mixing decisions) |
+| 3 | **Experience acquisition** | AI generates/selects its own training signal instead of consuming human-curated data — the data-scarcity pressure point |
+| 4 | **Environment adaptation** | AI reshapes the environment it learns in (RL environments, eval harnesses, tooling) |
+| 5 | **Recursive meta-improvement** | The improvement process itself is improved by the same loop — genuine RSI |
+
+Key positions:
+
+- **Definition:** RSI = AI turning experience and feedback into *persistent* changes that improve both capabilities **and the process of future improvement** — the second clause is what separates genuine RSI from ordinary fine-tuning.
+- **Diagnosis first:** the authors use a **Headroom-Closed Index (HCI)** to quantify how much of the improvement gap current LLMs can already close autonomously, arguing existing systems sit at levels 1–2 and stall before experience-acquisition autonomy.
+- **Scenario heterogeneity:** scientific discovery, embodied intelligence, and software engineering have *distinct requirements and development speeds* for RSI — software engineering leads because improvement artifacts (code, evals) are executable and cheaply verifiable; science needs costly physical validation.
+- The paper connects RSI research to **practical industry systems** and preliminary empirical evidence (AutoResearch-clone ecosystems, self-optimizing models), positioning levels 1–2 as already industrialized and level 3 (experience acquisition) as the live bottleneck — consistent with the environment/reward-scaling view in [[entities/semianalysis|SemiAnalysis]]'s RL-environment analysis.
+
+The title's framing — the *last* AI built by humans — encodes the authors' claim that level 5 is reachable engineering, not speculation; treat as one survey's judgment (`confidence: medium` for the trajectory claims). Raw: `raw/articles/arxiv-2609-11873-last-ai-built-by-humans.txt`.
 
 ## Related Concepts
 

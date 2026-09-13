@@ -58,4 +58,5 @@ The bet by ECHO's authors: "Anywhere an agent acts and the world responds in tok
 
 - [[echo-rl]] — ECHO method for CLI agents
 - [[entities/dimitris-papailiopoulos]]
+- [[concepts/economic-world-models]] — simulating whole economies (agent-population world models), the macro sibling of per-agent world models
 - [[entities/vaishnavi-shrivastava]]

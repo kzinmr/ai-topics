@@ -69,6 +69,7 @@ CAIS and Scale Labs published the July 2026 Remote Labor Index results, detectin
 ## Related Benchmarks
 
 - **[[gdpval]]**: Evaluates economically valuable tasks; the Remote Labor Index specifically frames evaluation around job automation
+- **[[concepts/agents-last-exam]]**: 1K+ real, economically-valuable long-horizon tasks (O*NET-anchored, remote-VM execution); hardest tier <1% pass rate for mainstream agents
 - **[[theagentcompany]]**: Simulates company work; the Remote Labor Index evaluates across diverse remote occupations
 - **[[crmarena-pro]]**: Tests specific enterprise CRM tasks; the Remote Labor Index covers broader remote work categories
 - **[[gaia-benchmark]]**: Tests general agent capabilities; the Remote Labor Index focuses on occupation-level automation potential

@@ -49,6 +49,7 @@ This post is the clearest third-party statement of the **scaffold-as-confound** 
 ## See Also
 
 - [[concepts/evaluation/agent-evaluation-methodology]] — floor-raising vs benchmark-maxxing
+- [[concepts/benchmark-ceiling]] — the political-economy account: valid signal concentrates in the expert-authored hard tail
 - [[concepts/scaffold-vs-rl-debate]] — where scaffold gains come from
 - [[concepts/evaluation/epoch-capabilities-index]] — Epoch's composite metric (cites this post)
 - [[entities/florian-brand]] — co-author

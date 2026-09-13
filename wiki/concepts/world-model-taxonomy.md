@@ -17,7 +17,7 @@ confidence: medium
 
 # World Model Taxonomy
 
-A classification of how "world model" is used across the industry, derived from the World Labs / Google DeepMind / NVIDIA / OpenAI / Meta / Tencent / Decart competitive scan of September 2026. The term covers at least six distinct technical commitments; conflating them makes vendor claims impossible to evaluate. See [[concepts/world-models-science]] and [[concepts/world-models-for-agents]] for the broader concept and [[entities/world-labs]] for the flagship commercial example.
+A classification of how "world model" is used across the industry, derived from the World Labs / Google DeepMind / NVIDIA / OpenAI / Meta / Tencent / Decart competitive scan of September 2026. The term covers at least six distinct technical commitments; conflating them makes vendor claims impossible to evaluate. See [[concepts/world-models-science]] and [[concepts/world-models-for-agents]] for the broader concept, [[entities/world-labs]] for the flagship commercial example, and [[concepts/economic-world-models]] for the *economic* world-model dimension (simulating markets from within rather than scenes).
 
 ## The Six Categories
 
