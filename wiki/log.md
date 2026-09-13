@@ -5519,3 +5519,9 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 
 ---
 
+
+## [2026-09-13] update | JP→EN translation sweep — body sweep reached natural end
+- Full-wiki scan (skip raw/_archive/.git, body-only after frontmatter): **0 translatable body JP remaining**.
+- 2 residual body-JP files intentionally kept: `log.md` (98 chars — historical Japanese Discord hot-post topic titles + Kojiki-series proper names inside past log entries; log is append-only) and `entities/mo-hit-main.md` (4 chars — 茂木秀樹 disambiguating a real person in the verification table).
+- Frontmatter-only JP (42 chars across 9 files) all verified intentional multilingual aliases (e.g. `月之暗面` for Moonshot AI, `姚顺雨` for Shunyu Yao, descriptive JP aliases on session-portability / context-lock-in / thin-bi-tool / predictive-v-information). Per skill guidance: preserve, do not translate.
+- Recommendation: retarget or disable the JP→EN translation cron — no manufactured work remains.
