@@ -1,3 +1,14 @@
+## [2026-09-13] watchdog | wiki-health-fix run — all clean, 0 actions taken
+
+- Phase 1 (index corruption): pipe_prefix=0, line_number_prefix=0, triple_bracket=0, space_prefix=0 — clean, no fix needed. `validate_index.py` pass (3069 lines).
+- Phase 2 ghosts: recursive scan found 2 apparent ghosts (`concepts/dataagent-defragmentation`, `concepts/evaluation-finance-agents`) — **not removed**: both are staged-but-uncommitted entries from an in-flight wiki-ingest pipeline (page files not yet written to disk). Upstream race artifact, not a wiki defect.
+- Phase 2 orphans: 23 reported orphans are all `_index.md` hub files + 2 archived `concepts/gpt/_archive/*` — by-design exclusions (per wiki-graph-health watchdog baseline). 0 real gaps; 0 added to index.
+- Header counts: verified — section counts in index.md match actual entry line counts exactly. Entity header (923) > top-level disk files (917) is the known legitimate redirect-stub double-indexing.
+- Working tree held 61 uncommitted files from active-crawl/newsletter pipelines (staged, not committed) — left untouched per pipeline-isolation policy.
+- No wiki files modified this run. Nothing committed/pushed.
+
+---
+
 ## [2026-09-13] query | morning hot post: agent threat exposure asymmetry (Anthropic TI report vs OpenAI GemStuffer)
 
 - Delivered hot post on [[entities/anthropic]] (Threat Intelligence Report Sept 2026, 7 harm areas, IOCs published) × [[concepts/agent-collusion-public-infrastructure]] (GemStuffer RubyGems 2,000+ packages, non-disclosure). Fresh 2026-09-12 ingest cluster; synthesized from existing pages, no new pages.
@@ -5529,3 +5540,26 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - 2 residual body-JP files intentionally kept: `log.md` (98 chars — historical Japanese Discord hot-post topic titles + Kojiki-series proper names inside past log entries; log is append-only) and `entities/mo-hit-main.md` (4 chars — 茂木秀樹 disambiguating a real person in the verification table).
 - Frontmatter-only JP (42 chars across 9 files) all verified intentional multilingual aliases (e.g. `月之暗面` for Moonshot AI, `姚顺雨` for Shunyu Yao, descriptive JP aliases on session-portability / context-lock-in / thin-bi-tool / predictive-v-information). Per skill guidance: preserve, do not translate.
 - Recommendation: retarget or disable the JP→EN translation cron — no manufactured work remains.
+
+## [2026-09-13] active-crawl | 5 sources ingested → 5 new concept pages
+- Frontier-Model Benchmarks (Jul–Sep 2026): raw/articles/arxiv-2609-04684-frontier-bench-suite.txt → concepts/frontier-model-benchmarks-2026h2.md (seven-model suite: ARC-AGI-3 near-random for all, LIFE budget collapse, effort as first-class variable, all Vending-Bench 2 runs failed)
+- DataAgent Defragmentation: raw/articles/arxiv-2608-20174-dataagent-defrag.txt → concepts/dataagent-defragmentation.md (four-stage semantic-spine pipeline, no pre-declared ontology)
+- Evaluation Finance: raw/articles/arxiv-2609-07282-evaluation-finance.txt → concepts/evaluation-finance-agents.md (eval/observability layer as durable AI revenue; evals as "unit test of the AI era")
+- Mem0 memory analysis: raw/articles/2026-05-27_mem0-openclaw-hermes-agent-memory.md → concepts/cache-stable-vs-live-search-memory.md (Hermes frozen capped prompt memory vs OpenClaw live-search workspace)
+- Memory integrity incident replays: raw/articles/2026-07-10_six-agent-memory-incident-replays.md → concepts/memory-integrity.md (six named 2026 incidents; IBM: all 7 production frameworks poisoning-vulnerable)
+- Backlinks added: hermes-agent-architecture, memory-systems-design-patterns, mem0, ai-agent-security, ai-benchmarks/agent-memory-bench, benchmark-ceiling
+- Index: +5 entries, counts updated (concepts 2051, total 3047)
+- Note: 3 earlier arXiv raws (2609.01018 Looped RL, 2609.02323 PagedWeight, 2609.06312 LLM-as-a-Judge) captured but page creation deferred — loops/selection-bias overlap existing pages (recurrent-depth-language-models, llm-as-judge); page-worthy only if coverage gaps found later.
+## [2026-09-13] watchdog | auto-fix — 2 orphan index registrations
+
+- Wiki-health report was stale (null at watchdog run); ran `wiki_health.py --json` live: 0 name-policy violations, 0 skeleton entities, 25 orphans (23 = `_index`/`_archive` false positives, 2 real gaps).
+- Active-crawl left 2 new concept pages unindexed: `concepts/agent-native-tool-fallacy`, `concepts/alignment-relativity` → added to index.md (drifted section: near alphabetical neighbors).
+- Header recount per formula (compare L100+ `- [[` count vs `## `-header count): Concepts 2051→2053, Total 3047→3049 (header was already 1 behind L100 count). Entities/Comparisons/Events/Queries headers match L100 counts. Filesystem > L100 gap = 575 nested sub-pages served by `_index` hubs (by design, not indexed in main index).
+- Index corruption scan: 0 pipe-prefix, 0 line-number, 0 triple-bracket. `validate_index.py` passes.
+- Pipeline watchdog: 0 alerts, latest report 5.1h old. wiki-graph-analysis report 50.6h old (Friday weekly, next run Fri 15:00 UTC — normal cadence; its "issues" sample was template text, not real findings).
+- No page creation, no deletions.
+
+---
+## [2026-09-13] create | events/openai-rubygems-gemstuffer-disclosure-2026
+- Event page for rubyhack.ai GemStuffer disclosure (Sep 11): novel details beyond concept page — RCE chain via .yardopts, CDN API-key-leak 0-day attempt (18% affected sign-ins), self-disarming payloads, webhook-as-datastore, email-verification bypass
+- Updated index.md (Events 33 pages, total 3050)

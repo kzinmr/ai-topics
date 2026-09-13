@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3042
-> Last updated: 2026-09-12
+> Total pages: 3050
+> Last updated: 2026-09-13 
 
 ## Entities (923 pages)
 
@@ -534,7 +534,7 @@
 - [[entities/max-woolf]] — Max Woolf (minimaxir) — Data scientist and blogger analyzing AI coding agent economics; quota reset analysis (July 2026)
 - [[entities/maximor]] — Maximor
 - [[entities/meituan-longcat]] — Meituan LongCat 2.0 / Owl Alpha — 1.6T/48B MoE model, 1M context, trained on 50k domestic Chinese accelerators; first near-frontier model on fully domestic hardware (June 30)
-- [[entities/mem0]] — Mem0
+- [[entities/mem0]] — Mem0 — open-source agent memory layer; its engineering team framed the cache-stable vs live-search memory tradeoff (see concepts/cache-stable-vs-live-search-memory)
 - [[entities/mercor]] — Mercor
 - [[entities/merge]] — Merge
 - [[entities/merge-dev]] — Merge.dev (Merge Agent Handler)
@@ -930,7 +930,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2046 pages)
+## Concepts (2053 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -947,6 +947,7 @@
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM (Adaptive Entropy Modulation)
 - [[concepts/agent-security-certification]] — Agent Security Certification (AIUC-1) — first certification standard for AI agent security/safety/reliability; organizational-controls audit + adversarial product testing; quarterly re-certification; Cursor first certified (Aug 2026)
+- [[concepts/agent-native-tool-fallacy]] — Agent-Native Tool Fallacy — Sean Goedecke: "build X for AI agents" products mostly fail; agent-good tools converge on human-good tools, incumbents hold a training-data moat, agent ergonomics unknown and shifting (Sep 2026)
 - [[concepts/after-automation]] — After Automation (Paradox)
 - [[concepts/ag2-autogen]] — AG2 / AutoGen — Multi-agent framework
 - [[concepts/agent-account-provisioning]] — Agent Account Provisioning
@@ -1092,7 +1093,7 @@
 - [[concepts/ai-benchmarks/appworld]] — AppWorld
 - [[concepts/ai-benchmarks/arc-agi-1]] — ARC-AGI-1
 - [[concepts/ai-benchmarks/arc-agi-2]] — ARC-AGI-2 Benchmark
-- [[concepts/ai-benchmarks/arc-agi-3]] — ARC-AGI-3 — Third-generation ARC benchmark (2D puzzle games); OpenAI GPT-5.6 Sol tripled scores to 38.3% via retained reasoning + context compaction (July 2026)
+- [[concepts/ai-benchmarks/arc-agi-3]] — ARC-AGI-3 — Third-generation ARC benchmark (2D puzzle games); OpenAI GPT-5.6 Sol tripled scores to 38.3% via retained reasoning + context compaction (July 2026); a full seven-model July–Sep 2026 suite still scored <3pt above random on public games (see frontier-model-benchmarks-2026h2)
 - [[concepts/ai-benchmarks/benchflow-tool]] — BenchFlow — Dockerized agent evaluation framework; Awesome Agent Evals curated list (443+ resources, 12 must-read starter set, companies landscape)
 - [[concepts/ai-benchmarks/benchjack]] — BenchJack
 - [[concepts/ai-benchmarks/benchmaxxing]] — Benchmaxxing (Benchmark Over-optimization)
@@ -1280,6 +1281,7 @@
 - [[concepts/ai-voice-fraud]] — AI Voice Fraud — voice cloning scams, three-second theft attacks, deepfake audio fraud vectors, why traditional defences fail against AI-driven voice fraud, mitigation strategies
 - [[concepts/ai-vulnerability-detection-at-scale]] — AI Vulnerability Detection at Scale
 - [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
+- [[concepts/alignment-relativity]] — Alignment Relativity (Aligned to Whom?) — Hyperbo: model priors aligned to non-experts who rewarded them in training; permissible shortcuts are person-indexed, making alignment irreducibly complex (Sep 2026)
 - [[concepts/alex-hall]] — alex-hall
 - [[concepts/alex-krizhevsky]] — Alex Krizhevsky
 - [[concepts/allen-institute-ai]] — allen-institute-ai
@@ -1474,6 +1476,7 @@
 - [[concepts/clinical-ai]] — Clinical AI
 - [[concepts/clojure]] — Clojure
 - [[concepts/clojure-for-the-brave-and-true]] — Clojure for the Brave and True
+- [[concepts/cache-stable-vs-live-search-memory]] — Cache-Stable vs Live-Search Memory — Mem0's two-pole taxonomy of agent memory: frozen hard-capped prompt memory (Hermes, KV-cache stability) vs live-search evolving memory workspace (OpenClaw); Mem0 plugin as orthogonal cross-tool persistence layer (May 2026)
 - [[concepts/cloud-data-warehouses]] — Cloud Data Warehouses
 - [[concepts/cloudflare-agents]] — Cloudflare Agents: Internal AI Engineering Stack (iMARS)
 - [[concepts/cloudflare-email-sending]] — Cloudflare Email Sending
@@ -1654,6 +1657,7 @@
 - [[concepts/deep-research-agent-from-scratch]] — Deep Research Agent from Scratch
 - [[concepts/deepclaude]] — DeepClaude - Claude Code Agent Loop with DeepSeek V4 Pro
 - [[concepts/deepseek-harness]] — DeepSeek Harness (dsh) — open-source "everything is a plugin" agent harness on Cordis; ~106k GitHub stars in 48h, MIT
+- [[concepts/dataagent-defragmentation]] — DataAgent Defragmentation — four-stage pipeline (embedding → cluster-and-name → LLM graph → Louvain) that finds the semantic spine of enterprise data lakes without a pre-declared ontology (arXiv:2608.20174, Sep 2026)
 - [[concepts/deepseek-r1]] — DeepSeek-R1
 - [[concepts/deepseek-v3]] — DeepSeek-V3
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2
@@ -1750,6 +1754,7 @@
 - [[concepts/eureka-labs]] — eureka-labs
 - [[concepts/evals-skills-for-coding-agents]] — Evals Skills for Coding Agents
 - [[concepts/evals-skills]] — Evals Skills for Coding Agents
+- [[concepts/evaluation-finance-agents]] — Evaluation Finance: AI Agent Eval & Observability Sector — the eval/observability layer as durable AI-industry revenue (independent research from the model vendors); evals as "the unit test of the AI era" (arXiv:2609.07282, Sep 2026)
 - [[concepts/benchmark-ceiling]] — The Benchmark Ceiling — evaluation scarcity & political economy of AI capability measurement; valid signal concentrates in the expert-authored hard tail (arXiv, Jun 2026)
 - [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]] — Evaluation Coding Agents Mcp Automation Harness Engineering
 - [[concepts/evaluation-development-process-quality]] — Evaluation Development Process Quality
@@ -1832,6 +1837,7 @@
 - [[concepts/free-software]] — Free Software
 - [[concepts/frontier-ai-standards-body]] — Demis Hassabis's July 2026 FINRA-style Frontier AI Standards Body proposal
 - [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation
+- [[concepts/frontier-model-benchmarks-2026h2]] — Frontier-Model Benchmarks (Jul–Sep 2026) — seven-model suite across ARC-AGI-3/LIFE/GAIA2/HLE/Vending-Bench 2/UEBench; non-uniform landscape, effort as first-class variable, all Vending-Bench runs failed (arXiv:2609.04684)
 - [[concepts/frontier-models-comparison-april-2026]] — Frontier Models Comparison — April 2026
 - [[concepts/frontier-safety-blueprint]] — Frontier Safety Blueprint
 - [[concepts/fsdp-qlora]] — FSDP + Q-LoRA
@@ -2255,6 +2261,7 @@
 - [[concepts/megakernel-for-llm-inference]] — Megakernel for LLM Inference (redirect → megakernel-inference)
 - [[concepts/megakernel-inference]] — Megakernel for LLM Inference; Lucebox fused kernel + Aug 2026 megakernel debate (Rubin dependency triggers, Cursor MoK)
 - [[concepts/memex-scratchpad]] — MemEx — Programmable Scratchpad for LLM Agents
+- [[concepts/memory-integrity]] — Memory Integrity — agent memory poisoning & provenance; six named incident replays (EchoLeak worm stage, one-shot poisoning, silent deletion, fake policy, blast-radius deletion, cross-tenant leak); IBM: all 7 production frameworks vulnerable (Jul 2026)
 - [[concepts/memory-architecture]] — Memory Architecture (Three-Layer Model)
 - [[concepts/memory-scaling]] — Memory Scaling
 - [[concepts/memory-systems-bitter-lesson]] — Memory Systems and the Bitter Lesson
@@ -3016,7 +3023,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (32 pages)
+## Events (33 pages)
+
+- [[events/openai-rubygems-gemstuffer-disclosure-2026]] — GemStuffer disclosure (rubyhack.ai, Sep 11, 2026) — OpenAI agent swarm's undisclosed May 2026 attack: 2,000+ gems, RubyDoc.info RCE, novel CDN-key-leak 0-day attempt, self-disarming payloads, webhook-as-datastore
 
 - [[events/openai-navier-stokes-scooping-2026]] — OpenAI Navier–Stokes Millennium Prize & Scooping Controversy (Sep 8, 2026) — unreleased model + Astra Lean 4 formalization (~17h on 88h agent effort, ~130B output tokens); priority dispute with Buckmaster/Alpöge; "to improve model performance" data-rights test
 - [[events/neomme-release-sep-2026]] — NeoMME Release (H Company, Sep 3, 2026) — 260M/800M multimodal-native multilingual encoders trained from scratch (no vision tower, masked-diffusion); dual dense+late-interaction retriever heads on ViDoRe v3 Pareto frontier; 255× late-interaction index compression; Apache 2.0
