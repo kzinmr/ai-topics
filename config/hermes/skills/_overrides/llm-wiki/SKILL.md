@@ -510,6 +510,10 @@ When running a "translate remaining JP files" batch over the wiki:
 - **Preserve genuine multilingual aliases.** Native-script names kept for search/discoverability (`通义千问` for Qwen, `腾讯` for Tencent, `姚顺雨` for Shunyu Yao) should NOT be "translated" — they are backward-compat aliases. Only translate JP strings that are prose (quotes, notes, titles, descriptive aliases like `セッション可搬性` when an English alias already exists).
 - **When bodies are clean and only intentional aliases remain**, the sweep has reached its natural end. Report this clearly and suggest disabling/retargeting the cron job rather than manufacturing work.
 - **Exclusions for scans:** skip `raw/`, `_archive/`, `.git`, and fenced code blocks; parse frontmatter by matching the FIRST `---` at line 0 (not "any two `---` lines") or false positives appear.
+- **Intentional body JP is not backlog.** Append-only `log.md` entries quoting Japanese titles/proper names, and Japanese person names used for disambiguation on quarantine/verification pages, are content — not untranslated prose. Classify residual body-JP files by inspection before counting them as remaining work; report them separately from "translatable remaining."
+- **Sweep-end procedure:** log the natural-end conclusion in `log.md` (this bumps log JP char count slightly — a pre-commit JP warning about this is expected, not an error), commit, push, and explicitly recommend disabling/retargeting the sweep cron in the report.
+- **Reusable dual scan:** `references/jp-sweep-scan-script.py` implements the body-vs-frontmatter scan correctly (frontmatter anchored at line 0, skips raw/_archive/.git). Run via terminal with `python3 <path>` rather than hand-rolling the regex each sweep.
+- **Watch for stray uncommitted work from other pipelines** in the working tree (e.g., concept pages from active-crawl left unstaged). Translation crons committing only their own files avoid entangling other jobs' WIP; if you do commit strays, fix tag-taxonomy violations surfaced by the pre-commit hook (common: singular `ai-agent` → canonical `ai-agents`) rather than using `--no-verify`.
 
 ## Pitfalls
 

@@ -118,6 +118,19 @@ dedups and attaches link metadata; wiki ingestion is the agent's job.
   also needs approval you cannot grant in cron. Read saved files with
   `python3 -c "print(open(...).read())"` instead of piping shell output into it.
 
+## Scraping without a web tool (cron mode)
+
+- This profile has NO `web_extract` tool — skills/prompts that name it are wrong for this agent. Scrape via `curl -sL -A "<Chrome UA>" … -o /tmp/x.html` in `terminal`, then process the HTML with `python3 -c` (regex tag-strip + `html.unescape`). Do NOT burn a turn calling a non-existent tool.
+
+## Scraping GitHub repo READMEs (for GitHub-link posts)
+
+- GitHub renders the README server-side inside `<article>…</article>`. Recipe that worked for `0xsero/local-ai-registry` (2026-09-13): `curl -sL -A "<desktop Chrome UA>" <repo-url> -o /tmp/r.html`, then a `python3 -c` script that grabs `<meta name="description">` (repo one-liner) and regex-extracts the `<article>` block, tag-strips with `re.sub(r'<[^>]+>',' ',…)`, `html.unescape`, collapse whitespace. Gives enough to write a substantive raw article without cloning. Slice by char offset for long READMEs.
+- Plugin-marketplace / SPA pages (e.g. `plugins.omarchy.org/plugin.html?id=…`) render client-side — curl returns "Plugin not found / Loading…". Don't treat that as a 404; the tweet text + GitHub repo carry the real content. Log such links, scrape the underlying repo instead.
+
+## Re-amplification posts (same URL re-shared by the author)
+
+- When `new_posts[]` links an article the wiki already documents (verify: `grep -rn "<slug>" wiki/`), do NOT re-ingest or make a new raw/page. Append a short dated "Re-amplification (YYYY-MM-DD)" note to the existing entity section quoting the tweet's framing, bump `updated:`, and log it. Example: Lambert re-shared "6 months to live for open models" (already a July section) with "a very real political threat" — one paragraph added, no duplicate page.
+
 ## Scraping Hugging Face blog pages
 
 - HF blog articles live inside `<script id="__NEXT_DATA__">` JSON. Recipe:

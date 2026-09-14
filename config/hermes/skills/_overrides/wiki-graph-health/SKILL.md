@@ -167,6 +167,7 @@ When `wiki-graph-analysis` reports unlinked pairs:
 **Skip non-existent concept pairs**: ❌ pairs referencing pages that don't exist yet; shared persons being sub-pages (`drew-breunig--core-ideas`) are page-splitting false positives — artifacts, not real missing links.
 
 ### Watchdog Pipeline Timing — Verifying Health Report Claims
+See `watchdog-session-2026-09-12.md` (jobs.json failure source; report-only failure classes; header recount formula).
 
 **Discovered 2026-05-11**: The `wiki-watchdog-fix` cron job runs AFTER `wiki-health-fix` in the pipeline. By the time the watchdog receives the health report, the wiki-health-fix step may have already repaired many of the reported issues (pipe corruption, triple brackets, line-number corruption, etc.).
 
@@ -974,7 +975,7 @@ The `tag_audit.py` script's `load_valid_tags()` function (as of 2026-05-08 fix) 
 - **CRITICAL — read_file `|` prefix trap on ALL patch operations**: When using content from `read_file` output as `old_string` or `new_string` in `patch`, the output format `LINE_NUM|CONTENT` means the ACTUAL content starts after the `|`. If you include the `|` prefix, you'll introduce `|` into the wiki file (e.g., `-` becomes `|-`). **RULE: Never use content from read_file output directly in a patch.** Instead, use `terminal("head -N file")` or `terminal("sed -n 'M,Np' file")` to get clean content without line-number framing. Or use `terminal("grep -n ... file")` to find exact line content.
 - **Watch out for `read_file` visual confusion even when manually reconstructing**: Even if you don't paste `read_file` output verbatim, the `N|` prefix format can cause you to mentally incorporate the `|` as actual content when re-typing lines from `read_file` output. After reading a file with `read_file`, always run `head -3 <file>` to see the clean first lines before constructing any `patch` anchor. Compare the 'clean' view against what `read_file` showed — if they differ, trust `head`.
 - If you DO accidentally introduce `|` prefixes, fix with: `patch(old_string="|- [[slug]]", new_string="- [[slug]]", path="file.md", replace_all=True)`
-- **ALIAS FALSE POSITIVES in orphan detection**: When wiki-health reports an orphan like `entities/philipp-schmid` that isn't literally a filename, check if it's an **alias** of an existing entity. Pattern: `grep -rn "philipp-schmid" wiki/entities/` reveals it as an alias in `phil-schmid.md` frontmatter. The alias IS already indexed via the canonical entity. **Resolution**: `search_files pattern="<alias-slug>"` across wiki/entities/ — if found as an alias, the orphan report is a false positive. Skip it.
+- **ALIAS FALSE POSITIVES in orphan detection**: wiki-health orphans are often aliases of existing entities — `search_files pattern=<alias-slug>` across wiki/entities/; if found only in frontmatter aliases, the orphan is a false positive. Skip it (alias is indexed via the canonical entity).
 - **ALIAS VERIFICATION STEP**: Before adding any reported orphan to index.md:
   1. Check if file exists: `search_files target=files path=~/wiki/entities pattern=<slug>`
   2. If not found as file, check if it's an alias: `search_files pattern=<slug>` across wiki/entities/

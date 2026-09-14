@@ -76,7 +76,7 @@ topics:
   - autonomous agent coordination 2026
   wiki_pages:
   - concepts/agent-swarms
-  notes: "source_count=4。既存のagent-team-swarm（managed/organized多エージェント）とは異なり、自律分散型エージェントの創発的振る舞いに焦点。独立トピックとして価値あり"
+  notes: source_count=4。既存のagent-team-swarm（managed/organized多エージェント）とは異なり、自律分散型エージェントの創発的振る舞いに焦点。独立トピックとして価値あり
   added: 2026-04-26
   last_crawled: '2026-06-14'
 - slug: ai-evals
@@ -207,9 +207,9 @@ topics:
   crawl_policy: deepdive
   priority: high
   search_hints:
-  - "autoresearch loop optimization 2026"
-  - "pi-autoresearch shopify"
-  - "Karpathy autoresearch generalized"
+  - autoresearch loop optimization 2026
+  - pi-autoresearch shopify
+  - Karpathy autoresearch generalized
   wiki_pages:
   - concepts/karpathy-loop
   - concepts/pi-autoresearch
@@ -222,14 +222,15 @@ topics:
   crawl_policy: prerequisites
   priority: high
   search_hints:
-  - "agentic loop agent execution cycle"
-  - "ReAct loop Ralph Wiggum agentic AI"
-  - "decide act observe agent architecture"
+  - agentic loop agent execution cycle
+  - ReAct loop Ralph Wiggum agentic AI
+  - decide act observe agent architecture
   wiki_pages:
   - concepts/agentic-loop
   - concepts/codex-goal
   - concepts/codex-goal-meta-prompting
-  notes: すべてのエージェントフレームワークが収束する中核パターン。ReAct論文(2022)、Ralph Wiggum Loop、Codex /goal の最新動向。前提としてtool-use, agent-architecture等。
+  notes: すべてのエージェントフレームワークが収束する中核パターン。ReAct論文(2022)、Ralph Wiggum Loop、Codex /goal
+    の最新動向。前提としてtool-use, agent-architecture等。
   added: 2026-05-13
   last_crawled: '2026-06-14'
 - slug: codex-goal
@@ -237,14 +238,15 @@ topics:
   crawl_policy: deepdive
   priority: high
   search_hints:
-  - "Codex /goal command Ralph loop 2026"
-  - "codex-goal autonomous coding agent"
-  - "OpenAI built-in agent loop"
+  - Codex /goal command Ralph loop 2026
+  - codex-goal autonomous coding agent
+  - OpenAI built-in agent loop
   wiki_pages:
   - concepts/codex-goal
   - concepts/codex-goal-meta-prompting
   - concepts/agentic-loop
-  notes: OpenAI Codex CLI v0.128.0のビルトインRalph Loop。Greg Brockman "Ralph loop++"。メタプロンプティング、トークン予算設計、app-server API等の最新機能を深掘り。
+  notes: OpenAI Codex CLI v0.128.0のビルトインRalph Loop。Greg Brockman "Ralph loop++"。メタプロンプティング、トークン予算設計、app-server
+    API等の最新機能を深掘り。
   added: 2026-05-13
   last_crawled: '2026-06-14'
 - slug: self-evolving-agents
@@ -252,11 +254,11 @@ topics:
   crawl_policy: deepdive
   priority: high
   search_hints:
-  - "self-evolving agents self-modification 2026"
-  - "agents that build themselves hot reload tool factory"
-  - "Pi OpenClaw Hermes self-extending agent architecture"
-  - "agent session trees branching self-modification"
-  - "self-writing tools agent harness engineering"
+  - self-evolving agents self-modification 2026
+  - agents that build themselves hot reload tool factory
+  - Pi OpenClaw Hermes self-extending agent architecture
+  - agent session trees branching self-modification
+  - self-writing tools agent harness engineering
   wiki_pages:
   - concepts/self-evolving-agents
   - concepts/agents-that-build-themselves
@@ -266,7 +268,9 @@ topics:
   - entities/pi
   - entities/openclaw
   - concepts/hermes-agent-architecture
-  notes: 重点追跡トピック。Pi（セッションツリー＋ホットリロード）、OpenClaw（Markdownメモリ圧縮＋常時稼働）、Hermes Agent（スキル蓄積による能力成長）の3大実装を中心に、自己進化エージェントの理論（5段階分類）と実践（Hugo+IvanワークショップのPure Python再構築）の両面を追跡。Armin Ronacher「Agents Built for Agents Building Agents」哲学、Mario Zechnerのミニマリズム、Peter Steinbergerのalways-on設計を含む。
+  notes: 重点追跡トピック。Pi（セッションツリー＋ホットリロード）、OpenClaw（Markdownメモリ圧縮＋常時稼働）、Hermes Agent（スキル蓄積による能力成長）の3大実装を中心に、自己進化エージェントの理論（5段階分類）と実践（Hugo+IvanワークショップのPure
+    Python再構築）の両面を追跡。Armin Ronacher「Agents Built for Agents Building Agents」哲学、Mario
+    Zechnerのミニマリズム、Peter Steinbergerのalways-on設計を含む。
   added: 2026-05-13
   last_crawled: '2026-08-26'
 - slug: sierra
@@ -283,6 +287,53 @@ topics:
   - concepts/ai-benchmarks/hyper-tau-bench
   - concepts/ai-benchmarks/tau-knowledge
   - entities/shunyu-yao
-  notes: "tau系ベンチマーク群。Hyper-tau-bench (Sep 2026) で「エージェントを構築する能力」自体を評価する段階に入った。隣接トピック: sandbox hardening, developer reward hacking, eval-resistant benchmark design"
+  notes: 'tau系ベンチマーク群。Hyper-tau-bench (Sep 2026) で「エージェントを構築する能力」自体を評価する段階に入った。隣接トピック:
+    sandbox hardening, developer reward hacking, eval-resistant benchmark design'
   added: 2026-09-09
   last_crawled: '2026-09-09'
+- slug: agents-last-exam
+  title: Agents' Last Exam / Economically-Valuable Agent Benchmarks
+  crawl_policy: prerequisites
+  priority: high
+  search_hints:
+  - Agents Last Exam benchmark
+  - GDPval successor
+  - economically valuable agent tasks benchmark
+  wiki_pages:
+  - concepts/agents-last-exam
+  - concepts/ai-benchmarks/remote-labor-index
+  - concepts/benchmark-ceiling
+  notes: ALE hardest tier <1% pass; frontier labs now market ALE scores — track saturation
+    + task-pool growth
+  added: '2026-09-12'
+  last_crawled: '2026-09-12'
+- slug: benchmark-ceiling
+  title: Benchmark Ceiling / Evaluation Scarcity
+  crawl_policy: prerequisites
+  priority: medium
+  search_hints:
+  - benchmark saturation contamination
+  - evaluation scarcity AI
+  - protected live item pool benchmark
+  wiki_pages:
+  - concepts/benchmark-ceiling
+  - concepts/evaluation/why-benchmarking-is-hard
+  notes: political-economy of evals; watch for validation of the depreciation model
+    & LLM-judge counterthesis
+  added: '2026-09-12'
+  last_crawled: '2026-09-12'
+- slug: economic-world-models
+  title: Economic World Models / Agentic Economies
+  crawl_policy: deepdive
+  priority: medium
+  search_hints:
+  - economic world model simulation LLM agents
+  - agent-based economic simulation calibration
+  - sim-to-real economic twin
+  wiki_pages:
+  - concepts/economic-world-models
+  - concepts/world-model-taxonomy
+  - concepts/agent-economics
+  notes: 6-level ladder; watch for first level-5+ system with public validated calibration
+  added: '2026-09-12'
+  last_crawled: '2026-09-12'
