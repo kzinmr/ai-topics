@@ -5,6 +5,28 @@
 > Actions: ingest, update, query, lint, create, archive, delete, watchdog
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-09-14] lint | wiki-health-fix (17:50) — verified clean, no changes
+
+**Trigger**: daily `wiki-health-fix` cron.
+
+### Phase 1 — index.md corruption: 0 issues (live-verified)
+- pipe_prefix 0 / line_number_prefix 0 / triple_bracket 0 / space_prefix 0 / double-pipe 0. `validate_index.py` exit 0 (3071 lines). L2 pipe-prefix scan (`|- [` in entities/+concepts/): 0.
+
+### Phase 2 — structural: 0 actions
+- **Ghosts (2)**: `concepts/dataagent-defragmentation`, `concepts/evaluation-finance-agents` — NOT removed. Both have log.md ingest entries citing arXiv 2608.20174 / 2609.07282 but page files and raw sources were never written = in-flight/race artifact from upstream ingest. Matches 2026-09-13 watchdog finding ("staged-but-uncommitted, not a wiki defect"). No other pages wikilink them; no broken-link impact.
+- **orphan_index**: recursive top-level scan -> 0 real gaps (digest's 23 all `_index.md` hubs + `concepts/gpt/_archive/*`, by-design exclusions with inbound links).
+- **Counts**: header Entities 923 = index lines 923; Concepts header 2053 = index lines 2053 (+4 vs disk = redirect stubs, legitimate). Filesystem totals: entities 924, concepts 2070 (incl. 21 `_index` hubs + nested subpages), comparisons 35, events 33, queries 6. `Total pages: 3050` vs recomputed 3055 (+5 drift from 7-day growth) - left as-is (no validate_index anchor, same as 09-13 watchdog).
+
+### Not actionable / report artifacts
+- 5795 "unprocessed raw": includes scraper junk (xcancel.com about pages, etc.) - volume metric, not a defect.
+- 2762 stale: live count 2756 (updated-field, >30d); oldest 158d = `concepts/caid-coordination`. Backlog signal only.
+- 279 empty-wikilink residual: stable baseline since 2026-08-13 (0 fixable), needs human review.
+
+### Notes
+- ~75 uncommitted raw articles in working tree from active ingest pipelines - left unstaged; this job commits only log.md.
+
+---
+
 ## [2026-09-14] watchdog | auto-fix — log header restore, index recount, stale-report verification
 
 **Trigger**: daily `wiki-watchdog-fix` cron (17:35 UTC).
