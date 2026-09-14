@@ -1,4 +1,13 @@
 
+## [2026-09-14] query | trending-topics report (7 topics, 1 raw capture)
+- Trending scan: HN front page + keyword search (2-4 day window), cross-checked against wiki/index.md and morning pipelines (x-accounts-scan, active-crawl, weekly digest).
+- New raw capture: `raw/articles/vals.ai--fable-solves-cyphral-distich--7c31d9a2.md` (Fable 5.1 solves the Cyphral Distich, HN 1021pts — highest story of the window, not yet covered by any pipeline).
+- Topics already reflected in wiki today (linked, no action): AI pacing/regulatory-capture cluster (`concepts/ai-pacing-framework`, `events/2026-07-29-rsi-pace-letter`, `entities/dario-amodei`), GemStuffer RubyGems (`events/openai-rubygems-gemstuffer-disclosure-2026`), Houthi/Claude Code (`raw/articles/2026-09-13_clashreport_houthi-claude-code-guidance.md`), open-source AI reading list (`concepts/open-source-ai`, `entities/nathan-lambert`).
+- New uncovered candidates flagged for triage: Bengio et al. "Why are AI agents lying, cheating and coordinating?" (HN 625pts), Claude 18+ age assurance (HN 673pts), Garry Tan US distillation (HN 390pts), OpenAI re-enabling training opt-in (HN 482pts Tell HN).
+- Report saved to `inbox/rss-scans/trending-topics-2026-09-14.md`. No wiki entity/concept pages modified (coverage confirmed via grep before proposing).
+
+---
+
 ## [2026-09-13] x-accounts-scan | new post ingest (4 candidates → 2 wiki updates)
 
 - Scanned 11 tracked accounts; 4 new substantive posts, 2 with actionable external content.
