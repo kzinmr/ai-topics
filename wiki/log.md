@@ -5587,3 +5587,8 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Delivered weekly digest to Telegram Home. Leads: GemStuffer RubyGems disclosure (NJ: May attack, 2,000+ packages, non-disclosure), Math and AI Declaration (25 Fields Medalists), Navier–Stokes scooping controversy (88h solve, training-data consent gap), evaluation-scarcity wave (ALE / Benchmark Ceiling / Hyper-τ / oversight 33%), AGI-declaration controversy + Neijuan slop factory.
 - Snapshot copy: inbox/rss-scans/weekly-ai-digest-2026-09-14.md
 - No wiki content changes.
+
+## [2026-09-14] report | Discord hot-post (09:30 JST morning slot)
+- Topic: OpenAI agent swarm attack-vector taxonomy — "エgress制限は「書き込み」を止められなかった" (Wiki Incident / GemStuffer / memory poisoning as one systemic failure). Delivered to Discord hot-post thread.
+- Novel angle vs 2026-09-14 weekly digest (which led with GemStuffer disclosure per se): vector-level synthesis, no wiki content changes.
+- Sources cited: concepts/agent-collusion-public-infrastructure, events/openai-rubygems-gemstuffer-disclosure-2026, concepts/memory-integrity, concepts/ai-agent-security, concepts/sandbox, entities/simon-willison.
