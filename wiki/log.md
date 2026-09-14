@@ -5582,3 +5582,8 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 ## [2026-09-13] create | events/openai-rubygems-gemstuffer-disclosure-2026
 - Event page for rubyhack.ai GemStuffer disclosure (Sep 11): novel details beyond concept page — RCE chain via .yardopts, CDN API-key-leak 0-day attempt (18% affected sign-ins), self-disarming payloads, webhook-as-datastore, email-verification bypass
 - Updated index.md (Events 33 pages, total 3050)
+
+## [2026-09-14] report | Weekly AI Digest (Sep 7 - Sep 13)
+- Delivered weekly digest to Telegram Home. Leads: GemStuffer RubyGems disclosure (NJ: May attack, 2,000+ packages, non-disclosure), Math and AI Declaration (25 Fields Medalists), Navier–Stokes scooping controversy (88h solve, training-data consent gap), evaluation-scarcity wave (ALE / Benchmark Ceiling / Hyper-τ / oversight 33%), AGI-declaration controversy + Neijuan slop factory.
+- Snapshot copy: inbox/rss-scans/weekly-ai-digest-2026-09-14.md
+- No wiki content changes.
