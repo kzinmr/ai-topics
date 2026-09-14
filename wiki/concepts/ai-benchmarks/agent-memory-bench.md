@@ -53,6 +53,7 @@ The benchmark uses a systematic evaluation of memory approaches:
 - [[hal-leaderboard]] — Princeton's aggregated agent evaluation leaderboard
 - [[trail]] — Agent trace reasoning and issue localization
 - [[skillsbench]] — BenchFlow's skill acquisition benchmark
+- [[concepts/frontier-model-benchmarks-2026h2]] — LIFE benchmark (seven-model July–Sep 2026 suite): 53.9% full-context → 35.3% at 4000-token budget — "compressed multi-session conversation ≠ memory"
 
 ## Connections to Other Wiki Concepts
 

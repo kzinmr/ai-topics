@@ -49,6 +49,7 @@ Not a choice between fully public and fully private benchmarks, but a **regime**
 ## Related
 
 - [[concepts/agents-last-exam]] — hard-tail benchmark built on real workflows
+- [[concepts/frontier-model-benchmarks-2026h2]] — seven-model July–Sep 2026 suite; GPT-5.4 scored *worse* than GPT-5.2 on HLE/AIME-2025 (benchmark-specific regression, mid-May discontinuity)
 - [[concepts/llm-evaluation]] — the general evaluation layer this paper critiques
 - [[concepts/evaluation/why-benchmarking-is-hard]] — why the hard tail is hard to author and validate
 - [[concepts/ai-evals-people]] — the human evaluator stratum the model treats as scarce capital

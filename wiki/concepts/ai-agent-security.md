@@ -132,6 +132,7 @@ Source: [[raw/articles/simonwillison.net--2026-jul-15-claude-web-fetch-exfiltrat
 - [[concepts/tool-chaining]]
 - [[concepts/goal-drift]]
 - [[concepts/prompt-injection]]
+- [[concepts/memory-integrity]] — Memory poisoning incident replays (six named 2026 incidents)
 - [[entities/gary-marcus]]
 - [[entities/simon-willison]]
 - [[entities/_index]]

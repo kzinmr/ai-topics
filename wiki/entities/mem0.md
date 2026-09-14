@@ -96,6 +96,8 @@ The central trade-off: **cache stability vs. immediate visibility**. Hermes free
 - [[concepts/agent-memory]] — Agent memory design patterns
 - [[concepts/harness-engineering]] — The harness layer where Mem0 plugs in
 - [[concepts/context-engineering|Context Engineering]] — Context management philosophy
+- [[concepts/cache-stable-vs-live-search-memory]] — Cache-stable vs live-search memory (Mem0's analysis of OpenClaw + Hermes, both Mem0-plugin users)
+- [[concepts/memory-integrity]] — Memory poisoning defenses relevant to Mem0 stores
 
 ## Community
 

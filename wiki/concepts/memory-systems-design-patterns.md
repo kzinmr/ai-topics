@@ -141,3 +141,5 @@ Evaluation criteria for designing agent memory systems:
 - [[concepts/ai-agent-memory-middleware]]
 - [[concepts/knowledge-graph-memory-agents]]
 - [[concepts/ai-agent-memory-two-camps]]
+- [[concepts/cache-stable-vs-live-search-memory]] — Cache-stable (Hermes) vs live-search (OpenClaw) memory poles
+- [[concepts/memory-integrity]] — Memory poisoning & provenance defenses

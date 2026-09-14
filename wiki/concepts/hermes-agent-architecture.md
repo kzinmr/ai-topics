@@ -279,3 +279,5 @@ Recommended exploration order for understanding the Hermes Agent codebase (as of
 - [[concepts/agent-harness-primitives]] — 6 fundamental primitives of agent harnesses
 - [[concepts/ai-memory-systems]] — AI memory system design philosophy comparison (OpenAI/Anthropic/Cognition)
 - [[concepts/context-engineering|Context Engineering]] — Systematic approach to context engineering
+- [[concepts/cache-stable-vs-live-search-memory]] — Cache-stable vs live-search memory (Mem0's framing of the Hermes vs OpenClaw design poles)
+- [[concepts/memory-integrity]] — Memory poisoning incident replays and write-gate defenses
