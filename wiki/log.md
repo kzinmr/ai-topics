@@ -1,3 +1,9 @@
+# Wiki Log
+
+> Chronological record of all wiki actions. Append-only.
+> Format: `## [YYYY-MM-DD] action | subject`
+> Actions: ingest, update, query, lint, create, archive, delete, watchdog
+> When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
 ## [2026-09-14] query | trending-topics report (7 topics, 1 raw capture)
 - Trending scan: HN front page + keyword search (2-4 day window), cross-checked against wiki/index.md and morning pipelines (x-accounts-scan, active-crawl, weekly digest).
