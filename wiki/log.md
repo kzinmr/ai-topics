@@ -5,6 +5,27 @@
 > Actions: ingest, update, query, lint, create, archive, delete, watchdog
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-09-14] watchdog | auto-fix — log header restore, index recount, stale-report verification
+
+**Trigger**: daily `wiki-watchdog-fix` cron (17:35 UTC).
+
+### Auto-fixed (1)
+- **log.md header buried**: file began directly with newest `## [2026-09-14]` entry; `# Wiki Log` header + format notes stripped by a prior prepend. Header restored (commit ba8e84d1). (Flagged by wiki_health.py `frontmatter_syntax`; prior "false positive" assessment at 425 entries < 500 was wrong.)
+
+### Verified false-positive / no-action
+- **Index header counts**: Entities header 923 = filesystem 923 ✓; index concept lines 2053 vs 2049 on disk (+4) = redirect-stub entries (legitimate, per 2026-08-19 finding). Header format has no `Total pages:` anchor matching validate_index.py's `^Total pages: N` expectation — validate_index.py reports clean; left as-is.
+- **wiki_health report 2026-09-13 (1 issue)**: frontmatter_syntax → the log header, now fixed upstream of this run's commit.
+- **wiki_graph-analysis report 2026-09-11 (FAILED run)**: stale (74.6h); sample "issues" are skill-prompt text, not real findings. Weekly job (Fri 15:00 UTC) reruns 2026-09-18. No graph remediation derivable.
+- **Broken empty wikilinks (568 report / 371 live grep)**: stable residual per skill baseline (279 fixable-0 since 2026-08-13); needs human review.
+- **Orphans (24)**: all verified `_index.md` hub files — by-design exclusions, 0 added.
+- **Index corruption**: 0 pipe-prefix, 0 line-number-prefix, 0 triple-bracket; validate_index.py exit 0.
+- **Pipeline**: fresh reports, 0 alerts, 14 checkpoints today — healthy.
+
+### Notes
+- ~75 uncommitted raw articles/newsletters in working tree from active ingest pipelines (blog/newsletter/x). Left unstaged — watchdog commits only its own files.
+
+---
+
 ## [2026-09-14] query | trending-topics report (7 topics, 1 raw capture)
 - Trending scan: HN front page + keyword search (2-4 day window), cross-checked against wiki/index.md and morning pipelines (x-accounts-scan, active-crawl, weekly digest).
 - New raw capture: `raw/articles/vals.ai--fable-solves-cyphral-distich--7c31d9a2.md` (Fable 5.1 solves the Cyphral Distich, HN 1021pts — highest story of the window, not yet covered by any pipeline).
