@@ -1,16 +1,19 @@
 ---
 title: Khe Hy
 created: 2026-04-26
-updated: 2026-04-26
+updated: 2026-09-15
 type: entity
 tags: [person]
+aliases: [khemaridh, Khe Hy]
 sources:
   - raw/articles/2026-04-08-khe-hy-company-ai-pilled.md
+  - https://khemaridh.substack.com/
+  - https://khemaridh.substack.com/about
 ---
 
 # Khe Hy
 
-Khe Hy is a writer and thinker focused on organizational AI adoption strategies.
+**Khe Hy** (X/Substack: `@khemaridh`) is a writer and thinker focused on organizational AI adoption strategies, and the author of the Substack newsletter **"Future-Proof Your Career with AI"** — a publication for busy professionals that breaks down "the most important developments in AI," with real-world applications, tool tutorials, and insider case studies. The tagline thesis: *"I'm not scared of AI taking my job. I'm scared of the person who masters AI taking my job."* He also runs a companion podcast and a ChatGPT Mastery course for professionals.
 
 ## Key Work
 

@@ -1,12 +1,14 @@
 ---
 title: "Max Woolf"
 tags: [person, coding-agents]
+updated: 2026-09-15
 sources:
   - raw/articles/minimaxir.com--2025-01-write-better-code--d88107e5.md
   - raw/articles/minimaxir.com--2025-06-movie-embeddings--220f5935.md
+  - raw/articles/minimaxir.com--2026-05-openrouter-hy3--e38b0f2d.md
+  - raw/articles/minimaxir.com--2026-07-agent-quota-reset--81744d63.md
   - https://minimaxir.com/2025/01/write-better-code/
 created: 2026-04-24
-updated: 2026-08-16
 type: entity
 ---
 
@@ -202,7 +204,7 @@ Source: [[raw/articles/minimaxir.com--2025-06-movie-embeddings--220f5935]]
 
 **2025:** Wrote *"As an Experienced LLM User, I Actually Don't Use Generative LLMs Often"* — influential skeptical analysis. Began systematic testing of agentic coding workflows. Published benchmark data on Nano Banana and other image generation models. Continued data journalism work at BuzzFeed.
 
-**2026:** Published *"An AI agent coding skeptic tries AI agent coding, in excessive detail"* — comprehensive analysis of agentic coding with Claude Opus 4.5, documenting 2–100x algorithmic speedups. Developed the `AGENTS.md` configuration pattern for project-level AI guidance. Began work on **rustlearn** — a comprehensive Rust ML library with Python/JS bindings. Explored model chaining techniques (Codex optimizes → Opus re-optimizes → Opus verifies). Published analysis of LLM context window utilization (32,768 input tokens for Nano Banana Pro).
+**2026:** Published *"An AI agent coding skeptic tries AI agent coding, in excessive detail"* — comprehensive analysis of agentic coding with Claude Opus 4.5, documenting 2–100x algorithmic speedups. Developed the `AGENTS.md` configuration pattern for project-level AI guidance. Began work on **rustlearn** — a comprehensive Rust ML library with Python/JS bindings. Explored model chaining techniques (Codex optimizes → Opus re-optimizes → Opus verifies). Published analysis of LLM context window utilization (32,768 input tokens for Nano Banana Pro). In May, published *["The mysterious Hy3 LLM is topping OpenRouter Model Rankings by a large margin"](https://minimaxir.com/2026/05/openrouter-hy3/)* — a data-forensics investigation of Tencent Hy3 Preview's inexplicable #2 token-usage ranking on OpenRouter despite weak benchmarks; concluded via provider data (single provider SiliconFlow, top-5 apps <1% of activity, free-to-paid usage retention) that a large non-coding data-processing app was the likely backbone user, and used the occasion to document how **prompt caching** makes stated LLM prices misleading (effective prices via cache hits: DeepSeek V4 Flash at $0.018/M vs Hy3's $0.034/M; 98% input / 2% output aggregate token split). In July, published the weekly-quota-reset analysis covered on [[entities/max-woolf]] → [[concepts/agent-quota-resets]].
 
 ---
 
@@ -211,7 +213,8 @@ Source: [[raw/articles/minimaxir.com--2025-06-movie-embeddings--220f5935]]
 [[concepts/textgenrnn]] — Neural text generation library (Keras/TensorFlow), ~5,000 GitHub stars
 [[concepts/buzzfeed]] — Woolf's employer; Senior Data Scientist working on AI initiatives
 [[concepts/polars]] — Python data processing library Woolf advocates over pandas
- — Language Woolf has been exploring with AI-assisted development
+[[entities/max-woolf]] — Duplicate entity page for the same person (quota-reset analysis); canonical page is this one
+[[entities/tencent-hy3]] — Subject of Woolf's May 2026 OpenRouter mystery-model investigation
 [[entities/miguel-grinberg]] — Fellow blogger with contrasting views on AI coding tools
  — Python implementation; Woolf's benchmarks compare against C/C++ implementations
 CUDA — NVIDIA GPU computing platform; Woolf explores agent-driven algorithm porting

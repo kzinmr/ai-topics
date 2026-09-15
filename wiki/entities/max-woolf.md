@@ -1,28 +1,30 @@
 ---
 title: "Max Woolf (minimaxir)"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-09-15
 type: entity
+redirect: minimaxir-com
 tags:
   - person
-  - blogger
+  - coding-agents
 aliases: [minimaxir, max-woolf]
-sources:
-  - raw/articles/minimaxir.com--2026-07-agent-quota-reset--81744d63.md
 related:
   - concepts/agent-quota-resets
-  - concepts/coding-agents/coding-agents
+sources:
+  - raw/articles/minimaxir.com--2026-07-agent-quota-reset--81744d63.md
 ---
 
-# Max Woolf (minimaxir)
+# Max Woolf (minimaxir) — redirect
 
-Data scientist, blogger, and early adopter of AI coding tools. Writes at [minimaxir.com](https://minimaxir.com) about practical AI usage, data science, and the economics of AI tooling.
+This page is a **redirect**. See [[entities/minimaxir-com]] for the canonical, comprehensive Max Woolf entity page (blog history, open-source projects, timeline, core ideas).
 
-## Notable Work
+Content originally written on this page that is not duplicated on the canonical page is preserved below.
 
-### Agent Quota Reset Analysis (July 2026)
-Published a detailed analysis of the surge in weekly quota resets by Anthropic and OpenAI for their coding agent subscriptions (Claude Code, Codex). Key findings:
-- OpenAI reset Codex weekly quota **6 times** in two weeks (July 9-17, 2026)
+## Agent Quota Reset Analysis (July 2026)
+
+Published a detailed analysis of the surge in weekly quota resets by Anthropic and OpenAI for their coding agent subscriptions (Claude Code, Codex) — *"What's the deal with all the random weekly quota resets for agents lately?"* ([minimaxir.com/2026/07/agent-quota-reset/](https://minimaxir.com/2026/07/agent-quota-reset/)). Key findings:
+
+- OpenAI reset Codex weekly quota **6 times** in two weeks (July 9–17, 2026)
 - Resets are unannounced, creating unpredictable usage patterns
 - The practice distorts user behavior — creating urgency to "spin down" quota before inevitable resets
 - Cynical interpretation: resets prevent power users from experimenting with competitors

@@ -1,9 +1,10 @@
 ---
 title: "Arlan Rakhmetzhanov"
 tags: [person]
-sources: []
+sources:
+  - https://www.folk.com/
 created: 2026-04-24
-updated: 2026-04-10
+updated: 2026-09-15
 type: entity
 ---
 
@@ -117,6 +118,7 @@ Rakhmetzhanov's approach to building in public — launching on Product Hunt, co
 |---------|-------------|--------|
 | **Nozomio** | AI coding agents product lab; "hope" in Japanese | Active, YC S25 |
 | **Nia** | Context tool for AI coding agents (Cursor, Copilot) | Active, flagship product |
+| **folk** | [folk.com](https://www.folk.com/) — "the friend in your texts": personal agent living in iMessage; books tables, watches flights, drafts texts, adds events to Google Calendar from a plain text message and pings you before ([X, Sep 2 2026](https://x.com/arlanr)) | Active (as of Sep 2026) |
 | **Extracurrify** | College application and extracurricular tracking tool | Past project |
 | **Product Hunt MVP** | Early Nia prototype that won "Product of the Day" | Jan 2025 |
 

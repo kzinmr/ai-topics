@@ -5691,3 +5691,7 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 
 ### Notes
 - Working tree had uncommitted wiki output from today's ingest pipelines (4 modified pages, 3 new pages, 6 raw articles). watchdog-file-preserve skill was unavailable (no gateway, no `hermes` CLI, no cron jobs in gateway_state.db) so the fix was executed directly; all 14 wiki files were staged and committed together to leave index.md consistent with the pages it now lists. Non-wiki working-tree changes (config/hermes/skills) left untouched.
+
+## 2026-09-15 22:30 UTC — x-accounts-scan
+- Updated `entities/daniel-van-strien.md`: added Sep 2026 HF Space `historical-illustration-search` (1.49M British Library + Britannica illustrations, agent-facing API, transparent PNG cutouts) to Blog/Recent Posts + sources.
+- Updated `entities/arlan-r.md`: added **folk** (folk.com — iMessage personal agent) to Projects; filled frontmatter sources.
