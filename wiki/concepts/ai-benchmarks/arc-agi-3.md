@@ -2,7 +2,7 @@
 title: "ARC-AGI-3"
 type: concept
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-09-15
 tags:
   - benchmark
   - reasoning
@@ -129,5 +129,6 @@ For model comparison, OpenAI recommends relying on evals that use these settings
 - [[concepts/gpt/gpt-5-6]] — GPT-5.6 Sol, the model that achieved the breakthrough
 - [[entities/openai]] — Organization behind GPT-5.6 and the Responses API
 - [[entities/openai-astra]] — GPT-6 Astra, which claimed 99.9% (OpenAI custom harness) vs 62.7% (default ARC harness) on September 3, 2026
+- [[concepts/proxies-for-expertise]] — ARC-AGI-3 as an "unforgeable signal" that still admits harness-side Goodharting
 - [[concepts/ai-benchmarks/deepresearch-bench]] — Another benchmark whose results re-ranked when reasoning effort was elevated to max (Sep 2026)
 - [[concepts/evaluation/ai-benchmarks-and-evals]] — Broader context on AI benchmarking and evaluation

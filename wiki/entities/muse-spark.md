@@ -2,7 +2,7 @@
 title: Muse Spark
 type: entity
 created: 2026-04-09
-updated: 2026-08-10
+updated: 2026-09-15
 tags:
   - model
   - emerging
@@ -10,6 +10,7 @@ aliases:
 - Meta Muse Spark
 sources:
   - raw/articles/research.meta.ai--blog-introducing-muse-code-and-muse-spark-1-2--9eac21dc.md
+  - raw/articles/2026-09-15_ghuntley_can-we-have-it-both.md
 ---
 
 # Muse Spark
@@ -85,6 +86,10 @@ Meta released **[[entities/muse-glimmer|Muse Glimmer]]**, a 30B-parameter open a
 Claude Sonnet 4.6 < Muse Spark < Claude Opus 4.6
 ```
 
+## Muse Spark 1.3 & the Astra Index Battle (September 2026)
+
+When OpenAI soft-launched [[entities/openai-astra|GPT-6 Astra]] on September 3, the Artificial Analysis Intelligence Index put **Astra at 61 points — tied with GPT-5.6 Sol but one point behind Muse Spark 1.3**. Geoffrey Huntley's *"Can we have it both ways?"* critique singles out that index position: Muse Spark 1.3 is a **closed model that is not "substantively better" than Astra** across the evals he ran, yet OpenAI framed Astra as a "big" model and shipped the *open-weight* Luna at the low end instead — so the lab captured the open-source PR benefit **and** the proprietary pricing. Huntley's structural point: the Index — "by most accounts a good benchmark" — can now be **gamed by "a small nudge"**, making it a shaky arbiter for the claims (AGI declarations, "big vs small" framing) that labs hang off it. ^[raw/articles/2026-09-15_ghuntley_can-we-have-it-both.md]
+
 ## Open Source Status
 
 Meta has promised open-source availability, but community reaction ("rip LLaMA") suggests skepticism about whether Muse Spark will follow the open-source tradition of the LLaMA series.
@@ -102,6 +107,8 @@ Announced following a year of silence from Meta on model development, and after 
 ## Related
 - [[entities/meta]]
 - [[entities/simon-willison]]
+- [[entities/openai-astra]] — GPT-6 Astra; Muse Spark 1.3 leads it by 1 point on the Artificial Analysis Intelligence Index (61 vs 62)
+- [[concepts/proxies-for-expertise]] — the Index-gaming argument ("a small nudge")
 - [[concepts/inference/llama-cpp]]
 - [[entities/llm-cli]]
 - 2026-04-08-meta-muse-spark-launch

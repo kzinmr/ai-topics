@@ -1,7 +1,7 @@
 ---
 title: "The AGI Declaration Controversy (September 2026)"
 created: 2026-09-07
-updated: 2026-09-08
+updated: 2026-09-15
 type: concept
 confidence: medium
 tags:
@@ -97,6 +97,7 @@ Note: Leike's remarks come from a newsletter summary of the Dwarkesh interview; 
 - [[concepts/recursive-self-improvement]] — the mechanism advocates claim makes the race un-raceable
 - [[concepts/ai-agent-safety-incidents]] — the reliability gap contemporaneous with the declaration
 - [[concepts/ai-benchmarks/arc-agi-3]] / [[concepts/ai-benchmarks/benchmaxxing]] — why benchmark evidence underdetermines the claim
+- [[concepts/proxies-for-expertise]] — the measurement layer beneath the dispute: benchmark-saturated claims, legibility asymmetry, and index-gaming ("a small nudge")
 - [[concepts/superintelligence]] — the category both framings implicitly invoke
 - [[entities/gary-marcus]], [[entities/jensen-huang]], [[entities/jakub-pachocki]], [[entities/jan-leike]], [[entities/dwarkesh-patel]], [[entities/anthropic]]
 

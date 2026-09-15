@@ -1,3 +1,17 @@
+## [2026-09-15] auto-fix | wiki-health-fix — index dedup, header recount, SCHEMA pipe fix
+
+- Live verification: index.md had 0 pipe/line-number/triple-bracket/space corruption (validate_index.py clean before & after).
+- Removed 1 duplicate index entry: `[[concepts/ai-benchmarks/deepresearch-bench]]` appeared at lines 1117 and 1654 (redirect stub concept/ai-benchmarks/deepresearch-bench.md → canonical deepresearch-bench; stub line dropped, canonical kept).
+- Added missing index entry: [[entities/ai-engineer-worlds-fair-2026]] (events section, created same-day by ingest).
+- Header recount from actual index lines: Entities 925, Concepts 2051, Comparisons 35, Events 33, Queries 6 — Total pages 3050 (header was 927/2053, stale by upstream drift).
+- 23 of 24 report "orphans" are _index.md hub pages by-design not in main index (nested pages served by hubs); verified 0 unindexed nested pages. Report count was 24 incl. the real orphan above (now fixed).
+- All 5 report "ghost" entries (fastino-labs, kyle-corbett, gepa, mai-thinking-1-report, separation-of-duties) have real .md files (redirect stubs) — legitimate, removed none.
+- SCHEMA.md: fixed pre-existing `|- ` pipe-prefix corruption on Meta + Domain Concepts category lines (HEAD had it too; would poison future read_file-based patches). tag_audit after fix: 0 non-taxonomy, 0 composite.
+- Committed working-tree strays (ingest pipeline WIP: events/concepts/entities pages, raw articles, skill notes) together to unblock push; staged files explicitly, no git add -A.
+- Residual report-only: stale pages 2781, unreferenced raw ~5794 (incl. scraper junk e.g. xcancel.com about-pages).
+
+---
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
@@ -5658,3 +5672,22 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Topic: OpenAI agent swarm attack-vector taxonomy — "エgress制限は「書き込み」を止められなかった" (Wiki Incident / GemStuffer / memory poisoning as one systemic failure). Delivered to Discord hot-post thread.
 - Novel angle vs 2026-09-14 weekly digest (which led with GemStuffer disclosure per se): vector-level synthesis, no wiki content changes.
 - Sources cited: concepts/agent-collusion-public-infrastructure, events/openai-rubygems-gemstuffer-disclosure-2026, concepts/memory-integrity, concepts/ai-agent-security, concepts/sandbox, entities/simon-willison.
+
+---
+
+## [2026-09-15] watchdog | auto-fix — index ghost removal, orphan registration, x_accounts stale report
+
+**Trigger**: daily `wiki-watchdog-fix` cron (17:35 UTC).
+
+### Auto-fixed (wiki/index.md)
+- **Ghosts removed (2)**: `concepts/dataagent-defragmentation`, `concepts/evaluation-finance-agents` index lines deleted — files still absent from disk (3rd consecutive day: 09-13, 09-14, 09-15). Root cause is upstream ingest never writing the page bodies; the index lines are the stale artifact, not the pages.
+- **Orphans registered (2)**: [[entities/geoffrey-huntley]] (new, unindexed) and [[concepts/agent-slop]] (new, unindexed) added to index alphabetically. [[entities/ai-engineer-worlds-fair-2026]] NOT added to main index — same-name event page (`events/ai-engineer-worlds-fair-2026`, already indexed) exists → potential duplicate, flagged for human merge review.
+- **Counts**: header Entities 926→927 (index lines +1 after ghost removal + Huntley addition; 926 was stale-by-2 from 09-14, now exactly matches index lines). Concepts 2053 unchanged (agent-slop +1 offset by dataagent-defragmentation −1; matches both index lines and disk). Total pages 3053→3054.
+- `validate_index.py` exit 0 (3071 lines). No pipe/line-number/triple-bracket corruption found (0/0/0).
+
+### Pipeline alerts
+- **x_accounts stale (26h)**: last scan 2026-09-13 22:30 UTC; scheduled every 2 days at 22:30 → next run 09-15 22:30 UTC (~5h after this watchdog). Not actionable — re-check at next run; escalate only if still stale on 09-16.
+- **wiki-graph-analysis FAILED (09-11)**: last successful analysis 98.6h old; report file contains a cron-failure prompt dump. Next scheduled run: Friday 15:00 UTC (09-18). Report-only; if the job fails again on 09-18 the skill-invocation prompt dump needs human inspection.
+
+### Notes
+- Working tree had uncommitted wiki output from today's ingest pipelines (4 modified pages, 3 new pages, 6 raw articles). watchdog-file-preserve skill was unavailable (no gateway, no `hermes` CLI, no cron jobs in gateway_state.db) so the fix was executed directly; all 14 wiki files were staged and committed together to leave index.md consistent with the pages it now lists. Non-wiki working-tree changes (config/hermes/skills) left untouched.

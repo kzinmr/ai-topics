@@ -1,14 +1,15 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3053
-> Last updated: 2026-09-14 
+> Total pages: 3050
+> Last updated: 2026-09-15 
 
-## Entities (926 pages)
+## Entities (925 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
+- [[entities/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 (AIE, SF June 22–25) — flagship practitioner conference; citation hub for the "agent engineering orthodoxy" critiqued by Huntley (eval-work deficit, featureless world) and Goedecke (proxies for expertise)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box; AI-powered enterprise content management, Box AI, AI trust layer
 - [[entities/abacaj]] — abacaj — Independent AI researcher
 - [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
@@ -330,6 +331,7 @@
 - [[entities/geoffrey-hinton]] — Geoffrey Hinton — "Godfather of AI"; Nobel Prize in Physics 2024; pioneer of deep learning, backpropagation
 - [[entities/geoffrey-litt]] — Geoffrey Litt
 - [[entities/geoffreylitt-com]] — Geoffrey Litt
+- [[entities/geoffrey-huntley]] — Geoffrey Huntley — anti-hype field critic of agent engineering; oh-my-agent, term originator context on agent slop; ed26.dev blog (created 2026-09-15)
 - [[entities/geohot-github-io]] — George Hotz (geohot)
 - [[entities/george-hotz]] — George Hotz; enriched with "Liminality" blog post — Fullmetal Alchemist metaphor, liminal state of AI, Cruise movie control metaphor (June 24)
 - [[entities/georgi-gerganov]] — Georgi Gerganov
@@ -930,7 +932,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2053 pages)
+## Concepts (2051 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -983,6 +985,7 @@
 - [[concepts/agent-sandbox-patterns]] — Agent Sandbox Patterns — Isolate-the-Tool vs Isolate-the-Agent; zero-secret agent + credential-holding control plane (Unikraft micro-VM); Browser Use production architecture (Feb 2026)
 - [[concepts/agent-security-patterns]] — Agent Security Patterns
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
+- [[concepts/agent-slop]] — Agent Slop — the reliability gap between AI marketing claims and demonstrated capability; evals-as-evidence framing (created 2026-09-15)
 - [[concepts/agent-skills-skillmd]] — Agent Skills (SKILL.md)
 - [[concepts/agent-substrate]] — Agent Substrate
 - [[concepts/agentic-alternative-to-graphrag]] — Agentic Alternative to GraphRAG
@@ -1648,7 +1651,6 @@
 - [[concepts/db9-fs-sql-pattern]] — db9: Filesystem + SQL Pattern for Agent Workflows
 - [[concepts/death-of-browser]] — Death of the Browser
 - [[concepts/decision-centric-architecture]] — Decision-Centric Architecture
-- [[concepts/ai-benchmarks/deepresearch-bench]] — DeepResearch Bench II: rubric-graded expert binaries (Information Gathering 74% / Analysis 58%), 30 queries × ~9 criteria in 9 domains; separates GPT-5.2/DeepResearch-led models where Intelligence Index does not
 - [[concepts/deep-agents]] — Deep Agents — Autonomous Multi-Step AI Agents
 - [[concepts/deep-agents-runtime]] — Production runtime primitives for deep AI agents — durable execution, memory, multi-tenancy, HITL, guardrails, observ...
 - [[concepts/deep-learning]] — deep-learning
@@ -1657,7 +1659,6 @@
 - [[concepts/deep-research-agent-from-scratch]] — Deep Research Agent from Scratch
 - [[concepts/deepclaude]] — DeepClaude - Claude Code Agent Loop with DeepSeek V4 Pro
 - [[concepts/deepseek-harness]] — DeepSeek Harness (dsh) — open-source "everything is a plugin" agent harness on Cordis; ~106k GitHub stars in 48h, MIT
-- [[concepts/dataagent-defragmentation]] — DataAgent Defragmentation — four-stage pipeline (embedding → cluster-and-name → LLM graph → Louvain) that finds the semantic spine of enterprise data lakes without a pre-declared ontology (arXiv:2608.20174, Sep 2026)
 - [[concepts/deepseek-r1]] — DeepSeek-R1
 - [[concepts/deepseek-v3]] — DeepSeek-V3
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2
@@ -1754,7 +1755,6 @@
 - [[concepts/eureka-labs]] — eureka-labs
 - [[concepts/evals-skills-for-coding-agents]] — Evals Skills for Coding Agents
 - [[concepts/evals-skills]] — Evals Skills for Coding Agents
-- [[concepts/evaluation-finance-agents]] — Evaluation Finance: AI Agent Eval & Observability Sector — the eval/observability layer as durable AI-industry revenue (independent research from the model vendors); evals as "the unit test of the AI era" (arXiv:2609.07282, Sep 2026)
 - [[concepts/benchmark-ceiling]] — The Benchmark Ceiling — evaluation scarcity & political economy of AI capability measurement; valid signal concentrates in the expert-authored hard tail (arXiv, Jun 2026)
 - [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]] — Evaluation Coding Agents Mcp Automation Harness Engineering
 - [[concepts/evaluation-development-process-quality]] — Evaluation Development Process Quality
