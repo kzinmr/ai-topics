@@ -1,42 +1,50 @@
 ---
-title: "Daniel Kim (Cerebras)"
+title: Daniel Kim (Cerebras)
+description: Head of Growth at Cerebras; co-author of the Cerebras internal knowledge base engineering write-up
+url: https://x.com/learnwdaniel
 type: entity
-created: 2026-07-17
-updated: 2026-07-17
+social: https://x.com/learnwdaniel
+updated: 2026-09-14
+aliases:
+  - learnwdaniel
+  - Daniel Kim
 tags:
   - person
-  - hardware
-  - search
+  - ai-infrastructure
   - devrel
-aliases: ["@learnwdaniel", "daniel-kim", "daniel-kim-cerebras"]
 sources:
   - raw/articles/2026-07-16_cerebras_knowledge-base-architecture.md
   - https://x.com/learnwdaniel
-related:
-  - "[[entities/cerebras-systems]]"
-  - "[[concepts/enterprise-knowledge-base-architecture]]"
 ---
 
-# Daniel Kim
+# Daniel Kim (Cerebras)
 
-**Daniel Kim** ([@learnwdaniel](https://x.com/learnwdaniel)) is **Head of Growth** at [[Cerebras Systems|entities/cerebras-systems]], where he leads the AI/Growth team. He is a co-author of the Cerebras Knowledge Base — an internal enterprise knowledge platform that handles 15,000+ queries per day across hardware, inference, training, and cloud operations.
+**Daniel Kim** (X: [@learnwdaniel](https://x.com/learnwdaniel)) is **Head of Growth at Cerebras Systems**, the wafer-scale AI chip company (WSE-3 / Cerebras Cloud Inference API). On X he summarizes his focus as "Agents! Agents! Agents!" — reflecting Cerebras's positioning around ultra-fast LLM inference for agentic workloads.
 
-## Role at Cerebras
+## Role & Work
 
-As Head of Growth, Daniel leads developer outreach, community building, and growth initiatives for Cerebras's wafer-scale AI compute platform. His team built the internal knowledge base that serves employees, automations, and AI agents across the company.
+- **Growth leadership at Cerebras** — oversees adoption of Cerebras Cloud Inference, which differentiates on tokens/sec for real-time agent and chat use cases.
+- **Internal knowledge base engineering** — co-author (with [[entities/isaac-tai|Isaac Tai]] and [[entities/mike-gao|Mike Gao]]) of "How we built our knowledge base" ([Cerebras blog](https://www.cerebras.ai/blog/how-we-built-our-knowledge-base), July 2026; raw: [[raw/articles/2026-07-16_cerebras_knowledge-base-architecture]]). The system answers **15,000+ questions per day** (humans, automations, and agents) just 3 months after launch, embedding Slack threads, code comments, and docs into one hybrid-search (BM25 + embeddings) store served to agents via MCP.
 
-## Key Work
+## X Account
 
-- **Cerebras Knowledge Base** (July 2026) — Co-author of the enterprise knowledge base architecture article. The system demonstrates a meet-the-data-where-it-lives philosophy: Slack threads (real-time Socket Mode ingestion), code repos (CocoIndex for incremental embedding), and custom databases (plugin scripts) all land in a unified Postgres embeddings table. See [[concepts/enterprise-knowledge-base-architecture]].
+- Handle: **@learnwdaniel** (joined March 2015)
+- ~7.3K followers, ~4K tweets
+- Profile: "Agents! Agents! Agents! | Head of Growth @cerebras"
 
-## Cross-References
+## Team Connections
 
-- [[entities/isaac-tai]] — Co-author (Isaac Tai, @hi_im_isaac_)
-- [[entities/mike-gao]] — Co-author (Mike Gao, @gaozenghao)
-- [[entities/cerebras-systems]] — Employer
-- [[concepts/enterprise-knowledge-base-architecture]] — Co-created architecture
+- [[entities/isaac-tai]] — Cerebras AI/Growth team, lead author of the knowledge base write-up
+- [[entities/mike-gao]] — Cerebras ML Runtime, contributed runtime work to the knowledge base pipeline
 
-## References
+## Related Concepts
 
-- [Cerebras: How We Built Our Knowledge Base](https://www.cerebras.ai/blog/how-we-built-our-knowledge-base) — July 2026
-- [@learnwdaniel on X](https://x.com/learnwdaniel)
+- [[concepts/bm25]] — keyword retrieval component of the hybrid search stack
+- [[concepts/ai-agent-memory]] — the knowledge base is a cloud memory layer serving agents
+- [[concepts/rag-systems]] — production hybrid RAG deployment
+- [[entities/cerebras-systems]] — employer
+
+## Sources
+
+- [[raw/articles/2026-07-16_cerebras_knowledge-base-architecture]] — "How we built our knowledge base" (co-authored)
+- [X: @learnwdaniel](https://x.com/learnwdaniel) — profile verified via X API 2026-09-14

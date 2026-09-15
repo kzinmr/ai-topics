@@ -141,7 +141,7 @@ Planner (LLM selects tools) → Parallel tool fan-out → RRF fusion → Reranke
 
 See [[concepts/enterprise-knowledge-base-architecture]] for the full architectural breakdown.
 
-The AI/Growth team (Isaac @hi_im_isaac_, Daniel @learnwdaniel, Zenghao Gao @gaozenghao) built and maintains the platform.
+The AI/Growth team ([[entities/isaac-tai|Isaac @hi_im_isaac_]], [[entities/daniel-kim-cerebras|Daniel Kim @learnwdaniel]], [[entities/mike-gao|Zenghao "Mike" Gao @gaozenghao]]) built and maintains the platform.
 
 ### GPT-5.6 Acceleration (July 2026)
 

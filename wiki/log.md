@@ -5,6 +5,14 @@
 > Actions: ingest, update, query, lint, create, archive, delete, watchdog
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-09-14] update | skeleton-enrich-daily — enriched 3 Cerebras knowledge base team skeletons + backlinked [[entities/cerebras-systems]]
+- [[entities/daniel-kim-cerebras]] — Head of Growth at Cerebras (@learnwdaniel, joined 2015, ~7.3K followers); "How we built our knowledge base" co-author. Enriched with KB facts from raw article (15K+ queries/day, hybrid BM25+embeddings, MCP). Removed status: skeleton.
+- [[entities/isaac-tai]] — Cerebras AI/Growth team (@hi_im_isaac_, joined 2013); first-bylined KB author. Enriched with Slack bursting (IDF >= 4.0), CocoIndex code embeddings, hybrid search, plugin-script custom sources. Removed status: skeleton.
+- [[entities/mike-gao]] — Mike (Zenghao) Gao, ML Runtime @Cerebras (@gaozenghao); career path from X bio (Google, Qualcomm, Eidos-Montreal, DRW Trading, Ubisoft, Baidu Research; GoChate '19, McGill '22). Removed status: skeleton.
+- Fixed pre-existing broken wikilinks in index descriptions (isaac-jiang, matt-gao -> isaac-tai, mike-gao were already corrected in index; pages themselves were the mismatch).
+- [[entities/cerebras-systems]] — AI/Growth team byline now wikilinked to the three entity pages.
+- Sources: [[raw/articles/2026-07-16_cerebras_knowledge-base-architecture]] (actual raw path; earlier session references to a 2026-09-11 filename were wrong and have been corrected in all three pages), X API profile data (2026-09-14).
+- Index descriptions already correct; page counts unchanged (3050).
 ## [2026-09-14] lint | wiki-health-fix (17:50) — verified clean, no changes
 
 **Trigger**: daily `wiki-health-fix` cron.

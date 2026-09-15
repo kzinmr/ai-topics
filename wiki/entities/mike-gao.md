@@ -1,39 +1,62 @@
 ---
-title: "Mike Gao"
+title: Mike Gao
+description: ML Runtime engineer at Cerebras; ex-Google/Qualcomm/Waterloo/Ubisoft/Baidu Research; contributor to the Cerebras agent-facing knowledge base
+url: https://x.com/gaozenghao
 type: entity
-created: 2026-07-17
-updated: 2026-07-17
+social: https://x.com/gaozenghao
+updated: 2026-09-14
+aliases:
+  - gaozenghao
+  - Zenghao Gao
 tags:
   - person
-  - hardware
-  - infrastructure
-  - search
-  - google
-aliases: ["@gaozenghao", "Zenghao Gao", "mike-gao"]
+  - ai-infrastructure
+  - ml-engineer
 sources:
   - raw/articles/2026-07-16_cerebras_knowledge-base-architecture.md
   - https://x.com/gaozenghao
-related:
-  - "[[entities/cerebras-systems]]"
-  - "[[concepts/enterprise-knowledge-base-architecture]]"
 ---
 
 # Mike Gao
 
-**Mike Gao** ([@gaozenghao](https://x.com/gaozenghao)) is an **ML Runtime engineer** at [[Cerebras Systems|entities/cerebras-systems]] on the AI/Growth team. He previously worked at Google, Qualcomm, Eidos Montréal, DRW Trading, Ubisoft, and Baidu Research. He holds degrees from Choate Rosemary Hall ('19) and McGill University ('22).
+**Mike (Zenghao) Gao** (X: [@gaozenghao](https://x.com/gaozenghao)) is an **ML Runtime engineer at Cerebras Systems**. He appears as "Zenghao Gao" on the AI/Growth team byline of "How we built our knowledge base" ([Cerebras blog](https://www.cerebras.ai/blog/how-we-built-our-knowledge-base), July 2026; raw: [[raw/articles/2026-07-16_cerebras_knowledge-base-architecture]]), alongside [[entities/isaac-tai|Isaac Tai]] and [[entities/daniel-kim-cerebras|Daniel Kim]].
 
-## Key Work
+## Career Path
 
-- **Cerebras Knowledge Base** (July 2026) — Co-author of the enterprise knowledge base architecture, documented in the Cerebras engineering blog. The system serves 15,000+ queries/day with hybrid search (full-text + embeddings + IDF + age decay), LLM-based query planning, MCP-exposed retrieval primitives, and project-scoped search. See [[concepts/enterprise-knowledge-base-architecture]].
+Per his own X bio, in reverse chronological order:
 
-## Cross-References
+| Employer | Role / Focus |
+|---|---|
+| **Cerebras Systems** | ML Runtime — inference runtime for wafer-scale LLM serving |
+| **Google** | (ML / engineering) |
+| **Qualcomm** | (on-device ML / engineering) |
+| **Eidos-Montréal** | (game development) |
+| **DRW Trading** | trading systems / quantitative engineering |
+| **Ubisoft** | (game development engineering) |
+| **Baidu Research** | (ML research) |
 
-- [[entities/isaac-tai]] — Co-author (Isaac Tai, @hi_im_isaac_)
-- [[entities/daniel-kim-cerebras]] — Co-author (Daniel Kim, @learnwdaniel)
-- [[entities/cerebras-systems]] — Current employer
-- [[concepts/enterprise-knowledge-base-architecture]] — Co-created architecture
+- **Education**: GoChate (2019 cohort) and McGill University (2022) — per his bio handles @gochoate '19 and @mcgillu '22.
+- The career arc (games → research → trading → big-tech ML → AI silicon) is typical of systems-oriented ML-runtime engineers who move toward performance-critical inference work.
 
-## References
+## X Account
 
-- [Cerebras: How We Built Our Knowledge Base](https://www.cerebras.ai/blog/how-we-built-our-knowledge-base) — July 2026
-- [@gaozenghao on X](https://x.com/gaozenghao)
+- Handle: **@gaozenghao** (joined December 2013)
+- ~1.1K followers, ~600 tweets
+- Bio: "ML Runtime @Cerebras Previously @google, @qualcomm, @eidosmontreal, @drwtrading, @ubisoft, @baiduresearch. Alumni @gochoate '19 & @mcgillu '22"
+
+## Team Connections
+
+- [[entities/isaac-tai]] — Cerebras AI/Growth; co-author of the knowledge base write-up
+- [[entities/daniel-kim-cerebras]] — Head of Growth, Cerebras; co-author
+
+## Related
+
+- [[entities/cerebras-systems]] — employer; WSE-3 wafer-scale inference
+- [[concepts/inference]] — his core domain: the runtime layer mapping transformer workloads onto wafer-scale hardware
+- [[concepts/ai-agent-memory]] — knowledge base work: runtime support for embedding/BM25 retrieval serving
+- [[concepts/rag-systems]] — production hybrid RAG deployment at Cerebras
+
+## Sources
+
+- [[raw/articles/2026-07-16_cerebras_knowledge-base-architecture]] — "How we built our knowledge base" (team byline: "Isaac, Daniel, Zenghao Gao")
+- [X: @gaozenghao](https://x.com/gaozenghao) — profile and career history verified via X API 2026-09-14
