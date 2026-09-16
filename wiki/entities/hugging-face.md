@@ -3,7 +3,7 @@ title: Hugging Face
 type: entity
 aliases: [HuggingFace, HF]
 created: 2026-04-24
-updated: 2026-08-27
+updated: 2026-09-16
 status: active
 tags:
   - company

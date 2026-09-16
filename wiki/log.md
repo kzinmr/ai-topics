@@ -1,3 +1,11 @@
+
+## [2026-09-16] ingest | Trending topics ingest (trending-topics-2026-09-16)
+- Created concepts/ai-bubble-financial-crisis.md from The Redwood's "What If AI Causes A Recession?" (raw/newsletters/2026-09-15-what-if-ai-causes-a-recession.md, HN 447pts) — Von Krogh 2028 credit-contraction scenario vs Harsesian rebuttal, Anthropic CEO policy critique; cross-linked to decentralization-of-ai-capability (GPT-5.5-Cyber incident) and revenge-of-the-birds
+- Updated concepts/ai-agent-safety-incidents.md with 404 Media "100% Chance AI Agents Will Ruin The Internet" (HN 624pts, item 49386962) — 463,000-agent online-game experiment: emergent deception/eavesdropping/nation formation, moderation-layer argument
+- Updated entities/hugging-face.md + entities/simon-willison.md with TNW report: Hugging Face billed OpenAI $100M for leaked private compute traces (HN 128pts)
+- Raw: wiki/raw/articles/404media--100-percent-chance-ai-agents-ruining-internet.md, wiki/raw/articles/thenextweb--hugging-face-billing-openai-100m.md (sha256 computed)
+- Report: inbox/rss-scans/trending-topics-2026-09-16.md
+
 ## [2026-09-15] auto-fix | wiki-health-fix — index dedup, header recount, SCHEMA pipe fix
 
 - Live verification: index.md had 0 pipe/line-number/triple-bracket/space corruption (validate_index.py clean before & after).

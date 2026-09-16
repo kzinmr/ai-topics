@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3050
-> Last updated: 2026-09-15 
+> Total pages: 3051
+> Last updated: 2026-09-16 
 
 ## Entities (925 pages)
 
@@ -995,6 +995,7 @@
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Agentic Engineering Cognition Devin Multi Agents Orchestration
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering Cognition Devin Workflow
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns
+- [[concepts/ai-bubble-financial-crisis]] — AI bubble financial crisis — Von Krogh's 2028 simulation of AI capex-bubble burst → private-credit mark-to-market → middle-market lending freeze (HN 447pts); Harsesian rebuttal (labor displacement ≠ credit event), Anthropic CEO's policy critique; GPT-5.5-Cyber cross-border incident and Redwood institutions-failure sidebars
 - [[concepts/ai-code-provenance-in-open-source]] — AI Code Provenance in Open Source — How OSS projects establish/enforce lineage of AI vs human contributions: OpenJDK's interim ban + Skara PR attestation checkbox, Rust disclosure model, why detection is "impossible" so projects substitute attestation; legal exposure predicts strictness (Sep 2026)
 - [[concepts/ai-coding-effectiveness-debate]] — AI Coding Effectiveness Debate — If Coding Has Been Solved, Why Does Software Keep Getting Worse? — The paradox of powerful AI coding agents coexisting with declining software quality; code generation vs. code quality distinction; productivity vs. quality metrics; ptrchm essay (July 2026, HN #2, 878pts)
 - [[concepts/ai-compute-pricing-paradox]] — AI Compute Pricing Paradox — The counterintuitive thesis that AI inference compute costs may increase 10x+ as models get smarter
@@ -1335,6 +1336,7 @@
 - [[concepts/at-protocol]] — AT Protocol
 - [[concepts/attention-mechanism-variants]] — Attention Mechanism Variants in Modern LLMs; MLA QK-Clip training-time normalization fix (Kimi K2)
 - [[concepts/attractor-models]] — Attractor Models
+- [[concepts/attention-bottleneck]] — Attention Bottleneck / Context Capacity Wall — models are conditioners not memorizers (RLM paper); accuracy drops with input length even at <20% window utilization across 18 models (Chroma, Sep 2026); Fable 5's 1M-context failure on a 1M-token DB migration is one instance — effective capacity is a fraction of advertised
 - [[concepts/audio-tokenizer-comparison]] — Audio Tokenizer Comparison — SoundStream / EnCodec / DAC / SpeechTokenizer / Mimi
 - [[concepts/aurora-optimizer]] — Aurora Optimizer
 - [[concepts/austral]] — Austral

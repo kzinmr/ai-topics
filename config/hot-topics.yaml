@@ -336,4 +336,22 @@ topics:
   - concepts/agent-economics
   notes: 6-level ladder; watch for first level-5+ system with public validated calibration
   added: '2026-09-12'
-  last_crawled: '2026-09-12'
+- slug: attention-bottleneck
+  title: Attention Bottleneck / Context Capacity Wall
+  crawl_policy: prerequisites
+  priority: high
+  search_hints:
+  - attention bottleneck LLM context degradation
+  - long context performance degradation haystack
+  - context rot Chroma 2026
+  - why long context windows are not enough
+  wiki_pages:
+  - concepts/attention-bottleneck
+  - concepts/context-engineering
+  - concepts/context-engineering/context-window-management
+  - concepts/token-economics
+  - concepts/kv-cache
+  - concepts/ai-agent-safety-incidents
+  notes: 'Chroma article (9/15) plus Fable 5 1M-context Replit incident connected as one mechanism. Prereqs: attention mechanism, kv-cache. Laterals: context-compaction, sub-quadratic attention, memory-systems'
+  added: '2026-09-16'
+  last_crawled: '2026-09-16'
