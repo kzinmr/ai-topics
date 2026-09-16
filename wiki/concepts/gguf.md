@@ -1,25 +1,22 @@
 ---
-title: "Gguf"
+title: "GGUF"
 type: concept
-aliases:
-  - gguf
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-09-16
 tags:
-  - concept
-sources: []
-status: stub
-
+  - local-llm
+  - quantization
+redirect: concepts/local-llm/gguf
 ---
 
-# Gguf
+# GGUF
 
-> **TODO**: Enrich this page.
+> **This page redirects to [[concepts/local-llm/gguf]]** — the canonical page on the GGUF file format.
 
-## Overview
+**GGUF** (GPT-Generated Unified Format) is llama.cpp's model file format — successor to GGML — storing weights (with built-in quantization types like Q4_K_M, Q8_0), tokenizer metadata, and architecture info in a single file. It is the distribution format for Ollama, LM Studio, and most local-LLM tooling.
 
-Stub page for Gguf.
+## Where the Substance Lives
 
-## Related Pages
-
-- [[entities/_index]]
+- [[concepts/local-llm/gguf]] — Canonical GGUF page: format layout, quantization type table
+- [[concepts/llama-cpp]] → [[concepts/local-llm/llama-cpp]] — The engine that reads GGUF
+- [[concepts/local-llm/ollama]] — Runner that distributes GGUF models

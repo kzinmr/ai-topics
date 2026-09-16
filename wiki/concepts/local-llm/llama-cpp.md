@@ -1,25 +1,16 @@
 ---
-title: "LLama CPP"
+title: "llama.cpp (Local LLM)"
 type: concept
-aliases:
-  - local-llm-llama-cpp
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-09-16
 tags:
-  - concept
-sources: []
-status: stub
-
+  - local-llm
+  - open-source
+redirect: concepts/llama-cpp
 ---
 
-# LLama CPP
+# llama.cpp (Local LLM)
 
-> **TODO**: Enrich this page.
+> **This page redirects to [[concepts/llama-cpp]]**, which in turn points to the substantive local-LLM pages under [[concepts/local-llm/_index|Local LLM hub]].
 
-## Overview
-
-Stub page for LLama CPP.
-
-## Related Pages
-
-- [[entities/_index]]
+**llama.cpp** is Georgi Gerganov's C/C++ LLM inference engine (GGUF format, k-quants quantization, CPU/Apple Silicon focus). See [[concepts/local-llm/gguf]] and [[concepts/local-llm/ollama]] for the ecosystem it anchors.

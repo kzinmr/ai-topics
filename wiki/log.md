@@ -1,6 +1,10 @@
 
 ## [2026-09-16] auto-fix | wiki-health-fix — index header recount, corruption scan clean
 
+## [2026-09-16] skeleton-enrich: redirect 8 duplicate stub concept pages
+
+No `status: skeleton` entity pages remain in wiki/entities/. Targeted the highest-inbound-link `status: stub` concept pages instead, converting 8 duplicate/alias stubs into typed redirects pointing at richer canonical pages: mechanistic-interpretability → interpretability (10 inbound refs); gguf, gguf-quantization → local-llm/gguf; ollama, ollama-local-llm-runner → local-llm/ollama; llama-cpp (top + subdirectory) and model-quantization-for-local-llms → respective local-llm canonical pages. Removed the only dangling wikilink (concepts/local-llm/llama-cpp) from llama-cpp.md. Updated 7 index.md descriptions to mark redirects. Remaining ~430 stub pages are mostly one-off newsletter-topic stubs with 0-1 inbound links — no canonical target exists to redirect to; enrichment deferred to article-driven sessions.
+
 - Live verification: index.md had 0 pipe / line-number / triple-bracket / space-prefix corruption (validate_index.py clean before and after).
 - Report's 23 "orphan" pages all false positives: 21 `_index.md` hub files (served by design, main index intentionally excludes them) + 2 `_archive/` files (intentionally unindexed). 0 added to index.
 - Index header recount: Concepts 2051->2053, Total pages 3051->3052 (Entities 925, Comparisons 35, Events 33, Queries 6 matched actual). Dedup pre-check: 0 illegitimate duplicates.

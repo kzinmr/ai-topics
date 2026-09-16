@@ -1873,8 +1873,8 @@
 - [[concepts/generic-agent-self-evolving]] — GenericAgent: Token-Efficient Self-Evolving Agent
 - [[concepts/genie]] — genie
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution)
-- [[concepts/gguf]] — Gguf
-- [[concepts/gguf-quantization]] — gguf-quantization
+- [[concepts/gguf]] — GGUF (redirect → local-llm/gguf)
+- [[concepts/gguf-quantization]] — GGUF Quantization (redirect → local-llm/gguf)
 - [[concepts/github-copilot-agent-platform]] — GitHub Copilot Agent Platform
 - [[concepts/github-copilot-billing]] — GitHub Copilot Token-Based Billing
 - [[concepts/github-models]] — GitHub Models — retired multi-provider LLM playground + unified inference API (GitHub Actions ambient-key prompts); retired Aug 2026 under coding-agent demand economics
@@ -2165,7 +2165,7 @@
 - [[concepts/little-learner-llm]] — LittleLearner — K-5-curriculum-restricted LMs (0.6B/1.3B/5B); scaling/post-training/ICL elicit but don't acquire out-of-scope capability (arXiv 2608.13545)
 - [[concepts/llama-4]] — LLaMA 4
 - [[concepts/llm-assisted-learning]] — LLM-Assisted Learning — systematic methodology for using LLMs to learn complex topics via iterative knowledge-building and simulation (Laurentiu Raducu, Aug 2026)
-- [[concepts/llama-cpp]] — Llama Cpp
+- [[concepts/llama-cpp]] — llama.cpp (redirect → local-llm pages)
 - [[concepts/llm-architecture-complexity]] — LLM Architecture Complexity — Attention mechanism proliferation, composability; Raschka's KV cache analysis, RLVR/PRM predictions, shrinking harnesses
 - [[concepts/llm-assisted-development]] — LLM-Assisted Development
 - [[concepts/llm-assisted-writing]] — LLM-Assisted Writing
@@ -2259,7 +2259,7 @@
 - [[concepts/mcporter]] — MCPorter — TypeScript runtime, CLI, and code-generation toolkit for MCP; auto-discovers servers from Cursor/Claude/Codex/Windsurf/VS Code; 4.7k★ (June 27)
 - [[concepts/munder-difflin]] — Munder Difflin — Open-source multi-agent harness running an "office of your clones": wraps 12 CLI coding agents (Claude Code/Codex/Grok/...), per-person persistent clones with shared MemPalace memory, E2E-encrypted clone-to-clone messaging, local-first nodes + optional 24/7 sandbox VMs; #1 GitHub Trending (Aug 22, 2026)
 - [[concepts/mu-tools-for-agents]] — Mu — Open-source suite of 18+ developer tools for AI agents, distributed as an MCP server in Go; browser, git, image, video, file system, and social media integrations (Aug 2026)
-- [[concepts/mechanistic-interpretability]] — mechanistic-interpretability
+- [[concepts/mechanistic-interpretability]] — Mechanistic Interpretability (redirect → interpretability)
 - [[concepts/megakernel-for-llm-inference]] — Megakernel for LLM Inference (redirect → megakernel-inference)
 - [[concepts/megakernel-inference]] — Megakernel for LLM Inference; Lucebox fused kernel + Aug 2026 megakernel debate (Rubin dependency triggers, Cursor MoK)
 - [[concepts/memex-scratchpad]] — MemEx — Programmable Scratchpad for LLM Agents
@@ -2316,7 +2316,7 @@
 - [[concepts/model-labs-to-agent-labs]] — Model Labs to Agent Labs
 - [[concepts/model-merging]] — Model Merging
 - [[concepts/model-quantization]] — Model Quantization; enriched with Expert-Aware Quantization (MoE-specific: Q4-hot/Q2-cold recovers ~90% of Q2→Q4 gap) (June 23)
-- [[concepts/model-quantization-for-local-llms]] — Model Quantization for Local LLMs
+- [[concepts/model-quantization-for-local-llms]] — Model Quantization for Local LLMs (redirect → local-llm/model-quantization)
 - [[concepts/model-spec-midtraining]] — Model Spec Midtraining (MSM)
 - [[concepts/model-training-as-code]] — Model Training as Code (MTaC) — Imperative code representation of end-to-end model training pipelines; composability, consensus, provenance via Flyte + W&B trunk-based development
 - [[concepts/model-switching-in-graph-workflows]] — Model Switching in Graph Workflows — KV cache invalidation, context carryover techniques, Latent Briefing applicability, framework comparison (LangGraph/AutoGen/LlamaIndex/ADK), best practices for multi-model graph nodes
@@ -2398,8 +2398,8 @@
 - [[concepts/observability-monitoring-ai-opentelemetry-python-production]] — Observability Monitoring Ai Opentelemetry Python Production
 - [[concepts/observability-monitoring-tracing-opentelemetry-llm-agents-debugging]] — Observability Monitoring Tracing Opentelemetry Llm Agents Debugging
 - [[concepts/okf-open-knowledge-format]] — OKF (Open Knowledge Format) — Google Cloud proposed standard for structured knowledge wikis with YAML frontmatter, index.md, and logs.md conventions; adopted by OpenWiki 0.2
-- [[concepts/ollama]] — ollama
-- [[concepts/ollama-local-llm-runner]] — Ollama — Local LLM Runner
+- [[concepts/ollama]] — Ollama (redirect → local-llm/ollama)
+- [[concepts/ollama-local-llm-runner]] — Ollama Local LLM Runner (redirect → local-llm/ollama)
 - [[concepts/olmo-open-language-model]] — olmo-open-language-model
 - [[concepts/on-device-rag]] — On-Device RAG
 - [[concepts/one-person-unicorn]] — One-Person Unicorn

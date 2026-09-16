@@ -1,25 +1,31 @@
 ---
-title: "mechanistic-interpretability"
+title: "Mechanistic Interpretability"
 type: concept
-aliases:
-  - mechanistic-interpretability
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-09-16
 tags:
-  - concept
-sources: []
-status: stub
-
+  - interpretability
+  - model
+  - agent-safety
+redirect: concepts/interpretability
 ---
 
-# mechanistic-interpretability
+# Mechanistic Interpretability
 
-> **TODO**: Enrich this page.
+> **This page redirects to [[concepts/interpretability]]** — the canonical, comprehensive page on interpretability. "Mechanistic interpretability" is the core research program covered there.
 
-## Overview
+**Mechanistic interpretability** is the research program that reverse-engineers the internal computations of neural networks into human-understandable algorithms — features, circuits, and causal mechanisms — rather than treating models as black boxes.
 
-Stub page for mechanistic-interpretability.
+## Where the Substance Lives
+
+- [[concepts/interpretability]] — Canonical page: feature extraction, monosemanticity, activation steering, safety applications
+- **monosemanticity** — Feature polysemanticity and sparse autoencoders (see Anthropic's Sapient series, referenced in [[concepts/interpretability]])
+- [[concepts/activation-steering]] — Intervening on internal features at inference time
+- [[entities/chris-olah]] — Lead, Anthropic interpretability team (Sapient series)
+- [[entities/neel-nanda]] — Open-source interpretability (Gemma Scope, activation steering)
+- [[entities/goodfire-ai]] — Interactive, glass-box model interpretability company
 
 ## Related Pages
 
-- [[entities/_index]]
+- [[concepts/agent-safety]]
+- [[entities/anthropic]]
