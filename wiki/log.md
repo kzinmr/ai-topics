@@ -1,4 +1,11 @@
 
+## [2026-09-16] auto-fix | wiki-health-fix — index header recount, corruption scan clean
+
+- Live verification: index.md had 0 pipe / line-number / triple-bracket / space-prefix corruption (validate_index.py clean before and after).
+- Report's 23 "orphan" pages all false positives: 21 `_index.md` hub files (served by design, main index intentionally excludes them) + 2 `_archive/` files (intentionally unindexed). 0 added to index.
+- Index header recount: Concepts 2051->2053, Total pages 3051->3052 (Entities 925, Comparisons 35, Events 33, Queries 6 matched actual). Dedup pre-check: 0 illegitimate duplicates.
+- No other auto-fixable issues. Stale pages (2791) and unprocessed raw backlog (5853) are report-only items for ingest pipelines.
+
 ## [2026-09-16] create | attention-bottleneck hub page + hot-topics entry
 - Created concepts/attention-bottleneck.md (confidence high): Chroma "Attention Is All You Need Is Not Enough" (Sept 15, raw/articles/reddit--r-localseo-attention-bottleneck-2026-study--1e1057d0.md) + RLM paper "conditioners not memorizers" quote + Replit Fable 5 1M-token incident + context-window-management. Connects measured long-context degradation (18 models, <20% utilization) to a production failure mode; added Mitigation section (retrieval/RLM decomposition, no architecture-only fix — sub-quadratic ≠ associative memory).
 - Hot-topics: added `attention-bottleneck` slug (prereqs/high, last_crawled 2026-09-16) to config/hot-topics.yaml.
