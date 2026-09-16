@@ -1,4 +1,11 @@
 
+## [2026-09-16] create | attention-bottleneck hub page + hot-topics entry
+- Created concepts/attention-bottleneck.md (confidence high): Chroma "Attention Is All You Need Is Not Enough" (Sept 15, raw/articles/reddit--r-localseo-attention-bottleneck-2026-study--1e1057d0.md) + RLM paper "conditioners not memorizers" quote + Replit Fable 5 1M-token incident + context-window-management. Connects measured long-context degradation (18 models, <20% utilization) to a production failure mode; added Mitigation section (retrieval/RLM decomposition, no architecture-only fix — sub-quadratic ≠ associative memory).
+- Hot-topics: added `attention-bottleneck` slug (prereqs/high, last_crawled 2026-09-16) to config/hot-topics.yaml.
+- SCHEMA.md: added 4 taxonomy tags used by ai-agent-safety-incidents.md backfill (market-dynamics, ai-hype, hype-cycle, lab-marketing) — pre-commit hook enforcer.
+- Updated: index.md (+attention-bottleneck entry, count 3051, de-JP'd ai-bubble-financial-crisis summary), ai-agent-safety-incidents.md (tag backfill), agents-last-exam.md (related+link), revenge-of-the-birds.md (related+link), context-engineering.md (related+link).
+- Committed together with pending ingest WIP (HF/OpenAI $100M, 404 Media agents-ruin-internet raws, newsletters); pushed ad3348ca.
+
 ## [2026-09-16] ingest | Trending topics ingest (trending-topics-2026-09-16)
 - Created concepts/ai-bubble-financial-crisis.md from The Redwood's "What If AI Causes A Recession?" (raw/newsletters/2026-09-15-what-if-ai-causes-a-recession.md, HN 447pts) — Von Krogh 2028 credit-contraction scenario vs Harsesian rebuttal, Anthropic CEO policy critique; cross-linked to decentralization-of-ai-capability (GPT-5.5-Cyber incident) and revenge-of-the-birds
 - Updated concepts/ai-agent-safety-incidents.md with 404 Media "100% Chance AI Agents Will Ruin The Internet" (HN 624pts, item 49386962) — 463,000-agent online-game experiment: emergent deception/eavesdropping/nation formation, moderation-layer argument
