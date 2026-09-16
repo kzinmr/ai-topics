@@ -1,0 +1,92 @@
+{
+  "run_id": "20260916T101259Z",
+  "triaged_at": "2026-09-16T10:14:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 5,
+  "notes": "Raw digests contain only obfuscated Substack/beehiiv redirect links (tokens truncated); no article content is present in the raw files. Classification is based on newsletter subject + publication identity (publication_id in app-link URLs and @handle slugs). Downstream wiki-ingest MUST resolve the redirect URLs before scraping to extract actual article content and confirm classification.",
+  "classifications": [
+    {
+      "message_id": "<20260915.202157.98fa41be@mta5>",
+      "subject": "🔒 Several Companies Restrict Anthropic Use Over Data Fears",
+      "date": "2026-09-15",
+      "source": "beehiiv AI/security newsletter (UID 654)",
+      "raw_path": "wiki/raw/newsletters/2026-09-15-several-companies-restrict-anthropic-use-over-data-fears.md",
+      "importance": "high",
+      "relevance": ["ai-safety", "ai-security", "enterprise-adoption", "data-privacy", "anthropic", "claude", "vendor-risk", "confidentiality"],
+      "suggested_wiki_targets": [
+        "entities/anthropic.md (update: enterprise data-handling concerns)",
+        "concepts/ai-safety.md or concepts/ai-security.md (update: enterprise data-leakage fear)",
+        "entities/claude.md (update if exists)"
+      ],
+      "rationale": "Directly on-scope: enterprise adoption friction driven by data-handling/confidentiality fears around Anthropic/Claude. Connects to AI governance, enterprise AI adoption, and vendor-trust themes already tracked. Headline may be sensationalized; beehiiv redirect links are opaque, so downstream ingest must resolve and verify against primary sources before creating an events/ entry."
+    },
+    {
+      "message_id": "<20260915205441.3.cf20ad4249757222@mg2.substack.com>",
+      "subject": "Everyone Says Datacenter Moratoriums Are Killing the US Buildout. We disagree",
+      "date": "2026-09-15",
+      "source": "SemiAnalysis (publication_id=6349492, authors incl. @mayabkn, @jeremieeliahouontiveros, @semianalysis)",
+      "raw_path": "wiki/raw/newsletters/2026-09-15-everyone-says-datacenter-moratoriums-are-killing-the-us-buildout-we-disagree.md",
+      "importance": "high",
+      "relevance": ["ai-infrastructure", "datacenters", "semianalysis", "ai-buildout", "energy", "permitting", "nvidia", "capex"],
+      "suggested_wiki_targets": [
+        "concepts/ai-infrastructure.md (update: datacenter permitting/moratorium reality vs. narrative)",
+        "entities/semianalysis.md (update)",
+        "concepts/ai-economics.md (update if capex/energy angle present)"
+      ],
+      "rationale": "SemiAnalysis data-driven contrarian take on whether local datacenter moratoriums actually constrain the US AI buildout. Core to inference/training infrastructure + AI economics coverage; high-quality primary analysis. Worth ingesting after resolving the post URL (open.substack.com/pub/semianalysis/p/everyone-says-datacenter-moratoriums)."
+    },
+    {
+      "message_id": "<20260915130252.3.78c8bc4b20e68a3e@mg2.substack.com>",
+      "subject": "Good luck slowing this down",
+      "date": "2026-09-15",
+      "source": "Ben's Bites (publication_id=4379299)",
+      "raw_path": "wiki/raw/newsletters/2026-09-15-good-luck-slowing-this-down.md",
+      "importance": "low",
+      "relevance": ["ai-news", "ai-industry-trends", "ai-safety-moratorium"],
+      "suggested_wiki_targets": [
+        "entities/bens-bites.md (update if exists)"
+      ],
+      "rationale": "Ben's Bites daily AI digest. Title suggests commentary on AI acceleration / regulatory slowdown debate, but the substantive value is a news roundup of multiple links, not a single durable thesis. Low priority — treat as a source to mine for individual items, not a standalone wiki page. No skip flag: roundup may contain a linkable AI item downstream."
+    },
+    {
+      "message_id": "<20260915201154.3.6af9e3bd327ca25f@mg-d0.substack.com>",
+      "subject": "Can Skills Learned in Games Transfer to Real-World Work?",
+      "date": "2026-09-15",
+      "source": "swyx / AINews (publication_id=1084089, @ricmac)",
+      "raw_path": "wiki/raw/newsletters/2026-09-15-can-skills-learned-in-games-transfer-to-real-world-work.md",
+      "importance": "low",
+      "relevance": ["ai-research", "transfer-learning", "agent-evaluation", "skill-acquisition", "ainews-digest"],
+      "suggested_wiki_targets": [
+        "concepts/transfer-learning.md (optional update if about models)",
+        "concepts/agent-evaluation.md (optional if about agent skill transfer benchmarks)"
+      ],
+      "rationale": "Published from swyx/AINews feed, but subject reads as a research/cognition essay (possibly Good Start Labs sponsor piece) on whether game-learned skills transfer to real work — closer to human skill acquisition than core LLM/agent tech. Marginal relevance; ingest only if the resolved content ties to model transfer-learning or agent skill-transfer benchmarks. Otherwise skip standalone page."
+    },
+    {
+      "message_id": "<20260915124528.3.bd79c0f5691a1708@mg-d1.substack.com>",
+      "subject": "60+ new creative growth ideas",
+      "date": "2026-09-15",
+      "source": "Lenny's Newsletter (publication_id=10845)",
+      "raw_path": "wiki/raw/newsletters/2026-09-15-60-new-creative-growth-ideas.md",
+      "importance": "low",
+      "relevance": ["product-growth", "startup", "product-management"],
+      "suggested_wiki_targets": [],
+      "skip": true,
+      "rationale": "Lenny's Newsletter product/growth ideas list. Outside LLM/AI-agent wiki scope unless a resolved sub-link is specifically about AI product tooling. Recommend skipping wiki ingest."
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 2,
+    "low": 3,
+    "skipped": 1,
+    "recommended_for_wiki_ingest": [
+      "2026-09-15-several-companies-restrict-anthropic-use-over-data-fears.md",
+      "2026-09-15-everyone-says-datacenter-moratoriums-are-killing-the-us-buildout-we-disagree.md"
+    ],
+    "mine_only": [
+      "2026-09-15-good-luck-slowing-this-down.md",
+      "2026-09-15-can-skills-learned-in-games-transfer-to-real-world-work.md"
+    ]
+  }
+}
