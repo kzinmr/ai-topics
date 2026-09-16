@@ -222,6 +222,17 @@ def generate_daily_report(date_str, blogs):
     return md
 ```
 
+## Checkpoint Anomaly: `blogs_scanned=0` with nonzero `total_new`
+
+`blog_ingest.py` sometimes writes `"blogs_scanned": 0, "new_articles_per_blog": {}` even though the scan actually ran (observed 2026-09-16, see `references/run-log-2026-09-16.md`). The per-blog breakdown comes from parsing blogwatcher-cli stdout and is fragile; `total_new` and the `articles`/`saved_articles` lists are reliable. To verify a suspicious checkpoint, query the DB directly:
+
+```sql
+SELECT b.name, COUNT(*) c FROM articles a JOIN blogs b ON a.blog_id=b.id
+WHERE DATE(a.discovered_date)='<run date>' GROUP BY b.name ORDER BY c DESC;
+```
+
+If the DB count matches `total_new`, the checkpoint is fine — do not re-run the scan.
+
 ## Report Output Path
 
 - Directory: `~/ai-topics/inbox/rss-scans/`
