@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3052
-> Last updated: 2026-09-16 
+> Total pages: 3056
+> Last updated: 2026-09-17 
 
 ## Entities (925 pages)
 
@@ -932,7 +932,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2053 pages)
+## Concepts (2054 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1802,6 +1802,7 @@
 - [[concepts/evaluation/testing-ai-agents]] — How to Test AI Agents Effectively
 - [[concepts/event-driven-architecture]] — Event-Driven Architecture (EDA)
 - [[concepts/event-driven-architecture-eda]] — Event-Driven Architecture (EDA)
+- [[concepts/evoontology-self-evolving-ontology-data-agents]] — EvoOntology — self-evolving ontology/semantic layer that closes the agent-data gap for data agents; incremental machine-readable semantics over heterogeneous data, evolving as the agent meets new data/tasks (arXiv 2609.15779)
 - [[concepts/excessive-agency]] — Excessive Agency in AI Agents
 - [[concepts/exec-plans]] — Execution Plans
 - [[concepts/exhaustive-agentic-search]] — Exhaustive Agentic Search — Filesystem Metaphor and BEAM Traversal
@@ -2580,6 +2581,7 @@
 - [[concepts/project-lightwell]] — Project Lightwell
 - [[concepts/project-solara]] — Project Solara
 - [[concepts/project-zero]] — Project Zero
+- [[concepts/proxies-for-expertise]] — Proxies for Expertise — AI counterfeits the legible artifacts (Fields Medal, GitHub repos, benchmark scores, conference talks) that fields use to certify skill; Goodhart's Law applied to prestige (Goedecke, 2026)
 - [[concepts/prompt-caching]] — Prompt Caching — Paged attention and API-level caching strategies for reducing LLM inference costs
 - [[concepts/prompt-caching-strategies]] — Prompt Caching Strategies
 - [[concepts/prompt-debt]] — Prompt Debt — Drew Breunig's framework for the buildup of fragile natural-language instructions that lock teams to a single model; three-stage spiral (slowing iteration, team incapacitation, model lock-in), proposed solutions via measurement-driven specification and automated prompt optimization (DSPy, GEPA) (June 25)
@@ -2834,6 +2836,7 @@
 - [[concepts/subagents]] — Pattern where a main agent spawns independent sub-agents in parallel to delegate tasks.
 - [[concepts/subagents-parallel-ai-agent-delegation]] — Subagents — Parallel AI Agent Delegation
 - [[concepts/subquadratic-attention]] — Subquadratic Attention
+- [[concepts/subjective-priors-for-reasoning-models]] — Subjective Priors (MSR) — shape reasoning models with a "distribution over programs consistent with the domain" via DSLs + fine-tuning; fixes hallucinated syntax, wrong decomposition, inconsistent formalization, unbounded search
 - [[concepts/subprime-data-center-crisis]] — The Subprime Data Center Crisis — Ed Zitron's analysis of AI data center debt as a functional analogue to 2008 subprime mortgages via SPVs, off-balance-sheet financing, and 15× overbuild; August 2026 cross-reference to Gary Marcus's "Data center madness" (demand-side / political-economy corollary, see [[concepts/ai-bubble-economics]])
 - [[concepts/super-agent-platform-thesis]] — Super-Agent Platform Thesis — US AI's Answer to the Chinese Super-App
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
@@ -2886,6 +2889,7 @@
 - [[concepts/token-pooling]] — token-pooling
 - [[concepts/token-to-outcome-attribution]] — Token-to-Outcome Attribution
 - [[concepts/tokenization]] — Tokenization
+- [[concepts/tokenizer-objective-vs-search]] — Tokeniser Objective vs. Search — BPE vs UnigramLM ablation: the log-likelihood objective (not the merging-vs-pruning search) dominates downstream LM quality (arXiv 2609.19145)
 - [[concepts/tokenmaxxing]] — Tasteful Tokenmaxxing — Quality-Over-Quantity AI Adoption
 - [[concepts/tool-orchestration]] — Tool Orchestration
 - [[concepts/tool-search-tool]] — Tool Search Tool — On-Demand Tool Discovery via Progressive Disclosure

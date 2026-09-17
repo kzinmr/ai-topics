@@ -155,3 +155,4 @@ This eliminates the traditional handoff between data teams and engineering teams
 - [[raw/articles/2026-06-03_anthropic-self-service-data-analytics-with-claude]] — Anthropic's skills-first analytics stack (source for Approach C)
 - [[raw/articles/2026-06-02_openai-codex-every-role-tool-workflow]] — Codex data analytics plugin launch
 - [[queries/data-analysis-open-harness]] — Query: What open harness is suitable for data analysis?
+- [[concepts/evoontology-self-evolving-ontology-data-agents]] — EvoOntology: self-evolving semantic/ontology layer to close the agent-data gap

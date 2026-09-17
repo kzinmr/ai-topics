@@ -5724,3 +5724,8 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 ## 2026-09-15 22:30 UTC — x-accounts-scan
 - Updated `entities/daniel-van-strien.md`: added Sep 2026 HF Space `historical-illustration-search` (1.49M British Library + Britannica illustrations, agent-facing API, transparent PNG cutouts) to Blog/Recent Posts + sources.
 - Updated `entities/arlan-r.md`: added **folk** (folk.com — iMessage personal agent) to Projects; filled frontmatter sources.
+
+## [2026-09-17] create | concepts/proxies-for-expertise (broken-link fix + hot-post support)
+- Page was wikilinked from agent-slop, geoffrey-huntley, ai-engineer-worlds-fair-2026 but never existed (broken link, 0 index entries). Created from raw Goedecke article + ALE synthesis. Also fixed sibling broken link `concepts/ai-engineer-worlds-fair-2026` → `entities/...` in geoffrey-huntley.md wikilink target? No — entity path is correct there; agent-slop's `[[concepts/...]]` style reference left as-is (redirect-style mention, not a wikilink).
+- Index: Concepts 2053→2054, total 3055→3056.
+- Night-slot (21:30 JST) Discord hot-post built on this cluster: "verification economics" thesis — agent slop is rational while review <1 cent/action vs fabrication free; ScaleX 33% oversight failure as empirical proof. No other content changes.

@@ -33,7 +33,7 @@ X: **@gnusoc** (also cross-posts at @gnubai). Substack: ghuntley.substack.com.
 ## Core Theses
 
 ### 1. The Real Coding Agent Is a Graph of Interacting Feedback Loops
-Title of his **AI Engineer World's Fair SF talk** (see [[concepts/ai-engineer-worlds-fair-2026]]). The claim: what actually ships as a "coding agent" is not the model and not the prompt but a **directed graph of feedback loops** — compile errors, test runs, linters, human rejections — whose topology, not the model's raw capability, determines outcomes. Agents that can't *self-edit* their environment/context have "no agency at all."
+Title of his **AI Engineer World's Fair SF talk** (see [[entities/ai-engineer-worlds-fair-2026]]). The claim: what actually ships as a "coding agent" is not the model and not the prompt but a **directed graph of feedback loops** — compile errors, test runs, linters, human rejections — whose topology, not the model's raw capability, determines outcomes. Agents that can't *self-edit* their environment/context have "no agency at all."
 
 ### 2. The Featureless World
 His AI Engineer talk/essay "**A Featureless World**" (2026): frontier labs are absorbing the outer harness — browser automation, memory, sandboxing, sub-agents — into the model and its official scaffold, so most third-party agent tooling is becoming **undifferentiated plumbing**. His sharpest exhibit: **OpenClaw** shipping "hundreds of thousands of lines of TypeScript" as a "giant pile of tech debt that no human being can read," which he calls *the biggest failure mode in agent engineering* — complexity that neither humans nor the agents using it can audit. ^[raw/articles/2026-09-14_ghuntley_a-featureless-world.md]
@@ -54,7 +54,7 @@ His standing prescription for agent teams, repeated across posts and talks: an u
 
 - [[concepts/agent-slop]] — synthesis of his reliability-gap critique
 - [[concepts/harness-engineering]] — the layer his feedback-loop and featureless-world theses analyze
-- [[concepts/ai-engineer-worlds-fair-2026]] — where two of his signature talks were given
+- [[entities/ai-engineer-worlds-fair-2026]] — where two of his signature talks were given
 - [[concepts/proxies-for-expertise]] — the conference-citation loop he attacks
 
 ## Sources

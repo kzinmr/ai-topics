@@ -175,3 +175,4 @@ Source: [raw/articles/2026-08-13_alloomiai_self-evolving-ai-agents.md]
 - [[entities/pi]] — Pi coding agent — concrete implementation of Level 5 self-modification with session trees, hot reload, extension state
 - [[entities/openclaw]] — OpenClaw — always-on self-evolving agent with markdown memory compaction
 - [[concepts/hermes-agent-architecture]] — Hermes Agent — capability accumulation system that grows stronger over time through skill/memory accumulation
+- [[concepts/evoontology-self-evolving-ontology-data-agents]] — EvoOntology: self-evolving ontology layer, the "self-evolving" idea specialized to data-agent semantics
