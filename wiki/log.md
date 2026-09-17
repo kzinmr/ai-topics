@@ -1,3 +1,4 @@
+# Wiki Log
 
 ## [2026-09-16] auto-fix | wiki-health-fix — index header recount, corruption scan clean
 
@@ -37,13 +38,6 @@ No `status: skeleton` entity pages remain in wiki/entities/. Targeted the highes
 - Residual report-only: stale pages 2781, unreferenced raw ~5794 (incl. scraper junk e.g. xcancel.com about-pages).
 
 ---
-
-# Wiki Log
-
-> Chronological record of all wiki actions. Append-only.
-> Format: `## [YYYY-MM-DD] action | subject`
-> Actions: ingest, update, query, lint, create, archive, delete, watchdog
-> When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
 ## [2026-09-14] update | skeleton-enrich-daily — enriched 3 Cerebras knowledge base team skeletons + backlinked [[entities/cerebras-systems]]
 - [[entities/daniel-kim-cerebras]] — Head of Growth at Cerebras (@learnwdaniel, joined 2015, ~7.3K followers); "How we built our knowledge base" co-author. Enriched with KB facts from raw article (15K+ queries/day, hybrid BM25+embeddings, MCP). Removed status: skeleton.
@@ -232,12 +226,6 @@ Report: inbox/rss-scans/trending-topics-2026-09-12.md
 - `raw/articles/2026-09-10_anthropic_effective-context-engineering-for-ai-agents.md` (2.1 KB) was untracked. It self-declares as a **provenance record for the X-thread capture of an already-absorbed Anthropic post** — canonical full text already lives at `raw/articles/2026-05-08_anthropic-engineering_effective-context-engineering-for-ai-agents.md` (21 KB) and is cited by 5 wiki pages. No re-ingestion performed; committed so the raw layer isn't left dirty.
 
 **Files**: `wiki/entities/emollick.md`, `wiki/entities/ethan-mollick.md`, `wiki/index.md`, `wiki/entities/_index.md`, `wiki/raw/articles/2026-09-10_anthropic_effective-context-engineering-for-ai-agents.md`, `wiki/log.md`.
-
-# Wiki Log
-
-> Chronological record of all wiki actions. Append-only.
-> Format: `## [YYYY-MM-DD] action | subject`
-> Older entries archived in log-2026.md
 
 ## [2026-09-11] report | Discord hot-post (night slot 21:30 JST)
 - Topic: "40億トークン、35時間、価値ゼロ — AIエンジニアリングは内巻である". Reflective/contrarian per night guidance; deliberately avoids today's 09:30 verification-bottleneck arc — this post runs the opposite claim: reward-shape critique + trust erosion as the *unmeasured* dimension.
@@ -5729,3 +5717,19 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Page was wikilinked from agent-slop, geoffrey-huntley, ai-engineer-worlds-fair-2026 but never existed (broken link, 0 index entries). Created from raw Goedecke article + ALE synthesis. Also fixed sibling broken link `concepts/ai-engineer-worlds-fair-2026` → `entities/...` in geoffrey-huntley.md wikilink target? No — entity path is correct there; agent-slop's `[[concepts/...]]` style reference left as-is (redirect-style mention, not a wikilink).
 - Index: Concepts 2053→2054, total 3055→3056.
 - Night-slot (21:30 JST) Discord hot-post built on this cluster: "verification economics" thesis — agent slop is rational while review <1 cent/action vs fabrication free; ScaleX 33% oversight failure as empirical proof. No other content changes.
+
+---
+
+## [2026-09-17] auto-fix | wiki-health-fix — log.md header repair, index recount
+
+- Fixed log.md structural corruption: file began with a blank line + buried heading (previous fix script left `# Wiki Log` heading removed from line 41 but file start still blank); restored single `# Wiki Log` heading at line 1, removed the duplicate header block. Headings now: exactly 1. 436 entries intact.
+- index.md corruption scan clean: pipe_prefix 0, line_number_prefix 0, triple_bracket 0, space_prefix 0, double_pipe 0. validate_index.py passes (3077 lines).
+- Index header recount from actual lines: Concepts 2054 → 2057 (2 new concept pages since last recount; Total 3056 = 925 entities + 2057 concepts + 35 comparisons + 33 events + 6 queries).
+- Orphan re-scan: all 23 report orphans are `_index.md` hub pages (by-design, served via hub pages) — 0 registered. 2 remaining non-indexed files are `concepts/gpt/_archive/*` (archived, intentionally unindexed).
+- Ghost entries: 0. Working-tree strays (ai-bubble-financial-crisis.md + newsletter raw) committed together as ingest-pipeline WIP.
+- Residual report-only: stale pages 2800, unreferenced raw 5882/9701 (incl. scraper junk, e.g. xcancel.com about-pages).
+
+## [2026-09-17] create | concepts/structural-priors-constrain-search (hot-post support)
+- Synthesis page pairing two same-day concept pages — [[concepts/subjective-priors-for-reasoning-models]] and [[concepts/tokenizer-objective-vs-search]] — under one thesis: objective/prior shape dominates search cleverness. Reward hacking ([[concepts/evaluation/reward-hacking]]) added as negative case. Confidence medium (two single-source studies).
+- Index: Concepts 2057→2058, total 3056→3057.
+- Late-night slot (01:30 JST) Discord hot-post built on this cluster. No other content changes.
