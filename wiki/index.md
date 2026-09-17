@@ -501,7 +501,7 @@
 - [[entities/lucas-atkins]] — Lucas Atkins
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley
-- [[entities/luke-j-huang]] — Luke J. Huang
+- [[entities/luke-j-huang]] — Luke J. Huang — MIT Physics+CS (OpenAI MTS Resident); VCPO (ESS-based variance control for async RL, ICML 2026) + "Is Frontier Async RL Solved?" survey
 - [[entities/louis-abraham]] — Louis Abraham — French open-source developer & data tinkerer (louisabraham.github.io); HN-blogger on LLM code quality ('load-bearing vocabulary') (Aug 2026)
 - [[entities/maarten-grootendorst]] — Data scientist, AI educator, and author of the widely-read 'Visual Guide' series on LLM concepts (quantization, atten...
 - [[entities/machina]] — Machina

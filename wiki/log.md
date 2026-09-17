@@ -5733,3 +5733,15 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 - Synthesis page pairing two same-day concept pages — [[concepts/subjective-priors-for-reasoning-models]] and [[concepts/tokenizer-objective-vs-search]] — under one thesis: objective/prior shape dominates search cleverness. Reward hacking ([[concepts/evaluation/reward-hacking]]) added as negative case. Confidence medium (two single-source studies).
 - Index: Concepts 2057→2058, total 3056→3057.
 - Late-night slot (01:30 JST) Discord hot-post built on this cluster. No other content changes.
+
+## [2026-09-17] skeleton-enrich-daily: luke-j-huang enriched (1 page, ~7KB)
+
+Git-history check: no richer historical version of luke-j-huang.md (current skeleton = only version). Enriched from scratch per skill Section 5b (skeleton enrichment, no-article source).
+
+**[[entities/luke-j-huang]]** (113 lines, ~7KB) — Luke J. Huang, MIT Physics+CS (on leave), Member of Technical Staff Resident at OpenAI; code released under mit-han-lab (Song Han group). Key research finds:
+- **VCPO — "Stable Asynchrony: Variance-Controlled Off-Policy RL for LLMs"** ([arXiv:2602.17616](https://arxiv.org/abs/2602.17616), ICML 2026, first author; code github.com/mit-han-lab/vcpo). Diagnosis: stale rollouts under high asynchrony produce heavy-tailed importance weights, reliably predicted by collapsing effective sample size (ESS). Method: (1) scale LR with ESS, (2) closed-form minimum-variance off-policy baseline, critic-free. Results: stable at 128 steps off-policy; 2.5x speedup matching sync performance on long-horizon tool use. Added dedicated "VCPO" section to [[concepts/post-training/asynchronous-rl]] (answers its open collapse-diagnostic question).
+- **"Is Frontier Asynchronous RL Solved?"** blog survey (May 2026, luk-huang.github.io) — already canonical in asynchronous-rl concept page; entity page now records authorship, key findings (sequence-IS vs token-IS scaling, low-bias compute scaling hypothesis), and lab coverage (GLM-5, Ring 1T, DeepSeek V3.2, Minimax M2.5, Qwen 3.5, Intellect-3, Nemotron-3, Laguna-M.1).
+- Other publications: LPD (ICLR 2026 Oral, co-first), ForeAct (CVPR 2026), free-space-optics robotics (arXiv 2025).
+- Cross-refs: [[concepts/post-training/grpo-training]], [[concepts/importance-sampling]], [[entities/openai]], [[entities/daniel-han]]. Tags cleaned to SCHEMA taxonomy (ml-systems/generative-models dropped). `status: skeleton` removed; `type: entity` + `updated` set. index.md Entities entry enriched.
+
+**Note on prior-session claims**: the previous session's pending log entry referenced mark-aeykhon enrichment, but wiki/entities/mark-aeykhon.md was never written to disk (nor does concepts/ai-reliability-paradox exist; samuelcolvin is a redirect, not a skeleton). That claim was not backed by real artifacts and has been dropped from the record; a follow-up run should research Mark Aeykhon (marktechtalk.com) from scratch if desired. Pipeline: skeleton-enrich-daily cron.

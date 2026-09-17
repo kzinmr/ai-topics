@@ -1,7 +1,7 @@
 ---
 title: "Asynchronous RL for LLM Post-Training"
 created: 2026-06-03
-updated: 2026-06-17
+updated: 2026-09-17
 type: concept
 tags:
   - reinforcement-learning
@@ -10,7 +10,7 @@ tags:
   - importance-sampling
   - policy-lag
   - survey
-sources: [raw/articles/2026-05-31_lukhuang_frontier-asynchronous-rl-solved.md, raw/articles/2026-06-16_semianalysis_rl-systems-throughput.md]
+sources: [raw/articles/2026-05-31_lukhuang_frontier-asynchronous-rl-solved.md, raw/articles/2026-06-16_semianalysis_rl-systems-throughput.md, https://arxiv.org/abs/2602.17616]
 ---
 
 # Asynchronous RL for LLM Post-Training
@@ -57,6 +57,20 @@ All methods delay collapse but don't prevent it at high policy lag (K=12+). Clip
 > Low-bias methods are often less efficient at low-compute because they expose more variance, but they preserve the correct objective and therefore have more room to improve as compute scales. High-bias methods are often more efficient at small scale, but their bias becomes the bottleneck at high compute.
 
 At `B=32`, sequence TIS collapses before token TIS. By `B=64`, it matches synchronous baseline. At `B=128`, it surpasses it. Token TIS continues to collapse regardless.
+
+## VCPO: Variance-Controlled Policy Optimization (ICML 2026)
+
+Huang et al. ([arXiv:2602.17616](https://arxiv.org/abs/2602.17616), [code](https://github.com/mit-han-lab/vcpo), MIT Song Han group; author [[entities/luke-j-huang|Luke J. Huang]] — same author as the survey above) provide the strongest answer to the collapse-diagnostic question.
+
+**Diagnosis:** under high asynchrony, heavy-tailed importance weights from stale rollouts make REINFORCE/GRPO estimators high-variance — and this variance is *reliably predicted by collapsing effective sample size (ESS)*. Existing clipping/masking methods (TIS, IcePop, DeepSeek masking) don't monitor ESS and largely fail to address the variance problem itself.
+
+**Method (critic-free, minimal overhead):**
+1. Dynamically scale the learning rate with ESS — dampen updates when the effective batch has collapsed
+2. Closed-form minimum-variance baseline adapted to off-policy settings
+
+**Results:** stable async training at up to **128 steps off-policy** (far beyond the K=12+ collapse regime above); on a long-horizon tool-use task, matches synchronous performance at **2.5× training speedup**.
+
+**Relation to the low-bias compute scaling hypothesis:** rather than trading bias for stability (as clipping/masking do), VCPO controls *variance* directly — the failure mode low-bias methods suffer at low compute. If it holds at scale, it removes the main objection to running low-bias objectives asynchronously.
 
 ## Frontier Adoption (2026)
 
