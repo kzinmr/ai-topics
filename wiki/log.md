@@ -5718,6 +5718,9 @@ Full report: [[queries/wiki-graph-analysis-weekly-2026-07-31]]. Old reports (07-
 ### Notes
 - Working tree had uncommitted wiki output from today's ingest pipelines (4 modified pages, 3 new pages, 6 raw articles). watchdog-file-preserve skill was unavailable (no gateway, no `hermes` CLI, no cron jobs in gateway_state.db) so the fix was executed directly; all 14 wiki files were staged and committed together to leave index.md consistent with the pages it now lists. Non-wiki working-tree changes (config/hermes/skills) left untouched.
 
+## [2026-09-17] create | attention-bottleneck page rebuilt (file lost in original commit)
+- `concepts/attention-bottleneck.md` was logged created 2026-09-16 but the file was never committed (ad3348ca staged index/log, not the page) and is absent from all git history. Rebuilt from the log entry + index.md summary; marked with a reconstruction notice, confidence lowered to medium (raw source `reddit--r-localseo-attention-bottleneck-2026-study--1e1057d0.md` also missing — re-ingest pending). Cross-linked to context-rot, agi-declaration-controversy-2026, agent-slop, arc-agi-3, agents-last-exam, subquadratic-attention. Index entry at line 1339 now resolves.
+
 ## 2026-09-15 22:30 UTC — x-accounts-scan
 - Updated `entities/daniel-van-strien.md`: added Sep 2026 HF Space `historical-illustration-search` (1.49M British Library + Britannica illustrations, agent-facing API, transparent PNG cutouts) to Blog/Recent Posts + sources.
 - Updated `entities/arlan-r.md`: added **folk** (folk.com — iMessage personal agent) to Projects; filled frontmatter sources.
