@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3057
-> Last updated: 2026-09-17 
+> Total pages: 3058
+> Last updated: 2026-09-18 
 
 ## Entities (925 pages)
 
@@ -3068,7 +3068,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (6 pages)
+## Queries (7 pages)
 
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
@@ -3076,3 +3076,4 @@
 - [[queries/wiki-graph-analysis-weekly-2026-08-28]] — Weekly Wiki Graph Analysis (2026-08-28) — 3,021 pages scanned; 478 orphans (475 content-rich), 3,555 broken links (197 fixable), 16 dup groups (8 false positives), 1,725 stale pages
 - [[queries/wiki-graph-analysis-weekly-2026-08-28-annotations]] — Human-adjudicated verdicts on this week's 16 duplicate groups (5 real dups incl. Lilian Weng fact conflict) + false-positive metrics in the auto report
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
+- [[queries/wiki-graph-analysis-weekly-2026-09-18]] — Weekly Wiki Graph Analysis (2026-09-18) — 3,079 pages (recursive scan); 446 orphans (303 content-rich), 2,810 broken links (919 raw-ref-as-wikilink), 8 real duplicate groups, 1,661 stale, 0 tag violations

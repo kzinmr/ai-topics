@@ -5745,3 +5745,9 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Cross-refs: [[concepts/post-training/grpo-training]], [[concepts/importance-sampling]], [[entities/openai]], [[entities/daniel-han]]. Tags cleaned to SCHEMA taxonomy (ml-systems/generative-models dropped). `status: skeleton` removed; `type: entity` + `updated` set. index.md Entities entry enriched.
 
 **Note on prior-session claims**: the previous session's pending log entry referenced mark-aeykhon enrichment, but wiki/entities/mark-aeykhon.md was never written to disk (nor does concepts/ai-reliability-paradox exist; samuelcolvin is a redirect, not a skeleton). That claim was not backed by real artifacts and has been dropped from the record; a follow-up run should research Mark Aeykhon (marktechtalk.com) from scratch if desired. Pipeline: skeleton-enrich-daily cron.
+
+## [2026-09-18] query | weekly wiki graph analysis
+
+- Ran weekly graph analysis (cron). Stock `wiki_graph_analysis_weekly.py` under-scans flat dirs only (2,486 of 3,079 pages) and mis-reports link targets; verified findings recomputed with recursive walk (`scripts/wiki_graph_analysis_verified.py`, saved this run).
+- Results: 3,079 pages; 446 orphans (303 content-rich); 2,810 broken link refs classified (1,280 namespaced-missing, 919 raw/transcripts refs used as wikilinks, 432 bare-missing, 121 deep-path drift, 58 dir-hub-missing-index); 16 flagged dup groups → 8 real consolidation candidates; index: 0 ghosts, 22 unindexed `_index` hubs (by-design); 1,661 stale (>90d, dominated by April-10 blogger batch); 0 tag violations; 243 oversized pages.
+- Full report + priority actions: [[queries/wiki-graph-analysis-weekly-2026-09-18]]. Index: Queries 6→7, total 3057→3058. No page content modified this run (report-only).
