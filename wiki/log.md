@@ -5760,3 +5760,7 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Ran weekly graph analysis (cron). Stock `wiki_graph_analysis_weekly.py` under-scans flat dirs only (2,486 of 3,079 pages) and mis-reports link targets; verified findings recomputed with recursive walk (`scripts/wiki_graph_analysis_verified.py`, saved this run).
 - Results: 3,079 pages; 446 orphans (303 content-rich); 2,810 broken link refs classified (1,280 namespaced-missing, 919 raw/transcripts refs used as wikilinks, 432 bare-missing, 121 deep-path drift, 58 dir-hub-missing-index); 16 flagged dup groups → 8 real consolidation candidates; index: 0 ghosts, 22 unindexed `_index` hubs (by-design); 1,661 stale (>90d, dominated by April-10 blogger batch); 0 tag violations; 243 oversized pages.
 - Full report + priority actions: [[queries/wiki-graph-analysis-weekly-2026-09-18]]. Index: Queries 6→7, total 3057→3058. No page content modified this run (report-only).
+
+## [2026-09-18] report | Discord hot-post (late-night slot 01:30 JST)
+- Topic: reward-hacking *detection* — activation probes as free monitors (arXiv 2609.19101) + GLM 5.2 73%-hack-rate finding. Fresh angle; the 09-17 late-night slot had covered the structural-priors/objective-vs-search cluster and the 09-17 night slot covered verification economics — no wikilink reuse.
+- Primary page [[concepts/evaluation/reward-hacking]] (Sept-2026 "Internal Activations" section), cross-linked [[concepts/proxies-for-expertise]], [[concepts/agent-slop]]. No content changes; report-only.
