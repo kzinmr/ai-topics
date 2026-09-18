@@ -1,3 +1,12 @@
+## [2026-09-18] auto-fix | wiki-health-fix — all clean, no action needed
+
+- Index corruption scan: pipe_prefix=0, line_number_prefix=0, triple_bracket=0, space_prefix=0 (validate_index.py: clean, 3079 lines)
+- Reported orphans (23): ALL false positives — 21 `_index.md` hub pages (served by parent hub links, not indexed directly) + 2 `_archive/` files (intentionally excluded). No index additions made.
+- Ghost entries: 0. L2 pipe-prefix: 0. Triple-bracket in L2: 0.
+- Empty wikilinks: 278 (stable known residual; safe fixer reports 0 fixable / all [no-match] multi-line artifacts).
+- Stale pages: 2800; unprocessed raw: 5912/9731 (pipeline throughput, not auto-fixable).
+- No commits made (working-tree raw files belong to newsletter-ingest pipeline).
+
 # Wiki Log
 
 ## [2026-09-16] auto-fix | wiki-health-fix — index header recount, corruption scan clean
