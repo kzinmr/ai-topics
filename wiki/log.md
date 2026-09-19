@@ -7,6 +7,7 @@
 - Updated [[concepts/long-horizon-agents]] — Anthropic "Measuring model behaviour over long horizons" (Sep 17) section; related-links expanded; updated bumped
 - Updated [[concepts/economic-world-models]] — cross-linked new pages as EWM level 3–5 instantiations; updated bumped
 - index.md: Concepts +4 (2058->2062), total 3059->3063
+- [watchdog 2026-09-19] Committed the complete active-crawl batch (4 new pages + 3 updated + 5 raw articles + SCHEMA tag additions: agent-economics, reputation, zk-proofs) which was left staged-but-uncommitted by the ingest run. Commit 4ce99236 pushed. Index/log verified consistent; no structural corruption found.
 
 ## [2026-09-19] create | edge-ai-strategy — quantize-big vs build-tiny (morning hot-post)
 - Created concepts/edge-ai-strategy.md — synthesis hub contrasting the two edge-LLM routes: compress large models via QAT ([[entities/prism-ml]] / Bonsai 27B, 1-bit ~4GB, 90% of FP) vs build natively tiny models ([[entities/cactuscompute]] / Needle 2, 45M/14MB, 70 MFLOPs/token). Shared principle: QAT-not-post-hoc + grammar-constrained decoding. index.md Concepts +1 (3058->3059).
