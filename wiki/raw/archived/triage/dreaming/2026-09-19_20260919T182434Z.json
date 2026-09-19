@@ -1,0 +1,112 @@
+{
+  "archived_at": "2026-09-19T18:24:34.124096+00:00",
+  "triage_run_id": "20260919T182434Z",
+  "source": "dreaming",
+  "summary_ja": "",
+  "decisions": [
+    {
+      "title": "VQ-bench (Pinecone)",
+      "url": "https://www.pinecone.io/blog/vq-bench/",
+      "raw_path": "wiki/raw/articles/2026-09-19_pinecone_vq-bench.md",
+      "recommended_action": "skip",
+      "note": "Already covered by active-crawl 2026-09-19 (concepts/vq-bench.md)",
+      "body_excerpt": "# VQ-bench: a Composable Vector Quantization Framework\n**Source**: [https://www.pinecone.io/blog/vq-bench/](https://www.pinecone.io/blog/vq-bench/)\n←\nBlog\nVQ-bench: a Composable Vector Quantization Framework\nAshwin Padaki\n,\nAmir Ingber\n,\nEdo Liberty\nSep 17, 2026\nEngineering\nResearch\nShare:\nJump to s"
+    },
+    {
+      "title": "Vending-Bench",
+      "url": "https://arxiv.org/abs/2502.15840",
+      "raw_path": "wiki/raw/articles/arxiv-2502-15840-vending-bench.md",
+      "recommended_action": "skip",
+      "note": "Covered by active-crawl 2026-09-19 (concepts/economic-agent-benchmarks)",
+      "body_excerpt": ""
+    },
+    {
+      "title": "EcoGym",
+      "url": "https://arxiv.org/abs/2602.09514",
+      "raw_path": "wiki/raw/articles/arxiv-2602.09514-ecogym.md",
+      "recommended_action": "skip",
+      "note": "Covered by active-crawl 2026-09-19 (concepts/economic-agent-benchmarks)",
+      "body_excerpt": "# EcoGym: Evaluating LLMs for Long-Horizon Plan-and-Execute in Interactive Economies\n**arXiv**: https://arxiv.org/abs/2602.09514 | **Published**: 2026-02-10\n**Authors**: Xavier Hu, Jinxiang Xia, Shengze Xu, Kangqi Song, Yishuo Yuan, Guibin Zhang, JinCheng Ren, Boyu Feng et al.\n## Abstract\nLong-horiz"
+    },
+    {
+      "title": "Microsoft Structural Priors for Reasoning Models",
+      "url": "https://www.microsoft.com/en-us/research/blog/structural-priors-for-reasoning-models/",
+      "raw_path": "wiki/raw/articles/microsoft-structural-priors-2026.md",
+      "recommended_action": "skip",
+      "note": "Covered 2026-09-17 (concepts/structural-priors-constrain-search)",
+      "body_excerpt": "# Structured priors for reasoning models\nMicrosoft Research blog post. Authors include Siddhartha Sen and colleagues (Kernel team / MSR). Published ~2026-09-09.\n## Core argument\nGeneral-purpose reasoning models are strong but \"expensive and slow\" on every problem. For problems that recur at scale an"
+    },
+    {
+      "title": "Reward Hacking Internal Representations",
+      "url": "https://arxiv.org/abs/2609.19101",
+      "raw_path": "wiki/raw/articles/reward-hacking-internal-representations-2026.md",
+      "recommended_action": "skip",
+      "note": "Covered by 2026-09-19 active-crawl update to concepts/evaluation/reward-hacking",
+      "body_excerpt": "# The Hidden Life of Tokens: Decoding the Reward Hacking Signals in Diffusion Language Models\n- **arXiv:** 2609.19101v1 (cs.CL / cs.AI)\n- **Submitted:** 2026-09-16\n- **Topic:** internal representation of reward hacking in frontier open-source models\n## Abstract (verbatim)\nAs models scale, reward hac"
+    },
+    {
+      "title": "OpenAI agents attacked RubyGems back in May (Simon Willison)",
+      "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+      "raw_path": "wiki/raw/articles/simonwillison.net--2026-sep-12-openai-agents-rubygems--5c41fc25.md",
+      "recommended_action": "skip",
+      "note": "Full coverage: events/openai-rubygems-gemstuffer-disclosure-2026 + simon-willison Sep-12 note",
+      "body_excerpt": "# OpenAI agents attacked RubyGems back in May\nSource: https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/\nOpenAI agents attacked RubyGems back in May\n12th September 2026\nOpenAI agents carried out an undisclosed attack on RubyGems\nis a new bombshell report from Spencer Kitts, Thomas Larsen,"
+    },
+    {
+      "title": "rubyhack.ai RubyGems attack report (full)",
+      "url": "https://rubyhack.ai/openai-agents-rubygems-attack-report",
+      "raw_path": "wiki/raw/articles/rubyhack-ai--openai-agents-rubygems-attack-report.md",
+      "recommended_action": "skip",
+      "note": "Source of the already-covered RubyGems event page",
+      "body_excerpt": "OpenAI agents carried out an undisclosed cyber-attack on RubyGems \n The RubyGems attack \n The wiki swarm \n Contents \n Intro \n Timeline of incident \n Key findings \n An OpenAI agent swarm was responsible for this incident \n The agents used RubyGems’ automatic build system to achieve remote code execut"
+    },
+    {
+      "title": "OpenAI gpt-oss open-weight models",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "raw_path": "wiki/raw/articles/2025-08-05_openai-gpt-oss-open-weight-models.md",
+      "recommended_action": "skip",
+      "note": "Stale 2025-08 article; gpt-oss fully covered in wiki",
+      "body_excerpt": "# Introducing gpt-oss — OpenAI's First Open-Weight Model\n**Source:** https://openai.com/index/introducing-gpt-oss/\n**Date:** August 5, 2025\n**Models:** gpt-oss-120b, gpt-oss-20b\n**License:** Apache 2.0 (Open-weight)\n## Model Specifications\n| Model | Total Params | Active/Token | Layers | Experts (To"
+    },
+    {
+      "title": "There's a 100% Chance AI Agents Are Already Ruining the Internet (404media)",
+      "url": "https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/",
+      "raw_path": "wiki/raw/articles/404media--100-percent-chance-ai-agents-ruining-internet.md",
+      "recommended_action": "skip",
+      "note": "Opinion piece; agent-degradation themes already covered by existing concepts",
+      "body_excerpt": "# There’s a 100% Chance AI Agents Are Already Ruining the Internet\nSource: https://www.404media.co/theres-a-100-chance-ai-agents-are-already-ruining-the-internet/\nThere’s a 100% Chance AI Agents Are Already Ruining the Internet\n## Account\nLog in\nSubscribe\n## Navigation\nHome\nAbout\nRSS\nSupport/FAQ\nPod"
+    },
+    {
+      "title": "There is an AI Code Review Bubble (Greptile)",
+      "url": "https://www.greptile.com/blog/ai-code-review-bubble",
+      "raw_path": "wiki/raw/articles/2026-09-17_greptile_ai-code-review-bubble.md",
+      "recommended_action": "skip",
+      "note": "Vendor commentary from Jan 2026 republished; AI-bubble themes covered",
+      "body_excerpt": "There is an AI Code Review Bubble\n [ Daksh Gupta | 2026-01-24 ]\n Contents\n Table of Contents\n Independence \n Autonomy \n Loops \n navigation | Blog There is an AI Code Review Bubble \n Table of Contents Table of Contents\n Independence \n Autonomy \n Loops \n Today, we're in the hard seltzer era of AI code"
+    },
+    {
+      "title": "Factory Private",
+      "url": "https://factory.com/news/factory-private",
+      "raw_path": "wiki/raw/articles/2026-09-18_factory_factory-private.md",
+      "recommended_action": "skip",
+      "note": "Minor product launch note; entities/factory-ai.md exists with Router context",
+      "body_excerpt": "# Introducing Flexible Deployment Options at Factory | Factory.ai\n**Source**: [https://factory.com/news/factory-private](https://factory.com/news/factory-private)\nIntroducing Flexible Deployment Options at Factory\nBy\nFactory Team\n-\nSeptember 18, 2026\n-\n1\nminute read\nCompany\nProduct\nShare"
+    },
+    {
+      "title": "Warp: Adopting the Software Factory Model (crawl-walk-run)",
+      "url": "https://www.warp.dev/blog/adopting-the-software-factory-model-crawl-walk-run",
+      "raw_path": "wiki/raw/articles/2026-09-16_warp_adopting-the-software-factory-model-crawl-walk-run.md",
+      "recommended_action": "skip",
+      "note": "Warp factory shift already in entities/warp-terminal.md (Jun 2026 memo section)",
+      "body_excerpt": "# Adopting the software factory model: crawl, walk, run\n**Source**: [https://www.warp.dev/blog/adopting-the-software-factory-model-crawl-walk-run](https://www.warp.dev/blog/adopting-the-software-factory-model-crawl-walk-run)\nEngineering\nAdopting the software factory model: crawl, walk, run\nZach Lloy"
+    },
+    {
+      "title": "Effective context engineering for AI agents (X-thread capture)",
+      "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "raw_path": "wiki/raw/articles/2026-09-10_anthropic_effective-context-engineering-for-ai-agents.md",
+      "recommended_action": "skip",
+      "note": "File itself declares it a provenance-only duplicate of an already-ingested raw copy",
+      "body_excerpt": "# Effective context engineering for AI agents (X-thread capture)\n> **Canonical raw copy:** [[raw/articles/2026-05-08_anthropic-engineering_effective-context-engineering-for-ai-agents]] (156 lines, full article text, already in the wiki).\n> This file exists only as a provenance record for the X-threa"
+    }
+  ]
+}

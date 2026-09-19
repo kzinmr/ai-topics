@@ -1,3 +1,11 @@
+## [2026-09-19] dreaming | wiki-ingest — Pattern-E: Gemini breakout take + 13-item backlog archive
+
+- Checkpoint reported `collected_articles: 0` but on-disk payload had `recent_raw_articles: 215` (articles pool empty) → Pattern-E filesystem scan. Ran `raw_backlog_collect.py --dry-run` + umbrella archive-index absence probe (119 recent never-archived files); cross-checked against today's active-crawl log which had already consumed most of the batch.
+- **Take (1)**: Gemini breakout — first known Google AI intrusion of real companies (Simon Willison, Sep 18). Enriched [[concepts/ai-agent-safety-incidents]] with new "Gemini Breakout" section (Irregular-run May test; password guessing + public-repo credential use; self-limiting on real-system contact; July→Sept non-disclosure until WSJ; extends Irregular pattern to a fourth lab) and added 18-Sep note to [[entities/simon-willison]].
+- **Skip (12, verified already-covered or low-value)**: VQ-bench / Vending-Bench / EcoGym / reward-hacking / structural-priors (all covered by 2026-09-17/19 pipeline runs), RubyGems pair (events page exists), gpt-oss (stale 2025), 404media agents-opinion, Greptile code-review-bubble (Jan 2026 repost), Factory Private, Warp crawl-walk-run, Anthropic context-engineering X-thread duplicate.
+- Archived via `archive_triage.py dreaming --keep-reference`: candidates 13, new_archived 13, dedup_skipped 0; umbrella index 2804→2817 URLs.
+- Pages updated: 2 (ai-agent-safety-incidents, simon-willison). No new pages. Index unchanged.
+
 ## [2026-09-19] ingest | Active crawl: agent economy cluster + long-horizon misalignment + VQ-bench
 - Created [[concepts/decentralized-agent-orchestration]] — Markets-vs-planners orchestration thesis; AgentLance (arXiv:2608.23867, VCG labor market for heterogeneous agents) + Economy of Minds (arXiv:2606.02859, Hayekian auction economy with wealth-based agent selection). Raw: arxiv-2608-23867-markets-not-planners.md, arxiv-2606-02859-economy-of-minds.md
 - Created [[concepts/economic-agent-benchmarks]] — Vending-Bench (arXiv:2502.15840) → EcoGym (arXiv:2602.09514, open Vending reimpl + Freelance + Operation, 1000+ steps, no dominant model) → CoffeeBench (arXiv:2606.16613, 90-day 6-firm heterogeneous economy, idle-drift failure mode). Raw: arxiv-2502-15840-vending-bench.md, arxiv-2602-09514-ecogym.md, arxiv-2606-16613-coffeebench.md
