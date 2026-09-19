@@ -77,6 +77,8 @@ A CLI tool for debugging and auditing agent skill/MCP configurations. drskill an
 
 Announced July 2026. Positioned as a developer tool for the growing ecosystem of [[concepts/agent-skills|agent skills]] and MCP-based architectures.
 
+**Loadout bloat anecdote (Sep 2026 newsletter)**: drskill was motivated by real cases of agent-toolbox bloat — one developer's enterprise agent was loading **over 600 skills** by default (pulling in colleagues' additions), while Breunig's own agent kept picking the wrong note-taking skill. drskill scans traces to show which skills/MCPs actually get used. See [[entities/drew-breunig--writings|AI, Culture & Anxieties]].
+
 ## DSPy / GEPA Ecosystem Contributions (2026)
 
 - **skilled-proposer**: A GEPA proposer designed to reduce overfitting, with configurable parameters for tailoring proposer instructions to specific tasks. Built for the [[concepts/gepa|GEPA]] optimizer ecosystem. GitHub: [cmpnd-ai/skilled-proposer](https://github.com/cmpnd-ai/skilled-proposer)

@@ -122,6 +122,10 @@ Terminal-based front-end for AI coding agents. Features:
 - **Conversation history** — cursor through previous interactions, copy to clipboard
 - **SVG export** — save terminal output as vector graphics
 
+### Ishmael (2026)
+Distraction-free novel-writing app for Mac (ishmael.textualize.io), built on Textualize's stack. Features prose-healing, sentence focus, typewriter mode, chapter management, and export to Word/EPUB/HTML/Markdown — notably exporting "agent ready manuscripts" for AI consumption. New version released 2026-09-19.
+- **"A paradigm shift in text selection"** (Sep 2, 2026 blog post): keyboard-first hierarchical text selection — tapping `shift` selects the word under the caret and enters word-select mode; repeated taps escalate selection "rank" (word → sentence → paragraph → scene), with shift+arrow extending at the current rank. McGugan positions it as beating both character-level shift+cursor and mouse gestures for prose writers.
+
 ### batrachian.ai (2025)
 McGugan's personal AI-powered project website, built using Toad and his terminal tools. Demonstrates the practical application of his TUI philosophy for real-world projects.
 
