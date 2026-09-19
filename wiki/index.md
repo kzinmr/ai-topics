@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3059
+> Total pages: 3063
 > Last updated: 2026-09-19 
 
 ## Entities (925 pages)
@@ -932,7 +932,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2058 pages)
+## Concepts (2062 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -964,6 +964,9 @@
 - [[concepts/agent-driven-ranker-optimization]] — Agent-Driven Ranker Optimization
 - [[concepts/agent-economics]] — Agent Economics
 - [[concepts/economic-world-models]] — Economic World Models (EWM) — six-level ladder from rule-based agent worlds to sim-to-real economic twins; survey finds work stuck at lower levels (arXiv, Aug 2026)
+- [[concepts/decentralized-agent-orchestration]] — Decentralized Agent Orchestration (Markets vs. Planners) — AgentLance (VCG labor markets for agent allocation) and Economy of Minds (Hayekian auction economies); central planners bottleneck, leak private info, and are manipulable (arXiv, Jun–Aug 2026)
+- [[concepts/economic-agent-benchmarks]] — Economic Agent Benchmarks — Vending-Bench → EcoGym → CoffeeBench lineage; running a business over months as the long-horizon coherence test; no model dominates, idle-drift failure mode (arXiv, 2025–2026)
+- [[concepts/agent-identity-and-reputation]] — Agent Identity and Reputation — TessIndex: ZK-verified capability credentials, on-chain reputation, proof-of-human principals; the trust layer agent markets require (arXiv, Aug 2026)
 - [[concepts/agent-experience]] — Agent Experience (AX) — Design philosophy for cloud infrastructure optimized for autonomous AI agents rather than human developers
 - [[concepts/agent-first-codebase-design]] — Agent-First Codebase Design
 - [[concepts/agent-first-design]] — Agent-First Design
@@ -2937,6 +2940,7 @@
 - [[concepts/vector-db-agent-memory]] — Vector Database for AI Agent Memory
 - [[concepts/vector-databases]] — Vector Databases — Overview of specialized database systems for high-dimensional vector embeddings, covering Pinecone, Chroma, Qdrant, Weaviate, Milvus, pgvector, LanceDB, and key concepts (ANN, HNSW, hybrid search)
 - [[concepts/vector-search]] — Vector Search
+- [[concepts/vq-bench]] — VQ-bench — Pinecone's open-source benchmark decomposing vector quantizers into Conditioner/Rounder/Splitter primitives; first systematic head-to-head of ANN quantization methods (2026)
 - [[concepts/vespa]] — Vespa
 - [[concepts/vibe-ceo]] — Vibe CEO
 - [[concepts/vibe-coding]] — Moved to concepts/harness-engineering/agentic-workflows/vibe-coding.md

@@ -1,3 +1,13 @@
+## [2026-09-19] ingest | Active crawl: agent economy cluster + long-horizon misalignment + VQ-bench
+- Created [[concepts/decentralized-agent-orchestration]] — Markets-vs-planners orchestration thesis; AgentLance (arXiv:2608.23867, VCG labor market for heterogeneous agents) + Economy of Minds (arXiv:2606.02859, Hayekian auction economy with wealth-based agent selection). Raw: arxiv-2608-23867-markets-not-planners.md, arxiv-2606-02859-economy-of-minds.md
+- Created [[concepts/economic-agent-benchmarks]] — Vending-Bench (arXiv:2502.15840) → EcoGym (arXiv:2602.09514, open Vending reimpl + Freelance + Operation, 1000+ steps, no dominant model) → CoffeeBench (arXiv:2606.16613, 90-day 6-firm heterogeneous economy, idle-drift failure mode). Raw: arxiv-2502-15840-vending-bench.md, arxiv-2602-09514-ecogym.md, arxiv-2606-16613-coffeebench.md
+- Created [[concepts/agent-identity-and-reputation]] — TessIndex (arXiv:2608.21942): ZK-verified capability credentials, on-chain identity/reputation registry, proof-of-human at principal layer; trust layer required by AgentLance-style markets. Raw: arxiv-2608-21942-tessindex.md
+- Created [[concepts/vq-bench]] — Pinecone's compositional quantizer benchmark (Conditioners/Rounders/Splitters grammar, open-source repo); first systematic head-to-head across fragmented ANN quantization literature. Raw: pinecone-vq-bench-2026.md
+- Updated [[concepts/evaluation/reward-hacking]] — new section on Anthropic's long-horizon misalignment results (trajectories compound; evaluation-awareness causes misalignment); sources + updated bumped
+- Updated [[concepts/long-horizon-agents]] — Anthropic "Measuring model behaviour over long horizons" (Sep 17) section; related-links expanded; updated bumped
+- Updated [[concepts/economic-world-models]] — cross-linked new pages as EWM level 3–5 instantiations; updated bumped
+- index.md: Concepts +4 (2058->2062), total 3059->3063
+
 ## [2026-09-19] create | edge-ai-strategy — quantize-big vs build-tiny (morning hot-post)
 - Created concepts/edge-ai-strategy.md — synthesis hub contrasting the two edge-LLM routes: compress large models via QAT ([[entities/prism-ml]] / Bonsai 27B, 1-bit ~4GB, 90% of FP) vs build natively tiny models ([[entities/cactuscompute]] / Needle 2, 45M/14MB, 70 MFLOPs/token). Shared principle: QAT-not-post-hoc + grammar-constrained decoding. index.md Concepts +1 (3058->3059).
 - Report-only cross-link fix: added [[entities/ericmigi]] outbound links to prism-ml + cactuscompute (broken-link fix from weekly graph analysis), bumped their `updated` to 2026-09-19. Committed 4825b14d.

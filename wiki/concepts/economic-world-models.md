@@ -1,7 +1,7 @@
 ---
 title: "Economic World Models (EWM)"
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-19
 type: concept
 tags: [world-models, ai-agents, economics, simulation, research]
 sources:
@@ -50,6 +50,9 @@ The wiki's existing AI-economics pages ([[concepts/ai-economics]], [[concepts/ai
 
 ## Related
 
+- [[concepts/decentralized-agent-orchestration]] — instantiates EWM levels 3–5: AgentLance's labor market and Economy of Minds' auction economy are working examples of the survey's agent-world layers
+- [[concepts/economic-agent-benchmarks]] — CoffeeBench (heterogeneous multi-agent economy) and EcoGym are level 3–4 systems with validated task-level calibration
+- [[concepts/agent-identity-and-reputation]] — the institutional layer (level 2 "institutions") that live agent economies are actually building first
 - [[concepts/world-model-taxonomy]] — the six-category taxonomy of *physical/scene* world models; EWM is the economic sibling dimension
 - [[concepts/world-models-for-agents]] — environment-prediction world models for single agents
 - [[concepts/agents-last-exam]] — economically-valuable task measurement (micro-foundation source)
