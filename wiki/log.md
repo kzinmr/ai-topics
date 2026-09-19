@@ -1,3 +1,9 @@
+## [2026-09-18] enrich | prism-ml + cactuscompute (skeleton -> full)
+
+- [[entities/prism-ml]] -- Enriched from skeleton. Caltech-origin AI research co. (Khosla/Cerberus/Google/Samsung backed) behind the Bonsai family: Ternary Bonsai 8B, 1-bit Bonsai 8B, and flagship Bonsai 27B (first 27B-class model fitting a phone via ternary/1-bit QAT from Qwen3.6-27B teacher). Full training pipeline, benchmark table (95%/90% of FP), HN reception (612 pts / story 48910545).
+- [[entities/cactuscompute]] -- Enriched from skeleton. YC-backed edge-AI startup; flagship Needle 2 (45M params, 14MB binary, 28MB session RAM, Cactus Quants CQ2-bit). Simple Attention Network architecture, energy argument (70 MFLOPs/token), grammar-constrained decoding, edge-cloud confidence escalation, Pebble Index production user. Source: raw/articles/2026-08-10_needle2-agentic-llm.md.
+- Cross-linked both entities to [[concepts/edge-ai]] and each other (contrasting edge-LLM strategies: quantize-big vs build-tiny). Also linked [[concepts/bonsai-27b]], [[concepts/model-quantization]], [[concepts/advanced-tool-use]], [[concepts/llama-cpp]], [[entities/hugging-face]]. All wikilink targets verified to exist; tags validated against SCHEMA.md.
+
 ## [2026-09-18] auto-fix | wiki-health-fix — all clean, no action needed
 
 - Index corruption scan: pipe_prefix=0, line_number_prefix=0, triple_bracket=0, space_prefix=0 (validate_index.py: clean, 3079 lines)

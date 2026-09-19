@@ -168,3 +168,5 @@ Galaxy AI runs on Exynos NPU and Snapdragon Hexagon NPU, depending on the region
 - [[concepts/apple]] — Apple's AI strategy and Apple Intelligence details
 - [[concepts/llm-inference]] — General LLM inference techniques and optimization
 - [[concepts/local-llm/ollama]] — Ollama local inference platform
+- [[entities/prism-ml]] — Prism ML — extreme low-bit (ternary/1-bit) quantization of large models (Bonsai) for phone deployment
+- [[entities/cactuscompute]] — Cactus Compute — natively tiny agentic models (Needle 2, 14MB) for sub-$200 devices
