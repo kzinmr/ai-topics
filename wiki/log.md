@@ -1,3 +1,7 @@
+## [2026-09-19] create | edge-ai-strategy — quantize-big vs build-tiny (morning hot-post)
+- Created concepts/edge-ai-strategy.md — synthesis hub contrasting the two edge-LLM routes: compress large models via QAT ([[entities/prism-ml]] / Bonsai 27B, 1-bit ~4GB, 90% of FP) vs build natively tiny models ([[entities/cactuscompute]] / Needle 2, 45M/14MB, 70 MFLOPs/token). Shared principle: QAT-not-post-hoc + grammar-constrained decoding. index.md Concepts +1 (3058->3059).
+- Report-only cross-link fix: added [[entities/ericmigi]] outbound links to prism-ml + cactuscompute (broken-link fix from weekly graph analysis), bumped their `updated` to 2026-09-19. Committed 4825b14d.
+
 ## [2026-09-18] enrich | prism-ml + cactuscompute (skeleton -> full)
 
 - [[entities/prism-ml]] -- Enriched from skeleton. Caltech-origin AI research co. (Khosla/Cerberus/Google/Samsung backed) behind the Bonsai family: Ternary Bonsai 8B, 1-bit Bonsai 8B, and flagship Bonsai 27B (first 27B-class model fitting a phone via ternary/1-bit QAT from Qwen3.6-27B teacher). Full training pipeline, benchmark table (95%/90% of FP), HN reception (612 pts / story 48910545).

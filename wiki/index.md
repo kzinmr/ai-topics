@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3058
-> Last updated: 2026-09-18 
+> Total pages: 3059
+> Last updated: 2026-09-19 
 
 ## Entities (925 pages)
 
@@ -1720,6 +1720,7 @@
 - [[concepts/earendil]] — Earendil Inc. — AI agent infrastructure company (Armin Ronacher, Colin); Pi coding agent, Absurd durable execution; session portability advocacy
 - [[concepts/ecs-fargate-scaling]] — ECS Fargate Scaling
 - [[concepts/edge-ai]] — Edge AI (On-Device AI Inference) — Running AI inference locally on smartphones/laptops/IoT via NPU accelerators; Apple Intelligence, Gemini Nano, llama.cpp (Jul 1)
+- [[concepts/edge-ai-strategy]] — Edge AI Strategy — Quantize-Big (Prism ML Bonsai 27B) vs Build-Tiny (Cactus Needle 2); two routes to on-device LLMs, shared QAT-not-post-hoc principle (Sep 19)
 - [[concepts/edge-llm-microcontroller]] — Edge LLM on Microcontrollers — Running 28.9M param LLM on $8 ESP32-S3 MCU at ~9.5 t/s, fully local on-chip inference; 100× larger than previous MCU LLM record (Jul 26)
 - [[concepts/effective-altruism]] — effective-altruism
 - [[concepts/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents
