@@ -1,7 +1,7 @@
 ---
 title: "Mo Hit Main (hallucinated entity — quarantine)"
 created: 2026-08-31
-updated: 2026-09-09
+updated: 2026-09-20
 type: entity
 aliases: [mo-hit-main]
 tags: [person, content-creator, blogger]
@@ -26,7 +26,7 @@ The 2026-08-31 index line asserted a "Takumi Handa" Japanese LLM/generative-AI p
 |---|---|---|
 | 2026-09-03 | `note.com/mohejapan` scrape | "Rara Kojiki" Kojiki mythology series — no AI content, no hub branding |
 | 2026-09-03 | X `@handaline` | user does not exist (API resource-not-found) |
-| 2026-09-03 | X `@moheji1` | exists but is Hideki Motegi (茂木秀樹) — different person |
+| 2026-09-03 | X `@moheji1` | exists but is a different person (Japanese name in source scrape; romanization unverified) |
 | 2026-09-03 | Japanese-language web searches (moheji+LLM, "Handarin", Takumi Handa) | no corroboration |
 | 2026-09-09 | X API `users/by/username/mohejapan` | empty result |
 | 2026-09-09 | live re-scrape of note profile | still Kojiki series only (entries 48–50); no stats, no AI content |

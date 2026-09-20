@@ -5799,3 +5799,9 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 ## [2026-09-18] report | Discord hot-post (late-night slot 01:30 JST)
 - Topic: reward-hacking *detection* — activation probes as free monitors (arXiv 2609.19101) + GLM 5.2 73%-hack-rate finding. Fresh angle; the 09-17 late-night slot had covered the structural-priors/objective-vs-search cluster and the 09-17 night slot covered verification economics — no wikilink reuse.
 - Primary page [[concepts/evaluation/reward-hacking]] (Sept-2026 "Internal Activations" section), cross-linked [[concepts/proxies-for-expertise]], [[concepts/agent-slop]]. No content changes; report-only.
+
+## [2026-09-20] update | JP→EN sweep — reached natural end (body backlog = 0)
+- Dual scan (body + frontmatter): only 1 translatable body-JP file remained, `entities/mo-hit-main.md` (4 chars — the romanized name 茂木秀樹 on the verification table). Translated to a language-neutral description; the actual Japanese name remains verifiable in the raw scrape.
+- log.md body JP (126 chars) confirmed intentional content per the 2026-09-19 sweep-end decision: historical Japanese Discord hot-post topic titles quoted in log entries. Not translatable backlog.
+- Frontmatter-only JP (42 chars across 9 files) re-verified as intentional multilingual aliases (通义千问/Qwen, 腾讯/Tencent, 月之暗面/Moonshot, 姚顺雨/Shunyu Yao, 喬楚/元喬楚 etc.).
+- Body-JP backlog is now ZERO outside log.md's intentional quotes. Recommend disabling/retargeting the JP→EN translation cron.
