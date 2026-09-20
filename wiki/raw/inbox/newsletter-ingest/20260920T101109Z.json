@@ -1,0 +1,66 @@
+{
+  "run_id": "20260920T101109Z",
+  "triaged_at": "2026-09-20T10:14:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 3,
+  "notes": "Raw digests contain only obfuscated Substack/beehiiv redirect links (tokens truncated); no article content is present in the raw files. Classification is based on newsletter subject + publication identity (publication_id / @handle slugs in app-link URLs). Two Substack posts resolve to open.substack.com slugs (robotic/p/where-i-stand-on-rsi, hugobowne/p/the-6-most-common-ai-agent-mistakes); the AGI/ASI item is a beehiiv newsletter with fully opaque /v2/c/... links (publisher not identifiable from checkpoint). Downstream wiki-ingest MUST resolve redirect URLs before scraping to extract actual article content and confirm classification.",
+  "classifications": [
+    {
+      "message_id": "<20260919154220.3.91fb271305f554bd@mg-d0.substack.com>",
+      "subject": "Where I stand on RSI",
+      "date": "2026-09-19",
+      "source": "Nathan Lambert / Interconnects (publication_id=48206, @natolambert; open.substack.com/pub/robotic/p/where-i-stand-on-rsi)",
+      "raw_path": "wiki/raw/newsletters/2026-09-19-where-i-stand-on-rsi.md",
+      "importance": "high",
+      "relevance": ["recursive-self-improvement", "ai-research", "ai-safety", "agi-trajectory", "capability-trends", "post-training", "interconnects", "nathan-lambert"],
+      "suggested_wiki_targets": [
+        "concepts/recursive-self-improvement.md (create or update: RSI definitions, capability-slope debate)",
+        "entities/nathan-lambert.md (update: publication, stance on RSI)",
+        "concepts/agi-trajectory.md / concepts/ai-research-automation.md (cross-link if exists)"
+      ],
+      "rationale": "Nathan Lambert (Interconnects) is a core tracked source (post-training/RLHF lead at AI2). A position piece on RSI (recursive self-improvement) sits squarely at the center of AI capability/safety discourse and is a durable thesis worth a concept page, not just a news blurb. High-quality primary analysis from a named, on-scope author. Resolve the open.substack.com slug to extract his actual position and evidence before creating/updating pages."
+    },
+    {
+      "message_id": "<20260919.190544.ba4f0ebe@mta14>",
+      "subject": "AGI, ASI and the Singularity: What Are We Actually Talking About?",
+      "date": "2026-09-19",
+      "source": "beehiiv newsletter (UID 670; publisher NOT identifiable from checkpoint — all links are opaque /v2/c/... redirects; likely an AI-philosophy/strategy newsletter)",
+      "raw_path": "wiki/raw/newsletters/2026-09-19-agi-asi-and-the-singularity-what-are-we-actually-talking-about.md",
+      "importance": "low",
+      "relevance": ["agi", "asi", "singularity", "ai-terminology", "ai-forecasting", "ai-safety"],
+      "suggested_wiki_targets": [
+        "concepts/agi.md (update: AGI/ASI/Singularity terminology distinctions)",
+        "concepts/asi.md / concepts/intelligence-explosion.md (update if exists)"
+      ],
+      "rationale": "Definitional/terminology essay on AGI vs ASI vs the Singularity. On-scope topically, but likely a conceptual explainer rather than novel technical content, and the beehiiv publisher is unidentifiable from the checkpoint (all links opaque). Mine the resolved article for crisp AGI/ASI/Singularity definitions to fold into existing concept pages; only promote to a standalone page if the resolved take is genuinely distinctive. Resolve the first few /v2/c/ redirects to identify the publisher and verify substance."
+    },
+    {
+      "message_id": "<20260920004301.3.9c3d038f3d198216@mg2.substack.com>",
+      "subject": "The 6 Most Common AI Agent Mistakes",
+      "date": "2026-09-20",
+      "source": "Hugo Brown / Blogging Bottles? (publication_id=2632531, @hugobowne; open.substack.com/pub/hugobowne/p/the-6-most-common-ai-agent-mistakes)",
+      "raw_path": "wiki/raw/newsletters/2026-09-20-the-6-most-common-ai-agent-mistakes.md",
+      "importance": "high",
+      "relevance": ["ai-agents", "agent-engineering", "agent-design", "common-pitfalls", "agent-reliability", "context-engineering", "tool-use", "coding-agents"],
+      "suggested_wiki_targets": [
+        "concepts/ai-agents.md (update: common failure modes / pitfalls section)",
+        "concepts/agent-design-patterns.md or concepts/agent-reliability.md (update/create: pitfall taxonomy)",
+        "concepts/context-engineering.md (update if pitfalls cover context mgmt)"
+      ],
+      "rationale": "Directly on-scope: a practitioner taxonomy of recurring AI-agent engineering mistakes — the single most wiki-relevant theme for an LLM/Agent knowledge base. Distills into a durable failure-mode checklist for agent-design / reliability concept pages. Hugo Brown (Blogging Bottles) is a hands-on agent/LLM practitioner, so the pitfalls likely reflect real build experience. Resolve the hugobowne slug to extract the 6 mistakes and map each to an existing wiki section."
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 2,
+    "low": 1,
+    "skipped": 0,
+    "recommended_for_wiki_ingest": [
+      "2026-09-20-the-6-most-common-ai-agent-mistakes.md",
+      "2026-09-19-where-i-stand-on-rsi.md"
+    ],
+    "mine_only": [
+      "2026-09-19-agi-asi-and-the-singularity-what-are-we-actually-talking-about.md"
+    ]
+  }
+}
