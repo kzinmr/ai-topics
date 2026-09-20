@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3068
+> Total pages: 3071
 > Last updated: 2026-09-20 
 
-## Entities (927 pages)
+## Entities (930 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -514,6 +514,7 @@
 - [[entities/marc-andreessen]] — Marc Andreessen — Co-founder of Netscape, venture capitalist at a16z; influential voice on AI accelerationism
 - [[entities/marcus-moretti]] — Marcus Moretti
 - [[entities/mario-zechner]] — Mario Zechner; added DeepMind AI Control Roadmap recommendation + Gergely Orosz "Slow Down to Speed Up" talk recommendation (June 25)
+- [[entities/mario-zechner-badlogicgames]] — Mario Zechner (@badlogicgames) X-account feed page; libGDX creator, mdBook author; AI-coding takes, game-dev, HN activity (Sep 2026)
 - [[entities/mark-chen]] — Mark Chen
 - [[entities/mark-mcquade]] — Mark McQuade
 - [[entities/mark-saroufim]] — Mark Saroufim
@@ -777,6 +778,7 @@
 - [[entities/shlok-khemani]] — Shlok Khemani — AI agent researcher; OpenPoke, Vajra, Rabbithole infinite canvas, Claude Memory reverse-engineering, Latent Space ChatGPT Work guest post (Aug 2026)
 - [[entities/shloked]] — Shlok Khemani (@shloked)
 - [[entities/shopify]] — Shopify
+- [[entities/sgnt-jev-article]] — SGNT (sgnt.ai) publication page for "You could have built Jev"; sgnl's 100M-param GPT2-derived model explained from first principles (Sep 2026)
 - [[entities/shortcut]] — Shortcut (AI Spreadsheet Agent)
 - [[entities/shreya-shankar]] — Shreya Shankar
 - [[entities/shunyu-yao]] — Shunyu Yao
@@ -798,6 +800,7 @@
 - [[entities/soham-ray]] — Soham Ray — Researcher at Sierra; tau-bench suite, ICML 2026 oral
 - [[entities/solo-founder-stack]] — Solo Founder Stack
 - [[entities/soundstream]] — SoundStream
+- [[entities/speakeasy-openapi-generation]] — Speakeasy's open-source OpenAPI→SDK/CLI/MCP code generator; agent-native API surface thesis, DeepMind DevRel partnership (Sep 2026)
 - [[entities/speech-tokenizer]] — SpeechTokenizer
 - [[entities/spice-ai]] — Data and AI platform combining federated SQL query, hybrid search, and LLM inference in a portable, open-source runti...
 - [[entities/spike]] — Spike (Mike Doan)

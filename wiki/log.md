@@ -1,3 +1,10 @@
+## [2026-09-20] wiki-health-fix | auto-fix run
+
+- Index corruption scan clean: 0 pipe-prefix, 0 line-number, 0 triple-bracket, 0 space-prefix issues; 0 ghost entries (recursive scan).
+- Registered 3 real entity pages missing from index.md: [[entities/mario-zechner-badlogicgames]], [[entities/sgnt-jev-article]], [[entities/speakeasy-openapi-generation]] (Entities 927→930). Remaining reported orphans are `_index.md` hubs, `_archive/` files, or already-indexed slugs.
+
+---
+
 ## [2026-09-19] skeleton-enrich-daily | wiz, snyk, talkie
 
 - **No `status: skeleton` frontmatter pages remained** in `wiki/entities/` (prior runs cleared them). This run enriched three remaining thin non-redirect entity pages from wiki-local raw material + verified X API data, no fabrication.
