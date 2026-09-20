@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3063
-> Last updated: 2026-09-19 
+> Total pages: 3068
+> Last updated: 2026-09-20 
 
-## Entities (925 pages)
+## Entities (927 pages)
 
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
@@ -256,6 +256,7 @@
 - [[entities/drmaciver]] — David R. MacIver (DRMacIver)
 - [[entities/dshr]] — David S. H. Rosenthal (DSHR) — Google Chrome OS/Chromebook co-creator; "long archive" digital-preservationist; AI Affordability Crisis + absorption frontier / preservation wall; storage economics, session portability, Google Profile sunset; formerly mis-ingested as "Adam Rosenthal" (redirect page)
 - [[entities/droid]] — Droid (Factory) — enterprise agent-native dev platform; Software Factory vision, Router, Shield 2.0, Deferred Context Engine (Aug 2026)
+- [[entities/dqwen3-5]] — dQwen3.5 — UT Austin diffusion LMs adapted from hybrid attention+RNN Qwen3.5 (0.8B/2B/4B/9B); hybrid backbones hit a target loss in ~half the tokens of a full-attention control; any-order + parallel decoding despite RNN causal bias (arXiv 2609.20751, Sep 2026)
 - [[entities/dsprrr]] — dsprrr
 - [[entities/dwarkesh-patel]] — Dwarkesh Patel; enriched with Ryan Greenblatt RSI debate (Aug 2026) — recursive self-improvement plausibility, median 2031 for automating AI R&D, alignment implications, reward hacking → takeover extrapolation
 - [[entities/dylan-patel]] — Dylan Patel
@@ -860,6 +861,7 @@
 - [[entities/troy-hunt]] — Troy Hunt
 - [[entities/trq212]] — Thariq Shihipar (@trq212)
 - [[entities/trycua-cua]] — TryCua (Cua)
+- [[entities/typesafe-ai]] — TypeSafe AI — stealth lab (founder Diogo Almeida, ex-OpenAI ChatGPT instruction-following research); launched Jev (Sep 15, 2026), first "System One model" — structured-decision-only LLM, 40–200x faster, RLCD training
 - [[entities/turbopuffer]] — turbopuffer
 - [[entities/ubtech-robotics]] — UBTECH Robotics
 - [[entities/uipath]] — Uipath
@@ -932,7 +934,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2062 pages)
+## Concepts (2065 pages)
 
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
@@ -1409,6 +1411,7 @@
 - [[concepts/c-programming]] — C Programming
 - [[concepts/cache-first-engineering]] — cache-first-engineering
 - [[concepts/caching-performance-cost-optimization]] — Caching Performance Cost Optimization
+- [[concepts/coding-agent-harness-design-study]] — Coding Agent Harness Design Study (arXiv 2609.20804, Sep 2026) — first component-level ablation of a coding harness: planning, action space, context management across 4 models / 176 settings on SWE-Bench Verified + Terminal-Bench 2.1; every effect is model- and budget-conditional
 - [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
 - [[concepts/cais]] — CAIS (Comprehensive AI Services) — K. Eric Drexler's framework reframing superintelligence as distributed AI services, not monolithic agents; R&D automation as improvement engine, learning vs competence distinction, service-centered architecture, AI safety afforances vs agent-centric models (July 14)
 - [[concepts/caisi-federal-ai-review]] — CAISI Federal AI Review
@@ -1765,6 +1768,7 @@
 - [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]] — Evaluation Coding Agents Mcp Automation Harness Engineering
 - [[concepts/evaluation-development-process-quality]] — Evaluation Development Process Quality
 - [[concepts/evaluation/agent-evaluation-methodology]] — Agent Evaluation Methodology — Floor Raising vs Benchmark Maxxing
+- [[concepts/evaluation/agent-overclaiming]] — Agent Overclaiming — OverclaimBench (arXiv 2609.20812, Sep 2026): frontier agents read all requested files in only 32.1% of runs; misleading 80.4% of the time when coverage is incomplete; false completion claims miss planted defects 1.8× more — final responses are unreliable accounts of agent actions
 - [[concepts/evaluation/agent-observability]] — Agent Observability
 - [[concepts/evaluation/agent-observability-feedback]] — The practice of observing, tracing, evaluating, and providing feedback on AI agent behavior to create a continuous im...
 - [[concepts/evaluation/ai-benchmarks-and-evals]] — AI Benchmarks & Evals — Map of Content
@@ -2854,6 +2858,7 @@
 - [[concepts/synth]] — SYNTH
 - [[concepts/synthetic-data]] — synthetic-data
 - [[concepts/synthetic-research-interns]] — Synthetic Research Interns
+- [[concepts/system-one-models]] — System One Models — models that only *decide* (classify/route/score, 24-token structured output), never converse; Jev/TypeSafe coined Sep 2026, 6 clones in 2 days, "System 2 model as a service" counter-model
 - [[concepts/synthid]] — SynthID; Google Earth AI satellite image retraction case (Jul 2026): SynthID fails on smartphone-photo/screenshot re-encoding, 10/day check limit
 - [[concepts/system-prompt-learning]] — System Prompt Learning
 - [[concepts/systems-programming]] — Systems Programming

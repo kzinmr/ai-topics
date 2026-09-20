@@ -85,3 +85,4 @@ Qwen3.7 Max represents Alibaba's frontier push. The 56.6 AA Intelligence Index s
 - [[concepts/coding-agents/coding-agents]] — AI coding agents
 - [[entities/xiaomi-mimo]] — MiMo-V2.5-Pro
 - [[concepts/glm-5-1]] — GLM-5.1
+- [[entities/dqwen3-5]] — dQwen3.5 (diffusion LMs adapted from Qwen3.5 hybrid backbones, UT Austin, Sep 2026)

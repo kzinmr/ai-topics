@@ -1,12 +1,13 @@
 ---
 title: Diffusion Language Models
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-09-20
 type: concept
 tags: [diffusion, inference, model, llm, autoregressive, code-model, kv-cache, speculative-decoding]
 sources:
   - raw/articles/2025-12-01_inceptionlabs_mercury-diffusion-llm.md
   - raw/articles/2026-02-19_togetherai_consistency-diffusion-lms.md
+  - raw/articles/2026-09-20_arxiv-2609.20751_dqwen3-5-hybrid-attention-diffusion-language-models.md
 ---
 
 # Diffusion Language Models (dLLMs)
@@ -43,6 +44,25 @@ Published February 2026 by Together AI, Consistency Diffusion Language Models (C
    - **Auxiliary masked-denoising loss**: Preserving general masked-token prediction capability.
 
 Results: Up to 14.5x latency speedups on coding and math tasks (11.2x on GSM8K-CoT, 14.5x on MBPP-Instruct) without significant accuracy degradation. CDLM is a post-training recipe applicable to any block-diffusion model.
+
+### Hybrid-Attention DLMs (dQwen3.5, UT Austin)
+
+Xue et al. (2026), *"dQwen3.5: Hybrid-Attention Diffusion Language Models"* (arXiv:2609.20751),
+breaks an implicit assumption of AR→DLM adaptation: that the starting checkpoint must be a
+**full-attention** transformer. Modern AR models (Qwen3.5, MiniMax, etc.) increasingly use **hybrid
+attention+RNN** backbones, and RNN layers are *structurally causal* and hard to bidirectionalize —
+seemingly incompatible with any-order diffusion generation. The paper adapts Qwen3.5 at 0.8B/2B/4B/9B
+into the **dQwen3.5** family anyway and finds the mismatch is overstated:
+
+- **Hybrid backbones are *more* token-efficient to adapt** — reaching a given training loss in
+  ~**half the tokens** of a full-attention control.
+- dQwen3.5 reproduces full-attention DLM behavior: **any-order decoding** works despite the RNN
+  causal bias, and it **decodes in parallel** strongly.
+- Rationale: predictive information in natural language is concentrated in *preceding* tokens, so a
+  strong causal bias in the RNN layers does less damage than expected once attention layers supply
+  bidirectional context. Models released on HuggingFace (`UT-IFML/dQwen3.5-9B-Base`).
+
+See [[entities/dqwen3-5]] for the model page.
 
 ### Other Notable dLLMs
 - **LLaDA** (InclusionAI): Diffusion language model scaled to 100B parameters (LLaDA 2.0).

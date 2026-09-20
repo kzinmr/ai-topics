@@ -5805,3 +5805,17 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - log.md body JP (126 chars) confirmed intentional content per the 2026-09-19 sweep-end decision: historical Japanese Discord hot-post topic titles quoted in log entries. Not translatable backlog.
 - Frontmatter-only JP (42 chars across 9 files) re-verified as intentional multilingual aliases (通义千问/Qwen, 腾讯/Tencent, 月之暗面/Moonshot, 姚顺雨/Shunyu Yao, 喬楚/元喬楚 etc.).
 - Body-JP backlog is now ZERO outside log.md's intentional quotes. Recommend disabling/retargeting the JP→EN translation cron.
+
+## [2026-09-20] create | System One Models cluster (Jev / TypeSafe AI)
+- Sources ingested (5): typesafety.ai blog (Diogo Almeida), sean-goedecke "System One Models are interesting again" + "Two techniques for working with them" (X articles, saved via xurl), sgnt.ai "You could have built Jev", parallel-web.ai Systems testing Jev (WebFetch), AI News 6-clones recap (raw/newsletters)
+- New raw: raw/articles/2026-09-15_typesafety-system-one-models-and-jev.md, raw/articles/seangoedecke.com--* (2), raw/articles/sgnt-you-could-have-built-jev.md, raw/articles/2026-09-19_parallel-web-systems_testing-jev.md, raw/newsletters/2026-09-19-ainews-here-are-6-clones-of-jev-in-2-days.md
+- New pages: concepts/system-one-models.md (hub), entities/typesafe-ai.md, entities/sgnt-jev-article.md
+- Updated: entities/parallel-web-systems.md (+System One Jev API eval, confidence low→medium), entities/seangoedecke-com.md (+2 posts)
+- Key facts: Jev = "System One model", 24-token structured decision output, 40-200x faster (vs 4096-token reasoning cap), RLCD training (no human labels), 30k examples/12h on 8xH100, $0.30/M in $1.20/M out. Counter-model: "System 2 model as a service" = model+workflow sold as one product, priced on decisions not tokens.
+
+## [2026-09-20] ingest | Active crawl — 3 arXiv papers (agent overclaiming, dQwen3.5, coding-agent harness study)
+- Sources (arXiv, Sep 17 2026, verified via arXiv Atom API): 2609.20812 Quantifying Overclaiming Propensity in Frontier LLM Agents; 2609.20751 dQwen3.5: Hybrid-Attention Diffusion Language Models; 2609.20804 An Empirical Study of Harness Design for Coding Agents.
+- New raw: raw/articles/2026-09-20_arxiv-2609.20812_overclaiming-propensity-in-frontier-llm-agents.md, ..._2609.20751_dqwen3-5-hybrid-attention-diffusion-language-models.md, ..._2609.20804_empirical-study-of-harness-design-for-coding-agents.md (abstract-level raw; HTML full-text 404'd at crawl time so metadata+abstract captured via stable Atom API with sha256).
+- New pages: concepts/evaluation/agent-overclaiming.md (OverclaimBench: 67.9% of runs miss files, 80.4% misleading when incomplete, 1.8x defect-miss rate on false completion claims), concepts/coding-agent-harness-design-study.md (first component-level harness ablation; planning/action-space/context-mgmt all model- & budget-conditional), entities/dqwen3-5.md (hybrid attention+RNN → DLM, ~2x token-efficient adaptation).
+- Updated: concepts/diffusion-language-models.md (new "Hybrid-Attention DLMs" section + source + date); concepts/qwen.md (dQwen3.5 ecosystem line). Index: Entities 926→927, Concepts 2063→2065, total 3065→3068.
+- Cross-links verified resolving (agent-slop, reward-hacking, harness-engineering, effective-harnesses-for-long-running-agents, agent-human-oversight-failure, context-engineering, ssm-mamba, transformer-architecture). Dropped non-durable crawl candidates: Brood War (.dev, scanner-blocked), Exfiltrate Your Weights (HN stunt/meme, fails provenance bar).
