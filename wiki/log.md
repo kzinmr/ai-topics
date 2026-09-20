@@ -1,3 +1,19 @@
+## [2026-09-20] skeleton-enrich-daily: no `status: skeleton` pages found; committed WIP Jev-wave enrichment
+
+- **Scan**: `grep -rl "status: skeleton" wiki/entities/` returned 0 matches — the skeleton backlog is currently empty (skeleton-enrich-daily cron has been keeping up).
+- **Skeleton-adjacent pages checked** (all already substantive, no enrichment needed):
+  - `entities/brace-sproul.md` (60 lines, OpenWiki 0.4.0 detail, Aug 2026)
+  - `entities/fourier-intelligence.md` (78 lines, GR-1/GR-2/GR-3 product tables, Wikipedia-sourced)
+  - `entities/eleanor-berger.md` (116 lines, 10KB, course FAQ + Ep.3 transcript)
+  - `entities/0xmovez-ai.md` (140 lines, 11.8KB)
+  - `entities/tilert.md` (129 lines, InferenceX benchmark section)
+  - `entities/antoine-buteau.md` (status: L3), `entities/solo-founder-stack.md` (status: L2) — confidence tiers, not skeletons.
+- **Committed pre-existing WIP** (from 2026-09-19/20 Jev-wave sessions, validated by git-history check — no richer versions existed):
+  - `entities/parallel-web-systems.md`: added Jev (System One model) independent evaluation section (NDCG@10 0.7 reranking result, cost nuance) + source + updated date.
+  - `entities/sgnt-jev-article.md`: fixed dead wikilinks (`entities/sgnl`, `entities/jev-parikhyeh`, `entities/pydantic-ai`, `concepts/agent-harness` — all confirmed never to have existed in git history) → repointed to `concepts/system-one-models`, `entities/typesafe-ai`, `concepts/pydantic-ai`, `concepts/harness-engineering/agent-harness`.
+- **Cross-link gap closed**: `concepts/system-one-models.md` and `entities/typesafe-ai.md` did not cross-reference Parallel Web Systems despite ingesting its testing-Jev article; added bidirectional links.
+- **Index**: updated `entities/parallel-web-systems` description to mention the Jev eval. Page count unchanged (no new pages).
+- **Skipped**: unrelated uncommitted skill-file modifications (`config/hermes/skills/**`) — not this job's scope.
 ## [2026-09-20] wiki-health-fix | auto-fix run
 
 - Index corruption scan clean: 0 pipe-prefix, 0 line-number, 0 triple-bracket, 0 space-prefix issues; 0 ghost entries (recursive scan).

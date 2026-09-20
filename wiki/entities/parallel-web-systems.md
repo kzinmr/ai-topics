@@ -14,8 +14,9 @@ tags:
   - search
   - infrastructure
   - security
-sources: []
-updated: 2026-07-10
+sources:
+  - raw/articles/2026-09-19_parallel-web-systems_testing-jev.md
+updated: 2026-09-20
 ---
 # Parallel Web Systems Inc.
 
@@ -53,8 +54,26 @@ Proprietary web-scale index (billions of pages, millions added daily). Returns d
 - **GDPR** compliant
 - Status page: https://trust.parallel.ai/
 
+## Jev (System One model) evaluation — Sept 2026
+
+Parallel ran an independent, adversarial-by-intent evaluation of [[entities/typesafe-ai|TypeSafe AI]]'s **Jev** — a [[concepts/system-one-models|System One model]] that returns categories/scores/probabilities instead of text (BERT-with-a-classification-head, but labels specified at request time, no per-task fine-tune). They tested it against the fine-tuned rerankers/classifiers they run "billions of times a day":
+
+| Task | What it tests | Jev vs. internal systems |
+|---|---|---|
+| Search reranking | Query–document relevance | **NDCG@10 0.7 — comparable** to at least one custom reranker; competitive latency vs. larger models |
+| Topic classification | Choosing from a large label set | Internal "wins" — large label set was a weakness |
+| Query freshness classification | Whether a query needs recent info | Internal "wins" — suspected out-of-distribution for Jev |
+
+Key nuance: Jev had **materially higher cost per document**, but Parallel owns its inference
+infrastructure and has economies of scale — "for teams without that infrastructure or scale,
+Jev is much more likely to be cost competitive once serving costs are included." Their
+verdict: if you don't already have a trained classifier, Jev is a strong zero-shot starting
+point that lets you skip model selection, training, hosting, and scaling. This is one of the
+most substantive independent reproductions of the Jev hype — an eval-driven one, not inbox-organization hype. ^[raw/articles/2026-09-19_parallel-web-systems_testing-jev.md]
+
 ## Key Articles
 
+- [Testing out Jev: real-world developer experience](https://parallel.ai/blog/testing-jev) (2026-09-18)
 - [Bing API alternatives: top solutions for 2026](https://parallel.ai/articles/bing-api-comparison) (2026-02-16)
 - [The best Google Alerts alternatives in 2026](https://parallel.ai/articles/the-best-google-alerts-alternatives-in-2026-including-one-built-for-developers) (2026-04-17)
 - [How to automate competitor analysis with AI agents](https://parallel.ai/articles/how-to-automate-competitor-analysis-with-ai-agents) (2026-04-17)

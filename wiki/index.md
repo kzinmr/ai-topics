@@ -649,7 +649,7 @@
 - [[entities/overreacted-io]] — Dan Abramov; resilient component design principles (Writing Resilient Components), Lean Syntax Primer & formal verification exploration (2026)
 - [[entities/palantir]] — Palantir Technologies
 - [[entities/palo-alto-networks]] — Palo Alto Networks — Global cybersecurity leader; Prisma AIRS AI Security Platform; Portkey acquisition (Apr 2026) establishes AI Gateway control plane for agents
-- [[entities/parallel-web-systems]] — Parallel Web Systems Inc.
+- [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — Search/Extract/Monitor APIs for AI agents; ran an independent eval of Jev (System One model) vs. production rerankers (Sep 2026)
 - [[entities/parchi]] — Parchi — AI browser copilot extension by 0xSero (MIT); #6 harness for local models; maintenance mode since Apr 2026
 - [[entities/parsagon]] — Parsagon
 - [[entities/paul-hoekstra]] — Paul Hoekstra — Agentic Engineering 4-layer framework, Context Rot mechanistic explanation (Paul's Pipeline)
