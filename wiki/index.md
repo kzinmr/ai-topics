@@ -2876,7 +2876,7 @@
 - [[concepts/synth]] — SYNTH
 - [[concepts/synthetic-data]] — synthetic-data
 - [[concepts/synthetic-research-interns]] — Synthetic Research Interns
-- [[concepts/system-one-models]] — System One Models — models that only *decide* (classify/route/score, 24-token structured output), never converse; Jev/TypeSafe coined Sep 2026, 6 clones in 2 days, "System 2 model as a service" counter-model
+- [[concepts/system-one-models]] — System One Models — models that only *decide* (classify/route/score, 24-token structured output), never converse; Jev/TypeSafe coined Sep 2026, 6 clones in 2 days incl. ekzhang's production-grade openjev-sglang (Qwen+SGLang), "System 2 model as a service" counter-model
 - [[concepts/synthid]] — SynthID; Google Earth AI satellite image retraction case (Jul 2026): SynthID fails on smartphone-photo/screenshot re-encoding, 10/day check limit
 - [[concepts/system-prompt-learning]] — System Prompt Learning
 - [[concepts/systems-programming]] — Systems Programming

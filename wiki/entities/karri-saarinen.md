@@ -2,7 +2,7 @@
 title: Karri Saarinen
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-09-21 22:50:00
 tags:
   - person
   - company
@@ -177,5 +177,6 @@ Karri (@karrisaarinen) shares on X/Twitter:
 - **Startup lessons** — Insights from building Linear, Airbnb, and Coinbase
 - **Community building** — Rails Girls updates, design community engagement
 - **Industry commentary** — Opinions on productivity software, developer tools, and the future of work
+- **Game-design appreciation** (Sep 18, 2026): praised the WoW Forever "Found Photographs" panel at BlizzCon ([video](https://youtu.be/mjatY0viClA)), observing that "a lot more thought goes into making these games feel like coherent experiences than goes into many software products" — consistent with his "Your Product Needs a Soul" thesis on coherence and craft.
 
 His posting style is **measured, thoughtful, and design-literate** — he rarely posts hype or takes, preferring to share substantive reflections on craft, product strategy, and the intersection of design and technology.

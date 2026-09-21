@@ -5873,3 +5873,13 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 ## [2026-09-20] report | Discord hot-post (night slot 21:30 JST)
 - Topic: verbal confidence as a trust signal is empirically worthless — triangulated from [[concepts/evaluation/agent-overclaiming]] (OverclaimBench: 67.9% incomplete coverage, 80.4% misleading, 1.8x defect-miss), [[concepts/coding-agent-harness-design-study]] (no universal harness; model/budget-conditional), [[concepts/agent-human-oversight-failure]] (ScaleX ~33% dangerous-action approval). Reflective/contrarian angle per night guidance; no day-recap.
 - Fresh wikilinks vs prior slots (09-18 late-night reward-hacking cluster, 09-17 verification-economics); dedup.recently_covered_topics empty. No content changes; report-only.
+
+## [2026-09-21 22:50] ingest | x-accounts-scan (2026-09-21)
+- Source: x-accounts scan - 6 new posts across 4 accounts (ekzhang1 x2, softwaredoug x2, quixiai, karrisaarinen); 1 error (koylanai: user_id unresolved).
+- NEW raw/articles/2026-09-21_github_ekzhang-openjev-sglang - Eric Zhang open-model Jev clone (Qwen3.6-35B-A3B + SGLang 0.5.19, prefill-only, Modal/B200).
+- UPDATE entities/eric-zhang - Recent Notes: openjev-sglang + $5 Tinker SFT (+8% GPQA-D, +12% MMLU-Pro), Kev comparison.
+- UPDATE concepts/system-one-models - new "Community clones: openjev-sglang" section + source.
+- UPDATE entities/doug-turnbull - Cheat at Search price $1,300 to $1,450 (2026-09-21).
+- UPDATE entities/doug-turnbull-speaking - Retrieval Augmented Gathering talks (telemetry-to-corpus via TPuf, with aHev).
+- UPDATE entities/karri-saarinen - X Activity Themes note: BlizzCon WoW panel / game-coherence observation.
+- Skipped: quixiai reply linking withlang.org (non-AI systems language).

@@ -2,7 +2,7 @@
 title: Eric Zhang
 type: entity
 created: 2025-11-17 16:10:46
-updated: 2026-09-07
+updated: 2026-09-21 22:50:00
 aliases: [ekzhang, Eric Zhang]
 status: active
 description: "Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab."
@@ -180,6 +180,18 @@ Photorealistic path tracer for rendering 3D scenes. Won top project out of 100 s
 
 ## Recent Notes
 
+- **openjev-sglang: open-model Jev clone on SGLang (Sep 20–21, 2026):** shipped
+  [ekzhang/openjev-sglang](https://github.com/ekzhang/openjev-sglang), a server
+  implementing the TypeSafe/Jev HTTP API with Qwen3.6-35B-A3B on SGLang 0.5.19
+  (Rust frontend, radix caching, breakable prefill CUDA graphs), deployed on Modal
+  with B200 containers. Inference is prefill-only: N+1 one-token calls read answer
+  labels off logits via `token_ids_logprob`, with a radix-cache-warming prefix call.
+  Also ran a $5 / 10-minute SFT on Tinker to make Qwen respond better to Jev-style
+  prompts, claiming +8% on GPQA Diamond and +12% on MMLU-Pro, and benchmarked
+  @jaredpalmer's Kev for comparison. Explicitly flagged that SGLang RadixAttention
+  batching is assumed but unverified. See
+  [[concepts/system-one-models]] and
+  [[raw/articles/2026-09-21_github_ekzhang-openjev-sglang]].
 - **jax-js maturity (Sep 4, 2026):** told @JesseMMichel that jax-js is "very ready,"
   supporting broader coverage than TensorFlow.js and running "quite a bit faster";
   also highlighted a differentiable programming-languages demo (Fluent by mlajtos).

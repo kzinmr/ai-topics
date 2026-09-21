@@ -3,7 +3,7 @@ title: Doug Turnbull - Speaking & Community
 type: entity-sub
 parent: doug-turnbull
 created: 2026-04-10
-updated: 2026-06-05
+updated: 2026-09-21 22:50:00
 tags:
   - person
   - writing
@@ -22,6 +22,8 @@ sources:
 ## Conference Talks
 
 Turnbull is a regular speaker at search industry conferences:
+
+- **"Telemetry as a corpus with TPuf" — Retrieval Augmented Gathering (Sep 21, 2026, Maven event)**: Turnbull and aHev each gave talks on turning your telemetry into a corpus using TPuf, at the Maven "RAG: Retrieval Augmented Gathering" live event (https://maven.com/lls/f27953). Announced via X alongside the same-day price hike of his flagship course.
 
 - **\\\\\\\"Lexical Search & BM25\\\\\\\" — Cheat at Search Essentials** (May 2026, Maven course): Live training course on the fundamentals of lexical search. Covers tokenization (whitespace → intelligent tokenizers with stemming/synonyms/entities), query processing (AND/OR matching, Elasticsearch DSLs), scoring evolution (TF → TF\\*IDF → BM25), multi-field search (naive sum vs. DisMax), BM25 parameters (k1 saturation, b length bias), and BM25F for combining fields. Key insight: \\\"BM25 ≈ Relevance Given Match\\\" — and agents handle the semantics when matching fails. Course discount code: `bm25rocks`. Uses [[entities/jxmo|searcharray]] educational library. [[raw/articles/2026-05-13_softwaredoug_lexical-search-bm25]]
 

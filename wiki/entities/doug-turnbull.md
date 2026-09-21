@@ -2,7 +2,7 @@
 title: Doug Turnbull
 type: entity
 created: 2026-04-10
-updated: 2026-09-07
+updated: 2026-09-21 22:50:00
 tags:
   - person
   - developer-tooling
@@ -248,7 +248,7 @@ Open-source plugin enabling machine learning-based ranking within Elasticsearch.
 Pandas extension array for BM25-powered lexical search. 304 stars. Makes search relevance experiments possible in a single Colab notebook without standing up a search engine. Includes Cython-optimized phrase search with roaring-like bitmap intersections.
 
 ### Cheat at Search (Maven Course)
-Live, cohort-based training course on search engineering with LLMs and agents. Rated 4.7/5 from 74+ reviews. Covers information retrieval as an agentic process, LLM query understanding, BM25 + lexical retrieval, embedding retrieval, hybrid search, evaluation/NDCG, and agentic search. Priced at $1,300 per student with free "Essentials" lightning lessons available.
+Live, cohort-based training course on search engineering with LLMs and agents. Rated 4.7/5 from 74+ reviews. Covers information retrieval as an agentic process, LLM query understanding, BM25 + lexical retrieval, embedding retrieval, hybrid search, evaluation/NDCG, and agentic search. Pricing rose from $1,300 to $1,450 per student on 2026-09-21 (announced by Turnbull on X); free "Essentials" lightning lessons remain available.
 
 #### Lecture Transcripts (wiki)
 - [[transcripts/2026-05-20_softwaredoug_cheat-at-search-llm-query-understanding-lecture|Lesson 2: LLM Query Understanding]]

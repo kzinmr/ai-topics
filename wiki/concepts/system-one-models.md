@@ -1,7 +1,7 @@
 ---
 title: "System One Models (Fast Structured-Decision LLMs)"
 created: 2026-09-20
-updated: 2026-09-21
+updated: 2026-09-21 22:50:00
 type: concept
 tags: [model, structured-outputs, inference-speed, classifiers, model-routing, token-economics, small-models, decision-centric, probabilistic, real-time, sgnt, jev, ai-industry-economics]
 sources:
@@ -10,6 +10,7 @@ sources:
   - raw/articles/seangoedecke.com--two-techniques-for-working-with-system-one-models--78f4cc6a.md
   - raw/newsletters/2026-09-19-ainews-here-are-6-clones-of-jev-in-2-days.md
   - raw/articles/2026-09-19_parallel-web-systems_testing-jev.md
+  - raw/articles/2026-09-21_github_ekzhang-openjev-sglang.md
 confidence: medium
 ---
 
@@ -69,6 +70,10 @@ Three days after launch the clone wave turned into a **toolkit wave**: Jared Pal
 - Does RLCD calibration survive outside TypeSafe's own workflow evals (whose reference answers are the average of Astra + Fable, biasing toward OpenAI/Anthropic)?
 - Will "System One" become a lab SKU (Terra/Haiku fast-decision variants), or stay a community retrofit pattern?
 - Can tiered-goal loops push the class past narrow reactive tasks into genuinely agentic control?
+
+## Community clones: openjev-sglang (2026-09-21)
+
+Eric Zhang ([[entities/eric-zhang|Eric Zhang]], Thinking Machines Lab) shipped **openjev-sglang** — the Jev HTTP API reimplemented on **Qwen3.6-35B-A3B + SGLang 0.5.19** (Rust frontend, radix caching, breakable prefill CUDA graphs), deployed on Modal with B200 containers. The engineering is exactly Goedecke's prescription executed at production grade: prefill-only inference, **N+1 one-token calls** for N questions (one radix-cache-warming prefix call plus concurrent per-question branches reading answer-label logprobs via `token_ids_logprob`), and single-token answer labels A–Z/AA–AZ verified against the tokenizer so 64-way classification stays an exact one-token readout. Zhang also ran a **$5 / 10-minute SFT on Tinker** to make Qwen respond better to Jev-style prompts, claiming +8% GPQA Diamond and +12% MMLU-Pro, and evaled Jared Palmer's Kev for comparison. Caveats he flags himself: radix reuse is opportunistic (hybrid Qwen's recurrent state can reduce hits) and SGLang's RadixAttention batching is assumed but unverified. This is the strongest engineering demonstration yet that the Jev contract is a *retrofit* on any open model with logits access — supporting the "interface, not architecture" thesis. Source: [[raw/articles/2026-09-21_github_ekzhang-openjev-sglang]].
 
 ## Related
 - [[entities/typesafe-ai|TypeSafe AI]] — the lab behind Jev
