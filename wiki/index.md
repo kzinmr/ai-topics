@@ -1,11 +1,12 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3071
-> Last updated: 2026-09-20 
+> Total pages: 3086
+> Last updated: 2026-09-21
 
-## Entities (930 pages)
+## Entities (931 pages)
 
+- [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
@@ -937,8 +938,9 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2065 pages)
+## Concepts (2080 pages)
 
+- [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
 - [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)
@@ -968,6 +970,9 @@
 - [[concepts/agent-documentation]] — agent-documentation
 - [[concepts/agent-driven-ranker-optimization]] — Agent-Driven Ranker Optimization
 - [[concepts/agent-economics]] — Agent Economics
+- [[concepts/claude-code/_index]] — Claude Code — Concepts hub: Claude Code sub-pages index
+- [[concepts/codex/_index]] — OpenAI Codex — Concepts hub: Codex sub-pages index
+- [[concepts/coding-agents/_index]] — Coding Agents — Concepts hub for coding-agent sub-pages (Cursor, Devin, SWE agents, …)
 - [[concepts/economic-world-models]] — Economic World Models (EWM) — six-level ladder from rule-based agent worlds to sim-to-real economic twins; survey finds work stuck at lower levels (arXiv, Aug 2026)
 - [[concepts/decentralized-agent-orchestration]] — Decentralized Agent Orchestration (Markets vs. Planners) — AgentLance (VCG labor markets for agent allocation) and Economy of Minds (Hayekian auction economies); central planners bottleneck, leak private info, and are manipulable (arXiv, Jun–Aug 2026)
 - [[concepts/economic-agent-benchmarks]] — Economic Agent Benchmarks — Vending-Bench → EcoGym → CoffeeBench lineage; running a business over months as the long-horizon coherence test; no model dominates, idle-drift failure mode (arXiv, 2025–2026)
@@ -1054,6 +1059,7 @@
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Databricks coding agent benchmark — real-world evaluation of coding agents on production codebases
 - [[concepts/diffusion-language-models]] — Diffusion Language Models — Non-autoregressive text generation via iterative denoising; Mercury, LLaDA, Consistency Diffusion LMs; 10-14x faster inference
 - [[concepts/claude/fable-safety-classifiers-critique]] — Claude Fable 5 safety classifiers critique — overzealous classifiers make Fable unusable for CS research
+- [[concepts/evaluation/_index]] — AI Evaluation — Concepts hub for evaluation/evals sub-pages
 - [[concepts/fli-ai-safety-index]] — FLI AI Safety Index — Future of Life Institute periodic evaluation grading AI companies on safety/security practices across 6 domains, 37 indicators; Summer 2026: Anthropic C+, OpenAI C, DeepSeek F
 - [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
 - [[concepts/flux-video-action-models]] — Video-Action Models (VAMs) — From Media Generation to Physical AI — FLUX 3 x mimic architecture; Self-Flow unified multimodal training; video pre-training transfers to robot control; dexterous manipulation at Audi; comparison with RT-2, Octo, π0 (July 2026)
@@ -1061,16 +1067,25 @@
 - [[concepts/glm-5-3-flash]] — GLM-5.3-Flash — Z.ai open-weights frontier model (Aug 2026)
 - [[concepts/gpt-live]] — GPT-Live — OpenAI full-duplex real-time voice interaction mode (July 2026)
 - [[concepts/gpt-red]] — GPT-Red — OpenAI's automated LLM red-teaming system using self-play to discover prompt injection attacks (84% vs 13% human)
+- [[concepts/harness-engineering/agentic-workflows/_index]] — Agentic Workflows — Developer workflows under harness engineering (sub-pages hub)
+- [[concepts/harness-engineering/system-architecture/_index]] — System Architecture — System design under harness engineering (sub-pages hub)
 - [[concepts/inference-provisioned-throughput]] — Provisioned Throughput — reserved inference capacity for open-weight models with token pricing and 99% SLA (Together AI, July 2026)
 - [[concepts/jepa-world-models]] — JEPA World Models — Joint Embedding Predictive Architecture for world models (LeCun, LeMario)
 - [[concepts/juggler]] — Juggler — Open-source GUI coding agent by JUCE creator Julian Storer
 - [[concepts/lingbot-world-infinity]] — LingBot-World-Infinity — Open-source world model with 60-minute coherent rollouts from Tsinghua THU-KING-NIC-Lab
 - [[concepts/llm-idea-convergence]] — LLM Idea Convergence — parallel/independent invention of the same LLM tooling ideas across the ecosystem
+- [[concepts/local-llm/_index]] — Local LLM Ecosystem — Concepts hub for local-LLM sub-pages (Ollama, llama.cpp ecosystem, …)
 - [[concepts/materialized-agent-memory]] — Materialized Agent Memory — Datalog-backed truth-maintenance for long-horizon agents; incremental invalidation of derived beliefs (pwning.systems, Aug 2026)
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
 - [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
 - [[concepts/model-hardware-standard]] — Model Hardware Standard (MHS) — Anthropic spec for AI agents operating lab/manufacturing hardware; MCP-accessible, open-source planned (Aug 2026)
+- [[concepts/multi-agents/_index]] — Agent Team / Swarm — Concepts hub for multi-agent sub-pages
+- [[concepts/openclaw/_index]] — OpenClaw — Concepts hub for OpenClaw sub-pages
+- [[concepts/post-training/_index]] — Post-Training — Concepts hub for post-training sub-pages (RLHF, distillation, …)
+- [[concepts/security-and-governance/_index]] — Agent Security and Governance — Concepts hub for security/governance sub-pages
 - [[concepts/station-autonomous-math-discovery]] — Station — Decentralized multi-agent mathematical discovery; 5 literature-novel results on AlphaEvolve catalogue problems (arXiv:2608.23691)
+- [[concepts/system-architecture/_index]] — System Architecture — Concepts hub (overview)
+- [[concepts/training-infra/_index]] — AI Infrastructure Engineering — Concepts hub for training-infra sub-pages
 - [[concepts/waymo-effect-research-collaboration]] — Deployment field sites as research environments; lab/field role blurring (Waymo Effect)
 - [[concepts/webmcp-protocol]] — WebMCP Protocol — Web standard for agent tool discovery (Aug 2026)
 - [[concepts/vm-containment-ai-agents]] — VM Containment of Cyber-Capable AI Agents — Trail of Bits research (Aug 2026)
@@ -1260,7 +1275,7 @@
 - [[concepts/ai-native-state-management]] — Comprehensive overview of state categories, data flow patterns, and architectural decisions in AI-native full-stack a...
 - [[concepts/ai-observability]] — AI Observability — Monitoring and Debugging LLM Applications
 - [[concepts/ai-operating-model]] — AI Operating Model
-- [[concepts/ai-organization]] — AI Organization explores how human organizations transform when AI agents gain autonomous execution capabilities — fr...
+- [[concepts/ai-organization]] → [[concepts/ai-organization/_index]] — AI Organization explores how human organizations transform when AI agents gain autonomous execution capabilities — fr...
 - [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context — Organizational Governance and the Diamond Org Chart in the AI Era
 - [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Hierarchy to Intelligence — Block's Organizational Model Transformation
 - [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC — A New Way of Working in the AI Era
@@ -1972,7 +1987,7 @@
 - [[concepts/hanna-hajishirzi]] — hanna-hajishirzi
 - [[concepts/harness-commoditization]] — Harness Commoditization
 - [[concepts/harness-design-long-running-apps]] — Harness Design for Long-Running Apps — Anthropic's Multi-Agent Architecture
-- [[concepts/harness-engineering]] — The practice of building evaluation and constraint systems around LLMs for production reliability. Includes productio...; "Distribution as Agent-Consumable Context" — lopopolo harness-engineering GitHub "agent context bundle" (Aug 27)
+- [[concepts/harness-engineering]] → [[concepts/harness-engineering/_index]] — The practice of building evaluation and constraint systems around LLMs for production reliability. Includes productio...; "Distribution as Agent-Consumable Context" — lopopolo harness-engineering GitHub "agent context bundle" (Aug 27)
 - [[concepts/harness-engineering/agent-architecture-decomposition]] — Agent Architecture Decomposition: Model / Runtime / Harness
 - [[concepts/harness-engineering/agent-client-protocol]] — Agent Client Protocol (ACP)
 - [[concepts/harness-engineering/agent-design-patterns]] — Agent Design Patterns
@@ -2087,7 +2102,7 @@
 - [[concepts/in-process-sandbox]] — In-Process Sandbox
 - [[concepts/index-share]] — IndexShare
 - [[concepts/industrial-scale-distillation-attacks-accusation]] — Industrial-Scale Distillation Attacks Accusation
-- [[concepts/inference]] — Inference — LLM inference engine comparison; vLLM, SGLang, TGI, llama.cpp, and their trade-offs
+- [[concepts/inference]] → [[concepts/inference/_index]] — Inference — LLM inference engine comparison; vLLM, SGLang, TGI, llama.cpp, and their trade-offs
 - [[concepts/inference-engine-security]] — Inference-Engine Security — LLM self-host exploitation surface
 - [[concepts/inference-hardware]] — Inference Hardware
 - [[concepts/inference-speed-development]] — Inference Speed Development
@@ -2373,7 +2388,7 @@
 - [[concepts/multi-teacher-on-policy-distillation]] — Multi-Teacher On-Policy Distillation (MOPD)
 - [[concepts/multi-token-prediction]] — Multi-Token Prediction (MTP) Drafters
 - [[concepts/multi-token-residual-prediction]] — Multi-Token Residual Prediction (MRP) — DLM inference optimization via inter-step logit residual prediction; 1.56× lossless throughput (SGLang), +16 accuracy points at aggressive thresholds; Modal × NYU Shanghai HeavyBall Research (July 2 🆕)
-- [[concepts/multimodal]] — Multimodal AI
+- [[concepts/multimodal]] → [[concepts/multimodal/_index]] — Multimodal AI
 - [[concepts/multimodal-vision-audio-cross-modal]] — Multimodal Vision Audio Cross Modal
 - [[concepts/multipath-reliable-connection]] — Multipath Reliable Connection (MRC)
 - [[concepts/multiple-representations-rag]] — Multiple Representations RAG
@@ -2702,7 +2717,7 @@
 - [[concepts/spade-self-play-environments]] — SPADE: Self-Play in Adaptive Synthetic Executable Environments — single LLM writes executable training environments (Gym-style) + reasons in them; self-play RL for language agents; arXiv:2608.19197 (Aug 19, 2026)
 - [[concepts/sampling-strategies]] — Sampling Strategies
 - [[concepts/sana-vm]] — SANA-WM
-- [[concepts/sandbox]]
+- [[concepts/sandbox]] → [[concepts/sandbox/_index]]
 - [[concepts/sandbox/git-worktrees-agent-isolation]] — Git Worktrees as Agent Isolation Boundary — shared hooks/config/stash/refs enable hook injection and config rewriting; local clones with hardlinks provide isolation at identical cost (July 2026)
 - [[concepts/sandbox/in-process]] — In-Process Sandbox
 - [[concepts/sandbox/infrastructure]] — Infrastructure-Level Sandbox
@@ -2824,7 +2839,7 @@
 - [[concepts/spec-driven-development]] — Spec-Driven Development
 - [[concepts/speculative-decoding]] — Speculative Decoding — Accelerating LLM inference by using draft models to predict multiple tokens per forward pass
 - [[concepts/speculative-decoding-mtp]] — Speculative decoding and Multi-Token Prediction (MTP) techniques that accelerate LLM inference by using a smaller dra...
-- [[concepts/speech]] — Speech AI
+- [[concepts/speech]] → [[concepts/speech/_index]] — Speech AI
 - [[concepts/speech-audio-asr-tts-voice]] — Speech Audio Asr Tts Voice
 - [[concepts/speech/whisper]] — Whisper — OpenAI's Speech Recognition Model
 - [[concepts/speed-as-scaling-law]] — Speed as a Scaling Law

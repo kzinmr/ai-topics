@@ -1,3 +1,12 @@
+## [2026-09-21] health-fix | auto-fix run — 13 _index.md hubs registered, 0 ghosts, 0 corruption
+
+- **Phase 1 (index corruption):** pipe/line-number/triple-bracket/space-prefix all 0. No fixes needed. `validate_index.py` exit 0.
+- **Phase 2 (ghost entries):** all 2859 index wikilinks verified against filesystem (recursive, `_index`→dir resolution) — **0 ghosts**.
+- **Phase 2 (orphan registration):** registered **13** subdirectory hub pages in index.md under Concepts (all 21 `_index.md` hubs already indexed; 2 archived `gpt/_archive/*` skipped by design; `concepts/_index` + `entities/_index` are top-level files whose content IS the index → by-design exclusions). Added: ai-organization, claude-code, codex, coding-agents, evaluation, harness-engineering, harness-engineering/agentic-workflows, harness-engineering/system-architecture, inference, local-llm, multi-agents, openclaw, post-training.
+- **Index counts corrected:** Concepts 2067→2080, Entities 930→931, Total 3071→3086 (recomputed from filesystem per known header-decay pattern).
+- **Reported "23 orphans"** → 13 fixable (applied), 10 by-design (2 archive + 2 top-level _index + 6 already-indexed hubs at report time... verified live).
+- Unchanged (report-only): stale pages 2818, unprocessed raw articles 5959.
+
 ## [2026-09-21] watchdog | auto-fix run — 0 fixes, pipeline verified healthy
 
 - **Pipeline alert `x_accounts stale(26h)` — false positive (3rd recurrence).** Schedule is `30 22 */2 * *` (every-other-day at 22:30 UTC). Last successful run 2026-09-19 22:30 UTC (state cursor=46, output `x_accounts_latest_full.json` written). Next fire 2026-09-21 22:30 UTC, which is exactly the expected cadence. Same misread as 2026-09-09 and 2026-09-13 sessions: watchdog reads the cron `*/2` day-of-month field as "daily". No action needed.
