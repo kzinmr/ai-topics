@@ -1,3 +1,15 @@
+## [2026-09-21] watchdog | auto-fix run — 0 fixes, pipeline verified healthy
+
+- **Pipeline alert `x_accounts stale(26h)` — false positive (3rd recurrence).** Schedule is `30 22 */2 * *` (every-other-day at 22:30 UTC). Last successful run 2026-09-19 22:30 UTC (state cursor=46, output `x_accounts_latest_full.json` written). Next fire 2026-09-21 22:30 UTC, which is exactly the expected cadence. Same misread as 2026-09-09 and 2026-09-13 sessions: watchdog reads the cron `*/2` day-of-month field as "daily". No action needed.
+- **Live wiki health** (`wiki_health.py --json`): entities 931, concepts 2088, comparisons 35, L2 total 3,054, raw articles 9,796, skeleton entities 0, page-name violations 0.
+- **Orphans reported: 23 → 23 false positives.** All 23 are `_index.md` hub files (scanner strips the `.md` suffix so file-existence checks fail) plus 2 archived `concepts/gpt/_archive/*` entries. Hubs verified on disk (`concepts/_index.md`, `entities/_index.md`, `concepts/inference/_index.md`, …) and indexed (12 index refs to `concepts/inference` alone). Zero real orphans.
+- **index.md**: `validate_index.py` clean (3,092 lines); pipe-prefix=0, line-number-prefix=0, triple-bracket=0. 3,082 wikilinks. No auto-fix needed.
+- **log.md**: 454 entries (rotation threshold 500 — monitor next week). No corruption; newest entries prepend-style at top but no duplicate/orphan `###` headers found.
+- **Graph analysis**: weekly report from 2026-09-18 (74h old, next Friday run due). Its open items (8 duplicate groups, missing `_index` hubs — actually verified present, 919 raw-wikilink policy decision, 1,280 wrong-namespace links) exceed auto-fix scope → carried to human review as before.
+- **Working tree**: sibling pipelines have ~20 uncommitted raw articles (glean, simonwillison, etc.) + skill edits — deliberately NOT committed by this job (own-changes-only policy).
+
+**Verdict: pipeline healthy, no auto-fixes applied.** Recommendation unchanged: add every-other-day schedule awareness to the watchdog stale alert (or silence x_accounts staleness when `x_accounts_scan_state.json` updated_at ≤ 48h).
+
 ## [2026-09-20] skeleton-enrich-daily: no `status: skeleton` pages found; committed WIP Jev-wave enrichment
 
 - **Scan**: `grep -rl "status: skeleton" wiki/entities/` returned 0 matches — the skeleton backlog is currently empty (skeleton-enrich-daily cron has been keeping up).
