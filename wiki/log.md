@@ -67,6 +67,12 @@
 
 # Wiki Log
 
+## [2026-09-21] update | System One Models — Kev ecosystem section
+- Updated concepts/system-one-models.md: new §Kev (Jared Palmer's Jev-like family on dQwen3.5, HN 49783999), Jev-Leftpad (49784706), Jevchat "lousy chatbot" demo (49778162), CUA-S1 (49767564); added open question re RLCD-free distillation lineage; bumped updated date.
+- Annotated raw/newsletters AINews Jev-clones digest with later-development note (append-only).
+- Trending-topics report saved to inbox/rss-scans/trending-topics-2026-09-21.md (7 topics: Jev/Kev wave, Qwen Image 2.1, Google AX orchestrator, Exfiltrate Your Weights, Samsung HBM4, MCP-is-bad-idea, Pirate Face model preservation, Terry Tao mathematicians).
+
+
 ## [2026-09-16] auto-fix | wiki-health-fix — index header recount, corruption scan clean
 
 ## [2026-09-16] skeleton-enrich: redirect 8 duplicate stub concept pages

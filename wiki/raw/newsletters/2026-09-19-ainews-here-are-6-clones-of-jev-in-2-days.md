@@ -92,3 +92,5 @@ tags: [newsletter, raw]
 
 - **URL:** https://substack.com/redirect/8f69654f-6f55-493d-bd96-b8274ed3eced?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
 
+> [!note] Later development (2026-09-21, not in original digest)
+> The clone wave continued: Kev (Jared Palmer, built on dQwen3.5), Jev-Leftpad, Jevchat, CUA-S1. See [[concepts/system-one-models]] §Kev.

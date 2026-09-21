@@ -1,7 +1,7 @@
 ---
 title: "System One Models (Fast Structured-Decision LLMs)"
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-21
 type: concept
 tags: [model, structured-outputs, inference-speed, classifiers, model-routing, token-economics, small-models, decision-centric, probabilistic, real-time, sgnt, jev, ai-industry-economics]
 sources:
@@ -53,6 +53,10 @@ Within two days of the 2026-09-15 launch, **6 Jev clones** appeared (AINews, 202
 
 The most substantive independent test is Parallel Web Systems' eval against rerankers they run "billions of times a day": Jev hit **NDCG@10 0.7 on search reranking — comparable to one of their custom rerankers**, with competitive latency, but lost to internal models on topic classification (large label set) and query-freshness classification (out-of-distribution). Jev's per-document cost was higher, though Parallel noted it likely becomes cost-competitive for teams without their own inference infra. Verdict: a strong zero-shot starting point when you don't already have a trained classifier. See [[entities/parallel-web-systems|Parallel Web Systems]] for the full table.
 
+## Kev: the ecosystem test (2026-09-21)
+
+Three days after launch the clone wave turned into a **toolkit wave**: Jared Palmer published **Kev** — a tiny family of Jev-like decision models fine-tuned on top of [[entities/dqwen3-5|dQwen3.5]] (hybrid attention-diffusion) — hitting HN's front page (156 pts, [item 49783999](https://news.ycombinator.com/item?id=49783999)). Two smaller spins followed the same day: **Jev-Leftpad** (97 pts, [item 49784706](https://news.ycombinator.com/item?id=49784706)) and a Jev-as-chatbot demo that its author admits is "lousy" (150 pts, [item 49778162](https://news.ycombinator.com/item?id=49778162)) — the latter being direct empirical confirmation of the "conversing is out of scope" boundary above. CUA-S1 ([item 49767564](https://news.ycombinator.com/item?id=49767564)) extended the System One idea to computer-use action selection. The 72-hour arc — stealth launch → 6 clones → a fine-tunable open family — matches the "interface, not architecture, is the durable artifact" thesis: value is consolidating around the decision-interface convention, not any single model.
+
 ## What it is *not*
 
 - **Not a new scaling axis.** Losing test-time compute caps the class near non-reasoning LLM strength. Goedecke: don't treat it as a route to *smarter* models — it trades ceiling intelligence for latency/consistency.
@@ -61,6 +65,7 @@ The most substantive independent test is Parallel Web Systems' eval against rera
 
 ## Open questions
 
+- Did the Kev/dQwen3.5 fine-tune lineage generalize System One beyond TypeSafe's training recipe (RLCD-free distillation)?
 - Does RLCD calibration survive outside TypeSafe's own workflow evals (whose reference answers are the average of Astra + Fable, biasing toward OpenAI/Anthropic)?
 - Will "System One" become a lab SKU (Terra/Haiku fast-decision variants), or stay a community retrofit pattern?
 - Can tiered-goal loops push the class past narrow reactive tasks into genuinely agentic control?
