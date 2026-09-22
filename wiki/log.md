@@ -5898,3 +5898,8 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Created: concepts/lifelong-agent-memory.md (LifeMem; environment-centric workflows, LifelongGym/9Lifespan)
 - Updated: concepts/ai-energy.md (new "Behind-The-Meter Power as the Escape Hatch" section; +source, +updated date)
 - Updated: index.md (+2 pages, count 3086 -> 3088)
+
+## [2026-09-22] report | Discord hot-post (night slot 21:30 JST)
+- Topic: "スキルは環境に依存する — portable agent memory は存在しないかもしれない" — contrarian synthesis of the two 09-22 ingest papers: arXiv:2609.09233 (SKILL.md vs subagents effect "depends on the agent system + environment", no universal winner) × LifeMem arXiv:2609.12655 (memory indexed by environment dynamics, not procedure structure). Night-slot contrarian angle: the hype is self-evolving libraries; the data says library *format* is harness-conditional.
+- Wikilinks used (primary): [[concepts/skill-library]], [[concepts/lifelong-agent-memory]] (both fresh, created 2026-09-22 active-crawl). Supporting: [[concepts/agent-skills-skillmd]], [[concepts/coding-agent-harness-design-study]], [[concepts/harness-engineering]]. No primary overlap with 09-22 morning (system-one-models/eric-zhang/dqwen3-5/parallel-web-systems) or 09-20 night (agent-overclaiming/harness-design/oversight cluster). dedup.recently_covered_topics empty. Report-only; no content changes.
+
