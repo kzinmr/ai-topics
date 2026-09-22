@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3086
-> Last updated: 2026-09-21
+> Total pages: 3088
+> Last updated: 2026-09-22
 
 ## Entities (931 pages)
 
@@ -1635,6 +1635,7 @@
 - [[concepts/contextual-retrieval]] — Contextual Retrieval
 - [[concepts/continual-harness]] — Continual Harness
 - [[concepts/continual-learning]] — Continual Learning; enriched with Advanced Frameworks (Dwarkesh Patel) — RLVR generalization limits, OPSD (On-Policy Self-Distillation), Dreaming as 4th scaling axis, KV cache vs weight density (35M×), 2027 vision (June 27)
+- [[concepts/lifelong-agent-memory]] — Lifelong Agent Memory — experience reuse without catastrophic forgetting; LifeMem environment-centric workflows (arXiv:2609.12655), Sep 2026
 - [[concepts/corbett-kyle-corbitt]] — Corbett (Kyle Corbitt)
 - [[concepts/cpu-inference-llm]] — CPU Inference for LLMs — Running LLMs on consumer/edge CPUs via quantization (llama.cpp, ZSE, Ollama); cost efficiency and privacy trade-offs vs GPU/cloud
 - [[concepts/craft-agents]] — Craft Agents
@@ -2806,6 +2807,7 @@
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP)
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/skill-graph]] — Skill Graph — Interconnected Markdown Files as an AI Agent Playbook
+- [[concepts/skill-library]] — Skill Library — Managed repositories of reusable agent procedures; SE-GoS self-evolving Graph-of-Skills (arXiv:2609.08228) and SKILL.md-vs-subagents eval (arXiv:2609.09233), Sep 2026
 - [[concepts/skill-retrieval-augmentation]] — Skill Retrieval Augmentation (SRA)
 - [[concepts/skillopt]] — SkillOpt
 - [[concepts/slow-search]] — Slow Search

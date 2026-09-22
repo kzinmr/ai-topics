@@ -5887,3 +5887,14 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 ## [2026-09-22] report | Discord hot-post (morning slot 09:30 JST)
 - Topic: Jev 7-day arc -- the System One clone wave validating "the interface, not the architecture, is the durable artifact". Triangulated from concepts/system-one-models (Parallel eval NDCG@10 0.7; Kev on dQwen3.5; openjev-sglang prefill-only retrofit), entities/eric-zhang (Qwen3.6-35B-A3B + SGLang, $5 Tinker SFT +8% GPQA-D/+12% MMLU-Pro), entities/dqwen3-5 (hybrid-attention DLM lineage), entities/parallel-web-systems (production reranker eval).
 - Fresh wikilinks vs prior slots (09-20 night: agent-overclaiming/harness-design/oversight cluster; 09-18 reward-hacking; 09-17 verification-economics). dedup.recently_covered_topics empty. Report-only; no content changes.
+
+## [2026-09-22] ingest | Active crawl: agent skill libraries, lifelong memory, behind-the-meter power
+- Sources saved to raw/articles/:
+  - 2026-09-22_arxiv_se-gos-self-evolving-skill-graph.md (arXiv:2609.08228, verified via Atom API)
+  - 2026-09-22_arxiv_subagents-vs-agent-skills.md (arXiv:2609.09233, verified via Atom API)
+  - 2026-09-22_arxiv_lifemem-lifelong-experience.md (arXiv:2609.12655, verified via Atom API)
+  - 2026-09-22_semianalysis_behind-the-meter-power-part1.md (paywalled excerpt)
+- Created: concepts/skill-library.md (SE-GoS Graph-of-Skills + SKILL.md-vs-subagents eval)
+- Created: concepts/lifelong-agent-memory.md (LifeMem; environment-centric workflows, LifelongGym/9Lifespan)
+- Updated: concepts/ai-energy.md (new "Behind-The-Meter Power as the Escape Hatch" section; +source, +updated date)
+- Updated: index.md (+2 pages, count 3086 -> 3088)

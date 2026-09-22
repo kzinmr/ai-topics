@@ -1,7 +1,7 @@
 ---
 title: "AI Energy"
 created: 2026-08-08
-updated: 2026-08-17
+updated: 2026-09-22
 type: concept
 tags:
   - concept
@@ -27,6 +27,7 @@ sources:
   - raw/articles/2026-08-05_hn-discussion_ai-energy-data-center-sustainability.md
   - raw/newsletters/2026-08-11-meta-s-big-open-source-comeback.md
   - raw/newsletters/2026-08-16-12b-of-us-ratepayers-money-wasted-on-a-modeling-mistake-and-pjm-wants-to-do-it-a.md
+  - raw/articles/2026-09-22_semianalysis_behind-the-meter-power-part1.md
   - https://www.iea.org/reports/electricity-2024
   - https://arxiv.org/abs/2311.16863
   - https://arxiv.org/abs/2211.02001
@@ -160,6 +161,38 @@ SemiAnalysis's reverse-engineered model of PJM (America's largest electricity ma
 - **Auction economics**: Four record-breaking auctions since July 2024 procured 134-138 GW/year each at prices jumping from **$28.92 to $270-333 per MW-day**, totaling **$63.6B** — yet only **4.8 GW of new capacity** was procured. Existing generators bid at $8-14/MW-day (PJM's own monitor) vs GB's $18/MW-day comparison; the median existing combined-cycle plant made 407% of its going-forward costs in energy+ancillary markets alone. PJM cut new-generation lead time from 36 to 10 months (now 23), making new builds near-impossible.
 - **Emergency auction risk**: PJM plans a **Reliability Backstop Auction (Sep 30 - Oct 21, results Dec 2)** signing contracts to 2043 for new large loads (datacenters) with **no committed counter-parties**; every PJM state must pass cost-allocation policy (none have). Interconnection fast-tracks are failing: RRI (51 projects, 31.5% of MW withdrawn, first output 2030) and the Expedited Track (10 units/year, opened Jul 31 2026) have energized zero MW; a 220 GW interconnection application window reopened April 2026 after no study path since Oct 2021.
 - **AI relevance**: This is the clearest quantified case of **AI data center load growth colliding with legacy grid market design** — ratepayer costs, emergency auctions, and interconnection failure directly constrain the AI infrastructure buildout. See [[concepts/subprime-data-center-crisis]] and [[concepts/ai-economics]] for adjacent analyses.
+
+---
+
+## Behind-The-Meter Power as the Escape Hatch (Sep 2026)
+
+SemiAnalysis (Sep 10, 2026, "What is So Hard About Behind-The-Meter Power For
+Datacenters? Part 1") argues that **onsite/behind-the-meter (BTM) generation is
+now the primary workaround** AI labs and hyperscalers use to bypass grid
+interconnection queues — a position they were first to take publicly a year
+earlier, then non-consensus. Two facts anchor the case:
+
+- **Grid interconnection is the binding constraint**, not generation. Their
+  related analysis (June 2026, "US Grid Constraints: Towards 40GW+ of
+  Behind-The-Meter Datacenter by 2028") projects that BTM could supply **more
+  than 50% of new US data center capacity per year by 2028**, driven by
+  transmission and transformer lead times the PJM section above quantifies.
+- **BTM is not one technology but a family** with very different economics —
+  onsite gas turbines/reciprocating engines, fuel cells, and (speculatively)
+  small modular reactors. The article frames the debate as "dumb science
+  experiments vs. money-printing machines," i.e. the difficulty is permitting,
+  emissions rules, fuel logistics, and interconnection-as-a-service structure,
+  not thermodynamics.
+
+**Tension with the sustainability framing above:** BTM gas is *deliberately*
+chosen to escape the grid, which means it frequently bypasses renewable
+procurement and state-level moratorium pressure at the same time. The same
+"power as the ultimate scaling limit" conclusion therefore cuts both ways —
+scaling continues, but its carbon accounting moves off the utility's books and
+onto the developer's. This is the clearest current example of AI load growth
+reshaping *how* electricity is produced, not just how much is consumed.
+Related: [[concepts/subprime-data-center-crisis]], [[concepts/ai-economics]],
+[[entities/dylan-patel]], [[entities/semianalysis]].
 
 ---
 
