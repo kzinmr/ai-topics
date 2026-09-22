@@ -5883,3 +5883,7 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - UPDATE entities/doug-turnbull-speaking - Retrieval Augmented Gathering talks (telemetry-to-corpus via TPuf, with aHev).
 - UPDATE entities/karri-saarinen - X Activity Themes note: BlizzCon WoW panel / game-coherence observation.
 - Skipped: quixiai reply linking withlang.org (non-AI systems language).
+
+## [2026-09-22] report | Discord hot-post (morning slot 09:30 JST)
+- Topic: Jev 7-day arc -- the System One clone wave validating "the interface, not the architecture, is the durable artifact". Triangulated from concepts/system-one-models (Parallel eval NDCG@10 0.7; Kev on dQwen3.5; openjev-sglang prefill-only retrofit), entities/eric-zhang (Qwen3.6-35B-A3B + SGLang, $5 Tinker SFT +8% GPQA-D/+12% MMLU-Pro), entities/dqwen3-5 (hybrid-attention DLM lineage), entities/parallel-web-systems (production reranker eval).
+- Fresh wikilinks vs prior slots (09-20 night: agent-overclaiming/harness-design/oversight cluster; 09-18 reward-hacking; 09-17 verification-economics). dedup.recently_covered_topics empty. Report-only; no content changes.
