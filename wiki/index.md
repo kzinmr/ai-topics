@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3088
-> Last updated: 2026-09-22
+> Total pages: 3091
+> Last updated: 2026-09-23
 
 ## Entities (931 pages)
 
@@ -2259,6 +2259,7 @@
 - [[concepts/loopcraft]] — Loopcraft — The Art of Stacking Loops / Salty Lesson for Agents
 - [[concepts/mac-studio-local-ai]] — Mac Studio for Local AI
 - [[concepts/machine-learning-in-production]] — machine-learning-in-production
+- [[concepts/elo-per-token-analysis]] — Elo-per-token Analysis — Diagnosing how agents spend test-time compute; two-phase improve-then-degrade, three failure modes (arXiv:2609.15309)
 - [[concepts/machine-studying]] — Machine Studying — Agents Developing Expertise from Corpora
 - [[concepts/magnifica-humanitas]] — Magnifica Humanitas
 - [[concepts/mai-thinking]] — MAI Thinking — Microsoft AI research philosophy: hill-climbing machine, iterative optimization
@@ -2864,6 +2865,7 @@
 - [[concepts/subagents]] — Pattern where a main agent spawns independent sub-agents in parallel to delegate tasks.
 - [[concepts/subagents-parallel-ai-agent-delegation]] — Subagents — Parallel AI Agent Delegation
 - [[concepts/subquadratic-attention]] — Subquadratic Attention
+- [[concepts/sleep-time-compute]] — Sleep-Time Compute — Offline reasoning before the query arrives; ~5x cheaper test-time compute (Letta arXiv:2504.13171)
 - [[concepts/structural-priors-constrain-search]] — Structural Priors — objective/prior shape dominates search cleverness (tokenizer ablation + MSR synthesis)
 - [[concepts/subjective-priors-for-reasoning-models]] — Subjective Priors (MSR) — shape reasoning models with a "distribution over programs consistent with the domain" via DSLs + fine-tuning; fixes hallucinated syntax, wrong decomposition, inconsistent formalization, unbounded search
 - [[concepts/subprime-data-center-crisis]] — The Subprime Data Center Crisis — Ed Zitron's analysis of AI data center debt as a functional analogue to 2008 subprime mortgages via SPVs, off-balance-sheet financing, and 15× overbuild; August 2026 cross-reference to Gary Marcus's "Data center madness" (demand-side / political-economy corollary, see [[concepts/ai-bubble-economics]])
@@ -2905,6 +2907,7 @@
 - [[concepts/the-untrainable]] — The Untrainable
 - [[concepts/thin-bi]] — Thin BI
 - [[concepts/thinking-tokens]] — thinking-tokens
+- [[concepts/time-incremental-continued-pretraining]] — Time-Incremental Continued Pretraining — Refreshing knowledge on overlapping crawl data without catastrophic forgetting (arXiv:2609.23916)
 - [[concepts/thomson-reuters-frontier-model]] — Thomson Reuters Frontier Model — first commercial frontier model (Aug 2026)
 - [[concepts/thunderagent]] — ThunderAgent — High-throughput agentic inference system with program-level scheduling (ICML 2026 Spotlight)
 - [[concepts/threat-modeling]] — Threat Modeling

@@ -89,7 +89,8 @@ GPT-5.1 calls DSPy APIs that existed in 2024 but were since deprecated. Stronger
 | [[concepts/rag-systems\|RAG]] | Studying ≠ retrieval. RAG treats knowledge as lookup; studying builds understanding |
 | [[concepts/dspy\|DSPy]] | Both task and tool — DSPy is used as StudyBench domain; DSPy optimizers could be studying algorithms |
 | [[concepts/knowledge-storage-spectrum\|Knowledge Storage Spectrum]] | Studying spans the spectrum: weights (CPT), context (cheatsheets), retrieval (search) |
-| Continual Learning | Machine studying is a *subset* — focused on expertise from new corpora, not just avoiding forgetting |
+| Continual Learning | Machine studying is a *subset* — focused on expertise from new corpora, not just avoiding forgetting. See also [[concepts/time-incremental-continued-pretraining\|Time-Incremental CPT]], which shows disjoint-stream forgetting dread does not hold for real overlapping crawl data |
+| [[concepts/sleep-time-compute\|Sleep-Time Compute]] | Both pre-compute understanding *offline* to make the live turn cheap; sleep-time compute attaches derived artifacts to a context, studying internalizes expertise (weights/notes) |
 | [[entities/omar-khattab\|Omar Khattab]] | Co-author; studying connects to his work on programmatic LM control |
 | Context Engineering | Cheatsheet approach = automated context engineering for expertise |
 

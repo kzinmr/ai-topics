@@ -5908,3 +5908,15 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Primary page [[concepts/ai-energy]] (Behind-The-Meter section, updated 09-22), supporting [[concepts/subprime-data-center-crisis]], [[concepts/ai-economics]], [[concepts/ai-industry-financial-sustainability]], [[entities/semianalysis]], [[entities/dylan-patel]]. Raw: raw/articles/2026-09-22_semianalysis_behind-the-meter-power-part1.md (paywall excerpt, confidence low).
 - Fresh wikilinks — no overlap with 09-22 night (skill-library/lifelong-memory), 09-22 morning (Jev/System One), 09-20 night (agent-overclaiming/harness). dedup.recently_covered_topics empty. Report-only; no content changes.
 
+## [2026-09-23] ingest | active-crawl: test-time compute & knowledge-refresh frontier (3 arXiv pages)
+- Researched trending topics NOT already covered by existing wiki. Dropped three as already-covered or wrong-type: agentic RL (covered by [[concepts/agentic-rl-training-environments]] + sibling [[concepts/agentic-rl-for-self-evolving-systems]]), agentic-skills systems foundation (engineering not trending/recent), machine studying (page already existed).
+- New raw abstracts (raw/articles/): 2504.13171 sleep-time-compute; 2609.23916 time-incremental-continued-pretraining; 2609.15309 elo-per-token-test-time-strategies.
+- Created concept pages:
+  - [[concepts/sleep-time-compute]] — offline reasoning before the query; ~5x cheaper test-time compute, +13–18% accuracy (Letta/Berkeley arXiv:2504.13171). Links [[concepts/test-time-compute]], [[concepts/token-economics]], [[concepts/continual-learning]], [[concepts/kv-cache-compaction]].
+  - [[concepts/time-incremental-continued-pretraining]] — knowledge refresh on overlapping crawl data; 5/6 models improve even pre-cutoff recall, macro-avg within 0.01, curated 6B≈broad 40B, LoRA matches full CPT (arXiv:2609.23916). Links [[concepts/continual-learning]], [[concepts/post-training/on-policy-distillation]], [[concepts/sleep-time-compute]].
+  - [[concepts/elo-per-token-analysis]] — diagnostic for how agents spend test-time compute; two-phase improve-then-degrade, three failure modes (self-contradiction/context-loss/misleading-feedback), 4-quadrant strategy taxonomy (arXiv:2609.15309). Links [[concepts/test-time-scaling]], [[concepts/token-economics]], [[concepts/agent-benchmarks]], [[concepts/sleep-time-compute]].
+- Patched [[concepts/machine-studying]] cross-reference table to link both new siblings (sleep-time-compute, time-incremental-CPT).
+- index.md: +3 entries, Total pages 3088 → 3091, Last updated 2026-09-23.
+- All referenced wikilink targets verified present on disk (attention-bottleneck, context-window-management, token-economics, letta, agent-benchmarks, continual-learning, test-time-scaling/compute, kv-cache-compaction).
+
+
