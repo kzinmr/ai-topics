@@ -7,12 +7,12 @@ keyword sweep too on trending-topics runs. Verified 2026-09-14: it surfaced Beng
 Garry Tan distillation (390pts), Tell HN OpenAI opt-in (482pts) — none on the
 front-page scan.
 
-Usage: `python3 hn_keyword_supplement.py [days] [min_points]` (defaults 4, 80).
-Output format matches hn_algolia_supplement.py: `ext:` external URL + `hn :` item link
-(copy the item link for citations — pitfall #17).
+Usage: extract the Python block below and run as a clean script. `python3 hn_kw_run.py [days] [min_points]` (defaults 4, 80).
+
+Tip (VERIFIED 2026-09-21): extend the query list below with topic keywords from the wiki's currently-hot sources (`config/hot-topics.yaml`, recent log.md, today's blog_ingest titles — e.g. a hot model/person name like "Jev"). Generic keywords alone miss same-day ecosystem clusters (clone/toolkit waves around one launch) whose stories rank below threshold; one targeted keyword surfaced the whole Jev→Kev/Jev-Leftpad/CUA-S1 wave.
 
 ```python
-import urllib.request, json, sys, datetime
+import urllib.request, urllib.parse, json, sys, datetime
 def get(url):
     req = urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0'})
     return json.loads(urllib.request.urlopen(req, timeout=20).read())
@@ -20,8 +20,9 @@ days = int(sys.argv[1]) if len(sys.argv) > 1 else 4
 minpts = int(sys.argv[2]) if len(sys.argv) > 2 else 80
 cutoff = int(datetime.datetime.now(datetime.UTC).timestamp()) - days*86400
 seen = set()
+# Extend this list per-run with today's hot topic keywords (see tip above).
 queries = ["AI agent", "Claude", "OpenAI", "LLM", "open weights", "model release",
-           "prompt injection", "AI safety", "coding agent", "MCP"]
+           "prompt injection", "AI safety", "coding agent", "MCP", "Anthropic"]
 for q in queries:
     try:
         d = get(f"https://hn.algolia.com/api/v1/search?query={urllib.request.quote(q)}"

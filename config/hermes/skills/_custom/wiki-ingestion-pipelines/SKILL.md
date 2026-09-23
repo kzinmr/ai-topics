@@ -145,7 +145,7 @@ See `references/newsletter-wiki-ingest.md` for full Substack URL resolution patt
 - **Inline triage is expensive but necessary** for Case C0. You must resolve newsletter URLs and assess content independently. Use `delegate_task` batch mode for parallel URL resolution (max 3 concurrent).
 - Detect follow-up batches before creating pages
 - Subagents need explicit absolute paths (`/opt/data/ai-topics/wiki/...`)
-- Japanese output is mandatory for cron reports
+- Japanese output is mandatory for cron reports; see `references/cron-terminal-gotchas.md`
 - Commit early for large batches to prevent data loss from tool call limits
 - **blog-triage JSON is from yesterday at newsletter-triage time**: Newsletter-triage runs at 07:20 UTC, but blog-triage runs at 07:30 UTC. When checking `${HERMES_HOME}/cron/data/blog_ingest/triage_latest.json` for cross-pipeline dedup, that file is still from the previous day. For same-day dedup, check `raw/articles/` (sitemap-monitor at 06:00) and `log.md` instead. See `semantic-article-grouping` skill for full race condition documentation.
 

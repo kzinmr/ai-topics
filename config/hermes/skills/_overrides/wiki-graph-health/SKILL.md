@@ -16,7 +16,7 @@ This umbrella skill covers all wiki health, maintenance, and remediation operati
 
 ## Core: Graph Health Detection Patterns
 
-Uses `scripts/wiki_graph.py` output to detect wiki data quality issues. **Weekly cron: see `references/weekly-graph-analysis.md`.** However, `--format json` only outputs **person similarity scores** (`person_similarity` array) — it does NOT include orphan pages, broken links, or duplicate groups. Those data points come from the **stdout human-readable report** or `--html` output. For a full quality scan, use `--html` or capture stdout; use `--format json` only for dedup/disambiguation analysis of person pairs.
+Uses `scripts/wiki_graph.py` output to detect wiki data quality issues. **Weekly cron: see `references/weekly-graph-analysis.md`.** However, `--format json` only outputs **person similarity scores** (`person_similarity` array) — it does NOT include orphan pages, broken links, or duplicate groups. Those data points come from the stdout report or `--html` output; use `--format json` only for person-pair dedup analysis.
 
 ### Related References
 - [`references/full-graph-remediation-workflow.md`](references/full-graph-remediation-workflow.md) — **START HERE**: complete fix sequence (wikilinks → ghost pages → duplicates → stale → oversized → tag → index)
@@ -167,7 +167,7 @@ When `wiki-graph-analysis` reports unlinked pairs:
 **Skip non-existent concept pairs**: ❌ pairs referencing pages that don't exist yet; shared persons being sub-pages (`drew-breunig--core-ideas`) are page-splitting false positives — artifacts, not real missing links.
 
 ### Watchdog Pipeline Timing — Verifying Health Report Claims
-See `watchdog-session-2026-09-12.md` (jobs.json failure source; report-only failure classes; header recount formula).
+See `watchdog-session-2026-09-12.md` (jobs.json failure source; report-only failure classes; header recount formula). See `health-fix-session-2026-09-21.md` (digest "orphans" = `_index.md` files; `_index`→dir slug bug in orphan scanners; hub registration recipe).
 
 **Discovered 2026-05-11**: The `wiki-watchdog-fix` cron job runs AFTER `wiki-health-fix` in the pipeline. By the time the watchdog receives the health report, the wiki-health-fix step may have already repaired many of the reported issues (pipe corruption, triple brackets, line-number corruption, etc.).
 
@@ -1088,9 +1088,7 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 5. Commit: `git add wiki/ && git commit -m "wiki: fix auto-fixable wikilinks (N links)"`
 6. Push: `git push`
 
-## Support Files
-
-- `scripts/yaml_validate_frontmatter.py` — full-wiki frontmatter YAML scan (wiki_health.py returns {} on YAML failure → blind spot). Patterns + scoping rule: `references/yaml-frontmatter-corruption-2026-08-15.md`
+## Support Files — full-wiki frontmatter YAML scan (wiki_health.py returns {} on YAML failure → blind spot). Patterns + scoping rule: `references/yaml-frontmatter-corruption-2026-08-15.md`
 - `scripts/add_updated_dates.py` — Batch-add `updated` date to pages lacking it. Skips _index.md and raw/articles. `python3 scripts/add_updated_dates.py [--date YYYY-MM-DD]`.
 - `references/cron-mode-pitfalls.md` — Cron-mode `execute_code` blocks, `_index.md` counting in health reports, `str.replace()` anchor swallowing
 - `references/watchdog-healthy-baseline.md` — watchdog baseline: thresholds, verify cmds, auto-fix scope, escalation report format, decision flow. See `watchdog-session-2026-08-25.md`, `-09-04/07.md`.

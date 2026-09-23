@@ -1,3 +1,12 @@
+## [2026-09-23] lint | wiki-health-fix — all clean, no action
+
+- Index corruption scan: pipe/line-number/triple-bracket/space-prefix = 0 (validate_index.py exit 0)
+- Orphans reported (2): `concepts/gpt/_archive/*` — archived files, intentionally excluded from index (no action)
+- Ghost entries: 0. Frontmatter/tag checks clean (pre-commit hook passed in sibling commits)
+- Unprocessed raw articles: 6009/9854 (backlog — handled by raw-backlog/dreaming pipelines, not this job)
+- Stale pages: 2828 (>30d) — informational; no contradicting new sources detected
+- Committed skill-file changes from sibling sessions (skills only; wiki byte-identical)
+
 ## [2026-09-21] health-fix | auto-fix run — 13 _index.md hubs registered, 0 ghosts, 0 corruption
 
 - **Phase 1 (index corruption):** pipe/line-number/triple-bracket/space-prefix all 0. No fixes needed. `validate_index.py` exit 0.

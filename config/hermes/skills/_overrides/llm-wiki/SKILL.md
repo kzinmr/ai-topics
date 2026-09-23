@@ -539,6 +539,74 @@ When running a "translate remaining JP files" batch over the wiki:
   the scope with the user first.
 - **Rotate the log** — when log.md exceeds 500 entries, rename it `log-YYYY.md` and start fresh.
   The agent should check log size during lint.
+
+## arXiv ingestion (active-crawl / scheduled research)
+
+When ingesting recent arXiv papers (the `active-crawl` job and any "find arXiv sources" task):
+
+- **Prefer the arXiv Atom API over scraping `/html/`.** `https://arxiv.org/html/<id>v<n>` 404s for
+  very recent papers and is unreliable to fetch. Use the stable Atom endpoint instead — it returns
+  authors, abstract, dates, and the **correct arXiv ID**:
+  `curl 'http://export.arxiv.org/api/query?id_list=<id1>,<id2>'` (parse the Atom XML; namespace
+  `http://www.w3.org/2005/Atom`). Save the abstract as the raw source with `source_url` + `sha256`.
+- **Verify the arXiv ID, never trust notes-from-memory across a compaction.** A transcript ID can be
+  a typo. Confirm by title search:
+  `curl 'http://export.arxiv.org/api/query?search_query=all:%22<exact title phrase>%22'`. This
+  session corrected `2609.21208` → `2609.20812` only because the ID was re-checked, not assumed.
+- **Apply a provenance bar before creating a page.** Drop scanner-blocked `.dev` sites, HN memes /
+  stunt posts, and anything without a durable original source. Log dropped candidates in `log.md`
+  rather than fabricating a page from a thin source.
+
+## Committing wiki changes in a shared working tree (cron with concurrent sibling pipelines)
+
+Multiple ingestion crons can leave their own WIP staged/modified in `~/ai-topics` at the same time.
+
+- **Commit only your own files** by explicit path after `git reset -q` (the working tree may already
+  have other jobs' `git add` output staged — don't assume `git add wiki/` only captures your work).
+- **Push cleanly past sibling WIP:** the pre-commit hook validates tags, so if a *sibling's*
+  index/log edits trip it while you commit, `git stash push -u -m "<desc>"`, then
+  `git pull --rebase && git push`, then `git stash pop`. `git pull --rebase` fails outright on any
+  unstaged changes ("cannot pull with rebase: You have unstaged changes") — the stash is the fix,
+  not `--no-verify`.
+- **A sibling may have modified the file you're about to patch** (write_file/patch surface a
+  "modified since you last read it" warning). Re-read before the final index/log write if warned.
+- **Pre-dry-run the hook instead of discovering it on commit:** the ai-topics hook runs from
+  `core.hooksPath = .githooks` (NOT `.git/hooks`). After `git add` your files but BEFORE the
+  real `git commit`, run `.githooks/pre-commit` to surface tag-taxonomy or shrink violations
+  early. Fix the offending frontmatter, re-`git add`, then commit. This avoids a blocked commit
+  mid-push and the stash dance below.
+- **Stash round-trip is a 3-step discipline, not one:** if you `git stash push -u` to clear
+  sibling WIP, you MUST `git stash pop` at the very end to restore it (verify with `git stash
+  list` — it should be empty). A cron that stashes to push cleanly but never pops silently
+  discards another pipeline's uncommitted work.
+
+## Tag taxonomy violations (wiki pre-commit hook)
+
+The ai-topics wiki pre-commit hook blocks commits whose page `tags:` aren't in `SCHEMA.md`'s
+taxonomy. Don't `--no-verify` — map to the canonical singular/canonical form. Confirmed across
+sessions: `harness`→`agent-harness`, `agent-oversight`→`agent-observability`,
+`open-weights`→`open-weight`, `ai-agent`→`ai-agents`, `data`→`datasets` (or `training` /
+`synthetic-data` / `corpus` per the claim). Plain `data` is NEVER a valid tag — it only appears
+in SCHEMA.md as prose and inside `open-data`/`private-data`. Grep `SCHEMA.md` for a tag before
+assuming a plural, singular, or generic-word variant exists; several canonical tags are
+counterintuitive (`open-weight` not `open-weights`, `datasets` not `data`). When a tag-word is
+ambiguous, grep with word boundaries (`\bword\b`) to distinguish a real taxonomy entry from
+incidental prose or a compound (`open-data`).
+
+## Never overwrite a rich page with a skeleton (hard pre-commit gate)
+
+Per the ai-topics `AGENTS.md`: any existing `entities/` / `concepts/` page over ~40 lines MUST be
+edited with `read_file` + `patch`, never `write_file`. The pre-commit hook detects and blocks a
+>50% shrink, so a skeleton overwrite fails the commit *and* risks destroying accumulated knowledge.
+When enriching, patch-append sections and bump `updated` rather than rewriting the body.
+
+## cron wiki jobs must set `workdir: /opt/data/ai-topics`
+
+`~/wiki` is a symlink to `~/ai-topics/wiki`, and `/opt/data/home/` is a throwaway docker container
+home — never write wiki content there (use explicit `/opt/data/ai-topics/wiki/...` paths;
+`delegate_task` subagents default to the container home). The `workdir` matters beyond paths: setting
+it auto-injects `AGENTS.md` (rich-page rule, tag validation, pipeline map) into the session, so a
+cron job without it silently loses those global rules. The pre-commit hook is the last gate.
 - **Handle contradictions explicitly** — don't silently overwrite. Note both claims with dates,
   mark in frontmatter, flag for user review.
 
