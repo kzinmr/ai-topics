@@ -97,6 +97,13 @@
 
 # Wiki Log
 
+> Chronological record of all wiki actions. Append-only.
+
+## [2026-09-24] create | queries/test-time-compute-three-axes-2026-09-24
+- Synthesis query page from 3 recent pages: sleep-time-compute, elo-per-token-analysis, machine-studying
+- Thesis: compute-vs-accuracy frontier has 3 axes (before/at/after-peak); benchmarks only measure the middle
+- Added to index.md (Queries 7→8)
+
 ## [2026-09-21] update | System One Models — Kev ecosystem section
 - Updated concepts/system-one-models.md: new §Kev (Jared Palmer's Jev-like family on dQwen3.5, HN 49783999), Jev-Leftpad (49784706), Jevchat "lousy chatbot" demo (49778162), CUA-S1 (49767564); added open question re RLCD-free distillation lineage; bumped updated date.
 - Annotated raw/newsletters AINews Jev-clones digest with later-development note (append-only).
