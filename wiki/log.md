@@ -5929,3 +5929,8 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - All referenced wikilink targets verified present on disk (attention-bottleneck, context-window-management, token-economics, letta, agent-benchmarks, continual-learning, test-time-scaling/compute, kv-cache-compaction).
 
 
+
+## [2026-09-24] report | Discord hot-post (morning slot 09:30 JST)
+- Topic: "考え直すタイミングを間違うな — 3枚の論文が描くcomputeの再配分地図" — synthesis of the 09-23 active-crawl triple: sleep-time compute (query前に考える, 約5x cheap +13-18%), Elo-per-token (考え過ぎる境界の診断, 2-phase/3 failure modes), time-incremental CPT (考え直すタイミングの再定義, 5/6 models improved). Thread: 思考の再配置が test-time scaling の次の戦場。
+- Primary pages: [[concepts/sleep-time-compute]], [[concepts/elo-per-token-analysis]], [[concepts/time-incremental-continued-pretraining]] (all created 09-23, never posted). Supporting: [[concepts/machine-studying]], [[concepts/token-economics]], [[concepts/agent-slop]].
+- Fresh wikilinks — no overlap with 09-23 morning (ai-energy/BTM), 09-22 night (skill-library/lifelong-memory), 09-22 morning (Jev/System One). dedup.recently_covered_topics empty. Report-only; no content changes.
