@@ -5,7 +5,7 @@ aliases: [emollick]
 tags: [person, education, developer-tooling, ai-adoption]
 sources: []
 created: 2026-04-24
-updated: 2026-09-10
+updated: 2026-09-23
 type: entity
 ---
 
@@ -205,6 +205,24 @@ Mollick consistently raises questions about the ethical implications of AI in wo
   GPT-6" — a fully rolled mind flayer vs. drow duel rendered as a cinematic 3D
   Underdark webpage (underdark-duel.netlify.app); noted the model got the 5E 2014
   stat block right (101-bone skeletal rig) with no major rules errors.
+- **The Waste Land, annotated (Sep 21–23):** had **Claude Fable 5.1** build an
+  annotated guide to T.S. Eliot's *The Waste Land* — multiple pathways through the
+  poem, recordings, scholarship — then open-sourced it
+  ([emollick/wasteland-annotated](https://github.com/emollick/wasteland-annotated),
+  site at the-waste-land.netlify.app). Dependency-free Node build; art drawn as SVG
+  by code; commentary exported/imported as structured records with per-part
+  "debates". Framing: "AI can be a really wonderful tool for exploring topics far
+  from coding." ^[raw/articles/github.com--emollick-wasteland-annotated--b2d94e5a.md]
+- **Rescue Raiders rebuild (Sep 23):** asked Claude to recreate an abandonware
+  Apple II game he loved as a kid (Sir-Tech's *Rescue Raiders*) with new graphics,
+  goals and tech trees — the model "iterated back-and-forth with critic & art
+  agents" until a playable result (rescue-raiders.netlify.app, "RR Revisited").
+  Built from a single prompt plus his five-step **[[concepts/vibe-building-workflow]]**
+  (vibe-plan → GitHub → sandbox/devcontainer → ask the agent how to test → iterate
+  the loop). See [[concepts/agent-generated-software]]. ^[raw/articles/rescue-raiders.netlify.app--rr-revisited--9a3d67be.md]
+- **Epoch "plunging price of thought" (Sep 23):** amplified the Epoch AI report —
+  cost of a given AI performance level falling ~47%/quarter since 2023 — as "this
+  terrific chart". See [[entities/epoch-ai]].
 
 ## Related People
 

@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-09-12
+updated: 2026-09-23
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -812,6 +812,12 @@ See [[concepts/anthropic-cybersecurity-eval-incidents]] for full details.
 
 On Aug 28, 2026 Anthropic opened a research preview of the **Model Hardware Standard (MHS)** — a shared, model-agnostic specification (born from a collaboration with HHMI Janelia) letting AI agents safely operate lab and manufacturing instruments via standardized drivers, with MCP access and industry partners including AWS, Tecan, QIAGEN, Universal Robots, and Doosan. To be open-sourced after the preview. See [[concepts/model-hardware-standard]]. Source: anthropic.com/news/model-hardware-standard-research-preview (raw: 2026-08-28_anthropic_model-hardware-standard-preview.md).
 
+## Claude Opus 5.5 + /compact Incident (Sep 22, 2026)
+
+Anthropic shipped **Claude Opus 5.5** as a direct answer to GPT-6 Astra — priced 2.5x cheaper than Astra at $5/$25 per MTok, immediately triggering a frontier price war (GPT-6 Sol/Terra/Luna followed within the hour; Grok 4.7 and MiMo v2.6 earlier that week). Same day, Claude Code shipped a **1-of-1000 rollout bug in `/compact`** that wiped prompt-cache state mid-session — users reported bills multiplying and context being "absolutely destroyed" — a concrete incident class for [[concepts/token-economics]] (cache busts as cost multipliers). ^[raw/articles/simonwillison.net--2026-sep-22-opus-and-sol-and-luna--3535d880.md]
+
+Anthropic's **Valve "Peaks" case study** (published Sep 22, via Simon Willison) is the flagship first-party agent-generated-software account: a ~14-person team built the polished Steam co-op game *Peaks* (released Aug 2026) using Claude Code as the main internal tool, with heavy agent↔critic loops — see [[concepts/agent-generated-software]].
+
 ## Related Pages
 - [[Claude models]] — Model family details
 - [[concepts/ai-economics]] — Tokenmaxxing, AI ROI debate
@@ -840,6 +846,7 @@ On Aug 28, 2026 Anthropic opened a research preview of the **Model Hardware Stan
 
 ## Log
 
+- 2026-09-23: Added "Claude Opus 5.5 + /compact Incident (Sep 22, 2026)" section — Opus 5.5 at $5/$25 (2.5x cheaper than GPT-6 Astra), same-day /compact 1/1000 rollout cache-wipe bug, and the Valve Peaks case study (~14-person team, Claude Code as main tool). Sources: Simon Willison (Sep 22), Ethan Mollick.
 - 2026-09-04: Added "GPT-6 Astra Competitive Pressure (September 3, 2026)" section — Fable 5.1 leads Artificial Analysis Intelligence Index (66 vs Astra 61), no published Fable ARC-AGI-3 result vs Astra's 99.9%/62.7% harness split, Astra at <half Fable 5 per-task cost on Coding Agent Index. Sources: Simon Willison, Gary Marcus (Sep 3-4).
 - 2026-08-12: Enriched "Riemann Hypothesis Bound Improvement (Aug 2026)" with specific numbers — research Claude raised the lower bound on the fraction of zeta zeros on the critical line from 41.6% to 67.2%, combining recent work by Baluyot, Goldston, Suriajaya and Turnage-Butterbaugh; Anthropic explicitly does not expect these techniques to prove the hypothesis ("The best known bound still moved"). Sources: Superintel+ 2026-08-11, AINews 2026-08-11.
 - 2026-08-11: Added "Riemann Hypothesis Bound Improvement (Aug 2026)" subsection under Research Focus — unreleased research Claude variant tasked with the Riemann Hypothesis did not solve the conjecture but improved a longstanding lower bound on the fractional part of the zeta function (mathematical research result). Source: AINews 2026-08-11.

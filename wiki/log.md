@@ -1,3 +1,10 @@
+## [2026-09-24] repair | recover token-economics + complete Sep-22/23 batch (cron skeleton-enrich)
+
+- **REPAIR**: A prior (crashed) batch had destructively overwritten `concepts/token-economics.md` from 339 lines (created 2026-04-18, ~15 sources, dozens of case studies) down to a 54-line rewrite with 1 source — an AGENTS.md rich-page-overwrite violation. Restored the rich committed version, then re-appended the only genuinely-new content as a dated section: **"The Plunging Price of Thought (Epoch AI, Sep 2026)"** (Emberson & Roodman — ~47%/quarter, 13x/yr cost-of-performance decline; o3 $0.30 -> GPT-5.6 Luna $0.0004/question 725x drop; reference-token method) + cross-refs to epoch-ai, prompt-caching, model-routing, the Sep price-war event. Net: 361 lines, all history preserved.
+- **COMPLETION**: The batch's other artifacts were clean appends/new pages already in the working tree — entity updates to anthropic, epoch-ai, ethan-mollick, simon-willison; new pages `concepts/agent-generated-software`, `concepts/vibe-building-workflow`, `concepts/gemini/gemini-3-8-tts`, `entities/wasteland-annotated`, plus raw articles/newsletters. Added two orphaned event pages to `index.md` Events section (33->35): `events/claude-opus-5-5-gpt-6-release-sep-2026`, `events/the-plunging-price-of-thought-epoch-sep-2026`.
+- **Skeleton scan**: `grep status: skeleton` over `wiki/entities/` returns 0 — no skeleton pages left to enrich this run.
+- index.md total pages 3091->3098.
+
 ## [2026-09-23] lint | wiki-health-fix — all clean, no action
 
 - Index corruption scan: pipe/line-number/triple-bracket/space-prefix = 0 (validate_index.py exit 0)

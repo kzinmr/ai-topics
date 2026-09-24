@@ -2,14 +2,16 @@
 title: "Token Economics — LLM Inference Cost & Optimization"
 type: concept
 created: 2026-04-18
-updated: 2026-07-02
+updated: 2026-09-24
 tags:
   - inference
   - optimization
   - economics
   - methodology
+  - ai-economics
+  - token-economics
 aliases: ["cost-per-token", "inference-unit-economics"]
-sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/newsletters/2026-06-30-tokenbudgeting-our-conversations-with-enterprises-on-token-spend.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]", raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md, raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md]
+sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/newsletters/2026-06-30-tokenbudgeting-our-conversations-with-enterprises-on-token-spend.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]", raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md, raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md, raw/articles/epoch.ai--publications-the-plunging-price-of-thought--e7c1a0f3.md]
 ---
 
 # Token Economics
@@ -325,8 +327,27 @@ Michael Li's winning essay in the Dwarkesh Blog Prize (July 2026) introduces a n
 
 **Relevance**: This complements Vipul Prakash's "Economy of Tokens" framework (which focuses on inference unit economics) with an institutional **_business-model_ perspective** — how labs can capture the surplus their infrastructure creates. The MTR analogy suggests that AI policy should focus on designing institutional mechanisms (deployment rights frameworks, data trusteeship structures) rather than direct subsidies for training runs.
 
+## The Plunging Price of Thought (Epoch AI, Sep 2026)
+
+Epoch AI's September 2026 report [[entities/epoch-ai|"The plunging price of thought"]] (Luke Emberson & David Roodman, amplified by [[entities/ethan-mollick|Ethan Mollick]]) is to date the sharpest macro statement of this page's thesis: the **cost of achieving a given level of AI performance** has fallen **~47% per quarter (13×/year) since 2023** — 4× faster than DNA sequencing, 6× faster than compute, 18× faster than lithium batteries, 54× faster than electricity. Headline example: OpenAI o3 needed ~$0.30/question for 75% on GPQA Diamond (Jan 2025); under 18 months later GPT-5.6 Luna matched it for **$0.0004/question — a 725-fold drop**, "like a $50,000 car falling to $69."
+
+**Methodological shift — the "reference token."** Because reasoning models make raw $/MTok comparisons meaningless across models and eras, Epoch instead measures the *actual cost to reach a target benchmark score* (tokens needed to pass a benchmark at a chosen score). This is the unit that makes the price-of-thought curve comparable across time, and it reframes token economics from a per-token cost question into a **cost-of-outcome** question — the same marginal-token-utility framing as the "Token-to-Outcome Attribution" section above.
+
+**Two halves of the field this makes concrete:**
+
+1. **Macro (price-of-thought curves).** Frontier-level reasoning cost collapsing toward zero shifts the binding constraint from *paying for intelligence* to *directing it*. Declines are steepest at freshly-debuted SOTA (66%/quarter, 75×/year) and roughly halve after ~2 years (32%/quarter, 4.7×/year); domain variation runs 50–52%/quarter on math vs 39–43% on game puzzles.
+2. **Micro (session-level budgeting).** Anthropic's Claude Code `/compact` incident (Sep 22, 2026) — a 1-of-1000 rollout bug that wiped prompt-cache state mid-session, multiplying bills and destroying context — turned "context is your scarcest resource" from a vibe into an operational incident class. Every harness mechanism that invalidates the prompt cache (mid-conversation cache busts, naive compaction, tool-output churn) is a direct cost multiplier. See [[concepts/context-engineering]] and [[concepts/prompt-caching]].
+
+Author-stated caveats: benchmaxxing, frontier-switching user assumption, and noisy 3-year data mean the numbers "should not be read as exact." The report supersedes/extends Epoch's March 2025 estimate (9–900×/year, per-token) and sits alongside Gundlach et al. (Mar 2026). It is the anchor event for the Sep 2026 frontier price war ([[events/claude-opus-5-5-gpt-6-release-sep-2026]]).
+
+**Open questions:** whether falling token prices expand the frontier of viable agent workloads (Jevons) or whether context-window growth simply re-spends the savings; whether a GAAP-equivalent for per-session agent spend ever standardizes; and how much of the ~50×/yr decline is algorithmic progress vs. hardware subsidy.
+
 ## Related
 - [[concepts/context-engineering|Context Engineering]] — Token economics is a prerequisite for understanding context window optimization trade-offs
+- [[entities/epoch-ai]] — Measured the "plunging price of thought" cost-of-performance curves (Sep 2026)
+- [[concepts/prompt-caching]] — Cache busts as the hidden per-session cost multiplier
+- [[concepts/model-routing]] — Cheap-model cascades as the primary micro cost lever
+- [[events/claude-opus-5-5-gpt-6-release-sep-2026]] — The Sep 2026 frontier price war the curve precipitated
 - [[concepts/local-llm/_index]] — Self-hosting economics and optimization techniques
 - [[concepts/local-llm/model-quantization]] — Quantization methods (GPTQ, AWQ, EXL2, FP8)
 - [[concepts/inference/vllm]] — Continuous batching and PagedAttention
@@ -335,5 +356,6 @@ Michael Li's winning essay in the Dwarkesh Blog Prize (July 2026) introduces a n
 
 ## Sources
 
+- raw/articles/epoch.ai--publications-the-plunging-price-of-thought--e7c1a0f3.md — "The plunging price of thought" (Epoch AI, Sep 22 2026) — ~47%/quarter cost-of-performance decline
 - raw/articles/dwarkesh.com--p-blog-prize-winners--a4b5d70b.md — Michael Li MTR analogy (July 2026)
 -  — Spheron & Introl inference economics analysis- Sebastian Raschka, "A Visual Guide to Attention Variants in Modern LLMs" (Ahead of AI)

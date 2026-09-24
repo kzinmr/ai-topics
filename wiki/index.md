@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3091
+> Total pages: 3098
 > Last updated: 2026-09-23
 
 ## Entities (931 pages)
@@ -893,6 +893,7 @@
 - [[entities/vtrivedy10]] — Vivek 'Varun' Trivedy (@vtrivedy10)
 - [[entities/wafer-ai]] — Wafer; cross-platform model serving across NVIDIA, AMD, TPUs; Kimi K3 on MI355X benchmark (Aug 2026)
 - [[entities/walden-yan]] — Walden Yan
+- [[entities/wasteland-annotated]] — Wasteland Annotated (emollick) — Ethan Mollick's annotated-translation project rendering the Waste Land as an agent-annotated web artifact
 - [[entities/wandb-weave]] — W&B Weave
 - [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23); Terminal Internals Explainer — PTY/line discipline/escape sequences deep dive (Jan 2023)
 - [[entities/world-labs]] — World Labs; Fei-Fei Li's spatial-intelligence startup; Marble 3D world model (persistent Gaussian-splat worlds, editor, API, paid tiers) — only shipped structured-3D world model (Sep 2026)
@@ -980,6 +981,7 @@
 - [[concepts/agent-experience]] — Agent Experience (AX) — Design philosophy for cloud infrastructure optimized for autonomous AI agents rather than human developers
 - [[concepts/agent-first-codebase-design]] — Agent-First Codebase Design
 - [[concepts/agent-first-design]] — Agent-First Design
+- [[concepts/agent-generated-software]] — Agent-Generated Software — Software whose primary author/producer is an AI coding agent rather than a human
 - [[concepts/agent-harness-primitives]] — Agent Harness Primitives
 - [[concepts/agent-harnesses]] — Agent Harnesses — Bitter Lesson philosophy, practical construction patterns, shrinking harnesses as models improve
 - [[concepts/agent-human-oversight-failure]] — Agent-Human Oversight Failure — Empirical evidence that humans miss ~33% of dangerous AI agent actions; attention fatigue, habituation, and implications for agent safety architecture. +Authority Gap (Sep 2026): OpenAI June 27 alert fired, run continued — detection without stopping power (Alderson)
@@ -1886,6 +1888,7 @@
 - [[concepts/gemini/gemini-3-5-flash]] — Gemini 3.5 Flash
 - [[concepts/gemini/gemini-3-7-flash]] — Gemini 3.7 Flash — Google's most intelligent workhorse model for coding/agents; FrontierCode 43.6%, DeepSWE 65.3%, $0.75/$3.75 per MTok intro; powers Gemini Spark
 - [[concepts/gemini/gemini-3-8-flash]] — Gemini 3.8 Flash
+- [[concepts/gemini/gemini-3-8-tts]] — Gemini 3.8 TTS
 - [[concepts/gemini/gemini-cli]] — Gemini CLI
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/gemini/gemini-managed-agents]] — Gemini Managed Agents
@@ -2971,6 +2974,7 @@
 - [[concepts/vq-bench]] — VQ-bench — Pinecone's open-source benchmark decomposing vector quantizers into Conditioner/Rounder/Splitter primitives; first systematic head-to-head of ANN quantization methods (2026)
 - [[concepts/vespa]] — Vespa
 - [[concepts/vibe-ceo]] — Vibe CEO
+- [[concepts/vibe-building-workflow]] — Vibe Building Workflow
 - [[concepts/vibe-coding]] — Moved to concepts/harness-engineering/agentic-workflows/vibe-coding.md
 - [[concepts/vibe-coding-vs-agentic-engineering]] — Vibe Coding vs Agentic Engineering
 - [[concepts/vibe-physics]] — Vibe Physics
@@ -3063,8 +3067,10 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (33 pages)
+## Events (35 pages)
 
+- [[events/claude-opus-5-5-gpt-6-release-sep-2026]] — Claude Opus 5.5 & GPT-6 Sol/Terra/Luna Release (Sep 22, 2026) — Opus 5.5 at $5/$25 (2.5× cheaper than GPT-6 Astra), triggering a same-day frontier price war; Claude Code `/compact` 1/1000 rollout cache-wipe bug
+- [[events/the-plunging-price-of-thought-epoch-sep-2026]] — Epoch AI "The Plunging Price of Thought" (Sep 22, 2026) — cost of a given level of AI performance falling ~47%/quarter (13×/yr) since 2023; o3 $0.30 → GPT-5.6 Luna $0.0004/question (725× drop)
 - [[events/openai-rubygems-gemstuffer-disclosure-2026]] — GemStuffer disclosure (rubyhack.ai, Sep 11, 2026) — OpenAI agent swarm's undisclosed May 2026 attack: 2,000+ gems, RubyDoc.info RCE, novel CDN-key-leak 0-day attempt, self-disarming payloads, webhook-as-datastore
 
 - [[events/openai-navier-stokes-scooping-2026]] — OpenAI Navier–Stokes Millennium Prize & Scooping Controversy (Sep 8, 2026) — unreleased model + Astra Lean 4 formalization (~17h on 88h agent effort, ~130B output tokens); priority dispute with Buckmaster/Alpöge; "to improve model performance" data-rights test

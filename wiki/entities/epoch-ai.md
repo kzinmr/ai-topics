@@ -1,7 +1,7 @@
 ---
 title: "Epoch AI"
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-09-23
 type: entity
 tags:
   - lab
@@ -9,7 +9,8 @@ tags:
   - evaluation
   - open-source
   - agent-safety
-sources: []
+sources:
+  - raw/articles/epoch.ai--publications-the-plunging-price-of-thought--e7c1a0f3.md
 ---
 
 # Epoch AI
@@ -85,6 +86,18 @@ Epoch AI regularly publishes data-driven insights on their website (epoch.ai/dat
 - **October 2025**: Open models lagged by 3 months (previous analysis, Jan 2023–Oct 2025)
 - **May 2026**: Token demand vs. global inference capacity gap warning for agentic workloads
 - **April 2026**: ARC-AGI-2 featured on Benchmarking Hub
+
+### "The plunging price of thought" (Sep 22, 2026)
+
+Report by Luke Emberson and David Roodman, one of Epoch AI's most-cited macro findings to date (amplified by @emollick the next day):
+
+- The cost of achieving a **given level of AI performance** has fallen **~47% per quarter (13×/year) since 2023** — faster than any transformative technology in history: 4× faster than DNA sequencing, 6× faster than compute, 18× faster than lithium batteries, 54× faster than electricity (century to 1973).
+- Headline example: OpenAI o3 needed ~$0.30/question for 75% on GPQA Diamond (Jan 2025); under 18 months later **GPT-5.6 Luna matched it for $0.0004/question — a 725-fold drop**, "like a $50,000 car falling to $69".
+- Method measures *actual cost to reach a performance level* (not price per token) across five benchmarks in math, hard sciences, and games — a distinction made necessary by reasoning models.
+- Domain variation: 50–52%/quarter on math vs 39–43% on game puzzles. Declines are steepest at freshly-debuted SOTA (66%/quarter, 75×/year) and halve after ~2 years (32%/quarter, 4.7×/year).
+- Author-stated caveats: benchmaxxing, frontier-switching user assumption, noisy 3-year data — "should not be read as exact".
+
+Supersedes/extends Epoch's March 2025 estimate (9–900×/year, per-token) and sits alongside Gundlach et al. (Mar 2026). Directly relevant to [[concepts/llm-cost-crisis]] economics-of-inference and the Sep 2026 price war ([[events/claude-opus-5-5-gpt-6-release-sep-2026]]). The report is the anchor source for [[concepts/token-economics]].
 
 ## See Also
 

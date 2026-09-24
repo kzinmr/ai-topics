@@ -1,0 +1,62 @@
+---
+title: "My thoughts on Jev"
+date: 2026-09-22
+processed_at: 2026-09-23T10:11:14.172478+00:00
+source_label: "uid=685"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-09-22
+
+**Subject:** My thoughts on Jev
+**Collected:** 2026-09-23T10:11:14.172485+00:00
+**Articles linked:** 12
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZSZyPTJmbHg2Jm5leHQ9aHR0cHMlM0ElMkYlMkZhaXdlZWtseS5zdWJzdGFjay5jb20lMkZwJTJGbXktdGhvdWdodHMtb24tamV2IiwicCI6MjE2OTM3NTUzLCJzIjo2MTQ1NSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzkwMDk3MTk2LCJleHAiOjIxMDU2NzMxOTYsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.NQsjwm_8wxaFCXcjAH232D7z8FTc9fDs39RrpsFd5VQ?
+
+## 2. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vcC9teS10aG91Z2h0cy1vbi1qZXY_dXRtX2NhbXBhaWduPWVtYWlsLWhhbGYtcG9zdCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNVFk1TXpjMU5UTXNJbWxoZENJNk1UYzVNREE1TnpFNU5pd2laWGh3SWpveE56a3lOamc1TVRrMkxDSnBjM01pT2lKd2RXSXROakUwTlRVaUxDSnpkV0lpT2lKd2IzTjBMWEpsWVdOMGFXOXVJbjAuVm82eDIyZXZpVmE0aWw5bEtndzdvYUNobHJwS0k3ZEMwUHJnb05jZFdHNCIsInAiOjIxNjkzNzU1MywicyI6NjE0NTUsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc5MDA5NzE5NiwiZXhwIjoyMTA1NjczMTk2LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.cgZO3o4HzMxsmUHZMbqs1heab29DHFBomN6zm6P2Ro4?
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=216937553&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTY5Mzc1NTMsImlhdCI6MTc5MDA5NzE5NiwiZXhwIjoxNzkyNjg5MTk2LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.Vo6x22eviVa4il9lKgw7oaChlrpKI7dC0PrgoNcdWG4
+
+## 4. Link
+
+- **URL:** https://substack.com/@aiweekly
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=216937553&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTY5Mzc1NTMsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzkwMDk3MTk2LCJleHAiOjE3OTI2ODkxOTYsImlzcyI6InB1Yi02MTQ1NSIsInN1YiI6InJlYWN0aW9uIn0.b2kAK_Ya_w9oaO2bMppYy64D-bDoVCUN_VUkQkC0UI0&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=216937553&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTY5Mzc1NTMsImlhdCI6MTc5MDA5NzE5NiwiZXhwIjoxNzkyNjg5MTk2LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.Vo6x22eviVa4il9lKgw7oaChlrpKI7dC0PrgoNcdWG4&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=216937553&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTY5Mzc1NTMsImlhdCI6MTc5MDA5NzE5NiwiZXhwIjoxNzkyNjg5MTk2LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.Vo6x22eviVa4il9lKgw7oaChlrpKI7dC0PrgoNcdWG4
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/aiweekly/p/my-thoughts-on-jev?utm_source=substack&utm_medium=email&utm_campaign=email-restack-comment&action=restack-comment&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMTY5Mzc1NTMsImlhdCI6MTc5MDA5NzE5NiwiZXhwIjoxNzkyNjg5MTk2LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.Vo6x22eviVa4il9lKgw7oaChlrpKI7dC0PrgoNcdWG4&utm_source=substack&utm_medium=email
+
+## 9. Link
+
+- **URL:** https://open.substack.com/pub/aiweekly/p/my-thoughts-on-jev?utm_source=email&redirect=app-store-no-desktop&inbox=true&utm_campaign=email-read-in-app
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9cG9zdCZ1dG1fY2FtcGFpZ249ZW1haWwtY2hlY2tvdXQmbmV4dD1odHRwcyUzQSUyRiUyRmFpd2Vla2x5LnN1YnN0YWNrLmNvbSUyRnAlMkZteS10aG91Z2h0cy1vbi1qZXYmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0pwWVhRaU9qRTNPVEF3T1RjeE9UWXNJbVY0Y0NJNk1UYzVNalk0T1RFNU5pd2lhWE56SWpvaWNIVmlMVFl4TkRVMUlpd2ljM1ZpSWpvaVkyaGxZMnR2ZFhRaWZRLkNLaV9OTEpqM2FLVFBKNEFDMnZvejU1QzFHVmFuSGZjdHRENnRzaGhrN28iLCJwIjoyMTY5Mzc1NTMsInMiOjYxNDU1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3OTAwOTcxOTYsImV4cCI6MjEwNTY3MzE5NiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.jojnYVOlhuSTRAV8r4_gfqM6h1fwz9AaiJaAtl0mI4A?simple=true&utm_source=paywall&utm_medium=email&utm_content=216937553&next=https://aiweekly.substack.com/p/my-thoughts-on-jev&coupon=9e0aa1c2
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vYWN0aW9uL2Rpc2FibGVfZW1haWw_dG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1UWTVNemMxTlRNc0ltbGhkQ0k2TVRjNU1EQTVOekU1Tml3aVpYaHdJam94T0RJeE5qTXpNVGsyTENKcGMzTWlPaUp3ZFdJdE5qRTBOVFVpTENKemRXSWlPaUprYVhOaFlteGxYMlZ0WVdsc0luMC5qaDJKVGt4aGlOSzd3RlNySXZXNXV5N1FXaFFKZm8tWURCZHh5bkljQVZnIiwicCI6MjE2OTM3NTUzLCJzIjo2MTQ1NSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzkwMDk3MTk2LCJleHAiOjIxMDU2NzMxOTYsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.wbz8Z5uT_Nphy8M3XD-WVlNHUjdHNWYpaJzqZtD7CUc?
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMTY5Mzc1NTMsInMiOjYxNDU1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3OTAwOTcxOTYsImV4cCI6MjEwNTY3MzE5NiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.BMQi_TNe_13-42PBfmWSzvGIemf_oRUTPM5wThtW6N8?
+
