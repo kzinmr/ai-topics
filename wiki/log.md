@@ -99,6 +99,10 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-09-24] report | Discord hot-post (late-night slot 01:30 JST)
+- Topic: "RNNの因果バイアスは拡散に不要だった — dQwen3.5が崩した前提" — niche/architecture pick for late-night slot. dQwen3.5 (arXiv:2609.20751, UT Austin): hybrid attention+RNN backboneがfull-attention制御比で約半分のトークンでDLM適応完了、any-orderデコードも並列デコードも動作。
+- Primary pages: [[entities/dqwen3-5]], [[concepts/diffusion-language-models]], [[concepts/ssm-mamba]]. Supporting: [[concepts/qwen]], [[concepts/transformer-architecture]]. Fresh wikilinks — no overlap with 09-24 morning (compute three-axes), 09-23 (ai-energy/BTM), 09-22 (skill-library/lifelong-memory, Jev/System One). Report-only; no content changes.
+
 ## [2026-09-24] create | queries/test-time-compute-three-axes-2026-09-24
 - Synthesis query page from 3 recent pages: sleep-time-compute, elo-per-token-analysis, machine-studying
 - Thesis: compute-vs-accuracy frontier has 3 axes (before/at/after-peak); benchmarks only measure the middle
