@@ -5948,6 +5948,11 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 
 
 
+## [2026-09-25] report | Discord hot-post (morning slot 09:30 JST)
+- Topic: "13倍/年の思考コスト暴落 × 5ステップ手順 — エージェント生成ソフトが趣味から産業になった48時間" — morning narrative arc joining the two 09-23 ingests: Epoch "Plunging Price of Thought" (~47%/quarter, 13x/yr, GPQA-D o3→GPT-5.6 Luna 725x) as the economic enabler + Mollick's Vibe Building 5-step workflow + Valve Peaks (~14 people, Claude Code) as the shipped-product proof.
+- Primary pages: [[events/the-plunging-price-of-thought-epoch-sep-2026]], [[concepts/agent-generated-software]], [[concepts/vibe-building-workflow]] (all created 09-23, never posted). Supporting: [[events/claude-opus-5-5-gpt-6-release-sep-2026]], [[concepts/token-economics]], [[concepts/epoch-ai]].
+- Fresh wikilinks — no overlap with 09-24 morning (sleep-time-compute/elo-per-token/CPT), 09-23 morning (ai-energy/BTM), 09-22 night (skill-library/lifelong-memory). dedup.recently_covered_topics empty. Report-only; no content changes.
+
 ## [2026-09-24] report | Discord hot-post (morning slot 09:30 JST)
 - Topic: "考え直すタイミングを間違うな — 3枚の論文が描くcomputeの再配分地図" — synthesis of the 09-23 active-crawl triple: sleep-time compute (query前に考える, 約5x cheap +13-18%), Elo-per-token (考え過ぎる境界の診断, 2-phase/3 failure modes), time-incremental CPT (考え直すタイミングの再定義, 5/6 models improved). Thread: 思考の再配置が test-time scaling の次の戦場。
 - Primary pages: [[concepts/sleep-time-compute]], [[concepts/elo-per-token-analysis]], [[concepts/time-incremental-continued-pretraining]] (all created 09-23, never posted). Supporting: [[concepts/machine-studying]], [[concepts/token-economics]], [[concepts/agent-slop]].
