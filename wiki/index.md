@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3098
-> Last updated: 2026-09-23
+> Total pages: 3112
+> Last updated: 2026-09-25
 
-## Entities (931 pages)
+## Entities (935 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -472,6 +472,7 @@
 - [[entities/kore-ai]] — Kore.ai
 - [[entities/koylan-ai]] — Muratcan Koylan (Koylan AI)
 - [[entities/krebsonsecurity-com]] — Brian Krebs
+- [[entities/ken-klippenstein]] — Ken Klippenstein — Investigative journalist; broke the Sept 2026 DHS C&TIS "AI skeptic radicalization" assessment story
 - [[entities/kyle-corbett]] — Kyle Corbett — Redirect → [[entities/kyle-corbitt]] (misspelled duplicate; verification note 2026-08-07)
 - [[entities/kyle-corbitt]] — Kyle Corbitt
 - [[entities/kyle-jeong]] — Kyle Jeong — Browserbase growth engineer; browser agent harness + CDP explainer
@@ -811,6 +812,7 @@
 - [[entities/stella-biderman]] — Stella Biderman — Executive Director and co-founder of EleutherAI; open-weight safety, interpretability over time, Pythia, The Pile, lm-eval
 - [[entities/steve-blank]] — Steve Blank
 - [[entities/steve-yegge]] — Steve Yegge — Veteran software engineer, blogger, AI industry commentator; builds Wyvern MMO with multi-agent fleets via Wheelhouse harness
+- [[entities/stripe]] — Stripe — Payments infrastructure company; internal Knowledge AI platform (Kai) is a leading public enterprise-RAG reference
 - [[entities/stochi]] — Independent AI researcher focused on post-training, agents, RL, model architectures, and ML systems. Previously shipp...
 - [[entities/subquadratic]] — Subquadratic (SubQ)
 - [[entities/substack]] — substack
@@ -861,6 +863,7 @@
 - [[entities/tom-aarsen]] — Tom Aarsen
 - [[entities/tom-renner]] — Tom Renner
 - [[entities/tomasz-tunguz]] — Tomasz Tunguz
+- [[entities/transluce]] — Transluce — AI safety research institute (Alex Mabrey, Nathan Carter); URLQuery-based Agent Activity Report documenting real-world rogue agent behavior
 - [[entities/traversal]] — Traversal
 - [[entities/troy-hunt]] — Troy Hunt
 - [[entities/trq212]] — Thariq Shihipar (@trq212)
@@ -939,7 +942,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2080 pages)
+## Concepts (2099 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1301,6 +1304,7 @@
 - [[concepts/ai-slop]] — AI Slop
 - [[concepts/ai-slop-productivity-paradox]] — AI Slop and the Productivity Paradox
 - [[concepts/ai-skepticism-movement]] — 2026 developer-culture backlash against default-on AI assistance (No AI Fridays, Rust contribution policy)
+- [[concepts/ai-skeptic-radicalization-investigation]] — Sept 2026 reporting (Klippenstein) that DHS C&TIS assessed domestic AI-skeptic commentators as a "radicalization" concern; contested, low confidence
 - [[concepts/ai-subprime]] — AI Subprime Crisis
 - [[concepts/ai-subprime-crisis]] — AI Subprime Crisis
 - [[concepts/ai-supply-chain-security]] — AI Supply Chain Security
@@ -2706,6 +2710,7 @@
 - [[concepts/roberta-williams]] — roberta-williams
 - [[concepts/robotics]] — robotics
 - [[concepts/rodney-browser-automation-cli-for-agents]] — Rodney — Browser Automation CLI for Agents
+- [[concepts/rogue-ai-agent-activity]] — Transluce Agent Activity Report: thousands of real-world URLQuery agent requests revealing unauthorized/rogue agent behavior predating known incidents (baseline from Mar 2026)
 - [[concepts/rubric-middleware]] — RubricMiddleware
 - [[concepts/ruler-openpipe-art]] — RULER (OpenPipe ART Reward Function)
 - [[concepts/runtime-opinionated-sdk]] — Runtime-Opinionated SDK
@@ -2863,6 +2868,7 @@
 - [[concepts/statistical-process-control]] — Statistical Process Control
 - [[concepts/steven-pinker]] — Steven Pinker
 - [[concepts/structured-outputs]] — Structured Outputs — Reliable LLM Output via Schema Validation
+- [[concepts/stripe-knowledge-ai-platform]] — Stripe Knowledge AI (Kai): production enterprise knowledge assistant; hybrid retrieval over Slack/Drive/Confluence/Jira/GitHub + source-freshness layer + eval-driven tuning
 - [[concepts/structured-test-time-scaling]] — Structured Test-Time Scaling
 - [[concepts/subagent-patterns]] — Architectural patterns for how main agents manage and coordinate subagents, ranging from simple inline tool calls to ...
 - [[concepts/subagents]] — Pattern where a main agent spawns independent sub-agents in parallel to delegate tasks.
@@ -3107,7 +3113,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (8 pages)
+## Queries (9 pages)
 
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
@@ -3117,3 +3123,4 @@
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/wiki-graph-analysis-weekly-2026-09-18]] — Weekly Wiki Graph Analysis (2026-09-18) — 3,079 pages (recursive scan); 446 orphans (303 content-rich), 2,810 broken links (919 raw-ref-as-wikilink), 8 real duplicate groups, 1,661 stale, 0 tag violations
 - [[queries/test-time-compute-three-axes-2026-09-24]] — Compute-vs-accuracy frontier has 3 axes (sleep-time / test-time / post-peak); benchmarks only measure the middle one
+- [[queries/wiki-graph-analysis-weekly-2026-09-25]] — Weekly Wiki Graph Analysis (2026-09-25) — 3,112 pages; 465 orphans (316 rich), 3,512 broken refs (context-engineering hub = 188), 8 unresolved dup groups + 48 dir-collision stubs, 2,230 stale; state snapshot persisted

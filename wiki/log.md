@@ -5957,3 +5957,9 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Topic: "考え直すタイミングを間違うな — 3枚の論文が描くcomputeの再配分地図" — synthesis of the 09-23 active-crawl triple: sleep-time compute (query前に考える, 約5x cheap +13-18%), Elo-per-token (考え過ぎる境界の診断, 2-phase/3 failure modes), time-incremental CPT (考え直すタイミングの再定義, 5/6 models improved). Thread: 思考の再配置が test-time scaling の次の戦場。
 - Primary pages: [[concepts/sleep-time-compute]], [[concepts/elo-per-token-analysis]], [[concepts/time-incremental-continued-pretraining]] (all created 09-23, never posted). Supporting: [[concepts/machine-studying]], [[concepts/token-economics]], [[concepts/agent-slop]].
 - Fresh wikilinks — no overlap with 09-23 morning (ai-energy/BTM), 09-22 night (skill-library/lifelong-memory), 09-22 morning (Jev/System One). dedup.recently_covered_topics empty. Report-only; no content changes.
+
+## [2026-09-25] query | weekly wiki graph analysis
+- Recursive graph scan (3,112 pages: entities 935, concepts 2,099, comparisons 35, events 35, queries 8) vs [[queries/wiki-graph-analysis-weekly-2026-09-18]] baseline. Report: [[queries/wiki-graph-analysis-weekly-2026-09-25]]. Index: Queries 8→9.
+- Key deltas: orphans 446→465 (rich 303→316), broken refs 2,810→3,512 (targets +235), oversized 243→315, stale 1,661→2,230 (June batch crossed 90d — policy issue, not rot).
+- Unresolved carryover (2nd week): 8 Class-A duplicate groups; `concepts/context-engineering` dir-hub = 188 broken refs (top lever). New taxonomy: 48 flat-vs-subdir basename collisions (~22 are 25L redirect candidates), distinct from true dups.
+- New: graph state snapshot persisted to `wiki/_meta/graph-analysis-state.json` for next-week set-delta diffing. 9 pages missing `sources:` (local-llm cluster). Report-only run; no page content modified.
