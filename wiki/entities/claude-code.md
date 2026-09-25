@@ -2,7 +2,7 @@
 title: Claude Code
 type: entity
 created: 2026-04-24
-updated: 2026-08-31
+updated: 2026-09-25
 tags:
   - product
   - coding-agent
@@ -637,5 +637,15 @@ He characterized the suspension as the output of a separate account-classificati
 **Significance**: this is the account-enforcement side of the [[concepts/harness-engineering]] design controversy — Anthropic's stance on third-party harnesses pointed at rival models (see also the May 2026 programmatic usage metering and the OpenClaw/OpenCode targeting above). Cherny's "different account classifier, not policy" framing suggests enforcement is automated and model-agnostic rather than a deliberate anti-harness policy.
 
 Source: [[raw/newsletters/2026-08-10-the-model-openai-won-t-release]]
+
+## Claude Team Plan Seat Minimum (September 2026)
+
+On 2026-09-25, **Boris Cherny** ([[entities/boris-cherny|creator of Claude Code]]) clarified in a reply on X that Anthropic's **Claude Team plan requires a minimum of 2 seats**, citing the official Help Center article "What is the Team plan?".
+
+> "@30Thrd Team has a 2-seat minimum" — [tweet](https://x.com/bcherny/status/2103550536536793498)
+
+Per the Help Center page, the Team plan is a paid tier for the Claude chat experience with a larger per-session usage allowance than Pro, optional prepaid usage credits, centralized admin/billing tools, and SSO. The 2-seat minimum is relevant context for individuals evaluating Team as an alternative to Pro/Max (see the August 2026 auto-mode default note above, which also covers Team plans).
+
+Source: [[raw/x-notes/2026-09-25_bcherny_team-plan-2-seat-minimum]]
 
 

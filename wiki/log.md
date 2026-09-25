@@ -1,3 +1,9 @@
+## [2026-09-25] ingest | x-accounts-scan: bcherny — Claude Team plan 2-seat minimum
+
+- Scanned 11/84 tracked accounts (budget 12); 1 new linked post.
+- @bcherny (Boris Cherny) reply: "Team has a 2-seat minimum" + link to support.claude.com Team plan Help Center article. Fetched full tweet context via xurl direct-ID lookup; low engagement (964 imp, 2 likes) — support-style FAQ reply, not an announcement.
+- Saved raw note `raw/x-notes/2026-09-25_bcherny_team-plan-2-seat-minimum.md`; appended "Claude Team Plan Seat Minimum (September 2026)" section to `entities/claude-code.md`. No new pages; index.md unchanged (update-only).
+
 ## [2026-09-25] lint | wiki-health-fix — all clean, no action
 
 - index.md corruption: 0 (pipe=0, line-number=0, triple-bracket=0, space-prefix=0); validate_index.py exit 0.
