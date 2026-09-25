@@ -1,3 +1,10 @@
+## [2026-09-25] lint | wiki-health-fix — all clean, no action
+
+- index.md corruption: 0 (pipe=0, line-number=0, triple-bracket=0, space-prefix=0); validate_index.py exit 0.
+- Reported 2 "orphans" (concepts/gpt/_archive/*) are ARCHIVED content — intentionally excluded from index.md (false positives, not debt).
+- Stale 2854 / raw-backlog 6059 = report-only (informational, no auto-fix per policy).
+- No commit (working tree holds sibling-pipeline WIP only; nothing to fix).
+
 ## [2026-09-24] repair | recover token-economics + complete Sep-22/23 batch (cron skeleton-enrich)
 
 - **REPAIR**: A prior (crashed) batch had destructively overwritten `concepts/token-economics.md` from 339 lines (created 2026-04-18, ~15 sources, dozens of case studies) down to a 54-line rewrite with 1 source — an AGENTS.md rich-page-overwrite violation. Restored the rich committed version, then re-appended the only genuinely-new content as a dated section: **"The Plunging Price of Thought (Epoch AI, Sep 2026)"** (Emberson & Roodman — ~47%/quarter, 13x/yr cost-of-performance decline; o3 $0.30 -> GPT-5.6 Luna $0.0004/question 725x drop; reference-token method) + cross-refs to epoch-ai, prompt-caching, model-routing, the Sep price-war event. Net: 361 lines, all history preserved.
@@ -5963,3 +5970,8 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Key deltas: orphans 446→465 (rich 303→316), broken refs 2,810→3,512 (targets +235), oversized 243→315, stale 1,661→2,230 (June batch crossed 90d — policy issue, not rot).
 - Unresolved carryover (2nd week): 8 Class-A duplicate groups; `concepts/context-engineering` dir-hub = 188 broken refs (top lever). New taxonomy: 48 flat-vs-subdir basename collisions (~22 are 25L redirect candidates), distinct from true dups.
 - New: graph state snapshot persisted to `wiki/_meta/graph-analysis-state.json` for next-week set-delta diffing. 9 pages missing `sources:` (local-llm cluster). Report-only run; no page content modified.
+
+## [2026-09-25] query | late-night hot-post (01:30 JST slot)
+- Selected [[concepts/elo-per-token-analysis]] (arXiv:2609.15309) — niche, high-signal eval-method topic; no recently-covered-topic collision.
+- Read raw source `raw/articles/2026-09-23_arxiv_2609.15309_...md` to ground numbers (+264/+355 Elo split, 100M-token sessions, superlinear human contestants, scaling inflection point).
+- Side-note: page's `related:`/body wikilinks `[[concepts/agent-benchmarks]]` and `[[concepts/context-engineering]]` are broken bare-slug targets (real: `concepts/harness-engineering/context-engineering`). Flag for health-fix lint; no page edits made in report job.
