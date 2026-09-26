@@ -1,0 +1,103 @@
+{
+  "run_id": "20260926T101022Z",
+  "triaged_at": "2026-09-26T10:30:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 5,
+  "summary": {
+    "critical": 1,
+    "high": 2,
+    "low": 2,
+    "note": "4 newsletters contain substantive external articles; beehiiv links 403 (Cloudflare), classified by subject/source only. All links resolved via curl redirect tracing."
+  },
+  "newsletters": [
+    {
+      "message_id": "<20260925.192318.85ca4234@mta17>",
+      "subject": "🚨 OpenAI's Agent Wouldn't Take No",
+      "raw_path": "wiki/raw/newsletters/2026-09-25-openai-s-agent-wouldn-t-take-no.md",
+      "source_label": "uid=705",
+      "importance": "critical",
+      "reason": "AI agent autonomy/refusal-bypass incident at OpenAI — directly in core wiki scope (AI agents, AI safety). All 20 beehiiv v2/c links returned HTTP 403 (Cloudflare JS challenge), so per-link classification impossible; ingest should classify by newsletter title + browser fetch.",
+      "action": "ingest",
+      "links_resolvable": false,
+      "newsjacking_score": 4,
+      "tags": ["ai-agents", "ai-safety", "openai"]
+    },
+    {
+      "message_id": "<20260925155822.3.546e2a8cf5a5e0de@mg-d1.substack.com>",
+      "subject": "The Chinese AI Infrastructure Boom: Introducing the SemiAnalysis China Datacenter Model",
+      "raw_path": "wiki/raw/newsletters/2026-09-25-the-chinese-ai-infrastructure-boom-introducing-the-semianalysis-china-datacenter.md",
+      "source_label": "uid=704",
+      "importance": "high",
+      "reason": "SemiAnalysis flagship piece introducing a China AI datacenter model — inference/training infrastructure + geopolitical AI. Existing entity page entities/semianalysis.md should be updated.",
+      "action": "ingest",
+      "links_resolvable": true,
+      "external_articles": [
+        {"url": "https://newsletter.semianalysis.com/p/the-chinese-ai-infrastructure-boom", "title": "The Chinese AI Infrastructure Boom (main post)", "relevance": "high"},
+        {"url": "https://semianalysis.com/china-datacenter-model/", "title": "SemiAnalysis China Datacenter Model (product page)", "relevance": "high"},
+        {"url": "https://semianalysis.com/datacenter-industry-model/", "title": "Datacenter Industry Model (product page)", "relevance": "medium"},
+        {"url": "https://newsletter.semianalysis.com/p/the-wild-wild-west-of-lego-datacenters", "title": "The Wild Wild West of Lego Datacenters", "relevance": "medium"},
+        {"url": "https://semianalysis.com/2025-06-30/how-oracle-is-winning-the-ai-compute-market/", "title": "How Oracle Is Winning the AI Compute Market", "relevance": "medium"},
+        {"url": "https://newsletter.semianalysis.com/p/12b-of-us-ratepayers-money-wasted", "title": "$12B of US Ratepayers' Money Wasted", "relevance": "low"}
+      ],
+      "newsjacking_score": 4,
+      "tags": ["semianalysis", "ai-infrastructure", "datacenters", "china", "geopolitics"]
+    },
+    {
+      "message_id": "<20260925231441.3.385148e2781bee0e@mg2.substack.com>",
+      "subject": "OpenRouter: from Seed to Stripe — with OpenRouter's Alex Atallah & AMP's Anjney Midha",
+      "raw_path": "wiki/raw/newsletters/2026-09-25-openrouter-from-seed-to-stripe-with-openrouter-s-alex-atallah-amp-s-anjney-midha.md",
+      "source_label": "uid=706",
+      "importance": "high",
+      "reason": "Latent Space (swyx) podcast episode with OpenRouter CEO Alex Atallah — LLM routing/infra business. Existing pages entities/openrouter.md and concepts/openrouter-state-of-ai-2025.md should gain a funding/trajectory section. Possible new entities: alex-atallah, anjney-midha.",
+      "action": "ingest",
+      "links_resolvable": true,
+      "external_articles": [
+        {"url": "https://open.substack.com/pub/swyx/p/openrouter", "title": "OpenRouter: from Seed to Stripe (Latent Space episode)", "relevance": "high"},
+        {"url": "https://www.youtube.com/watch?v=h5dlIPM0X18", "title": "Podcast video (YouTube)", "relevance": "medium"},
+        {"url": "https://ai.engineer/speakers/alex-atallah", "title": "AI Engineer speaker page: Alex Atallah", "relevance": "low"}
+      ],
+      "newsjacking_score": 3,
+      "tags": ["openrouter", "llm-routing", "ai-startups", "latent-space", "alex-atallah"]
+    },
+    {
+      "message_id": "<20260925233318.3.6ffcd3b8238f9cfe@mg-d1.substack.com>",
+      "subject": "Jev.",
+      "raw_path": "wiki/raw/newsletters/2026-09-25-jev.md",
+      "source_label": "uid=707",
+      "importance": "low",
+      "reason": "Aakash Gupta newsletter (aibyaakash.com/p/jev-ai-model) — mostly link roundup + ads, but 3 externally-resolved articles are genuinely relevant and worth selective ingest.",
+      "action": "selective-ingest",
+      "links_resolvable": true,
+      "external_articles": [
+        {"url": "https://www.axios.com/2026-09-19/google-safety-incidents-testing-hacks", "title": "Axios: Google safety incidents / testing hacks", "relevance": "high", "note": "AI safety incident reporting — wiki-actionable"},
+        {"url": "https://www.bloomberg.com/news/articles/2026-09-21/amazon-blocks-meta-s-muse-ai-agent-from-its-retail-site", "title": "Bloomberg: Amazon blocks Meta's Muse AI agent from retail site", "relevance": "high", "note": "Agent-ecosystem conflict (agents-vs-platforms) — strong wiki signal"},
+        {"url": "https://claude.dev/blog/how-we-made-claude-ai-faster/", "title": "Claude dev blog: How we made Claude AI faster", "relevance": "medium", "note": "Anthropic inference performance engineering"},
+        {"url": "https://amplitude.com/agent-analytics", "title": "Amplitude Agent Analytics", "relevance": "low", "note": "sponsor/ad"}
+      ],
+      "newsjacking_score": 2,
+      "tags": ["ai-safety", "ai-agents", "anthropic", "agent-economics"]
+    },
+    {
+      "message_id": "<20260925135024.3.a00e68b016888273@mg2.substack.com>",
+      "subject": "50 years of tech devices",
+      "raw_path": "wiki/raw/newsletters/2026-09-25-50-years-of-tech-devices.md",
+      "source_label": "uid=703",
+      "importance": "low",
+      "reason": "Ben's Bites link roundup. Main post is a hardware-history retrospective (bentossell.com/devices) — outside LLM/agent core scope. Remaining links are sponsor pages (factory.com, here.now) and images.",
+      "action": "skip",
+      "links_resolvable": true,
+      "external_articles": [
+        {"url": "https://bentossell.com/devices/", "title": "50 years of tech devices (Ben Tossell)", "relevance": "low"}
+      ],
+      "newsjacking_score": 0,
+      "tags": ["hardware", "retrospective"]
+    }
+  ],
+  "recommended_actions": [
+    "PRIORITY: browser-fetch or find alternate source for 'OpenAI's Agent Wouldn't Take No' (beehiiv 403-blocked) — likely agent-safety incident worth a concepts/ page",
+    "Update entities/semianalysis.md with China Datacenter Model launch",
+    "Update entities/openrouter.md + concepts/openrouter-state-of-ai-2025.md with Seed-to-Stripe funding story; consider entities/alex-atallah.md",
+    "Consider concepts/ page or events/ entry for Amazon-blocks-Meta-Muse-agent (agent-vs-platform access conflict)",
+    "Google safety incidents (Axios) — cross-reference existing AI safety pages"
+  ]
+}
