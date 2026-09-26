@@ -1,3 +1,15 @@
+## [2026-09-26] lint | wiki-health-fix — index reconciliation + orphan registration
+
+- Digest corruption claims (pipe/line-number/triple-bracket/space-prefix) all verified 0 live — no Phase 1 fixes needed.
+- Registered 2 orphan pages in index.md: `concepts/codex/codex-harness-controls`, `concepts/contextmaxxing` (alphabetical insertion, verified).
+- Skipped digest orphans: `concepts/context-engineering/_index` (dir hub — `_index` variant not registered by design), `concepts/gpt/_archive/*` (archived, 2 false positives).
+- Ghost entries: 0 (recursive scan, incl. `_index` dir-link resolution). validate_index.py: clean (3128 lines).
+- Index header recount: Total 3112→3118, Concepts 2099→2103 (filesystem-truth formula: entities 935 + concepts 2101 + comparisons 35 + events 35 + queries 9 + dir-links 3).
+- Unprocessed raw articles: 6091/9945 (report-only). Stale >30d: 2871 (report-only; recommend per-type threshold policy). 865 unique tags (weekly tag-audit covers taxonomy drift).
+- Note: working tree contained concurrent sibling-pipeline WIP (transluce, stripe, ken-klippenstein, rogue-ai pages); left untouched, committed only index.md + log.md.
+
+---
+
 ## [2026-09-25] ingest | x-accounts-scan: bcherny — Claude Team plan 2-seat minimum
 
 - Scanned 11/84 tracked accounts (budget 12); 1 new linked post.

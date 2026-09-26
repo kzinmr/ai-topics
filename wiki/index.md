@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3112
-> Last updated: 2026-09-25
+> Total pages: 3118
+> Last updated: 2026-09-26
 
 ## Entities (935 pages)
 
@@ -942,7 +942,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2099 pages)
+## Concepts (2103 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1537,6 +1537,7 @@
 - [[concepts/codex/astral-acquisition]] — OpenAI's acquisition of Astral (creators of uv, Ruff, ty) and its implications for Codex — integrating foundational P...
 - [[concepts/codex/codex-agent-loop]] — Codex Agent Loop
 - [[concepts/codex/codex-app-server]] — Codex App Server
+- [[concepts/codex/codex-harness-controls]] — Codex Harness Controls — sandboxing, approvals, auto-review, hooks, subagents
 - [[concepts/codex/codex-goal]] — Codex /goal — OpenAI's Built-in Ralph Loop
 - [[concepts/codex/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting
 - [[concepts/codex/codex-knowledge-work]] — Codex for Knowledge Work
@@ -1621,6 +1622,7 @@
 - [[concepts/container-context]] — Container Context
 - [[concepts/content-understanding]] — Content Understanding
 - [[concepts/context-as-memory-hierarchy]] — Context as Memory Hierarchy (L1/L2/L3)
+- [[concepts/context-engineering/_index]] — Context Engineering — Concepts hub for context-engineering sub-pages (context rot, compression, compaction, …)
 - [[concepts/context-engineering/context-anxiety]] — Context Anxiety
 - [[concepts/context-engineering/context-compaction]] — Context Compaction
 - [[concepts/context-engineering/context-compression]] — Context Compression Techniques
