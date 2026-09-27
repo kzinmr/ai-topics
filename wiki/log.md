@@ -131,6 +131,14 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+## [2026-09-27] update | machine-studying — Sep-2026 converging-evidence section
+
+- Appended "Update (September 2026)" section to `concepts/machine-studying.md` cross-linking
+  `concepts/elo-per-token-analysis` (arXiv:2609.15309) and
+  `concepts/time-incremental-continued-pretraining` (arXiv:2609.23916) as independent support
+  for the "memorization ≠ expertise" thesis. Bumped `updated` to 2026-09-27. No new pages;
+  index.md unchanged (update-only). Triggered by morning hot-post slot narrative synthesis.
+
 ## [2026-09-24] report | Discord hot-post (late-night slot 01:30 JST)
 - Topic: "RNNの因果バイアスは拡散に不要だった — dQwen3.5が崩した前提" — niche/architecture pick for late-night slot. dQwen3.5 (arXiv:2609.20751, UT Austin): hybrid attention+RNN backboneがfull-attention制御比で約半分のトークンでDLM適応完了、any-orderデコードも並列デコードも動作。
 - Primary pages: [[entities/dqwen3-5]], [[concepts/diffusion-language-models]], [[concepts/ssm-mamba]]. Supporting: [[concepts/qwen]], [[concepts/transformer-architecture]]. Fresh wikilinks — no overlap with 09-24 morning (compute three-axes), 09-23 (ai-energy/BTM), 09-22 (skill-library/lifelong-memory, Jev/System One). Report-only; no content changes.

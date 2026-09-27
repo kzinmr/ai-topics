@@ -1,7 +1,7 @@
 ---
 title: "Machine Studying — Agents Developing Expertise from Corpora"
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-09-27
 type: concept
 tags:
   - training
@@ -108,3 +108,22 @@ Machine studying is described as "a central and unrecognized bottleneck for down
 - Will synthesized environments align with unseen downstream tasks?
 - Can weight updates and context management be combined effectively?
 - How to measure expertise efficiency independent of model scale?
+
+## Update (September 2026) — converging evidence: efficiency, not memorization
+
+Two September 2026 results independently corroborate this page's core insight that
+"memorization ≠ expertise":
+
+- [[concepts/elo-per-token-analysis|Elo-per-token analysis]] (arXiv:2609.15309) measures the
+  *rate* at which agents convert tokens into rating gains — the same "expertise = efficient
+  conversion of inference compute into accurate work" definition this page uses — and shows
+  agents *degrade* past a peak via context loss and self-contradiction. High knowledge ≠ high
+  expertise.
+- [[concepts/time-incremental-continued-pretraining|Time-incremental CPT]] (arXiv:2609.23916)
+  shows weight-level knowledge refresh is near-free (macro-avg within 0.01, 5/6 models improve
+  even pre-cutoff recall) when crawl overlap acts as natural replay — undercutting the
+  "catastrophic-forgetting dread" framing that would make paradigm 1 (CPT) look unpromising in
+  principle, while leaving the *expertise-efficiency* bottleneck unresolved.
+
+Read together: getting knowledge *into* the model is becoming cheap; making the model *use it
+efficiently* is the open bottleneck — exactly the studying-intelligence gap StudyBench measures.
