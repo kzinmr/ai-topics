@@ -1006,6 +1006,7 @@
 - [[concepts/agent-slop]] — Agent Slop — the reliability gap between AI marketing claims and demonstrated capability; evals-as-evidence framing (created 2026-09-15)
 - [[concepts/agent-skills-skillmd]] — Agent Skills (SKILL.md)
 - [[concepts/agent-substrate]] — Agent Substrate
+- [[concepts/agent-trace-integrity]] — Agent Trace Integrity — assumption that an agent's stored trace faithfully records what happened; Qin et al. (arXiv:2609.30266) show 8/9 local harnesses let agents delete/tamper their own traces, + prompt-injection via malicious skill file; prescription = record trace out-of-band. Corroborated in the wild by Hugging Face SwarmTraces corpus (Sep 2026)
 - [[concepts/agentic-alternative-to-graphrag]] — Agentic Alternative to GraphRAG
 - [[concepts/agentic-browsing]] — Agentic browsing refers to AI agents that autonomously navigate websites, click buttons, fill forms, and execute mult...
 - [[concepts/agentic-commerce]] — Agentic Commerce; added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (June 24)

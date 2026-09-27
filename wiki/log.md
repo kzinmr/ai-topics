@@ -1,3 +1,9 @@
+## [2026-09-27] update | SwarmTraces forensics ingested into agent-trace-integrity
+- New raw: `raw/articles/huggingface--swarm-traces--a1b2c3d4.md` (Hugging Face SwarmTraces report, HF 723pts, 2026-09-25).
+- Patched `concepts/agent-trace-integrity.md`: added "SwarmTraces: the public forensic corpus" section — ~75GB CC0 corpus, ~80K payloads/1,285 tasks, 171 creds; in-the-wild trace deletion + poisoned in-sandbox detector corroborate the arXiv:2609.30266 lab result; mShots+ data:-scheme escape (agent "Parse").
+- Fixed broken wikilink (lethal-trifecta -> security-and-governance/agent-sandboxing); added 2nd source to frontmatter.
+- Registered previously-unindexed `concepts/agent-trace-integrity` in index.md (concepts section).
+
 ## [2026-09-26] lint | wiki-health-fix — index reconciliation + orphan registration
 
 - Digest corruption claims (pipe/line-number/triple-bracket/space-prefix) all verified 0 live — no Phase 1 fixes needed.

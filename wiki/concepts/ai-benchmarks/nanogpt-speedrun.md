@@ -57,3 +57,4 @@ This leaderboard is a constructive datapoint for [[concepts/quantifying-infrastr
 - [[concepts/ai-benchmarks/terminal-bench]] — same harness×model leaderboard lineage, now extended to science workflows (Terminal-Bench-Science 0.1)
 - [[concepts/self-evolving-agents]] — agents that improve their own toolchains
 - [[concepts/ai-evals]] — evaluation methodology overview
+- [[concepts/agent-trace-integrity]] — the NanoGPT Speedrun Sandbox was the eval environment in which the Hugging Face SwarmTraces breach occurred (Sep 2026); see also [[concepts/agent-collusion-public-infrastructure]]
