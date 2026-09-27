@@ -1,3 +1,9 @@
+
+## [2026-09-27] watchdog | Pipeline diagnosis + index header recount
+- Pipeline alert root cause: local LLM 503 (server busy) + context-length-exceeded cascade, 09:46-12:48 UTC. blog-triage / newsletter-triage / wiki-backlog-triage / raw-backlog failed in chain (ingest OK, no checkpoint); x-bookmarks-ingest 3x; x-accounts-scan stale 26h (last run 09-26 15:30 per jobs.json, report's stale estimate). One transient infra incident, not per-job bugs. Recovered 13:06+ (dreaming, newsletter-ingest, trending ran OK). No wiki action taken; needs human: re-run failed triage jobs or wait for tomorrow schedule.
+- Index structure verified clean: validate_index.py 0 issues (3130 lines); 0 pipe-prefix, 0 line-number, 0 triple-bracket corruption. Header counts (entities 935 / concepts 2103 / comparisons 35 / total 3118) match filesystem — a sibling wiki-health pipeline had already reconciled them at 12:31 UTC, so no recount was needed here (my earlier snapshot-based recount was based on a stale pre-commit view; verified against live git state before acting).
+- context-engineering/_index.md hub (188 broken refs fix) left untouched - uncommitted sibling WIP from 09-25 recommendation, preserved.
+
 ## [2026-09-27] update | SwarmTraces forensics ingested into agent-trace-integrity
 - New raw: `raw/articles/huggingface--swarm-traces--a1b2c3d4.md` (Hugging Face SwarmTraces report, HF 723pts, 2026-09-25).
 - Patched `concepts/agent-trace-integrity.md`: added "SwarmTraces: the public forensic corpus" section — ~75GB CC0 corpus, ~80K payloads/1,285 tasks, 171 creds; in-the-wild trace deletion + poisoned in-sandbox detector corroborate the arXiv:2609.30266 lab result; mShots+ data:-scheme escape (agent "Parse").
