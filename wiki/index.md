@@ -500,7 +500,7 @@
 - [[entities/lm-studio]] — LM Studio — Local LLM desktop app + Bionic agent for open models (Element Labs)
 - [[entities/lmsys-org]] — LMSYS Org
 - [[entities/lora-fine-tuning]] — LoRA (Low-Rank Adaptation) — efficient fine-tuning method for LLMs, and the Doc-to-LoRA / Text-to-LoRA paradigm from ...
-- [[entities/lovable]] — Lovable — Swedish vibe-coding startup; $400M raise at $13.3B valuation (double Dec 2025), $600M revenue run rate (Aug 2026)
+- [[entities/lovable]] — Lovable — Swedish vibe-coding startup; $200M Series A ($100M ARR fastest, Jul 2025) -> $400M Series B @ $6.6B (Feb 2026) -> $400M @ $13.3B (Aug 2026); Lovable 2.0 + Lovable Agents (Sep 2026)
 - [[entities/lucas-atkins]] — Lucas Atkins
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley
@@ -853,7 +853,7 @@
 - [[entities/thorsten-ball]] — Thorsten Ball
 - [[entities/thoughtful-lab]] — Thoughtful Lab
 - [[entities/tilert]] — TileRT; SemiAnalysis InferenceX benchmark: 340 tok/s/user on 8×B200 (1.9x GB300 NVL72), 494.2 FP8 1k/1k (3.6x) (Aug 10)
-- [[entities/tim-davis]] — Tim Davis
+- [[entities/tim-davis]] — Tim Davis; Modular co-founder (acq. Qualcomm Jul 2026, now SVP/GM at Qualcomm); ex-Google Brain PM (TensorFlow); probabilistic engineering, token economics essays
 - [[entities/tim-dettmers]] — Researcher at the University of Washington (NLP/ML), creator of bitsandbytes, LLM.int8, and co-creator of QLoRA. Pi...
 - [[entities/tim-oreilly]] — Tim O'Reilly
 - [[entities/tim-sh]] — Tim Sherratt — historian, hacker, GLAM Workbench creator
