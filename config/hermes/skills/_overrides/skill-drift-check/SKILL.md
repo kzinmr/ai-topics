@@ -88,6 +88,63 @@ Skills can be deleted when:
 - Fully duplicated in another skill's `references/` directory
 - Obsolete tool workflows (deprecated APIs, removed features)
 
+## Inventory Report Anomalies = Fix the Script, Not the Tree (2026-09-27)
+
+The `check-skill-inventory` weekly job was fed a bad script for ~5 weeks. Signals that
+the *report* was broken rather than the skill tree being dirty:
+
+- "Managed (git): 0" while `find ~/ai-topics/config/hermes/skills -name SKILL.md | wc -l` says 74
+- ~25 repo-managed skills (blog-writing, wiki-*, llm-wiki, trending-topics-reporting,
+  xurl, arxiv, xurl, youtube-content, ...) appearing as "unmanaged local"
+- "Builtin: 0" even though builtins are enabled and loaded
+- The identical 95-item list repeated every week, with a growing `.archive/` tail
+  (archived skills showed up as "new unmanaged" because `.archive` was counted as a category)
+
+Root causes (all fixed in `ai-topics/scripts/check_new_skills.py`, commit 15d859ff — copy
+it over `~/.hermes/scripts/check_new_skills.py`, cron runs that copy):
+
+1. `MANAGED_SKILLS = Path(__file__).resolve().parent.parent/"config"/...` — the script is
+   *copied* into `~/.hermes/scripts/`, so that path never existed → managed count 0.
+   Must be the absolute `/opt/data/ai-topics/config/hermes/skills`.
+2. Managed detection only understood `<category>/<name>/SKILL.md` (2 path parts), blind to
+   the 2026-08-23 `_custom/` `_overrides/` `_adhoc/` 3-layer layout.
+3. Builtin detection scanned `~/.hermes/hermes-agent/skills/`, which does not exist here
+   (builtins ship with the venv install, not the profile).
+
+**The reliable oracle is `hermes skills list`**, not a filesystem scan. Pitfalls when
+parsing it:
+- `rich` truncates names to `…` at default width → run with `COLUMNS=200`, and drop any
+  name ending in `…` rather than trusting it.
+- No `--json` for `skills list`.
+- Splitting a bordered row on `│` yields leading/trailing empty cells:
+  `['', name, category, source, trust, status, '']` → drop the first element before indexing.
+- `source` is `local`/`builtin`/`hub`; category is blank for external-dir skills.
+
+After the fix the steady state is **Managed 76 / Unmanaged 5 / Builtin 70**, and the 5
+unmanaged (code-quality, hermes-repo-sync, kanban, planning-and-execution, yuanbao) are
+all either superseded by umbrella skills or gateway plumbing — i.e. still nothing to promote.
+
+### Stray skill directories with mismatched frontmatter names
+`~/.hermes/skills/milksandmatcha/SKILL.md` declared `name: wiki-git-sync` — a duplicate
+copy that had absorbed person-entity trivia (MilksandMatcha / 0xSero notes) into its body.
+The real skill lives elsewhere and loads as `wiki-git-sync`; the repo's canonical copy of
+that person knowledge is `wiki/entities/milksandmatcha.md`. A directory whose name differs
+from its frontmatter `name:` is a stray artifact, not a loadable skill — the fallback
+filesystem scan now skips those, and the stray was moved to
+`~/.hermes/skills/.archive/stray-2026-09-27/wiki-git-sync-stray-copy`.
+Before deleting such a copy, diff it against the real skill AND grep the wiki for the
+entity knowledge so nothing unique is lost.
+
+### If the fix is reverted or the job misfires again
+```bash
+diff ~/.hermes/scripts/check_new_skills.py /opt/data/ai-topics/scripts/check_new_skills.py
+cp /opt/data/ai-topics/scripts/check_new_skills.py ~/.hermes/scripts/check_new_skills.py
+python3 /opt/data/ai-topics/scripts/check_new_skills.py   # expect Managed 76 / Unmanaged ~5
+```
+Re-seeding: the baseline is `~/.hermes/scripts/cache/skills_baseline.json`; the first run
+after a definition change reports spurious new/removed entries — run it twice and trust the
+second.
+
 ## CRITICAL: Pre-Flight Checklist
 
 **NEVER skip this checklist before ANY skill operation (archive, delete, move, rename).**
