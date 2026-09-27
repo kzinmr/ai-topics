@@ -236,7 +236,7 @@
 - [[entities/descript-audio-codec]] — Descript Audio Codec (DAC)
 - [[entities/devin]] — Devin (Cognition AI)
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy) — Pragmatic Leverage, FIC, 12-Factor Agents
-- [[entities/dimillian]] — Guillaume Charpiat (dimillian)
+- [[entities/dimillian]] — Thomas Ricouard (Dimillian) — iOS/SwiftUI dev turned Codex Developer Experience @OpenAI; Ice Cubes & CodexMonitor author
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
 - [[entities/discovery-loop]] — Discovery Loop — PBC founded Aug 2026 by Jeff Dean, Sanjay Ghemawat, Oriol Vinyals, Quoc Le; mission: automate machine research; funding details (Khosla Ventures + Radical Ventures, Jordan Jacobs board, Pichai retention attempts, Google compute+investment deal)
 - [[entities/dji]] — DJI
@@ -3126,3 +3126,4 @@
 - [[queries/wiki-graph-analysis-weekly-2026-09-18]] — Weekly Wiki Graph Analysis (2026-09-18) — 3,079 pages (recursive scan); 446 orphans (303 content-rich), 2,810 broken links (919 raw-ref-as-wikilink), 8 real duplicate groups, 1,661 stale, 0 tag violations
 - [[queries/test-time-compute-three-axes-2026-09-24]] — Compute-vs-accuracy frontier has 3 axes (sleep-time / test-time / post-peak); benchmarks only measure the middle one
 - [[queries/wiki-graph-analysis-weekly-2026-09-25]] — Weekly Wiki Graph Analysis (2026-09-25) — 3,112 pages; 465 orphans (316 rich), 3,512 broken refs (context-engineering hub = 188), 8 unresolved dup groups + 48 dir-collision stubs, 2,230 stale; state snapshot persisted
+- [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
