@@ -6,7 +6,7 @@ tags:
   - writing
 sources: []
 created: 2026-04-24
-updated: 2026-08-15
+updated: 2026-09-27
 type: entity
 ---
 
@@ -75,6 +75,11 @@ Sarah advocates for:
 
 - **Ro Varma (OpenAI, Codex) on Why Speed Changes What AI Agents Can Do** (shared Aug 13, 2026) — Sarah shared the latest [[entities/cerebras-systems|Cerebras]] Big Chip Club interview, "Inside Codex with OpenAI's Ro Varma." Ro Varma, from OpenAI's Codex team, discusses how dramatically faster inference changes what AI agents are capable of — the thesis that inference speed is a capability unlock, not merely a latency optimization.
   - 📺 [Watch on YouTube](https://www.youtube.com/watch?v=p5Zvrcfsx28)
+
+### September 2026
+
+- **"We aren't releasing an assistant, but you start with cloud.cerebras.ai"** (Sep 27, 2026, X reply) — In response to a question about whether she and @0xSero were shipping their own agent/assistant product, Sarah clarified that their stance is tool-agnostic: they push people to start from raw fast inference ([[entities/cerebras-systems|Cerebras Cloud]]) and build their own harness, rather than adopting a packaged assistant from them. Consistent with the Back of House philosophy of owning the workflow.
+  - 🔗 [Cerebras Cloud](https://cloud.cerebras.ai) · [X post](https://x.com/milksandmatcha/status/2104043237396918568)
 
 ## Related Concepts
 

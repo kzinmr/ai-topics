@@ -6040,3 +6040,10 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Saved [[queries/2026-09-27_local-llm-ops-log]]: hermes LLM backend moved from the unhealthy local llm-gateway to `hermes-llm-serial-gate` (OpenAI-compatible serial proxy, base_url http://hermes-llm-serial-gate:8080/v1, model RadixArk/Qwen3.8-Flash-Next-NVFP4).
 - Downstream real servers via GATE_REAL_URLS: huggingface-ali (wiki-agent GPU), huggingface-aws (codex GPU), 127.0.0.1:8000 (local llm-gateway, quarantined due to broken GPU / NVFP4 kernel JIT failure; remove from GATE_REAL_URLS after recovery).
 - llm-gateway setting.json model_list: only NVFP4 (Qwen3.5-122B) enabled; gpt-oss-120b and Qwen3.6-27B-DFlash disabled (GPU shortage). Switching via `gateway_llms aws|ali|check` alias.
+
+## 2026-09-27 x-accounts-scan
+
+- Scanned 11/84 tracked accounts (budget 12); 3 new posts, all replies with external links.
+- Updated `entities/milksandmatcha.md` — Sep 27 reply: no assistant product, start with Cerebras Cloud.
+- Updated `entities/teknium.md` — timeline: Plugin Catalog as canonical community answer (Sep 2026).
+- Updated `entities/sero.md` — Omarchy plugin page currently renders "Plugin not found" while still recommended on X.

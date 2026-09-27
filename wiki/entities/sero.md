@@ -5,7 +5,7 @@ sources:
   - https://github.com/0xsero/local-ai-registry
   - https://plugins.omarchy.org/plugin.html?id=sero.local-ai
 created: 2026-04-24
-updated: 2026-09-13
+updated: 2026-09-27
 type: entity
 ---
 
@@ -99,6 +99,7 @@ Source: [X thread](https://x.com/0xsero/status/2040012153885761973) — \"Free D
 - Hardware coverage spans Apple M1–M5 (Pro/Max/Ultra memory tiers), RTX 30/40/50, NVIDIA workstation, four AMD local-AI targets, Intel Arc, audited server classes.
 - Next.js site reads `registry/` directly at runtime; read-only `/api/v1` JSON API (no write path).
 - Also published as an **Omarchy community plugin** `sero.local-ai` (Sep 13, 2026 — "Omarchy will be a beautiful home. Local AI").
+  - As of late Sep 2026 the plugin detail page (`plugins.omarchy.org/plugin.html?id=sero.local-ai`) renders "Plugin not found" client-side — Sero still actively recommends it on X ("if you have any Nvidia GPU try this", Sep 27, 2026), so the catalog entry appears to be in flux/unpublished rather than abandoned. [X post](https://x.com/0xsero/status/2104326465995067583)
 - Directly extends his local.ai benchmark work and "Open Source Must Win" mission.
 
 Source: [[raw/articles/2026-09-13_github_0xsero_local-ai-registry]] · [X post](https://x.com/0xsero/status/2099182703694266727)

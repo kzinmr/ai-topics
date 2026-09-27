@@ -3,7 +3,7 @@ title: "Ryan (Teknium)"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-09-27
 type: entity
 ---
 
@@ -163,6 +163,7 @@ Nous Research's decentralized training infrastructure (DiStrO) and Psyche Networ
 | Apr 2026 | Hermes Agent v2026.4.8; 68,500+ stars; 300+ contributors; platform registry refactor proposed |
 | Apr 2026 | Teknium opens 10+ PRs in single week: OAuth lifecycle, Codex fast mode, workspace RAG, Discord introspection, Mistral structured blocks |
 | Aug 2026 | Hermes Agent v0.21.0 "Pantheon Release" announced (Bots Mode, Agent 2 Agent Comms, Subagent Steering, ~50% default context reduction) |
+| Sep 2026 | Teknium points community at the official **Plugin Catalog** (`hermes-agent.nousresearch.com/docs/plugins`) — reviewed, one-click-installable plugins — as the canonical answer to "can Hermes do X?" questions |
 
 ## Related
 
