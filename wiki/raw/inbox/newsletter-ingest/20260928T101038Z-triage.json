@@ -1,0 +1,83 @@
+{
+  "triage_run_id": "20260928T101038Z",
+  "triage_date": "2026-09-28T10:10:38Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "notes": "All 4 digests contain only Substack/Beehiiv email-chrome redirect URLs (post cards, like/share/comment buttons, app-link wrappers). No direct external article URLs were extracted by process_email.py. Downstream ingest must scrape the canonical newsletter post itself to get real content.",
+  "newsletters": [
+    {
+      "message_id": "<20260928075507.3.657d930d7fc8ed7a@mg-d0.substack.com>",
+      "subject": "Agentic Data Science: Specify the Work, Verify the Claim",
+      "source": "Hugo Bowne-Anderson (Substack, publication_id=2632531, post_id=217788347)",
+      "canonical_url": "https://hugobowne.substack.com/p/the-agentic-data-science-playbook",
+      "date": "2026-09-28",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-09-28-agentic-data-science-specify-the-work-verify-the-claim.md",
+      "classification": "critical",
+      "reasoning": "Directly on-topic for the wiki's core domain: agentic workflows for data science. 'Specify the work, verify the claim' maps onto agent task specification + verification/evaluation patterns — a recurring theme in the wiki (agent harnesses, evals, verification). Hugo Bowne-Anderson is a recognized authority (ex-DeepLearning.AI, 'Leading Data Science'). Likely contains a concrete playbook/methodology worth synthesizing into concept pages (e.g. agent task specification, claim verification, agentic analytics).",
+      "suggested_actions": [
+        "Scrape canonical hugobowne.substack.com post to capture full text into raw/articles/",
+        "Create/update concept page for agentic data science workflow (spec → run → verify loop)",
+        "Link to existing agent-verification / evals concept pages; update if exists",
+        "Create/update entity page for Hugo Bowne-Anderson if missing"
+      ],
+      "wiki_relevance": "AI agents, agentic workflows, agent verification, data science agents, task specification",
+      "article_count": 20
+    },
+    {
+      "message_id": "<20260927191238.411c85e5@mta6>",
+      "subject": "The engine was built for analysts who could wait. Agents can't: Starburst CEO Justin Borgman on what AI agents need from enterprise data",
+      "source": "Beehiiv newsletter (likely data/AI industry newsletter; all links are beehiiv click-wrappers)",
+      "date": "2026-09-27",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-09-27-the-engine-was-built-for-analysts-who-could-wait-agents-can-t-starburst-ceo-just.md",
+      "classification": "high",
+      "reasoning": "Interview with Starburst CEO Justin Borgman on how enterprise data infrastructure must adapt for AI agents (latency, concurrency, machine-speed query patterns vs human-analyst patterns). Relevant to wiki's agent-infrastructure and data-layer-for-agents coverage. Interview format = primary-source perspective from an infra vendor CEO; useful for a concept note on 'what agents need from data infrastructure' plus entity pages for Starburst/Borgman.",
+      "suggested_actions": [
+        "Decode beehiiv redirect wrappers (curl -sIL follow redirects) to identify the newsletter source and actual links",
+        "Create entity page skeleton for Starburst (trino-based data lakehouse) and Justin Borgman if missing",
+        "Extract claims about agent vs human query workloads; link to agent-infrastructure concept pages",
+        "Cross-reference with existing data-platform / tooling-for-agents coverage"
+      ],
+      "wiki_relevance": "AI agents, enterprise data infrastructure, agent tooling, query latency, Trino/Starburst",
+      "article_count": 20
+    },
+    {
+      "message_id": "<20260927130435.3.0c554c3f3abfea05@mg2.substack.com>",
+      "subject": "OpenAI's Solar System, Claude Talks Sense, and Google's Space Face",
+      "source": "The Signal (Alex Banks, Substack, publication_id=293154, post_id=217642934)",
+      "canonical_url": "https://thesignal.substack.com/p/openais-solar-system-claude-talks",
+      "date": "2026-09-27",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-09-27-openai-s-solar-system-claude-talks-sense-and-google-s-space-face.md",
+      "classification": "high",
+      "reasoning": "AI industry roundup covering apparent OpenAI organizational/product expansion ('solar system'), Claude model behavior/commentary ('talks sense'), and a Google development ('space face' — likely Gemini-related branding or product). Roundup format lowers per-item depth, but the named developments touch all three frontier labs and warrant checking against existing OpenAI/Anthropic/Google entity pages for updates.",
+      "suggested_actions": [
+        "Scrape canonical thesignal.substack.com post for full digest text",
+        "Identify concrete announcements behind each headline; update OpenAI/Anthropic/Google entity or events pages if substantive",
+        "If items are mere speculation/clickbait headlines, downgrade to low and log only"
+      ],
+      "wiki_relevance": "Frontier lab dynamics, OpenAI, Anthropic/Claude, Google Gemini — competitive landscape",
+      "article_count": 20
+    },
+    {
+      "message_id": "<20260927123218.3.3ca5b577d8c7dcf7@mg-d0.substack.com>",
+      "subject": "The grief, loneliness, and burnout sweeping through the tech industry right now | Molly Graham",
+      "source": "Lenny's Newsletter (Substack, publication_id=10845, post_id=214070196) — podcast episode",
+      "canonical_url": "https://www.lennysnewsletter.com/p/the-grief-loneliness-and-burnout",
+      "date": "2026-09-27",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-09-27-the-grief-loneliness-and-burnout-sweeping-through-the-tech-industry-right-now-mo.md",
+      "classification": "low",
+      "reasoning": "Podcast episode on tech-industry morale (grief, loneliness, burnout). Peripheral to the LLM/agent technical wiki — it is career/culture content, not model, agent, tooling, or infrastructure knowledge. Possibly tangentially relevant to AI-driven layoffs/workforce change, but no technical signal in the digest itself. Log only; skip wiki ingestion unless the episode transcript yields AI-industry structural claims.",
+      "suggested_actions": [
+        "No wiki action needed by default",
+        "Optional: if transcript explicitly covers AI-driven role displacement, add a dated note to a workforce-impact section rather than a new page"
+      ],
+      "wiki_relevance": "Tech industry culture/careers — peripheral; possible AI-layoff context only",
+      "article_count": 20
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "critical": 1,
+    "high": 2,
+    "low": 1,
+    "next_stage": "newsletter-wiki-ingest should prioritize the Hugo Bowne-Anderson agentic data science post (scrape canonical URL first), then the Starburst interview, then The Signal roundup."
+  }
+}
