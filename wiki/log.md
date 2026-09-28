@@ -1,3 +1,11 @@
+## [2026-09-28] watchdog | wiki-health-fix automated run
+- Pre-run digest verified clean via live grep: 0 pipe_prefix, 0 line_number_prefix, 0 triple_bracket, 0 space_prefix in index.md
+- Orphan pages (3): concepts/authors-guild-v-openai registered in index.md (alphabetical); 2 _archive/ pages intentionally unindexed (skipped per policy)
+- Uncommitted working-tree files (authors-guild page + raw articles) committed alongside this fix
+- No ghosts, no skeletons, no index corruption
+
+---
+
 
 ## [2026-09-27] watchdog | Pipeline diagnosis + index header recount
 

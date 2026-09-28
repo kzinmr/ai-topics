@@ -1369,6 +1369,7 @@
 - [[concepts/attention-bottleneck]] — Attention Bottleneck / Context Capacity Wall — models are conditioners not memorizers (RLM paper); accuracy drops with input length even at <20% window utilization across 18 models (Chroma, Sep 2026); Fable 5's 1M-context failure on a 1M-token DB migration is one instance — effective capacity is a fraction of advertised
 - [[concepts/audio-tokenizer-comparison]] — Audio Tokenizer Comparison — SoundStream / EnCodec / DAC / SpeechTokenizer / Mimi
 - [[concepts/aurora-optimizer]] — Aurora Optimizer
+- [[concepts/authors-guild-v-openai]] — Authors Guild v. OpenAI — unsealed Sept 2026 briefs alleging guilty knowledge of book piracy (Alter v. OpenAI/Microsoft, Manhattan MDL); Eoin Higgins analysis
 - [[concepts/austral]] — Austral
 - [[concepts/auto-research]] — AutoResearch
 - [[concepts/autodata-agentic-data-creation]] — Autodata: Agentic Data Creation
