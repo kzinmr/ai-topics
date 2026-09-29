@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3120
+> Total pages: 3122
 > Last updated: 2026-09-29
 
-## Entities (935 pages)
+## Entities (936 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -67,6 +67,7 @@
 - [[entities/anthropic]] — AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Clau...
 - [[entities/anthropic-computer-use]] — Anthropic Computer Use
 - [[entities/anthropic-labs]] — Anthropic's advanced-products division (Krieger + Michael); Claude Design
+- [[entities/anthropics-skills]] — Anthropic Skills Repository — official open-source agent-skills repo (anthropics/skills); claude-api skill with build-eval/hillclimb commands (Sep 2026)
 - [[entities/antirez-com]] — Salvatore Sanfilippo (antirez)
 - [[entities/antoine-buteau]] — Antoine Buteau — BizOps leader (Shakepay, ex-Replit, ex-Coveo) and prolific writer: 10-part Automation Series, AI Control Plane Series, AI-Native GTM, 100+ Lessons From profiles
 - [[entities/antoine-chaffin]] — Antoine Chaffin

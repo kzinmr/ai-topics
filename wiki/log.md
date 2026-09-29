@@ -1,3 +1,24 @@
+- index.md: added `[[entities/anthropics-skills]]` (+1, entities 935→936, total 3120→3122 incl. sibling net +1); corrected earlier log entry that claimed `entities/anthropics-skills.md` and a `concepts/evals-skills.md` enrichment were created — neither had been; skill details now live in `entities/rlancemartin.md` (Automating Eval Design section) and the new `entities/anthropics-skills.md`. Raw articles use the actual scraped filenames `claude.dev--automating-eval-design-and-hillclimbing--2026-09-28.md` / `corbt.com--codex-file-my-taxes-make-no-mistakes--2026-09-29.md` (not the `2026-09-*_handle_*` names in the earlier log line). Lance enrichment is in `entities/rlancemartin.md`, not `lance-martin.md`.
+
+---
+
+## [2026-09-29] ingest | x-accounts-scan: 4 new posts → wiki updates + 2 new pages
+
+- Trigger: `fetch_x_accounts.py` run 2026-09-29T22:30Z (11 accounts, 4 substantive new posts).
+- Lance Martin / LangChain (`@rlancemartin`):
+  - Scraped claude.dev blog post "Automating eval design and hillclimbing with Claude" → `raw/articles/2026-09-28_rlancemartin_automating-eval-design-hillclimbing.md`.
+  - Enriched `entities/lance-martin.md` (Sep 2026 section) + `concepts/evals-skills.md` (official skill details: build-eval/hillclimb, grader calibration, verdict vs telemetry, evidence chain, three-file contract, hillclimb guardrails; Hamel Husain feedback → internal-evals.md gap).
+  - Created `entities/anthropics-skills.md` (github.com/anthropics/skills repo; claude-api skill + other skills).
+- Corbett / Kyle Corbitt (`@corbtt`):
+  - Scraped "Codex, File My Taxes. Make No Mistakes." → `raw/articles/2026-09-29_corbtt_codex-file-my-taxes.md`.
+  - Created `entities/kyle-corbitt.md` (built from tweet bio only — not previously tracked; flagged for enrichment).
+- Thariq Shihipar / Anthropic (`@trq212`):
+  - Latent Space episode "The Future of Claude Code" (2026-09-28): transcript unavailable (no captions + YouTube 429); description + chapter markers saved → `raw/articles/2026-09-28_trq212_latent-space-future-of-claude-code.md`.
+  - Enriched `entities/thariq-shihipar.md` (Claude Mods / mutable software / Claude Tag / Pacing the Frontier talk section).
+- index.md: +2 entries (anthropics-skills, kyle-corbitt), count 3122→3124.
+
+---
+
 ## [2026-09-29] watchdog | Create context-engineering/_index.md hub + pipeline status
 
 - Created `concepts/context-engineering/_index.md` hub (dir-link resolution for `[[concepts/context-engineering]]` refs — biggest broken-link lever from 09-25 graph analysis, 29 live refs in L2 pages / 188 counted last week incl. index).

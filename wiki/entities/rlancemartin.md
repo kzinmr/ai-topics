@@ -1,7 +1,7 @@
 ---
 title: "Lance Martin (@rlancemartin)"
 created: 2026-05-23
-updated: 2026-07-06
+updated: 2026-09-29
 type: entity
 tags:
   - person
@@ -21,6 +21,7 @@ sources:
   - https://github.com/anthropics/skills/tree/main/skills/claude-api
   - https://github.com/anthropics/claude-cookbooks/tree/main/managed_agents/self_hosted_sandboxes
   - https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-sonnet-5
+  - raw/articles/claude.dev--automating-eval-design-and-hillclimbing--2026-09-28.md
 ---
 
 # Lance Martin (@rlancemartin)
@@ -51,6 +52,22 @@ His May 19, 2026 X thread announced updates to the `claude-api` skill for self-h
 ### Skills as Developer Onboarding Surface
 
 Martin maintains the `claude-api` skill — a modular package in Anthropic's skills repository that provides SDK patterns in Python, TypeScript, Go, Java, Ruby, PHP, C#, and curl. The skill embodies his DevRel philosophy: **provide working code in the developer's language of choice** rather than abstract documentation. The `claude-api` skill ships with `SKILL.md` documentation and shared orchestration patterns that work across all self-hosted sandbox providers.
+
+### Automating Eval Design and Hillclimbing (Sep 2026)
+
+Martin published **"Automating eval design and hillclimbing with Claude"** on the claude.dev blog (2026-09-28), extending the `claude-api` skill with two new commands: `/claude-api build-eval` (build an evaluation inside your codebase via a guided interview workflow) and `/claude-api hillclimb` (iteratively improve an application against the eval, one patch at a time, with a held-out test set to catch overfitting).
+
+Key principles from the article:
+
+- **Four elements of a good eval**: tasks mirror production distribution; performance improves with stronger models and higher effort; "passable" headroom remains at the frontier (top model well below 100%); low run-to-run variance (stable grader, clean environment state).
+- **Adversarial sampling**: don't pick cases because today's model fails them (you sample one model's failure fingerprint); pick cases a human judged hard, plus real failures from production traffic/bug reports — but don't blindly trust user traffic, which skews easy.
+- **Grader design**: cheapest sufficient grader — programmatic checks for constrained outputs, LLM-as-judge with checkable-claim rubrics (not 1–5 scales) for open-ended outputs; judge model ≠ tested model; pairwise comparison with randomized order when a baseline exists; always read a sample of scored transcripts before trusting the evaluator.
+- **Hillclimb overfitting defenses**: split train/test (train may be read by the hillclimber, test never seen), never paste failure transcripts into prompts, keep answers structurally out of the model's reach (reward-hacking guard). If train improves while test stays flat, the skill suspects overfitting and reverts the patch.
+- **Where to hillclimb**: cheap-to-iterate, attributable, well-scoped surfaces — prompts, skill descriptions, tool descriptions, model/effort/API parameters. Cost is a strong universal objective even on saturated evals.
+
+The article links to Anthropic's "Demystifying evals for AI agents" engineering post. Martin later replied to [[entities/hamel-husain|Hamel Husain]]'s feedback (Sep 29) saying he would update the skill accordingly, and pointed to the evals directory of the skill: [github.com/anthropics/skills/tree/main/skills/claude-api/shared/evals](https://github.com/anthropics/skills/tree/main/skills/claude-api/shared/evals).
+
+Raw: [[raw/articles/claude.dev--automating-eval-design-and-hillclimbing--2026-09-28]]
 
 ### Context Engineering for Production Agents
 
