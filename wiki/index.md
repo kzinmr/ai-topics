@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3117
-> Last updated: 2026-09-28
+> Total pages: 3120
+> Last updated: 2026-09-29
 
 ## Entities (935 pages)
 
@@ -226,6 +226,7 @@
 - [[entities/deedydas]] — Deedy Das
 - [[entities/deepmind]] — Google DeepMind
 - [[entities/deepseek]] — DeepSeek
+- [[entities/deepseek-v4.1-flash]] — DeepSeek's 552B multimodal MoE (1M context) pushing KV cache compression — 890 bytes/token, CED architecture for long-horizon agents (arXiv:2609.19969)
 - [[entities/deli-chen]] — Deli Chen
 - [[entities/deliberate-coder]] — Deliberate Coder
 - [[entities/deliberatecoder]] — Steve Shogren (Deliberate Software)
@@ -1037,6 +1038,7 @@
 - [[concepts/agents-md-evaluation]] — AGENTS.md Evaluation — Do Context Files Help Coding Agents?
 - [[concepts/agents-planning-orchestration]] — Agents Planning Orchestration
 - [[concepts/agents-scaffolding-composition-inference-scaling-hypothesis]] — Agents Scaffolding Composition Inference Scaling Hypothesis
+- [[concepts/harness-learning]] — Train a proposer to revise a solver's harness via RL; harness revision ≈ weight update, adapting at test time without parameter updates (arXiv:2609.35738)
 - [[concepts/agents-self-improvement-learning]] — Agents Self Improvement Learning
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves
 - [[concepts/agi-economics]] — AGI Economics
@@ -2751,6 +2753,7 @@
 - [[concepts/scribepod]] — scribepod
 - [[concepts/search-as-code]] — Search as Code (SaC)
 - [[concepts/search-engines]] — Search Engines
+- [[concepts/search-scaling]] — Extending inference scaling to agent search budgets; parallel > sequential search, early research state shapes outcomes (arXiv:2609.35559)
 - [[concepts/searcharray]] — SearchArray
 - [[concepts/sebastien-ramirez]] — sebastien-ramirez
 - [[concepts/security-and-governance/agent-containment]] — Agent Containment
