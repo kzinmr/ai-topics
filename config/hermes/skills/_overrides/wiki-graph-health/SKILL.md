@@ -168,6 +168,8 @@ When `wiki-graph-analysis` reports unlinked pairs:
 
 ### Watchdog Pipeline Timing — Verifying Health Report Claims
 See `watchdog-session-2026-09-12.md` (jobs.json failure source; report-only failure classes; header recount formula). See `health-fix-session-2026-09-21.md` (digest "orphans" = `_index.md` files; `_index`→dir slug bug in orphan scanners; hub registration recipe).
+- Digest orphan also `??` in git status ⇒ upstream skipped its commit — commit page+raw+index together (`references/watchdog-session-2026-09-28.md`)
+- `x_accounts stale(Nh)` with every-2-days schedule = false positive if `last_status: ok` (`references/watchdog-session-2026-09-28.md`, 2026-09-29 session)
 
 **Discovered 2026-05-11**: The `wiki-watchdog-fix` cron job runs AFTER `wiki-health-fix` in the pipeline. By the time the watchdog receives the health report, the wiki-health-fix step may have already repaired many of the reported issues (pipe corruption, triple brackets, line-number corruption, etc.).
 
@@ -1123,7 +1125,8 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 - `references/tag-audit-session-2026-07-27.md` — scope expansion (`events/`,`queries/`), SCHEMA `[truncated]` corruption, inline one-off deletion, no-verify pass
 - `references/tag-audit-session-2026-08-03.md` — dry-run ≠ audit violations; skip normalization when audit clean
 - `references/tag-audit-session-2026-08-10.md` — dry-run scope ≫ violations; patch manually, never wholesale-normalize
-- `references/tag-audit-session-2026-08-17.md` — stale-chain fix (mapping VALUE non-SCHEMA: `wealth-distribution`→`wealth-concentration`); bump `updated:` on tag-only patches
+- `references/tag-audit-session-2026-08-17.md` — stale-chain fix (mapping VALUE non-SCHEMA); bump `updated:` on tag-only patches
+- `references/watchdog-session-2026-09-28.md` — orphan also `??` in git status ⇒ upstream skipped its commit; `training-data`→`datasets`
 - `.githooks/pre-commit-tag-validator.py` — Pre-commit hook that validates all staged wiki page tags against SCHEMA.md taxonomy. Blocks commits with non-taxonomy tags or composite kebab-case errors. See Section J.
 
 ---
