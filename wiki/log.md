@@ -1,3 +1,13 @@
+## [2026-09-29] watchdog | Create context-engineering/_index.md hub + pipeline status
+
+- Created `concepts/context-engineering/_index.md` hub (dir-link resolution for `[[concepts/context-engineering]]` refs — biggest broken-link lever from 09-25 graph analysis, 29 live refs in L2 pages / 188 counted last week incl. index).
+- Pipeline alert `x_accounts stale(26h)`: FALSE POSITIVE — job runs every 2 days (`*/2 22`), last run 09-27 22:30 UTC succeeded (commit 3ffad8b9), next run tonight 22:30 UTC.
+- Index health verified clean: 0 pipe/line-number/triple-bracket corruption; validate_index.py exit 0 (3,135 lines).
+- wiki_health null in watchdog context: upstream 17:50 job runs after watchdog schedule — informational only.
+- No existing page bodies modified; sibling pipelines' uncommitted work untouched.
+
+---
+
 ## [2026-09-29] create | Unreal Agent concept page (hot-post ingest)
 - Source: `raw/articles/2026-09-09_unreal-labs-unreal-agent-moe-mobile.md` (Unreal Labs blog, scraped 09-28, previously untriaged).
 - Created `concepts/unreal-agent.md` — from-scratch harness beating Codex/Pi on Terminal-Bench 2.1 (84.0 vs 79.3), SWE-atlas (74.5), DeepSWE (72.7), ALE (12.3) with the same GPT-6 Sol xhigh model; async tool-calling + minimal context bets.
