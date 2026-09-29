@@ -6075,3 +6075,6 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - concepts/search-scaling.md — arXiv:2609.35559. Extends inference scaling to agent search budgets; 50 quant factor-mining tasks, 9 models; parallel>sequential, model grafting shows early state matters. Third test-time axis. Links: test-time-compute, test-time-interaction-scaling, harness-learning, agents-scaffolding-composition.
 - entities/deepseek-v4.1-flash.md — arXiv:2609.19969. 552B multimodal MoE, 1M ctx, CED arch, KV compression to 890 B/token (~1/4 of V4-Flash); open-weight. Corroborated by existing Fireworks raw. Links: deepseek, test-time-compute.
 - Raw: 3 files in raw/articles/ (sha256 frontmatter). Index: +3 pages, count 3117→3120.
+
+## [2026-09-29] query | hot-post night slot — test-time scaling trinity
+- Reflective night post synthesizing harness-learning + search-scaling as new deployment-time compute axes alongside test-time-compute / test-time-interaction-scaling. No page changes.
