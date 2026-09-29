@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3116
+> Total pages: 3117
 > Last updated: 2026-09-28
 
 ## Entities (935 pages)
@@ -2971,6 +2971,7 @@
 - [[concepts/unbundled-agents]] — Architectural pattern where specialist subagents are exposed as Tools within a harness, and the harness becomes a con...
 - [[concepts/ungrounded-meaning]] — Ungrounded Meaning
 - [[concepts/unharnessed-agents]] — Unharnessed Agents
+- [[concepts/unreal-agent]] — Unreal Agent — Unreal Labs' from-scratch harness; +4.7pt over Codex on Terminal-Bench 2.1 via async tool-calling + context frugality, same GPT-6 Sol model
 - [[concepts/unix-philosophy]] — Unix Philosophy
 - [[concepts/unsloth]] — unsloth
 - [[concepts/unsloth-fast-fine-tuning]] — Unsloth — Fast Fine-Tuning

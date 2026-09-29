@@ -1,3 +1,11 @@
+## [2026-09-29] create | Unreal Agent concept page (hot-post ingest)
+- Source: `raw/articles/2026-09-09_unreal-labs-unreal-agent-moe-mobile.md` (Unreal Labs blog, scraped 09-28, previously untriaged).
+- Created `concepts/unreal-agent.md` — from-scratch harness beating Codex/Pi on Terminal-Bench 2.1 (84.0 vs 79.3), SWE-atlas (74.5), DeepSWE (72.7), ALE (12.3) with the same GPT-6 Sol xhigh model; async tool-calling + minimal context bets.
+- Cross-linked: harness-engineering, harness-commoditization, token-economics, elo-per-token-analysis, kv-cache, ai-benchmarks/terminal-bench, ai-benchmarks/deepswe-benchmark, benchmark-ceiling.
+- Confidence: medium (vendor-ran single-model comparison; Responses API underspecification noted).
+- index.md: added entry + count 3116→3117.
+- Delivered as morning (09:30 JST) Discord hot-post — dedup verified: none of these wikilinks appear in 2026-09-25..28 hot posts.
+
 ## [2026-09-28] watchdog | wiki-health-fix automated run
 - Pre-run digest verified clean via live grep: 0 pipe_prefix, 0 line_number_prefix, 0 triple_bracket, 0 space_prefix in index.md
 - Orphan pages (3): concepts/authors-guild-v-openai registered in index.md (alphabetical); 2 _archive/ pages intentionally unindexed (skipped per policy)
