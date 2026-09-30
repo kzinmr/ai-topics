@@ -6109,3 +6109,8 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 
 ## [2026-09-29] query | hot-post night slot — test-time scaling trinity
 - Reflective night post synthesizing harness-learning + search-scaling as new deployment-time compute axes alongside test-time-compute / test-time-interaction-scaling. No page changes.
+
+## [2026-09-30] report | Discord hot-post (morning slot 09:30 JST)
+- Topic: "$2,000 accountant lost to a $20 agent -- the AI read the 214 pages" -- built on fresh primary [[entities/kyle-corbitt]] section "Codex vs Accountant" (ingested 09-29 via x-accounts-scan, never posted). John Henry framing: $20/mo Codex caught a $20k adjustment-escrow omission buried in 214pp of acquisition docs that the human accountant missed; 30-min vibe-coded tax engine; comparison table $2,000+/2-3 day/$20k error vs $20/mo/immediate/caught the error.
+- Second thread: same-day Anthropic counterpoint -- anthropics/skills build-eval + hillclimb (Lance Martin, claude.dev 09-28; Hamel Husain public critique -> public commit to fix). Thesis: quality assurance of agent output is itself being delegated to agents; eval design is the next bottleneck.
+- Supporting: [[concepts/agent-generated-software]], [[entities/anthropics-skills]], [[concepts/token-economics]], [[concepts/human-sandwich]]. Fresh primaries; dedup.recently_covered_topics empty; no overlap with 09-28 morning (monitor evasion) / 09-29 night (test-time trinity). Report-only; no page content changes. Working tree left untouched (sibling WIP: talkie/stripe etc.).
