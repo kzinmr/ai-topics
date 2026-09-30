@@ -2695,6 +2695,7 @@
 - [[concepts/reflexive-ai]] — Reflexive AI
 - [[concepts/relational-intelligence]] — Relational Intelligence — AI that reasons about who we're connected to and why; the Hearth Thesis category (Ashe Magalhaes, relationscape)
 - [[concepts/reliable-agent-patterns]] — Reliable Agent Patterns
+- [[concepts/reliability-theory-for-ai-control]] — Reliability theory for AI control: series/parallel composition of mitigations, rare-event suppression order depends on failure-domain independence (arXiv:2609.26419)
 - [[concepts/renderers-token-level-templating]] — renderers: Token-Level Templating for Agentic RL
 - [[concepts/replaid-continuous-diffusion]] — RePlaid (Continuous Diffusion Scaling)
 - [[concepts/representation-collapse]] — How representations (signs, models, proxy metrics, maps) detach from the reality they refer to and begin self-referen...

@@ -11,6 +11,7 @@ tags:
   - google
 sources:
   - raw/papers/2026-06-24_deepmind_ai-control-roadmap.md
+  - raw/articles/arxiv-2609.26419-reliability-theory-for-ai-control.md
 ---
 
 # AI Control
@@ -175,3 +176,8 @@ The roadmap acknowledges several important limitations:
 - [[concepts/agent-safety]] — Safety considerations specific to autonomous AI agents
 - [[concepts/prompt-injection]] — A related AI security vulnerability vector
 - [[concepts/superintelligence]] — The limit at which AI control is expected to become infeasible
+- [[concepts/reliability-theory-for-ai-control]] — Formal composition rules (rare-event suppression order, Birnbaum importance) for the mitigation stack above
+
+## Quantifying the Stack (Sept 2026)
+
+Reliability theory gives the roadmap's layered defenses a composition rule. Applying series/parallel rare-event analysis to DeepMind's rogue-deployment controls, the same stack can suppress failures **cubically, quadratically, or linearly depending on failure-domain independence** — overlapping mitigations that share failure modes compose linearly regardless of count. Birnbaum importance identifies which single mitigation is worth funding, and prevention is shown to change the population on which recovery tiers are evaluated (so recovery cannot be scored independently of prevention). See [[concepts/reliability-theory-for-ai-control]] (arXiv:2609.26419). ^[raw/articles/arxiv-2609.26419-reliability-theory-for-ai-control.md]
