@@ -814,7 +814,7 @@
 - [[entities/stella-biderman]] — Stella Biderman — Executive Director and co-founder of EleutherAI; open-weight safety, interpretability over time, Pythia, The Pile, lm-eval
 - [[entities/steve-blank]] — Steve Blank
 - [[entities/steve-yegge]] — Steve Yegge — Veteran software engineer, blogger, AI industry commentator; builds Wyvern MMO with multi-agent fleets via Wheelhouse harness
-- [[entities/stripe]] — Stripe — Payments infrastructure company; internal Knowledge AI platform (Kai) is a leading public enterprise-RAG reference
+- [[entities/stripe]] — Stripe — Payments infrastructure company; default stablecoin is now OUSD across Treasury/Issuing/Payouts/Onramp/Payments (Tempo-default, Sep 30 2026); Knowledge AI platform (Kai) enterprise-RAG reference
 - [[entities/stochi]] — Independent AI researcher focused on post-training, agents, RL, model architectures, and ML systems. Previously shipp...
 - [[entities/subquadratic]] — Subquadratic (SubQ)
 - [[entities/substack]] — substack
@@ -1012,7 +1012,7 @@
 - [[concepts/agent-editing-world-model]] — Agent Editing a World Model (AEWM) — an LLM actively edits an explicit symbolic state (block world) from observations, not passive prediction; GPT-5.2 near-perfect edit ops vs Gemini-3-Pro failure; "world model" split into representation vs function (arXiv:2609.28416, Sept 2026)
 - [[concepts/agentic-alternative-to-graphrag]] — Agentic Alternative to GraphRAG
 - [[concepts/agentic-browsing]] — Agentic browsing refers to AI agents that autonomously navigate websites, click buttons, fill forms, and execute mult...
-- [[concepts/agentic-commerce]] — Agentic Commerce; added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (June 24)
+- [[concepts/agentic-commerce]] — Agentic Commerce; Stripe made OUSD (Open Standard consortium stablecoin) the default settlement asset across products, Sep 30 2026
 - [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Agentic Engineering Cognition Devin Multi Agents Orchestration
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering Cognition Devin Workflow

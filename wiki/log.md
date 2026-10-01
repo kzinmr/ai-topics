@@ -1,6 +1,14 @@
 - index.md: added `[[entities/anthropics-skills]]` (+1, entities 935→936, total 3120→3122 incl. sibling net +1); corrected earlier log entry that claimed `entities/anthropics-skills.md` and a `concepts/evals-skills.md` enrichment were created — neither had been; skill details now live in `entities/rlancemartin.md` (Automating Eval Design section) and the new `entities/anthropics-skills.md`. Raw articles use the actual scraped filenames `claude.dev--automating-eval-design-and-hillclimbing--2026-09-28.md` / `corbt.com--codex-file-my-taxes-make-no-mistakes--2026-09-29.md` (not the `2026-09-*_handle_*` names in the earlier log line). Lance enrichment is in `entities/rlancemartin.md`, not `lance-martin.md`.
 
 ---
+## [2026-10-01] stripe: OUSD becomes default stablecoin across Stripe products
+
+- Scraped Stripe Blog "OUSD is now the default stablecoin on Stripe" (2026-09-30, Henri Stern/Privy) -> raw/articles/2026-09-30_stripe_ousd-default-stablecoin.md
+- Enriched entities/stripe.md (was status: stub): new "Stablecoin infrastructure: OUSD default" section (Open Standard consortium = Coinbase/Mastercard/Shopify/Stripe/Visa + 200 partners; OUSD on Tempo default, Base/Ethereum/Solana options; no mint/burn fees; partner rewards; Bridge + Privy + Ramp; Treasury/Issuing/Global Payouts/Crypto Onramp/Payments integration), added Knowledge AI Platform + Cursor-at-scale sections, dropped status: stub
+- Enriched concepts/agentic-commerce.md with "Settlement Layer: Stablecoin Defaults" section (settlement cost curve for MPP/x402 micro-payments, rewards flywheel, one-stack property Stripe+Tempo+Bridge+Privy+Ramp)
+- Updated index.md descriptions for both entries
+- Note: Tempo blockchain has no entity page yet; Stripe-owned Bridge/Privy have no pages (abridge.md is a different entity)
+
 
 ## [2026-10-01] ingest | active-crawl: 5 trending arXiv papers (Sept 30) → 5 new concept pages
 
@@ -6155,3 +6163,8 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Non-AI/low-relevance saved: shkspr smartwatch power user, dfarq IBM PS/2, oldnewthing AArch64 hot-patching, jim-nielsen Dear Software Makers, evanhahn September notes.
 - Checkpoint: `~/.hermes/cron/data/blog_ingest/latest.json` (for blog-triage 07:30 → blog-wiki-ingest).
 - No Layer-2 wiki pages created here — ingestion stage only; triage/wiki-ingest downstream jobs handle page creation.
+
+## [2026-10-01] report | Discord hot-post (night slot 21:30 JST)
+- Topic: "エージェントを賢くした改良は全部 harness の内側で起きていた" — contrarian/reflective synthesis of 3 fresh active-crawl pages (all created today, never posted): [[concepts/agent-editing-world-model]] (AEWM, arXiv:2609.28416, task-state editing vs observation prediction), [[concepts/kvtether-kv-cache-lifecycle-react]] (arXiv:2609.39819, message→KV lifecycle semantics; −26.3% latency / −40% cost vs LMCache), [[concepts/scholarevolve-lifelong-harness-evolution]] (arXiv:2609.40169, literature-driven harness evolution; AppWorld 49.6→63.6%). Common thesis: serving stack / evolution loop only see accesses or failures — the real signal is the *meaning the harness holds*.
+- Framing: set against [[concepts/bitter-lesson-agent-harnesses]] (same coin, opposite face), supporting links [[concepts/harness-engineering]], [[concepts/kv-cache]], [[concepts/specscale-speculative-search-serving]], [[concepts/context-policy-evolution]], [[concepts/test-time-interaction-scaling]].
+- Dedup: no wikilink overlap with 09-30 late-night (reliability-theory/ai-control), 10-01 morning (endogenous-misalignment), 09-29 night (test-time trinity — harness-learning used only as forward link there, not featured here). Report-only; no page content changes.

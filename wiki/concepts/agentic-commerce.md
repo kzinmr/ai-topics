@@ -1,13 +1,14 @@
 ---
 title: Agentic Commerce
 created: 2026-05-01
-updated: 2026-06-24
+updated: 2026-10-01
 type: concept
 tags: [concept, ai-agents, platform, protocol, infrastructure]
 sources:
   - https://stripe.com/blog/agentic-commerce-suite
   - https://blog.cloudflare.com/agents-stripe-projects/
   - https://open.substack.com/pub/bensbites/p/building-gets-easier
+  - raw/articles/2026-09-30_stripe_ousd-default-stablecoin.md
 ---
 
 # Agentic Commerce
@@ -57,6 +58,27 @@ The **Link CLI** ([github.com/stripe/link-cli](https://github.com/stripe/link-cl
 | **x402** | Community | HTTP 402-based machine payments |
 
 Stripe's Agentic Commerce Suite supports all protocols through a single integration.
+
+## Settlement Layer: Stablecoin Defaults (September 2026)
+
+On September 30, 2026 Stripe made **OUSD (Open USD)** — the consortium stablecoin from
+**Open Standard** (founding companies: Coinbase, Mastercard, Shopify, Stripe, Visa;
+200+ network partners) — its **default stablecoin across products** (Treasury, Issuing,
+Global Payouts, Crypto Onramp, Payments), defaulting to OUSD on the **Tempo** blockchain
+while keeping Base/Ethereum/Solana options. See [[entities/stripe]] for the full
+breakdown. For agentic commerce this matters because:
+
+- **Settlement cost curve**: low, volume-predictable fees and no mint/burn fees make
+  high-frequency machine-to-machine payments (MPP, x402-style micro-transactions)
+  economically viable at agent scale.
+- **Rewards flywheel**: Open Standard partners earn rewards on OUSD activity — the
+  float incentive is pushed back to participating platforms, aligning agent platforms
+  with the consortium.
+- **One-stack property**: Stripe (rails) + Tempo (chain) + Bridge (orchestration) +
+  Privy (wallets) + Ramp (spend) covers the full agent-money stack under one vendor
+  relationship — the stablecoin counterpart to Stripe Projects for infra provisioning.
+
+(Raw: [[raw/articles/2026-09-30_stripe_ousd-default-stablecoin|OUSD is now the default stablecoin on Stripe]], Stripe Blog, 2026-09-30.)
 
 ## Infrastructure Integration: Stripe Projects
 
