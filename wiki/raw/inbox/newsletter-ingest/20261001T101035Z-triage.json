@@ -1,0 +1,82 @@
+{
+  "run_id": "20261001T101035Z",
+  "triaged_at": "2026-10-01T10:15:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 5,
+  "important_items": 3,
+  "classifications": [
+    {
+      "message_id": "<20261001064506.3.a09c2df966618fcd@mg2.substack.com>",
+      "subject": "[AINews] Gemini 4 Argon: GDM's answer to Astra/Fable, with 1M output",
+      "date": "2026-10-01",
+      "source": "AINews (swyx / latent.space)",
+      "raw_path": "wiki/raw/newsletters/2026-10-01-ainews-gemini-4-argon-gdm-s-answer-to-astra-fable-with-1m-output.md",
+      "importance": "critical",
+      "newsjacking_score": 5,
+      "reason": "Frontier model release: Google DeepMind 'Gemini 4 Argon' positioned against Astra/Fable with 1M-token output. Model releases are core wiki scope. No existing gemini-4/argon page in index.md (latest is gemini-3-8 family) — fresh coverage needed.",
+      "wiki_targets": [
+        "concepts/gemini/gemini-4-argon (new)",
+        "entities/google-deepmind (update)",
+        "comparisons/ (vs fable-5 / astral)"
+      ],
+      "extraction_note": "Links are substack.com/redirect UUIDs; resolve via web_extract on the open.substack.com post URL (pub swyx, post_id 218294409)."
+    },
+    {
+      "message_id": "<20260930.191657.e5cfdbb5@mta23>",
+      "subject": "\ud83c\udfa4 OpenAI DevDay: Everything You Need to Know",
+      "date": "2026-09-30",
+      "source": "beehiiv newsletter (likely AI Supremacy / The Rundown)",
+      "raw_path": "wiki/raw/newsletters/2026-09-30-openai-devday-everything-you-need-to-know.md",
+      "importance": "critical",
+      "newsjacking_score": 4,
+      "reason": "OpenAI DevDay 2026 roundup: Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, Marketplace (see companion AINews uid=724 digest already saved 2026-09-30). Major platform/agent-API announcements; index only has incidental 'devday' mention in concepts/codex — no dedicated DevDay 2026 page yet.",
+      "wiki_targets": [
+        "events/openai-devday-2026 (new)",
+        "concepts/openai/agents-api, decisions-api (new)",
+        "entities/openai-com (update)"
+      ],
+      "extraction_note": "All 20 links are link.mail.beehiiv.com/v2/c/ tracking links. Per skill pitfall #10, test ONE with curl -sL -w '%{url_effective}' before assuming Cloudflare block; v2/c/ links often resolve 200."
+    },
+    {
+      "message_id": "<20260930222340.3.58975b2d49e592b1@mg-d1.substack.com>",
+      "subject": "Why Dwarkesh is Wrong about Computer Use + How OpenAI shipped its Jev competitor in 1 Week",
+      "date": "2026-09-30",
+      "source": "swyx podcast post (latent.space, publication_id=1084089, post_id=218243619)",
+      "raw_path": "wiki/raw/newsletters/2026-09-30-why-dwarkesh-is-wrong-about-computer-use-how-openai-shipped-its-jev-competitor-i.md",
+      "importance": "high",
+      "newsjacking_score": 4,
+      "reason": "Contrarian take on computer-use agent evaluation (polarizing promise + in-group signal). Existing coverage: entities/dwarkesh-patel, concepts/gemini-computer-use, entities/anthropic-computer-use — update rather than new pages. Also covers OpenAI shipping speed vs 'Jev' competitor.",
+      "wiki_targets": [
+        "concepts/gemini-computer-use (update)",
+        "entities/dwarkesh-patel (update, contested claim w/ source+date)",
+        "concepts/computer-use-agents (if exists; else link via gemini-computer-use)"
+      ],
+      "extraction_note": "Resolve via https://open.substack.com/pub/swyx/p/devday-2026 (post_id 218243619); podcast-format post — transcript may need Substack OG extraction."
+    },
+    {
+      "message_id": "<20260930190927.3.8243fcff2d22d047@mg2.substack.com>",
+      "subject": "True Positive Weekly #180",
+      "date": "2026-09-30",
+      "source": "AI Weekly (substack publication_id=61455)",
+      "raw_path": "wiki/raw/newsletters/2026-09-30-true-positive-weekly-180.md",
+      "importance": "low",
+      "newsjacking_score": 1,
+      "reason": "Curated weekly link-dump digest. Raw links are all substack redirect URLs with no titles; low marginal value over the AINews/DevDay digests which cover the same news with commentary. Skip unless downstream ingest wants cross-check links.",
+      "wiki_targets": [],
+      "extraction_note": "If needed: open.substack.com/pub/aiweekly/p/true-positive-weekly-180."
+    },
+    {
+      "message_id": "<20261001073630.3.62abcd66b9dbfa68@mg-d1.substack.com>",
+      "subject": "Q3 2026 Consolidated Holdings, Performance, and Ideas",
+      "date": "2026-10-01",
+      "source": "Irrational Analysis (irrationalanalysis, substack publication_id=1509468)",
+      "raw_path": "wiki/raw/newsletters/2026-10-01-q3-2026-consolidated-holdings-performance-and-ideas.md",
+      "importance": "low",
+      "newsjacking_score": 1,
+      "reason": "Investment portfolio letter; primarily finance/holdings content, outside core LLM/agent technical scope. May contain AI-capex/investment theses usable for concepts/sovereign-ai or ai-adoption pages, but not a wiki-priority item.",
+      "wiki_targets": [],
+      "extraction_note": "Paywalled-leaning quarterly letter; skip scrape by default."
+    }
+  ],
+  "downstream_guidance": "Prioritize for newsletter-wiki-ingest: (1) Gemini 4 Argon model page + GDM update, (2) OpenAI DevDay 2026 events page + Agents API / Decisions API concepts (dedupe against already-saved uid=724 AINews digest), (3) Dwarkesh/computer-use contested-claim updates. Skip the two low items. Pre-validate all new tags against wiki/SCHEMA.md before page creation."
+}
