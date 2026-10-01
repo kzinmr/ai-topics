@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3122
-> Last updated: 2026-09-29
+> Total pages: 3127
+> Last updated: 2026-10-01
 
 ## Entities (936 pages)
 
@@ -944,7 +944,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2095 pages)
+## Concepts (2099 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1009,6 +1009,7 @@
 - [[concepts/agent-skills-skillmd]] — Agent Skills (SKILL.md)
 - [[concepts/agent-substrate]] — Agent Substrate
 - [[concepts/agent-trace-integrity]] — Agent Trace Integrity — assumption that an agent's stored trace faithfully records what happened; Qin et al. (arXiv:2609.30266) show 8/9 local harnesses let agents delete/tamper their own traces, + prompt-injection via malicious skill file; prescription = record trace out-of-band. Corroborated in the wild by Hugging Face SwarmTraces corpus (Sep 2026)
+- [[concepts/agent-editing-world-model]] — Agent Editing a World Model (AEWM) — an LLM actively edits an explicit symbolic state (block world) from observations, not passive prediction; GPT-5.2 near-perfect edit ops vs Gemini-3-Pro failure; "world model" split into representation vs function (arXiv:2609.28416, Sept 2026)
 - [[concepts/agentic-alternative-to-graphrag]] — Agentic Alternative to GraphRAG
 - [[concepts/agentic-browsing]] — Agentic browsing refers to AI agents that autonomously navigate websites, click buttons, fill forms, and execute mult...
 - [[concepts/agentic-commerce]] — Agentic Commerce; added Stripe Directory (CLI-based business search and pay) and Invoice Payment MCP (June 24)
@@ -1627,6 +1628,7 @@
 - [[concepts/container-context]] — Container Context
 - [[concepts/content-understanding]] — Content Understanding
 - [[concepts/context-as-memory-hierarchy]] — Context as Memory Hierarchy (L1/L2/L3)
+- [[concepts/context-policy-evolution]] — Context Policy Evolution (ContextEvo) — evolving *how* a harness decides what context stays visible (not just skills/memory) as the long-horizon bottleneck; self-evolving context-management policies (arXiv:2609.34649, Sept 2026)
 - [[concepts/context-engineering/_index]] — Context Engineering — Concepts hub for context-engineering sub-pages (context rot, compression, compaction, …)
 - [[concepts/context-engineering/context-anxiety]] — Context Anxiety
 - [[concepts/context-engineering/context-compaction]] — Context Compaction
@@ -1787,6 +1789,7 @@
 - [[concepts/enterprise-coding-agent-security]] — Enterprise Coding Agent Security — Security risks of coding agents in enterprise: session leakage, data exfiltration, supply chain; Claude Code and Alibaba case studies
 - [[concepts/enterprise-knowledge-base-architecture]] — Enterprise Knowledge Base Architecture — meet-the-data-where-it-lives design for internal KBs using hybrid search (full-text + embeddings + IDF + age decay), LLM query planning, MCP-exposed retrieval primitives, and project-scoped search; Cerebras case study (15K queries/day)
 - [[concepts/entropix]] — entropix
+- [[concepts/endogenous-misalignment-self-evolving-agents]] — Endogenous Misalignment in Self-Evolving Agents — unsafe behavior emerging as a side effect of self-improvement (local self-updates persisting into later tasks); SEABench benchmark (arXiv:2609.35596, Sept 2026)
 - [[concepts/epd-disaggregation]] — EPD Disaggregation
 - [[concepts/erdos-unit-distance-problem]] — Erdős Unit Distance Problem (AI Solution)
 - [[concepts/error-handling]] — error-handling
@@ -2163,6 +2166,7 @@
 - [[concepts/json-render]] — json-render — Generative UI Framework
 - [[concepts/just-large-models]] — just-large-models
 - [[concepts/jxbz]] — jxbz
+- [[concepts/just-in-time-agent-memory]] — Just-In-Time Agent Memory (JAM) — constructs relevant context at runtime conditioned on the query instead of Ahead-of-Time memory, avoiding silent loss of fine-grained info; Memory-Gym training env (arXiv:2609.34385, Sept 2026)
 - [[concepts/karpathy]] — Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI/DirectX co-founder. Entity: entities/andrej-karpathy.md
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
 - [[concepts/karpathy-rl-agents]] — karpathy-rl-agents
@@ -2187,6 +2191,8 @@
 - [[concepts/kv-cache]] — KV Cache — Key-Value Caching in Transformer Inference; eliminates redundant recomputation during autoregressive generation
 - [[concepts/kv-cache-compaction]] — KV Cache Compaction — Ramp Labs' attention-matching framework for multi-agent token savings
 - [[concepts/kv-cache-compression]] — KV Cache Compression — Eviction, quantization, and geometry-based methods for reducing KV cache memory; two infrastructure problems (FlashAttention scores, paged-attention block reclamation) (June 29)
+- [[concepts/kv-cache-memory-wall]] — KV Cache Memory Wall — long-context inference bounded by memory bandwidth as KV cache (not weights) becomes the binding resource; unifies fragmented compression literature (arXiv:2609.30854, Sept 2026)
+- [[concepts/kvtether-kv-cache-lifecycle-react]] — KVTether — lifecycle-aware KV cache for ReAct agents; harness-side semantic tracing (engaged/discarded/idle) drives cache management, up to 26.3% lower latency vs LMCache (arXiv:2609.39819, Sept 2026)
 - [[concepts/lambda-monolith-lambdalith]] — Lambda Monolith (Lambdalith)
 - [[concepts/lambda-rlm]] — Lambda-RLM
 - [[concepts/land-rush-cicd]] — Land Rush CI/CD — CI/CD pattern for agentic commit rates: megabatch onto main + swarm diagnosis instead of bisection (Yegge, 2026)
@@ -2704,6 +2710,7 @@
 - [[concepts/researcharena-agent-sabotage]] — ResearchArena — control-evaluation framework for automated AI R&D; tests frontier agents for covert sabotage across 4 long-horizon tasks; 355 red-team + 4,632 blue-team runs (July 2026)
 - [[concepts/resilient-prompt-engineering]] — Resilient Prompt Engineering
 - [[concepts/retrieval-augmented-generation]] — retrieval-augmented-generation
+- [[concepts/reward-hacking-research-agents]] — Reward Hacking in Autonomous Research Agents — RLVR-trained research agents misreport ablation results (not reward-model gaming); monitor-aware "instrumental" hacking 8%→16% as test-time compute grows (arXiv:2609.28614, Sept 2026)
 - [[concepts/retrieve-merge-predict]] — Retrieve Merge Predict
 - [[concepts/reverse-engineering]] — Reverse Engineering
 - [[concepts/reverse-information-paradox]] — Nadella's framework for enterprise AI knowledge sovereignty — inverting Arrow's Information Paradox; trust boundary, five enterprise imperatives (Jul 2026)
@@ -2756,6 +2763,7 @@
 - [[concepts/search-as-code]] — Search as Code (SaC)
 - [[concepts/search-engines]] — Search Engines
 - [[concepts/search-scaling]] — Extending inference scaling to agent search budgets; parallel > sequential search, early research state shapes outcomes (arXiv:2609.35559)
+- [[concepts/scholarevolve-lifelong-harness-evolution]] — ScholarEvolve — lifelong agent-harness evolution driven by research literature (topic modeling over papers, not just execution failures); fixed weights; AppWorld 49.6→63.6%, Tau2 72.7→81.9% (arXiv:2609.40169, Sept 2026)
 - [[concepts/searcharray]] — SearchArray
 - [[concepts/sebastien-ramirez]] — sebastien-ramirez
 - [[concepts/security-and-governance/agent-containment]] — Agent Containment
@@ -2858,6 +2866,7 @@
 - [[concepts/sparse-signal-loop]] — Sparse Signal Loop
 - [[concepts/spec-driven-development]] — Spec-Driven Development
 - [[concepts/speculative-decoding]] — Speculative Decoding — Accelerating LLM inference by using draft models to predict multiple tokens per forward pass
+- [[concepts/specscale-speculative-search-serving]] — SpecScale — serving system for speculative search under test-time scaling; early path pruning + dedup + deferred verification cut throughput/latency cost of TTS (arXiv:2609.39334, Sept 2026)
 - [[concepts/speculative-decoding-mtp]] — Speculative decoding and Multi-Token Prediction (MTP) techniques that accelerate LLM inference by using a smaller dra...
 - [[concepts/speech]] → [[concepts/speech/_index]] — Speech AI
 - [[concepts/speech-audio-asr-tts-voice]] — Speech Audio Asr Tts Voice

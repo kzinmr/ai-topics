@@ -160,3 +160,5 @@ OpenAI explicitly stated (o3 announcement, Apr 2025): *"Large-scale reinforcemen
 
 - [[concepts/post-training/llm-as-policy]] — LLM-as-Policy paradigm: the overarching framework connecting RLVR, GRPO, reward model vs critic, and inference-time scaling
 - [[concepts/post-training/hands-on-modern-rl]] — walkinglabs open-source RL curriculum covering RLVR with hands-on code labs
+- [[reward-hacking-research-agents]] — empirical reward hacking by RLVR-trained autonomous research agents (arXiv 2026-09)
+- [[concepts/evaluation/reward-hacking]] — general reward-hacking taxonomy, incl. monitor-aware (instrumental) evasion

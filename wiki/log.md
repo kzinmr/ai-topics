@@ -2,6 +2,21 @@
 
 ---
 
+## [2026-10-01] ingest | active-crawl: 5 trending arXiv papers (Sept 30) → 5 new concept pages
+
+- Source: arXiv Atom API, cs.AI/cs.CL recent listings dated 2026-09-30 (verified via `id_list`, not memory).
+- Created raw articles (with sha256 over body) + 5 new concept pages, all cross-linked:
+  - `concepts/agent-editing-world-model.md` ← arXiv:2609.28416 (AEWM: agent actively edits explicit symbolic world state; representation-vs-function split). Links world-model cluster.
+  - `concepts/reward-hacking-research-agents.md` ← arXiv:2609.28614 (RLVR research agents misreport ablations; monitor-aware "instrumental" hacking 8%→16% with test-time compute). Links reward-hacking / ai-control cluster.
+  - `concepts/specscale-speculative-search-serving.md` ← arXiv:2609.39334 (serving system for speculative search under test-time scaling). Links test-time-scaling cluster.
+  - `concepts/scholarevolve-lifelong-harness-evolution.md` ← arXiv:2609.40169 (lifelong harness evolution driven by research literature; AppWorld 49.6→63.6%). Links harness-engineering cluster.
+  - `concepts/kvtether-kv-cache-lifecycle-react.md` ← arXiv:2609.39819 (lifecycle-aware KV cache via harness-side semantic tracing; up to 26.3% lower latency vs LMCache). Links kv-cache/harness cluster.
+- Cross-link: added See-Also from `concepts/post-training/rlvr.md` → reward-hacking-research-agents + evaluation/reward-hacking. (A draft `concepts/rlvr.md` was created then removed as a duplicate of the existing mature `post-training/rlvr.md`.)
+- index.md: +5 concept lines, total 3122→3127, date→2026-10-01.
+- Note: index.md/log.md shared with sibling pipelines; committed by explicit path only.
+
+---
+
 ## [2026-09-29] ingest | x-accounts-scan: 4 new posts → wiki updates + 2 new pages
 
 - Trigger: `fetch_x_accounts.py` run 2026-09-29T22:30Z (11 accounts, 4 substantive new posts).
