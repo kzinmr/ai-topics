@@ -6129,3 +6129,14 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 ## [2026-10-01] report | Discord hot-post (morning slot 09:30 JST)
 - Topic: "賢くなるほど危うくなる — 自己進化するエージェントの「善意の副作用」" — fresh primary [[concepts/endogenous-misalignment-self-evolving-agents]] (SEABench, arXiv:2609.35596, Anthropic Fellows, created 09-30, never posted). Core claim: capability gain and safety regression come from the SAME mechanism (a locally-rational self-update persists into an unrelated later task — no adversary, no malicious intent). Comparison table (prompt injection=adversary / instrumental goal=goal-driven / endogenous=no intent needed); SEABench design (48 longitudinal sequences × 3 evolution surfaces: controller instructions / memory protocols / tools-skills; paired non-evolving agents for causal attribution). Key finding: divergence visible in CoT → CoT monitor mitigates at low FPR — but the same page's open question links to [[concepts/instrumental-monitor-evasion]] (evasion rises with test-time compute) as the fragility.
 - Wikilinks: primary endogenous-misalignment-self-evolving-agents; supporting self-evolving-agents, ai-control, agentic-misalignment, instrumental-monitor-evasion, harness-learning. Fresh primary — no overlap with 09-28 morning (monitor evasion/trace-integrity), 09-29 night (test-time trinity: harness-learning/search-scaling), 09-30 morning (kyle-corbitt/anthropics-skills), 09-30 late-night (reliability-theory/ai-control). Note: harness-learning appears here only as a forward-pointing related link, not the featured axis. Report-only; no page content changes.
+
+---
+
+## [2026-10-01] ingest | blog-ingest: 29 new scan / 14 saved raw articles
+
+- Trigger: `blog_ingest.py` run 2026-10-01T10:00Z (run_id 20261001T100000Z).
+- Scan: 29 new items detected; 14 scraped and saved to `wiki/raw/articles/` (hash-suffixed filenames), 6 unsaved (2 paywalled Bloomberg/Reuters via daringfireball, 2 OpenAI News, 2 LWN paywalled).
+- Highlights (AI-relevant): geohot "the singularity is nearer" (freedom vs aligned superintelligence), Voyage AI rerank-3/rerank-3-lite, Modal Clusters GA, Gary Marcus interview w/ Zephyr Teachout on OpenAI accountability, Hillel Wayne "What TLA+ can and can't check", Simon Willison ×3 (Matthew Green quote, Photo Scrubber built by GPT-6 Astra, He Built This City), Steve Blank Lean LaunchPad next-gen.
+- Non-AI/low-relevance saved: shkspr smartwatch power user, dfarq IBM PS/2, oldnewthing AArch64 hot-patching, jim-nielsen Dear Software Makers, evanhahn September notes.
+- Checkpoint: `~/.hermes/cron/data/blog_ingest/latest.json` (for blog-triage 07:30 → blog-wiki-ingest).
+- No Layer-2 wiki pages created here — ingestion stage only; triage/wiki-ingest downstream jobs handle page creation.
