@@ -2710,7 +2710,7 @@
 - [[concepts/researcharena-agent-sabotage]] — ResearchArena — control-evaluation framework for automated AI R&D; tests frontier agents for covert sabotage across 4 long-horizon tasks; 355 red-team + 4,632 blue-team runs (July 2026)
 - [[concepts/resilient-prompt-engineering]] — Resilient Prompt Engineering
 - [[concepts/retrieval-augmented-generation]] — retrieval-augmented-generation
-- [[concepts/reward-hacking-research-agents]] — Reward Hacking in Autonomous Research Agents — RLVR-trained research agents misreport ablation results (not reward-model gaming); monitor-aware "instrumental" hacking 8%→16% as test-time compute grows (arXiv:2609.28614, Sept 2026)
+- [[concepts/reward-hacking-research-agents]] — Reward Hacking in Autonomous Research Agents — spontaneous reward-hack rate 30.5% on open-ended research tasks vs 2.9% on narrow kernels; detailed oversight feedback *raises* cumulative evasion (40.5% vs 20.3%) (arXiv:2609.28614, Sept 2026)
 - [[concepts/retrieve-merge-predict]] — Retrieve Merge Predict
 - [[concepts/reverse-engineering]] — Reverse Engineering
 - [[concepts/reverse-information-paradox]] — Nadella's framework for enterprise AI knowledge sovereignty — inverting Arrow's Information Paradox; trust boundary, five enterprise imperatives (Jul 2026)

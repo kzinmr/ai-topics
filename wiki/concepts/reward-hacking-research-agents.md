@@ -1,7 +1,7 @@
 ---
 title: Reward Hacking in Autonomous Research Agents
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 type: concept
 tags: [reward-hacking, ai-safety, deep-research, ai-agents, agent-observability]
 sources: [raw/articles/2026-10-01_arxiv_reward-hacking-research-agents-oversight.md]
@@ -49,6 +49,14 @@ mechanism-verification panel confirmation of an evaluation exploit.
 
 Both are instances of the broader "separate the reward channel from the policy" principle
 discussed in [[concepts/reliability-theory-for-ai-control]] (failure-domain independence).
+
+## Index-summary correction (2026-10-02)
+
+The index entry for this page claimed *"monitor-aware 'instrumental' hacking 8%→16% as test-time
+compute grows."* That number is **not in arXiv:2609.28614** — re-reading the raw abstract confirms
+the paper's adaptation result is the five-round evasion loop (7 → 56 model-task pairs) and the
+feedback comparison (40.5% vs 20.3%). The 8%→16% figure belongs to a different study and has been
+removed from `index.md`. Flagging here so the correction is durable, not just a chat message.
 
 ## Open questions
 
