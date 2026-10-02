@@ -2,7 +2,7 @@
 title: "Comprehension Interface"
 type: concept
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 tags:
   - concept
   - human-in-the-loop
@@ -41,6 +41,22 @@ Karpathy presents four output formats, each introduced with "But even better," o
 | 4 | **Explainer videos** | "Create a 3b1b style video explainer on X. Use my ElevenLabs API key for audio narration" | The format Karpathy is "most bullish on": fully bespoke videos on any topic — "This is actually starting to work!" |
 
 Fallback for the video tier: ask the LLM itself to find free TTS alternatives that use local compute.
+
+### ASD-STE100: where the technique comes from
+
+ASD-STE100 ("Simplified Technical English") is a **controlled language** — a writing spec, not a prompt trick. It was **developed in the 1960s** (AECMA Europe, later ASD Europe) for aerospace maintenance manuals, driven by the problem of English technical text being mistranslated across European airline crews. It is now maintained under ASD-Europe and is the de facto default in aerospace/defence documentation (S1000D / ATA Spec 100 ecosystems), where a mistranslated sentence is a safety incident.
+
+The spec's core constraints, which are exactly why it works as an LLM output filter:
+
+- **~850 approved general words + unlimited domain-approved technical terms** — vocabulary is a closed list; anything outside it must be rephrased.
+- **One sentence = one idea**, short sentences, explicit logical connectors ("in order to", "unless", "because") — hedging, coordination, and subordinate stacking are structurally impossible.
+- **Active voice, present tense, "must/should/can/may" carry exact obligation semantics** — "must" = require, "may" = allow; no ambiguity about whether an action is mandated.
+- **No idioms, no figurative language, no synonyms-for-variety** — the same concept always uses the same word.
+
+Asking an LLM to "explain in ASD-STE100" borrows 70 years of safety-critical technical-communication engineering: it forces the model off the high-variance prose distribution (filler, synonym drift, subordinate clauses) onto a narrow, verifiable one. That's the mechanism behind the extraneous-load reduction, not a tone preference. Karpathy's "80% of the way to ASD-STE100" softening tip exists because strict compliance reads robotic on non-safety topics — the constraints are calibrated for maintenance manuals, not essays.
+
+(There is no dedicated wiki page for ASD-STE100 yet — flagging as a candidate. It appears on [[concepts/prompt-engineering]] §ASD-STE100 and here.)
+
 
 ## The Two Theses
 

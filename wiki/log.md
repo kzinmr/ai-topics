@@ -1,3 +1,12 @@
+## [2026-10-02] wiki: orphan registration + index count fix (health-fix cron)
+
+- Verified index.md has **no corruption** (pipe/line-number/triple-bracket/space-prefix all 0).
+- Ghost entries: 0 (recursive scan).
+- Registered 5 genuine top-level orphan pages into index.md (alphabetical): `concepts/exploration-benchmarks`, `concepts/hexis-skills-as-state-machines`, `concepts/instrumental-monitor-evasion`, `concepts/representation-conduct-gap`, `queries/wiki-graph-analysis-weekly-2026-10-02`.
+- Skipped `concepts/gpt/_archive/*` (2 items) — archived, intentionally unindexed (false positives).
+- Reconciled index header counts: Total pages 3131->3136, Entities 936->937, Queries 9->11.
+- validate_index.py clean (exit 0). Sibling pipelines' uncommitted working-tree changes left untouched.
+
 - index.md: added `[[entities/anthropics-skills]]` (+1, entities 935→936, total 3120→3122 incl. sibling net +1); corrected earlier log entry that claimed `entities/anthropics-skills.md` and a `concepts/evals-skills.md` enrichment were created — neither had been; skill details now live in `entities/rlancemartin.md` (Automating Eval Design section) and the new `entities/anthropics-skills.md`. Raw articles use the actual scraped filenames `claude.dev--automating-eval-design-and-hillclimbing--2026-09-28.md` / `corbt.com--codex-file-my-taxes-make-no-mistakes--2026-09-29.md` (not the `2026-09-*_handle_*` names in the earlier log line). Lance enrichment is in `entities/rlancemartin.md`, not `lance-martin.md`.
 
 ---
@@ -6202,3 +6211,8 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Cross-links established: page links cognitive-load-theory / cognitive-debt / cognitive-cost-of-agents / cognitive-surrender / simulacrum-of-knowledge-work / agent-human-oversight-failure / drowning-in-documents-paradox / prompt-engineering (ASD-STE100 section) / agentic-engineering / agent-communication; entities andrej-karpathy, grant-sanderson-3blue1brown, thariq-shihipar, zakirullin.
 - Index: 1 entry added; header counts bumped (3130→3131, Concepts 2102→2103).
 - Requested by user in Discord thread (explanation + save + wiki creation with cognitive-load linking).
+## [2026-10-03] report | Discord hot-post (late-night slot 01:30 JST)
+- Topic: "LLMが『理解しやすさ』を爆上げする裏技は、60年前の航空整備士マニュアル由来" — fresh primary [[concepts/comprehension-interface]] (Karpathy Note Tweet 10-02, ingested same-day by user-requested ingest, never posted). Core delivered: the ASD-STE100 rung is a controlled language from 1960s AECMA Europe aerospace maintenance documentation; ~850 approved general words + approved technical terms, one-idea-per-sentence, explicit logical connectors, must/should/can/may carry exact obligation semantics. Mechanism: forces LLM off high-variance prose distribution (filler, synonym drift, subordinate stacking) onto a narrow verifiable one → reduces cognitive-load "extraneous load". "80% of the way" tip = strict compliance is calibrated for safety manuals, not essays.
+- Second thread (format ladder continuation, same page): the rungs build on cognitive-load theory — diagrams exploit spatial working memory, HTML progressive disclosure lets the reader control what enters working memory, videos offload parsing. Risk side stays unresolved: [[concepts/cognitive-debt]] (MIT "Your Brain on ChatGPT" 83% couldn't quote what they read), [[concepts/agent-human-oversight-failure]] (format polish doesn't close say-vs-did gap).
+- Wiki change during prep: added "ASD-STE100: where the technique comes from" section to comprehension-interface.md (provenance + constraints + mechanism); flagged ASD-STE100 as candidate for its own page; bumped updated→2026-10-03.
+- Dedup: comprehension-interface / cognitive-load-theory / ai-output-format-progression used for the first time; no overlap with 10-02 morning (reward-hacking), 10-02 night (DAYJOB/PoS), 10-01 night (harness-synthesis AEWM/KVTether/ScholarEvolve), 10-01 morning (endogenous-misalignment), 09-30 late-night (reliability-theory/ai-control). Report + 1 wiki file changed (+log).

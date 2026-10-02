@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3131
+> Total pages: 3136
 > Last updated: 2026-10-02
 
-## Entities (936 pages)
+## Entities (937 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -1850,6 +1850,7 @@
 - [[concepts/event-driven-architecture-eda]] — Event-Driven Architecture (EDA)
 - [[concepts/evoontology-self-evolving-ontology-data-agents]] — EvoOntology — self-evolving ontology/semantic layer that closes the agent-data gap for data agents; incremental machine-readable semantics over heterogeneous data, evolving as the agent meets new data/tasks (arXiv 2609.15779)
 - [[concepts/excessive-agency]] — Excessive Agency in AI Agents
+- [[concepts/exploration-benchmarks]] — ExplorationBench — benchmarks whether agents explore to build accurate world models (not just exploit known state); long-horizon agentic exploration evaluation (arXiv:2609.30199, Sep 2026)
 - [[concepts/exec-plans]] — Execution Plans
 - [[concepts/exhaustive-agentic-search]] — Exhaustive Agentic Search — Filesystem Metaphor and BEAM Traversal
 - [[concepts/experience-is-a-tax]] — Experience is Now a Tax
@@ -2090,6 +2091,7 @@
 - [[concepts/headless-saas]] — Headless SaaS
 - [[concepts/headroom]] — Headroom
 - [[concepts/hegel-property-based-testing]] — Hegel (Property-Based Testing Protocol and Libraries)
+- [[concepts/hexis-skills-as-state-machines]] — HEXIS: Skills as Executable State Machines — knowledge-control separation, agent skills compiled into finite-state machines for the harness (arXiv:2609.30123, Sep 2026)
 - [[concepts/helium-crisis-2026]] — Helium Crisis 2026
 - [[concepts/hermes-agent-architecture]] — Hermes Agent Architecture
 - [[concepts/hermes-agent-use-cases]] — Hermes Agent Use Cases — 7 Canonical Workflows
@@ -2146,6 +2148,7 @@
 - [[concepts/instruction-hierarchy]] — Instruction Hierarchy
 - [[concepts/intel-8086]] — intel-8086
 - [[concepts/intelligence-conflation]] — Intelligence Conflation
+- [[concepts/instrumental-monitor-evasion]] — Instrumental Monitor Evasion (EvasionBench) — models strategically evading oversight/monitoring under test-time scaling (arXiv:2609.30217, Sep 2026)
 - [[concepts/intent-based-engineering]] — Intent-Based Engineering
 - [[concepts/intent-formalization]] — Intent Formalization for AI Agents
 - [[concepts/interaction-centric-agent-failure-taxonomy]] — Interaction-Centric Agent Failure Taxonomy — Scale AI 41-mode edge/fault-side framework localizing agent failures to interaction + responsible component; agent-as-a-judge validation (κ=0.76)
@@ -2710,6 +2713,7 @@
 - [[concepts/replaid-continuous-diffusion]] — RePlaid (Continuous Diffusion Scaling)
 - [[concepts/representation-collapse]] — How representations (signs, models, proxy metrics, maps) detach from the reality they refer to and begin self-referen...
 - [[concepts/representation-collapse-moc]] — Map of Content for Representation Collapse — when signs, models, proxy metrics, and maps detach from reality and begi...
+- [[concepts/representation-conduct-gap]] — Representation-Conduct Gap (Alignment Illusion) — divergence between a model's internal representations and its actual conduct; weight-induced alignment critique (arXiv:2609.30210, Sep 2026)
 - [[concepts/research-agent-fundamentals]] — Research Agent Fundamentals
 - [[concepts/researcharena-agent-sabotage]] — ResearchArena — control-evaluation framework for automated AI R&D; tests frontier agents for covert sabotage across 4 long-horizon tasks; 355 red-team + 4,632 blue-team runs (July 2026)
 - [[concepts/resilient-prompt-engineering]] — Resilient Prompt Engineering
@@ -3136,7 +3140,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (9 pages)
+## Queries (11 pages)
 
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
@@ -3148,3 +3152,4 @@
 - [[queries/test-time-compute-three-axes-2026-09-24]] — Compute-vs-accuracy frontier has 3 axes (sleep-time / test-time / post-peak); benchmarks only measure the middle one
 - [[queries/wiki-graph-analysis-weekly-2026-09-25]] — Weekly Wiki Graph Analysis (2026-09-25) — 3,112 pages; 465 orphans (316 rich), 3,512 broken refs (context-engineering hub = 188), 8 unresolved dup groups + 48 dir-collision stubs, 2,230 stale; state snapshot persisted
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
+- [[queries/wiki-graph-analysis-weekly-2026-10-02]] — Weekly Wiki Graph Analysis (2026-10-02) — 3,120 pages; 6 top-level orphans, 0 ghost entries, 866 tags
