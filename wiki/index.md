@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3130
+> Total pages: 3131
 > Last updated: 2026-10-02
 
 ## Entities (936 pages)
@@ -944,7 +944,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2102 pages)
+## Concepts (2103 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1443,6 +1443,7 @@
 - [[concepts/cache-first-engineering]] — cache-first-engineering
 - [[concepts/caching-performance-cost-optimization]] — Caching Performance Cost Optimization
 - [[concepts/coding-agent-harness-design-study]] — Coding Agent Harness Design Study (arXiv 2609.20804, Sep 2026) — first component-level ablation of a coding harness: planning, action space, context management across 4 models / 176 settings on SWE-Bench Verified + Terminal-Bench 2.1; every effect is model- and budget-conditional
+- [[concepts/comprehension-interface]] — Comprehension Interface — Karpathy (Oct 2026): output-format ladder for understanding LLM output (ASD-STE100 → diagrams → HTML → 3b1b-style videos); consumption-side complement to ai-output-format-progression; tied to cognitive load/debt
 - [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
 - [[concepts/cais]] — CAIS (Comprehensive AI Services) — K. Eric Drexler's framework reframing superintelligence as distributed AI services, not monolithic agents; R&D automation as improvement engine, learning vs competence distinction, service-centered architecture, AI safety afforances vs agent-centric models (July 14)
 - [[concepts/caisi-federal-ai-review]] — CAISI Federal AI Review

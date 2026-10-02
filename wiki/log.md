@@ -6194,3 +6194,11 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Raw source saved to `wiki/raw/articles/2026-09-30_thedelost_codex-architect-agent-tiering.md` (Note Tweet, tweet ID 2105398038026195279, @thedelost, 2026-09-30; 2913 bookmarks).
 - Content: Codex subagent model-tier role split — GPT-6.1 Sol (high) runs main session; explorer/researcher on Luna (medium), worker on Sol (medium); gpt-6-astra (high) spawned on-call only at 3 checkpoints (before a plan / repeated error / before "done"); deterministic forks delegated to light model (Jev) sub-second. Includes a defensive setup-rebuild prompt (diff-first, no edits until approval, report overrides without changing). Reference: developers.openai.com/codex/subagents.
 - Requested by user in Discord thread for explanation; saved raw only (no concept page created yet).
+
+
+## [2026-10-02] ingest | X Note Tweet: Karpathy comprehension-interface format ladder
+- Raw source saved to `wiki/raw/articles/2026-10-02_karpathy_understanding-llm-outputs-formats.md` (Note Tweet, tweet ID 2105819303471976479, @karpathy, 2026-10-02; 30.9K likes / 40.2K bookmarks / 2.53M impressions).
+- New concept page: [[concepts/comprehension-interface]] — Karpathy's escalating output-format ladder for *understanding* LLM output: ASD-STE100 controlled language ("80% of the way" softening tip) → diagrams → HTML web pages → bespoke 3b1b-style explainer videos (ElevenLabs narration or local TTS). Two theses: work rises into oversight+understanding; discardable custom software artifacts. Positioned as the consumption-side complement to [[concepts/ai-output-format-progression]] (May 2026 production-side framework).
+- Cross-links established: page links cognitive-load-theory / cognitive-debt / cognitive-cost-of-agents / cognitive-surrender / simulacrum-of-knowledge-work / agent-human-oversight-failure / drowning-in-documents-paradox / prompt-engineering (ASD-STE100 section) / agentic-engineering / agent-communication; entities andrej-karpathy, grant-sanderson-3blue1brown, thariq-shihipar, zakirullin.
+- Index: 1 entry added; header counts bumped (3130→3131, Concepts 2102→2103).
+- Requested by user in Discord thread (explanation + save + wiki creation with cognitive-load linking).
