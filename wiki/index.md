@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3127
-> Last updated: 2026-10-01
+> Total pages: 3130
+> Last updated: 2026-10-02
 
 ## Entities (936 pages)
 
@@ -944,7 +944,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2099 pages)
+## Concepts (2102 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1060,6 +1060,7 @@
 - [[concepts/ai-energy]] — AI Energy — AI energy consumption and data center sustainability; training and inference power costs, GPU power envelopes (NVIDIA Vera), efficiency techniques (quantization, speculative decoding, sparsity); major lab sustainability commitments; PJM capacity market modeling errors & $12B ratepayer waste (Aug 2026)
 - [[concepts/ai-employment-displacement]] — AI Employment Displacement — labor displacement frameworks, UBI/de-work proposals, historical-vs-AI-era comparisons (Aug 2026)
 - [[concepts/ai-preflight-safety-testing]] — AI Preflight Safety Testing — Proposed mandatory safety evaluations for frontier AI before deployment
+- [[concepts/apex-adversarial-skill-chain-hijacking]] — APEX Adversarial Skill-Chain Hijacking — attack chaining *benign* skills so a genuine-progress record launders a fake user-approval claim across the skill boundary; 74.2% overall, 84.3% vs 17.4% single-skill-merged on GPT-5.4; verify-files defense costs 30pts benign reliability (arXiv:2610.01564, Oct 2026)
 - [[concepts/apple-silicon-m6-m5-ultra]] — Apple M6 & M5 Ultra — M6 first 2nm Apple silicon (Dual 16-core Neural Engine, 12-core GPU w/ Neural Accelerators, 32GB/170GB/s); M5 Ultra first quad-die SoC (36-core CPU, 80-core GPU, 512GB unified memory @ 1.2TB/s) for on-device frontier LLMs (Aug 25, 2026)
 - [[concepts/apple-speechanalyzer]] — Apple SpeechAnalyzer — Next-generation on-device speech recognition API (iOS 26/macOS 26), 2.12% WER on LibriSpeech, 3-4× improvement over legacy SFSpeechRecognizer
 - [[concepts/bonsai-27b]] — Bonsai 27B — Prism ML's 27B-parameter model running on phones via extreme quantization
@@ -1674,6 +1675,7 @@
 - [[concepts/cyd]] — Cyd
 - [[concepts/dan-abramov]] — Dan Abramov
 - [[concepts/dangerzone]] — Dangerzone
+- [[concepts/dayjob-benchmark]] — DAYJOB — 130 professional-built healthcare/finance tasks averaging 13.6/16.6 human hours; Harbor envs + all-or-nothing binary rubrics judged by agentic judge; Claude Opus 5.5 best at 24.7%/23.9% pass, median config 0.6%/2.5%; headline failure = accepting premises the record contradicts (arXiv:2610.01306, Oct 2026)
 - [[concepts/daniel-jackson]] — Daniel Jackson
 - [[concepts/dark-factory-software-factory]] — Dark Factory Software Factory; + Uber enterprise-scale case study (Aug 2026: >70% agent-authored PRs, cost equation, -34%/-52% cost curves)
 - [[concepts/data-analysis-agents]] — AI Data Analysis Agents
@@ -1850,6 +1852,7 @@
 - [[concepts/exec-plans]] — Execution Plans
 - [[concepts/exhaustive-agentic-search]] — Exhaustive Agentic Search — Filesystem Metaphor and BEAM Traversal
 - [[concepts/experience-is-a-tax]] — Experience is Now a Tax
+- [[concepts/explicit-belief-states-long-horizon-agents]] — Explicit Belief States for Long-Horizon Agents (PoS) — inference-time belief state (world-state estimate + unresolved requirements) as decision context; Belief Trapping detection + recovery; beats history retention/compression on 4 benchmarks × 3 backbones (arXiv:2610.01415, Oct 2026)
 - [[concepts/expert-novice-paradox]] — Expert Novice Paradox — AI demands expert-level judgment while removing the friction that builds it; 4 converging studies (JetBrains / UPenn −17%/+127% / Anthropic) on skill formation (added 2026-08-28)
 - [[concepts/experiential-memory]] — Experiential Memory
 - [[concepts/facilitation]] — facilitation

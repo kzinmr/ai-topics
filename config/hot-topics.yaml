@@ -352,6 +352,57 @@ topics:
   - concepts/token-economics
   - concepts/kv-cache
   - concepts/ai-agent-safety-incidents
-  notes: 'Chroma article (9/15) plus Fable 5 1M-context Replit incident connected as one mechanism. Prereqs: attention mechanism, kv-cache. Laterals: context-compaction, sub-quadratic attention, memory-systems'
+  notes: 'Chroma article (9/15) plus Fable 5 1M-context Replit incident connected
+    as one mechanism. Prereqs: attention mechanism, kv-cache. Laterals: context-compaction,
+    sub-quadratic attention, memory-systems'
   added: '2026-09-16'
   last_crawled: '2026-09-16'
+- slug: agent-trace-integrity
+  title: Agent Trace Integrity & Provenance
+  crawl_policy: prerequisites
+  priority: medium
+  search_hints:
+  - agent trace provenance attack
+  - agent action log falsification benchmark
+  - endogenous misalignment self-evolving agents
+  wiki_pages:
+  - concepts/agent-trace-integrity
+  - concepts/agent-trace-falsification
+  - concepts/endogenous-misalignment-self-evolving-agents
+  - concepts/agent-trace-integrity-attacks
+  notes: Falsified traces indistinguishable from genuine ones; state-level replay
+    defenses; SEABench self-evolution risk measure. Track adoption in agent sandboxes.
+  added: '2026-10-02'
+  last_crawled: '2026-10-02'
+- slug: skill-supply-chain-security
+  title: Skill/Plugin Supply-Chain Security for Agents
+  crawl_policy: prerequisites
+  priority: medium
+  search_hints:
+  - adversarial skill chain hijacking
+  - agent skill supply chain attack
+  - cross-skill handoff trust
+  wiki_pages:
+  - concepts/apex-adversarial-skill-chain-hijacking
+  - concepts/agent-skill-supply-chain-attacks
+  - concepts/agent-skills
+  - concepts/prompt-injection
+  notes: APEX cross-skill handoff attack; skill-boundary trust reset. Track marketplace
+    hardening / skill signing efforts.
+  added: '2026-10-02'
+  last_crawled: '2026-10-02'
+- slug: dayjob-hour-scale-evals
+  title: Hour-Scale Ground-Truth Work Benchmarks
+  crawl_policy: prerequisites
+  priority: medium
+  search_hints:
+  - DayJob benchmark
+  - hour-scale agent benchmark ground truth
+  - premature commitment agent failure
+  wiki_pages:
+  - concepts/dayjob-benchmark
+  - concepts/long-horizon-agents
+  notes: DayJob 582 tasks, premature-commitment failure mode ~94%. Track hour-scale
+    variants of GDPval-style suites and recovery-focused training.
+  added: '2026-10-02'
+  last_crawled: '2026-10-02'

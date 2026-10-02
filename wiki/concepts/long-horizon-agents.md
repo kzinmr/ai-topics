@@ -1,7 +1,7 @@
 ---
 title: "Long-Horizon Agents"
 created: 2026-07-17
-updated: 2026-07-21
+updated: 2026-10-02
 type: concept
 tags:
   - ai-agents
@@ -14,6 +14,7 @@ tags:
 sources:
   - raw/articles/2026-07-16_sierra_horizon-long-horizon-agents.md
   - raw/articles/openai.com--index-safety-alignment-long-horizon-models--37883376.md
+  - raw/articles/arxiv-2610-01306-dayjob-long-horizon-professional-work-benchmark.md
 ---
 
 # Long-Horizon Agents
@@ -178,6 +179,10 @@ Anthropic's ["Measuring model behaviour over long horizons"](https://www.anthrop
 - **Monitoring must span trajectories, not outputs** — the same conclusion the OpenAI section reaches from an incident, Anthropic now demonstrates at measurement level. It motivates [[concepts/economic-agent-benchmarks|economic benchmarks]] (EcoGym, CoffeeBench) where month-scale consequences replace point-in-time grading.
 
 Raw: `raw/articles/anthropic-long-horizon-misalignment-2026.md (reconstruction stub).
+
+## Measurement: DAYJOB Benchmark (October 2026)
+
+Hour-scale, ground-truth-labeled evaluation of multi-day knowledge work is now measurable. DAYJOB (arXiv:2610.01306, Oct 2026) contributes 130 professional-built tasks in healthcare (50) and finance (80) averaging 13.6/16.6 human hours, graded by all-or-nothing binary rubrics applied by an agentic judge. Across 30 model configurations the strongest (Claude Opus 5.5) passes only 24.7%/23.9%, and the median configuration 0.6%/2.5%. The headline failure mode: agents accept premises the record contradicts and carry wrong inputs through otherwise-consistent analyses. See [[concepts/dayjob-benchmark]].
 
 ## Related Concepts
 

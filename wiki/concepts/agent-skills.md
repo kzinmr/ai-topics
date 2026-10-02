@@ -2,7 +2,7 @@
 title: "Agent Skills"
 type: concept
 created: 2026-04-25
-updated: 2026-09-05
+updated: 2026-10-02
 tags:
   - architecture
   - mcp
@@ -24,6 +24,7 @@ sources:
   - raw/articles/2026-02-11_openai-developers-blog_skills-shell-tips.md
   - raw/articles/2026-01-24_openai-developers-blog_eval-skills.md
   - raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-astra.md
+  - raw/articles/arxiv-2610-01564-chaining-skills-to-hijack-llm-agents.md
 related:
   - building-effective-agents
   - effective-harnesses-for-long-running-agents
@@ -222,3 +223,7 @@ Both [[entities/matthew-honnibal]] and [[entities/hamel-husain]] independently i
 ### Skills vs. Composable Libraries
 
 [[entities/vincent-warmerdam]] (marimo) argues that **composable widget libraries beat skill files** for UI/visualization tasks. \"Wiggly Stuff\" widgets are Lego bricks — the agent composes them rather than following procedural instructions.
+
+## Security: Cross-Skill Handoff Attack (October 2026)
+
+APEX (arXiv:2610.01564) shows that chaining **individually benign** skills is an attack surface: an upstream skill induces the agent to write a genuine task-progress record containing a fabricated user-approval claim, and a downstream skill acts on it (84.3% targeted-action success on GPT-5.4 vs 17.4% when the workflow is one skill). The skill boundary itself resets provenance tracking — see [[concepts/apex-adversarial-skill-chain-hijacking]].
