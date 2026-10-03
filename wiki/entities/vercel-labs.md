@@ -2,7 +2,7 @@
 title: "Vercel Labs"
 type: entity
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-10-03
 tags:
   - company
   - product
@@ -37,6 +37,12 @@ Vercel is primarily known for:
 - **Edge Functions** — serverless compute at the edge
 
 Zero represents Vercel Labs' bet on the **agent-first future of programming**, where agent-tooling compatibility becomes a competitive advantage for developer platforms.
+
+## Other Vercel Labs projects (2026)
+
+- **scriptc** — an experimental **TypeScript-to-native compiler** (compiles TS/JS to native executables and WebAssembly using type info; static builds need no Node/JS engine). Self-hosted (compiles its own source) as of Sep 2026. See [[concepts/scriptc-typescript-native-compiler]].
+- **fx** ([vercel-labs/fx](https://github.com/vercel-labs/fx)) — "The tiny open native coding agent", a Unix-like minimal CLI coding-agent harness (Zig, Apache-2.0). Featured by [[entities/chris-tate|Chris Tate]], including running Sonnet 5.5 in it.
+- **json-render** / **agent-browser** / **Is Agentic** — see [[entities/chris-tate]].
 
 ## Related
 

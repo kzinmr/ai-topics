@@ -2,7 +2,7 @@
 title: Chris Tate
 type: entity
 created: 2026-04-10
-updated: 2026-08-21
+updated: 2026-10-03
 source: "x-account"
 related: [entities/simonw, entities/antirez-com, entities/geoffreylitt-com, entities/mitsuhiko]
 tags:
@@ -13,6 +13,8 @@ tags:
   - company
 sources:
   - raw/articles/2026-08-19_ctatedev_fx-tiny-open-native-coding-agent.md
+  - https://github.com/vercel-labs/scriptc
+  - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon
   - raw/articles/2026-08-21_ctatedev_is-agentic-vercel-ai-agent-readiness-score.md
   - raw/articles/2026-08-19_ctatedev_knip-unused-files-deps-exports.md
 ---
@@ -124,6 +126,8 @@ He occasionally shares **technical threads** explaining the reasoning behind his
 
 - **Aug 19 — [fx](https://fx.sh):** Praised **fx**, "a tiny, open, native coding agent" — a minimal CLI harness written in **Zig** (Apache-2.0, ~6.4 MiB binary, ~10 µs cold start), optimized for research and embeddability. Highlighted a fully open agentic-coding stack: open harness (fx) + open-weights [[entities/glm-5-zai|GLM-5.2]] (free via BlackboxAI through Aug 27).
 - **Aug 19 — [Knip](https://github.com/webpro-nl/knip):** Recommended **Knip**, a JS/TS tool that finds unused files, dependencies, and exports — a practical post-AI-coding hygiene tool to strip dead code/agentic leftovers before shipping.
+- **Sep 28 — [fx](https://github.com/vercel-labs/fx) + Sonnet 5.5:** Re-featured **fx** ("The tiny open native coding agent", vercel-labs/fx) — this time with **Sonnet 5.5 running in fx "instantly"**, underscoring fx as a minimal harness for frontier coding models.
+- **Sep 30 — [scriptc](https://github.com/vercel-labs/scriptc):** Announced **scriptc**, a Vercel Labs **TypeScript-to-native compiler** (`npm install -g scriptc`), celebrating that *"scriptc now compiles itself"* — the compiler turned its own TypeScript into a native executable. See [[concepts/scriptc-typescript-native-compiler]].
 - **Aug 21 — [Is Agentic](https://is-agentic.com) (by Vercel):** Called out Vercel's **Is Agentic** scorer (`npx is-agentic [domain]`), which rates how ready a website is for AI agents (server-rendered content, HTTP behavior, document structure, recoverable errors, usable controls; scans run by Ora). Noted the meta twist that the tool is *itself agentic* — "your agent can use it to make your site more agentic."
 
 ## Notable Quotes & Statements

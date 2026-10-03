@@ -1,7 +1,7 @@
 ---
 title: Gemini Enterprise Agent Platform
 created: 2026-05-01
-updated: 2026-06-24
+updated: 2026-10-03
 type: entity
 tags:
   - platform
@@ -78,6 +78,10 @@ Phil Schmid (Google) announced **Gemini Managed Agents** with the **Interactions
 - **Memory** — Persistent agent memory across sessions (complementing the Memory Bank pillar)
 - **Code execution** — Native code execution within the sandbox environment
 - **Interactions API** — Programmatic interface for managing agent lifecycle, sandbox provisioning, and memory state
+
+### Interactions API on the Enterprise platform (Oct 2026)
+
+As of ~2026-09-30, the **Interactions API** became available on the **Gemini Enterprise Agent Platform** (formerly Vertex AI) for Gemini models, using the same `google-genai` SDK. This brings the stateful application/agent-building interface (previously surfaced via the Gemini API) to the enterprise platform, unifying stateful Gemini app development under the `google-genai` client. Announced via [[entities/philipp-schmid|Philipp Schmid]] (`@_philschmid`). Source: [Interactions API overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/interactions).
 
 ### Competitive Positioning
 Gemini Managed Agents competes directly with:

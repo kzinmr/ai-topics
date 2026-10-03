@@ -3,7 +3,7 @@ title: Philipp Schmid
 type: entity
 handle: "@_philschmid"
 created: 2026-04-10
-updated: 2026-08-23
+updated: 2026-10-03
 tags:
   - person
   - model
@@ -159,6 +159,8 @@ Schmid was recognized as the **first German AWS Machine Learning Hero** in 2021,
 
 | Date | Title | Summary |
 |------|-------|---------|
+| 2026-09-30 | Gemini 4 Argon — new frontier model | Schmid announced/amplified **Gemini 4 Argon**: up to **1M output tokens** (from 64K), **$2 in / $10 out** at launch, rolling out to trusted partners first. DeepMind's frontier model for coding, enterprise knowledge work, and cyber defense. See [[events/2026-10-01-gemini-4-argon-release]]. |
+| 2026-09-30 | Interactions API on Gemini Enterprise Agent Platform | The **Interactions API** now works on the **Gemini Enterprise Agent Platform** (prev. Vertex AI) with Gemini models, using the same `google-genai` SDK. See [[concepts/gemini/gemini-enterprise-agent-platform]]. |
 | 2026-08-21 | Gemini 3.1 Flash Live tops new Artificial Analysis Speech Agent Arena | Schmid highlights that the new blind-preference speech-to-speech arena (artificialanalysis.ai/speech-to-speech/arena) is #1'd by Gemini 3.1 Flash Live — humans prefer talking to Gemini. New evaluation surface for real-time voice agents; tracks live voice conversations with blind user preference. |
 | 2026-06-25 | Control an Android Phone with Gemini 3.5 Flash Computer Use | Comprehensive tutorial covering Gemini 3.5 Flash's Computer Use feature for Android — the screenshot→model→function_call→ADB execution loop, 10 supported mobile actions, normalized coordinate mapping, ADBBridge class, and setup instructions. Companion repo at github.com/google-gemini/gemini-android-computer-use-quickstart. See also: [[concepts/gemini-computer-use]] |
 | 2026-03-28 | How Kimi, Cursor, and Chroma Train Agentic Models with RL | Analysis of how leading AI companies use RL for agent training |

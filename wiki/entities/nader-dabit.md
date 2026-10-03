@@ -146,6 +146,7 @@ Per nader.codes: React Native AI, Eliza (ai16z), CDK, fal.ai, Layer (layer.xyz),
 
 ## Sources
 
+- [Devin customer case studies](https://devin.ai/customers) — Cognition's ~37 named case studies, shared by Dabit on X (2026-10-03) as evidence of enterprise Devin adoption.
 - [Engineering for Agents That Never Sleep](https://nader.substack.com/p/engineering-for-agents-that-never) — Nader Dabit (Mar 2026)
 - [How Cognition Uses Devin to Build Devin](https://nader.substack.com/p/how-cognition-uses-devin-to-build) — Nader Dabit (Feb 2026)
 - [How to Run a Fleet of Cloud Agents](https://nader.substack.com/p/how-to-run-a-fleet-of-cloud-agents) — Nader Dabit (Mar 2026)

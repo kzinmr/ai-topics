@@ -1,3 +1,17 @@
+## [2026-10-03] ingest | x-accounts-scan: Gemini 4 Argon + scriptc + Vercel fx
+
+- Scanned 11 tracked X accounts (budget 12/84); 5 new posts with external links.
+- NEW `events/2026-10-01-gemini-4-argon-release.md` — Gemini 4 Argon frontier model release (1M out tokens, $2/$10, DeepSWE v1.1 77.9% SOTA, LVBench 91.7%, CWE-bench v1 68%, Fairwind Program phased rollout). Source: blog.google.
+- NEW `concepts/scriptc-typescript-native-compiler.md` — Vercel Labs TypeScript-to-native compiler; self-hosting milestone (Sep 30). Source: github.com/vercel-labs/scriptc + Chris Tate thread.
+- UPDATED `entities/chris-tate.md` — Sep 28 (fx + Sonnet 5.5), Sep 30 (scriptc) activity-log entries; sources + `updated`.
+- UPDATED `entities/vercel-labs.md` — new "Other Vercel Labs projects" section (scriptc, fx, json-render); `updated`.
+- UPDATED `entities/philipp-schmid.md` — Blog/Recent Posts rows for Gemini 4 Argon + Interactions API on Enterprise platform.
+- UPDATED `concepts/gemini/gemini-enterprise-agent-platform.md` — Interactions API now on Gemini Enterprise Agent Platform (google-genai SDK, Sep 30).
+- UPDATED `entities/nader-dabit.md` — added Devin customer case-studies source (devin.ai/customers reply, Oct 3).
+- index.md: Events 35→36, Concepts 2108→2109.
+
+---
+
 ## [2026-10-03] lint | wiki-health-fix: all clean, 0 auto-fixes applied
 
 - index.md corruption (pipe/line-number/triple-bracket/space-prefix): 0 detected, verified via grep + validate_index.py (exit 0, 3160 lines)

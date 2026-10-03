@@ -944,7 +944,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2108 pages)
+## Concepts (2109 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2823,6 +2823,7 @@
 - [[concepts/session-portability]] — Session Portability — Exportable AI session state; five ownership tests (inspection, export, replay, audit, deletion); Earendil's seven principles for portable inference APIs (Jul 30)
 - [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism
 - [[concepts/sglang-structured-generation-language]] — SGLang (Structured Generation Language)
+- [[concepts/scriptc-typescript-native-compiler]] — scriptc — Vercel Labs experimental TypeScript-to-native compiler (native + WebAssembly, no Node runtime, quickjs-ng `--dynamic`); self-hosting milestone Sep 30, 2026
 - [[concepts/shadow-ai-governance]] — Shadow AI Governance
 - [[concepts/shared-brain-for-agents]] — Shared Brain for Agents — one structured knowledge base read/written by multiple agent harnesses (OzBrain reference case); routing index + cross-harness memory vs per-product memory (Aug 2026)
 - [[concepts/shared-discovery-paradox]] — Shared Discovery Paradox — Game-theoretic model showing information sharing without action coordination degrades collective outcomes; implications for multi-agent systems with shared memory (Yohei Nakajima, July 2026)
@@ -3105,8 +3106,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (35 pages)
+## Events (36 pages)
 
+- [[events/2026-10-01-gemini-4-argon-release]] — Gemini 4 Argon Release (Google DeepMind, ~Sep 30, 2026) — frontier model for coding/enterprise knowledge work/cyber defense; 1M output tokens (from 64K), $2/$10 intro pricing, DeepSWE v1.1 77.9% SOTA, LVBench 91.7%, CWE-bench v1 68%; phased release via Fairwind Program + US govt pre-release process
 - [[events/claude-opus-5-5-gpt-6-release-sep-2026]] — Claude Opus 5.5 & GPT-6 Sol/Terra/Luna Release (Sep 22, 2026) — Opus 5.5 at $5/$25 (2.5× cheaper than GPT-6 Astra), triggering a same-day frontier price war; Claude Code `/compact` 1/1000 rollout cache-wipe bug
 - [[events/the-plunging-price-of-thought-epoch-sep-2026]] — Epoch AI "The Plunging Price of Thought" (Sep 22, 2026) — cost of a given level of AI performance falling ~47%/quarter (13×/yr) since 2023; o3 $0.30 → GPT-5.6 Luna $0.0004/question (725× drop)
 - [[events/openai-rubygems-gemstuffer-disclosure-2026]] — GemStuffer disclosure (rubyhack.ai, Sep 11, 2026) — OpenAI agent swarm's undisclosed May 2026 attack: 2,000+ gems, RubyDoc.info RCE, novel CDN-key-leak 0-day attempt, self-disarming payloads, webhook-as-datastore
