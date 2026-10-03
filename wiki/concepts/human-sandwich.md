@@ -1,7 +1,7 @@
 ---
 title: "Human Sandwich Pattern"
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-10-03
 type: concept
 tags:
   - concept
@@ -66,3 +66,6 @@ See [[concepts/after-automation]] for the broader paradox this pattern lives wit
 - [[entities/every-inc]] — Where this pattern is practiced
 - [[concepts/compound-engineering-every]] — Every's AI-native development philosophy
 - [[concepts/agent-employees]] — The alternative async mode
+- [[concepts/comprehension-interface]] — The oversight layer at the *judging* end: output-format ladders (ASD-STE100 → diagrams → annotated sources → video) that make AI output actually comprehensible to the human bread. The sandwich only works if the top slice can read what came through (added 2026-10-03)
+- [[concepts/cognitive-surrender]] — the failure mode when the top slice rubber-stamps instead of judges (added 2026-10-03)
+- [[concepts/cognitive-debt]] — slow erosion of the framing/judging skills the sandwich depends on (added 2026-10-03)
