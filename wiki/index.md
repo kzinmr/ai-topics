@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3136
-> Last updated: 2026-10-02
+> Total pages: 3141
+> Last updated: 2026-10-03
 
 ## Entities (937 pages)
 
@@ -944,7 +944,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2103 pages)
+## Concepts (2108 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1650,6 +1650,7 @@
 - [[concepts/context-engineering/index]] — Context Engineering
 - [[concepts/contextmaxxing]] — Contextmaxxing — Better Memory Over Burning More Tokens
 - [[concepts/contextual-retrieval]] — Contextual Retrieval
+- [[concepts/covert-exfiltration-via-web-fetch]] — Covert Data Exfiltration via Web Fetch Tools — LLM-Leak: real-world indirect prompt-injection that exfiltrated user context labels via a web-fetch tool; data/cloaking mitigation (arXiv:2610.01768, WIFS 2026)
 - [[concepts/continual-harness]] — Continual Harness
 - [[concepts/continual-learning]] — Continual Learning; enriched with Advanced Frameworks (Dwarkesh Patel) — RLVR generalization limits, OPSD (On-Policy Self-Distillation), Dreaming as 4th scaling axis, KV cache vs weight density (35M×), 2027 vision (June 27)
 - [[concepts/lifelong-agent-memory]] — Lifelong Agent Memory — experience reuse without catastrophic forgetting; LifeMem environment-centric workflows (arXiv:2609.12655), Sep 2026
@@ -1759,6 +1760,7 @@
 - [[concepts/durable-execution]] — Durable Execution — Fault-tolerant, stateful execution model for long-running agent workflows
 - [[concepts/dynamic-software]] — The paradigm shift from static (deterministic, hard-coded) software to dynamic (model-driven, non-deterministic, agen...
 - [[concepts/dynamic-workflows]] — Dynamic Workflows in Claude Code; enriched with Boris Cherny "algebra for agents" framing + Bun Zig→Rust production rewrite (Aug 8)
+- [[concepts/global-coherence-multi-agent]] — Global Coherence in Local-to-Global Multi-Agent Systems — GCPO: local-to-global rollout + Global Advantage Attribution + reference-policy regularizer fixes emergent incoherence in independently-RL-trained MAS (arXiv:2610.02036)
 - [[concepts/eagle-3-1]] — EAGLE 3.1
 - [[concepts/earendil]] — Earendil Inc. — AI agent infrastructure company (Armin Ronacher, Colin); Pi coding agent, Absurd durable execution; session portability advocacy
 - [[concepts/ecs-fargate-scaling]] — ECS Fargate Scaling
@@ -2324,6 +2326,7 @@
 - [[concepts/memory-scaling]] — Memory Scaling
 - [[concepts/memory-systems-bitter-lesson]] — Memory Systems and the Bitter Lesson
 - [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns — Anthropic vs OpenAI vs Cognition
+- [[concepts/mempp-non-destructive-memory]] — Mem-P (Mem³) — Non-Destructive Probabilistic Memory — retain-and-refine over a memory cube with orthogonal probabilistic addressing; lossless vs destructive memory (arXiv:2610.02002)
 - [[concepts/mesa-filesystem]] — Mesa Filesystem
 - [[concepts/meta-ai-glasses-content-moderation]] — Meta AI Glasses Content Moderation Controversy
 - [[concepts/meta-capacity-efficiency-agents]] — Meta Capacity Efficiency: Unified AI Agents at Hyperscale
@@ -2823,6 +2826,7 @@
 - [[concepts/shadow-ai-governance]] — Shadow AI Governance
 - [[concepts/shared-brain-for-agents]] — Shared Brain for Agents — one structured knowledge base read/written by multiple agent harnesses (OzBrain reference case); routing index + cross-harness memory vs per-product memory (Aug 2026)
 - [[concepts/shared-discovery-paradox]] — Shared Discovery Paradox — Game-theoretic model showing information sharing without action coordination degrades collective outcomes; implications for multi-agent systems with shared memory (Yohei Nakajima, July 2026)
+- [[concepts/sharpo-segment-level-credit-assignment]] — Segment-Level Credit Assignment for GRPO (SHARPO) — sharpness-aware GRPO with segment-level advantage + informative-sample filtering for multi-turn tool-calling agents (arXiv:2610.00838)
 - [[concepts/shkspr.mobi]] — shkspr.mobi
 - [[concepts/shopify-ai-engineering]] — Shopify's AI-First Engineering
 - [[concepts/short-leash-ai-coding]] — Short Leash AI Coding — 12-principle methodology for tight human-in-the-loop AI-assisted coding; contrasts with unsupervised vibe engineering; AI disclosure and self-review protocols (July 5)
@@ -2850,6 +2854,7 @@
 - [[concepts/smfs]] — Supermemory Filesystem (SMFS)
 - [[concepts/smollm]] — SmolLM
 - [[concepts/smollm2]] — SmolLM2
+- [[concepts/source-learning-agent-competence]] — Source Learning (Source-Specific Agent Competence) — SourceLearn: build a persistent source model from repeated source use; self-directed + task-guided learning, reconstructed from the authoritative source (arXiv:2610.02150)
 - [[concepts/snapshot-testing]] — snapshot-testing
 - [[concepts/snowflake-arctic-rl]] — Snowflake Arctic RL — Open-source RL framework (VeRL+SkyRL); ZoRRo 6x actor-update acceleration; 36h Text2SQL training on 32 H200s; beats Gemini 3.1 Pro (June 30)
 - [[concepts/societal-shadow]] — A concept proposed by QC (Qiaochu Yuan): the ironic phenomenon where RLHF's need to enumerate everything LLMs are for...

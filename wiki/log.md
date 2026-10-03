@@ -1,3 +1,30 @@
+## [2026-10-03] ingest | active-crawl: 5 trending arXiv papers (Oct 3) → 5 new concept pages
+
+Topics selected from trending sources (HN Algolia, blogwatcher DB, HuggingFace papers, raw-article term frequency). Chosen for wiki coverage gaps: multi-agent RL coordination, non-destructive memory, tool-calling RL credit assignment, agentic retrieval, agentic-security incident. All arXiv (peer-reviewed where noted).
+
+Raw sources (wiki/raw/articles/, frontmatter: source_url + sha256 of body):
+- arxiv-2610.02036-global-coherence-local-to-global-multi-agent.md
+- arxiv-2610.02002-mempp-non-destructive-organizational-memory.md
+- arxiv-2610.02150-sourcelearn-source-specific-competence.md
+- arxiv-2610.01768-llmleak-covert-exfiltration-web-fetch.md
+- arxiv-2610.00838-sharpo-segment-level-credit-assignment.md
+
+Wiki pages created (wiki/concepts/):
+- global-coherence-multi-agent.md — GCPO: fixes emergent incoherence when independently-RL-trained MAS agents are composed (local-to-global rollout + global advantage attribution + reference-policy regularizer). confidence: high.
+- mempp-non-destructive-memory.md — Mem-P (Mem³): retain-and-refine over a memory cube, orthogonal probabilistic addressing; lossless vs destructive memory, no forgetting on schema change. confidence: medium.
+- source-learning-agent-competence.md — SourceLearn: from knowledge *access* to source *learning*; persistent per-source model refined by self-directed + task-guided learning, reconstructed from the authoritative source. confidence: medium.
+- covert-exfiltration-via-web-fetch.md — LLM-Leak: real-world indirect prompt-injection exfiltrating user context labels via a web-fetch tool (WIFS 2026). confidence: low (thin abstract).
+- sharpo-segment-level-credit-assignment.md — SHARPO: sharpness-aware GRPO, segment-level advantage (thought/tool_call/response/observation) + informative-sample filtering for multi-turn tool agents. confidence: low (full-text pending).
+
+Navigation:
+- index.md — 5 entries added alphabetically; Total pages 3136→3141, Concepts 2103→2108, updated date → 2026-10-03.
+- Cross-references wired into existing hubs: [[concepts/filesystem-memory]], [[concepts/ai-agent-memory-two-camps]], [[concepts/memory-integrity]], [[concepts/agentic-rag]], [[concepts/llm-security]], [[concepts/prompt-injection]], [[concepts/agent-safety]], [[concepts/multi-agents/agent-orchestration]], [[concepts/post-training/grpo]], [[concepts/interpretability]].
+
+Notes:
+- Several draft wikilinks pointed at non-existent pages; all remapped to canonical filenames and re-verified (zero broken links across the 5 new pages).
+- SHARPO and LLM-Leak are single-paper; headline numbers withheld/marked unverified pending full-text review.
+
+---
 ## [2026-10-02] wiki: orphan registration + index count fix (health-fix cron)
 
 - Verified index.md has **no corruption** (pipe/line-number/triple-bracket/space-prefix all 0).
