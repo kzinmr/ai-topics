@@ -1,3 +1,24 @@
+## [2026-10-03] lint | wiki-health-fix: all clean, 0 auto-fixes applied
+
+- index.md corruption (pipe/line-number/triple-bracket/space-prefix): 0 detected, verified via grep + validate_index.py (exit 0, 3160 lines)
+- Ghost entries: 0
+- Orphan pages: 2 reported = `concepts/gpt/_archive/*` — intentionally archived, excluded from index per skill guidance (false positive)
+- No commits made; working tree WIP belongs to sibling pipelines (left untouched)
+- Stale pages 2899, unprocessed raw 6249, tag taxonomy 867 unique tags — report-only, no auto-fix applicable
+
+---
+
+## [2026-10-03] watchdog | auto-fix run — 0 fixes, verified healthy; blog chain break diagnosed
+
+- Pipeline alert `blog chain broken: ingest_ok_but_triage_failed` diagnosed: blog-ingest ran OK today (run_id 20261003T100020Z), blog-triage wrote no checkpoint for 2026-10-02/03 (latest triage file dated Jul 11). Needs-human: inspect blog-triage cron run logs; do NOT re-run blindly.
+- wiki_health: null in watchdog context — informational only (17:50 job runs after 17:35 watchdog; known pattern).
+- Index verified clean live: validate_index.py pass; 0 pipe/line-number/triple-bracket corruption; headers 937/2108 match filesystem (930 top-level entities + 7 nested = 937; concepts header excludes 21 redirect stubs). No recount needed (no drift since 09-27 baseline).
+- Graph report false positives confirmed: '596 index entries not on disk' = 0 real (dir-hub/nested-path resolution); '16 duplicate pairs' = 2 real (deliberate-coder/deliberatecoder, giles-thomas/gilesthomas — merge requires judgment, report-only).
+- Invalid tags (dimillian, odyssey-ml): ALL 5 offending tags are present in SCHEMA.md taxonomy — graph report HIGH finding is a FALSE POSITIVE. Pages match HEAD; 0 invalid tags.
+- Top-20 broken bare wikilinks have no flat-file targets (all live in nested subdirs or don't exist) — batch namespace fix not applicable, residual 2851 needs hub-linking judgment.
+- Work tree: 209 dirty wiki files = active-crawl sibling WIP (incl. exploration-benchmarks + 4 orphan-index pages). Intentionally NOT stashed/committed per health-fix precedent.
+- 0 files auto-fixed, 0 committed by this run.
+
 ## [2026-10-03] ingest | active-crawl: 5 trending arXiv papers (Oct 3) → 5 new concept pages
 
 Topics selected from trending sources (HN Algolia, blogwatcher DB, HuggingFace papers, raw-article term frequency). Chosen for wiki coverage gaps: multi-agent RL coordination, non-destructive memory, tool-calling RL credit assignment, agentic retrieval, agentic-security incident. All arXiv (peer-reviewed where noted).
