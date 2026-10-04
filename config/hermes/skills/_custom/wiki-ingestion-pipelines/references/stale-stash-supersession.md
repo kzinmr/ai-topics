@@ -27,12 +27,20 @@ stash sits un-popped for days. Do NOT silently drop it and do NOT silently keep 
    - **Any hunk absent from HEAD and from the working tree** → unique work remains. Leave the
      stash; flag it for pop (or manual recovery), never drop.
 
-## Session evidence (2026-09-30 active-crawl)
+A less conservative alternative, valid when you have verified unique work remains and the tree is otherwise idle: `git stash pop` immediately followed by the conflict-resolution recipe below.
 
-A Sep-28 stash ("active-crawl: sibling pipeline WIP", 10 files: ai-control trace-integrity
-links, ai-energy, ai-skepticism-movement, space-gpus, odyssey-ml, dimillian, agent-skills,
-x-account-enrichment SKILL.md + refs, wiki-watchdog override) survived 2 days. Steps 3-4
-confirmed all content had been re-committed to main by later runs (e.g. the stash's
-agent-trace-integrity / instrumental-monitor-evasion links on ai-control existed in later
-commits). Concluded fully superseded; reported with the drop command rather than dropping
-autonomously.
+## Session evidence (2026-10-02 active-crawl): pop + conflict resolution worked
+
+The same Sep-28-era stash was still sitting there a few days later (still "active-crawl: sibling pipeline WIP"). This run popped it instead of dropping, because steps 3–4 showed unique hunks absent from HEAD (ai-control's trace-integrity / instrumental-monitor-evasion Related-Concepts links had NOT been re-committed — the 09-30 run's supersession conclusion was wrong for that file).
+
+Pop hit a conflict: a later commit had added a "Quantifying the Stack" section + reliability-theory link to the same Related-Concepts block. Both sides were purely additive, so resolution = keep both, delete conflict markers via `patch`. Then:
+
+1. `git add <resolved-file>` to clear the unmerged path (fixes the "could not write index" pop error).
+2. `git reset -q` — unstage everything so the restored sibling WIP stays working-tree-only and isn't committed under your message.
+3. `git stash drop` — pop keeps the entry when the merge needed resolution; it does NOT auto-drop. Verify with `git stash list` (empty).
+
+Pop-vs-drop decision shortcut: if the stash's unique hunks are still absent from HEAD, pop-and-resolve; if every hunk is already on main, report-the-drop per the conservative recipe above.
+
+## Prevention: make stash round-trip atomic
+
+The pop must happen in the same tool-call chain as the push that motivated the stash. If compaction or context exhaustion interrupts between `git push` and `git stash pop`, the next commit-capable cron run must check `git stash list` FIRST — a non-empty stash with your own pipelines' message means you owe the pop before doing anything else.

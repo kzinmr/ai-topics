@@ -9,14 +9,14 @@ description: >-
 
 # Wiki Ingestion Pipelines (umbrella)
 
-This umbrella skill covers all automated wiki ingestion pipelines — from external source to wiki page. Each section below covers one pipeline end-to-end, including cron configuration, checkpoint handling, and failure recovery.
+This umbrella skill covers all automated wiki ingestion pipelines — from external source to wiki page. Each section covers one pipeline end-to-end: cron config, checkpoint handling, failure recovery.
 
 All pipelines follow the same pattern:
 ```
 fetch external content → checkpoint → triage → wiki-ingest (create/update pages) → commit
 ```
 
-> 📖 X-scan: `references/x-accounts-scan-cron.md`. Cron-mode: `references/cron-mode-constraints.md`.
+> 📖 X-scan: `references/x-accounts-scan-cron.md`. Cron-mode: `references/cron-mode-constraints.md`. Stale stash: `references/stale-stash-supersession.md`.
 > 📖 The newsletter wiki-ingest execution details (triage parse-failure recovery, take body-fetch patterns, enrichment + archive + commit/push specifics) live in `references/newsletter-wiki-ingest.md` (with `references/newsletter-take-body-fetch-pattern.md` and `references/newsletter-triage-recovery-2026-08-20.md` as supporting references). The standalone `newsletter-wiki-ingest` skill was consolidated into this umbrella on 2026-08-21.
 
 ---

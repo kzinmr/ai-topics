@@ -145,3 +145,52 @@ dedups and attaches link metadata; wiki ingestion is the agent's job.
 - Several tweets from one thread promoting a single announcement (e.g. Tomaarsen's
   3-post NeoMME thread sharing the same 2 URLs) fold into ONE event page, not
   three. Dedupe candidates by shared `external_urls` before creating pages.
+
+## Two raw-file naming regimes coexist in wiki/raw/articles/
+
+- Automated scrapers (`fetch_x_bookmarks.py`, newsletter/blog ingest) write
+  `domain--path-slug--YYYY-MM-DD.md` (e.g.
+  `claude.dev--automating-eval-design-and-hillclimbing--2026-09-28.md`), while the
+  manual policy in `raw-article-filename-policy` uses
+  `{YYYY-MM-DD}_{source-slug}_{content-slug}.md`. When the scan script already
+  saved a scraper-named raw file for a post, REFERENCE that existing file (its
+  exact name) in entity pages/log — do NOT rename it or write a second
+  `{date}_{handle}_*` copy of the same article. Only hand-authored raw files
+  (e.g. transcript/metadata fallbacks) follow the manual convention.
+
+## YouTube-link posts when transcripts/subtitles are blocked
+
+- yt-dlp on this box can hit persistent `HTTP Error 429: Too Many Requests` on the
+  subtitle endpoint (varies by player_client, retries, and waits — treat it as an
+  environmental condition, retry opportunistically, don't hardcode a refusal).
+- Do NOT keep retrying across many turns (tool-loop warning fires at 3 identical
+  failures). Fallback that worked for Thariq Shihipar's Latent Space episode
+  (2026-09-29): get metadata via yt-dlp's JSON dump (title, channel, full
+  description, chapter markers), write a raw article page stating up front
+  "transcript unavailable — based on official description + chapters, to be
+  enriched later", and link it from the speaker's entity page. Record the video
+  URL so a future run retries the transcript.
+- Chapter markers alone give a usable topic map — build a timestamped chapter
+  table rather than a thin stub.
+
+## Log-entry honesty after context compaction
+
+- After a compaction summary, BEFORE writing the `wiki/log.md` entry, verify each
+  claimed file/section with `ls`/`grep`/`git status` — compacted handoffs can claim
+  pages were created or enriched when they never were (this run: log claimed
+  `entities/anthropics-skills.md` + a `concepts/evals-skills.md` enrichment and
+  made-up `2026-09-*_handle_*` raw filenames; reality was different filenames and
+  the enrichment living in `entities/rlancemartin.md`).
+- If a prior log entry is wrong, append a dated correction line to log.md rather
+  than silently leaving it, and index.md counts must be recomputed from the live
+  file (`grep -c '^- \[\[entities/' wiki/index.md`), not from the summary's numbers.
+
+## Duplicate entity pages (bio-only vs full profile)
+
+- Many tracked people have TWO pages: a bio-only `entities/<handle>.md` (built by
+  `build_x_wiki.py`) and a full `entities/<full-name>.md` (e.g. `rlancemartin.md`
+  vs `lance-martin.md`, `corbett.md`/`kyle-corbett.md`/`kyle-corbitt.md`). Before
+  ingesting, `ls entities/ | grep -i <name-or-handle>` and put enrichment in the
+  RICHEST existing page; check `wiki/index.md` for redirect stubs
+  ("Redirect → [[entities/...]]") to learn the canonical target. Do not add a
+  third variant.

@@ -30,6 +30,19 @@ suggesting any promotions, bucket every unmanaged skill:
   candidates. This bucket has been empty for every check to date.
 Assume the answer is "nothing to promote" and justify each exception.
 
+### Resolved 2026-10-04: unmanaged set cleaned up
+The 4 superseded local skills were archived to `~/.hermes/skills/.archive/` with
+`SKILL.md` renamed to `SKILL.md.disabled` (per the archive convention above):
+`code-quality` (⊂ requesting-code-review + systematic-debugging, 80% line coverage),
+`planning-and-execution` (⊂ writing-plans + subagent-driven-development, 54%),
+`kanban` (⊂ kanban-orchestrator + kanban-worker, 96%), `hermes-repo-sync`
+(⊂ skill-management, which lists it as related). Pre-flight passed: no cron jobs,
+config.yaml, or AGENTS.md references. New steady state: **Managed 76 / Unmanaged 1 /
+Builtin 70**. The 1 remaining unmanaged (`yuanbao`) is disabled Yuanbao-gateway
+plumbing with tools absent from this profile — leave it, never promote.
+If this job reports the old 5-item unmanaged list again, the archive was reverted;
+restore it rather than re-triaging.
+
 When new unmanaged skills are identified during inventory checks:
 1. **Assess value**: Does the skill encode reusable workflow knowledge (not session-specific hacks)?
 2. **Check for duplicates**: `find ~/ai-topics/config/hermes/skills -type d -name "<skill-name>"` — don't promote if a managed version already exists

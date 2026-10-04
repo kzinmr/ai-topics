@@ -511,8 +511,10 @@ When running a "translate remaining JP files" batch over the wiki:
 - **When bodies are clean and only intentional aliases remain**, the sweep has reached its natural end. Report this clearly and suggest disabling/retargeting the cron job rather than manufacturing work.
 - **Exclusions for scans:** skip `raw/`, `_archive/`, `.git`, and fenced code blocks; parse frontmatter by matching the FIRST `---` at line 0 (not "any two `---` lines") or false positives appear.
 - **Intentional body JP is not backlog.** Append-only `log.md` entries quoting Japanese titles/proper names, and Japanese person names used for disambiguation on quarantine/verification pages, are content — not untranslated prose. Classify residual body-JP files by inspection before counting them as remaining work; report them separately from "translatable remaining."
-- **Sweep-end procedure:** log the natural-end conclusion in `log.md` (this bumps log JP char count slightly — a pre-commit JP warning about this is expected, not an error), commit, push, and explicitly recommend disabling/retargeting the sweep cron in the report.
+- **Sweep-end procedure:** the natural-end conclusion (and any follow-up re-verifications) should already have been logged when the END was FIRST declared. On subsequent sweeps, FIRST check whether `log.md`'s residual body-JP is byte-identical to HEAD (`git show HEAD:wiki/log.md | md5sum` vs `md5sum wiki/log.md`, or a Python string compare) — if identical, NOTHING changed, skip the commit entirely (a redundant commit for "nothing new" is noise), and just report natural-end + re-recommend disabling/retargeting the sweep cron. Only log+commit if this run actually changed files or discovered the prior conclusion was wrong.
 - **Reusable dual scan:** `references/jp-sweep-scan-script.py` implements the body-vs-frontmatter scan correctly (frontmatter anchored at line 0, skips raw/_archive/.git). Run via terminal with `python3 <path>` rather than hand-rolling the regex each sweep.
+- **Frontmatter anchor must handle no-frontmatter files.** The "first `---` at line 0" rule assumes every file has frontmatter. `log.md` (and other append-only logs) starts with a `##` heading — a naive "first two `---` lines anywhere" scan will anchor on a random mid-file `---` (horizontal rule or YAML block inside prose) and misreport the body boundary. Anchor on line 0 only; if line 0 is not `---`, treat the WHOLE file as body.
+- **Before "fixing" the last JP file, verify HEAD vs worktree.** The recurring log.md hit in this wiki is append-only history: Japanese Discord hot-post topic titles quoted inside English log entries, plus sweep-end notes citing intentional multilingual aliases. These are CONTENT, not backlog — translating them falsifies history. The cron prompt's built-in task text says "translate top 8 files"; if the top-8 list contains only log.md-style intentional content, do NOT translate it and do NOT make a no-op commit. Verify `git show HEAD:<file>` matches the worktree (byte compare), then report natural-end.
 - **Watch for stray uncommitted work from other pipelines** in the working tree (e.g., concept pages from active-crawl left unstaged). Translation crons committing only their own files avoid entangling other jobs' WIP; if you do commit strays, fix tag-taxonomy violations surfaced by the pre-commit hook (common: singular `ai-agent` → canonical `ai-agents`) rather than using `--no-verify`.
 
 ## Pitfalls
@@ -559,6 +561,8 @@ When ingesting recent arXiv papers (the `active-crawl` job and any "find arXiv s
 
 ## Committing wiki changes in a shared working tree (cron with concurrent sibling pipelines)
 
+**Detect dirty siblings correctly — `git status` can lie.** On a long-lived cron checkout, `git status` reports files as modified purely from stale stat info (mtime changed without content change). Confirmed failure mode: `git add <file> && git commit` fails with "no changes added to commit" after status listed the file as modified, and a custom `GIT_INDEX_FILE` index also shows 0 diff. Before trusting a dirty tree: run `git update-index --refresh` and then count with `git diff --name-only` (content comparison) — NOT `git status --short`. `git diff` after refresh was 190 wiki files + 7 skills (real sibling work), while status had flagged `wiki/log.md` too, which `git diff` proved had zero content change (md5 identical to HEAD).
+
 Multiple ingestion crons can leave their own WIP staged/modified in `~/ai-topics` at the same time.
 
 - **Commit only your own files** by explicit path after `git reset -q` (the working tree may already
@@ -592,6 +596,50 @@ assuming a plural, singular, or generic-word variant exists; several canonical t
 counterintuitive (`open-weight` not `open-weights`, `datasets` not `data`). When a tag-word is
 ambiguous, grep with word boundaries (`\bword\b`) to distinguish a real taxonomy entry from
 incidental prose or a compound (`open-data`).
+
+## Post-write wikilink verification (catch broken `[[links]]` before commit)
+
+Concept pages authored from memory frequently contain `[[concepts/foo]]` wikilinks that point to pages which
+don't exist at that path (wrong subdir, or the hub has a different slug). The pre-commit hook validates
+*tags*, not wikilink targets — broken links sail through the hook and only surface at lint time. Run this
+check right after writing new pages, before staging:
+
+```bash
+cd ~/ai-topics/wiki
+for pg in <new-page-1> <new-page-2> ...; do
+  grep -oE "\[\[concepts/[^]|]*" "concepts/$pg.md" | sed 's/\[\[//'
+done | sort -u | while read l; do [ -f "$l.md" ] || echo "BROKEN: $l"; done
+```
+
+Confirmed fixes this session: `concepts/agent-skill-supply-chain-attacks` → correct path is
+`concepts/security-and-governance/agent-skill-supply-chain-attacks`; always verify a referenced concept's real
+path with `find concepts -iname "*slug*"` before trusting the wikilink. The `related:` YAML field and body
+`[[wikilinks]]` are two separate surfaces — both must resolve.
+
+## Tag fixes are NOT idempotent string replaces (staged-vs-worktree double-apply trap)
+
+When the hook blocks a commit on an invalid tag, the naive fix is
+`s.replace('bad_tag','good_tag')`. On a RETRY after a partial earlier edit this corrupts the frontmatter:
+if a prior run already rewrote the tag list once, a second blind replace stacks entries
+(confirmed: `capability-based-security` → `supply-chain-security` → then a clean `supply-chain-security\n`
+replace left `supply-chain-security\n supply-chain` — two bogus tags). And `git add` staged the bad version
+while later edits sat unstaged in the worktree, so the *committed* tree differed from what you were reading.
+
+Discipline:
+- After any tag edit, **re-read the `tags:` block by splitting on the delimiters** (`s.split('tags:')[1].split('aliases:')[0]`)
+  and print it to confirm the exact final tag list — don't trust that the replace "took".
+- A tag may be valid as a `related:` page path but INVALID as a `tags:` entry
+  (`capability-based-security` is a real concept page but not a taxonomy tag — keep it in `related:`, replace it in `tags:`).
+- Re-`git add` the file after the fix, and re-run `.githooks/pre-commit` before the real commit.
+
+## Validating a tag against SCHEMA.md (inline comma format, not bullet list)
+
+SCHEMA.md's taxonomy is **inline comma-separated per category line** (`- **Models**: model, kv-cache, …`),
+NOT one-tag-per-line bullets. So `grep -qE '^\s*-?\s*<tag>\b' SCHEMA.md` reports every tag MISSING (false
+negatives). Use a word-boundary membership grep instead: `grep -oE '\b<tag>\b' SCHEMA.md` and check exit 0.
+Confirmed canonical-vs-invalid this session: `ai-persona`→`agent-identity`;
+`capability-based-security` NOT a tag (→ `agent-security`/`supply-chain`); `supply-chain-security` NOT a tag
+(canonical is `supply-chain`). Several taxonomy words are singular where you'd expect plural.
 
 ## Never overwrite a rich page with a skeleton (hard pre-commit gate)
 

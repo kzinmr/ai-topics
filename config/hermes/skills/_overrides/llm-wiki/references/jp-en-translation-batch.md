@@ -13,6 +13,13 @@ use this batch workflow to process N files at a time.
 
 ### 1. Scan and rank JP files
 
+**USE THE SHIPPED SCRIPT — do not hand-roll the scan.** The canonical implementation is `references/jp-sweep-scan-script.py` in this skill (run `python3 <skill_dir>/references/jp-sweep-scan-script.py [wiki_root]`). The inline scan historically shipped in the cron prompt has two confirmed bugs:
+
+1. **Frontmatter detection = "first two `---` lines anywhere".** A file whose line 0 is NOT `---` (e.g. `log.md`, which starts with `# Wiki Log`) but contains `---` horizontal rules later in the body gets a wrong `body_start`, misclassifying body content and producing false counts. Correct rule: frontmatter exists ONLY if line 0 is `---`; otherwise the whole file is body.
+2. **Skip filter `if 'raw/' in root` is fragile.** Use `'/raw' in root or '/_archive' in root or '/.git' in root` — slash-prefixed segments match `wiki/raw` and `wiki/raw/articles` regardless of trailing separator.
+
+**Natural-end heuristic:** if the scan's only hit is `log.md` (or other append-only logs) and the file is byte-identical to HEAD (`git show HEAD:wiki/log.md | md5sum` vs `md5sum`), the sweep is at natural end — the residual JP is intentional (quoted JP topic titles in log entries, alias citations). Do NOT translate, do NOT no-op commit. Report natural end + recommend disabling the sweep cron.
+
 ```python
 import re, os
 jp = re.compile(r'[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF\uFF00-\uFFEF]')

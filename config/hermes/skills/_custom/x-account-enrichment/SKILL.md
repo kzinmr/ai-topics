@@ -149,6 +149,7 @@ What they tweet about most frequently.
 - `references/tweet-content-extraction.md` — Extracting full content from tweets
 - `references/x-accounts-scan-json-structure.md` — JSON structure of `x_accounts_latest_full.json`
 - `references/x-scan-discord-report-template.md` — Japanese Discord report format template for x-accounts-scan cron job
+- `references/x-scan-git-staging-pitfalls.md` — Partial-staging commit sequence when the repo is dirty from other jobs, and the `~/wiki` → `~/ai-topics/wiki` symlink fact (never copy)
 
 ## Known Subagent Pitfalls
 
@@ -185,7 +186,7 @@ For the scan→ingest workflow, see `wiki-ingestion-pipelines` → `references/x
 
 **Key distinction**:
 - **This skill**: Take a `status: skeleton` entity page → research the person → write 8-15KB full page
-- **Scan ingest**: Take `new_posts` from `x_accounts_latest_full.json` → evaluate each post's external URLs → create concept pages or update existing entity pages
+- **Scan ingest**: Take `new_posts` from `x_accounts_latest_full.json` → evaluate each post's external URLs → create concept pages or update existing entity pages. Read `references/x-scan-pitfalls.md` FIRST — it carries the commit/table/link-verification pitfalls and the `account_handle` → entity-filename mismatch trap that the "handle ≠ filename" note above does not fully cover.
 
 **Post evaluation quick reference**:
 | Signal | Action |

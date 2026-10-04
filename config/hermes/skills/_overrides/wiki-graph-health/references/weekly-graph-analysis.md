@@ -55,14 +55,51 @@ Both scripts patched 2026-08-14. If anyone reverts or copies this logic elsewher
 4. **~20 orphans are referenced via bare (non-namespaced) links.** e.g. `concepts/harness-engineering/system-architecture/context-engineering` had 136 inbound refs as `[[context-engineering]]`. Converting bare links to namespaced resolves BOTH the orphan status and a large chunk of bare-wikilink-missing broken links. Check with a basename-match pass over all pages' wikilinks.
 
 5. **Duplicate groups are not all real.** Before consolidating:
-   - Check `redirect:` frontmatter — `entities/martin-fowler` (→ martinfowler), `entities/samuelcolvin` (→ samuel-colvin) are intentional redirects. Keep them. As of 2026-08-28, 6 of 16 reported groups are redirect/alias pairs (martin-fowler, samuelcolvin, dspyrlm→dspy-rlm, and the April stub family below) — the dup detector does not skip `redirect:` pages, so mentally subtract them.
+   - Check the **`status: redirect`** frontmatter form + `redirect:` tag — **22 such stub pages exist** wiki-wide (e.g. `entities/lilianweng`, `entities/eugeneyan`). The dup detector does not skip them, so mentally subtract all redirect stubs. (This is the actual frontmatter field: `status: redirect`, sometimes paired with `tags: [..., redirect]`.)
    - `entities/_index` vs `concepts/_index` is a false positive (different namespaces).
    - Entity-vs-concept pairs (`entities/cline` vs `concepts/cline`, `entities/qwen` vs `concepts/qwen`) and concept-vs-comparison pairs (`concepts/agent-harnesses` vs `comparisons/agent-harnesses`) can be legit namespace splits — verify both are actually about the same thing; if legit, ensure they cross-link each other.
-   - Real dupes are hyphen-variant pairs (eugene-yan/eugeneyan, giles-thomas/gilesthomas, alpha-proof-nexus×2, deer-flow/deerflow) — keep the richer page, add `redirect:` to the other.
-   - **⚠️ Same-blog/similar-slug ≠ same person.** `entities/deliberate-coder` (Ben Ilegbodu, "deliberation-first coding") and `entities/deliberatecoder` (Steve Shogren, "Deliberate Software") are DIFFERENT PEOPLE — merging would be data loss. ALWAYS read both pages' `title:` + Overview before merging any person pair; report's normalized-name match has no idea who the subject is.
+   - Real dupes are hyphen-variant pairs (eugene-yan/eugeneyan, giles-thomas/gilesthomas, alpha-proof-nexus×2, deer-flow/deerflow) — keep the richer page, add `status: redirect` to the other. BUT which side is "richer" flips between runs as pipelines keep enriching — always re-measure `wc -l` on both pages THIS session, don't trust a prior run's line counts. (2026-10-02: `giles-thomas`=92 vs `gilesthomas`=228, so the hyphenated page is the smaller one this time.)
+   - **⚠️ Same-blog/similar-slug ≠ same person.** `entities/deliberate-coder` (Ben Ilegbodu, "deliberation-first coding") and `entities/deliberatecoder` (Steve Shogren, "Deliberate Software") are DIFFERENT PEOPLE — merging would be data loss. ALWAYS read both pages' `title:` + Overview before merging any person pair; report's normalized-name match has no idea who the subject is. This trap bites hardest when BOTH members look "rich" (100+ lines) by size alone — size does not prove same-subject.
    - **Person dupes can carry contradicting facts.** As of 2026-08-28, `lilianweng` says "VP Research at OpenAI, Preparedness lead" while `lilian-weng` says co-founded Thinking Machines Lab. When merging such pairs, do NOT silently pick one — keep both claims with dates/sources and set `contested: true` per SCHEMA's Update Policy.
    - **April stub family signature:** ~25-line pages with `created: 2026-04-25`, empty `sources:`, trailing `[[entities/_index]]` link (e.g. `concepts/open-claw-ecosystem`, `concepts/evals-skills`, `concepts/llm-integration-patterns`). These came from one April bulk generation and act as accidental shadow pages of the real pages; recommend converting to proper `redirect:` pages.
 6. **"Not indexed"/"not on disk" counts are inflated** (2026-08-28: reported 27/7, real 2/1). Generator maps `foo/index.md`→`foo` but never tries `foo/_index.md`, and hub pages (`concepts/anthropic`, `concepts/claude`, `concepts/gemini`, `concepts/gpt`, `concepts/openai`, …) are intentionally indexed via child entries. `concepts/gpt/_archive/*` is correctly excluded. Do a manual `comm -3` of disk slugs vs index wikilinks to find the real gaps (2026-08-28 genuine gap: `concepts/ai-employment-displacement` missing from index).
+
+## Independent ground-truth resolver (don't trust either script's counts)
+
+Two repo scripts both claim to be "verified" but DISAGREE with each other and with the raw weekly report, because each has its own keying/dir-hub quirks:
+- `scripts/wiki_graph_analysis_weekly.py` — shallow `os.listdir`, scans only 2542 top-level L2 pages, misses ~600 nested pages. Inflates broken links (5312) because it can't resolve dir-hub dirs, and the "596 index entries not on disk" line is almost entirely false positive.
+- `scripts/wiki_graph_analysis_verified.py` — recursive `os.walk`, walks 3139 pages, gives a lower broken-link count (2851). Still counts bare-wikilink refs as broken.
+
+Neither is authoritative for the INDEX-GAP or DUPE counts. **Write a fresh inline resolver in `terminal` (execute_code is cron-blocked) to establish ground truth for the two most consequential claims before recommending destructive actions:**
+
+```python
+# run via heredoc: python3 - <<'EOF' ... EOF   (cwd = wiki/)
+import re, os
+idx = open('index.md').read()
+links = set(re.findall(r'\[\[([^\]|#]+)', idx))
+disk = set()
+for root, ds, fs in os.walk('.'):
+    if 'raw' in root or '_archive' in root or '.git' in root: continue
+    for f in fs:
+        if f.endswith('.md'):
+            disk.add(os.path.relpath(os.path.join(root,f),'.')[:-3])
+miss = [l for l in links if l not in disk]
+# dir-hubs count as resolvable: 'concepts/foo' satisfied by concepts/foo/index.md or /_index.md
+dirhub = sum(1 for l in miss if os.path.isdir(l) and (os.path.exists(l+'/index.md') or os.path.exists(l+'/_index.md')))
+print('index wikilinks:', len(links), '| missing-on-disk:', len(miss), '| of which dir-hub:', dirhub)
+for l in miss[:20]:
+    print('  MISS', l, '<- dir-hub' if (os.path.isdir(l) and (os.path.exists(l+'/index.md') or os.path.exists(l+'/_index.md'))) else '<- REAL')
+```
+
+2026-10-02 result: **missing-on-disk = 0** (all 596 were dir-hub false positives). So "remove N stale index entries" from the report is essentially never a real action — verify to zero before touching index.md. For the reverse check (pages on disk not in index), the report line is usually the real signal — confirm each with `grep -c "<slug>" index.md`.
+
+## Tag-violation triage (report says "N pages with invalid tags")
+
+The weekly report flags invalid tags but not which page has which. Map each offending tag to its canonical form before any commit (pre-commit blocks them). Grep `SCHEMA.md` for the exact tag-word (with `\b` boundaries) to find the canonical spelling — several are counterintuitive (`open-weight` not `open-weights`, `datasets` not `data`). Confirmed mappings: `ai-agent`→`ai-agents`. If a *whole family of pages* shares one invalid tag (2026-10-02: `ai-timeline` on `entities/dimillian` + `entities/odyssey-ml`, plus stray `devtools`/`ai-coding-tools`/`genai`), it likely came from one recent seed/bulk-ingest using a non-taxonomy tag — decide once (add to taxonomy OR strip everywhere), don't leave the invalid tag on a subset.
+
+## Working-tree hygiene during the weekly run (reconfirmed 2026-10-02)
+
+The repo had **192 dirty wiki files from a sibling active-crawl pipeline** uncommitted at run time, including the 4 "not indexed" concept pages. Those 4 pages were part of that in-flight batch, not orphans needing your index edit. Before recommending "reconcile N unindexed pages," check `git status --short -- wiki/ | wc -l` and `git ls-files --error-unmatch <page>` — if the pages are freshly-created sibling WIP, defer the index/log edit to that pipeline rather than committing over it. Commit ONLY your own report/annotation files via explicit path after `git reset -q`.
 
 ## Adjudicated-annotations artifact (2026-08-28 pattern, keep doing it)
 

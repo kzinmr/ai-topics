@@ -6,6 +6,20 @@ category: wiki
 
 # Wiki Watchdog Auto-Fix Patterns
 
+## Session references
+- `references/watchdog-healthy-baseline.md` — full verification checklist, metric thresholds, auto-fix scope limits, decision flow for every watchdog run (canonical: `wiki-graph-health/references/watchdog-healthy-baseline.md`).
+- `references/wiki-health-fix-session-2026-09-21.md` — (NOT YET CREATED — see note above) digest "orphans" are `_index.md` files; `_index`→dir-slug dedupe before acting on orphan counts; hub registration recipe; use `head -6 wiki/log.md` not offset-based tail reads.
+- `references/watchdog-session-2026-09-27.md` — local LLM 503 + context-length cascade: how to group multiple pipeline alerts into ONE infra-incident diagnosis (cross-reference failure timestamps across all jobs' cron outputs before escalating per-job); watchdog's own cron job ID ≠ `wiki-health-fix` ID (filter jobs.json by name, then `ls -t ~/.hermes/cron/output/<id>/`); index header recount race with sibling pipelines (check `git log -1 -- wiki/index.md` before recounting — sibling may have already reconciled); stage ONLY `wiki/log.md` when sibling WIP is uncommitted.
+  - NOTE: this reference file could not be created via `skill_manage write_file` (tool returned "file_content is required" despite the parameter being present — a serialization bug seen 2026-09-27). The full session detail is embedded below instead; recreate the file if the tool recovers.
+
+### 2026-09-27 session detail (embedded — reference file pending)
+- Two alerts (`x_accounts stale(26h)`, `blog chain broken: ingest_ok_but_triage_failed`) both traced to ONE infra window 09:46–12:48 UTC: local LLM server 503 (busy) + context-length-exceeded. blog-triage wrote no checkpoint (chain-broken alert fired although ingest was OK, 35 articles); newsletter-triage / wiki-backlog-triage / raw-backlog / x-bookmarks-ingest failed in the same window; x-accounts-scan only *looked* stale due to its 2-day cadence. Recovery confirmed 13:06+ (dreaming, newsletter-ingest, trending ran OK). Watchdog logged the diagnosis, took no wiki repair, escalated "re-run failed triage jobs or wait" to human.
+- Procedure lesson: before escalating alerts per-job, build a timeline of failure timestamps across ALL pipeline jobs' cron outputs; same-window failures = one infra event → one diagnosis.
+- `jobs.json` entry named `wiki-watchdog-fix` may have no output dir — find the watchdog's real hash ID by filtering jobs.json on name, then `ls -t ~/.hermes/cron/output/<id>/`.
+- Index recount race: a sibling (trending-topics, 12:45 UTC) had already reconciled index.md headers before the watchdog's live read — `git log -1 --oneline -- wiki/index.md` first; if already fixed, log "already reconciled by sibling" and skip.
+- Commit hygiene: sibling WIP (uncommitted trending-topics pages) present → staged only `wiki/log.md`, pre-commit hook passed, pushed, sibling WIP verified untouched.
+- `references/watchdog-session-2026-09-12.md` — jobs.json failure source; report-only failure classes; header recount formula.
+
 ## Triggers
 - Daily watchdog cron job (`wiki_watchdog_fix_context.py`) at 17:35 UTC
 - Any task involving wiki structure health checks
