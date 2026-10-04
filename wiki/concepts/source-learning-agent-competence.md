@@ -67,8 +67,31 @@ experience-based memory baselines.
 - Boundary vs. **fine-tuning on the corpus**: what does a "source model" keep that weight updates
   or cached context do not?
 
+## The third axis (source- vs episode- vs time-scoped)
+
+Mem++ (arXiv:2610.02002, see [[concepts/mempp-non-destructive-memory]]) attacks the *same*
+write-time-compression default from the opposite side. Both papers refuse to let the memory layer
+decide the answer in advance, and both re-ground retrieval in the **authoritative document**. They
+differ on what is *learned*:
+
+| Axis | Source Learning (SourceLearn) | Mem++ |
+|------|------------------------------|-------|
+| Unit | one durable **source** | a **time-scoped** slice of many documents |
+| Persistent artifact | a source model of how knowledge is structured | every document **whole**, nothing distilled |
+| When intelligence moves | *pre*-query — reuse accumulates competence | *post*-query — answering model selects the version |
+| Trigger | repeated use of the same source | a question that specifies *when* |
+| Failure avoided | repeated access ≠ understanding the source | write-time distillation destroys the version/time dimension |
+
+Mem++ relocates the hard reasoning to **read** time; SourceLearn builds durable competence *before*
+any question. A third lineage — the [[concepts/ai-agent-memory-two-camps]] "Camp 1" fact-graph camp —
+sits at neither: it compresses at write time and thus pre-commits what can be answered, which is
+exactly what both 2610 papers reject. Read together, the three stances are a coordinate system, not
+a ranking: **what is persistent (source model vs raw record), when selection happens (pre- vs
+post-query), and what scope it is keyed to (source vs time).**
+
 ## Related
 
+- [[concepts/mempp-non-destructive-memory]] — same anti-write-distillation stance, read-time selection instead of a persistent source model
 - [[concepts/agentic-rag]] — the "improve access" lineage this contrasts with
 - [[concepts/ai-agent-memory-two-camps]] — experience-based memory as the other baseline
 - [[concepts/memory-integrity]] — re-grounding updates in the authoritative source
