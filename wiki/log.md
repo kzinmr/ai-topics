@@ -1,3 +1,12 @@
+## [2026-10-04] lint | wiki-health-fix — report false positives verified, index counts corrected
+- **No index corruption**: pipe_prefix=0, line_number_prefix=0, triple_bracket=0, space_prefix=0 (verified live; validate_index.py clean). Health digest's "index_corruption" section was absent/false-positive — nothing to auto-fix in Phase 1.
+- **Orphan reports = 2 false positives + 1 real gap**:
+  - `concepts/gpt/_archive/2026-04-24-ainews` and `concepts/gpt/_archive/2026-04-24-news-aggregation` → under `_archive/`, intentionally NOT indexed (per wiki-graph-health skill). Skipped.
+  - `concepts/retire-versioned-execution` → REAL unindexed page (active-crawl product, arxiv 2610.01160). Registered in index.md alphabetically (between retrieval-augmented-generation and retrieve-merge-predict) + registered `concepts/durable-execution` (created same batch, also missing from index).
+- **Index header counts re-synced to filesystem (authoritative)**: Concepts 2109→2108, Total pages 3146→3126. Known index-header decay issue.
+- Stale pages (2901) and unprocessed raw backlog (6265) are report-only — not auto-fixable; left for user-directed backlog pipelines.
+
+---
 ## [2026-10-04] query | hot-post (night slot): "賢いモデルでは直らない" cross-page synthesis
 - Contrarian synthesis across 3 existing pages: [[concepts/global-coherence-multi-agent]] (Observation-Aliasing 1/k bound; hidden-fact 12–17/40 vs visible 40/40), [[concepts/mempp-non-destructive-memory]] (OrgMemBench +8.0–13.1 over baseline, read-time selection), [[concepts/coding-agent-harness-design-study]] (176 settings; planning = cost-saver for strong models, no accuracy gain).
 - Thesis: intelligence is rarely the binding constraint — information/state/harness is. No new pages created; answer delivered to Discord thread.

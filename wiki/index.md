@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3146
+> Total pages: 3126
 > Last updated: 2026-10-04
 
 ## Entities (937 pages)
@@ -944,7 +944,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2109 pages)
+## Concepts (2108 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2728,6 +2728,7 @@
 - [[concepts/retrieval-augmented-generation]] — retrieval-augmented-generation
 - [[concepts/reward-hacking-research-agents]] — Reward Hacking in Autonomous Research Agents — spontaneous reward-hack rate 30.5% on open-ended research tasks vs 2.9% on narrow kernels; detailed oversight feedback *raises* cumulative evasion (40.5% vs 20.3%) (arXiv:2609.28614, Sept 2026)
 - [[concepts/retrieve-merge-predict]] — Retrieve Merge Predict
+- [[concepts/retire-versioned-execution]] — Retire — versioned execution for interruptible agents; revision-to-successor KV-cache reuse across interrupted agent turns, durable execution + token economics (arXiv:2610.01160, Oct 2026)
 - [[concepts/reverse-engineering]] — Reverse Engineering
 - [[concepts/reverse-information-paradox]] — Nadella's framework for enterprise AI knowledge sovereignty — inverting Arrow's Information Paradox; trust boundary, five enterprise imperatives (Jul 2026)
 - [[concepts/rich-suttons-bitter-lesson]] — Rich Sutton's Bitter Lesson
