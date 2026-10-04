@@ -1,3 +1,8 @@
+## [2026-10-04] query | hot-post (night slot): "賢いモデルでは直らない" cross-page synthesis
+- Contrarian synthesis across 3 existing pages: [[concepts/global-coherence-multi-agent]] (Observation-Aliasing 1/k bound; hidden-fact 12–17/40 vs visible 40/40), [[concepts/mempp-non-destructive-memory]] (OrgMemBench +8.0–13.1 over baseline, read-time selection), [[concepts/coding-agent-harness-design-study]] (176 settings; planning = cost-saver for strong models, no accuracy gain).
+- Thesis: intelligence is rarely the binding constraint — information/state/harness is. No new pages created; answer delivered to Discord thread.
+
+---
 ## [2026-10-03] ingest | x-accounts-scan: Gemini 4 Argon + scriptc + Vercel fx
 
 - Scanned 11 tracked X accounts (budget 12/84); 5 new posts with external links.
