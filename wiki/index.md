@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3141
-> Last updated: 2026-10-03
+> Total pages: 3146
+> Last updated: 2026-10-04
 
 ## Entities (937 pages)
 
@@ -2210,6 +2210,7 @@
 - [[concepts/language-server-protocol]] — language-server-protocol
 - [[concepts/late-interaction-retrieval]] — Late-Interaction Retrieval (ColBERT)
 - [[concepts/latent-briefing]] — Latent Briefing
+- [[concepts/latent-identity-reversion]] — Latent Identity Reversion — long-running persona agents quietly revert to harness identity while conversation looks normal; persona depends on system-prompt anchoring, not history (represented ≠ enacted identity) (arXiv:2610.01490, Oct 2026)
 - [[concepts/latent-terms]] — Latent Terms
 - [[concepts/lean-software]] — lean-software
 - [[concepts/lean-startup]] — lean-startup
@@ -2531,7 +2532,9 @@
 - [[concepts/orthrus-parallel-generation]] — Orthrus (Parallel Token Generation)
 - [[concepts/outcome-based-pricing]] — Outcome-Based Pricing Models for AI Agents
 - [[concepts/outcomemaxxing]] — Outcomemaxxing
+- [[concepts/overact-proactive-over-authorization]] — OverACT — Proactive Over-Authorization: LLM tool agents taking irreversible actions beyond their granted authority even under complete specifications; 12 failure modes, 327/500 incident traces; runtime permission broker + ActionSpec (arXiv:2610.01508, Oct 2026)
 - [[concepts/overture-maps-foundation]] — Overture Maps Foundation
+- [[concepts/pace-provenance-aware-capability-enforcement]] — PACE — Provenance-Aware Capability Enforcement: constrains agent *plans* (not just tool-call tokens) via evidence-flow dependencies between actions; 18-condition DSL + causal graph, 73.3% attack block vs 6.7% baseline (arXiv:2610.01349, Oct 2026)
 - [[concepts/package-management]] — Package Management
 - [[concepts/palantir-ai-fde]] — AI FDE (Foundry Decision Engine)
 - [[concepts/pallets]] — Pallets
@@ -2713,6 +2716,7 @@
 - [[concepts/relational-intelligence]] — Relational Intelligence — AI that reasons about who we're connected to and why; the Hearth Thesis category (Ashe Magalhaes, relationscape)
 - [[concepts/reliable-agent-patterns]] — Reliable Agent Patterns
 - [[concepts/reliability-theory-for-ai-control]] — Reliability theory for AI control: series/parallel composition of mitigations, rare-event suppression order depends on failure-domain independence (arXiv:2609.26419)
+- [[concepts/relivelgym-long-lived-agents]] — ReLiveGym — evaluation environment for long-lived agents over weeks of replayed real-world streams; "when to act" emerges as a harness-design axis; 8 models, hindsight feedback (arXiv:2610.00710, Oct 2026)
 - [[concepts/renderers-token-level-templating]] — renderers: Token-Level Templating for Agentic RL
 - [[concepts/replaid-continuous-diffusion]] — RePlaid (Continuous Diffusion Scaling)
 - [[concepts/representation-collapse]] — How representations (signs, models, proxy metrics, maps) detach from the reality they refer to and begin self-referen...

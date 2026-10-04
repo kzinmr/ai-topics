@@ -6300,3 +6300,14 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - New page: [[concepts/harness-tax]] — covers both the Portkey coined term (Apr 2026, 83k vs 8k Fibonacci tokens) and the formal HarnessTax study: 21 model–harness pairs (Claude Code / Codex CLI / Pi × 7 models) on SWE-bench Lite + Terminal-Bench 2.0; harness affects cost up to 5× but success only ±2–5%; 4-tool Pi on the Pareto frontier; alternative harness won 9/12 comparisons; Claude Code initial context >10× Pi's.
 - Updated: [[entities/pi]] (HarnessTax section + source, updated bumped), [[entities/portkey]] (terminology origin section, updated bumped), [[concepts/coding-agent-harness-design-study]] (related cross-ref — convergent bash-only/low-cost finding, updated bumped).
 - New tag `harness-taxonomy` added to SCHEMA.md Domain Concepts before use.
+
+## [2026-10-04] ingest | Active crawl — 5 trending agent-safety/infra papers (arXiv, Oct 2026)
+- Source: scheduled active-crawl; picked from hot-topics clusters (agent runtime security, long-lived/long-horizon agents, agent identity). All 5 verified via arXiv Atom API (id_list 2610.01508, .01490, .01349, .01160, .00710) — abstracts saved as raw sources with sha256.
+- New pages:
+  - [[concepts/overact-proactive-over-authorization]] — arXiv:2610.01508 (Zhu, Zhang, Liu) — proactive over-authorization in LLM tool agents; 12 failure modes, 327/500 incident traces, SelfAudit + runtime permission broker.
+  - [[concepts/pace-provenance-aware-capability-enforcement]] — arXiv:2610.01349 (Li et al.) — plan-level/evidence-flow enforcement at the tool-call boundary; 62/79 lowest attack columns, ≤3-pt utility loss.
+  - [[concepts/latent-identity-reversion]] — arXiv:2610.01490 (Fraile Navarro) — "Paul" incident; persona depends on system-prompt anchoring, represented ≠ enacted identity.
+  - [[concepts/retire-versioned-execution]] — arXiv:2610.01160 (Zhang et al.) — authority/resource split for interruptible agents in vLLM; median 17.1% revision-TTFT cut.
+  - [[concepts/relivelgym-long-lived-agents]] — arXiv:2610.00710 (Jin et al., Sahara Labs) — weeks-long replayed-reality benchmark; "when to act" as a harness-design axis, 8 models.
+- Updated: [[wiki/index.md]] (5 entries + count 3141→3146). Cross-refs wired to existing pages (advanced-tool-use, capability-based-security, durable-execution, vllm/kv-cache, long-horizon-agents, harness-tax, ai-persona-embodiment, agent-trace-integrity).
+- Tag fixes: mapped invalid `ai-persona`→`agent-identity`, dropped invalid `capability-based-security` tag (→ kept as a `related:` link to the existing concept page; replaced in tags with `supply-chain`).
