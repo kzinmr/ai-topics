@@ -1,7 +1,7 @@
 ---
 title: Portkey
 created: 2026-05-05
-updated: 2026-08-12
+updated: 2026-10-04
 type: entity
 tags:
   - security
@@ -44,3 +44,7 @@ Palo Alto Networks' acquisition of Portkey signals that AI agent security is mat
 - Addresses the visibility gap in [[concepts/shadow-ai-governance|Shadow AI Governance]]
 - Complements [[concepts/zero-trust-agentic-ai|Zero Trust Agentic AI]] architectures
 - Post-close, becomes the **AI Gateway for Prisma AIRS** ([[entities/palo-alto-networks|Palo Alto Networks]]' AI Runtime Security platform) — the "central nervous system" monitoring, routing, and securing every AI transaction, with AI Identity Security enforcing least-privilege controls per agent interaction
+
+## Harness Tax (terminology origin)
+
+Portkey engineer Siddharth Sambharia coined the popular term **"The Harness Tax"** in an April 2026 post: Claude Code used 83k tokens for a Fibonacci script where Pi used 8k — same task, same output ([blog](https://portkey.ai/blog/the-harness-tax/)). The term was later adopted and formalized as the **HarnessTax** study (Pan et al., UC Berkeley, Sept 2026; Arena.ai research post), which cited Portkey's post. See [[concepts/harness-tax]].

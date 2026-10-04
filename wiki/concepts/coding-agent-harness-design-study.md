@@ -1,12 +1,12 @@
 ---
 title: Coding Agent Harness Design Study
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-04
 type: concept
 tags: [coding-agents, ai-agents, agent-harness, evaluation, research, agent-architecture, context-engineering]
 sources:
   - raw/articles/2026-09-20_arxiv-2609.20804_empirical-study-of-harness-design-for-coding-agents.md
-related: [harness-engineering, effective-harnesses-for-long-running-agents, context-engineering, agent-overclaiming, coding-agents]
+related: [harness-engineering, effective-harnesses-for-long-running-agents, context-engineering, agent-overclaiming, coding-agents, harness-tax]
 confidence: high
 ---
 
@@ -70,3 +70,4 @@ trajectories are only a win if verification keeps up.
 - [[effective-harnesses-for-long-running-agents]] — the monolithic-harness prior this ablates
 - [[context-engineering]] — the context-management strategies ablated here
 - [[agent-overclaiming]] — the verification failure mode long cheap trajectories can worsen
+- [[harness-tax]] — concurrent cost-side evidence (Pan et al., Arena.ai, Sep 2026): same model, similar success, up to 5× cost across harnesses; converges with this study's finding that bash-capable models do fine with minimal tool interfaces at lower cost

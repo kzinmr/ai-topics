@@ -3,7 +3,7 @@ title: Pi (pi-coding-agent)
 type: entity
 aliases: [pi-coding-agent, pi-dev, pi-mono, mario-zechner-pi]
 created: 2026-05-07
-updated: 2026-07-29
+updated: 2026-10-04
 status: L3
 tags:
   - entity
@@ -25,6 +25,7 @@ sources:
   - raw/articles/2026-07-11_rasyidanaf_vim-of-coding-agents.md
   - raw/articles/2026-07-13_muellerminute_learning-pi-through-force.md
   - raw/articles/2026-07-28_camelai_agent-durable-object-pi-code-mode.md
+  - raw/articles/2026-09-16_arena-ai_harnesstax-coding-agents-harness-tax.md
 related:
   - "[[entities/openclaw]]"
   - "[[entities/claude-code]]"
@@ -358,6 +359,10 @@ The Pi codebase was not modified — camelAI used it purely as a library. The ke
 - **Latency**: Lower by running on Cloudflare's edge near users
 - **Small model performance**: Explicit JavaScript methods outperform bash for cheaper models
 - **Observability**: Full platform visibility into every agent operation
+
+## HarnessTax Study (September 2026)
+
+Pi featured as one of three harnesses in the **HarnessTax** study (Pan et al., UC Berkeley, published on Arena.ai, Sept 2026): 21 model–harness pairs across Claude Code, Codex CLI, and Pi on SWE-bench Lite + Terminal-Bench 2.0. Pi — providing just four tools (read, write, edit, bash) — **reached the Pareto frontier on both benchmarks**, matching Claude Code's success rate (e.g. Claude Fable 5: 96.7% vs 97.8%) at roughly **half the cost** ($0.67 vs $1.33). Claude Code's mean initial context was over 10× Pi's. The study cites Portkey's popular "harness tax" framing; see [[concepts/harness-tax]] and [raw article](raw/articles/2026-09-16_arena-ai_harnesstax-coding-agents-harness-tax.md). This is the strongest quantitative evidence to date for Pi's radical-minimalism thesis.
 
 ## Latest (May 2026)
 
