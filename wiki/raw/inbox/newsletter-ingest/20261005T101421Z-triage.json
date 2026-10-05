@@ -1,0 +1,73 @@
+{
+  "run_id": "20261005T101421Z",
+  "triaged_at": "2026-10-05T10:14:21+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 4,
+  "important_items": 4,
+  "classifications": [
+    {
+      "message_id": "<20261004130454.3.87f363069f2d5f33@mg-d0.substack.com>",
+      "subject": "Google Steals Fire, Governments Move on AI Rules, and OpenAI Joins the Dots",
+      "date": "2026-10-04",
+      "source": "The Signal (Alex Banks, thesignal.substack.com, publication_id=293154)",
+      "raw_path": "wiki/raw/newsletters/2026-10-04-google-steals-fire-governments-move-on-ai-rules-and-openai-joins-the-dots.md",
+      "importance": "critical",
+      "newsjacking_score": 4,
+      "reason": "Curated weekly AI-news digest whose lead stories are all core-scope and partly UNCOVERED. OG description: \"Google's Gemini 4 Argon outranks every rival, Britain promises a global AI code, and OpenAI's dots take aim at Meta's Muse.\" (1) Gemini 4 Argon already covered in events/2026-10-01-gemini-4-argon-release.md — CORROBORATION only, do not duplicate. (2) OpenAI 'Dots' vs Meta Muse is a GAP: index has entities/muse-glimmer (Meta) but NO OpenAI Dots page (grep 'dots' in index returns nothing) despite OpenAI DevDay 2026 having announced Dots. (3) Britain/UK 'global AI code' (AI regulation) is new-scope-adjacent.",
+      "wiki_targets": [
+        "entities/openai (update — Dots product, 'OpenAI joins the dots')",
+        "comparisons/ or concepts — OpenAI Dots vs Meta Muse (new, verify Dots is a model vs product first)",
+        "events/2026-10-01-gemini-4-argon-release (corroborate 'outranks every rival' benchmark claim only)",
+        "concepts/ai-regulation or related (UK 'global AI code' — new; verify tag exists in SCHEMA.md first)"
+      ],
+      "extraction_note": "External redirect UUIDs resolved mostly to subscribe/sponsor/athyna.com ads + self-links, NOT distinct articles — this is a single narrative newsletter post, not a link dump. Fetch canonical body: https://thesignal.substack.com/p/google-steals-fire-governments-move (curl + Substack OG/body extraction)."
+    },
+    {
+      "message_id": "<20261004123248.3.5ce68e40323ee5b6@mg2.substack.com>",
+      "subject": "OpenAI's Head of ChatGPT: We're entering a new era of AI (again) | Tibo Sottiaux",
+      "date": "2026-10-04",
+      "source": "Lenny's Podcast (Lenny Rachitsky, lennysnewsletter.com, publication_id=10845, post_id=217274136)",
+      "raw_path": "wiki/raw/newsletters/2026-10-04-openai-s-head-of-chatgpt-we-re-entering-a-new-era-of-ai-again-tibo-sottiaux.md",
+      "importance": "high",
+      "newsjacking_score": 3,
+      "reason": "Podcast-interview post (37 min) with OpenAI's Head of ChatGPT. OG description carries concrete, wiki-actionable claims: \"Tibo Sottiaux on why Dots is OpenAI's biggest bet, why agents will dominate internet traffic, and what builders are still getting wrong.\" Existing entities/thibault-sottiaux.md is STALE (created+updated 2026-05-16, covers only Codex leadership / May 2026 reorg / 'Super App' initiative) — his current 'Head of ChatGPT' framing plus Dots/agents-traffic claims are a genuine content gap. Cross-refs the OpenAI Dots gap flagged in the Signal item.",
+      "wiki_targets": [
+        "entities/thibault-sottiaux (UPDATE — patch, not rewrite; add 'Head of ChatGPT' role + Dots-as-biggest-bet + agents-dominate-internet-traffic + 'what builders get wrong')",
+        "entities/openai (update — Dots strategy, cross-link)"
+      ],
+      "extraction_note": "Podcast-format Substack post. External redirect UUIDs resolved to YouTube (watch?v=MM-C3JqCXBk), Spotify episode, and Apple Podcasts players — no distinct external articles. Fetch body via canonical https://www.lennysnewsletter.com/p/openais-head-of-chatgpt-were-entering (OG + body extraction); full transcript may need the YouTube/podcast source."
+    },
+    {
+      "message_id": "<20261005052019.3.6b0124d483d35198@mg-d1.substack.com>",
+      "subject": "The State of Agentic Data Science",
+      "date": "2026-10-05",
+      "source": "Hugo Bowne-Anderson (hugobowne.substack.com, publication_id=2632531, post_id=218883343)",
+      "raw_path": "wiki/raw/newsletters/2026-10-05-the-state-of-agentic-data-science.md",
+      "importance": "high",
+      "newsjacking_score": 3,
+      "reason": "In-group signal for the agentic-data-science community; directly refreshes an EXISTING concept page. concepts/multi-agents/agentic-data-science.md is STALE (updated 2026-06-01) and its author Hugo Bowne-Anderson already has an enriched entity (entities/hugo-bowne-anderson.md, updated 2026-09-05). OG subtitle 'What to Delegate, How to Verify' aligns with the page's existing Three-Tier Verification / PI Model framing — a 'state of the field 2026' refresh is well-timed. Both author and topic already indexed; treat as UPDATE, not new pages.",
+      "wiki_targets": [
+        "concepts/multi-agents/agentic-data-science (UPDATE — patch; 'state of the field' 2026 refresh, delegate/verify guidance)",
+        "entities/hugo-bowne-anderson (update — add this post to contributions)"
+      ],
+      "extraction_note": "Substack post. External redirect UUIDs not individually resolved (title+subtitle already sufficient for triage). Fetch canonical https://hugobowne.substack.com/p/the-state-of-agentic-data-science for body if downstream ingest enriches."
+    },
+    {
+      "message_id": "<20261004.190410.5a4b8ff5@mta6>",
+      "subject": "\"The most common failure isn't a bad model\": CoreWeave's Richard Ahlfeld on physical AI",
+      "date": "2026-10-04",
+      "source": "beehiiv newsletter (podcast-interview style, likely The Sequence / The Rundown AI — sender mta6)",
+      "raw_path": "wiki/raw/newsletters/2026-10-04-the-most-common-failure-isn-t-a-bad-model-coreweave-s-richard-ahlfeld-on-physica.md",
+      "importance": "low",
+      "newsjacking_score": 2,
+      "reason": "Subject carries a genuinely wiki-relevant, contrarian engineering insight ('the most common failure isn't a bad model' — an eval/infra framing) plus a NEW person (Richard Ahlfeld at CoreWeave, not in wiki — grep 'ahlfeld' empty) applied to Physical AI (concepts/physical-ai exists). BLOCKED: all 20 links are link.mail.beehiiv.com/v2/c/ tracking links and a spot-checked one returned HTTP 403 Cloudflare challenge (pitfall #10 verified this run) — content is NOT retrievable via cron curl. Source publication unconfirmed. Classify low pending resolvable content; downstream ingest may attempt a browser fetch if it wants the quote verbatim.",
+      "wiki_targets": [
+        "entities/richard-ahlfeld (potential NEW person — only if body retrievable)",
+        "entities/coreweave (update — physical-AI angle, currently June 2026 infra/M&A focus)",
+        "concepts/physical-ai (update — 'failure isn't a bad model' eval/infra insight)"
+      ],
+      "extraction_note": "Beehiiv v2/c/ tracking links confirmed Cloudflare-blocked (403 on sampled link). Do NOT fabricate content; either resolve via browser_navigate in the ingest job or hold until a resolvable source appears."
+    }
+  ],
+  "downstream_guidance": "All 4 items map to EXISTING wiki coverage or a clean gap; none require net-new concept scaffolding except possibly OpenAI 'Dots'. Priorities for newsletter-wiki-ingest: (1) uid=743 Signal — update entities/openai with 'OpenAI joins the dots'/Dots-vs-Muse; do NOT recreate the Gemini 4 Argon event page (already exists, corroborate only); UK 'global AI code' regulation is new-scope-adjacent — pre-validate the tag against SCHEMA.md. (2) uid=742 Lenny — PATCH entities/thibault-sottiaux (stale since May, now 'Head of ChatGPT') with Dots/agents-traffic claims; cross-link the Dots gap. (3) uid=745 Hugo Bowne — PATCH concepts/multi-agents/agentic-data-science (stale since June) + entities/hugo-bowne-anderson. (4) uid=744 CoreWeave/Ahlfeld — LOW, content Cloudflare-blocked; only create entities/richard-ahlfeld if a browser fetch retrieves the body. The 3 Substack digests' 'Link N' entries are mostly UI chrome (play_card/like/share/comments) — only the trailing substack.com/redirect UUID links are real and those resolved to podcast players / subscribe / sponsor links, NOT distinct articles. Fetch the canonical narrative post for each Substack digest, not the redirect links. Pre-validate every new tag against wiki/SCHEMA.md before page creation; use patch (not write_file) on all rich pages."
+}
