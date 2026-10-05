@@ -1,3 +1,12 @@
+## [2026-10-05] lint | 0 auto-fixable issues (digest orphans = archived content)
+
+- Live verification of 2026-10-05 wiki-health digest: index.md clean (validate_index.py pass, 3172 lines; 0 pipe/line-number/triple-bracket/space-prefix corruption), 0 L2 pipe-prefix or triple-bracket corruption, page-name policy 0 violations, 0 skeleton entities.
+- Reported orphan_count=2 (`concepts/gpt/_archive/2026-04-24-ainews`, `-news-aggregation`) is a FALSE POSITIVE: both live under `_archive/`, which is intentionally excluded from index.md. No action taken (archived content must not be re-indexed).
+- Log rotation now due: wiki/log.md has 518 `## [` entries (>500 threshold). Recommend renaming to log-2026-10.md and starting fresh next rotation cycle.
+- No commits made — worktree holds 193 uncommitted sibling-pipeline pages (wiki-graph-analysis weekly); left untouched.
+
+---
+
 ## [2026-10-05] query | hot-post (night slot): "Authority converges on the tool call" synthesis
 - Contrarian synthesis across 3 same-day (Oct 1) arXiv pages: [[concepts/pace-provenance-aware-capability-enforcement]] (admission-time gates info-theoretically insufficient; gate-at-execution, ≤3pt utility loss), [[concepts/overact-proactive-over-authorization]] (self-initiated over-reach; cost-asymmetry, temperature ~no effect, SelfAudit −43%), [[concepts/retire-versioned-execution]] (authority=execution version vs resources=request, −17.1% revision TTFT in vLLM).
 - Thesis: security, decision-theory, and serving-infra communities converged on the same boundary — enforceable authority lives at the tool call / effect, not at load time. Open risk: tool schemas become the new attack surface.
