@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3130
+> Total pages: 3153
 > Last updated: 2026-10-05
 
 ## Entities (937 pages)
@@ -2830,6 +2830,7 @@
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/session-management]] — session-management
 - [[concepts/session-portability]] — Session Portability — Exportable AI session state; five ownership tests (inspection, export, replay, audit, deletion); Earendil's seven principles for portable inference APIs (Jul 30)
+- [[concepts/provider-sealed-reasoning-blur]] — Provider-Sealed Reasoning Blur — No signal at the API boundary separates legitimate replay of a user's own opaque reasoning state from adversarial extraction of protected reasoning; OpenAI's Oct 5 "portable or replayable reasoning artifacts may face related risks" collides with Earendil's Jul 30 privacy defence of the same `encrypted_content` blob — sealed reasoning is simultaneously the defence and the lock-in (Oct 5, contested)
 - [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism
 - [[concepts/sglang-structured-generation-language]] — SGLang (Structured Generation Language)
 - [[concepts/scriptc-typescript-native-compiler]] — scriptc — Vercel Labs experimental TypeScript-to-native compiler (native + WebAssembly, no Node runtime, quickjs-ng `--dynamic`); self-hosting milestone Sep 30, 2026
