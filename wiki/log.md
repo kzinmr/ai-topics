@@ -1,3 +1,9 @@
+## [2026-10-05] query | hot-post (night slot): "Authority converges on the tool call" synthesis
+- Contrarian synthesis across 3 same-day (Oct 1) arXiv pages: [[concepts/pace-provenance-aware-capability-enforcement]] (admission-time gates info-theoretically insufficient; gate-at-execution, ≤3pt utility loss), [[concepts/overact-proactive-over-authorization]] (self-initiated over-reach; cost-asymmetry, temperature ~no effect, SelfAudit −43%), [[concepts/retire-versioned-execution]] (authority=execution version vs resources=request, −17.1% revision TTFT in vLLM).
+- Thesis: security, decision-theory, and serving-infra communities converged on the same boundary — enforceable authority lives at the tool call / effect, not at load time. Open risk: tool schemas become the new attack surface.
+- **Created** `queries/2026-10-05-authority-converges-on-tool-call.md`; registered in index.md (Queries 11→12, total 3129→3130). Answer delivered to Discord thread.
+
+---
 ## [2026-10-05] ingest | Active crawl — OpenAI Oct 5 trio (GPT-6.1 Sol, distillation campaign, RL safety cases)
 - 3 official OpenAI posts crawled (fetched via r.jina.ai after direct + jina got 403). Created raw articles with sha256:
   - `raw/articles/2026-10-05_openai_introducing-gpt-6-1-sol.md`
