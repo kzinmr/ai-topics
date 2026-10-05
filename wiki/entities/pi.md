@@ -152,6 +152,9 @@ A popular fork ([can1357/oh-my-pi](https://github.com/can1357/oh-my-pi)) that ex
 ### Pi Packages
 Extensions, skills, prompt templates, and themes can be packaged and shared via npm or git.
 
+### Pi 1.0 & Pi Durable (Oct 1, 2026)
+Pi was declared **1.0** on 2026-10-01 — a signal that the terminal coding agent is now a hardened foundation. Shipped alongside it is **[[events/pi-durable-1-0|Pi Durable]]**, an experimental package (also under `earendil-works`) that generalizes Pi's principles into a **harness for long-running, durable, malleable agentic applications**. It shares code (`pi-ai`) with the coding agent but is not a replacement: the coding agent runs in a terminal for one human and recovers from crashes by the human saying "continue", whereas Pi Durable survives process death on its own, runs across devices (memory/SQLite/JSONL backends; on Bun or Cloudflare Durable Objects via a small adapter), and lets multiple humans steer the same agents. Mario Zechner has already used Pi Durable as the durable-agent *library* under a phone app's control plane/UI.
+
 ## Key Insights
 
 - **Self-modifying**: Pi can modify its own extensions and skills, creating a feedback loop

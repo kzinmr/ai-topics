@@ -287,6 +287,19 @@ Key upcoming events and lessons from this period:
 
 This thesis extends Hugo's broader philosophy that **evaluation is the engine, not the afterthought** — the focus should be on building systems that work reliably in production, not on maximizing autonomous capabilities.
 
+## The State of Agentic Data Science (Oct 2026)
+
+On October 5, 2026, Hugo published the full episode **"The State of Agentic Data Science: What to Delegate, How to Verify"** ([raw article](raw/newsletters/2026-10-05-the-state-of-agentic-data-science.md)) featuring **Gaël Varoquaux** (scikit-learn co-creator), **Shipra Arora**, and **Luca Fiaschi** (probabl.ai), with references to **Thomas Wiecki** (PyMC Labs).
+
+This episode is the capstone of a three-part arc on agents in data science that began with the June 2026 "Agentic Data Science" conversation with Wiecki:
+
+1. **What to Delegate**: Which parts of the data science workflow (exploration, feature engineering, model selection, documentation) can be safely handed to AI agents
+2. **How to Verify**: The open-source data science community's perspective on building trust in agent-produced analyses
+
+The episode connects to Hugo's broader thesis that **evaluation is the engine, not the afterthought** — the scikit-learn / probabl / PyMC ecosystem brings a verification-first culture to agent adoption in data science.
+
+> *"Full episode: The State of Agentic Data Science, with Gaël Varoquaux, Shipra Arora, and Luca Fiaschi."* — @hugobowne, Oct 5, 2026
+
 ## Production AI Agents: Maven Assistant (July 2026)
 
 In July 2026, Hugo hosted **William Horton** from **Maven Clinic** on Vanishing Gradients for a deep dive into four months of operating a production healthcare AI agent — the **Maven Assistant**. The episode ([raw newsletter](raw/newsletters/2026-07-25-four-months-inside-a-production-ai-agent-what-real-users-changed.md)) provided some of the most detailed published insights into real-world production AI agent operation.
@@ -369,7 +382,7 @@ This case study directly validates Hugo's broader philosophy: evaluation-driven 
 
 ## See Also
 
-- [[entities/show-us-your-agent-skills]]
+- [[concepts/show-us-your-agent-skills]]
 - [[entities/_index]]
 - [[concepts/agent-harness-comparison]]
 - [[concepts/harness-commoditization]]

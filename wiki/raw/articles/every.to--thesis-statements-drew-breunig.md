@@ -1,0 +1,15 @@
+---
+title: After automation - AI will have rules, but those rules will constantly be shifting
+url: https://every.to/thesis-statements/drew-breunig
+domain: every.to
+date: 2026-10-03
+ingested: 2026-10-05T22:33:14.470700Z
+source: x-accounts-scan
+tags: [raw]
+---
+
+# After automation: AI will have rules, but those rules will constantly be shifting
+
+> Source: <https://every.to/thesis-statements/drew-breunig>
+
+Presenting partners After automation: AI will have rules, but those rules will constantly be shifting Share on social Drew Breunig Drew Breunig is a writer as well as the CEO and cofounder of Cmpnd. A I grew up playing games. In 1997 IBM’s Deep Blue bested Garry Kasparov, and in 2016 AlphaGo defeated Go champion Lee Sedol. Another decade on, benchmarks pit agents against Doom, Pokémon, and Civilization to see how they fare. Games—both board and video—have been a continuous proving ground for AI, demonstrating its superhuman capabilities. But life is not a game. Games come with fixed rules, bounded choices, and an agreed-upon definition of success. And that’s not how life works. Precisely instructing agents what to do isn’t like playing a game. It’s more like making law. Not interpreting laws (as many AI tools do rather well), but drafting, negotiating, enacting, and testing them. That last bit is the hardest part: Once enacted, laws encounter circumstances their authors never imagined. They meet the messy world of humans, culture, and context. Courts determine a law's meaning case by case, building precedent around omissions, conflicts, and changing norms. We’ve spent centuries refining the legal craft, yet lawmaking remains messy and unfinished. Fixed rules and agreed-upon definitions can only ever be provisional when applied to a subjective world that doesn’t stay still. We face the same problem when building AI systems. Like laws, their instructions are drafted and negotiated, revised when the real world tests them in unexpected ways, and interpreted anew in each context. We’ve all written, “Not like that!” in a prompt after our instructions were ignored or misinterpreted. In an agent’s pursuit of brevity, a summary might omit a critical caveat, or a coding agent might "fix" a bug by rewriting a unit test. Every new model also uses a different interpreter. Claude has different priors than GPT, discoverable only through use. The same instructions, read through different weights, produce different outcomes. The legal analogy holds here, too. Judges are expected to apply the same law impartially, but bring their own experiences and biases to the table; two judges might interpret the same law differently, in the same way a model will apply its own context to a prompt. Optimists might point to memory systems, continual learning, and still larger models as innovations that will surmount this challenge. These techniques can help systems accumulate context and draw on more perspectives, but they cannot settle the rulebook itself. Unlike a board game, life's rules are contested, ever-changing, and present endless edge cases. AI may master every game we give it, but the rulebook it plays with will never be finished.

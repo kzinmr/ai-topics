@@ -163,3 +163,9 @@ The business entity supporting McGugan's open-source work:
 - **Toad development** — Regular updates on the Toad project, feature announcements, and community feedback
 - **Terminal computing advocacy** — Arguments for why terminals remain relevant and powerful development environments in 2025 and beyond
 - **Personal projects** — Updates on batrachian.ai and other experimental work using terminal tools
+
+## Dinkus (Oct 2026)
+
+In October 2026, McGugan announced **Dinkus** (dinkus.textualize.io), a **distraction-free WYSIWYG markdown studio for Mac** built on the Textualize stack. Key features include typewriter mode, focus modes, source view, and files that stay plain markdown — continuing his Ishmael-style philosophy of minimal writing tools that preserve plain-text fidelity. As of Oct 2, 2026 he was iterating on the tree-view icon set (adding per-file-type icons beyond the original folder/file pair), demonstrating his characteristic focus on small UI polish details.
+
+Dinkus extends the Textualize product line alongside Ishmael (novel-writing) into general-purpose markdown authoring.

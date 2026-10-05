@@ -1757,6 +1757,7 @@
 - [[concepts/dspy-architecture]] — DSPy Architecture — Three Abstractions
 - [[concepts/dspy-modules]] — DSPy Modules Reference
 - [[concepts/dspy-optimization]] — Dspy Optimization
+- [[concepts/model-routing]] — Prompt-based model routing with DSPy + Jev (Breunig, Oct 2026)
 - [[concepts/dspy-rlm]] — Recursive Language Model — DSPy module for programmatic exploration of large contexts via a sandboxed Python REPL
 - [[concepts/dspy-tutorial]] — DSPy Tutorial (Getting Started)
 - [[concepts/dspyrlm]] — DSPy.RLM
@@ -2384,6 +2385,7 @@
 - [[concepts/model-spec-midtraining]] — Model Spec Midtraining (MSM)
 - [[concepts/model-training-as-code]] — Model Training as Code (MTaC) — Imperative code representation of end-to-end model training pipelines; composability, consensus, provenance via Flyte + W&B trunk-based development
 - [[concepts/model-switching-in-graph-workflows]] — Model Switching in Graph Workflows — KV cache invalidation, context carryover techniques, Latent Briefing applicability, framework comparison (LangGraph/AutoGen/LlamaIndex/ADK), best practices for multi-model graph nodes
+- [[concepts/model-routing]] — Prompt-based model routing with DSPy + Jev (Breunig, Oct 2026) — "Jev describes the prompt, code picks the model": typed answer spaces (Choice/Score/Noul) + explicit route() thresholds as a semantics-first router, prompt-injection-resistant
 - [[concepts/model-welfare]] — Model Welfare — Engineering discipline for AI agent well-being: seats vs sessions, Laurels recognition, handoffs instead of /exit, structural blamelessness (Yegge, Aug 2026)
 - [[concepts/modelcrafting]] — Modelcrafting — AI agents autonomously shaping, valuing, and improving other models; coined by Thoughtful Lab (Apr 2026)
 - [[concepts/modern-retrieval-toolkit]] — Modern Retrieval Toolkit
@@ -3116,8 +3118,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (36 pages)
+## Events (37 pages)
 
+- [[events/pi-durable-1-0]] — Pi 1.0 & Pi Durable release (Earendil, Oct 1, 2026) — Pi coding agent declared 1.0 + new experimental Pi Durable package: durable/malleable long-running agent harness (storage+machinery model), memory/SQLite/JSONL backends runnable on Bun or Cloudflare Durable Objects, survives crashes, multi-human steering; Zechner embeds it as the durable-agent library in a phone app
 - [[events/2026-10-01-gemini-4-argon-release]] — Gemini 4 Argon Release (Google DeepMind, ~Sep 30, 2026) — frontier model for coding/enterprise knowledge work/cyber defense; 1M output tokens (from 64K), $2/$10 intro pricing, DeepSWE v1.1 77.9% SOTA, LVBench 91.7%, CWE-bench v1 68%; phased release via Fairwind Program + US govt pre-release process
 - [[events/claude-opus-5-5-gpt-6-release-sep-2026]] — Claude Opus 5.5 & GPT-6 Sol/Terra/Luna Release (Sep 22, 2026) — Opus 5.5 at $5/$25 (2.5× cheaper than GPT-6 Astra), triggering a same-day frontier price war; Claude Code `/compact` 1/1000 rollout cache-wipe bug
 - [[events/the-plunging-price-of-thought-epoch-sep-2026]] — Epoch AI "The Plunging Price of Thought" (Sep 22, 2026) — cost of a given level of AI performance falling ~47%/quarter (13×/yr) since 2023; o3 $0.30 → GPT-5.6 Luna $0.0004/question (725× drop)

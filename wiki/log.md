@@ -1,6 +1,29 @@
+## [2026-10-05] ingest | x-accounts-scan (22:30 UTC slot) — 7 new posts → wiki
+
+- Scan: 84 tracked accounts, 11 sampled (budget 12), cursor 39→50; 7 substantive new candidates; 1 error (`koylanai`: could not resolve user_id).
+- **Wiki-relevant (4):**
+  - `@dbreunig` dspy-jev-router.py gist → `raw/articles/gist.github.com--dbreunig--dspy-jev-router.py.md`; concept `concepts/model-routing.md` + section "Prompt-Based Model Routing with DSPy + Jev" in `entities/drew-breunig.md`; index Concepts 2108→2109.
+  - `@dbreunig` Every.to legal-metaphor thesis → `raw/articles/every.to--thesis-statements-drew-breunig.md`; section "The Legal Metaphor for AI Engineering (Oct 2026)" in `entities/drew-breunig.md`.
+  - `@badlogicgames` Pi Durable (Earendil) → `raw/articles/earendil.com--pi-durable.md`; `events/pi-durable-1-0.md` (index Events 36→37); updates to `entities/pi.md`, `entities/mario-zechner.md`, `entities/earendil-works.md`.
+  - `@hugobowne` "The State of Agentic Data Science" podcast (Varoquaux/Arora/Fiaschi) → `raw/newsletters/2026-10-05-the-state-of-agentic-data-science.md` (summary-only; Substack bot-blocked); section in `entities/hugo-bowne-anderson.md`.
+- **Skipped (low wiki value):** `@willmcgugan` Dinkus tree-view icon iteration → brief section in `entities/will-mcgugan.md` only; `@badlogicgames` Staples SmartGlove product link (health trivia); `@samuelcolvin` example.com reply (link stripped by X, no content).
+- Note: working tree also carried unrelated sibling-job changes (benchmark link rewrites, other raw articles); committed only this slot's files.
+
+---
 ## [2026-10-05] lint | 0 auto-fixable issues (digest orphans = archived content)
 
 - Live verification of 2026-10-05 wiki-health digest: index.md clean (validate_index.py pass, 3172 lines; 0 pipe/line-number/triple-bracket/space-prefix corruption), 0 L2 pipe-prefix or triple-bracket corruption, page-name policy 0 violations, 0 skeleton entities.
+
+---
+## [2026-10-05] skeleton-enrich-daily: queue empty — no `status: skeleton` pages
+
+- Scan: `grep -rn "status: skeleton" wiki/{entities,concepts,comparisons,events,queries}/` → 0 matches (only a prose mention in `queries/2026-10-04-uncommitted-wip-snapshot.md`). `grep "status: stub"` over entities/ also 0.
+- Filename-level false positives verified clean: brace-sproul (60 lines, enriched 2026-08-30 with OpenWiki 0.4.0 claims runtime), fourier-intelligence, tilert, eleanor-berger, 0xmovez-ai, sgnt-jev-article, graph-engineering, data-analysis-agents — all match the word "skeleton"/"exoskeleton" in body prose only.
+- Thin pages (<45 lines) are all typed redirects (ysymyth→shunyu-yao, lilianweng→lilian-weng, ken-klippenstein→ken-klippenstein-com, martin-fowler→martinfowler) or intentionally minimal stubs; no enrichment candidate with source material available.
+- Worktree untouched: 192 modified + 51 untracked wiki files belong to sibling pipelines (wiki-graph-analysis weekly / active-crawl cross-ref sweep); per established policy, left alone and not committed.
+- No wiki files modified by this run; no commit.
+
+---
 - Reported orphan_count=2 (`concepts/gpt/_archive/2026-04-24-ainews`, `-news-aggregation`) is a FALSE POSITIVE: both live under `_archive/`, which is intentionally excluded from index.md. No action taken (archived content must not be re-indexed).
 - Log rotation now due: wiki/log.md has 518 `## [` entries (>500 threshold). Recommend renaming to log-2026-10.md and starting fresh next rotation cycle.
 - No commits made — worktree holds 193 uncommitted sibling-pipeline pages (wiki-graph-analysis weekly); left untouched.

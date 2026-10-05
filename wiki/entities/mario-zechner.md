@@ -3,7 +3,7 @@ title: Mario Zechner
 type: entity
 handle: "@badlogicgames"
 created: 2026-04-10
-updated: 2026-08-23
+updated: 2026-10-05
 tags:
   - person
   - x-account
@@ -156,6 +156,10 @@ As discussed on Syntax.fm #976 (Feb 2026), Pi embodies Zechner's "Bash is all yo
 ### Production Adoption (July 2026)
 
 [[entities/camelai|camelAI]], an open-source coding agent SaaS, adopted Pi as the harness layer for their production platform. They imported Pi's agent loop and state management primitives without modification, running them inside Cloudflare Durable Objects — demonstrating that Pi's layered design (separating agent primitives from OS assumptions) enables non-Linux deployment environments. See [[entities/pi]] for architecture details.
+
+### Pi Durable as a durable-agent library in a phone app (2026-10-05)
+
+Zechner demoed an app built on **[[events/pi-durable-1-0|Pi Durable]]**, Earendil's new experimental durable-agent package shipped alongside Pi 1.0 (Oct 1, 2026). Correcting a misconception in a reply, he stated: *"everything except the LLM runs on my phone. pi durable is a library i use in this app which covers all the durable agent parts. the rest is the control plane and ui on top of it."* ([X](https://x.com/badlogicgames/status/2107236034199126242)) This is an early adoption signal for Pi Durable — the harness (storage, transcripts, crash-recovery, task machinery) runs entirely on-device as a library, with only model inference offloaded. See [[concepts/earendil]] and [[concepts/durable-execution]].
 
 ### AMS Berufsinfomat Replica (2024)
 A ~400-line RAG chatbot that replicated the Austrian government's job information system at a fraction of the cost. Demonstrated that the government's €464,000 system could be built in 2 nights on a €30/month server.

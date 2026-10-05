@@ -117,6 +117,19 @@ The solution is a measurement-driven specification: replace hand-tuned prose wit
 
 > "Every mature engineering discipline eventually stops doing by hand the very thing it once prided itself on doing by hand. Assembly gave way to compilers, hand-tuned queries gave way to planners, and manual memory management gave way (mostly) to machines that do it better. Prompt-writing is no different."
 
+### The Legal Metaphor for AI Engineering (Oct 2026)
+
+In a thesis statement published on Every.to (2026-10-03), *"After automation: AI will have rules, but those rules will constantly be shifting,"* Breunig argues that precisely instructing agents is **not like playing a game** (fixed rules, bounded choices, agreed success) but **like making law**: drafting, negotiating, enacting, and testing rules that then meet a messy, subjective world. Once "enacted," instructions encounter circumstances their authors never imagined, and meaning is settled case-by-case — *case law and precedent* around omissions, conflicts, and changing norms. Two corollaries he draws:
+
+- **Each model is a different interpreter.** "Every new model also uses a different interpreter. Claude has different priors than GPT, discoverable only through use. The same instructions, read through different weights, produce different outcomes" — exactly as two judges apply the same law and reach different verdicts.
+- **The rulebook can never be finished.** Memory systems, continual learning, and larger models accumulate context but "cannot settle the rulebook itself," because unlike a board game, life's rules are contested and full of edge cases.
+
+He noted the metaphor "came up several times this week, and I'm liking it more and more" ([X](https://x.com/dbreunig/status/2106399145837932834)). This reframes his [[concepts/prompts-as-technical-debt|prompt debt]] diagnosis in legal terms: hand-tuned prompt patches are un-codified precedent piling up against a statute no one can fully read. Raw: [[raw/articles/every.to--thesis-statements-drew-breunig]].
+
+### Prompt-Based Model Routing with DSPy + Jev (Oct 2026)
+
+On 2026-10-03 Breunig sketched (in ~15 min, "by request") a working **model router** in DSPy 3.4 + Jev: a model describes a prompt through typed answer spaces (`TaskKind = Choice[...]`, `Depth = Score[...]`, `Noul` yes/no judgments) while *code* picks the model via explicit weights/thresholds in `route()`. He reported being "surprised at how well it works" ([X](https://x.com/dbreunig/status/2106456056042025235), [gist](https://gist.github.com/dbreunig/949b42c7202508881d7c5a64ccd0fb9b)). Documented as [[concepts/model-routing]] — a concrete instance of his "separate task from model" DSPy philosophy and a lightweight defense against prompt debt.
+
 ### The 3 AI Use Cases: Gods, Interns, and Cogs
 
 In October 2024, Breunig proposed a taxonomy for understanding AI applications that cut through the hype:
