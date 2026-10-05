@@ -2,7 +2,7 @@
 title: "Session Portability"
 type: concept
 created: 2026-07-31
-updated: 2026-08-14
+updated: 2026-10-05
 tags:
   - inference-api
   - session-portability
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-07-30_earendil_session-portability.md
   - raw/newsletters/2026-08-13-grok-bot-is-not-what-you-think.md
 related:
+  - concepts/provider-sealed-reasoning-blur
   - concepts/context-engineering/context-lock-in
   - concepts/earendil
   - concepts/local-first-software
@@ -102,6 +103,10 @@ A concrete cross-provider portability development: **ChatGPT now lets users impo
 - How do multi-agent sessions (tree of sessions + inter-agent messages) affect portability requirements?
 - Can the five ownership tests be formalized into compliance benchmarks?
 - Will regulatory frameworks (EU AI Act, etc.) address session portability as a user right?
+
+## Navigation
+
+- [[concepts/provider-sealed-reasoning-blur]] — the blur this page sits inside (legitimate replay vs. reasoning extraction, same artifact)
 
 ## References
 

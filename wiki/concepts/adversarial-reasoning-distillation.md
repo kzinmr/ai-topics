@@ -23,6 +23,7 @@ sources:
 related:
   - concepts/model-distillation
   - concepts/industrial-scale-distillation-attacks-accusation
+  - concepts/provider-sealed-reasoning-blur
   - concepts/claude-code/steganographic-watermarking
   - entities/kimi
 confidence: high
@@ -52,6 +53,8 @@ OpenAI disclosed (Oct 5, 2026) that it disrupted a coordinated campaign to extra
 
 OpenAI's sharpest warning: **systems that support portable or replayable reasoning artifacts may face related risks.** Any product that stores or replays encrypted reasoning blobs between sessions/conversations inherits the same extraction surface. This intersects directly with the wiki's session-portability and reasoning-state-preservation threads (the ARC-AGI "Provider Adapter harness" that preserves opaque reasoning state is the benign twin of the same mechanism).
 
+That single sentence names a structural problem rather than a bug: there is no signal at the API boundary separating legitimate replay of a user's own opaque reasoning state from adversarial extraction of the provider's protected reasoning. See [[concepts/provider-sealed-reasoning-blur]] — the same `encrypted_content` blob Earendil defends as a privacy win is the artifact OpenAI had to close.
+
 The defense is defensive-in-depth on the *reasoning channel itself*, not just visible text: [[concepts/claude-code/steganographic-watermarking|steganographic request watermarking]] (Anthropic's anti-reseller measure), tool-output inspection beyond ordinary visible text, and equivalent protections in partner-hosted (cloud) deployments.
 
 ## Open questions
@@ -64,6 +67,7 @@ The defense is defensive-in-depth on the *reasoning channel itself*, not just vi
 
 - [[concepts/model-distillation]] — the benign parent technique
 - [[concepts/industrial-scale-distillation-attacks-accusation]] — the geopolitical framing
+- [[concepts/provider-sealed-reasoning-blur]] — why the fix collides with session portability
 - [[concepts/claude-code/steganographic-watermarking]] — a countermeasure
 - [[entities/kimi]] — the attributed actor
 - [[concepts/security-and-governance/agent-containment]] — adjacent containment thinking
