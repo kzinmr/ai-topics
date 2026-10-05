@@ -1,3 +1,17 @@
+## [2026-10-05] ingest | Active crawl — OpenAI Oct 5 trio (GPT-6.1 Sol, distillation campaign, RL safety cases)
+- 3 official OpenAI posts crawled (fetched via r.jina.ai after direct + jina got 403). Created raw articles with sha256:
+  - `raw/articles/2026-10-05_openai_introducing-gpt-6-1-sol.md`
+  - `raw/articles/2026-10-05_openai_disrupting-coordinated-model-distillation-campaign.md`
+  - `raw/articles/2026-10-05_openai_towards-safety-cases-for-frontier-ai-training.md`
+- **Created** `entities/gpt-6-1-sol.md` — GPT-6.1 Sol: near-Astra at ~1/5 price, $0.10/M cached input, benchmark table (DeepSWE/GDP.pdf/AutomationBench/OSWorld 2.0/Terminal-Bench Science), factuality 11.4%→7.7%, API gpt-6.1-sol $2/$0.10/$10.
+- **Created** `concepts/adversarial-reasoning-distillation.md` — protected-reasoning extraction (encrypted CoT cross-conversation replay), July 2026 campaign (16K reqs/4K users, 15K+ users, disrupted Jul 28), Moonshot AI attribution, corroborated by arXiv:2608.09867 "Stealing Reasoning Traces from Proprietary LLM APIs" (ID verified via arXiv Atom API).
+- **Created** `concepts/frontier-rl-safety-cases.md` — safety cases gating frontier RL runs: 3-layer technical stack (alignment/no-CoT-graders, containment, fail-closed monitoring) + operational vetoes/accountability + NTSB-style misalignment investigation.
+- **Enriched** `concepts/industrial-scale-distillation-attacks-accusation.md` — was a stub; now a real 3-meanings framing page linking the two new distillation pages + Anthropic-Alibaba dispute; confidence: medium (attribution contested).
+- Updated index.md (+1 entity, +2 concepts, 1 stub summary expanded; count 3126→3129).
+- All wikilinks verified to resolve; all tags validated against SCHEMA taxonomy.
+- NOTE: log.md now >500 entries — rotation (log-2026.md split) is due; flag for next lint.
+
+---
 ## [2026-10-05] update | weekly digest cross-reference — harness-tax ↔ unreal-agent
 - Added "Independent corroboration (Unreal Agent)" section to [[concepts/harness-tax]]: Unreal Agent posts 84.0 Terminal-Bench 2.1 / 72.7 DeepSWE with the same GPT-6 Sol xhigh that Codex scores 79.3 / 69.4 with (+4.7 / +2.1 pt, same weights). HarnessTax measures cost at equal success; Unreal measures success at equal cost — two independent bracketings of the harness variable.
 - Triggered by weekly digest synthesis; no new pages created.

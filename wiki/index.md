@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3126
-> Last updated: 2026-10-04
+> Total pages: 3129
+> Last updated: 2026-10-05
 
 ## Entities (937 pages)
 
@@ -356,6 +356,7 @@
 - [[entities/google-tpu]] — Google TPU — Tensor Processing Units
 - [[entities/heir]] — HEIR (Homomorphic Encryption Intermediate Representation) — Google's open-source MLIR-based FHE compiler for private AI inference; OpenFHE/Lattigo backends, hardware-accelerator partnerships (Aug 2026)
 - [[entities/gpjt]] — Giles Thomas (gpjt)
+- [[entities/gpt-6-1-sol]] — GPT-6.1 Sol — OpenAI Oct 5 2026 upgrade to GPT-6 Sol; near-Astra on agentic coding/computer-use/professional work at ~1/5 Astra price; $0.10/M cached input; DeepSWE/GDP.pdf/AutomationBench/OSWorld 2.0/Terminal-Bench Science gains; factuality errors 11.4%→7.7%; API gpt-6.1-sol $2/$0.10/$10
 - [[entities/gpt-oss]] — GPT-OSS (OpenAI Open Models)
 - [[entities/grad]] — Fares Obeid (@Grad62304977)
 - [[entities/grant-sanderson]] — Grant Sanderson (3Blue1Brown) — mathematics educator, Manim creator, 3Blue1Brown YouTube channel; AI as leading indicator in mathematics, conceptual breakthroughs vs pattern matching, hundred-year verification loops (July 5)
@@ -971,6 +972,8 @@
 - [[concepts/agent-communication-standards]] — Agent Communication Standards — ACP, A2A, BeeAI
 - [[concepts/agent-deployment-engineering]] — Agent Deployment Engineering (ADE) — Emerging role owning the technical build of production AI agents; introduced by Decagon (Aug 2026)
 - [[concepts/agent-distillation]] — Agent Distillation
+- [[concepts/adversarial-reasoning-distillation]] — Adversarial Reasoning Distillation — OpenAI Oct 2026 disruption of a coordinated campaign extracting *protected reasoning* (encrypted CoT replayed/transcribed cross-conversation); 16K reqs / 4K users, 15K+ users disrupted by Jul 28; core cluster attributed to Moonshot AI; corroborated by arXiv:2608.09867; warns portable/replayable reasoning artifacts share the risk (Oct 5)
+- [[concepts/frontier-rl-safety-cases]] — Frontier RL Safety Cases — OpenAI proposal that aviation/nuclear-style *safety cases* gate frontier RL training runs: 3-layer technical stack (alignment w/ no-CoT-visible graders, containment, fail-closed monitoring) + operational vetoes/accountability + NTSB-style misalignment investigation (Oct 5)
 - [[concepts/agent-orchestration-runtime]] — Agent Orchestration Runtime — Turning agent orchestration into software engineering via a VM with persistent state, type guarantees, and control flow; Onyx VM by Random Labs
 - [[concepts/agent-plugins-1-0-0]] — Agent Plugins 1.0.0 — Open standard for portable AI agent component packages (portable skills/tools); backed by Vercel, AWS, Google, Microsoft, OpenAI; sits alongside MCP and A2A (Aug 2026)
 - [[concepts/agent-documentation]] — agent-documentation
@@ -2128,7 +2131,7 @@
 - [[concepts/in-process]] — in-process
 - [[concepts/in-process-sandbox]] — In-Process Sandbox
 - [[concepts/index-share]] — IndexShare
-- [[concepts/industrial-scale-distillation-attacks-accusation]] — Industrial-Scale Distillation Attacks Accusation
+- [[concepts/industrial-scale-distillation-attacks-accusation]] — Industrial-Scale Distillation Attacks Accusation — 2026 US-lab charge that Chinese labs clone frontier models via distillation at "industrial scale"; 3 conflated meanings (IP theft / safety laundering / export-control workaround); Anthropic→Alibaba + OpenAI→Moonshot incidents; attribution contested (confidence medium)
 - [[concepts/inference]] → [[concepts/inference/_index]] — Inference — LLM inference engine comparison; vLLM, SGLang, TGI, llama.cpp, and their trade-offs
 - [[concepts/inference-engine-security]] — Inference-Engine Security — LLM self-host exploitation surface
 - [[concepts/inference-hardware]] — Inference Hardware
