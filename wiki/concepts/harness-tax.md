@@ -1,7 +1,7 @@
 ---
 title: "Harness Tax"
 created: 2026-10-04
-updated: 2026-10-04
+updated: 2026-10-05
 type: concept
 tags:
   - concept
@@ -70,6 +70,10 @@ The Harness Tax is one of several quantified agent-overhead concepts:
 - **For users**: accepting a coding agent's default harness without comparison means paying an invisible premium; [[concepts/ai-coding-cost-optimization|cost optimization]] should include harness selection.
 - **For benchmarking**: model evaluations should report cost × success **across harnesses**, not per-provider scaffolding only — see [[concepts/coding-agents/evaluation-coding-agents|evaluating coding agents]] and [[concepts/coding-agent-harness-design-study|the harness design ablation study]] (Fan et al.), which independently found bash-capable models do fine with minimal tool interfaces at lower cost.
 - **For harness design**: complexity should be an *empirical trade-off*, not a default; the authors envision harnesses that adapt cost/structure as tasks unfold.
+
+## Independent corroboration (Unreal Agent, Sept 2026)
+
+[[concepts/unreal-agent]] — a third-party harness built on the thesis "the harness must not waste the model's context" — reaches **84.0 on Terminal-Bench 2.1 / 72.7 DeepSWE with the same GPT-6 Sol xhigh** model that Codex scores 79.3 / 69.4 with. Same weights, +4.7 pt and +2.1 pt, attributed to tool-call architecture rather than prompt tuning. Two independent measurements bracket the same conclusion from opposite sides: HarnessTax measures **cost at equal success**, Unreal measures **success at equal cost**. At fixed model weights the harness is the variable worth ablating.
 
 ## See also
 

@@ -1,3 +1,14 @@
+## [2026-10-05] update | weekly digest cross-reference — harness-tax ↔ unreal-agent
+- Added "Independent corroboration (Unreal Agent)" section to [[concepts/harness-tax]]: Unreal Agent posts 84.0 Terminal-Bench 2.1 / 72.7 DeepSWE with the same GPT-6 Sol xhigh that Codex scores 79.3 / 69.4 with (+4.7 / +2.1 pt, same weights). HarnessTax measures cost at equal success; Unreal measures success at equal cost — two independent bracketings of the harness variable.
+- Triggered by weekly digest synthesis; no new pages created.
+
+---
+## [2026-10-04] update | index counts re-synced to INDEX-LINE counts
+- Follow-up correction: index.md lists top-level pages PLUS ~9 redirect-stub entries and the concepts/_index hub (all legitimately indexed per skill 2026-08-19 note). Header counts must equal INDEX LINES, not raw filesystem counts (which include 589 nested subdir pages served by _index hubs, intentionally not indexed).
+- Entities 937=937 ✅ | Comparisons 35=35 ✅ | Events 36=36 ✅ | Queries 11=11 ✅.
+- Concepts: index lines 2128 (top-level 1545 + nested 583 + 9 redirect stubs + _index hubs). Header set to 2128.
+
+---
 ## [2026-10-04] lint | wiki-health-fix — report false positives verified, index counts corrected
 - **No index corruption**: pipe_prefix=0, line_number_prefix=0, triple_bracket=0, space_prefix=0 (verified live; validate_index.py clean). Health digest's "index_corruption" section was absent/false-positive — nothing to auto-fix in Phase 1.
 - **Orphan reports = 2 false positives + 1 real gap**:
