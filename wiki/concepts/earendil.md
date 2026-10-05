@@ -36,6 +36,7 @@ related:
 - **[[concepts/absurd-durable-execution|Absurd]]** — Postgres-native durable execution framework for AI agent loops (`earendil-works/absurd`)
 - **Lefos** — Company product (lefos.com)
 - **Works** — Open-source projects (github.com/earendil-works/)
+- **Pi Durable** (Oct 1, 2026) — experimental package shipped with Pi 1.0; durable/malleable harness for long-running agentic applications. See [[events/pi-durable-1-0]] for the harness model (storage + machinery, conversations/tasks, pluggable storage & execution environments) and cross-device/multi-human capabilities.
 
 ## Values & Positions
 
