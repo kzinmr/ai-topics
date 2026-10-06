@@ -1,3 +1,12 @@
+## [2026-10-06] lint | wiki health-fix — all clean, no changes
+
+- Phase 1 (auto-fix): index.md corruption all 0 — pipe_prefix, line_number_prefix, triple_bracket, space_prefix (3181 lines).
+- Phase 2: 0 ghost entries (recursive scan). 0 real orphan_index — the 2 digest "orphans" (`concepts/gpt/_archive/2026-04-24-*`) are `_archive/` content, intentionally not indexed (known false positive).
+- Index section counts are header-only stale (concepts header 2113 vs 2138 indexed lines); diff = legitimate redirect-stub double-listings, validate_index.py passes, no filesystem gaps.
+- No files modified. Working-tree changes belong to sibling ingestion pipelines — left untouched.
+
+---
+
 ## [2026-10-05] ingest | x-accounts-scan (22:30 UTC slot) — 7 new posts → wiki
 
 - Scan: 84 tracked accounts, 11 sampled (budget 12), cursor 39→50; 7 substantive new candidates; 1 error (`koylanai`: could not resolve user_id).
