@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3153
+> Total pages: 3158
 > Last updated: 2026-10-06
 
 ## Entities (937 pages)
@@ -945,7 +945,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2108 pages)
+## Concepts (2113 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1008,6 +1008,7 @@
 - [[concepts/agent-sandbox-patterns]] — Agent Sandbox Patterns — Isolate-the-Tool vs Isolate-the-Agent; zero-secret agent + credential-holding control plane (Unikraft micro-VM); Browser Use production architecture (Feb 2026)
 - [[concepts/agent-security-patterns]] — Agent Security Patterns
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
+- [[concepts/adaptive-code-revision-attacks-pr-reviewers]] — AFCRA: attackers mine AI PR reviewers' own feedback to revise code so the reported issue is fixed but a vulnerability survives; AFCRA-Bench (159 vulns), success 2.5x/12.5x over text-only attacks vs Sonnet 5 / GPT-5.5 (arXiv:2610.05399, Oct 2026)
 - [[concepts/agent-slop]] — Agent Slop — the reliability gap between AI marketing claims and demonstrated capability; evals-as-evidence framing (created 2026-09-15)
 - [[concepts/agent-skills-skillmd]] — Agent Skills (SKILL.md)
 - [[concepts/agent-substrate]] — Agent Substrate
@@ -2319,6 +2320,7 @@
 - [[concepts/mcp-2026-07-28-spec]] — MCP 2026-07-28 Specification Update — Fifth major MCP release; streaming HTTP transport, stateless remote servers, JSON-RPC batching, App/Task/Managed Auth primitives; New MCP Roadmap (Aug 22): five priority areas — agentic messaging (server-initiated events, Tasks to spec), HTTP-native transport unification, agent identity (DPoP, Workload Identity Federation, ID-JAG), tool result contracts + progressive discovery, SDK DX
 - [[concepts/mcp-desktop-extensions]] — Desktop Extensions (MCP Bundle)
 - [[concepts/mcp-enterprise-oauth]] — MCP Enterprise OAuth — Managed Authentication
+- [[concepts/mcpacific-mcp-ecosystem-taxonomy]] — MCPacific: 368,754 MCP server listings → 124,267 unique servers, 1.33M tool specs into a 58,915-capability functional taxonomy; 85% non-dev tools, taxonomy improves task completion up to +12 pts Pass@0.75 (arXiv:2610.05319, Oct 2026)
 - [[concepts/mcp-protocol]] — MCP Protocol Testing & Security
 - [[concepts/mcporter]] — MCPorter — TypeScript runtime, CLI, and code-generation toolkit for MCP; auto-discovers servers from Cursor/Claude/Codex/Windsurf/VS Code; 4.7k★ (June 27)
 - [[concepts/munder-difflin]] — Munder Difflin — Open-source multi-agent harness running an "office of your clones": wraps 12 CLI coding agents (Claude Code/Codex/Grok/...), per-person persistent clones with shared MemPalace memory, E2E-encrypted clone-to-clone messaging, local-first nodes + optional 24/7 sandbox VMs; #1 GitHub Trending (Aug 22, 2026)
@@ -2649,6 +2651,7 @@
 - [[concepts/project-solara]] — Project Solara
 - [[concepts/project-zero]] — Project Zero
 - [[concepts/proxies-for-expertise]] — Proxies for Expertise — AI counterfeits the legible artifacts (Fields Medal, GitHub repos, benchmark scores, conference talks) that fields use to certify skill; Goodhart's Law applied to prestige (Goedecke, 2026)
+- [[concepts/practitioner-permission-decisions-agentic-assistants]] — Mixed-methods study (18 interviews + 115-survey) of how developers grant AI agents file/command/resource permissions; decision drivers (scope, risk, task-fit, familiarity, environment) + 5 permission-UX design implications (arXiv:2610.06047, Oct 2026)
 - [[concepts/prompt-caching]] — Prompt Caching — Paged attention and API-level caching strategies for reducing LLM inference costs
 - [[concepts/prompt-caching-strategies]] — Prompt Caching Strategies
 - [[concepts/prompt-debt]] — Prompt Debt — Drew Breunig's framework for the buildup of fragile natural-language instructions that lock teams to a single model; three-stage spiral (slowing iteration, team incapacitation, model lock-in), proposed solutions via measurement-driven specification and automated prompt optimization (DSPy, GEPA) (June 25)
@@ -2909,6 +2912,7 @@
 - [[concepts/starchild-1]] — Starchild-1
 - [[concepts/state-of-open-source-ai-2026]] — Mozilla report: open weights closed the capability gap while inference cost collapsed 50× (July 2026)
 - [[concepts/state-sponsored-chatbot-influence]] — State-Sponsored AI Chatbot Influence — fake think-tank "data reports" engineered to steer LLM chatbot answers (Hanover Institute / Piro case, Aug 2026)
+- [[concepts/statewise-persistent-operational-state-repair]] — StateWise: diagnose & repair corrupted persistent operational state before an agent acts (counterfactual replanning + typed evidence grounding); 93.3% vs 38.7% correctness under corrupted state, no unsafe actions (arXiv:2610.05241, Oct 2026)
 - [[concepts/statistical-process-control]] — Statistical Process Control
 - [[concepts/steven-pinker]] — Steven Pinker
 - [[concepts/structured-outputs]] — Structured Outputs — Reliable LLM Output via Schema Validation
@@ -3009,6 +3013,7 @@
 - [[concepts/uk-government]] — UK Government
 - [[concepts/uk-government-digital-service]] — UK Government Digital Service
 - [[concepts/unbundled-agents]] — Architectural pattern where specialist subagents are exposed as Tools within a harness, and the harness becomes a con...
+- [[concepts/undobench-agent-recovery-capability]] — UndoBench separates task competence from recovery capability in tool-using agents; 36 workflows/faults × 8 domains, paired trials + effect-history oracles; nominal competence 83.5% but CRSR 46.7%, naive retry duplicates effects 53.3%; recovery is phase-dependent (arXiv:2610.05622, Oct 2026)
 - [[concepts/ungrounded-meaning]] — Ungrounded Meaning
 - [[concepts/unharnessed-agents]] — Unharnessed Agents
 - [[concepts/unreal-agent]] — Unreal Agent — Unreal Labs' from-scratch harness; +4.7pt over Codex on Terminal-Bench 2.1 via async tool-calling + context frugality, same GPT-6 Sol model

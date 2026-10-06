@@ -6395,6 +6395,20 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - index.md: new entry after session-portability, count 3130→3153 (file-listed pages counted programmatically; header had drifted below actual `[[...]]` entry count).
 - Dedup: primary wikilinks (provider-sealed-reasoning-blur, session-portability, context-lock-in, steganographic-watermarking) unused in any prior hot-post. 10-05 night slot used PACE/OverAct/Retire; 10-04 morning used SourceLearn/Mem++; 10-04 late-night used comprehension-interface/human-sandwich.
 
+## [2026-10-06] ingest | Active crawl — 5 trending agent papers (arXiv, Oct 4-5 2026)
+- Source: scheduled active-crawl. Verified via arXiv Atom API (id_list 2610.05399, .05622, .06047, .05319, .05241) — abstracts saved as raw sources with sha256. Dropped 1 candidate (2610.06025 MATE zero-shot-coordination MARL — off-domain, no AI-engineering tie-in). All 5 deduped against wiki (no PR-reviewer-attack / agent-undo-recovery / SLM-negotiation pages existed).
+- New pages:
+  - [[concepts/adaptive-code-revision-attacks-pr-reviewers]] — arXiv:2610.05399 AFCRA — attackers mine AI PR reviewers' own feedback to revise code so the reported issue is fixed but a vulnerability survives; AFCRA-Bench 159 vulns, success 2.5×/12.5× over text-only attacks vs Sonnet 5 / GPT-5.5.
+  - [[concepts/undobench-agent-recovery-capability]] — arXiv:2610.05622 UndoBench — decouples task competence from recovery; nominal 83.5% vs CRSR 46.7%, naive retry duplicates effects 53.3%; recovery is phase-dependent.
+  - [[concepts/practitioner-permission-decisions-agentic-assistants]] — arXiv:2610.06047 — 18 interviews + 115 survey on how developers grant agent permissions; 5 permission-UX design implications.
+  - [[concepts/mcpacific-mcp-ecosystem-taxonomy]] — arXiv:2610.05319 MCPacific — 368,754 listings → 124,267 servers, 1.33M tool specs → 58,915-capability taxonomy; 85% non-dev; +12 pts Pass@0.75.
+  - [[concepts/statewise-persistent-operational-state-repair]] — arXiv:2610.05241 StateWise — repairs corrupted persistent state before action; 93.3% vs 38.7% correctness, no unsafe actions.
+- Cross-refs wired to existing pages: overact-proactive-over-authorization, pace-provenance-aware-capability-enforcement, agent-trace-integrity, durable-execution, retire-versioned-execution, human-in-the-loop, harness-engineering, code-review, coding-agents/code-review-agents, model-context-protocol-mcp, skill-library, context-engineering/context-lock-in. All wikilinks verified to resolve.
+- index.md: 5 entries added alphabetically; count 3153→3158, Concepts 2108→2113.
+- Tags validated against SCHEMA.md taxonomy; pre-commit hook passed.
+
+---
+
 ## [2026-10-06] report | Discord hot-post (morning slot 09:30 JST)
 - Topic: "Durabilityの機構が移っている — Postgresのストアドから、エージェントが読めるSQLite/JSONLライブラリへ" — synthesis of the never-posted 10-01/10-05 cluster: [[events/pi-durable-1-0]] (Pi 1.0 + Pi Durable, Earendil, created 10-05 by x-accounts-scan, never posted) × [[concepts/absurd-durable-execution]] (Postgres-native, May 2026) × [[concepts/durable-execution]] (hub) × [[concepts/retire-versioned-execution]] (arXiv:2610.01160, serving-layer twin). Core delivered: same checkpoint-resume thesis, three different substrates — Absurd = state in Postgres stored procedures (SDK ~1.4k TS lines vs Temporal ~170k), Pi Durable = harness owns storage (memory/SQLite/JSONL; Bun/Cloudflare Durable Objects/phone; ~15k lines sized so the agent itself can read it), Retire = versioned execution inside vLLM (median −17.1% revision-TTFT). Zechner's phone-app quote as adoption signal: "everything except the LLM runs on my phone."
 - Wiki writes: added "Sibling approach: Pi Durable" comparison table to absurd-durable-execution.md (fixes the cluster's missing Absurd↔PiDurable cross-link; updated bumped) + related: entry; added Pi Durable + Absurd inbound links to durable-execution.md (hub, updated bumped; restored [[concepts/agent-loop-orchestration]] link accidentally dropped mid-edit).
