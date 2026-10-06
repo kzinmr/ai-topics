@@ -6,7 +6,7 @@ tags:
   - durable-execution
 sources: []
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-10-06
 type: concept
 related:
   - entities/armin-ronacher
@@ -14,6 +14,7 @@ related:
   - concepts/automation-series
   - concepts/functional-core-imperative-shell
   - concepts/single-agent-ceiling
+  - events/pi-durable-1-0
 ---
 
 # Absurd: Postgres-Native Durable Execution for AI Agents
@@ -28,6 +29,19 @@ In the AI Agent context, it models each iteration of an LLM loop as **checkpoint
 
 **Project URL:** https://github.com/earendil-works/absurd
 **Documentation:** https://earendil-works.github.io/absurd/
+
+## Sibling approach: Pi Durable (Oct 2026)
+
+Earendil shipped a second durable-agent substrate on 2026-10-01: **[[events/pi-durable-1-0|Pi Durable]]** (`earendil-works`). Same goal — agent loops that survive process death — opposite placement of the state machine:
+
+| | Absurd | Pi Durable |
+|---|---|---|
+| State lives in | Postgres stored procedures (one `absurd.sql`) | storage backends the harness owns: memory / SQLite / JSONL |
+| Unit of durability | checkpointed `ctx.step()` inside a registered task | the conversation transcript + task log itself |
+| Where it runs | server with Postgres | "anywhere there is a JavaScript runtime" — incl. Bun, Cloudflare Durable Objects, a phone |
+| Package weight rationale | thin SDK (~1.4k TS lines vs Temporal's ~170k) because DB holds logic | ~15k lines total, sized so *the agent itself can read and understand it* |
+
+Absurd answers "how do I make an LLM loop crash-safe on a server I already run Postgres on." Pi Durable answers "how do I make the agent's whole storage + execution machinery small enough to embed under an app, on-device or at the edge." Both keep the same checkpoint-resume thesis; only the substrate moves. See [[concepts/durable-execution]].
 
 ---
 

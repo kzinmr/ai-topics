@@ -4,7 +4,7 @@ type: concept
 tags: [durable-execution, workflow, state-management]
 status: L3
 created: 2026-04-27
-updated: 2026-04-28
+updated: 2026-10-06
 aliases: [Durable Execution, Reliable Agent Execution, Workflow Durability]
 sources: [https://temporal.io/, https://docs.dapr.io/]
 ---
@@ -46,6 +46,8 @@ Durable execution is a programming model that guarantees code will continue runn
 - [[concepts/langgraph]]
 - [[concepts/process-supervision]]
 - [[concepts/agent-loop-orchestration]]
+- Related: [[concepts/retire-versioned-execution]] (versioned execution for interruptible agents — same "don't lose state on interruption" thesis, solved at the serving layer instead of the workflow layer), [[concepts/harness-tax]] (why harness weight is a measurable cost dimension).
+- Related: [[events/pi-durable-1-0]] (Pi Durable — harness-as-library durability with memory/SQLite/JSONL backends), [[concepts/absurd-durable-execution]] (Postgres-native checkpointing — same thesis, DB-resident).
 
 ## Sources
 
