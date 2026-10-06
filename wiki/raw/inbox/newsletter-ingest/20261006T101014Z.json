@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "run_id": "20261006T101014Z",
+  "triaged_at": "2026-10-06T10:15:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 5,
+  "recommend_wiki_ingest_count": 4,
+  "items": [
+    {
+      "message_id": "<20261005123230.3.d5582b06595ba396@mg-d1.substack.com>",
+      "subject": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "date": "2026-10-05",
+      "sender": "Import AI (Jack Clark)",
+      "source_label": "uid=746",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-05-import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-scienc.md",
+      "canonical_url": "https://importai.substack.com/p/import-ai-475-swarm-scaling-google",
+      "importance": "critical",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "events/",
+        "concepts/swarm-scaling",
+        "concepts/ai-generated-content-watermarking",
+        "entities/google-deepmind",
+        "entities/anthropic"
+      ],
+      "tags": ["newsletter", "scaling", "ai-agents", "swarm-scaling", "research", "ai-economy", "watermarking"],
+      "rationale": "Import AI 475。Swarm scaling（スウォーム/マルチエージェント型スケーリング）、Google DeepMind によるバイオロジー出力へのウォーターマーキング（AI生成コンテンツ来歴/セーフティ）、AI science economy の3トピックいずれも wiki 核心スコープに直撃。複数ページの更新・新規候補を生む。",
+      "external_article_count": 16,
+      "notes": "checkpoint の URL は Substack リダイレクト/app-link のみ。wiki-ingest 段階で canonical post をスクレイプして実リンクを解決すること。"
+    },
+    {
+      "message_id": "<20261005171645.3.e00161d19c01dec0@mg-d1.substack.com>",
+      "subject": "OpenAI DevDay 2026 live blog",
+      "date": "2026-10-05",
+      "sender": "Simon Willison",
+      "source_label": "uid=748",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-05-openai-devday-2026-live-blog.md",
+      "canonical_url": "https://simonwillison.net/2026/Oct/5/openai-devday-2026/",
+      "importance": "critical",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "events/openai-devday-2026",
+        "entities/openai",
+        "entities/simon-willison",
+        "concepts/agent-api",
+        "concepts/developer-platform"
+      ],
+      "tags": ["newsletter", "openai", "developer-tooling", "api", "release", "event"],
+      "rationale": "OpenAI DevDay 2026 のライブブログ。年次開発者イベントでの API/エージェント機能発表は OpenAI エンティティページと events/ の最重要カテゴリ。Simon Willison による一次情報的な同時記録で信頼性が高い。",
+      "external_article_count": 20,
+      "notes": "checkpoint URL は simonw Substack 版（simonw/p/openai-devday-2026-live-blog）。元記事は simonwillison.net 側にもある可能性が高い。events/openai-devday-2026 を作成し OpenAI/関連概念ページから参照。"
+    },
+    {
+      "message_id": "<20261005.190550.3f2856fb@mta20>",
+      "subject": "🐉 China Is Now Just 3% Behind",
+      "date": "2026-10-05",
+      "sender": "The Rundown AI (beehiiv)",
+      "source_label": "uid=749",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-05-china-is-now-just-3-behind.md",
+      "canonical_url": null,
+      "importance": "high",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "concepts/open-vs-closed-models",
+        "concepts/china-ai-ecosystem",
+        "concepts/ai-benchmarks/"
+      ],
+      "tags": ["newsletter", "open-models", "china", "benchmarks", "ecosystem"],
+      "rationale": "「中国が米国の約3%差まで迫った」というフロンティアモデル・ベンチマークギャップの報道。open vs closed / 中国 AI エコシステム / ベンチマーク動向の文脈で wiki 関連。The Rundown はアグリゲーターのため原典裏取り必須。",
+      "external_article_count": 20,
+      "notes": "全 URL が beehiiv リンクトラッカーにラップされている。wiki-ingest 段階でリダイレクト解除し、原典（Artificial Analysis 等のベンチマーク集計と推定）を特定して引用すること。"
+    },
+    {
+      "message_id": "<20261005200109.3.a42de7eefd2ba75e@mg-d1.substack.com>",
+      "subject": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+      "date": "2026-10-05",
+      "sender": "SemiAnalysis (Dylan Patel)",
+      "source_label": "uid=750",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-05-anthropic-subscriptions-offer-5x-more-value-than-openai.md",
+      "canonical_url": "https://www.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+      "importance": "high",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "comparisons/anthropic-vs-openai-pricing",
+        "concepts/llm-pricing-and-subscriptions",
+        "entities/anthropic",
+        "entities/openai",
+        "entities/semianalysis"
+      ],
+      "tags": ["newsletter", "anthropic", "openai", "pricing", "economics", "comparison"],
+      "rationale": "SemiAnalysis による Anthropic/OpenAI サブスクの定量比較（トークンあたり実効価値 5 倍以上）。推論経済学/価格設定は wiki 注目領域で comparisons/ に最適なデータ豊富な一次分析。",
+      "external_article_count": 20,
+      "notes": "定量表を含む可能性が高い。比較ページ作成時は数値+日付+出典を明記し、価格改定で陳腐化しやすい旨を注記。関係者として @megalaa, @mlkan も言及。"
+    },
+    {
+      "message_id": "<20261006062843.3.66b81b0147b4182a@mg-d0.substack.com>",
+      "subject": "[AINews] Reflection Beam - 501B-A23B American Open Model",
+      "date": "2026-10-06",
+      "sender": "AINews (swyx)",
+      "source_label": "uid=751",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-06-ainews-reflection-beam-501b-a23b-american-open-model.md",
+      "canonical_url": "https://www/news.smol.ai/p/ainews-reflection-beam-501b-a23b",
+      "importance": "low",
+      "wiki_relevant": false,
+      "recommend_wiki_ingest": false,
+      "suggested_targets": [],
+      "watchlist": ["Reflection AI", "Reflection Beam (501B-A23B MoE)"],
+      "tags": ["newsletter", "open-models", "aggregator", "reflection-ai"],
+      "rationale": "AINews は高頻度アグリゲーターの daily digest で、本篇単独の wiki 化情報密度が低い。ヘッラインプaktの Reflection Beam（501B-A23B の米国製オープン MoE モデル）は注目だが、Reflection AI/Beam の一次情報（モデルカード・ベンチマーク）が届いた時点でエンティティページ化する方が適切。raw に保存し監視、wiki 化は保留。",
+      "external_article_count": 20,
+      "notes": "Reflection Beam / Reflection AI の一次データ入手時に再評価。open models / MoE 文脈で watchlist 化。"
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 2,
+    "low": 1,
+    "recommended_for_ingest": 4,
+    "deferred": 1,
+    "key_themes": [
+      "swarm/multi-agent scaling laws",
+      "OpenAI DevDay 2026 announcements",
+      "China-US frontier model gap (~3%)",
+      "Anthropic vs OpenAI subscription economics",
+      "Reflection Beam 501B-A23B American open MoE model (watchlist)",
+      "AI-generated content watermarking (DeepMind biology)"
+    ]
+  }
+}
