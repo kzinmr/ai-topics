@@ -17,7 +17,7 @@ AI/ML research and engineering — tracking models, platforms, tools, frameworks
 title: Page Title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-type: entity | concept | comparison | query | summary
+type: entity | concept | comparison | query | summary | event
 tags: [from, taxonomy, below]
 sources: [raw/articles/source-name.md]
 ---

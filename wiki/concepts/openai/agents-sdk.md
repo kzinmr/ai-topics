@@ -2,7 +2,7 @@
 title: "OpenAI Agents SDK"
 type: concept
 created: 2026-04-16
-updated: 2026-04-16
+updated: 2026-10-07
 tags:
   - framework
   - ai-agents
@@ -11,16 +11,26 @@ tags:
   - harness-engineering
   - tool
 aliases: ["OpenAI Agent SDK", "openai-agents"]
-sources: []
+sources:
+  - https://developers.openai.com/cookbook/examples/agents_sdk/migrate-from-claude-agent-sdk/readme
+  - https://developers.openai.com/api/docs/changelog
 ---
 
-# OpenAI Agents SDK (v0.14.0)
+# OpenAI Agents SDK
+
+## Product boundary (verified 2026-10-07)
+
+The SDK is an open-source framework whose harness runs in the trusted application runtime, separate from sandbox compute. It is distinct from [[concepts/openai/agents-api]], which exposes an OpenAI-managed Codex harness. See [[events/openai-devday-2026]] and [[concepts/openai/responses-api]] for the API boundaries. [[concepts/openai/decisions-api]] supplies bounded judgments, not orchestration.
+
+The April snapshot below is retained as historical material, not a current release reference. Its version, provider and security details were not fully revalidated here. TypeScript is now available (official changelog, May 6); the older planned-language entry is superseded.
+
+## Historical April 2026 snapshot (v0.14.0)
 
 | | |
 |---|---|
 | **Package** | `openai-agents>=0.14.0` |
 | **Release Date** | April 15, 2026 (GA) |
-| **Language** | Python (TypeScript planned) |
+| **Language (historical)** | Python; TypeScript planned in this snapshot, superseded by May 6 availability |
 | **Developer** | [[entities/openai]] |
 | **API** | [platform.openai.com](https://platform.openai.com) |
 | **Docs** | [Sandbox Agents Guide](https://developers.openai.com/api/docs/guides/agents/sandboxes) |
@@ -37,7 +47,7 @@ The SDK introduces a fundamental architectural split:
 
 | Plane | Responsibility | Examples |
 |---|---|---|
-| **Harness (Control)** | Agent loop, model calls, tool routing, handoffs, approvals, tracing, recovery, auth, billing | OpenAI infrastructure |
+| **Harness (Control)** | Agent loop, model calls, tool routing, handoffs, approvals, tracing, recovery, auth, billing | Trusted application runtime (corrected 2026-10-07 from "OpenAI infrastructure"; official SDK architecture) |
 | **Compute (Execution)** | File I/O, commands, dependency installs, port exposure, provider-specific state | Sandbox environments |
 
 > *"The key split is the boundary between the harness and compute."*
@@ -123,7 +133,7 @@ agent = SandboxAgent(
 
 ## Roadmap
 
-- **TypeScript SDK** (planned)
+- **TypeScript SDK** — historically planned; superseded by May 6, 2026 availability
 - **Code mode & subagents** (rolling out to Python & TS)
 - **Additional sandbox providers**
 - **Deeper third-party integrations**
@@ -145,7 +155,7 @@ agent = SandboxAgent(
 
 ## Sources
 
-- 
-- 
+- [Official SDK architecture](https://developers.openai.com/cookbook/examples/agents_sdk/migrate-from-claude-agent-sdk/readme) — harness ownership, checked 2026-10-07.
+- [Official changelog](https://developers.openai.com/api/docs/changelog) — TypeScript update on May 6.
 - [OpenAI Agents SDK Blog (2026-04-15)](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - [OpenAI API Sandbox Docs](https://developers.openai.com/api/docs/guides/agents/sandboxes)
