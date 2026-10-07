@@ -1,3 +1,22 @@
+## [2026-10-07] ingest | X Article — Jev-as-a-Judge for Agent Evaluations (elvis @omarsar0)
+
+- Fetched X Article 2107472222398886011 via xurl (`tweet.fields=article`; 691 bookmarks). Saved raw to `raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations.md` (invisible unicode stripped).
+- Article: DAIR.AI tutorial (co-written with coding agent) on using TypeSafe AI's Jev to judge **agent trajectories** (tool calls + results + final reply) instead of only the final reply; checkable yes/no questions, 80% accept/fail/review threshold policy, code checks for one-exact-answer facts; self-reported judge failure (~86% on a run that skipped the required lookup). Cites paper *JEV-as-a-Judge: Accept When Confident, Escalate When Unsure* (Li et al., 2026): +0.9 pts vs GPT-6 alone on 1,610 held-out cases at 41% cost (paper-reported, independent verification pending).
+- **Updated** `entities/elvis-saravia.md` — new "Jev-as-a-Judge" section + source.
+- **Updated** `concepts/system-one-models.md` — "Jev-as-a-Judge: judging agent trajectories" section (first major evaluation application of the class); added `evaluation` tag.
+- **Updated** `concepts/evaluation/llm-as-judge.md` — "Judge the trajectory, not the reply" section + See-Also links to llm-trace-judge and agent-overclaiming.
+- **Updated** `entities/typesafe-ai.md` — Jev-as-a-Judge bullet; added `evaluation` tag.
+- **Cross-linked** `concepts/evaluation/agent-overclaiming.md` and `concepts/llm-trace-judge.md`.
+- index.md entries refreshed for elvis-saravia, typesafe-ai, system-one-models, llm-as-judge. No new pages (all content integrated into existing pages per existing-page-first rule).
+
+---
+## [2026-10-06] skeleton-enrich-daily: queue empty — no `status: skeleton` pages
+
+- Scan: `grep -rl "status: skeleton" wiki/` → 0 frontmatter matches across entities/concepts/comparisons/events/queries. Only remaining hit is a prose mention in `queries/2026-10-04-uncommitted-wip-snapshot.md` (intentional). `grep "^status: stub" wiki/entities/` → 0.
+- Skeleton backlog remains empty (10th+ consecutive empty run; cron keeping up since late Sept).
+- Worktree untouched: ~216 modified/untracked files belong to sibling pipelines (active-crawl / blog-wiki-ingest cross-ref sweep, benchmark link rewrites). `git pull --rebase` skipped to avoid disturbing them; no commits made by this run.
+
+---
 ## [2026-10-06] lint | wiki health-fix — all clean, no changes
 
 - Phase 1 (auto-fix): index.md corruption all 0 — pipe_prefix, line_number_prefix, triple_bracket, space_prefix (3181 lines).

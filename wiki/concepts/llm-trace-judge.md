@@ -128,6 +128,7 @@ The Trace Judge extends the [[concepts/evaluation/llm-as-judge]] paradigm from s
 ## Related Concepts
 - [[concepts/evaluation/ai-evaluation]] — Broader evaluation methodology
 - [[concepts/evaluation/llm-as-judge]] — Single-turn judge models
+- [[concepts/evaluation/llm-as-judge#Judge the trajectory, not the reply: Jev-as-a-Judge (Oct 2026)]] — Jev-based trajectory judging (DAIR.AI, Oct 2026), the decision-model counterpart to fine-tuned trace judges
 - [[concepts/evaluation/evaluation-flywheel]] — Continuous evaluation improvement
 - [[entities/langsmith]] — Platform hosting the trace infrastructure
 - [[entities/fireworks-ai]] — Fine-tuning infrastructure partner

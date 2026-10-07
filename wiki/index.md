@@ -272,7 +272,7 @@
 - [[entities/elie-bakouch]] — ML engineer and researcher at Prime Intellect (formerly Hugging Face), known for work on SmolLM, pretraining optimiza...
 - [[entities/eliezer-yudkowsky]] — Eliezer Yudkowsky — AI alignment researcher, co-founder of MIRI
 - [[entities/elvis]] — elvis
-- [[entities/elvis-saravia]] — Elvis Saravia
+- [[entities/elvis-saravia]] — Elvis Saravia — DAIR.AI founder; Oct 2026 X Article "Jev-as-a-Judge for Agent Evaluations" tutorial (trajectory-level judging, accept/escalate thresholds)
 - [[entities/elvis-sun]] — Elvis Sun
 - [[entities/eiso-kant]] — Eiso Kant — co-founder and co-CEO of Poolside; Model Factory thesis, open-weight coding models, persistence-over-intelligence thesis, anti-MCP/pro-scripting-agents philosophy (Jul 26, enriched Jul 28)
 - [[entities/embeddings]] — Single-vector embedding models — strengths, limitations, and the theoretical constraints of embedding-based retrieval...
@@ -871,7 +871,7 @@
 - [[entities/troy-hunt]] — Troy Hunt
 - [[entities/trq212]] — Thariq Shihipar (@trq212)
 - [[entities/trycua-cua]] — TryCua (Cua)
-- [[entities/typesafe-ai]] — TypeSafe AI — stealth lab (founder Diogo Almeida, ex-OpenAI ChatGPT instruction-following research); launched Jev (Sep 15, 2026), first "System One model" — structured-decision-only LLM, 40–200x faster, RLCD training
+- [[entities/typesafe-ai]] — TypeSafe AI — stealth lab (founder Diogo Almeida, ex-OpenAI ChatGPT instruction-following research); launched Jev (Sep 15, 2026), first "System One model" — structured-decision-only LLM, 40–200x faster, RLCD training; Oct 2026: Jev-as-a-Judge paper (accept-when-confident beats GPT-6 by 0.9 pts at 41% cost, paper-reported)
 - [[entities/turbopuffer]] — turbopuffer
 - [[entities/ubtech-robotics]] — UBTECH Robotics
 - [[entities/uipath]] — Uipath
@@ -1831,7 +1831,7 @@
 - [[concepts/evaluation/evaluation-harness-validity]] — Evaluation Harness Validity
 - [[concepts/evaluation/generator-evaluator-pattern]] — Generator-Evaluator Pattern
 - [[concepts/evaluation/judgment-list]] — Judgment List
-- [[concepts/evaluation/llm-as-judge]] — LLM-as-Judge is a paradigm for using LLMs to evaluate LLM outputs. Covers 3 bias types (rubric order, score ID, refer...
+- [[concepts/evaluation/llm-as-judge]] — LLM-as-Judge is a paradigm for using LLMs to evaluate LLM outputs. Covers 3 bias types (rubric order, score ID, refer...; + Oct 2026 Jev-as-a-Judge trajectory judging (accept/escalate thresholds, judge what the agent did not what it said)
 - [[concepts/evaluation/llm-as-judge-skills]] — LLM-as-Judge Skills
 - [[concepts/evaluation/llm-evaluation-harness]] — LM Evaluation Harness (lm-eval)
 - [[concepts/evaluation/llm-search-judge]] — LLM Search Judge
@@ -2939,7 +2939,7 @@
 - [[concepts/synth]] — SYNTH
 - [[concepts/synthetic-data]] — synthetic-data
 - [[concepts/synthetic-research-interns]] — Synthetic Research Interns
-- [[concepts/system-one-models]] — System One Models — models that only *decide* (classify/route/score, 24-token structured output), never converse; Jev/TypeSafe coined Sep 2026, 6 clones in 2 days incl. ekzhang's production-grade openjev-sglang (Qwen+SGLang), "System 2 model as a service" counter-model
+- [[concepts/system-one-models]] — System One Models — models that only *decide* (classify/route/score, 24-token structured output), never converse; Jev/TypeSafe coined Sep 2026, 6 clones in 2 days incl. ekzhang's production-grade openjev-sglang (Qwen+SGLang), "System 2 model as a service" counter-model; Oct 2026 first evaluation application: Jev-as-a-Judge (agent trajectory judging)
 - [[concepts/synthid]] — SynthID; Google Earth AI satellite image retraction case (Jul 2026): SynthID fails on smartphone-photo/screenshot re-encoding, 10/day check limit
 - [[concepts/system-prompt-learning]] — System Prompt Learning
 - [[concepts/systems-programming]] — Systems Programming

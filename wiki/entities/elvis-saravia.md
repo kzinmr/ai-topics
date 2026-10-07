@@ -1,7 +1,7 @@
 ---
 title: "Elvis Saravia"
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-10-07
 type: entity
 tags:
   - person
@@ -18,6 +18,7 @@ aliases:
 sources:
   - https://x.com/omarsar0
   - raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md
+  - raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations.md
   - https://academy.dair.ai/
   - https://dair.ai/
 related:
@@ -58,6 +59,10 @@ Published "From Prompting Agents to Loop Engineering," a comprehensive synthesis
 - Concrete loop patterns (PR babysitter, CI health, deploy verification)
 - Economics of loop engineering (iterations as budget line, verifier as critical path)
 - Anti-patterns and failure modes
+
+### Jev-as-a-Judge for agent evaluations (2026-10-06)
+
+In an X Article co-written with his coding agent, Saravia demonstrates **Jev-as-a-Judge**: using TypeSafe AI's decision model to evaluate *agent trajectories*, not just final replies. The core twist: an agent can sound correct even when its work failed (the refund-tool-timeout example), so the judge reads the request, every tool call/result, and the final reply, then returns a verdict with a calibrated probability. Key operational advice: phrase criteria as checkable questions ("Did the agent follow the 30-day refund policy and wait for a successful tool result?") rather than vague ones; use an 80%-confidence threshold policy (accept / fail / escalate-to-review band); use plain code checks for one-exact-answer facts (e.g. "must call lookup_order before issue_refund") and save Jev for reading-dependent judgments. The article self-reports a failure case — a run that skipped the order lookup still scored ~86% likely correct — reinforcing "test the judge like you test the agent." Cites the paper *JEV-as-a-Judge: Accept When Confident, Escalate When Unsure* (Li et al., 2026): confident-Jev + escalate-the-rest beat GPT-6 alone by 0.9 points on 1,610 held-out cases at 41% of the cost. Lab: [academy.dair.ai/labs/jev-as-a-judge-for-agent-evals](https://academy.dair.ai/labs/jev-as-a-judge-for-agent-evals). Source: [[raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations]].
 
 ### DAIR.AI Academy Events
 

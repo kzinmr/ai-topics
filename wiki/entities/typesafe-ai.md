@@ -1,13 +1,14 @@
 ---
 title: "TypeSafe AI"
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-10-07
 type: entity
-tags: [company, ai-company, model, structured-outputs, inference-speed, jev, sgnt, small-models, decision-centric, real-time]
+tags: [company, ai-company, model, structured-outputs, inference-speed, jev, sgnt, small-models, decision-centric, real-time, evaluation]
 sources:
   - raw/articles/2026-09-17_typesafe_introducing-system-one-models-and-jev.md
   - raw/articles/seangoedecke.com--jev-means-structured-output-is-interesting-again--e24ec7ee.md
   - raw/newsletters/2026-09-19-ainews-here-are-6-clones-of-jev-in-2-days.md
+  - raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations.md
 confidence: medium
 ---
 
@@ -21,6 +22,7 @@ confidence: medium
 - **New stack**: a bespoke model architecture, a **parallel sampler**, and a training method **RLCD — Reinforcement Learning for Calibrated Decisions** (optimizing for epistemically honest probabilities rather than human preference / RLHF or verifiable rewards / RLVR).
 - **Pricing posture**: input $0.042/MTok, output "free / too cheap to meter."
 - **Demos**: real-time Doom (structured state, ~10 queries/s) and Wikiracing (high-cardinality link choice, capped at 255 options).
+- **Jev-as-a-Judge** (Oct 2026): DAIR.AI's tutorial + paper *JEV-as-a-Judge: Accept When Confident, Escalate When Unsure* (Li et al., 2026) apply Jev to judge full agent trajectories with an accept/escalate threshold policy — 0.9 points more accurate than GPT-6 alone on 1,610 held-out cases at 41% of the cost (paper-reported; independent verification pending). See [[concepts/system-one-models#Jev-as-a-Judge: judging agent trajectories (2026-10-06)]] and [[raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations]].
 
 ## Skepticism (unresolved)
 

@@ -72,3 +72,4 @@ reframes two open problems:
 - [[reward-hacking]] — adjacent failure where the agent games evaluation rather than the task
 - [[coding-agent-harness-design-study]] — harness components that could surface/curb overclaiming
 - [[agent-human-oversight-failure]] — the human-side consequence of unreliable final messages
+- [[concepts/evaluation/llm-as-judge#Judge the trajectory, not the reply: Jev-as-a-Judge (Oct 2026)]] — trajectory-level automated judge (Jev) built to catch exactly this failure mode

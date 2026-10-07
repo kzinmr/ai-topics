@@ -2,7 +2,7 @@
 title: "LLM-as-Judge: Evaluation Frameworks, Best Practices & Bias Types"
 description: "LLM-as-Judge is a paradigm for using LLMs to evaluate LLM outputs. Covers 3 bias types (rubric order, score ID, reference answer) and 7 best practices. High-risk evaluations require GPT-4o class models."
 created: 2026-04-20
-updated: 2026-06-29
+updated: 2026-10-07
 type: concept
 status: complete
 depth_tracking:
@@ -16,6 +16,7 @@ sources:
  - raw/articles/2026-04-30_dropbox-tech-optimizing-dash-relevance-judge-with-dspy.md
  - raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge.md
  - raw/papers/2026-06-25_2606.27226_binEval-binary-questions-llm-evaluation.md
+ - raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations.md
 related:
  - ai-evals
  - evaluation-flywheel
@@ -208,10 +209,22 @@ Most gains appear within 1–2 iterations. Later iterations risk prompt degradat
 
 > **Practical takeaway:** Binary decomposition is especially effective for factual consistency and coherence. For relevance or tasks requiring nuanced judgment, holistic scoring may still be preferable.
 
+## Judge the trajectory, not the reply: Jev-as-a-Judge (Oct 2026)
+
+DAIR.AI's "Jev-as-a-Judge" tutorial (Saravia, co-written with his coding agent) applies a purpose-built decision model — [[entities/typesafe-ai|TypeSafe AI]]'s Jev, a [[concepts/system-one-models|System One model]] — to judge *agent trajectories*: the request, the policy, every tool call and result, and the final reply. The motivation is an agent-specific failure mode a reply-only judge cannot see: the agent can sound correct while its work silently failed (e.g. claiming "your refund has been processed" when the refund tool timed out — see [[concepts/evaluation/agent-overclaiming|Agent Overclaiming]]). Operational pattern:
+- Phrase criteria as checkable yes/no questions ("Did the agent follow the 30-day refund policy and wait for a successful tool result before claiming success?") — vague questions let the judge invent its own standard.
+- Use a calibrated-confidence threshold policy: accept above threshold, fail below its mirror, and route the uncertain middle band to human review; raise the threshold to widen review.
+- Do not use a judge at all for one-exact-answer facts (dates, amounts, call-order constraints like "lookup_order before issue_refund") — a one-line code check is cheaper and caught a real miss the judge scored ~86% likely correct.
+- Validate the judge against human-labeled trajectories and re-run for verdict stability before trusting it.
+
+The accompanying paper *JEV-as-a-Judge: Accept When Confident, Escalate When Unsure* (Li et al., 2026) reports confident-Jev + escalate-the-rest beating GPT-6 alone by 0.9 points across 1,610 held-out cases at 41% of the cost (paper-reported; independent verification pending). Jev excels when the verdict is directly readable from evidence, and degrades on math/code/logic derivation and style-misleading comparisons. Source: [[raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations]].
+
 ## See Also
 
 - [[concepts/evaluation/ai-evals]] — General evaluation concept page
 - [[concepts/evaluation/evaluation-flywheel]] — Iterative evaluation improvement cycle
 - [[concepts/evaluation/offline-evaluation]] — Pre-production evaluation pipeline
 - [[concepts/dspy]] — Evaluation integration with DSPy
+- [[concepts/llm-trace-judge]] — Judging full production traces (LangChain/Fireworks), the trajectory-level sibling of Jev-as-a-Judge
+- [[concepts/evaluation/agent-overclaiming]] — The failure mode trajectory judges are built to catch
 - [[comparisons/eval-tools-comparison]] — Evaluation tool comparison

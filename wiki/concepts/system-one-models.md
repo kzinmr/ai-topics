@@ -1,9 +1,9 @@
 ---
 title: "System One Models (Fast Structured-Decision LLMs)"
 created: 2026-09-20
-updated: 2026-09-21 22:50:00
+updated: 2026-10-07
 type: concept
-tags: [model, structured-outputs, inference-speed, classifiers, model-routing, token-economics, small-models, decision-centric, probabilistic, real-time, sgnt, jev, ai-industry-economics]
+tags: [model, structured-outputs, inference-speed, classifiers, model-routing, token-economics, small-models, decision-centric, probabilistic, real-time, sgnt, jev, ai-industry-economics, evaluation]
 sources:
   - raw/articles/2026-09-17_typesafe_introducing-system-one-models-and-jev.md
   - raw/articles/seangoedecke.com--jev-means-structured-output-is-interesting-again--e24ec7ee.md
@@ -11,6 +11,7 @@ sources:
   - raw/newsletters/2026-09-19-ainews-here-are-6-clones-of-jev-in-2-days.md
   - raw/articles/2026-09-19_parallel-web-systems_testing-jev.md
   - raw/articles/2026-09-21_github_ekzhang-openjev-sglang.md
+  - raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations.md
 confidence: medium
 ---
 
@@ -57,6 +58,10 @@ The most substantive independent test is Parallel Web Systems' eval against rera
 ## Kev: the ecosystem test (2026-09-21)
 
 Three days after launch the clone wave turned into a **toolkit wave**: Jared Palmer published **Kev** — a tiny family of Jev-like decision models fine-tuned on top of [[entities/dqwen3-5|dQwen3.5]] (hybrid attention-diffusion) — hitting HN's front page (156 pts, [item 49783999](https://news.ycombinator.com/item?id=49783999)). Two smaller spins followed the same day: **Jev-Leftpad** (97 pts, [item 49784706](https://news.ycombinator.com/item?id=49784706)) and a Jev-as-chatbot demo that its author admits is "lousy" (150 pts, [item 49778162](https://news.ycombinator.com/item?id=49778162)) — the latter being direct empirical confirmation of the "conversing is out of scope" boundary above. CUA-S1 ([item 49767564](https://news.ycombinator.com/item?id=49767564)) extended the System One idea to computer-use action selection. The 72-hour arc — stealth launch → 6 clones → a fine-tunable open family — matches the "interface, not architecture, is the durable artifact" thesis: value is consolidating around the decision-interface convention, not any single model.
+
+## Jev-as-a-Judge: judging agent trajectories (2026-10-06)
+
+Elvis Saravia's DAIR.AI tutorial demonstrates the first major *evaluation* application of the class: feeding Jev an agent's full trajectory (request, policy, every tool call and result, final reply) plus short typed questions, and getting a calibrated verdict on whether the agent actually did the work — catching overclaiming-style failures ("Your refund has been processed" when the refund tool timed out) that a reply-only judge would miss. Uses an accept/escalate threshold policy (80%: pass / fail / send to review). The accompanying paper *JEV-as-a-Judge: Accept When Confident, Escalate When Unsure* (Li et al., 2026) reports confident-verdict-accept + escalate-the-rest routing beating GPT-6 alone by 0.9 points on 1,610 held-out cases at 41% of the cost — with Jev best when the verdict is readable directly from evidence (within 3 points of GPT-6 at 0.36% of its cost) and weakest on math/code/logic derivation, misleading-style comparisons, and reference-free writing. Caveat the tutorial itself surfaces: Jev scored a run that skipped the required order lookup at ~86% likely correct — the judge must be validated against human labels before being trusted. Source: [[raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations]].
 
 ## What it is *not*
 
