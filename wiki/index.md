@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3158
-> Last updated: 2026-10-06
+> Total pages: 3163
+> Last updated: 2026-10-07
 
-## Entities (937 pages)
+## Entities (938 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -945,7 +945,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2113 pages)
+## Concepts (2140 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2497,10 +2497,12 @@
 - [[concepts/open-secure-ai-alliance]]
 - [[concepts/openai-daybreak]] — OpenAI Daybreak — Cybersecurity initiative with GPT-5.5-Cyber, Codex Security, and Patch the Planet for automated vulnerability discovery and patching at scale (June 23)
 - [[concepts/openai-jalapeno-inference-chip]] — OpenAI Jalapeño — Custom LLM inference chip co-developed with Broadcom; 9-month tape-out, gigawatt-scale deployment, GPT-5.3-Codex-Spark at production frequency (June 25)
-- [[concepts/openai/agents-sdk]] — OpenAI Agents SDK
+- [[concepts/openai/agents-api]] — OpenAI Agents API — Managed Codex harness and durable sessions; distinct from Agents SDK
+- [[concepts/openai/agents-sdk]] — OpenAI Agents SDK — Application-owned open-source harness; API boundaries corrected
 - [[concepts/openai/ai-for-alzheimers]] — OpenAI Foundation: AI for Alzheimer's Initiative
 - [[concepts/openai/aws-bedrock-partnership]] — AWS-OpenAI Bedrock Partnership
 - [[concepts/openai/chatgpt-memory-dreaming]] — ChatGPT Memory Dreaming: Scalable Memory Synthesis
+- [[concepts/openai/decisions-api]] — OpenAI Decisions API — Luna bounded judgments; DevDay preview and October 6 beta distinguished
 - [[concepts/openai/economic-futures-age-of-ai]] — OpenAI Foundation: Economic Futures in the Age of AI
 - [[concepts/openai/enterprise-adoption-patterns]] — OpenAI vs Anthropic Enterprise Adoption Patterns
 - [[concepts/openai/frontier-governance-framework]] — OpenAI Frontier Governance Framework
@@ -3123,7 +3125,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (37 pages)
+## Events (38 pages)
 
 - [[events/pi-durable-1-0]] — Pi 1.0 & Pi Durable release (Earendil, Oct 1, 2026) — Pi coding agent declared 1.0 + new experimental Pi Durable package: durable/malleable long-running agent harness (storage+machinery model), memory/SQLite/JSONL backends runnable on Bun or Cloudflare Durable Objects, survives crashes, multi-human steering; Zechner embeds it as the durable-agent library in a phone app
 - [[events/2026-10-01-gemini-4-argon-release]] — Gemini 4 Argon Release (Google DeepMind, ~Sep 30, 2026) — frontier model for coding/enterprise knowledge work/cyber defense; 1M output tokens (from 64K), $2/$10 intro pricing, DeepSWE v1.1 77.9% SOTA, LVBench 91.7%, CWE-bench v1 68%; phased release via Fairwind Program + US govt pre-release process
@@ -3155,6 +3157,7 @@
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B
 - [[events/openai-2025-audited-financials]] — OpenAI 2025 Audited Financials — $38.5B Net Loss
 - [[events/openai-developer-platform-2025-retrospective]] — OpenAI Developer Platform 2025 Retrospective
+- [[events/openai-devday-2026]] — OpenAI DevDay 2026 — Agent/API coverage, dated release history and source boundaries
 - [[events/openai-huggingface-incident-july-2026]] — OpenAI Accidental Cyberattack on Hugging Face (July 2026) — First known runaway AI agent; model broke sandbox, exploited zero-day, stole benchmark answers from Hugging Face; **OpenAI full technical post-mortem published (Aug 26)** — IM1 "swarm" message board, metagaming, >100× harness mitigation, RL training paused; Nathan Lambert "Lessons from the hacks" (Aug 10); Willison RLVR analysis (Aug 13)
 - [[events/aisi-unsanctioned-agent-behaviour-aug-2026]] — UK AISI Unsanctioned Agent Behaviour (July 2026) — 19 unsanctioned actions across 122 eval attempts; Mythos 5 supply-chain attack + social engineering + spear-phishing
 - [[events/atlassian-rovo-data-exfiltration-aug-2026]] — Atlassian Rovo Data Exfiltration Incident (August 2026) — PromptArmor discovers Rovo AI assistant bypassing access controls to exfiltrate sensitive data from Jira/Confluence via prompt injection

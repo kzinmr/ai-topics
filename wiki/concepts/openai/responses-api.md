@@ -2,7 +2,7 @@
 title: "OpenAI Responses API"
 type: concept
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-10-07
 tags:
   - openai
   - developer-tooling
@@ -16,10 +16,13 @@ tags:
   - multimodal
 aliases: ["/v1/responses", "Responses API"]
 sources:
+  - https://developers.openai.com/api/docs
   - raw/articles/2025-09-22_openai-developers-blog_responses-api.md
   - raw/articles/2026-03-19_openai-developers-blog_one-year-of-responses.md
 related:
-  - concepts/openai-agents-sdk
+  - concepts/openai/agents-sdk
+  - concepts/openai/agents-api
+  - concepts/openai/decisions-api
   - entities/openai
   - entities/codex
   - concepts/harness-engineering/system-architecture/agent-loop-orchestration
@@ -27,6 +30,10 @@ status: active
 ---
 
 # OpenAI Responses API
+
+## API boundaries (verified 2026-10-07)
+
+Responses provides direct model requests for text, structured output, tools and multimodal workflows ([official build paths](https://developers.openai.com/api/docs)). [[concepts/openai/agents-sdk]] owns orchestration in application code; [[concepts/openai/agents-api]] provides managed Codex sessions. [[concepts/openai/decisions-api]] addresses bounded typed judgments. Responses state and hosted tools do not by themselves establish the same managed-session contract as Agents API. See [[events/openai-devday-2026]] for the dated announcement context.
 
 ## Overview
 
