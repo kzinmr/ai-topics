@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "run_id": "20261007T101035Z",
+  "triaged_at": "2026-10-07T10:20:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 6,
+  "recommend_wiki_ingest_count": 4,
+  "items": [
+    {
+      "message_id": "<20261007045544.3.9a321caa47c16b47@mg-d1.substack.com>",
+      "subject": "[AINews] Quasi-Riemann-Hypothesis: OpenAI publishes 722 math papers solving 90 of the top 500 open math problems; …",
+      "date": "2026-10-07",
+      "sender": "AINews (swyx / Latent Space)",
+      "source_label": "uid=757",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-07-ainews-quasi-riemann-hypothesis-openai-publishes-722-math-papers-solving-90-of-t.md",
+      "canonical_url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
+      "importance": "critical",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "concepts/ai-discovery-acceleration",
+        "entities/openai",
+        "events/",
+        "entities/latent-space"
+      ],
+      "tags": ["newsletter", "ai-research", "ai-for-math", "openai", "reasoning", "frontier-labs"],
+      "newsjacking_score": 5,
+      "rationale": "OpenAI が 722 本の数学論文を公開し top 500 未解決問題のうち 90 を解決（Quasi-Riemann-Hypothesis）。AIによる数学研究の自動加速という wiki 核心テーマ（ai-discovery-acceleration 既存）に直撃する大型ニュース。Trend Surfing + Pattern Interrupt + In-Group Signal すべて該当。",
+      "external_article_count": 13,
+      "notes": "checkpoint の URL は Substack app-link/redirect のみ。wiki-ingest 段階で canonical post（latent.space）をスクレイプして実リンクを解決すること。関連既存ページ: concepts/ai-discovery-acceleration.md, concepts/aurora-optimizer.md。"
+    },
+    {
+      "message_id": "<20261007041112.3.13b73dead8015d04@mg-d1.substack.com>",
+      "subject": "41 experiments while the team slept. What do we trust?",
+      "date": "2026-10-07",
+      "sender": "Hugo Bowne-Anderson (Substack)",
+      "source_label": "uid=755",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-07-41-experiments-while-the-team-slept-what-do-we-trust.md",
+      "canonical_url": "https://hugobowne.substack.com/p/stop-babysitting-your-ai-agents",
+      "importance": "critical",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "entities/hugo-bowne-anderson",
+        "concepts/autonomous-research-agents",
+        "concepts/agent-reliability"
+      ],
+      "tags": ["newsletter", "ai-agents", "autonomous-agents", "agent-reliability", "trust", "background-agents"],
+      "newsjacking_score": 4,
+      "rationale": "「チームが寝ている間に41の実験を実行したエージェント、何を信頼できるか」— 自律型リサーチ/実験エージェントの信頼性・监督不要運用という agent スコープ中核テーマ。Polarizing Promise（Stop babysitting your AI agents）を含む。既存 entity hugo-bowne-anderson.md の更新対象にもなる。",
+      "external_article_count": 11,
+      "notes": "canonical slug は stop-babysitting-your-ai-agents（restackリンクから判明）。"
+    },
+    {
+      "message_id": "<20261006142241.3.1369056e56198a66@mg-d0.substack.com>",
+      "subject": "The Cyber Risk Discourse is Broken",
+      "date": "2026-10-06",
+      "sender": "Nato Lambert (Robotic Substack)",
+      "source_label": "uid=753",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-06-the-cyber-risk-discourse-is-broken.md",
+      "canonical_url": "https://www.therobotic.substack.com/p/the-cyber-risk-discourse-is-broken",
+      "importance": "high",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "concepts/ai-and-cybersecurity",
+        "concepts/ai-safety",
+        "entities/nato-lambert"
+      ],
+      "tags": ["newsletter", "ai-safety", "cybersecurity", "agentic-security", "risk"],
+      "newsjacking_score": 3,
+      "rationale": "AI 時代のサイバーリスク論の破綻を論じるエッセイ（Robotic / Nato Lambert）。AIエージェントのセキュリティリスク・AI safety スコープに準ずる。Polarizing Promise 型タイトル。raw/articles/substack.com--natolambert--e6b225c1.md が既に存在するため、同一記事の可能性が高く、wiki-ingest 段階で重複確認必須。",
+      "external_article_count": 10,
+      "notes": "publication_id=48206 (robotic)。既に natolambert の raw article が1件ある — digest と同一か要照合。"
+    },
+    {
+      "message_id": "<20261006.190529.ede5f84a@mta16>",
+      "subject": "🔦 Reflection's Beam: America's Open Model Strikes Back",
+      "date": "2026-10-06",
+      "sender": "Superintelligence (beehiiv)",
+      "source_label": "uid=754",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-06-reflection-s-beam-america-s-open-model-strikes-back.md",
+      "canonical_url": null,
+      "importance": "high",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "entities/reflection-ai",
+        "concepts/open-weights",
+        "entities/open-source-ai-tracker"
+      ],
+      "tags": ["newsletter", "reflection-ai", "open-weights", "frontier-labs", "us-china-ai"],
+      "newsjacking_score": 3,
+      "rationale": "Reflection AI のオープンモデルリリース（America's Open Model Strikes Back）を扱うニュースレター。Reflection AI の既存 entity があり、open-weights / US frontier 動向として収録価値が高い。Trend Surfing 該当。",
+      "external_article_count": 20,
+      "notes": "全20リンクが link.mail.beehiiv.com/v2/c/ 形式のトラッキングリンク。pitfall #10 のルール通り、まず1本だけ curl -sL -o /dev/null -w '%{url_effective}' で解決テストしてからバッチ処理すること（過去検証では 200 で実記事に解決している）。"
+    },
+    {
+      "message_id": "<20261006130118.3.07c0993596641565@mg2.substack.com>",
+      "subject": "Thoughts from San Francisco",
+      "date": "2026-10-06",
+      "sender": "Ben's Bites",
+      "source_label": "uid=752",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-06-thoughts-from-san-francisco.md",
+      "canonical_url": "https://www.bensbites.com/p/thoughts-from-san-francisco",
+      "importance": "low",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": false,
+      "suggested_targets": [
+        "entities/bens-bites"
+      ],
+      "tags": ["newsletter", "ai-news-digest", "ai-products"],
+      "newsjacking_score": 1,
+      "rationale": "Ben's Bites の SF 出張記的风ダイジェスト。リンク多数だがリンクダム寄りで単一の強い wiki 対象に欠ける。収録は任意（既存 Ben's Bites entity の日次更新程度）。",
+      "external_article_count": 13,
+      "notes": "checkpoint の URL は Substack app-link/redirect のみ。"
+    },
+    {
+      "message_id": "<20261007041746.3.7f1f227a972ec30f@mg2.substack.com>",
+      "subject": "Marvell 2026 Investor Day: Irrational Recap",
+      "date": "2026-10-07",
+      "sender": "Irrational Analysis",
+      "source_label": "uid=756",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-07-marvell-2026-investor-day-irrational-recap.md",
+      "canonical_url": "https://www.irrationalanalysis.com/p/marvell-2026-investor-day-irrational",
+      "importance": "low",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": false,
+      "suggested_targets": [],
+      "tags": ["newsletter", "ai-chips", "marvell", "custom-silicon", "investor-analysis"],
+      "newsjacking_score": 2,
+      "rationale": "Marvell Investor Day の投資分析 recap。AI カスタムシリコン（TPU系 ASIC）文脈では周辺関連だが、wiki 中核スコープ（モデル/エージェント/開発ツール）からは周縁。既存 Marvell entity も index になし。投資家向けRecapのため優先度 low。",
+      "external_article_count": 11,
+      "notes": "AI インフラ（カスタムASIC / hyperscaler chips）関心を広げるなら concepts 更新材料にはなる。"
+    }
+  ],
+  "summary": {
+    "critical": 2,
+    "high": 2,
+    "low": 2,
+    "ingest_recommended": ["uid=757 AINews (OpenAI 722 math papers)", "uid=755 Hugo Bowne (autonomous agents trust)", "uid=753 Nato Lambert (cyber risk discourse)", "uid=754 Reflection AI open model"],
+    "skip_or_optional": ["uid=752 Ben's Bites (link dump)", "uid=756 Marvell Investor Day (peripheral/financial)"]
+  }
+}
