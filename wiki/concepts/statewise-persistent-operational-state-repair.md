@@ -55,3 +55,4 @@ statefulness dimension of [[concepts/harness-engineering]] and record trust in
 - [[concepts/agent-trace-integrity]] — trust in stored/generated records
 - [[concepts/harness-engineering]] — the statefulness substrate StateWise repairs
 - [[concepts/pace-provenance-aware-capability-enforcement]] — complementary enforcement point
+- [[queries/2026-10-09-crash-consistent-agent-synthesis]] — places premise repair alongside Retire, durable execution, and UndoBench as one effect-integrity family

@@ -56,3 +56,4 @@ execution is the mechanism; UndoBench is the instrument that proves agents don't
 - [[concepts/retire-versioned-execution]] — authority/resource split for interruption
 - [[concepts/overact-proactive-over-authorization]] — irreversible-action failure family
 - [[concepts/agent-loop-orchestration]] — the loop in which faults occur
+- [[queries/2026-10-09-crash-consistent-agent-synthesis]] — cross-layer synthesis placing this benchmark as the instrument for the whole effect-integrity family

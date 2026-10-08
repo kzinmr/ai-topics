@@ -1,3 +1,13 @@
+## [2026-10-09] query | hot-post (late-night slot): "Crash-consistent agent" synthesis
+
+- **Created** `queries/2026-10-09-crash-consistent-agent-synthesis.md` (type: query, confidence: medium). Late-night niche/high-signal angle: the effect-integrity gap in agent execution, deliberately kept off the human-governance axis used by the 2026-10-05 and 2026-10-08 night syntheses.
+- Spine: `concepts/undobench-agent-recovery-capability` (arXiv:2610.05622) — nominal competence **83.54%** vs conditional recovery success **46.72%**, naive retry duplicating external effects in **53.33%** of trials; recovery is phase-dependent (before / during-partial-mutation / after-commit-before-ack). 5,760 executions, reproduced on commercial API models.
+- Four other layers digging the same hole Oct 1–6: `concepts/retire-versioned-execution` (execution version owns authority, TTFT −17.1% median, 0 obsolete output), `concepts/absurd-durable-execution` (Postgres-resident checkpoints, ~1.4k-line SDK vs Temporal ~170k), `events/pi-durable-1-0` (harness-as-library, ~15k lines, phone/DO/Bun), `concepts/statewise-persistent-operational-state-repair` (premise repair before action, 93.3% vs 38.7%).
+- Framing: the four are orthogonal, not competing — publish-authority (serving) / re-fire-authority (execution) / premise-authority (memory) / instrumentation (eval). All are variants of one abstraction: an **effect-integrity ledger**. Positioned as the time-axis extension of `queries/2026-10-05-authority-converges-on-tool-call`.
+- Counter-evidence documented, not smoothed: Absurd writes up to 6 tables/task → 26 dead tuples per 20-step/3-retry loop, 155k backlog + 300ms locks under mixed workload (PlanetScale), hourly cleanup can't keep up and DELETE self-generates dead tuples; Retire's prefix certification is unproven at very long context and the obsolete-but-scheduled-kernel isolation surface is untested; StateWise is 150 cases / single source; per-call idempotency itself collapses during partial mutation.
+- **Updated** `index.md` — Queries 13→14, Total pages 3164→3165, Last updated 2026-10-09.
+- Wikilink targets verified post-write (0 broken). Tags validated against SCHEMA.md taxonomy. Committed only own files (working tree held unrelated sibling WIP; not staged, not stashed).
+
 ## [2026-10-08] query | hot-post (night slot): "The human gate is being retired" synthesis
 
 - **Created** `queries/2026-10-08-human-gate-retirement-synthesis.md` (type: query, confidence: medium). Night-slot contrarian angle; deliberately framed as the *unanswered side* of the 2026-10-05 night synthesis (`queries/2026-10-05-authority-converges-on-tool-call`) — that page settled *where* authority is enforced; this one asks what happens to the human.
