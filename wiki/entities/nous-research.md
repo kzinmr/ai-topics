@@ -1,7 +1,7 @@
 ---
 title: "Nous Research"
 created: 2026-05-14
-updated: 2026-05-28
+updated: 2026-10-08
 type: entity
 tags:
   - company
@@ -19,6 +19,9 @@ sources:
   - "https://github.com/NousResearch/hermes-agent-self-evolution"
   - "https://www.crunchbase.com/organization/nous-research"
   - "raw/papers/2025-08-25_2508.18255_hermes-4-technical-report.md"
+  - "raw/articles/2026-10-07_siliconangle_nous-research-90m-hermes-business.md"
+  - "https://www.wsj.com/pro/venture-capital/nous-research-scores-90-million-to-bring-open-source-ai-assistant-to-enterprises-516f9208"
+  - "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/"
 ---
 
 # Nous Research
@@ -27,7 +30,9 @@ sources:
 
 **Founders**: Jeffrey Quesnelle (CEO), Karan Malhotra, Ryan [[entities/teknium]] (Head of Post-Training), and Shivani Mitra.
 
-**Funding**: $65M total — $50M Series A led by Paradigm, plus $15M from Together AI, Distributed Global, North Island Ventures, Delphi Digital, and Solana co-founder Raj Gokal.
+**Funding**: $158M total — $90M Series B (Oct 2026, $1.5B valuation) led by Robot Ventures with Nvidia, Samsung, Y Combinator, Union Square Ventures, Menlo Ventures, and 1789 Capital (Donald Trump Jr. partner); $50M Series A led by Paradigm; $15M from Together AI, Distributed Global, North Island Ventures, Delphi Digital, and Solana co-founder Raj Gokal.
+
+**Revenue & Business Model** (Oct 2026): Open-source core (free) + three paid editions — **Hermes Cloud** (hosted consumer agents, zero-infra launch), **Hermes Business** and **Hermes Enterprise** (team-level token budgets, shared agent customizations, private/secure multi-step workflows). ~$36M annualized revenue by mid-September 2026, projected to pass $100M by end of 2026 (per WSJ). Hermes downloads: 24M+ (Oct 2026 company figure; tweet cited 22.7M), ~2.5% of global token consumption (company estimate). Series B proceeds fund the enterprise push ("Hermes for Businesses").
 
 **Focus areas**: model architecture, data synthesis, fine-tuning, reasoning, and decentralized training infrastructure.
 
