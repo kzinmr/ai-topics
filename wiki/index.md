@@ -945,7 +945,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2140 pages)
+## Concepts (2141 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2133,6 +2133,7 @@
 - [[concepts/in-process]] — in-process
 - [[concepts/in-process-sandbox]] — In-Process Sandbox
 - [[concepts/index-share]] — IndexShare
+- [[concepts/infinite-saas-factory]] — Infinite SaaS Factory — Nadella's thesis: Copilot as OS + governed headless foundation lets businesses generate SaaS modules via agents; more agents make systems of record more important (X Article, Oct 2026)
 - [[concepts/industrial-scale-distillation-attacks-accusation]] — Industrial-Scale Distillation Attacks Accusation — 2026 US-lab charge that Chinese labs clone frontier models via distillation at "industrial scale"; 3 conflated meanings (IP theft / safety laundering / export-control workaround); Anthropic→Alibaba + OpenAI→Moonshot incidents; attribution contested (confidence medium)
 - [[concepts/inference]] → [[concepts/inference/_index]] — Inference — LLM inference engine comparison; vLLM, SGLang, TGI, llama.cpp, and their trade-offs
 - [[concepts/inference-engine-security]] — Inference-Engine Security — LLM self-host exploitation surface

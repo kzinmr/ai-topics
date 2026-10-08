@@ -6497,3 +6497,9 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 ## 2026-10-08 — Ingest: Nous Research $90M Series B / revenue model
 - Saved raw article `raw/articles/2026-10-07_siliconangle_nous-research-90m-hermes-business.md` (SiliconANGLE + TechCrunch supplement; WSJ paywalled).
 - Updated `entities/nous-research.md`: Series B $90M @ $1.5B (Robot Ventures lead; Nvidia, Samsung, YC, USV, Menlo, 1789 Capital), total funding $158M, Hermes monetization model (Cloud/Business/Enterprise), $36M ARR mid-Sep → $100M projected EOY, 24M+ downloads, ~2.5 0lobal token share.
+
+## [2026-10-08] ingest | Nadella "The Infinite SaaS Factory" X Article
+- Saved raw article `raw/articles/2026-10-08_satyanadella_infinite-saas-factory.md` (X Article via xurl OAuth2, full 4.7K-char body; 2,042 bookmarks / 466K impressions).
+- Created `concepts/infinite-saas-factory.md`: head/headless/Microsoft IQ architecture, four core theses (systems-of-record gain value with agents; tokens only where intelligence adds value; personal software without fragmentation; reinvent systems of record), announcements (30+ Dynamics 365 Copilot skills, Copilot Managed Runtime), and critical reading of the vendor framing.
+- Updated `entities/satya-nadella.md`: new section, timeline row, cross-reference, source link; frontmatter updated/sources.
+- Cross-links added to `concepts/saas-agent-era.md` and `concepts/headless-saas.md`; index entry added (Concepts 2140→2141).

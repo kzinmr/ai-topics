@@ -109,3 +109,4 @@ This prediction suggests that only SaaS with strong "on-the-ground implementatio
 - [[concepts/enterprise-agents]] - Enterprise AI Agent adoption patterns
 - [[concepts/multi-agents/agent-executor]] - Agent execution architecture
 - [[concepts/agent-skills]] - Agent skill design and management
+- [[concepts/infinite-saas-factory]] - Nadella's "infinite SaaS factory": governed platform where businesses generate SaaS modules via agents (Oct 2026)

@@ -73,6 +73,7 @@ This reframes vertical SaaS (meeting notes, CRM, project management) as **unifie
 - [[concepts/ai-agent-memory-middleware]] — Persistent context for agent workflows
 - [[concepts/ai-organization]] — How organizations restructure around agent workforces
 - [[concepts/saas-apocalypse]] — Martin Alderson's analysis of SaaS disruption by agentic AI
+- [[concepts/infinite-saas-factory]] — Nadella's enterprise-incumbent version of "headless": governed SaaS generation on top of systems of record (Oct 2026)
 
 ## Sources
 
