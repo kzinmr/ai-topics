@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3163
-> Last updated: 2026-10-07
+> Total pages: 3164
+> Last updated: 2026-10-08
 
 ## Entities (938 pages)
 
@@ -3168,7 +3168,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (12 pages)
+## Queries (13 pages)
 
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
@@ -3181,4 +3181,5 @@
 - [[queries/wiki-graph-analysis-weekly-2026-09-25]] — Weekly Wiki Graph Analysis (2026-09-25) — 3,112 pages; 465 orphans (316 rich), 3,512 broken refs (context-engineering hub = 188), 8 unresolved dup groups + 48 dir-collision stubs, 2,230 stale; state snapshot persisted
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
+- [[queries/2026-10-08-human-gate-retirement-synthesis]] — 4 independent lines (ScaleX 33% approval rate, 115-practitioner survey, OverAct, PACE) converge: the human gate is structurally broken; human role contracts to post-hoc audit + scope-setting
 - [[queries/wiki-graph-analysis-weekly-2026-10-02]] — Weekly Wiki Graph Analysis (2026-10-02) — 3,120 pages; 6 top-level orphans, 0 ghost entries, 866 tags

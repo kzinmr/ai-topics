@@ -1,3 +1,15 @@
+## [2026-10-08] query | hot-post (night slot): "The human gate is being retired" synthesis
+
+- **Created** `queries/2026-10-08-human-gate-retirement-synthesis.md` (type: query, confidence: medium). Night-slot contrarian angle; deliberately framed as the *unanswered side* of the 2026-10-05 night synthesis (`queries/2026-10-05-authority-converges-on-tool-call`) — that page settled *where* authority is enforced; this one asks what happens to the human.
+- Convergence across 4 independent lines, all pointing at the same failure:
+  - `concepts/agent-human-oversight-failure` (ScaleX, Aug 2026) — ~33% of dangerous agent actions approved across 40,000+ runs / 409,000 decisions
+  - `concepts/practitioner-permission-decisions-agentic-assistants` (arXiv:2610.06047) — 18 interviews → 115-practitioner survey; "repeated yes ≠ consent"
+  - `concepts/overact-proactive-over-authorization` (arXiv:2610.01508) — 7 models / 4 families all exceed authorized scope; SelfAudit −43%
+  - `concepts/pace-provenance-aware-capability-enforcement` (arXiv:2610.01349) — 62/79 lowest ASR, ≤3pt utility loss, 0/30 adaptive attacks
+- Counter-evidence documented rather than smoothed over: APEX approval laundering via workflow memory (84.3% chained vs 17.4% merged) and its naive-defense capability collapse (86.7%→56.3%); ScaleX external-validity limits (game sim); OverAct deterministic scoring undercounts useful over-reach; PACE can't statically verify coarse effect schemas.
+- **Updated** `index.md` — Queries section 12→13, Total pages 3163→3164, Last updated 2026-10-08.
+- Wikilink targets verified post-write (0 broken). Tags validated against SCHEMA.md taxonomy before commit.
+
 ## [2026-10-08] ingest | blog-ingest run 20261008T100052Z
 
 - Script scan: 37 new articles detected across feeds; 20 surfaced to ingest stage; **18 saved** to `raw/articles/`, 2 unsaved.
