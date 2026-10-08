@@ -1,3 +1,11 @@
+## [2026-10-08] ingest | blog-ingest run 20261008T100052Z
+
+- Script scan: 37 new articles detected across feeds; 20 surfaced to ingest stage; **18 saved** to `raw/articles/`, 2 unsaved.
+- Checkpoint: `cron/data/blog_ingest/latest.json` (run_id 20261008T100052Z) for downstream `blog-triage`.
+- Notable captures (AI-adjacent): Sierra "Caller ID in the age of agents", Simon Willison on Claude Haiku 5.5, martinalderson on Shopify native + formal verification, Pluralistic "Disloyalty", Krebs on ShinyHunters/Boeing. General-interest: matklad "On Git Refs", nesbitt "Package Management RFCs", johndcook math trio, refactoringenglish "Anti-Patterns in Software Blogging", eli.thegreenplace Monte-Carlo simulations, Old New Thing ud0/ud1, plus misc (Swemak, Commodore/Max Toy, Jaguar Type 01 via Daring Fireball, Apple smart home via Bloomberg).
+- Unsaved: garymarcus.substack.com "Complementary remarks on OpenAI's math drop" (likely Substack fetch block) and daringfireball "Jaguar Type 01" (external insideevs link).
+- Hygiene: batch-committed 67 pending untracked raw files (this run's 18 articles + strays from earlier company-blog/newsletter captures) in one commit. No wiki pages created — triage is downstream.
+
 ## [2026-10-07] skeleton-enrich-daily | No skeletons found (clean run)
 
 - Searched all entity pages for `status: skeleton` via grep/search_files -> **0 matches**. All `build_x_wiki.py`-generated skeletons have been enriched in prior runs.
