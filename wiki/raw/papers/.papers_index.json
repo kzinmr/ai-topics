@@ -46,5 +46,10 @@
   "https://www.anthropic.com/aug-2026-risk-report": "2026-08-14_anthropic_rsp-risk-report.md",
   "arxiv:2608.05223": "2026-08-05_2608.05223_malicious-skill-files-coding-agents.md",
   "arxiv:2608.14221": "2026-08-14_2608.14221_mathform-autoformalization.md",
-  "arxiv:2504.09762": "2025-04-14_2504.09762_stop-anthropomorphizing-intermediate-tokens.md"
+  "arxiv:2504.09762": "2025-04-14_2504.09762_stop-anthropomorphizing-intermediate-tokens.md",
+  "arxiv:2609.11643": "raw/papers/2026-09-15_2609.11643_why-do-reasoning-models-fail.md",
+  "arxiv:2609.13775": "raw/papers/2026-09-17_2609.13775_epistemicalignment-benchmarking-epistemi.md",
+  "arxiv:2609.09192": "raw/papers/2026-09-11_2609.09192_memcollab-cross-memory-collaboration-via.md",
+  "arxiv:2608.22797": "raw/papers/2026-08-28_2608.22797_memory-burns-threats-controls-persistent.md",
+  "arxiv:2609.20812": "raw/papers/2026-09-25_2609.20812_verification-bottleneck-faithful-evaluat.md"
 }

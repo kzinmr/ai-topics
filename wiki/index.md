@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3165
+> Total pages: 3170
 > Last updated: 2026-10-09
 
 ## Entities (938 pages)
@@ -945,7 +945,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2141 pages)
+## Concepts (2146 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -973,6 +973,9 @@
 - [[concepts/agent-deployment-engineering]] — Agent Deployment Engineering (ADE) — Emerging role owning the technical build of production AI agents; introduced by Decagon (Aug 2026)
 - [[concepts/agent-distillation]] — Agent Distillation
 - [[concepts/adversarial-reasoning-distillation]] — Adversarial Reasoning Distillation — OpenAI Oct 2026 disruption of a coordinated campaign extracting *protected reasoning* (encrypted CoT replayed/transcribed cross-conversation); 16K reqs / 4K users, 15K+ users disrupted by Jul 28; core cluster attributed to Moonshot AI; corroborated by arXiv:2608.09867; warns portable/replayable reasoning artifacts share the risk (Oct 5)
+- [[concepts/budget-constrained-prm-evaluation]] — Budget-Constrained PRM Evaluation — faithful process-reward-model precision estimation under rate-limited verifiers via importance sampling; naive estimates overstate PRM quality (arXiv:2609.20812, Sep 2026)
+- [[concepts/cross-agent-memory-sharing]] — Cross-Agent Memory Sharing — MemCollab cross-memory collaboration at test time via CrossMemKG + test-time memory evolution; shared-memory compounding vs poisoning risk (arXiv:2609.09192, Sep 2026)
+- [[concepts/epistemic-transparency]] — Epistemic Transparency in LLMs — EpistemicAlignment benchmark & CAEP metric; models give confident compliant answers that hide ambiguity, compounded by sycophancy (arXiv:2609.13775, Sep 2026)
 - [[concepts/frontier-rl-safety-cases]] — Frontier RL Safety Cases — OpenAI proposal that aviation/nuclear-style *safety cases* gate frontier RL training runs: 3-layer technical stack (alignment w/ no-CoT-visible graders, containment, fail-closed monitoring) + operational vetoes/accountability + NTSB-style misalignment investigation (Oct 5)
 - [[concepts/agent-orchestration-runtime]] — Agent Orchestration Runtime — Turning agent orchestration into software engineering via a VM with persistent state, type guarantees, and control flow; Onyx VM by Random Labs
 - [[concepts/agent-plugins-1-0-0]] — Agent Plugins 1.0.0 — Open standard for portable AI agent component packages (portable skills/tools); backed by Vercel, AWS, Google, Microsoft, OpenAI; sits alongside MCP and A2A (Aug 2026)
@@ -1098,6 +1101,8 @@
 - [[concepts/openclaw/_index]] — OpenClaw — Concepts hub for OpenClaw sub-pages
 - [[concepts/post-training/_index]] — Post-Training — Concepts hub for post-training sub-pages (RLHF, distillation, …)
 - [[concepts/security-and-governance/_index]] — Agent Security and Governance — Concepts hub for security/governance sub-pages
+- [[concepts/persistent-memory-attack-surface]] — Persistent Memory Attack Surface — injection→storage→retrieval threat model for persistent agent memory; framework-agnostic; Memory Control Surface (6 controls) (arXiv:2608.22797, Aug 2026)
+- [[concepts/reasoning-instruction-following-failure]] — Reasoning vs Instruction-Following Failure — why reasoning models follow instructions worse; faithfulness drift, reasoning–answer divergence; self-faithfulness predicts instruction-following (arXiv:2609.11643, Sep 2026)
 - [[concepts/station-autonomous-math-discovery]] — Station — Decentralized multi-agent mathematical discovery; 5 literature-novel results on AlphaEvolve catalogue problems (arXiv:2608.23691)
 - [[concepts/system-architecture/_index]] — System Architecture — Concepts hub (overview)
 - [[concepts/training-infra/_index]] — AI Infrastructure Engineering — Concepts hub for training-infra sub-pages

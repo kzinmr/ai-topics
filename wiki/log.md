@@ -6510,3 +6510,11 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Wiki writes: none (report only; source pages carry full coverage and reciprocal cross-links already).
 - Dedup: saas-disruption / saas-agent-era / headless-saas / infinite-saas-factory / outcome-based-pricing — none used as primary in any prior hot-post. Distinct from 10-08 morning (UndoBench recovery gap), 10-06 morning (Pi Durable/Absurd durability substrates), 10-05 night (PACE/OverAct/Retire security-authority), 10-05 morning (provider-sealed-reasoning-blur), 10-04 morning (SourceLearn/Mem++), 10-03 late-night (comprehension-interface × human-sandwich).
 - Working tree: sibling pipelines hold ~20+ modified files; log entry committed by explicit path after `git reset -q`. Target pages verified byte-identical to HEAD before patching.
+
+## [2026-10-09] ingest | Active crawl: 5 arXiv papers (reasoning/eval + agent memory)
+- Themes: (1) reasoning-vs-instruction-following failure + epistemic transparency, (2) persistent/shared agent memory security, (3) budget-constrained PRM evaluation.
+- Sources (arXiv, recent): 2609.11643, 2609.13775, 2609.09192, 2608.22797, 2609.20812.
+- Raw (registered in .papers_index.json): 5 files under raw/papers/.
+- New concept pages: concepts/reasoning-instruction-following-failure.md, concepts/epistemic-transparency.md, concepts/cross-agent-memory-sharing.md, concepts/persistent-memory-attack-surface.md, concepts/budget-constrained-prm-evaluation.md.
+- index.md: +5 entries, total 3165->3170, concepts 2141->2146.
+- Note: existing concepts/evaluation/process-reward-models-agent-eval.md (arXiv-only AgentPRM) left as-is; budget-constrained-prm-evaluation cross-links to it as a methodological addition, not a competing source.
