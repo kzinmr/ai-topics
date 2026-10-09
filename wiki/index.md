@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3170
+> Total pages: 3173
 > Last updated: 2026-10-09
 
-## Entities (938 pages)
+## Entities (939 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -61,6 +61,7 @@
 - [[entities/andrew-ng]] — Andrew Ng — AI educator, DeepLearning.AI/LearnVector founder; AI Engineering Skills Map (4 core skills for all developers, 10K+ job postings analysis); ex-Google Brain, ex-Baidu, Coursera co-founder (Aug 2026)
 - [[entities/andriy-burkov]] — Andriy Burkov
 - [[entities/andy-nguyen]] — Founder & CEO of ByteRover, building an agentic memory layer for coding agents
+- [[entities/association-for-human-mathematics]] — Association for Human Mathematics (AHM) — mathematicians' advocacy group; Oct 7 2026 statement condemning OpenAI's 700-file AI-math dump as "a demonstration of power, not scholarship"
 - [[entities/anildash]] — Anil Dash; enriched with "How we'll fight the platform war against Big AI" — 4 tactics (disintermediation, provider portability, economic value destruction, channel anger) (June 24)
 - [[entities/ankur-goyal]] — Ankur Goyal
 - [[entities/anorth-chen]] — Ziyao 'North' Chen (@anorth_chen)
@@ -945,7 +946,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2146 pages)
+## Concepts (2148 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1011,6 +1012,7 @@
 - [[concepts/agent-sandbox-patterns]] — Agent Sandbox Patterns — Isolate-the-Tool vs Isolate-the-Agent; zero-secret agent + credential-holding control plane (Unikraft micro-VM); Browser Use production architecture (Feb 2026)
 - [[concepts/agent-security-patterns]] — Agent Security Patterns
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
+- [[concepts/academic-reception-of-ai-math]] — Academic reception of AI-generated mathematics — the Oct 2026 OpenAI math split: AHM's institutional objection + Karagila's "verification DoS" desk-rejection critique, vindicated by the 24-hour withdrawal cascade
 - [[concepts/adaptive-code-revision-attacks-pr-reviewers]] — AFCRA: attackers mine AI PR reviewers' own feedback to revise code so the reported issue is fixed but a vulnerability survives; AFCRA-Bench (159 vulns), success 2.5x/12.5x over text-only attacks vs Sonnet 5 / GPT-5.5 (arXiv:2610.05399, Oct 2026)
 - [[concepts/agent-slop]] — Agent Slop — the reliability gap between AI marketing claims and demonstrated capability; evals-as-evidence framing (created 2026-09-15)
 - [[concepts/agent-skills-skillmd]] — Agent Skills (SKILL.md)
@@ -2511,6 +2513,7 @@
 - [[concepts/openai/decisions-api]] — OpenAI Decisions API — Luna bounded judgments; DevDay preview and October 6 beta distinguished
 - [[concepts/openai/economic-futures-age-of-ai]] — OpenAI Foundation: Economic Futures in the Age of AI
 - [[concepts/openai/enterprise-adoption-patterns]] — OpenAI vs Anthropic Enterprise Adoption Patterns
+- [[concepts/openai/formal-math-publication-2026]] — OpenAI Formal Mathematics Publication Program — 722 Lean 4 papers / 8,290 theorems / 1,563 open problems via GPT-5.6-Codex across ~400,000 worker sessions; DeepMind resolved 677/722; 3 withdrawals + 14 repairs within 24h
 - [[concepts/openai/frontier-governance-framework]] — OpenAI Frontier Governance Framework
 - [[concepts/openai/how-organizations-use-ai-evidence-from-chatgpt]] — How Organizations Use AI: Evidence from ChatGPT (OpenAI working paper)
 - [[concepts/openai/index]] — OpenAI Platform & APIs
