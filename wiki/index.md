@@ -200,7 +200,7 @@
 - [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24); Fast regex search research — client-side n-gram indexing for agent grep (Mar 2026); MXFP8 MoE training kernels — 3.5x MoE layer / 1.5x end-to-end speedup on Blackwell (Aug 2025)
 - [[entities/cyrilxbt]] — @cyrilxbt
 - [[entities/dan-luu]] — Software reliability engineer and data analyst known for systematic incident analysis and empirical studies of tech c... (non-AI essay catalog includes cgroup throttling + normalization of deviance, Aug 2026)
-- [[entities/dan-mcinerny]] — Dan McInerney
+- [[entities/dan-mcinerny]] — Dan McInerney — security engineer turned agent-harness builder; Architect Loop (Fable 5 + Codex cross-vendor loop), Orchflows; ex-author of Kali pentesting tools (wifijammer, net-creds)
 - [[entities/dan-shipper]] — Dan Shipper — CEO of Lex (formerly Lex.page); writer on AI productivity, agent workflows
 - [[entities/daniel-de-laney]] — Daniel De Laney
 - [[entities/daniel-han]] — Daniel Han — Co-founder & CEO of Unsloth AI (YC S24); 2-30x faster LLM fine-tuning, Kimi K3 & DeepSeek-V4-Flash GGUF quants, Inkling 1-bit GGUF, Unsloth Studio

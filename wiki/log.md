@@ -1,3 +1,10 @@
+## [2026-10-09] enrichment | dan-mcinerny (backfill of existing stub)
+
+- **Enriched** `entities/dan-mcinerny.md` (stub → ~7KB full profile). Skeleton-enrichment-daily cron; found the page already existed as a stub (created 2026-06-14 alongside concepts/architect-loop) despite the skeleton scan reporting 0 skeleton pages — stub had no `status: skeleton` marker but was a bare link list.
+- Sources verified live: GitHub API profile + 105-repo inventory, mcinerney.ai blog index, orchflows README, xurl X timeline scan (user ID 146279340).
+- Key content: career arc Kali pentesting (wifijammer 4.3k★, net-creds 1.9k★, icebreaker) → 5-year UFC/MMA prediction modeling (mma-ai.net) → agent harness engineering (2025+). Architect Loop (626★, origin: @jumperz X post), Orchflows (2-skill composable workflow library), Gauntlet loop, agent-swarms research review (Sep 2026). Pentest mindset as design philosophy: frozen gates, "builder claims are hearsay", benchmark-driven adoption (SWE-bench Pro, Terminal-Bench).
+- Updated index.md description; added bidirectional cross-ref in concepts/architect-loop.md.
+
 ## [2026-10-09] query | hot-post (late-night slot): "Crash-consistent agent" synthesis
 
 - **Created** `queries/2026-10-09-crash-consistent-agent-synthesis.md` (type: query, confidence: medium). Late-night niche/high-signal angle: the effect-integrity gap in agent execution, deliberately kept off the human-governance axis used by the 2026-10-05 and 2026-10-08 night syntheses.

@@ -107,6 +107,7 @@ The split aligns with available benchmarks: GPT-5.5 leads Terminal-Bench 2.0 (82
 
 ## Related Concepts
 
+- [[entities/dan-mcinerny|Dan McInerney]] — Creator of Architect Loop; also built Orchflows on the same verify-don't-trust philosophy
 - [[concepts/claude/fable-5|Claude Fable 5]] — The architect model used in this loop
 - [[entities/codex|OpenAI Codex]] — The builder tool (GPT-5.5 via `codex exec`)
 - [[concepts/coding-agents/coding-agents]] — Broader coding agent ecosystem
