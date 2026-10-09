@@ -1,7 +1,7 @@
 ---
 title: LightOn
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-10-09
 type: entity
 tags:
   - company
@@ -43,6 +43,19 @@ LightOn is a French enterprise AI company founded in 2016 by **Igor Carron** and
 - **ColBERT-Zero**: Unsupervised ColBERT model, prior SOTA at 55.32
 - **[[concepts/gte-moderncolbert|GTE-ModernColBERT-v1]]**: First SOTA late interaction model trained on PyLate, 8K context, BEIR 54.75 (2025)
 
+### OCR (Open Source, Apache 2.0)
+
+- **LightOnOCR-3** (Oct 8, 2026): family of lightweight high-performance OCR models in three
+  sizes (0.8B / 1B / 4B; the 1B keeps the previous architecture, 0.8B and 4B adopt the Qwen3.5
+  vision-language architecture). A single model outputs page transcription *and* — via a
+  `grounding` prompt mode — labeled bounding boxes (coords normalized 0–1000), image
+  descriptions, and chart data extracted as HTML tables, positioning itself as a ready-to-use
+  replacement for complex document-understanding pipelines. The release post details the SFT
+  data mixture, an iteratively built grounding/bounding-box data pipeline, and an RL stage with
+  manually verified data and checkpoint averaging.
+  Sources: [HF blog](https://huggingface.co/blog/lightonai/lightonocr-3),
+  [[raw/articles/huggingface.co--lightonocr-3-ocr-layout--2026-10-08.md]]
+
 ### Tools & Libraries
 
 - **PyLate**: Flexible training and retrieval library for late interaction models (CIKM 2025). Train SOTA retrieval on MS MARCO in <2 hours with ~80 lines of code.
@@ -63,4 +76,4 @@ LightOn is a French enterprise AI company founded in 2016 by **Igor Carron** and
 
 - **Key researchers**: Antoine Chaffin, Benjamin Clavié (Mixedbread AI collaborator)
 - **Peers**: [[entities/mistral-ai|Mistral AI]], Aleph Alpha (European data-sovereignty AI)
-- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[concepts/evaluation/longembed|LongEmbed]], [[concepts/embeddings|Embeddings]]
+- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[concepts/evaluation/longembed|LongEmbed]], [[entities/embeddings|Embeddings]]

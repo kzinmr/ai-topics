@@ -1,3 +1,13 @@
+## [2026-10-09] ingestion | x-accounts-scan: Codex voice-mode build, LightOnOCR-3, OpenCode iOS beta
+
+- **Source**: `x-accounts-scan` cron (5 new posts from simonw ×3, tomaarsen, thdxr).
+- **Saved raw**: `raw/articles/simonwillison.net--built-using-my-voice--2026-10-09.md` (Codex voice mode / GPT-6 Astra High blog-feature build), `raw/articles/huggingface.co--lightonocr-3-ocr-layout--2026-10-08.md` (LightOn OCR+layout model family).
+- **Updated** `entities/simon-willison.md` — new section "Blog built by voice with Codex voice mode (Oct 9)": voice-driven Django feature build while cooking, live visual preview loop, model self-discovered Substack undocumented archive API, typed PR review finish; conclusion "better for multi-tasking than as a daily driver".
+- **Updated** `entities/lighton.md` — new OCR section: LightOnOCR-3 (0.8B/1B/4B, Qwen3.5 VLM arch on 0.8B/4B, grounding prompt mode → labeled bboxes 0–1000 + image descriptions + chart HTML tables, Apache 2.0, SFT+RL pipeline details).
+- **Updated** `entities/tom-aarsen.md` — LightOnOCR-3 benchmark-figure legend bug spot (Oct 8), informal HF-community review example.
+- **Updated** `entities/opencode.md` — iOS app TestFlight beta slots opened by @thdxr (Oct 9).
+- Skipped: simonw proofreading-prompt reply (links to his existing guides page, low novelty), simonw PR-reply (covered by the voice-mode article).
+
 ## [2026-10-09] enrichment | dan-mcinerny (backfill of existing stub)
 
 - **Enriched** `entities/dan-mcinerny.md` (stub → ~7KB full profile). Skeleton-enrichment-daily cron; found the page already existed as a stub (created 2026-06-14 alongside concepts/architect-loop) despite the skeleton scan reporting 0 skeleton pages — stub had no `status: skeleton` marker but was a bare link list.

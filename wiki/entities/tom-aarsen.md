@@ -3,7 +3,7 @@ title: Tom Aarsen
 type: entity
 handle: "@tomaarsen"
 created: 2026-04-10
-updated: 2026-09-07
+updated: 2026-10-09
 tags:
   - person
   - model
@@ -143,6 +143,14 @@ multimodal-native, multilingual encoders (Apache 2.0), fine-tunable with Sentenc
 Transformers. He credited model authors @tonywu_71 and @Aurelien_L_, and pointed
 developers at the H Company blog post covering architecture, training, and retrieval
 results ("or point your Agent at the URL"). See [[events/neomme-release-sep-2026]].
+
+### LightOnOCR-3 figure bug spot (Oct 8, 2026)
+
+Aarsen caught and publicly confirmed a small bug in LightOn's LightOnOCR-3 release post — the
+benchmark figure's legend listed LightOnOCR-2 but the plotted bars omitted it — engaging directly
+with the authors on X to confirm it was a plotting issue rather than a results problem. A nice
+example of the HF maintainer community providing informal review on release posts.
+See [[entities/lighton]] (LightOnOCR-3). Source: [tweet](https://x.com/tomaarsen/status/2108277298743173616).
 
 ## X Activity Themes
 

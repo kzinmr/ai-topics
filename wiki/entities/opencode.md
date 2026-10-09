@@ -1,7 +1,7 @@
 ---
 title: OpenCode
 created: 2026-04-30
-updated: 2026-05-27
+updated: 2026-10-09
 type: entity
 tags:
   - product
@@ -103,6 +103,7 @@ Native Language Server Protocol support for 20+ languages — enables semantic c
 - **OpenCode Zen** — Experimental simplified interface
 - **OpenCode Enterprise** — Self-hosted deployment
 - **Desktop app** — Native Tauri desktop with VS Code extension
+- **iOS app (TestFlight beta)** — as of Oct 9, 2026, Dax Raad opened up additional TestFlight slots for the OpenCode iOS app ([beta link](https://testflight.apple.com/join/EnFsKYQ1)), extending OpenCode from terminal/desktop to mobile.
 
 ## Why Ramp Chose OpenCode
 
