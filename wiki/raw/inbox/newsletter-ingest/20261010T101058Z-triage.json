@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "run_id": "20261010T101058Z",
+  "triaged_at": "2026-10-10T10:20:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 4,
+  "recommend_wiki_ingest_count": 3,
+  "items": [
+    {
+      "message_id": "<20261010003126.3.e6c440d09741e025@mg-d1.substack.com>",
+      "subject": "Why AlphaFold Didn't Solve Protein Folding — Pushmeet Kohli, Google DeepMind & Sal Candido, Biohub",
+      "date": "2026-10-10",
+      "sender": "Latent Space / swyx (podcast)",
+      "source_label": "uid=771",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-10-why-alphafold-didn-t-solve-protein-folding-pushmeet-kohli-google-deepmind-sal-ca.md",
+      "canonical_url": "https://www.latent.space/p/biohub-deepmind",
+      "importance": "critical",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "entities/google-deepmind",
+        "entities/pushmeet-kohli",
+        "entities/biohub",
+        "entities/sal-candido",
+        "entities/alphafold",
+        "concepts/ai-for-science",
+        "concepts/protein-structure-prediction"
+      ],
+      "tags": ["newsletter", "podcast", "latent-space", "ai-for-science", "google-deepmind", "alphafold", "protein-folding", "biology", "drug-discovery"],
+      "newsjacking_score": 5,
+      "rationale": "Latent Space の podcast 回。タイトルが強い Contrarian Insight（'AlphaFold はタンパク質フォールディングを解いていない'）で、Google DeepMind の Pushmeet Kohli（Gemini for Science / AlphaFold 後継路線を率いる研究リーダー）と Biohub の Sal Candido をゲストに持つ。ai-for-science という wiki 未整備の重要論点と、AlphaFold・DeepMind という既収録エンティティの両方に直結する。既存 wiki に alphafold / google-deepmind / ai-for-science の dedicated ページが欠けており、収録でギャップを埋める価値が高い。Polarizing Promise + In-Group Signal（AlphaFold=解けた、という通念への反論）も該当。",
+      "external_article_count": 20,
+      "notes": "canonical は open.substack.com/pub/swyx/p/biohub-deepmind → www.latent.space/p/biohub-deepmind（ファイル内 slug から確定）。podcast ゲスト主体のため references/podcast-guest-entity-creation.md 参照。Pushmeet Kohli / Biohub / Sal Candido の既存 entity 有無を wiki-ingest 段階で要確認（現時点で未収録）。AlphaFold は entities/deepmind.md 内に記述がある可能性があるが dedicated ページ無し。"
+    },
+    {
+      "message_id": "<20261010064557.3.8a59b2a88baa4792@mg-d0.substack.com>",
+      "subject": "[AINews] TypeSafe/Jev at >$100M ARR, $7.5B valuation 3 weeks after launch",
+      "date": "2026-10-10",
+      "sender": "AINews / Latent Space (swyx)",
+      "source_label": "uid=772",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-10-ainews-typesafe-jev-at-100m-arr-7-5b-valuation-3-weeks-after-launch.md",
+      "canonical_url": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b",
+      "importance": "high",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "entities/type-safe",
+        "entities/latent-space",
+        "concepts/ai-coding-agents",
+        "concepts/ai-startup-valuations"
+      ],
+      "tags": ["newsletter", "ai-news-digest", "ainews", "latent-space", "ai-agents", "ai-coding", "startups", "ai-economics", "type-safe"],
+      "newsjacking_score": 4,
+      "rationale": "AINews 日次ダイジェストだが、ヘッドラインが単独で強いニュース：TypeSafe（Jev、AI コード品質/型安全性エージェント）がローンチ 3週間で $100M ARR 超え・評価額 $7.5B。これは AI コーディングエージェントの商業的ブレイクスルーと異常な立ち上げ速度を示す Trend Surfing + In-Group Signal で、wiki の ai-agents / ai-coding-agents / AI スタートアップ経済スコープに直撃。既存 concepts に sgnt-jev-article.md があり Jev 系の記述が既にある可能性 — 統合先を要確認。日次 AINews 本文自体はリンクダム寄りなので、TypeSafe/Jev の事実核だけを抽出して entity/concept に反映する運用が適切。",
+      "external_article_count": 20,
+      "notes": "canonical は open.substack.com/pub/swyx/p/ainews-typesafejev-at-100m-arr-75b → www.latent.space/p/...。entity 'type-safe' は未収録。concepts/sgnt-jev-article.md（既存）と重複・関連の可能性が高いので wiki-ingest 段階で先に read_file すること（rich page 上書き禁止）。"
+    },
+    {
+      "message_id": "<20261009213347.3.e34149681870f506@mg2.substack.com>",
+      "subject": "I expect rapid progress but not towards general superintelligence",
+      "date": "2026-10-09",
+      "sender": "Interconnects (Nathan Lambert)",
+      "source_label": "uid=770",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-09-i-expect-rapid-progress-but-not-towards-general-superintelligence.md",
+      "canonical_url": "https://www.interconnects.ai/p/i-expect-rapid-progress-but-not-towards",
+      "importance": "high",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "concepts/superintelligence",
+        "concepts/scaling-laws",
+        "concepts/agi",
+        "entities/nathan-lambert",
+        "entities/interconnects"
+      ],
+      "tags": ["newsletter", "interconnects", "nathan-lambert", "agi", "superintelligence", "scaling-laws", "ai-frontier", "opinion"],
+      "newsjacking_score": 4,
+      "rationale": "Interconnects（Nathan Lambert = AI2 / RLHF・後訓練の著名研究者）による AGI/_superintelligence 懐疑論エッセイ。'急速な進歩はexpected だが general superintelligence への道ではない' という contrarian 立場で、wiki 中核の superintelligence / scaling-laws / AGI 議論スコープに直撃。既存 concepts/superintelligence.md は 20 行と薄く、recursive-superintelligence.md / personal-superintelligence.md も存在するため、この反論視点を対立意見（contested）として追記する価値が高い。Polarizing Promise + Contrarian Insight + In-Group Signal すべて該当。",
+      "external_article_count": 13,
+      "notes": "canonical は paywall リンクの next パラメータから www.interconnects.ai/p/i-expect-rapid-progress-but-not-towards と確定（curl 不要）。公開範囲は無料/有料混在の可能性あり、wiki-ingest で本文取得を試みること。Nathan Lambert / Interconnects の既存 entity 有無を要確認。"
+    },
+    {
+      "message_id": "<20261009.190449.4a934ed9@mta10>",
+      "subject": "🫂 Anthropic Says Stop Being Cruel to Claude",
+      "date": "2026-10-09",
+      "sender": "Superintelligence (beehiiv)",
+      "source_label": "uid=769",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-09-anthropic-says-stop-being-cruel-to-claude.md",
+      "canonical_url": null,
+      "importance": "low",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": false,
+      "suggested_targets": [
+        "entities/anthropic",
+        "concepts/ai-safety"
+      ],
+      "tags": ["newsletter", "beehiiv", "anthropic", "claude", "ai-safety", "ai-culture"],
+      "newsjacking_score": 2,
+      "rationale": "Superintelligence（beehiiv）の号。タイトルは Anthropic の Claude に対するユーザー言動に関する話題（'Stop Being Cruel to Claude'）を示唆し、AI safety/カルチャー/モデル振る舞いの観点で周辺的に wiki 関連。ただし beehiiv リンクが全件 403 で解決不可、内容の確度が低い。単独の強い wiki 対象としては弱い（entities/anthropic.md は862行のリッチページで、追記は局所的な追補程度）。収録は任意。",
+      "external_article_count": 20,
+      "notes": "全20リンクが link.mail.beehiiv.com/v2/c/ 形式。代表1リンクを curl したが HTTP 403（Cloudflare challenge）。前回 triage（20261009）と同様の pitfall — タイトルと送信元のみで分類。正式な本文は wiki-ingest 段階で web_search（'Anthropic stop being cruel to Claude'）による補完が必須。"
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 2,
+    "low": 1,
+    "ingest_recommended": [
+      "uid=771 Latent Space podcast (AlphaFold/DeepMind/Biohub — AI for science, Pushmeet Kohli)",
+      "uid=772 AINews (TypeSafe/Jev $100M ARR $7.5B — AI coding agent economics)",
+      "uid=770 Interconnects / Nathan Lambert (rapid progress ≠ general superintelligence — AGI skepticism)"
+    ],
+    "skip_or_optional": [
+      "uid=769 Superintelligence/beehiiv (Anthropic 'Stop Being Cruel to Claude' — 403, low confidence)"
+    ],
+    "url_resolution_notes": "Substack 3件の canonical をファイル内 slug / paywall next パラメータから確定（curl 不要）：latent.space/p/biohub-deepmind, latent.space/p/ainews-typesafejev-at-100m-arr-75b, interconnects.ai/p/i-expect-rapid-progress-but-not-towards。beehiiv（uid=769）は link.mail.beehiiv.com 全リンク HTTP 403（Cloudflare）で解決不可、superintelligence.ai もこの環境から接続不能 — タイトル/送信元のみで分類。"
+  }
+}
