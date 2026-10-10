@@ -10,7 +10,7 @@ confidence: low
 related:
   - concepts/evaluation/reward-engineering
   - concepts/recursive-self-improvement
-  - concepts/reward-hacking
+  - concepts/evaluation/reward-hacking
   - concepts/retrieval-credit-for-search-agents
 aliases:
   - self-evolving rewards

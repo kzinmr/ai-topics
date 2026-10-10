@@ -37,7 +37,7 @@ The method has two halves, matching its title:
 1. **Constructing retrieval credit** — define, per retrieval action, a measurable quantity capturing how much the documents it surfaced moved the agent toward a correct answer (a grounded, per-step signal rather than a global verdict).
 2. **Assigning retrieval credit** — propagate that per-step signal back into the training objective so good retrieval behavior is reinforced and wasteful/misleading retrieval is discouraged, independent of the final outcome.
 
-This turns a sparse, delayed outcome reward into a **denser process reward over retrieval decisions** — conceptually a process-reward-model idea specialized to the retrieval action space (cf. [[concepts/evaluation/process-reward-models-agent-eval]]).
+This turns a sparse, delayed outcome reward into a **denser process reward over retrieval decisions** — conceptually a process-reward-model idea specialized to the retrieval action space (cf. [[concepts/evaluation/process-reward-models-agent-eval]]). The same page's sibling concern — what it *costs* to verify those per-step judgements faithfully — is [[concepts/budget-constrained-prm-evaluation]].
 
 ## Why it matters
 

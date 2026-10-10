@@ -10,7 +10,7 @@ confidence: medium
 related:
   - concepts/post-training/on-policy-distillation
   - concepts/adversarial-reasoning-distillation
-  - [[concepts/evaluation/reward-engineering]]
+  - concepts/evaluation/reward-engineering
   - concepts/post-training/rlhf
 ---
 
@@ -42,7 +42,7 @@ This is a **plug-in loss reweighting**, not a new sampling or teacher architectu
 
 ## Position in the OPD landscape
 
-OPD sits between [[concepts/reinforcement-learning|RL post-training]] and classical (off-policy) distillation: it gets teacher guidance (like distillation) on the student's own distribution (like RL, avoiding the train/rollout mismatch that plagues SFT). DIAL and MetaOPD are refinements of the *signal allocation* within that slot — orthogonal to the teacher's capability or the reward design (cf. [[[[concepts/evaluation/reward-engineering]]]], [[concepts/rewardweaver-self-evolving-rewards]]). Reasoning-token emphasis also connects to the "extract reusable reasoning strategies" theme in [[concepts/adversarial-reasoning-distillation]].
+OPD sits between [[concepts/reinforcement-learning|RL post-training]] and classical (off-policy) distillation: it gets teacher guidance (like distillation) on the student's own distribution (like RL, avoiding the train/rollout mismatch that plagues SFT). DIAL and MetaOPD are refinements of the *signal allocation* within that slot — orthogonal to the teacher's capability or the reward design (cf. [[concepts/evaluation/reward-engineering]], [[concepts/rewardweaver-self-evolving-rewards]]). Reasoning-token emphasis also connects to the "extract reusable reasoning strategies" theme in [[concepts/adversarial-reasoning-distillation]].
 
 ## Open questions
 
@@ -54,5 +54,5 @@ OPD sits between [[concepts/reinforcement-learning|RL post-training]] and classi
 
 - [[concepts/post-training/on-policy-distillation]] — the base paradigm both methods refine.
 - [[concepts/adversarial-reasoning-distillation]] — reasoning-signal extraction, complementary theme.
-- [[[[concepts/evaluation/reward-engineering]]]] / [[concepts/rewardweaver-self-evolving-rewards]] — signal-shaping siblings in post-training.
+- [[concepts/rewardweaver-self-evolving-rewards]] — signal-shaping sibling: reward that co-evolves with the policy.
 - [[concepts/post-training/rlhf]] — the broader post-training context OPD sits in.

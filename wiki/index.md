@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3179
+> Total pages: 3180
 > Last updated: 2026-10-10
 
 ## Entities (939 pages)
@@ -946,7 +946,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2154 pages)
+## Concepts (2155 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1111,6 +1111,7 @@
 - [[concepts/security-and-governance/_index]] — Agent Security and Governance — Concepts hub for security/governance sub-pages
 - [[concepts/persistent-memory-attack-surface]] — Persistent Memory Attack Surface — injection→storage→retrieval threat model for persistent agent memory; framework-agnostic; Memory Control Surface (6 controls) (arXiv:2608.22797, Aug 2026)
 - [[concepts/reasoning-instruction-following-failure]] — Reasoning vs Instruction-Following Failure — why reasoning models follow instructions worse; faithfulness drift, reasoning–answer divergence; self-faithfulness predicts instruction-following (arXiv:2609.11643, Sep 2026)
+- [[concepts/signal-allocation-in-post-training]] — Signal Allocation in Post-Training — 4-paper Oct 2026 cluster on which token/restep/reward gets the gradient (DIAL, retrieval credit, RewardWeaver, budget-constrained PRM eval)
 - [[concepts/station-autonomous-math-discovery]] — Station — Decentralized multi-agent mathematical discovery; 5 literature-novel results on AlphaEvolve catalogue problems (arXiv:2608.23691)
 - [[concepts/system-architecture/_index]] — System Architecture — Concepts hub (overview)
 - [[concepts/training-infra/_index]] — AI Infrastructure Engineering — Concepts hub for training-infra sub-pages

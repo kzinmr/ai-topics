@@ -1,12 +1,12 @@
 ---
 title: "Budget-Constrained PRM Evaluation"
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-10
 type: concept
 tags: [evaluation, verification, benchmark, reasoning, llm-as-judge]
 sources:
   - raw/papers/2026-09-25_2609.20812_verification-bottleneck-faithful-evaluat.md
-related: [process-reward-models-agent-eval, formal-verification-llm-agents, llm-as-judge, agent-evaluation-methodology, reasoning]
+related: [concepts/evaluation/process-reward-models-agent-eval, concepts/formal-verification-llm-agents, concepts/evaluation/llm-as-judge, concepts/evaluation/agent-evaluation-methodology, concepts/epistemic-transparency]
 confidence: medium
 aliases: ["faithful PRM evaluation", "rate-limited verifier evaluation", "importance sampling PRM", "verification bottleneck"]
 ---
@@ -46,13 +46,13 @@ biases *which examples get graded*, your reported metric is biased unless you re
 
 ## Why This Matters to the Wiki
 
-This is the *statistical hygiene* companion to [[process-reward-models-agent-eval]] (which
+This is the *statistical hygiene* companion to [[concepts/evaluation/process-reward-models-agent-eval]] (which
 existing page is built on arXiv-only AgentPRM/ThinkPRM sources; this budget-aware evaluation
 paper is a methodological addition, not a competing source). It also connects to
-[[formal-verification-llm-agents]] (the cost of verifying agent claims is the real bottleneck in agent
-deployment) and to [[llm-as-judge]] — both about the economics of grading. The
+[[concepts/formal-verification-llm-agents]] (the cost of verifying agent claims is the real bottleneck in agent
+deployment) and to [[concepts/evaluation/llm-as-judge]] — both about the economics of grading. The
 importance-sampling trick is directly reusable for online guardrail evals like the CAEP metric
-in [[epistemic-transparency]].
+in [[concepts/epistemic-transparency]].
 
 ## Open Questions
 
@@ -62,8 +62,7 @@ in [[epistemic-transparency]].
 
 ## Related
 
-- [[process-reward-models-agent-eval]] — the PRM paradigm this evaluates faithfully
-- [[formal-verification-llm-agents]] — verification cost as the deployment bottleneck
-- [[llm-as-judge]] — economics of expensive graders
-- [[llm-as-judge]] — same bias risk in judge-based evals
-- [[agent-evaluation-methodology]] — how evals can mislead about real capability
+- [[concepts/evaluation/process-reward-models-agent-eval]] — the PRM paradigm this evaluates faithfully
+- [[concepts/formal-verification-llm-agents]] — verification cost as the deployment bottleneck
+- [[concepts/evaluation/llm-as-judge]] — economics of expensive graders; same selection-bias risk
+- [[concepts/evaluation/agent-evaluation-methodology]] — how evals can mislead about real capability
