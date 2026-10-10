@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3173
-> Last updated: 2026-10-09
+> Total pages: 3179
+> Last updated: 2026-10-10
 
 ## Entities (939 pages)
 
@@ -946,7 +946,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2148 pages)
+## Concepts (2154 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -976,7 +976,9 @@
 - [[concepts/adversarial-reasoning-distillation]] — Adversarial Reasoning Distillation — OpenAI Oct 2026 disruption of a coordinated campaign extracting *protected reasoning* (encrypted CoT replayed/transcribed cross-conversation); 16K reqs / 4K users, 15K+ users disrupted by Jul 28; core cluster attributed to Moonshot AI; corroborated by arXiv:2608.09867; warns portable/replayable reasoning artifacts share the risk (Oct 5)
 - [[concepts/budget-constrained-prm-evaluation]] — Budget-Constrained PRM Evaluation — faithful process-reward-model precision estimation under rate-limited verifiers via importance sampling; naive estimates overstate PRM quality (arXiv:2609.20812, Sep 2026)
 - [[concepts/cross-agent-memory-sharing]] — Cross-Agent Memory Sharing — MemCollab cross-memory collaboration at test time via CrossMemKG + test-time memory evolution; shared-memory compounding vs poisoning risk (arXiv:2609.09192, Sep 2026)
+- [[concepts/dial-metaopd-token-selection-opd]] — DIAL & MetaOPD — Token Selection in On-Policy Distillation; divergence-based reweighting (down-weight mastered tokens) + cold-start fix for OPD reasoning post-training
 - [[concepts/epistemic-transparency]] — Epistemic Transparency in LLMs — EpistemicAlignment benchmark & CAEP metric; models give confident compliant answers that hide ambiguity, compounded by sycophancy (arXiv:2609.13775, Sep 2026)
+- [[concepts/flow-language-models]] — Flow Language Models (FLMs) — continuous-state non-autoregressive text models; superposition over candidates beats discrete diffusion at few denoising steps on reasoning
 - [[concepts/frontier-rl-safety-cases]] — Frontier RL Safety Cases — OpenAI proposal that aviation/nuclear-style *safety cases* gate frontier RL training runs: 3-layer technical stack (alignment w/ no-CoT-visible graders, containment, fail-closed monitoring) + operational vetoes/accountability + NTSB-style misalignment investigation (Oct 5)
 - [[concepts/agent-orchestration-runtime]] — Agent Orchestration Runtime — Turning agent orchestration into software engineering via a VM with persistent state, type guarantees, and control flow; Onyx VM by Random Labs
 - [[concepts/agent-plugins-1-0-0]] — Agent Plugins 1.0.0 — Open standard for portable AI agent component packages (portable skills/tools); backed by Vercel, AWS, Google, Microsoft, OpenAI; sits alongside MCP and A2A (Aug 2026)
@@ -1049,6 +1051,7 @@
 - [[concepts/agents-md-evaluation]] — AGENTS.md Evaluation — Do Context Files Help Coding Agents?
 - [[concepts/agents-planning-orchestration]] — Agents Planning Orchestration
 - [[concepts/agents-scaffolding-composition-inference-scaling-hypothesis]] — Agents Scaffolding Composition Inference Scaling Hypothesis
+- [[concepts/generative-ui-harness]] — Generative UI Harness (GenOps) — data-aware runtime control plane deriving agent UIs from tool schema + value lineage; 100% value-propagation, 8.7x interaction efficiency
 - [[concepts/harness-learning]] — Train a proposer to revise a solver's harness via RL; harness revision ≈ weight update, adapting at test time without parameter updates (arXiv:2609.35738)
 - [[concepts/agents-self-improvement-learning]] — Agents Self Improvement Learning
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves
@@ -1101,7 +1104,10 @@
 - [[concepts/model-hardware-standard]] — Model Hardware Standard (MHS) — Anthropic spec for AI agents operating lab/manufacturing hardware; MCP-accessible, open-source planned (Aug 2026)
 - [[concepts/multi-agents/_index]] — Agent Team / Swarm — Concepts hub for multi-agent sub-pages
 - [[concepts/openclaw/_index]] — OpenClaw — Concepts hub for OpenClaw sub-pages
+- [[concepts/plan-and-patch-dllm-agentic-planning]] — Plan-and-Patch — dLLM agentic planning via parallel unmask + localized plan repair; 53.7% vs 27.0% plan-repair, 39-46% lower latency vs AR planners
 - [[concepts/post-training/_index]] — Post-Training — Concepts hub for post-training sub-pages (RLHF, distillation, …)
+- [[concepts/rewardweaver-self-evolving-rewards]] — RewardWeaver (Self-Evolving Reward Adaptation) — reward signal that co-evolves with the policy across training rounds to resist saturation and reward hacking
+- [[concepts/retrieval-credit-for-search-agents]] — Retrieval Credit for Search Agents — process-level credit assignment for individual retrieval steps in deep-research agent RL, beyond sparse outcome rewards
 - [[concepts/security-and-governance/_index]] — Agent Security and Governance — Concepts hub for security/governance sub-pages
 - [[concepts/persistent-memory-attack-surface]] — Persistent Memory Attack Surface — injection→storage→retrieval threat model for persistent agent memory; framework-agnostic; Memory Control Surface (6 controls) (arXiv:2608.22797, Aug 2026)
 - [[concepts/reasoning-instruction-following-failure]] — Reasoning vs Instruction-Following Failure — why reasoning models follow instructions worse; faithfulness drift, reasoning–answer divergence; self-faithfulness predicts instruction-following (arXiv:2609.11643, Sep 2026)

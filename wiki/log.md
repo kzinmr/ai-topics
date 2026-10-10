@@ -6557,3 +6557,16 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Wiki writes: none (report only; source pages carry full coverage + reciprocal links).
 - Dedup: reward-hacking-research-agents / agent-overclaiming / architect-loop never used as primary in any prior hot-post. Distinct from 10-10 late-night (formal-math withdrawal cluster), 10-09 morning (SaaS/SoR), 10-09 night (reasoning tax), 10-08 morning (UndoBench), 10-06 morning (Pi Durable), 10-05 night (PACE/OverAct/Retire). agent-slop / instrumental-monitor-evasion appear as supporting cross-links only.
 - Working tree: 201 modified files from sibling pipelines (confirmed via `git diff --name-only` after `git update-index --refresh`); log entry committed by explicit path after `git reset -q`.
+
+## [2026-10-10] ingest | Active crawl: non-AR reasoning, reward co-evolution, retrieval credit, GenUI harness
+- 6 raw papers saved to raw/papers/ (arXiv Atom API) and registered in .papers_index.json.
+- New concept pages (all under concepts/, cross-linked, wikilinks verified, tags validated):
+  - concepts/flow-language-models.md (arXiv:2610.09416)
+  - concepts/plan-and-patch-dllm-agentic-planning.md (arXiv:2610.10786)
+  - concepts/retrieval-credit-for-search-agents.md (arXiv:2610.10179)
+  - concepts/rewardweaver-self-evolving-rewards.md (arXiv:2610.10120, confidence:low — abstract-only)
+  - concepts/generative-ui-harness.md (arXiv:2610.11123)
+  - concepts/dial-metaopd-token-selection-opd.md (arXiv:2610.11659)
+- index.md: +6 concept entries, count 3173->3179, Concepts 2148->2154, date->2026-10-10.
+- Themes: diffusion/flow LLMs as reasoners+planners (2 papers), reward-signal shaping in
+  post-training (retrieval credit + self-evolving rewards + OPD token selection), data-aware GenUI runtime.

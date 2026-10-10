@@ -51,5 +51,11 @@
   "arxiv:2609.13775": "raw/papers/2026-09-17_2609.13775_epistemicalignment-benchmarking-epistemi.md",
   "arxiv:2609.09192": "raw/papers/2026-09-11_2609.09192_memcollab-cross-memory-collaboration-via.md",
   "arxiv:2608.22797": "raw/papers/2026-08-28_2608.22797_memory-burns-threats-controls-persistent.md",
-  "arxiv:2609.20812": "raw/papers/2026-09-25_2609.20812_verification-bottleneck-faithful-evaluat.md"
+  "arxiv:2609.20812": "raw/papers/2026-09-25_2609.20812_verification-bottleneck-faithful-evaluat.md",
+  "arxiv:2610.10179": "wiki/raw/papers/2026-10-07_2610.10179_beyond-outcome-rewards-retrieval-credit-search-agents.md",
+  "arxiv:2610.10120": "wiki/raw/papers/2026-10-07_2610.10120_rewardweaver-self-evolving-reward-adaptation.md",
+  "arxiv:2610.09416": "wiki/raw/papers/2026-10-07_2610.09416_efficient-reasoning-with-flow-language-models.md",
+  "arxiv:2610.10786": "wiki/raw/papers/2026-10-07_2610.10786_plan-and-patch-dllm-agentic-planning.md",
+  "arxiv:2610.11123": "wiki/raw/papers/2026-10-08_2610.11123_genui-harness-data-aware-generative-ui.md",
+  "arxiv:2610.11659": "wiki/raw/papers/2026-10-08_2610.11659_dial-opd-token-selection-on-policy-distillation.md"
 }
