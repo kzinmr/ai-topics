@@ -1080,7 +1080,7 @@
 - [[concepts/claude-system-prompts]] — Claude System Prompts — Anthropic publishes release notes for core claude.ai/mobile app system prompts; transparency milestone (Aug 2026, HN 687pts)
 - [[concepts/coding-agents/databricks-ai-coding-cost-management]] — Managing AI Coding Costs at Scale — Databricks (Aug 2026): cost levers, model routing, AI Gateway pattern for enterprise agent coding spend optimization
 - [[concepts/coding-agents/databricks-coding-agent-benchmark]] — Databricks coding agent benchmark — real-world evaluation of coding agents on production codebases
-- [[concepts/diffusion-language-models]] — Diffusion Language Models — Non-autoregressive text generation via iterative denoising; Mercury, LLaDA, Consistency Diffusion LMs; 10-14x faster inference
+- [[concepts/diffusion-language-models]] — Diffusion Language Models — Non-autoregressive text generation via iterative denoising; Mercury, LLaDA, dQwen3.5, CDLM; 10-14x faster inference; Oct-2026 pivot to editable reasoning substrates (plan repair, superposition)
 - [[concepts/claude/fable-safety-classifiers-critique]] — Claude Fable 5 safety classifiers critique — overzealous classifiers make Fable unusable for CS research
 - [[concepts/evaluation/_index]] — AI Evaluation — Concepts hub for evaluation/evals sub-pages
 - [[concepts/fli-ai-safety-index]] — FLI AI Safety Index — Future of Life Institute periodic evaluation grading AI companies on safety/security practices across 6 domains, 37 indicators; Summer 2026: Anthropic C+, OpenAI C, DeepSeek F

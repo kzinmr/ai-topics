@@ -1,13 +1,15 @@
 ---
 title: Diffusion Language Models
 created: 2026-08-12
-updated: 2026-09-20
+updated: 2026-10-10
 type: concept
 tags: [diffusion, inference, model, llm, autoregressive, code-model, kv-cache, speculative-decoding]
 sources:
   - raw/articles/2025-12-01_inceptionlabs_mercury-diffusion-llm.md
   - raw/articles/2026-02-19_togetherai_consistency-diffusion-lms.md
   - raw/articles/2026-09-20_arxiv-2609.20751_dqwen3-5-hybrid-attention-diffusion-language-models.md
+  - raw/papers/2026-10-07_2610.10786_plan-and-patch-dllm-agentic-planning.md
+  - raw/papers/2026-10-07_2610.09416_efficient-reasoning-with-flow-language-models.md
 ---
 
 # Diffusion Language Models (dLLMs)
@@ -95,7 +97,30 @@ Key insight from Inception Labs: the speed advantage means applications previous
 - **Commercial availability**: As of mid-2026, commercial dLLM offerings are limited primarily to Inception Labs (Mercury API and on-premise) with Together AI's CDLM as a research/open approach.
 - **Scaling trajectory**: While LLaDA has reached 100B parameters, the scaling behavior of diffusion LMs relative to autoregressive models at frontier sizes is still being explored.
 
+## 2026-10: from "faster generator" to "editable reasoning substrate"
+
+Two papers dated 2026-10-07 shift the dLLM argument away from raw speed, and they point in
+*opposite* directions — which is the interesting part.
+
+| Paper | Substrate | What the non-AR structure buys | Headline number |
+|---|---|---|---|
+| **Plan-and-Patch** (arXiv:2610.10786, Intel Labs + ASU) | **Discrete** masked dLLM | Localized **plan repair** — re-mask a broken span, inpaint it, keep prefix/suffix | Plan repair **53.7%** (dLLM) vs **27.0%** (AR), untrained; **39–46%** lower plan-gen latency |
+| **Flow Language Models** (arXiv:2610.09416) | **Continuous** flow state | **Superposition** — evidence for multiple candidate answers survives across refinement steps | Maze15 at 95% accuracy with **36.5% fewer parameters** than MDLM at 64 steps |
+
+Details on [[concepts/plan-and-patch-dllm-agentic-planning]] and [[concepts/flow-language-models]].
+
+Three things the pair makes legible:
+
+1. **The durable dLLM advantage is structural, not speed.** Plan-and-Patch's authors report that task-specific fine-tuning *closes* the accuracy gap between diffusion and AR planners. What survives fine-tuning is the ability to patch a region without regenerating the rest — an operation an AR decoder cannot perform without re-deriving everything to its right. That is a [[concepts/harness-engineering]] property, not a tokenizer property.
+2. **The two families disagree about what to keep between steps.** Discrete dLLMs pass a categorical (partially masked) state and discard rejected candidates at unmask time. FLMs pass a continuous state and decode to tokens only at the end — interventions show the retained alternatives are *causally used*, not decorative. Same non-autoregressive bet, opposite answers on state representation.
+3. **The evidence base is not the deployment base.** Plan-and-Patch runs on Natural Plan / ALFWorld / TextCraft; FLM results are maze and Sudoku. Meanwhile the deployed dLLMs (Mercury, dQwen3.5) are still sold on latency. Nobody has yet shown a non-AR advantage on real tool-call stacks or natural-language code.
+
+Adjacent lineage: [[concepts/replaid-continuous-diffusion]] (arXiv:2605.18530) already reported continuous diffusion scaling on par with discrete under matched settings — the FLM result is downstream of that claim, not independent of it. Denoising step count is itself a compute knob, so this cluster reads as a variant of [[concepts/test-time-scaling]].
+
 ## Related Pages
+
+- [[concepts/plan-and-patch-dllm-agentic-planning]] — dLLM planners; patch-not-regenerate as an agent-workflow property.
+- [[concepts/flow-language-models]] — continuous-state sibling; few-step reasoning efficiency.
 
 - [[concepts/inference]] — LLM inference engine comparison and architecture
 - [[concepts/kv-cache]] — Key-Value caching in Transformer inference; central to CDLM's block-wise caching innovation
