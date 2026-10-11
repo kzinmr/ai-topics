@@ -1,7 +1,7 @@
 ---
 title: "Vincent Weisser"
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-10-11
 type: entity
 tags:
   - person
@@ -12,6 +12,8 @@ tags:
 sources:
   - https://www.vincentweisser.com/
   - https://x.com/vincentweisser
+  - https://agentalois.com/
+  - raw/articles/2026-10-11_agentalois_alzheimer-agent-notebook.md
 ---
 
 # Vincent Weisser
@@ -26,6 +28,17 @@ Co-founder & CEO of [[entities/prime-intellect|Prime Intellect]] — building th
 | **X/Twitter** | [@vincentweisser](https://x.com/vincentweisser) (29K followers) |
 | **Website** | [vincentweisser.com](https://www.vincentweisser.com/) |
 | **Mission** | "Open superintelligence + science" |
+
+## Recent X Activity
+
+- **2026-10-10** — Publicly endorsed **alois** (https://agentalois.com/), a public
+  Alzheimer's-research agent (proposes experiments from six public data sources, validates
+  against the SEA-AD brain atlas on held-out donors, publishes failure "receipts"). Weisser
+  replied to the project's operator and Prime Intellect research engineer Florian Brand
+  (@xeophon): "very cool to see such early progress and love your site tracking the progress
+  ... excited to dig in more deeply!" — signals Prime Intellect leadership interest in
+  public, self-evaluating scientific-discovery agents.
+  Raw: [[raw/articles/2026-10-11_agentalois_alzheimer-agent-notebook|agentalois.com scrape]]
 
 ## Prime Intellect
 

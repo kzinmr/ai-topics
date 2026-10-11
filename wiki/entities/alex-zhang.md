@@ -3,7 +3,7 @@ title: "Alex L. Zhang"
 tags: [person]
 sources: []
 created: 2026-04-13
-updated: 2026-07-21
+updated: 2026-10-11
 type: entity
 ---
 
@@ -162,7 +162,7 @@ Prime Intellect synthesizes both:
 | Date | Title | Key Insight |
 |------|-------|-------------|
 | Oct 2025 | Recursive Language Models | RLMs treat context as an environment variable, not a static prompt |
-| Jul 2026 | Language model harnesses are compositional generalizers | Harnesses enable compositional generalization — RLMs generalize 8–32x beyond training length; LID principle; critique of Claude Code/Codex context rot |
+| Jul 2026 | Language model harnesses are compositional generalizers | Harnesses enable compositional generalization — RLMs generalize 8–32x beyond training length; LID principle; critique of Claude Code/Codex context rot. Selected into the 2026 State of AI report (Zhang tweeted it alongside the RLM post, 2026-10-08) |
 | Apr 2026 | A Mini Exercise on the Mismanaged Geniuses Hypothesis (RLMs on LongCoT) | Simple prompt-level fixes boost RLM from 50.6% -> 65.6% on LongCoT-mini, validating MGH via Claude Code trajectory analysis |
 | 2024 | A Meticulous Guide to Advances in Deep Learning Efficiency | Comprehensive survey from pre-AlexNet to foundation models |
 

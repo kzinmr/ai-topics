@@ -2,7 +2,7 @@
 title: Daniel Han
 type: entity
 created: 2026-04-10
-updated: 2026-07-31
+updated: 2026-10-11
 source: "x-account"
 tags:
   - person
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-07-15_danielhanchen_inkling-unsloth-studio.md
   - raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md
   - raw/articles/2026-07-31_unsloth_deepseek-v4-flash-0731-gguf.md
+  - raw/articles/2026-10-11_unsloth_sandboxing-in-studio.md
 ---
 
 
@@ -154,6 +155,7 @@ Investment analysis scored Unsloth at **8.10/10** (highest in the OSS index):
 
 | Post | Date | Topic |
 |------|------|-------|
+| **Sandboxing in Unsloth** (docs) | Oct 2026 | OS-level sandboxing for Studio tool calls, auto-enabled by default: MXC on Windows 11 24H2+, Bubblewrap on Linux, Seatbelt on macOS. Two modes — "low" (software string/AST/regex checks, 1-3ms) vs "high" (true OS sandbox, 50-164ms per call). Blocks rm/dd/sudo/curl/ssh/eval etc., strips secret env vars, refuses Studio credential files, caps processes/memory (8GB)/CPU (600s). Built with the Windows MXC team. [docs](https://unsloth.ai/docs/new/studio/sandboxing-in-unsloth) |
 | **Inkling 1-bit GGUF Quants** | Jul 2026 | Collab with Thinking Machines: 86% smaller quantized Inkling model with multimodal support |
 | **Inkling in Unsloth Studio** | Jul 2026 | Tool calling, web search, code execution, vision + audio for Inkling locally |
 | **Kimi K3 GGUF Dynamic 1-bit** | Jul 2026 | 594GB dynamic quantization, custom llama.cpp fork for K3 vision, Unsloth Studio support |

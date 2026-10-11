@@ -1,3 +1,13 @@
+## [2026-10-11] ingest | x-accounts-scan run 20261011T223036Z
+
+- Script scan: 84 tracked / 11 accounts scanned (budget 12, cursor 72→83); 4 substantive candidates, **4 new posts**, 0 errors.
+- Processed (3):
+  - `@a1zhang` (Alex Zhang, 2026-10-08) — "RLMs + the compositional generalizers blog in this year's @stateofai report". Article already ingested (`raw/articles/2026-07-20_zhang-khattab_...`, [[concepts/compositional-generalization]]). → ✏️ `entities/alex-zhang.md` blog table: noted 2026 State of AI report selection.
+  - `@vincentweisser` (2026-10-10) — endorsement of **alois** (https://agentalois.com/), public Alzheimer's research agent by/with @xeophon (Florian Brand, Prime Intellect). → 🆕 `raw/articles/2026-10-11_agentalois_alzheimer-agent-notebook.md`; ✏️ `entities/vincent-weisser.md` (new Recent X Activity section).
+  - `@danielhanchen` (2026-10-10) — Unsloth Studio OS-level sandboxing docs (MXC/Bubblewrap/Seatbelt, low vs high modes). → 🆕 `raw/articles/2026-10-11_unsloth_sandboxing-in-studio.md`; ✏️ `entities/daniel-han.md` Blog/Recent Posts.
+- Skipped (1): `@pupposandro` — cal.com booking link for Lucebox consulting call (no standalone value; Lucebox entity already exists).
+- Archive: `cron/data/x_accounts_archive/x_accounts_20261011T223036Z.json`; processed cache 237 entries.
+
 ## [2026-10-11] skeleton-enrich-daily: queue empty — no `status: skeleton` pages
 
 - Scan: `grep -rl "status: skeleton" wiki/` -> 0 frontmatter matches in entities/concepts/comparisons/events/queries (only prose mentions in log files + WIP snapshot queries). `grep "^status: stub" wiki/entities/` -> 0. Smallest entity files are all legitimate redirects (ysymyth, eugeneyan, lilianweng, moonshot-ai, tim-sherratt, martin-fowler, etc.).
