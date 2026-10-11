@@ -1,3 +1,9 @@
+## [2026-10-11] skeleton-enrich-daily: queue empty — no `status: skeleton` pages
+
+- Scan: `grep -rl "status: skeleton" wiki/` -> 0 frontmatter matches in entities/concepts/comparisons/events/queries (only prose mentions in log files + WIP snapshot queries). `grep "^status: stub" wiki/entities/` -> 0. Smallest entity files are all legitimate redirects (ysymyth, eugeneyan, lilianweng, moonshot-ai, tim-sherratt, martin-fowler, etc.).
+- Prior-run WIP (`dan-mcinerny` enrichment) confirmed committed as 5e8c0acc. Working tree still holds 202 modified + 28 untracked files from other pipelines (not this job). Re-checkpointed via [[queries/2026-10-11-uncommitted-wip-snapshot.md]].
+- No enrichment changes this run.
+
 ## [2026-10-11] ingest | blog-ingest run 20261011T100030Z
 
 - Script scan: 17 new articles detected; 20 surfaced to ingest stage; **9 saved** to `raw/articles/`, 11 unsaved.
