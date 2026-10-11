@@ -6603,3 +6603,18 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Scaling: ~47% of GPT-2 small params vs ~2% of Kimi K3 active / <0.1% of 2.8T total → small-model intervention only
 - Cross-refs: llm-parameter-counts, peft-lora-and-qlora, scaling-laws, small-language-models, tokenization, entities/gilesthomas
 - index.md: +1 page (3181 total)
+
+## [2026-10-11] ingest | Active crawl: agent runtime supervision + agent-skill supply chain + Xiaomi MiMo-V2.6
+- Scanned 2026-10-08→11 arXiv submissions (cs.CL/LG/MA/SE, ~160 k abstracts) + hot-topics.yaml; selected 5 uncovered clusters, verified novelty by grepping existing page bodies (0 hits for `runtime-monitor`, `knowledge-conflict`; OnTrack/Cadence/Skill Constellations absent)
+- Raw (papers): raw/papers/2026-10-11_2610.11959_mimo-v2-6-scaling-rl-self-improvement.md (registered in .papers_index.json as arxiv:2610.11959)
+- Raw (papers, cont.): all six sources live under raw/papers/ (arXiv, not web articles) — also 2026-10-11_2610.11169_skill-constellations-github-supply-chain.md (body read in full), 2026-10-11_2610.11647_skill-co-installation-conflict.md, 2026-10-11_2610.12269_cadence-strategic-guidance-coding-agents.md, 2026-10-11_2610.12360_epistemic-humility-agents-knowledge-conflict.md, 2026-10-11_2610.12375_ontrack-streaming-trajectory-monitoring.md (arXiv IDs 2610.11169/11647/12269/12360/12375 are cited inline on each page; not all registered in .papers_index.json)
+- Created concepts/skill-constellations-github-supply-chain — 293,215 skill files / 151,484 repos; 60% single-skill, 97% single-author, 56% verbatim duplicates, 46% of multi-skill repos ≥1 security risk; "ecosystem-level replication risk, not repository-level"
+- Created concepts/skill-co-installation-conflict — 15 skills × 24 scenarios (Claude Code); silent override via description-mediated race, outcome decided by install location (project > personal); no precedence/exclusivity primitive
+- Created concepts/cadence-strategic-guidance-coding-agents — health-adaptive guidance scheduling; +25.33% vs always-on (mini-swe-agent), ~60% fewer guidance calls, 11% fewer tokens; guidance as a rationed resource
+- Created concepts/ontrack-streaming-trajectory-monitoring — structure-aware OT over typed Tool/LLM segments, ~1 ms/step; access-regime ablation = detector richness requires a clean-run corpus
+- Created concepts/epistemic-humility-agents-knowledge-conflict — ISE (Identify→Solve→Escalate); agents Identify/Solve but rarely Escalate → confident wrong final answers at high accuracy
+- Created concepts/mimo-v2-6-scaling-rl-self-improvement — 3 RL scaling axes with disclosed numbers (1,568 samples, 2.7–3.7B tokens/step, 1M ctx), mixture of agent harnesses incl. cyber, groupwise agentic grading, frozen MoE router; abstract-only (confidence high on quoted, low beyond)
+- Created concepts/runtime-oversight-knobs — SYNTHESIS: Signal / Detector cost / Sampling rate / Escalation channel are orthogonal; escalation is where failures land; monitor is itself a model → monitor-evasion applies; answer is checks in a channel the agent cannot edit
+- Dropped: hls-micro-agents (thin), 2610.11647 beyond benchmark scope, non-peer-reviewed/abstract-only clusters that failed the provenance bar
+- Cross-refs: agent-skills-overview, runtime-security-monitoring, skill-graph, agent-skill-supply-chain-attacks, supply-chain-security, instrumental-monitor-evasion, evaluation/agent-overclaiming, signal-allocation-in-post-training, reward-hacking, entities/xiaomi-mimo, recursive-self-improvement
+- index.md: +7 pages (3181 → 3188; Concepts 2156 → 2163)

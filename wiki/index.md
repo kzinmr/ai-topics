@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3181
+> Total pages: 3188
 > Last updated: 2026-10-11
 
 ## Entities (939 pages)
@@ -946,7 +946,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2156 pages)
+## Concepts (2163 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1459,6 +1459,7 @@
 - [[concepts/cancer-capital]] — Cancer Capital (Anil Dash, Sep 2026) — VC as surplus money chasing returns "without giving anything back"; 2021 was the peak not a bubble; OpenAI wealth transfer as paradigm case
 - [[concepts/c-programming]] — C Programming
 - [[concepts/cache-first-engineering]] — cache-first-engineering
+- [[concepts/cadence-strategic-guidance-coding-agents]] — Cadence (arXiv:2610.12269) — health-adaptive strategic guidance scheduler for coding agents; scores each trajectory step's deviation and fires LLM guidance only on threshold violation; +25.33% vs always-on on mini-swe-agent, ~60% fewer guidance calls, 11% fewer tokens — guidance as a resource to ration
 - [[concepts/caching-performance-cost-optimization]] — Caching Performance Cost Optimization
 - [[concepts/coding-agent-harness-design-study]] — Coding Agent Harness Design Study (arXiv 2609.20804, Sep 2026) — first component-level ablation of a coding harness: planning, action space, context management across 4 models / 176 settings on SWE-Bench Verified + Terminal-Bench 2.1; every effect is model- and budget-conditional
 - [[concepts/comprehension-interface]] — Comprehension Interface — Karpathy (Oct 2026): output-format ladder for understanding LLM output (ASD-STE100 → diagrams → HTML → 3b1b-style videos); consumption-side complement to ai-output-format-progression; tied to cognitive load/debt
@@ -1824,6 +1825,7 @@
 - [[concepts/eureka-labs]] — eureka-labs
 - [[concepts/evals-skills-for-coding-agents]] — Evals Skills for Coding Agents
 - [[concepts/evals-skills]] — Evals Skills for Coding Agents
+- [[concepts/epistemic-humility-agents-knowledge-conflict]] — Epistemic Humility in LLM Agents (arXiv:2610.12360) — ISE framework (Identify→Solve→Escalate) for parametric-vs-contextual knowledge conflict; agents frequently Identify and Solve but rarely Escalate, so high-accuracy configs ship confident wrong final answers
 - [[concepts/benchmark-ceiling]] — The Benchmark Ceiling — evaluation scarcity & political economy of AI capability measurement; valid signal concentrates in the expert-authored hard tail (arXiv, Jun 2026)
 - [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]] — Evaluation Coding Agents Mcp Automation Harness Engineering
 - [[concepts/evaluation-development-process-quality]] — Evaluation Development Process Quality
@@ -2371,6 +2373,7 @@
 - [[concepts/microsoft-mai-models]] — Microsoft MAI Models
 - [[concepts/microsoft-scout-agent]] — Microsoft Scout
 - [[concepts/microsoft-work-trend-index-2026]] — Microsoft 2026 Work Trend Index
+- [[concepts/mimo-v2-6-scaling-rl-self-improvement]] — MiMo-V2.6 (Xiaomi, arXiv:2610.11959) — scales RL on 3 axes: throughput (1,568 samples / 2.7–3.7B tokens per step at 1M ctx), environment diversity incl. cyber under a mixture of agent harnesses, grader compute via groupwise agentic grading; frozen MoE router + multi-layer reward-hacking defense; rare disclosed RL-compute numbers
 - [[concepts/milksandmatcha-0xsero-single-agent-nightmare-2026]] — milksandmatcha-0xsero-single-agent-nightmare-2026
 - [[concepts/mindwalk]] — Mindwalk — coding-agent session replay on 3D codebase map; spatial intuition for debugging agent behavior (Jul 12)
 - [[concepts/minijinja]] — minijinja
@@ -2487,6 +2490,7 @@
 - [[concepts/olmo-open-language-model]] — olmo-open-language-model
 - [[concepts/on-device-rag]] — On-Device RAG
 - [[concepts/one-person-unicorn]] — One-Person Unicorn
+- [[concepts/ontrack-streaming-trajectory-monitoring]] — OnTrack (arXiv:2610.12375) — near-real-time streaming agent-trajectory monitoring via structure-aware optimal transport over typed Tool/LLM segments with learned dimensional weights; ~1 ms/step vs seconds for VLM guardrails; ablation shows detector richness depends on access to clean successful runs
 - [[concepts/onionshare]] — OnionShare
 - [[concepts/opcode-collective]] — opcode-collective
 - [[concepts/opd-failure-modes]] — OPD Failure Modes
@@ -2772,6 +2776,7 @@
 - [[concepts/rogue-ai-agent-activity]] — Transluce Agent Activity Report: thousands of real-world URLQuery agent requests revealing unauthorized/rogue agent behavior predating known incidents (baseline from Mar 2026)
 - [[concepts/rubric-middleware]] — RubricMiddleware
 - [[concepts/ruler-openpipe-art]] — RULER (OpenPipe ART Reward Function)
+- [[concepts/runtime-oversight-knobs]] — Runtime Oversight in Coding Agents — Three Orthogonal Knobs: synthesis separating Signal / Detector cost / Sampling rate / Escalation channel across Cadence, OnTrack, ISE and skill-conflict papers; escalation is where the failures actually land
 - [[concepts/runtime-opinionated-sdk]] — Runtime-Opinionated SDK
 - [[concepts/rust]] — Rust
 - [[concepts/rust-ecosystem]] — rust-ecosystem
@@ -2878,6 +2883,8 @@
 - [[concepts/single-transformer-layer-rl]] — Single Transformer Layer RL — Finding that training only 1-2 middle transformer layers matches full-parameter RL post-training across 7 models and 3 algorithms (arXiv 2607.01232, July 5)
 - [[concepts/siri-ai]] — Siri AI
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP)
+- [[concepts/skill-co-installation-conflict]] — Skill Co-Installation Conflict (arXiv:2610.11647) — 15-skill × 24-scenario benchmark; co-installed Claude Code skills silently override each other through a description-mediated race (trigger-keyword collision + priority ambiguity) whose outcome is decided by install location (project > personal); no precedence or exclusivity primitive in the namespace
+- [[concepts/skill-constellations-github-supply-chain]] — Skill Constellations (arXiv:2610.11633) — 293,215 GitHub agentic-skill files across 151,484 repos measured with a 12-rule supply-chain risk suite; 60% single-skill repos, 97% single-author, 56% of skills duplicated verbatim, 46% of multi-skill repos carry ≥1 security risk (prompt injection, credential exfiltration)
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/skill-graph]] — Skill Graph — Interconnected Markdown Files as an AI Agent Playbook
 - [[concepts/skill-library]] — Skill Library — Managed repositories of reusable agent procedures; SE-GoS self-evolving Graph-of-Skills (arXiv:2609.08228) and SKILL.md-vs-subagents eval (arXiv:2609.09233), Sep 2026

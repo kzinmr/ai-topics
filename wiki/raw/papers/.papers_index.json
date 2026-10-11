@@ -57,5 +57,11 @@
   "arxiv:2610.09416": "wiki/raw/papers/2026-10-07_2610.09416_efficient-reasoning-with-flow-language-models.md",
   "arxiv:2610.10786": "wiki/raw/papers/2026-10-07_2610.10786_plan-and-patch-dllm-agentic-planning.md",
   "arxiv:2610.11123": "wiki/raw/papers/2026-10-08_2610.11123_genui-harness-data-aware-generative-ui.md",
-  "arxiv:2610.11659": "wiki/raw/papers/2026-10-08_2610.11659_dial-opd-token-selection-on-policy-distillation.md"
+  "arxiv:2610.11659": "wiki/raw/papers/2026-10-08_2610.11659_dial-opd-token-selection-on-policy-distillation.md",
+  "arxiv:2610.11647": "2026-10-11_2610.11647_skill-co-installation-conflict.md",
+  "arxiv:2610.11169": "2026-10-11_2610.11169_skill-constellations-github-supply-chain.md",
+  "arxiv:2610.12269": "2026-10-11_2610.12269_cadence-strategic-guidance-coding-agents.md",
+  "arxiv:2610.12375": "2026-10-11_2610.12375_ontrack-streaming-trajectory-monitoring.md",
+  "arxiv:2610.12360": "2026-10-11_2610.12360_epistemic-humility-agents-knowledge-conflict.md",
+  "arxiv:2610.11959": "2026-10-11_2610.11959_mimo-v2-6-scaling-rl-self-improvement.md"
 }
