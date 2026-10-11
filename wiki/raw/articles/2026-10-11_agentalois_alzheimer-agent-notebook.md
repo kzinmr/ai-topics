@@ -3,7 +3,7 @@
 - Source: https://agentalois.com/
 - Retrieved: 2026-10-11
 - Discovered via: X post by @vincentweisser (Vincent Weisser, Prime Intellect), 2026-10-10, replying to @AgentAlois / @xeophon
-- Related: [[entities/florian-brand]] (Florian Brand / @xeophon, Research Engineer at Prime Intellect)
+- Related: [[entities/florian-brand]] (Florian Brand / @xeophon, Research Engineer at Prime Intellect). See also [[entities/vincent-weisser]], [[entities/prime-intellect]].
 
 ## What it is
 
