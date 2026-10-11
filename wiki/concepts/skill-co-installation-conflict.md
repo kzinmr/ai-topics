@@ -71,6 +71,10 @@ existing attempt at ordering.
 - Whether a `SKILL.md` field for exclusive-ownership / conflict declaration would be respected by
   models at all, given selection is description-mediated.
 
+## Related
+
+Synthesis across both Oct 2026 skill papers: [[concepts/agent-skill-ecosystem-missing-package-manager]]
+
 ## Source
 
 Chaoliang Yan, Zihao Xu, Yuekang Li, et al., *One Skill Too Many: How Co-Installed Skills Conflict

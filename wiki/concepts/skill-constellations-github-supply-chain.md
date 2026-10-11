@@ -61,6 +61,10 @@ co-installation is the expected end state, not an anomaly.
 - Ranking is trained on historical adoptions — a novel origin repository is cold-start invisible by
   construction.
 
+## Related
+
+Synthesis across both Oct 2026 skill papers: [[concepts/agent-skill-ecosystem-missing-package-manager]]
+
 ## Source
 
 Fahd Seddik, *Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub*,

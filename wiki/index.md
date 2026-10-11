@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3188
+> Total pages: 3189
 > Last updated: 2026-10-11
 
 ## Entities (939 pages)
@@ -946,7 +946,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2163 pages)
+## Concepts (2164 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1013,6 +1013,7 @@
 - [[concepts/agent-safety-incidents-open-source]] — AI Agent Safety Incidents in Open-Source Communities
 - [[concepts/agent-sandbox-patterns]] — Agent Sandbox Patterns — Isolate-the-Tool vs Isolate-the-Agent; zero-secret agent + credential-holding control plane (Unikraft micro-VM); Browser Use production architecture (Feb 2026)
 - [[concepts/agent-security-patterns]] — Agent Security Patterns
+- [[concepts/agent-skill-ecosystem-missing-package-manager]] — Missing Package Managers (synthesis of arXiv:2610.11169 + 2610.11647, both 2026-10-08) — the SKILL.md namespace lacks registry/pinning/provenance/name-resolution; 2,193,119 adoptions traced with stars useless for origin ID (top-100 ranked audit = 14.9% vs 0.5% for starred, ~30x) and 1-in-4 skills co-installed with a same-job rival whose winner is decided by install location
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
 - [[concepts/academic-reception-of-ai-math]] — Academic reception of AI-generated mathematics — the Oct 2026 OpenAI math split: AHM's institutional objection + Karagila's "verification DoS" desk-rejection critique, vindicated by the 24-hour withdrawal cascade
 - [[concepts/adaptive-code-revision-attacks-pr-reviewers]] — AFCRA: attackers mine AI PR reviewers' own feedback to revise code so the reported issue is fixed but a vulnerability survives; AFCRA-Bench (159 vulns), success 2.5x/12.5x over text-only attacks vs Sonnet 5 / GPT-5.5 (arXiv:2610.05399, Oct 2026)
@@ -2884,7 +2885,7 @@
 - [[concepts/siri-ai]] — Siri AI
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP)
 - [[concepts/skill-co-installation-conflict]] — Skill Co-Installation Conflict (arXiv:2610.11647) — 15-skill × 24-scenario benchmark; co-installed Claude Code skills silently override each other through a description-mediated race (trigger-keyword collision + priority ambiguity) whose outcome is decided by install location (project > personal); no precedence or exclusivity primitive in the namespace
-- [[concepts/skill-constellations-github-supply-chain]] — Skill Constellations (arXiv:2610.11633) — 293,215 GitHub agentic-skill files across 151,484 repos measured with a 12-rule supply-chain risk suite; 60% single-skill repos, 97% single-author, 56% of skills duplicated verbatim, 46% of multi-skill repos carry ≥1 security risk (prompt injection, credential exfiltration)
+- [[concepts/skill-constellations-github-supply-chain]] — Skill Constellations (arXiv:2610.11169) — first *dated copy network* of agent skills built from git history (2,193,119 adoptions); a few repos are the source of almost all copies and GitHub stars do not identify them; copies almost never track their source so fixes don't propagate; model-ranked top-100 audit prevents 14.9% of later high-risk adoptions vs 0.5% for the top-100 starred → distribute versioned references, not copies
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/skill-graph]] — Skill Graph — Interconnected Markdown Files as an AI Agent Playbook
 - [[concepts/skill-library]] — Skill Library — Managed repositories of reusable agent procedures; SE-GoS self-evolving Graph-of-Skills (arXiv:2609.08228) and SKILL.md-vs-subagents eval (arXiv:2609.09233), Sep 2026
