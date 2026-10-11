@@ -103,6 +103,30 @@ Do NOT re-run the script, do NOT perform triage, do NOT create wiki pages. The n
 
 `git status --short -- wiki/raw/articles/` may show dozens of untracked files spanning multiple days. This happens when the ingest agent session was interrupted (rate limit, timeout, model error) after the script saved files but before committing. **Commit ALL untracked raw articles in one commit**, not just today's checkpoint entries. The checkpoint JSON is the authoritative source for "what did the script collect today" but the filesystem is the authoritative source for "what needs to be committed."
 
+### Ingest: YouTube talk backfill — yt-dlp 429 vs "Sign in to confirm you're not a bot" (two different blocks)
+
+When backfilling `unsaved_articles` from the AI Engineer (or any YouTube-heavy) feed, `yt-dlp` errors fall into two distinct classes with different remedies:
+
+1. **HTTP 429 "Too Many Requests"** (on `www.youtube.com` and `timedtext` endpoints): rate throttling. `--sleep-requests 5 --sleep-interval 8 -4` does NOT recover it within a cron window. The cookiefile trick (`--cookiefile /path/to/cookies.txt`, Netscape-format cookies exported from a logged-in browser) is the reliable bypass and requires the user to supply cookies. Without them: write a metadata-only placeholder (`status: metadata-only`, note the 429) instead of retrying endlessly — each retry burns quota and deepens the throttle.
+2. **"Sign in to confirm you're not a bot"** on some videos even after others list fine: identity/abuse-wall, NOT a rate limit. Retries and sleeps never help. Only paths: cookies, or the `web_extract` tool (real-browser rendering) — but web_extract is disabled in cron mode (toolsets `terminal,file` only). These also go to metadata-only placeholders.
+
+Cron-mode reality: with no browser tool, `youtube-content` fallback #2 cannot fire, so metadata-only placeholders are the expected terminal state for most cron-window YouTube backfills. Re-run the `youtube-content` skill from an interactive session when the triage stage marks a talk as a TAKE candidate and subtitles actually matter.
+
+Quick probe to classify the block (cheap, safe): `yt-dlp --list-subs --skip-download "https://www.youtube.com/watch?v=ID"` → grep output for `429` vs `Sign in to confirm`.
+
+### Ingest: openai.com business-guide URLs return 403
+
+`openai.com/business/guides-and-resources/*` (and most openai.com paths) return HTTP 403 to plain httpx/curl (Cloudflare bot protection); `cdn.openai.com` PDFs usually do NOT. In cron (no browser tool) write metadata-only placeholders with `fetch_status: failed (HTTP 403)` and re-ingest interactively — do not hammer retries. Note RSS titles and URL slugs can mismatch for these guides (observed: slug `a-practical-guide-to-building-with-ai` carrying title "Building with the GPT-5 Model Series") — treat the feed title as authoritative for the raw page's title line.
+
+### Ingest: `git pull --rebase` fails on dirty working tree (push may still succeed)
+
+Pre-scripted ingest runs end with commit + push. The wiki tree is almost always dirty with concurrent-pipeline changes (other cron jobs editing `wiki/concepts/`, skills files, `scripts/hierarchy_report.json`). `git pull --rebase` then aborts with `error: cannot pull with rebase: You have unstaged changes.`
+
+**Do NOT stash or clean other pipelines' changes just to make the rebase run.** Instead:
+1. Try `git push` directly — it usually succeeds (fast-forward) because local main already sits on top of the remote tip fetched by the previous pipeline run. Watch the push output for the actual ref update line (e.g. `a28e86ae..f108ad48 main -> main`).
+2. Only if push is genuinely rejected (non-fast-forward) use `git pull --rebase --autostash` — autostash restores the dirty tree afterward.
+3. Verify before reporting success: `git log --oneline -1` shows your commit and `git status -sb` shows no `behind`.
+
 ### Ingest: blog_checkpoint.py has no top-level `ok`
 
 `blog_checkpoint.py` outputs a JSON object with keys: `date`, `run_id`, `collected_at`, `candidates`, `unsaved_articles`, `scan`, and `_checkpoint`. The `_checkpoint` sub-object has `ok`, `run_id`, `generated_at`, `checkpoint_path`. **There is no top-level `ok` field.** To verify the checkpoint is valid:
