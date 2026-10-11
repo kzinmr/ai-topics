@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3180
-> Last updated: 2026-10-10
+> Total pages: 3181
+> Last updated: 2026-10-11
 
 ## Entities (939 pages)
 
@@ -946,7 +946,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2155 pages)
+## Concepts (2156 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2266,6 +2266,7 @@
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/llm-parameter-counts]] — LLM Parameter Counts — How parameters are distributed across embeddings, attention, FFN, and output head in transformer models
 - [[concepts/llm-policies-open-source]] — LLM Contribution Policies in Open-Source Projects — How major OSS projects (Rust, Debian, Linux kernel) govern LLM-generated contributions; disclosure requirements, contributor responsibility, and policy design patterns
+- [[concepts/low-rank-vocab-embeddings]] — LoRE: factorising vocab matrices (rank-128 = 6x smaller); input-only LoRE cut 163M test loss 0.073 over two seeds, output-only cost 0.115-0.138, init fix inverted the conclusion
 - [[concepts/llm-security]] — LLM Security — Security vulnerabilities in LLM applications including prompt injection, data leakage, and jailbreaking
 - [[concepts/llm-steering]] — LLM Steering
 - [[concepts/llm-text-detection-classical-ml]] — LLM Text Detection with Classical ML — using SVM, Random Forest, XGBoost on stylometric features to detect AI-generated text, competitive with deep learning approaches for AIGC detection
