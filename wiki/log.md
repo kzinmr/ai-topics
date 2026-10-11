@@ -6618,3 +6618,8 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Dropped: hls-micro-agents (thin), 2610.11647 beyond benchmark scope, non-peer-reviewed/abstract-only clusters that failed the provenance bar
 - Cross-refs: agent-skills-overview, runtime-security-monitoring, skill-graph, agent-skill-supply-chain-attacks, supply-chain-security, instrumental-monitor-evasion, evaluation/agent-overclaiming, signal-allocation-in-post-training, reward-hacking, entities/xiaomi-mimo, recursive-self-improvement
 - index.md: +7 pages (3181 → 3188; Concepts 2156 → 2163)
+
+## [2026-10-11] query | hot-post night (21:30 JST) — runtime oversight: nobody tunes the sampling-rate knob
+- Angle: contrarian synthesis of the 2026-10-08 arXiv cluster via [[concepts/runtime-oversight-knobs]]
+- Numbers cited: Cadence +25.33% mini-swe-agent / +15.67% Moatless (300 SWE-bench Lite tasks); OnTrack ~1ms/step, +0.057 AUROC, 18% compute saved, 5/6 aborts correct, first-8-steps horizon; ISE Identify/Solve/Escalate + conflict decay; skill co-install 20,947 snapshots → 822,109 pairs → 312 confirmed, 6,368 runs, 169,294 tool calls, >1/3 exclusive core functions lost
+- No wiki files modified beyond this log entry
