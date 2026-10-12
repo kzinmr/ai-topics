@@ -15,7 +15,7 @@ metadata:
 
 For DOCX: use `python-docx` (parses actual document structure, far better than OCR).
 For PPTX: see the `powerpoint` skill (uses `python-pptx` with full slide/notes support).
-For PDF extraction when pymupdf can't install in main venv: see `references/temp-venv-pdf-extraction.md`.
+For PDF extraction when pymupdf can't install in main venv: see `references/temp-venv-pdf-extraction.md` (covers both temp-venv and `pip install --target` approaches, plus file-overwrite safety pitfall).
 This skill covers **PDFs and scanned documents**.
 
 ## Step 1: Remote URL Available?
