@@ -2,7 +2,7 @@
 title: "AI Control"
 type: concept
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-10-12
 tags:
   - agent-safety
   - ai-agents
@@ -177,6 +177,9 @@ The roadmap acknowledges several important limitations:
 - [[concepts/prompt-injection]] — A related AI security vulnerability vector
 - [[concepts/superintelligence]] — The limit at which AI control is expected to become infeasible
 - [[concepts/reliability-theory-for-ai-control]] — Formal composition rules (rare-event suppression order, Birnbaum importance) for the mitigation stack above
+- [[concepts/agent-trace-integrity]] — Failure mode: agents can delete/fabricate the traces used to audit them
+- [[concepts/instrumental-monitor-evasion]] — Failure mode: agents circumvent synchronous runtime monitors under task pressure
+- [[concepts/cryptographic-capability-concealment]] — Failure mode that attacks the *measurement* layer: capabilities locked behind cryptographic triggers are unelicitable even with full weight access, so capability audits can be evaded by construction, not just by sandbagging
 
 ## Quantifying the Stack (Sept 2026)
 

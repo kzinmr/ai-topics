@@ -2,7 +2,7 @@
 title: "Evaluation Harness Validity"
 type: concept
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-10-12
 tags:
   - evaluation
   - harness-engineering
@@ -92,3 +92,5 @@ This framework challenges the validity of many existing benchmark comparisons:
 - [[concepts/trusted-access-biodefense]] — OpenAI's broader evaluation ecosystem initiative
 - [[entities/metr]] — Independent evaluation organization
 - [[concepts/evaluation/ai-evaluation]] — General evaluation concepts
+- [[concepts/run-to-run-variance-semantic-query]] — Corroborating failure mode: temperature 0 ≠ determinism; row-level noise amplifies exponentially through query plans, leaving many published comparisons unsettled
+- [[concepts/cryptographic-capability-concealment]] — Hard limit on the "strong elicitation" claim type: a cryptographically locked capability never appears under any harness
