@@ -5,8 +5,9 @@ sources:
   - raw/articles/micahflee.com--agentic-coding-techniques--fc5e06aa.md
   - raw/articles/micahflee.com--mandatory-update-a-short-story--a332b287.md
   - raw/articles/micahflee.com--sandboxing-coding-agents--2355e89c.md
+  - raw/articles/micahflee.com--just-say-no-to-openai-and-anthropic--f2eedf0a.md
 created: 2026-04-24
-updated: 2026-08-28
+updated: 2026-10-12
 type: entity
 ---
 
@@ -37,6 +38,7 @@ Previously: Director of Information Security at [[concepts/the-intercept]] (wher
 | 2024 | Publishes *Hacks, Leaks, and Revelations* (No Starch Press) |
 | 2025 | Founds **Lockdown Systems Collective**; develops [[concepts/cyd]] app; reports on [[concepts/iceblock]] app security failures; delivers BSidesPDX keynote on "Technofascism" |
 | 2026 | Publishes Epstein files analysis on ; builds DHS Contracts Explorer from hacked data; writes extensively on Signal group nicknames, mercenary spyware, and app censorship |
+| **2026-10-08** (approx.) | Publishes *"Just say no to OpenAI and Anthropic"* — his most explicit model-vendor boycott essay to date. Argues frontier-lab access is a **gatekeeping** problem (Trusted Access for Cyber / Cyber Verification Program hand "the ultimate power to decide who gets access" to Altman and Amodei "with consultation from the Trump Administration"), that ChatGPT/Claude "will **never** be private" even with the training opt-out ticked, and that the open-weight gap is now only **~4 months** — "Four months is nothing." Names GLM-5.3 as "basically on par with Claude Opus 5.5 for software engineering" and points security-minded users at [[concepts/privacy-preserving-computing\|secure-enclave providers]] (Tinfoil) as the middle path between self-hosting and proprietary APIs. |
 
 ---
 
@@ -98,6 +100,22 @@ In his August 2026 essay *Agentic coding techniques*, Lee describes coding agent
 
 ---
 
+### Model Vendor Boycott as a Security Position (October 2026)
+
+In *"Just say no to OpenAI and Anthropic"* Lee moves from "use local open-weight models" (his August 2026 agentic-coding guidance) to an explicit refusal thesis: the cost of the frontier labs is not capability but **legitimacy and control**. Three mechanisms in his argument are worth separating from the polemic:
+
+1. **Privacy is structural, not a setting.** The training-data opt-out limits *use* of your prompts, not the provider's *access* to them. "They can look at it, share it with governments or companies, or do whatever they want." A closed model you cannot run is never private regardless of the checkbox.
+2. **Guardrails are an access-control regime with named gatekeepers.** A "cop agent" reads security-related sessions and false-positives routinely; the escape hatch is application-based privileged access (OpenAI's Trusted Access for Cyber, Anthropic's Cyber Verification Program) granted to vetted — largely US commercial and military — parties. Lee's objection is not that restrictions are undeserved but that they are **undemocratically administered**.
+3. **The gap is short enough to be a switching cost, not a capability ceiling.** His empirical claim: open weights sit "about four months behind," and GLM-5.3 is "basically on par with Claude Opus 5.5" for software engineering by his own use. At that lag, refusing the frontier labs is affordable — which is why his recommendation is to spend the saved energy "figuring out how to get models like GLM-5.3 to meet your needs" rather than petitioning for privileged access.
+
+This makes Lee a useful counterweight in the [[concepts/open-weight-vs-closed-llm-gap]] debate: he measures the gap in *months of switching cost* rather than in benchmark points, and treats the gatekeeping structure of frontier-lab access as the reason to discount a gap he grants is real. Note the tension with [[entities/seangoedecke-com]]'s "No, local models will not win" (August 2026): Goedecke argues most inference stays in datacenters on efficiency grounds, while Lee argues the relevant constraint is trust and control, for which a four-month capability lag is an acceptable price. Neither position refutes the other — they optimize different variables.
+
+> "Instead of begging corporate overlords for privileged access, it's better to spend your time figuring out how to get models like GLM-5.3 to meet your needs. And it's not hard. These models are good, with the added benefit that they don't have a cop watching over your shoulder!"
+
+Source: [[raw/articles/micahflee.com--just-say-no-to-openai-and-anthropic--f2eedf0a.md]]
+
+---
+
 ## Key Quotes
 
 > "What we've been seeing on the streets of the US, with ICE kidnappings and military invasions of cities, is the normal face of fascism, just with new technology."
@@ -153,6 +171,7 @@ Cellebrite — Device extraction company analyzed in Lee's technofascism framewo
 - *Jeffrey Epstein Bought Books About Pedophilia, Woody Allen, and Trump* (Zeteo, November 2025)
 - *"Why hack the DHS? I can think of a couple Pretti Good reasons!"* (March 2026)
 - *Agentic coding techniques* (August 2026)
+- *Just say no to OpenAI and Anthropic* (October 2026)
 - *I spoke about ICEBlock and Trump's app censorship on the kill switch podcast* (October 2025)
 - *Hacks, Leaks, and Revelations: The Art of Analyzing Hacked and Leaked Data* (No Starch Press, 2024)
 - [OnionShare](https://onionshare.org) — Open-source file sharing tool
