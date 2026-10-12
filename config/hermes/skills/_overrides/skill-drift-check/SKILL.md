@@ -8,6 +8,9 @@ category: devops
 
 ## Skill Inventory Management
 
+### `skill_manage(action='patch')` targets SKILL.md by default
+`patch` without `file_path` searches only the skill's main SKILL.md. Much pipeline detail (e.g. blog-ingest pitfalls in `wiki-ingestion-pipelines`) lives in `references/*.md` files instead. If a patch fails with "Could not find a match" but the text clearly exists somewhere in the skill, re-issue the patch with `file_path='references/<file>.md'`. Locate the right file first (grep the skill dir) — for `wiki-ingestion-pipelines`, most pipeline detail is under `references/` (e.g. `blog-ingest-troubleshooting.md`), not SKILL.md.
+
 ### Managed vs Unmanaged Skills
 - **Managed (git-tracked)**: Live in `~/ai-topics/config/hermes/skills/` — these are version-controlled and syncable
 - **Unmanaged (local)**: Live in `~/.hermes/skills/` — these are runtime skills not yet committed to the repo
@@ -192,6 +195,38 @@ grep -r "TARGET_SKILL" ~/ai-topics/AGENTS.md ~/ai-topics/wiki/SCHEMA.md 2>/dev/n
 ```bash
 grep -r "TARGET_SKILL" ~/.hermes/skills/*/SKILL.md 2>/dev/null
 ```
+
+## Skill Drift Checker (`check_skill_drift.py`)
+
+### HOME gotcha (2026-10-12)
+`check_skill_drift.py` resolves both `HERMES_SKILLS` and `OVERRIDES_DIR` from
+`Path.home()`. In cron runs `HOME=/opt/data/home`, which routes formula-skill
+lookups through the `/opt/data/home/.hermes → /opt/data/.hermes` symlink (fine)
+but breaks override-path resolution — always run it as:
+```bash
+cd /opt/data/ai-topics && HOME=/opt/data python3 scripts/check_skill_drift.py
+```
+
+### Interpreting statuses
+- **`formula_missing`**: the skill has no formula counterpart — it is a
+  repo-authored skill parked in `_overrides/` instead of `_custom/`. This is a
+  layout/cosmetic issue, NOT drift; no review needed. (Steady-state count: 15.)
+- **Trivial drift to auto-fix now**: builtin skills gained a
+  `platforms: [linux, macos, windows]` frontmatter line and (for
+  writing-plans/subagent-driven-development) the `goal-delegation-patterns`
+  entry was removed from `related_skills`. If the only diff is the missing
+  `platforms:` line, copy the line in (must go BEFORE the closing `---` of the
+  frontmatter, typically right after `license:`), then verify with diff.
+  Fixed this way on 2026-10-12: systematic-debugging, requesting-code-review.
+  Deliberately NOT synced (intentional override content): writing-plans,
+  subagent-driven-development (goal-delegation-patterns related_skills link),
+  arxiv (canonical `~/ai-topics/wiki/raw/papers/` path + Semantic Scholar
+  rate-limit row), ocr-and-documents (fully additive-synced, was safe).
+- **Real review needed**: `formula_has_new_files` means the builtin shipped new
+  `references/*.md` files the override lacks — mostly additive knowledge worth
+  copying into the override (the override SKILL.md body edits are usually
+  intentional localizations; keep them). Largest backlog: active-crawl-wiki
+  (25 files), xurl (11), wiki-concept-from-research (5).
 
 ## Rules
 
