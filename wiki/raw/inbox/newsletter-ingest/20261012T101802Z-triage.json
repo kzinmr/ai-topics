@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "20261012T101802Z",
+  "triaged_at": "2026-10-12T10:30:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 4,
+  "recommend_wiki_ingest_count": 3,
+  "items": [
+    {
+      "message_id": "<20261011123159.3.470cbb8c2aa49488@mg-d1.substack.com>",
+      "subject": "Why every company now needs to think and operate like a lab team | Josh Woodward (Google Labs, Gemini, AI Studio)",
+      "date": "2026-10-11",
+      "sender": "Lenny's Newsletter (podcast)",
+      "source_label": "uid=776",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-11-why-every-company-now-needs-to-think-and-operate-like-a-lab-team-josh-woodward-g.md",
+      "canonical_url": "https://open.substack.com/pub/lenny/p/why-every-company-now-needs-to-think",
+      "importance": "high",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "entities/google",
+        "entities/google-labs",
+        "entities/gemini",
+        "entities/ai-studio",
+        "entities/josh-woodward",
+        "concepts/ai-native-organization",
+        "concepts/ai-product-management"
+      ],
+      "tags": ["newsletter", "podcast", "lenny", "google-labs", "gemini", "ai-studio", "ai-product", "org-design"],
+      "newsjacking_score": 3,
+      "rationale": "Google Labs / Gemini / AI Studio を率いる Josh Woodward の対談。「企業はラボチームのように考えて運営すべき」という AI ネイティブ組織論の主張で、AI 製品開発と組織設計の交点という wiki 未整備のテーマに直結。Google / Gemini / AI Studio は既存エンティティの補強にもなる。Product-management 寄りだが AI 組織変革の一次情報として価値が高い。",
+      "external_article_count": 20,
+      "notes": "raw ファイル内リンクはほぼ全て Substack 装飾リンク。canonical は open.substack.com/pub/lenny/p/why-every-company-now-needs-to-think。Josh Woodward / Google Labs / AI Studio の dedicated entity 有無を wiki-ingest 段階で要確認（現時点で entities/google.md, entities/google-antigravity.md, entities/gemma-4.md 経由の言及のみ）。Podcast ゲスト主体のため references/podcast-guest-entity-creation.md 参照。"
+    },
+    {
+      "message_id": "<20261011130352.3.d4daf08128611731@mg-d0.substack.com>",
+      "subject": "Hark the Herald Agent, Claude Gets Its Docs in a Row, and OpenAI's Sign of the Times",
+      "date": "2026-10-11",
+      "sender": "The Signal (Alex Banks)",
+      "source_label": "uid=777",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-11-hark-the-herald-agent-claude-gets-its-docs-in-a-row-and-openai-s-sign-of-the-tim.md",
+      "canonical_url": "https://open.substack.com/pub/thesignal/p/hark-the-herald-agent-claude-gets",
+      "importance": "critical",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "entities/alex-banks",
+        "entities/the-signal",
+        "entities/herald-agent",
+        "entities/anthropic",
+        "entities/claude",
+        "entities/openai",
+        "concepts/ai-coding-agents",
+        "concepts/agent-documentation"
+      ],
+      "tags": ["newsletter", "the-signal", "ai-agents", "coding-agents", "anthropic", "claude", "openai", "agent-docs"],
+      "newsjacking_score": 5,
+      "rationale": "3トピックすべてが wiki コア領域に直撃：(1) 'Herald Agent' — 新規 AI エージェント／コーディングエージェント系リリースの可能性、エージェントハーネス文脈。 (2) 'Claude Gets Its Docs in a Row' — Anthropic のドキュメント整備はエージェント開発体験の重要シグナル。 (3) \"OpenAI's Sign of the Times\" — 産業動向分析。The Signal (Alex Banks) は既存 entity 収録済みで、毎号 high-signal な AI エージェント分析。Critical 判定。",
+      "external_article_count": 20,
+      "notes": "canonical は open.substack.com/pub/thesignal/p/hark-the-herald-agent-claude-gets。external redirect（substack.com/redirect/...）が 11 本あり、各自の解決は wiki-ingest 段階の web_extract で。Herald Agent の実体（企業／OSS プロジェクト）はタイトルからのみ不明 — wiki-ingest で本文確認必須。既存 entities/alex-banks.md を更新対象として使用可（上書き禁止、patch で追記）。"
+    },
+    {
+      "message_id": "<20261011204928.3.c65098258ec51068@mg-d0.substack.com>",
+      "subject": "The Tragedy of 3D XPoint (AKA Intel Optane AKA Micron QuantX)",
+      "date": "2026-10-11",
+      "sender": "Irrational Analysis (Substack)",
+      "source_label": "uid=778",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-11-the-tragedy-of-3d-xpoint-aka-intel-optane-aka-micron-quantx.md",
+      "canonical_url": "https://open.substack.com/pub/irrationalanalysis/p/the-tragedy-of-3d-xpoint-aka-intel",
+      "importance": "low",
+      "wiki_relevant": false,
+      "recommend_wiki_ingest": false,
+      "suggested_targets": [],
+      "tags": ["newsletter", "semiconductors", "memory", "intel", "micron"],
+      "newsjacking_score": 1,
+      "rationale": "3D XPoint / Intel Optane / Micron QuantX の失敗事例分析。半導体・メモリ技術のビジネス分析としては優良だが、wiki のスコープ（LLM / AI Agent 技術、推論・学習インフラ）からは周辺的。AI 推論のメモリ階層（HBM / KV cache）と間接的に接続する余地はあるものの、直接的な AI コンテンツではない。",
+      "external_article_count": 20,
+      "notes": "収録しない場合も raw newsletter は保持済みで、将来の 'AI 推論とメモリ階層' 系ページでの参考引用には使える。"
+    },
+    {
+      "message_id": "<20261012045629.3.ec0333d4ea4a91b3@mg-d1.substack.com>",
+      "subject": "Muse.",
+      "date": "2026-10-12",
+      "sender": "AI by Akash",
+      "source_label": "uid=780",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-12-muse.md",
+      "canonical_url": "https://open.substack.com/pub/aibyaakash/p/muse",
+      "importance": "high",
+      "wiki_relevant": true,
+      "recommend_wiki_ingest": true,
+      "suggested_targets": [
+        "entities/openai",
+        "entities/akash",
+        "concepts/ai-coding-agents"
+      ],
+      "tags": ["newsletter", "ai-by-akash", "openai", "ai-product"],
+      "newsjacking_score": 3,
+      "rationale": "AI by Akash（Aakash Gupta）の号。タイトル 'Muse.' のみが情報で、OpenAI 系の製品・機能発表（推定：Muse = 音楽生成 or 創造系エージェント製品）か、コーディングエージェント関連の解説のいずれか。raw ファイルは Substack リンクのみのダンプで本文情報が無いため判定不能。AI by Akash は普段 AI 製品分析中心であり、スコープ適合の可能性が高い。wiki-ingest 段階で canonical URL を fetch して本体判定すべき。",
+      "external_article_count": 20,
+      "notes": "タイトルが短すぎて内容判断不可。importance: high は『fetch する価値がある蓋然性が高い』という意味で、本文が雑記・リンク集と判明した場合は wiki-ingest 側で skip してよい。既存 raw/articles に 'muse' 一致は geoffrey-litt / openai-astra / oldvcr の別文脈のみ。"
+    }
+  ]
+}
