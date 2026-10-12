@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3190
+> Total pages: 3196
 > Last updated: 2026-10-12
 
 ## Entities (939 pages)
@@ -946,7 +946,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2164 pages)
+## Concepts (2170 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1328,6 +1328,7 @@
 - [[concepts/ai-services-joint-ventures]] — AI Services Joint Ventures
 - [[concepts/ai-slop]] — AI Slop
 - [[concepts/ai-slop-productivity-paradox]] — AI Slop and the Productivity Paradox
+- [[concepts/aria-advisor-consultation-agents]] — ARIA (arXiv:2610.13870) — meta-controller that learns WHEN a cheap executor should consult a stronger advisor as sequential resource allocation; Monte-Carlo-learned SILENT/CONSULT, recovers 44–81% of the executor-advisor gap at <½ advisor cost on SWE-bench Verified/Terminal-Bench 2.1/τ²-bench, beats routing/cascading
 - [[concepts/ai-skepticism-movement]] — 2026 developer-culture backlash against default-on AI assistance (No AI Fridays, Rust contribution policy)
 - [[concepts/ai-skeptic-radicalization-investigation]] — Sept 2026 reporting (Klippenstein) that DHS C&TIS assessed domestic AI-skeptic commentators as a "radicalization" concern; contested, low confidence
 - [[concepts/ai-subprime]] — AI Subprime Crisis
@@ -1637,6 +1638,7 @@
 - [[concepts/comprehensive-ai-services]] — Comprehensive AI Services (CAIS)
 - [[concepts/compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks
 - [[concepts/compositional-generalization]] — Compositional Generalization — Harnesses as compositional generalizers; RLMs enable solving unseen problems by composing familiar patterns
+- [[concepts/cryptographic-capability-concealment]] — Provably hiding arbitrary capabilities (arXiv:2610.13928) — backdoors embedding encrypted NNs in model weights behind a digital-locker trigger are provably hard to elicit/interpret even with full weight access; a hard limit on elicitation-based capability evals and open-weight auditability
 - [[concepts/computer-architecture]] — computer-architecture
 - [[concepts/computer-science-education]] — Computer Science Education
 - [[concepts/computer-use]] — Computer Use; enriched with Gemini 3.5 Flash Computer Use (June 2026) — native integration, multi-environment support, safety architecture (June 25)
@@ -1700,6 +1702,7 @@
 - [[concepts/dangerzone]] — Dangerzone
 - [[concepts/dayjob-benchmark]] — DAYJOB — 130 professional-built healthcare/finance tasks averaging 13.6/16.6 human hours; Harbor envs + all-or-nothing binary rubrics judged by agentic judge; Claude Opus 5.5 best at 24.7%/23.9% pass, median config 0.6%/2.5%; headline failure = accepting premises the record contradicts (arXiv:2610.01306, Oct 2026)
 - [[concepts/daniel-jackson]] — Daniel Jackson
+- [[concepts/dev-state-sandbox-snapshots-for-coding-agents]] — Returning to Development States (arXiv:2610.13841) — Go-Explore search over full Daytona snapshots; recovery value comes mainly from state OUTSIDE the repo (DBs, services, runtime), paying off when work spans multiple services un-reconstructable from a git diff
 - [[concepts/dark-factory-software-factory]] — Dark Factory Software Factory; + Uber enterprise-scale case study (Aug 2026: >70% agent-authored PRs, cost equation, -34%/-52% cost curves)
 - [[concepts/data-analysis-agents]] — AI Data Analysis Agents
 - [[concepts/data-breach]] — Data Breach
@@ -2644,6 +2647,7 @@
 - [[concepts/post-training/rlhf-reinforcement-learning-from-human-feedback]] — RLHF (Reinforcement Learning from Human Feedback)
 - [[concepts/post-training/rlvr]] — RLVR (Reinforcement Learning with Verifiable Rewards)
 - [[concepts/post-training/rlvr-science-limitations]] — RLVR Science Limitations
+- [[concepts/prediction-not-sufficient-memory-state]] — Prediction Is Not a Sufficient Memory State (arXiv:2610.13881) — a memory reproducing today's predictions can lack the hidden evidence needed to learn from the next observation; exact fixed-dimension recurrent state exists only for polynomial losses, ridge's hidden state is the design matrix
 - [[concepts/post-training/roll-rl]] — ROLL
 - [[concepts/post-training/rpg-regularized-policy-gradient]] — RPG (Regularized Policy Gradient)
 - [[concepts/post-training/sdar-self-distilled-agentic-rl]] — Self-Distilled Agentic Reinforcement Learning (SDAR)
@@ -2769,6 +2773,7 @@
 - [[concepts/rio-3.5-open-397b]] — Rio 3.5 Open 397B
 - [[concepts/rlm-for-indexing]] — RLM for Indexing & Content Understanding
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
+- [[concepts/run-to-run-variance-semantic-query]] — Same Query, Different Answer (arXiv:2610.13823) — at temp 0, 0.07–10.2% of rows flip output over 5 runs (24% on one task); query plans amplify row noise exponentially (2/3 of UDA-Bench answers move); 16/28 LRO-Bench recommendations unsettled by their own runs
 - [[concepts/rlms]] — RLMs (Recursive Language Models) are a paradigm where LLMs perform self-optimization at inference time by recursively...
 - [[concepts/robert-goldston]] — robert-goldston
 - [[concepts/roberta-williams]] — roberta-williams
@@ -3096,6 +3101,7 @@
 - [[concepts/world-models-science]] — World Models for Scientific Discovery
 - [[concepts/writing-effective-tools-for-ai-agents]] — Writing Effective Tools for AI Agents
 - [[concepts/writing-tools-for-agents]] — Writing Effective Tools for Agents
+- [[concepts/x-agentred-multi-service-red-teaming]] — X-AgentRed (arXiv:2610.13886) — self-evolving red-teaming that discovers harmful cross-service tool-call paths via a tool effects/preconditions dependency graph refined by execution feedback; 1.77× STAC harmful-path rate, 2.99× tool coverage across 4 frontier models
 - [[concepts/xai-anthropic-colossus-deal]] — xAI-Anthropic Colossus Data Center Deal
 - [[concepts/xianming-li]] — xianming-li
 - [[concepts/yellow-brick-road-ai-app-layer]] — Yellow Brick Road — AI Application Layer Strategy
