@@ -1,3 +1,10 @@
+## [2026-10-12] query | hot-post morning (09:30 JST) — "skills are npm without package.json"
+- Angle: forwardable morning synthesis of the two 2026-10-08 skill papers via [[concepts/agent-skill-ecosystem-missing-package-manager]] — six missing resolution primitives (registry/pinning/provenance/update propagation/name resolution/dependency solver), each a mechanism not a metaphor.
+- Numbers cited: 2,193,119 adoptions; audit yield 14.9% (model-ranked top-100) vs 0.5% (starred top-100) = ~30×; ~1 in 4 skills co-installed with same-job rival; rival takes over 1 in 5 runs; >1 in 3 exclusive core functions lost when rival opens first; winner decided by install location; 20,947 snapshots → 822,109 pairs → 312 confirmed pairs / 6,368 runs / 169,294 tool calls / 542 agent-hours.
+- Supporting cross-links only (not primary): runtime-oversight-knobs (monitor has no fixed referent), five-tier-skill-precedence (stub; unenforced precedence ≠ control), benchmark green-light blind spot shared with agent-overclaiming/reward-hacking.
+- 🆕 `queries/2026-10-12-skills-npm-without-package-json-hotpost.md` (type: query, confidence: high). index.md: Queries 14→15, Total pages 3189→3190. Wikilinks verified via basename resolver (0 broken).
+- Dedup: 10-11 night post had runtime-oversight-knobs/Cadence/OnTrack/ISE as primary — here they are supporting links only. The three skill-ecosystem pages appear as primary for the first time in any hot-post.
+
 ## [2026-10-11] ingest | x-accounts-scan run 20261011T223036Z
 
 - Script scan: 84 tracked / 11 accounts scanned (budget 12, cursor 72→83); 4 substantive candidates, **4 new posts**, 0 errors.

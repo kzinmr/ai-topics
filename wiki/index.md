@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3189
-> Last updated: 2026-10-11
+> Total pages: 3190
+> Last updated: 2026-10-12
 
 ## Entities (939 pages)
 
@@ -3193,7 +3193,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (14 pages)
+## Queries (15 pages)
 
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
@@ -3208,4 +3208,5 @@
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
 - [[queries/2026-10-08-human-gate-retirement-synthesis]] — 4 independent lines (ScaleX 33% approval rate, 115-practitioner survey, OverAct, PACE) converge: the human gate is structurally broken; human role contracts to post-hoc audit + scope-setting
 - [[queries/2026-10-09-crash-consistent-agent-synthesis]] — UndoBench 83.54% competence vs 46.72% recovery: effect-integrity gap; Retire/Absurd/Pi Durable/StateWise dig the same hole at 5 distinct layers, counter-evidence included
+- [[queries/2026-10-12-skills-npm-without-package-json-hotpost]] — Skills are npm without package.json: 6 missing resolution primitives; 2.19M adoptions, 30× audit-yield gap vs stars, >1/3 exclusive functions lost to install-order accidents
 - [[queries/wiki-graph-analysis-weekly-2026-10-02]] — Weekly Wiki Graph Analysis (2026-10-02) — 3,120 pages; 6 top-level orphans, 0 ghost entries, 866 tags
