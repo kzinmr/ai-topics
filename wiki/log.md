@@ -1,3 +1,10 @@
+## [2026-10-12] lint | Weekly tag audit — clean; durable cron script-path fix applied
+- **Audit result (via `scripts/tag_audit.py`)**: 0 composite kebab-case tags, 0 tags-not-in-taxonomy across 3,249 tagged pages (884 unique tags in use, 959 valid in SCHEMA). Coverage 108.5%. No normalization run needed (audit clean ⇒ skip per skill).
+- **Root cause of the recurring `Blocked: script path resolves outside the scripts directory: 'tag_audit.py'`**: the `tag-audit-weekly` cron job (id 21f235565c6d) had a cron pre-run `script: tag_audit.py`. The pre-run mechanism only loads from `/opt/data/.hermes/scripts/`, and the canonical audit lives at `~/ai-topics/scripts/tag_audit.py` — which is permanently outside that dir, so no `script:` value can ever load it. The `/opt/data/.hermes/scripts/tag_audit.py` symlink also points at a deleted skill path.
+- **Durable fix applied**: edited `~/.hermes/cron/jobs.json` — set `script: null`, set `workdir: /opt/data/ai-topics` (injects AGENTS.md), and patched the prompt Phase 1 to run `cd /opt/data/ai-topics && python3 scripts/tag_audit.py` via terminal itself. Fixed stale normalization path refs to `_overrides/wiki-graph-health/scripts/tag_normalization.py`. Jobs backed up to `jobs.json.bak-2026-10-12-101226`. This is the skill's documented permanent fix (Layer 3 pitfall, reconfirmed 2026-10-05).
+
+---
+
 ## [2026-10-12] query | hot-post morning (09:30 JST) — "skills are npm without package.json"
 - Angle: forwardable morning synthesis of the two 2026-10-08 skill papers via [[concepts/agent-skill-ecosystem-missing-package-manager]] — six missing resolution primitives (registry/pinning/provenance/update propagation/name resolution/dependency solver), each a mechanism not a metaphor.
 - Numbers cited: 2,193,119 adoptions; audit yield 14.9% (model-ranked top-100) vs 0.5% (starred top-100) = ~30×; ~1 in 4 skills co-installed with same-job rival; rival takes over 1 in 5 runs; >1 in 3 exclusive core functions lost when rival opens first; winner decided by install location; 20,947 snapshots → 822,109 pairs → 312 confirmed pairs / 6,368 runs / 169,294 tool calls / 542 agent-hours.
