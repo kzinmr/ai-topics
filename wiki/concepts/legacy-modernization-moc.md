@@ -5,6 +5,9 @@ updated: 2026-10-14
 type: concept
 tags: [concept, knowledge-management, software-engineering, architecture, testing, reliability]
 sources:
+  - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch03.xhtml
+  - https://learning.oreilly.com/library/view/practical-process-automation/9781492061441/ch09.html
+  - https://learning.oreilly.com/library/view/evals-for-ai/9798341660717/ch03.html
   - https://learning.oreilly.com/library/view/working-effectively-with/0131177052/ch13.html
   - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_018.html
   - https://learning.oreilly.com/library/view/monolith-to-microservices/9781492047834/ch03.html
@@ -15,7 +18,7 @@ related: [concepts/characterization-testing, concepts/legacy-code-seams, concept
 
 # Legacy Modernization — Map of Concepts
 
-Navigate the foundations behind [[concepts/enterprise-legacy-modernization]]. The order follows the initial reading path in [[queries/modernization-inner-loop-reading]]: observe, agree, replace incrementally, verify, constrain and release.
+Navigate the foundations behind [[concepts/enterprise-legacy-modernization]]. Project execution follows [[queries/modernization-inner-loop-reading]]: observe, agree, replace incrementally, verify, constrain and release. The reusable delivery method follows [[queries/modernization-outer-loop-reading]]: maintain knowledge, assetize transformations, control execution, evaluate changes and enforce action/artifact boundaries.
 
 ## Establish evidence and intended behavior
 
@@ -43,5 +46,17 @@ Navigate the foundations behind [[concepts/enterprise-legacy-modernization]]. Th
 | [[queries/modernization-java-logging]] | Define the target system's diagnostic, business and audit observations |
 | [[queries/modernization-inner-loop-study-notes]] | Inspect the reading scope and the resulting application rules |
 | [[queries/modernization-inner-loop-sources]] | Find originals, PDFs, licenses and unresolved acquisition items |
+
+## Improve and reuse the delivery method
+
+| Concept / route | Use |
+|---|---|
+| [[concepts/living-documentation]] | Preserve authority, rationale, applicability and continuing consistency |
+| [[concepts/semantic-transformation-recipes]] | Version bounded changes, preconditions, negative cases and validation |
+| [[concepts/modernization-workflow-recovery]] | Handle retry, uncertain effects, compensation and human waiting |
+| [[concepts/modernization-evaluation-corpus]] | Evaluate method changes against representative cases and observed failures |
+| [[concepts/artifact-provenance-gates]] | Bind origin, checks and promotion decisions to artifact identity |
+| [[queries/modernization-outer-loop-study-notes]] | Inspect actual reading, proposed platform assets and remaining depth |
+| [[queries/modernization-outer-loop-sources]] | Inspect all 20 availability findings and licensed supplements |
 
 These concepts organize an evidence-based delivery method. They do not report an implemented modernization or prove that a coding agent can execute it without domain and operational judgment.

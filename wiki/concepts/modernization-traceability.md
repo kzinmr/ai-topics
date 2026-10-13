@@ -5,6 +5,9 @@ updated: 2026-10-14
 type: concept
 tags: [concept, software-engineering, documentation, verification, audit, governance, business-process, codex]
 sources:
+  - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch04.xhtml
+  - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch12.xhtml
+  - raw/papers/2020-04-08_google_building-secure-reliable/ch14.md
   - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_016.html
   - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_018.html
   - https://aws.amazon.com/blogs/migration-and-modernization/forward-engineering-aws-transform-generated-business-requirements-with-openai-codex/
@@ -84,6 +87,14 @@ Architectural constraints have their own owners, criteria and run evidence; conn
 OpenAI's [modernization cookbook](https://developers.openai.com/cookbook/examples/codex/code_modernization) uses reviewable pilot documents and an execution plan. For enterprise use, connect those documents to the ledger instead of retaining intent only in prompts.
 
 The [[raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-agents|HumanLayer brownfield report]] shows why review of discovery and plans matters: mistaken dependency assumptions can propagate into a plausible implementation. Preserve uncertainty and evidence locations when compacting context. See [[concepts/harness-engineering/context-engineering]].
+
+## Reuse and artifact identity
+
+[[concepts/living-documentation]] adds context and considered alternatives to the decision record. Preserve an earlier rationale and add a superseding decision when assumptions change. For outer-loop reuse, record applicability, owner, check/evidence revision and a review trigger; the proposed ledger becomes a governed knowledge asset rather than an unqualified answer cache.
+
+[[concepts/artifact-provenance-gates]] extends the chain from source obligations to the actual checked and promoted artifact. Google's Chapter 14 distinguishes source assurance from authenticated binary provenance. Record the artifact digest, builder/input identity, verification runs, policy and approval version. Recheck relevant decisions when a candidate or its evidence changes; a prior approval should not silently apply to a substituted artifact.
+
+Use [[concepts/modernization-workflow-recovery]] to retain unresolved decisions and approval waiting across restarts. These additions are a modernization synthesis, not evidence that the previously cited vendor demonstrations implemented every field or mechanism.
 
 ## Failure modes
 

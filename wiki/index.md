@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3221
+> Total pages: 3228
 > Last updated: 2026-10-14
 
 ## Entities (940 pages)
@@ -947,7 +947,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2186 pages)
+## Concepts (2191 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1391,6 +1391,7 @@
 - [[concepts/application-compatibility]] — Application Compatibility
 - [[concepts/applied-ml]] — applied-ml
 - [[concepts/architect-loop]] — Architect Loop (Cross-Vendor Agent Pattern)
+- [[concepts/artifact-provenance-gates]] — Artifact Provenance Gates — bind trustworthy build origin, artifact identity, checks, policy and promotion evidence
 - [[concepts/artificial-contributors-open-source]] — RFC-style framework proposed by Andrew Nesbitt (May 2026) for disclosure, quality, and behavioral requirements for AI...
 - [[concepts/ask-user-question-pattern]] — AskUserQuestion Pattern
 - [[concepts/assembly-optimization]] — assembly-optimization
@@ -1791,7 +1792,7 @@
 - [[concepts/dspy-tutorial]] — DSPy Tutorial (Getting Started)
 - [[concepts/dspyrlm]] — DSPy.RLM
 - [[concepts/dual-process-theory]] — Dual Process Theory (AI)
-- [[concepts/durable-execution]] — Durable Execution — Fault-tolerant, stateful execution model for long-running agent workflows
+- [[concepts/durable-execution]] — Durable Execution — persistence/replay, recoverable workflows, permanent failures and external-effect limits
 - [[concepts/dynamic-software]] — The paradigm shift from static (deterministic, hard-coded) software to dynamic (model-driven, non-deterministic, agen...
 - [[concepts/dynamic-workflows]] — Dynamic Workflows in Claude Code; enriched with Boris Cherny "algebra for agents" framing + Bun Zig→Rust production rewrite (Aug 8)
 - [[concepts/global-coherence-multi-agent]] — Global Coherence in Local-to-Global Multi-Agent Systems — GCPO: local-to-global rollout + Global Advantage Attribution + reference-policy regularizer fixes emergent incoherence in independently-RL-trained MAS (arXiv:2610.02036)
@@ -1857,7 +1858,7 @@
 - [[concepts/evaluation/eval-loops]] — Eval Loops — AI Output Quality Control
 - [[concepts/evaluation/evals-for-ai-agents]] — Evals for AI Agents
 - [[concepts/evaluation/evals-vs-monitoring-debate]] — Evals vs Monitoring Debate
-- [[concepts/evaluation/evaluation-flywheel]] — Evaluation Flywheel
+- [[concepts/evaluation/evaluation-flywheel]] — Evaluation Flywheel — observed failures, independent expectations, component/task checks and held-out judge data
 - [[concepts/evaluation/evaluation-harness-validity]] — Evaluation Harness Validity
 - [[concepts/evaluation/generator-evaluator-pattern]] — Generator-Evaluator Pattern
 - [[concepts/evaluation/judgment-list]] — Judgment List
@@ -2255,13 +2256,14 @@
 - [[concepts/learning-to-rank]] — Learning to Rank
 - [[concepts/legacy-behavioral-parity]] — Legacy Behavioral Parity — characterization and differential tests, business-rule exceptions, state reconciliation, independent acceptance, and rollback evidence
 - [[concepts/legacy-code-seams]] — Legacy Code Seams — substitution, enabling points, sensing/separation and test-versus-migration boundaries
-- [[concepts/legacy-modernization-moc]] — Legacy Modernization — map of evidence, specification, incremental change, verification, architectural constraints and production acceptance
+- [[concepts/legacy-modernization-moc]] — Legacy Modernization — concept map for project evidence/acceptance and reusable knowledge, recipes, recovery, evaluation and artifact gates
 - [[concepts/lexical-search]] — Lexical Search
 - [[concepts/linear-agent-code-intelligence]] — Linear Agent Code Intelligence
 - [[concepts/linear-walkthroughs]] — Linear Walkthroughs
 - [[concepts/linguistic-vertigo]] — A cognitive phenomenon affecting human language perception through daily interaction with LLMs, and the concepts of l...
 - [[concepts/lisp]] — Lisp
 - [[concepts/little-learner-llm]] — LittleLearner — K-5-curriculum-restricted LMs (0.6B/1.3B/5B); scaling/post-training/ICL elicit but don't acquire out-of-scope capability (arXiv 2608.13545)
+- [[concepts/living-documentation]] — Living Documentation — authoritative knowledge, reconciliation, rationale, applicability and continued curation
 - [[concepts/llama-4]] — LLaMA 4
 - [[concepts/llm-assisted-learning]] — LLM-Assisted Learning — systematic methodology for using LLMs to learn complex topics via iterative knowledge-building and simulation (Laurentiu Raducu, Aug 2026)
 - [[concepts/llama-cpp]] — llama.cpp (redirect → local-llm pages)
@@ -2429,7 +2431,9 @@
 - [[concepts/modelcrafting]] — Modelcrafting — AI agents autonomously shaping, valuing, and improving other models; coined by Thoughtful Lab (Apr 2026)
 - [[concepts/modern-retrieval-toolkit]] — Modern Retrieval Toolkit
 - [[concepts/modernbert]] — modernbert
-- [[concepts/modernization-traceability]] — Modernization Traceability — inspectable legacy-source → business-decision → specification → implementation → test → release chain; structural coverage versus semantic correctness
+- [[concepts/modernization-evaluation-corpus]] — Modernization Evaluation Corpus — versioned cases, independent expectations, stage failures, slices and judge calibration
+- [[concepts/modernization-traceability]] — Modernization Traceability — obligations, dispositions, reusable decision context and checked/promoted artifact identity
+- [[concepts/modernization-workflow-recovery]] — Modernization Workflow Recovery — stable operation identity, uncertain effects, retries, compensation and human handoffs
 - [[concepts/moe-train-inference-mismatch]] — MoE Train-Inference Mismatch
 - [[concepts/moe-training-noumena-methodology]] — MoE Training Methodology (Noumena)
 - [[concepts/moloch-multipolar-trap]] — Moloch (Multipolar Trap)
@@ -2869,6 +2873,7 @@
 - [[concepts/self-replicating-llm]] — Self-Replicating LLMs
 - [[concepts/semantic-ids]] — Semantic IDs
 - [[concepts/semantic-kernel]] — Microsoft open-source SDK for integrating LLMs into apps; enterprise agent framework with .NET/Python/Java support
+- [[concepts/semantic-transformation-recipes]] — Semantic Transformation Recipes — LST targeting, recipe forms, reuse contracts, negative cases and AI boundaries
 - [[concepts/sentry]] — sentry
 - [[concepts/separation-of-duties]] — Separation of Duties (worker/evaluator split; canonical page: [[concepts/security-and-governance/agent-separation-of-duties]])
 - [[concepts/serializability]] — Serializability — Structured Output for AI Systems
@@ -2941,7 +2946,7 @@
 - [[concepts/spacex-cursor-acquisition]] — SpaceX Acquires Cursor — $60B Coding Agent Acquisition
 - [[concepts/sparse-signal-loop]] — Sparse Signal Loop
 - [[concepts/spec-driven-development]] — Spec-Driven Development; legacy modernization application with rule traceability and behavioral parity
-- [[concepts/specification-by-example]] — Specification by Example — collaborative realistic examples, refinement, business meaning and separate validation mechanics
+- [[concepts/specification-by-example]] — Specification by Example — collaborative examples, validation mechanics and continued documentation consistency
 - [[concepts/speculative-decoding]] — Speculative Decoding — Accelerating LLM inference by using draft models to predict multiple tokens per forward pass
 - [[concepts/specscale-speculative-search-serving]] — SpecScale — serving system for speculative search under test-time scaling; early path pruning + dedup + deferred verification cut throughput/latency cost of TTS (arXiv:2609.39334, Sept 2026)
 - [[concepts/speculative-decoding-mtp]] — Speculative decoding and Multi-Token Prediction (MTP) techniques that accelerate LLM inference by using a smaller dra...
@@ -3216,7 +3221,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (22 pages)
+## Queries (24 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
@@ -3230,7 +3235,9 @@
 - [[queries/modernization-inner-loop-sources]] — Modernization Inner-loop — 42-book source availability, public/reuse distinctions, licensed whole-book corpus, PDF supplements and checksums
 - [[queries/modernization-inner-loop-study-notes]] — Modernization Inner-loop — inspected sections in the seven initial books, operational/security supplements and applied concept synthesis
 - [[queries/modernization-java-logging]] — Java Logging Strategy for Modernization — operational requirements, domain observations, Java implementation, logging contracts, acceptance checks and authoritative English reading sources
-- [[queries/modernization-outer-loop-reading]] — Modernization Outer-loop Reading — 20 resources in six sections for reusable SME knowledge, transformation recipes, execution control, evaluation, audit and improvement; O’Reilly/Amazon.com links
+- [[queries/modernization-outer-loop-reading]] — Modernization Outer-loop Reading — 20 resources in six sections for reusable knowledge, recipes, execution, evaluation, audit and improvement; sources and focused notes
+- [[queries/modernization-outer-loop-sources]] — Modernization Outer-loop — all 20 public-source findings, shared book archive, licensed documentation/report supplements and integrity checks
+- [[queries/modernization-outer-loop-study-notes]] — Modernization Outer-loop — inspected sections in eight priority works, five concept applications, supplementary measurements and remaining depth
 - [[queries/modernization-reading-guide]] — Codex Enterprise Modernization Reading Guide — purpose-based navigation to inner-loop project execution and outer-loop process design; topic map, reading approach and selection principles
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy

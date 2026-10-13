@@ -5,6 +5,9 @@ updated: 2026-10-14
 type: concept
 tags: [concept, software-engineering, testing, documentation, business-process, verification]
 sources:
+  - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_010.html
+  - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_020.html
+  - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch03.xhtml
   - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_016.html
   - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_017.html
   - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_018.html
@@ -56,6 +59,14 @@ The following is a proposed evidence record, not a format quoted from the book:
 | Executable check or manual acceptance | Connect the decision to evidence |
 
 Maurício Aniche's *Effective Software Testing*, Chapter 2, complements this practice by deriving test partitions and boundaries from requirements. Use [[concepts/property-based-testing]] to explore broader properties after agreeing their meaning.
+
+## Maintain the documentation system
+
+Chapters 2 and 11 extend individual examples into a frequently validated, accessible and consistently worded documentation system. Split specifications that mix several concepts; merge fragments that force readers to assemble one feature from many files. Update the domain language as understanding changes, while keeping technical automation details outside business explanations.
+
+[[concepts/living-documentation]] adds an important reconciliation check from Martraire's Chapter 3: automation must actually consume the expectation in the specification. A fixed assertion in an adapter can keep passing after the displayed example changes. Continued checking therefore needs both the current example and the correct connection to execution.
+
+For cross-project reuse, retain the decision owner, applicable context and evidence revision in [[concepts/modernization-traceability]]. A passing example for one context cannot silently authorize a different business rule elsewhere.
 
 ## Limits
 

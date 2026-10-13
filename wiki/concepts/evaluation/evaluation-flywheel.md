@@ -1,9 +1,12 @@
 ---
 title: "Evaluation Flywheel"
 tags: [evaluation]
-sources: []
+sources:
+  - https://learning.oreilly.com/library/view/ai-engineering/9781098166298/ch04.html
+  - https://learning.oreilly.com/library/view/evals-for-ai/9798341660717/ch03.html
+  - https://learning.oreilly.com/library/view/evals-for-ai/9798341660717/ch05.html
 created: 2026-04-13
-updated: 2026-05-27
+updated: 2026-10-14
 type: concept
 ---
 
@@ -55,6 +58,14 @@ Rather than a single score, evaluate across multiple dimensions:
 3. Validate with A/B testing
 4. Deploy successful changes to production
 5. Add new cases to the Golden Dataset
+
+## Ground the loop in observed failures
+
+The 2026-10-14 outer-loop reading adds a concrete route from cases to reusable evaluation. Shankar and Husain's *Evals for AI Engineers*, Chapter 3, begins with trace inspection and free-form observations before organizing a failure taxonomy. Chapter 5 keeps judge-prompt examples, development cases and a final held-out set separate. Huyen's *AI Engineering*, Chapter 4, combines component/intermediate checks with end-to-end task evaluation and data slices.
+
+[[concepts/modernization-evaluation-corpus]] applies this to changing recipes, prompts, tools and recovery procedures. Version cases, expected outcomes, rubric, evaluator configuration and evaluated system together. A targeted failure set can reveal weaknesses without estimating normal production prevalence; a raw judge pass rate is not automatically a business success rate.
+
+Accountable domain judgement can supply the intended expectation. Quantification alone cannot correct an expectation inferred from the same mistaken generated implementation. Carry ambiguity and ownership through [[concepts/modernization-traceability]].
 
 ## Anti-Patterns
 

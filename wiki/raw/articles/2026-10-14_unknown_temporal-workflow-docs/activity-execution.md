@@ -1,0 +1,285 @@
+---
+title: Activity Execution
+created: '2026-10-14'
+updated: '2026-10-14'
+type: source
+tags:
+- documentation
+- software-engineering
+sources:
+- https://raw.githubusercontent.com/temporalio/documentation/6615d3b5325f93cdd7222fa05fad5184ec30c528/docs/encyclopedia/activities/activity-execution.mdx
+source_url: https://raw.githubusercontent.com/temporalio/documentation/6615d3b5325f93cdd7222fa05fad5184ec30c528/docs/encyclopedia/activities/activity-execution.mdx
+ingested: '2026-10-14'
+license: MIT
+attribution: Temporal Technologies Inc. (2022) and Uber Technologies, Inc. (2017)
+content_kind: verbatim Markdown/MDX source with added acquisition frontmatter; not
+  a rendered page
+original_sha256: 99ec92fbd0e5e1f848b03080da5bd63a2850e784c8c22d559f9cffe7781bd8be
+body_sha256: 99ec92fbd0e5e1f848b03080da5bd63a2850e784c8c22d559f9cffe7781bd8be
+---
+
+---
+id: activity-execution
+title: Activity Execution
+description: Learn how to start an Activity as a durable Activity Execution with built-in retries, timeouts, and failure handling.
+slug: /activity-execution
+toc_max_heading_level: 4
+tags:
+  - Concepts
+  - Activities
+  - Durable Execution
+  - Job Queue
+---
+
+import { CaptionedImage } from '@site/src/components';
+
+This page discusses the following:
+
+- [Activity Execution](#activity-execution)
+- [Activity Execution Lifecycle](#activity-execution-lifecycle)
+- [Cancellation](#cancellation)
+- [Activity ID](#activity-id)
+- [Asynchronous Activity Completion](#asynchronous-activity-completion)
+- [Task Token](#task-token)
+
+
+When an Activity caller starts an [Activity](/activities), an Activity Execution is created that orchestrates its full lifecycle, including retries.
+
+[Workflow Activities](/workflow-activity) and [Standalone Activities](/standalone-activity) are durable Activity Executions that live in the Temporal Service.
+They [dispatch Tasks to Activity Workers using an Activity Task Queue](/activity-execution#activity-execution-lifecycle) and collect results to determine next steps.
+
+## How can an Activity be invoked? {/* #activity-execution */}
+
+Once an Activity function has been [defined and registred in a Worker](/activity-definition) it can be invoked in different ways.
+
+### Workflow Activity Executions {/* #workflow-activity-executions */}
+
+A [Workflow Activity](/workflow-activity) is started as a step in a Workflow using the Temporal SDK and its lifetime is scoped to the Workflow.
+The Workflow schedules the Activity, and the result is delivered back to the Workflow when the
+Activity Execution closes. Each step is recorded in the Workflow Execution's
+[Event History](/workflow-execution/event), for example the
+Workflow [ActivityTaskCompleted](/references/events#activitytaskcompleted) Event. For other related Events, see
+[Workflow Activity Events](/workflow-execution/event#activity-events).
+
+:::tip GET STARTED
+
+Start a Workflow Activity:
+[Go](/develop/go/activities/execution)
+| [Java](/develop/java/activities/execution)
+| [PHP](/develop/php/activities/execution)
+| [Python](/develop/python/activities/execution)
+| [TypeScript](/develop/typescript/activities/execution)
+| [.NET](/develop/dotnet/activities/execution)
+| [Ruby](/develop/ruby/activities/execution)
+| [Rust](/develop/rust/activities/execution)
+
+:::
+
+### Standalone Activity Executions {/* #standalone-activity-executions */}
+
+A [Standalone Activity](/standalone-activity) is an independent top-level execution, started directly by a Temporal SDK [Client](/encyclopedia/temporal-client), with its own lifetime.
+ The Client gets a handle and
+fetches the result through it.
+Because there's no Workflow, there is no Workflow Event History.
+Standalone Activities use a [separate ID space](/standalone-activity#deduplication-and-id-space-uniqueness) for deduplication and uniqueness and provide full [visibility](/standalone-activity#visibility) and [lifecycle control](/standalone-activity#lifecycle-control).
+
+
+| | [Standalone Activity](/standalone-activity) | [Workflow Activity](/workflow-activity) |
+| --- | --- | --- |
+| Started by | [Client](/encyclopedia/temporal-client) | Workflow code |
+| Lifetime | Independent top-level execution | Scoped to the Workflow Run |
+| Result delivered to | The Client, through a handle | The Workflow |
+| Recorded in Event History | No Workflow, so no Event History | Yes |
+| Activity ID space | [Separate ID space](/standalone-activity#deduplication-and-id-space-uniqueness) | Scoped to the Workflow Run |
+| Best for | [Durable job processing](/evaluate/features/job-queue) | Multi-step orchestration |
+
+:::tip GET STARTED
+
+Start a Standalone Activity:
+[Go](/develop/go/activities/standalone-activities-quickstart#execute-activity)
+| [Python](/develop/python/activities/standalone-activities-quickstart#execute-a-standalone-activity)
+| [Java](/develop/java/activities/standalone-activities-quickstart#execute-activity)
+| [.NET](/develop/dotnet/activities/standalone-activities-quickstart#execute-activity)
+| [TypeScript](/develop/typescript/activities/standalone-activities-quickstart#execute-activity-type-checking)
+| [Ruby](/develop/ruby/activities/standalone-activities-quickstart#execute-activity)
+| [Rust](/develop/rust/activities/standalone-activities-quickstart#execute-activity)
+
+:::
+
+### Local Activity Executions {/* #local-activity-executions */}
+
+When specific performance optimizations are more important than full durability, an Activity may be executed in the same process as a Workflow (a [Local Activity](/local-activity)), bypassing the regular Activity Execution and Task Queue.
+
+:::tip
+
+[Local Activities](/local-activity) are not a replacement for regular Activities, since they bypass the regular Activity Execution lifecycle and lack full durability.
+
+:::
+
+## Activity Execution lifecycle
+
+[Workflow Activities](/workflow-activity) and [Standalone Activities](/standalone-activity) use the regular Activity Execution lifecycle, which includes the full chain of [Activity Task Executions](/tasks#activity-task-execution).
+
+<CaptionedImage src="/diagrams/activity-execution.svg" title="Activity Execution" />
+
+You can customize [Activity Execution timeouts](/encyclopedia/detecting-activity-failures#start-to-close-timeout) and
+[retry policies](/encyclopedia/retry-policies).
+
+If an Activity Execution fails (because it exhausted all retries, threw a
+[non-retryable error](/encyclopedia/retry-policies#non-retryable-errors), or was canceled), the error is returned to your
+[Workflow](/workflows) code when it attempts to fetch the Activity result. For [Standalone Activities](/standalone-activity) the error is
+returned to the Client when you attempt to fetch the Activity result.
+
+:::note
+
+Temporal guarantees that an Activity Task either runs or timeouts. There are multiple failure scenarios when an Activity
+Task is lost. It can be lost during delivery to a Worker or after the Activity Function is called and the Worker
+crashed.
+
+Temporal doesn't detect task loss directly. It relies on
+[Start-To-Close timeout](/encyclopedia/detecting-activity-failures#start-to-close-timeout). If the Activity Task times
+out, the Activity Execution will be retried according to the Activity Execution Retry Policy.
+
+In scenarios where the Activity Execution Retry Policy is set to `1` and a Timeout occurs, the Activity Execution will
+not be tried.
+
+:::
+
+## Cancellation {/* #cancellation */}
+
+Activity Cancellation:
+
+- lets the Activity know it doesn't need to keep doing work, and
+- gives the Activity time to clean up any resources it has created.
+
+Activities must heartbeat to receive cancellations from a Temporal Service.
+
+An Activity may receive Cancellation if:
+
+- The Activity was requested to be Cancelled. This can often cascade from Workflow Cancellation, but not always—SDKs
+  have ways to stop Cancellation from cascading. {/* TODO link to workflow cancellation */}
+- The Activity was considered failed by the Server because any of the Activity timeouts have triggered (for example, the
+  Server didn't receive a heartbeat within the Activity's Heartbeat timeout). The
+  [Cancelled Failure](/references/failures#cancelled-failure) that the Activity receives will have
+  `message: 'TIMED_OUT'`.
+- The Workflow Run reached a [Closed state](/workflow-execution#workflow-execution-status), in which case the Cancelled
+  Failure will have `message: 'NOT_FOUND'`.
+- In some SDKs:
+  - The Worker is shutting down.
+  - An Activity sends a Heartbeat but the Heartbeat details can't be converted by the Worker's configured
+    [Data Converter](/dataconversion). This fails the Activity Task Execution with an Application Failure.
+  - The Activity timed out on the Worker side and is not Heartbeating or the Temporal Service hasn't relayed a
+    Cancellation.
+
+There are different ways to receive Cancellation depending on the SDK. {/* TODO link to dev guide */} An Activity may
+accept or ignore Cancellation:
+
+- To allow Cancellation to happen, let the Cancellation Failure propagate.
+- To ignore Cancellation, catch it and continue executing.
+
+Some SDKs have ways to shield tasks from being stopped while still letting the Cancellation propagate.
+
+The Workflow can also decide if it wants to wait for the Activity Cancellation to be accepted or to proceed without
+waiting.
+
+Cancellation can only be requested a single time. If you try to cancel your Activity Execution more than once, it will
+not receive more than one Cancellation request.
+
+## What is an Activity ID? {/* #activity-id */}
+
+The identifier for an [Activity Execution](#activity-execution). The identifier can be generated by the system, or it
+can be provided by the Workflow code that spawns the Activity Execution. The identifier is unique among the open
+Activity Executions of a [Workflow Run](/workflow-execution/workflowid-runid#run-id). (A single Workflow Run may reuse
+an Activity ID if an earlier Activity Execution with the same ID has closed.)
+
+An Activity ID can be used to [complete the Activity asynchronously](#asynchronous-activity-completion).
+
+[Standalone Activities](/standalone-activity) have a [separate ID space](/standalone-activity#deduplication-and-id-space-uniqueness) from [the Workflow ID space](/workflow-execution/workflowid-runid) for deduplication and uniqueness.
+
+## What is Asynchronous Activity Completion? {/* #asynchronous-activity-completion */}
+
+Asynchronous Activity Completion is a feature that enables an Activity Function to return without causing the Activity
+Execution to complete. The Temporal Client can then be used from anywhere to both Heartbeat Activity Execution progress
+and eventually complete the Activity Execution and provide a result.
+
+:::tip GET STARTED
+
+Complete an Activity Asynchronously:
+[Go](/develop/go/activities/asynchronous-activity)
+| [Java](/develop/java/activities/asynchronous-activity)
+| [PHP](/develop/php/activities/asynchronous-activity)
+| [Python](/develop/python/activities/asynchronous-activity)
+| [TypeScript](/develop/typescript/activities/asynchronous-activity)
+| [.NET](/develop/dotnet/activities/asynchronous-activity)
+| [Ruby](/develop/ruby/activities/asynchronous-activity)
+
+:::
+
+### When to use Async Completion
+
+When an external system has the final result of a computation that is started by an Activity, there are three main ways
+of getting the result to the Workflow:
+
+1. The external system uses Async Completion to complete the Activity with the result.
+2. The Activity completes normally, without the result. Later, the external system sends a Signal to the Workflow with
+   the result.
+3. A subsequent Activity
+   [polls the external system](https://community.temporal.io/t/what-is-the-best-practice-for-a-polling-activity/328/2)
+   for the result.
+
+If you don't have control over the external system — that is, you can't add Async Completion or a Signal to its code —
+then:
+
+- you can poll (#3), or
+- if the external system can reliably call a webhook (and retry calling in the case of failure), you can write a webhook
+  handler that sends a Signal to the Workflow (#2).
+
+The decision between using #1 vs #2 involves a few factors. Use Async Completion if:
+
+- the external system is unreliable and might fail to Signal, or
+- you want the external process to Heartbeat or receive Cancellation.
+
+Otherwise, if the external system can reliably be trusted to do the task and Signal back with the result, and it doesn't
+need to Heartbeat or receive Cancellation, then you may want to use Signals.
+
+The benefit to using Signals has to do with the timing of failure retries. For example, consider an external process
+that is waiting for a human to review something and respond, and they could take up to a week to do so. If you use Async
+Completion (#1), you would:
+
+- set a [Start-To-Close Timeout](/encyclopedia/detecting-activity-failures#start-to-close-timeout) of one week on the
+  Activity,
+- in the Activity, notify the external process you need the human review, and
+- have the external process Asynchronously Complete the Activity when the human responds.
+
+If the Activity fails on the second step to notify the external system and doesn't throw an error (for example, if the
+Worker dies), then the Activity won't be retried for a week, when the Start-To-Close Timeout is hit.
+
+If you use Signals, you would:
+
+- set a [Start-To-Close Timeout](/encyclopedia/detecting-activity-failures#start-to-close-timeout) of one minute on the
+  Activity,
+- in the Activity, notify the external process you need the human review,
+- complete the Activity without the result, and
+- have the external process Signal the Workflow when the human responds.
+
+If the Activity fails on the second step to notify the external system and doesn't throw an error, then the Activity
+will be retried in a minute.
+
+In the second scenario, the failure is retried sooner. This is particularly helpful in scenarios like this in which the
+external process might take a long time.
+
+### What is a Task Token? {/* #task-token */}
+
+A Task Token is a unique identifier for an [Activity Task Execution](/tasks#activity-task-execution).
+
+[Asynchronous Activity Completion](#asynchronous-activity-completion) calls take either of the following as arguments:
+
+- a Task Token, or
+- an [Activity ID](#activity-id), a [Workflow ID](/workflow-execution/workflowid-runid#workflow-id), and optionally a
+  [Run ID](/workflow-execution/workflowid-runid#run-id).
+
+Since a Task Token is unique for an Activity execution, retries can cause a remote service using the Task Token to end
+up with an invalid one. For example, an Activity might fail after passing its current Task Token to a remote service,
+but before returning the complete async error, leaving that service with a Task Token that's no longer valid.
+
+To avoid this risk, you can provide the Activity ID and Workflow ID to the remote service instead of the Task Token.
