@@ -4,8 +4,8 @@ created: 2026-10-11
 updated: 2026-10-11
 type: concept
 tags: [agent-observability, coding-agents, ai-agents, harness-engineering, verification]
-sources: [raw/papers/2026-10-11_2610.12269_cadence-strategic-guidance-coding-agents.md, raw/papers/2026-10-11_2610.12375_ontrack-streaming-trajectory-monitoring.md, raw/papers/2026-10-11_2610.12360_epistemic-humility-agents-knowledge-conflict.md, raw/papers/2026-10-11_2610.11647_skill-co-installation-conflict.md]
-related: [concepts/cadence-strategic-guidance-coding-agents, concepts/ontrack-streaming-trajectory-monitoring, concepts/epistemic-humility-agents-knowledge-conflict, concepts/skill-co-installation-conflict, concepts/process-supervision, concepts/signal-allocation-in-post-training, concepts/instrumental-monitor-evasion, concepts/human-in-the-loop]
+sources: [raw/papers/2026-10-11_2610.12269_cadence-strategic-guidance-coding-agents.md, raw/papers/2026-10-11_2610.12375_ontrack-streaming-trajectory-monitoring.md, raw/papers/2026-10-11_2610.12360_epistemic-humility-agents-knowledge-conflict.md, raw/papers/2026-10-11_2610.11647_skill-co-installation-conflict.md, raw/papers/2026-10-09_2610.13870_aria-advisor-consultation-agents.md]
+related: [concepts/cadence-strategic-guidance-coding-agents, concepts/ontrack-streaming-trajectory-monitoring, concepts/epistemic-humility-agents-knowledge-conflict, concepts/skill-co-installation-conflict, concepts/process-supervision, concepts/signal-allocation-in-post-training, concepts/instrumental-monitor-evasion, concepts/human-in-the-loop, concepts/aria-advisor-consultation-agents]
 ---
 
 # Runtime Oversight in Coding Agents — Three Orthogonal Knobs

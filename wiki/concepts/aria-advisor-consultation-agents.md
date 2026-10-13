@@ -1,7 +1,7 @@
 ---
 title: "ARIA — Learning When to Consult a Stronger Advisor Model"
 created: 2026-10-12
-updated: 2026-10-12
+updated: 2026-10-13
 type: concept
 tags: [model-routing, token-economics, ai-agents, ai-agent-engineering, cost-optimization]
 sources: [raw/papers/2026-10-09_2610.13870_aria-advisor-consultation-agents.md]
@@ -52,9 +52,36 @@ than a routing trick: like [[concepts/epistemic-humility-agents-knowledge-confli
 "knowing when to ask for help" as the scarce skill, but replaces unreliable self-assessment with
 a learned controller priced against real cost.
 
+## Consequences for this wiki
+
+Three of these read as one system, which the [[concepts/runtime-oversight-knobs]] decomposition
+makes explicit:
+
+- **ARIA is the escalation knob, priced.** That framework's fourth knob ("does the uncertainty ever
+  reach the human?") is measured by ISE as *behavioral honesty*. ARIA is the only artifact here that
+  makes escalation an **optimisation target with an explicit price** instead of a disposition the
+  model either has or lacks. Where the knob table treats escalation as a channel, ARIA treats it as a
+  budget line — one parameter, no retraining, moved by Monte Carlo control rather than by an
+  instruction.
+- **ISE supplies the calibration ceiling.** ISE finds agents that *Identify* a conflict and then never
+  Escalate, and finds that model-level interventions raise humility at the cost of accuracy. That is
+  exactly the premise of ARIA's design: the escalation trigger is externalised because the
+  executor's own confidence signal is the broken component. ARIA inherits the constraint ISE
+  documents — the controller is trained on *cost-penalised outcomes*, so it optimises the joint, not
+  the humility.
+- **Prediction-not-sufficient-memory-state bounds what "execution evidence" can be compressed to.**
+  ARIA's state abstraction at a contact point is, in effect, a memory state fed to the next decision.
+  [[concepts/prediction-not-sufficient-memory-state]] proves a state can reproduce every current
+  prediction while being structurally inadequate for the next update — the *hidden evidence* it drops
+  is what a future decision consumes. A compact, inspectable consultation policy is desirable for
+  audit; this result says compactness has a provable cost if the abstraction is built to match
+  current behaviour rather than continuation.
+
 ## Related
 
 - [[concepts/model-routing]]
 - [[concepts/token-economics]]
 - [[concepts/epistemic-humility-agents-knowledge-conflict]]
 - [[concepts/test-time-compute]]
+- [[concepts/runtime-oversight-knobs]]
+- [[concepts/prediction-not-sufficient-memory-state]]
