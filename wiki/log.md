@@ -6863,3 +6863,11 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 
 - Final targeted validation: 14 Layer 2 pages parse with required metadata, canonical tags and flat source lists; all local source references, wikilinks and file links resolve. Nine new entries are indexed; actual section counts match 3221 total. All content pages remain below 200 lines; inner guide remains 42 books / 7 sections (195 lines). All 75 new raw body hashes and archive integrity checks pass. Existing raw/transcripts, outer-loop guide and entry guide are unchanged; historical log is an exact prefix. Index structural validation and tracked-change whitespace checks pass. No target-system migration or modernization outcome is claimed.
 - Staged pre-commit validation passed index, tags and content-regression gates. The hook warned about the existing Japanese guide and the macOS grep lacking -P support; equivalent Python checks confirmed all nine new Layer 2 filenames and bodies are English, concise and locally alphabetized. Layer 2 whitespace is clean; original PDF text-extraction whitespace is retained in immutable raw.
+
+
+## [2026-10-14] publish comment | Important inner-loop public full-text gaps
+
+- User explicitly requested comments in this chat and GitHub Wiki about important resources without verified publicly available book text. Appended a dated research comment to the GitHub Wiki code-modernization page, preserving all prior bytes/content.
+- Listed the seven initial guide books, Refactoring, and the four principal logging/operational books (12 resources). Distinguished excerpts, companion material, edition mismatches and unresolved official full-text availability; did not claim absence of all public copies or confuse reading access with redistribution rights.
+- Linked the immutable 6238ed80 source register and exact reading coverage. Explicitly excluded the author-public Security Engineering third edition and the two licensed full-text books from the unavailable-text list.
+- Published Wiki commit 5cb919b to its master branch; push succeeded and local/remote tracking revisions match. Wiki diff whitespace and prior-content preservation checks pass. No raw changes, new Layer 2 pages, index count changes or playlist changes.
