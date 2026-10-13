@@ -17,6 +17,8 @@ related:
   - concepts/tool-search-tool
   - concepts/tool-orchestration
   - concepts/programmatic-tool-calling
+  - concepts/prompt-optimizers-unscored-requirements
+  - concepts/evaluation/reward-hacking
 confidence: medium
 ---
 
@@ -57,6 +59,15 @@ The whole point is that reliability adaptation must be **online and free**: retr
 
 - Cold start: a brand-new tool has no execution history — how much does the bandit's exploration hurt early?
 - Interacts with routing/cost: does reliability-weighted ranking systematically prefer cheap-but-degraded tools?
+
+## Consequences for this wiki
+
+RATED is not only a tool-retrieval result. It is the cleanest measured instance of a pattern the wiki keeps meeting from other directions: **an optimiser that is blind to the property you actually care about** (see [[concepts/prompt-optimizers-unscored-requirements]], [[concepts/evaluation/reward-hacking]], [[concepts/ai-benchmarks/benchmaxxing]]).
+
+Two transfers worth writing down:
+
+1. **A bandit re-ranker is an eval, not a guard.** Any retrieval/orchestration system can bolt on an online re-ranker over execution outcomes — but the re-ranker optimises *measured* success only. If the metric is "call returned 200", RATED will systematically steer the agent toward flaky-but-fast endpoints that return junk, exactly the failure GEPA-style prompt optimizers show on unscored requirements. EcoAgent's dynamic-reliability track is the interesting artifact here, not the +52.2% MRR: it is a benchmark for a property (fault avoidance) that previously had no scoreboard.
+2. **86.2% → 2.9% fault selection is an infrastructure result dressed as a model result.** The 86.2% baseline is not a model being stupid — it is a *ranking function whose objective omits availability*. The same 83-point swing is available anywhere a team ranks candidates by relevance/quality while treating "did it actually work" as an afterthought (docs retrieval, tool selection, even hiring-style LLM ranking). That reframing matters for [[concepts/model-routing]] and [[concepts/harness-engineering/system-architecture/context-engineering|context-engineering]]-style budget arguments: reliability is the cheapest measurable signal being left out of most rankers, at <1 ms cost.
 
 ## See also
 

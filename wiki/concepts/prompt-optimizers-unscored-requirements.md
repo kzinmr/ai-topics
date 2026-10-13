@@ -19,6 +19,7 @@ related:
   - concepts/prompt-engineering
   - concepts/prompt-debt
   - concepts/evaluation/prompt-engineering-evaluation
+  - concepts/rated-reliability-aware-tool-retrieval
 confidence: medium
 ---
 
@@ -66,6 +67,12 @@ TG rolls a candidate prompt forward **only if it passes a small subset of hard-c
 
 - Can requirement coverage be *audited* automatically from a spec (e.g., LLM-generated requirement pool) rather than hand-specified?
 - What is the minimum diagnostic-set size at which gating reliably prevents regressions vs. merely decorates them?
+
+## Reciprocal case: retrieval (see [[concepts/rated-reliability-aware-tool-retrieval]])
+
+The same asymmetry shows up one layer down. RATED (arXiv:2610.13889) shows tool retrievers ranking by *cosine relevance* while ignoring whether the tool answers at runtime — under 30% API outage they select a broken tool **86.2%** of the time. That is an unscored requirement (availability) inside the retrieval loop, and a 1 ms contextual bandit fixes it to **2.9%**.
+
+Useful as a contrast on remedies: RATED's fix works because availability is **cheap, dense, automatically measurable and per-call**. The unscored requirements here (tone, format compliance, refusal boundaries) are none of those, which is exactly why targeted gating can only improve "some" requirements and explicitly cannot promise non-degradation. The open question this paper asks — can requirement coverage be audited automatically from a spec? — is really the question of *which requirements are cheaply measurable*, and RATED answers it for one lucky subclass.
 
 ## See also
 
