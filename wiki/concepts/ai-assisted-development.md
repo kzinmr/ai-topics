@@ -4,7 +4,7 @@ type: concept
 aliases:
   - ai-assisted-development
 created: 2026-04-25
-updated: 2026-08-06
+updated: 2026-10-13
 tags:
   - concept
   - coding-agents
@@ -107,6 +107,7 @@ See also [[concepts/spec-driven-development]] for the playbook's spec-as-contrac
 - [[concepts/agentic-engineering]] — Engineering systems for autonomous agent behavior
 - [[concepts/ai-agent-engineering]] — Engineering AI agent harnesses and runtimes
 - [[concepts/spec-driven-development]] — Spec-as-contract practice central to AI-assisted workflows
+- [[concepts/enterprise-legacy-modernization]] — Enterprise modernization practice hub, with Codex cases, traceability, and behavioral parity
 - [[entities/eleanor-berger]] — Author of the ten-question practitioner playbook
 - [[entities/hugo-bowne-anderson]] — Vanishing Gradients host who published the playbook
 - [[entities/john-d-cook-applied-mathematics-consulting]] — Source of the Z3/Python formal programming experiment

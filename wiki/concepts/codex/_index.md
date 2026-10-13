@@ -2,12 +2,12 @@
 title: "OpenAI Codex"
 type: concept
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-10-13
 tags:
   - coding-agents
   - openai
   - developer-tooling
-sources: []
+sources: ["https://developers.openai.com/cookbook/examples/codex/code_modernization"]
 status: active
 ---
 
@@ -30,6 +30,8 @@ See also: [[entities/openai-codex]] (entity page), [[concepts/openai|OpenAI]] (p
 - [[concepts/codex/codex-goal]] — /goal command (Ralph Loop)
 - [[concepts/codex/codex-goal-meta-prompting]] — /goal meta-prompting
 - [[concepts/codex/codex-knowledge-work]] — Knowledge work applications
+- [[concepts/enterprise-legacy-modernization]] — Enterprise legacy modernization: discovery, contracts, parity, and incremental delivery
+- [[queries/codex-enterprise-modernization-cases]] — Named customer experiences, mainframe demonstrations, and attribution limits
 
 ## Platform and Safety
 

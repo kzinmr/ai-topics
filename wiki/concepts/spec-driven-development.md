@@ -6,7 +6,7 @@ aliases:
   - spec-first-development
   - spec-first
 created: 2026-04-25
-updated: 2026-08-06
+updated: 2026-10-13
 tags:
   - concept
   - software-engineering
@@ -21,6 +21,7 @@ related:
   - entities/hugo-bowne-anderson
 sources:
   - raw/articles/2026-03-31_hugobowne_top-questions-about-ai-assisted-software.md
+  - https://aws.amazon.com/blogs/migration-and-modernization/forward-engineering-aws-transform-generated-business-requirements-with-openai-codex/
 ---
 
 # Spec-Driven Development
@@ -75,6 +76,12 @@ The sweet spot is *precise incompleteness*: enough detail to define the target a
 AI lowers the cost of spec-driven development in a distinctive way: you can use an **interactive agent to write the specification for a background agent**. Ask the first agent to analyse the codebase, identify affected files, draft a plan, and sharpen the constraints; then hand that refined spec to a second agent to execute.
 
 This hints at a broader trajectory: as agents improve, the durable artefact may increasingly be the specification and the recorded intent around it, with code generated or regenerated just-in-time for a task. Good specs become *more* valuable, not less.
+
+## Legacy Modernization Application
+
+For [[concepts/enterprise-legacy-modernization]], distinguish the observed legacy behavior from the owner-approved target contract. A specification should identify retained rules, intentional changes, unresolved decisions, data ownership, and operating constraints. Connect it to [[concepts/modernization-traceability]] and verify its implementation through [[concepts/legacy-behavioral-parity]]. This is a proposed application of the spec-as-contract framework.
+
+The [AWS/OpenAI Codex example](https://aws.amazon.com/blogs/migration-and-modernization/forward-engineering-aws-transform-generated-business-requirements-with-openai-codex/) provides a concrete requirements-to-specifications-to-implementation chain. Structural trace coverage and correct business behavior require different checks. See [[queries/codex-enterprise-modernization-cases]] for demonstration versus production evidence.
 
 ## Relationship to Other Concepts
 

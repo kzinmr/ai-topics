@@ -6742,9 +6742,109 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Updated: `concepts/dark-factory-software-factory.md` — new "Composio's Anti-Slop Factory (Oct 2026)" case study section (mid-scale 30–50 contributors, filling the StrongDM↔Uber gap), +source, +updated bump.
 - index.md: +2 entries, counts 3201→3203 (Entities 939→940, Concepts 2174→2175). All body wikilinks verified on disk.
 
+## [2026-10-13] research + create + update | Codex enterprise legacy modernization practices
+
+- Repository-first qualitative review: SCHEMA/index, Codex cases, specification/context/harness/review/factory/cost pages, and relevant raw sources; supplemented with primary OpenAI, AWS, Infosys, and Martin Fowler pages. Cutoff: 2026-10-13.
+- CREATED `concepts/enterprise-legacy-modernization.md` (cross-topic practice hub), `concepts/legacy-behavioral-parity.md` (characterization/differential checks, state reconciliation, independent acceptance, cutover), `concepts/modernization-traceability.md` (source/decision/spec/code/test/release evidence), and `queries/codex-enterprise-modernization-cases.md` (case review, evidence classes, attribution limits, proposed pilot gates).
+- Named Codex workflows: Virgin Atlantic legacy refactoring/data migrations, Cisco/Splunk framework and cross-repo engineering, Rakuten operations/CI, Instacart Olive maintenance. Separately recorded anonymous monorepo migration, the COBOL cookbook, and AWS/CardDemo demonstration. No named production mainframe retirement established by this review.
+- Attribution preserved: Infosys retail COBOL savings belong to GPT models/iLEAD (offering search extract specifies GPT-4o), not proven Codex outcomes; earlier AWS mainframe workflow uses Kiro; HumanLayer brownfield successes/failure use Claude Code; sandbox migration cookbook uses Agents SDK. Direct Infosys offering-page open failed; its blog was opened and the retrieval limitation is recorded in the query.
+- PATCHED existing `entities/codex.md`, `concepts/codex/_index.md`, `concepts/spec-driven-development.md`, and `concepts/ai-assisted-development.md` with reciprocal navigation/application detail and updated dates, preserving their existing content.
+- index.md: +4 entries, Total pages 3203 -> 3207, Concepts 2175 -> 2178, Queries 15 -> 16; descriptions updated for affected existing pages; query section alphabetized without dropping entries.
+- Validation: 8 affected content pages checked for required frontmatter/canonical tags; 70 newly introduced body wikilinks resolve; new local source references exist; new pages are 87-117 lines and each has inbound navigation. Index validator and count deltas pass; original index entries retained; raw/transcripts untouched; existing content preserved. Known pre-existing missing source in `entities/codex.md`: `raw/concepts/openai-codex-superapp.md` (not introduced or removed here).
+- Artifact scope: research documentation only; no legacy runtime executed, no application parity or production readiness asserted. No commit/push or external deployment performed.
+
+## [2026-10-13] curate + query | O’Reilly enterprise modernization reading list
+
+- User-authorized browser curation of the existing private modernization playlist: retained all 3 original books, added 33 book editions, updated its description, and saved 36 Japanese purpose/reading notes. Final visible inventory: 36 books, no missing expected titles, 36 notes, 8 newly created topic headings. Sharing remained private.
+- Selection covers strategy, domain/requirements discovery, testing/formal methods, data/integration, delivery/operations, Java/JVM, security/organization/measurement, and AI-agent engineering/evaluation. Established works predominate; modern Java and four agent/AI evaluation books supplement them.
+- O’Reilly ordering limitation: keyboard drag and move-button results did not consistently survive reload. Book additions and notes were verified separately; the playlist's headings must not be treated as a verified grouping. No books or headings deleted. The query provides the authoritative categorized reading order.
+- CREATED `queries/modernization-reading-guide.md`: all 33 added-book links and rationale, the existing 3 foundations, prioritized reading order, process/evidence/SME-decision mapping, current OpenAI evaluation and guardrail references, and limits of older Java guidance. Metadata/content availability checked in the catalog; not represented as a full-text review of every book.
+- PATCHED the modernization hub with an inbound guide link and index with the new query. Total pages 3207 -> 3208, Queries 16 -> 17. Existing uncommitted work preserved. Raw/transcripts untouched; log appended without unrelated rotation of its pre-existing large history.
+- Validation: canonical tags and 8 local wikilinks resolve; guide below 200 lines; 33 unique new-book URLs; index validator and diff whitespace check passed. No application system built; no commit or push performed.
+
+## [2026-10-14] reassess + update | Modernization reading priorities and missing perspectives
+
+- Reassessed the three original books against the user's specific modernization objective, using author/publisher descriptions and contents. The previous blanket foundation label is explicitly superseded: Refactoring remains core; Beyond Legacy Code is conditional on practice adoption needs; The Pragmatic Programmer is general background with lower direct priority.
+- PATCHED `queries/modernization-reading-guide.md` with keep/optional judgments, overlap with the added books, and five proposed headings: portfolio/exit decisions, system analysis and reproducible execution, SME knowledge/oracles/test data, structured transformations and agent roles, and resumable workflow/exception control. Recommended separating security/permissions/audit from the broad organization/measurement category. OpenRewrite documentation supports the structured-transformation example; workflow recommendations are marked as synthesis.
+- Updated the guide date and index description/date; no new pages or count changes. All 33 added-book entries retained. No O’Reilly items, notes, or headings changed in this reassessment; no implementation, commit, or push performed.
+- Validation: guide is 198 lines; required frontmatter and canonical tags pass; all 7 body wikilinks resolve; index validator and whitespace check pass. Existing unrelated work preserved; raw/transcripts untouched; log appended.
+
+## [2026-10-14] organize + curate + update | Separate modernization security and organizational responsibilities
+
+- Re-read the user's manually edited Markdown and reloaded the live O’Reilly playlist before editing. Baseline: 34 books; Refactoring in section 01; the two general foundation books were already absent. Preserved all 34 existing book descriptions and their respective Markdown/browser order; did not restore removed books or the removed assessment section.
+- Updated the playlist and guide to 07 Security/Permissions/Audit, 08 Organization/Responsibility/Improvement Measurement, and 09 Coding Agent/Evaluation/Control. Kept Threat Modeling and Secure by Design in 07; placed Team Topologies and Accelerate in 08. Updated the stale section 01 description without changing Refactoring's placement.
+- Added four catalog-verified books to 07, each with a Japanese purpose/reading note: Building Secure and Reliable Systems (2020), Security Engineering 3rd Edition (2020), Software Supply Chain Security (2024), and The Developer's Playbook for Large Language Model Security (2024). The first two provide durable security/authorization foundations; the latter two supplement provenance and LLM-specific trust boundaries.
+- Reload verification: 38 books, 9 correctly ordered sections, all original book order preserved, all four new notes persisted, and Refactoring remains in 01. Previous ordering uncertainty is superseded by this verified current state. Proof screenshots: `/private/tmp/modernization-security-section.jpg` and `/private/tmp/modernization-organization-section.jpg`.
+- Patched the existing guide, repaired malformed table delimiters without changing existing book descriptions, updated numbering and index summary, and removed sources belonging to the already removed assessment. No page-count changes. Validation: 198 lines, 38 book entries, 9 numbered sections, all 34 baseline rows/order preserved, canonical tags and 7 wikilinks valid, table delimiters valid, index and whitespace checks pass.
+- No unrelated wiki changes, raw/transcript edits, commit, push, or sharing changes. Temporary book tab closed; user's playlist tab retained.
+
+
+## [2026-10-14] split + curate + update | Modernization inner-loop and outer-loop reading views
+
+- Implemented the user-approved split using the manually edited 38-book baseline. Existing playlist retained at `881eb67b-8276-489e-ad26-d009b8b2a34f` as inner-loop (38 books, seven sections); created private outer-loop playlist `f09ea227-8f41-450e-b79b-e9fbdbe4c597` (20 resources, six sections). All 38 baseline titles remain in at least one list; Refactoring remains in I-01. Previously removed general foundation books were not restored.
+- Added all nine previously proposed resources: Kill It with Fire; Domain Storytelling; Business Rules and Information Systems; Living Documentation; Automated Code Refactoring and Modernization with OpenRewrite; Language Implementation Patterns; Practical Process Automation; Infrastructure as Code 3rd Edition; and the 42-page AI for Mass-Scale Code Refactoring and Analysis report. Conditional reading and recent-publication caveats retained.
+- Total 47 unique resources, with 11 shared books. Each of the 58 playlist entries has a loop-specific Japanese reading-purpose note. All shared books have distinct reading purposes and edition-specific required chapters in both notes and Markdown. Chapter scope was checked against O’Reilly catalog contents; this is not a claim of full-text review or measured modernization outcomes.
+- Replaced the mixed guide with a 55-line navigation/selection hub; CREATED `queries/modernization-inner-loop-reading.md` (168 lines) and `queries/modernization-outer-loop-reading.md` (128 lines). Retained relevant manual rationale and caveats, moved product-specific supplementary references to outer-loop, and marked the former mixed classification superseded. Inner-loop can be read independently.
+- PATCHED index navigation and descriptions; Total pages 3208 -> 3210, Queries 17 -> 19. Existing unrelated work preserved; raw/transcripts untouched; append-only log retained without unrelated rotation.
+- Verification: after a reload exposed inconsistent inner-loop ordering, rebuilt the affected ordering through end-of-list moves and reloaded again. Final saved UI matches all 45 inner and 26 outer ordered book/section entries; all 58 notes and 13 section descriptions match the plan. Required frontmatter, canonical tags, local wikilinks, book counts, shared chapter scopes, index validator and whitespace checks pass. Temporary audit: `/private/tmp/modernization-split-audit.json`. Proof screenshots: `/private/tmp/modernization-inner-loop.png` and `/private/tmp/modernization-outer-loop.png`.
+- No application implementation, commit, push, or sharing changes. New outer-loop tab retained as the deliverable; temporary catalog tab closed.
+
+
+## [2026-10-14] rewrite | Reader-facing modernization reading entry
+
+- Rewrote `queries/modernization-reading-guide.md` as a standalone introduction: audience and objective, purpose-based inner/outer navigation, distinction between the loops, topic-to-section map, and reading/selection principles.
+- Removed editorial history, additions/missing-perspective framing, approval and manual-edit references, superseded classification notes, and completion/verification records from the entry page. Historical operations remain in this append-only log.
+- Updated the index summary and corrected the two child guides’ closing links so they describe the entry as navigation rather than a change history. Book selections, purposes, chapter scopes and playlists were not edited.
+- Validation: entry frontmatter, canonical tags, six local wikilinks, Markdown table columns, page length, index validator and whitespace check pass. No new pages, count changes, commit or push.
+
+
+## [2026-10-14] enrich | Amazon.com links for modernization reading guides
+
+- Preserved the fixed selection, classification, reading purposes and chapter scopes in the inner-loop and outer-loop guides. Added Amazon.com product links for 46 unique books (57 table rows, including 11 shared books) alongside the existing O’Reilly links.
+- Matched titles, authors and editions using Amazon catalog/search pages, including format-specific links; used only canonical `https://www.amazon.com/dp/ASIN/` URLs without referral/query parameters. Shared books use identical Amazon destinations. Paperback/hardcover or Kindle editions were selected, not audiobook listings.
+- The 42-page O’Reilly report `AI for Mass-Scale Code Refactoring and Analysis` had no matching Amazon page in the catalog and focused web search; marked its row `Amazon掲載ページ未確認` rather than inventing a product ID. This does not establish that Amazon will never list it.
+- Added Amazon product sources in flat YAML lists, keeping both guides under 200 lines, and updated index descriptions without changing page counts. Entry-page prose and O’Reilly playlists were unchanged. Evidence and pre-edit backup: `/private/tmp/modernization-amazon-evidence.json`, `/private/tmp/modernization-before-amazon.json`.
+- Validation: all 58 reading rows retain their prior text except the added links/report status; 46 unique canonical Amazon URLs and 11 shared destinations verified. YAML parses as flat string lists (77 inner / 43 outer sources); guide lengths are 169 / 129 lines. Index validation and whitespace checks pass. No commit or push.
+
+
+## [2026-10-14] research + propose | Java logging strategy for modernization
+
+- CREATED `queries/modernization-java-logging.md`: Japanese inner-loop research proposal connecting logging purposes, legacy discovery and parity, operational interfaces, domain observations, commit semantics, Java logging paths, context propagation, collection failure, privacy and acceptance checks. Product audit logs remain in scope; coding-agent execution records remain outside it.
+- Compared three user-supplied Japanese references with author/publisher materials, SLF4J, Logback, Log4j, OpenTelemetry, Spring Boot, OWASP and Google SRE primary sources; consulted the immutable existing raw logging article. Inspected the relevant GOOS Chapter 20 and Logging and Log Management Chapter 18 text through O'Reilly, catalog chapter scopes, and relevant original Speaker Deck slide images. PDF extraction/rendering was unsuitable due to font issues, so slide claims use the original images.
+- Proposed a logging entry within I-05 and cross-references from I-02/03/04/06/07. Prioritized existing GOOS, Release It!, Observability Engineering and SRE chapters; proposed Logging and Log Management, conditional Learning OpenTelemetry and optional Practical Monitoring. Book selection and modernization application are a research proposal, not full-book reviews or measured migration results.
+- Added the query to the index; Total pages 3210 -> 3211 and Queries 19 -> 20. Existing reading guides and playlists remain pending review of this proposal; unrelated working-tree changes preserved.
+- Validation record follows after targeted checks. No application implementation, commit, push or external publication.
+
+- Validation: YAML parsing, required frontmatter, nine canonical tags, 28 flat sources, all eight local wikilinks, Markdown table columns, 146-line page limit and 20-query index count pass. Index structural validation and targeted whitespace checks pass. Existing guides and external playlists were not edited by this task.
+- Correction to the preceding validation count: the new query has nine valid local wikilinks, not eight. All nine resolve.
+
+
+## [2026-10-14] enrich | Inner-loop Java logging strategy and SRE second edition
+
+- Updated `queries/modernization-inner-loop-reading.md` and its O’Reilly playlist to 42 books in seven sections, preserving the 38 existing titles and their relative order. Renamed I-05 to include observation and connected requirements, logging contracts, transaction semantics, Java implementation and confidentiality across I-02/03/04/06/07.
+- Strengthened GOOS Chapters 19–20, Release It! Chapters 8/10, Observability Engineering second edition Chapters 2/4–9/11–12, SRE Workbook Chapters 4/5/16, and Building Secure and Reliable Systems Chapter 15 purposes and chapter scopes. Added Logging and Log Management (high priority), Learning OpenTelemetry (conditional), Practical Monitoring (introductory supplement), and Site Reliability Engineering second edition (high priority for operational acceptance), each with applicability conditions.
+- Inspected the SRE second edition catalog/contents and Chapter 9 through authenticated O’Reilly; incorporated high-availability versus analytics telemetry requirements. Publication month is September 2026; Google’s announcement is October 12. Workbook remains a distinct 2018 practical companion. No dedicated existing SRE book wiki page was found; historical first-edition references in unrelated entity pages were preserved.
+- Converted `queries/modernization-java-logging.md` to standalone reader-facing guidance, removed Japanese sources and editorial/research narration, retained primary English Java/OTel/OWASP/Google and author/publisher references, and updated the entry guide and index descriptions. Target-system diagnostic/business/audit logging remains inner-loop; Agent/workflow execution records remain outer-loop. Outer-loop Markdown and playlist were not edited.
+- Verified new Amazon product links for the three logging/monitoring books through their product pages. The focused Amazon search did not return a verified SRE second-edition product, so no Amazon product ID was invented; its O’Reilly link is present.
+- Validation: all three guides have valid frontmatter, canonical tags, existing local wikilinks, no Japanese source links and fewer than 200 lines (192/143/66). Inner guide has 42 book rows and seven section headings. Reopening the playlist confirms 42 books, seven sections, all ten updated/new book notes, all seven descriptions and metadata; order matches Markdown and preserves the baseline title order. Index and whitespace checks pass; outer-loop file hash is unchanged. No commit or push.
+- Playlist readback: `/private/tmp/modernization-logging-playlist-verification.json`. Screenshot: `/private/tmp/modernization-inner-loop-logging.jpg`.
+
+
+## [2026-10-14] validate + prepare publish | Modernization documentation and Java logging
+
+- User requested commit and branch push after completion of the logging curation. Prepared the existing `code-modernization` branch, including the uncommitted modernization pages and navigation needed by the reading guides; no unrelated files or raw sources are included.
+- Corrected quoted URL syntax in `concepts/codex/_index.md` frontmatter so the source list parses consistently as YAML.
+- Revalidated all 12 content pages: required metadata, canonical tags and flat source lists pass; all eight new pages have valid local wikilinks and are below 200 lines. Inner-loop remains 42 books in seven sections. Index and whitespace validation pass. Confirmed no existing remote `code-modernization` branch before its initial push.
 ## 2026-10-13 — SmithDB concept page (sarahfim follow-up comment)
 
 - Created `concepts/smithdb-agent-trace-datastore.md` from Sarah (@sarahfim)'s X comment on her anti-slop factory article, corroborated by LangChain official site + docs (langchain.com/langsmith SmithDB section; docs.langchain.com self-host-smithdb, self-host-smithdb-features, architectural-overview).
 - Raw source: `raw/articles/langchain-smithdb-agent-trace-datastore-2026-10.md`
 - Cross-ref added to `concepts/ai-observability.md` (new section next to the Brainstore "AI observability is a database problem" argument).
 - Index: +1 concept page (counts 3203→3205 incl. prior raw, Concepts 2175→2176).
+
+
+## [2026-10-14] reconcile | PR 3 with current main
+
+- Integrated main commit `886527b5` into `code-modernization` for the user-requested PR #3 merge. Resolved conflicts in `wiki/index.md` and `wiki/log.md`, retaining both branch inventories and each parent’s complete historical log sequence.
+- Reconciled index counts from actual indexed entries: 3212 total (940 entities, 2179 concepts, 35 comparisons, 38 events, 20 queries). Raw source ingestion does not add a Layer 2 index entry.
+- Verified the reading guides are unchanged, the imported SmithDB raw source matches main byte-for-byte, both index inventories are present, and no conflict markers or whitespace errors remain. Index structural validation passes.
