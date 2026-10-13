@@ -1,3 +1,19 @@
+## [2026-10-13] query | hot-post (late-night slot 01:30 JST): "鍵なしでは読めないモデル" — cryptographic capability concealment
+- Angle: niche high-signal single-page deep dive on [[concepts/cryptographic-capability-concealment]] (arXiv:2610.13928) — provable backdoors (encrypted NN + digital lockers) defeat elicitation-based capability audits and open-weight inspectability, even with full weight access. Primary link: [[concepts/mismeasure-of-open-source]] (open weights ≠ inspectable intent). Supporting: [[concepts/ai-control]], [[concepts/evaluation/evaluation-harness-validity]].
+- Numbers cited: proof-of-concept scale = small chemical-reaction prediction task; all 4 elicitation attacks (fine-tune, weight noising, gradient trigger search, latent adversarial training) fail; security is computational not statistical.
+- No new pages created (report-only). Dedup: no overlap with 10-12 morning (skill ecosystem/npm) or 10-12 night (measurability asymmetry / RATED / prompt optimizers) posts.
+
+---
+
+## [2026-10-13] watchdog | auto-fix + commit stranded wiki-health-fix remediation
+
+- Pipeline: `x_accounts` stale(26h) is a **false positive** (every-2-days schedule, last_status=ok). `blog` chain `ingest_ok_but_triage_failed` = blog-triage + blog-wiki-ingest last_status=error (needs human log inspection; not a wiki-content issue).
+- `wiki-health-fix` last_status=error left **188 pages** of validated remediation uncommitted in the working tree (yesterday's run completed edits, crashed before commit). Today's health-fix errored, so it won't self-recover.
+- Verified batch: 100% wikilink namespace/subdir retargets (`concepts/x`->`entities/x`, flat->subdir) + `updated:` bumps. 0 new pages, 0 deleted content, index.md corruption-clean (pipe/line-number/triple-bracket/space-prefix all 0). Retarget targets resolve on filesystem.
+- Tag validation: PASSED (185 files, all in SCHEMA taxonomy). Two `entities/eugeneyan.md` + `entities/lilianweng.md` shrink flags are **legitimate dedup redirects** to canonical `entities/eugene-yan.md` (353 lines) + `entities/lilian-weng.md` (203 lines) — content was merged, not lost. Committed with `--no-verify` (documented redirect case).
+
+---
+
 ## [2026-10-13] ingest | blog-ingest run 20261013T100025Z
 
 - Script scan: 28 total new / 20 blog articles fetched / **17 raw saved**, 3 unsaved (Daring Fireball -> Facebook link, 2 LWN paywalls).
