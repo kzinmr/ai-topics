@@ -3,7 +3,7 @@ title: "Andrew Nesbitt"
 tags: [person]
 sources: [raw/articles/nesbitt.io--2026-08-04-brew-install-actions-checkout-html--7762f317.md, raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md]
 created: 2026-04-24
-updated: 2026-08-14
+updated: 2026-10-13
 type: entity
 ---
 
@@ -165,6 +165,7 @@ His blogging cadence accelerated dramatically in 2025–2026, with 25 posts in J
 - **Git extensibility:** .gitlocal, remote helpers, diff drivers
 - **Developer psychology:** Guided meditation for dependency anxiety
 - **Community benchmarking:** OSS Community Benchmarks where maintainers define what good AI-generated code looks like
+- **Technical debt archaeology:** Mining GitHub commit messages for "technical debt" self-assessments — finding a 30-year-old COBOL "temporary fix" (1994), Python 2→3 "write-only" code, and the recurring pattern of debt being framed as both a burden and a career asset (Oct 12, 2026)
 - **Consulting availability:** Leveraging Ecosyste.ms expertise for organizational guidance
 
 ---
@@ -541,3 +542,4 @@ Source: [[raw/articles/nesbitt.io--2026-08-06-a-year-of-ai-disclosure-in-critica
 - raw/articles/nesbitt.io--2026-06-25-scrutineer-html--2ad1fbbe.md
 - raw/articles/nesbitt.io--2026-06-26-incident-report-cve-2026-lgtm-html--da259599.md
 - raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md
+- raw/articles/nesbitt.io--2026-10-12-now-thats-what-i-call-technical-debt-html--c10d9aef.md

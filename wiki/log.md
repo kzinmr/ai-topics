@@ -1,3 +1,18 @@
+## [2026-10-13] ingest | blog-ingest run 20261013T100025Z
+
+- Script scan: 28 total new / 20 blog articles fetched / **17 raw saved**, 3 unsaved (Daring Fireball -> Facebook link, 2 LWN paywalls).
+- Processed (8 aligned articles -> 5 entity updates, 0 new pages):
+  - **Gary Marcus -- "Could this be the Frontier Labs' WeWork moment?"** -- Strongly aligned: $50-100bn data centres vs insufficient revenue; Stargate UK arm (ABSA) shut down, GBP 31bn OpenAI UK plan backing collapsed; "no viable market mechanism to earn back these sums". -> edited `entities/gary-marcus.md` new section.
+  - **Modal -- Endpoint Candidates (GA)** -- A/B test candidate inference endpoints on real production traffic, promote on measured metrics (success rate, p50, TTFT), auto-promotion when candidate "clearly wins"; motivation = per-upgrade re-tuning of batch size/max tokens/max concurrency. -> edited `entities/modal-labs.md` new section. (Restored 2 lines previously dropped from the sandbox-latency section.)
+  - **Simon Willison (3 posts)** -- Python 3.15 ecosystem-lag argument; **web-edit 0.1a0** (LLM edits live dev-server HTML via injected POST script; LLM 0.32 alpha edit-provider plugin, ~450 lines); datasette-ports 0.4. -> edited `entities/simon-willison.md` 3 subsections.
+  - **Merge Blog (2 posts)** -- context-engineering-as-connectors marketing + Meta Muse on Merge Workforce. Weakly aligned -> edited `entities/merge-dev.md` with vendor-framing caveat.
+  - **Andrew Nesbitt -- technical debt commit-message archaeology** -> edited `entities/andrew-nesbitt.md` theme + reference.
+- Skipped (9 saved-raw, not aligned): Tedium X/monoliths critique (no platform-decay concept page exists -> no placeholder created), Pluralistic labor/Ultima, John Cook categorical logic, idiallo Asimov fiction repost, Old New Thing C++ futures, dfarq GeForce 256 retro, Jim Nielsen Dock icons, LWN LineageOS 24.
+- New: `wiki/_meta/rss-scans/2026-10-13.md`; index.md: new "RSS Scans" section, Total pages 3196 -> 3197.
+- Dedup: all 5 entity pages had no prior coverage of these Oct 12 items; entity `updated:` bumped to 2026-10-13 on all 5.
+
+---
+
 ## [2026-10-12] lint | Weekly tag audit — clean; durable cron script-path fix applied
 - **Audit result (via `scripts/tag_audit.py`)**: 0 composite kebab-case tags, 0 tags-not-in-taxonomy across 3,249 tagged pages (884 unique tags in use, 959 valid in SCHEMA). Coverage 108.5%. No normalization run needed (audit clean ⇒ skip per skill).
 - **Root cause of the recurring `Blocked: script path resolves outside the scripts directory: 'tag_audit.py'`**: the `tag-audit-weekly` cron job (id 21f235565c6d) had a cron pre-run `script: tag_audit.py`. The pre-run mechanism only loads from `/opt/data/.hermes/scripts/`, and the canonical audit lives at `~/ai-topics/scripts/tag_audit.py` — which is permanently outside that dir, so no `script:` value can ever load it. The `/opt/data/.hermes/scripts/tag_audit.py` symlink also points at a deleted skill path.

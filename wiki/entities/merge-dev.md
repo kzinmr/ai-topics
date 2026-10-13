@@ -2,7 +2,7 @@
 title: Merge.dev (Merge Agent Handler)
 type: entity
 created: 2026-05-24
-updated: 2026-07-14
+updated: 2026-10-13
 tags:
   - entity
   - company
@@ -84,6 +84,11 @@ Merge Agent Handler uses a CLI-based MCP pattern:
 - **MCP Governance Platform Comparison** — Merge's analysis of the MCP governance platform category (AHFE vs Runlayer vs MintMCP). Covers evaluation criteria: SCIM-based provisioning, auditability, comprehensive connector coverage. While Merge's entity page documents its specific MCP products (GitHub MCP, Trello MCP), this post contextualizes them within the broader governance platform landscape.
 - **AI Agent Governance Framework** — Overview of AI agent governance concepts: authentication enforcement, tool testing, audit trails, RBAC, rule violation alerts, data leak prevention. Provides the conceptual framework for Merge's specific governance features, complementing the product-focused sections above.
 - **Claude Sonnet 5 vs GPT-5.6 Terra Benchmark** — Merge's build-test comparison between Claude Sonnet 5 and GPT-5.6 Terra on coding tasks: Sonnet 5 (136.6s, 17,870 tokens, $0.179) vs GPT-5.6 Terra (60.2s, 10,677 tokens, $0.120 — ~33% cheaper). Quality comparable. Recommendation: Sonnet 5 for agentic/quality-focused work, Terra for speed/cost-sensitive tasks. Comparison primarily serves Merge's product positioning but provides useful real-world benchmark data.
+
+## Context Engineering positioning (Oct 2026)
+
+- **"Context engineering: from individual prompts to company-wide context"** (Oct 12, 2026) — Merge's marketing framing of the context-engineering trend: individual prompting is a personal skill, but enterprises need **unified, governed context** — one place defining "the Salesforce account object," shared across humans, AI tools, and integration flows. Notably, Merge's answer to "how should context grow as you add tools, teams, and agents?" is **"connectors"** — i.e., sold as an integration problem, not a model or orchestration problem. Weakly aligned: the unified-context argument is legit, the connector-as-answer is vendor framing. ^[raw/articles/merge.dev--blog-context-engineering-from-individual-prompts-to-company---ef7a18ab.md]
+- **"Bring Meta Muse to work with Merge for Workforce"** (Oct 12, 2026) — Merge lists Meta Muse as supported in its Workforce enterprise layer (40+ unified APIs, 50+ tools). Signals Meta's Muse assistant entering the enterprise-integration race via third-party unified-API vendors. ^[raw/articles/merge.dev--blog-use-meta-muse-with-merge--8806cd32.md]
 
 ## Related
 

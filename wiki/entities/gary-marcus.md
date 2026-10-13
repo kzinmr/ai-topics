@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-09-09
+updated: 2026-10-13
 tags:
   - lab
   - benchmark
@@ -495,6 +495,10 @@ Points of alignment Marcus highlights:
 **Marcus's one addition**: independent **scientists** must be centrally involved in devising the plan — a role Gates does not make explicit. This extends Marcus's recurring critique (cf. the CAISI report coverage in his July 2026 open letter to David Sacks) that top-down government-consultative processes systematically exclude independent research voices.
 
 Source: [[raw/articles/garymarcus.substack.com--p-excellent-new-bill-gates-essay-on--94b72ad8.md]]
+
+### "Could this be the Frontier Labs' WeWork moment?" (Oct 12, 2026)
+
+Marcus argues the AI build-out is repeating WeWork's structural failure: **frontier labs are building data centres worth $50-100bn without enough revenue to justify the expenditure**, while the major labs (OpenAI/Anthropic) are headed for IPOs at valuations that require revenue growth the current products cannot deliver. Evidence cited: **Stargate's UK arm (ABSA) shut down** after the £2bn deal fell apart; **UK government backing for OpenAI's £31bn Stargate UK plan collapsed** (James Murdoch's Llama Nation filing pulled). Key structural diagnosis — **"there is no viable market mechanism by which the labs can earn back these sums"** — echoing his recurring capex-vs-revenue critique. ^[raw/articles/garymarcus.substack.com--p-could-this-be-the-frontier-labs-wework--c92a2493.md]
 
 ## References
 

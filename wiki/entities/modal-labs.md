@@ -2,7 +2,7 @@
 title: "Modal Labs"
 type: entity
 created: 2026-05-08
-updated: 2026-07-09
+updated: 2026-10-13
 tags:
   - company
   - infrastructure
@@ -99,7 +99,11 @@ This is architecturally significant for AI coding agents (background agent workf
 
 Source: raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
 
-See also: [[concepts/speculative-decoding]], [[entities/sglang]], [[concepts/vllm]], [[concepts/agent-experience]], [[concepts/agentic-engineering]]
+See also: [[concepts/speculative-decoding]], [[concepts/inference/sglang]], [[concepts/vllm]], [[concepts/agent-experience]], [[concepts/agentic-engineering]]
+
+## Endpoint Candidates — evaluate-then-promote pattern (Oct 12, 2026)
+
+Modal shipped **Endpoint Candidates** (GA): define candidate endpoints declaratively alongside a stable production endpoint, A/B test them against **real production traffic**, and promote only the one that beats baseline on measured metrics — "don't trust benchmarks alone." Built-in metrics: success rate, p50 latency, **time-to-first-token** (streaming endpoints). Supports traffic split percentages and **automatic promotion when a candidate "clearly wins."** The motivation is the real cost of LLM upgrades: each one requires **re-tuning batch size / max token length / max concurrency** knobs, so Modal treats endpoint config like an ML model — experiment, measure, promote. Positions the pattern as general across model weights, quantization, batch size, GPU selection, engine parameters. ^[raw/articles/modal.com--blog-endpoint-candidates--7ec203d5.md]
 
 ## Agent Experience (AX) Design Philosophy
 

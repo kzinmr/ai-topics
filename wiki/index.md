@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3196
+> Total pages: 3197
 > Last updated: 2026-10-13
 
 ## Entities (939 pages)
@@ -3216,3 +3216,7 @@
 - [[queries/2026-10-09-crash-consistent-agent-synthesis]] — UndoBench 83.54% competence vs 46.72% recovery: effect-integrity gap; Retire/Absurd/Pi Durable/StateWise dig the same hole at 5 distinct layers, counter-evidence included
 - [[queries/2026-10-12-skills-npm-without-package-json-hotpost]] — Skills are npm without package.json: 6 missing resolution primitives; 2.19M adoptions, 30× audit-yield gap vs stars, >1/3 exclusive functions lost to install-order accidents
 - [[queries/wiki-graph-analysis-weekly-2026-10-02]] — Weekly Wiki Graph Analysis (2026-10-02) — 3,120 pages; 6 top-level orphans, 0 ghost entries, 866 tags
+
+## RSS Scans
+
+- [[_meta/rss-scans/2026-10-13]] — blog-ingest 2026-10-13: 28 new / 17 saved; Marcus WeWork-moment, Modal Endpoint Candidates, Simon web-edit/Python 3.15
