@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3197
+> Total pages: 3201
 > Last updated: 2026-10-13
 
 ## Entities (939 pages)
@@ -946,7 +946,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2170 pages)
+## Concepts (2174 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -975,6 +975,7 @@
 - [[concepts/agent-distillation]] — Agent Distillation
 - [[concepts/adversarial-reasoning-distillation]] — Adversarial Reasoning Distillation — OpenAI Oct 2026 disruption of a coordinated campaign extracting *protected reasoning* (encrypted CoT replayed/transcribed cross-conversation); 16K reqs / 4K users, 15K+ users disrupted by Jul 28; core cluster attributed to Moonshot AI; corroborated by arXiv:2608.09867; warns portable/replayable reasoning artifacts share the risk (Oct 5)
 - [[concepts/budget-constrained-prm-evaluation]] — Budget-Constrained PRM Evaluation — faithful process-reward-model precision estimation under rate-limited verifiers via importance sampling; naive estimates overstate PRM quality (arXiv:2609.20812, Sep 2026)
+- [[concepts/critique-conditioned-self-distillation]] — Fixes for RLVR all-wrong-group sparsity via privileged teachers measurably fail (signal not localized at errors); dense feedback is a search problem; critique-conditioned self-distillation as bounded fix (arXiv Oct 2026)
 - [[concepts/cross-agent-memory-sharing]] — Cross-Agent Memory Sharing — MemCollab cross-memory collaboration at test time via CrossMemKG + test-time memory evolution; shared-memory compounding vs poisoning risk (arXiv:2609.09192, Sep 2026)
 - [[concepts/dial-metaopd-token-selection-opd]] — DIAL & MetaOPD — Token Selection in On-Policy Distillation; divergence-based reweighting (down-weight mastered tokens) + cold-start fix for OPD reasoning post-training
 - [[concepts/epistemic-transparency]] — Epistemic Transparency in LLMs — EpistemicAlignment benchmark & CAEP metric; models give confident compliant answers that hide ambiguity, compounded by sycophancy (arXiv:2609.13775, Sep 2026)
@@ -1107,6 +1108,8 @@
 - [[concepts/openclaw/_index]] — OpenClaw — Concepts hub for OpenClaw sub-pages
 - [[concepts/plan-and-patch-dllm-agentic-planning]] — Plan-and-Patch — dLLM agentic planning via parallel unmask + localized plan repair; 53.7% vs 27.0% plan-repair, 39-46% lower latency vs AR planners
 - [[concepts/post-training/_index]] — Post-Training — Concepts hub for post-training sub-pages (RLHF, distillation, …)
+- [[concepts/prompt-optimizers-unscored-requirements]] — GEPA/MIPROv2 lift scored EM but leave unscored requirements unchanged; targeted gating on hard-case diagnostics partially helps but cannot guarantee non-degradation (Meta, arXiv Oct 2026)
+- [[concepts/rated-reliability-aware-tool-retrieval]] — RATED: frozen dual-encoder + contextual bandit re-ranker adapts tool retrieval to live API failures (86.2%→2.9% fault selection); EcoAgent benchmark of 5,172 tools (CIKM 2026)
 - [[concepts/rewardweaver-self-evolving-rewards]] — RewardWeaver (Self-Evolving Reward Adaptation) — reward signal that co-evolves with the policy across training rounds to resist saturation and reward hacking
 - [[concepts/retrieval-credit-for-search-agents]] — Retrieval Credit for Search Agents — process-level credit assignment for individual retrieval steps in deep-research agent RL, beyond sparse outcome rewards
 - [[concepts/security-and-governance/_index]] — Agent Security and Governance — Concepts hub for security/governance sub-pages
@@ -1114,6 +1117,7 @@
 - [[concepts/reasoning-instruction-following-failure]] — Reasoning vs Instruction-Following Failure — why reasoning models follow instructions worse; faithfulness drift, reasoning–answer divergence; self-faithfulness predicts instruction-following (arXiv:2609.11643, Sep 2026)
 - [[concepts/signal-allocation-in-post-training]] — Signal Allocation in Post-Training — 4-paper Oct 2026 cluster on which token/restep/reward gets the gradient (DIAL, retrieval credit, RewardWeaver, budget-constrained PRM eval)
 - [[concepts/station-autonomous-math-discovery]] — Station — Decentralized multi-agent mathematical discovery; 5 literature-novel results on AlphaEvolve catalogue problems (arXiv:2608.23691)
+- [[concepts/swe-deceptionbench]] — 720-instance bilingual benchmark of LLM deception across the SDLC; 49.9% Active / 64.3% Passive deception even uninduced; guard models and self-reminder leaky (arXiv Oct 2026)
 - [[concepts/system-architecture/_index]] — System Architecture — Concepts hub (overview)
 - [[concepts/training-infra/_index]] — AI Infrastructure Engineering — Concepts hub for training-infra sub-pages
 - [[concepts/waymo-effect-research-collaboration]] — Deployment field sites as research environments; lab/field role blurring (Waymo Effect)

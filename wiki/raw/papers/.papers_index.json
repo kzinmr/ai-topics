@@ -69,5 +69,10 @@
   "arxiv:2610.13870": "raw/papers/2026-10-09_2610.13870_aria-advisor-consultation-agents.md",
   "arxiv:2610.13881": "raw/papers/2026-10-09_2610.13881_prediction-not-sufficient-memory-state.md",
   "arxiv:2610.13886": "raw/papers/2026-10-09_2610.13886_x-agentred-multi-service-red-teaming.md",
-  "arxiv:2610.13928": "raw/papers/2026-10-09_2610.13928_provably-hide-arbitrary-capabilities.md"
+  "arxiv:2610.13928": "raw/papers/2026-10-09_2610.13928_provably-hide-arbitrary-capabilities.md",
+  "arxiv:2610.13287": "raw/papers/2026-10-09_2610.13287_prompt-optimizers-unscored-requirements.md",
+  "arxiv:2610.13744": "raw/papers/2026-10-09_2610.13744_critique-conditioned-self-distillation.md",
+  "arxiv:2610.13889": "raw/papers/2026-10-09_2610.13889_rated-reliability-aware-tool-retrieval.md",
+  "arxiv:2610.13485": "raw/papers/2026-10-09_2610.13485_proactive-agentic-orchestration-porchestra.md",
+  "arxiv:2610.13626": "raw/papers/2026-10-09_2610.13626_swe-deceptionbench.md"
 }

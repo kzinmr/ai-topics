@@ -6704,3 +6704,9 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Wiki writes (patch-append only, no skeleton overwrites): `concepts/aria-advisor-consultation-agents.md` +new "Consequences for this wiki" section and +2 Related links (updated 10-12 -> 10-13); `concepts/runtime-oversight-knobs.md` +ARIA in sources/related (escalation knob now has a priced implementation, not only a measurement). 17/17 body wikilinks verified via slug resolver, 0 BROKEN.
 - index.md: no new pages; counts unchanged (3196 / Concepts 2170), header date bumped to 2026-10-13.
 - Dedup: 10-12 night primary = cryptographic-capability-concealment + run-to-run-variance-semantic-query; 10-12 morning primary = agent-skill-ecosystem-missing-package-manager; 10-11 night primary = runtime-oversight-knobs. Here aria-advisor-consultation-agents and prediction-not-sufficient-memory-state are primaries for the first time (both created by the 10-12 active-crawl, never posted); runtime-oversight-knobs and epistemic-humility appear as the connective hub, not the subject.
+
+## [2026-10-13] ingest | Active crawl: 5 arXiv papers (Oct 9 batch) → 4 concept pages
+- Raw: 2610.13287 (prompt optimizers miss unscored requirements), 2610.13744 (critique-conditioned self-distillation / all-wrong groups), 2610.13889 (RATED tool retrieval, CIKM 2026), 2610.13485 (PORCHESTRA proactive orchestration), 2610.13626 (SWE-DeceptionBench)
+- Created: concepts/prompt-optimizers-unscored-requirements.md, concepts/critique-conditioned-self-distillation.md, concepts/rated-reliability-aware-tool-retrieval.md, concepts/swe-deceptionbench.md
+- 2610.13485 (PORCHESTRA) saved as raw only — abstract-level, no dedicated page (page threshold not met; overlaps existing multi-agent orchestration cluster)
+- Registered all 5 in raw/papers/.papers_index.json; index.md +4 pages (total 3201)
