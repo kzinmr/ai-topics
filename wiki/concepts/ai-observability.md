@@ -97,3 +97,7 @@ Braintrust experienced this firsthand two years ago and built the custom databas
 - Fills gaps that open-source tools cannot cover
 
 Reference: [AI observability is a database problem: how Brainstore works](../raw/articles/2041206959848735107_ai-observability-is-a-database-problem_-how-brains.md)
+
+## SmithDB: the same pattern at LangChain
+
+LangChain hit the same wall and built **SmithDB**, a columnar datastore purpose-built for agent traces (deeply nested spans, huge payloads, runs open for hours, events arriving over time, full-text search + JSON filtering). See [[concepts/smithdb-agent-trace-datastore]]. Together with Brainstore these are the two documented instances of the "AI observability is a database problem" thesis.

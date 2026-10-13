@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3203
+> Total pages: 3205
 > Last updated: 2026-10-13
 
 ## Entities (940 pages)
@@ -947,7 +947,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2175 pages)
+## Concepts (2176 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2972,6 +2972,7 @@
 - [[concepts/sycophancy]] — Sycophancy in LLMs
 - [[concepts/sycophancy-in-llms]] — Sycophancy in LLMs
 - [[concepts/symphony]] — symphony
+- [[concepts/smithdb-agent-trace-datastore]] — SmithDB — LangChain's purpose-built columnar datastore for agent traces (LangSmith 0.17+, replaces ClickHouse by v0.19); needed for deeply nested spans, huge payloads, runs open for hours, events arriving over time, full-text + JSON-path queries; 2nd instance of 'AI observability is a database problem' after Brainstore
 - [[concepts/synth]] — SYNTH
 - [[concepts/synthetic-data]] — synthetic-data
 - [[concepts/synthetic-research-interns]] — Synthetic Research Interns

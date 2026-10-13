@@ -6725,3 +6725,10 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - New entity: `entities/composio.md` — agent integration platform (managed auth/tool access) + internal Zen cloud agent + the factory case study.
 - Updated: `concepts/dark-factory-software-factory.md` — new "Composio's Anti-Slop Factory (Oct 2026)" case study section (mid-scale 30–50 contributors, filling the StrongDM↔Uber gap), +source, +updated bump.
 - index.md: +2 entries, counts 3201→3203 (Entities 939→940, Concepts 2174→2175). All body wikilinks verified on disk.
+
+## 2026-10-13 — SmithDB concept page (sarahfim follow-up comment)
+
+- Created `concepts/smithdb-agent-trace-datastore.md` from Sarah (@sarahfim)'s X comment on her anti-slop factory article, corroborated by LangChain official site + docs (langchain.com/langsmith SmithDB section; docs.langchain.com self-host-smithdb, self-host-smithdb-features, architectural-overview).
+- Raw source: `raw/articles/langchain-smithdb-agent-trace-datastore-2026-10.md`
+- Cross-ref added to `concepts/ai-observability.md` (new section next to the Brainstore "AI observability is a database problem" argument).
+- Index: +1 concept page (counts 3203→3205 incl. prior raw, Concepts 2175→2176).
