@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3205
-> Last updated: 2026-10-13
+> Total pages: 3212
+> Last updated: 2026-10-14
 
 ## Entities (940 pages)
 
@@ -179,7 +179,7 @@
 - [[entities/cocoindex]] — CocoIndex — open-source code embedding framework specialized in vectorizing codebases; hierarchical code chunking, incremental re-embedding on commits, Postgres-native sync metadata; used by Cerebras Knowledge Base
 - [[entities/codapter]] — Codapter
 - [[entities/coder]] — Coder (Coder Technologies)
-- [[entities/codex]] — OpenAI Codex (AI coding agent)
+- [[entities/codex]] — OpenAI Codex (AI coding agent); enterprise modernization hub and case review linked from the Virgin Atlantic example
 - [[entities/cognition]] — Cognition
 - [[entities/cohere]] — Cohere
 - [[entities/command-a-plus]] — Command A+
@@ -374,7 +374,7 @@
 - [[entities/hailey-schoelkopf]] — Research Scientist at EleutherAI, maintainer of LM Evaluation Harness
 - [[entities/hamel-husain]] — Hamel Husain
 - [[entities/han-lee]] — Han Lee (Hanchung Lee)
-- [[entities/hanchunglee]] — Hanchunglee
+- [[entities/hanchunglee]] — Hanchunglee; resurfaced 2025 talk "OpenAI Killed My Startup — How Product-First Companies Fight Back" (Oct 2026)
 - [[entities/hark]] — Hark; Handoff computer-using agent, $0.18/M input tokens vs GPT 5.5's $5.00, 5s per-turn (Aug 10)
 - [[entities/harrison-chase]] — Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framewor...
 - [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8); AI-Powered Due Diligence for M&A — data room workflows, GSK Stockmann 15-75% savings, PwC 10k+ workflows, 25k+ custom agents (Apr 2026); Legal Tech Overview guide — six core categories, citation grounding baseline (Jun 18); How-to-Choose Legal AI Platform evaluation guide — 10 criteria, 92% adoption, 25h/mo savings (Apr 2026); In-House Legal Operations guide — 89% outside-counsel spend stat, in-house role ladder, 6-18mo build sequence, small-team habits (Jun 22); Contract Analysis Automation guide — task decomposition, 3-factor workflow selection, 5 evaluation criteria, 4-phase adoption, Bayer ~3h/wk case study (May 11); AI for General Counsel guide -- 87% GC gen-AI adoption stat (FTI/Relativity), shadow AI governance, GC as AI governance lead, five-step adoption plan (Jun 23); How to Use AI as a Lawyer guide — workflows, four tool-eval factors, ethics/competence, staged rollout (Jun 8); AI Agents for Legal Work — leverage areas, six governance dimensions, associate craft shift, 700K daily tasks (Jun 8); AI Contract Drafting guide — 80/20 pattern, Word/Outlook/matter integrations, Contract Intelligence outlook (Jun 12)
@@ -595,7 +595,7 @@
 - [[entities/mustafa-suleyman]] — Mustafa Suleyman
 - [[entities/nader-dabit]] — Nader Dabit
 - [[entities/nathan-flurry]] — Nathan Flurry
-- [[entities/nathan-lambert]] — Nathan Lambert
+- [[entities/nathan-lambert]] — Nathan Lambert; Interconnects AI **tracked-models** repo (public ground-truth HF model list for open-model download analytics, Oct 2026)
 - [[entities/neel-nanda]] — Neel Nanda
 - [[entities/nemo-agent-toolkit]] — NVIDIA NeMo Agent Toolkit
 - [[entities/nemotron-cascade-2]] — Nemotron Cascade 2
@@ -729,7 +729,7 @@
 - [[entities/riley-walz]] — Riley Walz
 - [[entities/ring-2-6-1t]] — Ring-2.6-1T
 - [[entities/rivet-dev]] — Rivet
-- [[entities/rlancemartin]] — Lance Martin (@rlancemartin)
+- [[entities/rlancemartin]] — Lance Martin (@rlancemartin); "Building effective agent automations" (claude.dev, Oct 2026) — 6 failure-mode rules for scheduled Managed Agents
 - [[entities/rob-hoeijmakers]] — Rob Hoeijmakers
 - [[entities/roborev]] — RoboRev — Continuous background code review daemon by Wes McKinney/Kenn Software; post-commit + agent hooks for 10+ agents; v0.64.0
 - [[entities/rogo]] — Rogo
@@ -776,6 +776,7 @@
 - [[entities/sequoia-capital]] — Sequoia Capital
 - [[entities/serena-ge]] — Serena Ge
 - [[entities/sero]] — Sero (0xSero) — open-source AI infra builder; Local AI Registry (hardware-aware launch-recipe registry + Omarchy plugin, Sep 2026); local.ai #1; "Open Source Must Win" manifesto
+ — open-source AI infra builder; Local AI Registry (hardware-aware launch-recipe registry + Omarchy plugin, Sep 2026); local.ai #1; "Open Source Must Win" manifesto
 - [[entities/servicenow]] — ServiceNow
 - [[entities/seshadri]] — Shrikar Seshadri (@sseshadri43) — LangChain Deep Agents engineer; co-authored RubricMiddleware (Grading Rubrics) with Sydney Runkle
 - [[entities/seth-karten]] — Seth Karten
@@ -947,7 +948,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2176 pages)
+## Concepts (2179 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -988,7 +989,7 @@
 - [[concepts/agent-driven-ranker-optimization]] — Agent-Driven Ranker Optimization
 - [[concepts/agent-economics]] — Agent Economics
 - [[concepts/claude-code/_index]] — Claude Code — Concepts hub: Claude Code sub-pages index
-- [[concepts/codex/_index]] — OpenAI Codex — Concepts hub: Codex sub-pages index
+- [[concepts/codex/_index]] — OpenAI Codex — Concepts hub: workflows including enterprise legacy modernization and case evidence
 - [[concepts/coding-agents/_index]] — Coding Agents — Concepts hub for coding-agent sub-pages (Cursor, Devin, SWE agents, …)
 - [[concepts/economic-world-models]] — Economic World Models (EWM) — six-level ladder from rule-based agent worlds to sim-to-real economic twins; survey finds work stuck at lower levels (arXiv, Aug 2026)
 - [[concepts/decentralized-agent-orchestration]] — Decentralized Agent Orchestration (Markets vs. Planners) — AgentLance (VCG labor markets for agent allocation) and Economy of Minds (Hayekian auction economies); central planners bottleneck, leak private info, and are manipulable (arXiv, Jun–Aug 2026)
@@ -1139,7 +1140,7 @@
 - [[concepts/ai-adoption-failures-and-enterprise-psychosis]] — AI Adoption Failures and Enterprise AI Psychosis
 - [[concepts/ai-api-abuse]] — AI API Abuse
 - [[concepts/ai-as-abstraction-layer]] — ai-as-abstraction-layer
-- [[concepts/ai-assisted-development]] — AI-Assisted Development
+- [[concepts/ai-assisted-development]] — AI-Assisted Development; links to enterprise legacy modernization practices
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
 - [[concepts/ai-benchmarks/aa-briefcase]] — AA-Briefcase — Agentic knowledge work benchmark (Artificial Analysis); 4 multi-week scenarios, 91 tasks, 3 grading dimensions; Ethan Mollick reports rapid frontier gains + open-weights gap (June 29)
 - [[concepts/ai-benchmarks/agent-arena]] — Agent Arena (Causal Agent Evaluation)
@@ -1824,6 +1825,7 @@
 - [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns
 - [[concepts/enterprise-coding-agent-security]] — Enterprise Coding Agent Security — Security risks of coding agents in enterprise: session leakage, data exfiltration, supply chain; Claude Code and Alibaba case studies
 - [[concepts/enterprise-knowledge-base-architecture]] — Enterprise Knowledge Base Architecture — meet-the-data-where-it-lives design for internal KBs using hybrid search (full-text + embeddings + IDF + age decay), LLM query planning, MCP-exposed retrieval primitives, and project-scoped search; Cerebras case study (15K queries/day)
+- [[concepts/enterprise-legacy-modernization]] — Enterprise Legacy Modernization with Coding Agents — Codex practice hub: business-rule discovery, specifications, parity, incremental cutover, execution environments, and delivery economics
 - [[concepts/entropix]] — entropix
 - [[concepts/endogenous-misalignment-self-evolving-agents]] — Endogenous Misalignment in Self-Evolving Agents — unsafe behavior emerging as a side effect of self-improvement (local self-updates persisting into later tasks); SEABench benchmark (arXiv:2609.35596, Sept 2026)
 - [[concepts/epd-disaggregation]] — EPD Disaggregation
@@ -2248,6 +2250,7 @@
 - [[concepts/lean-startup]] — lean-startup
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
 - [[concepts/learning-to-rank]] — Learning to Rank
+- [[concepts/legacy-behavioral-parity]] — Legacy Behavioral Parity — characterization and differential tests, business-rule exceptions, state reconciliation, independent acceptance, and rollback evidence
 - [[concepts/lexical-search]] — Lexical Search
 - [[concepts/linear-agent-code-intelligence]] — Linear Agent Code Intelligence
 - [[concepts/linear-walkthroughs]] — Linear Walkthroughs
@@ -2332,7 +2335,7 @@
 - [[concepts/main-branch-development]] — Main-Branch Development
 - [[concepts/makoto-kato]] — makoto-kato
 - [[concepts/malleable-software]] — Malleable Software — user-editable, re-combinable software; LLM-era double interaction loop and on-the-fly UI (Litt 2023)
-- [[concepts/managed-agents]] — Managed Agents (Anthropic)
+- [[concepts/managed-agents]] — Managed Agents (Anthropic); + scheduled-automation deployment pattern (6 failure-mode rules, Oct 2026)
 - [[concepts/managed-agents-sre-incident-response]] — How to triage production incidents using the team runbooks.
 - [[concepts/managed-devins]] — Managed Devins
 - [[concepts/marin]] — Open-source framework for foundation model research and development from Stanford CRFM. Reproducible training pipelin...
@@ -2421,6 +2424,7 @@
 - [[concepts/modelcrafting]] — Modelcrafting — AI agents autonomously shaping, valuing, and improving other models; coined by Thoughtful Lab (Apr 2026)
 - [[concepts/modern-retrieval-toolkit]] — Modern Retrieval Toolkit
 - [[concepts/modernbert]] — modernbert
+- [[concepts/modernization-traceability]] — Modernization Traceability — inspectable legacy-source → business-decision → specification → implementation → test → release chain; structural coverage versus semantic correctness
 - [[concepts/moe-train-inference-mismatch]] — MoE Train-Inference Mismatch
 - [[concepts/moe-training-noumena-methodology]] — MoE Training Methodology (Noumena)
 - [[concepts/moloch-multipolar-trap]] — Moloch (Multipolar Trap)
@@ -2931,7 +2935,7 @@
 - [[concepts/space-gpus]] — Space GPUs
 - [[concepts/spacex-cursor-acquisition]] — SpaceX Acquires Cursor — $60B Coding Agent Acquisition
 - [[concepts/sparse-signal-loop]] — Sparse Signal Loop
-- [[concepts/spec-driven-development]] — Spec-Driven Development
+- [[concepts/spec-driven-development]] — Spec-Driven Development; legacy modernization application with rule traceability and behavioral parity
 - [[concepts/speculative-decoding]] — Speculative Decoding — Accelerating LLM inference by using draft models to predict multiple tokens per forward pass
 - [[concepts/specscale-speculative-search-serving]] — SpecScale — serving system for speculative search under test-time scaling; early path pruning + dedup + deferred verification cut throughput/latency cost of TTS (arXiv:2609.39334, Sept 2026)
 - [[concepts/speculative-decoding-mtp]] — Speculative decoding and Multi-Token Prediction (MTP) techniques that accelerate LLM inference by using a smaller dra...
@@ -3206,22 +3210,27 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (15 pages)
+## Queries (20 pages)
 
-- [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
-- [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
-- [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
-- [[queries/wiki-graph-analysis-weekly-2026-08-28]] — Weekly Wiki Graph Analysis (2026-08-28) — 3,021 pages scanned; 478 orphans (475 content-rich), 3,555 broken links (197 fixable), 16 dup groups (8 false positives), 1,725 stale pages
-- [[queries/wiki-graph-analysis-weekly-2026-08-28-annotations]] — Human-adjudicated verdicts on this week's 16 duplicate groups (5 real dups incl. Lilian Weng fact conflict) + false-positive metrics in the auto report
-- [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
-- [[queries/wiki-graph-analysis-weekly-2026-09-18]] — Weekly Wiki Graph Analysis (2026-09-18) — 3,079 pages (recursive scan); 446 orphans (303 content-rich), 2,810 broken links (919 raw-ref-as-wikilink), 8 real duplicate groups, 1,661 stale, 0 tag violations
-- [[queries/test-time-compute-three-axes-2026-09-24]] — Compute-vs-accuracy frontier has 3 axes (sleep-time / test-time / post-peak); benchmarks only measure the middle one
-- [[queries/wiki-graph-analysis-weekly-2026-09-25]] — Weekly Wiki Graph Analysis (2026-09-25) — 3,112 pages; 465 orphans (316 rich), 3,512 broken refs (context-engineering hub = 188), 8 unresolved dup groups + 48 dir-collision stubs, 2,230 stale; state snapshot persisted
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
 - [[queries/2026-10-08-human-gate-retirement-synthesis]] — 4 independent lines (ScaleX 33% approval rate, 115-practitioner survey, OverAct, PACE) converge: the human gate is structurally broken; human role contracts to post-hoc audit + scope-setting
 - [[queries/2026-10-09-crash-consistent-agent-synthesis]] — UndoBench 83.54% competence vs 46.72% recovery: effect-integrity gap; Retire/Absurd/Pi Durable/StateWise dig the same hole at 5 distinct layers, counter-evidence included
 - [[queries/2026-10-12-skills-npm-without-package-json-hotpost]] — Skills are npm without package.json: 6 missing resolution primitives; 2.19M adoptions, 30× audit-yield gap vs stars, >1/3 exclusive functions lost to install-order accidents
+- [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
+- [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
+- [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
+- [[queries/modernization-inner-loop-reading]] — Modernization Inner-loop Reading — 42 books in seven sections for project execution, logging strategy and operational acceptance, with purposes, chapter scopes and conditional priorities
+- [[queries/modernization-java-logging]] — Java Logging Strategy for Modernization — operational requirements, domain observations, Java implementation, logging contracts, acceptance checks and authoritative English reading sources
+- [[queries/modernization-outer-loop-reading]] — Modernization Outer-loop Reading — 20 resources in six sections for reusable SME knowledge, transformation recipes, execution control, evaluation, audit and improvement; O’Reilly/Amazon.com links
+- [[queries/modernization-reading-guide]] — Codex Enterprise Modernization Reading Guide — purpose-based navigation to inner-loop project execution and outer-loop process design; topic map, reading approach and selection principles
+- [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
+- [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
+- [[queries/test-time-compute-three-axes-2026-09-24]] — Compute-vs-accuracy frontier has 3 axes (sleep-time / test-time / post-peak); benchmarks only measure the middle one
+- [[queries/wiki-graph-analysis-weekly-2026-08-28]] — Weekly Wiki Graph Analysis (2026-08-28) — 3,021 pages scanned; 478 orphans (475 content-rich), 3,555 broken links (197 fixable), 16 dup groups (8 false positives), 1,725 stale pages
+- [[queries/wiki-graph-analysis-weekly-2026-08-28-annotations]] — Human-adjudicated verdicts on this week's 16 duplicate groups (5 real dups incl. Lilian Weng fact conflict) + false-positive metrics in the auto report
+- [[queries/wiki-graph-analysis-weekly-2026-09-18]] — Weekly Wiki Graph Analysis (2026-09-18) — 3,079 pages (recursive scan); 446 orphans (303 content-rich), 2,810 broken links (919 raw-ref-as-wikilink), 8 real duplicate groups, 1,661 stale, 0 tag violations
+- [[queries/wiki-graph-analysis-weekly-2026-09-25]] — Weekly Wiki Graph Analysis (2026-09-25) — 3,112 pages; 465 orphans (316 rich), 3,512 broken refs (context-engineering hub = 188), 8 unresolved dup groups + 48 dir-collision stubs, 2,230 stale; state snapshot persisted
 - [[queries/wiki-graph-analysis-weekly-2026-10-02]] — Weekly Wiki Graph Analysis (2026-10-02) — 3,120 pages; 6 top-level orphans, 0 ghost entries, 866 tags
 
 ## RSS Scans

@@ -3,7 +3,7 @@ title: "Ryan (Teknium)"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-09-27
+updated: 2026-10-13
 type: entity
 ---
 
@@ -164,6 +164,7 @@ Nous Research's decentralized training infrastructure (DiStrO) and Psyche Networ
 | Apr 2026 | Teknium opens 10+ PRs in single week: OAuth lifecycle, Codex fast mode, workspace RAG, Discord introspection, Mistral structured blocks |
 | Aug 2026 | Hermes Agent v0.21.0 "Pantheon Release" announced (Bots Mode, Agent 2 Agent Comms, Subagent Steering, ~50% default context reduction) |
 | Sep 2026 | Teknium points community at the official **Plugin Catalog** (`hermes-agent.nousresearch.com/docs/plugins`) — reviewed, one-click-installable plugins — as the canonical answer to "can Hermes do X?" questions |
+| Oct 2026 | Highlights the **Fish Audio official plugin** (expressive TTS in 80+ languages, STT, community voice library — maintained by Electric Sheep) in the Plugin Catalog; ships stable-install pinning fix (PR #137780): rerunning the installer on a stable install stays on stable, and older releases read as rollbacks on every update surface |
 
 ## Related
 

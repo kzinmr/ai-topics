@@ -1,7 +1,7 @@
 ---
 title: "Hanchung Lee (Han Lee, @hanchunglee)"
 created: 2026-05-23
-updated: 2026-06-15
+updated: 2026-10-13
 type: entity
 tags:
   - person
@@ -114,6 +114,10 @@ Lee contrasts the two paradigms:
 - **"Data Aggregation Is Not a Moat"** (May 2026) — AI agents collapse the cost structure of data aggregation businesses. Value shifts from data collection to decision-quality answers.
 - **"Don't Outsource Your Understanding"** (May 2026) — Distinguishes cognitive offloading from cognitive surrender with cross-domain examples.
 - **"'Determinism' is the Biggest Cope in AI Adoption"** (Apr 2026) — Determinism was never guaranteed in software; the real shift is from code verification to continuous evaluation.
+
+### 2025 "OpenAI Killed My Startup" talk (resurfaced Oct 2026)
+
+While commenting on the "intelligence component will absorb all surrounding structures" dynamic (Oct 12, 2026), Lee resurfaced his 2025 talk **"OpenAI Killed My Startup — How Product-First Companies Fight Back"** (YouTube, Foundation Models track, Day 2): how product-first companies defend against frontier labs absorbing their category. Transcript: [[transcripts/2025_openai-killed-my-startup-how-product-first-companies-fight-back]]
 
 ## X Activity Themes
 

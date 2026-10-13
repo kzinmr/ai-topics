@@ -2,7 +2,7 @@
 title: "Managed Agents (Anthropic)"
 type: concept
 created: 2026-04-25
-updated: 2026-05-15
+updated: 2026-10-13
 tags:
   - architecture
   - anthropic
@@ -119,6 +119,12 @@ Advantages:
 > *"I have a strong gut feeling the frontier labs are going to start introducing new models and capabilities that are ONLY available on their managed agent platforms."*
 
 If new models and capabilities start being offered exclusively on managed agent platforms, the self-hosting strategy is fundamentally undermined. For now, a wait-and-see approach is prudent, but trends must be closely monitored.
+
+## Deployment Patterns
+
+### Scheduled agent automations (Oct 2026)
+
+Anthropic's claude.dev post **"Building effective agent automations"** (Lance Martin & CJ Avilla, 2026-10-08) is the first official reference implementation of Managed Agents as *scheduled background automations*: cron-triggered runs read sources (Slack, GitHub MCP) and post a daily brief. Durable design rules extracted there: per-source **bookmarks** instead of fixed time windows; failed source reads reported as *unreadable*, never as a quiet day; live re-verification of every item right before posting; posting confirmed only on destination `"ok": true` before committing ledger/bookmark state; two memory stores (human-owned read-only `preferences` + agent read-write `state` mounted at `/mnt/memory/`); capability-limited prompt-injection defense (read-only tokens, host allowlists) and a spend cap that pauses on `budget_reached`. Onboarding is itself agent-driven: `/claude-api managed-agents-onboard <post-url>` in Claude Code writes and applies the config files. See [[raw/articles/claude.dev--building-effective-agent-automations--2026-10-08]] and [[entities/rlancemartin]].
 
 ## See Also
 
