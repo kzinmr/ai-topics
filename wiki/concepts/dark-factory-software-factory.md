@@ -2,7 +2,7 @@
 title: "Dark Factory Software Factory"
 type: concept
 created: 2026-04-13
-updated: 2026-09-01
+updated: 2026-10-13
 tags:
   - concept
   - multi-agent
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-06-15_factory-ai_software-factory-2.0.md
   - raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers.md
   - raw/articles/2026-08-28_ubereng_running-software-factory-efficiently-at-uber-scale.md
+  - raw/articles/x.com--sarahfim--anti-slop-software-factory--2026-10-12.md
 ---
 
 # Dark Factory Software Factory
@@ -344,6 +345,19 @@ Uber sits at a **hybrid Level 3→4**: majority agent-authored code (Level 4 ter
 | Cost governance | n/a | Token-waste analysis | Budgets | **Visibility + nudges, no hard caps** (post-June) |
 
 Source: [[raw/articles/2026-08-28_ubereng_running-software-factory-efficiently-at-uber-scale]]
+
+## Case Study: Composio's Anti-Slop Factory (October 2026)
+
+**Source:** Sarah (@sarahfim), lead product engineering at [[entities/composio|Composio]] — ["How to build an anti-slop software factory for teams of 30+"](https://x.com/sarahfim/status/2109736893198016898) (X Article, 2026-10-12)
+
+The **mid-scale datapoint** between StrongDM (3-person) and Uber (Fortune-500): a dashboard repo with ~50 contributors spanning engineering, product, and marketing — all bringing their *own* personal agents. Sarah's central claims:
+
+- **The repository is the factory**, not the agent/harness/skills. CI, lint rules, types, and tests are the machinery; the goal is to make it "almost impossible" for any BYO agent to write bad code.
+- **Slop compounds**: an agent in a sloppy repo slops a plan → slop implementation → self-reviews its own slop; at scale this is exponential and velocity decays.
+- **Lint rules > skills**: agents ignore instructions, skills rot as models improve; lint closes the loop immediately and applies to every agent. 38 custom lint rules, `useState`/`useEffect` banned outright.
+- Seven repo practices (co-location, e2e types, tolerated duplication, lint, E2E replay tests, bugbots-last, fast CI) before cloud agents — their internal **Zen** agent has merged 1,300+ PRs since Feb 2026.
+
+Full analysis: [[concepts/coding-agents/lint-rules-as-agent-feedback-loop]].
 
 ## Related
 

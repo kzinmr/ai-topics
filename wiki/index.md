@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3201
+> Total pages: 3203
 > Last updated: 2026-10-13
 
-## Entities (939 pages)
+## Entities (940 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -184,6 +184,7 @@
 - [[entities/cohere]] — Cohere
 - [[entities/command-a-plus]] — Command A+
 - [[entities/command-center]] — Command Center (cc.dev)
+- [[entities/composio]] — Composio — AI agent integration platform (managed auth/tool access); internal Zen cloud agent 1,300+ PRs; anti-slop software factory case study (Oct 2026)
 - [[entities/construction-physics-com]] — Brian Potter (Construction Physics)
 - [[entities/content-engine]] — Content Engine — AI-automated content pipeline (research→draft→distribute→analyze); Vibe CEO component; canonical implementation [[entities/blotato]]
 - [[entities/contextarena]] — Context Arena
@@ -946,7 +947,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2174 pages)
+## Concepts (2175 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1708,6 +1709,7 @@
 - [[concepts/daniel-jackson]] — Daniel Jackson
 - [[concepts/dev-state-sandbox-snapshots-for-coding-agents]] — Returning to Development States (arXiv:2610.13841) — Go-Explore search over full Daytona snapshots; recovery value comes mainly from state OUTSIDE the repo (DBs, services, runtime), paying off when work spans multiple services un-reconstructable from a git diff
 - [[concepts/dark-factory-software-factory]] — Dark Factory Software Factory; + Uber enterprise-scale case study (Aug 2026: >70% agent-authored PRs, cost equation, -34%/-52% cost curves)
+- [[concepts/coding-agents/lint-rules-as-agent-feedback-loop]] — Lint Rules as the Agent Feedback Loop; Sarah/@sarahfim Composio anti-slop factory (Oct 2026): repo-is-the-factory, slop compounds, lint>skills, 38 custom lint rules, mid-scale 30–50 contributors
 - [[concepts/data-analysis-agents]] — AI Data Analysis Agents
 - [[concepts/data-breach]] — Data Breach
 - [[concepts/data-engineering]] — Data Engineering
