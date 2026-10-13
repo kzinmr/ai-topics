@@ -20,6 +20,8 @@ sources:
 
 **Modernization traceability** is the inspectable chain connecting legacy evidence, a business decision, a target requirement, implementation, tests, and release evidence. It makes retention and intentional change explicit. It complements [[concepts/legacy-behavioral-parity]] within [[concepts/enterprise-legacy-modernization]].
 
+A subject-matter expert (SME) supplies knowledge about the business domain. Record separately who has authority to approve a rule: expertise, implementation responsibility and decision authority need not belong to the same person. An independent oracle is the justified basis for an expected result, such as a reviewed rule and example, rather than the candidate's own answer.
+
 ## Concrete published mechanisms
 
 The AWS/OpenAI [Codex forward-engineering example](https://aws.amazon.com/blogs/migration-and-modernization/forward-engineering-aws-transform-generated-business-requirements-with-openai-codex/) carries REQ identifiers into specifications, uses `@LegacyRules` on implementation methods and `@CoversLegacyRules` on tests, and checks missing or inconsistent coverage in a build gate. Its authors explicitly distinguish structural completeness from faithful implementation, which still requires review.
@@ -95,6 +97,30 @@ The [[raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-age
 [[concepts/artifact-provenance-gates]] extends the chain from source obligations to the actual checked and promoted artifact. Google's Chapter 14 distinguishes source assurance from authenticated binary provenance. Record the artifact digest, builder/input identity, verification runs, policy and approval version. Recheck relevant decisions when a candidate or its evidence changes; a prior approval should not silently apply to a substituted artifact.
 
 Use [[concepts/modernization-workflow-recovery]] to retain unresolved decisions and approval waiting across restarts. These additions are a modernization synthesis, not evidence that the previously cited vendor demonstrations implemented every field or mechanism.
+
+## Worked example: follow one obligation to evidence
+
+This is an original fictional ledger. `L1`, `C2`, `A1` and the run identifiers below name example revisions/artifacts, not real repository measurements.
+
+| Record | Example content | What can be checked |
+|---|---|---|
+| Observation `OBS-17` | Legacy L1 returns fee 49 for amount 1999 | Locate the fixture and original run evidence |
+| Rule `FEE-01` | Retain 2.5% rounded down for valid pilot amounts | Locate the intended rule and scope |
+| Decision `DEC-03` | Domain owner approved FEE-01; refunds remain out of scope | Identify authority, alternatives and unresolved work |
+| Acceptance `EX-04` | Input 1999, expected 49, correct account and one notice intent | Confirm expectation and its decision basis |
+| Candidate `C2` | Implementation change builds artifact A1 | Locate source/build origin |
+| Run `RUN-08` | EX-04 passed on A1 under environment E1 | Inspect values, state/effects and execution context |
+| Release decision `REL-02` | Authorized promotion of A1 under policy P1 | Bind acceptance and authority to the candidate promoted |
+
+The ledger must preserve the distinction between the first two rows. OBS-17 says what happened; DEC-03 gives the approved behavior its authority. Merely adding FEE-01 to a test name establishes a link, not that the test checks the fee or notice recipient.
+
+If C2 returns 50, keep the failing run and bring the difference to the owner. A new decision can authorize nearest rounding for a later scope. Link that decision to the earlier one as superseding or changing it, and retain the old observation. Do not rewrite DEC-03 to pretend the decision was always different.
+
+### Reuse check for another application
+
+Before reusing FEE-01, confirm the same business meaning, valid-input scope, reference-data assumptions and decision authority. A second application's refunds may require a different rule. Preserve the evidence reference, current owner, last applicable review and the condition that triggers reconsideration. An answer cached from the first pilot is not automatic authorization for the second.
+
+**Check your understanding:** Does every linked rule having a passing test establish complete migration acceptance? Only if the tests actually exercise the material obligations, the expectations have an independent basis, and state, operations and the promoted artifact are also accepted. Structural coverage alone is narrower evidence.
 
 ## Failure modes
 

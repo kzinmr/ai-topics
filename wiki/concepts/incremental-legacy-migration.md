@@ -5,8 +5,11 @@ updated: 2026-10-14
 type: concept
 tags: [concept, software-engineering, architecture, design-patterns, testing, reliability]
 sources:
+  - https://learning.oreilly.com/library/view/monolith-to-microservices/9781492047834/ch02.html
+  - https://learning.oreilly.com/library/view/monolith-to-microservices/9781492047834/ch04.html
   - https://learning.oreilly.com/library/view/monolith-to-microservices/9781492047834/ch03.html
   - https://learning.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/ch10.xhtml
+  - https://learning.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/ch12.xhtml
   - raw/papers/2018_google_sre-workbook/canarying-releases.md
 confidence: high
 ---
@@ -56,6 +59,32 @@ The following is a proposed modernization record:
 - Verify that retiring the old path removes the intended dependencies.
 
 Newman also warns that adding business changes during a migration can weaken rollback: the old path may no longer provide the same features. Keep intentional differences explicit in [[concepts/modernization-traceability]] and reduce the size of the transition where possible.
+
+## Worked example: replace a fee batch gradually
+
+This original fictional plan aims to retire an unsupported runtime while preserving the approved fee calculation and notification behavior. A modular batch executable is an eligible destination; microservices are not an acceptance condition. Newman's Chapter 2 starts from the goal and evaluates progress against it.
+
+| Stage | Active result / writer | Candidate's role | Advance only when |
+|---|---|---|---|
+| Establish boundary | Old batch | Deployed but inactive | The selection boundary leaves old behavior unchanged |
+| Compare | Old batch | Calculate from matched fixtures; record notification intents | Fees, state effects and intents reconcile under reviewed comparison rules |
+| Limited activation | Exactly one selected implementation per work unit | Process the selected cohort as the active path | Candidate/control outcomes and recovery conditions meet the agreed policy |
+| Complete transition | New batch | Own all in-scope work | Data, consumers, schedules and operations are accepted |
+| Retire | New batch | Operate without the old runtime | Old jobs, toggles and forbidden dependencies are removed and checked |
+
+In the comparison stage, both paths receive amount 1,999 cents and should produce fee 49. Only the old path sends the real notification. The candidate records its intent, so a discrepancy can be inspected without sending two notices. In limited activation, some work receives the candidate's real result; that is no longer a shadow comparison.
+
+### If data moves too
+
+A **snapshot** is a copy at a known point in time. A **backfill** copies existing records into the new store. Changes after that snapshot must also be copied before the new store becomes authoritative.
+
+Suppose the snapshot ends at change sequence 100. The old system then writes changes 101–103 while the copy runs. The new store must include and reconcile those changes, not merely the snapshot, before reads switch. Matching row counts alone can conceal different values. Chapter 4's application-synchronization pattern stages bulk copying, synchronized writes and a read switch, while preserving a fallback for a period.
+
+For the actual project, choose one accountable writer or a rigorously specified synchronization protocol. Define handling of partial writes, duplicates, ordering and recovery. Two applications independently trying to keep two stores synchronized can create divergent state. This example does not mandate dual writing.
+
+After the new writer accepts change 104, redirecting reads to an old store ending at 103 loses visibility of accepted work. Recovery must first retain or reconcile 104. An old database backup is not a sufficient recovery plan.
+
+**Check your understanding:** Has a new executable that still invokes the old runtime completed retirement? No. It may be a useful coexistence adapter, but the retirement criterion needs execution without that dependency.
 
 ## Related
 

@@ -32,6 +32,8 @@ This is **not** full-book reading, completion of every guide-designated chapter,
 
 ## Reading coverage, in guide order
 
+**Continuation, 2026-10-14:** The following table preserves the first-pass coverage snapshot, including what was then unread. [[queries/modernization-reading-continuation]] records subsequent reading of living curation, recipe composition/cursors, AI use cases, workflow versions/boundaries, evaluator calibration and CI, and deeper Google test/provenance sections. [[queries/modernization-independent-study-guide]] supplies standalone learning for both loops.
+
 | Stage / work | Sections actually inspected | Coverage boundary |
 |---|---|---|
 | 1 — Living Documentation | Ch. 1 core principles and accuracy mechanisms; Ch. 3 authoritative sources, publishing and reconciliation; Ch. 4 recording rationale; Ch. 12 quality attributes, decision logs and architectural reality check | Selected sections of Ch. 1/3/4/12; Ch. 2 and other material in those chapters remain unread |

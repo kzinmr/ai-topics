@@ -6,8 +6,10 @@ type: concept
 tags: [concept, supply-chain, security, ci-cd, verification, audit, governance, software-engineering]
 sources:
   - raw/papers/2020-04-08_google_building-secure-reliable/ch05.md
+  - raw/papers/2020-04-08_google_building-secure-reliable/ch13.md
   - raw/papers/2020-04-08_google_building-secure-reliable/ch14.md
   - raw/papers/2020-04-08_google_building-secure-reliable/ch15.md
+  - https://learning.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/ch05.xhtml
 ---
 
 # Artifact Provenance Gates
@@ -56,6 +58,28 @@ Chapter 15 recommends structured, timestamped investigation records and logs tha
 ## Limits
 
 Trusted provenance can faithfully describe a build of defective code. Reproducibility, trustworthy provenance, functional acceptance and authorization answer different questions. Use [[concepts/modernization-evaluation-corpus]] and the agreed acceptance contract alongside origin verification.
+
+## Worked example: approval for one artifact
+
+A **digest** is a content-derived identifier such as a cryptographic hash. It helps compare artifact identity; knowing a digest alone does not tell you who produced the artifact. A **signature** authenticates an assertion under an accepted key and protects its integrity. Trust also depends on the signer/builder, key protection and what the assertion actually says.
+
+The following identifiers are symbolic examples, not real hashes or deployment records:
+
+| Event | Evidence | Gate result |
+|---|---|---|
+| Candidate `A1` is built | Digest `H1`, authenticated builder/input record | Origin can be checked under the defined policy |
+| Run `R1` checks `A1` | `H1`, fixture/environment versions, acceptance and recovery results | Results apply to that tested identity and context |
+| Owner approves the pilot | `H1`, rule/evidence revisions, policy `P1`, allowed action | Approval is scoped to these conditions |
+| A rebuild produces `A2` | Different digest `H2`, same release label | Reject reuse of the `H1` approval; establish applicable evidence for `H2` |
+| The worker tries to approve its own release | Worker has execution permission only | Reject the unauthorized action |
+
+*Continuous Delivery*, Chapter 5, explains promoting the binaries already built and tested. For this case, a proposed pipeline builds once, runs unit checks, verifies business outputs/effects, tests required architectural and recovery properties, then evaluates promotion policy for that artifact. Google Chapter 13 explains why unit and integration tests contribute different evidence: a fake receiver's call record does not establish that the actual receiver accepted the intended effect.
+
+Test the gate by substituting `H2`, removing a required check, using an unaccepted signer and presenting an expired or incompatible decision. Each must stop promotion under this example policy. Then verify that the complete `H1` evidence permits only the approved pilot action. These are suggested gate tests, not a claim that this repository implements a deployment system.
+
+Record both the decision and what actually deployed. If policy or a vulnerability assessment changes later, recheck deployed artifacts and handle exceptions through accountable review. A genuine signature on defective code does not make that code correct.
+
+**Check your understanding:** An artifact's hash matches an approved label in a spreadsheet. Does this establish trustworthy origin and functional acceptance? No. Identity, authenticated provenance, applicable check evidence and authorization are separate obligations.
 
 ## Related
 

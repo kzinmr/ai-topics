@@ -55,6 +55,25 @@ Shadow/parallel execution sends comparable work to both paths while keeping one 
 
 *Continuous Delivery*, Chapter 10, treats data and external integrations as rollback constraints. Reversing a route does not undo committed state or preserve writes lost by restoring a backup. Rehearse the actual state-aware recovery path before expanding exposure.
 
+## Worked example: make a bounded production decision
+
+This is an original simplified exercise; its thresholds are illustrative. Define a valid event as one eligible fee-batch work unit. Define a good event as a correct fee and reconciled state completed before the cutoff, with no duplicate notification. The **service-level indicator (SLI)** is `good events / valid events`; the **service-level objective (SLO)** is the agreed target for that indicator.
+
+The example policy requires an SLI of at least 99%, representative work and no unresolved critical mismatch before expansion:
+
+| Population | Valid events | Good events | SLI | Decision under this policy |
+|---|---|---|---|---|
+| Old-version control | 1000 | 995 | 99.5% | Meets the numerical target |
+| Candidate | 1000 | 980 | 98% | Pause expansion and investigate |
+
+The candidate fails the absolute target even if overall service health remains green. An HTTP 200 or "job complete" message does not count as good if its fee is wrong. A control/candidate comparison is also not meaningful if the control receives easy records and the candidate receives all month-end exceptions.
+
+Before exposure, record the version/cohort, evaluation window, data-arrival delay, decision owner and recovery action. Keep routing stable for a multi-step work unit so its state and effects do not switch implementations halfway through.
+
+If recovery redirects work to the old path after the candidate has accepted new writes, first apply the recorded reconciliation procedure. Preserve accepted writes and handle already emitted notifications. Routing reversal alone is not a database rollback.
+
+**Check your understanding:** Would 10 successful candidate events justify expansion? This policy also requires adequate representative work. A 100% score on an insufficient sample is not enough; the example does not infer statistical certainty from a fixed count.
+
 ## Related
 
 - [[concepts/incremental-legacy-migration]] — migration boundaries and activation

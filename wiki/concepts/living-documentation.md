@@ -6,8 +6,10 @@ type: concept
 tags: [concept, documentation, knowledge-management, software-engineering, verification, business-process]
 sources:
   - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch01.xhtml
+  - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch02.xhtml
   - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch03.xhtml
   - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch04.xhtml
+  - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch05.xhtml
   - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch12.xhtml
   - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_020.html
 ---
@@ -54,6 +56,21 @@ A failed check or changed assumption should mark a decision for review. Rewritin
 Adzic's Chapter 11 adds organization, consistent domain language and accessibility. Merge fragmented descriptions of one feature; split specifications that conceal several concepts; keep technical fixture operations outside business explanations. Martraire's Chapter 12 adds an architecture reality check: compare implemented structure with intended design, alongside explicit quality attributes.
 
 Measure whether maintainers and domain participants can find, understand and update the relevant knowledge. The number of generated pages does not measure its usefulness. [[concepts/architectural-fitness-functions]] can check selected design characteristics, but does not settle a business disagreement.
+
+## Worked example: keep one fee decision understandable
+
+In this original fictional example, decision `DEC-03` approves integer-cent amounts from 0 to 1,000,000 and a fee of 2.5% rounded down. Example `EX-04` says that 1999 cents produces a 49-cent fee. The record also identifies the decision owner, applicable pilot, rationale and review trigger. A readable rule page and an executable example refer to this versioned record.
+
+1. Publish the rule, its example and the reason for rounding down where maintainers and domain participants can find them.
+2. Make the test adapter read the example's input and expectation, invoke the implementation and compare the actual result with 49.
+3. Deliberately change the expectation to 50 in a temporary fixture. The unchanged implementation must now fail the check. If it remains green, the adapter may have ignored the specification.
+4. Restore the fixture. If the owner later approves rounding to nearest, add a superseding decision with its scope and consequences; update examples and implementation together. Preserve the earlier decision as history.
+
+The temporary fixture change tests reconciliation; it does not authorize a new business rule. Copying an expected value into an unrelated test and maintaining two copies manually creates a synchronization obligation. Generating both implementation and expected answer from the same mistaken rule can also hide a defect: shared storage does not replace independent review of intent.
+
+Chapter 2's discussion of behavior-driven development puts collaboration before automation. Chapter 5's curation discussion adds a reader's route through relevant knowledge. For this case, a maintainer needs the rule and failing check; a decision owner needs the rationale and alternatives; an operator needs the pending-work/recovery policy. Link these views instead of making every reader inspect every artifact. Curation means selecting, organizing and explaining knowledge for a reader's purpose.
+
+**Check your understanding:** The page was regenerated today, but its adapter always compares with a hardcoded 49 after the published example changes to 50. Is the documentation reconciled? No. Fresh publication and a green test have concealed disagreement between the two versions.
 
 ## Related
 

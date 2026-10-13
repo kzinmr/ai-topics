@@ -5,7 +5,9 @@ updated: 2026-10-14
 type: concept
 tags: [concept, workflow, orchestration, durable-execution, distributed-systems, state-management, reliability, human-in-the-loop]
 sources:
+  - https://learning.oreilly.com/library/view/practical-process-automation/9781492061441/ch03.html
   - https://learning.oreilly.com/library/view/practical-process-automation/9781492061441/ch04.html
+  - https://learning.oreilly.com/library/view/practical-process-automation/9781492061441/ch07.html
   - https://learning.oreilly.com/library/view/practical-process-automation/9781492061441/ch09.html
   - https://learning.oreilly.com/library/view/practical-process-automation/9781492061441/ch11.html
   - raw/articles/2026-10-14_unknown_temporal-workflow-docs/retry-policies.md
@@ -50,6 +52,31 @@ The outbox pattern can atomically record business state and an event-to-be-sent 
 Chapter 4 treats assignment, human tasks and exceptional cases as part of process execution. Chapter 11 separates an end-to-end business process view from fine-grained distributed tracing. Sampling, missing correlation and a technical trace's granularity can leave the business outcome unclear.
 
 Record job/flow identity, significant state transitions, attempts, effects, decisions and accepted outcomes. Tool inputs/outputs and exposed decision records can support diagnosis; full hidden model reasoning is not a prerequisite or an assumed available artifact. Coordinate evidence retention and access with [[concepts/artifact-provenance-gates]].
+
+## Worked example: a notice committed before the timeout
+
+The following original timeline assumes a receiver that atomically records a stable operation key and its result with the accepted effect, keeps that record for the retry horizon and rejects conflicting reuse of a key. Without those conditions, the caller cannot claim deduplication merely by attaching an ID.
+
+| Event | Caller knowledge | Required action |
+|---|---|---|
+| Job `W1` sends notice operation `W1/notice` | Intent is durably recorded | Track the operation independently of attempt number |
+| Receiver accepts it; its reply is lost | Outcome is unknown to the caller | Persist the ambiguous state |
+| Attempt 2 uses the same key and same payload | A repeated request is possible | Receiver returns the stored result without a second effect |
+| Receiver evidence confirms acceptance | Outcome can be reconciled | Mark the operation complete with that evidence |
+
+An attempt ID such as `W1/notice/attempt-2` is useful for diagnostics but must not replace the stable operation key. A second legitimate notice needs its own operation identity. If the receiver has no suitable deduplication/status mechanism, wait for reconciliation or follow an approved manual procedure; a blind retry can duplicate the effect.
+
+Test both the successful retry and a deliberately faulty receiver that accepts twice. The latter must fail the no-duplicate obligation. A timeout alone proves only that waiting ended. A compensating correction notice may be acceptable after an erroneous delivery, but cannot erase the fact that the first notice was seen.
+
+## Resume under the right responsibilities and version
+
+Chapter 3 contrasts workflow steps with local function calls: a workflow can persist a wait, but the boundary of each recorded unit of work determines what repeats. Two remote effects hidden inside one step can leave the first effect committed when the second fails. Separate responsibilities and give each effect its recovery contract.
+
+Chapter 7 assigns services explicit business outputs and communication boundaries. In this example, the batch owns the fee decision and notification intent; the receiver owns acceptance of the notice. Do not infer delivery from a checkpoint in the batch alone.
+
+Chapter 3's versioning discussion allows existing instances to finish on an older version or explicitly migrate them. A waiting job created under `W1` must not silently resume under incompatible `W2` code/data rules. An approval must identify the candidate, rule/evidence version and allowed action; changing these can require a new decision. Persisting the human task makes waiting possible, but does not make an old answer applicable to new evidence.
+
+**Check your understanding:** A retry gets a new request ID, succeeds and the job completes. Is that enough to establish one notice? No. Inspect the stable operation contract and receiver evidence for both attempts.
 
 ## Related
 

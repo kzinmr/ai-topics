@@ -40,6 +40,8 @@ sources: [
 
 公開本文・保存許諾と原資料は[[queries/modernization-outer-loop-sources]]、優先8資料で実際に読んだ節と設計上の適用は[[queries/modernization-outer-loop-study-notes]]、追加概念は[[concepts/legacy-modernization-moc]]を参照。全20点や指定章すべての通読完了を意味しない。
 
+Account-free learning: [concept study guide](modernization-independent-study-guide.md), [worked exercise](modernization-batch-example.md), and [[queries/modernization-reading-continuation|priority-reading continuation]].
+
 ## 優先して読む順番
 
 1. **Living Documentation** と **Specification by Example** — SMEの判断を出典・適用範囲・更新責任付きで再利用する。

@@ -6,6 +6,8 @@ type: concept
 tags: [concept, architecture, verification, testing, reliability, software-engineering]
 sources:
   - https://learning.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/ch02.html
+  - https://learning.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/ch03.html
+  - https://learning.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/ch08.html
   - raw/papers/2020-04-08_google_building-secure-reliable/ch06.md
   - raw/papers/2020-04-08_google_building-secure-reliable/ch14.md
 confidence: high
@@ -51,6 +53,29 @@ State the characteristic, rationale, owner, input/workload, measurement, thresho
 
 When legitimate requirements change, review the criterion and record the reason in [[concepts/modernization-traceability]]. An agent should not weaken it merely to make its change pass.
 
+## Worked example: enforce two independent obligations
+
+This original example has two agreed architectural requirements: the fee module must not call a network service, and the migrated job's 95th-percentile latency must stay below 120 ms on a defined test workload. A percentile is a position in the measured duration distribution; p95 means that at least 95% of sampled operations are no slower than that value. It is not the average.
+
+| Requirement | Inputs and check | Failure response |
+|---|---|---|
+| No fee-module network dependency | Pinned source/build inputs; inspect prohibited references and relevant runtime behavior | Block promotion and locate the dependency |
+| p95 below 120 ms | Versioned workload, load level, runtime configuration and measurement window | Investigate the regression under those conditions |
+
+A candidate returning fee 50 instead of the approved 49 can satisfy both checks. That demonstrates why an architecture gate cannot replace business acceptance. Conversely, correct fees with a 170 ms p95 can pass business cases while failing the architectural obligation.
+
+### Turn a desire into a check
+
+1. Replace "keep it fast" with a measurable outcome, workload and decision threshold.
+2. Assign an owner and choose when the assessment runs: after a relevant change, periodically or continuously.
+3. Inject a known violation to ensure that the check can fail for the intended reason.
+4. Preserve the source/artifact and measurement identities with the result.
+5. Review interactions: a faster cache may serve an obsolete rule. Measure the applicable freshness obligation too.
+
+A static dependency scan is evidence about scanned references, not proof that a subprocess or dynamically loaded component never reaches the old system. To establish runtime retirement, also execute the candidate in an environment where the old runtime is unavailable.
+
+**Check your understanding:** May an agent raise the latency limit to 200 ms after measuring 170 ms? Only an accountable requirement change can revise the criterion; the candidate's failure is not its own justification.
+
 ## Limits
 
 The book emphasizes outcomes over tool choices. Objective measurements expose tradeoffs but do not choose every tradeoff for the organization. More checks do not automatically make a better architecture; poorly selected constraints can measure convenience rather than the characteristic that matters.
@@ -59,5 +84,6 @@ The book emphasizes outcomes over tool choices. Objective measurements expose tr
 
 - [[concepts/incremental-legacy-migration]] — checkpoints and coexistence
 - [[concepts/canary-release-acceptance]] — production evaluation of a candidate
+- [[concepts/resilience-acceptance-testing]] — specified failure, degraded-service and recovery checks
 - [[concepts/modernization-traceability]] — criterion ownership and approved changes
 - [[queries/modernization-inner-loop-study-notes]] — inspected reading scope

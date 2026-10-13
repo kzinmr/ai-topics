@@ -33,6 +33,8 @@ For mainframes, AWS and OpenAI published a CardDemo demonstration connecting ext
 
 ## Concept map
 
+Start [the account-free study guide](../queries/modernization-independent-study-guide.md) to learn the selected concepts from local explanations and original worked examples. [The integrated fee-batch exercise](../queries/modernization-batch-example.md) connects both loops; [[queries/modernization-independent-reading-review]] records the comprehension criteria and limits.
+
 [[concepts/legacy-modernization-moc]] maps the engineering foundations from focused inner-loop reading. [[queries/modernization-inner-loop-study-notes]] records actual inspected sections; [[queries/modernization-inner-loop-sources]] separates public readability, reuse permission and archived source coverage.
 
 The outer-loop adds [[concepts/living-documentation]], [[concepts/semantic-transformation-recipes]], [[concepts/modernization-workflow-recovery]], [[concepts/modernization-evaluation-corpus]] and [[concepts/artifact-provenance-gates]]. [[queries/modernization-outer-loop-study-notes]] distinguishes the eight priority works' inspected sections from remaining reading; [[queries/modernization-outer-loop-sources]] records all 20 public-source findings and supplementary raw snapshots.

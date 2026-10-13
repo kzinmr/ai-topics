@@ -20,6 +20,8 @@ related: [concepts/characterization-testing, concepts/legacy-code-seams, concept
 
 Navigate the foundations behind [[concepts/enterprise-legacy-modernization]]. Project execution follows [[queries/modernization-inner-loop-reading]]: observe, agree, replace incrementally, verify, constrain and release. The reusable delivery method follows [[queries/modernization-outer-loop-reading]]: maintain knowledge, assetize transformations, control execution, evaluate changes and enforce action/artifact boundaries.
 
+For learning without an O'Reilly account, start with [the concept study guide](../queries/modernization-independent-study-guide.md), then [the integrated exercise](../queries/modernization-batch-example.md). [The review](../queries/modernization-independent-reading-review.md) and [reading continuation](../queries/modernization-reading-continuation.md) distinguish standalone concept coverage from full-book reading.
+
 ## Establish evidence and intended behavior
 
 | Concept | Use |
@@ -36,6 +38,7 @@ Navigate the foundations behind [[concepts/enterprise-legacy-modernization]]. Pr
 | [[concepts/incremental-legacy-migration]] | Choose an interception or internal boundary and manage coexistence |
 | [[concepts/legacy-behavioral-parity]] | Compare outputs, state and effects with approved exceptions |
 | [[concepts/property-based-testing]] | Explore agreed properties over generated inputs |
+| [[concepts/specification-based-test-design]] | Derive partitions, boundaries, contracts and assertion-strength checks |
 | [[concepts/architectural-fitness-functions]] | Preserve explicit architectural characteristics during change |
 
 ## Accept production operation
@@ -43,6 +46,7 @@ Navigate the foundations behind [[concepts/enterprise-legacy-modernization]]. Pr
 | Route | Use |
 |---|---|
 | [[concepts/canary-release-acceptance]] | Evaluate limited real exposure with attributable signals and recovery |
+| [[concepts/resilience-acceptance-testing]] | Exercise specified failures, degraded operation and recovery |
 | [[queries/modernization-java-logging]] | Define the target system's diagnostic, business and audit observations |
 | [[queries/modernization-inner-loop-study-notes]] | Inspect the reading scope and the resulting application rules |
 | [[queries/modernization-inner-loop-sources]] | Find originals, PDFs, licenses and unresolved acquisition items |
