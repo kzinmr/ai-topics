@@ -3,7 +3,7 @@ title: OpenAI Codex (AI coding agent)
 type: entity
 aliases: [codex-cli, openai-codex, codex-agent]
 created: 2026-05-07
-updated: 2026-06-22
+updated: 2026-10-13
 status: L3
 tags:
   - entity
@@ -135,7 +135,7 @@ OpenAI was named a **Leader** in the Gartner Magic Quadrant for Enterprise AI Co
 
 ### Virgin Atlantic (May 2026)
 
-Virgin Atlantic used Codex to ship a revamped mobile app with **near-complete unit test coverage and zero P1 defects at launch** -- hitting the critical Christmas travel window. Neil Letchford (VP of Digital Engineering) reported:
+Virgin Atlantic used Codex to ship a revamped mobile app with **near-complete unit test coverage and zero P1 defects at launch** -- hitting the critical Christmas travel window. Neil Letchford (VP of Digital Engineering) reported the results below; see [[concepts/enterprise-legacy-modernization]] and [[queries/codex-enterprise-modernization-cases]] for their scope and comparison with other modernization evidence:
 
 | Metric | Result |
 |--------|--------|
