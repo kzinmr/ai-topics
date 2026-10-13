@@ -1,10 +1,12 @@
 ---
 title: "Legacy Behavioral Parity"
 created: 2026-10-13
-updated: 2026-10-13
+updated: 2026-10-14
 type: concept
 tags: [concept, software-engineering, testing, verification, regression, reliability, business-process]
 sources:
+  - https://learning.oreilly.com/library/view/working-effectively-with/0131177052/ch13.html
+  - https://learning.oreilly.com/library/view/effective-software-testing/9781633439931/OEBPS/Text/05.htm
   - https://developers.openai.com/cookbook/examples/codex/code_modernization
   - https://learn.chatgpt.com/use-cases/code-migrations
   - https://aws.amazon.com/blogs/migration-and-modernization/from-mainframes-to-microservices-specification-driven-mainframe-modernization-with-ai-agents/
@@ -21,7 +23,7 @@ OpenAI's [COBOL modernization cookbook](https://developers.openai.com/cookbook/e
 
 | Check | What it establishes | What it does not establish |
 |---|---|---|
-| Characterization tests | What the existing implementation does on selected inputs | Whether that behavior is desired or sufficiently sampled |
+| [[concepts/characterization-testing|Characterization tests]] | What the existing implementation does on selected inputs | Whether that behavior is desired or sufficiently sampled |
 | Differential tests | Whether old and new paths agree for the tested conditions | Equivalence for every untested condition |
 | Business acceptance | Whether agreed rules and intentional changes are satisfied | Performance, resilience, or complete data correctness |
 | Migration/cutover rehearsal | Whether the state transition and operating procedures work | Long-term correctness under all production workloads |
@@ -55,6 +57,10 @@ Examples here identify candidate risks; not every stack has each property. AWS's
 
 ## Layer the tests
 
+Feathers' *Working Effectively with Legacy Code*, Chapter 13, makes baseline expectations empirical: observe the old implementation, preserve suspicious results and target the paths/conversions affected by a change. That discovery procedure does not authorize changing accepted expectations to fit a candidate. [[concepts/specification-by-example]] supplies the intended-outcome decision, and [[concepts/legacy-code-seams]] enables safe observation where dependencies interfere.
+
+Aniche's *Effective Software Testing*, Chapter 5, complements concrete examples with generated checks of agreed properties. Generator boundaries and distributions determine what those runs exercise; see [[concepts/property-based-testing]]. Keep observation baselines, approved examples and independent properties distinguishable.
+
 - **Golden fixtures:** a reviewed input/output corpus from the baseline and business experts.
 - **Differential runs:** execute both implementations against matching snapshots and compare results.
 - **Properties:** test invariants over generated inputs, such as conservation of a ledger total, only where the business contract defines them. See [[concepts/property-based-testing]].
@@ -76,6 +82,8 @@ For a retirement objective, validate both behavior and the removal of forbidden 
 For each checkpoint, preserve the input/version identifiers, commands, comparison rules, results, unexplained differences, approved exceptions, reviewer, and remaining risk. Link failures to requirement IDs rather than only a chat transcript.
 
 A proposed cutover gate is: retained critical scenarios pass, material differences are resolved, data totals reconcile, operating targets are met, and rollback is rehearsed. Set actual thresholds before the run. After new writes occur, rollback may require reconciling new data; switching a router back does not restore the previous state.
+
+[[concepts/incremental-legacy-migration]] distinguishes the boundary and authority of parallel execution from limited active exposure. [[concepts/canary-release-acceptance]] adds representative work, candidate/control measurements and state-aware recovery to the production checkpoint.
 
 If the legacy compiler, data, or job harness is unavailable, report parity as **not demonstrated**. Static inspection and target-only tests are narrower evidence.
 

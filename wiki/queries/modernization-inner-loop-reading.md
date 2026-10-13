@@ -6,6 +6,7 @@ type: query
 tags: [query, curated-list, codex, coding-agents, software-engineering, architecture, testing, reliability, security]
 sources: [
   "https://learning.oreilly.com/playlists/881eb67b-8276-489e-ad26-d009b8b2a34f/",
+  "https://sre.google/workbook/table-of-contents/", "https://github.com/google/building-secure-and-reliable-systems",
   "https://learning.oreilly.com/library/view/-/0131177052/", "https://www.amazon.com/dp/0131177052/",
   "https://learning.oreilly.com/library/view/-/9781492047834/", "https://www.amazon.com/dp/1492047848/",
   "https://learning.oreilly.com/library/view/-/9781492097532/", "https://www.amazon.com/dp/1492097543/",
@@ -63,6 +64,8 @@ sources: [
 [O’Reilly：inner-loop／案件実行](https://learning.oreilly.com/playlists/881eb67b-8276-489e-ad26-d009b8b2a34f/) · [[queries/modernization-reading-guide|選書ガイドの入口]]
 
 個別のJava／企業システムを安全に移行するための42冊・7分類。自動変換やAgentも、案件を進める道具として扱う。対象システムのlogging戦略・設計・運用を含み、調査から本番受入までをつなぐ。
+
+[[queries/modernization-inner-loop-sources|公開範囲・ライセンス・raw原資料]] · [[queries/modernization-inner-loop-study-notes|読解範囲と知見]] · [[concepts/legacy-modernization-moc|重要コンセプトの案内]]
 
 ## 最初に読む順番
 

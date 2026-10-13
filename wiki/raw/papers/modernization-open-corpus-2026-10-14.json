@@ -1,0 +1,39 @@
+[
+  {
+    "book": "Building Secure and Reliable Systems",
+    "revision": "2a2ae3e0d4dbd288f9862ed47194f5b1b1ed7c3c",
+    "license": "CC-BY-4.0",
+    "archive_url": "https://codeload.github.com/google/building-secure-and-reliable-systems/tar.gz/2a2ae3e0d4dbd288f9862ed47194f5b1b1ed7c3c",
+    "archive_sha256": "8e9e34641607680abcca3045a75bce984ece0f7140af2d44f1a3e9e64cee7e66",
+    "saved_archive_sha256": "cdcc0df6f3407b04c1b40114a93573c3a6bfbad7fc22e4b32b97684f30d4d866",
+    "text_documents": 38,
+    "original_files": 170,
+    "pdf_scope": "Only source illustration/callout PDFs; no whole-book PDF in official tree"
+  },
+  {
+    "book": "The Site Reliability Workbook",
+    "license": "CC-BY-NC-ND-4.0",
+    "source_url": "https://sre.google/workbook/table-of-contents/",
+    "text_documents": 35,
+    "original_files": 100,
+    "saved_archive_sha256": "5df0d46d475ae26ede5ede07368e9008fdd23bcda3b13ad0960eff8b852d96b4",
+    "pdf_scope": "No whole-book PDF link found on official contents page",
+    "reuse_scope": "noncommercial; unmodified originals"
+  },
+  {
+    "supplement": "participant-handbook.pdf",
+    "source_url": "https://static.googleusercontent.com/media/sre.google/en//static/pdf/art-of-slos-handbook-a4.pdf",
+    "sha256": "54eea049207e4cb12cb053e51ff6bf250f19798d061977d0ed346eb308e55d93",
+    "license": "CC-BY-4.0",
+    "license_evidence": "https://sre.google/resources/practices-and-processes/art-of-slos/",
+    "date_unknown": true
+  },
+  {
+    "supplement": "slides.pdf",
+    "source_url": "https://static.googleusercontent.com/media/sre.google/en//static/pdf/art-of-slos-slides.pdf",
+    "sha256": "e07893ec29528e78f18af18ddfb3ebd3cb390d451dbde38382eb94e374103a80",
+    "license": "CC-BY-4.0",
+    "license_evidence": "https://sre.google/resources/practices-and-processes/art-of-slos/",
+    "date_unknown": true
+  }
+]
