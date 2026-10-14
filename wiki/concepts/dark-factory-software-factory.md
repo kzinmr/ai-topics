@@ -2,12 +2,12 @@
 title: "Dark Factory Software Factory"
 type: concept
 created: 2026-04-13
-updated: 2026-10-13
+updated: 2026-10-14
 tags:
   - concept
   - multi-agent
   - automation
-related: [agent-team-swarm, openai-symphony, anthropic-managed-agents, sairahul1]
+related: [agent-team-swarm, openai-symphony, anthropic-managed-agents, sairahul1, scion-anthropic-version-control]
 sources:
   - https://simonwillison.net/2026/Feb/7/software-factory/
   - https://simonwillison.net/2026/Jan/28/
@@ -366,6 +366,7 @@ Full analysis: [[concepts/coding-agents/lint-rules-as-agent-feedback-loop]].
 - [[concepts/anthropic/managed-agents]] — Platform foundation for Level 4
 - [[concepts/harness-engineering]] — Foundation for execution environment design across all levels
 - [[entities/sairahul1]] — Originator of the 7-Agent Factory
+- [[entities/scion-anthropic-version-control]] — Anthropic's Scion/Antique: the source-control bottleneck that appears once the factory merges 30k changes/day
 
 ---
 

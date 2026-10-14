@@ -37,3 +37,13 @@ Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved
 
 - Delivered morning hot-post synthesizing the two Oct-13 sarahfim/Composio pages into one thesis: "the agent is not the factory — the repo is." Primary: `concepts/coding-agents/lint-rules-as-agent-feedback-loop` (38 custom lint rules, Zen 1,300+ merged PRs, lint > skills argument), corroborated by `concepts/smithdb-agent-trace-datastore` (observability layer re-architected too: 12x/9x/15x vendor claims, ClickHouse → v0.19 cutoff). Cross-refs: dark-factory-software-factory, agentic-software-factory-hierarchy-of-needs, ai-observability.
 - No wiki content pages created or modified (report only).
+
+## [2026-10-14] ingest | Active crawl — Scion (Anthropic VCS), mixed-precision RL (Modal), company-wide context (Merge)
+
+- Three new trending sources ingested (HN front-page + blogwatcher RSS). Skipped arXiv 2610.13928 (capability concealment) — already covered by `concepts/cryptographic-capability-concealment`.
+- New raw: `raw/articles/2026-10-14_anthropic-redesigning-source-control-scion.md`, `raw/articles/2026-10-14_modal-mixed-precision-mixed-accelerator-rl.md`, `raw/articles/2026-10-14_merge-context-engineering-company-wide.md`.
+- Created `entities/scion-anthropic-version-control.md` — Anthropic in-house VCS Scion + Antique review surface; 30k merges/day, 25M checkouts/day, off git in 5 months; agent-first design (always-online, client/server asymmetry, source-control-as-API, no packfiles).
+- Created `concepts/mixed-precision-mixed-accelerator-rl.md` — Modal: run RL samplers on FP8/NVFP4/BF16 across 6 accelerator kinds; off-policy correction (masked importance sampling + score centering + top-p mask replay); Qwen3.6-35B-A3B async coding RL.
+- Updated `concepts/harness-engineering/context-engineering.md` — added Merge's four-stage context maturity ladder (Prompt → Knowledge Base → Learning Loop → Company-Wide Context Engine) + four organizational-memory layers.
+- Updated `concepts/dark-factory-software-factory.md` — backlink to Scion (source-control bottleneck at factory scale).
+- Updated `index.md` (Total 3234→3236; Entities 940→941; Concepts 2193→2194).

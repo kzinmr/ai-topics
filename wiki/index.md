@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3234
+> Total pages: 3236
 > Last updated: 2026-10-14
 
-## Entities (940 pages)
+## Entities (941 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -779,6 +779,7 @@
  — open-source AI infra builder; Local AI Registry (hardware-aware launch-recipe registry + Omarchy plugin, Sep 2026); local.ai #1; "Open Source Must Win" manifesto
 - [[entities/servicenow]] — ServiceNow
 - [[entities/seshadri]] — Shrikar Seshadri (@sseshadri43) — LangChain Deep Agents engineer; co-authored RubricMiddleware (Grading Rubrics) with Sydney Runkle
+- [[entities/scion-anthropic-version-control]] — Scion (Anthropic, Oct 2026) — in-house VCS + Antique code-review surface; monorepo migrated off git in 5 months by a team of 7; designed for agent clients (always-online, client/server asymmetric, source-control-as-API, no packfiles); response to 30k merges/day and 25M checkouts/day
 - [[entities/seth-karten]] — Seth Karten
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, co-founder of Lunar Strategy (250+ projects), AI marketer and Herme...
 - [[entities/sheshansh-agrawal]] — Sheshansh Agrawal
@@ -948,7 +949,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2193 pages)
+## Concepts (2194 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2403,6 +2404,7 @@
 - [[concepts/minimax-sparse-attention]] — MiniMax Sparse Attention (MSA)
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mismeasure-of-open-source]] — The Mismeasure of Open Source
+- [[concepts/mixed-precision-mixed-accelerator-rl]] — Mixed-precision, mixed-accelerator RL (Modal, Oct 2026) — run RL samplers on FP8/NVFP4/BF16 across six accelerator kinds while the BF16 trainer stays fixed; absorb the train–inference mismatch with masked importance sampling + score centering + top-p mask replay; demo trains Qwen3.6-35B-A3B on 2.7K repo tasks fully async, sampling = 80–85% of RL GPUs
 - [[concepts/mistral-medium-3-5]] — Mistral Medium 3 5
 - [[concepts/mistral-ocr-4]] — Mistral OCR 4 — SOTA Optical Character Recognition model; multilingual document parsing, structured markdown/JSON output, superior to Azure/Gemini/Amazon on benchmarks, 1,000 pages/min throughput (June 24)
 - [[concepts/mistral-vibe-remote-agents]] — Mistral Vibe Remote Agents

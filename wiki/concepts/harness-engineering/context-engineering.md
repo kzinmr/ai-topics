@@ -5,7 +5,7 @@ aliases:
   - context-engineering
   - Context Engineering (Japanese alias removed)
 created: 2026-04-13
-updated: 2026-05-13
+updated: 2026-10-14
 tags:
   - concept
   - harness-engineering
@@ -22,6 +22,7 @@ sources:
   - "[[raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents]] — Lance Martin, Context Engineering for Agents (Write/Select/Compress/Isolate), June 2025"
   - "[[raw/articles/2026-01-09_rlancemartin_agent-design-patterns]] — Lance Martin, Agent design patterns (7 patterns extending context engineering), Jan 2026"
   - "[[raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions]] — Anthropic, Work with sessions (Claude Code Agent SDK), 2026"
+  - "[[raw/articles/2026-10-14_merge-context-engineering-company-wide]] — Merge, Context engineering from individual prompts to company-wide context, Oct 2026"
 ---
 
 # Context Engineering
@@ -350,6 +351,28 @@ Khairallah's practitioner framework translates existing technical insights (Anth
 | Sub-Agent (Anthropic) | Context-MCP integration — functionality extension via tool connectivity |
 | Software 3.0 (Karpathy) | 4-file architecture — "programming" context |
 | Attention Budget constraints | 2,000-word limit + per-task loading to prevent attention dilution |
+
+## The Context Maturity Ladder (Merge, 2026-10)
+
+Merge (Vivek & Dhruv) reframe context engineering as a **system design problem** — "a system that
+takes every signal an agent might need (task, codebase, memories, feedback, the work of other
+agents) and turns it into just enough tokenized state for one inference call" — and map four
+stages of *context maturity*, each with its own ceiling (not just the context window):
+
+| Stage | Ceiling |
+|---------|---------|
+| **1. The Prompt** — knowledge assembled by hand from files/head | How well one person writes a prompt |
+| **2. The Knowledge Base** — knowledge retrieved from a store | How well you curate + retrieve |
+| **3. The Learning Loop** — system tuned on outcomes, improves over time | How well you design the feedback loop |
+| **4. The Company-Wide Context Engine** — organizational context / memory | Whether answers hold for reasons that survive the model |
+
+Two sharp claims worth recording: **"you can't context-engineer your way out of a capability
+ceiling"** (arXiv:2604.21792) — if the model can't do the task, no context trick fixes it; and
+the **four layers of organizational memory** — *instructs* (always-on how-we-do-things), *skills*
+(how work is actually done), *malleable memory* (currently-being-learned), *semantic search*
+(everything else). Their test for maturity: which layers you have, and **which answers hold for
+reasons that survive the model it runs on**. This is the organizational-scale extension of the
+[[concepts/agents-self-improvement-learning|self-improving-agent-loop]] and agent memory ideas.
 
 ## Related Concepts
 
