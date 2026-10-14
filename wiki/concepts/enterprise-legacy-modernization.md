@@ -1,10 +1,13 @@
 ---
 title: "Enterprise Legacy Modernization with Coding Agents"
 created: 2026-10-13
-updated: 2026-10-13
+updated: 2026-10-14
 type: concept
 tags: [concept, coding-agents, codex, enterprise-ai, software-engineering, architecture, business-process, verification, case-study]
 sources:
+  - https://learning.oreilly.com/library/view/monolith-to-microservices/9781492047834/ch03.html
+  - raw/papers/2018_google_sre-workbook/canarying-releases.md
+  - raw/papers/2020-04-08_google_building-secure-reliable/ch14.md
   - https://developers.openai.com/cookbook/examples/codex/code_modernization
   - https://learn.chatgpt.com/use-cases/code-migrations
   - https://aws.amazon.com/blogs/migration-and-modernization/forward-engineering-aws-transform-generated-business-requirements-with-openai-codex/
@@ -27,6 +30,8 @@ Public Codex examples include legacy refactoring and database migration at Virgi
 For mainframes, AWS and OpenAI published a CardDemo demonstration connecting extracted requirements to Codex-generated target services. The OpenAI COBOL cookbook provides a planning and parity workflow. Neither establishes a named customer's complete production mainframe retirement. Within the sources reviewed on 2026-10-13, that outcome remains unverified.
 
 ## Concept map
+
+[[concepts/legacy-modernization-moc]] maps the engineering foundations from focused inner-loop reading. [[queries/modernization-inner-loop-study-notes]] records actual inspected sections; [[queries/modernization-inner-loop-sources]] separates public readability, reuse permission and archived source coverage.
 
 | Question | Practice | Wiki route |
 |---|---|---|
@@ -73,6 +78,8 @@ For an enterprise pilot, the proposed design must answer who owns reads and writ
 
 Use adapters or branch-by-abstraction where a stable boundary can be introduced. Remove the temporary layer only after the replacement and rollback conditions are accepted. These are architectural applications of incremental migration, not claims that a specific case used every pattern.
 
+Newman's *Monolith to Microservices*, Chapter 3, distinguishes perimeter interception, an internal abstraction, and parallel execution with one authoritative result. [[concepts/incremental-legacy-migration]] explains those boundaries. [[concepts/canary-release-acceptance]] adds limited active production exposure and attributable evaluation; a shadow comparison is a different source of evidence. ^[raw/papers/2018_google_sre-workbook/canarying-releases.md]
+
 ## Make the environment an engineering asset
 
 - Put repository navigation, conventions, verified commands, and scope restrictions in AGENTS.md; keep flow-specific evidence in versioned documents.
@@ -84,6 +91,8 @@ Use adapters or branch-by-abstraction where a stable boundary can be introduced.
 The existing [[raw/articles/2025-08-29_humanlayer-advanced-context-engineering-coding-agents|HumanLayer source]] reports both successful brownfield work and a failed attempt to remove Parquet Java's Hadoop dependency. Incorrect dependency assumptions survived the research stage. This is a transferable caution from Claude Code work, not a Codex migration result.
 
 ## Measure accepted outcomes
+
+[[concepts/architectural-fitness-functions]] makes retained design characteristics explicit alongside business acceptance. Google's *Building Secure and Reliable Systems*, Chapter 14, adds a deployment integrity requirement: connect the tested artifact to the artifact actually promoted. Source-level evidence alone does not establish that connection. ^[raw/papers/2020-04-08_google_building-secure-reliable/ch14.md]
 
 Recommended pilot measures: time from approved scope to accepted release; engineer hours including discovery and review; first-pass acceptance and rework; unresolved parity differences; requirement disposition completeness; reconciled record/value totals; incidents and recovery time; model plus environment and human cost per accepted flow.
 

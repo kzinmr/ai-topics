@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3212
+> Total pages: 3221
 > Last updated: 2026-10-14
 
 ## Entities (940 pages)
@@ -948,7 +948,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2179 pages)
+## Concepts (2186 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1334,6 +1334,7 @@
 - [[concepts/ai-services-joint-ventures]] — AI Services Joint Ventures
 - [[concepts/ai-slop]] — AI Slop
 - [[concepts/ai-slop-productivity-paradox]] — AI Slop and the Productivity Paradox
+- [[concepts/architectural-fitness-functions]] — Architectural Fitness Functions — objective architecture assessments, scope/cadence, domain-test separation and modernization constraints
 - [[concepts/aria-advisor-consultation-agents]] — ARIA (arXiv:2610.13870) — meta-controller that learns WHEN a cheap executor should consult a stronger advisor as sequential resource allocation; Monte-Carlo-learned SILENT/CONSULT, recovers 44–81% of the executor-advisor gap at <½ advisor cost on SWE-bench Verified/Terminal-Bench 2.1/τ²-bench, beats routing/cascading
 - [[concepts/ai-skepticism-movement]] — 2026 developer-culture backlash against default-on AI assistance (No AI Fridays, Rust contribution policy)
 - [[concepts/ai-skeptic-radicalization-investigation]] — Sept 2026 reporting (Klippenstein) that DHS C&TIS assessed domestic AI-skeptic commentators as a "radicalization" concern; contested, low confidence
@@ -1464,6 +1465,7 @@
 - [[concepts/building-effective-agents]] — Building Effective Agents
 - [[concepts/business-to-agent]] — A business paradigm where the primary user of a service is an AI agent/LLM rather than a human. Services optimize for...
 - [[concepts/buzzfeed]] — BuzzFeed
+- [[concepts/canary-release-acceptance]] — Canary Release Acceptance — limited production exposure, representative work, attributable signals, SLIs and state-aware recovery
 - [[concepts/cancer-capital]] — Cancer Capital (Anil Dash, Sep 2026) — VC as surplus money chasing returns "without giving anything back"; 2021 was the peak not a bubble; OpenAI wealth transfer as paradigm case
 - [[concepts/c-programming]] — C Programming
 - [[concepts/cache-first-engineering]] — cache-first-engineering
@@ -1489,6 +1491,7 @@
 - [[concepts/chaos-engineering]] — Chaos Engineering for Microservices
 - [[concepts/chaos-engineering-for-microservices]] — Chaos Engineering for Microservices
 - [[concepts/cerebras-cs4]] — Cerebras CS-4 (Nexus Platform) — first Nexus generation rack (3× WSE-3 Turbo, 2 µs switch-less wafer interconnect, vendor-claimed 30× vs GPUs; Aug 2026)
+- [[concepts/characterization-testing]] — Characterization Testing — empirical legacy baselines, suspicious behavior, targeted paths/conversions and independent acceptance
 - [[concepts/chatferry]] — ChatFerry
 - [[concepts/chicago]] — Chicago
 - [[concepts/chief-of-staff-agent-patterns]] — Analyze the budget impact of a proposed action
@@ -2160,6 +2163,7 @@
 - [[concepts/illusion-of-thinking]] — Apple's Illusion of Thinking & Neurosymbolic Robotics
 - [[concepts/in-process]] — in-process
 - [[concepts/in-process-sandbox]] — In-Process Sandbox
+- [[concepts/incremental-legacy-migration]] — Incremental Legacy Migration — Strangler Fig, branch by abstraction, parallel run, activation, state and retirement
 - [[concepts/index-share]] — IndexShare
 - [[concepts/infinite-saas-factory]] — Infinite SaaS Factory — Nadella's thesis: Copilot as OS + governed headless foundation lets businesses generate SaaS modules via agents; more agents make systems of record more important (X Article, Oct 2026)
 - [[concepts/industrial-scale-distillation-attacks-accusation]] — Industrial-Scale Distillation Attacks Accusation — 2026 US-lab charge that Chinese labs clone frontier models via distillation at "industrial scale"; 3 conflated meanings (IP theft / safety laundering / export-control workaround); Anthropic→Alibaba + OpenAI→Moonshot incidents; attribution contested (confidence medium)
@@ -2251,6 +2255,8 @@
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
 - [[concepts/learning-to-rank]] — Learning to Rank
 - [[concepts/legacy-behavioral-parity]] — Legacy Behavioral Parity — characterization and differential tests, business-rule exceptions, state reconciliation, independent acceptance, and rollback evidence
+- [[concepts/legacy-code-seams]] — Legacy Code Seams — substitution, enabling points, sensing/separation and test-versus-migration boundaries
+- [[concepts/legacy-modernization-moc]] — Legacy Modernization — map of evidence, specification, incremental change, verification, architectural constraints and production acceptance
 - [[concepts/lexical-search]] — Lexical Search
 - [[concepts/linear-agent-code-intelligence]] — Linear Agent Code Intelligence
 - [[concepts/linear-walkthroughs]] — Linear Walkthroughs
@@ -2700,7 +2706,7 @@
 - [[concepts/prompt-injection]] — Prompt Injection — AI security vulnerability where untrusted input manipulates model behavior by exploiting role confusion and tokenization boundaries (June 23)
 - [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt; enriched with Drew Breunig's "The Problem is Prompt Debt" framework — three-stage spiral, fighting the weights, Goedecke vs Breunig comparison, prevention via DSPy/GEPA (June 23)
 - [[concepts/proof-of-useful-work]] — Proof of Useful Work (PoUW)
-- [[concepts/property-based-testing]] — Property-Based Testing
+- [[concepts/property-based-testing]] — Property-Based Testing — agreed properties, generators, boundary/distribution risks, replay and independent modernization oracles
 - [[concepts/proprietary-context-ai-era-governance-diamond-chart]] — Proprietary Context — Organizational Governance in the AI Era and the Diamond Organizational Chart
 - [[concepts/pxpipe-code-to-image-cost-reduction]] — pxpipe Code-to-Image Cost Reduction — Local proxy that reduces Claude API costs 59-70% by converting text context to PNG images exploiting vision vs text token pricing asymmetry (July 5)
 - [[concepts/pycon]] — PyCon
@@ -2936,6 +2942,7 @@
 - [[concepts/spacex-cursor-acquisition]] — SpaceX Acquires Cursor — $60B Coding Agent Acquisition
 - [[concepts/sparse-signal-loop]] — Sparse Signal Loop
 - [[concepts/spec-driven-development]] — Spec-Driven Development; legacy modernization application with rule traceability and behavioral parity
+- [[concepts/specification-by-example]] — Specification by Example — collaborative realistic examples, refinement, business meaning and separate validation mechanics
 - [[concepts/speculative-decoding]] — Speculative Decoding — Accelerating LLM inference by using draft models to predict multiple tokens per forward pass
 - [[concepts/specscale-speculative-search-serving]] — SpecScale — serving system for speculative search under test-time scaling; early path pruning + dedup + deferred verification cut throughput/latency cost of TTS (arXiv:2609.39334, Sept 2026)
 - [[concepts/speculative-decoding-mtp]] — Speculative decoding and Multi-Token Prediction (MTP) techniques that accelerate LLM inference by using a smaller dra...
@@ -3210,7 +3217,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (20 pages)
+## Queries (22 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
@@ -3220,7 +3227,9 @@
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
-- [[queries/modernization-inner-loop-reading]] — Modernization Inner-loop Reading — 42 books in seven sections for project execution, logging strategy and operational acceptance, with purposes, chapter scopes and conditional priorities
+- [[queries/modernization-inner-loop-reading]] — Modernization Inner-loop Reading — 42 books in seven sections for project execution, logging strategy and operational acceptance; purposes, chapter scopes, conditional priorities, source corpus and study notes
+- [[queries/modernization-inner-loop-sources]] — Modernization Inner-loop — 42-book source availability, public/reuse distinctions, licensed whole-book corpus, PDF supplements and checksums
+- [[queries/modernization-inner-loop-study-notes]] — Modernization Inner-loop — inspected sections in the seven initial books, operational/security supplements and applied concept synthesis
 - [[queries/modernization-java-logging]] — Java Logging Strategy for Modernization — operational requirements, domain observations, Java implementation, logging contracts, acceptance checks and authoritative English reading sources
 - [[queries/modernization-outer-loop-reading]] — Modernization Outer-loop Reading — 20 resources in six sections for reusable SME knowledge, transformation recipes, execution control, evaluation, audit and improvement; O’Reilly/Amazon.com links
 - [[queries/modernization-reading-guide]] — Codex Enterprise Modernization Reading Guide — purpose-based navigation to inner-loop project execution and outer-loop process design; topic map, reading approach and selection principles

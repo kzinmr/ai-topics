@@ -1,10 +1,12 @@
 ---
 title: "Modernization Traceability"
 created: 2026-10-13
-updated: 2026-10-13
+updated: 2026-10-14
 type: concept
 tags: [concept, software-engineering, documentation, verification, audit, governance, business-process, codex]
 sources:
+  - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_016.html
+  - https://learning.oreilly.com/library/view/specification-by-example/9781617290084/kindle_split_018.html
   - https://aws.amazon.com/blogs/migration-and-modernization/forward-engineering-aws-transform-generated-business-requirements-with-openai-codex/
   - https://aws.amazon.com/blogs/migration-and-modernization/from-mainframes-to-microservices-specification-driven-mainframe-modernization-with-ai-agents/
   - https://developers.openai.com/cookbook/examples/codex/code_modernization
@@ -65,11 +67,15 @@ An unresolved critical rule blocks acceptance of the affected flow. It need not 
 
 ## Two separate gates
 
+[[concepts/specification-by-example]] provides a concrete bridge from SME discussion to target acceptance. Adzic's Chapters 7 and 9 emphasize realistic examples, explicit effects and an automation layer that preserves business meaning. Keep the source observation separate from the approved expectation and record who resolved any difference. A fixture can change its API/UI mechanics without changing the rule; a changed rule needs a new decision record.
+
 **Structural gate:** every in-scope rule has a disposition; retained/changed rules link to target specifications, implementation, and acceptance evidence; referenced IDs exist; retirement decisions have an owner. This can be checked deterministically, including in CI.
 
 **Semantic gate:** the recovered rule is accurate, the disposition reflects current business intent, and the target satisfies it. Domain review, [[concepts/legacy-behavioral-parity|differential execution]], and relevant operational tests provide this evidence.
 
 A ledger can be perfectly connected and wrong everywhere. Generating both code and tests from the same misunderstood requirement does not introduce an independent oracle. [[concepts/code-review]] and [[concepts/security-and-governance/agent-separation-of-duties]] address the review boundary.
+
+Architectural constraints have their own owners, criteria and run evidence; connect [[concepts/architectural-fitness-functions]] to the relevant obligations without treating architectural checks as business-rule acceptance.
 
 ## Relationship to plans and context
 
