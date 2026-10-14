@@ -374,7 +374,7 @@
 - [[entities/hailey-schoelkopf]] — Research Scientist at EleutherAI, maintainer of LM Evaluation Harness
 - [[entities/hamel-husain]] — Hamel Husain
 - [[entities/han-lee]] — Han Lee (Hanchung Lee)
-- [[entities/hanchunglee]] — Hanchunglee
+- [[entities/hanchunglee]] — Hanchunglee; resurfaced 2025 talk "OpenAI Killed My Startup — How Product-First Companies Fight Back" (Oct 2026)
 - [[entities/hark]] — Hark; Handoff computer-using agent, $0.18/M input tokens vs GPT 5.5's $5.00, 5s per-turn (Aug 10)
 - [[entities/harrison-chase]] — Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framewor...
 - [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8); AI-Powered Due Diligence for M&A — data room workflows, GSK Stockmann 15-75% savings, PwC 10k+ workflows, 25k+ custom agents (Apr 2026); Legal Tech Overview guide — six core categories, citation grounding baseline (Jun 18); How-to-Choose Legal AI Platform evaluation guide — 10 criteria, 92% adoption, 25h/mo savings (Apr 2026); In-House Legal Operations guide — 89% outside-counsel spend stat, in-house role ladder, 6-18mo build sequence, small-team habits (Jun 22); Contract Analysis Automation guide — task decomposition, 3-factor workflow selection, 5 evaluation criteria, 4-phase adoption, Bayer ~3h/wk case study (May 11); AI for General Counsel guide -- 87% GC gen-AI adoption stat (FTI/Relativity), shadow AI governance, GC as AI governance lead, five-step adoption plan (Jun 23); How to Use AI as a Lawyer guide — workflows, four tool-eval factors, ethics/competence, staged rollout (Jun 8); AI Agents for Legal Work — leverage areas, six governance dimensions, associate craft shift, 700K daily tasks (Jun 8); AI Contract Drafting guide — 80/20 pattern, Word/Outlook/matter integrations, Contract Intelligence outlook (Jun 12)
@@ -595,7 +595,7 @@
 - [[entities/mustafa-suleyman]] — Mustafa Suleyman
 - [[entities/nader-dabit]] — Nader Dabit
 - [[entities/nathan-flurry]] — Nathan Flurry
-- [[entities/nathan-lambert]] — Nathan Lambert
+- [[entities/nathan-lambert]] — Nathan Lambert; Interconnects AI **tracked-models** repo (public ground-truth HF model list for open-model download analytics, Oct 2026)
 - [[entities/neel-nanda]] — Neel Nanda
 - [[entities/nemo-agent-toolkit]] — NVIDIA NeMo Agent Toolkit
 - [[entities/nemotron-cascade-2]] — Nemotron Cascade 2
@@ -729,7 +729,7 @@
 - [[entities/riley-walz]] — Riley Walz
 - [[entities/ring-2-6-1t]] — Ring-2.6-1T
 - [[entities/rivet-dev]] — Rivet
-- [[entities/rlancemartin]] — Lance Martin (@rlancemartin)
+- [[entities/rlancemartin]] — Lance Martin (@rlancemartin); "Building effective agent automations" (claude.dev, Oct 2026) — 6 failure-mode rules for scheduled Managed Agents
 - [[entities/rob-hoeijmakers]] — Rob Hoeijmakers
 - [[entities/roborev]] — RoboRev — Continuous background code review daemon by Wes McKinney/Kenn Software; post-commit + agent hooks for 10+ agents; v0.64.0
 - [[entities/rogo]] — Rogo
@@ -776,6 +776,7 @@
 - [[entities/sequoia-capital]] — Sequoia Capital
 - [[entities/serena-ge]] — Serena Ge
 - [[entities/sero]] — Sero (0xSero) — open-source AI infra builder; Local AI Registry (hardware-aware launch-recipe registry + Omarchy plugin, Sep 2026); local.ai #1; "Open Source Must Win" manifesto
+ — open-source AI infra builder; Local AI Registry (hardware-aware launch-recipe registry + Omarchy plugin, Sep 2026); local.ai #1; "Open Source Must Win" manifesto
 - [[entities/servicenow]] — ServiceNow
 - [[entities/seshadri]] — Shrikar Seshadri (@sseshadri43) — LangChain Deep Agents engineer; co-authored RubricMiddleware (Grading Rubrics) with Sydney Runkle
 - [[entities/seth-karten]] — Seth Karten
@@ -2340,7 +2341,7 @@
 - [[concepts/main-branch-development]] — Main-Branch Development
 - [[concepts/makoto-kato]] — makoto-kato
 - [[concepts/malleable-software]] — Malleable Software — user-editable, re-combinable software; LLM-era double interaction loop and on-the-fly UI (Litt 2023)
-- [[concepts/managed-agents]] — Managed Agents (Anthropic)
+- [[concepts/managed-agents]] — Managed Agents (Anthropic); + scheduled-automation deployment pattern (6 failure-mode rules, Oct 2026)
 - [[concepts/managed-agents-sre-incident-response]] — How to triage production incidents using the team runbooks.
 - [[concepts/managed-devins]] — Managed Devins
 - [[concepts/marin]] — Open-source framework for foundation model research and development from Stanford CRFM. Reproducible training pipelin...

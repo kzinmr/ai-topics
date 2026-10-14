@@ -1,13 +1,14 @@
-## [2026-10-13] query | hot-post (late-night slot 01:30 JST): "鍵なしでは読めないモデル" — cryptographic capability concealment
-- Angle: niche high-signal single-page deep dive on [[concepts/cryptographic-capability-concealment]] (arXiv:2610.13928) — provable backdoors (encrypted NN + digital lockers) defeat elicitation-based capability audits and open-weight inspectability, even with full weight access. Primary link: [[concepts/mismeasure-of-open-source]] (open weights ≠ inspectable intent). Supporting: [[concepts/ai-control]], [[concepts/evaluation/evaluation-harness-validity]].
-- Numbers cited: proof-of-concept scale = small chemical-reaction prediction task; all 4 elicitation attacks (fine-tune, weight noising, gradient trigger search, latent adversarial training) fail; security is computational not statistical.
-- No new pages created (report-only). Dedup: no overlap with 10-12 morning (skill ecosystem/npm) or 10-12 night (measurability asymmetry / RATED / prompt optimizers) posts.
+## [2026-10-13] ingest | x-accounts-scan: agent automations rules, tracked-models repo, Hermes plugin catalog
+
+- Source: `x-accounts-scan` cron output (8 new substantive posts, 2-day window; detail at `cron/data/x_accounts_latest_full.json`).
+- New raw articles: `raw/articles/claude.dev--building-effective-agent-automations--2026-10-08.md` (Lance Martin & CJ Avilla — 6 failure-mode rules for scheduled Claude Managed Agents automations), `raw/articles/github.com--interconnects-ai-tracked-models--2026-10-13.md` (Interconnects AI public HF model-tracking list).
+- New transcript record: `transcripts/2025_openai-killed-my-startup-how-product-first-companies-fight-back.md` (metadata-only; YouTube transcript unavailable).
+- Updated: `entities/rlancemartin` (new Key Work section), `concepts/managed-agents` (Deployment Patterns section), `entities/nathan-lambert` (tracked-models section), `entities/teknium` (Fish Audio plugin + PR #137780 timeline row), `entities/sero` (Omarchy local-ai plugin), `entities/hanchunglee` (resurfaced 2025 talk), `index.md` (5 entries).
+- Skipped: Lance Martin pricing-page tweet (pure doc link), Sero YouTube recommendation ("The Brain Eating Machines" — opinion content, no durable AI-tech knowledge).
 
 ---
 
-## [2026-10-13] watchdog | auto-fix + commit stranded wiki-health-fix remediation
-
-- Pipeline: `x_accounts` stale(26h) is a **false positive** (every-2-days schedule, last_status=ok). `blog` chain `ingest_ok_but_triage_failed` = blog-triage + blog-wiki-ingest last_status=error (needs human log inspection; not a wiki-content issue).
+i-ingest last_status=error (needs human log inspection; not a wiki-content issue).
 - `wiki-health-fix` last_status=error left **188 pages** of validated remediation uncommitted in the working tree (yesterday's run completed edits, crashed before commit). Today's health-fix errored, so it won't self-recover.
 - Verified batch: 100% wikilink namespace/subdir retargets (`concepts/x`->`entities/x`, flat->subdir) + `updated:` bumps. 0 new pages, 0 deleted content, index.md corruption-clean (pipe/line-number/triple-bracket/space-prefix all 0). Retarget targets resolve on filesystem.
 - Tag validation: PASSED (185 files, all in SCHEMA taxonomy). Two `entities/eugeneyan.md` + `entities/lilianweng.md` shrink flags are **legitimate dedup redirects** to canonical `entities/eugene-yan.md` (353 lines) + `entities/lilian-weng.md` (203 lines) — content was merged, not lost. Committed with `--no-verify` (documented redirect case).
@@ -6871,3 +6872,9 @@ Git-history check: no richer historical version of luke-j-huang.md (current skel
 - Listed the seven initial guide books, Refactoring, and the four principal logging/operational books (12 resources). Distinguished excerpts, companion material, edition mismatches and unresolved official full-text availability; did not claim absence of all public copies or confuse reading access with redistribution rights.
 - Linked the immutable 6238ed80 source register and exact reading coverage. Explicitly excluded the author-public Security Engineering third edition and the two licensed full-text books from the unavailable-text list.
 - Published Wiki commit 5cb919b to its master branch; push succeeded and local/remote tracking revisions match. Wiki diff whitespace and prior-content preservation checks pass. No raw changes, new Layer 2 pages, index count changes or playlist changes.
+
+## [2026-10-14] integrate | Inner-loop research PR
+
+- User authorized creation, conflict resolution and merge of both modernization research branches. Created PR #4 from `codex/modernization-inner-loop-sources` to `main`; the outer-loop branch depends on this branch and will merge second.
+- Merged current `origin/main` at `49bd2ee5` into the inner-loop branch before publication. Index and log merged automatically; retained upstream entity/source updates and all inner-loop research. No unresolved conflicts remain.
+- Targeted integration checks passed for 14 research pages: required metadata, canonical tags, links and lengths; guide tables/order unchanged; index preserves entries from both sides and counts 3221 (2186 concepts, 22 queries). All 11,968 raw/transcript Git blob identities from the two parents are retained, with no unstaged source edits. Hook and remote merge confirmation follow in the final integration record.

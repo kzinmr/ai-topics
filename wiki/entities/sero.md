@@ -5,7 +5,7 @@ sources:
   - https://github.com/0xsero/local-ai-registry
   - https://plugins.omarchy.org/plugin.html?id=sero.local-ai
 created: 2026-04-24
-updated: 2026-09-27
+updated: 2026-10-13
 type: entity
 ---
 
@@ -238,6 +238,10 @@ His homelab experiments demonstrate that competitive AI inference is achievable 
   > "GPT-5.3-Codex is still the best coding agent, no doubt about it. GPT-5.4 is better at computer use, but doesn't match the sheer autistic power Codex holds."
 - **Pi & Caching**: Praises Pi's token caching implementation as a benchmark for all AI harnesses to reduce costs. Calls Pi the *"neovim of coding agents."*
 - **Anthropic Subscription Rules**: Criticizes Anthropic for unclear, inconsistent terms regarding agent usage, CI pipelines, and distributed sandboxes.
+
+### Omarchy local-ai plugin (Oct 2026)
+
+Sero moved his desktop to **Omarchy** (the Linux distro from DHH's team) and published a community plugin `sero.local-ai` (`plugins.omarchy.org/plugin.html?id=sero.local-ai`) integrating his local-AI stack into the Omarchy environment — an extension of his local-first homelab philosophy into distro-level tooling.
 
 ## Blockchain & Governance Work
 

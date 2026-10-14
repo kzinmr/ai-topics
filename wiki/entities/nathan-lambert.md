@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-09-13
+updated: 2026-10-13
 type: entity
 aliases:
   - natolambert
@@ -280,6 +280,10 @@ With GPT-4-tier models available as evaluators, the cost of preference data has 
 
 ### The "American DeepSeek" Problem
 China is producing leading open models (Qwen, DeepSeek, Kimi) while the U.S. is closing off its best models. Lambert's ATOM Project is a call to action to maintain U.S. leadership in open AI research.
+
+### Public Model-Tracking Repository (Oct 2026)
+
+Lambert's team at Interconnects AI open-sourced the **tracked-models** repo (`github.com/Interconnects-AI/tracked-models`), the ground-truth list of HuggingFace models behind their open-model download analytics: post-ChatGPT LLMs/VLMs with first-party HF weights, >100K downloads threshold, guard/shield classifiers excluded. Originated from private HF download data for 7 orgs (1,971 models through Jul 2025); now weekly-synced via public CSVs (`models.csv`, `extra_models.csv`, `arxiv_models.csv`, plus `local-models.csv` for 1,606 conversion-only local copies added 2026-10-13) with an explicit corrections workflow and documented region attribution. See [[raw/articles/github.com--interconnects-ai-tracked-models--2026-10-13]].
 
 ## Writing Style
 
