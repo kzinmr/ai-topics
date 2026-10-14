@@ -5,6 +5,8 @@ updated: 2026-10-14
 type: concept
 tags: [concept, software-engineering, testing, architecture, design-patterns, java]
 sources:
+  - https://learning.oreilly.com/library/view/working-effectively-with/0131177052/ch02.html
+  - https://learning.oreilly.com/library/view/working-effectively-with/0131177052/ch11.html
   - https://learning.oreilly.com/library/view/working-effectively-with/0131177052/ch04.html
   - https://learning.oreilly.com/library/view/monolith-to-microservices/9781492047834/ch03.html
 confidence: high
@@ -40,6 +42,36 @@ A substitute that does nothing provides separation but may provide no useful obs
 Suppose a billing routine constructs its own email sender. Adding an interface alone does not let a test select a recorder. Moving the selection into an explicit composition point lets the same billing routine use the real sender in production and the recorder in a test. This is an original illustration of the enabling-point distinction.
 
 Keep the initial change small: changing the dependency boundary and changing the business calculation together makes a regression harder to localize. A seam creates a place to observe and replace behavior; it does not validate the calculation or authorize its redesign.
+
+## Worked example: select a notification recorder
+
+This original Python illustration has no network side effects:
+
+```python
+class FeeBatch:
+    def __init__(self, emit_notice):
+        self.emit_notice = emit_notice
+
+    def process(self, amount_cents):
+        if type(amount_cents) is not int or not 0 <= amount_cents <= 1_000_000:
+            raise ValueError("amount must be integer cents in the allowed range")
+        fee_cents = amount_cents * 25 // 1000
+        self.emit_notice({"fee_cents": fee_cents})
+        return fee_cents
+
+notices = []
+batch = FeeBatch(notices.append)
+assert batch.process(1999) == 49
+assert notices == [{"fee_cents": 49}]
+```
+
+`process` reaches the collaborator through `self.emit_notice`. The **enabling point** is construction of `FeeBatch`, where the supplied function is selected. A production composition supplies a real sender; the test supplies `notices.append`. The invocation `batch.process(1999)` is unchanged between those compositions.
+
+The recorder performs separation, because no real notification is sent, and sensing, because the exact argument and call count can be checked. Replacing it with a function that discards its argument would keep separation but lose that evidence.
+
+If the original constructor creates its own concrete sender, first introduce the selection boundary with the calculation unchanged. That preparatory refactor has its own risk; check observable behavior before combining it with a rounding change. Dependency injection means supplying a collaborator from outside the object, as illustrated here; it does not require a framework.
+
+**Check your understanding:** Does the assertion establish that the real notification service accepts this message? No. It establishes the batch's request to its collaborator. A real integration check must establish delivery behavior, failures and the receiver's contract.
 
 ## From testing to migration
 

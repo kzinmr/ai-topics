@@ -1,0 +1,13 @@
+Impact of Generative AI in Software Development, version 2025.2, Google LLC.
+License stated on PDF page 55: CC BY-NC-SA 4.0.
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
+
+Preserve attribution and these noncommercial/share-alike terms. The document-specific license takes precedence over the website footer.
+No translation or abridgment; the original PDF is authoritative.
+
+55
+v. 2025.2
+"DORA Report - Impact of generative AI 
+in software development"  
+by Google LLC is licensed under CC BY-
+NC-SA 4.0

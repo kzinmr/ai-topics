@@ -25,6 +25,8 @@ This is a focused reading of the initial path in [[queries/modernization-inner-l
 
 ## Reading selection
 
+**Continuation, 2026-10-14:** The table below preserves the first-pass snapshot. [[queries/modernization-reading-continuation]] records deeper sections subsequently read across the 14 unique priority works; [[queries/modernization-independent-study-guide]] provides account-free concept learning. Further-reading suggestions below describe the first pass, not the final continuation's unread list.
+
 Follow the guide's purpose order: capture existing behavior, agree business intent, choose incremental boundaries, design independent checks, protect architecture and accept production operation. The final guide step contains two books, giving seven initial titles.
 
 Use the catalogs to choose a section, then read its relevant text. Additional JVM, integration, domain-discovery and security references remain conditional on the target system's risks. No target application or JDK migration was implemented in this reading task.

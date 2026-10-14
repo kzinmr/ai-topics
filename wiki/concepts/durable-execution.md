@@ -4,9 +4,14 @@ type: concept
 tags: [durable-execution, workflow, state-management]
 status: L3
 created: 2026-04-27
-updated: 2026-10-06
+updated: 2026-10-14
 aliases: [Durable Execution, Reliable Agent Execution, Workflow Durability]
-sources: [https://temporal.io/, https://docs.dapr.io/]
+sources:
+  - https://temporal.io/
+  - https://docs.dapr.io/
+  - https://learning.oreilly.com/library/view/practical-process-automation/9781492061441/ch09.html
+  - raw/articles/2026-10-14_unknown_temporal-workflow-docs/retry-policies.md
+  - raw/articles/2026-10-14_unknown_temporal-workflow-docs/workflow-execution.md
 ---
 
 
@@ -15,6 +20,10 @@ sources: [https://temporal.io/, https://docs.dapr.io/]
 ## Summary
 
 Durable execution is a programming model that guarantees code will continue running to completion despite failures, restarts, or infrastructure outages. It achieves this through automatic checkpointing of execution state, deterministic replay, and persistent workflow orchestration. For AI agents (2025-2026), durable execution has become critical as agents graduate from stateless chat to long-running autonomous workflows that may execute for hours or days — spanning multiple model API calls, tool invocations, and human approval steps.
+
+**Scope correction — 2026-10-14:** The earlier absolute formulations about guaranteed completion, replay without duplicate effects and complete execution-state capture are retained as historical wording but superseded as general guarantees. Recovery depends on the engine's persistence/replay contract and recorded application state. Permanent errors, cancellation, unavailable dependencies and unresolved business decisions can prevent successful completion. Hidden model reasoning or an entire machine stack is not assumed to be available or persisted.
+
+Ruecker's *Practical Process Automation*, Chapter 9, explains why a remote operation can complete while its response is lost: subsequent retries can repeat an effect. Checkpointing the caller does not atomically checkpoint an unrelated receiver. Define stable operation identity, receiver-side idempotency/deduplication or reconciliation, and meaningful compensation. The official Temporal retry snapshot likewise distinguishes retryable failures from permanent ones. See [[concepts/modernization-workflow-recovery]] for these boundaries and durable human handoffs.
 
 ## Key Ideas
 

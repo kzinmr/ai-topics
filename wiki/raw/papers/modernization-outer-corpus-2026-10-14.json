@@ -1,0 +1,209 @@
+{
+  "ingested": "2026-10-14",
+  "description": "Outer-loop supplements; not full-text copies of the commercial reading-guide books.",
+  "works": [
+    {
+      "name": "openrewrite",
+      "folder": "articles/2026-10-14_unknown_openrewrite-docs",
+      "repo": "openrewrite/rewrite-docs",
+      "revision": "199ae11da431d667223503260bf7470a32e32c49",
+      "license": "Apache-2.0",
+      "scope": "Selected documentation source files, not a complete documentation website or book",
+      "document_count": 11,
+      "source_archive_sha256": "1c23bf87e4f82cdd0991318c00c3d5b285c71b260f8faf827b00e3e80c0458bf",
+      "archive_members": {
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "docs/authoring-recipes/assets/TreeVisitingPrinterExample.png": "4293eac39676d14e008cfffbf8e2616af02be81ac5fc6303cc28d35da8c9729b",
+        "docs/authoring-recipes/multiple-visitors.md": "7be78cc4c728238fad3a8d24137f2fcc499573d02c4b427eaadc4d7e70bb7d91",
+        "docs/authoring-recipes/recipe-testing.md": "ce4f24c31f97dd329a877a478138b61d24a97daf8881b1fe80a54037076d8356",
+        "docs/authoring-recipes/refaster-recipes.md": "19ee8ec256204ae9ec174421da8ae641a3fe5ec3522463aaae8654422cce6af4",
+        "docs/authoring-recipes/types-of-recipes.md": "b46df54f08a02b4bc537489a3d7efc544c3678c92281f901d1fa8289e18311ee",
+        "docs/authoring-recipes/writing-a-java-refactoring-recipe.md": "6a2dd052e24510a6f6f095084ae130561ab2a60c65b676b5a4edaa83b865a1ce",
+        "docs/concepts-and-explanations/assets/Binary.png": "870fe9cdc67c6d40dc4f385eaaf3e3522dd0287780d094c3d96514db9cf04799",
+        "docs/concepts-and-explanations/assets/Block.png": "4c34be59ca3ef075d5f10d04ae6707662dc5c386465b5a26d63da064ead777b9",
+        "docs/concepts-and-explanations/assets/ClassDeclaration.png": "8f7189e2570387a7abb1f28b1a9c45bbbe4baaf4f398740d9af57d5ec5a64f47",
+        "docs/concepts-and-explanations/assets/ClassDeclarationDebugger.png": "575653d639c0a07ee41b43416a2d88cf200529463d71b509e77e26743c036bee",
+        "docs/concepts-and-explanations/assets/CompilationUnit.png": "47eac27ce75f76e9a3bab4e8559c14436e843b3b33ee0081c4493ac6d9fd1a1e",
+        "docs/concepts-and-explanations/assets/DebuggerExample.png": "839ba3d1f22d305c30f99729caea3b1ddce9be7646db0d0822e0efdc48be3d1c",
+        "docs/concepts-and-explanations/assets/Expression.png": "9356244df09f4cce503454913b5bdf732f4b95f37b6d734ea8fa0133f8380ad6",
+        "docs/concepts-and-explanations/assets/FieldAccess.png": "8183a9b8e6bf5748ee99ef75fe546fa7d5da4488a5b20704ec30a0e10dccc2a1",
+        "docs/concepts-and-explanations/assets/Identifier.png": "a6f6419714e8de78dc99c2dc5da6d650f8e254b3548419dd9308483e65a46815",
+        "docs/concepts-and-explanations/assets/LST-comparison.png": "c50d47347f1437292bef8670e8de69417dab25c3886d35bfdf1962d802eff5d9",
+        "docs/concepts-and-explanations/assets/MethodDeclaration.png": "734bddc1b465f74afe850b05fdd5845f1a5ee963191a7e3402ad18afca39e046",
+        "docs/concepts-and-explanations/assets/MethodInvocation.png": "bed736047ef7790e7124f6b6ef15ba3c95f0086183989f04991dc5129ca3fa37",
+        "docs/concepts-and-explanations/assets/NewClass.png": "0fbf443f2002cbaf87e2cf376b7ab87e6d37836af4457b5762efab146f2038d3",
+        "docs/concepts-and-explanations/assets/Statement.png": "db3f57cad844ce4dcb902dafed3cd0d6d12c77d11a009c4add2bf08d18e1dd0c",
+        "docs/concepts-and-explanations/assets/VariableDeclarations.png": "050b3cc23ca8b09c941093350b284a953662e10c16d68b8e3873c92afdfa1e44",
+        "docs/concepts-and-explanations/assets/junit5pipeline.png": "2714db641ef792aa4307c71ce4fe94e6c672ec892d99fc6cee3485064440063f",
+        "docs/concepts-and-explanations/assets/vertical-ast-example.png": "2d0f39ad3fa720aaa4d225152cd9e910079c4d3384689b2b5a2bc7dbddf15f84",
+        "docs/concepts-and-explanations/assets/visitor-example.png": "ce42cd0ae1c3a3ac7ca2873f6360867693e2496f3e5ff9cd0978abf5a339ae54",
+        "docs/concepts-and-explanations/cursors.md": "227b9a6290ddf08300ca50f29e19ee8c690e46800c12ba642e6ff37ed28f3e9a",
+        "docs/concepts-and-explanations/lossless-semantic-trees.md": "ce3f421971ea8c4ca81b46ce475fdb2aeb1c142f6d9b394b4e49379539b52e36",
+        "docs/concepts-and-explanations/lst-examples.md": "a74ecf6f8d4ce6b8a6e51dc75a364768a732b2ec20a2a5911b5792e4a4283f99",
+        "docs/concepts-and-explanations/recipes.md": "a2c4dc885255188fd3c6b99ffe7b5e10b046e8f9be6855e8c0f93960ee2163a7",
+        "docs/concepts-and-explanations/type-attribution.md": "46f061b1e4a2e7c7355791db115da27d3ce2fb8639ee2532b3fee41a3d4213bf",
+        "docs/concepts-and-explanations/visitors.md": "fc045b6b2f1c7cebc038e76e73747e7b631fd613c0dd58da6a590bd37a91bfac"
+      },
+      "documents": [
+        {
+          "file": "lossless-semantic-trees.md",
+          "source_path": "docs/concepts-and-explanations/lossless-semantic-trees.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/concepts-and-explanations/lossless-semantic-trees.md",
+          "original_sha256": "ce3f421971ea8c4ca81b46ce475fdb2aeb1c142f6d9b394b4e49379539b52e36",
+          "body_sha256": "ce3f421971ea8c4ca81b46ce475fdb2aeb1c142f6d9b394b4e49379539b52e36"
+        },
+        {
+          "file": "lst-examples.md",
+          "source_path": "docs/concepts-and-explanations/lst-examples.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/concepts-and-explanations/lst-examples.md",
+          "original_sha256": "a74ecf6f8d4ce6b8a6e51dc75a364768a732b2ec20a2a5911b5792e4a4283f99",
+          "body_sha256": "a74ecf6f8d4ce6b8a6e51dc75a364768a732b2ec20a2a5911b5792e4a4283f99"
+        },
+        {
+          "file": "type-attribution.md",
+          "source_path": "docs/concepts-and-explanations/type-attribution.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/concepts-and-explanations/type-attribution.md",
+          "original_sha256": "46f061b1e4a2e7c7355791db115da27d3ce2fb8639ee2532b3fee41a3d4213bf",
+          "body_sha256": "46f061b1e4a2e7c7355791db115da27d3ce2fb8639ee2532b3fee41a3d4213bf"
+        },
+        {
+          "file": "recipes.md",
+          "source_path": "docs/concepts-and-explanations/recipes.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/concepts-and-explanations/recipes.md",
+          "original_sha256": "a2c4dc885255188fd3c6b99ffe7b5e10b046e8f9be6855e8c0f93960ee2163a7",
+          "body_sha256": "a2c4dc885255188fd3c6b99ffe7b5e10b046e8f9be6855e8c0f93960ee2163a7"
+        },
+        {
+          "file": "visitors.md",
+          "source_path": "docs/concepts-and-explanations/visitors.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/concepts-and-explanations/visitors.md",
+          "original_sha256": "fc045b6b2f1c7cebc038e76e73747e7b631fd613c0dd58da6a590bd37a91bfac",
+          "body_sha256": "fc045b6b2f1c7cebc038e76e73747e7b631fd613c0dd58da6a590bd37a91bfac"
+        },
+        {
+          "file": "cursors.md",
+          "source_path": "docs/concepts-and-explanations/cursors.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/concepts-and-explanations/cursors.md",
+          "original_sha256": "227b9a6290ddf08300ca50f29e19ee8c690e46800c12ba642e6ff37ed28f3e9a",
+          "body_sha256": "227b9a6290ddf08300ca50f29e19ee8c690e46800c12ba642e6ff37ed28f3e9a"
+        },
+        {
+          "file": "writing-a-java-refactoring-recipe.md",
+          "source_path": "docs/authoring-recipes/writing-a-java-refactoring-recipe.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/authoring-recipes/writing-a-java-refactoring-recipe.md",
+          "original_sha256": "6a2dd052e24510a6f6f095084ae130561ab2a60c65b676b5a4edaa83b865a1ce",
+          "body_sha256": "6a2dd052e24510a6f6f095084ae130561ab2a60c65b676b5a4edaa83b865a1ce"
+        },
+        {
+          "file": "recipe-testing.md",
+          "source_path": "docs/authoring-recipes/recipe-testing.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/authoring-recipes/recipe-testing.md",
+          "original_sha256": "ce4f24c31f97dd329a877a478138b61d24a97daf8881b1fe80a54037076d8356",
+          "body_sha256": "ce4f24c31f97dd329a877a478138b61d24a97daf8881b1fe80a54037076d8356"
+        },
+        {
+          "file": "refaster-recipes.md",
+          "source_path": "docs/authoring-recipes/refaster-recipes.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/authoring-recipes/refaster-recipes.md",
+          "original_sha256": "19ee8ec256204ae9ec174421da8ae641a3fe5ec3522463aaae8654422cce6af4",
+          "body_sha256": "19ee8ec256204ae9ec174421da8ae641a3fe5ec3522463aaae8654422cce6af4"
+        },
+        {
+          "file": "types-of-recipes.md",
+          "source_path": "docs/authoring-recipes/types-of-recipes.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/authoring-recipes/types-of-recipes.md",
+          "original_sha256": "b46df54f08a02b4bc537489a3d7efc544c3678c92281f901d1fa8289e18311ee",
+          "body_sha256": "b46df54f08a02b4bc537489a3d7efc544c3678c92281f901d1fa8289e18311ee"
+        },
+        {
+          "file": "multiple-visitors.md",
+          "source_path": "docs/authoring-recipes/multiple-visitors.md",
+          "source_url": "https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/authoring-recipes/multiple-visitors.md",
+          "original_sha256": "7be78cc4c728238fad3a8d24137f2fcc499573d02c4b427eaadc4d7e70bb7d91",
+          "body_sha256": "7be78cc4c728238fad3a8d24137f2fcc499573d02c4b427eaadc4d7e70bb7d91"
+        }
+      ]
+    },
+    {
+      "name": "temporal",
+      "folder": "articles/2026-10-14_unknown_temporal-workflow-docs",
+      "repo": "temporalio/documentation",
+      "revision": "6615d3b5325f93cdd7222fa05fad5184ec30c528",
+      "license": "MIT",
+      "scope": "Selected documentation source files, not a complete documentation website or book",
+      "document_count": 6,
+      "source_archive_sha256": "ebe021e177446f73a0511b64c2dc2a41ca3d5c0f731c221d077ec9ead2ad16ca",
+      "archive_members": {
+        "LICENSE.md": "e807d852b395ebd320881f256ac22d15631e0004617fbf8b3450e04651fa0b7a",
+        "docs/design-patterns/saga-pattern.mdx": "3be49bcfa6342aa7967deb0f7f985a00f106728bcb209046a286176c9bbcf29e",
+        "docs/encyclopedia/activities/activity-execution.mdx": "99ec92fbd0e5e1f848b03080da5bd63a2850e784c8c22d559f9cffe7781bd8be",
+        "docs/encyclopedia/retry-policies.mdx": "f9bcb83a2ee256c6fe32fb02bf60d41ddf087f4cfa406507e347fd05779b1bc9",
+        "docs/encyclopedia/workflow/workflow-execution/event.mdx": "a2504ab90683a6ca711ba6cbbc59ebc56eb61e64cd6084ca91f275cb28fd4b79",
+        "docs/encyclopedia/workflow/workflow-execution/workflow-execution.mdx": "4c5516e886ea283cfec97277c071da118da8d7a013df98d6e37a08111e68e8fc",
+        "docs/encyclopedia/workflow/workflow-execution/workflowid-runid.mdx": "4e7c1d6aa986112e3b9c668aa67418b8b74346ab58f042b7143addc982bc02aa",
+        "static/diagrams/activity-execution.svg": "03e62ee1b25b480dd8d9c579fb5e7f200ab4271460156241a110c08a21b191e6",
+        "static/diagrams/commands.svg": "1f72a6612111686a999500f702727eef6c222bbdb6a19510a92bd95ed67ae7c1",
+        "static/diagrams/workflow-execution-progession-simple.svg": "65baaa5173f7363434adff8efa3a464e584555ea10c0de4cd1ec1d32e7315569",
+        "static/diagrams/workflow-execution-statuses.svg": "8449e0ca1e35c993ccd67e23c4497918b444d7f6a06bf0ade7eccf75c275cea9",
+        "static/diagrams/workflow-execution-swim-lane-01.svg": "422dc3de122c44c1cdeb3de57533f44707aa6876dd07c555e438fb4f0ec523c9",
+        "static/img/info/retry-interval-diagram.png": "acea18365fe3ab3be7aefb93f4faaea482173e1f8b8c2dd7df8cdb1c8edc01d6"
+      },
+      "documents": [
+        {
+          "file": "activity-execution.md",
+          "source_path": "docs/encyclopedia/activities/activity-execution.mdx",
+          "source_url": "https://raw.githubusercontent.com/temporalio/documentation/6615d3b5325f93cdd7222fa05fad5184ec30c528/docs/encyclopedia/activities/activity-execution.mdx",
+          "original_sha256": "99ec92fbd0e5e1f848b03080da5bd63a2850e784c8c22d559f9cffe7781bd8be",
+          "body_sha256": "99ec92fbd0e5e1f848b03080da5bd63a2850e784c8c22d559f9cffe7781bd8be"
+        },
+        {
+          "file": "retry-policies.md",
+          "source_path": "docs/encyclopedia/retry-policies.mdx",
+          "source_url": "https://raw.githubusercontent.com/temporalio/documentation/6615d3b5325f93cdd7222fa05fad5184ec30c528/docs/encyclopedia/retry-policies.mdx",
+          "original_sha256": "f9bcb83a2ee256c6fe32fb02bf60d41ddf087f4cfa406507e347fd05779b1bc9",
+          "body_sha256": "f9bcb83a2ee256c6fe32fb02bf60d41ddf087f4cfa406507e347fd05779b1bc9"
+        },
+        {
+          "file": "workflow-execution.md",
+          "source_path": "docs/encyclopedia/workflow/workflow-execution/workflow-execution.mdx",
+          "source_url": "https://raw.githubusercontent.com/temporalio/documentation/6615d3b5325f93cdd7222fa05fad5184ec30c528/docs/encyclopedia/workflow/workflow-execution/workflow-execution.mdx",
+          "original_sha256": "4c5516e886ea283cfec97277c071da118da8d7a013df98d6e37a08111e68e8fc",
+          "body_sha256": "4c5516e886ea283cfec97277c071da118da8d7a013df98d6e37a08111e68e8fc"
+        },
+        {
+          "file": "workflowid-runid.md",
+          "source_path": "docs/encyclopedia/workflow/workflow-execution/workflowid-runid.mdx",
+          "source_url": "https://raw.githubusercontent.com/temporalio/documentation/6615d3b5325f93cdd7222fa05fad5184ec30c528/docs/encyclopedia/workflow/workflow-execution/workflowid-runid.mdx",
+          "original_sha256": "4e7c1d6aa986112e3b9c668aa67418b8b74346ab58f042b7143addc982bc02aa",
+          "body_sha256": "4e7c1d6aa986112e3b9c668aa67418b8b74346ab58f042b7143addc982bc02aa"
+        },
+        {
+          "file": "event.md",
+          "source_path": "docs/encyclopedia/workflow/workflow-execution/event.mdx",
+          "source_url": "https://raw.githubusercontent.com/temporalio/documentation/6615d3b5325f93cdd7222fa05fad5184ec30c528/docs/encyclopedia/workflow/workflow-execution/event.mdx",
+          "original_sha256": "a2504ab90683a6ca711ba6cbbc59ebc56eb61e64cd6084ca91f275cb28fd4b79",
+          "body_sha256": "a2504ab90683a6ca711ba6cbbc59ebc56eb61e64cd6084ca91f275cb28fd4b79"
+        },
+        {
+          "file": "saga-pattern.md",
+          "source_path": "docs/design-patterns/saga-pattern.mdx",
+          "source_url": "https://raw.githubusercontent.com/temporalio/documentation/6615d3b5325f93cdd7222fa05fad5184ec30c528/docs/design-patterns/saga-pattern.mdx",
+          "original_sha256": "3be49bcfa6342aa7967deb0f7f985a00f106728bcb209046a286176c9bbcf29e",
+          "body_sha256": "3be49bcfa6342aa7967deb0f7f985a00f106728bcb209046a286176c9bbcf29e"
+        }
+      ]
+    },
+    {
+      "name": "DORA Impact of Generative AI in Software Development",
+      "version": "2025.2",
+      "folder": "papers/2025_google_dora-gen-ai",
+      "source_url": "https://dora.dev/research/ai/gen-ai-report/dora-impact-of-generative-ai-in-software-development.pdf",
+      "pages": 56,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_evidence": "Original PDF page 55",
+      "pdf_sha256": "2d4358f6fbc496e13d29b992445854a7bf8eea510f6a642502a0d2dec1bff7a6",
+      "extraction_body_sha256": "59c28f19e7e204d7d11140f6fc44792db2264d8be9b3b6e3097bc6796d4728e3",
+      "scope": "Complete supplementary report; not the book Accelerate or the separate 2025 annual DORA report"
+    }
+  ]
+}

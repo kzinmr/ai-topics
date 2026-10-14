@@ -5,6 +5,8 @@ updated: 2026-10-14
 type: concept
 tags: [concept, coding-agents, codex, enterprise-ai, software-engineering, architecture, business-process, verification, case-study]
 sources:
+  - raw/papers/2025_google_dora-gen-ai/impact-of-generative-ai.md
+  - https://learning.oreilly.com/library/view/practical-process-automation/9781492061441/ch09.html
   - https://learning.oreilly.com/library/view/monolith-to-microservices/9781492047834/ch03.html
   - raw/papers/2018_google_sre-workbook/canarying-releases.md
   - raw/papers/2020-04-08_google_building-secure-reliable/ch14.md
@@ -31,7 +33,11 @@ For mainframes, AWS and OpenAI published a CardDemo demonstration connecting ext
 
 ## Concept map
 
+Start [the account-free study guide](../queries/modernization-independent-study-guide.md) to learn the selected concepts from local explanations and original worked examples. [The integrated fee-batch exercise](../queries/modernization-batch-example.md) connects both loops; [[queries/modernization-independent-reading-review]] records the comprehension criteria and limits.
+
 [[concepts/legacy-modernization-moc]] maps the engineering foundations from focused inner-loop reading. [[queries/modernization-inner-loop-study-notes]] records actual inspected sections; [[queries/modernization-inner-loop-sources]] separates public readability, reuse permission and archived source coverage.
+
+The outer-loop adds [[concepts/living-documentation]], [[concepts/semantic-transformation-recipes]], [[concepts/modernization-workflow-recovery]], [[concepts/modernization-evaluation-corpus]] and [[concepts/artifact-provenance-gates]]. [[queries/modernization-outer-loop-study-notes]] distinguishes the eight priority works' inspected sections from remaining reading; [[queries/modernization-outer-loop-sources]] records all 20 public-source findings and supplementary raw snapshots.
 
 | Question | Practice | Wiki route |
 |---|---|---|
@@ -97,6 +103,8 @@ The existing [[raw/articles/2025-08-29_humanlayer-advanced-context-engineering-c
 Recommended pilot measures: time from approved scope to accepted release; engineer hours including discovery and review; first-pass acceptance and rework; unresolved parity differences; requirement disposition completeness; reconciled record/value totals; incidents and recovery time; model plus environment and human cost per accepted flow.
 
 Record workload and baseline alongside every number. Generated lines, PR count, unit-test coverage, and source-code shrinkage do not establish business equivalence or total programme ROI. [[concepts/ai-assisted-development]] provides the broader team-measurement framing.
+
+DORA's *Impact of Generative AI in Software Development*, v2025.2, pages 38–42, reinforces this distinction: usage/adoption signals alone do not measure impact, and baselines plus several organizational levels help guide improvement. For reusable workflow assets, also track SME questions, decision waiting, accepted reuse under unchanged assumptions, recovery effort and asset maintenance. These are proposed modernization measures, not observed savings or a causal result from this repository.
 
 ## Open questions
 

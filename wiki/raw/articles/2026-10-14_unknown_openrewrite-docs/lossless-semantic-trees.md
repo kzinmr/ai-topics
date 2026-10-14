@@ -1,0 +1,67 @@
+---
+title: Lossless Semantic Trees
+created: '2026-10-14'
+updated: '2026-10-14'
+type: source
+tags:
+- documentation
+- software-engineering
+sources:
+- https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/concepts-and-explanations/lossless-semantic-trees.md
+source_url: https://raw.githubusercontent.com/openrewrite/rewrite-docs/199ae11da431d667223503260bf7470a32e32c49/docs/concepts-and-explanations/lossless-semantic-trees.md
+ingested: '2026-10-14'
+license: Apache-2.0
+attribution: OpenRewrite documentation contributors / Moderne
+content_kind: verbatim Markdown/MDX source with added acquisition frontmatter; not
+  a rendered page
+original_sha256: ce3f421971ea8c4ca81b46ce475fdb2aeb1c142f6d9b394b4e49379539b52e36
+body_sha256: ce3f421971ea8c4ca81b46ce475fdb2aeb1c142f6d9b394b4e49379539b52e36
+---
+
+---
+description: An explanation of what an LST is and why it's critical for large-scale automatic refactoring.
+---
+
+# Lossless Semantic Trees (LST)
+
+<figure>
+  ![](./assets/LST-comparison.png)
+  <figcaption>_LST comparison_</figcaption>
+</figure>
+
+A Lossless Semantic Tree (LST) is a tree representation of code. Unlike the traditional [Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract\_syntax\_tree) (AST), OpenRewrite's LST offers a unique set of characteristics that make it possible to perform accurate transformations and searches across a repository:
+
+* **Type-attributed**. Each LST is imbued with type information. For example, when referencing a field, the source code may just refer to it as `myField`. The OpenRewrite LST for `myField`, on the other hand, would contain additional information about what the type of `myField` is, even if it isn't defined in the same source file or even the same project.
+* **Format-preserving**. Whitespace before and after LSTs are preserved in the tree so the tree can be printed out to reconstitute the original source code without clobbering formatting. Additionally, refactoring operations that insert code are sensitive to the local style of the code around them and match the local style.
+
+Type attribution is necessary for the accurate matching of patterns. For example, if we are looking for [SLF4J](http://www.slf4j.org/) log statements and we see a statement like the following, without type attribution how do we know if `logger` is an SLF4J or a Logback logger?
+
+```java
+logger.info("Hi");
+```
+
+Format preservation is necessary if formatting isn't 100% consistent throughout the whole repository.
+
+:::info
+If you want to see specific examples of OpenRewrite Java LSTs, please read our [Java LST Examples doc](lst-examples.md).&#x20;
+:::
+
+
+:::tip
+[Moderne](https://docs.moderne.io/) adds additional functionality to support large-scale mass refactoring on LSTs. With Moderne, you can quickly make transformations across your entire organization.
+:::
+
+## LST lifecycle
+
+When you run an OpenRewrite recipe locally:
+
+1. The OpenRewrite process creates an LST which is stored in memory. This reflects the current state of the repository on disk.
+2. The process continues by making transformations on the LST. This could be adding a search marker (`~~>`) if the recipe is a search recipe -- or it could be more significant code changes.
+3. Once the recipe finishes running, the LST is converted back to text which then is used to overwrite any existing files that have changed.
+4. After all of the files have been overwritten, the process ends. _Nothing is stored between recipe runs_. 
+5. If you go to run another recipe after the first one is done, a new LST will be generated at that time.
+6. If the previous recipe made changes and those changes exist locally, then the newly generated LST will have all of those changes. If the previous recipe made no changes, then the LST will effectively be the same one as before (but regenerated as the previous one no longer exists).
+
+:::info
+In order for OpenRewrite to work locally, the LST **must** fit into memory. This is in contrast with [Moderne](https://docs.moderne.io/) where the LST can be built and used in pieces.
+:::

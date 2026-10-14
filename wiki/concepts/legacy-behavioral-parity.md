@@ -87,6 +87,38 @@ A proposed cutover gate is: retained critical scenarios pass, material differenc
 
 If the legacy compiler, data, or job harness is unavailable, report parity as **not demonstrated**. Static inspection and target-only tests are narrower evidence.
 
+## Worked example: make the comparison itself falsifiable
+
+For this original fictional pilot, the owner has approved fee 49 for amount 1,999 cents. Each accepted work unit belongs to the correct account and creates one notification intent. Execution timestamps are incidental; work/account identity, fee, status and effect count are material.
+
+```python
+def differences(expected, actual):
+    fields = ("work_id", "account_id", "fee_cents", "status", "notice_count")
+    return [name for name in fields
+            if name not in expected or name not in actual
+            or expected[name] != actual[name]]
+
+reference = {"work_id": "w1", "account_id": "A", "fee_cents": 49,
+             "status": "accepted", "notice_count": 1}
+assert differences(reference, dict(reference)) == []
+assert differences(reference, {**reference, "fee_cents": 50}) == ["fee_cents"]
+assert differences(reference, {**reference, "notice_count": 2}) == ["notice_count"]
+assert differences(reference, {**reference, "account_id": "B"}) == ["account_id"]
+```
+
+The intentional mismatches confirm that this small comparator notices the tested defects. It remains a summary-field illustration: actual record identity/values, notification payload/recipient, ordering and delivery outcomes need their own agreed checks. A reported count is trustworthy only when the underlying effects were recorded correctly.
+
+### Follow a difference to a decision
+
+1. Pin both implementations, initial state and the input fixture; feed matched work to both.
+2. Preserve original evidence before normalization. Explain each ignored field and test that material changes still fail.
+3. Run positive and deliberately altered comparison cases. A missing required field must not silently equal an absent value on the other side.
+4. If the candidate reports 50, identify the affected rule and inspect the rounding difference. Do not change the reference to match it.
+5. Record retain/change/unresolved with the accountable owner. An approved semantic change gets a separately identified expected result.
+6. Verify state/effects and the retirement objective as well as outputs. Repeat required failure and recovery cases before cutover.
+
+**Check your understanding:** Both programs return 49 but the candidate writes the result to account B. Is there parity? No. The retained obligation includes identity and state, not only a numeric result.
+
 ## Related
 
 - [[concepts/enterprise-legacy-modernization]] — end-to-end practice map

@@ -67,6 +67,8 @@ sources: [
 
 [[queries/modernization-inner-loop-sources|公開範囲・ライセンス・raw原資料]] · [[queries/modernization-inner-loop-study-notes|読解範囲と知見]] · [[concepts/legacy-modernization-moc|重要コンセプトの案内]]
 
+Account-free learning: [concept study guide](modernization-independent-study-guide.md), [worked exercise](modernization-batch-example.md), and [[queries/modernization-reading-continuation|priority-reading continuation]].
+
 ## 最初に読む順番
 
 1. **Working Effectively with Legacy Code** — 既存挙動の証拠と、変更可能な境界を作る。
