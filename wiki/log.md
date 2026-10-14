@@ -3,6 +3,11 @@
 Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved the complete preceding active log in an already-published immutable Git snapshot indexed by the annual archive.
 
 
+## [2026-10-14] query | Night hot-post: "coding is no longer scarce" (Scion + code-as-graph)
+
+- 21:30 JST night slot, contrarian angle. Synthesized [[entities/scion-anthropic-version-control]] + [[concepts/code-as-graph]] + [[concepts/graph-engineering]] into one reflective post: both fresh Oct 13–14 sources converge on the claim that code-writing stopped being the scarce resource, so the scarce resource moved to the infrastructure around it (Scion: merge 2.5K→30K/day, git broke at ~25M CI checkouts/day → >600 PB git traffic; Colvin: fixed pre-authored graphs are "a prompt with extra steps" once agents write orchestration at runtime). No wiki pages created — answer not worth filing (single-post synthesis, low re-derivation cost). No index count change.
+
+
 ## [2026-10-14] read + review + enrich | Account-free priority modernization concepts
 
 - User confirmed deep reading of the 14 unique priority works across both guides (Specification by Example shared). Continued actual O'Reilly selected-section reading beyond the first passes and read deeper Google testing/provenance sections from the existing licensed archive. `queries/modernization-reading-continuation.md` records actual scopes, temporary reader failures excluded and remaining limits. No cover-to-cover completion or commercial chapter export claimed; existing raw/transcripts unchanged. No subagents used.
