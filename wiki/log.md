@@ -31,3 +31,9 @@ Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved
 - Index and upstream entity/source changes merged automatically. Guide selections/order and source immutability are checked before merge; final validation and PR merge results follow. Wiki reading-guides/cases navigation will be updated after both merges.
 
 - Final outer-loop integration validation passed: 29 research/learning pages have required metadata, canonical tags, resolving source/file/wikilinks and fewer than 200 lines. Both guide tables/priority order and all 11,994 raw/transcript Git blob identities from the two parents are preserved; no unstaged source edits or unresolved conflicts. Index retains both sides' entries and counts 3234 (2193 concepts, 28 queries). Published teaching-code/fault/arithmetic checks, index structural checks and staged whitespace checks passed. Repository hook is the final local gate before PR #5 merge; no CI workflows are configured in this repository.
+
+
+## [2026-10-14] query | Hot-post morning 09:30 — repo-as-factory synthesis (lint > skills + SmithDB)
+
+- Delivered morning hot-post synthesizing the two Oct-13 sarahfim/Composio pages into one thesis: "the agent is not the factory — the repo is." Primary: `concepts/coding-agents/lint-rules-as-agent-feedback-loop` (38 custom lint rules, Zen 1,300+ merged PRs, lint > skills argument), corroborated by `concepts/smithdb-agent-trace-datastore` (observability layer re-architected too: 12x/9x/15x vendor claims, ClickHouse → v0.19 cutoff). Cross-refs: dark-factory-software-factory, agentic-software-factory-hierarchy-of-needs, ai-observability.
+- No wiki content pages created or modified (report only).
