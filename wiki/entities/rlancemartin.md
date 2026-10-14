@@ -1,7 +1,7 @@
 ---
 title: "Lance Martin (@rlancemartin)"
 created: 2026-05-23
-updated: 2026-09-29
+updated: 2026-10-13
 type: entity
 tags:
   - person
@@ -22,6 +22,7 @@ sources:
   - https://github.com/anthropics/claude-cookbooks/tree/main/managed_agents/self_hosted_sandboxes
   - https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-sonnet-5
   - raw/articles/claude.dev--automating-eval-design-and-hillclimbing--2026-09-28.md
+  - raw/articles/claude.dev--building-effective-agent-automations--2026-10-08.md
 ---
 
 # Lance Martin (@rlancemartin)
@@ -121,6 +122,10 @@ Martin announced and detailed the four sandbox partnerships:
 | **Modal** | Firecracker microVMs + GPUs | 100K concurrent, H100 GPUs, burst pricing |
 | **Vercel** | Firecracker microVMs | Firewall-level credential brokering, TypeScript-native |
 | **Daytona** | Docker containers | Full container ownership, 30-day lifecycle |
+
+### Building Effective Agent Automations (Oct 2026)
+
+With CJ Avilla, Martin published **"Building effective agent automations"** on the claude.dev blog (2026-10-08): a reference implementation of scheduled background agents on Claude Managed Agents (beta) that read sources (Slack, GitHub) on a cron schedule and post a "daily brief" to Slack, plus a Claude Code onboarding command (`/claude-api managed-agents-onboard`). The article's value is its six failure-mode rules for deployed automations: (1) read from per-source bookmarks, not fixed time windows; (2) report a failed source read as unreadable, never as a quiet day; (3) re-check every item's live status right before posting ("assert it or drop it"); (4) count a post as sent only on destination confirmation, then update ledger/bookmarks; (5) re-read preferences every run from a memory store the agent can't edit (two-store split: read-only `preferences` vs read-write `state`); (6) read-only credentials wherever possible plus a spend cap that *pauses* (rather than fails) a runaway run. See [[raw/articles/claude.dev--building-effective-agent-automations--2026-10-08]] and [[concepts/managed-agents]].
 
 ## X Activity Themes
 
