@@ -2,7 +2,7 @@
 title: "Graph Engineering"
 type: concept
 created: 2026-07-28
-updated: 2026-08-10
+updated: 2026-10-14
 tags:
   - concept
   - ai-agents
@@ -168,6 +168,7 @@ The article's code examples show Claude Code writing **JavaScript orchestration 
 
 ## Relationship to Adjacent Concepts
 
+- [[concepts/code-as-graph]] — Samuel Colvin's counter-thesis (Oct 2026): graphs should be *drawn*, not executed — `if`/`for`/`try`/`gather` in type-checked code already is the graph, and graph libraries that snapshot parallel state necessarily lose type safety. Accepts the paradigm, rejects graph *libraries* as execution engines.
 - [[concepts/loop-engineering]] — The autonomous cycle that drives one agent toward a goal. Graph engineering coordinates multiple loops.
 - [[concepts/harness-engineering]] — The code around one model run. Each loop needs a good harness; each harness call is a context problem.
 - [[concepts/agent-loop-orchestration]] — Technical architecture of the think-act-evaluate cycle. Graph engineering is the coordination layer above.
@@ -185,6 +186,7 @@ The article's code examples show Claude Code writing **JavaScript orchestration 
 
 ## Sources
 
+- [[raw/articles/2026-10-13_samuelcolvin_the-code-is-the-graph]] — Samuel Colvin, "The code IS the graph" (Oct 13, 2026). X Article. Counter-thesis: [[concepts/code-as-graph|code-as-graph]].
 - [[raw/articles/2026-07-25_akshay-pachaar_graph-engineering-clearly-explained]] — Akshay Pachaar, "Graph Engineering Clearly Explained" (Jul 25, 2026). X Article. 1,529 bookmarks, 288K impressions.
 - [[raw/articles/2026-07-20_movez_graph-engineering-claude-14-step]] — 0xMovez AI, "Graph Engineering with Claude: 14-Step roadmap from 0 to graph architect (Full Course)" (Jul 20, 2026). X Article. Covers dynamic workflows, `parallel()`, adversarial verification, convergent cycles, model tiering, and self-routing patterns in Claude Code.
 - [Anthropic, "Building Effective Agents"](https://www.anthropic.com/research/building-effective-agents) — Standing advice: find the simplest solution.

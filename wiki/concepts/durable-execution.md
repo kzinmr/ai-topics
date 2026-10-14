@@ -56,6 +56,7 @@ Ruecker's *Practical Process Automation*, Chapter 9, explains why a remote opera
 - [[concepts/process-supervision]]
 - [[concepts/agent-loop-orchestration]]
 - Related: [[concepts/retire-versioned-execution]] (versioned execution for interruptible agents — same "don't lose state on interruption" thesis, solved at the serving layer instead of the workflow layer), [[concepts/harness-tax]] (why harness weight is a measurable cost dimension).
+- Related: [[concepts/code-as-graph]] (Colvin's Oct 2026 thesis: durability belongs to replay engines like Temporal and snapshot-capable interpreters like Monty, not to graph libraries — node-boundary graph snapshots are incompatible with typed parallel execution).
 - Related: [[events/pi-durable-1-0]] (Pi Durable — harness-as-library durability with memory/SQLite/JSONL backends), [[concepts/absurd-durable-execution]] (Postgres-native checkpointing — same thesis, DB-resident).
 
 ## Sources

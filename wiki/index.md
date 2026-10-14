@@ -949,7 +949,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2194 pages)
+## Concepts (2195 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1566,6 +1566,7 @@
 - [[concepts/coalitional-agency]] — Coalitional Agency
 - [[concepts/code-cleanliness-coding-agents]] — Code Cleanliness and Coding Agent Performance — arXiv study (2605.20049) measuring how codebase cleanliness affects coding agent token usage (7-8% less) and file revisitations (34% fewer) across 660 Claude Code trials (July 2026)
 - [[concepts/code-as-process]] — code-as-process
+- [[concepts/code-as-graph]] — Code-as-Graph — Samuel Colvin's thesis: agent orchestration belongs in type-checked code, not graph libraries; "typed/snapshotted/parallel — pick two" CAP theorem; Monty + Temporal as the execution/durability answer (Oct 2026)
 - [[concepts/code-execution-with-mcp]] — Code Execution with MCP — Treating MCP Servers as Code APIs
 - [[concepts/code-intelligence-for-llms]] — The practice of providing LLMs with structured, pre-computed code analysis data rather than raw source files. Cuts to...
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling

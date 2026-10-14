@@ -74,6 +74,7 @@ type: entity
 - **Mar 28, 2026**: pydantic-monty v0.0.9 released
 - **Jun 11, 2026**: Monty PR #500 — Move execution to a subprocess pool. Implements crash-isolated worker subprocesses via protobuf protocol (158 files, +25,642/-17,879 lines). Improves safety: crashes kill only a worker, not the host process.
 - **Apr 2026**: Serializable Agents (TOML-defined agents) in development
+- **Oct 13, 2026**: Published "The code IS the graph" (X Article, originally at pydantic.dev) — argues graph libraries are a mistake; code itself is the graph. Formalizes the "typed / snapshotted / parallel — pick two" impossibility and positions [[concepts/monty-sandbox|Monty]] + Temporal replay as the answer. See [[concepts/code-as-graph]].
 
 ## Core Philosophy
 
@@ -123,6 +124,17 @@ Colvin announced work on serializing entire agent definitions to TOML files — 
 - **Version control**: Track agent changes in git
 
 > *"We're about to introduce... serializable agents. So basically you can define an agent entirely in a TOML file. Everything from the model to the system prompt to all of the tools."* — Latent Space (Feb 2026)
+
+### Code-as-Graph (Oct 2026)
+
+Colvin's definitive statement against graph execution libraries, in "The code IS the graph": "Graph libraries are a mistake. Your code IS the graph... Graphs are dead, long live graphs." Key claims:
+
+- Structured control flow (`if`, `for`, `try`, `asyncio.gather`) already *is* a graph, with a debugger, profiler, and type checker attached; graph libraries rebuild it worse
+- A CAP-theorem-style triangle makes **type safety + parallel execution + state snapshots** jointly impossible for node-boundary graph libraries — the fatal step is generic merging of parallel state updates, which no type system can verify
+- pydantic-graph V2 deliberately dropped its own persistence (`pydantic_graph.persistence` removed) and delegated durability to Temporal; Monty provides the sandbox-internal equivalent via interpreter-level snapshots at host-function barriers
+- Diagrams remain useful as documentation, not execution: "Draw graphs... Do not execute them."
+
+Full analysis: [[concepts/code-as-graph]]. Source: [[raw/articles/2026-10-13_samuelcolvin_the-code-is-the-graph]]
 
 ## Key Projects
 
@@ -194,7 +206,7 @@ Angel investor in Pydantic's seed round. Cramer's experience building developer 
 
 ## Related Wiki Pages
 
-- **Concepts**: [[concepts/code-mode]], [[concepts/harness-engineering]], [[concepts/structured-outputs]], [[concepts/ai-observability]], [[concepts/capabilities-based-security]]
+- **Concepts**: [[concepts/code-mode]], [[concepts/harness-engineering]], [[concepts/structured-outputs]], [[concepts/ai-observability]], [[concepts/capabilities-based-security]], [[concepts/code-as-graph]], [[concepts/durable-execution]], [[concepts/graph-engineering]]
 - **Entities**: [[concepts/alex-hall]] (Python Dev at Pydantic, Logfire), [[concepts/david-montague]] (CTO, Pydantic), [[concepts/douwe-maan]] (Pydantic AI Lead),  (FastAPI),  (Zapier, angel investor)
 - **Technologies**: [[concepts/pydantic]], [[concepts/monty-sandbox]], [[concepts/logfire]], [[concepts/pydantic-ai]]
 
@@ -212,3 +224,4 @@ Angel investor in Pydantic's seed round. Cramer's experience building developer 
 - [GitHub: pydantic/monty](https://github.com/pydantic/monty)
 - [GitHub: pydantic/monty PR #500 — Move execution to a subprocess pool](https://github.com/pydantic/monty/pull/500)
 - [LinkedIn: Samuel Colvin](https://linkedin.com/in/samuel-colvin-5383251b8)
+- [[raw/articles/2026-10-13_samuelcolvin_the-code-is-the-graph]] — "The code IS the graph" (Oct 13, 2026). X Article.

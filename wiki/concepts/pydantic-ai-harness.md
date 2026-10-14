@@ -202,6 +202,7 @@ Samuel Colvin's design philosophy: *"Start from nothing, then selectively grant 
 
 ## See Also
 
+- [[concepts/code-as-graph]] — Colvin's thesis realized in this harness: sub-agents as async functions, orchestrator writes choreography via one `run_workflow` tool, Temporal replays the model-written script
 - [[concepts/pydantic-ai]] — Core Pydantic AI framework
 - [[concepts/monty-sandbox]] — Secure Python sandbox (Rust-based)
 - [[concepts/logfire]] — Observability and tracing

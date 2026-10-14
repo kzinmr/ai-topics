@@ -110,6 +110,7 @@ Harrison Chase's [living comparison spreadsheet](https://docs.google.com/spreads
 
 ## Related Concepts
 
+- [[concepts/code-as-graph]] — Samuel Colvin's critique positions LangGraph as the "parallel + snapshotted but untyped merge" vertex of his typed/snapshotted/parallel impossibility triangle: reducers make concurrent state writes work but move the merge semantics outside type-checking reach (Oct 2026)
 - [[entities/langchain]] — Parent company and ecosystem
 - [[entities/harrison-chase]] — Creator and LangChain CEO
 - [[concepts/human-in-the-loop]] — Human-AI interaction patterns LangGraph enables

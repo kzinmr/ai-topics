@@ -134,6 +134,7 @@ Programmatic Tool Calling (API mechanism)
 
 ## Related Concepts
 
+- [[concepts/code-as-graph]] — Monty is the execution layer for Colvin's code-as-graph thesis: with no OS resources held inside the interpreter, every pause point is a host-function barrier where the whole interpreter (heap + call stack) snapshots as a coherent few-KB value — the barrier graph libraries couldn't find
 - [[concepts/programmatic-tool-calling]] — The higher-level concept Monty was designed for: an API mechanism where LLMs write code to call tools
 - [[concepts/code-execution-with-mcp]] — An architecture pattern treating MCP as a code API, with Monty as its execution foundation
 - [[concepts/code-mode]] — PydanticAI's CodeMode feature powered by Monty
