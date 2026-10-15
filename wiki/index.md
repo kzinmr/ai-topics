@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3236
-> Last updated: 2026-10-14
+> Total pages: 3239
+> Last updated: 2026-10-15
 
 ## Entities (941 pages)
 
@@ -2259,7 +2259,7 @@
 - [[concepts/learning-to-rank]] — Learning to Rank
 - [[concepts/legacy-behavioral-parity]] — Legacy Behavioral Parity — independently approved obligations, material-field comparator, state/effects and falsifiable acceptance
 - [[concepts/legacy-code-seams]] — Legacy Code Seams — enabling points, injected recorder example, separation/sensing and real-integration limits
-- [[concepts/legacy-modernization-moc]] — Legacy Modernization — account-free study/exercise entrance and concept map for both delivery loops
+- [[concepts/legacy-modernization-moc]] — Legacy Modernization — study/exercise entrance, concept map for both delivery loops, V-model strategy and pilot playbook
 - [[concepts/lexical-search]] — Lexical Search
 - [[concepts/linear-agent-code-intelligence]] — Linear Agent Code Intelligence
 - [[concepts/linear-walkthroughs]] — Linear Walkthroughs
@@ -3227,7 +3227,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (28 pages)
+## Queries (30 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
@@ -3249,6 +3249,8 @@
 - [[queries/modernization-outer-loop-study-notes]] — Modernization Outer-loop — preserved first-pass scope of eight works, proposed applications and subsequent deeper-reading route
 - [[queries/modernization-reading-continuation]] — Modernization — deeper selected-section reading across the 14 priorities, actual coverage and resulting standalone concepts
 - [[queries/modernization-reading-guide]] — Codex Enterprise Modernization Reading Guide — purpose-based navigation to inner-loop project execution and outer-loop process design; topic map, reading approach and selection principles
+- [[queries/modernization-v-model-pilot]] — AI Modernization Pilot — decision ownership, autonomy lanes, acceptance evidence, flow measures and 90-day expansion decisions
+- [[queries/modernization-v-model-strategy]] — AI Modernization and the V Model — diagnose shoulder effort, reuse approved intent and independent acceptance, control queues and measure whole-flow economics
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
 - [[queries/test-time-compute-three-axes-2026-09-24]] — Compute-vs-accuracy frontier has 3 axes (sleep-time / test-time / post-peak); benchmarks only measure the middle one
