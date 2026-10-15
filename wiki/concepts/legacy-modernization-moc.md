@@ -1,10 +1,12 @@
 ---
 title: "Legacy Modernization — Map of Concepts"
 created: 2026-10-14
-updated: 2026-10-14
+updated: 2026-10-15
 type: concept
 tags: [concept, knowledge-management, software-engineering, architecture, testing, reliability]
 sources:
+  - queries/modernization-v-model-strategy.md
+  - queries/modernization-v-model-pilot.md
   - https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/ch03.xhtml
   - https://learning.oreilly.com/library/view/practical-process-automation/9781492061441/ch09.html
   - https://learning.oreilly.com/library/view/evals-for-ai/9798341660717/ch03.html
@@ -21,6 +23,8 @@ related: [concepts/characterization-testing, concepts/legacy-code-seams, concept
 Navigate the foundations behind [[concepts/enterprise-legacy-modernization]]. Project execution follows [[queries/modernization-inner-loop-reading]]: observe, agree, replace incrementally, verify, constrain and release. The reusable delivery method follows [[queries/modernization-outer-loop-reading]]: maintain knowledge, assetize transformations, control execution, evaluate changes and enforce action/artifact boundaries.
 
 For learning without an O'Reilly account, start with [the concept study guide](../queries/modernization-independent-study-guide.md), then [the integrated exercise](../queries/modernization-batch-example.md). [The review](../queries/modernization-independent-reading-review.md) and [reading continuation](../queries/modernization-reading-continuation.md) distinguish standalone concept coverage from full-book reading.
+
+For rising requirements, design and verification effort despite faster implementation, use [[queries/modernization-v-model-strategy|the V-model strategy]] and [[queries/modernization-v-model-pilot|the pilot playbook]]. They connect both loops to reusable decisions, independent acceptance, controlled work in progress and whole-flow cost measurement.
 
 ## Establish evidence and intended behavior
 
