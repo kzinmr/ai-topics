@@ -1,3 +1,10 @@
+## [2026-10-15] watchdog | Orphan index registration (5 real orphans)
+- Registered 5 previously-unindexed Layer 2 pages into `index.md` (alphabetical, bottom-up):
+  - `entities/popcar`, `entities/third-moment-research`
+  - `concepts/llm-decompilation-and-software-recovery`, `concepts/outer-harness`, `concepts/openai/gpt-5-6-codex-model-card-2026`
+- 2 remaining digest orphans (`concepts/gpt/_archive/2026-04-24-ainews`, `...-news-aggregation`) intentionally excluded — `_archive/` is not indexed per convention.
+- index.md already structurally clean (validate_index exit 0; 0 pipe/line-number/triple-bracket/space corruption). Header counts bumped: Total 3239→3244, Entities 942→944, Concepts 2196→2199.
+
 # Wiki Operation Log
 
 Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved the complete preceding active log in an already-published immutable Git snapshot indexed by the annual archive.
@@ -75,3 +82,9 @@ Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved
 - Existing raw/transcripts, guide selections and prior log text are preserved. Validation and publication results follow.
 - Validation passed: required metadata/canonical tags, local source/provenance references, all edited-page wikilinks and relative Markdown links, at least two outbound links, English content/slugs, section counts, alphabetical query insertion, page lengths (163/147/70), original hub lines and exact prior log prefix. Existing raw/transcripts have no diff. Arithmetic examples (effort shares, fee rounding and setup amortization) were recomputed. Index validation, all repository pre-commit checks and staged whitespace checks passed for five files. This validates the documentation artifact; no production migration or savings experiment was performed.
 - Publication: pushed report commit `b6d9cb71d2398969978153a111b11fdbdf03ea6c` to `origin/codex/modernization-v-model-strategy` and created [PR #6](https://github.com/kzinmr/ai-topics/pull/6) against `main`, as explicitly requested. PR describes the evidence scope, strategy/pilot deliverables and validation; no merge or deployment performed. This appended publication record is included in the same PR.
+
+## [2026-10-15] query | Hot-post late-night 01:30 — Merge's four-stage context maturity ladder
+
+- Delivered late-night (niche/high-signal) hot-post on `concepts/harness-engineering/context-engineering.md` §"The Context Maturity Ladder (Merge, 2026-10)" + `raw/articles/2026-10-14_merge-context-engineering-company-wide.md`. Core: context engineering reframed as system design (not prompt writing); four maturity stages each with a distinct ceiling (Prompt / Knowledge Base / Learning Loop / Company-Wide Context Engine); capability-ceiling boundary claim (arXiv:2604.21792); four organizational-memory layers (instructs/skills/malleable memory/semantic search); "answers that survive the model" as the maturity test.
+- Cross-refs: reduce-offload-isolate, agents-self-improvement-learning, scion-anthropic-version-control (contrast: context ceiling vs infra throughput). Dedup check: no wikilink reused from 10-14 morning (lint-rules/SmithDB), 10-14 night (Scion/code-as-graph/graph-engineering), 10-15 morning (Modal RL).
+- No wiki content pages created or modified (report only). Index count unchanged.
