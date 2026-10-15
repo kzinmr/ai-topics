@@ -3,7 +3,7 @@ title: Daniel van Strien
 type: entity
 handle: "@vanstriendaniel"
 created: 2026-04-10
-updated: 2026-09-15
+updated: 2026-10-15
 tags:
   - person
   - model
@@ -19,7 +19,9 @@ sources:
   - raw/articles/2024-01-24_hamel-husain_creating-curating-cleaning-data-for-llms
   - raw/articles/2026-08-19_vanstriendaniel_bl-book-images-crop-search.md
   - raw/articles/2026-08-25_vanstriendaniel_britannica-illustrated-pages.md
+  - raw/articles/2026-10-02_huggingface.co_jobs-training.md
   - https://huggingface.co/spaces/davanstrien/historical-illustration-search
+  - https://huggingface.co/docs/hub/jobs-training
 ---
 
 ## Related Entities
@@ -120,6 +122,7 @@ Daniel has been a vocal advocate for **community evals** over black-box leaderbo
 
 | Date | Title | Topic |
 |------|-------|-------|
+| Oct 2026 | **Train Models on Jobs — new HF docs page** (X, Oct 2) | New official Hugging Face Jobs docs page covering fine-tuning/training via `hf jobs uv run` / `hf jobs run` across **Transformers, TRL, Unsloth, Axolotl, Diffusers**. Each example is capped to a smoke run finishing in minutes on a single A10G for ~$0.10. Covers the anatomy of a training Job (uv script vs Docker image, `-s HF_TOKEN`, `--flavor`, `--timeout`, `--` separator), pre-run checks (smoke test, disk fit, step-rate time estimate, per-GPU launch, pinning), detach/logs/wait lifecycle, and output persistence via `--push_to_hub` or mounted Storage Buckets. Ends with "Use Jobs from a coding agent: the hf CLI skill lets Claude Code, Codex and Cursor launch and watch these runs for you" — the agent-first framing Daniel has pushed throughout 2026. 🔗 [docs](https://huggingface.co/docs/hub/jobs-training) |
 | Sep 2026 | **Historical Illustration Search — 1.49M illustrations, one search** (X, Sep 11 & 15) | HF Space `davanstrien/historical-illustration-search`: unified semantic search over British Library + Britannica collections (1.49M illustrations, 1500s–1920s). Find similar images, download full-resolution images or transparent PNG cutouts with source links. Exposes an **API for agents** — demoed an agent autonomously finding and downloading a public-domain 1823 whale engraving (with source link) for a DeepSeek blog post, no image generation needed. |
 | Aug 2026 | **115K Britannica illustrated pages (1768–1929)** (X, Aug 25) | `biglam/britannica-illustrated-pages` dataset — 115,293 illustrated pages from Encyclopaedia Britannica 1st (1768) to 14th (1929) edition, public domain, on the HF Hub |
 | Aug 2026 | **1M British Library book images: crop-tightening model + semantic search** (X, Aug 18–19) | `biglam/british-library-book-images` dataset (1M public-domain book images, `crop_masks` config); RF-DETR segmentation model `bl-crop-tighten-rfdetrseg-clip10` distilled from weak labels — zero human annotations, $3.24 GPU for the full corpus; `davanstrien/bl-images-search` Space for text-to-image semantic search with clean cutouts |

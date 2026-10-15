@@ -3,7 +3,7 @@ title: Hugging Face
 type: entity
 aliases: [HuggingFace, HF]
 created: 2026-04-24
-updated: 2026-09-16
+updated: 2026-10-15
 status: active
 tags:
   - company
@@ -17,6 +17,7 @@ linkedin: https://www.linkedin.com/company/hugging-face
 twitter: https://x.com/huggingface
 github: https://github.com/huggingface
 sources:
+  - https://huggingface.co/docs/hub/jobs-training
   - https://huggingface.co/about
   - https://en.wikipedia.org/wiki/Hugging_Face
   - https://observer.com/2026/02/hugging-face-monetization-chief-jeff-boudier-business-model
@@ -26,6 +27,7 @@ sources:
   - https://huggingface.co/blog/hf-cli-for-agents
   - https://huggingface.co/blog/hf-skills-training
   - https://github.com/huggingface/skills
+  - https://huggingface.co/docs/hub/jobs-training
   - https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8
 ---
 
@@ -147,6 +149,10 @@ In June 2026, Hugging Face published details of the [[concepts/coding-agents/hf-
 ## Hugging Face Skills (2026)
 
 The [[concepts/huggingface-skills|Hugging Face Skills]] repository ([github.com/huggingface/skills](https://github.com/huggingface/skills)) provides 16 standardized agent skill definitions for AI/ML tasks — model training, dataset management, evaluation, deployment. Skills follow the open [Agent Skills](https://agentskills.io) standard and are compatible with Claude Code, Codex, Gemini CLI, and Cursor. The flagship `hf-llm-trainer` skill enables coding agents to handle the full model fine-tuning lifecycle (SFT, DPO, GRPO) through natural language, submitting jobs to HF Jobs cloud GPU infrastructure with Trackio monitoring. Skills are also available via Cursor Marketplace and Codex Plugins Directory.
+
+## Train Models on Jobs docs (Oct 2026)
+
+In early October 2026 Hugging Face published a dedicated **"Train Models on Jobs"** page in the Hub docs ([docs/hub/jobs-training](https://huggingface.co/docs/hub/jobs-training)), consolidating how to fine-tune/train on Jobs via `hf jobs uv run` (PEP 723 uv scripts) or `hf jobs run` (library Docker images) across **Transformers, TRL, Unsloth, Axolotl, and Diffusers**. Every documented example is capped to a smoke run completing in minutes on a single A10G for ~$0.10, then scaled up (e.g. full Food-101 fine-tune ≈ $1, Capybara SFT ≈ 2h20m). The page codifies the Job anatomy (`-s HF_TOKEN` secrets, `--flavor`/`--timeout`, the `--` argument separator), pre-run checks (smoke test, disk-fit, step-rate time estimates, per-GPU launch via `accelerate launch`, pinning script URLs/image tags), the detach → `hf jobs logs -f` → `hf jobs wait` lifecycle, and output persistence via `--push_to_hub` or a mounted Storage Bucket. It closes by pointing at the `hf` CLI skill so Claude Code / Codex / Cursor can launch and watch runs — making cloud fine-tuning an agent-operable primitive. Highlighted on X by HF's Daniel van Strien (2026-10-02).
 
 ## Exit / Acquisition by NVIDIA at $13B+ (Aug 2026)
 

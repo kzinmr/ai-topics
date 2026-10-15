@@ -1,3 +1,10 @@
+## [2026-10-15] x-accounts-scan | Train Models on Jobs docs (Daniel van Strien)
+- Source: @vanstriendaniel tweet 2105944120405512539 (2026-10-02) linking https://huggingface.co/docs/hub/jobs-training
+- Saved raw article `raw/articles/2026-10-02_huggingface.co_jobs-training.md` (curl scrape; Jina blocked by HF rate limit)
+- Updated `entities/daniel-van-strien.md`: new Blog/Recent Posts row + source entries
+- Updated `entities/hugging-face.md`: new "Train Models on Jobs docs (Oct 2026)" section + source
+- Updated `index.md` entries for both pages
+
 ## [2026-10-15] watchdog | Orphan index registration (5 real orphans)
 - Registered 5 previously-unindexed Layer 2 pages into `index.md` (alphabetical, bottom-up):
   - `entities/popcar`, `entities/third-moment-research`
