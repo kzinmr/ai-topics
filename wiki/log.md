@@ -3,6 +3,13 @@
 Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved the complete preceding active log in an already-published immutable Git snapshot indexed by the annual archive.
 
 
+## [2026-10-15] query | Hot-post morning 09:30 — Modal mixed-precision/mixed-accelerator RL
+
+- Morning slot (sharpest narrative arc). Framed as the cost-structure counterpart to the two Oct-13 posts already covered on 10-14: while [[entities/scion-anthropic-version-control]] + [[concepts/code-as-graph]] moved the scarce resource out of code-writing, Modal's same-day post attacks the *money* term — sampling = 80–85% of GPUs in large RL runs, historically left un-optimized because samplers must stay numerically close to the trainer. Post carries the concrete setup (Qwen3.6-35B-A3B, 2.7K MiMo-V2.6 repo tasks, 256K context, 6 accelerator kinds B200/B300 NVFP4 → A100/RTX PRO 6000 BF16, FP8 KV cache, SWE-bench Pro V2 + HARD-51, Miles/SGLang/Megatron-LM) plus the 3-piece stability stack (masked importance sampling, score centering, top-p mask replay) and the vendor-claim caveat (no numbers disclosed → `confidence: medium` already set on the page).
+- All 9 wikilinks verified to resolve before delivery: `concepts/mixed-precision-mixed-accelerator-rl`, `concepts/post-training/on-policy-vs-off-policy-rl`, `concepts/post-training/grpo-infrastructure`, `concepts/post-training/grpo-rl-training`, `concepts/nvfp4-4bit-floating-point`, `concepts/inference/sglang`, `concepts/mimo-v2-6-scaling-rl-self-improvement`, `concepts/harness-engineering/agent-serverless`, `concepts/durable-execution`.
+- No wiki content pages created or modified (report only). Index count unchanged (3238). Dedup check: no `[[wikilink]]` reused from the 10-14 morning (lint-rules/SmithDB) or night (Scion/code-as-graph/graph-engineering) posts.
+
+
 ## [2026-10-14] query | Night hot-post: "coding is no longer scarce" (Scion + code-as-graph)
 
 - 21:30 JST night slot, contrarian angle. Synthesized [[entities/scion-anthropic-version-control]] + [[concepts/code-as-graph]] + [[concepts/graph-engineering]] into one reflective post: both fresh Oct 13–14 sources converge on the claim that code-writing stopped being the scarce resource, so the scarce resource moved to the infrastructure around it (Scion: merge 2.5K→30K/day, git broke at ~25M CI checkouts/day → >600 PB git traffic; Colvin: fixed pre-authored graphs are "a prompt with extra steps" once agents write orchestration at runtime). No wiki pages created — answer not worth filing (single-post synthesis, low re-derivation cost). No index count change.
