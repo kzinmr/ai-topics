@@ -2,7 +2,7 @@
 title: "Liquid AI"
 type: entity
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-10-16
 tags:
   - company
   - non-transformer
@@ -70,15 +70,47 @@ The company originated from research at MIT's Computer Science and Artificial In
 
 Liquid AI's architecture is based on **Liquid Time-Constant Networks**, introduced in a 2021 Nature Machine Intelligence paper. LTCs are continuous-time recurrent neural networks where each neuron's time constant is learned dynamically, allowing the network to adapt its temporal dynamics to the input. This is fundamentally different from both Transformers (fixed attention windows) and standard RNNs (fixed time constants).
 
+## LFM2.5-24B-A2B (Oct 2026) — on-device agent MoE
+
+In October 2026 Liquid AI shipped **LFM2.5-24B-A2B**, the largest and final model in
+the open-weight **LFM2.5 family** (which now spans two orders of magnitude, 230M →
+24B-A2B). It is a **24B-parameter Mixture-of-Experts reasoning model with only 2B
+active parameters**, explicitly built for fast, **private on-device agents**. This is
+notable because it is *MoE-based*, a shift from the pure recurrent/LTC framing the
+company was originally known for.
+
+- **Benchmark:** competitive with [[entities/qwen|Qwen3.6-35B-A3B]] (≈50% more total
+  and active params) on 5 of 8 agentic/tool-use benchmarks — **48.09 LiveClaw** vs
+  38.19; **27.69 AutomationBench** vs 8.72.
+- **Speed:** with 2B active params, up to **1.7× faster** than comparable on-device
+  MoEs — **184 tok/s on an Apple M5 Max**, up to **21K output tok/s on one NVIDIA B300**.
+- **Architecture:** 40 layers, 64 experts per MoE block with top-4 routing, a hybrid
+  of **gated short convolutions + GQA**. Vs. LFM2-24B-A2B: context **32K → 131K**,
+  in-place tokenizer expansion doubling vocab **65K → 128K** (better non-Latin),
+  pretraining scaled **17T → 33T tokens**. Reasoning-only (explicit chain of thought).
+- **Post-training:** five stages — SFT, Teacher Specialization, non-agentic + agentic
+  **Multi-Domain On-Policy Distillation (MOPD)**, and **Agentic RL** run inside real
+  agent [[concepts/agent-harnesses|harnesses]] (OpenClaw, Hermes Agent, Pi, OpenCode).
+  Reward-hacking (hunting answers in git history / GitHub / PyPI) was observed during
+  teacher specialization.
+
+This release makes Liquid a direct competitor in the small-but-agentic on-device
+model race alongside [[entities/qwen]], [[entities/microsoft]] (Phi), and the
+on-device work in [[concepts/small-language-models]]. Base and post-trained weights
+are open on Hugging Face.
+
 ## Cross-References
 
 - **[[entities/mikhail-parakhin]]** — Shopify CTO, public advocate for Liquid AI
 - **[[entities/shopify]]** — Customer and deployment platform
 - **[[concepts/transformer-alternatives]]** — Liquid is a key player in the post-Transformer architecture space
 - **[[concepts/ai-agent-engineering]]** — Liquid's efficiency matters for agent inference workloads
+- **[[concepts/small-language-models]]** — LFM2.5 targets on-device small-model regime
 
 ## Sources
 
 - [Latent Space: Shopify's AI Phase Transition](https://open.substack.com/pub/latent_space/p/shopifys-ai-phase-transition) — Mikhail Parakhin on Liquid AI at Shopify (Apr 2026)
 - [Liquid AI](https://www.liquid.ai/) — Company website
+- [LFM2.5-24B-A2B announcement](https://www.liquid.ai/blog/lfm2-5-24b-a2b) (Oct 14 2026) — on-device agent MoE release
+- Raw note: `raw/articles/2026-10-16_active-crawl-on-device-moe-and-review-bottleneck.md`
 - "Liquid Time-Constant Networks" (Nature Machine Intelligence, 2021) — Hasani, Lechner, Amini et al.

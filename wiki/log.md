@@ -1,3 +1,25 @@
+## [2026-10-16] ingest | active-crawl — on-device agent MoE + code-review bottleneck + agent observability
+
+Evaluated ~25 gap candidates against 3244 existing pages. Confirmed-covered and skipped:
+LLM decompilation (momo5502 FPS, `concepts/llm-decompilation-and-software-recovery`),
+Jev decision models (`concepts/jev-pattern`), "more code not software" theme
+(`concepts/ai-coding-effectiveness-debate`), on-device/edge/SLM/MoE hubs. Created 3 NEW
+research-grade pages from genuinely uncovered material:
+- Created `concepts/code-review-bottleneck.md` — Harvard (Chen & Stratton) / Jellyfish
+  study: 300M work events, 700 firms; AI agents +30% LOC / +20% commits / +23% PRs but
+  ≈no software-output or headcount gain; gains absorbed by human code-review bottleneck.
+- Created `concepts/multi-agent-session-observability.md` — supervising parallel coding
+  agents; Agent Standup's zero-token transcript-parsing model.
+- Created `entities/agent-standup.md` — HN 217p; live who-waits-on-whom view over
+  Claude Code / Codex / Mistral Vibe sessions.
+- Updated `entities/liquid-ai.md` — appended LFM2.5-24B-A2B (Oct 14 2026): 24B-MoE / 2B
+  active open-weight on-device agent model; 184 tok/s on M5 Max; MOPD + Agentic RL.
+  Bumped `updated`. (Non-destructive append; pre-existing `transformer-alternatives`
+  wikilink is stale — left for lint.)
+- Raw note: `raw/articles/2026-10-16_active-crawl-on-device-moe-and-review-bottleneck.md`
+  (sha256 90301c1…).
+- Index: +3 entries (entities 944→945, concepts 2199→2201, total 3244→3247).
+
 ## [2026-10-16] blog-ingest | 19 raw articles saved (16 scraped + 3 OpenAI RSS-fallback)
 
 - Scan: 29 new articles detected across tracked feeds; 20 candidates, 16 saved by `blog_ingest.py`.

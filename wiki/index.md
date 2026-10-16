@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3239
-> Last updated: 2026-10-15
+> Total pages: 3247
+> Last updated: 2026-10-16
 
-## Entities (941 pages)
+## Entities (945 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -23,6 +23,7 @@
 - [[entities/agentcraft]] — AgentCraft
 - [[entities/agentmemory]] — agentmemory
 - [[entities/agentsview]] — AgentsView
+- [[entities/agent-standup]] — Agent Standup — open-source, zero-token tool that turns concurrent Claude Code/Codex/Mistral Vibe sessions into a live who-waits-on-whom team-call view (Oct 2026)
 - [[entities/agi-bot]] — AgiBot — Shanghai humanoid robotics co. (founded 2023, ex-Huawei); A2/G2 robots, 5,168 units shipped 2025, GO-1 embodied foundation model
 - [[entities/agibot-10000-units]] — Agibot 10000 Units
 - [[entities/agno]] — Agno — Open-source agent platform SDK and runtime (AgentOS); model/framework/cloud agnostic; multi-user sessions, RBAC, tracing (June 29)
@@ -165,6 +166,7 @@
 - [[entities/claude-code--architecture]] — Claude Code — Architecture
 - [[entities/claude-code--capabilities]] — Claude Code — Capabilities & Features
 - [[entities/claude-code--history]] — Claude Code — Development History
+- [[entities/claude-haiku-5-5]] — Claude Haiku 5.5 (Anthropic, Oct 2026) — small frontier model; Anthropic claims it beats GPT-6 Luna at the same pricing
 - [[entities/clay-bavor]] — Clay Bavor — Co-founder of Sierra, former Google VP of AR/VR; Google Cardboard, Daydream, Project Starline
 - [[entities/clefourrier]] — Clémentine Fourrier
 - [[entities/clefourrier--core-ideas]] — Clémentine Fourrier — Core Ideas & Philosophy
@@ -208,7 +210,7 @@
 - [[entities/daniel-kim-cerebras]] — Daniel Kim (@learnwdaniel) — Head of Growth at Cerebras; co-author of Cerebras Knowledge Base
 - [[entities/daniel-miessler]] — Daniel Miessler
 - [[entities/daniel-tunkelang]] — Daniel Tunkelang
-- [[entities/daniel-van-strien]] — Daniel van Strien; British Library 1M book-image pipeline (Aug 2026): weak-label-distilled RF-DETR crop model ($3.24 GPU, zero human annotations) + semantic search Space
+- [[entities/daniel-van-strien]] — Daniel van Strien; ML Librarian at HF — weak-label GLAM pipelines, UV scripts for agents; Oct 2026: new HF "Train Models on Jobs" docs page (Transformers/TRL/Unsloth/Axolotl/Diffusers, ~$0.10 A10G smoke runs, agent-operable via hf CLI skill)
 - [[entities/danlark-org]] — Daniel Kutenin (danlark) — Search infrastructure engineer (ex-Yandex, Google); C++ performance, algorithms, and large-scale systems blog; Telegram Data Clustering Contest 3rd place write-up (fastText/CLD2/HNSW news aggregator)
 - [[entities/daringfireball-net]] — Daring Fireball (John Gruber); Anthropic Text Watermarking Criticism (Aug 2026: "a perversion of writing", semantic word choice degradation, EU regulation overreach, Declaude circumvention)
 - [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)
@@ -392,7 +394,7 @@
 - [[entities/hoeem]] — X/Twitter creator (169K+ followers) and publisher of the Seven c Newsletter, a long-running cryptocurrency education ...
 - [[entities/howdymary]] — mary
 - [[entities/hp-inc]] — HP Inc. — Hardware company; launched Frontier strategic partnership with OpenAI (June 2026) to deploy AI across customer experiences, software development, and enterprise operations (June 30)
-- [[entities/hugging-face]] — Hugging Face — "GitHub of AI"; **NVIDIA acquisition at $13B confirmed (Aug 27)**; July 2026 OpenAI agent breach; open-weight distribution rail
+- [[entities/hugging-face]] — Hugging Face — "GitHub of AI"; **NVIDIA acquisition at $13B confirmed (Aug 27)**; July 2026 OpenAI agent breach; Oct 2026 "Train Models on Jobs" docs (agent-operable cloud fine-tuning)
 - [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson — Independent AI educator; host of Vanishing Gradients podcast and Show Us Your Agent Skills YouTube series; writes on AI-assisted coding and agent engineering (June 27)
 - [[entities/humanlayer]] — HumanLayer (humanlayer.dev)
 - [[entities/hynek-schlawack]] — Hynek Schlawack
@@ -685,6 +687,7 @@
 - [[entities/pointer]] — Pointer
 - [[entities/pointer-ai]] — Pointer AI — computer-use agent company; OSWorld SOTA 83.6% (Opus 4.7) vs human 72.4%; Feasibility Gate/Planner/Executor harness, open-sourced May 2026
 - [[entities/polar-prorl-agent-server]] — Polar (ProRL-Agent-Server)
+- [[entities/popcar]] — Popcar
 - [[entities/poolside]] — Poolside — Foundation model lab focused on agentic coding models; Laguna M.1 (Apache 2.0), Laguna XS.2 (open-weight), Laguna S 2.1 (118B MoE/8B active, Jul 2026), Model Factory (10K-20K experiments/month, Blender streaming data, zero call events, YOLO-to-rigor); open-weights as default commitment (enriched Jul 28)
 - [[entities/portkey]] — Portkey
 - [[entities/pratik-bhavsar]] — Pratik Bhavsar
@@ -855,6 +858,7 @@
 - [[entities/thin-bi-tool]] — The trend of BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools...
 - [[entities/thinking-machines-lab]] — Thinking Machines Lab — AI company building decentralized, customizable models; creators of Inkling (975B-A41B MoE multimodal Apache 2.0, Intelligence Index 41)
 - [[entities/thomas-capelle]] — Thomas Capelle
+- [[entities/third-moment-research]] — Third Moment Research
 - [[entities/thomas-dohmke]] — Thomas Dohmke — Former GitHub CEO, HockeyApp co-founder, founder/CEO of Entire
 - [[entities/thomas-wiecki]] — Thomas Wiecki
 - [[entities/thorsten-ball]] — Thorsten Ball
@@ -949,7 +953,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2195 pages)
+## Concepts (2201 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1033,6 +1037,7 @@
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Agentic Engineering Cognition Devin Multi Agents Orchestration
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering Cognition Devin Workflow
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns
+- [[concepts/agentic-software-factory-hierarchy-of-needs]] — Agentic Software Factory Hierarchy of Needs — layered requirements for autonomous software factories (harness → context → verification → autonomy)
 - [[concepts/ai-bubble-financial-crisis]] — AI bubble financial crisis — Von Krogh's 2028 simulation of AI capex-bubble burst → private-credit mark-to-market → middle-market lending freeze (HN 447pts); Harsesian rebuttal (labor displacement ≠ credit event), Anthropic CEO's policy critique; GPT-5.5-Cyber cross-border incident and Redwood institutions-failure sidebars
 - [[concepts/ai-code-provenance-in-open-source]] — AI Code Provenance in Open Source — How OSS projects establish/enforce lineage of AI vs human contributions: OpenJDK's interim ban + Skara PR attestation checkbox, Rust disclosure model, why detection is "impossible" so projects substitute attestation; legal exposure predicts strictness (Sep 2026)
 - [[concepts/ai-coding-effectiveness-debate]] — AI Coding Effectiveness Debate — If Coding Has Been Solved, Why Does Software Keep Getting Worse? — The paradox of powerful AI coding agents coexisting with declining software quality; code generation vs. code quality distinction; productivity vs. quality metrics; ptrchm essay (July 2026, HN #2, 878pts)
@@ -1571,6 +1576,7 @@
 - [[concepts/code-intelligence-for-llms]] — The practice of providing LLMs with structured, pre-computed code analysis data rather than raw source files. Cuts to...
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
 - [[concepts/code-review]] — code-review
+- [[concepts/code-review-bottleneck]] — Code Review Bottleneck — Harvard/Jellyfish study: AI agents +30% LOC/+23% PRs but no more software shipped; gains absorbed by human review (Oct 2026)
 - [[concepts/code-search-indexing]] — Code Search Indexing for Agent Tools — inverted-index techniques (n-gram/trigram/sparse n-gram) so agent grep/regex lookups skip full scans; Cursor client-side "instant grep" research (Mar 2026)
 - [[concepts/codeless-software]] — codeless-software
 - [[concepts/codex-logging-bug]]
@@ -2278,6 +2284,7 @@
 - [[concepts/llm-core]] — Large language model architecture, training, and research.
 - [[concepts/llm-cost-crisis]] — LLM Cost Crisis / Tokenpocalypse — spiraling inference costs from premium models, agent multiplicative consumption, and organizational proliferation
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
+- [[concepts/llm-decompilation-and-software-recovery]] — LLM Decompilation and Software Recovery — AI-assisted binary-to-source recovery for game preservation and clean-room reimplementation (controversial)
 - [[concepts/llm-creative-writing]] — LLM Creative Writing
 - [[concepts/llm-development-paradigm]] — LLM Development Paradigm
 - [[concepts/llm-echo]] — llm-echo
@@ -2467,6 +2474,7 @@
 - [[concepts/multi-agents/multi-agent-research-system]] — Multi-Agent Research System (Anthropic)
 - [[concepts/multi-agents/multi-agent-rl]] — Multi-Agent RL for Embodied AI
 - [[concepts/multi-agents/multi-agent-systems]] — Multi-Agent Systems — Anthropic empirical failure modes: collusion/sabotage (Aug 2026)
+- [[concepts/multi-agent-session-observability]] — Multi-Agent Session Observability — supervising a fleet of parallel coding agents; Agent Standup's zero-token transcript-parsing model (Oct 2026)
 - [[concepts/multi-agents/multi-agents-cognition-devin-orchestration]] — Multi Agents Cognition Devin Orchestration
 - [[concepts/multi-agents/multi-agents-whats-actually-working]] — Multi-Agents: What's Actually Working
 - [[concepts/multi-channel-agents]] — Multi Channel Agents
@@ -2553,6 +2561,7 @@
 - [[concepts/openai/economic-futures-age-of-ai]] — OpenAI Foundation: Economic Futures in the Age of AI
 - [[concepts/openai/enterprise-adoption-patterns]] — OpenAI vs Anthropic Enterprise Adoption Patterns
 - [[concepts/openai/formal-math-publication-2026]] — OpenAI Formal Mathematics Publication Program — 722 Lean 4 papers / 8,290 theorems / 1,563 open problems via GPT-5.6-Codex across ~400,000 worker sessions; DeepMind resolved 677/722; 3 withdrawals + 14 repairs within 24h
+- [[concepts/openai/gpt-5-6-codex-model-card-2026]] — OpenAI GPT-5.6-Codex Model Card (October 2026)
 - [[concepts/openai/frontier-governance-framework]] — OpenAI Frontier Governance Framework
 - [[concepts/openai/how-organizations-use-ai-evidence-from-chatgpt]] — How Organizations Use AI: Evidence from ChatGPT (OpenAI working paper)
 - [[concepts/openai/index]] — OpenAI Platform & APIs
@@ -2588,6 +2597,7 @@
 - [[concepts/ornith-self-scaffolding-llm]] — Ornith-1.0 — DeepReinforce's first open-source self-scaffolding LLM for agentic coding; 4 variants (9B~397B) on Gemma 4/Qwen 3.5; MIT license; verified by Simon Willison (June 30)
 - [[concepts/orthrus-parallel-generation]] — Orthrus (Parallel Token Generation)
 - [[concepts/outcome-based-pricing]] — Outcome-Based Pricing Models for AI Agents
+- [[concepts/outer-harness]] — Outer Harness — Supervising Swarms of Long-Running Agents
 - [[concepts/outcomemaxxing]] — Outcomemaxxing
 - [[concepts/overact-proactive-over-authorization]] — OverACT — Proactive Over-Authorization: LLM tool agents taking irreversible actions beyond their granted authority even under complete specifications; 12 failure modes, 327/500 incident traces; runtime permission broker + ActionSpec (arXiv:2610.01508, Oct 2026)
 - [[concepts/overture-maps-foundation]] — Overture Maps Foundation
