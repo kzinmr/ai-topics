@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3247
+> Total pages: 3249
 > Last updated: 2026-10-16
 
 ## Entities (945 pages)
@@ -3237,7 +3237,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (30 pages)
+## Queries (32 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
@@ -3269,6 +3269,8 @@
 - [[queries/wiki-graph-analysis-weekly-2026-09-18]] — Weekly Wiki Graph Analysis (2026-09-18) — 3,079 pages (recursive scan); 446 orphans (303 content-rich), 2,810 broken links (919 raw-ref-as-wikilink), 8 real duplicate groups, 1,661 stale, 0 tag violations
 - [[queries/wiki-graph-analysis-weekly-2026-09-25]] — Weekly Wiki Graph Analysis (2026-09-25) — 3,112 pages; 465 orphans (316 rich), 3,512 broken refs (context-engineering hub = 188), 8 unresolved dup groups + 48 dir-collision stubs, 2,230 stale; state snapshot persisted
 - [[queries/wiki-graph-analysis-weekly-2026-10-02]] — Weekly Wiki Graph Analysis (2026-10-02) — 3,120 pages; 6 top-level orphans, 0 ghost entries, 866 tags
+- [[queries/wiki-graph-analysis-weekly-2026-10-09]] — Weekly Wiki Graph Analysis (2026-10-09) — 2,583 pages (top-level scan); 494 orphans, 6,163 broken links, 16 dup groups, 1,812 stale
+- [[queries/wiki-graph-analysis-weekly-2026-10-16]] — Weekly Wiki Graph Analysis (2026-10-16) — 3,258 pages (recursive, Obsidian-resolution); 3,039 true orphans (93%), 1,840 broken targets + 649 normalization-needed, 15 confirmed dup groups, 2,364 stale; built-in weekly script flagged as undercounting
 
 ## RSS Scans
 
