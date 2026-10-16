@@ -1,7 +1,7 @@
 ---
 title: "Codex Enterprise Modernization Reading Guide"
 created: 2026-10-13
-updated: 2026-10-14
+updated: 2026-10-16
 type: query
 tags: [query, curated-list, codex, coding-agents, software-engineering, architecture, testing, reliability, security]
 sources:
@@ -43,6 +43,7 @@ I-xxはinner-loop、O-xxはouter-loopの各ガイド・プレイリストのセ�
 | 自動変換とAgentを使い分ける | I-01／I-03：変更の分解、レシピの適用、結果の検証 | O-02：レシピの開発・再利用、Agentの役割と作業契約 |
 | 変更の正しさを評価する | I-03：独立した期待値、動作同等性、性質・契約の検証 | O-04：代表案件、失敗分析、回帰評価、品質ゲート |
 | データ・外部連携を安全に移行する | I-04：互換期間、データ照合、トランザクション、外部契約 | O-03：ジョブ間の相関、重複排除、例外処理 |
+| Restricted intranet integration testing | [[queries/modernization-integration-testing]]: controllable dependencies, verified contracts, actual connectivity and business reconciliation | Reusable scenarios, dependency distribution, provider ownership and evidence from limited access windows |
 | 環境を再現し、切替・回復を確実にする | I-05：旧／新環境、配備、観測、本番受入、回復手順 | O-03：共通の実行環境、状態管理、再試行、承認待ち、停止・再開 |
 | loggingの目的・設計・運用を定める | I-03／I-05／I-06／I-07：対象システムの業務・診断・監査ログ、観測契約、Java実装。[[queries/modernization-java-logging]]を参照 | O-05：Agentの操作、承認、実行結果、成果物の来歴を残す実行証跡 |
 | Java固有のリスクを確認する | I-06：APIの契約、モジュール、並行性、JVM性能 | O-02／O-04：繰り返す変更や検査のレシピ化・評価 |

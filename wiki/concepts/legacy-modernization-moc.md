@@ -1,7 +1,7 @@
 ---
 title: "Legacy Modernization — Map of Concepts"
 created: 2026-10-14
-updated: 2026-10-15
+updated: 2026-10-16
 type: concept
 tags: [concept, knowledge-management, software-engineering, architecture, testing, reliability]
 sources:
@@ -41,6 +41,7 @@ For rising requirements, design and verification effort despite faster implement
 |---|---|
 | [[concepts/incremental-legacy-migration]] | Choose an interception or internal boundary and manage coexistence |
 | [[concepts/legacy-behavioral-parity]] | Compare outputs, state and effects with approved exceptions |
+| [[queries/modernization-integration-testing]] | Test external boundaries when intranet access, data and shared environments are constrained |
 | [[concepts/property-based-testing]] | Explore agreed properties over generated inputs |
 | [[concepts/specification-based-test-design]] | Derive partitions, boundaries, contracts and assertion-strength checks |
 | [[concepts/architectural-fitness-functions]] | Preserve explicit architectural characteristics during change |
