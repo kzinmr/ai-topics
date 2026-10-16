@@ -1,3 +1,11 @@
+## [2026-10-16] blog-ingest | 19 raw articles saved (16 scraped + 3 OpenAI RSS-fallback)
+
+- Scan: 29 new articles detected across tracked feeds; 20 candidates, 16 saved by `blog_ingest.py`.
+- Recovered 3 OpenAI News articles via `openai.com/news/rss.xml` fallback (chronic openai.com 403; bodies are RSS descriptions only, tagged `scrape_status: rss-fallback`): GPT-Rosalind Academic Plan, Study Mode / AI for Educators (Brazilian Portuguese), Sullivan & Cromwell Agreement Analyzer.
+- Skipped: WaPo "Trump's Ballroom" (off-domain, politics).
+- Highlights for triage: Meta Muse Spark Open weights release (Together AI + Modal Day-0 posts; Terminal-Bench 2.1 76.4 / DeepSWE 1.1 60, 1M context — see [[entities/muse-spark]], [[concepts/meta-muse-spark]]); Anthropic quarterly revenue ~$16.8bn ahead of IPO ([[entities/anthropic]]); Sean Goedecke — 2x growth in modestly successful software projects from agentic coding; Construction Physics — How to Train Your Robot (robot data scaling vs Scaling Hypothesis); Pluralistic — digital sovereignty vs AI.
+- Files: `raw/articles/*--{dcec1526,09703f59,aa3e016c,9d177c1d,68a53f80,edc304a2,f5b79830,18270dcc,feb1c9a0,03c74882,f523341a,b5154a4c,5721c5d8,0c4d066d,a044de66,2a0484eb,0d2e925a,eef09eb5,8ec6278a}.md`
+
 ## [2026-10-15] x-accounts-scan | Train Models on Jobs docs (Daniel van Strien)
 - Source: @vanstriendaniel tweet 2105944120405512539 (2026-10-02) linking https://huggingface.co/docs/hub/jobs-training
 - Saved raw article `raw/articles/2026-10-02_huggingface.co_jobs-training.md` (curl scrape; Jina blocked by HF rate limit)
