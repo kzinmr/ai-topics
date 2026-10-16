@@ -1,3 +1,14 @@
+## [2026-10-16] lint | wiki-health-fix — clean, no action
+
+Live re-verification of the 2026-10-16 health digest before acting (skill rule: verify report claims against live state).
+- index.md corruption: pipe=0, triple-bracket=0, line-number=0, space-prefix=0; `validate_index.py` clean (3277 lines).
+- Fresh `wiki_health.py --json`: overview matches digest (entities 943 / concepts 2204 / comparisons 35 / raw 10484 / L2 3182 / skeletons 0).
+- Reported orphans (2) = `concepts/gpt/_archive/2026-04-24-ainews`, `...-news-aggregation` — both `status: stub` under `_archive/`, intentionally not indexed (false positives, per skill).
+- No ghost entries, no orphan_index to register, working tree clean. Nothing auto-fixable; no commit made (would be a no-op).
+- Non-actionable backlog for user: 6545 unreferenced raw articles, 2935 stale pages (>30d), 874 unique tags.
+
+---
+
 ## [2026-10-16] ingest | active-crawl — on-device agent MoE + code-review bottleneck + agent observability
 
 Evaluated ~25 gap candidates against 3244 existing pages. Confirmed-covered and skipped:
