@@ -1,6 +1,11 @@
 ## [2026-10-17] create+update | Trending topics: Scion/Mononoke + Mercor benchmark map
 - Created `entities/sunshowers-rain.md` (Rain / sunshowers.io — ex-Meta Mononoke designer, author of the Scion attribution analysis)
 - Updated `entities/scion-anthropic-version-control.md` — added "Heavily inspired by Mononoke" controversy section (Rain/sunshowers.io 2026-10-14/15, HN 425/253pts), second raw source, LLM-era attribution thesis
+## [2026-10-17] skeleton-enrich-daily: queue empty (4th consecutive run)
+
+Frontmatter-level scan of 942 entity pages + all concept pages: 0 `status: skeleton` markers. Only prose "skeleton" mentions remain (exoskeleton, skeleton repo). No pages modified. Snapshot: [[queries/2026-10-17-skeleton-enrich-empty]].
+
+
 - Updated `entities/mercor.md` — added "Mercor Benchmark Map" section (8.5M US jobs / 27k occupations, benchmarks cover only 18% of US GDP, "every job is 40% automatable")
 - Added raw: `raw/articles/anthropic-scion-mononoke-derived-data-rain-2026-10-14.md`, `raw/articles/mercor-benchmark-map-us-economy-coverage-2026-10-16.md`
 - index.md: enriched Scion entry, added sunshowers entry, count 3251→3252
