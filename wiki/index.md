@@ -4,7 +4,7 @@
 > Total pages: 3254
 > Last updated: 2026-10-18
 
-## Entities (945 pages)
+## Entities (946 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -80,6 +80,7 @@
 - [[entities/arcee-ai]] — Arcee AI
 - [[entities/arena-ai]] — Arena AI
 - [[entities/argilla]] — Argilla
+- [[entities/aspire-nvidia]] — ASPIRE (NVIDIA GEAR Lab, Oct 2026) — self-improving code-as-policy robot manipulation; agent writes/repairs robot control programs from execution feedback + continually growing skill library; open-source (NVlabs/aspire)
 - [[entities/arize]] — Arize AI
 - [[entities/arlan-r]] — Arlan Rakhmetzhanov
 - [[entities/armin-ronacher]] — Armin Ronacher; enriched with "The Coming Loop" essay — harness-level vs agent-level loops, code quality from autonomous looping, software-as-organism metaphor (June 24); "Fast and Hard Code" — LLMs unlock the hard stack (Rust/Zig/eBPF/DWARF/old hardware), agent-optimized fast-and-small projects (Aug 22); "Anger, Anxiety and Agency" — practitioner's emotional framework for AI disruption: anxiety/disorientation over anger, the wrong-villain trap, cost-funneling to large labs, Europe-dependence worry, "stay curious, earn the right to resist" (Aug 24)

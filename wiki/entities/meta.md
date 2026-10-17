@@ -2,7 +2,7 @@
 title: Meta
 type: entity
 created: 2026-04-09
-updated: 2026-08-07
+updated: 2026-10-17
 tags:
   - company
   - model
@@ -187,9 +187,11 @@ GEM represents Meta's production-grade convergence of recommendation systems and
 
 ## Open Source History
 
-Meta pioneered open-source frontier models with the LLaMA series, creating the entire ecosystem of fine-tuned open models (Llama 2, Llama 3, Llama 4). However, **Muse Spark (April 2026)** is closed-source, suggesting a strategic shift. Community concerns:
+Meta pioneered open-source frontier models with the LLaMA series, creating the entire ecosystem of fine-tuned open models (Llama 2, Llama 3, Llama 4). However, **Muse Spark (April 2026)** launched closed-source, suggesting a strategic shift. Community concerns:
 - "rip LLaMA" — departure from open-source tradition
 - Possible two-track strategy: open models for community goodwill, closed models for competitive advantage
+
+**Reversal — Muse Spark Open (October 15, 2026):** Meta released weights for **Muse Spark Open**, an 816B-total / 42B-active MoE with a 1M-token context window, billed as the most capable US open-weight model to date and the first in its class to run on a desktop (two Apple M5 Ultra Mac Studios via MLX). It validates the two-track strategy: closed Muse Spark 1.x for the API tier, open Muse Spark Open + Apache-2.0 [[entities/muse-glimmer|Muse Glimmer]] for community. Notably the weights ship under the **Muse Model License** (limited commercial terms), not a fully permissive license. See [[entities/muse-spark]].
 
 See also: [[concepts/open-source-vs-closed]]
 

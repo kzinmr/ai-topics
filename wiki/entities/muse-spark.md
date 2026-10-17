@@ -2,15 +2,16 @@
 title: Muse Spark
 type: entity
 created: 2026-04-09
-updated: 2026-09-15
+updated: 2026-10-17
 tags:
-  - model
-  - emerging
+ - model
+ - emerging
 aliases:
 - Meta Muse Spark
 sources:
-  - raw/articles/research.meta.ai--blog-introducing-muse-code-and-muse-spark-1-2--9eac21dc.md
-  - raw/articles/2026-09-15_ghuntley_can-we-have-it-both.md
+ - raw/articles/research.meta.ai--blog-introducing-muse-code-and-muse-spark-1-2--9eac21dc.md
+ - raw/articles/2026-09-15_ghuntley_can-we-have-it-both.md
+ - raw/articles/2026-10-17_meta_muse-spark-open.md
 ---
 
 # Muse Spark
@@ -90,9 +91,30 @@ Claude Sonnet 4.6 < Muse Spark < Claude Opus 4.6
 
 When OpenAI soft-launched [[entities/openai-astra|GPT-6 Astra]] on September 3, the Artificial Analysis Intelligence Index put **Astra at 61 points — tied with GPT-5.6 Sol but one point behind Muse Spark 1.3**. Geoffrey Huntley's *"Can we have it both ways?"* critique singles out that index position: Muse Spark 1.3 is a **closed model that is not "substantively better" than Astra** across the evals he ran, yet OpenAI framed Astra as a "big" model and shipped the *open-weight* Luna at the low end instead — so the lab captured the open-source PR benefit **and** the proprietary pricing. Huntley's structural point: the Index — "by most accounts a good benchmark" — can now be **gamed by "a small nudge"**, making it a shaky arbiter for the claims (AGI declarations, "big vs small" framing) that labs hang off it. ^[raw/articles/2026-09-15_ghuntley_can-we-have-it-both.md]
 
+## Muse Spark Open (October 15, 2026)
+
+Meta released the weights for **Muse Spark Open**, billed as *the most capable US open-weight model to date* — finally delivering on the open-source promise the community had grown skeptical of after "rip LLaMA."
+
+| Spec | Value |
+|------|-------|
+| Total parameters | 816B |
+| Active parameters | 42B (MoE) |
+| Context window | 1M tokens |
+| Modality | Natively multimodal |
+| License | Muse Model License (limited commercial terms; free for many developers) |
+
+Key angles:
+
+- **Desktop inference on Apple Silicon.** The first model in its class to run locally on **two Apple M5 Ultra Mac Studios** using the latest MLX framework. Apple's unified memory (up to 512 GB/Mac Studio, 1.2 TB/s bandwidth) lets two machines behave "like one supercomputer with a terabyte of unified memory." Meta demoed on-device agentic workflows via Muse Code — shipping real iOS changes to the open-source Mastodon client *Ice Cubes*, and driving DaVinci Resolve frame-by-frame.
+- **Broad inference-engine support**: SGLang, vLLM, TensorRT-LLM, HF Transformers, Apple MLX, llama.cpp, Unsloth; optimized for AMD, Apple, Intel, NVIDIA. Ships custom auto-tunable **Helion GPU kernels** in SGLang (1.03–3.95× kernel-level speedups, 3% e2e on AMD MI350).
+- **Distribution**: weights on Hugging Face, Amazon SageMaker AI, Google Cloud Model Garden, Microsoft Foundry Models; hosted by Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter, Together AI. Customizable via PyTorch TorchTitan.
+- **Safety framing**: additional safety post-training specifically because weights are open; evaluated against the Meta Superintelligence Scaling Framework and met release thresholds (full evaluation report "coming soon").
+
+This is Meta's strategic answer to the open-weight frontier — an ~1T-class MoE with small active parameters (like [[entities/kimi|Kimi K3]]) but US-made and desktop-runnable. It directly enables the "local-first vs frontier API" economics debate in [[concepts/local-first-vs-frontier-api-economics]], and its restrictive "Muse Model License" is one instance of the [[concepts/open-weights-licensing-tightening]] trend.
+
 ## Open Source Status
 
-Meta has promised open-source availability, but community reaction ("rip LLaMA") suggests skepticism about whether Muse Spark will follow the open-source tradition of the LLaMA series.
+Meta had promised open-source availability, but earlier community reaction ("rip LLaMA") suggested skepticism about whether Muse Spark would follow the open-source tradition of the LLaMA series. **Muse Spark Open (Oct 15, 2026) resolves this** — though under the Muse Model License (limited commercial terms), not a fully permissive license like the LLaMA or Apache 2.0 [[entities/muse-glimmer|Muse Glimmer]] releases.
 
 ## Context
 
@@ -109,6 +131,8 @@ Announced following a year of silence from Meta on model development, and after 
 - [[entities/simon-willison]]
 - [[entities/openai-astra]] — GPT-6 Astra; Muse Spark 1.3 leads it by 1 point on the Artificial Analysis Intelligence Index (61 vs 62)
 - [[concepts/proxies-for-expertise]] — the Index-gaming argument ("a small nudge")
-- [[concepts/inference/llama-cpp]]
+- [[concepts/local-first-vs-frontier-api-economics]] — Muse Spark Open's desktop inference directly enables the local-first economics case
+- [[entities/muse-glimmer]] — 30B Apache-2.0 agentic model distilled from Muse Spark
 - [[entities/llm-cli]]
+- [[entities/llama-cpp]]
 - 2026-04-08-meta-muse-spark-launch

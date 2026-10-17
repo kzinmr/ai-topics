@@ -122,6 +122,16 @@ Announced via X on Aug 21, 2026. A UC Berkeley + NVIDIA (also Stanford, Panasoni
 - **Results:** SOTA on a 12-task 58-DoF bimanual benchmark (force control, deformation, bimanual coordination), **>30% higher average success rate** than the strongest baseline.
 - Links: [project page](https://tactile-reactive-dexterous.github.io/) · [dataset (Hugging Face)](https://huggingface.co/datasets/zekaiwang/trex_dataset) · [[concepts/robotics]] · [[concepts/embodied-ai]]
 
+### ASPIRE: Agentic Skills Discovery for Robotics (Oct 2026)
+
+Announced via X on Oct 16, 2026 (GEAR Lab, open-sourced). A self-improving continual learning system where a coding agent writes and refines **code-as-policy** robot control programs from execution feedback: inspect rollout traces → diagnose failures → repair programs → validate by re-execution → save reusable skills to a continually growing skill library. Three components: closed-loop execution engine (multimodal traces), skill library (in-context retrieval), evolutionary search over programs.
+
+- **Benchmarks:** LIBERO-Pro (160 tasks × 50 seeds), Robosuite, BEHAVIOR-1K; baseline CaP-Agent0. Evaluated across GPT-6 Astra, Claude Opus 5.5/Sonnet 5.5/Fable 5.1, Kimi K3, Qwen 3.8 Max — performance scales with stronger models.
+- **Skill transfer:** LIBERO-90 skills transfer zero-shot to long-horizon tasks; sim-discovered skills cut tokens-to-first-success on real robots.
+- **Real-robot online learning:** Rubik's cube solving, bottle-cap manipulation, cup stacking — agent acts as system-2 calling executable perception/action tools.
+- **Limits (author-stated):** needs frontier LLM (Claude Opus 4.6), bounded by predefined primitive API, long-term skill-library memory management unsolved.
+- Links: [project page](https://research.nvidia.com/labs/gear/aspire/) · [GitHub NVlabs/aspire](https://github.com/nvlabs/aspire) · [[entities/aspire-nvidia]] · [[concepts/robotics]] · [[concepts/embodied-ai]]
+
 ### "The Second Pre-training Paradigm"
 A blog article exploring how foundation models are evolving beyond language into physical reasoning and embodied intelligence.
 

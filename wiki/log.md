@@ -1,3 +1,11 @@
+## [2026-10-17] ingest | X accounts scan: NVIDIA ASPIRE (Jim Fan)
+
+- Saved raw: `raw/articles/nvidia-aspire-agentic-skills-discovery-robotics-2026.md` (project page scrape, tweet 2111128798645416006 @drjimfan)
+- Created `entities/aspire-nvidia.md` — NVIDIA GEAR Lab self-improving code-as-policy robotics system (skill library + evolutionary program search, LIBERO-Pro/Robosuite/BEHAVIOR-1K, open-source)
+- Updated `entities/jim-fan.md` — ASPIRE section under Key Work
+- index.md: added aspire-nvidia entry, count 945→946
+- Skipped: @charles_irl BIPM leap-second resolution link (off-scope: metrology, not AI), @dorialexander Luma event invite (non-article)
+
 ## [2026-10-17] create+update | Trending topics: Scion/Mononoke + Mercor benchmark map
 - Created `entities/sunshowers-rain.md` (Rain / sunshowers.io — ex-Meta Mononoke designer, author of the Scion attribution analysis)
 - Updated `entities/scion-anthropic-version-control.md` — added "Heavily inspired by Mononoke" controversy section (Rain/sunshowers.io 2026-10-14/15, HN 425/253pts), second raw source, LLM-era attribution thesis
