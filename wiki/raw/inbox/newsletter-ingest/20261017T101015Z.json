@@ -1,0 +1,10 @@
+{
+  "run_id": "20261017T101015Z",
+  "collected_at": "2026-10-17T10:10:15.937475+00:00",
+  "triage_status": "blocked",
+  "processed_count": 4,
+  "classification_summary": { "critical": 0, "high": 0, "low": 0, "unprocessed": 4 },
+  "blocker": "Custom LLM provider returned HTTP 402 'Insufficient Balance' repeatedly mid-run, aborting tool-calling turns. Triage could not complete.",
+  "notes": "Newsletter ingest checkpoint for run 20261017T101015Z (4 messages, uid 803-806) requires triage. Partially-resolved sources: raw newsletter files already saved under wiki/raw/newsletters/ (HD 'The Beauty of Something Grown', EV 'What on earth is going on with AI pricing and packaging?', 'Google Breaks Open Quantum's Magic Bottleneck', AINews 'High Taste Testers Ep. 1'). Re-run once provider balance is restored.",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json"
+}
