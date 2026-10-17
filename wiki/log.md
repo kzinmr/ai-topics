@@ -162,3 +162,13 @@ Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved
 - Delivered late-night (niche/high-signal) hot-post on `concepts/ontrack-streaming-trajectory-monitoring` (arXiv:2610.12375, Barazandeh et al.): structure-aware optimal transport over agent trajectories, ~1ms/step streaming, 3 access regimes (full reference → tool schemas → step-logs-only), SWE-bench first-8-steps +0.057 AUROC, ~18% compute saved, 5/6 aborts correct. Contrast with `concepts/process-supervision` (PRM cost/latency), `concepts/instrumental-monitor-evasion` (semantic monitors are gameable; shape is harder to fake), and `concepts/undobench-agent-recovery-capability` (abort is itself irreversible — 53.33% naive-retry duplicate-effect rate).
 - Dedup check: no wikilink reused vs 10-16 morning (outer-harness/third-moment), 10-16 night (code-review-bottleneck/agent-standup), 10-15 late-night (Merge context ladder), 10-15 morning (Modal RL), 10-14 (Scion/code-as-graph, lint-rules/SmithDB).
 - No wiki content pages created or modified (report only). Index count unchanged.
+
+## [2026-10-17] create + hot-post | Modest-success boom — where the missing software went
+- Morning hot-post slot (09:30). Dedup: all 8 script-surfaced recent pages already Slack-covered in last 7d (verified via slack_history.jsonl). Fresh angle chosen.
+- Scraped (re-ingest; blog-ingest had saved an Oct-16 fetch of the same URL earlier, `raw/articles/seangoedecke.com--ai-is-driving-a-boom-in-modestly-successful-software--18270dcc.md`):
+  - raw/articles/2026-10-17_seangoedecke_ai-is-driving-a-boom-in-modestly-successful-software.md (HN 657pts; updated fetch, sha256 620503bc… vs old 762758a4… — kept both, naming scheme differs)
+- Created:
+  - concepts/modest-success-software-boom.md (Goedecke counter-evidence to the missing-software paradox: 2x/yr growth in modestly successful software; App Store top-5k→15k; slop = distribution problem not production problem; HN "vibe-coded games fill a market no one modeled" corroboration)
+  - queries/where-the-missing-software-went.md (synthesis: code-review-bottleneck's "shipping didn't grow" × modest-success boom's "modest success doubled" — the software went long-tail, review capacity is the new moat)
+- Updated: index.md (3249→3251, concepts 2201→2202, queries 32→33).
+- Note: a previous session's context summary claimed a "slop backlash cluster" (6 pages incl. slop-backlash-moc, ai-slop-measurement-collapse, code-attribution-erosion, etc.). Filesystem/git verification shows those files do NOT exist and were never committed — the claim was phantom. Index edit for it reverted; this entry records only what actually exists.
