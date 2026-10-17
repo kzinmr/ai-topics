@@ -2,7 +2,7 @@
 title: "Infrastructure-Level Sandbox"
 type: concept
 created: 2026-04-10
-updated: 2026-04-16
+updated: 2026-10-17
 tags:
   - concept
   - ai-agents
@@ -14,7 +14,8 @@ tags:
 aliases: ["agent-isolation", "ai-sandbox-technologies", "infrastructure-sandbox"]
 depth: L2
 status: complete
-sources: []
+sources:
+  - raw/articles/2026-10-16_mlejva_sandboxes-are-dead.md
 ---
 
 
@@ -233,8 +234,16 @@ As Blake Crosley's analysis notes: *"The minimum viable defense is a URL allowli
 4. **Defense in depth is non-negotiable**: compute isolation + filesystem restrictions + network controls + resource limits.
 5. **Sandboxed agents reduce security incidents by ~90%** compared to agents with unrestricted host access.
 
+## Sandbox-as-Platform: the post-commodity thesis (E2B, Oct 2026)
+
+Vasek Mlejnsky (CEO of [[entities/e2b|E2B]]) declared in "Sandboxes are dead" (2026-10-16) that the framing above — fast-booting VMs behind an API competing on cold-start ms and $/vCPU-hour — is only correct for the first agent wave (code snippets). For wave-three agents that "run computers" (long-running, end-to-end tasks), the sandbox must become a full operating environment: dedicated storage, firewall, inter-sandbox networking, observability, elastic CPU/memory, browsers, secure secrets — i.e. a **platform**, not a box. His proposed end state is an "agent-driven private cloud": one private cloud per agent, automatically optimized per task, with the agent itself deciding which tools/resources each task needs.
+
+This thesis directly challenges takeaway #3 above (cold start as the accepted metric) and reframes the market convergence of takeaway #2 (E2B, Daytona, Sprites) as an interim state. Note it is a vendor repositioning argument as well as a technical one — E2B itself competes in the cold-start race it declares obsolete. The trace-data-moat claim (billions of runs → predict an agent's tool/resource profile pre-execution) is vendor-reported and unverified.
+
 ## Related Concepts
 
+- [[entities/e2b]] — market-leader sandbox platform; "Sandboxes are dead" thesis
+- [[concepts/agent-sandbox-patterns]] — isolate-the-tool vs isolate-the-agent
 - [[concepts/anthropic/managed-agents]] — Managed agent services and their sandboxing approaches
 - [[concepts/coding-agents/ai-coding-reliability]] — Ensuring AI-generated code is correct and safe
 - [[concepts/anthropic]] — The practice of directing AI agents in software development- [[concepts/claude/mythos-glasswing]] — Anthropic's internal agent architecture

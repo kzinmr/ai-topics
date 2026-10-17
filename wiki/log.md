@@ -1,3 +1,65 @@
+## [2026-10-17] create+update | Trending topics: Scion/Mononoke + Mercor benchmark map
+- Created `entities/sunshowers-rain.md` (Rain / sunshowers.io — ex-Meta Mononoke designer, author of the Scion attribution analysis)
+- Updated `entities/scion-anthropic-version-control.md` — added "Heavily inspired by Mononoke" controversy section (Rain/sunshowers.io 2026-10-14/15, HN 425/253pts), second raw source, LLM-era attribution thesis
+- Updated `entities/mercor.md` — added "Mercor Benchmark Map" section (8.5M US jobs / 27k occupations, benchmarks cover only 18% of US GDP, "every job is 40% automatable")
+- Added raw: `raw/articles/anthropic-scion-mononoke-derived-data-rain-2026-10-14.md`, `raw/articles/mercor-benchmark-map-us-economy-coverage-2026-10-16.md`
+- index.md: enriched Scion entry, added sunshowers entry, count 3251→3252
+
+## [2026-10-17] ingest | X Article "Sandboxes are dead" (Vasek Mlejnsky / E2B)
+
+- Saved raw article: `raw/articles/2026-10-16_mlejva_sandboxes-are-dead.md` (X Article via xurl, tweet 2111102659377946821)
+- Created `entities/e2b.md` — E2B company page: product evolution across three agent waves, "agent-driven private cloud" positioning, trace-data moat claim (vendor-reported), critique section
+- Created `entities/vasek-mlejnsky.md` — CEO of E2B, key ideas from the article
+- Updated `concepts/sandbox/infrastructure.md` — new section "Sandbox-as-Platform: the post-commodity thesis (E2B, Oct 2026)" + wikilinks
+- Updated `concepts/agent-sandbox-patterns.md` — new section "Sandbox → Platform (2026-10)" reconciling Browser Use control-plane framing with E2B's platform thesis
+- Updated `index.md` entries for e2b, vasek-mlejnsky
+
+## [2026-10-16] skeleton-enrich-daily | no action — 0 skeleton pages
+
+Daily skeleton enrichment run. Verified live state: `grep -rl "status: skeleton" wiki/entities/` returns 0 files; health digest confirms skeletons=0 (entities 943). Nothing to enrich.
+
+Also verified a pending cleanup suspicion from a prior session: files `wiki/entities/ken-klippenstein-com.md`, `wiki/entities/transluce-ai.md`, and a `rogue-ai-agent-activity` concept do NOT exist and have no git history — they were never created. The canonical pages exist and are rich: [[entities/ken-klippenstein]], [[entities/transluce]], [[concepts/rogue-ai-agent-activity]], [[concepts/ai-skepticism-movement]], [[concepts/ai-skeptic-radicalization-investigation]] — all properly indexed. No duplicate/orphan risk; no action needed.
+## [2026-10-16] lint | wiki-health-fix — clean, no action
+
+Live re-verification of the 2026-10-16 health digest before acting (skill rule: verify report claims against live state).
+- index.md corruption: pipe=0, triple-bracket=0, line-number=0, space-prefix=0; `validate_index.py` clean (3277 lines).
+- Fresh `wiki_health.py --json`: overview matches digest (entities 943 / concepts 2204 / comparisons 35 / raw 10484 / L2 3182 / skeletons 0).
+- Reported orphans (2) = `concepts/gpt/_archive/2026-04-24-ainews`, `...-news-aggregation` — both `status: stub` under `_archive/`, intentionally not indexed (false positives, per skill).
+- No ghost entries, no orphan_index to register, working tree clean. Nothing auto-fixable; no commit made (would be a no-op).
+- Non-actionable backlog for user: 6545 unreferenced raw articles, 2935 stale pages (>30d), 874 unique tags.
+
+---
+
+## [2026-10-16] ingest | active-crawl — on-device agent MoE + code-review bottleneck + agent observability
+
+Evaluated ~25 gap candidates against 3244 existing pages. Confirmed-covered and skipped:
+LLM decompilation (momo5502 FPS, `concepts/llm-decompilation-and-software-recovery`),
+Jev decision models (`concepts/jev-pattern`), "more code not software" theme
+(`concepts/ai-coding-effectiveness-debate`), on-device/edge/SLM/MoE hubs. Created 3 NEW
+research-grade pages from genuinely uncovered material:
+- Created `concepts/code-review-bottleneck.md` — Harvard (Chen & Stratton) / Jellyfish
+  study: 300M work events, 700 firms; AI agents +30% LOC / +20% commits / +23% PRs but
+  ≈no software-output or headcount gain; gains absorbed by human code-review bottleneck.
+- Created `concepts/multi-agent-session-observability.md` — supervising parallel coding
+  agents; Agent Standup's zero-token transcript-parsing model.
+- Created `entities/agent-standup.md` — HN 217p; live who-waits-on-whom view over
+  Claude Code / Codex / Mistral Vibe sessions.
+- Updated `entities/liquid-ai.md` — appended LFM2.5-24B-A2B (Oct 14 2026): 24B-MoE / 2B
+  active open-weight on-device agent model; 184 tok/s on M5 Max; MOPD + Agentic RL.
+  Bumped `updated`. (Non-destructive append; pre-existing `transformer-alternatives`
+  wikilink is stale — left for lint.)
+- Raw note: `raw/articles/2026-10-16_active-crawl-on-device-moe-and-review-bottleneck.md`
+  (sha256 90301c1…).
+- Index: +3 entries (entities 944→945, concepts 2199→2201, total 3244→3247).
+
+## [2026-10-16] blog-ingest | 19 raw articles saved (16 scraped + 3 OpenAI RSS-fallback)
+
+- Scan: 29 new articles detected across tracked feeds; 20 candidates, 16 saved by `blog_ingest.py`.
+- Recovered 3 OpenAI News articles via `openai.com/news/rss.xml` fallback (chronic openai.com 403; bodies are RSS descriptions only, tagged `scrape_status: rss-fallback`): GPT-Rosalind Academic Plan, Study Mode / AI for Educators (Brazilian Portuguese), Sullivan & Cromwell Agreement Analyzer.
+- Skipped: WaPo "Trump's Ballroom" (off-domain, politics).
+- Highlights for triage: Meta Muse Spark Open weights release (Together AI + Modal Day-0 posts; Terminal-Bench 2.1 76.4 / DeepSWE 1.1 60, 1M context — see [[entities/muse-spark]], [[concepts/meta-muse-spark]]); Anthropic quarterly revenue ~$16.8bn ahead of IPO ([[entities/anthropic]]); Sean Goedecke — 2x growth in modestly successful software projects from agentic coding; Construction Physics — How to Train Your Robot (robot data scaling vs Scaling Hypothesis); Pluralistic — digital sovereignty vs AI.
+- Files: `raw/articles/*--{dcec1526,09703f59,aa3e016c,9d177c1d,68a53f80,edc304a2,f5b79830,18270dcc,feb1c9a0,03c74882,f523341a,b5154a4c,5721c5d8,0c4d066d,a044de66,2a0484eb,0d2e925a,eef09eb5,8ec6278a}.md`
+
 ## [2026-10-15] x-accounts-scan | Train Models on Jobs docs (Daniel van Strien)
 - Source: @vanstriendaniel tweet 2105944120405512539 (2026-10-02) linking https://huggingface.co/docs/hub/jobs-training
 - Saved raw article `raw/articles/2026-10-02_huggingface.co_jobs-training.md` (curl scrape; Jina blocked by HF rate limit)
@@ -112,3 +174,29 @@ Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved
 
 - User explicitly requested commit, branch push and PR creation. Enabled the repository hooks and committed the five research/navigation/log files; index and tag validation passed.
 - Rebased onto current `origin/main` at `104648c1`, retaining the upstream V-model strategy/pilot navigation, all index entries and exact log prefix. Resolved date, description, count and appended-log conflicts. Updated the final index to 3240 pages, including 31 queries; original research-turn counts above describe the earlier baseline.
+
+## [2026-10-16] query | Hot-post night 21:30 — Code review bottleneck (bottleneck moved to verification)
+- Delivered night (reflective/contrarian) hot-post on `concepts/code-review-bottleneck` (Chen & Stratton / Jellyfish telemetry: +30% LOC, +20% commits, +23% PRs but net software output approx 0 and headcount approx 0; review lengthens, more revisions, more comments) + `concepts/multi-agent-session-observability` / `entities/agent-standup` (HN 217, zero-token transcript parsing). Cross-refs: ai-slop-productivity-paradox, ai-coding-effectiveness-debate, token-economics, async-coding-agents, agent-observability, dark-factory-software-factory. Thesis: constraint shifted from code-writing to verification (Goldratt); Dark Factory is blocked by the trust budget, not model capability.
+- Dedup check: no wikilink reused vs 10-16 morning (outer-harness/third-moment), 10-15 late-night (Merge context maturity ladder), 10-15 morning (Modal mixed-precision RL), 10-14 (lint-rules/SmithDB, Scion/code-as-graph).
+- No wiki content pages created or modified (report only). Index count unchanged.
+
+## [2026-10-16] create | Weekly wiki graph analysis (recursive, corrected)
+- Ran recursive Obsidian-style graph analysis across all 3,258 Layer-2 pages (entities/concepts/comparisons/queries/events incl. 596 nested concepts). Wrote `queries/wiki-graph-analysis-weekly-2026-10-16.md`.
+- Key findings: 3,039 true orphans (93% of pages have zero inbound links; only 197 linked), 1,840 broken link targets (3,507 instances; context-engineering hub ×201, claude-code ×47), 649 links need path normalization, 15 confirmed duplicate groups (5 person-slug stub pairs + cline/qwen cross-type), 2,364 stale >90d (mostly low-churn blog entities), 318 oversized, 1 tag violation (`quant`), 3 WIP-snapshot pages missing frontmatter.
+- Flagged the built-in `scripts/wiki_graph_analysis_weekly.py` as materially misleading: `os.listdir` (top-level-only, misses nested concepts) + `[[[[…]]]]` nested-bracket mis-parse (phantom 6,269 broken links) + non-basename index reconciliation (false "601 missing index entries" vs 1 real). Recommended fix.
+- No content pages modified (analysis/report only). Added report + backfilled 2026-10-09 report to index (Queries 30→32, Total 3247→3249).
+
+## [2026-10-16] query | Hot-post late-night 01:30 — OnTrack: monitor agents by shape, not semantics
+- Delivered late-night (niche/high-signal) hot-post on `concepts/ontrack-streaming-trajectory-monitoring` (arXiv:2610.12375, Barazandeh et al.): structure-aware optimal transport over agent trajectories, ~1ms/step streaming, 3 access regimes (full reference → tool schemas → step-logs-only), SWE-bench first-8-steps +0.057 AUROC, ~18% compute saved, 5/6 aborts correct. Contrast with `concepts/process-supervision` (PRM cost/latency), `concepts/instrumental-monitor-evasion` (semantic monitors are gameable; shape is harder to fake), and `concepts/undobench-agent-recovery-capability` (abort is itself irreversible — 53.33% naive-retry duplicate-effect rate).
+- Dedup check: no wikilink reused vs 10-16 morning (outer-harness/third-moment), 10-16 night (code-review-bottleneck/agent-standup), 10-15 late-night (Merge context ladder), 10-15 morning (Modal RL), 10-14 (Scion/code-as-graph, lint-rules/SmithDB).
+- No wiki content pages created or modified (report only). Index count unchanged.
+
+## [2026-10-17] create + hot-post | Modest-success boom — where the missing software went
+- Morning hot-post slot (09:30). Dedup: all 8 script-surfaced recent pages already Slack-covered in last 7d (verified via slack_history.jsonl). Fresh angle chosen.
+- Scraped (re-ingest; blog-ingest had saved an Oct-16 fetch of the same URL earlier, `raw/articles/seangoedecke.com--ai-is-driving-a-boom-in-modestly-successful-software--18270dcc.md`):
+  - raw/articles/2026-10-17_seangoedecke_ai-is-driving-a-boom-in-modestly-successful-software.md (HN 657pts; updated fetch, sha256 620503bc… vs old 762758a4… — kept both, naming scheme differs)
+- Created:
+  - concepts/modest-success-software-boom.md (Goedecke counter-evidence to the missing-software paradox: 2x/yr growth in modestly successful software; App Store top-5k→15k; slop = distribution problem not production problem; HN "vibe-coded games fill a market no one modeled" corroboration)
+  - queries/where-the-missing-software-went.md (synthesis: code-review-bottleneck's "shipping didn't grow" × modest-success boom's "modest success doubled" — the software went long-tail, review capacity is the new moat)
+- Updated: index.md (3249→3251, concepts 2201→2202, queries 32→33).
+- Note: a previous session's context summary claimed a "slop backlash cluster" (6 pages incl. slop-backlash-moc, ai-slop-measurement-collapse, code-attribution-erosion, etc.). Filesystem/git verification shows those files do NOT exist and were never committed — the claim was phantom. Index edit for it reverted; this entry records only what actually exists.

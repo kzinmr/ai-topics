@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3240
-> Last updated: 2026-10-16
+> Total pages: 3253
+> Last updated: 2026-10-17
 
-## Entities (941 pages)
+## Entities (945 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -23,6 +23,7 @@
 - [[entities/agentcraft]] — AgentCraft
 - [[entities/agentmemory]] — agentmemory
 - [[entities/agentsview]] — AgentsView
+- [[entities/agent-standup]] — Agent Standup — open-source, zero-token tool that turns concurrent Claude Code/Codex/Mistral Vibe sessions into a live who-waits-on-whom team-call view (Oct 2026)
 - [[entities/agi-bot]] — AgiBot — Shanghai humanoid robotics co. (founded 2023, ex-Huawei); A2/G2 robots, 5,168 units shipped 2025, GO-1 embodied foundation model
 - [[entities/agibot-10000-units]] — Agibot 10000 Units
 - [[entities/agno]] — Agno — Open-source agent platform SDK and runtime (AgentOS); model/framework/cloud agnostic; multi-user sessions, RBAC, tracing (June 29)
@@ -165,6 +166,7 @@
 - [[entities/claude-code--architecture]] — Claude Code — Architecture
 - [[entities/claude-code--capabilities]] — Claude Code — Capabilities & Features
 - [[entities/claude-code--history]] — Claude Code — Development History
+- [[entities/claude-haiku-5-5]] — Claude Haiku 5.5 (Anthropic, Oct 2026) — small frontier model; Anthropic claims it beats GPT-6 Luna at the same pricing
 - [[entities/clay-bavor]] — Clay Bavor — Co-founder of Sierra, former Google VP of AR/VR; Google Cardboard, Daydream, Project Starline
 - [[entities/clefourrier]] — Clémentine Fourrier
 - [[entities/clefourrier--core-ideas]] — Clémentine Fourrier — Core Ideas & Philosophy
@@ -208,7 +210,7 @@
 - [[entities/daniel-kim-cerebras]] — Daniel Kim (@learnwdaniel) — Head of Growth at Cerebras; co-author of Cerebras Knowledge Base
 - [[entities/daniel-miessler]] — Daniel Miessler
 - [[entities/daniel-tunkelang]] — Daniel Tunkelang
-- [[entities/daniel-van-strien]] — Daniel van Strien; British Library 1M book-image pipeline (Aug 2026): weak-label-distilled RF-DETR crop model ($3.24 GPU, zero human annotations) + semantic search Space
+- [[entities/daniel-van-strien]] — Daniel van Strien; ML Librarian at HF — weak-label GLAM pipelines, UV scripts for agents; Oct 2026: new HF "Train Models on Jobs" docs page (Transformers/TRL/Unsloth/Axolotl/Diffusers, ~$0.10 A10G smoke runs, agent-operable via hf CLI skill)
 - [[entities/danlark-org]] — Daniel Kutenin (danlark) — Search infrastructure engineer (ex-Yandex, Google); C++ performance, algorithms, and large-scale systems blog; Telegram Data Clustering Contest 3rd place write-up (fastText/CLD2/HNSW news aggregator)
 - [[entities/daringfireball-net]] — Daring Fireball (John Gruber); Anthropic Text Watermarking Criticism (Aug 2026: "a perversion of writing", semantic word choice degradation, EU regulation overreach, Declaude circumvention)
 - [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)
@@ -267,6 +269,7 @@
 - [[entities/dylan-patel]] — Dylan Patel
 - [[entities/dynomight-net]] — Dynomight
 - [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1); The AI Demand Bubble — Barclays/UBS/Wells Fargo analyst concentration data (Aug 4); Four Horsemen of the AIpocalypse — Anthropic uptime/Opus 4.7 regression, 15.2GW construction math, contracted-ARR fraud (Aug 8); Don't Look Up — Bloomberg 70% confirmation, $197B 2027 compute spend trap, NVIDIA MOU "financing" (Aug 12); Concentration Risk — Ramp 80%/1% revenue concentration, $1.3T take-or-pay compute commitments as subprime ARMs, 2027 "compute reset wall" (Sep 9)
+- [[entities/e2b]] — E2B — cloud sandbox platform for AI agents (Firecracker microVMs); "Sandboxes are dead" thesis: sandbox → per-agent private cloud (Oct 2026)
 - [[entities/eleanor-berger]] — Eleanor Berger
 - [[entities/eleutherai]] — Grassroots research collective turned non-profit that started the modern open-source AI movement
 - [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24); Real-Time Speech-to-Text Architecture guide — Scribe v2 Realtime ~150ms partials, WebSocket vs WebRTC, partials vs finals, chunk sizing (Jun 25)
@@ -392,7 +395,7 @@
 - [[entities/hoeem]] — X/Twitter creator (169K+ followers) and publisher of the Seven c Newsletter, a long-running cryptocurrency education ...
 - [[entities/howdymary]] — mary
 - [[entities/hp-inc]] — HP Inc. — Hardware company; launched Frontier strategic partnership with OpenAI (June 2026) to deploy AI across customer experiences, software development, and enterprise operations (June 30)
-- [[entities/hugging-face]] — Hugging Face — "GitHub of AI"; **NVIDIA acquisition at $13B confirmed (Aug 27)**; July 2026 OpenAI agent breach; open-weight distribution rail
+- [[entities/hugging-face]] — Hugging Face — "GitHub of AI"; **NVIDIA acquisition at $13B confirmed (Aug 27)**; July 2026 OpenAI agent breach; Oct 2026 "Train Models on Jobs" docs (agent-operable cloud fine-tuning)
 - [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson — Independent AI educator; host of Vanishing Gradients podcast and Show Us Your Agent Skills YouTube series; writes on AI-assisted coding and agent engineering (June 27)
 - [[entities/humanlayer]] — HumanLayer (humanlayer.dev)
 - [[entities/hynek-schlawack]] — Hynek Schlawack
@@ -685,6 +688,7 @@
 - [[entities/pointer]] — Pointer
 - [[entities/pointer-ai]] — Pointer AI — computer-use agent company; OSWorld SOTA 83.6% (Opus 4.7) vs human 72.4%; Feasibility Gate/Planner/Executor harness, open-sourced May 2026
 - [[entities/polar-prorl-agent-server]] — Polar (ProRL-Agent-Server)
+- [[entities/popcar]] — Popcar
 - [[entities/poolside]] — Poolside — Foundation model lab focused on agentic coding models; Laguna M.1 (Apache 2.0), Laguna XS.2 (open-weight), Laguna S 2.1 (118B MoE/8B active, Jul 2026), Model Factory (10K-20K experiments/month, Blender streaming data, zero call events, YOLO-to-rigor); open-weights as default commitment (enriched Jul 28)
 - [[entities/portkey]] — Portkey
 - [[entities/pratik-bhavsar]] — Pratik Bhavsar
@@ -779,9 +783,10 @@
  — open-source AI infra builder; Local AI Registry (hardware-aware launch-recipe registry + Omarchy plugin, Sep 2026); local.ai #1; "Open Source Must Win" manifesto
 - [[entities/servicenow]] — ServiceNow
 - [[entities/seshadri]] — Shrikar Seshadri (@sseshadri43) — LangChain Deep Agents engineer; co-authored RubricMiddleware (Grading Rubrics) with Sydney Runkle
-- [[entities/scion-anthropic-version-control]] — Scion (Anthropic, Oct 2026) — in-house VCS + Antique code-review surface; monorepo migrated off git in 5 months by a team of 7; designed for agent clients (always-online, client/server asymmetric, source-control-as-API, no packfiles); response to 30k merges/day and 25M checkouts/day
+- [[entities/scion-anthropic-version-control]] — Scion (Anthropic, Oct 2026) — in-house VCS + Antique code-review surface; monorepo migrated off git in 5 months by a team of 7; designed for agent clients (always-online, client/server asymmetric, source-control-as-API, no packfiles); response to 30k merges/day and 25M checkouts/day; later hit by Mononoke "derived data" attribution controversy
 - [[entities/seth-karten]] — Seth Karten
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, co-founder of Lunar Strategy (250+ projects), AI marketer and Herme...
+- [[entities/sunshowers-rain]] — Rain (sunshowers.io) — ex-Meta Mononoke designer; author of the Anthropic Scion/Mononoke "derived data" attribution analysis; LLM-era credit/attribution thesis
 - [[entities/sheshansh-agrawal]] — Sheshansh Agrawal
 - [[entities/shkspr-mobi]] — Terence Eden
 - [[entities/shlok-khemani]] — Shlok Khemani — AI agent researcher; OpenPoke, Vajra, Rabbithole infinite canvas, Claude Memory reverse-engineering, Latent Space ChatGPT Work guest post (Aug 2026)
@@ -855,6 +860,7 @@
 - [[entities/thin-bi-tool]] — The trend of BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools...
 - [[entities/thinking-machines-lab]] — Thinking Machines Lab — AI company building decentralized, customizable models; creators of Inkling (975B-A41B MoE multimodal Apache 2.0, Intelligence Index 41)
 - [[entities/thomas-capelle]] — Thomas Capelle
+- [[entities/third-moment-research]] — Third Moment Research
 - [[entities/thomas-dohmke]] — Thomas Dohmke — Former GitHub CEO, HockeyApp co-founder, founder/CEO of Entire
 - [[entities/thomas-wiecki]] — Thomas Wiecki
 - [[entities/thorsten-ball]] — Thorsten Ball
@@ -888,6 +894,7 @@
 - [[entities/varick-agents]] — Varick Agents — Enterprise AI implementation company; builds background agents in systems of record (Salesforce, NetSuite, Dynamics) for $500M+ revenue companies
 - [[entities/varun-trivedy]] — Varun Trivedy
 - [[entities/vasuman]] — @vasuman — CEO of Varick Agents; enterprise AI implementation, barbell distribution of AI adoption, Background AI, forward deployed engineering
+- [[entities/vasek-mlejnsky]] — Vasek Mlejnsky (@mlejva) — CEO of E2B; "Sandboxes are dead" / agent-driven private cloud thesis (Oct 2026)
 - [[entities/vast-data]] — VAST Data — Data storage and AI infrastructure company ($30B); GPU starvation problem, data-centric design (Jul 20)
 - [[entities/vera-rubin]] — NVIDIA Vera Rubin
 - [[entities/vercel]] — Vercel Inc.; frontend cloud platform, expanded into AI with Eve filesystem-first agent framework, deepsec security harness, AI SDK, and Vercel Sandbox microVMs (June 28)
@@ -949,7 +956,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2195 pages)
+## Concepts (2202 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1033,6 +1040,7 @@
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Agentic Engineering Cognition Devin Multi Agents Orchestration
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering Cognition Devin Workflow
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns
+- [[concepts/agentic-software-factory-hierarchy-of-needs]] — Agentic Software Factory Hierarchy of Needs — layered requirements for autonomous software factories (harness → context → verification → autonomy)
 - [[concepts/ai-bubble-financial-crisis]] — AI bubble financial crisis — Von Krogh's 2028 simulation of AI capex-bubble burst → private-credit mark-to-market → middle-market lending freeze (HN 447pts); Harsesian rebuttal (labor displacement ≠ credit event), Anthropic CEO's policy critique; GPT-5.5-Cyber cross-border incident and Redwood institutions-failure sidebars
 - [[concepts/ai-code-provenance-in-open-source]] — AI Code Provenance in Open Source — How OSS projects establish/enforce lineage of AI vs human contributions: OpenJDK's interim ban + Skara PR attestation checkbox, Rust disclosure model, why detection is "impossible" so projects substitute attestation; legal exposure predicts strictness (Sep 2026)
 - [[concepts/ai-coding-effectiveness-debate]] — AI Coding Effectiveness Debate — If Coding Has Been Solved, Why Does Software Keep Getting Worse? — The paradox of powerful AI coding agents coexisting with declining software quality; code generation vs. code quality distinction; productivity vs. quality metrics; ptrchm essay (July 2026, HN #2, 878pts)
@@ -1107,6 +1115,7 @@
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
 - [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
 - [[concepts/model-hardware-standard]] — Model Hardware Standard (MHS) — Anthropic spec for AI agents operating lab/manufacturing hardware; MCP-accessible, open-source planned (Aug 2026)
+- [[concepts/modest-success-software-boom]] — The Modest-Success Boom — Goedecke's counter-evidence to the "missing software" paradox: 2x/yr growth in modestly successful software (App Store top 5k→15k), slop = bad distribution not bad production
 - [[concepts/multi-agents/_index]] — Agent Team / Swarm — Concepts hub for multi-agent sub-pages
 - [[concepts/openclaw/_index]] — OpenClaw — Concepts hub for OpenClaw sub-pages
 - [[concepts/plan-and-patch-dllm-agentic-planning]] — Plan-and-Patch — dLLM agentic planning via parallel unmask + localized plan repair; 53.7% vs 27.0% plan-repair, 39-46% lower latency vs AR planners
@@ -1571,6 +1580,7 @@
 - [[concepts/code-intelligence-for-llms]] — The practice of providing LLMs with structured, pre-computed code analysis data rather than raw source files. Cuts to...
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
 - [[concepts/code-review]] — code-review
+- [[concepts/code-review-bottleneck]] — Code Review Bottleneck — Harvard/Jellyfish study: AI agents +30% LOC/+23% PRs but no more software shipped; gains absorbed by human review (Oct 2026)
 - [[concepts/code-search-indexing]] — Code Search Indexing for Agent Tools — inverted-index techniques (n-gram/trigram/sparse n-gram) so agent grep/regex lookups skip full scans; Cursor client-side "instant grep" research (Mar 2026)
 - [[concepts/codeless-software]] — codeless-software
 - [[concepts/codex-logging-bug]]
@@ -2278,6 +2288,7 @@
 - [[concepts/llm-core]] — Large language model architecture, training, and research.
 - [[concepts/llm-cost-crisis]] — LLM Cost Crisis / Tokenpocalypse — spiraling inference costs from premium models, agent multiplicative consumption, and organizational proliferation
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
+- [[concepts/llm-decompilation-and-software-recovery]] — LLM Decompilation and Software Recovery — AI-assisted binary-to-source recovery for game preservation and clean-room reimplementation (controversial)
 - [[concepts/llm-creative-writing]] — LLM Creative Writing
 - [[concepts/llm-development-paradigm]] — LLM Development Paradigm
 - [[concepts/llm-echo]] — llm-echo
@@ -2467,6 +2478,7 @@
 - [[concepts/multi-agents/multi-agent-research-system]] — Multi-Agent Research System (Anthropic)
 - [[concepts/multi-agents/multi-agent-rl]] — Multi-Agent RL for Embodied AI
 - [[concepts/multi-agents/multi-agent-systems]] — Multi-Agent Systems — Anthropic empirical failure modes: collusion/sabotage (Aug 2026)
+- [[concepts/multi-agent-session-observability]] — Multi-Agent Session Observability — supervising a fleet of parallel coding agents; Agent Standup's zero-token transcript-parsing model (Oct 2026)
 - [[concepts/multi-agents/multi-agents-cognition-devin-orchestration]] — Multi Agents Cognition Devin Orchestration
 - [[concepts/multi-agents/multi-agents-whats-actually-working]] — Multi-Agents: What's Actually Working
 - [[concepts/multi-channel-agents]] — Multi Channel Agents
@@ -2553,6 +2565,7 @@
 - [[concepts/openai/economic-futures-age-of-ai]] — OpenAI Foundation: Economic Futures in the Age of AI
 - [[concepts/openai/enterprise-adoption-patterns]] — OpenAI vs Anthropic Enterprise Adoption Patterns
 - [[concepts/openai/formal-math-publication-2026]] — OpenAI Formal Mathematics Publication Program — 722 Lean 4 papers / 8,290 theorems / 1,563 open problems via GPT-5.6-Codex across ~400,000 worker sessions; DeepMind resolved 677/722; 3 withdrawals + 14 repairs within 24h
+- [[concepts/openai/gpt-5-6-codex-model-card-2026]] — OpenAI GPT-5.6-Codex Model Card (October 2026)
 - [[concepts/openai/frontier-governance-framework]] — OpenAI Frontier Governance Framework
 - [[concepts/openai/how-organizations-use-ai-evidence-from-chatgpt]] — How Organizations Use AI: Evidence from ChatGPT (OpenAI working paper)
 - [[concepts/openai/index]] — OpenAI Platform & APIs
@@ -2588,6 +2601,7 @@
 - [[concepts/ornith-self-scaffolding-llm]] — Ornith-1.0 — DeepReinforce's first open-source self-scaffolding LLM for agentic coding; 4 variants (9B~397B) on Gemma 4/Qwen 3.5; MIT license; verified by Simon Willison (June 30)
 - [[concepts/orthrus-parallel-generation]] — Orthrus (Parallel Token Generation)
 - [[concepts/outcome-based-pricing]] — Outcome-Based Pricing Models for AI Agents
+- [[concepts/outer-harness]] — Outer Harness — Supervising Swarms of Long-Running Agents
 - [[concepts/outcomemaxxing]] — Outcomemaxxing
 - [[concepts/overact-proactive-over-authorization]] — OverACT — Proactive Over-Authorization: LLM tool agents taking irreversible actions beyond their granted authority even under complete specifications; 12 failure modes, 327/500 incident traces; runtime permission broker + ActionSpec (arXiv:2610.01508, Oct 2026)
 - [[concepts/overture-maps-foundation]] — Overture Maps Foundation
@@ -3227,7 +3241,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (31 pages)
+## Queries (34 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
@@ -3260,6 +3274,9 @@
 - [[queries/wiki-graph-analysis-weekly-2026-09-18]] — Weekly Wiki Graph Analysis (2026-09-18) — 3,079 pages (recursive scan); 446 orphans (303 content-rich), 2,810 broken links (919 raw-ref-as-wikilink), 8 real duplicate groups, 1,661 stale, 0 tag violations
 - [[queries/wiki-graph-analysis-weekly-2026-09-25]] — Weekly Wiki Graph Analysis (2026-09-25) — 3,112 pages; 465 orphans (316 rich), 3,512 broken refs (context-engineering hub = 188), 8 unresolved dup groups + 48 dir-collision stubs, 2,230 stale; state snapshot persisted
 - [[queries/wiki-graph-analysis-weekly-2026-10-02]] — Weekly Wiki Graph Analysis (2026-10-02) — 3,120 pages; 6 top-level orphans, 0 ghost entries, 866 tags
+- [[queries/wiki-graph-analysis-weekly-2026-10-09]] — Weekly Wiki Graph Analysis (2026-10-09) — 2,583 pages (top-level scan); 494 orphans, 6,163 broken links, 16 dup groups, 1,812 stale
+- [[queries/wiki-graph-analysis-weekly-2026-10-16]] — Weekly Wiki Graph Analysis (2026-10-16) — 3,258 pages (recursive, Obsidian-resolution); 3,039 true orphans (93%), 1,840 broken targets + 649 normalization-needed, 15 confirmed dup groups, 2,364 stale; built-in weekly script flagged as undercounting
+- [[queries/where-the-missing-software-went]] — Where the missing software went: reconciles code-review-bottleneck (shipping didn't grow) with the modest-success boom (modest successes doubling per year) — growth went long-tail, review capacity is the moat
 
 ## RSS Scans
 

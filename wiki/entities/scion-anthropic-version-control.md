@@ -1,12 +1,13 @@
 ---
 title: Scion (Anthropic version control system)
 created: 2026-10-14
-updated: 2026-10-14
+updated: 2026-10-17
 type: entity
 confidence: medium
 tags: [company, ai-agents, agent-infrastructure]
 sources:
   - raw/articles/2026-10-14_anthropic-redesigning-source-control-scion.md
+  - raw/articles/anthropic-scion-mononoke-derived-data-rain-2026-10-14.md
 related:
   - dark-factory-software-factory
   - agentic-software-factory-hierarchy-of-needs
@@ -74,14 +75,39 @@ rebuilding human-scale tooling around agent throughput (see
 [agent-native-infrastructure](agent-native-infrastructure.md) and the
 [agentic software factory hierarchy of needs](agentic-software-factory-hierarchy-of-needs.md)).
 
+## "Heavily inspired by Mononoke" controversy (2026-10-14/15)
+
+Within a day of the announcement, **Rain (sunshowers.io)** — a former Meta engineer who helped
+build **Mononoke** (Meta's Rust source-control server, designed 2017-18) — published a comparison
+arguing Scion's "derived data" concept (used to make `blame` and similar ops efficient) closely
+mirrors how he described Mononoke's derived-data design in his 2022 Oxide candidate materials.
+He notes Scion credited Sapling only for "hard-won lessons" and never mentioned Mononoke, which he
+called "border[ing] on plagiarism," and observed the write-up reads as if Claude designed it all.
+A follow-up post answered questions. Notably, Rain holds **no grudge about the copying itself** —
+Mononoke is deliberately open source "to benefit humanity through the spread of good ideas."
+
+The durable thesis (why this matters beyond the dispute): as LLMs design new systems they
+**index heavily on existing designs in their training set**. Mononoke is open source and in every
+major model's training data; Rain reports that asking Opus 5.5 or GPT-6 Astra about Scion's prior
+art surfaces the Mononoke similarities immediately. His conclusion: *"Giving credit to those that
+came before us is now easier — and more important — than ever. There is no longer an excuse."*
+This is a concrete instance of the **AI-derived-data / training-set lineage** question: when a
+model reproduces an idea it absorbed from an open-source project, who gets credit? It pairs with
+the broader agent-native-infrastructure trend above — Scion is both a genuine re-architecture for
+agents *and* a case study in LLM-era attribution.
+
 ## Caveats
 
-Single-source (Anthropic's own post) plus commentary. Specific design decisions — no local repo,
-no offline, server-centric — have trade-offs that will show up in real-world use; the
-engineering post is not yet battle-tested by outsiders. Set `confidence: medium` accordingly.
+Anthropic's own post plus commentary and an external attribution critique. Specific design
+decisions — no local repo, no offline, server-centric — have trade-offs that will show up in
+real-world use; the engineering post is not yet battle-tested by outsiders. The Mononoke-similarity
+claim is one engineer's (well-sourced) reading, not an admitted finding by Anthropic. Set
+`confidence: medium` accordingly.
 
 ## Sources
 
 - [Redesigning source control at Anthropic — Anthropic Engineering](https://www.anthropic.com/engineering/redesigning-source-control)
 - [Sim on HN: Anthropic's new source control system](https://news.ycombinator.com/item?id=49849712)
-- Raw: `raw/articles/2026-10-14_anthropic-redesigning-source-control-scion.md`
+- [Anthropic's Scion is heavily inspired by Mononoke — Rain (sunshowers.io)](https://sunshowers.io/posts/anthropic-mononoke/) (HN 425pts, [item 50094694](https://news.ycombinator.com/item?id=50094694))
+- [More on Anthropic's Scion ripping off Mononoke — followup](https://sunshowers.io/posts/anthropic-mononoke-2/) (HN 253pts, [item 50106738](https://news.ycombinator.com/item?id=50106738))
+- Raw: `raw/articles/2026-10-14_anthropic-redesigning-source-control-scion.md`, `raw/articles/anthropic-scion-mononoke-derived-data-rain-2026-10-14.md`
