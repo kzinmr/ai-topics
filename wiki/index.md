@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3253
-> Last updated: 2026-10-17
+> Total pages: 3254
+> Last updated: 2026-10-18
 
 ## Entities (945 pages)
 
@@ -3241,7 +3241,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (34 pages)
+## Queries (35 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
@@ -3252,6 +3252,7 @@
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
 - [[queries/modernization-batch-example]] — Modernization — fictional fee-batch exercise connecting approved intent, inner-loop acceptance and reusable outer-loop evidence
+- [[queries/modernization-foundation-books-review]] — Code Modernization Foundations Reading Guide — seven books and two papers with reading scopes, evidence and intent, safe change, oracle provenance, design judgment, performance and an integrated learning exercise
 - [[queries/modernization-independent-reading-review]] — Modernization — account-free desk review of 16 concepts, six comprehension criteria, corrections, example checks and limits
 - [[queries/modernization-independent-study-guide]] — Modernization — account-free learning route for the 14 unique priority works, repository explanations and comprehension tasks
 - [[queries/modernization-inner-loop-reading]] — Modernization Inner-loop Reading — 42 books in seven sections; preserved purpose order, sources, reading evidence and account-free route

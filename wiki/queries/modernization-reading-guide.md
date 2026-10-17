@@ -1,7 +1,7 @@
 ---
 title: "Codex Enterprise Modernization Reading Guide"
 created: 2026-10-13
-updated: 2026-10-16
+updated: 2026-10-18
 type: query
 tags: [query, curated-list, codex, coding-agents, software-engineering, architecture, testing, reliability, security]
 sources:
@@ -21,6 +21,7 @@ CodexなどのCoding Agentを活用し、企業システムのコードモダナ
 
 | 読む場面 | Markdown | O’Reilly | 範囲 |
 |---|---|---|---|
+| 調査・設計・検証の基礎を学ぶ | [[queries/modernization-foundation-books-review]] | 各資料の著者・出版社リンクを参照 | 7冊・2論文 |
 | 個別案件の調査、変更、検証、切替 | [[queries/modernization-inner-loop-reading]] | [inner-loop：案件実行](https://learning.oreilly.com/playlists/881eb67b-8276-489e-ad26-d009b8b2a34f/) | 42冊・7分類 |
 | 案件の学びから実行方法を仕組み化 | [[queries/modernization-outer-loop-reading]] | [outer-loop：仕組み化](https://learning.oreilly.com/playlists/f09ea227-8f41-450e-b79b-e9fbdbe4c597/) | 20点・6分類 |
 
@@ -39,6 +40,7 @@ I-xxはinner-loop、O-xxはouter-loopの各ガイド・プレイリストのセ�
 | 課題 | 案件で適用する知識 | 仕組み化に使う知識 |
 |---|---|---|
 | 移行対象・範囲・完了条件を決める | I-01：価値、境界、段階的変更、旧基盤の廃止条件 | O-06：投資、責任分担、省力化の効果 |
+| Foundations for understanding, design and verification | [[queries/modernization-foundation-books-review]]: seven books and two papers covering requirements/environment reasoning, evidence recovery, safe change, oracle provenance, test design, module/architecture judgment and performance | Reuse evidence maps, rule/assumption records, approved examples, design criteria and measurement procedures |
 | SME知識と正解の根拠を明らかにする | I-02：現状調査、業務の聞き取り、規則と期待値の確定 | O-01：出典、判断理由、適用範囲、鮮度、更新責任の管理 |
 | 自動変換とAgentを使い分ける | I-01／I-03：変更の分解、レシピの適用、結果の検証 | O-02：レシピの開発・再利用、Agentの役割と作業契約 |
 | 変更の正しさを評価する | I-03：独立した期待値、動作同等性、性質・契約の検証 | O-04：代表案件、失敗分析、回帰評価、品質ゲート |
