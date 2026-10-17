@@ -269,6 +269,7 @@
 - [[entities/dylan-patel]] — Dylan Patel
 - [[entities/dynomight-net]] — Dynomight
 - [[entities/ed-zitron]] — Ed Zitron; enriched with BIS Systemic Risk Warning — $1T+ hyperscaler capex, Oracle $129.5B debt/$38B lease/$260B future lease, Exponential View report critique, "The Four Losers" framing (July 1); The AI Demand Bubble — Barclays/UBS/Wells Fargo analyst concentration data (Aug 4); Four Horsemen of the AIpocalypse — Anthropic uptime/Opus 4.7 regression, 15.2GW construction math, contracted-ARR fraud (Aug 8); Don't Look Up — Bloomberg 70% confirmation, $197B 2027 compute spend trap, NVIDIA MOU "financing" (Aug 12); Concentration Risk — Ramp 80%/1% revenue concentration, $1.3T take-or-pay compute commitments as subprime ARMs, 2027 "compute reset wall" (Sep 9)
+- [[entities/e2b]] — E2B — cloud sandbox platform for AI agents (Firecracker microVMs); "Sandboxes are dead" thesis: sandbox → per-agent private cloud (Oct 2026)
 - [[entities/eleanor-berger]] — Eleanor Berger
 - [[entities/eleutherai]] — Grassroots research collective turned non-profit that started the modern open-source AI movement
 - [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24); Real-Time Speech-to-Text Architecture guide — Scribe v2 Realtime ~150ms partials, WebSocket vs WebRTC, partials vs finals, chunk sizing (Jun 25)
@@ -892,6 +893,7 @@
 - [[entities/varick-agents]] — Varick Agents — Enterprise AI implementation company; builds background agents in systems of record (Salesforce, NetSuite, Dynamics) for $500M+ revenue companies
 - [[entities/varun-trivedy]] — Varun Trivedy
 - [[entities/vasuman]] — @vasuman — CEO of Varick Agents; enterprise AI implementation, barbell distribution of AI adoption, Background AI, forward deployed engineering
+- [[entities/vasek-mlejnsky]] — Vasek Mlejnsky (@mlejva) — CEO of E2B; "Sandboxes are dead" / agent-driven private cloud thesis (Oct 2026)
 - [[entities/vast-data]] — VAST Data — Data storage and AI infrastructure company ($30B); GPU starvation problem, data-centric design (Jul 20)
 - [[entities/vera-rubin]] — NVIDIA Vera Rubin
 - [[entities/vercel]] — Vercel Inc.; frontend cloud platform, expanded into AI with Eve filesystem-first agent framework, deepsec security harness, AI SDK, and Vercel Sandbox microVMs (June 28)

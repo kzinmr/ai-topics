@@ -1,3 +1,12 @@
+## [2026-10-17] ingest | X Article "Sandboxes are dead" (Vasek Mlejnsky / E2B)
+
+- Saved raw article: `raw/articles/2026-10-16_mlejva_sandboxes-are-dead.md` (X Article via xurl, tweet 2111102659377946821)
+- Created `entities/e2b.md` — E2B company page: product evolution across three agent waves, "agent-driven private cloud" positioning, trace-data moat claim (vendor-reported), critique section
+- Created `entities/vasek-mlejnsky.md` — CEO of E2B, key ideas from the article
+- Updated `concepts/sandbox/infrastructure.md` — new section "Sandbox-as-Platform: the post-commodity thesis (E2B, Oct 2026)" + wikilinks
+- Updated `concepts/agent-sandbox-patterns.md` — new section "Sandbox → Platform (2026-10)" reconciling Browser Use control-plane framing with E2B's platform thesis
+- Updated `index.md` entries for e2b, vasek-mlejnsky
+
 ## [2026-10-16] skeleton-enrich-daily | no action — 0 skeleton pages
 
 Daily skeleton enrichment run. Verified live state: `grep -rl "status: skeleton" wiki/entities/` returns 0 files; health digest confirms skeletons=0 (entities 943). Nothing to enrich.

@@ -1,11 +1,12 @@
 ---
 title: "Agent Sandbox Patterns (Isolate-the-Tool vs Isolate-the-Agent)"
 created: 2026-08-29
-updated: 2026-08-29
+updated: 2026-10-17
 type: concept
 tags: [concept, ai-agents, agent-safety, sandbox, isolation, security, infrastructure]
 sources:
   - raw/articles/2026-08-29_browser-use_two-ways-to-sandbox-agents.md
+  - raw/articles/2026-10-16_mlejva_sandboxes-are-dead.md
 confidence: high
 ---
 
@@ -58,7 +59,12 @@ Micah Lee's agent-safety framing is that LLMs, unlike normal programs, must **re
 - Where the control plane becomes a single point of failure / scaling bottleneck.
 - How far the same-image/dev-parity guarantee degrades as the substrate (micro-VM vs container) diverges in filesystem/permission semantics.
 
+## Sandbox → Platform (2026-10)
+
+E2B CEO Vasek Mlejnsky's "Sandboxes are dead" thesis marks the security-adjacent framing ("isolated box for untrusted code") colliding with the production-operations framing: for long-running wave-three agents, the isolation boundary must come bundled with a full operating environment (dedicated storage, firewall, inter-sandbox networking, observability, elastic compute, browsers, secrets management). In Browser Use's terms this is what the control plane grows into once it also owns provisioning, policy, *and* the agent's whole runtime environment — the sandbox becomes a per-agent private cloud. The two framings are complementary, not contradictory: the "nothing worth stealing/preserving" principle governs what the platform gives the agent; the platform thesis governs what the agent can ask for. See [[entities/e2b]] and [[concepts/sandbox/infrastructure]].
+
 ## Related
+- [[entities/e2b]] — "Sandboxes are dead" / agent-driven private cloud thesis
 - [[concepts/sandbox]] — sandbox technology landscape (gVisor, MicroVM, WASM)
 - [[concepts/security-and-governance/agent-containment]] — limiting blast radius via environmental isolation
 - [[concepts/vm-containment-ai-agents]] — Trail of Bits research on VM containment of cyber-capable agents
