@@ -1,3 +1,10 @@
+## [2026-10-17] create+update | Trending topics: Scion/Mononoke + Mercor benchmark map
+- Created `entities/sunshowers-rain.md` (Rain / sunshowers.io — ex-Meta Mononoke designer, author of the Scion attribution analysis)
+- Updated `entities/scion-anthropic-version-control.md` — added "Heavily inspired by Mononoke" controversy section (Rain/sunshowers.io 2026-10-14/15, HN 425/253pts), second raw source, LLM-era attribution thesis
+- Updated `entities/mercor.md` — added "Mercor Benchmark Map" section (8.5M US jobs / 27k occupations, benchmarks cover only 18% of US GDP, "every job is 40% automatable")
+- Added raw: `raw/articles/anthropic-scion-mononoke-derived-data-rain-2026-10-14.md`, `raw/articles/mercor-benchmark-map-us-economy-coverage-2026-10-16.md`
+- index.md: enriched Scion entry, added sunshowers entry, count 3251→3252
+
 ## [2026-10-17] ingest | X Article "Sandboxes are dead" (Vasek Mlejnsky / E2B)
 
 - Saved raw article: `raw/articles/2026-10-16_mlejva_sandboxes-are-dead.md` (X Article via xurl, tweet 2111102659377946821)

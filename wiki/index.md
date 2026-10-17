@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3251
+> Total pages: 3252
 > Last updated: 2026-10-17
 
 ## Entities (945 pages)
@@ -783,9 +783,10 @@
  — open-source AI infra builder; Local AI Registry (hardware-aware launch-recipe registry + Omarchy plugin, Sep 2026); local.ai #1; "Open Source Must Win" manifesto
 - [[entities/servicenow]] — ServiceNow
 - [[entities/seshadri]] — Shrikar Seshadri (@sseshadri43) — LangChain Deep Agents engineer; co-authored RubricMiddleware (Grading Rubrics) with Sydney Runkle
-- [[entities/scion-anthropic-version-control]] — Scion (Anthropic, Oct 2026) — in-house VCS + Antique code-review surface; monorepo migrated off git in 5 months by a team of 7; designed for agent clients (always-online, client/server asymmetric, source-control-as-API, no packfiles); response to 30k merges/day and 25M checkouts/day
+- [[entities/scion-anthropic-version-control]] — Scion (Anthropic, Oct 2026) — in-house VCS + Antique code-review surface; monorepo migrated off git in 5 months by a team of 7; designed for agent clients (always-online, client/server asymmetric, source-control-as-API, no packfiles); response to 30k merges/day and 25M checkouts/day; later hit by Mononoke "derived data" attribution controversy
 - [[entities/seth-karten]] — Seth Karten
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, co-founder of Lunar Strategy (250+ projects), AI marketer and Herme...
+- [[entities/sunshowers-rain]] — Rain (sunshowers.io) — ex-Meta Mononoke designer; author of the Anthropic Scion/Mononoke "derived data" attribution analysis; LLM-era credit/attribution thesis
 - [[entities/sheshansh-agrawal]] — Sheshansh Agrawal
 - [[entities/shkspr-mobi]] — Terence Eden
 - [[entities/shlok-khemani]] — Shlok Khemani — AI agent researcher; OpenPoke, Vajra, Rabbithole infinite canvas, Claude Memory reverse-engineering, Latent Space ChatGPT Work guest post (Aug 2026)

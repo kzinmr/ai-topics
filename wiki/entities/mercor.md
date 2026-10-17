@@ -2,7 +2,7 @@
 title: "Mercor"
 type: entity
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-10-17
 tags:
   - company
   - training
@@ -36,7 +36,23 @@ AI-powered hiring and data labeling platform that matches expert contractors wit
 - **APEX-Agents**: Benchmark measuring AI model performance on professional tasks (consulting, law, banking)
 - **APEX-SWE**: Software engineering benchmark co-created with Cognition
 
+## Mercor Benchmark Map (Oct 2026)
+
+In October 2026 Mercor released a public interactive **"Benchmark Map"** that maps AI benchmark
+coverage across **8.5 million U.S. private-sector jobs / 27,000 occupations**. The headline finding:
+benchmarks cover **only 18% of U.S. GDP** — i.e., AI capability is being measured against a narrow
+slice of actual work, while the majority of the economy's occupations have essentially no benchmark.
+The map's premise: *"Every job is 40% automatable today"* — but the automatable share is invisible
+because it is not benchmarked. Mercor's stated motive is self-serving (it sells the expert human
+data needed to close these gaps), but the coverage-gap framing is a useful corrective to
+"benchmark = capability" thinking and connects to [[concepts/ai-benchmarks/nanogpt-speedrun]]-style
+debates about what benchmarks actually measure.
+
 ## Related
 - [[entities/openai]] — Customer for data labeling and model training
 - [[entities/anthropic]] — Customer for expert contractor data labeling
 - [[entities/scale-ai]] — Competitor in AI data labeling and model training services
+- [[concepts/economic-agent-benchmarks]] — AI benchmark coverage of real economic work
+
+## Sources
+- Raw: `raw/articles/mercor-benchmark-map-us-economy-coverage-2026-10-16.md`
