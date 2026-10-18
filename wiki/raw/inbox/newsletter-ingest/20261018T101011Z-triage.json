@@ -1,0 +1,98 @@
+{
+  "run_id": "20261018T101011Z",
+  "triaged_at": "2026-10-18T10:10:11Z",
+  "processed_count": 3,
+  "newsletters": [
+    {
+      "message_id": "<20261017140655.3.dd125c50c3aff0c7@mg-d1.substack.com>",
+      "subject": "Meta shakes up the frontiers, open and closed",
+      "source": "Interconnects (Nathan Lambert) — www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+      "date": "2026-10-17",
+      "raw_path": "wiki/raw/newsletters/2026-10-17-meta-shakes-up-the-frontiers-open-and-closed.md",
+      "importance": "high",
+      "newsjacking_score": 4,
+      "resolved": true,
+      "summary": "米オープンウェイトモデルの勢力図が大きく動いた週。Meta が Muse Spark Open を重み公開（現時点で最強の米国製オープンモデル）、Reflection が初のモデル Beam を発表、Mistral Large 4（index 38、重み未公開）も追随。米中フロンティアの差はほぼ半減。Western open-weight モデルは同一性能サイズ比で中国モデルより遥かに採用される傾向、そしてオープンエンド LLM エージェントが実用化されたタイミングと重なり需要が加速。",
+      "key_topics": [
+        "Meta Muse Spark Open (open-weight frontier model release)",
+        "Reflection AI Beam (first model)",
+        "Mistral Large 4",
+        "US vs China open-weight balance of power",
+        "Open-weight adoption economics / inference providers scaling"
+      ],
+      "existing_wiki_coverage": [
+        "entities/muse-spark",
+        "concepts/meta-muse-spark",
+        "entities/muse-glimmer",
+        "entities/nathan-lambert",
+        "entities/martin-alderson (open-weight margin analysis)"
+      ],
+      "action": "ingest — update entities/muse-spark and concepts/meta-muse-spark with Muse Spark Open release; create/update Reflection AI entity if missing; extend open-weight landscape coverage"
+    },
+    {
+      "message_id": "<20261017.203329.e670eab5@mta16>",
+      "subject": "🫧 Is AI a Bubble? The CoreWeave Sell-off Looks More Like the Telecom Bust Than Dotcom",
+      "source": "beehiiv newsletter (all 17 link.mail.beehiiv.com/v2/c/ tracking links returned HTTP 403 — Cloudflare challenge; classified by title/source only)",
+      "date": "2026-10-17",
+      "raw_path": "wiki/raw/newsletters/2026-10-17-is-ai-a-bubble-the-coreweave-sell-off-looks-more-like-the-telecom-bust-than-dotc.md",
+      "importance": "high",
+      "newsjacking_score": 4,
+      "resolved": false,
+      "resolution_note": "Beehiiv v2/c/ links 403 on curl test (2026-10-18). Content retrieval requires browser-based fetch.",
+      "summary": "CoreWeave 急落を Telecom Bust（2000年光ファイバー過剰投資）と Dotcom どちらに類するか分析する AI バブル論記事。AI データセンター資本の過剰投資・債務構造と通信バブルの類似性。",
+      "key_topics": [
+        "CoreWeave sell-off",
+        "AI capex bubble vs telecom bust analogy",
+        "GPU/data center overinvestment economics"
+      ],
+      "existing_wiki_coverage": [
+        "entities/coreweave",
+        "concepts/ai-bubble",
+        "concepts/ai-bubble-economics",
+        "concepts/ai-bubble-financial-crisis",
+        "concepts/subprime-data-center-crisis"
+      ],
+      "action": "ingest (after content fetch) — append CoreWeave sell-off / telecom-bust analogy to concepts/ai-bubble-economics and entities/coreweave. High overlap with existing bubble pages; update rather than create."
+    },
+    {
+      "message_id": "<20261018055208.3.7f9ee34476f1939c@mg-d1.substack.com>",
+      "subject": "Reverse Engineer Anything.",
+      "source": "AI by Akash — www.aibyaakash.com/p/reverse-engineer-anything",
+      "date": "2026-10-18",
+      "raw_path": "wiki/raw/newsletters/2026-10-18-reverse-engineer-anything.md",
+      "importance": "critical",
+      "newsjacking_score": 5,
+      "resolved": true,
+      "summary": "AI によるリバースエンジニアリング/デコンパイルの爆発的進展と「ソフトウェアの堀は何か」を掘り下げたディーダイブ。GitHub repo 'Reverse Engineer Anything' (REA) が1週間で約208K stars 増の累計310K stars（その日 #1 repo）。REA はコーディングエージェント（Codex 等）に接続し、ダウンロードしたアプリに平文で質問できる。著者の検証: Signal デスクトップ版の読み取りテスト5問全中（3-7分/問、オープンソースコードと照合可能）、Linear のクリーンルーム再構築テスト実施。Amjad Masad (Replit CEO) の 'all software will be de facto open-source' 主張が出発点。週次ニュースとして Meta Muse Wonder フロンティアモデル公開・Muse Spark Open 816B（M5 Ultra Mac Studio 2台でローカル動作）・Gemini 4 Argon デベロッパー公開・Anthropic の GitHub 離脱と社内 Scion 移行・DeepSeek V4.1 Flash (MIT, 1M ctx)・Claude Code デスクトップ多セッション再構築・ChatGPT Slides 等をカバー。",
+      "key_topics": [
+        "Reverse Engineer Anything (REA) repo — 310K GitHub stars, AI-powered decompilation",
+        "AI decompilation → software moats erosion ('all software de facto open-source')",
+        "Meta Muse Wonder / Muse Wonder Full frontier models (Artificial Analysis index ~54, Muse Code exclusive tokens, distribution play via WhatsApp 3B users)",
+        "Muse Spark Open 816B local-run model",
+        "Anthropic replaces GitHub with internal Scion VCS (5 months, 7 engineers)",
+        "Gemini 4 Argon pricing $2/$10 promo",
+        "DeepSeek V4.1 Flash MIT 1M context",
+        "Grok Voice 3.0 support calls $0.08/min",
+        "Claude Code desktop multi-session rebuild",
+        "Fundraisings: TypeSafe AI $870M @ $7.5B (a16z, Jev decision model), Modal $750M @ $15.75B",
+        "Character.AI Chapter 11 / Disney license"
+      ],
+      "existing_wiki_coverage": [
+        "entities/muse-spark (Muse Wonder line may need separate page)",
+        "concepts/ai-benchmarks (Artificial Analysis Intelligence Index)"
+      ],
+      "action": "ingest — top priority. Candidate new pages: concepts/ai-reverse-engineering (REA phenomenon + software moats debate); update Meta Muse family pages with Muse Wonder release; note Anthropic Scion in entities/anthropic; DeepSeek V4.1 Flash into DeepSeek page."
+    }
+  ],
+  "classification_summary": {
+    "critical": ["20261018-reverse-engineer-anything"],
+    "high": ["meta-shakes-up-the-frontiers", "coreweave-telecom-bust"],
+    "low": []
+  },
+  "notes": [
+    "Newsletter links were tracking-redirect stubs in the raw digests; the two Substack issues were resolved to interconnects.ai and aibyaakash.com and full body text extracted from OG/HTML.",
+    "Beehiiv batch (uid=808) confirmed Cloudflare-blocked this run (single-link curl test → 403), so classification is title/source-based per daily-rss-triage pitfall #10.",
+    "Muse Spark Open (open-weight release) and Muse Wonder (closed frontier) appear to be distinct products — downstream ingest should verify before merging into entities/muse-spark.",
+    "All three newsletters overlap with existing bubble/open-weight/Meta pages — prefer updates over new pages except possibly concepts/ai-reverse-engineering."
+  ]
+}
