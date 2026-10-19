@@ -1,3 +1,33 @@
+## [2026-10-19] health-fix | Wiki health auto-fix — 7 orphans registered
+
+Daily `wiki-health-fix` run (17:50 UTC). Digest reported 9 orphans; live verification reduced this to 7 real gaps.
+
+### Verified clean (no action)
+- index.md corruption: pipe_prefix 0 / line_number 0 / triple_bracket 0 / space_prefix 0 / double-pipe 0
+- L2 pipe-prefix bullets (`entities/`, `concepts/`): 0
+- Skeleton entities: 0
+- `validate_index.py`: exit 0
+
+### Registered in index.md (7)
+- **entities** (3): `apple-onnx-mlx-modelscope`, `indra-ocr-agent`, `ps-5lm`
+- **concepts** (4): `aauth`, `domain-specialization-beats-general-scale`, `local-first-vs-frontier-api-economics`, `security-and-governance/containment-failures-are-security-basics`
+
+All 7 had complete frontmatter (`title`/`type`/`created`/`updated`/`tags`/`sources`) and were created 2026-10-17/18 by upstream ingestion pipelines that omitted the index write.
+
+### False positives
+- `concepts/gpt/_archive/2026-04-24-ainews`, `concepts/gpt/_archive/2026-04-24-news-aggregation` — archived content, intentionally not indexed.
+
+### Report-only (no auto-fix)
+- 4 `queries/` run-snapshot notes lack frontmatter (`2026-10-04-uncommitted-wip-snapshot` 244 KB, `2026-10-11-uncommitted-wip-snapshot`, `2026-10-17-skeleton-enrich-empty`, `wiki-graph-analysis-weekly-2026-08-28-annotations`). These are auto-generated pipeline run notes, not durable knowledge pages — frontmatter would be churn.
+- 278 empty-wikilink artifacts (`-  — ` / `- — ` in Related sections) — matches known stable residual (~279, 0 fixable per `watchdog-session-2026-08-13`).
+- 2938 stale pages (>30d), 6602 unreferenced raw articles — backlog metrics, out of auto-fix scope.
+
+### Header recount
+Entities 946 -> 952, Concepts 2207 -> 2211, Total pages 3256 -> 3271, Last updated -> 2026-10-19.
+Recounted from actual index line counts, not increments.
+
+---
+
 ## [2026-10-19] watchdog | Wiki watchdog auto-fix — clean, no remediation needed
 
 Daily watchdog run (17:35 UTC). Verified live state; **no auto-fixes required**.

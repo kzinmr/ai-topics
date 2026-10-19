@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3256
-> Last updated: 2026-10-18
+> Total pages: 3271
+> Last updated: 2026-10-19
 
-## Entities (946 pages)
+## Entities (952 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -14,6 +14,8 @@
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box; AI-powered enterprise content management, Box AI, AI trust layer
 - [[entities/abacaj]] — abacaj — Independent AI researcher
 - [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
+- [[entities/indra-ocr-agent]] — Indra (ByteDance TRAE OCR Agent) — ensemble OCR agent; small specialist models + orchestration beating large generalist VLMs on OCR at a fraction of token cost
+- [[entities/apple-onnx-mlx-modelscope]] — Apple ONNX & MLX ModelScope — on-device model distribution channel for Apple Silicon; ships ONNX + MLX formats via ModelScope; alternative to Hugging Face hub for Apple-local inference
 - [[entities/jan-leike]] — Jan Leike — Anthropic co-lead of agentic safety research; former OpenAI superalignment lead; warns AI research automation is 'the big thing coming in the next year'
 - [[entities/adam-mastroianni]] — Adam Mastroianni — Experimental psychologist and writer; author of Experimental History substack
 - [[entities/adam-rosenthal]] — Redirect: resolves to entities/dshr (David S. H. Rosenthal). No such person in the AI ecosystem; pipeline forename artifact.
@@ -701,6 +703,7 @@
 - [[entities/project-mariner]] — Project Mariner — Google DeepMind's Web Browsing Agent
 - [[entities/project-prometheus]] — Project Prometheus (Bezos AI)
 - [[entities/promptfoo]] — Promptfoo
+- [[entities/ps-5lm]] — PS-5LM — deliberately weak small-model provocation; satirical demonstration that domain-specialized small models rival frontier spend on narrow tasks
 - [[entities/qdrant]] — Qdrant
 - [[entities/qiaochu-yuan]] — QC (Qiaochu Yuan) is a mathematician, philosopher, and writer. Former MIRI researcher, PhD student in mathematics at ...
 - [[entities/quarq-labs]] — Quarq Labs — research lab (LongCoT SOTA with Qwen3.5-9B + scaffold, Apr 2026); scaffold-over-size thesis alongside raw-works/RLM and Alex Zhang
@@ -957,12 +960,13 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2207 pages)
+## Concepts (2211 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
 - [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)
+- [[concepts/aauth]] — AAuth — Client Identity Protocol for AI Agents; draft-hardt-oauth-aauth; client-identity-based agent authorization for MCP-style delegation; intent-based auth panel (Keycard, Oct 2026)
 - [[concepts/agi-declaration-controversy-2026]] — The AGI Declaration Controversy (Sep 2026) — Jensen Huang's "race to AGI is over" claim after GPT-6 Astra; no definition/evidence, Marcus + Chollet (ARC-AGI 3) counter-evidence, incentive table, tension with Pachocki's "alien mind" framing + Leike's AI-research-automation warning
 - [[concepts/abliteration]] — Abliteration
 - [[concepts/absurd-durable-execution]] — Absurd (Postgres-Native Durable Execution)
@@ -989,6 +993,7 @@
 - [[concepts/critique-conditioned-self-distillation]] — Fixes for RLVR all-wrong-group sparsity via privileged teachers measurably fail (signal not localized at errors); dense feedback is a search problem; critique-conditioned self-distillation as bounded fix (arXiv Oct 2026)
 - [[concepts/cross-agent-memory-sharing]] — Cross-Agent Memory Sharing — MemCollab cross-memory collaboration at test time via CrossMemKG + test-time memory evolution; shared-memory compounding vs poisoning risk (arXiv:2609.09192, Sep 2026)
 - [[concepts/dial-metaopd-token-selection-opd]] — DIAL & MetaOPD — Token Selection in On-Policy Distillation; divergence-based reweighting (down-weight mastered tokens) + cold-start fix for OPD reasoning post-training
+- [[concepts/domain-specialization-beats-general-scale]] — Domain Specialization Beats General Scale — small expert models + orchestration rival frontier generalists on narrow tasks at a fraction of token cost; counter-argument to scale-equals-capability
 - [[concepts/epistemic-transparency]] — Epistemic Transparency in LLMs — EpistemicAlignment benchmark & CAEP metric; models give confident compliant answers that hide ambiguity, compounded by sycophancy (arXiv:2609.13775, Sep 2026)
 - [[concepts/flow-language-models]] — Flow Language Models (FLMs) — continuous-state non-autoregressive text models; superposition over candidates beats discrete diffusion at few denoising steps on reasoning
 - [[concepts/frontier-rl-safety-cases]] — Frontier RL Safety Cases — OpenAI proposal that aviation/nuclear-style *safety cases* gate frontier RL training runs: 3-layer technical stack (alignment w/ no-CoT-visible graders, containment, fail-closed monitoring) + operational vetoes/accountability + NTSB-style misalignment investigation (Oct 5)
@@ -1111,6 +1116,7 @@
 - [[concepts/juggler]] — Juggler — Open-source GUI coding agent by JUCE creator Julian Storer
 - [[concepts/lingbot-world-infinity]] — LingBot-World-Infinity — Open-source world model with 60-minute coherent rollouts from Tsinghua THU-KING-NIC-Lab
 - [[concepts/llm-idea-convergence]] — LLM Idea Convergence — parallel/independent invention of the same LLM tooling ideas across the ecosystem
+- [[concepts/local-first-vs-frontier-api-economics]] — Local-First vs Frontier API Economics — break-even analysis for Apple-Silicon local inference vs frontier API token spend; amortized hardware cost vs per-token pricing
 - [[concepts/local-llm/_index]] — Local LLM Ecosystem — Concepts hub for local-LLM sub-pages (Ollama, llama.cpp ecosystem, …)
 - [[concepts/materialized-agent-memory]] — Materialized Agent Memory — Datalog-backed truth-maintenance for long-horizon agents; incremental invalidation of derived beliefs (pwning.systems, Aug 2026)
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
@@ -1128,6 +1134,7 @@
 - [[concepts/security-and-governance/_index]] — Agent Security and Governance — Concepts hub for security/governance sub-pages
 - [[concepts/persistent-memory-attack-surface]] — Persistent Memory Attack Surface — injection→storage→retrieval threat model for persistent agent memory; framework-agnostic; Memory Control Surface (6 controls) (arXiv:2608.22797, Aug 2026)
 - [[concepts/reasoning-instruction-following-failure]] — Reasoning vs Instruction-Following Failure — why reasoning models follow instructions worse; faithfulness drift, reasoning–answer divergence; self-faithfulness predicts instruction-following (arXiv:2609.11643, Sep 2026)
+- [[concepts/security-and-governance/containment-failures-are-security-basics]] — Containment Failures Are Cybersecurity Basics, Not AI Misalignment — agent sandbox escapes reframed as classic least-privilege/containment hygiene failures rather than alignment failures (CSO Online, Oct 2026)
 - [[concepts/signal-allocation-in-post-training]] — Signal Allocation in Post-Training — 4-paper Oct 2026 cluster on which token/restep/reward gets the gradient (DIAL, retrieval credit, RewardWeaver, budget-constrained PRM eval)
 - [[concepts/station-autonomous-math-discovery]] — Station — Decentralized multi-agent mathematical discovery; 5 literature-novel results on AlphaEvolve catalogue problems (arXiv:2608.23691)
 - [[concepts/swe-deceptionbench]] — 720-instance bilingual benchmark of LLM deception across the SDLC; 49.9% Active / 64.3% Passive deception even uninduced; guard models and self-reminder leaky (arXiv Oct 2026)
