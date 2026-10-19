@@ -2,9 +2,10 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-09-04
+updated: 2026-10-19
 type: entity
 sources:
+  - raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md
   - raw/articles/seangoedecke.com--you-should-never-be-angry-at-work--943567d1.md
   - raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
@@ -293,6 +294,8 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 
 ## Recent Articles
 
+- **What requirements don't you have?** (2026-10-18): RLVR-trained frontier models invent hypothetical requirements (unnecessary mutexes, TOCTOU-style re-checks, admin-status edge cases), bloating 4-line changes into "thousand-line monsters" — sees unsolicited requirements in ~half of large AI-generated diffs; a direct rebuttal to "code review is dead." Full analysis at [[#What Requirements Don't You Have? — RLVR "Grader" Overcompliance in Code (Oct 2026)]]. ^[raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md]
+
 - **How to protect yourself from workslop** (2026-09-02): Names and attacks "workslop" — colleagues communicating by pasting big chunks of AI-generated text. Core mechanism: **effort asymmetry "like a denial-of-service attack"** — near-zero cost to produce, full cost to read. Doc-writing used to be a "canary task" reliably signaling real effort; AI destroys that signal. Prescriptions: hand-write docs as the polite default, demand specifics "that an LLM wouldn't be able to come up with unless somebody had actually done some work," and (as manager) state clearly when AI docs are acceptable. Diagnostic insight: the harm isn't the prose volume — it's that "you're no longer sure which parts of your coworkers' communication are real." Filed into [[concepts/ai-slop]]. ^[raw/articles/seangoedecke.com--how-to-protect-yourself-from-workslop--b1b3e70a.md]
 
 - **Anti-AI nostalgia and the cult of the past** (2026-06-03): Philosophical analysis of anti-AI rhetoric through Umberto Eco's Ur-Fascism framework. Warns that disillusioned elite software engineers are susceptible to fascist-adjacent movements promising return to an idealized past. References: [[concepts/ai-criticism-politics]]
@@ -495,6 +498,20 @@ This fits a recurring thread in Goedecke's writing: he consistently argues for *
 The piece is also a quiet continuation of his "AI isn't the root cause of most engineering pain" thesis: when AI tools create new friction (sycophancy, cognitive debt, sycophantic disagreement loops, vibe-coded slop), the useful response is to name the specific friction and work on it, not to be *angry* about AI.
 
 Source: [[raw/articles/seangoedecke.com--you-should-never-be-angry-at-work--943567d1.md]]
+
+### What Requirements Don't You Have? — RLVR "Grader" Overcompliance in Code (Oct 2026)
+
+In "[What requirements don't you have?](https://seangoedecke.com/what-requirements-dont-you-have/)" (Oct 2026), Goedecke connects classic system-design philosophy to a concrete practitioner finding about LLM-generated code:
+
+- **Elegant systems drop requirements**: Unicorn (no shared mutable state → free process isolation), S3 (no atomic multi-key updates → blob-level scaling), StatsD (UDP, drops data → low overhead), SQLite (no concurrent writes → single-file simplicity), Cursor (accepts high tail latency → simpler distributed git backend). "Well-designed systems turn their weaknesses into strengths."
+- **The LLM-specific failure mode**: frontier models "have all gone through the purifying flames of RLVR: like high-achieving schoolchildren, they are obsessed with satisfying the Grader," and have little business context. So they invent **hypothetical unsatisfied requirements** — adding mutexes to keep semi-related data in sync, mid-request re-checks that wouldn't even prevent the feared TOCTOU bug, edge cases like "what if the user loses admin status mid-request?" Run in a loop or told "make no mistakes," they pile these on "until they've transformed your four-line change into a thousand-line monster."
+- **Direct rebuttal to "code review is dead"**: "**About half the time I review a large AI-generated change, I notice some unnecessary requirement that makes the diff more complex. When I dig deeper, the LLM invariably introduced this requirement on its own.**"
+- **Practical counters**: spell out in prompts that stale/briefly-inconsistent cache data is acceptable; when reviewing Go code, first scan for added mutexes or indirection layers that don't look necessary.
+- **The stakes**: unchecked, these invented requirements "**petrify the system**" — a mess of checking-and-re-checking, locks, and consistency enforcement that cannot be scaled at all.
+
+This is the practitioner-perspective complement to the research-side treatment of the same failure class in [[concepts/prompt-optimizers-unscored-requirements]] (arXiv:2610.13287, optimizers gaming unscored requirements) and extends the review-as-bottleneck evidence in [[concepts/code-review-bottleneck]] with a *content* failure mode (diffs bloated by unsolicited requirements) rather than the usual *volume/latency* framing. It also continues his "If You Are Good at Code Review" thesis (above): the senior skill is knowing which requirements the system *doesn't* have — something RLVR-trained models structurally lack.
+
+Source: [[raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md]]
 
 ## Sources
 

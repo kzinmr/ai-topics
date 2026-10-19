@@ -3,7 +3,7 @@ title: "Michał Zalewski (lcamtuf)"
 tags: [person]
 sources: [raw/articles/lcamtuf.substack.com--p-meta-7000--c0ce64cc.md]
 created: 2026-04-24
-updated: 2026-08-05
+updated: 2026-10-19
 type: entity
 ---
 
@@ -151,6 +151,7 @@ The Watchdog Timer safety mechanism in his Game of Life build — forcing a rebo
 - **Photography as technical craft**: Contrarian approach emphasizing understanding over gear
 - **Human authorship**: Explicit stance against AI content generation and training on creative work
 - **AI children's book quality analysis**: Analysis of body-horror-quality AI-generated children's book illustrations and market structure incentives
+- **"Dead German guys" — techno-rationalism as philosophy-lite (Oct 2026)**: In an essay on geek-adjacent philosophy education, Canali argues that when geeks debate the ethics of their profession "they don't turn to the classics; they usually invent philosophy-lite, often gravitating toward **techno-rationalism** — an internet-centric mixture of self-serving utilitarianism, sketchy statistics, and quasi-religious beliefs about AI (allegedly with a bit of a sex cult on the side)." Contrasts philosophy's "waste of time" reputation with math's "filter, not a ladder" problem (quoting Thomas Dullien), and notes teens *do* engage with philosophy via memes and cult films (The Matrix, Ex Machina) without seeing the link to Heidegger or Kant. The AI critique — quasi-religious faith embedded in techno-rationalist ethics — fits his recurring skepticism of AI hype ([[concepts/ai-slop]]). [Original](https://blog.coredump.cx/p/dead-german-guys) ^[raw/articles/blog.coredump.cx--p-dead-german-guys--5bef5a38.md]
 
 ## Related Concepts
 

@@ -1,3 +1,18 @@
+## [2026-10-19] ingest | Blog wiki ingest (run 20261019T100541Z)
+
+Processed blog-triage checkpoint 20261019T100541Z (20 decisions: 1 take, 5 reference, 14 skip; recovered from triage_latest.json after cron output JSON parse failure).
+
+**Pages Updated:**
+- `entities/seangoedecke-com.md` — take: new Core Ideas section "What Requirements Don't You Have? — RLVR 'Grader' Overcompliance in Code (Oct 2026)" (invented hypothetical requirements, ~half-of-diffs finding, code-review-is-dead rebuttal, petrification) + Recent Articles entry; cross-linked to concepts/prompt-optimizers-unscored-requirements, concepts/code-review-bottleneck.
+- `entities/simon-willison.md` — 2 references: llm-tools-datasette 0.1.1 (httpx2 migration plugin fallout follow-up to llm 0.32.1 section) + llm-echo 0.5 (simulated token-usage mock harness).
+- `entities/cory-doctorow.md` — reference: "The technopolitics of ad-tech" (Oct 19) — Winner framework, surveillance-vs-context ads, ~5% efficacy delta, ban-surveillance-ads conclusion.
+- `entities/troy-hunt.md` — reference (title-level): Weekly Update 526 "Building HIBP AI/SI First" (body not extracted).
+- `entities/lcamtuf.md` — reference: "Dead German guys" — techno-rationalism as philosophy-lite, quasi-religious AI beliefs critique.
+
+Skips (14): kernel releases, retro computing, Apple hardware promo, MFA wristwatch, political X clips, comics. Unsaved (6): Bloomberg/The Information/FT paywalls + AI Engineer YouTube.
+
+---
+
 ## [2026-10-19] tag-audit | Weekly tag taxonomy audit — clean (0 violations)
 
 - `scripts/tag_audit.py`: 3,316 pages scanned, 888 unique tags in use, 959 SCHEMA tags.

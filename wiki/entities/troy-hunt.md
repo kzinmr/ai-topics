@@ -3,7 +3,7 @@ title: "Troy Hunt"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-10-19
 type: entity
 ---
 
@@ -154,6 +154,8 @@ His teaching philosophy is **offensive-first**: understand how attacks work befo
 > *"I hate hyperbolic news headlines about data breaches."* — on media coverage of security incidents (2025)
 
 ## Recent Themes (2024–2026)
+
+- **HIBP "AI/SI first" operating policy (Oct 2026)**: Weekly Update 526 — "Building HIBP AI/SI First" — announced a shift in HIBP's operating priorities toward AI / security-intelligence work. Only the title was captured by the RSS scrape (body not extracted); concrete technical claims pending a re-fetch of [krebsonsecurity-adjacent weekly post](https://www.troyhunt.com/). Consistent with his existing "AI as transformative tool, not replacement" stance (see [[#AI as Transformative Tool, Not Replacement]]).
 
 - **Privacy ethics**: Universal privacy rights, even for morally stigmatized populations
 - **Breach verification**: Transparent methodology for validating and attributing breach data

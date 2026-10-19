@@ -197,7 +197,7 @@
 - [[entities/core-auto]] — Core Auto
 - [[entities/coreweave]] — CoreWeave
 - [[entities/corti]] — Corti
-- [[entities/cory-doctorow]] — Cory Doctorow; Technology Freedom Cooperative — post-American compute, federated human-rights AI infrastructure (Aug 4)
+- [[entities/cory-doctorow]] — Cory Doctorow; Technology Freedom Cooperative — post-American compute, federated human-rights AI infrastructure (Aug 4); "The technopolitics of ad-tech" (Oct 19: Winner's Do Artifacts Have Politics applied to ads — surveillance not advertising is the original sin; ~5% surveillance-ad efficacy delta; context ads as federated, publisher-favoring alternative; ban surveillance ads)
 - [[entities/courtlistener]] — CourtListener
 - [[entities/creao]] — CreaoAI (CREAO)
 - [[entities/cursor-3]] — Cursor 3
@@ -490,7 +490,7 @@
 - [[entities/langsmith]] — LangSmith
 - [[entities/larsen-cundric]] — Larsen Cundric
 - [[entities/late-interaction]] — Late Interaction Workshop (LIR) @ ECIR 2026
-- [[entities/lcamtuf]] — Michał Zalewski (lcamtuf); "party at the end of the internet" — LLM slop + Google pre-digested answers killing organic search (Aug 2026)
+- [[entities/lcamtuf]] — Michał Zalewski (lcamtuf); "party at the end of the internet" — LLM slop + Google pre-digested answers killing organic search (Aug 2026); "Dead German guys" — techno-rationalism as geeks' philosophy-lite with quasi-religious AI beliefs (Oct 2026)
 - [[entities/learnvector]] — LearnVector — Andrew Ng's AI edtech company; $100M Coursera investment; one-to-one AI-powered learning platform with adaptive tutoring (Aug 2)
 - [[entities/lee-robinson]] — Lee Robinson — Model behavior at Cursor AI, former VP of Product at Vercel; accessible explanations of model training (pretraining → SFT → RL → alignment)
 - [[entities/lenny]] — Lenny Rachitsky
@@ -771,7 +771,7 @@
 - [[entities/scott-stevenson]] — Scott Stevenson
 - [[entities/scott-wu]] — Scott Wu
 - [[entities/screenpipe]] — Screenpipe (YC S26) — 24/7 local AI screen and mic recording, turns computer activity into agent-accessible data; 20.5K GitHub stars, Rust, MCP integration (Jul 26)
-- [[entities/seangoedecke-com]] — Sean Goedecke; "How to Keep Thinking" section (Aug 6: hammock time in the LLM-agent era, write in your own words, read books); "I got an email about resistance" response to complicity critics (Aug 9); "No, Local Models Will Not Win" (Aug 11: batching + GPU efficiency ~30x, revealed preference for strongest model, niche remains); "You should never be angry at work" (Aug 21: precise, named dissatisfaction over diffuse resentment — emotional-regulation corollary to the "AI isn't the root cause of most engineering pain" thesis)
+- [[entities/seangoedecke-com]] — Sean Goedecke; "How to Keep Thinking" section (Aug 6: hammock time in the LLM-agent era, write in your own words, read books); "I got an email about resistance" response to complicity critics (Aug 9); "No, Local Models Will Not Win" (Aug 11: batching + GPU efficiency ~30x, revealed preference for strongest model, niche remains); "You should never be angry at work" (Aug 21: precise, named dissatisfaction over diffuse resentment — emotional-regulation corollary to the "AI isn't the root cause of most engineering pain" thesis); "What requirements don't you have?" (Oct 18: RLVR "Grader"-obsessed models invent hypothetical requirements — mutexes, TOCTOU re-checks — bloating 4-line changes into thousand-line monsters; unsolicited requirements in ~half of large AI diffs; rebuttal to "code review is dead")
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. Provides 6 specialized tools for code analysis, search, and retrieval from any...
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka — ML researcher, 'Build a Reasoning Model (From Scratch)', LLM architecture analysis
@@ -803,7 +803,7 @@
 - [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026); Context Engine — customer relationships as moat (Aug 4)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
-- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13); sqlite-utils 4.2.1 crash fix + `uv run --isolated --no-default-groups` dependency-isolation smoke test (Aug 13); Bun 1.4 Bun.WebView JSON API prototype (Aug 20: 192–256MB container for full Chrome, shot-scraper-style API); "Stop Making TUIs" highlight of Thomas Ptacek's argument (Aug 21: coding agents have driven GUI cost toward zero, the old CLI/TUI cheap-default economics no longer hold); llm 0.32.1 + llm-openrouter 0.7 release notes (Aug 21: httpx/openai<3 stopgap, OpenRouter reasoning traces); "More than just code review" (verify agent changes, don't just eyeball) + Linus Torvalds "debug session from hell" quote on an AI that won't give up (Aug 22); "Conceptual integrity and counting lines of code" — pro-lines-of-code productivity argument, cognitive capacity as the new limit, conceptual integrity as the casualty (Aug 23); Qwen3.8-Flash-Next early local testing on DGX Spark with Unsloth quants (Aug 26: 125B/6B-active MoE as early Qwen4 architecture preview)
+- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13); sqlite-utils 4.2.1 crash fix + `uv run --isolated --no-default-groups` dependency-isolation smoke test (Aug 13); Bun 1.4 Bun.WebView JSON API prototype (Aug 20: 192–256MB container for full Chrome, shot-scraper-style API); "Stop Making TUIs" highlight of Thomas Ptacek's argument (Aug 21: coding agents have driven GUI cost toward zero, the old CLI/TUI cheap-default economics no longer hold); llm 0.32.1 + llm-openrouter 0.7 release notes (Aug 21: httpx/openai<3 stopgap, OpenRouter reasoning traces); "More than just code review" (verify agent changes, don't just eyeball) + Linus Torvalds "debug session from hell" quote on an AI that won't give up (Aug 22); "Conceptual integrity and counting lines of code" — pro-lines-of-code productivity argument, cognitive capacity as the new limit, conceptual integrity as the casualty (Aug 23); Qwen3.8-Flash-Next early local testing on DGX Spark with Unsloth quants (Aug 26: 125B/6B-active MoE as early Qwen4 architecture preview); llm-tools-datasette 0.1.1 (httpx2 migration plugin fallout, Oct 18) + llm-echo 0.5 (simulated token-usage mock harness for tool calls/system prompts/reasoning tokens, Oct 18)
 - [[entities/simone-salis]] — Simone Salis
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent)
 - [[entities/siyan-zhao]] — Siyan Zhao
@@ -879,7 +879,7 @@
 - [[entities/tomasz-tunguz]] — Tomasz Tunguz
 - [[entities/transluce]] — Transluce — AI safety research institute (Alex Mabrey, Nathan Carter); URLQuery-based Agent Activity Report documenting real-world rogue agent behavior
 - [[entities/traversal]] — Traversal
-- [[entities/troy-hunt]] — Troy Hunt
+- [[entities/troy-hunt]] — Troy Hunt; Weekly Update 526 "Building HIBP AI/SI First" — HIBP operating-priority shift toward AI/security-intelligence (Oct 2026, title-level)
 - [[entities/trq212]] — Thariq Shihipar (@trq212)
 - [[entities/trycua-cua]] — TryCua (Cua)
 - [[entities/typesafe-ai]] — TypeSafe AI — stealth lab (founder Diogo Almeida, ex-OpenAI ChatGPT instruction-following research); launched Jev (Sep 15, 2026), first "System One model" — structured-decision-only LLM, 40–200x faster, RLCD training; Oct 2026: Jev-as-a-Judge paper (accept-when-confident beats GPT-6 by 0.9 pts at 41% cost, paper-reported)

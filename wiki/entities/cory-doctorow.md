@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-08-15
+updated: 2026-10-19
 status: L3
 sources:
   - https://pluralistic.net/
@@ -356,6 +356,19 @@ In "[Capital formation](https://pluralistic.net/2026/08/14/one-chokable-throat/)
 > "You can't put a chatbot in prison for violating anti-circumvention law, right? I regret to inform you that if you did this... they wouldn't blame your chatbot for writing the exploit: they'd blame you for prompting the chatbot to create this new tool."
 
 The point extends his long-running DMCA critique into the agentic-AI era: prompting an LLM to produce circumvention tooling transfers legal responsibility to the prompter rather than diffusing it. Relevant to [[concepts/agent-safety]] and digital-rights discourse, and a novel angle on who is accountable for agent-generated actions (cf. the agent-liability debates in [[events/openai-huggingface-incident-july-2026]]).
+
+### The Technopolitics of Ad-Tech (Oct 19, 2026)
+
+In "[The technopolitics of ad-tech](https://pluralistic.net/2026-10-19/spying-v-context/)" (Oct 19, 2026), Doctorow applies Langdon Winner's "Do Artifacts Have Politics?" framework (Robert Moses's low bridges; the tomato harvester; solar vs. nuclear) to advertising, adding his own gloss: Winner's categories omit **technological countermeasures** (a low-clearance bus design un-racists the bridges).
+
+Core theses:
+- The internet's original sin is **surveillance, not advertising** — "There is nothing about advertising that demands surveillance." Fusing the two was a political decision (letting privacy laws lapse), not a technopolitical inevitability; remembering it is a *choice* puts blame on the executives who made it.
+- Surveillance ads deliver advertisers only **~5% more value** than context ads (WEIS 2019 study), and even that shrinks because surveillance ad-tech monopolized into the Google/Meta duopoly (~80% of display ads), colluded (Jedi Blue), "can't account for hundreds of billions," and most users now run blockers.
+- Surveillance is capital-intensive → tends to monopoly; context ads are **federated** and structurally favor publishers, because "publishers will always understand the materials they publish better than any ad-tech platform could." Dutch public-broadcaster data shows context ads earn publishers *more*.
+- Surveillance ad technopolitics: favors middlemen, tends to monopoly, favors low-quality media (chumboxes), impedes privacy law, hands authoritarians warrantless surveillance dossiers (ICE removals, oligarch "autostabilizer"). Conclusion: **ban surveillance advertising** (EFF).
+
+Adjacent to his [[concepts/enshittification]] framework and platform-monopoly work; the "surveillance is politics, not technopolitics" move is his counter to techno-determinist framings of AI-era data collection too.
+Source: [[raw/articles/pluralistic.net--2026-10-19-spying-v-context--4da82051.md]]
 
 ## Related Pages
 
