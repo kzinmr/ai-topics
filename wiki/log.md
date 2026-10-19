@@ -1,3 +1,14 @@
+## [2026-10-19] tag-audit | Weekly tag taxonomy audit — clean (0 violations)
+
+- `scripts/tag_audit.py`: 3,316 pages scanned, 888 unique tags in use, 959 SCHEMA tags.
+- Composite kebab-case tags: 0. Tags NOT in taxonomy: 0. Coverage 108% (all valid).
+- `tag_normalization.py --dry-run` listed 411 pages, but `tag_normalization_diff_scan.py` classified ALL 411 as preference-rewrites on already-valid SCHEMA tags (agent-security→agent-safety, gpu→hardware, etc.) — 0 genuine violations.
+- Decision: wholesale normalization SKIPPED per 2026-08-10 precedent (preference rewrites degrade specificity).
+- No TAG_NORMALIZATION additions, no SCHEMA.md changes, no page edits, no commit.
+- Flagged for manual review: TAG_NORMALIZATION dict contains ~100 preference-rewrite mappings that keep inflating dry-run scope on clean wikis; consider pruning or gating them behind a flag.
+
+---
+
 ## [2026-10-17] ingest | X accounts scan: NVIDIA ASPIRE (Jim Fan)
 
 - Saved raw: `raw/articles/nvidia-aspire-agentic-skills-discovery-robotics-2026.md` (project page scrape, tweet 2111128798645416006 @drjimfan)
