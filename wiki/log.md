@@ -1,3 +1,29 @@
+## [2026-10-19] watchdog | Wiki watchdog auto-fix — clean, no remediation needed
+
+Daily watchdog run (17:35 UTC). Verified live state; **no auto-fixes required**.
+
+### Pipeline alerts (triaged — both transient, not actionable here)
+- **x_accounts stale(26h)**: false positive. `x-accounts-scan` is every-2-days (`30 22 */2 * *`), last run 2026-10-17 22:35 `ok`, next 2026-10-19 22:30 UTC (today). Per `watchdog-session-2026-09-28/29` rule — treat as OK.
+- **newsletter chain `ingest_ok_but_triage_failed`**: real but transient. `newsletter-triage` (10:30) and `newsletter-wiki-ingest` (10:50) both errored with `HTTP 503: Local LLM server is busy`. Ingest succeeded (checkpoint written). Retry scheduled for tomorrow 10:30/10:50 UTC. No manual intervention unless it recurs 2+ days.
+
+### Wiki structural health (independently verified — not trusting 74h-old report)
+- index.md: 3,290 lines, `validate_index.py` exit 0. Pipe corruption 0, triple-bracket 0, line-number 0, L2 `|- [` 0.
+- `quant`→`quantization` tag violation from 2026-10-16 graph report: **0 live occurrences** (already resolved upstream).
+- Missing frontmatter: only 4 `queries/` snapshot/WIP notes (skeleton-enrich + uncommitted-WIP auto-notes) — low-churn, no action.
+
+### Graph report (2026-10-16, 74.5h old) — NEEDS-HUMAN backlog
+HIGH/MED items from weekly graph analysis are large multi-file initiatives (out of watchdog auto-fix scope):
+1. Path-normalization of broken links (`context-engineering` ×201 mis-pathed to `concepts/harness-engineering/`, `claude-code` ×47 wrong namespace, +87 cross-namespace fixes).
+2. Consolidate 14 duplicate groups (5 person-slug rich+stub pairs: eugene-yan, lilian-weng, samuel-colvin, martin-fowler, giles-thomas).
+3. 93% orphan rate = hub-density problem (~2,000 loose top-level concepts lack `_index.md` fan-out).
+4. Fix `wiki_graph_analysis_weekly.py` tooling (`os.listdir`→`os.walk`, dedup `[[[[…]]]]` regex, basename-aware index check).
+
+These require deliberate editing across 10+ files → report only, no auto-fix.
+
+### No changes made to wiki content this run.
+
+---
+
 ## [2026-10-19] trending | Trending topics 2026-10-19 — latent reasoning, LLM-hostile languages, self-run proxies
 
 Scanned HN front page + keyword queries (Algolia, 3-day window, >=80 pts), blog-ingest checkpoint
