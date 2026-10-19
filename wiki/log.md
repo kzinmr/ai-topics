@@ -254,3 +254,7 @@ Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved
 
 - The user explicitly requested committing and pushing the completed ai-coding import and this transfer log directly to main. Earlier no-commit/no-push entries describe the local-copy stage before that authorization.
 - Destination readiness checks passed for the verified import. The source main received two independent upstream commits after the pinned import revision; preserve those commits when integrating this log-only change. The original-source revision in the ai-coding manifest remains the actual copied snapshot.
+
+## 2026-10-19 09:30 JST — morning hot-post
+- Topic: domain specialization vs scale — Indra (TRAE OCR agent) + PS-5LM + NVIDIA ASPIRE
+- Delivered to Discord hot-post thread
