@@ -1,10 +1,14 @@
 ---
 title: "Nader Dabit"
-tags: [person]
-sources: []
 created: 2026-04-24
-updated: 2026-04-13
+updated: 2026-10-19
 type: entity
+tags:
+  - person
+  - coding-agents
+  - ai-agents
+sources:
+  - https://devin.ai/blog/efficiency-based-cost-controls
 ---
 
 
@@ -99,6 +103,20 @@ Transitioned to **decentralized finance (DeFi)** and blockchain infrastructure:
 Founded a training company that taught React Native to engineers at **Microsoft, Amazon, Salesforce, and American Express**. This experience gave him a deep understanding of developer onboarding friction — a perspective that later informed his cloud agent philosophy.
 
 ## Key Publications
+
+### Cognition/Devin enterprise cost controls (Oct 2026)
+
+On 2026-10-19 Dabit (Growth Engineer at Cognition, promoting his team's work) shared Cognition's blog post **"A smarter approach to AI cost controls: allocating spend by efficiency"** (devin.ai/blog/efficiency-based-cost-controls), replying that getting this right is *"not easy but we have been focusing on figuring it out"* and welcoming competing approaches.
+
+The post argues blanket usage caps are "akin to a hiring freeze in the AI era" — blunt instruments that throttle the most AI-efficient engineers while giving inefficient users no feedback. Cognition's three enterprise features instead allocate spend by measured engineering efficiency:
+
+| Feature | Mechanism |
+|---|---|
+| **Efficiency Score** | 0–100 grade per engineer over recent sessions, built on "productive engineering hours" — Devin estimates how long a human engineer would need for the same work, *including* sessions (planning, triage, data analysis, investigations) that never produce a merged PR; efficiency per unit of spend dominates, smaller credit for volume |
+| **Devin Coach** | Pre-run prompt feedback: flags vague requests, an expensive mode for a simple task, or unrelated tasks bundled into one session, and suggests a fix |
+| **Efficiency-based approvals** | Auto-raises limits for engineers graded Healthy/Satisfactory up to an admin-set ceiling; everyone else's requests route to admin review |
+
+Customer evidence (Will Laughlin, VP Engineering, Bilt): power users get more usage without asking, unproductive usage surfaces for conversation, and Devin Coach makes user training scale. This is the enterprise-side complement to Dabit's Cloud Agent Thesis — see [[concepts/enterprise-ai-cost-management]].
 
 ### "How Cognition Uses Devin to Build Devin" (Feb 2026)
 

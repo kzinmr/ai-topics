@@ -2,7 +2,7 @@
 title: "Vercel Labs"
 type: entity
 created: 2026-05-18
-updated: 2026-10-03
+updated: 2026-10-19
 tags:
   - company
   - product
@@ -40,7 +40,8 @@ Zero represents Vercel Labs' bet on the **agent-first future of programming**, w
 
 ## Other Vercel Labs projects (2026)
 
-- **scriptc** — an experimental **TypeScript-to-native compiler** (compiles TS/JS to native executables and WebAssembly using type info; static builds need no Node/JS engine). Self-hosted (compiles its own source) as of Sep 2026. See [[concepts/scriptc-typescript-native-compiler]].
+- **scriptc** — an experimental **TypeScript-to-native compiler** (compiles TS/JS to native executables and WebAssembly using type info; static builds need no Node/JS engine). Self-hosted (compiles its own source) as of Sep 2026; **tsc-ts** (Oct 2026) proves the pipeline by compiling a full TypeScript port of the tsgo 7.0.2 compiler, 2.8–4.2× faster than tsgo on real codebases. See [[concepts/scriptc-typescript-native-compiler]].
+- **tsc-ts** — TypeScript-written port of the TypeScript 7.0.2 (tsgo) compiler, natively compiled by scriptc; verified stage-by-stage against tsgo on TypeScript's test corpus. `npm i tsc-ts`.
 - **fx** ([vercel-labs/fx](https://github.com/vercel-labs/fx)) — "The tiny open native coding agent", a Unix-like minimal CLI coding-agent harness (Zig, Apache-2.0). Featured by [[entities/chris-tate|Chris Tate]], including running Sonnet 5.5 in it.
 - **json-render** / **agent-browser** / **Is Agentic** — see [[entities/chris-tate]].
 

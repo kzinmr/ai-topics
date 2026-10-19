@@ -2,7 +2,7 @@
 title: Chris Tate
 type: entity
 created: 2026-04-10
-updated: 2026-10-03
+updated: 2026-10-19
 source: "x-account"
 related: [entities/simonw, entities/antirez-com, entities/geoffreylitt-com, entities/mitsuhiko]
 tags:
@@ -129,6 +129,12 @@ He occasionally shares **technical threads** explaining the reasoning behind his
 - **Sep 28 — [fx](https://github.com/vercel-labs/fx) + Sonnet 5.5:** Re-featured **fx** ("The tiny open native coding agent", vercel-labs/fx) — this time with **Sonnet 5.5 running in fx "instantly"**, underscoring fx as a minimal harness for frontier coding models.
 - **Sep 30 — [scriptc](https://github.com/vercel-labs/scriptc):** Announced **scriptc**, a Vercel Labs **TypeScript-to-native compiler** (`npm install -g scriptc`), celebrating that *"scriptc now compiles itself"* — the compiler turned its own TypeScript into a native executable. See [[concepts/scriptc-typescript-native-compiler]].
 - **Aug 21 — [Is Agentic](https://is-agentic.com) (by Vercel):** Called out Vercel's **Is Agentic** scorer (`npx is-agentic [domain]`), which rates how ready a website is for AI agents (server-rendered content, HTTP behavior, document structure, recoverable errors, usable controls; scans run by Ora). Noted the meta twist that the tool is *itself agentic* — "your agent can use it to make your site more agentic."
+
+## X Activity Log (Oct 2026)
+
+- **Oct 12 — scriptc + Effect:** Replied that **much of Effect 3 + 4 can be compiled with scriptc**, inviting issue reports for missing features. Effect is a large, type-heavy TypeScript effect system — early evidence that scriptc's static path handles real-world advanced-type codebases.
+- **Oct 14 — scriptc v0.3.2:** Announced **scriptc v0.3.2**. Vercel Labs pins a specific scriptc version per consumer project (e.g. `tsc-ts` pins scriptc 0.3.6), so point releases are tracked closely downstream.
+- **Oct 17 — [tsc-ts](https://github.com/vercel-labs/tsc-ts):** Announced **tsc-ts**, an experimental **TypeScript port of the TypeScript 7.0.2 compiler (tsgo / TypeScript-Go), compiled to native code with scriptc** (`npm i tsc-ts`). Headline benchmarks vs tsgo: **VS Code 4.2×, Sentry 4.2×, TypeORM 3×, tRPC 2.8× faster type-checking**. Every compiler stage (scanner, parser/AST, binder, module resolution, tsconfig/programs, CLI options, diagnostics catalog incl. 13 translations, JS emit across 39 option sets, declaration emit) is verified against tsgo on TypeScript's own test corpus (~12,500 files / ~17,000 units) with all compared units matching. See [[concepts/scriptc-typescript-native-compiler]].
 
 ## Notable Quotes & Statements
 

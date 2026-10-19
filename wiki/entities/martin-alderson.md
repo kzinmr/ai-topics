@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-08-24
+updated: 2026-10-18
 tags:
   - person
   - blogger
@@ -327,6 +327,17 @@ Alderson published a comprehensive framework for enterprise AI cost reduction, s
 Best practice from even a year ago can be "actively harmful now." Teams should schedule at least quarterly reviews of token spend and model/agent landscape changes.
 
 Source: [How I think about reducing AI costs](https://martinalderson.com/posts/how-i-think-about-reducing-ai-costs/) (Aug 2026)
+## 2026-10 — "How the AI boom might really end: 5 scenarios"
+
+Alderson's October 2026 scenario piece, written as chip stocks posted their longest losing streak since 2008 and CoreWeave's CDS hit distressed levels ([raw](../raw/articles/martinalderson.com--posts-how-the-ai-boom-might-really-end--02f21488.md)). Distinctive for inverting the usual bubble framing: he argues an *enormous* amount of value is genuinely being created ("the first time capital can be turned into intelligence"), so the interesting failure mode is not "AI disappoints" but **"AI works well, but the value doesn't flow to the people putting the money in"** — consumer surplus, not investor returns.
+
+**Two groups of scenarios:**
+- *Group 1 (AI disappoints / gets stopped):* models stop improving (discounted — no slowdown visible; watch for **task-specific regression** instead, e.g. Opus 5 gaining coding but producing unreadable prose); alignment incident (he thinks "we are getting dangerously close to an incident" post-Hugging Face warning shot, with the US–China race making a coordinated pause implausible); datacentre bans (a likely 2028 US election battleline, but only a *global* ban bites).
+- *Group 2 (AI works, value accrues elsewhere) — his leading hypothesis:* **open-weight price compression**. Haiku 5.5 launched 90% cheaper on short contexts (but 5x price jump past 100K tokens; GPT-6 Luna only 1.5–2x past 272K), and for the first time no reputable provider discounts open-weight DeepSeek below frontier short-context pricing — a reversal from the 10–20x frontier premium earlier in 2026. Frontier labs risk losing *margin* while token volume keeps exploding. The other variant is a **telecom-style efficiency overshoot** (DWDM analogy): watch **GPU spot prices**, not token-cost indexes, as the tell that supply/demand has reached equilibrium.
+
+**Key methodological claim:** judge the market by **overall token/compute revenue**, not OpenAI-vs-Anthropic head-to-head — TSMC reported record revenue saying AI demand still exceeds supply *in the same week* chips were sold off. His closing line: "If the AI boom ends, I don't think it ends with fewer tokens. It ends with the same tokens — or far more — flowing to far more people at far lower margins." The one accelerant is leverage — so much of the buildout is debt-funded that small shocks unwind far faster than fundamentals justify (directly reinforcing [[concepts/ai-subprime]] and [[concepts/subprime-data-center-crisis]]).
+
+
 
 ## Related
 

@@ -2,7 +2,7 @@
 title: Drew Breunig
 type: entity
 created: 2026-04-10
-updated: 2026-08-23
+updated: 2026-10-19
 source: blog
 tags:
   - person
@@ -74,6 +74,7 @@ His blog at dbreunig.com, active since 2010, covers AI, geospatial technology, m
 | 2026 | Releases `drskill` — CLI tool for debugging agent skill/MCP loadouts and CI security |
 | 2026 | "Separating Task from Model" — argues for task-model separation as core DSPy/GEPA philosophy |
 | 2026-08-23 | "Fable & The End of the Free Lunch" — Fable ends the "free lunch": agentic coding now requires deliberate work-routing across model tiers (Fable for design, GLM 5.2 for execution) |
+| 2026-10-17 | X post criticizing **Claude.app** mobile UX: the keyboard cannot be hidden, forcing users to read through a 2–3-line window after typing a paragraph or two of feedback — an input/feedback-surface critique in the vein of his context-UX work |
 
 ## Core Ideas
 

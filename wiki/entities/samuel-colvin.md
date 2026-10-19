@@ -1,9 +1,11 @@
 ---
 title: "Samuel Colvin — Creator of Pydantic, Pioneer of Type-Safe AI Agents"
 tags: [person]
-sources: []
+sources:
+  - https://github.com/pydantic/monty/releases/tag/v1.2.0
+  - https://github.com/pydantic/monty/pull/1016
 created: 2026-04-15
-updated: 2026-06-11
+updated: 2026-10-19
 type: entity
 ---
 
@@ -75,6 +77,8 @@ type: entity
 - **Jun 11, 2026**: Monty PR #500 — Move execution to a subprocess pool. Implements crash-isolated worker subprocesses via protobuf protocol (158 files, +25,642/-17,879 lines). Improves safety: crashes kill only a worker, not the host process.
 - **Apr 2026**: Serializable Agents (TOML-defined agents) in development
 - **Oct 13, 2026**: Published "The code IS the graph" (X Article, originally at pydantic.dev) — argues graph libraries are a mistake; code itself is the graph. Formalizes the "typed / snapshotted / parallel — pick two" impossibility and positions [[concepts/monty-sandbox|Monty]] + Temporal replay as the answer. See [[concepts/code-as-graph]].
+- **Oct 17, 2026**: **Match statements merged into Monty** ([PR #1016](https://github.com/pydantic/monty/pull/1016)) — implements `match` (PEP 634) end to end: parsing, compilation, new bytecode opcodes, and VM runtime for every pattern kind (value, singleton, capture, wildcard, sequence, mapping, class patterns).
+- **Oct 18, 2026**: **Monty v1.2.0 released** ([release notes](https://github.com/pydantic/monty/releases/tag/v1.2.0)) — a large release whose headline items: `match` statements (PR #1016), `hashlib` (#988), `os.path` (#1000), `csv` module (#1018), `bisect` module (#1047), `dataclasses` `field()`/`default_factory`/`__post_init__` (#835), import-host call (#942), direct sequence unpacking optimisation (#1015), shared `PyHashTable` for dict/set (#884), list slice assignment (#1031), plus many security/resource-limit hardenings (binascii & base64 limit checks #842, session budget caps #1027).
 
 ## Core Philosophy
 

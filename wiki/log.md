@@ -1,3 +1,24 @@
+## [2026-10-19] ingest | x-accounts-scan: Monty v1.2.0, tsc-ts, Devin efficiency cost controls, Gemma docs, Antigravity model matrix
+
+Scan covered 11 accounts, 9 new linked posts. No new pages created — all content folded into existing entities/concepts.
+
+### Updated
+- [[entities/samuel-colvin]] — Oct 17 match statements merged (PR #1016, PEP 634 end-to-end: parse/compile/new opcodes/VM runtime for all pattern kinds); Oct 18 **Monty v1.2.0** release (hashlib, os.path, csv, bisect, dataclasses field()/default_factory/__post_init__, import host call, slice assignment, PyHashTable shared dict/set, session-budget caps, CPython-3.14.8 float precision cap).
+- [[concepts/monty-sandbox]] — new "Release Highlights" section with the v1.2.0 breakdown.
+- [[entities/chris-tate]] — new Oct 2026 X Activity Log: scriptc compiles much of Effect 3+4 (Oct 12); scriptc v0.3.2 (Oct 14); **tsc-ts** announcement (Oct 17) — TS-written port of tsgo 7.0.2 compiled with scriptc, 4.2×/4.2×/3×/2.8× faster type-checking vs tsgo on VS Code/Sentry/TypeORM/tRPC.
+- [[concepts/scriptc-typescript-native-compiler]] — new "tsc-ts" section incl. corpus-verification strategy (~12,500 files/17,000 units, all matching) and scriptc 0.3.6 pinning.
+- [[entities/vercel-labs]] — added tsc-ts to the project list.
+- [[entities/nader-dabit]] + [[concepts/enterprise-ai-cost-management]] — Cognition "Efficiency-based cost controls" (Efficiency Score 0–100 on productive engineering hours incl. non-PR sessions, Devin Coach pre-run prompt feedback, efficiency-based auto-approvals; Bilt testimonial). Concept page gained an "Efficiency-Graded Allocation" analysis section.
+- [[entities/philipp-schmid]] + [[entities/gemma-4]] — new official Gemma 4 docs portal at gemma.ai (capabilities, fine-tuning guides, inference optimizations, model-internals education, WebGPU playgrounds, partner integrations).
+- [[entities/google-antigravity]] — "Choose a model" docs snapshot: thinking levels Low/Medium/High, full plan-gated model matrix (Gemini 4 Argon, 3.8/3.7/3.6 Flash, 3.1 Pro; Claude Sonnet/Opus 5.5 & 4.6 thinking; GPT-OSS 120B), Claude 4.6 + GPT-OSS removal date 2026-11-02.
+- [[entities/drew-breunig]] + [[entities/anthropic]] — Claude.app mobile UX complaint (keyboard cannot be hidden → 2–3-line reading window).
+
+### Skips
+- None of the 9 posts were pure noise; the Drew Breunig Claude.app post was logged as a minor UX note only (no dedicated page — single-sentence complaint).
+
+Sources: github.com/pydantic/monty/releases/tag/v1.2.0, github.com/pydantic/monty/pull/1016, github.com/vercel-labs/tsc-ts, github.com/vercel-labs/scriptc, gemma.ai, antigravity.google/docs/models, devin.ai/blog/efficiency-based-cost-controls.
+
+
 ## [2026-10-19] skeleton-enrich | Empty backlog (6th consecutive)
 
 Frontmatter scan of wiki/entities + wiki/concepts: 0 `status: skeleton` pages. No enrichment performed. Snapshot: [[queries/2026-10-19-skeleton-enrich-empty]].

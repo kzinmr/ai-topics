@@ -1,7 +1,7 @@
 ---
 title: "Code Review Bottleneck — Why More AI Code Has Not Meant More Software"
 created: 2026-10-16
-updated: 2026-10-16
+updated: 2026-10-19
 type: concept
 tags: [developer-tooling, code-quality, ai-industry, ai-economics, coding-agents]
 aliases: [AI code review bottleneck, review bottleneck, human review bottleneck]
@@ -63,6 +63,10 @@ the human review step, not the code-writing step.
 - **It predicts where tooling goes next.** If review is the bottleneck, the leverage
   shifts to *verifying* agent output — evals, test generation, and agent-observability
   tooling — rather than to faster generation.
+
+## Corroboration — Postgres 19 release delay (2026-10-16)
+
+The PostgreSQL project delayed the Postgres 19 release after AI-generated review submissions produced more bug reports than the human maintainer pool could triage and fix ([The Register](https://www.theregister.com/databases/2026-10-16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471), [HN 214pts](https://news.ycombinator.com/item?id=50119991)). This is the *volume* side of the bottleneck thesis: the page's core evidence (Jellyfish telemetry, [[concepts/coding-agents/code-review-agents]]) measured human review latency for agent-authored code; Postgres 19 shows the mirror-image failure when *review itself* is agent-saturated — the constraint moves from "finding bugs" to "judging and fixing them faster than they are reported." Notable that it hit an unusually mature, process-disciplined OSS project rather than a startup.
 
 ## Open questions
 

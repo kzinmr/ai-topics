@@ -2,7 +2,7 @@
 title: scriptc — TypeScript-to-Native Compiler (Vercel Labs)
 type: concept
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-19
 tags:
   - developer-tooling
   - programming-language
@@ -38,6 +38,16 @@ related:
 ## Self-hosting milestone (Sep 30, 2026)
 
 On 2026-09-30 Tate announced that **scriptc now compiles itself** — the compiler that turns TypeScript into native executables can now turn its *own* TypeScript source into a native executable. This is the classic compiler self-hosting bootstrap signal, here applied to a typed-language-to-native pipeline rather than a hand-written bootstrap.
+
+## tsc-ts: the TypeScript compiler written in TypeScript (Oct 2026)
+
+On 2026-10-17 Chris Tate announced **[tsc-ts](https://github.com/vercel-labs/tsc-ts)** — an experimental **TypeScript port of the TypeScript 7.0.2 compiler (tsgo / "TypeScript-Go"), compiled to native code with scriptc** (`npm i tsc-ts`; the package runs a per-platform native executable from an optional dependency such as `@tsc-ts/linux-x64-gnu`).
+
+- **Benchmarks vs tsgo:** VS Code **4.2×**, Sentry **4.2×**, TypeORM **3×**, tRPC **2.8×** faster type-checking — i.e. scriptc's native codegen beats the Go compiler on real large codebases.
+- **Correctness strategy:** each compiler part is ported to idiomatic TypeScript from tsgo 7.0.2 and compared against tsgo reference builds on TypeScript's own test corpus (~12,500 files, ~17,000 units after splitting multi-file cases). Scanner, parser/AST, binder, module resolution, tsconfig/programs, CLI options, diagnostics catalog (13 translations), JS emit (39 option sets), and declaration emit are all reported as **all compared units matching**.
+- **Build requirements:** Node.js 24+, Go 1.26 (for the tsgo oracle), and a scriptc host (macOS/Linux/Windows with clang). `package.json` **pins scriptc 0.3.6** — the build fails with any other version — which makes scriptc releases (v0.3.2 on Oct 14) a hard upstream dependency for downstream projects.
+
+**Why it matters:** tsc-ts is scriptc's most demanding customer — compiling an entire production compiler (not an application) exercises the static path against very large, type-heavy TypeScript. It also inverts the usual bootstrapping story: scriptc's performance is measured by how much faster it makes a toolchain that was itself rewritten in Go for speed.
 
 ## Limitations
 

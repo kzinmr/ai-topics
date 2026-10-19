@@ -3,7 +3,7 @@ title: Philipp Schmid
 type: entity
 handle: "@_philschmid"
 created: 2026-04-10
-updated: 2026-10-03
+updated: 2026-10-19
 tags:
   - person
   - model
@@ -120,6 +120,7 @@ Since joining in 2025, Schmid has been central to:
 - **Gemini API developer skills** — A "Gemini API developer skill" that provides agents with live documentation, boosting success rates from 28.2% to 96.6%
 - **Gemini 3 developer guides** — Comprehensive documentation for the latest Gemini model family
 - **Gemma 3 introduction** — Developer guide for Google's open model family
+- **Gemma 4 documentation portal (Oct 2026)** — Schmid announced the new official Gemma docs at **https://gemma.ai/** (2026-10-15): a single central portal for Google Gemma 4 open-weight models covering capabilities, fine-tuning guides, inference optimizations, educational content on how the models work, interactive WebGPU playgrounds, and partner integrations. See [[entities/gemma-4]].
 - **Agent framework collaborations** — Working with ADK, Agno, Browser Use, Eigent, Letta, and mem0
 - **Closing the knowledge gap** — Bridging static model knowledge with rapidly evolving software practices
 

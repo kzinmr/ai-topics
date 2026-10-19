@@ -1,7 +1,7 @@
 ---
 title: "Enterprise AI Tool Cost Management"
 created: "2026-06-05"
-updated: "2026-09-01"
+updated: "2026-10-19"
 type: concept
 tags:
   - company
@@ -14,6 +14,7 @@ sources:
   - "raw/articles/2026-06-15_langchain_introducing-llm-gateway.md"
   - raw/articles/404media.co--the-tokenpocalypse-is-here-companies-are-scrambling-to-stop---c0a8cbed.md
   - raw/articles/2026-08-28_ubereng_running-software-factory-efficiently-at-uber-scale.md
+  - https://devin.ai/blog/efficiency-based-cost-controls
 ---
 
 # Enterprise AI Tool Cost Management
@@ -114,6 +115,20 @@ Key optimization levers described (see also [[concepts/dark-factory-software-fac
 **What's next (per Uber)**: growing the managed-agent fleet via a consistent roadmap (target metrics → eval benchmark → Pareto model), dynamic model routing, deeper context-graph integration, session analytics evolving into real-time guidance, and auto-generating skill updates from recorded agent "papercuts."
 
 Source: [[raw/articles/2026-08-28_ubereng_running-software-factory-efficiently-at-uber-scale]]
+
+## Efficiency-Graded Allocation: Devin's Counter to Blanket Caps (October 2026)
+
+Cognition published **"A smarter approach to AI cost controls: allocating spend by efficiency"** (https://devin.ai/blog/efficiency-based-cost-controls), directly challenging the uniform-cap pattern documented above (Uber, the Tokenpocalypse wave). Framing: *"Blanket usage caps are akin to a hiring freeze in the AI era"* — they cap the engineers who extract the most value per dollar and give low-efficiency users no signal about what to change.
+
+Three enterprise features replace flat caps:
+
+1. **Efficiency Score** — a 0–100 rating per engineer over recent sessions. Devin estimates the **productive engineering hours** each session represents (how long a human engineer would have needed), explicitly counting work that never yields a merged PR (planning, triage, data analysis, investigations). Score = productive hours per unit of spend, with a smaller credit for volume.
+2. **Devin Coach** — pre-run prompt feedback: flags a vague request, an expensive mode for a simple task, or unrelated tasks bundled in one session, and suggests a fix. Positions cost control as *training*, not just enforcement.
+3. **Efficiency-based approvals** — automatic limit raises for engineers graded Healthy/Satisfactory (up to an admin-set ceiling); other requests go to admin review. Precise cost control without ballooning admin review burden.
+
+Customer validation (Will Laughlin, VP Engineering, Bilt): power users get headroom without asking, unproductive spend becomes a conversation rather than a silent cap, and Coach makes user training scale.
+
+**Analysis.** This is the first major vendor product to make *per-user AI efficiency* the allocation primitive rather than a flat or per-tool budget. It inverts the usual cost-control direction: instead of asking "how much may this engineer spend," it asks "how much engineering value did this spend produce," and rewards the answer. Risks/open questions the post does not settle: how "productive engineering hours" is estimated for sessions with no PR (and whether that estimate is auditable), gaming pressure once engineers know they are graded, and whether grading employees on AI efficiency changes incentive alignment. Related: [[entities/nader-dabit]] (Cognition, amplified the launch), [[concepts/cognitive-cost-of-agents]], [[concepts/tokenmaxxing]].
 
 ## Broader Implications
 

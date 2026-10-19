@@ -2,7 +2,7 @@
 title: Google Gemma 4
 type: entity
 created: 2026-04-10
-updated: 2026-07-07
+updated: 2026-10-19
 tags:
   - entity
   - model
@@ -399,6 +399,21 @@ Two quantization formats: **mobile** (per-channel int2/int4 weights, int8 activa
 ### Safety & Responsibility
 
 Gemma 4 underwent the same rigorous safety evaluations as Gemini models. Key policies: CSAM prevention, dangerous content blocking, hate speech filtering, harassment prevention, sexually explicit content filtering. All testing conducted **without safety filters** to evaluate inherent model behavior. Significant improvements over Gemma 3/3n in all safety categories with low unjustified refusals.
+
+## Official Documentation Portal (October 2026)
+
+On 2026-10-15 Google's AI DevRel lead **Philipp Schmid (@_philschmid)** announced a new central Gemma documentation portal at **https://gemma.ai/** — *"From capabilities, to fine-tuning guides, inference optimizations and educational content on how the models work. All at central place!"*
+
+The portal is described as the official technical documentation site for the Gemma 4 open-weight family and covers:
+
+- **Capabilities** documentation per model variant
+- **Fine-tuning guides** (Schmid's own specialty area — see [[entities/philipp-schmid]])
+- **Inference optimizations**
+- **Educational content on model internals** ("how the models work")
+- **Interactive WebGPU playgrounds** — in-browser demos, aligning with Gemma's on-device/local-first positioning
+- **Partner integrations**
+
+Previously Gemma developer material was dispersed across Google blog posts, Hugging Face model cards, community GGUF repos, and individual DevRel tutorials; gemma.ai consolidates it into a single discoverable surface.
 
 ## Sources
 - raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md

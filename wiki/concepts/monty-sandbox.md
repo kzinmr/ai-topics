@@ -5,7 +5,7 @@ aliases:
   - monty-sandbox
   - pydantic-monty
 created: 2026-04-25
-updated: 2026-05-29
+updated: 2026-10-19
 tags:
   - concept
   - sandbox
@@ -131,6 +131,16 @@ Programmatic Tool Calling (API mechanism)
 - Monty sits in the **Open Runtime** layer, providing the execution foundation for the [[concepts/code-execution-with-mcp|Code Execution with MCP]] pattern
 - [[concepts/pydantic-ai-harness]]'s CodeMode feature embeds Monty
 - Its differentiator: achieving strict security while avoiding the "faff" of containers
+
+## Release Highlights
+
+- **v1.2.0 (2026-10-18)** — the largest release to date:
+  - **`match` statements (PEP 634)** implemented end to end ([PR #1016](https://github.com/pydantic/monty/pull/1016)): parsing, compilation, new bytecode opcodes, and a VM runtime covering every pattern kind — value, singleton, capture, wildcard, sequence, mapping, and class patterns.
+  - New standard-library coverage: `hashlib` (#988), `os.path` (#1000), `csv` (#1018), `bisect` (#1047), `binascii`/`base64` with resource-limit checks (#842).
+  - `dataclasses` support for `field()`, `default_factory` and `__post_init__` (#835); list slice assignment (#1031); ordering comparisons for `set`/`frozenset` (#1040).
+  - **Import host call** (#942) and host-module fixes (duplicate attr names, assignment docs, module hashing #1021) — deepening the host↔sandbox boundary used by host functions.
+  - Performance work: direct sequence unpacking (#1015), shared `PyHashTable` for dict/set (#884), f-string buffer preallocation/refcount optimisation (#1052), CodSpeed benchmark infra (walltime + memory modes).
+  - Security/robustness: restored-session budgets capped at destination limits (#1027), float format precision capped at `INT_MAX - 1024` to match CPython 3.14.8 (#1002).
 
 ## Related Concepts
 

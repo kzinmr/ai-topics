@@ -1,7 +1,7 @@
 ---
 title: Google Antigravity
 created: 2026-05-23
-updated: 2026-05-27
+updated: 2026-10-19
 type: entity
 tags:
   - entity
@@ -186,6 +186,29 @@ Early enterprise validation of Antigravity agentic workflows:
 ## Pricing
 
 New **Google AI Ultra** subscription tier at **$100/month** offers 5× higher usage limits than the AI Pro plan. The existing top-tier AI Ultra plan is $200/month with 20× Pro limits. This positions Google directly against OpenAI's ChatGPT Pro and Anthropic's Claude Max (both $100/month).
+
+## Model Selection (docs, October 2026 snapshot)
+
+Philipp Schmid surfaced the Antigravity **"Choose a model"** documentation (https://antigravity.google/docs/models#select-a-model) on 2026-10-19. The page documents Antigravity's multi-provider, multi-plan model matrix and is available across **Antigravity App, Antigravity CLI, and Antigravity IDE**.
+
+**Model selection mechanics.** Users pick a reasoning model from a selector under the conversation prompt box and choose a **thinking level (Low / Medium / High)** to trade response speed (quick edits) against deeper multi-step reasoning (complex architecture, debugging). The choice persists between messages in a conversation; switching models mid-run does not affect the in-flight turn — the agent finishes with the previously selected model.
+
+**Core reasoning models and plan gating:**
+
+| Model | Free / Plus | AI Pro | AI Ultra | Enterprise |
+|---|---|---|---|---|
+| **Gemini 4 Argon** (High) | ❌ | ✅ (paid, non-trial) | ✅ | ✅ |
+| **Gemini 3.8 Flash** (Medium/Fast) | ✅ | ✅ | ✅ | ✅ |
+| **Gemini 3.7 Flash** (Medium/Fast) | ❌ | ❌ | ✅ | ✅ |
+| **Gemini 3.6 Flash** (Medium/Fast) | ❌ | ❌ | ✅ | ✅ |
+| **Gemini 3.1 Pro** (High) | ❌ | ❌ | ❌ | ✅ |
+| **Claude Sonnet 5.5 (Thinking)** | ❌ | ✅ (non-trial) | ✅ | ✅ |
+| **Claude Opus 5.5 (Thinking)** | ❌ | ✅ (non-trial) | ✅ | ✅ |
+| **Claude Sonnet 4.6 (Thinking)** | ✅ | ✅ | ❌ | ❌ |
+| **Claude Opus 4.6 (Thinking)** | ✅ | ✅ | ❌ | ❌ |
+| **GPT-OSS 120B (Medium)** | ✅ | ✅ | ✅ | ❌ |
+
+Notable signals: (a) Antigravity is explicitly a **multi-provider frontier harness** — Anthropic Claude and an open-weight GPT-OSS 120B sit alongside DeepMind Gemini; (b) the Claude 4.6 tier and GPT-OSS 120B are marked for **removal on November 2, 2026**, showing rapid third-party model churn on the platform; (c) Google's premium models are gated behind paid Pro (non-trial) and Ultra tiers, while free users keep older Claude models and GPT-OSS.
 
 ## Related
 

@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-09-23
+updated: 2026-10-19
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -817,6 +817,10 @@ On Aug 28, 2026 Anthropic opened a research preview of the **Model Hardware Stan
 Anthropic shipped **Claude Opus 5.5** as a direct answer to GPT-6 Astra — priced 2.5x cheaper than Astra at $5/$25 per MTok, immediately triggering a frontier price war (GPT-6 Sol/Terra/Luna followed within the hour; Grok 4.7 and MiMo v2.6 earlier that week). Same day, Claude Code shipped a **1-of-1000 rollout bug in `/compact`** that wiped prompt-cache state mid-session — users reported bills multiplying and context being "absolutely destroyed" — a concrete incident class for [[concepts/token-economics]] (cache busts as cost multipliers). ^[raw/articles/simonwillison.net--2026-sep-22-opus-and-sol-and-luna--3535d880.md]
 
 Anthropic's **Valve "Peaks" case study** (published Sep 22, via Simon Willison) is the flagship first-party agent-generated-software account: a ~14-person team built the polished Steam co-op game *Peaks* (released Aug 2026) using Claude Code as the main internal tool, with heavy agent↔critic loops — see [[concepts/agent-generated-software]].
+
+## Claude.app Mobile Input UX Criticism (Oct 17, 2026)
+
+Drew Breunig (@dbreunig) called out a Claude.app usability defect: **the on-screen keyboard cannot be dismissed**, so after entering a paragraph or two of feedback the user is left reading through a ~2–3-line viewport. A small but concrete example of AI-app input-surface friction — long-prompt authoring (the core interaction for power users) is fought by the mobile layout rather than supported by it. ^[X post by @dbreunig, 2026-10-17, https://x.com/dbreunig/status/2111506449616798069]
 
 ## Related Pages
 - [[Claude models]] — Model family details
