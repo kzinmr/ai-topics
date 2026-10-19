@@ -120,7 +120,7 @@ topics:
   - concepts/local-llm/vllm
   notes: '階層化済み: GGUF, llama.cpp, vLLMの各サブページ。最新ベンチマーク、新モデル対応を追跡'
   added: 2026-04-14
-  last_crawled: '2026-08-26'
+  last_crawled: '2026-10-19'
 - slug: ai-memory-systems
   title: AI Memory Systems
   crawl_policy: prerequisites
@@ -146,7 +146,7 @@ topics:
   - concepts/death-of-browser
   notes: WebMCP, agentic browsing の最新動向
   added: 2026-04-14
-  last_crawled: '2026-08-27'
+  last_crawled: '2026-10-19'
 - slug: sandbox
   title: Agent Sandboxing
   crawl_policy: laterals
