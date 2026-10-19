@@ -2,7 +2,7 @@
 title: "Mercor"
 type: entity
 created: 2026-05-08
-updated: 2026-10-17
+updated: 2026-10-19
 tags:
   - company
   - training
@@ -47,6 +47,18 @@ because it is not benchmarked. Mercor's stated motive is self-serving (it sells 
 data needed to close these gaps), but the coverage-gap framing is a useful corrective to
 "benchmark = capability" thinking and connects to [[concepts/ai-benchmarks/nanogpt-speedrun]]-style
 debates about what benchmarks actually measure.
+
+### HN reception (2026-10-16/17)
+
+The Benchmark Map reached **623 pts / 571 comments** on HN
+([item 50121179](https://news.ycombinator.com/item?id=50121179)) under the framing *"90% of US working
+hours are spent on tasks not covered well by AI benchmarks"* — the ~90%-of-hours figure is the
+complement of the 18%-of-GDP coverage claim, and the shift in headline framing (hours vs GDP) did most
+of the viral work. Discussion split as expected: the coverage gap was broadly accepted, while the
+"every job is 40% automatable today" premise was read as marketing for Mercor's expert-data business.
+The measurement-instrument gap it names is now itself a tracked wiki theme
+([[concepts/economic-agent-benchmarks]], [[concepts/benchmark-ceiling]],
+[[concepts/dayjob-benchmark]]).
 
 ## Related
 - [[entities/openai]] — Customer for data labeling and model training

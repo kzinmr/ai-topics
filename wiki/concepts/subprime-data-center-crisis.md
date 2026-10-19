@@ -2,7 +2,7 @@
 title: "Subprime Data Center Crisis"
 type: concept
 created: 2026-07-24
-updated: 2026-08-22
+updated: 2026-10-19
 tags:
   - economics
   - infrastructure
@@ -116,6 +116,37 @@ Zitron outlines several triggers and pathways:
 4. **Cascade**: A few large SPV failures → banks mark down loans → aging GPU inventory floods a saturated market → negligible salvage value → private credit fund write-offs → pension/insurance fund losses.
 
 **Estimated loss severity**: Zitron projects **80%+ of AI data center debt investments could be lost** in a full collapse scenario.
+
+## Credit Ratings & Supply Acceleration (2026-10-16 → 10-19)
+
+Three data points landed inside four days and moved the thesis from "structure looks like 2008" to
+"the 2008 rating-agency leg is now literal".
+
+**1. Anthropic assigned junk, not investment grade (FT, 2026-10-16).**
+Anthropic was assigned what the FT describes as the **highest junk credit rating** in June 2026
+([FT](https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d),
+[HN 298p / 87c](https://news.ycombinator.com/item?id=50122112); non-paywall mirror via Yahoo Finance).
+The thread adds the conflict-of-interest mechanism the 2008 table already lists as "Rating agency
+failures": banks underwriting Anthropic and OpenAI debt **lobbied the major rating agencies to grant
+investment-grade ratings once the labs go public**, against investor expectations of an IPO above
+$2tn this year. `AnodicElegy` names the precedent directly — *"what happened the last time the big
+rating agencies gave massive amounts of sketchy debt investment-grade ratings to avoid alienating
+their customers?"* Sequence matters: the *lab* rating is junk, while the *data-center debt* the lab's
+capex underwrites is being rated and securitized by the same agencies being lobbied.
+
+**2. Supply keeps accelerating regardless (+50 GW in one year).**
+SemiAnalysis, *"Datacenters 2027: The Year of Acceleration, +50GW in a Single Year"*
+(`raw/newsletters/2026-10-19-datacenters-2027-the-year-of-acceleration-50gw-in-a-single-year.md`,
+2026-10-19). A single-year +50 GW build is the strongest available counter to any "discipline is
+arriving" reading — and, per this page's framing, the cleanest test of the demand-reality gap: if
+independent demand measurement is absent (see table row above), a +50 GW year is the number that
+decides the argument, whichever way utilisation goes.
+
+**3. Equity-side stress continues alongside.**
+The 10-16→10-18 cluster (Anthropic valuation −$500B reports, Reuters IPO-expectation retreat, banks
+offloading underwritten data-center debt, HN 378p) is consistent with the collapse-scenario section
+rather than a repricing toward the bull case. Treat all valuation figures as contested until a filed
+prospectus exists.
 
 ## Key Parallels to 2008
 

@@ -1,7 +1,7 @@
 ---
 title: AI Employment Displacement
 created: 2026-08-28
-updated: 2026-08-28
+updated: 2026-10-19
 type: concept
 tags: [labor-economics, ai-economics, automation, ai-society, policy, economics, ai-industry-economics]
 sources: [raw/articles/bill-gates-turbulent-ai-era-2026.md, raw/articles/john-cook-ai-code-quality.md, raw/articles/claude-load-bearing-vocabulary-louis-abraham.md]
@@ -19,6 +19,29 @@ The claim that AI — unlike prior general-purpose technologies — can substitu
 - **No new-cognition sink**: the agriculture→office transition created new jobs requiring human cognition; if AI exceeds human cognition, that escape hatch narrows.
 - **Early empirical signal**: Stanford "Canaries in the Coal Mine" (Nov 2025) — significant employment decline among young workers in AI-vulnerable occupations, not among older colleagues.
 - **Adoption spiral**: one adopter's price cuts force competitors to follow; non-adopting incumbents are displaced by startups that do.
+
+## First-Party Lab Workforce Data — Anthropic (2026-10-18)
+
+Anthropic published its own employment-composition analysis, *"How employment is changing at
+Anthropic"* ([research page](https://www.anthropic.com/research/employment-at-anthropic),
+[HN 131p / 220c](https://news.ycombinator.com/item?id=50139873), 2026-10-18). It is the first case
+where a frontier lab disclosed its own hiring mix under agent adoption rather than being measured by
+third parties (Stanford canaries, Jellyfish telemetry), which is why it counts as a distinct signal
+despite reporting no headline-disrupting number.
+
+The thread's value is the two objections it forced, both of which are durable arguments rather than
+reactions to this dataset:
+
+- **The pipeline objection** (`OuterVale`): *"with no new juniors there will be no new seniors."* Any
+  hiring mix that thins the junior tier borrows against the senior pool of 2031 — a lag the
+  displacement debate usually ignores because labour data is read cross-sectionally.
+- **The metric objection** (`q3k`): mockery aimed at anyone still estimating productivity by commits
+  or LOC. In an agent-saturated org, output counts measure the agents, so the measurement problem in
+  [[concepts/code-review-bottleneck]] and the measurement problem in this page are the same problem.
+
+Treat lab-published workforce statistics as **self-reported and motivated** (a lab that minimises
+displacement optics also chooses which cuts to publish) — this is exactly the
+contested-evidence handling this page already applies to vendor benchmark claims.
 
 ## Policy Responses Now on the Table
 

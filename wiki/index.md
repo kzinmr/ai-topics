@@ -957,7 +957,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2204 pages)
+## Concepts (2207 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1487,6 +1487,7 @@
 - [[concepts/coding-agent-harness-design-study]] — Coding Agent Harness Design Study (arXiv 2609.20804, Sep 2026) — first component-level ablation of a coding harness: planning, action space, context management across 4 models / 176 settings on SWE-Bench Verified + Terminal-Bench 2.1; every effect is model- and budget-conditional
 - [[concepts/comprehension-interface]] — Comprehension Interface — Karpathy (Oct 2026): output-format ladder for understanding LLM output (ASD-STE100 → diagrams → HTML → 3b1b-style videos); consumption-side complement to ai-output-format-progression; tied to cognitive load/debt
 - [[concepts/harness-tax]] — Harness Tax — hidden cost premium of a coding agent's harness: Portkey's coined term (Apr 2026) + HarnessTax study (Pan et al., UC Berkeley / Arena.ai, Sep 2026): 21 model–harness pairs (Claude Code/Codex CLI/Pi), similar success at up to 5× cost; minimal Pi hits the Pareto frontier; alternative harness won 9/12 comparisons
+- [[concepts/hybrid-reasoning-agents]] — Hybrid Reasoning Agents (arXiv 2610.18861, Together; HN 429p Oct 18) — agents that think in latent space and act through text; latent-reasoning pitch applied to agentic workloads, benchmarks still unverified
 - [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
 - [[concepts/cais]] — CAIS (Comprehensive AI Services) — K. Eric Drexler's framework reframing superintelligence as distributed AI services, not monolithic agents; R&D automation as improvement engine, learning vs competence distinction, service-centered architecture, AI safety afforances vs agent-centric models (July 14)
 - [[concepts/caisi-federal-ai-review]] — CAISI Federal AI Review
@@ -2239,6 +2240,7 @@
 - [[concepts/ken-williams]] — ken-williams
 - [[concepts/kernel-evolve]] — KernelEvolve: Meta's Agentic Kernel Authoring System
 - [[concepts/killed-by-gpt]] — KilledByGPT
+- [[concepts/killswitch-llm-hostile-language]] — KillSwitch (Picheta, HN 215p Oct 17) — deliberately LLM-hostile programming language; refuted in-thread when Claude wrote a KS decompiler/compiler, so language-level obfuscation is not an LLM barrier
 - [[concepts/kimi-k2-5]] — kimi-k2-5
 - [[concepts/kimi-k2-6]] — Moonshot Kimi K2.6
 - [[concepts/kimi-k2-7-code]] — Kimi K2.7-Code
@@ -2890,6 +2892,7 @@
 - [[concepts/self-evolving-agents]] — Self-Evolving Agents
 - [[concepts/self-harness]] — Self-Harness — LLM-based agent that iteratively improves its own operating harness (Shanghai AI Lab, arXiv:2606.09498)
 - [[concepts/self-hosting-ai-development]] — Self-Hosting AI Development
+- [[concepts/self-hosted-llm-proxy-observability]] — Self-Hosted LLM Proxy as the agent observability boundary (HN 203p Oct 18) — own the request/response record LiteLLM-style, keep provider keys out of sandboxes; subscription-auth plans are the uninstrumented blind spot
 - [[concepts/self-learning-agents]] — Self-Learning Agents
 - [[concepts/self-replicating-llm]] — Self-Replicating LLMs
 - [[concepts/semantic-ids]] — Semantic IDs

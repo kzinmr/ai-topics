@@ -1,3 +1,29 @@
+## [2026-10-19] trending | Trending topics 2026-10-19 — latent reasoning, LLM-hostile languages, self-run proxies
+
+Scanned HN front page + keyword queries (Algolia, 3-day window, >=80 pts), blog-ingest checkpoint
+(20261019T100541Z, 22 new / 20 scraped) and newsletter checkpoint (4 digests). Morning pipelines
+(blog-wiki-ingest, active-crawl, weekly digest) had already covered StarSkirmish Bench, MLX RDMA
+distributed inference and website-blocking-of-ai-agents; those are cited, not duplicated.
+
+**Pages Created (3):**
+- `concepts/hybrid-reasoning-agents.md` — arXiv 2610.18861 / Together Computer (HN 429p/214c, Oct 18): agents that reason in latent space and act through text. Recorded at confidence:low — top HN comment demands benchmarks; latent-reasoning reproducibility history noted. Cross-linked to GRAM, provider-sealed-reasoning-blur, token-economics.
+- `concepts/killswitch-llm-hostile-language.md` — Picheta's LLM-hostile programming language (HN 215p/169c, Oct 17). Kept as a failed-class exemplar: a commenter had Claude write a KillSwitch decompiler/compiler in Go the same day, so language-level obfuscation is not an LLM barrier. Refusal-space syntax noted as the one untested branch.
+- `concepts/self-hosted-llm-proxy-observability.md` — "If you don't run your own LLM proxy, how do you know what's going on?" (HN 203p/149c, Oct 18). Audit-first justification for an LLM gateway (distinct from `concepts/ai-gateway`'s cost-control framing); LiteLLM virtual keys as a containment measure; subscription-auth plans named as the uninstrumented population.
+
+**Pages Updated (4):**
+- `entities/mercor.md` — HN reception section for the Benchmark Map (623p/571c, item 50121179): the 90%-of-hours framing is the complement of the 18%-of-GDP claim.
+- `concepts/ai-employment-displacement.md` — first-party lab workforce data: Anthropic "How employment is changing at Anthropic" (131p/220c) + the junior-pipeline and LOC/commit-metric objections; flagged self-reported.
+- `concepts/subprime-data-center-crisis.md` — rating-agency leg now literal: Anthropic assigned highest junk rating in June (FT, 298p, item 50122112) while banks lobby agencies for investment-grade pre-IPO; +50 GW single-year data-center build (SemiAnalysis, 2026-10-19).
+- `concepts/ai-regulation-2026.md` — new "Federal US: The Threshold Problem" section for Anthropic's proposed safety bill (50 deaths / $1B trigger, Commerce-only stop authority, 165p/165c); marked proposal-stage, single secondary source.
+
+**Raw article**: `raw/articles/2026-10-19_trending-hybrid-reasoning-killswitch-llmproxy.md` (HN ext:/hn: pairs recorded verbatim from scan output)
+**Report**: `inbox/rss-scans/trending-topics-2026-10-19.md`
+**Index**: +3 entries (concepts 2204 -> 2207)
+
+**Noted but not ingested**: Show HN Sphinx (246p, product page thin), Llmspeed (324p, tool), PS5LM llama.cpp on jailbroken PS5 (373p, hardware hack), WhatsApp MCP on Cloudflare (115p), Codex Desktop Crashpad dumps (171p, GitHub issue), Amazon AI union-risk surveillance (173p), Timestral (59p, too early), tmux-for-Claude-Code guide (60p), Superlite agent-spec tool (105p).
+
+---
+
 ## [2026-10-19] ingest | active-crawl — StarSkirmish Bench + MLX RDMA distributed inference + AI agent web access crisis
 
 Evaluated 8 gap candidates from HN (search_by_date, Oct 16-19 window), blogwatcher DB, and X/Twitter. Confirmed 4 FULL gaps, selected 3 for page creation; 4th (Anthropic safety bill, Tom's Hardware 164p) deferred due to paywall blocking; 3 low-value candidates (Sphinx, tmux guide, Context Engineering book) noted in raw article as deferred.

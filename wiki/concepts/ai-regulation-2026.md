@@ -2,7 +2,7 @@
 title: "AI Regulation (2026)"
 type: concept
 created: 2026-04-30
-updated: 2026-07-31
+updated: 2026-10-19
 tags:
   - concept
   - regulation
@@ -36,6 +36,35 @@ sources:
 # AI Regulation (2026)
 
 > 2026 is a watershed year for AI regulation. Over 1,500 state bills introduced across the US, California's landmark frontier AI safety law in effect, the EU AI Act nearing implementation, and a new federal administration reshaping the national approach. The regulatory patchwork is both the biggest risk factor and most significant compliance challenge for AI companies.
+
+## Federal US: The Threshold Problem (2026-10-18)
+
+Anthropic's proposed AI safety bill drew HN attention (**165p / 165c**,
+[item 50141429](https://news.ycombinator.com/item?id=50141429)) for a design flaw that generalises past
+Anthropic: **its federal trigger only fires at 50 deaths or $1B in damages**, and the proposal would make
+the **Commerce Department the only agency capable of stopping an AI model**
+([Tom's Hardware](https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model),
+2026-10-18).
+
+Two objections from the thread are the reusable ones:
+
+- **The bar is trivially crossed** (`serioussecurity`: *"$1B is a pretty easy bar to clear."*) — a
+  threshold that a single large outage or a mispriced trading agent can clear is not an early-warning
+  instrument; it is a post-mortem trigger. This is the same defect as "catastrophic incident" reporting
+  in state law (cf. SB 53's incident reporting to the Office of Emergency Services, above) but made
+  explicit and therefore countable.
+- **Single-agency chokepoint** — concentrating all stop-authority in Commerce collides with that
+  department's existing, *conflicting* role in AI policy: it already runs export controls and
+  government-mediated model release (see [[concepts/ai-executive-orders]], Commerce/Lutnick handling of
+  Claude Mythos 5 and the June 2026 Anthropic shutoff in [[concepts/sovereign-ai]]). An agency that
+  promotes domestic AI competitiveness is a weak custodian of authority to halt it.
+- A foreseeable regulatory-arbitrage consequence (`airstrike`): if "Certified Safe AI™" requires proving
+  you can insure $1B in damages plus pass a compliance audit, the certification becomes a barrier to
+  entry that only the largest labs can satisfy.
+
+**Status:** proposal-stage only, single secondary source (Tom's Hardware), paywalled body not extracted.
+Recorded as pending, not as settled policy. Cross-check against the federal preemption fight in the
+State-Level Surge section above before citing.
 
 ## United States: State-Level Surge
 
