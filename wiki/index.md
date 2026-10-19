@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3254
+> Total pages: 3256
 > Last updated: 2026-10-18
 
 ## Entities (946 pages)
@@ -957,7 +957,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2202 pages)
+## Concepts (2204 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1242,6 +1242,7 @@
 - [[concepts/ai-benchmarks/skillspector]] — NVIDIA SkillSpector
 - [[concepts/ai-benchmarks/spider-2]] — Spider 2.0
 - [[concepts/ai-benchmarks/st-webagentbench]] — ST-WebAgentBench
+- [[concepts/ai-benchmarks/starskirmish]] — StarSkirmish Bench — LLMs write StarCraft: Brood War bots in 1 hour; GPT-6 Astra leads, no saturation vs human bots (Oct 2026)
 - [[concepts/ai-benchmarks/stack-benchmarking]] — Stack Benchmarking (Ramp)
 - [[concepts/ai-benchmarks/stripe-agent-benchmark]] — Stripe Agent Benchmark
 - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench & SWE-bench Verified — retired by OpenAI Apr 2026 (saturation + contamination); Pro endorsed
@@ -2429,7 +2430,7 @@
 - [[concepts/ml-research-practice]] — ML Research Practice
 - [[concepts/ml-systems]] — ML Systems
 - [[concepts/mlops]] — MLOps
-- [[concepts/mlx]] — MLX
+- [[concepts/mlx]] — MLX — Apple's unified-memory array framework for ML on Apple Silicon; Oct 2026: RDMA over Thunderbolt enables 4x Mac Studio M5 Ultra cluster running Muse Spark Open 816B at 36 tok/s
 - [[concepts/mlx-llm]] — MLX for LLM Inference
 - [[concepts/modal-sandboxes]] — Modal Sandboxes; enriched with 5-stage sandbox lifecycle and Readiness Probes GA (June 23)
 - [[concepts/modal-vm-sandboxes]] — Modal — VM Sandboxes and Infrastructure Updates
@@ -3126,6 +3127,7 @@
 - [[concepts/web-as-filesystem]] — An abstraction that mounts all web documents as a Unix filesystem, enabling agents to naturally use tree/grep/cat/fin...
 - [[concepts/web-minimalism]] — web-minimalism
 - [[concepts/web-security]] — Web Security
+- [[concepts/website-blocking-of-ai-agents]] — Websites Blocking AI Agents — Yelp, Delta, JPMorgan, Amazon blocking Meta Muse / OpenAI Dots / xAI Grok; structural ad-revenue vs agent conflict (Oct 2026)
 - [[concepts/webassembly]] — WebAssembly
 - [[concepts/werkzeug]] — Werkzeug
 - [[concepts/whisper]] — Whisper

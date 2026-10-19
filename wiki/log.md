@@ -1,3 +1,21 @@
+## [2026-10-19] ingest | active-crawl — StarSkirmish Bench + MLX RDMA distributed inference + AI agent web access crisis
+
+Evaluated 8 gap candidates from HN (search_by_date, Oct 16-19 window), blogwatcher DB, and X/Twitter. Confirmed 4 FULL gaps, selected 3 for page creation; 4th (Anthropic safety bill, Tom's Hardware 164p) deferred due to paywall blocking; 3 low-value candidates (Sphinx, tmux guide, Context Engineering book) noted in raw article as deferred.
+
+**Pages Created:**
+- `concepts/ai-benchmarks/starskirmish.md` — StarSkirmish Bench v0.2 (Kai McPheeters, starskirmish.com, Oct 15 2026): each frontier LLM has 1 hour to write a competitive StarCraft: Brood War Protoss bot in C++ (BWAPI 4.4.0 / OpenBW); GPT-6 Astra leads, best model wins only 7% vs top human bots; self-directed practice behavior predicts score; no saturation signal. HN 249p.
+- `concepts/website-blocking-of-ai-agents.md` — Structural conflict between AI agents and the ad-supported web (Emma Roth, The Verge, Oct 18 2026): Yelp, Delta, JPMorgan, Schwab explicit blocks; Amazon vs Meta Muse/OpenAI Dots/xAI Grok; Perplexity Comet appeals reversal (Aug 2026); Meta pivots to Walmart/Shopify partnership strategy; Cloudflare infrastructure-level blocking. HN 144p.
+
+**Pages Updated:**
+- `concepts/mlx.md` — new section "Distributed Inference with RDMA (October 2026)" from Apple ML Research blog post (Oct 16 2026, HN 365p): Muse Spark Open (816B MoE) at 36+ tok/s on 4x Mac Studio M5 Ultra via RDMA over Thunderbolt; M5 Ultra 4.6x TTFT speedup over M3 Ultra via GPU Neural Accelerators; 1.2 TB/s bandwidth enabling 1.6x decode speedup; three parallelization modes (pipeline-2, tensor-2, tensor-4). Bumped updated date.
+
+**Skipped:** Anthropic safety bill (HN 164p, Tom's Hardware paywall blocked body extraction; HN discussion preserved in raw article for future enrichment of `concepts/ai-regulation-2026.md`); Sphinx quiz hook (HN 246p, product page too thin for a concept page); Context Engineering book by Alex Mikhalev (zero engagement, single-source); tmux for Claude Code guide (39p, too tactical).
+
+**Raw article**: `raw/articles/2026-10-19_active-crawl-mlx-starskirmish-web-access.md`
+**Index**: +2 entries (concepts 2202->2204, total 3254->3256)
+
+---
+
 ## [2026-10-19] ingest | Blog wiki ingest (run 20261019T100541Z)
 
 Processed blog-triage checkpoint 20261019T100541Z (20 decisions: 1 take, 5 reference, 14 skip; recovered from triage_latest.json after cron output JSON parse failure).
