@@ -1,3 +1,8 @@
+## [2026-10-19] skeleton-enrich | Empty backlog (6th consecutive)
+
+Frontmatter scan of wiki/entities + wiki/concepts: 0 `status: skeleton` pages. No enrichment performed. Snapshot: [[queries/2026-10-19-skeleton-enrich-empty]].
+
+
 ## [2026-10-19] health-fix | Wiki health auto-fix — 7 orphans registered
 
 Daily `wiki-health-fix` run (17:50 UTC). Digest reported 9 orphans; live verification reduced this to 7 real gaps.
