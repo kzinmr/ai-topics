@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "job": "newsletter-triage",
+  "run_id": "20261019T101239Z",
+  "triaged_at": "2026-10-19T10:20:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 4,
+  "summary": {
+    "critical": 2,
+    "high": 1,
+    "low": 1,
+    "skip": 0
+  },
+  "note": "All 4 digests are Substack link dumps; the 20 links per digest are near-duplicate tracking/app-link/redirect URLs pointing at a single newsletter post. Triaged at the newsletter-post level. Real URLs resolved via open.substack.com redirects (all HTTP 200).",
+  "newsletters": [
+    {
+      "message_id": "<20261018123136.3.1ef1989fd65cfd54@mg-d1.substack.com>",
+      "subject": "Inside the black box of AI: How AI models actually think | Emmanuel Ameisen (Anthropic)",
+      "date": "2026-10-18",
+      "source_label": "uid=810",
+      "raw_path": "wiki/raw/newsletters/2026-10-18-inside-the-black-box-of-ai-how-ai-models-actually-think-emmanuel-ameisen-anthrop.md",
+      "canonical_url": "https://www.lennysnewsletter.com/p/a-mind-expanding-conversation-on",
+      "publication": "Lenny's Newsletter (pub_id=10845, post_id=219139599)",
+      "importance": "critical",
+      "newsjacking_score": 4,
+      "ai_relevance": "high",
+      "tags": ["interpretability", "mechanistic-interpretability", "anthropic", "llm-internals", "podcast-interview"],
+      "people": ["Emmanuel Ameisen"],
+      "orgs": ["Anthropic", "Lenny's Newsletter"],
+      "why": "Podcast interview with Emmanuel Ameisen (Anthropic interpretability team) on how AI models actually think — core LLM/interpretability topic, directly in wiki scope. Lenny's Newsletter reach gives it newsjacking weight (trend surfing + in-group signal).",
+      "existing_coverage": [
+        "wiki/entities/emmanuel-ameisen.md",
+        "wiki/concepts/mechanistic-interpretability.md",
+        "wiki/concepts/interpretability.md"
+      ],
+      "recommended_actions": [
+        "Scrape full transcript/post from lennysnewsletter.com and save to wiki/raw/articles/",
+        "Update entities/emmanuel-ameisen.md with this talk (date, venue, key claims)",
+        "Append episode-specific insights (e.g. 'black box' framing, any new interpretability methods named) to concepts/mechanistic-interpretability.md"
+      ],
+      "link_dump": true
+    },
+    {
+      "message_id": "<20261019053939.3.b1e2e4d78e22500a@mg-d0.substack.com>",
+      "subject": "Datacenters 2027: The Year of Acceleration, +50GW in a Single Year",
+      "date": "2026-10-19",
+      "source_label": "uid=813",
+      "raw_path": "wiki/raw/newsletters/2026-10-19-datacenters-2027-the-year-of-acceleration-50gw-in-a-single-year.md",
+      "canonical_url": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration",
+      "publication": "SemiAnalysis (pub_id=6349492, post_id=220409870)",
+      "authors": ["Jeremie Eliahou Ontiveros", "Reyk Knuhtsen", "Dylan Patel (via SemiAnalysis)"],
+      "importance": "critical",
+      "newsjacking_score": 5,
+      "ai_relevance": "high",
+      "tags": ["ai-infrastructure", "data-centers", "semianalysis", "gpu", "power", "training-infrastructure"],
+      "people": ["Jeremie Eliahou Ontiveros", "Reyk Knuhtsen"],
+      "orgs": ["SemiAnalysis"],
+      "why": "SemiAnalysis flagship infra report: +50GW of datacenter capacity added in a single year (2027) is a bold, debatable, data-backed claim (polarizing promise + contrarian insight). Core training/serving-infra topic and connects to existing subprime-data-center-crisis and cooling pages.",
+      "existing_coverage": [
+        "wiki/entities/semianalysis.md",
+        "wiki/concepts/subprime-data-center-crisis.md",
+        "wiki/concepts/nvidia-45c-data-center-cooling.md"
+      ],
+      "recommended_actions": [
+        "Scrape article to wiki/raw/articles/ (paywalled — capture OG metadata + free preview; note paywall in raw frontmatter)",
+        "Create concepts/datacenter-capacity-2027.md for the +50GW buildout forecast (validate tags in SCHEMA.md first)",
+        "Update entities/semianalysis.md and cross-link from concepts/subprime-data-center-crisis.md"
+      ],
+      "link_dump": true,
+      "caveat": "Likely paywalled; free tier may only expose intro. Do not fabricate numbers beyond what is fetched."
+    },
+    {
+      "message_id": "<20261019012336.3.c3d78b7258627c7c@mg2.substack.com>",
+      "subject": "OCP Global Summit 2026: Irrational Recap",
+      "date": "2026-10-19",
+      "source_label": "uid=812",
+      "raw_path": "wiki/raw/newsletters/2026-10-19-ocp-global-summit-2026-irrational-recap.md",
+      "canonical_url": "https://irrationalanalysis.substack.com/p/ocp-global-summit-2026-irrational",
+      "publication": "Irrational Analysis (pub_id=1509468, post_id=220885098)",
+      "importance": "high",
+      "newsjacking_score": 3,
+      "ai_relevance": "medium-high",
+      "tags": ["ai-infrastructure", "ocp", "open-compute-project", "accelerator-hardware", "data-centers"],
+      "people": [],
+      "orgs": ["Irrational Analysis", "Open Compute Project"],
+      "why": "Event recap of OCP Global Summit 2026 — open accelerator/server hardware relevant to AI infrastructure (power delivery, rack scale, networking for AI clusters). No existing Irrational Analysis or OCP page — potential new entities.",
+      "existing_coverage": [
+        "wiki/entities/semianalysis.md (adjacent, infra coverage)"
+      ],
+      "recommended_actions": [
+        "Scrape recap to wiki/raw/articles/",
+        "If substantive (rack-scale / accelerator announcements): create entities/irrational-analysis.md and possibly concepts/ocp-global-summit-2026.md or events/ocp-global-summit-2026.md",
+        "Cross-link from ai-infrastructure pages"
+      ],
+      "link_dump": true
+    },
+    {
+      "message_id": "<20261018134727.3.83715db115218785@mg2.substack.com>",
+      "subject": "Meta's Muse, Google's Argon, and OpenAI's Bugged Meeting Room",
+      "date": "2026-10-18",
+      "source_label": "uid=811",
+      "raw_path": "wiki/raw/newsletters/2026-10-18-meta-s-muse-google-s-argon-and-openai-s-bugged-meeting-room.md",
+      "canonical_url": "https://thesignal.substack.com/p/metas-muse-googles-argon-and-openais",
+      "publication": "The Signal (pub_id=293154, post_id=220986137, Alex Banks)",
+      "importance": "low",
+      "newsjacking_score": 2,
+      "ai_relevance": "medium",
+      "tags": ["meta", "google", "openai", "ai-news-digest", "model-releases"],
+      "people": ["Alex Banks"],
+      "orgs": ["The Signal", "Meta", "Google", "OpenAI"],
+      "why": "Curated news roundup (Meta Muse, Google Argon, OpenAI incident). Digest-style; individual items need verification before ingestion. Titles reference apparently-new model names ('Muse', 'Argon') worth checking against existing pages during ingestion.",
+      "existing_coverage": [
+        "wiki/entities/the-signal.md"
+      ],
+      "recommended_actions": [
+        "Optional: scrape to wiki/raw/articles/ and let newsletter-wiki-ingest evaluate the 'Meta Muse' / 'Google Argon' items individually",
+        "Skip as a standalone wiki page — roundup format, low durable synthesis value on its own"
+      ],
+      "link_dump": true
+    }
+  ]
+}
