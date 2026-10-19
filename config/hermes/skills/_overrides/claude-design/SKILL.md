@@ -580,6 +580,156 @@ When adapting a Claude Design style request into CLI/API mode, use this mental t
 You are running in CLI/API mode, not hosted Claude Design. Ignore references to hosted-only tools or preview panes. Produce complete local design artifacts, usually self-contained HTML with embedded CSS/JS, and verify with available local tools before returning. Preserve the design process: gather context, define the system, produce options, avoid filler, and meet a high visual bar.
 ```
 
+## Quick Mockups (from sketch)
+
+When the user wants to **see a design direction before committing** — exploring a UI/UX idea as disposable HTML mockups. Generate 2-3 interactive variants so the user can compare visual directions side-by-side.
+
+### When to Use Quick Mockups
+
+- "sketch this screen", "show me what X could look like"
+- "compare layout A vs B", "give me 2-3 takes on this UI"
+- "let me see some variants", "mockup this before I build"
+
+### When NOT to Use
+
+- User wants a production component — use the full design process above
+- User wants a polished one-off HTML artifact — use the full design process
+- User wants a diagram — use `excalidraw` or `architecture-diagram`
+- The design is already locked — just build it
+
+### Core Method
+
+```
+intake  →  variants  →  head-to-head  →  pick winner (or iterate)
+```
+
+#### 1. Intake (skip if the user already gave you enough)
+
+Before generating variants, get three things — one question at a time:
+
+1. **Feel.** "What should this feel like? Adjectives, emotions, a vibe."
+2. **References.** "What apps, sites, or products capture the feel you're imagining?"
+3. **Core action.** "What's the single most important thing a user does on this screen?"
+
+Reflect each answer briefly before the next question. If the user already gave you all three upfront, skip straight to variants.
+
+#### 2. Variants (2-3, never 1, rarely 4+)
+
+Produce **2-3 variants** in one go. Each variant is a complete, standalone HTML file. Don't describe variants — build them.
+
+Each variant should take a **different design stance**, not different pixel values. Good variant axes:
+
+- **Density:** compact / airy / ultra-dense (pick two contrasting poles)
+- **Emphasis:** content-first / action-first / tool-first
+- **Aesthetic:** editorial / utilitarian / playful
+- **Layout:** single-column / sidebar / split-pane
+- **Grounding:** card-based / bare-content / document-style
+
+Pick one axis and pull apart from it. Two variants that differ only in accent color are wasted effort.
+
+**Variant naming:** describe the stance, not the number.
+
+```
+sketches/
+├── 001-calm-editorial/
+│   ├── index.html
+│   └── README.md
+├── 001-utilitarian-dense/
+│   ├── index.html
+│   └── README.md
+└── 001-playful-split/
+    ├── index.html
+    └── README.md
+```
+
+#### 3. Make them real HTML
+
+Each variant is a **single self-contained HTML file**:
+
+- Inline `<style>` — no build step, no external CSS
+- System fonts or one Google Font via `<link>`
+- Tailwind via CDN (`<script src="https://cdn.tailwindcss.com"></script>`) is fine
+- Realistic fake content — actual sentences, actual names, not "Lorem ipsum"
+- **Interactive**: links clickable, hovers real, at least one state transition
+
+Open it in a browser. If it looks broken, fix it before showing the user.
+
+**Default CSS reset + system font stack** for fast starts:
+
+```html
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #1a1a1a;
+    background: #fafafa;
+    line-height: 1.5;
+  }
+</style>
+```
+
+#### 4. Variant README
+
+Each variant's `README.md` answers:
+
+```markdown
+## Variant: {stance name}
+
+### Design stance
+One sentence on the principle driving this variant.
+
+### Key choices
+- Layout: ...
+- Typography: ...
+- Color: ...
+- Interaction: ...
+
+### Trade-offs
+- Strong at: ...
+- Weak at: ...
+
+### Best for
+- The kind of user or use case this variant actually serves
+```
+
+#### 5. Head-to-head
+
+After all variants are built, present them as a comparison. Don't just list — **opinionate**:
+
+```markdown
+## Three takes on the home screen
+
+| Dimension | Calm editorial | Utilitarian dense | Playful split |
+|-----------|----------------|-------------------|---------------|
+| Density   | Low            | High              | Medium        |
+| Primary action visibility | Low | High | Medium |
+| Scan-ability | High | Medium | Low |
+| Feel | Calm, trusted | Sharp, tool-like | Inviting, energetic |
+
+**My take:** Utilitarian dense for power users, calm editorial for content-forward audiences. Playful split is weakest — tries to do both and commits to neither.
+```
+
+Let the user pick a winner, or combine two into a hybrid, or ask for another round.
+
+### Interactivity Bar
+
+A sketch is interactive enough when the user can:
+
+1. **Click a primary action** and something visible happens
+2. **See one meaningful state transition** (filter a list, toggle a mode, open/close a panel)
+3. **Hover recognizable affordances** (buttons, rows, tabs)
+
+More than that is over-engineering a throwaway. Less than that is a screenshot.
+
+### Output
+
+- Create `sketches/` in the repo root
+- One subdir per variant: `NNN-stance-name/index.html` + `README.md`
+- Tell the user how to open them: `open sketches/001-calm-editorial/index.html` on macOS, `xdg-open` on Linux
+- Keep variants disposable — a sketch that you felt the need to preserve should be promoted into real project code
+
 ## Pitfalls
 
 - Do not paste hosted tool schemas into a skill. They cause fake tool calls.

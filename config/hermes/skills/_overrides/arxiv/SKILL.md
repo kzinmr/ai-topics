@@ -58,6 +58,37 @@ for i, entry in enumerate(root.findall('a:entry', ns)):
 
 ## Search Query Syntax
 
+> **Reliable discovery fallback (use this first if the export API is rate-limited).** The
+> `export.arxiv.org/api/query` endpoint aggressively rate-limits ("Rate exceeded" can persist
+> across 30–60s of sleeping — it's not a clean per-request backoff). The **arxiv.org website
+> search** is far more forgiving and works with just a browser User-Agent. Prefer it for topic
+> discovery when the API is being flaky:
+>
+> ```bash
+> curl -sL -A "Mozilla/5.0" "https://arxiv.org/search/?query=%22homomorphic%20encryption%22%20language%20model&searchtype=all" -o /tmp/arx_s.html
+> python3 - <<'EOF'
+> import re
+> html=open('/tmp/arx_s.html').read()
+> for b in re.findall(r'<li class="arxiv-result">(.*?)</li>', html, re.S)[:15]:
+>     m=re.search(r'arXiv:(\d{4}\.\d{4,5})', b)
+>     t=re.search(r'<p class="title is-5 mathjax">\s*(.*?)</p>', b, re.S)
+>     print('-', m.group(1) if m else '?', '|', re.sub(r'<[^>]+>','',t.group(1)).strip()[:95] if t else '?')
+> EOF
+> ```
+>
+> - Quote phrase terms with `%22` for exact-match (`%22foo%20bar%22`).
+> - This HTML endpoint intermittently **hangs on first hit** (DNS/TLS warm-up); if it times out
+>   (>60s), just retry — the second attempt usually succeeds fast.
+> - `arxiv.org/list/{cat}/recent` is a **poor** discovery source: its list HTML doesn't match the
+>   `arxiv-result` / title regexes above, so parsing it yields nothing. Use the search endpoint
+>   instead, or the export API `id_list`/`cat:` queries once it stops rate-limiting.
+>
+> After discovery, fetch each candidate's abstract page (`arxiv.org/abs/{id}`) for metadata —
+> that page is reliable and also gives you peer-review comments (see
+> "Peer-review detection via abstract-page meta tags" below).
+
+## Search Query Syntax (export API)
+
 | Prefix | Searches | Example |
 |--------|----------|---------|
 | `all:` | All fields | `all:transformer+attention` |
@@ -255,7 +286,7 @@ curl -s "https://api.semanticscholar.org/graph/v1/author/search?query=Yann+LeCun
 | API | Rate | Auth |
 |-----|------|------|
 | arXiv | ~1 req / 3 seconds | None needed |
-| Semantic Scholar | 1 req / second | None (100/sec with API key) |
+| Semantic Scholar | 1 req / second | None (100/sec with key) — **429s are common without a key**; retry after 30-60s, or fall back to abstract-page meta tags for venue/author metadata (see "Peer-review detection via abstract-page meta tags" below). Do not treat a 429 as "no venue" — it's a rate limit, not an absence. |
 
 ## Notes
 
@@ -288,7 +319,13 @@ After fetching a paper, to ingest it into the wiki:
 
 1. **Check peer-review** — See `wiki-ingestion-pipelines` (Section D: arXiv Paper Pipeline) for the triage matrix: peer-reviewed conferences (NeurIPS, ICML, ICLR, ACL, CVPR, etc.) and tech company tech reports → ✅ OK. arXiv-only with no venue → ❌ BLOCK.
 2. **Verify via Semantic Scholar** — `publicationVenue` field confirms venue. Also note citation count as signal of impact.
-3. **Save raw paper** — Save to `~/ai-topics/wiki/raw/papers/{YYYY-MM-DD}_{arxiv_id}_{short-title}.md` (NOT `wiki/raw/articles/`). Include `arxiv_id`, `venue`, `published`, `citations`, `authors` in frontmatter.
+3. **Save raw paper** — Save to `~/ai-topics/wiki/raw/papers/{YYYY-MM-DD}_{arxiv_id}_{short-title}.md` (NOT `wiki/raw/articles/`). Include `arxiv_id`, `venue`, `published`, `citations`, `authors` in frontmatter. Add a `type: paper` field and an `abstract` field for paper-type raw files.
+
+**Peer-review detection via abstract-page meta tags** (fast, no API):
+```bash
+curl -sL "https://arxiv.org/abs/{id}" | grep -E '<td class="tablecell comments|citation_.*Comments|jref' 
+```
+If no "Comments:" / "Published in" / "Accepted to" appears, the paper is arXiv-only. A tech-company tech report (all authors at one company, e.g. Scale AI) → ✅ OK per triage matrix. Truly arXiv-only academic preprint → ❌ BLOCK unless user explicitly requests (user override → note `user override` in the raw frontmatter `venue` field).
 4. **Create/update concept page** — Follow `wiki-concept-from-research` skill for the page structure. Create comparison tables with related concepts (e.g., Shannon vs V-Information).
 5. **Update index.md + log.md** — Append log entry, update concepts page count. See `wiki-ingestion-pipelines` for index/log update patterns.
 6. **Commit** — `cd ~/ai-topics && git add wiki/ && git commit -m "wiki: concept page for {topic} ({authors}, {venue} {year})" && git push`
