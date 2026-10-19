@@ -208,6 +208,8 @@ Philipp Schmid surfaced the Antigravity **"Choose a model"** documentation (http
 | **Claude Opus 4.6 (Thinking)** | ✅ | ✅ | ❌ | ❌ |
 | **GPT-OSS 120B (Medium)** | ✅ | ✅ | ✅ | ❌ |
 
+**Additional (non-customizable) stack models.** Antigravity also wires in fixed models for sub-tasks — e.g. **Nano Banana 2** powers the generative image tool (UI mockups, images to populate pages/apps, system and architecture diagrams). These are not user-selectable.
+
 Notable signals: (a) Antigravity is explicitly a **multi-provider frontier harness** — Anthropic Claude and an open-weight GPT-OSS 120B sit alongside DeepMind Gemini; (b) the Claude 4.6 tier and GPT-OSS 120B are marked for **removal on November 2, 2026**, showing rapid third-party model churn on the platform; (c) Google's premium models are gated behind paid Pro (non-trial) and Ultra tiers, while free users keep older Claude models and GPT-OSS.
 
 ## Related
