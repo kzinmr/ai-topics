@@ -960,7 +960,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2215 pages)
+## Concepts (2217 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2178,6 +2178,7 @@
 - [[concepts/huggingface-skills]] — Hugging Face Skills
 - [[concepts/human-in-the-loop]] — Human-in-the-Loop
 - [[concepts/human-sandwich]] — Human Sandwich Pattern
+- [[concepts/hidden-ai-instructions-in-web-content]] — Hidden AI Instructions in Public Web Content (WhatsApp/redact.dev, HN 513p Oct 19) — invisible corporate-authored prompt blocks in help pages steering AIs away from regulators/law; the defensive-injection & dual-audience web problem
 - [[concepts/hundred-page-ml-book]] — hundred-page-ml-book
 - [[concepts/hundred-page-nlp-book]] — hundred-page-nlp-book
 - [[concepts/hunter-lightman]] — hunter-lightman
@@ -2427,6 +2428,7 @@
 - [[concepts/minijinja]] — minijinja
 - [[concepts/minimax-m2-7]] — MiniMax M2.7
 - [[concepts/minimax-m3]] — MiniMax M3
+- [[concepts/minimax-m3-1-flash]] — MiniMax M3.1 Flash (Oct 19) — Flash-tier agentic model: DeepSWE 73.7%, OSWorld V2 61.7 (#1 Chinese), CyberGym 82%; 200+ TPS, $0.15/$0.60 per 1M tokens, -70% cost vs predecessor; API first, weights "later"
 - [[concepts/minimax-sparse-attention]] — MiniMax Sparse Attention (MSA)
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mismeasure-of-open-source]] — The Mismeasure of Open Source

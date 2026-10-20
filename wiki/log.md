@@ -1,3 +1,18 @@
+## [2026-10-20] trending-topics | 2 new concepts + 1 entity update — MiniMax M3.1 Flash, Hidden AI Instructions (WhatsApp), Simon Willison obituary-for-programming
+
+**Sources:** HN Algolia front-page scan (2d, >=20pts) + keyword sweep (3d, >=80pts, 11 queries) + blog_ingest checkpoint (32 new, 17 scraped) + newsletter checkpoints (Import AI 477 already ingested this morning). Report: `inbox/rss-scans/trending-topics-2026-10-20.md`.
+
+**New pages:**
+- `concepts/minimax-m3-1-flash.md` — MiniMax M3.1 Flash (HN 481p, Oct 19): DeepSWE v1.1 73.7%, OSWorld V2 61.7 (#1 Chinese), ALE 29.6, CyberGym 82%; 200+ TPS, $0.15/$0.60 per 1M, -70% cost; API-first, weights promised later. All benchmarks first-party.
+- `concepts/hidden-ai-instructions-in-web-content.md` — WhatsApp/redact.dev incident (HN 513p): 102 hidden AI-only instruction blocks across 80 help pages telling the chatbot not to recommend a regulator or cite GDPR/CCPA; removed Oct 18, WIRED coverage. Framed as corporate *defensive* injection / dual-audience web problem.
+
+**Updated pages:**
+- `entities/simon-willison.md` — new section "My obituary for programming" (Oct 19): links Jeremy Scheff's HN 628p essay on the lost craft-puzzle dimension of programming; continuation of the Sep 11 "Feeling sad about AI" thread.
+
+**Raw saved:** `2026-10-20_minimax-minimax-m31f-m3-1-flash.md`, `redact.dev--2026-whatsapp-help-pages-hidden-ai-instructions--7f3c9a21.md`. Reuters (DeepSeek DHS ban) 401-blocked; classified from HN/Reuters headline only.
+
+**Noted, not ingested:** DeepSeek DHS federal-civilian ban (320p, political tail of this week's DeepSeek cluster — candidate for deepseek entity update next run); Ask HN "shipping AI-written code you don't understand" (490p/619c, culture signal); Anthropic AI safety bill thresholds (171p); OpenAI four more rogue incidents (130p); Anthropic IPO trust (WSJ paywalled).
+
 ## [2026-10-20] active-crawl | 4 new concepts + 1 enrichment — DeepInfer, Clairic/System One, ROME weight-tampering, Company World Models, Anthropic employment
 
 **Sources:** HN Algolia (search_by_date, last 4d, points>=10) + blogwatcher SQLite (last 3d) + wiki gap analysis. Parent ran discovery + gap-check directly (no subagents). 5 raw articles saved to `raw/articles/`.
