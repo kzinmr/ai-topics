@@ -1,6 +1,7 @@
 ---
 title: "John Gruber"
 tags: [person]
+updated: 2026-10-20
 sources:
   - raw/articles/daringfireball.net--2026-08-anthropics-watermark-text-adulteration-in-claude-is---70e3a85a.md
 created: 2026-04-24

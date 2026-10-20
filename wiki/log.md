@@ -1,3 +1,30 @@
+## [2026-10-20] health-fix | Ghost entries, frontmatter gaps, index counts
+
+### Auto-fixed
+- **Index ghost entries 7 -> 0**: removed 6 index lines whose target pages were never created
+  (`entities/claude-haiku-5-5`, `entities/popcar`, `concepts/agentic-software-factory-hierarchy-of-needs`,
+  `concepts/llm-decompilation-and-software-recovery`, `concepts/openai/gpt-5-6-codex-model-card-2026`,
+  `queries/wiki-graph-analysis-weekly-2026-10-09`).
+- **Created `concepts/outer-harness.md`** — the 7th ghost was a live wikilink target
+  (`entities/third-moment-research`); built a sourced concept page from the Third Moment Research
+  and Anthropic long-running-harness raw articles instead of deleting the entry.
+- **Frontmatter `sources` gap 9 -> 0**: added `sources: []` to 8 redirect stubs
+  (llama-cpp, ollama, gguf, gguf-quantization, model-quantization-for-local-llms,
+  mechanistic-interpretability, local-llm/llama-cpp, ollama-local-llm-runner) +
+  `queries/2026-10-05-authority-converges-on-tool-call`.
+- **Frontmatter missing 5 -> 0**: prepended full frontmatter to 5 `queries/` run-snapshot pages.
+- **`updated` field gap 1 -> 0**: `entities/daringfireball-net.md`.
+- **Orphan registration**: added `queries/2026-10-11-uncommitted-wip-snapshot` and
+  `queries/2026-10-17-skeleton-enrich-empty` to index.md; sorted Queries date-prefix block.
+- **Index header recount**: Entities 952->950, Concepts 2217->2214, Queries 36->37.
+
+### Verified clean (no action)
+- index.md corruption: pipe_prefix 0, line_number_prefix 0, triple_bracket 0, space_prefix 0, double-pipe 0.
+- Reported "2 orphans" are `concepts/gpt/_archive/*` — archive content, intentionally unindexed.
+- Skeleton entities: 0.
+
+`validate_index.py` exit 0 (3301 lines).
+
 # Wiki Operation Log
 
 Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved the complete preceding active log in an already-published immutable Git snapshot indexed by the annual archive.

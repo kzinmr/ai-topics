@@ -4,7 +4,7 @@
 > Total pages: 3276
 > Last updated: 2026-10-20
 
-## Entities (952 pages)
+## Entities (950 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -169,7 +169,6 @@
 - [[entities/claude-code--architecture]] — Claude Code — Architecture
 - [[entities/claude-code--capabilities]] — Claude Code — Capabilities & Features
 - [[entities/claude-code--history]] — Claude Code — Development History
-- [[entities/claude-haiku-5-5]] — Claude Haiku 5.5 (Anthropic, Oct 2026) — small frontier model; Anthropic claims it beats GPT-6 Luna at the same pricing
 - [[entities/clay-bavor]] — Clay Bavor — Co-founder of Sierra, former Google VP of AR/VR; Google Cardboard, Daydream, Project Starline
 - [[entities/clefourrier]] — Clémentine Fourrier
 - [[entities/clefourrier--core-ideas]] — Clémentine Fourrier — Core Ideas & Philosophy
@@ -691,7 +690,6 @@
 - [[entities/pointer]] — Pointer
 - [[entities/pointer-ai]] — Pointer AI — computer-use agent company; OSWorld SOTA 83.6% (Opus 4.7) vs human 72.4%; Feasibility Gate/Planner/Executor harness, open-sourced May 2026
 - [[entities/polar-prorl-agent-server]] — Polar (ProRL-Agent-Server)
-- [[entities/popcar]] — Popcar
 - [[entities/poolside]] — Poolside — Foundation model lab focused on agentic coding models; Laguna M.1 (Apache 2.0), Laguna XS.2 (open-weight), Laguna S 2.1 (118B MoE/8B active, Jul 2026), Model Factory (10K-20K experiments/month, Blender streaming data, zero call events, YOLO-to-rigor); open-weights as default commitment (enriched Jul 28)
 - [[entities/portkey]] — Portkey
 - [[entities/pratik-bhavsar]] — Pratik Bhavsar
@@ -960,7 +958,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2217 pages)
+## Concepts (2214 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1047,7 +1045,6 @@
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Agentic Engineering Cognition Devin Multi Agents Orchestration
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering Cognition Devin Workflow
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns
-- [[concepts/agentic-software-factory-hierarchy-of-needs]] — Agentic Software Factory Hierarchy of Needs — layered requirements for autonomous software factories (harness → context → verification → autonomy)
 - [[concepts/ai-bubble-financial-crisis]] — AI bubble financial crisis — Von Krogh's 2028 simulation of AI capex-bubble burst → private-credit mark-to-market → middle-market lending freeze (HN 447pts); Harsesian rebuttal (labor displacement ≠ credit event), Anthropic CEO's policy critique; GPT-5.5-Cyber cross-border incident and Redwood institutions-failure sidebars
 - [[concepts/ai-code-provenance-in-open-source]] — AI Code Provenance in Open Source — How OSS projects establish/enforce lineage of AI vs human contributions: OpenJDK's interim ban + Skara PR attestation checkbox, Rust disclosure model, why detection is "impossible" so projects substitute attestation; legal exposure predicts strictness (Sep 2026)
 - [[concepts/ai-coding-effectiveness-debate]] — AI Coding Effectiveness Debate — If Coding Has Been Solved, Why Does Software Keep Getting Worse? — The paradox of powerful AI coding agents coexisting with declining software quality; code generation vs. code quality distinction; productivity vs. quality metrics; ptrchm essay (July 2026, HN #2, 878pts)
@@ -2303,7 +2300,6 @@
 - [[concepts/llm-core]] — Large language model architecture, training, and research.
 - [[concepts/llm-cost-crisis]] — LLM Cost Crisis / Tokenpocalypse — spiraling inference costs from premium models, agent multiplicative consumption, and organizational proliferation
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
-- [[concepts/llm-decompilation-and-software-recovery]] — LLM Decompilation and Software Recovery — AI-assisted binary-to-source recovery for game preservation and clean-room reimplementation (controversial)
 - [[concepts/llm-creative-writing]] — LLM Creative Writing
 - [[concepts/llm-development-paradigm]] — LLM Development Paradigm
 - [[concepts/llm-echo]] — llm-echo
@@ -2581,7 +2577,6 @@
 - [[concepts/openai/economic-futures-age-of-ai]] — OpenAI Foundation: Economic Futures in the Age of AI
 - [[concepts/openai/enterprise-adoption-patterns]] — OpenAI vs Anthropic Enterprise Adoption Patterns
 - [[concepts/openai/formal-math-publication-2026]] — OpenAI Formal Mathematics Publication Program — 722 Lean 4 papers / 8,290 theorems / 1,563 open problems via GPT-5.6-Codex across ~400,000 worker sessions; DeepMind resolved 677/722; 3 withdrawals + 14 repairs within 24h
-- [[concepts/openai/gpt-5-6-codex-model-card-2026]] — OpenAI GPT-5.6-Codex Model Card (October 2026)
 - [[concepts/openai/frontier-governance-framework]] — OpenAI Frontier Governance Framework
 - [[concepts/openai/how-organizations-use-ai-evidence-from-chatgpt]] — How Organizations Use AI: Evidence from ChatGPT (OpenAI working paper)
 - [[concepts/openai/index]] — OpenAI Platform & APIs
@@ -3261,14 +3256,16 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (36 pages)
+## Queries (37 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
-- [[queries/2026-10-19-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-19): 0 status:skeleton pages across entities+concepts; backlog empty, no enrichment performed
 - [[queries/2026-10-08-human-gate-retirement-synthesis]] — 4 independent lines (ScaleX 33% approval rate, 115-practitioner survey, OverAct, PACE) converge: the human gate is structurally broken; human role contracts to post-hoc audit + scope-setting
 - [[queries/2026-10-09-crash-consistent-agent-synthesis]] — UndoBench 83.54% competence vs 46.72% recovery: effect-integrity gap; Retire/Absurd/Pi Durable/StateWise dig the same hole at 5 distinct layers, counter-evidence included
+- [[queries/2026-10-11-uncommitted-wip-snapshot]] — Skeleton-enrich run snapshot (2026-10-11): backlog empty; checkpoints uncommitted working tree (202 modified + 28 untracked) from active-crawl/newsletter pipelines
 - [[queries/2026-10-12-skills-npm-without-package-json-hotpost]] — Skills are npm without package.json: 6 missing resolution primitives; 2.19M adoptions, 30× audit-yield gap vs stars, >1/3 exclusive functions lost to install-order accidents
+- [[queries/2026-10-17-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-17): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-10-19-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-19): 0 status:skeleton pages across entities+concepts; backlog empty, no enrichment performed
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
@@ -3296,7 +3293,6 @@
 - [[queries/wiki-graph-analysis-weekly-2026-09-18]] — Weekly Wiki Graph Analysis (2026-09-18) — 3,079 pages (recursive scan); 446 orphans (303 content-rich), 2,810 broken links (919 raw-ref-as-wikilink), 8 real duplicate groups, 1,661 stale, 0 tag violations
 - [[queries/wiki-graph-analysis-weekly-2026-09-25]] — Weekly Wiki Graph Analysis (2026-09-25) — 3,112 pages; 465 orphans (316 rich), 3,512 broken refs (context-engineering hub = 188), 8 unresolved dup groups + 48 dir-collision stubs, 2,230 stale; state snapshot persisted
 - [[queries/wiki-graph-analysis-weekly-2026-10-02]] — Weekly Wiki Graph Analysis (2026-10-02) — 3,120 pages; 6 top-level orphans, 0 ghost entries, 866 tags
-- [[queries/wiki-graph-analysis-weekly-2026-10-09]] — Weekly Wiki Graph Analysis (2026-10-09) — 2,583 pages (top-level scan); 494 orphans, 6,163 broken links, 16 dup groups, 1,812 stale
 - [[queries/wiki-graph-analysis-weekly-2026-10-16]] — Weekly Wiki Graph Analysis (2026-10-16) — 3,258 pages (recursive, Obsidian-resolution); 3,039 true orphans (93%), 1,840 broken targets + 649 normalization-needed, 15 confirmed dup groups, 2,364 stale; built-in weekly script flagged as undercounting
 - [[queries/where-the-missing-software-went]] — Where the missing software went: reconciles code-review-bottleneck (shipping didn't grow) with the modest-success boom (modest successes doubling per year) — growth went long-tail, review capacity is the moat
 

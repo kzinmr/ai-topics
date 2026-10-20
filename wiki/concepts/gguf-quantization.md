@@ -6,6 +6,7 @@ updated: 2026-09-16
 tags:
   - local-llm
   - quantization
+sources: []
 redirect: concepts/local-llm/gguf
 ---
 

@@ -1,3 +1,14 @@
+---
+title: "Wiki changes — 2026-10-11 (uncommitted working tree)"
+type: query
+created: 2026-10-11
+updated: 2026-10-20
+tags:
+  - query
+  - knowledge-management
+sources: []
+---
+
 # Wiki changes — 2026-10-11 (uncommitted working tree)
 
 > Snapshot note created by the `skeleton-enrich-daily` run (2026-10-11 19:xx UTC).

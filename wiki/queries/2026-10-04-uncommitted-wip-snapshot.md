@@ -1,3 +1,14 @@
+---
+title: "Wiki changes — 2026-10-04 (uncommitted working tree)"
+type: query
+created: 2026-10-04
+updated: 2026-10-20
+tags:
+  - query
+  - knowledge-management
+sources: []
+---
+
 # Wiki changes — 2026-10-04 (uncommitted working tree)
 
 > Auto-generated snapshot of the uncommitted `wiki/` changes at the time of the

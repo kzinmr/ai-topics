@@ -8,6 +8,7 @@ tags:
   - tool-use
   - agent-governance
   - knowledge-management
+sources: []
 confidence: medium
 related:
   - concepts/pace-provenance-aware-capability-enforcement

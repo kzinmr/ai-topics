@@ -6,6 +6,7 @@ updated: 2026-09-16
 tags:
   - local-llm
   - open-source
+sources: []
 redirect: concepts/llama-cpp
 ---
 
