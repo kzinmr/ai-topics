@@ -23,9 +23,9 @@ sources: []
 > No `skeleton` markers present.
 >
 > Note: the large `status: stub` population (458) is NOT the skeleton backlog — stub pages are
-> a distinct, deliberately-tracked maturity tier (see [[concepts/entity-maturity-levels]]) and are
-> handled by `wiki-entity-enrichment-batch`. The skeleton backlog specifically refers to pages
-> emitted by `build_x_wiki.py` / `build_blog_wiki.py` (which stamp `status: skeleton`).
+> a distinct, deliberately-tracked maturity tier handled by the batch enrichment workflow. The
+> skeleton backlog specifically refers to pages emitted by `build_x_wiki.py` /
+> `build_blog_wiki.py` (which stamp `status: skeleton`).
 >
 > Only prose mentions of the word "skeleton" remain (e.g. "exoskeleton" in
 > `entities/fourier-intelligence.md`, "skeleton repo" in `entities/antoine-buteau.md`, the
