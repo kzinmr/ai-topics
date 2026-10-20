@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-10-20T10:36:53.646030+00:00",
+  "triage_run_id": "20261020T101040Z",
+  "source": "newsletter",
+  "summary_ja": "2026-10-19 着の3ニュースレター（Import AI 477 / Lenny's Newsletter How I AI / 発行元不明 beehiiv）を post レベルでトリアージ。Import AI 477 は Jack Clark が 2026-10-17 のバンコク IMF 総会で講演した 'Inside the Event Horizon' を本人一次資料として収録したもので、Anthropic研究者のコード生産量が設立後4年とと比較して約10倍という社内実測値と「シンギュラリティは既に始まった」論を含む。entities/jack-clark.md は Import AI 458/459/467/468 のみ収録で IMF 講演は未収録のため、唯一の take（既存リッチページへの節追記）。Lenny's How I AI の Claire Vo による Meta Muse Wonder 約20タスク実務評価（価格帯最強・プロンプトインジェクション耐性・active focus）は、第三方レビュー由来のデータであるため新規ページ化せず reference（既存 Muse 系ページへの評価データ追記）に格下げ。発行元不明 beehiiv の 'Anthropic's First Step Toward Universal High Income' は全20本が HTTP 403 で本文取得不能かつ sam-altman.md の Musk 'Universal HIGH Income' と混同危険があるため reference （要 corroboration）。残りは Substack メールUIと beehiiv 過期トークンの batch skip。",
+  "decisions": [
+    {
+      "item_id": "<20261019123137.3.a0000f08fa824f0d@mg-d0.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "Import AI 477 (Jack Clark / Anthropic)",
+      "title": "Import AI 477 - Substack email chrome / tracking links (Links 1, 3-14)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-19-import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 13 of 14 links are Substack email chrome: redirect/2/eyJ... base64 OAuth (requires the recipient's email session, will not resolve), @importai author profile, submitLike / post-comment / share reaction buttons, app-store read-in-app prompt, and redirect/<uuid> tracking links (email-session auth; the post body already contains every curated link). Zero wiki value, web_extract cannot reach them. Topic-level assessment for this digest was completed on Link 2.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-19\n**Subject:** Import AI 477: In which I tell the IMF the Singularity has begun\n**Collected:** 2026-10-20T10:10:27.725117+00:00\n**Articles linked:** 14\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBvcnRhaS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V"
+    },
+    {
+      "item_id": "<20261019150335.3.323bf7bf2ee226c0@mg2.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter - How I AI (Claire Vo)",
+      "title": "How I AI - Substack email chrome / tracking links (Links 1, 3-20)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-19-how-i-ai-meta-muse-wonder-how-brooke-lacey-is-scaling-video-with-ai.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 19 of 20 links are Substack email chrome: redirect/2/eyJ... base64 OAuth, @lenny author profile, submitLike / post-comment / share buttons, app-store read-in-app prompt, and 12 redirect/<uuid> tracking links that require email-session auth. Zero wiki value. Body-derived assessment was completed on Link 2.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-19\n**Subject:** 🎙️ How I AI: Meta Muse Wonder + How Brooke Lacey is scaling video with AI\n**Collected:** 2026-10-20T10:10:32.663592+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20vc3"
+    },
+    {
+      "item_id": "<20261019.190541.1c820409@mta28>-2",
+      "source": "newsletter",
+      "source_name": "unknown beehiiv newsletter (20 tracking links, HTTP 403)",
+      "title": "Anthropic UHI - remaining 19 expired beehiiv tracking links (Links 2-20)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-19-anthropic-s-first-step-toward-universal-high-income.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ The remaining 19 links belong to the same beehiiv v2/c/ tracking family. One was spot-checked and returned HTTP 403, matching the expired-beehiiv-token pattern (distinct from a transient http_error): the whole batch shares the same auth window, so retrying is pointless. No body content is reachable; the topic assessment for this digest is consolidated on the Link 1 entry.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-19\n**Subject:** 💸 Anthropic's First Step Toward Universal High Income\n**Collected:** 2026-10-20T10:10:36.047268+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/6cb5ee9daa8d70af5d7803b8402e68f6e71375bfc58105cf8d4f9eba38a7ec0334a226f"
+    }
+  ]
+}
