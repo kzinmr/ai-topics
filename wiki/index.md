@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3276
+> Total pages: 3277
 > Last updated: 2026-10-20
 
 ## Entities (950 pages)
@@ -3256,7 +3256,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (37 pages)
+## Queries (38 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
@@ -3266,6 +3266,7 @@
 - [[queries/2026-10-12-skills-npm-without-package-json-hotpost]] — Skills are npm without package.json: 6 missing resolution primitives; 2.19M adoptions, 30× audit-yield gap vs stars, >1/3 exclusive functions lost to install-order accidents
 - [[queries/2026-10-17-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-17): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-19-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-19): 0 status:skeleton pages across entities+concepts; backlog empty, no enrichment performed
+- [[queries/2026-10-20-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-20): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
