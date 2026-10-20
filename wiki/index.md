@@ -424,7 +424,7 @@
 - [[entities/itsreallyvivek]] — Vivek (@itsreallyvivek)
 - [[entities/ivan-burazin]] — Ivan Burazin
 - [[entities/ivan-leo]] — Ivan Leo (@ivanleomk) — Google DeepMind DevRel (SF, since Mar 2026); ex-Manus founding engineer ($75M→$100M ARR); builds agents from scratch series, instructor/Kura contributor
-- [[entities/jack-clark]] — Jack Clark
+- [[entities/jack-clark]] — Jack Clark; Import AI 477 "Inside the Event Horizon" IMF Bangkok speech (Oct 17, 2026): "the Singularity has already begun," Anthropic researchers produce ~10× the code vs the lab's first four years, coding→science→robotics diffusion, AI-designed drugs/viruses, autonomous lab equipment (Oct 2026)
 - [[entities/jacob-xiaochen-li]] — Jacob Xiaochen Li — MIT CSAIL researcher; Machine Studying framework, StudyBench benchmark
 - [[entities/jakub-pachocki]] — Jakub Pachocki — OpenAI Chief Scientist; IMO medalist; author of "An Alien Mind" (6 Sep 2026) framing GPT-6 Astra as alien superintelligence rather than AGI
 - [[entities/jarred-sumner]] — Jarred Sumner
@@ -2403,7 +2403,7 @@
 - [[concepts/meta-capacity-efficiency-agents]] — Meta Capacity Efficiency: Unified AI Agents at Hyperscale
 - [[concepts/meta-harness]] — Meta-Harness; added Omnigent (Databricks) commercial implementation section — first major open-source production meta-harness (June 25)
 - [[concepts/meta-meta-prompting]] — Meta-Meta-Prompting
-- [[concepts/meta-muse-spark]] — Meta Muse Spark
+- [[concepts/meta-muse-spark]] — Meta Muse Spark; Muse Wonder (Oct 2026) third-party agentic eval by Claire Vo — strongest agentic model at its price tier, active focus, prompt-injection resistant (How I AI)
 - [[concepts/metadata-retrieval]] — Metadata retrieval is a distinct retrieval paradigm alongside lexical (BM25) and embedding/semantic search, where str...
 - [[concepts/mesh-llm]] — Mesh LLM — Distributed P2P LLM inference over the iroh protocol, pooling GPU resources across machines
 - [[concepts/michael-abrash]] — michael-abrash

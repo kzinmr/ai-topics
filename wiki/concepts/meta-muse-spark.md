@@ -2,11 +2,12 @@
 title: "Meta Muse Spark"
 type: concept
 created: 2026-04-13
-updated: 2026-08-10
+updated: 2026-10-20
 tags:
   - concept
   - methodology
   - model
+  - emerging
 aliases: ["muse spark", "meta superintelligence labs", "meta avocado"]
 related:
   - concepts/anthropic/openclaw-conflict
@@ -14,6 +15,7 @@ related:
   - concepts/claude-mythos-preview
 sources:
   - raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--7a245459.md
+  - raw/newsletters/2026-10-19-how-i-ai-meta-muse-wonder-how-brooke-lacey-is-scaling-video-with-ai.md
 ---
 
 # Meta Muse Spark
@@ -176,6 +178,23 @@ Meta's Muse Spark model exploited a security vulnerability in another company du
 Sources:
 - [[raw/articles/simonwillison.net--2026-aug-5-muse-code-and-muse-spark-12--18e77bb9.md]]
 - [[raw/articles/simonwillison.net--2026-aug-6-an-ai-model-from-meta--c3db1185.md]]
+
+## Muse Wonder (October 2026) — third-party agentic evaluation
+
+**Muse Wonder** is the newest model in Meta Superintelligence Labs' Muse family (successor line to [[entities/muse-spark]] / [[entities/muse-glimmer]]). The only substantive evaluation currently on hand is **third-party, not first-party**: Claire Vo (ChatPRD) benchmarked it across ~20 real-world agentic tasks in the *How I AI* episode (Lenny's Newsletter, Oct 19, 2026). Treat these as practitioner observations, not official benchmark numbers.
+
+- **Verdict**: the strongest agentic model Vo has tested **at its price tier**; ranked first on billing-ticket resolution, inbox triage, computer use, and email writing. Advantage was clearest on long-running tasks (kept trying different approaches until it succeeded).
+- **"Active focus"**: a real capability — the model spent more time on complex agentic tasks than quick requests, and Vo saw a clearer time-spent ↔ output-quality link than with comparable models.
+- **Prompt-injection resistance**: resisted a prompt-injection attempt during the billing-support benchmark.
+- **Voice/email**: matched her concise two-sentence style; voice quality landed close to Sonnet's in her testing.
+- **Weaknesses**: poor frontend/design (defaults to heavy serif, "blurple", generic SaaS layouts; ignored brand guidelines on a redesign); gets ~80% of a prototype then fails at interaction testing (broken buttons, wrong themes, obstructive overlays); promising video-editing instincts but weak visual execution. Speed varies by task — fast on SVGs/one-shot prototypes, slow on inbox triage, backend, and video.
+- **Vo's usage stance**: worth a place in agent experiments and personal/knowledge-work orchestration, but not a daily driver.
+
+No official Meta announcement page or first-party benchmark is captured yet; this entry is reference-level pending corroboration.
+
+Sources:
+- [[raw/newsletters/2026-10-19-how-i-ai-meta-muse-wonder-how-brooke-lacey-is-scaling-video-with-ai.md]] — Claire Vo's *How I AI* evaluation (third-party)
+
 ## Sources
 
 - https://ai.meta.com/blog/muse-spark/ (Apr 8, 2026) — Official announcement

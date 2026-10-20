@@ -1,5 +1,5 @@
 {
-  "archived_at": "2026-10-20T10:36:53.646030+00:00",
+  "archived_at": "2026-10-20T10:54:34.682336+00:00",
   "triage_run_id": "20261020T101040Z",
   "source": "newsletter",
   "summary_ja": "2026-10-19 着の3ニュースレター（Import AI 477 / Lenny's Newsletter How I AI / 発行元不明 beehiiv）を post レベルでトリアージ。Import AI 477 は Jack Clark が 2026-10-17 のバンコク IMF 総会で講演した 'Inside the Event Horizon' を本人一次資料として収録したもので、Anthropic研究者のコード生産量が設立後4年とと比較して約10倍という社内実測値と「シンギュラリティは既に始まった」論を含む。entities/jack-clark.md は Import AI 458/459/467/468 のみ収録で IMF 講演は未収録のため、唯一の take（既存リッチページへの節追記）。Lenny's How I AI の Claire Vo による Meta Muse Wonder 約20タスク実務評価（価格帯最強・プロンプトインジェクション耐性・active focus）は、第三方レビュー由来のデータであるため新規ページ化せず reference（既存 Muse 系ページへの評価データ追記）に格下げ。発行元不明 beehiiv の 'Anthropic's First Step Toward Universal High Income' は全20本が HTTP 403 で本文取得不能かつ sam-altman.md の Musk 'Universal HIGH Income' と混同危険があるため reference （要 corroboration）。残りは Substack メールUIと beehiiv 過期トークンの batch skip。",

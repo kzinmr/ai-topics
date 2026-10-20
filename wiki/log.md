@@ -1,3 +1,16 @@
+## [2026-10-20] ingest | newsletter-wiki-ingest: Import AI 477 IMF speech, Meta Muse Wonder eval
+
+Recovered from a failed newsletter-triage JSON parse by reading `triage_latest.json` (run_id 20261020T101040Z) directly. 3 newsletters triaged (Import AI 477 / Lenny's How I AI / unknown beehiiv). 1 take executed, 1 reference executed, 1 reference no-op, 3 skips.
+
+### Updated
+- [[entities/jack-clark]] — new section "Import AI 477: Inside the Event Horizon — IMF Bangkok speech (Oct 17, 2026)": Clark argues "the Singularity has already begun"; primary-source body data — Anthropic researchers produce almost 10× the code vs the lab's first four years; coding→science→robotics diffusion; AI-designed viruses/drugs; autonomous lab equipment; growth/human-capital framing; his narrator/agent/translator self-positioning. Claims verified against importai.substack.com primary post.
+- [[concepts/meta-muse-spark]] — new "Muse Wonder (October 2026)" reference section: Claire Vo's third-party agentic eval (How I AI, Lenny's Newsletter) across ~20 tasks; strongest agentic model at its price tier; active focus; prompt-injection resistance; email/voice near Sonnet; weak frontend/design and video execution. Explicitly flagged as third-party, pending first-party corroboration. Added `emerging` tag + newsletter source to frontmatter.
+
+### No-op (reference)
+- Anthropic "First Step Toward Universal High Income" (unknown beehiiv, all 20 tracking links HTTP 403): unverifiable from primary source; [[entities/sam-altman]] already records Musk's April 2026 "universal HIGH income" proposal — no page change made, topic archived for future corroboration.
+
+### Skipped
+- Import AI 477 Substack email chrome (13/14 links), Lenny's How I AI chrome (19/20 links), 19 expired beehiiv tracking links.
 ## [2026-10-19] ingest | x-accounts-scan: Monty v1.2.0, tsc-ts, Devin efficiency cost controls, Gemma docs, Antigravity model matrix
 
 Scan covered 11 accounts, 9 new linked posts. No new pages created — all content folded into existing entities/concepts.

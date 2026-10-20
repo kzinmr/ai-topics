@@ -1,7 +1,7 @@
 ---
 title: "Jack Clark"
 created: 2026-05-05
-updated: 2026-08-11
+updated: 2026-10-20
 type: entity
 tags: [person, company, anthropic, safety, prediction, governance]
 sources:
@@ -10,6 +10,7 @@ sources:
   - raw/newsletters/2026-06-01-import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-.md
   - raw/newsletters/2026-08-03-import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-a.md
   - raw/newsletters/2026-08-10-import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interpl.md
+  - raw/newsletters/2026-10-19-import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun.md
 ---
 
 # Jack Clark
@@ -108,6 +109,22 @@ See [[raw/newsletters/2026-08-03-import-ai-467-self-sustaining-ai-viruses-pacing
 **Trust, transparency, and AI racing**: How trust and transparency interplay with the AI race — continuing the pacing/collective-action theme from Import AI 467.
 
 See [[raw/newsletters/2026-08-10-import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interpl.md]] for full text.
+
+### Import AI 477: "Inside the Event Horizon" — IMF Bangkok speech (October 2026)
+
+**"Import AI 477: In which I tell the IMF the Singularity has begun" (Oct 19, 2026)**: Clark published the full text of a speech he delivered on Saturday, **17 October 2026 at the IMF meeting in Bangkok**, titled *"Inside the Event Horizon: Why Everyone Should Take AI Progress Seriously."* It is a primary-source statement of his current public thesis and a direct continuation of the autonomous-frontier-of-science megatrend he has tracked through Import AI 455–468 (see [[concepts/recursive-self-improvement]]).
+
+Core argument — **the Singularity has already begun**, because AI now operates autonomously at the frontier of human science. Concrete data points from the speech body:
+
+- **Anthropic internal code productivity**: researchers at Anthropic now produce **almost 10× the amount of code** than they did during the company's first four years — Clark's own internal measurement of the coding-capability step change.
+- **Coding → science → robotics diffusion**: the coding gains are the leading edge; the same capability jump is already propagating to science and robotics ("It has already begun to happen").
+- **AI-designed biology**: researchers have used AI to design viruses from scratch and identify new drug candidates; drugs already in trials today were largely AI-designed.
+- **Autonomous lab work**: AI systems increasingly operate laboratory equipment autonomously.
+- **Growth & human capital**: he frames growth as driven by the stock of human capital — the people who ask questions and conduct research — implying that if AI takes over idea generation, "some important properties of the global economy may change."
+
+Clark also foregrounds his own **dual role** — as "a narrator of what is happening in AI, a principal agent behind what is happening in AI, and a translator between many communities" — and stresses he takes that responsibility "extremely seriously." This self-positioning as narrator/agent/translator is a recurring motif in his 2026 writing and situates the speech within his pacing/collective-action themes ([[events/2026-07-29-rsi-pace-letter]]).
+
+See [[raw/newsletters/2026-10-19-import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun.md]] and the primary post at [importai.substack.com](https://importai.substack.com/p/import-ai-477-in-which-i-tell-the).
 
 ## Writing Style
 Clark writes with a distinctive combination of technical precision and literary flair. His newsletter intros often set context through historical analogies or science fiction references before diving into data. He is notably willing to make concrete, falsifiable predictions with explicit probability estimates.
