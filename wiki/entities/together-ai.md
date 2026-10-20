@@ -2,7 +2,7 @@
 title: "Together AI"
 type: entity
 created: 2026-05-08
-updated: 2026-08-22
+updated: 2026-10-20
 tags:
   - company
   - infrastructure
@@ -10,6 +10,8 @@ tags:
   - inference
   - hardware
   - evaluation
+  - post-training
+  - reinforcement-learning
 aliases: ["Together Compute", "Together Computer Inc."]
 sources:
   - https://www.together.ai/
@@ -18,6 +20,7 @@ sources:
   - raw/articles/2026-07-31_together-ai_autoscaling-endpoints-llm-inference.md
   - raw/articles/together.ai--blog-a-b-test-models-in-production--0e300cb3.md
   - raw/articles/together.ai--blog-deepseek-v4-pro-0813-vs-claude-fable-5-on-deepswe-cost---246b2add.md
+  - raw/articles/together.ai--blog-together-post-training--0ce37260.md
 ---
 
 # Together AI
@@ -104,6 +107,33 @@ Together AI has published a series of head-to-head cost/coding/routing compariso
 Full results and routing analysis: [[concepts/ai-benchmarks/deepswe-benchmark|DeepSWE Benchmark page]].
 
 Source: [DeepSeek V4 Pro 0813 vs Claude Fable 5 on DeepSWE — Together AI Blog](https://www.together.ai/blog/deepseek-v4-pro-0813-vs-claude-fable-5-on-deepswe-cost-coding-and-routing) (Aug 2026)
+
+
+## Together Post-Training (Oct 2026)
+
+Together launched **Together Post-Training**, a managed service for building custom models via **RL (environment rewards) and SFT (supervision data)**, distinct from the existing fine-tuning platform in that *the customer defines the entire training loop* while Together co-optimizes the infrastructure underneath for quality and speed.
+
+**Architecture**:
+- **Model Resources** = dedicated, non-contended GPU allocations. Each holds one or more **Training Sessions** (one experiment per base model). Each session = a `Trainer` instance (forward/backward/weight updates) + `Generator` instances (policy rollouts). SFT sessions can start with 0 generators to save cost.
+- **Async RL** supported for high GPU utilization of trainer and generator simultaneously, especially for long agentic rollouts.
+- Supports **LoRA** (including multiple adapters sharing one GPU capacity) and **full-weight** training on select models.
+- Standard losses: cross-entropy, GRPO, CISPO, DPPO — plus **custom local loss functions** whose gradients are shipped to the Trainer.
+- Launch model lineup: Muse Spark Open, GLM 5.3, Kimi K3, Qwen 3.8-27B.
+
+**Reliability positioning**: The core pitch is eliminating *silent bugs* — specifically train/inference numeric mismatch that causes policy drift and run collapse. Mitigations include **Rollout Routing Replay** plus stability research; rollout engines reuse the production serving stack (intelligent caching/routing for multi-turn agents, sequence packing + optimized parallelism on the training side).
+
+**Deployment & economics**:
+- **Multi-LoRA adapter serving** in Dedicated Model Inference — swap adapters within a single GPU deployment instead of one deployment per run.
+- FP4 merged inference after multi-LoRA sampling, with quality retention claimed via combined algorithmic + systems work.
+- Billed **per GPU-minute**; below token-based pricing once experiment scale grows. Launch promo: **$9/GPU-hour on B200 for the first eight weeks**.
+- **Tinker migration path**: `import together.post_training.tinker as tinker` is a one-line drop-in replacement for OpenAI Tinker API users. Cookbooks at `github.com/togethercomputer/post-training-cookbook` (GRPO on GSM8K, DPO as custom loss, multi-LoRA in one resource).
+- **Forward-deployed engineers** partner across the full lifecycle: open-model + agent-harness selection, data/reward design, evaluations, shipping an optimized endpoint.
+
+**Early-adopter evidence**: Deel (up to 5 concurrent RL experiments on the same GPU capacity), Jack & Jill (post-trained an open model to match a closed-source model's offline quality for candidate-ranking, at much lower serving cost), Collinear AI (self-onboarding enabled full-scale agentic RL runs).
+
+> Strategic read: this positions Together against OpenAI Tinker and [[entities/sambanova]]/[[entities/fireworks-ai]]-style post-training APIs, monetizing its inference stack as the differentiator — rollout generation dominates RL wall-clock, so serving-stack optimizations transfer directly to training economics. See [[concepts/post-training/reinforcement-learning]], [[concepts/post-training/asynchronous-rl]] and [[concepts/post-training/multi-turn-tool-use-rl]].
+
+Source: raw/articles/together.ai--blog-together-post-training--0ce37260.md
 
 
 ## World's Fastest Speech-to-Text Stack (May 2026)

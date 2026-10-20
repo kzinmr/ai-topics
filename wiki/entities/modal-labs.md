@@ -2,11 +2,15 @@
 title: "Modal Labs"
 type: entity
 created: 2026-05-08
-updated: 2026-10-13
+updated: 2026-10-20
 tags:
   - company
   - infrastructure
   - hardware
+  - sandbox
+  - ai-infrastructure
+  - cpu
+  - nvidia
 aliases: ["Modal", "Modal Labs, Inc."]
 sources:
   - https://modal.com/
@@ -16,6 +20,7 @@ sources:
   - raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
   - raw/articles/modal.com--blog-achieve-sota-specdec--da236272.md
   - raw/newsletters/2026-07-08-why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto.md
+  - raw/articles/modal.com--blog-nvidia-vera-sandboxes--1cb9000c.md
 ---
 
 # Modal Labs
@@ -189,3 +194,21 @@ Modal's approach to training custom speculator models:
 - Released open-source DFlash speculator for Qwen 3.5 397B-A17B, improving on MTP by 50%+
 
 Source: raw/articles/modal.com--blog-achieve-sota-specdec--da236272.md
+
+## NVIDIA Vera CPUs for Sandboxes (Oct 2026)
+
+NVIDIA hand-delivered Modal's first **Vera CPU** server to its SF office. Vera is NVIDIA's new **Arm-compatible CPU**, built for the Vera Rubin GPU platform but also sold as a standalone CPU server. Adopting it means Modal's first departure from an x86-only history — infrastructure and the image-build system had to be ported to a new CPU architecture. The payoff in Modal's benchmarks: **up to 2x task throughput** vs an equivalent x86 (Intel Granite Rapids) machine.
+
+**Why sandboxes are an unusual CPU workload** (and why generic CPU benchmarks mislead):
+- Hundreds of concurrent containers/VMs per host, each with a *unique* workload shape — unlike Kubernetes pod colocation.
+- Usage is extremely **spiky**: a sandbox idles waiting on the LLM, then surges 10x above baseline unpredictably.
+- Workload shapes are **not statically known** — an LLM can throw anything into the sandbox, so resource sizing is a guess.
+- Modal deliberately lets users **burst above their reservations** (a strategy that saved users millions), which raises noisy-neighbor exposure relative to strict limits.
+
+**Benchmark method — "Agentless Agent Bench"**: 50 Terminal-Bench oracle solutions and verifiers, stripped of network calls, prewarmed in concurrent Docker containers, isolating only the CPU work agents and RL actually do (compilation, file grepping, git operations, device emulation). Two regimes:
+- **Straightline latency** (quiet host, serial): Vera often ahead but not decisively — Modal was initially skeptical.
+- **Throughput under load** (50/100/150 concurrent containers, verified completions per 60s): a different story. Vera holds its pace as jobs accumulate while alternatives plateau early — thanks to **high memory bandwidth**, which packs more container workloads per core without throttling. At higher CPU counts Vera keeps improving, suggesting headroom beyond the single node tested.
+
+**Why it matters economically**: for background agents (Ramp Inspect, Niteshift), faster sandboxes mean faster answers → revenue and retention, plus lower CPU time → lower COGS. For RL, GPUs sit idle waiting on synchronous rollout fanouts — time saved on CPU is time saved on GPU. See [[concepts/modal-sandboxes]], [[concepts/warm-start-optimization]], [[entities/ramp]] and the [[entities/nvidia|NVIDIA]] Rubin platform.
+
+Source: raw/articles/modal.com--blog-nvidia-vera-sandboxes--1cb9000c.md

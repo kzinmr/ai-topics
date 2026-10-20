@@ -2,13 +2,15 @@
 title: "Factory"
 type: entity
 created: 2026-05-08
-updated: 2026-08-25
+updated: 2026-10-20
 tags:
   - company
   - coding-agents
   - ai-agents
   - developer-tooling
   - software-engineering
+  - partnership
+  - databricks
 aliases: ["Factory AI", "Factory.ai", "droids"]
 sources:
   - https://www.factory.ai
@@ -18,6 +20,7 @@ sources:
   - https://www.businessinsider.com/coinbase-layoffs-ai-brian-armstrong-job-cuts-letter-2026-5
   - raw/newsletters/2026-05-22-bens-bites-googles-take-on-openclaw.md
   - raw/articles/2026-08-25_factory_model-routing-belongs-in-the-harness.md
+  - raw/articles/2026-10-20_factory_databricks-partnership.md
 related:
   - [[concepts/subagent-patterns]]
   - [[entities/cursor-ai]]
@@ -145,3 +148,22 @@ Factory introduced the **Deferred Context Engine** — Droid loads tools selecti
 - Reduces context size by **~40%**
 - Droid dynamically determines which tools to load based on task
 - Addresses context window bloat in multi-tool agent systems
+
+## Databricks Partnership (Oct 2026)
+
+Factory announced a partnership with [[entities/databricks]] (Oct 19, 2026): customers can use the data and models in the **Databricks Data + AI Platform** to power software built or migrated by Factory Droids. The announcement is anchored on a live engagement migrating one of the largest global enterprises' data platform — **petabytes of data, hundreds of thousands of tables, hundreds of business applications** (UIs, app services, integration/API layers, business logic, security) — to Databricks.
+
+**The thesis**: data modernization and software modernization must happen together. Moving tables to the lakehouse is the easy half; the applications and workflows that consume them still need rebuilding, and historically that required separate data-engineering and application-development teams with different tools and handoffs, where a single pipeline change cascades downstream. Factory + Databricks collapses it into **one engineering workflow** — agents understand the existing system, plan the migration, build, and validate — with Databricks as the open, governed data/analytics/AI foundation and Factory supplying agentic software engineering.
+
+**Mechanics**:
+- **Understanding**: Droids work across application code, data pipelines, SQL, tests and docs, tracing how an app depends on a stored procedure, which pipeline feeds it, and where a change propagates. Databricks **Unity Catalog**-governed assets and Factory's context integrations connect app dependencies to the data foundation.
+- **Planning**: Droids identify dependencies, propose an implementation sequence and compatibility checks; **Missions** provide planning, milestones and coordinated multi-component execution; engineers review the plan and resolve ambiguous business rules before implementation.
+- **Execution**: Droids use Databricks API access to create/run jobs, validate results and deploy apps — e.g., moving an app from legacy Postgres to **Databricks Lakebase**, rewriting transformations in Python, building/scheduling a **Lakeflow** pipeline, creating an **AI/BI** dashboard, then diffing the new app against the legacy one.
+
+**Three use-case categories**: (1) **PDLC Automation** — requirement through planning, development, testing, security, docs, monitoring on Databricks-powered apps; (2) **Migration and Modernization** — data platform migrations plus dependent applications; (3) **Cybersecurity** — remediating vulnerabilities flagged by **Databricks Lakewatch**.
+
+**Go-to-market signal**: qualifying customers can buy Factory through the **Databricks Marketplace using up to 10% of their existing Databricks commitment** — a consumption-commitment burn-down channel. Integration surface: a Databricks connector under Settings → Connectors, managed MCP servers, running Droids on Databricks-served models, and webhook automations.
+
+> Read: this is the coding-agent vendor moving up-stack from "write code" to "own a data-platform migration," using a hyperscaler-adjacent data platform as both distribution and governed context source. Compare [[concepts/enterprise-agents]] and Factory's [[#Factory Router: Model Routing in the Harness (Aug 2026)|harness-side model routing]].
+
+Source: raw/articles/2026-10-20_factory_databricks-partnership.md

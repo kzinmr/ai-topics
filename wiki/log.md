@@ -1,3 +1,48 @@
+# Wiki Operation Log
+
+Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved the complete preceding active log in an already-published immutable Git snapshot indexed by the annual archive.
+
+
+## [2026-10-20] dreaming wiki-ingest | Pattern E saturation — 4 references enriched, 6 skips archived
+
+**Recovery**: Upstream dreaming-group (job c4a9e8d2f671) saved `triage_latest.json` (18:16 UTC, run 20261020T181000Z) but failed the cron response render (`failed to parse JSON response from dreaming-group output`, output file 5,093 lines at `/opt/data/.hermes/cron/output/c4a9e8d2f671/2026-10-20_18-18-16.md`). Read triage JSON directly — no re-triage. No upstream commit today touched wiki content (only health-fix `a32fde1f` / watchdog `984ce978`).
+
+**Checkpoint**: `p["payload"]["articles"]` = 0, `recent_raw_articles` = 236 → Pattern E filesystem scan with archive-index absence probe (2,838 URLs, 64 never-archived) as the decisive candidate pool.
+
+**Duplicate check**: Today's hot topics already handled by trending-topics (`f4d1b238` — MiniMax M3.1 Flash, WhatsApp hidden AI instructions, Simon Willison obituary-for-programming) and active-crawl (`97510378` — DeepInfer, Clairic/System One, ROME weight-tampering, Company World Models, Anthropic employment). No re-processing.
+
+### Reference verification gate (all 4 = genuine gaps)
+
+| Candidate | Status | Details |
+|-----------|--------|---------|
+| Together Post-Training | ❌ Genuine gap | `entities/together-ai.md` listed only "Fine-Tuning Platform" in the Key Facts table; zero coverage of the RL/SFT managed training loop, Model Resources/Trainer+Generator split, Rollout Routing Replay, FP4 merged serving, $9/B200-hr launch pricing, Tinker one-line migration |
+| Harvey Graph | ❌ Genuine gap | `entities/harvey.md` (959 lines) had LAB and US Case Law sections but zero "Harvey Graph" / "context graph" content — the +30% rubric / −50% cost / 0%→75% / 93%-50% memory-survey numbers were absent |
+| Modal × NVIDIA Vera CPU | ❌ Genuine gap | Neither `entities/modal-labs.md` nor `concepts/modal-sandboxes.md` mentioned Vera, Arm, or the 2x-throughput benchmark; Agentless Agent Bench methodology absent |
+| Factory × Databricks | ❌ Genuine gap | Zero "Databricks" mentions across `entities/factory.md` / `factory-ai.md`; raw article was a 21-line nav-chrome stub (body recovered, see below) |
+
+### Pages updated (4)
+- `entities/together-ai.md` — new section "Together Post-Training (Oct 2026)": customer-defined training loop, Model Resources/Training Sessions, async RL, LoRA+full-weight, GRPO/CISPO/DPPO + custom gradient losses, launch lineup (Muse Spark Open, GLM 5.3, Kimi K3, Qwen 3.8-27B), multi-LoRA dedicated serving, FP4 merged inference, per-GPU-minute billing, Tinker drop-in migration, forward-deployed engineering; early adopters Deel (5 concurrent RL runs same capacity) / Jack & Jill / Collinear AI
+- `entities/harvey.md` — new section "Harvey Graph (Oct 2026)": knowledge graph (US Case Law, millions of opinions, citation-treatment graph) + per-Space context graph, flat-retrieval-vs-relationships argument, ethical-wall/permission constraints, LAB evals (+30% rubric pass, ~−50% task cost, firm-knowledge task 0%→75%), memory survey 93%/50%, roadmap (precedent flags, cite checking, law-evolution tracking, firm-defined ontologies); cross-linked to `concepts/context-engineering/context-graph` and `concepts/agentic-alternative-to-graphrag`
+- `entities/modal-labs.md` + `concepts/modal-sandboxes.md` — new section "NVIDIA Vera CPUs for Sandboxes (Oct 2026)": Arm-compatible Vera (Vera Rubin, standalone CPU server), Modal's first move off x86-only, up to 2x throughput vs Intel GNR, Agentless Agent Bench (50 Terminal-Bench oracles, network-stripped, concurrent containers), latency-vs-throughput-under-load distinction, high-memory-bandwidth packing explanation, spiky/unknown workload shapes + burstability/noisy-neighbor trade, background-agent COGS and RL GPU-idle economics
+- `entities/factory.md` — new section "Databricks Partnership (Oct 2026)": joint petabyte-scale migration (hundreds of thousands of tables, hundreds of apps), data+software modernization thesis, Unity Catalog-governed dependency tracing, Missions planning, Lakebase/Lakeflow/AI-BI execution path, three use-case categories (PDLC automation, migration/modernization, Lakewatch cybersecurity remediation), Databricks Marketplace burn-down at up to 10% of commitment
+
+### Raw article body recovery
+`raw/articles/2026-10-20_factory_databricks-partnership.md` was a 21-line nav-chrome stub (sitemap scrape captured no body). Re-fetched the live URL (HTTP 200, 158KB) and recovered 17 paragraphs via `<article>` extraction; saved with `recovered_body` frontmatter note. Article body re-hashed.
+
+### Skips (archived, 6 decisions)
+- Glean `/fr/blog/*` ×10 — French mirror of already-covered English content (`entities/glean.md`)
+- Hex Technologies marketing ×6 — SEO/analytics-platform marketing, no benchmark/eval content (DataBench-style check passed)
+- Harvey entire-agreement-clause + ElevenLabs marketing ×2 — domain-legal explainer + product marketing/awards notice
+- Obama X post (Ilhan Omar) — non-AI politics via Daring Fireball
+- General tech/personal batch (~30 files) — dfarq, johndcook, steveblank, oldnewthing, coredump.cx, shkspr, pluralistic, nesbitt, glenf, time.com, daringfireball non-AI
+- Already-covered-today set (active-crawl + trending-topics, listed above)
+
+### Archive
+`python3 scripts/archive_triage.py dreaming --keep-reference` → candidates=10, new_archived=10, dedup_skipped=0, total_archive_urls=2846. File: `wiki/raw/archived/triage/dreaming/2026-10-20_20261020T181000Z.json`.
+
+### Tags added (all pre-existing in SCHEMA.md)
+`post-training`, `reinforcement-learning`, `nvidia`, `databricks`, `knowledge-graph`, `cpu`, `sandbox`, `ai-infrastructure`, `partnership`.
+
 ## [2026-10-20] health-fix | Ghost entries, frontmatter gaps, index counts
 
 ### Auto-fixed
@@ -25,9 +70,7 @@
 
 `validate_index.py` exit 0 (3301 lines).
 
-# Wiki Operation Log
 
-Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved the complete preceding active log in an already-published immutable Git snapshot indexed by the annual archive.
 
 ## [2026-10-20] watchdog | Wiki watchdog auto-fix — log header restored + 1 orphan indexed
 
@@ -330,9 +373,7 @@ research-grade pages from genuinely uncovered material:
 - 2 remaining digest orphans (`concepts/gpt/_archive/2026-04-24-ainews`, `...-news-aggregation`) intentionally excluded — `_archive/` is not indexed per convention.
 - index.md already structurally clean (validate_index exit 0; 0 pipe/line-number/triple-bracket/space corruption). Header counts bumped: Total 3239→3244, Entities 942→944, Concepts 2196→2199.
 
-# Wiki Operation Log
 
-Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved the complete preceding active log in an already-published immutable Git snapshot indexed by the annual archive.
 
 
 ## [2026-10-15] query | Hot-post morning 09:30 — Modal mixed-precision/mixed-accelerator RL

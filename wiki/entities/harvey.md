@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-08-25
+updated: 2026-10-20
 tags:
   - security
   - company
@@ -11,6 +11,7 @@ tags:
   - evaluation
   - benchmark
   - harness-engineering
+  - knowledge-graph
 aliases:
   - "Harvey Agentic SOC"
   - "Harvey AI"
@@ -50,6 +51,7 @@ sources:
   - raw/articles/2026-06-13_harvey_ai-contract-drafting.md
   - raw/articles/2026-08-25_harvey_legal-document-comparison-software.md
   - raw/articles/2026-08-25_harvey_litigation-lawyer-to-legal-engineer.md
+  - raw/articles/2026-10-20_harvey_improving-agent-accuracy-with-harvey-graph.md
 ---
 
 # Harvey
@@ -957,3 +959,26 @@ Harvey published a first-person essay (Aug 24, 2026, Connor Molloy) defining the
 **Skills**: curiosity about the practice and business of law, communication, creativity, and comfort operating in ambiguity — "the job is creative thinking more than anything else." Molloy emphasizes that Legal Engineering is still a new profession with no fixed shape. Entry point: Harvey Academy's free, self-paced **Legal Engineering Certification**.
 
 Source: raw/articles/2026-08-25_harvey_litigation-lawyer-to-legal-engineer.md
+
+## Harvey Graph (Oct 2026)
+
+Harvey named its **context layer** "Harvey Graph" (blog post, Oct 19, 2026): a set of specialized graphs that organize firm/legal data, map how it connects, and hand that structure to agents at run time. Users never activate it explicitly — the pitch is "Harvey asks less up front while delivering verifiable, cited work."
+
+**The thesis**: once every agent reasons well (Harvey benchmarks models on agentic legal work in [[concepts/ai-benchmarks/legal-agent-benchmark|LAB]]), the differentiator is *what the agent knows before the task starts* — matter context, documents, precedents, client preferences, team conventions. Flat retrieval (chunks ranked by similarity) "finds passages, not relationships," so an agent re-discovers the same entities and cross-references task after task, spending tokens recovering structure that was already in the documents. The hard part is the word "relationships": a firm's data doesn't announce how it connects (which draft was superseded, which counterparty is the same entity under a different name, which case was overruled last year) — every connection must be inferred, verified against source, kept current, and respect existing permissions and ethical walls.
+
+**What ships today**:
+- **Knowledge graph** — US Case Law: built across the whole corpus (millions of opinions, every federal district and appellate court, all 50 states), extracting who cites whom, how a case was treated, and where a line of reasoning holds or breaks. The agent retrieves authority, follows citations outward, checks treatment, and self-checks against the question — not a single search.
+- **Context graph** — per-Space map of how matters, data, and documents from Vaults and integrations connect (building on Harvey II Spaces, Aug 2026).
+- Roadmap: precedent flags and cite-checking for US case law, law-evolution tracking across authorities, a dedicated legal-research surface for following connections, and **firm-defined legal ontologies** layered on their own documents.
+- Compounds with memory: drafting style, citation habits and house rules are learned per user; next, memory accrues to Spaces. Harvey stresses memory stays "transparent, traceable, and under your control."
+
+**LAB eval results** (agent with vs without the context graph, LAB's standard grading setup):
+- Rubric pass rate **up to +30%**, task cost **down ~50%**
+- Firm-knowledge exemplar: "find the firm's most recent secured financing and retrieve the executed credit and security agreements" — raw-files agent searched several files across many matters and picked the *wrong* precedent (**0%** of rubric criteria); the same agent with the context graph found the matter and executed agreements immediately (**75%**)
+- Post-memory-GA user survey: **93%** say memory makes Harvey more useful, **50%** repeat less context
+
+Harvey calls this "a priority investment for our engineering organization because the next gains in legal AI will come from what an agent knows before you ask, not just from a smarter model." Results are explicitly early; more will be published as experiments move to production.
+
+> This is a vertical-agent instance of the broader structured-context-over-flat-RAG argument — compare [[concepts/context-engineering/context-graph]] (Foundation Capital's context-graph thesis), [[concepts/knowledge-graph-memory-agents]] and [[concepts/agentic-alternative-to-graphrag]]. Related: Harvey's Applied Compute review-table post-training work and its own cloud agent infrastructure build.
+
+Source: raw/articles/2026-10-20_harvey_improving-agent-accuracy-with-harvey-graph.md

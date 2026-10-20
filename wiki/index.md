@@ -311,7 +311,7 @@
 - [[entities/exa]] — Exa
 - [[entities/fabiensanglard-net]] — Fabien Sanglard
 - [[entities/fable]] — Fable (Anthropic coding harness); creative thinking partner use case; "square peg for a round hole" tension in harness design 🆕
-- [[entities/factory]] — San Francisco-based startup building autonomous AI coding agents ('Droids') for enterprise software development. $1.5...
+- [[entities/factory]] — San Francisco-based startup building autonomous AI coding agents ('Droids') for enterprise software development. Databricks partnership (Oct 2026): agentic data+software modernization on the Data + AI Platform, Lakebase/Lakeflow/AI-BI execution, Databricks Marketplace burn-up to 10% of commitment. $1.5...
 - [[entities/factory-ai]] — Factory.ai
 - [[entities/faire]] — Faire
 - [[entities/farhan-thawar]] — Farhan Thawar
@@ -382,7 +382,7 @@
 - [[entities/hanchunglee]] — Hanchunglee; resurfaced 2025 talk "OpenAI Killed My Startup — How Product-First Companies Fight Back" (Oct 2026)
 - [[entities/hark]] — Hark; Handoff computer-using agent, $0.18/M input tokens vs GPT 5.5's $5.00, 5s per-turn (Aug 10)
 - [[entities/harrison-chase]] — Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framewor...
-- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8); AI-Powered Due Diligence for M&A — data room workflows, GSK Stockmann 15-75% savings, PwC 10k+ workflows, 25k+ custom agents (Apr 2026); Legal Tech Overview guide — six core categories, citation grounding baseline (Jun 18); How-to-Choose Legal AI Platform evaluation guide — 10 criteria, 92% adoption, 25h/mo savings (Apr 2026); In-House Legal Operations guide — 89% outside-counsel spend stat, in-house role ladder, 6-18mo build sequence, small-team habits (Jun 22); Contract Analysis Automation guide — task decomposition, 3-factor workflow selection, 5 evaluation criteria, 4-phase adoption, Bayer ~3h/wk case study (May 11); AI for General Counsel guide -- 87% GC gen-AI adoption stat (FTI/Relativity), shadow AI governance, GC as AI governance lead, five-step adoption plan (Jun 23); How to Use AI as a Lawyer guide — workflows, four tool-eval factors, ethics/competence, staged rollout (Jun 8); AI Agents for Legal Work — leverage areas, six governance dimensions, associate craft shift, 700K daily tasks (Jun 8); AI Contract Drafting guide — 80/20 pattern, Word/Outlook/matter integrations, Contract Intelligence outlook (Jun 12)
+- [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8); AI-Powered Due Diligence for M&A — data room workflows, GSK Stockmann 15-75% savings, PwC 10k+ workflows, 25k+ custom agents (Apr 2026); Legal Tech Overview guide — six core categories, citation grounding baseline (Jun 18); How-to-Choose Legal AI Platform evaluation guide — 10 criteria, 92% adoption, 25h/mo savings (Apr 2026); In-House Legal Operations guide — 89% outside-counsel spend stat, in-house role ladder, 6-18mo build sequence, small-team habits (Jun 22); Contract Analysis Automation guide — task decomposition, 3-factor workflow selection, 5 evaluation criteria, 4-phase adoption, Bayer ~3h/wk case study (May 11); AI for General Counsel guide -- 87% GC gen-AI adoption stat (FTI/Relativity), shadow AI governance, GC as AI governance lead, five-step adoption plan (Jun 23); How to Use AI as a Lawyer guide — workflows, four tool-eval factors, ethics/competence, staged rollout (Jun 8); AI Agents for Legal Work — leverage areas, six governance dimensions, associate craft shift, 700K daily tasks (Jun 8); AI Contract Drafting guide — 80/20 pattern, Word/Outlook/matter integrations, Contract Intelligence outlook (Jun 12); Harvey Graph context layer — knowledge graph + per-Space context graph, LAB +30% rubric pass / -50% task cost, 0%-to-75% firm-knowledge exemplar (Oct 2026)
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM; Salesforce Ventures Generative AI Fund; relational intelligence category (L3)
 - [[entities/halo-tamper-evident-agent-runtime]] — Open-source tamper-evident runtime evidence for AI agents; append-only hash-chained log (Apache-2.0)
 - [[entities/hebbia]] — Hebbia
@@ -587,7 +587,7 @@
 - [[entities/mixedbread]] — Mixedbread
 - [[entities/mo-bitar]] — Mo Bitar
 - [[entities/mobius-labs]] — Mobius Labs
-- [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25)
+- [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25); NVIDIA Vera CPU adoption for Sandboxes (Oct 2026) — first Arm move off x86, up to 2x throughput vs Intel Granite Rapids, Agentless Agent Bench methodology
 - [[entities/modal-sandbox]] — Modal Sandbox (Claude Managed Agents)
 - [[entities/modular]] — Modular — AI infrastructure startup co-founded by Chris Lattner (LLVM, Swift) and Tim Davis; creator of Mojo programming language and MAX AI platform; acquired by Qualcomm for ~$4B (June 24, 2026)
 - [[entities/mojo]] — Mojo — Python-compatible programming language for AI/ML workloads; created by Chris Lattner at Modular; reached 1.0 in August 2026; MLIR compiler backend; Qualcomm acquired Modular for ~$4B
@@ -874,7 +874,7 @@
 - [[entities/tim-sh]] — Tim Sherratt — historian, hacker, GLAM Workbench creator
 - [[entities/tim-sherratt]] — Tim Sherratt (redirect → [[entities/tim-sh]])
 - [[entities/tobi-lutke]] — Tobi Lütke
-- [[entities/together-ai]] — Together AI
+- [[entities/together-ai]] — Together AI; added Together Post-Training launch (Oct 2026): customer-defined RL/SFT training loop on dedicated Model Resources, Trainer+Generator sessions, async RL, LoRA/full-weight, GRPO-CISPO-DPPO + custom gradient losses, multi-LoRA dedicated serving with FP4 merged inference, per-GPU-minute billing, one-line OpenAI Tinker migration
 - [[entities/tom-aarsen]] — Tom Aarsen
 - [[entities/tom-renner]] — Tom Renner
 - [[entities/tomasz-tunguz]] — Tomasz Tunguz
@@ -2442,7 +2442,7 @@
 - [[concepts/mlops]] — MLOps
 - [[concepts/mlx]] — MLX — Apple's unified-memory array framework for ML on Apple Silicon; Oct 2026: RDMA over Thunderbolt enables 4x Mac Studio M5 Ultra cluster running Muse Spark Open 816B at 36 tok/s
 - [[concepts/mlx-llm]] — MLX for LLM Inference
-- [[concepts/modal-sandboxes]] — Modal Sandboxes; enriched with 5-stage sandbox lifecycle and Readiness Probes GA (June 23)
+- [[concepts/modal-sandboxes]] — Modal Sandboxes; enriched with 5-stage sandbox lifecycle and Readiness Probes GA (June 23); host CPU choice section — NVIDIA Vera Arm CPUs, 2x sandbox throughput under load, spiky/unknown workload shapes and packing-density trade-offs (Oct 2026)
 - [[concepts/modal-vm-sandboxes]] — Modal — VM Sandboxes and Infrastructure Updates
 - [[concepts/model-context-protocol-mcp]] — Model Context Protocol (MCP) — Open protocol for connecting LLMs to external tools, data sources, and services
 - [[concepts/model-distillation]] — Model Distillation

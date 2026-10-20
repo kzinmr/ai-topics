@@ -1,0 +1,128 @@
+{
+  "archived_at": "2026-10-20T18:31:13.322175+00:00",
+  "triage_run_id": "20261020T181000Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming checkpoint は total_articles=0 / recent_raw_articles=236 で Pattern E 発動。archive-index absence probe (2838 URLs, 64 never-archived) を一次候補リストとして読解 triage。Takes=0、References=4 (Together Post-Training / Harvey Graph / Modal Vera CPU / Factory×Databricks)、Skips=7バッチ (Glean仏語×10、Hex マーケ×6、他)。本日の active-crawl (97510378) と trending-topics (f4d1b238) がホットトピックを既に処理済みで重複なし。",
+  "decisions": [
+    {
+      "item_id": "dreaming-together-post-training",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Together Post-Training: frontier-grade model shaping",
+      "url": "https://www.together.ai/blog/together-post-training",
+      "raw_path": "wiki/raw/articles/together.ai--blog-together-post-training--0ce37260.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★ Together AI公式の新サービス「Together Post-Training」(RL環境報酬+SFT両対応、インフラ共同最適化、forward-deployed team支援)。entities/together-ai.md は既存プロダクト一覧にFine-Tuning Platformと書くだけで、Post-Trainingサービス・RL/SFTループの共最適化・カスタムモデル民主化の主張は未収録。 genuine gap。",
+      "candidate_wiki_path": "entities/together-ai.md",
+      "body_excerpt": "# Together Post-Training: frontier-grade model shaping, the way that fits you\nSource: https://www.together.ai/blog/together-post-training\nWe are introducing Together Post-Training, a new service for building custom models on our platform — both from environment rewards via RL and supervision data vi"
+    },
+    {
+      "item_id": "dreaming-harvey-graph",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Improving Agent Accuracy With Harvey Graph",
+      "url": "https://www.harvey.ai/blog/improving-agent-accuracy-with-harvey-graph",
+      "raw_path": "wiki/raw/articles/2026-10-20_harvey_improving-agent-accuracy-with-harvey-graph.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★ Harvey Graph (knowledge graph + context graph) によるエージェント精度改善。Legal Agent Benchで rubric pass rate 最大+30%、タスクコスト約-50%、firm-knowledgeタスク 0%→75%、memory GA後ユーザーの93%が有用・50%が文脈再説明減という具体数値。entities/harvey.md (959行) に 'Harvey Graph' の語一切なし = genuine gap。",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": "# Improving Agent Accuracy With Harvey Graph\n**Source**: [https://www.harvey.ai/blog/improving-agent-accuracy-with-harvey-graph](https://www.harvey.ai/blog/improving-agent-accuracy-with-harvey-graph)\nWe Raised $550M at a $15.5B Valuation to Help Legal Teams Own Their Intelligence\nLearn more\nWe Raise"
+    },
+    {
+      "item_id": "dreaming-modal-vera",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "NVIDIA Vera CPUs double throughput for Modal Sandboxes",
+      "url": "https://modal.com/blog/nvidia-vera-sandboxes",
+      "raw_path": "wiki/raw/articles/modal.com--blog-nvidia-vera-sandboxes--1cb9000c.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★ Modal が NVIDIA Vera CPU (Arm互換、Vera Rubin基盤の単体CPUサーバ) をサンドボックス基盤に採用、スループット2倍。x86専用からのArm移行、スパイキーなエージェントサンドボックス負荷とnoisy neighbor、P50予約+バースティングの論点が新規。entities/modal-labs.md / concepts/modal-sandboxes.md に 'Vera'/'Arm' 記述なし = genuine gap。",
+      "candidate_wiki_path": "entities/modal-labs.md",
+      "body_excerpt": "# NVIDIA Vera CPUs double throughput for Modal Sandboxes\nSource: https://modal.com/blog/nvidia-vera-sandboxes\nLast week, NVIDIA hand-delivered Modal’s first Vera CPU server to our SF office. It’s now purring away in a server rack, and we’re pretty excited about what it could mean for Modal Sandboxes"
+    },
+    {
+      "item_id": "dreaming-factory-databricks",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Factory × Databricks partnership announcement",
+      "url": "https://factory.com/news/databricks-partnership",
+      "raw_path": "wiki/raw/articles/2026-10-20_factory_databricks-partnership.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Factory (Droids) と Databricks の提携発表。sitemapスクレイプが本文をほぼ取得できておらず (raw 21行=日付+ナビのみ)、事実レベルの1行追記に留める。entities/factory.md / factory-ai.md に 'Databricks' の語ゼロ = 提携自体が未収録の genuine gap だが、本文欠落のため軽い言及に留め、必要なら下流でURL再取得。",
+      "candidate_wiki_path": "entities/factory.md",
+      "body_excerpt": "# Factory and Databricks: Building Software Powered by Data\n**Source**: [https://factory.com/news/databricks-partnership](https://factory.com/news/databricks-partnership)\nOctober 19, 2026 - 3 minute read - Company, Partners\nToday, Factory is announcing a partnership with Databricks so customers can "
+    },
+    {
+      "item_id": "dreaming-skip-glean-fr",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Glean /fr/blog sitemap batch (10 files)",
+      "url": "https://www.glean.com/fr/blog/ngp-sales-launch",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ sitemap-monitorがスクレイプした glean.com/fr/blog/* 10本 (ngp-sales-launch, ngp-engineering-launch, glean-service-cloud-launch, apps-actions×2, prompting-guide×2, enterprise-agent-development-lifecycle, customer-service-integrations, 5-lessons-ai-powered-organization)。URLに /fr/ + 本文冒頭がフランス語ナビchromeの非英語ミラー版。英語版 coverage は entities/glean.md に既出のため一括skip。",
+      "candidate_wiki_path": "entities/glean.md",
+      "body_excerpt": "(French-language sitemap mirror batch) Vue d'ensemble de la plateforme... Découvrez comment fonctionne... Ancrez l'IA dans le contexte de l'entreprise — 英語版Gleanブログと同一コンテンツ。entities/glean.mdが既に対応。"
+    },
+    {
+      "item_id": "dreaming-skip-hex-marketing",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Hex Technologies marketing batch (6 files)",
+      "url": "https://hex.tech/blog/what-is-an-ai-analytics-platform/",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ hex.tech/blog の SEO/マーケティング記事6本 (what-is-an-ai-analytics-platform, looker-alternatives, how-to-choose-an-ai-analytics-platform, power-bi-alternatives, tableau-alternatives, hex-greenflash)。データ/分析製品のマーケティングでAI/LLM/エージェントの技術的知見なし。DataBenchのようなベンチマーク/評価系コンテンツは含まれず一括skip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(marketing batch) What is an AI analytics platform / Looker alternatives / Power BI alternatives / Tableau alternatives — SEO比較記事群。AI評価手法やモデルに関する具体的知見なし。"
+    },
+    {
+      "item_id": "dreaming-skip-legal-product",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Harvey entire-agreement-clause + ElevenLabs marketing (3 files)",
+      "url": "https://www.harvey.ai/blog/entire-agreement-clause",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ harvey entire-agreement-clause (契約法務の解説記事=ドメイン法務コンテンツでAI技術知見なし)、elevenlabs speech-to-text-for-content-creators (製品マーケ)、elevenlabs chroma-awards-season-two (アワード告知)。技術的知見の欠如によりskip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "What Happens to Emails and Side Letters Under an Entire Agreement Clause or Merger Clause? — 法務解説。ElevenLabs 2本はSTT製品マーケとChroma Awards告知。"
+    },
+    {
+      "item_id": "dreaming-skip-politics",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Obama X post (Ilhan Omar deportation) — non-AI politics",
+      "url": "https://x.com/BarackObama/status/2111819687524774170",
+      "raw_path": "wiki/raw/articles/x.com--barackobama-status-2111819687524774170--b9760e73.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ ObamaのIlhan Omar追放試みへの批判スレッド (daringfireball経由)。AI/LLM/エージェントと無関係な政治コンテンツのためskip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Barack Obama on X: \"It is a basic principle of American democracy that the government can’t selectively target individuals simply because of their political beliefs or what they say. But that’s exactly what the Trump Administration is doing to Congresswoman Ilhan Omar of Minnesota. To understand w"
+    },
+    {
+      "item_id": "dreaming-skip-nonai-batch",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "General tech/personal blog batch (~30 files)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ AI関連性の低い一般テック/個人ブログ一括skip: jim-nielsen (アイコン), dfarq (Gateway/VICmodem/i386), time.com iPhone Duo, daringfireball (iPhone Duo/HomeView/CEOs as nerds), johndcook (factorials/regex/NIST曲線), steveblank (Lean Educator), microsoft oldnewthing, coredump.cx (circuits/op-ed), shkspr (書評), construction-physics reading list, nesbitt package management, glenf Apple TV価格, pluralistic spyware週刊, manton, linkedin photo post。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Mixed non-AI batch: hardware history, math essays, Apple product chatter, link digests, book reviews, package-management news. Zero LLM/agent relevance after frontmatter+body spot checks."
+    },
+    {
+      "item_id": "dreaming-skip-already-covered",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Already-covered today (active-crawl 09:7510378 + trending-topics f4d1b238)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ 本日18:00 UTCまでに他パイプラインが処理済みのためskip: redact.dev WhatsApp hidden AI instructions / minimax M3.1 Flash / simonwillison obituary-for-programming (trending-topics f4d1b238)、DeepInfer / System One extraction / ROME weight tampering stealthium / Beacon company world models / Cloudflare Clairic extraction model / Anthropic employment-at-anthropic (active-crawl 97510378 で concept+entity ページ作成済み)。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(already-covered batch) git log today: f4d1b238 trending-topics (MiniMax M3.1 Flash, hidden AI instructions, Simon Willison obituary) + 97510378 active crawl (DeepInfer, System One, ROME, Company World Models, Anthropic employment). Pages verified in checkpoint existing_wiki_pages."
+    }
+  ]
+}

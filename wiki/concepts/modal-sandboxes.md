@@ -1,12 +1,13 @@
 ---
 title: Modal Sandboxes
 created: 2026-04-30
-updated: 2026-06-23
+updated: 2026-10-20
 type: concept
-tags: [ai-agents, infrastructure, coding-agents]
+tags: [ai-agents, infrastructure, coding-agents, sandbox, cpu]
 sources:
   - raw/articles/2026-04-30_ramp-inspect-background-agent.md
   - raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
+  - raw/articles/modal.com--blog-nvidia-vera-sandboxes--1cb9000c.md
 ---
 
 # Modal Sandboxes
@@ -67,12 +68,24 @@ Source: raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9
 - **Image rebuild cycle**: 30-minute gap means agents may work on slightly stale code
 - **Vendor lock-in**: Tightly coupled to Modal's infrastructure APIs
 
+## Host CPU Choice (Oct 2026)
+
+Modal published its first Arm-based benchmark: **NVIDIA Vera** CPUs (Arm-compatible, from the Vera Rubin platform, also sold standalone) deliver **up to 2x task throughput** vs an equivalent x86 Granite Rapids machine for sandbox workloads — while matching or beating it on single-task latency.
+
+The result only appears under load. Modal's **Agentless Agent Bench** (50 Terminal-Bench oracle solutions/verifiers, network calls stripped, prewarmed in concurrent Docker containers) isolates the CPU work agents and RL actually do: compilation, grepping, git operations, device emulation. Straightline latency on a quiet host showed Vera marginally ahead; at 50/100/150 concurrent containers, Vera kept scaling while alternatives plateaued — attributed to high memory bandwidth enabling denser packing per core without throttling.
+
+Why sandbox CPU characteristics differ from typical server workloads: workload shape is unknown until runtime (an LLM chooses what to run), usage is spiky (idle awaiting the LLM, then 10x bursts), and Modal's burst-above-reservation pricing model trades noisy-neighbor safety for user cost savings. Scheduler tension: higher packing density extracts more from each host and raises absolute scale, but cluster-wide demand is itself spiky, so overpacking is a standing risk.
+
+Full methodology and benchmark detail: [[entities/modal-labs]] — "NVIDIA Vera CPUs for Sandboxes".
+
 ## Related Concepts
 
 - [[concepts/coding-agents/background-coding-agent]] — Modal is the execution layer for background agents
 - [[concepts/warm-start-optimization]] — Modal snapshots enable fast warm starts
 - [[sandbox/infrastructure]] — Modal is an infrastructure-level sandboxing technology
+- [[entities/modal-labs]] — company page with Vera CPU benchmark detail
 
 ## Sources
 
 - Ramp Engineering, "Why We Built Our Background Agent", builders.ramp.com, April 2026
+- raw/articles/modal.com--blog-nvidia-vera-sandboxes--1cb9000c.md
