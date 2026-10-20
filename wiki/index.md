@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3272
-> Last updated: 2026-10-19
+> Total pages: 3276
+> Last updated: 2026-10-20
 
 ## Entities (952 pages)
 
@@ -960,7 +960,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2211 pages)
+## Concepts (2215 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -994,6 +994,7 @@
 - [[concepts/cross-agent-memory-sharing]] — Cross-Agent Memory Sharing — MemCollab cross-memory collaboration at test time via CrossMemKG + test-time memory evolution; shared-memory compounding vs poisoning risk (arXiv:2609.09192, Sep 2026)
 - [[concepts/dial-metaopd-token-selection-opd]] — DIAL & MetaOPD — Token Selection in On-Policy Distillation; divergence-based reweighting (down-weight mastered tokens) + cold-start fix for OPD reasoning post-training
 - [[concepts/domain-specialization-beats-general-scale]] — Domain Specialization Beats General Scale — small expert models + orchestration rival frontier generalists on narrow tasks at a fraction of token cost; counter-argument to scale-equals-capability
+- [[concepts/employment-at-anthropic]] — Anthropic's 2026-10-18 first-party study of how AI/Claude is changing its own workforce composition (role blurring, flatter teams, agent-leverage skill premium); a leading indicator for AI-and-labor (HN 156 pts)
 - [[concepts/epistemic-transparency]] — Epistemic Transparency in LLMs — EpistemicAlignment benchmark & CAEP metric; models give confident compliant answers that hide ambiguity, compounded by sycophancy (arXiv:2609.13775, Sep 2026)
 - [[concepts/flow-language-models]] — Flow Language Models (FLMs) — continuous-state non-autoregressive text models; superposition over candidates beats discrete diffusion at few denoising steps on reasoning
 - [[concepts/frontier-rl-safety-cases]] — Frontier RL Safety Cases — OpenAI proposal that aviation/nuclear-style *safety cases* gate frontier RL training runs: 3-layer technical stack (alignment w/ no-CoT-visible graders, containment, fail-closed monitoring) + operational vetoes/accountability + NTSB-style misalignment investigation (Oct 5)
@@ -1661,6 +1662,7 @@
 - [[concepts/common-corpus]] — Common Corpus
 - [[concepts/company-ai-pilled]] — Company AI-Pilled
 - [[concepts/company-startup-maximor-finance-accounting-agent-automation]] — Company Startup Maximor Finance Accounting Agent Automation
+- [[concepts/company-world-models]] — Company World Models (CWM) — Beacon's vision of AI that decides *what* a business/digital-employees should do (state+intervention→estimated outcome, risk-adjusted value search); alignment-as-mesocosm via owner-operator feedback; 'Silver Tsunami' succession framing (Sep 17, HN Oct 19)
 - [[concepts/company-vc-foundation-capital-context-graph-investor]] — Company Vc Foundation Capital Context Graph Investor
 - [[concepts/compiler-construction]] — Compiler Construction
 - [[concepts/compiler-design]] — Compiler Design
@@ -1754,6 +1756,7 @@
 - [[concepts/db9-fs-sql-pattern]] — db9: Filesystem + SQL Pattern for Agent Workflows
 - [[concepts/death-of-browser]] — Death of the Browser
 - [[concepts/decision-centric-architecture]] — Decision-Centric Architecture
+- [[concepts/deepinfer]] — DeepInfer — DeepSeek's production inference engine open-sourced (Apache-2.0, Oct 20) for DeepSeek-V4.1-Flash; built on vLLM w/ FlashMLA/DeepGEMM/DeepEP kernels, MoE EP+EPLB, DSpark confidence-scheduled spec decode, SWA bounded replay, Ascend 950 + NVIDIA SM100; KV-cache/disaggregation/LoadBalancing still closed
 - [[concepts/deep-agents]] — Deep Agents — Autonomous Multi-Step AI Agents
 - [[concepts/deep-agents-runtime]] — Production runtime primitives for deep AI agents — durable execution, memory, multi-tenancy, HITL, guardrails, observ...
 - [[concepts/deep-learning]] — deep-learning
@@ -2824,6 +2827,7 @@
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
 - [[concepts/run-to-run-variance-semantic-query]] — Same Query, Different Answer (arXiv:2610.13823) — at temp 0, 0.07–10.2% of rows flip output over 5 runs (24% on one task); query plans amplify row noise exponentially (2/3 of UDA-Bench answers move); 16/28 LRO-Bench recommendations unsettled by their own runs
 - [[concepts/rlms]] — RLMs (Recursive Language Models) are a paradigm where LLMs perform self-optimization at inference time by recursively...
+- [[concepts/rome-weight-tampering-attacks]] — Rank-One Model Editing (ROME) GPU weight-tampering attacks — malicious imported lib rewrites a middle-layer weight matrix *in VRAM* (no on-disk change, ordinary CUDA launches), corrupting topic behavior (PoisonGPT lineage); CPU EDR/ADR blind; defense = per-CUDA-launch call-stack attribution + weight-change correlation (Stealthium)
 - [[concepts/robert-goldston]] — robert-goldston
 - [[concepts/roberta-williams]] — roberta-williams
 - [[concepts/robotics]] — robotics
@@ -3023,7 +3027,7 @@
 - [[concepts/synth]] — SYNTH
 - [[concepts/synthetic-data]] — synthetic-data
 - [[concepts/synthetic-research-interns]] — Synthetic Research Interns
-- [[concepts/system-one-models]] — System One Models — models that only *decide* (classify/route/score, 24-token structured output), never converse; Jev/TypeSafe coined Sep 2026, 6 clones in 2 days incl. ekzhang's production-grade openjev-sglang (Qwen+SGLang), "System 2 model as a service" counter-model; Oct 2026 first evaluation application: Jev-as-a-Judge (agent trajectory judging)
+- [[concepts/system-one-models]] — System One Models — models that only *decide* (classify/route/score, single-pass, input-only pricing), never converse; Jev/TypeSafe coined Sep 2026, 6 clones in 2 days incl. ekzhang's openjev-sglang, Jev-as-a-Judge; **Oct 19 2026 Cloudflare Clairic adds the first System One *extraction* sub-class** (typed extracted/computed/forecast values with span+confidence grounding)
 - [[concepts/synthid]] — SynthID; Google Earth AI satellite image retraction case (Jul 2026): SynthID fails on smartphone-photo/screenshot re-encoding, 10/day check limit
 - [[concepts/system-prompt-learning]] — System Prompt Learning
 - [[concepts/systems-programming]] — Systems Programming

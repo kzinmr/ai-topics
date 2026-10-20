@@ -1,7 +1,7 @@
 ---
 title: "System One Models (Fast Structured-Decision LLMs)"
 created: 2026-09-20
-updated: 2026-10-07
+updated: 2026-10-20
 type: concept
 tags: [model, structured-outputs, inference-speed, classifiers, model-routing, token-economics, small-models, decision-centric, probabilistic, real-time, sgnt, jev, ai-industry-economics, evaluation]
 sources:
@@ -12,6 +12,7 @@ sources:
   - raw/articles/2026-09-19_parallel-web-systems_testing-jev.md
   - raw/articles/2026-09-21_github_ekzhang-openjev-sglang.md
   - raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations.md
+  - raw/articles/2026-10-19_cloudflare-clairic-extraction-model.md
 confidence: medium
 ---
 
@@ -68,6 +69,21 @@ Elvis Saravia's DAIR.AI tutorial demonstrates the first major *evaluation* appli
 - **Not a new scaling axis.** Losing test-time compute caps the class near non-reasoning LLM strength. Goedecke: don't treat it as a route to *smarter* models — it trades ceiling intelligence for latency/consistency.
 - **"Can't hallucinate" is a semantic dodge.** It can still pick the wrong provided choice ("the sky is red"); that's a mistake, not a type error. Type-safety ≠ correctness.
 - **A complement to, not replacement for, [[concepts/test-time-compute|test-time compute]].** It is the "fuzzy if-statement" layer of software — classify, route, score, extract, guardrail — where hand-written branching is too brittle and full-LLM calls are too slow/costly. See [[concepts/token-economics]], [[concepts/coding-agents/model-routing|Model Routing]].
+
+## Cloudflare Clairic: the first System One *extraction* model (2026-10-19)
+
+Every System One model to date (Jev, Clef, the Kev family) was a **decision model**: input state + a fixed list of candidate questions → a calibrated probability for each option. On **2026-10-19 Cloudflare announced Clairic**, hosted on Workers AI as `@cf/cloudflare/clairic` (open-weights promised "soon"), and reframed the class as **two sub-classes distinguished by what they return**:
+
+| Sub-class | Example | Input → Output |
+|-----------|---------|----------------|
+| **Decide** | Jev, Clef | state + candidate options → a probability per option |
+| **Extract** | Clairic | unstructured input → typed **values** (extracted / computed / forecast) |
+
+Clairic's three output kinds: **extracted values** (text copied from input — name, order ID, description — each returned as a *span with character offsets + a confidence score*, so answers are traceable to their source), **computed values** (numbers derived from unstructured input without pre-sanitizing, with an 80% range), and **forecasted values** (future values of a series, one estimate per step-ahead, each with its own 80% interval).
+
+Cloudflare's motivating observation is an economic one: a large share of "structured-output" traffic to frontier LLMs has the same shapes again and again — *"What's the invoice total? When was this delivered? How many days late? What will this repair cost? What will traffic look like over the next 24 hours?"* These aren't enumerable option lists (so decision models can't take them), so they fall to LLMs — expensively and unreliably (invalid JSON, misread digits, no provenance). The proposed division of labour: *"Extraction models turn raw input into typed values, decision models turn values into decisions, and LLMs turn decisions into words."* Like other System One models, Clairic processes input in a single forward pass, charges only for input tokens, and typically answers in under a second. Source: [[raw/articles/2026-10-19_cloudflare-clairic-extraction-model]].
+
+This extends the "interface, not architecture" thesis above: Cloudflare reached the same single-pass, input-only-priced conclusion TypeSafe did, then generalized the interface from *decide-among-options* to *extract/compute/forecast-typed-values*. It also raises a new open question — whether an extraction model's span-grounded outputs can out-compete the parse/validate/retry pipelines teams build on top of general LLMs.
 
 ## Open questions
 

@@ -1,3 +1,23 @@
+## [2026-10-20] active-crawl | 4 new concepts + 1 enrichment — DeepInfer, Clairic/System One, ROME weight-tampering, Company World Models, Anthropic employment
+
+**Sources:** HN Algolia (search_by_date, last 4d, points>=10) + blogwatcher SQLite (last 3d) + wiki gap analysis. Parent ran discovery + gap-check directly (no subagents). 5 raw articles saved to `raw/articles/`.
+
+**New pages:**
+- `concepts/deepinfer.md` — DeepSeek open-sourced its production inference engine (Apache-2.0, Oct 20, HN 301pts). Built on vLLM; FlashMLA/DeepGEMM/DeepEP kernels, MoE EP+EPLB, DSpark confidence-scheduled spec decode, SWA bounded replay; DeepSeek-V4.1-Flash; NVIDIA SM100 + Huawei Ascend 950. KV-cache/disaggregation/load-balancing still closed.
+- `concepts/rome-weight-tampering-attacks.md` — Rank-One Model Editing GPU-in-VRAM weight tampering (Stealthium, HN 23pts). Malicious imported lib rewrites a middle-layer weight matrix in VRAM; CPU EDR/ADR blind; defense = per-CUDA-launch call-stack attribution.
+- `concepts/company-world-models.md` — Beacon "Towards Company World Models" (HN 25pts). AI deciding *what* a business/digital-employees should do; alignment-as-mesocosm via owner-operator feedback; Silver Tsunami succession. Single-source → confidence: medium.
+- `concepts/employment-at-anthropic.md` — Anthropic first-party workforce study (Oct 18, HN 156pts). Stub pending quantitative enrichment.
+
+**Enrichment:**
+- `concepts/system-one-models.md` — added Cloudflare **Clairic** section (first System One *extraction* sub-class, Oct 19, HN 60pts): decide-vs-extract taxonomy, span+confidence grounding, extracted/computed/forecast values. NOTE: initially overwrote the rich existing page via write_file; restored from git and merged in-place (lesson: check index/find BEFORE creating; system-one-models was already indexed).
+
+**New SCHEMA tags added:** extraction-model, decision-model, system-one, digital-employee, company-world-model, inference-engine, disaggregation, weight-tampering, runtime-security, confidential-computing (agent-employees existed already).
+
+**Deferred / skipped:** Maxwell model (heymaxwell.ai, 82pts — vendor page, thin), Laminar YC (RL trace-error model — thin Show HN), Vite+ toolchain (dev-tooling, marginal), Modal NVIDIA Vera (sandbox throughput — minor), Apple Muse Spark/MLX distributed (365pts — mlx pages exist, enrichment candidate for later), OpenAI rogue incidents (already covered by concepts/rogue-ai-agent-activity.md), Claude ECDSA curve origins / quantum circuits (Anthropic research — candidates for a dedicated Anthropic-research sweep).
+
+Tag validation via `.githooks/pre-commit-tag-validator.py` → clean. Wikilink verification clean (all targets exist). Index: 4 concept entries inserted, system-one description refreshed, Concepts header 2211→2215 (verified == actual `- [[concepts/` count).
+
+
 ## [2026-10-20] ingest | newsletter-wiki-ingest: Import AI 477 IMF speech, Meta Muse Wonder eval
 
 Recovered from a failed newsletter-triage JSON parse by reading `triage_latest.json` (run_id 20261020T101040Z) directly. 3 newsletters triaged (Import AI 477 / Lenny's How I AI / unknown beehiiv). 1 take executed, 1 reference executed, 1 reference no-op, 3 skips.
