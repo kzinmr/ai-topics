@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "job": "newsletter-triage",
+  "run_id": "20261020T101040Z",
+  "triaged_at": "2026-10-20T10:30:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 3,
+  "summary": {
+    "critical": 1,
+    "high": 1,
+    "low": 1,
+    "skip": 0
+  },
+  "note": "All 3 digests are Substack/Beehiiv link dumps; the 14-20 'articles' per digest are near-duplicate tracking/app-link/redirect URLs pointing at a single newsletter post. Triaged at the newsletter-post level. The 2 Substack posts resolved via open.substack.com redirects (both HTTP 200) and their bodies were extracted from embedded state. The Beehiiv digest's 20 link.mail.beehiiv.com/v2/c/ tracking links returned HTTP 403 (Cloudflare challenge, pitfall #10) — classified on title + subject alone.",
+  "newsletters": [
+    {
+      "message_id": "<20261019123137.3.a0000f08fa824f0d@mg-d0.substack.com>",
+      "subject": "Import AI 477: In which I tell the IMF the Singularity has begun",
+      "date": "2026-10-19",
+      "source_label": "uid=814",
+      "raw_path": "wiki/raw/newsletters/2026-10-19-import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun.md",
+      "canonical_url": "https://importai.substack.com/p/import-ai-477-in-which-i-tell-the",
+      "publication": "Import AI (pub_id=1317673, post_id=221013755)",
+      "authors": ["Jack Clark"],
+      "importance": "critical",
+      "newsjacking_score": 4,
+      "ai_relevance": "high",
+      "tags": ["ai-economics", "ai-labors", "automation", "anthropic", "ai-safety", "superintelligence", "science-automation", "robo-laboratories"],
+      "people": ["Jack Clark"],
+      "orgs": ["Anthropic", "Import AI", "IMF"],
+      "why": "Jack Clark (Anthropic co-founder) delivered a speech at the IMF meeting in Bangkok (Sat 17 Oct 2026) titled 'Inside the Event Horizon: Why Everyone Should Take AI Progress Seriously' — argues the Singularity has begun because AI operates autonomously at the frontier of science. Concrete in-company datapoint: Anthropic researchers now produce ~10x the code vs the first four years. Extends to AI-designed viruses/drugs in biology and autonomous robo-laboratories in robotics, plus economic growth / human-capital implications. Core superintelligence + AI-labors + science-automation topic, primary-source (first-person, ad-libbed speech) from a tracked Anthropic leader. Trend-surfing (IMF venue) + contrarian/polarizing framing ('Singularity has begun') + in-group signal.",
+      "existing_coverage": [
+        "wiki/entities/jack-clark.md",
+        "wiki/entities/anthropic-labs.md"
+      ],
+      "recommended_actions": [
+        "Update entities/jack-clark.md with the IMF Bangkok speech (date, venue, title, 10x-code claim, science/robotics autonomy arguments). Append — do not overwrite (rich page).",
+        "Scrape full speech text from canonical URL to wiki/raw/articles/ (already fetched OG + body paragraphs this run).",
+        "Consider a concept page for the AI-labors / autonomous-science theme if not already covered — grep concepts/ first; validate tags in SCHEMA.md before creating.",
+        "Cross-link from jack-clark.md to any existing AI-economics / science-automation pages."
+      ],
+      "link_dump": true,
+      "caveat": "Body fetched from client-side Substack state; some ad-libbed speech content was not captured in the written post per Clark's own note."
+    },
+    {
+      "message_id": "<20261019150335.3.323bf7bf2ee226c0@mg2.substack.com>",
+      "subject": "🎙️ How I AI: Meta Muse Wonder + How Brooke Lacey is scaling video with AI",
+      "date": "2026-10-19",
+      "source_label": "uid=815",
+      "raw_path": "wiki/raw/newsletters/2026-10-19-how-i-ai-meta-muse-wonder-how-brooke-lacey-is-scaling-video-with-ai.md",
+      "canonical_url": "https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke",
+      "publication": "Lenny's Newsletter (pub_id=10845, post_id=220273215)",
+      "authors": ["Lenny Rachitsky", "Claire Vo"],
+      "importance": "high",
+      "newsjacking_score": 3,
+      "ai_relevance": "high",
+      "tags": ["agentic-ai", "meta", "model-evaluation", "prompt-injection", "computer-use", "coding-agents", "meta-muse", "agentic-benchmarks"],
+      "people": ["Claire Vo", "Brooke Lacey", "Lenny Rachitsky"],
+      "orgs": ["Meta", "Meta Superintelligence Labs", "Lenny's Newsletter"],
+      "why": "Claire Vo benchmarks Meta's new 'Muse Wonder' model across ~20 real-world agentic tasks (billing support, inbox triage, computer use, email writing, coding, design, video editing). Finds it the strongest agentic model at its price tier — ranked first on billing-ticket resolution, inbox triage, computer use, email writing; resisted a prompt-injection attempt; 'active focus' capability correlates time-spent with output quality on long-running tasks. Weaknesses: poor frontend design, incomplete prototypes (80% scaffolding then broken interactions). Direct evaluation data on a frontier-adjacent agentic model — high wiki actionability for agentic-benchmarking and prompt-injection-resistance coverage. New model 'Muse Wonder' follows the existing Muse Spark / Muse Glimmer family (Meta Superintelligence Labs).",
+      "existing_coverage": [
+        "wiki/concepts/meta-muse-spark.md",
+        "wiki/entities/muse-spark.md",
+        "wiki/entities/muse-glimmer.md"
+      ],
+      "recommended_actions": [
+        "Scrape full post from lennysnewsletter.com to wiki/raw/articles/ (body paragraphs already extracted this run).",
+        "Create entities/muse-wonder.md (or concepts/ entry) for the new Meta Muse Wonder model — validate tags in SCHEMA.md first; cross-link from muse-spark / muse-glimmer / meta-muse-spark.",
+        "The Brooke Lacey video-scaling segment is a workflow/practice piece — low standalone wiki value; fold into Lenny's/podcast context only if relevant.",
+        "Note the prompt-injection-resistance finding as an evaluation datapoint if concepts/prompt-injection.md exists (grep first)."
+      ],
+      "link_dump": true,
+      "caveat": "How I AI is a practical 'how people use AI' podcast; the Muse Wonder eval is the wiki-relevant core. Frontend-design and email-style observations are reviewer opinion, not benchmark data — attribute as Claire Vo's testing, not objective fact."
+    },
+    {
+      "message_id": "<20261019.190541.1c820409@mta28>",
+      "subject": "💸 Anthropic's First Step Toward Universal High Income",
+      "date": "2026-10-19",
+      "source_label": "uid=816",
+      "raw_path": "wiki/raw/newsletters/2026-10-19-anthropic-s-first-step-toward-universal-high-income.md",
+      "canonical_url": "unknown-beehiiv",
+      "publication": "beehiiv newsletter (source publication unconfirmed — all 20 links are link.mail.beehiiv.com/v2/c/ tracking URLs, HTTP 403)",
+      "authors": [],
+      "importance": "low",
+      "newsjacking_score": 2,
+      "ai_relevance": "medium",
+      "tags": ["ai-labors", "economics", "anthropic", "policy"],
+      "people": [],
+      "orgs": ["Anthropic"],
+      "why": "Title signals a genuinely wiki-relevant AI-labors/economics theme (Anthropic + Universal High Income / redistribution-of-AI-gains policy angle), which aligns with the Import AI IMF piece's economic framing. HOWEVER classified low because: (1) all 20 links are link.mail.beehiiv.com/v2/c/ tracking redirects and a spot-checked one returned HTTP 403 Cloudflare challenge (pitfall #10) — content NOT retrievable via cron curl; (2) source publication unconfirmed and the sensationalized 'Universal High Income' framing may be secondary/aggregator commentary rather than a primary Anthropic statement; (3) 'Universal High Income' is a niche policy concept — the aggregator framing risks conflating UBI/UHI proposals. Classify low pending resolvable content; downstream ingest may attempt a browser fetch if it wants the claim verbatim.",
+      "existing_coverage": [],
+      "recommended_actions": [
+        "Do NOT ingest on title alone — the claim is unverifiable from a blocked beehiiv tracking link.",
+        "If downstream wants it: attempt browser-based fetch of the beehiiv article; identify the real publication from the resolved og:site_name.",
+        "If it turns out to reference a real Anthropic UHI proposal, cross-reference against concepts/ai-labors / economics pages and the Import AI 477 IMF piece — but only after verifying the primary source.",
+        "Prefer to corroborate any 'Anthropic + Universal High Income' claim against Anthropic's own publications or reputable outlets before creating a wiki page."
+      ],
+      "link_dump": true,
+      "blocked": "Beehiiv tracking links returned HTTP 403 Cloudflare challenge; source publication unconfirmed. Content not retrieved this run."
+    }
+  ]
+}
