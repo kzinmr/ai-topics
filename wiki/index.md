@@ -3217,8 +3217,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (38 pages)
+## Events (39 pages)
 
+- [[events/2026-10-17-deepseek-v4.1-flash-1017-release]] — DeepSeek-V4.1-Flash-1017 + Search/Fetch API release (Oct 17, 2026) — DeepSeek flash-tier model release alongside new Search/Fetch API; open-weight, pricing, agentic-search tooling
 - [[events/pi-durable-1-0]] — Pi 1.0 & Pi Durable release (Earendil, Oct 1, 2026) — Pi coding agent declared 1.0 + new experimental Pi Durable package: durable/malleable long-running agent harness (storage+machinery model), memory/SQLite/JSONL backends runnable on Bun or Cloudflare Durable Objects, survives crashes, multi-human steering; Zechner embeds it as the durable-agent library in a phone app
 - [[events/2026-10-01-gemini-4-argon-release]] — Gemini 4 Argon Release (Google DeepMind, ~Sep 30, 2026) — frontier model for coding/enterprise knowledge work/cyber defense; 1M output tokens (from 64K), $2/$10 intro pricing, DeepSWE v1.1 77.9% SOTA, LVBench 91.7%, CWE-bench v1 68%; phased release via Fairwind Program + US govt pre-release process
 - [[events/claude-opus-5-5-gpt-6-release-sep-2026]] — Claude Opus 5.5 & GPT-6 Sol/Terra/Luna Release (Sep 22, 2026) — Opus 5.5 at $5/$25 (2.5× cheaper than GPT-6 Astra), triggering a same-day frontier price war; Claude Code `/compact` 1/1000 rollout cache-wipe bug

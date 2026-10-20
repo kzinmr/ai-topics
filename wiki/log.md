@@ -1,3 +1,19 @@
+# Wiki Operation Log
+
+Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved the complete preceding active log in an already-published immutable Git snapshot indexed by the annual archive.
+
+## [2026-10-20] watchdog | Wiki watchdog auto-fix — log header restored + 1 orphan indexed
+
+**Auto-fixed (2):**
+1. `wiki/log.md` — restored rotting `# Wiki Operation Log` header + rotation note (buried by prepend pipeline since 2026-10-14 rotation; verified via `git log -S`, first lost in 87d793b0-era prepends).
+2. `wiki/index.md` — registered orphan `[[events/2026-10-17-deepseek-v4.1-flash-1017-release]]` (real 84-line event page missing from index); Events header 38→39. `validate_index.py` exit 0.
+
+**Verified clean:** index corruption (pipe/line-number/triple-bracket/space-prefix = 0), no true index duplicates, log pipe corruption = 0, file counts match section entries (entities 952/952, concepts 2217 vs 2220 = nested-hub gap by design).
+
+**Escalated (human review):** (1) blog chain broken — blog-triage failed today with `HTTP 503 Local LLM server is busy` (recurring ~1/week since Aug; blog-wiki-ingest then truncated); recommend re-run `hermes cron run` on both, no wiki corruption. (2) 6 known entity duplicate pairs still unmerged (deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, giles-thomas/gilesthomas, lilian-weng/lilianweng, martin-fowler/martinfowler, samuel-colvin/samuelcolvin) — Section B merges, weekly graph report 2026-10-16 already triaged all as real. (3) 3 `uncommitted-wip-snapshot`/`skeleton-enrich-empty` query pages unindexed by design (stale WIP snapshots — archive candidate per weekly report rec #5).
+
+---
+
 ## [2026-10-20] trending-topics | 2 new concepts + 1 entity update — MiniMax M3.1 Flash, Hidden AI Instructions (WhatsApp), Simon Willison obituary-for-programming
 
 **Sources:** HN Algolia front-page scan (2d, >=20pts) + keyword sweep (3d, >=80pts, 11 queries) + blog_ingest checkpoint (32 new, 17 scraped) + newsletter checkpoints (Import AI 477 already ingested this morning). Report: `inbox/rss-scans/trending-topics-2026-10-20.md`.
