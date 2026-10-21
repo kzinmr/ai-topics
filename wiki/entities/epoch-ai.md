@@ -103,7 +103,7 @@ Supersedes/extends Epoch's March 2025 estimate (9–900×/year, per-token) and s
 
 - [[concepts/evaluation/epoch-capabilities-index]] — ECI methodology and interpretation
 - [[concepts/benchmark-optimization]] — The broader benchmark landscape and saturation dynamics
-- [[entities/met]] — METR (co-developer of MirrorCode)
+- [[entities/metR]] — METR (co-developer of MirrorCode)
 - [[concepts/open-vs-closed-model-gap]] — The 4-month capability lag analysis
 
 ## Sources

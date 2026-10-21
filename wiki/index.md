@@ -69,6 +69,8 @@
 - [[entities/ankur-goyal]] — Ankur Goyal
 - [[entities/anorth-chen]] — Ziyao 'North' Chen (@anorth_chen)
 - [[entities/anthropic]] — AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Clau...
+- [[concepts/anthropic/index]] — Anthropic sub-index — Anthropic company/business pages hub for [[entities/anthropic]]
+- [[concepts/claude/index]] — Claude sub-index — Claude product/model pages hub for [[entities/anthropic]]
 - [[entities/anthropic-computer-use]] — Anthropic Computer Use
 - [[entities/anthropic-labs]] — Anthropic's advanced-products division (Krieger + Michael); Claude Design
 - [[entities/anthropics-skills]] — Anthropic Skills Repository — official open-source agent-skills repo (anthropics/skills); claude-api skill with build-eval/hillclimb commands (Sep 2026)
@@ -359,6 +361,7 @@
 - [[entities/gm8xx8]] — gm8xx8
 - [[entities/goodfire-ai]] — Goodfire AI
 - [[entities/google]] — Google (AI/ML); TPU sales to Anthropic >20% of shipments thru 2027, $150B+ backlog, Cloud +82% (Aug 10)
+- [[concepts/gemini/index]] — Gemini sub-index — Gemini model family pages hub
 - [[entities/google-adk]] — Google Agent Development Kit (ADK)
 - [[entities/google-antigravity]] — Google Antigravity
 - [[entities/google-tpu]] — Google TPU — Tensor Processing Units
@@ -645,6 +648,7 @@
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
 - [[entities/open-athena]] — Open Athena — nonprofit accelerating academia with frontier AI capabilities; developer of the Delphi open scaling suite (300× extrapolation, AdamH optimizer)
 - [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot; ChatGPT for Teachers expansion to 100+ K–12 orgs/30 states + 16-state National Data Privacy Agreement (Aug 26)
+- [[concepts/gpt/index]] — GPT sub-index — GPT model family pages hub
 - [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition
 - [[entities/openai-codex]] — OpenAI Codex; ChatGPT Work architecture deep-dive (Aug 2026) + Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
@@ -1453,8 +1457,6 @@
 - [[concepts/ben-thompson]] — Ben Thompson
 - [[concepts/benchpress]] — BenchPress — $0 benchmark prediction system; rank-2 SVD matrix completion on 83×49 model-benchmark matrix proves 5 benchmarks can predict 44 others to within ~5 points (June 25)
 - [[concepts/beneficial-rl]] — Beneficial RL — Emergent Alignment via Trait-Based Reinforcement Learning
-- [[concepts/benjamin-clavi]] — benjamin-clavi
-- [[concepts/benjamin-clavié]] — Benjamin Clavié
 - [[concepts/benjamin-warner]] — benjamin-warner
 - [[concepts/better-models-worse-tools]] — Better Models: Worse Tools — Armin Ronacher's analysis of tool-calling regression in newer Claude models; Anthropic post-training bias toward Claude Code's flat schemas causes hallucinated fields in nested tool calls (July 5)
 - [[concepts/bitsandbytes]] — bitsandbytes
@@ -1579,7 +1581,6 @@
 - [[concepts/cloudflare-llm-infrastructure]] — Cloudflare LLM Infrastructure
 - [[concepts/cloudflare-os]] — Cloudflare OS — Open platform for agents, apps, and workflows; edge-native agent execution with Durable Objects, Workers AI, and browser rendering; launched August 2026
 - [[concepts/cloudflare-voidzero]] — Cloudflare VoidZero
-- [[concepts/clémentine-fourrier]] — Clémentine Fourrier
 - [[concepts/cmu-llms-methods-applications]] — CMU LLMs — Methods and Applications
 - [[concepts/co-intelligence]] — co-intelligence
 - [[concepts/coala]] — CoALA — Cognitive Architectures for Language Agents
@@ -2796,7 +2797,6 @@
 - [[concepts/recursive-language-models]] — Recursive Language Models → Redirect
 - [[concepts/recursive-self-improvement]] — Recursive Self-Improvement (RSI) — AI improving its own machinery via harness engineering: self-improving harnesses, evolutionary search, auto-research workflows (Weng, Jul 2026)
 - [[concepts/red-green-tdd]] — Moved to concepts/harness-engineering/agentic-workflows/red-green-tdd.md
-- [[concepts/red/green-tdd]] — Red/Green TDD
 - [[concepts/redis]] — Redis
 - [[concepts/reduce-offload-isolate]] — Reduce Offload Isolate
 - [[concepts/redux]] — Redux
@@ -3264,9 +3264,10 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (38 pages)
+## Queries (39 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
+- [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
 - [[queries/2026-10-08-human-gate-retirement-synthesis]] — 4 independent lines (ScaleX 33% approval rate, 115-practitioner survey, OverAct, PACE) converge: the human gate is structurally broken; human role contracts to post-hoc audit + scope-setting
 - [[queries/2026-10-09-crash-consistent-agent-synthesis]] — UndoBench 83.54% competence vs 46.72% recovery: effect-integrity gap; Retire/Absurd/Pi Durable/StateWise dig the same hole at 5 distinct layers, counter-evidence included

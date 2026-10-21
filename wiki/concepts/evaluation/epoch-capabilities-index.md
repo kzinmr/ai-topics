@@ -100,7 +100,7 @@ See [[concepts/open-vs-closed-model-gap]] for the full analysis. Key findings:
 - [[entities/epoch-ai]] — Organization behind the ECI
 - [[concepts/open-vs-closed-model-gap]] — Open vs. closed model capability gap measured via ECI
 - [[concepts/benchmark-optimization]] — The broader challenge of benchmarking AI models
-- [[entities/met]] — METR (collaborator on benchmarking, Time Horizon metric)
+- [[entities/metR]] — METR (collaborator on benchmarking, Time Horizon metric)
 
 ## Sources
 
