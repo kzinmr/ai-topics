@@ -3,7 +3,7 @@ title: "Fernando Borretti"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-06-30
+updated: 2026-10-21
 type: entity
 ---
 
@@ -217,6 +217,35 @@ Borretti identifies three emerging strata:
 The essay connects AI advancement to political theory about labor, state power, and structural exclusion, arguing that the trajectory is not a matter of technological possibility but of political economy: if AI can replace human decision-making, states in competition will be forced to adopt it. The result is a permanent stratification where a significant portion of humanity is structurally irrelevant to the systems that govern their lives.
 
 This analysis echoes the themes of [[concepts/technological-singularity|technological accelerationism]] — if agency itself becomes a commodity provided by AI systems, then control over those systems defines social power, and those without access are permanently excluded.
+
+## "No Man Is an Island" (Oct 2026)
+
+In October 2026 Borretti published
+**["No Man Is an Island"](https://borretti.me/article/no-man-is-an-island)**, one
+of his sharpest essays on AI's cultural damage. Core argument: **individual
+intellectual activity can only be sustained inside an intellectual community of
+other humans; AI dissolves those communities, which in turn makes private
+intellectual activity rarer.**
+
+- **The software case**: he had assumed that once AI solved software engineering
+  he could "move one level up" to managing agents professionally while keeping the
+  "intellectual" side (reading papers, learning/designing languages, writing
+  essays, hobby OSS) for himself. The second half "has not quite worked out."
+- **Discourse collapse**: after Claude Code, "the discourse around software
+  engineering has gotten dumber… like everyone in the industry lost 30 IQ points.
+  People used to talk about compilers, type systems, logic. Now they talk about
+  'prompts', 'harnesses', 'loops'. The discourse is narrower, shallower, and more
+  repetitive."
+- **Loss of human-capital formation** and the collapse of the audience/exchange
+  that once rewarded intellectual contribution.
+
+The essay resonated widely — **[[entities/hynek-schlawack]]** amplified it
+(2026-10-11): "I feel this in my bones… The audience and (more importantly)
+exchange for any type of content have all but collapsed." It is the cultural
+counterpart to his earlier "Permanent Underclass" essay and extends his
+[[concepts/ai-agents]] critique from political economy to the sociology of ideas.
+
+Raw: [[raw/articles/borretti.me--article-no-man-is-an-island--ad59bc12.md]]
 
 ## Related
 

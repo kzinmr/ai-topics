@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-10-21] ingest | x-accounts-scan: PHP2Shell event + Ramp Laminar + Borretti/Bipin amplifications
+
+- Scanned 10 of 84 tracked X accounts (1 error: `koylanai` unresolvable user_id); 6 new linked posts triaged.
+- **PHP2Shell (headline)**: created [[events/php2shell-php-rce-2026]] from Wiz Research disclosure (CVE-2026-109618/109619, CVSS 9.2, pre-auth core-PHP RCE/memory-disclosure; found via Wiz Atlas + Gemini 4 Argon + GPT-5.6 Sol; "AI inflection point" vs Heartbleed/Log4Shell). Retained contested jackalsyn (CVSS 5.3) account. Raw: `raw/articles/wiz.io--blog-php2shell-php-rce--2026-10-21.md`. Cross-linked `entities/wiz`, `entities/hynek-schlawack`, `entities/peter-steinberger`, `concepts/{ai-vulnerability-discovery,autonomous-security-agents}`. Index Events 39→40.
+- **Ramp Laminar harness** (@rahulgs, 2026-10-20): added "Laminar Harness + Stack & Glass" section to [[entities/ramp]] + "Recent X Activity" to [[entities/rahul]]. Raw: `raw/articles/x.com--rahulgs-ramp-laminar-harness--2026-10-20.md`. Productization of Sengottuvelu's flip-the-stack thesis.
+- **Borretti "No Man Is an Island"** (@hynek amplification, 2026-10-11): added essay section to [[entities/fernando-borretti]] citing existing raw `borretti.me--article-no-man-is-an-island--ad59bc12.md`.
+- **@hynek BIPP 3.0.2** (security dep update): logged in `entities/hynek-schlawack` X activity. **Skips**: @rahulgs Ramp crypto-custody hiring post (thin/recruiting).
+
 ## [2026-10-21] skeleton-enrich-daily: backlog empty (no action)
 
 - Frontmatter scan of wiki/entities + wiki/concepts: 0 pages with `status: skeleton`. Streak continues (10-17, 10-19, 10-20).

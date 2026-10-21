@@ -1,7 +1,7 @@
 ---
 title: Wiz (cloud security company)
 created: 2026-08-19
-updated: 2026-09-19
+updated: 2026-10-21
 type: entity
 tags: [entity, company, security, cybersecurity, ci-cd-security, agent-security, autonomous-security-agents, vulnerability-discovery, developer-tooling, ai-infra-security, snowflake]
 sources:
@@ -54,6 +54,16 @@ sources:
 > "The disclosure was received on June 23, 2026, and it was immediately investigated and remediated. Our investigation found no evidence of unauthorized access. Protecting our systems is of utmost importance to our customers, employees, and partners… We are working together with Wiz to share these learnings with the broader industry."
 
 ## Other Notable 2026 Engagements
+
+- **PHP2Shell (October 2026)** — Wiz Research disclosed **PHP2Shell**, critical
+  core-PHP memory-safety flaws (CVE-2026-109618/109619, up to CVSS 9.2) giving
+  unauthenticated pre-auth RCE and process-memory disclosure across ~70% of the
+  web. Found using **Wiz Atlas + Gemini 4 Argon + GPT-5.6 Sol**; the decade-old
+  flaws became exploitable only because frontier models collapsed the effort of
+  building/adapting the exploit chain. Wiz positions it as the AI-era
+  Heartbleed/Log4Shell. Includes a contested independent (jackalsyn) severity
+  account. See [[events/php2shell-php-rce-2026]] and
+  [[raw/articles/wiz.io--blog-php2shell-php-rce--2026-10-21.md]].
 
 - **Cohere North security agent (June 2026)** — Wiz collaborated with [[entities/cohere]] on the Cohere North security-agent launch, an applied example of LLM-driven enterprise security workflows with Wiz telemetry as source-of-truth context. See `[[raw/articles/2026-06-26_cohere_cohere-security-ai-agent-north-wiz]]`.
 

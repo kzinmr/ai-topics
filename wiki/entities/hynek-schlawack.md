@@ -2,7 +2,7 @@
 title: Hynek Schlawack
 type: entity
 created: 2026-04-10
-updated: 2026-09-05
+updated: 2026-10-21
 tags:
   - person
   - developer-tooling
@@ -195,6 +195,21 @@ Hynek's blog at [hynek.me/articles](https://hynek.me/articles) covers Python dev
 -  — attrs co-conspirator from the original IRC session; Twisted project leader
 - [[entities/eugeneyan]] — ML practitioner who shares Hynek's focus on production-first practices
 - [[entities/andrew-nesbitt]] — Ruby developer with similar open-source maintenance philosophy
+
+## Recent X Activity (Oct 2026)
+
+- **2026-10-21 — build-and-inspect-python-package 3.0.2**: Shipped a pure
+  security dependency update of his widely-used GH Action
+  [`hynek/build-and-inspect-python-package`](https://github.com/hynek/build-and-inspect-python-package/releases/tag/v3.0.2)
+  ("brought to you by certifi and the number 4").
+- **2026-10-21 — PHP2Shell**: As a LAMP shared webhoster, flagged the PHP RCE
+  disclosures (CVE-2026-109618 / CVE-2026-109619 / "PHP-UP-2026") with dry humor
+  ("we're obviously Very Excited™"), linking the independent jackalsyn write-up.
+  See [[events/php2shell-php-rce-2026]].
+- **2026-10-11 — endorsement of Borretti's "No Man Is an Island"**: Amplified
+  [[entities/fernando-borretti]]'s essay, writing "I feel this in my bones… The
+  audience and (more importantly) exchange for any type of content have all but
+  collapsed."
 
 ## X Activity Themes
 

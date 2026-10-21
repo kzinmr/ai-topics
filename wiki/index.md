@@ -1371,6 +1371,7 @@
 - [[concepts/ai-voice-fraud]] — AI Voice Fraud — voice cloning scams, three-second theft attacks, deepfake audio fraud vectors, why traditional defences fail against AI-driven voice fraud, mitigation strategies
 - [[concepts/ai-vulnerability-detection-at-scale]] — AI Vulnerability Detection at Scale
 - [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
+- [[events/php2shell-php-rce-2026]] — PHP2Shell core-PHP RCE found with Wiz Atlas + Gemini 4 Argon + GPT-5.6 Sol (Oct 2026)
 - [[concepts/alignment-relativity]] — Alignment Relativity (Aligned to Whom?) — Hyperbo: model priors aligned to non-experts who rewarded them in training; permissible shortcuts are person-indexed, making alignment irreducibly complex (Sep 2026)
 - [[concepts/alex-hall]] — alex-hall
 - [[concepts/alex-krizhevsky]] — Alex Krizhevsky
@@ -1436,7 +1437,7 @@
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
 - [[concepts/autonomous-agent-marketplace-stack]] — Autonomous Agent Marketplace Stack
 - [[concepts/autonomous-component-optimization]] — Autonomous Component Optimization
-- [[concepts/autonomous-security-agents]] — Autonomous Security Agents — AI agents performing end-to-end vulnerability discovery, exploitation, and evidence (Wiz Red Agent × Snowflake case, Aug 2026)
+- [[concepts/autonomous-security-agents]] — Autonomous Security Agents — AI agents performing end-to-end vulnerability discovery, exploitation, and evidence (Wiz Red Agent × Snowflake case, Aug 2026); also [[events/php2shell-php-rce-2026]] (Wiz Research, Oct 2026)
 - [[concepts/autoresearch-bm25-msmarco]] — Autoresearch for BM25 Optimization on MSMarco
 - [[concepts/autoscientist]] — AutoScientist
 - [[concepts/autotts]] — AutoTTS (Agent-Discovered Test-Time Scaling)
@@ -3220,8 +3221,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (39 pages)
+## Events (40 pages)
 
+- [[events/php2shell-php-rce-2026]] — PHP2Shell: AI-discovered core PHP RCE (CVE-2026-109618/109619, Oct 21 2026) — Wiz Research used Wiz Atlas + Gemini 4 Argon + GPT-5.6 Sol to turn decade-old memory-safety flaws into pre-auth RCE/memory-disclosure affecting ~70% of the web (WordPress/Drupal/Joomla); "AI inflection point" vs Heartbleed/Log4Shell; contested severity (jackalsyn CVSS 5.3 vs Wiz 9.2)
 - [[events/2026-10-17-deepseek-v4.1-flash-1017-release]] — DeepSeek-V4.1-Flash-1017 + Search/Fetch API release (Oct 17, 2026) — DeepSeek flash-tier model release alongside new Search/Fetch API; open-weight, pricing, agentic-search tooling
 - [[events/pi-durable-1-0]] — Pi 1.0 & Pi Durable release (Earendil, Oct 1, 2026) — Pi coding agent declared 1.0 + new experimental Pi Durable package: durable/malleable long-running agent harness (storage+machinery model), memory/SQLite/JSONL backends runnable on Bun or Cloudflare Durable Objects, survives crashes, multi-human steering; Zechner embeds it as the durable-agent library in a phone app
 - [[events/2026-10-01-gemini-4-argon-release]] — Gemini 4 Argon Release (Google DeepMind, ~Sep 30, 2026) — frontier model for coding/enterprise knowledge work/cyber defense; 1M output tokens (from 64K), $2/$10 intro pricing, DeepSWE v1.1 77.9% SOTA, LVBench 91.7%, CWE-bench v1 68%; phased release via Fairwind Program + US govt pre-release process

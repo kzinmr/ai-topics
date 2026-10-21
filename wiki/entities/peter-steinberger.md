@@ -4,7 +4,7 @@ type: entity
 entity_type: person
 status: L3
 created: 2026-04-13
-updated: 2026-09-05
+updated: 2026-10-21
 sources: [https://steipete.me/, https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/, https://github.com/steipete, raw/articles/2026-05-30_steipete_my-agent-stack-for-automating-my-personal-life.md, raw/articles/2026-06-07_steipete-design-loops-dont-prompt.md, raw/articles/2026-06-02_microsoft-build_brk245-build-the-thing.md, raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md, raw/articles/github.com--openclaw-releases-tag-v2026.9.2--14c620a1.md]
 tags:
   - person
@@ -202,6 +202,10 @@ The release is a small but telling data point on OpenClaw's cadence: model-suppo
 Source: [[raw/articles/github.com--openclaw-releases-tag-v2026.9.2--14c620a1.md]]; announcement: [@steipete on X](https://x.com/steipete).
 
 ## Sources
+
+- **2026-10-21 — PHP2Shell amplification**: Link-dropped the Wiz Research
+  disclosure of AI-discovered core-PHP RCE, flagging it as a security story of the
+  week. See [[events/php2shell-php-rce-2026]].
 
 - [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]] — Elvis Saravia (DAIR.AI), "From Prompting Agents to Loop Engineering" (Jun 19, 2026). Synthesizes Steinberger's loop thesis across six building blocks, five loop taxonomies, and concrete patterns.
 

@@ -1,7 +1,7 @@
 ---
 title: Ramp
 created: 2026-04-30
-updated: 2026-05-21
+updated: 2026-10-21
 type: entity
 tags:
   - company
@@ -135,6 +135,32 @@ In a May 2026 case study, Ramp's AI DevEx lead **Austin Ray** detailed how Ramp 
 - **Adoption advice**: Demonstrate first-hand, build trust through guided sessions, invest in the vendor feedback loop.
 
 This represents a significant endorsement of Codex over [[entities/inspect]] for certain workflows — Ramp uses both its own background agent (Inspect) and OpenAI's Codex for different parts of the development pipeline.
+
+## Laminar Harness + Stack & Glass (Oct 2026)
+
+In October 2026 Ramp consolidated its agentic systems onto **a single set of
+"rails" — a company-wide agent harness called Laminar**, announced by Head of
+Applied AI [[entities/rahul]] (Rahul Sengottuvelu, [@rahulgs on X](https://x.com/rahulgs/status/2112643415313907722),
+2026-10-20). Laminar sits on top of **ramp router** and is model-agnostic
+("works with all models"), supporting a full modern harness feature set:
+background tasks, sandboxes, tool hooks, tool search, durability, forking,
+compaction, queueing, streaming, and observability.
+
+Products built on Laminar span background agents, async agents, and live chat:
+
+| Product | Role |
+|---------|------|
+| **Stack** ([ramp.com/stack](https://ramp.com/stack)) | Accounting harness — bookkeeping, reconciliations, month-end close for accounting teams, with accountant sign-off |
+| **Glass** ([ramp.com/glass](https://ramp.com/glass)) | General-purpose AI coworker/workspace — "company context, shared skills, and model choice" (early access) |
+| **Inspect** | Ramp's background coding agent (~30% of merged PRs) |
+| **Ask Ramp** | Support chat bot |
+| Headless agents | Document OCR |
+| **ramp text** (HIRAMP / 447-267) | SMS agent |
+
+This positions Laminar as Ramp's internal answer to the general agent-harness
+problem — a unified substrate rather than per-product scaffolding, echoing
+Sengottuvelu's long-standing "bitter lesson" / flip-the-stack agent-architecture
+thesis. See [[entities/rahul]] and [[raw/articles/x.com--rahulgs-ramp-laminar-harness--2026-10-20.md]].
 
 ## Sources
 

@@ -126,6 +126,21 @@ At Ramp, Sengottuvelu's team uses constrained decoding to extract structured inf
 - Featured in TechCrunch, Forbes, Business Insider for Ramp's AI initiatives
 - Regular speaker at premier tech events: Sequoia Capital, HBS, NY Tech Week, AI Engineer Summit
 
+## Recent X Activity (Oct 2026)
+
+- **2026-10-20 — Ramp Laminar harness**: Announced that Ramp has consolidated all
+  of its agentic systems (background agents, async agents, live chat) onto a single
+  internal agent harness, **Laminar**, built on **ramp router** and model-agnostic.
+  Products on it: **Stack** (accounting harness), **Glass** (general-purpose AI
+  coworker/workspace), **Inspect** (coding agent), Ask Ramp, headless OCR agents,
+  and the ramp text SMS agent. Full modern harness feature set: background tasks,
+  sandboxes, tool hooks, tool search, durability, forking, compaction, queueing,
+  streaming, observability. This is the concrete productization of his long-standing
+  "flip the stack" / single-substrate agent thesis. See [[entities/ramp]] and
+  [[raw/articles/x.com--rahulgs-ramp-laminar-harness--2026-10-20.md]].
+- **2026-10-08 — hiring**: Posted a Ramp Staff Security Engineer role for crypto
+  custody stack foundations (signing infra, HSMs, enclave attestation).
+
 ## Sources
 
 - [rahul.gs](https://rahul.gs/) — Personal website
