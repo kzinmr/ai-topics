@@ -621,3 +621,9 @@ research-grade pages from genuinely uncovered material:
 ## 2026-10-19 09:30 JST — morning hot-post
 - Topic: domain specialization vs scale — Indra (TRAE OCR agent) + PS-5LM + NVIDIA ASPIRE
 - Delivered to Discord hot-post thread
+
+## 2026-10-22 01:30 JST — late-night hot-post
+- Topic: AI-resistant hiring eval defeated by Claude generations + ECI calibration (concepts/ai-benchmarks/ai-resistant-evaluations + concepts/evaluation/epoch-capabilities-index). Niche/high-signal per late-night guidance.
+- Key numbers: Opus 4.5 = best-human v2 in 2h; public challenge 1,487 cycles / 11.5h; ECI slope 8.337 → 15.459/yr (1.85x, BF 1e9); ECI 5pt ≈ METR TH doubling; open gap 4mo/8pt (90% CI 7–11).
+- Dedup: no wikilink reuse vs 10-16 late-night (ontrack cluster was cited only as cross-ref, primary topic is new) or 10-19 morning (domain specialization).
+- No wiki content pages created or modified (report only).
