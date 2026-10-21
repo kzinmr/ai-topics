@@ -1,0 +1,107 @@
+{
+  "ok": true,
+  "run_id": "20261021T101030Z",
+  "triaged_at": "2026-10-21T10:15:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "note": "Raw digests contain only Substack/beehiiv redirect URLs (no resolved article URLs or titles). Classification is based on newsletter subject, publication, and subject-level topic signals. Downstream wiki-ingest should resolve redirect URLs before scraping.",
+  "classified": [
+    {
+      "message_id": "<20261021065409.3.4522aa9419923d42@mg-d0.substack.com>",
+      "subject": "[AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% marg…",
+      "date": "2026-10-21",
+      "source": "AINews (swyx, publication_id=1084089)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-21-ainews-deepseek-deepinfer-open-source-sota-inference-running-155t-toks-day-clust.md",
+      "importance": "critical",
+      "relevance": ["inference", "open-source-models", "deepseek", "serving-infrastructure", "ai-economics"],
+      "suggested_wiki_targets": [
+        "entities/deepseek.md (update: DeepSeek V4.1 Flash, DeepInfer)",
+        "concepts/llm-inference.md (update: DeepInfer open-source inference stack)",
+        "events/ (new event: DeepSeek DeepInfer release + economics)"
+      ],
+      "rationale": "Open-source SOTA inference system with concrete throughput/cost numbers (155T toks/day/cluster, ~80% margin) — core inference-infrastructure and open-model economics content."
+    },
+    {
+      "message_id": "<20261020170421.3.0fca00fabe4d78be@mg-d1.substack.com>",
+      "subject": "Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US…",
+      "date": "2026-10-20",
+      "source": "Latest open artifacts (Nathan Lambert / Xeophon, Robotic Waves, publication_id=48206)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-20-latest-open-artifacts-25-deepseek-v4-1-flash-1017-american-made-models-and-new-r.md",
+      "importance": "critical",
+      "relevance": ["open-source-models", "deepseek", "model-releases", "ai-policy", "ai-safety", "open-weight-ecosystem"],
+      "suggested_wiki_targets": [
+        "entities/deepseek.md (update: V4.1 Flash 1017 release)",
+        "concepts/open-weight-models.md (update)",
+        "concepts/ai-regulation-us.md (new or update: new US regulatory controls)",
+        "events/ (new event: US regulatory controls on American-made models)"
+      ],
+      "rationale": "Model release tracking (DeepSeek V4.1 Flash) plus US regulatory developments — both directly in-scope for open-model and AI-policy coverage."
+    },
+    {
+      "message_id": "<20261020.190704.682aab68@mta26>",
+      "subject": "🫠 Altman's Three Endgames for Superintelligence",
+      "date": "2026-10-20",
+      "source": "beehiiv newsletter (Link 4, likely AI policy/strategy newsletter)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-20-altman-s-three-endgames-for-superintelligence.md",
+      "importance": "high",
+      "relevance": ["ai-strategy", "superintelligence", "openai", "sam-altman", "ai-safety"],
+      "suggested_wiki_targets": [
+        "entities/sam-altman.md (update: three endgames framework)",
+        "entities/openai.md (update)",
+        "concepts/superintelligence.md (update)"
+      ],
+      "rationale": "Strategic analysis of Sam Altman's AGI/superintelligence roadmap framing — useful for OpenAI strategy and AI-futures pages."
+    },
+    {
+      "message_id": "<20261021050126.3.429fa2feeef36cde@mg-d1.substack.com>",
+      "subject": "AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess",
+      "date": "2026-10-21",
+      "source": "Latent Space podcast (swyx, publication_id=1084089)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-21-ai-for-the-fortune-2000-how-tenex-builds-an-ai-native-sdlc-alex-lieberman-cj-hes.md",
+      "importance": "high",
+      "relevance": ["ai-agents", "coding-agents", "ai-native-sdlc", "enterprise-ai", "ai-startups"],
+      "suggested_wiki_targets": [
+        "entities/tenex.md (new entity)",
+        "concepts/ai-native-sdlc.md (new or update)",
+        "concepts/ai-coding-agents.md (update: enterprise adoption)"
+      ],
+      "rationale": "AI-native software development lifecycle for enterprise — directly relevant to coding-agent and agentic-SDLC coverage."
+    },
+    {
+      "message_id": "<20261020193157.3.04b70cb167513d0c@mg-d1.substack.com>",
+      "subject": "The Programmable Data Center — Evan Conrad, SF Compute",
+      "date": "2026-10-20",
+      "source": "Latent Space podcast (swyx, publication_id=1084089)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-20-the-programmable-data-center-evan-conrad-sf-compute.md",
+      "importance": "high",
+      "relevance": ["gpu-infrastructure", "data-centers", "ai-inference-infrastructure", "decentralized-compute"],
+      "suggested_wiki_targets": [
+        "entities/evan-conrad.md (new entity)",
+        "entities/sf-compute.md (new entity)",
+        "concepts/ai-infrastructure.md (update: programmable data centers)"
+      ],
+      "rationale": "GPU/compute infrastructure is a core wiki domain; programmable data center thesis and decentralized compute are emerging trends."
+    },
+    {
+      "message_id": "<20261020130228.3.7697e4b9093701dd@mg2.substack.com>",
+      "subject": "How I built my 'everything' app",
+      "date": "2026-10-20",
+      "source": "Ben's Bites (publication_id=4379299)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-20-how-i-built-my-everything-app.md",
+      "importance": "low",
+      "relevance": ["ai-products", "indie-dev", "vibe-coding"],
+      "suggested_wiki_targets": [],
+      "rationale": "Ben's Bites product-roundup style indie-app build story. Peripheral to LLM/agent core; worth a skim for AI-app-builder trends only."
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "critical": 2,
+    "high": 3,
+    "low": 1,
+    "themes": ["deepseek-v4.1-flash", "open-source-inference", "us-ai-regulation", "ai-native-sdlc", "gpu-infrastructure", "superintelligence-strategy"]
+  },
+  "downstream_notes": [
+    "All 6 raw digests contain only redirect/app-link URLs with no resolved titles. newsletter-wiki-ingest must resolve Substack redirect URLs (fetch with cookies or use /redirect/{uuid} follow) and beehiiv link.mail.beehiiv.com v2 links before scraping article content.",
+    "Priority order for wiki-ingest: AINews DeepInfer → Latest open artifacts #25 → Altman endgames → Tenex SDLC → SF Compute → Ben's Bites."
+  ]
+}
