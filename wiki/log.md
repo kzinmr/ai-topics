@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-10-21] skeleton-enrich-daily: backlog empty (no action)
+
+- Frontmatter scan of wiki/entities + wiki/concepts: 0 pages with `status: skeleton`. Streak continues (10-17, 10-19, 10-20).
+- Snapshot note: [[queries/2026-10-21-skeleton-enrich-empty]]. No pages created or modified; other pipelines WIP left untouched.
+
 ## [2026-10-21] health-fix | auto-fix | ghost/stub cleanup + hub re-indexing
 
 - Fixed 2 broken links `[[entities/met]]` → `[[entities/metR]]` (epoch-ai, evaluation/epoch-capabilities-index).
