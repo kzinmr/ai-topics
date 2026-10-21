@@ -1,3 +1,26 @@
+## [2026-10-21] active-crawl | 5 new concepts — Mercury 3, Timestral, Voxtral 3, DeepSeek Search/Fetch, TorchTPU
+
+Trend discovery via HN Algolia `search_by_date` (22 queries, 300+ hits, filtered points>=15, last 4 days). X/Twitter + wiki-gap subagents hit transient HTTP 503; gap analysis run directly by parent via find/grep. Excluded same-day duplicates already covered by prior active-crawl (`97510378` — DeepInfer, Anthropic employment) and existing pages (`hybrid-reasoning-agents`, `diffusion-language-models`, `mistral-voxtral-tts`).
+
+### New concept pages (5)
+- `concepts/mercury-3-diffusion-llm` — Inception Labs Mercury 3: most capable diffusion LLM to date; ~1,068 tok/s (4-8x faster), matches GPT-6 Luna / Claude Haiku 5.5, 1M ctx, $0.20/M in / $0.70/M out; "diffusion scaling laws hold" thesis; 50% Mind2Web completion; production browser/search/tutoring/support citations (TinyFish, Octen, RevisionDojo, Lorikeet).
+- `concepts/timestral` — Mistral Timestral: first TSFM family (5M/28M/123M/209M); #1 zero-shot on GIFT-Eval/TIME/fev-bench; probabilistic multivariate + covariates; CPU-only 10-140 ms; beats Chronos-2/TimesFM-3/Falcon-2.0; synthetic pre-training + covariate-aware attention + long-context; Mistral Forge fine-tune.
+- `concepts/voxtral-3-voice-agent-sdk` — Mistral Voxtral 3: end-to-end voice agent SDK (STT Voxtral Small Transcribe 3 50+ langs/diarization/end-of-turn + expressive Mini TTS 3 + tool-calling + reasoning in one streaming pipeline); Pro Voice 30-min cloning; EU-hosted/self-deployed sovereignty.
+- `concepts/deepseek-search-fetch-api` — DeepSeek Search & Fetch APIs: first-party web search + page->Markdown fetch at $0.75/1k; free inside DeepSeek Harness/Claude Code/Codex until Nov 1 2026; account-level + per-domain QPS.
+- `concepts/torchtpu` — Google TorchTPU: native PyTorch backend for TPUs; ATen kernels, XLA compilation cache, torch.compile() graph mode, DP/TP; Llama/Qwen/ResNet/DLRM examples; v0.2.0.
+
+### Raw articles (5) saved to raw/articles/
+2026-10-19_inception-mercury-3-diffusion-llm.md · 2026-10-15_mistral-timestral-time-series-foundation-models.md · 2026-10-20_mistral-voxtral-3-voice-agent-sdk.md · 2026-10-18_deepseek-search-fetch-api.md · 2026-10-20_google-torchtpu-pytorch-backend.md
+
+### Tags
+All tags pre-existing in SCHEMA.md (diffusion, non-transformer, inference, model, benchmark; foundation-models, time-series, forecasting, mistral, cpu; speech, voice-ai, audio-generation, ai-agents, tool-use; deepseek, agentic-search, tool-use, inference-api, pricing, agents; pytorch, tpu, google, ai-infrastructure, distributed-training, open-source). No SCHEMA edits needed.
+
+### Deferred / considered but not processed
+- CERN x Mistral strategic partnership (357 pts) — research-collaboration news; possible future entities/cern page.
+- Anthropic IPO / $80B H1 net loss + WSJ trust piece — company-strategy/financial news, aggregator-sourced (Reuters/WSJ paywalled); skip pending primary source.
+- Claude protein binder design, Claude attack-surface reduction — Anthropic research, lower urgency; candidates for enrichment of existing Anthropic pages.
+- Maxwell (code<->hardware model), Laminar (YC RL trace-error finder) — early-stage product launches; watch.
+
 # Wiki Operation Log
 
 Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved the complete preceding active log in an already-published immutable Git snapshot indexed by the annual archive.

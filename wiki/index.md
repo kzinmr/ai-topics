@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3277
-> Last updated: 2026-10-20
+> Total pages: 3282
+> Last updated: 2026-10-21
 
 ## Entities (950 pages)
 
@@ -958,7 +958,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2214 pages)
+## Concepts (2219 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1763,6 +1763,7 @@
 - [[concepts/deepclaude]] — DeepClaude - Claude Code Agent Loop with DeepSeek V4 Pro
 - [[concepts/deepseek-harness]] — DeepSeek Harness (dsh) — open-source "everything is a plugin" agent harness on Cordis; ~106k GitHub stars in 48h, MIT
 - [[concepts/deepseek-r1]] — DeepSeek-R1
+- [[concepts/deepseek-search-fetch-api]] — DeepSeek Search & Fetch APIs (Oct 2026) — first-party web search + page-to-Markdown fetch at $0.75/1k requests; currently free inside DeepSeek Harness/Claude Code/Codex until Nov 1; powered by DeepSeek's in-house search engine
 - [[concepts/deepseek-v3]] — DeepSeek-V3
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2
 - [[concepts/deepseek-v4]] — DeepSeek-V4 — 1.6T MoE, 1M context, Hybrid Attention, Unsloth GGUF quants available; V4-Pro-0813 checkpoint (Aug 13, API-only, OpenRouter); V4-Pro GA release + peak/off-peak pricing (Aug 13); V4-Pro vs Fable 5 DeepSWE head-to-head: 90x cheaper, pass@4 88.5 vs 84.1, Pro-first cascade 82.7% at $8.28 (Aug 18-22); Breunig "End of the Free Lunch" (Aug 23): GLM-tier models + strong context now handle most rote coding, Fable reserved for design work
@@ -2388,6 +2389,7 @@
 - [[concepts/mcporter]] — MCPorter — TypeScript runtime, CLI, and code-generation toolkit for MCP; auto-discovers servers from Cursor/Claude/Codex/Windsurf/VS Code; 4.7k★ (June 27)
 - [[concepts/munder-difflin]] — Munder Difflin — Open-source multi-agent harness running an "office of your clones": wraps 12 CLI coding agents (Claude Code/Codex/Grok/...), per-person persistent clones with shared MemPalace memory, E2E-encrypted clone-to-clone messaging, local-first nodes + optional 24/7 sandbox VMs; #1 GitHub Trending (Aug 22, 2026)
 - [[concepts/mu-tools-for-agents]] — Mu — Open-source suite of 18+ developer tools for AI agents, distributed as an MCP server in Go; browser, git, image, video, file system, and social media integrations (Aug 2026)
+- [[concepts/mercury-3-diffusion-llm]] — Mercury 3 (Inception Labs) — most capable diffusion LLM to date; ~1,068 tok/s (4-8x faster), matches GPT-6 Luna / Claude Haiku 5.5, 1M ctx, $0.20/M in · $0.70/M out; proves diffusion scaling laws hold; strong on browser-use/real-time agents
 - [[concepts/mechanistic-interpretability]] — Mechanistic Interpretability (redirect → interpretability)
 - [[concepts/megakernel-for-llm-inference]] — Megakernel for LLM Inference (redirect → megakernel-inference)
 - [[concepts/megakernel-inference]] — Megakernel for LLM Inference; Lucebox fused kernel + Aug 2026 megakernel debate (Rubin dependency triggers, Cursor MoK)
@@ -3052,6 +3054,7 @@
 - [[concepts/thin-bi]] — Thin BI
 - [[concepts/thinking-tokens]] — thinking-tokens
 - [[concepts/time-incremental-continued-pretraining]] — Time-Incremental Continued Pretraining — Refreshing knowledge on overlapping crawl data without catastrophic forgetting (arXiv:2609.23916)
+- [[concepts/timestral]] — Timestral (Mistral) — first family of time-series foundation models (5M-209M params); #1 on GIFT-Eval/TIME/fev-bench zero-shot; probabilistic multivariate; CPU-only inference (10-140 ms); beats Chronos-2/TimesFM-3/Falcon-2.0 with fewer params
 - [[concepts/thomson-reuters-frontier-model]] — Thomson Reuters Frontier Model — first commercial frontier model (Aug 2026)
 - [[concepts/thunderagent]] — ThunderAgent — High-throughput agentic inference system with program-level scheduling (ICML 2026 Spotlight)
 - [[concepts/threat-modeling]] — Threat Modeling
@@ -3074,6 +3077,7 @@
 - [[concepts/tool-use-necessity]] — Tool Use Necessity Detection
 - [[concepts/tool-use-tax]] — Tool-Use Tax
 - [[concepts/toyota-production-system]] — Toyota Production System
+- [[concepts/torchtpu]] — TorchTPU (Google, Oct 2026) — native PyTorch backend for Google TPUs; custom ATen kernels, XLA compilation cache, torch.compile() graph mode, DP/TP distributed training; Llama/Qwen/ResNet/DLRM examples; v0.2.0
 - [[concepts/training-infra/distributed-training]] — Distributed Training — DDP / FSDP / DeepSpeed
 - [[concepts/training-infra/gpu-vram-fundamentals]] — GPU / VRAM Fundamentals
 - [[concepts/training-infra/hardware-lottery]] — Hardware Lottery
@@ -3096,6 +3100,7 @@
 - [[concepts/turbopuffer-rank-by-attribute]] — TurboPuffer's rank-by-attribute feature enables mixing numeric and date attributes into BM25 text search scoring usin...
 - [[concepts/turboquant]] — TurboQuant
 - [[concepts/turing-completeness-emergence]] — Accidental Turing-Completeness
+- [[concepts/voxtral-3-voice-agent-sdk]] — Voxtral 3 (Mistral) — end-to-end voice agent SDK unifying STT (Voxtral Small Transcribe 3: 50+ langs, diarization, end-of-turn) + expressive TTS (Mini TTS 3) + tool-calling + reasoning in one real-time streaming pipeline; Pro Voice 30-min cloning; EU-hosted or self-deployed
 - [[concepts/typed-rlm]] — λ-RLM (Typed Recursive Reasoning)
 - [[concepts/uk-government]] — UK Government
 - [[concepts/uk-government-digital-service]] — UK Government Digital Service
