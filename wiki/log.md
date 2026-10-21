@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-10-21] watchdog | auto-fix | commit orphaned newsletter-wiki-ingest output
+
+- newsletter-wiki-ingest (10:50 UTC) crashed mid-run with "Response truncated due to output length limit" after creating pages but before committing.
+- Committed 36 uncommitted files: 2 entity pages (`entities/evan-conrad`, `entities/sf-compute`), 26 raw articles, 5 raw newsletters, 1 additional raw article batch.
+- Registered `entities/evan-conrad` and `entities/sf-compute` in index.md (alphabetical, all tags SCHEMA-valid). validate_index.py: clean.
+- blog-triage / blog-wiki-ingest failed at 10:20/10:40 with transient "HTTP 503: Local LLM server is busy" — will self-heal tomorrow; no data loss (blog-ingest ok, raw articles landing: 40 today).
+- x_accounts stale(26h) = false positive: every-2-days schedule, last_status=ok (2026-10-19 22:40).
+
+---
+
 ## [2026-10-21] trending-topics | AI security wave — abliterated-model backdoor + Anthropic attack-surface reduction
 
 Trending-topics scan (blogwatcher last-3d 105 articles + HN Algolia front-page/keyword). Active-crawl had already covered DeepInfer, Timestral, Voxtral 3, TorchTPU, System One/Clairic, Hybrid Reasoning. Ingested two genuinely-new high-signal AI-security stories.

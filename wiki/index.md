@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3282
+> Total pages: 3284
 > Last updated: 2026-10-21
 
-## Entities (950 pages)
+## Entities (952 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -306,6 +306,7 @@
 - [[entities/evanhahn-com]] — Evan Hahn
 - [[entities/eve-legal-ai]] — Eve (Legal AI) — Legal-tech AI company; $103M Series B at $1B+ valuation, EveOS platform, multi-agent (Atlas/Jenny/Auditor/Analyst), 1,400+ plaintiff firms (Aug 10)
 - [[entities/eventual]] — Eventual
+- [[entities/evan-conrad]] — Evan Conrad — founder of [[entities/sf-compute]] (GPU capacity spot+forwards order book, physical-settlement thesis); ex-Junark; Latent Space "The Programmable Data Center" (Oct 2026)
 - [[entities/every-inc]] — Every (company)
 - [[entities/evis-drenova]] — Evis Drenova
 - [[entities/exa]] — Exa
@@ -808,6 +809,7 @@
 - [[entities/simone-salis]] — Simone Salis
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent)
 - [[entities/siyan-zhao]] — Siyan Zhao
+- [[entities/sf-compute]] — SF Compute — GPU capacity spot+forwards order book by [[entities/evan-conrad]]; physical-settlement-first compute exchange, neutrality thesis
 - [[entities/skyfall-dev]] — Skyfall Developer (Mahad Kalam)
 - [[entities/skypilot]] — SkyPilot
 - [[entities/slalom]] — Slalom
@@ -958,7 +960,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2219 pages)
+## Concepts (2220 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
