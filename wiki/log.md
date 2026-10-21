@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-10-21] health-fix | auto-fix | ghost/stub cleanup + hub re-indexing
+
+- Fixed 2 broken links `[[entities/met]]` → `[[entities/metR]]` (epoch-ai, evaluation/epoch-capabilities-index).
+- Deleted 4 orphan TODO stubs with no incoming links/raw refs: `concepts/benjamin-clavi`, `concepts/benjamin-clavié`, `concepts/clémentine-fourrier` (canonical: `entities/benjamin-clavie`, `entities/clefourrier`), `concepts/red/green-tdd` (canonical: `concepts/harness-engineering/agentic-workflows/red-green-tdd`); removed their index entries.
+- Registered 6 previously unindexed directory hub/content pages in index.md: `concepts/ai-benchmarks/index` (118-file hub), `concepts/browser-agent/{death-of-browser,deep-research}`, `concepts/{openai,claude,gpt,gemini,anthropic}/index` vendor sub-indexes.
+- Renamed + registered `queries/2026-10-04-uncommitted-wip-snapshot-query` (date-suffix convention, was unindexed).
+- Recounted section headers (Entities 952 / Concepts 2220 / Queries 39). validate_index.py clean; index ghosts=0, unindexed top-level+nested pages=0.
+
+---
+
+
 ## [2026-10-21] watchdog | auto-fix | commit orphaned newsletter-wiki-ingest output
 
 - newsletter-wiki-ingest (10:50 UTC) crashed mid-run with "Response truncated due to output length limit" after creating pages but before committing.
