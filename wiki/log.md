@@ -2,6 +2,15 @@
 
 Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved the complete preceding active log in an already-published immutable Git snapshot indexed by the annual archive.
 
+## [2026-10-21] blog-ingest | recovery — 4 blocked articles saved via RSS fallback, 2 paywalled skipped
+
+- 13/20 articles saved by blog_ingest.py at 10:00 UTC (checkpoint 20261021T100009Z).
+- Recovered 4 of 7 unsaved:
+  - `openai.com--index-ted-taylor-restaurant--afe39255.md`, `openai.com--index-terminal-x--7b80adca.md`, `openai.com--index-openai-to-acquire-orchestra-bio--1ce5d966.md` — via openai.com/news/rss.xml fallback (403 to scraper UA; `scrape_status: rss-fallback`).
+  - `builders.ramp.com--post-building-laminar--2290ef12.md` — SPA (client-rendered, empty HTML); body = description from builders.ramp.com/feed.xml.
+  - `lwn.net--articles-1101687--84a881d4.md` — free LWN article, fetched directly. Notable: PHP zero-day PoC leaked by AI scanners pre-embargo.
+- Skipped: `lwn.net/Articles/1100257` (SUSE setuid), `lwn.net/Articles/1100520` (XArray rewrite) — subscriber-only paywalls.
+
 ## [2026-10-20] skeleton-enrich-daily | backlog empty — no action
 
 Frontmatter-level scan of `wiki/entities/` + `wiki/concepts/` (regex `status:\s*skeleton` inside YAML block): **0** matches. `skeleton` does not appear in the entity `status:` distribution (stub 458, active 165, complete 128, L3 62, draft 52, L2 39, redirect 16, L1 14, full 7, …). Streak continues from 2026-10-17 / 2026-10-19. Only prose "skeleton" mentions remain (exoskeleton / skeleton repo / topology metaphor). No pages modified. Snapshot: [[queries/2026-10-20-skeleton-enrich-empty]].
