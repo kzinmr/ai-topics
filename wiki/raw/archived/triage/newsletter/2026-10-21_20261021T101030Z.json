@@ -1,0 +1,116 @@
+{
+  "archived_at": "2026-10-21T10:37:35.374722+00:00",
+  "triage_run_id": "20261021T101030Z",
+  "source": "newsletter",
+  "summary_ja": "6ニュースレター（Latent Space x2 / AINews / Interconnects Latest open artifacts #25 / Ben's Bites / beehiiv Altman解説）を triage。take 3件: (1) SF Compute / Evan Conrad のprogrammable data center・compute市場 — wiki完全不在の新規entity候補、(2) Tenex のAI-native SDLC / MetaHarness — エンタープライズagentic SDLC具体事例、(3) Latest open artifacts #25 の MOFCOM 事前承認提案 + DHS DeepSeek 連邦調達制限（Federal Register 2026-21447）+ Reflection Beam-1.0-501B-A23B — 既存規制ページに記載ゼロ。reference 3件: AINews DeepInfer（ concepts/deepinfer.md が本日上流で作成済み → 経済性数値追記のみ）、Altman's Three Endgames（beehiiv 全リンク Cloudflare challengeで本文取得不能、topic-level判定）、Ben's Bites everything app（本体はthin、製品リンクは Muse Spark 等すでに既存ページ）。skip は Substack/beehiiv のUI・追跡リンク群のみ。",
+  "decisions": [
+    {
+      "item_id": "<20261021065409.3.4522aa9419923d42@mg-d0.substack.com>-main",
+      "source": "newsletter",
+      "source_name": "AINews (swyx, pub 1084089)",
+      "title": "[AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin",
+      "url": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-21-ainews-deepseek-deepinfer-open-source-sota-inference-running-155t-toks-day-clust.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 中核トピックの DeepInfer は concepts/deepinfer.md が2026-10-20 active-crawl で60行すでに作成済み（Apache-2.0, vLLM fork, FlashMLA/DeepGEMM/DeepEP, DSpark spec decode, Ascend 950, KV-cache/ディスアグロ/負荷分散は非公開）。同一トピックを新規イベントページ化するのは重複。ただし AINews 本文159段落が持つ経済性数値（155T tokens/day/cluster、96%キャッシュヒット、非ピーク $0.15/$0.60 per Mtok → $38/SM100 card・hour、all-in $5-8/card・hour → 80%+粗利、$166B per GW、81日payback vs DeepSeek常例10ヶ月）と『fully open source だがKV-cache管理・負荷分散は非公開』という注記は deepinfer.md に未記載 — 既存ページへの数値追記のみ推奨（新規ページ作成は不要）。他トピック（MiniMax M3.1 Flash, whatmodel.sh claims）は trending-topics/active-crawl で本日処理済み。",
+      "candidate_wiki_path": "concepts/deepinfer.md",
+      "body_excerpt": "# Newsletter Digest - 2026-10-21\n**Subject:** [AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% marg…\n**Collected:** 2026-10-21T10:10:29.070868+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0"
+    },
+    {
+      "item_id": "<20261020.190704.682aab68@mta26>-main",
+      "source": "newsletter",
+      "source_name": "beehiiv newsletter (uid=820) — Altman's Three Endgames for Superintelligence",
+      "title": "🫠 Altman's Three Endgames for Superintelligence",
+      "url": "https://link.mail.beehiiv.com/v2/c/5767f3258ddc87aa01bfb050cc5095f6.../c08d3224253ff045",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-20-altman-s-three-endgames-for-superintelligence.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ beehiiv v2/c/ 追跡リンクは3本とも Cloudflare 'Just a moment...' challenge（HTTP 200・本文7KBのみ）で本文取得不能 — retry不可の既知パターン。inbox pre-triageは importance high / suggested target entities/sam-altman.md だが、sam-altman.md(282行)に 'three endgames' / superintelligence戦略フレームは未記載なので潜在価値はある。ただし送信から約15時間経過でトークン有効期限切れが疑われ、件名から推測できる内容（AltmanのAGI戦略解説）は concepts/superintelligence.md・personal-superintelligence.md と entities/sam-altman.md の既存網羅領域。body未読のため take にはしない（BODY-READING MANDATE準拠）。下流で sam-altman.md の 'Core Philosophy' 節に本号参照を残す程度。",
+      "candidate_wiki_path": "entities/sam-altman.md",
+      "body_excerpt": "# Newsletter Digest - 2026-10-20\n**Subject:** 🫠 Altman's Three Endgames for Superintelligence\n**Collected:** 2026-10-21T10:10:22.119352+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/5767f3258ddc87aa01bfb050cc5095f6c3283d5fbf5828956192676d0dbf0264b5447d0f8864c"
+    },
+    {
+      "item_id": "<20261020130228.3.7697e4b9093701dd@mg2.substack.com>-main",
+      "source": "newsletter",
+      "source_name": "Ben's Bites (pub 4379299) — How I built my 'everything' app",
+      "title": "How I built my 'everything' app",
+      "url": "https://www.bensbites.com/p/how-i-built-my-everything-app",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-20-how-i-built-my-everything-app.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ 本体記事（27段落）はindie devの『エージェントと人が同じダッシュボード上で協働する everything app』構築記録で、vibe-coding/personal-agent-workbench の一次事例として薄く価値あり。ニュースレター本体の製品リンク群は既存ページで網羅済み: Notion agents 24時間実行+own computer、ChatGPT Chrome tab takeover、Meta Muse Spark Open weights（entities/muse-spark.md・concepts/meta-muse-spark.md に Oct 15リリース・816B・Together/Modal Day-0まで記載済み）、Amazon Bee Frontier、Wabi 2.0 / Scrawl / Inflight / OpenUI 1.0 は wiki対象外の新しさ。よって新規ページ不要、agentic-engineering か humanizer 系の reference 扱い。",
+      "candidate_wiki_path": "concepts/agentic-engineering/index.md",
+      "body_excerpt": "# Newsletter Digest - 2026-10-20\n**Subject:** How I built my ‘everything’ app\n**Collected:** 2026-10-21T10:10:19.479785+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249"
+    },
+    {
+      "item_id": "batch-skip-bensbites-noise",
+      "source": "newsletter",
+      "source_name": "Ben's Bites — How I built my 'everything' app",
+      "title": "Link 1-20 (UI/redirect noise)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-20-how-i-built-my-everything-app.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 20件すべて Substack UI chrome（redirect/2 base64 OAuth, app-link post title, submitLike, post-comment, action=share, read-in-app, @profile）または UUID redirect メールセッション認証必須リンク。実記事は上記 take/reference で処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-20\n**Subject:** How I built my ‘everything’ app\n**Collected:** 2026-10-21T10:10:19.479785+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249"
+    },
+    {
+      "item_id": "batch-skip-openartifacts-noise",
+      "source": "newsletter",
+      "source_name": "Latest open artifacts #25 (Interconnects)",
+      "title": "Link 1-2, 4-8, 10-20 (UI/redirect noise)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-20-latest-open-artifacts-25-deepseek-v4-1-flash-1017-american-made-models-and-new-r.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UI chrome と @xeophon / @natolambert 著者プロフィール、share/comment/like、read-in-app、UUID redirect 計18件。HF/連邦官報リンクは上記 take 判定済みの本文に包含。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-20\n**Subject:** Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US…\n**Collected:** 2026-10-21T10:10:20.731028+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0"
+    },
+    {
+      "item_id": "batch-skip-altman-noise",
+      "source": "newsletter",
+      "source_name": "beehiiv (uid=820) — Altman's Three Endgames",
+      "title": "Link 2-20 (beehiiv tracking variants)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-20-altman-s-three-endgames-for-superintelligence.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 20件の beehiiv v2/c/ 追跡URLはサンプルした3本すべて Cloudflare challenge（7KB 'Just a moment...'）。リンク単位 kill switch ではなく全リンク失敗のため topic-level 判定（上記 reference 参照）。残17件は同一記事への認証状態違い重複／SNS・フッターリンクと推定され個別解決不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-20\n**Subject:** 🫠 Altman's Three Endgames for Superintelligence\n**Collected:** 2026-10-21T10:10:22.119352+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/5767f3258ddc87aa01bfb050cc5095f6c3283d5fbf5828956192676d0dbf0264b5447d0f8864c"
+    },
+    {
+      "item_id": "batch-skip-sfcompute-noise",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx) — The Programmable Data Center",
+      "title": "Link 1-9, 11-13, 15-20 (podcast player UI / redirect noise)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-20-the-programmable-data-center-evan-conrad-sf-compute.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Latent Space ポッドキャスト配信の play_card 系プレイヤーchrome（play_audio, show_logo, show_title, duration, progress_bar, play_button, listen_now_button）と share/comment/like、UUID redirect 計19件。実記事本文は上記 take で処理済み（83段落取得）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-20\n**Subject:** The Programmable Data Center — Evan Conrad, SF Compute\n**Collected:** 2026-10-21T10:10:24.043152+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtY"
+    },
+    {
+      "item_id": "batch-skip-tenex-noise",
+      "source": "newsletter",
+      "source_name": "Latent Space (swyx) — Tenex AI-Native SDLC",
+      "title": "Link 1-9, 11-13, 15-20 (podcast player UI / redirect noise)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-21-ai-for-the-fortune-2000-how-tenex-builds-an-ai-native-sdlc-alex-lieberman-cj-hes.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ play_card 系プレイヤーchrome と share/comment/like、UUID redirect 計19件。実記事本文は上記 take で処理済み（96段落取得）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-21\n**Subject:** AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess\n**Collected:** 2026-10-21T10:10:26.406022+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL"
+    },
+    {
+      "item_id": "batch-skip-ainews-noise",
+      "source": "newsletter",
+      "source_name": "AINews (swyx, pub 1084089)",
+      "title": "Link 1, 3-5, 7-20 (UI/redirect noise)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-21-ainews-deepseek-deepinfer-open-source-sota-inference-running-155t-toks-day-clust.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UI chrome（redirect/2 base64 OAuth, submitLike, post-comment, action=share, read-in-app）と UUID redirect 14件。AINews はアグリゲーション型で主要リンク（GitHub deepseek-ai/DeepInfer, deepwiki, Redditスレッド, MiniMax M3.1 Flash, whatmodel.sh/claims, SerpAPI広告）は本文抽出分に包含、かつ MiniMax M3.1 Flash / DeepInfer は本日 trending-topics・active-crawl が処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-21\n**Subject:** [AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% marg…\n**Collected:** 2026-10-21T10:10:29.070868+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0"
+    }
+  ]
+}
