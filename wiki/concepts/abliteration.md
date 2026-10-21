@@ -1,7 +1,7 @@
 ---
 title: Abliteration
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-10-21
 type: concept
 tags:
   - agent-safety
@@ -19,6 +19,7 @@ tags:
 sources:
   - raw/articles/2026-04-17_alice-abliteration-dangerous-models.md
   - raw/articles/2026-05-26_ft-abliteration-guardrails-meta-google.md
+  - raw/articles/2026-10-06_projectdiscovery-how-abliterated-models-can-get-you-pwned.md
 ---
 
 # Abliteration
@@ -125,6 +126,7 @@ Abliteration sits within a broader ecosystem of model manipulation techniques:
 - **[[concepts/activation-steering]]**: Direct manipulation of internal activations during inference. Abliteration is a permanent, weight-level variant; activation steering is transient and inference-time. Both exploit the same refusal direction geometry.
 - **Jailbreaking / Prompt injection**: Runtime techniques that circumvent safety guardrails through carefully crafted prompts, without modifying model weights. Championed by figures like [[entities/pliny-prompter|Pliny the Prompter]].
 - **Fine-tuning attacks**: Removing alignment through continued training on uncensored datasets. More expensive and time-consuming than abliteration but can produce more thorough uncensoring.
+- **[[concepts/abliterated-model-backdoor|Abliterated model backdoors]]**: Because abliteration already requires editing and re-uploading weights, it doubles as cover for a trigger-conditional backdoor. ProjectDiscovery (Oct 2026) shipped a poisoned 7B model through OpenAI's Codex CLI that answered every clean request normally yet exfiltrated repo credentials on a hidden trigger — a backdoor costing under $50. This turns abliteration from a capability-stripping trick into a supply-chain Trojan vector.
 
 ## Open Questions
 

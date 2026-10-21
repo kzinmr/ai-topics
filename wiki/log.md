@@ -1,3 +1,24 @@
+# Wiki Log
+
+## [2026-10-21] trending-topics | AI security wave — abliterated-model backdoor + Anthropic attack-surface reduction
+
+Trending-topics scan (blogwatcher last-3d 105 articles + HN Algolia front-page/keyword). Active-crawl had already covered DeepInfer, Timestral, Voxtral 3, TorchTPU, System One/Clairic, Hybrid Reasoning. Ingested two genuinely-new high-signal AI-security stories.
+
+### New concept page (1)
+- `concepts/abliterated-model-backdoor` — trigger-conditional backdoors hidden in edited/abliterated open weights. ProjectDiscovery (Prince Chaddha, Oct 6 2026) poisoned a 7B model through OpenAI Codex CLI — normal on every clean request, exfiltrates repo credentials on a hidden trigger; backdoor cost <$50. Framed as supply-chain (not memory) compromise; no load-time detection exists. Sources: raw/articles/2026-10-06_projectdiscovery-how-abliterated-models-can-get-you-pwned.md.
+
+### Concept page updates (2)
+- `concepts/ai-vulnerability-detection-at-scale` — new "Attack Surface Reduction (Anthropic, Oct 2026)" section: Claude over 25 OSS projects → 493 reachable-code issues; reduce reachability vs patch individual bugs. + raw/articles/2026-10-20_anthropic-using-claude-to-reduce-the-attack-surface-of-code.md.
+- `concepts/abliteration` — added backdoor cross-reference under Related Techniques + new source.
+
+### Tags
+- Added `model-backdoor` to SCHEMA.md Models line.
+
+### Notable uncovered topics (candidates for next ingest)
+- Anthropic H1-2026 net loss >$80B + IPO "obscure trust" (Reuters/WSJ, 151pts each).
+- OpenAI Alignment "Beyond g-mean²: complementary metrics for monitorability".
+- Anthropic Claude-designed protein binders vs scorpion neurotoxins.
+
 ## [2026-10-21] active-crawl | 5 new concepts — Mercury 3, Timestral, Voxtral 3, DeepSeek Search/Fetch, TorchTPU
 
 Trend discovery via HN Algolia `search_by_date` (22 queries, 300+ hits, filtered points>=15, last 4 days). X/Twitter + wiki-gap subagents hit transient HTTP 503; gap analysis run directly by parent via find/grep. Excluded same-day duplicates already covered by prior active-crawl (`97510378` — DeepInfer, Anthropic employment) and existing pages (`hybrid-reasoning-agents`, `diffusion-language-models`, `mistral-voxtral-tts`).

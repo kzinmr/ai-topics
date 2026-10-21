@@ -967,6 +967,7 @@
 - [[concepts/aauth]] — AAuth — Client Identity Protocol for AI Agents; draft-hardt-oauth-aauth; client-identity-based agent authorization for MCP-style delegation; intent-based auth panel (Keycard, Oct 2026)
 - [[concepts/agi-declaration-controversy-2026]] — The AGI Declaration Controversy (Sep 2026) — Jensen Huang's "race to AGI is over" claim after GPT-6 Astra; no definition/evidence, Marcus + Chollet (ARC-AGI 3) counter-evidence, incentive table, tension with Pachocki's "alien mind" framing + Leike's AI-research-automation warning
 - [[concepts/abliteration]] — Abliteration
+- [[concepts/abliterated-model-backdoor]] — Abliterated Model Backdoors — trigger-conditional backdoors hidden in edited/abliterated open weights; ProjectDiscovery poisoned a 7B model (<$50) via Codex CLI that exfiltrated repo credentials only on a hidden trigger, passing evals (Oct 2026)
 - [[concepts/absurd-durable-execution]] — Absurd (Postgres-Native Durable Execution)
 - [[concepts/activation-steering]] — Activation Steering — Technique for modifying model behavior by manipulating internal activations
 - [[concepts/active-observability]] — Active Observability — Real-time LLM observability approach
