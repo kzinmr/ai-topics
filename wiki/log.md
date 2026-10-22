@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-10-22] trending-topics | LiteLLM 1.107.0 PyPI compromise + Claude Duet + OpenAI CLI
+
+- Daily RSS scan: 50 new discovered / 20 blog articles scraped (blog_ingest 10:00 UTC); 4 newsletters triaged (all high). RSS day itself was low on AI signal (xeiaso CVE shitposts, PHP security release, Pluralistic, johncook, krebs) — supplemented with HN Algolia front-page + keyword scan (2-day window, ≥20 pts).
+- New: `entities/litellm.md` — open-source LLM proxy/gateway entity; 1.107.0 PyPI compromise mechanism (maturin `data = "cook"` in sdist, `cook.pth`/`cook.py` stealer, `sitecustomize.py` hourly RCE beacon, exfil to litellm[.]dev), publish-step-not-repo compromise analysis.
+- New: `events/2026-10-21-litellm-pypi-compromise.md` — timeline (11:46–13:23 UTC PyPI, 11:46–14:20 Docker), impact assessment, remediation scope.
+- Updated: `concepts/ai-supply-chain-security.md` (+incident #7, sdist↔wheel differential auditing lesson), `comparisons/llm-gateways.md` (+security note: gateway-as-supply-chain-target), `entities/anthropic.md` (+Claude Duet proactive personal agent, Opus 5.5, morning brief, approve/not-now gates, Marlo Pulse), `entities/openai.md` (+official OpenAI CLI, OpenAI models on Google Cloud, Patch the Planet/PHP2Shell, GPT-Rosalind distributed biological reasoning).
+- New raw: 3 files (safedep LiteLLM writeup, Claude Duet product page, OpenAI CLI README).
+- SCHEMA.md: +7 tags (litellm, package-compromise, trust-store, certificate-authority, model-distribution, proactive-agent, llm-citation-seeding).
+- index.md: 2 new entries, Events 40→41, total pages 3284→3286.
+- Report: `inbox/rss-scans/daily-scan-2026-10-22.md`.
+- Uncovered candidates left for next ingest: Peec "publish fake stats, get cited" (363p, llm-citation-seeding), harness-engineering-101 (16-chapter book), LayerFS, Omnara, doubleAI Maxwell, WorldTUI (360M terminal world model), Anthropic H1-2026 $80B net loss / S-1, Google staff military-contract resignations.
+
 ## [2026-10-21] ingest | x-accounts-scan: PHP2Shell event + Ramp Laminar + Borretti/Bipin amplifications
 
 - Scanned 10 of 84 tracked X accounts (1 error: `koylanai` unresolvable user_id); 6 new linked posts triaged.

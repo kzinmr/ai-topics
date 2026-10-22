@@ -1,7 +1,7 @@
 ---
 title: "LLM Gateways Comparison"
 created: 2026-07-08
-updated: 2026-07-13
+updated: 2026-10-22
 type: comparison
 tags:
   - model-routing
@@ -56,6 +56,23 @@ Choose when you want to **self-host and own your gateway infrastructure**. Open-
 
 ### Portkey
 Choose when you need **LLMOps tooling bundled with routing** — guardrails, prompt management, and deep observability alongside the gateway. Available as both managed and self-hosted (including air-gapped). Best for teams that want to debug and analyze AI behavior in depth.
+
+## Security Note: the Gateway as a Supply-Chain Target (October 2026)
+
+On 2026-10-21 the self-hosted option below, **LiteLLM**, became the attack
+itself: release `1.107.0` on PyPI (and four Docker tags) carried a credential
+stealer and an RCE beacon that harvested the provider API keys the proxy
+stores. The malicious code existed only in the published artifact, never in a
+public commit.
+
+This is a first-order consideration for gateway selection, not a footnote: the
+gateway holds every provider key in the stack, so evaluate each option on
+*how its release pipeline is protected* (signed builds, sdist↔wheel diffing,
+reproducible builds, publish-step isolation) as well as on routing features.
+
+- [[entities/litellm]] — package details and the compromise mechanism
+- [[events/2026-10-21-litellm-pypi-compromise]] — timeline and impact
+- [[concepts/ai-supply-chain-security]] — framework and mitigations
 
 ## Related Pages
 

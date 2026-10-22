@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3284
-> Last updated: 2026-10-21
+> Total pages: 3286
+> Last updated: 2026-10-22
 
 ## Entities (952 pages)
 
@@ -503,6 +503,7 @@
 - [[entities/letta]] — Letta (Letta AI)
 - [[entities/levelsio]] — Pieter Levels (@levelsio); solo founder & indie maker; 2026 AI thesis (indie hackers going extinct, BigAI cannibalization, vibecoded his own SaaS)
 - [[entities/lighton]] — LightOn
+- [[entities/litellm]] — LiteLLM — open-source Python LLM proxy/gateway; **1.107.0 PyPI compromise (Oct 21, 2026)**: credential stealer + hourly RCE beacon in all 7 wheels via a single maturin `data = "cook"` line absent from the public repo; exfiltrated provider API keys from the proxy DB
 - [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, harness engineering for RSI, training (Jul 26)
 - [[entities/lilianweng]] — Lilian Weng
 - [[entities/linear]] — Linear
@@ -3221,8 +3222,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (40 pages)
+## Events (41 pages)
 
+- [[events/2026-10-21-litellm-pypi-compromise]] — LiteLLM 1.107.0 PyPI compromise (Oct 21, 2026) — malicious wheels + Docker tags served 11:46–14:20 UTC; payload runs at every Python interpreter start (cook.pth, sitecustomize.py), steals SSH/cloud/CI/AI-tool creds and proxy-stored provider keys; publish-step compromise, clean at 1.106.2
 - [[events/php2shell-php-rce-2026]] — PHP2Shell: AI-discovered core PHP RCE (CVE-2026-109618/109619, Oct 21 2026) — Wiz Research used Wiz Atlas + Gemini 4 Argon + GPT-5.6 Sol to turn decade-old memory-safety flaws into pre-auth RCE/memory-disclosure affecting ~70% of the web (WordPress/Drupal/Joomla); "AI inflection point" vs Heartbleed/Log4Shell; contested severity (jackalsyn CVSS 5.3 vs Wiz 9.2)
 - [[events/2026-10-17-deepseek-v4.1-flash-1017-release]] — DeepSeek-V4.1-Flash-1017 + Search/Fetch API release (Oct 17, 2026) — DeepSeek flash-tier model release alongside new Search/Fetch API; open-weight, pricing, agentic-search tooling
 - [[events/pi-durable-1-0]] — Pi 1.0 & Pi Durable release (Earendil, Oct 1, 2026) — Pi coding agent declared 1.0 + new experimental Pi Durable package: durable/malleable long-running agent harness (storage+machinery model), memory/SQLite/JSONL backends runnable on Bun or Cloudflare Durable Objects, survives crashes, multi-human steering; Zechner embeds it as the durable-agent library in a phone app

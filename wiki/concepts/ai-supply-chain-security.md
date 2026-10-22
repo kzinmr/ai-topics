@@ -1,7 +1,7 @@
 ---
 title: AI Supply Chain Security
 created: 2026-05-21
-updated: 2026-09-06
+updated: 2026-10-22
 type: concept
 tags:
   - concept
@@ -70,6 +70,27 @@ Related: [[entities/andrew-nesbitt]]
 
 A distinct supply-chain dimension emerged in the 2026 policy wave: provenance of the *contributed code itself* (human vs AI-generated), as opposed to provenance of the build pipeline. OpenJDK's Skara PR affirmation checkbox is effectively a lightweight, human-scale attestation mechanism analogous to SLSA attestations — but, like SLSA (see TanStack worm above), it attests only what the attester claims, not what was actually generated. See [[concepts/ai-code-provenance-in-open-source]] for the OpenJDK/Rust/Debian mechanism comparison and why detection-based verification remains out of reach (C2PA-style watermarking for code is the open research question).
 
+### 7. LiteLLM 1.107.0 PyPI Compromise (October 21, 2026)
+
+The LLM gateway itself became the payload carrier. `litellm==1.107.0` shipped a
+credential stealer (`cook.pth`/`cook.py`) and an hourly RCE beacon
+(`sitecustomize.py`) in all seven wheels; both execute at *every* Python
+interpreter start on the host, not only when `litellm` is imported. Exfiltration
+covered SSH keys, cloud creds, CI/CD secrets, AI-tool tokens, browser passwords
+and — the AI-specific part — the provider API keys stored in the LiteLLM proxy
+database. The injection was a single `data = "cook"` maturin line present only
+in the sdist's `pyproject.toml`; no public commit in `BerriAI/litellm` contains
+it, so repository-side review would have cleared the release. PyPI pulled it by
+13:23 UTC; the affected Docker tags served the payload 11:46–14:20 UTC.
+
+Two lessons for the framework above: (1) **a brokered-credential store is a
+crown-jewel dependency** — gateway compromise == compromise of every provider
+key behind it; (2) **sdist↔wheel differential auditing** is a cheap, high-yield
+detection primitive that existing gates (including SLSA attestations) do not
+cover, for the same reason the TanStack worm slipped past valid provenance.
+
+See [[entities/litellm]] and [[events/2026-10-21-litellm-pypi-compromise]].
+
 ## Responses and Mitigations
 
 Organizations are responding with:
@@ -84,6 +105,8 @@ Organizations are responding with:
 - [[concepts/llm-policies-open-source]] — OSS project LLM contribution policies
 - [[entities/openai-codex]] — Codex command injection incident
 - [[concepts/openai/tanstack-supply-chain-2026]] — TanStack worm detailed analysis
+- [[entities/litellm]] — LiteLLM gateway + 1.107.0 PyPI compromise
+- [[events/2026-10-21-litellm-pypi-compromise]] — same-week gateway publish-step compromise
 - [[events/distillation-attacks-2026]] — Related: supply chain concerns in model distillation
 - [[entities/anthropic]] — Claude Code source map leak
 - [[entities/andrew-nesbitt]] — Nesbitt's CVE-2026-LGTM satirical incident report

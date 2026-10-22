@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-10-19
+updated: 2026-10-22
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -822,6 +822,38 @@ Anthropic's **Valve "Peaks" case study** (published Sep 22, via Simon Willison) 
 
 Drew Breunig (@dbreunig) called out a Claude.app usability defect: **the on-screen keyboard cannot be dismissed**, so after entering a paragraph or two of feedback the user is left reading through a ~2–3-line viewport. A small but concrete example of AI-app input-surface friction — long-prompt authoring (the core interaction for power users) is fought by the mobile layout rather than supported by it. ^[X post by @dbreunig, 2026-10-17, https://x.com/dbreunig/status/2111506449616798069]
 
+## Claude Duet — Proactive Personal Agent (October 21, 2026)
+
+Anthropic opened a research preview of **Claude Duet**, a proactive personal
+agent on Pro and Max plans in the US, powered by Opus 5.5. It is Anthropic's
+entry into the ambient/proactive-agent category and the productisation of the
+"keeps working while you're away, waits for your ok when it matters" pattern.
+
+Product-level design choices worth noting for harness research:
+
+- **Morning brief as the primary interface.** Duet briefs the user once per
+  day, drafts next steps, then goes silent until a decision is needed — the
+  opposite of a chat-loop default.
+- **Approval gates on money and irreversible actions** are surfaced as
+  Approve / Not now cards (e.g. paying a $640 county health-permit fee) rather
+  than being executed autonomously — an explicit human-in-the-loop boundary at
+  the *transaction* level.
+- **Continuity, not a new silo.** Memory, skills and apps from the Claude app
+  carry into Duet from the first message; it works across 6,000+ connectors and
+  plugins.
+- **User-authored dashboards.** "Marlo Pulse": the agent assembles a daily
+  health page from point of sale, Shopify, CRM, support inbox, payroll and
+  bank, refreshes before the brief, then proposes experiments when a metric
+  moves (East Bay churn 2.6% → 3.4% after a shipping price change → proposed
+  free-shipping-threshold test).
+
+HN reception was heavy (427 points, 388 comments), largely because the
+positioning competes directly with OpenAI's personal-agent push and with
+"agent that runs your business" products rather than with coding agents.
+
+Sources: raw/articles/2026-10-22_anthropic-claude-duet-launch.md,
+HN https://news.ycombinator.com/item?id=50186037
+
 ## Related Pages
 - [[Claude models]] — Model family details
 - [[concepts/ai-economics]] — Tokenmaxxing, AI ROI debate
@@ -836,6 +868,8 @@ Drew Breunig (@dbreunig) called out a Claude.app usability defect: **the on-scre
 - [[entities/fable]] — Fable coding harness (links to harness engineering + cognitive UX design patterns)
 - [[entities/sap-business-ai-platform]] — SAP partnership (May 2026)
 - [[concepts/anthropic/managed-agents]] — Managed Agents platform details
+- [[events/2026-10-21-litellm-pypi-compromise]] — same-week AI supply-chain incident context
+- [[entities/litellm]] — brokered-credential gateway compromise
 - [[entities/openai-astra]] — GPT-6 Astra (Sep 2026, primary competitor model)
 - [[concepts/ai-benchmarks/deepresearch-bench]] — DeepResearch Bench II (Anthropic research agent: best Information Gathering, mid-table Analysis)
 - [[entities/project-glasswing]] — Defensive security initiative
@@ -849,6 +883,8 @@ Drew Breunig (@dbreunig) called out a Claude.app usability defect: **the on-scre
 - anthropic-claude-code-session-management-1m-context
 
 ## Log
+
+- 2026-10-22: Added "Claude Duet — Proactive Personal Agent (October 21, 2026)" section — Opus 5.5-powered proactive personal agent (research preview, Pro/Max, US), morning-brief cadence, explicit approve/not-now gates on payments and irreversible actions, continuity of Claude memory/skills/apps, 6,000+ connectors, user-built "Marlo Pulse" daily health dashboard. Source: claude.com/product/claude-duet, HN 427p.
 
 - 2026-09-23: Added "Claude Opus 5.5 + /compact Incident (Sep 22, 2026)" section — Opus 5.5 at $5/$25 (2.5x cheaper than GPT-6 Astra), same-day /compact 1/1000 rollout cache-wipe bug, and the Valve Peaks case study (~14-person team, Claude Code as main tool). Sources: Simon Willison (Sep 22), Ethan Mollick.
 - 2026-09-04: Added "GPT-6 Astra Competitive Pressure (September 3, 2026)" section — Fable 5.1 leads Artificial Analysis Intelligence Index (66 vs Astra 61), no published Fable ARC-AGI-3 result vs Astra's 99.9%/62.7% harness split, Astra at <half Fable 5 per-task cost on Coding Agent Index. Sources: Simon Willison, Gary Marcus (Sep 3-4).

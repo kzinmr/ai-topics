@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-08-19
+updated: 2026-10-22
 tags:
   - company
   - model
@@ -20,6 +20,7 @@ tags:
   - methodology
 aliases: ["OpenAI Inc."]
 sources:
+  - raw/articles/2026-10-22_openai-cli-official.md
   - raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md
   - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
   - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md
@@ -557,6 +558,44 @@ OpenAI launched a **Bio Bug Bounty** program specifically for GPT-5.5, inviting 
 - **GPT-6 Astra soft release (Sep 3)**: OpenAI released Astra as "GPT-6 Astra," the first broadly deployed model rated **Critical for cybersecurity** under its Preparedness Framework. Details: [[entities/openai-astra#Soft Release as GPT-6 Astra (September 3, 2026)]].
 - **Daybreak for Frontline Defenders ($1B, Sep 3)**: same-day announcement subsidizing frontier cyber capabilities for critical-infrastructure defenders — MS-ISAC pilot, 35+ product "Daybreak Defense Network," $1B targeted for consumption within six months. Analysis: [[concepts/daybreak-for-frontline-defenders]].
 - **Combined reading**: launching a Critical-rated cyber model while announcing a billion-dollar defender subsidy pairs capability escalation with its product-side mitigation — the "defender's window" framing does governance work ahead of regulation.
+
+## October 2026: Official CLI, Google Cloud Distribution, Patch the Planet
+
+**OpenAI CLI (2026-10-22).** OpenAI published `openai/openai-cli`, an official
+first-party CLI for the OpenAI REST API (Apache-2.0, Go ≥1.26, 924 stars at
+ingest, 560 commits). Distributed via `brew install openai/tools/openai` or
+`go install github.com/openai/openai-cli/cmd/openai@latest`, with a
+code-generated API surface (`generated/`, `api_reference/`), an agent-facing
+`AGENTS.md`, GoReleaser + release-please releases, and a deliberately
+conservative update-notice design (max one GitHub-metadata check/day, honours
+`HTTPS_PROXY`/`NO_PROXY`, never auto-installs, `OPENAI_CLI_NO_UPDATE_CHECK=1`
+opt-out). Strategically this moves OpenAI onto the same "CLI as primary agentic
+entry point" surface that Claude Code and Codex CLI occupy — and makes the CLI
+itself a distribution channel that needs the same publish-step hardening
+LiteLLM just failed (see [[events/2026-10-21-litellm-pypi-compromise]]).
+HN: https://news.ycombinator.com/item?id=50191507 (147 points)
+
+**OpenAI models on Google Cloud (2026-10-21).** OpenAI models became available
+through Google Cloud, completing the now-standard frontier-lab multi-cloud
+distribution pattern (OpenAI on AWS Bedrock and Azure, Anthropic on Bedrock and
+Vertex). Distribution breadth, not just model quality, is the enterprise
+acquisition lever. HN: https://news.ycombinator.com/item?id=50180079 (301 points)
+
+**Patch the Planet / PHP2Shell (2026-10-22).** OpenAI's *Patch the Planet*
+program was one of only two parties to discover the PHP2Shell core-PHP RCE
+vulnerabilities, alongside Wiz Research's Atlas stack using Gemini 4 Argon and
+GPT-5.6 Sol. It is one of the strongest production evidence points for
+[[concepts/autonomous-security-agents]]: an AI-led vuln-discovery program
+landing a core-internet bug affecting roughly 70% of the web. See
+[[events/php2shell-php-rce-2026]].
+
+**Distributed biological reasoning (2026-10-21).** With PerturbAI and Scripps
+Research, thousands of GPT-Rosalind-powered agents interpreted existing
+experimental data from millions of mouse brain cells in 32 minutes, connecting
+gene-disruption effects to literature for Alzheimer's/Parkinson's lead
+generation (bioRxiv 10.64898/2026.10.15.759436).
+Source: raw/articles/2026-10-22_openai-distributed-biological-reasoning.md,
+HN: https://news.ycombinator.com/item?id=50180752 (146 points)
 
 ## Related Concepts
 - [[concepts/openai/agents-sdk]] — OpenAI's agent development framework
