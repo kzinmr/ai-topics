@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-10-22] skeleton-enrich-daily: backlog empty (no action)
+
+- Frontmatter scan of `wiki/entities/` + `wiki/concepts/` for `status: skeleton` -> 0 matches. Streak continues (10-17, 10-19, 10-20, 10-21).
+- Snapshot note: [[queries/2026-10-22-skeleton-enrich-empty]].
+
 ## [2026-10-22] dreaming-group | Pattern E saturation (checkpoint 0 articles / 227 raw) — 3 takes + 5 refs + 4 skips
 - Checkpoint `20261022T180025Z`: total_articles=0, recent_raw_articles=227 → filesystem scan via `check_archive_index_absence.py` (117 recent, 2851 indexed URLs).
 - Prior `triage_latest.json` was from consumed 20261020 run (log.md confirms Oct 20 dreaming entries) → overwritten with fresh 12-decision triage (`20261022T181000Z`).
