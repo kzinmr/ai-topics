@@ -1,0 +1,140 @@
+{
+  "archived_at": "2026-10-22T18:16:12.871878+00:00",
+  "triage_run_id": "20261022T181000Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming checkpointは total_articles=0 / recent_raw_articles=227 の飽和シナリオ。06:00 sitemapバッチと11:03 HN系rawのアーカイブ-index欠損リストから未 triage 分を抽出。take候補3件（doubleAI Maxwell=Code Execution Model、Harness Engineering 101ブック、Peec偽統計引用汚染実験）はいずれも trending-topics が明示的に未収録として残した記事。reference候補6件（Omnara, LayerFS, OpenAI分散生物推論, Fireworks Muse Glimmer無償学習, Glean Headless Agent Builder）、skipは Harvey/ElevenLabs/Parallel バッチと本日他パイプライン処理済み分。",
+  "decisions": [
+    {
+      "item_id": "dr-omnara",
+      "source": "dreaming",
+      "source_name": "dreaming-fs-scan",
+      "title": "Omnara: open-source managed agent platform (GitHub README)",
+      "url": "https://github.com/omnara-ai/omnara",
+      "raw_path": "wiki/raw/articles/2026-10-22_omnara-github-readme.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Claude Managed Agents / OpenAI Agents API のセルフホスト代替を自称するOSSマネージドエージェント基盤（19KB README）。concepts/managed-agents.md のセルフホスト代替セクションに追記価値。trending-topics未収録候補リスト記載済み。",
+      "candidate_wiki_path": "concepts/managed-agents.md",
+      "body_excerpt": "<p align=\"center\">\n  <a href=\"https://www.omnara.com#gh-light-mode-only\">\n    <img alt=\"Omnara\" src=\"https://raw.githubusercontent.com/omnara-ai/omnara/main/frontend/apps/web/public/omnara-logo-black.png\" width=\"212\">\n  </a>\n  <a href=\"https://www.omnara.com#gh-dark-mode-only\">\n    <img alt=\"Omnara\""
+    },
+    {
+      "item_id": "dr-layerfs",
+      "source": "dreaming",
+      "source_name": "dreaming-fs-scan",
+      "title": "LayerFS: filesystem for AI coding agents (v1.0.0)",
+      "url": "https://layerfs.ai/",
+      "raw_path": "wiki/raw/articles/2026-10-22_layerfs-filesystem-for-ai-coding-agents.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ AIコーディングエージェント向けレイヤードFS（v1.0.0）。concepts/agent-filesystem-abstraction / sandbox 群と関連する新ツール。trending-topics未収録候補リスト記載済み。単独ページ閾値は微妙なので既存ページ参照が妥当。",
+      "candidate_wiki_path": "concepts/harness-engineering/agent-filesystem-abstraction.md",
+      "body_excerpt": "LayerFS: the filesystem for AI coding agents\nLayer\nFS\nv1.0.0 \n→\nreleases\nDocs\nArch\nArchitecture\nBench\nBenchmarks\nBlog\nDocs\nArchitecture\nBenchmarks\nBlog\nReleases \nv1.0.0\nGitHub\n+1\n+1\n+1\n+1\n+1\n+1\n+1\n+1\n+1\n+1\n+1\n+1\n+1\n+1\nEphemerality: scaling multi-agent development beyond imagination\nEphemeral Workspa"
+    },
+    {
+      "item_id": "dr-openai-bio",
+      "source": "dreaming",
+      "source_name": "dreaming-fs-scan",
+      "title": "OpenAI distributed biological reasoning (GPT-Rosalind x PerturbAI x Scripps)",
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+      "raw_path": "wiki/raw/articles/2026-10-22_openai-distributed-biological-reasoning.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ GPT-Rosalind搭载の数千エージェントがマウス脳細胞数百万分のCRISPRアトラスを32分で解析（人間なら数ヶ月〜1年）。「distributed biological reasoning」概念は concepts/openai/ai-for-alzheimers.md の続報として追記可能。",
+      "candidate_wiki_path": "concepts/openai/ai-for-alzheimers.md",
+      "body_excerpt": "What if scientists could uncover new clues about Alzheimer’s and Parkinson’s in minutes instead of months? Working together, OpenAI, [PerturbAI⁠(opens in a new window)](http://perturb.ai/), and [Scripps Research⁠(opens in a new window)](http://scripps.edu/) used [thousands of AI agents powered by GP"
+    },
+    {
+      "item_id": "dr-fireworks-muse",
+      "source": "dreaming",
+      "source_name": "dreaming-fs-scan",
+      "title": "Fireworks: train Muse Glimmer for free",
+      "url": "https://fireworks.ai/blog/train-muse-glimmer-for-free",
+      "raw_path": "wiki/raw/articles/2026-10-22_fireworks-ai_train-muse-glimmer-for-free.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Muse Glimmer無償ファインチューニング提供の告知（06:00 sitemap, 未アーカイブ）。entities/fireworks-ai.md と entities/muse-glimmer.md に本告知の記録なし（grep ゼロ）。ただし481Bの短文なので簡潔な一文追記で十分。",
+      "candidate_wiki_path": "entities/fireworks-ai.md",
+      "body_excerpt": "# train-muse-glimmer-for-free\n**Source**: [https://fireworks.ai/blog/train-muse-glimmer-for-free](https://fireworks.ai/blog/train-muse-glimmer-for-free)\nScrape failed: brotli: decoder process called with data when 'can_accept_more_data()' is False"
+    },
+    {
+      "item_id": "dr-glean-headless",
+      "source": "dreaming",
+      "source_name": "dreaming-fs-scan",
+      "title": "Glean Headless Agent Builder",
+      "url": "https://www.glean.com/fr/blog/glean-headless-agent-builder",
+      "raw_path": "wiki/raw/articles/2026-10-22_glean_glean-headless-agent-builder.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Glean のヘッドレス・エージェントビルダー発表（9.6KB, 06:00 sitemap, 未アーカイブ）。entities/glean.md に headless agent builder の記録なし。企業AIエージェント展開のヘッドレス化事例として追記価値。",
+      "candidate_wiki_path": "entities/glean.md",
+      "body_excerpt": "# Création d'agents headless : créez des Glean Agents en code\n**Source**: [https://www.glean.com/fr/blog/glean-headless-agent-builder](https://www.glean.com/fr/blog/glean-headless-agent-builder)\nProduit\nVue d'ensemble de la plateforme\nDécouvrez comment fonctionne Glean.\nConçu pour l’IA en entreprise"
+    },
+    {
+      "item_id": "dr-elevenlabs-batch",
+      "source": "dreaming",
+      "source_name": "dreaming-fs-scan",
+      "title": "ElevenLabs 06:00 sitemap batch (4 files: realtime-translation, webinar-recap, how-to-integrate-tts, how-to-transcribe-podcast)",
+      "url": "https://elevenlabs.io/blog/",
+      "raw_path": "wiki/raw/articles/2026-10-22_elevenlabs_* (4 files)",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ ElevenLabsマーケティング/ハウツー記事4本（realtime translation, webinar recap, TTS統合ガイド, ポッドキャスト文字起こしガイド）。entities/elevenlabs.md がTTS/リアルタイム系は既に厚くカバー（index 279行目の実記載）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dr-parallel",
+      "source": "dreaming",
+      "source_name": "dreaming-fs-scan",
+      "title": "Parallel Web Systems: See the whole picture (456B stub)",
+      "url": "https://parallel.ai/blog/see-the-whole-picture",
+      "raw_path": "wiki/raw/articles/2026-10-22_parallel-web-systems_see-the-whole-picture.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 456バイトのリンクstub相当。本文なし。entities/parallel-web-systems.md 既存。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# see-the-whole-picture\n**Source**: [https://parallel.ai/blog/see-the-whole-picture](https://parallel.ai/blog/see-the-whole-picture)\nScrape failed: brotli: decoder process called with data when 'can_accept_more_data()' is False"
+    },
+    {
+      "item_id": "dr-today-dupes",
+      "source": "dreaming",
+      "source_name": "dreaming-fs-scan",
+      "title": "Today's trending-topics/hot-post already-committed items (Claude Duet, OpenAI CLI, LiteLLM 1.107.0 compromise, PHP2Shell cluster, xeiaso CVE shitposts, pluralistic, idiallo, nesbitt trust stores, simonwillison trio, Daring Fireball iPhone Duo, non-AI blogs)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ trending-topics(db16505f)が LiteLLM PyPI compromise(events/2026-10-21-litellm-pypi-compromise)+Claude Duet+OpenAI CLI を本日コミット済み。hot-post(fbbec018)が Maxwell+LayerFS の記録済み。10:01 blog-ingestバッチ(a3600200)は PHP2Shell/xeiaso/simonwillison/pluralistic/krebs/idiallo を処理済み。dfarq/jim-nielsen/johndcook/devblogs/creative-computing は非AI。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch skip — already processed by trending-topics / hot-post / blog-ingest today, or non-AI)"
+    },
+    {
+      "item_id": "dr-maxwell",
+      "url": "https://heymaxwell.ai/",
+      "title": "Maxwell: The first Code Execution Model (doubleAI)",
+      "raw_path": "wiki/raw/articles/2026-10-22_doubleai-maxwell-code-execution-model.md",
+      "recommended_action": "take",
+      "reason_ja": "★★★★☆ doubleAIの「Code Execution Model」マニフェスト（33KB）。コード↔ハードウェア実行モデルとしてのエージェント設計を主張する新設コンセプト。trending-topicsレポートが明示的に未収録候補として記録済み（log.md L33）。findで concepts/entities 検索ゼロ。",
+      "body_excerpt": "Maxwell: The first Code Execution Model, by doubleAI. All Thinking Things. Proofs, Mathematics, and Code. Maxwell: An Agent for the Machine."
+    },
+    {
+      "item_id": "dr-harness101",
+      "url": "https://github.com/IsuruMaduranga/harness-engineering-101",
+      "title": "Harness Engineering 101 (16-chapter book, IsuruMaduranga)",
+      "raw_path": "wiki/raw/articles/2026-10-22_harness-engineering-101-readme.md",
+      "recommended_action": "take",
+      "reason_ja": "★★★★☆ 「LLMは脳、ハーネスは身体」を標榜する16章構成のharness engineering入門ブック（v1.1, 2026-10）。既存 concepts/harness-engineering/ 群の入門アンカーとして有用。trending-topicsも未収録候補として列挙済み。",
+      "body_excerpt": "Harness Engineering 101 — The LLM is the brain. The harness is the body. Version 1.1, October 2026. I drafted every chapter myself, from what I learned building WSO2 MI Copilot, WSO2 BI Copilot and One Code."
+    },
+    {
+      "item_id": "dr-peec",
+      "url": "https://peec.ai/blog/publish-fake-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+      "title": "Peec: Publish fake stats, get cited (50K fake-stat LLM citation experiment)",
+      "raw_path": "wiki/raw/articles/2026-10-22_peec-publish-fake-stats-get-cited.md",
+      "recommended_action": "take",
+      "reason_ja": "★★★★☆ GPT-4.1で生成した架空統計5万ページ（stateglobe.com, 約$50）がChatGPTに引用され続け、Shopify/DHL等330参照ドメイン・学術論文・銀行のアナリストレポートまで汚染したGEO/LLM引用シーディング実験。LLM検索汚染の一次証拠として新コンセプト相当。trending-topicsも未収録記録あり。",
+      "body_excerpt": "About 7 months ago, I launched a website with 50,000 statistics. Every one of them was fake. ChatGPT hasn't deindexed it — 10,000+ AI sessions, 330 referring domains including Shopify, Bluehost, DHL. Made-up numbers ended up in an academic paper and a bank's investment research."
+    },
+    {
+      "item_id": "dr-harvey-batch",
+      "url": "https://www.harvey.ai/blog/",
+      "title": "Harvey 06:00 sitemap batch (5 files: clause-library, connector-library, frontier-marketing-org, mid-sized-firms, author page)",
+      "raw_path": "wiki/raw/articles/2026-10-22_harvey_* (5 files)",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Harvey製品ブログ×4（clause library / connector library / frontier marketing org / mid-sized firms adoption）+ 著者プロファイルページ1。entities/harvey.md が既存で製品投稿は随時蓄積済み。著者ページは本文ゼロ。バッチスキップ。",
+      "body_excerpt": "harvey.ai product blog posts + author profile page (dominic-ferullo)."
+    }
+  ]
+}

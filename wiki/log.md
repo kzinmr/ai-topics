@@ -1,3 +1,22 @@
+# Wiki Log
+
+## [2026-10-22] dreaming-group | Pattern E saturation (checkpoint 0 articles / 227 raw) — 3 takes + 5 refs + 4 skips
+- Checkpoint `20261022T180025Z`: total_articles=0, recent_raw_articles=227 → filesystem scan via `check_archive_index_absence.py` (117 recent, 2851 indexed URLs).
+- Prior `triage_latest.json` was from consumed 20261020 run (log.md confirms Oct 20 dreaming entries) → overwritten with fresh 12-decision triage (`20261022T181000Z`).
+- **Take candidates (downstream dreaming-wiki-ingest to execute)** — all three explicitly flagged "uncovered, left for next ingest" by today's trending-topics (log.md L33):
+  - `concepts/code-execution-model.md` (new) ← doubleAI Maxwell manifesto (33KB, heymaxwell.ai)
+  - `concepts/harness-engineering/harness-engineering-101.md` (new) ← IsuruMaduranga 16-chapter book README, v1.1 Oct 2026
+  - `concepts/llm-citation-seeding.md` (new) ← Peec 50K-fake-stats GEO contamination experiment ($50 site, cited by ChatGPT/Shopify/DHL/academic paper)
+- **Reference candidates (verified genuine gaps via grep of log.md/index.md)**:
+  - `concepts/managed-agents.md` ← Omnara open-source managed agent platform
+  - `concepts/harness-engineering/agent-filesystem-abstraction.md` ← LayerFS v1.0.0
+  - `concepts/openai/ai-for-alzheimers.md` ← OpenAI distributed biological reasoning (GPT-Rosalind x PerturbAI x Scripps, 32-min CRISPR atlas analysis)
+  - `entities/fireworks-ai.md` ← train Muse Glimmer for free (481B stub; one-liner)
+  - `entities/glean.md` ← Glean Headless Agent Builder (9.6KB, absent from entity page)
+- **Skips**: Harvey ×5 sitemap batch (entity accumulates product posts; author page empty), ElevenLabs ×4 marketing/how-to (entity already covers realtime/TTS), Parallel 456B stub, today's trending-topics/hot-post/blog-ingest duplicates (LiteLLM compromise `events/2026-10-21-litellm-pypi-compromise`, Claude Duet, OpenAI CLI, PHP2Shell, xeiaso CVEs, non-AI blogs).
+- Archive: 10 skip/reference decisions → `wiki/raw/archived/triage/dreaming/2026-10-22_20261022T181000Z.json`, total_archive_urls 2858.
+
+
 ## [2026-10-22] health-fix | index header count recount (concepts/queries/total)
 
 - Verified all Phase 1 corruption classes clean: pipe_prefix 0, line_number_prefix 0, triple_bracket 0, space_prefix 0; `validate_index.py` exit 0 (3,316 lines).
@@ -18,7 +37,6 @@
 
 ---
 
-# Wiki Log
 
 ## [2026-10-22] trending-topics | LiteLLM 1.107.0 PyPI compromise + Claude Duet + OpenAI CLI
 
