@@ -50,6 +50,17 @@ failed JSON render; recovered from checkpoint and executed the full downstream.
 - `git push` alone still succeeded — the branch was already ahead; no rebase needed.
 - Rule: stage only `wiki/`; never commit unrelated config/skill changes; push directly
   when pull --rebase fails on pre-existing dirt.
+- **Re-validated 2026-10-20 (single-parent run, no wiki subagents)**: same block.
+  `git status --short` showed sibling subagents' *unstaged* `config/hermes/skills/**`
+  edits plus a brand-new `??` untracked skill reference file that appeared mid-session —
+  siblings were writing skill files **while this ingest ran**. Do NOT `git stash` in that
+  case: stashing races with the sibling writers and can clobber their work. Correct move
+  (worked twice now): `git add wiki/` only → commit (pre-commit hooks pass) → `git push`
+  directly. Only rebase if push is actually rejected as behind; do not pre-emptively
+  stash just to make `git pull --rebase` clean.
+- Distinction from Pitfall 1: Pitfall 1 is a *subagent* committing early (sweeps
+  siblings' log.md); Pitfall 3 is the *parent* blocked by siblings' uncommitted/untracked
+  non-wiki changes. Both resolve with targeted `git add wiki/` + direct push.
 
 ## Verification checklist after parallel enrichment
 
