@@ -1,3 +1,13 @@
+## [2026-10-22] health-fix | index header count recount (concepts/queries/total)
+
+- Verified all Phase 1 corruption classes clean: pipe_prefix 0, line_number_prefix 0, triple_bracket 0, space_prefix 0; `validate_index.py` exit 0 (3,316 lines).
+- Orphan report (2 entries, both `concepts/gpt/_archive/*`) = intentional archived content per wiki-graph-health policy — no index registration, no action.
+- Top-level not-indexed scan: 0 real gaps (nested subdirectory pages served by _index hubs, by design).
+- Corrected stale index.md header counts against filesystem: Concepts 2220→2202, Queries 39→40, Total pages 3286→3270 (Entities 952 and Comparisons 35 already accurate).
+- Residual (report-only, stable): 278 empty wikilinks (0 auto-fixable), 6,693 unprocessed raw articles, 2,934 stale pages.
+
+---
+
 ## [2026-10-22] watchdog | auto-fix — namespace wikilinks (87) + archive 2 WIP snapshots
 
 - Verified index.md clean: 0 pipe/line-number/triple-bracket/space-prefix corruption; `validate_index.py` exit 0 (3,316 lines); section counts consistent (Entities 952/953, Concepts 2220, header Total 3286).
