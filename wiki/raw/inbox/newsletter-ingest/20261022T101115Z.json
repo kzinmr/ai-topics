@@ -1,0 +1,114 @@
+{
+  "ok": true,
+  "run_id": "20261022T101115Z",
+  "collected_at": "2026-10-22T10:11:15.852261+00:00",
+  "triaged_at": "2026-10-22T10:15:00+00:00",
+  "pipeline": "newsletter-triage",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "archive_path": "/opt/data/.hermes/cron/data/newsletter/newsletter_20261022T101115Z.json",
+  "summary": {
+    "processed_count": 4,
+    "by_importance": {
+      "critical": 0,
+      "high": 4,
+      "low": 0
+    },
+    "notes": "全4ニュースレターとも AI/LLM Agent wiki 中核領域に直結する高シグナル。ただし checkpoint/raw ダイジェストは Substack/beehiiv のトラッキング・リダイレクト URL のみで、実記事 URL と本文は含まれない。raw ファイルは newsletter-wiki-ingest が解決する前提で、メールメタ（subject/date/source）のみで分類した。"
+  },
+  "classifications": [
+    {
+      "message_id": "<20261021130419.3.d3bae1d0f9fa7b68@mg-d0.substack.com>",
+      "source_label": "uid=825",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-21-claude-mods-flipping-the-harness-inside-out.md",
+      "subject": "Claude Mods: Flipping the Harness Inside Out",
+      "date": "2026-10-21",
+      "source": "swyx / Latent Space (Substack, publication_id=1084089, post_id=221460073)",
+      "canonical_url": "https://www.latent.space/p/claude-mods",
+      "importance": "high",
+      "newsjacking_score": 4,
+      "ai_relevance": "high",
+      "wiki_relevant": true,
+      "tags": ["ai-agents", "agent-harness", "claude-code", "coding-agents", "harness-design", "anthropic", "swyx"],
+      "why": "『Harness を内側から裏返す』= Claude Mods という harness 改造の主張は contrarian/pattern-interrupt が強い。agent harness research / coding agents 中核テーマで、harness-design 概念ページと claude-code エンティティの両方に効く。",
+      "action": "ingest",
+      "suggested_targets": [
+        "concepts/agent-harness.md (または agent-harness-research 配下)",
+        "entities/claude-code.md (更新)",
+        "concepts/harness-design.md (新規候補 — SCHEMA tag 検証要)"
+      ]
+    },
+    {
+      "message_id": "<20261021173438.3.87200146723abf2a@mg-d1.substack.com>",
+      "source_label": "uid=826",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-21-the-huawei-deepseek-symbiosis.md",
+      "subject": "The Huawei-DeepSeek Symbiosis",
+      "date": "2026-10-21",
+      "source": "SemiAnalysis (Substack, publication_id=6349492, post_id=218361806)",
+      "canonical_url": "https://www.semianalysis.com/p/huawei-deepseek",
+      "importance": "high",
+      "newsjacking_score": 4,
+      "ai_relevance": "high",
+      "wiki_relevant": true,
+      "tags": ["huawei", "deepseek", "china-ai", "inference-infrastructure", "training-infrastructure", "semiconductors", "geopolitics", "ascend"],
+      "why": "SemiAnalysis による Huawei昇騰 × DeepSeek の共生（チップ+モデルの垂直統合）分析は、中国 AI インフラ/地政学 AI の最重要スレッド。推論/訓練インフラと open-source AI の交点で wiki 価値が高い。",
+      "action": "ingest",
+      "suggested_targets": [
+        "entities/huawei.md (更新/新規)",
+        "entities/deepseek.md (更新)",
+        "concepts/china-ai-stack.md (更新/新規)",
+        "entities/semianalysis.md (更新)"
+      ]
+    },
+    {
+      "message_id": "<20261021.190853.3d22c071@mta25>",
+      "source_label": "uid=827",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-21-nvidia-pitches-europe-an-ai-factory-in-a-box.md",
+      "subject": "📦 Nvidia Pitches Europe an AI Factory-in-a-Box",
+      "date": "2026-10-21",
+      "source": "beehiiv newsletter (link.mail.beehiiv.com tracking links)",
+      "canonical_url": "UNRESOLVED — beehiiv tracking links. newsletter-wiki-ingest が 1リンクを curl -sL -w '%{url_effective}' で解決してから判定（pitfall #10: 全件403と決めつけない）。",
+      "importance": "high",
+      "newsjacking_score": 3,
+      "ai_relevance": "high",
+      "wiki_relevant": true,
+      "tags": ["nvidia", "ai-factory", "inference-infrastructure", "data-centers", "sovereign-ai", "europe", "gpu"],
+      "why": "Nvidia の欧州向け『AI Factory-in-a-Box』（主権 AI / ソリューションパッケージ）は AI インフラ市場動向として関連。SemiAnalysis の Huawei 記事と対照になる米中欧の AI 供給チェーン図式を作れる。",
+      "action": "ingest",
+      "suggested_targets": [
+        "entities/nvidia.md (更新)",
+        "concepts/ai-factory.md (更新/新規)",
+        "concepts/sovereign-ai.md (新規候補 — SCHEMA tag 検証要)"
+      ]
+    },
+    {
+      "message_id": "<20261022074245.3.3bfda4147cdec95b@mg-d0.substack.com>",
+      "source_label": "uid=828",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-22-ainews-openai-s-patch-the-planet-program-is-1-of-2-parties-to-discover-php2shell.md",
+      "subject": "[AINews] OpenAI's Patch the Planet program is 1 of 2 parties to discover PHP2Shell vulnerabilities in core PHP",
+      "date": "2026-10-22",
+      "source": "swyx / AI News (Substack, publication_id=1084089, post_id=221593659)",
+      "canonical_url": "https://www.latent.space/p/ainews-openais-patch-the-planet-program",
+      "importance": "high",
+      "newsjacking_score": 4,
+      "ai_relevance": "high",
+      "wiki_relevant": true,
+      "tags": ["openai", "ai-safety", "ai-security", "vulnerability-discovery", "ai-agents", "patch-the-planet", "security-research"],
+      "why": "OpenAI『Patch the Planet』プログラムが core PHP の PHP2Shell 脆弱性を発見（2者のうち1者）= AI による自律的セキュリティ研究の実運用事例。AI × セキュリティ / 脆弱性発見の重要データポイント。swyx の AINews は毎日配信なので本文全体が重複しやすい点に注意（1トピックに絞って ingest）。",
+      "action": "ingest",
+      "suggested_targets": [
+        "concepts/ai-driven-security-research.md (新規候補 — SCHEMA tag 検証要)",
+        "entities/openai.md (更新)",
+        "concepts/ai-safety.md (更新)"
+      ]
+    }
+  ],
+  "downstream_handoff": {
+    "next_stage": "newsletter-wiki-ingest",
+    "instructions": [
+      "各 raw/newsletters 内の Substack redirect URL は web_extract が素で解決できる。beehiiv 分はまず1リンクを curl -sL -w '%{url_effective}' で解決し、403か否かを確認してから batch 判定（pitfall #10）。",
+      "新規 concepts ページ作成前に SCHEMA.md の tag を逐一検証（harness-design / sovereign-ai / ai-driven-security-research は新規候補 → 欠損なら SCHEMA patch 先行）。",
+      "AINews は日次配信で本文が重複しやすい。Patch the Planet / PHP2Shell の1トピックに絞り、AINews 全体のリンク.dump を wiki に持ち込まない。",
+      "既存エンティティ（huawei, deepseek, nvidia, openai, claude-code, semianalysis）は find で実ファイル名確認後に patch 追記。上書き禁止。"
+    ]
+  }
+}
