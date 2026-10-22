@@ -7,6 +7,7 @@ tags:
   - query
   - knowledge-management
 sources: []
+status: archived
 ---
 
 # Wiki changes — 2026-10-11 (uncommitted working tree)

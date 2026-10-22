@@ -274,7 +274,7 @@ SWE-Bench Verified was originally created as part of OpenAI's **Preparedness Fra
 ## Related Pages
 
 - [[concepts/evaluation/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
-- [[concepts/frontier-swe-benchmark|FrontierSWE Benchmark]] — Ultra-long-horizon coding benchmark (20 hours per task)
+- [[concepts/ai-benchmarks/frontier-swe-benchmark|FrontierSWE Benchmark]] — Ultra-long-horizon coding benchmark (20 hours per task)
 - [[concepts/harness-engineering|Harness Engineering]] — How execution environments shape agent performance
 - [[concepts/hle|Humanity's Last Exam]] — Another benchmark experiencing rapid score inflation
 

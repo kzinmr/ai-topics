@@ -136,13 +136,13 @@ See [[entities/shopify|Shopify entity page]] for full breakdown.
 ### 3. Minimum Viable AI Governance- Purpose-driven agent orchestration
 - Explicit structure over agent sprawl
 - Organizational memory as critical infrastructure
-- Connects to [[concepts/security-and-governance/agent-governance]] and [[entities/reflexive-ai]]
+- Connects to [[concepts/security-and-governance/agent-governance]] and [[concepts/reflexive-ai]]
 
 
 ## Connection to Other Trends
 The solo founder stack emerges from the intersection of:
 - [[concepts/nvidia-dynamo]] making agentic inference affordable
-- [[entities/reflexive-ai]] normalizing AI-as-baseline in organizations
+- [[concepts/reflexive-ai]] normalizing AI-as-baseline in organizations
 - [[concepts/experience-is-a-tax]] reducing the advantage of senior teams
 - [[concepts/managed-agents]] (Telegram, Claude) lowering the barrier to entry
 
@@ -152,7 +152,7 @@ The solo founder stack emerges from the intersection of:
 - [[concepts/vibe-ceo]]
 - [[concepts/context-engineering|Context Engineering]]
 - [[concepts/security-and-governance/agent-governance]]
-- [[entities/reflexive-ai]]
+- [[concepts/reflexive-ai]]
 - [[concepts/experience-is-a-tax]]
 - [[concepts/one-person-unicorn]]
 

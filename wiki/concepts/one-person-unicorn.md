@@ -24,7 +24,7 @@ A billion-dollar company founded and operated by a single person, enabled by AI 
 2. **[[concepts/context-engineering|Context Engineering]]:** Making AI agents reliable and capable
 3. **[[concepts/nvidia-dynamo]]:** Affordable agentic inference infrastructure
 4. **[[concepts/vibe-ceo]]:** New management paradigm for agent orchestration
-5. **[[entities/reflexive-ai]]:** Cultural normalization of AI-as-baseline
+5. **[[concepts/reflexive-ai]]:** Cultural normalization of AI-as-baseline
 
 ## Related
 

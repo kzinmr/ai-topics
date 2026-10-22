@@ -51,7 +51,7 @@ Reflexive AI connects to:
 - [[concepts/ai-organization]] — represents a shift from hierarchical to intelligence-driven orgs
 
 ## Related
-- [[entities/reflexive-ai]]
+- [[concepts/reflexive-ai]]
 
 - [[concepts/experience-is-a-tax]]
 - [[entities/solo-founder-stack]]
@@ -102,7 +102,7 @@ Reflexive AI Usage represents a **new paradigm** for AI adoption in large enterp
 - AI literacy as organizational culture
 
 
-## Related Concepts- [[entities/reflexive-ai]]
+## Related Concepts- [[concepts/reflexive-ai]]
 
 - [Company AI Pilled](company-ai-pilled.md) — Organizational AI-driven transformation framework
 - [Solo Founder Stack](solo-founder-stack.md) — Individual vs. organizational AI usage comparison

@@ -80,7 +80,7 @@ sources: []
 - [[gaia-benchmark]] — 19 references
 - [[reinforcement-learning]] — 18 references
 - [[concepts/ai-safety]] — 17 references
-- [[entities/sglang]] — 17 references
+- [[concepts/inference/sglang]] — 17 references
 - [[concepts/agent-evaluation]] — 16 references
 - [[concepts/agent-memory]] — 15 references
 - [[hal-leaderboard]] — 15 references

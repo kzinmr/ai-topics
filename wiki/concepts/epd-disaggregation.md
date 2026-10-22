@@ -16,13 +16,13 @@ updated: 2026-04-27
 | Field | Value |
 |-------|-------|
 | **Type** | Inference Architecture / VLM Serving |
-| **Related To** | [[entities/sglang]], [[entities/lmsys-org]], Vision-Language Models |
+| **Related To** | [[concepts/inference/sglang]], [[entities/lmsys-org]], Vision-Language Models |
 | **Introduced** | January 2026 |
 | **Source** | LMSYS Blog "EPD Disaggregation: Elastic Encoder Scaling for VLMs in SGLang" |
 
 ## Overview
 
-**EPD (Encoder-Prefill-Decode) Disaggregation** is a three-tier serving architecture for Vision-Language Models (VLMs) in [[entities/sglang]]. It separates vision encoding from language processing, enabling independent scaling of encoder servers without affecting language model deployment.
+**EPD (Encoder-Prefill-Decode) Disaggregation** is a three-tier serving architecture for Vision-Language Models (VLMs) in [[concepts/inference/sglang]]. It separates vision encoding from language processing, enabling independent scaling of encoder servers without affecting language model deployment.
 
 Developed by rednote (Xiaohongshu), Alibaba Cloud Computing, and AntGroup SCT.
 

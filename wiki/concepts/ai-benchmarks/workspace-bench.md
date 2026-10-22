@@ -49,7 +49,7 @@ The 12% gap between best AI and human, and 33.3% gap between average AI and huma
 ## Key Findings
 
 ### Harness Design Matters
-The architecture of the agent harness (how it interacts with the environment) is a major factor in cost, efficiency, and final success rates — consistent with findings from [[concepts/frontier-swe-benchmark]].
+The architecture of the agent harness (how it interacts with the environment) is a major factor in cost, efficiency, and final success rates — consistent with findings from [[concepts/ai-benchmarks/frontier-swe-benchmark]].
 
 ### Scale Is the Differentiator
 Existing benchmarks fail to capture real-world complexity because they lack the "large-scale file dependencies" present here. The 74 file types and 20GB workspace create retrieval challenges that single-file benchmarks don't test.
@@ -75,18 +75,18 @@ Uses a rubric-based evaluation framework with 7,399 rubrics covering both final 
 | Benchmark | Focus | Scale |
 |-----------|-------|-------|
 | [[concepts/ai-benchmarks/swe-bench]] | PR-level code fixes | Small scope |
-| [[concepts/frontier-swe-benchmark]] | Ultra-long-horizon engineering (20h) | 17 difficult tasks |
+| [[concepts/ai-benchmarks/frontier-swe-benchmark]] | Ultra-long-horizon engineering (20h) | 17 difficult tasks |
 | **Workspace-Bench** | Multi-file workspace navigation | 20,476 files, 74 types |
 | [[concepts/kernelbench]] | Kernel-level optimization | Specialized |
 | [[concepts/agent-survival-benchmark]] | Human-normalized agent capability | Diverse tasks |
 
 ## Key Significance
 
-Workspace-Bench shifts evaluation focus from "can the model write code" to "can the agent navigate and reason across a realistic professional environment." The 74-file-type heterogeneity and explicit dependency graphs make it the benchmark that most closely mirrors real knowledge-worker environments. Combined with [[concepts/frontier-swe-benchmark]]'s ultra-long-horizon perspective, these benchmarks together define the 2026 frontier of coding agent evaluation.
+Workspace-Bench shifts evaluation focus from "can the model write code" to "can the agent navigate and reason across a realistic professional environment." The 74-file-type heterogeneity and explicit dependency graphs make it the benchmark that most closely mirrors real knowledge-worker environments. Combined with [[concepts/ai-benchmarks/frontier-swe-benchmark]]'s ultra-long-horizon perspective, these benchmarks together define the 2026 frontier of coding agent evaluation.
 
 ## See Also
 
-- [[concepts/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark (20h tasks)
+- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark (20h tasks)
 - [[concepts/ai-benchmarks/swe-bench]] — Standard PR-level coding benchmark
 - [[concepts/harness-engineering]] — Agent execution environment design
 - [[concepts/evaluation/ai-evals]] — AI evaluation landscape

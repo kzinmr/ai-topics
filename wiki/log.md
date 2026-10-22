@@ -1,3 +1,13 @@
+## [2026-10-22] watchdog | auto-fix — namespace wikilinks (87) + archive 2 WIP snapshots
+
+- Verified index.md clean: 0 pipe/line-number/triple-bracket/space-prefix corruption; `validate_index.py` exit 0 (3,316 lines); section counts consistent (Entities 952/953, Concepts 2220, header Total 3286).
+- Auto-fixed 87 cross-namespace broken wikilinks across 26 files (pure renames, targets verified on disk): `[[entities/reflexive-ai]]` → `[[concepts/reflexive-ai]]` (34), `[[entities/sglang]]` → `[[concepts/inference/sglang]]` (33), `[[concepts/frontier-swe-benchmark]]` → `[[concepts/ai-benchmarks/frontier-swe-benchmark]]` (20).
+- Archived 2 stale WIP snapshot query pages (`queries/2026-10-04-uncommitted-wip-snapshot-query.md`, `queries/2026-10-11-uncommitted-wip-snapshot.md`) via `status: archived` frontmatter (recommended by 2026-10-16 graph analysis; files retained).
+- Pipeline status: blog-triage, blog-wiki-ingest, newsletter-wiki-ingest all failed today with transient `HTTP 503: Local LLM server is busy` — self-heals on tomorrow's runs; no checkpoint corruption (blog-ingest/newsletter-ingest/newsletter-triage ok).
+- Reported only (needs human): ~363 bare-link slug kinds (e.g. `agent-evaluation` ×26, `grpo` ×14, `concepts/rag` ×14, `concepts/gemini` ×24) and duplicate-stub consolidation from 2026-10-16 graph report — exceed watchdog auto-fix scope.
+
+---
+
 # Wiki Log
 
 ## [2026-10-22] trending-topics | LiteLLM 1.107.0 PyPI compromise + Claude Duet + OpenAI CLI

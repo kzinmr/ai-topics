@@ -37,11 +37,11 @@ sources:
 
 ## Connection to Broader Trends
 
-Khe Hy's framework connects to [[entities/reflexive-ai]] (Shopify's approach) and [[concepts/experience-is-a-tax]] — both address organizational resistance to AI adoption.
+Khe Hy's framework connects to [[concepts/reflexive-ai]] (Shopify's approach) and [[concepts/experience-is-a-tax]] — both address organizational resistance to AI adoption.
 
 ## Related
 
-- [[entities/reflexive-ai]]
+- [[concepts/reflexive-ai]]
 - [[concepts/experience-is-a-tax]]
 - [[entities/openclaw]]
 - [[entities/claude-code]]

@@ -7,6 +7,7 @@ tags:
   - query
   - knowledge-management
 sources: []
+status: archived
 ---
 
 # Wiki changes — 2026-10-04 (uncommitted working tree)
@@ -189,7 +190,7 @@ index e3cb21fe..3e97f782 100644
  
  - [[concepts/evaluation/eval-awareness-browsecomp]] — Eval awareness and benchmark contamination
  - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench benchmark
--- [[concepts/frontier-swe-benchmark]] — Frontier SWE benchmark
+-- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Frontier SWE benchmark
 +- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Frontier SWE benchmark
  - [[concepts/coding-agents/infrastructure-noise-agent-evals]] — Infrastructure noise in agent evals
 diff --git a/wiki/concepts/ai-benchmarks/arc-agi-1.md b/wiki/concepts/ai-benchmarks/arc-agi-1.md
@@ -272,12 +273,12 @@ index ea0ca588..3236afcc 100644
  [deepswe-benchmark] ──embodies──→ [concept: jagged-intelligence]
  ```
  
--This section informs graph queries: authored by [[entities/datacurve]] and [[entities/serena-ge]], directly contrasts with [[concepts/ai-benchmarks/swe-bench]], relates to [[concepts/frontier-swe-benchmark]] and [[concepts/evaluation/evals-for-ai-agents]].
+-This section informs graph queries: authored by [[entities/datacurve]] and [[entities/serena-ge]], directly contrasts with [[concepts/ai-benchmarks/swe-bench]], relates to [[concepts/ai-benchmarks/frontier-swe-benchmark]] and [[concepts/evaluation/evals-for-ai-agents]].
 +This section informs graph queries: authored by [[entities/datacurve]] and [[entities/serena-ge]], directly contrasts with [[concepts/ai-benchmarks/swe-bench]], relates to [[concepts/ai-benchmarks/frontier-swe-benchmark]] and [[concepts/evaluation/evals-for-ai-agents]].
  
  ## Related Concepts
  - [[concepts/ai-benchmarks/swe-bench]] — The benchmark DeepSWE critiques and improves upon
--- [[concepts/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark by Proximal
+-- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark by Proximal
 +- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark by Proximal
  - [[concepts/evaluation/evals-for-ai-agents]] — Broader agent evaluation framework
 -- [[concepts/swe-bench-agent-scaffolding]] — Agent harness design for SWE-bench tasks
@@ -294,7 +295,7 @@ index 25762759..184980d2 100644
  
  - [[concepts/evaluation/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
 -- [[concepts/swe-bench|SWE-Bench]] — Another agent-based evaluation, focused on software engineering bug fixes
--- [[concepts/frontier-swe-benchmark|FrontierSWE]] — Ultra-long-horizon coding benchmark (20 hours per task)
+-- [[concepts/ai-benchmarks/frontier-swe-benchmark|FrontierSWE]] — Ultra-long-horizon coding benchmark (20 hours per task)
 +- [[concepts/ai-benchmarks/swe-bench|SWE-Bench]] — Another agent-based evaluation, focused on software engineering bug fixes
 +- [[concepts/ai-benchmarks/frontier-swe-benchmark|FrontierSWE]] — Ultra-long-horizon coding benchmark (20 hours per task)
  
@@ -448,7 +449,7 @@ index 8424e602..5b33dba2 100644
  ## See Also
  
  - [[concepts/ai-benchmarks/swe-bench]] — SWE-bench benchmark overview
--- [[concepts/frontier-swe-benchmark]] — Frontier SWE benchmark
+-- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Frontier SWE benchmark
 +- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Frontier SWE benchmark
  - [[concepts/agent-harnesses]] — Agent harness comparison
  - [[concepts/building-effective-agents]] — Building effective agents (Anthropic)
@@ -470,7 +471,7 @@ index 84895d84..c9311143 100644
  ## Related Pages
  
  - [[concepts/evaluation/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
--- [[concepts/frontier-swe-benchmark|FrontierSWE Benchmark]] — Ultra-long-horizon coding benchmark (20 hours per task)
+-- [[concepts/ai-benchmarks/frontier-swe-benchmark|FrontierSWE Benchmark]] — Ultra-long-horizon coding benchmark (20 hours per task)
 +- [[concepts/ai-benchmarks/frontier-swe-benchmark|FrontierSWE Benchmark]] — Ultra-long-horizon coding benchmark (20 hours per task)
  - [[concepts/harness-engineering|Harness Engineering]] — How execution environments shape agent performance
 -- [[concepts/hle|Humanity's Last Exam]] — Another benchmark experiencing rapid score inflation
@@ -589,7 +590,7 @@ index 11771121..dbc9ebb1 100644
  ## Key Findings
  
  ### Harness Design Matters
--The architecture of the agent harness (how it interacts with the environment) is a major factor in cost, efficiency, and final success rates — consistent with findings from [[concepts/frontier-swe-benchmark]].
+-The architecture of the agent harness (how it interacts with the environment) is a major factor in cost, efficiency, and final success rates — consistent with findings from [[concepts/ai-benchmarks/frontier-swe-benchmark]].
 +The architecture of the agent harness (how it interacts with the environment) is a major factor in cost, efficiency, and final success rates — consistent with findings from [[concepts/ai-benchmarks/frontier-swe-benchmark]].
  
  ### Scale Is the Differentiator
@@ -598,7 +599,7 @@ index 11771121..dbc9ebb1 100644
  | Benchmark | Focus | Scale |
  |-----------|-------|-------|
  | [[concepts/ai-benchmarks/swe-bench]] | PR-level code fixes | Small scope |
--| [[concepts/frontier-swe-benchmark]] | Ultra-long-horizon engineering (20h) | 17 difficult tasks |
+-| [[concepts/ai-benchmarks/frontier-swe-benchmark]] | Ultra-long-horizon engineering (20h) | 17 difficult tasks |
 +| [[concepts/ai-benchmarks/frontier-swe-benchmark]] | Ultra-long-horizon engineering (20h) | 17 difficult tasks |
  | **Workspace-Bench** | Multi-file workspace navigation | 20,476 files, 74 types |
 -| [[concepts/kernelbench]] | Kernel-level optimization | Specialized |
@@ -608,12 +609,12 @@ index 11771121..dbc9ebb1 100644
  
  ## Key Significance
  
--Workspace-Bench shifts evaluation focus from "can the model write code" to "can the agent navigate and reason across a realistic professional environment." The 74-file-type heterogeneity and explicit dependency graphs make it the benchmark that most closely mirrors real knowledge-worker environments. Combined with [[concepts/frontier-swe-benchmark]]'s ultra-long-horizon perspective, these benchmarks together define the 2026 frontier of coding agent evaluation.
+-Workspace-Bench shifts evaluation focus from "can the model write code" to "can the agent navigate and reason across a realistic professional environment." The 74-file-type heterogeneity and explicit dependency graphs make it the benchmark that most closely mirrors real knowledge-worker environments. Combined with [[concepts/ai-benchmarks/frontier-swe-benchmark]]'s ultra-long-horizon perspective, these benchmarks together define the 2026 frontier of coding agent evaluation.
 +Workspace-Bench shifts evaluation focus from "can the model write code" to "can the agent navigate and reason across a realistic professional environment." The 74-file-type heterogeneity and explicit dependency graphs make it the benchmark that most closely mirrors real knowledge-worker environments. Combined with [[concepts/ai-benchmarks/frontier-swe-benchmark]]'s ultra-long-horizon perspective, these benchmarks together define the 2026 frontier of coding agent evaluation.
  
  ## See Also
  
--- [[concepts/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark (20h tasks)
+-- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark (20h tasks)
 +- [[concepts/ai-benchmarks/frontier-swe-benchmark]] — Ultra-long-horizon coding benchmark (20h tasks)
  - [[concepts/ai-benchmarks/swe-bench]] — Standard PR-level coding benchmark
  - [[concepts/harness-engineering]] — Agent execution environment design
@@ -1032,7 +1033,7 @@ index d3876dff..e29260ee 100644
  Cloudflare's investments position its edge network as an inference layer for [[concepts/ai-agents|agentic workloads]]. The PD disaggregation pattern parallels [[concepts/mooncake|Mooncake's KVCache-centric architecture]], while the session affinity model addresses the [[concepts/context-engineering/context-window-management|long-context requirements]] of agent loops.
  
  ## Open Questions
--- How does Infire compare to [[concepts/inference/vllm|vLLM]] and [[entities/sglang|SGLang]] on throughput benchmarks?
+-- How does Infire compare to [[concepts/inference/vllm|vLLM]] and [[concepts/inference/sglang|SGLang]] on throughput benchmarks?
 +- How does Infire compare to [[concepts/inference/vllm|vLLM]] and [[concepts/inference/sglang|SGLang]] on throughput benchmarks?
  - Will Cloudflare's edge inference compete with or complement [[concepts/nvidia-dynamo|NVIDIA Dynamo]]?
  - What are the cold-start characteristics for non-Kimi models?
@@ -1129,7 +1130,7 @@ index fe37366d..c4f022c8 100644
  - Still tool-focused, not process-focused
  
  ### Level 3: AI-Pilled
--- AI usage is reflexive and baseline (see [[entities/reflexive-ai]])
+-- AI usage is reflexive and baseline (see [[concepts/reflexive-ai]])
 +- AI usage is reflexive and baseline (see [[concepts/reflexive-ai]])
  - Workflows redesigned around AI capabilities, not just augmented
  - Hiring and role design assumes AI collaboration
@@ -1138,7 +1139,7 @@ index fe37366d..c4f022c8 100644
  
  ## Connection to Other Frameworks
  
--- [[entities/reflexive-ai]] — Shopify's Tobi Lütke memo is the canonical example of "AI-pilled" in practice
+-- [[concepts/reflexive-ai]] — Shopify's Tobi Lütke memo is the canonical example of "AI-pilled" in practice
 -- [[entities/company-ai-pilled]] — broader organizational change theory
 +- [[concepts/reflexive-ai]] — Shopify's Tobi Lütke memo is the canonical example of "AI-pilled" in practice
 +- [[concepts/company-ai-pilled]] — broader organizational change theory
@@ -1264,14 +1265,14 @@ index 10749cdd..ac197009 100644
  | Field | Value |
  |-------|-------|
  | **Type** | Inference Infrastructure / Fault Tolerance |
--| **Related To** | [[entities/sglang]], [[entities/lmsys-org]], [[Mooncake]] |
+-| **Related To** | [[concepts/inference/sglang]], [[entities/lmsys-org]], [[Mooncake]] |
 +| **Related To** | [[concepts/inference/sglang]], [[entities/lmsys-org]], [[concepts/mooncake|Mooncake]] |
  | **Introduced** | March 2026 |
  | **Source** | LMSYS Blog "Elastic EP in SGLang: Achieving Partial Failure Tolerance" |
  
  ## Overview
  
--**Elastic EP** is a fault-tolerant expert parallelism mechanism for Mixture-of-Experts (MoE) model deployments, built into [[entities/sglang]]. Developed by the Mooncake Team at Volcano Engine, it addresses the reliability challenge of "wide" EP deployments (32+ GPUs) for models like DeepSeek V3/V4.
+-**Elastic EP** is a fault-tolerant expert parallelism mechanism for Mixture-of-Experts (MoE) model deployments, built into [[concepts/inference/sglang]]. Developed by the Mooncake Team at Volcano Engine, it addresses the reliability challenge of "wide" EP deployments (32+ GPUs) for models like DeepSeek V3/V4.
 +**Elastic EP** is a fault-tolerant expert parallelism mechanism for Mixture-of-Experts (MoE) model deployments, built into [[concepts/inference/sglang]]. Developed by the Mooncake Team at Volcano Engine, it addresses the reliability challenge of "wide" EP deployments (32+ GPUs) for models like DeepSeek V3/V4.
  
  ## The Problem
@@ -1297,14 +1298,14 @@ index dd724417..b4f8dd25 100644
  | Field | Value |
  |-------|-------|
  | **Type** | Inference Architecture / VLM Serving |
--| **Related To** | [[entities/sglang]], [[entities/lmsys-org]], Vision-Language Models |
+-| **Related To** | [[concepts/inference/sglang]], [[entities/lmsys-org]], Vision-Language Models |
 +| **Related To** | [[concepts/inference/sglang]], [[entities/lmsys-org]], Vision-Language Models |
  | **Introduced** | January 2026 |
  | **Source** | LMSYS Blog "EPD Disaggregation: Elastic Encoder Scaling for VLMs in SGLang" |
  
  ## Overview
  
--**EPD (Encoder-Prefill-Decode) Disaggregation** is a three-tier serving architecture for Vision-Language Models (VLMs) in [[entities/sglang]]. It separates vision encoding from language processing, enabling independent scaling of encoder servers without affecting language model deployment.
+-**EPD (Encoder-Prefill-Decode) Disaggregation** is a three-tier serving architecture for Vision-Language Models (VLMs) in [[concepts/inference/sglang]]. It separates vision encoding from language processing, enabling independent scaling of encoder servers without affecting language model deployment.
 +**EPD (Encoder-Prefill-Decode) Disaggregation** is a three-tier serving architecture for Vision-Language Models (VLMs) in [[concepts/inference/sglang]]. It separates vision encoding from language processing, enabling independent scaling of encoder servers without affecting language model deployment.
  
  Developed by rednote (Xiaohongshu), Alibaba Cloud Computing, and AntGroup SCT.
@@ -1334,12 +1335,12 @@ index ab0905cb..91e8065d 100644
  
  ## Evidence
  
--The concept went viral in April 2026 (5,792 bookmarks, 2.83M impressions), indicating strong resonance with current debates about AI's impact on professional skill valuation. This aligns with [[entities/reflexive-ai]] at Shopify, where Tobi Lütke advocates for "beginner's mindset" and hiring more beginners.
+-The concept went viral in April 2026 (5,792 bookmarks, 2.83M impressions), indicating strong resonance with current debates about AI's impact on professional skill valuation. This aligns with [[concepts/reflexive-ai]] at Shopify, where Tobi Lütke advocates for "beginner's mindset" and hiring more beginners.
 +The concept went viral in April 2026 (5,792 bookmarks, 2.83M impressions), indicating strong resonance with current debates about AI's impact on professional skill valuation. This aligns with [[concepts/reflexive-ai]] at Shopify, where Tobi Lütke advocates for "beginner's mindset" and hiring more beginners.
  
  ## Relationship to Reflexive AI
  
--The "experience tax" is the individual-level manifestation of the organizational-level shift toward [[entities/reflexive-ai]]. When AI becomes the baseline, those with the most to unlearn (senior workers) face the highest adoption cost.
+-The "experience tax" is the individual-level manifestation of the organizational-level shift toward [[concepts/reflexive-ai]]. When AI becomes the baseline, those with the most to unlearn (senior workers) face the highest adoption cost.
 +The "experience tax" is the individual-level manifestation of the organizational-level shift toward [[concepts/reflexive-ai]]. When AI becomes the baseline, those with the most to unlearn (senior workers) face the highest adoption cost.
  
  ## Critiques
@@ -1348,7 +1349,7 @@ index ab0905cb..91e8065d 100644
  
  ## Related
  
--- [[entities/reflexive-ai]]
+-- [[concepts/reflexive-ai]]
 +- [[concepts/reflexive-ai]]
  - [[entities/solo-founder-stack]]
  - [[concepts/vibe-coding]]
@@ -1433,14 +1434,14 @@ index 927a398e..1c82456c 100644
  | Field | Value |
  |-------|-------|
  | **Type** | Memory Management / Inference Optimization |
--| **Related To** | [[entities/sglang]], [[entities/lmsys-org]] |
+-| **Related To** | [[concepts/inference/sglang]], [[entities/lmsys-org]] |
 +| **Related To** | [[concepts/inference/sglang]], [[entities/lmsys-org]] |
  | **Introduced** | April 2026 |
  | **Paper/Post** | LMSYS Blog "HiSparse: Turbocharging Sparse Attention with Hierarchical Memory" |
  
  ## Overview
  
--**HiSparse** is a hierarchical memory system for sparse attention in LLM inference, developed by the [[entities/sglang]] team at [[entities/lmsys-org]]. It addresses the memory capacity bottleneck in sparse attention by offloading inactive KV cache entries to CPU host memory (RAM) while keeping hot data accessible in GPU HBM.
+-**HiSparse** is a hierarchical memory system for sparse attention in LLM inference, developed by the [[concepts/inference/sglang]] team at [[entities/lmsys-org]]. It addresses the memory capacity bottleneck in sparse attention by offloading inactive KV cache entries to CPU host memory (RAM) while keeping hot data accessible in GPU HBM.
 +**HiSparse** is a hierarchical memory system for sparse attention in LLM inference, developed by the [[concepts/inference/sglang]] team at [[entities/lmsys-org]]. It addresses the memory capacity bottleneck in sparse attention by offloading inactive KV cache entries to CPU host memory (RAM) while keeping hot data accessible in GPU HBM.
  
  Sparse attention (e.g., top-k selection) reduces compute and I/O costs but traditionally doesn't solve the memory capacity bottleneck — the full KV cache must remain in GPU HBM. HiSparse enables significantly larger decoding batch sizes and higher throughput.
@@ -1557,7 +1558,7 @@ index be6c73f8..1fca0a61 100644
  
  **What this is**: The current state of "local AI" — individuals running LLMs on their own hardware at home or office. The collective practice of running open-weight models on self-owned GPUs or unified memory machines, without using cloud APIs (GPT/Claude). Covers hardware selection, model quality, inference speed, software stacks, and actual use cases.
  
--**What this is not**: Not a comparison table of cloud LLMs. Not about data center/enterprise inference (that's the domain of [[concepts/vllm]] and [[entities/sglang]]). Not about model training/fine-tuning (that's the domain of [[concepts/local-llm/model-distillation]]).
+-**What this is not**: Not a comparison table of cloud LLMs. Not about data center/enterprise inference (that's the domain of [[concepts/vllm]] and [[concepts/inference/sglang]]). Not about model training/fine-tuning (that's the domain of [[concepts/local-llm/model-distillation]]).
 +**What this is not**: Not a comparison table of cloud LLMs. Not about data center/enterprise inference (that's the domain of [[concepts/vllm]] and [[concepts/inference/sglang]]). Not about model training/fine-tuning (that's the domain of [[concepts/local-llm/model-distillation]]).
  
  ---
@@ -1575,7 +1576,7 @@ index be6c73f8..1fca0a61 100644
  | **ollama** | Easy model execution | → [[concepts/ollama]] |
  | **LM Studio** | GUI model management | Beginner-friendly |
  | **LiteLLM** | Local LLM router | OpenAI API-compatible, multi-model routing |
--| **vLLM** | High-throughput inference server | → [[concepts/vllm]], [[entities/sglang]] |
+-| **vLLM** | High-throughput inference server | → [[concepts/vllm]], [[concepts/inference/sglang]] |
 +| **vLLM** | High-throughput inference server | → [[concepts/vllm]], [[concepts/inference/sglang]] |
  | **llama.cpp** | CPU inference/GGUF quantization | → [[concepts/llama-cpp]] |
  
@@ -1777,7 +1778,7 @@ index 0e213761..eb3aac2f 100644
  2. **[[concepts/context-engineering|Context Engineering]]:** Making AI agents reliable and capable
  3. **[[concepts/nvidia-dynamo]]:** Affordable agentic inference infrastructure
  4. **[[concepts/vibe-ceo]]:** New management paradigm for agent orchestration
--5. **[[entities/reflexive-ai]]:** Cultural normalization of AI-as-baseline
+-5. **[[concepts/reflexive-ai]]:** Cultural normalization of AI-as-baseline
 +5. **[[concepts/reflexive-ai]]:** Cultural normalization of AI-as-baseline
  
  ## Related
@@ -1899,14 +1900,14 @@ index b7785454..53d18101 100644
  |-------|-------|
  | **Type** | RL Post-Training Framework |
  | **Organization** | [[entities/lmsys-org]] |
--| **Related To** | [[entities/sglang]], Slime |
+-| **Related To** | [[concepts/inference/sglang]], Slime |
 +| **Related To** | [[concepts/inference/sglang]], Slime |
  | **Introduced** | November 2025 |
  | **Cross-Platform** | NVIDIA CUDA, AMD ROCm |
  
  ## Overview
  
--**Miles** is an open-source reinforcement learning post-training framework developed by [[entities/lmsys-org]], built on the [[entities/sglang]] and Slime ecosystems. It is designed for production-grade RL pipelines for large language and multimodal models.
+-**Miles** is an open-source reinforcement learning post-training framework developed by [[entities/lmsys-org]], built on the [[concepts/inference/sglang]] and Slime ecosystems. It is designed for production-grade RL pipelines for large language and multimodal models.
 +**Miles** is an open-source reinforcement learning post-training framework developed by [[entities/lmsys-org]], built on the [[concepts/inference/sglang]] and Slime ecosystems. It is designed for production-grade RL pipelines for large language and multimodal models.
  
  ## Core Capabilities
@@ -2070,7 +2071,7 @@ index 9a08de00..436f48be 100644
  - [[concepts/ai-organization]] — represents a shift from hierarchical to intelligence-driven orgs
  
  ## Related
--- [[entities/reflexive-ai]]
+-- [[concepts/reflexive-ai]]
 +- [[concepts/reflexive-ai]]
  
  - [[concepts/experience-is-a-tax]]
@@ -2079,7 +2080,7 @@ index 9a08de00..436f48be 100644
  - AI literacy as organizational culture
  
  
--## Related Concepts- [[entities/reflexive-ai]]
+-## Related Concepts- [[concepts/reflexive-ai]]
 +## Related Concepts- [[concepts/reflexive-ai]]
  
  - [Company AI Pilled](company-ai-pilled.md) — Organizational AI-driven transformation framework
@@ -2130,7 +2131,7 @@ index 77d5e7cf..ef5a3d03 100644
  | Field | Value |
  |-------|-------|
  | **Type** | Inference Parallelism Strategy |
--| **Related To** | [[entities/sglang]], [[entities/lmsys-org]] |
+-| **Related To** | [[concepts/inference/sglang]], [[entities/lmsys-org]] |
 +| **Related To** | [[concepts/inference/sglang]], [[entities/lmsys-org]] |
  | **Introduced** | January 2026 |
  | **Source** | LMSYS Blog "Pipeline Parallelism in SGLang: Scaling to Million-Token Contexts" |
@@ -2191,7 +2192,7 @@ index 86797c48..39dc92ba 100644
  
  Modal describes training custom speculators as **"ML on easy mode"**: the data-generating process is itself an ML model (the target LLM), so training data is effectively infinite and free. This eliminates the primary bottleneck of most ML projects (data collection/curation) and makes speculator training highly parallelizable and automatable. Combined with the 2-3× speedups from domain-specific speculators vs. negligible gains from kernel tuning, Modal argues the field is under-investing in speculative decoding.
  
--See also: [[entities/modal-labs]], [[entities/sglang]], [[concepts/vllm]]
+-See also: [[entities/modal-labs]], [[concepts/inference/sglang]], [[concepts/vllm]]
 +See also: [[entities/modal-labs]], [[concepts/inference/sglang]], [[concepts/vllm]]
  
  ## Sources
@@ -2263,7 +2264,7 @@ index 8a958b3d..a3e9cc94 100644
  - [[entities/solo-founder-stack]] — the enabling infrastructure
  - [[entities/levelsio]] — archetypal practitioner: solo founder running a portfolio of products on a single VPS with AI APIs (July 2026: "I cancelled all my SaaS subscriptions and vibecoded 100% of them myself")
  - [[concepts/context-engineering|Context Engineering]] — the core skill for directing agents effectively
--- [[entities/reflexive-ai]] — the organizational culture of AI-as-baseline
+-- [[concepts/reflexive-ai]] — the organizational culture of AI-as-baseline
 +- [[concepts/reflexive-ai]] — the organizational culture of AI-as-baseline
  - [[concepts/managed-agents]] — the tooling that makes it accessible
  
@@ -2934,12 +2935,12 @@ index bf4645ba..4d227d14 100644
  
  ## Connection to Broader Trends
  
--Khe Hy's framework connects to [[entities/reflexive-ai]] (Shopify's approach) and [[concepts/experience-is-a-tax]] — both address organizational resistance to AI adoption.
+-Khe Hy's framework connects to [[concepts/reflexive-ai]] (Shopify's approach) and [[concepts/experience-is-a-tax]] — both address organizational resistance to AI adoption.
 +Khe Hy's framework connects to [[concepts/reflexive-ai]] (Shopify's approach) and [[concepts/experience-is-a-tax]] — both address organizational resistance to AI adoption.
  
  ## Related
  
--- [[entities/reflexive-ai]]
+-- [[concepts/reflexive-ai]]
 +- [[concepts/reflexive-ai]]
  - [[concepts/experience-is-a-tax]]
  - [[entities/openclaw]]
@@ -3155,7 +3156,7 @@ index fccb475b..53424871 100644
  
  **LMSYS Org** (Large Model Systems Organization) is an open research organization based at UC Berkeley SkyLab focused on developing large language model systems that are open, accessible, and scalable. They are best known for creating:
  
--- **[[entities/sglang]]** — A fast and expressive LLM serving framework with RadixAttention
+-- **[[concepts/inference/sglang]]** — A fast and expressive LLM serving framework with RadixAttention
 +- **[[concepts/inference/sglang]]** — A fast and expressive LLM serving framework with RadixAttention
  - **Chatbot Arena** (lmarena.ai) — The industry-standard crowdsourced LLM evaluation platform
  - **Miles** — An open-source RL post-training framework
@@ -3168,7 +3169,7 @@ index 13847870..9d010428 100644
  related:
    - "[[entities/hermes-agent]]"
    - "[[concepts/hermes-agent-use-cases]]"
--  - "[[entities/reflexive-ai]]"
+-  - "[[concepts/reflexive-ai]]"
 +  - "[[concepts/reflexive-ai]]"
    - "[[concepts/agentic-engineering]]"
    - "[[concepts/compound-engineering-every]]"
@@ -3177,7 +3178,7 @@ index 13847870..9d010428 100644
  - Named as the definitive community landscape study for the Hermes Agent ecosystem
  
  ### AI Adoption & Reflexive AI
--- Documented Shopifys Reflexive AI Baseline policy ([[entities/reflexive-ai]])
+-- Documented Shopifys Reflexive AI Baseline policy ([[concepts/reflexive-ai]])
 +- Documented Shopifys Reflexive AI Baseline policy ([[concepts/reflexive-ai]])
  - Published research on entrepreneurship trends grounded in Shopify's internal data science
  - Case study referenced as a model for organizational AI adoption
@@ -3186,7 +3187,7 @@ index 13847870..9d010428 100644
  - [[entities/every-inc]] — The company behind Compound Engineering, Monologue, Proof
  - [[entities/hermes-agent]]
  - [[concepts/hermes-agent-use-cases]]
--- [[entities/reflexive-ai]]
+-- [[concepts/reflexive-ai]]
 +- [[concepts/reflexive-ai]]
  - [[entities/solo-founder-stack]]
 diff --git a/wiki/entities/metR.md b/wiki/entities/metR.md
@@ -3256,7 +3257,7 @@ index a4c1a140..022cee8d 100644
  
  Source: raw/articles/modal.com--blog-unpacking-sandbox-startup-latency--b8f065a9.md
  
--See also: [[concepts/speculative-decoding]], [[entities/sglang]], [[concepts/vllm]], [[concepts/agent-experience]], [[concepts/agentic-engineering]]
+-See also: [[concepts/speculative-decoding]], [[concepts/inference/sglang]], [[concepts/vllm]], [[concepts/agent-experience]], [[concepts/agentic-engineering]]
 +See also: [[concepts/speculative-decoding]], [[concepts/inference/sglang]], [[concepts/vllm]], [[concepts/agent-experience]], [[concepts/agentic-engineering]]
  
  ## Agent Experience (AX) Design Philosophy
@@ -3400,7 +3401,7 @@ index fe4ecd1d..058d9390 100644
  
  ## Related Concepts
  
--- [[entities/sglang]] — Open-source inference framework
+-- [[concepts/inference/sglang]] — Open-source inference framework
 +- [[concepts/inference/sglang]] — Open-source inference framework
  - [[entities/sambanova]] — Leading raw inference speed (435 tok/s)
  
@@ -3448,14 +3449,14 @@ index cfbed6f9..f71ccef8 100644
  ### 3. Minimum Viable AI Governance- Purpose-driven agent orchestration
  - Explicit structure over agent sprawl
  - Organizational memory as critical infrastructure
--- Connects to [[concepts/security-and-governance/agent-governance]] and [[entities/reflexive-ai]]
+-- Connects to [[concepts/security-and-governance/agent-governance]] and [[concepts/reflexive-ai]]
 +- Connects to [[concepts/security-and-governance/agent-governance]] and [[concepts/reflexive-ai]]
  
  
  ## Connection to Other Trends
  The solo founder stack emerges from the intersection of:
  - [[concepts/nvidia-dynamo]] making agentic inference affordable
--- [[entities/reflexive-ai]] normalizing AI-as-baseline in organizations
+-- [[concepts/reflexive-ai]] normalizing AI-as-baseline in organizations
 +- [[concepts/reflexive-ai]] normalizing AI-as-baseline in organizations
  - [[concepts/experience-is-a-tax]] reducing the advantage of senior teams
  - [[concepts/managed-agents]] (Telegram, Claude) lowering the barrier to entry
@@ -3464,7 +3465,7 @@ index cfbed6f9..f71ccef8 100644
  - [[concepts/vibe-ceo]]
  - [[concepts/context-engineering|Context Engineering]]
  - [[concepts/security-and-governance/agent-governance]]
--- [[entities/reflexive-ai]]
+-- [[concepts/reflexive-ai]]
 +- [[concepts/reflexive-ai]]
  - [[concepts/experience-is-a-tax]]
  - [[concepts/one-person-unicorn]]
@@ -3660,7 +3661,7 @@ index f7281cf0..d9de033e 100644
  - [[gaia-benchmark]] — 19 references
  - [[reinforcement-learning]] — 18 references
 -- [[concepts/ai-safety]] — 17 references
--- [[entities/sglang]] — 17 references
+-- [[concepts/inference/sglang]] — 17 references
 +- [[concepts/security-and-governance/ai-safety]] — 17 references
 +- [[concepts/inference/sglang]] — 17 references
  - [[concepts/agent-evaluation]] — 16 references

@@ -18,13 +18,13 @@ updated: 2026-04-27
 |-------|-------|
 | **Type** | RL Post-Training Framework |
 | **Organization** | [[entities/lmsys-org]] |
-| **Related To** | [[entities/sglang]], Slime |
+| **Related To** | [[concepts/inference/sglang]], Slime |
 | **Introduced** | November 2025 |
 | **Cross-Platform** | NVIDIA CUDA, AMD ROCm |
 
 ## Overview
 
-**Miles** is an open-source reinforcement learning post-training framework developed by [[entities/lmsys-org]], built on the [[entities/sglang]] and Slime ecosystems. It is designed for production-grade RL pipelines for large language and multimodal models.
+**Miles** is an open-source reinforcement learning post-training framework developed by [[entities/lmsys-org]], built on the [[concepts/inference/sglang]] and Slime ecosystems. It is designed for production-grade RL pipelines for large language and multimodal models.
 
 ## Core Capabilities
 - **Distributed Rollout Generation**: Powered by SGLang for inference

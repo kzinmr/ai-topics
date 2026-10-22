@@ -17,7 +17,7 @@ updated: 2026-04-27
 | Field | Value |
 |-------|-------|
 | **Type** | Inference Parallelism Strategy |
-| **Related To** | [[entities/sglang]], [[entities/lmsys-org]] |
+| **Related To** | [[concepts/inference/sglang]], [[entities/lmsys-org]] |
 | **Introduced** | January 2026 |
 | **Source** | LMSYS Blog "Pipeline Parallelism in SGLang: Scaling to Million-Token Contexts" |
 | **Author** | Shangming Cai |
