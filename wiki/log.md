@@ -659,3 +659,9 @@ research-grade pages from genuinely uncovered material:
 - Dedup: no overlap with 01:30 post (ai-resistant-evals/ECI) or 10-19 morning (domain specialization).
 - Flagged: Sept 4 raw (2026-09-04_warp_warp-factory-benchmarks.md) says -63%, Oct 21 case study says 75% — same $80→$30 math, headline drift.
 - No wiki content pages created or modified (report only).
+
+## 2026-10-22 12:35 UTC — hot-post (night 21:30 JST slot)
+- Topic: doubleAI Maxwell (Code Execution Model) + LayerFS — contrarian/reflective angle, not covered in day slots
+- Sources: raw/articles/2026-10-22_doubleai-maxwell-code-execution-model.md, raw/articles/2026-10-22_layerfs-filesystem-for-ai-coding-agents.md
+- Wikilinks: concepts/formal-verification-llm-agents, concepts/recursive-self-improvement, concepts/harness-engineering, entities/anthropic, entities/peter-steinberger, entities/litellm
+- Verification: NO_SLOP_FOUND / 0 MISS / NO_TYPO
