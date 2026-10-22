@@ -640,3 +640,10 @@ research-grade pages from genuinely uncovered material:
 - Key numbers: Opus 4.5 = best-human v2 in 2h; public challenge 1,487 cycles / 11.5h; ECI slope 8.337 → 15.459/yr (1.85x, BF 1e9); ECI 5pt ≈ METR TH doubling; open gap 4mo/8pt (90% CI 7–11).
 - Dedup: no wikilink reuse vs 10-16 late-night (ontrack cluster was cited only as cross-ref, primary topic is new) or 10-19 morning (domain specialization).
 - No wiki content pages created or modified (report only).
+
+## 2026-10-22 09:30 JST — morning hot-post
+- Topic: WarpBench private benchmark → cost-per-PR $80→$30, task compliance 69%→83% (Grok 4.6 high replacing Opus 5-routed auto-genius). Raw: raw/articles/2026-10-21_warp_warpbench-case-study-reduce-cost-per-pr.md + 2026-10-21_warp_self-improving-software-proactive-agents.md
+- Cross-refs: dark-factory-software-factory (Warp Factory Engineering section), harness-tax, coding-agents/model-routing, self-evolving-agents, enterprise-ai-cost-management, llm-trace-judge.
+- Dedup: no overlap with 01:30 post (ai-resistant-evals/ECI) or 10-19 morning (domain specialization).
+- Flagged: Sept 4 raw (2026-09-04_warp_warp-factory-benchmarks.md) says -63%, Oct 21 case study says 75% — same $80→$30 math, headline drift.
+- No wiki content pages created or modified (report only).
