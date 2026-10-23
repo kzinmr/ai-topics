@@ -5,7 +5,7 @@ aliases: [emollick]
 tags: [person, education, developer-tooling, ai-adoption]
 sources: []
 created: 2026-04-24
-updated: 2026-09-23
+updated: 2026-10-23
 type: entity
 ---
 
@@ -192,6 +192,17 @@ Mollick consistently raises questions about the ethical implications of AI in wo
 
 - Stanford Graduate School of Business — "Co-Intelligence: An AI Masterclass" (June 2024)
 - Thinkers & Ideas Podcast — "Co-Intelligence with Ethan Mollick" (April 2024)
+
+## Recent X Activity (October 2026)
+
+- **AI peer-review study (Oct 23):** amplified **Gary King & Steven Worthington's**
+  *"AI Article Reviews Dominate Human Peer Reviews at Their Best"* — a study of **124
+  Harvard social-science papers** (statistical, formal-model, and qualitative work) where
+  **Opus 4.8** beat human expert reviewers "by every measure." Mollick: *"As academics, we
+  need to figure out how to adapt the practice of science to AI, fast,"* and *"This is not
+  going to be the only area in which AIs beat humans…"* See [[events/ai-peer-review-study-2026]].
+  Source: [tweet](https://x.com/emollick/status/2113483068174692831),
+  [paper page](https://gking.harvard.edu/peerless/).
 
 ## Notable X Posts (September 2026)
 

@@ -1,6 +1,15 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+
+## [2026-10-23] ingest | x-accounts-scan: KURE (Korea Univ retrieval suite), Vercel OIDC credentials, AI peer-review study
+
+- New event page `events/kure-korea-retrieval-suite-2026.md` — KURE (nlpai-lab / Korea University), first suite covering all 4 Sentence Transformers model types (dense/sparse/multi-vector/reranker) for KO+EN, via Tom Aarsen thread.
+- New event page `events/vercel-oidc-credentials-2026.md` — Vercel "Death to long-lived static credentials" (Malte Ubl), 8.4% SaaS secure-auth stat, agent/prompt-injection credential-leak framing, via Jo Bergum amplification.
+- New event page `events/ai-peer-review-study-2026.md` — King & Worthington AI-vs-human peer review study (124 Harvard papers, Opus 4.8), via Ethan Mollick amplification.
+- Updated entities: tom-aarsen (KURE thread + SparseEncoder doc reply), doug-turnbull (AI-Powered Search course cohort / MomentRAG / Top K lightning lesson), ethan-mollick (AI peer-review study), jo-kristian-bergum (Vercel OIDC amplification).
+- 3 raw articles saved (kure collection, peerless, vercel blog). Added SCHEMA tags: sparse-encoder, matryoshka, sentence-transformers. Events count 42→45.
+- Skips: softwaredoug Maven course promos (folded into doug-turnbull section, not standalone pages); tomaarsen sparse-models doc reply (logged as note).
 ## [2026-10-23] skeleton-enrich-daily: no action
 
 - Frontmatter scan of wiki/entities/ and wiki/concepts/: 0 pages with `status: skeleton`. Backlog empty (streak since 2026-10-17).

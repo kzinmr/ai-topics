@@ -3227,8 +3227,11 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (42 pages)
+## Events (45 pages)
 
+- [[events/kure-korea-retrieval-suite-2026]] — KURE (Korea University REtrieval models, nlpai-lab, Oct 23 2026) — first major suite covering all 4 Sentence Transformers model types (dense/sparse/multi-vector/reranker) for Korean & English; KURE-v3 (~1.1B, 2048d + Matryoshka to 256d), KURE-v2 (154M ColBERT-style MaxSim), Sparse-base/nano, Reranker-base/nano (1.7B/149M CrossEncoder). Amplified by Tom Aarsen.
+- [[events/vercel-oidc-credentials-2026]] — Vercel "Death to long-lived static credentials" (Malte Ubl, Oct 22 2026) — push to replace static API keys with OIDC; survey finds only 8.4% of 1000+ SaaS vendors support secure auth; frames static-credential leakage via agents/prompt-injection as an agent-safety issue; OIDC UI registry + Marketplace auth requirements. Amplified by Jo Bergum.
+- [[events/ai-peer-review-study-2026]] — King & Worthington "AI Article Reviews Dominate Human Peer Reviews" (Harvard, Oct 22 2026) — across 124 Harvard social-science papers, Opus 4.8 beat well-compensated human expert reviewers by every measure; journal-policy discussion. Amplified by Ethan Mollick.
 - [[events/2026-10-21-litellm-pypi-compromise]] — LiteLLM 1.107.0 PyPI compromise (Oct 21, 2026) — malicious wheels + Docker tags served 11:46–14:20 UTC; payload runs at every Python interpreter start (cook.pth, sitecustomize.py), steals SSH/cloud/CI/AI-tool creds and proxy-stored provider keys; publish-step compromise, clean at 1.106.2
 - [[events/php2shell-php-rce-2026]] — PHP2Shell: AI-discovered core PHP RCE (CVE-2026-109618/109619, Oct 21 2026) — Wiz Research used Wiz Atlas + Gemini 4 Argon + GPT-5.6 Sol to turn decade-old memory-safety flaws into pre-auth RCE/memory-disclosure affecting ~70% of the web (WordPress/Drupal/Joomla); "AI inflection point" vs Heartbleed/Log4Shell; contested severity (jackalsyn CVSS 5.3 vs Wiz 9.2)
 - [[events/2026-10-17-deepseek-v4.1-flash-1017-release]] — DeepSeek-V4.1-Flash-1017 + Search/Fetch API release (Oct 17, 2026) — DeepSeek flash-tier model release alongside new Search/Fetch API; open-weight, pricing, agentic-search tooling

@@ -2,7 +2,7 @@
 title: Doug Turnbull
 type: entity
 created: 2026-04-10
-updated: 2026-09-21 22:50:00
+updated: 2026-10-23
 tags:
   - person
   - developer-tooling
@@ -10,6 +10,8 @@ tags:
   - search
   - open-source
   - consultant
+  - retrieval
+  - rag
 sources: []
 ---
 
@@ -292,6 +294,28 @@ Turnbull is a regular speaker at search industry conferences:
 - **Relevance Cornucopia** workshops: Intensive small-group training on "Think Like a Relevance Engineer" and "Hello LTR"
 
 He maintains an active blog at softwaredoug.com with regular "daily search tips" — concise, practical observations about search engineering — and a newsletter with thousands of subscribers.
+
+### AI-Powered Search course promotion (October 22–23, 2026)
+
+On 2026-10-22–23 Turnbull actively promoted the next cohort of **AI-Powered Search:
+Modern Retrieval for Humans & Agents**, the month-long Maven course he co-teaches with
+**Trey Grainger** (running **Nov 3 – Dec 4, 2026**, ~25 hours, hands-on labs, guest
+instructors from Pinterest/Airbnb/Apple/Uber/Reddit/Amazon). Key posts:
+- Co-authored a launch article with Grainger on what to expect from the course —
+  "The Future of AI Search + AI-Powered Search" (aipoweredsearch.com). Includes a free
+  9-session "The Future of AI Search" Lightning Lesson Series in the run-up.
+  https://aipoweredsearch.com/articles/the-future-of-ai-search-ai-powered-search-modern-retrieval-for-humans-agents/
+- Framing: the course "tries to get you beyond that surface level RAG view of chunking +
+  embedding to give you a comprehensive view of retrieval" — i.e. past the "cursory view
+  of RAG" that leads AI teams into trouble.
+- Announced **Hamza Farooq** as the next guest speaker, presenting **MomentRAG** — a
+  reference RAG implementation for querying videos + podcasts.
+  https://maven.com/search-school/ai-powered-search
+- Hosted a live "Future of AI Search" Lightning Lesson with **@marek_galovic** on **Top K's**
+  latest multi-vector embedding models (Oct 22).
+See [[events/kure-korea-retrieval-suite-2026]] for the related multi-vector embedding wave.
+Sources: [tweet](https://x.com/softwaredoug/status/2113362280461320592),
+[tweet](https://x.com/softwaredoug/status/2113681290008596886).
 
 ## Key Quotes
 

@@ -3,7 +3,7 @@ title: Tom Aarsen
 type: entity
 handle: "@tomaarsen"
 created: 2026-04-10
-updated: 2026-10-09
+updated: 2026-10-23
 tags:
   - person
   - model
@@ -151,6 +151,25 @@ benchmark figure's legend listed LightOnOCR-2 but the plotted bars omitted it �
 with the authors on X to confirm it was a plotting issue rather than a results problem. A nice
 example of the HF maintainer community providing informal review on release posts.
 See [[entities/lighton]] (LightOnOCR-3). Source: [tweet](https://x.com/tomaarsen/status/2108277298743173616).
+
+## KURE release thread (October 23, 2026)
+
+On 2026-10-23 Aarsen amplified **KURE (Korea University REtrieval models)** from the
+NLP & AI Lab at Korea University — calling it *"the first major model suite to support
+all 4 Sentence Transformers model types"*: dense, sparse, and multi-vector embeddings
+plus rerankers, all for Korean & English. His thread walked through the family:
+- **KURE-v3** (~1.1B dense): one 2,048d vector per text with Matryoshka support down to
+  256d; in the team's Korean eval, 1,024d retains ~99% of the full-size score, halving
+  vector storage with little loss. Aarsen noted it is "really good on English retrieval too."
+- **KURE-v2** (154M multi-vector, Aug 2026): MultiVectorEncoder, 128d per token, MaxSim late interaction.
+- **Sparse-base/nano** (SparseEncoder) and **Reranker-base/nano** (1.7B / 149M CrossEncoder,
+  freshly retrained base); reranker scores are relevance logits — higher is better even when all negative.
+All stages usable through Sentence Transformers. Collection: https://huggingface.co/collections/nlpai-lab/kure
+See [[events/kure-korea-retrieval-suite-2026]]. Source: [thread](https://x.com/tomaarsen/status/2113607601753620588).
+
+Also on Oct 23, in a reply to @tulkenss, Aarsen pointed users at the Sentence Transformers
+**SparseEncoder pretrained models** doc page (https://sbert.net/docs/sparse_encoder/pretrained_models.html)
+as the canonical place to find sparse models. Source: [tweet](https://x.com/tomaarsen/status/2113527781145682364).
 
 ## X Activity Themes
 

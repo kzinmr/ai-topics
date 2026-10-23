@@ -6,7 +6,7 @@ aliases:
   - jobergum
   - Jo Bergum
 created: 2026-04-25
-updated: 2026-06-03
+updated: 2026-10-23
 tags:
   - entity
   - person
@@ -101,7 +101,17 @@ Bergum's work spans traditional information retrieval, neural search, and large-
 
 ## Current Work: Hornet
 
-|In 2025, Bergum founded **Hornet** (hornet.dev), a retrieval engine built from the ground up for AI agent workloads. The company addresses the fundamental shift from human-paced queries to agent-driven search loops that issue thousands of structured queries per session. Hornet is model-agnostic, open-source, and designed to run in VPC or on-premises alongside agent infrastructure. Key team members include many ex-Vespa engineers — Henning Baldersheim (CTO), Erik Dyrkoren (COO), and others.
+In 2025, Bergum founded **Hornet** (hornet.dev), a retrieval engine built from the ground up for AI agent workloads. The company addresses the fundamental shift from human-paced queries to agent-driven search loops that issue thousands of structured queries per session. Hornet is model-agnostic, open-source, and designed to run in VPC or on-premises alongside agent infrastructure. Key team members include many ex-Vespa engineers — Henning Baldersheim (CTO), Erik Dyrkoren (COO), and others.
+
+## Recent X Activity (October 2026)
+
+- **Vercel OIDC post (Oct 23):** amplified Malte Ubl's Vercel blog *"Death to long-lived
+  static credentials"* ("Great post by @cramforce"), which argues OIDC should replace
+  long-lived API keys — reframing the credential problem as an agent-safety / blast-radius
+  issue (prompt injection can leak static keys). Echoes Ubl's earlier line: *"If you are
+  building a runtime platform in 2026 and don't support OIDC, what are you even doing?"*
+  See [[events/vercel-oidc-credentials-2026]].
+  Source: [tweet](https://x.com/jobergum/status/2113515603923173478).
 
 ## Timeline
 
