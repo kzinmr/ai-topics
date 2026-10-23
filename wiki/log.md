@@ -1,3 +1,51 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+## [2026-10-23] skeleton-enrich-daily: no action
+
+- Frontmatter scan of wiki/entities/ and wiki/concepts/: 0 pages with `status: skeleton`. Backlog empty (streak since 2026-10-17).
+- Snapshot: [[queries/2026-10-23-skeleton-enrich-empty]]. No pages enriched; working-tree WIP from other pipelines untouched.
+
+
+
+## [2026-10-23] dreaming wiki-ingest | Pattern E — upstream 503/truncation recovery, 1 take + 3 references
+
+**Upstream failure**: `dreaming-group` (job c4a9e8d2f671) died with `RuntimeError: Response truncated due to output length limit` after echoing the 3,227-page `existing_wiki_pages` list into its own prompt (5,088-line cron output, zero cluster analysis). Checkpoint had `payload.articles: 0` with `recent_raw_articles: 234` → Pattern E run from scratch in this job.
+
+**Dedup baseline**: umbrella `archive_index.json` (2,863 URLs) + `check_archive_index_absence.py` → 102 never-triaged raw files in the 3-day window.
+
+### Verification of high-value candidates
+
+| Candidate | Status | Details |
+|-----------|--------|---------|
+| Dwarkesh Patel — Intel fab tour "chips in 2045" (68 KB) | ✅ Already covered | `entities/dwarkesh-patel.md` L63 + dedicated section L227-233 (3x/yr compute, double-wafer ceiling, Wennink 40-50%, CFET, High-NA, Terafab) |
+| Fireworks × Muse Glimmer, Voyage AI, Series D | ✅ Already covered | `entities/fireworks-ai.md` L569+ (Series D $1.505B/$17.5B, July 2026) |
+| OpenAI `Terminal X` / `OpenAI acquires Orchestra Bio` | ⏭️ Skip (link stubs) | 644-649 B `scrape_status: rss-fallback` (openai.com 403) — RSS description only, body unreachable |
+| Simon Willison — Agent Skills donated to AAIF | ✅ Already covered | `concepts/agent-skills.md` L232-234 + `entities/anthropic.md` L857-859 |
+| Sierra τ-Entity voice benchmark | ✅ Already covered | `concepts/ai-benchmarks/tau-voice.md` L122-124 "Successor: τ-Entity" |
+| Mercury 3 / Timestral / TorchTPU / Voxtral 3 | ✅ Already covered | dedicated concept pages from active-crawl |
+| Fireworks 18-model DeepSWE routing oracle | ❌ **Take** — new concept | 97.6% @ $1.88 oracle, 90.3% open-weight, FireRouter prod data: absent wiki-wide (existing DeepSWE routing data is a different 2-model Together AI study) |
+| OpenAI Alignment "Beyond g-mean²" | ❌ **Take** — new concept | 39 KB post; zero wiki hits for g-mean²/monitorability metrics (only a log.md line at L149) |
+| Fireworks × AMD Instinct MI325X/MI355X multi-year deal | ❌ **Reference** | `entities/fireworks-ai.md` L75 notes multi-vendor stance but no MI325X/MI355X agreement |
+| Warp — "Self-improving software" + "Rolling out software factories" | ❌ **Reference** | `concepts/dark-factory-software-factory.md` Warp section covers the June 2026 memo only; Oct 2026 org-rollout tactics + proactive-agent loop absent |
+| Pinecone "vectors as implementation detail" (21 KB) | ❌ **Reference** | Documents API integrated embedding + hybrid full-text in one call; `entities/pinecone.md` lacks it |
+| Fireworks product-blog batch (Multi-LoRA, Batch API, FireOptimizer, 3D FireOptimizer, speed benchmarks, Series C backfill) | ⏭️ Skip | Thin product marketing; Series C ($250M @ $4B) already in `entities/fireworks-ai.md` L61 |
+| Non-AI blog batch (johndcook math, dfarq tech-history, shkspr gadget reviews, jim-nielsen, anildash, bearblog, tedium, lwn, oldnewthing, pluralistic) | ⏭️ Skip | Outside AI/LLM/agent scope |
+| Company marketing batch (Hex DataBench follow-up, Decagon, Glean FR page, Warp Warpbench, Hebbia × Datasite, Parallel web-systems, elevenlabs SEO how-tos) | ⏭️ Skip | Product marketing, no new AI concept |
+
+### Changes
+- NEW `concepts/oracle-model-routing.md` — Fireworks DeepSWE v1.1 18-model routing analysis
+- NEW `concepts/monitorability-metrics.md` — OpenAI Alignment pair-matched + post-control-integration metrics, intervention g-mean² lower bound
+- `entities/fireworks-ai.md` — AMD Instinct partnership section + 2 new sources + 2 new wikilinks
+- `concepts/dark-factory-software-factory.md` — Warp October 2026 rollout-tactics subsection
+- `entities/pinecone.md` — integrated embedding / vectors-as-implementation-detail subsection
+- `wiki/index.md` +2 concept entries, page count 3271 → 3273
+- `wiki/SCHEMA.md` Meta line += `monitorability`, `oracle-routing`
+- Archive: `scripts/archive_triage.py dreaming --keep-reference`
+
+**NJ lead**: 18-model oracle routing — +23 pt / ⅓ cost over the best single model, and open-weight-only (90.3% @ $1.45) beats every closed model by 16 pt.
+
+
 ## [2026-10-23] health-fix | Wiki health auto-fix: orphans cleared, index counts corrected
 
 ### Changes
@@ -8,7 +56,6 @@
 
 ---
 
-# Wiki Log
 
 ## [2026-10-23] trending-topics | daily report — Model Collapse of Viewpoints (new) + 4 in-place index refreshes
 
@@ -190,7 +237,6 @@ Previous entries are preserved in [[log-2026]]. Rotation on 2026-10-14 preserved
 Frontmatter-level scan of `wiki/entities/` + `wiki/concepts/` (regex `status:\s*skeleton` inside YAML block): **0** matches. `skeleton` does not appear in the entity `status:` distribution (stub 458, active 165, complete 128, L3 62, draft 52, L2 39, redirect 16, L1 14, full 7, …). Streak continues from 2026-10-17 / 2026-10-19. Only prose "skeleton" mentions remain (exoskeleton / skeleton repo / topology metaphor). No pages modified. Snapshot: [[queries/2026-10-20-skeleton-enrich-empty]].
 
 
-
 ## [2026-10-20] dreaming wiki-ingest | Pattern E saturation — 4 references enriched, 6 skips archived
 
 **Recovery**: Upstream dreaming-group (job c4a9e8d2f671) saved `triage_latest.json` (18:16 UTC, run 20261020T181000Z) but failed the cron response render (`failed to parse JSON response from dreaming-group output`, output file 5,093 lines at `/opt/data/.hermes/cron/output/c4a9e8d2f671/2026-10-20_18-18-16.md`). Read triage JSON directly — no re-triage. No upstream commit today touched wiki content (only health-fix `a32fde1f` / watchdog `984ce978`).
@@ -257,7 +303,6 @@ Frontmatter-level scan of `wiki/entities/` + `wiki/concepts/` (regex `status:\s*
 - Skeleton entities: 0.
 
 `validate_index.py` exit 0 (3301 lines).
-
 
 
 ## [2026-10-20] watchdog | Wiki watchdog auto-fix — log header restored + 1 orphan indexed
@@ -560,8 +605,6 @@ research-grade pages from genuinely uncovered material:
   - `concepts/llm-decompilation-and-software-recovery`, `concepts/outer-harness`, `concepts/openai/gpt-5-6-codex-model-card-2026`
 - 2 remaining digest orphans (`concepts/gpt/_archive/2026-04-24-ainews`, `...-news-aggregation`) intentionally excluded — `_archive/` is not indexed per convention.
 - index.md already structurally clean (validate_index exit 0; 0 pipe/line-number/triple-bracket/space corruption). Header counts bumped: Total 3239→3244, Entities 942→944, Concepts 2196→2199.
-
-
 
 
 ## [2026-10-15] query | Hot-post morning 09:30 — Modal mixed-precision/mixed-accelerator RL

@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3271
+> Total pages: 3273
 > Last updated: 2026-10-23
 
 ## Entities (954 pages)
@@ -966,7 +966,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2222 pages)
+## Concepts (2224 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1130,6 +1130,7 @@
 - [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
 - [[concepts/model-hardware-standard]] — Model Hardware Standard (MHS) — Anthropic spec for AI agents operating lab/manufacturing hardware; MCP-accessible, open-source planned (Aug 2026)
 - [[concepts/modest-success-software-boom]] — The Modest-Success Boom — Goedecke's counter-evidence to the "missing software" paradox: 2x/yr growth in modestly successful software (App Store top 5k→15k), slop = bad distribution not bad production
+- [[concepts/monitorability-metrics]] — Monitorability Metrics Beyond g-mean² — OpenAI Alignment pair-matched (HodgeRank) + post-control rejection-gate metrics and the intervention g-mean² lower bound; a less-aligned but more legible model can be the safer deployment (Oct 2026)
 - [[concepts/multi-agents/_index]] — Agent Team / Swarm — Concepts hub for multi-agent sub-pages
 - [[concepts/openclaw/_index]] — OpenClaw — Concepts hub for OpenClaw sub-pages
 - [[concepts/plan-and-patch-dllm-agentic-planning]] — Plan-and-Patch — dLLM agentic planning via parallel unmask + localized plan repair; 53.7% vs 27.0% plan-repair, 39-46% lower latency vs AR planners
@@ -2542,6 +2543,7 @@
 - [[concepts/nvidia-rtx-ai-garage]] — NVIDIA RTX AI Garage
 - [[concepts/nvidia-vera-rubin]] — NVIDIA Vera Rubin Platform
 - [[concepts/nvfp4-4bit-floating-point]] — NVFP4 — 4-Bit Floating Point on Blackwell — NVIDIA's native hardware support for 4-bit floating-point inference with 2-3x throughput vs FP8 and 3.5x less memory than BF16
+- [[concepts/oracle-model-routing]] — Oracle Model Routing — Fireworks DeepSWE v1.1 18-model study: oracle 97.6% @ $1.88/task vs best single model 74.1% @ $6.52; open-weight-only oracle 90.3% @ $1.45; FireRouter −53% production session cost (Oct 2026)
 - [[concepts/object-detection]] — object-detection
 - [[concepts/object-storage-queue]] — Object Storage Queue Pattern
 - [[concepts/observability-monitoring-ai-opentelemetry-python-production]] — Observability Monitoring Ai Opentelemetry Python Production
@@ -3282,6 +3284,7 @@
 - [[queries/2026-10-12-skills-npm-without-package-json-hotpost]] — Skills are npm without package.json: 6 missing resolution primitives; 2.19M adoptions, 30× audit-yield gap vs stars, >1/3 exclusive functions lost to install-order accidents
 - [[queries/2026-10-17-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-17): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-19-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-19): 0 status:skeleton pages across entities+concepts; backlog empty, no enrichment performed
+- [[queries/2026-10-23-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-23): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-20-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-20): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-21-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-21): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-22-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-22): 0 status:skeleton pages; backlog empty, no enrichment performed
