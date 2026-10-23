@@ -85,3 +85,14 @@ The economic value of agents comes from:
 - AINews: "ImageGen is on the Path to AGI" (Apr 28, 2026) — multi-agent economics
 - Kimi K2.6 parallel sub-agent architecture (Apr 2026)
 - Sakana AI Conductor model orchestration (Apr 2026)
+
+## Tokenomics — where tokens actually go in agentic software engineering (Oct 2026)
+
+The pages above model agent cost at the *aggregate* level (the ~1000× multiplier, cost-by-autonomy-level). **Tokenomics** (ChapterPal, curated via True Positive Weekly #183, Andriy Burkov) is the complementary **bottom-up breakdown**: an empirical measurement of **where tokens are actually consumed** during a coding-agent run — attributing token spend across the stages of an agentic engineering loop (e.g. prompt/context loading, tool-call inputs & outputs, reasoning/CoT, and final code output). ^[raw/newsletters/2026-10-22-true-positive-weekly-183.md]
+
+**Why it matters**: the "1000× multiplier" framing tells you *how much* an autonomous run costs; a token-consumption breakdown tells you *what to optimize*. If tool-call payloads or re-sent context dominate the bill (rather than reasoning), the levers are different — context compaction, tool-output truncation, and caching vs. prompt shortening. This is the empirical substrate for the "Token cost optimization" open question above.
+
+**Provenance caveat**: retrieved as a curate link from TPW #183; the primary ChapterPal page returned **HTTP 403** at ingest time, so the per-stage percentages could not be captured in this page. Only the framing (quantifying token use by engineering stage) is recorded here. The raw digest is at `raw/newsletters/2026-10-22-true-positive-weekly-183.md`; recommend re-fetch from a non-blocked source before citing specific numbers.
+
+### Sources
+- [Tokenomics: Quantifying where tokens are used in agentic software engineering](https://www.chapterpal.com/s/a77ad8a0/tokenomics-quantifying-where-tokens-are-used-in-agentic-software-engineering) — ChapterPal. Discovered via True Positive Weekly #183 (Andriy Burkov). Body inaccessible (403) at ingest; framing only.

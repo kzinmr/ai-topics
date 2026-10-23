@@ -992,6 +992,7 @@
     "https://link.mail.beehiiv.com/v1/c/x31sHNGZjrXa6hnVnX3sGoDtkZ0q39XXQdBXAIXo5QYyKI8eaGutK5uLtbgS%0AFy0DuS4Ee2hEnlpuOPqyYFBPi7aXElxc9WdBrPjEJIZrjNL7Tpu7mres2Ghl%0A7xfKYoF23z6N78xvmpBuhvd44JPvCiLRJtPfdJ%2BKoC12%2F6rLjggCXbl63gP9%0AzLCEgN1K1p5HOJmVqUiyYUeDES2NRJRTAw%3D%3D%0A/b5323fbac54c2307",
     "https://link.mail.beehiiv.com/v1/c/zoNWi2fPAw%2B3jk%2F5jmKFZ34gSyeWWYpzBcd5TYYiLX6vX%2Fczwio133G8haXV%0AmNrJ1R%2Fp%2FyYOB%2Bfigtyif79CF9shSC8tk3rQrFXKOQ0L%2BCwdyUyLVSV%2BG7rQ%0AEQRmpUyhEEMJmzuL3MSsvdAicnudXmn1fPZewdD7NuT36awtVr33nbQbi17x%0A9a8woMrwjWKWoQmUOWhGB3G2o%2BXgKBWbKg%3D%3D%0A/e059055f47a3bef4",
     "https://link.mail.beehiiv.com/v2/c/...",
+    "https://link.mail.beehiiv.com/v2/c/.../night-hacking",
     "https://link.mail.beehiiv.com/v2/c/114772d9a8f9cb4025c4bd66062e144618694f7e4eaa7f8c8c6e1ba43fe92b7eb5359d7dd8eeff260aef93805692357d50c9f760fb907257d1865b6fd0a213c542fda0e57b2150137777f07c461159d2448e33d4953c4b5e5157f2a12c86c9e6f3b003a18d69da0bf5360ec981c6e60a39a8ed0057b7dad7e385065693ff17796a32049f64e7a9c9705322b6c7c7e6781ca310adc46617d42b73563ce1330286/f5a08ac1e3973493",
     "https://link.mail.beehiiv.com/v2/c/21757988ce9effdd575f15098430bd6633cd872715d1658f46bdf6a1315624acdcfff03a9b07044426185ab9fa51f0423c853444d97db5ed634cadbad1c6319b50457c8598d23688a56565cd7a222b5d5a135f1e5803936504a6119eb738ea4d63bc4977d1d972c8c5203ce731a619bc2acc6d1514e3475f7991d26a2a6b8a934f98130338bbbdc4599a13791570d3cfd461cab0610b033b7545596103093da3/80def3b342335b70",
     "https://link.mail.beehiiv.com/v2/c/325e4c.../6a0c6a41d3a46ca7",
@@ -1215,11 +1216,13 @@
     "https://open.substack.com/pub/bensbites/p/can-i-get-my-agents-on-the-phone",
     "https://open.substack.com/pub/bensbites/p/caught-cheating",
     "https://open.substack.com/pub/bensbites/p/claude-code-in-slack",
+    "https://open.substack.com/pub/bensbites/p/claudes-personal-agent",
     "https://open.substack.com/pub/bensbites/p/gpt-56-is-here-but",
     "https://open.substack.com/pub/bensbites/p/grok-x-cursor",
     "https://open.substack.com/pub/bensbites/p/i-signed-up-for-another-saas",
     "https://open.substack.com/pub/bensbites/p/opus-5-fable-5",
     "https://open.substack.com/pub/bensbites/p/what-my-agent-knows-about-me",
+    "https://open.substack.com/pub/elenaverna/p/im-not-doing-996",
     "https://open.substack.com/pub/elenaverna/p/so-you-want-to-be-a-content-creator",
     "https://open.substack.com/pub/elenaverna/p/the-mom-and-pop-saas-era-has-arrived",
     "https://open.substack.com/pub/elenaverna/p/youll-lose-your-job-in-2027",
@@ -2005,6 +2008,7 @@
     "https://substack.com/app-link/post?publication_id=6349492&post_id=199606144",
     "https://substack.com/app-link/post?publication_id=6349492&post_id=199606197",
     "https://substack.com/app-link/post?publication_id=6349492&post_id=203118960",
+    "https://substack.com/home/post/p-221404681",
     "https://substack.com/profile/39274261-auriel-wright",
     "https://substack.com/redirect/...(uuid)",
     "https://substack.com/redirect/...(uuid-10)",
@@ -2605,6 +2609,7 @@
     "https://www.latent.space/p/databricks",
     "https://www.latent.space/p/gray-swan",
     "https://www.latent.space/p/inference-eng",
+    "https://www.latent.space/p/modal-d",
     "https://www.latent.space/p/radical-ai",
     "https://www.lennysnewsletter.com/p/claude-fable-5-review-what-the-new",
     "https://www.lennysnewsletter.com/p/how-i-ai-build-an-ai-code-review",
@@ -2859,5 +2864,5 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074"
   ],
-  "updated": "2026-10-22T18:16:12.872558+00:00"
+  "updated": "2026-10-23T10:58:33.639659+00:00"
 }

@@ -2,7 +2,7 @@
 title: SPADE — Self-Play in Adaptive Synthetic Executable Environments
 type: concept
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-10-23
 tags:
   - agentic-rl
   - self-play
@@ -47,3 +47,22 @@ Existing training-environment pools for language agents (hand-curated, staticall
 - Code: https://github.com/spade-rl/spade
 - Raw article: `raw/articles/2026-08-19_2608.19197_spade-self-play-adaptive-synthetic-environments.md`
 - Discussed in Import AI 470 (Jack Clark, 2026-08-24)
+
+## WarcraftSim — self-play RL on a single desktop (Warlock AI / Robin Kahlow, Oct 2026)
+
+A concrete, *low-resource* counterpart to SPADE's "self-play to get good at hard sequential decision-making" thesis. **WarcraftSim** (Warlock AI, by **Robin Kahlow**; curated via True Positive Weekly #183) trains an agent that plays the **full real game of Warcraft III** (2002 RTS, classic ladder map Echo Isles) under the game's own rules against the strongest shipped opponent — the built-in AI on **insane**, the hardest of its three levels. ^[raw/newsletters/2026-10-22-true-positive-weekly-183.md]
+
+**Headline result**: in **three weeks**, the agent went from losing to the *easy* AI to winning **~9 games in 10 (~89% win rate)** against *insane* — trained by **self-play on a single desktop**.
+
+**Key numbers:**
+- **89% win rate** vs the insane built-in AI
+- **13 ms per step** — small enough to play on an ordinary CPU
+- **~840,000 games** in training ≈ **11 years of Warcraft III** played
+- Hardware: **1 GPU (RTX 3090) + 16 CPU cores**
+- Methods: **reinforcement learning, self-play, behavioral cloning, curriculum learning**
+- Code: github.com/RobinKa/warcraftsim
+
+**Why it matters for the self-play-scaling debate**: it is a pointed contrast to datacenter-scale game-playing RL. DeepMind's **AlphaStar** (StarCraft II) trained 12 agents for **44 days on 32 TPUs each**, and **OpenAI Five** (Dota 2) used a datacenter with the game makers' help — both in 2019. Kahlow achieved a strong agent on the *real* game with **one desktop**, on a game "never built for any of this" (fog of war, four races, thousands of simultaneous unit decisions, sparse win/loss reward at the very end). Together with Modal's GPU-scale RL rollouts ([[entities/modal-labs]]), it frames the live question of **how far agent capability can go on small compute** when the environment, reward, and curriculum are well designed — the same design-lever theme as the GRPO reward-design claim in [[concepts/agentic-search]].
+
+### Sources
+- [WarcraftSim: Beating Warcraft III's hardest AI with self-play RL on one desktop](https://warlock.ai/blog/warcraftsim-1/) — Robin Kahlow / Warlock AI (Oct 2026). Discovered via True Positive Weekly #183.

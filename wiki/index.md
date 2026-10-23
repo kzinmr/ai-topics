@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3270
-> Last updated: 2026-10-22
+> Total pages: 3271
+> Last updated: 2026-10-23
 
-## Entities (952 pages)
+## Entities (953 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -57,10 +57,11 @@
 - [[entities/amd-ryzen-ai-halo]] — AMD Ryzen AI Halo — $4,000 AI dev kit with unified memory architecture for local LLM inference; competitor to NVIDIA and Apple Silicon in local AI hardware (July 2026)
 - [[entities/amp]] — Amp
 - [[entities/andon-labs]] — Andon Labs
+- [[entities/anekha-sokhal]] — Anekha Sokhal — founder/CEO of Moshi (hellomoshi.ai), recommendation engine for commodity traders; ex-JPMorgan energy derivatives trader (Warwick); "Bloomberg × Claude × Netflix baby"; AI Engineer NYC 2026 (Oct 2026)
 - [[entities/andrej-karpathy]] — Andrej Karpathy — Founding member of OpenAI, former Sr. Director of AI at Tesla, creator of nanogpt/micrograd; pioneer of LLM wiki patterns
 - [[entities/andrew-chen]] — Andrew Chen — a16z General Partner (Speedrun), author of The Cold Start Problem; local AI home lab practitioner (May 2026); essays on viral loops, vibe coding, GPT wrapper defensibility
 - [[entities/andrew-ho]] — Andrew Ho; ex-OpenAI, bearish on frontier lab valuations, Hayekian economic analysis of AI industry (Jul 30)
-- [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26); GitHub Actions registry from Homebrew parts — gh-actions-lock, OCI immutable actions (Aug 4); Supplier Security Questionnaire satire — AI governance questions (5.1-5.6), prompt injection, autonomous-agent contributors (Aug 13)
+- [[entities/andrew-nesbitt]] — Andrew Nesbitt; open source security researcher, builder of Scrutineer (LLM-powered vulnerability scanning for Alpha-Omega) (June 26); GitHub Actions registry from Homebrew parts — gh-actions-lock, OCI immutable actions (Aug 4); Supplier Security Questionnaire satire — AI governance questions (5.1-5.6), prompt injection, autonomous-agent contributors (Aug 13); "One Small Bug" — satirical agent dialogue cataloging compounding supply-chain failures (pnpm minimum-release-age bypass, prt-scan, Miri cache secret leak) (Oct 23)
 - [[entities/andrew-ng]] — Andrew Ng — AI educator, DeepLearning.AI/LearnVector founder; AI Engineering Skills Map (4 core skills for all developers, 10K+ job postings analysis); ex-Google Brain, ex-Baidu, Coursera co-founder (Aug 2026)
 - [[entities/andriy-burkov]] — Andriy Burkov
 - [[entities/andy-nguyen]] — Founder & CEO of ByteRover, building an agentic memory layer for coding agents
@@ -198,7 +199,7 @@
 - [[entities/copilot-cli]] — GitHub Copilot CLI — terminal agentic coding; sub-agents, MCP, BYOK/local models, sandbox, LSP; v1.0.79 (Aug 2026); token-based billing shift
 - [[entities/corbett]] — Corbett (Kyle Corbitt)
 - [[entities/core-auto]] — Core Auto
-- [[entities/coreweave]] — CoreWeave
+- [[entities/coreweave]] — CoreWeave; Oct 2026 stock collapse as AI-bubble canary (Marcus, Oct 22)
 - [[entities/corti]] — Corti
 - [[entities/cory-doctorow]] — Cory Doctorow; Technology Freedom Cooperative — post-American compute, federated human-rights AI infrastructure (Aug 4); "The technopolitics of ad-tech" (Oct 19: Winner's Do Artifacts Have Politics applied to ads — surveillance not advertising is the original sin; ~5% surveillance-ad efficacy delta; context ads as federated, publisher-favoring alternative; ban surveillance ads)
 - [[entities/courtlistener]] — CourtListener
@@ -592,7 +593,7 @@
 - [[entities/mixedbread]] — Mixedbread
 - [[entities/mo-bitar]] — Mo Bitar
 - [[entities/mobius-labs]] — Mobius Labs
-- [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25); NVIDIA Vera CPU adoption for Sandboxes (Oct 2026) — first Arm move off x86, up to 2x throughput vs Intel Granite Rapids, Agentless Agent Bench methodology
+- [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25); NVIDIA Vera CPU adoption for Sandboxes (Oct 2026) — first Arm move off x86, up to 2x throughput vs Intel Granite Rapids, Agentless Agent Bench methodology; Latent Space interview (Oct 22 2026) — $1B ARR / $750M Series D @ $16B / ~3B sandboxes, "duration transformation" compute economics, sandboxes = ~1/3 revenue
 - [[entities/modal-sandbox]] — Modal Sandbox (Claude Managed Agents)
 - [[entities/modular]] — Modular — AI infrastructure startup co-founded by Chris Lattner (LLVM, Swift) and Tim Davis; creator of Mojo programming language and MAX AI platform; acquired by Qualcomm for ~$4B (June 24, 2026)
 - [[entities/mojo]] — Mojo — Python-compatible programming language for AI/ML workloads; created by Chris Lattner at Modular; reached 1.0 in August 2026; MLIR compiler backend; Qualcomm acquired Modular for ~$4B

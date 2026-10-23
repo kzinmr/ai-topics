@@ -1,5 +1,28 @@
 # Wiki Log
 
+## [2026-10-23] newsletter-wiki-ingest | checkpoint 20261023T101703Z — 5 takes + 2 refs (triage JSON recovered from checkpoint; cron output JSON parse failed)
+
+- Upstream newsletter-triage response failed to parse (`failed to parse JSON response from newsletter-triage output`), but `triage_latest.json` (run_id 20261023T101703Z, 36 decisions: 5 take / 2 reference / 29 skip) was saved by the triage agent before the render failure → recovered directly, no re-run. Verified it is today's checkpoint (cross-checked git log: no prior 20261023 consumption).
+- 6 newsletters: Ben's Bites, Latent Space ×2, Elena Verna, True Positive Weekly #183, beehiiv Night Hacking (all 20 links Cloudflare-challenged → skipped).
+- Body-reading: fetched jasperlu.com (GRPO) and warlock.ai (WarcraftSim) full bodies directly (both 200); Modal Latent Space body via latent.space/p/modal-d; ChapterPal (Tokenomics) returned **HTTP 403** → recorded as framing-only with provenance caveat.
+
+**Takes executed (independently verified as genuine gaps before writing):**
+- `entities/modal-labs.md` (existing-page update) ← Latent Space "Why AI Compute Comes in Rectangles" (Erik Bernhardsson): $1B ARR, $750M Series D @ $16B, ~3B sandboxes, "duration transformation" compute economics, sandboxes ≈ 1/3 revenue (nearly shut down at launch), GPU-price-fall risk, new cohost Basil Chatha. Series C valuation recorded as contested ($5B per interview vs $4.65–4.7B May-2026).
+- `entities/anekha-sokhal.md` (NEW, 61 lines) ← Latent Space/AI Engineer NYC "You are the Team" — Moshi (hellomoshi.ai) commodity-trader recommendation engine; ex-JPMorgan trader (Warwick); "Bloomberg × Claude × Netflix baby"; 3-layer data pipeline; "you are the team". Distinct from Kyutai Moshi.
+- `concepts/agentic-search.md` (existing-page update) ← Jasper Lu "Training Search Agents with GRPO" — Harness-1 dataset (3,453 queries / 37,113 SEC filings), Tinker API (Thinking Machines), reward-design > prompt/harness claim. Complements the existing SID-1 GRPO section (research-level) with a hands-on practitioner guide.
+- `concepts/spade-self-play-environments.md` (existing-page update) ← Warlock AI "WarcraftSim" (Robin Kahlow): 89% win vs insane WC3 AI on one desktop (1× RTX 3090 + 16 cores), ~840k games, 13ms/step; contrasted with AlphaStar/OpenAI Five datacenter RL.
+- `concepts/agent-economics.md` (existing-page update) ← ChapterPal "Tokenomics" token-consumption breakdown (framing only — primary 403).
+
+**References executed:**
+- `concepts/founder-mode.md` ← Elena Verna "I'm not doing 996" (stub page; one-line cultural note only, no standalone page — no technical content).
+- Ben's Bites: Claude Duet / PHP2Shell already captured (entities/anthropic.md, events/php2shell-php-rce-2026.md) → no write.
+
+- Tags: all from SCHEMA taxonomy (company/infrastructure/…, person/founder/ai-agents/vertical-agent/ai-native/fintech/startup/domain-expertise, agentic-rl/self-play/…). No new tags added.
+- index.md: added entities/anekha-sokhal; refreshed modal-labs line; header counts Entities 952→953, Total 3270→3271.
+- Archive: 31 skip+reference candidates → 10 newly archived, 21 deduped, total_archive_urls 2863 (`raw/archived/triage/newsletter/2026-10-23_20261023T101703Z.json`).
+- Note: working tree carried uncommitted sibling (blog-ingest) changes; committed only this run's 6 wiki files.
+
+
 ## [2026-10-22] skeleton-enrich-daily: backlog empty (no action)
 
 - Frontmatter scan of `wiki/entities/` + `wiki/concepts/` for `status: skeleton` -> 0 matches. Streak continues (10-17, 10-19, 10-20, 10-21).

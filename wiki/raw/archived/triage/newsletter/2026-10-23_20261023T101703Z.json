@@ -1,57 +1,9 @@
 {
-  "archived_at": "2026-10-23T10:39:20.853757+00:00",
+  "archived_at": "2026-10-23T10:58:33.639002+00:00",
   "triage_run_id": "20261023T101703Z",
   "source": "newsletter",
   "summary_ja": "6ニュースレター（Ben's Bites / Latent Space×2 / Elena Verna / True Positive Weekly#183 / beehiiv Night Hacking）を triage。5 takes：(1) Latent Space「Why AI Compute Comes in Rectangles — Erik Bernhardsson (Modal CEO)」で entities/modal-labs.md が Series C($4.7B) で止まっており Series D($750M/$16B)・$1B ARR・約30億サンドボックス・duration transformation・サンドボックス=売上の1/3 が未収録（既存ページ更新）。(2) Anekha Sokhal/Moshi（コモディティトレーダー向けレコメンドエンジン、AI Engineer NYC）は完全未収録の新規エンティティ。(3)-(5) True Positive Weekly#183 の curate 一次記事3本（Tokenomics=エージェントのトークン消費内訳実測 / GRPO による検索エージェント訓練 / Warlock AI の WC3 自己対戦RL）は curation 自体は浅いがリンク先が wiki 中核に直結。2 references：Ben's Bites（Duet・PHP2Shell は既存ページ済み、残 curate は1-2文紹介のみ）と Elena Verna「996」労働観エッセイ（技術内容なし）。残は Substack/beehiiv ノイズ、beehiiv Night Hacking の全20リンク（Cloudflare \"Just a moment...\" チャレンジで本文到達不能）、TPW183 の低価値リンク群を skip。",
   "decisions": [
-    {
-      "item_id": "<20261022130121.3.baae42916d87d219@mg2.substack.com>-2",
-      "source": "newsletter",
-      "source_name": "Claude’s personal agent",
-      "title": "Ben's Bites — Claude's personal agent (Duet / phone-use / Supermemory / AgentReady)",
-      "url": "https://open.substack.com/pub/bensbites/p/claudes-personal-agent",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-22-claude-s-personal-agent.md",
-      "recommended_action": "reference",
-      "reason_ja": "★★★ Ben's Bites（pub 4379299）のエディトリアル・ダイジェスト。目玉の Anthropic「Claude Duet」個人エージェントは entities/anthropic.md に 2026-10-22 付で詳細セクション済み（Opus 5.5、morning-brief、6,000+ connectors 等）で重複。PHP/Railway・OpenAI PHP2Shell も events/php2shell-php-rce-2026.md 済み。残る curate（phoneuse.com の実機 Android/iPhone 操作、Supermemory のメモリグラフ、Grok Bot pages、AgentReady 仕様、Anthropic タンパクバインダー 17/211）は Ben の1-2文紹介のみで独自分析がなく、本文実体を持たないリンク集。ベン・トーヴァー本人の経歴更新（Keshav 離脱、2027 から スポンサー「1四半期4社」制）は entities/ben-tov 系の軽微な補強候補に留める。",
-      "candidate_wiki_path": null,
-      "body_excerpt": "# Newsletter Digest - 2026-10-22\n**Subject:** Claude’s personal agent\n**Collected:** 2026-10-23T10:16:49.267466+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwt"
-    },
-    {
-      "item_id": "<20261022193941.3.c42d53a13f936b4c@mg-d1.substack.com>-8",
-      "source": "newsletter",
-      "source_name": "I'm not doing 996.",
-      "title": "I'm not doing 996. (Elena Verna, Elena's Growth Scoop)",
-      "url": "https://open.substack.com/pub/elenaverna/p/im-not-doing-996",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-22-i-m-not-doing-996.md",
-      "recommended_action": "reference",
-      "reason_ja": "★★ Elena Verna（AI 企業 Growth 担当・2児の母）による AI 業界の 996（朝9時〜夜9時・週6日）礼賛文化への個人的エッセイ。本文は76パラグラフと厚いが技術的内容を欠き、核は「AI は生産性を上げるはずなのに人間には従来以上の労働時間を要求する」「AI で work は減っても working は減らないのでは」という労働観の警句。AI 業界文化の一時資料として concepts/founder-mode.md / ai-addiction-burnout.md の1行補強に留め、独立ページは閾値未達（SCHEMA の技術的価値基準に照らし skip 寄り reference）。",
-      "candidate_wiki_path": "concepts/founder-mode.md",
-      "body_excerpt": "# Newsletter Digest - 2026-10-22\n**Subject:** I'm not doing 996.\n**Collected:** 2026-10-23T10:16:55.891349+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/76c6bd6b-92a5-4442-b1cb-d16f227c8463?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E\n## 2. Lin"
-    },
-    {
-      "item_id": "<20261022174057.3.18b53bad712f036c@mg-d1.substack.com>-20",
-      "source": "newsletter",
-      "source_name": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO",
-      "title": "Modal/Latent Space noise links (2-9,11-14,16-20)",
-      "url": "https://www.latent.space/p/modal-d",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-22-why-ai-compute-comes-in-rectangles-erik-bernhardsson-modal-ceo.md",
-      "recommended_action": "skip",
-      "reason_ja": "★☆☆☆☆ Latent Space ポッドキャスト配信の email ノイズ（play_audio / play_card_* / submitLike / comments / share / read-in-app / @basilchatha プロフィール / redirect UUID 群）。実体は take 化した Latent Space ポスト本文に集約。",
-      "candidate_wiki_path": null,
-      "body_excerpt": "# Newsletter Digest - 2026-10-22\n**Subject:** Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO\n**Collected:** 2026-10-23T10:16:53.910071+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc2"
-    },
-    {
-      "item_id": "<20261022140340.3.e5db7a292325e43b@mg-d0.substack.com>-20",
-      "source": "newsletter",
-      "source_name": "The Recommendation Engine for Commodity Traders — Anekha Sokhal, Moshi",
-      "title": "Moshi/Latent Space noise links (1-9,11-14,16-20)",
-      "url": "https://substack.com/home/post/p-221404681",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-22-the-recommendation-engine-for-commodity-traders-anekha-sokhal-moshi.md",
-      "recommended_action": "skip",
-      "reason_ja": "★☆☆☆☆ 同一 Latent Space エピソードの email ノイズ（play_card_* / @swyx / いいね・コメント共有 / read-in-app / UUID 群）。実体は take 化したポスト本文に集約。",
-      "candidate_wiki_path": null,
-      "body_excerpt": "# Newsletter Digest - 2026-10-22\n**Subject:** The Recommendation Engine for Commodity Traders — Anekha Sokhal, Moshi\n**Collected:** 2026-10-23T10:16:52.052675+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91d"
-    },
     {
       "item_id": "<20261022195749.3.0cf48bebb259900b@mg-d0.substack.com>-10",
       "source": "newsletter",
@@ -111,18 +63,6 @@
       "reason_ja": "★☆☆☆☆ 時系列基盤モデル Toto 2 は AI 中核から外れ、Datadog 製品文脈。",
       "candidate_wiki_path": null,
       "body_excerpt": "# Newsletter Digest - 2026-10-22\n**Subject:** True Positive Weekly #183\n**Collected:** 2026-10-23T10:16:59.676886+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
-    },
-    {
-      "item_id": "<20261022.200727.c50d9fea@mta17>-1",
-      "source": "newsletter",
-      "source_name": "🚨 The Night Hacking Hit Machine Speed",
-      "title": "Beehiiv tracking link 1 (Night Hacking)",
-      "url": "https://link.mail.beehiiv.com/v2/c/.../night-hacking",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-22-the-night-hacking-hit-machine-speed.md",
-      "recommended_action": "skip",
-      "reason_ja": "★☆☆☆☆ beehiiv v2/c/ トラッキング URL。Link 1-4 を解決試行したが全て HTTP 200 + title \"Just a moment...\"（Cloudflare JavaScript チャレンジ）で本文到達不能。再試行は無効（チャレンジは per-URL だが 1-4 すべて失敗）。今日の inbox pre-triage summary も不在のため件名レベル評価のみ。件名「The Night Hacking Hit Machine Speed」は AI×自律セキュリティ研究/夜間自動ハッキングの示唆だが、本文検証不能のため take 化しない（degraded path では take を強制しない）。下流で別ルート（公開ドメイン推定）が取れれば再評価。",
-      "candidate_wiki_path": null,
-      "body_excerpt": "# Newsletter Digest - 2026-10-22\n**Subject:** 🚨 The Night Hacking Hit Machine Speed\n**Collected:** 2026-10-23T10:17:01.643030+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/095e55f50a0cc7275ec59f99ef7449d7f777d796c6ec3e0f77b99f0c10177d0daecf6cb923e0eb7c4b0137b"
     }
   ]
 }

@@ -2,7 +2,7 @@
 title: "Modal Labs"
 type: entity
 created: 2026-05-08
-updated: 2026-10-20
+updated: 2026-10-23
 tags:
   - company
   - infrastructure
@@ -21,6 +21,7 @@ sources:
   - raw/articles/modal.com--blog-achieve-sota-specdec--da236272.md
   - raw/newsletters/2026-07-08-why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto.md
   - raw/articles/modal.com--blog-nvidia-vera-sandboxes--1cb9000c.md
+  - raw/newsletters/2026-10-22-why-ai-compute-comes-in-rectangles-erik-bernhardsson-modal-ceo.md
 ---
 
 # Modal Labs
@@ -212,3 +213,29 @@ NVIDIA hand-delivered Modal's first **Vera CPU** server to its SF office. Vera i
 **Why it matters economically**: for background agents (Ramp Inspect, Niteshift), faster sandboxes mean faster answers → revenue and retention, plus lower CPU time → lower COGS. For RL, GPUs sit idle waiting on synchronous rollout fanouts — time saved on CPU is time saved on GPU. See [[concepts/modal-sandboxes]], [[concepts/warm-start-optimization]], [[entities/ramp]] and the [[entities/nvidia|NVIDIA]] Rubin platform.
 
 Source: raw/articles/modal.com--blog-nvidia-vera-sandboxes--1cb9000c.md
+
+## Series D & Compute Economics — Latent Space interview (Oct 22, 2026)
+
+Erik Bernhardsson (CEO) joined Vibhu on Latent Space / AI Engineer to explain the economics behind Modal's growth since the Series C. New cohost **Basil Chatha** (Forward Deployed) was introduced. ^[raw/newsletters/2026-10-22-why-ai-compute-comes-in-rectangles-erik-bernhardsson-modal-ceo.md]
+
+**Headline numbers (from the interview):**
+- Crossed **$1 billion annualized run rate** — ~5 months after the Series C.
+- Raised a **$750M Series D at a $16B valuation**.
+- Has spun up **nearly 3 billion sandboxes** cumulatively.
+- Note on the Series C valuation: the interview refers to a "**$5B series C**", while the May-2026 reporting in this page recorded **$4.65–4.7B** — the two figures are close and likely round differently; recorded here as a contested/updated datapoint rather than overwriting the earlier one.
+
+### "Compute comes in rectangles" — duration transformation
+
+The core economic thesis of the episode. A typical capacity contract gives a customer a **fixed number of GPUs for a fixed period** — plot capacity against time and you get a **rectangle**. Real workloads behave differently: they grow, spike, and fall through the day. Buy enough for the peak and you pay for idle hardware; buy less and you risk missing demand.
+
+Erik frames Modal's bet as a kind of **"duration transformation"**: pool demand across thousands of customers, secure capacity underneath, and let each customer use what they need when they need it. The smoother the aggregate demand, the more useful the pool. This is positioned as a **companion to SF Compute / Evan Conrad** — Evan makes capacity *tradeable*, Erik makes it *usable in smaller, elastic slices* (see [[entities/sf-compute]]).
+
+**Financial risk on the other side**: if a provider locks in capacity at today's prices and GPU prices later fall, it can be left holding expensive supply. Erik doesn't expect an imminent collapse but thinks the possibility matters when building the business.
+
+### Sandboxes: the product that almost didn't make it
+
+Sandboxes were launched after Erik and Akshat Bubna noticed LLMs could generate code and someone would need to run it. **Early adoption was modest enough that the team discussed shutting the product down.** Then **coding agents, background agents, and RL** created new demand. Erik says sandboxes have grown to **roughly a third of Modal's revenue** — a result he didn't predict at launch.
+
+The growth also changes what infrastructure must do: an agent may create an environment, run code, inspect the result, and retry many times, so the **latency of starting and restoring environments becomes part of the experience** (connecting to the Agent-Experience thesis and the sandbox-latency analysis above). See [[concepts/modal-sandboxes]].
+
+See also: [[concepts/agent-experience]], [[entities/sf-compute]]

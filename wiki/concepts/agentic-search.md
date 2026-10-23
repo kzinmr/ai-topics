@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-08-15
+updated: 2026-10-23
 type: concept
 tags:
   - search
@@ -23,6 +23,7 @@ sources:
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
   - raw/articles/2026-05-27_softwaredoug_cheat-at-search-steering-lost-agents.md
+  - raw/newsletters/2026-10-22-true-positive-weekly-183.md
   - raw/articles/2026-05-20_turbopuffer_reinforcement-learning-sid-ai.md
   - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
   - raw/articles/2026-04-21_softwaredoug_dont-waste-time-on-rag-paradigm.md
@@ -1188,3 +1189,23 @@ Turnbull's key insight: most organizations will need all three simultaneously. T
 - [Why 2026 is The Year of Agentic Search (YouTube)](https://www.youtube.com/watch?v=h370222tnAQ) — Doug Turnbull & Jo Kristian Bergum (2026). 65-minute fireside chat: four pillars of agentic search — LLM Query Understanding, Autoresearch (agents writing ranking code), Agentic Search Harnesses, and LLM-as-a-Judge.
 - [Lessons from Building AI Agents in Financial Services](raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md) — Agentic search as skill discovery in Fintool.
 - [Text Ranking in Deep Research (Code)](https://github.com/ChuanMeng/text-ranking-in-deep-research) — Open-source code and data.
+
+## Training Search Agents with GRPO — a hands-on practitioner guide (Jasper Lu, Oct 2026)
+
+While [[#Post-Training Design Insights (GRPO Lessons from SID-1)|SID-1]] covers GRPO at the research-model level, Jasper Lu's write-up (*Training Search Agents with GRPO*, jasperlu.com, curated via True Positive Weekly #183) is the complementary **hands-on tutorial**: training a search agent end-to-end with **Group Relative Policy Optimization (GRPO)**, with viewers for most artifacts and training code on GitHub. It is a useful "learn RL by training a search agent" companion because search exposes many levers, each of which visibly changes how the model searches. ^[raw/newsletters/2026-10-22-true-positive-weekly-183.md]
+
+**Setup & method:**
+- Approach is based **loosely on the Harness-1 paper (Jiang et al.)**, using their training dataset and a **much-simplified version of their search harness**.
+- **Dataset**: the RL split of Harness-1 — **3,453 queries over 37,113 SEC filings** split into **2,115,106 chunks**. Each query has a preamble + a question; the agent must retrieve evidence for facts in the preamble *and* the answer. Ablations start at **256 train / 32 eval queries over a reduced 124,395-chunk corpus**; scaled runs use **1,024 train queries over 237,533 chunks**.
+- **Training infra**: the **Tinker API from Thinking Machines** (training credits donated by the team).
+- Experiments progress through a **quick GRPO recap → reward design → initial explorations → learning-rate sweep → batch-size ablation → scaling up → reward shaping**.
+
+**Headline practitioner claim:** a **well-designed reward function can influence how a model searches more effectively than system-prompt changes or harness engineering.** This is a strong, testable position for the reward-design-vs-harness debate (contrast with the harness-centric framing elsewhere on this page), and it motivates the reward-shaping section as the highest-leverage knob.
+
+**Note on provenance**: indirect link via TPW #183; body fetched directly from jasperlu.com. Not sponsored-by the method, but training used donated Thinking Machines Tinker credits (disclosed by the author).
+
+See also [[concepts/agents-mcp-rl-course]], [[concepts/agent-lightning]], [[concepts/deepseek-v3-2]] (GRPO origin).
+
+### Sources
+
+- [Training Search Agents with GRPO — Jasper Lu](https://jasperlu.com/blog/training-search-agents-grpo/) — Jasper Lu (Oct 2026). Hands-on GRPO tutorial for a search agent (Harness-1 dataset, Tinker API). Discovered via True Positive Weekly #183.
