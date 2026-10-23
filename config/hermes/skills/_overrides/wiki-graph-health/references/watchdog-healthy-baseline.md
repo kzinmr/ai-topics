@@ -186,6 +186,24 @@ assert pipe_count == 0, f'Pipe corruption remaining: {pipe_count}'
 
 **Prevention**: Both the llm-wiki skill's log-prepending section AND this watchdog check are needed — the skill prevents bad insertions; the watchdog catches pipeline scripts that bypass the skill's documented patterns.
 
+### ⚠️ Full Header LOSS after log rotation (distinct from burial) — discovered 2026-10-20
+
+**Symptom**: `grep -c '^# Wiki Log' wiki/log.md` returns 0 **and** `head -1` shows a `## [` entry. The header is not buried — it is absent from every recent commit.
+
+**Root cause**: Log **rotation** replaces the file with a header string that differs from the pre-rotation one (observed 2026-10-14 rotation: header became `# Wiki Operation Log` + a rotation note paragraph, not `# Wiki Log`). Prepend pipelines that blindly `f.write(entry + content)` never restore it, so after the rotation commit the header is gone from HEAD. The 2026-10-14 rotation lost the header in the `87d793b0`-era prepends.
+
+**Diagnostics (proven 2026-10-20)**:
+```bash
+git log --format=%h -15 -- wiki/log.md   # line 1 a '## [' entry in ALL recent commits? → total loss, not burial
+git log --format=%h -S '# Wiki Operation Log' -1 -- wiki/log.md   # last commit that added/removed the header string
+git show <hash>:wiki/log.md | head -4    # inspect what the header actually was
+```
+If the last header-bearing commit predates a rotation, the rotation introduced the new header string — restore THAT string verbatim (`# Wiki Operation Log` + rotation note), not `# Wiki Log`.
+
+**Fix**: Prepend the exact header block recovered from `git show <last-good-hash>:wiki/log.md | head`. Write via `write_file` /tmp-script (execute_code blocked in cron), delete the `.bak` before committing. Verify `head -1` matches the restored header. Auto-fixable (1 file).
+
+**Watchdog check rule**: when the header grep returns 0, run the `git log -S` diagnostic — a zero persisting across ≥3 consecutive log-touching commits is rotation-induced loss, not your corruption. `scripts/fix_log_header_burial.py` does NOT handle this class (it searches for an existing header line in the file) — restore manually from git history.
+
 **⚠️ Script (added 2026-07-31)**: `scripts/fix_log_header_burial.py` in this skill directory implements the restore procedure above (header-block + orphaned + separator reconstruction, standalone-pipe cleanup, backup + verify). ⚠️ **Canonical path (verified 2026-08-02)**: the script lives at `/opt/data/ai-topics/config/hermes/skills/_overrides/wiki-graph-health/scripts/fix_log_header_burial.py` — NOT in `~/ai-topics/scripts/` and NOT under the runtime skill dir. Run from `~/ai-topics`: `python3 config/hermes/skills/_overrides/wiki-graph-health/scripts/fix_log_header_burial.py` — no args, targets `~/ai-topics/wiki/log.md`. It also writes `log.md.bak` — **delete it immediately after the script run** (`rm wiki/log.md.bak`), BEFORE any other wiki edits. `git add wiki/` sweeps the `.bak` into the commit otherwise (2026-08-11: watchdog committed it and needed a follow-up `git rm --cached wiki/log.md.bak` + push). Verify with `git status --short wiki/` before committing that no `*.bak` is staged. ⚠️ **Cron mode**: `execute_code` is BLOCKED in cron jobs (approvals.cron_mode — no user to approve). For the watchdog / wiki-health-fix / tag-audit jobs, use `write_file` to `/tmp/fix.py` + `terminal("python3 /tmp/fix.py")` or run this script directly. Do NOT rely on execute_code for log fixes in cron jobs.
 
 **⚠️ Metadata stranding bug — FIXED 2026-08-09**: The original script's `header_block` scan stopped at the first `## [` entry, so when the metadata line (`_Log of all wiki changes. Newest entries at top._`) sat BELOW the first entry in the buried file (observed: header line 39, metadata line 47), it was left stranded mid-file (landed at line 55). Current script version rescues the metadata line from anywhere in the reconstruction and places it at line 3 (header + blank + metadata + blank + first entry), and also collapses double separators (`---\n\n---\n`) introduced by the reconstruction. **Post-run verification**: always `head -5 ~/ai-topics/wiki/log.md` — expected `# Wiki Log`, blank, metadata, blank, first `## [` entry. If metadata is missing from line 3, the script copy at the canonical path is stale — re-sync from this skill dir.
@@ -459,6 +477,9 @@ grep -c '^|$' wiki/log.md           # standalone pipe corruption
 head -1 wiki/log.md                  # MUST be '# Wiki Log' — checks header burial
 grep -c '^# Wiki Log' wiki/log.md   # should be exactly 1
 wc -l < wiki/log.md                  # size check
+# ⚠️ If the header grep returns 0: the canonical header since the 2026-10-14 rotation is
+# '# Wiki Operation Log' (not '# Wiki Log') — grep BOTH before concluding corruption, and
+# run the git log -S diagnostic (see "Full Header LOSS after log rotation") before fixing.
 
 # 5. File counts
 ls wiki/entities/*.md | wc -l

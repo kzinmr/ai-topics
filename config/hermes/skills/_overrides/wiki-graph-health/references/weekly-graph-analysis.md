@@ -1,4 +1,4 @@
-# Weekly Wiki Graph Analysis — patterns & pitfalls (2026-08)
+# Weekly Wiki Graph Analysis — patterns & pitfalls (2026-08, updated 2026-10-23)
 
 Session learnings from running the `wiki-graph-analysis` weekly cron (Fri 15:00 UTC).
 
@@ -55,7 +55,7 @@ Both scripts patched 2026-08-14. If anyone reverts or copies this logic elsewher
 4. **~20 orphans are referenced via bare (non-namespaced) links.** e.g. `concepts/harness-engineering/system-architecture/context-engineering` had 136 inbound refs as `[[context-engineering]]`. Converting bare links to namespaced resolves BOTH the orphan status and a large chunk of bare-wikilink-missing broken links. Check with a basename-match pass over all pages' wikilinks.
 
 5. **Duplicate groups are not all real.** Before consolidating:
-   - Check the **`status: redirect`** frontmatter form + `redirect:` tag — **22 such stub pages exist** wiki-wide (e.g. `entities/lilianweng`, `entities/eugeneyan`). The dup detector does not skip them, so mentally subtract all redirect stubs. (This is the actual frontmatter field: `status: redirect`, sometimes paired with `tags: [..., redirect]`.)
+   - Check **BOTH redirect forms** — `status: redirect` frontmatter AND bare `redirect: <target>` field (e.g. `entities/samuelcolvin`, `entities/martin-fowler` use the latter) — the dup detector skips neither (2026-10-23: 17+ such stubs wiki-wide). Batch-detect with `grep -l 'redirect:' <pair paths>`. (This is the actual frontmatter field: `status: redirect`, sometimes paired with `tags: [..., redirect]`, sometimes just `redirect:`.)
    - `entities/_index` vs `concepts/_index` is a false positive (different namespaces).
    - Entity-vs-concept pairs (`entities/cline` vs `concepts/cline`, `entities/qwen` vs `concepts/qwen`) and concept-vs-comparison pairs (`concepts/agent-harnesses` vs `comparisons/agent-harnesses`) can be legit namespace splits — verify both are actually about the same thing; if legit, ensure they cross-link each other.
    - Real dupes are hyphen-variant pairs (eugene-yan/eugeneyan, giles-thomas/gilesthomas, alpha-proof-nexus×2, deer-flow/deerflow) — keep the richer page, add `status: redirect` to the other. BUT which side is "richer" flips between runs as pipelines keep enriching — always re-measure `wc -l` on both pages THIS session, don't trust a prior run's line counts. (2026-10-02: `giles-thomas`=92 vs `gilesthomas`=228, so the hyphenated page is the smaller one this time.)
@@ -91,7 +91,7 @@ for l in miss[:20]:
     print('  MISS', l, '<- dir-hub' if (os.path.isdir(l) and (os.path.exists(l+'/index.md') or os.path.exists(l+'/_index.md'))) else '<- REAL')
 ```
 
-2026-10-02 result: **missing-on-disk = 0** (all 596 were dir-hub false positives). So "remove N stale index entries" from the report is essentially never a real action — verify to zero before touching index.md. For the reverse check (pages on disk not in index), the report line is usually the real signal — confirm each with `grep -c "<slug>" index.md`.
+2026-10-02 result: **missing-on-disk = 0** (all 596 were dir-hub false positives). 2026-10-23 result: missing-on-disk = 6, ALL deleted prior weekly reports. So "remove N stale index entries" from the report is essentially never a real action — verify to zero before touching index.md. For the reverse check (pages on disk not in index), the report line is usually the real signal — confirm each with `grep -c "<slug>" index.md`.
 
 ## Tag-violation triage (report says "N pages with invalid tags")
 
@@ -114,6 +114,16 @@ The raw auto-report is noisy; last week's numbers are only comparable after adju
 ## Stale-page interpretation
 
 Counts are dominated by bulk-import `updated` dates (e.g. 2026-04-09/10), so >1000 "stale" pages mostly means "never touched since import", not "content degraded". Report the count but prioritize review by size+staleness (large pages stale the longest).
+
+## Batch adjudication recipes (verified 2026-10-23 — faster than reading every page)
+
+- **Redirect stubs hide in two frontmatter forms**: `status: redirect` AND a bare `redirect: <target>` field (e.g. `entities/samuelcolvin` has `redirect: samuel-colvin`, `entities/martin-fowler` has `redirect: "[[entities/martinfowler]]"`). Batch-check a whole dup set with `grep -l 'redirect:' <paths>` — if the thinner page has either form, the group is ALREADY HANDLED, zero action.
+- **One loop builds the whole verdict table**: `for p in <all dup paths>; do echo "$(wc -l < $p) $p $(grep -m1 '^status:' $p)"; done` in a single terminal call yields richer/thinner + stub status for every group at once. Which side is richer still must be measured THIS session.
+- **April-stub signature is a verdict shortcut**: groups whose thinner side is ~25 lines with `status: stub` (2026-10-23: `dspyrlm`, `evals-skills`, `llm-integration-patterns`, `open-claw-ecosystem`) need no deep read — redirect the stub, keep the other.
+- **Batch-resolve top broken targets before declaring missing**: `for s in <bases>; do find concepts entities comparisons -name "$s.md"; done`. 2026-10-23 genuine gaps were only `agent-evaluation`, `agent-memory`, `rag` + 38 empty `[[]]` links; the other top targets all resolved nested (`grpo`/`reinforcement-learning`→post-training, benchmark names→ai-benchmarks, `ai-safety`→security-and-governance, `concepts/claude-code/claude-code`→`entities/claude-code`).
+- **Report's "1 tag violation" is an undercount**: a full SCHEMA-vs-frontmatter scan finds hundreds of page-slug self-tags (page `foo` tagged `foo`). Do NOT chase them in the weekly run — route to the `tag-audit-weekly` job.
+- **Index-gap ground truth is stably ~0 real**: the independent resolver's missing-on-disk hits are the deleted prior-week reports still linked from index.md. Fix = replace the entire run of dangling `[[queries/wiki-graph-analysis-weekly-*]]` lines in index.md with today's report + annotations entries in ONE patch (they're contiguous).
+- **Sibling-WIP check before any "not indexed" action** (2026-10-23: report said 22 unindexed concepts, all were blog/active-crawl pipeline dirty files): `git status --short -- wiki/ | wc -l` — if the pages are untracked/dirty sibling WIP, defer to that pipeline.
 
 ## Report + commit workflow
 
