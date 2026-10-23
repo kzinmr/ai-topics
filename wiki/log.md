@@ -739,3 +739,9 @@ research-grade pages from genuinely uncovered material:
 - Sources: raw/articles/2026-10-22_doubleai-maxwell-code-execution-model.md, raw/articles/2026-10-22_layerfs-filesystem-for-ai-coding-agents.md
 - Wikilinks: concepts/formal-verification-llm-agents, concepts/recursive-self-improvement, concepts/harness-engineering, entities/anthropic, entities/peter-steinberger, entities/litellm
 - Verification: NO_SLOP_FOUND / 0 MISS / NO_TYPO
+
+## 2026-10-23 15:00 UTC — Weekly wiki graph analysis
+- Ran `scripts/_weekly_graph_report.py`: 3,288 pages; 491 orphans (485 rich), 4,223 broken links (352 fixable), 16 dup groups, 321 oversized, 2,385 stale.
+- Adjudicated all 16 dup groups: 8 real (eugene-yan, gilesthomas, lilian-weng [contested], alpha-proof-nexus, deer-flow, dspyrlm-stub, evals-skills-stub, llm-integration-patterns-stub, open-claw-ecosystem-stub), 2 already redirects (martin-fowler, samuelcolvin), 3 false positives (_index pair, deliberate-coder≠deliberatecoder different people), 3 borderline namespace splits (cline, qwen, agent-harnesses).
+- Independent resolver: index gap = 0 real (6 dangling = deleted prior reports, rotated out); report's 27/22 counts are generator inflation + sibling-agent WIP.
+- Wrote queries/wiki-graph-analysis-weekly-2026-10-23.md + -annotations.md; replaced dangling report entries in index.md.

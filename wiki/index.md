@@ -3306,12 +3306,8 @@
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
 - [[queries/test-time-compute-three-axes-2026-09-24]] — Compute-vs-accuracy frontier has 3 axes (sleep-time / test-time / post-peak); benchmarks only measure the middle one
-- [[queries/wiki-graph-analysis-weekly-2026-08-28]] — Weekly Wiki Graph Analysis (2026-08-28) — 3,021 pages scanned; 478 orphans (475 content-rich), 3,555 broken links (197 fixable), 16 dup groups (8 false positives), 1,725 stale pages
-- [[queries/wiki-graph-analysis-weekly-2026-08-28-annotations]] — Human-adjudicated verdicts on this week's 16 duplicate groups (5 real dups incl. Lilian Weng fact conflict) + false-positive metrics in the auto report
-- [[queries/wiki-graph-analysis-weekly-2026-09-18]] — Weekly Wiki Graph Analysis (2026-09-18) — 3,079 pages (recursive scan); 446 orphans (303 content-rich), 2,810 broken links (919 raw-ref-as-wikilink), 8 real duplicate groups, 1,661 stale, 0 tag violations
-- [[queries/wiki-graph-analysis-weekly-2026-09-25]] — Weekly Wiki Graph Analysis (2026-09-25) — 3,112 pages; 465 orphans (316 rich), 3,512 broken refs (context-engineering hub = 188), 8 unresolved dup groups + 48 dir-collision stubs, 2,230 stale; state snapshot persisted
-- [[queries/wiki-graph-analysis-weekly-2026-10-02]] — Weekly Wiki Graph Analysis (2026-10-02) — 3,120 pages; 6 top-level orphans, 0 ghost entries, 866 tags
-- [[queries/wiki-graph-analysis-weekly-2026-10-16]] — Weekly Wiki Graph Analysis (2026-10-16) — 3,258 pages (recursive, Obsidian-resolution); 3,039 true orphans (93%), 1,840 broken targets + 649 normalization-needed, 15 confirmed dup groups, 2,364 stale; built-in weekly script flagged as undercounting
+- [[queries/wiki-graph-analysis-weekly-2026-10-23]] — Weekly Wiki Graph Analysis (2026-10-23) — 3,288 pages; 491 orphans (485 content-rich), 4,223 broken links (352 auto-fixable), 16 dup groups, 321 oversized, 2,385 stale
+- [[queries/wiki-graph-analysis-weekly-2026-10-23-annotations]] — Adjudicated verdicts: 8 real dup pairs (2 already redirects), deliberate-coder/deliberatecoder = different people, index gap = 0 real, 9 nested-resolvable broken targets
 - [[queries/where-the-missing-software-went]] — Where the missing software went: reconciles code-review-bottleneck (shipping didn't grow) with the modest-success boom (modest successes doubling per year) — growth went long-tail, review capacity is the moat
 
 ## RSS Scans
