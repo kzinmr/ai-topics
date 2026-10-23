@@ -4,7 +4,7 @@
 > Total pages: 3271
 > Last updated: 2026-10-23
 
-## Entities (953 pages)
+## Entities (954 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -966,7 +966,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2202 pages)
+## Concepts (2222 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2058,6 +2058,7 @@
 - [[concepts/gpt/gpt-system-card-milestones]] — OpenAI System Cards — Key Milestones Timeline
 - [[concepts/gpt/image-2-vs-nano-banana-2]] — GPT Image 2 vs Nano Banana 2 (redirect → [[comparisons/gpt-image-2-vs-nano-banana-2]])
 - [[concepts/gpt/index]] — GPT Models
+- [[concepts/gpt/_archive/2026-04-24-news-aggregation]] — April 2026 OpenAI Launch Wave (GPT-5.5, ChatGPT Images 2.0, Qwen3) — archived snapshot
 - [[concepts/gpt/memory-systems-chatgpt-vs-claude-vs-cognition]] — AI Memory Systems — ChatGPT vs Claude vs Cognition
 - [[concepts/gpt/milestones]] — GPT Model Milestones
 - [[concepts/gpu-bubble-ai-inference]] — GPU Bubble (AI Inference) — idle GPU cycles during autoregressive decode due to CPU-GPU communication overhead; Moondream Photon pipelined decoding achieves up to 35% higher throughput on NVIDIA B200 (June 30)
@@ -3224,7 +3225,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (41 pages)
+## Events (42 pages)
 
 - [[events/2026-10-21-litellm-pypi-compromise]] — LiteLLM 1.107.0 PyPI compromise (Oct 21, 2026) — malicious wheels + Docker tags served 11:46–14:20 UTC; payload runs at every Python interpreter start (cook.pth, sitecustomize.py), steals SSH/cloud/CI/AI-tool creds and proxy-stored provider keys; publish-step compromise, clean at 1.106.2
 - [[events/php2shell-php-rce-2026]] — PHP2Shell: AI-discovered core PHP RCE (CVE-2026-109618/109619, Oct 21 2026) — Wiz Research used Wiz Atlas + Gemini 4 Argon + GPT-5.6 Sol to turn decade-old memory-safety flaws into pre-auth RCE/memory-disclosure affecting ~70% of the web (WordPress/Drupal/Joomla); "AI inflection point" vs Heartbleed/Log4Shell; contested severity (jackalsyn CVSS 5.3 vs Wiz 9.2)
@@ -3270,7 +3271,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (40 pages)
+## Queries (37 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines

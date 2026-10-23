@@ -1,3 +1,13 @@
+## [2026-10-23] health-fix | Wiki health auto-fix: orphans cleared, index counts corrected
+
+### Changes
+- Deleted zero-content TODO stub `concepts/gpt/_archive/2026-04-24-ainews.md` (440 B, "TODO: Enrich this page" only)
+- Registered `concepts/gpt/_archive/2026-04-24-news-aggregation` (April 2026 OpenAI Launch Wave) in `concepts/gpt/index.md` See Also + main `index.md` — digest orphans 2 -> 0
+- Corrected section header counts in `index.md` to actual list-line counts: Entities 953->954, Concepts 2202->2222, Events 41->42, Queries 40->37
+- Verified clean: index corruption 0 (pipe/line-number/triple-bracket/space-prefix), L2 pipe-prefix 0, validate_index.py pass
+
+---
+
 # Wiki Log
 
 ## [2026-10-23] trending-topics | daily report — Model Collapse of Viewpoints (new) + 4 in-place index refreshes

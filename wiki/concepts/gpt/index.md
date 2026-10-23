@@ -6,7 +6,7 @@ tags:
   - openai
 status: active
 created: 2026-04-20
-updated: 2026-06-03
+updated: 2026-10-23
 sources:
   - https://openai.com/index/introducing-gpt-5-5/
   - https://openai.com/index/introducing-chatgpt-images-2-0/
@@ -354,6 +354,7 @@ See [[concepts/gpt/chatgpt-images-2-0]] for GPT Image 2.0.
 
 - [[concepts/openai/index]] — OpenAI Platform & APIs (responses-api, agents-sdk, codex, realtime, symphony)
 - [[concepts/gpt/gpt-deployment-safety-hub]] — Deployment Safety Hub (all 20 system cards)
+- [[concepts/gpt/_archive/2026-04-24-news-aggregation]] — April 2026 OpenAI Launch Wave (GPT-5.5, ChatGPT Images 2.0, Qwen3) — archived snapshot
 
 ## References
 
