@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-10-23] trending-topics | daily report — Model Collapse of Viewpoints (new) + 4 in-place index refreshes
+
+- Sources: blog_ingest 2026-10-23 (35 new / 20 scraped, active-crawl vendor batches), newsletter triage 20261023T101703Z (5 takes / 2 refs / 29 skips), HN Algolia front_page + keyword pass (days=2).
+- NEW concept: [[concepts/model-collapse-of-viewpoints]] — ModelCompare 12-model × 3-prompt experiment: 29/35 "controversial take on humans" answers identical across 10 labs / 3 countries. Raw saved to `raw/articles/2026-10-23_modelcompare_ai-models-same-controversial-take-on-humans.md`. SCHEMA Models line += model-collapse, safety-calibration, model-comparison.
+- Agent Skills → AAIF governance transfer (Oct 22) confirmed already documented at [[concepts/agent-skills]] §Governance by blog-wiki-ingest; index line refreshed only.
+- Claude Duet, OpenAI CLI, LiteLLM 1.107.0 compromise, Modal Series D/$1B ARR, Fireworks Series D — all previously ingested by morning pipelines; no duplicate work.
+- Report: inbox/rss-scans/trending-topics-2026-10-23.md.
+
 ## [2026-10-23] newsletter-wiki-ingest | checkpoint 20261023T101703Z — 5 takes + 2 refs (triage JSON recovered from checkpoint; cron output JSON parse failed)
 
 - Upstream newsletter-triage response failed to parse (`failed to parse JSON response from newsletter-triage output`), but `triage_latest.json` (run_id 20261023T101703Z, 36 decisions: 5 take / 2 reference / 29 skip) was saved by the triage agent before the render failure → recovered directly, no re-run. Verified it is today's checkpoint (cross-checked git log: no prior 20261023 consumption).

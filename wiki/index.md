@@ -330,7 +330,7 @@
 - [[entities/finbarr-timbers]] — Finbarr Timbers
 - [[entities/fintool]] — Fintool
 - [[entities/fiona-fung]] — Fiona Fung
-- [[entities/fireworks-ai]] — Fireworks AI; added Frontier Training Infrastructure (zero-KLD train/serve alignment, batch invariance for MoEs, DeepGEMM, GLM 5.2 managed service) + Hybrid Harness GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp) (June 25); MLA/QK-Clip technical explainer (July 2025)
+- [[entities/fireworks-ai]] — Fireworks AI; added Frontier Training Infrastructure (zero-KLD train/serve alignment, batch invariance for MoEs, DeepGEMM, GLM 5.2 managed service) + Hybrid Harness GLM 5.2 + Opus 4.8 benchmarks (SWE-bench Pro +7pp, Terminal-Bench +4pp, Legal Agent +4pp) (June 25); MLA/QK-Clip technical explainer (July 2025); sitemap batch (Oct 23) surfaced stale Series C ($250M @ $4B) doc — page already current at Series D $1.505B @ $17.5B
 - [[entities/florian-brand]] — Florian Brand
 - [[entities/flue]] — Flue
 - [[entities/folk-app]] — folk
@@ -1039,7 +1039,7 @@
 - [[concepts/agent-sandbox-patterns]] — Agent Sandbox Patterns — Isolate-the-Tool vs Isolate-the-Agent; zero-secret agent + credential-holding control plane (Unikraft micro-VM); Browser Use production architecture (Feb 2026)
 - [[concepts/agent-security-patterns]] — Agent Security Patterns
 - [[concepts/agent-skill-ecosystem-missing-package-manager]] — Missing Package Managers (synthesis of arXiv:2610.11169 + 2610.11647, both 2026-10-08) — the SKILL.md namespace lacks registry/pinning/provenance/name-resolution; 2,193,119 adoptions traced with stars useless for origin ID (top-100 ranked audit = 14.9% vs 0.5% for starred, ~30x) and 1-in-4 skills co-installed with a same-job rival whose winner is decided by install location
-- [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24)
+- [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24); Agent Skills standard donated to Agentic AI Foundation / Linux Foundation by Anthropic (Oct 22 2026) — both SKILL.md and MCP now under neutral governance
 - [[concepts/academic-reception-of-ai-math]] — Academic reception of AI-generated mathematics — the Oct 2026 OpenAI math split: AHM's institutional objection + Karagila's "verification DoS" desk-rejection critique, vindicated by the 24-hour withdrawal cascade
 - [[concepts/adaptive-code-revision-attacks-pr-reviewers]] — AFCRA: attackers mine AI PR reviewers' own feedback to revise code so the reported issue is fixed but a vulnerability survives; AFCRA-Bench (159 vulns), success 2.5x/12.5x over text-only attacks vs Sonnet 5 / GPT-5.5 (arXiv:2610.05399, Oct 2026)
 - [[concepts/agent-slop]] — Agent Slop — the reliability gap between AI marketing claims and demonstrated capability; evals-as-evidence framing (created 2026-09-15)
@@ -2505,6 +2505,7 @@
 - [[concepts/multi-channel-agents]] — Multi Channel Agents
 - [[concepts/multi-model-synthesis-strategies]] — Multi-Model Synthesis Strategies — Cross-comparison of 3 approaches (Cognition Devin Fusion Sidekick, OpenRouter Fusion Panel Synthesis, Sakana Fugu Evolved Orchestration). Structural shift from single-model era to multi-model coordination (June 30)
 - [[concepts/multi-objective-policy-distillation]] — Multi-Objective Policy Distillation (MOPD)
+- [[concepts/model-collapse-of-viewpoints]] — Model Collapse of Viewpoints — 12 frontier models from 10 labs converge on one identical "controversial take on humans" (29/35 answers); viewpoint diversity collapse via post-training, distinct from synthetic-data model collapse (ModelCompare, Oct 22 2026, HN 467p)
 - [[concepts/multi-teacher-on-policy-distillation]] — Multi-Teacher On-Policy Distillation (MOPD)
 - [[concepts/multi-token-prediction]] — Multi-Token Prediction (MTP) Drafters
 - [[concepts/multi-token-residual-prediction]] — Multi-Token Residual Prediction (MRP) — DLM inference optimization via inter-step logit residual prediction; 1.56× lossless throughput (SGLang), +16 accuracy points at aggressive thresholds; Modal × NYU Shanghai HeavyBall Research (July 2 🆕)
