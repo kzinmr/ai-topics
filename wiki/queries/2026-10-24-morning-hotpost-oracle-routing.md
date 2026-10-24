@@ -1,3 +1,13 @@
+---
+title: "Morning Hot-Post 2026-10-24 — Oracle Routing の経済学"
+created: 2026-10-24
+updated: 2026-10-24
+type: query
+tags: [query, model-routing, oracle-routing, ai-economics, agent-economics]
+sources: []
+status: active
+---
+
 # 🔥 18モデルの97.6%が"棚上げ"されている — Oracle Routingの経済学
 
 morning slot (2026-10-24 09:30 JST)。新規wiki 3本を「エージェント時代のモデル選択はコスト問題ではない」という1本の物語に束ねる。

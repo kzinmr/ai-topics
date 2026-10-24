@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3277
+> Total pages: 3304
 > Last updated: 2026-10-24
 
-## Entities (955 pages)
+## Entities (959 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -967,7 +967,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2228 pages)
+## Concepts (2227 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -3234,7 +3234,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (45 pages)
+## Events (44 pages)
 
 - [[events/kure-korea-retrieval-suite-2026]] — KURE (Korea University REtrieval models, nlpai-lab, Oct 23 2026) — first major suite covering all 4 Sentence Transformers model types (dense/sparse/multi-vector/reranker) for Korean & English; KURE-v3 (~1.1B, 2048d + Matryoshka to 256d), KURE-v2 (154M ColBERT-style MaxSim), Sparse-base/nano, Reranker-base/nano (1.7B/149M CrossEncoder). Amplified by Tom Aarsen.
 - [[events/vercel-oidc-credentials-2026]] — Vercel "Death to long-lived static credentials" (Malte Ubl, Oct 22 2026) — push to replace static API keys with OIDC; survey finds only 8.4% of 1000+ SaaS vendors support secure auth; frames static-credential leakage via agents/prompt-injection as an agent-safety issue; OIDC UI registry + Marketplace auth requirements. Amplified by Jo Bergum.
@@ -3283,7 +3283,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (37 pages)
+## Queries (39 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines

@@ -1,3 +1,16 @@
+## [2026-10-24] watchdog | Wiki health auto-fix
+
+### Changes
+- Fixed missing frontmatter on `queries/2026-10-24-morning-hotpost-oracle-routing.md` (hot-post query page created without YAML frontmatter; added title/created/updated/type/tags/sources/status, tags all SCHEMA-compliant: query, model-routing, oracle-routing, ai-economics, agent-economics)
+- Corrected index.md section header counts to actual list-line counts: Entities 955→959, Concepts 2228→2227, Events 45→44, Queries 37→39, Total 3277→3304
+
+### Verification
+- Index corruption scan: pipe/line-number/triple-bracket/space-prefix all 0
+- Ghost entries: 0; top-level not-indexed pages: 0; L2 pipe-prefix bullets: 0
+- `validate_index.py` passes
+
+---
+
 # Wiki Log
 
 ## [2026-10-24] watchdog | auto-fix — complete stranded newsletter-take (Trainium3 → custom-ai-silicon)
