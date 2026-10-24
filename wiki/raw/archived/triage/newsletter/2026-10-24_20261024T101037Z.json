@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-10-24T10:36:48.545092+00:00",
+  "triage_run_id": "20261024T101037Z",
+  "source": "newsletter",
+  "summary_ja": "4通（SemiAnalysis / The Signal / beehiiv セキュリティ / Irrational Analysis）を判定。SemiAnalysis の Trainium3 実運用評価（TorchNeuron ネイティブ PyTorch バックエンド、8万物理コアの QA CI、Neuron Explorer プロファイラ）を ★★★★★ の take とし、本文60段落を raw/articles/ に保存済み。Irrational Analysis の Market Memo は OpenAI $1.25T / Anthropic IPO $1.5T への評価額切り下げという具体数値を提供するため concepts/ai-bubble-economics.md 更新（★★★★☆）として take。The Signal は Karpathy の「sharp funnel」4層モデルの要約なので reference。beehiiv の Quest Diagnostics 侵害報道と全 Substack chrome リンクは skip。",
+  "decisions": [
+    {
+      "item_id": "<20261023130414.3.d8b596aff31c1d40@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "The Signal (Alex Banks)",
+      "title": "You're still early — Karpathy「sharp funnel」4層モデル",
+      "url": "https://thesignal.substack.com/p/youre-still-early",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-23-you-re-still-early.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ 本文21段落を確認。Karpathy の4月ポスト（無料 tier 利用者 vs 有料で最良モデルを日常利用する層の「speaking past each other」）を 2026-10-11 に再掲し、「2つの集団」が「sharp funnel」に変わったとして約60億人（人口の約75%）はほぼ未接触／約2,000万人が最良モデルで数学・コードを使用／ラボ内の約5,000人は未公開モデルを運用、という napkin math を提示している。ギャップを拡大させる3要因（問題の小ささ＝1段落で答える質問では能力を試せない／デジタルで自動検算可能な作業に偏る不均一な能力／無料版・有料版・ラボ内版が事実上別物であることへのアクセス格差）と、検算方法を用意すれば非エンジニアでも 2,000万人層に近づけるという筆者の主張、プロンプト雛形が続く。新規 concept を起こすほどの独自分析ではない（Karpathy の一次ポストの要約＋筆者の実践Tips）が、capability-gap / AI 採用格差を論じる既存ページ（concepts/vibe-physics.md 等）の補強素材として有用。",
+      "candidate_wiki_path": "concepts/vibe-physics.md",
+      "body_excerpt": "# Newsletter Digest - 2026-10-23\n**Subject:** You're still early\n**Collected:** 2026-10-24T10:10:30.460890+00:00\n**Articles linked:** 16\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpb"
+    },
+    {
+      "item_id": "<20261023130414.3.d8b596aff31c1d40@mg-d0.substack.com>-noise",
+      "source": "newsletter",
+      "source_name": "The Signal (Alex Banks)",
+      "title": "You're still early — Substack noise links",
+      "url": "substack app-link / redirect / profile links",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-23-you-re-still-early.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Substack UI 系リンク（play_audio / action=post-comment / submitLike / action=share / redirect=app-store-no-desktop / @author profile / redirect/2/eyJ... OAuth リダイレクト / redirect/ UUID 計測リンク）は全てスキプ対象。実コンテンツリンクは既に取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-23\n**Subject:** You're still early\n**Collected:** 2026-10-24T10:10:30.460890+00:00\n**Articles linked:** 16\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpb"
+    }
+  ]
+}
