@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-10-24 21:30] hot-post | concepts/two-stage-confidence-caliber.md created
+
+- Night-slot hot-post material: page created from Cohere CALIBER blog (published 2026-10-20, raw scraped 2026-10-24). 7B ECE 0.059→0.028 (−52.5%), AUROC 0.806.
+- sources: raw/articles/2026-10-24_cohere_rethinking-confidence-in-reasoning-models.md
+- Registered in index.md concepts section.
+
 ## [2026-10-24] trending-topics | 1 new concept + 3 updates — Per-Request AI Carbon, Kimi K3.1 Pro, FV-at-scale, Trainium3
 
 **Source**: HN Algolia (front-page + keyword passes, 2-3 day window) + morning pipeline checkpoints (blog_ingest 20261024T100007Z, newsletter 20261024T101037Z).

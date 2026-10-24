@@ -1132,6 +1132,7 @@
 - [[concepts/model-hardware-standard]] — Model Hardware Standard (MHS) — Anthropic spec for AI agents operating lab/manufacturing hardware; MCP-accessible, open-source planned (Aug 2026)
 - [[concepts/modest-success-software-boom]] — The Modest-Success Boom — Goedecke's counter-evidence to the "missing software" paradox: 2x/yr growth in modestly successful software (App Store top 5k→15k), slop = bad distribution not bad production
 - [[concepts/monitorability-metrics]] — Monitorability Metrics Beyond g-mean² — OpenAI Alignment pair-matched (HodgeRank) + post-control rejection-gate metrics and the intervention g-mean² lower bound; a less-aligned but more legible model can be the safer deployment (Oct 2026)
+- [[concepts/two-stage-confidence-caliber]] — CALIBER (Cohere) — pre/post-reasoning two-number confidence; 7B BigMathDigits ECE 0.059→0.028 (−52.5%), AUROC 0.806; zero-shot −26.8~−36.2% on QA benchmarks (Oct 2026)
 - [[concepts/multi-agents/_index]] — Agent Team / Swarm — Concepts hub for multi-agent sub-pages
 - [[concepts/openclaw/_index]] — OpenClaw — Concepts hub for OpenClaw sub-pages
 - [[concepts/plan-and-patch-dllm-agentic-planning]] — Plan-and-Patch — dLLM agentic planning via parallel unmask + localized plan repair; 53.7% vs 27.0% plan-repair, 39-46% lower latency vs AR planners
