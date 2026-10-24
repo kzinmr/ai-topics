@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-09-09
+updated: 2026-10-23
 type: entity
 tags:
   - company
@@ -30,6 +30,7 @@ sources:
   - raw/articles/2026-08-03_sierra_plaid-partnership-ai-agents.md
   - raw/articles/sierra.ai--blog-context-engine--100dce93.md
   - raw/articles/sierra.ai--blog-release-governance-guardrails-for-agents-at-scale--af2b93a3.md
+  - raw/articles/sierra.ai--blog-tau-entity-can-voice-agents-get-the-details-right--bee3927c.md
   - raw/articles/2026-09-09_sierra_hyper-tau-bench-agents-that-build-agents.md
 ---
 
@@ -250,6 +251,20 @@ Three layers:
 Sierra's framing: as the Agent Development Lifecycle matures, release governance "stops being overhead and becomes the thing that lets teams move quickly without holding their breath" — non-negotiable once hundreds of people build in parallel for an agent talking to customers around the clock.
 
 Source: [[raw/articles/sierra.ai--blog-release-governance-guardrails-for-agents-at-scale--af2b93a3]]
+
+### 𝜏-Entity — can voice agents get the details right? (October 2026)
+
+Sierra introduced **𝜏-Entity**, a benchmark (shipped alongside **𝜏-i18n**, same six languages) measuring whether voice agents can capture a single critical field correctly — name, phone number, address, email — across **200 tasks × 10 entity types**, scored with **Pass³** (success under regular, noise-heavy, and speech-heavy conditions). Headline results: GPT Live 1 leads with 60.3% regular-condition capture but only **34.0% Pass³**; Gemini 3.8 Live and Grok Voice Think Fast 2.0 fall from ~44% to 19.5%/24.0%. Korean Pass³ collapses to 3.5–8.5% and Mandarin to 12.5–24.5%.
+
+The deeper findings, from the companion **𝜏-Elicitation** paper:
+- **Agents recognize only some reasons to slow down**: they verify hard/unfamiliar entities more, but only Grok verified more under noise, and *none* spent extra effort on the caller voice it struggled with most.
+- **Prescribed verification (ask → spell/read-back → confirm → submit) raises Pass³ success from 14–41% to 37–54%** (+14–31 points) at a cost of 21–28 extra seconds per call — the reliability/latency trade-off made explicit.
+- **Recovery is unreliable**: only 24–37% of initially-wrong captures that the agent *does* verify get corrected; agents repeat or replace-with-new errors.
+- **Errors compound**: three-field calls succeed only 53% of the time even at 75% per-field accuracy; per-field validation + retries lifted it 64% → 82%.
+
+The work extends the τ-bench family's core thesis into speech: reliable voice agents need uncertainty recognition, targeted verification, and actual repair — collaboration with Victor Barres (Mercor), same author lineage as [[concepts/ai-benchmarks/tau-voice]] (Soham Ray et al.).
+
+Source: [[raw/articles/sierra.ai--blog-tau-entity-can-voice-agents-get-the-details-right--bee3927c]]
 
 ## Significance
 

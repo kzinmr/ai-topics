@@ -2,7 +2,7 @@
 title: "Agent Skills"
 type: concept
 created: 2026-04-25
-updated: 2026-10-02
+updated: 2026-10-23
 tags:
   - architecture
   - mcp
@@ -25,6 +25,7 @@ sources:
   - raw/articles/2026-01-24_openai-developers-blog_eval-skills.md
   - raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-astra.md
   - raw/articles/arxiv-2610-01564-chaining-skills-to-hijack-llm-agents.md
+  - raw/articles/simonwillison.net--2026-oct-22-donating-agent-skills--4b2657f9.md
 related:
   - building-effective-agents
   - effective-harnesses-for-long-running-agents
@@ -227,3 +228,9 @@ Both [[entities/matthew-honnibal]] and [[entities/hamel-husain]] independently i
 ## Security: Cross-Skill Handoff Attack (October 2026)
 
 APEX (arXiv:2610.01564) shows that chaining **individually benign** skills is an attack surface: an upstream skill induces the agent to write a genuine task-progress record containing a fabricated user-approval claim, and a downstream skill acts on it (84.3% targeted-action success on GPT-5.4 vs 17.4% when the workflow is one skill). The skill boundary itself resets provenance tracking — see [[concepts/apex-adversarial-skill-chain-hijacking]].
+
+## Governance: Donated to the Agentic AI Foundation (October 2026)
+
+On **October 22, 2026**, Anthropic announced it is donating the Agent Skills standard to the **Agentic AI Foundation (AAIF)** under the Linux Foundation — the same body Anthropic co-founded with Block and OpenAI in 2025, and which has hosted the [[concepts/mcp|MCP]] specification since its own donation. Anthropic's commitment: keeping Agent Skills "open, community-driven, and vendor-neutral." This completes the pattern Simon Willison predicted in December 2025 (when Anthropic first declared skills an "open standard"): both of the two dominant agent-extension formats — MCP for tools, SKILL.md for expertise — now live under neutral Linux Foundation governance rather than single-vendor control. Willison verified his own prediction post by prompting Claude over his datasette-mcp plugin, an early dogfood of MCP-exposed personal content for retrospective retrieval. See [[entities/simon-willison]].
+
+Source: [[raw/articles/simonwillison.net--2026-oct-22-donating-agent-skills--4b2657f9.md]]

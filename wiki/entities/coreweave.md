@@ -6,11 +6,12 @@ tags:
   - hardware
   - infrastructure
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-10-23
 sources:
   - "https://coreweave.com"
   - "https://investors.coreweave.com"
   - "https://corbt.com/posts/openpipe-coreweave"
+  - raw/articles/garymarcus.substack.com--p-all-the-kings-horses-and-all-the--9d571052.md
 ---
 
 # CoreWeave
@@ -87,6 +88,7 @@ This vertical integration mirrors the trend of cloud providers moving up the sta
 - **vs. Hyperscalers (AWS, GCP, Azure)**: CoreWeave focuses exclusively on GPU/AI workloads, offering better price-performance for training and inference
 - **vs. Other Neoclouds (Lambda, Together AI, Crusoe)**: CoreWeave has the largest scale and most complete platform after the acquisitions
 - **Post-IPO**: One of the largest tech IPOs of 2025; valuation reached ~$23B+ at peak
+- **Oct 2026 stock collapse**: CoreWeave's share price collapsed over roughly six months into late Oct 2026; Gary Marcus ("All the king's horses...", Oct 22) noted the only rebound came from a Monday TV-hype cycle. Functions as the public-market canary for the [[concepts/ai-bubble-economics]] capex-vs-revenue critique. Source: [[raw/articles/garymarcus.substack.com--p-all-the-kings-horses-and-all-the--9d571052.md]]
 
 ## Market Context
 

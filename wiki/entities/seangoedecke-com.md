@@ -2,10 +2,11 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-10-19
+updated: 2026-10-23
 type: entity
 sources:
   - raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md
+  - raw/articles/seangoedecke.com--software-is-slow-because-of-bad-design-not-slow-languages--4c48f523.md
   - raw/articles/seangoedecke.com--you-should-never-be-angry-at-work--943567d1.md
   - raw/articles/seangoedecke.com--how-to-keep-thinking--faf73de6.md
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
@@ -294,6 +295,7 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 
 ## Recent Articles
 
+- **Software is slow because of bad design, not slow languages** (2026-10-22): rebuts the "AI will make software fast by rewriting it in Rust" wave — most programs are I/O-bound or already delegate hot work to fast libraries; real speedups come from redesign (caching, async, N+1 fixes), and agents should be asked to profile and redesign, not rewrite. Full analysis at [[#Software Is Slow Because of Bad Design, Not Slow Languages (Oct 2026)]]. ^[raw/articles/seangoedecke.com--software-is-slow-because-of-bad-design-not-slow-languages--4c48f523.md]
 - **What requirements don't you have?** (2026-10-18): RLVR-trained frontier models invent hypothetical requirements (unnecessary mutexes, TOCTOU-style re-checks, admin-status edge cases), bloating 4-line changes into "thousand-line monsters" — sees unsolicited requirements in ~half of large AI-generated diffs; a direct rebuttal to "code review is dead." Full analysis at [[#What Requirements Don't You Have? — RLVR "Grader" Overcompliance in Code (Oct 2026)]]. ^[raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md]
 
 - **How to protect yourself from workslop** (2026-09-02): Names and attacks "workslop" — colleagues communicating by pasting big chunks of AI-generated text. Core mechanism: **effort asymmetry "like a denial-of-service attack"** — near-zero cost to produce, full cost to read. Doc-writing used to be a "canary task" reliably signaling real effort; AI destroys that signal. Prescriptions: hand-write docs as the polite default, demand specifics "that an LLM wouldn't be able to come up with unless somebody had actually done some work," and (as manager) state clearly when AI docs are acceptable. Diagnostic insight: the harm isn't the prose volume — it's that "you're no longer sure which parts of your coworkers' communication are real." Filed into [[concepts/ai-slop]]. ^[raw/articles/seangoedecke.com--how-to-protect-yourself-from-workslop--b1b3e70a.md]
@@ -512,6 +514,20 @@ In "[What requirements don't you have?](https://seangoedecke.com/what-requiremen
 This is the practitioner-perspective complement to the research-side treatment of the same failure class in [[concepts/prompt-optimizers-unscored-requirements]] (arXiv:2610.13287, optimizers gaming unscored requirements) and extends the review-as-bottleneck evidence in [[concepts/code-review-bottleneck]] with a *content* failure mode (diffs bloated by unsolicited requirements) rather than the usual *volume/latency* framing. It also continues his "If You Are Good at Code Review" thesis (above): the senior skill is knowing which requirements the system *doesn't* have — something RLVR-trained models structurally lack.
 
 Source: [[raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md]]
+
+### Software Is Slow Because of Bad Design, Not Slow Languages (Oct 2026)
+
+Goedecke pushes back on the current "have your AI agent rewrite it in Rust/C" wave: **most programs cannot be meaningfully sped up by rewriting them in a faster language**, because performance is dominated by I/O and design, not language speed.
+
+- **Most programs are I/O-bound**: if 50% of a CRUD request is database queries, a C rewrite caps you at ~1.5–2x. "You could speed the code in curl up by 100x and you probably wouldn't even notice."
+- **Slow languages already delegate**: markdown via cmark-gfm, Python ML via GPU/C kernels — if 80% of time is matrix multiply, a C rewrite buys nothing.
+- **The Cantrill anecdote**: a master C programmer rewriting his optimized C in naive Rust got a 30% *speedup* — from Rust's B-tree-over-BST default, i.e., design/data-structure choice, not language.
+- **His own speedups were all redesigns**: caching, async/background jobs, parallelization, N+1 fixes, query replacement, skipping unneeded fetches — and slow high-level languages make those *easier to spot*.
+- **The AI-era prescription**: don't ask agents to rewrite; ask them to **profile, find hotspots, and suggest redesigns**. Language rewrites only help in the rare truly-CPU-bound hotspot.
+
+Continues his design-centrism line ("Nobody Gets Promoted for Simplicity", "What requirements don't you have?") and connects to the [[concepts/agent-native-tool-fallacy]] skepticism toward AI-hype-shaped engineering fads.
+
+Source: [[raw/articles/seangoedecke.com--software-is-slow-because-of-bad-design-not-slow-languages--4c48f523.md]]
 
 ## Sources
 

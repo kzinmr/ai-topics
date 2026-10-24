@@ -4,7 +4,7 @@ type: concept
 aliases:
   - tau-voice
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-10-23
 tags:
   - benchmark
   - ai-agents
@@ -17,6 +17,7 @@ related:
   - "[[concepts/evaluation/pass-k-metric]]"
 sources:
   - raw/papers/2026-03-14_2603.13686_tau-voice-full-duplex-voice-agents.md
+  - raw/articles/sierra.ai--blog-tau-entity-can-voice-agents-get-the-details-right--bee3927c.md
 ---
 
 # τ-Voice
@@ -117,6 +118,10 @@ This result is significant. The bottleneck for voice agents is not **speech reco
 | Core Challenge | Dialogue + Tools | Dialogue + Tools + Coordination | Knowledge Retrieval + Reasoning | **Voice Dialogue + Tools + Coordination** |
 | Representative Numbers | GPT-4o <50% | Solo→Interactive -25pt | GPT-5.2 ~25.5% | **26–38%** |
 | Task Count | — | — | — | **278** |
+
+## Successor: 𝜏-Entity (October 2026)
+
+Sierra's **𝜏-Entity** (Oct 2026, shipped with **𝜏-i18n**) narrows τ-Voice's detail-capture failure mode into a controlled single-field benchmark: 200 tasks × 10 entity types (names, phone numbers, addresses, emails), scored with **Pass³** across regular/noise-heavy/speech-heavy conditions. Best agent (GPT Live 1): 60.3% regular capture but only 34.0% Pass³; Korean Pass³ as low as 3.5–8.5%. Companion **𝜏-Elicitation** paper: agents adapt verification effort to some difficulties (hard/unfamiliar entities) but not others (noise, bad caller voices); prescribed ask→spell→confirm→submit verification raises success 14–41% → 37–54% at +21–28s latency; only 24–37% of verified wrong captures actually get repaired. See [[entities/sierra]]. Source: [[raw/articles/sierra.ai--blog-tau-entity-can-voice-agents-get-the-details-right--bee3927c.md]]
 
 ## Practical Implications
 

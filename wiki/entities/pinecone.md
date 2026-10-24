@@ -2,7 +2,7 @@
 title: "Pinecone"
 type: entity
 created: 2026-05-08
-updated: 2026-08-11
+updated: 2026-10-23
 tags:
   - company
   - search
@@ -19,6 +19,7 @@ sources:
   - raw/articles/2026-07-17_pinecone_text-match-filters.md
   - raw/articles/2026-08-11_pinecone_the-ceiling-was-never-the-model.md
   - raw/articles/2026-08-11_pinecone_pinecone-nexus-generally-available.md
+  - raw/articles/2026-10-23_pinecone_when-vectors-became-an-implementation-detail.md
 ---
 
 # Pinecone
@@ -172,6 +173,20 @@ Pinecone announced **Nexus GA** (Aug 6, 2026) — generally available for deploy
 **Key architecture**: Nexus compiles data once, ahead of time, into governed domain-specific knowledge; agents query it via **KnowQL** (a query language built for agents) and get typed, cited answers in a single call. Every field carries a citation + confidence score; access control is applied at retrieval time, not prompt time. Runs in your own cloud on the models you choose with no standing Pinecone access to customer data.
 
 Source: raw/articles/2026-08-11_pinecone_the-ceiling-was-never-the-model.md, raw/articles/2026-08-11_pinecone_pinecone-nexus-generally-available.md
+
+## Vectors as an Implementation Detail — Integrated Embedding on the Documents API (October 2026)
+
+Pinecone's engineering history post frames the company's 2.5-year API arc as one goal: **take preparation work off the user**, with vectors being "an implementation detail" essential to how the database finds things but not something a developer should build.
+
+**Lineage:** BYO-vectors via the Vectors API (2021) → slab storage (in-memory buffer, immutable self-describing slab files, background compaction; made index selection composable across index *kinds*) → **Records API** integrated embedding (2024) → **Documents API** with native full-text search (2025-26) → **integrated embedding as a per-field schema option** (2026).
+
+The Records API turned out to be **premature**: it wrapped the Vectors API, so text still lived in a metadata field, one index was locked to one model and one text field, and there was no room to add native full-text. The Documents API rebuilt from the top down around a typed document schema (string / dense vector / sparse vector / metadata) and **inverted the request shape** — the Vectors API made your data conform to it; the Documents API conforms to yours. Full-text fields keep the raw text once in the slab plus a **Tantivy inverted index** scored with BM25, fixing the "text-as-metadata" problem (metadata indexes are built for exact-value filtering, which raw prose never benefits from).
+
+**Now shipping:** a single string field can carry `full_text_search` (stemming, stop words) *and* `embed: {model: ...}` simultaneously. Writes take plain text — Pinecone embeds with the field's model, stores the vector beside the text, and builds the text index in one write; **if embedding fails nothing in the request is written**. Queries also go in as text and are embedded with the same model.
+
+**Latency win**: self-embedding costs two round trips per search (embedding API, then Pinecone); integrated embedding collapses it to one. Pinecone measured **~3.5× faster at the median** versus calling its standalone embedding API then searching with the vector — most of the gap is simply the avoided network hop. Roadmap: hybrid search, integrated reranking, multiple vector fields per document.
+
+Source: [[raw/articles/2026-10-23_pinecone_when-vectors-became-an-implementation-detail]]
 
 ## Related
 

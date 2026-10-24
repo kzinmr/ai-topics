@@ -2,7 +2,7 @@
 title: "Dark Factory Software Factory"
 type: concept
 created: 2026-04-13
-updated: 2026-10-14
+updated: 2026-10-23
 tags:
   - concept
   - multi-agent
@@ -18,6 +18,8 @@ sources:
   - raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers.md
   - raw/articles/2026-08-28_ubereng_running-software-factory-efficiently-at-uber-scale.md
   - raw/articles/x.com--sarahfim--anti-slop-software-factory--2026-10-12.md
+  - raw/articles/2026-10-21_warp_rolling-out-software-factories.md
+  - raw/articles/2026-10-21_warp_self-improving-software-proactive-agents.md
 ---
 
 # Dark Factory Software Factory
@@ -311,6 +313,25 @@ Oz is Warp's cloud software factory platform — the infrastructure through whic
 | **Ultimate goal** | Level 5 autonomy | Level 4 productivity | Spectrum from L3-L5 | **Recursive self-improvement** |
 
 Source: [[raw/articles/2026-06-26_warp_we-are-now-factory-engineers-not-product-engineers]]
+
+### Rollout Tactics and Proactive Agents (October 2026)
+
+Two October 2026 Warp posts extend the June memo from *what* a factory is to *how an organization adopts one* and *what the agent decides on its own*.
+
+**Organizational rollout (Zach Lloyd, "Tactics for rolling out software factories")** — the stated goal is explicitly **not full automation**: it is shipping the highest-impact software as fast and cheaply as possible, proved by measuring and tuning the factory. Prerequisite: at least some product engineering must run *through* the factory rather than via local coding agents, which requires **centralizing agents into one shared configuration** the team optimizes together. Two entry strategies:
+
+1. **Simple low-risk automations** on tasks engineers regard as chores — Warp's own factory fixes Sentry-reported server crashes, triages dogfood issues, generates the weekly changelog, and updates public docs. Deliberately *not* starting with backlog-fixing loops: unreviewed agent PRs turn a team off a factory approach — the **"slop cannon"** failure. A factory-champions team tunes automations before wide rollout, and every automation output needs a clear owner plus a decent signal-to-noise ratio.
+2. **Make direct prompting through the factory as easy as tagging an agent** in existing tools. At Warp the majority of direct prompting now starts in Slack and continues in Linear/GitHub with the same context.
+
+Positioning matters: sell the factory as an **infrastructure platform** where everyone does factory engineering, not as a "product". Encourage, don't require; celebrate shipped work, **not token spend**. Metric order is deliberate — adoption first (**% of merged PRs through the factory**), then throughput, cycle time, and cost per PR.
+
+**Proactive agents (Ben Holmes, "Self-improving software")** — small loops (computer-use verification, auto-fix CI, adversarial review) are "building trust", but the unfinished part is the **one large loop** from task to shipped product: agents deciding *what to build next*. Three deployed patterns:
+
+- **Proactive bug fixes** — not clearing a backlog, *creating* it. A webhook-triggered agent (Warp "automations file": trigger + prompt + model) receives a fatal Sentry alert, investigates, and ships the PR with the small-loop safeguards attached. The "factory foreman" prompt is the whole integration surface.
+- **Proactive agent self-improvement** — aggregate all team agent sessions (traces, tool calls, artifacts), LLM-as-judge score them against team-defined rubrics (e.g. an efficiency scorer: "did the agent reach a solution in the fewest steps?"), have an agent find common causes in low-scoring sessions, then propose changes to the codebase, skills, or AGENTS.md. Holmes is careful to distinguish this from RSI — it improves the *process behind* the software, and the gains land in velocity, quality, and delivery cost. The discipline has names: gardening, meta-engineering, **factory engineering**.
+- **Proactive product work** — the sensitive one. Customer-discovery transcripts (recorded via Grain) are exposed to agents over MCP; an agent re-reads them on a cadence, finds where customers commonly get stuck, and proposes roadmap items — first to Slack, then as Notion tasks. Human taste stays in the loop; agents remove the friction of assembling the evidence.
+
+Sources: [[raw/articles/2026-10-21_warp_rolling-out-software-factories]], [[raw/articles/2026-10-21_warp_self-improving-software-proactive-agents]]
 
 ## Case Study: Uber's Software Factory at Enterprise Scale (August 2026)
 

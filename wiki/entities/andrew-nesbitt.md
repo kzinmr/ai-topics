@@ -1,9 +1,10 @@
 ---
 title: "Andrew Nesbitt"
 tags: [person]
-sources: [raw/articles/nesbitt.io--2026-08-04-brew-install-actions-checkout-html--7762f317.md, raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md]
+updated: 2026-10-23
+sources: [raw/articles/nesbitt.io--2026-08-04-brew-install-actions-checkout-html--7762f317.md, raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md, raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md]
 created: 2026-04-24
-updated: 2026-10-13
+updated: 2026-10-23
 type: entity
 ---
 
@@ -519,6 +520,20 @@ Claude Code dominates AI disclosure in critical packages, with the February-Marc
 
 Source: [[raw/articles/nesbitt.io--2026-08-06-a-year-of-ai-disclosure-in-critical-packages-html--da60d729.md]]
 
+### "One Small Bug" — the agent as supply-chain mine-sweeper (Oct 23, 2026)
+
+A satirical-yet-exact dialogue piece: a coding agent ("Clauding…", "Fuddling…", "Lockfiling…", "Zizmoring…", "Rotating…") asked to add a CSV export button keeps unearthing one compounding supply-chain disaster after another, each escalation spawning the next vulnerability:
+
+- `pnpm` pinned in `packageManager` **silently ignores unknown `.npmrc` keys**, so the repo's `minimum-release-age` protection was never enforced — a transitive dep published 77 minutes earlier slipped in.
+- `uv.lock` contains a package that was the subject of fake-CVE satires (`CVE-2024-YIKES`, `CVE-2026-LGTM` — callback to his own [[entities/andrew-nesbitt|CVE-2026-LGTM incident report]]).
+- Renovate's `minimumReleaseAge` was **skipped whenever someone asked for a PR rebase** until 44.79.0; Dependabot's cooldown reads version timestamps the attacker controls.
+- `release.yml` triggers on `pull_request_target` while checking out the PR head (the **prt-scan campaign** opened 500+ PRs against such workflows); `triage.yml` on `issue_comment`, flagged by zizmor 1.31; the publish job holds `id-token: write`, which can request a token for *any* audience including AWS.
+- The Rust job's cached `target/` (built with a pre-2026-09-22 Miri nightly that **wrote every environment variable into the cache**, restored by fork PRs) leaked every secret → full rotation. Several secrets were *already* dead: npm revoked granular write tokens bypassing 2FA in May; NuGet legacy keys expire Nov 1; RubyGems revoked all legacy keys on 23 July after a CDN edge node could serve them to another user.
+
+The piece reads as a narrative catalog of 2026's package-manager/CI security incidents, and doubles as a demonstration of a plausible agent workflow: the LLM as an auditor that notices the *interactions* between pnpm pinning, lockfiles, Dependabot cooldowns, GitHub Actions triggers, and cache poisoning — the exact "defensive agent" scenario his [[concepts/artificial-contributors-open-source|Artificial Contributors]] and package-security series has been preparing for. See also [[concepts/software-supply-chain-security]], [[concepts/ai-supply-chain-security]].
+
+Source: [[raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md]]
+
 ## References
 
 - raw/articles/nesbitt.io--2026-06-03-skills-registry-threat-models-html--63b9387d.md
@@ -543,3 +558,4 @@ Source: [[raw/articles/nesbitt.io--2026-08-06-a-year-of-ai-disclosure-in-critica
 - raw/articles/nesbitt.io--2026-06-26-incident-report-cve-2026-lgtm-html--da259599.md
 - raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md
 - raw/articles/nesbitt.io--2026-10-12-now-thats-what-i-call-technical-debt-html--c10d9aef.md
+- raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md

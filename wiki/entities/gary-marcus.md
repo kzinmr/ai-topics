@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-10-13
+updated: 2026-10-23
 tags:
   - lab
   - benchmark
@@ -23,6 +23,8 @@ sources:
   - raw/articles/garymarcus.substack.com--p-could-generative-ai-could-turn-out--0880f6f7.md
   - raw/articles/garymarcus.substack.com--p-this-one-weird-trick-might-cost-your--a9a098c7.md
   - raw/articles/garymarcus.substack.com--p-breaking-bad-news-for-three-of-the--1abe3375.md
+  - raw/articles/garymarcus.substack.com--p-breaking-news-us-banks-are-taking--12840c29.md
+  - raw/articles/garymarcus.substack.com--p-all-the-kings-horses-and-all-the--9d571052.md
   - raw/articles/garymarcus.substack.com--p-breaking-when-dreams-for-ai-sanity--a268c138.md
   - raw/articles/garymarcus.substack.com--p-why-things-will-eventually-fall-apart--aa0d561a.md
   - raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md
@@ -499,6 +501,13 @@ Source: [[raw/articles/garymarcus.substack.com--p-excellent-new-bill-gates-essay
 ### "Could this be the Frontier Labs' WeWork moment?" (Oct 12, 2026)
 
 Marcus argues the AI build-out is repeating WeWork's structural failure: **frontier labs are building data centres worth $50-100bn without enough revenue to justify the expenditure**, while the major labs (OpenAI/Anthropic) are headed for IPOs at valuations that require revenue growth the current products cannot deliver. Evidence cited: **Stargate's UK arm (ABSA) shut down** after the £2bn deal fell apart; **UK government backing for OpenAI's £31bn Stargate UK plan collapsed** (James Murdoch's Llama Nation filing pulled). Key structural diagnosis — **"there is no viable market mechanism by which the labs can earn back these sums"** — echoing his recurring capex-vs-revenue critique. ^[raw/articles/garymarcus.substack.com--p-could-this-be-the-frontier-labs-wework--c92a2493.md]
+
+### "U.S. banks are taking hits from AI agents" + CoreWeave meltdown (Oct 22, 2026)
+
+Two same-day posts extending Marcus's two running beats:
+
+- **Agent-enabled crime vs frontier-only regulation**: Citing Madison Mills (Axios), banking executives are "racing to restrict access to their systems as AI moves at a velocity faster than financial institutions can respond." Marcus situates the bank incidents in a wave — agent-facilitated attacks on French refrigeration systems (Oct 11), an ongoing cyberattack wave in Japan, months of OpenAI-lab attacks on Hugging Face and the Australian government, and The Information's report on the Latin American "Cybercartel" group. His regulatory argument: **attackers don't need frontier models to cause mayhem**, so focusing regulation on compute-measured frontier capability is misallocated — current models are already causing serious harm in banking, education, and politics. Includes his Oct 3 counter-quote of Sam Altman ("the world should accept some bad things happening for the benefits of this technology..."). ^[raw/articles/garymarcus.substack.com--p-breaking-news-us-banks-are-taking--12840c29.md]
+- **CoreWeave**: "All the king's horses and all the king's men haven't been able to put CoreWeave back together again" — Marcus charts the six-month stock collapse, noting the only blip upward came Monday from pundits hyping the stock on television. Direct corroboration of the [[concepts/ai-bubble-economics]] thesis and CoreWeave's role as its canary. See [[entities/coreweave]]. ^[raw/articles/garymarcus.substack.com--p-all-the-kings-horses-and-all-the--9d571052.md]
 
 ## References
 

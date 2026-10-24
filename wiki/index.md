@@ -3288,6 +3288,7 @@
 - [[queries/2026-10-17-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-17): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-19-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-19): 0 status:skeleton pages across entities+concepts; backlog empty, no enrichment performed
 - [[queries/2026-10-23-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-23): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-10-24-morning-hotpost-oracle-routing]] — Morning hot-post: Oracle Routing 97.6% @ $1.88 vs Astra 74.1% @ $6.52; Vercel OIDC 8.4% secure-auth gap; OpenAI post-control monitorability metric
 - [[queries/2026-10-20-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-20): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-21-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-21): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-22-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-22): 0 status:skeleton pages; backlog empty, no enrichment performed

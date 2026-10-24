@@ -807,3 +807,6 @@ research-grade pages from genuinely uncovered material:
 - Adjudicated all 16 dup groups: 8 real (eugene-yan, gilesthomas, lilian-weng [contested], alpha-proof-nexus, deer-flow, dspyrlm-stub, evals-skills-stub, llm-integration-patterns-stub, open-claw-ecosystem-stub), 2 already redirects (martin-fowler, samuelcolvin), 3 false positives (_index pair, deliberate-coder≠deliberatecoder different people), 3 borderline namespace splits (cline, qwen, agent-harnesses).
 - Independent resolver: index gap = 0 real (6 dangling = deleted prior reports, rotated out); report's 27/22 counts are generator inflation + sibling-agent WIP.
 - Wrote queries/wiki-graph-analysis-weekly-2026-10-23.md + -annotations.md; replaced dangling report entries in index.md.
+
+## 2026-10-24 00:31 UTC — Morning hot-post (Discord)
+- queries/2026-10-24-morning-hotpost-oracle-routing.md: Oracle Model Routing (97.6% @ $1.88 vs Astra 74.1% @ $6.52) + Vercel OIDC (8.4% SaaS secure auth) + OpenAI monitorability beyond g-mean2. Dedup clean, slop grep NO_SLOP_FOUND, zero wikilink MISS.

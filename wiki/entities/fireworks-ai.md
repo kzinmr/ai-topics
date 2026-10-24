@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 type: entity
 created: 2026-05-02
-updated: 2026-08-27
+updated: 2026-10-23
 tags:
   - entity
   - company
@@ -40,6 +40,8 @@ sources:
   - raw/articles/2026-08-08_fireworks-ai_voyage-ai-models-now-on-fireworks.md
   - raw/articles/2026-08-12_fireworks-ai_meta-muse-glimmer.md
   - raw/articles/2026-08-27_fireworks-ai_post-training-kimi-k3-with-harvey-for-long-horizon-legal-work.md
+  - raw/articles/2026-10-23_fireworks-ai_fireworks-amd-instinct-gpu-partnership.md
+  - raw/articles/2026-10-23_fireworks-ai_llm-model-routing-deepswe.md
   - https://fireworks.ai
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
@@ -577,6 +579,24 @@ The company has surpassed **$1 billion in annualized revenue run rate** (ARR) an
 The funding will be used to expand compute infrastructure and grow the engineering team, further cementing Fireworks' position as the leading inference infrastructure platform for [[concepts/post-training/reinforcement-fine-tuning|customized open-weight models]] and [[concepts/ai-agent-engineering|production agent workloads]].
 
 **Source:** [[raw/articles/2026-07-17_fireworks-ai_series-d-announcement]]
+
+## AMD Instinct Multi-Year Partnership (October 2026)
+
+Fireworks and AMD signed a **multi-year strategic agreement** to optimize AMD Instinct GPUs and accelerate adoption among AI-native companies and enterprises. Under the deal AMD gives Fireworks access to **Instinct MI325X and MI355X** accelerators through preferred cloud service providers, and Fireworks tunes every layer of its stack — model-serving runtimes through training frameworks — for those parts.
+
+Stated customer outcomes: lower TCO (model-level efficiency reduces GPU count for a given production workload), better throughput/latency via kernel- and runtime-level optimization, and faster production ramp from pre-optimized models and tooling. Announced with benchmarks and developer resources still pending.
+
+This is the deepest formalization yet of Fireworks' two-vendor stance (see [[#Multi-Hardware Strategy]]) — previously expressed as general NVIDIA + AMD support rather than an architecture-specific co-optimization agreement. It also positions Fireworks as an AMD-side answer to NVIDIA-aligned inference providers, at a moment when AMD Instinct is the main non-CUDA path for frontier open-weight serving.
+
+**Source:** [[raw/articles/2026-10-23_fireworks-ai_fireworks-amd-instinct-gpu-partnership]]
+
+## DeepSWE 18-Model Routing Analysis (October 2026)
+
+Fireworks published the largest routing study on DeepSWE to date — **18 models × 113 tasks, 4 rollouts per cell** — finding that an oracle picking the best model per task reaches **97.6% at $1.88/task**, 23 points above the best single model (GPT-6 Astra, 74.1% at $6.52) at under a third of the cost, and that an **open-weight-only** oracle still reaches 90.3% at $1.45, beating every closed model in the set by 16 points. Production **FireRouter** cut coding-session cost 53% ($7.42 vs $15.81 for Opus 5 alone) across 2,334 sessions over four weeks.
+
+Fireworks' argument is that routing is a capability lever, not only a cost lever: with complementary models, the selection policy becomes a system component alongside context, tools and tests. See [[concepts/oracle-model-routing]] for the full numbers, the oracle-bias caveat, and the LLMRouterBench recall problem.
+
+**Source:** [[raw/articles/2026-10-23_fireworks-ai_llm-model-routing-deepswe]]
 
 ## Fireworks Nexus
 

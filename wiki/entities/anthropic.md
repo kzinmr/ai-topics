@@ -854,6 +854,12 @@ positioning competes directly with OpenAI's personal-agent push and with
 Sources: raw/articles/2026-10-22_anthropic-claude-duet-launch.md,
 HN https://news.ycombinator.com/item?id=50186037
 
+### Agent Skills donated to the Agentic AI Foundation (Oct 22, 2026)
+
+Anthropic donated the **Agent Skills standard** (SKILL.md format) to the **Agentic AI Foundation (AAIF)** under the Linux Foundation — the same neutral body it co-founded with Block and OpenAI that already hosts the Model Context Protocol. Stated goal: keeping Agent Skills "open, community-driven, and vendor-neutral." With MCP (tools) and Agent Skills (expertise) both now under AAIF governance, Anthropic's two most consequential agent-stack formats have completed the same open-standards arc, removing single-vendor-control concerns that had shadowed the "open standard" claim since December 2025. See [[concepts/agent-skills]], [[entities/simon-willison]].
+
+Source: [[raw/articles/simonwillison.net--2026-oct-22-donating-agent-skills--4b2657f9.md]]
+
 ## Related Pages
 - [[Claude models]] — Model family details
 - [[concepts/ai-economics]] — Tokenmaxxing, AI ROI debate

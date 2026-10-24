@@ -2,8 +2,8 @@
 title: Dwarkesh Patel
 type: entity
 created: 2026-04-09
-updated: 2026-08-26
-sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md, raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md, raw/articles/dwarkesh.com--p-why-compute-might-get-10x-more-expensive--dbadb8d5.md, raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md]
+updated: 2026-10-23
+sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md, raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md, raw/articles/dwarkesh.com--p-why-compute-might-get-10x-more-expensive--dbadb8d5.md, raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md, raw/articles/dwarkesh.com--p-intel-tour--d52e3da1.md]
 tags:
   - person
   - blogger
@@ -60,6 +60,7 @@ As of early 2026, the Dwarkesh Podcast has published approximately 115 episodes 
 || **Jun 2026 (late)** | Published "The next big breakthrough will be AIs learning on the job" — RLVR generalization limits vs OPSD/dreaming as 4th scaling axis; computer use grindability; KV cache vs weight update density (35M× difference); 2027 continual learning vision |
 || **Jul 2026** | Published "Why compute might get 10x more expensive in coming years" — Anthropic 10× revenue growth, Google-SpaceX $900M/month GPU rental, Alchian-Allen effect, compute scaling factors hitting wall by end 2027 → [[concepts/compute-pricing]] |
 || **Aug 2026** | Interviewed [[entities/ryan-greenblatt|Ryan Greenblatt]] (Chief Scientist, Redwood Research): "What happens once AI can automate AI research?" — recursive self-improvement plausibility, RSI timeline (median 2031 for automating AI R&D), alignment implications ("aligned to whom?"), reward hacking → world takeover extrapolation, OAI/HuggingFace hack precedent → [[concepts/recursive-self-improvement]] |
+|| **Oct 2026** | "What will computer chips look like in 2045?" — two-day tour of Intel's most advanced fab with animated explainers (gate-all-around transistors, backside power, CFET, hybrid bonding, ruthenium interconnects, High-NA EUV); Intel CTO: AI compute demand growing 3x/yr but leading-edge wafer production can at most double with today's global chipmaking-tool stock; Terafab re-thinking → see below |
 |
 ## Key Projects
 
@@ -221,6 +222,19 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [The data black hole at the center of AI — Part 2 (Jun 2026)](https://www.dwarkesh.com/p/the-sample-efficiency-black-hole-2)
 - [Ryan Greenblatt — "What happens once AI can automate AI research?" (Aug 2026)](https://www.dwarkesh.com/p/ryan-greenblatt)
 - [Dylan Patel — "Anthropic & OpenAI will have most of the world's compute by 2028" (Aug 2026)](https://www.dwarkesh.com/p/dylan-patel-3)
+- [What will computer chips look like in 2045? — Intel fab tour (Oct 2026)](https://www.dwarkesh.com/p/intel-tour)
+
+## Intel Fab Tour — "What will computer chips look like in 2045?" (Oct 2026)
+
+A two-day, on-site tour of Intel's most advanced fab plus interviews with its technical leadership (Gary Dickerson, Peter Wennink of ASML), produced as a new video-first format with original animated explainers for gate-all-around transistors, backside power delivery, CFET stacked transistors, hybrid bonding, copper→ruthenium interconnects, and High-NA EUV (which pays off for Intel but not TSMC). Key AI-relevant datapoints:
+
+- **The demand/supply gap**: AI compute has grown **~3x per year for a decade**; Intel's CTO says Intel could **only double** leading-edge wafer production with today's global stock of chipmaking tools. ASML's Wennink: demand "easily 40-50% above our maximum capacity, which I've never seen before."
+- **Node bring-up lessons** from the 10nm debacle; why stacked (CFET) transistors take a decade to ship; hybrid bonding as the chip-to-chip bottleneck.
+- **Terafab** — a ground-up rethinking of fab design to break past the tool-stock ceiling; the "Can Intel catch up to TSMC?" question run through the whole episode.
+
+This is a primary-source datapoint for the AI compute-supply debate alongside [[entities/dylan-patel]]'s bottleneck interviews and [[concepts/compute-scaling-bottlenecks]].
+
+Source: [[raw/articles/dwarkesh.com--p-intel-tour--d52e3da1.md]]
 
 ## References
 
