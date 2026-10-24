@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## 2026-10-24 10:35 UTC — Newsletter triage (20261024T101037Z)
+- 4 newsletters triaged: 2 takes, 1 reference, 4 skips (Substack chrome batched). Triage JSON at cron/data/newsletter/triage_latest.json; skip+reference archived.
+- TAKE: SemiAnalysis "Amazon's Trainium Takes a Strike at the Training King" (Dylan Patel/Daniel Nishball) — Trainium3 hands-on: native PyTorch backend TorchNeuron (replaces PyTorch/XLA lazy graph capture; .to("cuda") → .to("neuron"), first-class torch.distributed/DTensor/SimpleFSDP/DDP), 80,000 physical cores for automated QA CI, Neuron Explorer profiler beats NVIDIA/AMD, TorchTitan/FlexAttention ecosystem, BF16-first (no day-0 TorchAO MXFP8). Body (60 paras) saved to raw/articles/2026-10-23_semianalysis_amazons-trainium-takes-a-strike-at-the-training-king.md. Target: concepts/custom-ai-silicon.md (Trainium mentioned only in one list line) + entities/semianalysis.md + entities/dylan-patel.md.
+- TAKE: Irrational Analysis "[Market Memo] Dancing in the Rain" — OpenAI private round cut $1.4T → $1.25T ($30B raise, TechCrunch 2026-10-22), Anthropic IPO whisper $2T → $1.6-1.8T → $1.5T raising $60-100B; urgency tied to Anthropic audited S-1 numbers; "Circular Financing, Meet Circular Token Spending" framing. Body saved to raw/articles/2026-10-24_irrational-analysis_market-memo-dancing-in-the-rain.md. Target: concepts/ai-bubble-economics.md (updated 2026-09-09, lacks Oct valuation cuts).
+- REFERENCE: The Signal (Alex Banks) "You're still early" — Karpathy Oct 11 re-post "sharp funnel": ~6B barely touched AI / ~20M use best models for maths+code / ~5,000 in-labs; 3 gap drivers (problem size, uneven capability, free vs paid vs lab access). Candidate supplement to concepts/vibe-physics.md.
+- SKIP: beehiiv "The Worst-Case Hack Hits Quest Diagnostics" (healthcare breach, no AI angle, 20 tracking links); all Substack UI chrome links.
+
 ## [2026-10-23] ingest | x-accounts-scan: KURE (Korea Univ retrieval suite), Vercel OIDC credentials, AI peer-review study
 
 - New event page `events/kure-korea-retrieval-suite-2026.md` — KURE (nlpai-lab / Korea University), first suite covering all 4 Sentence Transformers model types (dense/sparse/multi-vector/reranker) for KO+EN, via Tom Aarsen thread.
