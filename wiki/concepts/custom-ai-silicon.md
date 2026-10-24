@@ -1,7 +1,7 @@
 ---
 title: Custom AI Silicon
 created: 2026-05-27
-updated: 2026-08-07
+updated: 2026-10-24
 type: concept
 tags:
   - concept
@@ -19,6 +19,7 @@ sources:
   - raw/articles/2026-05-27_nvidia-vera-rubin-q3-2026.md
   - raw/articles/2026-05-27_amd-mi355x-mlperf-inference-v6.md
   - raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
+  - raw/articles/2026-10-23_semianalysis_amazons-trainium-takes-a-strike-at-the-training-king.md
 ---
 
 # Custom AI Silicon
@@ -186,6 +187,18 @@ The custom silicon trend extended to AI labs themselves in August 2026. **[[enti
 - **Context**: This mirrors [[entities/openai|OpenAI]]'s **Jalapeno** custom chip effort with Broadcom, and [[entities/meta|Meta]]'s next-generation in-house chip program (reportedly due September 2026)
 
 Anthropic's move shifts it from pure external-silicon customer (TPUs via Google, Trainium via AWS, GPUs via NVIDIA/Microsoft) toward the **co-design model-first silicon strategy** that Google pioneered with TPUs. The `$320K-$485K` salary band signals serious senior engineering investment. (Source: Superintel+ newsletter, 2026-08-06)
+
+## Trainium3 Cracks Training (SemiAnalysis, October 2026)
+
+SemiAnalysis's engineering team ran **Trainium3 racks in production for several weeks** and published a first-hand assessment ("Amazon's Trainium Takes a Strike at the Training King", 2026-10-23). Trainium was historically strong at inference but weak for research training, where rapidly changing architectures demand a broad API surface. Key findings:
+
+- **TorchNeuron**: the AWS Neuron team's biggest shift — a first-class **native PyTorch backend** replacing the old XLA-style delayed graph-capture model. `.to("cuda")` → `.to("neuron")` is often enough; most ATen ops work in eager mode with `torch.compile`, and `torch.distributed` / DTensor / SimpleFSDP / DDP are first-class supported.
+- **QA fleet**: AWS dedicates up to **80,000 physical cores** to automated quality-management CI.
+- **Neuron Explorer profiler**: judged clearly better than the equivalents from NVIDIA and AMD.
+- **Ecosystem**: TorchTitan, FlexAttention, and attention-gym are supported; BF16-first, with TorchAO MXFP8 not available day-0.
+- **Verdict**: "great" experience and the right direction — but explicitly "nowhere close to CUDA maturity". [[entities/anthropic|Anthropic]] already runs production inference and RL rollouts on Trainium2/Trainium3. See [[entities/anthropic#Trainium3 Cracks Training (SemiAnalysis, Oct 23, 2026)]] for the Anthropic-side framing.
+
+This narrows the "research only happens on CUDA" moat from the AWS side, complementing Anthropic's own chip program above. (Source: raw/articles/2026-10-23_semianalysis_amazons-trainium-takes-a-strike-at-the-training-king.md)
 
 ## Implications
 

@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-10-24] watchdog | auto-fix — complete stranded newsletter-take (Trainium3 → custom-ai-silicon)
+
+- newsletter-wiki-ingest failed today (output-length truncation; 4th failure in 5 days). Its 2 takes were partially recovered by trending-topics at 12:00 (Kimi K3.1 → kimi-k3.md, Trainium3 → entities/anthropic.md), but the primary target concepts/custom-ai-silicon.md had only a dangling sources: entry with no body section.
+- Fixed: added "Trainium3 Cracks Training (SemiAnalysis, October 2026)" section (TorchNeuron, 80k-core QA CI, Neuron Explorer, BF16/MXFP8 caveat) + backlink to entities/anthropic.md, bumped updated: to 2026-10-24.
+- No index corruption found: index.md clean of pipe/line-number/triple-bracket issues (3330 lines).
+
 ## [2026-10-24 21:30] hot-post | concepts/two-stage-confidence-caliber.md created
 
 - Night-slot hot-post material: page created from Cohere CALIBER blog (published 2026-10-20, raw scraped 2026-10-24). 7B ECE 0.059→0.028 (−52.5%), AUROC 0.806.
