@@ -1,0 +1,77 @@
+{
+  "run_id": "20261024T101037Z",
+  "triaged_at": "2026-10-24T10:15:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "summary": {
+    "processed_count": 4,
+    "critical": 1,
+    "high": 0,
+    "low": 1,
+    "skip": 2
+  },
+  "classifications": [
+    {
+      "message_id": "<20261023190645.3.534240ff218f6a7f@mg-d1.substack.com>",
+      "subject": "Amazon's Trainium Takes a Strike at the Training King",
+      "date": "2026-10-23",
+      "source_label": "uid=837",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-23-amazon-s-trainium-takes-a-strike-at-the-training-king.md",
+      "publication": "SemiAnalysis (Dylan Patel, Daniel Nishball)",
+      "canonical_url": "https://semianalysis.com/p/amazons-trainium-takes-a-strike-at",
+      "importance": "critical",
+      "relevance": "Directly in-scope: AI inference/training infrastructure, custom silicon (AWS Trainium vs NVIDIA training dominance). Core wiki topic.",
+      "suggested_wiki_targets": [
+        "entities/aws-trainium (create or update)",
+        "entities/nvidia (update: competitive pressure)",
+        "entities/semianalysis (entity page for publication/authors)",
+        "concepts/custom-ai-silicon or concepts/ai-training-hardware (update)",
+        "comparisons/ai-accelerators (update if exists)"
+      ],
+      "action": "queue_for_ingest",
+      "notes": "URLs in raw digest are Substack redirect/app-link wrappers; downstream ingest should resolve to open.substack.com/pub/semianalysis/p/amazons-trainium-takes-a-strike-at. Paywalled — capture freely available portion and metadata."
+    },
+    {
+      "message_id": "<20261023130414.3.d8b596aff31c1d40@mg-d0.substack.com>",
+      "subject": "You're still early",
+      "date": "2026-10-23",
+      "source_label": "uid=835",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-23-you-re-still-early.md",
+      "publication": "The Signal (Alex Banks)",
+      "canonical_url": "https://thesignal.substack.com/p/youre-still-early",
+      "importance": "low",
+      "relevance": "General tech/business commentary. Title suggests AI-hype-adjacent opinion piece; relevance uncertain without resolving paywalled content. Not clearly LLM/agent technical content.",
+      "suggested_wiki_targets": [],
+      "action": "conditional_ingest",
+      "notes": "Only ingest if resolved content contains substantive AI/agent technical or strategic analysis worth a durable wiki page. Otherwise log and skip."
+    },
+    {
+      "message_id": "<20261023.190515.74a78f14@mta19>",
+      "subject": "\ud83e\uddea The Worst-Case Hack Hits Quest Diagnostics",
+      "date": "2026-10-23",
+      "source_label": "uid=836",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-23-the-worst-case-hack-hits-quest-diagnostics.md",
+      "publication": "beehiiv-hosted newsletter (likely TLDR Information Security or similar)",
+      "canonical_url": null,
+      "importance": "skip",
+      "relevance": "Healthcare data breach story. Out of scope for the LLM/AI Agent wiki unless the article is about AI-driven attacks/defenses. All 20 links are opaque beehiiv redirect wrappers; no evidence of AI angle.",
+      "suggested_wiki_targets": [],
+      "action": "skip",
+      "notes": "No AI/LLM signal in subject. If a future scan reveals AI-attack angle, revisit via raw-backlog."
+    },
+    {
+      "message_id": "<20261024093639.3.ba48d069852690ff@mg2.substack.com>",
+      "subject": "[Market Memo] Dancing in the Rain",
+      "date": "2026-10-24",
+      "source_label": "uid=838",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-24-market-memo-dancing-in-the-rain.md",
+      "publication": "Irrational Analysis",
+      "canonical_url": "https://irrationalanalysis.substack.com/p/market-memo-dancing-in-the-rain",
+      "importance": "skip",
+      "relevance": "Equity/market analysis memo. Irrational Analysis occasionally covers AI capex/AI-bubble themes, but this memo's title and format are market commentary, not AI technology. No direct LLM/agent content.",
+      "suggested_wiki_targets": [],
+      "action": "skip",
+      "notes": "Skip unless resolved content turns out to center on AI infrastructure economics. If so, could feed concepts/ai-capex or concepts/ai-bubble (check SCHEMA tags first)."
+    }
+  ],
+  "downstream_guidance": "newsletter-wiki-ingest should only process uid=837 (SemiAnalysis Trainium) this cycle, with a conditional check on uid=835. Resolve Substack redirect URLs to canonical post URLs before scraping. Respect paywalls: capture metadata + free tier only."
+}
