@@ -18,6 +18,8 @@ sources:
   - https://en.wikipedia.org/wiki/Block,_Inc.
   - https://en.wikipedia.org/wiki/Jack_Dorsey
   - raw/articles/2026-04-13-block-from-hierarchy-to-intelligence.md
+  - https://block.xyz/dessa
+  - raw/articles/2026-10-23_block-dessa-speech-only-conversation-model.md
 ---
 
 # Block AI
@@ -72,6 +74,21 @@ The article traces 2,000 years of organizational design, noting that every major
 - **February 26, 2026:** Block laid off ~4,000 of 10,000 employees, citing AI as primary reason
 - **Market reaction:** Shares jumped 24% following the announcement
 - This was one of the largest AI-driven workforce reductions by a major tech company
+
+## Dessa speech lab (October 2026)
+
+Block hosts a **(very) small AI research lab** — founded by ex-members of the Toronto
+deep learning startup *Dessa*, building deep learning models since 2012 and
+generative speech models for 8+ years, reporting **directly to Jack Dorsey**. Its
+flagship, [[concepts/dessa-speech-only-model|Dessa]] (announced 2026-10-23, HN 395
+points), is a **full-duplex conversation model trained from scratch on raw human
+speech only** — no text, no pretrained models — trained on a single NVIDIA GB200
+NVL72 rack and running locally (MacBook Pro M4 Max) faster than real time. Block
+released unsteered live recordings and gave early access to AI safety researchers.
+The lab (lead Ragavan Thurairatnam) frames the work as research into whether models
+can acquire language audio-first the way babies do, and as a safety fix for voice AI
+that is "nearly deaf to the emotion in our voices." Waitlist-gated; no public
+weights/API at announcement.
 
 ## Related Concepts & Entities
 - [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Detailed concept page on the organizational model

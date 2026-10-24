@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3273
-> Last updated: 2026-10-23
+> Total pages: 3277
+> Last updated: 2026-10-24
 
-## Entities (954 pages)
+## Entities (955 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -647,6 +647,7 @@
 - [[entities/omar-khattab/research-trajectory]] — Omar Khattab — Research Trajectory
 - [[entities/omar-khattab/rlm]] — RLM — Recursive Language Models
 - [[entities/omri-weinstein]] — Omri Weinstein
+- [[entities/omnara]] — Omnara — open-source managed agent platform company/project (Apache 2.0); Show HN Oct 2026
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
 - [[entities/open-athena]] — Open Athena — nonprofit accelerating academia with frontier AI capabilities; developer of the Delphi open scaling suite (300× extrapolation, AdamH optimizer)
 - [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot; ChatGPT for Teachers expansion to 100+ K–12 orgs/30 states + 16-state National Data Privacy Agreement (Aug 26)
@@ -966,7 +967,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2224 pages)
+## Concepts (2228 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2877,11 +2878,13 @@
 - [[concepts/sciences-po]] — Sciences Po
 - [[concepts/scrapscript]] — Scrapscript
 - [[concepts/scribepod]] — scribepod
+- [[concepts/frontier-training-environment-security]] — Frontier Training Environment Security — OpenAI's first public account of securing the training cluster; HN debate on simulated-vs-physical airgaps, data diodes, covert inter-agent channels via the training-data supply chain (Oct 2026)
 - [[concepts/search-as-code]] — Search as Code (SaC)
 - [[concepts/search-engines]] — Search Engines
 - [[concepts/search-scaling]] — Extending inference scaling to agent search budgets; parallel > sequential search, early research state shapes outcomes (arXiv:2609.35559)
 - [[concepts/scholarevolve-lifelong-harness-evolution]] — ScholarEvolve — lifelong agent-harness evolution driven by research literature (topic modeling over papers, not just execution failures); fixed weights; AppWorld 49.6→63.6%, Tau2 72.7→81.9% (arXiv:2609.40169, Sept 2026)
 - [[concepts/searcharray]] — SearchArray
+- [[concepts/dessa-speech-only-model]] — Dessa (Block) — full-duplex conversation model trained from scratch on speech only, no text/pretrained init; 1x GB200 NVL72, local sub-realtime on M4 Max; emergent laughter/backchanneling; safety framing + early safety-researcher access (Oct 2026)
 - [[concepts/sebastien-ramirez]] — sebastien-ramirez
 - [[concepts/security-and-governance/agent-containment]] — Agent Containment
 - [[concepts/security-and-governance/agent-control-plane]] — Agent Control Plane
@@ -2901,6 +2904,7 @@
 - [[concepts/security-and-governance/ai-safety]] — AI Safety
 - [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — Ai Safety Alignment Rlhf Scalable Oversight Interpretability
 - [[concepts/security-and-governance/ai-safety-and-alignment]] — ai-safety-and-alignment
+- [[concepts/attack-surface-reduction-llm]] — Attack Surface Reduction with LLMs — Anthropic: Claude maps and gates unnecessary reachable code across 25 OSS projects (493 issues); shrink reachability instead of patching bugs, defensive complement to AI vuln discovery (Oct 2026)
 - [[concepts/security-and-governance/ai-safety-military-governance-claude]] — Ai Safety Military Governance Claude
 - [[concepts/security-and-governance/ai-text-watermarking]] — AI Text Watermarking — SynthID-Text-based model watermarking for EU AI Act; Anthropic ships on future Claude models; criticism: Gruber "perversion of writing" (Aug 16), Padolsey "weak watermarks appease weak law" (Aug 12)
 - [[concepts/security-and-governance/ai-worming]] — AI Worming — Self-replicating prompt injection attacks; hidden instructions propagate via AI-assisted document workflows (Microsoft Copilot/Word, July 2026)
@@ -2954,6 +2958,7 @@
 - [[concepts/siri-ai]] — Siri AI
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP)
 - [[concepts/skill-co-installation-conflict]] — Skill Co-Installation Conflict (arXiv:2610.11647) — 15-skill × 24-scenario benchmark; co-installed Claude Code skills silently override each other through a description-mediated race (trigger-keyword collision + priority ambiguity) whose outcome is decided by install location (project > personal); no precedence or exclusivity primitive in the namespace
+- [[concepts/omnara]] — Omnara — Apache-2.0 self-hostable managed agent platform vs Claude Managed Agents / OpenAI Agents API; any model, agent daemon on your machines or 11 sandbox providers, agent history in your own Postgres (Oct 2026)
 - [[concepts/skill-constellations-github-supply-chain]] — Skill Constellations (arXiv:2610.11169) — first *dated copy network* of agent skills built from git history (2,193,119 adoptions); a few repos are the source of almost all copies and GitHub stars do not identify them; copies almost never track their source so fixes don't propagate; model-ranked top-100 audit prevents 14.9% of later high-risk adoptions vs 0.5% for the top-100 starred → distribute versioned references, not copies
 - [[concepts/skill-architecture-patterns]] — Skill Architecture Patterns; enriched with Warp's execution-feedback skill loop as third approach alongside Hermes and OpenClaw (June 23)
 - [[concepts/skill-graph]] — Skill Graph — Interconnected Markdown Files as an AI Agent Playbook

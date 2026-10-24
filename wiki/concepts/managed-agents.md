@@ -2,7 +2,7 @@
 title: "Managed Agents (Anthropic)"
 type: concept
 created: 2026-04-25
-updated: 2026-10-13
+updated: 2026-10-24
 tags:
   - architecture
   - anthropic
@@ -16,6 +16,7 @@ sources:
   - https://www.anthropic.com/engineering/managed-agents
   - raw/articles/martinalderson.com--posts-managed-agents-are-the-new-lambda--f9db9fb9.md
   - https://martinalderson.com/posts/managed-agents-are-the-new-lambda/
+  - raw/articles/2026-10-22_omnara-github-readme.md
 related:
   - building-effective-agents
   - effective-harnesses-for-long-running-agents
@@ -126,6 +127,25 @@ If new models and capabilities start being offered exclusively on managed agent 
 
 Anthropic's claude.dev post **"Building effective agent automations"** (Lance Martin & CJ Avilla, 2026-10-08) is the first official reference implementation of Managed Agents as *scheduled background automations*: cron-triggered runs read sources (Slack, GitHub MCP) and post a daily brief. Durable design rules extracted there: per-source **bookmarks** instead of fixed time windows; failed source reads reported as *unreadable*, never as a quiet day; live re-verification of every item right before posting; posting confirmed only on destination `"ok": true` before committing ledger/bookmark state; two memory stores (human-owned read-only `preferences` + agent read-write `state` mounted at `/mnt/memory/`); capability-limited prompt-injection defense (read-only tokens, host allowlists) and a spend cap that pauses on `budget_reached`. Onboarding is itself agent-driven: `/claude-api managed-agents-onboard <post-url>` in Claude Code writes and applies the config files. See [[raw/articles/claude.dev--building-effective-agent-automations--2026-10-08]] and [[entities/rlancemartin]].
 
+## Open-source alternatives
+
+### Omnara (October 2026)
+
+[[concepts/omnara|Omnara]] (Apache 2.0) is a drop-in, **self-hostable managed agent
+platform** explicitly positioned against this page's subject and OpenAI's Agents API.
+It replicates the managed-agent operating model — hosted agent loops, durable state,
+tool permissions, subagents, memory stores, schedules, Slack/Discord/GitHub
+integrations — but with **any model** (BYO keys: OpenAI/Anthropic/Bedrock/Ollama/
+LiteLLM) and **any execution target**: an agent daemon on your own laptops/GPU
+servers (no inbound ports or SSH keys), or sandboxes from eleven providers. The
+strategic contrast that matters for the monopoly-risk section above: Omnara's
+self-hosted mode keeps **agent history in your own Postgres** — queryable for
+analytics, evals, and training datasets — where Claude Managed Agents stores it in
+Anthropic's database with no ZDR/HIPAA eligibility. Its existence is evidence the
+managed-agent layer is commoditizing faster than the frontier labs can differentiate
+on exclusivity.
+
+
 ## See Also
 
 
@@ -134,3 +154,4 @@ Anthropic's claude.dev post **"Building effective agent automations"** (Lance Ma
 - [[concepts/multi-agents/multi-agent-research-system]] — Multi-agent research system
 - [[concepts/multi-agents/agent-team-swarm]] — Agent team/swarm architecture
 - [[concepts/carlini-c-compiler-agents]] — Carlini's parallel agent experiment
+- [[concepts/omnara]] — Open-source self-hostable managed agent platform

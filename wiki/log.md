@@ -2,6 +2,34 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-10-24] active-crawl | 4 new pages + 3 enrichments — Omnara, Dessa, Attack Surface Reduction, Frontier Training Environment Security + FV-at-scale
+
+**Discovery**: HN Algolia `search_by_date` (6 queries, points>=10, 4-day window, ~18 unique AI stories). X/Twitter spot-check via xurl. Gap analysis run directly by parent (find/grep across concepts/entities/events + index.md grep). Same-day dedup checked against today's newsletter-triage entries.
+
+### New pages
+- `concepts/omnara.md` — Omnara: Apache-2.0 self-hostable managed agent platform (Show HN 112p). Any-model BYO keys, agent daemon on own machines w/o inbound ports, 11 sandbox providers, subagents/memory/permissions/schedules, agent history in your own Postgres. Raw: `raw/articles/2026-10-22_omnara-github-readme.md` (frontmatter upgraded). confidence: medium.
+- `entities/omnara.md` — company/project entity for the above.
+- `concepts/dessa-speech-only-model.md` — Block's Dessa: full-duplex speech-to-speech conversation model trained from scratch on raw speech only (no text, no pretrained init); 1x GB200 NVL72; local sub-realtime on M4 Max; emergent laughter/backchanneling; safety framing, early safety-researcher access; HN 395p. Raw: `raw/articles/2026-10-23_block-dessa-speech-only-conversation-model.md`. confidence: medium.
+- `concepts/attack-surface-reduction-llm.md` — Anthropic (Chris Rohlf, Frontier Red Team, Oct 20): Claude reduces reachable attack surface across 25 OSS projects → 493 unnecessary-reachable issues; shrink reachability vs patch-per-bug economics. Raw: `raw/articles/2026-10-20_anthropic-using-claude-to-reduce-the-attack-surface-of-code.md` (pre-existing). confidence: high.
+- `concepts/frontier-training-environment-security.md` — OpenAI "Securing our frontier model training environment" (Oct 23, HN 106p). openai.com 403 at capture; page reconstructed from HN discussion (airgap-skepticism, data diodes, covert inter-agent channels via training data supply chain). Raw marked `extraction: partial_js_blocked`, `source_fallback: hn-discussion`. confidence: low — enrichment backlog recorded.
+
+### Enrichments
+- `concepts/formal-verification-llm-agents.md` — added "Anthropic × Theorem: Proof at Assembly Scale (Oct 2026)" section: 123 OSS-Fuzz libs / 239 entry points proved on RISC-V binaries (~180M lines Rocq), fuzz-test→spec method, bug finds (CVE-2026-56132 rediscovery, libc++ red-black tree proof), zlib RFC-1950 conformance, Verus Python-in-Rust 99.95%/1.7M programs, Opus 5.5 −40% tokens, shared-workspace −17%, reward-hacking mitigations, spec-vs-reality limits. Raw saved: `raw/articles/2026-10-22_anthropic-formal-verification-scale.md` (25KB full text). updated: 2026-06-04 → 2026-10-24.
+- `concepts/managed-agents.md` — "Open-source alternatives → Omnara" section + See-Also link + source; updated → 2026-10-24.
+- `entities/block-ai.md` — "Dessa speech lab (October 2026)" section + sources.
+
+### Deferred (considered, not processed)
+- OpenAI CLI (already covered by blog-ingest today: `2026-10-22_openai-cli-official.md` + entities/openai section).
+- Anthropic H1-2026 $80B net loss / S-1 (Reuters/WSJ paywalled; prior crawl logged for next ingest).
+- Anthropic Public Benefit Charter (governance doc; candidates: new page or entities/anthropic section — next crawl).
+- JetBrains ThinkRail (product launch; thin sources at capture).
+- Samsung TV on-board AI listening (Reddit-hosted, primary source weak).
+- UK AISI cybertesting alignment assessment (18p; minor; fold into concepts/ai-agent-safety-incidents later).
+
+### Bookkeeping
+- index.md: +5 entries (concepts 2224→2228, entities 954→955, total 3273→3277), Last updated 2026-10-24.
+- Tags used are all SCHEMA-verified: ai-agents, agent-platform, open-source, developer-tools, infrastructure, speech, voice-ai, ai-safety, training, research, security, developer-tools, openai.
+
 ## 2026-10-24 10:35 UTC — Newsletter triage (20261024T101037Z)
 - 4 newsletters triaged: 2 takes, 1 reference, 4 skips (Substack chrome batched). Triage JSON at cron/data/newsletter/triage_latest.json; skip+reference archived.
 - TAKE: SemiAnalysis "Amazon's Trainium Takes a Strike at the Training King" (Dylan Patel/Daniel Nishball) — Trainium3 hands-on: native PyTorch backend TorchNeuron (replaces PyTorch/XLA lazy graph capture; .to("cuda") → .to("neuron"), first-class torch.distributed/DTensor/SimpleFSDP/DDP), 80,000 physical cores for automated QA CI, Neuron Explorer profiler beats NVIDIA/AMD, TorchTitan/FlexAttention ecosystem, BF16-first (no day-0 TorchAO MXFP8). Body (60 paras) saved to raw/articles/2026-10-23_semianalysis_amazons-trainium-takes-a-strike-at-the-training-king.md. Target: concepts/custom-ai-silicon.md (Trainium mentioned only in one list line) + entities/semianalysis.md + entities/dylan-patel.md.

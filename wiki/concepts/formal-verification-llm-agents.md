@@ -2,7 +2,7 @@
 title: "Formal Verification for LLM Agents"
 type: concept
 created: 2026-04-21
-updated: 2026-06-04
+updated: 2026-10-24
 tags:
   - concept
   - safety
@@ -15,6 +15,7 @@ sources:
  - path: raw/articles/crawl-2026-04-21-kleppmann-formal-verification-ai.md
  - path: raw/articles/crawl-2026-04-21-shuvendu-intent-formalization.md
  - path: raw/newsletters/2026-06-03-scaling-past-informal-ai-carina-hong-axiom-math.md
+ - path: raw/articles/2026-10-22_anthropic-formal-verification-scale.md
 status: active
 ---
 
@@ -140,6 +141,82 @@ For AI coding agents, formal verification is particularly relevant because:
 - **Safety-critical code** (autonomous vehicles, medical devices) must be provably correct
 - **Security-critical code** (authentication, cryptography) must not have subtle bugs
 - **Agentic workflows** where AI makes consequential decisions benefit from verified guardrails
+
+## Anthropic × Theorem: Proof at Assembly Scale (October 2026)
+
+Anthropic's research post **"LLMs can now write formal proofs at scale"**
+(2026-10-22, with collaboration from **Theorem**; HN 451 points) is the first
+large-scale application of AI formal verification to production software **at the
+assembly level**. Claude autonomously proved security properties on compiled
+**RISC-V** binaries across **123 OSS-Fuzz libraries** — ~**239 fuzz-test entry
+points** — yielding ~**180M lines of Rocq** proofs (median proof ~600K lines over
+binaries of ~18K RISC-V instructions). Full text:
+`raw/articles/2026-10-22_anthropic-formal-verification-scale.md`.
+
+### Method: fuzz test → spec → proof
+
+- Existing developer-written **fuzz tests** are mechanically converted into formal
+  specs: "this test suite always passes for every input < 64 MB" against a formal
+  model of RISC-V + Linux process semantics. If the spec is proven, fuzzing that
+  entry point is *superfluous* — no future input can crash it.
+- Proven at the **binary level**, sidestepping rewrites in verification languages
+  (contrast seL4's 20 person-years). The only artifacts to trust: the RISC-V/Linux
+  formal models, the theorem statements, and the **Rocq proof checker** (which
+  mechanically verifies the proofs — virtually no human review needed).
+- Claude found and patched bugs **during** proof attempts — including bugs fuzzers
+  structurally miss: a counter-underflow → out-of-bounds write needing ~20 MB
+  inputs with a rare layout; an OOB read needing 64 MB input + 2 GB memory; a
+  rediscovery of CVE-2026-56132 (libexpat, deeply nested input); and non-crashing
+  logic bugs (a file-restriction feature not always enforced). Proving one library
+  memory-safe required proving libc++'s red-black tree rebalancing keeps tree depth
+  logarithmic — on machine code.
+
+### Other experiments in the post
+
+- **zlib spec conformance**: Claude wrote a formal spec of RFC 1950 and proved the
+  Linux-kernel zlib x86 binary implements it — using Claude-generated x86 ISA
+  semantics that, when single-stepped, boot an Ubuntu userspace. The semantics
+  generation found hundreds of errors in official ISA documentation and a few
+  hardware bugs.
+- **Python-in-Rust interpreter** verified with **Verus** against CPython semantics
+  from an academic paper: 99.95% behavioral agreement across 1.7M random programs,
+  remainder known corner cases.
+- **PDF reader audit**: as many security bugs found in one week as typically
+  reported per year; one latent logic bug >10 years old.
+
+### Economics
+
+- Proofs cost **hundreds of millions of tokens** — the binding constraint. On 36
+  real OSS-Fuzz tasks, **Opus 5.5 proves ~half with ~40% fewer tokens than Opus 5**;
+  efficiency gains expected as models train on long verification tasks.
+- **Shared proof workspace**: agents copying/adapting each other's proofs needed
+  **17% fewer tokens** (some succeeded after solo failure); most proof bulk is
+  C-runtime/ASan initialization, so disparate programs share proof mass — the
+  Mathlib effect (previously ~300K theorems, 700+ contributors) arriving for
+  software verification. Dependencies follow a power law: verify glibc/OpenSSL/cURL
+  once and a huge swath of software becomes provable (Theorem's Nix-ecosystem
+  roadmap).
+
+### Limits (the post's own honesty section)
+
+- "Formally verified" ≠ bug-free: a checker can't validate that the **spec matches
+  reality** — proofs assume single-threaded static musl binaries on RISC-V, while
+  deployments are x86/ARM dynamic glibc.
+- Scope gaps: ASan doesn't catch all memory-safety bugs; not all entry points were
+  proved; caller misuse of libraries is out of scope.
+- **Reward hacking** risk when Claude patches code to make specs provable was
+  mitigated by penalizing patches, granting credit for minimal input-changing
+  patches, and auditing them.
+
+### Assessment
+
+This is the strongest evidence to date that the "verification as a commodity"
+trajectory — from Airbus-avionics-only practice to CI-grade guarantee — is real.
+The complementary Anthropic effort, [[concepts/attack-surface-reduction-llm|attack
+surface reduction]], shrinks what's reachable while proofs eliminate bug classes;
+together they form the lab's full cyberdefense portfolio. Watch for: x86/ARM
+semantics coverage, multi-threaded support, Theorem's hosted pipeline adoption,
+and the public Claude verification skill's uptake.
 
 ## Related Concepts
 

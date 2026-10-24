@@ -1,7 +1,12 @@
 ---
 source_url: https://github.com/omnara-ai/omnara
+raw_source: https://raw.githubusercontent.com/omnara-ai/omnara/main/README.md
 ingested: 2026-10-22
-sha256: 3d27695034aabe4f
+fetched: 2026-10-22
+type: article
+title: "Omnara — the open-source managed agent platform (README)"
+sha256: e89ac1423f3f43ed38045544f94964a848c2001a9754a19a40639f8b129897a5
+tags: [ai-agents, agent-platform, open-source, developer-tools]
 ---
 
 <p align="center">
