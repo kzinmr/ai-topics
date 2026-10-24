@@ -1,0 +1,92 @@
+{
+  "archived_at": "2026-10-24T10:24:37.333073+00:00",
+  "triage_run_id": "20261024T100007Z",
+  "source": "blog",
+  "summary_ja": "14候補を判定: take 3 / reference 2 / skip 9（うちバッチ2件）。最重要は Moonshot Kimi K3.1 Pro リリース（Simon Willison, 10/23）— Artificial Analysis 55 で Opus 5.5 のみに次ぐ2位、11/4にオープンウェイト公開約束、$2/$10 per Mトークン。wikiにK3.1のカバレッジが皆無で新規conceptページが必要。次点で Giles Thomas の RMSNorm 実験記事（34KB, LayerNorm除去でloss発散の一次データ、著者エンティティに正規化節が無く concepts/ にも正規化ページなし）と、Modal公式の LiveKit Agents + Sticky Sessions 連携記事（wikiにLiveKit記載ゼロ、Sticky Sessions未文書化）。reference は Ed Zitron の Blackstone/AI資本深掘り（2750億ドルDC投資・CoreWeave 23億ドル債務・公的年金32%、有料記事のため無料部のみ）と Simon Willison の Quick Study（Sobel edge detection canvas描画プロンプト実験）。残りはCOM/Windows内部、ハード分解、折りたたみiPhone、Doctorow一般論、Anubisボット対策画面、unsaved_articlesで全スキップ。",
+  "decisions": [
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "wheresyoured.at",
+      "title": "Premium: The Hater's Guide To Blackstone",
+      "url": "https://www.wheresyoured.at/premium-the-haters-guide-to-blackstone/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/wheresyoured.at--premium-the-haters-guide-to-blackstone--a36e33b0.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Ed Zitron の Blackstone 深掘り（有料記事、無料部分是約6KB）。AI資本構造という観点で関連する具体数値が無料部分に含まれる: Schwarzmanの30章自伝「My Personal History」への言及、Blackstoneが約1.4兆ドルAUMのうち2750億ドルをデータセンター/デジタルインフラへ投資、CoreWeaveへの23億ドル債務ファイナンス、公的年金が資金の約32%（Bloomberg Intelligence推計）、「AI大型案件のほぼ全てにBlackstoneの指紋があるがどのファンドが出資か特定不能」。entities/ed-zitron.md の Data Center Overbuild Thesis と Hater's Guide 記事表（Private Equity / Private Credit / Memory Crisis）は既存だが Blackstone個別項目は無し。有料部分の本文は取得不可のため著者エンティティへの項目追加に留める。",
+      "candidate_wiki_path": "entities/ed-zitron.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Tool: Quick Study",
+      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/simonwillison.net--2026-oct-23-quick-study-painter--adc911a2.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★ 660Bのリンクブログ（llm-artifacts実験）。本文は実際に読める: Claude Opus 5.5 High へのプロンプト「写真を開いたら数秒でcanvasと疑似筆で描画するアートifactを作れ」、外部ライブラリはGoogle Fontsのみ、Sobel edge detectionを使用、過去の実験（Claude Fable + P5.js水彩画）の続編。wikiにQuick Study/Sobelの記録は無く、simon-willison.md のllm-artifacts系列に1行追記する程度の軽微な更新価値。新規ページにはならない。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "xeiaso.net",
+      "title": "Making sure you're not a bot!",
+      "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-89078/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/xeiaso.net--shitposts-no-way-to-prevent-this-memory-safety-cve-2026-8907--c2b0204f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 本文がAnubis（Techaro製bot対策）のインタースティシャルのみ（517B、「This website is running Anubis version v1.28.2…」）。CVE-2026-89078/memory-safetyというURLパターンから記事は取得済みバックログに存在する可能性が高いが、本ファイルからは内容判断不能。curl再取得を試みない場合、取りこぼしは軽微（xeiaso記事は過去分が entities/x 配下に蓄積済み）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "iPhone Duo review: Apple's folding phone is a messy, expensive good time",
+      "url": "https://www.theverge.com/tech/1015028/iphone-duo-review",
+      "raw_path": "~/ai-topics/wiki/raw/articles/theverge.com--tech-1015028-iphone-duo-review--d23a61ee.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 本体はThe Vergeの折りたたみiPhone Duoレビュー（139行）。Appleハードウェア製品レビューでAI/エージェント関連の内容は無い。Daring Fireball経由のリンクだがwikiの主題外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-13",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: Critique and writing (23 Oct 2026)",
+      "url": "https://pluralistic.net/2026-10-23/better-to-give/",
+      "raw_path": "~/ai-topics/wiki/raw/articles/pluralistic.net--2026-10-23-better-to-give--9118db6c.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Cory Doctorowの定期リンク記事。メインエッセイは創作ワークショップとピア_critique_による文章訓練論（ writers' workshop の外部動機づけ・検証源としての機能）、Object permanence節はUSPS・Enron Explorer・UAEのハッカー軍団・Truecrypt等の一般テック/政策話題。AI/LLMに関する実体的論点は無く、pluralistic記事の常例どおりスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-skip-com-history",
+      "source": "blog",
+      "source_name": "mixed",
+      "title": "blog-6, blog-7 (Raymond Chen / Old New Thing: CoRegisterInitializeSpy, COM static store), blog-12 (dfarq: Windows XP released Oct 25 2001), blog-10 (filfre.net: An Ion Storm! Part 2), blog-4 (jeffgeerling: Ubiquiti vape detector)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ 非AIカテゴリ一括スキップ: Raymond Chen のCOM/Windows内部実装解説2本（unmarshalable delegateのクリーンアップ履歴）、dfarq のWindows XPリリース15周年定型記事、filfre.net のIon Storm（1990年代ゲームスタジオ）連載第2回（302行・ゲーム史）、Jeff Geerling のUbiquiti vape detector分解（44行・消費者ハードウェア）。いずれもLLM/AIエージェント/開発ツール基盤と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Why didn't we use CoRegisterInitializeSpy to clean up the unmarshalable delegate? / Windows XP released October 25, 2001 / An Ion Storm!, Part 2: The Return to Ground Level / Ubiquiti's $99 Vape Detector is actually pretty good"
+    },
+    {
+      "item_id": "blog-skip-unsaved",
+      "source": "blog",
+      "source_name": "mixed",
+      "title": "unsaved_articles x6 (Daring Fireball YouTube Duo review, OpenAI News x2, LWN.net x3)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ unsaved_articles は抽出不能のため一律スキップ: (1) Daring Fireball経由 Joanna Stern YouTube動画（音声文字起こしなしでは判定不能）、(2) OpenAI News 2本（Rapidly scaling online storage Part II / Securing our frontier model training environment）は openai.com 403 由来のRSSフォールバックのみ — sitemap-monitor/active-crawl が本文取得した時点で再評価、(3) LWN.net 3本はLinuxカーネル merge window / kernel stacks / セキュリティ更新でAI主題外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可）"
+    }
+  ]
+}
