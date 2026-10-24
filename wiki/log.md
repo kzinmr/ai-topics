@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-10-24] trending-topics | 1 new concept + 3 updates — Per-Request AI Carbon, Kimi K3.1 Pro, FV-at-scale, Trainium3
+
+**Source**: HN Algolia (front-page + keyword passes, 2-3 day window) + morning pipeline checkpoints (blog_ingest 20261024T100007Z, newsletter 20261024T101037Z).
+
+- **Created** `concepts/per-request-ai-carbon.md` — Berget AI open-source per-request CO₂ method w/ SEI, WattTime, Klimatkollen; same Kimi K3 request = 8.5× more CO₂ in Texas than Sweden. Raw saved.
+- **Updated** `concepts/kimi-k3.md` — K3.1 Pro section (AA 55, behind only Opus 5.5; $2/$10; open weights promised Nov 4; HN 939p).
+- **Updated** `concepts/formal-verification-llm-agents.md` — Anthropic × Theorem RISC-V assembly proofs in 100+ OSS libraries (HN 452p).
+- **Updated** `entities/anthropic.md` — SemiAnalysis Trainium3 training report (TorchNeuron, 80k-core QA CI, RL rollouts on Trainium2/3).
+- **Raw**: berget.ai CO₂ press release, Ask HN "OpenAI 100 companies" discussion (623p), Samsung TV AI-listening HN thread (221p).
+- **SCHEMA**: added tags `ai-energy`, `kimi-k3-1-pro`.
+- **Report**: `inbox/rss-scans/daily-scan-2026-10-24.md`.
+
+
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-10-24] active-crawl | 4 new pages + 3 enrichments — Omnara, Dessa, Attack Surface Reduction, Frontier Training Environment Security + FV-at-scale

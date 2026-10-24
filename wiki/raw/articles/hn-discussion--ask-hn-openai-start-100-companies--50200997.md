@@ -1,0 +1,54 @@
+---
+source: https://news.ycombinator.com/item?id=50200997
+author: HN discussion
+date: 2026-10-22
+fetched: 2026-10-24
+type: hn-discussion
+title: "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?"
+sha256: dd431edbdf6833ed08704002dd883087123b5d25aeea3afeda0e7f3e8166ff51
+tags: [openai, hn-discussion]
+---
+
+# Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies? (HN 623pts)
+
+- [623] ex-aws-dude: Title is a bit of an exaggeration but the question is more: if the frontier models are so good, why even sell them as your primary money maker? Couldn&#x27;t OpenAI or Anthropic make a lot more money by just starting companies themselves that leverage the models and building their own products? Is selling tokens really the best strategy? Especially with commodification and prices declining wouldn&
+  - [] digitaltrees: They are doing that. That is why they have moved into the app layer. They are counting on software being replaced with agentic super apps. The only reason they aren’t starting actual service companies is that those still require human boots on the ground. But they are pushing their way into consulting (they bought my friends consulting firm)
+  - [] Rodmine: During a gold rush, sell shovels. They are investing heavily in in-house custom silicon, which is the shovel end of things. They could open more jewellery chains, but that is a very different kind of operation and it is in their interest to let others compete for that and use their resources on the shovel side of things.
+  - [] CoolestBeans: 1. They are starting to do it. Take a look at OpenAI&#x27;s product portfolio, there&#x27;s a galaxy of attempts at application. 2. Selling tokens via long running agents is the only thing that&#x27;s provably working with respect to revenue growth. 3. They need revenue yesterday. Increases in borrowing rates means access to capital isn&#x27;t what it was in the 10s. Their runway is much shorter t
+    - [] JacobAsmuth: Is 4 correct or incorrect? What data do we have so far in this regard?
+    - [] redanddead: &gt;3. They need revenue yesterday. Increases in borrowing rates means access to capital isn&#x27;t what it was in the 10s This is a huge problem, why is it like this
+    - [] fennecbutt: 3 is biggest point imo. Openai haven&#x27;t yet amortised their current investments into the space and nor have they stopped making new ones. I&#x27;m sure they&#x27;d be totally capable of bringing 1k new biz online but that&#x27;s even more debt, and even more uncertainty.
+    - [] lconnell962: Some variation(s) of 5 is carrying a lot of weight. Need a person with an Idea. Need someone to refine their idea. Need someone to spend the time filtering through the slop to find the good bits. Much better to sell people on the idea of their dream being created while you sell them tokens to do that. That all said, A person trusting the big AI companies with their golden goose idea seed leaves a 
+    - [] physicsguy: On 1) though, they&#x27;re an inch deep and a mile wide.
+    - [] jollyllama: &gt; Their runway is much shorter than you would imagine. If they don&#x27;t make it, there will be plenty of time to mine through their dataset for business ideas to sell to other people as they liquidate. Think of the Spirit Airlines dataset that was just sold.
+  - [] paxy: Because running 1 business is easier than running 100 businesses. It takes a lot more than writing good software for a company to be successful.
+    - [] devin: You can just restate the question then to say: If the models are so good, why can&#x27;t they run a business?
+  - [] salemh: Why aren&#x27;t they vibe coding millions of dollars of licensing costs away? Why Even Anthropic Can’t Vibe-Code Away Salesforce https:&#x2F;&#x2F;www.salesforceben.com&#x2F;why-even-anthropic-cant-vibe-c...
+    - [] shagie: Hypothetically... they write a new Salesforce for themselves. ... and then Salesforce hits them with any number of patent claims. https:&#x2F;&#x2F;insights.greyb.com&#x2F;salesforce-patents&#x2F; One could argue if software patents are good or bad... they&#x27;re still a fact of &quot;those patents exist and protect functionality.&quot; If you&#x27;re trying to copy the functionality feature for 
+  - [] gofreddygo: reframed question - if their shovels are so good why dont they dig gold and sell gold themselves.
+    - [] stingraycharles: I thought NVidia was the one selling shovels here, not OpenAI.
+    - [] magarnicle: Gold is much more fungible than a business. 100 different businesses are much more unique than 100 different gold nuggets. The counter-argument is that the models might make business ideas just as fungible as anything else.
+  - [] altcognito: There was&#x2F;is a youtube commericial I think that gave away the game to some extent with regards to this. It was selling some platform to create apps. Everybody in the office rejoicing because they were all creating apps. Inevitably, like three people in the office make the same app. I&#x27;ve experienced the same thing in real life a couple of times over. I think Einstein&#x27;s quote &quot;A 
+    - [] TheOtherHobbes: It&#x27;s common knowledge that ideas are worthless and only execution matters. That was somewhat true when execution was time-consuming and expensive. But original ideas are very far from worthless. They&#x27;re very rare, because understanding domains and relationships at a deep level is a rare skill. Meanwhile AI makes execution much cheaper and easier than it used to be.
+  - [] dude250711: Why don&#x27;t they simply run a quantitative hedge fund on the side?
+    - [] ex-aws-dude: I mean it sounds stupid but I think its a fair question if you can spend 15 million and solve a millennium prize problem, what happens if you take the same resources and just aim the cannon at making money?
+    - [] dingdongditchme: Leopold Aschenbrenner tried this and got eaten by the wolves as far as I can tell...
+  - [] NormalGoat: It&#x27;s basically the same reason why Apple didn&#x27;t create every app in the App Store. No single company can be specialised in everything, and more importantly, selling tokens is risk-free money since they get a cut for every app without taking any business risk.
+    - [] psadri: I think that’s a different argument. Apple absolutely “copies” hugely successful, durable apps. Just read about “getting sherlocked”. The rest of the apps are transient, niche and it’s easier to just harvest your cut of ads&#x2F;payments.
+    - [] JMiao: idk they’ve created the most used and differentiating apps though
+    - [] zahrevsky: I believe this is the correct answer. You can&#x27;t run 100 businesses because each one would only receive 1&#x2F;100 of your attention, and they would all perform poorly.
+    - [] surgical_fire: I thought the agents were largely autonomous, and should replace workers? If labor is not your constraint, you wouldn&#x27;t be diverting your specialization.
+    - [] mrheosuper: &gt; No single company can be specialised in everything Not everything, but a company can be specialized in a lot of different things, Samsung for example, or megacorp in Japan.
+    - [] Towaway69: I wonder what is stopping apple from cloning the top ten apps in each category using AI and then booting the original developers off the app store.
+    - [] TheOtherHobbes: The G in AGI suggests that not being specialised is the point. The real reason is the models just aren&#x27;t good enough. Running a single successful fully automated business at scale would be a huge milestone and a legendary PR achievement, but the tech just isn&#x27;t there yet.
+    - [] gWPVhyxPHqvk: &gt; No single company can be specialised in everything A machine with infinite attention and infinite knowledge probably could specialize in everything.
+  - [] throw20261022: Selling tokens in conjunction with a phone number or credit card yields signals for surveillance for intelligence agencies that can be tied to individuals. This keeps the firms relatively out of trouble with the federal government. This makes them too big to fail. Being subject to such surveillance is in fact is a strong reason for conscious individuals to seek to move away from them in the long t
+  - [] HeavyStorm: Better to sell spades than mine for gold...
+  - [] Havoc: Bad argument. Why go into the hamburger business when you think you&#x27;ve got an infinite profitability recipe on your hand potentially. The big AI houses have doubled down and quadrupled down on their core founding myth for better or worse. The AI boom is a full send. Either this works in spectacular fashion or it blows in spectacular fashion.
+    - [] JMiao: who will be in the bread line if it blows
+    - [] janalsncm: The standard analogy is selling shovels, not hamburgers. OpenAI is selling people access to a tool to build things. OP is asking why they don’t just build the things themselves, which I believe is a fair question.
+  - [] thomasfromcdnjs: I think that the generative ui and self evolving databases per user is definitely coming, I think they are making this wager too. A lot of pieces of the ecosystem haven&#x27;t been thought out fully yet and there is a shift in user experience e.g. a lot of people are more content with just using Dots then loading up apps and visuals, when they can just read what they needed to know.
+  - [] mochidusk: Going up the value chain is much more difficult as opposed to going down. A packaging company for example will have a much harder time creating a snack company than the snack company creating a packaging company. The snack company will know exactly what it needs for its packaging and have strict requirements. Down the chain you see what you need to do because you work directly with it everyday.
+    - [] chris_money202: I don’t think I agree with a snack company having an easier time becoming a packaging company. Sure they know what they need but outside the idea there’s almost no overlap in the companies business units Neither would be easy for either to do
+    - [] gWPVhyxPHqvk: I think there&#x27;s some real truth in this. OAI can build their Jalapeño chip because they have become experts in CUDA and have strong opinions on how the hardware should work for their models, but will have a much harder time building a quant trading firm without knowing what&#x27;s a profitable trading strategy.
+  - [] dofm: This is more or less the same as a question Alex Karp asked in that hilariously off-the-rails CNBC interview: why, if the code is so good, are they selling by the token and not asking for a cut? https:&#x2F;&#x2F;www.yahoo.com&#x2F;entertainment&#x2F;tv&#x2F;articles&#x2F;televised-ne... I think OpenAI actually will ultimately start a fleet of consultancy&#x2F;SaaS spinoff companies, each perhaps 

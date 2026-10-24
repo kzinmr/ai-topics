@@ -901,6 +901,12 @@ Source: [[raw/articles/simonwillison.net--2026-oct-22-donating-agent-skills--4b2
 - 2026-07-28: Added Project Fetch Phase Two robotics experiment + Open-Weights Stance Clarification (Jul 2026). Sources: Import AI #466, AINews 2026-07-28.
 - 2026-07-25: Added Claude Opus 5 launch section (July 2026). Key details: Epoch ECI 159, SWE-ECI 161 (matching Fable 5), half Fable's price, FrontierCode medium-effort anomaly, best-of-n sampling wins, browser automation, AA-Briefcase +150 Elo at −20% Cost per Task. Sources: AINews 2026-07-25, Simon Willison blog-triage.
 
+## Trainium3 Cracks Training (SemiAnalysis, Oct 23, 2026)
+
+SemiAnalysis ("Amazon's Trainium Takes a Strike at the Training King") reports **Anthropic is already running production inference and RL rollouts on Trainium2/Trainium3**, and that Trainium3 is making its first credible push into *training* — historically Trainium's weak spot vs. CUDA. Key shift: the AWS Neuron team moved to a first-class **native PyTorch experience ("TorchNeuron")** — eager mode, `torch.compile`, standard APIs — replacing the old XLA-style `xm.step()` model. AWS dedicates up to **80,000 physical cores** to automated QA/CI (plus a Neuron Explorer profiler); SemiAnalysis's engineers found the experience "great", though explicitly "nowhere close to CUDA maturity", and credit agentic coding for the team's rapid progress. ^[raw/articles/2026-10-23_semianalysis_amazons-trainium-takes-a-strike-at-the-training-king.md]
+
+This deepens Anthropic's multi-silicon strategy (AWS Trainium + Google TPU + NVIDIA, see §Hardware) and weakens the "research only happens on CUDA" moat.
+
 ## Threat Intelligence Report — September 2026
 
 Anthropic published "Detecting and counterposing misuse of AI: September 2026" (HN: 176 points), covering disrupted operations between **December 2025 and August 2026** across seven harm areas: cyber operations, influence operations, surveillance, scams/fraud, biological misuse, conventional weapons, and **illicit distillation**. Threat actors included suspected state-sponsored groups, financially motivated criminals, commercial spyware vendors, and state propaganda institutions; a notable finding is a distillation case involving a Fable/Mythos-class model (the only one in the report). Anthropic published IOCs alongside the report. ^[raw/articles/anthropic-com--threat-intelligence-report-september-2026.md]

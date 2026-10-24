@@ -1,7 +1,7 @@
 ---
 title: "Moonshot Kimi K3"
 created: 2026-07-17
-updated: 2026-08-24
+updated: 2026-10-24
 type: concept
 tags:
   - model
@@ -495,6 +495,25 @@ The 3.8× aggregate throughput advantage stems primarily from eliminating inter-
 
 **Source**: [[raw/articles/2026-08-01_wafer-ai_kimi-k3-amd-mi355x-serving-benchmark.md|@wafer_ai — Kimi K3 on AMD MI355X Benchmark]] (Aug 1, 2026)
 
+
+## Kimi K3.1 Pro — API-First Frontier Challenger (October 23, 2026)
+
+Moonshot shipped **Kimi K3.1 Pro** (and a "Highspeed" variant, 2–3× faster at 2× the price except for cache-hit inputs) on the Kimi API. Weights are **not yet open** — Moonshot promises "Full model weights will be released by **Nov 4, 2026**".
+
+| Spec | Value |
+|------|-------|
+| Pricing | $2.00/M input, $10/M output (= GPT-6.1 Sol, half of Claude Opus 5.5) |
+| Artificial Analysis score | **55** — behind only Claude Opus 5.5 (58); ahead of Claude Fable 5.1, GPT-6 Astra, Gemini 4 Argon (all 53) |
+| Reasoning levels | low / medium / max |
+| Open weights | promised by Nov 4, 2026 |
+
+**Significance (via Simon Willison)**: first time a (soon-to-be) open-weight model has scored this highly against the frontier. Moonshot's own benchmarks put K3.1 Pro approximately level with Opus 5.5 and GPT-6 Astra. Willison tested it via `llm openai endpoint` (LLM 0.32) with pelican-riding-a-bicycle prompts at all three reasoning levels.
+
+If the Nov 4 weight release lands as promised, this would be the strongest open-weights release to date — worth a dedicated `concepts/kimi-k3-1-pro` page at release time.
+
+**Sources**:
+- [[raw/articles/simonwillison.net--2026-oct-23-kimi-k31-pro--6b408312.md|Simon Willison — Introducing Kimi K3.1 Pro]] (Oct 23, 2026)
+- HN: https://news.ycombinator.com/item?id=50212065 (939 points)
 
 ## Related Pages
 

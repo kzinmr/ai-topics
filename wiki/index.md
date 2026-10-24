@@ -1955,6 +1955,7 @@
 - [[concepts/formal-logic-foundation]] — Formal Logic Foundation
 - [[concepts/formal-methods]] — Formal Methods
 - [[concepts/formal-verification-llm-agents]] — Formal Verification for LLM Agents
+- [[concepts/per-request-ai-carbon]] — Per-Request AI Carbon (Berget AI open-source method: same Kimi K3 request emits 8.5× more CO₂ in Texas than Sweden; SEI/WattTime/Klimatkollen)
 - [[concepts/forward-deployed-engineering]] — Forward Deployed Engineering (FDE)
 - [[concepts/founder-mode]] — founder-mode
 - [[concepts/free-software]] — Free Software
@@ -2263,7 +2264,7 @@
 - [[concepts/kimi-k2-5]] — kimi-k2-5
 - [[concepts/kimi-k2-6]] — Moonshot Kimi K2.6
 - [[concepts/kimi-k2-7-code]] — Kimi K2.7-Code
-- [[concepts/kimi-k3]] — Moonshot Kimi K3 (2.8T MoE, 1M ctx, local inference via Unsloth GGUF)
+- [[concepts/kimi-k3]] — Moonshot Kimi K3 (2.8T MoE, 1M ctx, local inference via Unsloth GGUF); K3.1 Pro API (Oct 23, AA score 55, open weights promised Nov 4)
 - [[concepts/kimi-k2-thinking]] — kimi-k2-thinking
 - [[concepts/kiran-random-labs]] — Kiran (Random Labs)
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge Graph Memory for AI Agents
