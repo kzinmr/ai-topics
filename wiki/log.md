@@ -1,6 +1,12 @@
+## [2026-10-24] skeleton-enrich-daily — backlog empty (no action)
+
+- Frontmatter scan of wiki/entities/ + wiki/concepts/: 0 pages with status:skeleton. Streak continues (since 2026-10-17).
+- Snapshot query: [[queries/2026-10-24-skeleton-enrich-empty]]. No pages created or modified.
+
 ## [2026-10-24] watchdog | Wiki health auto-fix
 
 ### Changes
+
 - Fixed missing frontmatter on `queries/2026-10-24-morning-hotpost-oracle-routing.md` (hot-post query page created without YAML frontmatter; added title/created/updated/type/tags/sources/status, tags all SCHEMA-compliant: query, model-routing, oracle-routing, ai-economics, agent-economics)
 - Corrected index.md section header counts to actual list-line counts: Entities 955→959, Concepts 2228→2227, Events 45→44, Queries 37→39, Total 3277→3304
 
@@ -12,6 +18,34 @@
 ---
 
 # Wiki Log
+
+
+## [2026-10-24] dreaming wiki-ingest | Pattern E backlog take (upstream render-failure recovery)
+
+**Upstream**: `dreaming-group` failed to render its JSON response (`output_path: /opt/data/.hermes/cron/output/c4a9e8d2f671/2026-10-24_18-19-25.md`, 1744 lines); `triage_latest.json` was a prior consumed run. Recovered the Theme Clusters analysis from the output file's tail and re-triaged from disk.
+
+**Method**: archive-index URL-absence probe surfaced the 18:00 sitemap batch (hebbia ×2, cohere ×4, fireworks ×3) plus 3 never-triaged 2026-10-22 raw articles.
+
+### Takes — 3 new concepts + 2 new entities
+- `concepts/code-execution-model.md` — doubleAI's Code Execution Model class: an LLM lives inside the running program, rewrites the binary for the exact machine/data, and formally proves each rewrite equivalent. Maxwell: 38× pipelines, 4.25× kernels, 90% of SOL-ExecBench Blackwell kernels, 17% kernel authorship, >500K LOC in production.
+- `concepts/llm-citation-seeding.md` — deliberate content seeding for LLM answer-engine citation. Peec AI's 50,000-fake-stat / $50 site stayed Google-deindexed yet kept drawing ChatGPT citations for 7 months (10K+ sessions, 330+ referring domains incl. Shopify/DHL) and was laundered into an academic paper and bank research.
+- `concepts/harness-engineering/harness-engineering-101.md` — Isuru Maduranga's 16-chapter open-source book: one stateless JSON array + 16 minimal patches (caching, subagents-as-context-forks, steering, guardrails, MCP/skills/hooks), each taught as failure → patch → cost, with a runnable ~300-line toy harness.
+- `entities/doubleai.md`, `entities/isuru-maduranga.md` — new.
+
+### References
+- `entities/cohere.md` (+39 lines) — Rerank-5 (mRerank 0.643, +0.111 vs Vertex AI, 2× throughput); North Model Vault / confidential computing (SGX TEE + NVIDIA H100 Confidential Computing, remote attestation, North-4.01 pre-release).
+- `entities/hebbia.md` (+3 lines) — Databricks availability (SQL / Databricks Assistant, Unity Catalog permissions).
+
+### Skips (batch-archived)
+- Cohere Culture Funnel — full article text absent from the raw file; the 3 lead paragraphs' thesis is already in `entities/cohere.md`.
+- 1980s-mainframe-32-bit story — non-AI.
+- hebbia ×2 (analyst-judgment explainer, UI feature promo); fireworks ×3 (product marketing: agent toolkit, evals blog, Muse Spark 1.1 integration); Harness Engineering 101 author page; 6 link-stub newsletter digests.
+
+### Bookkeeping
+- The three 2026-10-22 raw articles (code-execution-model, harness-engineering-101, llm-citation-seeding) were in no pipeline triage and absent from `archive_index.json`.
+- Archived via `archive_triage.py dreaming --keep-reference`.
+- index.md: +5 entries (concepts 2227→2230, entities 959→961, total 3304→3309). All new wikilink targets verified on disk.
+
 
 ## [2026-10-24] watchdog | auto-fix — complete stranded newsletter-take (Trainium3 → custom-ai-silicon)
 

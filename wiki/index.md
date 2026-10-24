@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3304
+> Total pages: 3310
 > Last updated: 2026-10-24
 
-## Entities (959 pages)
+## Entities (961 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -207,6 +207,7 @@
 - [[entities/cursor-3]] — Cursor 3
 - [[entities/cursor-ai]] — Cursor AI; added /automate feature — natural-language automation triggers, tools and instructions (June 24); Fast regex search research — client-side n-gram indexing for agent grep (Mar 2026); MXFP8 MoE training kernels — 3.5x MoE layer / 1.5x end-to-end speedup on Blackwell (Aug 2025)
 - [[entities/cyrilxbt]] — @cyrilxbt
+- [[entities/doubleai]] — doubleAI — startup behind Maxwell, the self-described first Code Execution Model; formally-proven in-process binary rewriting (Oct 2026)
 - [[entities/dan-luu]] — Software reliability engineer and data analyst known for systematic incident analysis and empirical studies of tech c... (non-AI essay catalog includes cgroup throttling + normalization of deviance, Aug 2026)
 - [[entities/dan-mcinerny]] — Dan McInerney — security engineer turned agent-harness builder; Architect Loop (Fable 5 + Codex cross-vendor loop), Orchflows; ex-author of Kali pentesting tools (wifijammer, net-creds)
 - [[entities/dan-shipper]] — Dan Shipper — CEO of Lex (formerly Lex.page); writer on AI productivity, agent workflows
@@ -410,6 +411,7 @@
 - [[entities/ian-barber]] — Ian Barber
 - [[entities/ian-goodfellow]] — Ian Goodfellow
 - [[entities/ian-nuttall]] — Ian Nuttall
+- [[entities/isuru-maduranga]] — Isuru Maduranga (Isuru Wijesiri) — author of Harness Engineering 101; builder of One Code (on pi) and WSO2 MI/BI Copilots
 - [[entities/ibm]] — IBM (AI / watsonx)
 - [[entities/ibm-granite-embedding]] — IBM Granite Embedding Models
 - [[entities/ibm-watsonx-orchestrate]] — IBM watsonx Orchestrate
@@ -967,7 +969,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2227 pages)
+## Concepts (2230 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1079,6 +1081,7 @@
 - [[concepts/agents-planning-orchestration]] — Agents Planning Orchestration
 - [[concepts/agents-scaffolding-composition-inference-scaling-hypothesis]] — Agents Scaffolding Composition Inference Scaling Hypothesis
 - [[concepts/generative-ui-harness]] — Generative UI Harness (GenOps) — data-aware runtime control plane deriving agent UIs from tool schema + value lineage; 100% value-propagation, 8.7x interaction efficiency
+- [[concepts/harness-engineering-101]] — see [[concepts/harness-engineering/harness-engineering-101]]
 - [[concepts/harness-learning]] — Train a proposer to revise a solver's harness via RL; harness revision ≈ weight update, adapting at test time without parameter updates (arXiv:2609.35738)
 - [[concepts/agents-self-improvement-learning]] — Agents Self Improvement Learning
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves
@@ -1117,7 +1120,9 @@
 - [[concepts/glm-5-3-flash]] — GLM-5.3-Flash — Z.ai open-weights frontier model (Aug 2026)
 - [[concepts/gpt-live]] — GPT-Live — OpenAI full-duplex real-time voice interaction mode (July 2026)
 - [[concepts/gpt-red]] — GPT-Red — OpenAI's automated LLM red-teaming system using self-play to discover prompt injection attacks (84% vs 13% human)
-- [[concepts/harness-engineering/agentic-workflows/_index]] — Agentic Workflows — Developer workflows under harness engineering (sub-pages hub)
+- [[concepts/harness-engineering/agentic-workflows/_index]]
+- [[concepts/harness-engineering/harness-engineering-101]] — Isuru Maduranga's 16-chapter open-source book: one stateless JSON array + 16 minimal patches (caching, subagents-as-context-forks, steering, guardrails, MCP/skills/hooks), each taught as failure → patch → cost, with a runnable ~300-line toy harness (v1.1 Oct 2026)
+ — Agentic Workflows — Developer workflows under harness engineering (sub-pages hub)
 - [[concepts/harness-engineering/system-architecture/_index]] — System Architecture — System design under harness engineering (sub-pages hub)
 - [[concepts/inference-provisioned-throughput]] — Provisioned Throughput — reserved inference capacity for open-weight models with token pricing and 99% SLA (Together AI, July 2026)
 - [[concepts/jepa-world-models]] — JEPA World Models — Joint Embedding Predictive Architecture for world models (LeCun, LeMario)
@@ -1359,7 +1364,9 @@
 - [[concepts/ai-regulation-2026]] — AI Regulation (2026)
 - [[concepts/ai-retail-experiments]] — AI-run Retail Experiments
 - [[concepts/ai-services]] — AI Services (CAIS)
-- [[concepts/ai-search-visibility]] — AI Search Visibility (AEO); Trelly audit: ~51% of AI-engine citations are manufactured sources (branded content / self-owned / AI-generated), systemic across 91.4% of provider-industry combos (Sep 2026)
+- [[concepts/ai-search-visibility]]
+- [[concepts/llm-citation-seeding]] — Deliberate seeding of content for LLM answer-engine citation; Peec AI's 50,000-fake-stat, $50 site stayed Google-deindexed yet kept drawing ChatGPT citations for 7 months (10K+ sessions, 330+ referring domains incl. Shopify/DHL) and was laundered into an academic paper + bank research (Oct 2026)
+ — AI Search Visibility (AEO); Trelly audit: ~51% of AI-engine citations are manufactured sources (branded content / self-owned / AI-generated), systemic across 91.4% of provider-industry combos (Sep 2026)
 - [[concepts/ai-services-joint-ventures]] — AI Services Joint Ventures
 - [[concepts/ai-slop]] — AI Slop
 - [[concepts/ai-slop-productivity-paradox]] — AI Slop and the Productivity Paradox
@@ -1593,6 +1600,7 @@
 - [[concepts/coalitional-agency]] — Coalitional Agency
 - [[concepts/code-cleanliness-coding-agents]] — Code Cleanliness and Coding Agent Performance — arXiv study (2605.20049) measuring how codebase cleanliness affects coding agent token usage (7-8% less) and file revisitations (34% fewer) across 660 Claude Code trials (July 2026)
 - [[concepts/code-as-process]] — code-as-process
+- [[concepts/code-execution-model]] — Code Execution Model (CEM) — doubleAI's coined class: an LLM lives inside the running program, rewrites the binary for the exact machine/data, and formally proves each rewrite equivalent (Maxwell: 38× pipelines, 4.25× kernels, 90% of SOL-ExecBench Blackwell kernels) (Oct 2026)
 - [[concepts/code-as-graph]] — Code-as-Graph — Samuel Colvin's thesis: agent orchestration belongs in type-checked code, not graph libraries; "typed/snapshotted/parallel — pick two" CAP theorem; Monty + Temporal as the execution/durability answer (Oct 2026)
 - [[concepts/code-execution-with-mcp]] — Code Execution with MCP — Treating MCP Servers as Code APIs
 - [[concepts/code-intelligence-for-llms]] — The practice of providing LLMs with structured, pre-computed code analysis data rather than raw source files. Cuts to...
@@ -3299,6 +3307,7 @@
 - [[queries/2026-10-20-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-20): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-21-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-21): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-22-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-22): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-10-24-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-24): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
