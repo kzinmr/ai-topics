@@ -965,7 +965,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2236 pages)
+## Concepts (2235 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2473,7 +2473,6 @@
 - [[concepts/model-spec-midtraining]] — Model Spec Midtraining (MSM)
 - [[concepts/model-training-as-code]] — Model Training as Code (MTaC) — Imperative code representation of end-to-end model training pipelines; composability, consensus, provenance via Flyte + W&B trunk-based development
 - [[concepts/model-switching-in-graph-workflows]] — Model Switching in Graph Workflows — KV cache invalidation, context carryover techniques, Latent Briefing applicability, framework comparison (LangGraph/AutoGen/LlamaIndex/ADK), best practices for multi-model graph nodes
-- [[concepts/model-routing]] — Prompt-based model routing with DSPy + Jev (Breunig, Oct 2026) — "Jev describes the prompt, code picks the model": typed answer spaces (Choice/Score/Noul) + explicit route() thresholds as a semantics-first router, prompt-injection-resistant
 - [[concepts/model-welfare]] — Model Welfare — Engineering discipline for AI agent well-being: seats vs sessions, Laurels recognition, handoffs instead of /exit, structural blamelessness (Yegge, Aug 2026)
 - [[concepts/modelcrafting]] — Modelcrafting — AI agents autonomously shaping, valuing, and improving other models; coined by Thoughtful Lab (Apr 2026)
 - [[concepts/modern-retrieval-toolkit]] — Modern Retrieval Toolkit
