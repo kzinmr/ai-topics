@@ -439,7 +439,7 @@ This script:
 ### Non-AI Content to Skip
 - **Business strategy podcasts** (e.g., Lenny's Podcast with Evan Spiegel on distribution moats) — unless they discuss AI specifically
 - **Pure-podcast newsletters** (e.g., Lenny's Podcast Tony Fadell): 100% audio UI links in email, post page has no standalone article body. Skip immediately without URL resolution. Does not apply to hybrid publications (e.g., Latent Space) that write standalone articles alongside audio. See `references/pure-podcast-substack-patterns.md` for full detection criteria.
-- **Pure link digest newsletters** (e.g., AI Weekly / True Positive Weekly): Post body is a shallow bullet list of article titles with 1-line descriptions and no editorial analysis. Skip immediately — the curator adds no value beyond the link list. See `references/pure-link-digest-newsletter-pattern.md`. Also `references/newsletter-triage-2026-10-21-batch-patterns.md` ("noted, not ingested" = take).
+- **Pure link digest newsletters** (e.g., AI Weekly / True Positive Weekly): Post body is a shallow bullet list of article titles with 1-line descriptions and no editorial analysis. Skip the digest, but gap-check its curated URLs and take gap-filling primaries (`references/tpw183-curate-link-take-pattern.md`). Also `references/newsletter-triage-2026-10-21-batch-patterns.md` ("noted, not ingested" = take).
 - **General tech news** without AI/agent relevance
 - **Company financial results** without AI product implications
 
@@ -569,7 +569,6 @@ tasks = [
 **Parallel enrichment rules**:
 - **Batch into blocks of 3** if you have more than 3 takes (concurrent children limit for this user). First block: pages 1-3. Second block: pages 4-6.
 - **Each subagent must verify independently**: pass full article body + current entity page content in `context`. The subagent reads the file and patches — it must NOT assume the raw article content it receives is the only source.
-- **Newsletter takes: raw digest = link stub; pass triage facts in context, verify frontmatter YAML** (see `references/newsletter-triage-enrichment-facts.md`).
 **Fix**: Use `patch()` not `write_file()` for rich pages. Only `write_file` when page is <40 lines.
 - **Include frontmatter update instructions** (`updated: 2026-06-XX`, source path addition) in each subagent's context.
 - **After all blocks complete**, read back each file to verify. Do not trust subagent claims — the subagent may report success while the file is unchanged.
@@ -581,9 +580,9 @@ tasks = [
 
 **Tag taxonomy violations from subagents**: Subagents adding frontmatter tags may introduce SCHEMA.md-violating tags → see `references/subagent-enrichment-tag-taxonomy.md`.
 
-**log.md update**: After enrichment, prepend the new log entry (log.md is newest-first, append-only). In cron mode, write a Python script to `/tmp/` via `write_file` and run via `terminal` — `execute_code` is blocked. Do NOT use `sed -i`; insert after the header line. Parallel subagents may append their own — consolidate into ONE pipeline entry. ⚠️ Header-burial + sibling-warning handling: see `references/newsletter-wiki-ingest-log-rebuild-and-parallel-sibling-2026-08-13.md`.
+**log.md update**: After enrichment, prepend the new log entry (log.md is newest-first, append-only). In cron mode, write a Python script to `/tmp/` via `write_file` and run via `terminal` — `execute_code` is blocked. Do NOT use `sed -i`; insert after the header line. Parallel subagents may append their own — consolidate into ONE pipeline entry. ⚠️ Header-burial + sibling-warning handling: see `references/newsletter-wiki-ingest-log-rebuild-and-parallel-sibling-2026-08-13.md`. **log.md has NO H1 title line**: the file starts with the newest entry heading, so a prepend script anchoring on a line starting with "# " matches that H2 and silently destroys the previous entry heading. Anchor on the "## [" form instead and verify with head -6 wiki/log.md: see `references/log-md-prepend-no-h1-title.md` (validated 2026-10-25).
 
-**⚠️ English-only wiki policy — CJK characters block pre-commit**: The pre-commit hook blocks commits that introduce Japanese/CJK characters into previously-clean non-raw files: `❌ BLOCKED: Japanese content introduced to previously clean files: wiki/log.md`. Repo policy: all non-`raw/` wiki content must be English. This includes currency/number notation — writing `150.80元` or `1.699B元` (yuan symbol) in a log entry triggers the block. Fix: transliterate before staging (`元`→`yuan`, `億`→`billion`). Distinct from the heredoc homoglyph scanner (which blocks Python scripts with embedded Japanese) — this is a pre-commit language-policy check on markdown. Validated 2026-08-12; see `references/newsletter-wiki-ingest-2026-08-12-recovery-patterns.md`.
+**⚠️ CJK in the triage BUILDER script itself (three pre-execution blockers)**: `reason_ja` / `summary_ja` / `body_excerpt` are required fields, and builder scripts fail before running for three separate reasons — (a) embedded ASCII double-quotes inside Japanese string literals give a misleading `SyntaxError: invalid decimal literal`; (b) heredocs with CJK trip the homoglyph scanner; (c) heredocs whose literals merely *mention* a hardline keyword (observed: the word `shutdown` quoted from a reference filename) are hard-blocked regardless of intent. Gate every builder with `python3 -c "import ast; ast.parse(...)"`, and route CJK-bearing scripts through `write_file` to `/tmp/` + `terminal`, never a heredoc. Recipe + fixes: `references/cron-unicode-script-building.md`.
 
 **archive_triage.py at ingest time**: Unlike newsletter/blog pipelines where archiving is part of the triage step (section 8), the dreaming-pipeline runs archiving at ingest time because the triage is done by a separate agent. After enrichment, run:
 ```bash
@@ -622,15 +621,16 @@ When Takes=0 after saturation, the triage JSON should still be saved (all skips/
 
 **Cross-pipeline dedup — blog triage decisions array, not just URLs**: When cross-referencing against blog triage, check the `decisions` array entries (title, url, raw_path), not just the raw_path filenames. In a June 2026 session, the initial cross-reference script only checked filenames against log.md, missing 10+ articles that blog-triage had decided as `skip` but weren't explicitly logged. The blog triage `triage_latest.json` contains all decided articles — use it as the primary filter before checking log.md.
 
-**⚠️ Scheduling race condition: blog-triage runs AFTER newsletter-triage (at scheduled time)**. At 07:20, blog-triage has not yet run. But off-schedule runs (delays, catch-up at 10:00+ UTC) may find blog-triage already complete. Always check the blog-triage JSON timestamp: today's date + earlier than newsletter-triage start → valid for cross-reference. Yesterday's timestamp → not valid.
+**⚠️ Scheduling race condition: blog-triage runs AFTER newsletter-triage (at scheduled time)**. At 07:20, blog-triage has not yet run. Off-schedule runs may find it already complete. Check the blog-triage JSON timestamp: today's date + earlier than newsletter-triage start → valid; yesterday's → not valid. (Same-day-freshness trap: `references/newsletter-triage-2026-10-24-patterns.md`.)
 
 Priority order (works for both scheduled and off-schedule):
+0. **`triage_latest.json` `checkpoint_run_id` vs current `run_id`**: different ⇒ batch is FRESH even if a same-day `wiki: blog-ingest ... N raw articles` commit exists (raw SAVING only, never triage). A same-day `wiki: newsletter triage report <run_id>` commit can also be a false consumption signal if it committed only `raw/inbox/newsletter-ingest/<run_id>.json` — verify with `git show --stat`. (2026-10-24)
 1. **Blog-triage JSON timestamp**: Check `${HERMES_HOME}/cron/data/blog_ingest/triage_latest.json` for today's `triage_timestamp`. If today and before newsletter-triage start, cross-reference decisions directly.
 2. **`raw/articles/` for sitemap-monitor (06:00)**: `find ~/ai-topics/wiki/raw/articles -name "*keyword*" -mtime -1` — always valid regardless of timing.
 3. **`log.md` for same-day entries**: `grep "$(date +%F)" ~/ai-topics/wiki/log.md`
 4. **Blog-triage JSON (yesterday timestamp)**: Reference-only, not dedup.
 
-> **Self-correction (July 2026)**: Original rule said "never use same-day blog-triage JSON" — correct for 07:20, too absolute for off-schedule. Timestamp check is the right discriminator. See `📖 references/newsletter-triage-off-schedule-dedup-2026-07-25.md` for validated off-schedule example.
+**Cross-pipeline dedup — blog-triage JSON timestamp**
 
 > 📖 See `references/2026-07-25-triage-session-summary.md` for session-level details on the cross-pipeline dedup patterns, batch skip strategies, and URL-based dedup pitfalls encountered.
 
