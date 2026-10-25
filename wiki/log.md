@@ -1,3 +1,9 @@
+# Wiki Log
+
+## [2026-10-25] trending-topics — AI economics skeptic cluster + Cerebras trillion-param + AI readability
+- Created `concepts/creative-class-job-loss.md` (Apricitas 200k creative-jobs analysis, HN 384p), `concepts/ai-generated-language-readability.md` (arXiv:2610.29162 psycholinguistics, HN 209p).
+- Updated `concepts/ai-economics.md` (S&P 493 / Slok no-payoff section), `concepts/cerebras-cs4.md` (trillion-param WSE-3T deployment: 59 wafers for Kimi K3), `concepts/kimi-k3.md` (Cerebras serving), `concepts/ai-slop.md` (readability measurement).
+- Added 4 raw articles; SCHEMA tags: wafer-scale-inference, pipeline-parallelism, information-density, psycholinguistics, ai-payoff, creative-class, labor-displacement.
 ## [2026-10-25] active-crawl | 4 new concepts — Mistral Large 4, NVIDIA OpenShell, ThinkingCap, Persona-Conditioned Security Degradation
 
 **Discovery**: HN Algolia `search_by_date` (~90 query terms, points>=20, 5-day window) + X/Twitter (xurl, search-API public_metrics were null so ranked by relevance/RT) + blogwatcher DB + wiki gap analysis (parent `find`/`grep`). Same-day dedup vs blog-wiki-ingest / newsletter-wiki-ingest. Cerebras trillion-param and Kimi K3.1 Pro were high-heat HN stories but already covered (`entities/cerebras-systems`, `concepts/cerebras-cs4`, `concepts/kimi-k3` K3.1 Pro section) — skipped.
@@ -77,7 +83,6 @@
 
 ---
 
-# Wiki Log
 
 
 ## [2026-10-24] dreaming wiki-ingest | Pattern E backlog take (upstream render-failure recovery)

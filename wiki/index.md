@@ -70,6 +70,7 @@
 - [[entities/ankur-goyal]] — Ankur Goyal
 - [[entities/anorth-chen]] — Ziyao 'North' Chen (@anorth_chen)
 - [[entities/anthropic]] — AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Clau...
+- [[concepts/ai-generated-language-readability]] — AI-Generated Language Readability — psycholinguistic study (arXiv:2610.29162): all 9 frontier models use harder-to-process syntax (long dependencies, low-freq n-grams, inanimate subjects); hypothesis: training optimizes information density over communication (Oct 2026, HN 209p)
 - [[concepts/anthropic/index]] — Anthropic sub-index — Anthropic company/business pages hub for [[entities/anthropic]]
 - [[concepts/claude/index]] — Claude sub-index — Claude product/model pages hub for [[entities/anthropic]]
 - [[entities/anthropic-computer-use]] — Anthropic Computer Use
@@ -363,6 +364,7 @@
 - [[entities/gm8xx8]] — gm8xx8
 - [[entities/goodfire-ai]] — Goodfire AI
 - [[entities/google]] — Google (AI/ML); TPU sales to Anthropic >20% of shipments thru 2027, $150B+ backlog, Cloud +82% (Aug 10)
+- [[concepts/creative-class-job-loss]] — Creative Class Job Loss — >200k US media/film/arts jobs lost in 4 years (~1/3 of Hollywood's movie & sound sector); digital-arts-only decline vs growing in-person entertainment; AI attribution caveats incl. copyright preservation incentives (Apricitas, HN 384p)
 - [[concepts/gemini/index]] — Gemini sub-index — Gemini model family pages hub
 - [[entities/google-adk]] — Google Agent Development Kit (ADK)
 - [[entities/google-antigravity]] — Google Antigravity
@@ -1527,7 +1529,7 @@
 - [[concepts/chain-of-thought-reasoning]] — chain-of-thought-reasoning
 - [[concepts/chaos-engineering]] — Chaos Engineering for Microservices
 - [[concepts/chaos-engineering-for-microservices]] — Chaos Engineering for Microservices
-- [[concepts/cerebras-cs4]] — Cerebras CS-4 (Nexus Platform) — first Nexus generation rack (3× WSE-3 Turbo, 2 µs switch-less wafer interconnect, vendor-claimed 30× vs GPUs; Aug 2026)
+- [[concepts/cerebras-cs4]] — Cerebras CS-4 (Nexus Platform) — first Nexus generation rack (3× WSE-3 Turbo, 2 µs switch-less wafer interconnect, vendor-claimed 30× vs GPUs; Aug 2026); Oct 2026: trillion-param deployment walkthrough — Kimi K3 (~3T) on 59 WSE-3T wafers, 4-bit/16GB per layer, RDMA pipeline, 1000-2000+ tok/s (HN 204p)
 - [[concepts/characterization-testing]] — Characterization Testing — observed behavior versus approved intent, rounding observations, effect capture and repeatable discovery
 - [[concepts/chatferry]] — ChatFerry
 - [[concepts/chicago]] — Chicago

@@ -18,6 +18,7 @@ sources:
   - "raw/articles/simonwillison.net--2026-jul-27-kimi-k3--f8e3d6fa.md"
   - "raw/articles/modal.com--blog-kimi-k3-by-moonshot-now-available-on-modal--66112a1a.md"
   - "raw/articles/2026-07-28_fireworks-ai_kimik3-on-fireworks.md"
+  - "raw/articles/2026-10-22_cerebras_trillion-parameter-deployment.md"
   - "raw/newsletters/2026-07-28-ainews-much-ado-about-open-weights.md"
   - "raw/articles/2026-07-28_fireworks-ai_K3-LoRA-Training.md"
   - "raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md"
@@ -523,3 +524,11 @@ If the Nov 4 weight release lands as promised, this would be the strongest open-
 - [[concepts/kimi-k2-7-code]] — Coding-optimized variant (Jun 2026)
 - [[comparisons/llm-api-pricing]] — Cross-provider pricing comparison
 - [[concepts/open-model-consortium]] — Open model ecosystem
+
+## Cerebras wafer-scale serving (Oct 22-25 2026)
+
+Cerebras chose Kimi K3 (~3T open params) as the flagship example for deploying trillion-parameter models on WSE-3T: **59 wafers** (4-bit weights, 16 GB/layer; 1 dense layer/wafer + 2 linear-attention layers/wafer), pipeline-parallel with activations only crossing wafers via RDMA (~2 µs/hop), sustaining **1000-2000+ tok/s**. Cerebras-side benchmark claims: 88.3% Terminal-Bench 2.1, 91.2% BrowseComp — competitive with GPT-5.6 Sol. Details on [[concepts/cerebras-cs4]].
+
+## Sources added
+
+- raw `raw/articles/2026-10-22_cerebras_trillion-parameter-deployment.md` — Cerebras deployment walkthrough (Oct 22 2026)

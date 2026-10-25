@@ -2,7 +2,7 @@
 title: "AI Economics"
 type: concept
 created: 2026-06-18
-updated: 2026-08-17
+updated: 2026-10-25
 tags:
   - economics
   - agi
@@ -18,6 +18,7 @@ related:
 sources:
   - https://www.dwarkesh.com/p/alex-imus-phil-trammell
   - raw/articles/seangoedecke.com--ai-inference-is-obviously-profitable--ac8d2cd6.md
+  - "raw/articles/2026-10-24_apollo_slok-no-ai-payoff-outside-tech.md"
   - raw/articles/2026-07-12_satya-nadella_reverse-information-paradox.md
 ---
 # AI Economics
@@ -79,6 +80,20 @@ Vectoral's threat-research piece (Matt Lenhard, Aug 10, 2026, HN 301pts on Aug 1
 This is the inference-layer analogue of the "credit resale" pattern in cloud/GPU markets and signals maturing (and arbitrage-heavy) token economics.
 
 Sources: [Vectoral — Who Are the Token Brokers?](https://vectoral.com/blog/who-are-the-token-brokers) / [HN discussion](https://news.ycombinator.com/item?id=49329755)
+
+
+## The S&P 493 Test: No AI Payoff Outside Tech (Oct 24 2026)
+
+Torsten Slok (Apollo Chief Economist) published the sharpest macro skeptical datapoint of the month — "No Signs of AI Payoff Outside the Tech Sector" (HN 562pts, Oct 24 2026):
+
+- **Revenue per worker** rising for the Mag 7 but **flat for the S&P 493**; **profit margins** same pattern; **no detectable boost to productivity / TFP growth** (SF Fed Fernald series).
+- Mainstream corporate America is **pulling back**, reframing token spending "not as a source of growth but as a cost center that weighs on margins" — while VC-backed companies keep scaling token budgets (Ramp AI Index).
+- Slok's judgment argument: "AI may be a great calculator, but in business, intelligence is mostly **judgment**" — judgment depends on context, accountability, trust, culture, unwritten rules, ethical trade-offs; none of which models understand.
+- Closing thesis: **"The AI story will be decided in the S&P 493, not the Mag 7."**
+
+This is the empirical bookend to the [[concepts/ai-bubble]] debate: capex and token spend are booming (see [[concepts/agent-economics]]) but the demand side outside tech is not converting into P&L. Pairs with the creative-class labor data in [[concepts/creative-class-job-loss]] — AI is already visible in *cost* lines (job cuts) before it appears in *revenue* lines.
+
+Source: raw `raw/articles/2026-10-24_apollo_slok-no-ai-payoff-outside-tech.md`; HN https://news.ycombinator.com/item?id=50224463 (562pts, 596c).
 
 ## Sources
 - [Alex Imas and Phil Trammell - What remains scarce after AGI?](https://www.dwarkesh.com/p/alex-imus-phil-trammell)

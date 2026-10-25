@@ -2,7 +2,7 @@
 title: AI Slop
 type: concept
 created: 2026-05-25
-updated: 2026-09-04
+updated: 2026-10-25
 tags:
   - ai-slop
   - coding-agents
@@ -153,3 +153,9 @@ KrebsOnSecurity's introduction of **DecryptAds** (a free adtech-transparency ser
 This connects the AI-slop content-quality problem to **malvertising and ad-fraud** — the low-quality content ecosystem becomes an attractive target for malicious ads precisely because its operators cut corners on security.
 
 Source: [[raw/articles/krebsonsecurity.com--2026-08-whos-tracking-you-use-this-new-service-to-find-out--2df50888.md]]
+
+## Psycholinguistic Measurement of AI Readability (Oct 2026)
+
+arXiv:2610.29162 (HN 209pts) provided the first systematic psycholinguistic measurement behind the "AI slop is hard to read" complaint: across 9 frontier/near-frontier models, AI text uses more object-relative clauses, longer dependencies, low-frequency n-grams, and inanimate subjects with animate verbs than human writing. The proposed cause is objective pressure toward **information density** (math/code/reasoning training) rather than communicability — a length-penalty fine-tune reproduces the effect. See [[concepts/ai-generated-language-readability]].
+
+Source: HN https://news.ycombinator.com/item?id=50223647; raw `raw/articles/2026-10-24_arxiv_2610.29162-ai-language-hard-to-understand.md`.

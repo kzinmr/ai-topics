@@ -1,10 +1,10 @@
 ---
 title: Cerebras CS-4 (Nexus Platform)
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-10-25
 type: concept
 tags: [concept, hardware, ai-hardware, inference, cerebras, wafer-scale-integration, data-center]
-sources: [raw/articles/2026-08-19_cerebras_cs4-product-page.md]
+sources: [raw/articles/2026-08-19_cerebras_cs4-product-page.md, raw/articles/2026-10-22_cerebras_trillion-parameter-deployment.md]
 ---
 
 # Cerebras CS-4 (Nexus Platform)
@@ -43,3 +43,15 @@ The **CS-4** is Cerebras's fourth rack-scale AI supercomputer generation, announ
 - [[entities/cerebras-systems]] — CS-4 as the first Nexus generation
 - [[entities/nvidia]] — GPU-cluster baseline the 30× claim targets
 - [[concepts/compute-scaling-bottlenecks]] — SRAM vs HBM tradeoffs; inter-wafer interconnect
+
+## Trillion-Parameter Model Deployment on WSE-3T (Oct 22 2026)
+
+Cerebras published the arithmetic behind serving **multi-trillion-parameter models at 1000-2000+ tok/s** on wafer-scale chips, using open-weight **Kimi K3 (~3T params, 69 linear-attention + 24 dense layers)** as the worked example:
+
+- A WSE-3T wafer has **44 GB on-chip SRAM**. At 4-bit weights, 3T params ≈ 1.5 TB raw payload; ÷ 93 layers ≈ **16 GB/layer**.
+- **Dense layers**: one per wafer (the remaining ~28 GB goes to that layer's KV cache for all active requests). **Linear-attention layers**: two per wafer (2×16 GB) — they keep a small fixed-size state per request instead of a KV cache, so no extra room is needed. Total for Kimi K3: 69/2→35 + 24 = **59 wafers**.
+- Wafers run as an **assembly-line pipeline**; only activations cross wafer boundaries via **RDMA over Ethernet (~2 µs/hop)**. Weights never move because whole layers fit in one wafer's SRAM.
+- Concurrency comes from **pipeline fill**: each stage works on a different request (× micro-batch), so requests-in-flight ≈ stages × micro-batch size. Smaller micro-batches → lower per-request latency; larger → higher throughput. KV-cache SRAM budget caps max concurrent requests.
+- The post cites Kimi K3 at **88.3% Terminal-Bench 2.1** (vs GPT-5.6 Sol 88.8%) and **91.2% BrowseComp** (vs 90.4%) — an open model nudging frontier proprietary scores, reinforcing Cerebras's open-model-fast-serves positioning.
+
+Sources: raw `raw/articles/2026-10-22_cerebras_trillion-parameter-deployment.md`; HN https://news.ycombinator.com/item?id=50227356 (204pts, Oct 25 2026).
