@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-10-18
+updated: 2026-10-25
 tags:
   - person
   - blogger
@@ -338,6 +338,10 @@ Alderson's October 2026 scenario piece, written as chip stocks posted their long
 **Key methodological claim:** judge the market by **overall token/compute revenue**, not OpenAI-vs-Anthropic head-to-head — TSMC reported record revenue saying AI demand still exceeds supply *in the same week* chips were sold off. His closing line: "If the AI boom ends, I don't think it ends with fewer tokens. It ends with the same tokens — or far more — flowing to far more people at far lower margins." The one accelerant is leverage — so much of the buildout is debt-funded that small shocks unwind far faster than fundamentals justify (directly reinforcing [[concepts/ai-subprime]] and [[concepts/subprime-data-center-crisis]]).
 
 
+
+### Practical systemd for agent workloads (Oct 2026)
+
+Alderson's "Interesting systemd features you may not know about" is written from the same premise that drives his agent-tooling analysis — the volume of **almost-disposable software** agents generate now exceeds the ceremony of containerizing each piece — and the practical upshot is that Linux already ships the containment primitives: `systemd-run --user --scope -p MemoryMax=4G -p CPUQuota=200%` for a leaky agent-written script (same cgroup limits Docker uses), `-p RuntimeMaxSec=30m` as a hard wall-clock cap on an autonomous run, `systemd-inhibit` so a lidded laptop keeps running, and `.path` units (`DirectoryNotEmpty=%h/agent-inbox`) for event-driven triggering instead of cron. `Persistent=true` and `OnSuccess=`/`OnFailure=` make scheduled personal agents actually reliable and self-notifying (including Healthchecks.io-style dead man's handles). His one warning is the safety-relevant one: systemd's *sandboxing* directives (`ProtectHome`, `ReadWritePaths`, …) have "so many footguns" that they don't belong in the same breath as the resource limits — limits are kernel-enforced guarantees, the sandbox directives are opt-in and easy to under-specify. Full analysis folded into [[concepts/agent-sandbox-patterns]] (§"The hobbyist-tier third option"). Note the OpenCode gotcha: the time limit is bypassed unless you pass `--standalone`, because OpenCode dispatches work to an already-running background server. ^[raw/articles/martinalderson.com--posts-interesting-systemd-features--ef189b6f.md]
 
 ## Related
 

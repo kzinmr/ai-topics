@@ -1,7 +1,7 @@
 ---
 title: AI Supply Chain Security
 created: 2026-05-21
-updated: 2026-10-22
+updated: 2026-10-25
 type: concept
 tags:
   - concept
@@ -15,6 +15,7 @@ sources:
   - raw/newsletters/2026-05-20-everything-important-from-google-i-o-2026.md
   - https://venturebeat.com/security/ai-supply-chain-attacks-release-pipeline-red-teams-not-covering/
   - raw/articles/nesbitt.io--2026-06-26-incident-report-cve-2026-lgtm-html--da259599.md
+  - raw/articles/nesbitt.io--2026-10-24-this-week-in-package-management-html--b6c5a952.md
 ---
 
 # AI Supply Chain Security
@@ -91,6 +92,20 @@ cover, for the same reason the TanStack worm slipped past valid provenance.
 
 See [[entities/litellm]] and [[events/2026-10-21-litellm-pypi-compromise]].
 
+**Follow-up (24 Oct, Nesbitt weekly)**: LiteLLM's maintainers told Help Net Security the attacker used what appear to be **stolen GitHub CLI OAuth tokens** from three engineers' accounts — changing the release pipeline from the first, triggering and approving the release from the second, then deleting the workflow records from the third. The container image's build provenance recorded the source repo as `Berri-AI/litellm`, **one hyphen away** from the real `BerriAI/litellm`, and the payload files are absent from the release tag in the real repository. This makes 1.107.0 LiteLLM's **second compromise of 2026** and upgrades the lesson set: repository-side review clearing the release is *necessary but not sufficient* — the human/token layer above the repo is the actual failure point.
+
+### 8. npm Trusted Publishing matched on repository *names* (October 2026)
+
+Bloom Security found that npm's Trusted Publishing bound configurations on the **`owner/repo` name** rather than the **permanent numeric repository ID** that GitHub already includes in the OIDC token. Once a maintainer renamed or deleted the bound repository, *anyone* could register the freed name and publish new versions of the package — carrying a valid provenance attestation that named their own repository. Bloom counted the exposure across **more than 1,500 packages**. GitHub's fix (announced 2 October) expires any configuration that goes **48 hours without validation**, and npm's documentation now states the first publish binds to the repository's immutable identity.
+
+This is the same structural bug as the SLSA/TanStack failure two sections up — **attestation validates a mutable human-readable identifier instead of an immutable one** — and it reappears in the LiteLLM case as a one-hyphen typosquat of the source repo. The recurring mitigation is not stronger attestation but *immutable identity binding* plus periodic re-validation.
+
+### 9. Registry-level policy proxies for coding agents (October 2026)
+
+GitHub **package firewall** entered public preview for Enterprise Cloud: a proxy between upstream registries and CI runners, **coding agents**, or internal registries that checks metadata requests and downloads against an enterprise policy covering cooldown periods, malware/vulnerability advisories, and **attestation downgrades**. npm-only and free during preview. Notable because it moves the cooldown/registry-timestamp protections discussed in [[entities/andrew-nesbitt|Nesbitt's "One Small Bug"]] out of client-side package-manager settings (which silently ignore unknown `.npmrc` keys) into an infrastructure chokepoint that an agent cannot misconfigure.
+
+Related same-week signals: the **curl project** publishes LOW/MEDIUM vulnerability reports openly from 26 October (keeping embargoes only for HIGH/CRITICAL) after receiving 13 reports on a single Saturday — an explicit admission that embargo capacity is exceeded by AI-accelerated disclosure volume; and **Chainguard broke the PHP 8.5.12 embargo**, shipping fixed images over six hours before the coordinated release.
+
 ## Responses and Mitigations
 
 Organizations are responding with:
@@ -103,6 +118,7 @@ Organizations are responding with:
 - [[concepts/security-and-governance/ai-safety]] — Broader AI safety framework
 - [[concepts/ai-code-provenance-in-open-source]] — human-scale provenance attestation for AI contributions
 - [[concepts/llm-policies-open-source]] — OSS project LLM contribution policies
+- [[entities/andrew-nesbitt]] — weekly package-management digest: npm Trusted Publishing name-matching flaw, GitHub package firewall
 - [[entities/openai-codex]] — Codex command injection incident
 - [[concepts/openai/tanstack-supply-chain-2026]] — TanStack worm detailed analysis
 - [[entities/litellm]] — LiteLLM gateway + 1.107.0 PyPI compromise

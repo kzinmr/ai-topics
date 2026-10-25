@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-10-23
+updated: 2026-10-25
 type: entity
 sources:
   - raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md
@@ -294,6 +294,8 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - Regular podcast guest on engineering and AI topics
 
 ## Recent Articles
+
+- **Don't anthropomorphize big tech companies** (2026-10-24): Opened with Bryan Cantrill's "think of Larry Ellison the way you think of a lawnmower" line and extends it to companies as a whole: **"Companies are machines, not persons."** Your relationship to your employer is like your relationship with your car, not with a person — so statements like "my company really owes me," "I'm fighting the good fight against my company and they hate me for it," "my company is vindictively retaliating against me," and "my company and I are partners in the mission to make the world a better place" are all category errors. A machine doesn't hate you; it just does what it was built to do, and "you stick your hand in there and it'll chop it off, the end." Practical payoff: drop the expectation of reciprocity, loyalty, or moral accounting from the employment relationship, and evaluate the machine's incentives directly instead of its motives. ^[raw/articles/seangoedecke.com--dont-anthropomorphize-big-tech-companies--bddbb799.md]
 
 - **Software is slow because of bad design, not slow languages** (2026-10-22): rebuts the "AI will make software fast by rewriting it in Rust" wave — most programs are I/O-bound or already delegate hot work to fast libraries; real speedups come from redesign (caching, async, N+1 fixes), and agents should be asked to profile and redesign, not rewrite. Full analysis at [[#Software Is Slow Because of Bad Design, Not Slow Languages (Oct 2026)]]. ^[raw/articles/seangoedecke.com--software-is-slow-because-of-bad-design-not-slow-languages--4c48f523.md]
 - **What requirements don't you have?** (2026-10-18): RLVR-trained frontier models invent hypothetical requirements (unnecessary mutexes, TOCTOU-style re-checks, admin-status edge cases), bloating 4-line changes into "thousand-line monsters" — sees unsolicited requirements in ~half of large AI-generated diffs; a direct rebuttal to "code review is dead." Full analysis at [[#What Requirements Don't You Have? — RLVR "Grader" Overcompliance in Code (Oct 2026)]]. ^[raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md]

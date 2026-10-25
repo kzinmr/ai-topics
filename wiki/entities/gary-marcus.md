@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-10-23
+updated: 2026-10-25
 tags:
   - lab
   - benchmark
@@ -509,8 +509,19 @@ Two same-day posts extending Marcus's two running beats:
 - **Agent-enabled crime vs frontier-only regulation**: Citing Madison Mills (Axios), banking executives are "racing to restrict access to their systems as AI moves at a velocity faster than financial institutions can respond." Marcus situates the bank incidents in a wave — agent-facilitated attacks on French refrigeration systems (Oct 11), an ongoing cyberattack wave in Japan, months of OpenAI-lab attacks on Hugging Face and the Australian government, and The Information's report on the Latin American "Cybercartel" group. His regulatory argument: **attackers don't need frontier models to cause mayhem**, so focusing regulation on compute-measured frontier capability is misallocated — current models are already causing serious harm in banking, education, and politics. Includes his Oct 3 counter-quote of Sam Altman ("the world should accept some bad things happening for the benefits of this technology..."). ^[raw/articles/garymarcus.substack.com--p-breaking-news-us-banks-are-taking--12840c29.md]
 - **CoreWeave**: "All the king's horses and all the king's men haven't been able to put CoreWeave back together again" — Marcus charts the six-month stock collapse, noting the only blip upward came Monday from pundits hyping the stock on television. Direct corroboration of the [[concepts/ai-bubble-economics]] thesis and CoreWeave's role as its canary. See [[entities/coreweave]]. ^[raw/articles/garymarcus.substack.com--p-all-the-kings-horses-and-all-the--9d571052.md]
 
+### "Will Generative AI do more harm than good?" (Oct 24, 2026)
+
+Marcus returns to the question he debated with Keith Teare (Open to Debate, March 2023) and concludes the negative ledger is now "quite serious": nonconsensual deepfake porn, phishing, wholesale disinformation, "cognitive surrender," government influence over LLM outputs, surveillance use, and IP theft against artists/writers (employment effects so far "more modest than some people expected").
+
+The new anchor is the October cyberattack wave — the deluge some have called **"Black October"**, which **Paul Kedrosky** dubbed *"The Hackening"* and **Marc Benioff** called a **"Code red"**, amplifying a tweet from Anthropic's **Jason Clinton** (Oct 22, 844K views): "as bad as things have gotten in the past 4 days, they are going to get a lot worse before they get better… not for ai, for the basics. (we need to hold on for ~18 months.)" Marcus endorses both framings, noting Clinton expects the period to last only a year or two.
+
+On the positive side, he cites **Torsten Slok** (Apollo Global Management chief economist, historically pro-technology) making "a brutal case that many of the positive effects we were led to expect simply aren't materializing." Closing position: conceding friends benefit from GenAI mainly for coding, "at this point it's not hard to make the argument that it has on the whole been a net detriment to society. And there is still the chance it will pull down the entire economy." ^[raw/articles/garymarcus.substack.com--p-will-generative-ai-do-more-harm-than--058bd242.md]
+
+Extends his Oct 22 "U.S. banks are taking hits from AI agents" post (same attack wave) and the [[concepts/ai-bubble-economics]] demand-side critique — Slok's missing-returns case is the macro version of his capex-vs-revenue argument.
+
 ## References
 
+- [Will Generative AI do more harm than good?](https://garymarcus.substack.com/p/will-generative-ai-do-more-harm-than) (Oct 24, 2026)
 - [Misplaced panic over AI progress](https://garymarcus.substack.com/p/misplaced-panic-over-ai-progress) (May 2026)
 - [The illusion of Generative AI, the insanity of massive bets on hyperscaling, and the case for world models and neurosymbolic AI](https://garymarcus.substack.com/p/the-illusion-of-generative-ai-the) (May 2026)
 - [The AI trial of the century ends with a whimper](https://garymarcus.substack.com/p/the-ai-trial-of-the-century-ends) (May 19, 2026) — On the OpenAI vs Musk trial verdict: jury rejected Musk's claims on statute of limitations grounds, never weighed in on OpenAI's legitimacy. See [[events/openai-musk-trial-verdict-2026|OpenAI vs Musk Trial Verdict]].

@@ -1,10 +1,10 @@
 ---
 title: "Andrew Nesbitt"
 tags: [person]
-updated: 2026-10-23
-sources: [raw/articles/nesbitt.io--2026-08-04-brew-install-actions-checkout-html--7762f317.md, raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md, raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md]
+updated: 2026-10-25
+sources: [raw/articles/nesbitt.io--2026-08-04-brew-install-actions-checkout-html--7762f317.md, raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md, raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md, raw/articles/nesbitt.io--2026-10-24-this-week-in-package-management-html--b6c5a952.md]
 created: 2026-04-24
-updated: 2026-10-23
+updated: 2026-10-25
 type: entity
 ---
 
@@ -533,6 +533,20 @@ A satirical-yet-exact dialogue piece: a coding agent ("Clauding…", "Fuddling�
 The piece reads as a narrative catalog of 2026's package-manager/CI security incidents, and doubles as a demonstration of a plausible agent workflow: the LLM as an auditor that notices the *interactions* between pnpm pinning, lockfiles, Dependabot cooldowns, GitHub Actions triggers, and cache poisoning — the exact "defensive agent" scenario his [[concepts/artificial-contributors-open-source|Artificial Contributors]] and package-security series has been preparing for. See also [[concepts/software-supply-chain-security]], [[concepts/ai-supply-chain-security]].
 
 Source: [[raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md]]
+
+### "This Week in Package Management: 24 October 2026" (Oct 24, 2026)
+
+Nesbitt's weekly digest, aggregated from his package-manager OPML feed collection and Mastodon boosts. The week's defining event was the **eMudhra intermediate-CA compromise** — eight intermediate CA certificates generated in a way that lets anyone recover their private keys — which forced security releases across dozens of package managers, language runtimes and vendored root bundles in a single coordinated wave: `uv 0.13.4`/`0.13.5` (compiled-in roots + managed CPython builds carrying certifi 2026.10.19), `pip 26.2.2`, `conda 26.9.4`, `pixi 0.82.1`, `rustup 1.29.2`, `certifi 2026.10.19`, `webpki-roots 1.0.10`, `rustls-webpki 0.103.16`, Elixir castore, Erlang certifi, Perl Mozilla::CA, Composer ca-bundle, plus Python 3.15.1/3.14.9/3.13.17, Java 27.0.1→8u511, Go 1.27.3/1.26.10, Node.js 26.12.1/24.22.1/22.23.4 (the Node update also fixed ten CVEs, four high, including a Brotli decoder out-of-bounds write → RCE). His companion post [[raw/articles/nesbitt.io--2026-10-21-trust-stores-are-dependencies-too-html--4b21d89f.md|"Trust Stores Are Dependencies Too"]] frames why the blast radius is so wide: every tool that bundles its own copy of the roots is a separate dependency to patch. Michał Górny's checklist makes the same point for Python — certifi in every venv and lockfile, certifi bundled inside pip, the pip wheel shipped via `ensurepip`, and Rust tools like uv that compile roots in.
+
+Three security items matter specifically for the AI-agent era:
+
+1. **LiteLLM 1.107.0, second compromise of 2026** — `Berri-AI/litellm` (one hyphen from the real `BerriAI/litellm`) published to PyPI/GHCR with `.pth` + `sitecustomize.py` startup hooks harvesting cloud credentials, SSH keys and **coding-agent auth files** on *every* Python start, even in processes that never import LiteLLM. Maintainers told Help Net Security the attacker used apparently **stolen GitHub CLI OAuth tokens** from three engineers, changing the release pipeline from account 1, approving from account 2, and deleting the workflow records from account 3. See [[entities/litellm]].
+2. **npm Trusted Publishing matched on `owner/repo` *names*, not the permanent numeric IDs** present in GitHub's OIDC token (Bloom Security). After a maintainer renamed or deleted the bound repository, anyone could register the freed name and publish new versions carrying a valid provenance attestation naming *their own* repo — exposure Bloom counted across **1,500+ packages**. GitHub's 2 October fix expires any configuration that goes 48 hours without validation. Directly relevant to the OIDC/provenance trust-chain failures in [[concepts/ai-supply-chain-security]].
+3. **GitHub package firewall (public preview, Enterprise Cloud)** — a policy proxy between upstream registries and CI runners/**coding agents**/internal registries, screening metadata requests and downloads for cooldown periods, malware/vulnerability advisories and attestation downgrades. npm-only during preview, free during preview.
+
+Also logged: the PHP 8.5.12/8.4.27/8.3.36/8.2.35 fixes for two RCE bugs (one triggerable by an **unauthenticated request on Apache with mod_php before any application code runs**), whose out-of-memory root cause was first spotted in the 2024 Quarkslab audit but stalled for months while the security team weighed competing approaches — CVE IDs leaked on 20 October so the release moved forward a day, and **Chainguard broke the embargo**, publishing fixed images more than six hours before the coordinated release. Ruby 4.0.9/3.4.12/3.3.13 fixed Onigmo regex-engine bugs GitLab turned into RCE via user-supplied patterns (e.g. CI config), exploitable even with `Regexp.timeout` and pattern-length limits in place — the four CVEs are GitLab's, and the Ruby core team is deciding whether compiling untrusted patterns is a supported use case at all. And Daniel Stenberg announced that from 26 October the **curl project will publish LOW and MEDIUM vulnerability reports openly** on the GitHub issue tracker, keeping embargoes only for HIGH/CRITICAL — because the project received 13 vulnerability reports on a single Saturday, more than its small security team can handle privately.
+
+Source: [[raw/articles/nesbitt.io--2026-10-24-this-week-in-package-management-html--b6c5a952.md]]
 
 ## References
 

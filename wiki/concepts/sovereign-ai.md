@@ -1,7 +1,7 @@
 ---
 title: "Sovereign AI"
 created: "2026-06-17"
-updated: "2026-09-03"
+updated: "2026-10-25"
 type: "concept"
 tags:
   - geopolitics
@@ -25,6 +25,7 @@ sources:
   - raw/articles/2026-05-20_cohere_cohere-acquires-reliant-ai-expand-sovereign-enterprise-ai.md
   - raw/articles/martinalderson.com--posts-is-datacentre-sovereignty-really-that-important--8195ad72.md
   - raw/newsletters/2026-08-23-can-you-switch-your-inference-on-a-random-tuesday-an-exclusive-with-pandaos-on-w.md
+  - raw/articles/steveblank.com--2026-10-24-europe-gets-a-wake-up-call--db1728be.md
 ---
 
 # Sovereign AI
@@ -62,7 +63,15 @@ Martin Alderson (2026) argues that data sovereignty is a **real requirement for 
 
 Nations view dependence on a small number of US-based frontier labs (OpenAI, Anthropic, Google) as a strategic vulnerability. If access to frontier models were restricted — through export controls, corporate policy, or geopolitical conflict — countries without domestic alternatives would face severe economic and security consequences.
 
+**The kill-switch scenario became concrete (Oct 2026).** Steve Blank, reporting from London, describes the U.S. shutting off intelligence and throttling **Starshield** (military Starlink) to Ukraine — a decision the Wall Street Journal attributed to **Elon Musk personally**, not to announced U.S. foreign policy. Whatever the motive, the European reading was that an American company running critical infrastructure can degrade an ally's capability mid-war without warning, so "the U.S. is an unreliable security and technology partner." Blank's key observation is the **extrapolation European policymakers immediately made**: if Starlink has a switch, so might Microsoft, OpenAI, Anthropic, Oracle, Palantir, or Google — "what capabilities would Europe lose if enterprise software and/or AI across Europe goes dark?" A scenario he says was "laughable… until this week."^[raw/articles/steveblank.com--2026-10-24-europe-gets-a-wake-up-call--db1728be.md]
+
+Blank adds the counterpart to Alderson's scepticism (§2.1): **AI collapses the cost of creating sovereign software** at precisely the moment geopolitical risk raises customers' willingness to switch, making recreation of Microsoft Office, Oracle, Salesforce, Palantir and Anduril's "features, functions and compatibility" achievable for most nations. His market prediction is a go-to-market inversion rather than a procurement policy: a U.S. founder selling into European defense/government now needs an answer to **"who holds the switch"** before the first meeting, and "European founders just got **sovereignty as a sellable feature**." If every U.S. vendor is priced as a kill-switch risk, the allied TAM for the whole ecosystem shrinks — Blank estimates "tens if not hundreds of billions of lost revenue." See [[entities/steve-blank]].
+
 The European Union has been particularly vocal about "digital sovereignty," funding initiatives like [[entities/mistral-ai|Mistral AI]] as a European alternative to US and Chinese AI providers. In East Asia, Japan, South Korea, and Taiwan have each launched national AI programs to reduce dependence on foreign models.
+
+### 2.2.1 Counterpoint: sovereignty as demand-side framing
+
+Note the asymmetry with §2.1. Alderson's argument is that sovereignty is a narrow, domain-specific requirement best met by regulation; Blank's is that a single high-salience trust shock can convert it into a general purchasing criterion regardless of the underlying technical need. Both can be true simultaneously: the *requirement* stays narrow while the *marketable fear* widens. The empirical test is whether European buyers actually begin discounting U.S. AI/enterprise vendors in 2027 procurement, or whether the Starshield episode fades as a news cycle.
 
 ### 2.3 Economic Competitiveness
 

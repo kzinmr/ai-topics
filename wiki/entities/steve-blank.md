@@ -2,7 +2,7 @@
 title: Steve Blank
 type: entity
 created: 2026-04-09
-updated: 2026-06-17
+updated: 2026-10-25
 tags:
   - person
   - blogger
@@ -130,6 +130,19 @@ Blank has pragmatically adopted AI in his own teaching and research workflow. Hi
 - **AI's real value** is not in generating novel ideas but in **accelerating the hypothesis testing loop** — the core Customer Development activity
 
 This mirrors his broader philosophy: AI is a **force multiplier for learning velocity**, not a replacement for customer insight.
+
+### "Elon Musk Just Gave Europe a Reason to Replace American Technology" (Oct 24, 2026)
+
+Written during a month in London, Blank reports the policy reaction to the U.S. shutting off intelligence and throttling **Starshield** (the military version of Starlink) to Ukraine — which, per the Wall Street Journal, **Elon Musk ordered personally and unilaterally**, with the effect of tilting Russia's war in Russia's favour. From Europe's perspective the motive is "almost beside the point": an American company operating critical military infrastructure degraded an American partner's capability mid-war, without warning. The message "heard loud and clear": **"the U.S. is an unreliable security and technology partner willing to throw any partner under the bus, at any time, for any reason."**
+
+Blank's two original contributions:
+
+- **The extrapolation Europeans are actually making**: "what happens if other U.S. CEOs — Microsoft, OpenAI or Anthropic, Oracle, Palantir, or Google — decide to restrict/limit or deny access to their products? What capabilities would Europe lose if enterprise software and/or AI across Europe goes dark?" A "laughable scenario until this week," now not outside the realm of possibility. Lesson: no nation can outsource national sovereignty and security by depending solely on U.S. data systems or intelligence.
+- **AI as the unlock for digital sovereignty**: Europe has debated digital sovereignty for years, and cloning top U.S. products looked insurmountable. "But today **AI collapses the cost of creating sovereign software** at exactly the time that geopolitical risk is increasing customers' willingness to switch. AI makes recreating the features, functions and compatibility of Microsoft Office, Oracle, Salesforce, Palantir, Anduril, et al. within reach… within the capabilities of most nations."
+
+Commercial consequence he forecasts: if every U.S. vendor is a kill-switch risk, the allied market for that ecosystem shrinks — "tens if not hundreds of billions of lost revenue" for American companies over time. The go-to-market inversion: a U.S. founder selling into European defense or government now needs an answer to **"who holds the switch"** before the first meeting, and "European founders just got **sovereignty as a sellable feature**." Filed under National Security / Teaching. [Original](https://steveblank.com/2026-10-24/europe-gets-a-wake-up-call/) ^[raw/articles/steveblank.com--2026-10-24-europe-gets-a-wake-up-call--db1728be.md]
+
+Extends his long-running Hacking for Defense / national-security teaching thread and pairs with [[concepts/ai-criticism-politics]]-adjacent sovereignty work ([[entities/cory-doctorow]]'s AI Digital Sovereignty framework, [[concepts/sovereign-ai]]) — but where sovereignty advocates argued the case on principle, Blank's signal is a *demand-side* one: a single CEO's unilateral act converting sovereignty from ideology into a purchasable product attribute.
 
 ## Writings and Publications
 

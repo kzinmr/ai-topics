@@ -1,12 +1,13 @@
 ---
 title: LLM Contribution Policies in Open-Source Projects
 created: 2026-08-07
-updated: 2026-09-06
+updated: 2026-10-25
 type: concept
 tags: [open-source, ai-governance, policy, rust, coding-agents]
 sources:
   - raw/articles/2026-08-05_lwn_rust-llm-contribution-policy.md
   - raw/articles/openjdk.org--legal-ai--7752a6b0.md
+  - raw/articles/evanhahn.com--list-of-vim-forks--1d8b806d.md
 related:
   - concepts/ai-code-provenance-in-open-source
   - concepts/open-source-llm-governance-debian-gr.md
@@ -70,6 +71,19 @@ The Linux kernel community has been discussing LLM contributions since 2024. Whi
 - **Gentoo Linux**: Banned AI-generated contributions in 2024, citing copyright concerns
 - **NetBSD**: Maintainers have expressed strong preference for human-authored contributions
 - **FreeBSD**: Ongoing discussion, no formal policy yet
+
+### Forks as exit: the Vim case (October 2026)
+
+The policies above are *voice* mechanisms — rules imposed inside a project. Evan Hahn's "List of Vim forks" documents the *exit* mechanism, and is worth reading as a governance datapoint rather than an editor roundup: of the four forks he lists, **two exist for the stated reason that upstream adopted AI** ^[raw/articles/evanhahn.com--list-of-vim-forks--1d8b806d.md]:
+
+- **Vim Classic** — "a stable, long-term support fork of the ubiquitous text editor, **maintained without the assistance of generative AI tools**."
+- **EVi** — "a **hard-fork of Vim v9.1.0 (Jan 2024) before AI was used in the project**."
+
+Alongside them sit the two forks with conventional motivations — **Neovim** ("engineered for extensibility and usability") and **MacVim** (macOS GUI integration) — which makes the split legible: in a project whose last decade of forking was driven by *features*, the newest two forks are driven by *provenance*.
+
+Two things follow. First, the **freeze date is the policy**: EVi does not negotiate an LLM-use policy, it pins a version (v9.1.0, Jan 2024) and treats everything after as contaminated — a governance posture no in-project policy can express, since policies govern future contributions, not the acceptability of the existing tree's authorship. Note also the asymmetry against OpenJDK (§above), which concludes AI-vs-human detection is "impossible" and substitutes attestation; a fork-by-freeze sidesteps detection entirely by never accepting a contribution after the cutoff. Second, the **label is now a product attribute**: "maintained without the assistance of generative AI tools" appears in the fork's own one-line description, i.e. no-AI maintenance has become the differentiator users choose a fork on, in the same slot where "extensibility" and "macOS integration" sit. See [[concepts/open-source-llm-governance-debian-gr]] and the "Major Project Policies" section above for the in-project side (OpenJDK, Rust, Debian GR, Gentoo) that these forks are the exit counterpart to.
+
+Hahn explicitly scopes out Vim-*inspired* editors (Kakoune), Vim-*style* plugins (IdeaVim), and Vim *distributions* (LazyVim) — so the four are genuine codebase forks, which is what makes the 2-of-4 AI-motivated ratio meaningful rather than an artifact of category breadth.
 
 ## Policy Design Patterns
 

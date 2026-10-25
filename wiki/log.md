@@ -1,3 +1,11 @@
+## [2026-10-25 10:50 UTC] blog-wiki-ingest | run 20261025T100040Z
+- Recovery: upstream blog-triage cron response failed JSON parse, but `~/.hermes/cron/data/blog_ingest/triage_latest.json` held valid today's JSON (0 takes / 7 refs / 9 skips). Proceeded from checkpoint per recovery pattern.
+- Reference verification: 5 of 7 references confirmed already applied by sibling pipeline (steve-blank, sovereign-ai, gary-marcus, agent-sandbox-patterns, lcamtuf, seangoedecke, martin-alderson — uncommitted working-tree edits).
+- Gap found & fixed (referenced in triage log but NOT actually applied by prior run — false completion claim):
+  - `entities/simon-willison.md` — added Oct 24 "Compass Rose" Battledrones 4P mode note (Claude Opus 5.5 single-prompt map + WebSocket multiplayer protocol change); frontmatter sources + updated bumped.
+  - `entities/andrew-nesbitt.md` — added "This Week in Package Management: 24 Oct 2026" section: eMudhra intermediate-CA key-recovery compromise release wave (uv/pip/conda/pixi/rustup/certifi/webpki + runtime bundles), LiteLLM 1.107.0 second compromise (stolen GitHub CLI OAuth tokens, Berri-AI one-hyphen typosquat), npm Trusted Publishing owner/repo name-matching flaw (Bloom, 1,500+ pkgs, GitHub 48h expiry fix), GitHub package firewall preview, PHP/Ruby RCE + Chainguard embargo break, curl LOW/MEDIUM disclosure policy.
+  - `concepts/ai-supply-chain-security.md` — added §8 (npm Trusted Publishing mutable-name vs immutable-ID attestation bug), §9 (registry policy proxy for coding agents), LiteLLM stolen-OAuth follow-up; related-links + updated bumped.
+- No new pages (Takes=0 correct); index.md unchanged (all targets already registered).
 ## [2026-10-25 10:20 UTC] blog-triage | run 20261025T100040Z
 - Input: 15 candidates + 5 unsaved_articles (blog-ingest 10:01 UTC).
 - Output: 16 decisions | Takes=0, References=7, Skips=9 -> `~/.hermes/cron/data/blog_ingest/triage_latest.json`.

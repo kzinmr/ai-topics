@@ -1,12 +1,13 @@
 ---
 title: "Agent Sandbox Patterns (Isolate-the-Tool vs Isolate-the-Agent)"
 created: 2026-08-29
-updated: 2026-10-17
+updated: 2026-10-25
 type: concept
 tags: [concept, ai-agents, agent-safety, sandbox, isolation, security, infrastructure]
 sources:
   - raw/articles/2026-08-29_browser-use_two-ways-to-sandbox-agents.md
   - raw/articles/2026-10-16_mlejva_sandboxes-are-dead.md
+  - raw/articles/martinalderson.com--posts-interesting-systemd-features--ef189b6f.md
 confidence: high
 ---
 
@@ -62,6 +63,24 @@ Micah Lee's agent-safety framing is that LLMs, unlike normal programs, must **re
 ## Sandbox → Platform (2026-10)
 
 E2B CEO Vasek Mlejnsky's "Sandboxes are dead" thesis marks the security-adjacent framing ("isolated box for untrusted code") colliding with the production-operations framing: for long-running wave-three agents, the isolation boundary must come bundled with a full operating environment (dedicated storage, firewall, inter-sandbox networking, observability, elastic compute, browsers, secrets management). In Browser Use's terms this is what the control plane grows into once it also owns provisioning, policy, *and* the agent's whole runtime environment — the sandbox becomes a per-agent private cloud. The two framings are complementary, not contradictory: the "nothing worth stealing/preserving" principle governs what the platform gives the agent; the platform thesis governs what the agent can ask for. See [[entities/e2b]] and [[concepts/sandbox/infrastructure]].
+
+## The hobbyist-tier third option: systemd user scopes (2026-10)
+
+Martin Alderson's survey of "interesting systemd features you may not know about" is the desktop/local counterpart to the patterns above: for a single machine running **agent-written throwaway code**, container or micro-VM isolation is often overkill, and the kernel primitives those tools use are already exposed by systemd user scopes. His framing — systemd is "the plumbing you need without having to roll your own, especially for the huge amount of almost 'disposable' software you tend to end up with these days" — is Pattern-1 thinking at personal scale: cap the dangerous process, don't rebuild the world around it.^[raw/articles/martinalderson.com--posts-interesting-systemd-features--ef189b6f.md]
+
+The primitives that matter for agents (Linux only; `launchd` covers cron-style scheduling on macOS but not resource limits):
+
+| Primitive | Agent use |
+|---|---|
+| `systemd-run --user --scope -p MemoryMax=4G -p CPUQuota=200% claude` | Bound a leaky agent-written script before it OOM-kills the machine. **Same cgroup limits Docker uses**, so the cap is real, not advisory. `systemd-cgtop` gives per-cgroup visibility instead of `top`. |
+| `-p RuntimeMaxSec=30m` | Hard wall-clock ceiling on an autonomous run. Alderson's OpenCode example needs `--standalone`, because OpenCode otherwise dispatches work to an already-running background server that **bypasses the time limit** — a general pitfall for any agent with a daemon mode. |
+| `systemd-inhibit --what=sleep:idle:handle-lid-switch` | Keep a laptop-lidded agent run alive; combine with `RuntimeMaxSec` so it can't drain the battery. |
+| `Persistent=true` | Catch-up execution when the machine was off/sleeping — the difference between "ran at 9am" and "ran at 9am *whenever the laptop next woke*", which is what scheduled personal agents actually need. |
+| `OnSuccess=` / `OnFailure=` | Wire results to a Slack/email unit, and hang a **dead man's handle** off the unit (Healthchecks.io-style) — the notification path becomes part of the unit, not the script. |
+| `RandomizedDelaySec=` | Jitter to avoid a fleet of machines hitting a service simultaneously. |
+| `.path` units (`DirectoryNotEmpty=%h/agent-inbox`) | Event-driven agent triggering without a cron daemon: drop a file in a folder (expenses, invoices) and a scoped service categorises it, with `RuntimeMaxSec` + `MemoryMax` baked into the paired unit. |
+
+**The caveat Alderson flags is the important one for safety**: systemd also ships sandboxing directives (`ProtectHome`, `ReadWritePaths`, and friends) that "you'd think would be perfect for agents. But there are so many footguns with it that's too long to explain in this article." That is exactly the Pattern-1 failure mode — cgroup **limits** are hard guarantees from the kernel, while systemd's **filesystem/network sandboxing** directives are opt-in, default-open, and easy to under-specify, so treating "it's in a systemd unit" as equivalent to "it's isolated" is a mistake. Limits contain a misbehaving agent's *resource* damage; they do nothing about credential access or egress, which is why the control-plane model above still wins wherever secrets are in reach.
 
 ## Related
 - [[entities/e2b]] — "Sandboxes are dead" / agent-driven private cloud thesis
