@@ -1,3 +1,15 @@
+## [2026-10-25] watchdog | index.md hygiene: 7 misplaced entries + header recount
+
+### Changes
+- Removed 4 `[[concepts/*/index]]` entries misplaced inside the Entities section (anthropic/claude/gemini/gpt sub-indices — canonical copies already exist in Concepts)
+- Removed 1 `[[events/php2shell-php-rce-2026]]` entry misplaced inside the Concepts section (canonical copy already exists in Events)
+- Re-indexed 2 top-level concepts missing from index.md: `ai-generated-language-readability`, `creative-class-job-loss` (today's trending-topics output)
+- Recomputed headers from actual list-line counts: Entities 961→957, Concepts 2234→2236, Queries 39→41, Total 3315→3312
+- All other checks clean: index corruption 0, L2 pipe-prefix 0, empty wikilinks 0, no-frontmatter 0, top-level orphans 0, validate_index.py exit 0
+- Pipeline: x_accounts stale(26h) alert = FALSE POSITIVE (every-2-days `*/2` schedule, last_status ok, last run 2026-10-23 22:30 UTC)
+
+---
+
 # Wiki Log
 
 ## [2026-10-25] trending-topics — AI economics skeptic cluster + Cerebras trillion-param + AI readability

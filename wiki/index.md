@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3315
+> Total pages: 3312
 > Last updated: 2026-10-25
 
-## Entities (961 pages)
+## Entities (957 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -70,9 +70,6 @@
 - [[entities/ankur-goyal]] — Ankur Goyal
 - [[entities/anorth-chen]] — Ziyao 'North' Chen (@anorth_chen)
 - [[entities/anthropic]] — AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Clau...
-- [[concepts/ai-generated-language-readability]] — AI-Generated Language Readability — psycholinguistic study (arXiv:2610.29162): all 9 frontier models use harder-to-process syntax (long dependencies, low-freq n-grams, inanimate subjects); hypothesis: training optimizes information density over communication (Oct 2026, HN 209p)
-- [[concepts/anthropic/index]] — Anthropic sub-index — Anthropic company/business pages hub for [[entities/anthropic]]
-- [[concepts/claude/index]] — Claude sub-index — Claude product/model pages hub for [[entities/anthropic]]
 - [[entities/anthropic-computer-use]] — Anthropic Computer Use
 - [[entities/anthropic-labs]] — Anthropic's advanced-products division (Krieger + Michael); Claude Design
 - [[entities/anthropics-skills]] — Anthropic Skills Repository — official open-source agent-skills repo (anthropics/skills); claude-api skill with build-eval/hillclimb commands (Sep 2026)
@@ -364,8 +361,6 @@
 - [[entities/gm8xx8]] — gm8xx8
 - [[entities/goodfire-ai]] — Goodfire AI
 - [[entities/google]] — Google (AI/ML); TPU sales to Anthropic >20% of shipments thru 2027, $150B+ backlog, Cloud +82% (Aug 10)
-- [[concepts/creative-class-job-loss]] — Creative Class Job Loss — >200k US media/film/arts jobs lost in 4 years (~1/3 of Hollywood's movie & sound sector); digital-arts-only decline vs growing in-person entertainment; AI attribution caveats incl. copyright preservation incentives (Apricitas, HN 384p)
-- [[concepts/gemini/index]] — Gemini sub-index — Gemini model family pages hub
 - [[entities/google-adk]] — Google Agent Development Kit (ADK)
 - [[entities/google-antigravity]] — Google Antigravity
 - [[entities/google-tpu]] — Google TPU — Tensor Processing Units
@@ -655,7 +650,6 @@
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
 - [[entities/open-athena]] — Open Athena — nonprofit accelerating academia with frontier AI capabilities; developer of the Delphi open scaling suite (300× extrapolation, AdamH optimizer)
 - [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot; ChatGPT for Teachers expansion to 100+ K–12 orgs/30 states + 16-state National Data Privacy Agreement (Aug 26)
-- [[concepts/gpt/index]] — GPT sub-index — GPT model family pages hub
 - [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition
 - [[entities/openai-codex]] — OpenAI Codex; ChatGPT Work architecture deep-dive (Aug 2026) + Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
@@ -971,7 +965,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2234 pages)
+## Concepts (2236 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1001,7 +995,9 @@
 - [[concepts/agent-deployment-engineering]] — Agent Deployment Engineering (ADE) — Emerging role owning the technical build of production AI agents; introduced by Decagon (Aug 2026)
 - [[concepts/agent-distillation]] — Agent Distillation
 - [[concepts/adversarial-reasoning-distillation]] — Adversarial Reasoning Distillation — OpenAI Oct 2026 disruption of a coordinated campaign extracting *protected reasoning* (encrypted CoT replayed/transcribed cross-conversation); 16K reqs / 4K users, 15K+ users disrupted by Jul 28; core cluster attributed to Moonshot AI; corroborated by arXiv:2608.09867; warns portable/replayable reasoning artifacts share the risk (Oct 5)
+- [[concepts/ai-generated-language-readability]] — AI-generated language readability — psycholinguistic study measuring readability differences between human- and AI-written text (Oct 2026)
 - [[concepts/budget-constrained-prm-evaluation]] — Budget-Constrained PRM Evaluation — faithful process-reward-model precision estimation under rate-limited verifiers via importance sampling; naive estimates overstate PRM quality (arXiv:2609.20812, Sep 2026)
+- [[concepts/creative-class-job-loss]] — Creative Class Job Loss — Apollo/Apricitas analysis of AI-driven displacement risk for creative-profession occupations (Oct 2026)
 - [[concepts/critique-conditioned-self-distillation]] — Fixes for RLVR all-wrong-group sparsity via privileged teachers measurably fail (signal not localized at errors); dense feedback is a search problem; critique-conditioned self-distillation as bounded fix (arXiv Oct 2026)
 - [[concepts/cross-agent-memory-sharing]] — Cross-Agent Memory Sharing — MemCollab cross-memory collaboration at test time via CrossMemKG + test-time memory evolution; shared-memory compounding vs poisoning risk (arXiv:2609.09192, Sep 2026)
 - [[concepts/dial-metaopd-token-selection-opd]] — DIAL & MetaOPD — Token Selection in On-Policy Distillation; divergence-based reweighting (down-weight mastered tokens) + cold-start fix for OPD reasoning post-training
@@ -1385,7 +1381,6 @@
 - [[concepts/ai-voice-fraud]] — AI Voice Fraud — voice cloning scams, three-second theft attacks, deepfake audio fraud vectors, why traditional defences fail against AI-driven voice fraud, mitigation strategies
 - [[concepts/ai-vulnerability-detection-at-scale]] — AI Vulnerability Detection at Scale
 - [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
-- [[events/php2shell-php-rce-2026]] — PHP2Shell core-PHP RCE found with Wiz Atlas + Gemini 4 Argon + GPT-5.6 Sol (Oct 2026)
 - [[concepts/alignment-relativity]] — Alignment Relativity (Aligned to Whom?) — Hyperbo: model priors aligned to non-experts who rewarded them in training; permissible shortcuts are person-indexed, making alignment irreducibly complex (Sep 2026)
 - [[concepts/alex-hall]] — alex-hall
 - [[concepts/alex-krizhevsky]] — Alex Krizhevsky
@@ -3298,7 +3293,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (39 pages)
+## Queries (41 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
