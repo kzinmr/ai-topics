@@ -2,12 +2,12 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-09-09
+updated: 2026-10-25
 tags:
   - economics
   - company
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
-sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md, raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md, raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md, raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md, raw/articles/wheresyoured.at--concentration-risk--80837245.md]
+sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md, raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md, raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md, raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md, raw/articles/wheresyoured.at--concentration-risk--80837245.md, raw/articles/2026-10-24_irrational-analysis_market-memo-dancing-in-the-rain.md]
 ---
 
 
@@ -514,6 +514,38 @@ In "[Concentration Risk](https://www.wheresyoured.at/concentration-risk/)" (Sep 
 - **Upstream concentration**: NVIDIA (44% of FY27 revenue from three customers), Broadcom (Anthropic + OpenAI as its top two customers next FY), and neocloud backlogs (SB Energy: 99.4% OpenAI) all reduce to the same two names. "A few hundred companies spending money on two companies to justify five companies spending money with one company"
 
 **Interpretation**: where the Dylan Patel update above (Aug 25) framed concentration as a *competitive* outcome (two labs outbidding everyone for FLOPs), Zitron frames it as a *credit* outcome — a dated, contractual fragility that market participants are ignoring exactly as they ignored the 2006 reset-wall charts. The two updates converge on the same claim from opposite directions: by 2027–28, the AI economy's solvency question is literally the question "can Anthropic and OpenAI pay?"
+
+## October 2026 Update: Valuation Cuts and "Distillation Revenue" (Irrational Analysis, Oct 24)
+
+Irrational Analysis (semiconductor-focused independent research, "heavily invested in the semiconductor industry") published "[Market Memo] Dancing in the Rain" (Oct 24, 2026), the sharpest public statement of two claims that had been circulating as whispers all month. Framing: **"Circular Financing, Meet Circular Token Spending"** — "So much 'value', yet so few willing to pay for it." The author puts the drawdown at "70-80% of the way there to peak fear," expecting one more panic round plus a clearing event.
+
+### Both frontier labs took valuation cuts within one month
+
+| Lab | Original ask | Revised | Reported |
+|-----|--------------|---------|----------|
+| OpenAI (private round) | $1.4T | **$1.25T on a ~$30B raise** | TechCrunch 2026-10-22 (Coatue + UAE investors); the *Middle East* investors pushed back on price |
+| Anthropic (IPO plan) | $2T | **$1.6–1.8T → $1.5T** raising **$60–100B** (whisper mostly $60B) | Not confirmed by an audited filing at time of writing |
+
+IA's causal claim for the urgency: OpenAI is rushing to close before Anthropic's numbers appear **fully audited in an S-1**, giving private-market investors a direct comparison. His own read is that the resulting ~20% OpenAI/Anthropic gap "does not make sense at all" given present market share — "if we had access to both of their numbers in detail, the gap would probably be much wider."
+
+### The distillation-revenue thesis (IA's opinion, unverified)
+
+Standard technique (see [[concepts/model-distillation]]), repurposed as an *income-statement* argument:
+
+- Public models are distilled from internal ones (in IA's account, **Fabel** and **Astra** from **Mythos** and **Bel**) for two reasons: the original is too large to serve economically, and keeping the best model private slows downstream distillers.
+- Cost asymmetry (IA's illustrative, self-labelled invented numbers): training new frontier capability costs **$5–10B** in R&D, distilling someone else's costs **$0.5–1B** — and "most of that R&D spend shows up as revenue for the target company who is getting distilled," at a **1–3 month lag**.
+- The piracy analogy: piracy is one person cracking DRM and torrenting the game; **distillation is 10 people buying the game legally, playing it repeatedly for a month, and rebuilding it at a fraction of the cost with modest quality loss** — i.e. paying customers, which is why it books as revenue.
+- **The "dirty revenue" claim**: a "non-trivial portion of Anthropic+OpenAI ARR is distillation" (Chinese labs plus regularly-accused Meta). IA alleges Anthropic repeatedly delayed its IPO while trying to **back that revenue out**, now characterising it as a "temporarily 6–8% headwind" — with partial success. The revenue did not disappear; in his account it **migrated from Anthropic to OpenAI**.
+- The rhetorical edge: labs claiming RSI while failing to block copying at 1/10 cost on a 1–3 month delay are either capable of detecting it or lying. IA reads their public anti-distillation posture as ARR management rather than IP defence ("ARR alcoholism"). Treat the whole chain as **single-source, opinion, unverified**; the corroborated adjacent facts are the April–May 2026 distillation-panic sequence and the labs' own threat-intelligence reporting on illicit distillation ([[concepts/ai-api-abuse]], [[concepts/industrial-scale-distillation-attacks-accusation]]).
+
+### Two structural data points
+
+- **~75% of Anthropic+OpenAI spend is training.** IA's inference: if either lab trains less under financial stress, the world gets "a whole lot of inference capacity/supply real quick" — a supply shock on top of the demand shortfall Zitron estimates at ~$22B/yr outside the two labs.
+- **The "no dark GPUs" defence is contested.** The common reassurance versus the dot-com buildout is that there is no dark fibre equivalent for accelerators (Gavin Baker's argument). IA flags Ben Thompson interviewing **Craig Moffett** making the counter-case that the analogy is weaker than assumed. This is the same overbuild-vs-utilisation question the subprime frame raises in [[concepts/subprime-data-center-crisis]] — here attacked from the semiconductor side rather than the credit side.
+
+**How this fits the page**: Zitron's September "Compute Reset Wall" update above argues the labs' *payment* capacity is the 2027 question. IA's memo attacks the *quality of the revenue* booked today — same two names, but the fragility moves from the debt schedule into the ARR line. Both are single-perspective skeptic memos, not audited findings; the verifiable spine is the two reported valuation cuts.
+
+Source: [[raw/articles/2026-10-24_irrational-analysis_market-memo-dancing-in-the-rain]] (paywalled tail truncated at capture); [TechCrunch 2026-10-22](https://techcrunch.com/2026-10-22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/)
 
 ## Sources
 

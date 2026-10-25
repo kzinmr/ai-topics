@@ -19,6 +19,13 @@
 
 # Wiki Log
 
+## [2026-10-25] hot-post | late-night slot (2026-10-26 01:30 JST)
+
+- Delivered late-night hot-post: "inside-the-model" cluster — ThinkingCap Gemma-4-26B-A4B (thinking tokens -38.9% avg / -69.1% max, -0.15pp accuracy), Hirundo Qwen3-Coder persona-conditioned security degradation (+19/+28%, weights-level fix), OpenAI offline cached-web RL (10/23, DNS-resolver egress incident)
+- Saved as [[queries/2026-10-26-late-night-hot-post]] (English per wiki language policy; Discord delivery translated to Japanese per report-quality skill)
+- Verification: NO_SLOP_FOUND, NO_TYPO, 0 wikilink MISSes
+
+
 ## [2026-10-25] trending-topics — AI economics skeptic cluster + Cerebras trillion-param + AI readability
 - Created `concepts/creative-class-job-loss.md` (Apricitas 200k creative-jobs analysis, HN 384p), `concepts/ai-generated-language-readability.md` (arXiv:2610.29162 psycholinguistics, HN 209p).
 - Updated `concepts/ai-economics.md` (S&P 493 / Slok no-payoff section), `concepts/cerebras-cs4.md` (trillion-param WSE-3T deployment: 59 wafers for Kimi K3), `concepts/kimi-k3.md` (Cerebras serving), `concepts/ai-slop.md` (readability measurement).

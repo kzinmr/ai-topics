@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-10-20
+updated: 2026-10-25
 tags:
   - security
   - company
@@ -52,6 +52,7 @@ sources:
   - raw/articles/2026-08-25_harvey_legal-document-comparison-software.md
   - raw/articles/2026-08-25_harvey_litigation-lawyer-to-legal-engineer.md
   - raw/articles/2026-10-20_harvey_improving-agent-accuracy-with-harvey-graph.md
+  - raw/articles/2026-10-24_harvey_how-law-firms-turn-ai-efficiency-into-client-value.md
 ---
 
 # Harvey
@@ -982,3 +983,19 @@ Harvey calls this "a priority investment for our engineering organization becaus
 > This is a vertical-agent instance of the broader structured-context-over-flat-RAG argument — compare [[concepts/context-engineering/context-graph]] (Foundation Capital's context-graph thesis), [[concepts/knowledge-graph-memory-agents]] and [[concepts/agentic-alternative-to-graphrag]]. Related: Harvey's Applied Compute review-table post-training work and its own cloud agent infrastructure build.
 
 Source: raw/articles/2026-10-20_harvey_improving-agent-accuracy-with-harvey-graph.md
+
+## Turning time saved into client value — the pricing problem (October 2026)
+
+Harvey reported a Harvey FORUM (Sydney) panel on what firms should *do* with AI-accelerated legal work, framing the issue as pricing and internal incentives rather than speed: "Faster legal work raises a bigger question for firms: How can they turn time saved into better outcomes for their clients?"
+
+Panelists and their arguments:
+
+- **Hilary Goodier** (Partner and Global Chair of NewLaw and Consulting, Ashurst Perkins Coie) — an **obligations-mapping project for a global investment bank completed in five weeks with AI against an estimated six months by conventional methods**; the client valued entering a new market **five months earlier** far more than a fee reduction, and the firm negotiated openly with the client about how to share the value AI created. Two further points: a flat discount applied to every AI-assisted task cannot express those differences, and **targets and bonuses tied to hours actively discourage lawyers from using time-saving methods** — firms must change how they recognise the work internally before AI use becomes consistent.
+- **Michelle Mahoney** (Chief Innovation Officer, Mallesons) — when lawyers stop gathering and organising data they can examine *all* of it instead of a sample; her example was testing one clause across **thousands of arrangements** rather than a small sample, which makes contract remediation, portfolio reviews and compliance projects viable that clients previously judged too expensive or slow to pursue.
+- **Michael Griffith** (Deputy General Counsel, Telstra) — the client side: Telstra evaluates firms on the same criteria as before AI; what changed is the range of benefits a firm could deliver. His questions to a firm are whether AI reduces cost, delivers specialised advice sooner, or enables more documents/risk surfaces to be examined — and the answer depends on the client's goal, so a deadline tied to a business decision can make speed worth more than a fee cut. His caution: the time needed to weigh a hard decision is a small share of the process but **should not be compressed just because earlier steps got faster**.
+
+Closes by pointing clients to RSGI's report "The Accelerating Impact of Legal AI" — the same commissioned study already cited for the 91%-less-contract-review and 61%-more-drafting datapoints above.
+
+The durable claim for the [[concepts/ai-adoption]] debate: the binding constraint on AI value in professional services is not model capability but **the billable hour plus associate incentive design** — an instance of the broader pricing-model problem for agentic work (compare [[concepts/ai-adoption-failures-and-enterprise-psychosis]] on enterprise adoption friction).
+
+Source: [[raw/articles/2026-10-24_harvey_how-law-firms-turn-ai-efficiency-into-client-value]]
