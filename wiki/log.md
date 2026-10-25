@@ -982,3 +982,9 @@ research-grade pages from genuinely uncovered material:
 
 ## 2026-10-24 00:31 UTC — Morning hot-post (Discord)
 - queries/2026-10-24-morning-hotpost-oracle-routing.md: Oracle Model Routing (97.6% @ $1.88 vs Astra 74.1% @ $6.52) + Vercel OIDC (8.4% SaaS secure auth) + OpenAI monitorability beyond g-mean2. Dedup clean, slop grep NO_SLOP_FOUND, zero wikilink MISS.
+
+## 2026-10-25 12:30 UTC — hot-post (night 21:30 JST slot)
+- Topic: Model Collapse of Viewpoints (ModelCompare: 29/35 identical answers across 12 models, 10 labs, 3 countries) x AI-Generated Language Readability (arXiv:2610.29162). Contrarian/reflective angle: both RL objectives (safety + density) pull models away from the human distribution.
+- Wikilinks: concepts/model-collapse-of-viewpoints, concepts/ai-generated-language-readability, concepts/sycophancy, concepts/linguistic-vertigo, concepts/ai-slop.
+- Dedup: no overlap with 10-24 morning (oracle routing) or 10-22 night (Maxwell/LayerFS).
+- Verification: NO_SLOP_FOUND / 0 MISS / NO_TYPO. No wiki content pages modified (report only).
