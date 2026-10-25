@@ -1,3 +1,9 @@
+## [2026-10-25] skeleton-enrich-daily | backlog empty (streak continues)
+
+- Frontmatter scan of `wiki/entities/` + `wiki/concepts/` (regex `status:\s*skeleton` inside YAML block): **0** matches. Streak continues since 2026-10-17.
+- Entity status distribution: none 827, L3 41, active 30, complete 27, L2 8, redirect 5, full 5, enriched 3, current 2, hallucination-quarantine 1, l2 1. `stub` bucket fully drained.
+- No pages created or modified. Snapshot: [[queries/2026-10-25-skeleton-enrich-empty]].
+
 ## [2026-10-25] auto-fix | index dedup + header recount
 
 - index.md: removed duplicate `[[concepts/model-routing]]` entry (line 2476, identical wikilink at 1829)
