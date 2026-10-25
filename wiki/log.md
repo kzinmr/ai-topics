@@ -1,3 +1,10 @@
+## [2026-10-25] auto-fix | index dedup + header recount
+
+- index.md: removed duplicate `[[concepts/model-routing]]` entry (line 2476, identical wikilink at 1829)
+- Concepts header recount: 2236 → 2235 (matches actual list lines)
+- Verified clean: pipe/line-number/triple-bracket/space corruption = 0, L2 pipe-prefix = 0, missing-frontmatter = 0, orphan pages = 0, skeleton entities = 0
+- validate_index.py pass; committed 27d7b0dc
+
 ## [2026-10-25] watchdog | index.md hygiene: 7 misplaced entries + header recount
 
 ### Changes
