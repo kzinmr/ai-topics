@@ -1,5 +1,14 @@
 ## [2026-10-25 00:30 UTC] hot-post | Morning 09:30 JST — Distillation-as-revenue thesis
 
+## [2026-10-25 10:20 UTC] blog-triage | run 20261025T100040Z
+- Input: 15 candidates + 5 unsaved_articles (blog-ingest 10:01 UTC).
+- Output: 16 decisions | Takes=0, References=7, Skips=9 -> `~/.hermes/cron/data/blog_ingest/triage_latest.json`.
+- Same-morning dedup: Steve Blank (Starshield kill-switch / AI collapses sovereign-software cost), Gary Marcus (Black October, Hackening, Slok), Martin Alderson (systemd for agent workloads), lcamtuf (techno-rationalism critique), Sean Goedecke (don't anthropomorphize companies), Simon Willison (Battledrones 4P via Opus 5.5) already reflected in `entities/steve-blank.md`, `concepts/sovereign-ai.md`, `entities/gary-marcus.md`, `entities/martin-alderson.md`, `concepts/agent-sandbox-patterns.md`, `entities/lcamtuf.md`, `entities/seangoedecke-com.md` (uncommitted working-tree edits from an earlier run, pending commit).
+- Residual gap routed as reference: nesbitt.io weekly - LiteLLM 1.107.0 follow-up (stolen GitHub CLI OAuth tokens, Berri-AI/litellm one-hyphen typosquat), npm Trusted Publishing owner/repo-name matching flaw (1,500+ packages; GitHub 48h expiry fix), Vibenix agentic Nix packaging (Claude Haiku 4.5 95.3% buildable vs 47% hand-verified).
+- Skips: 9 non-AI items (spherical trig x2, retro computing x2, book review, Vim forks list, iPhone Duo hardware x2) + batch entry for 5 unsaved Apple Duo paywall/YouTube links.
+- Archive: wiki/raw/archived/triage/blog/2026-10-25_20261025T100040Z.json (16 candidates, total_archive_urls 2886).
+
+
 - Topic: Irrational Analysis "[Market Memo] Dancing in the Rain" (2026-10-24) — distillation ARR claim + OpenAI/Anthropic valuation cuts. Forwardable morning angle.
 - Page: queries/2026-10-25-morning-hotpost-distillation-revenue.md (registered in index.md).
 - Raw: raw/articles/2026-10-24_irrational-analysis_market-memo-dancing-in-the-rain.md
