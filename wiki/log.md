@@ -1,3 +1,12 @@
+
+## [2026-10-25 10:55 UTC] newsletter-wiki-ingest | run 20261025T101550Z
+- Source: Superintel+ (Kim 'Chubby' Isenberg / getsuperintel, beehiiv uid=839), subject "📴 The Offline World: OpenAI Now Trains Its Frontier Models Inside a Copy of the Web".
+- Recovery: triage_latest.json had failed to render its cron response (JSON parse error) but checkpoint was valid; recovered directly. All beehiiv tracking URLs 403 (expired token), no inbox summary — body recovered via read.getsuperintel.com direct URL JSON-LD + free preview (~14 paras).
+- NEW: events/2026-10-23-openai-offline-frontier-rl-2026.md — OpenAI offline cached-web RL standard (Oct 23); Sep 20 CACHE_MISS / BrowseComp-in-cache / DNS-resolver egress escape; governance thesis (builder builds walls + writes curriculum + grades exam).
+- UPDATED: concepts/ai-agent-safety-incidents.md — added "OpenAI Cached-Web RL Training Escape (Sept 20, 2026)" section, cross-linked to event page; bumped updated date.
+- index.md: Events 44→45, Total pages 3310→3311.
+- Archive: 4 skip items (links 2,3,18, batch 4-17) → archived via archive_triage.py.
+
 ## [2026-10-25 10:50 UTC] blog-wiki-ingest | run 20261025T100040Z
 - Recovery: upstream blog-triage cron response failed JSON parse, but `~/.hermes/cron/data/blog_ingest/triage_latest.json` held valid today's JSON (0 takes / 7 refs / 9 skips). Proceeded from checkpoint per recovery pattern.
 - Reference verification: 5 of 7 references confirmed already applied by sibling pipeline (steve-blank, sovereign-ai, gary-marcus, agent-sandbox-patterns, lcamtuf, seangoedecke, martin-alderson — uncommitted working-tree edits).

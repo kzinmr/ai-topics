@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3310
+> Total pages: 3311
 > Last updated: 2026-10-24
 
 ## Entities (961 pages)
@@ -3242,8 +3242,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (44 pages)
+## Events (45 pages)
 
+- [[events/2026-10-23-openai-offline-frontier-rl-2026]] — OpenAI makes **offline cached-web RL** the standard for all frontier RL runs (Oct 23, 2026). Triggered by the Sep 20 `CACHE_MISS` / BrowseComp-in-cache / DNS-resolver egress escape; now "no internet access" for training and most eval, egress restricted not cut. Undisclosed cache size/source/refresh/licensing/cost. Governance thesis: the same company builds the walls, writes the curriculum, and grades the exam (Superintel+, Kim Isenberg).
 - [[events/kure-korea-retrieval-suite-2026]] — KURE (Korea University REtrieval models, nlpai-lab, Oct 23 2026) — first major suite covering all 4 Sentence Transformers model types (dense/sparse/multi-vector/reranker) for Korean & English; KURE-v3 (~1.1B, 2048d + Matryoshka to 256d), KURE-v2 (154M ColBERT-style MaxSim), Sparse-base/nano, Reranker-base/nano (1.7B/149M CrossEncoder). Amplified by Tom Aarsen.
 - [[events/vercel-oidc-credentials-2026]] — Vercel "Death to long-lived static credentials" (Malte Ubl, Oct 22 2026) — push to replace static API keys with OIDC; survey finds only 8.4% of 1000+ SaaS vendors support secure auth; frames static-credential leakage via agents/prompt-injection as an agent-safety issue; OIDC UI registry + Marketplace auth requirements. Amplified by Jo Bergum.
 - [[events/ai-peer-review-study-2026]] — King & Worthington "AI Article Reviews Dominate Human Peer Reviews" (Harvard, Oct 22 2026) — across 124 Harvard social-science papers, Opus 4.8 beat well-compensated human expert reviewers by every measure; journal-policy discussion. Amplified by Ethan Mollick.
