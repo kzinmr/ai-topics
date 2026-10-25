@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-08-21
+updated: 2026-10-24
 tags:
   - company
   - model
@@ -28,7 +28,10 @@ sources:
   - raw/articles/2026-07-11_cohere_hardware-aware-dynamic-speculative-decoding.md
   - raw/articles/2026-08-01_cohere_cohere-signs-eu-code-of-practice.md
   - raw/articles/2026-07-28_cohere_introducing-north-automations-ai-workflows.md
-  - raw/articles/2026-08-21_cohere_the-culture-funnel-you-cant-align-what-isnt-in-the-data.md
+  - raw/articles/2026-10-24_cohere_introducing-confidential-computing-on-cohere-model-vault.md
+  - raw/articles/2026-10-24_cohere_inside-cohere-model-vault-building-verifiable-confidential-ai-inference.md
+  - raw/articles/2026-10-24_cohere_rerank-5.md
+  - raw/articles/2026-10-24_cohere_can-ai-understand-culture.md
 ---
 
 # Cohere
@@ -271,6 +274,50 @@ Cohere published "The Culture Funnel: You Can't Align What Isn't in the Data" (p
 [[concepts/ai-alignment]] | [[concepts/security-and-governance/ai-safety]] | [[concepts/llm-training-fundamentals]]
 
 **Source:** [[raw/articles/2026-08-21_cohere_the-culture-funnel-you-cant-align-what-isnt-in-the-data]]
+
+## Cohere Model Vault — Confidential Computing on Azure NVIDIA H100s (October 2026)
+
+**Model Vault** is Cohere's dedicated, fully managed enterprise model inference offering. In October 2026 Cohere moved it into **confidential computing public beta**: inference for a customer's dedicated deployment now runs inside a hardware-backed confidential environment spanning **both CPU and GPU**, operated by Cohere on **Microsoft Azure** with **NVIDIA H100 GPU Confidential Computing**.
+
+The stated goal is to protect the third state of data — **data in use** — beyond the two states encryption already covers (at rest, in transit). Prompts, documents, responses and model execution stay protected while inference is running; application payloads remain encrypted through intermediary infrastructure and are decrypted **only inside the attested confidential boundary**. Target workloads: financial information, clinical records, privileged documents, proprietary source code and IP.
+
+### The two properties, and why the CPU is not enough
+
+The engineering post ("Inside Cohere Model Vault: Building Verifiable Confidential AI Inference") frames the system as **isolation** (hardware-enforced protection of workload memory from anything outside the environment, *including privileged infrastructure software and the operator itself*) plus **attestation** (cryptographically signed evidence about the environment, so the customer can evaluate it *before* releasing sensitive data). Together they break the traditional assumption that privileged host access implies workload access.
+
+The distinctive design point is that **the confidential boundary cannot end at the CPU**: a substantial share of model computation runs on accelerators, so protecting the CPU while leaving the GPU outside the boundary would expose model state and intermediate computation exactly at the CPU→GPU handoff. NVIDIA GPU Confidential Computing extends isolation to GPU memory and encrypts CPU↔GPU communication, letting one confidential boundary cover the whole inference path.
+
+The product argument is trust minimisation rather than encryption per se: reduce how much infrastructure the customer must trust with plaintext, and hand them cryptographic evidence they verify themselves — "verify before you trust."
+
+### Delivery model
+
+- Cohere operates the serving platform; customers get confidential AI as a **managed service** rather than building their own CC stack.
+- Available alongside the rest of the Model Vault surface, and — as of the Rerank 5 launch — as one of the deployment targets across **Cohere API, Model Vault, Microsoft Foundry, Amazon SageMaker, private VPC / on-premises, and North**.
+
+**Sources:** [[raw/articles/2026-10-24_cohere_introducing-confidential-computing-on-cohere-model-vault]], [[raw/articles/2026-10-24_cohere_inside-cohere-model-vault-building-verifiable-confidential-ai-inference]]
+
+## Rerank 5 — Pro/Fast tiers with Context Focus (October 2026)
+
+**Rerank 5** is Cohere's newest enterprise retrieval generation, shipping **generally available** in two tiers: **Rerank 5 Pro** (leads major public reranking benchmarks, strongest on reasoning-intensive search, visually rich documents, and finance/healthcare/scientific/parsed-document/multilingual domains) and **Rerank 5 Fast** (near-leading quality at lower cost and latency). API pricing: **$0.05 / 1M tokens (Pro)**, **$0.02 / 1M tokens (Fast)**. It joins **Embed 5** and **Parse 5** as the current generation of Cohere search models.
+
+Two features are new to Rerank 5:
+
+- **Context Focus** — a single rerank call returns the most relevant passages *within* each document, going past document- and chunk-level retrieval. Cohere positions this as a token-cost lever: pinpointing the spans that matter lets teams cut LLM input tokens with minimal answer-quality loss. The framing is explicitly economic — "every token your LLM reads is a token you pay for, and retrieval decides which tokens those are" — with retrieval named as a cost/latency/quality lever as agents run more searches over longer documents.
+- **Calibrated relevance scores** — consistent scores across queries and domains, so one threshold can decide what reaches the LLM instead of per-domain retuning. (Compare [[concepts/two-stage-confidence-caliber]], Cohere's October 2026 work on calibrated confidence for reasoning models.)
+
+[[concepts/enterprise-ai]] | [[concepts/information-retrieval]] | [[concepts/neural-reranking]]
+
+**Source:** [[raw/articles/2026-10-24_cohere_rerank-5]]
+
+## Cohere Labs culture benchmark — riddles as a cultural-knowledge probe (October 2026)
+
+A Cohere Labs open-science project tested whether models trained mostly on English data recognise **culturally specific** facts, using riddles as the instrument (the word "riddle" from Old English *rædan*, "to interpret"). It began when Hungarian diplomat **Boczka Károly** built tricky Hungarian trivia-style riddles to probe AI models and found the answers "sounded right but weren't" — models missed culture-specific facts and hallucinated in places. Cohere Labs Staff Research Scientist **Julia Kreutzer** scaled it into a globally distributed effort with no entry criteria: **100+ contributors from 50+ countries** organised on Discord, building their own benchmarks across cultural segments (sports, history, politics), each question authored as a riddle, with participants ranging from a 16-year-old American student (Henry Gagnier) to a retired Canadian schoolteacher (Jane Smith).
+
+The methodological claim: fluency is not cultural knowledge, and a benchmark authored *by* the culture being tested is a cheap way to expose the gap — participants needed "real cultural knowledge," not AI skills. It is the empirical companion to the August 2026 Culture Funnel paper below (which shows the loss starts upstream in training data, not at elicitation time).
+
+[[concepts/ai-alignment]] | [[concepts/multilingual]]
+
+**Source:** [[raw/articles/2026-10-24_cohere_can-ai-understand-culture]]
 
 ## Related
 

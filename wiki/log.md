@@ -1,3 +1,13 @@
+## [2026-10-25 00:30 UTC] hot-post | Morning 09:30 JST — Distillation-as-revenue thesis
+
+- Topic: Irrational Analysis "[Market Memo] Dancing in the Rain" (2026-10-24) — distillation ARR claim + OpenAI/Anthropic valuation cuts. Forwardable morning angle.
+- Page: queries/2026-10-25-morning-hotpost-distillation-revenue.md (registered in index.md).
+- Raw: raw/articles/2026-10-24_irrational-analysis_market-memo-dancing-in-the-rain.md
+- Cross-refs: concepts/ai-bubble-economics, concepts/model-distillation, concepts/ai-api-abuse, concepts/industrial-scale-distillation-attacks-accusation, concepts/claude/mythos-glasswing.
+- Verification: TechCrunch 2026-10-22 directly confirmed (OpenAI $30B @ $1.25T, Coatue+UAE; Anthropic $1.5–2T CNBC; $65B @$965B May round). "Distillation ARR" / "Bel" / 75% training-split claims flagged as IA opinion, unverified.
+- Dedup: no wikilink reuse vs 10-24 morning (oracle-routing/Vercel OIDC/monitorability) or 10-24 night (CALIBER). ai-bubble-economics last primary topic 2026-10-14.
+- Verification gate: NO_SLOP_FOUND / 0 wikilink MISS / NO_TYPO.
+
 ## [2026-10-24] skeleton-enrich-daily — backlog empty (no action)
 
 - Frontmatter scan of wiki/entities/ + wiki/concepts/: 0 pages with status:skeleton. Streak continues (since 2026-10-17).

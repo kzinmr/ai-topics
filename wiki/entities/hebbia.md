@@ -2,7 +2,7 @@
 title: "Hebbia"
 type: entity
 created: 2026-05-08
-updated: 2026-08-05
+updated: 2026-10-24
 tags:
   - company
   - search
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-07-11_hebbia_every-data-integration-one-view.md
   - raw/articles/2026-07-31_hebbia_introducing-max.md
   - raw/articles/2026-08-05_hebbia_rethinking-control-in-the-age-of-ai-delivery.md
+  - raw/articles/2026-10-24_hebbia_databricks-is-available-in-hebbia.md
 ---
 
 # Hebbia
@@ -102,6 +103,14 @@ Hebbia engineer **Nikita Knyazev** published "Rethinking Control in the Age of A
 **Case study**: a global insurance client scoped the initial deployment tightly with defined use cases and approvals over organization-wide shared workflows; after the program ended, business departments kept building new agentic workflows on their own. What prevented drift was unchanged platform ownership and architectural authority — departments could build in parallel without the whole thing falling apart. The rollout matured to the point where formal program delivery controls were no longer needed.
 
 **Source:** [[raw/articles/2026-08-05_hebbia_rethinking-control-in-the-age-of-ai-delivery]]
+
+### Databricks Integration (October 2026)
+
+Hebbia announced a **Databricks partnership** (Paul Boland, Oct 23, 2026): a firm's own datasets stored in Databricks — for financial institutions, portfolio metrics, positions and fund performance — can now be queried inside Hebbia alongside its documents, internal files and licensed market data, instead of being reached through a data-team request ticket.
+
+The framing is workflow, not connector coverage: most deal teams never touch Databricks directly, so the value is asking the question in the platform where diligence already happens. Stated usage patterns include **credit** (compare a portfolio company's latest KPIs against covenant thresholds in its credit agreement and its public peers in one question) and private-equity diligence on positions and performance. This extends the "every data integration, one view" direction logged in July 2026 and adds a first-party path into the lakehouse where firms' structured proprietary data actually lives.
+
+**Source:** [[raw/articles/2026-10-24_hebbia_databricks-is-available-in-hebbia]]
 
 ## Related
 

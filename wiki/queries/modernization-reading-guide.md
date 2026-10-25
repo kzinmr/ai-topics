@@ -11,59 +11,59 @@ sources:
 
 # Codex Enterprise Modernization Reading Guide
 
-CodexなどのCoding Agentを活用し、企業システムのコードモダナイゼーションを安全に進めるための読書ガイド。主な対象言語はJavaとし、言語に依存しない設計・検証・運用の原則を中心に、Java／JVMとAgent固有の知識を扱う。
+A reading guide for safely advancing code modernization of enterprise systems with Coding Agents such as Codex. The primary target language is Java; the focus is on language-independent design, verification, and operations principles, with Java/JVM- and Agent-specific knowledge covered alongside.
 
-目指すのは、移行を検証可能な作業へ分解し、SME（業務・システムの専門家）の判断を再利用できる形で蓄積すること。必要な介入を未解決事項や重要な例外へ集中させながら、移行後のシステムを安全に稼働させるための知識を選ぶ。
+The goal is to decompose modernization into verifiable work and accumulate SME (business/systems expert) judgment in a reusable form, so that required interventions concentrate on unresolved items and critical exceptions while keeping the post-migration system running safely.
 
-## 読む目的から選ぶ
+## Choose by reading purpose
 
-個別案件を進める人は**inner-loop**、案件の実行方法を再利用・標準化・省力化する人は**outer-loop**のガイドを開く。それぞれに読む順番、書籍ごとの用途、必要章を示している。
+People executing individual engagements open the **inner-loop** guide; people reusing, standardizing, and reducing the effort of *how* engagements are executed open the **outer-loop** guide. Each provides a reading order, per-book purpose, and required chapters.
 
-| 読む場面 | Markdown | O’Reilly | 範囲 |
+| Reading situation | Markdown | O'Reilly | Scope |
 |---|---|---|---|
-| 調査・設計・検証の基礎を学ぶ | [[queries/modernization-foundation-books-review]] | 各資料の著者・出版社リンクを参照 | 7冊・2論文 |
-| 個別案件の調査、変更、検証、切替 | [[queries/modernization-inner-loop-reading]] | [inner-loop：案件実行](https://learning.oreilly.com/playlists/881eb67b-8276-489e-ad26-d009b8b2a34f/) | 42冊・7分類 |
-| 案件の学びから実行方法を仕組み化 | [[queries/modernization-outer-loop-reading]] | [outer-loop：仕組み化](https://learning.oreilly.com/playlists/f09ea227-8f41-450e-b79b-e9fbdbe4c597/) | 20点・6分類 |
+| Learn the foundations of investigation, design and verification | [[queries/modernization-foundation-books-review]] | See author/publisher links for each item | 7 books, 2 papers |
+| Investigate, change, verify and cut over an individual engagement | [[queries/modernization-inner-loop-reading]] | [inner-loop: engagement execution](https://learning.oreilly.com/playlists/881eb67b-8276-489e-ad26-d009b8b2a34f/) | 42 books, 7 categories |
+| Systematize execution methods from lessons learned in engagements | [[queries/modernization-outer-loop-reading]] | [outer-loop: systematization](https://learning.oreilly.com/playlists/f09ea227-8f41-450e-b79b-e9fbdbe4c597/) | 20 items, 6 categories |
 
-## 二つのloopの使い分け
+## How to use the two loops
 
-**inner-loopでは、移行対象のシステムを変更・評価する。** 業務仕様を確かめ、コードやデータを変更し、動作と本番稼働を受け入れる。自動変換やAgentの利用も、案件を進めるための実践として含む。
+**In the inner loop, you change and evaluate the system being migrated.** Confirm business specifications, change code and data, and accept behavior and production operation. Automated transformation and Agent use are included as practices for getting the engagement done.
 
-**outer-loopでは、モダナイゼーションの実行方法を変更・評価する。** 業務知識の管理、変換レシピ、Agentの役割分担、再開可能なワークフロー、評価基盤を設計し、複数の作業や案件で使えるようにする。
+**In the outer loop, you change and evaluate the *method* of executing modernization.** Design business-knowledge management, transformation recipes, Agent role division, resumable workflows, and evaluation infrastructure so they can be reused across many tasks and engagements.
 
-案件初期はinner-loopを中心に読み進める。案件中でも、繰り返す作業や失敗、SMEへの質問が見えてきたら、該当するouter-loopの知識を使って改善できる。権限の限定、出典付きの受入根拠、再現環境、停止条件は初回案件から必要であり、その共通基盤や運用規約を設計する段階でouter-loopを参照する。
+Early in an engagement, read mainly the inner loop. Even mid-engagement, once you see repeated work, failures, or recurring SME questions, you can improve them with the relevant outer-loop knowledge. Limited permissions, source-backed acceptance evidence, reproducible environments, and stop conditions are required from the first engagement; consult the outer loop when you reach the stage of designing that shared foundation and operating conventions.
 
-## 課題から探す
+## Find by problem
 
-I-xxはinner-loop、O-xxはouter-loopの各ガイド・プレイリストのセクション番号。
+I-xx are section numbers of the inner-loop guide/playlist, O-xx of the outer-loop guide/playlist.
 
-| 課題 | 案件で適用する知識 | 仕組み化に使う知識 |
+| Problem | Knowledge applied within the engagement | Knowledge used for systematization |
 |---|---|---|
-| 移行対象・範囲・完了条件を決める | I-01：価値、境界、段階的変更、旧基盤の廃止条件 | O-06：投資、責任分担、省力化の効果 |
+| Decide migration targets, scope and completion criteria | I-01: value, boundaries, incremental change, decommission criteria for the legacy platform | O-06: investment, responsibility split, automation payoff |
 | Foundations for understanding, design and verification | [[queries/modernization-foundation-books-review]]: seven books and two papers covering requirements/environment reasoning, evidence recovery, safe change, oracle provenance, test design, module/architecture judgment and performance | Reuse evidence maps, rule/assumption records, approved examples, design criteria and measurement procedures |
-| SME知識と正解の根拠を明らかにする | I-02：現状調査、業務の聞き取り、規則と期待値の確定 | O-01：出典、判断理由、適用範囲、鮮度、更新責任の管理 |
-| 自動変換とAgentを使い分ける | I-01／I-03：変更の分解、レシピの適用、結果の検証 | O-02：レシピの開発・再利用、Agentの役割と作業契約 |
-| 変更の正しさを評価する | I-03：独立した期待値、動作同等性、性質・契約の検証 | O-04：代表案件、失敗分析、回帰評価、品質ゲート |
-| データ・外部連携を安全に移行する | I-04：互換期間、データ照合、トランザクション、外部契約 | O-03：ジョブ間の相関、重複排除、例外処理 |
+| Surface SME knowledge and the basis for "correct answers" | I-02: current-state survey, business interviews, fixing rules and expected values | O-01: managing provenance, rationale, applicability scope, freshness, and update ownership |
+| Choose between automated transformation and Agents | I-01/I-03: decomposing changes, applying recipes, verifying results | O-02: recipe development and reuse, Agent roles and work contracts |
+| Evaluate the correctness of changes | I-03: independent expected values, behavioral equivalence, property/contract verification | O-04: representative cases, failure analysis, regression evaluation, quality gates |
+| Migrate data and external integrations safely | I-04: compatibility windows, data reconciliation, transactions, external contracts | O-03: cross-job correlation, deduplication, exception handling |
 | Restricted intranet integration testing | [[queries/modernization-integration-testing]]: controllable dependencies, verified contracts, actual connectivity and business reconciliation | Reusable scenarios, dependency distribution, provider ownership and evidence from limited access windows |
-| 環境を再現し、切替・回復を確実にする | I-05：旧／新環境、配備、観測、本番受入、回復手順 | O-03：共通の実行環境、状態管理、再試行、承認待ち、停止・再開 |
-| loggingの目的・設計・運用を定める | I-03／I-05／I-06／I-07：対象システムの業務・診断・監査ログ、観測契約、Java実装。[[queries/modernization-java-logging]]を参照 | O-05：Agentの操作、承認、実行結果、成果物の来歴を残す実行証跡 |
-| Java固有のリスクを確認する | I-06：APIの契約、モジュール、並行性、JVM性能 | O-02／O-04：繰り返す変更や検査のレシピ化・評価 |
-| 権限と成果物を管理する | I-07：信頼境界、作業権限、依存物、配布物の確認 | O-05：実行基盤の認可、承認責任、監査、成果物の来歴 |
+| Reproduce environments and make cutover/recovery reliable | I-05: old/new environments, deployment, observability, production acceptance, recovery procedures | O-03: shared execution environment, state management, retries, approval waits, stop/resume |
+| Define logging purpose, design and operation | I-03/I-05/I-06/I-07: business/diagnostic/audit logs of the target system, observability contracts, Java implementation. See [[queries/modernization-java-logging]] | O-05: execution audit trails recording Agent operations, approvals, run results, and artifact provenance |
+| Check Java-specific risks | I-06: API contracts, modules, concurrency, JVM performance | O-02/O-04: turning repeated changes and checks into recipes and evaluations |
+| Manage permissions and artifacts | I-07: trust boundaries, work permissions, dependencies, distribution checks | O-05: execution-infrastructure authorization, approval responsibility, audit, artifact provenance |
 
-## 読み進め方と選書の考え方
+## How to read and how the list was selected
 
-全冊の通読は前提にしない。各ガイドの「最初に読む順番」「優先して読む順番」から入り、担当する工程と対象システムのリスクに応じて必要なセクションを参照する。書籍を読む際は、仕様、受入条件、変換レシピ、回復手順など、作業で必要な成果物へ知識を落とし込む。
+Reading every book cover to cover is not a prerequisite. Start from each guide's "read-first order" / "priority reading order" and consult the relevant sections according to your assigned phase and the target system's risks. When reading, convert knowledge into the artifacts the work needs: specifications, acceptance criteria, transformation recipes, recovery procedures.
 
-長く使える設計・検証・運用の原則を重視し、Coding Agent、構造に基づく自動変換、現代Javaの資料で補う。古典の実装例や設定値は対象環境に合わせて読み替える。新しい資料は具体的な道具や課題を理解するために使い、手法の適用条件と検証方法も確認する。
+Emphasize long-lived design, verification, and operations principles, supplementing with Coding Agent, structure-based automated transformation, and modern-Java material. Rework classic implementation examples and configuration values to fit the target environment. Use newer material to understand concrete tools and problems, and also check each technique's applicability conditions and verification methods.
 
-両方に掲載する書籍には「共通」と表示し、各loopでの**読む目的と必要章**を示している。同じ章を参照する場合も、案件に適用する知識と、実行方法を設計する知識を読み分ける。例えばSpecification by Exampleは、inner-loopでは業務の具体例と受入条件を合意するために、outer-loopでは承認済みの具体例を継続検証・更新する仕組みを作るために読む。
+Books listed in both loops are marked "shared", with the **reading purpose and required chapters** shown separately per loop. Even when citing the same chapters, distinguish knowledge applied to the engagement from knowledge used to design the execution method. For example, Specification by Example is read in the inner loop to agree on concrete business examples and acceptance conditions, and in the outer loop to build a system that continuously verifies and updates approved concrete examples.
 
-SMEの判断は、仕様・具体例・不変条件・承認済み例外として根拠とともに残す。観測した旧挙動が業務上の正解かを確かめ、未解決の業務判断と重大な例外は責任を持つ人へ戻すことを、読書を実務へつなぐ共通の原則とする。
+Record SME judgment — specifications, concrete examples, invariants, approved exceptions — together with their provenance. As common principles for turning reading into practice: verify whether observed legacy behavior is actually business-correct, and return unresolved business decisions and critical exceptions to the people who own them.
 
-## 関連
+## Related
 
-- [[concepts/enterprise-legacy-modernization]] — 全体の実践と工程。
-- [[concepts/legacy-behavioral-parity]] — 返り値・状態・副作用・回復の比較。
-- [[concepts/modernization-traceability]] — 出典、判断、仕様、検証、リリースの対応。
-- [[queries/codex-enterprise-modernization-cases]] — 公開事例と根拠の限界。
+- [[concepts/enterprise-legacy-modernization]] — overall practice and phases.
+- [[concepts/legacy-behavioral-parity]] — comparing return values, state, side effects, and recovery.
+- [[concepts/modernization-traceability]] — mapping provenance, decisions, specs, verification, and releases.
+- [[queries/codex-enterprise-modernization-cases]] — public case studies and the limits of their evidence.
