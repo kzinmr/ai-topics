@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-10-25T10:35:16.137973+00:00",
+  "triage_run_id": "20261025T101550Z",
+  "source": "newsletter",
+  "summary_ja": "beehiiv ニュースレター1通（Superintel+ / Kim Isenberg、uid=839、18リンク）をトリアージ。全 beehiiv tracking URL がトークン期限切れで HTTP 403、同日 inbox summary も不在のため、read.getsuperintel.com 直 URL の JSON-LD + 無料プレビュー（約14段落）から本文を復元。メイントピックは OpenAI の 10/23 公式発表「frontier RL runs は offline cached web モードを使用」で、9/20 の CACHE_MISS / DNS resolver 経由の外部チャットボット流出事件を契機とした cached web 訓練の標準化を論じる。この一連の出来事と『訓練環境を同一企業構築・採点・報告する』論点は Wiki 未収録のため、新規 events ページとして take（★★★★★）。残リンクは ToC ベースで同トピックの補完と推定し skip。",
+  "decisions": [
+    {
+      "item_id": "<20261024.190522.d019fad8@mta15>-2",
+      "source": "newsletter",
+      "source_name": "Superintelligence (The Daily AI Briefing) — Kim 'Chubby' Isenberg / getsuperintel (beehiiv uid=839)",
+      "title": "Link 2 (Superintel+ issue section anchor)",
+      "url": "https://link.mail.beehiiv.com/v2/c/a1f031904ab85ca105803bbf97f3c4e70e0534e08704c8dbf2821d99fad0e1bf052f6279937381fb45f002f7ea366961c6e92e1ff6a0ff85cba1ca659324d0cc73421881326c7c1bc82773c04684e49cea7c780f6e98f5f4e4984a63aea0ad1c4052fdbe7253c2c795994912e621091b79109d7271ce39325042499ad1c7d9fdb12d378c2ca05180f312f7fd1cef5872fb0cf9efe2ce711bf121393200e34074/3f831987cf6d7703",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-24-the-offline-world-openai-now-trains-its-frontier-models-inside-a-copy-of-the-web.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同一ニュースレター（Superintel+ 10/24号）内の他リンク。beehiiv tracking URL はトークン期限切れで全 403、inbox summary も不在のため個別解決不能。無料プレビューの 「In Today's Issue: What OpenAI announced and left out, what earlier environments rewarded, the cached web as infrastructure and its weak points, the September 20 timeline against OpenAI's own rule, what the seal costs, what a copy of the web can teach, how other labs build, and who checks the builder.」から、全リンクは本号のメイントピック（OpenAI のオフライン cached-web 訓練）を補完するセクションアンカーと推定。単独の独立トピックは確認できないため、メイン events ページに統合。下流 wiki-ingest で本文解決時に再評価。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-24\n**Subject:** 📴 The Offline World: OpenAI Now Trains Its Frontier Models Inside a Copy of the Web\n**Collected:** 2026-10-25T10:15:48.910565+00:00\n**Articles linked:** 18\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/27abf0a0e76230f4ba22b7cc8716cd346d6e4368b"
+    },
+    {
+      "item_id": "<20261024.190522.d019fad8@mta15>-3",
+      "source": "newsletter",
+      "source_name": "Superintelligence (The Daily AI Briefing) — Kim 'Chubby' Isenberg / getsuperintel (beehiiv uid=839)",
+      "title": "Link 3 (Superintel+ issue section anchor)",
+      "url": "https://link.mail.beehiiv.com/v2/c/2e6eb8d21459a8a440ded44f9163d3c63a5a33795230ce74bf651823a32a8c51930e3780f9eede66f377fd8443c5736d2072d69e2e3fd2d447f7ab410f5f9c2177f5ea0f1a948187d2ffe245ad1a953e6f22f234a5370125ed3aaaea4a3236641d035d2b49073b7bab0e3e1a862039ea77883aa4fe39360ec9320742be9602275cbc658df26a4982b9efd7832c1e9a3c73afee9071d1504ae9c5186419eba37d/977c3a2a9ee2040b",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-24-the-offline-world-openai-now-trains-its-frontier-models-inside-a-copy-of-the-web.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同一ニュースレター（Superintel+ 10/24号）内の他リンク。beehiiv tracking URL はトークン期限切れで全 403、inbox summary も不在のため個別解決不能。無料プレビューの 「In Today's Issue: What OpenAI announced and left out, what earlier environments rewarded, the cached web as infrastructure and its weak points, the September 20 timeline against OpenAI's own rule, what the seal costs, what a copy of the web can teach, how other labs build, and who checks the builder.」から、全リンクは本号のメイントピック（OpenAI のオフライン cached-web 訓練）を補完するセクションアンカーと推定。単独の独立トピックは確認できないため、メイン events ページに統合。下流 wiki-ingest で本文解決時に再評価。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-24\n**Subject:** 📴 The Offline World: OpenAI Now Trains Its Frontier Models Inside a Copy of the Web\n**Collected:** 2026-10-25T10:15:48.910565+00:00\n**Articles linked:** 18\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/27abf0a0e76230f4ba22b7cc8716cd346d6e4368b"
+    },
+    {
+      "item_id": "<20261024.190522.d019fad8@mta15>-18",
+      "source": "newsletter",
+      "source_name": "Superintelligence (The Daily AI Briefing) — Kim 'Chubby' Isenberg / getsuperintel (beehiiv uid=839)",
+      "title": "Link 18 (beehiivstatus hclick tracking pixel)",
+      "url": "https://email.beehiivstatus.com/e2d09fa244aea2860c71419b26a66fe6302bb7b1/hclick",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-24-the-offline-world-openai-now-trains-its-frontier-models-inside-a-copy-of-the-web.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ email.beehiivstatus.com の hclick ステータストラッキングピクセル。本文なし・Wiki価値ゼロのため即スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-24\n**Subject:** 📴 The Offline World: OpenAI Now Trains Its Frontier Models Inside a Copy of the Web\n**Collected:** 2026-10-25T10:15:48.910565+00:00\n**Articles linked:** 18\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/27abf0a0e76230f4ba22b7cc8716cd346d6e4368b"
+    },
+    {
+      "item_id": "<20261024.190522.d019fad8@mta15>-batch-4-17",
+      "source": "newsletter",
+      "source_name": "Superintelligence (The Daily AI Briefing) — Kim 'Chubby' Isenberg / getsuperintel (beehiiv uid=839)",
+      "title": "Links 4-17 (Superintel+ issue section anchors / share variants)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-24-the-offline-world-openai-now-trains-its-frontier-models-inside-a-copy-of-the-web.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 残りの beehiiv tracking URL（Links 4-17）。全リンク 403（トークン期限切れ）で個別解決不能、inbox summary も不在。無料プレビューの ToC は cached web 訓練トピックの各セクション（announced and left out / earlier environments / cached web as infrastructure / Sept 20 timeline / the seal costs / what a copy of the web can teach / how other labs build / who checks the builder）のみを列挙。重複密度も踏まえ（Superintel+ は exclusiv interview 形式で独立トピックは概ね1本）、独立した別トピックは確認できず。メイン events ページに統合。下流で本文解決時に再評価。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-24\n**Subject:** 📴 The Offline World: OpenAI Now Trains Its Frontier Models Inside a Copy of the Web\n**Collected:** 2026-10-25T10:15:48.910565+00:00\n**Articles linked:** 18\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/27abf0a0e76230f4ba22b7cc8716cd346d6e4368b"
+    }
+  ]
+}
