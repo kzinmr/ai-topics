@@ -1020,3 +1020,10 @@ research-grade pages from genuinely uncovered material:
 - Wikilinks: concepts/model-collapse-of-viewpoints, concepts/ai-generated-language-readability, concepts/sycophancy, concepts/linguistic-vertigo, concepts/ai-slop.
 - Dedup: no overlap with 10-24 morning (oracle routing) or 10-22 night (Maxwell/LayerFS).
 - Verification: NO_SLOP_FOUND / 0 MISS / NO_TYPO. No wiki content pages modified (report only).
+
+## 2026-10-25 22:30 UTC — x-accounts-scan
+- Scan: 11/84 accounts scanned (request budget 12, cursor 65→76), 4 new substantive posts, 0 errors.
+- Ingested: **Kimi K3.1 Pro** (23 Oct 2026) — first (soon-to-be) open-weight model to score this close to the frontier (Artificial Analysis 55, behind only Opus 5.5 at 58). $2/$10 pricing, Highspeed variant 2× price / 2-3× faster, low/medium/max reasoning. Weights promised Nov 4.
+  - Raw: `raw/articles/simonwillison.net--2026-oct-23-kimi-k31-pro--a41c8d02.md`
+  - Updated: `entities/kimi.md` (family table row + dedicated K3.1 Pro section, frontmatter updated).
+- Skipped (low AI-relevance): thdxr "waiting for my agents, game time" (anoma.ly arcade game), simonw pelican SVG tool toy post, simonw Ledger hardware-implant supply-chain reply (crypto security, off-topic).

@@ -10,9 +10,9 @@ tags:
   - china
   - open-source
 created: 2026-04-30
-updated: 2026-09-15
+updated: 2026-10-25
 type: entity
-sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]]", "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md", "raw/articles/2026-05-10_fireworks-ai_kimi-qkclip.md"]
+sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]]", "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md", "raw/articles/2026-05-10_fireworks-ai_kimi-qkclip.md", "raw/articles/simonwillison.net--2026-oct-23-kimi-k31-pro--a41c8d02.md"]
 ---
 
 # Moonshot AI / Kimi
@@ -84,6 +84,7 @@ Moonshot has maintained a rapid **2–3 month major-update cadence** since mid-2
 | **Kimi K2.6** | Apr 2026 | **Current flagship** — 12-hour execution, 300-agent swarms, long-horizon coding |
 | **Kimi K2.7 Code** | Jun 2026 | Coding-optimized reasoning variant (~30% fewer tokens than K2.6); Fireworks Day-0 |
 | **Kimi K3** | Jul 2026 | **2.8T parameter MoE**; first open 3T-class model; beats Opus 4.8/GPT-5.5 high; $3/$15 pricing; open weights released Jul 27 (1.56TB on HF); new MaaS license |
+| **Kimi K3.1 Pro** | Oct 2026 | **First (soon-to-be) open-weight model to score this close to the frontier**; Artificial Analysis 55 (behind only Opus 5.5 at 58); $2/$10 pricing; weights promised Nov 4 |
 
 ### Open-Weight Licensing
 
@@ -251,6 +252,48 @@ Sources: [[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]], AINews June 13
 - [kimi.com](https://kimi.com) — web interface
 - [Kimi API](https://platform.moonshot.ai) — API access
 - [Simon Willison's review](https://simonwillison.net/2026/Jul/16/kimi-k3/) — pelican benchmark + analysis
+
+---
+
+## Kimi K3.1 Pro — Open-Weight Closes on the Frontier (Oct 2026)
+
+**Kimi K3.1 Pro** landed on the Kimi API on **23 October 2026**. Simon Willison called it "a big
+deal — first time an open weights (well, soon-to-be open weights) model has competed this credibly
+with the current frontier."
+Source: [simonwillison.net/2026/Oct/23/kimi-k31-pro](https://simonwillison.net/2026/Oct/23/kimi-k31-pro/)
+(raw: `raw/articles/simonwillison.net--2026-oct-23-kimi-k31-pro--a41c8d02.md`).
+
+### Open Weight Status
+
+- **Not yet open weights** at launch (API-only), but Moonshot **promises full model weights by Nov 4, 2026**.
+- If delivered, this would be the first near-frontier open-weight release — see significance below.
+
+### Pricing & Variants
+
+| Spec | Value |
+|------|-------|
+| Input | **$2.00 / M tokens** (same as GPT-6.1 Sol; half of Claude Opus 5.5) |
+| Output | **$10.00 / M tokens** |
+| "Highspeed" variant | 2–3× faster, **2× the price** (input cache-hits priced the same) |
+| Reasoning levels | **low / medium / max** (three tiers) |
+
+### Benchmarks
+
+- **Artificial Analysis score: 55** — ahead of Claude Fable 5.1, GPT-6 Astra, and Gemini 4 Argon (all 53); behind only **Claude Opus 5.5 (58)**.
+- Moonshot's own benchmarks: approximately **level with Opus 5.5 and GPT-6 Astra** — beating them on a few, close on others.
+- **Significance**: first time a (soon-to-be) open-weight model has scored this highly against the frontier, continuing Moonshot's pattern of open-weight releases that trail the closed frontier only marginally.
+
+### Testing
+
+Simon ran it via `llm openai endpoint` (added to LLM 0.32, Aug 2026) against `https://api.moonshot.ai/v1`
+with model `kimi-k3.1-pro`, `--responses`, and `reasoning_effort` low/medium/max, using the
+pelican-riding-a-bicycle SVG benchmark. Compared against fresh Kimi K3 runs on the same three levels.
+
+### Availability
+
+- [Kimi API](https://platform.moonshot.ai) — API access (model id `kimi-k3.1-pro`)
+- [kimi.com](https://kimi.com) — web interface
+
 ## Production Economics — Solo Agency Case Study (June 2026)
 
 A documented real-world case of Kimi 2.6 as a production workhorse: a solo AI automation agency operator running 14 clients ($40k MRR) with a delivery engine built almost entirely on Kimi 2.6.
