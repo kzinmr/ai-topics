@@ -1,3 +1,26 @@
+## [2026-10-25] active-crawl | 4 new concepts — Mistral Large 4, NVIDIA OpenShell, ThinkingCap, Persona-Conditioned Security Degradation
+
+**Discovery**: HN Algolia `search_by_date` (~90 query terms, points>=20, 5-day window) + X/Twitter (xurl, search-API public_metrics were null so ranked by relevance/RT) + blogwatcher DB + wiki gap analysis (parent `find`/`grep`). Same-day dedup vs blog-wiki-ingest / newsletter-wiki-ingest. Cerebras trillion-param and Kimi K3.1 Pro were high-heat HN stories but already covered (`entities/cerebras-systems`, `concepts/cerebras-cs4`, `concepts/kimi-k3` K3.1 Pro section) — skipped.
+
+### New pages
+- `concepts/mistral-large-4.md` — Mistral Large 4 (ML4, "le Chonk"): 1T-param / 52B-active natively multimodal open-weight MoE, public preview Oct 6, weights end-of-Oct. Trained on 3,800 EU Grace Blackwell GPUs (EUR 3B Series D). SOTA open-weight on cyber (82% reproduce-patch vs ~0 for refusing Opus 5.5/GPT-6 Astra; Cybench 93%), finance/law (vals.ai, HarveyAI Legal Agent), visual grounding (Dense 200 42% > GPT-6 Astra 41%); Lakera B3 93.3%; RL-at-scale post-training (3k GPUs, 33B tok/day). Raw: `raw/articles/2026-10-06_mistral-ai_mistral-large-4-announcement.md`. confidence: medium (vendor self-reported benchmarks).
+- `concepts/nvidia-openshell.md` — NVIDIA OpenShell: Apache-2.0 Rust runtime for agent fleets (HN 499p Oct 22). Kernel-level syscall/file/network enforcement + formal verification of policy diffs + egress credential injection (agents never hold raw secrets); gateway+supervisor+sandbox; skills + SDKs; dogfoods agent-first dev. Raw: `raw/articles/2026-10-22_nvidia-openshell_readme-launch.md`. confidence: medium.
+- `concepts/thinkingcap.md` — ThinkingCap (BottleCap AI): token-efficient reasoning fine-tunes; Gemma-4-26B-A4B cuts thinking 38.9% avg / 69.1% peak at -0.15pp accuracy, looping 3.6% to 0.8%, drop-in vLLM. Task-family-dependent compression insight. Raw: `raw/articles/2026-10-23_bottlecapai_thinkingcap-gemma-4-26b.md`. confidence: medium (single vendor).
+- `concepts/persona-conditioned-security-degradation.md` — Hirundo Qwen3-Coder case study (HN 242p): naming the customer persona ("US defense contractor" +19% hackable, "HK democracy group" +28% leaky) degrades code security; effect lives in weights, survives prompt security instructions, closed only by weight-level Westernization. BaxBench SecretStorage, Fisher-exact significance. Raw: `raw/articles/2026-10-21_hirundo_qwen3-coder-persona-security.md`. confidence: medium (not independently replicated).
+
+### Bookkeeping
+- index.md: +4 concept entries (all verified unique + alphabetized; corrected 2 misplacements during insert), Total pages 3311 to 3315, Concepts section 2230 to 2234, Last updated 2026-10-25.
+- Wikilink verification: all pages link-clean (fixed 4 broken targets: open-weight-frontier-models to open-weight-vs-closed-llm-gap, reinforcement-learning-from-verifiable-rewards to post-training/rlvr; sleeper-agent + model-unlearning de-linked to plain text as no page exists).
+- Tags all SCHEMA-verified (frontier-models, multimodal, cybersecurity, geopolitics, token-economics, agent-platform, sandbox, code-model, etc.).
+
+### Topics considered but deferred
+- **Ask HN: why doesn't OpenAI start 100 companies?** (654p) — meta-discourse, no durable artifact; fold into ai-bubble-economics later if a thesis crystallizes.
+- **WorldTUI** (360M "pretend-to-be-a-terminal" world model, 641p) — demo-only, weak primary source; backup, not processed.
+- **Bot-detection vs modern AI agents** benchmark (research.poh.org, 49p) — low engagement, primary source unverified; deferred.
+- **Corgi** agent/terminal multiplexer (Show HN) and **Alter** (YC S25, multi-user agent access control) — early product launches, thin sources at capture.
+- **Minotaur** reasoning-without-an-LLM deep-dive (48p) — contrarian, single blog; deferred pending a paper.
+- **Confidential AI inference / Cohere Model Vault** (TEE serving) — flagged as gap by discovery; needs a dedicated source pull, candidate for next crawl.
+
 
 ## [2026-10-25 10:55 UTC] newsletter-wiki-ingest | run 20261025T101550Z
 - Source: Superintel+ (Kim 'Chubby' Isenberg / getsuperintel, beehiiv uid=839), subject "📴 The Offline World: OpenAI Now Trains Its Frontier Models Inside a Copy of the Web".

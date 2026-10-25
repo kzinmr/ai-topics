@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3311
-> Last updated: 2026-10-24
+> Total pages: 3315
+> Last updated: 2026-10-25
 
 ## Entities (961 pages)
 
@@ -969,7 +969,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2230 pages)
+## Concepts (2234 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -2451,6 +2451,7 @@
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mismeasure-of-open-source]] — The Mismeasure of Open Source
 - [[concepts/mixed-precision-mixed-accelerator-rl]] — Mixed-precision, mixed-accelerator RL (Modal, Oct 2026) — run RL samplers on FP8/NVFP4/BF16 across six accelerator kinds while the BF16 trainer stays fixed; absorb the train–inference mismatch with masked importance sampling + score centering + top-p mask replay; demo trains Qwen3.6-35B-A3B on 2.7K repo tasks fully async, sampling = 80–85% of RL GPUs
+- [[concepts/mistral-large-4]] — Mistral Large 4 (ML4) — 1T-param / 52B-active natively multimodal open-weight MoE; trained on 3,800 EU Grace Blackwell GPUs; SOTA open-weight on cyber (82% reproduce-patch) / finance / law; €3B Series D (Oct 2026)
 - [[concepts/mistral-medium-3-5]] — Mistral Medium 3 5
 - [[concepts/mistral-ocr-4]] — Mistral OCR 4 — SOTA Optical Character Recognition model; multilingual document parsing, structured markdown/JSON output, superior to Azure/Gemini/Amazon on benchmarks, 1,000 pages/min throughput (June 24)
 - [[concepts/mistral-vibe-remote-agents]] — Mistral Vibe Remote Agents
@@ -2551,6 +2552,7 @@
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo
 - [[concepts/nvidia-egpu-macos]] — NVIDIA eGPU on macOS
 - [[concepts/nvidia-egpu-on-macos]] — NVIDIA eGPU on macOS
+- [[concepts/nvidia-openshell]] — NVIDIA OpenShell — Apache-2.0 Rust runtime for autonomous agent fleets; kernel-level syscall/file/network enforcement, formal verification of policy diffs, egress credential injection (Oct 2026)
 - [[concepts/nvidia-rtx-ai-garage]] — NVIDIA RTX AI Garage
 - [[concepts/nvidia-vera-rubin]] — NVIDIA Vera Rubin Platform
 - [[concepts/nvfp4-4bit-floating-point]] — NVFP4 — 4-Bit Floating Point on Blackwell — NVIDIA's native hardware support for 4-bit floating-point inference with 2-3x throughput vs FP8 and 3.5x less memory than BF16
@@ -2655,6 +2657,7 @@
 - [[concepts/person]] — person
 - [[concepts/person-foundation-capital-investor-context-graph]] — Person Foundation Capital Investor Context Graph
 - [[concepts/persona-engineering]] — Persona Engineering — Methodology for crafting synthetic AI personas for market research, agent testing, and red-teaming; covers failure modes, prompt techniques, and evaluation metrics (July 2026)
+- [[concepts/persona-conditioned-security-degradation]] — Persona-Conditioned Security Degradation — code models write measurably less secure software when the customer's identity is named in the prompt; Hirundo Qwen3-Coder study: gaps live in the weights, closed only by weight-level Westernization (Oct 2026)
 - [[concepts/personal-ai]] — Personal AI — AI systems as aligned extensions of a single individual; umbrella for relational intelligence and personal OS patterns
 - [[concepts/personal-os-for-ai-agents]] — Personal OS for AI Agents
 - [[concepts/personal-software]] — Personal Software
@@ -3078,6 +3081,7 @@
 - [[concepts/the-untrainable]] — The Untrainable
 - [[concepts/thin-bi]] — Thin BI
 - [[concepts/thinking-tokens]] — thinking-tokens
+- [[concepts/thinkingcap]] — ThinkingCap — BottleCap AI token-efficient reasoning fine-tunes; 39% avg / 69% peak fewer thinking tokens at −0.15pp accuracy on Gemma-4-26B-A4B, drop-in vLLM (Oct 2026)
 - [[concepts/time-incremental-continued-pretraining]] — Time-Incremental Continued Pretraining — Refreshing knowledge on overlapping crawl data without catastrophic forgetting (arXiv:2609.23916)
 - [[concepts/timestral]] — Timestral (Mistral) — first family of time-series foundation models (5M-209M params); #1 on GIFT-Eval/TIME/fev-bench zero-shot; probabilistic multivariate; CPU-only inference (10-140 ms); beats Chronos-2/TimesFM-3/Falcon-2.0 with fewer params
 - [[concepts/thomson-reuters-frontier-model]] — Thomson Reuters Frontier Model — first commercial frontier model (Aug 2026)
