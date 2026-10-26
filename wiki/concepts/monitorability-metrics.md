@@ -2,7 +2,7 @@
 title: "Monitorability Metrics Beyond g-mean²"
 type: concept
 created: 2026-10-23
-updated: 2026-10-23
+updated: 2026-10-26
 tags:
   - monitorability
   - ai-safety

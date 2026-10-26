@@ -1,3 +1,12 @@
+## [2026-10-26] tag-audit | Weekly tag taxonomy audit — 1 violation fixed
+
+- Ran `scripts/tag_audit.py`: 3371 pages scanned, 918 unique tags, 0 composite kebab-case errors, 1 non-SCHEMA tag.
+- Violation: `ai-control` (1x, `concepts/monitorability-metrics.md`). Legitimate category — canonical concept page `concepts/ai-control.md` exists (DeepMind AI Control roadmap, reliability theory).
+- Fix: added `ai-control` to SCHEMA.md **AI Agents** category (after `agent-safety`); bumped `updated:` on monitorability-metrics page.
+- Post-audit: 0 non-SCHEMA tags, 0 composite tags, coverage 109.0% (1001 SCHEMA tags). No TAG_NORMALIZATION changes needed.
+
+---
+
 ## [2026-10-26 00:30 UTC] hot-post | Morning 09:30 JST — Kimi K3.1 Pro vs frontier (AA 55 vs 58, half price)
 
 - Delivered morning hot-post (Discord delivery in Japanese per report-quality skill; wiki archive kept English): "Kimi K3.1 Pro — AA 55 vs Opus 5.5's 58, exactly half the price". Numbers re-verified against `concepts/kimi-k3.md` (K3.1 Pro section), `entities/gpt-6-1-sol.md` ($2/$10, cached $0.10), `entities/openai-astra.md` ($10/$50, ARC-AGI-3 62.7% vs 99.9%), `events/claude-opus-5-5-gpt-6-release-sep-2026.md` (Opus 5.5 $4/$20), `comparisons/llm-api-pricing.md` (K3 $3/$15, China price floor section), `concepts/open-weight-vs-closed-llm-gap.md` (Doubleword Dec-3 extrapolation, HN 299pts).
