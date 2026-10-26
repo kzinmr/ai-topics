@@ -1,0 +1,116 @@
+{
+  "archived_at": "2026-10-26T10:27:41.125491+00:00",
+  "triage_run_id": "20261026T100303Z",
+  "source": "blog",
+  "summary_ja": "2026-10-26 blog-ingestバッチ（candidates 10件＋unsaved_articles 10件）を全件本文読了のうえトリアージ。take 2件: (1) Max Woolf（minimaxir.com）によるOpenAI/Anthropic値下げタイムライン解析 — GPT-5.6 Luna 80%減からGPT-6.1 Sol累計75%減・Opus 5.5 40-60%減までの相互報復的減価を、cache readがエージェント型コーディング支出の96-99%を占める構造、OpenRouter上のDeepSeek V4.1 Flash 1017プロバイダ29社化、Vercel Gatewayの実効token単価43.3%（4月比）、IPO直下という文脈で説明した一次資料。既存のcomparisons/llm-api-pricing.mdは定価表のみで因果分析がなく、concepts/token-economics.mdはEpoch AI中心でこの切り口は未収録。 (2) Jynn Nelson（jyn.dev）のAGI後分配論考 — UBIは住宅家賃に吸収されるため機能せず、Land Value Tax＋cash-flow tax＋Citizen's Dividendが効率的解だとするGeorgist論。既存concepts/ai-economics-post-scarcity.mdはImas/Trammell/Kaldor/O-Ringは持つがrent-seeking・LVT・cash-flow taxは一切未収録で、セクション追加が妥当。reference 2件: Simon Willison自作ツールSeam Cutter（作者entity追記程度）、Construction Physics 読みリスト（光ファイバ現物価格2.8-5倍＝データセンター供給制約、Bob McGrewのArda $160M）。skip 7件: 数学（球面幾何）、通知注意論の随想、Appleポートレートモード回顧、セキュリティ転職advice、USB-Cチェアレビュー、純粋な番組告知。unsaved_articles のAI Engineer YouTubeトーク9本はトランスクリプトなしのためスキップ（Managed Agents / AI Eval の2本はtranscripts/再評価候補）。",
+  "decisions": [
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Tool: Seam Cutter",
+      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+      "raw_path": "~/wiki/raw/articles/simonwillison.net--2026-oct-25-seam-cutter--515de6e5.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ Simon Willison自作の画像トリミングツール。画像に横/縦のcutを入れ両側をスライドさせて中央部分を切り抜く（スクリーンショット Stitch 後の不要プロンプト伏せ字用）。本文は2段落・754Bのみで技術的詳細（実装・コード・モデル利用）はなし。機械学習要素はなく、Wiki新規ページを作る対象ではない。作者entityの「自作ツール」リストへの1行追加に留めるのが妥当（entities/simon-willison.md にseam-cutterの記載は現状ゼロ）。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "construction-physics.com",
+      "title": "Reading List 10/24/26",
+      "url": "https://www.construction-physics.com/p/reading-list-102426",
+      "raw_path": "~/wiki/raw/articles/construction-physics.com--p-reading-list-102426--99e967fb.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 全体は建築・インフラの週次リンク集（2/3がペイウォール）だが、AIデータセンター供給制約に関連する一次的事実が2点ある:(1)「光ファイバが次のデータセンター由来不足になるか」— TrendForceによれば完成品光ファイバの現物価格は2025年水準の2.8〜5倍に上昇し、通信事業者は短期調達から長期供給契約（LTA）へ移行中。 concepts/subprime-data-center-crisis.md（173行）にも concepts/ai-supply-chain-security.md（128行）にも optical/fiber/供給制約の記載はゼロ（grep確認済み）で、データセンター起因の素材不足という観点は未収録。subprime-data-center-crisis.md の供給制約セクションへの追記が適切な更新先。(2)OpenAI元リサーチ責任者Bob McGrewの製造自動化スタートアップArdaが$160M調達 — 「設計変更時に人間は1日で再教育できるが、自動化の更新は3〜6ヶ月かかる」というAI×製造自動化の論点。entities/bob-mcgrew が未確認なので下流で確認のうえperson entity側へ追記。",
+      "candidate_wiki_path": "concepts/subprime-data-center-crisis.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "shkspr.mobi",
+      "title": "Gadget Review: LiberNovo Omni - the USB-C powered office chair",
+      "url": "https://shkspr.mobi/blog/2026/10/gadget-review-libernovo-omni-chair/",
+      "raw_path": "~/wiki/raw/articles/shkspr.mobi--blog-2026-10-gadget-review-libernovo-omni-chair--4d1043f6.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Terence EdenによるUSB-C給電式オフィスチェア（LiberNovo Omni）のガジェットレビュー。組立性・ランバーサポート・£700価格の感想でAIとは完全に無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Ep. 456, With Joanna Stern",
+      "url": "https://daringfireball.net/thetalkshow/2026-10-25/ep-456",
+      "raw_path": "~/wiki/raw/articles/daringfireball.net--thetalkshow-2026-10-25-ep-456--2848a4ec.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ The Talk Show 456回（Joanna Sternゲスト、テーマはiPhone Duo）の番組ノット。本文840Bでスポンサー（Factor / Notion）とリンク集のみ。本文テキストがなくAI/エージェント関連の論点も抽出できない純粋なポッドキャスト告知。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Poles and polars",
+      "url": "https://www.johndcook.com/blog/2026-10-25/poles-and-polars/",
+      "raw_path": "~/wiki/raw/articles/johndcook.com--blog-2026-10-25-poles-and-polars--1da1645f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 球面幾何・射影幾何における極と極線の定義解説（John D. Cook）。反転・双対・無限遠直線などの純数学話題でAI/LLMとの接点は皆無。Wiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "blog.jim-nielsen.com",
+      "title": "Why My Dad Didn’t Have a Cell Phone",
+      "url": "https://blog.jim-nielsen.com/2026/why-dad-didnt-have-cellphone/",
+      "raw_path": "~/wiki/raw/articles/blog.jim-nielsen.com--2026-why-dad-didnt-have-cellphone--cc3e7d6b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 通知・メッセージアプリの注意力侵襲についての個人的随想（Dave Rupert引用、1460B）。テーマは通知デザイン/注意経済でAIとは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Johnnie Manzari on X: Portrait mode launched 10 years ago today",
+      "url": "https://x.com/johnnie/status/2114007844605612167",
+      "raw_path": "~/wiki/raw/articles/x.com--johnnie-status-2114007844605612167--fb7e1abd.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 元AppleヒューマンインターフェースデザイナーJohnnie ManzariのX投稿（Daring Fireball経由）。ポートレートモード10周年の回想で、視差深度マップ＋MLによる目検出マスク＋意図的なぼかし強化という技術解説は興味深い。ただしApple純正カメラ機能の10年前の設計秘話であり、AI/LLM/エージェント技術のWikiスコープ外（末尾のAIへの所感も1文のみ）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "How much you can make in an entry level cyber security job",
+      "url": "https://dfarq.homeip.net/how-much-you-can-make-in-an-entry-level-cyber-security-job/",
+      "raw_path": "~/wiki/raw/articles/dfarq.homeip.net--how-much-you-can-make-in-an-entry-level-cyber-security-job--d750f5cf.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ セキュリティ職のキャリア/年収 advice 記事（sysadmin経験を積んでからセキュリティへ転向、CISSP、SOC analyst応募3000人など）。実務的に有用だがAI・機械学習の要素は一切なく、キャリア advice としてWikiスコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-unsaved-ai-engineer-youtube",
+      "source": "blog",
+      "source_name": "AI Engineer / daringfireball.net",
+      "title": "AI Engineer YouTube talks (9本) + Reddit Duo指紋スレッド（unsaved_articles 10件）",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ unsaved_articles 10件のバッチスキップ。AI EngineerカンファレンスのYouTubeトーク9本（Greptile code review agent、DeepMind Managed Agents、LiveKit voice agent、Arize eval/AI Engineer役割、turbopuffer機密性、Browserbase金融エージェント、Kepler数値捏造、DeepMind/LinqAlpha buy-side分析）はトランスクリプトなしの動画のみのため本文検証不可（BODY-READING MANDATE違反回避）。特に「Build Your Own Team of Managed Agents」（DeepMind）と「How to Write Your First AI Eval」（Arize）はテーマ重要度が高いため、transcripts/処理候補として将来再評価することを推奨。RedditのDuo指紋登録スレッドは外部メディア埋め込みで抽出不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可）"
+    }
+  ]
+}
