@@ -1,3 +1,10 @@
+## [2026-10-26 00:30 UTC] hot-post | Morning 09:30 JST — Kimi K3.1 Pro vs frontier (AA 55 vs 58, half price)
+
+- Delivered morning hot-post (Discord delivery in Japanese per report-quality skill; wiki archive kept English): "Kimi K3.1 Pro — AA 55 vs Opus 5.5's 58, exactly half the price". Numbers re-verified against `concepts/kimi-k3.md` (K3.1 Pro section), `entities/gpt-6-1-sol.md` ($2/$10, cached $0.10), `entities/openai-astra.md` ($10/$50, ARC-AGI-3 62.7% vs 99.9%), `events/claude-opus-5-5-gpt-6-release-sep-2026.md` (Opus 5.5 $4/$20), `comparisons/llm-api-pricing.md` (K3 $3/$15, China price floor section), `concepts/open-weight-vs-closed-llm-gap.md` (Doubleword Dec-3 extrapolation, HN 299pts).
+- Cross-refs: `entities/moonshot-ai`, `entities/kimi`, `concepts/open-weights-licensing-tightening`, `concepts/us-china-ai-competition`, `concepts/ai-benchmarks/arc-agi-3`, `concepts/ai-benchmarks/benchmaxxing`.
+- Flagged follow-up: Nov 4 open-weights promise — if delivered, open `concepts/kimi-k3-1-pro`; if broken, reframe as "API-only frontier". Estimated ~50% odds, re-check Nov 4.
+- Archive: `inbox/trending-reports/hot-post-2026-10-26-morning.md`. Quality gate: `NO_SLOP_FOUND`, zero wikilink MISS (alias-stripped checker), `NO_TYPO`.
+
 ## [2026-10-25] skeleton-enrich-daily | backlog empty (streak continues)
 
 - Frontmatter scan of `wiki/entities/` + `wiki/concepts/` (regex `status:\s*skeleton` inside YAML block): **0** matches. Streak continues since 2026-10-17.
