@@ -1100,3 +1100,4 @@ research-grade pages from genuinely uncovered material:
 ## 2026-10-26 21:30 JST — hot-post (night)
 - Delivered night hot-post: specialist-model superiority (Lynch CNN vs frontier LLMs, HN 571) + Skyvern progressive disclosure (2.3× faster, −22.5% cost) — contrarian "scale faith" counter-evidence thread.
 - Archived: `inbox/hot-posts/2026-10-26T2130-jst-specialist-models.md`. Checks: NO_SLOP_FOUND, 0 wikilink MISSes, NO_TYPO.
+## 2026-10-27 01:30 JST hot-post: Gheist secrets exfiltration x monitorability metrics (late-night)
