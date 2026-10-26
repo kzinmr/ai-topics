@@ -1068,3 +1068,7 @@ research-grade pages from genuinely uncovered material:
   - Raw: `raw/articles/simonwillison.net--2026-oct-23-kimi-k31-pro--a41c8d02.md`
   - Updated: `entities/kimi.md` (family table row + dedicated K3.1 Pro section, frontmatter updated).
 - Skipped (low AI-relevance): thdxr "waiting for my agents, game time" (anoma.ly arcade game), simonw pelican SVG tool toy post, simonw Ledger hardware-implant supply-chain reply (crypto security, off-topic).
+
+## 2026-10-26 21:30 JST — hot-post (night)
+- Delivered night hot-post: specialist-model superiority (Lynch CNN vs frontier LLMs, HN 571) + Skyvern progressive disclosure (2.3× faster, −22.5% cost) — contrarian "scale faith" counter-evidence thread.
+- Archived: `inbox/hot-posts/2026-10-26T2130-jst-specialist-models.md`. Checks: NO_SLOP_FOUND, 0 wikilink MISSes, NO_TYPO.
