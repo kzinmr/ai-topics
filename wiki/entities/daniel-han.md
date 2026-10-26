@@ -173,7 +173,7 @@ Investment analysis scored Unsloth at **8.10/10** (highest in the OSS index):
 - [[entities/andrej-karpathy]] — nanochat/auto-research; both focus on democratizing ML access
 - [[entities/hynek-schlawack]] — Open-source maintenance and sustainability philosophy
 -  — OSS project dealing with rapid growth and community demands
-- [[entities/eugeneyan]] — Applied ML practitioner sharing production ML lessons
+- [[entities/eugene-yan]] — Applied ML practitioner sharing production ML lessons
 - [[entities/daniel-van-strien]] — Hugging Face community builder
 
 ## X/Twitter Activity

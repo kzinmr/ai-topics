@@ -4,7 +4,7 @@
 > Total pages: 3317
 > Last updated: 2026-10-26
 
-## Entities (957 pages)
+## Entities (955 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -304,7 +304,7 @@
 - [[entities/eugene-yan--core-ideas]] — Eugene Yan — Core Ideas & Frameworks
 - [[entities/eugene-yan--key-quotes]] — Eugene Yan — Key Quotes
 - [[entities/eugene-yan--timeline]] — Eugene Yan — Timeline & Career History
-- [[entities/eugeneyan]] — Eugene Yan
+- [[entities/eugene-yan]] — Eugene Yan
 - [[entities/evanhahn-com]] — Evan Hahn
 - [[entities/eve-legal-ai]] — Eve (Legal AI) — Legal-tech AI company; $103M Series B at $1B+ valuation, EveOS platform, multi-agent (Atlas/Jenny/Auditor/Analyst), 1,400+ plaintiff firms (Aug 10)
 - [[entities/eventual]] — Eventual
@@ -351,7 +351,6 @@
 - [[entities/georgi-gerganov]] — Georgi Gerganov
 - [[entities/gergely-orosz]] — Gergely Orosz; enriched with Craft Conference 2026 "Slow Down to Speed Up" talk (Meta tokenmaxxing case study, Instagram AI exploit, June 23)
 - [[entities/gian-segato]] — Gian Segato
-- [[entities/giles-thomas]] — Giles Thomas; enriched with Part 34b (JAX GPT-2 Small) and Poppy training box hardware (July 9)
 - [[entities/gilesthomas]] — Machine learning researcher, educator, and software developer. Founder of PythonAnywhere. Publishes detailed technica...
 - [[entities/gkisokay]] — gkisokay
 - [[entities/glean]] — Glean; enterprise AI search platform; enriched with definitive enterprise-search guide + IR guide + agent orchestration comparisons + enterprise knowledge graph cases + knowledge-graph-vs-vector-database guide (Aug 2026); How-to-Choose AI Agent Builder guide — no-code/low-code/framework taxonomy, weighted scoring framework (Jan 2026); RAG vs fine-tuning guide (Feb 2026); Enterprise Search Evaluation vs ChatGPT/Claude — 1.9x/1.6x correctness preference on ~280 queries, context rot framing, MCP retrospective (May 2026)
@@ -505,7 +504,6 @@
 - [[entities/lighton]] — LightOn
 - [[entities/litellm]] — LiteLLM — open-source Python LLM proxy/gateway; **1.107.0 PyPI compromise (Oct 21, 2026)**: credential stealer + hourly RCE beacon in all 7 wheels via a single maturin `data = "cook"` line absent from the public repo; exfiltrated provider API keys from the proxy DB
 - [[entities/lilian-weng]] — Lilian Weng — OpenAI researcher, author of Lil'Log (lilianweng.github.io); comprehensive technical surveys on scaling laws, AI safety, agents, harness engineering for RSI, training (Jul 26)
-- [[entities/lilianweng]] — Lilian Weng
 - [[entities/linear]] — Linear
 - [[entities/ling-2-6-1t]] — Ling 2.6-1T
 - [[entities/liquid-ai]] — Liquid AI
@@ -965,7 +963,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2240 pages)
+## Concepts (2242 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -3299,7 +3297,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (41 pages)
+## Queries (43 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines

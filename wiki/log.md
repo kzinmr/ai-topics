@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-10-26] watchdog | auto-fix: entity dedup (3 merges), index dedup + header recount
+
+### Changes
+- Converted `entities/eugeneyan` -> redirect to `entities/eugene-yan` (canonical richer, 27.9KB vs 15.9KB)
+- Converted `entities/giles-thomas` -> redirect to `entities/gilesthomas` (23.4KB vs 6.2KB)
+- Converted `entities/lilianweng` -> redirect to `entities/lilian-weng` (18.1KB vs 11.1KB, contested-facts note preserved)
+- Rewrote incoming wikilinks in 5 files (index.md, entities/_index.md, hynek-schlawack, daniel-han, agentic-engineering-patterns)
+- Index: removed 3 duplicate entry lines (eugeneyan x2, gilesthomas, lilian-weng collisions resolved)
+- Headers recounted from section entries: Entities 957->955, Concepts 2240->2242, Queries 41->43
+- validate_index.py: clean
+
+
 ## [2026-10-26] trending-topics: Gheist CI/CD secrets campaign + cognitive mercantilism; IBM open-weight & Tao hub updates
 
 - NEW `concepts/github-actions-secrets-exfiltration.md` (Wiz Gheist report; raw saved, sha256 computed)

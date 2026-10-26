@@ -83,7 +83,7 @@ Paul Duvall's [repository of patterns](https://github.com/paulDuvall/ai-developm
 
 ## Case Study: Giles Thomas — "AIs identify problems and I fix them myself" (July 2026)
 
-[[entities/giles-thomas|Giles Thomas]] (gilesthomas.com) documents a disciplined human-in-the-loop workflow for learning-oriented writing and coding: **"AIs identify problems and I fix them myself."** The text and code on his blog are human-generated (not a moral stand but a constraint of "learning in public"), with AI input limited to specific checkpoints:
+[[entities/gilesthomas|Giles Thomas]] (gilesthomas.com) documents a disciplined human-in-the-loop workflow for learning-oriented writing and coding: **"AIs identify problems and I fix them myself."** The text and code on his blog are human-generated (not a moral stand but a constraint of "learning in public"), with AI input limited to specific checkpoints:
 
 - **Rubber duck mode**: asks LLMs to operate in a rubber-duck mode during ideation so explanations don't rob him of the learning
 - **AI code review, not AI fixes**: pastes code into a chat session, tells the LLM what it's meant to do, and asks it to check for bugs — explicitly instructing it *not* to make fixes, only point them out
