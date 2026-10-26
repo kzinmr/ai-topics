@@ -1,5 +1,11 @@
 # Wiki Log
 
+### Pipeline alerts (verified)
+- newsletter chain `ingest_ok_but_triage_failed`: FALSE POSITIVE — today's triage DID run (commit 7d079e3c 'newsletter triage 20261026T101054Z', 3 high/1 low); only the 2026-10-25 `triage_latest.json` checkpoint is stale (Oct 25). No action.
+- blog chain `triage_ok_but_wiki_ingest_failed`: today's blog triage completed (triage_latest 10:27, archive commit 79447aa4); take count small (2). Wiki-ingest will pick up at next scheduled run. Monitor tomorrow.
+- llilianweng redirect note: contested career facts live in canonical lilian-weng page.
+
+
 ## [2026-10-26] watchdog | auto-fix: entity dedup (3 merges), index dedup + header recount
 
 ### Changes
