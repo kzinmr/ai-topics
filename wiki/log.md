@@ -1,3 +1,21 @@
+## [2026-10-26] skeleton-enrich-daily | Enriched 9 high-value stub concept pages
+
+### Changes
+- Enriched 9 `status: stub` concept pages (frontmatter marker removed, sources/related/tags added, index.md descriptions updated):
+  - [[concepts/inference-time-compute]] — third scaling axis; cross-refs test-time-scaling + three-axes query
+  - [[concepts/test-time-compute]] — hub page for the sleep/test/post-peak three axes
+  - [[concepts/jagged-frontier]] — Mollick/BCG 758-consultant study, centaurs/cyborgs, 2025 Shape of AI; backlinks from ethan-mollick, vibe-physics
+  - [[concepts/nanogpt]] — Karpathy minimal GPT-2 trainer; links karpathy-projects + ai-benchmarks/nanogpt-speedrun
+  - [[concepts/micrograd]] — autodiff engine, Zero-to-Hero step 1
+  - [[concepts/software-2.0]] — 2017 thesis, Software 3.0 lineage
+  - [[concepts/swe-agent]] — ACI contribution, mini-swe-agent, harness-engineering ancestry
+  - [[concepts/reflexion]] — verbal RL, episodic memory, evaluator-quality caveat
+  - [[concepts/tree-of-thoughts]] — BFS/DFS over thoughts, TTC taxonomy placement
+- Note: ~446 `status: stub` pages remain in wiki/concepts/ (long tail, mostly non-AI general topics from blog ingests); entities/ backlog is clean. No richer versions existed in git history for these pages.
+
+### Remaining backlog
+- Remaining stub candidates prioritized for future runs: yoshua-bengio, hanna-hajishirzi, olmo-open-language-model, tinygrad, smollm, kubernetes, python, rust (dedupe-check vs existing pages first).
+
 ## [2026-10-26] watchdog | Health digest adjudication — all clean
 
 ### Changes

@@ -2216,7 +2216,7 @@
 - [[concepts/inference-engine-security]] — Inference-Engine Security — LLM self-host exploitation surface
 - [[concepts/inference-hardware]] — Inference Hardware
 - [[concepts/inference-speed-development]] — Inference Speed Development
-- [[concepts/inference-time-compute]] — Inference-Time Compute
+- [[concepts/inference-time-compute]] — Inference-Time Compute — compute spent generating answers; the third scaling axis, with economics and negative-returns framing
 - [[concepts/inference-time-scaling]] — Inference-Time Scaling
 - [[concepts/inference/h3-metal-apple-silicon]] — H3-metal — Native MiniMax-H3 inference for Apple Silicon (Aug 2026): C implementation using Metal GPU API by antirez, radical simplicity, benchmark comparisons
 - [[concepts/inference/llama-cpp]] — llama.cpp
@@ -2246,7 +2246,7 @@
 - [[concepts/iqm-quantum-computers]] — IQM Quantum Computers
 - [[concepts/ivan-yamshchikov]] — Ivan Yamshchikov
 - [[concepts/jack-morris]] — Jack Morris
-- [[concepts/jagged-frontier]] — jagged-frontier
+- [[concepts/jagged-frontier]] — Jagged Frontier — Mollick/BCG concept: AI capability is unevenly distributed across tasks (758-consultant study, centaurs/cyborgs)
 - [[concepts/jane-jensen]] — jane-jensen
 - [[concepts/javascript-runtimes-for-ai-agents]] — JavaScript Runtimes for AI Agents
 - [[concepts/jay-v]] — Jay V
@@ -2430,7 +2430,7 @@
 - [[concepts/mesh-llm]] — Mesh LLM — Distributed P2P LLM inference over the iroh protocol, pooling GPU resources across machines
 - [[concepts/michael-abrash]] — michael-abrash
 - [[concepts/microcode]] — microcode
-- [[concepts/micrograd]] — micrograd
+- [[concepts/micrograd]] — micrograd — Karpathy ~150-line autodiff engine; step 1 of the Zero-to-Hero stack
 - [[concepts/microprocessor-architecture]] — Microprocessor Architecture
 - [[concepts/microservices-vs-monolith]] — Microservices vs Monolith
 - [[concepts/microsoft-agent-365]] — Microsoft Agent 365
@@ -2528,7 +2528,7 @@
 - [[concepts/multiple-representations-rag]] — Multiple Representations RAG
 - [[concepts/mutually-assured-distraction]] — Mutually-Assured-Distraction
 - [[concepts/nano-banana-2]] — Nano Banana 2
-- [[concepts/nanogpt]] — nanoGPT
+- [[concepts/nanogpt]] — nanoGPT — Karpathy minimal GPT-2 trainer; democratized pretraining, ancestor of the speedrun benchmark
 - [[concepts/napkin-math-for-finetuning]] — Napkin Math For Finetuning
 - [[concepts/natural-language-autoencoders]] — Natural Language Autoencoders (NLA)
 - [[concepts/nemotron-3-ultra]] — Nemotron 3 Ultra (NVIDIA)
@@ -2820,7 +2820,7 @@
 - [[concepts/redis]] — Redis
 - [[concepts/reduce-offload-isolate]] — Reduce Offload Isolate
 - [[concepts/redux]] — Redux
-- [[concepts/reflexion]] — Reflexion
+- [[concepts/reflexion]] — Reflexion — verbal self-reflection + episodic memory across attempts (Shinn et al. 2023); test-feedback retry pattern
 - [[concepts/reflexive-ai]] — Reflexive AI
 - [[concepts/relational-intelligence]] — Relational Intelligence — AI that reasons about who we're connected to and why; the Hearth Thesis category (Ashe Magalhaes, relationscape)
 - [[concepts/reliable-agent-patterns]] — Reliable Agent Patterns
@@ -2990,7 +2990,7 @@
 - [[concepts/snowflake-arctic-rl]] — Snowflake Arctic RL — Open-source RL framework (VeRL+SkyRL); ZoRRo 6x actor-update acceleration; 36h Text2SQL training on 32 H200s; beats Gemini 3.1 Pro (June 30)
 - [[concepts/societal-shadow]] — A concept proposed by QC (Qiaochu Yuan): the ironic phenomenon where RLHF's need to enumerate everything LLMs are for...
 - [[concepts/soofi-s]] — Soofi S — German AI consortium's open 30B multilingual model topping benchmarks in English and German, Apache 2.0 licensed, European sovereign AI milestone
-- [[concepts/software-2.0]] — software-2.0
+- [[concepts/software-2.0]] — Software 2.0 — Karpathy 2017: neural nets as a new programming paradigm; datasets as code
 - [[concepts/software-after-software]] — Software After Software
 - [[concepts/software-correctness]] — software-correctness
 - [[concepts/software-craftsmanship]] — software-craftsmanship
@@ -3070,7 +3070,7 @@
 - [[concepts/tensorrt-llm]] — TensorRT-LLM — NVIDIA Inference Optimization Engine
 - [[concepts/tesla-autopilot]] — tesla-autopilot
 - [[concepts/test-case-minimization]] — Test Case Minimization
-- [[concepts/test-time-compute]] — test-time-compute
+- [[concepts/test-time-compute]] — Test-Time Compute — hub for the three compute axes (sleep / test / post-peak)
 - [[concepts/test-time-interaction-scaling]] — Test-Time Interaction Scaling
 - [[concepts/test-time-scaling]] — Test-Time Scaling — Techniques for improving LLM output quality by allocating more compute at inference time
 - [[concepts/text-optimization]] — Text Optimization
@@ -3120,7 +3120,7 @@
 - [[concepts/transformer-architecture]] — Transformer Architecture
 - [[concepts/transformers-library]] — transformers-library
 - [[concepts/translategemma]] — TranslateGemma
-- [[concepts/tree-of-thoughts]] — Tree of Thoughts
+- [[concepts/tree-of-thoughts]] — Tree of Thoughts — Yao et al. 2023: deliberate search (BFS/DFS) over reasoning branches; Game-of-24 4%->74%
 - [[concepts/trey-grainger]] — Trey Grainger
 - [[concepts/triattention]] — TriAttention — Trigonometric KV Compression; pre-RoPE geometry scoring + forward-packing compaction; 10.7× memory reduction, 2.5× throughput (NVIDIA, ICML 2026) (June 29)
 - [[concepts/trl-transformer-reinforcement-learning]] — TRL — Transformer Reinforcement Learning
