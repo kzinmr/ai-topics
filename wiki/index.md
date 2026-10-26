@@ -999,6 +999,7 @@
 - [[concepts/ai-generated-language-readability]] — AI-generated language readability — psycholinguistic study measuring readability differences between human- and AI-written text (Oct 2026)
 - [[concepts/budget-constrained-prm-evaluation]] — Budget-Constrained PRM Evaluation — faithful process-reward-model precision estimation under rate-limited verifiers via importance sampling; naive estimates overstate PRM quality (arXiv:2609.20812, Sep 2026)
 - [[concepts/creative-class-job-loss]] — Creative Class Job Loss — Apollo/Apricitas analysis of AI-driven displacement risk for creative-profession occupations (Oct 2026)
+- [[concepts/cognitive-mercantilism]] — Venkatesh Rao — AI panic as pre-capitalist mercantilism mapped onto intelligence (fixed-supply cognition, cognitive elites, "useless minds" fallacy); historical-transition counter-argument to labor-panic narratives (Oct 2026)
 - [[concepts/critique-conditioned-self-distillation]] — Fixes for RLVR all-wrong-group sparsity via privileged teachers measurably fail (signal not localized at errors); dense feedback is a search problem; critique-conditioned self-distillation as bounded fix (arXiv Oct 2026)
 - [[concepts/cross-agent-memory-sharing]] — Cross-Agent Memory Sharing — MemCollab cross-memory collaboration at test time via CrossMemKG + test-time memory evolution; shared-memory compounding vs poisoning risk (arXiv:2609.09192, Sep 2026)
 - [[concepts/dial-metaopd-token-selection-opd]] — DIAL & MetaOPD — Token Selection in On-Policy Distillation; divergence-based reweighting (down-weight mastered tokens) + cold-start fix for OPD reasoning post-training
@@ -2007,6 +2008,7 @@
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution)
 - [[concepts/gguf]] — GGUF (redirect → local-llm/gguf)
 - [[concepts/gguf-quantization]] — GGUF Quantization (redirect → local-llm/gguf)
+- [[concepts/github-actions-secrets-exfiltration]] — GitHub Actions Secrets Exfiltration — Gheist campaign: base32-encoded `toJSON(secrets)` defeats log masking; env-matrix dumps production secrets; self-hosted-runner sweep harvests AI-provider keys (Anthropic/HF/Groq/NVIDIA); public-repo approval hold works, private/GHES unprotected (Wiz, Oct 2026)
 - [[concepts/github-copilot-agent-platform]] — GitHub Copilot Agent Platform
 - [[concepts/github-copilot-billing]] — GitHub Copilot Token-Based Billing
 - [[concepts/github-models]] — GitHub Models — retired multi-provider LLM playground + unified inference API (GitHub Actions ambient-key prompts); retired Aug 2026 under coding-agent demand economics

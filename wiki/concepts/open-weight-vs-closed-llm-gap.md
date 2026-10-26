@@ -1,7 +1,7 @@
 ---
 title: "Open-Weight vs Closed LLM Performance Gap"
 created: 2026-06-28
-updated: 2026-08-03
+updated: 2026-10-26
 type: concept
 aliases: [open-vs-closed-llm-gap, open-source-llm-catch-up, frontier-os-llm]
 tags:
@@ -110,6 +110,10 @@ The **"Latest open artifacts (#23)"** roundup (Robotic/Interconnects, Aug 2 2026
 **Significance**: these releases support the "demand for tokens is incredibly high" thesis — new entrants (including Thinking Machines with Inkling and Xiaomi) keep arriving rather than being absorbed by consolidation. Geographically, open-model production continues to broaden beyond the original US/China axis (Korea, Switzerland).
 
 Source: [[entities/nathan-lambert|Nathan Lambert]] / Interconnects, "Latest open artifacts (#23)" (Aug 2, 2026)
+
+## Enterprise Signal — IBM CEO (Oct 2026)
+
+Arvind Krishna (The Register, 2026-10-22; HN 291 pts, 2026-10-26): open-weight models are now **"irresistibly good and cheap on-prem"** — his framing is ~90% of frontier performance at ~10% of the price, deployable in "two or three racks." A major enterprise vendor's CEO publicly pricing the open-weight/on-prem tradeoff is a demand-side adoption signal that complements the benchmark-convergence data above and the [[concepts/llm-price-collapse-2026]] supply-side story.
 
 ## See Also
 - [[concepts/scaling-laws]] — Empirical scaling relationships for LLM performance

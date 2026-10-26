@@ -84,6 +84,13 @@ His advocacy for [[open-source-ai|open-source AI]] stems from the belief that:
 
 This position aligns him with the broader movement for open-weight and open-source AI models in scientific research and [[coding-agents|AI-assisted scientific work]].
 
+## oai-math-revised Community Hub (October 2026)
+
+Tao launched **oai-math-revised** (2026-10-24, HN 52 pts): a community hub for revising OpenAI's math write-ups — a collaborative correction workflow for AI-generated mathematics, extending his "honest midterm" framing of AI in math (see the Severe Misalignment Declaration section). Positions community peer review as the quality-control layer for LLM math output rather than wholesale acceptance or rejection.
+
+- Source: https://terrytao.wordpress.com/2026-10-24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/
+- HN: https://news.ycombinator.com/item?id=50222283
+
 ## Quotes
 
 > "The job description is changing. Mathematicians will spend less time on routine verification and more on high-level conceptual thinking."

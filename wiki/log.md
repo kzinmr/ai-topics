@@ -1,3 +1,15 @@
+# Wiki Log
+
+## [2026-10-26] trending-topics: Gheist CI/CD secrets campaign + cognitive mercantilism; IBM open-weight & Tao hub updates
+
+- NEW `concepts/github-actions-secrets-exfiltration.md` (Wiz Gheist report; raw saved, sha256 computed)
+- NEW `concepts/cognitive-mercantilism.md` (Venkatesh Rao; raw saved)
+- UPD `concepts/open-weight-vs-closed-llm-gap.md` — IBM CEO Krishna "90% perf at 10% price, 2-3 racks" enterprise adoption signal
+- UPD `entities/terry-tao.md` — oai-math-revised community revision hub (HN 50222283)
+- SCHEMA: added secrets-exfiltration, github-actions, ai-panic tags
+- index.md: 2 new concept entries
+- Report: inbox/rss-scans/trending-topics-2026-10-26.md
+
 ## [2026-10-26 11:00 UTC] active-crawl | 4 new concepts — Specialist-Model Superiority, Skyvern Progressive Disclosure, LLM Price Collapse 2026, ADRs4AI
 
 Trend discovery via HN Algolia `search_by_date` (queries AI/LLM/agent/model, 400 hits, points>=15, last 4 days) + blogwatcher DB (unprocessed last-2d = AI Engineer YouTube only). Deduped against active-crawl 10-19/10-21/10-22/10-25 batches (Mistral Large 4, NVIDIA OpenShell, ThinkingCap, Persona-Conditioned Security Degradation, Mercury 3, Timestral, TorchTPU, DeepInfer, etc.) and today's newsletter-wiki-ingest (Kimi K3.1 Pro, ai-native-demand-indicators). Cerebras trillion-parameter post skipped — already ingested into concepts/cerebras-cs4.md on 10-25.
@@ -53,7 +65,6 @@ Index: Concepts 2236->2240, Total 3313->3317. Wikilink verification: 0 MISS (2 f
 
 ---
 
-# Wiki Log
 
 ## [2026-10-25] hot-post | late-night slot (2026-10-26 01:30 JST)
 
