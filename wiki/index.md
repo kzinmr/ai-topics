@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3312
-> Last updated: 2026-10-25
+> Total pages: 3317
+> Last updated: 2026-10-26
 
 ## Entities (957 pages)
 
@@ -965,7 +965,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2235 pages)
+## Concepts (2240 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -987,6 +987,7 @@
 - [[concepts/agent-security-certification]] — Agent Security Certification (AIUC-1) — first certification standard for AI agent security/safety/reliability; organizational-controls audit + adversarial product testing; quarterly re-certification; Cursor first certified (Aug 2026)
 - [[concepts/agent-native-tool-fallacy]] — Agent-Native Tool Fallacy — Sean Goedecke: "build X for AI agents" products mostly fail; agent-good tools converge on human-good tools, incumbents hold a training-data moat, agent ergonomics unknown and shifting (Sep 2026)
 - [[concepts/after-automation]] — After Automation (Paradox)
+- [[concepts/adrs4ai]] — ADRs4AI (Deliberative Programming) — versioned human–AI deliberation records in Git; AI stakes question + attributed recommendation w/ confidence + falsifier, human rules in one tap; AAAI 2026 Fall Symposium paper arXiv:2610.00961 (Oct 2026)
 - [[concepts/ag2-autogen]] — AG2 / AutoGen — Multi-agent framework
 - [[concepts/agent-account-provisioning]] — Agent Account Provisioning
 - [[concepts/agent-approval-spoofing]] — Agent Approval Spoofing — Security vulnerability where AI coding assistants display incorrect file paths in approval dialogs
@@ -1014,6 +1015,7 @@
 - [[concepts/claude-code/_index]] — Claude Code — Concepts hub: Claude Code sub-pages index
 - [[concepts/codex/_index]] — OpenAI Codex — Concepts hub: workflows including enterprise legacy modernization and case evidence
 - [[concepts/coding-agents/_index]] — Coding Agents — Concepts hub for coding-agent sub-pages (Cursor, Devin, SWE agents, …)
+- [[concepts/llm-price-collapse-2026]] — LLM Price Collapse 2026 — OpenAI–Anthropic tit-for-tat up to 80% cuts (Jun–Oct 2026); cache-read as the real battleground (96–99% of agent spend), 29-provider OpenRouter commodity check, IPO-timing paradox (minimaxir, HN 328)
 - [[concepts/economic-world-models]] — Economic World Models (EWM) — six-level ladder from rule-based agent worlds to sim-to-real economic twins; survey finds work stuck at lower levels (arXiv, Aug 2026)
 - [[concepts/decentralized-agent-orchestration]] — Decentralized Agent Orchestration (Markets vs. Planners) — AgentLance (VCG labor markets for agent allocation) and Economy of Minds (Hayekian auction economies); central planners bottleneck, leak private info, and are manipulable (arXiv, Jun–Aug 2026)
 - [[concepts/economic-agent-benchmarks]] — Economic Agent Benchmarks — Vending-Bench → EcoGym → CoffeeBench lineage; running a business over months as the long-horizon coherence test; no model dominates, idle-drift failure mode (arXiv, 2025–2026)
@@ -1339,6 +1341,7 @@
 - [[concepts/ai-memory-crisis]] — AI Memory Crisis — HBM demand from AI GPUs driving consumer electronics prices up via memory triopoly (Samsung/SK Hynix/Micron)
 - [[concepts/ai-military]] — AI in Military Wargames
 - [[concepts/ai-music-copyright]] — AI Music Copyright — GEMA v. Suno Munich court victory (Aug 2026); Suno ordered to stop reproducing works; contrast with Warner Music Group × Suno partnership
+- [[concepts/ai-native-demand-indicators]] — AI-Native Demand Indicators — falsifiable demand-side metrics for the AI build-out debate: a16z portfolio AI spend at ~10% of payroll (AI-native) vs ~1% (old economy), <10M heavy AI users of ~1.5B knowledge workers, Baker's "compute inequality", plus the financing-channel indicators (10Y yield 5.13%, Chamath's 5.5–6% break threshold, ~$700B projected 2027 AI bond issuance, CoreWeave 15.76% bond yield) (Oct 2026)
 - [[concepts/ai-native-product-localization]] — AI-Native Product Localization
 - [[concepts/ai-native-state-management]] — Comprehensive overview of state categories, data flow patterns, and architectural decisions in AI-native full-stack a...
 - [[concepts/ai-observability]] — AI Observability — Monitoring and Debugging LLM Applications
@@ -2974,7 +2977,9 @@
 - [[concepts/skill-library]] — Skill Library — Managed repositories of reusable agent procedures; SE-GoS self-evolving Graph-of-Skills (arXiv:2609.08228) and SKILL.md-vs-subagents eval (arXiv:2609.09233), Sep 2026
 - [[concepts/skill-retrieval-augmentation]] — Skill Retrieval Augmentation (SRA)
 - [[concepts/skillopt]] — SkillOpt
+- [[concepts/skyvern-progressive-disclosure]] — Skyvern Progressive Disclosure — deleting the RAG-style screenshot/element pre-processing from a browser agent: 2.3x faster, −22.5% cost, +52% tokens but +195% prompt-cache hits; vision-encoder latency tax + cached-token economics (Oct 2026)
 - [[concepts/slow-search]] — Slow Search
+- [[concepts/specialist-model-superiority]] — Specialist-Model Superiority — 2015-era fine-tuned Inception v3 CNN beats GPT-6 Astra & Claude Fable 5.1 on 200 biopsy-proven skin lesions (62% vs 42%); LLM attractor-label failures; counterweight to frontier-dominance reasoning (Lynch Lab, HN 571, Oct 2026)
 - [[concepts/small-internet]] — small-internet
 - [[concepts/small-language-models]] — Small Language Models
 - [[concepts/smfs]] — Supermemory Filesystem (SMFS)

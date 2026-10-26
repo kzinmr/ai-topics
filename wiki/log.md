@@ -1,3 +1,17 @@
+## [2026-10-26 11:00 UTC] active-crawl | 4 new concepts — Specialist-Model Superiority, Skyvern Progressive Disclosure, LLM Price Collapse 2026, ADRs4AI
+
+Trend discovery via HN Algolia `search_by_date` (queries AI/LLM/agent/model, 400 hits, points>=15, last 4 days) + blogwatcher DB (unprocessed last-2d = AI Engineer YouTube only). Deduped against active-crawl 10-19/10-21/10-22/10-25 batches (Mistral Large 4, NVIDIA OpenShell, ThinkingCap, Persona-Conditioned Security Degradation, Mercury 3, Timestral, TorchTPU, DeepInfer, etc.) and today's newsletter-wiki-ingest (Kimi K3.1 Pro, ai-native-demand-indicators). Cerebras trillion-parameter post skipped — already ingested into concepts/cerebras-cs4.md on 10-25.
+
+**New pages** (all FULL gaps, verified via filesystem find):
+1. `concepts/specialist-model-superiority.md` — Lynch Lab: 2015-era Inception v3 fine-tuned 20 min beats GPT-6 Astra (42%) & Claude Fable 5.1 (42%) at 62% on 200 biopsy-proven skin lesions; melanoma detection 13/30 vs 8/11; LLM attractor-label failures (Astra: 75 BCC calls incl 14 melanomas); patient-framed test -> universal referral; caveats preserved (n=200, single-run, contamination favors LLMs, not SOTA). HN 571 pts.
+2. `concepts/skyvern-progressive-disclosure.md` — Skyvern 3.0 "Deleting RAG": 593s->262s (2.3x), cost/run -22.5% despite +52% tokens; screenshots 27%->2.7% of calls (vision encoder 1.7x latency tax), turns 6.4->23, prompt cache hits 27%->79.7%; next: system-one models for browser agents (6-12mo). HN 21 pts.
+3. `concepts/llm-price-collapse-2026.md` — minimaxir/Max Woolf timeline Jun->Oct 2026: Luna -80%, Fable 5.1 cache-read -75%, GPT-6 Sol $2/$10, GPT-6.1 Sol cumulative -75%; cache reads = 96-99% of agent token spend -> the real battleground; 29 OpenRouter providers on DeepSeek V4.1 Flash as commodity check; IPO-window paradox + Codex quota clawback. HN 328 pts.
+4. `concepts/adrs4ai.md` — Lumbroso deliberative programming: seed/stake/rule loop, AI-staked questions w/ attributed recommendation+confidence+falsifier, one-tap human ruling, Git-versioned; AAAI 2026 Fall Symposium arXiv:2610.00961; Zenodo-citable protocol. Show HN 45 pts.
+
+**Raw articles** (3 new; minimaxir already on disk from blog-ingest 10-26): `raw/articles/2026-10-26_lynch_CNN-vs-LLM-skin-cancer-diagnosis.md`, `2026-10-26_skyvern_skyvern-progressive-disclosure.md`, `2026-10-26_adrs_adr-deliberation-records.md`.
+
+Index: Concepts 2236->2240, Total 3313->3317. Wikilink verification: 0 MISS (2 fixed at authoring: earendil->concepts/, agent-observability->evaluation/).
+
 ## [2026-10-26] tag-audit | Weekly tag taxonomy audit — 1 violation fixed
 
 - Ran `scripts/tag_audit.py`: 3371 pages scanned, 918 unique tags, 0 composite kebab-case errors, 1 non-SCHEMA tag.
