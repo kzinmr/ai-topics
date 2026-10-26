@@ -1,3 +1,13 @@
+## [2026-10-26] watchdog | Health digest adjudication — all clean
+
+### Changes
+- Digest-reported index corruption (pipe/line-number/triple-bracket/space-prefix): 0 detected live — no action.
+- Digest orphans `entities/eugeneyan`, `entities/giles-thomas`, `entities/lilianweng`: false positives — all three converted to `status: redirect` stubs today (commit fa32e7a4), canonical pages (eugene-yan / gilesthomas / lilian-weng) exist and are indexed. Independent recursive os.walk orphan scan (excluding redirects/archives/_index): 0 orphans.
+- `eugene-yan` double index entry: legitimate (redirect stub + canonical both have files) — kept per A4b pre-check.
+- validate_index.py: clean (3348 lines). No changes committed.
+
+---
+
 # Wiki Log
 
 ### Pipeline alerts (verified)
