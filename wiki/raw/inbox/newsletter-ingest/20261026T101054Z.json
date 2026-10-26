@@ -1,0 +1,80 @@
+{
+  "run_id": "20261026T101054Z",
+  "triaged_at": "2026-10-26T10:11:00+00:00",
+  "processed_count": 4,
+  "classified": [
+    {
+      "message_id": "<20261025114900.3.07df6cbc2d22eb16@mg2.substack.com>",
+      "subject": "Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings",
+      "source": "Robotic (Nato Lambert, publication_id=48206, post_id=221950500)",
+      "date": "2026-10-25",
+      "raw_path": "wiki/raw/newsletters/2026-10-25-podcast-kimi-k3-1-pro-the-new-cyber-reality-and-muse-musings.md",
+      "relevance": true,
+      "importance": "high",
+      "topics": ["kimi-k3.1-pro", "moonshot-ai", "open-weights-models", "ai-cybersecurity", "model-releases"],
+      "canonical_url": "https://open.substack.com/pub/robotic/p/podcast-kimi-k31-pro-the-new-cyber",
+      "suggested_wiki_actions": [
+        "create/update entities/kimi or concepts page for Kimi K3.1 Pro release",
+        "update ai-cybersecurity concept with 'new cyber reality' discussion",
+        "scrape canonical post for full show notes before ingestion"
+      ],
+      "notes": "Podcast episode digest; all 20 links are Substack chrome/app-links/redirects. External article URLs are opaque substack.com/redirect/* tokens and cannot be resolved from checkpoint data alone. Downstream ingest should fetch the canonical Robotic post URL."
+    },
+    {
+      "message_id": "<20261025123134.3.e4580de967d692d7@mg-d0.substack.com>",
+      "subject": "An 86-minute guide to finding PMF | Rob Snyder (Author, The Power of Pull)",
+      "source": "Lenny's Newsletter (publication_id=10845, post_id=216929530)",
+      "date": "2026-10-25",
+      "raw_path": "wiki/raw/newsletters/2026-10-25-an-86-minute-guide-to-finding-pmf-rob-snyder-author-the-power-of-pull.md",
+      "relevance": false,
+      "importance": "low",
+      "topics": ["product-management", "pmf", "startup-strategy"],
+      "canonical_url": "https://open.substack.com/pub/lenny/p/an-86-minute-guide-to-finding-pmf",
+      "suggested_wiki_actions": [],
+      "notes": "Product-management / startup PMF podcast. Outside LLM/AI Agent scope unless the episode covers AI-native product strategy in depth; skip by default."
+    },
+    {
+      "message_id": "<20261025140345.3.6171853094fa7522@mg-d1.substack.com>",
+      "subject": "Old Holes, New Helpers, and AI in a Box",
+      "source": "The Signal (Alex Banks, publication_id=293154, post_id=221818469)",
+      "date": "2026-10-25",
+      "raw_path": "wiki/raw/newsletters/2026-10-25-old-holes-new-helpers-and-ai-in-a-box.md",
+      "relevance": true,
+      "importance": "high",
+      "topics": ["ai-agents", "ai-coding-assistants", "security-vulnerabilities", "ai-in-a-box", "appliance-inference"],
+      "canonical_url": "https://open.substack.com/pub/thesignal/p/old-holes-new-helpers-and-ai-in-a",
+      "suggested_wiki_actions": [
+        "scrape the 11 opaque redirect URLs via canonical post to recover real article links",
+        "possible updates: concepts/ai-agents, ai-security related pages, 'AI in a Box' appliance trend (relates to prior 'Nvidia AI factory in a box' newsletter 2026-10-21)"
+      ],
+      "notes": "Title suggests coverage of legacy vulnerabilities ('Old Holes'), AI coding helpers ('New Helpers'), and packaged/appliance AI products. Aligns with wiki scope. Content is link-digest only; downstream scrape required."
+    },
+    {
+      "message_id": "<20261026041440.3.1c782f9ef8fda4d3@mg-d1.substack.com>",
+      "subject": "Meet Claude, your new video editor.",
+      "source": "AI by Akash (publication_id=5747120, post_id=221788150)",
+      "date": "2026-10-26",
+      "raw_path": "wiki/raw/newsletters/2026-10-26-meet-claude-your-new-video-editor.md",
+      "relevance": true,
+      "importance": "high",
+      "topics": ["claude", "claude-code", "agentic-workflows", "video-editing", "tool-use", "anthropic"],
+      "canonical_url": "https://open.substack.com/pub/aibyaakash/p/edit-videos-with-claude-code",
+      "suggested_wiki_actions": [
+        "update entities/claude or claude-code page with video-editing agentic workflow use case",
+        "consider a concept note on general-purpose agents driving media tooling (ffmpeg-style workflows via Claude Code)"
+      ],
+      "notes": "Claude Code used as an agentic video editor — direct fit for coding-agent / tool-use coverage. Digest links are Substack chrome plus opaque redirects; fetch canonical post for content."
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 3,
+    "low": 1,
+    "relevant": 3,
+    "skipped": 1
+  },
+  "caveats": [
+    "All 4 digests contain only Substack app-link/chrome URLs and opaque substack.com/redirect/* tokens; no externally-resolvable article URLs are present in the checkpoint. Downstream newsletter-wiki-ingest should scrape the canonical post URLs listed above.",
+    "No critical-class items this run (no major model release announcements with verifiable first-party sources in the digest itself; Kimi K3.1 Pro podcast is third-party commentary pending scrape)."
+  ]
+}
