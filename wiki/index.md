@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3317
+> Total pages: 3318
 > Last updated: 2026-10-26
 
 ## Entities (955 pages)
@@ -3320,6 +3320,7 @@
 - [[queries/2026-10-21-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-21): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-22-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-22): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-24-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-24): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-10-27-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-27): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-25-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-25): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
