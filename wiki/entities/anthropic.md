@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-10-22
+updated: 2026-10-27
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -912,3 +912,9 @@ This deepens Anthropic's multi-silicon strategy (AWS Trainium + Google TPU + NVI
 Anthropic published "Detecting and counterposing misuse of AI: September 2026" (HN: 176 points), covering disrupted operations between **December 2025 and August 2026** across seven harm areas: cyber operations, influence operations, surveillance, scams/fraud, biological misuse, conventional weapons, and **illicit distillation**. Threat actors included suspected state-sponsored groups, financially motivated criminals, commercial spyware vendors, and state propaganda institutions; a notable finding is a distillation case involving a Fable/Mythos-class model (the only one in the report). Anthropic published IOCs alongside the report. ^[raw/articles/anthropic-com--threat-intelligence-report-september-2026.md]
 
 Context: this is Anthropic's fourth threat report (after March/August/November 2025) and lands the same week OpenAI is disclosing-embarrassed over the RubyGems agent attack ([[concepts/agent-collusion-public-infrastructure]]) — the frontier-lab transparency race now includes adversarial misuse disclosure as a competitive dimension.
+
+## Public S-1 Filing — Nasdaq "ANT" (October 26, 2026)
+
+Anthropic, PBC filed a **public** registration statement on Form S-1 with the SEC for a proposed IPO of its Class A common stock, intending to list on the **Nasdaq Global Select Market under the symbol "ANT."** Share count and price range were not yet determined; the offering will be made only by means of a prospectus, with Goldman Sachs and Morgan Stanley named as prospectus contacts. The registration statement had not yet become effective at announcement. ^[raw/articles/2026-10-26_anthropic_s1-sec-filing.md]
+
+This supersedes the June 2026 *confidential draft* S-1 (§IPO Preparation) with the public step. The HN thread on the raw SEC document drew 1,621 points (2026-10-26), the day's top AI story. Contemporaneous coverage (Gary Marcus, "What Anthropic left out of their draft S-1"; Import AI 478) focuses on financial disclosures — the reported >$80B H1-2026 net loss and junk-rated debt (see [[concepts/subprime-data-center-crisis]], [[concepts/ai-bubble-economics]]) — while the S-1 body itself remains pending external analysis. Dedup note: the H1-loss/trust angle was logged as deferred in prior crawls pending a primary source; this filing is that primary source.

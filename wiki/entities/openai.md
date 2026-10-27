@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-10-22
+updated: 2026-10-27
 tags:
   - company
   - model
@@ -671,6 +671,20 @@ Key findings:
 - OpenAI paid Microsoft **$17.2B** in 2025 (mostly R&D/training: $10.59B)
 - SoftBank paid OpenAI $867M; Microsoft paid $303M
 - Year-end 2025 assets: ~$50B (nearly half cash)
+
+## October 2026: OpenAI Math — three discoveries + shepherd-model releases
+
+OpenAI's math program (github.com/openai/math) produced a cluster of results in October 2026, each Lean-verified:
+
+- **2026-10-25 — ETH refutation preprint** (67 pages): a deterministic #k-SAT counting algorithm in (n+m)^{O_k(1)} · 2^{n/(log n)^{1/2+o(1)}} time, refuting the Exponential Time Hypothesis. Shepherded by a group led by Impagliazzo, Paturi, and Williams, with all raw data public and a funded conference.
+- **2026-10-26 — "Working with academic communities"**: announces three discoveries (harmonic analysis, complexity theory, QFT) and a new release process — external expert shepherds choose between release raw / explain with group / defer, under four principles (Transparency, No Academic Credit, Recognition, Independence). The math result (local smoothing conjecture in every dimension ⇒ Kakeya + Stein restriction) released as raw AI output; the physics artifacts deferred to collaborators.
+- **Community reaction**: Terence Tao hosted the launch of `oai-math-revised` (guest post by Nellore/Schmitt/Villar/Ward, 2026-10-24), an independent community fork revising OpenAI's hard-to-follow, under-cited write-ups.
+
+Full analysis: [[concepts/openai-eth-refutation-verification-crisis]]; landscape context: [[concepts/ai-mathematics-theorem-proving]], [[concepts/station-autonomous-math-discovery]]. ^[raw/articles/2026-10-26_openai_building-scientific-understanding.md]
+
+### GPT-6.1 Terra (2026-10-26)
+
+Midrange model (Anthropic-Sonnet position) emphasizing **visual reasoning + computer use** at **$1/M input, $5/M output** — about half the price of GPT-5.6 Terra and GPT-6.1 Sol, ~10× GPT-6 Luna. Ted Sanders' positioning: better than Astra/Sol at technical communication, similar on vision/computer use but much faster, weaker elsewhere; a midrange API option between Sol and Luna. Simon Willison notes the pelican-at-max cost: 11.3 cents / 4m11s. ^[raw/articles/simonwillison.net--2026-oct-26-gpt-61-terra--5e4a51fd.md]
 
 ## Sources
 - **OpenAI Agents SDK Blog (2026-04-15)** — [openai.com](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)

@@ -1,7 +1,7 @@
 ---
 title: Abliterated Model Backdoors
 created: 2026-10-21
-updated: 2026-10-21
+updated: 2026-10-27
 type: concept
 tags:
   - model-backdoor
@@ -15,6 +15,7 @@ tags:
   - fine-tuning
 sources:
   - raw/articles/2026-10-06_projectdiscovery-how-abliterated-models-can-get-you-pwned.md
+  - raw/articles/2026-10-27_hn-abliterated-deepseek-5-providers.md
 related:
   - abliteration
   - persistent-memory-attack-surface
@@ -80,6 +81,19 @@ or diffed. A weight-level backdoor lives in the model binary itself:
 
 This makes it a **supply-chain** problem, not a prompting problem. If a model in your stack is
 backdoored this way, almost nothing in a typical 2026 agent stack would notice.
+
+## Market maturation: the provider tier (2026-10-27)
+
+Twenty-one days after the ProjectDiscovery demo, the *demand* side visibly industrialized: HN (78 pts, 2026-10-27) highlighted that **five independent inference providers** now serve an abliterated DeepSeek build (`deepseek/deepseek-v4.1-flash-abliterated`), listed alongside stock models on aggregator sites with fallback routing. Zero-alignment access has moved from hobbyist Hugging Face downloads to a competitive, priced, multi-provider API market. ^[raw/articles/2026-10-27_hn-abliterated-deepseek-5-providers.md]
+
+Discussion themes worth recording, because they shape the threat model:
+
+- **Refusals were already near-absent** for coding workloads ("I did get a refusal out of qwen once. Once. Over weeks"), so several commenters questioned the commercial need — implying the market is driven by the residual long tail.
+- **Scepticism about capability gain**: testers report abliterated variants have "degraded performance" and unlock little beyond harmful tone, and that *cross-model jailbreaking* (a less-aligned model talking a stock model into compliance, plus retries) is nearly as effective — i.e., the abliterated market may be partly a convenience wrapper around jailbreaks.
+- **Honeypot hypothesis** recurred: with 5 anonymous-for-profit providers, "which if not all of these are honeypots?" is a live operational concern — and note that a honeypot provider is exactly the distribution vector a weight-level backdoor attacker also needs.
+- **Refusals as prompt-injection defence**: if an agent may face injection, a refusal is a useful last line; abliteration removes it wholesale.
+
+The relevant link to this page: a 5-provider market is the *precondition* for a poisoned-weight market. Where one trusted host curates its weights, poison is contained; where five commodity hosts race on price and capability, users optimize for uptime and price, and provenance checks are the first thing sacrificed.
 
 ## Defense posture
 

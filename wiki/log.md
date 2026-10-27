@@ -1,3 +1,32 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-10-27 11:00 UTC] active-crawl | 3 new concept pages + 3 enrichments — ETH refutation, SGLang KV leak, Brooks's Law; abliterated market, Anthropic S-1, OpenAI math/Terra
+
+Sources: HN Algolia (search_by_date, 2026-10-24→27 window) + blogwatcher SQLite (60 articles, 2 days) + coverage-gap grep. X/Twitter subagent not used (parent ran discovery directly).
+
+**New pages (concepts/):**
+- `concepts/openai-eth-refutation-verification-crisis.md` — OpenAI 67-page preprint refuting ETH (#k-SAT counting in (n+m)^Ok(1)·2^(n/(log n)^½+o(1)), Lean-verified); 3 results / 3 shepherd release strategies (Impagliazzo/Paturi/Williams group for ETH); oai-math-revised community fork launched on Tao's blog. Raw: 2026-10-25_openai-math_eth-false-paper.md (PDF, 67pp), 2026-10-26_openai_building-scientific-understanding.md (r.jina.ai), 2026-10-24_terrytao_oai-math-revised.md. confidence: medium (claims pending shepherd verdict).
+- `concepts/sglang-cross-request-kv-cache-exposure.md` — Cloudflare Workers AI GLM-5.3 cross-tenant leak: 155 responses >681,280-token prompts; root cause = KV pool (681,280) < context (1,048,576) + SGLang prefill/decode rejection-path stale-page read; fixes SGLang #38704/#36988/#38935; canary-marker validation. Raw: 2026-10-26_cloudflare_kv-cache-exposure-remediation.md. confidence: high (first-party incident report).
+- `concepts/brooks-law-ai-agents.md` — j11g: Brooks's Law mutated, not vanished — Baby Problem survives, overhead shifts to defining "done"/catching hallucinations; restatement "adding agents to a project with unclear requirements gets you the wrong answer faster". Raw: 2026-10-26_j11g_mythical-man-month-in-the-age-of-ai.md. confidence: medium (single-source opinion).
+
+**Enrichments:**
+- `concepts/abliterated-model-backdoor.md` — new "Market maturation: the provider tier" section: 5 independent providers for abliterated DeepSeek V4.1 Flash (HN 78pts 2026-10-27); honeypot hypothesis, jailbreak-substitutability scepticism, refusal-as-prompt-injection-defence. Raw: 2026-10-27_hn-abliterated-deepseek-5-providers.md (HN-discussion fallback; allmodels.io is a JS shell — earlier 557-byte raw deleted).
+- `concepts/inference/sglang.md` — new "Security history" section pointing at the exposure page.
+- `entities/anthropic.md` — new "Public S-1 Filing — Nasdaq ANT (Oct 26, 2026)" section (supersedes June confidential draft; HN 1,621 pts; Gary Marcus/Import AI 478 coverage noted). Raw: 2026-10-26_anthropic_s1-sec-filing.md.
+- `entities/openai.md` — new "October 2026: OpenAI Math" (3 discoveries, shepherd principles, oai-math-revised) + "GPT-6.1 Terra" ($1/$5 per MTok, vision+computer-use midrange, Ted Sanders positioning) sections. Raw: simonwillison.net--2026-oct-26-gpt-61-terra--5e4a51fd.md (pre-existing, blog-ingest).
+
+**Skipped / deferred:**
+- Anthropic S-1 *financials* deep-dive (SEC htm 1,621pts) — deferred to newsletter pipeline (Import AI 478 triaged today); anthropic.md section notes it.
+- minimaxir LLM price-collapse (426pts) — COVERED (concepts/llm-price-collapse-2026.md created 10-26 by prior pipeline).
+- GPT-6.1 Terra standalone page — folded into entities/openai.md; pricing table already in llm-price-collapse-2026.
+- "AI models cost more when you don't use English" (restofworld tokenizer tax, 23pts) — low points; candidate for next crawl.
+- Hob (Show HN on-device Claude Cowork alternative, 147pts), Swarmatory (21pts) — Show HN products, below page threshold.
+- The Benchmarking Crisis (Database Architects, 10-27) — blog-ingest covers tonight; left to pipeline.
+
+Verification: wikilink scan clean on all new/edited pages (only pre-existing broken links in anthropic/openai remain, untouched by this crawl); tags all from SCHEMA taxonomy (incl. inference-engine added? no — it exists? check pre-commit). Index: 3 entries inserted alphabetically via content-anchored insertion; Concepts header 2242→2245.
+
 ## [2026-10-27] blog-ingest | RSS scan → raw articles (19 saved / 1 unsaved)
 
 - blogwatcher scan: 42 new articles detected; 20 fetched this run, 19 saved to `wiki/raw/articles/`, 1 unsaved (NYT paywall: Marissa Mayer / AI assistants article via daringfireball).

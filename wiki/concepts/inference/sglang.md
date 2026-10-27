@@ -110,8 +110,13 @@ docker run --gpus all -p 30000:30000 lmsysorg/sglang:latest \
 | Pure local/CPU inference | ✅ **llama.cpp** (better CPU perf) |
 | Consumer hardware (Mac, laptop) | ✅ **Ollama** / llama.cpp |
 
+## Security history
+
+- **2026-10-26 — Cross-request KV cache exposure (Cloudflare Workers AI).** A KV-cache pool sized below the advertised context window, combined with a disaggregated prefill/decode rejection bug, let 155 over-long prompts (>681,280 tokens) on GLM-5.3 return other customers' data. Root cause and upstream fixes (SGLang #38704, #36988, #38935): see [[concepts/sglang-cross-request-kv-cache-exposure]]. The general lesson for disaggregated deployments: **KV cache page ownership is a tenant-isolation boundary**, and pages are not zeroed between requests.
+
 ## Related wikilinks
 
+- [[concepts/sglang-cross-request-kv-cache-exposure]] — 2026-10 tenant-isolation incident + upstream fixes
 - [[concepts/inference/vllm]] — vLLM high-throughput serving (PagedAttention)
 - [[concepts/inference/llama-cpp]] — llama.cpp CPU/Apple Silicon inference
 - [[concepts/structured-outputs]] — Structured output patterns

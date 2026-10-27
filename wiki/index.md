@@ -963,7 +963,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2242 pages)
+## Concepts (2245 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1486,6 +1486,7 @@
 - [[concepts/brainchop]] — BrainChop
 - [[concepts/branch-aware-search]] — Branch-Aware Search
 - [[concepts/breach-disclosure]] — Breach Disclosure
+- [[concepts/brooks-law-ai-agents]] — Brooks's Law in the Age of AI Agents — law mutated not vanished: Baby Problem (critical path) survives, overhead shifts to defining "done"/reviewing/catching hallucinations; 2026 restatement "adding agents to a project with unclear requirements gets you the wrong answer faster" (j11g, Oct 27)
 - [[concepts/brendanh0gan]] — brendanh0gan
 - [[concepts/browser-integrated-ai]] — Browser-Integrated AI — Trend of embedding AI models directly in browsers; Chrome's silent 4GB Gemini Nano installation raising consent and AI distribution questions (July 2026)
 - [[concepts/browser-agent/death-of-browser]] — Death of Browser — Dehumanization of the Browser
@@ -2592,6 +2593,7 @@
 - [[concepts/open-weight-ai-regulation]] — Open-Weight AI Regulation — The Kubernetes Moment Policy Debate — Tobi Knaup's Kubernetes analogy for open-weight AI ecosystem; US policy debate on restricting Chinese open-weight models; Nvidia/Microsoft/Meta/Jensen Huang industry warnings (July 2026)
 - [[concepts/open-secure-ai-alliance]]
 - [[concepts/openai-daybreak]] — OpenAI Daybreak — Cybersecurity initiative with GPT-5.5-Cyber, Codex Security, and Patch the Planet for automated vulnerability discovery and patching at scale (June 23)
+- [[concepts/openai-eth-refutation-verification-crisis]] — OpenAI ETH Refutation & AI-Proof Verification Crisis — 67-page preprint refutes Exponential Time Hypothesis via #k-SAT counting in (n+m)^Ok(1)·2^(n/(log n)^½+o(1)); Impagliazzo/Paturi/Williams shepherd group; Tao-hosted oai-math-revised community fork (Oct 25-27)
 - [[concepts/openai-jalapeno-inference-chip]] — OpenAI Jalapeño — Custom LLM inference chip co-developed with Broadcom; 9-month tape-out, gigawatt-scale deployment, GPT-5.3-Codex-Spark at production frequency (June 25)
 - [[concepts/openai/agents-api]] — OpenAI Agents API — Managed Codex harness and durable sessions; distinct from Agents SDK
 - [[concepts/openai/agents-sdk]] — OpenAI Agents SDK — Application-owned open-source harness; API boundaries corrected
@@ -2944,6 +2946,7 @@
 - [[concepts/serving-llms-vllm]] — vLLM
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/session-management]] — session-management
+- [[concepts/sglang-cross-request-kv-cache-exposure]] — SGLang Cross-Request KV Cache Exposure — Cloudflare Workers AI GLM-5.3 leaked 155 cross-tenant responses (prompts >681,280 tokens) when KV pool < context window + prefill/decode rejection bug read stale pages; SGLang #38704/#36988/#38935 (Oct 26)
 - [[concepts/session-portability]] — Session Portability — Exportable AI session state; five ownership tests (inspection, export, replay, audit, deletion); Earendil's seven principles for portable inference APIs (Jul 30)
 - [[concepts/provider-sealed-reasoning-blur]] — Provider-Sealed Reasoning Blur — No signal at the API boundary separates legitimate replay of a user's own opaque reasoning state from adversarial extraction of protected reasoning; OpenAI's Oct 5 "portable or replayable reasoning artifacts may face related risks" collides with Earendil's Jul 30 privacy defence of the same `encrypted_content` blob — sealed reasoning is simultaneously the defence and the lock-in (Oct 5, contested)
 - [[concepts/sglang-pipeline-parallelism]] — SGLang Pipeline Parallelism
