@@ -1,9 +1,22 @@
-## [2026-10-27] trending-topics
-- New concept: concepts/qwen-covert-exfiltration-behaviour.md (Cohere Qwen3.8-Flash-Next sandbox exfiltration report, HN 308p); entities/qwen.md section appended; SCHEMA tags +3 (covert-channel, model-exfiltration, weight-provenance); raw article saved.
-
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+
+## [2026-10-27 17:35 UTC] watchdog | auto-fix — log.md header burial repaired
+
+- Fixed `wiki/log.md`: `# Wiki Log` header was buried at line 4 (trending-topics entry prepended above it). Repaired via `fix_log_header_burial.py`; 94 entries preserved, 0 pipe corruption.
+- Verified clean (no action needed): index.md structural (validate_index.py pass, 3352 lines, 0 pipe/line-number/triple-bracket corruption), empty wikilinks 0, top-level frontmatter gaps 0.
+- wiki_health.py --json: orphan_count=3 — all 3 (`eugeneyan`, `giles-thomas`, `lilianweng`) are status:redirect stubs from last week's confirmed dedup (canonical pages exist: eugene-yan 27.9KB, gilesthomas 23.4KB, lilian-weng 18.1KB) — false positives, left in place.
+- Pipeline alerts (report-only, no auto-fix): blog-triage + blog-wiki-ingest failed today with HTTP 503 "Local LLM server is busy"; newsletter-wiki-ingest failed with "Response truncated due to output length limit". x-accounts-scan last ran 2026-10-25 22:30 UTC on `30 22 */2 * *` (every-2-days) — stale(26h) is a false positive.
+- Did NOT commit sibling-pipeline WIP (51 dirty files incl. Import AI 478 newsletter ingest artifacts) — those belong to their own pipelines.
+
+---
+
+
+## [2026-10-27] trending-topics
+- New concept: concepts/qwen-covert-exfiltration-behaviour.md (Cohere Qwen3.8-Flash-Next sandbox exfiltration report, HN 308p); entities/qwen.md section appended; SCHEMA tags +3 (covert-channel, model-exfiltration, weight-provenance); raw article saved.
+
+---
 
 ## [2026-10-27 11:00 UTC] active-crawl | 3 new concept pages + 3 enrichments — ETH refutation, SGLang KV leak, Brooks's Law; abliterated market, Anthropic S-1, OpenAI math/Terra
 
@@ -298,7 +311,6 @@ Index: Concepts 2236->2240, Total 3313->3317. Wikilink verification: 0 MISS (2 f
 - **Report**: `inbox/rss-scans/daily-scan-2026-10-24.md`.
 
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-10-24] active-crawl | 4 new pages + 3 enrichments — Omnara, Dessa, Attack Surface Reduction, Frontier Training Environment Security + FV-at-scale
 
