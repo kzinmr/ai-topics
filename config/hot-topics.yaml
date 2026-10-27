@@ -390,7 +390,7 @@ topics:
   notes: APEX cross-skill handoff attack; skill-boundary trust reset. Track marketplace
     hardening / skill signing efforts.
   added: '2026-10-02'
-  last_crawled: '2026-10-02'
+  last_crawled: '2026-10-27'
 - slug: dayjob-hour-scale-evals
   title: Hour-Scale Ground-Truth Work Benchmarks
   crawl_policy: prerequisites
