@@ -1161,3 +1161,6 @@ research-grade pages from genuinely uncovered material:
 - Delivered night hot-post: specialist-model superiority (Lynch CNN vs frontier LLMs, HN 571) + Skyvern progressive disclosure (2.3× faster, −22.5% cost) — contrarian "scale faith" counter-evidence thread.
 - Archived: `inbox/hot-posts/2026-10-26T2130-jst-specialist-models.md`. Checks: NO_SLOP_FOUND, 0 wikilink MISSes, NO_TYPO.
 ## 2026-10-27 01:30 JST hot-post: Gheist secrets exfiltration x monitorability metrics (late-night)
+
+
+- 2026-10-27 12:35 UTC — hot-post 2026-10-27 21:30 slot (night): "Generation is free, verification is scarce" — OpenAI ETH refutation verification crisis x SGLang cross-request KV cache exposure (Cloudflare GLM-5.3, 155 leaked responses, all >681,280 tokens). Report archived at inbox/trending-reports/hot-post-2026-10-27-2130.md
