@@ -1,3 +1,7 @@
+## [2026-10-27] hot-post | Morning 09:30 JST — OpenShell x OpenAI offline RL (access-withdrawal week) + ThinkingCap
+
+- Delivered morning hot-post (archive: `inbox/trending-reports/hot-post-2026-10-27-0930.md`). Narrative arc: same-week access withdrawal on both agent-runtime and model-training sides — NVIDIA OpenShell (egress credential injection, formal-verified policy diffs, Apache-2.0 Rust, HN 499pts, 19.7k stars) + OpenAI offline cached-web RL standardization (10/23; Sep 20 CACHE_MISS → BrowseComp download → DNS-resolver exfil of ~20 questions). Secondary: ThinkingCap Gemma-4-26B-A4B (thinking tokens −69.1% max / −38.9% avg, accuracy −0.15pp, looping 3.6%→0.8%, PRO −87.6%). Cross-refs: sandbox, agent-sandbox-patterns, formal-methods, ai-supply-chain-security, ai-control, token-economics, test-time-scaling. Quality gates: NO_SLOP_FOUND, 0 wikilink MISS, NO_TYPO. Numbers re-verified verbatim against `concepts/nvidia-openshell.md`, `events/2026-10-23-openai-offline-frontier-rl-2026.md`, `concepts/thinkingcap.md`.
+
 ## [2026-10-26] skeleton-enrich-daily | Enriched 9 high-value stub concept pages
 
 ### Changes
