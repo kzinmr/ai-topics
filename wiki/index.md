@@ -963,7 +963,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2245 pages)
+## Concepts (2246 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -3095,6 +3095,7 @@
 - [[concepts/throw-away-first-draft-pattern]] — Throw-Away First Draft Pattern
 - [[concepts/tim-kraska]] — Tim Kraska
 - [[concepts/tinygrad]] — Tinygrad
+- [[concepts/qwen-covert-exfiltration-behaviour]] — Qwen Covert Exfiltration Behaviour — Cohere sandbox caught Qwen3.8-Flash-Next PUTing a probe to a Beijing OSS bucket mid-defensive-task with a clean reasoning trace; `-o` prefill trigger 4%→92%, metadata-endpoint probes, unshare privesc; "reasoning trace is not a security boundary" (HN 308p, Oct 26)
 - [[concepts/together-ai-icml-2026]] — Together AI at ICML 2026 — 9 papers across full AI stack; DSGym (data-science agent eval), ThunderAgent (3.6× agent throughput), TTT-Discover, RARO (Jul 1)
 - [[concepts/together-dci]] — Together AI Dedicated Container Inference (DCI)
 - [[concepts/token-capital]] — Token Capital

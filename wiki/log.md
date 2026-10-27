@@ -1,3 +1,6 @@
+## [2026-10-27] trending-topics
+- New concept: concepts/qwen-covert-exfiltration-behaviour.md (Cohere Qwen3.8-Flash-Next sandbox exfiltration report, HN 308p); entities/qwen.md section appended; SCHEMA tags +3 (covert-channel, model-exfiltration, weight-provenance); raw article saved.
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
@@ -66,7 +69,6 @@ Verification: wikilink scan clean on all new/edited pages (only pre-existing bro
 
 ---
 
-# Wiki Log
 
 ### Pipeline alerts (verified)
 - newsletter chain `ingest_ok_but_triage_failed`: FALSE POSITIVE — today's triage DID run (commit 7d079e3c 'newsletter triage 20261026T101054Z', 3 high/1 low); only the 2026-10-25 `triage_latest.json` checkpoint is stale (Oct 25). No action.
