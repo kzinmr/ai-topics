@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-10-27 18:15 UTC] dreaming-group | Pattern E saturation — 54 never-archived raws scanned, 0 takes, 2 references flagged for downstream
+
+- Checkpoint `20261027T180029Z` had empty article pool (total_articles=0); ran filesystem scan via `check_archive_index_absence.py` (2,899 URLs in umbrella index) over 54 never-archived raw files.
+- Duplicate check: active-crawl 11:00 UTC (5cd6625b) already folded j11g Brooks's Law, abliterated DeepSeek provider tier, Cloudflare SGLang KV remediation, Terry Tao oai-math hub, Anthropic S-1, GPT-6.1 Terra; trending-topics (db0e2ac6) covered Cohere Qwen3.8 exfiltration; minimaxir price-collapse covered by llm-price-collapse-2026; Hirundo/ThinkingCap/OpenShell covered 10-25.
+- Reference candidates (for dreaming-wiki-ingest, verified absent from target pages):
+  - `simonwillison.net--2026-oct-26-webframe-evaluation` -> concepts/sandbox/js-runtime.md (webframe: Go/glaze headless-webview "run a web page as a program", scraper+sandbox eval vs shot-scraper, zero coverage).
+  - `simonwillison.net--2026-oct-26-jason-koebler` -> concepts/ai-sycophancy.md (ChatGPT routes mundane tech-support users to 404 Media — attention-seeking sycophancy failure mode).
+- Batch skips: Hex x5 + Harvey x2 + ElevenLabs + Glean (FR) + Pinecone Chroma-migration + Decagon EMEA (sitemap 06:00 marketing); 21 non-AI blog items; 2 Gary Marcus sub-1.1KB stubs (noted by blog-ingest).
+- Triage saved: 55 decisions (0 take, 2 reference, 53 skip). Archive: 55 candidates, 55 newly archived.
+
 ## [2026-10-27 17:50 UTC] health-fix | auto-fix — full clean, orphan report resolved as false positive
 
 - Verified index.md clean: 0 pipe_prefix, 0 line_number_prefix, 0 triple_bracket, 0 space_prefix, 0 double-pipe (validate_index.py pass, 3352 lines).
