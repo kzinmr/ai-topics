@@ -1,0 +1,55 @@
+{
+  "run_id": "20261027T101015Z",
+  "triaged_at": "2026-10-27T10:12:00+00:00",
+  "processed_count": 1,
+  "classified": [
+    {
+      "message_id": "<20261026123152.3.bc0d9ac0da483834@mg2.substack.com>",
+      "subject": "Import AI 478: Math for alignment; ProgramBench; and Mirendil shows what RSI means",
+      "source": "Import AI (Jack Clark, Anthropic co-founder; publication_id=1317673, post_id=222111186)",
+      "date": "2026-10-26",
+      "raw_path": "wiki/raw/newsletters/2026-10-26-import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means.md",
+      "relevance": true,
+      "importance": "critical",
+      "topics": [
+        "import-ai",
+        "jack-clark",
+        "ai-alignment",
+        "mathematical-alignment",
+        "ai-benchmarks",
+        "programbench",
+        "recursive-self-improvement",
+        "rsi",
+        "mirendil",
+        "self-improving-agents"
+      ],
+      "canonical_url": "https://open.substack.com/pub/importai/p/import-ai-478-math-for-alignment",
+      "suggested_wiki_actions": [
+        "scrape the canonical Import AI 478 post to recover the ~6-8 real article URLs behind the opaque substack.com/redirect/* tokens (links 9-15 are redirect UUIDs; links 1, 16, 17 are base64 redirect-2 tokens)",
+        "update concepts/recursive-self-improvement and entities/recursive-superintelligence with the 'Mirendil shows what RSI means' section",
+        "create/update concepts/ai-benchmarks/programbench (follow AGENTS.md: individual benchmarks go under concepts/ai-benchmarks/)",
+        "update concepts/ai-alignment with the 'Math for alignment' section; cross-link concepts/ai-mathematics-theorem-proving",
+        "update entities/jack-clark with issue 478 metadata"
+      ],
+      "existing_wiki_overlap": [
+        "entities/jack-clark.md",
+        "entities/recursive-superintelligence.md",
+        "concepts/recursive-self-improvement.md",
+        "concepts/ai-alignment.md",
+        "concepts/ai-mathematics-theorem-proving.md",
+        "concepts/ai-benchmarks/ (ProgramBench → new page here)"
+      ],
+      "notes": "Import AI is a core tracked source and this issue hits three pillars of the wiki's scope head-on: formal/mathematical alignment, a programming benchmark, and recursive self-improvement (Mirendil). All 17 extracted links are Substack chrome (app-link, share, like, comment, subscribe-widget) or opaque redirect tokens — no real article URLs are recoverable from checkpoint data alone. Downstream newsletter-wiki-ingest MUST fetch the canonical post URL above and scrape the full issue before classifying individual articles."
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 0,
+    "low": 0,
+    "skipped": 0
+  },
+  "caveats": [
+    "All 17 links in the digest are Substack chrome or opaque redirect URLs; individual article classification is impossible from checkpoint data. Importance is assigned at the newsletter level based on Import AI's track record and the three topics named in the subject line.",
+    "Only 1 newsletter was processed this run; no other digests were waiting in INBOX at 2026-10-27T10:10:15Z."
+  ]
+}
