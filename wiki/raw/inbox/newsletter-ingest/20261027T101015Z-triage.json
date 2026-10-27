@@ -51,5 +51,20 @@
   "caveats": [
     "All 17 links in the digest are Substack chrome or opaque redirect URLs; individual article classification is impossible from checkpoint data. Importance is assigned at the newsletter level based on Import AI's track record and the three topics named in the subject line.",
     "Only 1 newsletter was processed this run; no other digests were waiting in INBOX at 2026-10-27T10:10:15Z."
-  ]
+  ],
+  "triage_result": {
+    "takes": 5,
+    "references": 2,
+    "skips": 1,
+    "triage_json": "~/.hermes/cron/data/newsletter/triage_latest.json",
+    "checkpoint_run_id": "20261027T101015Z",
+    "canonical_body_fetched": "https://importai.substack.com/p/import-ai-478-math-for-alignment (13.3KB, isAccessibleForFree true)",
+    "takes_ja": [
+      "Mirendil-Base 単独研究者事前学習 -> concepts/recursive-self-improvement.md（新セクション）+ entities/mirendil 新規",
+      "Resolution 特異点解消 Lean 自動形式化 -> concepts/ai-mathematics-theorem-proving.md + entities/sequent.md（改名反映）",
+      "ProgramBench 0% -> 18.5% resolved / 70.5% almost -> concepts/ai-benchmarks/programbench.md 全面更新",
+      "OpenAI microVM キャッシュタイミング通信 -> concepts/frontier-training-environment-security.md（confidence low 脱却）",
+      "Clark 数学ブーム論旨 -> entities/jack-clark.md + concepts/ai-alignment.md 数学次元"
+    ]
+  }
 }
