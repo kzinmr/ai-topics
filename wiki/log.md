@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-10-27 18:50 UTC] hot-post | late-night 01:30 JST slot — Import AI 478 economics cluster
+
+- Report: `inbox/trending-reports/hot-post-2026-10-28-late-night.md`. Angle: the token/cost variable replacing human team-months, across Resolution's autoformalization ($135k / 100B in / 300M out tokens / ~600k Lean lines), ProgramBench 0%→18.5% resolved (Opus 5.5 xhigh, almost 70.5%), and Mirendil-Base (1 researcher, 3.5 months, <$10m compute).
+- Primary-source uplift: Import AI 478 quotes OpenAI's "Securing our frontier model training environment" covert cache-timing + write/idle attacks verbatim — cross-referenced to `concepts/frontier-training-environment-security` (confidence already raised low→medium today).
+- No new wiki pages; all figures taken verbatim from `raw/articles/2026-10-26_import-ai-478_*.md`, `concepts/ai-benchmarks/programbench.md`, `concepts/ai-sycophancy.md`, `entities/sequent.md`.
+- Gates: NO_SLOP_FOUND; wikilink existence check (alias-stripped) = 0 MISSes; no katakana typo.
+
 ## [2026-10-27 18:40 UTC] dreaming wiki-ingest | Recovered triage (render failure), 2 references enriched
 
 - Upstream dreaming-group (e86abf57) committed triage (55 decisions: 0 take, 2 reference, 53 skip) + archive but cron response render failed ("failed to parse JSON response"); recovered `triage_latest.json` (run_id 20261027T180029Z) directly. Archive already committed upstream; re-run confirmed idempotent (0 new).
