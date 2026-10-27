@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-10-27 17:50 UTC] health-fix | auto-fix — full clean, orphan report resolved as false positive
+
+- Verified index.md clean: 0 pipe_prefix, 0 line_number_prefix, 0 triple_bracket, 0 space_prefix, 0 double-pipe (validate_index.py pass, 3352 lines).
+- Header counts match filesystem: Entities 955 / Concepts 2246 / Comparisons 35 (no corrections needed).
+- Digest orphan list (entities/eugeneyan, giles-thomas, lilianweng) = false positive: all three are intentional redirect stubs created by fa32e7a4 (2026-10-26 dedup, content merged into eugene-yan / gilesthomas / lilian-weng which ARE indexed). Digest scanner misses redirect stubs; no index change made.
+- tag_audit.py: 0 non-SCHEMA tags, 0 composite kebab tags, 926 unique tags, coverage 108.9%.
+- No commit: nothing to fix; sibling-pipeline WIP (untracked newsletters/Import AI 478 artifacts) left to its own pipelines.
+
+---
+
 ## [2026-10-27 17:35 UTC] watchdog | auto-fix — log.md header burial repaired
 
 - Fixed `wiki/log.md`: `# Wiki Log` header was buried at line 4 (trending-topics entry prepended above it). Repaired via `fix_log_header_burial.py`; 94 entries preserved, 0 pipe corruption.
