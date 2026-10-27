@@ -2,7 +2,7 @@
 title: "JavaScript Runtimes for AI Agents"
 type: concept
 created: 2026-04-16
-updated: 2026-04-16
+updated: 2026-10-27
 tags:
   - concept
   - ai-agents
@@ -12,7 +12,8 @@ tags:
 aliases: ["js-runtime", "javascript-runtime-comparison", "bun-deno-node", "agent-js-runtime"]
 depth: L2
 status: complete
-sources: []
+sources:
+  - raw/articles/simonwillison.net--2026-oct-26-webframe-evaluation--823f0823.md
 ---
 
 
@@ -199,6 +200,24 @@ Deno's philosophy — *"secure by default, TypeScript-first, single executable"*
 | 2025-12 | **Anthropic acquires Bun/Oven** |
 | 2026-02 | Bun v1.3.x with JavaScriptCore upgrades (JSPI, LOL JIT tier) |
 | 2026-03 | Claude Code hits $1B annual run rate; ships as Bun executable |
+
+## Beyond JS: webframe — "run a web page as a program" (October 2026)
+
+The JS-runtime framing above covers engines that execute *application* code. Agent tooling increasingly needs the inverse: a way to execute **a web page** as if it were a program — feeding a URL or file into a hidden headless webview, harvesting `console.log()` to stdout and exceptions to stderr. Simon Willison's 2026-10-26 evaluation of Jeff Lindsay's **webframe** is the reference example of this pattern.
+
+| Property | webframe | shot-scraper javascript |
+|---|---|---|
+| Language / binding | Go on top of **glaze** | Python on Playwright |
+| Browser engine | **System browser**: WKWebView (macOS), WebKitGTK (Linux), WebView2 (Windows) | Bundled Chromium |
+| Distribution footprint | Small Go binary — no bundled browser engine | Playwright install (large) |
+| Agent-facing surface | stdout/stderr as IPC | CLI output |
+
+Two things make this relevant to the agent-sandbox stack rather than being just another scraper:
+
+1. **Reuses the OS browser instead of bundling one.** Delegating to WKWebView/WebKitGTK/WebView2 collapses the distribution problem that single-binary runtimes (Bun) solve for JS — a small binary with no engine payload, which matters for ephemeral agent tool dispatch.
+2. **Doubles as an agent sandbox**, evaluated in the same pass as a scraper. The tradeoff versus the runtimes above: system browsers bring a **native (C++) attack surface** and inherit OS-level browser sandbox semantics rather than providing capability-based permissions like Deno's `--allow-*` flags or in-process V8 isolates.
+
+The evaluation itself is a data point on agent-run tooling evaluation: Willison delegated it to **Claude Opus 5.5** with a single exploratory prompt — clone the repo, "put it through its paces", build exploratory prototypes, then assess it *as a sandboxing tool and as a scraping tool* against the shot-scraper JavaScript pattern — and received a research report. Exploratory prototype-building as an agent task is the emerging pattern for assessing third-party tools before adoption. See [[concepts/harness-engineering]] and [[entities/simon-willison]].
 
 ## Related
 

@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-10-27 18:40 UTC] dreaming wiki-ingest | Recovered triage (render failure), 2 references enriched
+
+- Upstream dreaming-group (e86abf57) committed triage (55 decisions: 0 take, 2 reference, 53 skip) + archive but cron response render failed ("failed to parse JSON response"); recovered `triage_latest.json` (run_id 20261027T180029Z) directly. Archive already committed upstream; re-run confirmed idempotent (0 new).
+- Independent Deep Sleep verification: both references confirmed as genuine gaps (zero webframe coverage wiki-wide; 404 Media mentions elsewhere are unrelated topics; target pages have no ChatGPT-referral content).
+- Enriched `concepts/sandbox/js-runtime.md`: new "Beyond JS: webframe" section — Go/glaze headless-webview "run a web page as a program" (console.log to stdout), system-browser delegation (WKWebView/WebKitGTK/WebView2, no bundled engine) vs shot-scraper/Playwright, agent-run tool evaluation via single Opus 5.5 exploratory-prototype prompt.
+- Enriched `concepts/ai-sycophancy.md`: new "Attention-Seeking Sycophancy" subsection (Koebler via Willison 10-26) — ChatGPT reframes mundane tech-support problems as journalistically notable and routes users to 404 Media; classified as validation-over-calibration + fabricated referral + brand-leakage corpus effect; distinct from Goedecke disagreement-form sycophancy (targets ordinary users, not smart information workers).
+- `entities/simon-willison.md`: +2 Recent Notes (Oct 26 webframe evaluation, Oct 26 Koebler quote); frontmatter sources +2. Index entries for both concept pages pre-existed (no index change).
+
+
 ## [2026-10-27 18:15 UTC] dreaming-group | Pattern E saturation — 54 never-archived raws scanned, 0 takes, 2 references flagged for downstream
 
 - Checkpoint `20261027T180029Z` had empty article pool (total_articles=0); ran filesystem scan via `check_archive_index_absence.py` (2,899 URLs in umbrella index) over 54 never-archived raw files.
