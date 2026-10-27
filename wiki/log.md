@@ -1219,3 +1219,8 @@ research-grade pages from genuinely uncovered material:
 
 
 - 2026-10-27 12:35 UTC — hot-post 2026-10-27 21:30 slot (night): "Generation is free, verification is scarce" — OpenAI ETH refutation verification crisis x SGLang cross-request KV cache exposure (Cloudflare GLM-5.3, 155 leaked responses, all >681,280 tokens). Report archived at inbox/trending-reports/hot-post-2026-10-27-2130.md
+
+## 2026-10-27 22:31 UTC — x-accounts-scan (cron)
+- Scanned 11/84 accounts (request budget 12 exhausted, 73 skipped; cursor 76→3).
+- 0 substantive candidates, 0 new posts, 0 errors. Dedup cache: 236 entries (TTL 90d).
+- No wiki changes required. Archive: `x_accounts_archive/x_accounts_20261027T223058Z.json`.
