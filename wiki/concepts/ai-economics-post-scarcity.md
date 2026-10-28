@@ -2,12 +2,13 @@
 title: "AI Economics: Post-Scarcity Dynamics"
 type: concept
 created: 2026-06-15
-updated: 2026-08-17
+updated: 2026-10-26
 tags:
   - economics
   - agi
   - labor-economics
   - post-scarcity
+  - political-economy
 aliases:
   - AGI Economics
   - Post-Scarcity Economics
@@ -15,9 +16,11 @@ aliases:
 related:
   - [[entities/alex-imas]]
   - [[entities/phil-trammell]]
+  - [[entities/jyn]]
   - [[concepts/ai-policy]]
 sources:
   - raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md
+  - raw/articles/jyn.dev--rising-tide-raises-rents--0d11198c.md
   - https://www.dwarkesh.com/p/alex-imas-phil-trammell
 ---
 
@@ -87,6 +90,57 @@ Nothing has been fully automated yet — when you look **down the supply chain**
 | **Index Fund Approach** | Buy the AI economy's output | Requires functioning public markets for AI companies |
 | **Sovereign Wealth Funds** | Country-level exposure to AI returns | Requires capital and institutional capacity |
 
+## Rent Extraction: Why UBI Alone Fails (Jynn Nelson, Oct 2026)
+
+Jynn Nelson's ["A rising tide raises all rents"](https://jyn.dev/rising-tide-raises-rents/) is the sharpest available critique of the UBI-first consensus in AI distribution debates, and it adds a dimension the mechanisms table above entirely omits: **the supply side of necessities**. ^[raw/articles/jyn.dev--rising-tide-raises-rents--0d11198c.md]
+
+### The Poverty-Equilibrium / Rent-Capture Argument
+
+Nelson starts from Eliezer Yudkowsky's observation (in "Universal Basic Income and Poverty") that a "Poverty Equilibrium" somehow survived a 100-fold productivity increase over a millennium, and Yudkowsky's admission that he does not understand why. Nelson's answer: **rent-seeking and incumbent effects**.
+
+> A world where everyone has, say, a guaranteed minimum of 50k annual income, is a world where rental housing costs about 25k a year and the rest goes to food, utilities, transport and healthcare.
+
+The mechanism is demand-side intervention meeting fixed supply: making food/utilities/transport/healthcare cheaper does not help in the long term, because **housing swallows an ever-increasing proportion of income**. Nelson cites **Henry George** (*Progress and Poverty*), **Enrico Moretti** (*Local Labor Markets*) and **Richard Hornbeck** as all predicting near-total capture of productivity gains by landlords and economic rent-collectors where housing supply is constrained.
+
+This is the missing row in the mechanisms table above: UBI's failure mode is not merely "political sustainability" but **capitalisation into land rent**.
+
+### Five Possible Worlds
+
+Nelson's scenario taxonomy is more granular than the four scenarios above, and adds a political-collapse branch the Imas/Trammell framing lacks:
+
+| World | Description |
+|-------|-------------|
+| **Status quo** | AI impact comparable to the mobile phone — culture changes, world doesn't. (Nelson considers this unlikely.) |
+| **Messy transition** | Acemoglu–Restrepo **reinstatement effect** holds (NBER 2019, "Automation and New Tasks"): fewer programmers, more UI designers / sales engineers / HCI researchers. Labour loses power vs capital, inequality worsens, but people can still make rent. |
+| **Reinstatement failure → plutocracy** | Jobs change faster than people retrain; a narrowing fraction of wealth goes to those who work for a living. Geopolitical analogue: countries without GPU foundries or a place in their supply chain face "a post-modern version of colonialism, mediated through markets rather than force." |
+| **Butlerian Jihad** | Unchecked, the plutocracy is unstable — plutocrats automate away the labour that generates their own income. Revolution is then likely to look like Frank Herbert or *A Canticle for Leibowitz* rather than post-scarcity communism: "Indiscriminate destruction; mass pogroms; loss of human knowledge; book burnings." Nelson's point: the unemployed are angry and will not distinguish AI used for solar panels from AI used for drones. **Revolution is not inherently liberatory** — even Robespierre supported property rights. |
+| **Rentier world** | Welfare extended into UBI ("bread and circuses") — people can rent enough to survive, but scarcity is everywhere and almost no one owns anything that gives them power. Explored in Marshall Brain's *Manna*. |
+| **Post-scarcity world** | *Manna*'s second world: no land ownership, land and production split equally. Nelson endorses the ownership model while rejecting its constant-surveillance apparatus. |
+
+### The Proposal: Tax Rents, Not Capital
+
+Nelson's prescription generalises the **Land Value Tax** to all scarce, non-produced resources:
+
+1. **LVT is an efficient tax** (no deadweight loss) precisely because land supply is fixed — landlords are already charging all tenants can afford, so a tax increase cannot be passed on. Via Lars Doucet: George's remedy captures the annual rental value of land *excluding* improvements, practically "a conventional property tax paired with a universal building exemption," and George opposed taxes on both labour and capital.
+2. **Extend to other fixed-supply goods**: radio spectrum, IPv4 addresses, mineral/resource rights, utility contracts. For public property the mechanism is periodic **re-auction of the right** (not the capital built on it) — the US FCC already auctions spectrum; a losing broadcaster keeps its towers and only loses the spectrum.
+3. **Cash-flow tax** generalises LVT beyond land, keeping "tax rents, deduct investment." The UK IFS formulation: tax all receipts immediately, deduct all outgoings at the same rate — at a 25% rate the government "covers 25% of the investment cost and takes 25% of the return, essentially becoming a compulsory silent partner." Consequence: *"Any project that is worthwhile before tax will be worthwhile after tax"* — and loss-making companies receive a **refund**, not merely a deduction. Nelson's MSP anecdote illustrates why this is needed: a former owner with no role in the business lives off a retained manufacturer repair authorisation, i.e. income from controlling access to a scarce good rather than from labour, risk or investment — economic rent inextricable from the genuine work performed under it.
+4. **Deductions must apply to wages, not just capital investment**, otherwise the tax incentivises investment over labour.
+5. **Distribute as an unconditional Citizen's Dividend** (no means-testing), tying dividends to the whole economy rather than the minimum needed to live. Precedents: Alaska Permanent Fund, Norway's oil/hydropower model (Norway already applies a cash-flow-style tax to resource-rent industries).
+
+### Transition Engineering (the politically hard part)
+
+Nelson is explicit that "hi could you dismantle the political machine please" will not work, because the opposition — landlords, homeowners, conglomerates, banks — derives its political power *from* the rents in question:
+
+- **Homeowners**: defer the LVT increase until first sale, charging interest on the deferral, so fixed-income owners avoid a cost spike. Crucially this is a **one-time** deferment — unlike **California's Prop 13**, it disappears after the first sale. Goal is not to punish ownership but to stop life savings being locked in homes and unearned landlord profit. Nelson: *"I do not believe that home ownership is intrinsically good."*
+- **Businesses**: the cash-flow tax discounts every investment, so raising the rate is not necessarily adverse — more up-front cash permits more risk-taking. Strongest opposition comes from low-investment, high-profit firms, i.e. precisely the rentiers. Easing in is possible: keep current profit-tax rates while adding investment deductions until the two rates match, only then raise the overall rate.
+- **Open problems Nelson concedes**: the tax must be high enough that dividends cover lost work hours during transition, and there must be a way to prevent corporate relocation to low-tax jurisdictions.
+
+### Assessment
+
+The contribution to this page is the **supply-side rebuttal to demand-side redistribution**: UBI, negative income tax and index-fund approaches all raise purchasing power without touching who owns the fixed factors, and therefore leak into rent. Nelson's closing axioms: *"Land is different from capital. Economic rent is a curse. Economic security is freedom."*
+
+Caveat for wiki readers: Nelson self-identifies as outside economics ("i don't know jack shit about economics") and the proposal is normative and unpriced — the cash-flow tax literature (IFS's Adam & Miller, "Full expensing and the corporation tax base") is invoked at the level of intuition, not modelling. It is best read as a well-cited argument, not a policy evaluation.
+
 ## Key Economic Concepts
 
 ### Kaldor Fact
@@ -113,6 +167,7 @@ The price of capital goods falling relative to consumption goods. One robot now 
 - [[entities/phil-trammell]] — Head of Economics at Epoch AI, Stanford research scholar
 - [[entities/dario-amodei]] — CEO of Anthropic; wrote "Policy on the AI Exponential" on AI speed vs policy response
 - [[entities/dwarkesh-patel]] — Podcast host who facilitated the Imas-Trammell discussion
+- [[entities/jyn]] — Jynn Nelson; compiler engineer whose "A rising tide raises all rents" supplies the Georgist / rent-capture critique of UBI above
 
 ## Related Concepts
 

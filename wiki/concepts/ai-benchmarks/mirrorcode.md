@@ -14,7 +14,7 @@ sources:
   - "https://epoch.ai/MirrorCode"
 related_concepts:
   - "[[concepts/ai-benchmarks/_index]]"
-  - "[[concepts/agent-evaluation]]"
+  - "[[concepts/evaluation]]"
   - "[[concepts/swe-bench]]"
   - "[[entities/epoch-ai]]"
 ---
@@ -62,4 +62,4 @@ The finding that Opus 4.7 can complete a multi-week human task in minutes — bu
 
 ## Connections to Other Wiki Concepts
 
-MirrorCode connects to the broader [[concepts/agent-evaluation]] landscape by testing a dimension — sustained long-horizon performance — that existing benchmarks do not adequately cover. Its findings inform discussions of [[concepts/recursive-self-improvement]] and [[concepts/test-time-scaling]] by demonstrating that AI systems can maintain coherent problem-solving over extended periods.
+MirrorCode connects to the broader [[concepts/evaluation]] landscape by testing a dimension — sustained long-horizon performance — that existing benchmarks do not adequately cover. Its findings inform discussions of [[concepts/recursive-self-improvement]] and [[concepts/test-time-scaling]] by demonstrating that AI systems can maintain coherent problem-solving over extended periods.

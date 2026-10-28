@@ -49,7 +49,7 @@ Reflections accumulate in a sliding-window episodic memory (typically the last 1
 
 - [[concepts/tree-of-thoughts]] — search over reasoning branches (parallel/exploratory) vs Reflexion's episodic retry loop
 - [[concepts/test-time-scaling]] — the umbrella both techniques sit under
-- [[concepts/agent-memory]] — persistent lessons as memory systems
+- [[concepts/context-engineering]] — persistent lessons as memory systems
 - [[concepts/reflexion-vs-self-refine]] *(if split later)* — Self-Refine (Madaan et al.) does within-response feedback; Reflexion does across-episode feedback
 
 ## Sources

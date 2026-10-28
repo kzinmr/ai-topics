@@ -127,4 +127,4 @@ The key difference: MCP is protocol-level (stateless, per-session tool access); 
 - [[concepts/decision-centric-architecture]] — The Data+Logic+Action+Security foundation
 - [[concepts/agent-ontology]] — How the Ontology provides agentic memory
 - [[concepts/enterprise-agents]] — Human-agent teaming and graded autonomy
-- [[concepts/rag]] — What AI FDE goes beyond
+- [[concepts/retrieval-augmented-generation]] — What AI FDE goes beyond

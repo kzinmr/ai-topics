@@ -119,7 +119,7 @@ Persist information so the agent can reference it later without keeping it in th
   - **Semantic** — facts about users, codebases, the world
 - Products with memory: ChatGPT, Cursor, Windsurf (auto-generate user-agent memories).
 
-**See also**: [[memory-systems]], [[concepts/agent-memory]]
+**See also**: [[memory-systems]], [[concepts/context-engineering]]
 
 #### 2. Select — Pull Context Into the Window
 

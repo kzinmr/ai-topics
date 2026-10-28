@@ -21,7 +21,7 @@ sources:
   - https://www.cerebras.ai/blog/how-we-built-our-knowledge-base
 related:
   - "[[entities/cerebras-systems]]"
-  - "[[concepts/rag]]"
+  - "[[concepts/retrieval-augmented-generation]]"
   - "[[concepts/wiki-memory]]"
   - "[[concepts/context-engineering]]"
 ---
@@ -157,7 +157,7 @@ See [[entities/cerebras-systems]] for the parent company context.
 
 ## Related Concepts
 
-- [[concepts/rag]] — Retrieval-Augmented Generation (parent category)
+- [[concepts/retrieval-augmented-generation]] — Retrieval-Augmented Generation (parent category)
 - [[concepts/wiki-memory]] — Wiki-as-context pattern for agent memory
 - [[concepts/context-engineering]] — Discipline of structuring context for agents
 - [[concepts/okf-open-knowledge-format]] — OKF structured metadata for knowledge wikis

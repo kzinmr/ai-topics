@@ -14,7 +14,7 @@ tags:
 sources:
   - "[[raw/articles/2026-02-12_letta_context-repositories]]"
 related:
-  - "[[concepts/agent-memory]]"
+  - "[[concepts/context-engineering]]"
   - "[[concepts/letta-code]]"
   - "[[concepts/progressive-disclosure]]"
   - "[[concepts/context-engineering|Context Engineering]]"

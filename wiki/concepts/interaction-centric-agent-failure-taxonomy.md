@@ -174,7 +174,7 @@ Judges systematically **over-attribute to the model**: when the harness/environm
 
 - **Orthogonal to existing taxonomies**: prior work (Microsoft AI Red Team, Cemri et al. "Why do multi-agent LLM systems fail?", Zhu et al. "Where LLM agents fail", Shah et al. fault/symptom/root-cause) identifies *what behavior occurred*, *which module was affected*, or *which trajectory event was decisive*. This taxonomy instead localizes the causal event to an interaction edge and names the responsible component — directly mapping each failure to the intervention it needs (post-training vs. harness engineering vs. environment redesign vs. benchmark repair).
 - **Modality- and architecture-agnostic**: applies to coding assistants, long-horizon personal assistants (OpenClaw, Hermes Agent), and multi-agent systems.
-- **Practical bridge to this wiki's concerns**: the context-edge failures (Goal Drift, State Tracking Failure, Context Rationale Erosion) formalize the failure patterns behind context-rot / context-degradation discussions; the memory-edge failures complement [[concepts/agent-memory]] and the [[concepts/llm-trace-judge]] trace-evaluation literature; the model–grader modes connect to reward-hacking-adjacent safety work (specification gaming, evaluation awareness; see [[concepts/evaluation/reward-hacking]]).
+- **Practical bridge to this wiki's concerns**: the context-edge failures (Goal Drift, State Tracking Failure, Context Rationale Erosion) formalize the failure patterns behind context-rot / context-degradation discussions; the memory-edge failures complement [[concepts/context-engineering]] and the [[concepts/llm-trace-judge]] trace-evaluation literature; the model–grader modes connect to reward-hacking-adjacent safety work (specification gaming, evaluation awareness; see [[concepts/evaluation/reward-hacking]]).
 
 ## Limitations
 
@@ -189,7 +189,7 @@ Judges systematically **over-attribute to the model**: when the harness/environm
 - [[concepts/llm-trace-judge]] — using LLMs to evaluate production agent traces (trace-level quality signals vs. root-cause localization)
 - [[concepts/agent-human-oversight-failure]] — human-side failures in agent oversight
 - [[entities/scale-ai]] — originating organization (all authors are Scale AI staff)
-- [[concepts/agent-memory]] — persistent-memory failure modes (Missed Write/Read, State Staleness, Pollution, Redundancy)
+- [[concepts/context-engineering]] — persistent-memory failure modes (Missed Write/Read, State Staleness, Pollution, Redundancy)
 
 ## Sources
 

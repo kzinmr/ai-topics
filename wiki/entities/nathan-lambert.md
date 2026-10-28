@@ -2,12 +2,13 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-10-13
+updated: 2026-10-26
 type: entity
 aliases:
   - natolambert
   - nathan-lambert
 sources:
+  - raw/newsletters/2026-10-25-interconnects-podcast-kimi-k3-1-pro-new-cyber-reality-muse-musings.md
   - https://www.interconnects.ai/p/the-distillation-panic
   - https://www.natolambert.com/
   - https://www.interconnects.ai/
@@ -83,6 +84,57 @@ His unconventional path — starting his Ph.D. in MEMS/physics, being rejected b
 - **Top podcast appearances**: Lex Fridman (2x), Latent Space (2x), ChinaTalk (5x), The MAD Podcast, Lawfare's "Scaling Laws", AI Summer
 - **2025 highlights**: Covered DeepSeek V3/V4, OLMo 3 launch, RLVR revolution, sycophancy in LLMs
 - **2026 highlights**: ATOM Report release, RAM metric development, Gemma 4 analysis, RLHF Book publication
+
+### October 2026: Open-weight models, cybersecurity, and the "boy who cried wolf"
+
+Podcast **#20 "Kimi K3.1 Pro, the new cyber reality, and Muse musings"** (Oct 25, 2026,
+with **Florian Brand**, whom Lambert introduces as "eval guy, recently moved to SF")
+is the clearest statement to date of the pair's position on the AI-cyber panic. It is
+also where Lambert's methodology shows most clearly: he explicitly refuses to adopt
+either camp's frame.
+
+**The two camps he refuses to join.** Cyber experts, he observes, read events from an
+*ecosystem* perspective — vulnerability detection and time-to-exploitation were
+already on exponentials **before ChatGPT**, with no step change when frontier models
+arrived — and track **reported cyber damages** (mostly ransomware), to which AI has
+historically been attributed a very low share. The AI side of Twitter, by contrast,
+"love[s] to debate open versus closed models and Mythos." Lambert's own conclusion
+sits in the uncomfortable middle: *"I really don't think it is that much of an open
+versus closed and a capability model thing."* He further doubts offensive capability
+is the binding constraint: *"the cost and ability to do cyberattacks is going way up,
+but the institutions that are doing them… doesn't necessarily 10X their output."*
+
+**The "boy who cried wolf" critique of AI safety.** Lambert says he "distinctly
+remember[s] the boy-who-cried-wolf vibe of a lot of the AI safety companies over the
+last few years," and recounts his exchange with **Dean Ball** on exactly this point:
+*"Dog, we've been doing this for years. The boy who cried wolf is a classic parable
+for a reason, and it seems like a bit of a blind spot."* He grants the labs' defence
+partially — they say they claimed "a ton of problems," not "the world will end" — and
+holds that the most prominent company in the world is *partially* responsible for how
+its messaging propagates through the media and government pipeline. He also wishes he
+could "relive the Mythos moment" to establish what was actually claimed versus what
+was heard.
+
+**What has and has not happened since PHP2Shell.** Brand reports **mass exploitation
+did not follow** the disclosure, and cites Calif's own follow-up, *"PHP hasn't caused
+a disaster yet."* His structural argument: exploiting and wrecking an organisation
+requires long-horizon persistence, which is precisely where closed models (he names
+**GPT-5.6 Sol**) remain far ahead of open ones; CTF-style exploit generation does not
+need that. He also notes the **supply-chain-of-attackers** argument (via Joshua Saxe):
+the population able to run open models skews toward people who self-select out of
+better-paid work and are not the population likely to execute loud, high-damage
+attacks — while nation-states have long had their own models and capabilities
+regardless. His net read: "the overall dynamics are staying the same, but are
+accelerated by a lot." Lambert's follow-on worry is honest rather than reassuring —
+it is *not clear who in the world is willing to use AI models to cause mass physical
+damage*, and he expects that to be answered "in the next four months."
+
+**Model-launch astroturfing.** See [[concepts/kimi-k3]] — the pair document Moonshot's
+undisclosed paid-promotion instructions for K3.1 Pro and generalise it into a
+"professionalization of model launches" thesis (day-0 provider support, API-only
+exclusive windows before weights, paid social amplification).
+
+Source: [[raw/newsletters/2026-10-25-interconnects-podcast-kimi-k3-1-pro-new-cyber-reality-muse-musings.md|Interconnects podcast #20]]; related [[events/php2shell-php-rce-2026]], [[concepts/open-weight-ai-regulation]], [[concepts/security-and-governance/open-model-safety]].
 
 ### May 2026: The Distillation Panic
 

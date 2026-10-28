@@ -89,7 +89,7 @@ suspect_score = 0.4·proximity + 0.3·frequency + 0.2·bridge + 0.1·role
 
 ## Related
 
-- [[concepts/agent-evaluation]] — Broader evaluation frameworks for AI agents
+- [[concepts/evaluation]] — Broader evaluation frameworks for AI agents
 - [[entities/openai]] — OpenAI as evaluation methodology source
 - [[concepts/heterogeneous-intelligence]] — Complementary paradigm for system architecture
 - [[entities/promptfoo]] — Low-level eval tool used in the framework

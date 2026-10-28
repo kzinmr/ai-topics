@@ -299,7 +299,7 @@ With AI agents, embeddings serve as one tool among many:
 - [[concepts/vector-search]] — How to efficiently find nearest neighbors at scale
 - [[concepts/bm25]] — Lexical scoring as complement to embeddings
 - [[concepts/lexical-search]] — Token-based matching fundamentals
-- [[concepts/rag]] — Retrieval-Augmented Generation pipeline
+- [[concepts/retrieval-augmented-generation]] — Retrieval-Augmented Generation pipeline
 - [[concepts/agentic-search]] — Agent-driven search paradigm
 - [[entities/voyage-ai]] — Embedding model provider (acquired by MongoDB)
 - [[entities/doug-turnbull]] — Search relevance engineering

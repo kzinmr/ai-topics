@@ -1,7 +1,7 @@
 ---
 title: "Moonshot Kimi K3"
 created: 2026-07-17
-updated: 2026-10-24
+updated: 2026-10-26
 type: concept
 tags:
   - model
@@ -11,6 +11,7 @@ tags:
   - moonshot
   - kimi
 sources:
+  - "raw/newsletters/2026-10-25-interconnects-podcast-kimi-k3-1-pro-new-cyber-reality-muse-musings.md"
   - "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md"
   - "raw/newsletters/2026-07-17-ainews-kimi-k3-2-8t-a50b-the-largest-open-model-ever-released-opus-4-8-class-at-.md"
   - "raw/articles/2026-07-24_together-ai-kimi-k3-vs-fable-deepswe.md"
@@ -515,6 +516,65 @@ If the Nov 4 weight release lands as promised, this would be the strongest open-
 **Sources**:
 - [[raw/articles/simonwillison.net--2026-oct-23-kimi-k31-pro--6b408312.md|Simon Willison — Introducing Kimi K3.1 Pro]] (Oct 23, 2026)
 - HN: https://news.ycombinator.com/item?id=50212065 (939 points)
+
+### Mixed reception: benchmark split, astroturfing, serving economics (Interconnects, Oct 25, 2026)
+
+Nathan Lambert and Florian Brand's read on the release is notably cooler than the
+Artificial Analysis headline: *"a big model and the post-training seemed a little
+bit undercooked for that. Maybe this is just a tiny bit RL fried."*
+
+**Benchmark split (exploitative vs explorative).** K3.1 Pro tops the Artificial
+Analysis Intelligence Index (55, behind only the two Claude 5.5 models) but sits
+**~20 points behind GPT-6 Astra on Terminal-Bench Science** and trails on
+ProgramBench. Brand's explanation: AA's suite is short-horizon, whereas
+ProgramBench "is really long and also very explorative" — you are given a goal
+without knowing the path. He reads the gap as evidence Moonshot's RL training is
+"still more towards the exploitative side of model training versus the explorative
+side." Note also Brand's disclosure that **Artificial Analysis is about to ship a
+new version of its benchmark suite** shortly after this episode — so the headline
+55 is not a stable reference point.
+
+**Astroturfed launch.** Moonshot ran an unusually large social campaign for an
+open-weights lab; one person posted a screenshot of Moonshot's press instructions
+saying *"Don't say this is a paid promotion."* No one has corroborated the
+screenshot. Lambert: *"Essentially, one person tweeted a screenshot… and to my
+knowledge, no one has corroborated it after that. … No company should do it."*
+Brand places this in a broader trend — "a few of these model launches, including
+by American companies, that are just very obviously astroturfed," some disclosing
+paid placement, some not, typically with thousands of retweets against a few
+hundred likes. Relatedly: model launches have "professionalized" fast — day-0
+inference-framework and provider support is now table stakes, and **an API-only
+exclusive window before the weights land** (here ~2 weeks) is increasingly common.
+
+**Serving economics of 3T.** The practical objection to a 3T open model is
+deployment footprint, not capability: Brand says it **requires B300s at one node
+per model replica**, whereas smaller models fit on the far more widely available
+H100/H200 nodes. Splitting across nodes is "always awkward," and against
+DeepSeek-V4.1-Flash-1017 — "not that far behind on these scores," much faster, and
+possibly not much cheaper per task once tokens are counted — a big, slow open
+model must justify itself on blurry/exploratory work rather than grindy coding.
+Lambert reads the `K3` → `K3.1 Pro` rename as Moonshot **gearing up for a
+Flash-style tiered release**, and notes the naming/campaign shift is itself the
+signal that Moonshot now behaves like a professional frontier lab.
+
+**Deliberate cyber-capability suppression (novel for the open-weight space).**
+Moonshot's blog states its open-weight release policy directly: *"These
+evaluations frame our open-weight release decision. First, we aim not to release
+open weights that would extend the absolute frontier of cyber capability. K3.1
+Pro's offensive cyber capability is, by design, below what our pipeline can
+produce, and remains behind that of frontier proprietary models."* Per the
+episode, Moonshot **down-weighted cyber content during mid-training** and observed
+the suppression persist through post-training — a capability-subtraction result,
+not just a refusal-tuning result. Brand (drawing on cybersecurity practitioners)
+supports the split: defensive work (broad bug-finding, patching) benefits from
+universal access, while real intrusion requires long-horizon persistence where
+closed models — GPT-5.6 Sol is the one named — are "way, way better than open
+models." He calls the positioning *"a smart move"* against the "Mythos-level open
+model ends the world" narrative, and notes open models get far more scrutiny than
+closed ones on this axis. See [[concepts/open-weight-ai-regulation]],
+[[concepts/security-and-governance/open-model-safety]].
+
+**Sources**: [[raw/newsletters/2026-10-25-interconnects-podcast-kimi-k3-1-pro-new-cyber-reality-muse-musings.md|Interconnects podcast #20]] (Oct 25, 2026); [Kimi K3.1 Pro blog](https://www.kimi.ai/blog/kimi-k3-1-pro); [AA launch benchmarks](https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks); [Terminal-Bench Science leaderboard](https://www.tbench.ai/leaderboard/terminal-bench-science); [ProgramBench](https://programbench.com/)
 
 ## Related Pages
 

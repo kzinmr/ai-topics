@@ -44,7 +44,7 @@ Ethan Mollick graphed the frontier curve from AA-Briefcase scores and reported:
 A fifth demonstrative scenario is available on HuggingFace as `ArtificialAnalysis/AA-Briefcase-Lite`, illustrating structure, submission format, and grading without counting toward official results.
 
 ## Related
-- [[concepts/agent-evaluation]] — Agent evaluation methodologies
+- [[concepts/evaluation]] — Agent evaluation methodologies
 - [[concepts/evals]] — AI model evaluation
 - [[concepts/benchmark]] — Benchmarking in AI
 - [[entities/artificial-analysis]] — Artificial Analysis platform

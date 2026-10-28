@@ -158,7 +158,7 @@ The threshold τ is a tunable hyperparameter controlling the precision-recall tr
 - [[concepts/query-understanding]] — Query understanding stack (Tunkelang)
 - [[concepts/bm25]] — The classic lexical retrieval function
 - [[concepts/lexical-search]] — Bag-of-words retrieval approaches
-- [[concepts/rag]] — Retrieval-Augmented Generation
+- [[concepts/retrieval-augmented-generation]] — Retrieval-Augmented Generation
 - [[concepts/pseudo-relevance-feedback]] — Traditional query refinement
 - [[concepts/harness-engineering/agentic-design-patterns]] — Multi-round agentic search patterns (ReAct, IRCoT)
 - [[entities/daniel-tunkelang]] — Bag-of-documents model, query understanding

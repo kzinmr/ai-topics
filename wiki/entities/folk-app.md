@@ -106,6 +106,6 @@ The product emphasizes "it lives in your texts" as the key UX insight — meetin
 ## See Also
 
 - [[concepts/personal-ai]] — Personal AI assistants
-- [[concepts/agent-memory]] — Persistent memory in AI agents
+- [[concepts/context-engineering]] — Persistent memory in AI agents
 - [[concepts/ai-agents]] — AI agent systems
 - [[concepts/memory-systems]] — Memory architectures for AI

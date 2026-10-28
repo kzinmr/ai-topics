@@ -219,7 +219,7 @@ This course embodies the [[concepts/post-training/rl-harness-lifecycle]] thesis:
 ### Connection to the Broader Ecosystem
 - [[concepts/agentic-search]] — Search-as-agent paradigm (related course: [Cheat at Search](https://maven.com/softwaredoug/cheatatsearch))
 - [[concepts/post-training/grpo-rl-training]] — The specific RL algorithm taught in this course
-- [[concepts/agent-evaluation]] — Evaluation methodology for RL reward signals
+- [[concepts/evaluation]] — Evaluation methodology for RL reward signals
 - [[concepts/context-engineering|Context Engineering]] — Agent context design patterns (MCP, tool schemas)
 
 ## Key Concepts Covered

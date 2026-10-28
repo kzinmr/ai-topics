@@ -115,4 +115,4 @@ Uses the same GRPO algorithm that powers [[DeepSeek-R1]]'s reasoning capabilitie
 - [[concepts/bfcl-v3]] — Berkeley Function Calling Leaderboard (BFCL) benchmark
 - [[concepts/deepseek-r1]] — DeepSeek-R1 reasoning model (uses GRPO for reasoning)
 - [[entities/bespoke-labs]] — Bespoke Labs, the research lab behind this work
-- [[concepts/agent-evaluation]] — Agent evaluation methodologies
+- [[concepts/evaluation]] — Agent evaluation methodologies

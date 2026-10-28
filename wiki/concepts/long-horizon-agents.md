@@ -191,7 +191,7 @@ Hour-scale, ground-truth-labeled evaluation of multi-day knowledge work is now m
 - [[concepts/decentralized-agent-orchestration]] — Long-horizon markets as an orchestration substrate
 - [[concepts/evaluation/reward-hacking]] — Long-horizon misalignment as the sibling of reward hacking
 - [[concepts/service-as-software]] — The business model thesis enabled by long-horizon agents
-- [[concepts/agent-memory]] — Memory systems that enable context persistence
+- [[concepts/context-engineering]] — Memory systems that enable context persistence
 - [[concepts/ambient-agents]] — Always-on agents that share proactive characteristics
 - [[entities/sierra]] — First commercial long-horizon agent platform (Horizon)
 - [[entities/bret-taylor]] — Key theorist and builder of long-horizon agent systems

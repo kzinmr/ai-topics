@@ -2,9 +2,10 @@
 title: "Alex Banks"
 tags: [person]
 created: 2026-04-24
-updated: 2026-07-11
+updated: 2026-10-26
 type: entity
 sources:
+  - raw/newsletters/2026-10-25-the-signal-old-holes-new-helpers-and-ai-in-a-box.md
   - raw/newsletters/2026-06-26-you-re-underestimating-ai-on-purpose.md
   - raw/newsletters/2026-07-10-ai-is-quietly-thinking-for-us.md
 ---
@@ -133,6 +134,35 @@ Despite working in AI, Banks consistently returns to the human element:
 | **GrowHub** | AI-powered LinkedIn growth platform for professionals | Jan 2025 |
 | **Tribescaler** | AI-powered writing assistant for social media | 2022–2023 |
 | **DataCamp Course** | Understanding Prompt Engineering | Aug 2023 |
+
+## The Signal — Oct 25, 2026 issue: "Old Holes, New Helpers, and AI in a Box"
+
+A strong example of Banks's house style: every curated item carries an **"Alex's take"**
+that adds a first-hand or contrarian angle rather than a summary. Notable in this issue
+([[raw/newsletters/2026-10-25-the-signal-old-holes-new-helpers-and-ai-in-a-box.md|raw]]):
+
+- **PHP2Shell timeline critique** — reconstructs the discovery→exploit→patch calendar
+  (found Aug 1, working attack Aug 11, patch Oct 21) and rejects OpenAI's "Defender's
+  Window" framing as *"a lucky head start that only counts if you use it"*; flags that a
+  third of PHP sites run unpatchable PHP 5/7. See [[events/php2shell-php-rce-2026]].
+- **DSX POD from the room** — attended the Nebius event at GTC Berlin in person and
+  extracts the load-bearing caveat behind NVIDIA's 14-day container deployment claim:
+  the clock only starts at a *prepared site*, so *"nobody can ship [power] in a box yet."*
+  See [[concepts/nvidia-vera-rubin]].
+- **Demand metrics** — Gavin Baker's 10%-vs-1% payroll-share and <10M heavy-AI-user
+  figures, which Banks promotes into the issue's central economic argument. See
+  [[concepts/ai-native-demand-indicators]].
+- **Recurring editorial position: US-first AI launches.** Banks returns repeatedly to
+  regional gating as a structural blind spot for reviewers — **Claude Duet** is US-only
+  and **Meta's Muse** is US/Canada-only, so he "can't try it from the UK… reading other
+  people's reviews instead of forming our own view." Useful signal for wiki coverage:
+  flagship-agent evaluations in this period are US-sampled by default. He discloses his
+  own stack (Claude Max 20×, Hark for admin work) while arguing spend should be matched
+  to how much of *your* work AI can absorb.
+- **Public Benefit Fund** — covers Anthropic's 5% share commitment (~$48B at the last
+  round, his estimate) against Musk's "shares directly to every kid" counter-proposal
+  and Norway's oil-fund model; Banks argues explicitly for direct ownership over
+  fund-managed distribution.
 
 ## Related
 

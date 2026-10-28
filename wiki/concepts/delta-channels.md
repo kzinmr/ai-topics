@@ -54,5 +54,5 @@ This is part of LangChain's broader push toward **long-running, production-grade
 - [[entities/langchain|LangChain]] — the framework behind DeltaChannel
 - [[entities/sydney-runkle|Sydney Runkle]] — authored the DeltaChannel runtime work
 - [[concepts/deep-agents|Deep Agents]] — LangChain's agent framework using DeltaChannel
-- [[concepts/agent-memory|Agent Memory]] — broader context for state management in agents
+- [[wiki/concepts/context-engineering/_index.md|Agent Memory]] — broader context for state management in agents
 - [[concepts/durable-execution|Durable Execution]] — related pattern for long-running agent reliability

@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA Vera Rubin Platform"
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-10-26
 type: concept
 tags:
   - nvidia
@@ -11,6 +11,7 @@ tags:
   - networking
   - architecture
 sources:
+  - raw/newsletters/2026-10-25-the-signal-old-holes-new-helpers-and-ai-in-a-box.md
   - raw/articles/2026-01-05_nvidia_vera-rubin-platform.md
   - raw/articles/2026-05-14_kzinmr_nvidia-rubin-comprehensive-report.md
 ---
@@ -229,6 +230,31 @@ The platform exposes the rack as a single 72-GPU NVLink domain — developers pr
 - **Rack-level power smoothing** with ~6× more local energy buffering than Blackwell Ultra
 - **DSX Flex/Boost**: Software-defined power control enabling up to **30% more GPU capacity** within the same power envelope
 - **Grid-to-token optimization**: ~30% of grid power is lost to conversion, distribution, and cooling — Vera Rubin minimizes this "parasitic energy"
+
+### DSX POD — AI Factories in a Shipping Container (GTC Berlin, Oct 21, 2026)
+
+At GTC Berlin, NVIDIA introduced the **DSX POD** platform: Vera Rubin AI factories
+**pre-built and tested inside shipping containers** rather than assembled on site.
+
+| Metric | NVIDIA claim |
+|--------|--------------|
+| Deployment time at a prepared site | **as little as 14 days** (vs ~6 months today) |
+| First deliveries | early 2027 |
+| What moves off the critical path | mechanical/electrical build-out, integration and burn-in — done in a factory before shipping |
+
+The qualifier is the whole story, as Alex Banks (The Signal, who attended the Nebius
+event in Berlin) puts it: *the clock only starts at a "prepared site" with the power
+and cooling already in place*. **That fixes one bottleneck, but in Europe the other
+one is getting power to the site — "and nobody can ship that in a box yet."** Container
+delivery therefore compresses the *construction* phase of the AI-factory timeline
+without touching the *interconnection* phase, which is where European deployment is
+currently rate-limited. See [[concepts/ai-energy]] and [[concepts/sovereign-ai]].
+
+Companion announcements the same day: **OpenShell**, a reference architecture that
+gives agents minimum rights plus hardware-level monitoring (Anthropic and Nebius are
+among the partners) — see [[concepts/nvidia-openshell]] — and Nebius publishing live
+GPU **spot prices** plus a **$3.5B Citi loan facility** for data-centre build-out
+([[concepts/gpu-cloud-rankings]]).
 
 ### Physical Infrastructure Impact: The Forced Cooling Transition
 

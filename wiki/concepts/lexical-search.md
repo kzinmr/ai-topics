@@ -184,4 +184,4 @@ Doug Turnbull argues that with the rise of AI agents, lexical search gains new i
 - [[entities/embeddings]] — Semantic alternative to lexical matching
 - [[entities/doug-turnbull]] — Leading voice in agentic search
 - [[entities/daniel-tunkelang]] — Search relevance pioneer
-- [[concepts/rag]] — Retrieval-Augmented Generation
+- [[concepts/retrieval-augmented-generation]] — Retrieval-Augmented Generation

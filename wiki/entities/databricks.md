@@ -198,4 +198,4 @@ Databricks envisions a future where an agent's identity is defined by its **memo
 - [[concepts/ai-agent-memory-middleware]] — Storage infrastructure for agentic AI (references Databricks' memory scaling work)
 - [[entities/supermemory]] — Supermemory Filesystem (SMFS), an adjacent approach to agent memory
 - [[concepts/claude/perfect-memory]] — Claude Code's memory architecture
-- [[concepts/agent-memory]] — Redirect page consolidating to [[concepts/ai-agent-memory]]
+- [[concepts/context-engineering]] — Redirect page consolidating to [[concepts/ai-agent-memory]]

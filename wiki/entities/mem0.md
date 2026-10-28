@@ -24,7 +24,7 @@ related:
   - "[[entities/hermes-agent]]"
   - "[[entities/openclaw]]"
   - "[[concepts/ai-agent-memory-middleware]]"
-  - "[[concepts/agent-memory]]"
+  - "[[concepts/context-engineering]]"
   - "[[concepts/agent-wikis]]"
 ---
 
@@ -93,7 +93,7 @@ The central trade-off: **cache stability vs. immediate visibility**. Hermes free
 ## Related Concepts
 
 - [[concepts/ai-agent-memory-middleware]] — Storage infrastructure layers (L0-L3)
-- [[concepts/agent-memory]] — Agent memory design patterns
+- [[concepts/context-engineering]] — Agent memory design patterns
 - [[concepts/harness-engineering]] — The harness layer where Mem0 plugs in
 - [[concepts/context-engineering|Context Engineering]] — Context management philosophy
 - [[concepts/cache-stable-vs-live-search-memory]] — Cache-stable vs live-search memory (Mem0's analysis of OpenClaw + Hermes, both Mem0-plugin users)

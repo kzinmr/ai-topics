@@ -104,7 +104,7 @@ prime-agent --autonomous --autonomous-gate "..." --autonomous-max-turns N
 - **arXiv**: [arxiv.org/abs/2607.20064v2](https://arxiv.org/abs/2607.20064v2)
 - **Install**: `curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh | sh`
 
-See also: [[concepts/prime-agent]], [[concepts/agentic-rl]], [[concepts/agent-evaluation]]
+See also: [[concepts/prime-agent]], [[concepts/agentic-rl]], [[concepts/evaluation]]
 
 ### verifiers v1 (July 2026)
 
@@ -118,7 +118,7 @@ Released July 12, 2026, **verifiers v1** is a major overhaul of the environment 
 
 This decomposition enables **harness-agnostic task definitions** — the same taskset can run in any harness (Codex, Claude Code, custom), and the same harness can run any taskset. Designed for complex agentic tasks including coding and computer use at scale.
 
-See: [[concepts/agentic-rl]], [[concepts/agent-evaluation]], [[verifiers-rl]]
+See: [[concepts/agentic-rl]], [[concepts/evaluation]], [[verifiers-rl]]
 
 ### Models
 - **INTELLECT-1**: 10B parameter model trained with distributed hardware (late 2024)

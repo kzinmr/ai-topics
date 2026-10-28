@@ -173,7 +173,7 @@ RAG extends embedding-based retrieval with two critical steps:
 
 Key challenge: the **relevance trap** — a chunk may have high cosine similarity yet be unhelpful in the generated context.
 
-See [[concepts/rag]], [[entities/embeddings]].
+See [[concepts/retrieval-augmented-generation]], [[entities/embeddings]].
 
 ## SIRA: LLM-Guided Lexical Retrieval
 
@@ -230,6 +230,6 @@ SIRA achieves SoTA on 10 BEIR benchmarks, outperforming all baselines including 
 - [[concepts/vector-search]] — ANN algorithms, HNSW, FAISS
 - [[entities/embeddings]] — Dense vector representations for semantic search
 - [[concepts/bm25]] — The classic lexical retrieval baseline
-- [[concepts/rag]] — Retrieval-Augmented Generation
+- [[concepts/retrieval-augmented-generation]] — Retrieval-Augmented Generation
 - [[concepts/pseudo-relevance-feedback]] — Traditional query refinement via top-K results
 - [[concepts/evaluation/judgment-list]] — Search relevance evaluation methodology

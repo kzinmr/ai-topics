@@ -60,7 +60,7 @@ Ramp's approach exemplifies a growing pattern in enterprise AI deployment:
 
 ## Related Concepts
 
-- [[concepts/agent-evaluation]] — General agent evaluation methodologies
+- [[concepts/evaluation]] — General agent evaluation methodologies
 - [[concepts/evaluation/eval-loops]] — Evaluation loop patterns for agents
 - [[concepts/benchmark-framing]] — How benchmarks shape AI development
 - [[concepts/memory-systems]] — Agent memory architecture

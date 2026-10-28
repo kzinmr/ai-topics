@@ -8,7 +8,7 @@ tags: [memory-systems, coding-agents, context-engineering, claude-code]
 sources:
   - "[[raw/articles/2025-12-01_rlancemartin_claude-diary]]"
 related:
-  - "[[concepts/agent-memory]]"
+  - "[[concepts/context-engineering]]"
   - "[[concepts/continual-learning]]"
   - "[[concepts/context-engineering|Context Engineering]]"
   - "[[entities/rlancemartin-github-io]]"

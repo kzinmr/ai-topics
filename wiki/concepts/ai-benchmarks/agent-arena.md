@@ -122,7 +122,7 @@ This analysis reveals that cheaper on-paper models can be more expensive in prac
 
 ## Related Pages
 
-- [[concepts/agent-evaluation]] — Agent evaluation landscape
+- [[concepts/evaluation]] — Agent evaluation landscape
 - [[concepts/agent-benchmarking]] — Agent benchmarking approaches
 - [[entities/arena-ai]] — Arena AI entity
 - [[concepts/causal-inference]] — Causal inference in ML
