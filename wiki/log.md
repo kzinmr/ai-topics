@@ -1,3 +1,12 @@
+## [2026-10-28] wiki-health-fix | Index clean; 3 orphan stubs verified intentional
+
+### Changes
+- wiki_health digest clean: index.md 0 pipe/line-number/triple-bracket/space-prefix corruption; validate_index.py pass (3360 lines)
+- Verified 3 reported orphans (`eugeneyan`, `giles-thomas`, `lilianweng`) are 11-byte redirect stubs created by watchdog dedup fa32e7a4; canonical pages (eugene-yan/gilesthomas/lilian-weng) indexed; 0 incoming wikilinks → false positives, no action
+- No auto-fixes required; uncommitted work is sibling-pipeline WIP (skills, newsletter raws, new concept page)
+
+---
+
 ## [2026-10-28 17:40 UTC] watchdog | auto-fix — 36 broken wikilink refs resolved (rag / agent-evaluation / agent-memory)
 
 - **Pipeline alerts**: blog chain `ingest_ok_but_triage_failed`, newsletter chain `triage_ok_but_wiki_ingest_failed` — transient (same-day triage commits landed at 10:10 UTC; reports 5.6 h old). No action.
