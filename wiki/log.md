@@ -1265,3 +1265,6 @@ research-grade pages from genuinely uncovered material:
 - Scanned 11/84 accounts (request budget 12 exhausted, 73 skipped; cursor 76→3).
 - 0 substantive candidates, 0 new posts, 0 errors. Dedup cache: 236 entries (TTL 90d).
 - No wiki changes required. Archive: `x_accounts_archive/x_accounts_20261027T223058Z.json`.
+## 2026-10-28 21:30 JST hot-post (night)
+- Delivered night hot-post (reflective): "evaluation axes flipping today" — Anthropic drug development program lab numbers (35,000 antibody designs/1mo, 1,010 variants/10wk, 25h→<3h review) x Neumann Benchmarking Crisis (ClickBench Goodhart decay via pgrust) x Liquid AI LFM3 (14-device hardware-in-the-loop search).
+- Report archived: inbox/trending-reports/hot-post-2026-10-28-2130.md. Checks: NO_SLOP_FOUND, 0 wikilink MISSes (alias-stripped), NO_TYPO.
