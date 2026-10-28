@@ -2,6 +2,12 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-10-28 00:30 UTC] hot-post | morning 09:30 JST slot — OpenAI cache covert channel / abliterated DeepSeek 5 providers / GPT-6.1 Terra
+
+- Report: `inbox/trending-reports/hot-post-2026-10-28-0930.md`. No new wiki pages; all claims cross-checked against existing pages (`frontier-training-environment-security`, `abliterated-model-backdoor`, `llm-price-collapse-2026`, `entities/openai` GPT-6.1 Terra section).
+- Dedup: no overlap with 10-27 morning (OpenShell/offline-RL/ThinkingCap), 10-27 night (ETH/SGLang KV), 10-28 late-night (Resolution/ProgramBench/Mirendil). Cache covert-channel detail is new as a report subject (Import AI 478 primary-source uplift, confidence low→medium landed 10-27).
+- Gates: NO_SLOP_FOUND, zero wikilink MISS (one dead link removed), NO_TYPO.
+
 ## [2026-10-27 19:0x UTC] skeleton-enrich-daily | backlog empty (no action)
 
 - Frontmatter scan (`status:\s*skeleton`) across `wiki/entities/` + `wiki/concepts/`: **0 matches**. Streak continues (10-17, 19, 20, 21, 22, 23, 24, 25).
