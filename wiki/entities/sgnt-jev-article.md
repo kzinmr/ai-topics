@@ -2,7 +2,7 @@
 title: "SGNT — You Could Have Built Jev"
 type: entity
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-10-28
 tags: [ai-company, small-models, sgnl, jev, sgnt, llm-internals, first-principles, model-optimization, inference-speed, tokenization]
 sources:
   - https://sgnt.ai/p/jev/
@@ -35,3 +35,27 @@ The article was personally endorsed by **Drew Breunig** (["No, but this is good"
 - [[entities/typesafe-ai|TypeSafe AI]] — the lab that originally launched Jev as a System One model
 - [[entities/anthropic|Anthropic]] / [[entities/deepseek|DeepSeek]] — source of many borrowed techniques
 - [[concepts/harness-engineering/agent-harness|Agent Harnesses]] — the deployment context where cheap fast models matter
+
+## Competing approaches (2026-10-27)
+
+**Voyage AI** published *"How to create your own JEV using Voyage models"* (blog.voyageai.com, Oct 27,
+2026), an embedding-based challenger to Jev's direct-labeling approach on **personalized prediction over
+MongoDB collections** (imputation / classification / regression on a partially-populated field, e.g.
+predicting a movie's IMDb rating or a ticket's priority).
+
+- **Method**: serialize each document to JSON (minus the target field) → embed the whole document with a
+  Voyage model → fit a standard estimator (XGBoost / ridge regression) on documents where the field is
+  set → predict the missing values. Free text, lists, and nested sub-docs are all used, unlike tabular
+  flattening. Because Jev labels documents **directly** (a System-One style model), it doesn't learn from
+  the already-labeled documents in the collection; the Voyage recipe explicitly fits on those.
+- **Headline results vs Jev**: across 50 real-world tasks, adding free/open-source Voyage embeddings cuts
+  errors **37%** (voyage-4-nano) to **44%** (voyage-json, an experimental JSON-post-trained model). On the
+  29 classification tasks, **voyage-json makes 48% fewer errors than TypeSafe AI's Jev** (88.3 vs 77.6
+  AUROC). voyage-4-nano runs locally (GPU optional) via sentence-transformers; the larger models are API.
+- **Caveat**: this is Voyage's own benchmark (their models, their framing) — treat the margin as
+  vendor-reported, not independent. It nonetheless signals an interesting axis: for structured-collection
+  prediction, *embedding + a classical head* is competitive with a purpose-built small System-One model.
+
+Source: raw/articles/2026-10-27_voyage-jev.md
+
+- [[entities/voyage-ai|Voyage AI]] — embedding provider behind the challenger recipe

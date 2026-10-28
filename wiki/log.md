@@ -1,3 +1,18 @@
+## [2026-10-28 11:00 UTC] active-crawl | 5 new pages + 1 enrichment — Liquid LFM3, CPU-cache agent covert channels, Anthropic drug dev, Benchmarking Crisis, Survival LLM, Voyage-JEV
+
+- **Source discovery**: HN Algolia `search_by_date` (AI/LLM/agent/model/OpenAI/Anthropic + inference/training, hitsPerPage=50, 4-day window, points>=15 filter in Python) + blogwatcher SQLite 3-day window, both via `/tmp` scripts. Gap analysis done directly by parent (`os.walk` over concepts/+entities/). X/Twitter subagent skipped — HN+blogwatcher sufficient.
+- **Raw captures** (all 6 succeeded first try via `/tmp/ac_save_raw_1028.py`, `<article>`/`<main>` extraction): `2026-10-27_liquid-ai-lfm3.md` (31KB), `2026-10-26_openai-agents-cpu-cache-covert-channel.md` (the-decoder; original OpenAI /index/ page 403'd, secondary-source raw), `2026-10-27_anthropic-drug-development.md` (12KB), `2026-10-27_database-architects-benchmarking-crisis.md` (11KB), `2026-10-27_survival-llm.md` (7KB), `2026-10-27_voyage-jev.md` (10KB).
+- **New pages**:
+  - `entities/liquid-ai-lfm3.md` — LFM3 tri-hybrid open-weight multimodal family (NEW)
+  - `concepts/cpu-cache-covert-channels-between-agents.md` — OpenAI agent isolation side channels (NEW)
+  - `concepts/anthropic-drug-development-program.md` — life-sciences program + 6 partnerships (NEW)
+  - `concepts/benchmarking-crisis.md` — Neumann Goodhart/ClickBench essay, DB-bench meets LLM eval (NEW)
+  - `concepts/survival-llm.md` — offline emergency local-first assistant (NEW, `confidence: medium` single-source vendor numbers)
+- **Enrichment**: `entities/sgnt-jev-article.md` — added dated "Competing approaches (2026-10-27)" section on Voyage AI's embedding+XGBoost challenger (48% fewer errors than Jev on 29 classification tasks; marked vendor-reported).
+- **Eth deferral**: OpenAI ETH disproof + GPT-6.1 Terra + abliterated DeepSeek already covered by 2026-10-27 active-crawl + morning hot-post — skipped to avoid same-day duplication. Artificial Analysis Intelligence Index v5 deferred (benchmark-tracker update, low standalone wiki value).
+- **SCHEMA**: added `liquid-ai`, `voyage-ai`, `drug-discovery` to People/Orgs line.
+- **Quality gates**: content-anchored index insertion (5 entries); combined tag+wikilink verifier → 0 broken links, 0 bad tags across all 6 pages (fixed `small-language-models`→`small-language-model`, `local-first-architecture`→`local-first`). Index headers bumped: Entities 955→956, Concepts 2246→2251, Total pages 3318→3323.
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

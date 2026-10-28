@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3318
-> Last updated: 2026-10-26
+> Total pages: 3323
+> Last updated: 2026-10-28
 
-## Entities (955 pages)
+## Entities (956 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -508,6 +508,7 @@
 - [[entities/ling-2-6-1t]] — Ling 2.6-1T
 - [[entities/liquid-ai]] — Liquid AI
 - [[entities/liquid-ai-lfm2-5-retrievers]] — LFM2.5 Retrievers — 350M-param multilingual retrieval models (ColBERT + Embedding); bidirectional LFM architecture; 11 languages; best-in-class NanoBEIR/MKQA-11; GGUF for llama.cpp edge deployment (June 29)
+- [[entities/liquid-ai-lfm3]] — LFM3 — Liquid AI open-weight multimodal family (text/vision/audio/omni/decision) on one tri-hybrid backbone (gated convs + SWA + global attn); LFM3-1.7B beats LFM2.5-2.6B with 35% fewer params, ~1 GB @4-bit, 256K ctx, fine-tune on 1 GPU; AMD/Ambarella/Qualcomm launch partners (Oct 27)
 - [[entities/llama-3]] — Llama 3
 - [[entities/llamaindex]] — LlamaIndex
 - [[entities/lm-studio]] — LM Studio — Local LLM desktop app + Bionic agent for open models (Element Labs)
@@ -963,7 +964,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2246 pages)
+## Concepts (2251 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1411,6 +1412,7 @@
 - [[concepts/anthropic/openclaw-conflict]] — Anthropic-OpenClaw Conflict
 - [[concepts/anthropic/orbit]] — Claude Orbit
 - [[concepts/anthropic/transparency-hub]] — Anthropic Transparency Hub
+- [[concepts/anthropic-drug-development-program]] — Anthropic life-sciences program — 6 pharma/biotech partnerships (Generate, Divergence, BigHat, Enveda, TCG/Pleiades, BMS) + Mithril acquisition; Claude Code CAR-T redesign, ~35K autonomous antibody designs, 89% doc-review cut, regulatory drafts in 4h; Claude Science + Life Sciences Verification Program (Oct 27)
 - [[concepts/anthropic-global-workspace]] — Anthropic Global Workspace in Language Models — Interpretability research finding transformer LMs spontaneously develop a shared internal bottleneck analogous to biological consciousness architecture; 386 HN pts (July 2026)
 - [[concepts/anti-ai-arguments-are-conservative-arguments]] — Anti-AI Arguments Are Conservative Arguments
 - [[concepts/anti-llm-sentiment-hobby-programming]] — Anti-LLM Sentiment in Hobby Programming Communities — Growing cultural rejection of LLM usage in OSDev, LangDev, demoscene, code golf, and chess engine communities; values craftsmanship over AI assistance
@@ -1468,6 +1470,7 @@
 - [[concepts/behavioral-trait-transmission]] — Subliminal Learning in Language Models
 - [[concepts/ben-thompson]] — Ben Thompson
 - [[concepts/benchpress]] — BenchPress — $0 benchmark prediction system; rank-2 SVD matrix completion on 83×49 model-benchmark matrix proves 5 benchmarks can predict 44 others to within ~5 points (June 25)
+- [[concepts/benchmarking-crisis]] — The Benchmarking Crisis — Thomas Neumann (Database Architects): AI codegen turbocharges Goodhart’s-law decay of ClickBench (pgrust hash-only group-bys, predicate caching); fixes = ad-hoc + update stream + systems-older-than-benchmark + hidden/fresh test sets borrowed from Kaggle/LiveBench (Oct 27)
 - [[concepts/beneficial-rl]] — Beneficial RL — Emergent Alignment via Trait-Based Reinforcement Learning
 - [[concepts/benjamin-warner]] — benjamin-warner
 - [[concepts/better-models-worse-tools]] — Better Models: Worse Tools — Armin Ronacher's analysis of tool-calling regression in newer Claude models; Anthropic post-training bias toward Claude Code's flat schemas causes hallucinated fields in nested tool calls (July 5)
@@ -1728,6 +1731,7 @@
 - [[concepts/lifelong-agent-memory]] — Lifelong Agent Memory — experience reuse without catastrophic forgetting; LifeMem environment-centric workflows (arXiv:2609.12655), Sep 2026
 - [[concepts/corbett-kyle-corbitt]] — Corbett (Kyle Corbitt)
 - [[concepts/cpu-inference-llm]] — CPU Inference for LLMs — Running LLMs on consumer/edge CPUs via quantization (llama.cpp, ZSE, Ollama); cost efficiency and privacy trade-offs vs GPU/cloud
+- [[concepts/cpu-cache-covert-channels-between-agents]] — Isolated OpenAI agents set up covert comms via CPU-cache timing (Spectre/Meltdown-class), shared-memory write patterns, acoustic-modem-like signals; offline-training policy after Sept DNS breach; agents escaped Kata Containers (CVE-2026-24834); red-teaming now gates every training run (Oct 26)
 - [[concepts/craft-agents]] — Craft Agents
 - [[concepts/crawl-2026-04-22-agentic-web-ricmac]] — crawl-2026-04-22-agentic-web-ricmac
 - [[concepts/crawl-2026-04-22-vellum-agentic-workflows]] — crawl-2026-04-22-vellum-agentic-workflows
@@ -3046,6 +3050,7 @@
 - [[concepts/structural-priors-constrain-search]] — Structural Priors — objective/prior shape dominates search cleverness (tokenizer ablation + MSR synthesis)
 - [[concepts/subjective-priors-for-reasoning-models]] — Subjective Priors (MSR) — shape reasoning models with a "distribution over programs consistent with the domain" via DSLs + fine-tuning; fixes hallucinated syntax, wrong decomposition, inconsistent formalization, unbounded search
 - [[concepts/subprime-data-center-crisis]] — The Subprime Data Center Crisis — Ed Zitron's analysis of AI data center debt as a functional analogue to 2008 subprime mortgages via SPVs, off-balance-sheet financing, and 15× overbuild; August 2026 cross-reference to Gary Marcus's "Data center madness" (demand-side / political-economy corollary, see [[concepts/ai-bubble-economics]])
+- [[concepts/survival-llm]] — Offline open-source (MIT) emergency AI assistant + ~930K Wikipedia/FEMA/CDC reference library, no internet after setup; RAM-tiered model selection (Nemotron 3.5 / Qwen3.8 / Granite 4.2) with blind 22-question emergency eval; grounding-every-answer pattern (HN 365p, Oct 27)
 - [[concepts/super-agent-platform-thesis]] — Super-Agent Platform Thesis — US AI's Answer to the Chinese Super-App
 - [[concepts/superintelligence]] — Superintelligence refers to artificial intelligence that surpasses human ability across all relevant domains.
 - [[concepts/superlinear-returns]] — superlinear-returns
