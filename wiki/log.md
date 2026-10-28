@@ -1286,3 +1286,4 @@ research-grade pages from genuinely uncovered material:
 ## 2026-10-28 21:30 JST hot-post (night)
 - Delivered night hot-post (reflective): "evaluation axes flipping today" — Anthropic drug development program lab numbers (35,000 antibody designs/1mo, 1,010 variants/10wk, 25h→<3h review) x Neumann Benchmarking Crisis (ClickBench Goodhart decay via pgrust) x Liquid AI LFM3 (14-device hardware-in-the-loop search).
 - Report archived: inbox/trending-reports/hot-post-2026-10-28-2130.md. Checks: NO_SLOP_FOUND, 0 wikilink MISSes (alias-stripped), NO_TYPO.
+- 2026-10-29 03:35 JST — hot-post (late-night 01:30 slot): agentic-retrieval / Hornet agent-query serving economics (8.4x QPS swing). Archived to inbox/trending-reports/hot-post-2026-10-29-0130.md
