@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-10-28T10:41:21.168840+00:00",
+  "triage_run_id": "20261028T101048Z",
+  "source": "newsletter",
+  "summary_ja": "2026-10-27着ニュースレター3誌（Superintelligence×2 [uid=846/848, Kim 'Chubby' Isenberg], Ben's Bites×1）をtriage。beehiiv v2/c/ トレースリンクは全数Cloudflare challengeでブロックされたが、canonical getsuperintel.site 直スラッグで両号の全文（isAccessibleForFree=true, 各54段落）をrecoverした。Take 7件: (1) AxiomのCFSG完全Lean検証（15,000ページ→4,310万行・24日・34逸脱）はwiki全体で真のギャップ、(2) Kimi K3.1 Pro astroturfing疑惑の一次資料補強、(3) Meta 950億ドル株式調達+チップメーカーcornerstone出資、(4) DeepMind Genie 4、(5) Nanbeige4.3-33B、(6) 1Password for Agents、(7) Browserbase BELL。Reference 3件（米銀のrogue agent検知、OpenAI ETH/Terra/S-1は既存詳細収録、Ben's Bitesはリンクダイジェスト）。Eth/S-1/Terra系は既存ページが一次情報を収録済みで重複スキップ。",
+  "decisions": [
+    {
+      "item_id": "r-superintel-kimi-digest",
+      "source": "newsletter",
+      "source_name": "Superintelligence (getsuperintel.site, uid=846)",
+      "title": "Superintelligence daily: Samsung TV ad telemetry / banks vs rogue AI agents / Anthropic S-1 preview",
+      "url": "https://getsuperintel.site/p/was-kimi-s-hype-secretly-paid-for",
+      "raw_path": "wiki/raw/newsletters/2026-10-27-was-kimi-s-hype-secretly-paid-for.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 同メールの残り3記事は既存カバレッジ十分でreference扱い。(1) Samsung TV音声/スクショ収集疑惑（log4j氏, Tizen）はプライバシー一般話題でAI agent文脈が薄く wiki適合低い。 (2) 米銀が顧客口座内で暴走するサードパーティAIエージェントを検知（Axios, Morgan Stanley遮断・JPM/BofA/Citi対応）は concepts/security-and-governance/agent-governance.md の good 引用候補。 (3) Anthropic S-1先行解説（H1売上163億ドル・純損失807億ドル・クラウド契約4,500億ドル=Google Cloud 1,110億+AWS 1,100億+Microsoft 310億・共同創業者7人に議決権50.1%）は entities/anthropic.md のPublic S-1セクションが2026-10-26付でほぼ同数の一次情報を収録済みで重複。",
+      "candidate_wiki_path": "concepts/security-and-governance/agent-governance.md",
+      "body_excerpt": "# Newsletter Digest - 2026-10-27\n**Subject:** 🎭 Was Kimi's Hype Secretly Paid For?\n**Collected:** 2026-10-28T10:10:44.960917+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/e8e6288d65fe4649bde81b22175fba2cf8c140b5e8c44c892d3ae936ca9a35b0ff5615a0c1c508abc1d6bb02"
+    },
+    {
+      "item_id": "r-axiom-digest",
+      "source": "newsletter",
+      "source_name": "Superintelligence (getsuperintel.site, uid=848)",
+      "title": "Superintelligence daily: OpenAI ETH/Kakeya/Yang-Mills claims, GPT-6.1 Terra, Anthropic S-1, Ken Ono EO",
+      "url": "https://getsuperintel.site/p/axiom-and-openai-math-breakthroughs-go-daily",
+      "raw_path": "wiki/raw/newsletters/2026-10-27-axiom-and-openai-math-breakthroughs-go-daily.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ メイン記事（Axiom CFSG）は take として別途計上。残りは既存カバレッジ十分: OpenAIのETH反証/local smoothing（Kakeya・Sterestriction含む）/Yang-Mills存在証明は concepts/openai-eth-refutation-verification-crisis.md と entities/openai.md 2026-10-25エントリがshepherd体制含め詳細収録済み（Anthropic側Levent Alpögeの同時独立反証「14M出力トークン・人手入力ゼロで10/16に発見」のみ追記価値）。GPT-6.1 Terraは entities/openai.md のGPT-6.1 Terraセクションが価格・位置づけ含め収録済み。Anthropic S-1は entities/anthropic.md が public S-1 を収録済み。Ken Ono（Axiom founding mathematician）EOインタビュー「知識は安くなり、その使い方と検証が高騰」は entities/axiom-math.md 追記候補。",
+      "candidate_wiki_path": "concepts/openai-eth-refutation-verification-crisis.md",
+      "body_excerpt": "# Newsletter Digest - 2026-10-27\n**Subject:** 🧮 Axiom and OpenAI: Math Breakthroughs Go Daily\n**Collected:** 2026-10-28T10:10:47.144378+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/3cdeebdf5815adc2155ea47c27b465e5890ed99a5cd9335fa701d6eb0d98ed221d7eb9e3ca946"
+    },
+    {
+      "item_id": "r-bensbites",
+      "source": "newsletter",
+      "source_name": "Ben's Bites (bensbites.com)",
+      "title": "Ben's Bites #Anthropic-best-business: GPT-6.1 Terra, Kimi K3.1 Pro, Dessa, Hallmark, Reduck, Coworkers, Thorsten Ball workflow",
+      "url": "https://www.bensbites.com/p/is-anthropic-the-best-business-in",
+      "raw_path": "wiki/raw/newsletters/2026-10-27-is-anthropic-the-best-business-in-the-world.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ 本文18段落のリンクダイジェスト。目玉は「Anthropic IPO filing のビジュアル分解」だが本文外（sessions.bensbites.com の別ポスト）。各リンクは既存カバレッジ済み: GPT-6.1 Terra(entities/openai.md)、Kimi K3.1 Pro(concepts/kimi-k3.md)、Dessa(concepts/dessa-speech-only-model.md)、Muse。新規候補のHallmark（nutlope製agent用デザインskill「AI-generatedに見えることを拒否」）、Reduck（エージェント向け高速webアクセス）は紹介1文のみで本文なし（body-reading mandate的にtake不可）、pwn.watch/Teardown/Charming/Stackletは非AIまたは周辺。Anthropic事業評価そのものはBenの動画形式でテキスト本文なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-27\n**Subject:** Is Anthropic the best business in the world?\n**Collected:** 2026-10-28T10:10:45.950219+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1"
+    },
+    {
+      "item_id": "s-kimi-links",
+      "source": "newsletter",
+      "source_name": "Superintelligence (getsuperintel.site, uid=846)",
+      "title": "Kimi newsletter links 2-20 (beehiiv tracking duplicates)",
+      "url": "https://link.mail.beehiiv.com/... (19 tracking URLs)",
+      "raw_path": "wiki/raw/newsletters/2026-10-27-was-kimi-s-hype-secretly-paid-for.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ beehiiv v2/c/ トレースリンク19本はサンプルしたL2-L5全てCloudflare「Just a moment...」でブロック（title=Just a moment, 7KB固定長, リトライ不可パターン）。同pubは canonical getsuperintel.site 直スラッグで本文取得可能なため、本文（54段落）は既読・主要2スレッド（K3.1 Pro astroturfing / daily digest）は上記 take/reference に計上済み。残リンクは同一記事内のアンカー/広告（Wispr Flow, goldcast）/SNSへの重複と推定され、個別解決の価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-27\n**Subject:** 🎭 Was Kimi's Hype Secretly Paid For?\n**Collected:** 2026-10-28T10:10:44.960917+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/e8e6288d65fe4649bde81b22175fba2cf8c140b5e8c44c892d3ae936ca9a35b0ff5615a0c1c508abc1d6bb02"
+    },
+    {
+      "item_id": "s-bensbites-links",
+      "source": "newsletter",
+      "source_name": "Ben's Bites (bensbites.com)",
+      "title": "Ben's Bites links 1-7, 8-20 (Substack chrome + UUID redirects)",
+      "url": "https://substack.com/redirect/... / app-link",
+      "raw_path": "wiki/raw/newsletters/2026-10-27-is-anthropic-the-best-business-in-the-world.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack UI chrome（app-link/share/like/comment/restack/app-store）と substack.com/redirect/UUID（メールセッション認証必須、解決不能）の計18本。実際のキュレーションリンクは canonical bensbites.com ページ本文（210KB取得済み・18段落）に全て含まれ、その評価は上記 reference/take で完了。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-27\n**Subject:** Is Anthropic the best business in the world?\n**Collected:** 2026-10-28T10:10:45.950219+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1"
+    }
+  ]
+}
