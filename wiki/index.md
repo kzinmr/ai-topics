@@ -1441,6 +1441,7 @@
 - [[concepts/audio-tokenizer-comparison]] — Audio Tokenizer Comparison — SoundStream / EnCodec / DAC / SpeechTokenizer / Mimi
 - [[concepts/aurora-optimizer]] — Aurora Optimizer
 - [[concepts/authors-guild-v-openai]] — Authors Guild v. OpenAI — unsealed Sept 2026 briefs alleging guilty knowledge of book piracy (Alter v. OpenAI/Microsoft, Manhattan MDL); Eoin Higgins analysis
+- [[concepts/cruz-v-anthropic]] — Cruz v. Anthropic — May 2026 opt-out suit (Wolff, Chang-rae Lee +8): $150k/work statutory damages vs $3k Bartz rate, LibGen/PiLiMi shadow-library claims, Stanford Daily Oct 27 ruling report; tests whether Bartz closed the liability tail (HN 529)
 - [[concepts/austral]] — Austral
 - [[concepts/auto-research]] — AutoResearch
 - [[concepts/autodata-agentic-data-creation]] — Autodata: Agentic Data Creation
@@ -2008,6 +2009,7 @@
 - [[concepts/generative-ui]] — Generative UI (Claude Visualizer)
 - [[concepts/generic-agent-self-evolving]] — GenericAgent: Token-Efficient Self-Evolving Agent
 - [[concepts/genie]] — genie
+- [[concepts/genie-4]] — Genie 4 (Google DeepMind) — Oct 27 2026 real-time interactive world model: native audio + interactive dialogue, Gemini 3.8 Flash as in-the-loop guiding agent, Gemini 4 Argon + Gemini Robotics sim, research preview via Project Genie; "hybrid world models" research direction (HN 920)
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution)
 - [[concepts/gguf]] — GGUF (redirect → local-llm/gguf)
 - [[concepts/gguf-quantization]] — GGUF Quantization (redirect → local-llm/gguf)

@@ -1,7 +1,7 @@
 ---
 title: "Anthropic $1.5B Copyright Settlement"
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-10-28
 type: concept
 tags:
   - anthropic
@@ -99,6 +99,11 @@ The Free Software Foundation issued a statement in March 2026 on the case's impl
 | May 2026 | Final approval delayed due to objector concerns |
 | Jul 20, 2026 | Judge Martinez-Olguin grants final approval |
 | Pending | 25 opt-out class members file separate lawsuit |
+
+
+## Post-settlement opt-out litigation — Cruz v. Anthropic (May 2026 → Oct 2026)
+
+Not all authors accepted the Bartz remedy. In May 2026, Tobias Wolff and Chang-rae Lee (both Stanford) opted out and filed the non-class action **Cruz v. Anthropic**, seeking up to **$150,000 statutory damages per work** (vs the ~$3,000/book Bartz rate) plus a permanent training injunction. The Stanford Daily (Oct 27, 2026; HN 529 pts) reported a federal ruling that Anthropic illegally scraped 10+ Stanford professors' books — shadow-library downloads (LibGen, PiLiMi) into a permanent central library, the practice Alsup blocked even while blessing training as fair use. Wolff (10 works used): the settlement "still gives Anthropic pretty free rein to roam through our literature." Authors Guild (Mary Rasenberger) is pursuing parallel suits (OpenAI/Microsoft) plus congressional licensing legislation. Details: [[concepts/cruz-v-anthropic]].
 
 ## Related Pages
 

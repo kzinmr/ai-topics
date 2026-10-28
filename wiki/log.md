@@ -1,3 +1,10 @@
+# Wiki Log
+
+## [2026-10-28 12:00 UTC] trending-topics | 2 new pages — Genie 4 world model, Cruz v. Anthropic opt-out litigation
+
+- **New**: `concepts/genie-4.md` (DeepMind Oct 27 real-time world model; native audio, Gemini 3.8 Flash guiding agent, hybrid world models; raw saved) + `concepts/cruz-v-anthropic.md` (post-Bartz opt-out suit, $150k/work, Stanford Daily report; raw saved). SCHEMA: +`cruz-v-anthropic`.
+- **Enriched**: `entities/deepmind.md` Genie 4 section; `concepts/anthropic-copyright-settlement.md` Cruz section.
+- **Dup check vs morning pipelines**: S-1, ETH refutation, GPT-6.1 Terra, abliterated DeepSeek, Survival LLM, price-collapse, Anthropic drug development, CNN-vs-LLM all covered 10-27/10-28 (active-crawl + hot-posts) — skipped. Hob (Show HN 170p), Is-my-data privacy page (219p, policy text only), IBM open-weight quote (entities/ibm.md exists) logged only. Report: `inbox/rss-scans/trending-topics-2026-10-28.md`.
 ## [2026-10-28 11:00 UTC] active-crawl | 5 new pages + 1 enrichment — Liquid LFM3, CPU-cache agent covert channels, Anthropic drug dev, Benchmarking Crisis, Survival LLM, Voyage-JEV
 
 - **Source discovery**: HN Algolia `search_by_date` (AI/LLM/agent/model/OpenAI/Anthropic + inference/training, hitsPerPage=50, 4-day window, points>=15 filter in Python) + blogwatcher SQLite 3-day window, both via `/tmp` scripts. Gap analysis done directly by parent (`os.walk` over concepts/+entities/). X/Twitter subagent skipped — HN+blogwatcher sufficient.
@@ -13,7 +20,6 @@
 - **SCHEMA**: added `liquid-ai`, `voyage-ai`, `drug-discovery` to People/Orgs line.
 - **Quality gates**: content-anchored index insertion (5 entries); combined tag+wikilink verifier → 0 broken links, 0 bad tags across all 6 pages (fixed `small-language-models`→`small-language-model`, `local-first-architecture`→`local-first`). Index headers bumped: Entities 955→956, Concepts 2246→2251, Total pages 3318→3323.
 
-# Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
 

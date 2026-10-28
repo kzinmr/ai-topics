@@ -1,7 +1,7 @@
 ---
 title: Google DeepMind
 created: 2026-05-15
-updated: 2026-08-07
+updated: 2026-10-28
 type: entity
 tags:
   - company
@@ -130,6 +130,10 @@ Google DeepMind open-sourced **WeatherNext 2** (published in *Nature*) with **co
 - **Significance**: a concrete demonstration of DeepMind's weather/AI-science lineage (continuing GraphCast/GenCast work) now shipping as open weights
 
 See also [[concepts/open-science]] and [[concepts/ai-mathematics-theorem-proving]] for adjacent AI-for-science themes. (Source: AINews via DeepMind blog, 2026-08-07)
+
+### Genie 4 — Real-Time Multimodal World Model (October 2026)
+
+DeepMind announced **Genie 4** (Oct 27, 2026), its fourth-generation world model: real-time interactive simulation with photorealism, physics/human-action realism, **native audio + interactive dialogue**, and natural-language steering. Architecture splits planner and renderer: **Gemini 3.8 Flash runs as an in-the-loop guiding agent** (goal decomposition, frame verification, re-planning), Gemini Omni grounds appearance/behavior; Gemini 4 Argon + Gemini Robotics experiments interleave task steps as captions (Apptronik Apollo checkers demo). Research preview via Project Genie (AI Ultra) and Gemini API/AI Studio early access. Stated research direction: **hybrid world models** (code/language reasoning + pixel-level simulation). See [[concepts/genie-4]]. (Source: DeepMind blog, HN 920 pts)
 
 ## Related Entities
 
