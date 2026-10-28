@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-10-28 10:01 UTC] blog-ingest | raw article save — 20 saved, 0 unsaved
+
+RSS scan found 36 new articles in blogwatcher DB; 20 fetched and saved to `wiki/raw/articles/` (run_id 20261028T100043Z). Checkpoint at `cron/data/blog_ingest/latest.json`.
+
+AI-relevant highlights for downstream blog-triage:
+- Voyage AI: "How to create your own Jev using Voyage models" — embeddings+XGBoost beats TypeSafe AI's Jev on 50 MongoDB prediction tasks (48% fewer errors, voyage-json experimental model)
+- WorkOS: auth.md — "Open Protocol for Agent Registration" (Markdown file at yourapp.com/auth.md telling agents how to register for a service; sponsored via Daring Fireball but substantively agent-auth relevant)
+- Apple: Creator Studio AI feature expansion + Siri AI language expansion (OS 27.2)
+- Tedium: "AI Startups Are Getting An Inch & Taking A Mile" — AI startup data-grab critique
+- Miguel Grinberg: full-time open source developer announcement
+- Off-domain (archive candidates): Simon Willison Game Boy badge, Jeff Geerling Noctua fan swap, John Cook ETH-refutation note, book review, IBM PC 5150, MTL circuit simulator, upvote dilemma, email hosting, Old New Thing taskbar priority, borretti.me essay
+
+No Layer-2 pages created/updated in this stage (blog-triage / blog-wiki-ingest's job).
+
 ## [2026-10-28 00:30 UTC] hot-post | morning 09:30 JST slot — OpenAI cache covert channel / abliterated DeepSeek 5 providers / GPT-6.1 Terra
 
 - Report: `inbox/trending-reports/hot-post-2026-10-28-0930.md`. No new wiki pages; all claims cross-checked against existing pages (`frontier-training-environment-security`, `abliterated-model-backdoor`, `llm-price-collapse-2026`, `entities/openai` GPT-6.1 Terra section).
