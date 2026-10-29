@@ -2,7 +2,7 @@
 title: "Gemini 4 Argon (release)"
 type: event
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-29
 tags:
   - announcement
   - google
@@ -13,10 +13,12 @@ tags:
   - gemini
 sources:
   - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon
+  - raw/articles/2026-10-28_gemini-4-carbon.md
 related:
   - entities/google
   - concepts/gemini/index
   - concepts/gemini/gemini-3-8-flash
+  - concepts/gemini/gemini-4-carbon
   - concepts/gemini/gemini-enterprise-agent-platform
 ---
 
@@ -47,6 +49,7 @@ Google frames this as a **phased release**, actively engaged in the **U.S. gover
 
 ## Related
 
+- [[concepts/gemini/gemini-4-carbon]] — successor released 14 days later (Oct 28, 2026), same intro price, cyber SOTA at SEC-bench Pro 88.2% / ExploitGym 54.8% / CWE-bench 71.0%
 - [[concepts/gemini/index]] — the Gemini model family lineage
 - [[concepts/gemini/gemini-3-8-flash]] — prior Sept 2026 Flash tier (incl. Flash Cyber, the CWE-bench v0 predecessor)
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — enterprise platform where Gemini models are served

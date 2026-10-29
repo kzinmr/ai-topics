@@ -1,7 +1,7 @@
 ---
 title: Google DeepMind
 created: 2026-05-15
-updated: 2026-10-28
+updated: 2026-10-29
 type: entity
 tags:
   - company
@@ -12,6 +12,7 @@ tags:
   - ai-agents
   - tool
 sources:
+  - raw/articles/2026-10-28_gemini-4-carbon.md
   - raw/articles/2026-05-25_deepmind-agents-at-scale-youtube.md
   - raw/newsletters/2026-05-13-the-ai-cursor-arrives.md
   - raw/newsletters/2026-08-06-ainews-jeff-sanjay-oriol-and-quoc-depart-deepmind-demis-to-chair-koray-to-svp-wh.md
@@ -68,7 +69,7 @@ DeepMind uses **Antigravity**, an internal IDE (Visual Studio–like) with a bui
 Moving from passing massive context blobs toward **shared file system collaboration** between pipeline components.
 
 ### Model Mixing
-Combining cheap models like [[concepts/gemma-4|Gemma 4]] ("effectively free from a quota perspective") with advanced models for critical components.
+Combining cheap models like [[entities/gemma-4|Gemma 4]] ("effectively free from a quota perspective") with advanced models for critical components.
 
 ### Code Review Automation
 Per-language auto-review models fine-tuned on style guides and good code examples.
@@ -134,6 +135,10 @@ See also [[concepts/open-science]] and [[concepts/ai-mathematics-theorem-proving
 ### Genie 4 — Real-Time Multimodal World Model (October 2026)
 
 DeepMind announced **Genie 4** (Oct 27, 2026), its fourth-generation world model: real-time interactive simulation with photorealism, physics/human-action realism, **native audio + interactive dialogue**, and natural-language steering. Architecture splits planner and renderer: **Gemini 3.8 Flash runs as an in-the-loop guiding agent** (goal decomposition, frame verification, re-planning), Gemini Omni grounds appearance/behavior; Gemini 4 Argon + Gemini Robotics experiments interleave task steps as captions (Apptronik Apollo checkers demo). Research preview via Project Genie (AI Ultra) and Gemini API/AI Studio early access. Stated research direction: **hybrid world models** (code/language reasoning + pixel-level simulation). See [[concepts/genie-4]]. (Source: DeepMind blog, HN 920 pts)
+
+### Gemini 4 Carbon — Cyber/Long-Horizon Frontier Model (October 28, 2026)
+
+Two days after Genie 4, DeepMind announced **Gemini 4 Carbon**, its strongest model, marketed on cybersecurity defense and long-horizon endurance: #1 on Artificial Analysis Intelligence Index v5.0 (59), SEC-bench Pro **88.2%**, ExploitGym **54.8%**, CWE-bench **71.0%**, WebDev Arena #4 (1768 elo), with internal teams running it **for days** on multi-step engineering tasks. Released at Argon's introductory price ($2/$10 per 1M) and **capability-gated** — cyber defenders first via the Fairwind Program, under the U.S. government's voluntary pre-release testing process. Alignment claims are quantified as product features (Terminal-Bench 4.0 cheating 0.0% success, Gray Swan IPI 0.0% ASR, overreach −26% / under-service −29%); all are vendor-reported. See [[concepts/gemini/gemini-4-carbon]]. (Source: Google blog, HN 943 pts)
 
 ## Related Entities
 

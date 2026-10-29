@@ -120,6 +120,35 @@ Common link targets for AI reports:
 
 ## Verification Checklist (post-write)
 
+Mechanical gate (proven 2026-08-03, re-run 2026-10-19): before delivery, run the
+T1 slop grep and the wikilink existence check as terminal commands and paste the
+results into the report footer — `NO_SLOP_FOUND` + zero wikilink MISSes:
+
+```bash
+grep -nE "画期的|革新的|注目すべき|〜でしょう|ではないでしょうか|一方で|さらに、|しかしながら|高い性能を誇る|急速に進化" <report> || echo NO_SLOP_FOUND
+grep -oE "\[\[[^]]+\]\]" <report> | sort -u | sed 's/\[\[//;s/\]\]//' | while read f; do [ -f "wiki/$f.md" ] || [ -f "wiki/$f/_index.md" ] || echo "MISS $f"; done
+grep -nE "ウィクション" <report> || echo NO_TYPO   # recurring katakana typo; write ウィキ
+```
+
+**Pitfall (hit 2026-10-26 weekly digest)**: the wikilink checker above breaks on
+aliased links `[[target|label]]` — `sed 's/\]\]//'` leaves the `|label` suffix
+glued to the target, producing dozens of false MISSes (`concepts/deepinferconcepts/dessa...`).
+Strip aliases before the existence test:
+
+```bash
+grep -oE "\[\[[^]]+\]\]" <report> | sed 's/\[\[//;s/\]\]//;s/|.*//' | sort -u \
+  | while read f; do [ -f "wiki/$f.md" ] || [ -f "wiki/$f/_index.md" ] || echo "MISS $f"; done
+```
+
+Rule: ALWAYS ship alias-stripped links — the simple `[[path]]` form keeps the
+checker honest and renders fine in the wiki. Inside markdown tables, raw `|`
+cannot be used in a wikilink alias; escaped `\|` renders wrong. Prefer plain
+unaliased links in table cells, or restructure the row.
+
+Also: heredoc `cat > file << 'EOF'` via terminal is rejected under cron when the
+content contains `&`. Write reports with write_file, then run the checks in a
+separate terminal call from the repo root (`cd ~/ai-topics` so `wiki/` resolves).
+
 - [ ] T1: All ChatGPT-isms removed? Any sentence that sounds like it could
       appear in any blog post about any topic?
 - [ ] T2: Japanese (だ・である), concise bullets, wikilinks, source links?
@@ -128,7 +157,26 @@ Common link targets for AI reports:
 - [ ] T5: ≥2 wikilinks per major topic?
 - [ ] No section with zero concrete numbers?
 - [ ] Every factual claim has a source (URL or raw article)?
+- [ ] Numbers/quotes copied verbatim from raw frontmatter or wiki pages —
+      anything inferred must be re-verified (e.g. HN points re-queried via
+      hn_calibrate.py) before shipping; never launder a figure carried over
+      from a prior report that you could not reproduce.
 - [ ] Tables where comparisons would make sense?
+
+## Weekly Digest Sourcing Recipe (proven 2026-10-26)
+
+To assemble the Weekly AI Digest without re-researching from scratch:
+
+1. `cd ~/ai-topics && git log --oneline --since="7 days ago"` — the commit
+   subjects (trending-topics / active-crawl / hot-post / ingest) are a ready-made
+   week outline; each names the new concepts.
+2. New pages this week: `git log --since="7 days ago" --diff-filter=A --name-only --pretty=format: -- wiki/concepts wiki/entities wiki/comparisons wiki/events | sort -u`
+3. Read content with `sed -n '/^# /,$p' wiki/<page>.md | head -25` per page —
+   batch ~10 pages per terminal call.
+4. Cross-check headline numbers (AA scores, prices, HN points) against the wiki
+   page itself, not memory — the checklist's "verbatim from wiki pages" rule.
+5. Archive the finished report to `inbox/trending-reports/weekly-digest-YYYY-MM-DD.md`
+   and commit+push (repo-root-relative path; run from `~/ai-topics`).
 
 ## Fallback: When Not To Apply
 

@@ -60,3 +60,12 @@ If the diff shows a removed `## [` line, restore immediately with pattern 2 and 
 
 Validated 2026-10-25, blog-triage run 20261025T100040Z (the hot-post entry heading was stripped
 and restored in commit `10fb4343`).
+
+## Related: sibling-parallel commit & push safety
+
+The `startswith("## [")` anchor above is also **robust to sibling subagents prepending their own
+entries** between your read and write (it re-finds the first heading at run time). And when a
+sibling leaves uncommitted working-tree edits, `git pull --rebase` aborts with "cannot pull with
+rebase: You have unstaged changes" — but a clean fast-forward `git push` still succeeds. Trust the
+push output (`old..new main -> main`), not the pull error; do not re-run ingest. Full detail +
+beehiiv-403 direct-slug recovery re-confirmation: `references/wiki-ingest-log-claim-vs-applied-content.md`.

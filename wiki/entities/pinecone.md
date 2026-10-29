@@ -2,7 +2,7 @@
 title: "Pinecone"
 type: entity
 created: 2026-05-08
-updated: 2026-10-23
+updated: 2026-10-28
 tags:
   - company
   - search
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-08-11_pinecone_the-ceiling-was-never-the-model.md
   - raw/articles/2026-08-11_pinecone_pinecone-nexus-generally-available.md
   - raw/articles/2026-10-23_pinecone_when-vectors-became-an-implementation-detail.md
+  - raw/articles/2026-10-28_pinecone_introducing-pg-pinecone.md
 ---
 
 # Pinecone
@@ -187,6 +188,34 @@ The Records API turned out to be **premature**: it wrapped the Vectors API, so t
 **Latency win**: self-embedding costs two round trips per search (embedding API, then Pinecone); integrated embedding collapses it to one. Pinecone measured **~3.5× faster at the median** versus calling its standalone embedding API then searching with the vector — most of the gap is simply the avoided network hop. Roadmap: hybrid search, integrated reranking, multiple vector fields per document.
 
 Source: [[raw/articles/2026-10-23_pinecone_when-vectors-became-an-implementation-detail]]
+
+## pg_pinecone — Open-Source Postgres Extension on Pinecone's Engine (October 2026)
+
+Pinecone released **pg_pinecone**, an Apache-2.0 Postgres extension that runs the same search engine Pinecone operates at scale *inside* Postgres, over the `pgvector` vector columns already in the database. It is Pinecone's first open-source in-database play and a direct architectural challenge to pgvector's HNSW default. ([blog](https://www.pinecone.io/blog/introducing-pg-pinecone/), Oct 27 2026)
+
+**Three engines, one SQL surface** — `pinecone.set_engine()` switches between them without changing queries (`ORDER BY embedding <=> $1 LIMIT 10`):
+- `native` (default): builds and searches its own index entirely inside Postgres — no Pinecone account, API key, or network call
+- `pgvector`: delegates to the HNSW index the user may already run
+- `remote`: pushes search to Pinecone's managed service
+
+**Why not a graph.** The native engine replaces the proximity graph with an **inverted-file (IVF) index over compressed vector codes** — each vector stored as a **RaBitQ** code (~1 bit/dimension plus correction values; Gao and Long, SIGMOD 2024 — the same quantizer family benchmarked in [[concepts/vq-bench]]), packed per cluster so a search reads a few contiguous pages instead of hopping a graph that must stay resident in RAM.
+
+**Benchmarks** (1M × 768-dim wiki_dpr, AWS r6id.4xlarge, 16 vCPU / 128 GB, PostgreSQL 17/18, p50 at k=10):
+
+| Metric | pg_pinecone native | HNSW (halfvec) | HNSW (full) |
+|---|---|---|---|
+| Index size | **136 MB** | 2.0 GB | 4.1 GB |
+| Latency @ 0.95 recall | **1.3 ms** | 1.7 ms | 2.7 ms |
+| Latency @ 0.99 recall | **2.3 ms** | 4.7 ms | 6.7 ms |
+| Filtered (10% match) | **1.000 recall / 12.3 ms** | 0.920 recall / 5.9 ms (iterative) | — |
+
+**The filtered-search claim is the sharpest one.** pgvector HNSW *post*-filters — it finds nearest neighbours then applies `WHERE`, so a narrow scope (one tenant in a hundred) discards most candidates and a query can return fewer rows than its `LIMIT`. The native engine filters *during* search and picks a strategy by selectivity: **pre-filtering** (exact, full-vector scoring across all clusters) when ≤3% of rows match, **single-stage filtering** (probe up to half the nearest clusters, check the filter inside each before scoring) above that. The filter column's value is stored beside each RaBitQ code and row-counts per value are precomputed at build time.
+
+**Operational caveats stated in the post**: inserts join the nearest cluster and are immediately searchable, but centroids are fixed at build time — after a bulk load that doubles the table or introduces off-distribution data, `REINDEX` or automatic maintenance is needed to rebalance clusters.
+
+**Strategic read.** Pinecone's commercial interest is in its managed engine, so `native` being free and networkless is a developer-ecosystem/mindshare play rather than a hosting play; the benchmark table is vendor-run and unpublished outside its own harness README. The substantive, falsifiable contribution independent of that is the **IVF + RaBitQ + filter-during-search** combination beating HNSW on memory and *filtered* recall — the workload class where graph indexes are weakest. Related: [[concepts/vector-search]], [[concepts/vector-databases]], [[concepts/vq-bench]].
+
+Source: [[raw/articles/2026-10-28_pinecone_introducing-pg-pinecone]]
 
 ## Related
 

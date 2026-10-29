@@ -9,15 +9,13 @@ description: >-
 
 # Wiki Ingestion Pipelines (umbrella)
 
-This umbrella skill covers all automated wiki ingestion pipelines — from external source to wiki page. Each section covers one pipeline end-to-end: cron config, checkpoint handling, failure recovery.
-
 All pipelines follow the same pattern:
 ```
 fetch external content → checkpoint → triage → wiki-ingest (create/update pages) → commit
 ```
 
-> 📖 X-scan: `references/x-accounts-scan-cron.md`. Cron-mode: `references/cron-mode-constraints.md`. Stale stash: `references/stale-stash-supersession.md`.
-> 📖 The newsletter wiki-ingest execution details (triage parse-failure recovery, take body-fetch patterns, enrichment + archive + commit/push specifics) live in `references/newsletter-wiki-ingest.md` (with `references/newsletter-take-body-fetch-pattern.md` and `references/newsletter-triage-recovery-2026-08-20.md` as supporting references). The standalone `newsletter-wiki-ingest` skill was consolidated into this umbrella on 2026-08-21.
+> X-scan: `references/x-accounts-scan-cron.md`. Blog ingest frontmatter pitfalls + budget ordering: `references/blog-ingest-session-notes-2026-10-23.md`. Blog triage parse-failure recovery + sibling-pipeline git hygiene: `references/blog-wiki-ingest-checkpoint-recovery-2026-10-19.md`. Release scraping: `references/jina-hn-openrouter-recipes.md`.
+> 📖 Blog-ingest stage session notes: `references/blog-ingest-session-notes-2026-10-28.md` — log-prepend header assertions: never `count("# Wiki Log")==1` (false-fires on quoted history in log body), use structural `lines[0]=="# Wiki Log"` + entry-substring check instead. The standalone `newsletter-wiki-ingest` skill was consolidated into this umbrella on 2026-08-21.
 
 ---
 

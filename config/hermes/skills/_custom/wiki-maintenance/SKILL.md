@@ -72,7 +72,12 @@ cd ~/ai-topics && git add wiki/ && git commit -m "wiki: <summary>" && git push
 - Pipe table corruption: `|- [[` → `- [[`
 - Line number prefix corruption: `\d+|` patterns
 - Duplicate entries: exact duplicate `- [[...]]` lines
-- Header count mismatch: section headers vs filesystem
+- Header count mismatch: section headers vs filesystem — recompute from ACTUAL per-section
+  list-line counts, both directions of drift (seen 961→957 and 39→41 same run)
+- **Misplaced entries (namespace ≠ section)**: e.g. `- [[concepts/foo/index]]` lines inside
+  `## Entities`, `- [[events/x]]` inside `## Concepts`. File-existence check does NOT catch
+  these — check section membership. Canonical copy usually exists under the right section →
+  delete the misplaced line; if not, MOVE it. Full recipe: `references/index-misplaced-entries-2026-10-25.md`
 
 **Log.md Missing Separators:**
 Consecutive `## [YYYY-MM-DD]` headers without `---`. Pre-flight: verify ALL `## ` lines are date-stamped before bulk fixing.
@@ -93,6 +98,7 @@ Consecutive `## [YYYY-MM-DD]` headers without `---`. Pre-flight: verify ALL `## 
 - **Symlink + git add**: Changes made through `~/wiki` symlink may not stage with `git add wiki/`. Use `git add -A wiki/` and verify with `git show --stat HEAD`.
 
 → **Full detail**: `references/daily-structural-health.md`
+→ **Misplaced entries + cron fast path**: `references/index-misplaced-entries-2026-10-25.md` (namespace≠section defect, header recount, x_accounts stale false-positive confirmation, `cat|python3` scanner block workaround)
 → **Scripts**: `scripts/build-orphan-sed.py`, `scripts/misplaced-entries-detection.py`
 → **Reference**: `references/misplaced-stub-cleanup.md`
 
@@ -231,6 +237,7 @@ When running the periodic LLM API pricing monitor cron (or "check LLM pricing" /
 | `references/orphan-page-deletion-example.md` | wiki-page-relocation | Orphan page detection and deletion |
 | `references/post-relocation-enrichment-pattern.md` | wiki-page-relocation | Enriching relocated pages from past sessions |
 | `references/batch-directory-reorganization-pitfalls.md` | wiki-maintenance | Symlink+git trap, double-nesting, tag validation, scope estimation, checklist |
+| `references/index-misplaced-entries-2026-10-25.md` | wiki-watchdog-fix | Namespace≠section misplaced entries, header recount recipe, orphan insertion pitfalls, cron watchdog fast path, tirith pipe-block workaround, x_accounts stale false-positive procedure |
 | `references/llm-pricing-extraction-recipes.md` | llm-api-pricing-monitor | Verified per-provider fetch URLs, extraction patterns, model lineup snapshot, monitor pitfalls |
 | `references/deepseek-pricing-structure.md` | llm-api-pricing-monitor | DeepSeek full pricing table with historical comparison (cache hit/miss, peak/off-peak) |
 

@@ -2,7 +2,7 @@
 title: "Hex Technologies"
 type: entity
 created: 2026-05-08
-updated: 2026-08-17
+updated: 2026-10-28
 tags:
   - company
 aliases: ["Hex", "Hex Tech"]
@@ -11,6 +11,8 @@ sources:
   - raw/articles/2026-05-23_hex-technologies_evaluate-data-agents.md
   - raw/articles/2026-05-10_hex-technologies_notebook-agent-prompting-guide-agentic-analytics.md
   - raw/articles/2026-08-14_hex-technologies_databench-agentic-analytics-benchmark.md
+  - raw/articles/2026-10-28_hex-technologies_hex-new-era.md
+  - raw/articles/2026-10-28_hex-technologies_introducing-hex-4-0.md
   - raw/articles/2026-05-10_hex-technologies_beginners-guide-to-python-notebooks.md
 ---
 
@@ -140,6 +142,26 @@ Hex's thesis: "Without context, an agent won't use the right data to answer a bu
 Hex previously launched **Agent, everywhere** (October 2025) with Slack integration and MCP support, allowing the Hex Agent to operate inside Slack, Claude, and Cursor.
 
 Source: raw/articles/2026-06-03_hex-technologies_hex-in-codex.md
+
+## Hex 4.0 — clean-sheet rewrite "for the era of agents" (October 27, 2026)
+
+Hex rewrote its 6-year-old, 2,500-customer product from scratch and announced a fundraising alongside it. The post is unusually valuable as a **first-party post-mortem on bolting agents onto a legacy architecture** — the failure modes it names are the ones [[concepts/agent-native-tool-fallacy]] and [[concepts/harness-engineering/agent-native-architecture]] discuss in the abstract.
+
+**The diagnosis (Hex's own words).** Despite shipping text-to-SQL before ChatGPT, Magic (Feb 2023), "the first really good data agent," and generative apps, the company concluded it was **"far from 'agent native', no matter how much we liked saying it"** because its data model, architecture, and user assumptions were baked in 2020–21. Three concrete failure modes followed:
+
+1. **Tool-count bloat in the harness** — "our agent harness was becoming bloated with hundreds of tools, which were required to teach agents about how to use Hex," something "emphatically out of distribution."
+2. **Keyhole external-agent compatibility** — external agents could only reach Hex "through a keyhole via MCP versus being able to work with something more native."
+3. **Wrong compute shape** — the engine "wasn't built to support the high-speed, high-concurrency, iterative workflows agents seem to like."
+
+Concurrent market pressure: users were "vibe coding" dashboards in Cursor, Codex, Cognition and Claude, emailing HTML files "without provenance, context, or permissions" — sprawl nobody could govern or observe.
+
+**The architectural bet: everything is code.** Project core logic and visualizations are now fully backed by **plain code files rather than a proprietary YAML spec**, "rooted in governed context" with consistent logic, visual standards, and organization. Code is chosen for both directions: it's what makes the platform legible to agents, and it's what gives humans full build flexibility. Because the agent specifies every dependency and the **full DAG**, any number in a published app is inspectable end-to-end — click inspect, see the lineage, the full logic, and the data sources, so a non-technical user can tell whether a KPI rests on a trusted semantic model or a tangle needing data-team review. The Notebook is reframed as a **human/agent collaboration surface** where most of the job is navigating what an agent wrote rather than writing code.
+
+**Execution engine rebuilt from scratch**, with three named wins: parallel execution of independent queries; results streaming as ready; **incremental recomputation** — a changed input reruns only the affected step and its dependents, everything else stays cached. Hex reports a large full-app runtime improvement on internal critical apps and claims hover/click-live filter states that "would have taken minutes" under 3.0. Status: private beta, staged rollout, migration workflow promised; alpha testers **StubHub** (Nova Wang) and **Ro** (Nick Hardy).
+
+**Meta-observation**: the rewrite itself "was greatly accelerated by using agents to write all of the code." The strategic read for this wiki is that **MCP proved insufficient as an agent-integration substrate for data platforms** — Hex's own account is that keyhole MCP plus tool-harness bloat was a reason to rebuild, which is evidence against treating MCP exposure as a finish line. Cross-reference [[concepts/agent-native-cloud]].
+
+Sources: [[raw/articles/2026-10-28_hex-technologies_hex-new-era]], [[raw/articles/2026-10-28_hex-technologies_introducing-hex-4-0]]
 
 ## Related
 - [[entities/anthropic]] — customer using Hex for data analytics

@@ -76,7 +76,7 @@ fixed = re.sub(r'^\|-\s+\[\[(?:entities|concepts|comparisons|queries)/',
 
 ### 4. Broken Wikilinks (High Priority)
 
-**CRITICAL: Distinguish genuine broken links from prefix-style links first.** 458+ "broken" links may actually be valid or need different fixes.
+**Distinguish genuine broken links from prefix-style links first** (see Pattern A–E below and `broken-link-scanner-pitfalls.md`).
 
 **NEW 2026-05-11: Subdirectory vs Flat Path Confusion**
 A major source of "broken" links is the mix of subdirectory organization (`concepts/harness-engineering/page.md`) and flat organization (`concepts/page.md`). Links like `[[concepts/harness-engineering/agentic-engineering]]` may point to files that exist at `concepts/agentic-engineering.md` instead.
@@ -95,8 +95,8 @@ Three distinct sub-patterns:
 - **Fix**: Find the actual entity file, update the link
 
 **Pattern C: Missing entity stubs** (frequently referenced but no page exists)
-- **Example**: `[[entities/sourcegraph]]`, `[[entities/stripe]]`, `[[entities/notion]]`
-- **Fix**: Create minimal stub page with `status: stub` and TODO marker
+- **Example**: `[[entities/sourcegraph]]`, `[[entities/notion]]`
+- **Pattern D (2026-10-28)**: Missing high-ref concepts (e.g.`rag`) → alias to canonical page or dir hub slug, not stub: `references/missing-target-hub-aliasing.md`
 
 Two distinct sub-patterns:
 
@@ -196,7 +196,7 @@ See `watchdog-session-2026-09-12.md` (jobs.json failure source; report-only fail
    - **Check `→` redirect syntax**: Entries like `[[entities/pi-coding-agent]] → [[entities/pi]]` use a non-standard redirect pattern. The primary wikilink target (`pi-coding-agent`) has no file, but that's intentional — the redirect arrow points to the canonical page, and the slug is typically listed as an alias in the canonical page's frontmatter. This is NOT a ghost entry.
    - **Check `_archive/` subdirectories**: Files under `concepts/gpt/_archive/`, etc. are intentionally not in the index — they are archived content, not ghosts.
    - In the 2026-05-13 session: 21 "ghost" entries all resolved to existing files when scanned recursively
-- **NEW 2026-10-23: `_archive/` orphans are NOT auto-skip** — TODO stubs → delete; real content → register in hub `index.md` See Also AND main index.md. Hub files use both `index.md` and `_index.md` names. Header count = index list-line count (formula + details: `references/archive-orphan-fix-2026-10-23.md`).
+- **NEW 2026-10-23: `_archive/` orphans are NOT auto-skip** — TODO stubs → delete; real content → register in hub `index.md` See Also AND main index.md. Redirect-stub orphan FP + log prepend-H1 fix: `references/watchdog-session-2026-10-27.md`.
 - **NEW 2026-08-13: "Not indexed" scan false positives — nested pages are by design.** A recursive `os.walk` scan comparing every `.md` relpath under entities/+concepts/ against index.md wikilink slugs reports **570 "missing" pages**, but ALL are nested subdirectory pages (`concepts/ai-benchmarks/*`, `concepts/claude/*`, `concepts/gpt/*`, `entities/omar-khattab/*`) intentionally served by `_index.md` hub pages (21 hubs), NOT entries in main index.md. **Filter to top-level only** (`'/' not in relpath`) → 0 real gaps. Never "fix" nested pages into index.md. See `references/watchdog-session-2026-08-13.md`.
 
 **Escalation pattern**: If all reported corruption issues are already resolved by wiki-health-fix, the watchdog's value shifts from remediation to **verification and gap reporting** (header count mismatches, orphan pages, tag taxonomy drift, pipeline staleness) — the expected behavior of a healthy pipeline.
@@ -1101,7 +1101,7 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 - `scripts/tag_audit.py` — Tag analysis and auditing (canonical: `~/ai-topics/scripts/tag_audit.py`)
 - `scripts/validate_index.py` — Pre-commit validator for baked-in numbers, pipe prefixes, truncation artifacts in wiki/index.md. Run with `python3 scripts/validate_index.py`; exit 0 = clean, 1 = issues found. Called by `.githooks/pre-commit`. See Section H for recovery procedure.
 - `.githooks/pre-commit` — Git hook that runs `validate_index.py` on staged `wiki/index.md`. Activated via `git config core.hooksPath .githooks`. Tracked in-repo.
-- `references/wiki-health-script-optimization.md` wiki_health.py perf (0.28s) · `references/json-output-processing.md` · `references/raw-article-coverage-audit.md` · `references/bare-wikilink-batch-fix.md` scan→map→regex · `references/broken-wikilink-repair.md` · `references/index-corruption-recovery.md` · `references/index-corruption-variants.md` · `references/wiki-file-move.md` · `references/wiki-health-remediation.md` · `references/wiki-bulk-link-fix.md` · `references/wiki-wikilink-remediation.md` · `references/wiki-works-source-linking.md` · `references/wiki-entity-disambiguation.md` · `references/wiki-page-splitting.md` · `references/wiki-entity-dedup.md` · `references/watchdog-session-2026-10-22.md` — verified FIXMAP renames, WIP-snapshot `status: archived`, 503 chain-break transient triage (report-only if 1 day), `cat|python3` tirith block workaround, code-block-stripped link scanner
+- `references/wiki-health-script-optimization.md` wiki_health.py perf (0.28s) · `references/json-output-processing.md` · `references/raw-article-coverage-audit.md` · `references/bare-wikilink-batch-fix.md` scan→map→regex · `references/broken-wikilink-repair.md` · `references/index-corruption-recovery.md` · `references/index-corruption-variants.md` · `references/wiki-file-move.md` · `references/wiki-health-remediation.md` · `references/wiki-bulk-link-fix.md` · `references/wiki-wikilink-remediation.md` · `references/wiki-works-source-linking.md` · `references/wiki-entity-disambiguation.md` · `references/wiki-page-splitting.md` · `references/wiki-entity-dedup.md` · `references/watchdog-session-2026-10-22.md` — verified FIXMAP renames, WIP-snapshot `status: archived`, · `references/watchdog-session-2026-10-24.md` — no-frontmatter hot-post pages; run no-FM scan + recount when cleancode-block-stripped link scanner
 - `references/duplicate-log-entry-recovery.md` — Recovery from cascading execute_code log prepend producing 3+ identical entries
 - `references/entity-concept-cross-reference.md` — Entity/concept duplicate resolution: redirect stubs, cross-link comparable pairs (2026-05-08 session)
 - `references/wiki-bare-wikilink-fix.md` — Bare wikilink → namespace-prefixed batch fix with full session data
@@ -1110,8 +1110,7 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 - `references/log-rotation.md` — Log rotation procedure: when, how, and automated cron integration
 - `references/concept-cluster-overview.md` — Concept cluster overview pattern: when to create a parent hub page, 4-layer classification, template, post-creation steps
 - `references/tag-audit-session-2026-07-27.md` — scope expansion (`events/`,`queries/`), SCHEMA `[truncated]` corruption, inline one-off deletion, no-verify pass
-- `references/tag-audit-session-2026-08-03.md` — dry-run ≠ audit violations; skip normalization when audit clean
-- `references/tag-audit-session-2026-08-10.md` — dry-run scope ≫ violations; patch manually, never wholesale-normalize
+- `references/tag-audit-session-2026-08-03.md` — dry-run ≠ audit violations; skip normalization when audit clean- `references/tag-audit-session-2026-08-10.md` — dry-run scope ≫ violations; patch manually, never wholesale-normalize
 - `references/tag-audit-session-2026-08-17.md` — stale-chain fix (mapping VALUE non-SCHEMA); bump `updated:` on tag-only patches
 - `references/watchdog-session-2026-09-28.md` — orphan also `??` in git status ⇒ upstream skipped its commit; `training-data`→`datasets`
 - `.githooks/pre-commit-tag-validator.py` — Pre-commit hook that validates all staged wiki page tags against SCHEMA.md taxonomy. Blocks commits with non-taxonomy tags or composite kebab-case errors. See Section J.
@@ -1119,6 +1118,7 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 ---
 
 ## Section H: Index.md Corruption Recovery (wiki-index-corruption)
+Log.md emptied by a bad write: `git checkout -- wiki/log.md` (ref 2026-10-24).
 
 Index.md is vulnerable to two distinct corruption mechanisms that **compound**: baked-in line numbers from `read_file` output, and truncation artifacts from incomplete reads. When both are present, ~200 entity entries can vanish silently.
 

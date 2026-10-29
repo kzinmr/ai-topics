@@ -40,6 +40,20 @@ On saturated days, `git add wiki/` stages stale files from prior sessions. If th
 **Better**: Stage only what changed → `--no-verify` → push.
 
 ## Variant: Upstream Already Committed Archive (Pitfall #21)
+
+### Archive timestamp-churn sub-variant (validated 2026-10-27 dreaming-wiki-ingest)
+
+When the upstream dreaming-group already committed the dated archive JSON + `archive_index.json`, the downstream still runs `archive_triage.py dreaming --keep-reference` for verification — but **do not commit its output**. A no-op re-run (all URLs deduped, `new_archived: 0`) still rewrites `archived_at` in the dated file and `updated` in `archive_index.json`, leaving both as `M` in `git status`. That is pure timestamp churn with zero information content.
+
+**Fix**: before staging, `git diff --stat -- wiki/raw/archived/triage/` — if the only changes are the two timestamp fields (`2 +-` on each file, diff hunks are just `archived_at`/`updated` lines), restore them:
+```bash
+cd ~/ai-topics && git checkout -- wiki/raw/archived/triage/dreaming/<date>_<run_id>.json wiki/raw/archived/triage/archive_index.json
+```
+then stage ONLY your own content files + `wiki/log.md` explicitly. Commit `cc81de13` (2026-10-27): 4 files (2 concepts + simon-willison + log.md), hooks passed clean, no `--no-verify`.
+
+Never `git add wiki/` on a downstream pass when upstream already committed the archive — the nightly tree always has 10+ sibling-modified concept/entity files from other pipelines (this run: `git status --short -- wiki/` showed 14 M + 4 ??, only 4 of them the dreaming cycle's own).
+
+### Original guidance
 When the upstream dreaming-group committed both enrichment AND archive before JSON render failure, the downstream dreaming-wiki-ingest has NO archive files to stage — they already exist on `main`.
 
 In this pattern:

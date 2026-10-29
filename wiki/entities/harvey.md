@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-10-25
+updated: 2026-10-28
 tags:
   - security
   - company
@@ -53,6 +53,8 @@ sources:
   - raw/articles/2026-08-25_harvey_litigation-lawyer-to-legal-engineer.md
   - raw/articles/2026-10-20_harvey_improving-agent-accuracy-with-harvey-graph.md
   - raw/articles/2026-10-24_harvey_how-law-firms-turn-ai-efficiency-into-client-value.md
+  - raw/articles/2026-10-28_harvey_why-legal-intake-should-create-a-clear-path-to-resolution.md
+  - raw/articles/2026-10-28_harvey_legal-engineer-help-legal-teams-apply-expertise-with-ai.md
 ---
 
 # Harvey
@@ -999,3 +1001,31 @@ Closes by pointing clients to RSGI's report "The Accelerating Impact of Legal AI
 The durable claim for the [[concepts/ai-adoption]] debate: the binding constraint on AI value in professional services is not model capability but **the billable hour plus associate incentive design** — an instance of the broader pricing-model problem for agentic work (compare [[concepts/ai-adoption-failures-and-enterprise-psychosis]] on enterprise adoption friction).
 
 Source: [[raw/articles/2026-10-24_harvey_how-law-firms-turn-ai-efficiency-into-client-value]]
+
+## Intake as a product surface + the "Legal Engineer" role (October 2026)
+
+Two October 27 posts document Harvey pushing from *review* tooling outward to the **request-intake layer**, and formalising a new job family in the process.
+
+**Platform additions visible in the site navigation** (not previously recorded on this page): **Intake** ("capture, route, and resolve legal Intake from across the business"), **Connector Library** ("security-reviewed connectors or custom MCP"), and **Legal Work Orchestration** ("assign, execute, and review legal work with agents and your team") are all flagged *New*. The MCP-based Connector Library is the concrete signal that Harvey is opening its tool surface to external agents rather than only shipping first-party agents.
+
+### Connected intake — the pre-review bottleneck (Vineet Shahani, Deputy General Counsel)
+
+The thesis: **"What appears to be a slow legal review is often just time spent preparing the request for legal review."** Requests arrive scattered (email, Slack, a design tool, Drive attachments), arrive without the facts a lawyer needs (a marked-up MSA with no deal value or signing deadline), and then consume days on context-gathering, policy lookup, and reviewer assignment before substantive work starts. Meanwhile the business proceeds and commits, shrinking the room left to advise.
+
+Design argument, stated as a two-sided failure: **a fixed intake form that asks too little** leaves the team to gather the missing context anyway; **one that asks everything upfront** becomes burdensome and business users route around it. The resolution is intake that *adapts to the request type* (marketing asset review needs audience/claims/evidence; product review needs a PRD, rollout plan, multi-specialist input) while the team keeps control over which work gets an automated first pass, which questions may be answered from approved guidance, and which need a lawyer from the start — organization-specific rules (e.g. lawyer review for marketing claims in certain markets, privacy counsel when certain data categories are involved).
+
+The architectural point worth keeping: **intake is only as good as its connection to the team's knowledge base.** Existing ticketing tools collect and assign requests but are not wired to the policies, precedents, and review requirements embedded in the team. Harvey's framing is that a request should arrive *with* context, sources, and initial work already attached, and that new documents/answers stay bound to the same request so review never restarts; the answer returns through the channel the request came in on, leaving an auditable record of context → review → decision.
+
+**New RSGI datapoints from this post** (same commissioned study already cited on this page for the 91%/61% figures): **68%** of in-house legal teams expect flat headcount over the next year, against **92%** reporting faster turnaround of legal work after adopting Harvey; **88%** said they spend more time with the business on higher-value work, and **48%** expect legal to hold a more influential strategic role within a year. The strategic claim attached to them is that intake automation converts legal from a cost centre into a revenue-contributing function — the pricing/incentive thread picked up in the FORUM panel above.
+
+### Legal Engineer — the translator role between lawyer judgment and executable workflow
+
+Harvey published a second perspective from **Marlow B. Hooper** (Legal Engineer; ex-prosecutor and in-house counsel, background in data privacy and AI governance), supplying a role definition the page previously lacked: **"Legal Engineers sit in the middle [of attorneys and technology], speak both languages, and turn a lawyer's judgment into something the platform can execute reliably."**
+
+Working method: start from how the legal organization operates (the task, the standards it applies, what useful work product looks like), then decide how Harvey supports it — contract review against a playbook, key-term extraction across hundreds of documents, drafting, research. Work moves fast from problem to artifact: train a team, then build and test a **custom agent or review table** on documents from an active matter, while feeding product-capability evaluations back from customer signals.
+
+The governance framing is the sharpest part: **"Adoption without governance creates risk, while governance without adoption creates shelfware."** Hooper's stated job is to land between the two — shipping something lawyers actually use, with review points and controls that give leadership confidence. Accompanying expectation-setting: you cannot hand AI a vague request and expect finished legal work — the analogy is not sending a first-year associate a two-word email and expecting a perfect memo; Legal Engineers supply the instructions, context, standards, and review that legal work requires.
+
+Skills claim that generalises past legal: **"what you need is the ability to write with precision and think in systems. If you can draft a tight contract clause or a clear legal brief, you already have the core skill for writing a strong prompt or designing an agent"** — i.e. prompt/agent design is recast as a species of legal drafting, and decomposition-plus-defining-a-good-result is presented as existing lawyer practice. Entry route is Harvey Academy's free self-paced **Legal Engineering Certification**. This is Harvey's second Legal-Engineering career post (after the litigation-lawyer-to-Legal-Engineer piece) — the pair is evidence Harvey is deliberately *creating* a job family, which also manufactures the admin layer that its platform needs in order to be deployed.
+
+Sources: [[raw/articles/2026-10-28_harvey_why-legal-intake-should-create-a-clear-path-to-resolution]], [[raw/articles/2026-10-28_harvey_legal-engineer-help-legal-teams-apply-expertise-with-ai]]

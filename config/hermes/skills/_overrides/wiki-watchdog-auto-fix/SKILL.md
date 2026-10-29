@@ -8,7 +8,9 @@ category: wiki
 
 ## Session references
 - `references/watchdog-healthy-baseline.md` — full verification checklist, metric thresholds, auto-fix scope limits, decision flow for every watchdog run (canonical: `wiki-graph-health/references/watchdog-healthy-baseline.md`).
-- `references/wiki-health-fix-session-2026-09-21.md` — (NOT YET CREATED — see note above) digest "orphans" are `_index.md` files; `_index`→dir-slug dedupe before acting on orphan counts; hub registration recipe; use `head -6 wiki/log.md` not offset-based tail reads.
+- `references/log-header-burial-fix-2026-08-09.md` — header-burial worked example (3rd recurrence, raw-backlog-ingest root cause).
+- `references/wiki-health-fix-session-2026-09-21.md` — digest "orphans" are `_index.md` files; `_index`→dir-slug dedupe before acting on orphan counts; hub registration recipe; use `head -6 wiki/log.md` not offset-based tail reads. (File was never created via `skill_manage write_file` — see the 2026-09-27 serialization bug note above.)
+- `references/broken-link-unique-basename-fix.md` — **path/nesting drift scanner** (the broken-link class `fix_wikilinks.py` misses): unique-basename resolution, `_index`/`index` dir-link registration, artifact filtering, 874-ref/252-file recipe from 2026-10-29, plus the stub-vs-canonical decision table.
 - `references/watchdog-session-2026-09-27.md` — local LLM 503 + context-length cascade: how to group multiple pipeline alerts into ONE infra-incident diagnosis (cross-reference failure timestamps across all jobs' cron outputs before escalating per-job); watchdog's own cron job ID ≠ `wiki-health-fix` ID (filter jobs.json by name, then `ls -t ~/.hermes/cron/output/<id>/`); index header recount race with sibling pipelines (check `git log -1 -- wiki/index.md` before recounting — sibling may have already reconciled); stage ONLY `wiki/log.md` when sibling WIP is uncommitted.
   - NOTE: this reference file could not be created via `skill_manage write_file` (tool returned "file_content is required" despite the parameter being present — a serialization bug seen 2026-09-27). The full session detail is embedded below instead; recreate the file if the tool recovers.
 
@@ -17,7 +19,7 @@ category: wiki
 - Procedure lesson: before escalating alerts per-job, build a timeline of failure timestamps across ALL pipeline jobs' cron outputs; same-window failures = one infra event → one diagnosis.
 - `jobs.json` entry named `wiki-watchdog-fix` may have no output dir — find the watchdog's real hash ID by filtering jobs.json on name, then `ls -t ~/.hermes/cron/output/<id>/`.
 - Index recount race: a sibling (trending-topics, 12:45 UTC) had already reconciled index.md headers before the watchdog's live read — `git log -1 --oneline -- wiki/index.md` first; if already fixed, log "already reconciled by sibling" and skip.
-- Commit hygiene: sibling WIP (uncommitted trending-topics pages) present → staged only `wiki/log.md`, pre-commit hook passed, pushed, sibling WIP verified untouched.
+- Commit hygiene: sibling WIP (uncommitted trending-topics pages) present → staged only `wiki/log.md`, pre-commit hook passed, pushed, sibling WIP verified untouched. **⚠️ This is NOT a blanket "stage only log.md" rule** — when the watchdog applies real batch fixes, stage them too. See "Staging batch fixes cleanly around sibling WIP" for the per-file diff filter that separates your mechanical renames from a sibling's content edits.
 - `references/watchdog-session-2026-09-12.md` — jobs.json failure source; report-only failure classes; header recount formula.
 
 ## Triggers
@@ -680,6 +682,8 @@ The pre-run context and even the on-disk cron config carry STALE state. Never re
 
 `fix_wikilinks.py` (in the `wiki-graph-health` umbrella skill) auto-fixes bare wikilinks (`[[foo]]` → `[[namespace/foo]]`) and cross-namespace links (`[[entities/foo]]` → `[[concepts/foo]]`). The script is deterministic — it walks all `.md` files, checks each bare slug against existing namespace files, and replaces exact matches. No ambiguity, no content loss risk.
 
+⚠️ **This script is NOT the right tool for path/nesting drift.** It handles bare→prefixed and entity↔concept swaps. It does NOT handle the largest broken-link class observed (2026-10-29: 1,590 targets / 3,348 refs): links whose *final segment is correct* but whose directory prefix is wrong — `[[grpo]]`→`concepts/post-training/grpo`, `[[swe-bench]]`→`concepts/ai-benchmarks/swe-bench`, `[[concepts/claude-code/claude-code]]`→`[[entities/claude-code]]`, `[[entities/coding-agents]]`→`[[concepts/coding-agents/coding-agents]]`. Sub-agent pages (`entities/omar-khattab/rlm`) and `index`→dir hub links fall in this class too. Run the **unique-basename resolution scan** in `references/broken-link-unique-basename-fix.md` instead — it remapped 874 refs across 252 files in one pass where the documented script applies to none of them.
+
 **The 10-file threshold tension**: A typical run touches 600+ files (observed: 676 links in 623 files). This is technically over the 10-file limit that triggers escalation. However:
 
 | Factor | Assessment |
@@ -733,6 +737,62 @@ rm /tmp/fix_wikilinks.py
 4. Clean up with `rm`
 
 This is the standard approach for running any skill-linked script in cron mode when `execute_code` is blocked.
+
+## Staging Batch Fixes Cleanly Around Sibling WIP
+
+The "10+ files → stop" rule guards **judgment** edits, not pure renames whose target page already exists and is rich. A 252-file namespace fix is a safe auto-fix. The real risk is not the file count — it's committing a *sibling pipeline's* uncommitted content under your watchdog message. Filter per file, not by count.
+
+**1. Expect the insertion/deletion asymmetry to be meaningless.** After a bulk wikilink replace, `git diff --numstat` showed `added: 965 deleted: 843` and 261 changed files when my scan touched 253. The +122 surplus was entirely sibling WIP (`harvey`, `pinecone`, `hex-technologies`, `raw-works`, `sierra`, `deepmind`, `zig`, `gemini/index`, the gemini-4-argon event). Never conclude "my fix added lines" from the aggregate — classify per file.
+
+**2. The per-file diff filter** — a file is mine only if *every* changed line contains `[[`:
+```bash
+cd ~/ai-topics && : > /tmp/stage.txt
+for f in $(git diff --name-only --diff-filter=M -- wiki/); do
+  if git diff -U0 -- "$f" | grep -E '^[-+]' | grep -v '^[-+][-+]' | grep -qv '\[\['; then
+    echo "SKIP(sibling): $f"
+  else
+    echo "$f" >> /tmp/stage.txt
+  fi
+done
+xargs -a /tmp/stage.txt git add --
+```
+Pure renames leave symmetric `+`/`-` wikilink pairs; a sibling's new section or `updated:` bump introduces lines with no `[[`. (2026-10-29: correctly skipped all 9 siblings, staged 252.)
+
+**3. Re-run the filter against the *staged* diff after adding your own files.** Your intended edits legitimately break the all-lines-are-wikilinks rule — stub→redirect rewrites, header bumps. So run the same check on `git diff --cached -U0` and confirm the surviving "CONTAMINATED" list is exactly the set you meant to rewrite. That list *is* the audit.
+
+**4. Never `git add -A` / `git add wiki/`** in the watchdog. The repo routinely carries 70+ dirty sibling files (`wiki/` + `config/hermes/skills/` + `scripts/hierarchy_report.json`). Those pipelines own their own commits.
+
+**5. Verify the sibling is intact afterwards**: `git status --short -- wiki/ | wc -l` should still show the same ~74 entries at session end.
+
+**6. Redirect-conversion sizes must respect the regression hook**: `.githooks/pre-commit-content-regression.py` only protects pages with ≥40 lines at HEAD that shrink >50% or lose >50 lines. TODO-only stubs (20-25 L) convert freely; do **not** convert a 697-line page (verified: `concepts/dspy-rlm.md` is the canonical rich page, so the 267-byte `dspyrlm.md` twin was the correct one to redirect).
+
+### Log Prepend: the `# Wiki Log` anchor trick (preferred, 2026-10-29)
+
+The skill warns against `---` as `old_string` (thousands of matches) and offers awkward alternatives. There is a simpler safe anchor: **the H1 title plus the first existing entry header**, which is unique because the file has exactly one H1:
+```
+patch(path="~/ai-topics/wiki/log.md",
+      old_string="# Wiki Log\n\n## [2026-10-29] trending-topics",
+      new_string ="# Wiki Log\n\n## [2026-10-29] watchdog | <summary>\n\n- bullets...\n\n---\n\n## [2026-10-29] trending-topics")
+```
+Get the first entry header verbatim with `head -6 wiki/log.md` (NOT `read_file` — `N|` prefix). This carries its own `---` separator, sidesteps the bash `[[...]]` trap and the `cat >>` Unicode/variation-selector block, and needs no /tmp script. Verify after: `grep -c '^# Wiki Log' wiki/log.md` must be **1**.
+
+⚠️ Expect a `_warning: file was modified by sibling subagent ... but this agent never read it` from `patch`. It is a generic staleness notice — it fires whenever a sibling has written the file since session start. `head -6` immediately before patching is sufficient; do not abandon the edit over it. (2026-10-29: warning fired, patch applied cleanly, H1 count 1, pushed.)
+
+### Missing-Target Decision Gate: stub→redirect vs canonical page
+
+When a high-ref broken link has **no** file anywhere, first check whether an apparent canonical is itself a stub — several April-2026 bulk pages are. Verify `title:`/`status:`/line count on every candidate before aliasing to it (2026-10-29: `[[rag]]`'s nominal target `concepts/retrieval-augmented-generation.md` is a 25-line `status: stub`; the real canonical was the 176-line `concepts/rag-systems.md`).
+
+Decision table:
+
+| Situation | Action |
+|---|---|
+| Bare slug + rich canonical exists (≥40 L) | Alias refs to it (mechanical, auto-fix) |
+| TODO-only stub twin of a rich page | Convert to `status: redirect`, re-point incoming refs |
+| Chain of 2+ stubs for one topic | Pick the *rich* endpoint; point every stub at it (e.g. both `evals-skills` and `evals-skills-for-coding-agents` → `comparisons/evals-skills`) |
+| ≥2 plausible rich targets, none dominant | STOP — report for human review (aliasing 135 refs to the wrong page is a judgment call) |
+| No target at all, high refs | Human review / page creation — out of watchdog scope |
+
+⚠️ **Pre-commit tag gate**: `status: redirect` and `status: stub` are frontmatter fields, **not** tags — do not add them to SCHEMA.md. Keep `tags: [concept]`, which is already in the taxonomy. (2026-10-29: verified `grep -c '\`redirect\`' SCHEMA.md` = 0, yet all 5 conversions committed with hooks passing.)
 
 ## Workflow
 

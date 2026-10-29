@@ -224,7 +224,7 @@ def generate_daily_report(date_str, blogs):
 
 ## Checkpoint Anomaly: `blogs_scanned=0` with nonzero `total_new`
 
-`blog_ingest.py` sometimes writes `"blogs_scanned": 0, "new_articles_per_blog": {}` even though the scan actually ran (observed 2026-09-16, see `references/run-log-2026-09-16.md`). The per-blog breakdown comes from parsing blogwatcher-cli stdout and is fragile; `total_new` and the `articles`/`saved_articles` lists are reliable. To verify a suspicious checkpoint, query the DB directly:
+`blog_ingest.py` sometimes writes `"blogs_scanned": 0, "new_articles_per_blog": {}` even though the scan actually ran (observed 2026-09-16, see `references/run-log-2026-09-16.md`; re-confirmed 2026-10-28). The per-blog breakdown comes from parsing blogwatcher-cli stdout and is fragile; `total_new` and the `articles`/`saved_articles` lists are reliable. Note also `scan.total_new` counts ALL new DB articles while `articles.total` is the per-run fetch-cap subset (e.g. 36 vs 20 on 2026-10-28) — the gap is expected, not a save failure. To verify a suspicious checkpoint, query the DB directly:
 
 ```sql
 SELECT b.name, COUNT(*) c FROM articles a JOIN blogs b ON a.blog_id=b.id
