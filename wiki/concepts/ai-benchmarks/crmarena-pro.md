@@ -12,10 +12,10 @@ sources:
     arxiv: "2505.18878"
     year: 2025
 related_concepts:
-  - "[[theagentcompany]]"
-  - "[[gdpval]]"
-  - "[[remote-labor-index]]"
-  - "[[gaia-benchmark]]"
+  - "[[concepts/ai-benchmarks/theagentcompany]]"
+  - "[[concepts/ai-benchmarks/gdpval]]"
+  - "[[concepts/ai-benchmarks/remote-labor-index]]"
+  - "[[concepts/ai-benchmarks/gaia-benchmark]]"
 ---
 
 # CRMArena-Pro
@@ -57,10 +57,10 @@ CRMArena-Pro is built on a realistic Salesforce environment with the following d
 
 ## Related Benchmarks
 
-- **[[theagentcompany]]**: Simulates a full company environment; CRMArena-Pro provides deep evaluation specifically within the CRM/enterprise software domain
-- **[[gdpval]]**: Evaluates economically valuable tasks broadly; CRMArena-Pro focuses on CRM-specific enterprise tasks
-- **[[remote-labor-index]]**: Measures remote work automation; CRMArena-Pro provides a specific instance of enterprise work evaluation
-- **[[gaia-benchmark]]**: Tests general agent capabilities; CRMArena-Pro tests domain-specific enterprise capabilities
+- **[[concepts/ai-benchmarks/theagentcompany]]**: Simulates a full company environment; CRMArena-Pro provides deep evaluation specifically within the CRM/enterprise software domain
+- **[[concepts/ai-benchmarks/gdpval]]**: Evaluates economically valuable tasks broadly; CRMArena-Pro focuses on CRM-specific enterprise tasks
+- **[[concepts/ai-benchmarks/remote-labor-index]]**: Measures remote work automation; CRMArena-Pro provides a specific instance of enterprise work evaluation
+- **[[concepts/ai-benchmarks/gaia-benchmark]]**: Tests general agent capabilities; CRMArena-Pro tests domain-specific enterprise capabilities
 
 ## Connections to Other Wiki Concepts
 

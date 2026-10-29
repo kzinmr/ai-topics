@@ -47,4 +47,4 @@ Combines local models for rapid iterative tasks with Claude Code for daily syste
 
 - [[concepts/local-llm/local-ai]] — Local AI and home lab infrastructure
 - [[entities/claude-code]] — Claude Code coding agent
-- [[concepts/agent-team-swarm]] — Multi-agent orchestration
+- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration

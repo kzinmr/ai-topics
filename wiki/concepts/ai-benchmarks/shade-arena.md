@@ -51,11 +51,11 @@ The benchmark includes **17 environments**, each containing a **benign main task
 
 ## Related Benchmarks
 
-- [[agentdojo]] — Tests prompt injection attacks and defenses in agents
-- [[agentharm]] — Measures harmful task completion by agents
-- [[agent-security-bench]] — Formalized attack/defense taxonomy for LLM agents
-- [[injecagent]] — Benchmarks indirect prompt injection vulnerabilities
+- [[concepts/ai-benchmarks/agentdojo]] — Tests prompt injection attacks and defenses in agents
+- [[concepts/ai-benchmarks/agentharm]] — Measures harmful task completion by agents
+- [[concepts/ai-benchmarks/agent-security-bench]] — Formalized attack/defense taxonomy for LLM agents
+- [[concepts/ai-benchmarks/injecagent]] — Benchmarks indirect prompt injection vulnerabilities
 
 ## Connections to Other Wiki Concepts
 
-SHADE-Arena addresses a frontier concern in **[[agent-security]]**: the possibility that **[[concepts/ai-agents]]** might pursue hidden objectives that diverge from their intended purpose. This connects to broader alignment research on deceptive alignment and goal misgeneralization. The benchmark's focus on **monitoring** as a defense mechanism represents an important direction for scalable oversight, complementing other safety benchmarks like [[agentdojo]] and [[agentharm]] that focus on external attack vectors rather than intrinsic misalignment.
+SHADE-Arena addresses a frontier concern in **[[agent-security]]**: the possibility that **[[concepts/ai-agents]]** might pursue hidden objectives that diverge from their intended purpose. This connects to broader alignment research on deceptive alignment and goal misgeneralization. The benchmark's focus on **monitoring** as a defense mechanism represents an important direction for scalable oversight, complementing other safety benchmarks like [[concepts/ai-benchmarks/agentdojo]] and [[concepts/ai-benchmarks/agentharm]] that focus on external attack vectors rather than intrinsic misalignment.

@@ -61,7 +61,7 @@ Tao describes AI as a **"co-pilot"** for mathematicians—augmenting rather than
 
 ## Formal Proof Verification (Lean)
 
-Tao is a leading advocate for the [[formal-verification-llm-agents|Lean proof assistant]] and the broader formal verification ecosystem in mathematics. He believes the combination of AI with proof assistants represents a transformative development:
+Tao is a leading advocate for the [[concepts/formal-verification-llm-agents|Lean proof assistant]] and the broader formal verification ecosystem in mathematics. He believes the combination of AI with proof assistants represents a transformative development:
 
 - AI can help translate informal mathematical proofs into formal, machine-checkable code.
 - Proof assistants like Lean (from lean-lang.org) can verify that proofs are logically sound, eliminating the "reproducibility crisis" in complex mathematical arguments.
@@ -76,13 +76,13 @@ Tao has expressed strong concern about concentration of power in AI development.
 
 > "It's not good for something as important as AI to be a monopoly held by one or two companies."
 
-His advocacy for [[open-source-ai|open-source AI]] stems from the belief that:
+His advocacy for [[concepts/open-source-ai|open-source AI]] stems from the belief that:
 
 - Mathematics is a fundamentally open and collaborative discipline, and AI tools for mathematics should reflect those values.
 - A diverse ecosystem of AI models and tools prevents lock-in and ensures that researchers at smaller institutions and in the Global South are not excluded.
 - Open models allow for customization and specialization to mathematical domains, which proprietary models may not prioritize.
 
-This position aligns him with the broader movement for open-weight and open-source AI models in scientific research and [[coding-agents|AI-assisted scientific work]].
+This position aligns him with the broader movement for open-weight and open-source AI models in scientific research and [[concepts/coding-agents/coding-agents|AI-assisted scientific work]].
 
 ## oai-math-revised Community Hub (October 2026)
 
@@ -132,8 +132,8 @@ Tao launched **oai-math-revised** (2026-10-24, HN 52 pts): a community hub for r
 
 ## Related Entities
 
-- [[formal-verification-llm-agents]] — Formal verification tools and proof assistants used in AI and mathematics
+- [[concepts/formal-verification-llm-agents]] — Formal verification tools and proof assistants used in AI and mathematics
 - [[formal-methods]] — The broader field of formal methods in software and mathematics
-- [[coding-agents]] — AI agents that assist with coding, including proof formalization
-- [[open-source-ai]] — The movement for open and accessible AI models
+- [[concepts/coding-agents/coding-agents]] — AI agents that assist with coding, including proof formalization
+- [[concepts/open-source-ai]] — The movement for open and accessible AI models
 - Terence Tao's blog at [terrytao.wordpress.com](https://terrytao.wordpress.com) — His primary public platform for AI + mathematics advocacy

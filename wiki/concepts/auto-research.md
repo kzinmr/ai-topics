@@ -16,7 +16,7 @@ sources: [raw/articles/2026-06-17_victor207755822_auto-research-skill-open-sourc
 
 # AutoResearch
 
-AutoResearch is an AI agent framework designed to automate the entire research pipeline — from experiment design to conclusion summarization. It is particularly focused on [[reinforcement-learning]] (RL) research and has demonstrated the ability to autonomously plan GPU experiments, write code, run experiments, debug, and summarize results with zero human intervention.
+AutoResearch is an AI agent framework designed to automate the entire research pipeline — from experiment design to conclusion summarization. It is particularly focused on [[concepts/post-training/reinforcement-learning]] (RL) research and has demonstrated the ability to autonomously plan GPU experiments, write code, run experiments, debug, and summarize results with zero human intervention.
 
 ## Key Features
 
@@ -38,7 +38,7 @@ The agent has been tested on large-scale models, including submitting RL runs on
 
 ## Related Concepts
 
-- [[reinforcement-learning]]: The primary domain of application
+- [[concepts/post-training/reinforcement-learning]]: The primary domain of application
 - [[self-play]]: Core technique inspired by AlphaZero
 - [[concepts/continual-learning]]: The long-term research direction
 - [[concepts/ai-agents]]: The broader category of autonomous research agents

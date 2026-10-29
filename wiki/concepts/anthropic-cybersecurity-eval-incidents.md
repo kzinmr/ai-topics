@@ -23,7 +23,7 @@ related:
   - "[[entities/anthropic]]"
   - "[[concepts/cyber-frontier-models]]"
   - "[[concepts/evaluation/ai-evaluation]]"
-  - "[[concepts/ai-safety]]"
+  - "[[concepts/security-and-governance/ai-safety]]"
 ---
 
 # Anthropic Cybersecurity Evaluation Incidents (2026)
@@ -116,5 +116,5 @@ Third-party commentary (kimmonismus, Zack Korman) emphasized these were **not "b
 - [[concepts/cyber-frontier-models]] — Claude models as cyber-capable frontier systems
 - [[concepts/evaluation/ai-evaluation]] — Broader evaluation methodology context
 - [[entities/anthropic]] — Anthropic entity page
-- [[concepts/ai-safety]] — AI safety considerations
+- [[concepts/security-and-governance/ai-safety]] — AI safety considerations
 - [[concepts/security-and-governance/ai-red-teaming]] — Red teaming methodology

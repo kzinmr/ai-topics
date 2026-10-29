@@ -227,4 +227,4 @@ participants:
 - [[entities/hamel-husain|Hamel Husain]] — host of the workshop series
 - [[entities/thomas-capelle|Thomas Capelle]] — speaker
 - [[concepts/post-training/_index|Post-Training]] — fine-tuning techniques coverage
-- [[concepts/rag|RAG]] — alternative approaches discussed
+- [[concepts/rag-systems|RAG]] — alternative approaches discussed

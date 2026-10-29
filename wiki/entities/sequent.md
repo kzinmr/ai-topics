@@ -65,7 +65,7 @@ Sequent's founding signals a growing consensus among alignment researchers that:
 - [[entities/deepmind]] — Google DeepMind (AI safety research)
 - [[entities/anthropic]] — Anthropic (Constitutional AI, safety-focused lab)
 - [[entities/openai]] — OpenAI (Safety team, though different approach)
-- [[concepts/ai-safety]] — AI safety research field
+- [[concepts/security-and-governance/ai-safety]] — AI safety research field
 - [[concepts/ai-alignment]] — AI alignment techniques
 
 ## Sources

@@ -14,10 +14,10 @@ sources:
     authors: ["OpenAI"]
     year: 2025
 related_concepts:
-  - "[[re-bench]]"
+  - "[[concepts/ai-benchmarks/re-bench]]"
   - "[[core-bench]]"
-  - "[[scienceagentbench]]"
-  - "[[gaia-benchmark]]"
+  - "[[concepts/ai-benchmarks/scienceagentbench]]"
+  - "[[concepts/ai-benchmarks/gaia-benchmark]]"
 ---
 
 # PaperBench
@@ -55,11 +55,11 @@ PaperBench consists of tasks derived from recent AI/ML conference papers with th
 
 ## Related Benchmarks
 
-- **[[re-bench]]**: Tests specific R&D subtasks; PaperBench tests full paper reproduction as a single integrated challenge
+- **[[concepts/ai-benchmarks/re-bench]]**: Tests specific R&D subtasks; PaperBench tests full paper reproduction as a single integrated challenge
 - **[[core-bench]]**: Focuses on computational reproducibility of existing code; PaperBench requires building code from scratch based on paper descriptions
-- **[[scienceagentbench]]**: Covers scientific discovery tasks more broadly, while PaperBench is specifically about paper replication in AI/ML
-- **[[gaia-benchmark]]**: Tests general assistant capabilities that contribute to but are insufficient for full paper reproduction
+- **[[concepts/ai-benchmarks/scienceagentbench]]**: Covers scientific discovery tasks more broadly, while PaperBench is specifically about paper replication in AI/ML
+- **[[concepts/ai-benchmarks/gaia-benchmark]]**: Tests general assistant capabilities that contribute to but are insufficient for full paper reproduction
 
 ## Connections to Other Wiki Concepts
 
-PaperBench connects to critical discussions about [[research-reproducibility]] and the [[replication-crisis]] in science. If AI agents can reproduce papers, this could transform how the scientific community validates research claims. The benchmark also relates to [[ai-safety]] concerns — an agent capable of reproducing papers could potentially accelerate [[ai-research]] in ways that need careful monitoring. PaperBench's rubric-based evaluation approach draws from [[rubric-evaluation]] methodologies and connects to broader discussions about [[automated-evaluation]] of complex outputs.
+PaperBench connects to critical discussions about [[research-reproducibility]] and the [[replication-crisis]] in science. If AI agents can reproduce papers, this could transform how the scientific community validates research claims. The benchmark also relates to [[concepts/security-and-governance/ai-safety]] concerns — an agent capable of reproducing papers could potentially accelerate [[ai-research]] in ways that need careful monitoring. PaperBench's rubric-based evaluation approach draws from [[rubric-evaluation]] methodologies and connects to broader discussions about [[automated-evaluation]] of complex outputs.

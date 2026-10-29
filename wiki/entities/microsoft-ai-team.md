@@ -40,7 +40,7 @@ The Microsoft AI Team operates as an internal research division of [[entities/mi
 ## Related Concepts
 - [[entities/mai-thinking-1]] — MAI flagship reasoning model
 - [[entities/microsoft]] — Parent company
-- [[concepts/reinforcement-learning]] — Core training methodology
+- [[concepts/post-training/reinforcement-learning]] — Core training methodology
 - [[concepts/mixture-of-experts]] — Model architecture
 - [[concepts/mai-thinking]] — Hill-climbing approach concept
 

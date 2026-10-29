@@ -49,7 +49,7 @@ This design solves the precision loss and prefix-caching obstacles identified in
 
 ## Context: M2 Series Foundation
 
-MSA builds on lessons from the M2 series (229.9B total params, 9.8B active per token, 256 fine-grained experts with sigmoid gating). M2 achieved [[concepts/swe-bench-pro|SWE-Bench Pro]] scores of 56-59 and demonstrated self-evolving agent capabilities via the **Forge** RL training system.
+MSA builds on lessons from the M2 series (229.9B total params, 9.8B active per token, 256 fine-grained experts with sigmoid gating). M2 achieved [[concepts/ai-benchmarks/swe-bench-pro|SWE-Bench Pro]] scores of 56-59 and demonstrated self-evolving agent capabilities via the **Forge** RL training system.
 
 ## Related Pages
 
@@ -57,4 +57,4 @@ MSA builds on lessons from the M2 series (229.9B total params, 9.8B active per t
 - [[concepts/deepseek-mla]] — DeepSeek's Multi-head Latent Attention
 - [[concepts/long-context]] — Long context handling in LLMs
 - [[concepts/kv-cache]] — KV cache optimization
-- [[concepts/swe-bench-pro]] — SWE-Bench Pro benchmark
+- [[concepts/ai-benchmarks/swe-bench-pro]] — SWE-Bench Pro benchmark

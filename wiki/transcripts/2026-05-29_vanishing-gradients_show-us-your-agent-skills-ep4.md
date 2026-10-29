@@ -94,7 +94,7 @@ The Season 1 finale. Three main guests plus John Berryman as interlocutor, spann
 ## Connection to Wiki Concepts
 
 - [[concepts/agentic-engineering]] — Hamel's skills ecosystem critique; Doug's auto-research workflow
-- [[concepts/ai-safety]] — Hamel's skills security nightmare and invisible HTML problem
+- [[concepts/security-and-governance/ai-safety]] — Hamel's skills security nightmare and invisible HTML problem
 - [[concepts/context-engineering]] — Hamel's "skills are decompressed prompts" framing
 - [[concepts/generator-evaluator-pattern]] — Doug's auto-research eval loop; LLM judge as user message
 - [[concepts/personal-software]] — Chris's Pi TUI; Hamel's reverse-engineering skill

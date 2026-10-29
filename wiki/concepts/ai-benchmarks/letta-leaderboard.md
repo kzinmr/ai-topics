@@ -49,11 +49,11 @@ The Letta Leaderboard uses memory-centric evaluation tasks:
 
 ## Related Benchmarks
 
-- [[agent-memory-bench]] — Related benchmark from the same Letta/MemGPT team on agent memory
-- [[hal-leaderboard]] — Princeton's aggregated agent leaderboard
-- [[trail]] — Agent trace reasoning and issue localization
-- [[skillsbench]] — BenchFlow's skill acquisition benchmark
+- [[concepts/ai-benchmarks/agent-memory-bench]] — Related benchmark from the same Letta/MemGPT team on agent memory
+- [[concepts/ai-benchmarks/hal-leaderboard]] — Princeton's aggregated agent leaderboard
+- [[concepts/ai-benchmarks/trail]] — Agent trace reasoning and issue localization
+- [[concepts/ai-benchmarks/skillsbench]] — BenchFlow's skill acquisition benchmark
 
 ## Connections to Other Wiki Concepts
 
-The Letta Leaderboard highlights that memory is a critical but often overlooked dimension of [[concepts/ai-agents]] capability. It connects directly to the [[agent-memory-bench]] and the Letta team's broader thesis that effective memory management is essential for capable agents. This focus on memory as a distinct evaluation axis complements [[agent-evaluation]] frameworks like [[hal-leaderboard]] that aggregate across multiple capability dimensions.
+The Letta Leaderboard highlights that memory is a critical but often overlooked dimension of [[concepts/ai-agents]] capability. It connects directly to the [[concepts/ai-benchmarks/agent-memory-bench]] and the Letta team's broader thesis that effective memory management is essential for capable agents. This focus on memory as a distinct evaluation axis complements [[agent-evaluation]] frameworks like [[concepts/ai-benchmarks/hal-leaderboard]] that aggregate across multiple capability dimensions.

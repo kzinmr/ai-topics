@@ -9,10 +9,10 @@ sources:
     arxiv: "2510.04374"
     year: 2025
 related_concepts:
-  - "[[remote-labor-index]]"
-  - "[[crmarena-pro]]"
-  - "[[theagentcompany]]"
-  - "[[gaia-benchmark]]"
+  - "[[concepts/ai-benchmarks/remote-labor-index]]"
+  - "[[concepts/ai-benchmarks/crmarena-pro]]"
+  - "[[concepts/ai-benchmarks/theagentcompany]]"
+  - "[[concepts/ai-benchmarks/gaia-benchmark]]"
 ---
 
 # GDPval
@@ -52,10 +52,10 @@ GDPval constructs evaluation tasks from real-world economic activities:
 
 ## Related Benchmarks
 
-- **[[remote-labor-index]]**: Measures automation of remote work specifically; GDPval covers economically valuable tasks more broadly
-- **[[crmarena-pro]]**: Tests enterprise CRM tasks; GDPval spans a wider range of economic activities
-- **[[theagentcompany]]**: Simulates company work environments; GDPval focuses on task-level economic value assessment
-- **[[gaia-benchmark]]**: Tests general AI capabilities; GDPval specifically targets economically productive capabilities
+- **[[concepts/ai-benchmarks/remote-labor-index]]**: Measures automation of remote work specifically; GDPval covers economically valuable tasks more broadly
+- **[[concepts/ai-benchmarks/crmarena-pro]]**: Tests enterprise CRM tasks; GDPval spans a wider range of economic activities
+- **[[concepts/ai-benchmarks/theagentcompany]]**: Simulates company work environments; GDPval focuses on task-level economic value assessment
+- **[[concepts/ai-benchmarks/gaia-benchmark]]**: Tests general AI capabilities; GDPval specifically targets economically productive capabilities
 
 ## Connections to Other Wiki Concepts
 

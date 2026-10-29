@@ -47,5 +47,5 @@ MRC was part of OpenAI's unusually busy May 2026 release week, which also includ
 - [[entities/openai]] — OpenAI's broader infrastructure strategy
 - [[concepts/xai-anthropic-colossus-deal]] — GPU compute as strategic resource
 - [[entities/nvidia]] — Dominant GPU hardware vendor
-- [[concepts/distributed-training]] — Distributed training infrastructure challenges
+- [[concepts/training-infra/distributed-training]] — Distributed training infrastructure challenges
 - [[concepts/mixture-of-experts]] — Related infrastructure scaling

@@ -11,14 +11,14 @@ sources:
   - "arXiv:2506.01937"
 related_concepts:
   - "[[reward-models]]"
-  - "[[rlhf]]"
-  - "[[llm-as-judge]]"
-  - "[[rewardbench]]"
+  - "[[concepts/post-training/rlhf]]"
+  - "[[concepts/evaluation/llm-as-judge]]"
+  - "[[concepts/ai-benchmarks/rewardbench]]"
 ---
 
 # RewardBench 2
 
-RewardBench 2 is the successor to [[rewardbench]], advancing the evaluation of reward models with improved datasets and methodology. Published as arXiv:2506.01937, it addresses limitations of the original benchmark while expanding coverage and rigor.
+RewardBench 2 is the successor to [[concepts/ai-benchmarks/rewardbench]], advancing the evaluation of reward models with improved datasets and methodology. Published as arXiv:2506.01937, it addresses limitations of the original benchmark while expanding coverage and rigor.
 
 ## What It Measures
 
@@ -49,11 +49,11 @@ Key improvements over the original RewardBench:
 
 ## Related Benchmarks
 
-- [[rewardbench]] — Original reward model evaluation benchmark
-- [[judgebench]] — LLM-as-judge evaluation
-- [[verifybench]] — Reasoning verifier benchmarking
-- [[decodingtrust]] — Trustworthiness evaluation
+- [[concepts/ai-benchmarks/rewardbench]] — Original reward model evaluation benchmark
+- [[concepts/ai-benchmarks/judgebench]] — LLM-as-judge evaluation
+- [[concepts/ai-benchmarks/verifybench]] — Reasoning verifier benchmarking
+- [[concepts/ai-benchmarks/decodingtrust]] — Trustworthiness evaluation
 
 ## Connections to Other Wiki Concepts
 
-RewardBench 2 advances **reward-engineering** by providing more rigorous evaluation methodology. It builds directly on [[rewardbench]]'s foundation while addressing identified shortcomings. The benchmark connects to **[[llm-as-judge]]** research through its evaluation of model-based preference assessment. Understanding reward model quality is critical for improving **[[rlhf]]** pipelines and diagnosing **[[reward-hacking]]** failures in alignment training.
+RewardBench 2 advances **reward-engineering** by providing more rigorous evaluation methodology. It builds directly on [[concepts/ai-benchmarks/rewardbench]]'s foundation while addressing identified shortcomings. The benchmark connects to **[[concepts/evaluation/llm-as-judge]]** research through its evaluation of model-based preference assessment. Understanding reward model quality is critical for improving **[[concepts/post-training/rlhf]]** pipelines and diagnosing **[[concepts/evaluation/reward-hacking]]** failures in alignment training.

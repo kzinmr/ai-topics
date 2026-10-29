@@ -39,7 +39,7 @@ The clearest documented instance to date. Reported by the Quincy Institute's *Re
 ## Relationship to adjacent concepts
 
 - **Generative Engine Optimization (GEO)** — the commercial precursor; "the chatbot version of SEO." See [[concepts/gpt/gpt-5-6]] ("ChatGPT Search `site:` Operator at Scale") for how chatbot search fan-out works.
-- **[[concepts/ai-safety]] / [[concepts/security-and-governance/ai-safety]]** — chatbot influence is an *input-side* attack surface: the model's outputs are only as reliable as the retrieved corpus.
+- **[[concepts/security-and-governance/ai-safety]] / [[concepts/security-and-governance/ai-safety]]** — chatbot influence is an *input-side* attack surface: the model's outputs are only as reliable as the retrieved corpus.
 - **[[concepts/security-and-governance/ai-text-watermarking]]** — the obvious defense (provenance marking) operates on the wrong side of the pipeline for this threat.
 - **Disinformation / foreign influence** — traditional instruments (think tanks, media outlets) are being *repurposed as LLM feedstock*: the artifact is no longer the article itself but its effect on machine-generated answers.
 

@@ -95,4 +95,4 @@ When BEIR evaluation data overlapping with training data is removed:
 - **Framework**: [[concepts/pylate|PyLate]] (CIKM 2025)
 - **Backbone**: ModernBERT, Ettin
 - **Predecessors**: ColBERT-Zero, GTE-ModernColBERT-v1
-- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[concepts/embeddings|Embeddings]], [[concepts/embedding-long-context-degradation|Embedding Long-Context Degradation]]
+- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[entities/embeddings|Embeddings]], [[concepts/embedding-long-context-degradation|Embedding Long-Context Degradation]]

@@ -139,7 +139,7 @@ Customer validation (Will Laughlin, VP Engineering, Bilt): power users get headr
 
 ## Related Pages
 
-- [[concepts/claude-code/claude-code]] — Anthropic's Claude Code
+- [[entities/claude-code]] — Anthropic's Claude Code
 - [[concepts/coding-agents/coding-agents]] — AI coding agent landscape
 - [[entities/simon-willison]] — Simon Willison's analysis
 - [[concepts/ai-tool-pricing]] — AI tool pricing models

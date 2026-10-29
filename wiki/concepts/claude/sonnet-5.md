@@ -79,7 +79,7 @@ Anthropic positioned Sonnet 5 as "our most agentic Sonnet yet" with strengths in
 - **Autonomous execution**: Reduced human-in-the-loop requirements
 - **Coding**: Significant improvements over Sonnet 4.6 in software engineering tasks
 
-The model was rolled out immediately across Claude, [[concepts/claude-code/claude-code|Claude Code]], the Anthropic API, and ecosystem partners ([[entities/harvey|Harvey]], [[entities/glean|Glean]], etc.).
+The model was rolled out immediately across Claude, [[entities/claude-code|Claude Code]], the Anthropic API, and ecosystem partners ([[entities/harvey|Harvey]], [[entities/glean|Glean]], etc.).
 
 ## Enterprise Benchmarks
 
@@ -140,4 +140,4 @@ Per the Sonnet 5 system card, the model is **significantly less capable at cyber
 - [[concepts/claude/mythos]] — Claude Mythos family (cyber-capable frontier models)
 - [[concepts/claude/index]] — Claude models hub
 - [[entities/anthropic]] — Anthropic entity page
-- [[concepts/claude-code/claude-code]] — Claude Code (coding agent)
+- [[entities/claude-code]] — Claude Code (coding agent)

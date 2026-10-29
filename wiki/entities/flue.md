@@ -99,7 +99,7 @@ Key commitments:
 
 Positioning quote: *"The best tools are the ones that float above the host. That opens the door for the most developer adoption and the most innovation."*
 
-Source: [React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue](https://www.latent.space/p/flue-2) — Richard MacManus interview with Fred Schott, Latent Space, Aug 15 2026. Connects to the Bret Taylor framing ("jQuery era of agents, not the react era") and the [[concepts/harness-engineering]] / [[concepts/agent-team-swarm|meta-harness]] debates.
+Source: [React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue](https://www.latent.space/p/flue-2) — Richard MacManus interview with Fred Schott, Latent Space, Aug 15 2026. Connects to the Bret Taylor framing ("jQuery era of agents, not the react era") and the [[concepts/harness-engineering]] / [[concepts/multi-agents/agent-team-swarm|meta-harness]] debates.
 
 ## Related Concepts
 

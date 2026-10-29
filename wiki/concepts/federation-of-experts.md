@@ -57,7 +57,7 @@ FoE represents a practical advance in distributed LLM inference. Its approach is
 ## Related
 
 - [[concepts/mixture-of-experts]] — Foundational MoE concept
-- [[concepts/distributed-training]] — Related distributed computing concepts
+- [[concepts/training-infra/distributed-training]] — Related distributed computing concepts
 - [[concepts/inference]] — Broader inference optimization techniques
 - [[concepts/speculative-decoding]] — Complementary latency reduction approach
 - [[concepts/kv-cache]] — KV cache management for inference

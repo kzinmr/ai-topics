@@ -55,6 +55,6 @@ This lawsuit marks a major escalation in the Apple-OpenAI relationship, which ha
 
 ## Related
 - [[entities/openai]]
-- [[entities/apple]]
+- [[concepts/apple]]
 - [[concepts/ai-hardware]]
 - [[concepts/ai-industry-economics]]

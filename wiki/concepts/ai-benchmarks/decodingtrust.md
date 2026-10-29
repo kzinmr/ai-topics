@@ -54,11 +54,11 @@ The benchmark employs diverse evaluation methodologies:
 
 ## Related Benchmarks
 
-- [[agentdojo]] — Agent-specific prompt injection evaluation
-- [[agentharm]] — Harmful agent task completion
-- [[rewardbench]] — Reward model evaluation including safety dimensions
+- [[concepts/ai-benchmarks/agentdojo]] — Agent-specific prompt injection evaluation
+- [[concepts/ai-benchmarks/agentharm]] — Harmful agent task completion
+- [[concepts/ai-benchmarks/rewardbench]] — Reward model evaluation including safety dimensions
 - [[cybench]] — Cybersecurity capability evaluation
 
 ## Connections to Other Wiki Concepts
 
-DecodingTrust provides a broad foundation for **safety-evaluation** that complements agent-specific benchmarks like [[agentdojo]] and [[agentharm]]. Its multi-dimensional approach to **trustworthiness** has influenced how the field thinks about holistic AI safety assessment. The benchmark connects to [[fairness]] research, privacy-preserving ML, and robustness evaluation, serving as a bridge between narrow safety benchmarks and comprehensive trustworthiness evaluation for **[[concepts/ai-agents]]** and general-purpose language models.
+DecodingTrust provides a broad foundation for **safety-evaluation** that complements agent-specific benchmarks like [[concepts/ai-benchmarks/agentdojo]] and [[concepts/ai-benchmarks/agentharm]]. Its multi-dimensional approach to **trustworthiness** has influenced how the field thinks about holistic AI safety assessment. The benchmark connects to [[fairness]] research, privacy-preserving ML, and robustness evaluation, serving as a bridge between narrow safety benchmarks and comprehensive trustworthiness evaluation for **[[concepts/ai-agents]]** and general-purpose language models.

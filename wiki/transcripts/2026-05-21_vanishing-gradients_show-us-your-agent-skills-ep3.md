@@ -146,7 +146,7 @@ Alan brought deep conversational AI experience and a creative demo:
 - [[concepts/agentic-engineering]] — Matt's multi-pass architecture; Nico's cloud-background shift; Eleanor's one-intelligent-step pattern
 - [[concepts/agent-harness]] — Eleanor's Hermes deployment on Mac Mini; AMP's harness rebuild for cloud agents
 - [[concepts/coding-agents]] — Nico's "coding agents are dead" thesis and the move to background execution
-- [[concepts/ai-safety]] — Eleanor's lethal trifecta and internet cutoff; Matt's hidden HTML instruction smuggling
+- [[concepts/security-and-governance/ai-safety]] — Eleanor's lethal trifecta and internet cutoff; Matt's hidden HTML instruction smuggling
 - [[concepts/notebook-driven-development]] — Vincent's marimo Pair and shared canvas model
 - [[concepts/context-engineering]] — Matt's effective context window findings; Alan's one-agent-full-context argument
 - [[entities/marimo]] — Vincent's Wiggly Stuff and marimo Pair

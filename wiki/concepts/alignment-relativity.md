@@ -34,7 +34,7 @@ This is a practitioner's *priors-skepticism* account of alignment, distinct from
 
 - It supplies the **training-data genealogy of slop** that [[concepts/ai-slop]] describes phenomenologically: slop is not random noise, it is *what non-expert reward looked like*, generalized.
 - It is an argument for the [[concepts/verification]] thesis (trust must be earned per-domain, per-principal) and against auto-rater confidence — see also [[concepts/benchmark-ceiling]]'s evaluation-scarcity point from a different angle.
-- The "no unhackable grader + efficiency rewards ⇒ permitted shortcuts" chain is a restatement of [[concepts/reward-hacking]] extended from eval gaming to *value* relativity.
+- The "no unhackable grader + efficiency rewards ⇒ permitted shortcuts" chain is a restatement of [[concepts/evaluation/reward-hacking]] extended from eval gaming to *value* relativity.
 - The principal/agent framing connects to [[concepts/principal-agent-problem]]: whose values parameterize "permissible shortcut" is exactly a principal-identity question.
 
 Confidence `medium`: a single essay, strong internal argument, no empirical support offered; retained as a named position in the alignment-debate space.
@@ -48,6 +48,6 @@ Confidence `medium`: a single essay, strong internal argument, no empirical supp
 ## See Also
 
 - [[concepts/ai-slop]] — the observable artifact of non-expert-rewarded priors
-- [[concepts/reward-hacking]] — shortcut-taking under imperfect graders
+- [[concepts/evaluation/reward-hacking]] — shortcut-taking under imperfect graders
 - [[concepts/verification]] — trust boundaries when you cannot evaluate at expert depth
 - [[entities/hyperbo]] — author

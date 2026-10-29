@@ -33,15 +33,15 @@ Co-founder of Microsoft and chair of the Gates Foundation. In August 2026 he pub
 ## Positioning & Reception
 
 - Explicit bias disclosure: tech-industry financial ties; all AI-related profits go to the Foundation.
-- Gary Marcus (Aug 26 2026) called it "excellent," noting it echoes his *Taming Silicon Valley* (2024) themes — while adding independent *scientists* to the table, which Gates omits. Notable: Gates converges with a long-time skeptic [[gary-marcus]] on risks while remaining optimistic on benefits (healthcare via Viz.ai, agriculture in low-income countries, government services, mental health, "productive struggle" education AI).
+- Gary Marcus (Aug 26 2026) called it "excellent," noting it echoes his *Taming Silicon Valley* (2024) themes — while adding independent *scientists* to the table, which Gates omits. Notable: Gates converges with a long-time skeptic [[entities/gary-marcus]] on risks while remaining optimistic on benefits (healthcare via Viz.ai, agriculture in low-income countries, government services, mental health, "productive struggle" education AI).
 - Sits alongside Pope Leo XIV's May 2026 AI encyclical as a major non-technologist institutional intervention in AI policy.
 
 ## Related
 
 - [[ai-employment-displacement]] — the labor thesis Gates institutionalizes
-- [[gary-marcus]] — skeptic whose themes Gates echoes
+- [[entities/gary-marcus]] — skeptic whose themes Gates echoes
 - [[ai-governance]] — the framework proposal space
-- [[forward-deployed-engineering]] — one "new AI job" archetype against Gates' displacement picture
+- [[concepts/forward-deployed-engineering]] — one "new AI job" archetype against Gates' displacement picture
 
 ## Sources
 

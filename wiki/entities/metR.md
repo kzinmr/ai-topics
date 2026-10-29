@@ -15,7 +15,7 @@ sources:
 
 # METR (Model Evaluation & Threat Research)
 
-**METR** is an independent research lab focused on evaluating AI capability, safety, and the pace of AI-driven progress. It publishes empirical studies on how quickly AI systems are advancing across domains and how that translates to real-world utility — a key resource for the [[concepts/evaluation/ai-evals]] and [[concepts/ai-safety]] conversations.
+**METR** is an independent research lab focused on evaluating AI capability, safety, and the pace of AI-driven progress. It publishes empirical studies on how quickly AI systems are advancing across domains and how that translates to real-world utility — a key resource for the [[concepts/evaluation/ai-evals]] and [[concepts/security-and-governance/ai-safety]] conversations.
 
 METR has contributed to several benchmark and evaluation threads in this wiki (e.g. RE-Bench, the RAM relative-adoption metric, and Epoch AI × METR long-horizon programming benchmarks).
 
@@ -39,7 +39,7 @@ METR's differential-acceleration framing (some domains accelerate, others don't)
 - [[concepts/ai-discovery-acceleration]] — the differential-acceleration finding
 - [[concepts/evaluation/ai-evals]] — evaluation methodology
 - [[concepts/recursive-self-improvement]] — RSI
-- [[concepts/ai-safety]] — AI safety
+- [[concepts/security-and-governance/ai-safety]] — AI safety
 
 ## Sources
 - METR note: [Have We Seen an Acceleration in Discoveries?](https://metr.org/notes/2026-08-14-llm-contribution-to-discoveries/) (Cunningham & Rush, 2026-08-14)

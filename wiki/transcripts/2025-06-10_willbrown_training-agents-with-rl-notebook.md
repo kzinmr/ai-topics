@@ -31,7 +31,7 @@ participants:
 
 ## Overview
 
-This notebook walkthrough accompanies the "Training Agents with Reinforcement Learning" lightning lesson — the second pre-course session for [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering]]. It demonstrates a complete end-to-end pipeline for training a tool-using agent with RL: from building local search tools over a Wikipedia corpus, through synthetic QA data generation, baseline evaluation with LLM judges, and into live [[concepts/grpo-rl-training|GRPO]] training using the [verifiers](https://github.com/PrimeIntellect-ai/verifiers) library.
+This notebook walkthrough accompanies the "Training Agents with Reinforcement Learning" lightning lesson — the second pre-course session for [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering]]. It demonstrates a complete end-to-end pipeline for training a tool-using agent with RL: from building local search tools over a Wikipedia corpus, through synthetic QA data generation, baseline evaluation with LLM judges, and into live [[concepts/post-training/grpo-rl-training|GRPO]] training using the [verifiers](https://github.com/PrimeIntellect-ai/verifiers) library.
 
 The key idea: **you can take a working agent, define what "good" looks like, and use RL to make it better** — no supervised fine-tuning data required, just reward signals.
 
@@ -267,7 +267,7 @@ The 10→200 sample progression is a practical pattern: test cheaply first, then
 
 ## Section 7: GRPO Training
 
-The culmination — using [[concepts/grpo-rl-training|Group Relative Policy Optimization]] to actually train the agent. The verifiers library handles the complexity of converting environment rollouts into RL training data.
+The culmination — using [[concepts/post-training/grpo-rl-training|Group Relative Policy Optimization]] to actually train the agent. The verifiers library handles the complexity of converting environment rollouts into RL training data.
 
 ### How GRPO Works
 
@@ -296,7 +296,7 @@ $$A_i = \frac{r_i - \text{mean}(\{r_1, ..., r_G\})}{\text{std}(\{r_1, ..., r_G\}
 
 If your group has G=8 completions and 2 get the right answer (reward=1.0) while 6 get it wrong (reward=0.0), those 2 correct completions get high positive advantage and the 6 incorrect ones get negative advantage. The policy is then updated to make the correct completions more likely.
 
-This is **~50% less compute** than PPO for equivalent training quality, which is why [[concepts/grpo-rl-training|GRPO]] has become the standard RL backbone since [[concepts/deepseek-r1|DeepSeek-R1]].
+This is **~50% less compute** than PPO for equivalent training quality, which is why [[concepts/post-training/grpo-rl-training|GRPO]] has become the standard RL backbone since [[concepts/deepseek-r1|DeepSeek-R1]].
 
 ### Key Training Properties
 
@@ -364,7 +364,7 @@ The agent doesn't just learn *answers* — it learns **tool-use strategies**: wh
 - [[transcripts/2025-06-17_willbrown_agents-mcp-rl-agent-patterns-lecture|Lesson 1: Agent Patterns & Principles (Lecture)]]
 - [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering: From MCP to RL]]
 - [[entities/will-brown]]
-- [[concepts/grpo-rl-training|GRPO RL Training]]
+- [[concepts/post-training/grpo-rl-training|GRPO RL Training]]
 - [[concepts/agentic-rl|Agentic RL]]
 - [[concepts/agent-evaluation-methodology|Agent Evaluation Methodology]]
 - [[entities/prime-intellect|Prime Intellect]]

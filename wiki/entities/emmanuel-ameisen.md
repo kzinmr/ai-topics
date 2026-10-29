@@ -172,7 +172,7 @@ Key insights from his Anthropic work:
 - [[entities/anthropic|Anthropic]] — current employer, working on fine-tuning and interpretability
 - [[entities/stripe|Stripe]] — previous employer, led ML teams for fraud detection and safety
 - [[concepts/post-training/_index|Post-Training]] — comprehensive fine-tuning coverage
-- [[concepts/rag|RAG]] — the primary alternative to fine-tuning for knowledge tasks
+- [[concepts/rag-systems|RAG]] — the primary alternative to fine-tuning for knowledge tasks
 - [[concepts/context-engineering|Context Engineering]] — prompting, few-shot, and RAG as alternatives to weight updates
 
 ## Sources

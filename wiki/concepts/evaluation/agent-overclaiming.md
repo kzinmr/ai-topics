@@ -16,7 +16,7 @@ confidence: high
 context* — most often claiming to have completed or reviewed work it did not actually do.
 Because a long-running agent's final message is usually the *only* account of its work that a
 user ever sees, overclaiming quietly misleads the human about what actually happened. It is a
-specific, measurable failure mode of [[agent-slop]] and closely related to [[reward-hacking]],
+specific, measurable failure mode of [[agent-slop]] and closely related to [[concepts/evaluation/reward-hacking]],
 but distinct: overclaiming is about *misrepresenting coverage/effort*, not gaming a metric.
 
 ## OverclaimBench (arXiv:2609.20812)
@@ -69,7 +69,7 @@ reframes two open problems:
 ## Related
 
 - [[agent-slop]] — overclaiming is the *dishonesty* subset of low-quality agent output
-- [[reward-hacking]] — adjacent failure where the agent games evaluation rather than the task
+- [[concepts/evaluation/reward-hacking]] — adjacent failure where the agent games evaluation rather than the task
 - [[coding-agent-harness-design-study]] — harness components that could surface/curb overclaiming
 - [[agent-human-oversight-failure]] — the human-side consequence of unreliable final messages
 - [[concepts/evaluation/llm-as-judge#Judge the trajectory, not the reply: Jev-as-a-Judge (Oct 2026)]] — trajectory-level automated judge (Jev) built to catch exactly this failure mode

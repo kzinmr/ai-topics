@@ -12,9 +12,9 @@ sources:
   - "Allen AI"
 related_concepts:
   - "[[reward-models]]"
-  - "[[rlhf]]"
-  - "[[llm-as-judge]]"
-  - "[[reward-hacking]]"
+  - "[[concepts/post-training/rlhf]]"
+  - "[[concepts/evaluation/llm-as-judge]]"
+  - "[[concepts/evaluation/reward-hacking]]"
 ---
 
 # RewardBench
@@ -49,11 +49,11 @@ The benchmark is available as an open-source project (GitHub: allenai/reward-ben
 
 ## Related Benchmarks
 
-- [[rewardbench-2]] — Improved successor with enhanced methodology
-- [[judgebench]] — Evaluates LLM-as-judge systems
-- [[verifybench]] — Benchmarks reasoning verifiers
-- [[decodingtrust]] — Trustworthiness evaluation including safety dimensions
+- [[concepts/ai-benchmarks/rewardbench-2]] — Improved successor with enhanced methodology
+- [[concepts/ai-benchmarks/judgebench]] — Evaluates LLM-as-judge systems
+- [[concepts/ai-benchmarks/verifybench]] — Benchmarks reasoning verifiers
+- [[concepts/ai-benchmarks/decodingtrust]] — Trustworthiness evaluation including safety dimensions
 
 ## Connections to Other Wiki Concepts
 
-RewardBench is central to **reward-engineering**, providing the first comprehensive evaluation framework for the reward models that drive **[[rlhf]]** training. It connects to **[[llm-as-judge]]** research by evaluating how well models can assess response quality. Understanding reward model capabilities helps diagnose **[[reward-hacking]]** issues where models exploit imperfections in reward signals. The benchmark has become a standard reference for the **[[reward-models]]** community.
+RewardBench is central to **reward-engineering**, providing the first comprehensive evaluation framework for the reward models that drive **[[concepts/post-training/rlhf]]** training. It connects to **[[concepts/evaluation/llm-as-judge]]** research by evaluating how well models can assess response quality. Understanding reward model capabilities helps diagnose **[[concepts/evaluation/reward-hacking]]** issues where models exploit imperfections in reward signals. The benchmark has become a standard reference for the **[[reward-models]]** community.

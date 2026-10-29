@@ -210,7 +210,7 @@ Calvin French-Owen's firsthand account of OpenAI's internal culture and Codex de
 
 - [[entities/openai]] - OpenAI entity page
 - [[entities/openai-codex]] - Codex details
-- [[entities/coding-agents]] - Coding agents concept
+- [[concepts/coding-agents/coding-agents]] - Coding agents concept
 - [[concepts/ai-agents]] - AI agents concept
 - [[entities/anthropic]] - Anthropic (competitive comparison)
 - [[google-deepmind]] - Google DeepMind (competitive comparison)

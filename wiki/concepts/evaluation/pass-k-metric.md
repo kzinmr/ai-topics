@@ -14,9 +14,9 @@ tags:
 sources: []
 related:
   - "[[concepts/ai-benchmarks/tau-bench]]"
-  - "[[concepts/tau-squared-bench]]"
-  - "[[concepts/tau-knowledge]]"
-  - "[[concepts/tau-voice]]"
+  - "[[concepts/ai-benchmarks/tau-squared-bench]]"
+  - "[[concepts/ai-benchmarks/tau-knowledge]]"
+  - "[[concepts/ai-benchmarks/tau-voice]]"
 ---
 
 # pass^k

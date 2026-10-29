@@ -54,7 +54,7 @@ sources:
 - [[concepts/test-time-scaling]] — the canonical technical treatment of this concept
 - [[concepts/test-time-compute]] — three-axes framing (sleep / test / post-peak)
 - [[concepts/chain-of-thought]] — the original cheap form of inference-time compute
-- [[concepts/rlvr]] — RL with verifiable rewards, the training recipe that teaches models to *use* inference compute
+- [[concepts/post-training/rlvr]] — RL with verifiable rewards, the training recipe that teaches models to *use* inference compute
 - [[concepts/token-economics]] — pricing and budgeting of this compute axis
 
 ## Graph Structure Query

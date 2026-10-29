@@ -20,7 +20,7 @@ sources:
 
 ## Overview
 
-Apache Burr (Incubating) is a pure Python framework for building reliable AI agents and decision-making applications. Originating from [DagWorks](https://github.com/DAGWorks-Inc) and now under the Apache Incubator, Burr provides a lightweight, composable API for developing everything from simple chatbots to complex [[multi-agents/multi-agent-systems|multi-agent systems]].
+Apache Burr (Incubating) is a pure Python framework for building reliable AI agents and decision-making applications. Originating from [DagWorks](https://github.com/DAGWorks-Inc) and now under the Apache Incubator, Burr provides a lightweight, composable API for developing everything from simple chatbots to complex [[concepts/multi-agents/multi-agent-systems|multi-agent systems]].
 
 The framework is named after Aaron Burr — a deliberate reference to the musical *Hamilton*, as Burr builds on **Hamilton**, DagWorks' micro-framework for defining typed dataflows. The naming convention (Hamilton → Burr) reflects Burr's architectural lineage: where Hamilton provides the data transformation layer, Burr adds the state-machine execution layer for agentic decision-making.
 
@@ -108,6 +108,6 @@ This mirrors a broader debate in the [[agent-framework]] ecosystem: whether fram
 ## See Also
 
 - [[concepts/langgraph]] — LangChain's event-driven agent orchestration framework
-- [[multi-agents/multi-agent-systems]] — Patterns and architectures for multi-agent coordination
+- [[concepts/multi-agents/multi-agent-systems]] — Patterns and architectures for multi-agent coordination
 - [[concepts/durable-execution]] — Long-running, fault-tolerant agent execution
 - [[concepts/ai-observability]] — Monitoring and debugging AI systems in production

@@ -81,7 +81,7 @@ Drexler argues that standard "intelligence explosion" models (fast takeoff drive
 ## Related Concepts
 
 - [[concepts/superintelligence]] — Broader topic of AI surpassing human capabilities
-- [[concepts/ai-safety]] — Safety implications of advanced AI
+- [[concepts/security-and-governance/ai-safety]] — Safety implications of advanced AI
 - [[concepts/nick-bostrom]] — Alternative agent-centric superintelligence framework
 - [[entities/future-of-humanity-institute]] — Institution where CAIS was developed
 - [[entities/eric-drexler]] — Author of the CAIS framework

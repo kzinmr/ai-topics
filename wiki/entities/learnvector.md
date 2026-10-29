@@ -21,7 +21,7 @@ sources:
 
 ## Overview
 
-LearnVector is a new AI-native [[ai-education]] company founded by [[ai-education|Andrew Ng]], launched in mid-2026. Backed by a $100 million investment from Coursera, the company's mission is to "accelerate human development" by building one-to-one learning experiences powered by AI. LearnVector represents a significant shift from the massive open online course (MOOC) model that Ng pioneered at Coursera, instead focusing on deeply personalized, adaptive instruction that stays with each learner until mastery.
+LearnVector is a new AI-native [[concepts/ai-education]] company founded by [[concepts/ai-education|Andrew Ng]], launched in mid-2026. Backed by a $100 million investment from Coursera, the company's mission is to "accelerate human development" by building one-to-one learning experiences powered by AI. LearnVector represents a significant shift from the massive open online course (MOOC) model that Ng pioneered at Coursera, instead focusing on deeply personalized, adaptive instruction that stays with each learner until mastery.
 
 ## Mission & Approach
 
@@ -33,7 +33,7 @@ LearnVector is backed by a $100 million investment from Coursera, the MOOC platf
 
 ## Related
 
-- [[ai-education]] — The broader field of AI-powered education and tutoring
+- [[concepts/ai-education]] — The broader field of AI-powered education and tutoring
 - [[cohort-based-learning]] — The traditional group-paced learning model LearnVector moves away from
 - [[personal-software]] — Related to the trend of AI-powered bespoke, one-user experiences
 - [[ai-industry-economics]] — Broader context of AI investment and platform economics

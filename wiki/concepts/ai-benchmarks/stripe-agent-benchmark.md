@@ -44,16 +44,16 @@ The benchmark uses real-world Stripe integration scenarios:
 - The benchmark reveals significant gaps between general coding ability and the ability to build real API integrations
 - Agents that perform well on general coding benchmarks sometimes struggle with Stripe-specific integration complexity
 - Results highlight the importance of documentation understanding and API navigation skills
-- The benchmark demonstrates that domain-specific evaluation provides insights not captured by general [[entities/coding-agents]] benchmarks
+- The benchmark demonstrates that domain-specific evaluation provides insights not captured by general [[concepts/coding-agents/coding-agents]] benchmarks
 - Functional correctness rates show room for improvement in agent capabilities for production-grade code generation
 
 ## Related Benchmarks
 
-- [[cursorbench]] — Another domain-specific benchmark for coding agents in a particular tool context
-- [[hal-leaderboard]] — Aggregated agent evaluation leaderboard
-- [[skillsbench]] — BenchFlow's skill acquisition benchmark for agents
+- [[concepts/ai-benchmarks/cursorbench]] — Another domain-specific benchmark for coding agents in a particular tool context
+- [[concepts/ai-benchmarks/hal-leaderboard]] — Aggregated agent evaluation leaderboard
+- [[concepts/ai-benchmarks/skillsbench]] — BenchFlow's skill acquisition benchmark for agents
 - General coding benchmarks (SWE-bench, HumanEval) that complement domain-specific evaluations
 
 ## Connections to Other Wiki Concepts
 
-The Stripe Agent Benchmark exemplifies the trend toward evaluating [[entities/coding-agents]] on real-world, domain-specific tasks rather than synthetic coding challenges. Like [[cursorbench]], it demonstrates that general benchmarks may not capture the practical capabilities needed for specific integration tasks. This connects to broader [[agent-evaluation]] discussions about the gap between benchmark performance and real-world utility in [[concepts/ai-agents]] systems.
+The Stripe Agent Benchmark exemplifies the trend toward evaluating [[concepts/coding-agents/coding-agents]] on real-world, domain-specific tasks rather than synthetic coding challenges. Like [[concepts/ai-benchmarks/cursorbench]], it demonstrates that general benchmarks may not capture the practical capabilities needed for specific integration tasks. This connects to broader [[agent-evaluation]] discussions about the gap between benchmark performance and real-world utility in [[concepts/ai-agents]] systems.

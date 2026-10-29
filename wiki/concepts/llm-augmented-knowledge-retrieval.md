@@ -96,7 +96,7 @@ This pattern is significant for [[concepts/ai-agent-engineering]] because it dem
 ## See Also
 
 - [[concepts/mcp]] — Model Context Protocol, the integration mechanism
-- [[concepts/claude-code/claude-code]] — primary tool used for this pattern
+- [[entities/claude-code]] — primary tool used for this pattern
 - [[concepts/karpathy]] — originator of the LLM Wiki concept
 - [[concepts/context-engineering|Context Engineering]] — designing context windows for effective retrieval
 - [[comparisons/agent-memory-systems-comparison]] — how different agent harnesses handle persistent memory

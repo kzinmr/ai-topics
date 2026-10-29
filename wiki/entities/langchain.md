@@ -193,7 +193,7 @@ See [[concepts/security-and-governance/agentic-security]] for broader agent secu
 
 LangChain Labs collaborated with **Fireworks AI** on a study fine-tuning **Qwen-3.5-35B** to detect *Perceived Error* — situations where a user *believes* the assistant made a mistake, judged from production traces on LangSmith. The work demonstrates that small, fine-tuned models can match or exceed frontier LLMs as evaluators at **10-100x lower cost**.
 
-See also: [[concepts/llm-as-judge]], [[concepts/evaluation]].
+See also: [[concepts/evaluation/llm-as-judge]], [[concepts/evaluation]].
 
 ### Key Findings
 

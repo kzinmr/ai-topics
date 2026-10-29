@@ -259,10 +259,10 @@ Task-specific metrics: did it ever read the right email? Did it ever call a sear
 
 - [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering: From MCP to RL]]
 - [[raw/articles/2025-07-02_kylecorbitt_agents-mcp-rl-lesson5]]
-- [[concepts/grpo-rl-training]]
+- [[concepts/post-training/grpo-rl-training]]
 - [[concepts/agentic-rl]]
 - [[concepts/corbett-kyle-corbitt]]
 - [[entities/will-brown]]
-- [[concepts/reward-hacking]]
+- [[concepts/evaluation/reward-hacking]]
 - [[raw/articles/2025-04-14_corbt_art-trainer-new-rl-trainer]]
 - [[raw/articles/2025-04-29_corbt_art-e-mail-agent]]

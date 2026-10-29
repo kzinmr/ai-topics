@@ -154,7 +154,7 @@ From the Part 1 analysis (Apr 29, 2025):
 - [[concepts/evaluation/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
 - [[concepts/llm-evaluation]] — LLM evaluation landscape
-- [[concepts/hle]] — Humanity's Last Exam (similar data creation approach)
+- [[concepts/ai-benchmarks/hle]] — Humanity's Last Exam (similar data creation approach)
 - [[concepts/mmlu-pro]] — MMLU Pro (broader knowledge benchmark)
 
 ---

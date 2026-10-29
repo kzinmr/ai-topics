@@ -17,7 +17,7 @@ related:
   - "[[concepts/token-economics]]"
   - "[[concepts/outcome-based-pricing]]"
   - "[[concepts/ai-gateway]]"
-  - "[[context-engineering/context-management]]"
+  - "[[concepts/context-engineering/context-management]]"
   - "[[concepts/inference-hardware]]"
   - "[[concepts/agentic-search]]"
 ---
@@ -99,6 +99,6 @@ Companies that fail to manage AI costs risk "AI bill shock" — monthly charges 
 
 ## Related Crises
 
-- **[[context-engineering/context-management]]**: The longer the context, the higher the cost. Context management is the engineering discipline that fights the tokenpocalypse.
+- **[[concepts/context-engineering/context-management]]**: The longer the context, the higher the cost. Context management is the engineering discipline that fights the tokenpocalypse.
 - **[[concepts/agentic-search]]**: Agentic search can consume 20–50× more tokens than simple RAG, making it a primary cost driver.
 - **[[concepts/inference-hardware]]**: The hardware layer determines the floor cost. Cheaper hardware directly changes the economics.

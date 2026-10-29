@@ -153,5 +153,5 @@ WikiBench is a reusable signal: because the verifier is a reader agent, the same
 - [[concepts/agent-documentation]] — Agent documentation patterns
 - [[concepts/wiki-memory]] — Wiki-as-context pattern for agent memory
 - [[concepts/context-engineering]] — Context engineering discipline
-- [[entities/coding-agents]] — Coding agent ecosystem
+- [[concepts/coding-agents/coding-agents]] — Coding agent ecosystem
 - [[entities/andrej-karpathy]] — LLM Wiki concept originator

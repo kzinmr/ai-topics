@@ -23,7 +23,7 @@ sources:
 
 ## Overview
 
-In July 2026, [[entities/databricks]] published an internal methodology and results for benchmarking coding agents on their own **multi-million line production codebase** — a significant departure from public synthetic benchmarks like [[swe-bench]]. Rather than relying on leaked, public-domain tasks, Databricks constructed a private benchmark from their own merged pull requests, spanning 10+ languages (Scala, Go, Rust, Java, Python, TypeScript, Protobuf, Bazel) and verified by the original PR test suites.
+In July 2026, [[entities/databricks]] published an internal methodology and results for benchmarking coding agents on their own **multi-million line production codebase** — a significant departure from public synthetic benchmarks like [[concepts/ai-benchmarks/swe-bench]]. Rather than relying on leaked, public-domain tasks, Databricks constructed a private benchmark from their own merged pull requests, spanning 10+ languages (Scala, Go, Rust, Java, Python, TypeScript, Protobuf, Bazel) and verified by the original PR test suites.
 
 The exercise was motivated by a practical need: with the rapid expansion of coding agent models and harnesses, Databricks wanted a data-driven way to select the right model-and-harness combination for everyday engineering tasks while optimizing for **cost-per-task** rather than cost-per-token.
 
@@ -73,7 +73,7 @@ Databricks' benchmark construction followed a rigorous pipeline:
 
 ### For Enterprise AI Strategy
 
-The benchmark demonstrates that any organization with a backlog of merged PRs already possesses a private, high-quality coding agent benchmark — one that no model has trained on and that is graded by the team's own test suites. This "bring your own benchmark" approach avoids the training-data contamination problems endemic to public benchmarks like [[swe-bench]].
+The benchmark demonstrates that any organization with a backlog of merged PRs already possesses a private, high-quality coding agent benchmark — one that no model has trained on and that is graded by the team's own test suites. This "bring your own benchmark" approach avoids the training-data contamination problems endemic to public benchmarks like [[concepts/ai-benchmarks/swe-bench]].
 
 ### For Coding Agent Evaluation
 
@@ -92,8 +92,8 @@ Databricks emphasizes that **any team with a backlog of merged PRs already posse
 
 ## Related Pages
 
-- [[coding-agents]] — Overview of the coding agent landscape
-- [[swe-bench]] — The dominant public benchmark for coding agents
+- [[concepts/coding-agents/coding-agents]] — Overview of the coding agent landscape
+- [[concepts/ai-benchmarks/swe-bench]] — The dominant public benchmark for coding agents
 - [[evaluation-coding-agents]] — General evaluation approaches for coding agents
 - [[entities/databricks]] — Company profile
 - [[entities/claude-code]] — Anthropic's coding agent harness

@@ -59,7 +59,7 @@ The lab cultivates an environment where researchers can pursue novel ideas from 
 
 ## See Also
 
-- [[echo-rl]] — ECHO training method
+- [[concepts/post-training/echo-rl]] — ECHO training method
 - [[entities/vaishnavi-shrivastava]] — lead ECHO researcher
 - [[entities/dimitris-papailiopoulos]] — ECHO co-author
 - [[entities/nova-sky]] — open-source RL framework used

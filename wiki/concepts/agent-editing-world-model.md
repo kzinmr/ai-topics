@@ -67,5 +67,5 @@ backbones.
 
 - [[world-models-for-agents]] — the observation-prediction school AEWM argues against
 - [[world-model-taxonomy]] — where a task-state world model sits in the taxonomy
-- [[harness-learning]] — revision of the harness vs. revision of the task state
+- [[concepts/harness-learning]] — revision of the harness vs. revision of the task state
 - [[attention-bottleneck]] — task-state contamination as a content-in-context failure

@@ -52,12 +52,12 @@ This transforms the LLM from a code-generator into a teaching tool: it proposes 
 These two perspectives converge on a unified insight:
 
 - **LLMs amplify understanding, not replace it.** The people who benefit most are those who already possess the domain knowledge to critically evaluate outputs.
-- **Copy-pasting without understanding creates debt.** Novices who accept LLM output uncritically accumulate [[cognitive-debt]] they cannot pay down, leading directly to [[ai-slop]] -- low-quality, unverified AI output.
+- **Copy-pasting without understanding creates debt.** Novices who accept LLM output uncritically accumulate [[cognitive-debt]] they cannot pay down, leading directly to [[concepts/ai-slop]] -- low-quality, unverified AI output.
 - **Expertise is the moat.** In the LLM era, [[domain-expertise-ai-moat|domain expertise]] -- not raw prompting skill -- is the critical differentiator. LLMs make everyone faster, but only experts get exponentially better.
 
 ## Implications
 
-- **For individuals:** Invest in domain expertise before investing in prompting techniques. Understanding the problem domain is more valuable than mastering prompt hacks. See also: [[prompt-engineering]].
+- **For individuals:** Invest in domain expertise before investing in prompting techniques. Understanding the problem domain is more valuable than mastering prompt hacks. See also: [[concepts/prompt-engineering]].
 - **For teams:** Pair LLM tooling with practices that enforce understanding -- code review, pair programming, retyping -- rather than optimizing for raw output velocity.
 - **For coding tools:** [[coding-agents/coding-agents|Coding agents]] that optimize for speed over understanding risk enabling large-scale accumulation of technical debt. Tools should support comprehension, not just generation.
 - **For hiring:** In an AI-augmented workflow, domain expertise becomes more valuable, not less. The candidate who deeply understands the problem space will leverage LLMs far more effectively than the candidate who only knows how to prompt.
@@ -73,7 +73,7 @@ These two perspectives converge on a unified insight:
 
 - [[domain-expertise-ai-moat]] -- The broader argument that domain expertise is the critical differentiator in AI-assisted development
 - [[cognitive-debt]] -- The cost of owning code you don't understand
-- [[ai-slop]] -- Unverified, low-quality AI-generated output that pollutes codebases and content
+- [[concepts/ai-slop]] -- Unverified, low-quality AI-generated output that pollutes codebases and content
 - [[coding-agents/coding-agents]] -- Survey of LLM-powered coding tools and their optimization patterns
-- [[prompt-engineering]] -- Techniques for effective LLM interaction, increasingly recognized as secondary to domain expertise
+- [[concepts/prompt-engineering]] -- Techniques for effective LLM interaction, increasingly recognized as secondary to domain expertise
 - [[vibe-coding]] -- The practice of coding entirely through LLM prompts, with associated risks of debt accumulation

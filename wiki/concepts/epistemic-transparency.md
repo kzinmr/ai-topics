@@ -60,10 +60,10 @@ models (DeepSeek-R1, Qwen3-Thinking):
 ## Relationship to Other Failure Modes
 
 This is a sibling of [[reasoning-instruction-following-failure]] (answer the wrong question
-confidently) and a close cousin of [[formal-verification-llm-agents]] and [[illusion-of-thinking]]. Where
+confidently) and a close cousin of [[concepts/formal-verification-llm-agents]] and [[illusion-of-thinking]]. Where
 those are about *correctness*, epistemic transparency is about *accountability of the reasoning
-path*. It is the eval-side tool for the same concern [[epistemic-transparency]] shares with
-[[chain-of-thought]] unfaithfulness: the surfaced justification may not be the real cause.
+path*. It is the eval-side tool for the same concern [[concepts/epistemic-transparency]] shares with
+[[concepts/chain-of-thought]] unfaithfulness: the surfaced justification may not be the real cause.
 
 ## Open Questions
 
@@ -77,5 +77,5 @@ path*. It is the eval-side tool for the same concern [[epistemic-transparency]] 
 - [[ai-sycophancy]] — compounding mechanism
 - [[reasoning-instruction-following-failure]] — sibling: confident answer to the wrong question
 - [[overact-proactive-over-authorization]] — why hidden premises are dangerous in agents
-- [[formal-verification-llm-agents]] — the broader problem of verifying agent claims
-- [[chain-of-thought]] — transparency vs faithfulness
+- [[concepts/formal-verification-llm-agents]] — the broader problem of verifying agent claims
+- [[concepts/chain-of-thought]] — transparency vs faithfulness

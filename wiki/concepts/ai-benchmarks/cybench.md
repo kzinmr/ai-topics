@@ -15,7 +15,7 @@ related_concepts:
   - "[[cybersecurity]]"
   - "[[concepts/ai-agents]]"
   - "[[safety-evaluation]]"
-  - "[[entities/coding-agents]]"
+  - "[[concepts/coding-agents/coding-agents]]"
 ---
 
 # Cybench
@@ -51,11 +51,11 @@ The benchmark framework includes:
 
 ## Related Benchmarks
 
-- [[decodingtrust]] — Broader trustworthiness evaluation including security dimensions
-- [[agentdojo]] — Agent security through prompt injection evaluation
-- [[agent-security-bench]] — Comprehensive agent attack/defense evaluation
-- [[agentharm]] — Harmful capability assessment including cyber threats
+- [[concepts/ai-benchmarks/decodingtrust]] — Broader trustworthiness evaluation including security dimensions
+- [[concepts/ai-benchmarks/agentdojo]] — Agent security through prompt injection evaluation
+- [[concepts/ai-benchmarks/agent-security-bench]] — Comprehensive agent attack/defense evaluation
+- [[concepts/ai-benchmarks/agentharm]] — Harmful capability assessment including cyber threats
 
 ## Connections to Other Wiki Concepts
 
-Cybench sits at the intersection of **cybersecurity** and AI evaluation, addressing growing concerns about LLM-enabled cyber capabilities. It connects to the **[[entities/coding-agents]]** domain by testing whether code-generating models can both create and exploit security vulnerabilities. The benchmark's dual-use focus relates to broader **safety-evaluation** concerns addressed by [[decodingtrust]] and [[agentharm]], while its practical challenge format informs how **[[concepts/ai-agents]]** might be deployed (or misused) in security contexts.
+Cybench sits at the intersection of **cybersecurity** and AI evaluation, addressing growing concerns about LLM-enabled cyber capabilities. It connects to the **[[concepts/coding-agents/coding-agents]]** domain by testing whether code-generating models can both create and exploit security vulnerabilities. The benchmark's dual-use focus relates to broader **safety-evaluation** concerns addressed by [[concepts/ai-benchmarks/decodingtrust]] and [[concepts/ai-benchmarks/agentharm]], while its practical challenge format informs how **[[concepts/ai-agents]]** might be deployed (or misused) in security contexts.

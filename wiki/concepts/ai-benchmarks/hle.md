@@ -118,9 +118,9 @@ Xeophon highlights HLE's rigorous quality control and incentive design as best p
 
 ## See Also
 
-- [[concepts/swe-bench]] — Software engineering benchmark with similar anti-saturation design
-- [[concepts/arc-agi-2]] — Another benchmark explicitly designed to resist model memorization
-- [[concepts/arc-agi-1]] — Chollet's abstract reasoning benchmark
+- [[concepts/ai-benchmarks/swe-bench]] — Software engineering benchmark with similar anti-saturation design
+- [[concepts/ai-benchmarks/arc-agi-2]] — Another benchmark explicitly designed to resist model memorization
+- [[concepts/ai-benchmarks/arc-agi-1]] — Chollet's abstract reasoning benchmark
 
 ## Sources
 

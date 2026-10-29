@@ -111,7 +111,7 @@ The key differentiator: every prior approach treats state as either ephemeral or
 
 - **[[concepts/agentic-engineering]]**: An orchestration runtime is infrastructure for agentic engineering — it provides the deterministic substrate on which non-deterministic agents can be composed reliably
 - **[[concepts/harness-engineering]]**: Onyx is a meta-harness; programs are harness definitions, and the VM is the harness runner. Where traditional harnesses are ad-hoc scripts, `*.program.ts` files are typed, composable harnesses
-- **[[concepts/rlm]]**: RLM pioneered using code (Python REPL) for agent orchestration. Onyx inherits this code-first philosophy but adds persistence, types, and a full VM — moving from "code in a REPL" to "code as the orchestration substrate"
+- **[[entities/omar-khattab/rlm]]**: RLM pioneered using code (Python REPL) for agent orchestration. Onyx inherits this code-first philosophy but adds persistence, types, and a full VM — moving from "code in a REPL" to "code as the orchestration substrate"
 - **[[entities/akira-realmcore]]**: Random Labs, led by Akira, built Onyx as the natural evolution of Slate's thread-weaving architecture — taking the implicit orchestration of episodes and making it explicit through programs
 
 ## Autoresearch as a Program

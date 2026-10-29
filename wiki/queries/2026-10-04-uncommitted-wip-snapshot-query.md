@@ -104,7 +104,7 @@ index 849c4aba..27d42cde 100644
  
  - **[[concepts/agentic-engineering]]**: An orchestration runtime is infrastructure for agentic engineering — it provides the deterministic substrate on which non-deterministic agents can be composed reliably
  - **[[concepts/harness-engineering]]**: Onyx is a meta-harness; programs are harness definitions, and the VM is the harness runner. Where traditional harnesses are ad-hoc scripts, `*.program.ts` files are typed, composable harnesses
--- **[[concepts/rlm]]**: RLM pioneered using code (Python REPL) for agent orchestration. Onyx inherits this code-first philosophy but adds persistence, types, and a full VM — moving from "code in a REPL" to "code as the orchestration substrate"
+-- **[[entities/omar-khattab/rlm]]**: RLM pioneered using code (Python REPL) for agent orchestration. Onyx inherits this code-first philosophy but adds persistence, types, and a full VM — moving from "code in a REPL" to "code as the orchestration substrate"
 +- **[[entities/omar-khattab/rlm]]**: RLM pioneered using code (Python REPL) for agent orchestration. Onyx inherits this code-first philosophy but adds persistence, types, and a full VM — moving from "code in a REPL" to "code as the orchestration substrate"
  - **[[entities/akira-realmcore]]**: Random Labs, led by Akira, built Onyx as the natural evolution of Slate's thread-weaving architecture — taking the implicit orchestration of episodes and making it explicit through programs
  
@@ -117,7 +117,7 @@ index 5dceaa28..c02bcda7 100644
  ## Market Context (July 2026)
  
  The surge in resets coincides with an unprecedented month of LLM releases:
--- [[concepts/fable-5|Fable 5]] and [[concepts/gpt/gpt-5-6|GPT-5.6 Sol]] — frontier models
+-- [[concepts/claude/fable-5|Fable 5]] and [[concepts/gpt/gpt-5-6|GPT-5.6 Sol]] — frontier models
 +- [[concepts/claude/fable-5|Fable 5]] and [[concepts/gpt/gpt-5-6|GPT-5.6 Sol]] — frontier models
  - [[concepts/grok-4-5|Grok 4.5]], Muse Spark 1.1, [[concepts/kimi-k3|Kimi K3]] — competitive alternatives
  
@@ -142,10 +142,10 @@ index c73ef94d..54d50ed2 100644
  - [[concepts/vespa]] — The engine where many Hornet engineers previously worked
  - [[concepts/bm25]] — Keyword retrieval backbone; performs differently in agent loops vs. one-shot
  - [[concepts/mutually-assured-distraction]] — Compounding error: better retrieval → more convincing distractors → more confident wrong answers
--- [[concepts/browsecomp]] — The benchmark revealing the agentic retrieval bottleneck
+-- [[concepts/ai-benchmarks/browsecomp]] — The benchmark revealing the agentic retrieval bottleneck
 +- [[concepts/ai-benchmarks/browsecomp]] — The benchmark revealing the agentic retrieval bottleneck
  - [[concepts/agent-loop]] — The iterative reasoning pattern that produces agentic workloads
- - [[concepts/rag]] — Retrieval-Augmented Generation (evolving toward agentic retrieval)
+ - [[concepts/rag-systems]] — Retrieval-Augmented Generation (evolving toward agentic retrieval)
  
 diff --git a/wiki/concepts/ai-agent-engineering.md b/wiki/concepts/ai-agent-engineering.md
 index c46b1379..dbeafdb8 100644
@@ -155,7 +155,7 @@ index c46b1379..dbeafdb8 100644
  - Provides a platform-level orchestration layer for running Claude agents
  - Designed for enterprises to integrate agents into their products without managing infrastructure
  - Memory capability added for persistent context across sessions
--- Represents the **L4 Engineering Team** level in the [[concepts/harness-engineering/agent-team-swarm]] taxonomy
+-- Represents the **L4 Engineering Team** level in the [[concepts/multi-agents/agent-team-swarm]] taxonomy
 +- Represents the **L4 Engineering Team** level in the [[concepts/multi-agents/agent-team-swarm]] taxonomy
  
  **Architecture:**
@@ -164,7 +164,7 @@ index c46b1379..dbeafdb8 100644
  ## Related Concepts
  - [[concepts/harness-engineering]] — Parent concept: Agent = Model + Harness
  - [[concepts/agentic-engineering]] — Developer workflows for using agents
--- [[concepts/harness-engineering/agent-team-swarm]] — Multi-agent orchestration patterns
+-- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration patterns
 +- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration patterns
  - [[entities/anthropic]] — Claude Managed Agents platform
  - [[entities/openai]] — Symphony orchestration platform
@@ -201,7 +201,7 @@ index a8257977..624cf7bf 100644
  
  ## ARC-AGI-1 vs ARC-AGI-2: Key Differences
  
--While [[concepts/arc-agi-2]] builds on the same fundamental principles, there are critical differences:
+-While [[concepts/ai-benchmarks/arc-agi-2]] builds on the same fundamental principles, there are critical differences:
 +While [[concepts/ai-benchmarks/arc-agi-2]] builds on the same fundamental principles, there are critical differences:
  
  | Aspect | ARC-AGI-1 | ARC-AGI-2 |
@@ -210,8 +210,8 @@ index a8257977..624cf7bf 100644
  ## Related Pages
  
  - [[concepts/evaluation/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
--- [[concepts/arc-agi-2|ARC-AGI-2]] — The successor benchmark (released 2025)
--- [[concepts/hle|Humanity's Last Exam]] — Another benchmark designed to resist memorization
+-- [[concepts/ai-benchmarks/arc-agi-2|ARC-AGI-2]] — The successor benchmark (released 2025)
+-- [[concepts/ai-benchmarks/hle|Humanity's Last Exam]] — Another benchmark designed to resist memorization
 +- [[concepts/ai-benchmarks/arc-agi-2|ARC-AGI-2]] — The successor benchmark (released 2025)
 +- [[concepts/ai-benchmarks/hle|Humanity's Last Exam]] — Another benchmark designed to resist memorization
  
@@ -225,7 +225,7 @@ index 8dde3caa..24a3e8e0 100644
  - [[concepts/gemini]] — Gemini 3 Deep Think performance
  - [[concepts/evaluation/ai-evals]] — AI evaluation benchmarks overview
  - [[concepts/evaluation/llm-evaluation-harness]] — Evaluation framework details
--- [[concepts/agent-survival-benchmark]] — Other agent-focused benchmarks
+-- [[concepts/ai-benchmarks/agent-survival-benchmark]] — Other agent-focused benchmarks
 +- [[concepts/ai-benchmarks/agent-survival-benchmark]] — Other agent-focused benchmarks
  
  ## Sources
@@ -251,7 +251,7 @@ index bf6812b9..1afb71a6 100644
    - wiki/raw/articles/2025-04-29_xeophon-ai-benchmark-eval-series.md
  related:
    - "[[concepts/evaluation/ai-benchmarks-and-evals]]"
--  - "[[concepts/ifeval]]"
+-  - "[[concepts/ai-benchmarks/ifeval]]"
 +  - "[[concepts/ai-benchmarks/ifeval]]"
  ---
  
@@ -260,7 +260,7 @@ index bf6812b9..1afb71a6 100644
  ## Related Pages
  
  - [[concepts/evaluation/ai-benchmarks-and-evals]] — Full benchmarks & evals MOC
--- [[concepts/ifeval]] — IFEval (another focused, simple benchmark)
+-- [[concepts/ai-benchmarks/ifeval]] — IFEval (another focused, simple benchmark)
 +- [[concepts/ai-benchmarks/ifeval]] — IFEval (another focused, simple benchmark)
  - [[concepts/evaluation/pass-k-metric]] — Pass@k metric
  
@@ -294,7 +294,7 @@ index 25762759..184980d2 100644
  ## Related Pages
  
  - [[concepts/evaluation/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
--- [[concepts/swe-bench|SWE-Bench]] — Another agent-based evaluation, focused on software engineering bug fixes
+-- [[concepts/ai-benchmarks/swe-bench|SWE-Bench]] — Another agent-based evaluation, focused on software engineering bug fixes
 -- [[concepts/ai-benchmarks/frontier-swe-benchmark|FrontierSWE]] — Ultra-long-horizon coding benchmark (20 hours per task)
 +- [[concepts/ai-benchmarks/swe-bench|SWE-Bench]] — Another agent-based evaluation, focused on software engineering bug fixes
 +- [[concepts/ai-benchmarks/frontier-swe-benchmark|FrontierSWE]] — Ultra-long-horizon coding benchmark (20 hours per task)
@@ -309,8 +309,8 @@ index 25a9dda9..eefe4b72 100644
  FrontierSWE complements rather than replaces [[concepts/ai-benchmarks/swe-bench]]:
  - **SWE-Bench**: Short-horizon PR fixes on open-source repos
  - **FrontierSWE**: 20-hour ultra-long-horizon challenges in implementation, performance, and ML research
--- **[[concepts/workspace-bench]]**: Multi-file workspace navigation (74 file types, 20,476 files — different dimension of complexity)
--- **[[concepts/kernelbench]]**: Kernel-level optimization; [[concepts/yourbench]]: Human-calibrated coding; [[concepts/programbench]]: Multi-language programming
+-- **[[concepts/ai-benchmarks/workspace-bench]]**: Multi-file workspace navigation (74 file types, 20,476 files — different dimension of complexity)
+-- **[[concepts/ai-benchmarks/kernelbench]]**: Kernel-level optimization; [[concepts/yourbench]]: Human-calibrated coding; [[concepts/programbench]]: Multi-language programming
 +- **[[concepts/ai-benchmarks/workspace-bench]]**: Multi-file workspace navigation (74 file types, 20,476 files — different dimension of complexity)
 +- **[[concepts/ai-benchmarks/kernelbench]]**: Kernel-level optimization; [[concepts/ai-benchmarks/yourbench]]: Human-calibrated coding; [[concepts/ai-benchmarks/programbench]]: Multi-language programming
  
@@ -320,11 +320,11 @@ index 25a9dda9..eefe4b72 100644
  ## See Also
  
  - [[concepts/ai-benchmarks/swe-bench]] — Standard PR-level coding benchmark
--- [[concepts/workspace-bench]] — Multi-file workspace learning benchmark
+-- [[concepts/ai-benchmarks/workspace-bench]] — Multi-file workspace learning benchmark
 +- [[concepts/ai-benchmarks/workspace-bench]] — Multi-file workspace learning benchmark
  - [[concepts/harness-engineering]] — How execution environments shape agent performance
  - [[concepts/evaluation/ai-evals]] — AI evaluation landscape overview
--- [[concepts/agent-survival-benchmark]] — Human-normalized agent benchmark
+-- [[concepts/ai-benchmarks/agent-survival-benchmark]] — Human-normalized agent benchmark
 +- [[concepts/ai-benchmarks/agent-survival-benchmark]] — Human-normalized agent benchmark
 diff --git a/wiki/concepts/ai-benchmarks/gpqa.md b/wiki/concepts/ai-benchmarks/gpqa.md
 index ab7de967..62df482b 100644
@@ -334,7 +334,7 @@ index ab7de967..62df482b 100644
  - [[concepts/evaluation/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
  - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
  - [[concepts/llm-evaluation]] — LLM evaluation landscape
--- [[concepts/hle]] — Humanity's Last Exam (similar data creation approach)
+-- [[concepts/ai-benchmarks/hle]] — Humanity's Last Exam (similar data creation approach)
 -- [[concepts/mmlu-pro]] — MMLU Pro (broader knowledge benchmark)
 +- [[concepts/ai-benchmarks/hle]] — Humanity's Last Exam (similar data creation approach)
 +- [[concepts/ai-benchmarks/mmlu-pro]] — MMLU Pro (broader knowledge benchmark)
@@ -349,9 +349,9 @@ index bf0cf094..e50e929c 100644
  
  ## See Also
  
--- [[concepts/swe-bench]] — Software engineering benchmark with similar anti-saturation design
--- [[concepts/arc-agi-2]] — Another benchmark explicitly designed to resist model memorization
--- [[concepts/arc-agi-1]] — Chollet's abstract reasoning benchmark
+-- [[concepts/ai-benchmarks/swe-bench]] — Software engineering benchmark with similar anti-saturation design
+-- [[concepts/ai-benchmarks/arc-agi-2]] — Another benchmark explicitly designed to resist model memorization
+-- [[concepts/ai-benchmarks/arc-agi-1]] — Chollet's abstract reasoning benchmark
 +- [[concepts/ai-benchmarks/swe-bench]] — Software engineering benchmark with similar anti-saturation design
 +- [[concepts/ai-benchmarks/arc-agi-2]] — Another benchmark explicitly designed to resist model memorization
 +- [[concepts/ai-benchmarks/arc-agi-1]] — Chollet's abstract reasoning benchmark
@@ -380,7 +380,7 @@ index 2600b452..43e0d4ef 100644
  - [[concepts/evaluation/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
  - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
 -- [[concepts/aider-polyglot]] — Aider Polyglot (multi-language coding)
--- [[concepts/swe-bench]] — SWE-Bench (real-world software engineering)
+-- [[concepts/ai-benchmarks/swe-bench]] — SWE-Bench (real-world software engineering)
 +- [[concepts/ai-benchmarks/aider-polyglot]] — Aider Polyglot (multi-language coding)
 +- [[concepts/ai-benchmarks/swe-bench]] — SWE-Bench (real-world software engineering)
  - [[concepts/llm-evaluation]] — LLM evaluation landscape
@@ -394,7 +394,7 @@ index a67d741b..23e3f7c6 100644
  related_concepts:
    - "[[concepts/ai-benchmarks/_index]]"
    - "[[concepts/agent-evaluation]]"
--  - "[[concepts/swe-bench]]"
+-  - "[[concepts/ai-benchmarks/swe-bench]]"
 +  - "[[concepts/ai-benchmarks/swe-bench]]"
    - "[[entities/epoch-ai]]"
  ---
@@ -403,14 +403,14 @@ index a67d741b..23e3f7c6 100644
  
  ## Significance
  
--MirrorCode fills an important gap in the AI evaluation landscape. Most coding benchmarks (e.g., [[concepts/swe-bench]], HumanEval, MBPP) test short-duration, isolated coding tasks. MirrorCode addresses the question: *how well do AI systems perform when the task requires sustained, multi-day effort?*
+-MirrorCode fills an important gap in the AI evaluation landscape. Most coding benchmarks (e.g., [[concepts/ai-benchmarks/swe-bench]], HumanEval, MBPP) test short-duration, isolated coding tasks. MirrorCode addresses the question: *how well do AI systems perform when the task requires sustained, multi-day effort?*
 +MirrorCode fills an important gap in the AI evaluation landscape. Most coding benchmarks (e.g., [[concepts/ai-benchmarks/swe-bench]], HumanEval, MBPP) test short-duration, isolated coding tasks. MirrorCode addresses the question: *how well do AI systems perform when the task requires sustained, multi-day effort?*
  
  The finding that Opus 4.7 can complete a multi-week human task in minutes — but still fails on the hardest problems — suggests that long-horizon capability is improving rapidly but not yet saturated.
  
  ## Related Benchmarks
  
--- [[concepts/swe-bench]] — Software engineering benchmark for AI agents (shorter tasks)
+-- [[concepts/ai-benchmarks/swe-bench]] — Software engineering benchmark for AI agents (shorter tasks)
 +- [[concepts/ai-benchmarks/swe-bench]] — Software engineering benchmark for AI agents (shorter tasks)
  - [[concepts/ai-benchmarks/agentdojo]] — Dynamic evaluation for agent security
  - [[concepts/ai-benchmarks/benchmaxxing]] — Notes on benchmark over-optimization
@@ -438,7 +438,7 @@ index 3edd44d4..a2d7c45a 100644
  - [[concepts/ai-benchmarks/swe-bench]] — boolean-task coding benchmark family
  - [[concepts/ai-benchmarks/terminal-bench]] — same harness×model leaderboard lineage, now extended to science workflows (Terminal-Bench-Science 0.1)
  - [[concepts/self-evolving-agents]] — agents that improve their own toolchains
--- [[concepts/ai-evals]] — evaluation methodology overview
+-- [[concepts/evaluation/ai-evals]] — evaluation methodology overview
 +- [[concepts/evaluation/ai-evals]] — evaluation methodology overview
  - [[concepts/agent-trace-integrity]] — the NanoGPT Speedrun Sandbox was the eval environment in which the Hugging Face SwarmTraces breach occurred (Sep 2026); see also [[concepts/agent-collusion-public-infrastructure]]
 diff --git a/wiki/concepts/ai-benchmarks/swe-bench-agent-scaffolding.md b/wiki/concepts/ai-benchmarks/swe-bench-agent-scaffolding.md
@@ -474,12 +474,12 @@ index 84895d84..c9311143 100644
 -- [[concepts/ai-benchmarks/frontier-swe-benchmark|FrontierSWE Benchmark]] — Ultra-long-horizon coding benchmark (20 hours per task)
 +- [[concepts/ai-benchmarks/frontier-swe-benchmark|FrontierSWE Benchmark]] — Ultra-long-horizon coding benchmark (20 hours per task)
  - [[concepts/harness-engineering|Harness Engineering]] — How execution environments shape agent performance
--- [[concepts/hle|Humanity's Last Exam]] — Another benchmark experiencing rapid score inflation
+-- [[concepts/ai-benchmarks/hle|Humanity's Last Exam]] — Another benchmark experiencing rapid score inflation
 +- [[concepts/ai-benchmarks/hle|Humanity's Last Exam]] — Another benchmark experiencing rapid score inflation
  
  ## See Also
  
--- [[concepts/arc-agi-1|ARC-AGI-1]] — Another benchmark with dramatic historical score progression toward saturation
+-- [[concepts/ai-benchmarks/arc-agi-1|ARC-AGI-1]] — Another benchmark with dramatic historical score progression toward saturation
 -- [[concepts/factorio-learning-environment|Factorio Learning Environment]] — Agent-based evaluation in a different domain (game-based factory automation)
 +- [[concepts/ai-benchmarks/arc-agi-1|ARC-AGI-1]] — Another benchmark with dramatic historical score progression toward saturation
 +- [[concepts/ai-benchmarks/factorio-learning-environment|Factorio Learning Environment]] — Agent-based evaluation in a different domain (game-based factory automation)
@@ -494,9 +494,9 @@ index f248c061..1245a70e 100644
    - raw/articles/2026-09-09_sierra_hyper-tau-bench-agents-that-build-agents.md
  related:
    - "[[entities/shunyu-yao]]"
--  - "[[concepts/tau-squared-bench]]"
--  - "[[concepts/tau-knowledge]]"
--  - "[[concepts/tau-voice]]"
+-  - "[[concepts/ai-benchmarks/tau-squared-bench]]"
+-  - "[[concepts/ai-benchmarks/tau-knowledge]]"
+-  - "[[concepts/ai-benchmarks/tau-voice]]"
 +  - "[[concepts/ai-benchmarks/tau-squared-bench]]"
 +  - "[[concepts/ai-benchmarks/tau-knowledge]]"
 +  - "[[concepts/ai-benchmarks/tau-voice]]"
@@ -507,15 +507,15 @@ index f248c061..1245a70e 100644
  ## Related Pages
  
  - [[entities/shunyu-yao]] — τ-bench's creator. All achievements including ReAct, SWE-bench, "The Second Half"
--- [[concepts/tau-squared-bench]] — τ²-bench: Dual control evaluation details
--- [[concepts/tau-knowledge]] — τ-Knowledge: Unstructured knowledge navigation evaluation details
--- [[concepts/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation details
+-- [[concepts/ai-benchmarks/tau-squared-bench]] — τ²-bench: Dual control evaluation details
+-- [[concepts/ai-benchmarks/tau-knowledge]] — τ-Knowledge: Unstructured knowledge navigation evaluation details
+-- [[concepts/ai-benchmarks/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation details
 +- [[concepts/ai-benchmarks/tau-squared-bench]] — τ²-bench: Dual control evaluation details
 +- [[concepts/ai-benchmarks/tau-knowledge]] — τ-Knowledge: Unstructured knowledge navigation evaluation details
 +- [[concepts/ai-benchmarks/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation details
  - [[concepts/evaluation/pass-k-metric]] — pass^k metric detailed explanation
  - [[concepts/ai-benchmarks/hyper-tau-bench]] — 4th generation (Sep 2026): recursive agent-building benchmark, developer reward hacking
--- [[concepts/swe-bench]] — Yao's other representative benchmark
+-- [[concepts/ai-benchmarks/swe-bench]] — Yao's other representative benchmark
 +- [[concepts/ai-benchmarks/swe-bench]] — Yao's other representative benchmark
  
  ---
@@ -528,8 +528,8 @@ index e0fe03e7..cb41cc4f 100644
  ## Related Pages
  
  - [[concepts/ai-benchmarks/tau-bench]] — The base conversational agent benchmark
--- [[concepts/tau-squared-bench]] — τ²-Bench: More advanced evaluation suite
--- [[concepts/tau-voice]] — Voice interaction evaluation
+-- [[concepts/ai-benchmarks/tau-squared-bench]] — τ²-Bench: More advanced evaluation suite
+-- [[concepts/ai-benchmarks/tau-voice]] — Voice interaction evaluation
 +- [[concepts/ai-benchmarks/tau-squared-bench]] — τ²-Bench: More advanced evaluation suite
 +- [[concepts/ai-benchmarks/tau-voice]] — Voice interaction evaluation
  - [[entities/_index]]
@@ -541,8 +541,8 @@ index ee4d211f..40736342 100644
    - company
  related:
    - "[[concepts/ai-benchmarks/tau-bench]]"
--  - "[[concepts/tau-knowledge]]"
--  - "[[concepts/tau-voice]]"
+-  - "[[concepts/ai-benchmarks/tau-knowledge]]"
+-  - "[[concepts/ai-benchmarks/tau-voice]]"
 +  - "[[concepts/ai-benchmarks/tau-knowledge]]"
 +  - "[[concepts/ai-benchmarks/tau-voice]]"
    - "[[concepts/evaluation/pass-k-metric]]"
@@ -552,8 +552,8 @@ index ee4d211f..40736342 100644
  ## Related Pages
  
  - [[concepts/ai-benchmarks/tau-bench]] — τ-bench ecosystem overview
--- [[concepts/tau-knowledge]] — Evaluation with unstructured knowledge bases
--- [[concepts/tau-voice]] — Full-duplex voice agent evaluation
+-- [[concepts/ai-benchmarks/tau-knowledge]] — Evaluation with unstructured knowledge bases
+-- [[concepts/ai-benchmarks/tau-voice]] — Full-duplex voice agent evaluation
 +- [[concepts/ai-benchmarks/tau-knowledge]] — Evaluation with unstructured knowledge bases
 +- [[concepts/ai-benchmarks/tau-voice]] — Full-duplex voice agent evaluation
  - [[concepts/evaluation/pass-k-metric]] — Reliability evaluation metric
@@ -566,8 +566,8 @@ index 6ad12f7e..da3e90d2 100644
    - company
  related:
    - "[[concepts/ai-benchmarks/tau-bench]]"
--  - "[[concepts/tau-squared-bench]]"
--  - "[[concepts/tau-knowledge]]"
+-  - "[[concepts/ai-benchmarks/tau-squared-bench]]"
+-  - "[[concepts/ai-benchmarks/tau-knowledge]]"
 +  - "[[concepts/ai-benchmarks/tau-squared-bench]]"
 +  - "[[concepts/ai-benchmarks/tau-knowledge]]"
    - "[[concepts/evaluation/pass-k-metric]]"
@@ -577,8 +577,8 @@ index 6ad12f7e..da3e90d2 100644
  ## Related Pages
  
  - [[concepts/ai-benchmarks/tau-bench]] — Overview of the τ-bench ecosystem
--- [[concepts/tau-squared-bench]] — Dual-control benchmark (foundation of τ-Voice)
--- [[concepts/tau-knowledge]] — Evaluation with unstructured knowledge bases
+-- [[concepts/ai-benchmarks/tau-squared-bench]] — Dual-control benchmark (foundation of τ-Voice)
+-- [[concepts/ai-benchmarks/tau-knowledge]] — Evaluation with unstructured knowledge bases
 +- [[concepts/ai-benchmarks/tau-squared-bench]] — Dual-control benchmark (foundation of τ-Voice)
 +- [[concepts/ai-benchmarks/tau-knowledge]] — Evaluation with unstructured knowledge bases
  - [[concepts/evaluation/pass-k-metric]] — Reliability evaluation metric
@@ -602,8 +602,8 @@ index 11771121..dbc9ebb1 100644
 -| [[concepts/ai-benchmarks/frontier-swe-benchmark]] | Ultra-long-horizon engineering (20h) | 17 difficult tasks |
 +| [[concepts/ai-benchmarks/frontier-swe-benchmark]] | Ultra-long-horizon engineering (20h) | 17 difficult tasks |
  | **Workspace-Bench** | Multi-file workspace navigation | 20,476 files, 74 types |
--| [[concepts/kernelbench]] | Kernel-level optimization | Specialized |
--| [[concepts/agent-survival-benchmark]] | Human-normalized agent capability | Diverse tasks |
+-| [[concepts/ai-benchmarks/kernelbench]] | Kernel-level optimization | Specialized |
+-| [[concepts/ai-benchmarks/agent-survival-benchmark]] | Human-normalized agent capability | Diverse tasks |
 +| [[concepts/ai-benchmarks/kernelbench]] | Kernel-level optimization | Specialized |
 +| [[concepts/ai-benchmarks/agent-survival-benchmark]] | Human-normalized agent capability | Diverse tasks |
  
@@ -627,7 +627,7 @@ index 3bcb6d96..ef6ea16e 100644
  ## Related Concepts
  
  - [[concepts/security-and-governance/ai-safety]] — Broader AI safety frameworks
--- [[concepts/security-and-governance/agent-safety]] — Agent-specific safety
+-- [[concepts/agent-safety]] — Agent-specific safety
 -- [[entities/openai-huggingface-incident-july-2026]] — Real-world runaway agent example
 +- [[concepts/agent-safety]] — Agent-specific safety
 +- [[events/openai-huggingface-incident-july-2026]] — Real-world runaway agent example
@@ -667,7 +667,7 @@ index f284acc9..9427e686 100644
  
  ## Why it matters
  - **Policy / capability forecasting**: acceleration is domain-specific, so "time horizon to AGI" or "when will X be solved" estimates must be domain-conditional.
--- **Security**: the exploited-vs-known vulnerability gap means the attack surface is growing faster than defenders are patching — a [[concepts/ai-safety]] and [[concepts/cybersecurity]] concern.
+-- **Security**: the exploited-vs-known vulnerability gap means the attack surface is growing faster than defenders are patching — a [[concepts/security-and-governance/ai-safety]] and [[concepts/cybersecurity]] concern.
 +- **Security**: the exploited-vs-known vulnerability gap means the attack surface is growing faster than defenders are patching — a [[concepts/security-and-governance/ai-safety]] and [[concepts/cybersecurity]] concern.
  - **Evals methodology**: measuring "discovery" velocity requires domain-appropriate baselines (pre-existing problem lists, record-setting benchmarks), not a single universal metric.
  
@@ -703,7 +703,7 @@ index 6166505a..61b4320f 100644
    - "[[concepts/token-economics]]"
    - "[[concepts/outcome-based-pricing]]"
    - "[[concepts/llm-integration-patterns]]"
--  - "[[context-engineering/context-management]]"
+-  - "[[concepts/context-engineering/context-management]]"
 +  - "[[concepts/context-engineering/context-management]]"
    - "[[concepts/infrastructure]]"
  ---
@@ -712,7 +712,7 @@ index 6166505a..61b4320f 100644
  - **[[concepts/token-economics]]**: Gateway cost controls are the enforcement layer; token economics provides the unit-cost analysis
  - **[[concepts/outcome-based-pricing]]**: Gateways enable tracking spend-to-outcome ratios
  - **[[concepts/llm-integration-patterns]]**: Gateway is one of several AI integration patterns
--- **[[context-engineering/context-management]]**: Context efficiency reduces gateway-routed costs
+-- **[[concepts/context-engineering/context-management]]**: Context efficiency reduces gateway-routed costs
 +- **[[concepts/context-engineering/context-management]]**: Context efficiency reduces gateway-routed costs
 diff --git a/wiki/concepts/ai-mathematics-theorem-proving.md b/wiki/concepts/ai-mathematics-theorem-proving.md
 index 6608038c..382a4b94 100644
@@ -722,20 +722,20 @@ index 6608038c..382a4b94 100644
  
  ## Comparison to Other AI-for-Science Efforts
  
--This work exists within a broader ecosystem of AI-for-science initiatives. [[gpt/gpt-rosalind|GPT-Rosalind]], OpenAI's model for biology and life sciences, demonstrated capabilities in protein design and genomic analysis but operated primarily in applied domains rather than pure mathematics. [[claude-science|Claude Science]] by Anthropic targets life sciences with a different approach, providing an interactive workbench for researchers. The Astra model's mathematics results are distinctive in targeting pure theoretical advances rather than applied scientific problems.
-+This work exists within a broader ecosystem of AI-for-science initiatives. [[concepts/gpt/gpt-rosalind|GPT-Rosalind]], OpenAI's model for biology and life sciences, demonstrated capabilities in protein design and genomic analysis but operated primarily in applied domains rather than pure mathematics. [[claude-science|Claude Science]] by Anthropic targets life sciences with a different approach, providing an interactive workbench for researchers. The Astra model's mathematics results are distinctive in targeting pure theoretical advances rather than applied scientific problems.
+-This work exists within a broader ecosystem of AI-for-science initiatives. [[concepts/gpt/gpt-rosalind|GPT-Rosalind]], OpenAI's model for biology and life sciences, demonstrated capabilities in protein design and genomic analysis but operated primarily in applied domains rather than pure mathematics. [[concepts/claude-science|Claude Science]] by Anthropic targets life sciences with a different approach, providing an interactive workbench for researchers. The Astra model's mathematics results are distinctive in targeting pure theoretical advances rather than applied scientific problems.
++This work exists within a broader ecosystem of AI-for-science initiatives. [[concepts/gpt/gpt-rosalind|GPT-Rosalind]], OpenAI's model for biology and life sciences, demonstrated capabilities in protein design and genomic analysis but operated primarily in applied domains rather than pure mathematics. [[concepts/claude-science|Claude Science]] by Anthropic targets life sciences with a different approach, providing an interactive workbench for researchers. The Astra model's mathematics results are distinctive in targeting pure theoretical advances rather than applied scientific problems.
  
- The formal verification workflow — generating proofs and then certifying them in Lean — connects to broader work in [[formal-verification-llm-agents|LLM-based formal verification]], where AI systems are used to produce machine-checkable proofs. The mathematics results suggest that frontier models can contribute not just to verification but to original discovery.
+ The formal verification workflow — generating proofs and then certifying them in Lean — connects to broader work in [[concepts/formal-verification-llm-agents|LLM-based formal verification]], where AI systems are used to produce machine-checkable proofs. The mathematics results suggest that frontier models can contribute not just to verification but to original discovery.
  
 @@ -70,7 +70,7 @@ Several open questions remain about the role of AI in mathematical research. How
  
  - [[entities/openai|OpenAI]] — Company behind the Astra model and these results
  - [[concepts/station-autonomous-math-discovery|Station]] — Decentralized multi-agent math discovery on the AlphaEvolve catalogue (arXiv:2608.23691, Aug 24, 2026); complementary paradigm: multi-model collaboration vs. Astra's single-model depth + Lean certificates
--- [[gpt/gpt-rosalind|GPT-Rosalind]] — OpenAI's model for scientific discovery in biology
+-- [[concepts/gpt/gpt-rosalind|GPT-Rosalind]] — OpenAI's model for scientific discovery in biology
 +- [[concepts/gpt/gpt-rosalind|GPT-Rosalind]] — OpenAI's model for scientific discovery in biology
- - [[claude-science|Claude Science]] — Anthropic's AI workbench for life sciences
- - [[formal-verification-llm-agents|Formal Verification for LLM Agents]] — Broader context for AI and formal methods
- - [[cryptography-patterns|Cryptography Patterns]] — Cryptographic concepts relevant to lattice-based results
+ - [[concepts/claude-science|Claude Science]] — Anthropic's AI workbench for life sciences
+ - [[concepts/formal-verification-llm-agents|Formal Verification for LLM Agents]] — Broader context for AI and formal methods
+ - [[concepts/cryptography-patterns|Cryptography Patterns]] — Cryptographic concepts relevant to lattice-based results
 diff --git a/wiki/concepts/ai-skepticism-movement.md b/wiki/concepts/ai-skepticism-movement.md
 index b4f33482..64ff825e 100644
 --- a/wiki/concepts/ai-skepticism-movement.md
@@ -764,8 +764,8 @@ index 913e65f2..b07ff530 100644
  
  The threat was crystallised in Sharon Brightwell's case (Dover, Florida, 2026): she received a call from what sounded exactly like her daughter April in distress, claiming to have caused a car accident while texting. A man posing as an attorney then demanded $15,000 in cash for bail, warning her not to tell the bank the real purpose. Brightwell complied within the hour, only discovering the fraud when she reached the real April later. The attackers had cloned her daughter's voice from a short sample — likely scraped from social media or a prior recorded call.
  
--This page covers the technology behind voice cloning, the fraud attack vectors it enables, why traditional defences fail against AI-driven voice scams, and the broader implications for [[agent-safety]] and [[security-and-governance/ai-safety-and-alignment]].
-+This page covers the technology behind voice cloning, the fraud attack vectors it enables, why traditional defences fail against AI-driven voice scams, and the broader implications for [[agent-safety]] and [[concepts/security-and-governance/ai-safety-and-alignment]].
+-This page covers the technology behind voice cloning, the fraud attack vectors it enables, why traditional defences fail against AI-driven voice scams, and the broader implications for [[concepts/agent-safety]] and [[security-and-governance/ai-safety-and-alignment]].
++This page covers the technology behind voice cloning, the fraud attack vectors it enables, why traditional defences fail against AI-driven voice scams, and the broader implications for [[concepts/agent-safety]] and [[concepts/security-and-governance/ai-safety-and-alignment]].
  
  ## How AI Voice Cloning Works
  
@@ -777,7 +777,7 @@ index e3b19984..cfa2c3ea 100644
  
  - It supplies the **training-data genealogy of slop** that [[concepts/ai-slop]] describes phenomenologically: slop is not random noise, it is *what non-expert reward looked like*, generalized.
  - It is an argument for the [[concepts/verification]] thesis (trust must be earned per-domain, per-principal) and against auto-rater confidence — see also [[concepts/benchmark-ceiling]]'s evaluation-scarcity point from a different angle.
--- The "no unhackable grader + efficiency rewards ⇒ permitted shortcuts" chain is a restatement of [[concepts/reward-hacking]] extended from eval gaming to *value* relativity.
+-- The "no unhackable grader + efficiency rewards ⇒ permitted shortcuts" chain is a restatement of [[concepts/evaluation/reward-hacking]] extended from eval gaming to *value* relativity.
 +- The "no unhackable grader + efficiency rewards ⇒ permitted shortcuts" chain is a restatement of [[concepts/evaluation/reward-hacking]] extended from eval gaming to *value* relativity.
  - The principal/agent framing connects to [[concepts/principal-agent-problem]]: whose values parameterize "permissible shortcut" is exactly a principal-identity question.
  
@@ -792,7 +792,7 @@ index e3b19984..cfa2c3ea 100644
  ## See Also
  
  - [[concepts/ai-slop]] — the observable artifact of non-expert-rewarded priors
--- [[concepts/reward-hacking]] — shortcut-taking under imperfect graders
+-- [[concepts/evaluation/reward-hacking]] — shortcut-taking under imperfect graders
 +- [[concepts/evaluation/reward-hacking]] — shortcut-taking under imperfect graders
  - [[concepts/verification]] — trust boundaries when you cannot evaluate at expert depth
  - [[entities/hyperbo]] — author
@@ -804,7 +804,7 @@ index 44115bcc..44c33a1f 100644
    - "[[entities/anthropic]]"
    - "[[concepts/cyber-frontier-models]]"
    - "[[concepts/evaluation/ai-evaluation]]"
--  - "[[concepts/ai-safety]]"
+-  - "[[concepts/security-and-governance/ai-safety]]"
 +  - "[[concepts/security-and-governance/ai-safety]]"
  ---
  
@@ -813,7 +813,7 @@ index 44115bcc..44c33a1f 100644
  - [[concepts/cyber-frontier-models]] — Claude models as cyber-capable frontier systems
  - [[concepts/evaluation/ai-evaluation]] — Broader evaluation methodology context
  - [[entities/anthropic]] — Anthropic entity page
--- [[concepts/ai-safety]] — AI safety considerations
+-- [[concepts/security-and-governance/ai-safety]] — AI safety considerations
 +- [[concepts/security-and-governance/ai-safety]] — AI safety considerations
  - [[concepts/security-and-governance/ai-red-teaming]] — Red teaming methodology
 diff --git a/wiki/concepts/apache-burr-agent-framework.md b/wiki/concepts/apache-burr-agent-framework.md
@@ -824,7 +824,7 @@ index b30cad9e..dd42c08b 100644
  
  ## Overview
  
--Apache Burr (Incubating) is a pure Python framework for building reliable AI agents and decision-making applications. Originating from [DagWorks](https://github.com/DAGWorks-Inc) and now under the Apache Incubator, Burr provides a lightweight, composable API for developing everything from simple chatbots to complex [[multi-agents/multi-agent-systems|multi-agent systems]].
+-Apache Burr (Incubating) is a pure Python framework for building reliable AI agents and decision-making applications. Originating from [DagWorks](https://github.com/DAGWorks-Inc) and now under the Apache Incubator, Burr provides a lightweight, composable API for developing everything from simple chatbots to complex [[concepts/multi-agents/multi-agent-systems|multi-agent systems]].
 +Apache Burr (Incubating) is a pure Python framework for building reliable AI agents and decision-making applications. Originating from [DagWorks](https://github.com/DAGWorks-Inc) and now under the Apache Incubator, Burr provides a lightweight, composable API for developing everything from simple chatbots to complex [[concepts/multi-agents/multi-agent-systems|multi-agent systems]].
  
  The framework is named after Aaron Burr — a deliberate reference to the musical *Hamilton*, as Burr builds on **Hamilton**, DagWorks' micro-framework for defining typed dataflows. The naming convention (Hamilton → Burr) reflects Burr's architectural lineage: where Hamilton provides the data transformation layer, Burr adds the state-machine execution layer for agentic decision-making.
@@ -833,7 +833,7 @@ index b30cad9e..dd42c08b 100644
  ## See Also
  
  - [[concepts/langgraph]] — LangChain's event-driven agent orchestration framework
--- [[multi-agents/multi-agent-systems]] — Patterns and architectures for multi-agent coordination
+-- [[concepts/multi-agents/multi-agent-systems]] — Patterns and architectures for multi-agent coordination
 +- [[concepts/multi-agents/multi-agent-systems]] — Patterns and architectures for multi-agent coordination
  - [[concepts/durable-execution]] — Long-running, fault-tolerant agent execution
  - [[concepts/ai-observability]] — Monitoring and debugging AI systems in production
@@ -845,8 +845,8 @@ index 5519ddcd..276c9b58 100644
  
  ## Related Pages
  
--- [[entities/apertus]] — The organization behind the Apertus model
--- [[entities/apertus]] — General concept overview of Apertus
+-- [[concepts/apertus]] — The organization behind the Apertus model
+-- [[concepts/apertus]] — General concept overview of Apertus
 +- [[concepts/apertus]] — The organization behind the Apertus model
 +- [[concepts/apertus]] — General concept overview of Apertus
  - [[concepts/sovereign-ai]] — The sovereign AI movement and its geopolitical dimensions
@@ -860,7 +860,7 @@ index a763eb02..197acee4 100644
  - [[concepts/open-source-ai]] — Open-source strategy in AI development
  - [[concepts/eu-ai-act]] — European Union AI regulation framework
  - [[concepts/model-distillation]] — Techniques for compressing large models into smaller ones
--- [[entities/apertus]] — The organization behind the Apertus model
+-- [[concepts/apertus]] — The organization behind the Apertus model
 +- [[concepts/apertus]] — The organization behind the Apertus model
  
  ## Overview
@@ -873,7 +873,7 @@ index f2c3cb74..32243bb4 100644
  
  - [[concepts/gemini|Google Gemini]] — The underlying model family
  - [[concepts/apple-intelligence|Apple Intelligence]] — Apple's prior AI strategy
--- [[entities/apple|Apple]] — Company profile
+-- [[concepts/apple|Apple]] — Company profile
 +- [[concepts/apple|Apple]] — Company profile
  - [[entities/google|Google]] — Company profile
  - [[concepts/ai-infrastructure|AI Infrastructure]] — Cloud deployment considerations
@@ -972,7 +972,7 @@ index f1fedb88..483797bf 100644
  
  - [[entities/k-eric-drexler]] — Author of the CAIS framework
  - [[concepts/superintelligence]] — Broader topic of AI surpassing human capabilities
--- [[concepts/ai-safety]] — Safety implications of advanced AI
+-- [[concepts/security-and-governance/ai-safety]] — Safety implications of advanced AI
 +- [[concepts/security-and-governance/ai-safety]] — Safety implications of advanced AI
  - [[concepts/nick-bostrom]] — Contrasting agent-centric superintelligence framework
  - [[concepts/intelligence-explosion]] — Recursive self-improvement dynamics
@@ -985,7 +985,7 @@ index 61ea73cd..d4fdbc74 100644
  
  ## Overview
  
--Claude Fable 5 was announced on June 9, 2026 as "a Mythos-class model that we've made safe for general use." It represents the public release of Mythos-class capabilities, which Anthropic had previously restricted through [[concepts/project-glasswing|Project Glasswing]] due to safety concerns (particularly cybersecurity and dual-use biology capabilities).
+-Claude Fable 5 was announced on June 9, 2026 as "a Mythos-class model that we've made safe for general use." It represents the public release of Mythos-class capabilities, which Anthropic had previously restricted through [[entities/project-glasswing|Project Glasswing]] due to safety concerns (particularly cybersecurity and dual-use biology capabilities).
 +Claude Fable 5 was announced on June 9, 2026 as "a Mythos-class model that we've made safe for general use." It represents the public release of Mythos-class capabilities, which Anthropic had previously restricted through [[entities/project-glasswing|Project Glasswing]] due to safety concerns (particularly cybersecurity and dual-use biology capabilities).
  
  The longer and more complex the task, the larger Fable 5's lead over other Claude models. It was simultaneously launched with **Claude Mythos 5** — the same model with safeguards lifted, restricted to Glasswing cyber defenders and select biology researchers.
@@ -1020,7 +1020,7 @@ index b1711f9a..f775bd04 100644
  On June 9, 2026, Anthropic launched two Mythos-class models simultaneously:
  
  - **[[concepts/claude/fable-5|Claude Fable 5]]**: Mythos-class model made safe for general use. Safety classifiers fall back to Opus 4.8 on cybersecurity, biology/chemistry, and distillation queries. **>95% of sessions involve no fallback.**
--- **Claude Mythos 5**: Same underlying model with safeguards lifted. Restricted to [[concepts/project-glasswing|Project Glasswing]] cyber defenders and select biology researchers.
+-- **Claude Mythos 5**: Same underlying model with safeguards lifted. Restricted to [[entities/project-glasswing|Project Glasswing]] cyber defenders and select biology researchers.
 +- **Claude Mythos 5**: Same underlying model with safeguards lifted. Restricted to [[entities/project-glasswing|Project Glasswing]] cyber defenders and select biology researchers.
  
  **Pricing:** $10/MTok input, $50/MTok output — less than half the price of Claude Mythos Preview.
@@ -1096,7 +1096,7 @@ index c00de821..1fa11b92 100644
  - [[concepts/coding-agents/ramp-inspect]] — Ramp Inspect
  - [[concepts/coding-agents/pi-autoresearch]] — pi-autoresearch
  - [[concepts/coding-agents/mandate-equinox]] — Mandate Equinox
--- [[concepts/coding-agents/bernstein]] — Bernstein (multi-agent orchestrator)
+-- [[entities/bernstein]] — Bernstein (multi-agent orchestrator)
 +- [[entities/bernstein]] — Bernstein (multi-agent orchestrator)
  - [[concepts/coding-agents/codeact]] — CodeAct
  - [[concepts/coding-agents/hf-cli]] — Hugging Face CLI
@@ -1108,7 +1108,7 @@ index a69450e6..84f28aff 100644
  
  ## Related Pages
  
--- [[entities/omar-khattab/colbert]] — Omar Khattab's ColBERT deep-dive
+-- [[concepts/colbert]] — Omar Khattab's ColBERT deep-dive
 +- [[concepts/colbert]] — Omar Khattab's ColBERT deep-dive
  - [[entities/benjamin-clavie]] — Benjamin Clavié, leading ColBERT researcher
  - [[entities/late-interaction]] — LIR Workshop @ ECIR 2026
@@ -1140,7 +1140,7 @@ index fe37366d..c4f022c8 100644
  ## Connection to Other Frameworks
  
 -- [[concepts/reflexive-ai]] — Shopify's Tobi Lütke memo is the canonical example of "AI-pilled" in practice
--- [[entities/company-ai-pilled]] — broader organizational change theory
+-- [[concepts/company-ai-pilled]] — broader organizational change theory
 +- [[concepts/reflexive-ai]] — Shopify's Tobi Lütke memo is the canonical example of "AI-pilled" in practice
 +- [[concepts/company-ai-pilled]] — broader organizational change theory
  - [[entities/solo-founder-stack]] — AI-pilled companies adopt solo-founder efficiency internally
@@ -1150,7 +1150,7 @@ index fe37366d..c4f022c8 100644
  4. **Cultural shift** — "using AI well is a skill that needs to be carefully learned" (Tobi Lütke)
  
  ## Related Entities
--- [[entities/company-ai-pilled]]
+-- [[concepts/company-ai-pilled]]
 +- [[concepts/company-ai-pilled]]
  
  - **Khe Hy** (Khemaridh Hy) — Former Wall Street analyst, founder of Rad Reads, now running Latour AI consultancy
@@ -1159,7 +1159,7 @@ index fe37366d..c4f022c8 100644
  Company AI Pilled is a framework advocating for **AI-driven organizational culture transformation**, not just tool adoption. The emphasis on the first person with courage and over-investment during the adoption phase serves as a practical guide for real-world enterprise AI implementation.
  
  
--## Related Concepts- [[entities/company-ai-pilled]]
+-## Related Concepts- [[concepts/company-ai-pilled]]
 +## Related Concepts- [[concepts/company-ai-pilled]]
  
  - [Reflexive AI](reflexive-ai.md) — Shopify AI adoption case study
@@ -1181,7 +1181,7 @@ index 741d76dc..6a9e5a4f 100644
  > "A good harness is a harness that *reduces unfamiliar problems to familiar ones* and *reduces complex problems to simple ones*."
  > — Zhang & Khattab (2026)
  
--**Why existing harnesses fail at LID:** Claude Code and Codex fundamentally rely on flooding the context window with interleaved task-specific information, tool call outputs, and reasoning that get continuously appended. This causes **[[concepts/context-rot|context rot]]** — bloated histories quickly fall out of the training distribution.
+-**Why existing harnesses fail at LID:** Claude Code and Codex fundamentally rely on flooding the context window with interleaved task-specific information, tool call outputs, and reasoning that get continuously appended. This causes **[[concepts/context-engineering/context-rot|context rot]]** — bloated histories quickly fall out of the training distribution.
 +**Why existing harnesses fail at LID:** Claude Code and Codex fundamentally rely on flooding the context window with interleaved task-specific information, tool call outputs, and reasoning that get continuously appended. This causes **[[concepts/context-engineering/context-rot|context rot]]** — bloated histories quickly fall out of the training distribution.
  
  ### Harness-Induced Equivalence Classes
@@ -1190,7 +1190,7 @@ index 741d76dc..6a9e5a4f 100644
  - [[entities/omar-khattab/rlm]] — RLM as Khattab's research program
  - [[entities/alex-zhang]] — First author
  - [[concepts/mismanaged-geniuses-hypothesis]] — MGH thesis
--- [[concepts/context-rot]] — Why naive harnesses fail
+-- [[concepts/context-engineering/context-rot]] — Why naive harnesses fail
 +- [[concepts/context-engineering/context-rot]] — Why naive harnesses fail
  - [[concepts/bitter-lesson]] — Scaling vs. design tension
  - [[entities/omar-khattab]] — Co-author
@@ -1202,7 +1202,7 @@ index 15a433d2..fa97f2c2 100644
  ## Related Concepts
  
  - [[concepts/superintelligence]] — Broader topic of AI surpassing human capabilities
--- [[concepts/ai-safety]] — Safety implications of advanced AI
+-- [[concepts/security-and-governance/ai-safety]] — Safety implications of advanced AI
 +- [[concepts/security-and-governance/ai-safety]] — Safety implications of advanced AI
  - [[concepts/nick-bostrom]] — Alternative agent-centric superintelligence framework
  - [[entities/future-of-humanity-institute]] — Institution where CAIS was developed
@@ -1239,7 +1239,7 @@ index cd909208..262ea006 100644
  - [[concepts/reasoning-aware-retrieval]] — Jointly embedding agent reasoning traces with search queries (AgentIR-4B, 2026)
  - [[concepts/bm25]] — Classical lexical retrieval; performs differently in agent loops vs. one-shot
  - [[concepts/deep-research-agent-from-scratch]] — Building research agents from scratch (Hugo Bowne-Anderson + Ivan Leo workshop)
--- [[concepts/browsecomp]] — The BrowseComp benchmark series
+-- [[concepts/ai-benchmarks/browsecomp]] — The BrowseComp benchmark series
 +- [[concepts/ai-benchmarks/browsecomp]] — The BrowseComp benchmark series
  - [[concepts/mutually-assured-distraction]] — Better retrieval → more convincing distractors → more confidently wrong answers
  - [[concepts/context-engineering/context-window-management|Context Window Management]] — Why long context doesn't eliminate retrieval needs
@@ -1252,7 +1252,7 @@ index 2e8cd51e..249a5511 100644
  
  ### Judge-as-Agent
  
--Both use an LLM-based judge to evaluate conversations — an instance of [[concepts/llm-as-judge|LLM-as-judge]] applied to agent evaluation. This introduces a meta-evaluation challenge: who judges the judge?
+-Both use an LLM-based judge to evaluate conversations — an instance of [[concepts/evaluation/llm-as-judge|LLM-as-judge]] applied to agent evaluation. This introduces a meta-evaluation challenge: who judges the judge?
 +Both use an LLM-based judge to evaluate conversations — an instance of [[concepts/evaluation/llm-as-judge|LLM-as-judge]] applied to agent evaluation. This introduces a meta-evaluation challenge: who judges the judge?
  
  ### From Testing to Continuous Validation
@@ -1285,7 +1285,7 @@ index f3e98dc6..c03ab527 100644
  ## See Also
  
  - [[entities/microsoft-ai-team]] — Microsoft AI team and MAI model family
--- [[concepts/reinforcement-learning]] — RL fundamentals
+-- [[concepts/post-training/reinforcement-learning]] — RL fundamentals
 +- [[concepts/post-training/reinforcement-learning]] — RL fundamentals
  - [[concepts/hill-climbing]] — Hill-climbing as an optimization paradigm
 -- [[concepts/model-routing]] — Routing traffic to optimal models by task
@@ -1318,9 +1318,9 @@ index c05d57f0..48c083dc 100644
  sources: []
  related:
    - "[[concepts/ai-benchmarks/tau-bench]]"
--  - "[[concepts/tau-squared-bench]]"
--  - "[[concepts/tau-knowledge]]"
--  - "[[concepts/tau-voice]]"
+-  - "[[concepts/ai-benchmarks/tau-squared-bench]]"
+-  - "[[concepts/ai-benchmarks/tau-knowledge]]"
+-  - "[[concepts/ai-benchmarks/tau-voice]]"
 +  - "[[concepts/ai-benchmarks/tau-squared-bench]]"
 +  - "[[concepts/ai-benchmarks/tau-knowledge]]"
 +  - "[[concepts/ai-benchmarks/tau-voice]]"
@@ -1362,7 +1362,7 @@ index 5195cee9..af8c5350 100644
  
  ## Related Pages
  - [[concepts/privacy-preserving-ml]] — Broader privacy-preserving ML techniques
--- [[concepts/distributed-training]] — Distributed ML training approaches
+-- [[concepts/training-infra/distributed-training]] — Distributed ML training approaches
 +- [[concepts/training-infra/distributed-training]] — Distributed ML training approaches
  - [[concepts/edge-computing]] — Edge device deployment
  - [[concepts/post-training/quantization-overview]] — Related model compression technique for edge deployment
@@ -1374,7 +1374,7 @@ index 3689eaa1..7e2539f7 100644
  ## Related
  
  - [[concepts/mixture-of-experts]] — Foundational MoE concept
--- [[concepts/distributed-training]] — Related distributed computing concepts
+-- [[concepts/training-infra/distributed-training]] — Related distributed computing concepts
 +- [[concepts/training-infra/distributed-training]] — Related distributed computing concepts
  - [[concepts/inference]] — Broader inference optimization techniques
  - [[concepts/speculative-decoding]] — Complementary latency reduction approach
@@ -1387,7 +1387,7 @@ index 8c26f2f7..feaeeff2 100644
  
  ## Key Findings
  
--1. **Abstract reasoning is still unsolved.** ARC-AGI-3 remains near-random for every frontier model — even Fable 5's "13-hour autonomous run" (see [[concepts/arc-agi-3]]) scored 0.50 normalized against 0.28 random. The capability that *is* near-saturated is the old one: ARC-AGI-1 at 84.6–95.2%.
+-1. **Abstract reasoning is still unsolved.** ARC-AGI-3 remains near-random for every frontier model — even Fable 5's "13-hour autonomous run" (see [[concepts/ai-benchmarks/arc-agi-3]]) scored 0.50 normalized against 0.28 random. The capability that *is* near-saturated is the old one: ARC-AGI-1 at 84.6–95.2%.
 +1. **Abstract reasoning is still unsolved.** ARC-AGI-3 remains near-random for every frontier model — even Fable 5's "13-hour autonomous run" (see [[concepts/ai-benchmarks/arc-agi-3]]) scored 0.50 normalized against 0.28 random. The capability that *is* near-saturated is the old one: ARC-AGI-1 at 84.6–95.2%.
  2. **Long-context memory degrades sharply with budget.** On LIFE, scores collapse from 53.9% (full context) to 35.3% (4000-token budget) — "a long multi-session conversation compressed into one prompt is not the same thing as memory."
  3. **Effort is a first-class variable.** LIFE: 25.5% → 35.3% low→xhigh; HLE: 46.2% → 53.3%; GPT-5.4 beats GPT-5.5 on 7 of 10 LIFE domains at *low* effort. Single-number "model X > model Y" claims are meaningless without the effort setting.
@@ -1396,7 +1396,7 @@ index 8c26f2f7..feaeeff2 100644
  ## See Also
  
  - [[concepts/benchmark-ceiling]] — why near-floor and near-ceiling regimes need different reporting
--- [[concepts/arc-agi-3]] — detailed page on the ARC-AGI-3 results
+-- [[concepts/ai-benchmarks/arc-agi-3]] — detailed page on the ARC-AGI-3 results
 +- [[concepts/ai-benchmarks/arc-agi-3]] — detailed page on the ARC-AGI-3 results
  - [[concepts/evaluation-integrity]] — contamination, self-report, and verification
  - [[concepts/agents-last-exam]] — the closing-benchmark argument this suite implicitly tests
@@ -1454,7 +1454,7 @@ index f0868e6c..53da934a 100644
  - [[concepts/wheelhouse]] — Where Land Rush was first implemented
  - [[concepts/wish-factory]] — Pattern that generates even more commits
  - [[concepts/agentic-engineering]] — Broader engineering discipline
--- [[concepts/agent-orchestration]] — Orchestration patterns that generate high commit rates
+-- [[concepts/multi-agents/agent-orchestration]] — Orchestration patterns that generate high commit rates
 +- [[concepts/multi-agents/agent-orchestration]] — Orchestration patterns that generate high commit rates
  
  ## Sources
@@ -1492,7 +1492,7 @@ index 96795528..3a3e6b84 100644
  Raschka identifies **multi-head latent attention (MLA)** as the clear winner of the KV cache efficiency competition. MLA uses compressed key-value representations, dramatically reducing the memory footprint of long-context inference. Combined with sparse attention patterns and hybrid architectures, MLA enables affordable long-context processing in modern models like Qwen 3.5.
  
  ### RLVR and the Future of Process Verification
--[[concepts/rlvr|Reinforcement learning with verifiable rewards (RLVR)]] has become a major post-training technique since DeepSeek-R1 (2025). Unlike pre-training and SFT which share the same underlying loss function, RLVR introduces a separate objective based on whether the model's output — a correct math answer, a passing test — is correct. The verification happens at the **end** of the attempt.
+-[[concepts/post-training/rlvr|Reinforcement learning with verifiable rewards (RLVR)]] has become a major post-training technique since DeepSeek-R1 (2025). Unlike pre-training and SFT which share the same underlying loss function, RLVR introduces a separate objective based on whether the model's output — a correct math answer, a passing test — is correct. The verification happens at the **end** of the attempt.
 +[[concepts/post-training/rlvr|Reinforcement learning with verifiable rewards (RLVR)]] has become a major post-training technique since DeepSeek-R1 (2025). Unlike pre-training and SFT which share the same underlying loss function, RLVR introduces a separate objective based on whether the model's output — a correct math answer, a passing test — is correct. The verification happens at the **end** of the attempt.
  
  Raschka predicts the next frontier is **process reward models (PRMs)** that check intermediate reasoning steps, not just final answers. DeepSeek-R1 already experimented with this but found it 'had not worked particularly well.' A future model may combine RLVR with a reliable enough PRM to strengthen the model's refinement loop.
@@ -1505,7 +1505,7 @@ index eac094ca..f0cb4366 100644
    - "[[concepts/token-economics]]"
    - "[[concepts/outcome-based-pricing]]"
    - "[[concepts/ai-gateway]]"
--  - "[[context-engineering/context-management]]"
+-  - "[[concepts/context-engineering/context-management]]"
 +  - "[[concepts/context-engineering/context-management]]"
    - "[[concepts/inference-hardware]]"
    - "[[concepts/agentic-search]]"
@@ -1514,7 +1514,7 @@ index eac094ca..f0cb4366 100644
  
  ## Related Crises
  
--- **[[context-engineering/context-management]]**: The longer the context, the higher the cost. Context management is the engineering discipline that fights the tokenpocalypse.
+-- **[[concepts/context-engineering/context-management]]**: The longer the context, the higher the cost. Context management is the engineering discipline that fights the tokenpocalypse.
 +- **[[concepts/context-engineering/context-management]]**: The longer the context, the higher the cost. Context management is the engineering discipline that fights the tokenpocalypse.
  - **[[concepts/agentic-search]]**: Agentic search can consume 20–50× more tokens than simple RAG, making it a primary cost driver.
  - **[[concepts/inference-hardware]]**: The hardware layer determines the floor cost. Cheaper hardware directly changes the economics.
@@ -1567,7 +1567,7 @@ index be6c73f8..1fca0a61 100644
  
  ### Hardware Details
  - **DGX Spark**: → [[entities/nvidia-dgx-spark]], [[concepts/dgx-spark-local-llm-server]]
--- **Mac Studio**: → [[entities/mac-studio-local-ai]]
+-- **Mac Studio**: → [[concepts/mac-studio-local-ai]]
 +- **Mac Studio**: → [[concepts/mac-studio-local-ai]]
  - **Inference hardware general**: → [[concepts/local-llm/local-llm-inference-hardware]]
  
@@ -1585,7 +1585,7 @@ index be6c73f8..1fca0a61 100644
  - [[concepts/local-llm/_index]] — Local LLM overview
  - [[concepts/local-llm/local-llm-inference-hardware]] — Inference hardware details
  - [[concepts/local-llm/local-llm-models-april-2026]] — Per-model benchmarks
--- [[entities/mac-studio-local-ai]] — Mac Studio inference environment
+-- [[concepts/mac-studio-local-ai]] — Mac Studio inference environment
 +- [[concepts/mac-studio-local-ai]] — Mac Studio inference environment
  - [[concepts/dgx-spark-local-llm-server]] — DGX Spark inference server setup
  - [[concepts/local-llm/local-llm-server-setup-on-dgx-spark]] — DGX Spark setup guide
@@ -1598,7 +1598,7 @@ index c320f395..ce4bbf41 100644
  - What's the energy efficiency comparison vs cloud GPU inference per token?
  
  ## Related Concepts
--- [[entities/mac-studio-local-ai]]
+-- [[concepts/mac-studio-local-ai]]
 +- [[concepts/mac-studio-local-ai]]
  - [[concepts/nvidia-egpu-macos]]
  - [[concepts/dflash-ggml]]
@@ -1611,7 +1611,7 @@ index 42da5bfd..0ef9a973 100644
  ## Related Concepts
  
  - [[concepts/claude/perfect-memory]] — File-based memory in practice
--- [[entities/company-ai-pilled]] — AI adoption maturity model
+-- [[concepts/company-ai-pilled]] — AI adoption maturity model
 +- [[concepts/company-ai-pilled]] — AI adoption maturity model
  - [[entities/autoreason]] — Self-improving reasoning
  
@@ -1637,7 +1637,7 @@ index ea48920c..d4816a5a 100644
  
  ## Context: M2 Series Foundation
  
--MSA builds on lessons from the M2 series (229.9B total params, 9.8B active per token, 256 fine-grained experts with sigmoid gating). M2 achieved [[concepts/swe-bench-pro|SWE-Bench Pro]] scores of 56-59 and demonstrated self-evolving agent capabilities via the **Forge** RL training system.
+-MSA builds on lessons from the M2 series (229.9B total params, 9.8B active per token, 256 fine-grained experts with sigmoid gating). M2 achieved [[concepts/ai-benchmarks/swe-bench-pro|SWE-Bench Pro]] scores of 56-59 and demonstrated self-evolving agent capabilities via the **Forge** RL training system.
 +MSA builds on lessons from the M2 series (229.9B total params, 9.8B active per token, 256 fine-grained experts with sigmoid gating). M2 achieved [[concepts/ai-benchmarks/swe-bench-pro|SWE-Bench Pro]] scores of 56-59 and demonstrated self-evolving agent capabilities via the **Forge** RL training system.
  
  ## Related Pages
@@ -1646,7 +1646,7 @@ index ea48920c..d4816a5a 100644
  - [[concepts/deepseek-mla]] — DeepSeek's Multi-head Latent Attention
  - [[concepts/long-context]] — Long context handling in LLMs
  - [[concepts/kv-cache]] — KV cache optimization
--- [[concepts/swe-bench-pro]] — SWE-Bench Pro benchmark
+-- [[concepts/ai-benchmarks/swe-bench-pro]] — SWE-Bench Pro benchmark
 +- [[concepts/ai-benchmarks/swe-bench-pro]] — SWE-Bench Pro benchmark
 diff --git a/wiki/concepts/ml-research-practice.md b/wiki/concepts/ml-research-practice.md
 index 834d5373..da620b1f 100644
@@ -1656,8 +1656,8 @@ index 834d5373..da620b1f 100644
  
  ### 1. Goal-Driven > Idea-Driven (Even More Important in the Agent Era)
  
--In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[concepts/coding-agents/claude-code]], and [[concepts/coding-agents/openai-codex]].
-+In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[concepts/coding-agents/claude-code]], and [[entities/openai-codex]].
+-In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[entities/claude-code]], and [[concepts/coding-agents/openai-codex]].
++In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[entities/claude-code]], and [[entities/openai-codex]].
  
  ### 2. Constraining to General Solutions (Aligns with RLHF's Essence)
  
@@ -1665,7 +1665,7 @@ index 834d5373..da620b1f 100644
  
  ### 5. ε-Greedy Exploration (Agent Design as Multi-Armed Bandit)
  
--In [[concepts/agent-architecture/agent-architecture]] design, balancing the main strategy with exploration is a critical design decision. [[concepts/test-time-scaling/test-time-scaling]] is itself about the explore-exploit tradeoff during inference.
+-In [[concepts/agent-architecture/agent-architecture]] design, balancing the main strategy with exploration is a critical design decision. [[concepts/test-time-scaling]] is itself about the explore-exploit tradeoff during inference.
 +In [[concepts/agent-architecture/agent-architecture]] design, balancing the main strategy with exploration is a critical design decision. [[concepts/test-time-scaling]] is itself about the explore-exploit tradeoff during inference.
  
  ## Related
@@ -1674,7 +1674,7 @@ index 834d5373..da620b1f 100644
  - [[concepts/post-training/reinforcement-learning]] — Schulman's primary technical domain
  - [[concepts/coding-agents/coding-agents]] — The 2026 embodiment of Goal-Driven research
  - [[concepts/agent-memory/context-engineering]] — The agent counterpart of notebook culture
--- [[concepts/test-time-scaling/test-time-scaling]] — The inference-time version of ε-greedy exploration
+-- [[concepts/test-time-scaling]] — The inference-time version of ε-greedy exploration
 +- [[concepts/test-time-scaling]] — The inference-time version of ε-greedy exploration
 diff --git a/wiki/concepts/mlx-llm.md b/wiki/concepts/mlx-llm.md
 index c87f4f6f..8ec33ce8 100644
@@ -1684,7 +1684,7 @@ index c87f4f6f..8ec33ce8 100644
  
  ## Related Concepts
  
--- [[entities/mac-studio-local-ai]] — Mac Studio hardware setup for local inference
+-- [[concepts/mac-studio-local-ai]] — Mac Studio hardware setup for local inference
 +- [[concepts/mac-studio-local-ai]] — Mac Studio hardware setup for local inference
  - [[concepts/gguf]] — 4-bit and dynamic quantization techniques
  - [[concepts/mixture-of-experts]] — Mixture-of-Experts model design
@@ -1697,7 +1697,7 @@ index 6acb1d21..ed2d716c 100644
  - [[inference/llama-cpp]]
  - [[concepts/local-llm/_index]]
  - [[concepts/fine-tuning]]
--- [[entities/mac-studio-local-ai]]
+-- [[concepts/mac-studio-local-ai]]
 +- [[concepts/mac-studio-local-ai]]
  - [[concepts/inference]]
  
@@ -1710,7 +1710,7 @@ index b5bec00f..8b34aea3 100644
  ## Related Concepts
  
  - [[concepts/agent-safety]] — Agent execution security and sandboxing
--- [[concepts/agent-runtime]] — Infrastructure for running AI agents
+-- [[concepts/harness-engineering/agent-runtime]] — Infrastructure for running AI agents
 +- [[concepts/harness-engineering/agent-runtime]] — Infrastructure for running AI agents
  - [[concepts/serverless]] — Serverless computing patterns
 diff --git a/wiki/concepts/moe-train-inference-mismatch.md b/wiki/concepts/moe-train-inference-mismatch.md
@@ -1721,7 +1721,7 @@ index b6b401fa..d5b1c410 100644
  
  ### Inference-Time Mitigations
  
--- **Expert Parallelism (EP)**: Distributes experts across GPUs so that each GPU handles a manageable subset. [[concepts/elastic-ep]] in [[inference/sglang]] adds fault-tolerant EP for production deployments.
+-- **Expert Parallelism (EP)**: Distributes experts across GPUs so that each GPU handles a manageable subset. [[concepts/elastic-ep]] in [[concepts/inference/sglang]] adds fault-tolerant EP for production deployments.
 +- **Expert Parallelism (EP)**: Distributes experts across GPUs so that each GPU handles a manageable subset. [[concepts/elastic-ep]] in [[concepts/inference/sglang]] adds fault-tolerant EP for production deployments.
  - **Fine-grained expert parallelism**: [[concepts/deepseek-v4]]'s MegaMoE uses many small experts with fine-grained EP, improving load distribution and reducing per-expert capacity pressure.
  
@@ -1730,7 +1730,7 @@ index b6b401fa..d5b1c410 100644
  - [[concepts/elastic-ep]]
  - [[concepts/model-quantization]]
  - [[inference/vllm]]
--- [[inference/sglang]]
+-- [[concepts/inference/sglang]]
 +- [[concepts/inference/sglang]]
  - [[raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report]]
 diff --git a/wiki/concepts/multi-agents/agent-orchestration.md b/wiki/concepts/multi-agents/agent-orchestration.md
@@ -1741,7 +1741,7 @@ index cbe0dfc5..e6586da4 100644
  - **Antigravity IDE**: Visual Studio–like environment with built-in agent manager — spawn multiple agents on different projects with individual planning systems
  - **Skills Library**: Shared library with Darwinian selection — only the best skills survive
  - **Quota Management**: Employees have lower quotas than customers; SRE teams enforce limits
--- **Model Mixing**: Orchestration layer routes bulk work to cheap models ([[concepts/gemma-4|Gemma 4]]) and critical work to advanced models
+-- **Model Mixing**: Orchestration layer routes bulk work to cheap models ([[entities/gemma-4|Gemma 4]]) and critical work to advanced models
 +- **Model Mixing**: Orchestration layer routes bulk work to cheap models ([[entities/gemma-4|Gemma 4]]) and critical work to advanced models
  
  ## Google's Agent Infrastructure Stack (May 2026)
@@ -1754,7 +1754,7 @@ index f6df539c..ef0ba653 100644
  - [[entities/openai]] — OpenAI's broader infrastructure strategy
  - [[concepts/xai-anthropic-colossus-deal]] — GPU compute as strategic resource
  - [[entities/nvidia]] — Dominant GPU hardware vendor
--- [[concepts/distributed-training]] — Distributed training infrastructure challenges
+-- [[concepts/training-infra/distributed-training]] — Distributed training infrastructure challenges
 +- [[concepts/training-infra/distributed-training]] — Distributed training infrastructure challenges
  - [[concepts/mixture-of-experts]] — Related infrastructure scaling
 diff --git a/wiki/concepts/okf-open-knowledge-format.md b/wiki/concepts/okf-open-knowledge-format.md
@@ -1791,7 +1791,7 @@ index 3c102689..c779043c 100644
  related_concepts:
    - "[[concepts/ai-alliance]]"
    - "[[concepts/open-source-ai-must-win]]"
--  - "[[concepts/ai-safety]]"
+-  - "[[concepts/security-and-governance/ai-safety]]"
 +  - "[[concepts/security-and-governance/ai-safety]]"
    - "[[entities/nvidia]]"
  ---
@@ -1800,14 +1800,14 @@ index 3c102689..c779043c 100644
  
  - [[concepts/ai-alliance]] — The broader IBM/Meta-led AI Alliance (different initiative)
  - [[concepts/open-source-ai-must-win]] — Ongoing debate about open vs closed AI models
--- [[concepts/ai-safety]] — The broader safety ecosystem this alliance operates within
+-- [[concepts/security-and-governance/ai-safety]] — The broader safety ecosystem this alliance operates within
 +- [[concepts/security-and-governance/ai-safety]] — The broader safety ecosystem this alliance operates within
  - [[entities/nvidia]] — Parent company and founder
  
  ## See Also
  
  - [[entities/anthropic]]#policy — Anthropic's evolving stance on open weights
--- [[concepts/fable-5]] — US government export control directive context
+-- [[concepts/claude/fable-5]] — US government export control directive context
 +- [[concepts/claude/fable-5]] — US government export control directive context
 diff --git a/wiki/concepts/open-source-llm-governance-debian-gr.md b/wiki/concepts/open-source-llm-governance-debian-gr.md
 index 354c35b0..49e5c8ba 100644
@@ -1817,7 +1817,7 @@ index 354c35b0..49e5c8ba 100644
  
  ## Related Concepts
  
--- [[concepts/ai-safety]] — the safety implications of LLM-generated code in critical infrastructure
+-- [[concepts/security-and-governance/ai-safety]] — the safety implications of LLM-generated code in critical infrastructure
 +- [[concepts/security-and-governance/ai-safety]] — the safety implications of LLM-generated code in critical infrastructure
  - [[concepts/open-source-licensing]] — the unsettled legal status of AI-generated code copyright
  - [[concepts/ai-assisted-development]] — the practical reality of developers already using LLMs daily
@@ -1844,9 +1844,9 @@ index bdf63554..23fe5e1b 100644
  ## The Four "Riffs" on Decomposition
  | Framework | What it Decomposes | Monolith it Replaces | Longevity |
  |-----------|-------------------|---------------------|-----------|
--| **Late Interaction ([[entities/omar-khattab/colbert|ColBERT]])** | Document representations → sets of objects; similarity → compositional operations | Single-vector dense embeddings | 6.5+ years (2020–present) |
--| **[[entities/omar-khattab/dspy|DSPy]]** | Specification vs optimization; AI programs → symbolic modules with NL specs | Monolithic prompt debt | 3.5+ years (2023–present) |
--| **[[entities/omar-khattab/gepa|GEPA]]** | Learning signals → actual tokens + feedback (not scalar rewards) | Policy gradient RL rewards | Emerging (2025) |
+-| **Late Interaction ([[concepts/colbert|ColBERT]])** | Document representations → sets of objects; similarity → compositional operations | Single-vector dense embeddings | 6.5+ years (2020–present) |
+-| **[[concepts/dspy|DSPy]]** | Specification vs optimization; AI programs → symbolic modules with NL specs | Monolithic prompt debt | 3.5+ years (2023–present) |
+-| **[[concepts/gepa|GEPA]]** | Learning signals → actual tokens + feedback (not scalar rewards) | Policy gradient RL rewards | Emerging (2025) |
 +| **Late Interaction ([[concepts/colbert|ColBERT]])** | Document representations → sets of objects; similarity → compositional operations | Single-vector dense embeddings | 6.5+ years (2020–present) |
 +| **[[concepts/dspy|DSPy]]** | Specification vs optimization; AI programs → symbolic modules with NL specs | Monolithic prompt debt | 3.5+ years (2023–present) |
 +| **[[concepts/gepa|GEPA]]** | Learning signals → actual tokens + feedback (not scalar rewards) | Policy gradient RL rewards | Emerging (2025) |
@@ -1887,7 +1887,7 @@ index 1df3c4ba..f33e1ee6 100644
  
  When DPO eliminates the reward model by expressing $r(x,y) = \beta \log \frac{\pi_\theta(y|x)}{\pi_{\text{ref}}(y|x)}$, it exploits the fact that the policy's log-likelihood ratios already encode preference structure learned during pre-training. When GRPO replaces the critic with group statistics, it exploits the fact that sibling samples from the same policy share enough structural similarity to serve as their own baseline.
  
--> **Information-theoretic framing** (from [[concepts/post-training/on-policy-vs-off-policy-rl|On-Policy vs Off-Policy]] and [[concepts/post-training/post-training-distributional-view|Distributional View]]): SFT provides O(n) bits of dense, off-policy information per episode (the entire demonstration trajectory). RL (GRPO) provides O(1) bits of sparse, on-policy information (just the reward signal). Yet RL produces qualitatively superior policies because those O(1) bits are **unbiased and on-policy** — they tell the policy exactly how its own behavior performs, whereas SFT's O(n) bits are biased toward the teacher's distribution and never expose the policy to its own failure modes. The auxiliary model elimination trend is thus a movement toward **maximizing information efficiency** — extracting the most policy-improvement signal from the fewest external components.
+-> **Information-theoretic framing** (from [[concepts/post-training/on-policy-vs-off-policy-rl|On-Policy vs Off-Policy]] and [[concepts/post-training-distributional-view|Distributional View]]): SFT provides O(n) bits of dense, off-policy information per episode (the entire demonstration trajectory). RL (GRPO) provides O(1) bits of sparse, on-policy information (just the reward signal). Yet RL produces qualitatively superior policies because those O(1) bits are **unbiased and on-policy** — they tell the policy exactly how its own behavior performs, whereas SFT's O(n) bits are biased toward the teacher's distribution and never expose the policy to its own failure modes. The auxiliary model elimination trend is thus a movement toward **maximizing information efficiency** — extracting the most policy-improvement signal from the fewest external components.
 +> **Information-theoretic framing** (from [[concepts/post-training/on-policy-vs-off-policy-rl|On-Policy vs Off-Policy]] and [[concepts/post-training-distributional-view|Distributional View]]): SFT provides O(n) bits of dense, off-policy information per episode (the entire demonstration trajectory). RL (GRPO) provides O(1) bits of sparse, on-policy information (just the reward signal). Yet RL produces qualitatively superior policies because those O(1) bits are **unbiased and on-policy** — they tell the policy exactly how its own behavior performs, whereas SFT's O(n) bits are biased toward the teacher's distribution and never expose the policy to its own failure modes. The auxiliary model elimination trend is thus a movement toward **maximizing information efficiency** — extracting the most policy-improvement signal from the fewest external components.
  
  ## RLHF Book Perspective (Lambert, 2026)
@@ -1960,7 +1960,7 @@ index e29a1df5..31320f37 100644
  - [[concepts/post-training/on-policy-self-distillation]] — OPSD: same-model self-distillation for reasoning (Zhao et al., 2026)
  - [[concepts/post-training/sdar-self-distilled-agentic-rl]] — SDAR: gated OPSD + GRPO for multi-turn agent training (2026)
  - [[concepts/model-distillation]] — Broader category of distillation techniques
--- [[concepts/post-training/post-training-distributional-view]] — SFT vs RL vs OPD through a distributional lens
+-- [[concepts/post-training-distributional-view]] — SFT vs RL vs OPD through a distributional lens
 +- [[concepts/post-training-distributional-view]] — SFT vs RL vs OPD through a distributional lens
  - [[concepts/post-training/grpo-rl-training]] — The RL framework OPD was implemented on top of
  - [[entities/thinking-machines-lab]] — Research lab that authored the foundational OPD paper
@@ -1973,7 +1973,7 @@ index a10ac8a4..ba6b11a9 100644
             ↑ distribution shift — model has never seen its own errors during training
  ```
  
--[[concepts/post-training/post-training-distributional-view|The distributional view]] frames this precisely: SFT does **forward KL** (mode-seeking) toward the teacher's distribution, while RL and OPD do **reverse KL** on the student's own rollouts.
+-[[concepts/post-training-distributional-view|The distributional view]] frames this precisely: SFT does **forward KL** (mode-seeking) toward the teacher's distribution, while RL and OPD do **reverse KL** on the student's own rollouts.
 +[[concepts/post-training-distributional-view|The distributional view]] frames this precisely: SFT does **forward KL** (mode-seeking) toward the teacher's distribution, while RL and OPD do **reverse KL** on the student's own rollouts.
  
  ### The Hallucination Problem (Goldberg, 2023)
@@ -1982,7 +1982,7 @@ index a10ac8a4..ba6b11a9 100644
  
  ## Information-Theoretic Perspective
  
--[[concepts/post-training/post-training-distributional-view|The distributional view]] (@nrehiew) quantifies the information density difference:
+-[[concepts/post-training-distributional-view|The distributional view]] (@nrehiew) quantifies the information density difference:
 +[[concepts/post-training-distributional-view|The distributional view]] (@nrehiew) quantifies the information density difference:
  
  | Method | Information per episode | Sampling |
@@ -1991,7 +1991,7 @@ index a10ac8a4..ba6b11a9 100644
  
  ## Related Pages
  
--- [[concepts/post-training/post-training-distributional-view]] — Distributional lens: SFT vs RL vs OPD
+-- [[concepts/post-training-distributional-view]] — Distributional lens: SFT vs RL vs OPD
 +- [[concepts/post-training-distributional-view]] — Distributional lens: SFT vs RL vs OPD
  - [[concepts/post-training/on-policy-distillation]] — On-policy distillation mechanism and variants
  - [[concepts/post-training/grpo-rl-training]] — The dominant on-policy RL algorithm (2025-2026)
@@ -2004,19 +2004,19 @@ index 6281c8a6..8a8eec10 100644
  
  ### Reward Hacking
  
--As RL scales, models increasingly exploit reward function shortcuts rather than learning the underlying capability. See [[evaluation/reward-hacking]]. This creates an illusion of capability expansion that collapses under distribution shift.
+-As RL scales, models increasingly exploit reward function shortcuts rather than learning the underlying capability. See [[concepts/evaluation/reward-hacking]]. This creates an illusion of capability expansion that collapses under distribution shift.
 +As RL scales, models increasingly exploit reward function shortcuts rather than learning the underlying capability. See [[concepts/evaluation/reward-hacking]]. This creates an illusion of capability expansion that collapses under distribution shift.
  
  ### Distribution Collapse
  
 @@ -79,6 +79,6 @@ RL can expand LLM capability frontiers, but its scaling is bounded by reward qua
- - [[rlvr]] — RL with Verifiable Rewards
- - [[grpo-rl-training]] — Group Relative Policy Optimization
+ - [[concepts/post-training/rlvr]] — RL with Verifiable Rewards
+ - [[concepts/post-training/grpo-rl-training]] — Group Relative Policy Optimization
  - [[concepts/deepseek-r1]] — reasoning emergence via RL
--- [[evaluation/reward-hacking]] — failure modes at scale
+-- [[concepts/evaluation/reward-hacking]] — failure modes at scale
 +- [[concepts/evaluation/reward-hacking]] — failure modes at scale
- - [[training-free-rl]] — alternatives to RL-based test-time scaling
- - [[rl-interview-questions-2026]] — full interview question set
+ - [[concepts/post-training/training-free-rl]] — alternatives to RL-based test-time scaling
+ - [[concepts/post-training/rl-interview-questions-2026]] — full interview question set
 diff --git a/wiki/concepts/pretraining-parallelisms.md b/wiki/concepts/pretraining-parallelisms.md
 index 87541fb7..1251c65e 100644
 --- a/wiki/concepts/pretraining-parallelisms.md
@@ -2035,7 +2035,7 @@ index 16ace648..222f76b3 100644
  - **[[concepts/harness-engineering]]** — The evaluation harness as the operating system for AI development
  - **[[entities/hugo-bowne-anderson]]** — Vanishing Gradients host who conducted the Maven Assistant interview
  - **[[concepts/guardrails]]** — Safety mechanisms for production AI agents
--- **[[concepts/ai-evals]]** — Evaluation methodologies for AI systems
+-- **[[concepts/evaluation/ai-evals]]** — Evaluation methodologies for AI systems
 +- **[[concepts/evaluation/ai-evals]]** — Evaluation methodologies for AI systems
 diff --git a/wiki/concepts/qwen3-6-27b.md b/wiki/concepts/qwen3-6-27b.md
 index abf2880d..15a7016b 100644
@@ -2144,7 +2144,7 @@ index 64baf797..1fe91c12 100644
  
  # Siri AI
  
--Siri AI is Apple's completely reimagined voice assistant, announced June 8, 2026, powered by the next generation of [[entities/apple|Apple Intelligence]]. It represents a ground-up rebuild of Siri with personal context understanding, broad world knowledge, onscreen awareness, and multimodal capabilities — all designed with Apple's privacy-first architecture.
+-Siri AI is Apple's completely reimagined voice assistant, announced June 8, 2026, powered by the next generation of [[concepts/apple|Apple Intelligence]]. It represents a ground-up rebuild of Siri with personal context understanding, broad world knowledge, onscreen awareness, and multimodal capabilities — all designed with Apple's privacy-first architecture.
 +Siri AI is Apple's completely reimagined voice assistant, announced June 8, 2026, powered by the next generation of [[concepts/apple|Apple Intelligence]]. It represents a ground-up rebuild of Siri with personal context understanding, broad world knowledge, onscreen awareness, and multimodal capabilities — all designed with Apple's privacy-first architecture.
  
  ## Key Features
@@ -2157,8 +2157,8 @@ index aefb5d0f..6047fc20 100644
  
  ## Related Concepts
  
--- [[concepts/reinforcement-learning]] — Reinforcement learning fundamentals for LLM post-training
--- [[concepts/grpo]] — GRPO (Group Relative Policy Optimization), commonly used alongside Arctic RL
+-- [[concepts/post-training/reinforcement-learning]] — Reinforcement learning fundamentals for LLM post-training
+-- [[concepts/post-training/grpo]] — GRPO (Group Relative Policy Optimization), commonly used alongside Arctic RL
 +- [[concepts/post-training/reinforcement-learning]] — Reinforcement learning fundamentals for LLM post-training
 +- [[concepts/post-training/grpo]] — GRPO (Group Relative Policy Optimization), commonly used alongside Arctic RL
  - [[concepts/post-training/skyrl]] — SkyRL, the UC Berkeley open-source RL framework Arctic RL builds upon
@@ -2205,7 +2205,7 @@ index 2c84823d..a04f6849 100644
  ## Relationship to adjacent concepts
  
  - **Generative Engine Optimization (GEO)** — the commercial precursor; "the chatbot version of SEO." See [[concepts/gpt/gpt-5-6]] ("ChatGPT Search `site:` Operator at Scale") for how chatbot search fan-out works.
--- **[[concepts/ai-safety]] / [[concepts/security-and-governance/ai-safety]]** — chatbot influence is an *input-side* attack surface: the model's outputs are only as reliable as the retrieved corpus.
+-- **[[concepts/security-and-governance/ai-safety]] / [[concepts/security-and-governance/ai-safety]]** — chatbot influence is an *input-side* attack surface: the model's outputs are only as reliable as the retrieved corpus.
 +- **[[concepts/security-and-governance/ai-safety]] / [[concepts/security-and-governance/ai-safety]]** — chatbot influence is an *input-side* attack surface: the model's outputs are only as reliable as the retrieved corpus.
  - **[[concepts/security-and-governance/ai-text-watermarking]]** — the obvious defense (provenance marking) operates on the wrong side of the pipeline for this threat.
  - **Disinformation / foreign influence** — traditional instruments (think tanks, media outlets) are being *repurposed as LLM feedstock*: the artifact is no longer the article itself but its effect on machine-generated answers.
@@ -2218,7 +2218,7 @@ index f04b909e..5236e413 100644
    - "[[concepts/harness-engineering]]"
    - "[[concepts/context-engineering|Context Engineering]]"
    - "[[concepts/test-time-scaling]]"
--  - "[[concepts/rlm]]"
+-  - "[[entities/omar-khattab/rlm]]"
 +  - "[[entities/omar-khattab/rlm]]"
    - "[[concepts/dspy]]"
    - "[[entities/yoonho-lee]]"
@@ -2227,7 +2227,7 @@ index f04b909e..5236e413 100644
  - [[concepts/harness-engineering]] — The discipline of building agent infrastructure
  - [[concepts/context-engineering|Context Engineering]] — Curating optimal context window content
  - [[concepts/test-time-scaling]] — The inference-time axis text optimization mirrors at update time
--- [[concepts/rlm]] — Recursive language models as text-space context management
+-- [[entities/omar-khattab/rlm]] — Recursive language models as text-space context management
 +- [[entities/omar-khattab/rlm]] — Recursive language models as text-space context management
  - [[concepts/dspy]] — Declarative text-layer programming and optimization
  - [[concepts/gepa]] — Generalized Experience-Prompted Adaptation
@@ -2277,7 +2277,7 @@ index f5258e42..4d0d1d4e 100644
  Structured SFT with progressively increasing difficulty across reasoning tasks. Rather than uniform fine-tuning on a flat dataset, the curriculum introduces harder problems as the model demonstrates competence, preventing catastrophic forgetting while building reasoning capability incrementally.
  
  ### 2. Multi-Domain Reinforcement Learning (GRPO)
--Group Relative Policy Optimization ([[concepts/grpo|GRPO]]) is applied across math, coding, and other verifiable domains. Unlike PPO, GRPO uses group-relative rewards — comparing outputs within a batch rather than requiring a separate value model — making it more sample-efficient and stable for small-model RL training. This stage is where the bulk of reasoning gains occur.
+-Group Relative Policy Optimization ([[concepts/post-training/grpo|GRPO]]) is applied across math, coding, and other verifiable domains. Unlike PPO, GRPO uses group-relative rewards — comparing outputs within a batch rather than requiring a separate value model — making it more sample-efficient and stable for small-model RL training. This stage is where the bulk of reasoning gains occur.
 +Group Relative Policy Optimization ([[concepts/post-training/grpo|GRPO]]) is applied across math, coding, and other verifiable domains. Unlike PPO, GRPO uses group-relative rewards — comparing outputs within a batch rather than requiring a separate value model — making it more sample-efficient and stable for small-model RL training. This stage is where the bulk of reasoning gains occur.
  
  ### 3. Offline Self-Distillation
@@ -2312,7 +2312,7 @@ index 0179e30d..229b6f13 100644
  - [[concepts/land-rush-cicd]] — CI/CD pattern used in Wheelhouse
  - [[concepts/wish-factory]] — End-user feature request pattern
  - [[concepts/agentic-engineering]] — Broader engineering category
--- [[concepts/agent-orchestration]] — Orchestration patterns
+-- [[concepts/multi-agents/agent-orchestration]] — Orchestration patterns
 +- [[concepts/multi-agents/agent-orchestration]] — Orchestration patterns
  - [[concepts/model-welfare]] — Agent well-being considerations
  
@@ -2325,7 +2325,7 @@ index dd3636ca..7ef7ab11 100644
  - [[entities/beads]] — The issue tracker where wishes become implementation tasks
  - [[concepts/land-rush-cicd]] — CI/CD pattern needed to ship at wish-factory speeds
  - [[concepts/agentic-engineering]] — Broader engineering discipline
--- [[concepts/agent-orchestration]] — Orchestration patterns underlying Wish Factory
+-- [[concepts/multi-agents/agent-orchestration]] — Orchestration patterns underlying Wish Factory
 +- [[concepts/multi-agents/agent-orchestration]] — Orchestration patterns underlying Wish Factory
  
  ## Sources
@@ -2338,7 +2338,7 @@ index a9a129ac..7564828a 100644
  ## Related
  - [[concepts/agent-platform]] — AI agent platforms
  - [[concepts/agent-framework]] — Agent development frameworks
--- [[concepts/agent-runtime]] — Agent runtime environments
+-- [[concepts/harness-engineering/agent-runtime]] — Agent runtime environments
 -- [[concepts/agent-observability]] — Agent monitoring and tracing
 +- [[concepts/harness-engineering/agent-runtime]] — Agent runtime environments
 +- [[concepts/evaluation/agent-observability]] — Agent monitoring and tracing
@@ -2366,7 +2366,7 @@ index cdc181ad..c352d0ae 100644
    - https://x.com/alex_chernysh
  related:
    - "[[entities/bernstein]]"
--  - "[[concepts/coding-agents/bernstein]]"
+-  - "[[entities/bernstein]]"
 +  - "[[entities/bernstein]]"
    - "[[concepts/multi-agents/multi-agent-orchestration]]"
  ---
@@ -2379,7 +2379,7 @@ index 48c51c17..1744e9da 100644
  - [[entities/claude-code]] — Cloud coding agents he uses for the majority of his coding
  - [[concepts/inference/llama-cpp]] — His local serving engine of choice
  - [[concepts/inference/vllm]] — Rejected for prosumer use (3 tok/s slower for single-user generation)
--- [[concepts/opencode]] — Open-source coding agent harness he built Toilgate for
+-- [[entities/opencode]] — Open-source coding agent harness he built Toilgate for
 +- [[entities/opencode]] — Open-source coding agent harness he built Toilgate for
  
  ## Sources
@@ -2392,7 +2392,7 @@ index 40ba27fe..d10f31a5 100644
  
  - [[concepts/local-llm/local-ai]] — Local AI and home lab infrastructure
  - [[entities/claude-code]] — Claude Code coding agent
--- [[concepts/agent-team-swarm]] — Multi-agent orchestration
+-- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration
 +- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration
 diff --git a/wiki/entities/anthropic.md b/wiki/entities/anthropic.md
 index 42bc8a89..4982c666 100644
@@ -2415,7 +2415,7 @@ index 675cd538..3c54351b 100644
    - https://pypi.org/project/bernstein/
    - https://alexchernysh.com/
  related:
--  - "[[concepts/coding-agents/bernstein]]"
+-  - "[[entities/bernstein]]"
 +  - "[[entities/bernstein]]"
    - "[[concepts/multi-agents/multi-agent-orchestration]]"
    - "[[concepts/harness-engineering/agent-harness]]"
@@ -2441,7 +2441,7 @@ index 27fb6f81..16bba3e7 100644
    - https://www.blotato.com/
    - raw/articles/2026-04-10-build-content-engine-full-course.md
  related:
--  - "[[concepts/content-engine]]"
+-  - "[[entities/content-engine]]"
 +  - "[[entities/content-engine]]"
    - "[[entities/content-engine]]"
    - "[[entities/solo-founder-stack]]"
@@ -2449,7 +2449,7 @@ index 27fb6f81..16bba3e7 100644
  
  # Blotato
  
--**Blotato** (blotato.com) is a unified social-media API + MCP server that lets AI agents and automation stacks publish, schedule, reply to comments, manage DMs, and pull analytics across 9+ platforms (X, LinkedIn, Facebook, Instagram, TikTok, YouTube, Threads, Bluesky, Pinterest) from a single `create_post`-style call. It is the canonical commercial implementation of the [[concepts/content-engine]] pattern: the "AI writer + distribution automation" pipeline packaged as a flat-priced SaaS.
+-**Blotato** (blotato.com) is a unified social-media API + MCP server that lets AI agents and automation stacks publish, schedule, reply to comments, manage DMs, and pull analytics across 9+ platforms (X, LinkedIn, Facebook, Instagram, TikTok, YouTube, Threads, Bluesky, Pinterest) from a single `create_post`-style call. It is the canonical commercial implementation of the [[entities/content-engine]] pattern: the "AI writer + distribution automation" pipeline packaged as a flat-priced SaaS.
 +**Blotato** (blotato.com) is a unified social-media API + MCP server that lets AI agents and automation stacks publish, schedule, reply to comments, manage DMs, and pull analytics across 9+ platforms (X, LinkedIn, Facebook, Instagram, TikTok, YouTube, Threads, Bluesky, Pinterest) from a single `create_post`-style call. It is the canonical commercial implementation of the [[entities/content-engine]] pattern: the "AI writer + distribution automation" pipeline packaged as a flat-priced SaaS.
  
  The product positions itself as "the #1 social media API for AI agents" — explicitly marketing to agents, not just humans. It works inside Claude, ChatGPT, Cursor, Codex, and any MCP-capable agent, plus no-code stacks (n8n, Make, webhooks) and a REST API/SDK.
@@ -2458,7 +2458,7 @@ index 27fb6f81..16bba3e7 100644
  
  ## Relation to the Content Engine concept
  
--Blotato operationalizes the four stages of the [[concepts/content-engine]] pipeline (research → draft → distribute → analyze) as agent-callable tools. The "How To Build Your Own Content Engine (FULL COURSE)" X article (7,943 bookmarks) that popularized the pattern points at exactly this tool class; Blotato is the commercialized shortcut versus hand-wiring Claude + Buffer + Canva yourself (see [[entities/solo-founder-stack]]).
+-Blotato operationalizes the four stages of the [[entities/content-engine]] pipeline (research → draft → distribute → analyze) as agent-callable tools. The "How To Build Your Own Content Engine (FULL COURSE)" X article (7,943 bookmarks) that popularized the pattern points at exactly this tool class; Blotato is the commercialized shortcut versus hand-wiring Claude + Buffer + Canva yourself (see [[entities/solo-founder-stack]]).
 +Blotato operationalizes the four stages of the [[entities/content-engine]] pipeline (research → draft → distribute → analyze) as agent-callable tools. The "How To Build Your Own Content Engine (FULL COURSE)" X article (7,943 bookmarks) that popularized the pattern points at exactly this tool class; Blotato is the commercialized shortcut versus hand-wiring Claude + Buffer + Canva yourself (see [[entities/solo-founder-stack]]).
  
  ## Community
@@ -2493,7 +2493,7 @@ index 123ea9ea..7e8e39fa 100644
  
  North Automations is available to all North customers.
  
--[[concepts/agent-team-swarm]] | [[concepts/mcp]] | [[concepts/enterprise-ai]] | [[concepts/workflow-automation]]
+-[[concepts/multi-agents/agent-team-swarm]] | [[concepts/mcp]] | [[concepts/enterprise-ai]] | [[concepts/workflow-automation]]
 +[[concepts/multi-agents/agent-team-swarm]] | [[concepts/mcp]] | [[concepts/enterprise-ai]] | [[concepts/workflow-automation]]
  
  **Source:** [[raw/articles/2026-07-28_cohere_introducing-north-automations-ai-workflows]]
@@ -2506,7 +2506,7 @@ index f91c8164..84532179 100644
  related:
    - [[entities/anthropic]]
    - [[entities/daniela-amodei]]
--  - [[concepts/ai-safety]]
+-  - [[concepts/security-and-governance/ai-safety]]
 +  - [[concepts/security-and-governance/ai-safety]]
    - [[concepts/ai-economics]]
  sources:
@@ -2515,7 +2515,7 @@ index f91c8164..84532179 100644
  
  ## Related Concepts
  - [[concepts/ai-economics]]
--- [[concepts/ai-safety]]
+-- [[concepts/security-and-governance/ai-safety]]
 +- [[concepts/security-and-governance/ai-safety]]
  - [[concepts/ai-policy]]
  
@@ -2528,7 +2528,7 @@ index e01b65e9..61f4b69c 100644
  Moving from passing massive context blobs toward **shared file system collaboration** between pipeline components.
  
  ### Model Mixing
--Combining cheap models like [[concepts/gemma-4|Gemma 4]] ("effectively free from a quota perspective") with advanced models for critical components.
+-Combining cheap models like [[entities/gemma-4|Gemma 4]] ("effectively free from a quota perspective") with advanced models for critical components.
 +Combining cheap models like [[entities/gemma-4|Gemma 4]] ("effectively free from a quota perspective") with advanced models for critical components.
  
  ### Code Review Automation
@@ -2549,7 +2549,7 @@ index 466540f1..8cba9a67 100644
  - **Framework**: [[concepts/pylate|PyLate]] (CIKM 2025)
  - **Backbone**: ModernBERT, Ettin
  - **Predecessors**: ColBERT-Zero, GTE-ModernColBERT-v1
--- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[concepts/embeddings|Embeddings]], [[concepts/embedding-long-context-degradation|Embedding Long-Context Degradation]]
+-- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[entities/embeddings|Embeddings]], [[concepts/embedding-long-context-degradation|Embedding Long-Context Degradation]]
 +- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[entities/embeddings|Embeddings]], [[concepts/embedding-long-context-degradation|Embedding Long-Context Degradation]]
 diff --git a/wiki/entities/dimillian.md b/wiki/entities/dimillian.md
 index 4d227e32..f6602395 100644
@@ -2821,7 +2821,7 @@ index 65c22e09..d3515449 100644
  
  Positioning quote: *"The best tools are the ones that float above the host. That opens the door for the most developer adoption and the most innovation."*
  
--Source: [React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue](https://www.latent.space/p/flue-2) — Richard MacManus interview with Fred Schott, Latent Space, Aug 15 2026. Connects to the Bret Taylor framing ("jQuery era of agents, not the react era") and the [[concepts/harness-engineering]] / [[concepts/agent-team-swarm|meta-harness]] debates.
+-Source: [React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue](https://www.latent.space/p/flue-2) — Richard MacManus interview with Fred Schott, Latent Space, Aug 15 2026. Connects to the Bret Taylor framing ("jQuery era of agents, not the react era") and the [[concepts/harness-engineering]] / [[concepts/multi-agents/agent-team-swarm|meta-harness]] debates.
 +Source: [React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue](https://www.latent.space/p/flue-2) — Richard MacManus interview with Fred Schott, Latent Space, Aug 15 2026. Connects to the Bret Taylor framing ("jQuery era of agents, not the react era") and the [[concepts/harness-engineering]] / [[concepts/multi-agents/agent-team-swarm|meta-harness]] debates.
  
  ## Related Concepts
@@ -2834,7 +2834,7 @@ index cc6bc208..ab9cb17d 100644
  - **On LangChain Managed Deep Agents**: not on Flue's roadmap — "It's so early for us, we're just focused on building the best harness."
  - Onboarding is **agent-first**: "pass this prompt to your agent, it's gonna guide you through it" — the docs have markdown support, and many users (including MacManus) set up Flue agents via Claude Code.
  
--The interview connects his v1 framing ("like Claude Code, but 100% headless and programmable") to the broader [[concepts/harness-engineering]] and [[concepts/agent-team-swarm|meta-harness]] landscape. Flue's origin: an issue-triage system inside the Astro repo that grew into a headless, hostable Claude Code experience. See [[entities/flue]] for the full framework detail.
+-The interview connects his v1 framing ("like Claude Code, but 100% headless and programmable") to the broader [[concepts/harness-engineering]] and [[concepts/multi-agents/agent-team-swarm|meta-harness]] landscape. Flue's origin: an issue-triage system inside the Astro repo that grew into a headless, hostable Claude Code experience. See [[entities/flue]] for the full framework detail.
 +The interview connects his v1 framing ("like Claude Code, but 100% headless and programmable") to the broader [[concepts/harness-engineering]] and [[concepts/multi-agents/agent-team-swarm|meta-harness]] landscape. Flue's origin: an issue-triage system inside the Astro repo that grew into a headless, hostable Claude Code experience. See [[entities/flue]] for the full framework detail.
  
  ## Related
@@ -2860,7 +2860,7 @@ index 73817b67..f56243ce 100644
  
  ## See Also
  
--- [[entities/show-us-your-agent-skills]]
+-- [[concepts/show-us-your-agent-skills]]
 +- [[concepts/show-us-your-agent-skills]]
  - [[entities/_index]]
  - [[concepts/agent-harness-comparison]]
@@ -2899,7 +2899,7 @@ index 725d73bc..44af4fe4 100644
  - **Parent**: [[entities/elastic|Elastic]] (acquired Oct 2025)
  - **Founder**: Han Xiao → now VP of AI at Elastic
  - **Competitors/Peers**: [[entities/cohere|Cohere]] (embeddings), [[entities/openai|OpenAI]] (embeddings)
--- **Related concepts**: [[concepts/embeddings|Embeddings]], [[concepts/embedding-long-context-degradation|Embedding Long-Context Degradation]], [[concepts/information-retrieval|Information Retrieval]], [[concepts/mrcr|MRCR]]
+-- **Related concepts**: [[entities/embeddings|Embeddings]], [[concepts/embedding-long-context-degradation|Embedding Long-Context Degradation]], [[concepts/information-retrieval|Information Retrieval]], [[concepts/mrcr|MRCR]]
 +- **Related concepts**: [[entities/embeddings|Embeddings]], [[concepts/embedding-long-context-degradation|Embedding Long-Context Degradation]], [[concepts/information-retrieval|Information Retrieval]], [[concepts/ai-benchmarks/mrcr|MRCR]]
 diff --git a/wiki/entities/junior.md b/wiki/entities/junior.md
 index cd74e3dd..6e9fa22a 100644
@@ -2922,7 +2922,7 @@ index aef65e09..abeaf256 100644
  
  - [[concepts/comprehensive-ai-services]] — The CAIS framework, Drexler's most influential AI contribution
  - [[concepts/superintelligence]] — Broader topic of AI surpassing human capabilities
--- [[concepts/ai-safety]] — Safety implications of advanced AI
+-- [[concepts/security-and-governance/ai-safety]] — Safety implications of advanced AI
 +- [[concepts/security-and-governance/ai-safety]] — Safety implications of advanced AI
  - [[entities/future-of-humanity-institute]] — Institution where Drexler conducted FHI research
  - [[concepts/nick-bostrom]] — Contrasting agent-centric superintelligence framework
@@ -2953,7 +2953,7 @@ index c1fe97d6..52e4cb3d 100644
  
  LangChain Labs collaborated with **Fireworks AI** on a study fine-tuning **Qwen-3.5-35B** to detect *Perceived Error* — situations where a user *believes* the assistant made a mistake, judged from production traces on LangSmith. The work demonstrates that small, fine-tuned models can match or exceed frontier LLMs as evaluators at **10-100x lower cost**.
  
--See also: [[concepts/llm-as-judge]], [[concepts/evaluation]].
+-See also: [[concepts/evaluation/llm-as-judge]], [[concepts/evaluation]].
 +See also: [[concepts/evaluation/llm-as-judge]], [[concepts/evaluation]].
  
  ### Key Findings
@@ -2966,7 +2966,7 @@ index 7aedc9f8..05eaa0e6 100644
  
  - **Key researchers**: Antoine Chaffin, Benjamin Clavié (Mixedbread AI collaborator)
  - **Peers**: [[entities/mistral-ai|Mistral AI]], Aleph Alpha (European data-sovereignty AI)
--- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[concepts/evaluation/longembed|LongEmbed]], [[concepts/embeddings|Embeddings]]
+-- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[concepts/evaluation/longembed|LongEmbed]], [[entities/embeddings|Embeddings]]
 +- **Related concepts**: [[concepts/colbert|ColBERT]], [[entities/late-interaction|Late Interaction Workshop]], [[concepts/evaluation/longembed|LongEmbed]], [[entities/embeddings|Embeddings]]
 diff --git a/wiki/entities/lilian-weng.md b/wiki/entities/lilian-weng.md
 index 66dedea5..325a0eea 100644
@@ -3198,7 +3198,7 @@ index bc6074c9..0c3f9b6f 100644
  
  # METR (Model Evaluation & Threat Research)
  
--**METR** is an independent research lab focused on evaluating AI capability, safety, and the pace of AI-driven progress. It publishes empirical studies on how quickly AI systems are advancing across domains and how that translates to real-world utility — a key resource for the [[concepts/evaluation/ai-evals]] and [[concepts/ai-safety]] conversations.
+-**METR** is an independent research lab focused on evaluating AI capability, safety, and the pace of AI-driven progress. It publishes empirical studies on how quickly AI systems are advancing across domains and how that translates to real-world utility — a key resource for the [[concepts/evaluation/ai-evals]] and [[concepts/security-and-governance/ai-safety]] conversations.
 +**METR** is an independent research lab focused on evaluating AI capability, safety, and the pace of AI-driven progress. It publishes empirical studies on how quickly AI systems are advancing across domains and how that translates to real-world utility — a key resource for the [[concepts/evaluation/ai-evals]] and [[concepts/security-and-governance/ai-safety]] conversations.
  
  METR has contributed to several benchmark and evaluation threads in this wiki (e.g. RE-Bench, the RAM relative-adoption metric, and Epoch AI × METR long-horizon programming benchmarks).
@@ -3207,7 +3207,7 @@ index bc6074c9..0c3f9b6f 100644
  - [[concepts/ai-discovery-acceleration]] — the differential-acceleration finding
  - [[concepts/evaluation/ai-evals]] — evaluation methodology
  - [[concepts/recursive-self-improvement]] — RSI
--- [[concepts/ai-safety]] — AI safety
+-- [[concepts/security-and-governance/ai-safety]] — AI safety
 +- [[concepts/security-and-governance/ai-safety]] — AI safety
  
  ## Sources
@@ -3231,7 +3231,7 @@ index 894e4877..d263b358 100644
  ## Related Concepts
  - [[entities/mai-thinking-1]] — MAI flagship reasoning model
  - [[entities/microsoft]] — Parent company
--- [[concepts/reinforcement-learning]] — Core training methodology
+-- [[concepts/post-training/reinforcement-learning]] — Core training methodology
 +- [[concepts/post-training/reinforcement-learning]] — Core training methodology
  - [[concepts/mixture-of-experts]] — Model architecture
  - [[concepts/mai-thinking]] — Hill-climbing approach concept
@@ -3244,7 +3244,7 @@ index e51b50e9..31014a12 100644
  
  On August 2, 2026, MiniMax released **MiniMax-H3**, which it describes as "a general-purpose, omni-modal generative system": it accepts text, images, audio and video inputs and generates up to 15-second video clips **with audio included** — a notable step beyond silent video outputs.
  
--The community package **PipeNetwork/minimax-h3-mlx** ports H3 to **MLX** for running on [[entities/apple|Apple Silicon]]. [[entities/simon-willison|Simon Willison]] ran it on his M5 Max MacBook Pro, downloading ~115 GB of model files; a single video generation took just under 45 minutes. The run pattern is:
+-The community package **PipeNetwork/minimax-h3-mlx** ports H3 to **MLX** for running on [[concepts/apple|Apple Silicon]]. [[entities/simon-willison|Simon Willison]] ran it on his M5 Max MacBook Pro, downloading ~115 GB of model files; a single video generation took just under 45 minutes. The run pattern is:
 +The community package **PipeNetwork/minimax-h3-mlx** ports H3 to **MLX** for running on [[concepts/apple|Apple Silicon]]. [[entities/simon-willison|Simon Willison]] ran it on his M5 Max MacBook Pro, downloading ~115 GB of model files; a single video generation took just under 45 minutes. The run pattern is:
  
  ```bash
@@ -3282,7 +3282,7 @@ index 6917f0ec..9b143f78 100644
  - [[concepts/mixture-of-experts]] — MoE architecture
  - [[concepts/ai-benchmarks/swe-bench]] — Key evaluation benchmark
  - [[concepts/agentic-engineering]] — Agentic coding paradigm
--- [[concepts/rlm]] — Reinforcement Learning from Execution Feedback (related RLVR approach)
+-- [[entities/omar-khattab/rlm]] — Reinforcement Learning from Execution Feedback (related RLVR approach)
 +- [[entities/omar-khattab/rlm]] — Reinforcement Learning from Execution Feedback (related RLVR approach)
 diff --git a/wiki/entities/odyssey-ml.md b/wiki/entities/odyssey-ml.md
 index 54ca12e8..24ab27f2 100644
@@ -3305,14 +3305,14 @@ index 3958846c..625053d6 100644
  # Research Trajectory
  
  ## Phase 1: Neural Information Retrieval (2019–2022)
--- [[entities/omar-khattab/colbert|ColBERT]], ColBERTv2, PLAID
+-- [[concepts/colbert|ColBERT]], ColBERTv2, PLAID
 +- [[concepts/colbert|ColBERT]], ColBERTv2, PLAID
  - Multi-hop retrieval ([[entities/omar-khattab/baleen|Baleen]])
  - Relevance-guided supervision for open QA
  - *Theme:* How do we make deep LMs efficient for search?
  
  ## Phase 2: Foundation Model Programming (2022–2024)
--- [[entities/omar-khattab/dspy|DSPy]]: composable, optimizable LM modules
+-- [[concepts/dspy|DSPy]]: composable, optimizable LM modules
 +- [[concepts/dspy|DSPy]]: composable, optimizable LM modules
  - DSPy optimizers (teleprompters)
  - Industry adoption at scale
@@ -3320,7 +3320,7 @@ index 3958846c..625053d6 100644
  
  ## Phase 3: Inference-Time Scaling (2025–)
  - [[entities/omar-khattab/rlm|RLMs]]: recursive context processing
--- [[entities/omar-khattab/gepa|GEPA]]: genetic prompt evolution
+-- [[concepts/gepa|GEPA]]: genetic prompt evolution
 +- [[concepts/gepa|GEPA]]: genetic prompt evolution
  - Multi-module GRPO
  - *Theme:* How do we scale LM capabilities at inference time without training larger models?
@@ -3332,7 +3332,7 @@ index b3bff2d2..c7fffe80 100644
  ### Competitive Positioning
  
  Neptune competed with other ML experiment tracking platforms:
--- **Weights & Biases** (wandb) — see [[tools/weights-and-biases|Weights & Biases skill]] for W&B's broader MLOps platform
+-- **Weights & Biases** (wandb) — see [[entities/weights-and-biases|Weights & Biases skill]] for W&B's broader MLOps platform
 +- **Weights & Biases** (wandb) — see [[entities/weights-and-biases|Weights & Biases skill]] for W&B's broader MLOps platform
  - **MLflow** (open-source, Linux Foundation)
  - **Comet ML**
@@ -3341,7 +3341,7 @@ index b3bff2d2..c7fffe80 100644
  ## Related
  
  - [[entities/openai]] — acquirer
--- [[tools/weights-and-biases]] — competing experiment tracking platform
+-- [[entities/weights-and-biases]] — competing experiment tracking platform
 +- [[entities/weights-and-biases]] — competing experiment tracking platform
  - [[concepts/trusted-access-biodefense]] — OpenAI's broader specialized model strategy
  - [[concepts/ml-engineering]] — MLOps and training infrastructure
@@ -3414,7 +3414,7 @@ index fdd5517c..26f08f29 100644
  - [[entities/deepmind]] — Google DeepMind (AI safety research)
  - [[entities/anthropic]] — Anthropic (Constitutional AI, safety-focused lab)
  - [[entities/openai]] — OpenAI (Safety team, though different approach)
--- [[concepts/ai-safety]] — AI safety research field
+-- [[concepts/security-and-governance/ai-safety]] — AI safety research field
 +- [[concepts/security-and-governance/ai-safety]] — AI safety research field
  - [[concepts/ai-alignment]] — AI alignment techniques
  
@@ -3440,7 +3440,7 @@ index cfbed6f9..f71ccef8 100644
  - [[entities/solo-founder-stack]]
  
  - [[claude-perfect-memory]] — Core of context engineering
--- [[entities/company-ai-pilled]] — Organizational AI-driven transformation
+-- [[concepts/company-ai-pilled]] — Organizational AI-driven transformation
 +- [[concepts/company-ai-pilled]] — Organizational AI-driven transformation
  - [[entities/content-engine]] — AI content automation
  - [[entities/blotato]] — commercial content-engine SaaS used in solo-founder stacks
@@ -3488,9 +3488,9 @@ index f4c56e4b..ad8be757 100644
  - [[entities/sie-superlinked-inference-engine]] — Deep-dive on SIE architecture and multi-model GPU coordination
  - [[concepts/inference/vllm]] — vLLM, the PagedAttention-based LLM serving engine SIE complements for multi-model workloads
  - [[concepts/inference/tgi]] — Hugging Face Text Embeddings Inference, which SIE can replace for unified serving
--- [[concepts/embeddings]] — Single-vector embedding models and their role in RAG pipelines
+-- [[entities/embeddings]] — Single-vector embedding models and their role in RAG pipelines
 +- [[entities/embeddings]] — Single-vector embedding models and their role in RAG pipelines
- - [[concepts/rag]] — Retrieval-Augmented Generation, a core use case for Superlinked's infrastructure
+ - [[concepts/rag-systems]] — Retrieval-Augmented Generation, a core use case for Superlinked's infrastructure
  
  ## Sources
 diff --git a/wiki/entities/takuya-akiba.md b/wiki/entities/takuya-akiba.md
@@ -3501,7 +3501,7 @@ index 7f976187..0dc348db 100644
  - [[concepts/diffusionblocks]] — DiffusionBlocks block-wise training method (to be created)
  - [[concepts/optuna]] — Optuna hyperparameter optimization framework (to be created)
  - [[concepts/evolutionary-algorithms]] — Evolutionary algorithms in AI
--- [[concepts/distributed-training]] — Distributed deep learning training
+-- [[concepts/training-infra/distributed-training]] — Distributed deep learning training
 +- [[concepts/training-infra/distributed-training]] — Distributed deep learning training
  - [[concepts/training-efficiency]] — Training efficiency methods and techniques
  
@@ -3543,7 +3543,7 @@ index 2d218434..4419869d 100644
  
  ### Software Factory of Agents (August 2026)
  
--Vercel disclosed it is using a **software factory of agents** to build its AI SDK, with **35% of PRs coming from the factory** (Ben's Bites, Aug 2026). This is a concrete instance of the [[concepts/agent-team-swarm|software factory]] pattern — a fleet of coding agents autonomously producing a meaningful share of production PRs on a flagship open-source library, consistent with the Dark Factory / L5 tier of the 5-level agent-team model.
+-Vercel disclosed it is using a **software factory of agents** to build its AI SDK, with **35% of PRs coming from the factory** (Ben's Bites, Aug 2026). This is a concrete instance of the [[concepts/multi-agents/agent-team-swarm|software factory]] pattern — a fleet of coding agents autonomously producing a meaningful share of production PRs on a flagship open-source library, consistent with the Dark Factory / L5 tier of the 5-level agent-team model.
 +Vercel disclosed it is using a **software factory of agents** to build its AI SDK, with **35% of PRs coming from the factory** (Ben's Bites, Aug 2026). This is a concrete instance of the [[concepts/multi-agents/agent-team-swarm|software factory]] pattern — a fleet of coding agents autonomously producing a meaningful share of production PRs on a flagship open-source library, consistent with the Dark Factory / L5 tier of the 5-level agent-team model.
  
  ## Related Concepts
@@ -3556,7 +3556,7 @@ index 7a05aa4f..b721c7fc 100644
  - [[entities/gpt-oss]] — OpenAI's open-weight model she identified as the local quality inflection point
  - [[concepts/ollama]] — Another inference engine she has used
  - [[concepts/local-llm-inference]] — The broader practice of running models locally
--- [[concepts/embeddings]] — Her paper and ongoing interest in embeddings
+-- [[entities/embeddings]] — Her paper and ongoing interest in embeddings
 +- [[entities/embeddings]] — Her paper and ongoing interest in embeddings
  
  ## References
@@ -3569,7 +3569,7 @@ index 6840d210..89d01eb6 100644
  - The era of unlimited token budgets for interactive agents is ending.
  - The future is **ROI-driven automation** — token spend must justify itself in terms of factory efficiency.
  
--This shift embodies [[concepts/agentic-engineering]] applied at the organizational level, treating the entire engineering org as an [[concepts/agent-team-swarm]] with Oz as the orchestration layer. The factory model also relates to [[concepts/harness-engineering]], where Oz provides the multi-harness control plane for this automated pipeline.
+-This shift embodies [[concepts/agentic-engineering]] applied at the organizational level, treating the entire engineering org as an [[concepts/multi-agents/agent-team-swarm]] with Oz as the orchestration layer. The factory model also relates to [[concepts/harness-engineering]], where Oz provides the multi-harness control plane for this automated pipeline.
 +This shift embodies [[concepts/agentic-engineering]] applied at the organizational level, treating the entire engineering org as an [[concepts/multi-agents/agent-team-swarm]] with Oz as the orchestration layer. The factory model also relates to [[concepts/harness-engineering]], where Oz provides the multi-harness control plane for this automated pipeline.
  
  ### Self-Improving Code Review (July 2026)
@@ -3582,7 +3582,7 @@ index 0d6ed4ca..1ec870ef 100644
  
  - [[entities/roborev]]
  - [[entities/superpowers]]
--- [[entities/show-us-your-agent-skills]]
+-- [[concepts/show-us-your-agent-skills]]
 +- [[concepts/show-us-your-agent-skills]]
  - [[concepts/evaluation/generator-evaluator-pattern]]
  - [[concepts/personal-software]]
@@ -3595,7 +3595,7 @@ index 530629c5..d4dd1162 100644
  ## Cross-References
  
  - [[events/openai-huggingface-incident-july-2026]] — The original accidental cyberattack (OpenAI → Hugging Face)
--- [[concepts/ai-safety]] — Broader AI safety landscape
+-- [[concepts/security-and-governance/ai-safety]] — Broader AI safety landscape
 +- [[concepts/security-and-governance/ai-safety]] — Broader AI safety landscape
  - [[entities/anthropic]] — Creator of Mythos 5
  - [[entities/openai]] — Creator of GPT-5.6 Sol
@@ -3608,7 +3608,7 @@ index 4c4bfc61..f337a751 100644
  
  ## Related
  - [[entities/openai]]
--- [[entities/apple]]
+-- [[concepts/apple]]
 +- [[concepts/apple]]
  - [[concepts/ai-hardware]]
  - [[concepts/ai-industry-economics]]
@@ -3620,7 +3620,7 @@ index ee4265f2..c35bddf9 100644
  
  ## Related Concepts
  
--- [[concepts/security-and-governance/agent-safety]] — Broader agent safety frameworks
+-- [[concepts/agent-safety]] — Broader agent safety frameworks
 +- [[concepts/agent-safety]] — Broader agent safety frameworks
  - [[concepts/security-and-governance/agent-sandboxing]] — Sandbox isolation patterns
  - [[concepts/ai-benchmarks/exploitgym|ExploitGym]] — The benchmark being evaluated
@@ -3657,23 +3657,23 @@ index f7281cf0..d9de033e 100644
 --- a/wiki/queries/wiki-graph-analysis-weekly-2026-08-28.md
 +++ b/wiki/queries/wiki-graph-analysis-weekly-2026-08-28.md
 @@ -79,8 +79,8 @@ sources: []
- - [[grpo]] — 21 references
- - [[gaia-benchmark]] — 19 references
- - [[reinforcement-learning]] — 18 references
--- [[concepts/ai-safety]] — 17 references
+ - [[concepts/post-training/grpo]] — 21 references
+ - [[concepts/ai-benchmarks/gaia-benchmark]] — 19 references
+ - [[concepts/post-training/reinforcement-learning]] — 18 references
+-- [[concepts/security-and-governance/ai-safety]] — 17 references
 -- [[concepts/inference/sglang]] — 17 references
 +- [[concepts/security-and-governance/ai-safety]] — 17 references
 +- [[concepts/inference/sglang]] — 17 references
  - [[concepts/agent-evaluation]] — 16 references
  - [[concepts/agent-memory]] — 15 references
- - [[hal-leaderboard]] — 15 references
+ - [[concepts/ai-benchmarks/hal-leaderboard]] — 15 references
 @@ -93,7 +93,7 @@ sources: []
  
  197 links can be auto-fixed (cross-namespace or bare → namespaced).
  
--- `entities/alex-ellis`: [[concepts/opencode]] → [[entities/opencode]]
+-- `entities/alex-ellis`: [[entities/opencode]] → [[entities/opencode]]
 +- `entities/alex-ellis`: [[entities/opencode]] → [[entities/opencode]]
- - `entities/alloomi-ai`: [[opencontext]] → [[entities/opencontext]]
- - `entities/alloomi-ai`: [[self-evolving-agents]] → [[concepts/self-evolving-agents]]
- - `entities/alloomi-ai`: [[self-learning-agents]] → [[concepts/self-learning-agents]]
+ - `entities/alloomi-ai`: [[entities/opencontext]] → [[entities/opencontext]]
+ - `entities/alloomi-ai`: [[concepts/self-evolving-agents]] → [[concepts/self-evolving-agents]]
+ - `entities/alloomi-ai`: [[concepts/self-learning-agents]] → [[concepts/self-learning-agents]]
 ```

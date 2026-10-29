@@ -65,7 +65,7 @@ The Wish Factory represents a shift from **software factory** (developer-centric
 - [[entities/beads]] — The issue tracker where wishes become implementation tasks
 - [[concepts/land-rush-cicd]] — CI/CD pattern needed to ship at wish-factory speeds
 - [[concepts/agentic-engineering]] — Broader engineering discipline
-- [[concepts/agent-orchestration]] — Orchestration patterns underlying Wish Factory
+- [[concepts/multi-agents/agent-orchestration]] — Orchestration patterns underlying Wish Factory
 
 ## Sources
 

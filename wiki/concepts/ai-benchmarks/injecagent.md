@@ -51,11 +51,11 @@ The benchmark comprises **1,054 IPI test cases** with extensive tool coverage:
 
 ## Related Benchmarks
 
-- [[agentdojo]] — Dynamic environment for prompt injection attack/defense evaluation
-- [[agent-security-bench]] — Broader formalization of agent attack and defense strategies
-- [[agentharm]] — Measures harmful agent task completion
-- [[shade-arena]] — Evaluates hidden harmful behaviors and sabotage in agents
+- [[concepts/ai-benchmarks/agentdojo]] — Dynamic environment for prompt injection attack/defense evaluation
+- [[concepts/ai-benchmarks/agent-security-bench]] — Broader formalization of agent attack and defense strategies
+- [[concepts/ai-benchmarks/agentharm]] — Measures harmful agent task completion
+- [[concepts/ai-benchmarks/shade-arena]] — Evaluates hidden harmful behaviors and sabotage in agents
 
 ## Connections to Other Wiki Concepts
 
-InjecAgent is a cornerstone benchmark for understanding **prompt-injection** in the context of **[[concepts/ai-agents]]** that use external tools. Unlike direct prompt injection, indirect injection through **tool-use** outputs represents a fundamentally harder security challenge because agents must process and act on external data. The benchmark has shaped research directions in agent security and influenced the development of more comprehensive evaluations like [[agent-security-bench]] and [[agentdojo]].
+InjecAgent is a cornerstone benchmark for understanding **prompt-injection** in the context of **[[concepts/ai-agents]]** that use external tools. Unlike direct prompt injection, indirect injection through **tool-use** outputs represents a fundamentally harder security challenge because agents must process and act on external data. The benchmark has shaped research directions in agent security and influenced the development of more comprehensive evaluations like [[concepts/ai-benchmarks/agent-security-bench]] and [[concepts/ai-benchmarks/agentdojo]].

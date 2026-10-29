@@ -69,7 +69,7 @@ The team published two public technical reports ("Holistic Context" and "Self-Ev
 ## Products
 
 - **Alloomi AI** — commercial product for individuals and teams in professional services; OKR-driven, outcome-focused self-evolving digital employees.
-- **OpenContext** — the open-sourced context runtime that powers Alloomi; the working implementation of the holistic-context layer. See [[opencontext]].
+- **OpenContext** — the open-sourced context runtime that powers Alloomi; the working implementation of the holistic-context layer. See [[entities/opencontext]].
 
 ## Domains
 
@@ -81,7 +81,7 @@ Early co-design validation in specialized fields: legal, insurance, and financia
 
 ## Related
 
-- [[self-evolving-agents]] — the general pattern
-- [[self-learning-agents]]
+- [[concepts/self-evolving-agents]] — the general pattern
+- [[concepts/self-learning-agents]]
 - [[context-engineering]]
-- [[opencontext]]
+- [[entities/opencontext]]

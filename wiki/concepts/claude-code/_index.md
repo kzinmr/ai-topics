@@ -22,7 +22,7 @@ See also: [[entities/claude-code]] (entity page), [[concepts/claude|Claude]] (mo
 
 ## Core
 
-- [[concepts/claude-code/claude-code]] — Claude Code overview
+- [[entities/claude-code]] — Claude Code overview
 - [[concepts/claude-code/claude-code-best-practices]] — Best practices
 - [[concepts/claude-code/claude-code-tips]] — Tips and tricks
 - [[concepts/claude-code/claude-code-routines]] — Workflow routines

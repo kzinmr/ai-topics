@@ -108,7 +108,7 @@ The first app is **free, no signup required**. Only register an account when you
 - [[lindy]] — AI App Builder. Full-stack for founders
 - [[vercel-v0]] — AI UI generation. Component-level
 - [[concepts/mcp]] — Protocol Buildy uses for agent connections
-- [[concepts/claude-code/claude-code]], [[entities/codex]], [[cursor]] — Coding agents where Buildy operates
+- [[entities/claude-code]], [[entities/codex]], [[cursor]] — Coding agents where Buildy operates
 
 ## Observations
 

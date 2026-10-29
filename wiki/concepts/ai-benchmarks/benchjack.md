@@ -51,11 +51,11 @@ BenchJack introduces a structured auditing framework:
 
 ## Related Benchmarks
 
-- [[agentdojo]] — Agent security benchmark subject to auditing
-- [[agentharm]] — Agent harmfulness benchmark
-- [[agent-security-bench]] — Comprehensive agent security evaluation
-- [[decodingtrust]] — Trustworthiness benchmark
+- [[concepts/ai-benchmarks/agentdojo]] — Agent security benchmark subject to auditing
+- [[concepts/ai-benchmarks/agentharm]] — Agent harmfulness benchmark
+- [[concepts/ai-benchmarks/agent-security-bench]] — Comprehensive agent security evaluation
+- [[concepts/ai-benchmarks/decodingtrust]] — Trustworthiness benchmark
 
 ## Connections to Other Wiki Concepts
 
-BenchJack represents **meta-evaluation** — evaluating the evaluators. As the number of **[[concepts/ai-agents]]** benchmarks grows rapidly, ensuring their quality becomes critical for reliable model assessment. The framework's **evaluation-methodology** contributions help the research community identify and address flaws in benchmarks like [[agentdojo]], [[agentharm]], and [[agent-security-bench]]. This meta-level quality assurance is essential for the broader **benchmark-evaluation** ecosystem to produce trustworthy and actionable results.
+BenchJack represents **meta-evaluation** — evaluating the evaluators. As the number of **[[concepts/ai-agents]]** benchmarks grows rapidly, ensuring their quality becomes critical for reliable model assessment. The framework's **evaluation-methodology** contributions help the research community identify and address flaws in benchmarks like [[concepts/ai-benchmarks/agentdojo]], [[concepts/ai-benchmarks/agentharm]], and [[concepts/ai-benchmarks/agent-security-bench]]. This meta-level quality assurance is essential for the broader **benchmark-evaluation** ecosystem to produce trustworthy and actionable results.

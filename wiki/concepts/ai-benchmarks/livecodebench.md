@@ -141,7 +141,7 @@ From the Part 2 analysis (Apr 30, 2025):
 - [[concepts/evaluation/ai-benchmarks-and-evals]] — Full 18-part benchmark series overview
 - [[entities/florian-brand]] — Florian Brand (@xeophon), series author
 - [[concepts/aider-polyglot]] — Aider Polyglot (multi-language coding)
-- [[concepts/swe-bench]] — SWE-Bench (real-world software engineering)
+- [[concepts/ai-benchmarks/swe-bench]] — SWE-Bench (real-world software engineering)
 - [[concepts/llm-evaluation]] — LLM evaluation landscape
 
 ---

@@ -62,7 +62,7 @@ Inference: "Model's own (flawed) prefix" → predict next token
            ↑ distribution shift — model has never seen its own errors during training
 ```
 
-[[concepts/post-training/post-training-distributional-view|The distributional view]] frames this precisely: SFT does **forward KL** (mode-seeking) toward the teacher's distribution, while RL and OPD do **reverse KL** on the student's own rollouts.
+[[concepts/post-training-distributional-view|The distributional view]] frames this precisely: SFT does **forward KL** (mode-seeking) toward the teacher's distribution, while RL and OPD do **reverse KL** on the student's own rollouts.
 
 ### The Hallucination Problem (Goldberg, 2023)
 
@@ -163,7 +163,7 @@ Goldberg's 2023 framing was "SFT vs RL" as a dichotomy. By 2026, the field has e
 
 ## Information-Theoretic Perspective
 
-[[concepts/post-training/post-training-distributional-view|The distributional view]] (@nrehiew) quantifies the information density difference:
+[[concepts/post-training-distributional-view|The distributional view]] (@nrehiew) quantifies the information density difference:
 
 | Method | Information per episode | Sampling |
 |--------|------------------------|----------|
@@ -185,7 +185,7 @@ RL provides only 1 bit of information per episode (the reward signal), but that 
 
 ## Related Pages
 
-- [[concepts/post-training/post-training-distributional-view]] — Distributional lens: SFT vs RL vs OPD
+- [[concepts/post-training-distributional-view]] — Distributional lens: SFT vs RL vs OPD
 - [[concepts/post-training/on-policy-distillation]] — On-policy distillation mechanism and variants
 - [[concepts/post-training/grpo-rl-training]] — The dominant on-policy RL algorithm (2025-2026)
 - [[concepts/post-training/asynchronous-rl]] — Async RL and the policy-lag / off-policy tradeoff

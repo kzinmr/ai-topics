@@ -18,7 +18,7 @@ sources:
 
 # GRPO Memory Modeling
 
-A breakdown of how many model copies live in GPU memory during [[grpo]] training, and which optimizations can reclaim the most space.
+A breakdown of how many model copies live in GPU memory during [[concepts/post-training/grpo]] training, and which optimizations can reclaim the most space.
 
 ## Model Copies During Training
 
@@ -29,13 +29,13 @@ A breakdown of how many model copies live in GPU memory during [[grpo]] training
 | **Reward model** | Scores completions | No | Only if learned rewards |
 | **Rollout engine** | Generates completions | No | May share actor weights |
 
-**Total: 2–4 copies** depending on configuration. See also [[grpo-rl-training]] for the full training loop.
+**Total: 2–4 copies** depending on configuration. See also [[concepts/post-training/grpo-rl-training]] for the full training loop.
 
 ## Comparison with PPO
 
 PPO requires **at minimum 4 model copies**: Actor + Critic + Reference + Reward.
 
-[[grpo]] eliminates the critic entirely—advantages are computed from group-normalized rewards—saving roughly **1 model copy worth of memory** (params + optimizer + gradients). On a 7B model that is ~20 GB saved before any other optimization.
+[[concepts/post-training/grpo]] eliminates the critic entirely—advantages are computed from group-normalized rewards—saving roughly **1 model copy worth of memory** (params + optimizer + gradients). On a 7B model that is ~20 GB saved before any other optimization.
 
 ## Concrete Memory Budget (7B, BF16)
 
@@ -83,4 +83,4 @@ In **synchronous** frameworks (e.g., single-node DeepSpeed-Chat), the actor weig
 
 ## Summary
 
-The critical insight: GRPO already saves one model copy over PPO by removing the critic. The highest-leverage further optimization is **LoRA + β=0**, which collapses a ~98 GB memory footprint to ~28 GB on a 7B model—making single-node 8×A100 training feasible where it otherwise would not be. For broader context on algorithmic trade-offs, see [[rl-algorithms-for-llm-training]].
+The critical insight: GRPO already saves one model copy over PPO by removing the critic. The highest-leverage further optimization is **LoRA + β=0**, which collapses a ~98 GB memory footprint to ~28 GB on a 7B model—making single-node 8×A100 training feasible where it otherwise would not be. For broader context on algorithmic trade-offs, see [[concepts/post-training/rl-algorithms-for-llm-training]].

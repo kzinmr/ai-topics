@@ -50,8 +50,8 @@ HAL operates as a meta-leaderboard that aggregates standardized evaluation resul
 
 - Individual agent benchmarks that feed into HAL's aggregated rankings
 - [[agent-evaluation]] frameworks like BenchFlow, TRAIL, and SkillsBench
-- Coding-focused benchmarks like [[cursorbench]] and the [[stripe-agent-benchmark]]
-- Memory-focused evaluations like the [[letta-leaderboard]] and [[agent-memory-bench]]
+- Coding-focused benchmarks like [[concepts/ai-benchmarks/cursorbench]] and the [[concepts/ai-benchmarks/stripe-agent-benchmark]]
+- Memory-focused evaluations like the [[concepts/ai-benchmarks/letta-leaderboard]] and [[concepts/ai-benchmarks/agent-memory-bench]]
 
 ## Connections to Other Wiki Concepts
 

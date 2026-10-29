@@ -79,7 +79,7 @@ Gary Marcus evaluated the results as finding a middle ground: Mythos is "nowhere
 On June 9, 2026, Anthropic launched two Mythos-class models simultaneously:
 
 - **[[concepts/claude/fable-5|Claude Fable 5]]**: Mythos-class model made safe for general use. Safety classifiers fall back to Opus 4.8 on cybersecurity, biology/chemistry, and distillation queries. **>95% of sessions involve no fallback.**
-- **Claude Mythos 5**: Same underlying model with safeguards lifted. Restricted to [[concepts/project-glasswing|Project Glasswing]] cyber defenders and select biology researchers.
+- **Claude Mythos 5**: Same underlying model with safeguards lifted. Restricted to [[entities/project-glasswing|Project Glasswing]] cyber defenders and select biology researchers.
 
 **Pricing:** $10/MTok input, $50/MTok output — less than half the price of Claude Mythos Preview.
 

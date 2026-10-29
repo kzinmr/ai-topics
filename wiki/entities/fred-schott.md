@@ -81,7 +81,7 @@ In a [Latent Space interview with Richard MacManus](https://www.latent.space/p/f
 - **On LangChain Managed Deep Agents**: not on Flue's roadmap — "It's so early for us, we're just focused on building the best harness."
 - Onboarding is **agent-first**: "pass this prompt to your agent, it's gonna guide you through it" — the docs have markdown support, and many users (including MacManus) set up Flue agents via Claude Code.
 
-The interview connects his v1 framing ("like Claude Code, but 100% headless and programmable") to the broader [[concepts/harness-engineering]] and [[concepts/agent-team-swarm|meta-harness]] landscape. Flue's origin: an issue-triage system inside the Astro repo that grew into a headless, hostable Claude Code experience. See [[entities/flue]] for the full framework detail.
+The interview connects his v1 framing ("like Claude Code, but 100% headless and programmable") to the broader [[concepts/harness-engineering]] and [[concepts/multi-agents/agent-team-swarm|meta-harness]] landscape. Flue's origin: an issue-triage system inside the Astro repo that grew into a headless, hostable Claude Code experience. See [[entities/flue]] for the full framework detail.
 
 ## Related
 

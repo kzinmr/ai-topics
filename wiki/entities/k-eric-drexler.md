@@ -59,7 +59,7 @@ This debate has shaped much of the modern conversation in AI safety and governan
 
 - [[concepts/comprehensive-ai-services]] — The CAIS framework, Drexler's most influential AI contribution
 - [[concepts/superintelligence]] — Broader topic of AI surpassing human capabilities
-- [[concepts/ai-safety]] — Safety implications of advanced AI
+- [[concepts/security-and-governance/ai-safety]] — Safety implications of advanced AI
 - [[entities/future-of-humanity-institute]] — Institution where Drexler conducted FHI research
 - [[concepts/nick-bostrom]] — Contrasting agent-centric superintelligence framework
 

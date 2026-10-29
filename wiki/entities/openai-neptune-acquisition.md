@@ -57,7 +57,7 @@ Neptune's integration into OpenAI's training stack is likely complementary to sp
 ### Competitive Positioning
 
 Neptune competed with other ML experiment tracking platforms:
-- **Weights & Biases** (wandb) — see [[tools/weights-and-biases|Weights & Biases skill]] for W&B's broader MLOps platform
+- **Weights & Biases** (wandb) — see [[entities/weights-and-biases|Weights & Biases skill]] for W&B's broader MLOps platform
 - **MLflow** (open-source, Linux Foundation)
 - **Comet ML**
 
@@ -72,6 +72,6 @@ Neptune's differentiation was its focus on the research/iteration workflow rathe
 ## Related
 
 - [[entities/openai]] — acquirer
-- [[tools/weights-and-biases]] — competing experiment tracking platform
+- [[entities/weights-and-biases]] — competing experiment tracking platform
 - [[concepts/trusted-access-biodefense]] — OpenAI's broader specialized model strategy
 - [[concepts/ml-engineering]] — MLOps and training infrastructure

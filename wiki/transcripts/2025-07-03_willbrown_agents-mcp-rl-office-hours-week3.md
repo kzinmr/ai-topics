@@ -173,6 +173,6 @@ participants:
 
 - [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering: From MCP to RL]]
 - [[raw/articles/2025-07-03_willbrown_agents-mcp-rl-office-hours-week3]]
-- [[concepts/grpo-rl-training]]
+- [[concepts/post-training/grpo-rl-training]]
 - [[entities/will-brown]]
 - [[entities/prime-intellect]]

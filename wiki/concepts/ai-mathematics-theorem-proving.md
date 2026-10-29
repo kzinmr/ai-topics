@@ -28,7 +28,7 @@ The results were notable not only for their breadth but for the workflow: the AI
 
 ### Connes Rigidity Conjecture (Operator Algebras)
 
-The model produced a disproof of Alain Connes's longstanding conjecture that certain groups are uniquely determined by their von Neumann algebras. This was a central open question in operator algebras that had resisted resolution for decades, with deep connections to [[formal-verification-llm-agents|formal methods]] and the foundations of mathematical structure.
+The model produced a disproof of Alain Connes's longstanding conjecture that certain groups are uniquely determined by their von Neumann algebras. This was a central open question in operator algebras that had resisted resolution for decades, with deep connections to [[concepts/formal-verification-llm-agents|formal methods]] and the foundations of mathematical structure.
 
 ### High-Dimensional Sphere Packing
 
@@ -44,7 +44,7 @@ A construction was produced establishing the existence of non-sofic groups, addr
 
 ### Lattice Cryptography: Closest Vector Problem
 
-Polynomial-factor hardness of approximation was demonstrated for the Closest Vector Problem (CVP), a foundational lattice problem related to post-quantum cryptography. This result has direct implications for [[cryptography-patterns|cryptographic security assumptions]] underlying lattice-based cryptosystems.
+Polynomial-factor hardness of approximation was demonstrated for the Closest Vector Problem (CVP), a foundational lattice problem related to post-quantum cryptography. This result has direct implications for [[concepts/cryptography-patterns|cryptographic security assumptions]] underlying lattice-based cryptosystems.
 
 ### Additional Results
 
@@ -58,9 +58,9 @@ The announcement explicitly addressed questions of attribution, with OpenAI stat
 
 ## Comparison to Other AI-for-Science Efforts
 
-This work exists within a broader ecosystem of AI-for-science initiatives. [[gpt/gpt-rosalind|GPT-Rosalind]], OpenAI's model for biology and life sciences, demonstrated capabilities in protein design and genomic analysis but operated primarily in applied domains rather than pure mathematics. [[claude-science|Claude Science]] by Anthropic targets life sciences with a different approach, providing an interactive workbench for researchers. The Astra model's mathematics results are distinctive in targeting pure theoretical advances rather than applied scientific problems.
+This work exists within a broader ecosystem of AI-for-science initiatives. [[concepts/gpt/gpt-rosalind|GPT-Rosalind]], OpenAI's model for biology and life sciences, demonstrated capabilities in protein design and genomic analysis but operated primarily in applied domains rather than pure mathematics. [[concepts/claude-science|Claude Science]] by Anthropic targets life sciences with a different approach, providing an interactive workbench for researchers. The Astra model's mathematics results are distinctive in targeting pure theoretical advances rather than applied scientific problems.
 
-The formal verification workflow — generating proofs and then certifying them in Lean — connects to broader work in [[formal-verification-llm-agents|LLM-based formal verification]], where AI systems are used to produce machine-checkable proofs. The mathematics results suggest that frontier models can contribute not just to verification but to original discovery.
+The formal verification workflow — generating proofs and then certifying them in Lean — connects to broader work in [[concepts/formal-verification-llm-agents|LLM-based formal verification]], where AI systems are used to produce machine-checkable proofs. The mathematics results suggest that frontier models can contribute not just to verification but to original discovery.
 
 ## Open Questions
 
@@ -70,7 +70,7 @@ Several open questions remain about the role of AI in mathematical research. How
 
 - [[entities/openai|OpenAI]] — Company behind the Astra model and these results
 - [[concepts/station-autonomous-math-discovery|Station]] — Decentralized multi-agent math discovery on the AlphaEvolve catalogue (arXiv:2608.23691, Aug 24, 2026); complementary paradigm: multi-model collaboration vs. Astra's single-model depth + Lean certificates
-- [[gpt/gpt-rosalind|GPT-Rosalind]] — OpenAI's model for scientific discovery in biology
-- [[claude-science|Claude Science]] — Anthropic's AI workbench for life sciences
-- [[formal-verification-llm-agents|Formal Verification for LLM Agents]] — Broader context for AI and formal methods
-- [[cryptography-patterns|Cryptography Patterns]] — Cryptographic concepts relevant to lattice-based results
+- [[concepts/gpt/gpt-rosalind|GPT-Rosalind]] — OpenAI's model for scientific discovery in biology
+- [[concepts/claude-science|Claude Science]] — Anthropic's AI workbench for life sciences
+- [[concepts/formal-verification-llm-agents|Formal Verification for LLM Agents]] — Broader context for AI and formal methods
+- [[concepts/cryptography-patterns|Cryptography Patterns]] — Cryptographic concepts relevant to lattice-based results

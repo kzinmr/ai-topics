@@ -46,7 +46,7 @@ Co-founded Prime Intellect in 2023 with Johannes Hagemann to democratize AI deve
 
 - Raised $20.5M (Seed $5.5M + Series A $15M) from Founders Fund, Andrej Karpathy, Clem Delangue, Tri Dao
 - Built Lab: RL post-training platform for self-improving agents
-- Open-sourced [[renderers]], [[verifiers-rl|verifiers]], [[prime-rl]]
+- Open-sourced [[renderers]], [[concepts/post-training/verifiers-rl|verifiers]], [[prime-rl]]
 - Trained INTELLECT-1 (10B), INTELLECT-2, and INTELLECT-3 model series
 
 ## Vision

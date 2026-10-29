@@ -221,7 +221,7 @@ A prompt fix (adding company policy info) was expected to improve Brand Alignmen
 -  — Systematic categorization of failure modes
 - [[concepts/harness-engineering]] — OpenAI's approach to AI-assisted development
 - [[comparisons/eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
-- [[concepts/evals-skills]] — Evals skills for coding agents
+- [[comparisons/evals-skills]] — Evals skills for coding agents
 - [[concepts/evaluation/ai-evals]] — PBT methodology applied to LLM evaluation (MacIver)
 ## Notion's Three-Tier Eval Framework (April 2026)
 

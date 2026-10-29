@@ -43,11 +43,11 @@ A 3-part X Article series systematically surveying the intersection of TTS (test
 - **Part 3**: [RL for Test-Time Scaling](https://x.com/sheriyuo/status/2061382777623519284) (2026-06-01) — Fundamental limits of training-free RL (ICML'25: Ω(√H) gap), survey of RL-for-TTS methods (MRT, e3, InT, TTI), industry perspective (gpt-oss 120b), future directions (Continual Learning, OPD)
 
 ### RL Interview Questions 2026
-Published a list of 35 RL interview questions for LLM/Agentic RL positions in June 2026. Went viral with 4,700+ bookmarks on X. Compiled from Zhihu interview experiences and recent discussions, organized into Algorithm (19) and Infrastructure (16) sections. → [[rl-interview-questions-2026]]
+Published a list of 35 RL interview questions for LLM/Agentic RL positions in June 2026. Went viral with 4,700+ bookmarks on X. Compiled from Zhihu interview experiences and recent discussions, organized into Algorithm (19) and Infrastructure (16) sections. → [[concepts/post-training/rl-interview-questions-2026]]
 
 ## Related Pages
 
-- [[training-free-rl]] — Training-free RL concept (ETS, Power Sampling)
+- [[concepts/post-training/training-free-rl]] — Training-free RL concept (ETS, Power Sampling)
 - [[concepts/test-time-scaling]] — Comprehensive TTS landscape
-- [[rl-interview-questions-2026]] — RL interview question list (35 questions)
-- [[reinforcement-learning]] — Reinforcement learning fundamentals
+- [[concepts/post-training/rl-interview-questions-2026]] — RL interview question list (35 questions)
+- [[concepts/post-training/reinforcement-learning]] — Reinforcement learning fundamentals

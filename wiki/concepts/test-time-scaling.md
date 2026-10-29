@@ -182,7 +182,7 @@ Sequential refinement is more token-efficient than parallel approaches but suffe
 
 ### 7. RL-Trained Reasoning (o1/o3/R1 Style)
 
-The most advanced form of test-time scaling: the model is **trained via RL** (specifically [[grpo]] / [[rlvr]]) to produce extended, high-quality reasoning chains internally. Key characteristics:
+The most advanced form of test-time scaling: the model is **trained via RL** (specifically [[concepts/post-training/grpo]] / [[concepts/post-training/rlvr]]) to produce extended, high-quality reasoning chains internally. Key characteristics:
 
 - **Hidden "thinking" tokens**: The model generates an internal reasoning trace that may be 10–100× longer than the visible answer
 - **Emergent behaviors**: Decomposition, self-verification, backtracking, alternative approach exploration — all emerge from RL training, not explicit programming
@@ -250,7 +250,7 @@ This implies test-time scaling is not simply "think longer = better" — there a
 
 ### vs. Fine-Tuning / Post-Training
 
-[[concepts/post-training]] methods (RLHF, DPO, SFT) change the model's weights permanently. Test-time scaling works with a **frozen model** — it's an inference-time strategy. However, the most powerful test-time scaling (o1/R1) comes from models that were **specifically RL-trained** to produce good reasoning chains (via [[grpo]] / [[rlvr]]), blurring the line between training and inference.
+[[concepts/post-training]] methods (RLHF, DPO, SFT) change the model's weights permanently. Test-time scaling works with a **frozen model** — it's an inference-time strategy. However, the most powerful test-time scaling (o1/R1) comes from models that were **specifically RL-trained** to produce good reasoning chains (via [[concepts/post-training/grpo]] / [[concepts/post-training/rlvr]]), blurring the line between training and inference.
 
 ## Practical Implications
 
@@ -325,7 +325,7 @@ A major research direction is achieving RL-like improvements **without updating 
 
 However, fundamental limits exist: verifier-free approaches suffer an **Ω(√H) asymptotic disadvantage** vs verifier-based ones ([ICML'25 Spotlight](https://arxiv.org/abs/2506.07976)), and intrinsic rewards (majority-voting, entropy) hit a **model collapse ceiling** ([ICLR'26](https://arxiv.org/abs/2510.14901)).
 
-→ See [[training-free-rl]] for full treatment.
+→ See [[concepts/post-training/training-free-rl]] for full treatment.
 
 ## RL for Test-Time Scaling: Training Models to Use Inference Compute
 
@@ -358,7 +358,7 @@ The techniques described above (CoT, self-consistency, Best-of-N, beam search) a
 - [[concepts/structured-test-time-scaling]] — The unified theory of structured test-time scaling
 - [[concepts/scaling-hypothesis]] — The broader framework test-time scaling extends
 - [[concepts/chain-of-thought]] — The foundational technique for reasoning
-- [[rlvr]] — Reinforcement Learning with Verifiable Rewards, key training method
+- [[concepts/post-training/rlvr]] — Reinforcement Learning with Verifiable Rewards, key training method
 - [[concepts/post-training/grpo]] — Group Relative Policy Optimization, used for R1 training
 - [[concepts/post-training]] — The middle scaling axis between pre-training and test-time
 - [[reasoning]] — AI reasoning capabilities and benchmarks
@@ -366,6 +366,6 @@ The techniques described above (CoT, self-consistency, Best-of-N, beam search) a
 - [[concepts/nvidia-vera-rubin]] — Hardware platform optimized for test-time compute workloads
 - [[rlm]] — Recursive Language Models applying test-time scaling recursively
 - [[concepts/multi-agents/multi-agent-systems]] — Multi-agent systems as structured test-time scaling
-- [[training-free-rl]] — Approximating RL at inference time (ETS, Power Sampling)
+- [[concepts/post-training/training-free-rl]] — Approximating RL at inference time (ETS, Power Sampling)
 - [[concepts/test-time-interaction-scaling]] — Interaction-scaling for agentic tasks (TTI)
 - [[on-policy-distillation]] — SDFT, SDPO as the complementary training direction

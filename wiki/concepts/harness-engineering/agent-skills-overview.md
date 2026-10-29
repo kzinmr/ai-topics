@@ -99,7 +99,7 @@ Concrete implementations and patterns across specific platforms and providers.
 | **[[concepts/harness-engineering/system-architecture/agent-skills]]** | Agent Skills SKILL.md bundles — OpenAI's SKILL.md. Deterministic 3-stage loading sequence (metadata → bundle retrieval → context update), version management, container-based exploratory execution | OpenAI |
 | **[[concepts/skill-graph]]** | Skill Graph — Playbook architecture using interconnected Markdown files. Knowledge nodes joined via `[[wikilinks]]`, agents traverse only needed nodes from index.md. "1 flat .md = TOOL, graph = TEAM". 17-file model (platforms/voice/engine/audience/) | Ronin (@DeRonin_) |
 | **[[concepts/evaluation/llm-as-judge-skills]]** | LLM-as-Judge Skills — Reusable skills for evaluating LLM output with LLMs themselves. Application of Context Engineering (GitHub: muratcankoylan/Agent-Skills-for-Context-Engineering, 15.5k stars) | Murat Can Koylan |
-| **[[concepts/evals-skills-for-coding-agents]]** | Evals Skills for Coding Agents — Evaluation skills for coding agents (**stub**) | — |
+| **[[comparisons/evals-skills]]** | Evals Skills for Coding Agents — Evaluation skills for coding agents (**stub**) | — |
 | **[[concepts/five-tier-skill-precedence]]** | Five-Tier Skill Precedence — OpenClaw's 5-tier priority model (**stub**, details in [[concepts/skill-architecture-patterns]]) | OpenClaw |
 
 **Relationship:** `claude-code-skills` and `harness-engineering/system-architecture/agent-skills` are Anthropic and OpenAI's SKILL.md implementations respectively. The former focuses on role classification and design tips, the latter on version management and container execution. `skill-graph` is orthogonal to both (Claude Code Skills and OpenAI Skills can both be graphed).
@@ -132,8 +132,8 @@ These pages are stubs — substantive content exists in other pages:
 | Stub | Page with Actual Content |
 |------|----------------------|
 | [[concepts/agent-skills-skillmd]] | [[concepts/agent-skills]] (duplicate stub) |
-| [[concepts/evals-skills]] | — (independent stub) |
-| [[concepts/evals-skills-for-coding-agents]] | — (independent stub) |
+| [[comparisons/evals-skills]] | — (independent stub) |
+| [[comparisons/evals-skills]] | — (independent stub) |
 | [[concepts/five-tier-skill-precedence]] | [[concepts/skill-architecture-patterns]] (OpenClaw Five-Tier section) |
 
 ## Recommended Reading Path

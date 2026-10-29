@@ -29,7 +29,7 @@ For CLI agents, this means: a model that is good at predicting terminal outputs 
 ## Approaches
 
 ### ECHO (2026-05)
-[[echo-rl|ECHO]] adds environment cross-entropy loss on terminal-output tokens alongside standard GRPO loss. No extra rollouts, teacher models, or forward passes. Demonstrates measurable world-model learning and 2× benchmark improvements at zero extra cost.
+[[concepts/post-training/echo-rl|ECHO]] adds environment cross-entropy loss on terminal-output tokens alongside standard GRPO loss. No extra rollouts, teacher models, or forward passes. Demonstrates measurable world-model learning and 2× benchmark improvements at zero extra cost.
 
 ### Agent Learning via Early Experience
 Uses action-consequence signal as a pre-RL stage before reward-based training.
@@ -56,7 +56,7 @@ The bet by ECHO's authors: "Anywhere an agent acts and the world responds in tok
 
 ## See Also
 
-- [[echo-rl]] — ECHO method for CLI agents
+- [[concepts/post-training/echo-rl]] — ECHO method for CLI agents
 - [[entities/dimitris-papailiopoulos]]
 - [[concepts/economic-world-models]] — simulating whole economies (agent-population world models), the macro sibling of per-agent world models
 - [[entities/vaishnavi-shrivastava]]

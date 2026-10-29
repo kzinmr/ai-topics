@@ -16,7 +16,7 @@ AI voice fraud is a rapidly emerging category of cybercrime in which attackers u
 
 The threat was crystallised in Sharon Brightwell's case (Dover, Florida, 2026): she received a call from what sounded exactly like her daughter April in distress, claiming to have caused a car accident while texting. A man posing as an attorney then demanded $15,000 in cash for bail, warning her not to tell the bank the real purpose. Brightwell complied within the hour, only discovering the fraud when she reached the real April later. The attackers had cloned her daughter's voice from a short sample — likely scraped from social media or a prior recorded call.
 
-This page covers the technology behind voice cloning, the fraud attack vectors it enables, why traditional defences fail against AI-driven voice scams, and the broader implications for [[agent-safety]] and [[security-and-governance/ai-safety-and-alignment]].
+This page covers the technology behind voice cloning, the fraud attack vectors it enables, why traditional defences fail against AI-driven voice scams, and the broader implications for [[concepts/agent-safety]] and [[security-and-governance/ai-safety-and-alignment]].
 
 ## How AI Voice Cloning Works
 

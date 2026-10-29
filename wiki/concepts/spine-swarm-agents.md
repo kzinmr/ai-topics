@@ -61,7 +61,7 @@ A critical innovation in Spine Swarm is that agents pass **structured data** bet
 - Data integrity is maintained across the agent pipeline
 - Final deliverables are assembled from verified, structured components rather than synthesized free text
 
-This contrasts sharply with [[multi-agent-systems]] approaches that rely on conversational context passing, which introduces ambiguity and error propagation.
+This contrasts sharply with [[concepts/multi-agents/multi-agent-systems]] approaches that rely on conversational context passing, which introduces ambiguity and error propagation.
 
 ### Automation via MCP, API, and Webhooks
 
@@ -87,7 +87,7 @@ The 8.1-point lead over Perplexity (the closest competitor) demonstrates that th
 
 ### Why Parallel Beats Sequential
 
-The benchmark advantage aligns with the theoretical framework in [[multi-agent-systems]]: single-agent linear reasoning faces exponential error collapse as task complexity grows (P_success = (1−ε)^W). By distributing research across parallel agents with structured handoffs, Spine Swarm avoids this compounding degradation. Each agent operates on a focused subtask rather than carrying an ever-growing context window.
+The benchmark advantage aligns with the theoretical framework in [[concepts/multi-agents/multi-agent-systems]]: single-agent linear reasoning faces exponential error collapse as task complexity grows (P_success = (1−ε)^W). By distributing research across parallel agents with structured handoffs, Spine Swarm avoids this compounding degradation. Each agent operates on a focused subtask rather than carrying an ever-growing context window.
 
 ## Client-Ready Output Formats
 
@@ -177,7 +177,7 @@ The platform's automation capabilities (scheduled workflows, MCP/API integration
 
 ## Related Concepts
 
-- [[multi-agent-systems]] — Theoretical foundation for multi-agent coordination
+- [[concepts/multi-agents/multi-agent-systems]] — Theoretical foundation for multi-agent coordination
 - [[agent-team-swarm]] — Agent team/swarm architecture patterns
 - [[concepts/agentic-search]] — Search strategies for AI agents
 - [[concepts/deep-research]] — Deep research as a retrieval and reasoning challenge

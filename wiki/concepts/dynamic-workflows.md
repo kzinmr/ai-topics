@@ -19,7 +19,7 @@ sources:
 
 # Dynamic Workflows in Claude Code
 
-Dynamic workflows are a feature in [[concepts/claude-code/claude-code|Claude Code]] that allow Claude to **dynamically generate its own agent harness** (written in JavaScript) at runtime, tailored to the specific task at hand. Released in early June 2026, this capability represents a shift from static, pre-built orchestration to on-the-fly [[concepts/harness-engineering|harness engineering]] driven by the model itself.
+Dynamic workflows are a feature in [[entities/claude-code|Claude Code]] that allow Claude to **dynamically generate its own agent harness** (written in JavaScript) at runtime, tailored to the specific task at hand. Released in early June 2026, this capability represents a shift from static, pre-built orchestration to on-the-fly [[concepts/harness-engineering|harness engineering]] driven by the model itself.
 
 ## Core Concept
 
@@ -68,7 +68,7 @@ For tasks with unknown workload, loop spawning agents until a stop condition is 
 
 ## Use Cases
 
-Dynamic workflows extend [[concepts/claude-code/claude-code|Claude Code]] beyond traditional coding into structured, adversarial, and research-heavy tasks:
+Dynamic workflows extend [[entities/claude-code|Claude Code]] beyond traditional coding into structured, adversarial, and research-heavy tasks:
 
 - **Migrations and refactors**: Bun was rewritten from Zig to Rust using workflows — spin off a subagent per fix in a worktree, adversarially review, then merge
 - **Deep research**: Fan-out web searches, fetch sources, adversarially verify claims, synthesize a cited report (available as `/deep-research` skill)
@@ -120,7 +120,7 @@ In his Y Combinator Startup School 2026 interview, Claude Code creator [[entitie
 
 ## Related Concepts
 
-- [[concepts/claude-code/claude-code|Claude Code as a Coding Agent]]
+- [[entities/claude-code|Claude Code as a Coding Agent]]
 - [[concepts/harness-engineering|Harness Engineering]]
 - [[concepts/harness-engineering/agent-harness|Agent Harness]]
 - [[concepts/claude/opus-4-8|Claude Opus 4.8]] — the model that makes dynamic workflows intelligent enough to generate custom harnesses

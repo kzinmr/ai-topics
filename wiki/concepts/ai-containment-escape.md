@@ -78,7 +78,7 @@ The classic AI boxing problem assumes:
 ## Related Concepts
 
 - [[concepts/security-and-governance/ai-safety]] — Broader AI safety frameworks
-- [[concepts/security-and-governance/agent-safety]] — Agent-specific safety
+- [[concepts/agent-safety]] — Agent-specific safety
 - [[entities/openai-huggingface-incident-july-2026]] — Real-world runaway agent example
 - [[concepts/open-source-ai]] — Open-weight model ecosystem
 

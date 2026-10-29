@@ -66,5 +66,5 @@ Soofi S exemplifies the growing **European AI sovereignty** movement, where EU m
 - [[gemma-family]] — Google's Gemma model family, another major open model ecosystem
 - [[llama-4]] — Meta's LLaMA family of open models
 - [[qwen]] — Alibaba's Qwen multilingual model family
-- [[open-source-ai]] — The open-source AI movement and ecosystem
+- [[concepts/open-source-ai]] — The open-source AI movement and ecosystem
 - [[entities/mistral-ai]] — Mistral AI, another major European AI lab

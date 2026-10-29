@@ -74,35 +74,35 @@ sources: []
 ### Top Broken Targets (pages that need creating)
 
 - [[]] — 38 references
-- [[concepts/claude-code/claude-code]] — 36 references
-- [[concepts/ai-safety]] — 35 references
+- [[entities/claude-code]] — 36 references
+- [[concepts/security-and-governance/ai-safety]] — 35 references
 - [[agent-evaluation]] — 26 references
-- [[grpo]] — 22 references
-- [[gaia-benchmark]] — 20 references
-- [[reinforcement-learning]] — 19 references
+- [[concepts/post-training/grpo]] — 22 references
+- [[concepts/ai-benchmarks/gaia-benchmark]] — 20 references
+- [[concepts/post-training/reinforcement-learning]] — 19 references
 - [[concepts/agent-evaluation]] — 19 references
 - [[concepts/agent-memory]] — 16 references
-- [[hal-leaderboard]] — 16 references
-- [[concepts/rag]] — 15 references
-- [[concepts/tau-knowledge]] — 14 references
-- [[agentdojo]] — 14 references
-- [[concepts/swe-bench]] — 14 references
+- [[concepts/ai-benchmarks/hal-leaderboard]] — 16 references
+- [[concepts/rag-systems]] — 15 references
+- [[concepts/ai-benchmarks/tau-knowledge]] — 14 references
+- [[concepts/ai-benchmarks/agentdojo]] — 14 references
+- [[concepts/ai-benchmarks/swe-bench]] — 14 references
 - [[entities/cursor]] — 13 references
 
 ### Fixable Links (sample)
 
 352 links can be auto-fixed (cross-namespace or bare → namespaced).
 
-- `entities/alex-ellis`: [[concepts/opencode]] → [[entities/opencode]]
-- `entities/alloomi-ai`: [[opencontext]] → [[entities/opencontext]]
-- `entities/alloomi-ai`: [[self-evolving-agents]] → [[concepts/self-evolving-agents]]
-- `entities/alloomi-ai`: [[self-learning-agents]] → [[concepts/self-learning-agents]]
+- `entities/alex-ellis`: [[entities/opencode]] → [[entities/opencode]]
+- `entities/alloomi-ai`: [[entities/opencontext]] → [[entities/opencontext]]
+- `entities/alloomi-ai`: [[concepts/self-evolving-agents]] → [[concepts/self-evolving-agents]]
+- `entities/alloomi-ai`: [[concepts/self-learning-agents]] → [[concepts/self-learning-agents]]
 - `entities/alloomi-ai`: [[context-engineering]] → [[concepts/context-engineering]]
-- `entities/alloomi-ai`: [[opencontext]] → [[entities/opencontext]]
+- `entities/alloomi-ai`: [[entities/opencontext]] → [[entities/opencontext]]
 - `entities/apple-onnx-mlx-modelscope`: [[entities/mlx]] → [[concepts/mlx]]
-- `entities/bill-gates`: [[gary-marcus]] → [[entities/gary-marcus]]
+- `entities/bill-gates`: [[entities/gary-marcus]] → [[entities/gary-marcus]]
 - `entities/bill-gates`: [[ai-employment-displacement]] → [[concepts/ai-employment-displacement]]
-- `entities/bill-gates`: [[gary-marcus]] → [[entities/gary-marcus]]
+- `entities/bill-gates`: [[entities/gary-marcus]] → [[entities/gary-marcus]]
 - ... and 342 more
 
 ## 3. Duplicate / Similar Pages

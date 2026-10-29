@@ -49,7 +49,7 @@ DataBench v1 covers **100 realistic analytical tasks** split into Q&A and Open-E
 
 ## Connections to Other Wiki Concepts
 
-DataBench exemplifies the trend toward domain-specific [[agent-evaluation]] for knowledge-work agents, parallel to [[cursorbench]] for coding agents. Its LLM-judge rubric methodology connects to [[llm-as-judge]]; its findings on test-time-scaling regressions are relevant to the broader [[test-time-scaling]] discussion. The benchmark complements [[entities/hex-technologies]]' Shoebox evaluation lab and Shorelane environment (the same synthetic business DataBench runs in). Hex plans to open-source the Shorelane analytical environment so other agentic-analytics builders can use a realistic public eval environment; DataBench itself remains private to avoid training contamination.
+DataBench exemplifies the trend toward domain-specific [[agent-evaluation]] for knowledge-work agents, parallel to [[concepts/ai-benchmarks/cursorbench]] for coding agents. Its LLM-judge rubric methodology connects to [[concepts/evaluation/llm-as-judge]]; its findings on test-time-scaling regressions are relevant to the broader [[concepts/test-time-scaling]] discussion. The benchmark complements [[entities/hex-technologies]]' Shoebox evaluation lab and Shorelane environment (the same synthetic business DataBench runs in). Hex plans to open-source the Shorelane analytical environment so other agentic-analytics builders can use a realistic public eval environment; DataBench itself remains private to avoid training contamination.
 
 ## Related
 - [[entities/hex-technologies]] — benchmark creator; Shoebox eval lab, Shorelane environment

@@ -1888,8 +1888,8 @@
 - [[concepts/etclovg-taxonomy]] — The seven-layer taxonomy for agent harness engineering: Execution, Tooling, Context, Lifecycle, Observability, Verifi...
 - [[concepts/eu-ai-act]] — EU AI Act
 - [[concepts/eureka-labs]] — eureka-labs
-- [[concepts/evals-skills-for-coding-agents]] — Evals Skills for Coding Agents
-- [[concepts/evals-skills]] — Evals Skills for Coding Agents
+- [[comparisons/evals-skills]] — Evals Skills for Coding Agents
+- [[comparisons/evals-skills]] — Evals Skills for Coding Agents
 - [[concepts/epistemic-humility-agents-knowledge-conflict]] — Epistemic Humility in LLM Agents (arXiv:2610.12360) — ISE framework (Identify→Solve→Escalate) for parametric-vs-contextual knowledge conflict; agents frequently Identify and Solve but rarely Escalate, so high-accuracy configs ship confident wrong final answers
 - [[concepts/benchmark-ceiling]] — The Benchmark Ceiling — evaluation scarcity & political economy of AI capability measurement; valid signal concentrates in the expert-authored hard tail (arXiv, Jun 2026)
 - [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]] — Evaluation Coding Agents Mcp Automation Harness Engineering

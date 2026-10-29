@@ -10,10 +10,10 @@ sources:
     authors: ["OpenAI"]
     year: 2024
 related_concepts:
-  - "[[swe-bench]]"
-  - "[[re-bench]]"
-  - "[[theagentcompany]]"
-  - "[[paperbench]]"
+  - "[[concepts/ai-benchmarks/swe-bench]]"
+  - "[[concepts/ai-benchmarks/re-bench]]"
+  - "[[concepts/ai-benchmarks/theagentcompany]]"
+  - "[[concepts/ai-benchmarks/paperbench]]"
 ---
 
 # MLE-bench
@@ -53,10 +53,10 @@ The benchmark covers tasks across multiple ML paradigms and difficulty levels, f
 
 ## Related Benchmarks
 
-- **[[swe-bench]]**: Evaluates software engineering tasks (bug fixing, feature implementation) — MLE-bench applies a similar philosophy specifically to ML engineering
-- **[[re-bench]]**: Tests broader AI R&D capabilities including research methodology, whereas MLE-bench focuses on applied ML engineering
-- **[[theagentcompany]]**: Evaluates agents on real-world work tasks across domains beyond ML
-- **[[paperbench]]**: Complements MLE-bench by testing paper replication rather than competition-solving
+- **[[concepts/ai-benchmarks/swe-bench]]**: Evaluates software engineering tasks (bug fixing, feature implementation) — MLE-bench applies a similar philosophy specifically to ML engineering
+- **[[concepts/ai-benchmarks/re-bench]]**: Tests broader AI R&D capabilities including research methodology, whereas MLE-bench focuses on applied ML engineering
+- **[[concepts/ai-benchmarks/theagentcompany]]**: Evaluates agents on real-world work tasks across domains beyond ML
+- **[[concepts/ai-benchmarks/paperbench]]**: Complements MLE-bench by testing paper replication rather than competition-solving
 
 ## Connections to Other Wiki Concepts
 

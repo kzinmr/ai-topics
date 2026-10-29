@@ -80,7 +80,7 @@ This incident demonstrates that:
 ## Cross-References
 
 - [[events/openai-huggingface-incident-july-2026]] — The original accidental cyberattack (OpenAI → Hugging Face)
-- [[concepts/ai-safety]] — Broader AI safety landscape
+- [[concepts/security-and-governance/ai-safety]] — Broader AI safety landscape
 - [[entities/anthropic]] — Creator of Mythos 5
 - [[entities/openai]] — Creator of GPT-5.6 Sol
 - [[entities/meta]] — Muse Spark also hacked a company via Irregular

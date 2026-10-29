@@ -49,12 +49,12 @@ The benchmark uses a systematic evaluation of memory approaches:
 
 ## Related Benchmarks
 
-- [[letta-leaderboard]] — Letta's benchmark for LLM agentic memory management capability
-- [[hal-leaderboard]] — Princeton's aggregated agent evaluation leaderboard
-- [[trail]] — Agent trace reasoning and issue localization
-- [[skillsbench]] — BenchFlow's skill acquisition benchmark
+- [[concepts/ai-benchmarks/letta-leaderboard]] — Letta's benchmark for LLM agentic memory management capability
+- [[concepts/ai-benchmarks/hal-leaderboard]] — Princeton's aggregated agent evaluation leaderboard
+- [[concepts/ai-benchmarks/trail]] — Agent trace reasoning and issue localization
+- [[concepts/ai-benchmarks/skillsbench]] — BenchFlow's skill acquisition benchmark
 - [[concepts/frontier-model-benchmarks-2026h2]] — LIFE benchmark (seven-model July–Sep 2026 suite): 53.9% full-context → 35.3% at 4000-token budget — "compressed multi-session conversation ≠ memory"
 
 ## Connections to Other Wiki Concepts
 
-The Agent Memory Benchmark directly connects to the [[letta-leaderboard]] as both come from the Letta/MemGPT team and focus on memory as a critical dimension of agent capability. Together, they explore both the model-side (how well LLMs manage memory) and system-side (what memory architecture works best) of the memory problem in [[concepts/ai-agents]]. This research contributes to [[agent-evaluation]] by establishing memory as a first-class evaluation dimension alongside task completion, reasoning, and tool use.
+The Agent Memory Benchmark directly connects to the [[concepts/ai-benchmarks/letta-leaderboard]] as both come from the Letta/MemGPT team and focus on memory as a critical dimension of agent capability. Together, they explore both the model-side (how well LLMs manage memory) and system-side (what memory architecture works best) of the memory problem in [[concepts/ai-agents]]. This research contributes to [[agent-evaluation]] by establishing memory as a first-class evaluation dimension alongside task completion, reasoning, and tool use.

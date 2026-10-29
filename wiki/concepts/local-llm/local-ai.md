@@ -72,7 +72,7 @@ Mac Mini → NVIDIA DGX Spark → 5090 eGPU + gaming rig → Strix Halo Framewor
 
 ### Hardware Details
 - **DGX Spark**: → [[entities/nvidia-dgx-spark]], [[concepts/dgx-spark-local-llm-server]]
-- **Mac Studio**: → [[entities/mac-studio-local-ai]]
+- **Mac Studio**: → [[concepts/mac-studio-local-ai]]
 - **Inference hardware general**: → [[concepts/local-llm/local-llm-inference-hardware]]
 
 ---
@@ -256,7 +256,7 @@ Ahmad Osman's workshop reinforces and extends the [[concepts/local-llm/local-ai]
 - [[concepts/local-llm/_index]] — Local LLM overview
 - [[concepts/local-llm/local-llm-inference-hardware]] — Inference hardware details
 - [[concepts/local-llm/local-llm-models-april-2026]] — Per-model benchmarks
-- [[entities/mac-studio-local-ai]] — Mac Studio inference environment
+- [[concepts/mac-studio-local-ai]] — Mac Studio inference environment
 - [[concepts/dgx-spark-local-llm-server]] — DGX Spark inference server setup
 - [[concepts/local-llm/local-llm-server-setup-on-dgx-spark]] — DGX Spark setup guide
 - [[concepts/ollama]] — Ollama runner

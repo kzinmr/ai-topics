@@ -77,8 +77,8 @@ Uses a rubric-based evaluation framework with 7,399 rubrics covering both final 
 | [[concepts/ai-benchmarks/swe-bench]] | PR-level code fixes | Small scope |
 | [[concepts/ai-benchmarks/frontier-swe-benchmark]] | Ultra-long-horizon engineering (20h) | 17 difficult tasks |
 | **Workspace-Bench** | Multi-file workspace navigation | 20,476 files, 74 types |
-| [[concepts/kernelbench]] | Kernel-level optimization | Specialized |
-| [[concepts/agent-survival-benchmark]] | Human-normalized agent capability | Diverse tasks |
+| [[concepts/ai-benchmarks/kernelbench]] | Kernel-level optimization | Specialized |
+| [[concepts/ai-benchmarks/agent-survival-benchmark]] | Human-normalized agent capability | Diverse tasks |
 
 ## Key Significance
 

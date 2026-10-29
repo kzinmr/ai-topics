@@ -63,7 +63,7 @@ Google DeepMind's internal agent architecture reveals practical orchestration pa
 - **Antigravity IDE**: Visual Studio–like environment with built-in agent manager — spawn multiple agents on different projects with individual planning systems
 - **Skills Library**: Shared library with Darwinian selection — only the best skills survive
 - **Quota Management**: Employees have lower quotas than customers; SRE teams enforce limits
-- **Model Mixing**: Orchestration layer routes bulk work to cheap models ([[concepts/gemma-4|Gemma 4]]) and critical work to advanced models
+- **Model Mixing**: Orchestration layer routes bulk work to cheap models ([[entities/gemma-4|Gemma 4]]) and critical work to advanced models
 
 ## Google's Agent Infrastructure Stack (May 2026)
 

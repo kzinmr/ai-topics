@@ -38,7 +38,7 @@ BenchFlow provides a Dockerized execution framework for agent evaluation:
 
 - **Docker-based isolation**: Each benchmark runs in its own container, ensuring reproducible and isolated evaluation environments
 - **Standardized interfaces**: Agents interact with benchmarks through well-defined APIs and protocols
-- **Multiple benchmark support**: The framework supports running diverse benchmarks including [[skillsbench]], [[clawsbench]], and other evaluation suites
+- **Multiple benchmark support**: The framework supports running diverse benchmarks including [[concepts/ai-benchmarks/skillsbench]], [[concepts/ai-benchmarks/clawsbench]], and other evaluation suites
 - **Open-source**: Available on GitHub at benchflow-ai/benchflow for community contribution and extension
 - **Scalable execution**: Container orchestration enables parallel evaluation of multiple agents across benchmarks
 
@@ -46,14 +46,14 @@ BenchFlow provides a Dockerized execution framework for agent evaluation:
 
 - BenchFlow has enabled standardized evaluation across multiple agent benchmarks in the BenchFlow ecosystem
 - The Dockerized approach has improved reproducibility of agent evaluation results
-- The framework has been adopted to run several specialized benchmarks including [[skillsbench]] and [[clawsbench]]
+- The framework has been adopted to run several specialized benchmarks including [[concepts/ai-benchmarks/skillsbench]] and [[concepts/ai-benchmarks/clawsbench]]
 - BenchFlow addresses the infrastructure gap in [[agent-evaluation]] by providing a common execution layer
 
 ## Related Benchmarks
 
-- [[skillsbench]] — BenchFlow's benchmark for agent skill acquisition
-- [[clawsbench]] — BenchFlow's benchmark for agent recovery testing
-- [[hal-leaderboard]] — Princeton's aggregated agent leaderboard
+- [[concepts/ai-benchmarks/skillsbench]] — BenchFlow's benchmark for agent skill acquisition
+- [[concepts/ai-benchmarks/clawsbench]] — BenchFlow's benchmark for agent recovery testing
+- [[concepts/ai-benchmarks/hal-leaderboard]] — Princeton's aggregated agent leaderboard
 - Other [[agent-evaluation]] frameworks and benchmarks
 
 ## Awesome Agent Evals List
@@ -115,4 +115,4 @@ The list catalogs the emerging "environments are the new data" venture wave:
 
 ## Connections to Other Wiki Concepts
 
-BenchFlow addresses a critical infrastructure need in [[agent-evaluation]]: the ability to run agent benchmarks reproducibly and at scale. By providing Dockerized execution, it connects to broader themes in [[concepts/ai-agents]] research about standardizing how agents are tested. The framework supports the BenchFlow family of benchmarks ([[skillsbench]], [[clawsbench]]) and contributes to the ecosystem of tools needed for rigorous agent evaluation alongside efforts like [[hal-leaderboard]].
+BenchFlow addresses a critical infrastructure need in [[agent-evaluation]]: the ability to run agent benchmarks reproducibly and at scale. By providing Dockerized execution, it connects to broader themes in [[concepts/ai-agents]] research about standardizing how agents are tested. The framework supports the BenchFlow family of benchmarks ([[concepts/ai-benchmarks/skillsbench]], [[concepts/ai-benchmarks/clawsbench]]) and contributes to the ecosystem of tools needed for rigorous agent evaluation alongside efforts like [[concepts/ai-benchmarks/hal-leaderboard]].

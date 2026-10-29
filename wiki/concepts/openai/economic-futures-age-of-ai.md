@@ -108,7 +108,7 @@ The Foundation is inviting people to share perspectives on:
 - [[ai-governance]] - AI governance and policy
 - [[philanthropy]] - AI philanthropy initiatives
 - [[policy]] - AI policy and regulation
-- [[ai-safety]] - AI safety and alignment
+- [[concepts/security-and-governance/ai-safety]] - AI safety and alignment
 
 ## References
 

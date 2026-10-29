@@ -41,7 +41,7 @@ sources:
 ## Products & Platform
 
 ### Lab
-Post-training platform for building self-improving agents via [[reinforcement-learning]]. Auto-instruments coding agents (e.g., [[openai-codex-cli]], [[anthropic-claude-code]]) for RL fine-tuning. Includes hosted evaluations with 100+ open-source models and a public leaderboard. Key customers: Ramp, Zapier.
+Post-training platform for building self-improving agents via [[concepts/post-training/reinforcement-learning]]. Auto-instruments coding agents (e.g., [[openai-codex-cli]], [[anthropic-claude-code]]) for RL fine-tuning. Includes hosted evaluations with 100+ open-source models and a public leaderboard. Key customers: Ramp, Zapier.
 
 ### Environment Hub
 2,500+ open-source RL environments contributed by the community. Environments are the core primitive — they define tasks, verifiers, and reward signals for agent training.
@@ -56,7 +56,7 @@ Decentralized GPU compute marketplace enabling distributed training across globa
 | Project | Description | GitHub |
 |---------|-------------|--------|
 | **[[renderers]]** | Token-level templating for agentic RL — makes chat templates programmable Python objects | [PrimeIntellect-ai/renderers](https://github.com/PrimeIntellect-ai/renderers) |
-| **[[verifiers-rl|verifiers]]** | Verifiable RL training library with multi-turn agent support | [PrimeIntellect-ai/verifiers](https://github.com/PrimeIntellect-ai/verifiers) |
+| **[[concepts/post-training/verifiers-rl|verifiers]]** | Verifiable RL training library with multi-turn agent support | [PrimeIntellect-ai/verifiers](https://github.com/PrimeIntellect-ai/verifiers) |
 | **[[prime-rl]]** | End-to-end RL training framework built on verifiers + renderers | [PrimeIntellect-ai/prime-rl](https://github.com/PrimeIntellect-ai/prime-rl) |
 | **[[concepts/prime-agent|prime-agent]]** | Self-improving RLM-based agent harness with Continual Harness and autonomous mode | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) |
 
@@ -118,7 +118,7 @@ Released July 12, 2026, **verifiers v1** is a major overhaul of the environment 
 
 This decomposition enables **harness-agnostic task definitions** — the same taskset can run in any harness (Codex, Claude Code, custom), and the same harness can run any taskset. Designed for complex agentic tasks including coding and computer use at scale.
 
-See: [[concepts/agentic-rl]], [[concepts/evaluation]], [[verifiers-rl]]
+See: [[concepts/agentic-rl]], [[concepts/evaluation]], [[concepts/post-training/verifiers-rl]]
 
 ### Models
 - **INTELLECT-1**: 10B parameter model trained with distributed hardware (late 2024)
@@ -174,7 +174,7 @@ Collaborating with NVIDIA, vLLM, and SGLang to make `renderers` a reference stan
 
 - **[[entities/vincent-weisser|Vincent Weisser]]** ([@vincentweisser](https://x.com/vincentweisser)) — Co-founder & CEO. Building open superintelligence stack.
 - **Johannes Hagemann** — Co-founder.
-- **[[entities/will-brown|Will Brown]]** ([@willccbb](https://x.com/willccbb)) — Research. "Reward hacking." PhD Columbia (2024). Leads [[verifiers-rl|verifiers]] and [[prime-rl]]. COLT 2024.
+- **[[entities/will-brown|Will Brown]]** ([@willccbb](https://x.com/willccbb)) — Research. "Reward hacking." PhD Columbia (2024). Leads [[concepts/post-training/verifiers-rl|verifiers]] and [[prime-rl]]. COLT 2024.
 - **[[entities/florian-brand|Florian Brand]]** ([@xeophon](https://x.com/xeophon)) — Research Engineer, Evals. Editor at Interconnects (open models).
 - **[[entities/elie-bakouch|Elie Bakouch]]** ([@eliebakouch](https://x.com/eliebakouch)) — Training LLMs. Previously HuggingFace (SmolLM, FineWeb).
 - **[[entities/grad|Fares Obeid (Grad)]]** ([@Grad62304977](https://x.com/Grad62304977)) — Research Engineer. NanoGPT speedrun records, Value Residual Learning (ACL 2025), INTELLECT-3, GoldFinch.
@@ -182,11 +182,11 @@ Collaborating with NVIDIA, vLLM, and SGLang to make `renderers` a reference stan
 ## Related Pages
 
 - [[renderers]] — token-level templating library
-- [[verifiers-rl]] — verifiable RL training
+- [[concepts/post-training/verifiers-rl]] — verifiable RL training
 - [[concepts/prime-agent]] — self-improving RLM agent harness
 - [[entities/intellect-2]] — 32B reasoning model (May 2025)
-- [[reinforcement-learning]]
-- [[grpo]]
+- [[concepts/post-training/reinforcement-learning]]
+- [[concepts/post-training/grpo]]
 - [[concepts/trl-transformer-reinforcement-learning]]
 - [[comparisons/open-source-rl-libraries-comparison]]
 - [[entities/vincent-weisser]] — Co-founder & CEO

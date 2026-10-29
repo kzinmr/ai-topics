@@ -69,8 +69,8 @@ The benchmark explicitly measures harness impact — results are reported by **(
 FrontierSWE complements rather than replaces [[concepts/ai-benchmarks/swe-bench]]:
 - **SWE-Bench**: Short-horizon PR fixes on open-source repos
 - **FrontierSWE**: 20-hour ultra-long-horizon challenges in implementation, performance, and ML research
-- **[[concepts/workspace-bench]]**: Multi-file workspace navigation (74 file types, 20,476 files — different dimension of complexity)
-- **[[concepts/kernelbench]]**: Kernel-level optimization; [[concepts/yourbench]]: Human-calibrated coding; [[concepts/programbench]]: Multi-language programming
+- **[[concepts/ai-benchmarks/workspace-bench]]**: Multi-file workspace navigation (74 file types, 20,476 files — different dimension of complexity)
+- **[[concepts/ai-benchmarks/kernelbench]]**: Kernel-level optimization; [[concepts/yourbench]]: Human-calibrated coding; [[concepts/programbench]]: Multi-language programming
 
 ## Key Significance
 
@@ -79,7 +79,7 @@ FrontierSWE reveals that even frontier models remain far from saturated on hard 
 ## See Also
 
 - [[concepts/ai-benchmarks/swe-bench]] — Standard PR-level coding benchmark
-- [[concepts/workspace-bench]] — Multi-file workspace learning benchmark
+- [[concepts/ai-benchmarks/workspace-bench]] — Multi-file workspace learning benchmark
 - [[concepts/harness-engineering]] — How execution environments shape agent performance
 - [[concepts/evaluation/ai-evals]] — AI evaluation landscape overview
-- [[concepts/agent-survival-benchmark]] — Human-normalized agent benchmark
+- [[concepts/ai-benchmarks/agent-survival-benchmark]] — Human-normalized agent benchmark

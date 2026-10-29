@@ -13,10 +13,10 @@ sources:
     arxiv: "2409.11363"
     year: 2024
 related_concepts:
-  - "[[paperbench]]"
-  - "[[scienceagentbench]]"
-  - "[[re-bench]]"
-  - "[[gaia-benchmark]]"
+  - "[[concepts/ai-benchmarks/paperbench]]"
+  - "[[concepts/ai-benchmarks/scienceagentbench]]"
+  - "[[concepts/ai-benchmarks/re-bench]]"
+  - "[[concepts/ai-benchmarks/gaia-benchmark]]"
 ---
 
 # CORE-Bench
@@ -56,10 +56,10 @@ CORE-Bench is built from real research papers and their associated computational
 
 ## Related Benchmarks
 
-- **[[paperbench]]**: Tests reproduction from paper descriptions alone (building code from scratch); CORE-Bench tests reproduction from existing code repositories
-- **[[scienceagentbench]]**: Covers broader scientific analysis tasks; CORE-Bench focuses specifically on verifying published results
-- **[[re-bench]]**: Evaluates research capabilities in ML specifically; CORE-Bench spans multiple scientific domains
-- **[[gaia-benchmark]]**: Tests general assistant capabilities including some reproducibility-adjacent tasks
+- **[[concepts/ai-benchmarks/paperbench]]**: Tests reproduction from paper descriptions alone (building code from scratch); CORE-Bench tests reproduction from existing code repositories
+- **[[concepts/ai-benchmarks/scienceagentbench]]**: Covers broader scientific analysis tasks; CORE-Bench focuses specifically on verifying published results
+- **[[concepts/ai-benchmarks/re-bench]]**: Evaluates research capabilities in ML specifically; CORE-Bench spans multiple scientific domains
+- **[[concepts/ai-benchmarks/gaia-benchmark]]**: Tests general assistant capabilities including some reproducibility-adjacent tasks
 
 ## Connections to Other Wiki Concepts
 

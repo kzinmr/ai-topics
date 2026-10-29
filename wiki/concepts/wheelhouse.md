@@ -96,7 +96,7 @@ Every implementation bead follows: **Fable design → Opus implementation → Fa
 - [[concepts/land-rush-cicd]] — CI/CD pattern used in Wheelhouse
 - [[concepts/wish-factory]] — End-user feature request pattern
 - [[concepts/agentic-engineering]] — Broader engineering category
-- [[concepts/agent-orchestration]] — Orchestration patterns
+- [[concepts/multi-agents/agent-orchestration]] — Orchestration patterns
 - [[concepts/model-welfare]] — Agent well-being considerations
 
 ## Sources

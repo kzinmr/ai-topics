@@ -118,9 +118,9 @@ OpenClaw's philosophy is deeply connected to the [[concepts/local-first-software
 ## The Four "Riffs" on Decomposition
 | Framework | What it Decomposes | Monolith it Replaces | Longevity |
 |-----------|-------------------|---------------------|-----------|
-| **Late Interaction ([[entities/omar-khattab/colbert|ColBERT]])** | Document representations → sets of objects; similarity → compositional operations | Single-vector dense embeddings | 6.5+ years (2020–present) |
-| **[[entities/omar-khattab/dspy|DSPy]]** | Specification vs optimization; AI programs → symbolic modules with NL specs | Monolithic prompt debt | 3.5+ years (2023–present) |
-| **[[entities/omar-khattab/gepa|GEPA]]** | Learning signals → actual tokens + feedback (not scalar rewards) | Policy gradient RL rewards | Emerging (2025) |
+| **Late Interaction ([[concepts/colbert|ColBERT]])** | Document representations → sets of objects; similarity → compositional operations | Single-vector dense embeddings | 6.5+ years (2020–present) |
+| **[[concepts/dspy|DSPy]]** | Specification vs optimization; AI programs → symbolic modules with NL specs | Monolithic prompt debt | 3.5+ years (2023–present) |
+| **[[concepts/gepa|GEPA]]** | Learning signals → actual tokens + feedback (not scalar rewards) | Policy gradient RL rewards | Emerging (2025) |
 | **[[entities/omar-khattab/rlm|RLMs]]** | Hard problems → symbolic programs that invoke models; context → recursive access | Monolithic attention over massive contexts | Emerging (2025) |
 
 

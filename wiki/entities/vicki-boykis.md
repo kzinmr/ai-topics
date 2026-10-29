@@ -103,7 +103,7 @@ Boykis writes in a direct, practitioner-focused voice that blends technical dept
 - [[entities/gpt-oss]] — OpenAI's open-weight model she identified as the local quality inflection point
 - [[concepts/ollama]] — Another inference engine she has used
 - [[concepts/local-llm-inference]] — The broader practice of running models locally
-- [[concepts/embeddings]] — Her paper and ongoing interest in embeddings
+- [[entities/embeddings]] — Her paper and ongoing interest in embeddings
 
 ## References
 

@@ -12,7 +12,7 @@ sources:
 
 # Siri AI
 
-Siri AI is Apple's completely reimagined voice assistant, announced June 8, 2026, powered by the next generation of [[entities/apple|Apple Intelligence]]. It represents a ground-up rebuild of Siri with personal context understanding, broad world knowledge, onscreen awareness, and multimodal capabilities — all designed with Apple's privacy-first architecture.
+Siri AI is Apple's completely reimagined voice assistant, announced June 8, 2026, powered by the next generation of [[concepts/apple|Apple Intelligence]]. It represents a ground-up rebuild of Siri with personal context understanding, broad world knowledge, onscreen awareness, and multimodal capabilities — all designed with Apple's privacy-first architecture.
 
 ## Key Features
 

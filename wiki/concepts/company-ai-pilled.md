@@ -48,7 +48,7 @@ There's a difference between "using AI" and being AI-pilled. One uses a chatbot 
 ## Connection to Other Frameworks
 
 - [[concepts/reflexive-ai]] — Shopify's Tobi Lütke memo is the canonical example of "AI-pilled" in practice
-- [[entities/company-ai-pilled]] — broader organizational change theory
+- [[concepts/company-ai-pilled]] — broader organizational change theory
 - [[entities/solo-founder-stack]] — AI-pilled companies adopt solo-founder efficiency internally
 
 ## Key Signals of Being AI-Pilled
@@ -59,7 +59,7 @@ There's a difference between "using AI" and being AI-pilled. One uses a chatbot 
 4. **Cultural shift** — "using AI well is a skill that needs to be carefully learned" (Tobi Lütke)
 
 ## Related Entities
-- [[entities/company-ai-pilled]]
+- [[concepts/company-ai-pilled]]
 
 - **Khe Hy** (Khemaridh Hy) — Former Wall Street analyst, founder of Rad Reads, now running Latour AI consultancy
 - **Tobi Lütke** — Shopify CEO, author of the viral "Reflexive AI" internal memo
@@ -119,7 +119,7 @@ The bottleneck in AI adoption is not the tools — it’s **the first person wil
 Company AI Pilled is a framework advocating for **AI-driven organizational culture transformation**, not just tool adoption. The emphasis on the first person with courage and over-investment during the adoption phase serves as a practical guide for real-world enterprise AI implementation.
 
 
-## Related Concepts- [[entities/company-ai-pilled]]
+## Related Concepts- [[concepts/company-ai-pilled]]
 
 - [Reflexive AI](reflexive-ai.md) — Shopify AI adoption case study
 - [Solo Founder Stack](solo-founder-stack.md) — Solo founder AI usage

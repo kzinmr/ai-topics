@@ -114,4 +114,4 @@ Self-hosting is not automatically cheaper. The always-on infrastructure cost and
 - **[[concepts/harness-engineering]]** — The evaluation harness as the operating system for AI development
 - **[[entities/hugo-bowne-anderson]]** — Vanishing Gradients host who conducted the Maven Assistant interview
 - **[[concepts/guardrails]]** — Safety mechanisms for production AI agents
-- **[[concepts/ai-evals]]** — Evaluation methodologies for AI systems
+- **[[concepts/evaluation/ai-evals]]** — Evaluation methodologies for AI systems

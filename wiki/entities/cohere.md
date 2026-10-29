@@ -263,7 +263,7 @@ North Automations embeds within Cohere's existing **North** platform, inheriting
 
 North Automations is available to all North customers.
 
-[[concepts/agent-team-swarm]] | [[concepts/mcp]] | [[concepts/enterprise-ai]] | [[concepts/workflow-automation]]
+[[concepts/multi-agents/agent-team-swarm]] | [[concepts/mcp]] | [[concepts/enterprise-ai]] | [[concepts/workflow-automation]]
 
 **Source:** [[raw/articles/2026-07-28_cohere_introducing-north-automations-ai-workflows]]
 

@@ -17,7 +17,7 @@ arXiv:2609.40169 (Yang, Lai, Wang, Harari, Gabrilovich, Chang, 2026-09-30).
 
 ## The gap it fills
 
-Prior automated harness-evolution methods (see [[harness-learning]]) use a meta coding agent to
+Prior automated harness-evolution methods (see [[concepts/harness-learning]]) use a meta coding agent to
 rewrite the harness from execution feedback. The critique: relying on the agent's *existing
 knowledge* + *observed failures* restricts exploration and makes adaptation **reactive** — it
 only fixes what already broke.
@@ -60,7 +60,7 @@ Note the benchmark choices tie directly to the wiki's eval cluster: Tau2-Bench i
 
 ## See Also
 
-- [[harness-learning]] — RL/harness-revision predecessor this critiques
+- [[concepts/harness-learning]] — RL/harness-revision predecessor this critiques
 - [[bitter-lesson-agent-harnesses]] — why harness (not weights) is the lever
 - [[concepts/auto-research]] / [[karpathy-loop]] — self-directed optimization loops
 - [[concepts/ai-benchmarks/tau-bench]] — the benchmark family used here

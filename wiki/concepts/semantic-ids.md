@@ -52,7 +52,7 @@ Semantic IDs are a core component of the **generative retrieval** paradigm, wher
 ## Open Questions
 
 - Can Semantic IDs scale to billions of items while maintaining quality?
-- How do Semantic IDs interact with [[rag]] pipelines?
+- How do Semantic IDs interact with [[concepts/rag-systems]] pipelines?
 - What is the optimal granularity of the discrete token vocabulary?
 - Can hierarchical Semantic IDs capture multi-faceted item semantics (genre + style + recency)?
 - How do Semantic IDs compare to traditional inverted index approaches in production latency?

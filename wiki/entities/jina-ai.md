@@ -59,4 +59,4 @@ Jina AI is a search AI company founded in 2020 by **Han Xiao**, acquired by **[[
 - **Parent**: [[entities/elastic|Elastic]] (acquired Oct 2025)
 - **Founder**: Han Xiao → now VP of AI at Elastic
 - **Competitors/Peers**: [[entities/cohere|Cohere]] (embeddings), [[entities/openai|OpenAI]] (embeddings)
-- **Related concepts**: [[concepts/embeddings|Embeddings]], [[concepts/embedding-long-context-degradation|Embedding Long-Context Degradation]], [[concepts/information-retrieval|Information Retrieval]], [[concepts/mrcr|MRCR]]
+- **Related concepts**: [[entities/embeddings|Embeddings]], [[concepts/embedding-long-context-degradation|Embedding Long-Context Degradation]], [[concepts/information-retrieval|Information Retrieval]], [[concepts/mrcr|MRCR]]

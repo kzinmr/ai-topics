@@ -130,7 +130,7 @@ Tom brought a VC/investor perspective with strong opinions on infrastructure:
 
 - [[concepts/agentic-engineering]] — Eric's Marimo Pair workflow as a new agentic data science pattern; Bryan's eval-driven development as verification methodology
 - [[concepts/agentic-data-science]] — Eric Ma's two-bucket framework for agent-assisted science
-- [[concepts/ai-safety]] — Tom's supply chain paranoia and 14-day npm rule
+- [[concepts/security-and-governance/ai-safety]] — Tom's supply chain paranoia and 14-day npm rule
 - [[concepts/local-models]] — Tom's local-first agent philosophy
 - [[concepts/creative-ai]] — Hilary's agentic loops for creative vs. engineering work
 - [[entities/marimo]] — Reactive notebooks as agent substrate

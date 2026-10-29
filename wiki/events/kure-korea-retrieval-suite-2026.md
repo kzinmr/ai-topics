@@ -60,7 +60,7 @@ release is notable — it's the first suite spanning every Sentence Transformers
 
 - [[entities/tom-aarsen]] — Sentence Transformers maintainer who amplified the release.
 - [[concepts/colbert]] / [[entities/late-interaction]] — the multi-vector + MaxSim paradigm used by KURE-v2.
-- [[concepts/embeddings]] — dense embeddings; Matryoshka dimension reduction in KURE-v3.
+- [[entities/embeddings]] — dense embeddings; Matryoshka dimension reduction in KURE-v3.
 - [[concepts/neural-reranking]] — the CrossEncoder reranker stage.
 - [[entities/jo-kristian-bergum]] — fellow retrieval-infrastructure figure (Hornet/Vespa).
 

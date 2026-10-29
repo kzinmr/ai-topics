@@ -9,10 +9,10 @@ sources:
     arxiv: "2412.14161"
     year: 2024
 related_concepts:
-  - "[[crmarena-pro]]"
-  - "[[swe-bench]]"
-  - "[[mle-bench]]"
-  - "[[remote-labor-index]]"
+  - "[[concepts/ai-benchmarks/crmarena-pro]]"
+  - "[[concepts/ai-benchmarks/swe-bench]]"
+  - "[[concepts/ai-benchmarks/mle-bench]]"
+  - "[[concepts/ai-benchmarks/remote-labor-index]]"
 ---
 
 # TheAgentCompany
@@ -52,10 +52,10 @@ TheAgentCompany creates a comprehensive simulated work environment:
 
 ## Related Benchmarks
 
-- **[[crmarena-pro]]**: Evaluates agents on business scenarios using Salesforce; TheAgentCompany provides a broader workplace simulation
-- **[[swe-bench]]**: Tests software engineering tasks in isolation; TheAgentCompany embeds SWE tasks in a realistic work context
-- **[[mle-bench]]**: Focuses on ML engineering competitions; TheAgentCompany covers broader professional work
-- **[[remote-labor-index]]**: Measures automation of remote work, complementing TheAgentCompany's workplace simulation approach
+- **[[concepts/ai-benchmarks/crmarena-pro]]**: Evaluates agents on business scenarios using Salesforce; TheAgentCompany provides a broader workplace simulation
+- **[[concepts/ai-benchmarks/swe-bench]]**: Tests software engineering tasks in isolation; TheAgentCompany embeds SWE tasks in a realistic work context
+- **[[concepts/ai-benchmarks/mle-bench]]**: Focuses on ML engineering competitions; TheAgentCompany covers broader professional work
+- **[[concepts/ai-benchmarks/remote-labor-index]]**: Measures automation of remote work, complementing TheAgentCompany's workplace simulation approach
 
 ## Connections to Other Wiki Concepts
 

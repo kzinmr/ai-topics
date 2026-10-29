@@ -4,22 +4,15 @@ type: concept
 aliases:
   - evals-skills-for-coding-agents
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-10-29
 tags:
   - concept
 sources: []
-status: stub
-
+status: redirect
 ---
 
 # Evals Skills for Coding Agents
 
-> **TODO**: Enrich this page.
+> **Redirect**: This page has been merged into [[comparisons/evals-skills]].
 
-## Overview
-
-Stub page for Evals Skills for Coding Agents.
-
-## Related Pages
-
-- [[entities/_index]]
+Canonical page: [[comparisons/evals-skills]] — Evals Skills for Coding Agents.

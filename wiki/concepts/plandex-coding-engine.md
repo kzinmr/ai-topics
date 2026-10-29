@@ -22,7 +22,7 @@ sources:
 
 Plandex is a **terminal-based AI development engine** designed for large-scale, multi-file, multi-step coding tasks. Unlike single-file coding assistants (Copilot, autocomplete tools), Plandex operates at the full-project level: it can understand, plan, and implement changes across dozens of files with an effective **2M token context window**, then stage those changes in a sandbox for review before applying them.
 
-Created by **Danenania** (GitHub: @Danenania), Plandex is a top Trendshift-recognized repository with a growing community. It represents a shift toward project-scale AI coding that bridges the gap between conversational coding helpers and fully autonomous [[entities/coding-agents]] like Devin or OpenClaw.
+Created by **Danenania** (GitHub: @Danenania), Plandex is a top Trendshift-recognized repository with a growing community. It represents a shift toward project-scale AI coding that bridges the gap between conversational coding helpers and fully autonomous [[concepts/coding-agents/coding-agents]] like Devin or OpenClaw.
 
 ## Key Technical Features
 
@@ -125,11 +125,11 @@ Plandex addresses a **critical gap in the AI coding tool landscape**. The ecosys
 - **Production readiness**: Syntax validation, automated debugging, multi-model fallbacks, and version control integration make it suitable for real engineering teams — not just experimental use.
 - **Autonomy spectrum**: The configurable control levels let teams choose the right balance for each task — full automation for routine refactors, step-by-step for critical changes.
 
-As [[entities/coding-agents]] continue to evolve from novelty to production tooling, Plandex's approach of combining project-scale capability with human-centered review represents a pragmatic path forward for engineering teams that need AI power but can't sacrifice code quality or control.
+As [[concepts/coding-agents/coding-agents]] continue to evolve from novelty to production tooling, Plandex's approach of combining project-scale capability with human-centered review represents a pragmatic path forward for engineering teams that need AI power but can't sacrifice code quality or control.
 
 ## Related Concepts
 
-- [[entities/coding-agents]] — broader ecosystem of LLM-powered code-writing agents
+- [[concepts/coding-agents/coding-agents]] — broader ecosystem of LLM-powered code-writing agents
 - [[concepts/sandbox]] — isolation and safety patterns for agent code execution
 - [[concepts/in-process-sandbox]] — sandboxing within the same process (contrast with Plandex's cumulative diff approach)
 - [[concepts/agent-harness-primitives]] — how Plandex wraps models with filesystem, feedback loops, and control

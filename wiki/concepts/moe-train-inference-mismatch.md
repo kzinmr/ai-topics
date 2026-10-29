@@ -53,7 +53,7 @@ During **training**, MoE uses token-level routing where each token independently
 
 ### Inference-Time Mitigations
 
-- **Expert Parallelism (EP)**: Distributes experts across GPUs so that each GPU handles a manageable subset. [[concepts/elastic-ep]] in [[inference/sglang]] adds fault-tolerant EP for production deployments.
+- **Expert Parallelism (EP)**: Distributes experts across GPUs so that each GPU handles a manageable subset. [[concepts/elastic-ep]] in [[concepts/inference/sglang]] adds fault-tolerant EP for production deployments.
 - **Fine-grained expert parallelism**: [[concepts/deepseek-v4]]'s MegaMoE uses many small experts with fine-grained EP, improving load distribution and reducing per-expert capacity pressure.
 
 ### Combined Approach (DeepSeek)
@@ -74,12 +74,12 @@ The mismatch is fundamentally a **distribution shift** problem: routing decision
 
 ## See Also
 
-- [[rl-interview-questions-2026]]
+- [[concepts/post-training/rl-interview-questions-2026]]
 - [[concepts/mixture-of-experts]]
 - [[concepts/deepseek-v3-2]]
 - [[concepts/deepseek-v4]]
 - [[concepts/elastic-ep]]
 - [[concepts/model-quantization]]
 - [[inference/vllm]]
-- [[inference/sglang]]
+- [[concepts/inference/sglang]]
 - [[raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report]]

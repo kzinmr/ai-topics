@@ -31,7 +31,7 @@ Anthropic launched **Claude Managed Agents** in public beta (April 2026):
 - Provides a platform-level orchestration layer for running Claude agents
 - Designed for enterprises to integrate agents into their products without managing infrastructure
 - Memory capability added for persistent context across sessions
-- Represents the **L4 Engineering Team** level in the [[concepts/harness-engineering/agent-team-swarm]] taxonomy
+- Represents the **L4 Engineering Team** level in the [[concepts/multi-agents/agent-team-swarm]] taxonomy
 
 **Architecture:**
 - Tool definitions via JSON schema
@@ -134,7 +134,7 @@ See [[concepts/agentic-engineering]] for the parallel developer-workflow perspec
 ## Related Concepts
 - [[concepts/harness-engineering]] — Parent concept: Agent = Model + Harness
 - [[concepts/agentic-engineering]] — Developer workflows for using agents
-- [[concepts/harness-engineering/agent-team-swarm]] — Multi-agent orchestration patterns
+- [[concepts/multi-agents/agent-team-swarm]] — Multi-agent orchestration patterns
 - [[entities/anthropic]] — Claude Managed Agents platform
 - [[entities/openai]] — Symphony orchestration platform
 - [[entities/cursor-3]] — AI-powered IDE (safety incident case study)

@@ -69,7 +69,7 @@ The community has developed custom forks for advanced features:
 
 ## Related Concepts
 
-- [[entities/mac-studio-local-ai]] — Mac Studio hardware setup for local inference
+- [[concepts/mac-studio-local-ai]] — Mac Studio hardware setup for local inference
 - [[concepts/gguf]] — 4-bit and dynamic quantization techniques
 - [[concepts/mixture-of-experts]] — Mixture-of-Experts model design
 - [[concepts/llama-cpp]] — Cross-platform inference engine alternative

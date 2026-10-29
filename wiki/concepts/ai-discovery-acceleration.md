@@ -42,7 +42,7 @@ METR lists four drivers for the lumpy pattern:
 
 ## Why it matters
 - **Policy / capability forecasting**: acceleration is domain-specific, so "time horizon to AGI" or "when will X be solved" estimates must be domain-conditional.
-- **Security**: the exploited-vs-known vulnerability gap means the attack surface is growing faster than defenders are patching — a [[concepts/ai-safety]] and [[concepts/cybersecurity]] concern.
+- **Security**: the exploited-vs-known vulnerability gap means the attack surface is growing faster than defenders are patching — a [[concepts/security-and-governance/ai-safety]] and [[concepts/cybersecurity]] concern.
 - **Evals methodology**: measuring "discovery" velocity requires domain-appropriate baselines (pre-existing problem lists, record-setting benchmarks), not a single universal metric.
 
 ## Related Pages

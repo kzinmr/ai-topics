@@ -61,7 +61,7 @@ Debian's GR is part of a wider trend of open-source communities grappling with A
 
 ## Related Concepts
 
-- [[concepts/ai-safety]] — the safety implications of LLM-generated code in critical infrastructure
+- [[concepts/security-and-governance/ai-safety]] — the safety implications of LLM-generated code in critical infrastructure
 - [[concepts/open-source-licensing]] — the unsettled legal status of AI-generated code copyright
 - [[concepts/ai-assisted-development]] — the practical reality of developers already using LLMs daily
 - [[concepts/ai-governance]] — broader governance frameworks for AI in organizations

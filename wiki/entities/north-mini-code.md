@@ -87,4 +87,4 @@ Trained on multiple scaffolds (SWE-Agent, mini-SWE-Agent, OpenCode, Terminus 2) 
 - [[concepts/mixture-of-experts]] — MoE architecture
 - [[concepts/ai-benchmarks/swe-bench]] — Key evaluation benchmark
 - [[concepts/agentic-engineering]] — Agentic coding paradigm
-- [[concepts/rlm]] — Reinforcement Learning from Execution Feedback (related RLVR approach)
+- [[entities/omar-khattab/rlm]] — Reinforcement Learning from Execution Feedback (related RLVR approach)

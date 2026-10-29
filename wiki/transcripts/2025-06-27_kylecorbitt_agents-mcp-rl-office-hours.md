@@ -199,8 +199,8 @@ For **high volume** (thousands per week):
 ## Related
 
 - [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering: From MCP to RL]]
-- [[concepts/reward-hacking]]
-- [[concepts/grpo-rl-training]]
+- [[concepts/evaluation/reward-hacking]]
+- [[concepts/post-training/grpo-rl-training]]
 - [[concepts/agentic-rl]]
 - [[concepts/context-engineering]]
 - [[concepts/corbett-kyle-corbitt]]

@@ -65,6 +65,6 @@ Tool-specific pages: [[concepts/claude-code|Claude Code]], [[concepts/codex|Code
 - [[concepts/coding-agents/ramp-inspect]] — Ramp Inspect
 - [[concepts/coding-agents/pi-autoresearch]] — pi-autoresearch
 - [[concepts/coding-agents/mandate-equinox]] — Mandate Equinox
-- [[concepts/coding-agents/bernstein]] — Bernstein (multi-agent orchestrator)
+- [[entities/bernstein]] — Bernstein (multi-agent orchestrator)
 - [[concepts/coding-agents/codeact]] — CodeAct
 - [[concepts/coding-agents/hf-cli]] — Hugging Face CLI

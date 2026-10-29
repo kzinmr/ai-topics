@@ -16,7 +16,7 @@ sources:
 related:
   - "[[concepts/harness-engineering/agent-harness]]"
   - "[[concepts/mcp]]"
-  - "[[concepts/claude-code/claude-code]]"
+  - "[[entities/claude-code]]"
   - "[[entities/codex]]"
 ---
 

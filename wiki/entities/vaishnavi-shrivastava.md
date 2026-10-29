@@ -20,7 +20,7 @@ aliases:
 
 # Vaishnavi Shrivastava
 
-Researcher at **Microsoft Research, AI Frontiers**. Primary author of [[echo-rl|ECHO]], a method for training CLI agents that learns world models from terminal environment responses during RL.
+Researcher at **Microsoft Research, AI Frontiers**. Primary author of [[concepts/post-training/echo-rl|ECHO]], a method for training CLI agents that learns world models from terminal environment responses during RL.
 
 - **X/Twitter**: [@VaishShrivas](https://x.com/VaishShrivas)
 - **Affiliation**: Microsoft Research AI Frontiers
@@ -53,6 +53,6 @@ Work done at **AI Frontiers**, a boutique research lab inside Microsoft Research
 - [[entities/dimitris-papailiopoulos]] — co-author
 - [[entities/piero-kauffmann]] — RL infrastructure co-author
 - [[entities/ahmed-awadallah]] — MSR AI Frontiers research lead
-- [[echo-rl]] — the ECHO training method
+- [[concepts/post-training/echo-rl]] — the ECHO training method
 - [[entities/microsoft-ai-frontiers]] — research lab
 - [[concepts/world-models-for-agents]] — world models in agent training

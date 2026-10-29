@@ -93,7 +93,7 @@ Apertus differentiates itself from other prominent open-source AI initiatives:
 - [[concepts/open-source-ai]] — Open-source strategy in AI development
 - [[concepts/eu-ai-act]] — European Union AI regulation framework
 - [[concepts/model-distillation]] — Techniques for compressing large models into smaller ones
-- [[entities/apertus]] — The organization behind the Apertus model
+- [[concepts/apertus]] — The organization behind the Apertus model
 
 ## Overview
 The Apertus project releases foundation models at 8B and 70B parameter scales, along with 16 smaller models for distillation and quantization research. All components — training data, code, weights, methods, and alignment principles — are fully documented and released openly.

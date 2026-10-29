@@ -44,7 +44,7 @@ A good harness shapes each call to the underlying Transformer so that every obse
 > "A good harness is a harness that *reduces unfamiliar problems to familiar ones* and *reduces complex problems to simple ones*."
 > — Zhang & Khattab (2026)
 
-**Why existing harnesses fail at LID:** Claude Code and Codex fundamentally rely on flooding the context window with interleaved task-specific information, tool call outputs, and reasoning that get continuously appended. This causes **[[concepts/context-rot|context rot]]** — bloated histories quickly fall out of the training distribution.
+**Why existing harnesses fail at LID:** Claude Code and Codex fundamentally rely on flooding the context window with interleaved task-specific information, tool call outputs, and reasoning that get continuously appended. This causes **[[concepts/context-engineering/context-rot|context rot]]** — bloated histories quickly fall out of the training distribution.
 
 ### Harness-Induced Equivalence Classes
 
@@ -105,6 +105,6 @@ The argument is NOT to impose problem-specific programmatic strategies (which wo
 - [[entities/omar-khattab/rlm]] — RLM as Khattab's research program
 - [[entities/alex-zhang]] — First author
 - [[concepts/mismanaged-geniuses-hypothesis]] — MGH thesis
-- [[concepts/context-rot]] — Why naive harnesses fail
+- [[concepts/context-engineering/context-rot]] — Why naive harnesses fail
 - [[concepts/bitter-lesson]] — Scaling vs. design tension
 - [[entities/omar-khattab]] — Co-author

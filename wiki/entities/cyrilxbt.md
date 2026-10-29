@@ -40,5 +40,5 @@ A comprehensive X Article covering the complete methodology for organizing Obsid
 
 - [[concepts/llm-augmented-knowledge-retrieval]] — the broader concept of LLM-augmented personal knowledge management
 - [[concepts/mcp]] — Model Context Protocol, the integration mechanism used
-- [[concepts/claude-code/claude-code]] — the specific tool used for vault interaction
+- [[entities/claude-code]] — the specific tool used for vault interaction
 - [[concepts/karpathy]] — originator of the LLM Wiki concept

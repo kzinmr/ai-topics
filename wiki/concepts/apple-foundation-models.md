@@ -169,7 +169,7 @@ Server-side architecture building on 2025 foundation. Key upgrades stabilize tra
 - [[concepts/local-llm/_index]] — Local LLM deployment patterns and ecosystem
 - [[concepts/on-device-rag]] — On-device AI concepts and trade-offs
 - [[entities/anthropic]] — Anthropic, creator of Claude models
-- [[concepts/claude-code/claude-code]] — Claude development ecosystem
+- [[entities/claude-code]] — Claude development ecosystem
 - [[concepts/on-device-rag]] — On-device AI and retrieval patterns
 
 ## Sources

@@ -46,9 +46,9 @@ reuse, avoiding premature eviction before reuse.
 ## Why it matters
 
 - The concrete **OS/systems** instantiation of the harness↔serving-stack interface problem the
-  wiki keeps circling (see [[harness-engineering]], [[context-management]]). LRU is *recency*;
+  wiki keeps circling (see [[concepts/harness-engineering]], [[context-management]]). LRU is *recency*;
   agents need *semantic lifecycle* — a genuinely new eviction signal.
-- Directly reduces the cost of long-context agents, tying to [[token-economics]] and the
+- Directly reduces the cost of long-context agents, tying to [[concepts/token-economics]] and the
   [[attention-bottleneck]] concern (managing what stays resident, not just how much).
 - Sits at the same serving layer as [[specscale-speculative-search-serving]] but on the memory
   axis; orthogonal and likely stackable.
@@ -63,6 +63,6 @@ reuse, avoiding premature eviction before reuse.
 ## See Also
 
 - [[kv-cache]] — the underlying mechanism
-- [[harness-engineering]] — the harness layer KVTether instruments
-- [[token-economics]] — cost of resident KV / prefill
+- [[concepts/harness-engineering]] — the harness layer KVTether instruments
+- [[concepts/token-economics]] — cost of resident KV / prefill
 - [[specscale-speculative-search-serving]] — sibling serving-layer optimization

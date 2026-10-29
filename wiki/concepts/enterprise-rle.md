@@ -73,6 +73,6 @@ This extends frontier AI diffusion beyond first-party products into the broader 
 ## See Also
 
 - [[entities/microsoft-ai-team]] — Microsoft AI team and MAI model family
-- [[concepts/reinforcement-learning]] — RL fundamentals
+- [[concepts/post-training/reinforcement-learning]] — RL fundamentals
 - [[concepts/hill-climbing]] — Hill-climbing as an optimization paradigm
 - [[concepts/model-routing]] — Routing traffic to optimal models by task

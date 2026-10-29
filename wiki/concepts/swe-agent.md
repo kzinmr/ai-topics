@@ -15,7 +15,7 @@ tags:
 related:
   - "[[concepts/agent-harnesses]]"
   - "[[concepts/harness-engineering]]"
-  - "[[concepts/swe-bench]]"
+  - "[[concepts/ai-benchmarks/swe-bench]]"
 sources:
   - https://arxiv.org/abs/2405.15793
   - https://github.com/SWE-agent/SWE-agent
@@ -51,14 +51,14 @@ Docker container with the repo + tests
 
 | Tool | Relationship |
 |------|-------------|
-| [[concepts/swe-bench]] | Same group's benchmark; SWE-agent is its reference agent |
+| [[concepts/ai-benchmarks/swe-bench]] | Same group's benchmark; SWE-agent is its reference agent |
 | mini-swe-agent | Minimal successor harness, standard research control |
 | SWE-bench Verified | Human-validated subset that most 2026 model claims cite |
 | Claude Code / Codex | Production harnesses that adopted ACI-like patterns (line-numbered reads, exact-match edits) |
 
 ## Related Concepts
 
-- [[concepts/swe-bench]] — the benchmark
+- [[concepts/ai-benchmarks/swe-bench]] — the benchmark
 - [[concepts/agent-harnesses]] / [[concepts/harness-engineering]] — the design discipline it founded
 - [[concepts/cadence-strategic-guidance-coding-agents]] — 2026 research using mini-swe-agent as testbed
 - [[concepts/agent-first-codebase-design]] — downstream idea: design software for agents to operate

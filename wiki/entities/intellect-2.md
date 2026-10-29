@@ -20,7 +20,7 @@ sources:
 
 # INTELLECT-2
 
-A 32-billion parameter reasoning model by [[entities/prime-intellect|Prime Intellect]] — the **first globally distributed RL training run** of a model at this scale. Trained via fully asynchronous [[grpo|GRPO]] across a permissionless, heterogeneous swarm of compute contributors.
+A 32-billion parameter reasoning model by [[entities/prime-intellect|Prime Intellect]] — the **first globally distributed RL training run** of a model at this scale. Trained via fully asynchronous [[concepts/post-training/grpo|GRPO]] across a permissionless, heterogeneous swarm of compute contributors.
 
 | Fact | Detail |
 |------|--------|
@@ -92,8 +92,8 @@ INTELLECT-2 proves that **decentralized RL training at scale is viable**:
 - [[entities/grad|Fares Obeid (Grad)]] — co-author
 - [[entities/florian-brand|Florian Brand]] — PRIME-RL contributor
 - [[entities/will-brown|Will Brown]] — verifiers/prime-rl creator
-- [[grpo]] — training algorithm
-- [[reinforcement-learning]]
+- [[concepts/post-training/grpo]] — training algorithm
+- [[concepts/post-training/reinforcement-learning]]
 - [[distributed-training]]
-- [[verifiers-rl]]
+- [[concepts/post-training/verifiers-rl]]
 - [[renderers]]

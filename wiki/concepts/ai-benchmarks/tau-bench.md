@@ -17,9 +17,9 @@ sources:
   - raw/articles/2026-09-09_sierra_hyper-tau-bench-agents-that-build-agents.md
 related:
   - "[[entities/shunyu-yao]]"
-  - "[[concepts/tau-squared-bench]]"
-  - "[[concepts/tau-knowledge]]"
-  - "[[concepts/tau-voice]]"
+  - "[[concepts/ai-benchmarks/tau-squared-bench]]"
+  - "[[concepts/ai-benchmarks/tau-knowledge]]"
+  - "[[concepts/ai-benchmarks/tau-voice]]"
   - "[[concepts/evaluation/pass-k-metric]]"
 ---
 
@@ -256,12 +256,12 @@ Common to both is the methodology of "visualizing AI's true capability limits by
 ## Related Pages
 
 - [[entities/shunyu-yao]] — τ-bench's creator. All achievements including ReAct, SWE-bench, "The Second Half"
-- [[concepts/tau-squared-bench]] — τ²-bench: Dual control evaluation details
-- [[concepts/tau-knowledge]] — τ-Knowledge: Unstructured knowledge navigation evaluation details
-- [[concepts/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation details
+- [[concepts/ai-benchmarks/tau-squared-bench]] — τ²-bench: Dual control evaluation details
+- [[concepts/ai-benchmarks/tau-knowledge]] — τ-Knowledge: Unstructured knowledge navigation evaluation details
+- [[concepts/ai-benchmarks/tau-voice]] — τ-Voice: Full-duplex voice agent evaluation details
 - [[concepts/evaluation/pass-k-metric]] — pass^k metric detailed explanation
 - [[concepts/ai-benchmarks/hyper-tau-bench]] — 4th generation (Sep 2026): recursive agent-building benchmark, developer reward hacking
-- [[concepts/swe-bench]] — Yao's other representative benchmark
+- [[concepts/ai-benchmarks/swe-bench]] — Yao's other representative benchmark
 
 ---
 

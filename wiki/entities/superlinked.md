@@ -62,7 +62,7 @@ Superlinked also maintains **VectorHub**, a toolkit for comparing and integratin
 - [[entities/sie-superlinked-inference-engine]] — Deep-dive on SIE architecture and multi-model GPU coordination
 - [[concepts/inference/vllm]] — vLLM, the PagedAttention-based LLM serving engine SIE complements for multi-model workloads
 - [[concepts/inference/tgi]] — Hugging Face Text Embeddings Inference, which SIE can replace for unified serving
-- [[concepts/embeddings]] — Single-vector embedding models and their role in RAG pipelines
+- [[entities/embeddings]] — Single-vector embedding models and their role in RAG pipelines
 - [[concepts/retrieval-augmented-generation]] — Retrieval-Augmented Generation, a core use case for Superlinked's infrastructure
 
 ## Sources

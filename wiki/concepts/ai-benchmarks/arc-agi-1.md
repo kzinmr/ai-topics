@@ -74,7 +74,7 @@ Xeophon contextualizes ARC-AGI-1 as a "classic" benchmark that fundamentally red
 
 ## ARC-AGI-1 vs ARC-AGI-2: Key Differences
 
-While [[concepts/arc-agi-2]] builds on the same fundamental principles, there are critical differences:
+While [[concepts/ai-benchmarks/arc-agi-2]] builds on the same fundamental principles, there are critical differences:
 
 | Aspect | ARC-AGI-1 | ARC-AGI-2 |
 |--------|-----------|-----------|
@@ -118,8 +118,8 @@ This definition separates intelligence from:
 ## Related Pages
 
 - [[concepts/evaluation/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
-- [[concepts/arc-agi-2|ARC-AGI-2]] — The successor benchmark (released 2025)
-- [[concepts/hle|Humanity's Last Exam]] — Another benchmark designed to resist memorization
+- [[concepts/ai-benchmarks/arc-agi-2|ARC-AGI-2]] — The successor benchmark (released 2025)
+- [[concepts/ai-benchmarks/hle|Humanity's Last Exam]] — Another benchmark designed to resist memorization
 
 ## Sources
 

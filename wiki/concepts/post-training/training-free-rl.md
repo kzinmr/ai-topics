@@ -148,9 +148,9 @@ Rather than making TTS training-free, the complementary approach is to **train m
 ## Related Pages
 
 - [[concepts/test-time-scaling]] — The broader TTS landscape (CoT, self-consistency, beam search, RL-trained reasoning)
-- [[reinforcement-learning]] — RL fundamentals (PPO, GRPO, reward design)
-- [[grpo]] — Group Relative Policy Optimization
-- [[rlvr]] — RL with Verifiable Rewards
+- [[concepts/post-training/reinforcement-learning]] — RL fundamentals (PPO, GRPO, reward design)
+- [[concepts/post-training/grpo]] — Group Relative Policy Optimization
+- [[concepts/post-training/rlvr]] — RL with Verifiable Rewards
 - [[concepts/self-evolving-agents]] — Reflexion, self-play, self-distillation
 - [[on-policy-distillation]] — SDFT, SDPO as the "other direction"
 - [[concepts/chain-of-thought]] — The substrate for all TTS methods

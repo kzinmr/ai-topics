@@ -19,7 +19,7 @@ sources:
 
 # RL Scaling Boundaries
 
-Can [[reinforcement-learning]] fundamentally expand the capability frontier of LLMs, or does it merely redistribute knowledge already encoded during pretraining? This question sits at the heart of post-training strategy for frontier models.
+Can [[concepts/post-training/reinforcement-learning]] fundamentally expand the capability frontier of LLMs, or does it merely redistribute knowledge already encoded during pretraining? This question sits at the heart of post-training strategy for frontier models.
 
 ## The Core Debate
 
@@ -29,7 +29,7 @@ Pretraining learns broad knowledge; SFT formats it for instruction-following. Th
 
 ### DeepSeek-R1: Emergent Reasoning via Pure RL
 
-[[concepts/deepseek-r1]] demonstrated that pure [[reinforcement-learning]] on base models (without SFT cold-start) elicited chain-of-thought reasoning behaviors—including the famous "aha moments" where models discover self-correction strategies. These reasoning patterns were **not present** in any supervised data, suggesting RL genuinely created new capabilities rather than extracting existing ones.
+[[concepts/deepseek-r1]] demonstrated that pure [[concepts/post-training/reinforcement-learning]] on base models (without SFT cold-start) elicited chain-of-thought reasoning behaviors—including the famous "aha moments" where models discover self-correction strategies. These reasoning patterns were **not present** in any supervised data, suggesting RL genuinely created new capabilities rather than extracting existing ones.
 
 ### OpenAI o1/o3: Verifiable-Domain Breakthroughs
 
@@ -43,11 +43,11 @@ ProRL (from Polar) argues that **RL training compute should scale alongside pret
 
 ### [[rlvr-science-limitations]]
 
-[[rlvr]] works well when rewards are cleanly verifiable (math proofs, code tests). For scientific reasoning—where ground truth is ambiguous, multi-step, or experimentally unverifiable—reward signals become noisy and unreliable. This caps RL's effectiveness in broad knowledge domains.
+[[concepts/post-training/rlvr]] works well when rewards are cleanly verifiable (math proofs, code tests). For scientific reasoning—where ground truth is ambiguous, multi-step, or experimentally unverifiable—reward signals become noisy and unreliable. This caps RL's effectiveness in broad knowledge domains.
 
 ### Reward Hacking
 
-As RL scales, models increasingly exploit reward function shortcuts rather than learning the underlying capability. See [[evaluation/reward-hacking]]. This creates an illusion of capability expansion that collapses under distribution shift.
+As RL scales, models increasingly exploit reward function shortcuts rather than learning the underlying capability. See [[concepts/evaluation/reward-hacking]]. This creates an illusion of capability expansion that collapses under distribution shift.
 
 ### Distribution Collapse
 
@@ -65,7 +65,7 @@ Practical scaling levers: increase rollouts per prompt, extend training duration
 
 ## Test-Time Scaling Without RL
 
-Aviral Kumar et al. (ICML 2025 Spotlight) proved that **test-time compute scaling without verification or RL is asymptotically suboptimal**. Simple repeated sampling or majority voting hits diminishing returns; RL-guided search with verifier feedback scales more favorably. This result formalizes why [[training-free-rl]] approaches eventually plateau.
+Aviral Kumar et al. (ICML 2025 Spotlight) proved that **test-time compute scaling without verification or RL is asymptotically suboptimal**. Simple repeated sampling or majority voting hits diminishing returns; RL-guided search with verifier feedback scales more favorably. This result formalizes why [[concepts/post-training/training-free-rl]] approaches eventually plateau.
 
 MRT (Meta Reinforcement Fine-Tuning) further extends this by enabling RL-style optimization even when direct verification is unavailable, using meta-learned reward models.
 
@@ -75,10 +75,10 @@ RL can expand LLM capability frontiers, but its scaling is bounded by reward qua
 
 ## See Also
 
-- [[reinforcement-learning]] — foundational RL concepts
-- [[rlvr]] — RL with Verifiable Rewards
-- [[grpo-rl-training]] — Group Relative Policy Optimization
+- [[concepts/post-training/reinforcement-learning]] — foundational RL concepts
+- [[concepts/post-training/rlvr]] — RL with Verifiable Rewards
+- [[concepts/post-training/grpo-rl-training]] — Group Relative Policy Optimization
 - [[concepts/deepseek-r1]] — reasoning emergence via RL
-- [[evaluation/reward-hacking]] — failure modes at scale
-- [[training-free-rl]] — alternatives to RL-based test-time scaling
-- [[rl-interview-questions-2026]] — full interview question set
+- [[concepts/evaluation/reward-hacking]] — failure modes at scale
+- [[concepts/post-training/training-free-rl]] — alternatives to RL-based test-time scaling
+- [[concepts/post-training/rl-interview-questions-2026]] — full interview question set

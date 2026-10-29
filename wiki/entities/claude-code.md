@@ -513,7 +513,7 @@ Shopify targets 90% autonomous coding by Q3 2026 with 23,000 engineers working t
 - [[entities/anthropic]] — Anthropic
 - [[concepts/harness-engineering/agentic-design-patterns]] — Agentic design patterns
 - [[entities/farhan-thawar]] — Farhan Thawar (VP Engineering, Shopify)
-- [[entities/coding-agents]] — Coding agents ecosystem overview
+- [[concepts/coding-agents/coding-agents]] — Coding agents ecosystem overview
 
 
 ## Claude Code Team Insights (July 2026)

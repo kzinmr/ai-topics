@@ -276,11 +276,11 @@ SWE-Bench Verified was originally created as part of OpenAI's **Preparedness Fra
 - [[concepts/evaluation/ai-benchmarks-and-evals|AI Benchmarks & Evals Overview]] — @xeophon's 18-part benchmark analysis series
 - [[concepts/ai-benchmarks/frontier-swe-benchmark|FrontierSWE Benchmark]] — Ultra-long-horizon coding benchmark (20 hours per task)
 - [[concepts/harness-engineering|Harness Engineering]] — How execution environments shape agent performance
-- [[concepts/hle|Humanity's Last Exam]] — Another benchmark experiencing rapid score inflation
+- [[concepts/ai-benchmarks/hle|Humanity's Last Exam]] — Another benchmark experiencing rapid score inflation
 
 ## See Also
 
-- [[concepts/arc-agi-1|ARC-AGI-1]] — Another benchmark with dramatic historical score progression toward saturation
+- [[concepts/ai-benchmarks/arc-agi-1|ARC-AGI-1]] — Another benchmark with dramatic historical score progression toward saturation
 - [[concepts/factorio-learning-environment|Factorio Learning Environment]] — Agent-based evaluation in a different domain (game-based factory automation)
 
 ## Sources

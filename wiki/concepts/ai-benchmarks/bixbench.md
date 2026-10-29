@@ -9,10 +9,10 @@ sources:
     arxiv: "2503.00096"
     year: 2025
 related_concepts:
-  - "[[scienceagentbench]]"
-  - "[[re-bench]]"
+  - "[[concepts/ai-benchmarks/scienceagentbench]]"
+  - "[[concepts/ai-benchmarks/re-bench]]"
   - "[[lifescibench]]"
-  - "[[deepresearch-bench]]"
+  - "[[concepts/ai-benchmarks/deepresearch-bench]]"
 ---
 
 # BixBench
@@ -52,10 +52,10 @@ BixBench is constructed from authentic computational biology workflows:
 
 ## Related Benchmarks
 
-- **[[scienceagentbench]]**: Covers scientific discovery across multiple domains; BixBench provides deep evaluation specifically for computational biology
+- **[[concepts/ai-benchmarks/scienceagentbench]]**: Covers scientific discovery across multiple domains; BixBench provides deep evaluation specifically for computational biology
 - **[[lifescibench]]**: Another life sciences benchmark with different task formulations and scope
-- **[[re-bench]]**: Tests ML research tasks; BixBench evaluates biology-specific computational research
-- **[[deepresearch-bench]]**: Tests research capabilities that complement BixBench's focus on biological data analysis
+- **[[concepts/ai-benchmarks/re-bench]]**: Tests ML research tasks; BixBench evaluates biology-specific computational research
+- **[[concepts/ai-benchmarks/deepresearch-bench]]**: Tests research capabilities that complement BixBench's focus on biological data analysis
 
 ## Connections to Other Wiki Concepts
 

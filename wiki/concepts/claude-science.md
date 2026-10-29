@@ -51,4 +51,4 @@ Claude Science is available on Pro, Max, Team, and Enterprise plans. Academic an
 - [[entities/modal-labs]] — Cloud compute partner providing scalable GPU infrastructure
 - [[concepts/claude/fable-5]] — Claude model capabilities that power the scientific workbench
 - [[concepts/computer-use]] — Anthropic's computer interaction paradigm, extended here for scientific computing
-- [[concepts/claude-code/claude-code]] — Claude Code, Anthropic's coding agent with overlapping tool-use patterns
+- [[entities/claude-code]] — Claude Code, Anthropic's coding agent with overlapping tool-use patterns

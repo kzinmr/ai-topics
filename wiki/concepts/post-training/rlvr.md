@@ -35,7 +35,7 @@ Unlike RLHF (which uses a learned reward model from human preferences), RLVR's r
 
 ## RLVR + GRPO: The Standard Pairing
 
-RLVR and [[grpo|GRPO (Group Relative Policy Optimization)]] are complementary:
+RLVR and [[concepts/post-training/grpo|GRPO (Group Relative Policy Optimization)]] are complementary:
 
 | Component | RLVR | GRPO |
 |-----------|------|------|

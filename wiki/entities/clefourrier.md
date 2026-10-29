@@ -248,7 +248,7 @@ Fourrier's work consistently emphasizes **openness, transparency, and reproducib
 
 - [[lighteval]] — Open-source LLM evaluation toolkit from Hugging Face
 - [[concepts/evaluation/open-llm-leaderboard]] — Community-standard ranking of open language models
-- [[gaia-benchmark]] — Benchmark for General AI Assistants (Meta × Hugging Face × AutoGPT)
+- [[concepts/ai-benchmarks/gaia-benchmark]] — Benchmark for General AI Assistants (Meta × Hugging Face × AutoGPT)
 - [[concepts/llm-evaluation]] — Methodology for assessing language model capabilities
 - [[concepts/bloom]] — 176B-parameter open-access multilingual language model (BigScience)
 - [[concepts/zephyr]] — 7B chat model via direct distillation of LM alignment

@@ -13,7 +13,7 @@ aliases:
 related:
   - [[entities/anthropic]]
   - [[entities/daniela-amodei]]
-  - [[concepts/ai-safety]]
+  - [[concepts/security-and-governance/ai-safety]]
   - [[concepts/ai-economics]]
 sources:
   - https://en.wikipedia.org/wiki/Dario_Amodei
@@ -83,7 +83,7 @@ A comprehensive governance framework arguing that AI is advancing far faster tha
 
 ## Related Concepts
 - [[concepts/ai-economics]]
-- [[concepts/ai-safety]]
+- [[concepts/security-and-governance/ai-safety]]
 - [[concepts/ai-policy]]
 
 ## Sources

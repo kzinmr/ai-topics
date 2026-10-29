@@ -22,7 +22,7 @@ Mixture of Agents is an architecture pattern where multiple LLM instances collab
 
 ## Overview
 
-MoA sits at the intersection of [[multi-agent-systems]], model [[concepts/inference]] ensembles, and layered LLM architectures. The key insight is that aggregating at the reasoning-trace level rather than the answer level unlocks a form of cross-agent complementarity: different agents (or differently-perturbed runs of the same model) may each contribute partial correct insights, and a capable aggregator can assemble these fragments into a solution no single agent produced.
+MoA sits at the intersection of [[concepts/multi-agents/multi-agent-systems]], model [[concepts/inference]] ensembles, and layered LLM architectures. The key insight is that aggregating at the reasoning-trace level rather than the answer level unlocks a form of cross-agent complementarity: different agents (or differently-perturbed runs of the same model) may each contribute partial correct insights, and a capable aggregator can assemble these fragments into a solution no single agent produced.
 
 Two complementary formulations of MoA have emerged:
 
@@ -85,7 +85,7 @@ Key implementation considerations include aggregator capability (must be strong 
 ## Related Topics
 
 - [[concepts/mixture-of-experts]]: Token-level expert routing within a single model during forward pass
-- [[multi-agent-systems]]: Broader class of systems where multiple agents collaborate, of which MoA is a specific aggregation architecture
+- [[concepts/multi-agents/multi-agent-systems]]: Broader class of systems where multiple agents collaborate, of which MoA is a specific aggregation architecture
 - [[concepts/chain-of-thought]]: Individual reasoning traces are the unit of aggregation in MoA
 - [[concepts/small-language-models]]: Key enabler for cost-effective heterogeneous MoA deployments
 - [[concepts/reasoning-models]]: Self-Consistent MoA shows strong results on structured reasoning benchmarks

@@ -33,7 +33,7 @@ The approach, as described by Laurentiu Raducu (2026), follows a deliberate mult
 
 4. **Deployment and Interaction**: The simulation is deployed (e.g., via GitHub Pages), allowing the learner to interact with, pause, replay, and internalize the process at their own pace.
 
-5. **Extension and Self-Testing**: Advanced practitioners add challenges, puzzles, and self-testing mechanisms to the simulation, transforming it from a passive visualization into an active [[ai-education]] tool that verifies retention.
+5. **Extension and Self-Testing**: Advanced practitioners add challenges, puzzles, and self-testing mechanisms to the simulation, transforming it from a passive visualization into an active [[concepts/ai-education]] tool that verifies retention.
 
 ## Comparison with Traditional Learning Methods
 
@@ -54,7 +54,7 @@ Unlike [[learning-llms-in-2025]], which focuses on curated academic curricula fo
 LLMs never tire of re-explaining concepts, trying different analogies, or answering follow-up questions. This contrasts sharply with human tutors, time-limited courses, and static documentation.
 
 ### Customizable Explanation Depth
-The learner can dynamically adjust the level of detail — from ELI5 summaries to graduate-level technical depth — within a single session. This is akin to [[prompt-engineering]] for educational purposes, where the prompt controls the abstraction layer.
+The learner can dynamically adjust the level of detail — from ELI5 summaries to graduate-level technical depth — within a single session. This is akin to [[concepts/prompt-engineering]] for educational purposes, where the prompt controls the abstraction layer.
 
 ### Analogical Flexibility
 LLMs excel at generating diverse analogies. When one metaphor fails to click, the model can immediately produce alternatives until the concept maps correctly onto the learner's existing mental frameworks.
@@ -74,17 +74,17 @@ The default LLM explanatory style tends toward excessive simplification and emoj
 Simulations, however detailed, cannot fully capture the tacit, embodied knowledge that comes from hands-on practice. A chip fabrication simulation teaches the process flow but not the physical intuition of a fab engineer.
 
 ### Surface-Level Understanding Risk
-Without rigorous self-testing (step 5), learners may mistake familiarity with the simulation for deep understanding. [[chain-of-thought]] reasoning techniques can help, but only if the learner actively engages rather than passively watches.
+Without rigorous self-testing (step 5), learners may mistake familiarity with the simulation for deep understanding. [[concepts/chain-of-thought]] reasoning techniques can help, but only if the learner actively engages rather than passively watches.
 
 ### Tool Dependency
 The methodology requires proficiency with LLM coding tools (Claude Code, OpenCode, etc.) and deployment infrastructure (GitHub Pages), creating a barrier for non-technical learners.
 
 ## Related Concepts
 
-- [[ai-education]] — Broader landscape of AI in educational contexts
+- [[concepts/ai-education]] — Broader landscape of AI in educational contexts
 - [[learning-llms-in-2025]] — Curated academic approach to learning about LLMs (complementary domain)
-- [[prompt-engineering]] — The prompting techniques that underpin effective LLM-assisted learning
-- [[chain-of-thought]] — Iterative reasoning approach that parallels the methodology's step-by-step knowledge construction
+- [[concepts/prompt-engineering]] — The prompting techniques that underpin effective LLM-assisted learning
+- [[concepts/chain-of-thought]] — Iterative reasoning approach that parallels the methodology's step-by-step knowledge construction
 - [[vibe-coding]] — Related practice of using LLMs to generate complete applications from natural language
 - [[sycophancy]] — The risk of LLMs reinforcing learner misconceptions instead of correcting them
 

@@ -51,11 +51,11 @@ The benchmark spans **10 scenarios** with over **400 tools**, providing extensiv
 
 ## Related Benchmarks
 
-- [[agentdojo]] — Dynamic prompt injection attack/defense evaluation
-- [[injecagent]] — Focused IPI benchmarking for tool-integrated agents
-- [[agentharm]] — Harmful task completion measurement
-- [[shade-arena]] — Sabotage and monitoring evaluation
+- [[concepts/ai-benchmarks/agentdojo]] — Dynamic prompt injection attack/defense evaluation
+- [[concepts/ai-benchmarks/injecagent]] — Focused IPI benchmarking for tool-integrated agents
+- [[concepts/ai-benchmarks/agentharm]] — Harmful task completion measurement
+- [[concepts/ai-benchmarks/shade-arena]] — Sabotage and monitoring evaluation
 
 ## Connections to Other Wiki Concepts
 
-ASB provides the most formalized framework for **agent-security** evaluation among current benchmarks. Its taxonomy of DPI, IPI, and plan-of-thought backdoors structures the threat landscape for **[[concepts/ai-agents]]** research. The benchmark builds on insights from [[agentdojo]] (prompt injection), [[injecagent]] (indirect injection), and [[shade-arena]] (sabotage) to create a unified evaluation framework. Its formalization of **adversarial-testing** methodologies has become a reference point for subsequent agent security research.
+ASB provides the most formalized framework for **agent-security** evaluation among current benchmarks. Its taxonomy of DPI, IPI, and plan-of-thought backdoors structures the threat landscape for **[[concepts/ai-agents]]** research. The benchmark builds on insights from [[concepts/ai-benchmarks/agentdojo]] (prompt injection), [[concepts/ai-benchmarks/injecagent]] (indirect injection), and [[concepts/ai-benchmarks/shade-arena]] (sabotage) to create a unified evaluation framework. Its formalization of **adversarial-testing** methodologies has become a reference point for subsequent agent security research.

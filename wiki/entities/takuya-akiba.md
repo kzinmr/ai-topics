@@ -166,7 +166,7 @@ Akiba's career is defined by two deliberate shifts driven by a consistent princi
 - [[concepts/diffusionblocks]] — DiffusionBlocks block-wise training method (to be created)
 - [[concepts/optuna]] — Optuna hyperparameter optimization framework (to be created)
 - [[concepts/evolutionary-algorithms]] — Evolutionary algorithms in AI
-- [[concepts/distributed-training]] — Distributed deep learning training
+- [[concepts/training-infra/distributed-training]] — Distributed deep learning training
 - [[concepts/training-efficiency]] — Training efficiency methods and techniques
 
 ## External Links

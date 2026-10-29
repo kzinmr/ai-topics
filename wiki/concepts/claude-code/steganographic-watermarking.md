@@ -13,7 +13,7 @@ sources:
 
 # Claude Code Steganographic Request Watermarking
 
-Claude Code is reportedly embedding steganographic watermarks in API requests as an anti-distillation and anti-reseller measure. This discovery, first reported by a developer at thereallo.dev and discussed extensively on Hacker News (2100 points), reveals that [[entities/anthropic|Anthropic]] is using regex-based steganographic patterns to fingerprint requests originating from [[concepts/claude-code/claude-code|Claude Code]].
+Claude Code is reportedly embedding steganographic watermarks in API requests as an anti-distillation and anti-reseller measure. This discovery, first reported by a developer at thereallo.dev and discussed extensively on Hacker News (2100 points), reveals that [[entities/anthropic|Anthropic]] is using regex-based steganographic patterns to fingerprint requests originating from [[entities/claude-code|Claude Code]].
 
 ## Detection Mechanism
 
@@ -45,6 +45,6 @@ The HN discussion (2100 points, posted by kirushik) revealed mixed reactions:
 ## Related Pages
 
 - [[entities/anthropic]] — Company behind Claude Code and the watermarking system
-- [[concepts/claude-code/claude-code]] — Claude Code as a coding agent and its operational patterns
+- [[entities/claude-code]] — Claude Code as a coding agent and its operational patterns
 - [[concepts/security-and-governance/ai-safety]] — AI safety practices including anti-abuse measures
 - [[concepts/prompt-injection]] — Related security concerns in LLM interactions

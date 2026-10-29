@@ -46,7 +46,7 @@ collaboration — sharing happens at inference, not training.
 ## Why This Matters for the Wiki
 
 Cross-agent memory is the *optimistic* half of a story whose *pessimistic* half is
-[[memory-integrity]] and the persistent-memory attack surface. The moment you let agents
+[[concepts/memory-integrity]] and the persistent-memory attack surface. The moment you let agents
 share memory you gain compounding but also let a single poisoned or wrong memory propagate
 across an entire fleet — the shared-memory equivalent of a supply-chain attack. The
 conflict-resolution machinery (TTME) is also, unknowingly, a first version of a
@@ -55,14 +55,14 @@ conflict-resolution machinery (TTME) is also, unknowingly, a first version of a
 ## Open Questions
 
 - How do you authenticate the *provenance* of a shared memory so a compromised agent can't
-  poison the pool? (Directly the [[memory-integrity]] question.)
+  poison the pool? (Directly the [[concepts/memory-integrity]] question.)
 - Does cross-memory homogenize agents *more* (echo chamber) or *less* (diverse experiences
   merged)?
 - Can CrossMemKG support access control — some agents see a memory, others shouldn't?
 
 ## Related
 
-- [[memory-integrity]] — the poisoning risk that sharing amplifies
+- [[concepts/memory-integrity]] — the poisoning risk that sharing amplifies
 - [[knowledge-graph-memory-agents]] — graph-structured memory (CrossMemKG's nearest neighbor)
 - [[vector-db-agent-memory]] — retrieval substrate most shared-memory pools sit on
 - [[ai-memory-systems]] — the cost side of accumulating shared experience

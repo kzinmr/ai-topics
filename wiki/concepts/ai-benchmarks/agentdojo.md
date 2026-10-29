@@ -16,7 +16,7 @@ related_concepts:
   - "[[concepts/prompt-injection]]"
   - "[[concepts/ai-agents]]"
   - "[[adversarial-testing]]"
-  - "[[agent-security-bench]]"
+  - "[[concepts/ai-benchmarks/agent-security-bench]]"
 ---
 
 # AgentDojo
@@ -50,11 +50,11 @@ The benchmark comprises **97 tasks** across multiple application domains, with *
 
 ## Related Benchmarks
 
-- [[agentharm]] — Measures agent harmfulness through malicious task completion
-- [[injecagent]] — Focuses specifically on indirect prompt injection in tool-integrated agents
-- [[agent-security-bench]] — Formalizes broader attack/defense taxonomy for LLM agents
-- [[shade-arena]] — Evaluates sabotage and hidden harmful behaviors in agents
+- [[concepts/ai-benchmarks/agentharm]] — Measures agent harmfulness through malicious task completion
+- [[concepts/ai-benchmarks/injecagent]] — Focuses specifically on indirect prompt injection in tool-integrated agents
+- [[concepts/ai-benchmarks/agent-security-bench]] — Formalizes broader attack/defense taxonomy for LLM agents
+- [[concepts/ai-benchmarks/shade-arena]] — Evaluates sabotage and hidden harmful behaviors in agents
 
 ## Connections to Other Wiki Concepts
 
-AgentDojo connects to the broader landscape of **[[concepts/ai-agents]]** evaluation by addressing one of the most critical security concerns: adversarial manipulation of agent behavior. Its focus on **prompt-injection** makes it a key resource for understanding how malicious inputs can override system instructions. The benchmark's dynamic methodology influenced subsequent works on **[[adversarial-testing]]** and contributed to the development of defense frameworks studied in [[agent-security-bench]].
+AgentDojo connects to the broader landscape of **[[concepts/ai-agents]]** evaluation by addressing one of the most critical security concerns: adversarial manipulation of agent behavior. Its focus on **prompt-injection** makes it a key resource for understanding how malicious inputs can override system instructions. The benchmark's dynamic methodology influenced subsequent works on **[[adversarial-testing]]** and contributed to the development of defense frameworks studied in [[concepts/ai-benchmarks/agent-security-bench]].

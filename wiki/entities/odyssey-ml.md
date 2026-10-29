@@ -94,9 +94,9 @@ Odyssey explicitly motivates multi-agent world models with **agent-safety evalua
 
 - [[concepts/world-models]] — Odyssey's core research program
 - [[concepts/video-generation]] — streaming pixel generation as an interface paradigm
-- [[concepts/reinforcement-learning]] — PROWL's adversarial exploration loop
+- [[concepts/post-training/reinforcement-learning]] — PROWL's adversarial exploration loop
 - [[concepts/multi-agent-systems]] — Agora's shared-state motivation
-- [[concepts/ai-safety]] — simulation-based evaluation of inter-agent risk
+- [[concepts/security-and-governance/ai-safety]] — simulation-based evaluation of inter-agent risk
 - [[entities/aws]] — preferred cloud + Trainium co-optimization partner
 
 ## Sources

@@ -56,8 +56,8 @@ Snowflake Arctic RL represents a notable advance in democratizing RL training:
 
 ## Related Concepts
 
-- [[concepts/reinforcement-learning]] — Reinforcement learning fundamentals for LLM post-training
-- [[concepts/grpo]] — GRPO (Group Relative Policy Optimization), commonly used alongside Arctic RL
+- [[concepts/post-training/reinforcement-learning]] — Reinforcement learning fundamentals for LLM post-training
+- [[concepts/post-training/grpo]] — GRPO (Group Relative Policy Optimization), commonly used alongside Arctic RL
 - [[concepts/post-training/skyrl]] — SkyRL, the UC Berkeley open-source RL framework Arctic RL builds upon
 - [[entities/snowflake]] — Snowflake Inc., the data cloud company behind the Arctic model family
 - [[concepts/training-efficiency]] — Training efficiency and cost optimization techniques for LLMs

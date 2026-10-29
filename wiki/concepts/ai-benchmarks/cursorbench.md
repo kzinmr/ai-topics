@@ -47,11 +47,11 @@ CursorBench uses a proprietary evaluation methodology developed by Cursor:
 
 ## Related Benchmarks
 
-- [[stripe-agent-benchmark]] — Another domain-specific agent benchmark testing Stripe integration building
-- [[hal-leaderboard]] — Aggregated agent evaluation leaderboard
+- [[concepts/ai-benchmarks/stripe-agent-benchmark]] — Another domain-specific agent benchmark testing Stripe integration building
+- [[concepts/ai-benchmarks/hal-leaderboard]] — Aggregated agent evaluation leaderboard
 - General coding benchmarks (HumanEval, MBPP, SWE-bench) that complement CursorBench's context-specific evaluation
 - [[agent-evaluation]] frameworks that assess coding agent capabilities
 
 ## Connections to Other Wiki Concepts
 
-CursorBench exemplifies the trend toward domain-specific [[agent-evaluation]] that assesses models within particular tool-use contexts. Like the [[stripe-agent-benchmark]], it demonstrates that general benchmarks may not capture the nuances of agent performance in specialized environments. This connects to broader discussions in [[entities/coding-agents]] research about the gap between general coding ability and practical tool-augmented coding performance.
+CursorBench exemplifies the trend toward domain-specific [[agent-evaluation]] that assesses models within particular tool-use contexts. Like the [[concepts/ai-benchmarks/stripe-agent-benchmark]], it demonstrates that general benchmarks may not capture the nuances of agent performance in specialized environments. This connects to broader discussions in [[concepts/coding-agents/coding-agents]] research about the gap between general coding ability and practical tool-augmented coding performance.

@@ -95,7 +95,7 @@ Although this article was written in 2017, its essence directly applies to AI re
 
 ### 1. Goal-Driven > Idea-Driven (Even More Important in the Agent Era)
 
-In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[concepts/coding-agents/claude-code]], and [[concepts/coding-agents/openai-codex]].
+In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[entities/claude-code]], and [[concepts/coding-agents/openai-codex]].
 
 ### 2. Constraining to General Solutions (Aligns with RLHF's Essence)
 
@@ -111,7 +111,7 @@ Even in the 2026 LLM era, foundational understanding of optimization theory and 
 
 ### 5. ε-Greedy Exploration (Agent Design as Multi-Armed Bandit)
 
-In [[concepts/agent-architecture/agent-architecture]] design, balancing the main strategy with exploration is a critical design decision. [[concepts/test-time-scaling/test-time-scaling]] is itself about the explore-exploit tradeoff during inference.
+In [[concepts/agent-architecture/agent-architecture]] design, balancing the main strategy with exploration is a critical design decision. [[concepts/test-time-scaling]] is itself about the explore-exploit tradeoff during inference.
 
 ## Related
 
@@ -120,4 +120,4 @@ In [[concepts/agent-architecture/agent-architecture]] design, balancing the main
 - [[concepts/post-training/reinforcement-learning]] — Schulman's primary technical domain
 - [[concepts/coding-agents/coding-agents]] — The 2026 embodiment of Goal-Driven research
 - [[concepts/agent-memory/context-engineering]] — The agent counterpart of notebook culture
-- [[concepts/test-time-scaling/test-time-scaling]] — The inference-time version of ε-greedy exploration
+- [[concepts/test-time-scaling]] — The inference-time version of ε-greedy exploration

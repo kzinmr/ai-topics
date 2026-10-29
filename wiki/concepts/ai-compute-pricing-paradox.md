@@ -54,7 +54,7 @@ Patel acknowledges this was a time-boxed analysis (2 hours) with many open quest
 - [[llm-cost-crisis]] — The "tokenpocalypse" perspective on escalating LLM inference costs
 - [[inference-provisioned-throughput]] — Alternative pricing models for high-volume inference
 - [[scaling-laws]] — How model scaling relates to compute requirements
-- [[chain-of-thought]] — Reasoning techniques that drive up per-query compute consumption
+- [[concepts/chain-of-thought]] — Reasoning techniques that drive up per-query compute consumption
 
 ## Source
 

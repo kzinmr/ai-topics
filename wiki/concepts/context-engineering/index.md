@@ -130,7 +130,7 @@ Choose what context to load at each step, avoiding overwhelming the attention bu
 - **Knowledge selection (RAG)**: Windsurf's code indexing pipeline — AST parsing → semantic chunking → grep/file search → knowledge graph retrieval → re-ranking.
 - ⚠️ **Trap**: Incorrect selection can feel intrusive (Simon Willison's example of ChatGPT adding his location to an image unprompted).
 
-**See also**: [[rag]], [[entities/embeddings]], [[progressive-disclosure]]
+**See also**: [[concepts/rag-systems]], [[entities/embeddings]], [[progressive-disclosure]]
 
 #### 3. Compress — Keep Only What's Needed
 

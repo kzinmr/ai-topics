@@ -47,7 +47,7 @@ predictor of whether it follows the final instruction.** A model that is interna
 consistent (answer follows from its reasoning) is also more likely to honor the user's
 literal constraints. This reframes instruction-following failure partly as a
 *self-consistency* failure rather than pure capability gap. It connects directly to
-[[chain-of-thought]] faithfulness research and to [[epistemic-transparency]] — both are
+[[concepts/chain-of-thought]] faithfulness research and to [[concepts/epistemic-transparency]] — both are
 about whether the surfaced reasoning is actually what drives the output.
 
 ## Mitigation
@@ -62,13 +62,13 @@ trade-off.
 - Does the reasoning tax shrink as RLVR (RL with verifiable rewards) pipelines add
   instruction-following rewards during reasoning training?
 - Is faithfulness drift measurable at inference time so a harness can catch it before the
-  answer is used? (See [[formal-verification-llm-agents]] and [[agent-trace-integrity]].)
+  answer is used? (See [[concepts/formal-verification-llm-agents]] and [[agent-trace-integrity]].)
 - How much of the effect is training-recipe artifact vs architecture?
 
 ## Related
 
-- [[chain-of-thought]] — the mechanism whose unfaithfulness underlies this failure
+- [[concepts/chain-of-thought]] — the mechanism whose unfaithfulness underlies this failure
 - [[chain-of-thought-reasoning]] — reasoning-model training and behavior
 - [[chain-of-thought-reasoning]] — models detecting their own drift
-- [[epistemic-transparency]] — sibling failure: confident answer without revealing the epistemic basis
+- [[concepts/epistemic-transparency]] — sibling failure: confident answer without revealing the epistemic basis
 - [[agent-trace-integrity]] — monitoring whether an agent's actions match its stated reasoning

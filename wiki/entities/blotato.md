@@ -9,14 +9,14 @@ sources:
   - https://www.blotato.com/
   - raw/articles/2026-04-10-build-content-engine-full-course.md
 related:
-  - "[[concepts/content-engine]]"
+  - "[[entities/content-engine]]"
   - "[[entities/content-engine]]"
   - "[[entities/solo-founder-stack]]"
 ---
 
 # Blotato
 
-**Blotato** (blotato.com) is a unified social-media API + MCP server that lets AI agents and automation stacks publish, schedule, reply to comments, manage DMs, and pull analytics across 9+ platforms (X, LinkedIn, Facebook, Instagram, TikTok, YouTube, Threads, Bluesky, Pinterest) from a single `create_post`-style call. It is the canonical commercial implementation of the [[concepts/content-engine]] pattern: the "AI writer + distribution automation" pipeline packaged as a flat-priced SaaS.
+**Blotato** (blotato.com) is a unified social-media API + MCP server that lets AI agents and automation stacks publish, schedule, reply to comments, manage DMs, and pull analytics across 9+ platforms (X, LinkedIn, Facebook, Instagram, TikTok, YouTube, Threads, Bluesky, Pinterest) from a single `create_post`-style call. It is the canonical commercial implementation of the [[entities/content-engine]] pattern: the "AI writer + distribution automation" pipeline packaged as a flat-priced SaaS.
 
 The product positions itself as "the #1 social media API for AI agents" — explicitly marketing to agents, not just humans. It works inside Claude, ChatGPT, Cursor, Codex, and any MCP-capable agent, plus no-code stacks (n8n, Make, webhooks) and a REST API/SDK.
 
@@ -49,7 +49,7 @@ Blotato's FAQ explicitly states who it is **not** for: long-form video clipping,
 
 ## Relation to the Content Engine concept
 
-Blotato operationalizes the four stages of the [[concepts/content-engine]] pipeline (research → draft → distribute → analyze) as agent-callable tools. The "How To Build Your Own Content Engine (FULL COURSE)" X article (7,943 bookmarks) that popularized the pattern points at exactly this tool class; Blotato is the commercialized shortcut versus hand-wiring Claude + Buffer + Canva yourself (see [[entities/solo-founder-stack]]).
+Blotato operationalizes the four stages of the [[entities/content-engine]] pipeline (research → draft → distribute → analyze) as agent-callable tools. The "How To Build Your Own Content Engine (FULL COURSE)" X article (7,943 bookmarks) that popularized the pattern points at exactly this tool class; Blotato is the commercialized shortcut versus hand-wiring Claude + Buffer + Canva yourself (see [[entities/solo-founder-stack]]).
 
 ## Community
 

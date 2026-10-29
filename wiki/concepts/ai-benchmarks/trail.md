@@ -47,11 +47,11 @@ TRAIL's dataset and evaluation methodology include:
 
 ## Related Benchmarks
 
-- [[hal-leaderboard]] — Princeton's aggregated agent evaluation leaderboard
-- [[benchflow-tool]] — BenchFlow's agent evaluation framework
-- [[skillsbench]] — BenchFlow's skill acquisition benchmark
-- [[clawsbench]] — BenchFlow's recovery testing benchmark
+- [[concepts/ai-benchmarks/hal-leaderboard]] — Princeton's aggregated agent evaluation leaderboard
+- [[concepts/ai-benchmarks/benchflow-tool]] — BenchFlow's agent evaluation framework
+- [[concepts/ai-benchmarks/skillsbench]] — BenchFlow's skill acquisition benchmark
+- [[concepts/ai-benchmarks/clawsbench]] — BenchFlow's recovery testing benchmark
 
 ## Connections to Other Wiki Concepts
 
-TRAIL addresses a unique and underexplored dimension of [[agent-evaluation]]: the ability to understand *why* agents fail, not just whether they succeed. This connects to broader [[concepts/ai-agents]] research on agent reliability and trustworthiness. Unlike benchmarks that measure task completion rates, TRAIL focuses on the diagnostic capabilities needed to improve agent systems, making it complementary to performance-focused evaluations aggregated by [[hal-leaderboard]].
+TRAIL addresses a unique and underexplored dimension of [[agent-evaluation]]: the ability to understand *why* agents fail, not just whether they succeed. This connects to broader [[concepts/ai-agents]] research on agent reliability and trustworthiness. Unlike benchmarks that measure task completion rates, TRAIL focuses on the diagnostic capabilities needed to improve agent systems, making it complementary to performance-focused evaluations aggregated by [[concepts/ai-benchmarks/hal-leaderboard]].

@@ -48,7 +48,7 @@ Chen emphasizes that this is a personal research project, unaffiliated with any 
 
 - [[entities/deepseek]]: Current employer
 - [[concepts/auto-research]]: The framework he created
-- [[reinforcement-learning]]: Primary research domain
+- [[concepts/post-training/reinforcement-learning]]: Primary research domain
 - [[self-play]]: Core research technique
 
 ## Sources

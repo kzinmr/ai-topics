@@ -14,10 +14,10 @@ sources:
     authors: ["METR"]
     year: 2024
 related_concepts:
-  - "[[paperbench]]"
-  - "[[scienceagentbench]]"
-  - "[[mle-bench]]"
-  - "[[gaia-benchmark]]"
+  - "[[concepts/ai-benchmarks/paperbench]]"
+  - "[[concepts/ai-benchmarks/scienceagentbench]]"
+  - "[[concepts/ai-benchmarks/mle-bench]]"
+  - "[[concepts/ai-benchmarks/gaia-benchmark]]"
 ---
 
 # RE-Bench
@@ -55,14 +55,14 @@ Tasks span areas such as neural architecture search, training optimization, data
 
 ## Related Benchmarks
 
-- **[[paperbench]]**: Evaluates paper replication from scratch, complementing RE-Bench's focus on specific R&D subtasks
-- **[[mle-bench]]**: Tests ML engineering through Kaggle competitions, focusing on applied ML rather than research methodology
-- **[[scienceagentbench]]**: Assesses agents on scientific discovery tasks across broader scientific domains
-- **[[gaia-benchmark]]**: Tests general AI assistant capabilities, some of which overlap with research-relevant skills
+- **[[concepts/ai-benchmarks/paperbench]]**: Evaluates paper replication from scratch, complementing RE-Bench's focus on specific R&D subtasks
+- **[[concepts/ai-benchmarks/mle-bench]]**: Tests ML engineering through Kaggle competitions, focusing on applied ML rather than research methodology
+- **[[concepts/ai-benchmarks/scienceagentbench]]**: Assesses agents on scientific discovery tasks across broader scientific domains
+- **[[concepts/ai-benchmarks/gaia-benchmark]]**: Tests general AI assistant capabilities, some of which overlap with research-relevant skills
 
 ## Connections to Other Wiki Concepts
 
-RE-Bench sits at the intersection of [[concepts/ai-agents]] and [[ai-research]] evaluation. As AI systems become more capable of autonomous research, RE-Bench provides a crucial yardstick for measuring progress toward [[automated-scientific-discovery]]. The benchmark's focus on ML research specifically connects to broader discussions about [[ai-safety]] — if agents can perform R&D tasks, understanding their capabilities and limitations becomes essential for managing risks from advanced AI systems. RE-Bench also relates to discussions of [[tool-use]] in language models, as effective agents must orchestrate complex multi-step workflows involving code execution, experimentation, and analysis.
+RE-Bench sits at the intersection of [[concepts/ai-agents]] and [[ai-research]] evaluation. As AI systems become more capable of autonomous research, RE-Bench provides a crucial yardstick for measuring progress toward [[automated-scientific-discovery]]. The benchmark's focus on ML research specifically connects to broader discussions about [[concepts/security-and-governance/ai-safety]] — if agents can perform R&D tasks, understanding their capabilities and limitations becomes essential for managing risks from advanced AI systems. RE-Bench also relates to discussions of [[tool-use]] in language models, as effective agents must orchestrate complex multi-step workflows involving code execution, experimentation, and analysis.
 
 ## See Also
 

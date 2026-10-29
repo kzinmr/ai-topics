@@ -11,9 +11,9 @@ sources:
   - "arXiv:2507.09884"
 related_concepts:
   - "[[reward-models]]"
-  - "[[llm-as-judge]]"
+  - "[[concepts/evaluation/llm-as-judge]]"
   - "[[reasoning-verification]]"
-  - "[[rewardbench]]"
+  - "[[concepts/ai-benchmarks/rewardbench]]"
 ---
 
 # VerifyBench
@@ -49,11 +49,11 @@ The benchmark provides structured evaluation across reasoning domains:
 
 ## Related Benchmarks
 
-- [[rewardbench]] — Broader reward model evaluation
-- [[rewardbench-2]] — Advanced reward model benchmarking
-- [[judgebench]] — LLM-as-judge evaluation
-- [[decodingtrust]] — Trustworthiness evaluation including reasoning
+- [[concepts/ai-benchmarks/rewardbench]] — Broader reward model evaluation
+- [[concepts/ai-benchmarks/rewardbench-2]] — Advanced reward model benchmarking
+- [[concepts/ai-benchmarks/judgebench]] — LLM-as-judge evaluation
+- [[concepts/ai-benchmarks/decodingtrust]] — Trustworthiness evaluation including reasoning
 
 ## Connections to Other Wiki Concepts
 
-VerifyBench fills a critical gap in **reward-engineering** by focusing specifically on reasoning verification, a key capability for process reward models. It connects to **[[llm-as-judge]]** research by evaluating automated assessment of complex reasoning chains. The benchmark complements [[rewardbench]] and [[rewardbench-2]] by providing domain-specific evaluation of **[[reasoning-verification]]** capabilities that are increasingly important for training reasoning-focused language models through **[[reward-models]]**.
+VerifyBench fills a critical gap in **reward-engineering** by focusing specifically on reasoning verification, a key capability for process reward models. It connects to **[[concepts/evaluation/llm-as-judge]]** research by evaluating automated assessment of complex reasoning chains. The benchmark complements [[concepts/ai-benchmarks/rewardbench]] and [[concepts/ai-benchmarks/rewardbench-2]] by providing domain-specific evaluation of **[[reasoning-verification]]** capabilities that are increasingly important for training reasoning-focused language models through **[[reward-models]]**.

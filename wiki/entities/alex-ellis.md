@@ -70,7 +70,7 @@ Ellis writes long-form, first-person, receipt-based analysis ("I have skin in th
 - [[entities/claude-code]] — Cloud coding agents he uses for the majority of his coding
 - [[concepts/inference/llama-cpp]] — His local serving engine of choice
 - [[concepts/inference/vllm]] — Rejected for prosumer use (3 tok/s slower for single-user generation)
-- [[concepts/opencode]] — Open-source coding agent harness he built Toilgate for
+- [[entities/opencode]] — Open-source coding agent harness he built Toilgate for
 
 ## Sources
 

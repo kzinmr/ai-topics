@@ -101,7 +101,7 @@ The quality of deployment simulation depends entirely on how realistic the user 
 
 ### Judge-as-Agent
 
-Both use an LLM-based judge to evaluate conversations — an instance of [[concepts/llm-as-judge|LLM-as-judge]] applied to agent evaluation. This introduces a meta-evaluation challenge: who judges the judge?
+Both use an LLM-based judge to evaluate conversations — an instance of [[concepts/evaluation/llm-as-judge|LLM-as-judge]] applied to agent evaluation. This introduces a meta-evaluation challenge: who judges the judge?
 
 ### From Testing to Continuous Validation
 

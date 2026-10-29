@@ -15,7 +15,7 @@ sources:
   - wiki/raw/articles/2025-04-29_xeophon-ai-benchmark-eval-series.md
 related:
   - "[[concepts/evaluation/ai-benchmarks-and-evals]]"
-  - "[[concepts/ifeval]]"
+  - "[[concepts/ai-benchmarks/ifeval]]"
 ---
 
 # CountBenchQA
@@ -66,7 +66,7 @@ Counting may seem trivial, but it reveals important model behaviors:
 ## Related Pages
 
 - [[concepts/evaluation/ai-benchmarks-and-evals]] — Full benchmarks & evals MOC
-- [[concepts/ifeval]] — IFEval (another focused, simple benchmark)
+- [[concepts/ai-benchmarks/ifeval]] — IFEval (another focused, simple benchmark)
 - [[concepts/evaluation/pass-k-metric]] — Pass@k metric
 
 ## Sources

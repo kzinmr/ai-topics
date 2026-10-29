@@ -21,7 +21,7 @@ sources:
   - https://pypi.org/project/bernstein/
   - https://alexchernysh.com/
 related:
-  - "[[concepts/coding-agents/bernstein]]"
+  - "[[entities/bernstein]]"
   - "[[concepts/multi-agents/multi-agent-orchestration]]"
   - "[[concepts/harness-engineering/agent-harness]]"
 ---

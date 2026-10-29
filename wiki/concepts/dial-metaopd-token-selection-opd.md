@@ -42,7 +42,7 @@ This is a **plug-in loss reweighting**, not a new sampling or teacher architectu
 
 ## Position in the OPD landscape
 
-OPD sits between [[concepts/reinforcement-learning|RL post-training]] and classical (off-policy) distillation: it gets teacher guidance (like distillation) on the student's own distribution (like RL, avoiding the train/rollout mismatch that plagues SFT). DIAL and MetaOPD are refinements of the *signal allocation* within that slot — orthogonal to the teacher's capability or the reward design (cf. [[concepts/evaluation/reward-engineering]], [[concepts/rewardweaver-self-evolving-rewards]]). Reasoning-token emphasis also connects to the "extract reusable reasoning strategies" theme in [[concepts/adversarial-reasoning-distillation]].
+OPD sits between [[concepts/post-training/reinforcement-learning|RL post-training]] and classical (off-policy) distillation: it gets teacher guidance (like distillation) on the student's own distribution (like RL, avoiding the train/rollout mismatch that plagues SFT). DIAL and MetaOPD are refinements of the *signal allocation* within that slot — orthogonal to the teacher's capability or the reward design (cf. [[concepts/evaluation/reward-engineering]], [[concepts/rewardweaver-self-evolving-rewards]]). Reasoning-token emphasis also connects to the "extract reusable reasoning strategies" theme in [[concepts/adversarial-reasoning-distillation]].
 
 ## Open questions
 

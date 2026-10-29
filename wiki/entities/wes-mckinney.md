@@ -257,7 +257,7 @@ This aligns with McKinney's broader philosophy: the **harness** should be minima
 
 - [[entities/roborev]]
 - [[entities/superpowers]]
-- [[entities/show-us-your-agent-skills]]
+- [[concepts/show-us-your-agent-skills]]
 - [[concepts/evaluation/generator-evaluator-pattern]]
 - [[concepts/personal-software]]
 

@@ -24,7 +24,7 @@ shows it creates two problems unique to serving systems:
 2. **Frequent fine-grained verification** — every candidate needs cheap, repeated checks.
 
 These are systems problems (throughput/latency), not model problems — the interesting
-contribution is reconciling accuracy gains with *cost*, the domain of [[token-economics]].
+contribution is reconciling accuracy gains with *cost*, the domain of [[concepts/token-economics]].
 
 ## Three techniques
 
@@ -40,7 +40,7 @@ approaches on throughput and latency while preserving answer quality.
 ## Where this fits in the wiki's test-time scaling map
 
 The wiki already tracks test-time scaling as a *compute-allocation* idea
-([[test-time-scaling]], [[test-time-interaction-scaling]], [[search-scaling]]) — the algorithmic
+([[concepts/test-time-scaling]], [[test-time-interaction-scaling]], [[search-scaling]]) — the algorithmic
 axis. SpecScale is the **infrastructure/OS axis**: what it costs a serving stack to actually
 deliver that compute. Distinct from [[speculative-decoding]] (which speculates *tokens* within a
 single sequence; SpecScale speculates over *whole reasoning paths*).
@@ -57,8 +57,8 @@ single sequence; SpecScale speculates over *whole reasoning paths*).
 
 ## See Also
 
-- [[test-time-scaling]] — the compute-allocation idea SpecScale serves
+- [[concepts/test-time-scaling]] — the compute-allocation idea SpecScale serves
 - [[search-scaling]] — agent search-budget axis
 - [[speculative-decoding]] — token-level speculation (vs. path-level here)
-- [[token-economics]] — cost of extra inference compute
+- [[concepts/token-economics]] — cost of extra inference compute
 - [[kvtether-kv-cache-lifecycle-react]] — KV lifecycle on the same serving stack

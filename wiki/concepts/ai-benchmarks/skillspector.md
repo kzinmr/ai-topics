@@ -116,7 +116,7 @@ Scoring formula: CRITICAL +50, HIGH +25, MEDIUM +10, LOW +5, then 1.3x multiplie
 | **LLM dependency** | Optional (Stage 2) | No | No | No |
 | **Agent-native** | Yes (designed for agent skills/MCP) | Yes (first agentic benchmark) | No | No |
 
-SkillSpector occupies a unique niche: it is not a *capability* benchmark but rather a *security evaluation* tool specifically designed for the emerging [[concepts/ai-agents|AI agent]] ecosystem. While [[concepts/ai-benchmarks/swe-bench|SWE-bench]] tests whether agents can produce working code and [[concepts/ai-benchmarks/mmlu-pro|MMLU Pro]] tests knowledge breadth, SkillSpector tests whether the skill packages agents install are safe to run — addressing a gap that becomes critical as [[coding-agents|coding agents]] gain filesystem and network access.
+SkillSpector occupies a unique niche: it is not a *capability* benchmark but rather a *security evaluation* tool specifically designed for the emerging [[concepts/ai-agents|AI agent]] ecosystem. While [[concepts/ai-benchmarks/swe-bench|SWE-bench]] tests whether agents can produce working code and [[concepts/ai-benchmarks/mmlu-pro|MMLU Pro]] tests knowledge breadth, SkillSpector tests whether the skill packages agents install are safe to run — addressing a gap that becomes critical as [[concepts/coding-agents/coding-agents|coding agents]] gain filesystem and network access.
 
 ---
 

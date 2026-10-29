@@ -48,5 +48,5 @@ SWE-Bench Pro is the harder successor to SWE-Bench Verified, testing an agent's 
 - [[entities/kimi]]
 - [[entities/minimax]]
 - [[concepts/ai-benchmarks/swe-bench]]
-- [[entities/coding-agents]]
+- [[concepts/coding-agents/coding-agents]]
 - [[entities/china-ai-industry]]

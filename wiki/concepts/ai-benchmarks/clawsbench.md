@@ -34,7 +34,7 @@ ClawsBench uses structured evaluation scenarios within the BenchFlow ecosystem:
 
 - **Error injection**: Tasks where agents are deliberately placed in or led into error states
 - **Recovery evaluation**: Assessment of how effectively agents return to productive states after failures
-- **Dockerized execution**: Runs within the [[benchflow-tool]] framework for reproducible evaluation
+- **Dockerized execution**: Runs within the [[concepts/ai-benchmarks/benchflow-tool]] framework for reproducible evaluation
 - **Open-source**: Available on GitHub at benchflow-ai/ClawsBench for community contribution
 - **Multi-step recovery tasks**: Scenarios that require multiple corrective actions rather than simple single-step fixes
 
@@ -48,11 +48,11 @@ ClawsBench uses structured evaluation scenarios within the BenchFlow ecosystem:
 
 ## Related Benchmarks
 
-- [[skillsbench]] — BenchFlow's benchmark for agent skill acquisition and application
-- [[benchflow-tool]] — The BenchFlow evaluation framework that hosts ClawsBench
-- [[trail]] — Agent trace reasoning and issue localization (also focused on agent failure modes)
-- [[hal-leaderboard]] — Princeton's aggregated agent evaluation leaderboard
+- [[concepts/ai-benchmarks/skillsbench]] — BenchFlow's benchmark for agent skill acquisition and application
+- [[concepts/ai-benchmarks/benchflow-tool]] — The BenchFlow evaluation framework that hosts ClawsBench
+- [[concepts/ai-benchmarks/trail]] — Agent trace reasoning and issue localization (also focused on agent failure modes)
+- [[concepts/ai-benchmarks/hal-leaderboard]] — Princeton's aggregated agent evaluation leaderboard
 
 ## Connections to Other Wiki Concepts
 
-ClawsBench addresses a critical gap in [[agent-evaluation]]: the ability to recover from failures. While most benchmarks focus on task completion in ideal conditions, ClawsBench tests what happens when things go wrong — a common occurrence in real-world agent deployment. This connects to [[trail]]'s focus on agent error analysis and complements the forward-looking evaluation of [[skillsbench]] within the BenchFlow ecosystem. Together, these benchmarks contribute to a more complete picture of agent reliability for [[hal-leaderboard]] aggregation.
+ClawsBench addresses a critical gap in [[agent-evaluation]]: the ability to recover from failures. While most benchmarks focus on task completion in ideal conditions, ClawsBench tests what happens when things go wrong — a common occurrence in real-world agent deployment. This connects to [[concepts/ai-benchmarks/trail]]'s focus on agent error analysis and complements the forward-looking evaluation of [[concepts/ai-benchmarks/skillsbench]] within the BenchFlow ecosystem. Together, these benchmarks contribute to a more complete picture of agent reliability for [[concepts/ai-benchmarks/hal-leaderboard]] aggregation.

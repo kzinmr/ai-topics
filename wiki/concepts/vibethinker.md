@@ -31,7 +31,7 @@ VibeThinker-3B is built on the **Spectrum-to-Signal** post-training paradigm, re
 Structured SFT with progressively increasing difficulty across reasoning tasks. Rather than uniform fine-tuning on a flat dataset, the curriculum introduces harder problems as the model demonstrates competence, preventing catastrophic forgetting while building reasoning capability incrementally.
 
 ### 2. Multi-Domain Reinforcement Learning (GRPO)
-Group Relative Policy Optimization ([[concepts/grpo|GRPO]]) is applied across math, coding, and other verifiable domains. Unlike PPO, GRPO uses group-relative rewards — comparing outputs within a batch rather than requiring a separate value model — making it more sample-efficient and stable for small-model RL training. This stage is where the bulk of reasoning gains occur.
+Group Relative Policy Optimization ([[concepts/post-training/grpo|GRPO]]) is applied across math, coding, and other verifiable domains. Unlike PPO, GRPO uses group-relative rewards — comparing outputs within a batch rather than requiring a separate value model — making it more sample-efficient and stable for small-model RL training. This stage is where the bulk of reasoning gains occur.
 
 ### 3. Offline Self-Distillation
 The model's own high-quality outputs from the RL stage are used as training targets for a final distillation pass. This [[concepts/model-distillation|self-distillation]] loop reinforces successful reasoning patterns and smooths out inconsistencies, further improving performance without requiring additional external data or larger teacher models.

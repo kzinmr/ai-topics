@@ -21,7 +21,7 @@ sources:
 
 # RL Exploration: Training vs Test-Time Scaling
 
-A core question in [[rl-interview-questions-2026]]: how does exploration during [[reinforcement-learning]] training differ from exploration at test time?
+A core question in [[concepts/post-training/rl-interview-questions-2026]]: how does exploration during [[concepts/post-training/reinforcement-learning]] training differ from exploration at test time?
 
 ## RL Training Exploration
 
@@ -30,7 +30,7 @@ During training, exploration happens **inside rollout generation**:
 - The policy samples stochastically from its distribution — exploration is implicit, driven by entropy.
 - Weights are **updated** based on the reward signal from explored trajectories.
 - As training progresses the policy becomes more deterministic (entropy shrinks), naturally reducing exploration.
-- Maintenance strategies: entropy bonuses, KL penalties against a reference policy (see [[grpo-rl-training]]), and temperature scaling.
+- Maintenance strategies: entropy bonuses, KL penalties against a reference policy (see [[concepts/post-training/grpo-rl-training]]), and temperature scaling.
 
 **Critical failure mode:** if the policy *never* samples a correct trajectory for a given prompt, that prompt yields zero reward and contributes nothing to learning. This makes coverage of the search space during early training essential.
 
@@ -59,7 +59,7 @@ Test-time scaling **without verification or RL is asymptotically suboptimal** (K
 
 ## Bridging the Gap: Meta Reinforcement Fine-Tuning (MRT)
 
-Standard outcome-reward RL (e.g., [[rlvr]]) gives a single 0/1 at the end of a trace. MRT instead optimizes the training objective to **maximize expected test-time performance** — explicitly linking training-time weight updates to test-time search effectiveness. This bridges the two exploration regimes.
+Standard outcome-reward RL (e.g., [[concepts/post-training/rlvr]]) gives a single 0/1 at the end of a trace. MRT instead optimizes the training objective to **maximize expected test-time performance** — explicitly linking training-time weight updates to test-time search effectiveness. This bridges the two exploration regimes.
 
 ## Intrinsic Rewards and Their Limits
 
@@ -67,4 +67,4 @@ Self-consistency reward schemes (TTRL-style) can replace external verifiers but 
 
 ## Key Takeaway
 
-RL training and test-time scaling are **complementary, not interchangeable**. Training expands what the model can reach; test-time search finds the best within that reach. The strongest systems combine both — training with verifier signals (via [[rl-algorithms-for-llm-training]]) and allocating extra compute at inference. See also [[training-free-rl]] for approaches that attempt to get training benefits without full RL loops.
+RL training and test-time scaling are **complementary, not interchangeable**. Training expands what the model can reach; test-time search finds the best within that reach. The strongest systems combine both — training with verifier signals (via [[concepts/post-training/rl-algorithms-for-llm-training]]) and allocating extra compute at inference. See also [[concepts/post-training/training-free-rl]] for approaches that attempt to get training benefits without full RL loops.

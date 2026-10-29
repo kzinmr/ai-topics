@@ -56,5 +56,5 @@ These updates position Modal as a **production-ready infrastructure platform** f
 ## Related Concepts
 
 - [[concepts/agent-safety]] — Agent execution security and sandboxing
-- [[concepts/agent-runtime]] — Infrastructure for running AI agents
+- [[concepts/harness-engineering/agent-runtime]] — Infrastructure for running AI agents
 - [[concepts/serverless]] — Serverless computing patterns

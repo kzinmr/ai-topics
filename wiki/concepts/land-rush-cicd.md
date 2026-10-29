@@ -86,7 +86,7 @@ Yegge predicts:
 - [[concepts/wheelhouse]] — Where Land Rush was first implemented
 - [[concepts/wish-factory]] — Pattern that generates even more commits
 - [[concepts/agentic-engineering]] — Broader engineering discipline
-- [[concepts/agent-orchestration]] — Orchestration patterns that generate high commit rates
+- [[concepts/multi-agents/agent-orchestration]] — Orchestration patterns that generate high commit rates
 
 ## Sources
 

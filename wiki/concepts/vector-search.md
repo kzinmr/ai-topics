@@ -13,7 +13,7 @@ sources: [raw/articles/2026-05-13_softwaredoug_vector-search-embeddings.md]
 
 # Vector Search
 
-Vector search is the problem of finding the **nearest neighbors** to a query vector in high-dimensional embedding space — the retrieval backbone of modern semantic search, recommendation systems, and [[concepts/rag|RAG]] pipelines.
+Vector search is the problem of finding the **nearest neighbors** to a query vector in high-dimensional embedding space — the retrieval backbone of modern semantic search, recommendation systems, and [[concepts/rag-systems|RAG]] pipelines.
 
 ## The Core Problem
 

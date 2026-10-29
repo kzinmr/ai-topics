@@ -125,7 +125,7 @@ This academic work converges with Hornet's empirical analysis (Part 2: 19,279 se
 - [[concepts/vespa]] — The engine where many Hornet engineers previously worked
 - [[concepts/bm25]] — Keyword retrieval backbone; performs differently in agent loops vs. one-shot
 - [[concepts/mutually-assured-distraction]] — Compounding error: better retrieval → more convincing distractors → more confident wrong answers
-- [[concepts/browsecomp]] — The benchmark revealing the agentic retrieval bottleneck
+- [[concepts/ai-benchmarks/browsecomp]] — The benchmark revealing the agentic retrieval bottleneck
 - [[concepts/agent-loop]] — The iterative reasoning pattern that produces agentic workloads
 - [[concepts/retrieval-augmented-generation]] — Retrieval-Augmented Generation (evolving toward agentic retrieval)
 

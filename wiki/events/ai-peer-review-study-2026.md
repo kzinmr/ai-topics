@@ -54,7 +54,7 @@ claims and AI-referee experiments in academia.
 ## Related
 
 - [[entities/ethan-mollick]] — amplified the paper; earlier covered the Georgetown AI-referee leaderboard (Sep 2026).
-- [[concepts/llm-as-judge]] — methodologically adjacent: using LLMs to score/assess work.
+- [[concepts/evaluation/llm-as-judge]] — methodologically adjacent: using LLMs to score/assess work.
 - [[concepts/ai-adoption]] — professional-work adoption thread.
 
 ## Sources

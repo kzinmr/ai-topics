@@ -174,7 +174,7 @@ As Benjamin Clavié frames it:
 
 ## Related Pages
 
-- [[entities/omar-khattab/colbert]] — Omar Khattab's ColBERT deep-dive
+- [[concepts/colbert]] — Omar Khattab's ColBERT deep-dive
 - [[entities/benjamin-clavie]] — Benjamin Clavié, leading ColBERT researcher
 - [[entities/late-interaction]] — LIR Workshop @ ECIR 2026
 - [[concepts/agentic-search]] — Agentic search patterns where ColBERT excels

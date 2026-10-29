@@ -61,21 +61,21 @@ Provenance + retrieval-time validation are the highest-leverage pair, because th
 This is the security twin of [[cross-agent-memory-sharing]] — sharing multiplies exactly this
 risk across a fleet. It extends [[prompt-injection]] from *in-context* to *in-memory* attacks,
 and gives concrete machinery (provenance, lifecycle, access control) to the abstract
-concerns raised in [[memory-integrity]]. The MCS controls map cleanly onto
+concerns raised in [[concepts/memory-integrity]]. The MCS controls map cleanly onto
 [[agent-security-patterns]] primitives (least-privilege, capability isolation).
 
 ## Open Questions
 
 - Provenance is proposed but not fully specified — how do you verify a memory's *claimed*
   source cryptographically vs merely labeling it?
-- Do guardrails (control 6) re-create the [[epistemic-transparency]] problem by needing to
+- Do guardrails (control 6) re-create the [[concepts/epistemic-transparency]] problem by needing to
   "explain" why a retrieved memory was rejected?
 - What is the usability cost of lifecycle management (control 4) for agents that rely on
   long-lived genuine lessons?
 
 ## Related
 
-- [[memory-integrity]] — the general integrity concern this operationalizes
+- [[concepts/memory-integrity]] — the general integrity concern this operationalizes
 - [[cross-agent-memory-sharing]] — sharing amplifies this surface
 - [[prompt-injection]] — the in-context ancestor of this in-memory attack
 - [[agent-security-patterns]] — reusable control primitives

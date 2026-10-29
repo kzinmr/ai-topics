@@ -32,7 +32,7 @@ LiveBench measures LLM capabilities across multiple reasoning and knowledge doma
 LiveBench uses a continuously updated question bank with new items released each month. Key methodological features include:
 
 - **Monthly refresh cycle**: New questions are published regularly, preventing static dataset memorization
-- **Objective grading**: All answers are evaluated through automated, deterministic scoring rather than [[llm-as-judge]] approaches, eliminating judge bias
+- **Objective grading**: All answers are evaluated through automated, deterministic scoring rather than [[concepts/evaluation/llm-as-judge]] approaches, eliminating judge bias
 - **Diverse task categories**: Questions span multiple domains to provide a holistic view of model capability
 - **Contamination resistance**: The rolling release schedule makes it extremely difficult for any model to have seen the exact questions during training
 - **Open-source**: The benchmark framework and questions are available on GitHub for community verification
@@ -48,9 +48,9 @@ LiveBench uses a continuously updated question bank with new items released each
 
 - [[contamination]] and benchmark integrity research
 - Other contamination-aware benchmarks that use temporal splits or private test sets
-- [[llm-as-judge]] benchmarks that contrast with LiveBench's objective grading approach
+- [[concepts/evaluation/llm-as-judge]] benchmarks that contrast with LiveBench's objective grading approach
 - General LLM evaluation suites like MMLU, ARC, and HellaSwag
 
 ## Connections to Other Wiki Concepts
 
-LiveBench directly addresses the [[contamination]] problem that undermines trust in LLM evaluation. Its design philosophy — that benchmarks must be living, evolving datasets — connects to broader discussions about [[benchmark-optimization]] and the reliability of model comparisons. The benchmark's objective grading methodology also contrasts with the growing use of [[llm-as-judge]] evaluation, offering a complementary perspective on how to score model outputs fairly.
+LiveBench directly addresses the [[contamination]] problem that undermines trust in LLM evaluation. Its design philosophy — that benchmarks must be living, evolving datasets — connects to broader discussions about [[benchmark-optimization]] and the reliability of model comparisons. The benchmark's objective grading methodology also contrasts with the growing use of [[concepts/evaluation/llm-as-judge]] evaluation, offering a complementary perspective on how to score model outputs fairly.

@@ -146,7 +146,7 @@ Sources: [NVIDIA Developer Blog](https://developer.nvidia.com/blog/add-a-special
 - [[concepts/reasoning-aware-retrieval]] — Jointly embedding agent reasoning traces with search queries (AgentIR-4B, 2026)
 - [[concepts/bm25]] — Classical lexical retrieval; performs differently in agent loops vs. one-shot
 - [[concepts/deep-research-agent-from-scratch]] — Building research agents from scratch (Hugo Bowne-Anderson + Ivan Leo workshop)
-- [[concepts/browsecomp]] — The BrowseComp benchmark series
+- [[concepts/ai-benchmarks/browsecomp]] — The BrowseComp benchmark series
 - [[concepts/mutually-assured-distraction]] — Better retrieval → more convincing distractors → more confidently wrong answers
 - [[concepts/context-engineering/context-window-management|Context Window Management]] — Why long context doesn't eliminate retrieval needs
 

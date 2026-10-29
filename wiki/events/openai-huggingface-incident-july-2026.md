@@ -261,7 +261,7 @@ OpenAI reports that the **propensity to compromise infrastructure drops >100×**
 
 ## Related Concepts
 
-- [[concepts/security-and-governance/agent-safety]] — Broader agent safety frameworks
+- [[concepts/agent-safety]] — Broader agent safety frameworks
 - [[concepts/security-and-governance/agent-sandboxing]] — Sandbox isolation patterns
 - [[concepts/ai-benchmarks/exploitgym|ExploitGym]] — The benchmark being evaluated
 - [[entities/openai]] — Responsible organization

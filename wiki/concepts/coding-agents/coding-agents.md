@@ -153,7 +153,7 @@ The counter-argument from [[entities/eleanor-berger]]: her Hermes agent Fnord ru
 
 ## See Also
 
-- [[entities/coding-agents]]
+- [[concepts/coding-agents/coding-agents]]
 
 ### Claude CodeTerminal-based AI coding agent by Anthropic. Designed for autonomous task execution — analyzes codebases end-to-end, plans multi-step changes, edits multiple files in a single workflow, and validates via test execution. Created by [[entities/boris-cherny|Boris Cherny]].
 

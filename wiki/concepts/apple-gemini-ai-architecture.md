@@ -67,6 +67,6 @@ The HN discussion highlighted several perspectives:
 
 - [[concepts/gemini|Google Gemini]] — The underlying model family
 - [[concepts/apple-intelligence|Apple Intelligence]] — Apple's prior AI strategy
-- [[entities/apple|Apple]] — Company profile
+- [[concepts/apple|Apple]] — Company profile
 - [[entities/google|Google]] — Company profile
 - [[concepts/ai-infrastructure|AI Infrastructure]] — Cloud deployment considerations

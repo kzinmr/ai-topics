@@ -50,7 +50,7 @@ See [[raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5l
 ## Related Wiki Pages
 
 - [[concepts/agentic-search]] — Core concept page (5-level model + revealed preferences belong here)
-- [[concepts/llm-as-judge]] — Academic LLM-as-judge framework (Turnbull's critique is the practitioner counterpoint)
+- [[concepts/evaluation/llm-as-judge]] — Academic LLM-as-judge framework (Turnbull's critique is the practitioner counterpoint)
 - [[entities/john-berryman]] — Co-author of Relevant Search, creator of 5-level model
 - [[entities/doug-turnbull]] — Search consultant, LLM-as-judge critic
 - [[entities/hugo-bowne-anderson]] — Podcast host

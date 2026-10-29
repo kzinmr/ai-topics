@@ -193,7 +193,7 @@ The core takeaway: revisit CLAUDE.md and customizations with each major model re
 
 - [[entities/claude-code]] — Claude Code as a coding agent
 - [[concepts/agentic-engineering]] — Patterns for building agent-based systems
-- [[entities/coding-agents]] — AI agents for software development
+- [[concepts/coding-agents/coding-agents]] — AI agents for software development
 - [[concepts/mcp]] — Model Context Protocol for tool integration
 - [[agent-orchestration]] — Coordinating multiple agents
 - [[concepts/context-engineering]] — Managing context windows effectively

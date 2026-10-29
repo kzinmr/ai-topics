@@ -51,7 +51,7 @@ contested-evidence handling this page already applies to vendor benchmark claims
 
 ## Countervailing Evidence in This Wiki
 
-Displacement narratives coexist with counter-data: [[llm-expertise-amplification]] (AI amplifies rather than replaces expertise), the [[ai-slop-productivity-paradox]] (measured productivity ≠ realized value), and new job archetypes like [[forward-deployed-engineering]]. Software engineering is the test bed: code volume explodes while quality/verification labor becomes the human bottleneck (Cook, Aug 2026) — displacement may reshape the job (review, abstraction design, intent specification) before eliminating it. The "highest-skilled task" that models still fail (structural simplification, domain modeling) is precisely the work Gates' displacement thesis says humans retain least.
+Displacement narratives coexist with counter-data: [[llm-expertise-amplification]] (AI amplifies rather than replaces expertise), the [[ai-slop-productivity-paradox]] (measured productivity ≠ realized value), and new job archetypes like [[concepts/forward-deployed-engineering]]. Software engineering is the test bed: code volume explodes while quality/verification labor becomes the human bottleneck (Cook, Aug 2026) — displacement may reshape the job (review, abstraction design, intent specification) before eliminating it. The "highest-skilled task" that models still fail (structural simplification, domain modeling) is precisely the work Gates' displacement thesis says humans retain least.
 
 ## Open Questions
 
@@ -62,7 +62,7 @@ Displacement narratives coexist with counter-data: [[llm-expertise-amplification
 ## Related
 
 - [[bill-gates]] — chief institutional proponent of this framing
-- [[forward-deployed-engineering]] — emerging AI-era job archetype
+- [[concepts/forward-deployed-engineering]] — emerging AI-era job archetype
 - [[llm-expertise-amplification]] — opposing/complementing evidence
 - [[ai-slop-productivity-paradox]] — productivity measurement caveats
 - [[automation-paradox]]

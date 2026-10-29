@@ -163,7 +163,7 @@ Alloomi contrasts this against the alternatives it claims miss the core issue: a
 
 > Vendor-claimed results from Alloomi's Aug 13, 2026 X article; independent verification pending.
 
-See [[alloomi-ai]] and [[opencontext]] for details.
+See [[entities/alloomi-ai]] and [[entities/opencontext]] for details.
 
 Source: [raw/articles/2026-08-13_alloomiai_self-evolving-ai-agents.md]
 

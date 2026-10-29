@@ -12,8 +12,8 @@ tags:
   - company
 related:
   - "[[concepts/ai-benchmarks/tau-bench]]"
-  - "[[concepts/tau-squared-bench]]"
-  - "[[concepts/tau-knowledge]]"
+  - "[[concepts/ai-benchmarks/tau-squared-bench]]"
+  - "[[concepts/ai-benchmarks/tau-knowledge]]"
   - "[[concepts/evaluation/pass-k-metric]]"
 sources:
   - raw/papers/2026-03-14_2603.13686_tau-voice-full-duplex-voice-agents.md
@@ -133,6 +133,6 @@ Sierra's **𝜏-Entity** (Oct 2026, shipped with **𝜏-i18n**) narrows τ-Voice
 ## Related Pages
 
 - [[concepts/ai-benchmarks/tau-bench]] — Overview of the τ-bench ecosystem
-- [[concepts/tau-squared-bench]] — Dual-control benchmark (foundation of τ-Voice)
-- [[concepts/tau-knowledge]] — Evaluation with unstructured knowledge bases
+- [[concepts/ai-benchmarks/tau-squared-bench]] — Dual-control benchmark (foundation of τ-Voice)
+- [[concepts/ai-benchmarks/tau-knowledge]] — Evaluation with unstructured knowledge bases
 - [[concepts/evaluation/pass-k-metric]] — Reliability evaluation metric

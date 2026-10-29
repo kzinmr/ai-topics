@@ -15,7 +15,7 @@ sources:
 related_concepts:
   - "[[concepts/ai-benchmarks/_index]]"
   - "[[concepts/evaluation]]"
-  - "[[concepts/swe-bench]]"
+  - "[[concepts/ai-benchmarks/swe-bench]]"
   - "[[entities/epoch-ai]]"
 ---
 
@@ -50,13 +50,13 @@ MirrorCode was first described in Import AI #453 (April 2026) and subsequently f
 
 ## Significance
 
-MirrorCode fills an important gap in the AI evaluation landscape. Most coding benchmarks (e.g., [[concepts/swe-bench]], HumanEval, MBPP) test short-duration, isolated coding tasks. MirrorCode addresses the question: *how well do AI systems perform when the task requires sustained, multi-day effort?*
+MirrorCode fills an important gap in the AI evaluation landscape. Most coding benchmarks (e.g., [[concepts/ai-benchmarks/swe-bench]], HumanEval, MBPP) test short-duration, isolated coding tasks. MirrorCode addresses the question: *how well do AI systems perform when the task requires sustained, multi-day effort?*
 
 The finding that Opus 4.7 can complete a multi-week human task in minutes — but still fails on the hardest problems — suggests that long-horizon capability is improving rapidly but not yet saturated.
 
 ## Related Benchmarks
 
-- [[concepts/swe-bench]] — Software engineering benchmark for AI agents (shorter tasks)
+- [[concepts/ai-benchmarks/swe-bench]] — Software engineering benchmark for AI agents (shorter tasks)
 - [[concepts/ai-benchmarks/agentdojo]] — Dynamic evaluation for agent security
 - [[concepts/ai-benchmarks/benchmaxxing]] — Notes on benchmark over-optimization
 

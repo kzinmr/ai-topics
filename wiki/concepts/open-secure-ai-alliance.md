@@ -16,7 +16,7 @@ sources:
 related_concepts:
   - "[[concepts/ai-alliance]]"
   - "[[concepts/open-source-ai-must-win]]"
-  - "[[concepts/ai-safety]]"
+  - "[[concepts/security-and-governance/ai-safety]]"
   - "[[entities/nvidia]]"
 ---
 
@@ -62,10 +62,10 @@ This positions NVIDIA (historically an infrastructure provider, not a model publ
 
 - [[concepts/ai-alliance]] — The broader IBM/Meta-led AI Alliance (different initiative)
 - [[concepts/open-source-ai-must-win]] — Ongoing debate about open vs closed AI models
-- [[concepts/ai-safety]] — The broader safety ecosystem this alliance operates within
+- [[concepts/security-and-governance/ai-safety]] — The broader safety ecosystem this alliance operates within
 - [[entities/nvidia]] — Parent company and founder
 
 ## See Also
 
 - [[entities/anthropic]]#policy — Anthropic's evolving stance on open weights
-- [[concepts/fable-5]] — US government export control directive context
+- [[concepts/claude/fable-5]] — US government export control directive context

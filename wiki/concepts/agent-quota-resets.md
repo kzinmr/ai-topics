@@ -60,7 +60,7 @@ Max Woolf (minimaxir.com) identified several structural issues:
 ## Market Context (July 2026)
 
 The surge in resets coincides with an unprecedented month of LLM releases:
-- [[concepts/fable-5|Fable 5]] and [[concepts/gpt/gpt-5-6|GPT-5.6 Sol]] — frontier models
+- [[concepts/claude/fable-5|Fable 5]] and [[concepts/gpt/gpt-5-6|GPT-5.6 Sol]] — frontier models
 - [[concepts/grok-4-5|Grok 4.5]], Muse Spark 1.1, [[concepts/kimi-k3|Kimi K3]] — competitive alternatives
 
 ## Sustainability Question

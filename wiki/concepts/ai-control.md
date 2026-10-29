@@ -171,7 +171,7 @@ The roadmap acknowledges several important limitations:
 ## Related Concepts
 
 - [[entities/deepmind]] — Google DeepMind, the organization behind this roadmap
-- [[ai-safety]] — The broader field of AI safety engineering
+- [[concepts/security-and-governance/ai-safety]] — The broader field of AI safety engineering
 - [[concepts/ai-alignment]] — The first line of defense that AI control complements
 - [[concepts/agent-safety]] — Safety considerations specific to autonomous AI agents
 - [[concepts/prompt-injection]] — A related AI security vulnerability vector

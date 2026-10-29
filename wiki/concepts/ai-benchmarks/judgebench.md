@@ -9,7 +9,7 @@ tags:
 sources:
   - "GitHub: ScalerLab/JudgeBench"
 related_concepts:
-  - "[[llm-as-judge]]"
+  - "[[concepts/evaluation/llm-as-judge]]"
   - "[[reward-models]]"
   - "[[evaluation-methodology]]"
   - "[[bias-detection]]"
@@ -48,11 +48,11 @@ The benchmark provides a comprehensive evaluation framework:
 
 ## Related Benchmarks
 
-- [[rewardbench]] — Reward model evaluation including judge-like capabilities
-- [[rewardbench-2]] — Advanced reward model benchmarking
-- [[verifybench]] — Reasoning verifier evaluation
-- [[decodingtrust]] — Trustworthiness evaluation
+- [[concepts/ai-benchmarks/rewardbench]] — Reward model evaluation including judge-like capabilities
+- [[concepts/ai-benchmarks/rewardbench-2]] — Advanced reward model benchmarking
+- [[concepts/ai-benchmarks/verifybench]] — Reasoning verifier evaluation
+- [[concepts/ai-benchmarks/decodingtrust]] — Trustworthiness evaluation
 
 ## Connections to Other Wiki Concepts
 
-JudgeBench addresses the growing reliance on **[[llm-as-judge]]** systems for automated evaluation and training data generation. It connects to **[[reward-models]]** research by evaluating a key component of modern RLHF pipelines. The benchmark's focus on **[[bias-detection]]** and reliability has implications for **evaluation-methodology** across the field, as many benchmarks themselves rely on LLM judges for scoring. Understanding judge quality is essential for ensuring trustworthy automated evaluation.
+JudgeBench addresses the growing reliance on **[[concepts/evaluation/llm-as-judge]]** systems for automated evaluation and training data generation. It connects to **[[reward-models]]** research by evaluating a key component of modern RLHF pipelines. The benchmark's focus on **[[bias-detection]]** and reliability has implications for **evaluation-methodology** across the field, as many benchmarks themselves rely on LLM judges for scoring. Understanding judge quality is essential for ensuring trustworthy automated evaluation.

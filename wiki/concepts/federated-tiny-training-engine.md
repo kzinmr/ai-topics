@@ -73,6 +73,6 @@ FTTE is described as "the first practical and scalable solution for real-world F
 
 ## Related Pages
 - [[concepts/privacy-preserving-ml]] — Broader privacy-preserving ML techniques
-- [[concepts/distributed-training]] — Distributed ML training approaches
+- [[concepts/training-infra/distributed-training]] — Distributed ML training approaches
 - [[concepts/edge-computing]] — Edge device deployment
 - [[concepts/post-training/quantization-overview]] — Related model compression technique for edge deployment

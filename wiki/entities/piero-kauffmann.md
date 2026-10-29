@@ -16,7 +16,7 @@ sources:
 
 # Piero Kauffmann
 
-Researcher at **Microsoft Research, AI Frontiers** lab. Focused on reinforcement learning infrastructure for AI agents. Built and maintained the RL infrastructure used for [[echo-rl|ECHO]] experiments.
+Researcher at **Microsoft Research, AI Frontiers** lab. Focused on reinforcement learning infrastructure for AI agents. Built and maintained the RL infrastructure used for [[concepts/post-training/echo-rl|ECHO]] experiments.
 
 - **Affiliation**: Microsoft Research AI Frontiers
 - **Role**: RL infrastructure researcher
@@ -40,6 +40,6 @@ Paper: [arxiv.org/abs/2605.24517](https://arxiv.org/abs/2605.24517). Code: [gith
 - [[entities/vaishnavi-shrivastava]] — ECHO lead researcher
 - [[entities/dimitris-papailiopoulos]] — ECHO co-author
 - [[entities/ahmed-awadallah]] — MSR AI Frontiers research lead
-- [[echo-rl]] — the ECHO training method
+- [[concepts/post-training/echo-rl]] — the ECHO training method
 - [[entities/microsoft-ai-frontiers]] — research lab
 - [[sky-rl]] — RL framework ECHO is built on

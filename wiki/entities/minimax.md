@@ -45,7 +45,7 @@ This marks MiniMax's entry into AI video generation, extending beyond its M-seri
 
 On August 2, 2026, MiniMax released **MiniMax-H3**, which it describes as "a general-purpose, omni-modal generative system": it accepts text, images, audio and video inputs and generates up to 15-second video clips **with audio included** — a notable step beyond silent video outputs.
 
-The community package **PipeNetwork/minimax-h3-mlx** ports H3 to **MLX** for running on [[entities/apple|Apple Silicon]]. [[entities/simon-willison|Simon Willison]] ran it on his M5 Max MacBook Pro, downloading ~115 GB of model files; a single video generation took just under 45 minutes. The run pattern is:
+The community package **PipeNetwork/minimax-h3-mlx** ports H3 to **MLX** for running on [[concepts/apple|Apple Silicon]]. [[entities/simon-willison|Simon Willison]] ran it on his M5 Max MacBook Pro, downloading ~115 GB of model files; a single video generation took just under 45 minutes. The run pattern is:
 
 ```bash
 # First download the models
@@ -76,6 +76,6 @@ This extends the [[concepts/ai-video-generation-2026|2026 video generation lands
 - [[entities/kimi]]
 - [[entities/china-ai-industry]]
 - [[concepts/ai-benchmarks/swe-bench]]
-- [[entities/coding-agents]]
+- [[concepts/coding-agents/coding-agents]]
 - [[concepts/ai-video-generation-2026]]
 - [[entities/vercel]]

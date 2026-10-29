@@ -34,7 +34,7 @@ Nous Research released **Hermes Agent v0.21.0** (tag `v2026.8.31`) on **2026-08-
 
 ## Context-window efficiency
 
-In a follow-up reply, Teknium noted the release **"reduced default context used by ~50%"** — a significant cost/latency improvement for long-running agent sessions, relevant to [[context-compression]] and [[token-economics]] (see also [[context-engineering]]).
+In a follow-up reply, Teknium noted the release **"reduced default context used by ~50%"** — a significant cost/latency improvement for long-running agent sessions, relevant to [[context-compression]] and [[concepts/token-economics]] (see also [[context-engineering]]).
 
 ## Sources
 

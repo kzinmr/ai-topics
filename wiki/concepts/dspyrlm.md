@@ -4,22 +4,15 @@ type: concept
 aliases:
   - dspyrlm
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-10-29
 tags:
   - concept
 sources: []
-status: stub
-
+status: redirect
 ---
 
 # DSPy.RLM
 
-> **TODO**: Enrich this page.
+> **Redirect**: This page has been merged into [[concepts/dspy-rlm]].
 
-## Overview
-
-Stub page for DSPy.RLM.
-
-## Related Pages
-
-- [[entities/_index]]
+Canonical page: [[concepts/dspy-rlm]] — DSPy Remote Language Models (RLM) pattern.

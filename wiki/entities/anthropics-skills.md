@@ -18,7 +18,7 @@ sources:
 related:
   - "[[entities/anthropic]]"
   - "[[entities/rlancemartin]]"
-  - "[[concepts/evals-skills]]"
+  - "[[comparisons/evals-skills]]"
   - "[[concepts/agent-skills-skillmd]]"
 ---
 
@@ -30,7 +30,7 @@ related:
 
 The flagship skill, maintained publicly by [[entities/rlancemartin|Lance Martin]], provides SDK patterns for the Claude API in Python, TypeScript, Go, Java, Ruby, PHP, C#, and curl, plus orchestration patterns for Claude Managed Agents self-hosted sandboxes.
 
-As of September 2026 it ships two eval-related commands (see [[concepts/evals-skills]]):
+As of September 2026 it ships two eval-related commands (see [[comparisons/evals-skills]]):
 
 - **`build-eval`** — builds an evaluation inside your codebase via a guided interview workflow (task sourcing, grader design, calibration).
 - **`hillclimb`** — iteratively improves an application against the eval, one patch at a time, with a held-out test set and revert-on-overfitting guardrails.

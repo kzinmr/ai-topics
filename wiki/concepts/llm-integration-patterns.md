@@ -4,22 +4,15 @@ type: concept
 aliases:
   - llm-integration-patterns
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-10-29
 tags:
   - concept
 sources: []
-status: stub
-
+status: redirect
 ---
 
 # LLM Integration Patterns
 
-> **TODO**: Enrich this page.
+> **Redirect**: This page has been merged into [[comparisons/llm-integration-patterns]].
 
-## Overview
-
-Stub page for LLM Integration Patterns.
-
-## Related Pages
-
-- [[entities/_index]]
+Canonical page: [[comparisons/llm-integration-patterns]] — LLM Integration Patterns: A Comparative Taxonomy (5 paradigms).

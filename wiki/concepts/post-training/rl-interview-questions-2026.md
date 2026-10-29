@@ -16,11 +16,11 @@ sources:
     title: "Chinese version on Zhihu"
     date: 2026-06-06
 related:
-  - "[[grpo]]"
+  - "[[concepts/post-training/grpo]]"
   - "[[ppo]]"
-  - "[[reinforcement-learning]]"
-  - "[[rl-algorithms-for-llm-training]]"
-  - "[[grpo-rl-training]]"
+  - "[[concepts/post-training/reinforcement-learning]]"
+  - "[[concepts/post-training/rl-algorithms-for-llm-training]]"
+  - "[[concepts/post-training/grpo-rl-training]]"
   - "[[verl]]"
   - "[[concepts/trl-transformer-reinforcement-learning]]"
   - "[[openrlhf]]"
@@ -111,11 +111,11 @@ Positioned as an "RL interview benchmark," the list is divided into Algorithm (1
 
 ## Related Pages
 
-- [[grpo]] — GRPO fundamentals
-- [[grpo-rl-training]] — GRPO training details
-- [[rl-algorithms-for-llm-training]] — RL algorithms for LLM training
-- [[reinforcement-learning]] — RL basics
-- [[rlhf]] — RLHF overview
+- [[concepts/post-training/grpo]] — GRPO fundamentals
+- [[concepts/post-training/grpo-rl-training]] — GRPO training details
+- [[concepts/post-training/rl-algorithms-for-llm-training]] — RL algorithms for LLM training
+- [[concepts/post-training/reinforcement-learning]] — RL basics
+- [[concepts/post-training/rlhf]] — RLHF overview
 - [[entities/deepseek]] — DeepSeek model family
 - [[openrlhf]] — OpenRLHF framework
 - [[slime-rl]] — slime RL framework

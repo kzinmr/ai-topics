@@ -14,10 +14,10 @@ sources:
     authors: ["OSU-NLP-Group"]
     year: 2024
 related_concepts:
-  - "[[re-bench]]"
+  - "[[concepts/ai-benchmarks/re-bench]]"
   - "[[bixbench]]"
-  - "[[paperbench]]"
-  - "[[deepresearch-bench]]"
+  - "[[concepts/ai-benchmarks/paperbench]]"
+  - "[[concepts/ai-benchmarks/deepresearch-bench]]"
 ---
 
 # ScienceAgentBench
@@ -57,9 +57,9 @@ ScienceAgentBench is built on real-world scientific tasks with careful curation:
 ## Related Benchmarks
 
 - **[[bixbench]]**: Focuses specifically on computational biology, while ScienceAgentBench covers multiple scientific domains
-- **[[re-bench]]**: Targets ML research tasks; ScienceAgentBench extends to broader scientific disciplines
-- **[[paperbench]]**: Tests paper reproduction; ScienceAgentBench evaluates task-specific scientific analysis
-- **[[deepresearch-bench]]**: Tests deep research capabilities that complement ScienceAgentBench's focus on data analysis
+- **[[concepts/ai-benchmarks/re-bench]]**: Targets ML research tasks; ScienceAgentBench extends to broader scientific disciplines
+- **[[concepts/ai-benchmarks/paperbench]]**: Tests paper reproduction; ScienceAgentBench evaluates task-specific scientific analysis
+- **[[concepts/ai-benchmarks/deepresearch-bench]]**: Tests deep research capabilities that complement ScienceAgentBench's focus on data analysis
 
 ## Connections to Other Wiki Concepts
 

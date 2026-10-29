@@ -80,6 +80,6 @@ GPT-5 is a **3-component unified system**:
 
 ## Related Concepts
 
-- [[rlvr]] — RL training paradigm that underpinned o1/o3
-- [[grpo]] — RL optimization algorithm used in o3
+- [[concepts/post-training/rlvr]] — RL training paradigm that underpinned o1/o3
+- [[concepts/post-training/grpo]] — RL optimization algorithm used in o3
 - [[concepts/deepseek-r1]] — Competing open model that accelerated unification

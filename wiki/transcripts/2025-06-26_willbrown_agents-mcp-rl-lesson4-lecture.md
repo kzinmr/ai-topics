@@ -269,7 +269,7 @@ class SyntheticQuery:
 ## Related
 
 - [[concepts/agents-mcp-rl-course|Production-Ready Agent Engineering: From MCP to RL]]
-- [[concepts/grpo-rl-training]]
+- [[concepts/post-training/grpo-rl-training]]
 - [[concepts/agentic-rl]]
 - [[concepts/rl-harness-lifecycle]]
 - [[concepts/agentic-search]]

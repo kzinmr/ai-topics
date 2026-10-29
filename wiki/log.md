@@ -20,7 +20,7 @@
 
 - **Pipeline alerts**: blog chain `ingest_ok_but_triage_failed`, newsletter chain `triage_ok_but_wiki_ingest_failed` — transient (same-day triage commits landed at 10:10 UTC; reports 5.6 h old). No action.
 - **index.md**: structurally clean (0 pipe/line-number/triple-bracket corruption, validate_index.py exit 0).
-- **Fixed**: 8x `[[concepts/rag]]` → `[[concepts/retrieval-augmented-generation]]`; 11x `[[concepts/agent-evaluation]]` → `[[concepts/evaluation]]` hub; 17x `[[concepts/agent-memory]]` → `[[concepts/context-engineering]]` hub (26 files; weekly-report/WIP-snapshot artifacts left as historical records). Commit 34ffd503.
+- **Fixed**: 8x `[[concepts/rag-systems]]` → `[[concepts/retrieval-augmented-generation]]`; 11x `[[concepts/agent-evaluation]]` → `[[concepts/evaluation]]` hub; 17x `[[concepts/agent-memory]]` → `[[concepts/context-engineering]]` hub (26 files; weekly-report/WIP-snapshot artifacts left as historical records). Commit 34ffd503.
 - **No action**: 2,385 stale pages (bulk-import), 38 empty `[[]]` links already gone (grep 0), duplicates routed to weekly graph job, 491 orphans need human review.
 
 ---

@@ -13,7 +13,7 @@ confidence: high
 # Coding Agent Harness Design Study
 
 Fan et al. (2026), *"An Empirical Study of Harness Design for Coding Agents"* (arXiv:2609.20804),
-is the first **component-level ablation** of a coding agent's [[harness-engineering|harness]].
+is the first **component-level ablation** of a coding agent's [[concepts/harness-engineering|harness]].
 Prior work (e.g. Anthropic's [[effective-harnesses-for-long-running-agents]]) evaluated harnesses
 as monolithic systems, so it was never clear *which parts actually paid for themselves*. This
 study fixes the execution loop and varies three components independently — **planning**, **action
@@ -66,7 +66,7 @@ trajectories are only a win if verification keeps up.
 
 ## Related
 
-- [[harness-engineering]] — the discipline this study empirically grounds
+- [[concepts/harness-engineering]] — the discipline this study empirically grounds
 - [[effective-harnesses-for-long-running-agents]] — the monolithic-harness prior this ablates
 - [[context-engineering]] — the context-management strategies ablated here
 - [[agent-overclaiming]] — the verification failure mode long cheap trajectories can worsen

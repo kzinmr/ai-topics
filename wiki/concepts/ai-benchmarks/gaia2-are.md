@@ -12,15 +12,15 @@ sources:
     arxiv: "2509.17158"
     year: 2025
 related_concepts:
-  - "[[gaia-benchmark]]"
-  - "[[theagentcompany]]"
-  - "[[deepresearch-bench]]"
-  - "[[crmarena-pro]]"
+  - "[[concepts/ai-benchmarks/gaia-benchmark]]"
+  - "[[concepts/ai-benchmarks/theagentcompany]]"
+  - "[[concepts/ai-benchmarks/deepresearch-bench]]"
+  - "[[concepts/ai-benchmarks/crmarena-pro]]"
 ---
 
 # Gaia2 and ARE
 
-Gaia2 and ARE (Agent Runtime Environment) represent a significant scaling-up of agent evaluation infrastructure. Gaia2 is the successor to the [[gaia-benchmark|GAIA benchmark]], expanding both the number and diversity of tasks while ARE provides a unified runtime environment for executing and evaluating agents across diverse task types. Together, they aim to establish a more comprehensive and scalable standard for measuring AI agent capabilities.
+Gaia2 and ARE (Agent Runtime Environment) represent a significant scaling-up of agent evaluation infrastructure. Gaia2 is the successor to the [[concepts/ai-benchmarks/gaia-benchmark|GAIA benchmark]], expanding both the number and diversity of tasks while ARE provides a unified runtime environment for executing and evaluating agents across diverse task types. Together, they aim to establish a more comprehensive and scalable standard for measuring AI agent capabilities.
 
 ## What It Measures
 
@@ -55,10 +55,10 @@ Gaia2 and ARE introduce several methodological advances over the original GAIA b
 
 ## Related Benchmarks
 
-- **[[gaia-benchmark]]**: The predecessor to Gaia2; Gaia2 expands on GAIA's task set and evaluation methodology
-- **[[theagentcompany]]**: Tests agents in company simulation; Gaia2/ARE provides broader task coverage across diverse environments
-- **[[deepresearch-bench]]**: Evaluates deep research capabilities; Gaia2 includes research tasks alongside many other task types
-- **[[crmarena-pro]]**: Tests enterprise-specific tasks; Gaia2 covers enterprise tasks as part of its broader evaluation
+- **[[concepts/ai-benchmarks/gaia-benchmark]]**: The predecessor to Gaia2; Gaia2 expands on GAIA's task set and evaluation methodology
+- **[[concepts/ai-benchmarks/theagentcompany]]**: Tests agents in company simulation; Gaia2/ARE provides broader task coverage across diverse environments
+- **[[concepts/ai-benchmarks/deepresearch-bench]]**: Evaluates deep research capabilities; Gaia2 includes research tasks alongside many other task types
+- **[[concepts/ai-benchmarks/crmarena-pro]]**: Tests enterprise-specific tasks; Gaia2 covers enterprise tasks as part of its broader evaluation
 
 ## Connections to Other Wiki Concepts
 

@@ -48,7 +48,7 @@ The result is a caution against a common intuition behind [[concepts/llm-memory-
 and KV-cache/"context-as-memory" designs: **compressing or caching a memory down to whatever
 reproduces today's outputs is lossy for tomorrow's update**. A memory that looks behaviorally
 faithful (same predictions) can be structurally inadequate the moment it must incorporate a new
-observation. This connects to the [[concepts/context-rot]] and retrieval-vs-state debate in
+observation. This connects to the [[concepts/context-engineering/context-rot]] and retrieval-vs-state debate in
 [[concepts/memory-systems-design-patterns]] — the "hidden evidence" that a summary drops is
 exactly the part that future learning consumes.
 
@@ -70,4 +70,4 @@ equal-prediction histories, which bears on the expressivity limits discussed in
 - [[concepts/llm-memory-architecture]]
 - [[concepts/memory-systems-design-patterns]]
 - [[concepts/ssm-mamba]]
-- [[concepts/context-rot]]
+- [[concepts/context-engineering/context-rot]]

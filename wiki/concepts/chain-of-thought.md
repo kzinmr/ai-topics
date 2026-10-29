@@ -98,7 +98,7 @@ In **test-time scaling** models (o1, o3, R1), CoT is taken to an extreme: the mo
 - Recognition and correction of errors
 - Meta-reasoning about which strategy to use
 
-This is fundamentally different from prompting-based CoT — it's a capability **trained into the model via RL** ([[grpo]], [[rlvr]]), not just elicited by prompts.
+This is fundamentally different from prompting-based CoT — it's a capability **trained into the model via RL** ([[concepts/post-training/grpo]], [[concepts/post-training/rlvr]]), not just elicited by prompts.
 
 ## CoT vs. Other Reasoning Methods
 
@@ -125,7 +125,7 @@ Chain-of-Thought is the **substrate** on which all [[concepts/test-time-scaling]
 
 - [[concepts/test-time-scaling]] — Allocating inference compute across CoT paths
 - [[reasoning]] — AI reasoning capabilities
-- [[rlvr]] — RL with Verifiable Rewards for training CoT
-- [[grpo]] — GRPO algorithm used to train long-CoT models
+- [[concepts/post-training/rlvr]] — RL with Verifiable Rewards for training CoT
+- [[concepts/post-training/grpo]] — GRPO algorithm used to train long-CoT models
 - [[prompting]] — Broader prompting techniques
 - [[concepts/speculative-decoding]] — Complementary technique (faster generation, not better reasoning)

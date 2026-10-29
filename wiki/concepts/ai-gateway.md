@@ -20,7 +20,7 @@ related:
   - "[[concepts/token-economics]]"
   - "[[concepts/outcome-based-pricing]]"
   - "[[concepts/llm-integration-patterns]]"
-  - "[[context-engineering/context-management]]"
+  - "[[concepts/context-engineering/context-management]]"
   - "[[concepts/infrastructure]]"
 ---
 
@@ -94,4 +94,4 @@ A single coding agent session can consume hundreds of thousands of tokens across
 - **[[concepts/token-economics]]**: Gateway cost controls are the enforcement layer; token economics provides the unit-cost analysis
 - **[[concepts/outcome-based-pricing]]**: Gateways enable tracking spend-to-outcome ratios
 - **[[concepts/llm-integration-patterns]]**: Gateway is one of several AI integration patterns
-- **[[context-engineering/context-management]]**: Context efficiency reduces gateway-routed costs
+- **[[concepts/context-engineering/context-management]]**: Context efficiency reduces gateway-routed costs

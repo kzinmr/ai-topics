@@ -62,7 +62,7 @@ Modern attention implementations address this. [[concepts/flash-attention-4]] su
 
 ## Practical Impact for RL Training
 
-Batch invariance is especially important in reinforcement learning contexts like [[grpo-rl-training]], where:
+Batch invariance is especially important in reinforcement learning contexts like [[concepts/post-training/grpo-rl-training]], where:
 
 - Rollout generation produces **variable-length sequences**, leading to irregular batching
 - The number of micro-batches per step can vary between runs
@@ -79,4 +79,4 @@ Without deterministic training infrastructure — including ordered gradient acc
 | Training speed | Faster | Slower |
 | Reproducibility | Approximate | Exact |
 
-Batch invariance is achieved by eliminating all sources of non-determinism — primarily unordered `atomicAdd` operations — and replacing them with fixed-order reductions. This trades some throughput for exact reproducibility, which is increasingly important for RL training pipelines. See [[rl-interview-questions-2026]] for the original interview context.
+Batch invariance is achieved by eliminating all sources of non-determinism — primarily unordered `atomicAdd` operations — and replacing them with fixed-order reductions. This trades some throughput for exact reproducibility, which is increasingly important for RL training pipelines. See [[concepts/post-training/rl-interview-questions-2026]] for the original interview context.

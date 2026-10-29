@@ -273,7 +273,7 @@ This traces a **Pareto curve** as β varies. Different methods are different poi
 - [[concepts/post-training/on-policy-self-distillation]] — OPSD: same-model self-distillation for reasoning (Zhao et al., 2026)
 - [[concepts/post-training/sdar-self-distilled-agentic-rl]] — SDAR: gated OPSD + GRPO for multi-turn agent training (2026)
 - [[concepts/model-distillation]] — Broader category of distillation techniques
-- [[concepts/post-training/post-training-distributional-view]] — SFT vs RL vs OPD through a distributional lens
+- [[concepts/post-training-distributional-view]] — SFT vs RL vs OPD through a distributional lens
 - [[concepts/post-training/grpo-rl-training]] — The RL framework OPD was implemented on top of
 - [[entities/thinking-machines-lab]] — Research lab that authored the foundational OPD paper
 - [[entities/will-brown]] — Author of gradient-geometric analysis of OPD vs SFT vs RL

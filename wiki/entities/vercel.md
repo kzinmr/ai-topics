@@ -78,7 +78,7 @@ Vercel is expanding beyond its frontend hosting roots into AI infrastructure:
 
 ### Software Factory of Agents (August 2026)
 
-Vercel disclosed it is using a **software factory of agents** to build its AI SDK, with **35% of PRs coming from the factory** (Ben's Bites, Aug 2026). This is a concrete instance of the [[concepts/agent-team-swarm|software factory]] pattern — a fleet of coding agents autonomously producing a meaningful share of production PRs on a flagship open-source library, consistent with the Dark Factory / L5 tier of the 5-level agent-team model.
+Vercel disclosed it is using a **software factory of agents** to build its AI SDK, with **35% of PRs coming from the factory** (Ben's Bites, Aug 2026). This is a concrete instance of the [[concepts/multi-agents/agent-team-swarm|software factory]] pattern — a fleet of coding agents autonomously producing a meaningful share of production PRs on a flagship open-source library, consistent with the Dark Factory / L5 tier of the 5-level agent-team model.
 
 ## Related Concepts
 

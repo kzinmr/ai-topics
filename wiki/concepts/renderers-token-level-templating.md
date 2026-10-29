@@ -19,7 +19,7 @@ sources:
 
 # renderers: Token-Level Templating for Agentic RL
 
-A standalone Python library by [[entities/prime-intellect|Prime Intellect]] that gives developers full control over conversation formatting for [[reinforcement-learning|RL]] and multi-turn inference. Open-sourced May 12, 2026.
+A standalone Python library by [[entities/prime-intellect|Prime Intellect]] that gives developers full control over conversation formatting for [[concepts/post-training/reinforcement-learning|RL]] and multi-turn inference. Open-sourced May 12, 2026.
 
 **PyPI:** `pip install renderers` | **GitHub:** [PrimeIntellect-ai/renderers](https://github.com/PrimeIntellect-ai/renderers)
 
@@ -102,8 +102,8 @@ Collaborating with **NVIDIA, vLLM, SGLang** to make `renderers` a reference stan
 ## Related Pages
 
 - [[entities/prime-intellect]] — company behind renderers
-- [[verifiers-rl]] — verifiable RL training using renderers
-- [[reinforcement-learning]]
-- [[grpo]]
+- [[concepts/post-training/verifiers-rl]] — verifiable RL training using renderers
+- [[concepts/post-training/reinforcement-learning]]
+- [[concepts/post-training/grpo]]
 - [[concepts/trl-transformer-reinforcement-learning]]
 - [[concepts/harness-engineering/agent-harness]] — harness boundary interaction

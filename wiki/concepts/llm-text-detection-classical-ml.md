@@ -86,7 +86,7 @@ These findings highlight an ongoing [[evaluation/red-teaming-adversarial-eval|re
 
 ## Implications for AI Safety
 
-Classical ML text detection has several implications for [[ai-slop|AI slop]] mitigation and content integrity:
+Classical ML text detection has several implications for [[concepts/ai-slop|AI slop]] mitigation and content integrity:
 
 - **Low-cost deployment**: Unlike neural detectors requiring GPU inference, classical models can run anywhere — browsers, content moderation pipelines, edge devices — making them practical for large-scale screening
 - **Transparency**: Feature-based models are inherently more interpretable than neural black boxes, allowing content platforms to explain why content was flagged
@@ -115,7 +115,7 @@ The classical ML approach challenges the assumption that complex problems always
 
 - **Sustainability of the approach**: As LLMs improve, will stylometric signals persist or vanish? Some research suggests that even advanced models retain measurable statistical signatures distinct from human writing
 - **Language and domain specificity**: Stylometric features optimized for English web fiction may not transfer to technical writing, academic prose, or non-English languages without retraining
-- **Arms race dynamics**: The detection-evasion cycle mirrors broader [[ai-safety|AI safety]] concerns about the difficulty of reliably monitoring AI outputs
+- **Arms race dynamics**: The detection-evasion cycle mirrors broader [[concepts/security-and-governance/ai-safety|AI safety]] concerns about the difficulty of reliably monitoring AI outputs
 
 ## References
 

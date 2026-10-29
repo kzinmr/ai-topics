@@ -15,7 +15,7 @@ sources:
 
 # OpenContext
 
-OpenContext is an open-source context runtime for AI agents, released by the Alloomi team as the working implementation of the "holistic context" layer that powers [[alloomi-ai]]. It embeds into agentic applications as a **context harness** — the substrate that gives an agent a durable, structured view of its environment rather than a flat retrieval-over-static-documents assumption.
+OpenContext is an open-source context runtime for AI agents, released by the Alloomi team as the working implementation of the "holistic context" layer that powers [[entities/alloomi-ai]]. It embeds into agentic applications as a **context harness** — the substrate that gives an agent a durable, structured view of its environment rather than a flat retrieval-over-static-documents assumption.
 
 ## What It Is
 
@@ -41,8 +41,8 @@ OpenContext is the open, reusable context layer; Alloomi AI is the commercial, f
 
 ## Related
 
-- [[alloomi-ai]]
+- [[entities/alloomi-ai]]
 - [[context-engineering]]
 - [[agent-memory]]
 - [[agent-harness]]
-- [[self-evolving-agents]]
+- [[concepts/self-evolving-agents]]

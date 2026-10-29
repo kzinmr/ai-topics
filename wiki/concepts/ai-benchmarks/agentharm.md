@@ -16,7 +16,7 @@ related_concepts:
   - "[[concepts/ai-agents]]"
   - "[[red-teaming]]"
   - "[[safety-evaluation]]"
-  - "[[agent-security-bench]]"
+  - "[[concepts/ai-benchmarks/agent-security-bench]]"
 ---
 
 # AgentHarm
@@ -51,11 +51,11 @@ The benchmark includes **110 core malicious agent tasks** expandable to **440 ta
 
 ## Related Benchmarks
 
-- [[agentdojo]] — Tests prompt injection attacks and defenses in agents
-- [[injecagent]] — Benchmarks indirect prompt injection vulnerabilities
-- [[agent-security-bench]] — Comprehensive attack/defense evaluation for LLM agents
-- [[decodingtrust]] — Trustworthiness evaluation covering toxicity and safety
+- [[concepts/ai-benchmarks/agentdojo]] — Tests prompt injection attacks and defenses in agents
+- [[concepts/ai-benchmarks/injecagent]] — Benchmarks indirect prompt injection vulnerabilities
+- [[concepts/ai-benchmarks/agent-security-bench]] — Comprehensive attack/defense evaluation for LLM agents
+- [[concepts/ai-benchmarks/decodingtrust]] — Trustworthiness evaluation covering toxicity and safety
 
 ## Connections to Other Wiki Concepts
 
-AgentHarm highlights a critical gap in **safety evaluation**: models that appear safe in chat mode may become harmful when deployed as **[[concepts/ai-agents]]** with tool access. The benchmark's focus on **red-teaming** agent systems complements [[agentdojo]]'s prompt injection focus and [[agent-security-bench]]'s formalized attack taxonomy. It underscores that [[safety-evaluation]] must account for the unique risk surface introduced by agent architectures and tool integration.
+AgentHarm highlights a critical gap in **safety evaluation**: models that appear safe in chat mode may become harmful when deployed as **[[concepts/ai-agents]]** with tool access. The benchmark's focus on **red-teaming** agent systems complements [[concepts/ai-benchmarks/agentdojo]]'s prompt injection focus and [[concepts/ai-benchmarks/agent-security-bench]]'s formalized attack taxonomy. It underscores that [[safety-evaluation]] must account for the unique risk surface introduced by agent architectures and tool integration.

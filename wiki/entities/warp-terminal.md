@@ -192,7 +192,7 @@ Triage agent → Spec agent → Implementation agent → Code review agent → V
 - The era of unlimited token budgets for interactive agents is ending.
 - The future is **ROI-driven automation** — token spend must justify itself in terms of factory efficiency.
 
-This shift embodies [[concepts/agentic-engineering]] applied at the organizational level, treating the entire engineering org as an [[concepts/agent-team-swarm]] with Oz as the orchestration layer. The factory model also relates to [[concepts/harness-engineering]], where Oz provides the multi-harness control plane for this automated pipeline.
+This shift embodies [[concepts/agentic-engineering]] applied at the organizational level, treating the entire engineering org as an [[concepts/multi-agents/agent-team-swarm]] with Oz as the orchestration layer. The factory model also relates to [[concepts/harness-engineering]], where Oz provides the multi-harness control plane for this automated pipeline.
 
 ### Self-Improving Code Review (July 2026)
 

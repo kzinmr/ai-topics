@@ -158,7 +158,7 @@ The CAIS model has proven remarkably prescient when viewed from 2026:
 
 - [[entities/k-eric-drexler]] — Author of the CAIS framework
 - [[concepts/superintelligence]] — Broader topic of AI surpassing human capabilities
-- [[concepts/ai-safety]] — Safety implications of advanced AI
+- [[concepts/security-and-governance/ai-safety]] — Safety implications of advanced AI
 - [[concepts/nick-bostrom]] — Contrasting agent-centric superintelligence framework
 - [[concepts/intelligence-explosion]] — Recursive self-improvement dynamics
 - [[concepts/agi-economics]] — Economic implications of generalized AI

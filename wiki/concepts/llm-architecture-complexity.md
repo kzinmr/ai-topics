@@ -104,7 +104,7 @@ As [[entities/andrej-karpathy|Andrej Karpathy]] has demonstrated over years of w
 Raschka identifies **multi-head latent attention (MLA)** as the clear winner of the KV cache efficiency competition. MLA uses compressed key-value representations, dramatically reducing the memory footprint of long-context inference. Combined with sparse attention patterns and hybrid architectures, MLA enables affordable long-context processing in modern models like Qwen 3.5.
 
 ### RLVR and the Future of Process Verification
-[[concepts/rlvr|Reinforcement learning with verifiable rewards (RLVR)]] has become a major post-training technique since DeepSeek-R1 (2025). Unlike pre-training and SFT which share the same underlying loss function, RLVR introduces a separate objective based on whether the model's output — a correct math answer, a passing test — is correct. The verification happens at the **end** of the attempt.
+[[concepts/post-training/rlvr|Reinforcement learning with verifiable rewards (RLVR)]] has become a major post-training technique since DeepSeek-R1 (2025). Unlike pre-training and SFT which share the same underlying loss function, RLVR introduces a separate objective based on whether the model's output — a correct math answer, a passing test — is correct. The verification happens at the **end** of the attempt.
 
 Raschka predicts the next frontier is **process reward models (PRMs)** that check intermediate reasoning steps, not just final answers. DeepSeek-R1 already experimented with this but found it 'had not worked particularly well.' A future model may combine RLVR with a reliable enough PRM to strengthen the model's refinement loop.
 

@@ -9,9 +9,9 @@ sources:
     arxiv: "2506.11763"
     year: 2025
 related_concepts:
-  - "[[gaia-benchmark]]"
-  - "[[scienceagentbench]]"
-  - "[[re-bench]]"
+  - "[[concepts/ai-benchmarks/gaia-benchmark]]"
+  - "[[concepts/ai-benchmarks/scienceagentbench]]"
+  - "[[concepts/ai-benchmarks/re-bench]]"
   - "[[gaia2-are]]"
 ---
 
@@ -53,9 +53,9 @@ DeepResearch Bench is structured around research tasks that require genuine mult
 
 ## Related Benchmarks
 
-- **[[gaia-benchmark]]**: Tests general assistant capabilities including some research tasks; DeepResearch Bench specifically targets deep, multi-step research
-- **[[scienceagentbench]]**: Evaluates scientific analysis tasks that may require research but focuses on data-driven workflows
-- **[[re-bench]]**: Tests ML research capabilities; DeepResearch Bench covers research across all domains
+- **[[concepts/ai-benchmarks/gaia-benchmark]]**: Tests general assistant capabilities including some research tasks; DeepResearch Bench specifically targets deep, multi-step research
+- **[[concepts/ai-benchmarks/scienceagentbench]]**: Evaluates scientific analysis tasks that may require research but focuses on data-driven workflows
+- **[[concepts/ai-benchmarks/re-bench]]**: Tests ML research capabilities; DeepResearch Bench covers research across all domains
 - **[[gaia2-are]]**: Scales up agent environments and evaluations, including research-heavy tasks
 
 ## Connections to Other Wiki Concepts

@@ -34,7 +34,7 @@ SkillsBench uses a structured evaluation framework within the BenchFlow ecosyste
 
 - **Skill learning tasks**: Scenarios where agents must acquire new capabilities from provided examples or documentation
 - **Application tests**: Novel tasks that require the agent to apply previously learned skills
-- **Dockerized execution**: Runs within the [[benchflow-tool]] framework for reproducible evaluation
+- **Dockerized execution**: Runs within the [[concepts/ai-benchmarks/benchflow-tool]] framework for reproducible evaluation
 - **Open-source**: Available on GitHub at benchflow-ai/skillsbench for community contribution
 - **Standardized skill definitions**: Well-defined skill specifications that enable consistent evaluation across agents
 
@@ -47,11 +47,11 @@ SkillsBench uses a structured evaluation framework within the BenchFlow ecosyste
 
 ## Related Benchmarks
 
-- [[clawsbench]] — BenchFlow's benchmark for agent clawback/recovery testing
-- [[benchflow-tool]] — The BenchFlow evaluation framework that hosts SkillsBench
-- [[hal-leaderboard]] — Princeton's aggregated agent evaluation leaderboard
-- [[trail]] — Agent trace reasoning and issue localization
+- [[concepts/ai-benchmarks/clawsbench]] — BenchFlow's benchmark for agent clawback/recovery testing
+- [[concepts/ai-benchmarks/benchflow-tool]] — The BenchFlow evaluation framework that hosts SkillsBench
+- [[concepts/ai-benchmarks/hal-leaderboard]] — Princeton's aggregated agent evaluation leaderboard
+- [[concepts/ai-benchmarks/trail]] — Agent trace reasoning and issue localization
 
 ## Connections to Other Wiki Concepts
 
-SkillsBench addresses a fundamental question in [[agent-evaluation]]: can agents genuinely learn new capabilities, or do they merely apply existing knowledge? This connects to broader [[concepts/ai-agents]] research on adaptability and generalization. As part of the BenchFlow ecosystem alongside [[clawsbench]], SkillsBench contributes to a comprehensive view of agent capabilities that feeds into aggregated evaluations like [[hal-leaderboard]].
+SkillsBench addresses a fundamental question in [[agent-evaluation]]: can agents genuinely learn new capabilities, or do they merely apply existing knowledge? This connects to broader [[concepts/ai-agents]] research on adaptability and generalization. As part of the BenchFlow ecosystem alongside [[concepts/ai-benchmarks/clawsbench]], SkillsBench contributes to a comprehensive view of agent capabilities that feeds into aggregated evaluations like [[concepts/ai-benchmarks/hal-leaderboard]].
