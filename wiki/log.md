@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-10-29] watchdog | auto-fix: wikilink namespacing + stub redirects
+
+- **Namespace/nesting fix**: 123 broken-link targets with unique filesystem resolutions remapped across 252 files (874 replacements) — e.g. `[[concepts/ai-safety]]`→`[[concepts/security-and-governance/ai-safety]]`, `[[grpo]]`→`[[concepts/post-training/grpo]]`, 20+ `ai-benchmarks/*` slugs, `[[entities/coding-agents]]`→`[[concepts/coding-agents/coding-agents]]`, `[[concepts/claude-code/claude-code]]`→`[[entities/claude-code]]`.
+- **rag alias**: bare `[[rag]]`/`[[concepts/rag]]` → `[[concepts/rag-systems]]` across 10 files (15 refs).
+- **Duplicate stubs → redirects** (5): `dspyrlm`→`dspy-rlm`, `open-claw-ecosystem`→`openclaw-ecosystem`, `evals-skills` + `evals-skills-for-coding-agents`→`comparisons/evals-skills`, `llm-integration-patterns`→`comparisons/llm-integration-patterns`; 9 incoming refs re-pointed.
+- **Broken links**: 3,348 → 2,464 refs (−884, −26%); targets 1,590 → 1,465.
+- **Already-clean** (no action): index corruption 0, L2 pipe/triple-bracket 0, no-frontmatter 0.
+- **Deferred to humans**: `newsletter-wiki-ingest`/`blog-wiki-ingest` HTTP 503 (local LLM busy), `dreaming-wiki-ingest` truncation; 59 genuinely-missing high-ref concepts (`agent-evaluation` 24, `agentic-rl` 14, `cursor` 13, `ai-governance` 12, `enterprise-ai` 12); 278 empty wikilinks (0 auto-fixable, matches known stable residual).
+- **Left untouched**: 9 sibling-pipeline WIP files (harvey, pinecone, hex-technologies, deepmind, sierra, raw-works, zig, gemini/index, gemini-4-argon event).
+
+---
+
 ## [2026-10-29] trending-topics
 
 - New concepts: [[concepts/anti-llm-obfuscation]] (servicepipe.tech safeguard-bait script, HN 1314; Astra/Daybreak vs GLM-5.3 refusal split), [[concepts/weight-compiled-computers]] (Qwenputer RISC-V-in-weights, HN 532), [[concepts/model-level-political-censorship]] (Google AI Mode 2020-election evasion, Ars Technica)
