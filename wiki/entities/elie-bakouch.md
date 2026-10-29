@@ -2,7 +2,7 @@
 title: Elie Bakouch
 type: entity
 created: 2025-11-17 16:10:46
-updated: 2026-06-10
+updated: 2026-10-29
 aliases: [eliebak, eliebakouch]
 status: active
 description: "ML engineer and researcher at Prime Intellect (formerly Hugging Face), known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training."
@@ -50,6 +50,14 @@ His research philosophy emphasizes **data quality over quantity**, **architectur
 | Jun 2026 | Published 47-tweet deep dive analysis of [[concepts/mai-thinking-1-tech-report|Microsoft MAI-Thinking-1 tech report]] — 1,500+ likes, 1,100+ bookmarks, highlighting zero-distillation design, scaling ladder transparency, and modified GRPO |
 | Jun 2026 | Endorsed [[concepts/marin|Marin]], Stanford's open-source foundation model training framework, praising its scientific approach and fully open development process |
 | Jun 2026 | Criticized Anthropic's [[concepts/claude/fable-5|Claude Fable 5]] release — argued that Mythos-class models are deliberately weakened on "frontier LLM research" tasks, calling the lack of transparency "crazy" (3,800+ likes, 1.2M impressions) |
+| Oct 29 2026 | Published a weight-level architecture dissection of the newly open-weighted [[concepts/mistral-large-4|Mistral Large 4]] (https://x.com/eliebakouch/status/2115929950104732027) — full sparse attention, NoPE/RoPE layer split with KV-cache sharing after layer 35 and indexer sharing from layer 17, MLA/DSA-style indexer with unnormed-but-not-downprojected query, SSMax + LeRoPE for long context, wider/deeper than ML3, no KV compression |
+
+## Weight-level model dissections (method)
+
+Bakouch's signature contribution is reading *released tensors* rather than tech reports. His Mistral Large 4 thread (Oct 29 2026) is a good example of the method and of its failure modes:
+
+- He compared ML4's **indexer weights** across layers against GLM and DeepSeek, finding that ML4's indexers are far more layer-to-layer divergent, whereas GLM/DeepSeek show a **blockwise structure** he likens to "jspace" (flagged for later investigation). He also noted ML4's indexer attention maps diverge more from its full attention maps than DeepSeek/GLM's do.
+- **Provenance lesson**: he assumed **LeRoPE** was a Mistral-invented technique purely from the name, then corrected himself — it is an independent arXiv paper (Karypis, O'Brien, Kadekodi, Zhu, McAuley, arXiv:2607.10134, July 2026) from a San Diego lab, and *YaRN + a learned per-frequency term*. He treats brand-name architecture terms ("YaRN", "MLA", "DSA", "LeRoPE") as unreliable provenance signals. See [[raw/articles/arxiv.org--abs-2607.10134--2026-07-11|raw article]].
 
 ## Core Ideas
 

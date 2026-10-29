@@ -2,11 +2,12 @@
 title: "Mistral Large 4 (ML4)"
 type: concept
 created: 2026-10-25
-updated: 2026-10-25
+updated: 2026-10-29
 tags: [mistral, model, open-source, multimodal, frontier-models, code-model, reasoning, cybersecurity, infrastructure]
 sources:
   - "https://mistral.ai/news/mistral-large-4/"
   - "[[raw/articles/2026-10-06_mistral-ai_mistral-large-4-announcement]]"
+  - "[[raw/articles/arxiv.org--abs-2607.10134--2026-07-11]]"
 confidence: medium
 related:
   - "[[entities/mistral-ai]]"
@@ -68,6 +69,21 @@ ML4 is Mistral's clearest statement of the [[concepts/sovereign-ai]] thesis in a
 ## Reinforcement learning at scale
 
 Mistral's post-training RL library uses a **shared, composable interface**: one training run combines single-turn chat, scientific problem solving, safety alignment, factuality, and long-horizon tool use; environments share scaffolds (code sandboxes, web search, APIs) and verification (reward models, unit tests, LLM judges, static checks). An autoscaling actor fleet generates tens of thousands of parallel rollouts while training runs **asynchronously**, supporting **million-token rollout budgets** with multiple compactions at low staleness, minimizing off-policy drift. At the current **3k-GPU** scale a single run yields **~33B tokens/day**, ~16B of them trainable completion tokens. See [[concepts/post-training/rlvr]].
+
+## Inside the open weights (Elie Bakouch dissection, Oct 29 2026)
+
+Weights released as promised, and @eliebakouch (Prime Intellect) published a weight-level architecture read on X (https://x.com/eliebakouch/status/2115929950104732027):
+
+- **Full sparse attention** — same family direction as DeepSeek V3.2 and the GLM-5.X series.
+- **KV-cache sharing** on NoPE (no-positional-encoding) layers after layer 35; **indexer sharing** on RoPE layers from layer 17 onward. RoPE layers never share an indexer with NoPE layers.
+- **Indexer**: "classical MLA/DSA" with one tweak — the query is *not* down-projected; a norm is added instead.
+- **Indexer weight structure**: ML4's indexers diverge much more from layer to layer than GLM/DeepSeek, where a clear **blockwise structure** is visible (Bakouch notes a resemblance to "jspace" and flags it for follow-up). Indexer maps also differ markedly from full attention maps — more than in DeepSeek/GLM.
+- **Two long-context changes**: **SSMax** (per-head learned term that adapts logit scaling; he notes muse-style and Chinese-lab models generally omit it) and **LeRoPE**, described as *"YaRN + a learned term per frequency speed"*.
+- **Shape**: much wider **and** deeper than Mistral Large 3; **no KV-cache compression**.
+
+**Provenance correction**: Bakouch initially assumed "LeRoPE" was a Mistral-invented technique based on the name; it is actually an independent arXiv paper — *LeRoPE: Learnable RoPE Frequencies Improve Language Modeling* (Karypis, O'Brien, Kadekodi, Zhu, McAuley, arXiv:2607.10134, July 11 2026) from a San Diego lab. See [[raw/articles/arxiv.org--abs-2607.10134--2026-07-11|raw article]]. The paper learns one scalar per RoPE frequency instead of fixing a geometric base, validated on a 52M→2.5B from-scratch ladder; at 2.5B, vanilla RoPE needs **3.4% more FLOPs** to match — author-reported, not verified at frontier scale.
+
+*Contested/unverified*: this is a single researcher's weight-level inference from released tensors, not an official Mistral architecture document; SSMax and LeRoPE usage should be treated as reported-by-Bakouch until a Mistral tech report confirms it.
 
 ## Significance
 

@@ -6,7 +6,7 @@ tags:
   - writing
 sources: []
 created: 2026-04-24
-updated: 2026-09-27
+updated: 2026-10-29
 type: entity
 ---
 
@@ -80,6 +80,11 @@ Sarah advocates for:
 
 - **"We aren't releasing an assistant, but you start with cloud.cerebras.ai"** (Sep 27, 2026, X reply) — In response to a question about whether she and @0xSero were shipping their own agent/assistant product, Sarah clarified that their stance is tool-agnostic: they push people to start from raw fast inference ([[entities/cerebras-systems|Cerebras Cloud]]) and build their own harness, rather than adopting a packaged assistant from them. Consistent with the Back of House philosophy of owning the workflow.
   - 🔗 [Cerebras Cloud](https://cloud.cerebras.ai) · [X post](https://x.com/milksandmatcha/status/2104043237396918568)
+
+### October 2026
+
+- **"4-bit follows the hugging face implementation"** (Oct 29, 2026, X reply to @ravagelaserbeak / @seanlie / @cerebras) — Sarah clarified the provenance of the 4-bit [[concepts/kimi-k3|Kimi K3]] checkpoint running on [[entities/cerebras-systems|Cerebras]]: it follows the Hugging Face implementation (moonshotai/Kimi-K3) rather than being an independent Cerebras quantization. The surrounding thread framed it as an F16→F4 condensation traded for faster inference, driven by Cerebras' SRAM/power/cost constraints.
+  - 🔗 [HF model card](https://huggingface.co/moonshotai/Kimi-K3) · [X post](https://x.com/milksandmatcha/status/2115868147396096334) · see [[concepts/kimi-k3#quantization-provenance-oct-29-2026]]
 
 ## Related Concepts
 

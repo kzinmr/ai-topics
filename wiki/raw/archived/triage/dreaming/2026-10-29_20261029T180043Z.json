@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-10-29T18:39:03.354863+00:00",
+  "triage_run_id": "20261029T180043Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming-group上流がoutput length limitで失敗したため、checkpoint(latest.json)が空(particles=0, recent_raw_articles=242)だったことからPattern E filesystem scanを直接実行。archive_index不在の130件(3日分)をprobeで抽出し、AI関連候補を本文読了のうえ判定した。take=0、reference=4（Modal×Sakana Namazu NVFP4/spec-decodeケーススタディ、Willison vibe game development inflection、GitHub Octoverse 2026エージェント由来のコード量データ、Goedecke「AIが上手くなるスキル」2本）、skip=4バッチ（非AI・既存カバー済み）。既存リッチページはpatchで追記し、index/log更新後にアーカイブする。",
+  "decisions": [
+    {
+      "item_id": "dreaming-20261029-nai-tech-history",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Non-AI tech-history / hardware / gadget batch (dfarq TI-99-4A + IBM PC 5150, shkspr Soundpeats review + book review, jeffgeerling Noctua fan swap, entropicthoughts MTL circuit simulator, johndcook math x2, devblogs oldnewthing x2, macrumors MacBook Studio/touchscreen, apple newsroom M6 MacBook Pro/iMac/Creator Studio, wired touch-display Mac, dynomight shorts-8, herman upvote dilemma, maurycyz email thoughts, bearblog)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★1 Personal/hardware/tech-history/math content with zero AI/LLM/agent relevance. Batch-skipped per daily-rss-triage non-AI filter.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch entry - individual bodies read at title/frontmatter level)"
+    },
+    {
+      "item_id": "dreaming-20261029-nai-opinion",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Non-AI opinion / general-tech essays (pluralistic principle-agent-problem, wheresyoured exit-liquidity, borretti we-wont-just-hang-out, miguelgrinberg full-time OSS, nesbitt this-week-in-source-control, blog.coredump deus-ex-machina, experimental-history fake-it-til-you-make-it, tedium ai-startups-sketchy-behavior)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★1 Editorial essays outside the AI/LLM/agent scope, or source-control roundups whose Scion/Mononoke/Entire/GitHub-Azure security content is already covered by entities/scion-anthropic-version-control.md, entities/entire.md, entities/sunshowers-rain.md and concepts/github-actions-secrets-exfiltration.md. Skipped as already-covered.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch entry - Scion/Mononoke/Entire/Gheist coverage verified via grep)"
+    },
+    {
+      "item_id": "dreaming-20261029-already-covered-sitemap",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Sitemap batch already covered by same-day/other pipelines (modal sakana duplicate of the reference above is excluded; voyage-jev x2, liquid-ai-lfm3, database-architects benchmarking-crisis, anthropic-drug-development, openai cpu-cache covert channel, survival-llm, cohere qwen3-8 exfiltration x2, cloudflare kv cache exposure, glean x4, pinecone pg-pinecone, hex x3, harvey x6, elevenlabs x6, parallel-web x2, factory-deployment, workos auth-md, xeiaso, daringfireball wysiwyg)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★1 Either created by active-crawl (11:00 UTC, 5 pages + 1 enrichment: LFM3, CPU-cache covert channels, Anthropic drug dev, Benchmarking Crisis, Survival LLM, Voyage JEV) or low-value company product-marketing posts. Verified against wiki/log.md same-day entries and archive_index.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch entry - cross-checked against log.md active-crawl entry and 2026-10-28/29 git log)"
+    },
+    {
+      "item_id": "dreaming-20261029-willison-misc",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Willison quote-links (terk-terkowitz, ted-sanders) and misc small links (nr.apple.com redirect)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★1 Author/quote link posts with no substantive standalone content; Simon Willison entity page accumulates quote posts only when they carry an argument.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(link-blog stubs)"
+    }
+  ]
+}

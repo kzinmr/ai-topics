@@ -1143,6 +1143,7 @@
     "https://modal.com/blog/inkling-by-thinking-machines-labs-now-available-on-modal",
     "https://modal.com/blog/kimi-k3-by-moonshot-now-available-on-modal",
     "https://modal.com/blog/nvidia-vera-sandboxes",
+    "https://modal.com/blog/sakana-case-study",
     "https://modal.com/blog/spec-is-all-u-need",
     "https://modal.com/blog/unpacking-sandbox-startup-latency",
     "https://morphing.cloud/hypercard/",
@@ -1555,6 +1556,7 @@
     "https://seangoedecke.com/c2pa-only-works-if-everything-is-signed/",
     "https://seangoedecke.com/doing-nothing-at-work/",
     "https://seangoedecke.com/dont-anthropomorphize-big-tech-companies/",
+    "https://seangoedecke.com/getting-good-at-ai-takes-time-and-practice/",
     "https://seangoedecke.com/giving-and-taking-credit/",
     "https://seangoedecke.com/impro/",
     "https://seangoedecke.com/in-defense-of-not-understanding-your-codebase/",
@@ -1916,6 +1918,8 @@
     "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
     "https://simonwillison.net/2026/Oct/24/battledrones/",
     "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+    "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+    "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
     "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
     "https://sixcolors.com/post/2026/07/always-choose-the-good-soap/",
     "https://sixcolors.com/post/2026/07/apple-announces-record-q3-results/",
@@ -2955,5 +2959,5 @@
     "https://youtu.be/Dqp_b8GHLXU?t=1074",
     "substack app-link / redirect / profile links"
   ],
-  "updated": "2026-10-29T10:42:08.609111+00:00"
+  "updated": "2026-10-29T18:39:03.355511+00:00"
 }

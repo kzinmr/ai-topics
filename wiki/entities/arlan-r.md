@@ -4,7 +4,7 @@ tags: [person]
 sources:
   - https://www.folk.com/
 created: 2026-04-24
-updated: 2026-09-15
+updated: 2026-10-29
 type: entity
 ---
 
@@ -118,7 +118,7 @@ Rakhmetzhanov's approach to building in public — launching on Product Hunt, co
 |---------|-------------|--------|
 | **Nozomio** | AI coding agents product lab; "hope" in Japanese | Active, YC S25 |
 | **Nia** | Context tool for AI coding agents (Cursor, Copilot) | Active, flagship product |
-| **folk** | [folk.com](https://www.folk.com/) — "the friend in your texts": personal agent living in iMessage; books tables, watches flights, drafts texts, adds events to Google Calendar from a plain text message and pings you before ([X, Sep 2 2026](https://x.com/arlanr)) | Active (as of Sep 2026) |
+| **folk** | [folk.com](https://www.folk.com/) — "the friend in your texts": personal agent living in iMessage; books tables, watches flights, drafts texts, adds events to Google Calendar from a plain text message and pings you before ([X, Sep 2 2026](https://x.com/arlanr)) | Active — **+170,000 users in ~4 days** as of Oct 29 2026 |
 | **Extracurrify** | College application and extracurricular tracking tool | Past project |
 | **Product Hunt MVP** | Early Nia prototype that won "Product of the Day" | Jan 2025 |
 
@@ -128,6 +128,10 @@ Rakhmetzhanov's approach to building in public — launching on Product Hunt, co
 |-------|--------|-----------|------|
 | Pre-Seed | <$1M | Angel investors (including $5K from YC founder via cold outreach) | Apr 2025 |
 | Seed | $6.2M | CRV (lead), BoxGroup, LocalGlobe, Y Combinator; Angels: Paul Graham, Spotify CTO | Jun 2025 |
+
+## Recent X Activity
+
+- **folk growth spurt** (Oct 29 2026, https://x.com/arlanr/status/2115906951968379346, 11.7K impressions / 150 likes / 30 bookmarks / 35 replies): *"added another 170,000 users to folk.com since monday. without booking a single flight btw"* — self-reported, unaudited user growth for **folk**, with the punchline that the spike was **not** driven by its flight-tracking feature. The "without booking a single flight" framing implies the app's non-travel uses (habit check-ins, exam accountability, streaks) are now the growth driver rather than the travel concierge demo it was originally pitched with.
 
 ## Related
 

@@ -2,6 +2,23 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-10-29 22:45 UTC] ingest | x-accounts-scan: Mistral Large 4 weight dissection + LeRoPE provenance; Kimi K3 4-bit origin; Small Talk plugins ep
+
+5 substantive candidates from 11 accounts (budget 12/84). 5 ingested, 0 new pages, 6 pages updated + 1 raw article.
+
+**Raw (1)**: `raw/articles/arxiv.org--abs-2607.10134--2026-07-11.md` — LeRoPE: Learnable RoPE Frequencies Improve Language Modeling (Karypis/O'Brien/Kadekodi/Zhu/McAuley, UC San Diego group, arXiv July 11 2026). Abstract scraped from arXiv; learns one scalar per RoPE frequency, validated 52M→2.5B from-scratch ladder, vanilla RoPE needs 3.4% more FLOPs to match at 2.5B.
+
+**Updated (6)**:
+- `concepts/mistral-large-4.md` — new §"Inside the open weights" from @eliebakouch's weight-level read (full sparse attention à la V3.2/GLM-5.X, KV-cache sharing on NoPE layers >35, indexer sharing on RoPE layers ≥17, MLA/DSA indexer without q down-projection + norm, SSMax, LeRoPE, wider+deeper than ML3, no KV compression). Marked single-researcher inference, not official. +source, updated 10-29.
+- `entities/elie-bakouch.md` — timeline row for the ML4 thread + new §"Weight-level model dissections (method)" incl. the LeRoPE provenance self-correction (assumed Mistral-invented from the name; actually a San Diego lab paper) and the GLM/DeepSeek blockwise-indexer / "jspace" observation.
+- `concepts/kimi-k3.md` — new §"Quantization provenance": @MilksandMatcha's statement that the Cerebras-served 4-bit K3 follows the Hugging Face implementation (moonshotai/Kimi-K3), not an independent Cerebras quant; participant-side caveat noted.
+- `entities/milksandmatcha.md` — Oct 2026 § for the same reply.
+- `entities/thariq-shihipar.md` — new §"Vibe UI experiments": elemental fighting game UI explorations, "agents add too many details" complaint, Claude-artifact "Ring UI Directions" (5 directions × character select/component kit/screen flow), Claude-for-UI + GPT-for-images split.
+- `entities/geoffrey-litt.md` — new §Small Talk "Plugins and self-modifying software" w/ @mschoening (Oct 28), Spotify + RSS links, tied to his malleable-software/understanding-bottleneck line; transcript not yet available (TODO).
+- `entities/arlan-r.md` — folk +170K users since Monday (self-reported), "without booking a single flight" framing; Projects table status refreshed.
+
+**Skips**: none of the 5 candidates dropped; arlanr folk growth is engagement-only but kept as a dated metric on his own page. 73 accounts not scanned (request budget 12, cursor 3→14).
+
 ## [2026-10-29 19:05 UTC] skeleton-enrich-daily | No skeleton backlog (empty streak continues)
 
 Frontmatter-level scan of `wiki/entities/` + `wiki/concepts/` (regex `status:\s*skeleton` inside the YAML block): **0** matches. Status distribution: stub 439, active 165, complete 128, L3 62, draft 52, L2 39, redirect 24, L1 14, full 7, Level2 7, enriched 6, incomplete 6 — no `skeleton`. Only prose mentions remain (exoskeleton / skeleton repo / topology metaphor). Streak continues since 2026-10-17. No pages modified. Snapshot: [[queries/2026-10-29-skeleton-enrich-empty]].

@@ -3,7 +3,7 @@ title: Thariq Shihipar
 type: entity
 handle: "@trq212"
 created: 2026-04-10
-updated: 2026-08-01
+updated: 2026-10-29
 tags:
   - person
   - anthropic
@@ -281,6 +281,15 @@ Later the same day, Shihipar joined [[entities/simon-willison|Simon Willison]]'s
 - **Security posture**: "we're very secure" — Claude Tag uses auto mode (Sonnet classifier), supports provisioning credentials for Claude as an identity, "Swiss cheese defense" + RL against prompt injection.
 - **"Don't negotiate against yourself"**: co-founders' rule — make trade-offs show themselves, "be as ambitious as you can."
 - **Absurd build**: a 2D Street Fighter-style fighting game with himself and friends as characters, using Claude Code to prompt Gemini/Seedance for video animations and JSON hitboxes.
+
+## "Vibe UI" experiments on the elemental fighting game (Oct 29 2026)
+
+Continuing the 2D Street Fighter-style elemental fighting game he has been building with Claude Code, Shihipar posted a UI-exploration pair on X:
+
+- Root post (https://x.com/trq212/status/2115859137406054488): *"been working on my elemental fighting game again & decided to do some UI explorations — this is a 'vibe UI' using Claude and GPT for images, one of my frustrations of UI with agents is that it adds too many details but I like the direction"*.
+- Follow-up (https://x.com/trq212/status/2115859139536830515, 9K impressions / 59 likes / 9 bookmarks): five further directions, *"one of my favorites was this jumbotron look"*, exposed as a Claude artifact — **"Ring UI Directions"**: *"Five full UI directions for the game, each with a character select, a component kit and a screens flow"* (https://claude.ai/artifact/B47aZfcGm5pwdRd3quaWoY).
+
+**Why it matters**: this is a concrete, dated data point for the "agents over-decorate UI" failure mode — the model supplies *more* detail than the designer wants, so the useful artifact is a *set of directions* (character select + component kit + screen flow) that a human prunes, rather than a finished screen. Pairs with his [[concepts/vibe-coding|vibe coding]] commentary and with the general "AI should not be handed the last mile" position. The split model assignment (Claude for UI/code, GPT for images) is also a small example of his cross-vendor workflow inside one project.
 
 ## X Activity Themes
 

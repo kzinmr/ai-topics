@@ -3,7 +3,7 @@ title: Geoffrey Litt
 type: entity
 handle: "@geoffreylitt"
 created: 2026-04-10
-updated: 2026-08-17
+updated: 2026-10-29
 tags:
   - person
   - model
@@ -151,6 +151,18 @@ This positions Litt as a leading voice in the "human agency" camp of the softwar
 
 References:
 - [AIEWF Daily Dispatch: Autoresearch and the tension between AI and human agency](https://open.substack.com/pub/swyx/p/aiewf-daily-dispatch-agency) — Richard MacManus, July 2026
+
+## Small Talk podcast — "Plugins and self-modifying software" (Oct 28 2026)
+
+Litt's podcast **Small Talk** published an episode on the 2026 plugin renaissance, recorded with **@mschoening** (Michael Schöning). Promotional framing from the announcement Note Tweet (https://x.com/geoffreylitt/status/2115588731449274581):
+
+> *"Software plugins are evolving a lot right now. What's up with the new breed of self-modifying systems in 2026? And what are the enduring challenges?"*
+
+Distribution: [Spotify](https://open.spotify.com/episode/1M8Jx3zcio62JooNirT1nd) · [RSS](https://anchor.fm/s/1131bf314/podcast/rss) · [X thread](https://x.com/geoffreylitt/status/2115588733449949582).
+
+**Why it fits his thesis**: the "new breed of self-modifying systems" is Litt's malleable-software agenda arriving as a *product category* rather than a research demo — 2026's agent-plugin ecosystems (Claude Code plugins/skills, MCP servers, IDE extensions) are the mass-market version of the end-user-extensible systems he argued for in *Malleable software in the age of LLMs* (2023) and *Stevens: a hackable AI assistant*. The "enduring challenges" half of the question is the part his earlier work anticipates: plugins that rewrite themselves reintroduce the **understanding bottleneck** he made the headline of his AI Engineer 2026 talk.
+
+*Status*: episode content not yet ingested — the scan captured only the promotional posts, and no transcript is available. TODO: fetch transcript/audio if it lands on a public feed.
 
 ## Blog / Recent Posts
 

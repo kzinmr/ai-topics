@@ -2,7 +2,7 @@
 title: "Modal Labs"
 type: entity
 created: 2026-05-08
-updated: 2026-10-23
+updated: 2026-10-29
 tags:
   - company
   - infrastructure
@@ -11,6 +11,8 @@ tags:
   - ai-infrastructure
   - cpu
   - nvidia
+  - quantization
+  - speculative-decoding
 aliases: ["Modal", "Modal Labs, Inc."]
 sources:
   - https://modal.com/
@@ -22,6 +24,7 @@ sources:
   - raw/newsletters/2026-07-08-why-ai-infrastructure-must-evolve-for-agent-experience-akshat-bubna-modal-cto.md
   - raw/articles/modal.com--blog-nvidia-vera-sandboxes--1cb9000c.md
   - raw/newsletters/2026-10-22-why-ai-compute-comes-in-rectangles-erik-bernhardsson-modal-ceo.md
+  - raw/articles/modal.com--blog-sakana-case-study--eccf1dd8.md
 ---
 
 # Modal Labs
@@ -239,3 +242,26 @@ Sandboxes were launched after Erik and Akshat Bubna noticed LLMs could generate 
 The growth also changes what infrastructure must do: an agent may create an environment, run code, inspect the result, and retry many times, so the **latency of starting and restoring environments becomes part of the experience** (connecting to the Agent-Experience thesis and the sandbox-latency analysis above). See [[concepts/modal-sandboxes]].
 
 See also: [[concepts/agent-experience]], [[entities/sf-compute]]
+
+## Sakana Namazu case study — NVFP4 + custom speculators (Oct 29, 2026)
+
+Modal's Forward Deployed Engineering team published a kernel-level writeup of serving **Sakana Namazu**, a ~1T-parameter MoE optimized for Japanese business context, live web search, and code execution, at launch of its commercial API. It is the page's first documented production NVFP4 frontier deployment and the strongest evidence yet for the "Speculation Is All You Need" thesis above.
+
+**Quantization without compromise (non-English retention problem)**
+- Off-the-shelf PTQ recipes are validated on English benchmarks, so a model can pass standard checks while losing the capabilities that differentiate it — acute for a Japanese-first model, where calibration corpora miss register and tool-calling behavior.
+- **Selective expert quantization**: only the routed experts (the bulk of the parameters) were quantized to **NVFP4** (Blackwell's low-precision format); attention, the router, and the shared experts stayed at **BF16**.
+- **Domain-representative calibration**: calibration ran on Sakana-style conversations weighted heavily toward Japanese so every one of the model's **23,040 experts** saw representative traffic before its scales were fixed. Result matched Sakana's production checkpoint on Japanese instruction following "within the noise floor" of Sakana's own published benchmarks, at NVFP4 memory/throughput.
+
+**Custom draft model trained on raw token streams**
+- Generic draft models guess Sakana Namazu's Japanese business register poorly (**acceptance <40%**), so Modal trained a custom **DFlash** drafter on the model's own traffic.
+- Key implementation detail: training used the **exact token IDs the model emitted**, not decoded-and-re-tokenized text — re-tokenization destroys token-boundary alignment inside tool calls, JSON schemas, and reasoning markers, and that gap costs acceptance. Raw token IDs flowed from production into a corpus of **>30B tokens**.
+- Gains over a generic draft model: **+25% speculative token acceptance**, **~35% lower per-token decode latency**, **~40% more traffic per replica** before queue latency climbs (fewer GPUs for launch-day demand).
+- Second-generation drafter: the first was trained pre-launch on representative traffic. Once real requests flowed, Modal trained from scratch on **~1M real requests** using **DFlash2**, which holds up better at nonzero sampling temperatures (most of Namazu's traffic). A/B on two identical serving setups replaying 1,000 held-out requests with customers' actual sampling settings: **mean acceptance length 3.51 → 5.01 (+43%)**, **p99 latency 68s → 52s**.
+
+**Engine-release performance work** — biggest wins from A/B-testing new engine releases on the same hardware and request batch: removing a **CPU–GPU synchronization stall** in the speculative loop (**>90% less GPU idle per step**), routing NVFP4 MoE math to faster kernels (expert matmuls are ~60% of a decode step; tighter numerics also lifted draft acceptance **+9%** with the same drafter), and caching prefill dispatch / expert-runner setup (mostly TTFT).
+
+**Correctness across GPUs** — Namazu runs tensor-parallel across four GPUs, and speculative decoding requires every rank to agree on which drafted tokens were accepted. Modal instrumented the verification step across ranks, found a rare disagreement path, and made acceptance a single shared decision, eliminating a class of rare stalls with no quality change. Speculative decoding was also extended to **structured output**, so grammar-constrained JSON-schema tool calls get the same speedup with zero schema violations.
+
+**Routing & capacity** — post-launch, Modal's in-house **KV-aware router** was enabled with no code changes on Sakana's side: requests go to the replica most likely to already hold the prompt prefix, while balancing as replicas scale. Multi-minute TTFT spikes disappeared and per-replica queues fell to near zero at unchanged decode speed. Elastic (non-reserved) GPU capacity let Sakana launch without a months-ahead reservation — the counter-example to the reserved-capacity model in the "Compute comes in rectangles" section above. Quote: Masaya Ohagi (Applied Research Engineer). See [[entities/sakana-ai]], [[concepts/speculative-decoding]], [[concepts/model-quantization]].
+
+Source: raw/articles/modal.com--blog-sakana-case-study--eccf1dd8.md

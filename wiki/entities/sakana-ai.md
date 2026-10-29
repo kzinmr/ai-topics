@@ -1,7 +1,7 @@
 ---
 title: "Sakana AI"
 created: 2026-05-28
-updated: 2026-06-22
+updated: 2026-10-29
 type: entity
 tags:
   - company
@@ -19,6 +19,10 @@ tags:
   - vlm
   - fugu
   - iclr-2026
+  - namazu
+  - mixture-of-experts
+  - quantization
+  - speculative-decoding
 sources:
   - https://sakana.ai/
   - https://sacra.com/c/sakana-ai/
@@ -27,6 +31,7 @@ sources:
   - https://www.asahi.com/ajw/articles/15434714
   - https://github.com/SakanaAI
   - wiki/raw/papers/2025-06-17_2506.14202_diffusionblocks-block-wise-training.md
+  - raw/articles/modal.com--blog-sakana-case-study--eccf1dd8.md
 aliases:
   - Sakana AI
   - SakanaAI
@@ -130,6 +135,19 @@ Fugu is grounded in two ICLR 2026 papers:
 - **Conductor**: RL-trained natural-language coordination that discovers communication patterns and focused prompts for agent teams
 
 Fugu achieves frontier-level performance — shoulder-to-shoulder with Fable 5 and Mythos Preview on engineering, science, and reasoning benchmarks — without single-vendor dependency. Integrates with [[concepts/codex/_index]] for coding workflows and AutoResearch for autonomous research.
+
+### 13. Sakana Namazu — ~1T MoE for Japanese business context (October 2026)
+
+**Sakana Namazu** is a ~1-trillion-parameter Mixture-of-Experts model optimized for **Japanese business context**, live web search, and code execution, launched with a commercial API in late October 2026. It is the wiki's first documented Sakana frontier-scale single model (distinct from the Fugu multi-agent-system-as-a-model approach above) and the first Namazu entry anywhere in the wiki — the Modal case study published the serving details.
+
+Serving was co-optimized with [[entities/modal-labs]] at the kernel level:
+- **NVFP4 with selective expert quantization** — only routed experts quantized (attention, router, shared experts stay BF16), calibrated on Japanese-weighted conversations so all **23,040 experts** saw representative traffic; matched Sakana's production checkpoint on Japanese instruction following within its own benchmark noise floor. The stated problem being solved: standard PTQ recipes are validated on English benchmarks and silently degrade non-English register and tool-calling behavior.
+- **Custom speculative draft model trained on raw production token IDs** (>30B tokens; re-tokenizing text destroys boundaries inside tool calls/JSON/reasoning markers): +25% acceptance, ~35% lower decode latency, ~40% more traffic per replica. A second **DFlash2** drafter trained on ~1M real requests lifted mean acceptance length **3.51 → 5.01** and cut **p99 68s → 52s**.
+- Elastic (non-reserved) GPU capacity covered launch demand; Modal's KV-aware router removed multi-minute TTFT spikes.
+
+Spokesperson quoted: **Masaya Ohagi** (Applied Research Engineer) — "we needed the flexibility to scale GPU capacity up or down without compromising model quality." Post-launch, Sakana's research team is exploring additional workloads on Modal beyond the API. Full serving detail: [[entities/modal-labs]] § Sakana Namazu case study. See [[concepts/speculative-decoding]], [[concepts/model-quantization]].
+
+Source: raw/articles/modal.com--blog-sakana-case-study--eccf1dd8.md
 
 ## Competitive Position
 

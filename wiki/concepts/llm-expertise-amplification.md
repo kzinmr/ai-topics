@@ -1,7 +1,7 @@
 ---
 title: "LLM Expertise Amplification"
 created: 2026-08-04
-updated: 2026-09-02
+updated: 2026-10-29
 type: concept
 tags:
   - llm
@@ -10,9 +10,12 @@ tags:
   - technical-debt
   - coding-agents
   - ai-slop
+  - agentic-engineering
 sources:
   - raw/articles/2026-08-02_seangoedecke_llms-reward-expertise.md
   - raw/articles/2026-08-02_ankursethi_cognitive-debt-retyping-llm-code.md
+  - raw/articles/seangoedecke.com--getting-good-at-ai-takes-time-and-practice--73bdae48.md
+  - raw/articles/seangoedecke.com--you-can-just-ask-ai-to-do-things--7174fa1d.md
 status: active
 ---
 
@@ -62,8 +65,17 @@ These two perspectives converge on a unified insight:
 - **For coding tools:** [[coding-agents/coding-agents|Coding agents]] that optimize for speed over understanding risk enabling large-scale accumulation of technical debt. Tools should support comprehension, not just generation.
 - **For hiring:** In an AI-augmented workflow, domain expertise becomes more valuable, not less. The candidate who deeply understands the problem space will leverage LLMs far more effectively than the candidate who only knows how to prompt.
 
-## Open Questions
+## The Practice Side: skills, not tricks (October 2026)
 
+Goedecke's two companion posts of 28 October 2026 answer the objection this thesis invites — "if skill is what matters, and AI gets better every quarter, why invest in learning AI use at all?"
+
+- **The skills are durable**: supplying context (including the *why* behind a goal), knowing the three capability categories (good at / bad at / bad-but-promptable-into-good), knowing AI-specific failure classes (misalignment errors: unrequested mutexes, invented requirements traded against real ones — the same phenomenon as the RLVR "grader" overcompliance in [[entities/seangoedecke-com]]), and skim-reading AI verbosity to reach claims and evidence. Durability mechanism: **new models improve a lot at what old models were already good at, and only a little at what they were bad at**, so capability intuition decays slowly.
+- **Agency is the binding constraint**: capability now outpaces users' awareness of it, so the scarce skill is *noticing* that a recurring task can be delegated (dev server, curl happy paths, deploy watching, cross-model subagent opinions, a scheduled 6am unread-message pre-pass, agent configuring its own MCP servers/API keys, agent curating its own sessions). See [[concepts/agent-experience]].
+- **The centaur-age answer**: as in chess, human+machine pairing beating either alone "may last decades" — so skill-building is worth it even under model churn, but "it's a mistake to go *fully* into AI, because LLMs reward expertise, which is best gained by hand."
+
+Full article analyses: [[entities/seangoedecke-com]] § Recent Articles (2026-10-28 entries).
+
+## Open Questions
 - **Cognitive debt** — see [[concepts/cognitive-debt]] and [[concepts/ai-skepticism-movement]]. Anthropic's early-2026 randomized trial is the sharpest datum: comprehension 50% (AI) vs 67% (manual) at equal task speed, with the decisive split being copy-pasters (<40%) vs conceptual-askers (>65%) — "the posture, not the tool."
 - Can tooling be designed to reduce cognitive debt (e.g., explanation-first generation, forced comprehension checks) or is the retyping approach inherently necessary?
 - Does the expertise amplification effect apply uniformly across all domains, or are some fields more susceptible to AI-driven deskilling?

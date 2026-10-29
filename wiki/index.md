@@ -591,7 +591,7 @@
 - [[entities/mixedbread]] — Mixedbread
 - [[entities/mo-bitar]] — Mo Bitar
 - [[entities/mobius-labs]] — Mobius Labs
-- [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25); NVIDIA Vera CPU adoption for Sandboxes (Oct 2026) — first Arm move off x86, up to 2x throughput vs Intel Granite Rapids, Agentless Agent Bench methodology; Latent Space interview (Oct 22 2026) — $1B ARR / $750M Series D @ $16B / ~3B sandboxes, "duration transformation" compute economics, sandboxes = ~1/3 revenue
+- [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25); NVIDIA Vera CPU adoption for Sandboxes (Oct 2026) — first Arm move off x86, up to 2x throughput vs Intel Granite Rapids, Agentless Agent Bench methodology; Latent Space interview (Oct 22 2026) — $1B ARR / $750M Series D @ $16B / ~3B sandboxes, "duration transformation" compute economics, sandboxes = ~1/3 revenue; Sakana Namazu case study (Oct 29 2026) — production NVFP4 selective-expert quantization, raw-token-ID custom draft models, CPU-GPU sync stall removal (>90% less GPU idle), KV-aware router
 - [[entities/modal-sandbox]] — Modal Sandbox (Claude Managed Agents)
 - [[entities/modular]] — Modular — AI infrastructure startup co-founded by Chris Lattner (LLVM, Swift) and Tim Davis; creator of Mojo programming language and MAX AI platform; acquired by Qualcomm for ~$4B (June 24, 2026)
 - [[entities/mojo]] — Mojo — Python-compatible programming language for AI/ML workloads; created by Chris Lattner at Modular; reached 1.0 in August 2026; MLIR compiler backend; Qualcomm acquired Modular for ~$4B
@@ -757,7 +757,7 @@
 - [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo — Timeline & Career
 - [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo — Writings & Speaking
 - [[entities/sairahul1]] — Rahul (sairahul1)
-- [[entities/sakana-ai]] — Sakana AI
+- [[entities/sakana-ai]] — Sakana AI; added **Sakana Namazu** (~1T MoE, Japanese business context + web search + code, commercial API Oct 2026) served on Modal via NVFP4 selective-expert quantization (23,040 experts, Japanese-weighted calibration) + custom DFlash/DFlash2 draft models on raw token IDs (acceptance 3.51→5.01, p99 68s→52s)
 - [[entities/salesforce-headless-360]] — Salesforce Headless 360
 - [[entities/sam-altman]] — Sam Altman — CEO of OpenAI; key figure in GPT development, AI safety debates, and industry leadership
 - [[entities/sambanova]] — SambaNova — AI chip company; SN40L RDU for fastest LLM inference; SambaNova Cloud
@@ -777,7 +777,7 @@
 - [[entities/scott-stevenson]] — Scott Stevenson
 - [[entities/scott-wu]] — Scott Wu
 - [[entities/screenpipe]] — Screenpipe (YC S26) — 24/7 local AI screen and mic recording, turns computer activity into agent-accessible data; 20.5K GitHub stars, Rust, MCP integration (Jul 26)
-- [[entities/seangoedecke-com]] — Sean Goedecke; "How to Keep Thinking" section (Aug 6: hammock time in the LLM-agent era, write in your own words, read books); "I got an email about resistance" response to complicity critics (Aug 9); "No, Local Models Will Not Win" (Aug 11: batching + GPU efficiency ~30x, revealed preference for strongest model, niche remains); "You should never be angry at work" (Aug 21: precise, named dissatisfaction over diffuse resentment — emotional-regulation corollary to the "AI isn't the root cause of most engineering pain" thesis); "What requirements don't you have?" (Oct 18: RLVR "Grader"-obsessed models invent hypothetical requirements — mutexes, TOCTOU re-checks — bloating 4-line changes into thousand-line monsters; unsolicited requirements in ~half of large AI diffs; rebuttal to "code review is dead")
+- [[entities/seangoedecke-com]] — Sean Goedecke; "How to Keep Thinking" section (Aug 6: hammock time in the LLM-agent era, write in your own words, read books); "I got an email about resistance" response to complicity critics (Aug 9); "No, Local Models Will Not Win" (Aug 11: batching + GPU efficiency ~30x, revealed preference for strongest model, niche remains); "You should never be angry at work" (Aug 21: precise, named dissatisfaction over diffuse resentment — emotional-regulation corollary to the "AI isn't the root cause of most engineering pain" thesis); "What requirements don't you have?" (Oct 18: RLVR "Grader"-obsessed models invent hypothetical requirements — mutexes, TOCTOU re-checks — bloating 4-line changes into thousand-line monsters; unsolicited requirements in ~half of large AI diffs; rebuttal to "code review is dead"); "Getting good at AI takes time and practice" + "You can just ask AI to do things" (Oct 28 2026: four durable AI-use skills, agency as the binding constraint, seven self-delegation flows, centaur-age answer; folded into [[concepts/llm-expertise-amplification]])
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. Provides 6 specialized tools for code analysis, search, and retrieval from any...
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka — ML researcher, 'Build a Reasoning Model (From Scratch)', LLM architecture analysis
@@ -2337,7 +2337,7 @@
 - [[concepts/llm-development-paradigm]] — LLM Development Paradigm
 - [[concepts/llm-echo]] — llm-echo
 - [[concepts/llm-evaluation]] — LLM Evaluation
-- [[concepts/llm-expertise-amplification]] — LLM Expertise Amplification — How LLMs steepen the skill curve, amplifying expert output while creating cognitive debt for novices who copy-paste without understanding
+- [[concepts/llm-expertise-amplification]] — LLM Expertise Amplification — How LLMs steepen the skill curve, amplifying expert output while creating cognitive debt for novices who copy-paste without understanding; adds Goedecke's Oct-2026 "practice side" (four durable skills, agency as binding constraint, centaur-age-lasting-decades answer)
 - [[concepts/llm-inference]] — LLM Inference
 - [[concepts/llm-inference-optimization-performance]] — Llm Inference Optimization Performance
 - [[concepts/llm-integration-patterns]] — LLM Integration Patterns — A Comparative Taxonomy
@@ -2463,7 +2463,7 @@
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mismeasure-of-open-source]] — The Mismeasure of Open Source
 - [[concepts/mixed-precision-mixed-accelerator-rl]] — Mixed-precision, mixed-accelerator RL (Modal, Oct 2026) — run RL samplers on FP8/NVFP4/BF16 across six accelerator kinds while the BF16 trainer stays fixed; absorb the train–inference mismatch with masked importance sampling + score centering + top-p mask replay; demo trains Qwen3.6-35B-A3B on 2.7K repo tasks fully async, sampling = 80–85% of RL GPUs
-- [[concepts/mistral-large-4]] — Mistral Large 4 (ML4) — 1T-param / 52B-active natively multimodal open-weight MoE; trained on 3,800 EU Grace Blackwell GPUs; SOTA open-weight on cyber (82% reproduce-patch) / finance / law; €3B Series D (Oct 2026)
+- [[concepts/mistral-large-4]] — Mistral Large 4 (ML4) — 1T-param / 52B-active natively multimodal open-weight MoE; trained on 3,800 EU Grace Blackwell GPUs; SOTA open-weight on cyber (82% reproduce-patch) / finance / law; €3B Series D (Oct 2026); open weights out — full sparse attention, NoPE/RoPE KV+indexer sharing, SSMax + LeRoPE per Bakouch weight read (Oct 29 2026)
 - [[concepts/mistral-medium-3-5]] — Mistral Medium 3 5
 - [[concepts/mistral-ocr-4]] — Mistral OCR 4 — SOTA Optical Character Recognition model; multilingual document parsing, structured markdown/JSON output, superior to Azure/Gemini/Amazon on benchmarks, 1,000 pages/min throughput (June 24)
 - [[concepts/mistral-vibe-remote-agents]] — Mistral Vibe Remote Agents

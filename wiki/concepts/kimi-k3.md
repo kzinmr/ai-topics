@@ -1,7 +1,7 @@
 ---
 title: "Moonshot Kimi K3"
 created: 2026-07-17
-updated: 2026-10-26
+updated: 2026-10-29
 type: concept
 tags:
   - model
@@ -588,6 +588,12 @@ closed ones on this axis. See [[concepts/open-weight-ai-regulation]],
 ## Cerebras wafer-scale serving (Oct 22-25 2026)
 
 Cerebras chose Kimi K3 (~3T open params) as the flagship example for deploying trillion-parameter models on WSE-3T: **59 wafers** (4-bit weights, 16 GB/layer; 1 dense layer/wafer + 2 linear-attention layers/wafer), pipeline-parallel with activations only crossing wafers via RDMA (~2 µs/hop), sustaining **1000-2000+ tok/s**. Cerebras-side benchmark claims: 88.3% Terminal-Bench 2.1, 91.2% BrowseComp — competitive with GPT-5.6 Sol. Details on [[concepts/cerebras-cs4]].
+
+## Quantization provenance (Oct 29 2026)
+
+Sarah Chieng (@MilksandMatcha), answering a question about how [[entities/cerebras-systems|Cerebras]] gets K3 down to wafer-scale footprint, stated that **the 4-bit version "follows the Hugging Face implementation"** — i.e. it is Moonshot/HF's own 4-bit checkpoint at https://huggingface.co/moonshotai/Kimi-K3 rather than a third-party quantization recipe (https://x.com/milksandmatcha/status/2115868147396096334). The thread's framing: F16 → F4 condensation trades accuracy for inference speed, motivated by Cerebras' SRAM capacity, power draw and compute cost.
+
+*Caveat*: this is a participant-side explanation in a reply thread, not an official Cerebras or Moonshot doc. The "F16→F4" characterization comes from the user asking, not from either company. See §Cerebras wafer-scale serving below.
 
 ## Sources added
 
