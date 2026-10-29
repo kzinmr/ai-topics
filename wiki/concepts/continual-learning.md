@@ -6,7 +6,7 @@ aliases:
   - lifelong-learning-ai
   - incremental-learning
 created: 2026-04-27
-updated: 2026-08-08
+updated: 2026-10-29
 tags:
   - concept
   - ai-agents
@@ -156,6 +156,17 @@ Patel argues that current session-based learning is fundamentally limited: *"Ima
 8. **Labs will subsidize users who allow training on sessions** — Just as Google gives away search, labs may give away AI access to users who allow deployment learning. Conversely, enterprises refusing to let models learn from their sessions may be denied access to the best models.
 
 Source: [[raw/articles/dwarkesh.com--p-era-of-continual-learning--b0d4301d.md]]
+
+## Google Research "Sleep Framework" (Oct 27, 2026)
+
+Behrouz & Mirrokni (Google Research) formalize a **sleep phase** in continual learning: the LLM alternates an active (wake) phase, storing inputs in fast short-term memory, with an offline **sleep phase** that consolidates fragile context into long-term parameters.
+
+- **Mechanism**: pre-allocated MoE memory blocks (Hope architecture) — newly unlocked low-rank experts are integrated into stable, lower-frequency memory blocks (parameter expansion prevents catastrophic forgetting); "knowledge seeding" distills fragile high-frequency-layer memories upward.
+- **Dreaming stage**: the model updates weights on **self-generated practice examples** — an automated post-training cycle that improves reasoning while the architecture stays fixed.
+- **Headline results**: continuous fact acquisition, retention of long-context knowledge up to **10M tokens**, and reasoning gains — vs the static knowledge cutoff of deployed models.
+- **Positioning**: unlike ICL-only approaches (session-lifetime memory) and unlike fine-tuning-without-architecture-growth (forgetting), it makes the train/infer separation "artificial" — a periodic lifecycle. Sits alongside Dwarkesh's "dreaming as 4th scaling axis" above and Letta's [[concepts/sleep-time-compute]] (which keeps weights frozen).
+
+Source: `raw/articles/research.google--sleep-framework--5c8a2e61.md` ([HN 63pts](https://news.ycombinator.com/item?id=50272479))
 
 ## Related Concepts
 

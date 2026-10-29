@@ -1,7 +1,7 @@
 ---
 title: "Sleep-Time Compute — Offline Reasoning Before the Query Arrives"
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-10-29
 type: concept
 tags: [test-time-scaling, token-economics, inference, context-engineering, ai-agents, agent-memory, arxiv]
 sources:
@@ -69,3 +69,7 @@ live turn cheap — but compaction *compresses*, sleep-time compute *derives new
 ## Sources
 
 - Sleep-time Compute: Beyond Inference Scaling at Test-time — arXiv:2504.13171 (2025-04-17), Lin, Snell, Wang, Packer, Wooders, Stoica, Gonzalez (Letta / UC Berkeley)
+
+## See also
+
+- Google Research's **sleep framework** (Oct 27, 2026, Behrouz & Mirrokni) extends the wake/sleep metaphor *into training*: during an offline sleep phase the model unlocks pre-allocated MoE memory blocks (Hope architecture, low-rank experts) and updates weights from self-generated practice examples — consolidating up to 10M tokens of context without catastrophic forgetting. Key distinction: sleep-time compute leaves weights frozen; the sleep framework's sleep phase is an automated post-training cycle. See [[concepts/continual-learning]] and `raw/articles/research.google--sleep-framework--5c8a2e61.md`.

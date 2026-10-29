@@ -1,3 +1,12 @@
+# Wiki Log
+
+## [2026-10-29] trending-topics
+
+- New concepts: [[concepts/anti-llm-obfuscation]] (servicepipe.tech safeguard-bait script, HN 1314; Astra/Daybreak vs GLM-5.3 refusal split), [[concepts/weight-compiled-computers]] (Qwenputer RISC-V-in-weights, HN 532), [[concepts/model-level-political-censorship]] (Google AI Mode 2020-election evasion, Ars Technica)
+- Updated: [[concepts/continual-learning]] + [[concepts/sleep-time-compute]] (Google Research sleep framework, MoE/Hope sleep phase, 10M-token consolidation), [[entities/cursor-ai]] (Agent SDK GA, HN 132)
+- Raw: 6 new files (nullpt.rs fingerprinting-bioweapons, divagr qwenputer, google sleep-framework, cursor agent-sdk, arstechnica 2020-election, futurism amazon-nova)
+- SCHEMA: +12 tags (weight-compilation, neural-computers, gated-deltanet, risc-v, chain-of-thought-monitoring, model-censorship, agent-as-code, anti-bot, browser-fingerprinting, safeguard-evasion, jailbreak-bait, obfuscation)
+- Report: inbox/rss-scans/trending-topics-2026-10-29.md
 ## [2026-10-28] wiki-health-fix | Index clean; 3 orphan stubs verified intentional
 
 ### Changes
@@ -16,7 +25,6 @@
 
 ---
 
-# Wiki Log
 
 ## [2026-10-28 12:00 UTC] trending-topics | 2 new pages — Genie 4 world model, Cruz v. Anthropic opt-out litigation
 

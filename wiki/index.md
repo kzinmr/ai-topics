@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3323
+> Total pages: 3326
 > Last updated: 2026-10-28
 
 ## Entities (956 pages)
@@ -996,6 +996,7 @@
 - [[concepts/agent-distillation]] — Agent Distillation
 - [[concepts/adversarial-reasoning-distillation]] — Adversarial Reasoning Distillation — OpenAI Oct 2026 disruption of a coordinated campaign extracting *protected reasoning* (encrypted CoT replayed/transcribed cross-conversation); 16K reqs / 4K users, 15K+ users disrupted by Jul 28; core cluster attributed to Moonshot AI; corroborated by arXiv:2608.09867; warns portable/replayable reasoning artifacts share the risk (Oct 5)
 - [[concepts/ai-generated-language-readability]] — AI-generated language readability — psycholinguistic study measuring readability differences between human- and AI-written text (Oct 2026)
+- [[concepts/anti-llm-obfuscation]] — Anti-LLM Obfuscation (Safeguard-Bait Payloads) — bioweapon-named symbols + fake jailbreak blocks in servicepipe.tech fingerprinting script to repel LLM deobfuscation; Astra/Daybreak refused, GLM-5.3 complied (nullpt.rs, HN 1314, Oct 28 2026)
 - [[concepts/budget-constrained-prm-evaluation]] — Budget-Constrained PRM Evaluation — faithful process-reward-model precision estimation under rate-limited verifiers via importance sampling; naive estimates overstate PRM quality (arXiv:2609.20812, Sep 2026)
 - [[concepts/creative-class-job-loss]] — Creative Class Job Loss — Apollo/Apricitas analysis of AI-driven displacement risk for creative-profession occupations (Oct 2026)
 - [[concepts/cognitive-mercantilism]] — Venkatesh Rao — AI panic as pre-capitalist mercantilism mapped onto intelligence (fixed-supply cognition, cognitive elites, "useless minds" fallacy); historical-transition counter-argument to labor-panic narratives (Oct 2026)
@@ -1135,6 +1136,7 @@
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
 - [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
 - [[concepts/model-hardware-standard]] — Model Hardware Standard (MHS) — Anthropic spec for AI agents operating lab/manufacturing hardware; MCP-accessible, open-source planned (Aug 2026)
+- [[concepts/model-level-political-censorship]] — Model-Level Political Censorship (Answer Evasion) — Google AI Mode deflects 'who won 2020/2024' to the FEC for US users only (direct abroad, capitulates on re-ask) while Gemini/ChatGPT/Claude answer plainly (Ars Technica, Oct 2026)
 - [[concepts/modest-success-software-boom]] — The Modest-Success Boom — Goedecke's counter-evidence to the "missing software" paradox: 2x/yr growth in modestly successful software (App Store top 5k→15k), slop = bad distribution not bad production
 - [[concepts/monitorability-metrics]] — Monitorability Metrics Beyond g-mean² — OpenAI Alignment pair-matched (HodgeRank) + post-control rejection-gate metrics and the intervention g-mean² lower bound; a less-aligned but more legible model can be the safer deployment (Oct 2026)
 - [[concepts/two-stage-confidence-caliber]] — CALIBER (Cohere) — pre/post-reasoning two-number confidence; 7B BigMathDigits ECE 0.059→0.028 (−52.5%), AUROC 0.806; zero-shot −26.8~−36.2% on QA benchmarks (Oct 2026)
@@ -1158,6 +1160,7 @@
 - [[concepts/waymo-effect-research-collaboration]] — Deployment field sites as research environments; lab/field role blurring (Waymo Effect)
 - [[concepts/webmcp-protocol]] — WebMCP Protocol — Web standard for agent tool discovery (Aug 2026)
 - [[concepts/vm-containment-ai-agents]] — VM Containment of Cyber-Capable AI Agents — Trail of Bits research (Aug 2026)
+- [[concepts/weight-compiled-computers]] — Weight-Compiled Computers (In-Model CPUs) — Qwenputer: RV32I RISC-V CPU compiled into Qwen3.5-4B weights, Gated DeltaNet heads as exact RAM; dual-use for CoT-monitoring evasion and tamper-proof in-weight monitors (HN 532, Oct 2026)
 - [[concepts/wiki-memory]] — Wiki Memory — Agent-maintained file-based knowledge layer pattern (Harrison Chase, 2026)
 - [[concepts/ai-agent-safety-incidents]] — AI Agent Safety Incidents — Fedora/GitLost/NanoGPT sandbox escape, AI cybersecurity trend (OpenAI-Hugging Face incident, specialized cyber models, July 24)
 - [[concepts/ai-agent-security]] — AI Agent Security

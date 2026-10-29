@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-08-20
+updated: 2026-10-29
 type: entity
 tags:
   - entity
@@ -490,6 +490,18 @@ Key details:
 See [[concepts/agent-security-certification]] for the concept page on AIUC-1 and its significance for agent adoption.
 
 Source: raw/articles/2026-08-18_cursor_aiuc-1.md
+
+## Agent SDK — Agents Defined as Code (Oct 28, 2026)
+
+Cursor released the **Agent SDK**, the internal framework behind its managed agents (Bugbot, Security Reviewer, Rollouts), opened to customers: define agents in code, manage them like any software project, `agent-sdk deploy` to Cursor infrastructure in one command.
+
+- **Event-driven team agents**: respond to PR events from GitHub/GitLab/Bitbucket, risk-assess changes, route to teams, approve per policy; also compliance workflows and incident investigation.
+- **Internal case study**: `kb-reviewer` built in ~a day — every PR in the main codebase checked against a lessons-learned knowledge base; flags changes contradicting a recorded lesson and cites the note.
+- **Multi-agent**: hand off tasks to specialized agents with their own tools/sessions, or fan out to parallel subagents.
+- **Evals & event replay** built in — the pitch to PGA Tour, which runs its "software development factory" entirely on the SDK.
+- **Positioning**: direct entry into the Anthropic Claude Agent SDK / OpenAI Agents SDK category from an IDE vendor; the managed-agent frameworks race now has three infrastructure bets (note: same week saw [[entities/palo-alto-networks]]' Portkey-based AI Gateway play on the enterprise side).
+
+Source: `raw/articles/cursor.com--agent-sdk--3d9f4b18.md` ([HN 132pts](https://news.ycombinator.com/item?id=50273731))
 
 ## Sources
 
