@@ -282,6 +282,35 @@ dedups and attaches link metadata; wiki ingestion is the agent's job.
   `build_x_wiki.py`) and a full `entities/<full-name>.md` (e.g. `rlancemartin.md`
   vs `lance-martin.md`, `corbett.md`/`kyle-corbett.md`/`kyle-corbitt.md`). Before
   ingesting, `ls entities/ | grep -i <name-or-handle>` and put enrichment in the
-  RICHEST existing page; check `wiki/index.md` for redirect stubs
+  check `wiki/index.md` for redirect stubs
   ("Redirect → [[entities/...]]") to learn the canonical target. Do not add a
   third variant.
+
+  ## Pre-existing SCHEMA.md tag in a sibling's staged file blocks your commit
+
+  The pre-commit tag validator scans ALL staged files, so a tag introduced by an
+  unfinished sibling job (e.g. `namazu` in `entities/sakana-ai.md`, 2026-10-29 run)
+  blocks YOUR commit even though your own pages are clean. Do NOT `git reset` to
+  unstage the sibling's work (it would silently drop their files from the commit)
+  and do NOT `--no-verify`. Correct fix: add the legitimate new tag to the matching
+  SCHEMA.md category line (`sed -i '35s/, readability/, readability, namazu/'` on the
+  second `**Models**:` line — remember the duplicate headings), `git add wiki/`
+  again, re-commit. Verify the tag landed with
+  `grep -oE "(^|, )<tag>(,|$)" wiki/SCHEMA.md`.
+
+  ## Raw-article filename for arXiv links inside tweets
+
+  For a tweet whose payload is an arXiv abstract, save
+  `wiki/raw/articles/arxiv.org--abs-<id>--<submission-date>.md` (scraper naming
+  regime) and pull title/abstract/authors/date with ONE
+  `curl -sL -A "<Chrome UA>" https://arxiv.org/abs/<id> -o /tmp/ab.html` +
+  `python3 -c` regex on `<title>`, `blockquote class="abstract">`, and
+  `citation_author` meta tags — no browser tool, no arXiv API call. State explicitly
+  when an affiliation is inferred from the author list rather than read off the PDF.
+
+  ## Re-patching a heading you accidentally consumed
+
+  When inserting a new `## Section` before an existing one by using
+  `old_string="## Old Heading"`, the heading is consumed by the replace. If you then
+  re-insert it, `assert`/verify the file still has the same `## ` sequence (`grep -n
+  "^## " <file>`) — a lost heading silently orphans every subsection beneath it.
