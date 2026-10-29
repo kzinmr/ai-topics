@@ -1,0 +1,167 @@
+{
+  "run_id": "20261029T101049Z",
+  "triaged_at": "2026-10-29T10:15:00+00:00",
+  "processed_count": 5,
+  "classified": [
+    {
+      "message_id": "<20261028125839.3.449281621e7c8f92@mg-d0.substack.com>",
+      "subject": "Artificial Analysis v5 and the benchmarker's dilemma",
+      "source": "Robotic (Nathan Lambert; publication_id=48206, post_id=222482864)",
+      "date": "2026-10-28",
+      "raw_path": "wiki/raw/newsletters/2026-10-28-artificial-analysis-v5-and-the-benchmarker-s-dilemma.md",
+      "relevance": true,
+      "importance": "critical",
+      "newsjacking_score": 4,
+      "topics": [
+        "artificial-analysis",
+        "ai-benchmarks",
+        "model-evaluation",
+        "benchmark-integrity",
+        "natolambert",
+        "robotic"
+      ],
+      "canonical_url": "https://open.substack.com/pub/robotic/p/artificial-analysis-v5-and-the-benchmarkers",
+      "suggested_wiki_actions": [
+        "scrape the canonical Robotic post to recover the real article URLs behind opaque substack.com/redirect/* tokens",
+        "create/update a benchmark-integrity concept page (benchmarker's dilemma: independence vs coverage, leaderboard gaming) under concepts/ai-benchmarks/",
+        "create entities/artificial-analysis (independent AI benchmarking org) if no page exists",
+        "create entities/nathan-lambert (Robotic newsletter, AI2) if no page exists"
+      ],
+      "existing_wiki_overlap": [
+        "concepts/ai-benchmarks/ (individual benchmarks live here per AGENTS.md)",
+        "concepts/llm-evaluation.md",
+        "concepts/evaluation/llm-evaluation-harness.md"
+      ],
+      "notes": "Direct hit on the wiki's core evaluation/benchmarking scope. 'Benchmarker's dilemma' is a polarizing-claim framing (NJ 4/5: trend surfing + in-group signal for the eval community). All 20 links are Substack chrome or opaque redirect tokens; downstream newsletter-wiki-ingest must fetch the canonical post before per-article classification."
+    },
+    {
+      "message_id": "<20261028140411.3.d149fb8a30ec45f3@mg-d1.substack.com>",
+      "subject": "AI's Achilles heel",
+      "source": "The Signal (Alex Banks; publication_id=293154, post_id=221967996)",
+      "date": "2026-10-28",
+      "raw_path": "wiki/raw/newsletters/2026-10-28-ai-s-achilles-heel.md",
+      "relevance": true,
+      "importance": "high",
+      "newsjacking_score": 3,
+      "topics": [
+        "the-signal",
+        "alex-banks",
+        "ai-limitations",
+        "ai-reliability"
+      ],
+      "canonical_url": "https://open.substack.com/pub/thesignal/p/ais-achilles-heel",
+      "suggested_wiki_actions": [
+        "fetch canonical The Signal post; identify what capability gap the 'Achilles heel' framing targets (likely hallucination/reliability/long-horizon agents — decide from body text)",
+        "append issue summary to entities/the-signal.md",
+        "update entities/alex-banks.md with this issue",
+        "only create a concept page if the article articulates a durable, citable thesis"
+      ],
+      "existing_wiki_overlap": [
+        "entities/the-signal.md",
+        "entities/alex-banks.md"
+      ],
+      "notes": "Both source entities already tracked. Bold-claim title (NJ 3/5) but the specific AI weakness is unknown from subject alone; the digest also has a podcast audio link (editorial newsletter issue, likely multiple sections). Classified high pending body fetch — downstream must not create a concept page from the title alone."
+    },
+    {
+      "message_id": "<20261028152147.3.b7fadfdabc244596@mg-d0.substack.com>",
+      "subject": "The October inflection point for vibe game development",
+      "source": "Simon Willison (publication_id=1173386, post_id=222506859)",
+      "date": "2026-10-28",
+      "raw_path": "wiki/raw/newsletters/2026-10-28-the-october-inflection-point-for-vibe-game-development.md",
+      "relevance": true,
+      "importance": "high",
+      "newsjacking_score": 3,
+      "topics": [
+        "simon-willison",
+        "vibe-coding",
+        "vibe-game-development",
+        "coding-agents",
+        "generative-ai-games"
+      ],
+      "canonical_url": "https://open.substack.com/pub/simonw/p/the-october-inflection-point-for",
+      "suggested_wiki_actions": [
+        "fetch canonical simonwillison.net post",
+        "append a 'vibe game development' section to concepts/vibe-coding.md (or concepts/harness-engineering/agentic-workflows/vibe-coding.md) with the October 2026 inflection-point thesis and dated citation",
+        "update entities/simon-willison.md with this post"
+      ],
+      "existing_wiki_overlap": [
+        "entities/simon-willison.md",
+        "concepts/vibe-coding.md",
+        "concepts/vibe-coding-vs-agentic-engineering.md",
+        "concepts/harness-engineering/agentic-workflows/vibe-coding.md"
+      ],
+      "notes": "Simon Willison is a core tracked source; vibe coding is an existing wiki topic. This is an update-to-existing case, not a new page — per AGENTS.md prefer appending to concepts/vibe-coding.md. Pattern-interrupt angle (vibe coding applied to game dev) gives it modest newsjacking value (3/5)."
+    },
+    {
+      "message_id": "<20261028.190455.6191bea0@mta19>",
+      "subject": "💊 Anthropic Is Now in the Drug Business",
+      "source": "Beehiiv newsletter (likely Superhuman AI or similar AI-news digest; mta19 beehiiv)",
+      "date": "2026-10-28",
+      "raw_path": "wiki/raw/newsletters/2026-10-28-anthropic-is-now-in-the-drug-business.md",
+      "relevance": true,
+      "importance": "low",
+      "newsjacking_score": 2,
+      "topics": [
+        "anthropic",
+        "ai-for-science",
+        "ai-drug-discovery",
+        "anthropic-labs"
+      ],
+      "canonical_url": null,
+      "canonical_url_note": "All 20 links are opaque link.mail.beehiiv.com/v2/c/ tracking URLs; per skill pitfall #10, test ONE link with curl -sL -o /dev/null -w '%{url_effective}' before assuming Cloudflare-block — beehiiv v2/c/ links often resolve HTTP 200.",
+      "suggested_wiki_actions": [
+        "resolve one beehiiv v2/c/ link to identify the newsletter and the actual article behind the Anthropic drug-business story",
+        "if the story is substantive (e.g. Anthropic Labs biotech partnership / Claude for biology), append to entities/anthropic.md or concepts/anthropic/ subpages; cross-link entities/anthropic-labs.md",
+        "if it is clickbait framing of a minor announcement, record the link in log only"
+      ],
+      "existing_wiki_overlap": [
+        "entities/anthropic.md",
+        "entities/anthropic-labs.md"
+      ],
+      "notes": "Subject line is emoji-clickbait style typical of beehiiv AI-news digests; likely secondary coverage of an Anthropic AI-for-science move. Anthropic entities already exist. Classified low until the beehiiv redirect resolves and the underlying article proves substantive."
+    },
+    {
+      "message_id": "<20261028195736.3.fa64cb42b4d51fab@mg2.substack.com>",
+      "subject": "Culper Research vs Cerebras: A Neutral Engineering-Driven View",
+      "source": "Irrational Analysis (publication_id=1509468, post_id=222521509)",
+      "date": "2026-10-28",
+      "raw_path": "wiki/raw/newsletters/2026-10-28-culper-research-vs-cerebras-a-neutral-engineering-driven-view.md",
+      "relevance": true,
+      "importance": "high",
+      "newsjacking_score": 3,
+      "topics": [
+        "cerebras",
+        "cerebras-systems",
+        "wafer-scale-computing",
+        "ai-inference-hardware",
+        "short-seller-research",
+        "culper-research",
+        "irrational-analysis"
+      ],
+      "canonical_url": "https://open.substack.com/pub/irrationalanalysis/p/culper-research-vs-cerebras-a-neutral",
+      "suggested_wiki_actions": [
+        "fetch canonical Irrational Analysis post",
+        "update entities/cerebras-systems.md with the Culper Research short-seller allegations and the engineering rebuttal — keep contested framing with dates per AGENTS.md contradiction policy",
+        "link entities/daniel-kim-cerebras.md and concepts/cerebras-cs4.md from the updated section",
+        "create entities/culper-research.md only if the allegations are substantive and recurring"
+      ],
+      "existing_wiki_overlap": [
+        "entities/cerebras-systems.md",
+        "entities/daniel-kim-cerebras.md",
+        "concepts/cerebras-cs4.md"
+      ],
+      "notes": "Cerebras is an existing wiki entity with wafer-scale inference hardware — this is an AI-infrastructure governance/credibility story (short-seller report vs engineering counter-analysis). In-group signal for the inference-hardware audience (NJ 3/5). Single-source opinion piece: downstream must apply the fact/intent confidence split from the security-vendor-report pitfall (observed engineering facts = high; short-seller attributed claims = contested)."
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 3,
+    "low": 1,
+    "skipped": 0
+  },
+  "caveats": [
+    "All 5 digests contain only Substack chrome / opaque redirect URLs or beehiiv tracking links; per-article classification is impossible from checkpoint data. Importance was assigned at the newsletter level from subject lines, publication identity, and existing wiki coverage.",
+    "Downstream newsletter-wiki-ingest must fetch the 4 canonical Substack post URLs (robotic, thesignal, simonw, irrationalanalysis) and resolve at least one beehiiv v2/c/ link before creating or updating any wiki page.",
+    "No article should get a new concept page based on its subject line alone — especially 'AI's Achilles heel' (The Signal) and the Anthropic drug-business beehiiv item."
+  ]
+}
