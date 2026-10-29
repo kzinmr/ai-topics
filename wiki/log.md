@@ -1,5 +1,40 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-10-29 19:05 UTC] skeleton-enrich-daily | No skeleton backlog (empty streak continues)
+
+Frontmatter-level scan of `wiki/entities/` + `wiki/concepts/` (regex `status:\s*skeleton` inside the YAML block): **0** matches. Status distribution: stub 439, active 165, complete 128, L3 62, draft 52, L2 39, redirect 24, L1 14, full 7, Level2 7, enriched 6, incomplete 6 — no `skeleton`. Only prose mentions remain (exoskeleton / skeleton repo / topology metaphor). Streak continues since 2026-10-17. No pages modified. Snapshot: [[queries/2026-10-29-skeleton-enrich-empty]].
+
+## [2026-10-29 18:40 UTC] dreaming wiki-ingest | Pattern E recovery from failed dreaming-group — 4 references enriched
+
+**Upstream failure**: `dreaming-group` (c4a9e8d2f671, 18:10 UTC) died with `RuntimeError: Response truncated due to output length limit`; pre-run script reported `failed to parse JSON response from dreaming-group output`. Its `triage_latest.json` on disk was stale (2026-10-27 run, already consumed — confirmed by 10-27/10-28 dreaming log entries), and the current checkpoint (`latest.json`, run_id 20261029T180043Z) had an **empty candidate pool** (`payload.articles: 0`) despite `recent_raw_articles: 242`. Per the dreaming skill's Pattern E, ran the filesystem scan directly.
+
+**Method**: `check_archive_index_absence.py` probe (130 recent files vs 2,954 umbrella archive URLs) → read full bodies of AI-relevant never-archived candidates → coverage-verify against entity/concept page bodies (not just frontmatter sources) → 4 references, 0 takes.
+
+**Reference verification table**
+
+| Candidate | Status | Details |
+|-----------|--------|---------|
+| Modal × Sakana Namazu case study | ❌ Genuine gap | "Namazu" had ZERO occurrences anywhere in wiki. Enriched `entities/modal-labs.md` (new §, 23 lines) + `entities/sakana-ai.md` (new §13) — dual-side framing: platform (NVFP4 selective-expert quantization, raw-token-ID DFlash/DFlash2 drafters, CPU-GPU sync stall >90% GPU-idle cut, KV-aware router) vs lab (~1T MoE for Japanese business context, Ohagi quote) |
+| Willison — October inflection for vibe game development | ❌ Genuine gap | No vibe-game-development coverage; Battle Drones only partially covered (24 Oct Compass Rose note). Added to `entities/simon-willison.md` Recent Notes (28 Oct) |
+| Willison — GitHub Octoverse 2026 | ❌ Genuine gap | "Octoverse" absent from wiki. 220M merged PRs/mo, 7.38B commits/mo, 30.3M new repos/mo + LLM/embedding-model methodology. Added to `entities/simon-willison.md` Recent Notes (28 Oct) |
+| Goedecke — Getting good at AI / You can just ask AI | ❌ Genuine gap | Both absent from `entities/seangoedecke-com.md` Recent Articles (which had 24/22/18 Oct). Added full analyses + new §"The Practice Side" in `concepts/llm-expertise-amplification.md` (which previously covered only the Aug thesis) |
+| nesbitt — This Week in Source Control 28 Oct | ✅ Already covered | Scion/Mononoke in `entities/scion-anthropic-version-control.md` (L49-96, incl. sunshowers follow-ups + Willison notes), Entire/forgemark in `entities/entire.md`, Gheist in `concepts/github-actions-secrets-exfiltration.md`; remaining forge release/security CVE items are release-note noise |
+| active-crawl batch (LFM3, Voyage JEV, Benchmarking Crisis, Survival LLM, Anthropic drug dev, CPU-cache covert channel) | ✅ Already covered | active-crawl 2026-10-28 11:00 created 5 pages + 1 enrichment from these same raws (log.md entry confirmed); archive-index absence was a timing artifact, not a coverage gap |
+| Sitemap marketing batch (ElevenLabs ×6, Harvey ×6, Glean ×4, Hex ×3, Pinecone, Cohere ×2, Parallel, Factory) | ⏭️ Skip | Product marketing / already ingested; verified against log.md same-day and 10-28 entries |
+| Non-AI batch (dfarq, shkspr, geerling, johndcook, oldnewthing, apple/macrumors hardware, wired, pluralistic, wheresyoured, borretti, miguelgrinberg, tedium, coredump, experimental-history) | ⏭️ Skip | Outside AI/LLM/agent scope per daily-rss-triage non-AI filter |
+
+**Pages updated (5)**: `entities/modal-labs.md`, `entities/sakana-ai.md`, `entities/simon-willison.md`, `entities/seangoedecke-com.md`, `concepts/llm-expertise-amplification.md`. **Pages created: 0** (highest-scoring item scored 0.62 — enrichment over new-page promotion).
+
+**Wikilink hygiene**: pre-commit `[ -f ]` sweep caught 3 guessed targets — `concepts/quantization` → `concepts/model-quantization` (×2), `concepts/ai-copyright-and-fair-use` → `concepts/anthropic-copyright-settlement`.
+
+**Tags**: added `namazu` (new token, see SCHEMA), `mixture-of-experts`, `quantization`, `speculative-decoding` (sakana-ai); `quantization`, `speculative-decoding` (modal-labs); `agentic-engineering` (llm-expertise-amplification).
+
+**Archive**: `archive_triage.py dreaming --keep-reference` → 8 candidates, 8 newly archived, 0 dedup, total_archive_urls 2,958. Triage JSON re-saved at `cron/data/dreaming/triage_latest.json` (run_id 20261029T180043Z, 0 takes / 4 refs / 4 batch skips, source: dreaming).
+
+**Adjacent-job check**: today's trending-topics (anti-LLM obfuscation, Qwenputer, AI Mode evasion), newsletter-triage (4 takes), watchdog wikilink auto-fix (884 refs), and hot-post (MicroZig × Qwenputer) all confirmed non-overlapping with these four candidates.
+
 ## [2026-10-29] auto-fix | Wiki health maintenance: orphan registration + index dedup
 
 ### Changes
@@ -14,7 +49,6 @@
 
 ---
 
-# Wiki Log
 
 ## [2026-10-29] watchdog | auto-fix: wikilink namespacing + stub redirects
 
@@ -75,7 +109,6 @@
 - **Quality gates**: content-anchored index insertion (5 entries); combined tag+wikilink verifier → 0 broken links, 0 bad tags across all 6 pages (fixed `small-language-models`→`small-language-model`, `local-first-architecture`→`local-first`). Index headers bumped: Entities 955→956, Concepts 2246→2251, Total pages 3318→3323.
 
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-10-28 10:01 UTC] blog-ingest | raw article save — 20 saved, 0 unsaved
 
