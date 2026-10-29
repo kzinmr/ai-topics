@@ -2,7 +2,7 @@
 title: "Claude Code"
 type: concept
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-10-29
 tags:
   - coding-agents
   - claude-code
@@ -43,3 +43,4 @@ See also: [[entities/claude-code]] (entity page), [[concepts/claude|Claude]] (mo
 ## Known Issues
 
 - [[concepts/claude-code/claude-code-leak]] — Known leak issues
+- [[concepts/claude-code/claude-code-agent-summary-polling]] — `agent_summary` background transcript polling — hidden ~30s interval transcript re-summarization for every background agent (status line only, no off switch since 2.1.232)

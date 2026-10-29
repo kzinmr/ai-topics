@@ -2,7 +2,7 @@
 title: "Google Gemini"
 type: concept
 created: 2026-04-19
-updated: 2026-08-14
+updated: 2026-10-29
 tags:
   - concept
   - google
@@ -15,8 +15,10 @@ related:
   - concepts/local-llm/model-distillation
   - concepts/inference-speed-development
   - concepts/gemini/gemini-robotics-2
+  - concepts/gemini/gemini-4-carbon
   - entities/semianalysis
 sources:
+  - raw/articles/2026-10-28_gemini-4-carbon.md
   - raw/articles/2026-06-10_deepmind-model-cards-page.md
   - raw/newsletters/2026-08-01-ainews-not-much-happened-today.md
   - raw/newsletters/2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md
@@ -35,6 +37,10 @@ sources:
 ## Recent Updates — Gemini Drops (July 2026)
 
 In late July 2026, Google's **"Gemini Drops"** update (announced via @GeminiApp) added **Gemini 3.6 Flash** and **Gemini 3.5 Flash-Lite** to the family, alongside a wider Gemini Spark rollout, app integrations, voice support on macOS, and personalized image/avatar features (source: AINews 2026-08-01). Per the Artificial Analysis Intelligence Index v4.1 (Superintel+ chart, 2026-07-31), Gemini 3.6 Flash scores ~**50.1 intelligence index** at ~**$0.50 per task**. Pricing/GA details for the new models are not yet captured in the table below — this is a reference-level note pending a dedicated model page.
+
+## Gemini 4 Carbon (October 28, 2026)
+
+Google DeepMind released **Gemini 4 Carbon**, its strongest model, positioned on **cybersecurity defense and long-horizon agentic work**: #1 on Artificial Analysis Intelligence Index v5.0 (59), SEC-bench Pro 88.2%, ExploitGym 54.8%, CWE-bench 71.0%, WebDev Arena #4 (1768 elo). Shipped at the same introductory price as Argon ($2/$10 per 1M) and gated to vetted cyber defenders via the **Fairwind Program** while Google participates in the U.S. government's voluntary pre-release testing process. Reported alignment metrics include 0.0% Terminal-Bench 4.0 cheating success and 0.0% attack success on Gray Swan's indirect prompt-injection benchmark. See [[concepts/gemini/gemini-4-carbon]].
 
 ## Gemini 3.8 Flash & 3.8 Flash Cyber (September 1, 2026)
 

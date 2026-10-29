@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3326
+> Total pages: 3332
 > Last updated: 2026-10-28
 
 ## Entities (956 pages)
@@ -964,7 +964,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2251 pages)
+## Concepts (2257 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1137,6 +1137,7 @@
 - [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
 - [[concepts/model-hardware-standard]] — Model Hardware Standard (MHS) — Anthropic spec for AI agents operating lab/manufacturing hardware; MCP-accessible, open-source planned (Aug 2026)
 - [[concepts/model-level-political-censorship]] — Model-Level Political Censorship (Answer Evasion) — Google AI Mode deflects 'who won 2020/2024' to the FEC for US users only (direct abroad, capitulates on re-ask) while Gemini/ChatGPT/Claude answer plainly (Ars Technica, Oct 2026)
+- [[concepts/microzig-no-ai-policy]] — MicroZig Strict No-LLM / No-AI Policy — embedded-Zig CoC banning paraphrasing LLM output, LLM editing/brainstorming/bug-finding, and even discussing LLM use; normative self-report enforcement of cognitive provenance
 - [[concepts/modest-success-software-boom]] — The Modest-Success Boom — Goedecke's counter-evidence to the "missing software" paradox: 2x/yr growth in modestly successful software (App Store top 5k→15k), slop = bad distribution not bad production
 - [[concepts/monitorability-metrics]] — Monitorability Metrics Beyond g-mean² — OpenAI Alignment pair-matched (HodgeRank) + post-control rejection-gate metrics and the intervention g-mean² lower bound; a less-aligned but more legible model can be the safer deployment (Oct 2026)
 - [[concepts/two-stage-confidence-caliber]] — CALIBER (Cohere) — pre/post-reasoning two-number confidence; 7B BigMathDigits ECE 0.059→0.028 (−52.5%), AUROC 0.806; zero-shot −26.8~−36.2% on QA benchmarks (Oct 2026)
@@ -1147,6 +1148,7 @@
 - [[concepts/prompt-optimizers-unscored-requirements]] — GEPA/MIPROv2 lift scored EM but leave unscored requirements unchanged; targeted gating on hard-case diagnostics partially helps but cannot guarantee non-degradation (Meta, arXiv Oct 2026)
 - [[concepts/rated-reliability-aware-tool-retrieval]] — RATED: frozen dual-encoder + contextual bandit re-ranker adapts tool retrieval to live API failures (86.2%→2.9% fault selection); EcoAgent benchmark of 5,172 tools (CIKM 2026)
 - [[concepts/rewardweaver-self-evolving-rewards]] — RewardWeaver (Self-Evolving Reward Adaptation) — reward signal that co-evolves with the policy across training rounds to resist saturation and reward hacking
+- [[concepts/recursive-decision-models]] — Recursive Decision Models (RDMs) — recursive structured-output decision models (System-1 style) for agent decisions; DSPy-optimized classifiers
 - [[concepts/retrieval-credit-for-search-agents]] — Retrieval Credit for Search Agents — process-level credit assignment for individual retrieval steps in deep-research agent RL, beyond sparse outcome rewards
 - [[concepts/security-and-governance/_index]] — Agent Security and Governance — Concepts hub for security/governance sub-pages
 - [[concepts/persistent-memory-attack-surface]] — Persistent Memory Attack Surface — injection→storage→retrieval threat model for persistent agent memory; framework-agnostic; Memory Control Surface (6 controls) (arXiv:2608.22797, Aug 2026)
@@ -1889,7 +1891,6 @@
 - [[concepts/eu-ai-act]] — EU AI Act
 - [[concepts/eureka-labs]] — eureka-labs
 - [[comparisons/evals-skills]] — Evals Skills for Coding Agents
-- [[comparisons/evals-skills]] — Evals Skills for Coding Agents
 - [[concepts/epistemic-humility-agents-knowledge-conflict]] — Epistemic Humility in LLM Agents (arXiv:2610.12360) — ISE framework (Identify→Solve→Escalate) for parametric-vs-contextual knowledge conflict; agents frequently Identify and Solve but rarely Escalate, so high-accuracy configs ship confident wrong final answers
 - [[concepts/benchmark-ceiling]] — The Benchmark Ceiling — evaluation scarcity & political economy of AI capability measurement; valid signal concentrates in the expert-authored hard tail (arXiv, Jun 2026)
 - [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]] — Evaluation Coding Agents Mcp Automation Harness Engineering
@@ -1984,6 +1985,7 @@
 - [[concepts/fsdp-qlora]] — FSDP + Q-LoRA
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern where deterministic, verifiable processing forms the 'functional core' and human validation, eva...
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
+- [[concepts/future-of-the-firm-org-chart]] — The Future of the Firm (OpenAI "next economy" essay) — three org-chart scenarios for the AI-native firm; labor-economics + prediction analysis of OpenAI's Oct 2026 essay
 - [[concepts/fused-kernels]] — Fused Kernels (Eliminating Intermediate Memory)
 - [[concepts/fuzzing]] — Fuzzing
 - [[concepts/gaia]] — gaia
@@ -2975,6 +2977,7 @@
 - [[concepts/sid-1]] — SID-1
 - [[concepts/sierra-agent-builders]] — Sierra — Agent Builders and Customer Teams
 - [[concepts/sierra-online]] — sierra-online
+- [[concepts/sierra-compliance-console]] — Sierra Compliance Console — regulated-outreach controls (approval gates, guardrails) for long-horizon enterprise agents in regulated industries (Oct 2026)
 - [[concepts/signal]] — Signal
 - [[concepts/simulacrum-of-knowledge-work]] — Simulacrum of Knowledge Work
 - [[concepts/single-agent-ceiling]] — Single-Agent Ceiling

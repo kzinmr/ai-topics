@@ -2,7 +2,7 @@
 title: "zig"
 type: concept
 created: 2026-04-25
-updated: 2026-08-14
+updated: 2026-10-29
 tags: [concept, programming-language, open-source, developer-tooling, compiler]
 status: L2
 sources:
@@ -46,6 +46,12 @@ Bun maintains its own fork of Zig and achieved a **4× performance improvement**
 > "We do not currently plan to upstream this, as Zig has a strict ban on LLM-authored contributions."
 
 A Zig core contributor later noted the patch would have been rejected on technical grounds anyway (parallel semantic analysis has language-level implications), independent of the LLM policy.
+
+### MicroZig tightens the policy (October 28, 2026)
+
+**MicroZig** (embedded Zig, Zig Embedded Group) — which takes Zig's Code of Conduct as its template — added a **"Strict No LLM / No AI Policy"** that goes materially further: no paraphrasing LLM output, no LLM spelling/grammar editing, no LLM brainstorming whose results are shared even if you write the prose yourself, no LLMs for finding bugs, and **no talking about use of chatbot/LLM services** at all. Human translation is explicitly replaced by "post in your native language"; the section cites Asimov's *"Profession"*. Because the new clauses regulate *cognitive* provenance rather than a detectable artifact, their enforcement is normative (self-report + maintainer judgment), not technical. See [[concepts/microzig-no-ai-policy]].
+
+Source: `raw/articles/2026-10-29_microzig-no-llm-code-of-conduct.md`
 
 ## Compiler Architecture
 

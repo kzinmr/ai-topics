@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-10-29] auto-fix | Wiki health maintenance: orphan registration + index dedup
+
+### Changes
+- index.md: removed duplicate `[[comparisons/evals-skills]]` line in Concepts section
+- index.md: registered 4 orphan concepts alphabetically (future-of-the-firm-org-chart, microzig-no-ai-policy, recursive-decision-models, sierra-compliance-console)
+- index.md: Concepts header 2251 -> 2257 (recomputed from actual line count), Total pages 3326 -> 3332
+- claude-code/_index.md: registered orphan `claude-code-agent-summary-polling` under Known Issues; bumped updated date
+- microzig-no-ai-policy.md: added `zig` tag (SCHEMA-valid), linking to concepts/zig
+- Verified no index corruption (pipe/line-number/triple-bracket/space-prefix all 0)
+- 6 of 11 reported orphans were false positives: 2 redirect stubs (evals-skills*, canonical comparisons/evals-skills already indexed), 3 entity redirect stubs (eugeneyan/giles-thomas/lilianweng -> canonical entities indexed), 1 gemini subpage already registered in concepts/gemini/index.md hub
+- validate_index.py: clean
+
+---
+
+# Wiki Log
+
 ## [2026-10-29] watchdog | auto-fix: wikilink namespacing + stub redirects
 
 - **Namespace/nesting fix**: 123 broken-link targets with unique filesystem resolutions remapped across 252 files (874 replacements) — e.g. `[[concepts/ai-safety]]`→`[[concepts/security-and-governance/ai-safety]]`, `[[grpo]]`→`[[concepts/post-training/grpo]]`, 20+ `ai-benchmarks/*` slugs, `[[entities/coding-agents]]`→`[[concepts/coding-agents/coding-agents]]`, `[[concepts/claude-code/claude-code]]`→`[[entities/claude-code]]`.

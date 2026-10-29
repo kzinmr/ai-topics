@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-10-23
+updated: 2026-10-29
 type: entity
 tags:
   - company
@@ -265,6 +265,14 @@ The deeper findings, from the companion **𝜏-Elicitation** paper:
 The work extends the τ-bench family's core thesis into speech: reliable voice agents need uncertainty recognition, targeted verification, and actual repair — collaboration with Victor Barres (Mercor), same author lineage as [[concepts/ai-benchmarks/tau-voice]] (Soham Ray et al.).
 
 Source: [[raw/articles/sierra.ai--blog-tau-entity-can-voice-agents-get-the-details-right--bee3927c]]
+
+## Compliance Console (October 28, 2026)
+
+Sierra shipped **Compliance Console** into the Horizon platform: a policy enforcement point on the agent's *outbound contact* actions, for long-horizon agents that call/text/email the same customer over weeks or months (loan origination, collections, quote follow-up, insurance renewal). Configurable controls: per-channel **disclosures** (call opener, SMS opt-out text, email unsubscribe), **contact windows** keyed to the *recipient's* local time (default cited 8AM–9PM), **holiday exclusions** by country (Spain National Day, Bastille Day, ANZAC Day), **frequency limits** with separate marketing vs transactional budgets, and **opt-outs honored across channels** — including requests stated verbally on a call, not just `STOP`. An Insights dashboard reports allowed / deferred / blocked / held-for-review counts.
+
+The framing is Sierra's own market claim: agents "moved from mostly reactive, one-and-done support conversations to interactions that can last weeks or months," which pushes each individual touch into regulated-communications law (TCPA-style consent/calling-hour/disclosure regimes and national equivalents). See [[concepts/sierra-compliance-console]].
+
+Source: [[raw/articles/2026-10-28_sierra-compliance-console.md]]
 
 ## Significance
 

@@ -2,18 +2,31 @@
 title: "Raymond Weitekamp (@raw_works)"
 type: entity
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-10-28
 tags:
   - entity
   - person
   - rlm
   - dspy
   - lab
+  - agent-skills
+  - decision-model
+  - coding-agents
 status: complete
 website: https://raw.works
 handle: "@raw_works"
-related: [dspy, recursive-language-model, longcot, alex-zhang, stanford-nlp]
-sources: []
+aliases: ["raw_works", "RAW Works", "Raymond Weitekamp"]
+related: [dspy, recursive-language-models, recursive-decision-models, system-one-models, longcot, alex-zhang, stanford-nlp, typesafe-ai, omar-khattab]
+sources:
+  - raw/articles/raw-works-rlms-new-reasoning-models-2026-04-20.md
+  - raw/articles/raw-works-rlms-sota-on-longcot-2026-04-19.md
+  - raw/articles/2026-10-01_raw-works_recursive-decision-models.md
+  - raw/articles/2026-05-12_raw-works_engineering-skills.md
+  - raw/articles/2026-05-11_raw-works_code-execution-as-reasoning.md
+  - raw/articles/2026-03-27_raw-works_mycelium-git-notes-agent-network.md
+  - raw/articles/2026-02-12_raw-works_ypi-recursive-coding-agent.md
+  - raw/articles/2026-06-20_raw-works_machine-studying-library-and-lab.md
+  - https://raw.works/
 ---
 
 # Raymond Weitekamp (@raw_works)
