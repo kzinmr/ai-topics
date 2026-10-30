@@ -13,7 +13,7 @@ topics:
   - concepts/kv-cache
   notes: Karpathy提唱。前提としてtoken economics, attention mechanism等が必要か
   added: 2026-04-14
-  last_crawled: '2026-08-27'
+  last_crawled: '2026-10-30'
 - slug: agentic-engineering
   title: Agentic Engineering
   crawl_policy: laterals
@@ -25,7 +25,7 @@ topics:
   - concepts/agentic-engineering/_index
   notes: 22ページの大クラスタ。横方向の関連パラダイムを探索
   added: 2026-04-14
-  last_crawled: '2026-08-27'
+  last_crawled: '2026-10-30'
 - slug: ai-agent-engineering
   title: AI Agent Engineering (Anthropic/OpenAI)
   crawl_policy: deepdive
@@ -37,7 +37,7 @@ topics:
   - concepts/ai-agent-engineering/_index
   notes: 19ページ。最新事例・ベストプラクティスの深掘り
   added: 2026-04-14
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-10-30'
 - slug: harness-engineering
   title: Harness Engineering
   crawl_policy: prerequisites
@@ -248,7 +248,7 @@ topics:
   notes: OpenAI Codex CLI v0.128.0のビルトインRalph Loop。Greg Brockman "Ralph loop++"。メタプロンプティング、トークン予算設計、app-server
     API等の最新機能を深掘り。
   added: 2026-05-13
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-10-30'
 - slug: self-evolving-agents
   title: Self-Evolving Agents（自己進化・自己拡張エージェント）
   crawl_policy: deepdive
