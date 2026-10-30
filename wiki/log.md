@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-10-30] watchdog | Auto-fix verification run — 0 fixes needed
+- Verified clean: index.md (validate_index exit 0, 3,375 lines; pipe/line-number/triple-bracket/double-pipe/space-prefix all 0), L2 pipe scan 0, log.md headers OK, no-frontmatter scan 0, empty-wikilink residual stable at 278
+- Pipeline alert `newsletter chain broken: triage_ok_but_wiki_ingest_failed` classified false-positive-for-data-loss: triage committed 64054ff1+a2c0d4d8, take target dianne-na-penn created by 15:06 graph session (d8756c5f)
+- 7 job errors all transient: HTTP 503 local-LLM-busy cluster (10:20-11:31 UTC) + newsletter-wiki-ingest output-truncation; no action, self-heal on next run
+- Session notes: skill wiki-graph-health references/watchdog-session-2026-10-30.md
+
 ## [2026-10-30] trending-topics — Claude Code VSX backdoor, zombie statistics, NVL72 rack-scale scheduling
 - Created: `concepts/claude-code/claude-code-vsx-backdoor.md`, `concepts/zombie-statistics.md`, `concepts/skypilot-rack-scale-scheduling.md`
 - Updated: `concepts/mistral-large-4.md` (open weights released, HN 1538pts), `concepts/sleep-time-compute.md` (Google Sleep Framework), `entities/skypilot.md` (NVL72 scheduler)
