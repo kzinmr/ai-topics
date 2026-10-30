@@ -6,7 +6,7 @@ tags:
   - developer-tooling
   - open-source
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-10-30
 sources:
   - "https://skypilot.co"
   - "https://github.com/skypilot-org/skypilot"
@@ -109,3 +109,7 @@ See [[entities/coreweave]] for the full acquisition and integration picture.
 - [[entities/coreweave]] — Acquirer (2025)
 - [[entities/weights-and-biases|Weights & Biases]] — Sister acquisition (platform layer)
 - [[entities/openpipe|OpenPipe]] — Sister acquisition (training layer)
+
+## Rack-scale scheduling for Grace Blackwell (2026-10-29)
+
+SkyPilot Platform published its NVL72 scheduler thesis: the same training job over InfiniBand vs NVLink loses ~43%; rack-locality is destroyed by node failures and job-finish fragmentation. Platform countermeasures — topology-aware placement, in-place GPU-failure recovery, automatic defragmentation — claim **27% more usable GPUs from the same racks**. Details in [[concepts/skypilot-rack-scale-scheduling]]. Source: `raw/articles/skypilot.ai--skypilot-gb--b60b3428.md` ([HN 137pts](https://news.ycombinator.com/item?id=50290912)).

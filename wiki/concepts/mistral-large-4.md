@@ -2,9 +2,10 @@
 title: "Mistral Large 4 (ML4)"
 type: concept
 created: 2026-10-25
-updated: 2026-10-29
+updated: 2026-10-30
 tags: [mistral, model, open-source, multimodal, frontier-models, code-model, reasoning, cybersecurity, infrastructure]
 sources:
+  - "raw/articles/mistral.ai--mistral-weights--3aee14fc.md"
   - "https://mistral.ai/news/mistral-large-4/"
   - "[[raw/articles/2026-10-06_mistral-ai_mistral-large-4-announcement]]"
   - "[[raw/articles/arxiv.org--abs-2607.10134--2026-07-11]]"
@@ -88,6 +89,14 @@ Weights released as promised, and @eliebakouch (Prime Intellect) published a wei
 ## Significance
 
 ML4 is the first 1T-param open-weight frontier model from a **European** lab trained on European infrastructure, and the most direct open-weight challenge to the Claude/GPT frontier on cybersecurity — where closed-model refusals create a capability gap open weights deliberately close. The pre-release refusal posture (high refusal on malicious cyber prompts despite low-refusal defensive capability) is an explicit attempt to separate *defensive* cyber capability from *offensive* misuse, a tension explored in [[concepts/ai-vulnerability-discovery]].
+
+## Open weights released (2026-10-29/30)
+
+The weights shipped on schedule. HN front page 2026-10-29 (**1538pts/404c**, [HN](https://news.ycombinator.com/item?id=50289418)). Mistral's release post frames it as "Built for Coders, Trusted by Defenders":
+
+- Three more weeks of RL on top of the preview: **leads FrontierCode (19.7% on Cognition's private FrontierCode 2.0 — ahead of GLM-5.3 Flash, Kimi K3, DeepSeek V4.1 Flash) and Terminal-Bench**, matches the best open-weight models on the Artificial Analysis Coding Agent Index **with substantially greater token efficiency**.
+- Improved defensive cybersecurity; explicit sovereign-AI framing: trained from scratch on European infrastructure, "clear lineage from inception to release", self-hostable under European law.
+- Three reasoning modes for cost-performance balance; "reasoning efficiency" gains pitched as lowering inference cost with no signs of saturation.
 
 ## See also
 - [[entities/mistral-ai]] — the company

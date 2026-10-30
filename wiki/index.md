@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3332
-> Last updated: 2026-10-28
+> Total pages: 3335
+> Last updated: 2026-10-30
 
 ## Entities (956 pages)
 
@@ -964,9 +964,12 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2262 pages)
+## Concepts (2265 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
+[[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
+[[concepts/zombie-statistics]] — Trakkr study tracing 1,285 AI-quoted statistics: only 40% reach a study that confirms them, 11% have no study anywhere (Oct 2026)
+[[concepts/claude-code/claude-code-vsx-backdoor]] — Backdoored official Claude Code for VS Code 2.1.313 on the Cursor Marketplace (Phorion, Oct 30 2026): persistent SSH backdoor on macOS/Linux/Windows, pulled from all registries
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
 - [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)

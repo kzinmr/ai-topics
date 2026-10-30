@@ -1,7 +1,7 @@
 ---
 title: "Sleep-Time Compute — Offline Reasoning Before the Query Arrives"
 created: 2026-09-23
-updated: 2026-10-29
+updated: 2026-10-30
 type: concept
 tags: [test-time-scaling, token-economics, inference, context-engineering, ai-agents, agent-memory, arxiv]
 sources:
@@ -73,3 +73,7 @@ live turn cheap — but compaction *compresses*, sleep-time compute *derives new
 ## See also
 
 - Google Research's **sleep framework** (Oct 27, 2026, Behrouz & Mirrokni) extends the wake/sleep metaphor *into training*: during an offline sleep phase the model unlocks pre-allocated MoE memory blocks (Hope architecture, low-rank experts) and updates weights from self-generated practice examples — consolidating up to 10M tokens of context without catastrophic forgetting. Key distinction: sleep-time compute leaves weights frozen; the sleep framework's sleep phase is an automated post-training cycle. See [[concepts/continual-learning]] and `raw/articles/research.google--sleep-framework--5c8a2e61.md`.
+## Google Sleep Framework (Oct 2026) — weight-updating variant
+
+Google Research (Behrouz & Mirrokni, 2026-10-27) extends the sleep idea from *frozen-weight pre-computation* to **an automatic post-training cycle**: during the offline sleep phase the model unlocks pre-allocated MoE memory blocks (Hope architecture) and updates its weights on self-generated practice examples, consolidating up to 10M tokens of short-term context into long-term parameters without catastrophic forgetting. The key contrast: Letta's sleep-time compute never touches weights; the Google framework makes the wake/sleep alternation a *training* lifecycle (see [[concepts/continual-learning]] for the full mechanism notes). Source: `raw/articles/research.google--google-sleep--49a32b91.md` ([HN 78pts](https://news.ycombinator.com/item?id=50272479)).
+

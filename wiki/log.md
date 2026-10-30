@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-10-30] trending-topics — Claude Code VSX backdoor, zombie statistics, NVL72 rack-scale scheduling
+- Created: `concepts/claude-code/claude-code-vsx-backdoor.md`, `concepts/zombie-statistics.md`, `concepts/skypilot-rack-scale-scheduling.md`
+- Updated: `concepts/mistral-large-4.md` (open weights released, HN 1538pts), `concepts/sleep-time-compute.md` (Google Sleep Framework), `entities/skypilot.md` (NVL72 scheduler)
+- Raw: 6 articles (mistral.ai weights release, phorion.io VSX advisory, trakkr.ai zombie stats, research.google sleep framework, skypilot.ai NVL72, 404media Proton AI reckoning)
+- SCHEMA: +9 tags (mistral-large-4, frontiercode, terminal-bench, sleep-framework, zombie-statistics, rack-scale-computing, nvlink, skypilot, ssh-backdoor, ai-workplace-pressure, employee-surveillance)
+- Report: `inbox/rss-scans/trending-topics-2026-10-30.md`
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-10-30 11:00 UTC] active-crawl | 5 new concept pages + 2 enrichments — LLM Voice, Duet-style hierarchy, Stack Overflow collapse, Raschka reasoning course, agent status-summary polling
