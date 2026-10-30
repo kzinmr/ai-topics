@@ -246,6 +246,7 @@
 - [[entities/descript-audio-codec]] — Descript Audio Codec (DAC)
 - [[entities/devin]] — Devin (Cognition AI)
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy) — Pragmatic Leverage, FIC, 12-Factor Agents
+- [[entities/dianne-na-penn]] — Dianne Na Penn — Head of Product, Anthropic Research & Labs; career-strategy views from Inside PM at Anthropic newsletter (Oct 2026)
 - [[entities/dimillian]] — Thomas Ricouard (Dimillian) — iOS/SwiftUI dev turned Codex Developer Experience @OpenAI; Ice Cubes & CodexMonitor author
 - [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — AI researcher; creator of BenchPress ($0 benchmark prediction via rank-2 SVD matrix completion); EE theory/compressed sensing background (June 25)
 - [[entities/discovery-loop]] — Discovery Loop — PBC founded Aug 2026 by Jeff Dean, Sanjay Ghemawat, Oriol Vinyals, Quoc Le; mission: automate machine research; funding details (Khosla Ventures + Radical Ventures, Jordan Jacobs board, Pichai retention attempts, Google compute+investment deal)
@@ -3365,8 +3366,8 @@
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
 - [[queries/test-time-compute-three-axes-2026-09-24]] — Compute-vs-accuracy frontier has 3 axes (sleep-time / test-time / post-peak); benchmarks only measure the middle one
-- [[queries/wiki-graph-analysis-weekly-2026-10-23]] — Weekly Wiki Graph Analysis (2026-10-23) — 3,288 pages; 491 orphans (485 content-rich), 4,223 broken links (352 auto-fixable), 16 dup groups, 321 oversized, 2,385 stale
-- [[queries/wiki-graph-analysis-weekly-2026-10-23-annotations]] — Adjudicated verdicts: 8 real dup pairs (2 already redirects), deliberate-coder/deliberatecoder = different people, index gap = 0 real, 9 nested-resolvable broken targets
+- [[queries/wiki-graph-analysis-weekly-2026-10-30]] — Weekly Wiki Graph Analysis (2026-10-30) — 3,351 pages; 477 orphans (466 content-rich), 3,378 broken links (172 auto-fixable), 18 dup groups, 325 oversized, 2,420 stale
+- [[queries/wiki-graph-analysis-weekly-2026-10-30-annotations]] — Adjudicated verdicts: 4 real dup actions (10 stubs already redirected, 4 false positives), deliberate-coder/deliberatecoder = different people, real index gap = 4, top missing-page queue
 - [[queries/where-the-missing-software-went]] — Where the missing software went: reconciles code-review-bottleneck (shipping didn't grow) with the modest-success boom (modest successes doubling per year) — growth went long-tail, review capacity is the moat
 
 ## RSS Scans

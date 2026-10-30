@@ -1440,3 +1440,12 @@ research-grade pages from genuinely uncovered material:
 ## 2026-10-30 00:3x UTC — hot-post (morning 09:30 JST)
 - Delivered hot-post: Gemini 4 Carbon gated-release pattern + AI-native demand indicators (payroll 10% vs 1%).
 - Archive: inbox/trending-reports/hot-post-2026-10-30-0930.md. Checks: NO_SLOP_FOUND, 0 wikilink MISS, NO_TYPO.
+
+## 2026-10-30 15:05 UTC — wiki-graph-analysis (weekly cron)
+- Ran `scripts/_weekly_graph_report.py`: 3,351 pages; 477 orphans; 3,378 broken (172 fixable); 18 raw dup groups; 325 oversized; 2,420 stale.
+- Report: `queries/wiki-graph-analysis-weekly-2026-10-30.md` + adjudicated `queries/wiki-graph-analysis-weekly-2026-10-30-annotations.md`.
+- WoW vs 2026-10-23: pages +63, orphans −14, broken links −845 (10-29 health-fix landed), fixable 352→172.
+- Dup adjudication: 4 REAL actions (concepts/nvidia-openshell→redirect to entity; alphaproof-nexus→alpha-proof-nexus; deerflow→deer-flow; cline back-link), 10 groups already redirect stubs, 4 false positives (incl. deliberate-coder≠deliberatecoder different people). No merges executed — queued for health-fix run.
+- Index ground truth: real not-indexed = 4 (dianne-na-penn registered this session; 3 owned by sibling pipelines), real stale entries = 4 (2 deleted prior reports swapped today, 1 archive, 1 harness-engineering-101 pointer).
+- Missing-page queue (8+ refs, no target): entities/cursor, entities/ben-clavie, entities/huggingface, concepts/enterprise-ai, concepts/ai-adoption, concepts/agent-architecture, concepts/ai-governance, concepts/claude-opus-4-7.
+- Index entries swapped 10-23→10-30; entities/dianne-na-penn added.
