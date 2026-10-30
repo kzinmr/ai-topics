@@ -14,9 +14,9 @@ aliases:
   - "Cursor"
   - "cursor.com"
 related:
-  - "concepts/ai-benchmarks/programbench]]"
-  - "entities/openai]]"
-  - "entities/anthropic]]"
+  - concepts/ai-benchmarks/programbench
+  - entities/openai
+  - entities/anthropic
 sources:
   - raw/newsletters/2026-05-06-ainews-silicon-valley-gets-serious-about-services.md
   - https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious

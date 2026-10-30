@@ -964,7 +964,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2257 pages)
+## Concepts (2262 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1042,6 +1042,7 @@
 - [[concepts/agent-safety-incidents-open-source]] — AI Agent Safety Incidents in Open-Source Communities
 - [[concepts/agent-sandbox-patterns]] — Agent Sandbox Patterns — Isolate-the-Tool vs Isolate-the-Agent; zero-secret agent + credential-holding control plane (Unikraft micro-VM); Browser Use production architecture (Feb 2026)
 - [[concepts/agent-security-patterns]] — Agent Security Patterns
+- [[concepts/agent-status-summary-polling-overhead]] — Agent Status-Summary Polling Overhead — Claude Code's `agent_summary` re-sends each active background agent's whole transcript to its model every ~30s for a few UI words; 16.4% of weekly spend (background-heavy team) vs ~8% single session vs Anthropic's fleet-wide ~2%; cache-hit ≠ free at ~9,000 input tokens per output token; companion Tell HN on email injected into outbound prompts (HN 567, Oct 2026)
 - [[concepts/agent-skill-ecosystem-missing-package-manager]] — Missing Package Managers (synthesis of arXiv:2610.11169 + 2610.11647, both 2026-10-08) — the SKILL.md namespace lacks registry/pinning/provenance/name-resolution; 2,193,119 adoptions traced with stars useless for origin ID (top-100 ranked audit = 14.9% vs 0.5% for starred, ~30x) and 1-in-4 skills co-installed with a same-job rival whose winner is decided by install location
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24); Agent Skills standard donated to Agentic AI Foundation / Linux Foundation by Anthropic (Oct 22 2026) — both SKILL.md and MCP now under neutral governance
 - [[concepts/academic-reception-of-ai-math]] — Academic reception of AI-generated mathematics — the Oct 2026 OpenAI math split: AHM's institutional objection + Karagila's "verification DoS" desk-rejection critique, vindicated by the 24-hour withdrawal cascade
@@ -1844,6 +1845,7 @@
 - [[concepts/dspy-tutorial]] — DSPy Tutorial (Getting Started)
 - [[concepts/dspyrlm]] — DSPy.RLM
 - [[concepts/dual-process-theory]] — Dual Process Theory (AI)
+- [[concepts/duet-style-hierarchical-assistant]] — Duet-style Hierarchical Agent Assistant — channel-based personal-agent shape where the orchestrating layer holds NO low-level access, channels carry scoped access (per-channel GitHub repos, no credential storage), sub-threads confined to code sandboxes; latency + short responses as hard usability constraints (fig.blue on Claude Duet, HN 118, Oct 2026)
 - [[concepts/durable-execution]] — Durable Execution — persistence/replay, recoverable workflows, permanent failures and external-effect limits
 - [[concepts/dynamic-software]] — The paradigm shift from static (deterministic, hard-coded) software to dynamic (model-driven, non-deterministic, agen...
 - [[concepts/dynamic-workflows]] — Dynamic Workflows in Claude Code; enriched with Boris Cherny "algebra for agents" framing + Bun Zig→Rust production rewrite (Aug 8)
@@ -2350,6 +2352,7 @@
 - [[concepts/llm-security]] — LLM Security — Security vulnerabilities in LLM applications including prompt injection, data leakage, and jailbreaking
 - [[concepts/llm-steering]] — LLM Steering
 - [[concepts/llm-text-detection-classical-ml]] — LLM Text Detection with Classical ML — using SVM, Random Forest, XGBoost on stylometric features to detect AI-generated text, competitive with deep learning approaches for AIGC detection
+- [[concepts/llm-voice]] — LLM Voice (Fowler) — bliki term for detectable LLM prose and the reader's uncanny-valley reaction to it; detection tools miss the point, never let an LLM write the draft (editing can't expel the voice), writing-as-thinking so delegating prose delegates comprehension; documented exceptions incl. translation and Jim Highsmith (martinfowler.com, HN 492, Oct 2026)
 - [[concepts/llm-trace-judge]] — LLM Trace Judge
 - [[concepts/llm-training-coherence-evolution]] — LLM Training Coherence Evolution
 - [[concepts/llm-training-fundamentals]] — llm-training-fundamentals
@@ -2823,6 +2826,7 @@
 - [[concepts/reasoning-model-cost-transparency]] — Reasoning Model Cost Transparency
 - [[concepts/reasoning-model-quality-degradation]] — Reasoning Model Quality Degradation — Token clustering and hidden constraints that degrade reasoning model performance; GPT-5.5 Codex case study
 - [[concepts/reasoning-models]] — Reasoning Models
+- [[concepts/reasoning-models-from-scratch-course]] — Reasoning Models from Scratch (Raschka video course) — 8 videos / 11+ hours adding evaluation, inference-time scaling, RLVR and distillation to a pretrained small Qwen3 in PyTorch; plus the LLM → reasoning model (engine) → agent harness (machinery) taxonomy (Ahead of AI, HN 854, Oct 2026)
 - [[concepts/reasoning-trace-extraction-vulnerability]] — Reasoning Trace Extraction Vulnerability — Critical architectural flaw in Anthropic/OpenAI/Google APIs enabling extraction of hidden reasoning via weaker sibling models (Aug 2026)
 - [[concepts/reasoning-retrieval]] — Reasoning Retrieval
 - [[concepts/recommendation-systems]] — recommendation-systems
@@ -3041,6 +3045,7 @@
 - [[concepts/ssm-mamba]] — SSM / Mamba — State Space Models for Sequence Modeling
 - [[concepts/stanford-cs329s]] — Stanford CS329S
 - [[concepts/stanford-cs336-language-modeling-from-scratch]] — Stanford CS336 — Language Modeling from Scratch
+- [[concepts/stackoverflow-question-collapse]] — Stack Overflow Question Collapse — stackoverflow.com fell below 1,000 new questions/month (Oct 2026); the corpus coding agents were trained on hollowed out by its best customer; unresolved AI-substitution vs community-hostility causation debate with conceded timing confound (HN 789/718)
 - [[concepts/starchild-1]] — Starchild-1
 - [[concepts/state-of-open-source-ai-2026]] — Mozilla report: open weights closed the capability gap while inference cost collapsed 50× (July 2026)
 - [[concepts/state-sponsored-chatbot-influence]] — State-Sponsored AI Chatbot Influence — fake think-tank "data reports" engineered to steer LLM chatbot answers (Hanover Institute / Piro case, Aug 2026)

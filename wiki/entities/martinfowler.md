@@ -1,7 +1,7 @@
 ---
 title: "Martin Fowler"
 created: 2026-06-21
-updated: 2026-06-23
+updated: 2026-10-30
 type: entity
 tags:
   - person
@@ -24,7 +24,7 @@ status: active
 
 # Martin Fowler
 
-Martin Fowler is a renowned software architect, author, and thought leader in the software engineering community. He serves as Chief Scientist (formerly Principal Scientist) at [[entities/thoughtworks|Thoughtworks]], a global technology consultancy, and publishes extensively on his website [martinfowler.com](https://martinfowler.com) — one of the most widely-read technical blogs in the industry.
+Martin Fowler is a renowned software architect, author, and thought leader in the software engineering community. He serves as Chief Scientist (formerly Principal Scientist) at Thoughtworks, a global technology consultancy, and publishes extensively on his website [martinfowler.com](https://martinfowler.com) — one of the most widely-read technical blogs in the industry.
 
 ## Background
 
@@ -52,11 +52,11 @@ Martin Fowler's website (martinfowler.com) is organized as a **bliki** — a hyb
 
 Through Thoughtworks and his platform, Fowler has increasingly covered AI and LLM engineering topics. The bliki model has proven well-suited for AI content, where the field evolves rapidly and articles benefit from being treated as living documents. In June 2026, martinfowler.com published **"Building Reliable Agentic AI Systems"**, a comprehensive case study of Bayer AG's PRINCE platform co-authored with Sarang Sanjay Kulkarni, a Principal Consultant at Thoughtworks.
 
-This article applies Fowler's long-standing emphasis on engineering discipline — [[concepts/context-engineering|context engineering]] and [[concepts/harness-engineering|harness engineering]] — to the emerging domain of agentic AI, demonstrating practical patterns for building production-reliable AI agents.
+This article applies Fowler's long-standing emphasis on engineering discipline — [[concepts/harness-engineering/context-engineering|context engineering]] and [[concepts/harness-engineering|harness engineering]] — to the emerging domain of agentic AI, demonstrating practical patterns for building production-reliable AI agents.
 
 ## PRINCE Case Study: Building Reliable Agentic AI Systems (June 2026)
 
-In June 2026, martinfowler.com published "Building Reliable Agentic AI Systems" — a detailed case study of the **PRINCE (Preclinical Information Center)** platform developed by Bayer AG in collaboration with [[entities/thoughtworks|Thoughtworks]]. Authored by Sarang Sanjay Kulkarni (Principal Consultant at Thoughtworks) and hosted on Fowler's bliki, the article documents how pharmaceutical preclinical research was transformed from keyword-based search into an intelligent agentic research assistant.
+In June 2026, martinfowler.com published "Building Reliable Agentic AI Systems" — a detailed case study of the **PRINCE (Preclinical Information Center)** platform developed by Bayer AG in collaboration with Thoughtworks. Authored by Sarang Sanjay Kulkarni (Principal Consultant at Thoughtworks) and hosted on Fowler's bliki, the article documents how pharmaceutical preclinical research was transformed from keyword-based search into an intelligent agentic research assistant.
 
 ### Background and Motivation
 
@@ -85,7 +85,7 @@ The system employs three specialized agents working in coordination:
 
 1. **Researcher Agent**: The primary information gatherer, using a hybrid retrieval approach:
    - **Agentic RAG** ([[concepts/agentic-rag]]) for unstructured data — a multi-stage pipeline with keyword extraction, metadata filter generation, query expansion (n=5), weighted hybrid search (semantic 0.7 + keyword 0.3), and reranking (bge-reranker-large, top-k=7)
-   - **Text-to-SQL** ([[concepts/text-to-sql]]) for structured data — using dynamic few-shot prompting with vector-similarity-based example retrieval for Athena SQL generation
+   - **Text-to-SQL** ([[concepts/agentic-rag]]) for structured data — using dynamic few-shot prompting with vector-similarity-based example retrieval for Athena SQL generation
 
 2. **Reflection Agent**: Validates data completeness and sufficiency, providing feedback loops for additional research when needed. Performs **data validation** rather than process reflection.
 
@@ -100,7 +100,7 @@ A key design principle in PRINCE is **context discipline**. Rather than stuffing
 - **Evidence context** (Reflection Agent phase)
 - **Synthesis context** (Writer Agent phase)
 
-This approach, reflecting [[concepts/context-engineering]], reduces context pollution and makes the system easier to debug, evaluate, and improve. Context engineering shaped what information each model received, what it did not receive, and how context moved between specialized steps.
+This approach, reflecting [[concepts/context-engineering/index]], reduces context pollution and makes the system easier to debug, evaluate, and improve. Context engineering shaped what information each model received, what it did not receive, and how context moved between specialized steps.
 
 ### Harness Engineering
 
@@ -123,6 +123,32 @@ PRINCE prioritizes trust through:
 
 The Researcher Agent is evolving from a monolithic architecture into a hierarchy of domain-specific sub-agents (toxicology, pharmacology, etc.), each owning its own toolset and prompt instructions. This reflects Fowler's long-standing emphasis on **cohesion and separation of concerns** in system design.
 
+## LLM Voice bliki entry (October 2026)
+
+On 2026-10-29 Fowler published a bliki entry coining **LLM Voice** — the recognizable
+stylistic signature of LLM prose and, more importantly, the reader's reaction to it
+(HN: 492 points / 259 comments). It is his most directly AI-critical piece on the site
+and the companion concept page carries the detail: [[concepts/llm-voice]].
+
+Positions that sit alongside — and in tension with — his agentic-AI advocacy:
+
+- Detection tooling **misses the point**: the uncanny-valley reaction *is* the signal,
+  and it arrives before any classifier would.
+- The **drafting prohibition**: never let an LLM write the draft; even human editing
+  "very hard to expel the LLM-Voice". Outlining "may be ok, but only as far as an
+  outline."
+- The **thinking argument**: writing is an "almost-essential tool for thinking", so
+  delegating prose delegates comprehension. He treats perfect undetectability as the
+  *worse* outcome.
+- His **site disclosure policy**: anyone using AI to write must declare how, in the
+  acknowledgments. His own sole permitted use is as a search tool with every fact
+  verified at source. The LLM Voice entry closes with "I did not use AI or LLMs in any
+  way while writing this post."
+- Not an absolutist: he explicitly makes exceptions for collaborator Jim Highsmith
+  (overcoming procrastination), for translation by non-native-English colleagues
+  (though preferring "a genuine human's clunky prose to the smooth but soulless LLM"),
+  and for form letters or reports nobody reads.
+
 ## Significance for the AI Engineering Community
 
 The PRINCE case study published on martinfowler.com is significant for several reasons:
@@ -136,7 +162,10 @@ The PRINCE case study published on martinfowler.com is significant for several r
 ## Related Pages
 
 - [[concepts/agentic-rag]] — Agentic RAG architecture, comprehensively illustrated by PRINCE
-- [[concepts/context-engineering]] — Context engineering discipline, demonstrated in PRINCE's multi-stage context design
+- [[concepts/context-engineering/index]] — Context engineering discipline, demonstrated in PRINCE's multi-stage context design
 - [[concepts/harness-engineering]] — Harness engineering discipline, shown in PRINCE's orchestration, retry, and observability patterns
-- [[entities/thoughtworks]] — Thoughtworks, the consultancy where Fowler serves as Chief Scientist
+- [[concepts/agentic-rag]] — Agentic RAG reference architecture in PRINCE
 - [[concepts/reliable-agent-patterns]] — Catalog of reliability patterns extracted from the PRINCE case study
+- [[concepts/llm-voice]] — his 2026-10-29 bliki term for detectable LLM prose style
+- [[concepts/ai-slop]] — the volume-side companion phenomenon
+  - raw/articles/martinfowler.com--bliki-llm-voice--b7d2c1a4.md
