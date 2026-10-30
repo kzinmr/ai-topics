@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3335
+> Total pages: 3336
 > Last updated: 2026-10-30
 
 ## Entities (956 pages)
@@ -3325,7 +3325,7 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (43 pages)
+## Queries (44 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
@@ -3346,6 +3346,7 @@
 - [[queries/2026-10-24-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-24): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-27-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-27): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-25-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-25): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-10-30-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-30): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
