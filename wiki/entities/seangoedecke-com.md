@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-10-29
+updated: 2026-10-30
 type: entity
 sources:
   - raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md
@@ -28,6 +28,7 @@ sources:
   - raw/articles/seangoedecke.com--readers-cant-identify-watermarked-ai-text--d68a818a.md
   - raw/articles/seangoedecke.com--getting-good-at-ai-takes-time-and-practice--73bdae48.md
   - raw/articles/seangoedecke.com--you-can-just-ask-ai-to-do-things--7174fa1d.md
+  - raw/articles/seangoedecke.com--elegance-and-intelligence-are-anticorrelated--8978dff6.md
 ---
 
 # Sean Goedecke
@@ -537,6 +538,20 @@ Goedecke pushes back on the current "have your AI agent rewrite it in Rust/C" wa
 Continues his design-centrism line ("Nobody Gets Promoted for Simplicity", "What requirements don't you have?") and connects to the [[concepts/agent-native-tool-fallacy]] skepticism toward AI-hype-shaped engineering fads.
 
 Source: [[raw/articles/seangoedecke.com--software-is-slow-because-of-bad-design-not-slow-languages--4c48f523.md]]
+
+### Elegance and Intelligence Are Anticorrelated (Oct 2026)
+
+Goedecke's thesis: **intelligence and elegance have a surprisingly negative correlation**, because a sufficiently capable mind can brute-force what a less capable one must design around. His von Neumann anecdote is the anchor — asked the two-cyclists-and-a-fly puzzle, von Neumann answered instantly; the questioner assumed he'd heard the trick (notice the cyclists meet in an hour), but he had simply **summed the infinite series in his head**. "If you can do that instantly in your head, why bother with the clever trick?"
+
+The software translation, and the part most useful to agent practitioners: **the most important kind of raw intelligence for a software engineer is the size of your working memory** — how many moving pieces you can hold at once. Software design is largely the craft of *reducing* that number, by abstracting pieces away or hiding them behind interfaces. Engineers with enormous working memory don't feel that pressure, which is why they can be **"surprisingly okay with working in a sloppy codebase": they can see the whole thing clearly at a glance**, never get lost, and will effortlessly trace a ten- or twelve-step execution flow when they need to. His frustration with such engineers is that they don't decompose problems *because they don't have to* — the discipline that produces maintainable code is a compensation for a limitation they lack.
+
+**The AI extension is the payload.** The same dynamic may explain why **AI-generated mathematical proofs read as unacceptably verbose and unfocused to human mathematicians**: for a model with enough effective working memory, "a series of a few hundred logical steps is not substantially more difficult to parse than a series of ten. They are happy to just 'sit down and calculate' indefinitely." Goedecke connects this to his earlier warning about [[concepts/ai-mathematics-theorem-proving|AI proofs solving conjectures without generating new ones]] — and argues **inelegance compounds the danger**, because "noticing (or inventing) elegant abstractions is often the fuel for generating new conjectures." A proof engine that never needs abstraction may stop being an engine *of* new mathematics.
+
+**The closing inversion** is the memorable one: humans became good at inventing clever tricks precisely *because* we aren't built for rationality — our logic is "jury-rigged on top of a seething morass of irrational urges, inspirations, and blind guessing," and that turned out to be "an astonishingly good way to develop powerful abstractions." So the speculative claim: **"our relative stupidity might be one of" our competitive advantages** — necessity forced abstraction-building that a brute-force-capable machine never needs. He flags it as "probably too comforting a thought to be true," and answers his own objection with von Neumann again, who "invented a ton of new mathematics despite his willingness to calculate."
+
+Sits in the same design-centrism line as "Software Is Slow Because of Bad Design" and "Nobody Gets Promoted for Simplicity," and supplies the read-side counterpart to [[concepts/context-engineering/context-rot]] (working-memory limits as the root constraint that context engineering manages) and to debates about whether scale removes the need for insight (cf. [[concepts/scaling-laws]]).
+
+Source: [[raw/articles/seangoedecke.com--elegance-and-intelligence-are-anticorrelated--8978dff6.md]]
 
 ## Sources
 

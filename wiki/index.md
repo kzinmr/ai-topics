@@ -1607,7 +1607,7 @@
 - [[concepts/co-intelligence]] — co-intelligence
 - [[concepts/coala]] — CoALA — Cognitive Architectures for Language Agents
 - [[concepts/coalitional-agency]] — Coalitional Agency
-- [[concepts/code-cleanliness-coding-agents]] — Code Cleanliness and Coding Agent Performance — arXiv study (2605.20049) measuring how codebase cleanliness affects coding agent token usage (7-8% less) and file revisitations (34% fewer) across 660 Claude Code trials (July 2026)
+- [[concepts/code-cleanliness-coding-agents]] — Code Cleanliness and Coding Agent Performance — arXiv study (2605.20049) measuring how codebase cleanliness affects coding agent token usage (7-8% less) and file revisitations (34% fewer) across 660 Claude Code trials (July 2026); + Oct 2026 practitioner corollary on API-surface hygiene (matklad's pub-calls-pub rule, Goedecke on elegance vs. intelligence)
 - [[concepts/code-as-process]] — code-as-process
 - [[concepts/code-execution-model]] — Code Execution Model (CEM) — doubleAI's coined class: an LLM lives inside the running program, rewrites the binary for the exact machine/data, and formally proves each rewrite equivalent (Maxwell: 38× pipelines, 4.25× kernels, 90% of SOL-ExecBench Blackwell kernels) (Oct 2026)
 - [[concepts/code-as-graph]] — Code-as-Graph — Samuel Colvin's thesis: agent orchestration belongs in type-checked code, not graph libraries; "typed/snapshotted/parallel — pick two" CAP theorem; Monty + Temporal as the execution/durability answer (Oct 2026)
@@ -2227,7 +2227,7 @@
 - [[concepts/inference]] → [[concepts/inference/_index]] — Inference — LLM inference engine comparison; vLLM, SGLang, TGI, llama.cpp, and their trade-offs
 - [[concepts/inference-engine-security]] — Inference-Engine Security — LLM self-host exploitation surface
 - [[concepts/inference-hardware]] — Inference Hardware
-- [[concepts/inference-speed-development]] — Inference Speed Development
+- [[concepts/inference-speed-development]] — Inference Speed Development — shipping cadence at inference speed; cross-linked to Alderson's 'Making Agents Fast' latency discipline
 - [[concepts/inference-time-compute]] — Inference-Time Compute — compute spent generating answers; the third scaling axis, with economics and negative-returns framing
 - [[concepts/inference-time-scaling]] — Inference-Time Scaling
 - [[concepts/inference/h3-metal-apple-silicon]] — H3-metal — Native MiniMax-H3 inference for Apple Silicon (Aug 2026): C implementation using Metal GPU API by antirez, radical simplicity, benchmark comparisons
@@ -2937,7 +2937,7 @@
 - [[concepts/security-and-governance/model-cards-system-cards]] — Model Cards and System Cards
 - [[concepts/security-and-governance/open-model-safety]] — Open Model Safety
 - [[concepts/security-and-governance/responsible-scaling-policy]] — Responsible Scaling Policy — Anthropic's RSP + Aug 2026 Risk Report: 3 autonomy threat models, misalignment risk Low
-- [[concepts/self-driving-codebases]] — Self-Driving Codebases
+- [[concepts/self-driving-codebases]] — Self-Driving Codebases — autonomous build/fix/maintain vision (Aman Sanger, Cursor); adds Oct 2026 **Spawn case study**: Fable-agent swarm, >$3M/mo tokens (30x payroll), hourly production ships, hour-without-ship = SEV-0, 30s targeted rollback, and the GPT-6 Astra 'made it secure by turning it off' failure
 - [[concepts/self-evolving-agents]] — Self-Evolving Agents
 - [[concepts/self-harness]] — Self-Harness — LLM-based agent that iteratively improves its own operating harness (Shanghai AI Lab, arXiv:2606.09498)
 - [[concepts/self-hosting-ai-development]] — Self-Hosting AI Development

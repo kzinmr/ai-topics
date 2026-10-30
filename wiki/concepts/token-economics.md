@@ -2,7 +2,7 @@
 title: "Token Economics — LLM Inference Cost & Optimization"
 type: concept
 created: 2026-04-18
-updated: 2026-09-24
+updated: 2026-10-30
 tags:
   - inference
   - optimization
@@ -11,7 +11,7 @@ tags:
   - ai-economics
   - token-economics
 aliases: ["cost-per-token", "inference-unit-economics"]
-sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/newsletters/2026-06-30-tokenbudgeting-our-conversations-with-enterprises-on-token-spend.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]", raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md, raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md, raw/articles/epoch.ai--publications-the-plunging-price-of-thought--e7c1a0f3.md]
+sources: [raw/newsletters/2026-05-28-altman-walks-back-job-apocalypse.md, raw/newsletters/2026-06-30-tokenbudgeting-our-conversations-with-enterprises-on-token-spend.md, raw/articles/2026-05-27_jayagup10_token-budget-wars.md, "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-03_glean_token-yield-architecture]]", raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--8732644d.md, raw/articles/2026-06-10_semianalysis_subscription-vs-api-business-model.md, raw/articles/epoch.ai--publications-the-plunging-price-of-thought--e7c1a0f3.md, raw/articles/simonwillison.net--2026-oct-29-api-credits--2686ec1e.md, raw/articles/martinalderson.com--posts-making-agents-fast--5a2940ba.md]
 ---
 
 # Token Economics
@@ -99,6 +99,24 @@ LLM inference costs declined **10x annually** — faster than PC compute or dotc
 | Disruptor | DeepSeek R1 | $0.55 | $2.19 |
 
 Provider variation: identical models vary **10x** across providers ($0.90 → $9.50/M tokens).
+
+## Subscription-Granted API Credits (Oct 2026)
+
+In October 2026 both frontier labs converged on the same benefit, one after the other: **consumer/prosumer subscription tiers now hand back API credits at face value**.
+
+| Lab | Plans | Grant |
+|---|---|---|
+| **Anthropic** (announced early Oct 2026) | Max / Team at **$100, $200, $500**/mo | The **equivalent dollar quantity** of (expiring) monthly credits usable against the Anthropic API |
+| **OpenAI** (launched Oct 29, 2026) | **$100, $200, $500** ChatGPT plans | The **same quantity** of credits, applied to one of your API organizations |
+
+Why this matters beyond a consumer perk:
+
+- **It reprices agent experimentation.** Credits already paid for convert marginal API spend to zero, which is precisely the binding constraint on always-on agents, autonomous loops, and public demos. Willison's own reaction — "I may even ship some public-facing demos now that the credits are already covered" — is representative of the indie-builder segment this targets.
+- **Subscription revenue is now partly a subsidy for API consumption.** Combined with the [[concepts/codex-resets]] pattern (heavy users reporting ~$10k/month of API credits against a $100–200 Codex Pro plan), the labs are deliberately running a **two-price system** where subscription-adjacent compute is far cheaper than list API pricing. Expect the same distortion to keep migrating demand off metered API.
+- **Expiry is the mechanism.** The credits expire, so they buy engagement and habit formation rather than being a fungible discount — closer to an airline mile than a voucher.
+- **Follow-on risk for the credit-resale market.** The grey market described above (startups reselling unused allocation at 40–50% off list) becomes easier to supply as personal subscriptions carry larger credit balances — worth watching as a ToS-enforcement flashpoint.
+
+Sources: [[raw/articles/simonwillison.net--2026-oct-29-api-credits--2686ec1e.md]] (OpenAI launch + Anthropic precedent); see also [[entities/claude-code]] on the subscription-included programmatic-usage credit.
 
 ## Four Optimization Layers (Apply in Order)
 

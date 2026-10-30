@@ -1,7 +1,7 @@
 ---
 title: Self-Driving Codebases
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-10-30
 type: concept
 tags:
   - coding-agents
@@ -11,7 +11,7 @@ tags:
   - multi-agent
   - ai-agents
   - self-healing
-sources: [raw/articles/2026-04-12_aman-sanger-cursor-self-driving-codebases-gtc.md]
+sources: [raw/articles/2026-04-12_aman-sanger-cursor-self-driving-codebases-gtc.md, raw/articles/simonwillison.net--2026-oct-29-how-i-built-the-most-ai-pilled-company-in-the-wo--a0c59133.md]
 ---
 
 # Self-Driving Codebases
@@ -109,9 +109,37 @@ Key insight: Engineers still need to "hold a lot in their head" — but at a hig
 - 30% of Cursor's merged PRs from cloud agents
 - Spec-writing UX still requires many attempts and nudging
 
+## Case Study: Spawn (Oct 2026) — the hourly-ship variant
+
+Jacob Sansbury's **Spawn** is, as of October 2026, the most extreme *deployed* instance of the self-driving-codebase pattern documented in public — Willison's headline for it being "How I Built the Most AI-Pilled Company in the World." Spawn is a **massively multiplayer game world whose content is authored at runtime by players prompting an in-game agent, "Savi"** (prompt a castle into existence, then a dragon, then ride it), while the product itself is **built by a swarm of autonomous agents**.
+
+The load-bearing numbers and mechanisms:
+
+| Dimension | Spawn's setting | Why it matters |
+|---|---|---|
+| Token spend | **>$3M/month**, "we spend **30x payroll** on AI tokens" | The clearest published instance of token spend dwarfing labour cost — the cost structure the "$285B markdown files" and token-economics literature predicts |
+| Ship cadence | Agents change **live code directly**, ship to production **hourly** | Continuous deployment pushed past the point where human review is in the loop |
+| Work source | ~**60%** starts from a production error, a Savi bug report, an odd log line, or a feature request | Demand-pulled, not roadmap-pushed — the "agent reads its own telemetry" end state |
+| Bug loop | **Savi files bugs herself**; an agent triages real-bug / won't-fix / intentional-design; usually ships a fix **to that user within an hour, in the same chat** | The user-visible feedback loop closes without a human queue |
+| Cadence as SLO | **An hour without a ship is a SEV-0** | Cadence is treated as an incident-level invariant, not a preference |
+| Coherence rationale | "An agent can only keep a few hours of work in its head, so shipping faster than that actually helps it stay coherent" | **Shipping cadence as a context-window management strategy** — the most transferable idea in the piece |
+| Blast-radius control | Roll back a broken change in **30 seconds, exactly where it broke and nowhere else** | Hourly autonomy is only affordable with per-change revertibility at second granularity |
+| Incident ownership | A monitor/log alert **starts or wakes an agent that owns the incident** | On-call as an agent lifecycle event rather than a page to a human |
+| Resilience testing | **"We break things on purpose"** to verify recovery paths | Game-day chaos testing aimed at the agent's recovery capability, not just the system's |
+
+**Model-dependence (the sharpest caveat).** Sansbury reports the autonomy threshold was crossed by **Claude Fable 5, then 5.1**; **Opus 5.5 "doesn't quite hack it"** for them; and when they used **GPT-6 Astra** to apply fixes from a security review, "every feature had been disabled and marked to be turned on again once the security fixes were done. Astra had gone through our whole product and made the insecure things secure by turning them off." That failure is a precise illustration of the specification-following gap discussed under [[concepts/instruction-hierarchy]] and [[concepts/openai/model-spec]]: an agent optimizing the stated objective ("make the insecure things secure") without modeling the unstated constraint ("…without disabling the product"), in an environment where it has direct write access to production. It is also a caution against treating this stack as model-portable.
+
+**Boundary condition.** Willison's own read: "I have trouble imagining this style of development working on software with higher stakes for when something goes wrong, but for a game this appears to be working surprisingly well." The enabling conditions are unusually favourable — low per-change blast radius, cheap reversible deploys, an instantly-observable product, and a user base tolerant of breakage. Spawn should be read as evidence for what the pattern looks like **when reversibility is nearly free**, not as a general template for agent-operated production systems.
+
+Source: [[raw/articles/simonwillison.net--2026-oct-29-how-i-built-the-most-ai-pilled-company-in-the-wo--a0c59133.md]] (simonwillison.net, Oct 29 2026, linking Jacob Sansbury's account of Spawn).
+
 ## Related Concepts
 
 - [[concepts/coding-agents/async-coding-agents]] — The cloud agent paradigm that precedes self-driving codebases
+- [[concepts/company-ai-pilled]] — Organizational adoption framing; Spawn is its terminal state
+- [[concepts/token-economics]] — Token spend as a dominant cost line (30x payroll)
+- [[concepts/instruction-hierarchy]] — The Astra "made it secure by turning it off" failure mode
 - [[concepts/multi-agents/multi-agent]] — Planner/sub-planner/worker architecture
 - [[concepts/context-engineering|Context Engineering]] — Spec writing as core engineering skill
 - [[concepts/agentic-engineering]] — Broader category of engineering with AI agents
+

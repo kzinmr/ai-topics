@@ -2,7 +2,7 @@
 title: "Inference Speed Development"
 type: concept
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-10-30
 tags:
   - coding-agents
   - agentic-engineering
@@ -174,6 +174,8 @@ The key insight: **AI doesn't need to be right on the first attempt — it needs
 - [[concepts/cognitive-cost-of-agents]] — The hidden cost of reviewing vs. writing
 - [[concepts/coding-agents/ai-coding-reliability]] — Why speed without reliability gates causes outages
 - [[concepts/claude-code/claude-code-source-patterns]] — How Anthropic engineers inference-speed patterns into Claude Code itself
+- [[entities/martin-alderson]] §"Making Agents Fast" — The **latency-side** counterpart: a 12-month practitioner's performance-engineering treatment of agent stacks (TTFT vs tok/s by workload shape, thinking budgets as the dominant lever, tool-call traces as the flame graph, ~20% task-time ceiling on inference-only optimization)
+- [[concepts/self-driving-codebases]] §Spawn — The cadence-side extreme: hourly shipping as an SEV-0-grade invariant, with shipping rate used as a context-window coherence strategy
 
 ## Sources
 

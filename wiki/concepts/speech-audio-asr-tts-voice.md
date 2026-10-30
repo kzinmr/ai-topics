@@ -4,7 +4,7 @@ type: concept
 aliases:
   - speech-audio-asr-tts-voice
 created: 2026-04-25
-updated: 2026-08-15
+updated: 2026-10-30
 tags:
   - concept
   - multimodal
@@ -79,6 +79,20 @@ Both models support GDPR and HIPAA-compliant deployments through secure on-premi
 - Market leader in voice cloning and AI voice generation
 - Confirmed as #1 TTS tool by independent technology platforms in 2026
 - Focus on ultra-realistic voice synthesis and multi-language support
+
+### Qwen3-TTS (October 2026) — open-weight cloning via speaker embeddings
+
+Alibaba's **Qwen3-TTS** is the current open-weight default for *custom* voices, and the practical reason practitioners leave Kokoro: it supports voice cloning. Three variants, all 1.7B (0.6B for Base) and runnable locally on Apple Silicon via `pip install qwen-tts`:
+
+- **Base** — clones from a few seconds of reference audio, in-context or from the **speaker embedding alone** (2048-dim output of a trained speaker encoder). Cannot combine cloning with instruction-following.
+- **CustomVoice** — nine built-in speakers **plus** natural-language style instructions ("speak sad", "whisper").
+- **VoiceDesign** — invents a voice from a free-text description.
+
+The documented path to a custom *and* steerable voice is a workaround: generate with VoiceDesign, then clone with Base (losing instructions), or fine-tune Base on one speaker. The embedding is a plain vector, so it supports **blending** (weighted average = a voice between two speakers) and **semantic directions** (a male/female mean-difference "gender axis" used to morph a clone) — see [[entities/armin-ronacher]] §Qwen3-TTS for worked code. Side benefit: the same embeddings do rough **speaker diarization** on a single track.
+
+**Fraud-relevant:** Ronacher's clone was built from **28 seconds of a conference-talk recording**, and his verdict was that neither a clean nor a long recording is needed for a convincing result — "it won't be very hard to trick your grandmother," especially over a low-quality phone call. Sets the practical cloning-cost floor behind [[concepts/ai-voice-fraud]].
+
+Source: [[raw/articles/lucumr.pocoo.org--2026-10-29-qwen3-custom-voices--c0fa5a0d.md]]
 
 ## Neural Audio Tokenizers
 

@@ -2,7 +2,7 @@
 title: Aleksey Kladov
 type: entity
 created: 2026-04-09
-updated: 2026-08-22
+updated: 2026-10-30
 tags:
   - person
   - blogger
@@ -13,6 +13,7 @@ aliases:
 - matklad.github.io
 sources:
 - raw/articles/matklad.github.io--2026-08-21-rust-glancer-html--ac81b121.md
+- raw/articles/matklad.github.io--2026-10-29-pub-calls-pub-html--7c264184.md
 ---
 
 # Aleksey Kladov
@@ -133,6 +134,22 @@ In "[Rust Glancer](https://matklad.github.io/2026/08/21/rust-glancer.html)" (Aug
 Kladov closes by endorsing the "glance analyzer" architecture — split the world into an **incremental tip of the iceberg** (the code the user is actively working on, served by Salsa) and a **mostly read-only, on-disk, compact** layer (the dependencies, served by `.rmeta`).
 
 Source: [[raw/articles/matklad.github.io--2026-08-21-rust-glancer-html--ac81b121.md]]
+
+### Avoid Public Functions Calling Other Public Functions (Oct 2026)
+
+A deliberately small-scale rule of thumb, and a good example of Kladov's signature register — he opens by admitting "this article will land much better with a concrete example, but I am drawing a blank here, so you gotta just blindly trust my say so!"
+
+**The rule.** When public `foo` needs work already done by sibling public `bar`, the DRY instinct says call `bar()` from `foo()`. Don't. Write a **new private helper** and refactor both to call it.
+
+**The rationale — a tension of purpose, not of duplication.** A public API's job is "to provide an interface that works best *at the call site*." If parts of the public API are reused to implement the rest of it, the same signature must serve two masters: the outside user and the abstraction's own internals. The predictable symptom is **"functions tend to grow optional parameters that should never be set by the user."** His sharpest observation is the *timing*: the parameter growth and interface degradation "can happen **after** the original code sharing" — i.e. the damage is done by a later, unrelated change that reaches for the nearest reusable public function, long after anyone reviewed the design. Making the shared implementation private in advance defuses it: you'll still tinker with the helper's signature, but "because the helper is private, this is a cheap, local change."
+
+**The exception inverts the rule.** For **"shortcut" APIs** — a public function *defined* as a commonly-used chain of calls to other public functions — **no private calls are allowed**, precisely so the shortcut remains a genuine shortcut rather than a "midlayer mistake."
+
+**Against two folk answers.** Researching prior art he found a Stack Overflow question on the same claim. The top answer says pub-calls-pub is bad because it complicates **mocking** a single method; Kladov calls that "a natural, but horrible consequence of misguided approach to testing. **You shouldn't be mocking your methods, you should mock your IO.** And, similarly, you shouldn't test methods, but rather software functionality" — except when you are building a public library with a stable API, "a fun and important, but very narrow fraction of software development." The accepted answer says the recommendation is meaningless unless backed by an industry or organizational standard; his reply is the line worth keeping: "**you shouldn't follow the guideline rules because they are written in sanctified ink!** Rather, you should apply each particular rule because of the underlying reasons that motivate the rule. Guidelines and best practices articles can concentrate lots of good reasoning in a single place, but **they don't absolve you from thinking**."
+
+**Agent-era reading.** Folded into [[concepts/code-cleanliness-coding-agents]] §"Practitioner corollary": an over-loaded public signature is a menu of options an agent can set incorrectly, and internal pub→pub call chains mean an agent editing `bar` silently changes `foo` — narrowing the callable surface shrinks the agent's action space to what is actually safe. Consistent with his long-standing position (above) that **function signatures are the important code**.
+
+Source: [[raw/articles/matklad.github.io--2026-10-29-pub-calls-pub-html--7c264184.md]]
 
 ## Key Quotes
 

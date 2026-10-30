@@ -1,11 +1,13 @@
 ---
 title: "Code Cleanliness and Coding Agent Performance"
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-10-30
 type: concept
 tags: [coding-agents, code-quality, evaluation, claude-code, benchmark, arxiv]
 sources:
   - raw/articles/2026-05-19_arxiv_2605.20049_code-cleanliness-coding-agents.md
+  - raw/articles/matklad.github.io--2026-10-29-pub-calls-pub-html--7c264184.md
+  - raw/articles/seangoedecke.com--elegance-and-intelligence-are-anticorrelated--8978dff6.md
 arxiv_id: "2605.20049"
 hn_objectID: "48798815"
 hn_points: 198
@@ -61,6 +63,18 @@ Pairs were constructed in both directions:
 ### For Evaluation
 - **Beyond pass rates**: Agent evaluation should include operational efficiency metrics (tokens, file operations, latency)
 - **Real-world variance**: Codebase quality is a confounding variable in agent benchmark comparisons
+
+### Practitioner corollary: interface hygiene as an agent affordance (Oct 2026)
+
+Two October 2026 posts, from different directions, both conclude that **API surface shape is an agent-performance variable**, not just a human-legibility one:
+
+- **Aleksandr Popov (matklad) — "Avoid Public Functions Calling Other Public Functions."** A small-scale rule of thumb with an agent-era rationale: when `foo` calls sibling public `bar` to stay DRY, the public interface gets pulled into two competing jobs — being good *at the call site* and being convenient *from inside the abstraction* — and the failure mode is **"functions tend to grow optional parameters that should never be set by the user,"** with the degradation arriving *after* the code sharing, when nobody re-examines it. The fix is to create a **new private helper** and refactor both to call it, so signature churn stays "a cheap, local change." His notable exception: genuine **shortcut APIs** (a public function *defined* as a chain of other public calls) should call **no** private functions, so the shortcut stays a genuine shortcut rather than a "midlayer mistake." He also rejects the standard Stack Overflow justification (mocking a single method is harder) as "a natural, but horrible consequence of misguided approach to testing — **you shouldn't be mocking your methods, you should mock your IO**," and dismisses the "follow it only if it's an org standard" answer: "you shouldn't follow the guideline rules because they are written in sanctified ink… **guidelines don't absolve you from thinking**."
+  - *Why it matters for agents*: an over-loaded public signature is a **menu of options an agent can set incorrectly**. Hidden-but-public parameters are precisely the affordances frontier models discover and misuse, and internal call chains mean an agent editing `bar` silently changes `foo`'s behavior — the blast-radius problem that [[entities/martin-alderson]]'s "Making Agents Fast" treats as a tool-design issue. Narrowing the callable surface shrinks the agent's action space to the set that is actually safe.
+- **Sean Goedecke — "Elegance and Intelligence Are Anticorrelated"** (see [[entities/seangoedecke-com]]): high working-memory engineers tolerate sloppy codebases because they can hold the whole thing at a glance. Frontier models plausibly have the same luxury, which predicts **agent-written code will tend toward inelegant, exhaustive structure** — and that "sloppy but legible" is a stable equilibrium for agent-operated codebases rather than a defect to be fixed by review.
+
+Read together against this page's central result (cleanliness measurably changes agent cost): the study measures *whether* cleanliness pays, and these two posts specify **which specific cleanliness properties pay, and why they may not be the ones human reviewers prefer**.
+
+Sources: [[raw/articles/matklad.github.io--2026-10-29-pub-calls-pub-html--7c264184.md]], [[raw/articles/seangoedecke.com--elegance-and-intelligence-are-anticorrelated--8978dff6.md]]
 
 ## Relationship to Related Concepts
 

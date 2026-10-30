@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-10-25
+updated: 2026-10-30
 tags:
   - person
   - blogger
@@ -27,6 +27,7 @@ sources:
   - raw/articles/martinalderson.com--posts-watch-out-for-cache-read-costs--ff6254a6.md
   - raw/articles/martinalderson.com--posts-the-summer-of-open-weights--58f8bbd1.md
   - raw/articles/martinalderson.com--posts-how-i-think-about-reducing-ai-costs--b34c39d8.md
+  - raw/articles/martinalderson.com--posts-making-agents-fast--5a2940ba.md
 ---
 
 
@@ -342,6 +343,62 @@ Alderson's October 2026 scenario piece, written as chip stocks posted their long
 ### Practical systemd for agent workloads (Oct 2026)
 
 Alderson's "Interesting systemd features you may not know about" is written from the same premise that drives his agent-tooling analysis — the volume of **almost-disposable software** agents generate now exceeds the ceremony of containerizing each piece — and the practical upshot is that Linux already ships the containment primitives: `systemd-run --user --scope -p MemoryMax=4G -p CPUQuota=200%` for a leaky agent-written script (same cgroup limits Docker uses), `-p RuntimeMaxSec=30m` as a hard wall-clock cap on an autonomous run, `systemd-inhibit` so a lidded laptop keeps running, and `.path` units (`DirectoryNotEmpty=%h/agent-inbox`) for event-driven triggering instead of cron. `Persistent=true` and `OnSuccess=`/`OnFailure=` make scheduled personal agents actually reliable and self-notifying (including Healthchecks.io-style dead man's handles). His one warning is the safety-relevant one: systemd's *sandboxing* directives (`ProtectHome`, `ReadWritePaths`, …) have "so many footguns" that they don't belong in the same breath as the resource limits — limits are kernel-enforced guarantees, the sandbox directives are opt-in and easy to under-specify. Full analysis folded into [[concepts/agent-sandbox-patterns]] (§"The hobbyist-tier third option"). Note the OpenCode gotcha: the time limit is bypassed unless you pass `--standalone`, because OpenCode dispatches work to an already-running background server. ^[raw/articles/martinalderson.com--posts-interesting-systemd-features--ef189b6f.md]
+
+## Performance Engineering: "Making Agents Fast" (Oct 2026)
+
+Alderson's twelve-month retrospective is the most complete practitioner's treatment of **agent latency as a systems problem rather than a model problem**, and the direct follow-on to his "Speed Over Intelligence" piece: he applies a career's worth of web/app performance engineering to agentic workflows and finds that most of the intuition transfers — with three specifically agentic distortions.
+
+### 1. Inference speed: which half you need depends on your turn shape
+
+Two components, mapped to familiar backend concepts:
+
+| Metric | Analogue | Determined by | Good direction |
+|---|---|---|---|
+| **TTFT** (time to first token) | TTFB | network + queueing + **prefill**, so it scales with tokens *sent* | lower |
+| **tok/s** | bandwidth | decode hardware, batch size | higher |
+
+The actionable refinement: **which one matters is a function of your workload shape**. Many short back-and-forth turns between steps → TTFT dominates. Long model outputs (code, documents) → tok/s dominates. That reframing makes provider comparison tractable — and exposes a large hidden variance, since "between providers of the same model, there is an **enormous** delta in speed." Alderson's cautions on provider benchmarks: OpenRouter publishes per-provider inference data, but it is an **aggregate** that may only roughly match your traffic, and provider speed swings **by time of day and load**. Diagnostic heuristics: a big TTFT jump at similar prompt length points to **provider-side queueing**, slower hardware allocation, or contention for prefill compute; a tok/s drop points to slower hardware or **higher batch sizes**. His summary of the regime: a "serious **'noisy neighbour'** factor on many inference providers."
+
+Tiers exist to trade speed for cost (OpenAI's **flex** alongside standard and **fast**) — but he calls out his own recurring blind spot, which is the single highest-leverage item in the whole piece:
+
+> **Don't overlook thinking budgets.** A "fast" tier model with thinking at maximum/xhigh is **vastly** slower than a "slow" tier model at low/medium thinking. It's easy to be drawn to the quantitative TTFT/tok/s numbers when in reality **reducing thinking can completely dwarf it** — if suitable for your task.
+
+### 2. Inference is often not the bottleneck — and it's the expensive one to fix
+
+The load-bearing quantitative claim: **halving inference time only removes ~20% of task time** when provisioning, tools, and suspend/resume stay constant. Worse, inference is the *least* tractable thing to buy your way out of (faster tiers cost money; migrating providers collides with committed spend and contracts). So the classical profiling work is on tool calls:
+
+- **Tool-call traces are the flame graph.** Agents chain bash commands in ways where the slow link isn't obvious. His example: `xargs -I{}` over large file sets → **hundreds of thousands of process invocations**, "painfully slow, especially on sandboxed environments." `strace` helps but **carries its own overhead**, so it isn't a permanent instrument.
+- **Tool output size is a latency input, not just a context concern** — uncached input tokens directly inflate TTFT. **SQL-shaped data sources are a structural advantage**: the agent requests exactly what it needs instead of an `awk` returning thousands of unrequired tokens.
+- **Shell startup is a hidden per-command tax.** Many agents start a **new shell on every command**, so anything in `.bashrc` becomes a per-invocation cost — "`nvm` or similar" can make you spend dramatically more time *starting* the shell than *running* the command.
+
+### 3. Build the tooling the agent *wants* (the methodological break)
+
+This is where Alderson departs from ordinary performance engineering. Instead of inspecting a request and optimizing each part, **you observe what the agent does and deduce what's missing** — and looking only at tool-call traces can mislead, because a trace shows the workaround, not the wish.
+
+His concrete method is an **open-weights advantage**: because you can read open-weight models' **CoT thinking traces** (normally discussed as a safety/alignment artifact), you can take a list of slow calls, read the thinking blocks immediately preceding them, and find "blindingly obvious **'hmm, could do x, but no y'**" thoughts — then simply **give the agent the tool it asked for**. Repeated theme: give the agent the tools **it wants**, not the tools **you think it needs**. (This is the same observability asymmetry that [[concepts/chain-of-thought]] and open-weight transparency arguments turn on, here repurposed as a *performance* rather than safety dividend.)
+
+Two more detectors:
+- **`for` loops containing `sleep` are a red flag** — the agent wants to be **notified** but is polling instead, typically with a 10–20s floor. Sometimes fixable by prompting; usually it means an external service needs an **async completion callback**.
+- **Parallelization** works ("try and parallelise tool calls in `$TASK` can work wonders") but **with weaker models the agent makes mistakes that undo the gain** — so ship tools/CLIs/MCP servers that *perform* the parallel steps rather than asking the model to orchestrate them.
+
+### 4. Hardware and suspend/resume: the sandbox footguns
+
+- **Faster hardware ≠ bigger cloud instance.** Dig into the actual silicon: **CPU core type** (the cut-down **Zen 4c/5c** cores can be much slower than full-sized ones), clock frequency, and **file I/O**. IO-heavy agents on **networked disks** can see "many, many orders of magnitude" improvement from **local NVMe**.
+- **Sandboxes amplify it**: copy-on-write and snapshotting add file-I/O overhead, and "slow underlying IO just makes everything worse."
+- **Suspend/resume is systematically mis-measured.** MicroVMs "resume extremely quickly **on paper**" but **stream pages in on first access** — so measure how fast *new inference requests actually start after resume*, not what the hypervisor reports. Memory management is the lever: before suspending, **kill headless browser sessions and any server processes the agent spawned**. Track RAM over time if you run many suspend/resume cycles.
+- **Broken IPv6 in sandbox environments** produces a timeout on every `AAAA` DNS lookup — trivial per-request, compounding across a whole agentic session.
+
+### Takeaways (his own list)
+
+1. Inference speed is nuanced — know **which half** of inference your task actually depends on.
+2. **Check thinking budgets first** — "overwhelmingly the lowest hanging fruit."
+3. Read traces; with open weights, **read the CoT thinking traces** for intent, not just actions.
+4. Give the agent the tools **it wants**.
+5. Don't overlook basics: hardware, sandbox/microVM footguns, parallelisation — classic performance engineering is as relevant as ever.
+
+Relevance to this wiki: it is the practitioner-side complement to the academic harness ablation in [[concepts/coding-agent-harness-design-study]] (which finds component value is conditional on model and budget — Alderson's "parallelisation backfires on weaker models" is the field-observed version of that), and it operationalizes [[concepts/harness-engineering]] as a performance discipline. Cross-cutting links: [[concepts/context-engineering/context-efficiency]] (output size → TTFT), [[concepts/dev-state-sandbox-snapshots-for-coding-agents]] (suspend/resume and CoW I/O), [[concepts/claude/effort-control]] (thinking budgets), [[concepts/inference-speed-development]] and [[concepts/openrouter-state-of-ai-2025]] (provider speed variance).
+
+Source: [[raw/articles/martinalderson.com--posts-making-agents-fast--5a2940ba.md]] (martinalderson.com, Oct 29 2026)
 
 ## Related
 

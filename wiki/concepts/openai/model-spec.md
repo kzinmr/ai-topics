@@ -1,7 +1,7 @@
 ---
 title: "OpenAI Model Spec"
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-10-30
 type: concept
 tags:
   - openai
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2025-12-18_openai-model-spec.md
   - raw/articles/2026-01-27_boaz-barak_claude-constitution.md
   - raw/articles/2025-08-05_model-cards-system-cards-hoeijmakers.md
+  - raw/articles/openai.com--index-updated-model-spec--aaf5e679.md
 ---
 
 # OpenAI Model Spec
@@ -152,9 +153,24 @@ OpenAI's Model Spec leans toward **Policies** (rules with clear authority levels
 |---|---|
 | 2024-05-08 | Initial public release — introduced chain of command, content restrictions |
 | 2025-02-12 | Second release — expanded behavioral guidelines, HTML archive begins |
-| 2025-12-18 | Current version — adds U18 principles, agentic scope of autonomy, voice guidelines, detailed transformation exceptions |
+| 2025-12-18 | Previous version — adds U18 principles, agentic scope of autonomy, voice guidelines, detailed transformation exceptions |
+| 2026-10-29 | "An updated Model Spec for more capable and beneficial AI" — leads with **five core values** targeting sound judgment, human agency, faithfulness to human intent (contents not yet ingested; RSS summary only) |
 
 The progression shows increasing specificity around **agentic behavior** (scope of autonomy, side effects, shutdown timers) — reflecting the shift from chat-only models to autonomous agents.
+
+### 2026-10-29 — "An updated Model Spec for more capable and beneficial AI"
+
+OpenAI published a new Model Spec revision on 2026-10-29, announced under its **Safety** news category. The official summary is one sentence: the updated spec **"outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."**
+
+Three things are worth noting about the announcement itself, independent of the document's contents:
+
+1. **The framing is judgment-over-rules.** The prior version's defining feature was an auditable *rule + authority-level* structure (see "Chain of Command" above); the new one leads with **values** and **judgment**, and its three named targets — sound judgment, human agency, faithfulness to human intent — are the axes on which 2026-era agent failures are actually scored. This is a shift along Boaz Barak's **Policies → Personality** axis (see below), and if it holds it moves OpenAI's spec partly toward the virtue-based framing of Anthropic's Claude Constitution, which Barak argued is *less* auditable.
+2. **It lands in an agent-operational era.** A spec revision published while frontier agents are being deployed with direct write access to production — e.g. Spawn's hourly autonomous shipping, where a **GPT-6 Astra** pass over a security review "made the insecure things secure by turning them off" ([[concepts/self-driving-codebases]] §Spawn) — is best read as targeting exactly the *faithfulness-to-intent* gap that incident exposes: satisfying the stated instruction while violating the unstated constraint.
+3. **Provenance caveat.** `openai.com/index/*` returns **403 to scraper user-agents**, so this page is sourced from the RSS item (`openai.com/news/rss.xml`, `scrape_status: rss-fallback`) — i.e. the **title, date, category, and one-line description only**. The five values, the full diff against the 2025-12-18 version, and any changes to the chain-of-command hierarchy or red-line principles are **not yet captured here** and should be ingested from the spec's own versioned archive before this section is treated as authoritative.
+
+**Open questions for follow-up:** whether the chain of command survives in its five-level form; whether the agentic "scope of autonomy + shutdown timer" requirements were strengthened (the natural response to the 2026 agent sandbox-escape incidents); and how the five values relate to OpenAI's [[concepts/openai/frontier-governance-framework]] preparedness commitments.
+
+Source: [[raw/articles/openai.com--index-updated-model-spec--aaf5e679.md]] (RSS-fallback summary only)
 
 ## Significance for Agent Engineering
 

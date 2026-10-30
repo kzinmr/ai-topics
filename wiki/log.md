@@ -2,6 +2,32 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-10-30] ingest | blog-ingest — 8 AI-relevant articles from run 20261030T100004Z
+
+Source: blog-ingest checkpoint (`cron/data/blog_ingest/latest.json`, 29 new / 20 candidates / 18 scraped / 2 blocked).
+
+**Created raw:** `openai.com--index-updated-model-spec--aaf5e679.md` (recovered via `openai.com/news/rss.xml` RSS fallback, `scrape_status: rss-fallback`; `openai.com/index/*` returns 403 to scraper UA even with browser UA). WSJ chip-seller article left unsaved (paywall).
+
+**Concept pages:**
+- `concepts/self-driving-codebases.md` — new **Spawn case study** (Jacob Sansbury, via Willison): Fable-agent swarm, >$3M/mo tokens = 30x payroll, hourly direct-to-prod ships, ~60% of work pulled from prod errors/Savi bug reports/logs, hour-without-ship = SEV-0 with the context-window-coherence rationale, 30s targeted rollback, alerts wake an incident-owning agent, deliberate breakage testing. Records model-dependence (Fable 5/5.1 yes, Opus 5.5 no, GPT-6 Astra "made the insecure things secure by turning them off") and Willison's high-stakes boundary condition.
+- `concepts/token-economics.md` — new **Subscription-Granted API Credits** section: Anthropic ($100/$200/$500 Max/Team → equal expiring API credits) and OpenAI's 10/29 match; analysis of marginal-cost-zero agent experimentation, subscription-as-API-subsidy two-price system, expiry mechanics, credit-resale ToS risk.
+- `concepts/speech-audio-asr-tts-voice.md` — new **Qwen3-TTS** subsection: Base/CustomVoice/VoiceDesign variants + the clone-and-direct gap, 2048-dim speaker embeddings, blending and mean-difference "gender axis" morphing, incidental diarization, and the 28-second-cloning fraud floor (cross-linked to `ai-voice-fraud`).
+- `concepts/code-cleanliness-coding-agents.md` — new practitioner corollary pairing matklad's pub-calls-pub rule (private helper; shortcut-API exception; mock IO not methods; "sanctified ink") with Goedecke's elegance/intelligence anticorrelation, reframed as agent action-space narrowing.
+- `concepts/openai/model-spec.md` — added **2026-10-29 revision** row + section: five core values / sound judgment, human agency, faithfulness to intent; read against Barak's Policies→Personality axis and the Spawn Astra incident; explicit RSS-fallback provenance caveat and open follow-up questions (chain of command, shutdown timers, FGF relation).
+- `concepts/inference-speed-development.md` — Related entries to Alderson's latency work and the Spawn cadence case.
+
+**Entity pages:**
+- `entities/martin-alderson.md` — full treatment of "Making Agents Fast": TTFT-vs-tok/s by workload shape, provider noisy-neighbour/queueing diagnostics, thinking budgets as the dominant lever, the ~20% task-time ceiling on inference-only optimization, tool-call traces as flame graph (`xargs -I{}`, `.bashrc`/nvm shell-startup tax, SQL-shaped data sources), "build the tooling the agent wants" via open-weight CoT traces, sleep-loop polling detector, parallelisation backfiring on weaker models, Zen 4c/5c + NVMe vs networked disk, CoW/snapshot I/O, MicroVM suspend/resume mis-measurement, broken IPv6 AAAA timeouts.
+- `entities/seangoedecke-com.md` — "Elegance and intelligence are anticorrelated": working memory as the key engineer trait, tolerance of sloppy codebases, AI-proof inelegance compounding the no-new-conjectures danger, "our relative stupidity might be one of" our advantages.
+- `entities/simon-willison.md` — three Oct-29 Recent Notes (Spawn/AI-pilled company, API-credit match, Ben Hylak headless-MCP quote).
+- `entities/armin-ronacher.md` — Qwen3-TTS section with variant table, embedding arithmetic, and the blunt voice-cloning cost-floor note.
+- `entities/matklad-github-io.md` — pub-calls-pub post in full (rule, rationale, timing insight, shortcut-API exception, anti-mocking and anti-"sanctified ink" arguments).
+- `entities/dwarkesh-patel.md` — LBJ/Robert Moses power essay (Triborough Section 9 refinancing clause, Contracts Clause entrenchment, 12 hydra posts, $360M vs NYC's $150M, Johnson's unanimous-consent capture, 1957 Civil Rights Act logroll); kept as method/institution context for the upcoming Caro episode.
+
+Off-domain items left to blog-triage archival: PDP computer history, IBM/Red Hat retrospective, SIM-card celebration, Space Shuttle typography, Apple Taiwan commission, Craig Hockenberry health update, Old New Thing black-screen support case, Construction Physics chemistry, Sierra clinical hire, xeiaso memory-safety CVE post (bot-blocked scrape).
+
+Frontmatter `updated:` bumped and raw sources appended on all 12 pages. Wikilink targets verified to exist (fixed `ai-mathematical-discovery`→`ai-mathematics-theorem-proving`, `effort-control`→`claude/effort-control`, removed dangling `emergent-abilities`/`chain-of-thought-monitoring`/`inference-providers`).
+
 ## [2026-10-29 22:45 UTC] ingest | x-accounts-scan: Mistral Large 4 weight dissection + LeRoPE provenance; Kimi K3 4-bit origin; Small Talk plugins ep
 
 5 substantive candidates from 11 accounts (budget 12/84). 5 ingested, 0 new pages, 6 pages updated + 1 raw article.

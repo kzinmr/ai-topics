@@ -6,7 +6,7 @@ tags:
   - developer-tooling
   - web-framework
 created: 2026-04-24
-updated: 2026-09-11
+updated: 2026-10-30
 type: entity
 sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md, raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md, raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md, raw/articles/lucumr.pocoo.org--2026-9-7-astra-why--f41d7a13.md]
 ---
@@ -292,6 +292,32 @@ Source: [[raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md]] (
   - **Why it matters:** the empirical counterpart to [[concepts/formal-verification-llm-agents]] — without a mechanically checkable correctness signal, an agent rewarded for "keep going / succeed at horizon" produces volume, not value. Direct extension of his "The Coming Loop" thesis that loops excel at *mechanically verifiable* tasks (porting, perf, scanning), not lasting code. See also [[entities/openai-astra]], [[concepts/ai-slop]].
 
 Source: [[raw/articles/2026-09-11_ronacher_astra-involution-note]] (lucumr.pocoo.org, Sep 7 2026)
+
+## Qwen3-TTS: voice embeddings as a manipulable medium (Oct 2026)
+
+Ronacher's "Custom Voices With Qwen3-TTS" (lucumr.pocoo.org, Oct 29 2026) grew out of a **parent-child dungeron-crawler project with his kids** — they wanted a narrator that "doesn't sound like everyone's standard AI voices," which is a small but revealing instance of the personal-agent content trend: hobby software now expects broadcast-grade voice, and the blocker is a model, not a budget. He started on **Kokoro** and switched for cloning support.
+
+**The model line-up, and its key gap.** Qwen3-TTS ships three variants (official `qwen-tts` package, `pip install qwen-tts`, he used 0.1.1; runs on `mps` / bfloat16 / sdpa):
+
+| Variant | Capability | Limitation |
+|---|---|---|
+| **1.7B-Base** (also 0.6B) | Clones a voice from seconds of reference audio — in-context, or from the speaker embedding alone | **No way to clone *and* direct**: unlike the other two you cannot say "speak sad" or "whisper" with a cloned Base voice |
+| **1.7B-CustomVoice** | Nine built-in speakers **plus** natural-language instructions | Fixed speaker set |
+| **1.7B-VoiceDesign** | Invents a voice from a free-text description | Not tied to a real person |
+
+The documented route to a *custom, steerable* voice is therefore a two-step detour: **design a clip with VoiceDesign, then clone it with Base** — at the cost of losing instruction-following. Alternatively fine-tune Base on a single speaker.
+
+**The real contribution: treat the speaker embedding as linear algebra.** What Base extracts from a recording is a **speaker embedding — 2048 numbers from a trained speaker encoder** (same voice → similar vector). Because it is "just a vector, you can do arithmetic on it," Ronacher demonstrates:
+
+- **Blending** — a weighted average of two embeddings yields a speaker *between* two voices (e.g. blending his own 28-second conference-talk clone with a VoiceDesign-generated voice).
+- **Semantic directions in embedding space** — averaging embeddings of many male vs. many female speakers and taking the difference gives a **"gender axis"**; he then projects a clone onto it and re-anchors it at any position `t`, i.e. **morphing a cloned voice's apparent gender while preserving everything else**. The same trick generalizes to any attribute you can sample over.
+- **Incidental utility** — the same embeddings are "a convenient way to do **speaker detection** from recordings," enough to separate two speakers on a single track with basic slicing.
+
+**The safety note is unusually blunt.** He records the clone from **28 seconds cut between two pauses of a PyAI Conf talk**, transcribed with Whisper (the transcript is only needed for baking), and notes a conference recording is "not ideal but it works anyways" — which "is also a good reminder that **you really don't need a particularly clean recording (or a very long one)** to get a halfway convincing version of a person. Particularly when then presented to you on a low quality phone call, it won't be very hard to **trick your grandmother**." That is a first-hand, low-bar demonstration of the cloning-cost floor underlying [[concepts/ai-voice-fraud]] — the barrier is now a 28-second clip, not a studio session. His closer: "Use it for good, not evil."
+
+**Framing note.** He explicitly writes it as agent-consumable documentation: "You can probably point your agent to it and it can do something with it" — the same doc-as-agent-prompt pattern seen across the 2026 practitioner blog corpus.
+
+Source: [[raw/articles/lucumr.pocoo.org--2026-10-29-qwen3-custom-voices--c0fa5a0d.md]]
 
 ## Influence Metrics
 
