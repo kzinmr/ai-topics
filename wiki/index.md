@@ -965,12 +965,12 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2265 pages)
+## Concepts (2266 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
-[[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
-[[concepts/zombie-statistics]] — Trakkr study tracing 1,285 AI-quoted statistics: only 40% reach a study that confirms them, 11% have no study anywhere (Oct 2026)
-[[concepts/claude-code/claude-code-vsx-backdoor]] — Backdoored official Claude Code for VS Code 2.1.313 on the Cursor Marketplace (Phorion, Oct 30 2026): persistent SSH backdoor on macOS/Linux/Windows, pulled from all registries
+- [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
+- [[concepts/zombie-statistics]] — Trakkr study tracing 1,285 AI-quoted statistics: only 40% reach a study that confirms them, 11% have no study anywhere (Oct 2026)
+- [[concepts/claude-code/claude-code-vsx-backdoor]] — Backdoored official Claude Code for VS Code 2.1.313 on the Cursor Marketplace (Phorion, Oct 30 2026): persistent SSH backdoor on macOS/Linux/Windows, pulled from all registries
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
 - [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)
@@ -1552,6 +1552,7 @@
 - [[concepts/chokepoint-capitalism]] — chokepoint-capitalism
 - [[concepts/claude-certified-architect-domains]] — Claude Certified Architect — 5 Domain Knowledge
 - [[concepts/claude-code/claude-code-artifacts]] — Claude Code Artifacts — shareable functional HTML pages for PR walkthroughs, project dashboards, and prototypes (June 24)
+- [[concepts/claude-code/claude-code-agent-summary-polling]] — Claude Code agent_summary background transcript polling — hidden ~30s interval re-summarization for background agents, status line only, no off switch since 2.1.232
 - [[concepts/claude-code/claude-code-auto-mode]] — Claude Code Auto Mode
 - [[concepts/claude-code/claude-code-best-practices]] — Claude Code Best Practices
 - [[concepts/claude-code/claude-code-goal]] — Claude Code /goal — Goal-Driven Autonomous Workflow
@@ -2006,6 +2007,7 @@
 - [[concepts/gemini/gemini-3-7-flash]] — Gemini 3.7 Flash — Google's most intelligent workhorse model for coding/agents; FrontierCode 43.6%, DeepSWE 65.3%, $0.75/$3.75 per MTok intro; powers Gemini Spark
 - [[concepts/gemini/gemini-3-8-flash]] — Gemini 3.8 Flash
 - [[concepts/gemini/gemini-3-8-tts]] — Gemini 3.8 TTS
+- [[concepts/gemini/gemini-4-carbon]] — Gemini 4 Carbon — Google DeepMind frontier cybersecurity/code model for long-horizon agentic tasks (Oct 2026)
 - [[concepts/gemini/gemini-cli]] — Gemini CLI
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/gemini/gemini-managed-agents]] — Gemini Managed Agents

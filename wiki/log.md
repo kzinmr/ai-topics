@@ -1,3 +1,9 @@
+## [2026-10-30] health-fix | Orphan registration + index marker repair
+- Registered 2 real orphans in index.md (Concepts section, alphabetical): concepts/claude-code/claude-code-agent-summary-polling, concepts/gemini/gemini-4-carbon; Concepts header count 2265 -> 2266.
+- Fixed 3 index.md entries missing the leading '- ' list marker (skypilot-rack-scale-scheduling, zombie-statistics, claude-code/claude-code-vsx-backdoor) — introduced by trending-topics commit 8028097e.
+- Remaining 5 orphans are status:redirect stubs (eugeneyan, giles-thomas, lilianweng, evals-skills, evals-skills-for-coding-agents) with 0 incoming wikilinks — no-index is correct; canonical pages are indexed.
+- Index corruption checks all 0; validate_index.py exit 0 (3377 lines).
+
 # Wiki Log
 
 ## [2026-10-30] watchdog | Auto-fix verification run — 0 fixes needed
