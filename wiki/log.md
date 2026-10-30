@@ -1374,3 +1374,7 @@ research-grade pages from genuinely uncovered material:
 - Report archived: inbox/trending-reports/hot-post-2026-10-28-2130.md. Checks: NO_SLOP_FOUND, 0 wikilink MISSes (alias-stripped), NO_TYPO.
 - 2026-10-29 03:35 JST — hot-post (late-night 01:30 slot): agentic-retrieval / Hornet agent-query serving economics (8.4x QPS swing). Archived to inbox/trending-reports/hot-post-2026-10-29-0130.md
 - 2026-10-29 21:30 JST — hot-post (night slot, contrarian): MicroZig Strict No-LLM/No-AI CoC (2026-10-28, HN ~51pts) — cognitive-provenance ban analysis x Qwenputer weight-compiled RISC-V CoT-evasion contrast. Archived to inbox/trending-reports/hot-post-2026-10-29-2130.md. Checks: NO_SLOP_FOUND, 0 wikilink MISSes, NO_TYPO.
+
+## 2026-10-30 00:3x UTC — hot-post (morning 09:30 JST)
+- Delivered hot-post: Gemini 4 Carbon gated-release pattern + AI-native demand indicators (payroll 10% vs 1%).
+- Archive: inbox/trending-reports/hot-post-2026-10-30-0930.md. Checks: NO_SLOP_FOUND, 0 wikilink MISS, NO_TYPO.
