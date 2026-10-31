@@ -1,3 +1,12 @@
+## [2026-10-31] health-fix | Recovered stalled ingest outputs
+
+### Changes
+- Re-ran process_email.py manually (IMAP ok, 0 new messages; morning failure was transient HTTP 503 from local LLM server)
+- Re-ran blog_ingest.py (collected new candidates, saved raw articles)
+- Committed 64 uncommitted files left by failed blog-ingest/newsletter-ingest runs (13+ raw articles, 12 wiki page updates, archive_index)
+
+---
+
 ## [2026-10-31] health-fix | Index hygiene: orphan redirects + misplaced entry
 
 ### Changes
