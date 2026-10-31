@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Total pages: 3336
-> Last updated: 2026-10-30
+> Last updated: 2026-10-31
 
 ## Entities (957 pages)
 

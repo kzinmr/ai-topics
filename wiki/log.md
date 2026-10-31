@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-10-31] watchdog | auto-fix pass — index header date only
+
+- Verified 0 corruption: index.md (pipe/line-number/triple-bracket/double-pipe/space-prefix all 0), L2 pages (`|- ` / `||- ` bullets 0), triple-bracket in L2 0, no-frontmatter 0, missing `sources:` 0, tag-taxonomy violations 0, top-level not-indexed 0.
+- Fixed: `wiki/index.md` header `Last updated` 2026-10-30 → 2026-10-31 (stale by one day; the 12:23 page-count reconciliation left it unchanged).
+- `validate_index.py` clean (3383 lines). Header counts match section line counts (Entities 957, Concepts 2272).
+- No page created/deleted. 15 apparent index duplicate slugs all have real `.md` files (legitimate redirect-stub entries per 2026-08-19 finding) — 0 removed.
+- Pipeline alert `x_accounts: stale(26h)` = false positive: schedule is `30 22 */2 * *` (every 2 days), `last_status: ok`, last output 43h ago (within the 48h window).
+- Deferred to `wiki-health-fix` (17:50, runs after this job) per 10-30 graph analysis: 4 duplicate merges, 172 auto-fixable bare→namespaced links, orphan hub inbound links, 8 missing-page stubs.
+
+---
+
 ## [2026-10-31] trending-topics — OpenAI misalignment monitors, AI-bubble bailout politics, SRE deskilling, Cursor backdoor disclosure
 - Created: `concepts/openai-misalignment-monitoring.md`, `concepts/ai-bubble-bailout-resolution.md`, `concepts/sre-deskilling.md`, `concepts/proton-ai-mandate-backlash.md`
 - Updated: `concepts/rogue-ai-agent-activity.md` (OpenAI monitoring response), `entities/cursor-ai.md` (Cursor's own 2.1.312/2.1.313 notice), `concepts/agent-status-summary-polling-overhead.md` (post-disclosure response), `entities/harvey.md` (adoption data + small-firm capacity), `entities/cohere.md` (C$4B Canada commitment), `concepts/weight-compiled-computers.md` (HN reception)
