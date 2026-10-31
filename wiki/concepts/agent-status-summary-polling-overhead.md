@@ -1,7 +1,7 @@
 ---
 title: "Agent status-summary polling overhead"
 created: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 type: concept
 tags:
   - claude-code
@@ -132,6 +132,20 @@ assistant design in [[concepts/duet-style-hierarchical-assistant]].
   Claude Code-specific? One commenter used it as an argument for `pi`; no comparison data.
 - Should harness-internal model calls be billed differently from user-initiated calls,
   and is there a disclosure norm for them?
+
+## Post-disclosure response (Oct 30-31)
+
+The HN thread continued to **583 points / 235 comments** after this page was written.
+New material from the thread: at least one Pro-tier user reported that Anthropic appears
+to have **changed the behaviour server-side** — a 100%-used 5-hour window consumed ~25%
+of the weekly quota a few days earlier and ~13% by 10-30 — without an accompanying
+changelog entry. The same commenter separately accused Anthropic of randomly invalidating
+prompt cache (~$8 per turn), which is a distinct and lower-confidence claim. A practical
+mitigation surfaced in-thread: running Claude Code with the agent-summary feature
+disabled avoids the polling cost entirely when only a single plain session is in use.
+The cache-hit-≠-free rebuttal also reappeared: because the summary query sends the whole
+transcript, most input tokens are cache hits, so the cash cost is smaller than the raw
+token count suggests — though the *quota* consumption is real regardless.
 
 ## Related pages
 

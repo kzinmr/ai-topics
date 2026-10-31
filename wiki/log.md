@@ -1,3 +1,13 @@
+# Wiki Log
+
+## [2026-10-31] trending-topics — OpenAI misalignment monitors, AI-bubble bailout politics, SRE deskilling, Cursor backdoor disclosure
+- Created: `concepts/openai-misalignment-monitoring.md`, `concepts/ai-bubble-bailout-resolution.md`, `concepts/sre-deskilling.md`, `concepts/proton-ai-mandate-backlash.md`
+- Updated: `concepts/rogue-ai-agent-activity.md` (OpenAI monitoring response), `entities/cursor-ai.md` (Cursor's own 2.1.312/2.1.313 notice), `concepts/agent-status-summary-polling-overhead.md` (post-disclosure response), `entities/harvey.md` (adoption data + small-firm capacity), `entities/cohere.md` (C$4B Canada commitment), `concepts/weight-compiled-computers.md` (HN reception)
+- Raw: 3 articles (CPC resolution, SigNoz SRE deskilling, 404 Media Proton reversal)
+- SCHEMA: +5 tags (ai-bubble-bailout, sre-deskilling, proton-ai-mandate, frontier-model-monitoring, openai-funding-shortfall)
+- Index: +4 concept entries
+- Report: `inbox/rss-scans/trending-topics-2026-10-31.md`
+
 ## [2026-10-31] newsletter-wiki-ingest | run 20261031T101822Z — 2 takes, 3 references (recovered from triage checkpoint)
 
 - Triage agent response failed to parse; recovered `triage_latest.json` (run_id 20261031T101822Z, fresh, archive already committed at 2c379b63 by triage). Bodies independently re-fetched via curl + `<p>` extraction and verified against target pages before enrichment.
@@ -21,7 +31,6 @@
 - Remaining 5 orphans are status:redirect stubs (eugeneyan, giles-thomas, lilianweng, evals-skills, evals-skills-for-coding-agents) with 0 incoming wikilinks — no-index is correct; canonical pages are indexed.
 - Index corruption checks all 0; validate_index.py exit 0 (3377 lines).
 
-# Wiki Log
 
 ## [2026-10-30] watchdog | Auto-fix verification run — 0 fixes needed
 - Verified clean: index.md (validate_index exit 0, 3,375 lines; pipe/line-number/triple-bracket/double-pipe/space-prefix all 0), L2 pipe scan 0, log.md headers OK, no-frontmatter scan 0, empty-wikilink residual stable at 278

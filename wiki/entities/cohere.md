@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-10-24
+updated: 2026-10-31
 tags:
   - company
   - model
@@ -32,6 +32,8 @@ sources:
   - raw/articles/2026-10-24_cohere_inside-cohere-model-vault-building-verifiable-confidential-ai-inference.md
   - raw/articles/2026-10-24_cohere_rerank-5.md
   - raw/articles/2026-10-24_cohere_can-ai-understand-culture.md
+  - raw/articles/2026-10-30_cohere_who-gets-to-build-the-frontier-for-ai.md
+  - raw/articles/2026-10-30_cohere_financial-research-assistant-cohere-aws.md
 ---
 
 # Cohere
@@ -50,7 +52,7 @@ Cohere is a Canadian-American enterprise AI company founded in 2019 by former Go
 ## Key Facts
 
 - Founded by Aidan Gomez (co-author of the "Attention Is All You Need" transformer paper at age 20), Nick Frosst, and Ivan Zhang
-- Raised $500M Series D in mid-2024 at $5.5B valuation; additional $500M in 2025, valuing at $6.8B
+- Raised $500M Series D in mid-2024 at $5.5B valuation; additional $500M in 2025, valuing at $6.8B; **first close of Series E announced 2026-10-29, targeting up to CAD 7B, led by Schwarz Group with NVIDIA and the Government of Canada participating**
 - Annual recurring revenue reached $100M in 2025, targeting $200M
 - Strong focus on private deployments for highly regulated industries (finance, healthcare, defense)
 - Cohere Labs is the company's dedicated AI research arm; led by [[entities/sara-hooker|Sara Hooker]] as VP of Research (2022–2025), who launched Cohere For AI, the Aya multilingual project, and the scholars program before co-founding Adaption
@@ -318,6 +320,50 @@ The methodological claim: fluency is not cultural knowledge, and a benchmark aut
 [[concepts/ai-alignment]] | [[concepts/multilingual]]
 
 **Source:** [[raw/articles/2026-10-24_cohere_can-ai-understand-culture]]
+
+## Series E close — "a leading company outside the US and China" (October 2026)
+
+Cohere announced the **first close of its Series E**, targeting up to **CAD 7 billion**, led by Germany's **Schwarz Group** (the Lidl/trading-group family), with new and existing investors including **Bell Ventures, Bullhound Capital, Inovia Capital, NVIDIA, Prosperity7 Ventures, and the Government of Canada**. The stated purpose is unusual in its directness: to build "a leading company outside the US and China" — frontier-class models competitive with the best, a platform giving institutions control over the AI they use, and cyber-defence systems democracies can rely on.
+
+The announcement essay (published in German at `cohere.com/de`, "Wer darf die Grenzen der KI gestalten?" / "Who gets to build the frontier for AI?") is Cohere's clearest political positioning statement:
+
+- **Framing**: AI becomes operating infrastructure for economy, public services, and national defence; who builds it, under which law, and with what accountability "will shape the choices of every country that adopts it." No country must build every layer alone, but the democratic world needs more countries and companies able to contribute.
+- **The forced-choice argument**: organisations today face "cheap models from China or powerful models they cannot fully inspect or control." Cohere cites the OpenRouter market-share data as the empirical stakes: **more than 70% of open-model tokens served via OpenRouter came from Chinese models — up from 3% fourteen months earlier.** ("The market has already decided. We want to change that.")
+- **Counter to "technological fatalism"**: rejects the argument that the AI future belongs to two countries and a handful of companies and everyone else should rent intelligence from the winners. Anchors to the **Canada–Germany Sovereign Tech Alliance** announced in Munich earlier in 2026 (see [[concepts/sovereign-ai]]).
+- **Access-contingency argument**: communications, energy, and national-security infrastructure have shown that access can change overnight via corporate decisions, export controls, or geopolitics — often with no real alternative.
+
+The 70%-Chinese-open-model figure is the sharpest number in the piece; it updates the [[concepts/openrouter-state-of-ai-2025]] baseline (~70% open vs closed, pre-China-surge) and should be read against that page's December 2025 snapshot.
+
+**Source:** [[raw/articles/2026-10-30_cohere_who-gets-to-build-the-frontier-for-ai]]
+
+## Financial Research Assistant reference architecture on AWS (October 2026)
+
+Cohere published a build guide for a financial research assistant on Amazon Web Services — filings search with **page-level citations** — as a worked example of its retrieval stack pricing/quality split:
+
+- **Embed Pro** for high-quality document indexing, **Embed Fast** for low-latency queries, with configurable embedding dimensions and quantization to trade accuracy against storage.
+- **Rerank Pro** reorders retrieved pages; **Context Focus** extracts relevant passages within documents to cut what is sent to the answer model (the same token-economics lever as [[#Rerank 5]], October 2026).
+- **Cohere Parse** handles scanned/table-heavy financial pages; combining text and page images lets the answer model interpret figures and presentation-layer data.
+
+The notable pattern is the **tiered-embedding split** (index with the big model, query with the fast one) presented as the default production posture for citation-grounded RAG over long, scanned document corpora.
+
+**Source:** [[raw/articles/2026-10-30_cohere_financial-research-assistant-cohere-aws]]
+
+## C$4B Canada commitment (October 30)
+
+Cohere announced it will exceed **C$4 billion in Canadian R&D and AI-infrastructure
+investment through 2031** and add **1,500+ jobs** (about 1,000 technical), plus 250+ paid
+student roles by 2029, anchored on University of Toronto and University of Waterloo
+partnerships and building on Amii/Vector/Mila. It sits alongside the reported **C$1.6B
+Canadian government investment** into Cohere's **$7B Series E at a $36B valuation**, and
+the **C$309M Bell AI Fabric** GPU cloud deal. Framing is explicitly sovereign-AI: Cohere
+notes only 12% of Canadian businesses reported using AI in 2025 and aligns itself with a
+national strategy targeting +3% GDP and 250,000 AI jobs by 2031.
+
+Read against [[concepts/mistral-large-4]] (European sovereign open weights) this is the
+middle-power variant of the same industrial policy move — state capital, domestic
+infrastructure, and a talent-retention argument, rather than a frontier-capability
+argument. Cohere's open-weight credibility remains the open question, given its
+October 2026 covert-exfiltration report on a Chinese open model.
 
 ## Related
 

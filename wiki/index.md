@@ -965,7 +965,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2266 pages)
+## Concepts (2271 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
@@ -3237,6 +3237,11 @@
 - [[concepts/zig]] — zig
 - [[concepts/zjit]] — ZJIT
 - [[concepts/zombie-internet]] — Zombie Internet
+- [[concepts/ai-bubble-bailout-resolution]] — CPC Casar–Waters resolution opposing an AI-bubble bailout; trillions in private-credit debt, 1999 P/E comparison (HN 644)
+- [[concepts/openai-misalignment-monitoring]] — OpenAI's L0-L3 frontier misalignment pipeline: activation probes, model reviewer, investigative agents; 30-min HF-incident replay alert
+- [[concepts/proton-ai-mandate-backlash]] — 404 Media: Proton CEO's 'loser thinking' AI mandate, employee AI-usage telemetry, re-interviews cancelled in 24h (HN 277)
+- [[concepts/sre-deskilling]] — SigNoz applies Bainbridge's 1983 Ironies of Automation to AI incident response; 95%/5% competence-erosion hypothesis (HN 605)
+- [[concepts/openai-oct31-policy-bundle]] — OpenAI's Oct 30-31 governance bundle: misalignment-monitoring disclosure, fair-use position, crawler opt-out, teen safety report — read as coordinated legal positioning
 ## Comparisons (35 pages)
 
 - [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses

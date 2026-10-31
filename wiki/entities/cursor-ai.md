@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-10-29
+updated: 2026-10-31
 type: entity
 tags:
   - entity
@@ -261,6 +261,35 @@ Cursor disclosed training a **larger model from scratch** in partnership with **
 - **10× compute** compared to previous training runs
 - **1 million H100-equivalents** from Colossus 2
 - This represents a major escalation in Cursor's compute capacity, moving beyond fine-tuning into foundation model training
+
+## Claude Code extension backdoor: Cursor's own disclosure (Oct 29-31)
+
+Cursor published its own security notice for the `Anthropic.claude-code` **2.1.312 and
+2.1.313** marketplace compromise (a companion to the Phorion disclosure on
+[[concepts/claude-code/claude-code-vsx-backdoor]]). Key facts from Cursor's account:
+
+- Window: **~2:27am to 1:35pm PT on 2026-10-29**; Windows and macOS packages only.
+- "These malicious versions of the extension were **not developed by Anthropic**."
+- Payload: collects hostname, username, OS, architecture, home path, environment variable
+  *names*, working directories, configured Git email and public IP; attempts to add an
+  attacker SSH key to `authorized_keys`, enable the local SSH service, and open a reverse
+  SSH tunnel, persisted via a macOS LaunchAgent or a Windows scheduled task attempting to
+  run as SYSTEM with a startup-script fallback; background scripts retry the tunnel every
+  ~60 seconds.
+- Cursor states the **attacker server no longer functions** (taken down with the hosting
+  provider), and that enabling the local SSH service requires admin rights the extension
+  did not have on most hosts — so on those hosts the attacker "could not have logged in
+  through the tunnel." The key installation, persistence, and beacon still occurred, so
+  remediation is required regardless.
+- Cursor removed the versions, then **shut the whole marketplace down out of an
+  abundance of caution**, rotated keys, audited access (no other extensions tampered
+  with), rebuilt and relaunched it.
+
+The vendor-side and researcher-side accounts are consistent on the payload and diverge
+only on blast-radius confidence: Cursor emphasises that the SSH-service step failed on
+most hosts, while the Phorion/GossiTheDog line emphasises that persistence and exfil of
+host metadata succeeded. Treat "no successful logins" as *Cursor's assertion based on its
+telemetry*, not an independently confirmed negative.
 
 ## Related Concepts
 

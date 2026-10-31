@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-10-28
+updated: 2026-10-31
 tags:
   - security
   - company
@@ -54,6 +54,7 @@ sources:
   - raw/articles/2026-10-20_harvey_improving-agent-accuracy-with-harvey-graph.md
   - raw/articles/2026-10-24_harvey_how-law-firms-turn-ai-efficiency-into-client-value.md
   - raw/articles/2026-10-28_harvey_why-legal-intake-should-create-a-clear-path-to-resolution.md
+  - raw/articles/2026-10-30_harvey_legal-agent-bench-us-case-law.md
   - raw/articles/2026-10-28_harvey_legal-engineer-help-legal-teams-apply-expertise-with-ai.md
 ---
 
@@ -391,6 +392,20 @@ Harvey released the **Legal Agent Benchmark (LAB)**, an open-source benchmark fo
 - **Positive behaviors**: Thorough research (+0.4), post-draft validation (+0.8), verifying and revising (+1.5), targeted retrieval (+0.3), structured analysis (+0.3)
 - **Negative behaviors**: Noisy tool fan-out (-0.5), drafting without review (-1.2)
 - Opus 4.7: Most self-corrective (more drafting + validation). GPT-5.5: Heaviest search user (wider document coverage)
+
+## LAB: US Case Law (LAB: USCL) — brief writing as an ultra-long-horizon task (October 2026)
+
+Harvey extended LAB to **litigation brief writing** — one of the most complex legal tasks, sometimes requiring a team of lawyers multiple weeks. Headline finding: **a small group of frontier models can now research and write complete, first-draft briefs in a single shot with no attorney guidance**, though briefs still show a long tail of failure modes and fall short of the filing bar.
+
+**Environment construction (real cases, not synthetic)**: select a brief actually filed in court; ask the model to write the same brief for the same party, same motion, same point in the case. Environments require (a) sufficiently complete case records and (b) **>95% of the case citations in the lawyer's filed brief resolvable against CourtListener's 8M+ opinions** — so the model works from substantially the same case law the lawyer used. From 200 sampled dockets, the automated pipeline produced 40 environments; human review and manual correction expanded this to a final set of **100**. State courts and the US Supreme Court (no PACER) are flagged for future expansion.
+
+**Two task conditions**: *closed-book* — a file system with the case record and the cases the filed brief relied on; *open-book* — only task-defining filings plus a **CourtListener MCP** for case-law search, limited to materials available before the brief was filed. Both use the standard LAB harness with compaction plus OCR tools for PDFs, under a single short drafting instruction with no follow-up prompts.
+
+**Grading**: no fixed answer key — model briefs face off **pairwise in a round-robin tournament judged by GRMs** (generative reward models) that pick the better brief or declare a tie with reasoned criteria; criteria are reviewed and calibrated by lawyers; results converted to **Elo ratings**.
+
+**Failure taxonomy** (the durable part): beyond hallucination, leading models **unnecessarily concede points** that weaken the client's position, **abandon strong arguments** from the party's initial brief, **rely on overruled/set-aside decisions**, or **defer to non-binding authority** without analyzing why it doesn't apply — errors that appear inside otherwise sophisticated arguments, reflecting jagged intelligence across similar tasks. Harvey names two research priorities: accurate, strategically sound brief generation, and expert supervision/evaluation of that work at scale. Context: the June 2026 US Case Law Knowledge Source (9M+ CourtListener opinions) is the same data substrate.
+
+**Source:** [[raw/articles/2026-10-30_harvey_legal-agent-bench-us-case-law]] — see [[concepts/ai-benchmarks/legal-agent-benchmark]]
 
 ## Training a Legal Agent — Applied Compute Methodology (June 2026)
 
@@ -775,6 +790,21 @@ Harvey's category-level explainer, "[What is Legal Tech?](https://www.harvey.ai/
 **Architectural shift**: AI became the "connective layer" running through every category — buyers evaluate platforms on integration and security, not standalone tools. This guide functions as the umbrella taxonomy for the other Harvey guides catalogued on this page ([[#Legal Operations Management Guide (June 2026)|Legal Ops]], [[#Legal Knowledge Management Guide (June 2026)|KM]], [[#Legal Discovery & Defensible AI Protocols (June 2026)|Discovery]]).
 
 Source: raw/articles/2026-06-19_harvey_legal-tech.md
+
+## Legal AI adoption data + small-firm capacity (October 30-31)
+
+Harvey published two adjacent posts continuing its data-and-pricing thread:
+*"What the Data Shows About Legal AI Adoption"* (https://www.harvey.ai/blog/legal-ai-adoption-data)
+and *"How AI changes small firms' capacity"*
+(https://www.harvey.ai/blog/how-ai-changes-small-firms-capacity). The first is the
+company's attempt to answer the "is legal AI actually being used" question with its own
+telemetry rather than case studies; the second argues the productivity dividend accrues
+differently at small firms, where a fixed headcount cannot absorb overflow work the way
+a large firm's leverage pyramid can. Both are vendor-published, so the numbers describe
+Harvey's install base rather than the market. Context worth recording: the same window
+saw a competitor release a free open-source alternative (`sorryharvey.com`, and
+`thomasunise/casecite`, HN 69 pts) explicitly positioned against Harvey's $550M raise at
+a $15.5B valuation — the pricing objection to per-seat legal AI is now productized.
 
 ## Related
 
