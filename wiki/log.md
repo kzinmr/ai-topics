@@ -1,3 +1,14 @@
+## [2026-10-31] health-fix | Index hygiene: orphan redirects + misplaced entry
+
+### Changes
+- Registered 3 redirect stubs in index.md (entities/eugeneyan, giles-thomas, lilianweng → canonical pages; files were created by dedup commit fa32e7a4 but never indexed)
+- Removed misplaced `[[comparisons/evals-skills]]` line from Concepts section (duplicate of the legitimate Comparisons-section entry)
+- Removed duplicate `- [[entities/eugene-yan]]` line (the --core-ideas/--key-quotes/--timeline sub-pages remain)
+- Header recount: Entities 957→959, Queries 44→45, Total 3336→3356
+- No index corruption found (pipe/line-number/triple-bracket/space-prefix all 0)
+
+---
+
 # Wiki Log
 
 ## [2026-10-31] watchdog | auto-fix pass — index header date only
