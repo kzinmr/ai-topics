@@ -1466,3 +1466,9 @@ research-grade pages from genuinely uncovered material:
 - Index ground truth: real not-indexed = 4 (dianne-na-penn registered this session; 3 owned by sibling pipelines), real stale entries = 4 (2 deleted prior reports swapped today, 1 archive, 1 harness-engineering-101 pointer).
 - Missing-page queue (8+ refs, no target): entities/cursor, entities/ben-clavie, entities/huggingface, concepts/enterprise-ai, concepts/ai-adoption, concepts/agent-architecture, concepts/ai-governance, concepts/claude-opus-4-7.
 - Index entries swapped 10-23→10-30; entities/dianne-na-penn added.
+
+## 2026-10-31 09:30 JST — hot-post (morning)
+- Delivered morning hot-post: "Knowledge-ecosystem depletion — Mistral Large 4 open weights x only 40% of AI-quoted stats reach a study"
+- Archived to `inbox/trending-reports/hot-post-2026-10-31-0930.md`
+- Sources: mistral.ai ML4 OSS release, trakkr.ai zombie-stats (HN 167pts), SO <1,000 q/month
+- Checks: NO_SLOP_FOUND, zero wikilink MISSes, NO_TYPO
