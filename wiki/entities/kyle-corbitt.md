@@ -5,7 +5,7 @@ aliases:
   - Kyle Corbett
   - corbtt
 created: 2026-06-10
-updated: 2026-09-29
+updated: 2026-11-01
 tags:
   - person
   - reinforcement-learning
@@ -51,6 +51,22 @@ Workflow: dictated a 10-minute unstructured braindump via Handy; Codex (GPT-5.3-
 **Result: Codex caught a $20,000 error the accountant missed** — a deferred "adjustment escrow" payment buried in 214 pages of acquisition documents that the accountant had omitted; re-running the engine with the payment excluded matched the accountant's estimate within dollars. Cost comparison: accountant $2,000+ / 2–3-day turnaround / made a $20k mistake; Codex $20/mo / immediate interactive research / caught the mistake. He open-sourced the engine ([github.com/corbt/2025-tax-engine](https://github.com/corbt/2025-tax-engine), explicitly unreviewed) and predicts a high-quality open-source tax engine by 2027.
 
 Raw: [[raw/articles/corbt.com--codex-file-my-taxes-make-no-mistakes--2026-09-29]]
+
+### "The Machine Starts" (Jul 2026, amplified Oct 2026)
+
+Corbitt's corbt.com published **"The Machine Starts"** (July 9, 2026; free epub also offered), a
+~56k-character near-future short story — framed by a Nick Bostrom *Deep Utopia* epigraph — about a
+frontier-oversight official who discovers that blindly accepting AI suggestions beats licensed
+experts on **all 78 regulated medical decisions**, leading his final report to exempt every
+regulated decision from mandatory human-in-the-loop oversight (the requirement is quietly repealed
+18 months later). Its thesis: virtues people admire were never about economic output — "the economy
+is not a *whom*"; purpose comes from choosing each other. On **2026-10-27** Corbitt amplified it on
+X ("The machine is starting!", 16 likes / 20 bookmarks), **quoting Alex Tamkin's (Anthropic)
+announcement of research on how AI agents shape experts' judgment calls** — a randomized trial with
+50 professional data analysts — framing the fiction as an exploration of exactly the question
+Anthropic is measuring empirically.
+
+Raw: [[raw/articles/corbt.com--the-machine-starts--2026-10-27]]
 
 ## Related
 

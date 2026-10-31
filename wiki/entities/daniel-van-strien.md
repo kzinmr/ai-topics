@@ -3,7 +3,7 @@ title: Daniel van Strien
 type: entity
 handle: "@vanstriendaniel"
 created: 2026-04-10
-updated: 2026-10-15
+updated: 2026-11-01
 tags:
   - person
   - model
@@ -22,6 +22,9 @@ sources:
   - raw/articles/2026-10-02_huggingface.co_jobs-training.md
   - https://huggingface.co/spaces/davanstrien/historical-illustration-search
   - https://huggingface.co/docs/hub/jobs-training
+  - raw/articles/github.com--davanstrien-curation-decision-recipe--2026-10-29.md
+  - https://github.com/davanstrien/curation-decision-recipe
+  - https://huggingface.co/spaces/davanstrien/prelinger-moments-space
 ---
 
 ## Related Entities
@@ -162,6 +165,37 @@ Daniel's X activity (@vanstriendaniel) centers on:
 6. **Hugging Face Ecosystem** — Regular updates on new HF features, datasets, models, and community initiatives; active participation in HF community discussions.
 7. **Cost-Efficient ML** — Sharing techniques for running ML workloads on free/cheap infrastructure
 8. **Agent-Ready Tooling** — Building tools designed for both human and AI agent use: UV scripts with `--help`, PEP 723 metadata, and `hf jobs uv run` sandboxing; polars plugins with native LazyFrame APIs; agent skills for recipe discovery and execution. (Colab, Kaggle, HF Jobs) to democratize access to AI capabilities.
+
+## Recent X Activity
+
+### Oct 29, 2026 — Open curation decision model (ultrabert-380m-curation)
+
+Released a fully open recipe (data + model + evals) for a **380M decision model for data curation**,
+fine-tuned from UltraBERT-380M with gliclass. Given a text and named, typed questions (topic, format,
+educational value, difficulty), it returns a probability per option. Headline result: scored
+**1,020,000 FineWeb pages in ~19 min / ~$5 on Hugging Face Jobs** — ~25% judged product pages, 6%
+passed an "educational, not spam" filter, 1 in 1,020,000 rated "outstanding". Training data released
+with source, labeller, and licence per row; the whole pipeline runs as three `hf jobs uv run` UV
+commands. His argument: "Small decision models live or die by their training data, and few releases
+say how that data was built… Time for some more data releases!"
+See raw: `raw/articles/github.com--davanstrien-curation-decision-recipe--2026-10-29.md`;
+[model card](https://huggingface.co/davanstrien/ultrabert-380m-curation),
+[recipe repo](https://github.com/davanstrien/curation-decision-recipe).
+
+### Oct 28, 2026 — Baidu Unlimited-OCR-2 throughput demo
+
+Ran Baidu's new **Unlimited-OCR-2** on one GPU on Hugging Face Jobs: 1,456 pages of witchcraft/demon/
+vampire books in 12 min 32 s (~$0.75, nearly 2 pages/sec), sharing the UV script with an experimental
+`--live-port` live view of pages/text as they stream in
+([script](https://huggingface.co/datasets/uv-scripts/ocr/blob/main/unlimited-ocr2-live.py)). Another
+data point in his "cost-efficient ML on HF Jobs" series.
+
+### Oct 31, 2026 — Prelinger moments (decision model for film discovery)
+
+Applied the decision-model pattern to video: [Prelinger moments](https://huggingface.co/spaces/davanstrien/prelinger-moments-space)
+searches 1,864 public-domain Prelinger films by VLM caption, then answers a yes/no question —
+**Liquid AI's d1-2B** decision model checks 3 frames per result clip and jumps to one it labels yes
+(e.g. "anyone wearing a mask?"). Related: [[entities/liquid-ai-lfm3]].
 
 ## Related Concepts
 

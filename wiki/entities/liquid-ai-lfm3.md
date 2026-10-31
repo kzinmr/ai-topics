@@ -1,10 +1,10 @@
 ---
 title: Liquid AI LFM3
 created: 2026-10-28
-updated: 2026-10-28
+updated: 2026-11-01
 type: entity
 tags: [model, llm, edge-ai, on-device, multimodal, liquid-ai, small-language-model, quantization, open-source, transformer]
-sources: [raw/articles/2026-10-27_liquid-ai-lfm3.md]
+sources: [raw/articles/2026-10-27_liquid-ai-lfm3.md, https://huggingface.co/spaces/davanstrien/prelinger-moments-space]
 confidence: high
 ---
 
@@ -65,6 +65,13 @@ context window to **256K tokens**.
 Six ~2B models branched from `LFM3-1.7B-Base`: four covering input modalities (text, vision, audio,
 omni) and two **decision models** specialized from the vision and omni models. `LFM3-1.7B` (text) is
 post-trained to run in agentic harnesses such as Hermes Agent, Pi, and OpenClaw.
+
+**Decision model in the wild (Oct 31, 2026)**: Daniel van Strien's
+[Prelinger moments](https://huggingface.co/spaces/davanstrien/prelinger-moments-space) Space uses
+Liquid AI's **d1-2B** decision model as a cheap frame-level yes/no verifier — it checks 3 frames per
+result clip across 1,864 VLM-captioned public-domain Prelinger films and jumps to one labeled *yes*
+for a natural-language query (e.g. "anyone wearing a mask?"). An early third-party application of
+the LFM3 decision-model line. See [[entities/daniel-van-strien]].
 
 Selected agent/tool-use benchmarks (LFM3-1.7B vs LFM2.5-2.6B, MiniCPM5-2B, Gemma 4 E4B, Qwen3.5-4B,
 Qwen3.5-9B):

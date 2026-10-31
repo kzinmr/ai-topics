@@ -4,7 +4,7 @@ tags:
   - person
   - evaluation
 created: 2026-04-24
-updated: 2026-05-28
+updated: 2026-11-01
 type: entity
 sources:
   - raw/articles/2025-09-05_ben-hylak_thoughts-on-evals.md
@@ -120,6 +120,28 @@ A key lesson from his Impira experience was recognizing that go-to-market succes
 > "Until very, very recently, [frontier models] actually weren't very good [at improving evals]. In fact, we think that Claude 4 in particular was a real breakthrough moment." — AI Engineer World's Fair, August 2025
 
 > "I think you have to pay attention to literally every possible sign that the software isn't working." — First Round Review Podcast
+
+## Recent X Activity
+
+### Oct 29, 2026 — Pattern→eval→fix loop workflow (Braintrust Patterns)
+
+In a reply-thread on X, Goyal laid out Braintrust's debug loop built on the new **Patterns** feature
+([docs](https://www.braintrust.dev/docs/observe/patterns) — "Let Loop investigate your traces on a
+schedule and record recurring problems and trends as patterns, each with supporting evidence and a
+suggested fix"):
+
+1. Start from a **pattern or a trace**
+2. Ask a **coding agent to reproduce** it in Braintrust's **synthetic evals** (a well-curated set of
+   fake data accumulated over time)
+3. **View eval results** to confirm it actually reproduced
+4. Ask the coding agent to **fix and re-run** evals
+5. **Double-check manually**, run `git diff`, rework the fix if needed, re-run
+6. Run a **broad eval suite** to guard against regressions
+
+A concrete articulation of the "agent-instrumented eval loop" position in the
+[[concepts/evaluation/evals-vs-monitoring-debate]] — Patterns (monitoring) feeds synthetic evals,
+and coding agents do the repro/fix work with human spot-checks. He also promoted Patterns tersely
+as "just turn it on" (Oct 29). Related: [[entities/braintrust]], [[concepts/active-observability]].
 
 ## Projects
 

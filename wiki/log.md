@@ -1,3 +1,11 @@
+## [2026-11-01] ingest | x-accounts-scan: curation decision model, Prelinger moments, NVFP4 quant, Braintrust Patterns, The Machine Starts
+
+- Scanned 11 accounts, 9 substantive new posts (of 84 tracked; budget rotation, cursor 14→25).
+- Created raw articles: `raw/articles/github.com--davanstrien-curation-decision-recipe--2026-10-29.md` (ultrabert-380m-curation recipe README + announcement + Prelinger follow-up), `raw/articles/corbt.com--the-machine-starts--2026-10-27.md` (Kyle Corbitt short story, full scrape).
+- Created event: `events/2026-10-30-nvidia-deepseek-v4.1-flash-nvfp4` (NVIDIA official NVFP4 quant of DeepSeek-V4.1-Flash-1017, 665B Image-Text-to-Text, welcomed by Zach Mueller). Index Events 45→46.
+- Updated entities: `daniel-van-strien` (new "Recent X Activity": curation decision model / Unlimited-OCR-2 HF Jobs demo / Prelinger moments w/ Liquid AI d1-2B), `ankur-goyal` (Pattern→synthetic-eval→coding-agent-fix loop, Braintrust Patterns), `kyle-corbitt` ("The Machine Starts" amplified quoting Alex Tamkin's 50-analyst Anthropic study), `zach-mueller` (NVFP4 announcement), `liquid-ai-lfm3` (d1-2B third-party application via Prelinger moments).
+- Skipped: @charles_irl Modal jobs link-drop (recruitment joke reply, no durable content); @thezachmueller KVM-switch Amazon product link (off-topic hardware reply).
+
 ## [2026-10-31] skeleton-enrich-daily | no skeletons found (empty backlog)
 
 - Frontmatter-level scan of `wiki/**/*.md` (regex `status:\s*skeleton` inside YAML block): **0** matches. Streak continues since 2026-10-17.

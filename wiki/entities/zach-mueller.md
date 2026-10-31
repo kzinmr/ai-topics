@@ -3,7 +3,7 @@ title: Zach Mueller
 type: entity
 handle: "@TheZachMueller"
 created: 2026-04-10
-updated: 2026-07-13
+updated: 2026-11-01
 tags:
   - person
   - model
@@ -19,6 +19,7 @@ sources:
   - https://muellerzr.github.io/blog/
   - https://muellerminute.substack.com/
   - raw/articles/2026-07-13_muellerminute_learning-pi-through-force.md
+  - https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4
 ---
 
 
@@ -67,6 +68,13 @@ His work on this issue was conducted in collaboration with the **Unsloth team**,
 Mueller consistently advocates for understanding the layers beneath abstractions. His blog posts always start with raw PyTorch code before showing how Accelerate simplifies it, ensuring that readers understand what is happening under the hood. This pedagogical approach has made his content valuable for both beginners learning distributed training and experienced engineers debugging performance issues.
 
 ## Key Work
+
+### X Activity (Oct 2026)
+
+- **2026-10-30**: "It's here 😍 Thank you @NVIDIAAI 🫡" announcing the arrival of NVIDIA's official
+  NVFP4 quant of DeepSeek-V4.1-Flash-1017 on the Hub (96 likes / 29 bookmarks) — see
+  [[events/2026-10-30-nvidia-deepseek-v4.1-flash-nvfp4]]. Consistent with his documented use of
+  NVFP4 checkpoints (GLM-5.2-NVFP4) in his Pi deep-research pipeline.
 
 ### Hugging Face Accelerate
 
