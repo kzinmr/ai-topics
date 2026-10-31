@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-10-31T10:36:38.390670+00:00",
+  "triage_run_id": "20261031T101822Z",
+  "source": "newsletter",
+  "summary_ja": "3ニュースレター（Robotic/Nathan Lambert、AI by Aakash、beehiiv digest uid=860）をトライアージ。Lambertの「Black October」自己修正エッセイは本文全文取得済みで、Mythos/Glasswing/Wiblin引用とEpoch Firefoxエクスプロイト検証という固有コンテンツあり→entities/nathan-lambert.md追記としてtake。AI by AakashはAnthropic S-1財務内訳（$80.7B損失の実態・Q2営業黒字・run-rate倍率分析）がentities/anthropic.mdのギャップを埋めるtake、Claude Duet/Gemini 4 Carbonは既存ページカバー済みのreference。beehiiv digestは全tracking URLがCloudflare 403・inbox summary不在のため件名レベル評価でreference（ローグAI検知トピックはconcepts/rogue-ai-agent-activity.md関連）。",
+  "decisions": [
+    {
+      "item_id": "aakash-duet",
+      "source": "newsletter",
+      "source_name": "AI by Aakash (Aakash Gupta)",
+      "title": "Claude Duet review (proactive agent race framing)",
+      "url": "https://open.substack.com/pub/aibyaakash/p/claude-duet-review",
+      "raw_path": "wiki/raw/newsletters/2026-10-31-claude-duet.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Claude Duetのリサーチプレビュー（Oct 21発表）を「Instinct, Muse, Hermes, Grok Bot」というプロアクティブエージェント競争の文脈で位置づける。本体は既に2026-10-22 pipelinesでingest済み（entities/anthropic.md、rawのfirst-party launch記事）で、2026-10-30 active-crawlがconcepts/duet-style-hierarchical-assistant.md（パターンページ）を作成済み。Aakash固有の付加はGrok Bot「Vault」との差別化比較（ログイン情報・カード・住所をボットに見せず記憶）と「Duet競合にAnthropicが遅れているか」という問いだけなので、既存ページへの1-2行の補足参照に留める。",
+      "candidate_wiki_path": "concepts/duet-style-hierarchical-assistant.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "rogue-main",
+      "source": "newsletter",
+      "source_name": "Beehiiv digest (uid=860, likely Superintel/The Rundown系)",
+      "title": "🚨 OpenAI Can Now Catch Its Own Rogue AI",
+      "url": "https://link.mail.beehiiv.com/v2/c/d496a357e4fc3649d80e9bb9b4f26b6c.../649ec1c3d1fb4768",
+      "raw_path": "wiki/raw/newsletters/2026-10-31-openai-can-now-catch-its-own-rogue-ai.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ beehiiv v2/c/tracking URLはLink 1・2・4すべてCloudflareチャレンジ（HTTP 403 / title=「Just a moment...」）で本文取得不能。inbox summaryも本run分は不在のため件名レベル評価に留める。件名「OpenAI Can Now Catch Its Own Rogue AI」はOpenAIのローグエージェント検知機構の強化を示唆し、concepts/rogue-ai-agent-activity.md（Transluce/URLQuery報告、OpenAIローグ4件はlog.md でcover済み記録あり）と直接関連するトピックだが、具体的な検知手法・製品名の確認ができないためtake不可。downstreamのnewsletter-wiki-ingestはtoken有効期内（受信12-24時間）なら再試行の価値あり。",
+      "candidate_wiki_path": "concepts/rogue-ai-agent-activity.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "robotic-links-10-20",
+      "source": "newsletter",
+      "source_name": "Robotic (Nathan Lambert / Interconnects)",
+      "title": "Links 1-2, 10-20 (Substack UUID redirect tokens)",
+      "url": null,
+      "raw_path": "wiki/raw/newsletters/2026-10-30-was-i-wrong-about-open-models-cyber-risks.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ substack.com/redirect/2/eyJ...（OAuthリダイレクト、メールセッション認証必須）および substack.com/redirect/<uuid>（メールセッション認証必須）パターン。スキル表に従い即skip。実記事リンクはポスト本文から抽出済みの1本（本体エッセイ）に集約される。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "robotic-chrome",
+      "source": "newsletter",
+      "source_name": "Robotic (Nathan Lambert / Interconnects)",
+      "title": "Links 3-9 (app-link/like/comment/share/@profile)",
+      "url": null,
+      "raw_path": "wiki/raw/newsletters/2026-10-30-was-i-wrong-about-open-models-cyber-risks.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ サブスクUI要素（like・comment・share・restack・read-in-app・著者プロフィール @natolambert）。スキルのノイズフィルタ表で即skip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "aakash-links-1-2-8-20",
+      "source": "newsletter",
+      "source_name": "AI by Aakash (Aakash Gupta)",
+      "title": "Links 1, 2-5, 8-20 (redirect tokens + Substack chrome)",
+      "url": null,
+      "raw_path": "wiki/raw/newsletters/2026-10-31-claude-duet.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ post-email-title/like/comment/share/app-store/read-in-app chrome と substack.com/redirect/<uuid> 認証トークンのみ。AI by Aakashはリンク集型ニュースレターだが、主要外部リンク（Anthropic財務・Gemini 4 Carbon・ETH・Grok Vault・Hyphenate・Dessa等）は本文から抽出し上記で個別評価済み。残りはニュースレターchrome。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "aakash-dup-model-releases",
+      "source": "newsletter",
+      "source_name": "AI by Aakash (Aakash Gupta)",
+      "title": "Other roundup items: ETH disproval, GPT-6.1 Terra, Kimi K3.1 Pro, LFM3, Dessa, Hyphenate $45M, Parallel Decisions API, Amazon engineer lawsuit, MSFT $175B capex",
+      "url": null,
+      "raw_path": "wiki/raw/newsletters/2026-10-31-claude-duet.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★ ラウンドアップ記事の1-2行言及で、内容は既存wikiで詳細カバー済み: ETH反証=concepts/openai-eth-refutation-verification-crisis.md（Lean検証・shepherd体制まで収録）、GPT-6.1価格=$1/$5 per Mは既知、Kimi K3.1 Pro/LFM3=active-crawl 10-25〜28バッチでcover済み（log.md記録）、Parallel Decisions API=concepts/openai/decisions-api.md、Hyphenate Series A $45M=AI金融エージェント、単発の資金調達・訴訟・capex言及はwiki基準（★☆☆☆☆〜★★☆☆☆）未満。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}
