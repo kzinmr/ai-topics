@@ -2,7 +2,7 @@
 title: "Aakash Gupta"
 type: entity
 created: 2026-06-23
-updated: 2026-10-26
+updated: 2026-10-31
 tags:
   - person
   - agent-safety
@@ -10,6 +10,7 @@ tags:
   - context-engineering
 aliases: ["aakashgupta"]
 sources:
+  - raw/newsletters/2026-10-31-claude-duet.md
   - raw/newsletters/2026-10-26-ai-by-aakash-meet-claude-your-new-video-editor.md
   - https://x.com/aakashgupta/status/2067550891843186980
   - raw/newsletters/2026-08-14-grok-bot.md
@@ -90,6 +91,14 @@ at **~$50 of AI tokens per break-in**, key theft from OpenCode users, and Micros
 **Storm-0940 / ARTEX** agentic-pentester campaign reaching privileged cloud access in
 under 3 hours in some intrusions. His line: *"every company sitting on a secret bug now
 has until the first rumor leaks and somebody with an AI subscription goes looking."*
+
+### Claude Duet review + Anthropic IPO thesis (Oct 31, 2026 issue)
+
+The Oct 31 issue ([[raw/newsletters/2026-10-31-claude-duet.md]]) is a three-part essay that shows Gupta's house style — practitioner review + investment analysis + weekly roundup:
+
+- **Claude Duet hands-on**: judged against the proactive-agent race (Instinct, Muse, Hermes, Grok Bot); verdict "Claude Code is the best AI harness" and Duet does not replace it; criticizes the fixed Opus 5.5 backend (no model/effort picker), weak local-session recall, and prompt-dependence. Contrasts Grok Bot's "Vault" secret storage as the differentiator Duet lacks. See [[concepts/duet-style-hierarchical-assistant]].
+- **Anthropic IPO thesis**: the most-cited breakdown of the public S-1 in this wiki — $72.4B of the $80.7B H1 loss is non-cash SAFE/convertible marks, Q2 operating profit $974M, 11,900+ $100K+ enterprise customers, buy-the-IPO stance at $1.5–2T. Content ingested into [[entities/anthropic]] §S-1 financial breakdown.
+- **Gemini 4 Carbon / Alphabet Q3**: harness-behind-Anthropic judgment plus the search-revenue slowdown motive reading (12% vs 17%, stock −8%). See [[concepts/gemini/gemini-4-carbon]].
 
 ## Related Concepts
 - [[concepts/agent-safety]] — Broader AI safety frameworks

@@ -1,7 +1,7 @@
 ---
 title: "Early Rogue AI Agent Activity (Transluce / URLQuery reports, 2026)"
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-31
 type: concept
 confidence: medium
 sources:
@@ -36,6 +36,7 @@ There was immediate pushback — Eoin Higgins published "No, rogue AI agents" pi
 - How reproducible / methodologically sound are the URLQuery-based detections?
 - Where is the line between genuinely autonomous misbehavior and ordinary automation exploiting credentials?
 - How do these real incidents get conflated with (or weaponized for) the securitization narrative in [[concepts/ai-skeptic-radicalization-investigation]]?
+- **Detection tooling (unresolved lead, Oct 31, 2026)**: A beehiiv digest (uid=860) ran the headline "🚨 OpenAI Can Now Catch Its Own Rogue AI" — suggesting OpenAI-side detection capability for rogue agent activity, which would be the vendor counterpart to Transluce's third-party URLQuery monitoring. Body unreachable (all tracking links Cloudflare-403 "Just a moment..."), so the specific mechanism/product name is unconfirmed; retry within the token window or find the underlying source before ingesting.
 
 ## Related
 

@@ -1,7 +1,7 @@
 ---
 title: "Duet-style hierarchical agent assistant"
 created: 2026-10-30
-updated: 2026-10-30
+updated: 2026-10-31
 type: concept
 tags:
   - ai-agents
@@ -14,6 +14,7 @@ tags:
 sources:
   - raw/articles/fig.blue--posts-duet-is-the-future--3c8f5710.md
   - raw/articles/2026-10-22_anthropic-claude-duet-launch.md
+  - raw/newsletters/2026-10-31-claude-duet.md
 related:
   - concepts/agent-harnesses
   - concepts/human-in-the-loop
@@ -123,6 +124,15 @@ values "could still enter those in something untrusted."
   launch capture, and the practitioner piece assumes it.
 - Predictive claim, unverified: "I suspect it's going to be the default experience for
   all chatbot UIs in the near future."
+- **Aakash Gupta's hands-on review (Oct 31, 2026) adds two dissent data points**
+  ([[raw/newsletters/2026-10-31-claude-duet.md]]): (a) for a power user, Duet is *not* a
+  Claude Code replacement — "Claude Code is the best AI harness, but can Duet replace it?
+  Spoiler alert, I don't think so" — and the fixed **Opus 5.5** backend with no model or
+  effort picker is a cost problem for Sonnet-heavy workflows; (b) recall quality is weak,
+  especially over local Claude Code sessions, and "most of it needs to be prompted"
+  despite the proactive framing. He also contrasts **Grok Bot's "Vault"** (remembers
+  logins/cards/addresses without the bot ever seeing them) as a differentiator Duet lacks
+  — a privacy-shaped axis the fig.blue hierarchy analysis does not cover.
 
 ## Status
 

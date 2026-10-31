@@ -1,3 +1,15 @@
+## [2026-10-31] newsletter-wiki-ingest | run 20261031T101822Z — 2 takes, 3 references (recovered from triage checkpoint)
+
+- Triage agent response failed to parse; recovered `triage_latest.json` (run_id 20261031T101822Z, fresh, archive already committed at 2c379b63 by triage). Bodies independently re-fetched via curl + `<p>` extraction and verified against target pages before enrichment.
+- **Take 1 — entities/nathan-lambert.md**: new subsection "October 30, 2026: Was I wrong about open models & cyber risks?" — falsifiable-prediction framing, GLM-5.3-as-natural-experiment claim, receipts (Rob Wiblin Apr 10, Project Glasswing blog Apr 7, Zvi Apr 9), Epoch AI Firefox no-interaction file-exfiltration exploit reframed as multi-stage, bakery/threat-actor-as-business model, Chris Hughes defensive-research asymmetry. Fills genuine gap vs the Oct 25 podcast #20 section (no Glasswing/Wiblin/Epoch Firefox specifics there).
+- **Take 2 — entities/anthropic.md**: new subsection "S-1 financial breakdown (Aakash Gupta, Oct 31)" under the Public S-1 Filing section — $72.4B/$80.7B non-cash breakdown, Q2 op profit $974M, 11,900+ $100K+ enterprise customers, $65B run rate vs ASML 14.5x / NVIDIA 16.1x paths, Damodaran "priced rather than valued". Marked as secondary-source commentary; reconciles the contested $2tn valuation thread.
+- **Reference — concepts/duet-style-hierarchical-assistant.md**: Aakash hands-on dissent (Claude Code still best harness, fixed Opus 5.5 cost, weak local recall, Grok Bot Vault contrast) added to Limitations.
+- **Reference — concepts/gemini/gemini-4-carbon.md**: practitioner context subsection (harness-behind-Anthropic, Alphabet Q3 search +12% vs 17%, stock −8% motive reading).
+- **Reference — concepts/rogue-ai-agent-activity.md**: unresolved-lead note for beehiiv uid=860 "OpenAI Can Now Catch Its Own Rogue AI" (all tracking links Cloudflare-403 on retry; subject-level only; raw file marked paywalled/unretrieved).
+- **Bonus reference — entities/aakash-gupta.md**: Oct 31 issue section (Duet review + IPO thesis + Gemini commentary).
+- Raw upgraded: `2026-10-30-was-i-wrong-about-open-models-cyber-risks.md`, `2026-10-31-claude-duet.md` (full extracted bodies replace tracking-URL stubs); `2026-10-31-openai-can-now-catch-its-own-rogue-ai.md` (subject-line capture, paywalled).
+- Skips (4 batch entries in triage JSON) already archived by triage run. index.md unchanged (no new pages).
+
 ## [2026-10-30] skeleton-enrich-daily | Empty backlog (12th consecutive)
 - Whole-tree frontmatter scan: 0 pages with `status: skeleton`; entities frontmatter also has 0 `stub|incomplete|draft` markers. Nothing to enrich.
 - 27 short entity pages flagged by line-count heuristic are all intentional `status: redirect` stubs (eugeneyan, lilianweng, emollick, samuelcolvin, alex-imus, transluce, jo-bergum, ken-klippenstein, ...), not enrichment targets.

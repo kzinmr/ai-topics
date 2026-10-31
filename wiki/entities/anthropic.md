@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-10-27
+updated: 2026-10-31
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -918,3 +918,14 @@ Context: this is Anthropic's fourth threat report (after March/August/November 2
 Anthropic, PBC filed a **public** registration statement on Form S-1 with the SEC for a proposed IPO of its Class A common stock, intending to list on the **Nasdaq Global Select Market under the symbol "ANT."** Share count and price range were not yet determined; the offering will be made only by means of a prospectus, with Goldman Sachs and Morgan Stanley named as prospectus contacts. The registration statement had not yet become effective at announcement. ^[raw/articles/2026-10-26_anthropic_s1-sec-filing.md]
 
 This supersedes the June 2026 *confidential draft* S-1 (§IPO Preparation) with the public step. The HN thread on the raw SEC document drew 1,621 points (2026-10-26), the day's top AI story. Contemporaneous coverage (Gary Marcus, "What Anthropic left out of their draft S-1"; Import AI 478) focuses on financial disclosures — the reported >$80B H1-2026 net loss and junk-rated debt (see [[concepts/subprime-data-center-crisis]], [[concepts/ai-bubble-economics]]) — while the S-1 body itself remains pending external analysis. Dedup note: the H1-loss/trust angle was logged as deferred in prior crawls pending a primary source; this filing is that primary source.
+
+### S-1 financial breakdown (Aakash Gupta, "AI by Aakash", Oct 31, 2026)
+
+Second-hand analyst read of the S-1 numbers (⚠️ secondary source, newsletter commentary, not verified against the filing itself — see [[raw/newsletters/2026-10-31-claude-duet.md]]):
+
+- **The $80.7B H1-2026 net loss is mostly accounting**: $72.4B of it is a *non-cash* charge from the rising value of convertible notes, derivatives and SAFEs (marked up by the higher valuation) — the same headline loss cited by Gary Marcus above.
+- **Q2 2026 operating profit $974M**, after a Q1 2026 operating loss of $1.7B — i.e. operating-level breakeven crossed during H1.
+- **Enterprise base**: >11,900 customers paying $100K+/year, up from ~950 a year earlier (~12.5x YoY).
+- **Growth trajectory**: Dario planned 10x for the year; growth "ran closer to 80x annualized in Q1." Current run rate ~**$65B**.
+- **Valuation frame**: last private round $965B (May 2026); IPO expected at $1.5–2T. Damodaran's framing: it will be "priced rather than valued." $1.5T ≈ 23x run rate — still a lower multiple than Palantir's; Gupta benchmarks two pricing paths against ASML (14.5x) and NVIDIA (16.1x) and concludes he'd buy at $1.5–2T.
+- These figures complement (and partially reconcile) the contested valuation threads above: the $2tn "investor speculation" figure and the $1.5–2T IPO expectation are consistent ranges; the run-rate ($65B) sits below the FT/Superintel+ "annualized $100–120bn by year-end" projection but on a growth trajectory that makes them compatible.

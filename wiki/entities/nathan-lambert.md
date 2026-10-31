@@ -2,12 +2,13 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-10-26
+updated: 2026-10-31
 type: entity
 aliases:
   - natolambert
   - nathan-lambert
 sources:
+  - raw/newsletters/2026-10-30-was-i-wrong-about-open-models-cyber-risks.md
   - raw/newsletters/2026-10-25-interconnects-podcast-kimi-k3-1-pro-new-cyber-reality-muse-musings.md
   - https://www.interconnects.ai/p/the-distillation-panic
   - https://www.natolambert.com/
@@ -135,6 +136,20 @@ undisclosed paid-promotion instructions for K3.1 Pro and generalise it into a
 exclusive windows before weights, paid social amplification).
 
 Source: [[raw/newsletters/2026-10-25-interconnects-podcast-kimi-k3-1-pro-new-cyber-reality-muse-musings.md|Interconnects podcast #20]]; related [[events/php2shell-php-rce-2026]], [[concepts/open-weight-ai-regulation]], [[concepts/security-and-governance/open-model-safety]].
+
+### October 30, 2026: "Was I wrong about open models & cyber risks?" (written essay)
+
+The podcast position, written up as a self-auditing essay after "Black October" (the PHP2Shell/GitLab disclosure onslaught). Lambert "largely still stands by" his pre-October take but adds receipts and corrections:
+
+- **Falsifiable prediction, explicitly on the record**: open-weight fear proponents are "making a falsifiable prediction — that the current open-weight models are going to cause substantial, not seen before AI harms by crippling our cyber infrastructure... Based on all the evidence I have... they're set up to be wrong."
+- **The natural experiment already ran**: "By all measures, GLM-5.3 is the model that crosses that [Claude Mythos cyber-weapon] threshold of capability, and there's little public evidence that much has changed, and we're over a month out of the model weight release." He goes further: an accidental open-weight Mythos release would have left the world "more or less fine" (with a real but bounded increase in incidents).
+- **Receipts for the overclaim** (new specifics vs the podcast): **Rob Wiblin** (Apr 10, 2026): "If it fell into the hands of criminals or hostile state cyber actors, it would be an actual disaster." **Anthropic's Project Glasswing announcement blog** (Apr 7, 2026): capabilities will "proliferate, potentially beyond actors who are committed to deploying them safely." He cites **Zvi Mowshowitz** (Apr 9) as the *reasonable* end of the spectrum, marking the fine line between correct and exaggerated.
+- **Epoch AI Firefox exploit, reframed as multi-stage**: Epoch used GLM-5.3 to build a site that, visited by a Firefox user with no further interaction, exfiltrates files. Lambert: finding the exploit "is only one step in a multi-stage process" — an attacker must still plant the lure site. Concession: he "should've been more specific" about what "fine" means and gives more credit to the AI-safety voices who framed it as a new era of cyber instability.
+- **Threat-actor modeling**: threat actors are "businesses with well defined business processes" (bakery/dog-food analogy), not hackers-by-conviction; open models rebalance the offense-defense equation; he expects most vulnerabilities are found by *closed* models but flags "very high error bars."
+- **Defensive-research asymmetry** (via an endorsed Chris Hughes comment): frontier labs and external teams (Epoch, Irregular) over-index on offensive capability research because offense is verifiable, defense is environment-specific, and defense research would expose refusals legitimate defensive users hit with closed models — an incentive structure that hill-climbs models toward "wreaking havoc vs. mitigating it."
+- WSJ-reported mobilization of cyber first responders is his best guess for why damage has not spiked: behind-the-scenes patching work accelerated alongside model capability.
+
+Source: [[raw/newsletters/2026-10-30-was-i-wrong-about-open-models-cyber-risks.md|Was I wrong about open models & cyber risks?]] (Interconnects/Robotic, Oct 30, 2026).
 
 ### May 2026: The Distillation Panic
 
