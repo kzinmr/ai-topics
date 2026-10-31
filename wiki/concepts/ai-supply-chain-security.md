@@ -1,7 +1,7 @@
 ---
 title: AI Supply Chain Security
 created: 2026-05-21
-updated: 2026-10-25
+updated: 2026-10-31
 type: concept
 tags:
   - concept
@@ -16,6 +16,7 @@ sources:
   - https://venturebeat.com/security/ai-supply-chain-attacks-release-pipeline-red-teams-not-covering/
   - raw/articles/nesbitt.io--2026-06-26-incident-report-cve-2026-lgtm-html--da259599.md
   - raw/articles/nesbitt.io--2026-10-24-this-week-in-package-management-html--b6c5a952.md
+  - raw/articles/nesbitt.io--2026-10-30-signing-and-attestations-across-package-registrie--fb28e540.md
 ---
 
 # AI Supply Chain Security
@@ -105,6 +106,16 @@ This is the same structural bug as the SLSA/TanStack failure two sections up —
 GitHub **package firewall** entered public preview for Enterprise Cloud: a proxy between upstream registries and CI runners, **coding agents**, or internal registries that checks metadata requests and downloads against an enterprise policy covering cooldown periods, malware/vulnerability advisories, and **attestation downgrades**. npm-only and free during preview. Notable because it moves the cooldown/registry-timestamp protections discussed in [[entities/andrew-nesbitt|Nesbitt's "One Small Bug"]] out of client-side package-manager settings (which silently ignore unknown `.npmrc` keys) into an infrastructure chokepoint that an agent cannot misconfigure.
 
 Related same-week signals: the **curl project** publishes LOW/MEDIUM vulnerability reports openly from 26 October (keeping embargoes only for HIGH/CRITICAL) after receiving 13 reports on a single Saturday — an explicit admission that embargo capacity is exceeded by AI-accelerated disclosure volume; and **Chainguard broke the PHP 8.5.12 embargo**, shipping fixed images over six hours before the coordinated release.
+
+### 10. Cross-registry signing vs. attestation verification gap (October 2026)
+
+[[entities/andrew-nesbitt|Andrew Nesbitt's]] cross-registry survey of signing, provenance attestations and trusted publishing makes the agent-relevant gap explicit: **producing evidence is now easy, checking it at install time is still rare**. Trusted publishing hands a registry a verified CI identity via short-lived OIDC credentials, which is why the Ultralytics compromise produced malicious releases carrying *valid* attestations when they came from the project's own release workflow — only token-uploaded releases lacked them. A compromised workflow is therefore an attestation factory, and coding agents are the workload most likely to be running from one.
+
+The verification-default column is where the exploitable surface sits: **Cargo, Julia's Pkg and conda validate downloads against hashes in metadata served over TLS but unsigned** (corruption detection only), crates.io has no signing whatsoever, and **conda-forge uses neither signing nor trusted publishing**. npm and PyPI verify nothing at install — `npm audit signatures` is a separate command and pip/uv install-time checks remain open issues blocked on PEP 751's `attestation-identities` field. Genuine default verification is limited to Go's signed checksum log, Hackage's TUF index, NuGet restore (Windows always, Linux since .NET 8, macOS off), Terraform providers, Hex, SwiftPM, and the source-building caches (Nix/Guix/Spack).
+
+Two retrograde moves deserve flagging for agent-infrastructure planning: **GitHub's Immutable Actions proposal was removed from the roadmap in December 2025**, and the **October 2026 workflow-lockfiles public preview pins direct and transitive actions to commits without integrity hashes** — the subsystem coding agents consume most got pinning without provenance. Meanwhile Anaconda's TUF-based `conda-content-trust` hit end of support (September 2026) and Notary v1 shuts down 8 December 2026. On the identity side, Nesbitt's framing generalizes the npm name-vs-ID bug above: signature validity and *identity* assertion are two separate checks, and CLIs make the second one a per-invocation user burden (`gh attestation verify --owner/--repo`, `*** verify pypi --repository`).
+
+Source: [[raw/articles/nesbitt.io--2026-10-30-signing-and-attestations-across-package-registrie--fb28e540.md]]
 
 ## Responses and Mitigations
 

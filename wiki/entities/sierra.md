@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-10-29
+updated: 2026-10-31
 type: entity
 tags:
   - company
@@ -44,13 +44,25 @@ Sierra is an AI-powered customer service platform that deploys conversational AI
 
 - **Valuation**: $15.8B (Series E, May 4 2026 — up from $10B in Fall 2025)
 - **Funding**: $950M Series E led by Tiger Global and Google's GV, with Benchmark, Sequoia, Greenoaks
-- **ARR**: $150M+ in 8 quarters — fastest growth in enterprise software history
+- **ARR**: $150M+ in 8 quarters (May 2026) — fastest growth in enterprise software history; **$400M+ by October 2026** (see ARR trajectory below)
 - **Customers**: Fortune 50's 40%+, Prudential, Cigna, Blue Cross Blue Shield, Rocket Mortgage
 - **Revenue multiple**: 50-75x — reflecting AI agent premium in enterprise
 
 ### Ghostwriter (Agent as a Service, April 2026)
 
 Sierra launched **Ghostwriter**, an "agent as a service" tool. Users describe what they need in natural language, and Ghostwriter autonomously creates and deploys a specialized agent. This extends Sierra's platform beyond customer-facing agents into internal business process automation.
+
+### ARR trajectory to $400M+ (October 30, 2026)
+
+Two and a half years after launch, Sierra announced **$400M+ ARR, adding $150M+ in Q3 2026 alone** — more ARR in one quarter than the whole of 2025. The doubling cadence is the notable part: **six months to double $100M→$200M, five months to double $200M→$400M**, i.e. the growth rate itself is accelerating rather than flattening, which is unusual for enterprise software at this scale and contradicts the usual ARR-deceleration curve. Sierra attributes it to three drivers:
+
+- **Rising customer ambition** — its customers are "some of the largest and most heavily regulated businesses in the world," yet they are pushing to deploy more agents, faster.
+- **A capability step-change in agent scope** — from "one-and-done support conversations" to interactions that "last weeks or months and drive revenue," which is the same thesis behind the [[concepts/long-horizon-agents|Horizon platform]] and the [[concepts/sierra-compliance-console|Compliance Console]].
+- **Ghostwriter time-to-value** — a **$40B+ revenue US retailer went from first meeting to a live agent in 27 days** in October 2026, the strongest published evidence yet that agent-as-a-service build tooling is compressing enterprise sales cycles.
+
+Sierra now claims **almost 50% of the Fortune 50** as customers (up from "Fortune 50's 40%+" in May). Its stated 2027 framing is a useful summary of the enterprise-AI question set: how to turn AI investment into measurable returns, whether **personal agents are an opportunity or a threat**, and what competitive advantage remains "when everyone has access to the same intelligence." Its three beliefs answer those directly — pay for outcomes not tokens, customer relationships as the compounding moat, and fine-grained control over how personal agents touch your brand via the **Poppy** open standard (now with 50+ participating enterprises including Meta, Shopify, Stripe and Walmart; see [[raw/articles/sierra.ai--blog-poppy--ba1ffb49]]).
+
+Source: [[raw/articles/sierra.ai--blog-our-customers-ambition-is-accelerating-our-growth--7e93192d]]
 
 ### Outcomemaxxing / Outcome-Based Pricing (June 2026)
 
@@ -276,7 +288,7 @@ Source: [[raw/articles/2026-10-28_sierra-compliance-console.md]]
 
 ## Significance
 
-Sierra's valuation ($15B+) and ARR growth ($200M+) make it one of the highest-valued AI application companies, demonstrating that the enterprise AI agent market has reached material scale. Its 50-75x revenue multiple reflects investor expectations that AI agents will capture significant market share from traditional SaaS and human-staffed services.
+Sierra's valuation ($15B+) and ARR growth ($150M in May 2026 → **$400M+ by October 2026**, doubling in five months) make it one of the highest-valued AI application companies, demonstrating that the enterprise AI agent market has reached material scale. Its 50-75x revenue multiple reflects investor expectations that AI agents will capture significant market share from traditional SaaS and human-staffed services.
 
 ## Related
 

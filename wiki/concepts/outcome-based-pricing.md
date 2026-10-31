@@ -2,7 +2,7 @@
 title: "Outcome-Based Pricing Models for AI Agents"
 type: concept
 created: 2026-05-25
-updated: 2026-06-04
+updated: 2026-10-31
 tags:
   - economics
   - business-model
@@ -45,6 +45,8 @@ Outcome-Based Pricing is a pricing model that charges based on **actual results 
   - **Top-Right (High Agency, High Attribution)**: Pure outcome-based pricing. Sierra positions here — agents deliver complete outcomes (resolved cases, processed claims) that can be directly attributed.
   
   Sierra also coined the **"Saaspocalypse"** concept: since December 2024, the S&P 500 is up ~30% while the WCLD (SaaS index) is down ~15%, reflecting the market internalizing that the future is AI agents delivering outcomes, not productivity tools for teams. Sierra's key insight: outcome-based pricing rewires the entire company — sales, product, support, marketing — around delivering results, since customer success is baked into the P&L rather than abstract.
+
+**Market validation (October 30, 2026)**: Sierra's growth curve is now the strongest published evidence that the Top-Right quadrant converts to revenue at scale — **$400M+ ARR, $150M+ added in Q3 2026 alone**, doubling $100M→$200M in six months and $200M→$400M in five. Sierra's own articulation of the pricing principle has sharpened into a slogan: *"You pay for outcomes, not tokens used — a loan refinanced, an insurance claim paid, a sale closed, a customer retained."* That formulation is worth noting as a rhetorical move in the token-economics debate: it deliberately decouples the customer's bill from inference cost, which is exactly the exposure that lab price swings and cache-read economics create for agent vendors (see [[concepts/token-economics]], [[comparisons/llm-api-pricing]]). Whoever bears token-price volatility under outcome pricing is the vendor, so outcome pricing is also a hedging decision, not only a value-alignment one. ^[raw/articles/sierra.ai--blog-our-customers-ambition-is-accelerating-our-growth--7e93192d.md]
 
 - **[[Zendesk]]**: First in the CX industry to introduce outcome-based pricing for AI Agents. Charges based on autonomously resolved case counts.
 - **[[Salesforce Agentforce]]**: Combines multiple pricing models including Flex Credits, conversation-based billing, and user licenses.

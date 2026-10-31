@@ -1,7 +1,7 @@
 ---
 title: "Sovereign AI"
 created: "2026-06-17"
-updated: "2026-10-25"
+updated: "2026-10-30"
 type: "concept"
 tags:
   - geopolitics
@@ -26,6 +26,7 @@ sources:
   - raw/articles/martinalderson.com--posts-is-datacentre-sovereignty-really-that-important--8195ad72.md
   - raw/newsletters/2026-08-23-can-you-switch-your-inference-on-a-random-tuesday-an-exclusive-with-pandaos-on-w.md
   - raw/articles/steveblank.com--2026-10-24-europe-gets-a-wake-up-call--db1728be.md
+  - raw/articles/2026-10-30_cohere_who-gets-to-build-the-frontier-for-ai.md
 ---
 
 # Sovereign AI
@@ -160,6 +161,19 @@ The acquisition exemplifies the sovereign AI model for regulated industries: dom
 ### 5.3 International Footprint
 
 Cohere's sovereign AI presence spans Canada (Toronto, Montreal), Germany (Berlin, via Reliant AI), Spain (Indra Group MOU), and the UK (London office tripled in June 2026 for R&D growth).
+
+### 5.4 Series E: the "third pole" thesis goes public (October 2026)
+
+On 2026-10-29 Cohere announced the first close of a **Series E targeting up to CAD 7 billion**, led by Germany's **Schwarz Group** with Bell Ventures, Bullhound Capital, Inovia Capital, **NVIDIA**, Prosperity7 Ventures, and the **Government of Canada**. The accompanying essay (German-first, "Wer darf die Grenzen der KI gestalten?") is the clearest statement of the sovereign-AI thesis as a venture thesis:
+
+- AI is becoming **operating infrastructure** for economy, public services, and national defence; who builds it, under which law, and with what accountability shapes the options of every adopting country.
+- The explicit goal: **a leading AI company outside the US and China** — frontier models, a control-preserving platform for institutions, and cyber-defence for democracies.
+- The empirical stakes: **"more than 70% of open-model tokens served through OpenRouter came from Chinese models — up from 3% fourteen months earlier."** Cohere frames enterprise buyers as facing a forced choice between cheap Chinese models and powerful models they cannot inspect or control.
+- Rejects "technological fatalism" (renting intelligence from the winners), anchoring to the Canada–Germany **Sovereign Tech Alliance** (Munich, early 2026) and the access-contingency lesson from communications/energy/security infrastructure where export controls or corporate decisions can cut access overnight.
+
+This is sovereign AI moving from procurement category to **capital-markets narrative**: a state-adjacent, allied-capital round whose pitch is geopolitical optionality rather than model leadership per se. The 70%-Chinese figure is the single most-cited number and revises the December 2025 [[concepts/openrouter-state-of-ai-2025]] baseline upward on the China side of the open-model market. See [[entities/cohere]] for the full section.
+
+**Source:** [[raw/articles/2026-10-30_cohere_who-gets-to-build-the-frontier-for-ai]]
 
 ---
 

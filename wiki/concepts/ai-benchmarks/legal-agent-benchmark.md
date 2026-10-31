@@ -1,7 +1,7 @@
 ---
 title: "Legal Agent Benchmark (LAB)"
 created: 2026-05-27
-updated: 2026-08-21
+updated: 2026-10-30
 type: concept
 tags:
   - evaluation
@@ -17,6 +17,7 @@ related:
   - concepts/jagged-intelligence
 sources:
   - raw/articles/2026-05-26_harvey-ai-initial-results-legal-agent-benchmark.md
+  - raw/articles/2026-10-30_harvey_legal-agent-bench-us-case-law.md
   - https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark
   - https://github.com/harveyai/harvey-labs
 ---
@@ -102,6 +103,15 @@ LAB's fixed action space has six actions: Read, Search, Execute, Write, Validate
 | **Write** | Produce or extend output in a deliverable |
 | **Validate** | Run an explicit check of a draft against the instruction or the matter record |
 | **Edit** | Modify the work product after a validation step |
+
+## LAB: US Case Law (LAB: USCL) — brief writing extension (October 2026)
+
+The first expansion of the "benchmark expansion" direction above: **LAB: USCL** tests frontier models on **litigation brief writing end-to-end** from real case records. Full write-up on [[entities/harvey]]; the methodological novelties for benchmark taxonomy:
+
+- **Environments from filed briefs, not synthetic tasks**: recreate the assignment a lawyer actually completed (same party, motion, point in the case). Environment validity gate: **>95% of the case citations in the filed brief must resolve against CourtListener's 8M+ opinions**, guaranteeing the agent sees substantially the same precedent corpus the lawyer had. Yield: 200 dockets → 40 auto-built environments → **100 after human correction** (automated pipelines cannot judge docket completeness alone).
+- **Open- vs closed-book conditions** separate retrieval skill from reasoning skill: closed-book supplies the record + the cited cases; open-book gives only task-defining filings plus a **CourtListener MCP** (pre-filing materials only).
+- **GRM round-robin Elo grading instead of a fixed answer key**: model briefs compete pairwise; generative reward models pick a winner/tie with reasoned criteria that lawyers review and calibrate — an answer to "no answer key exists for advocacy."
+- **Result shift vs May 2026 baseline**: where the initial LAB run had frontier models completing <10% of tasks all-pass, LAB: USCL finds a small group of frontier models can now produce complete first-draft briefs in a single shot with no attorney guidance — while still failing strategically: unnecessary concessions, abandoned arguments, reliance on overruled precedent, unexamined deference to non-binding authority.
 
 ## Future Directions
 

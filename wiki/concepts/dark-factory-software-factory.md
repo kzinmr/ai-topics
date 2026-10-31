@@ -2,7 +2,7 @@
 title: "Dark Factory Software Factory"
 type: concept
 created: 2026-04-13
-updated: 2026-10-23
+updated: 2026-10-30
 tags:
   - concept
   - multi-agent
@@ -20,6 +20,7 @@ sources:
   - raw/articles/x.com--sarahfim--anti-slop-software-factory--2026-10-12.md
   - raw/articles/2026-10-21_warp_rolling-out-software-factories.md
   - raw/articles/2026-10-21_warp_self-improving-software-proactive-agents.md
+  - raw/articles/2026-10-30_warp_7-ways-to-build-a-software-factory.md
 ---
 
 # Dark Factory Software Factory
@@ -379,6 +380,24 @@ The **mid-scale datapoint** between StrongDM (3-person) and Uber (Fortune-500): 
 - Seven repo practices (co-location, e2e types, tolerated duplication, lint, E2E replay tests, bugbots-last, fast CI) before cloud agents — their internal **Zen** agent has merged 1,300+ PRs since Feb 2026.
 
 Full analysis: [[concepts/coding-agents/lint-rules-as-agent-feedback-loop]].
+
+## Case Study: Warp's 7 Table-Stakes Criteria (October 2026)
+
+**Source:** Ben Holmes, [[entities/warp-terminal|Warp]] — ["7 core components for building a software factory"](https://www.warp.dev/blog/7-ways-to-build-a-software-factory) (2026-10-29)
+
+Warp's definition, stated plainly: a software factory is **centralizing your system of agents into one place to build software** — "the same way engineers agree on CI, we should agree on how agents are run." Rationale: shared security management, ROI tracking, and team-level (not per-machine) agent efficiency. The seven criteria as table-stakes:
+
+1. **Factories as Code** — shared agent configuration lives in version control like Terraform: check-in with code owners, test with rollback, review as diffs. One set of model selections, secrets/MCP definitions, and a cost/quality dashboard; agents can propose diffs to their own factory config from feedback, benchmark results, and self-review loops. Hosted in Warp Factories or your own forge (GitHub/GitLab/Azure DevOps).
+2. **Unified Conversation History** — all agent sessions flow through one source (cloud-hosted agents), not engineers zipping Claude/Codex sessions into S3. Preserves a **personal inbox** view to separate which agents need *your* attention vs. teammates'. Transcripts self-hostable.
+3. **Benchmarks as a first-party primitive** — replay past team conversations from a specific repo state to find the best cost/performance model **for your team's tasks** ("SWE-bench on your own data" — internally dubbed "Me Bench"); plot cost-vs-performance Pareto curves and deploy the winning config as an update.
+4. **Factory Chat** — multiplayer prompting in Slack/Teams as intake, tagging from Linear/Jira, full backlog automation; agents track work on a task board to guard against duplicates and generate weekly team summaries; a web view is the source of truth for plans/PRs/recordings.
+5. **Artifacts** — surface outputs, not just activity: linked issues, stacked PRs, plans, screenshots — attached to the PR and inline in the conversation.
+6. **Computer Use + Auto Trim** — end-to-end verification named as **the primary current bottleneck for agents**: agents click through the app they built and attach before/after screenshots and recordings; auto-trim calls out cursor clicks and cuts dead space, condensing 3–4 minutes of verification into a ~15-second recording. Multi-OS runners (Linux/macOS/Windows) let agents drive native simulators (e.g. mobile) so reviewers never rebuild the setup locally — reported to dramatically cut review times.
+7. **Agent Action Timeline** — full traces (conversation + tool calls + MCP access + artifacts) for both agent-side self-improvement and human visual debugging.
+
+Positioning: this is Warp's fourth software-factory post (June memo → self-improving review → computer-use verification → this), and the most **standardization-flavored** — where Composio's anti-slop factory below makes the *repo* the factory, Warp makes the *centralized agent runtime* the factory. The "Me Bench" replay idea and the verification-bottleneck claim are the two transferable concepts beyond product marketing.
+
+**Source:** [[raw/articles/2026-10-30_warp_7-ways-to-build-a-software-factory]]
 
 ## Related
 

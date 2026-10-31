@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-08-26
+updated: 2026-10-30
 tags:
   - company
   - voice-ai
@@ -30,6 +30,8 @@ sources:
   - raw/articles/2026-08-08_elevenlabs_how-elevenreader-used-elevenagents.md
   - raw/articles/2026-08-25_elevenlabs_elevenlabs-cli-v1.md
   - raw/articles/2026-06-26_elevenlabs_real-time-speech-to-text-under-200ms.md
+  - raw/articles/2026-10-30_elevenlabs_internal-ops-agents.md
+  - raw/articles/2026-10-30_elevenlabs_what-is-turn-taking.md
 ---
 
 # ElevenLabs
@@ -500,6 +502,37 @@ ElevenLabs published an educational guide on **speaker diarization** (Aug 2026) 
 The guide extends the STT/transcription coverage in this page (Scribe v2, Fyxer case study, in-stream diarization) with an explicit taxonomy of the diarization stack and its evaluation.
 
 Source: raw/articles/2026-08-26_elevenlabs_what-is-speaker-diarization.md
+
+## Internal ElevenAgents: 1,200 hours/month saved + dogfooding lessons (October 2026)
+
+ElevenLabs published its own internal-agent usage numbers (Jake Tennant, Product & Growth, 2026-10-29) — the self-hosted datapoint for [[concepts/enterprise-ai-operating-model]] adoption metrics:
+
+- **>1,200 hours/month saved** across the company; **>5,000 questions answered/month**; agents also *act*: dozens of custom customer demos built, **150+ Linear tickets opened in the last month** (support↔engineering triage that used to be manual).
+- Fleet: a **GTM bot** (customer questions), an **FDE bot** (product questions + builds a working prospect-configured demo agent directly from a Slack message), a **triage bot** (searches Slack for context → dedupes against existing tickets → opens a priority-correct Linear ticket routed via an uploaded ownership document, with separate Procedures per issue type), and data-analysis agents in domain channels.
+- Trajectory matches the [[concepts/enterprise-ai-scaling-patterns]] pattern: Slack information retrieval → agents that take actions.
+
+**Four operational lessons** (the transferable part, generalizable to any tool-using agent):
+
+1. **Schema curation beats prompt engineering** — biggest answer-quality gains came from *removing* fields from retrieval schemas; every extra column is one more place for the model to guess wrong. Cutting to critical fields beat any prompt change tried.
+2. **Picklist typings** — for Salesforce-style constrained fields (deal stage, account type), fetch valid values at startup and inject them into the **MCP tool's type definitions**, so the model can only choose real options (kills plausible-but-nonexistent values).
+3. **Prune procedures** — over time procedures overlap; ElevenAgents' Architect restructures them so each has clear entry conditions and no conflicting logic.
+4. **Task verification** — after creating a ticket, the agent verifies fields and team routing; curbed hallucinated/mis-routed tickets.
+
+Reliability framing: internal agents must be accurate from day one or teams stop trusting them; shared channels make mistakes *and* successes visible, which helped adoption.
+
+**Source:** [[raw/articles/2026-10-30_elevenlabs_internal-ops-agents]]
+
+## Turn-taking guide: semantic VAD vs raw VAD (October 2026)
+
+A user-guide post formalizing ElevenLabs' turn-taking taxonomy for [[concepts/speech-audio-asr-tts-voice]] conversational agents:
+
+- **Three-point decision layer**: reply/engage, **hold the floor** (keep speaking, signaling unfinished speech across pauses), listen/be silent — with worked customer-service transcripts for each.
+- **Semantic VAD** named explicitly: systems that combine voice activity detection with language understanding to judge whether a speaker is finished — evaluating **tone, rhythm, and word context continuously instead of strict silence timers**. Sharp distinction drawn: raw VAD is binary speech/silence classification; turn-taking adds semantic context, intent, and prosody. (Extends the diarization-taxonomy work on this page; consistent with the October 2026 "speculative turn-taking" entry above.)
+- Engineering metrics named for conversational flow: **response latency and interruption rates**.
+
+Positioned as vendor documentation of the design space rather than new research, but it is the clearest published articulation of the semantic-VAD-vs-VAD boundary as ElevenLabs implements it in ElevenAgents.
+
+**Source:** [[raw/articles/2026-10-30_elevenlabs_what-is-turn-taking]]
 
 ---
 

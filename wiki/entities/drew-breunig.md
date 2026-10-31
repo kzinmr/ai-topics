@@ -2,7 +2,7 @@
 title: Drew Breunig
 type: entity
 created: 2026-04-10
-updated: 2026-10-19
+updated: 2026-10-31
 source: blog
 tags:
   - person
@@ -130,6 +130,16 @@ He noted the metaphor "came up several times this week, and I'm liking it more a
 ### Prompt-Based Model Routing with DSPy + Jev (Oct 2026)
 
 On 2026-10-03 Breunig sketched (in ~15 min, "by request") a working **model router** in DSPy 3.4 + Jev: a model describes a prompt through typed answer spaces (`TaskKind = Choice[...]`, `Depth = Score[...]`, `Noul` yes/no judgments) while *code* picks the model via explicit weights/thresholds in `route()`. He reported being "surprised at how well it works" ([X](https://x.com/dbreunig/status/2106456056042025235), [gist](https://gist.github.com/dbreunig/949b42c7202508881d7c5a64ccd0fb9b)). Documented as [[concepts/model-routing]] — a concrete instance of his "separate task from model" DSPy philosophy and a lightweight defense against prompt debt.
+
+### NESformer — a 6502 emulator inside Qwen3.5-4B weights (Oct 30, 2026)
+
+Inspired by Divyansh Agrawal's qwenputer, Breunig compiled a **working Nintendo Entertainment System 6502 CPU emulator into the weights of Qwen3.5-4B** (`dbreunig/nesformer`), so NES ROMs including Super Mario Bros run inside the model's forward passes (very slowly). Simon Willison link-blogged it the same day.
+
+The post's value beyond the demo is Breunig's disclosure habit: on Hacker News he published **the two Opus 5.5 prompts that built the system** — a research prompt (read the qwenputer writeup and source, then explore whether the same technique can emulate an NES chip + RAM "as people do today with FPGAs in MISTRs", what model size is required, and whether a smaller/faster model could hit standard clock speed) followed by a go prompt ("I think we should build it! Just for fun. It's okay if it's not fast. We want to be able to have the weights, and a cli to run them that we can point at a ROM"). Opus then independently located and used **Christopher Pow's 15-year-old NES 6502 conformance-test suite** as its correctness oracle — a clean example of an old deterministic test corpus serving as ground truth for an agent-built system.
+
+Read alongside his "separate task from model" DSPy stance and his prompt-debt work, this is the far end of the same instinct: treat the weights as an implementable substrate rather than an opaque service. See [[concepts/weight-compiled-computers]].
+
+Source: [[raw/articles/simonwillison.net--2026-oct-30-nesformer--e5229641]]
 
 ### The 3 AI Use Cases: Gods, Interns, and Cogs
 
