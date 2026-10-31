@@ -37,7 +37,13 @@ def fetch(url):
 
 ## Batch wiki-update script skeleton
 
-One idempotent script does: SCHEMA tag patch -> raw save (frontmatter with `sha256: PLACEHOLDER`, then recompute over `raw.split('---\n', 2)[2]`) -> new pages (guarded by `if not os.path.exists`) -> existing-page section appends (guarded by `if 'Section Title' not in s`, anchored on unique `## Heading`) -> index inserts (anchor on the exact `[[concepts/foo]]` line or `re.search(r'- \[\[concepts/foo\]\][^\n]*\n', s)`) -> log prepend with H1 dedupe (`ln.strip() == '# Wiki Log'`, keep first only). Print an action log per step so a post-compaction re-run shows what was skipped vs applied.
+One idempotent script does: SCHEMA tag patch -> raw save (frontmatter with `sha256: PLACEHOLDER`, then recompute over `raw.split('---\n', 2)[2]`) -> new pages (guarded by `if not os.path.exists`) -> existing-page section appends (guarded by `if 'Section Title' not in s`, anchored on unique `## Heading`) -> index inserts (anchor on the exact `[[concepts/foo]]` line or `re.search(r'- \[\[concepts/foo\]\][^\n]*\n', s)`) -> log prepend with H1 dedupe (`ln.strip() == '# Wiki Log'`, keep first only). Print an action log per step so a post-compaction re-run shows what was skipped vs applied. **Full copy-pasteable version with all six stages + scoped git add: `references/batch-wiki-update-skeleton.md`.**
+
+## Per-domain fetch status notes (cumulative)
+
+- 403 to Chrome-UA urllib: `doublepulsar.com` (2026-10-30), `openai.com/index/*`, `religionnews.com`, `data.stackexchange.com`, Reddit JSON. Substitute: cite the vendor primary + a corroborating secondary, and state 本文未取得 in report/page.
+- 200 but nav-heavy (>2.5k chars of menu chrome before body): mistral.ai, cohere.com, deepmind.google, research.google, skypilot.ai, trakkr.ai, claude.com, phorion.io — always marker-slice from the article's opening sentence (visible in the HN/search snippet), end via `rfind`.
+- `research.google` blog specifically: the header menu repeats twice (~first 3,300 chars), the article starts after the second "Blog About" block — find the body's first sentence, not the title.
 
 ## Tag-synonym pre-check (saves one blocked commit)
 

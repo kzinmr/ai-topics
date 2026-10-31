@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_flat_pages": 1630,
+    "total_flat_pages": 1661,
     "existing_subdirs": [
       "ai-benchmarks",
       "ai-organization",
@@ -22,7 +22,6 @@
       "openai",
       "openclaw",
       "post-training",
-      "red",
       "sandbox",
       "security-and-governance",
       "speech",
@@ -30,7 +29,7 @@
       "training",
       "training-infra"
     ],
-    "existing_subdir_count": 27
+    "existing_subdir_count": 26
   },
   "prefix_clusters": [
     {
@@ -92,6 +91,7 @@
         "llm-assisted-learning",
         "llm-assisted-writing",
         "llm-augmented-knowledge-retrieval",
+        "llm-citation-seeding",
         "llm-code-quality",
         "llm-confidence-calibration",
         "llm-core",
@@ -112,6 +112,7 @@
         "llm-parameter-counts",
         "llm-patterns-eugene-yan",
         "llm-policies-open-source",
+        "llm-price-collapse-2026",
         "llm-security",
         "llm-steering",
         "llm-text-detection-classical-ml",
@@ -120,7 +121,7 @@
         "llm-training-fundamentals",
         "llm-understanding"
       ],
-      "count": 32
+      "count": 34
     },
     {
       "type": "prefix",
@@ -178,6 +179,7 @@
       "type": "prefix",
       "prefix": "model",
       "members": [
+        "model-collapse-of-viewpoints",
         "model-context-protocol-mcp",
         "model-distillation",
         "model-hardware-standard",
@@ -191,7 +193,7 @@
         "model-training-as-code",
         "model-welfare"
       ],
-      "count": 12
+      "count": 13
     },
     {
       "type": "prefix",
@@ -232,6 +234,23 @@
     },
     {
       "type": "prefix",
+      "prefix": "code",
+      "members": [
+        "code-as-graph",
+        "code-as-process",
+        "code-cleanliness-coding-agents",
+        "code-execution-model",
+        "code-execution-with-mcp",
+        "code-intelligence-for-llms",
+        "code-mode",
+        "code-review",
+        "code-review-bottleneck",
+        "code-search-indexing"
+      ],
+      "count": 10
+    },
+    {
+      "type": "prefix",
       "prefix": "agents",
       "members": [
         "agents-architecture-scaffolding",
@@ -243,22 +262,6 @@
         "agents-scaffolding-composition-inference-scaling-hypothesis",
         "agents-self-improvement-learning",
         "agents-that-build-themselves"
-      ],
-      "count": 9
-    },
-    {
-      "type": "prefix",
-      "prefix": "code",
-      "members": [
-        "code-as-graph",
-        "code-as-process",
-        "code-cleanliness-coding-agents",
-        "code-execution-with-mcp",
-        "code-intelligence-for-llms",
-        "code-mode",
-        "code-review",
-        "code-review-bottleneck",
-        "code-search-indexing"
       ],
       "count": 9
     },
@@ -280,6 +283,22 @@
     },
     {
       "type": "prefix",
+      "prefix": "nvidia",
+      "members": [
+        "nvidia-45c-data-center-cooling",
+        "nvidia-ai-q",
+        "nvidia-blackwell-architecture",
+        "nvidia-dynamo",
+        "nvidia-egpu-macos",
+        "nvidia-egpu-on-macos",
+        "nvidia-openshell",
+        "nvidia-rtx-ai-garage",
+        "nvidia-vera-rubin"
+      ],
+      "count": 9
+    },
+    {
+      "type": "prefix",
       "prefix": "prompt",
       "members": [
         "prompt-caching",
@@ -293,6 +312,21 @@
         "prompt-optimizers-unscored-requirements"
       ],
       "count": 9
+    },
+    {
+      "type": "prefix",
+      "prefix": "cognitive",
+      "members": [
+        "cognitive-cost-of-agents",
+        "cognitive-debt",
+        "cognitive-load-patterns",
+        "cognitive-load-software-development",
+        "cognitive-load-theory",
+        "cognitive-load-tool-support",
+        "cognitive-mercantilism",
+        "cognitive-surrender"
+      ],
+      "count": 8
     },
     {
       "type": "prefix",
@@ -311,21 +345,6 @@
     },
     {
       "type": "prefix",
-      "prefix": "nvidia",
-      "members": [
-        "nvidia-45c-data-center-cooling",
-        "nvidia-ai-q",
-        "nvidia-blackwell-architecture",
-        "nvidia-dynamo",
-        "nvidia-egpu-macos",
-        "nvidia-egpu-on-macos",
-        "nvidia-rtx-ai-garage",
-        "nvidia-vera-rubin"
-      ],
-      "count": 8
-    },
-    {
-      "type": "prefix",
       "prefix": "reasoning",
       "members": [
         "reasoning-aware-retrieval",
@@ -338,20 +357,6 @@
         "reasoning-trace-extraction-vulnerability"
       ],
       "count": 8
-    },
-    {
-      "type": "prefix",
-      "prefix": "claude",
-      "members": [
-        "claude-certified-architect-domains",
-        "claude-design",
-        "claude-fable-jacobian-conjecture",
-        "claude-memory-heist",
-        "claude-science",
-        "claude-system-prompts",
-        "claude-tag"
-      ],
-      "count": 7
     }
   ],
   "tag_clusters": [
@@ -428,10 +433,12 @@
         "alpha-proof-nexus",
         "alphaevolve",
         "ambient-agents",
+        "anthropic-drug-development-program",
         "apache-burr-agent-framework",
         "aria-advisor-consultation-agents",
         "artificial-contributors-open-source",
         "ask-user-question-pattern",
+        "attack-surface-reduction-llm",
         "attention-bottleneck",
         "auto-research",
         "autodata-agentic-data-creation",
@@ -444,6 +451,7 @@
         "bayesian-agent-orchestration",
         "bitter-lesson-agent-harnesses",
         "bitter-lesson-harnessing",
+        "brooks-law-ai-agents",
         "browser-use-production-architecture",
         "build-the-thing-meta-development",
         "building-effective-agents",
@@ -456,6 +464,7 @@
         "cmu-llms-methods-applications",
         "coalitional-agency",
         "code-as-graph",
+        "code-execution-model",
         "coding-agent-harness-design-study",
         "cognitive-cost-of-agents",
         "company-world-models",
@@ -466,6 +475,7 @@
         "contextmaxxing",
         "continual-harness",
         "continual-learning",
+        "cpu-cache-covert-channels-between-agents",
         "craft-agents",
         "crewai",
         "data-analysis-agents",
@@ -580,7 +590,9 @@
         "multi-agent-session-observability",
         "multi-channel-agents",
         "newsjack",
+        "nvidia-openshell",
         "nvidia-rtx-ai-garage",
+        "omnara",
         "ontrack-streaming-trajectory-monitoring",
         "openclaw-architecture",
         "openclaw-ecosystem",
@@ -685,7 +697,7 @@
         "x-agentred-multi-service-red-teaming",
         "yellow-brick-road-ai-app-layer"
       ],
-      "count": 325
+      "count": 332
     },
     {
       "type": "tag",
@@ -723,6 +735,7 @@
         "bonsai-27b",
         "china-agentic-coding-sprint",
         "claude-fable-jacobian-conjecture",
+        "code-execution-model",
         "cognitive-cost-of-agents",
         "colbert",
         "constitutional-ai",
@@ -818,6 +831,7 @@
         "minimax-m3",
         "minimax-m3-1-flash",
         "minimax-sparse-attention",
+        "mistral-large-4",
         "mistral-medium-3-5",
         "mistral-ocr-4",
         "mistral-robostral-navigate",
@@ -885,6 +899,7 @@
         "structured-outputs",
         "synthid",
         "system-one-models",
+        "thinkingcap",
         "thomson-reuters-frontier-model",
         "transformer-architecture",
         "translategemma",
@@ -900,7 +915,7 @@
         "zaya1-8b",
         "zaya1-vl-8b"
       ],
-      "count": 208
+      "count": 211
     },
     {
       "type": "tag",
@@ -1028,6 +1043,7 @@
         "okf-open-knowledge-format",
         "openai-daybreak",
         "openwiki",
+        "oracle-model-routing",
         "ornith-self-scaffolding-llm",
         "pgr",
         "plan-and-patch-dllm-agentic-planning",
@@ -1061,6 +1077,7 @@
         "skill-co-installation-conflict",
         "software-after-software",
         "spacex-cursor-acquisition",
+        "swe-agent",
         "symphony",
         "unreal-agent",
         "vibe-coding-vs-agentic-engineering",
@@ -1069,7 +1086,7 @@
         "why-harness-development-boom",
         "wish-factory"
       ],
-      "count": 162
+      "count": 164
     },
     {
       "type": "tag",
@@ -1162,9 +1179,11 @@
         "mark-zuckerberg",
         "mathcode",
         "mcporter",
+        "micrograd",
         "microsoft-agent-governance-toolkit",
         "minimax-m2-7",
         "mismeasure-of-open-source",
+        "mistral-large-4",
         "mistral-medium-3-5",
         "ml-intern",
         "model-hardware-standard",
@@ -1172,12 +1191,15 @@
         "mu-tools-for-agents",
         "multi-token-prediction",
         "munder-difflin",
+        "nanogpt",
         "nemotron-3-ultra",
         "nemotron-labs-diffusion",
         "newsjack",
         "nvidia-ai-q",
+        "nvidia-openshell",
         "okf-open-knowledge-format",
         "ollama",
+        "omnara",
         "open-model-consortium",
         "open-source-ai",
         "open-source-ai-destruction",
@@ -1193,6 +1215,7 @@
         "openwiki",
         "ornith-self-scaffolding-llm",
         "peoplereadmes",
+        "per-request-ai-carbon",
         "polars",
         "polars-hf",
         "prime-agent",
@@ -1217,6 +1240,8 @@
         "snowflake-arctic-rl",
         "soofi-s",
         "state-of-open-source-ai-2026",
+        "swe-agent",
+        "thinkingcap",
         "thunderagent",
         "torchtpu",
         "unsloth",
@@ -1232,7 +1257,7 @@
         "zaya1-vl-8b",
         "zig"
       ],
-      "count": 156
+      "count": 164
     },
     {
       "type": "tag",
@@ -1256,6 +1281,7 @@
         "capability-based-security",
         "cerebras-cs4",
         "cloudflare-llm-infrastructure",
+        "code-execution-model",
         "cognitive-cost-of-agents",
         "constrained-decoding",
         "cpu-inference-llm",
@@ -1296,6 +1322,7 @@
         "inference",
         "inference-engine-security",
         "inference-provisioned-throughput",
+        "inference-time-compute",
         "kimi-k2-7-code",
         "knowledge-storage-spectrum",
         "kv-aware-routing",
@@ -1366,8 +1393,10 @@
         "subquadratic-attention",
         "synthid",
         "tensorrt-llm",
+        "test-time-compute",
         "test-time-interaction-scaling",
         "test-time-scaling",
+        "thinkingcap",
         "thunderagent",
         "together-ai-icml-2026",
         "together-dci",
@@ -1385,7 +1414,7 @@
         "warm-start-optimization",
         "zaya1-8b"
       ],
-      "count": 146
+      "count": 150
     },
     {
       "type": "tag",
@@ -1445,6 +1474,7 @@
         "hornet",
         "hqq",
         "inference-provisioned-throughput",
+        "inference-time-compute",
         "kernel-evolve",
         "kv-aware-routing",
         "kv-cache",
@@ -1526,7 +1556,7 @@
         "warm-start-optimization",
         "wayfinder-router"
       ],
-      "count": 134
+      "count": 135
     },
     {
       "type": "tag",
@@ -1706,6 +1736,7 @@
         "deepspec-dspark",
         "deepspeed",
         "delphi-scaling-laws",
+        "dessa-speech-only-model",
         "dial-metaopd-token-selection-opd",
         "diffusionblocks",
         "dspy",
@@ -1717,6 +1748,7 @@
         "flash-attention-4",
         "flashattention-pytorch-educational",
         "frontier-lab-job-preparation",
+        "frontier-training-environment-security",
         "fsdp-qlora",
         "functional-emotions-llms",
         "gpu-cluster-tco-goodput",
@@ -1786,6 +1818,7 @@
         "synthetic-research-interns",
         "test-time-scaling",
         "text-optimization",
+        "thinkingcap",
         "time-incremental-continued-pretraining",
         "training-divergence-reproducibility",
         "trajectory-post-training-platform",
@@ -1793,7 +1826,7 @@
         "vibethinker",
         "zaya1-8b"
       ],
-      "count": 125
+      "count": 128
     },
     {
       "type": "tag",
@@ -1813,6 +1846,7 @@
         "ai-gateway",
         "ai-infrastructure-circular-financing",
         "ai-memory-crisis",
+        "ai-native-demand-indicators",
         "ai-observability",
         "ai-operating-model",
         "apache-burr-agent-framework",
@@ -1848,6 +1882,7 @@
         "federated-tiny-training-engine",
         "firecracker",
         "formal-verification-llm-agents",
+        "frontier-training-environment-security",
         "google-spacex-ai-compute-deal",
         "gpu-cloud-rankings",
         "gpu-cluster-tco-goodput",
@@ -1869,6 +1904,7 @@
         "meta-capacity-efficiency-agents",
         "microsoft-agent-governance-toolkit",
         "mindwalk",
+        "mistral-large-4",
         "mistral-vibe-remote-agents",
         "modal-sandboxes",
         "modal-vm-sandboxes",
@@ -1877,8 +1913,10 @@
         "multipath-reliable-connection",
         "nvidia-45c-data-center-cooling",
         "nvidia-blackwell-architecture",
+        "nvidia-openshell",
         "nvidia-vera-rubin",
         "object-storage-queue",
+        "omnara",
         "openai-jalapeno-inference-chip",
         "pretraining-parallelisms",
         "probabilistic-engineering",
@@ -1920,7 +1958,7 @@
         "xai-anthropic-colossus-deal",
         "zero-disk-architecture"
       ],
-      "count": 120
+      "count": 125
     },
     {
       "type": "tag",
@@ -1974,6 +2012,7 @@
         "codex-logging-bug",
         "comprehensive-ai-services",
         "constitutional-ai",
+        "cpu-cache-covert-channels-between-agents",
         "cryptographic-capability-concealment",
         "cve-2026-55607-claude-code-sandbox-escape",
         "cyber-frontier-models",
@@ -2043,7 +2082,7 @@
         "zero-trust-agentic-ai",
         "zombie-internet"
       ],
-      "count": 116
+      "count": 117
     },
     {
       "type": "tag",
@@ -2188,6 +2227,7 @@
         "anti-sycophancy",
         "autoresearch-bm25-msmarco",
         "benchmark-ceiling",
+        "benchmarking-crisis",
         "benchpress",
         "beneficial-rl",
         "budget-constrained-prm-evaluation",
@@ -2209,6 +2249,7 @@
         "information-retrieval",
         "intent-based-engineering",
         "inverted-stack-trace-native-engineering",
+        "jagged-frontier",
         "llm-confidence-calibration",
         "llm-development-paradigm",
         "llm-evaluation",
@@ -2218,6 +2259,7 @@
         "long-running-search-agents",
         "machine-studying",
         "mismeasure-of-open-source",
+        "model-collapse-of-viewpoints",
         "modernization-evaluation-corpus",
         "moe-training-noumena-methodology",
         "mteb",
@@ -2248,6 +2290,7 @@
         "skillopt",
         "sparse-signal-loop",
         "spine-swarm-agents",
+        "swe-agent",
         "swe-deceptionbench",
         "synthetic-research-interns",
         "system-one-models",
@@ -2256,10 +2299,11 @@
         "tool-use-tax",
         "training-divergence-reproducibility",
         "trusted-access-biodefense",
+        "two-stage-confidence-caliber",
         "voice-agent-evaluation",
         "writing-tools-for-agents"
       ],
-      "count": 89
+      "count": 94
     },
     {
       "type": "tag",
@@ -2277,6 +2321,7 @@
         "attention-mechanism-variants",
         "autodata-agentic-data-creation",
         "autoresearch-bm25-msmarco",
+        "benchmarking-crisis",
         "benchpress",
         "bitter-lesson-harnessing",
         "brain2qwerty",
@@ -2349,7 +2394,7 @@
         "world-id-4-agentkit",
         "zero-trust-agentic-ai"
       ],
-      "count": 83
+      "count": 84
     },
     {
       "type": "tag",
@@ -2365,6 +2410,7 @@
         "apple-speechanalyzer",
         "attractor-models",
         "benchmark-ceiling",
+        "benchmarking-crisis",
         "benchpress",
         "bonsai-27b",
         "budget-constrained-prm-evaluation",
@@ -2415,6 +2461,7 @@
         "open-vs-closed-model-gap",
         "open-weight-vs-closed-llm-gap",
         "openrouter-state-of-ai-2025",
+        "oracle-model-routing",
         "overact-proactive-over-authorization",
         "parametric-factuality-recall-bottleneck",
         "quantifying-infrastructure-noise-in-agentic-coding-evals",
@@ -2428,6 +2475,7 @@
         "schedulefree-plus",
         "self-harness",
         "soofi-s",
+        "specialist-model-superiority",
         "spine-swarm-agents",
         "timestral",
         "undobench-agent-recovery-capability",
@@ -2436,7 +2484,7 @@
         "vq-bench",
         "z-ai-ox-alpha"
       ],
-      "count": 80
+      "count": 83
     },
     {
       "type": "tag",
@@ -2467,10 +2515,12 @@
         "ai-vulnerability-discovery",
         "anthropic-cybersecurity-eval-incidents",
         "artifact-provenance-gates",
+        "attack-surface-reduction-llm",
         "autonomous-agent-marketplace-stack",
         "autonomous-security-agents",
         "axe-framework",
         "capability-based-security",
+        "cpu-cache-covert-channels-between-agents",
         "cryptography-patterns",
         "cve-2026-55607-claude-code-sandbox-escape",
         "cyber-frontier-models",
@@ -2484,6 +2534,7 @@
         "docker-sandbox-microvm-api",
         "enterprise-coding-agent-security",
         "excessive-agency",
+        "frontier-training-environment-security",
         "homomorphic-encryption-ai",
         "inference-engine-security",
         "llm-generated-vulnerability-reports",
@@ -2497,16 +2548,19 @@
         "mozilla-firefox-ai-hardening",
         "multi-channel-agents",
         "munder-difflin",
+        "nvidia-openshell",
         "open-secure-ai-alliance",
         "openai-daybreak",
         "openclaw-architecture",
         "pentagon-ai-contracts-2026",
+        "persona-conditioned-security-degradation",
         "privacy-preserving-computing",
         "project-lightwell",
         "prompt-injection",
         "reasoning-trace-extraction-vulnerability",
         "reverse-engineering",
         "self-replicating-llm",
+        "sglang-cross-request-kv-cache-exposure",
         "shadow-ai-governance",
         "skill-constellations-github-supply-chain",
         "software-supply-chain-security",
@@ -2519,7 +2573,7 @@
         "world-id-4-agentkit",
         "zero-trust-agentic-ai"
       ],
-      "count": 76
+      "count": 82
     }
   ],
   "link_clusters": [
@@ -2528,21 +2582,25 @@
       "seed": "_index",
       "members": [
         "_index",
-        "gm8xx8-gm8xx8-ai-paper-curator",
-        "ink-switch",
-        "uk-government-digital-service"
+        "anti-patterns",
+        "chip-huyen-chipro",
+        "cpu-inference-llm",
+        "inference",
+        "inference-hardware",
+        "llama-cpp",
+        "mlx"
       ],
-      "count": 4
+      "count": 8
     },
     {
       "type": "link-cluster",
       "seed": "harness-engineering",
       "members": [
-        "ai-slop-productivity-paradox",
-        "gnu-ai-reimplementations",
+        "coala",
+        "graph-engineering",
         "harness-engineering",
-        "llms-eroding-software-careers",
-        "rich-suttons-bitter-lesson"
+        "langgraph",
+        "ungrounded-meaning"
       ],
       "count": 5
     },
@@ -2550,34 +2608,61 @@
       "type": "link-cluster",
       "seed": "agentic-engineering",
       "members": [
-        "agent-communication-standards",
+        "agent-experience",
         "agentic-engineering",
-        "agentic-engineering-patterns",
-        "datasette-llm",
-        "llm-course-roadmap"
+        "formal-logic-foundation",
+        "saas-disruption"
       ],
-      "count": 5
+      "count": 4
     },
     {
       "type": "link-cluster",
       "seed": "token-economics",
       "members": [
-        "github-copilot-billing",
-        "knowledge-storage-spectrum",
-        "mercury-3-diffusion-llm",
+        "architect-loop",
+        "elo-per-token-analysis",
+        "github-models",
+        "test-time-compute",
         "token-economics",
-        "transformer-architecture"
+        "unreal-agent"
       ],
-      "count": 5
+      "count": 6
     },
     {
       "type": "link-cluster",
       "seed": "mcp",
       "members": [
-        "craft-agents",
+        "cline",
         "mcp",
         "mcp-enterprise-oauth",
-        "palantir-ai-fde"
+        "mcp-protocol",
+        "mu-tools-for-agents"
+      ],
+      "count": 5
+    },
+    {
+      "type": "link-cluster",
+      "seed": "mixture-of-experts",
+      "members": [
+        "deepseek-v3",
+        "deepseek-v3-2",
+        "deepseek-v4",
+        "llm-inference",
+        "mixture-of-experts",
+        "moe-train-inference-mismatch",
+        "zaya1-74b-preview",
+        "zaya1-vl-8b"
+      ],
+      "count": 8
+    },
+    {
+      "type": "link-cluster",
+      "seed": "llm-course-roadmap",
+      "members": [
+        "genai-handbook",
+        "learning-llms-in-2025",
+        "llm-course-roadmap",
+        "stanford-cs336-language-modeling-from-scratch"
       ],
       "count": 4
     },
@@ -2585,47 +2670,23 @@
       "type": "link-cluster",
       "seed": "vibe-coding",
       "members": [
-        "agent-productivity",
-        "ai-coding-workflows",
-        "cognitive-debt",
-        "cognitive-surrender",
-        "llm-assisted-writing",
-        "simulacrum-of-knowledge-work",
+        "agent-generated-software",
+        "modest-success-software-boom",
+        "personal-superintelligence",
+        "vibe-building-workflow",
         "vibe-coding"
       ],
-      "count": 7
+      "count": 5
     },
     {
       "type": "link-cluster",
-      "seed": "mixture-of-experts",
+      "seed": "agentic-search",
       "members": [
-        "heterogeneous-intelligence",
-        "llm-inference",
-        "mixture-of-experts",
-        "rio-3.5-open-397b"
-      ],
-      "count": 4
-    },
-    {
-      "type": "link-cluster",
-      "seed": "speculative-decoding",
-      "members": [
-        "dflash",
-        "gemma-family",
-        "speculative-decoding",
-        "together-ai-icml-2026"
-      ],
-      "count": 4
-    },
-    {
-      "type": "link-cluster",
-      "seed": "inference",
-      "members": [
-        "deepseek-v4",
-        "deepseek-v4-serving",
-        "inference",
-        "probe-and-prefill",
-        "sitecove-ship"
+        "agentic-search",
+        "spade-self-play-environments",
+        "tool-search-tool",
+        "tool-use-examples",
+        "vector-databases"
       ],
       "count": 5
     },
@@ -2633,10 +2694,10 @@
       "type": "link-cluster",
       "seed": "agent-skills",
       "members": [
+        "agent-plugins-1-0-0",
         "agent-skills",
-        "effective-harnesses-for-long-running-agents",
-        "peoplereadmes",
-        "writing-tools-for-agents"
+        "anthropic-drug-development-program",
+        "axe-framework"
       ],
       "count": 4
     }
@@ -2696,13 +2757,14 @@
     {
       "action": "create_subdir",
       "proposed_dir": "llm",
-      "reason": "Common prefix 'llm' (32 pages)",
+      "reason": "Common prefix 'llm' (34 pages)",
       "members": [
         "llm-architecture-complexity",
         "llm-assisted-development",
         "llm-assisted-learning",
         "llm-assisted-writing",
         "llm-augmented-knowledge-retrieval",
+        "llm-citation-seeding",
         "llm-code-quality",
         "llm-confidence-calibration",
         "llm-core",
@@ -2723,6 +2785,7 @@
         "llm-parameter-counts",
         "llm-patterns-eugene-yan",
         "llm-policies-open-source",
+        "llm-price-collapse-2026",
         "llm-security",
         "llm-steering",
         "llm-text-detection-classical-ml",
@@ -2790,8 +2853,9 @@
     {
       "action": "create_subdir",
       "proposed_dir": "model",
-      "reason": "Common prefix 'model' (12 pages)",
+      "reason": "Common prefix 'model' (13 pages)",
       "members": [
+        "model-collapse-of-viewpoints",
         "model-context-protocol-mcp",
         "model-distillation",
         "model-hardware-standard",
@@ -2848,6 +2912,24 @@
     },
     {
       "action": "create_subdir",
+      "proposed_dir": "code",
+      "reason": "Common prefix 'code' (10 pages)",
+      "members": [
+        "code-as-graph",
+        "code-as-process",
+        "code-cleanliness-coding-agents",
+        "code-execution-model",
+        "code-execution-with-mcp",
+        "code-intelligence-for-llms",
+        "code-mode",
+        "code-review",
+        "code-review-bottleneck",
+        "code-search-indexing"
+      ],
+      "priority": "high"
+    },
+    {
+      "action": "create_subdir",
       "proposed_dir": "agents",
       "reason": "Common prefix 'agents' (9 pages)",
       "members": [
@@ -2860,23 +2942,6 @@
         "agents-scaffolding-composition-inference-scaling-hypothesis",
         "agents-self-improvement-learning",
         "agents-that-build-themselves"
-      ],
-      "priority": "high"
-    },
-    {
-      "action": "create_subdir",
-      "proposed_dir": "code",
-      "reason": "Common prefix 'code' (9 pages)",
-      "members": [
-        "code-as-graph",
-        "code-as-process",
-        "code-cleanliness-coding-agents",
-        "code-execution-with-mcp",
-        "code-intelligence-for-llms",
-        "code-mode",
-        "code-review",
-        "code-review-bottleneck",
-        "code-search-indexing"
       ],
       "priority": "high"
     },
@@ -2900,7 +2965,7 @@
     {
       "action": "create_subdir",
       "proposed_dir": "ai-agents",
-      "reason": "Shared tag 'ai-agents' (271 pages)",
+      "reason": "Shared tag 'ai-agents' (277 pages)",
       "members": [
         "_index",
         "a2a-agent-protocol",
@@ -2925,10 +2990,12 @@
         "alpha-proof-nexus",
         "alphaevolve",
         "ambient-agents",
+        "anthropic-drug-development-program",
         "apache-burr-agent-framework",
         "aria-advisor-consultation-agents",
         "artificial-contributors-open-source",
         "ask-user-question-pattern",
+        "attack-surface-reduction-llm",
         "attention-bottleneck",
         "auto-research",
         "autodata-agentic-data-creation",
@@ -2941,6 +3008,7 @@
         "bayesian-agent-orchestration",
         "bitter-lesson-agent-harnesses",
         "bitter-lesson-harnessing",
+        "brooks-law-ai-agents",
         "browser-use-production-architecture",
         "build-the-thing-meta-development",
         "building-effective-agents",
@@ -2962,6 +3030,7 @@
         "contextmaxxing",
         "continual-harness",
         "continual-learning",
+        "cpu-cache-covert-channels-between-agents",
         "craft-agents",
         "crewai",
         "data-analysis-agents",
@@ -3069,7 +3138,9 @@
         "multi-agent-session-observability",
         "multi-channel-agents",
         "newsjack",
+        "nvidia-openshell",
         "nvidia-rtx-ai-garage",
+        "omnara",
         "ontrack-streaming-trajectory-monitoring",
         "openclaw-architecture",
         "openclaw-ecosystem",
@@ -3179,7 +3250,7 @@
     {
       "action": "create_subdir",
       "proposed_dir": "model",
-      "reason": "Shared tag 'model' (172 pages)",
+      "reason": "Shared tag 'model' (174 pages)",
       "members": [
         "abliteration",
         "activation-steering",
@@ -3289,6 +3360,7 @@
         "minimax-m3",
         "minimax-m3-1-flash",
         "minimax-sparse-attention",
+        "mistral-large-4",
         "mistral-medium-3-5",
         "mistral-ocr-4",
         "mistral-robostral-navigate",
@@ -3342,6 +3414,7 @@
         "structured-outputs",
         "synthid",
         "system-one-models",
+        "thinkingcap",
         "transformer-architecture",
         "translategemma",
         "triattention",
@@ -3359,7 +3432,7 @@
     {
       "action": "create_subdir",
       "proposed_dir": "coding-agents",
-      "reason": "Shared tag 'coding-agents' (58 pages)",
+      "reason": "Shared tag 'coding-agents' (60 pages)",
       "members": [
         "abliterated-model-backdoor",
         "adaptive-code-revision-attacks-pr-reviewers",
@@ -3403,6 +3476,7 @@
         "nextpad-ai-development",
         "okf-open-knowledge-format",
         "openwiki",
+        "oracle-model-routing",
         "pgr",
         "programmatic-tool-calling",
         "pxpipe-code-to-image-cost-reduction",
@@ -3416,6 +3490,7 @@
         "single-agent-ceiling",
         "skill-co-installation-conflict",
         "spacex-cursor-acquisition",
+        "swe-agent",
         "vibe-coding-vs-agentic-engineering",
         "vulnhunter-agentic-code-security",
         "warp-factories"
@@ -3425,7 +3500,7 @@
     {
       "action": "create_subdir",
       "proposed_dir": "open-source",
-      "reason": "Shared tag 'open-source' (48 pages)",
+      "reason": "Shared tag 'open-source' (51 pages)",
       "members": [
         "ai-code-provenance-in-open-source",
         "ai-supply-chain-security",
@@ -3452,13 +3527,16 @@
         "llvm",
         "mark-zuckerberg",
         "mcporter",
+        "micrograd",
         "microsoft-agent-governance-toolkit",
         "mismeasure-of-open-source",
         "mu-tools-for-agents",
         "multi-token-prediction",
         "munder-difflin",
+        "nanogpt",
         "nvidia-ai-q",
         "ollama",
+        "per-request-ai-carbon",
         "polars",
         "polars-hf",
         "project-lightwell",
@@ -3481,7 +3559,7 @@
     {
       "action": "create_subdir",
       "proposed_dir": "inference",
-      "reason": "Shared tag 'inference' (69 pages)",
+      "reason": "Shared tag 'inference' (71 pages)",
       "members": [
         "ai-compute-pricing-paradox",
         "ai-economics",
@@ -3510,6 +3588,7 @@
         "hqq",
         "inference",
         "inference-engine-security",
+        "inference-time-compute",
         "knowledge-storage-spectrum",
         "kv-aware-routing",
         "kv-cache",
@@ -3546,6 +3625,7 @@
         "structured-test-time-scaling",
         "subquadratic-attention",
         "tensorrt-llm",
+        "test-time-compute",
         "test-time-scaling",
         "together-dci",
         "token-economics",
@@ -3649,7 +3729,7 @@
     {
       "action": "create_subdir",
       "proposed_dir": "training",
-      "reason": "Shared tag 'training' (31 pages)",
+      "reason": "Shared tag 'training' (33 pages)",
       "members": [
         "aarri-bench",
         "ai-digital-nato",
@@ -3659,8 +3739,10 @@
         "critique-conditioned-self-distillation",
         "data-filtering-scaling-laws",
         "dataset-engineering",
+        "dessa-speech-only-model",
         "dial-metaopd-token-selection-opd",
         "fine-tuning",
+        "frontier-training-environment-security",
         "functional-emotions-llms",
         "gpu-cluster-tco-goodput",
         "hybrid-flow",
@@ -3688,12 +3770,13 @@
     {
       "action": "create_subdir",
       "proposed_dir": "infrastructure",
-      "reason": "Shared tag 'infrastructure' (26 pages)",
+      "reason": "Shared tag 'infrastructure' (27 pages)",
       "members": [
         "absurd-durable-execution",
         "active-observability",
         "ai-infrastructure-circular-financing",
         "ai-memory-crisis",
+        "ai-native-demand-indicators",
         "caisi-federal-ai-review",
         "chaos-engineering",
         "data-engineering",
@@ -3780,9 +3863,9 @@
       "proposed_dir": "_index",
       "reason": "Dense cross-link cluster around '_index' (3 pages)",
       "members": [
-        "gm8xx8-gm8xx8-ai-paper-curator",
-        "ink-switch",
-        "uk-government-digital-service"
+        "anti-patterns",
+        "chip-huyen-chipro",
+        "inference-hardware"
       ],
       "priority": "low"
     }

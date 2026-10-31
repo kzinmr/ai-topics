@@ -1,4 +1,4 @@
-# Weekly Wiki Graph Analysis — patterns & pitfalls (2026-08, updated 2026-10-23)
+# Weekly Wiki Graph Analysis — patterns & pitfalls (2026-08, updated 2026-10-30)
 
 Session learnings from running the `wiki-graph-analysis` weekly cron (Fri 15:00 UTC).
 
@@ -124,6 +124,19 @@ Counts are dominated by bulk-import `updated` dates (e.g. 2026-04-09/10), so >10
 - **Report's "1 tag violation" is an undercount**: a full SCHEMA-vs-frontmatter scan finds hundreds of page-slug self-tags (page `foo` tagged `foo`). Do NOT chase them in the weekly run — route to the `tag-audit-weekly` job.
 - **Index-gap ground truth is stably ~0 real**: the independent resolver's missing-on-disk hits are the deleted prior-week reports still linked from index.md. Fix = replace the entire run of dangling `[[queries/wiki-graph-analysis-weekly-*]]` lines in index.md with today's report + annotations entries in ONE patch (they're contiguous).
 - **Sibling-WIP check before any "not indexed" action** (2026-10-23: report said 22 unindexed concepts, all were blog/active-crawl pipeline dirty files): `git status --short -- wiki/ | wc -l` — if the pages are untracked/dirty sibling WIP, defer to that pipeline.
+
+6. **Generator bug backlog #1 makes the not-indexed count useless**: the report inflates it because `transcripts/` and `_meta` pages are OUT of index scope by design (2026-10-30: report said 29, loose-basename resolver found 60 incl. ~50 transcripts, real gap = 4). Always run your own resolver and exclude `transcripts/`, `_meta`, `SCHEMA`, `log*`. Real not-indexed hits are almost always pages a sibling pipeline created hours earlier — `git ls-files --error-unmatch <page>` to check tracked/untracked, defer to that pipeline.
+7. **Dangling redirect-pointer entries are real-but-intentional**: an index line like `[[concepts/harness-engineering-101]] — see [[concepts/harness-engineering/harness-engineering-101]]` points at a page that doesn't exist; the real page IS indexed elsewhere. Ground-truth resolver flags it — classify as "cleanup candidate, low priority", NOT "delete the entry" (the pointer has navigational value).
+8. **Missing-page queue = report's top broken targets MINUS nested-resolvable ones**: run `for s in <bases>; do find concepts entities comparisons events -name "*$s*"; done` first (2026-10-30: `agent-evaluation`→`concepts/evaluation/agent-evaluation-methodology`, `cursor`→`concepts/coding-agents/cursor-ide`, `bitter-lesson`→`concepts/rich-suttons-bitter-lesson` all resolved). Whatever survives with 8+ refs is the genuine creation queue (entities/cursor, entities/ben-clavie, entities/huggingface, concepts/enterprise-ai etc. as of 10-30). Also `[[concepts/ai-benchmarks/swe-bench\]]` with a stray backslash = malformed link syntax, mechanical fix not a missing page.
+
+## Pre-commit / tag gotchas for the annotations artifact (new 2026-10-30)
+
+- The **pre-commit tag validator blocks `tags: [wiki-maintenance]`** on your own annotations page (not in SCHEMA taxonomy) and aborts the whole batched wiki commit. Fixes that pass: `tags: [wiki]` (canonical, in SCHEMA's Domain Concepts) or `tags: []` (what the generator writes on the report itself). The weekly report + annotations are committed together, so ONE invalid tag on either file kills the commit — don't use `--no-verify` for this, fix the tag.
+- Verify before committing: `python3 config/hermes/skills/_overrides/wiki-graph-health/scripts/tag_audit.py` — prints "Tags NOT in taxonomy: 0" when clean. Run it whenever a commit dies on tag violations with no obvious culprit.
+
+## Skill-name collision: 'llm-wiki' (new 2026-10-30)
+
+Cron jobs referencing skill `llm-wiki` get "not found and skipped" — it's NOT missing, it's ambiguous: `~/.hermes/skills/research/llm-wiki/SKILL.md` and `~/ai-topics/config/hermes/skills/_overrides/llm-wiki/SKILL.md` both match, so `skill_view('llm-wiki')` refuses to guess. Workaround: `read_file('/opt/data/.hermes/skills/research/llm-wiki/SKILL.md')` directly. When reporting the skip to the user, note it's a collision not an absence. (Fix would be renaming or removing one copy — outside a weekly-analysis cron's mandate.)
 
 ## Report + commit workflow
 

@@ -397,6 +397,8 @@ LLM API pricing monitoring is handled as a specialized sub-mode of this skill. S
 | `references/cross-reference-2026-09-07.md` | Worked example from 2026-09-07: **index-registration recovery day**. Morning pipelines created `agi-declaration-controversy-2026` + `jakub-pachocki` pages but left them out of `wiki/index.md`; trending run registered them + committed report + 4 raw notes (commit-when-wiki-touched rule, scoped `git add`). Cloudflare-403 OpenAI essay → secondary-source raw note at `confidence: medium`; Japanese typo sweep before commit. |
 | `scripts/trending_db_query.py` | Combined 3a+3b keyword DB query (total, top blogs, 120 AI-relevant titles, unread health) — drop-in replacement for the hand-written /tmp query script, takes `days` arg (default 3, use 7 for weekly mode). |
 | `scripts/hn_calibrate.py` | HN Algolia targeted point-score queries for ★ calibration — urllib direct-fetch, search_by_date, `%3E`-encoded numericFilters, default query list + argv override. Verified cron-safe 2026-08-15. |
+| `scripts/hn_points_sweep.py` | **Weekend/second-pass discovery**: points-only Algolia sweep over the last N hours (`--hours 24 --min-points 150`, optional `--grep` title filter). On Sat/Sun runs the keyword pass misses policy/finance lead stories — verified 2026-10-31 where it yielded 6 of 8 topics. Run alongside hn_calibrate.py, dedup by objectID. |
+| `references/cross-reference-2026-10-31.md` | Worked example 2026-10-31 (Saturday): AI-finance/politics day with no active-crawl note — points-only sweep as the load-bearing query, HN comment-tree fallback for WSJ 401/Fortune 404/FT paywall, sibling-job-added tag hook failure (`emulation`), index header-count parity fix. |
 | `references/cross-reference-2026-08-15.md` | Worked example from 2026-08-15: **report-miss ≠ wiki-miss** (4 stories missed by 8/13 report but wiki-covered → still report as NEW topics); residual carryover verification by keyword grep not frontmatter date; 3rd recurrence of active-crawl-runs-without-note. |
 | `references/cross-reference-2026-08-17.md` | Worked example from 2026-08-17: **weekly digest mode**. Documents: fabricated-URL catch (arXiv ID placeholder replaced from raw frontmatter `paper_url:`), stats-block enumeration via `git log --diff-filter=A`, hermes-report-quality collision recurrence (non-blocking), skill bare-name ambiguity workaround (read_file either copy), T4 title selection rationale. |
 
@@ -405,7 +407,6 @@ LLM API pricing monitoring is handled as a specialized sub-mode of this skill. S
 ### 1. Skill Name Collision (Dual-Path)
 
 This skill exists in **two locations** with the same bare name `trending-topics-reporting`:
-- `~/.hermes/skills/research/trending-topics-reporting/` (default)
 - `~/ai-topics/config/hermes/skills/_overrides/trending-topics-reporting/` (repo override)
 
 When loading with bare name `skill_view(name='trending-topics-reporting')`, Hermes returns an ambiguous error. **Always use the categorized path**: `skill_view(name='research/trending-topics-reporting')`. If editing, patch both copies or ensure the `_overrides/` version (repo-canonical) stays current.

@@ -115,6 +115,8 @@ Two distinct sub-patterns:
 - **Categories**: `concepts/` prefix, `entities/` prefix, `comparisons/` prefix, `raw/` prefix, subdirectory paths like `harness-engineering/system-architecture/`
 - **Detection**: To find genuinely missing pages (not these prefixes), use the corrected scanner in [`references/broken-link-scanner-pitfalls.md`](references/broken-link-scanner-pitfalls.md). ⚠️ **Two pitfalls (2026-08-06)**: (1) build `existing` with `os.path.splitext(os.path.relpath(os.path.join(root, f), 'wiki'))[0]` — the naive `os.path.splitext(f)[0]` on os.walk paths keeps the `wiki/` prefix while slugs are `entities/foo`, making EVERY prefix-style link falsely report as missing (observed: 6,260 phantom refs / 0 REAL); (2) `[[concepts/post-training]]`-style dir links are VALID when `concepts/post-training/_index.md` exists — add `existing.add(rel.rsplit('/', 1)[0])` for `_index` files (confirmed dirs: post-training, coding-agents, multi-agents, security-and-governance, evaluation, harness-engineering, local-llm).
 
+See `references/index-marker-corruption-and-orphan-triage.md` (Pattern E: bare `[[` index lines falsely reported as orphans).
+
 ### 5. Pages Missing Frontmatter
 
 **Sub-pattern A: No frontmatter at all**
@@ -1100,7 +1102,6 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 - `scripts/tag_normalization_diff_scan.py` — classify dry-run: violations vs preference rewrites (ref 2026-08-10)
 - `scripts/tag_audit.py` — Tag analysis and auditing (canonical: `~/ai-topics/scripts/tag_audit.py`)
 - `scripts/validate_index.py` — Pre-commit validator for baked-in numbers, pipe prefixes, truncation artifacts in wiki/index.md. Run with `python3 scripts/validate_index.py`; exit 0 = clean, 1 = issues found. Called by `.githooks/pre-commit`. See Section H for recovery procedure.
-- `.githooks/pre-commit` — Git hook that runs `validate_index.py` on staged `wiki/index.md`. Activated via `git config core.hooksPath .githooks`. Tracked in-repo.
 - `references/wiki-health-script-optimization.md` wiki_health.py perf (0.28s) · `references/json-output-processing.md` · `references/raw-article-coverage-audit.md` · `references/bare-wikilink-batch-fix.md` scan→map→regex · `references/broken-wikilink-repair.md` · `references/index-corruption-recovery.md` · `references/index-corruption-variants.md` · `references/wiki-file-move.md` · `references/wiki-health-remediation.md` · `references/wiki-bulk-link-fix.md` · `references/wiki-wikilink-remediation.md` · `references/wiki-works-source-linking.md` · `references/wiki-entity-disambiguation.md` · `references/wiki-page-splitting.md` · `references/wiki-entity-dedup.md` · `references/watchdog-session-2026-10-22.md` — verified FIXMAP renames, WIP-snapshot `status: archived`, · `references/watchdog-session-2026-10-24.md` — no-frontmatter hot-post pages; run no-FM scan + recount when cleancode-block-stripped link scanner
 - `references/duplicate-log-entry-recovery.md` — Recovery from cascading execute_code log prepend producing 3+ identical entries
 - `references/entity-concept-cross-reference.md` — Entity/concept duplicate resolution: redirect stubs, cross-link comparable pairs (2026-05-08 session)
@@ -1112,9 +1113,8 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 - `references/tag-audit-session-2026-07-27.md` — scope expansion (`events/`,`queries/`), SCHEMA `[truncated]` corruption, inline one-off deletion, no-verify pass
 - `references/tag-audit-session-2026-08-03.md` — dry-run ≠ audit violations; skip normalization when audit clean- `references/tag-audit-session-2026-08-10.md` — dry-run scope ≫ violations; patch manually, never wholesale-normalize
 - `references/tag-audit-session-2026-08-17.md` — stale-chain fix (mapping VALUE non-SCHEMA); bump `updated:` on tag-only patches
-- `references/watchdog-session-2026-09-28.md` — orphan also `??` in git status ⇒ upstream skipped its commit; `training-data`→`datasets`
-- `.githooks/pre-commit-tag-validator.py` — Pre-commit hook that validates all staged wiki page tags against SCHEMA.md taxonomy. Blocks commits with non-taxonomy tags or composite kebab-case errors. See Section J.
-
+- `references/watchdog-session-2026-09-28.md` — orphan `??` in git ⇒ upstream skipped commit; `training-data`→`datasets`
+- `.githooks/pre-commit` — Git hook running `validate_index.py` + tag validator on staged wiki files (`git config core.hooksPath .githooks`). See Section J.
 ---
 
 ## Section H: Index.md Corruption Recovery (wiki-index-corruption)
