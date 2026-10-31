@@ -1,7 +1,7 @@
 ---
 title: "Legal Agent Benchmark (LAB)"
 created: 2026-05-27
-updated: 2026-10-30
+updated: 2026-11-01
 type: concept
 tags:
   - evaluation
@@ -112,6 +112,8 @@ The first expansion of the "benchmark expansion" direction above: **LAB: USCL** 
 - **Open- vs closed-book conditions** separate retrieval skill from reasoning skill: closed-book supplies the record + the cited cases; open-book gives only task-defining filings plus a **CourtListener MCP** (pre-filing materials only).
 - **GRM round-robin Elo grading instead of a fixed answer key**: model briefs compete pairwise; generative reward models pick a winner/tie with reasoned criteria that lawyers review and calibrate — an answer to "no answer key exists for advocacy."
 - **Result shift vs May 2026 baseline**: where the initial LAB run had frontier models completing <10% of tasks all-pass, LAB: USCL finds a small group of frontier models can now produce complete first-draft briefs in a single shot with no attorney guidance — while still failing strategically: unnecessary concessions, abandoned arguments, reliance on overruled precedent, unexamined deference to non-binding authority.
+- **Elo spread**: ~**700 Elo points** separate top and bottom models; top-rated **Opus 5.5** beats the lowest tier >95% of the time. Rankings are stable across open- vs closed-book, indicating strength comes from converting materials into complete structured briefs, not from search-tool skill.
+- **Why the grading switch**: earlier evals could answer "is this a brief?" in seconds (too short, no structure). Once models clear that bar, binary all-pass grading saturates — hence pairwise GRM competition. Harvey plans to open-source environment-building cookbooks in partnership with Grubel (state courts / SCOTUS, i.e. non-PACER coverage, are the stated expansion frontier).
 
 ## Future Directions
 

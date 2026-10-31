@@ -1524,3 +1524,10 @@ research-grade pages from genuinely uncovered material:
 - Archived to `inbox/trending-reports/hot-post-2026-10-31-0930.md`
 - Sources: mistral.ai ML4 OSS release, trakkr.ai zombie-stats (HN 167pts), SO <1,000 q/month
 - Checks: NO_SLOP_FOUND, zero wikilink MISSes, NO_TYPO
+
+## 2026-11-01 03:30 JST — hot-post (late-night)
+- Delivered late-night hot-post: "LAB: USCL — Opus 5.5 beats bottom tier >95% of the time" (Harvey litigation-brief benchmark, GRM pairwise Elo, ~700pt spread) — report body delivered in Japanese per report-quality skill; log kept English per wiki language policy
+- Archived to `inbox/trending-reports/hot-post-2026-11-01-0130.md`
+- Updated `concepts/ai-benchmarks/legal-agent-benchmark.md`: added Elo spread (700pt, Opus 5.5 >95% win rate), grading-switch rationale (all-pass saturation), Grubel open-source cookbook plan
+- Sources: harvey.ai LAB: USCL post 2026-10-29 (raw: `raw/articles/2026-10-30_harvey_legal-agent-bench-us-case-law.md`), sierra.ai ARR post 2026-10-30
+- Checks: NO_SLOP_FOUND, zero wikilink MISSes, NO_TYPO

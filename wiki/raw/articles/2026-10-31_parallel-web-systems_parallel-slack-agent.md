@@ -1,14 +1,17 @@
 ---
-title: "parallel-slack-agent"
+title: "Introducing Parallel in Slack: web intelligence where your team works"
 source: "Parallel Web Systems Blog"
 url: "https://parallel.ai/blog/parallel-slack-agent"
-scraped: "2026-10-31T06:00:10.747135+00:00"
-lastmod: "2026-10-30T23:58:13.000Z"
+scraped: "2026-10-31T06:00:10+00:00"
+lastmod: "2026-10-30"
 type: "sitemap"
+scrape_status: "recovered-dreaming-cycle (brotli decoder failure on original scrape)"
 ---
 
-# parallel-slack-agent
+# Introducing Parallel in Slack: web intelligence where your team works
 
 **Source**: [https://parallel.ai/blog/parallel-slack-agent](https://parallel.ai/blog/parallel-slack-agent)
 
-Scrape failed: brotli: decoder process called with data when 'can_accept_more_data()' is False
+ow often: - ` @parallel ` monitor new funding rounds for AI startups, daily The agent confirms with a card showing what it will watch and how often. If you don&#x27;t give a frequency, it checks hourly. ** Get alerts in the channel. ** When the monitor detects a relevant change, the agent posts a short message with the headline and the source. The full details are threaded, so the channel stays easy to scan. ** Follow updates that matter to you. ** Anyone can hit 🔔 on a monitor to get @mentioned when it fires. Hit it again to stop. ** Manage monitors in plain language. ** &quot;Show me the active monitors,&quot; &quot;make the funding update weekly&quot; and &quot;cancel the pricing monitor&quot; all work. ## Monitors to try We&#x27;ve used the agent across Parallel for the past two months, and early-access teams have used it for everything from tracking competitor, customer, and investor activity to watching for deals on products they want to buy. Here are a few monitors to start with: ** For competitive intel ** - ` @parallel ` monitor when Acme&#x27;s posts on X get over 500 likes - ` @parallel ` monitor when Acme launches a new product or changes its pricing - ` @parallel ` monitor when Acme is added to any company&#x27;s subprocessor list ** For GTM ** - ` @parallel ` monitor new startup launches that could benefit from agentic search - ` @parallel ` monitor leadership changes at AI companies valued over $10B ** For founders and investors ** - ` @parallel ` monitor new funding rounds for AI infrastructure startups, daily - ` @parallel ` monitor new AI startups coming out of stealth ** For finance teams ** - ` @parallel ` tell me when PepsiCo files an 8-K ** For ops, legal and policy ** - ` @parallel ` watch for new AI regulation in the US and EU, daily ## Ask questions [ Parallel Slack agent answering a question in a thread ]( https://cdn.sanity.io/files/5hzduz3y/production/9ecef216b50b3abc263b5452df983e32efea12da.mp4 ) Ask in any thread and get a cited answer. Ask in any thread and get a cited answer. ** Ask anything. ** Tag ` @parallel ` with a question and it replies in the thread with a cited answer: - ` @parallel ` what did the Fed announce today, and how did markets react? - ` @parallel ` compare pricing for CRM providers ** Ask about an alert. ** Reply in an alert&#x27;s thread and the agent already knows which event you mean, so &quot;have they invested in similar startups recently?&quot; works without repeating yourself. Each thread is its own conversation, so follow-up questions build on earlier answers. ## Get started - Install the agent from the Slack Marketplace [ Slack Marketplace ] ( https://slack.com/marketplace/A0AP6UAHQ4A ) , or from Parallel Platform [ Parallel Platform ] ( https://platform.parallel.ai/settings?tab=data-connections&amp;utm_source=parallel_blog&amp;utm_medium=blog&amp;utm_campaign=slack_agent_launch ) under Settings → Data connections → Add to Slack. - Add it to a channel with ` /invite @parallel ` , or open it from Slack&#x27;s Agents panel. - Tell it what to watch. Everyone in your workspace can create, follow and manage monitors. ## Ready to get started? Start building for free [ Start building for free ] ( https://platform.parallel.ai/home ) Contact us [
+
+sha256: e19bad819e867f25195168a2618e6b452c4bae4623eee0a0966e700b84ea4fdc
