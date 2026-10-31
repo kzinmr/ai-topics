@@ -4,7 +4,7 @@
 > Total pages: 3336
 > Last updated: 2026-10-30
 
-## Entities (956 pages)
+## Entities (957 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -965,7 +965,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2271 pages)
+## Concepts (2272 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
