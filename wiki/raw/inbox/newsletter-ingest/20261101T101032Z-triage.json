@@ -1,0 +1,55 @@
+{
+  "run_id": "20261101T101032Z",
+  "triaged_at": "2026-11-01T10:20:00+00:00",
+  "processed_count": 1,
+  "classified": [
+    {
+      "message_id": "<20261031.190409.d60f1b77@mta27>",
+      "subject": "Two AI Labs Say They Refuted ETH",
+      "source": "Beehiiv newsletter (mta27 beehiiv; uid=861; likely AI-math/science digest — ETH likely refers to the Erdős Tree / Happy Ending conjecture or an ETH-related math conjecture in AI-for-math coverage, not Ethereum)",
+      "date": "2026-10-31",
+      "raw_path": "wiki/raw/newsletters/2026-10-31-two-ai-labs-say-they-refuted-eth.md",
+      "relevance": true,
+      "importance": "high",
+      "newsjacking_score": 4,
+      "topics": [
+        "ai-for-math",
+        "ai-reasoning",
+        "automated-theorem-proving",
+        "formal-verification",
+        "llm-mathematics",
+        "ai-labs",
+        "contested-claims"
+      ],
+      "canonical_url": null,
+      "canonical_url_note": "All 16 links are opaque link.mail.beehiiv.com/v2/c/ tracking URLs (15 article links + 1 beeiivstatus.com status link). Curl test on 3 representative links returned HTTP 403 (Cloudflare block), unlike typical beehiiv v2/c/ links that resolve 200 per skill pitfall #10. Downstream must try a browser UA / fetch fallback or search the exact subject line to identify the newsletter and the underlying articles.",
+      "suggested_wiki_actions": [
+        "identify the newsletter from uid=861 / subject style and locate the canonical archive post (beehiiv public archive at <publication>.beehiiv.com) — curl -L was 403 on 3 tested v2/c/ links, so try a real browser User-Agent or search the subject line verbatim",
+        "determine what 'ETH' refers to — most plausible reading given 'Two AI Labs Say They Refuted ...' is a math conjecture (e.g. the Happy Ending / Erdős Tree problem) refuted by AI-driven theorem search; NOT Ethereum unless the body says otherwise",
+        "identify the two labs (candidates given late-2026 landscape: OpenAI, Google DeepMind, AlphaProof-style formal provers, Trinkle/Axiom-style math agents) and update the relevant entities/<lab>.md pages with a dated, contested-framed section per AGENTS.md contradiction policy",
+        "if this is a substantive AI-for-math result (verified refutation with a human-verifiable proof or Lean/Coq artifact), create or update concepts/ai-for-math.md (or concepts/formal-verification.md) — do NOT create a page from the clickbait subject line alone",
+        "check whether a prior wiki page already tracks this claim; per skill pitfall, treat single-newsletter coverage of an unverified 'AI disproves X' claim as low-confidence until at least one primary source (paper, lab blog post) is cited"
+      ],
+      "existing_wiki_overlap": [
+        "concepts/ai-for-math.md (if it exists — verify in wiki/index.md before creating)",
+        "concepts/formal-verification.md",
+        "concepts/llm-reasoning.md",
+        "entities/openai.md",
+        "entities/google-deepmind.md"
+      ],
+      "notes": "Headline is a bold polarizing claim (NJ 4/5: 'Two AI Labs' consensus framing + contrarian 'refuted' framing is strong in-group signal for the AI-for-math audience). Directly on-wiki topic: LLM reasoning capabilities and AI-driven mathematics are core SCHEMA.md scope. However, per pitfall #10 variant, all 16 links are beehiiv v2/c/ tracking URLs and curl resolves 403 (not the usual 200), so no article-level verification is possible from checkpoint data. Importance is high based on topic fit; confidence is low pending canonical URL resolution. Downstream newsletter-wiki-ingest must resolve the identity of the newsletter and the primary sources before any wiki page is created or updated — 'refuted ETH' framing alone is insufficient justification for a new concept page."
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 1,
+    "low": 0,
+    "skipped": 0
+  },
+  "caveats": [
+    "The digest contains only opaque beehiiv link.mail.beehiiv.com/v2/c/ tracking URLs (15 content links + 1 email.beehiivstatus.com tracking link); no article titles, summaries, or destination domains are available from the checkpoint. Importance was assigned at the newsletter level from the subject line and topic fit.",
+    "3 representative v2/c/ links tested with `curl -sL -w '%{url_effective}'` returned HTTP 403 with no redirect — this deviates from the usual beehiiv pitfall #10 behavior (200 OK). Downstream should retry with a real browser User-Agent, or identify the publication by subject-line search instead.",
+    "'ETH' in the subject is ambiguous — the AI-for-math reading (Erdős Tree / Happy Ending conjecture) is more likely than Ethereum given 'Two AI Labs Say They Refuted' framing, but downstream must confirm from body text before tagging or filing.",
+    "Do not create or update any wiki page from the subject line alone; require at least one primary source (lab announcement, paper, verified proof artifact) before filing, per contested-claim policy."
+  ]
+}
