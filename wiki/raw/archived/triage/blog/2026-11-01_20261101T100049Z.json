@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-11-01T10:26:35.542696+00:00",
+  "triage_run_id": "20261101T100049Z",
+  "source": "blog",
+  "summary_ja": "blog-ingest 20261101T100049Z（18 candidates + unsaved 2）を triage。18 件中 15 件が danielwirtz.com の個人生産性/PKM/ライフスタイル/インディービジネス記事で AI スコープ外（batch skip 4 件に集約）。take は 4 件: (1) Parameter Labs による ChatGPT HTML プレビュー sandbox 脱出〜アカウント乗っ取り連鎖（MathLive postMessage → innerHTML → 非 sandbox iframe → YouTube oEmbed で CSP 回避、バウンティ $5,000）は一次資料が未収録で concepts/browser-security.md も stub のため新 events ページ化が妥当、(2) Sean Goedecke の評判形成論（manager インセンティブの悪循環、ratchet 効果 vs skip-level / side bets / 同僚唸らせ）は entities/seangoedecke-com.md の Oct 2026 セクションに未収録、(3) Troy Hunt Weekly Update 528 の Proton CEO 技術マニフェスト引用（「Dev jobs as we know them are gone. Dead.」）は entities/troy-hunt.md（updated 2026-10-19）に未反映、(4) datasette-llm 0.1a9 の default model 自動継承は concepts/datasette-llm.md が 0.1a7 で停止。reference 1 件（Notion Clipper 自作、非 AI）。",
+  "decisions": [
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "danielwirtz.com",
+      "title": "Notion Web Clipper, but better",
+      "url": "https://danielwirtz.com/blog/notion-web-clipper-alternative",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danielwirtz.com--blog-notion-web-clipper-alternative--40af73a7.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★ 非 AI の個人 SaaS プロダクト開発記録で、wiki 対象外。Daniel Wirtz が Notion 公式 Web Clipper の機能不足（ページ保存のみ）を解消する自作拡張「Clipper」を数か月かけて開発した進捗報告で、Notion のブロック（lego block）思想に沿い、データベースのプロパティ接続・値の並び替え/非表示・閲覧中のページ上での property 値更新、markdown/headings/tasks/lists/links/code blocks/blockquote 対応など Notion エディタに近い編集機能を持つ、と本文に書かれている。Willison による AI 利用の記述はない。entities/daniel-wirtz.md（存在すれば）の既存「side-project builder」像を補強する程度なので reference 扱い。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Notion Web Clipper, but better\nSource: https://danielwirtz.com/blog/notion-web-clipper-alternative\nHave you used the Notion Web Clipper?\nIf so, you might have the same experience as I have. It can save pages, but that’s also where it stops in functionality and use, which for me was a bit disappoin"
+    },
+    {
+      "item_id": "batch-danielwirtz-pkm",
+      "source": "blog",
+      "source_name": "danielwirtz.com",
+      "title": "Bottom-Up Note-Taking in Capacities / Audio notes to Capacities (iOS Shortcuts) / New Discovery: Readwise & Reader",
+      "url": "https://danielwirtz.com/blog/bottom-up-note-taking-in-capacities",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danielwirtz.com--blog-bottom-up-note-taking-in-capacities--856e94fc.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 3 本まとめて skip。個人ナレッジ管理（PKM）ツール入門・Tips 記事で AI/LLM とは無関係。Bottom-Up Note-Taking（9,990B・最長）は Evernote → Notion（top-down で破綻）→ bi-directional linking（Roam, Logseq, Capacities）で 4 年続いたという方法論で、organize を事前にせずキャプチャ過程から構造を湧かせる原則の整理。Audio notes（2,435B）は iOS Shortcuts の「Dictate text」と「Get contents of URL」を組み合わせ Capacities API の daily note に追記する自前 shortcut（outliner モードで bullet が畳めない問題を残す）。Readwise & Reader（668B）は購読紹介のみ。PKM は第二脳/prompt 資産文脈でのみ本 wiki の対象であり、本群にその接点なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Bottom-Up Note-Taking in Capacities\nSource: https://danielwirtz.com/blog/bottom-up-note-taking-in-capacities\nOver the years, my approach to note-taking has changed dramatically. Looking at my old Evernote account, I had everything neatly organized into pages and folders. When Notion was released, "
+    },
+    {
+      "item_id": "batch-danielwirtz-productivity",
+      "source": "blog",
+      "source_name": "danielwirtz.com",
+      "title": "Hyperlink selected text in Gmail / Automate your Slack Status / Creating a Personal URL Shortener with Dub and Raycast / Dynamic website CMS with Notion",
+      "url": "https://danielwirtz.com/blog/gmail-url-paste",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danielwirtz.com--blog-gmail-url-paste--11398e1e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 4 本まとめて skip。ツール運用 tips で AI 要素ゼロ。(1) Gmail で Notion/Slack 風に選択テキストへ paste で hyperlink 付ける自作 Web 拡張「Gmail URL paste」、(2) Slack ステータス自動設定（Status Scheduler／Status Butler、Giving What We Can 入社時の remote 運用）、(3) Raycast + Dub/LinkDrip で個人 short link コマンド（LinkDrip API が custom slug 非対応で行き詰まった記録、Max Stoiber の hyper key 動画が刺激）、(4) react-notion-x 等で Notion をブログ CMS にするAirtable 代替記。いずれも個人生産性・no-code 紹介に留まる。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Hyperlink selected text in Gmail\nSource: https://danielwirtz.com/blog/gmail-url-paste\nOne thing I love about Notion, Slack and other modern apps is how easy it us to create a hyperlink:\nCopy the URL you want to link to\nHighlight the text you want to hyperlink\nPress\nCtrl + V\non Windows or\ncmd + V\nt"
+    },
+    {
+      "item_id": "batch-danielwirtz-lifestyle",
+      "source": "blog",
+      "source_name": "danielwirtz.com",
+      "title": "DIY CO2 Sensor in Home Assistant / Pyrenees Gear Packing List / Niche Online Tournaments",
+      "url": "https://danielwirtz.com/blog/diy-co2-sensor-home-assistant",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danielwirtz.com--blog-diy-co2-sensor-home-assistant--647e3acb.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 3 本まとめて skip。完全非 AI 分野。Home Assistant に自作 CO2 センサー（800-1,200 ppm で集中力低下、1,200-2,500 ppm で睡眠・認知機能へ影響という健康動機、既製品の Zigbee センサーが高価なので部品調達して組む）、スペイン・ピレネー 2 週間 bikepacking の装備リスト（Bivy Pro / Copper Spur HV3 / Quilt 250 等）、ニッチオンライン大会観戦入門（CTWC Tetris finals、2020 年発見の「rolling」入力技術と手袋による摩擦低減、Geoguessr）。wiki スコープ（LLM / AI Agent / 開発ツール / 推論基盤）から完全に外れる。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# DIY CO2 Sensor in Home Assistant\nSource: https://danielwirtz.com/blog/diy-co2-sensor-home-assistant\nSince a few months, I have\nHome Assistant\nrunning in my house. It’s a fun hobby and an absolute rabbit hole of possibilities to automate every nook and corner of your home. Early in my learning abou"
+    },
+    {
+      "item_id": "batch-danielwirtz-indiebiz",
+      "source": "blog",
+      "source_name": "danielwirtz.com",
+      "title": "9 Lessons from Selling $250k of Cohort Based Courses / I've acquired a new superpower / Reverse Engineering My #1 Hacker News Article",
+      "url": "https://danielwirtz.com/blog/9-lessons-from-selling-cohort-based-courses",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danielwirtz.com--blog-9-lessons-from-selling-cohort-based-courses--710baa86.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 3 本まとめて skip。個人インディペンデントビジネス/ blogging の振り返りで AI 実体なし。CBC 記事は 2020 年共同創業の Facilitator School（オンライン会議・ワークショップ指導）が 5 年で 25 万ユーロ超、その 9 の教訓を Outseta 寄稿＋13 分動画でまとめたという紹介本文（9 教訓の本文は Outseta 側にある）。superpower 記事は spot-the-difference 能力の話題、HN 記事分析はバズ記事の reverse engineering で、いずれもコンテンツマーケティング論。wiki の AI スコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# 9 Lessons from Selling $250k of Cohort Based Courses\nSource: https://danielwirtz.com/blog/9-lessons-from-selling-cohort-based-courses\nAt the beginning of 2020, as everything shifted online, I co-founded a company called\nFacilitator School\n. With one mission: to create an online platform that teach"
+    },
+    {
+      "item_id": "unsaved-batch",
+      "source": "blog",
+      "source_name": "danielwirtz.com",
+      "title": "12 Advanced Outseta Tips and Use Cases / Utrecht Ultra 2024 Race Report",
+      "url": "https://danielwirtz.com/blog/advanced-outseta-tips",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ unsaved_articles 2 件。本文抽出不能（raw_path 無し）で BODY-READING MANDATE 充足不可。タイトルから判断しても SaaS 運用 tips（Outseta）とウルトラマラソン（Utrecht Ultra 2024）のレースレポートで AI 関連なし。ドメインは curl 可能だが、取得できても wiki スコープ外の可能性が高いため rescue 対象外と判断。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可）"
+    }
+  ]
+}
