@@ -1546,3 +1546,10 @@ research-grade pages from genuinely uncovered material:
 - Updated `concepts/ai-benchmarks/legal-agent-benchmark.md`: added Elo spread (700pt, Opus 5.5 >95% win rate), grading-switch rationale (all-pass saturation), Grubel open-source cookbook plan
 - Sources: harvey.ai LAB: USCL post 2026-10-29 (raw: `raw/articles/2026-10-30_harvey_legal-agent-bench-us-case-law.md`), sierra.ai ARR post 2026-10-30
 - Checks: NO_SLOP_FOUND, zero wikilink MISSes, NO_TYPO
+
+## 2026-11-01 09:30 JST — hot-post (morning)
+- Delivered morning hot-post: "Dismantling human-in-the-loop" (report body in Japanese per report-quality skill; log kept English) — Kyle Corbitt's Dec-2025 "30-50% chance human-in-the-loop overtaken by agents" prediction (re-amplified on X 2026-10-27, quoting Alex Tamkin's 50-analyst Anthropic RCT) x his near-future story *The Machine Starts* (78 regulated medical decisions, AI-blind-accept beats licensed physician; RHO 2.0 quietly repealed 18 months later) x three same-week measurements: Harvey LAB USCL >95% top-vs-bottom win rate / Duet 4-tier decreasing-access hierarchy / OpenAI L0-L3 monitors 15-min paging with internal-Codex paging disabled. Thesis: HITL is hollowed out (human becomes scope designer, not reviewer) rather than banned.
+- Archived to `inbox/trending-reports/hot-post-2026-11-01-0930.md`
+- No wiki page created (single-raw narrative post); proposed follow-ups recorded in the report: `hot-topics.yaml` ai-safety priority low→medium candidate, and fetch primary source of the Anthropic 50-analyst RCT (Tamkin tweet 2115190541688398184) for a `concepts/cognitive-debt` outcome-side section.
+- Sources: raw `corbt.com--the-machine-starts--2026-10-27.md` + https://corbt.com/posts/the-machine-starts
+- Checks: NO_SLOP_FOUND, zero wikilink MISSes (alias-stripped), NO_TYPO
