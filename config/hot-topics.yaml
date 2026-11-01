@@ -158,9 +158,9 @@ topics:
   - concepts/sandbox
   - comparisons/agent-sandboxing
   - concepts/capability-based-security
-  notes: '横方向: capability-based security, seccomp, Firecracker等。2026-10-24: frontier training environment security + Omnara sandbox mesh追加'
+  notes: '横方向: capability-based security, seccomp, Firecracker等。2026-10-24: frontier training environment security + Omnara sandbox mesh追加。2026-11-01: ChatGPT HTML Preview sandbox escape→account takeover (Parameter Labs)'
   added: 2026-04-14
-  last_crawled: '2026-10-24'
+  last_crawled: '2026-11-01'
 - slug: neurosymbolic-ai
   title: Neurosymbolic AI
   crawl_policy: prerequisites
