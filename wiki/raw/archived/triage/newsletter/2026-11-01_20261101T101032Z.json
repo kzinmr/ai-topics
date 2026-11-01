@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-11-01T10:34:34.202603+00:00",
+  "triage_run_id": "20261101T101032Z",
+  "source": "newsletter",
+  "summary_ja": "beehiivニュースレター1通（uid=861「Two AI Labs Say They Refuted ETH」, 2026-10-31, 16リンク）をtriage。全v2/c/追跡URLが403+Cloudflare challenge（ブラウザUAでもJust a moment...）で本文到達不能のためtopic-level評価。件名からETH=Exponential Time Hypothesis反証の続報と推定されるが、concepts/openai-eth-refutation-verification-crisis.md（2026-10-27, 一次資料3点付き）および既存ai-mathematics/formal-verification系ページが詳細カバー済み。本文検証不能なcontested claimを単一報道で追記するのは不適切として、Link 1のみreference（canon URL復元時の再評価フラグ）、残り15リンクはskip（status pixel 1 + batch skip 14）。Take=0。",
+  "decisions": [
+    {
+      "item_id": "<20261031.190409.d60f1b77@mta27>-1",
+      "source": "newsletter",
+      "source_name": "Two AI Labs Say They Refuted ETH",
+      "title": "Link 1 (main article - ETH refutation coverage)",
+      "url": "https://link.mail.beehiiv.com/v2/c/00ee7d0aa80bdfd9865239a9263fafe33118489dc74ee28c8c104257e67f79978530a73c7684bce93d2441d00cdad198e3272cb7a99dc5d8fb0fa91d21f9118de8ba0386c13ab3077a00a426cd2b990f449b1160190fc5eb555afb97001df759724e02e19c9a60e55d524bda6b553adb7c6bbcc9da85c8c4dc053e75261a58e59b8a9600769ebee2069ce115335c1d5efe20b05a4031046b595590e986a815e5/1d6b413be1e8c9cf",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-31-two-ai-labs-say-they-refuted-eth.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 全beehiiv v2/c/ URLが403+Cloudflare challenge（Just a moment...）で本文到達不能（ブラウザUAでも同様、per-link cloudflare kill switch 3リンク検証で全滅）。件名「Two AI Labs Say They Refuted ETH」はETH=Exponential Time Hypothesis反証の続報と推定されるが、concepts/openai-eth-refutation-verification-crisis.md がOpenAI 67p preprint・実行時間bound・shepherd戦略・oai-math-revised・Lean検証の限界まで一次資料3点で詳細カバー済み（confidence: medium, contested扱い）。『第二のラボ』による独立反証という新展開の可能性はあるが、本文検証不能な状態でcontested claimの追記は不可（一次資料必須ポリシー）。下流がbrowser/検索でcanon URL復元できた場合のみ再評価。",
+      "candidate_wiki_path": "concepts/openai-eth-refutation-verification-crisis.md",
+      "body_excerpt": "# Newsletter Digest - 2026-10-31\n**Subject:** Two AI Labs Say They Refuted ETH\n**Collected:** 2026-11-01T10:10:31.828292+00:00\n**Articles linked:** 16\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/00ee7d0aa80bdfd9865239a9263fafe33118489dc74ee28c8c104257e67f79978530a73c7684bce93d2441d00cda"
+    },
+    {
+      "item_id": "<20261031.190409.d60f1b77@mta27>-16",
+      "source": "newsletter",
+      "source_name": "Two AI Labs Say They Refuted ETH",
+      "title": "Link 16 (beehiiv status pixel)",
+      "url": "https://email.beehiivstatus.com/15792f34d7cd3c795eb4e77e13370d4055c0fe9a/hclick",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-31-two-ai-labs-say-they-refuted-eth.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ email.beehiivstatus.com/hclick はメール配信ステータス追跡ピクセル。コンテンツ価値ゼロ（スキーマ表で即skip対象）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-31\n**Subject:** Two AI Labs Say They Refuted ETH\n**Collected:** 2026-11-01T10:10:31.828292+00:00\n**Articles linked:** 16\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/00ee7d0aa80bdfd9865239a9263fafe33118489dc74ee28c8c104257e67f79978530a73c7684bce93d2441d00cda"
+    },
+    {
+      "item_id": "batch-skip-beehiiv-links-2-15",
+      "source": "newsletter",
+      "source_name": "Two AI Labs Say They Refuted ETH",
+      "title": "Links 2-15 (batch skip - expired/challenged beehiiv tracking URLs)",
+      "url": "https://link.mail.beehiiv.com/v2/c/1333ec20f700b66f6514ca1d9c51d94c2df68a38ce2575bdf3bdce138eb6caeb64747b2daf0095c6c05cf864cb28a0c66177366390a0735a61d8732188dd7041a93146903a901326beada7e6ed3d5ae76e0dfd319e91c97e68611924adbd49978f8656c7615c019ee9e035b23709d3e54abdc6720e94c35b5a0fe7a07c19a898d716ef8d749a3030b09aac7dc89cc5ba767f0714f2b7df5bf73293a0217f023c/87a20344922076f7",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-10-31-two-ai-labs-say-they-refuted-eth.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Link 2-15のbeehiiv v2/c/追跡URLはLink 1と同様に全滅（3リンク実測で403+Just a moment...、per-linkではなくbatch-level Cloudflare block）。 inbox summary（uid=861, high, ai-for-math/formal-verification/contested-claims）から推定トピックは ETH反証検証危機・AI-for-math・Tao系フォーマル検証で、全て既存wiki（concepts/openai-eth-refutation-verification-crisis.md、 concepts/ai-mathematics-theorem-proving.md、concepts/lean-software.md、entities/terry-tao.md、 raw/articles/2026-10-27 Johncook eth-false）がカバー済み。本文検証不能な単一ニュースレター報道のみでの contested-claim新規追記は行わない。10-31 morning hot-post / 10-31 newsletter-wiki-ingest でも同トピックは already-covered判定済み（log.md 'Eth deferral' 'ETH refutation ... skipped'）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-10-31\n**Subject:** Two AI Labs Say They Refuted ETH\n**Collected:** 2026-11-01T10:10:31.828292+00:00\n**Articles linked:** 16\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/00ee7d0aa80bdfd9865239a9263fafe33118489dc74ee28c8c104257e67f79978530a73c7684bce93d2441d00cda"
+    }
+  ]
+}
