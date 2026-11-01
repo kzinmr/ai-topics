@@ -2,7 +2,7 @@
 title: "Factorio Learning Environment (FLE)"
 type: concept
 created: 2026-05-08
-updated: 2026-07-31
+updated: 2026-11-01
 tags:
   - benchmark
   - coding-agents
@@ -100,6 +100,10 @@ The original FLE paper evaluated six frontier LLMs and found:
 3. **Error analysis limitation**: Models failed to effectively debug and recover from their own mistakes in constrained environments
 4. **Electric-powered drilling discovery**: In open-play, LLMs did independently discover certain automation strategies (e.g., switching to electric-powered drilling), showing genuine creative problem-solving
 5. **Complex automation failure**: Models consistently failed at complex automation goals (e.g., electronic-circuit manufacturing) despite succeeding at simpler ones
+
+## GPT-5.6 Sol Peaceful-Mode Completion (Oct 31, 2026)
+
+Ryan Madden got **GPT-5.6 Sol running in Codex at low thinking level to complete a peaceful (no-biters) Factorio run in 13.5 hours of game time** — first autonomous rocket launch, using a Python game-manager library that enforces human GUI restrictions (player reach, fog of war). Late-game scaling still failed: the rocket was achieved only by Sol "papering over its late-game failures to connect certain production systems by repeatedly ferrying supplies" (manual ferrying). Big improvement over GPT-5.5, which failed to use transport belts at all. HN takeaways (172 pts): peaceful mode removes the realtime-response pressure that breaks LLM play (chrisfosterelli), while multi-model streams show the same core weakness as coding tasks — "inability to create structured plans for the future," looping attack→turrets→attack (Maw). Madden frames Factorio as "analogous to programming but much more legible to casual observers" for grounding model-capability discussion. Primary: https://ryanmadden.net/gpt-56-beats-factorio/ · HN: https://news.ycombinator.com/item?id=50318871
 
 ## Related Pages
 

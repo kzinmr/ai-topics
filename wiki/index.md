@@ -967,7 +967,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2276 pages)
+## Concepts (2278 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/chatgpt-html-preview-account-takeover]] — ChatGPT HTML Preview account takeover (Parameter Labs, Oct 2026) — share link → MathLive postMessage/innerHTML injection → YouTube oEmbed CSP bypass → JS as chatgpt.com; private-chat exfil + account actions; P1 fixed Oct 26, $5k bounty (HN 335)
@@ -1227,6 +1227,7 @@
 - [[concepts/ai-benchmarks/deepswe-benchmark]] — DeepSWE Benchmark (Datacurve); + DeepSeek V4 Pro 0813 vs Claude Fable 5 head-to-head (Together AI Aug 2026): 90x cost gap, pass@4 88.5 vs 84.1, Pro-first cascade 82.7% at $8.28; + Breunig "end of the free lunch" tiering thesis cross-ref
 - [[concepts/ai-benchmarks/design-arena]] — Design Arena
 - [[concepts/ai-benchmarks/factorio-learning-environment]] — Factorio Learning Environment (FLE)
+- [[concepts/hackertube]] — HackerTube — Karpathy's HN-curated YouTube clone built end-to-end by Opus 5.5 in ~2h; 504M/7.6M token economics, Sonnet-labeled 40K-comment curation (Oct 31, 1449 pts HN)
 - [[concepts/ai-benchmarks/freshstack-benchmark]] — FreshStack Benchmark
 - [[concepts/ai-benchmarks/frontier-swe-benchmark]] — FrontierSWE Benchmark
 - [[concepts/ai-benchmarks/frontiercode]] — FrontierCode
@@ -1288,6 +1289,7 @@
 - [[concepts/ai-benchmarks/swe-bench-pro]] — SWE-bench Pro — OpenAI-endorsed successor (Apr 2026)
 - [[concepts/ai-benchmarks/swe-gym]] — SWE-Gym — training environment for SWE agents (arXiv 2412.21139)
 - [[concepts/ai-benchmarks/nanogpt-speedrun]] — NanoGPT Speedrun Frontier (Prime Intellect, Aug 2026) — 153 autonomous runs / 18 frontier models; harness×model leaderboard on a continuous-time optimization task; Fable 5 81.7% gap closure vs Opus 5 53.6% on 4.4× fewer tokens than Fable
+- [[concepts/brazil-court-prompt-injection-sanction]] — Brazilian Court Prompt-Injection Sanction — first judicial ruling fining lawyers (US$16k) for white-on-white injection hidden in a petition reviewed by court AI Galileu (Nov 1)
 - [[concepts/ai-benchmarks/swe-lancer]] — SWE-Lancer
 - [[concepts/ai-benchmarks/swe-rebench]] — SWE-rebench
 - [[concepts/ai-benchmarks/tau-bench]] — τ-bench

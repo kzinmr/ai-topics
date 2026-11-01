@@ -4,7 +4,7 @@ tags: [person]
 sources:
   - raw/articles/karpathy.github.io--2026-02-12-microgpt--6d759dd0.md
 created: 2026-04-24
-updated: 2026-08-07
+updated: 2026-11-01
 type: entity
 ---
 
@@ -527,6 +527,9 @@ Future coding will resemble resource management games — setting up systems, de
 - **Google Scholar**: [Andrej Karpathy](https://scholar.google.com/citations?user=4kAboOEAAAAJ)
 - **TED Talk**: [How AI Can Save Humanity](https://www.ted.com/talks/andrej_karpathy_how_ai_can_save_humanity)
 - **Dwarkesh Podcast (2025)**: [Andrej Karpathy — Eureka Labs](https://www.youtube.com/watch?v=...)
+
+### HackerTube (Oct 31, 2026)
+Shipped hackertube.org end-to-end via Claude Code/Opus 5.5 (~1M Opus tokens for the app; 504M input tokens overall, mostly Sonnet comment-labeling). Curates YouTube videos from HN comment recommendations as an antidote to "enshittified" algorithmic feeds. Detail: [[concepts/hackertube]].
 
 ## Related
 

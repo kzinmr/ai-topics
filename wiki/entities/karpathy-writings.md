@@ -4,7 +4,7 @@ tags: [person, writing]
 sources:
   - raw/articles/karpathy.github.io--2016-05-31-rl--fd04d0db.md
 created: 2026-04-27
-updated: 2026-08-03
+updated: 2026-11-01
 type: entity
 ---
 
@@ -147,3 +147,6 @@ Creative fiction exploring AI themes. Accessible, non-technical exploration of t
 
 ### Short Story on AI: Forward Pass (2017)
 Fiction: existential crisis under the hood of a neural network's forward pass. Explores what it "feels like" to be a neural network processing data. One of the few creative writing pieces by a major AI researcher.
+
+### HackerTube (Oct 2026)
+Built hackertube.org in ~2 hours entirely via Claude Code + Opus 5.5: a YouTube clone whose recommendations come from 40K HN comments (2007–2026) that recommend YouTube videos, filtered by Sonnet workflows into 6,454 videos across 150 topics. Karpathy: *"I don't actually do anything resembling traditional engineering anymore... I only talk to Claude and have it do everything."* Disclosed token economics: 504M input (90% cached) / 7.6M output tokens, >90% being Sonnet labeling calls; the app itself cost ~1M Opus 5.5 tokens. 1449 HN points. See [[concepts/hackertube]].

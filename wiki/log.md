@@ -1,3 +1,13 @@
+# Wiki Log
+
+## [2026-11-01] Trending-topics report
+
+- New: concepts/hackertube.md (Karpathy Opus 5.5 build, 1449 pts HN) + raw 2026-10-31_karpathy-hackertube.md
+- New: concepts/brazil-court-prompt-injection-sanction.md (first judicial prompt-injection sanction, Brazil) + raw 2026-11-01_jetstream-brazil-court-prompt-injection.md
+- Raw: 2026-10-31_github-memdoor-team-solve.md (5x Qwen3.8-27B team beats Fable 5 on LiveCodeBench Hard; report-only, no page)
+- Updated: entities/karpathy-writings.md, entities/andrej-karpathy.md (HackerTube), concepts/prompt-injection.md (Brazil case study), concepts/ai-benchmarks/factorio-learning-environment.md (GPT-5.6 Sol peaceful completion), entities/nolan-lawson.md (AI cost of JS frameworks)
+- SCHEMA: +recommendation-systems, +court-filings
+- Report: inbox/rss-scans/trending-topics-2026-11-01.md
 ## [2026-11-01] crawl | active-crawl — 4 new pages, 3 enrichments (Parameter ChatGPT takeover, VOLTA LLM appraiser, Suncatcher Hello World, Anthropic policy enforcement)
 
 - Discovery: HN Algolia `search_by_date` 8 queries, 4-day window, points>=10 → 70 stories; parent-side gap analysis. X/Twitter subagent skipped (established pattern).
@@ -56,7 +66,6 @@
 
 ---
 
-# Wiki Log
 
 ## [2026-10-31] watchdog | auto-fix pass — index header date only
 

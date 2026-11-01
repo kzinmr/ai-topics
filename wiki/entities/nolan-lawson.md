@@ -1,7 +1,7 @@
 ---
 title: "Nolan Lawson"
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-11-01
 type: person
 tags:
   - person
@@ -82,6 +82,10 @@ Lawson's blog has been a consistent source of deep technical writing on:
 - **Web Components** — Shadow DOM, accessibility in web components, framework design
 - **Open source sustainability** — Experiences as a paid maintainer, open-source at large companies
 - **AI-assisted development** — Slow coding, multi-agent review, quality-first AI usage
+
+## The AI Cost of JavaScript Frameworks (Oct 28, 2026)
+
+Lawson benchmarked LLM coding agents building the same Pokémon app across JavaScript frameworks, measuring agent time and token spend rather than human productivity. Findings (HN 109 pts): **Astro** came out best overall (fastest build, second-lowest spend, zero client-side JS) for content-driven apps; **Angular** performed worst, prompting HN's "now we have data that it's broken even for agents" reactions. Caveats from the thread: the benchmark app favors content-driven frameworks (interactive/realtime workloads could reshuffle rankings — skrebbel, Aozora7), and framework choice trades off long-term maintainability beyond agent cost (neya). Adds a cost-engineering dimension to Lawson's slow-coding line of work. Primary: https://nolanlawson.com/2026-10-28/the-ai-cost-of-javascript-frameworks/ · HN: https://news.ycombinator.com/item?id=50323088
 
 ## Related Entities
 
