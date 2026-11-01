@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3357
-> Last updated: 2026-10-31
+> Total pages: 3358
+> Last updated: 2026-11-01
 
 ## Entities (959 pages)
 
@@ -3332,27 +3332,27 @@
 - [[events/openai-presence-launch-july-2026]] — OpenAI Presence: Enterprise voice/chat agents deployed at BBVA and SoftBank via GPT-Live (July 2026)
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 
-## Queries (46 pages)
+## Queries (47 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
 - [[queries/2026-10-08-human-gate-retirement-synthesis]] — 4 independent lines (ScaleX 33% approval rate, 115-practitioner survey, OverAct, PACE) converge: the human gate is structurally broken; human role contracts to post-hoc audit + scope-setting
-- [[queries/2026-10-26-late-night-hot-post]] — Late-night hot-post 2026-10-26: the "inside the model" cluster — ThinkingCap thinking-token compression, Hirundo Qwen3-Coder persona-conditioned security degradation, OpenAI offline cached-web RL
 - [[queries/2026-10-09-crash-consistent-agent-synthesis]] — UndoBench 83.54% competence vs 46.72% recovery: effect-integrity gap; Retire/Absurd/Pi Durable/StateWise dig the same hole at 5 distinct layers, counter-evidence included
 - [[queries/2026-10-11-uncommitted-wip-snapshot]] — Skeleton-enrich run snapshot (2026-10-11): backlog empty; checkpoints uncommitted working tree (202 modified + 28 untracked) from active-crawl/newsletter pipelines
 - [[queries/2026-10-12-skills-npm-without-package-json-hotpost]] — Skills are npm without package.json: 6 missing resolution primitives; 2.19M adoptions, 30× audit-yield gap vs stars, >1/3 exclusive functions lost to install-order accidents
 - [[queries/2026-10-17-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-17): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-19-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-19): 0 status:skeleton pages across entities+concepts; backlog empty, no enrichment performed
-- [[queries/2026-10-23-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-23): 0 status:skeleton pages; backlog empty, no enrichment performed
-- [[queries/2026-10-24-morning-hotpost-oracle-routing]] — Morning hot-post: Oracle Routing 97.6% @ $1.88 vs Astra 74.1% @ $6.52; Vercel OIDC 8.4% secure-auth gap; OpenAI post-control monitorability metric
-- [[queries/2026-10-25-morning-hotpost-distillation-revenue]] — Morning hot-post: Irrational Analysis distillation-as-revenue thesis; OpenAI $1.4T→$1.25T, Anthropic whisper $2T→$1.5T
 - [[queries/2026-10-20-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-20): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-21-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-21): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-22-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-22): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-10-23-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-23): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-10-24-morning-hotpost-oracle-routing]] — Morning hot-post: Oracle Routing 97.6% @ $1.88 vs Astra 74.1% @ $6.52; Vercel OIDC 8.4% secure-auth gap; OpenAI post-control monitorability metric
 - [[queries/2026-10-24-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-24): 0 status:skeleton pages; backlog empty, no enrichment performed
-- [[queries/2026-10-27-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-27): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-10-25-morning-hotpost-distillation-revenue]] — Morning hot-post: Irrational Analysis distillation-as-revenue thesis; OpenAI $1.4T→$1.25T, Anthropic whisper $2T→$1.5T
 - [[queries/2026-10-25-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-25): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-10-26-late-night-hot-post]] — Late-night hot-post 2026-10-26: the "inside the model" cluster — ThinkingCap thinking-token compression, Hirundo Qwen3-Coder persona-conditioned security degradation, OpenAI offline cached-web RL
+- [[queries/2026-10-27-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-27): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-30-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-30): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-31-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-31): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
@@ -3377,9 +3377,10 @@
 - [[queries/practice-evolution-probabilistic-era]] — Practice Evolution Probabilistic Era
 - [[queries/saas-future-and-agent-developer-career]] — SaaS Future and AI Agent Developer Career Strategy
 - [[queries/test-time-compute-three-axes-2026-09-24]] — Compute-vs-accuracy frontier has 3 axes (sleep-time / test-time / post-peak); benchmarks only measure the middle one
+- [[queries/unresolved-newsletter-leads]] — Unresolved newsletter leads: beehiiv uid=861 "Two AI Labs Say They Refuted ETH" (2026-10-31, all 16 links Cloudflare-403) — second-lab ETH refutation unverifiable from any primary source; held pending arXiv cs.CC / DeepMind blog corroboration
+- [[queries/where-the-missing-software-went]] — Where the missing software went: reconciles code-review-bottleneck (shipping didn't grow) with the modest-success boom (modest successes doubling per year) — growth went long-tail, review capacity is the moat
 - [[queries/wiki-graph-analysis-weekly-2026-10-30]] — Weekly Wiki Graph Analysis (2026-10-30) — 3,351 pages; 477 orphans (466 content-rich), 3,378 broken links (172 auto-fixable), 18 dup groups, 325 oversized, 2,420 stale
 - [[queries/wiki-graph-analysis-weekly-2026-10-30-annotations]] — Adjudicated verdicts: 4 real dup actions (10 stubs already redirected, 4 false positives), deliberate-coder/deliberatecoder = different people, real index gap = 4, top missing-page queue
-- [[queries/where-the-missing-software-went]] — Where the missing software went: reconciles code-review-bottleneck (shipping didn't grow) with the modest-success boom (modest successes doubling per year) — growth went long-tail, review capacity is the moat
 
 ## RSS Scans
 

@@ -1,3 +1,13 @@
+## [2026-11-01] ingest | newsletter-wiki-ingest 20261101T101032Z (triage-JSON recovery, Takes=0)
+
+- Recovered from failed newsletter-triage JSON parse by reading `triage_latest.json` (run_id `20261101T101032Z`, `triage_timestamp` 2026-11-01T10:34Z) directly — checkpoint was valid despite the cron response render failure. 1 newsletter, 3 decisions (0 take, 1 reference, 2 skip batches).
+- Source: beehiiv uid=861, subject "Two AI Labs Say They Refuted ETH" (2026-10-31, 16 links: 15 × `link.mail.beehiiv.com/v2/c/` + 1 status pixel). All tracking URLs HTTP 403 + Cloudflare `Just a moment...` (7KB challenge) even with browser UA → body unreachable.
+- Reference target `concepts/openai-eth-refutation-verification-crisis.md` verified as a **no-op**: the page already covers the OpenAI 67-page ETH preprint, Impagliazzo/Paturi/Williams shepherd group, `oai-math-revised` fork and Lean caveat from 3 primary sources (`confidence: medium`). No page change made — appending a contested "second lab" claim from an unreadable single newsletter would degrade a sourced page.
+- Negative corroboration (2026-11-01): HN Algolia story search ×3 queries (exact subject, "refuted ETH exponential time hypothesis", "ETH refutation AI lab") = 0 matching stories; DuckDuckGo HTML on the quoted subject = no organic results. No primary source (preprint / lab post / Lean artifact) located.
+- Created `queries/unresolved-newsletter-leads.md` — durable-lead register for newsletter coverage that triage could not ingest (unreachable body or uncorroborable claim), with per-lead resolution steps. Index Queries 46→47, Total pages 3357→3358.
+- Skipped: 1 beehiivstatus.com status pixel; Links 2–15 batch skip (same batch-level Cloudflare block, topics ai-for-math / automated-theorem-proving / formal-verification all covered by existing pages).
+- Archive: `raw/archived/triage/newsletter/2026-11-01_20261101T101032Z.json` (3 items, already committed by triage run `53d489fd`).
+
 ## [2026-11-01] ingest | x-accounts-scan: curation decision model, Prelinger moments, NVFP4 quant, Braintrust Patterns, The Machine Starts
 
 - Scanned 11 accounts, 9 substantive new posts (of 84 tracked; budget rotation, cursor 14→25).
