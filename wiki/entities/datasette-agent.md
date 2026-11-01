@@ -14,12 +14,13 @@ tags:
 status: active
 description: "Extensible AI assistant for Datasette/SQLite by Simon Willison. Launched May 2026. Conversational interface for querying databases, generating charts, and building plugins. Powered by the LLM Python library."
 created: 2026-05-22
-updated: 2026-06-16
+updated: 2026-11-01
 sources:
   - raw/articles/simonwillison.net--2026-may-21-datasette-agent--9fcb051d.md
   - raw/articles/simonwillison.net--2026-may-21-datasette-agent-2--8297d2dd.md
   - raw/articles/datasette-io--2026-jun-12-datasette-agent--release.md
   - raw/articles/simonw-substack--2025-jul-08-datasette-agent--precursor.md
+  - raw/articles/simonwillison.net--2026-oct-31-datasette-llm--d7ef0b33.md
 related: []
 ---
 
@@ -136,6 +137,9 @@ Datasette Agent has already informed the **LLM 0.32a0 refactor**, a major rework
 
 ### Jump to Menu Integration (0.1a4)
 The latest release takes advantage of Datasette 1.0a30's new `makeJumpSections()` JavaScript plugin hook. Pressing `/` in Datasette now shows a "Start a new agent chat" option in the Jump to menu, providing instant access to the AI agent from anywhere in the Datasette interface.
+
+### Zero-config default model (datasette-llm 0.1a9, 2026-10-31)
+While bigger Datasette Agent upgrades are in the pipeline, the underlying `datasette-llm` plugin shipped 0.1a9 with a small UX improvement: it now picks up the **default model used by the LLM library**, so Datasette Agent can be started without explicitly configuring a default model — `uvx --with datasette-agent datasette content.db --internal internal.db` is now sufficient. Previously a model also had to be specified with `-s plugins.datasette-agent.default_model gpt-6-astra`. ^[raw/articles/simonwillison.net--2026-oct-31-datasette-llm--d7ef0b33.md]
 
 
 ### GitHub AuthUsers sign into [agent.datasette.io](https://agent.datasette.io) using their GitHub account.

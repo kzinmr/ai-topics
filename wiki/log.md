@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-11-01] watchdog | auto-fix — blog chain break repaired (3 orphaned triage takes ingested)
+
+- Alert: pipeline watchdog reported `blog` chain broken (triage_ok_but_wiki_ingest_failed) for run `20261101T100049Z`. Live check: triage saved 4 `take` decisions but `blog-wiki-ingest` never ran (no commit since 10:26; checkpoint intact at `cron/data/blog_ingest/triage_latest.json`).
+- Ingested 3 orphaned takes:
+  - `entities/seangoedecke-com.md` — added "Fast and slow ways to improve your reputation" (2026-10-31) to Recent Articles + frontmatter source.
+  - `entities/datasette-agent.md` — added datasette-llm 0.1a9 zero-config default model section + frontmatter source.
+  - `entities/troy-hunt.md` — added Weekly Update 528 timeline row (Proton CEO "help the LLM write better code faster" endorsement) + populated previously-empty `sources:`.
+- Take #4 (How We Took Over ChatGPT Accounts) already covered — active-crawl created `concepts/chatgpt-html-preview-account-takeover.md` referencing both raws at 11:05, after the ingest failure.
+- Pre-existing unrelated WIP left untouched: JP→EN translation of `queries/modernization-inner-loop-reading.md` (clean translation, JP-free, validator pass) + `daily-rss-triage/SKILL.md` edit.
+- Index corruption scan: 0 pipe/line-number/triple-bracket/space-prefix issues; `validate_index.py` clean (3393 lines). No index.md changes needed (no new pages).
+
 ## [2026-11-01] Trending-topics report
 
 - New: concepts/hackertube.md (Karpathy Opus 5.5 build, 1449 pts HN) + raw 2026-10-31_karpathy-hackertube.md

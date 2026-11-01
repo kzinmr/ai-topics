@@ -1,9 +1,10 @@
 ---
 title: "Troy Hunt"
 tags: [person]
-sources: []
+sources:
+  - raw/articles/troyhunt.com--weekly-update-528--1249e07d.md
 created: 2026-04-24
-updated: 2026-10-19
+updated: 2026-11-01
 type: entity
 ---
 
@@ -47,6 +48,7 @@ In November 2024, Hunt hired HIBP's first employee — marking the transition fr
 | 2026 | Ongoing weekly blog posts on breach disclosure, AI agents, and operational transparency |
 | 2026-04 | HIBP MCP Server launched — enables AI agents to query breach data via Model Context Protocol |
 | 2026-04 | Published agentic AI workflow demos with OpenClaw + Telegram for HIBP API integration |
+| **2026-10-31** | Weekly Update 528 — endorses the Proton CEO's "your job is to help the LLM write better code faster" framing ("Yes! This!"), arguing not handwriting code is something to be excited about rather than lamented; also covers reading AI-generated code and the economics of solar ^[raw/articles/troyhunt.com--weekly-update-528--1249e07d.md] |
 
 ## Core Ideas
 
