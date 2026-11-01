@@ -1,3 +1,11 @@
+## [2026-11-01] skeleton-enrich | Empty run — backlog still empty (streak since 2026-10-17)
+
+- Frontmatter scan of wiki/entities/ + wiki/concepts/: 0 pages with status:skeleton. Snapshot saved to [[queries/2026-11-01-skeleton-enrich-empty]]; index.md updated.
+- 413 status:stub concept pages are intentional bulk-import low-depth pages, not skeleton targets (fallback stub mode not active for this job).
+- No pages created or modified beyond the snapshot; pre-existing WIP (skills edits, modernization query translation) left untouched.
+
+---
+
 ## [2026-11-01] auto-fix | Delete duplicate redirect stubs (orphan cleanup)
 
 - Deleted `concepts/evals-skills.md` and `concepts/evals-skills-for-coding-agents.md` (19/18 lines, `status: redirect` stubs pointing to `comparisons/evals-skills`).
