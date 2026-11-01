@@ -1,3 +1,11 @@
+## [2026-11-01] auto-fix | Delete duplicate redirect stubs (orphan cleanup)
+
+- Deleted `concepts/evals-skills.md` and `concepts/evals-skills-for-coding-agents.md` (19/18 lines, `status: redirect` stubs pointing to `comparisons/evals-skills`).
+- No inbound `[[concepts/evals-skills...]]` wikilinks existed; canonical `comparisons/evals-skills` remains indexed. Resolves the 2 orphan pages reported by wiki_health digest.
+- index.md structural checks clean (0 pipe/line-number/triple-bracket/space-prefix issues); validate_index.py passes.
+
+---
+
 # Wiki Log
 
 ## [2026-11-01] watchdog | auto-fix — blog chain break repaired (3 orphaned triage takes ingested)
