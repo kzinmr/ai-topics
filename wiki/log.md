@@ -16,6 +16,14 @@
 
 # Wiki Log
 
+## [2026-11-01] ingest | x-accounts-scan: Vercel Labs agent-desktop launch
+
+- Scanned 11 tracked accounts (budget 12); 2 new substantive candidates, 0 errors.
+- **@ctatedev (Chris Tate)** amplified the **Vercel Labs agent-desktop** launch (2026-10-31, built by @mdlahfir). Fetched parent announcement tweet via xurl, scraped GitHub README. Created `events/vercel-agent-desktop-launch-2026.md` (Rust computer-use tool: OS accessibility-tree snapshots with stable refs, headless multi-agent desktop control, macOS/Windows/Linux). Saved raw `raw/articles/github.com--vercel-labs-agent-desktop--2026-11-01.md`. Updated `entities/chris-tate.md` (X Activity Log Oct 31 + sources) and `entities/vercel-labs.md` (project list). Index Events count 46→47.
+- **@vtrivedy10 (Varun Trivedy)** thin reply praising Randall Balestriero's spline-theory-of-NN paper — **logged only** (added dated X Activity entry to `entities/varun-trivedy.md`), no new page (2018 ICML paper, off core scope).
+
+---
+
 ## [2026-11-01] watchdog | auto-fix — blog chain break repaired (3 orphaned triage takes ingested)
 
 - Alert: pipeline watchdog reported `blog` chain broken (triage_ok_but_wiki_ingest_failed) for run `20261101T100049Z`. Live check: triage saved 4 `take` decisions but `blog-wiki-ingest` never ran (no commit since 10:26; checkpoint intact at `cron/data/blog_ingest/triage_latest.json`).

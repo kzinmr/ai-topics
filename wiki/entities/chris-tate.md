@@ -2,7 +2,7 @@
 title: Chris Tate
 type: entity
 created: 2026-04-10
-updated: 2026-10-19
+updated: 2026-11-01
 source: "x-account"
 related: [entities/simonw, entities/antirez-com, entities/geoffreylitt-com, entities/mitsuhiko]
 tags:
@@ -12,6 +12,8 @@ tags:
   - developer-tooling
   - company
 sources:
+  - https://x.com/ctatedev/status/2116323148706771302
+  - raw/articles/github.com--vercel-labs-agent-desktop--2026-11-01.md
   - raw/articles/2026-08-19_ctatedev_fx-tiny-open-native-coding-agent.md
   - https://github.com/vercel-labs/scriptc
   - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon
@@ -135,6 +137,8 @@ He occasionally shares **technical threads** explaining the reasoning behind his
 - **Oct 12 — scriptc + Effect:** Replied that **much of Effect 3 + 4 can be compiled with scriptc**, inviting issue reports for missing features. Effect is a large, type-heavy TypeScript effect system — early evidence that scriptc's static path handles real-world advanced-type codebases.
 - **Oct 14 — scriptc v0.3.2:** Announced **scriptc v0.3.2**. Vercel Labs pins a specific scriptc version per consumer project (e.g. `tsc-ts` pins scriptc 0.3.6), so point releases are tracked closely downstream.
 - **Oct 17 — [tsc-ts](https://github.com/vercel-labs/tsc-ts):** Announced **tsc-ts**, an experimental **TypeScript port of the TypeScript 7.0.2 compiler (tsgo / TypeScript-Go), compiled to native code with scriptc** (`npm i tsc-ts`). Headline benchmarks vs tsgo: **VS Code 4.2×, Sentry 4.2×, TypeORM 3×, tRPC 2.8× faster type-checking**. Every compiler stage (scanner, parser/AST, binder, module resolution, tsconfig/programs, CLI options, diagnostics catalog incl. 13 translations, JS emit across 39 option sets, declaration emit) is verified against tsgo on TypeScript's own test corpus (~12,500 files / ~17,000 units) with all compared units matching. See [[concepts/scriptc-typescript-native-compiler]].
+
+- **Oct 31 — [agent-desktop](https://github.com/vercel-labs/agent-desktop):** Amplified the launch of **agent-desktop**, a Rust-based **[[concepts/computer-use]]** tool from **Vercel Labs** — "agent-browser, for your whole computer" — built by **@mdlahfir**, who "just joined the Vercel Labs team." Tate: *"Star it, fork it, tell your agents about it."* It gives any coding agent reliable desktop computer use (macOS/Windows/Linux) by reading the OS **accessibility tree** rather than guessing from pixels, with stable refs and retry-safe actions, running headless in the background while agents work in parallel each with their own cursor. See [[events/vercel-agent-desktop-launch-2026]].
 
 ## Notable Quotes & Statements
 

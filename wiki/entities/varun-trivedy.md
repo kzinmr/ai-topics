@@ -3,7 +3,7 @@ title: Varun Trivedy
 type: entity
 handle: "@Vtrivedy10"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-11-01
 tags:
   - person
   - model
@@ -153,6 +153,10 @@ In "How we build evals for Deep Agents" (Mar 2026, co-authored with Sydney Runkl
 | 2025-10-24 | [The Modern Planning Agent is a Dynamic, Adaptive Workflow Generator](https://vtrivedy.com/posts/the-modern-planning-agent/) | Planning agents as just-in-time workflow generators, not static planners. |
 | 2025-09-23 | [The Claude Code SDK and the Birth of HaaS](https://vtrivedy.com/posts/the-claude-code-sdk-and-the-birth-of-haas/) | Shift from LLM APIs to Harness APIs. Claude Code SDK enables rapid agent development. |
 | 2025-08-06 | [Welcome to My Blog](https://vtrivedy.com/) | Introduction and overview of research focus areas. |
+
+## X Activity Log (Nov 2026)
+
+- **Nov 1 — Randall Balestriero / spline theory of NNs:** In a reply to [[entities/mario-zechner|Mario Zechner]] (@badlogicgames), Trivedy praised Randall Balestriero's "spline theory of neural networks" work — chopping a network's latent-space representations into piecewise functions to make decisions — calling it "all so beautiful … forever in awe" while noting it "doesn't come up in the day to day brain but man is it cool." ([X](https://x.com/vtrivedy10/status/2116965934418067891), linking the [ICML 2018 paper](https://proceedings.mlr.press/v80/balestriero18b/balestriero18b.pdf)). Context: a reply under Zechner's "sample efficiency is the actual frontier" post. Thin link-share of a legacy paper — logged, not ingested as a page.
 
 ## Related People
 

@@ -59,30 +59,30 @@ sources: [
 ]
 ---
 
-# Modernization Inner-loop Reading — 案件実行
+# Modernization Inner-loop Reading — Project Execution
 
-[O’Reilly：inner-loop／案件実行](https://learning.oreilly.com/playlists/881eb67b-8276-489e-ad26-d009b8b2a34f/) · [[queries/modernization-reading-guide|選書ガイドの入口]]
+[O'Reilly: inner-loop / project execution](https://learning.oreilly.com/playlists/881eb67b-8276-489e-ad26-d009b8b2a34f/) · [[queries/modernization-reading-guide|Reading guide entry point]]
 
-個別のJava／企業システムを安全に移行するための42冊・7分類。自動変換やAgentも、案件を進める道具として扱う。対象システムのlogging戦略・設計・運用を含み、調査から本番受入までをつなぐ。
+42 books in 7 categories for safely migrating an individual Java / enterprise system. Automated transformation tools and Agents are treated as instruments for advancing the project. Includes the target system's logging strategy, design, and operations, connecting discovery through production acceptance.
 
-[[queries/modernization-inner-loop-sources|公開範囲・ライセンス・raw原資料]] · [[queries/modernization-inner-loop-study-notes|読解範囲と知見]] · [[concepts/legacy-modernization-moc|重要コンセプトの案内]]
+[[queries/modernization-inner-loop-sources|Public availability, licensing, raw source materials]] · [[queries/modernization-inner-loop-study-notes|Reading scope and findings]] · [[concepts/legacy-modernization-moc|Guide to key concepts]]
 
 Account-free learning: [concept study guide](modernization-independent-study-guide.md), [worked exercise](modernization-batch-example.md), and [[queries/modernization-reading-continuation|priority-reading continuation]].
 
-## 最初に読む順番
+## Reading order to start with
 
-1. **Working Effectively with Legacy Code** — 既存挙動の証拠と、変更可能な境界を作る。
-2. **Specification by Example** — SMEの判断を具体例と受入条件にする。聞き取りやルール整理が難しければI-02の追加書を補う。
-3. **Monolith to Microservices** — 段階的移行、新旧共存、切替単位を決める。
-4. **Effective Software Testing** — 仕様・境界値・性質から独立した検証を作る。
-5. **Building Evolutionary Architectures** — 守る設計特性を測れる制約にする。
-6. **Continuous Delivery** と **Release It!** — 再現環境、受入、切替、本番回復をつなぐ。
+1. **Working Effectively with Legacy Code** — Establish evidence of existing behavior and create boundaries that can be changed.
+2. **Specification by Example** — Turn SME judgments into concrete examples and acceptance criteria. If interviews and rule elicitation are hard, supplement with the additional books in I-02.
+3. **Monolith to Microservices** — Decide incremental migration, old/new coexistence, and cutover units.
+4. **Effective Software Testing** — Build independent verification from specifications, boundary values, and properties.
+5. **Building Evolutionary Architectures** — Turn the design characteristics you must protect into measurable constraints.
+6. **Continuous Delivery** and **Release It!** — Connect reproducible environments, acceptance, cutover, and production recovery.
 
-RefactoringはI-01で、小さな変換の原則とカタログを参照する。テストのないコードに検証の足場を作る方法と、業務上の正解の決定は、最初の2冊で補う。I-06は案件のJavaリスクに応じて、I-07は案件初期から参照する。
+For Refactoring, see I-01 for the principles of small transformations and the catalog. How to build verification scaffolding for untested code, and how to decide business-correct answers, are covered by the first two books. Consult I-06 according to the project's Java risks, and I-07 from the very start of the project.
 
-loggingは、GOOS第19〜20章で運用要求と実装の分離を学び、Logging and Log Managementで戦略、SRE第2版・Workbookで健全性判定、Observability Engineeringで計装と調査へ進む。追加の参照書は各行の優先度・条件で選ぶ。詳しくは[[queries/modernization-java-logging]]を参照。
+For logging, learn the separation of operational requirements and implementation in GOOS chapters 19-20, strategy in Logging and Log Management, health assessment in SRE 2nd Edition and the Workbook, and instrumentation and investigation in Observability Engineering. Choose additional references by the priority and conditions in each row. See [[queries/modernization-java-logging]] for details.
 
-「共通」は別の読書リストにも載せる本だが、ここでは本表の目的・章だけを読む。「必要章を指定しない」は全編必読を意味せず、用途に該当する項目を参照する。古いAPI・JVM設定は対象JDKで再確認する。
+Books marked "Shared" also appear on other reading lists, but here read only the purpose and chapters specified in this table. "No required chapters specified" does not mean read the whole book — consult the entries relevant to your use case. Recheck old APIs and JVM settings against the target JDK.
 
 ## I-01 方針・範囲・段階的変更
 
