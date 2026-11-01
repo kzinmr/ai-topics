@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-10-31
+updated: 2026-11-01
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -860,6 +860,10 @@ Anthropic donated the **Agent Skills standard** (SKILL.md format) to the **Agent
 
 Source: [[raw/articles/simonwillison.net--2026-oct-22-donating-agent-skills--4b2657f9.md]]
 
+## Usage-Policy Enforcement Backlash (October 30–31, 2026)
+
+Community reports of Claude blocking **anything touching training of larger models** (X post by @jiahaoshao1; HN 367 pts / 209 comments) and **video-game reverse-engineering/recreation** tasks (Mashable, GameDeveloper, Tom's Hardware; HN 149 + 124 pts) produced the week's largest developer-relations controversies. Self-reported patterns: US/EU users refused on weight-modification and SOTA training topics; one enterprise user reported zero friction building a LoRA training stack, suggesting classifier-triggered rather than topic-wide enforcement; game-recreation and generic RE tasks also blocked. No accompanying public policy-text update; enforcement targets illicit distillation (named in the September 2026 threat report above) but self-reports show false positives on legitimate ML research and security work. Analysis: [[concepts/frontier-model-usage-policy-enforcement-2026-10]]. ^[raw/articles/2026-10-31_hn-discussion_anthropic-blocks-training-large-models.md] ^[raw/articles/2026-10-31_mashable_anthropic-blocks-video-game-reverse-engineering.md] (⚠️ user self-reports + secondary press; `confidence: medium`)
+
 ## Related Pages
 - [[Claude models]] — Model family details
 - [[concepts/ai-economics]] — Tokenmaxxing, AI ROI debate
@@ -890,6 +894,7 @@ Source: [[raw/articles/simonwillison.net--2026-oct-22-donating-agent-skills--4b2
 
 ## Log
 
+- 2026-11-01: Added "Usage-Policy Enforcement Backlash (October 30-31, 2026)" section — Claude blocks on training-larger-models topics (HN 367) + video-game RE refusals (HN 149/124); analysis in [[concepts/frontier-model-usage-policy-enforcement-2026-10]]. Sources: HN item 50319358, Mashable/GameDeveloper (secondary).
 - 2026-10-22: Added "Claude Duet — Proactive Personal Agent (October 21, 2026)" section — Opus 5.5-powered proactive personal agent (research preview, Pro/Max, US), morning-brief cadence, explicit approve/not-now gates on payments and irreversible actions, continuity of Claude memory/skills/apps, 6,000+ connectors, user-built "Marlo Pulse" daily health dashboard. Source: claude.com/product/claude-duet, HN 427p.
 
 - 2026-09-23: Added "Claude Opus 5.5 + /compact Incident (Sep 22, 2026)" section — Opus 5.5 at $5/$25 (2.5x cheaper than GPT-6 Astra), same-day /compact 1/1000 rollout cache-wipe bug, and the Valve Peaks case study (~14-person team, Claude Code as main tool). Sources: Simon Willison (Sep 22), Ethan Mollick.

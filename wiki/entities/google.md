@@ -2,7 +2,7 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-08-11
+updated: 2026-11-01
 tags: [company, lab, product, platform, infrastructure, gemini, ai-industry-economics, business-model]
 aliases: ["Google DeepMind", "Google Research"]
 sources: [
@@ -105,6 +105,7 @@ Google is in discussions with SpaceX about **Project Suncatcher**, a concept for
 - **Advantage**: Orbital solar power is ~8× more efficient than ground-based solar
 - **Rationale**: Break through terrestrial compute constraints by leveraging SpaceX's launch capacity
 - **Related**: SpaceX holds a $60B option to acquire Cursor (see [[entities/openai]])
+- **Status update (Oct 30, 2026)**: Prototype launched October 1; on October 30 Google announced the **"Hello World" milestone — the first-ever AI response from a data-center-class TPU in orbit**: an onboard **Gemma 4** open model generated a haiku about being in space (uplinked during a ground-station pass, downlinked over Svalbard, Norway), followed by limerick and telemetry-prompt tests. Next: TPU thermal-stress and radiation tests, then twin interconnected satellites in 2027. Full page: [[concepts/project-suncatcher]]. Source: blog.google (Travis Beals, VP Paradigms of Intelligence), HN 42.
 
 
 

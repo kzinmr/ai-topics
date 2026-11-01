@@ -5,7 +5,7 @@ aliases:
   - reverse-engineering
   - RE
 created: 2026-04-25
-updated: 2026-04-29
+updated: 2026-11-01
 tags:
   - concept
   - reverse-engineering
@@ -62,6 +62,10 @@ Reverse engineering has two sides in AI security:
 - **Terms of Service compliance**: Many AI services prohibit reverse engineering
 - **Responsible disclosure**: Report discovered vulnerabilities appropriately
 - **Educational context**: Use for security research and learning purposes
+
+## Recent Developments
+
+- **Oct 2026 — Anthropic blocks video-game reverse engineering**: Users reported Claude refusing video-game recreation/cloning and generic reverse-engineering tasks (Mashable, GameDeveloper, Tom's Hardware; HN 149/124 pts), part of a broader usage-policy enforcement wave that also blocked training-internals topics. The lab-encoding-of-publisher-friendly-restrictions question and its false-positive pattern are analyzed in [[concepts/frontier-model-usage-policy-enforcement-2026-10]].
 
 ## Related Concepts
 
