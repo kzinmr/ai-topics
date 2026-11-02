@@ -1,3 +1,13 @@
+## [2026-11-02] llm-pricing-monitor | Live pricing refresh — major drift found: GPT-6 family + Claude 5.5 gen + Gemini 4 Argon added
+
+- Refreshed [[comparisons/llm-api-pricing]] from live official pages (OpenAI Astro pricing page, Anthropic docs RSC JSON, Vertex AI pricing, OpenRouter cross-check). Previous page state was 2026-08-24.
+- **Changes applied**: Added OpenAI GPT-6 family (Astra $10/$50, 6.1 Sol $2/$10 cached $0.10, 6 Sol $2/$10, 6.1 Terra $1/$5, 6 Luna $0.10/$0.50, Rosalind $15/$75); added Anthropic 5.5 generation (Opus 5.5 $4/$20, Sonnet 5.5 $2/$10, Haiku 5.5 $0.10/$0.50, Fable 5.1 $10/$50 cache read $0.25); added Google Gemini 4 Argon (intro $2/$10 → $4/$20 on 2026-12-01) and Gemini 3.8 Flash (intro $0.75/$3.75); added DeepSeek V4.1-Flash-1017 ($0.15/$0.60).
+- **Corrections**: Claude Sonnet 5 intro promo ($2/$10) expired 2026-08-31 → corrected to standard $3/$15 with † footnote. Footnote block rewritten (5 active promos as of 2026-11-02).
+- **Verified unchanged**: GPT-5.6 family promo tuples, gpt-5.6-cyber, gpt-5.3-codex, GPT-5.5/5.4 line, Gemini 3.7/3.6/3.5 Flash + Lite + 3.1 Pro, old-gen Anthropic models. DeepSeek official page served a JS shell to curl; V4-Flash/V4-Pro rows carried forward from 2026-08-17 verification.
+- Raw evidence notes: `raw/articles/2026-11-02_openai-pricing-page-gpt6-family-scrape.md`, `raw/articles/2026-11-02_anthropic-google-deepseek-pricing-scrape.md`.
+
+---
+
 ## [2026-11-02] tag-audit | Weekly tag taxonomy audit — clean (0 violations)
 
 - Ran `scripts/tag_audit.py`: 3,424 pages scanned, 959 unique tags in use vs 1,045 SCHEMA tags.
