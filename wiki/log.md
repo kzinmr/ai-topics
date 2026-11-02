@@ -1,28 +1,16 @@
-## [2026-11-02] health-fix | wiki-health-fix cron — full clean, 1 ghost entry removed
-
-### Changes
-- Verified index.md structural health: pipe_prefix=0, line_number_prefix=0, triple_bracket=0, space_prefix=0, double_pipe=0
-- wiki_health.py --json: orphan_count=0, page_name_policy violations=0, 0 skeleton entities
-- Ghost scan (recursive, incl. dir-hub _index + redirect-arrow checks): 1 real ghost found
-  - Removed flat `[[concepts/harness-engineering-101]]` see-line from index.md (canonical subdir entry retained; no other page wikilinks to the flat slug)
-- validate_index.py passed (3403 lines); committed & pushed
-- No auto-fixable issues remaining; stale (2879) and unprocessed-raw (6891) are report-only classes
-
----
-
-## [2026-11-02] health-fix | wiki-health-fix cron — full clean, 1 ghost entry removed
-
-### Changes
-- Verified index.md structural health: pipe_prefix=0, line_number_prefix=0, triple_bracket=0, space_prefix=0, double_pipe=0
-- wiki_health.py --json: orphan_count=0, page_name_policy violations=0, 0 skeleton entities
-- Ghost scan (recursive, incl. dir-hub _index + redirect-arrow checks): 1 real ghost found
-  - Removed flat `[[concepts/harness-engineering-101]]` see-line from index.md (canonical subdir entry retained; no other page wikilinks to the flat slug)
-- validate_index.py passed (3403 lines); committed & pushed
-- No auto-fixable issues remaining; stale (2879) and unprocessed-raw (6891) are report-only classes
-
----
-
 # Wiki Log
+## [2026-11-02] health-fix | wiki-health-fix cron — full clean, 1 ghost entry removed
+
+### Changes
+- Verified index.md structural health: pipe_prefix=0, line_number_prefix=0, triple_bracket=0, space_prefix=0, double_pipe=0
+- wiki_health.py --json: orphan_count=0, page_name_policy violations=0, 0 skeleton entities
+- Ghost scan (recursive, incl. dir-hub _index + redirect-arrow checks): 1 real ghost found
+  - Removed flat `[[concepts/harness-engineering-101]]` see-line from index.md (canonical subdir entry retained; no other page wikilinks to the flat slug)
+- validate_index.py passed (3403 lines); committed & pushed
+- No auto-fixable issues remaining; stale (2879) and unprocessed-raw (6891) are report-only classes
+
+---
+
 ## [2026-11-02] watchdog | auto-fix — executed 4 deferred duplicate merges from 10-30 graph analysis
 
 ### Context
