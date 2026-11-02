@@ -10,7 +10,7 @@ tags:
 status: complete
 description: "NVIDIA's open-source secure runtime for autonomous AI agents. Provides sandboxed execution with kernel-level isolation and declarative YAML policy enforcement."
 created: 2026-04-30
-updated: 2026-05-08
+updated: 2026-11-02
 sources:
   - "https://github.com/NVIDIA/OpenShell"
   - "https://developer.nvidia.com/blog/run-autonomous-self-evolving-agents-more-safely-with-nvidia-openshell"
@@ -107,6 +107,17 @@ OpenShell is the runtime component of **NVIDIA NemoClaw**, the reference stack f
 - OpenShell (sandbox runtime)
 - OpenClaw-compatible agent framework
 - NVIDIA Nemotron models
+
+## Launch (October 2026)
+
+OpenShell's README launch reached Hacker News on 2026-10-22 at ~499 points. At launch the repo carried ~19.7k stars, ~2.0k forks and 1,861 commits; the **0.1.x** line introduced a stable release cadence, new isolation primitives, an expanded extension surface, and new APIs. Docs: `docs.nvidia.com/openshell/latest/`.
+
+- **Implementation**: Apache-2.0 licensed, written in **Rust**.
+- **Two enforcement axes**: (1) kernel-level runtime enforcement — file/syscall confinement plus a policy check on *every* outbound connection; (2) **formally verified policy changes** — an advisor + prover pair in the Policies subsystem flags risky new access (new host with credentials, new API method) so such changes wait for human review. See [[concepts/formal-methods]].
+- **Egress credential injection**: agents never see real credentials; OpenShell injects secrets only onto requests bound for approved endpoints — the same "secrets-at-egress" pattern independently surfaced by Google's per-agent microVM work, implemented here as a policy-governed gateway.
+- **Platform**: Linux, macOS (Apple Silicon), Windows via WSL 2 (experimental); Docker, Podman or host virtualization. One-line `install.sh`, then `openshell sandbox create --name demo`.
+- **Agent-first tooling**: `npx skills add NVIDIA/OpenShell` skill, plus `@nvidia/openshell-sdk` (npm), Go and Rust SDKs. The repo dogfoods agent-driven development (`AGENTS.md`, `CLAUDE.md`, `.opencode/agents`, `skills/`, `rfc/` board). Telemetry is anonymous operational counts only (disable via `OPENSHELL_TELEMETRY_ENABLED=false`).
+- **Positioning**: peer to [[entities/e2b]], Modal/Cloudflare agent runtimes, the Claude Code sandbox, OpenAI's Codex sandbox and [[concepts/omnara]] — distinguished by kernel syscall-level enforcement + formal verification of *policy diffs* (not of the code the agent runs) + egress credential injection.
 
 ## Related Concepts
 

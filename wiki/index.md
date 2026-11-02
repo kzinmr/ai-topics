@@ -634,7 +634,7 @@
 - [[entities/nvidia-nemotron-3-nano-omni]] — NVIDIA Nemotron 3 Nano Omni
 - [[entities/nvidia-nemotron-3-ultra]] — NVIDIA Nemotron 3 Ultra
 - [[entities/nvidia-nemotron-labs-diffusion]] — NVIDIA Nemotron-Labs-Diffusion
-- [[entities/nvidia-openshell]] — NVIDIA's open-source secure runtime for autonomous AI agents. Provides sandboxed execution with kernel-level isolatio...
+- [[entities/nvidia-openshell]] — NVIDIA's open-source (Apache-2.0, Rust) secure runtime for autonomous AI agent fleets. Kernel-level syscall/file/network enforcement, formally verified policy diffs (advisor+prover), egress credential injection so agents never hold secrets. HN launch 2026-10-22 (~499 pts, 19.7k stars). Runtime layer of NemoClaw.
 - [[entities/nvidia-sana-wm]] — NVIDIA SANA-WM
 - [[entities/odyssey-ml]] — Odyssey ML
 - [[entities/oldvcr-blogspot-com]] — OldVCR (Cameron Kaiser / ClassicHasClass)
@@ -1412,9 +1412,9 @@
 - [[concepts/alex-hall]] — alex-hall
 - [[concepts/alex-krizhevsky]] — Alex Krizhevsky
 - [[concepts/allen-institute-ai]] — allen-institute-ai
-- [[concepts/alpha-proof-nexus]] — AlphaProof Nexus
+- [[concepts/alpha-proof-nexus]] — AlphaProof Nexus — DeepMind LLM+Lean parallel proof search (arXiv:2605.22763); 9 Erdős problems, 44 OEIS proofs, EVOLVE-VALUE
 - [[concepts/alphaevolve]] — AlphaEvolve
-- [[concepts/alphaproof-nexus]] — AlphaProof Nexus
+- [[concepts/alphaproof-nexus]] — AlphaProof Nexus — Redirect → [[concepts/alpha-proof-nexus]] (duplicate; unique facts preserved in stub)
 - [[concepts/altman-three-observations]] — Altman's Three Observations
 - [[concepts/ambient-agency]] — Ambient Agency
 - [[concepts/ambient-agents]] — Ambient Agents
@@ -1819,8 +1819,8 @@
 - [[concepts/deepseek-vision]] — DeepSeek Vision — Multimodal Capabilities
 - [[concepts/deepspec-dspark]] — DeepSpec & DSpark — DeepSeek open-source speculative decoding inference framework; DSpark distributed engine achieves 60–85% faster LLM generation; supports DSpark/DFlash/Eagle3 draft models (June 27)
 - [[concepts/deepspeed]] — Microsoft DeepSpeed
-- [[concepts/deer-flow]] — DeerFlow
-- [[concepts/deerflow]] — DeerFlow
+- [[concepts/deer-flow]] — DeerFlow — ByteDance MIT SuperAgent harness (72.9k stars); sub-agents, memory, per-agent Docker sandbox, progressive skills
+- [[concepts/deerflow]] — DeerFlow — Redirect → [[concepts/deer-flow]] (duplicate; v1-era facts preserved in stub)
 - [[concepts/defending-code-reference-harness]] — Defending Code Reference Harness
 - [[concepts/defense-in-depth]] — Defense in Depth (AI Security)
 - [[concepts/defenseclaw]] — DefenseClaw
@@ -2586,7 +2586,7 @@
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo
 - [[concepts/nvidia-egpu-macos]] — NVIDIA eGPU on macOS
 - [[concepts/nvidia-egpu-on-macos]] — NVIDIA eGPU on macOS
-- [[concepts/nvidia-openshell]] — NVIDIA OpenShell — Apache-2.0 Rust runtime for autonomous agent fleets; kernel-level syscall/file/network enforcement, formal verification of policy diffs, egress credential injection (Oct 2026)
+- [[concepts/nvidia-openshell]] — NVIDIA OpenShell — Redirect → [[entities/nvidia-openshell]] (duplicate; launch facts preserved in stub)
 - [[concepts/nvidia-rtx-ai-garage]] — NVIDIA RTX AI Garage
 - [[concepts/nvidia-vera-rubin]] — NVIDIA Vera Rubin Platform
 - [[concepts/nvfp4-4bit-floating-point]] — NVFP4 — 4-Bit Floating Point on Blackwell — NVIDIA's native hardware support for 4-bit floating-point inference with 2-3x throughput vs FP8 and 3.5x less memory than BF16

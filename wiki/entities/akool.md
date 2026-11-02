@@ -40,5 +40,5 @@ Jiajun (Jeff) Lu — "This is the moment AI video becomes truly usable. We didn'
 
 - [[concepts/antangelmed]] — Medical MoE model (also using MoE for efficient inference)
 - [[concepts/granite-4-1]] — IBM's enterprise model family with FP8 quantization for inference
-- [[concepts/deerflow]] — ByteDance's super agent harness
+- [[concepts/deer-flow]] — ByteDance's super agent harness
 - [[concepts/inference]] — AI inference optimization concepts

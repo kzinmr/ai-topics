@@ -49,6 +49,6 @@ The field has converged on a clear diagnosis: naive single-pass translation fail
 ## Related
 
 - [[concepts/formal-verification-llm-agents]] — using formal methods to verify LLM agent behavior
-- [[concepts/alphaproof-nexus]] — theorem-proving model lineage
+- [[concepts/alpha-proof-nexus]] — theorem-proving model lineage
 - [[concepts/napkin-math-for-finetuning]] — cost context for training formalization models
 - [[entities/openai-astra]] — OpenAI's Astra and its Lean-certificate math advances

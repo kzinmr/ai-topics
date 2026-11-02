@@ -252,7 +252,7 @@ currently rate-limited. See [[concepts/ai-energy]] and [[concepts/sovereign-ai]]
 
 Companion announcements the same day: **OpenShell**, a reference architecture that
 gives agents minimum rights plus hardware-level monitoring (Anthropic and Nebius are
-among the partners) — see [[concepts/nvidia-openshell]] — and Nebius publishing live
+among the partners) — see [[entities/nvidia-openshell]] — and Nebius publishing live
 GPU **spot prices** plus a **$3.5B Citi loan facility** for data-centre build-out
 ([[concepts/gpu-cloud-rankings]]).
 

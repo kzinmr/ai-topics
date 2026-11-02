@@ -1,7 +1,7 @@
 ---
 title: AlphaProof Nexus
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-11-02
 type: concept
 tags:
   - concept

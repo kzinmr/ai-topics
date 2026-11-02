@@ -1,4 +1,33 @@
 # Wiki Log
+## [2026-11-02] watchdog | auto-fix — executed 4 deferred duplicate merges from 10-30 graph analysis
+
+### Context
+Daily watchdog run. Index corruption pre-checks all clean (pipe/line-number/triple-bracket/double-pipe/space-prefix = 0, `validate_index.py` exit 0), no pipeline alerts, 0 top-level unindexed pages, `log.md` healthy (1 header, 0 orphan `###` lines). The only outstanding actionable backlog was the 4 duplicate merges the 2026-10-30 weekly graph analysis explicitly deferred to the next health-fix run. wiki-health-fix had not yet run today (17:35 vs its 17:50 slot), so no collision risk.
+
+### Merges executed (all verified by reading both pages before acting)
+
+| Duplicate | Canonical | Action |
+|---|---|---|
+| `concepts/deerflow` (51L) | `concepts/deer-flow` (92L) | → redirect stub; v1-era facts preserved (full name, MIT/67.5k stars, AIO Sandbox, InfoQuest, Install.md bootstrap, Feb 28 2026 #1 trending) |
+| `concepts/alphaproof-nexus` (52L) | `concepts/alpha-proof-nexus` (142L) | → redirect stub; unique facts preserved (arXiv:2605.22763 Tsoukalas et al., Agent D, EVOLVE-VALUE, results table, neuro-symbolic framing) |
+| `concepts/nvidia-openshell` (68L) | `entities/nvidia-openshell` (117L) | → redirect stub; Oct-2026 launch block **added to canonical** (Apache-2.0/Rust, HN 2026-10-22 ~499 pts, 19.7k stars, 0.1.x line, two enforcement axes, egress credential injection, agent-first tooling, positioning) — canonical previously lacked all of it |
+| `concepts/cline` ↔ `entities/cline` | both kept | added missing `[[concepts/cline]]` back-link to entity page (4th reported action) |
+
+### Wikilink retargets (7 files)
+`concepts/deer-flow`, `concepts/mathcode`, `concepts/autoformalization`, `concepts/granite-4-1`, `concepts/nvidia-vera-rubin`, `entities/akool`, `entities/bytedance` — all inbound links moved to canonical slugs. `entities/bytedance` had a resulting duplicate `deer-flow` line, collapsed.
+
+### Index
+3 redirect-stub entries annotated with `Redirect →` (matching the existing `entities/kyle-corbett` / `entities/emollick` / `concepts/gapa` convention — stubs stay indexed, not deleted). Stale one-line descriptions enriched for `alpha-proof-nexus`, `deer-flow`, `entities/nvidia-openshell`. No net page count change (redirects preserve files).
+
+### Verification
+`validate_index.py` exit 0 (3404 lines); corruption scan all-zero; every touched file retains ≥1 heading (no content loss); no dangling refs to merged slugs except the intentional `deer-flow → deerflow` stub back-link.
+
+### Skipped (report-only)
+- 477 orphans / 3,378 broken links / 172 auto-fixable bare links — graph analysis is 74.5h old; the 10-29 health-fix session already moved these (−845 broken links). Re-run `wiki-graph-analysis` before acting on stale counts.
+- Archive of `queries/2026-10-04-uncommitted-wip-snapshot-query` (3,680L one-time snapshot) — deletion needs human review per watchdog rules.
+- 8 "genuine missing pages" (`entities/cursor`, `entities/ben-clavie`, `entities/huggingface`, `concepts/enterprise-ai`, …) — page creation is out of watchdog scope.
+
+---
 
 ## [2026-11-02] trending-topics
 - New: concepts/hackerbooks (HN 1404pts HackerTube spin-off), concepts/ai-agent-bureaucracy (YC labs Minecraft 50-agent failure), concepts/ai-cost-of-js-frameworks (Nolan Lawson token-cost benchmark), concepts/triggerdev-env-var-exposure-2026-11

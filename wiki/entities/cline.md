@@ -118,6 +118,7 @@ Cline's key differentiators are its **full open-source model**, **provider agnos
 
 ## Related Pages
 
+- [[concepts/cline]] — The Cline paradigm page: Plan/Act toggle, model agnosticism, `.clinerules`, self-driving codebases
 - [[concepts/coding-agents/coding-agents]] — Overview of the coding agent landscape
 - [[entities/devin]] — Cognition AI's proprietary coding agent
 - [[entities/cursor-3]] — Anysphere's IDE rebuilt for agent-driven development

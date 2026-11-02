@@ -1,7 +1,7 @@
 ---
 title: "DeerFlow"
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-11-02
 type: concept
 tags:
   - deer-flow
@@ -88,5 +88,5 @@ This represents a broader trend of Chinese tech companies entering the agent inf
 - [[concepts/sandbox]] — Agent sandboxing and isolation techniques
 - [[concepts/agent-harnesses]] — The broader agent harness philosophy and spectrum
 - [[concepts/deep-agents-runtime]] — Production agent runtime primitives
-- [[concepts/deerflow]] — Earlier DeerFlow entry (v1 era coverage)
+- [[concepts/deerflow]] — Redirect stub preserving v1-era unique facts (full name, MIT/67.5k stars, AIO Sandbox, InfoQuest, Install.md bootstrap)
 - [[entities/deepseek]] — DeepSeek v3, recommended coding model for DeerFlow

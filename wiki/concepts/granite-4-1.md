@@ -56,7 +56,7 @@ HuggingFace, Ollama, OpenRouter, Replicate, watsonx, AnythingLLM, LM Studio, Uns
 
 ## Related Pages
 
-- [[concepts/deerflow]] — ByteDance's open-source super agent harness
+- [[concepts/deer-flow]] — ByteDance's open-source super agent harness
 - [[concepts/antangelmed]] — 103B medical MoE model with GRPO training
 - [[entities/akool]] — AI video inference engine
 - [[concepts/post-training/grpo-rl-training]] — GRPO training methodology

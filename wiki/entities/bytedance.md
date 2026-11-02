@@ -62,7 +62,6 @@ ByteDance represents a major Chinese technology company transitioning from consu
 ## Related Pages
 
 - [[concepts/deer-flow]] — DeerFlow SuperAgent harness
-- [[concepts/deerflow]] — Earlier DeerFlow coverage
 - [[concepts/agent-harnesses]] — Agent harness philosophy and landscape
 - [[concepts/sandbox]] — Agent sandboxing and isolation
 - [[entities/tencent]] — Another Chinese tech giant with AI model development

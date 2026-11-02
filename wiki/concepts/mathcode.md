@@ -38,5 +38,5 @@ The repository was created 2026-04-02 (657 GitHub stars) and surfaced on Hacker 
 
 - [[concepts/autoformalization]] — the technique MathCode operationalizes
 - [[concepts/ai-mathematics-theorem-proving]] — AI theorem proving and TCS
-- [[concepts/alphaproof-nexus]] — theorem-proving model lineage
+- [[concepts/alpha-proof-nexus]] — theorem-proving model lineage
 - [[concepts/coding-agents/coding-agents]] — coding agent landscape
