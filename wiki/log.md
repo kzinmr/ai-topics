@@ -1,3 +1,12 @@
+## [2026-11-02] tag-audit | Weekly tag taxonomy audit — clean (0 violations)
+
+- Ran `scripts/tag_audit.py`: 3,424 pages scanned, 959 unique tags in use vs 1,045 SCHEMA tags.
+- Composite kebab-case tags: 0. Non-SCHEMA tags: 0. Coverage: 109% (all used tags valid).
+- No normalization applied, no TAG_NORMALIZATION mappings added, no SCHEMA.md changes.
+- Healthy baseline confirmed (see references/watchdog-healthy-baseline.md). Last audit 2026-10-26 (1 violation fixed).
+
+---
+
 ## [2026-11-01] skeleton-enrich | Empty run — backlog still empty (streak since 2026-10-17)
 
 - Frontmatter scan of wiki/entities/ + wiki/concepts/: 0 pages with status:skeleton. Snapshot saved to [[queries/2026-11-01-skeleton-enrich-empty]]; index.md updated.
