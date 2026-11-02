@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-10-19
+updated: 2026-11-02
 status: L3
 sources:
   - https://pluralistic.net/
@@ -369,6 +369,21 @@ Core theses:
 
 Adjacent to his [[concepts/enshittification]] framework and platform-monopoly work; the "surveillance is politics, not technopolitics" move is his counter to techno-determinist framings of AI-era data collection too.
 Source: [[raw/articles/pluralistic.net--2026-10-19-spying-v-context--4da82051.md]]
+
+### "Autodoxing" — VOLTA, Breach Data, and the Long Fuse of Bad Privacy Policy (Nov 2, 2026)
+
+In "[Pluralistic: Autodoxing](https://pluralistic.net/2026-11-02/agony-verification/)" (Nov 2, 2026), Doctorow uses the [[concepts/volta-infostealer-llm-victim-appraisal|VOLTA infostealer]] as the empirical anchor for his central policy claim: **"AI capabilities have made infostealers much worse, but the reason for that new potency lies in how AI capabilities are supercharged by breach data that is the foreseeable and foreseen consequence of generations of hostility to privacy on the part of policymakers and corporations."** The AI panic is misplaced causality — the fire was pre-laid by the "age of oily rags" (his revision of "data is the new oil": data is profitable only warehoused in unsafe quantities, with society paying for every conflagration).
+
+Key elements:
+- **VOLTA specifics**: targets "Discord, Telegram, Steam, and Roblox sessions" (younger users); merges stolen data with **Ticketmaster/Disney/AT&T** breach dumps; operators prompt the LLM "to act like an intelligence analyst and produce structured citation-backed assessment of the victim" (via Wired's Kernel Panic column).
+- **"Black October → Black November"**: the press frames AI-fueled breaches as weather ("disasters simply befall us, without any history or precedent or cause"); Doctorow insists on object permanence — a straight line from post-9/11 data-warehousing decisions and the DOGE Social Security breach to today's doxing pipelines.
+- **Age verification as accelerant**: rejects age-verification laws entirely ("there's just spying on everyone, all the time") and argues their inevitable breaches will let AI-supercharged malware target kids "with much greater fidelity and efficacy" — VOLTA is an argument against the laws, not for them.
+- **Encryption bans are current policy** in Canada (Bill C-22, Carney continuing what Turnbull attempted — "The laws of mathematics are very commendable, but the only law that applies in Australia is the law of Australia"), the UK, and the EU (fightchatcontrol).
+- **Accountability failures**: Equifax doxed 148M Americans and was rewarded with acquisitions (Teletrack, Food Industry Credit Bureau, Boa Vista Serviços); UK Labour discarded the privacy-preserving Goldacre Report pilot in favor of handing national health data to Palantir.
+- **Remedies**: stop making it worse first (end mandatory-spying mandates), legalize privacy blockers against anticircumvention law, corporate death-penalties priced to societal breach cost, ban Flock cameras/fusion centers, and force agencies to divulge hoarded 0-days (anti-NOBUS).
+
+Continues his Black October / Hackening thread (cf. Gary Marcus coverage) but is distinct in pinning the AI-malware wave on **policy history rather than model capability** — the defensive lever is data-minimization law, not model guardrails, which VOLTA's refusal-failover chain already demonstrates criminals can route around.
+Source: [[raw/articles/pluralistic.net--2026-11-02-agony-verification--478f07e7.md]]
 
 ## Related Pages
 

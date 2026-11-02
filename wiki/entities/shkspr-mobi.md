@@ -3,7 +3,7 @@ title: "Terence Eden"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-11-02
 type: entity
 ---
 
@@ -34,6 +34,7 @@ He is the creator of several open-source projects including **ActivityBot** (a s
 | 2025 | Publishes *"Open Data Man"* essay at Open Data Camp on personal data disclosure ethics |
 | 2025 | Writes *"How Can Governments Pay Open Source Maintainers?"* — based on UK Government experience |
 | 2026 | Reviews *Diversifying Open Source* by Paloma Oliveira; publishes *"Are there any open APIs left?"* documenting API ecosystem collapse |
+| Nov 2026 | Marks 10 years on Mastodon; reveals ActivityBot has become a **paid development engagement** |
 
 ---
 
@@ -105,6 +106,8 @@ Eden's **ActivityBot** project — a full ActivityPub server in a single PHP fil
 > "Single PHP file which can run an entire ActivityPub server and it is less than 80KB."
 
 This is not a toy — it powers live instances including the OpenBenches bot and solar monitoring bot. Eden's approach is the inverse of most Fediverse development: instead of building comprehensive platforms, he builds **minimal, composable services** that do one thing well.
+
+**ActivityBot goes commercial (Nov 2026)**: in "[10 Years on Mastodon](https://shkspr.mobi/blog/2026-11-10-years-on-mastodon/)" — his decade-anniversary retrospective — Eden reveals the project has crossed from hobby to livelihood: "because of the inherent open nature of the Fediverse, I can write my own ActivityPub software to interact with it. **I'm even getting paid to develop ActivityBot!**" The same post is a useful counterexample to his own January 2026 "open APIs collapse" thesis ([[#The Death of Open APIs]]): "Mastodon's API is mostly a delight to use. There aren't weird and arbitrary restrictions" — explicitly contrasted with Twitter/Facebook API lockout. The Fediverse survives as the rare mainstream platform where his open-API ideal still holds operationally, and self-authored ActivityPub clients remain viable. ^[raw/articles/shkspr.mobi--blog-2026-11-10-years-on-mastodon--2e54a00b.md]
 
 His live bot instances are practical examples:
 - **@openbenches@bot.openbenches.org** — Memorial bench cataloguing

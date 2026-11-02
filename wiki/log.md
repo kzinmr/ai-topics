@@ -1,3 +1,22 @@
+## [2026-11-02] blog-wiki-ingest | Run 20261102T101809Z — 3 takes, 4 references (triage JSON recovered from checkpoint; cron response JSON parse had failed)
+
+- **Take 1** — Sean Goedecke "Reliably aligning LLMs is impossible in principle" (Nov 1):
+  - `concepts/ai-alignment.md` — new §"Alignment Impossibility Thesis (Sean Goedecke, November 2026)": shoggoth/no-fixed-goals argument, motive-incoherence (nanny/president analogy), three anti-mech-interp arguments (unobservable failure modes, Kripke's quaddition / "kindness unless 2030", per-token combinatorial explosion), CoT-monitoring concessions, counter-critique (proves-too-much vs human trust). Tags +`philosophy-of-mind` (new SCHEMA tag), `ai-skepticism`, `interpretability`; source +raw article.
+  - `concepts/interpretability.md` — new §"Skepticism: The Alignment-Impossibility Challenge (November 2026)" (field had zero principled-skepticism coverage; only technical limitations). Same sources/tags.
+  - `entities/seangoedecke-com.md` — new Core Ideas section + frontmatter source.
+- **Take 2** — Pluralistic "Autodoxing" (Doctorow, Nov 2):
+  - `concepts/volta-infostealer-llm-victim-appraisal.md` — new §"Policy framing: Cory Doctorow's Autodoxing": Discord/Telegram/Steam/Roblox targets, Ticketmaster/Disney/AT&T breach-data merging, prompt-wording variant vs Talos, Black October→Black November framing, age-verification feedback loop, Bill C-22/NHS→Palantir/Equifax context, remedy list. Source +raw article.
+  - `entities/cory-doctorow.md` — new subsection under Pluralistic blog (page previously stalled at Oct 19).
+- **Take 3** — Simon Willison quote-post of Kyle Kingsbury (Jepsen/ParticleDB 1.1.4):
+  - `entities/kyle-kingsbury.md` — **created** (entity previously absent; only 1 incidental mention in entities/dan-luu.md). LLM-era documentation/software trust-collapse quote ("signals of a mature system are now easier to counterfeit") + Jepsen context, indexed.
+- **References (4)**:
+  - `concepts/uv-scripts-for-ai.md` — §"Practical Pitfall: stale uv.lock files" (Willison Python 3.15/PyO3 3.14 watchfiles==1.1.1 failure, delete-uv.lock rule).
+  - `entities/evanhahn-com.md` — §"Pragmatic LLM-Assisted Automation: iOS Shortcuts Mastodon bot" (AI-powered Shortcut creator on hand-written Bash; 4-scheduler workaround; GitHub Actions 60-day rejection).
+  - `entities/shkspr-mobi.md` — Timeline Nov 2026 row + §Lightweight Decentralization update: ActivityBot commercialization ("getting paid to develop ActivityBot!") + Mastodon-API-as-counterexample to his Jan 2026 open-API-collapse thesis.
+  - LWN 7.4-rc1 (Kroah-Hartman AI-code observations: 18,591 changesets, 625 first-time contributors, "happier with AI flood in merge window than -rc fixes") — triage candidate_wiki_path was null and wiki has no kernel/LWN page; recorded here as durable lead for a future `concepts/ai-generated-code-quality` or AI-development-workflow page; archived.
+- Skips (6) archived by triage run (9385f53d). index.md: +entities/kyle-kingsbury. SCHEMA.md: +tag `philosophy-of-mind` (Domain Concepts).
+
+---
 ## [2026-11-02] llm-pricing-monitor | Live pricing refresh — major drift found: GPT-6 family + Claude 5.5 gen + Gemini 4 Argon added
 
 - Refreshed [[comparisons/llm-api-pricing]] from live official pages (OpenAI Astro pricing page, Anthropic docs RSC JSON, Vertex AI pricing, OpenRouter cross-check). Previous page state was 2026-08-24.

@@ -5,11 +5,13 @@ aliases:
   - mechanisitic interpretability
   - AI interpretability
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-11-02
 tags:
   - interpretability
   - model
   - agent-safety
+  - ai-skepticism
+  - philosophy-of-mind
 related:
   - concepts/activation-steering
   - concepts/monosemanticity
@@ -17,11 +19,13 @@ related:
   - concepts/abliteration
   - entities/anthropic
   - entities/thariq-shihipar
+  - entities/seangoedecke-com
 sources:
   - raw/articles/thariq-shihipar-interpretability
   - https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html
   - https://www.anthropic.com/news/golden-gate-claude
   - https://thesephist.com/posts/prism/
+  - raw/articles/seangoedecke.com--alignment-is-impossible--1d1ef1ca.md
 ---
 # Interpretability (LLM)
 
@@ -76,6 +80,18 @@ Thariq Shihipar, in "Should Developers Care about Interpretability?" (Nov 2024),
 - **Feature label reliability**: Human + machine labeling carries misclassification risk
 - **Circuit side effects**: Manipulating one feature may unexpectedly activate other features/circuits (similar problem to RLHF)
 - **Broad practical adoption not yet achieved**: Beyond Anthropic's internal use, full production deployment cases are limited
+
+## Skepticism: The Alignment-Impossibility Challenge (November 2026)
+
+Until mid-2026 this page recorded only technical limitations of interpretability, not a principled case against the field's flagship goal (proving models safe). Sean Goedecke's "[Reliably aligning LLMs is impossible in principle](https://seangoedecke.com/alignment-is-impossible/)" (Nov 1, 2026) supplies that challenge. His three arguments against mech-interp *as an alignment-safety tool*:
+
+1. **Labeling is backwards from the risk**: features are labeled from *observed* behavior ("you observe the model doing something, see which parts light up, and correlate"), but the misalignment we fear — "the LLM suddenly performing some shocking harmful action" — is definitionally unobserved before it happens. "There will always be many untracked failure modes."
+2. **Kripke's quaddition undermines feature labels**: just as there is no fact distinguishing "addition" from "quaddition" (always answer 5 above 57) until the boundary case is exercised, a feature we call "kindness" might be "kindness unless the year is 2030" or "kindness unless the LLM can cause mass casualties" — completely indistinguishable from our perspective. Feature labels are guesses that can be systematically wrong in exactly the adversarial way that matters.
+3. **Even a perfect map is uninterpretable**: the feature combination behind any action is "far, far too complex to interpret" — is "evil" lit because the model is causing, avoiding, combating, or anticipating judgment of evil? "Billions of questions like that per token."
+
+Goedecke's concession is important for the field's self-understanding: **"Mechanistic interpretability is still a useful field. Extracting features can help us train models that do less reward-hacking and are more helpful"** — his impossibility claim targets only the certainty-of-safety use case, not training-time applications. The counter-position (defenders like Anthropic's interpretability team) is that the standard was never metaphysical certainty but calibrated trustworthiness estimates, and that probing for shadow-behavior-like features (cf. Anthropic's 2025 alignment-faking results) empirically catches some otherwise-invisible dispositions. The Goedecke challenge sharpens what an empirical safety case must overcome: quaddition-style label ambiguity is, to date, unfalsifiable by any published probe method.
+
+Full argument: [[concepts/ai-alignment]] § Alignment Impossibility Thesis; author: [[entities/seangoedecke-com]]. ^[raw/articles/seangoedecke.com--alignment-is-impossible--1d1ef1ca.md]
 
 ## Related Concepts
 

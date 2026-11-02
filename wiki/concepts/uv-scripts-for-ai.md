@@ -2,7 +2,7 @@
 title: "uv-scripts-for-ai — Self-Contained UV Scripts for AI/ML"
 type: concept
 created: 2026-06-07
-updated: 2026-06-07
+updated: 2026-11-02
 tags:
   - tool
   - open-source
@@ -68,6 +68,10 @@ uv run https://huggingface.co/datasets/uv-scripts/ocr/raw/main/glm-ocr.py --help
 The repository ships a ready-to-use **[`uv-recipes` agent skill](https://github.com/davanstrien/uv-scripts-for-ai/tree/main/skills/uv-recipes)** that enables AI agents to discover, run, and adapt recipes. Hugging Face also provides an [`hf` CLI skill for agents](https://huggingface.co/docs/hub/agents-cli) for driving Jobs from an editor.
 
 On Jobs, the agent runs in a sandbox: throwaway disk, access limited to the token's repo permissions, and a cost cap per job — not arbitrary code on your machine.
+
+## Practical Pitfall: stale uv.lock files (Simon Willison, Nov 2026)
+
+Simon Willison's rule of thumb after moving to Python 3.15: **"If in doubt, delete the uv.lock file."** Library authors deliberately don't commit `uv.lock` (locking versions for downstream consumers is "rude"), but `uv run pytest` leaves a `uv.lock` lying around in `.gitignore`d state — and that stray lock can pin a dependency version with no wheel for the new interpreter yet. His concrete failure: `error: Failed to build watchfiles==1.1.1` → `Call to maturin.build_wheel failed` → `the configured Python interpreter version (3.15) is newer than PyO3's maximum supported version (3.14)`. Deleting the file and re-running `uv run pytest` resolves it. A recurring friction point for the PEP 723 / uv-script workflow during interpreter upgrades. Source: [simonwillison.net, Nov 1, 2026](https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/). ^[raw/articles/simonwillison.net--2026-nov-1-delete-uv-lock-first--63716a49.md]
 
 ## See Also
 

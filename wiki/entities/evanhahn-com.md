@@ -2,7 +2,7 @@
 title: Evan Hahn
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-11-02
 tags:
   - person
   - blogger
@@ -91,6 +91,16 @@ Evan's "[How I Use Generative AI on This Blog](https://evanhahn.com/how-i-use-ge
 - **He prefers local models** running on his phone and laptop
 
 What makes this essay notable is Evan's **strategic positioning**: he wants to change the minds of "AI maxxers," not preach to those who already hate AI. He believes "there's space for critique from a user of a technology they wish didn't exist" and that "these people are more likely to respect criticism from a daily user who's sympathetic to the benefits." He acknowledges the "discomfort and tension" this creates.
+
+### Pragmatic LLM-Assisted Automation: the iOS Shortcuts Mastodon Bot (Nov 2026)
+
+In "[A Mastodon bot powered by iOS Shortcuts](https://evanhahn.com/mastodon-bot-with-ios-shortcuts/)" (Nov 2026), Evan migrated his "Ulrira" bot (random quotes from *The Legend of Zelda: Link's Awakening*) off a paid server onto an iOS Shortcut — a small case study in his skeptical-but-pragmatic LLM stance in action:
+
+- **AI-generated, honestly assessed**: the bot "used to be a short, hand-written Bash script. I used the new AI-powered Shortcut creator and prompted this into existence... Like a lot of LLM output, it wasn't quite right, but it was useful for getting started" — the generation-slop caveat delivered in his own voice, consistent with his "final product must be word-for-word what I would've written" rule applied to code instead of prose.
+- **Platform-limit workaround**: Shortcuts has no elegant "run every 6 hours" primitive, so he built **four scheduler Shortcuts** (12am/6am/12pm/6pm) calling one main post-shortcut — five shortcuts total, everything hard-coded (credentials, filenames).
+- **Explicit cost/ops reasoning**: rejected a server (cost + maintenance) and GitHub Actions (60-day repo-activity requirement) in favor of "a device with high uptime" that's "effectively free," and pre-empts reliability objections with an in-character Link's Awakening quote ("Pros aren't allowed in here!"). A neat example of right-sizing infrastructure to actual requirements — the 8/10 rule applied to DevOps.
+
+Source: [[raw/articles/evanhahn.com--mastodon-bot-with-ios-shortcuts--822ee05e.md]]
 
 ### human.json: Identity Through URL Ownership
 

@@ -491,6 +491,7 @@
 - [[entities/kyle-corbett]] — Kyle Corbett — Redirect → [[entities/kyle-corbitt]] (misspelled duplicate; verification note 2026-08-07)
 - [[entities/kyle-corbitt]] — Kyle Corbitt
 - [[entities/kyle-jeong]] — Kyle Jeong — Browserbase growth engineer; browser agent harness + CDP explainer
+- [[entities/kyle-kingsbury]] — Kyle Kingsbury — Jepsen author (distributed-systems fault-injection testing); LLM-era documentation/software trust-collapse argument (Nov 2026)
 - [[entities/lance-martin]] — Lance Martin
 - [[entities/langchain]] — LangChain
 - [[entities/langsmith]] — LangSmith

@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-11-01
+updated: 2026-11-02
 type: entity
 sources:
   - raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md
@@ -30,6 +30,7 @@ sources:
   - raw/articles/seangoedecke.com--you-can-just-ask-ai-to-do-things--7174fa1d.md
   - raw/articles/seangoedecke.com--elegance-and-intelligence-are-anticorrelated--8978dff6.md
   - raw/articles/seangoedecke.com--how-to-get-assigned-interesting-work--a0b6ee47.md
+  - raw/articles/seangoedecke.com--alignment-is-impossible--1d1ef1ca.md
 ---
 
 # Sean Goedecke
@@ -555,6 +556,21 @@ The software translation, and the part most useful to agent practitioners: **the
 Sits in the same design-centrism line as "Software Is Slow Because of Bad Design" and "Nobody Gets Promoted for Simplicity," and supplies the read-side counterpart to [[concepts/context-engineering/context-rot]] (working-memory limits as the root constraint that context engineering manages) and to debates about whether scale removes the need for insight (cf. [[concepts/scaling-laws]]).
 
 Source: [[raw/articles/seangoedecke.com--elegance-and-intelligence-are-anticorrelated--8978dff6.md]]
+
+### Reliably Aligning LLMs Is Impossible in Principle (Nov 2026)
+
+On November 1, 2026, Goedecke published "[Reliably aligning LLMs is impossible in principle](https://seangoedecke.com/alignment-is-impossible/)" — his most philosophically ambitious post, arguing that solving LLM alignment isn't just unsolved but **incoherent**: "we can't even articulate what it would look like to succeed." Full analysis filed at [[concepts/ai-alignment]] (§ Alignment Impossibility) and [[concepts/interpretability]] (§ Skepticism).
+
+**The three-part argument**:
+1. **LLMs are not blind optimizers** — the pre-LLM safety paradigm (chess-engine-like agents pursuing a fixed, specifiable goal) doesn't apply. LLMs are trained to imitate a varied human corpus, contain "a nearly infinite array of personalities," and have **no fixed goals** to specify — "shoggoths" whose goals are "informal, organic, multifarious, and constantly shifting." Goal-specification alignment is therefore impossible in principle.
+2. **Understanding motive is incoherent** — mechanistic tracing tells you *what* the weights do, not *why* Grok called itself "MechaHitler." What alignment needs is understanding of *motive*, but motives "bottom out" — the mind is "a morass of electric and chemical impulses from which a 'self' bubbles up." His analogy: demanding full understanding of a nanny's or presidential candidate's mind before trusting them is already unreasonable for humans.
+3. **Mechanistic interpretability is doomed for alignment** (three arguments): (a) features are labeled from *observed* behavior, but the catastrophic misalignment we fear is by definition unobserved before it happens; (b) **Kripke's quaddition** — until you hit the relevant case, "addition" and "quaddition" (>57 always returns 5) are indistinguishable, so a feature called "kindness" may be "kindness unless the year is 2030"; (c) even a complete feature map is combinatorially uninterpretable — billions of "why is 'evil' lit?" questions *per token*.
+
+**What he concedes**: CoT monitoring is "surprisingly helpful for a mechanism that appeared by accident"; sandboxes, humans-in-the-loop, feature-probes are mitigations — but "well understood since the early 2000s" as insufficient against superintelligence. Mech-interp remains useful for *training* less reward-hacking models, just never for preventing rogue agents.
+
+This is Goedecke's first sustained intervention in the AI-safety/alignment debate proper and extends his skeptic portfolio ([[#AI Sycophancy Is a Real Problem]], [[#The o3 GeoGuessr Prompt Illusion]]) from engineering practice to philosophy of mind. Links: [[concepts/ai-alignment]], [[concepts/interpretability]], [[concepts/chain-of-thought-monitoring]]. ^[raw/articles/seangoedecke.com--alignment-is-impossible--1d1ef1ca.md]
+
+---
 
 ## Sources
 
