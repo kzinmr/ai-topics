@@ -170,7 +170,8 @@ When `wiki-graph-analysis` reports unlinked pairs:
 
 ### Watchdog Pipeline Timing — Verifying Health Report Claims
 See `watchdog-session-2026-09-12.md` (jobs.json failure source; report-only failure classes; header recount formula). See `health-fix-session-2026-09-21.md` (digest "orphans" = `_index.md` files; `_index`→dir slug bug in orphan scanners; hub registration recipe).
-- Digest orphan also `??` in git status ⇒ upstream skipped its commit — commit page+raw+index together (`references/watchdog-session-2026-09-28.md`)
+- Digest orphan `??` in git ⇒ commit page+raw+index (`references/watchdog-session-2026-09-28.md`)
+- Digest orphan list (≤5) = redirect stubs w/ indexed canonical + 0 inbound links ⇒ DELETE, don't register (`references/digest-orphan-redirect-stub-deletion-2026-11-01.md`)
 - `x_accounts stale(Nh)` with every-2-days schedule = false positive if `last_status: ok` (`references/watchdog-session-2026-09-28.md`, 2026-09-29 session)
 
 **Discovered 2026-05-11**: The `wiki-watchdog-fix` cron job runs AFTER `wiki-health-fix` in the pipeline. By the time the watchdog receives the health report, the wiki-health-fix step may have already repaired many of the reported issues (pipe corruption, triple brackets, line-number corruption, etc.).
@@ -859,7 +860,6 @@ Merge an `entity-name--subsection.md` sub-page back into its parent entity page.
 - **Sub-Pages section**: If the parent has a `## Sub-Pages` list, the merged subsection's wikilink MUST be removed. Don't forget this step — otherwise you'll have a broken wikilink.
 - **Index.md entity count**: After removing the sub-page entry, decrement the count in the header. Use `patch` with the exact old count string as anchor.
 - See `references/weekly-graph-analysis-pitfalls.md` for script bugs, workarounds.
-- See `references/truncation-error-detection.md` for detecting clipped-wikilink artifacts (e.g. `[[deepmin]]` → `[[entities/deepmind]]`)
 - **Cross-references**: Search for any other pages that wikilink to `parent--subsection`. If found, update them to point to `parent.md` instead.
 - **Preceding blank line after index.md removal**: Removing a line from the alphabetically-ordered `index.md` list using `patch` with an empty `new_string` leaves a blank line. Run a second `patch` to collapse it: merge the line above and below the gap into a single anchor string.
 - **Parent updated date**: Update the `updated:` field in the parent page's frontmatter to today's date.
@@ -1103,7 +1103,7 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 - `scripts/tag_audit.py` — Tag analysis and auditing (canonical: `~/ai-topics/scripts/tag_audit.py`)
 - `scripts/validate_index.py` — Pre-commit validator for baked-in numbers, pipe prefixes, truncation artifacts in wiki/index.md. Run with `python3 scripts/validate_index.py`; exit 0 = clean, 1 = issues found. Called by `.githooks/pre-commit`. See Section H for recovery procedure.
 - `references/wiki-health-script-optimization.md` wiki_health.py perf (0.28s) · `references/json-output-processing.md` · `references/raw-article-coverage-audit.md` · `references/bare-wikilink-batch-fix.md` scan→map→regex · `references/broken-wikilink-repair.md` · `references/index-corruption-recovery.md` · `references/index-corruption-variants.md` · `references/wiki-file-move.md` · `references/wiki-health-remediation.md` · `references/wiki-bulk-link-fix.md` · `references/wiki-wikilink-remediation.md` · `references/wiki-works-source-linking.md` · `references/wiki-entity-disambiguation.md` · `references/wiki-page-splitting.md` · `references/wiki-entity-dedup.md` · `references/watchdog-session-2026-10-22.md` — verified FIXMAP renames, WIP-snapshot `status: archived`, · `references/watchdog-session-2026-10-24.md` — no-frontmatter hot-post pages; run no-FM scan + recount when cleancode-block-stripped link scanner
-- `references/duplicate-log-entry-recovery.md` — Recovery from cascading execute_code log prepend producing 3+ identical entries
+- `references/log-prepend-header-burial-and-cron-tool-blocks-2026-11-02.md` — **READ BEFORE ANY log.md PREPEND** (buried `# Wiki Log` = recurring bug) + cron tool-block workarounds + deferred-merge recipe. See `references/duplicate-log-entry-recovery.md`.
 - `references/entity-concept-cross-reference.md` — Entity/concept duplicate resolution: redirect stubs, cross-link comparable pairs (2026-05-08 session)
 - `references/wiki-bare-wikilink-fix.md` — Bare wikilink → namespace-prefixed batch fix with full session data
 - `references/tag-normalization.md` — Tag normalization procedure, analysis scripts, and critical pitfalls
