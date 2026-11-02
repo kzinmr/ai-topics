@@ -1,0 +1,128 @@
+{
+  "archived_at": "2026-11-02T10:26:50.871766+00:00",
+  "triage_run_id": "20261102T101809Z",
+  "source": "blog",
+  "summary_ja": "2026-11-02 blog-ingest バッチ（candidates 10本 + unsaved 10本）を全件本文読了のうえトリアージ。take 3本: (1) Sean Goedecke「Reliably aligning LLMs is impossible in principle」— Kripke の quaddition と motive 不在論で mech-interp を含むアライメント全体を原理的に不可能と論証する旗手記事。既存 concepts/ai-alignment.md（62行・Positive Alignment 論文のみ）と concepts/interpretability.md（91行・懐疑論ゼロ）に明確なカバレッジギャップ。 (2) Pluralistic「Autodoxing」— 昨日作成の concepts/volta-infostealer-llm-victim-appraisal.md に、Doctorow による「AI 悪化の主因は breach データ＝世代を超えた privacy 敵視政策」という政策テーゼ、Roblox/Discord/Steam ターゲット、age verification 全否定、NHS→Palantir 移管などを追加する一次ソース拡張。 (3) Simon Willison 引用ポスト経由の Kyle Kingsbury「LLM はドキュメントとソフトウェアへの信頼を毀損する」— Jepsen 作者の言説を収めたページが wiki に皆無（dan-luu の Jepsen 言及1件のみ、本人 entity 未作成）。reference 4本（LWN 7.4-rc1 の Kroah-Hartman による AI 発コード流入18,591 changesets 観察、willison の uv.lock 回避策、Evan Hahn の AI Shortcut creator、Terence Eden の ActivityBot 商業化）、skip 3本＋unsaved 3グループは非AIまたは抽出不可。",
+  "decisions": [
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "LWN.net",
+      "title": "Kernel prepatch 7.4-rc1",
+      "url": "https://lwn.net/Articles/1104654/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/lwn.net--articles-1104654--59ea2d28.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ 本文に Greg Kroah-Hartman の AI 発散型開発に関する統計的観察が含まれる: 「This is a *BIG* merge window ... I'm much happier with the flood of AI triggered work going into the merge window than it showing up mainly as extra fixes during the -rc period」— 18,591 non-merge changesets（記録更新、7.3 サイクル全体にほぼ匹敵）、2,678 developers、625 first-time contributors。AI 発コードの大量流入が「rc 期の修正洪水」ではなく「通常開発」側に統合されつつあるという希少な一次観察。ただし wiki 側に kernel/LWN の entity・event ページが一切なく（grep 7.4-rc1/merge window で 0 件）、カーネルリリース単体を concept 化する閾値には達しない。AI×オープンソース開発プロセスの傍証として、関連 concept ページ（open-source-maintainership 等）への1文追記に留める。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Kernel prepatch 7.4-rc1\nSource: https://lwn.net/Articles/1104654/\nKernel prepatch 7.4-rc1\n[Posted November 2, 2026 by corbet]\nThe\n7.4-rc1\nkernel prepatch is out, and\nthe merge window is closed for this development cycle.\nThis is a *BIG* merge window. I think the reason is the by now\n\tobvious one, "
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "If in doubt, delete the uv.lock file",
+      "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-nov-1-delete-uv-lock-first--63716a49.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Python 3.15 移行で頻発する依存解決エラーの実務回避策。具体的エラーを本文が報告: error: Failed to build watchfiles==1.1.1 / Call to maturin.build_wheel failed / 「the configured Python interpreter version (3.15) is newer than PyO3's maximum supported version (3.14)」。ライブラリ開発者は uv.lock をコミットしない慣習だが uv run pytest が uv.lock を生成して .gitignore に残り、古い wheel pin が残ると失敗する、という機構説明つき。entities/simon-willison.md に「uv.lock」「delete the uv」は未収録（grep 0件）。概念化するほどの内容ではなく、既存の entities/uv-scripts-for-ai.md もしくは willison entity の Tips 節への1行追記相当。",
+      "candidate_wiki_path": "entities/uv-scripts-for-ai.md",
+      "body_excerpt": "# If in doubt, delete the uv.lock file\nSource: https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/\n1st November 2026\nI've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is:\nIf in doubt, delete the uv.lock f"
+    },
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "evanhahn.com",
+      "title": "A Mastodon bot powered by iOS Shortcuts",
+      "url": "https://evanhahn.com/mastodon-bot-with-ios-shortcuts/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/evanhahn.com--mastodon-bot-with-ios-shortcuts--822ee05e.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ LLM使用場面としては「以前は手書き Bash スクリプトだったのを、新しい AI-powered Shortcut creator に『この Bash スクリプトを Shortcut にして』とプロンプトして生成させた。多くの LLM 出力と同様、完全に正しいわけではないが、開始には有用だった」という具体例を含む。加えて「Shortcuts には6時間ごとに実行する Elegant な表現がないため、scheduler ショートカット4本（0/6/12/18時）を別途作り、計5本構成にした」という実装上の制約と回避策。server 保守・課金回避（GitHub Actions は60日ごとに repo 更新が必要という制限を明示的に却下）という動機記述もあり、pragmatic LLM-assisted automation の小型事例。entities/evanhahn-com.md（Apr 10 更新・10本の References のみ）に未収録のため author entity 追記相当。",
+      "candidate_wiki_path": "entities/evanhahn-com.md",
+      "body_excerpt": "# A Mastodon bot powered by iOS Shortcuts\nSource: https://evanhahn.com/mastodon-bot-with-ios-shortcuts/\nA Mastodon bot powered by iOS Shortcuts\nIn short: I use iOS Shortcuts to run a Mastodon bot.\nI run\na Mastodon bot that posts random quotes from\nThe Legend of Zelda: Link’s Awakening\n. (The writing"
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "shkspr.mobi",
+      "title": "10 Years on Mastodon",
+      "url": "https://shkspr.mobi/blog/2026-11-10-years-on-mastodon/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/shkspr.mobi--blog-2026-11-10-years-on-mastodon--2e54a00b.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Mastodon 10年回顧で本体は非AIだが、Terence Eden の ActivityPub 開発者としての実践的証言が wiki 既存ページ（entities/shkspr-mobi.md は Apr 24 更新・Timeline は 2026 春まで）にない最新状況を提供: 「Even better, because of the inherent open nature of the Fediverse, I can write my own ActivityPub software to interact with it. I'm even getting paid to develop ActivityBot!」= 単一PHPファイル ActivityPub サーバ ActivityBot が商業案件化したという転換点。さらに Twitter/Facebook API の締め出し対比で「Mastodon's API is mostly a delight to use. There aren't weird and arbitrary restrictions」— 2026年1月時点の「Are there any open APIs left?」で記録したオープンAPI崩壊論の反例として読み替えて良い一次データ。AI文脈は薄いため author entity の Timeline/Recent Themes 更新に留める。",
+      "candidate_wiki_path": "entities/shkspr-mobi.md",
+      "body_excerpt": "# 10 Years on Mastodon\nSource: https://shkspr.mobi/blog/2026/11/10-years-on-mastodon/\nAs of today, I've been on the Mastodon social network for 10 years. I think that deserves a little reflection and celebration.\nPost by @Edent@mastodon.social\nView on Mastodon\nSocial networks often launch in a blaze"
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Poles & polars in projective space with homogeneous coordinates",
+      "url": "https://www.johndcook.com/blog/2026-11-01/projective-poles-and-polars/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-11-01-projective-poles-and-polars--8fcf3fad.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ 射影幾何学の純数学解説（P^n 上の双極・双極線、同次座標、楕円/放物/双曲線の区別が消える統一）。LLM/エージェント/開発ツールと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Poles & polars in projective space with homogeneous coordinates\nSource: https://www.johndcook.com/blog/2026/11/01/projective-poles-and-polars/\nI wrote several posts on poles and polars a few days ago. First, I wrote about the dual of a spherical triangle, called the\npolar triangle\n. Then I wrote a"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "LWN.net",
+      "title": "Final release for the 7.2 stable series",
+      "url": "https://lwn.net/Articles/1104629/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/lwn.net--articles-1104629--337c3dfd.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Greg Kroah-Hartman による 7.2.15 リリースと 7.2.y 系列 EOL 告知のみ（8分岐同時維持の負荷で前倒し EOL）。AI 関連の言及は皆無、純粋なリリース告知。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Final release for the 7.2 stable series\nSource: https://lwn.net/Articles/1104629/\nFinal release for the 7.2 stable series\n[Posted November 1, 2026 by jzb]\nGreg Kroah-Hartman has announced the release of the\n7.2.15\nkernel, with a handful of updates.\nNote, this is the LAST 7.2.y kernel release.  Aft"
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "IBM PC/XT drives stuck in the bay? How to free them",
+      "url": "https://dfarq.homeip.net/ibm-pc-xt-drives-stuck-in-the-bay-how-to-free-them/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--ibm-pc-xt-drives-stuck-in-the-bay-how-to-free-them--afcb8711.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ IBM PC/XT 5160 のフロッピードライブ固定用隠しネジ2本の位置と外し方という retro hardware 整備記事。AI と完全無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# IBM PC/XT drives stuck in the bay? How to free them\nSource: https://dfarq.homeip.net/ibm-pc-xt-drives-stuck-in-the-bay-how-to-free-them/?utm_source=rss&utm_medium=rss&utm_campaign=ibm-pc-xt-drives-stuck-in-the-bay-how-to-free-them\nIf you are working on an\nIBM PC/XT model 5160\nand need to remove a "
+    },
+    {
+      "item_id": "unsaved-ai-engineer-8-videos",
+      "source": "blog",
+      "source_name": "AI Engineer",
+      "title": "AI Engineer YouTube talks x8 (Speakeasy production deletion / Apollo P&L / Sourcegraph review / WorkOS fruit-fly code review x2 / Compound AI Office for agents / Mintlify+Coinbase docs-for-agents / eslams eval)",
+      "url": "https://www.youtube.com/@aiengineer",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ AI Engineer YouTube チャンネルの会議トーク8本。タイトルと説明のみで本文（トランスクリプト）が抽出不可のため take 判定不能 — unsaved_articles 一般則により skip。うち4本はエージェント運用と直結し話題性は高い: (1) Sagar Batchu (Speakeasy)「A Valid Key Let an AI Agent Delete Production」= agent 権限境界/本番削除インシデント、(2) Yijia Liang (Compound AI)「Why We Rebuilt Microsoft Office From Scratch for AI Agents」= agent 向けソフトウェア再設計、(3) Hahnbee Lee (Mintlify) + Lincoln Murr (Coinbase)「Most of Your Docs Readers Are Now AI Agents」= docs の agent-first 化、(4) Ramakrishnan Lokanathan「If Your AI Scores 100%, Your Eval Is Wrong」= eval 設計。これらの話題が wiki 既存の concepts/agent-safety.md や concepts/ai-evaluation 系で既にカバーされているかの上書き確認と、transcripts/ 経由の文字起こし取得は未来の dreaming / active-crawl 側で対応すべきとして保留（take 化しない）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可）"
+    },
+    {
+      "item_id": "unsaved-lwn-security-updates",
+      "source": "blog",
+      "source_name": "LWN.net",
+      "title": "A massive pile of security updates for Saturday",
+      "url": "https://lwn.net/Articles/1104612/",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ unsaved_articles（Linux カーネルの定期セキュリティアップデート束）。本文抽出不可かつAI/エージェントと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可）"
+    },
+    {
+      "item_id": "unsaved-danielwirtz",
+      "source": "blog",
+      "source_name": "danielwirtz.com",
+      "title": "My Favorite Personal Websites",
+      "url": "https://danielwirtz.com/blog/favorite-personal-websites",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ unsaved_articles。個人サイトの紹介リストで AI/エージェント技術と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可）"
+    }
+  ]
+}
