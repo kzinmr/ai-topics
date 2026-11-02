@@ -1098,7 +1098,6 @@
 - [[concepts/agents-planning-orchestration]] — Agents Planning Orchestration
 - [[concepts/agents-scaffolding-composition-inference-scaling-hypothesis]] — Agents Scaffolding Composition Inference Scaling Hypothesis
 - [[concepts/generative-ui-harness]] — Generative UI Harness (GenOps) — data-aware runtime control plane deriving agent UIs from tool schema + value lineage; 100% value-propagation, 8.7x interaction efficiency
-- [[concepts/harness-engineering-101]] — see [[concepts/harness-engineering/harness-engineering-101]]
 - [[concepts/harness-learning]] — Train a proposer to revise a solver's harness via RL; harness revision ≈ weight update, adapting at test time without parameter updates (arXiv:2609.35738)
 - [[concepts/agents-self-improvement-learning]] — Agents Self Improvement Learning
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves
