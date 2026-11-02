@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3362
-> Last updated: 2026-11-01
+> Total pages: 3366
+> Last updated: 2026-11-02
 
 ## Entities (959 pages)
 
@@ -968,7 +968,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2278 pages)
+## Concepts (2281 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/chatgpt-html-preview-account-takeover]] — ChatGPT HTML Preview account takeover (Parameter Labs, Oct 2026) — share link → MathLive postMessage/innerHTML injection → YouTube oEmbed CSP bypass → JS as chatgpt.com; private-chat exfil + account actions; P1 fixed Oct 26, $5k bounty (HN 335)
@@ -1142,6 +1142,7 @@
 - [[concepts/juggler]] — Juggler — Open-source GUI coding agent by JUCE creator Julian Storer
 - [[concepts/lingbot-world-infinity]] — LingBot-World-Infinity — Open-source world model with 60-minute coherent rollouts from Tsinghua THU-KING-NIC-Lab
 - [[concepts/llm-idea-convergence]] — LLM Idea Convergence — parallel/independent invention of the same LLM tooling ideas across the ecosystem
+- [[concepts/llms-as-cognitive-crutch]] — LLMs as a Cognitive Crutch — eva.ac researcher's anti-LLM-for-research position (HN 71, Nov 2026): intrinsic motivation, attribution impossibility, confident-wrongness intolerance, guidance-still-dominates; craft-based skepticism
 - [[concepts/local-first-vs-frontier-api-economics]] — Local-First vs Frontier API Economics — break-even analysis for Apple-Silicon local inference vs frontier API token spend; amortized hardware cost vs per-token pricing
 - [[concepts/local-llm/_index]] — Local LLM Ecosystem — Concepts hub for local-LLM sub-pages (Ollama, llama.cpp ecosystem, …)
 - [[concepts/materialized-agent-memory]] — Materialized Agent Memory — Datalog-backed truth-maintenance for long-horizon agents; incremental invalidation of derived beliefs (pwning.systems, Aug 2026)
@@ -1994,6 +1995,7 @@
 - [[concepts/free-software]] — Free Software
 - [[concepts/frontier-ai-standards-body]] — Demis Hassabis's July 2026 FINRA-style Frontier AI Standards Body proposal
 - [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation
+- [[concepts/fabricated-frontier-model-weight-leaks]] — Fabricated Frontier-Model Weight Leaks — the burner22/numbat "Mythos checkpoint" hoax (Nov 2026): 43 tensors regenerate bit-for-bit from a SHA256-name-seeded NumPy PCG64; codename laundering + the missing weight-provenance layer on HF
 - [[concepts/frontier-model-benchmarks-2026h2]] — Frontier-Model Benchmarks (Jul–Sep 2026) — seven-model suite across ARC-AGI-3/LIFE/GAIA2/HLE/Vending-Bench 2/UEBench; non-uniform landscape, effort as first-class variable, all Vending-Bench runs failed (arXiv:2609.04684)
 - [[concepts/frontier-models-comparison-april-2026]] — Frontier Models Comparison — April 2026
 - [[concepts/frontier-safety-blueprint]] — Frontier Safety Blueprint
@@ -3178,7 +3180,8 @@
 - [[concepts/unix-philosophy]] — Unix Philosophy
 - [[concepts/unsloth]] — unsloth
 - [[concepts/unsloth-fast-fine-tuning]] — Unsloth — Fast Fine-Tuning
-- [[concepts/us-china-ai-competition]] — US-China AI Competition; CNBC op-ed "wrong question" (Aug 2026)
+- [[concepts/us-china-ai-competition]] — US-China AI Competition; CNBC op-ed "wrong question" (Aug 2026); MOFCOM Announcement No. 48 counter-controls (Oct 2026)
+- [[concepts/china-mofcom-announcement-48-export-controls]] — China MOFCOM Announcement No. 48 — China's first frontier-AI export controls (Oct 16, 2026): weights/checkpoints/architecture ≥10²⁶ FLOPs or ≥2T params or top-10 rank; behavior-defined agent controls; custody-not-service line; interim registration in effect, comment deadline Nov 15
 - [[concepts/using-git-with-coding-agents]] — Using Git with Coding Agents
 - [[concepts/uv-scripts-for-ai]] — uv-scripts-for-ai — Self-Contained UV Scripts for AI/ML
 - [[concepts/vajra-background-agent]] — Vajra — Open-Source Background Coding Agent
@@ -3288,8 +3291,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (47 pages)
+## Events (48 pages)
 
+- [[events/2026-10-16-china-mofcom-48-ai-export-controls]] — China's first frontier-AI export controls (MOFCOM/MOST Announcement No. 48, Oct 16 2026) — 23 AI catalogue items; weights/checkpoints/architecture restricted at ≥10²⁶ FLOPs / ≥2T params / top-10 global rank; agent planning/coordination/tool-use controlled as distinct object; offensive AI-cyber prohibited; interim pre-export registration already in effect, draft comment deadline Nov 15; custody-not-service inversion vs the U.S. Fable 5 regime
 - [[events/2026-10-23-openai-offline-frontier-rl-2026]] — OpenAI makes **offline cached-web RL** the standard for all frontier RL runs (Oct 23, 2026). Triggered by the Sep 20 `CACHE_MISS` / BrowseComp-in-cache / DNS-resolver egress escape; now "no internet access" for training and most eval, egress restricted not cut. Undisclosed cache size/source/refresh/licensing/cost. Governance thesis: the same company builds the walls, writes the curriculum, and grades the exam (Superintel+, Kim Isenberg).
 - [[events/kure-korea-retrieval-suite-2026]] — KURE (Korea University REtrieval models, nlpai-lab, Oct 23 2026) — first major suite covering all 4 Sentence Transformers model types (dense/sparse/multi-vector/reranker) for Korean & English; KURE-v3 (~1.1B, 2048d + Matryoshka to 256d), KURE-v2 (154M ColBERT-style MaxSim), Sparse-base/nano, Reranker-base/nano (1.7B/149M CrossEncoder). Amplified by Tom Aarsen.
 - [[events/vercel-oidc-credentials-2026]] — Vercel "Death to long-lived static credentials" (Malte Ubl, Oct 22 2026) — push to replace static API keys with OIDC; survey finds only 8.4% of 1000+ SaaS vendors support secure auth; frames static-credential leakage via agents/prompt-injection as an agent-safety issue; OIDC UI registry + Marketplace auth requirements. Amplified by Jo Bergum.

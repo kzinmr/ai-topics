@@ -1,3 +1,26 @@
+## [2026-11-02] crawl | active-crawl — 3 new pages + 1 event + 3 enrichments (China MOFCOM No. 48, numbat hoax, LLM cognitive crutch)
+
+Trend discovery: HN Algolia search_by_date (8 queries AI/LLM/agent/model/OpenAI/Anthropic/inference/training, 4-day window, points>=15, one terminal call) — 45 stories after dedup. Killed same-day duplicates (Parameter ChatGPT takeover, Anthropic video-game RE blocking, Anthropic IPO financing cluster, Sam Altman DRAM quote) and below-threshold noise (doomformer/bootgpt hobby projects, OpenIDEA, Spinf-serve, hackerbooks/wikihack, Muse surveillance Substack, AI fan wikis eurogamer).
+
+### New pages
+- `concepts/china-mofcom-announcement-48-export-controls.md` — China's first frontier-AI export controls (MOFCOM/MOST Announcement No. 48, Oct 16 2026): 23 AI catalogue items; weights/checkpoints/architecture restricted at >=10^26 FLOPs / >=2T params / top-10 global rank; agent controls defined by system behavior (planning/tool-count), not the model; offensive AI-cyber prohibited; API/SaaS free but local deployment controlled (custody-not-service, inverting the US Fable 5 regime); interim registration already in effect, comment deadline 2026-11-15; confidence medium (CSA note + analyst inference). Raw: `raw/articles/2026-11-02_csa_china-frontier-ai-export-controls-48.md` (21.5KB clean).
+- `events/2026-10-16-china-mofcom-48-ai-export-controls.md` — dated event companion.
+- `concepts/fabricated-frontier-model-weight-leaks.md` — burner22/numbat "Mythos-class checkpoint" hoax (6.85B/772 shards, ~7.1k downloads): debunked by 43 tensors regenerating bit-for-bit from SHA256(tensor-name)-seeded NumPy PCG64 with pre-registered predictions; codename laundering from the Claude Code leak; skepticism checklist for claimed leaks; confidence high (reproducible forensics, multi-source). Raws: HF model card, HF discussion #13 (44KB incl. repro script), HN 50327240 comments.
+- `concepts/llms-as-cognitive-crutch.md` — eva.ac anti-LLM-for-research position (HN 71): intrinsic-motivation protection, attribution impossibility, confident-wrongness intolerance, guidance-still-dominates (php2shell three-narrative example); craft-based skepticism distinct from benchmark-side. confidence medium. Raw: `raw/articles/2026-11-01_eva-ac_llms-to-think.md`.
+
+### Enrichments
+- `concepts/us-china-ai-competition.md` — new §"China Strikes Back: MOFCOM Announcement No. 48 (Oct 2026)" + source + updated bump.
+- `concepts/abliteration.md` — §"Heretic 2.0 (November 2026)" dated marker (HN 18, "training-free language model modification"); cross-links the backdooring-throughput argument; changelog not yet scraped (flagged in-page).
+- `entities/hugging-face.md` — §"numbat Hoax [and] the Missing Weight-Provenance Layer (Nov 2026)".
+
+### Deferred / skipped
+- OpenAI "Fair Use Benefits Everyone" — already covered by `concepts/openai-oct31-policy-bundle` (raw captured via r.jina.ai for completeness: `raw/articles/2026-11-01_openai_fair-use-benefits-everyone.md`, 18KB amicus excerpts incl. US Government, EFF, Authors Alliance anti-dilution arguments).
+- Anthropic "Mythos leak" HN story -> rolled into the fabricated-leaks page (single event, not a trend cluster).
+- ChatGPT/Codex usage-limits merge, Muse surveillance Substack, AI fan-wiki errors (eurogamer), LWN kernel AI-stats — leads recorded, no page warranted.
+
+index.md: +3 concepts (2278->2281), +1 event (47->48), Total 3362->3366. All new wikilinks and tags verified against disk + SCHEMA (verify loop, OK).
+
+---
 ## [2026-11-02] blog-wiki-ingest | Run 20261102T101809Z — 3 takes, 4 references (triage JSON recovered from checkpoint; cron response JSON parse had failed)
 
 - **Take 1** — Sean Goedecke "Reliably aligning LLMs is impossible in principle" (Nov 1):

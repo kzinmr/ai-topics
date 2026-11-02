@@ -168,6 +168,10 @@ In early August 2026, Business Insider reported that Hugging Face had **hired a 
 
 **Sources:** Business Insider (2026-08-22), SiliconAngle, Superintel+ / Kim Isenberg ("Hugging Face Eyes A $13 Billion Exit", 2026-08-24), raw newsletter digest `raw/newsletters/2026-08-24-hugging-face-eyes-a-13-billion-exit.md`.
 
+## numbat Hoax & the Missing Weight-Provenance Layer (Nov 2026)
+
+On 2026-10-23 `burner22/numbat` appeared on the Hub claiming to be a leaked Anthropic "Mythos-class" checkpoint (6.85B safetensors across 772 shards, ~7,100 downloads, 259 likes before debunking). Community forensics (HF discussion #13, later HN 35 pts) proved **43 complete tensors regenerate bit-for-bit from a SHA256(tensor-name)-seeded NumPy PCG64** — a fabrication fingerprint — with pre-registered predictions on 21 unread tensors matching byte-exactly. The repo lingered >1 week; resolution came from adversarial reproducibility, not moderation. The case sharpens an outstanding platform gap: HF has **no cryptographic weight-provenance attestation**, so codenames laundered from real leaks (here, the Claude Code source leak's "numbat") are enough cover for credible-looking fakes. Analysis: [[concepts/fabricated-frontier-model-weight-leaks]].
+
 ## Related Entities
 - [[concepts/coding-agents/hf-cli]] — Agent-optimized CLI for the Hub
 - [[concepts/huggingface-skills]] — Standardized agent skill definitions for ML tasks

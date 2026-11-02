@@ -1,10 +1,11 @@
 ---
 title: "US-China AI Competition"
 created: 2026-05-17
-updated: 2026-08-05
+updated: 2026-11-02
 type: concept
 tags: [geopolitics, china, policy, anthropic, governance, ai-governance, prediction]
 sources:
+  - raw/articles/2026-11-02_csa_china-frontier-ai-export-controls-48.md
   - raw/articles/2026-05-14_anthropic_2028-ai-leadership-scenarios.md
   - raw/articles/2026-06-10_dario-amodei_policy-on-the-ai-exponential.md
   - raw/newsletters/2026-08-04-china-open-sourced-the-cheapest-video-studio-yet.md
@@ -147,6 +148,11 @@ In "Policy on the AI Exponential," Dario Amodei proposed a comprehensive geopoli
 A **CNBC op-ed by Dewardric L. McNeal** told Washington that the debate over whether Chinese labs can reach the frontier has been **"overtaken by events."** McNeal names DeepSeek, Moonshot (Kimi K3), Alibaba (Qwen), Tencent (Hunyuan), and Zhipu as evidence that Chinese labs are already at or near the frontier, arguing that **price, funding, and developer adoption** — not raw capability — will decide the competition's outcome.
 
 Complementary data point from the same newsletter: a **Bloomberg geographic price chart** showing US AI prices high and Chinese prices low, with Fable 5 at the highest price point — reinforcing the price-competition framing of the op-ed.
+
+## China Strikes Back: MOFCOM Announcement No. 48 (Oct 2026)
+
+On 2026-10-16 China issued its **first frontier-AI export controls** — a symmetric escalation. Model weights/checkpoints/architecture are restricted above 10²⁶ FLOPs / 2T params / top-10 global rank; agent architectures are controlled as a distinct regulatory object; AI-enabled offensive-cyber capability is restricted or prohibited outright. An interim pre-export registration applies immediately (comment deadline 2026-11-15). Unlike U.S. controls (compute + service access, cf. the June 2026 Fable 5 suspension directive), China's regime controls **weight custody and local deployment** while leaving API/SaaS access free — directly implicating self-hosted Chinese models abroad and future Chinese open-weight release cadence. Details: [[concepts/china-mofcom-announcement-48-export-controls]], [[events/2026-10-16-china-mofcom-48-ai-export-controls]].
+
 
 ## Related Concepts
 

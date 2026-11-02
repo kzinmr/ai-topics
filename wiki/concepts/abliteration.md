@@ -62,6 +62,10 @@ Heretic's key innovations over manual abliteration:
 
 The process takes approximately 30-110 minutes for a typical 7B-14B parameter model, depending on trial count (typically 50 trials).
 
+### Heretic 2.0 (November 2026)
+
+Heretic 2.0 was released 2026-11-01 (HN 18, title: "Training-free language model modification"), continuing the automation line — abliteration remains positioned explicitly as *training-free* model editing. Given the wiki's prior coverage (3,500+ abliterated models, 13M+ downloads via the FT investigation) and the security turn documented in [[concepts/abliterated-model-backdoor]], each Heretic release matters less for its technique than for the throughput it gives to the backdooring pipeline: fast, automated weight edits without training are exactly what makes trigger-conditional backdoors cheap at scale. (Release details thin at capture time — changelog not yet scraped; this section is a dated marker, upgrade if the release notes surface.)
+
 ## Scale of the Problem
 
 The scale of abliterated model proliferation is staggering:
