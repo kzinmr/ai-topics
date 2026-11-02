@@ -1,3 +1,10 @@
+# Wiki Log
+
+## [2026-11-02] trending-topics
+- New: concepts/hackerbooks (HN 1404pts HackerTube spin-off), concepts/ai-agent-bureaucracy (YC labs Minecraft 50-agent failure), concepts/ai-cost-of-js-frameworks (Nolan Lawson token-cost benchmark), concepts/triggerdev-env-var-exposure-2026-11
+- Updated: concepts/academic-reception-of-ai-math (Calegari guest post via Tao blog), concepts/frontier-model-usage-policy-enforcement-2026-10 (ChatGPT/Codex usage merge), entities/sam-altman (DRAM-to-datacenters remark)
+- Raw: 4 articles (terrytao math, tomshardware minecraft, nolanlawson js-cost, triggerdev disclosure); SCHEMA: +token-economics, +framework-benchmark
+
 ## [2026-11-02] crawl | active-crawl — 3 new pages + 1 event + 3 enrichments (China MOFCOM No. 48, numbat hoax, LLM cognitive crutch)
 
 Trend discovery: HN Algolia search_by_date (8 queries AI/LLM/agent/model/OpenAI/Anthropic/inference/training, 4-day window, points>=15, one terminal call) — 45 stories after dedup. Killed same-day duplicates (Parameter ChatGPT takeover, Anthropic video-game RE blocking, Anthropic IPO financing cluster, Sam Altman DRAM quote) and below-threshold noise (doomformer/bootgpt hobby projects, OpenIDEA, Spinf-serve, hackerbooks/wikihack, Muse surveillance Substack, AI fan wikis eurogamer).
@@ -75,7 +82,6 @@ index.md: +3 concepts (2278->2281), +1 event (47->48), Total 3362->3366. All new
 
 ---
 
-# Wiki Log
 
 ## [2026-11-01] ingest | x-accounts-scan: Vercel Labs agent-desktop launch
 

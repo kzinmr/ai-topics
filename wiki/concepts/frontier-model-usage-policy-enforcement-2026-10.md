@@ -2,7 +2,7 @@
 title: "Frontier Model Usage-Policy Enforcement Controversies (Oct 2026)"
 type: concept
 created: 2026-11-01
-updated: 2026-11-01
+updated: 2026-11-02
 tags:
   - anthropic
   - claude
@@ -48,6 +48,12 @@ Community reading: game IP holders (and platform partners) create legal pressure
 - **Enforcement asymmetry**: both cases show classifiers acting on *topic shape* (training internals, game assets) rather than intent, producing false positives concentrated among exactly the technical users labs most want — the HN threads' dominant complaint.
 - **No public policy text**: neither enforcement wave was accompanied by a published, diffable usage-policy update, so users reverse-engineer the policy from refusals themselves — a governance gap for frontier labs (cf. [[concepts/anthropic/transparency-hub]]).
 - **Vendor-reported confidence**: all evidence is user self-reports plus secondary press; Anthropic has not published the classifiers' decision criteria. Treat scope claims as `confidence: medium` until a primary statement lands.
+
+## 3. ChatGPT and Codex usage limits merged (Nov 1) — the pricing-side mirror
+
+OpenAI began notifying users that "Chat and Work are coming together in one experience" — a **shared allowance for ChatGPT and Codex** (help.openai.com article "Understanding ChatGPT and Codex usage limits"; HN 226pts/167c). Community reading: a cost-control response to the $11B-vs-$30B raise shortfall, aligning OpenAI with Claude Code's long-standing shared-pool model. Nuances from the thread: minimaxir notes it deters spawning expensive Pro requests through the ChatGPT interface; sjs382/sjs382-class users say the previously separate Codex quota was a deciding factor staying on ChatGPT and they are now "much more willing to change providers"; furyofantares points out the counter-example — Claude Code burning the whole pool so mundane chat/search is also cut off "killed me," and separate pools were ChatGPT's differentiator; edot counters that OpenAI simultaneously rolled out ~$200/month free API credits for Pro users, hardly the behavior of a company rationing spend. Reservation idea from naniwaduni: reserve a slice of quota for non-code use — an objective downgrade that would still improve UX.
+
+Source: https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits · HN https://news.ycombinator.com/item?id=50320588
 
 ## See also
 

@@ -2,7 +2,7 @@
 title: Sam Altman
 type: entity
 created: 2026-04-13
-updated: 2026-07-20
+updated: 2026-11-02
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
@@ -263,6 +263,12 @@ Multiple countries have banned or halted Worldcoin operations over biometric pri
 
 ### OpenAI Governance
 The 2023 board crisis revealed deep tensions between safety-focused board members and growth-focused leadership. The subsequent restructuring has been criticized as consolidating too much power in the CEO's hands.
+
+## 2026-11: DRAM-to-datacenters remark
+
+At a public event (reported Oct 30–Nov 1, Tom's Hardware/FrVR), Altman said "it's quite terrible for your PC to have RAM" — consumers sitting on "the world's limited supply of DRAM" instead of "shoving it all in datacentres" offers "better utilization." (HN 104pts + 63pts threads). HN reaction was split between efficiency agreement ("most people don't use much of the RAM in their PC... moving the majority to data centers where utilization could be much higher is more efficient" — onion2k) and control concerns ("the elephant in the room is who would control all that RAM and set the rules about which usages are allowed, for what price" — xg15, explicitly tying it to Anthropic's same-week Claude game-RE block: "the person you hate didn't just make a great point, they would also make the rules"). Context: consumer RAM prices were already spiking on datacenter demand, making the remark land as supply-side advocacy from the largest buyer.
+
+Sources: https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization · HN https://news.ycombinator.com/item?id=50324267 · HN https://news.ycombinator.com/item?id=50305797
 
 ## Related
 

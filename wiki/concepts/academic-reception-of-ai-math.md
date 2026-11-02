@@ -1,7 +1,7 @@
 ---
 title: "Academic Reception of AI-Generated Mathematics"
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-11-02
 type: concept
 tags:
   - mathematics
@@ -60,6 +60,12 @@ The next day (Oct 8), the `openai/math` repo `history.md` recorded **three withd
 - **Co-pilot camp** (Tao, Lean advocacy, autoformalization-as-tool): AI is powerful *auxiliary* machinery; the value is in formalizing existing literature and checking human work. See [[concepts/autoformalization]] and [[entities/terry-tao]].
 - **Refusenik / boundary-policing camp** (AHM, Karagila): the danger is not the tool but the *institutional substitution* — replacing mathematicians with "kitchen tools" that can "dice veggies" but cannot cook. Karagila explicitly is not anti-AI (uses LLMs for infographics, proofreading) but insists the *framework* for judging AI contributions is missing.
 - **Open questions the field has not answered**: Should AI-assisted papers require public chat logs? What is the author's contribution when a lab runs 400,000 worker sessions? Does Lean-kernel verification transfer credit to the model, the scaffolding, or mathlib?
+
+## 2026-11-01: Calegari's "let's act like it" (via Terence Tao's blog)
+
+Frank Calegari (guest post on Terence Tao's blog, converted to WordPress format "using AI" per Tao's note) argued the mathematical community should stop mourning and adapt its own institutions — hiring, publishing, student training — rather than fight trillion-dollar companies. Key moves: the OpenAI October-6 dump "made barely a dent" in Langlands' central problems, and "solving every Langlands problem" would no more "solve number theory" than the periodic table solved chemistry; central problems are "the most natural boundaries of our understanding," not the end of a field. He concedes the papers are "atrociously written," violate attribution norms, and some are even wrong. Includes Hugo Duminil-Copin's lament that every major open problem he ever publicly mentioned was "claimed to be proved" by the announcement. (HN 323pts/380c) Top comments split along the acceptance axis: "the 700+ solutions are in no way accepted as solved until humans say so — like saying SC2 was solved when Alpha beat the best players" (jnstrdm05) vs "to claim they should not yet be accepted as solved is to claim there is a bug in Lean, which is a big claim" (ion_trapper), and dooglius's forecast: "all but a negligible amount of novel mathematical results going forward will have had substantial LLM involvement."
+
+Source: raw/articles/2026-11-01_terrytao_mathematics-has-changed.md · HN https://news.ycombinator.com/item?id=50328251
 
 ## Related
 

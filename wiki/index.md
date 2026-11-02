@@ -968,13 +968,17 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2281 pages)
+## Concepts (2285 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
+- [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
+- [[concepts/ai-cost-of-js-frameworks|AI Cost of JS Frameworks]] – per-framework AI coding token-cost benchmark (Nolan Lawson; Astro best, Angular worst)
 - [[concepts/chatgpt-html-preview-account-takeover]] — ChatGPT HTML Preview account takeover (Parameter Labs, Oct 2026) — share link → MathLive postMessage/innerHTML injection → YouTube oEmbed CSP bypass → JS as chatgpt.com; private-chat exfil + account actions; P1 fixed Oct 26, $5k bounty (HN 335)
 - [[concepts/frontier-model-usage-policy-enforcement-2026-10]] — Anthropic usage-policy enforcement controversies (Oct 2026) — blocks on 'anything touching training larger models' (HN 367) + video-game reverse-engineering refusals (HN 149); classifier false positives on legitimate ML/security work
+- [[concepts/hackerbooks|HackerBooks]] – HN-comment-driven book recommendation service (HackerTube spin-off, HN 1404pts, 2026-11-01)
 - [[concepts/project-suncatcher]] — Project Suncatcher (Google orbital TPU moonshot) — Oct 30, 2026 'Hello World': first AI response from data-center-class TPU in orbit (Gemma 4 haiku, Svalbard downlink); thermal/radiation tests, twin satellites 2027
 - [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
+- [[concepts/triggerdev-env-var-exposure-2026-11|Trigger.dev Env-Var Exposure]] – 2026-11-01 incident exposing customer environment variables, disputed 'Resolved' status
 - [[concepts/volta-infostealer-llm-victim-appraisal]] — VOLTA infostealer LLM victim appraisal (Cisco Talos, Oct 2026) — self-deleting stealer POSTs enriched evidence bundle to OpenRouter as 'forensic intelligence analyst'; WHAT THEY'RE WORTH ranking + 3-model refusal-failover chain (HN 248)
 - [[concepts/zombie-statistics]] — Trakkr study tracing 1,285 AI-quoted statistics: only 40% reach a study that confirms them, 11% have no study anywhere (Oct 2026)
 - [[concepts/claude-code/claude-code-vsx-backdoor]] — Backdoored official Claude Code for VS Code 2.1.313 on the Cursor Marketplace (Phorion, Oct 30 2026): persistent SSH backdoor on macOS/Linux/Windows, pulled from all registries
