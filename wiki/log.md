@@ -1,4 +1,10 @@
 # Wiki Log
+## [2026-11-03] blog-ingest | 17 raw articles saved
+
+- Run `20261103T100059Z`: scan `total_new=35`, per-run fetch cap saved 20 candidates, 17 raw articles written to `wiki/raw/articles/`.
+- Highlights: Simon Willison (llm 0.37 release, Census Bureau "Super Intelligence", October newsletter), Sean Goedecke (LLMs not superhuman at NN weights, Audience capture), KrebsonSecurity (1.3M TV-box proxy botnet takedown), geohot (Pray for Chaos), Sierra Blog (Agent Studio/Ghostwriter redesign, CISO hire), John Cook (projective plane), TERP (Lorem Ipsum .gov.uk), idiallo (prove-you-are-not-a-child).
+- Unsaved (3): Simon Willison YouTube link (sound-leaks-location), OpenAI News x2 (Scaling Git at OpenAI, Grid Protectors Program) — deferred to downstream triage.
+- No Layer-2 page edits (blog-ingest stage only). Checkpoint: `/opt/data/.hermes/cron/data/blog_ingest/latest.json`.
 ## [2026-11-03] skeleton-enrich-daily | backlog empty — snapshot recorded
 
 - Whole-tree YAML-frontmatter scan (`wiki/**/*.md`, regex `status:\s*skeleton`): **0** skeleton pages.
