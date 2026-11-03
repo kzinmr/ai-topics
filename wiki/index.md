@@ -3352,7 +3352,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (47 pages)
+## Queries (50 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
@@ -3373,6 +3373,7 @@
 - [[queries/2026-10-25-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-25): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-26-late-night-hot-post]] — Late-night hot-post 2026-10-26: the "inside the model" cluster — ThinkingCap thinking-token compression, Hirundo Qwen3-Coder persona-conditioned security degradation, OpenAI offline cached-web RL
 - [[queries/2026-10-27-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-27): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-10-29-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-29): 0 status:skeleton pages; backlog empty since 10-17 streak, no enrichment performed
 - [[queries/2026-10-30-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-30): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-10-31-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-10-31): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-11-01-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-01): 0 status:skeleton pages; backlog empty, no enrichment performed

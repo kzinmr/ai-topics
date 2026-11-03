@@ -1,3 +1,8 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
 ## [2026-11-03] watchdog | Daily auto-fix sweep — no corrections needed; pipeline alerts triaged
 
 ### Verified clean (no action taken)
@@ -13,8 +18,6 @@
 - 172 auto-fixable bare->namespaced wikilinks; 4 verified duplicate merges (nvidia-openshell, alphaproof-nexus, deerflow, cline back-link); 8 high-ref missing pages (per 2026-10-30 annotations).
 
 ---
-
-# Wiki Log
 
 ## [2026-11-03] trending-topics | HN noon scan — weight-space programming, Anthropic S-1 cluster, pretraining backdoors
 
@@ -316,7 +319,6 @@ index.md: +3 concepts (2278->2281), +1 event (47->48), Total 3362->3366. All new
 - Raw: 6 articles (mistral.ai weights release, phorion.io VSX advisory, trakkr.ai zombie stats, research.google sleep framework, skypilot.ai NVL72, 404media Proton AI reckoning)
 - SCHEMA: +9 tags (mistral-large-4, frontiercode, terminal-bench, sleep-framework, zombie-statistics, rack-scale-computing, nvlink, skypilot, ssh-backdoor, ai-workplace-pressure, employee-surveillance)
 - Report: `inbox/rss-scans/trending-topics-2026-10-30.md`
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-10-30 11:00 UTC] active-crawl | 5 new concept pages + 2 enrichments — LLM Voice, Duet-style hierarchy, Stack Overflow collapse, Raschka reasoning course, agent status-summary polling
 
