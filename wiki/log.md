@@ -1,3 +1,19 @@
+## [2026-11-03] watchdog | Daily auto-fix sweep — no corrections needed; pipeline alerts triaged
+
+### Verified clean (no action taken)
+- index.md: 0 pipe-prefix, 0 line-number-prefix, 0 triple-bracket, 0 space-prefix corruption; validate_index.py exit 0 (3,409 lines)
+- Top-level entities/ (953) and concepts/ (1,694) fully indexed, 0 missing frontmatter
+- log.md: single `# Wiki Log` header, 0 orphan `###` timestamp lines
+
+### Pipeline alerts triaged
+- `x_accounts stale(26h)`: false positive — every-2-days schedule (`30 22 */2 * *`), last run 2026-11-01 22:35 UTC status ok, next run due 22:30 today.
+- `blog chain broken (ingest_ok_but_triage_failed)`: transient infra — blog-triage and blog-wiki-ingest failed at 10:28/10:40 UTC with HTTP 503 "Local LLM server is busy" (fallback to external provider did not engage). Same root cause as dreaming-wiki-ingest failure at 2026-11-02 18:20 UTC. 17 saved raw articles from run 20261103T100059Z are untriaged today; recoverable on tomorrow's run.
+
+### Deferred to weekly wiki-graph-analysis (Fri 15:00 UTC)
+- 172 auto-fixable bare->namespaced wikilinks; 4 verified duplicate merges (nvidia-openshell, alphaproof-nexus, deerflow, cline back-link); 8 high-ref missing pages (per 2026-10-30 annotations).
+
+---
+
 # Wiki Log
 
 ## [2026-11-03] trending-topics | HN noon scan — weight-space programming, Anthropic S-1 cluster, pretraining backdoors
