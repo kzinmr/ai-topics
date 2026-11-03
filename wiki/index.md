@@ -968,7 +968,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2287 pages)
+## Concepts (2289 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
