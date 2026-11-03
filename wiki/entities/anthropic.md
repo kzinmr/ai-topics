@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-11-01
+updated: 2026-11-03
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -870,6 +870,18 @@ Community reports of Claude blocking **anything touching training of larger mode
 - [[Gary Marcus]] — AI industry skepticism
 - [[OpenAI]] — Primary competitor
 - [[Ed Zitron]] — Revenue skepticism
+## IPO Financial Disclosures & IPO-Blocking Advocacy (Nov 2-3, 2026)
+
+Anthropic filed a **revised S-1** ahead of a planned November listing (HN 50337439, 233 pts, 2026-11-02; HN 50342424, FT):
+- **Q3 2026 revenue ~$17B**; ~half of first-9-month revenue landed in Q3.
+- **Net loss ~$23.3B in Q3**, $104B cumulative — mostly fair-value revaluation of convertible notes/derivatives, *not* one-time (SpicyLemonZest, HN thread; recurring while pre-IPO rounds keep repricing).
+- **$895B in compute/infrastructure commitments** disclosed (FT framing: "$900B AI spending commitments ahead of IPO").
+- Analyst read (via HN, Bluesky analyst quote): Q3 ARR $67.8B vs $46.2B Q2, **+47% QoQ** — decelerating from 100%+ first-half growth as "tokenmaxxing" ended; GAAP operating margin ~8% → negative.
+- Growth-flattening skeptic view: Henry Blodget (Regenerator, originally Oct 15, recirculated with the S-1, HN 50344958, 213 pts) — monthly implied growth barely moved July→September; neocloud debt (CoreWeave) priced on steeper curves.
+- **Internal token spend exceeds employee pay** (Business Insider, HN 50339494, 334 pts): Anthropic values internal Claude use at *retail* prices; commenters stress this is opportunity-cost accounting, not cash outflow — but it implies ~$300k compute/employee at the frontier-labs edge.
+- **IPO-blocking advocacy**: Matt Scherer (co-author of "Brace for Impact: Protecting people and the economy when the AI bubble bursts") argues on TechPolicy.Press that the SEC should block the IPO over circular financing and footnote-level financial engineering (HN 50344919, 366 pts). HN majority opposes blocking ("let the market price it"), with a minority index-fund-distortion counter (mandatory pension/index purchases = transfer from public to insiders).
+- Related pages: [[concepts/ai-bubble-financial-crisis]], [[concepts/ai-infrastructure-circular-financing]], [[concepts/agi-and-the-city-agi-debate-2026]].
+
 ## Related
 - [[entities/anthropic]] — The model family
 - [[entities/claude-code]] — Claude Code CLI agent

@@ -986,7 +986,9 @@
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer
 - [[concepts/aarri-bench]] — AARRI-Bench (Act As a Real Research Intern)
 - [[concepts/aauth]] — AAuth — Client Identity Protocol for AI Agents; draft-hardt-oauth-aauth; client-identity-based agent authorization for MCP-style delegation; intent-based auth panel (Keycard, Oct 2026)
-- [[concepts/agi-declaration-controversy-2026]] — The AGI Declaration Controversy (Sep 2026) — Jensen Huang's "race to AGI is over" claim after GPT-6 Astra; no definition/evidence, Marcus + Chollet (ARC-AGI 3) counter-evidence, incentive table, tension with Pachocki's "alien mind" framing + Leike's AI-research-automation warning
+- [[concepts/agi-declaration-controversy-2026]] — The AGI Declaration Controversy (Sep 2026) — Jensen Huang's "race to AGI is over" claim after GPT-6 Astra; no definition/evidence, Marcus + Chollet (ARC-AGI 3) counter-evidence, incentive table, tension with Pachocki's "alien mind" framing + Leike's AI-research-automation warning; Nov 2 2026 follow-up: weight-space programming result (see [[concepts/weight-space-programming]])
+- [[concepts/agi-and-the-city-agi-debate-2026]] — AGI & the City (Nov 2026): Altman "AI research is now mostly empirical", Sutskever "RL is not enough / 2027 surprise", Sahai math-ego essay, Census EO 14434 "Super Intelligence" rename — five-source capability-narrative cluster
+- [[concepts/agentic-backdoors-via-pretraining-poisoning]] — arXiv 2610.37741: pretraining-corpus poisoning (0.1% rate) implants RCE backdoors in CLI agents; 92% ASR at 4B scale, positive to 0.0005%; HuggingFace-download supply-chain framing; sandbox+observability as convergent defense (Nov 2026)
 - [[concepts/abliteration]] — Abliteration
 - [[concepts/abliterated-model-backdoor]] — Abliterated Model Backdoors — trigger-conditional backdoors hidden in edited/abliterated open weights; ProjectDiscovery poisoned a 7B model (<$50) via Codex CLI that exfiltrated repo credentials only on a hidden trigger, passing evals (Oct 2026)
 - [[concepts/absurd-durable-execution]] — Absurd (Postgres-Native Durable Execution)
@@ -1103,6 +1105,7 @@
 - [[concepts/agents-self-improvement-learning]] — Agents Self Improvement Learning
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves
 - [[concepts/agi-economics]] — AGI Economics
+- [[concepts/weight-space-programming]] — Weight-Space Programming (MIT CSAIL, Nov 2 2026): GPT-6 Astra natively reads/writes/repairs NN weights without tools or gradients; MATH-500 7.9%->48.1% on Qwen3.5-0.8B via 0.016% weight edits; RSI + interpretability implications; HN ~2750 pts
 - [[concepts/agi-scarcity]] — AGI Scarcity
 - [[concepts/agreement-is-a-bug]] — Agreement is a Bug
 - [[concepts/ai-addiction-burnout]] — AI Addiction and Burnout Patterns

@@ -2,7 +2,7 @@
 title: "Agent Bureaucracy Failure (Multi-Agent Coordination Collapse)"
 type: concept
 created: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-03
 tags:
   - multi-agent
   - agent-swarms
@@ -38,6 +38,10 @@ related:
 ## What it does *not* show
 
 No baseline against a single-agent run of equal budget was published in the coverage; "waste" claims rest on the experimenters' narrative. The experiment also conflates open-ended goals ("build a civilization") with no completion criteria — an agent's inability to stop is a known harness problem (DougN7: "it will do a number of steps and then just stop... then I prompt 'continue on'").
+
+## Same-week resonance (Nov 3): OpenAI's Git scale-up & agent code volume
+
+OpenAI's "Scaling Git at OpenAI" post (openai.com/index/scaling-git-at-openai/, HN 50345924, 239 pts; body not fetched — 403 — summarized from thread) describes engineering Git infrastructure for agent-driven commit volume, and is widely read as a response to Anthropic's "redesigning source control" research post. The HN thread splits the bureaucracy question differently: high LoC/commit volume is an *asset* when agents both write and review code (warkdarrior, simianwords — "code is mostly written by and for agents") vs a *liability* that contaminates future agent contexts and burns tokens on low-value code (zdragnar, mrbungie, 7e — "AI slop... many, many more commits as you keep fixing and fixing"). Both readings are the coordination-cost problem of this page transposed from multi-agent planning to version-control scale. See also [[concepts/drowning-in-documents-paradox]].
 
 ## Related
 

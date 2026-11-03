@@ -1,7 +1,7 @@
 ---
 title: "The AGI Declaration Controversy (September 2026)"
 created: 2026-09-07
-updated: 2026-09-15
+updated: 2026-11-03
 type: concept
 confidence: medium
 tags:
@@ -89,6 +89,10 @@ Note: Leike's remarks come from a newsletter summary of the Dwarkesh interview; 
 - Is there any operational definition of AGI that survives a frontier lab's ability to fund the benchmark that tests it? *agidefinition.AI* is the current best attempt, and it has no enforcement mechanism.
 - Do "AGI is here" declarations have measurable downstream effects on procurement, pricing, and regulation, independent of whether they are true?
 - Will repeated declarations devalue the term to the point of disuse — as "Singularity" and "Artificial General Intelligence" have previously drifted?
+
+## Follow-up: Weight-Space Programming (November 2, 2026)
+
+Six weeks after Huang's "race to AGI is over" declaration, the strongest single capability datapoint in that direction appeared: MIT CSAIL's "Sparks of Weight-Space Programming" showed GPT-6 Astra natively reading, writing and repairing small neural network weights without tools or gradients (MATH-500 7.9%→48.1% on Qwen3.5-0.8B via 0.016% weight edits). HN ~2,750 pts. Unlike the September declarations, this one ships reproducible artifacts — but it remains small-scale and its emergent-vs-trained provenance is unknown. See [[concepts/weight-space-programming]].
 
 ## Related
 

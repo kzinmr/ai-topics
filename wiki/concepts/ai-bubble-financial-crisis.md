@@ -1,7 +1,7 @@
 ---
 title: "AI Bubble Financial Crisis - When Capex Busts Become Credit Events"
 created: 2026-09-15
-updated: 2026-09-17
+updated: 2026-11-03
 type: concept
 tags: [ai-economics, ai-industry-economics, valuation, ai-hype]
 sources: [raw/newsletters/2026-09-15-what-if-ai-causes-a-recession.md]
@@ -48,6 +48,14 @@ that adopt AI; it is a redistribution shock, not a balance-sheet shock. A recess
 
 - How much AI capex is actually financed through private credit vs. hyperscaler balance sheets? Determines whether the credit channel is systemic or contained.
 - Does the verification-economics framing (see [[concepts/agent-slop]]) soften the demand-collapse leg of the scenario?
+
+## November 2-3, 2026: Anthropic S-1, Oracle financing, Census "Super Intelligence" rename
+
+- **Anthropic revised S-1** (HN 50337439, 233 pts): $17B Q3 revenue, ~$23.3B Q3 net loss (convertible-note fair-value driven), **$895B compute commitments**; +47% QoQ ARR growth, down from 100%+ first-half pace. Blodget's "growth just flattened" (HN 50344958) revived the neocloud-debt question. Details on [[entities/anthropic]].
+- **IPO-blocking advocacy**: TechPolicy.Press (Matt Scherer) — SEC should block the Anthropic IPO over circular-financing opacity (HN 50344919, 366 pts); continuation of the [[concepts/ai-bubble-bailout-resolution]] thread.
+- **Oracle** filed to sell **$20B** in new stock+bonds for AI buildout (CNBC, HN 50342284, 190 pts); stock -8% on the filing, -60% from Sept 2025 peak — leveraged-neocloud repricing continues alongside CoreWeave.
+- **Intel stock collapse / $3.5T chip rout** spreading (Yahoo Finance, HN 50346153, 213 pts, Nov 3) — hardware-side contagion marker.
+- **Rhetorical substrate**: EO 14434 renamed federal AI to "Super Intelligence"; the Census Bureau updated its Oct 19, 2026 survey wording accordingly (Simon Willison, HN 50336840, 118 pts) — government statistical apparatus now embedded in the AGI-narrative layer, an adoption-metric integrity issue for any bubble assessment.
 
 ## Related
 

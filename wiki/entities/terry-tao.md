@@ -1,7 +1,7 @@
 ---
 title: Terence Tao
 created: 2026-07-13
-updated: 2026-09-12
+updated: 2026-11-03
 type: entity
 tags:
   - person
@@ -137,3 +137,7 @@ Tao launched **oai-math-revised** (2026-10-24, HN 52 pts): a community hub for r
 - [[concepts/coding-agents/coding-agents]] — AI agents that assist with coding, including proof formalization
 - [[concepts/open-source-ai]] — The movement for open and accessible AI models
 - Terence Tao's blog at [terrytao.wordpress.com](https://terrytao.wordpress.com) — His primary public platform for AI + mathematics advocacy
+
+## Egoless Mathematics in the AI Era (November 2026)
+
+Guest post on Tao's blog (2026-11-02) by **Karthik C. S., Amit Sahai, and Jie Xue** (UCLA) — "Egoless Mathematics in the AI Era" (HN 50341736, 167 pts) — argues mathematicians should confront what gives mathematical work its worth: if the answer is "production of results and demonstration of individual ability," AI-driven result production hollows out the practice. The authors defend a Platonist/discovery view (fossil-hunter analogy: prior existence gives direction to the investigator's activity) and conclude the discipline should re-anchor on understanding and community rather than ego-attached priority claims. Tao's editorial note discloses the post was "converted using AI" from another file format. HN reception split along Platonist-vs-social-construction lines; abstractbill (math PhD, ex-academia): "one of the best posts I've seen on this topic in a while."

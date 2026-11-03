@@ -1,4 +1,17 @@
 # Wiki Log
+
+## [2026-11-03] trending-topics | HN noon scan — weight-space programming, Anthropic S-1 cluster, pretraining backdoors
+
+- **NEW** [[concepts/weight-space-programming]] — MIT CSAIL "Sparks of Weight-Space Programming" (2026-11-02): GPT-6 Astra natively reads/writes/repairs NN weights, no tools/gradients; Qwen3.5-0.8B MATH-500 7.9%->48.1% via 0.016% edits, IFEval 3x. HN 50341174 ~2751pts.
+- **NEW** [[concepts/agentic-backdoors-via-pretraining-poisoning]] — arXiv 2610.37741 (Carlini/Jagielski et al.): 0.1% pretraining-corpus poison -> RCE backdoor in from-scratch Qwen3 CLI agents, 92% ASR @4B, positive to 0.0005%. HN 50341334.
+- **NEW** [[concepts/agi-and-the-city-agi-debate-2026]] — five-source capability-narrative cluster: Altman "mostly empirical" (1102.15492), Sutskever "RL is not enough" podcast, Sahai/Karthik/Xue egoless-math essay via Tao blog (HN 167pts), Census EO 14434 "Super Intelligence" rename via Simon Willison (HN 118pts).
+- **UPDATED** [[entities/anthropic]] — revised S-1 section: $17B Q3 revenue, $23.3B Q3 net loss (convertible-note fair value), $895B compute commitments, +47% QoQ ARR, internal token spend > employee pay (HN 334pts), Scherer SEC IPO-block op-ed (HN 366pts), Blodget growth-flattening (HN 213pts).
+- **UPDATED** [[concepts/ai-bubble-financial-crisis]] — Nov 2-3 market section: Oracle $20B stock+bond filing (HN 190pts, -60% from peak), Intel stock collapse / $3.5T chip rout (HN 213pts), S-1 and IPO-block cross-refs.
+- **UPDATED** [[concepts/agi-declaration-controversy-2026]], [[concepts/rome-weight-tampering-attacks]], [[concepts/ai-agent-bureaucracy]] (OpenAI Scaling Git resonance, HN 239pts, primary 403), [[entities/terry-tao]] (egoless-math guest post), [[concepts/self-hosting-ai-development]] (Revolut 56xB200 GLM @ $0.30/M = 1/10th Anthropic-OpenAI price, HN 103pts).
+- **Raw**: 2026-11-03 rikiyat weight-space blog + arXiv backdoor abstract (both with HN comment-tree appendix); sha256 set.
+- **SCHEMA**: +6 tags on Models line (weight-space-programming, model-editing, pretraining-poisoning, agentic-backdoor, anthropic-ipo, self-hosted-inference).
+- Report: inbox/rss-scans/trending-topics-2026-11-03.md. Not covered today: Momentic launch HN, NVIDIA auto-ontology, mouse brain-surgery agent (kept as report entries), OpenAI Scaling Git primary (403).
+
 ## [2026-11-03] newsletter-wiki-ingest | run 20261103T101038Z | 4 newsletters / 76 links → Takes 3, Reference 1, Skip 8
 - Recovery: upstream newsletter-triage response failed JSON parse; `triage_latest.json` checkpoint (run 20261103T101038Z) was valid and consumed as-is.
 - **NEW** [[concepts/ai-benchmarks/realtime-bench]] — Realtime-Bench (arXiv 2610.22155, UT Austin/OSU/UIUC/NVIDIA/Northwestern/Steadyworks): 50 dynamic tasks (30 web + 20 game), RT-Perceive/RT-Deliberate/RT-Act, Wall/Paused/Token clock conditions; best Wall-Clock Pass^3 36% vs ~70-80% paused. Via Import AI 479 (Jack Clark). arXiv abstract verified live.

@@ -1,7 +1,7 @@
 ---
 title: "Rank-One Model Editing (ROME) Attacks & GPU Weight Tampering"
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-11-03
 type: concept
 tags: [weight-tampering, runtime-security, ai-infra-security, cybersecurity, interpretability, supply-chain, agent-security]
 sources:
@@ -43,6 +43,10 @@ This is the "runtime security for AI" thesis: file/process/network telemetry is 
 - Cost/overhead of per-CUDA-launch attribution on hot inference paths.
 - Whether TEE/confidential-GPU attestation becomes the standard defense vs detection-only tooling.
 - Attribution in shared/multi-tenant GPU clusters (K8s/Slurm) where many jobs share a node.
+
+## 2026-11-03: weight-space capabilities cross-reference
+
+Two 2026-11 developments bracket this page's attack surface: (1) MIT CSAIL's weight-space programming result shows frontier LLMs can *legitimately* read/repair weights natively — the same primitives an adversary would misuse, and a candidate *detection* tool for tampering; (2) arXiv:2610.37741 shows RCE backdoors planted at the pretraining-corpus layer (0.1% poison → 92% ASR), moving integrity concerns upstream of deployment. See [[concepts/weight-space-programming]] and [[concepts/agentic-backdoors-via-pretraining-poisoning]].
 
 ## Related
 
