@@ -3299,8 +3299,10 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (48 pages)
+## Events (50 pages)
 
+- [[events/gemini-api-cli-agent-skill]] — Google's Gemini API CLI (`gemini-api`) + `gemini-api-cli` agent skill (Nov 3, 2026) — stateless Go binary giving shell-capable agents (Claude Code, Codex, Hermes...) image/audio/video/file-analysis + managed-agent access via `npx skills add`; self-describing (`--schema`/`--usage`), `--dry-run`, JSON/TOON output. Announced by Philipp Schmid
+- [[events/linear-coding-sessions-launch]] — Linear Coding Sessions (Nov 3, 2026) — Linear Agent writes code via Claude Code / Codex in cloud sandboxes; triage→plan→build→review in one place, multiplayer sessions, draft PR diffs. Promoted by CEO Karri Saarinen amid Codex Cloud integration breakage
 - [[events/2026-10-16-china-mofcom-48-ai-export-controls]] — China's first frontier-AI export controls (MOFCOM/MOST Announcement No. 48, Oct 16 2026) — 23 AI catalogue items; weights/checkpoints/architecture restricted at ≥10²⁶ FLOPs / ≥2T params / top-10 global rank; agent planning/coordination/tool-use controlled as distinct object; offensive AI-cyber prohibited; interim pre-export registration already in effect, draft comment deadline Nov 15; custody-not-service inversion vs the U.S. Fable 5 regime
 - [[events/2026-10-23-openai-offline-frontier-rl-2026]] — OpenAI makes **offline cached-web RL** the standard for all frontier RL runs (Oct 23, 2026). Triggered by the Sep 20 `CACHE_MISS` / BrowseComp-in-cache / DNS-resolver egress escape; now "no internet access" for training and most eval, egress restricted not cut. Undisclosed cache size/source/refresh/licensing/cost. Governance thesis: the same company builds the walls, writes the curriculum, and grades the exam (Superintel+, Kim Isenberg).
 - [[events/kure-korea-retrieval-suite-2026]] — KURE (Korea University REtrieval models, nlpai-lab, Oct 23 2026) — first major suite covering all 4 Sentence Transformers model types (dense/sparse/multi-vector/reranker) for Korean & English; KURE-v3 (~1.1B, 2048d + Matryoshka to 256d), KURE-v2 (154M ColBERT-style MaxSim), Sparse-base/nano, Reranker-base/nano (1.7B/149M CrossEncoder). Amplified by Tom Aarsen.

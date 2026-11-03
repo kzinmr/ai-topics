@@ -4,7 +4,7 @@ type: entity
 aliases: [hugobowne, Hugo Bowne Anderson]
 status: complete
 created: 2026-04-14
-updated: 2026-09-05
+updated: 2026-11-03
 depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 7, 25), 'notes': "Added Privacy Engineering + Agent Harness Engineering + Production AI Agents: Maven Assistant sections from 2026 content"}
 tags:
   - person
@@ -372,8 +372,13 @@ This case study directly validates Hugo's broader philosophy: evaluation-driven 
 
 ---
 
+## X Activity Log (Nov 2026)
+
+- **Nov 2, 2026** — Promoted **Show Us Your Agent Skills Episode 7** (w/ Greg Ceccarelli & Han-Chung-Lee, [YouTube](https://youtu.be/kfCi2EBu-nc)) in a thread on agent-driven engineering workflows, sparking from the take "forget about PRs and push direct to main on teams of tightly-aligned humans and agents" (itself quoting @guillewrotethis; another reply in-thread countered "Protect main branch and don't let anyone push without PRs and approvals" — an active PR-workflow debate). Hugo highlighted guest Greg Ceccarelli: "He ran data science at GitHub, was Chief Product Officer at Pluralsight, and is now at SpecStory figuring out how engineering teams use agents and what the future of all this looks like." Logged, transcript not ingested.
+
 ## Log
 
+- **2026-11-03**: Added X Activity Log entry for Show Us Your Agent Skills Ep. 7 promotion (Greg Ceccarelli / SpecStory).
 - **2026-08-06**: Added guest post source "Top Questions About AI-Assisted Software Development" (Eleanor Berger, Mar 31, 2026) — the canonical Elite AI-Assisted Coding course FAQ published on Vanishing Gradients as companion to Ep. 67 (Eleanor Berger + Isaac Flath). Ten-question framework (demos vs production, reliability, context stack, spec-driven development, mode/tool/model selection, delegation control, SDLC-wide AI, async agents, security, team measurement) documented in [[entities/eleanor-berger]] and [[concepts/ai-assisted-development]].
 - **2026-07-25**: Added Production AI Agents: Maven Assistant section (William Horton interview, July 2026). Documented evaluation system, unexpected usage patterns, model switching, guardrail failures. Added `production-ai-agents` concept page cross-reference.
 - **2026-06-05**: Added "The Agentic Software Factory" article (Show Us Your Agent Skills Ep. 1). Added Jeremiah Lowin and Randy Olson to Related People. Added Show Us Your Agent Skills entity link.

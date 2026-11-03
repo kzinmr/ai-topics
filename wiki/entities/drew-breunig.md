@@ -2,7 +2,7 @@
 title: Drew Breunig
 type: entity
 created: 2026-04-10
-updated: 2026-10-31
+updated: 2026-11-03
 source: blog
 tags:
   - person
@@ -304,6 +304,10 @@ As GERS Evangelist at Overture Maps Foundation, Breunig:
 - Demonstrates practical GERS usage (e.g., mapping Overture GERS IDs to US Census FIPS codes using DuckDB)
 - Writes about the democratization of geospatial data through persistent identifiers
 - Presents at GeoBuiz and other geospatial conferences
+
+### California Culture / Gold Rush Thread (Nov 2026)
+
+- **Nov 3, 2026**: On X, connected his 2015 blog research on the Gold Rush ("[What I've Learned About the Gold Rush So Far](https://www.dbreunig.com/2015/04/06/what-ive-learned-about-the-gold-rush-so-far.html)" — anyone could find gold, there was no government, so everyone went, and California's culture was born from the rush) to the Bay Area's unique treatment of wealth as a historical through-line "that started during the Gold Rush, through the dotcoms, and continues today" — quoting John Loeber. A continuation of his anthropological lens on tech culture. Logged only (off LLM-scope; no new page).
 
 ## Writing Themes and Evolution
 

@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-03] ingest | x-accounts-scan: 5 new posts (11 accounts sampled) — 2 events, 4 entity/concept updates, 2 raw articles
+- **New events**: `events/gemini-api-cli-agent-skill.md` (Google `gemini-api` CLI + `gemini-api-cli` skill via `npx skills add`, announced by @_philschmid) and `events/linear-coding-sessions-launch.md` (Linear Agent writes code with Claude Code/Codex in cloud sandboxes, promoted by @karrisaarinen).
+- **Raw articles**: `raw/articles/github.com--google-gemini-gemini-api-cli--2026-11-03.md` (README scrape), `raw/articles/linear.app--coding-sessions--2026-11-03.md` (product page scrape).
+- **Updates**: `entities/linear.md` (new Coding Sessions section), `entities/karri-saarinen.md` (X activity bullet), `entities/philipp-schmid.md` (X activity bullet #8), `entities/hugo-bowne-anderson.md` (new X Activity Log: SUYAS Ep.7 promotion w/ Greg Ceccarelli/SpecStory; logged only, no page), `entities/samuel-colvin.md` (Step Persistence reply), `concepts/pydantic-ai-harness.md` (new Step Persistence subsection: resume/fork run snapshots w/ tool-side-effect ledger).
+- **Skips**: @dbreunig Gold Rush / Bay Area wealth quote-tweet — off LLM scope; logged as dated bullet in `entities/drew-breunig.md` only.
+- Index: Events 48 → 50 pages.
+
 ## [2026-11-03] skeleton-enrich-daily | No action — backlog empty (snapshot)
 - Frontmatter scan across `wiki/**/*.md` (YAML block only): 0 `status: skeleton` pages. Streak continues since 2026-10-17.
 - Short entity pages (<30 lines) individually inspected: all intentional redirect stubs or intentionally brief active pages; no TODO/skeleton markers.

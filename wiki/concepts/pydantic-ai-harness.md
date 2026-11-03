@@ -20,13 +20,14 @@ related:
   - harness-engineering
   - agent-architecture-decomposition
 created: 2026-04-30
-updated: 2026-05-27
+updated: 2026-11-03
 sources:
   - https://github.com/pydantic/pydantic-ai-harness
   - https://ai.pydantic.dev/capabilities/
   - https://ai.pydantic.dev/hooks/
   - https://pydantic.dev/articles/pydantic-monty
   - https://github.com/pydantic/pydantic-ai-harness/releases/tag/v0.2.0
+  - https://pydantic.dev/docs/ai/harness/step-persistence/
   - raw/articles/2026-04-30_pydantic-ai-harness_capability-library.md
 ---
 
@@ -156,6 +157,10 @@ The CodeMode documentation historically stated that "approval/deferred tools are
 | | Tool Error Recovery | 🚧 PR #171 | Auto-retry failed tool calls |
 
 *Note: Several capabilities are being upstreamed from community partner [vstorm-co](https://github.com/vstorm-co).*
+
+### Step Persistence
+
+The harness docs include a **Step Persistence** capability (https://pydantic.dev/docs/ai/harness/step-persistence/): save Pydantic AI agent run snapshots to memory, files, SQLite, MongoDB, or PostgreSQL so a run can be **resumed or forked after a crash**, with a **ledger of tool side effects** (so replayed/forked runs don't repeat external effects). Notably under-marketed — creator [[entities/samuel-colvin]] himself discovered the docs only when answering a user question on X (Oct 31, 2026): "We clearly haven't marketed it very well if even I don't know about it. 🤦". This complements the "Memory / Persistence (KV)" row above: step persistence is run-level durability + forking, not just state save/restore.
 
 ### Logfire Observability
 

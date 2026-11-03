@@ -216,9 +216,11 @@ Angel investor in Pydantic's seed round. Cramer's experience building developer 
 
 ## Sources
 
+- **2026-11-03 (X activity)**: In a support-style reply about Pydantic AI agent-run durability, Samuel surfaced the little-known **Step Persistence** docs himself ("Does https://pydantic.dev/docs/ai/harness/step-persistence/ solve your problem? If not, what do you need. We clearly haven't marketed it very well if even I don't know about it. 🤦"). The feature saves Pydantic AI agent run snapshots to memory, files, SQLite, MongoDB, or PostgreSQL so a run can be resumed or forked after a crash, with a ledger of tool side effects — a notable agent-harness capability sitting under-hyped in the [[concepts/pydantic-ai-harness]] docs.
 - [Pydantic Company Announcement (Feb 2023)](https://pydantic.dev/articles/company-announcement)
 - [Pydantic Monty blog post (Feb 2026)](https://pydantic.dev/articles/pydantic-monty)
 - [Why is Pydantic building an Observability Platform? (Oct 2024)](https://pydantic.dev/articles/why-logfire)
+- [Pydantic AI Step Persistence docs (surfaced on X Oct 31, 2026)](https://pydantic.dev/docs/ai/harness/step-persistence/)
 - [Latent Space: Monty talk (Feb 2026)](https://www.youtube.com/watch?v=nxnQl4AcqFg)
 - [Sourcegraph Podcast: Samuel Colvin (Mar 2023)](https://www.buzzsprout.com/1097978/episodes/12479687)
 - [Talk Python To Me #415: Future of Pydantic and FastAPI (May 2023)](https://talkpython.fm/episodes/show/415/future-of-pydantic-and-fastapi)

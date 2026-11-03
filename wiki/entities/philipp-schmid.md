@@ -3,7 +3,7 @@ title: Philipp Schmid
 type: entity
 handle: "@_philschmid"
 created: 2026-04-10
-updated: 2026-10-19
+updated: 2026-11-03
 tags:
   - person
   - model
@@ -196,3 +196,4 @@ Schmid's X activity (@_philschmid) typically covers:
 5. **[[concepts/mcp]] server design** — Best practices for building reliable, production-grade Model Context Protocol servers
 6. **Developer education** — Tutorials, guides, and workshop materials for the broader AI development community
 7. **Industry commentary** — Thoughts on the shift from model-centric to infrastructure-centric AI development, the economics of AI deployment
+8. **Gemini API CLI + agent skill** (Nov 3, 2026): announced the `gemini-api-cli` skill for the experimental Gemini API CLI — "It gives your agent a CLI to call Gemini models (images, TTS, video, files) without writing one-off scripts" (`npx skills add google-gemini/gemini-skills --skill gemini-api-cli`). See [[events/gemini-api-cli-agent-skill]].

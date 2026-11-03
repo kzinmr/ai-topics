@@ -2,7 +2,7 @@
 title: Karri Saarinen
 type: entity
 created: 2026-04-10
-updated: 2026-09-21 22:50:00
+updated: 2026-11-03
 tags:
   - person
   - company
@@ -178,5 +178,6 @@ Karri (@karrisaarinen) shares on X/Twitter:
 - **Community building** — Rails Girls updates, design community engagement
 - **Industry commentary** — Opinions on productivity software, developer tools, and the future of work
 - **Game-design appreciation** (Sep 18, 2026): praised the WoW Forever "Found Photographs" panel at BlizzCon ([video](https://youtu.be/mjatY0viClA)), observing that "a lot more thought goes into making these games feel like coherent experiences than goes into many software products" — consistent with his "Your Product Needs a Soul" thesis on coherence and craft.
+- **Linear Coding Sessions promotion** (Nov 3, 2026): replied to a user report that Linear-launched Codex agents broke after OpenAI's "new Codex Cloud experience" change, recommending the new [[events/linear-coding-sessions-launch|Coding Sessions]] product — "you can use it with codex. Linear sets up environments and works lot faster" ([link](https://linear.app/coding-sessions)). Frames the sandboxed, Linear-managed-environment approach as more reliable than the vendor-cloud integration path.
 
 His posting style is **measured, thoughtful, and design-literate** — he rarely posts hype or takes, preferring to share substantive reflections on craft, product strategy, and the intersection of design and technology.

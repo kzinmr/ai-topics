@@ -2,7 +2,7 @@
 title: "Linear"
 type: entity
 created: 2026-05-08
-updated: 2026-05-29
+updated: 2026-11-03
 tags:
   - company
   - developer-tooling
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-05-14_linear_code-intelligence-linear-agent.md
   - raw/articles/2025-xx-how-is-linear-so-fast-technical-breakdown.md
   - raw/articles/linear.app--code-review-should-be-fast--2026-05-28.md
+  - raw/articles/linear.app--coding-sessions--2026-11-03.md
 ---
 
 # Linear
@@ -115,6 +116,15 @@ The database the UI reads from lives in the browser via IndexedDB. The server is
 - **WebSocket-first** – real-time collaboration, no polling
 - **PostgreSQL** – primary datastore, but UI never queries it directly
 - **Idempotent mutations** – safe to retry, handles network failures gracefully
+
+## Coding Sessions (Nov 2026)
+
+Linear Agent can now write code — see [[events/linear-coding-sessions-launch]].
+
+- Sessions are powered by **Claude Code and Codex**, configured at the workspace level; the product page demo shows a "Linear Opus 5.5" session working 32s and opening a draft PR.
+- Start from an issue, chat, comment, or Slack thread; Linear gathers context. Delegate individual issues or automate pickup from Triage ("bugs investigated and fixed before anyone touches a keyboard").
+- Every session runs in a secure cloud sandbox; output is a reviewable diff/draft PR. Sessions are **multiplayer** — steer while running, iterate from the diff, or point the agent at a project spec.
+- CEO [[entities/karri-saarinen]] promoted it on X (Nov 3, 2026) as faster than the older Codex-in-Linear path because "Linear sets up environments" — surfacing that the legacy integration broke after OpenAI's "new Codex Cloud experience" change.
 
 ## Related
 - [[entities/openai]] — Customer and partner; uses Linear for product development
