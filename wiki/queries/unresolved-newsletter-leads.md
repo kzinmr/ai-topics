@@ -1,7 +1,7 @@
 ---
 title: "Unresolved Leads — Newsletter Coverage Pending Primary Sources"
 created: 2026-11-01
-updated: 2026-11-01
+updated: 2026-11-03
 type: query
 tags:
   - newsletter
@@ -11,6 +11,7 @@ tags:
   - research
 sources:
   - raw/newsletters/2026-10-31-two-ai-labs-say-they-refuted-eth.md
+  - raw/newsletters/2026-11-02-who-is-hacking-europe-s-supermarket-freezers.md
 ---
 
 # Unresolved Leads — Newsletter Coverage Pending Primary Sources
@@ -26,6 +27,29 @@ Entries are ordered newest first. When a lead is resolved, move its content to t
 owning concept/event page and mark the row `resolved` with a date rather than deleting it.
 
 ## Open leads
+
+### 2026-11-02 — "🧊 Who Is Hacking Europe's Supermarket Freezers?" (Superintelligence, getsuperintel.site, uid≈869)
+
+| Field | Value |
+|---|---|
+| Subject | `🧊 Who Is Hacking Europe's Supermarket Freezers?` |
+| Sent | 2026-11-02 (received via newsletter-ingest run `20261103T101038Z`) |
+| Raw | `raw/newsletters/2026-11-02-who-is-hacking-europe-s-supermarket-freezers.md` (tracking URLs only, no body) |
+| Links | 20 total: `link.mail.beehiiv.com/v2/c/` tracking URLs + subscribe/social variants |
+| Body access | **Unreachable.** Sampled v2/c/ links (Link 1, Link 2) returned HTTP 200 Cloudflare `Just a moment...` challenge pages. Direct-slug guesses on `getsuperintel.site` / `read.getsuperintel.com` fell back to beehiiv's generic ~203KB 404 template. No inbox pre-triage summary available for this run. |
+| Triage decision | reference → this page (newsletter-triage 2026-11-03) |
+
+**Topic-level assessment.** Food cold-chain IoT security — subject suggests a
+cybersecurity/physical-infrastructure story, not AI/LLM core. No obvious connection point
+to existing agent/security pages at subject level. Per the AI-scope rule this stays a
+*durable lead* rather than a take; if a later issue or canonical URL reveals an
+AI-agent angle (e.g. agentic exploitation of IoT fleets), re-evaluate.
+
+**To resolve this lead.**
+1. Check the publication's beehiiv public archive (`getsuperintel.site` archive listing)
+   for the verbatim subject line once Cloudflare stops challenging.
+2. If the body shows an AI/agent dimension, create or extend the relevant security
+   concept page and mark this row `resolved` with a date.
 
 ### 2026-11-01 — "Two AI Labs Say They Refuted ETH" (beehiiv uid=861)
 

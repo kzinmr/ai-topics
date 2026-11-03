@@ -1,4 +1,12 @@
 # Wiki Log
+## [2026-11-03] newsletter-wiki-ingest | run 20261103T101038Z | 4 newsletters / 76 links → Takes 3, Reference 1, Skip 8
+- Recovery: upstream newsletter-triage response failed JSON parse; `triage_latest.json` checkpoint (run 20261103T101038Z) was valid and consumed as-is.
+- **NEW** [[concepts/ai-benchmarks/realtime-bench]] — Realtime-Bench (arXiv 2610.22155, UT Austin/OSU/UIUC/NVIDIA/Northwestern/Steadyworks): 50 dynamic tasks (30 web + 20 game), RT-Perceive/RT-Deliberate/RT-Act, Wall/Paused/Token clock conditions; best Wall-Clock Pass^3 36% vs ~70-80% paused. Via Import AI 479 (Jack Clark). arXiv abstract verified live.
+- **NEW** [[concepts/agentic-engineering/pm-os-shared-agent-skills]] — Figma PM OS (Ezra Mechaber, How I AI / Lenny's Podcast 2026-11-02): Git repo of 31 shared AI skills + AGENTS.md + command hooks syncing 60-70 PMs; What's Up skill, browser-agent bug bash (Astra/Codex), AutoXP 3-agent growth loop with single pre-launch gate, Jev pause-triggered writing assistant. Bodies re-fetched from lennysnewsletter.com + chatprd.ai (30/44 substantive paragraphs).
+- **UPDATED** [[concepts/duet-style-hierarchical-assistant]] — added "Cross-agent benchmark: Claire Vo's nine-task test" section: Grok Bot 93% overall winner; Duet slowest + 4 approval requests vs 1; Codex audit found connector asymmetry (Muse lacked Slack/GitHub); no universal winner, choose agents by job.
+- **REFERENCE** [[queries/unresolved-newsletter-leads.md]] — new open lead: Superintelligence "🧊 Who Is Hacking Europe's Supermarket Freezers?" (all 20 beehiiv v2/c links Cloudflare-challenged, no inbox summary; cold-chain IoT topic out of AI scope at subject level).
+- Skips: Substack UI noise (Import AI 18 links, Lenny 20 links), sponsor ads, chatprd.ai workflow sub-pages (covered by takes), DIA Spacewar section (non-AI), Metis Reasoning PDF (content unknown), Irrational Analysis Marvell/Lumentum (pure semiconductor investing).
+
 ## [2026-11-03] blog-ingest | 17 raw articles saved
 
 - Run `20261103T100059Z`: scan `total_new=35`, per-run fetch cap saved 20 candidates, 17 raw articles written to `wiki/raw/articles/`.

@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3366
+> Total pages: 3368
 > Last updated: 2026-11-02
 
 ## Entities (960 pages)
@@ -968,7 +968,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2285 pages)
+## Concepts (2287 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
@@ -1074,6 +1074,7 @@
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Agentic Engineering Cognition Devin Multi Agents Orchestration
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering Cognition Devin Workflow
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns
+- [[concepts/agentic-engineering/pm-os-shared-agent-skills]] — PM OS — shared agent-skills repository for product teams (Figma: AGENTS.md + 31 skills, 60-70 PMs, AutoXP, browser bug bash)
 - [[concepts/ai-bubble-financial-crisis]] — AI bubble financial crisis — Von Krogh's 2028 simulation of AI capex-bubble burst → private-credit mark-to-market → middle-market lending freeze (HN 447pts); Harsesian rebuttal (labor displacement ≠ credit event), Anthropic CEO's policy critique; GPT-5.5-Cyber cross-border incident and Redwood institutions-failure sidebars
 - [[concepts/ai-code-provenance-in-open-source]] — AI Code Provenance in Open Source — How OSS projects establish/enforce lineage of AI vs human contributions: OpenJDK's interim ban + Skara PR attestation checkbox, Rust disclosure model, why detection is "impossible" so projects substitute attestation; legal exposure predicts strictness (Sep 2026)
 - [[concepts/ai-coding-effectiveness-debate]] — AI Coding Effectiveness Debate — If Coding Has Been Solved, Why Does Software Keep Getting Worse? — The paradox of powerful AI coding agents coexisting with declining software quality; code generation vs. code quality distinction; productivity vs. quality metrics; ptrchm essay (July 2026, HN #2, 878pts)
@@ -1275,6 +1276,7 @@
 - [[concepts/ai-benchmarks/ram-relative-adoption-metric]] — RAM — Relative Adoption Metric
 - [[concepts/ai-benchmarks/re-bench]] — RE-Bench: AI R&D evaluation by METR, tests ML research capability (2024🆕)
 - [[concepts/ai-benchmarks/real-benchmark]] — REAL
+- [[concepts/ai-benchmarks/realtime-bench]] — Realtime-Bench: temporal-constraint agent benchmark, 50 tasks, Wall/Paused/Token clock, best Pass^3 36% (arXiv 2610.22155)
 - [[concepts/ai-benchmarks/remote-labor-index]] — Remote Labor Index
 - [[concepts/ai-benchmarks/rewardbench]] — RewardBench: reward model evaluation (Allen AI, 2024🆕)
 - [[concepts/ai-benchmarks/rewardbench-2]] — RewardBench 2

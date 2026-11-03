@@ -1,7 +1,7 @@
 ---
 title: "Duet-style hierarchical agent assistant"
 created: 2026-10-30
-updated: 2026-10-31
+updated: 2026-11-03
 type: concept
 tags:
   - ai-agents
@@ -15,6 +15,7 @@ sources:
   - raw/articles/fig.blue--posts-duet-is-the-future--3c8f5710.md
   - raw/articles/2026-10-22_anthropic-claude-duet-launch.md
   - raw/newsletters/2026-10-31-claude-duet.md
+  - raw/newsletters/2026-11-02-how-i-ai-grok-vs-dot-vs-muse-vs-duet-how-figma-s-pms-actually-use-ai-every-day.md
 related:
   - concepts/agent-harnesses
   - concepts/human-in-the-loop
@@ -133,6 +134,38 @@ values "could still enter those in something untrusted."
   despite the proactive framing. He also contrasts **Grok Bot's "Vault"** (remembers
   logins/cards/addresses without the bot ever seeing them) as a differentiator Duet lacks
   — a privacy-shaped axis the fig.blue hierarchy analysis does not cover.
+
+## Cross-agent benchmark: Claire Vo's nine-task test (Nov 2, 2026)
+
+Claire Vo (chatprd.ai / *How I AI*, Lenny's Podcast 2026-11-02) ran **Grok Bot, Dot, Meta's
+Muse, and Claude Duet** through nine real-world tasks — Slack replies, inbox triage, coding,
+video editing, Figma thumbnails, family projects, shopping — producing the first
+multi-agent *evaluation* data bearing on this pattern (prior coverage here was one practitioner
+essay plus vendor pages). Duet-relevant findings:
+
+- **Duet was consistently the slowest of the four.** Vo's product principle: when an agent
+  disappears for several minutes, users lose context and stop using it — the same
+  latency-as-prerequisite axis as the fig.blue essay's "I am not going to sit and twiddle my
+  thumbs between commands," now with comparative numbers (Muse won first place on 4 of 9 tasks).
+- **Duet over-asks permission**: it requested approval **4 times** during the benchmark vs
+  **1 time for every other agent**. The diminishing-access hierarchy (above) has a UX cost:
+  caution reads as "something the user must supervise rather than trust."
+- **Connector/skill asymmetry contaminated the field**: a Codex audit of Vo's setup found the
+  agents lacked equivalent tools — Muse had no Slack or GitHub connectors, which blocked
+  several of its work tasks. Fair personal-agent comparison requires equalized setups.
+- **Where Duet still won**: strongest coding judgment alongside Dot — Duet found a *second* bug
+  in a Sentry-fix task and avoided duplicating work Dot had already completed. Vo would still
+  pick Claude/Codex for serious coding, "just not through Duet's personal-agent interface."
+- **No universal winner; choose by job**: Grok Bot 93% overall (won Figma, inbox triage,
+  shopping) is Vo's work pick; Muse is her personal-life pick (best short-form video and family
+  newspaper with near-zero prompting); Dot showed the lone "chief-of-staff" moment (only agent
+  that asked whether her Lovable talk was paid and remote). Her conclusion — different agents
+  belong in different parts of life — cuts against the Duet page's implicit single-assistant
+  framing.
+
+Source: [How I AI: Grok vs. Dot vs. Muse vs. Duet](https://www.lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet)
+(raw: `raw/newsletters/2026-11-02-how-i-ai-grok-vs-dot-vs-muse-vs-duet-how-figma-s-pms-actually-use-ai-every-day.md`).
+See also [[concepts/agentic-engineering/pm-os-shared-agent-skills]] (same episode).
 
 ## Status
 
