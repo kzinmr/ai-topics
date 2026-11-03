@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-11-03T10:37:15.713744+00:00",
+  "triage_run_id": "20261103T101038Z",
+  "source": "newsletter",
+  "summary_ja": "2026-11-03 ニュースレタートリアージ（run 20261103T101038Z、4ニュースレター / 76リンク）。Import AI 479（Jack Clark）から Realtime-Bench（低遅延タスクでのLLM失敗、arXiv:2610.22155）を新規concepts候補としてテイク、Genie 4セクションは concepts/genie-4.md が既に詳細カバー済みのためreferenceへ。Lenny's Podcast How I AIはポストページに30超の実質パラグラフがあり、Figma PM OS（AGENTS.md+31スキル共有リポジトリ、60-70人規模運用）とClaire Voの4エージェント9タスクベンチ（Grok Bot 93%、Duetの過剰承認要求）の2件をテイク。Superintelligence「冷凍庫ハッキング」号は全beehiiv URLがCloudflareチャレンジで本文取得不可のためreference（durable lead行き）。Irrational Analysis のMarvell/Lumentum分析は純粋な半導体投資論でスコープ外スキップ。Take 3 / Reference 2 / Skip 8（バッチ集約）。",
+  "decisions": [
+    {
+      "item_id": "<20261102.190553.9d0934e6@mta16>-1",
+      "source": "newsletter",
+      "source_name": "Superintelligence (getsuperintel.site, uid=869相当)",
+      "title": "🧊 Who Is Hacking Europe's Supermarket Freezers?",
+      "url": "https://link.mail.beehiiv.com/v1/c/... (expired/Cloudflare)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-02-who-is-hacking-europe-s-supermarket-freezers.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ 全20本のbeehiiv v2/c tracking URLがCloudflareチャレンジ（HTTP 200・title=Just a moment...）を返し本文到達不可。per-LINK判定ルールに従いLink 1/2をテストして両方チャレンジ確認済み。サブケース（inbox summary不在）手順により件名レベル評価：食品コールドチェーンのIoTハッキングはAI/LLMコア領域外で、既存wiki（AIセキュリティ/エージェント系）との接続点も現時点で不明。durable leadとして queries/unresolved-newsletter-leads.md に記録しておく価値あり（後日canonical URLが判明したら再評価）。",
+      "candidate_wiki_path": "queries/unresolved-newsletter-leads.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-02\n**Subject:** 🧊 Who Is Hacking Europe's Supermarket Freezers?\n**Collected:** 2026-11-03T10:10:36.982140+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/965d36d0fa7a5e6f714379eb160f3fe22d399fdcaa03db39b504cde0a95803f3e4d61e150d289"
+    },
+    {
+      "item_id": "skip-imp-479-noise",
+      "source": "newsletter",
+      "source_name": "Import AI 479 (Jack Clark)",
+      "title": "Substack UI noise links (Links 1,3-18)",
+      "url": "https://importai.substack.com/p/import-ai-479-spacewar-low-latency",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-02-import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Import AI 479のチェックポイント18リンクはすべてSubstack UI要素（app-link postタイトル、@importai著者プロフ、submitLike、comments、share、read-in-app、redirect/2/eyJ...OAuthリダイレクト、redirect/<uuid>トラッキング）。skillのノイズフィルタ表に従いスキップ。実コンテンツはLink 2のポスト本文から抽出済み（上記take/reference参照）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-02\n**Subject:** Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4\n**Collected:** 2026-11-03T10:10:34.921777+00:00\n**Articles linked:** 18\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBvcnRhaS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0"
+    },
+    {
+      "item_id": "skip-lenny-noise",
+      "source": "newsletter",
+      "source_name": "Lenny's Podcast (uid=868)",
+      "title": "Substack UI noise links (Links 1,3-20)",
+      "url": "https://www.lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-02-how-i-ai-grok-vs-dot-vs-muse-vs-duet-how-figma-s-pms-actually-use-ai-every-day.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ How I AIのチェックポイント20リンクはすべてSubstack UI要素（app-link、@lennyプロフ、like/comment/share、read-in-app、redirect/2/OAuth、redirect/uuid）。ポスト本文から実コンテンツリンク（chatprd.ai の4記事、YouTube 2本）を抽出済みで、価値判断は上のtake 2件に集約。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-02\n**Subject:** 🎙️ How I AI: Grok vs. Dot vs. Muse vs. Duet + How Figma’s PMs actually use AI every day\n**Collected:** 2026-11-03T10:10:36.060264+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xl"
+    },
+    {
+      "item_id": "skip-lenny-dup-workflows",
+      "source": "newsletter",
+      "source_name": "Lenny's Podcast (uid=868)",
+      "title": "chatprd.ai workflow sub-pages (duplicate of takes)",
+      "url": "https://www.chatprd.ai/how-i-ai/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-02-how-i-ai-grok-vs-dot-vs-muse-vs-duet-how-figma-s-pms-actually-use-ai-every-day.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ リンク切れchatprd.aiサブページ（YouTube thumbnail生成、Branded launch video、Family newspaper、bug bashing、growth loop、personal PM OS）は上のtake 2件（9タスクベンチ＋PM OS）の配下詳細であり、個別テイクすると重複。親テイク2件でまとめてカバーする。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-02\n**Subject:** 🎙️ How I AI: Grok vs. Dot vs. Muse vs. Duet + How Figma’s PMs actually use AI every day\n**Collected:** 2026-11-03T10:10:36.060264+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xl"
+    },
+    {
+      "item_id": "skip-import-ai-spacewar",
+      "source": "newsletter",
+      "source_name": "Import AI 479 (Jack Clark)",
+      "title": "Spacewar: DIA space-security report",
+      "url": "https://www.dia.mil/Portals/110/Images/News/Military_Powers_Publications/Challenges_Security_Space_2026.pdf",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-02-import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ DIA「Challenges to Security in Space 2026」由来のセクション（中国の宇宙ベース指向性エネルギー兵器、ロシアのPeresvetレーザー、Cosmos 2542/2543衛星-on-衛星追跡、宇宙核実験）。宇宙軍事・地政学話題でAI/LLM/エージェントのwikiスコープ外。Import AIのエディトリアルとしてもLLM技術と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-02\n**Subject:** Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4\n**Collected:** 2026-11-03T10:10:34.921777+00:00\n**Articles linked:** 18\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBvcnRhaS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0"
+    },
+    {
+      "item_id": "skip-import-ai-metis",
+      "source": "newsletter",
+      "source_name": "Import AI 479 (Jack Clark)",
+      "title": "Metis Reasoning whitepaper (unresolved)",
+      "url": "https://metisreasoning.ai/whitepaper/the-age-of-reasoning-2026-10.pdf",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-02-import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Import AIにリンクされるMetis Reasoning「The Age of Reasoning 2026-10」whitepaper（PDF）。チェックポイント上はUIリダイレクトに埋もれており、Import AI本文にも要約なし（抽出リンクリストのみ）。単発PDFリンクで内容不明・主体不明のため、active-crawl側で言及が出たときに評価。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-02\n**Subject:** Import AI 479: Spacewar; low-latency tasks versus LLMs; Genie 4\n**Collected:** 2026-11-03T10:10:34.921777+00:00\n**Articles linked:** 18\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBvcnRhaS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0"
+    },
+    {
+      "item_id": "skip-marvellous-batch",
+      "source": "newsletter",
+      "source_name": "Irrational Analysis (pub 1509468)",
+      "title": "Marvellous Value Destruction — Marvell/Lumentum optical M&A analysis",
+      "url": "https://open.substack.com/pub/irrationalanalysis/p/marvellous-value-destruction",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-03-marvellous-value-destruction.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 半導体光部品（uVCSEL NPO/CPO、EML/DSP/TIA、OCS link retraining、Lumentum Cloudlightスピンオフ観測、Marvell CEOの買収動機10仮説、300+mWレーザーRIN -150 dBc/Hz/線幅<1MHz）の投資分析。フル本文は取得できたが、筆者自身が「heavily invested in the semiconductor industry / not financial advice」と申告する株式投資論で、AIモデル/エージェント/開発ツール/推論基盤のいずれにも接続しない。llm-pricingやinference基盤ページ（nvidia-dynamo等）にも関連づけ不可。スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-03\n**Subject:** Marvellous Value Destruction\n**Collected:** 2026-11-03T10:10:37.939275+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pcnJhdGlvbmFsYW5hbHlzaXMuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV"
+    },
+    {
+      "item_id": "skip-superintel-noise",
+      "source": "newsletter",
+      "source_name": "Superintelligence (getsuperintel.site)",
+      "title": "Beehiiv tracking/noise links (Links 2-20)",
+      "url": "",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-02-who-is-hacking-europe-s-supermarket-freezers.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Superintelligence 2026-11-02号のLink 2-20は同一記事のbeehiiv tracking変換（share/like/referral差分）＋サブスク/ソーシャル系リンク。重複密度~30%の既知パターン。Link 1本体は上記referenceに集約。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-02\n**Subject:** 🧊 Who Is Hacking Europe's Supermarket Freezers?\n**Collected:** 2026-11-03T10:10:36.982140+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/965d36d0fa7a5e6f714379eb160f3fe22d399fdcaa03db39b504cde0a95803f3e4d61e150d289"
+    }
+  ]
+}
