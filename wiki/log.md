@@ -1,3 +1,12 @@
+## [2026-11-03] auto-fix | Wiki health fix — queries index gap + buried log header
+
+### Changes
+- index.md: registered missing page `queries/2026-10-29-skeleton-enrich-empty` (alphabetical, between 10-27 and 10-30 entries); Queries header count 47 → 50 (matches actual 50 entries after 10-31/11-01/11-03 snapshots were added without count bumps)
+- log.md: restored buried `# Wiki Log` header from line 17 to line 1 via `fix_log_header_burial.py` (144 entries preserved, 0 pipe corruption)
+- Verified clean, no action: index corruption 0/0/0/0, ghost entries 0 (recursive scan, 3,387 entries), orphans 0, no-frontmatter 0, missing sources/updated 0, validate_index.py exit 0
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
