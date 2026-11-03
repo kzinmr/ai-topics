@@ -1,3 +1,24 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-03] dreaming wiki-ingest | Pattern E saturation — Takes=0, 7 references, 6 batch skips
+
+- Checkpoint `total_articles: 0` with `recent_raw_articles: 256` → Pattern E filesystem scan (90 files, last 3d) + archive-index absence probe (decisive, 3,003 URLs known).
+- **Duplicate check**: Today's high-signal items already processed by adjacent jobs — trending-topics (`1b3d1006`: weight-space-programming, agentic-backdoors-pretraining-poisoning, agi-and-the-city), newsletter-wiki-ingest (`1e3e338d`: PM OS, Realtime-Bench, Duet), active-crawl Nov 2 (MOFCOM No.48, numbat, LLM cognitive crutch), hot-posts ×3. Takes=0 is the correct post-saturation state.
+- **Reference candidates for downstream enrichment** (Deep Sleep gate verified against page bodies):
+  - `entities/sierra.md` — Agent Studio redesigned around Ghostwriter: session model (share/fork/Ghostwriter review), multi-agent projects, line-by-line diff + release governance. Absent from existing Ghostwriter sections (L51-61, L258).
+  - `concepts/weight-space-programming.md` — Sean Goedecke direct counter-argument (labeled input channels → 3-line numpy heatmap makes game-ID trivial; smart ML researcher could reproduce Qwen math edits). Counterargument section missing.
+  - `entities/pinecone.md` — Agentic RAG cost ladder: $22,650/mo baseline agent, retrieval-context cut alone saves $12,600/mo > all later fixes combined. Not in Nexus-vs-Agentic-RAG tables.
+  - `entities/harvey.md` — "Contract Risk Assessment Under a Signing Deadline" + slow-review-is-request-prep thesis; distinct from Bayer/playbook-builder coverage.
+  - `entities/elevenlabs.md` — 6-article sitemap batch: Angle Health 90% provider-call resolution, KPN Mobiel AI, voice-wins-complex-conversations, AI-knocking-governments, SFX v3 API, synthetic-voices guide. None present.
+  - `entities/george-hotz.md` — "pray for chaos" (Nov 1): order/chaos bifurcation, Yudkowsky prisoner's-dilemma disagreement (defect), dead-Internet-realized. Blog section stops at Jul 2026.
+  - `entities/simon-willison.md` — Census BTOS AI-adoption rerun: 250+ companies ~12% (Sep 2025) → ~30% (Feb 2026) → ~40% (Oct 2026, question reworded); EO 14434 "Super Intelligence" data-quality caveat.
+- **Skips (archived for dedup)**: Hex ×9 SEO marketing, danielwirtz ×14 + non-AI personal-blog batch, seangoedecke career/audience essays, Krebs TV-box botnet (non-LLM), trigger.dev disclosure (already covered by 01:30 hot-post + concept page), parallel.ai pws-decisions-benchmark (466B brotli scrape-fail stub), Nov 1-3 items already covered by hot-posts/active-crawl/trending.
+- Archive: 13/13 newly archived, `total_archive_urls` 3003 → 3009. Triage JSON: `cron/data/dreaming/triage_latest.json` (run 20261103T180002Z).
+
+
 ## [2026-11-03] auto-fix | Wiki health fix — queries index gap + buried log header
 
 ### Changes
@@ -6,10 +27,6 @@
 - Verified clean, no action: index corruption 0/0/0/0, ghost entries 0 (recursive scan, 3,387 entries), orphans 0, no-frontmatter 0, missing sources/updated 0, validate_index.py exit 0
 
 ---
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 
 ## [2026-11-03] watchdog | Daily auto-fix sweep — no corrections needed; pipeline alerts triaged
@@ -509,7 +526,6 @@ Frontmatter-level scan of `wiki/entities/` + `wiki/concepts/` (regex `status:\s*
 - **Quality gates**: content-anchored index insertion (5 entries); combined tag+wikilink verifier → 0 broken links, 0 bad tags across all 6 pages (fixed `small-language-models`→`small-language-model`, `local-first-architecture`→`local-first`). Index headers bumped: Entities 955→956, Concepts 2246→2251, Total pages 3318→3323.
 
 
-
 ## [2026-10-28 10:01 UTC] blog-ingest | raw article save — 20 saved, 0 unsaved
 
 RSS scan found 36 new articles in blogwatcher DB; 20 fetched and saved to `wiki/raw/articles/` (run_id 20261028T100043Z). Checkpoint at `cron/data/blog_ingest/latest.json`.
@@ -798,7 +814,6 @@ Index: Concepts 2236->2240, Total 3313->3317. Wikilink verification: 0 MISS (2 f
 - Archive: wiki/raw/archived/triage/blog/2026-10-25_20261025T100040Z.json (16 candidates, total_archive_urls 2886).
 
 
-
 ## [2026-10-25 00:30 UTC] hot-post | Morning 09:30 JST — Distillation-as-revenue thesis
 
 - Topic: Irrational Analysis "[Market Memo] Dancing in the Rain" (2026-10-24) — distillation ARR claim + OpenAI/Anthropic valuation cuts. Forwardable morning angle.
@@ -827,7 +842,6 @@ Index: Concepts 2236->2240, Total 3313->3317. Wikilink verification: 0 MISS (2 f
 - `validate_index.py` passes
 
 ---
-
 
 
 ## [2026-10-24] dreaming wiki-ingest | Pattern E backlog take (upstream render-failure recovery)
@@ -882,7 +896,6 @@ Index: Concepts 2236->2240, Total 3313->3317. Wikilink verification: 0 MISS (2 f
 - **Report**: `inbox/rss-scans/daily-scan-2026-10-24.md`.
 
 
-
 ## [2026-10-24] active-crawl | 4 new pages + 3 enrichments — Omnara, Dessa, Attack Surface Reduction, Frontier Training Environment Security + FV-at-scale
 
 **Discovery**: HN Algolia `search_by_date` (6 queries, points>=10, 4-day window, ~18 unique AI stories). X/Twitter spot-check via xurl. Gap analysis run directly by parent (find/grep across concepts/entities/events + index.md grep). Same-day dedup checked against today's newsletter-triage entries.
@@ -930,7 +943,6 @@ Index: Concepts 2236->2240, Total 3313->3317. Wikilink verification: 0 MISS (2 f
 
 - Frontmatter scan of wiki/entities/ and wiki/concepts/: 0 pages with `status: skeleton`. Backlog empty (streak since 2026-10-17).
 - Snapshot: [[queries/2026-10-23-skeleton-enrich-empty]]. No pages enriched; working-tree WIP from other pipelines untouched.
-
 
 
 ## [2026-10-23] dreaming wiki-ingest | Pattern E — upstream 503/truncation recovery, 1 take + 3 references

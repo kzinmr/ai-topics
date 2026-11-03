@@ -635,6 +635,7 @@
     "https://garymarcus.substack.com/p/will-generative-ai-do-more-harm-than",
     "https://garymarcus.substack.com/p/you-cant-get-more-2026-than-that",
     "https://geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html",
+    "https://geohot.github.io//blog/jekyll/update/2026-11-01/pray-for-chaos.html",
     "https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html",
     "https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html",
     "https://geohot.github.io//blog/jekyll/update/2026/06/06/our-great-war.html",
@@ -1590,6 +1591,7 @@
     "https://seangoedecke.com/giving-and-taking-credit/",
     "https://seangoedecke.com/impro/",
     "https://seangoedecke.com/in-defense-of-not-understanding-your-codebase/",
+    "https://seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/",
     "https://seangoedecke.com/llms-reward-expertise/",
     "https://seangoedecke.com/local-models-will-not-win/",
     "https://seangoedecke.com/overtraining-as-the-path-to-human-like-ai/",
@@ -1689,6 +1691,7 @@
     "https://sierra.ai/blog/outcomemaxxing",
     "https://sierra.ai/blog/pinecone-harnessing-the-wisdom-of-the-workforce",
     "https://sierra.ai/blog/plaid-partnership",
+    "https://sierra.ai/blog/redesigning-agent-studio-around-ghostwriter",
     "https://sierra.ai/blog/release-governance-guardrails-for-agents-at-scale",
     "https://sierra.ai/blog/simulations-the-secret-behind-every-great-agent",
     "https://sierra.ai/blog/takeaways-from-our-ghostwriter-hackathon",
@@ -1945,6 +1948,7 @@
     "https://simonwillison.net/2026/May/30/retiring-from-tech-to-live-offline/#atom-everything",
     "https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything",
     "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+    "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
     "https://simonwillison.net/2026/Oct/18/llm-echo/",
     "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
     "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
@@ -2537,6 +2541,7 @@
     "https://www.harvey.ai/blog/contract-review-checklist",
     "https://www.harvey.ai/blog/contract-review-process",
     "https://www.harvey.ai/blog/contract-review-software",
+    "https://www.harvey.ai/blog/contract-risk-assessment",
     "https://www.harvey.ai/blog/corporate-compliance-ai",
     "https://www.harvey.ai/blog/employment-contract-drafting",
     "https://www.harvey.ai/blog/enterprise-legal-management",
@@ -2787,6 +2792,7 @@
     "https://www.perplexity.ai/hub/blog/self-improving-memory-for-agents",
     "https://www.personfamiliar.com/p/ai-humanity-and-dr-manhattan-syndrome",
     "https://www.peterborgapps.com/lingon/",
+    "https://www.pinecone.io/blog/agentic-rag-costs-retrieval/",
     "https://www.pinecone.io/blog/bulk-import-promo/",
     "https://www.pinecone.io/blog/designing-agent-friendly-apis/",
     "https://www.pinecone.io/blog/inside-askdata/",
@@ -3004,5 +3010,5 @@
     "https://youtu.be/Dqp_b8GHLXU?t=1074",
     "substack app-link / redirect / profile links"
   ],
-  "updated": "2026-11-03T10:58:23.294569+00:00"
+  "updated": "2026-11-03T18:16:21.633008+00:00"
 }
