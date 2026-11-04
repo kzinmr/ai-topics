@@ -146,6 +146,23 @@ X Article *"Critical thinking when agents do the work"* (2026-11-03, ~17K bookma
 
 See [[concepts/cognitive-surrender]] for the full breakdown.
 
+### The Code Nobody Reads (Sep 2026)
+
+Substack *"The Code Nobody Reads"* (2026-09-28): Osmani reverses his own 2024 "review every line" advice. Line-by-line human reading is going away for most code — but **review (someone deciding what ships and being answerable for it) is not**. Two contrasting posts framed the debate: Thorsten Ball's "code review will die" (the destination) vs. the viral "pressing enter on code nobody reads" engineer post (8M+ views; what happens when a company drives there without building the road). His position: every industry will stop reading most code line by line *once it has some other good reason to trust that code*; how fast depends on two costs — the cost of checking work nobody read, and the cost of undoing a failure the checks miss. Cites Madeleine Clare Elish's **moral crumple zone** (the human nearest an automated system absorbs blame they had no power to prevent) and the Teleport case study (13 engineers + frontier models found two years' worth of security bugs in one quarter; discovery got cheap, triage didn't). Advice: know what's worth reading; build checks independent of whatever wrote the code; write down what you're building before an agent builds it; be able to explain everything you ship; give people authority matching their accountability.
+
+### Brownfield Agentic Engineering (Sep 2026)
+
+Blog *"Brownfield Agentic Engineering"* (2026-09-14): running agents in a codebase older than the team. Core ideas:
+- **Zones**: green (good tests, isolated → tight agent loop), yellow (mixed → characterization tests first), red (auth/billing/payroll → human pairing or no go). Three rules: a person draws the map (not the agent — agents gravitate to the scariest file); zones only move when earned; the zone sets the verbs.
+- **Write down what the code can't say, and nothing else** — agents infer most from code; supply only team nuance, trade-off rationale, unenforced conventions, historical context.
+- **Autonomy follows blast radius, observability, recoverability** — model confidence is a poor guide.
+- **Parallelize last** — parallelism multiplies the bottleneck you already have; copy the software-factory parallelism only after one unit has a dependable judge, recovery path, and review format.
+- **Agents put a price on ambiguity** — tribal conventions become recurring review comments; track lead time, review minutes, escaped defects, oracle mismatches — not lines generated.
+
+### Agentic Verification (Oct 2026)
+
+Substack *"Agentic Verification"* (2026-10-14): "To make your agent produce high-quality output, equip it with a way to check its work." The shift is from "review every line" to "build loops the agent can run itself" — the "at scale" in agent code quality comes from verification, because agents make checking cheap (tests, benchmarks, specs, e2e runs become low-cost asks). Invest in: e2e tests as ground truth, property-based tests ("examples say what should happen; properties say what must not"), differential testing for replacements, fast deterministic test loops (slow loops teach the agent to retry, not to fix). Compound taste: when the agent gets something wrong, write it down (config, hook, test) so it never happens twice. The human still owns what ships — but reviews **evidence, not just diffs**.
+
 ## Key Publications
 
 | Title | Date | Platform |
@@ -162,6 +179,9 @@ See [[concepts/cognitive-surrender]] for the full breakdown.
 | From Prompting Agents to Loop Engineering (cited) | Jun 2026 | DAIR.AI Academy |
 | Loop Engineering (Orange Book v260615) | Jun 2026 | huasheng.ai/orange-books |
 | Agentic Code Quality | Aug 2026 | X Article |
+| Brownfield Agentic Engineering | Sep 2026 | addyosmani.com + Substack |
+| The Code Nobody Reads | Sep 2026 | addyo.substack.com |
+| Agentic Verification | Oct 2026 | addyo.substack.com |
 
 ## Speaking
 
@@ -229,3 +249,6 @@ This framing positions Osmani in the "human outer loop" camp, alongside Geoffrey
 - [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]] — Elvis Saravia (DAIR.AI), "From Prompting Agents to Loop Engineering" (Jun 19, 2026). References Osmani on AI-assisted coding loops.
 - [[raw/articles/2026-08-12_addyosmani_agentic-code-quality]] — "Agentic Code Quality" (Aug 12, 2026). X Article on quality gates, constraints, and back-pressure as the foundation of agentic code quality.
 - [[raw/articles/2026-11-03_addyosmani_critical-thinking-when-agents-do-the-work]] — "Critical thinking when agents do the work" (Nov 3, 2026). X Article on offloading→deferral→surrender spectrum and verification habits.
+- [[raw/articles/2026-09-14_addyosmani_brownfield-agentic-engineering]] — "Brownfield Agentic Engineering" (Sep 14, 2026). Zones, blast radius, and cheap-trustworthy changes in old codebases.
+- [[raw/articles/2026-09-28_addyosmani_the-code-nobody-reads]] — "The Code Nobody Reads" (Sep 28, 2026). Substack on the end of line-by-line review and what replaces it.
+- [[raw/articles/2026-10-14_addyosmani_agentic-verification]] — "Agentic Verification" (Oct 14, 2026). Substack on building verification loops agents can run themselves.
