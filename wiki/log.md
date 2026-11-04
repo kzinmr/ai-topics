@@ -2,6 +2,12 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-04] ingest | blog-ingest: 18 raw articles saved (run 20261104T100015Z)
+- **AI-relevant highlights**: `wheresyoured.at` "Running Dry" (Ed Zitron, ~7.4k words), `simonwillison.net` "Qwen 3.8 27B on my laptop can interpret model weights", `theverge.com` "NYT et al. sues Brave for AI scraping / selling scraped content to AI labs", `shkspr.mobi` "Just a little AI resistance, as a treat" (Terence Eden), `idiallo.com` "Goodhart's Law, but We Already Spent All Our Money", `rakhim.exotext.com` "I wish tech companies knew more about me" (AI-personalization/privacy), `developer.apple.com` "Apple begins opening Siri AI to developers", `pluralistic.net` "Separable (03 Nov 2026)" (Cory Doctorow).
+- **Non-AI / general**: johndcook.com x3 (math), devblogs.microsoft.com/oldnewthing (Raymond Chen, DB internals), macrumors (Safari 27.3), 9to5mac x2 + macworld (iPad mini / Apple), dfarq (Radio Shack history), entropicthoughts (baseball stats).
+- **Skipped (unsaved)**: YouTube MKBHD video + Techmeme roundup link (daringfireball).
+- **Checkpoints**: `cron/data/blog_ingest/latest.json` (run_id 20261104T100015Z) + archive. Downstream: blog-triage → blog-wiki-ingest.
+- Layer-2 page updates intentionally deferred to blog-wiki-ingest stage.
 ## [2026-11-04] ingest | X Article: Addy Osmani "Critical thinking when agents do the work" (2026-11-03, ~17K bookmarks) — raw article saved; updated concepts/cognitive-surrender (3-step spectrum offloading→deferral→surrender, self-interrogation checklist, verification-surrender, paradox of supervision) and entities/addy-osmani (Critical Thinking in the Agentic Era section)
 
 ## [2026-11-03] ingest | x-accounts-scan: 5 new posts (11 accounts sampled) — 2 events, 4 entity/concept updates, 2 raw articles
