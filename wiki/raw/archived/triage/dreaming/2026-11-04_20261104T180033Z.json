@@ -1,0 +1,92 @@
+{
+  "archived_at": "2026-11-04T18:18:10.611157+00:00",
+  "triage_run_id": "20261104T180033Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming-group 2026-11-04: checkpoint total_articles=0（RSS/ニュースレター0、recent_raw=257）のため Pattern E + archive-index 不在プローブ（3,015 URL）で未トリアージ候補を抽出。重複チェック: 本日の trending-topics/active-crawl/blog-ingest/Addyバックフィルが高シグナル記事の大半を処理済み。残りの真ギャップから take 3件（Fireworks Forge発表群、SemiAnalysis SpaceX AIクラウド、Open Athena posttraining data commons）、reference 3件（Ed Zitron Running Dry、NYT v. Brave、Apple Siri開放）、skip 4バッチ（Addy Osmani 9本=処理済み、企業マーケティング、Qwen weight-interp=同日カバー済み、非AI群）。※本ジョブは triage 専用。take/reference の wiki 実編集は下流 dreaming-wiki-ingest が実施。",
+  "decisions": [
+    {
+      "item_id": "dreaming-edzitron-running-dry",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Running Dry (Ed Zitron, Where's Your Ed At)",
+      "url": "https://www.wheresyoured.at/running-dry/",
+      "raw_path": "wiki/raw/articles/wheresyoured.at--running-dry--c1396eef.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★ AIバブル崩壊のfault lines論（約7,400語）。OpenAI $11B @ $1.25Tクローズ（ tepid interest、$30B目標から大幅下方修正）、Anthropic IPO期待$2T→$1.4-1.6T下方修正、Q1 2026コスト$12.1B/売上$5.7B、Amazon $35B+SoftBank $30B注入済みが本文の中心数値。ai-bubble-economics.md L539に$1.25T「計画中」はあるがクローズ・tepid interest・Anthropic IPO下方修正は未収録。entities/ed-zitron.md (917行) にもRunning Dryセクションなし。両ページへの追記で対応。",
+      "candidate_wiki_path": "entities/ed-zitron.md",
+      "body_excerpt": "# Running Dry\nSource: https://www.wheresyoured.at/running-dry/\nIf you haven’t subscribed to Where’s Your Ed At, now’s the best time. I’ve extended the sale — 10% off of the $70-a-year subscription for life (\nclick here!\n) — for new subscribers for another week. It’s a great way to support my work, a"
+    },
+    {
+      "item_id": "dreaming-nyt-brave-scraping",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "NYT et al. sue Brave for AI scraping / selling scraped content to AI labs",
+      "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+      "raw_path": "wiki/raw/articles/theverge.com--tech-1024588-brave-lawsuit-ai-scraping-new-york-times--f3c40d8a.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ 新聞社連合がBraveを「スクレイプコンテンツのAIラボへの販売」で提訴。検索エンジン側のスクレイプ転売という新類型の著作権訴訟で、concepts/anthropic-copyright-settlement.md（ライブラリ側和解）や publishers-v-openai 系とは類型が異なる。専用ページは閾値未達の見込みなので、既存の著作権・スクレイピング関連ページへの1節追加（またはqueries/unresolved-newsletter-leads.mdへのリード記載）で十分。",
+      "candidate_wiki_path": "concepts/anthropic-copyright-settlement.md",
+      "body_excerpt": "# The New York Times sues Brave web browser for AI scraping and bypassing paywalls\nSource: https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times\nThe New York Times\nand a group of other publications have\nfiled lawsuits\nagainst the company that makes the Brave web browser over"
+    },
+    {
+      "item_id": "dreaming-apple-siri-developers",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Apple begins opening Siri AI to developers",
+      "url": "https://developer.apple.com/news/?id=gdk2umrf",
+      "raw_path": "wiki/raw/articles/developer.apple.com--news--f1d7feb2.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Apple公式ニュース: Siri AIのサードパーティモデル/開発者向け開放の開始。entities/openai.md L344にWWDC 2026段階のGemini/Claude統合予告はあるが、実際の developer.apple.com 公式アナウンス（本raw）は未反映。concepts/siri-ai.md の updated 確認と本一次ソース追記が妥当。",
+      "candidate_wiki_path": "concepts/siri-ai.md",
+      "body_excerpt": "# Siri AI is now open to all developers\nSource: https://developer.apple.com/news/?id=gdk2umrf\nStarting today with the iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3 betas, a new Developer Preview enables any developer to integrate their app with Siri AI, giving businesses and developers new wa"
+    },
+    {
+      "item_id": "dreaming-simons-qwen-weight-interp",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights (Simon Willison)",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "raw_path": "wiki/raw/articles/simonwillison.net--2026-nov-3-qwen-can-interpret-model-weights--ab172850.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★ weight-space programming系の replication 記事。trending-topics 2026-11-04 (cb685cba) が concepts/weight-space-programming と entities/matthew-honnibal を同日更新済みで、本トピックは active-crawl/trending-topics ともに「sibling WIP・既にカバー済み」と明記してスキップしている。wiki側はカバー済み → ダブりにつきskip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Qwen 3.8 27B on my laptop can interpret model weights, too\nSource: https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/\nQwen 3.8 27B on my laptop can interpret model weights, too\n3rd November 2026\nYesterday’s hot paper was\nSparks of Weight-Space Programming: LLMs can natively rea"
+    },
+    {
+      "item_id": "dreaming-skip-addy-osmani-backfill",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Addy Osmani backfill (9 X Articles / Substack posts)",
+      "url": "",
+      "raw_path": "wiki/raw/articles/2026-07-21_addyosmani_software-factories-light-and-dark.md (+8 siblings)",
+      "recommended_action": "skip",
+      "reason_ja": "★ 2026-11-04 00:47-01:06 に保存された Addy Osmani 過去記事9本（software-factories, taste-judgment, do-you-need-a-software-factory, brownfield, code-nobody-reads, agentic-verification, claude-code-team-code-review, claude-code-mods, overprompting-claude）は、同日の手動backfillセッションで entities/addy-osmani + concepts/cognitive-surrender にセクション・公開物テーブル込みで取り込み済み（log.md 2026-11-04 エントリ3件）。archive_index 不在はバックフィル起因の既知パターンで、内容はカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-sitemap-marketing",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Sitemap batch: ElevenLabs/Hebbia/Decagon marketing posts",
+      "url": "",
+      "raw_path": "wiki/raw/articles/2026-11-04_elevenlabs_what-is-call-transcription.md; 2026-11-04_hebbia_whats-new-november-disclosure-2026.md; 2026-11-04_decagon_decagon-partner-community.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ ElevenLabs「What is call transcription?」はSEO向け実践ガイド（新製品・新数値なし）、Hebbiaは11月製品ディスクロージャー（製品更新ノート中心）、Decagonはパートナーコミュニティ設立告知（提携/マーケティング告知で技術的深みなし）。プロダクト統合告知・SEOガイドはスキップ方針に該当。Harvey Assignment Clause は法務製品ブログ（484行あるが製品機能紹介中心）として skip（閾値未満）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-nonai-batch",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Non-AI blog batch (johndcook x3, dfarq, entropicthoughts, 9to5mac x2, macworld, macrumors, oldnewthing, rakhim, shkspr, pluralistic nobody-is-home, tedium)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ 非AI/低関連バッチ: johndcook数学x3、dfarq（Radio Shack歴史）、entropicthoughts（野球統計）、9to5mac/macworld/macrumors（Appleハード/OSレビュー）、Raymond Chen（DB内部話）、rakhim（AIパーソナライズの軽い随想）、Terence Eden「AI resistance as a treat」は既知の軽い抵抗論、pluralistic「Nobody Is Home」は本期の主要記事はSeparable側であり本ログは一般テックリンク集、Tedium（cryptids）。LLM/エージェントの substantive な知見なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Non-AI / marginal batch: math essays, computing history, Apple consumer hardware, baseball statistics, light AI-resistance opinion, link-digest columns."
+    }
+  ]
+}

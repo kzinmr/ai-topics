@@ -1,5 +1,21 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-04] dreaming wiki-ingest | Pattern E saturation — Takes=3 (deferred to wiki-ingest), 3 references, 4 batch skips
+
+- Checkpoint `total_articles: 0` with `recent_raw_articles: 257` → Pattern E filesystem scan + archive-index absence probe (decisive, 3,015 URLs known). Re-triaged the never-archived pool after today's pipeline 503/truncation failures (per watchdog diagnosis entry).
+- **Duplicate check**: Today's high-signal items already processed by adjacent jobs — trending-topics (`cb685cba`: Postman trust-boundary, weight-space rebuttals, Anthropic S-1), active-crawl (`06e85070`: adaptive dark mode, Revolut GLM, Nvidia NPCF), blog-ingest raw save (`daca6d5c`), Addy Osmani manual backfill ×3 (9 articles → entities/addy-osmani + concepts/cognitive-surrender). Qwen weight-interpretation skip confirmed (both sibling jobs logged it as covered).
+- **Takes (deferred to downstream dreaming-wiki-ingest)**:
+  - `entities/fireworks-ai.md` — Forge conference launches absent (Ultra-fast 1,500 tok/s on DeepSeek V4.1 Flash, Background Mode half-price, Ember-1 ~1/5 Opus 5 cost, Nexus Desktop $8/mo, No Eval, Specialized Model Inference GLM 5.3 Flash, Sovereign 25K GPUs). Raw: `raw/articles/2026-11-04_fireworks-ai_fireworks-unveils-new-products-at-forge-...md`.
+  - `concepts/xai-anthropic-colossus-deal.md` (+`entities/semianalysis.md`) — SemiAnalysis SpaceX-as-biggest-AI-cloud: 13GW 2027, MiniHard 5-month build, Gun Range 4-month record, BESS 5.9 GWh, TeraFab 10GW fab+DC. Raw: `raw/articles/2026-11-03_semianalysis_spacex-worlds-biggest-ai-cloud.md`.
+  - `concepts/post-training/post-training.md` (+`entities/open-athena.md`) — David Hall "There is no posttraining data commons": SWE-bench 90K PR→2,294 tasks, Verified 2/3 removed, TaskTrove 90%+ discarded, MiMo v2.6 2/3 environments leak reference fixes; pretraining=documents vs posttraining=tasks thesis.
+- **References**: `entities/ed-zitron.md` + `concepts/ai-bubble-economics.md` (Running Dry — $11B @ $1.25T CLOSED on tepid interest, Anthropic IPO $2T→$1.4-1.6T repricing); `concepts/anthropic-copyright-settlement.md` (NYT v. Brave scraping-resale suit — new lawsuit archetype); `concepts/siri-ai.md` (Apple official developer-opening announcement).
+- **Skips**: Addy Osmani backfill ×9 (already ingested today), sitemap marketing batch (ElevenLabs SEO guide, Hebbia disclosure, Decagon partner community, Harvey assignment-clause), Qwen weight-interp (same-day covered), non-AI batch (johndcook ×3, dfarq, entropicthoughts, 9to5mac ×2, macworld, macrumors, oldnewthing, rakhim, shkspr, pluralistic link-digest, tedium).
+- **Archive**: 7 candidates, 7 newly archived (`2026-11-04_20261104T180033Z.json`, total 3,019 URLs). Triage JSON at `cron/data/dreaming/triage_latest.json` (run 20261104T180033Z).
+- **Note**: committed the 1 orphaned raw article (semianalysis) left untracked by today's failed wiki-ingest runs. Log header/italic-line structure normalized (watchdog prepend had buried the italic line at L24).
+
 ## [2026-11-04] watchdog | auto-fix: register entities/metR in index; pipeline failure diagnosis (LLM 503 + truncation)
 
 - Registered unindexed page `entities/metR` (METR) in index.md entities section; validate_index.py clean (3417 lines).
@@ -21,7 +37,6 @@
 - **Raw saved**: honnibal.dev rebuttal, github issue, techpolicy.press SEC op-ed, regenerator1 growth-flattening, openathena posttraining-data-commons.
 - Skipped as covered by today's active-crawl/blog-ingest: adaptive dark mode, Revolut GLM, Nvidia NPCF clock-lock, Qwen weight-interpretation replication (sibling WIP).
 - Noted uningested candidates: Gemini personal-account training (Tell HN 50363461), Gitbook AI-agent breach (159), Google-schools AI ultimatum (630), Gartner open-model 90%/1-20x claim, Fujifilm tape 5x (489).
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-04] active-crawl | 3 new topics: Adaptive Dark Mode, Revolut self-hosted GLM, Nvidia NPCF Linux clock-lock
 
