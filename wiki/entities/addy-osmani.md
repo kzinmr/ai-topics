@@ -12,7 +12,7 @@ tags:
   - web-development
   - developer-experience
   - google
-sources: [raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md]
+sources: [raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering.md, raw/articles/2026-07-21_addyosmani_software-factories-light-and-dark.md, raw/articles/2026-08-03_addyosmani_taste-judgment-and-ai.md, raw/articles/2026-08-27_addyosmani_do-you-need-a-software-factory.md, raw/articles/2026-09-14_addyosmani_brownfield-agentic-engineering.md, raw/articles/2026-09-28_addyosmani_the-code-nobody-reads.md, raw/articles/2026-10-14_addyosmani_agentic-verification.md, raw/articles/2026-10-26_addyosmani_claude-code-team-code-review.md, raw/articles/2026-10-28_addyosmani_claude-code-mods.md, raw/articles/2026-10-29_addyosmani_overprompting-claude.md]
 ---
 
 
@@ -163,6 +163,26 @@ Blog *"Brownfield Agentic Engineering"* (2026-09-14): running agents in a codeba
 
 Substack *"Agentic Verification"* (2026-10-14): "To make your agent produce high-quality output, equip it with a way to check its work." The shift is from "review every line" to "build loops the agent can run itself" — the "at scale" in agent code quality comes from verification, because agents make checking cheap (tests, benchmarks, specs, e2e runs become low-cost asks). Invest in: e2e tests as ground truth, property-based tests ("examples say what should happen; properties say what must not"), differential testing for replacements, fast deterministic test loops (slow loops teach the agent to retry, not to fix). Compound taste: when the agent gets something wrong, write it down (config, hook, test) so it never happens twice. The human still owns what ships — but reviews **evidence, not just diffs**.
 
+## Software Factories, Light and Dark (July 2026)
+
+X Article *"Software Factories, Light and Dark"* (2026-07-21, 1.6M impressions): a software factory is **harnessed loops at scale**, tracing the dream back to Bob Bemer's 1968 "The Economics of Program Production." The stack is three layers: **the loop, the harness, the factory** — "the loop is the atom, the factory is the loop at scale." A **light factory** keeps humans in the loop (trading judgment/concentration against speed/breakage); a **dark factory** ignores them — "if people stop reading, they'll stop understanding your software." Cites Dex Horthy's AIEWF talk "Harness Engineering is not Enough: Why Software Factories Fail." Engineers must own the **outer loop** (decide the right fix, verify soundness, approve, carry consequences); the boundary between inner and outer loops is evidence — diffs, tests, logs, a connecting explanation. "Robots are fine operating in the dark, but humans need to see what they're doing."
+
+## Taste, Judgment and AI (Aug 2026)
+
+X Article *"Taste, Judgment and AI"* (2026-08-03): **Taste** = recognizing quality/greatness in the absence of all the evidence; **judgment** = committing to it in the presence of risk. Taste is built by reps — enough exposure to the best human work to pick the best of a dozen ambiguous options. Practice: move past "I like/hate this," ask *why* something succeeds or fails; study different versions of the same thing; for judgment, make the hard calls, write down your prediction, and stay close enough to the outcome to learn from being wrong.
+
+## Do You Need a Software Factory? (Aug 2026)
+
+X Article *"Do you need a software factory?"* (2026-08-27): before building a factory, keep humans upfront on **product intent, system design, and quality bar**. Review code (lights-on factory) but intentionally — watch where automated back-pressure breaks and where maintainability trade-offs need humans. Get quality checks as early and continuous as possible (types, tests, mutation testing, security scanners, architecture lint); **number of checks ≠ quality** — tune for signal-to-noise, tighten/relax deliberately. Encode human taste in the environment, have the agent produce evidence, and keep a human owner of what ships. "The best software factories will not be defined by how completely they eliminate human involvement — they will be defined by how intelligently they place it."
+
+## Claude Code Team Practice (Oct 2026)
+
+Three X Articles from Osmani's move to Anthropic working on Claude Code:
+
+- **"How the Claude Code team does code review"** (2026-10-26, 34.7K bookmarks / 2.6M impressions): Claude writes ~90% of Claude Code's code. June–Sep 2026: merged PRs more than doubled while the revert share **fell 40%+**; monorepo merges went from ~2,500/day (May) to 30,000+/day (Sep). They didn't stop review — they **automated the majority of reading**, optimized for human time, and invested heavily in fast/easy reverts. Every reviewer miss becomes a CLAUDE.md entry, skill, or new check ("what wasn't in the model's context?"). Owners now decide which low-risk changes auto-merge when checks pass.
+- **"Getting started with Claude Code Mods"** (2026-10-28): Mods are small JS/TS files run inside a Claude Code session — react to events, modify/override Claude Code behavior, render custom interfaces (terminal + desktop). Create one by simply describing it to Claude (no API learning needed); hot-reload, persist, distribute via marketplaces. Beyond config/permissions/slash commands/skills/status lines.
+- **"You're probably overprompting Claude"** (2026-10-29): newer models (Opus 5.5) need far less prompting — one prompt with a clear goal + how to verify it, start `/effort medium`. If you don't know what you want, have Claude interview you into a spec, then build in a fresh session. `/goal` attaches a separate checker model per turn for long background tasks. Audit your workflow every few months: "make sure you aren't building for how older models used to work."
+
 ## Key Publications
 
 | Title | Date | Platform |
@@ -179,9 +199,15 @@ Substack *"Agentic Verification"* (2026-10-14): "To make your agent produce high
 | From Prompting Agents to Loop Engineering (cited) | Jun 2026 | DAIR.AI Academy |
 | Loop Engineering (Orange Book v260615) | Jun 2026 | huasheng.ai/orange-books |
 | Agentic Code Quality | Aug 2026 | X Article |
+| Software Factories, Light and Dark | Jul 2026 | X Article + addyosmani.com |
+| Taste, Judgment and AI | Aug 2026 | X Article |
+| Do you need a software factory? | Aug 2026 | X Article |
 | Brownfield Agentic Engineering | Sep 2026 | addyosmani.com + Substack |
 | The Code Nobody Reads | Sep 2026 | addyo.substack.com |
 | Agentic Verification | Oct 2026 | addyo.substack.com |
+| How the Claude Code team does code review | Oct 2026 | X Article |
+| Getting started with Claude Code Mods | Oct 2026 | X Article |
+| You're probably overprompting Claude | Oct 2026 | X Article |
 
 ## Speaking
 
@@ -252,3 +278,9 @@ This framing positions Osmani in the "human outer loop" camp, alongside Geoffrey
 - [[raw/articles/2026-09-14_addyosmani_brownfield-agentic-engineering]] — "Brownfield Agentic Engineering" (Sep 14, 2026). Zones, blast radius, and cheap-trustworthy changes in old codebases.
 - [[raw/articles/2026-09-28_addyosmani_the-code-nobody-reads]] — "The Code Nobody Reads" (Sep 28, 2026). Substack on the end of line-by-line review and what replaces it.
 - [[raw/articles/2026-10-14_addyosmani_agentic-verification]] — "Agentic Verification" (Oct 14, 2026). Substack on building verification loops agents can run themselves.
+- [[raw/articles/2026-07-21_addyosmani_software-factories-light-and-dark]] — "Software Factories, Light and Dark" (Jul 21, 2026). X Article on loop/harness/factory stack and light vs dark factories.
+- [[raw/articles/2026-08-03_addyosmani_taste-judgment-and-ai]] — "Taste, Judgment and AI" (Aug 3, 2026). X Article on taste as reps-built recognition and judgment under risk.
+- [[raw/articles/2026-08-27_addyosmani_do-you-need-a-software-factory]] — "Do you need a software factory?" (Aug 27, 2026). X Article on where to place humans in a factory.
+- [[raw/articles/2026-10-26_addyosmani_claude-code-team-code-review]] — "How the Claude Code team does code review" (Oct 26, 2026). X Article: 30K merges/day, revert rate -40%, automated reading.
+- [[raw/articles/2026-10-28_addyosmani_claude-code-mods]] — "Getting started with Claude Code Mods" (Oct 28, 2026). X Article on JS/TS mods for Claude Code.
+- [[raw/articles/2026-10-29_addyosmani_overprompting-claude]] — "You're probably overprompting Claude" (Oct 29, 2026). X Article on minimal prompting for Opus 5.5.
