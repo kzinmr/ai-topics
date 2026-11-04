@@ -2,7 +2,7 @@
 title: Addy Osmani
 type: entity
 created: 2026-04-10
-updated: 2026-08-27
+updated: 2026-11-04
 source: "x-account"
 tags:
   - person
@@ -132,6 +132,20 @@ Key contributions from this article:
 | **Harnesses Don't Shrink, They Move** | Better models don't eliminate scaffolding — outdated complexity is replaced with new scaffolding for newly-reachable tasks |
 | **Post-Training Feedback Loop** | Models are post-trained with specific harnesses, creating tight coupling between model and harness design |
 
+## Critical Thinking in the Agentic Era (Nov 2026)
+
+X Article *"Critical thinking when agents do the work"* (2026-11-03, ~17K bookmarks / 1.1M impressions): Osmani's manifesto on maintaining critical thinking when agents do most of the work. Core contributions:
+
+- **Three-step spectrum**: cognitive offloading → **deferral** (output becomes your input; ceases to be a hypothesis) → cognitive surrender. Drift is invisible because each step is individually reasonable.
+- **Improving models raise the surrender risk**: fewer obvious errors means outputs "won't demand a second look"; pleasantness relaxes vigilance.
+- **Verification can be surrendered too**: green checks inflate when agents write tests cheaply; "Did the check turn green?" replaces "Is there evidence?" Define "verified" upfront — post-facto you'll rationalize any outcome.
+- **Answerability bar**: "Would I bet on this in front of the person who has to maintain it?"
+- **Good prompting = critical thinking skill**: your prompt reflects your understanding; intent debt can only be fixed by you. Andy Clark's delegation-vs-collaboration distinction (mutual amplification loop).
+- **Accountability is non-offloadable**: even if models out-detect humans, "someone is responsible for what ships" — cites Anthropic's *paradox of supervision*.
+- **Calibration practices**: weekly agent-free coding, monthly skill-audit, quiz-yourself-before-merge, read command output before the summary, always ask "Did I miss anything?"
+
+See [[concepts/cognitive-surrender]] for the full breakdown.
+
 ## Key Publications
 
 | Title | Date | Platform |
@@ -214,3 +228,4 @@ This framing positions Osmani in the "human outer loop" camp, alongside Geoffrey
 - [Addy Osmani's Blog](https://addyosmani.com/)
 - [[raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-engineering]] — Elvis Saravia (DAIR.AI), "From Prompting Agents to Loop Engineering" (Jun 19, 2026). References Osmani on AI-assisted coding loops.
 - [[raw/articles/2026-08-12_addyosmani_agentic-code-quality]] — "Agentic Code Quality" (Aug 12, 2026). X Article on quality gates, constraints, and back-pressure as the foundation of agentic code quality.
+- [[raw/articles/2026-11-03_addyosmani_critical-thinking-when-agents-do-the-work]] — "Critical thinking when agents do the work" (Nov 3, 2026). X Article on offloading→deferral→surrender spectrum and verification habits.

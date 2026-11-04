@@ -2,6 +2,8 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-04] ingest | X Article: Addy Osmani "Critical thinking when agents do the work" (2026-11-03, ~17K bookmarks) — raw article saved; updated concepts/cognitive-surrender (3-step spectrum offloading→deferral→surrender, self-interrogation checklist, verification-surrender, paradox of supervision) and entities/addy-osmani (Critical Thinking in the Agentic Era section)
+
 ## [2026-11-03] ingest | x-accounts-scan: 5 new posts (11 accounts sampled) — 2 events, 4 entity/concept updates, 2 raw articles
 - **New events**: `events/gemini-api-cli-agent-skill.md` (Google `gemini-api` CLI + `gemini-api-cli` skill via `npx skills add`, announced by @_philschmid) and `events/linear-coding-sessions-launch.md` (Linear Agent writes code with Claude Code/Codex in cloud sandboxes, promoted by @karrisaarinen).
 - **Raw articles**: `raw/articles/github.com--google-gemini-gemini-api-cli--2026-11-03.md` (README scrape), `raw/articles/linear.app--coding-sessions--2026-11-03.md` (product page scrape).
