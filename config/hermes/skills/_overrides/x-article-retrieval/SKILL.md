@@ -178,7 +178,7 @@ xurl --auth oauth2 "/2/tweets/2058373087330959829?tweet.fields=created_at,author
 # → created_at: "2026-05-24T02:22:41.000Z", author_id: "1373665408193036293"
 ```
 
-### Shortcut: metadata call with `note_tweet` request can return `article.title` + metrics in ONE call (verified 2026-10-17, tweet 2111102659377946821)
+### Shortcut: metadata call with `note_tweet` request can return `article.title` + metrics in ONE call (verified 2026-10-17, tweet 2111102659377946821; re-confirmed 2026-11-04, tweet 2117512471930167377)
 
 ```bash
 xurl "/2/tweets/<ID>?tweet.fields=note_tweet,created_at,author_id,public_metrics&expansions=author_id&user.fields=name,username,description"
@@ -320,7 +320,7 @@ with open('/tmp/cleaned.txt', 'w') as f: f.write(cleaned)
 For the full workflow from retrieval → raw article save → entity page update → commit, see `references/x-article-to-wiki-workflow.md`.
 For Note Tweet-specific pitfalls (tag taxonomy, engagement thresholds, case study), see `references/x-note-tweet-wiki-ingestion-pitfalls.md`.
 For a full model-release impact investigation recipe (time-boxed sources, HN Algolia + OpenRouter pricing APIs, vendor-benchmark caveats), see `references/model-release-impact-investigation.md`.
-For user-requested manual ingest pitfalls (log.md prepend formatting, contradiction-vs-existing-takeaway handling, pre-commit tag check, cross-link discovery for first-time entities), see `references/manual-x-article-ingest-pitfalls.md`.
+For user-requested manual ingest pitfalls (log.md prepend formatting, contradiction-vs-existing-takeaway handling, pre-commit tag check, cross-link discovery for first-time entities, update-in-place-vs-new-page for repeat authors, invisible-unicode strip scanner gate, engagement metrics in frontmatter), see `references/manual-x-article-ingest-pitfalls.md`.
 
 ## Pitfalls
 - **Mixing `note_tweet` + `article` in tweet.fields → silent data loss** — `article.plain_text` is dropped. Always use separate requests.
