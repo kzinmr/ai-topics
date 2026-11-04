@@ -22,12 +22,13 @@ sources: [raw/articles/2026-06-19_omarsar0_from-prompting-agents-to-loop-enginee
 |---|---|
 | **X/Twitter** | [@addyosmani](https://x.com/addyosmani) |
 | **Blog** | [addyosmani.com](https://addyosmani.com/) |
-| **Role** | Director, Google Cloud AI (Gemini & Vertex AI) |
-| **Previously** | Engineering Lead, Google Chrome & Web Platform |
+| **Substack** | [addyo.substack.com](https://addyo.substack.com) |
+| **Role** | Member of Technical Staff, Anthropic (Claude Code) (as of late 2026) |
+| **Previously** | Director, Google Cloud AI (Gemini & Vertex AI); Engineering Lead, Google Chrome & Web Platform |
 
 ## Bio
 
-Addy Osmani is a Director at Google Cloud AI, working on Gemini and Vertex AI. Previously, he was Engineering Lead for Chrome & Web Platform at Google, where he became one of the most prolific writers and speakers on web performance, developer experience, and AI-assisted coding. He has 86K+ followers on Medium and regularly speaks at major conferences including O'Reilly CodeCon.
+Addy Osmani is a Member of Technical Staff at Anthropic, where he works on Claude Code. His October 2026 X Articles ("How the Claude Code team does code review," "Getting started with Claude Code Mods," "You're probably overprompting Claude") are written from inside the Claude Code team — e.g. "We previously mentioned that Claude writes about 90 percent of the code for Claude Code." His Substack notes he "joined a new role full-time" (Sep 2026). He spent over 14 years at Google leading developer experience across Chrome and, in recent years, AI (Gemini, coding agents, and agentic engineering), most recently as Director at Google Cloud AI. He has 86K+ followers on Medium and regularly speaks at major conferences including O'Reilly CodeCon.
 
 Osmani is the most **prolific systematizer** of agentic coding patterns — he doesn't just use AI coding tools, he builds frameworks, taxonomies, and playbooks for how teams should adopt them.
 
