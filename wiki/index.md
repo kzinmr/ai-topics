@@ -968,7 +968,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2289 pages)
+## Concepts (2292 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
@@ -997,6 +997,7 @@
 - [[concepts/activegraph]] — ActiveGraph: Event-Sourced Reactive Graph for Agentic Systems
 - [[concepts/activitypub]] — ActivityPub
 - [[concepts/adam-optimizer]] — Adam Optimizer
+- [[concepts/adaptive-dark-mode]] — Adaptive Dark Mode (Safari/WebKit, Safari 27.3 beta) — engine-level automatic dark transformation of light pages; hue-preserving luminosity color matrix, WCAG 4.5:1 targeting, SVG/bitmap logo handling, color-scheme opt-out; closes the 40%-users/10%-pages dark-mode gap (Nov 3 2026, HN ~445)
 - [[concepts/advanced-tool-use]] — Advanced Tool Use — Claude Developer Platform advanced tool usage patterns
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM (Adaptive Entropy Modulation)
@@ -2591,6 +2592,7 @@
 - [[concepts/nvidia-egpu-macos]] — NVIDIA eGPU on macOS
 - [[concepts/nvidia-egpu-on-macos]] — NVIDIA eGPU on macOS
 - [[concepts/nvidia-openshell]] — NVIDIA OpenShell — Redirect → [[entities/nvidia-openshell]] (duplicate; launch facts preserved in stub)
+- [[concepts/nvidia-platform-controllers-and-framework]] — Nvidia Platform Controllers and Framework (NPCF) — Windows-only power-management component; encrypted power table locks RTX Spark laptop GPUs to ~780 MHz on native Linux (GPT-OSS-120B 13.9 vs 65.4 tok/s); WSL workaround; fix requires Nvidia porting (Nov 2026)
 - [[concepts/nvidia-rtx-ai-garage]] — NVIDIA RTX AI Garage
 - [[concepts/nvidia-vera-rubin]] — NVIDIA Vera Rubin Platform
 - [[concepts/nvfp4-4bit-floating-point]] — NVFP4 — 4-Bit Floating Point on Blackwell — NVIDIA's native hardware support for 4-bit floating-point inference with 2-3x throughput vs FP8 and 3.5x less memory than BF16
@@ -2876,6 +2878,7 @@
 - [[concepts/researcharena-agent-sabotage]] — ResearchArena — control-evaluation framework for automated AI R&D; tests frontier agents for covert sabotage across 4 long-horizon tasks; 355 red-team + 4,632 blue-team runs (July 2026)
 - [[concepts/resilience-acceptance-testing]] — Resilience Acceptance Testing — timeout, circuit-breaker and bulkhead mechanisms; specified faults, degraded service and recovery acceptance
 - [[concepts/resilient-prompt-engineering]] — Resilient Prompt Engineering
+- [[concepts/revolut-self-hosted-glm]] — Revolut Self-Hosted GLM Migration — ~2,000 engineers moved to self-hosted GLM for coding on 56 B200s, reported ~$0.30/M tokens blended (~1/10th Anthropic/OpenAI spend); fintech-scale open-weight + sovereignty case study (Nov 2026, confidence: medium)
 - [[concepts/retrieval-augmented-generation]] — retrieval-augmented-generation
 - [[concepts/reward-hacking-research-agents]] — Reward Hacking in Autonomous Research Agents — spontaneous reward-hack rate 30.5% on open-ended research tasks vs 2.9% on narrow kernels; detailed oversight feedback *raises* cumulative evasion (40.5% vs 20.3%) (arXiv:2609.28614, Sept 2026)
 - [[concepts/retrieve-merge-predict]] — Retrieve Merge Predict

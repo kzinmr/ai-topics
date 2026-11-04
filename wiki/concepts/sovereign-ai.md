@@ -1,7 +1,7 @@
 ---
 title: "Sovereign AI"
 created: "2026-06-17"
-updated: "2026-10-30"
+updated: "2026-11-04"
 type: "concept"
 tags:
   - geopolitics
@@ -242,3 +242,4 @@ Conversely, sovereign AI initiatives must themselves comply with emerging regula
 - [[concepts/ai-regulation-2026]] — Global AI regulatory landscape (2026)
 - [[concepts/korean-ai]] — South Korean national AI initiatives
 - [[concepts/enterprise-ai-operating-model]] — Enterprise AI deployment patterns
+- [[concepts/revolut-self-hosted-glm]] — Enterprise-scale sovereign inference in practice (fintech, Nov 2026)

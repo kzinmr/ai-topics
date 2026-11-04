@@ -1,7 +1,7 @@
 ---
 title: "Open-Weight vs Closed LLM Performance Gap"
 created: 2026-06-28
-updated: 2026-10-26
+updated: 2026-11-04
 type: concept
 aliases: [open-vs-closed-llm-gap, open-source-llm-catch-up, frontier-os-llm]
 tags:
@@ -114,6 +114,10 @@ Source: [[entities/nathan-lambert|Nathan Lambert]] / Interconnects, "Latest open
 ## Enterprise Signal — IBM CEO (Oct 2026)
 
 Arvind Krishna (The Register, 2026-10-22; HN 291 pts, 2026-10-26): open-weight models are now **"irresistibly good and cheap on-prem"** — his framing is ~90% of frontier performance at ~10% of the price, deployable in "two or three racks." A major enterprise vendor's CEO publicly pricing the open-weight/on-prem tradeoff is a demand-side adoption signal that complements the benchmark-convergence data above and the [[concepts/llm-price-collapse-2026]] supply-side story.
+
+## Production Case — Revolut Self-Hosted GLM (Nov 2026)
+
+Revolut moved ~2,000 engineers to self-hosted GLM for coding (56 B200s, reported blended ~$0.30/M tokens, ~1/10th prior Anthropic/OpenAI spend) — the first disclosed fintech-scale production coding migration to a Chinese open-weight model. Company-reported figures; full analysis in [[concepts/revolut-self-hosted-glm]].
 
 ## See Also
 - [[concepts/scaling-laws]] — Empirical scaling relationships for LLM performance

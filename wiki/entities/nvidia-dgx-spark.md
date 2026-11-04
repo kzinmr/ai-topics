@@ -3,7 +3,7 @@ title: NVIDIA DGX Spark
 type: entity
 aliases: [dgx-spark, project-digits, gb10-spark, nvidia-dgx-spark]
 created: 2026-04-15
-updated: 2026-06-02
+updated: 2026-11-04
 status: L2
 sources:
   - https://www.nvidia.com/en-us/products/workstations/dgx-spark
@@ -188,6 +188,8 @@ Announced at GTC Taipei on May 31, 2026. The RTX Spark is NVIDIA's answer to the
 | **CUDA** | Native (Windows-on-Arm) | Native (Linux aarch64) | No (MLX instead) |
 
 The RTX Spark potentially closes the gap between NVIDIA's CUDA ecosystem and Apple's local AI ecosystem by making CUDA accessible in a portable laptop form factor.
+
+**Linux caveat (Nov 2026)**: RTX Spark laptops throttle to ~780 MHz GPU clocks on native Linux (vs ~2.2 GHz on Windows) because the encrypted power table is only decryptable by the Windows-only Nvidia Platform Controllers and Framework; GPT-OSS-120B: 65.4 tok/s Windows vs 13.9 tok/s native Linux (vendor-run benchmark). WSL is the practical workaround. See [[concepts/nvidia-platform-controllers-and-framework]].
 
 → [[entities/alex-cheema]], [[entities/jensen-huang]]
 

@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-04] active-crawl | 3 new topics: Adaptive Dark Mode, Revolut self-hosted GLM, Nvidia NPCF Linux clock-lock
+
+- **Trend discovery**: HN Algolia `search_by_date` (AI/LLM/agent/model, ≥40 pts, Oct 29+). Skipped as already-covered: Qwen 3.8 27B weight-interpretation / weight-space programming (trending-topics Nov 3 + sibling WIP in progress), Kairos (non-AI fintech tool), Uncracked City (game), Texas data-center stocks (thin CNBC piece).
+- **NEW** [[concepts/adaptive-dark-mode]] — Safari 27.3 beta engine-level dark-mode transformation (WebKit blog Nov 3, HN ~445). Raw: `raw/articles/webkit.org--introducing-adaptive-dark-mode--2026-11-03.md`.
+- **NEW** [[concepts/revolut-self-hosted-glm]] — ~2,000 engineers → self-hosted GLM, 56 B200s, ~$0.30/M tok (~1/10th API spend); confidence: medium (company-reported). Raw: `raw/articles/x.com--guilleflorvs-revolut-self-hosted-glm--2026-11-02.md` (syndication API + HN 50350004 comment tree, incl. swyx link to Abitbol talk).
+- **NEW** [[concepts/nvidia-platform-controllers-and-framework]] — Windows-only NPCF encrypted power table throttles RTX Spark laptops to ~780 MHz on Linux (13.9 vs 65.4 tok/s GPT-OSS-120B, vendor-run); confidence: medium. Raw: `raw/articles/mindstudio.ai--linux-nvidia-rtx-spark-laptop--2026-11-04.md`.
+- **Updates**: `concepts/self-hosting-ai-development` (cross-link to case study), `entities/zhipu` (Revolut deployment section), `concepts/open-weight-vs-closed-llm-gap` (Production Case section), `concepts/sovereign-ai` (See Also backlink), `entities/nvidia` + `entities/nvidia-dgx-spark` (NPCF Linux caveat).
+- Index: Concepts 2289 → 2292. Wikilinks + tags verified against SCHEMA (removed non-schema `linux` tag).
+
 ## [2026-11-04] ingest | blog-ingest: 18 raw articles saved (run 20261104T100015Z)
 - **AI-relevant highlights**: `wheresyoured.at` "Running Dry" (Ed Zitron, ~7.4k words), `simonwillison.net` "Qwen 3.8 27B on my laptop can interpret model weights", `theverge.com` "NYT et al. sues Brave for AI scraping / selling scraped content to AI labs", `shkspr.mobi` "Just a little AI resistance, as a treat" (Terence Eden), `idiallo.com` "Goodhart's Law, but We Already Spent All Our Money", `rakhim.exotext.com` "I wish tech companies knew more about me" (AI-personalization/privacy), `developer.apple.com` "Apple begins opening Siri AI to developers", `pluralistic.net` "Separable (03 Nov 2026)" (Cory Doctorow).
 - **Non-AI / general**: johndcook.com x3 (math), devblogs.microsoft.com/oldnewthing (Raymond Chen, DB internals), macrumors (Safari 27.3), 9to5mac x2 + macworld (iPad mini / Apple), dfarq (Radio Shack history), entropicthoughts (baseball stats).

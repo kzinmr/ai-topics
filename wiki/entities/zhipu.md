@@ -1,7 +1,7 @@
 ---
 title: "Zhipu AI"
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-11-04
 type: entity
 tags: [company, lab, china, open-source, llm, frontier-models, zhipu, glm]
 sources:
@@ -39,6 +39,10 @@ The consumer/agent product is **[[entities/glm-5-zai|Z.ai]]**, an AI chatbot and
 ## Significance
 
 Zhipu is a leading representative of China's frontier-model effort, alongside [[concepts/glm-5-3|GLM]] peers such as DeepSeek ([[entities/deepseek|entity]]), Alibaba's Qwen, and Moonshot's Kimi. Its August 2026 GLM-5.3 release — explicitly claiming *emergent cyber capabilities* in a frontier coding model — drew scrutiny in the AI-safety and cyber-governance discussion, paralleling the attention around OpenAI's GPT-5.5-Cyber and Anthropic's Mythos/Project Glasswing.
+
+### Revolut production deployment (Nov 2026)
+
+Revolut migrated ~2,000 engineers to **self-hosted GLM** for coding on 56 Nvidia B200s at a reported blended ~$0.30/M tokens (~1/10th of their prior Anthropic/OpenAI spend) — the first disclosed at-scale production coding deployment of a Chinese open-weight model at a regulated fintech. Company-reported numbers; see [[concepts/revolut-self-hosted-glm]].
 
 ## Related
 

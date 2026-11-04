@@ -1,7 +1,7 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-08-19
+updated: 2026-11-04
 type: entity
 tags: [company, platform]
 sources:
@@ -65,6 +65,7 @@ This complements [[concepts/nvidia-vera-rubin]] by demonstrating NVIDIA's focus 
 ### GPU Hardware
 - Foundation for local AI inference and training
 - Connects to [[concepts/inference-hardware]] and [[concepts/dgx-spark-local-llm-server]]
+- **NPCF Linux gap (Nov 2026)**: RTX Spark laptops throttle to ~780 MHz on native Linux because the Windows-only Nvidia Platform Controllers and Framework holds the encrypted power table — the open kernel driver alone is not the full stack. See [[concepts/nvidia-platform-controllers-and-framework]].
 
 ## Recent Activity (April—May 2026)
 - Published Dynamo architecture documentation for agentic inference
