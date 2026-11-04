@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-11-04] watchdog | auto-fix: register entities/metR in index; pipeline failure diagnosis (LLM 503 + truncation)
+
+- Registered unindexed page `entities/metR` (METR) in index.md entities section; validate_index.py clean (3417 lines).
+- Index corruption checks all clean: pipe-prefix 0, line-number 0, triple-bracket 0.
+- Top-level unindexed scan: metR was the only gap (now fixed); 0 remaining.
+- Pipeline failures diagnosed (report-only, no safe auto-fix):
+  - blog-triage + dreaming-wiki-ingest: HTTP 503 "Local LLM server is busy" (fallback to external provider did not engage).
+  - blog-wiki-ingest, newsletter-wiki-ingest, x-bookmarks-ingest: "Response truncated due to output length limit".
+  - newsletter-triage succeeded but downstream parse failed (cascade of the above).
+  - Uncommitted raw articles from today's triage (6 newsletters + 1 semianalysis raw) left by failed wiki-ingest runs — needs manual/next-run commit.
+
+---
+
+
 ## [2026-11-04] trending-topics | weight-space rebuttals + agent trust-boundary week + Anthropic S-1 bubble signals
 
 - **NEW** [[concepts/agent-trust-boundary-violations]] — Postman silent auto-install of Codex/Claude plugins with self-approved hook (GitHub #14370, HN 1332) + OpenAI Codex "Improve the model for everyone" silent re-enable (HN 488); config/hook auditing checklist. Raw: `raw/articles/2026-11-04_github-issue_postman-auto-install-ai-plugins.md`.
