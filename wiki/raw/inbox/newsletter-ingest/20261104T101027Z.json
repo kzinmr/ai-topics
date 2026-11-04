@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "checkpoint_run_id": "20261104T101027Z",
+  "triaged_at": "2026-11-04T10:15:00+00:00",
+  "processed_count": 6,
+  "summary_ja": "6通受信。AI/LLM直結は2通(Simon Willison の Qwen 3.8 27B 重み解釈、SemiAnalysis の SpaceX AI Cloud)。Superintelligence (GPT-6 Astra) と Ben's Bites も周辺候補。Lenny's holiday gift guide と Irrational Analysis fireside recap は wiki 対象外。全リンクが Substack/beehiiv リダイレクトのみで解像済み URL は無し — wiki-ingest 側で open.substack.com の解決と og メタ抽出が必要。",
+  "decisions": [
+    {
+      "message_id": "<20261103183657.3.012ba4628eb07509@mg2.substack.com>",
+      "subject": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "source": "Simon Willison (simonw substack, publication_id=1173386, post_id=223369353)",
+      "importance": "critical",
+      "newsjacking_score": 4,
+      "ai_relevance": "high",
+      "tags": ["qwen", "local-llm", "interpretability", "simon-willison", "open-weights"],
+      "canonical_url": "https://simonwillison.net/ (resolve via https://open.substack.com/pub/simonw/p/qwen-38-27b-on-my-laptop-can-interpret)",
+      "recommended_action": "wiki-ingest: scrape og meta + body, update entities/simon-willison.md, create/update qwen-3-8 model page and interpretability concept cross-link. Core-scoped (open weights + local inference + interpretability)."
+    },
+    {
+      "message_id": "<20261103204453.3.a75e5465a9d4f27e@mg-d1.substack.com>",
+      "subject": "Elon Is Doing It Again: SpaceX Will Be The World's Biggest AI Cloud",
+      "source": "SemiAnalysis (publication_id=6349492, post_id=223354050; Reyk Knuhtsen / Jeremie Eliahou Ontiveros)",
+      "importance": "high",
+      "newsjacking_score": 4,
+      "ai_relevance": "high",
+      "tags": ["inference-infrastructure", "ai-datacenter", "spacex", "semianalysis", "elon-musk"],
+      "canonical_url": "resolve via https://open.substack.com/pub/semianalysis/p/elon-is-doing-it-again-spacex-will",
+      "recommended_action": "wiki-ingest: infrastructure/industry coverage. Update entities/semianalysis.md, possibly new concept page for orbital/space-based AI compute if substantive. Paywalled — og meta only may be available."
+    },
+    {
+      "message_id": "<20261103.190656.f5ebb7c4@mta20>",
+      "subject": "🧬 GPT-6 Astra Just Gene-Edited Another AI",
+      "source": "beehiiv newsletter (Superintelligence-style daily; all links are link.mail.beehiiv.com/v2/c/ tracking redirects)",
+      "importance": "low",
+      "newsjacking_score": 2,
+      "ai_relevance": "medium",
+      "tags": ["openai", "gpt-6", "ai-news-digest"],
+      "canonical_url": "unresolved — test one v2/c/ link with curl before assuming Cloudflare block (per daily-rss-triage pitfall #10)",
+      "recommended_action": "conditional: title is clickbait-flavored aggregator content. Only ingest if link resolution reveals a primary source (OpenAI announcement / arXiv). Otherwise skip to log."
+    },
+    {
+      "message_id": "<20261103140332.3.256c756b3b2a1f04@mg-d1.substack.com>",
+      "subject": "Finding my thing",
+      "source": "Ben's Bites (bensbites, publication_id=4379299, post_id=223264812; slug 'if-you-feel-behind-right-now-dont')",
+      "importance": "low",
+      "newsjacking_score": 1,
+      "ai_relevance": "low",
+      "tags": ["ai-news-digest", "developer-tools"],
+      "canonical_url": "resolve via https://open.substack.com/pub/bensbites/p/if-you-feel-behind-right-now-dont",
+      "recommended_action": "skip for wiki — career/motivational framing. If the digest section links a notable tool, x-bookmarks/blog pipelines usually cover it."
+    },
+    {
+      "message_id": "<20261103144533.3.9b3ba352ccd73e7e@mg2.substack.com>",
+      "subject": "Lenny's Newsletter holiday gift guide 2026",
+      "source": "Lenny's Newsletter (publication_id=10845, post_id=221810530)",
+      "importance": "low",
+      "newsjacking_score": 0,
+      "ai_relevance": "none",
+      "tags": ["product-management"],
+      "canonical_url": null,
+      "recommended_action": "skip — product-management gift guide, outside LLM/Agent wiki scope."
+    },
+    {
+      "message_id": "<20261103232720.3.8f18aee25040d002@mg2.substack.com>",
+      "subject": "Matt Murphy and Michael Hurlston Fireside Chat: Irrational Recap",
+      "source": "Irrational Analysis (irrationalanalysis, publication_id=1509468, post_id=223398484)",
+      "importance": "low",
+      "newsjacking_score": 1,
+      "ai_relevance": "low",
+      "tags": ["semiconductor-industry", "podcast-recap"],
+      "canonical_url": "resolve via https://open.substack.com/pub/irrationalanalysis/p/matt-murphy-and-michael-hurlston",
+      "recommended_action": "skip — fireside chat recap, only marginally AI-adjacent (semiconductor finance). No wiki action unless it contains a substantive chip/AI-infra thesis."
+    }
+  ],
+  "notes": [
+    "All 6 raw digests are link-dumps only (no article bodies scraped by newsletter-ingest). The downstream newsletter-wiki-ingest job must resolve Substack/beehiiv redirects itself.",
+    "Priority for newsletter-wiki-ingest: uid=873 (Simon Willison) > uid=875 (SemiAnalysis) > uid=874 (beehiiv, conditional) > rest skip."
+  ]
+}
