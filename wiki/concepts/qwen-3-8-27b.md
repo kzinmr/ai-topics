@@ -2,7 +2,7 @@
 title: "Qwen 3.8 27B"
 type: concept
 created: 2026-08-17
-updated: 2026-08-27
+updated: 2026-11-04
 tags:
   - model
   - qwen
@@ -16,6 +16,7 @@ tags:
 aliases: ["Qwen3.8-27B", "Qwen 3.8 27B dense"]
 sources:
   - raw/articles/simonwillison.net--2026-aug-16-qwen-38-27b--e8876b7c.md
+  - raw/articles/simonwillison.net--2026-nov-3-qwen-can-interpret-model-weights--ab172850.md
   - https://simonwillison.net/2026/Aug/16/qwen-38-27b/
 ---
 
@@ -71,8 +72,15 @@ Supports MTP, an architecture trick where a cheaper mechanism guesses several to
 
 Qwen 3.8 27B demonstrates that open-weight general-purpose models can offer long context, effective tool calling, strong vision, and competent code generation in a 17GB file. The model at this size continues to improve at an impressive rate, narrowing the gap with datacenter-class models.
 
+### Weight-Space Reading (Nov 3, 2026)
+
+Simon Willison used Qwen 3.8 27B as the local model in the first independent replication of the MIT CSAIL "Sparks of Weight-Space Programming" `exp1_which_game` task: fed only the raw floating-point weights of small RL-trained game networks, with **no tools, no code execution, no calculator**, it correctly identified **Pac-Man** (46m 12s, 43,506 reasoning tokens, 72% confidence), **Pong** (1h 04m 54s, 75%) and **Breakout** (52m 25s, 88%), failing only on the obscure Atari game **Freeway** (mistook it for another Pac-Man-like grid game). Willison ran it in **LM Studio** via the `llm-lmstudio` plugin; the model required a **long context window** — the default 8192 failed with errors — and a raised `LMSTUDIO_TIMEOUT=900`.
+
+This is a notable data point for the model's positioning: it is the first time a **17GB open-weight local model** has been shown doing the weight-reading task that the original paper demonstrated only on GPT-6 Astra, which weakens the "frontier-only capability" reading of that result. Willison still reads it deflationarily ("a sufficiently experienced human being armed with a notepad and a pencil could get there with enough effort") — see [[concepts/weight-space-programming#independent-replication-simon-willison-2026-11-03]].
+
 ## Related
 
+- [[concepts/weight-space-programming]] — the MIT CSAIL result Qwen 3.8 27B locally replicated (Nov 3, 2026)
 - [[concepts/qwen-3-8|Qwen 3.8 Max]] — MoE variant (2.4T parameters)
 - [[concepts/qwen3-6-27b|Qwen 3.6 27B]] — predecessor
 - [[concepts/qwen|Qwen Model Family]]

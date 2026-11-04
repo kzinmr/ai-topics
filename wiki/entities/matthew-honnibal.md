@@ -2,7 +2,7 @@
 title: Matthew Honnibal
 type: entity
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-11-04
 tags:
   - person
   - nlp
@@ -91,6 +91,10 @@ Matthew shared his agent workflow philosophy and security concerns, with deep in
 - **Moving target**: Everything changes too fast for proper evaluation — "Anthropic can't be doing proper studies either, the time just doesn't add up"
 - **Uncertainty compounds**: Platform unreliability + workflow uncertainty + model changes = discouraging feedback loop
 - **Evaluation difficulty**: No standardized performance measurement for agent workflows — "it's all very eyeballed"
+
+## Astra weight-space rebuttal (Nov 2026)
+
+On 2026-11-03 Honnibal published "The 'Astra can read and write weights to improve Qwen' post is misleading" (honnibal.dev), dissecting the MIT CSAIL "Sparks of Weight-Space Programming" claim experiment-by-experiment: only the small (17K–172K weight) toy-network identification tasks are truly tool-free; the headline Qwen math improvement (MATH-500 7.9%→48.1%) uses Python and up to 50 evaluation passes. His position: prompting a model to *write analysis/repair code* for weights is genuinely new capability, but conflating it with raw-weight reading misrepresents what was demonstrated. The post reached 994 HN points (item 50351111) and became the standard correction cited across the discussion, including in [[concepts/weight-space-programming]].
 
 ## Related
 - [[entities/eleanor-berger]] — Episode 3 co-guest; shared security concerns about HTML smuggling in skills

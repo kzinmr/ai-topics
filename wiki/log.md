@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-11-04] trending-topics | weight-space rebuttals + agent trust-boundary week + Anthropic S-1 bubble signals
+
+- **NEW** [[concepts/agent-trust-boundary-violations]] — Postman silent auto-install of Codex/Claude plugins with self-approved hook (GitHub #14370, HN 1332) + OpenAI Codex "Improve the model for everyone" silent re-enable (HN 488); config/hook auditing checklist. Raw: `raw/articles/2026-11-04_github-issue_postman-auto-install-ai-plugins.md`.
+- **Updates**: `concepts/weight-space-programming` (Honnibal 994-pts + Goedecke rebuttals section), `entities/matthew-honnibal` (rebuttal section), `entities/codex` (trust-boundary incidents), `concepts/ai-bubble-economics` (Anthropic S-1 / $895B commitments / $3.2T hidden AI debt / CEPR AI Bubble Monitor / SEC-block-IPO).
+- **Raw saved**: honnibal.dev rebuttal, github issue, techpolicy.press SEC op-ed, regenerator1 growth-flattening, openathena posttraining-data-commons.
+- Skipped as covered by today's active-crawl/blog-ingest: adaptive dark mode, Revolut GLM, Nvidia NPCF clock-lock, Qwen weight-interpretation replication (sibling WIP).
+- Noted uningested candidates: Gemini personal-account training (Tell HN 50363461), Gitbook AI-agent breach (159), Google-schools AI ultimatum (630), Gartner open-model 90%/1-20x claim, Fujifilm tape 5x (489).
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-04] active-crawl | 3 new topics: Adaptive Dark Mode, Revolut self-hosted GLM, Nvidia NPCF Linux clock-lock

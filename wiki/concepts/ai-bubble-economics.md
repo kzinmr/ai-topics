@@ -2,7 +2,7 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-10-25
+updated: 2026-11-04
 tags:
   - economics
   - company
@@ -400,6 +400,19 @@ In "What happens next, after the decline of tokenmaxxing?" (May 29, 2026), Marcu
 - The GPU stranding problem means stranded assets will have near-zero value before debt is retired
 
 ---
+
+## Anthropic S-1 and the IPO window (Nov 2026)
+
+Anthropic's revised S-1 (filed Oct 30, public details Nov 2, 2026) became the week's central AI-economics document:
+
+- **Q3 revenue $16.8–17B**, but growth *flattened* month-over-month within the quarter (Regenerator, HN 50344958): sequential adds of +$6.8B (Q2) then +$5.2B (Q3); Q1 $4.8B → Q2 $11.6B → Q3 $16.8B. One analyst on Bluesky pegs Q3 ARR at $67.8B vs $46.2B in Q2 (+47% QoQ) after "tokenmaxxing's end" over the summer.
+- **$104B net loss** in Q3, mostly fair-value changes on convertible notes/derivative liabilities (GAAP treatment contested in the HN thread).
+- **$895B total spending commitments**, including **$582B non-cancelable to five counterparties** (Amazon, AMD, Broadcom, Google, Microsoft), most stretching into the 2030s, all off-balance-sheet. Cash reserves ~$96B. (HN 50337439, 50342424, 50341073)
+- **Personnel**: $1.7B quarterly payroll (~$107K/employee/month) (HN 50350560).
+- **Internal AI use at retail prices now exceeds total employee pay** (Business Insider, HN 50339494, 352 pts) — thread nuance: retail-priced opportunity cost, not booked cash spend.
+- An S-1 risk factor reportedly warns Anthropic may be *"imminently"* close to RSI (recursive self-improvement) (HN 50351712).
+
+**Policy pushback**: Matt Scherer (co-author of *Brace for Impact*) argues in Tech Policy Press that **the SEC should block the IPO** — unaudited 2026 financials, ~$900B of effectively-debt commitments, slowing growth, and retail/pension investors left "holding the bag" (HN 50344919, 399 pts). Fits the wider November bubble-signal cluster: Nikkei reports big-tech **off-balance-sheet AI debt doubled in 6 months to ~$3.2T** (HN 50358422), Oracle filed to sell $20B in stock/bonds for AI buildout (HN 50342284), and CEPR launched a standing **AI Bubble Monitor** (HN 50352727). CoreWeave-style neocloud equities fell on the flattening-growth read. See [[concepts/ai-bubble]], [[concepts/ai-infrastructure-circular-financing]], [[concepts/subprime-data-center-crisis]].
 
 ## Related Concepts
 

@@ -3,7 +3,7 @@ title: OpenAI Codex (AI coding agent)
 type: entity
 aliases: [codex-cli, openai-codex, codex-agent]
 created: 2026-05-07
-updated: 2026-10-13
+updated: 2026-11-04
 status: L3
 tags:
   - entity
@@ -211,3 +211,8 @@ Samsung Electronics deployed Codex alongside ChatGPT Enterprise to all employees
 This represents significant enterprise validation of Codex's expansion beyond pure software engineering into general knowledge work across a global manufacturing and technology conglomerate.
 
 > Source: [Samsung Electronics brings ChatGPT and Codex to employees](https://openai.com/index/samsung-electronics-chatgpt-codex-deployment) (OpenAI News, June 22, 2026)
+
+## Trust-boundary incidents (Nov 2026)
+
+- **Postman auto-install (Oct 25–Nov 3, 2026)**: Postman Desktop silently installed a user-wide plugin into Codex *and* Claude Code, appended a git marketplace + `session_start` hook to `~/.codex/config.toml`, and had its installer self-approve the hook's `trusted_hash`. The hook instructs the agent to load the `postman:api-engineer` skill before any non-trivial API task. Postman's own logs confirm the auto-install. GitHub issue #14370; HN 1332 pts (50354960). See [[concepts/agent-trust-boundary-violations]].
+- **Training opt-in reset (Nov 3, 2026)**: multiple users report Codex's "Improve the model for everyone" data-sharing toggle silently re-enabling itself after having been disabled; recurring pattern (earlier thread HN 49643556). Unconfirmed by OpenAI as of Nov 4; HN 488 pts (50352757). Practical guidance from the thread: periodically audit data-controls and treat opt-outs as non-durable.
