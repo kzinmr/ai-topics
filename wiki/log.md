@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-11-05] watchdog | Daily health auto-fix: frontmatter fix (1 page)
+
+### Changes
+- Fixed `concepts/agent-trust-boundary-violations.md`: removed stray H1 line before `---` frontmatter delimiter (page started with H1, no frontmatter at line 1).
+- Verified clean: index corruption (pipe/line-number/triple-bracket/space-prefix = 0), validate_index.py pass, L2 pipe-prefix scan = 0, orphans = 0, ghost entries = 0, skeleton entities = 0.
+- Residual (no action): 279 empty-wikilink artifacts (all [no-match]/[missing] per safe fixer — known residual class), 6975 unprocessed raw articles, 2886 stale pages (>30d).
+
+---
+
 _Log of all wiki changes. Newest entries at top._
 ## [2026-11-05] watchdog | auto-fix: commit orphaned wiki-ingest output; register 2 new concepts
 

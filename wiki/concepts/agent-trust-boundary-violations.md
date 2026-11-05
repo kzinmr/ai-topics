@@ -1,5 +1,3 @@
-# Agent Trust-Boundary Violations (Coding-Agent Ecosystem, Nov 2026)
-
 ---
 title: "Agent Trust-Boundary Violations (Postman auto-install & OpenAI Codex training opt-in reset)"
 type: concept
