@@ -788,6 +788,7 @@
 - [[entities/sebastian-raschka]] — Sebastian Raschka — ML researcher, 'Build a Reasoning Model (From Scratch)', LLM architecture analysis
 - [[entities/semianalysis]] — SemiAnalysis
 - [[entities/sentra-app]] — Sentra.app
+- [[entities/seo-skill]] — SEO Skill (seoskill.dev) — Ian Nuttall's open-source MCP + CLI for "agent-native teams"; gives AI coding agents real Search Console, GA, Bing data + Google update dates + site crawls
 - [[entities/sequent]] — Sequent
 - [[entities/sequoia-capital]] — Sequoia Capital
 - [[entities/serena-ge]] — Serena Ge
@@ -2868,6 +2869,7 @@
 - [[concepts/redux]] — Redux
 - [[concepts/reflexion]] — Reflexion — verbal self-reflection + episodic memory across attempts (Shinn et al. 2023); test-feedback retry pattern
 - [[concepts/reflexive-ai]] — Reflexive AI
+- [[concepts/resin]] — Resin (ekzhang) — experimental library of building blocks for building LLM inference engines; headless Rust Engine (scheduler + KV cache + metrics) + pluggable Python kernels; tiered prefix-cache storage beyond VRAM; 12h Blackwell engines rivaling vLLM/SGLang
 - [[concepts/relational-intelligence]] — Relational Intelligence — AI that reasons about who we're connected to and why; the Hearth Thesis category (Ashe Magalhaes, relationscape)
 - [[concepts/reliable-agent-patterns]] — Reliable Agent Patterns
 - [[concepts/reliability-theory-for-ai-control]] — Reliability theory for AI control: series/parallel composition of mitigations, rare-event suppression order depends on failure-domain independence (arXiv:2609.26419)
@@ -3215,6 +3217,7 @@
 - [[concepts/vintage-computing]] — vintage-computing
 - [[concepts/vision-models]] — vision-models
 - [[concepts/vla-models]] — Vision-Language-Action Models (VLA)
+- [[concepts/vlm-visual-semiotics]] — VLM visual semiotics — simple visual symbols (a red heart) implicitly steer VLM behavior on unrelated tasks; models' CoT interpretations diverge from actual effect; generation–interpretation gap in model-to-model visual communication (Tartaglini et al., arXiv:2610.36449, "AI semiotics" per @emollick)
 - [[concepts/vllm]] — vLLM
 - [[concepts/voice-agent-evaluation]] — Voice Agent Evaluation; new page with Six-Pillar Framework (TTS quality, conversation quality, tool usage, intelligence, compliance, reliability), production targets, industry-specific weighting (June 24)
 - [[concepts/vulnhunter-agentic-code-security]] — VulnHunter agentic AI security tool by Capital One (Claude Code skills, falsification engine, Apache 2.0)

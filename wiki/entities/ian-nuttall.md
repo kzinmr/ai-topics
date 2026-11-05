@@ -3,7 +3,7 @@ title: "Ian Nuttall"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-05-15
+updated: 2026-11-05
 type: entity
 ---
 
@@ -51,6 +51,8 @@ His philosophy is captured in his Twitter bio: "TLDR; I make software with AI an
 | Feb 2026 | Released `dotagents` — centralized location for hooks, commands, skills, and AGENT/CLAUDE.md files |
 | 2026 | Published comprehensive Claude Code workflow guide at 10xdevelopers.dev |
 | 2026 | Active contributor to RSSNext/Folo, Raycast extensions, and Subscribe Openly |
+| Nov 2026 | Launched **SEO Skill** (seoskill.dev) — open-source MCP + CLI giving AI agents (Claude Code / Codex) real Search Console, GA and Bing data |
+| Nov 5, 2026 | Endorsed **Amp** (@AmpCode) as a Conductor replacement for running customer support, SEO, GitHub issues, iOS builds/ASO, and product planning through an agent |
 
 ## Core Ideas
 
@@ -144,6 +146,9 @@ A free programmatic SEO tool acquired by Nuttall in January 2024. Generates opti
 
 ### Practical Programmatic
 Nuttall's content platform and course business teaching programmatic SEO strategies. Drives over 1M monthly pageviews using the techniques described.
+
+### SEO Skill (2026)
+Open-source SEO tool for "agent-native teams" ([seoskill.dev](https://seoskill.dev), [github.com/iannuttall/seo](https://github.com/iannuttall/seo)). Ships as a free hosted MCP server plus an open-source CLI (`npm i -g seo && seo start`), working with Claude Code, Codex, or any MCP client. Connects agents to real Search Console, Google Analytics, and Bing data, Google algorithm-update dates, and a site crawl, so an agent's answers about traffic come from your own numbers. See [[entities/seo-skill]].
 
 ## Related Concepts
 

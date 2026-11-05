@@ -1,5 +1,24 @@
 # Wiki Log
 
+## [2026-11-05] x-accounts-scan | 6 new posts from 4 accounts — Resin, VLM visual semiotics, SEO Skill
+
+### New pages
+- 🆕 `concepts/resin.md` — ekzhang/Resin, library of building blocks for LLM inference engines (Rust Engine + pluggable kernels + tiered KV-cache storage). 2 posts from @ekzhang1 (Oct 30).
+- 🆕 `concepts/vlm-visual-semiotics.md` — "AI semiotics": red heart steers VLM to recursive code; implicit visual steering + generation–interpretation gap (Tartaglini/Wattenberg/Kim, arXiv:2610.36449). From @emollick (Nov 4).
+- 🆕 `raw/papers/2026-11-05_2610.36449_a-heart-means-recursion-vlm-visual-semiotics.md` — verbatim abstract + findings.
+- 🆕 `entities/seo-skill.md` — Ian Nuttall's open-source SEO MCP+CLI for agent-native teams. From @iannuttall (Nov 5).
+
+### Updated pages
+- ✏️ `entities/eric-zhang.md` — Resin (Key Projects, Timeline, Recent Notes), MagicInk/Bret Victor note.
+- ✏️ `entities/ethan-mollick.md` — Nov 2026 X Activity section (VLM semiotics paper amplification).
+- ✏️ `entities/ian-nuttall.md` — SEO Skill project, Amp endorsement timeline rows.
+- ✏️ `entities/doug-turnbull.md` — AI-Powered Search late-signup (Nov 3) note.
+- 📋 `index.md` — added 3 new pages.
+
+### Skipped
+- @softwaredoug Nov 3 late-signup promo → low standalone value (already covered in doug-turnbull.md; noted briefly).
+- Error: @koylanai — could not resolve user_id (transient).
+
 ## [2026-11-05] skeleton-enrich | No-op run — backlog empty (streak continues since 2026-10-17)
 
 - Whole-tree frontmatter scan: 0 `status: skeleton` pages (only false positive: wiki/log-2026-05-13.md HR-line). 0 `status: stub` entities.

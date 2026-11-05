@@ -5,7 +5,7 @@ aliases: [emollick]
 tags: [person, education, developer-tooling, ai-adoption]
 sources: []
 created: 2026-04-24
-updated: 2026-10-23
+updated: 2026-11-05
 type: entity
 ---
 
@@ -193,7 +193,20 @@ Mollick consistently raises questions about the ethical implications of AI in wo
 - Stanford Graduate School of Business — "Co-Intelligence: An AI Masterclass" (June 2024)
 - Thinkers & Ideas Podcast — "Co-Intelligence with Ethan Mollick" (April 2024)
 
-## Recent X Activity (October 2026)
+## Recent X Activity (November 2026)
+
+- **"AI semiotics" / VLM visual meaning (Nov 4):** amplified **Tartaglini, Wu,
+  Wiedemer, Wattenberg & Kim's** paper *A Heart Means Recursion: Exploring Visual
+  Meaning and Communication in VLMs* (arXiv:2610.36449) as "cool paper [suggesting]
+  that AIs are strongly impacted by visual symbols in ways they do not always
+  recognize in their own chains-of-thought… very different than how a human might
+  interpret them." A red heart can steer a VLM toward recursive code solutions
+  implicitly; models show a generation–interpretation gap in visual communication.
+  See [[concepts/vlm-visual-semiotics]] and
+  [[raw/papers/2026-11-05_2610.36449_a-heart-means-recursion-vlm-visual-semiotics]].
+  Source: [tweet](https://x.com/emollick/status/2118012530215854477).
+
+## Notable X Posts (October 2026)
 
 - **AI peer-review study (Oct 23):** amplified **Gary King & Steven Worthington's**
   *"AI Article Reviews Dominate Human Peer Reviews at Their Best"* — a study of **124

@@ -2,7 +2,7 @@
 title: Doug Turnbull
 type: entity
 created: 2026-04-10
-updated: 2026-10-23
+updated: 2026-11-05
 tags:
   - person
   - developer-tooling
@@ -276,6 +276,12 @@ Maven course co-taught with Hugo Bowne-Anderson: building and reasoning about
 enterprise agents grounded in a team's knowledge base. Enrollment closed late
 Aug 2026 ("It's down to the wire folks :)", Aug 31).
 https://maven.com/softwaredoug/build-enterprise-agents
+
+### AI-Powered Search: late signup (Nov 3, 2026)
+
+Posted a short-time **late-signup** window for the current cohort of **AI-Powered
+Search: Modern Retrieval for Humans & Agents** (his month-long Maven course with
+Trey Grainger, running Nov 3 – Dec 4). https://maven.com/search-school/ai-powered-search
 
 ## Community Shout-outs
 

@@ -2,7 +2,7 @@
 title: Eric Zhang
 type: entity
 created: 2025-11-17 16:10:46
-updated: 2026-09-21 22:50:00
+updated: 2026-11-05 22:40:00
 aliases: [ekzhang, Eric Zhang]
 status: active
 description: "Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab."
@@ -65,6 +65,7 @@ Zhang's personal philosophy, articulated in his "Statement of Purpose," is to **
 | 2025 | Developed **Modal Notebooks** — modern cloud notebooks with real-time collaboration and GPUs |
 | 2025 | Published "ssh-hypervisor: SimCity for VMs" — reflecting on building systems projects with AI tools |
 | 2026 | Active development on opencode-tools ecosystem |
+| Oct–Nov 2026 | Created & iterated on **Resin** — composable library for building LLM inference engines (Rust Engine + pluggable kernels + tiered KV-cache storage) |
 
 ## Core Ideas
 
@@ -140,6 +141,9 @@ The ssh-hypervisor project was his attempt to recapture this ethos — building 
 
 ## Key Projects
 
+### Resin (2026)
+[[concepts/resin]] — an experimental **library of building blocks for building LLM inference engines** ([github.com/ekzhang/resin](https://github.com/ekzhang/resin)). Core is a headless Rust `Engine` (scheduler + KV cache + metrics server); users write model-specific forward-pass kernels in Python for their own hardware. Ships with **tiered prefix-cache storage** (CPU DRAM out of the box; SSD/remote via the same interface) to expand KV/recurrent-state memory beyond VRAM via async fetches. Zhang's team used it to "vibe-code" standalone engines for DeepSeek-V4.1-Flash and GLM-5.3-Flash on Blackwell GPUs in ~12 hours with throughput rivaling vLLM/SGLang. Explicitly *not* production software — SGLang/vLLM for production; Resin for hacking on new models/hardware.
+
 ### bore (11k+ GitHub stars)
 A simple CLI tool for making tunnels to localhost. Written in Rust, ~400 lines, no dependencies. Solves the common problem of exposing local services to the internet without complex configuration.
 
@@ -180,6 +184,19 @@ Photorealistic path tracer for rendering 3D scenes. Won top project out of 100 s
 
 ## Recent Notes
 
+- **Resin: composable inference-engine library (Oct 30 – Nov 4, 2026):** shipped and
+  iterating on [ekzhang/resin](https://github.com/ekzhang/resin), a Rust `Engine`
+  (scheduler + KV cache + metrics) plus pluggable Python kernels — "just code" for
+  building inference engines. Added **tiered KV-cache storage** (expand GPU KV/recurrent
+  state with host CPU memory or other tiers via async fetches; SSD/Mooncake possible via
+  the same lookup/store/load interface).
+  Docs: https://github.com/ekzhang/resin/blob/main/docs/cache-storage.md
+  See [[concepts/resin]].
+- **Web-software taxonomy via Bret Victor (Nov 4, 2026):** while reflecting on web
+  software, resurfaced a 2021 journal split — (1) information software (documents),
+  (2) manipulation software (tools), (3) communication software (chat) — pointing to
+  Bret Victor's *Magic Inks* as the best articulation.
+  https://worrydream.com/MagicInk/MagicInk.pdf
 - **openjev-sglang: open-model Jev clone on SGLang (Sep 20–21, 2026):** shipped
   [ekzhang/openjev-sglang](https://github.com/ekzhang/openjev-sglang), a server
   implementing the TypeSafe/Jev HTTP API with Qwen3.6-35B-A3B on SGLang 0.5.19
