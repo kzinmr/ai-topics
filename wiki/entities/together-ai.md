@@ -2,7 +2,7 @@
 title: "Together AI"
 type: entity
 created: 2026-05-08
-updated: 2026-10-20
+updated: 2026-11-05
 tags:
   - company
   - infrastructure
@@ -21,6 +21,8 @@ sources:
   - raw/articles/together.ai--blog-a-b-test-models-in-production--0e300cb3.md
   - raw/articles/together.ai--blog-deepseek-v4-pro-0813-vs-claude-fable-5-on-deepswe-cost---246b2add.md
   - raw/articles/together.ai--blog-together-post-training--0ce37260.md
+  - raw/articles/together.ai--blog-polymorphic-inference--4919f0f8.md
+  - raw/articles/together.ai--blog-together-compiler-continual-compilation-for-ai-inferenc--c95495b8.md
 ---
 
 # Together AI
@@ -135,6 +137,14 @@ Together launched **Together Post-Training**, a managed service for building cus
 
 Source: raw/articles/together.ai--blog-together-post-training--0ce37260.md
 
+
+## Polymorphic Inference & Together Compiler / TKCC (November 2026)
+
+Together announced a research agenda for the **"Polymorphic Inference"** era — inference that continuously adapts to model-release velocity (80% of OpenRouter traffic goes to models released in the last 3 months), architecture diversity (no two of the top-10 OSS LLMs share an architecture), drifting traffic shapes, and hardware churn — replacing what they retroactively call "Static Inference" (statically tuned vLLM/SGLang/InferenceX configs, kernels tuned on synthetic traffic). Headline artifact: **Together Compiler (TKCC)**, an agentic continual-compilation loop (persistent hot-reloading engines, two-tier fidelity, custom parallelism cost model) claiming up to 2.6× TPS on frontier OSS models, InferenceX batch-1 SOTA (1111 TPS MiniMax M3.1-Flash / 1205 TPS DeepSeek v4.1-Flash), 1.7× over open-source megakernels, and 252× experiment throughput — all vendor-reported. Together notably reverses its own megakernel position: "megakernel fusion is actually not the right design goal for modern Polymorphic Inference." Framed by the company as "the RSI moment for OSS models."
+
+Also previewed: self-serve Continuous Compilation (limited beta), shape-shifting speculative decoding, ThunderAgent Router (ICML 2026 Spotlight), Together Post-Training partnerships (Moonshot, MiniMax), and TogetherLink workload-aware model routing (heirs to Hazy Research's Ask Me Anything and Mixture-of-Agents). Notably, Together served **more tokens than closed-source labs on OpenRouter for the first time in early October 2026**.
+
+See [[concepts/polymorphic-inference]] for full detail. Source: raw/articles/together.ai--blog-polymorphic-inference--4919f0f8.md, raw/articles/together.ai--blog-together-compiler-continual-compilation-for-ai-inferenc--c95495b8.md
 
 ## World's Fastest Speech-to-Text Stack (May 2026)
 

@@ -2,7 +2,7 @@
 title: "Hex Technologies"
 type: entity
 created: 2026-05-08
-updated: 2026-10-28
+updated: 2026-11-05
 tags:
   - company
 aliases: ["Hex", "Hex Tech"]
@@ -13,6 +13,7 @@ sources:
   - raw/articles/2026-08-14_hex-technologies_databench-agentic-analytics-benchmark.md
   - raw/articles/2026-10-28_hex-technologies_hex-new-era.md
   - raw/articles/2026-10-28_hex-technologies_introducing-hex-4-0.md
+  - raw/articles/2026-11-05_hex-technologies_ai-sorcerers-stone.md
   - raw/articles/2026-05-10_hex-technologies_beginners-guide-to-python-notebooks.md
 ---
 
@@ -162,6 +163,25 @@ Concurrent market pressure: users were "vibe coding" dashboards in Cursor, Codex
 **Meta-observation**: the rewrite itself "was greatly accelerated by using agents to write all of the code." The strategic read for this wiki is that **MCP proved insufficient as an agent-integration substrate for data platforms** — Hex's own account is that keyhole MCP plus tool-harness bloat was a reason to rebuild, which is evidence against treating MCP exposure as a finish line. Cross-reference [[concepts/agent-native-cloud]].
 
 Sources: [[raw/articles/2026-10-28_hex-technologies_hex-new-era]], [[raw/articles/2026-10-28_hex-technologies_introducing-hex-4-0]]
+
+## Hero — Self-Improving Agent Observability (November 2026)
+
+"The AI sorcerer's stone" (Deena Sun, summer 2026 intern, updated Nov 4, 2026) describes **Hero** (**He**x **R**ecursive-self-improvement and **O**bservability): an agent that analyzes real production threads from Hex's own agents and rebuilds the Hex agent harness — "an agent in Hex designed to rebuild the agent in Hex." It is an instance of the agentic-observability + autoresearch pattern: a real-time, bottom-up complement to offline evals ("realistic evaluations are hard! … nothing beats actually evaluating the real thing").
+
+**The Hero cycle (3 steps):**
+1. **Analyzer agents** autonomously deep-dive individual agent trajectories from real usage, hunting hard failures (errors, exceptions, crashes) and *soft* failures (agent doesn't do what the user expected).
+2. An **aggregator agent** hierarchically clusters findings — connecting issues across interactions, grouping recurring failures into themes, tying them to root causes (from conflicting tool instructions up to subagent handoff flow).
+3. Each cluster becomes a **triageable call-to-action / PR**; agents collaborate on remediation using the cluster findings as evidence and test cases. The cycle repeats.
+
+The recursion is literal: analyzer and aggregator reuse the same harness and agent-platform code as Hex's production agents, so Hero's improvements are changes to parts of itself — "the code I merged will probably be changed by the very code I merged."
+
+**Negative result worth keeping**: chunking threads into disjoint parts for parallel subagent analysis "wasn't worth the squeeze" — multi-turn Hex trajectories have many causal steps, and error-tracing needs full context over how an agent stumbles *but recovers*. A "knowledge bank of lessons from experiments that didn't work" was maintained as a first-class artifact.
+
+**AI-accelerated engineering velocity (self-reported, summer-over-summer):** 215.9 PRs merged/week (+35%), 105.2K lines written/deleted per week (+133%); per-engineer PR throughput +23% even accounting for team growth; weekly LoC per engineer more than doubled.
+
+The essay's framing — "what is stone and what is sand?" — argues code's ephemerality (accelerated by agents into an "ouroboric cycle" visible within a single internship) shifts research value from artifacts to ideas: anchor weeks around questions/hypotheses, not lines of code. The intern project succeeding means its current form shouldn't be recognizable in six months.
+
+Source: raw/articles/2026-11-05_hex-technologies_ai-sorcerers-stone.md (https://hex.tech/blog/ai-sorcerers-stone/)
 
 ## Related
 - [[entities/anthropic]] — customer using Hex for data analytics

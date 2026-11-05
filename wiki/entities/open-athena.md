@@ -4,7 +4,7 @@ description: Nonprofit accelerating academia with frontier AI capabilities; deve
 url: https://openathena.ai/
 type: entity
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-11-05
 aliases:
   - OpenAthena
   - MARIN
@@ -16,6 +16,8 @@ tags:
 sources:
   - raw/articles/2026-04-14_openathena_delphi-scaling-laws.md
   - https://openathena.ai/blog/delphi/
+  - raw/articles/2026-11-03_openathena_ai_there-is-no-posttraining-data-commons.md
+  - https://openathena.ai/blog/there-is-no-posttraining-data-commons/
 related:
   - concepts/delphi-scaling-laws
   - concepts/scaling-laws
@@ -47,6 +49,12 @@ Key technical contributions from the Delphi work:
 - **AdamH optimizer** (Adam with Hyperball) — constrains projection weights to stay on their initialization Frobenius-norm sphere, removing weight decay from the hyperparameter search; transfers hyperparameters across width and depth better than Adam (developed in Marin by Kaiyue)
 
 See [[concepts/delphi-scaling-laws]] for the full technical analysis.
+
+### "There is no posttraining data commons" (November 2026)
+
+Blog post by **David Hall** (Oct/Nov 2026): the pretraining era got lucky because humanity had already built a *document* commons (Wikipedia, Common Crawl's ~10 PB, Stack Exchange, arXiv, Gutenberg, open-source code — GPT-3 was ~60% Common Crawl-derived). Posttraining has no equivalent because **pretraining consumes documents while posttraining consumes tasks**: human tasks are situated, adaptive, and ephemeral (an oral-story event), whereas RL tasks must be frozen, schematized, and repeatable — requiring a preserved *world*, *intent*, *tools*, and a *grader*. Software engineering is the one domain where humans already "write tasks down" durably, and deterministic replay makes computers ideal RL environments — "no wonder that agentic AI came for software first." Cloudflare reports over half of crawler traffic is now for AI. Argues modern open LLMs (Nemotron, Open Athena's own) still depend on the commons for most pretraining data, and that durable *action* infrastructure is the missing build-out.
+
+Ingested by the trending-topics pipeline into [[concepts/post-training/post-training]]; raw at `raw/articles/2026-11-03_openathena_ai_there-is-no-posttraining-data-commons.md`.
 
 ## Related Concepts
 

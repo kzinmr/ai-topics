@@ -1,6 +1,21 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-11-05] watchdog | auto-fix: commit orphaned wiki-ingest output; register 2 new concepts
+
+- Committed untracked output from the 11-05 wiki-ingest crash: 2 new concept pages (`concepts/polymorphic-inference`, `concepts/spacex-worlds-biggest-ai-cloud`) + 6 page updates (together-ai, hex-technologies, open-athena, megakernel-inference, recursive-self-improvement, post-training/rl-environments) + their index.md registrations. These were authored before the "Response truncated due to output length limit" crash but never committed.
+- Added missing log entry for `concepts/polymorphic-inference` (spacex page was already logged).
+- Index header count fixed: Concepts 2293 -> 2295 (recomputed from index lines). validate_index.py clean (3420 lines). Corruption scan all zero (pipe/line-number/triple-bracket/space-prefix/double-pipe).
+- Raw articles (untracked: blog + newsletter raw from 11-03/11-05 triage) also committed per watchdog recipe (orphan `??` in git => upstream skipped commit).
+
+### Pipeline failures (report-only, 3rd consecutive occurrence of same classes)
+- blog-wiki-ingest, newsletter-wiki-ingest: `RuntimeError: Response truncated due to output length limit` (crash AFTER writing pages — work recoverable, now committed).
+- dreaming-wiki-ingest: `HTTP 503: Local LLM server is busy; Hermes should fall back to the external provider.` (fallback did not engage).
+- x-accounts-scan 26h "stale": FALSE POSITIVE — every-2-days schedule, last_status=ok, scan_state cursor=47 updated 11-03 22:30. Next run 11-05 22:30 UTC.
+- Needs human: recurring truncation + 503-fallback failure in ingest jobs (consider raising max output tokens or forcing external provider on 503).
+
+---
+
 ## [2026-11-05] hot-post | 09:30 morning — agent-era stack choice + org-scale skill sharing
 
 - Delivered to Discord hot-post thread (Japanese delivery, per report policy). Archive: `inbox/trending-reports/hot-post-2026-11-05-0930.md`.

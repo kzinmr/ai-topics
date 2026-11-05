@@ -112,6 +112,10 @@ Counter-evidence arrived the same week: **Cursor open-sourced Mixture-of-Kittens
 
 The debate's resolution: hand-fused **forward-pass inference kernels** (Lucebox-style, single-model) are losing to modular kernels + hardware-level dependency triggers, while **training-side MoE megakernels** (MoK) remain high-value. See also the stub [[concepts/megakernel-for-llm-inference|megakernel-for-llm-inference]] (redirects here).
 
+### Update (Nov 2026): Together Compiler beats megakernels at their own game
+
+Together AI — whose team wrote the original megakernels — formally retired the design goal: "megakernel fusion is actually not the right design goal for modern Polymorphic Inference." Its agentic **Together Compiler (TKCC)** claims **1.7× TPS over available open-source megakernels** on the canonical Llama 1B batch-1 workload, within 24 hours of automated search. See [[concepts/polymorphic-inference]].
+
 ## Sources
 
 - [Megakernel blog post](https://www.lucebox.com/blog/megakernel) — Lucebox, April 2026

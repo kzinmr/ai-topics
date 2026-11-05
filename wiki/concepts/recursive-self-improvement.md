@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-09-12
+updated: 2026-11-05
 type: concept
 tags:
   - concept
@@ -19,6 +19,8 @@ tags:
 sources:
   - raw/articles/2026-07-04_lilianweng-harness-engineering-self-improvement.md
   - raw/newsletters/2026-09-08-chip-huyen-used-1-409-agents-on-one-project.md
+  - raw/articles/together.ai--blog-together-compiler-continual-compilation-for-ai-inferenc--c95495b8.md
+  - raw/articles/2026-11-05_hex-technologies_ai-sorcerers-stone.md
   - https://lilianweng.github.io/posts/2026-07-04-harness/
   - raw/newsletters/2026-07-31-ainews-gpt-5-6-price-cut-by-20-80-cost-of-gpt-5-4-intelligence-dropped-13x-in-4-.md
   - raw/articles/2026-06-10_semianalysis_scaling-rl-environments-reward-hacking.md
@@ -406,6 +408,15 @@ Key positions:
 - The paper connects RSI research to **practical industry systems** and preliminary empirical evidence (AutoResearch-clone ecosystems, self-optimizing models), positioning levels 1–2 as already industrialized and level 3 (experience acquisition) as the live bottleneck — consistent with the environment/reward-scaling view in [[entities/semianalysis|SemiAnalysis]]'s RL-environment analysis.
 
 The title's framing — the *last* AI built by humans — encodes the authors' claim that level 5 is reachable engineering, not speculation; treat as one survey's judgment (`confidence: medium` for the trajectory claims). Raw: `raw/articles/arxiv-2609-11873-last-ai-built-by-humans.txt`.
+
+## Production RSI Adjacencies (November 2026)
+
+Two industry systems extend the RSI taxonomy beyond agent scaffolding into **production systems code**:
+
+- **Together Compiler (TKCC)** — Together AI frames agentic continual compilation of its own inference engines as "the RSI moment for OSS models": agents serving models on a stack optimize that same stack, bottlenecked by experiment throughput (252× via persistent hot-reloading engines). This is RSI over *systems/kernel code*, an analogue of harness self-improvement one layer down. See [[concepts/polymorphic-inference]].
+- **Hero (Hex)** — an agent-observability + autoresearch loop where analyzer/aggregator agents mine production agent trajectories and file remediation PRs against the same harness code they run on; the intern who built it expects its own code to be rewritten by the system it improved. Includes a documented negative result (thread-chunking for parallel subagent analysis fails on causal multi-turn trajectories). See [[entities/hex-technologies]].
+
+Both are Level-1/2 instances (human-designed improvement loops, agent-chosen tactics) with the same caution as Self-Harness: editable surfaces need permission controls outside the improvement loop.
 
 ## Related Concepts
 

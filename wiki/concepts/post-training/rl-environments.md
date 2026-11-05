@@ -2,7 +2,7 @@
 title: "RL Environments (RLEF)"
 type: concept
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-11-05
 tags:
   - concept
   - reinforcement-learning
@@ -76,6 +76,8 @@ SemiAnalysis sees **environment compute** as a new scaling area distinct from RL
 ## Data & Sample Efficiency Interplay
 
 Environment quality and RL data quality are coupled: Qwen's "4,000 query-answer pairs" claim hid strict curation (never used in cold start, maximally challenging, broad subdomain coverage, within capability range) plus extensive filtering inference. Labs recruit STEM PhDs to write questions and rubrics for LLM judges (ScaleAI, Mercor, Handshake). RL is sample-efficient in data but **sample-inefficient in compute** — and environments are where much of that compute goes.
+
+**"There is no posttraining data commons"** (David Hall, Open Athena, Nov 2026) gives this section its thesis form: pretraining consumed a ready-made *document* commons; posttraining consumes *tasks*, and tasks are situated and ephemeral — encoding one for RL freezes it (world + intent + tools + grader). Humans have millennia of institutions for durable documents but almost none for durable *action*; software is the exception, which is why agentic RL started there. See [[entities/open-athena]].
 
 ## Related Concepts
 

@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3368
-> Last updated: 2026-11-02
+> Total pages: 3375
+> Last updated: 2026-11-05
 
-## Entities (960 pages)
+## Entities (961 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -394,7 +394,7 @@
 - [[entities/hermes-4]] — Hermes 4
 - [[entities/hermes-agent]] — Hermes Agent Architecture
 - [[entities/hetzner-ai]] — Hetzner AI — German cloud provider entering the LLM inference market with competitive GPU-backed endpoints and European AI sovereignty positioning
-- [[entities/hex-technologies]] — Hex Technologies; agentic notebooks, conversational analytics, DataBench benchmark (Aug 2026); Notebook Agent prompting guide (Sep 2025); Python Notebooks beginner's guide (2022)
+- [[entities/hex-technologies]] — Hex Technologies; agentic notebooks, conversational analytics, DataBench benchmark (Aug 2026); Notebook Agent prompting guide (Sep 2025); Hex 4.0 rewrite (Oct 2026); Hero self-improving agent observability (Nov 2026)
 - [[entities/hidream-o1-image]] — HiDream-O1-Image
 - [[entities/hilary-mason]] — Hilary Mason
 - [[entities/hillel-wayne]] — Hillel Wayne
@@ -652,7 +652,7 @@
 - [[entities/omri-weinstein]] — Omri Weinstein
 - [[entities/omnara]] — Omnara — open-source managed agent platform company/project (Apache 2.0); Show HN Oct 2026
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
-- [[entities/open-athena]] — Open Athena — nonprofit accelerating academia with frontier AI capabilities; developer of the Delphi open scaling suite (300× extrapolation, AdamH optimizer)
+- [[entities/open-athena]] — Open Athena — nonprofit accelerating academia with frontier AI capabilities; Delphi open scaling suite (300× extrapolation, AdamH); David Hall's "no posttraining data commons" thesis (Nov 2026)
 - [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot; ChatGPT for Teachers expansion to 100+ K–12 orgs/30 states + 16-state National Data Privacy Agreement (Aug 26)
 - [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition
 - [[entities/openai-codex]] — OpenAI Codex; ChatGPT Work architecture deep-dive (Aug 2026) + Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24)
@@ -885,7 +885,7 @@
 - [[entities/tim-sh]] — Tim Sherratt — historian, hacker, GLAM Workbench creator
 - [[entities/tim-sherratt]] — Tim Sherratt (redirect → [[entities/tim-sh]])
 - [[entities/tobi-lutke]] — Tobi Lütke
-- [[entities/together-ai]] — Together AI; added Together Post-Training launch (Oct 2026): customer-defined RL/SFT training loop on dedicated Model Resources, Trainer+Generator sessions, async RL, LoRA/full-weight, GRPO-CISPO-DPPO + custom gradient losses, multi-LoRA dedicated serving with FP4 merged inference, per-GPU-minute billing, one-line OpenAI Tinker migration
+- [[entities/together-ai]] — Together AI; Together Post-Training launch (Oct 2026); Polymorphic Inference research agenda + Together Compiler/TKCC agentic continual compilation with claimed InferenceX SOTA (Nov 2026)
 - [[entities/tom-aarsen]] — Tom Aarsen
 - [[entities/tom-renner]] — Tom Renner
 - [[entities/tomasz-tunguz]] — Tomasz Tunguz
@@ -969,7 +969,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2293 pages)
+## Concepts (2295 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
@@ -2720,6 +2720,7 @@
 - [[concepts/political-bias-ai-criticism]] — Political Bias Analysis of AI Criticism
 - [[concepts/polymarket-trading-agents]] — AI agents used for automated trading on Polymarket prediction markets — weather, crypto, sports. Self-learning bots t...
 - [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning
+- [[concepts/polymorphic-inference]] — Polymorphic Inference & Together Compiler (TKCC) — Together AI's agentic continual-compilation loop for inference engines; adaptive serving era, InferenceX SOTA claims (vendor-reported), megakernel retirement, "RSI moment for OSS models" (Nov 2026)
 - [[concepts/posse-pattern]] — posse-pattern
 - [[concepts/post-training-distributional-view]] — Post-Training Distributional View
 - [[concepts/post-training/accelerate]] — Hugging Face Accelerate
@@ -2860,7 +2861,7 @@
 - [[concepts/recommendation-systems]] — recommendation-systems
 - [[concepts/recurse-center]] — Recurse Center
 - [[concepts/recursive-language-models]] — Recursive Language Models → Redirect
-- [[concepts/recursive-self-improvement]] — Recursive Self-Improvement (RSI) — AI improving its own machinery via harness engineering: self-improving harnesses, evolutionary search, auto-research workflows (Weng, Jul 2026)
+- [[concepts/recursive-self-improvement]] — Recursive Self-Improvement (RSI) — AI improving its own machinery via harness engineering: self-improving harnesses, evolutionary search, auto-research workflows (Weng, Jul 2026); Nov 2026 production adjacencies (Together Compiler TKCC, Hex Hero)
 - [[concepts/red-green-tdd]] — Moved to concepts/harness-engineering/agentic-workflows/red-green-tdd.md
 - [[concepts/redis]] — Redis
 - [[concepts/reduce-offload-isolate]] — Reduce Offload Isolate
@@ -3055,6 +3056,7 @@
 - [[concepts/sp500-ai-exclusion]] — S&P 500 AI Company Exclusion
 - [[concepts/space-gpus]] — Space GPUs
 - [[concepts/spacex-cursor-acquisition]] — SpaceX Acquires Cursor — $60B Coding Agent Acquisition
+- [[concepts/spacex-worlds-biggest-ai-cloud]] — SpaceX as World's Biggest AI Cloud — SemiAnalysis Nov 2026: ~13GW 2027 forecast, 3.6GW under construction, MiniHard/Macrohard/Project SPAM build-speed records, Starbase datacenters, 6GWh BESS power orchestration (paywalled preview; confidence medium)
 - [[concepts/sparse-signal-loop]] — Sparse Signal Loop
 - [[concepts/spec-driven-development]] — Spec-Driven Development; legacy modernization application with rule traceability and behavioral parity
 - [[concepts/specification-based-test-design]] — Specification-based Test Design — contract-derived partitions, boundaries, structural evidence and mutation limits
