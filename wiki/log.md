@@ -1,6 +1,14 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-11-05] hot-post | 09:30 morning — agent-era stack choice + org-scale skill sharing
+
+- Delivered to Discord hot-post thread (Japanese delivery, per report policy). Archive: `inbox/trending-reports/hot-post-2026-11-05-0930.md`.
+- Angle: "the evaluation axis shifted from human preference to agent convergence cost" across three nodes.
+- Sources read: `concepts/ai-cost-of-js-frameworks` (Astro win / Angular worst, 378pts, primary URL 404 -> confidence medium), `concepts/agentic-engineering/pm-os-shared-agent-skills` (Figma PM OS, 31 skills, 60-70 PMs, no telemetry), `concepts/sre-deskilling` (605pts), `concepts/cognitive-surrender`, `concepts/token-economics`, `concepts/agent-skills`.
+- Quality gate: T1 slop grep -> NO_SLOP_FOUND (after removing one banned connective); alias-stripped wikilink check -> 0 MISS; typo check -> NO_TYPO.
+- Dedup: no overlap with 11-04 09:30 (weight-space vs Goedecke), 11-04 21:30 (Anthropic S-1), 11-05 01:30 (posttraining data commons).
+
 ## [2026-11-04] skeleton-enrich-daily: backlog empty (no action)
 
 - Whole-tree frontmatter scan: 0 `status: skeleton` pages. Streak continues (10-17 → 11-03).
