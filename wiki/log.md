@@ -66,6 +66,13 @@
 
 ---
 
+
+## [2026-11-06] weekly-graph-analysis | wiki/queries/wiki-graph-analysis-weekly-2026-11-06.md + annotations
+- Ran `scripts/_weekly_graph_report.py` (3,404 pages) + `deep_link_audit.py` ground truth (457 true orphans >=20L, 2,598 true broken links).
+- Adjudicated all 17 dup groups: 11 already redirect-stubbed, 2 false positives (_index pair, deliberate-coder/deliberatecoder different people), 4 legit namespace splits. Zero merges.
+- 2 cross-ref fixes queued: concepts/qwen -> entities/qwen, concepts/agent-harnesses -> comparisons/agent-harnesses.
+- Missing-page creation queue (>=8 refs, nothing on disk): entities/cursor, concepts/claude-opus-4-7, entities/ben-clavie, concepts/enterprise-ai, concepts/ai-governance, concepts/ai-adoption, concepts/agent-harness-comparison (redirect candidate).
+- Index: replaced dangling 2026-10-30 report/annotations entries with today's. Tag violations: report says 1, tag_audit.py = 0 (false positive).
 _Log of all wiki changes. Newest entries at top._
 ## [2026-11-05] watchdog | auto-fix: commit orphaned wiki-ingest output; register 2 new concepts
 
