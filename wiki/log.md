@@ -1,5 +1,20 @@
 # Wiki Log
 
+## [2026-11-06] active-crawl | 2 new benchmark concepts + Kimi K3 official-spec enrichment
+
+**Discovery**: HN/wikilink-gap sweep vs `hot-topics.yaml` covered slugs + index reconciliation. Rejected candidates (already covered today/this week): Dwarkesh Clocktower (blog-wiki-ingest this morning), GPT-6 Cyber (openai.md Nov 2026 section), megakernel/TKCC self-refutation (concepts/polymorphic-inference, trending-topics 11-05), Kimi K3.1 Pro (kimi-k3.md Oct 23 section). "OpenAI torx" from the crawl brief was **not ingested** — zero verifiable sources found anywhere (openai.com page 403 with no Wayback snapshot, no wiki/newsletter mention, only false-positive substring hits); flagged for re-check next run rather than synthesizing content.
+
+**New pages**:
+- 🆕 `concepts/ai-benchmarks/alphaeval.md` — AlphaEval (arXiv:2604.12162, Apr 2026, Pengrui Lu / Pengfei Liu et al.): 94 production tasks from 7 companies deploying agents, 6 O*NET domains; product-level (Claude Code/Codex as commercial systems) multi-paradigm evaluation + requirement-to-benchmark construction framework.
+- 🆕 `concepts/ai-benchmarks/swe-marathon.md` — long-horizon engineering benchmark with GPU performance gates; no model above 42% (Kimi K3 42.0 leads Opus 4.8 40.0 / GPT-5.6 Sol 39.0; GPT-5.5 14.0, GLM-5.2 13.0 collapse); biggest separator in the K3 launch table; origin/team still undocumented (flagged).
+
+**Updated pages**:
+- ✏️ `concepts/kimi-k3.md` — new "Official README specs" section from the MoonshotAI/Kimi-K3 GitHub README (Wayback Oct 12 2026): full architecture sheet (93 layers, 69 KDA + 24 Gated MLA, 896/16+2 MoE, MoonViT-V2 401M, 1M ctx), **official 104B activated params supersedes the ~50B community estimate** (kept as contested/superseded per AGENTS.md), MXFP4/MXFP8 QAT from SFT, 2.5× scaling efficiency vs K2, launch-table headline numbers, preserved-thinking usage contract.
+- 📋 `index.md` — 2 new entries + refreshed kimi-k3 one-liner; counts 3376→3378, concepts 2295→2297.
+- 📋 `config/hot-topics.yaml` — restored to HEAD (previous run's `agent-as-a-product` entry was left uncommitted and its page never existed — reverted to avoid phantom reference), added new slug `production-agent-evals` (deepdive) covering AlphaEval + SWE-Marathon + GDPval/DayJob adjacency.
+
+**Raw saved**: `raw/articles/2026-11-06_moonshotai_kimi-k3-github-readme.md` (GitHub README via Wayback), `raw/papers/2026-11-06_2604.12162_alphaeval-evaluating-agents-in-production.md` (arXiv abstract page via Wayback). Note: dwarkesh Clocktower raw was accidentally overwritten mid-run and immediately restored via `git checkout HEAD --`.
+
 ## [2026-11-06] ingest | blog-ingest: 30 new, 20 saved (13 by script + 7 recovered by agent; run 20261106T100025Z)
 
 - **Recovered unsaved (7)**: dwarkesh.com Clocktower benchmark (direct curl 200); OpenAI GPT-6 Cyber + National Community Compact (Wayback `<article>` extraction, direct 403); OpenAI Australian-universities / Cult.fit Codex / Merge / Flipsnack (RSS description only — 403 + no Wayback snapshot). Checkpoint latest.json + archive updated to 20 saved / 0 unsaved with `agent_recovery` note.

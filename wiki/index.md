@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3376
+> Total pages: 3378
 > Last updated: 2026-11-06
 
 ## Entities (961 pages)
@@ -970,7 +970,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2295 pages)
+## Concepts (2297 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
@@ -1206,6 +1206,7 @@
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
 - [[concepts/ai-benchmarks/aa-briefcase]] — AA-Briefcase — Agentic knowledge work benchmark (Artificial Analysis); 4 multi-week scenarios, 91 tasks, 3 grading dimensions; Ethan Mollick reports rapid frontier gains + open-weights gap (June 29)
 - [[concepts/ai-benchmarks/agent-arena]] — Agent Arena (Causal Agent Evaluation)
+- [[concepts/ai-benchmarks/alphaeval]] — AlphaEval (arXiv:2604.12162) — production-grounded 94-task benchmark from 7 companies deploying agents; product-level (Claude Code/Codex) multi-paradigm evaluation + requirement-to-benchmark construction framework (Nov 2026)
 - [[concepts/ai-benchmarks/agent-memory-bench]] — Agent Memory Benchmark
 - [[concepts/ai-benchmarks/agent-security-bench]] — Agent Security Bench (ASB)
 - [[concepts/ai-benchmarks/agent-survival-benchmark]] — Agent Survival Benchmark
@@ -1306,6 +1307,7 @@
 - [[concepts/ai-benchmarks/nanogpt-speedrun]] — NanoGPT Speedrun Frontier (Prime Intellect, Aug 2026) — 153 autonomous runs / 18 frontier models; harness×model leaderboard on a continuous-time optimization task; Fable 5 81.7% gap closure vs Opus 5 53.6% on 4.4× fewer tokens than Fable
 - [[concepts/brazil-court-prompt-injection-sanction]] — Brazilian Court Prompt-Injection Sanction — first judicial ruling fining lawyers (US$16k) for white-on-white injection hidden in a petition reviewed by court AI Galileu (Nov 1)
 - [[concepts/ai-benchmarks/swe-lancer]] — SWE-Lancer
+- [[concepts/ai-benchmarks/swe-marathon]] — SWE-Marathon — long-horizon engineering benchmark with GPU performance gates; no model above 42% (Kimi K3 leads, Moonshot-reported); biggest separator in the K3 launch table (Nov 2026)
 - [[concepts/ai-benchmarks/swe-rebench]] — SWE-rebench
 - [[concepts/ai-benchmarks/tau-bench]] — τ-bench
 - [[concepts/ai-benchmarks/tau-knowledge]] — τ-Knowledge
@@ -2316,7 +2318,7 @@
 - [[concepts/kimi-k2-5]] — kimi-k2-5
 - [[concepts/kimi-k2-6]] — Moonshot Kimi K2.6
 - [[concepts/kimi-k2-7-code]] — Kimi K2.7-Code
-- [[concepts/kimi-k3]] — Moonshot Kimi K3 (2.8T MoE, 1M ctx, local inference via Unsloth GGUF); K3.1 Pro API (Oct 23, AA score 55, open weights promised Nov 4)
+- [[concepts/kimi-k3]] — Moonshot Kimi K3 (2.8T MoE / 104B active official, 1M ctx, 69 KDA + 24 Gated MLA, MXFP4 QAT, MoonViT-V2; SWE-Marathon 42.0 / FrontierSWE 81.2 leads); K3.1 Pro API (Oct 23, AA score 55, open weights promised Nov 4)
 - [[concepts/kimi-k2-thinking]] — kimi-k2-thinking
 - [[concepts/kiran-random-labs]] — Kiran (Random Labs)
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge Graph Memory for AI Agents

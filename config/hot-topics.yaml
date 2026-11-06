@@ -406,3 +406,22 @@ topics:
     variants of GDPval-style suites and recovery-focused training.
   added: '2026-10-02'
   last_crawled: '2026-10-02'
+- slug: production-agent-evals
+  title: Production-Grounded Agent Evaluation
+  crawl_policy: deepdive
+  priority: medium
+  search_hints:
+  - production-grounded agent benchmark
+  - product-level agent evaluation company deployment
+  - requirement-to-benchmark construction framework
+  - long-horizon engineering benchmark performance gates
+  wiki_pages:
+  - concepts/ai-benchmarks/alphaeval
+  - concepts/ai-benchmarks/swe-marathon
+  - concepts/ai-benchmarks/gdpval
+  - concepts/dayjob-benchmark
+  notes: "2026-11-06 active-crawl で新規作成。AlphaEval（94 tasks / 7社実運用由来・product-level評価）と\
+    SWE-Marathon（GPU性能ゲート、最高42%未飽和）が核。追跡: AlphaEval リーダーボード活性・7社実名開示、SWE-Marathon\
+    公式v1.1 leaderboard と独立再現、両ベンチの frontier 飽和速度"
+  added: '2026-11-06'
+  last_crawled: '2026-11-06'

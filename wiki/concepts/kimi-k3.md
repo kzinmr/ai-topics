@@ -595,6 +595,19 @@ Sarah Chieng (@MilksandMatcha), answering a question about how [[entities/cerebr
 
 *Caveat*: this is a participant-side explanation in a reply thread, not an official Cerebras or Moonshot doc. The "F16→F4" characterization comes from the user asking, not from either company. See §Cerebras wafer-scale serving below.
 
+## Official README specs (MoonshotAI/Kimi-K3, Oct 2026 snapshot)
+
+The official model repository README (Wayback snapshot Oct 12, 2026) pins down the full spec sheet and a benchmark table versus Claude Fable 5 / GPT-5.6 Sol / Claude Opus 4.8 / GPT-5.5 / GLM-5.2 (all at max reasoning effort):
+
+- **Architecture detail**: 93 layers (1 dense), attention composition **69 KDA + 24 Gated MLA**, attention hidden dim 7168, 96 heads, Latent MoE dim 3584, expert hidden dim 3072, **896 experts / 16 selected + 2 shared**, 160K vocabulary, SiTU-GLU activation, **MoonViT-V2 vision encoder (401M params)**, 1,048,576-token context.
+- **Activated parameters: 104B** — note: this official figure supersedes the "~50B active" estimate in the spec table above (early community estimate; kept as a contested/superseded datapoint).
+- **Native MXFP4 quantization**: quantization-aware training from the SFT stage onward — MXFP4 weights / MXFP8 activations for broad hardware compatibility (consistent with the HF 4-bit checkpoint provenance noted below).
+- **Scaling claim**: Stable LatentMoE + KDA + AttnRes yield ~**2.5× overall scaling efficiency over Kimi K2**.
+- **Headline launch-table results vs frontier**: SWE-Marathon **42.0** (best; vs Fable 5 35.0 with 35% fallbacks — see [[concepts/ai-benchmarks/swe-marathon]]), FrontierSWE **81.2** (vs Fable 5 86.6, GPT-5.6 Sol 71.3), Terminal-Bench 2.1 88.3, BrowseComp **91.2** (90.4 with full 1M window and no context management — compaction triggered at 300K), MCPMark-Verified **94.5**, GPQA Diamond 93.5, GDPval-AA v2 1686 Elo (Fable 5 1747), Agents' Last Exam 28.3 (GPT-5.6 Sol 29.6), τ³-Banking **33.4** (best), Harvey Lab-AA **94.6** (best).
+- **Usage contract**: thinking always enabled (returns `reasoning_content`), `reasoning_effort` ∈ low/high/max (default max), **preserved-thinking mode** requires passing complete assistant messages (including `reasoning_content` and `tool_calls`) back verbatim; recommended engines vLLM / SGLang / TokenSpeed; Kimi Code CLI is the reference agent framework.
+
+Source: raw `raw/articles/2026-11-06_moonshotai_kimi-k3-github-readme.md`.
+
 ## Sources added
 
 - raw `raw/articles/2026-10-22_cerebras_trillion-parameter-deployment.md` — Cerebras deployment walkthrough (Oct 22 2026)
