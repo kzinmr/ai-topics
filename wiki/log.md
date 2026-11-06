@@ -1,4 +1,13 @@
 # Wiki Log
+## [2026-11-06] health-fix | daily auto-fix scan — all clean, no changes
+- wiki_health.py --json: 0 page-name violations, 0 orphans (entities 961 / concepts 2313 / comparisons 35 / L2 3309)
+- index.md independently verified clean: pipe_prefix=0, line_number=0, triple_bracket=0, space_prefix=0, double_pipe=0 (3433 lines); validate_index.py exit 0
+- L2 pipe/triple-bracket scan across entities/+concepts/: 0 corrupted files
+- No fixes required; no commit made. Uncommitted today's raw articles (10 files, 21:30 hot-post batch) left to their owning pipeline.
+- Watched: blog-wiki-ingest / newsletter chain failures from 12:00 UTC watchdog report remain transient-infra class (503 local LLM busy), no wiki impact.
+
+---
+
 ## [2026-11-06] watchdog | auto-fix: swe-bench typo links + cross-ref gaps
 - Fixed 11 malformed wikilinks `[[concepts/ai-benchmarks/swe-bench\|SWE-bench]]` (stray backslash) across 9 ai-benchmarks pages (gta-benchmark, terminal-bench, swe-lancer, multi-swe-bench, spider-2 x2, swe-rebench x2, appworld, swe-bench-pro, swe-gym) — from weekly graph analysis 2026-11-06 action item #4
 - Added missing cross-refs (weekly analysis action item #2): concepts/qwen -> [[entities/qwen]], concepts/agent-harnesses -> [[comparisons/agent-harnesses]]; bumped updated: on both
