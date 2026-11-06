@@ -1,5 +1,9 @@
 # Wiki Log
 
+## [2026-11-06] skeleton-enrich-daily | backlog empty — no action
+
+- Whole-tree frontmatter scan: 0 `status: skeleton` entity markers (only log-prose hit in log-2026-05-13.md). 0 stub entities. Recent entity commits (trending-topics, blog-ingest, x-accounts-scan, watchdog) all fully enriched. Snapshot: [[queries/2026-11-06-skeleton-enrich-empty]].
+
 ## [2026-11-06] dreaming group | Pattern E scan — Takes=3 (carried), Refs=5 (4 new + 1 carried), Skips=4
 
 - Checkpoint `total_articles: 0` with `recent_raw_articles: 232` → Pattern E filesystem scan + archive-index absence probe (decisive, 3,045 URLs known; 103 recent never-archived).
