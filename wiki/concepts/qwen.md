@@ -1,7 +1,7 @@
 ---
 title: Qwen Model Family
 created: 2026-04-25
-updated: 2026-06-09
+updated: 2026-11-06
 type: concept
 tags:
   - model
@@ -78,6 +78,7 @@ Qwen3.7 Max represents Alibaba's frontier push. The 56.6 AA Intelligence Index s
 - **API**: Qwen Studio, Alibaba Cloud Model Studio
 
 ## Related Pages
+- [[entities/qwen]] — Qwen (entity page: org/team facts)
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B deep dive
 - [[entities/alibaba]] — Alibaba (parent company)
 - [[concepts/mixture-of-experts]] — MoE architecture

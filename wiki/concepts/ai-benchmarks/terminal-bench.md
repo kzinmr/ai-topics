@@ -80,7 +80,7 @@ OpenAI, Claude Code line = Anthropic + open-weight ports; see
 
 | Benchmark | Relationship |
 |-----------|-------------|
-| [[concepts/ai-benchmarks/swe-bench\|SWE-bench]] | Terminal-Bench tests CLI skills; SWE-bench tests code patching |
+| [[concepts/ai-benchmarks/swe-bench|SWE-bench]] | Terminal-Bench tests CLI skills; SWE-bench tests code patching |
 | [[concepts/ai-benchmarks/appworld\|AppWorld]] | Both provide interactive environments — CLI vs. app APIs |
 | [[concepts/ai-benchmarks/gta-benchmark\|GTA]] | Both evaluate agent tool use in realistic settings |
 | [[concepts/ai-benchmarks/swe-gym\|SWE-Gym]] | Both use Docker-based interactive environments |

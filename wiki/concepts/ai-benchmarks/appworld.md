@@ -54,7 +54,7 @@ AppWorld evaluates:
 
 | Benchmark | Relationship |
 |-----------|-------------|
-| [[concepts/ai-benchmarks/swe-bench\|SWE-bench]] | AppWorld focuses on API interaction rather than code patching |
+| [[concepts/ai-benchmarks/swe-bench|SWE-bench]] | AppWorld focuses on API interaction rather than code patching |
 | [[concepts/ai-benchmarks/terminal-bench\|Terminal-Bench]] | Both test agents in interactive, realistic environments |
 | [[concepts/ai-benchmarks/gta-benchmark\|GTA]] | Both evaluate agent tool use and API interaction |
 | [[concepts/ai-benchmarks/swe-lancer\|SWE-Lancer]] | Both test real-world task completion beyond simple code fixes |

@@ -53,7 +53,7 @@ The benchmark's central question: *Can AI agents earn meaningful income from rea
 
 | Benchmark | Relationship |
 |-----------|-------------|
-| [[concepts/ai-benchmarks/swe-bench\|SWE-bench]] | SWE-Lancer extends beyond SWE-bench's bug-fixing to full freelance tasks |
+| [[concepts/ai-benchmarks/swe-bench|SWE-bench]] | SWE-Lancer extends beyond SWE-bench's bug-fixing to full freelance tasks |
 | [[concepts/ai-benchmarks/swe-gym\|SWE-Gym]] | Complementary training environment for SWE agent development |
 | [[concepts/ai-benchmarks/swe-bench-pro\|SWE-bench Pro]] | Both target professional-grade SWE evaluation |
 | [[concepts/ai-benchmarks/appworld\|AppWorld]] | Both evaluate agents on realistic, multi-step tasks |

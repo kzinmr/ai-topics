@@ -53,7 +53,7 @@ Multi-SWE-bench measures:
 
 | Benchmark | Relationship |
 |-----------|-------------|
-| [[concepts/ai-benchmarks/swe-bench\|SWE-bench]] | Multi-SWE-bench extends SWE-bench to multiple languages |
+| [[concepts/ai-benchmarks/swe-bench|SWE-bench]] | Multi-SWE-bench extends SWE-bench to multiple languages |
 | [[concepts/ai-benchmarks/aider-polyglot\|Aider Polyglot]] | Both evaluate multi-language coding capabilities |
 | [[concepts/ai-benchmarks/livecodebench\|LiveCodeBench]] | Both provide diverse-language coding evaluation |
 | [[concepts/ai-benchmarks/swe-rebench\|SWE-rebench]] | Both improve upon the SWE-bench foundation |

@@ -51,10 +51,10 @@ SWE-rebench measures the same core capability as SWE-bench — an agent's abilit
 
 | Benchmark | Relationship |
 |-----------|-------------|
-| [[concepts/ai-benchmarks/swe-bench\|SWE-bench]] | SWE-rebench is a direct refresh and improvement of SWE-bench |
+| [[concepts/ai-benchmarks/swe-bench|SWE-bench]] | SWE-rebench is a direct refresh and improvement of SWE-bench |
 | [[concepts/ai-benchmarks/swe-gym\|SWE-Gym]] | Complementary — SWE-Gym provides training while SWE-rebench improves evaluation |
 | [[concepts/ai-benchmarks/swe-bench-pro\|SWE-bench Pro]] | Both aim to improve upon vanilla SWE-bench's limitations |
-| [[concepts/ai-benchmarks/multi-swe-bench\|Multi-SWE-bench]] | Both extend and improve the SWE-bench paradigm |
+| [[concepts/ai-benchmarks/multi-swe-bench|Multi-SWE-bench]] | Both extend and improve the SWE-bench paradigm |
 
 ## Connections to Other Wiki Concepts
 

@@ -1,4 +1,13 @@
 # Wiki Log
+## [2026-11-06] watchdog | auto-fix: swe-bench typo links + cross-ref gaps
+- Fixed 11 malformed wikilinks `[[concepts/ai-benchmarks/swe-bench\|SWE-bench]]` (stray backslash) across 9 ai-benchmarks pages (gta-benchmark, terminal-bench, swe-lancer, multi-swe-bench, spider-2 x2, swe-rebench x2, appworld, swe-bench-pro, swe-gym) — from weekly graph analysis 2026-11-06 action item #4
+- Added missing cross-refs (weekly analysis action item #2): concepts/qwen -> [[entities/qwen]], concepts/agent-harnesses -> [[comparisons/agent-harnesses]]; bumped updated: on both
+- Verified clean: index.md 0 corruption (pipe/line-num/triple-bracket/space-prefix/double-pipe all 0), top-3 orphans (uncommitted-wip-snapshot-query 3679L, multi-objective-policy-distillation 278L, openenv 233L) all indexed — orphans are link-inbound issues, no action
+- Pipeline alert triage (12:00 UTC watchdog report): blog-wiki-ingest failed (upstream blog-triage output JSON unparseable), newsletter chain failed (HTTP 503 local LLM busy x2 + response truncation x2) — transient infra, no wiki writes performed, next runs 10:00-10:50 UTC tomorrow
+- deferred to human: queries/2026-10-04-uncommitted-wip-snapshot-query (3,679L orphan) archive-vs-hub decision
+
+---
+
 ## [2026-11-06] Trending-topics ingest (12:00 UTC)
 - New concepts (7): claude-code/claude-code-user-agent-email-leak (HN 1222p), covert-safety-underperformance (GPT-6 Astra, HN 329p), hunyuan-hy4, ripple-65b, inkling-2-small, provable-inference (HN 238p), price-performance-frontier (Village LLM Atlas)
 - Updated (8): kimi-k3 (K3.1 Pro weights released), tencent + thinking-machines-lab (launch sections), recursive-self-improvement + metR (METR 2x acceleration assessment), openai (Astra covert safety + Pierre acquisition), garry-tan ($200K tokens), harness-engineering (PII boundary), ai-bubble-financial-crisis (Nasdaq -5% + IPO skepticism)

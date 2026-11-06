@@ -2,7 +2,7 @@
 title: "Agent Harnesses"
 type: concept
 created: 2026-04-24
-updated: 2026-07-15
+updated: 2026-11-06
 tags:
   - ai-agents
   - training
@@ -143,6 +143,7 @@ The boundary between model and harness keeps moving. The routing decisions (whic
 
 ## Related Concepts
 
+- [[comparisons/agent-harnesses]] — Cross-harness comparison table
 - [[concepts/agent-loop-orchestration]] — Patterns for managing the agent loop
 - [[concepts/harness-engineering/agentic-engineering]] — Broader agent engineering practices
 - [[concepts/ai-agent-traps]] — Common pitfalls in agent development

@@ -55,7 +55,7 @@ GTA evaluates:
 |-----------|-------------|
 | [[concepts/ai-benchmarks/appworld\|AppWorld]] | Both evaluate tool/API use — GTA is general-purpose, AppWorld is app-focused |
 | [[concepts/ai-benchmarks/terminal-bench\|Terminal-Bench]] | Both test tool use — GTA for APIs, Terminal-Bench for CLI tools |
-| [[concepts/ai-benchmarks/swe-bench\|SWE-bench]] | Both evaluate agents on task completion, different tool paradigms |
+| [[concepts/ai-benchmarks/swe-bench|SWE-bench]] | Both evaluate agents on task completion, different tool paradigms |
 | [[concepts/ai-benchmarks/spider-2\|Spider 2.0]] | Spider 2.0 tests SQL as a tool; GTA tests diverse API tools |
 
 ## Connections to Other Wiki Concepts

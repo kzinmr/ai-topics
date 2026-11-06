@@ -54,9 +54,9 @@ Spider 2.0 measures:
 
 | Benchmark | Relationship |
 |-----------|-------------|
-| [[concepts/ai-benchmarks/swe-bench\|SWE-bench]] | Both evaluate coding agents on real-world tasks, different domains |
+| [[concepts/ai-benchmarks/swe-bench|SWE-bench]] | Both evaluate coding agents on real-world tasks, different domains |
 | [[concepts/ai-benchmarks/livecodebench\|LiveCodeBench]] | Both provide challenging, evolving coding evaluation |
-| [[concepts/ai-benchmarks/multi-swe-bench\|Multi-SWE-bench]] | Both extend evaluation to cover more real-world coding scenarios |
+| [[concepts/ai-benchmarks/multi-swe-bench|Multi-SWE-bench]] | Both extend evaluation to cover more real-world coding scenarios |
 | [[concepts/ai-benchmarks/appworld\|AppWorld]] | Both evaluate agents on complex, realistic data interaction tasks |
 
 ## Connections to Other Wiki Concepts

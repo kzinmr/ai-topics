@@ -54,7 +54,7 @@ The key innovation is that SWE-Gym is both a training dataset and an evaluation 
 
 | Benchmark | Relationship |
 |-----------|-------------|
-| [[concepts/ai-benchmarks/swe-bench\|SWE-bench]] | SWE-Gym provides training environments for SWE-bench-style tasks |
+| [[concepts/ai-benchmarks/swe-bench|SWE-bench]] | SWE-Gym provides training environments for SWE-bench-style tasks |
 | [[concepts/ai-benchmarks/swe-rebench\|SWE-rebench]] | Complementary — SWE-rebench refreshes evaluation while SWE-Gym focuses on training |
 | [[concepts/ai-benchmarks/swe-lancer\|SWE-Lancer]] | Both advance SWE agent evaluation beyond basic bug-fixing |
 | [[concepts/ai-benchmarks/terminal-bench\|Terminal-Bench]] | Both use Docker-based interactive environments for evaluation |

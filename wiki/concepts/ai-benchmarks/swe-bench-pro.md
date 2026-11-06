@@ -64,7 +64,7 @@ Key points from the OpenAI Frontier Evals team (Mia Glaese, Olivia Watkins):
 
 | Benchmark | Relationship |
 |-----------|-------------|
-| [[concepts/ai-benchmarks/swe-bench\|SWE-bench]] | SWE-bench Pro is a harder, professional-grade extension |
+| [[concepts/ai-benchmarks/swe-bench|SWE-bench]] | SWE-bench Pro is a harder, professional-grade extension |
 | [[concepts/ai-benchmarks/swe-rebench\|SWE-rebench]] | Both improve upon vanilla SWE-bench — Pro for difficulty, rebench for quality |
 | [[concepts/ai-benchmarks/frontier-swe-benchmark\|Frontier SWE Benchmark]] | Both target high-difficulty SWE evaluation |
 | [[concepts/ai-benchmarks/swe-lancer\|SWE-Lancer]] | Both evaluate professional-grade SWE capability |
