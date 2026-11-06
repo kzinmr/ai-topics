@@ -290,6 +290,7 @@
     "https://deanball.substack.com/p/leviathan-waking",
     "https://decagon.ai/blog",
     "https://decagon.ai/blog/agent-deployment-engineering",
+    "https://decagon.ai/blog/autopilot-experiments",
     "https://decagon.ai/blog/browser-actions",
     "https://decagon.ai/blog/collaboration-tools",
     "https://decagon.ai/blog/decagon-assist",
@@ -2569,6 +2570,7 @@
     "https://www.harvey.ai/blog/benefits-of-ai-in-legal-operations",
     "https://www.harvey.ai/blog/can-ai-draft-discovery-requests",
     "https://www.harvey.ai/blog/caryn-sandler-is-shaping-future-of-legal-innovation",
+    "https://www.harvey.ai/blog/contract-approval-workflow",
     "https://www.harvey.ai/blog/contract-redlining",
     "https://www.harvey.ai/blog/contract-redlining-software",
     "https://www.harvey.ai/blog/contract-review-checklist",
@@ -2579,6 +2581,7 @@
     "https://www.harvey.ai/blog/employment-contract-drafting",
     "https://www.harvey.ai/blog/enterprise-legal-management",
     "https://www.harvey.ai/blog/entire-agreement-clause",
+    "https://www.harvey.ai/blog/fact-graph-for-litigation-disputes-internal-investigations",
     "https://www.harvey.ai/blog/for-iain-telford-ai-success-depends-on-people",
     "https://www.harvey.ai/blog/gpt-5-6-sol-in-harvey",
     "https://www.harvey.ai/blog/harvey-copilot-cowork-launch",
@@ -2613,6 +2616,7 @@
     "https://www.harvey.ai/blog/us-case-law-source",
     "https://www.harvey.ai/blog/y-combinator-backed-benchmark-joins-harvey",
     "https://www.hebbia.com/blog/",
+    "https://www.hebbia.com/blog/building-a-knowledge-graph-for-financial-institutions",
     "https://www.hebbia.com/blog/every-data-integration-one-view",
     "https://www.hebbia.com/blog/hebbia-and-intercontinental-exchange-bring-institutional-pricing-data-into-ai-workflows",
     "https://www.hebbia.com/blog/hebbia-and-third-bridge-launch-strategic-integration",
@@ -2913,6 +2917,7 @@
     "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
     "https://www.verizon.com/about/news/iphone-duo-verizon-offers",
     "https://www.warp.dev/blog/adopting-the-software-factory-model-crawl-walk-run",
+    "https://www.warp.dev/blog/agent-code-review-bottleneck",
     "https://www.warp.dev/blog/generate-pr-walkthrough-skill",
     "https://www.warp.dev/blog/how-to-build-a-cloud-software-factory-computer-use-verification",
     "https://www.warp.dev/blog/how-to-build-a-cloud-software-factory-self-improving-code-review",
@@ -3046,5 +3051,5 @@
     "https://youtu.be/Dqp_b8GHLXU?t=1074",
     "substack app-link / redirect / profile links"
   ],
-  "updated": "2026-11-06T10:29:19.919004+00:00"
+  "updated": "2026-11-06T18:17:55.863967+00:00"
 }

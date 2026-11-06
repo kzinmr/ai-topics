@@ -1,4 +1,17 @@
 # Wiki Log
+
+## [2026-11-06] dreaming group | Pattern E scan — Takes=3 (carried), Refs=5 (4 new + 1 carried), Skips=4
+
+- Checkpoint `total_articles: 0` with `recent_raw_articles: 232` → Pattern E filesystem scan + archive-index absence probe (decisive, 3,045 URLs known; 103 recent never-archived).
+- **Duplicate check**: 11-06 morning scrape (Tencent Hy4, Ripple-65B, Inkling 2 Small, Kimi K3/K3.1, GPT-6 Cyber, Anthropic provable inference, Astra covert safety, Claude Code UA email leak, Village price-performance, AlphaEval/SWE-Marathon) fully processed by trending-topics (`c9034281`) + active-crawl (`c02eedf7`) — skipped.
+- **Takes (carried — verified pages still un-updated via git log/grep)**:
+  - `entities/factory.md` — HumanLayer × Factory acquisition (from 11-05 triage, unconsumed).
+  - `entities/simon-willison.md` — datasette-agent 0.5a0 / datasette-apps 0.3a0 / llm 0.37.1 (from 11-05 triage, unconsumed).
+  - `entities/fireworks-ai.md` — Forge conference launches: Ultra-fast 1,500 tok/s on DeepSeek V4.1 Flash, Background Mode half-price, Ember-1 ~1/5 Opus 5 cost, Nexus Desktop $8/mo, Sovereign 25K GPUs (deferred from 11-04 triage, page confirmed lacking Forge coverage).
+- **References (new from today's sitemap batch)**: `concepts/code-review-bottleneck.md` + `entities/warp-terminal.md` (Warp 3-lever agent-PR review playbook); `entities/hebbia.md` + `concepts/knowledge-graph-memory-agents.md` (finance KG GA, 80% cost reduction vs frontier model); `entities/harvey.md` (Fact Graph for disputes/litigation — dual-side of graph-context trend with Hebbia); `entities/decagon.md` (Autopilot self-improving agent: +25pp resolution, 85% update durability @ 30d); carried `entities/harvey.md` contract-approval workflow.
+- **Skips**: 11-06 model/safety cluster (same-day covered), prior 11-05 skip batch (rationale unchanged), Harvey FORUM/Hiring (product listing / no depth), ElevenLabs marketing ×2 + parallel-mcp-2 421B link stub + non-AI batch.
+- **Archive**: 9 candidates, 9 newly archived (`2026-11-06_20261106T180047Z.json`, total 3,050 URLs). Triage JSON at `cron/data/dreaming/triage_latest.json` (run 20261106T180047Z).
+
 ## [2026-11-06] health-fix | daily auto-fix scan — all clean, no changes
 - wiki_health.py --json: 0 page-name violations, 0 orphans (entities 961 / concepts 2313 / comparisons 35 / L2 3309)
 - index.md independently verified clean: pipe_prefix=0, line_number=0, triple_bracket=0, space_prefix=0, double_pipe=0 (3433 lines); validate_index.py exit 0

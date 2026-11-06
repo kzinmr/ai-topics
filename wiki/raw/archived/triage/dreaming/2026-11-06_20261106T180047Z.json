@@ -1,0 +1,116 @@
+{
+  "archived_at": "2026-11-06T18:17:55.863252+00:00",
+  "triage_run_id": "20261106T180047Z",
+  "source": "dreaming",
+  "summary_ja": "チェックポイント記事0件・raw 232件のためPattern Eファイルシステムスキャン+archive-index absence probe（3,045 URL既知）を実行。11-06午前のモデルリリース/安全系スクレイプ分は同日trending-topics・active-crawlが全数処理済み（duplicate check）。未アーカイブ候補から新規reference 4件（Warpコードレビューボトルネック3レバー、Hebbia金融KG GA 80%コスト減、Harvey Fact Graph、Decagon Autopilot実測）を抽出。前run 11-05の未実行take 2件（HumanLayer×Factory、Simon Willison datasetteリリース）と11-04 deferred take 1件（Fireworks Forge、ページ未更新をgrep確認）をキャリーフォワード計take 3件。他は既存カバー/マーケ/非AIとしてskip。",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-warp-review-bottleneck",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Warp: Addressing the code review bottleneck",
+      "url": "https://www.warp.dev/blog/agent-code-review-bottleneck",
+      "raw_path": "wiki/raw/articles/2026-11-06_warp_agent-code-review-bottleneck.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ Ben Holmes稿。エージェントPR溢れ against 人間レビューのボトルネックに3レバー（自社レビューエージェントによる敵対的レビューの事前ラウンド、コンピュータユース+自動チェックでのエンドツーエンド検証、マージリスクのスコアリング）を提示。concepts/code-review-bottleneck.mdとentities/warp-terminal.mdに本体系は未収録。",
+      "candidate_wiki_path": "concepts/code-review-bottleneck.md",
+      "body_excerpt": "# Addressing the code review bottleneck\n**Source**: [https://www.warp.dev/blog/agent-code-review-bottleneck](https://www.warp.dev/blog/agent-code-review-bottleneck)\nEngineering\nAddressing the code review bottleneck\nBen Holmes\n|\nNovember 5, 2026\nHow many agent PRs are awaiting your review right now? "
+    },
+    {
+      "item_id": "dreaming-ref-hebbia-fin-kg",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Hebbia: Building Knowledge Graphs for Financial Institutions",
+      "url": "https://www.hebbia.com/blog/building-a-knowledge-graph-for-financial-institutions",
+      "raw_path": "wiki/raw/articles/2026-11-06_hebbia_building-a-knowledge-graph-for-financial-institutions.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ 金融機関向けナレッジグラフGA。全ドキュメント前処理+出典付きエッジ+数次先の接続で、フロンティアモデル単体比「回答コスト80%減・精度向上」の定量評価を伴う発表。entities/hebbia.mdとconcepts/knowledge-graph-memory-agents.md双方に欠落（デュアルエンリッチ候補）。",
+      "candidate_wiki_path": "entities/hebbia.md",
+      "body_excerpt": "# Building Knowledge Graphs for Financial Institutions\n**Source**: [https://www.hebbia.com/blog/building-a-knowledge-graph-for-financial-institutions](https://www.hebbia.com/blog/building-a-knowledge-graph-for-financial-institutions)\nProduct\nBuilding Knowledge Graphs for Financial Institutions\nHebbi"
+    },
+    {
+      "item_id": "dreaming-ref-harvey-factgraph",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Harvey: Fact Graph for Disputes, Litigation, and Investigations",
+      "url": "https://www.harvey.ai/blog/fact-graph-for-litigation-disputes-internal-investigations",
+      "raw_path": "wiki/raw/articles/2026-11-06_harvey_fact-graph-for-litigation-disputes-internal-investigations.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Harveyが訴訟・紛争・内部調査向けFact Graphを発表。Hebbia金融KGと同日の「法務/金融AIエージェント×グラフコンテキスト」トレンド両当事者の一方。entities/harvey.mdにFact Graphセクションなし。FORUM Chicago記事は製品羅列のため本件のみ切り出し。",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": "# Harvey’s Fact Graph for Disputes, Litigation, and Investigations\n**Source**: [https://www.harvey.ai/blog/fact-graph-for-litigation-disputes-internal-investigations](https://www.harvey.ai/blog/fact-graph-for-litigation-disputes-internal-investigations)\nWe Raised $550M at a $15.5B Valuation to Help "
+    },
+    {
+      "item_id": "dreaming-ref-decagon-autopilot",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Decagon: Autopilot self-improving agent experiments",
+      "url": "https://decagon.ai/blog/autopilot-experiments",
+      "raw_path": "wiki/raw/articles/2026-11-06_decagon_autopilot-experiments.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 「業界初の自己改善エージェント」Autopilotの実証記事。Fortune 50で解決率+25pp、単一編集で+4.2%、更新の85%が30日後も本番存活という自己改善の永続性メトリクスがconcepts/self-evolving-agents.md系の議論に実測データを提供。entities/decagon.mdは製品紹介のみ。",
+      "candidate_wiki_path": "entities/decagon.md",
+      "body_excerpt": "# Hypothesis: Autopilot is better than ever. Results: Tested and validated.\n**Source**: [https://decagon.ai/blog/autopilot-experiments](https://decagon.ai/blog/autopilot-experiments)\nThe first episode of the The Agent Room debuts 11/18.\nRegister today\nProduct\nProduct overview\nChannels\nVoice\nHuman-li"
+    },
+    {
+      "item_id": "dreaming-ref-harvey-contract-approval",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Harvey Nov 5 sitemap: Contract Approval Workflow for Nonstandard Terms",
+      "url": "https://www.harvey.ai/blog/contract-approval-workflow",
+      "raw_path": "wiki/raw/articles/2026-11-05_harvey_contract-approval-workflow.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 前runのreference判定をキャリーフォワード。非標準条項の契約承認ワークフロー製品投稿。entities/harvey.mdの製品カバレッジに承認ワークフロー詳細は未収録。",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": "# Contract Approval Workflow for Nonstandard Terms\n**Source**: [https://www.harvey.ai/blog/contract-approval-workflow](https://www.harvey.ai/blog/contract-approval-workflow)\nWe Raised $550M at a $15.5B Valuation to Help Legal Teams Own Their Intelligence\nLearn more\nWe Raised $550M at a $15.5B Valuat"
+    },
+    {
+      "item_id": "dreaming-skip-model-releases-covered",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "11-06 model/safety cluster: Tencent Hy4, Ripple-65B, Inkling 2 Small, Kimi K3/K3.1, GPT-6 Cyber, provable inference, Astra covert safety, Claude Code leak, Village price-performance",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 11-06 00:00-12:18 UTCスクレイプ分は同日trending-topics(c9034281)とactive-crawl(c02eedf7)が全数処理済み: Hy4/Ripple-65B/Inkling 2 Small/K3.1重み、provable inference、Astra covert underperformance、Claude Code email leak、price-performance frontier、AlphaEval/SWE-Marathon、K3 README。Fireworks K3.1 Pro稿もconcepts/kimi-k3.md側で充足。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "git log 2026-11-06: 'trending-topics — Claude Code UA email leak, Astra covert safety underperformance, Hy4/Ripple-65B/Inkling 2 Small/K3.1 weights, provable inference, price-performance frontier' + 'active-crawl — AlphaEval + SWE-Marathon ... Kimi K3 official README specs'"
+    },
+    {
+      "item_id": "dreaming-skip-prior-1105-skips",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Prior 11-05 triage skips: Ed Zitron Running Dry, AI bubble week, weight-space debate, OpenAI stubs, Together polymorphic/TKCC, Hex batch, ElevenLabs/Harvey 11-03/04, non-AI batch",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 前run(triage 20261105T180048Z)のskip 10件の根拠は不変。Ed ZitronはAIバブル系ページで統合カバー、Together両稿はconcepts/polymorphic-inference.md・together-dci.md存在、Hexはマーケ主体、非AI群は関連性ゼロ。再判定不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "carried from triage_latest.json 20261105T180048Z — 10 skips unchanged; takes/references split out into dedicated decisions"
+    },
+    {
+      "item_id": "dreaming-skip-harvey-forum-hiring",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Harvey AI Fluency in Legal Hiring + FORUM Chicago announcements",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ AI Fluency in Legal Hiringは採用トレンド記事で技術的深みなし。FORUM Chicago発表記事は製品羅列（nav chrome主体）で、目新しさのあるFact Graphのみreference化済み。$550M@$15.5B調達バナーはentities/harvey.md既知。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "We Raised $550M at a $15.5B Valuation to Help Legal Teams Own Their Intelligence — Product Announcements From Harvey FORUM Chicago (product listing)"
+    },
+    {
+      "item_id": "dreaming-skip-elevenlabs-parallel-nonai",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "ElevenLabs marketing pair + Parallel parallel-mcp-2 stub + non-AI blog batch",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ElevenLabs 2件（Leeanna Morganオーディオブック成功談2024年投稿、SRTガイド）はマーケ/SEO記事。parallel-mcp-2は421バイトのリンクスタブで本文なし、entities/parallel-web-systems.mdが既知製品をカバー。非AI群（salon/shkspr/dfarq/oldnewthing/idiallo×2/edits.instagram/pluralistic/link-digest等）はAI関連性なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# parallel-mcp-2 **Source**: https://parallel.ai/blog/parallel-mcp-2 (421 bytes, no body) / Leeanna Morgan audiobook customer story, published Apr 30 2024"
+    }
+  ]
+}
