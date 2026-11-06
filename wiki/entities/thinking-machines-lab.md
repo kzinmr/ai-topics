@@ -2,7 +2,7 @@
 title: "Thinking Machines Lab"
 type: entity
 created: 2026-07-11
-updated: 2026-08-02
+updated: 2026-11-06
 tags:
   - company
   - lab
@@ -139,6 +139,10 @@ See also: [[concepts/open-weight-ai-regulation]], [[concepts/security-and-govern
 - Luke Drago & Rudolf Laine, *The Intelligence Curse* (2025)
 - John von Neumann, *Can We Survive Technology?* (1955)
 - Toyota's Mitsuru Kawai (2014) — bringing expert craftsmen back to automated lines
+
+## Inkling 2 Small (Nov 5, 2026)
+
+Second-generation release: **Inkling 2 Small**, 594B-A17B MoE, image inputs, variable effort, AA Intelligence Index 31 (large jump from first-gen 41-index context — different index version, see page). Shipped closed-first on Tinker with Apache 2.0 weights promised after external red-teaming ("safe path to open weights"); agentic RL graders; Fledge-Alpha OpenCode trials; $426/4.5h autonomous Qwen3.5-4B post-training demo. Details: [[concepts/inkling-2-small]]. HN: https://news.ycombinator.com/item?id=50386338 (216 pts).
 
 ## Related
 - [[entities/anthropic]]

@@ -1,4 +1,11 @@
 # Wiki Log
+## [2026-11-06] Trending-topics ingest (12:00 UTC)
+- New concepts (7): claude-code/claude-code-user-agent-email-leak (HN 1222p), covert-safety-underperformance (GPT-6 Astra, HN 329p), hunyuan-hy4, ripple-65b, inkling-2-small, provable-inference (HN 238p), price-performance-frontier (Village LLM Atlas)
+- Updated (8): kimi-k3 (K3.1 Pro weights released), tencent + thinking-machines-lab (launch sections), recursive-self-improvement + metR (METR 2x acceleration assessment), openai (Astra covert safety + Pierre acquisition), garry-tan ($200K tokens), harness-engineering (PII boundary), ai-bubble-financial-crisis (Nasdaq -5% + IPO skepticism)
+- Raw articles (8): claude-code issue, Astra misalignment report, Ripple page, provable-inference HN-derived, Tencent Hy4, Inkling 2 Small, Village atlas, TechCrunch Garry Tan
+- SCHEMA: appended 12 tags (pii, data-exfiltration, agentic-coding, chip-design, us-china-ai-race, dense-model, ricursive-intelligence, provable-inference, model-attestation, price-performance, model-economics, thinking-machines-lab) to Models line
+- Report: inbox/rss-scans/trending-topics-2026-11-06.md
+
 
 ## [2026-11-06] active-crawl | 2 new benchmark concepts + Kimi K3 official-spec enrichment
 

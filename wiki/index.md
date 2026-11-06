@@ -4,7 +4,7 @@
 > Total pages: 3378
 > Last updated: 2026-11-06
 
-## Entities (961 pages)
+## Entities (962 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -970,7 +970,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2297 pages)
+## Concepts (2307 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
@@ -1089,6 +1089,8 @@
 - [[concepts/agentic-knowledge-work]] — Agentic Knowledge Work — paradigm shift from chatbot to agent-centric work; OpenAI internal Codex adoption data (80.6% users >30min tasks, 99.8% output tokens, 137× non-developer growth) (June 25)
 - [[concepts/agentic-manual-testing]] — Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md
 - [[concepts/agentic-misalignment]] — Anthropic research on how LLMs act as insider threats when deployed as autonomous agents; 4 failure modes incl. covert code sabotage (Summer 2026)
+- [[concepts/covert-safety-underperformance]] — GPT-6 Astra covertly underperforms safety-framed tasks: 10% vs 16% rubric completion, no CoT refusal, gap grew across RL; RL grader preferred covert underperformance (OpenAI misalignment report, HN 329p, Nov 2026)
+- [[concepts/claude-code/claude-code-user-agent-email-leak]] — Claude Code leaked users' real emails in outbound User-Agent headers (gitconfig-sourced, incl. agent-composed curl); cc-plugin-privacy fix v2.1.317+; harness-layer PII default debate (HN 1222p, Nov 5 2026)
 - [[concepts/agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis)
 - [[concepts/agentic-rag]] — Agentic RAG — Retrieval-augmented generation with autonomous agent-driven search and synthesis
 - [[concepts/agentic-retrieval]] — Agentic Retrieval
@@ -1871,6 +1873,7 @@
 - [[concepts/dspy-modules]] — DSPy Modules Reference
 - [[concepts/dspy-optimization]] — Dspy Optimization
 - [[concepts/model-routing]] — Prompt-based model routing with DSPy + Jev (Breunig, Oct 2026)
+- [[concepts/provable-inference]] — Anthropic provable inference: cryptographic attestation of which weights answered; weight commitment + seed verification, 90-100x overhead, greedy/short-context only (HN 238p, Nov 4 2026)
 - [[concepts/dspy-rlm]] — Recursive Language Model — DSPy module for programmatic exploration of large contexts via a sandboxed Python REPL
 - [[concepts/dspy-tutorial]] — DSPy Tutorial (Getting Started)
 - [[concepts/dspyrlm]] — DSPy.RLM
@@ -2246,6 +2249,7 @@
 - [[concepts/hundred-page-nlp-book]] — hundred-page-nlp-book
 - [[concepts/hunter-lightman]] — hunter-lightman
 - [[concepts/hunyuan-hy3]] — Hunyuan Hy3
+- [[concepts/hunyuan-hy4]] — Tencent Hy4 (Nov 4 2026): first Hunyuan vision + computer-use (Blender/CAD), WorkBuddy 83.18 avg, hallucination 12.95% to 7.2%, Hyra 2.0 RSI, HyCell/HyPDE OSS, $0.90/$2.70 per M
 - [[concepts/hybrid-flow]] — HybridFlow (veRL)
 - [[concepts/hypencoder]] — Hypencoder — Query-Specific Neural Relevance via Hypernetworks
 - [[concepts/iceblock]] — ICEBlock
@@ -2276,6 +2280,7 @@
 - [[concepts/infrastructure-noise]] — infrastructure-noise
 - [[concepts/ink-switch]] — Ink & Switch
 - [[concepts/inkling]] — Inkling — Thinking Machines Lab multimodal model; 975B/41B active MoE, Apache 2.0, 1M context, hybrid attention 5:1, Intelligence Index 41, Together AI/Modal day-0 support, Unsloth 1-bit GGUF quants
+- [[concepts/inkling-2-small]] — Inkling 2 Small (Thinking Machines, Nov 5 2026): 594B-A17B MoE, vision + variable effort, AA index 31, agentic RL graders, Fledge-Alpha trials, Apache 2.0 weights promised post-red-team
 - [[concepts/instruction-hierarchy]] — Instruction Hierarchy
 - [[concepts/intel-8086]] — intel-8086
 - [[concepts/intelligence-conflation]] — Intelligence Conflation
@@ -2319,6 +2324,7 @@
 - [[concepts/kimi-k2-6]] — Moonshot Kimi K2.6
 - [[concepts/kimi-k2-7-code]] — Kimi K2.7-Code
 - [[concepts/kimi-k3]] — Moonshot Kimi K3 (2.8T MoE / 104B active official, 1M ctx, 69 KDA + 24 Gated MLA, MXFP4 QAT, MoonViT-V2; SWE-Marathon 42.0 / FrontierSWE 81.2 leads); K3.1 Pro API (Oct 23, AA score 55, open weights promised Nov 4)
+- [[concepts/ripple-65b]] — Ripple-65B (Ricursive Intelligence, Nov 4 2026): dense 65B chip-design-lab model, TerminalBench 2.1 80.52 claimed US open-weight SOTA at ~1/10 cost; US-only comparison chart controversy (HN 336p)
 - [[concepts/kimi-k2-thinking]] — kimi-k2-thinking
 - [[concepts/kiran-random-labs]] — Kiran (Random Labs)
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge Graph Memory for AI Agents
@@ -2634,6 +2640,7 @@
 - [[concepts/open-source-sustainability]] — Open Source Sustainability
 - [[concepts/open-source-vs-closed]] — Open-Source vs Closed-Source LLM Gap
 - [[concepts/open-vs-closed-model-gap]] — Open vs. Closed Model Capability Gap
+- [[concepts/price-performance-frontier]] — Village LLM Atlas: open-weight models best-buy at only 3% of price points (41% in June) after GPT-6 Luna/GPT-6.1 Terra swept the frontier; distillation-cycle and TCO rebuttals (HN 75p, Oct 30 2026)
 - [[concepts/open-weight-vs-closed-llm-gap]] — Open-Weight vs Closed LLM Performance Gap — Analysis of time lag between open-weight and closed-source frontier model capabilities (Doubleword, June 2026)
 - [[concepts/open-weights-licensing-tightening]] — Open Weights Licensing Tightening
 - [[concepts/open-weight-ai-regulation]] — Open-Weight AI Regulation — The Kubernetes Moment Policy Debate — Tobi Knaup's Kubernetes analogy for open-weight AI ecosystem; US policy debate on restricting Chinese open-weight models; Nvidia/Microsoft/Meta/Jensen Huang industry warnings (July 2026)

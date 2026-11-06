@@ -1,7 +1,7 @@
 ---
 title: "Moonshot Kimi K3"
 created: 2026-07-17
-updated: 2026-10-29
+updated: 2026-11-06
 type: concept
 tags:
   - model
@@ -575,6 +575,14 @@ closed ones on this axis. See [[concepts/open-weight-ai-regulation]],
 [[concepts/security-and-governance/open-model-safety]].
 
 **Sources**: [[raw/newsletters/2026-10-25-interconnects-podcast-kimi-k3-1-pro-new-cyber-reality-muse-musings.md|Interconnects podcast #20]] (Oct 25, 2026); [Kimi K3.1 Pro blog](https://www.kimi.ai/blog/kimi-k3-1-pro); [AA launch benchmarks](https://artificialanalysis.ai/articles/kimi-k3-1-pro-launch-benchmarks); [Terminal-Bench Science leaderboard](https://www.tbench.ai/leaderboard/terminal-bench-science); [ProgramBench](https://programbench.com/)
+
+## K3.1 Pro open weights released (Nov 4-5, 2026)
+
+Moonshot released the **Kimi K3.1 Pro model weights** on Hugging Face (https://huggingface.co/moonshotai/Kimi-K3.1-Pro), completing the Nov 4 promise attached to the Oct 23 API launch. HN: 632 pts ([item 50366999](https://news.ycombinator.com/item?id=50366999)).
+
+Community reactions: (1) serveability gripes — realistically needs an 8x B300 node; SSD-streaming estimates ~192 GB RAM for the dense portion at native precision; AMD developer cloud ships a single-MI300x image with system-RAM offload. (2) **License**: the HF LICENSE requires payment from model-as-a-service providers beyond stated revenue thresholds; pure internal use is free. (3) **"Benchmaxxed" suspicion**: Tencent's Hy4 launch (Nov 4) published an internal 579-task financial blind eval scoring K3.1 Pro 2.68 vs Hy4 3.04 — commenters noted K3.1 scores notably lower on Hy's internal benchmarks than Opus 5.5 does, read as evidence of benchmark-tuning; treat both vendors' tables skeptically. (4) DeepSeek V4.1-Flash seen as roughly matching K3.1 at much lower cost.
+
+Source: https://huggingface.co/moonshotai/Kimi-K3.1-Pro ; HN discussion mined 2026-11-06.
 
 ## Related Pages
 

@@ -1,7 +1,7 @@
 ---
 title: Tencent
 created: 2026-06-14
-updated: 2026-08-13
+updated: 2026-11-06
 type: entity
 tags:
   - tencent
@@ -100,6 +100,10 @@ Tencent's 2026 strategy mirrors the Chinese open-weight surge: release frontier-
 | License | Apache 2.0 | Open | Source-available (revenue threshold) |
 | Context | 256K | — | up to 1M |
 | Signature strength | Agentic tasks, efficiency | Cache-pricing economics | Scale, local ecosystem |
+
+## Hunyuan Hy4 launch (Nov 4, 2026)
+
+Tencent released **Hy4**, its next-gen LLM, claiming top-tier open-source standing; weights/system cards promised within days. First Hunyuan model with visual understanding and computer-use (Blender/CAD-trained); hallucination 12.95%→7.2% vs Preview; Hyra 2.0 harness RSI stage; open-sourced HyCell and HyPDE scientific foundation models; pricing unchanged (~$0.90/$2.70 per M tokens); Hy4 Flash planned. Internal financial blind eval (213 professionals, 579 tasks) ranks Hy4 above DeepSeek-V4.1-Flash, Kimi K3.1 Pro, GLM-5.3. Details: [[concepts/hunyuan-hy4]]. HN: https://news.ycombinator.com/item?id=50383963 (95 pts).
 
 ## Related
 

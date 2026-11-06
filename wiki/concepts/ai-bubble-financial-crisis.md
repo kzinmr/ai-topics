@@ -1,7 +1,7 @@
 ---
 title: "AI Bubble Financial Crisis - When Capex Busts Become Credit Events"
 created: 2026-09-15
-updated: 2026-11-03
+updated: 2026-11-06
 type: concept
 tags: [ai-economics, ai-industry-economics, valuation, ai-hype]
 sources: [raw/newsletters/2026-09-15-what-if-ai-causes-a-recession.md]
@@ -56,6 +56,10 @@ that adopt AI; it is a redistribution shock, not a balance-sheet shock. A recess
 - **Oracle** filed to sell **$20B** in new stock+bonds for AI buildout (CNBC, HN 50342284, 190 pts); stock -8% on the filing, -60% from Sept 2025 peak — leveraged-neocloud repricing continues alongside CoreWeave.
 - **Intel stock collapse / $3.5T chip rout** spreading (Yahoo Finance, HN 50346153, 213 pts, Nov 3) — hardware-side contagion marker.
 - **Rhetorical substrate**: EO 14434 renamed federal AI to "Super Intelligence"; the Census Bureau updated its Oct 19, 2026 survey wording accordingly (Simon Willison, HN 50336840, 118 pts) — government statistical apparatus now embedded in the AGI-narrative layer, an adoption-metric integrity issue for any bubble assessment.
+
+## November 5-6, 2026: Nasdaq -5% post-election pullback + Anthropic IPO skepticism
+
+Two same-day datapoints for the bubble thesis: (1) **Nasdaq fell 5% on Nov 5** as investors retreated from the AI trade the day after US elections (WSJ live coverage; HN https://news.ycombinator.com/item?id=50382179, 160 pts — thread ran the Cisco peak-2000/don't-trust-"safe"-infrastructure analogy, and Cloudflare-as-winner debate). (2) **WSJ reported major investors are skeptical Anthropic's IPO can reach the $1.5T valuation** (HN https://news.ycombinator.com/item?id=50386597, 87 pts), one week after the Oct 26 S-1 (Nasdaq "ANT") — the thread split between commodity-model/no-moat args (yogthos) and lock-in/ecosystem rebuttals, with the "$1T implies OpenAI's last round is underwater" capital-efficiency squeeze noted (anxman). Connects to [[concepts/anthropic-ipo]] S-1 disclosures and Gary Marcus's "Mayhem in the market" hyperscaler-capex-revolt post (blog-ingest 2026-11-06).
 
 ## Related
 

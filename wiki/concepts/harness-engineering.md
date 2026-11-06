@@ -2,7 +2,7 @@
 title: "Harness Engineering"
 type: concept
 created: 2026-04-30
-updated: 2026-08-27
+updated: 2026-11-06
 tags:
   - concept
   - evaluation
@@ -563,6 +563,10 @@ Harness-engineering discourse increasingly ships as **agent context** rather tha
 
 - **[[entities/ryan-lopopolo|Ryan Lopopolo]] — harness-engineering GitHub bundle** (shared Aug 27, 2026): [github.com/lopopolo/harness-engineering](https://github.com/lopopolo/harness-engineering) — self-described "anthology, field guide, and **agent context bundle** for harness engineering." His pitch on X: "Point your agent at this" — the discipline (anchored by his Feb 2026 OpenAI post, ["Harness engineering: leveraging Codex in an agent-first world"](https://openai.com/index/harness-engineering/)) is packaged so a coding agent can ingest it whole in one pass. The methodology's distribution channel becomes the methodology's own thesis: the harness includes its own onboarding documentation.
 - This follows the broader pattern already visible in this ecosystem: AGENTS.md files, LangChain's better-harness hill-climbing recipes, and Addy Osmani's "Agent = Model + Harness" framing all treat the surrounding context as a first-class artifact. The lopopolo bundle is one of the first curated, named "context bundle" for a named discipline.
+
+## The harness as PII boundary: Claude Code UA email leak (Nov 5, 2026)
+
+The [[concepts/claude-code/claude-code-user-agent-email-leak|Claude Code User-Agent email leak]] (HN 1222 pts) crystallized a harness-engineering principle: **outbound identity redaction is harness responsibility, not model-alignment or user-config territory.** The leak lived partly in agent-composed `curl -A` commands inside workflow subagents — i.e. harness egress hygiene must cover agent-generated shell, not just first-party tools. Anthropic's fix (`cc-plugin-privacy`, default-on mod in v2.1.317+) is itself a harness-layer mechanism, and HN's rebuttal to proxy workarounds ("labs should provide basic PII protection by default rather than system prompts, skills, or proxies as crutches") reads as an emerging default-requirements checklist for harnesses: UA/PII scrubbing, egress rewriting, and subagent command auditing. See also Ask HN agentic-setup thread (HN 527 pts, https://news.ycombinator.com/item?id=50366117) for current-practice baselines: Opus 5.5-era users converge on minimal-config Claude IDE loops, with skills valued mainly for MCP/workflow glue.
 
 ## References
 

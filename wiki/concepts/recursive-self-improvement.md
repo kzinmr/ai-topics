@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-11-05
+updated: 2026-11-06
 type: concept
 tags:
   - concept
@@ -434,6 +434,10 @@ Both are Level-1/2 instances (human-designed improvement loops, agent-chosen tac
 - [[entities/ryan-greenblatt]] — Chief Scientist at Redwood Research; debated RSI plausibility with Dwarkesh Patel (Aug 2026, median 2031 for automating AI R&D)
 - [[concepts/agi-declaration-controversy-2026]] — The Sept 2026 AGI wave reframed RSI as a visible industry
 - [[entities/jan-leike]] — Anthropic agentic-safety lead; 'AI research automation is the big thing coming'
+
+## Industry Evidence: METR Independent Assessment of Anthropic R&D Acceleration (Nov 5, 2026)
+
+METR published an independent assessment (with Anthropic-held redaction rights): as of October 2026, Anthropic is **likely improving model capabilities on well-specified tasks at ~2x the rate** of the March 2024–October 2025 baseline (wide uncertainty; 1.3–3x plausible), with **a majority of the acceleration likely attributable to Anthropic's extensive internal use of AI for R&D**. Notable transparency finding: Anthropic redacted "a majority of the evidence we found most informative"; METR states the public "has to rely on METR's judgment much more than would be ideal." METR also flags the late-2025 acceleration inflection as possibly non-AI-driven, echoing jackschultz's reading that Opus 4.5 broke METR's own measurement instruments. HN: https://news.ycombinator.com/item?id=50383902 (36 pts; "the most damning RSI report... barely a whisper"). Source: https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/
 
 ## Sources
 

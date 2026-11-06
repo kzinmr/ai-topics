@@ -2,7 +2,7 @@
 title: METR
 type: entity
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-11-06
 tags:
   - lab
   - ai-research
@@ -34,6 +34,10 @@ Candidate explanations: variation in inference expenditure, variation in LLM dif
 
 ## Why it matters
 METR's differential-acceleration framing (some domains accelerate, others don't) is a recurring theme in frontier-lab and policy discussion — it undercuts both "AI accelerates everything uniformly" and "AI hasn't accelerated anything" narratives. See also [[concepts/scaling-laws]] and [[concepts/intelligence-explosion]].
+
+## Anthropic R&D acceleration assessment (Nov 5, 2026)
+
+METR's independent assessment (Anthropic-retained redaction rights): Anthropic's capability improvement rate on well-specified tasks is ~**2x** its 2024-03→2025-10 baseline as of Oct 2026 (1.3–3x uncertainty band), with most of the acceleration attributed to AI-assisted internal R&D. METR disclosed that Anthropic redacted most of the evidence METR found most informative, explicitly noting reduced public verifiability. https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/ (HN https://news.ycombinator.com/item?id=50383902).
 
 ## Related Pages
 - [[concepts/ai-discovery-acceleration]] — the differential-acceleration finding

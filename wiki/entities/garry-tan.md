@@ -5,7 +5,7 @@ type: person
 x_handle: garrytan
 x_id: "11768582"
 created: 2026-05-11
-updated: 2026-05-29
+updated: 2026-11-06
 tags:
   - personal-ai
   - agentic-engineering
@@ -131,3 +131,11 @@ Garry Tan's system **uses OpenClaw and Hermes Agent as the routing layer**. His 
 - Y Combinator: [ycombinator.com](https://www.ycombinator.com/)
 - Wikipedia: [Garry Tan](https://en.wikipedia.org/wiki/Garry_Tan)
 - YouTube: [Garry Tan](https://www.youtube.com/@garrytan) — Educational startup strategy content
+
+## $100–200K/year personal token spend (Nov 2, 2026)
+
+On Walter Isaacson's *The Builders* podcast (publishing Nov 4), Tan disclosed spending **"$100,000 to $200,000 a year on tokens"**, using agents across work projects, coding, and personal life — the agent has read "all of my email, all of my Dropbox... all of my Apple Notes, even my therapy notes going back 20 years." He publicly shared his 23-skill Claude Code setup (**gstack**) on GitHub. HN reaction (106 pts) questioned the figure's methodology: multiplying raw tokens by list API price ignores caching discounts; two Claude Max 20x subs already imply ~$13.7k/mo equivalent usage (A_D_E_P_T citing Christensen's LinkedIn audit); bartread confirmed seven-figure-token weeks are easy to burn accidentally. HN: https://news.ycombinator.com/item?id=50366971 ; raw: raw/articles/2026-11-02_techcrunch_garry-tan-200k-tokens.md
+
+## $100-200K/year personal token spend (Nov 2, 2026)
+
+On Walter Isaacson's *The Builders* podcast, Tan disclosed spending **"$100,000 to $200,000 a year on tokens"**, using agents across work projects, coding, and personal life — the agent has read "all of my email, all of my Dropbox... all of my Apple Notes, even my therapy notes going back 20 years." He publicly shared his 23-skill Claude Code setup (**gstack**) on GitHub. HN reaction (106 pts) questioned the figure's methodology: multiplying raw tokens by list API price ignores caching discounts; two Claude Max 20x subs already imply ~$13.7k/mo equivalent usage (A_D_E_P_T citing Christensen's LinkedIn audit); bartread confirmed seven-figure-token weeks are easy to burn accidentally. HN: https://news.ycombinator.com/item?id=50366971 ; raw: raw/articles/2026-11-02_techcrunch_garry-tan-200k-tokens.md
