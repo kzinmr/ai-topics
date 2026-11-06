@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-10-27
+updated: 2026-11-06
 tags:
   - company
   - model
@@ -20,6 +20,8 @@ tags:
   - methodology
 aliases: ["OpenAI Inc."]
 sources:
+  - raw/articles/openai.com--index-introducing-gpt-6-cyber--8a77616c.md
+  - raw/articles/openai.com--index-setting-new-standard-responsible-ai-infrastructure--e1307179.md
   - raw/articles/2026-10-22_openai-cli-official.md
   - raw/articles/wheresyoured.at--exclusive-openai-financials--55499629.md
   - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
@@ -596,6 +598,14 @@ gene-disruption effects to literature for Alzheimer's/Parkinson's lead
 generation (bioRxiv 10.64898/2026.10.15.759436).
 Source: raw/articles/2026-10-22_openai-distributed-biological-reasoning.md,
 HN: https://news.ycombinator.com/item?id=50180752 (146 points)
+
+## November 2026: GPT-6 Cyber + National Community Compact
+
+**GPT-6 Cyber (2026-11-05).** A dedicated cybersecurity model (successor to GPT-5.6 Cyber) for finding/exploiting vulnerabilities and developing fixes, "trained to stay within authorized scope." Key numbers: **48.5% on ExploitGym** (vs 32.1% for GPT-5.6 Cyber, +51% relative); out-of-scope exploitation avoided in **99.93%** of alignment-eval tests without a deployment prompt, **100%** with it. Production evidence: **948 privilege-escalation exploits in Linux** and **81 previously unknown high-severity Firefox vulnerabilities** (despite extensive prior frontier-model testing; Mozilla shipped many fixes); adopted by Cisco, Calif, CodeRabbit for vuln research/code review. Positioned as the "limited window to use frontier models to secure software" argument for expanding **Daybreak**: mainline models (GPT-6 Astra) do code review/triage/patching, **Daybreak Blue** = verified-defender validation with fewer false refusals, **Daybreak Red** = deeper exploit development and authorized pentesting with GPT-6 Cyber. Strongest capability+alignment co-training datapoint for [[concepts/autonomous-security-agents]]; complements the September Astra Critical rating and $1B defender initiative above.
+Source: [[raw/articles/openai.com--index-introducing-gpt-6-cyber--8a77616c.md]] (Wayback; direct fetch 403)
+
+**National Community Compact + Compute Campus Policy Blueprint (2026-11-05).** OpenAI published commitments for communities hosting its data-center ("compute campus") buildouts: residents get a say in campus development, developers cover the cost of powering them (no new costs to families), and local jobs/business sharing. The Blueprint extends this into policy proposals for broad benefit-sharing. Counter-narrative packaging against the AI-bubble/data-center-backlash discourse (cf. Gary Marcus's same-week "Mayhem in the market" post on hyperscaler capex revolt).
+Source: [[raw/articles/openai.com--index-setting-new-standard-responsible-ai-infrastructure--e1307179.md]] (Wayback; direct fetch 403)
 
 ## Related Concepts
 - [[concepts/openai/agents-sdk]] — OpenAI's agent development framework

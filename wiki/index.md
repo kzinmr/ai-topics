@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3375
-> Last updated: 2026-11-05
+> Total pages: 3376
+> Last updated: 2026-11-06
 
 ## Entities (961 pages)
 
@@ -1223,6 +1223,7 @@
 - [[concepts/ai-benchmarks/benchjack]] — BenchJack
 - [[concepts/ai-benchmarks/benchmaxxing]] — Benchmaxxing (Benchmark Over-optimization)
 - [[concepts/ai-benchmarks/bfcl-v3]] — BFCL V3 (Berkeley Function Calling Leaderboard V3)
+- [[concepts/ai-benchmarks/blood-on-the-clocktower-dwarkesh]] — Blood on the Clocktower Benchmark (Dwarkesh) — LLM social-deception/conspiracy benchmark; GPT-6 Astra tops Claude Opus 4.6 by ~430 Elo over 386 games; programmatic Storyteller; self-built RL environment angle (Nov 2026)
 - [[concepts/ai-benchmarks/bixbench]] — BixBench
 - [[concepts/ai-benchmarks/browsecomp]] — BrowseComp
 - [[concepts/ai-benchmarks/chartqa]] — ChartQA

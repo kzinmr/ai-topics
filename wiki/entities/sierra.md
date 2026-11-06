@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-10-31
+updated: 2026-11-06
 type: entity
 tags:
   - company
@@ -32,6 +32,9 @@ sources:
   - raw/articles/sierra.ai--blog-release-governance-guardrails-for-agents-at-scale--af2b93a3.md
   - raw/articles/sierra.ai--blog-tau-entity-can-voice-agents-get-the-details-right--bee3927c.md
   - raw/articles/2026-09-09_sierra_hyper-tau-bench-agents-that-build-agents.md
+  - raw/articles/sierra.ai--blog-sierra-acquires-anon--83418c5d.md
+  - raw/articles/sierra.ai--blog-jpmorganchase-hall-of-innovation--3856e7f1.md
+  - raw/articles/sierra.ai--blog-accelerators--3122018d.md
 ---
 
 # Sierra
@@ -285,6 +288,17 @@ Sierra shipped **Compliance Console** into the Horizon platform: a policy enforc
 The framing is Sierra's own market claim: agents "moved from mostly reactive, one-and-done support conversations to interactions that can last weeks or months," which pushes each individual touch into regulated-communications law (TCPA-style consent/calling-hour/disclosure regimes and national equivalents). See [[concepts/sierra-compliance-console]].
 
 Source: [[raw/articles/2026-10-28_sierra-compliance-console.md]]
+
+## November 2026: Anon acquisition, JPMorganChase Hall of Innovation, Accelerators
+
+**Sierra acquires Anon** (Nov 2026). Anon — "Plaid for AI agents" — is a browser-use infrastructure startup (founded 2023 by a Spring Labs co-founder on identity/data-security background) that lets enterprise agents securely sign in and take actions on websites with no API: authentication and credential handling, browser infrastructure, an agent harness, and an embeddable SDK. Anon raised $13M+, shipped to hundreds of customers, and completed hundreds of thousands of complex production tasks (multi-hour runs, MFA, sensitive data, recovery-on-failure — reliability was the central engineering focus). The stated fit with Sierra: Horizon long-horizon agents (loan origination, healthcare prior authorization) need to cross systems that lack APIs, and "the best [browser agents] now outperform people on many real-world tasks." Anon's team and technology join Sierra, whose agents already handle billions of customer interactions per year.
+Source: [[raw/articles/sierra.ai--blog-sierra-acquires-anon--83418c5d.md]]
+
+**JPMorganChase Hall of Innovation** (inducted Oct 29, 2026 at J.P. Morgan's 18th annual Technology Innovation Symposium, Palo Alto; announced Nov 2026). Established 2011, the Hall recognizes privately held technology companies with significant impact at JPMorganChase. Chase CIO Gill Haus framed the award around trust/security/controls for agentic AI in banking ("a strong collaborator as we explore how this technology can help shape the future of banking responsibly"); Bret Taylor restated Sierra's thesis of "a single digital front door that users don't have to learn because it learns them." Direct evidence of Sierra's regulated-finance (banking) traction alongside the Compliance Console release.
+Source: [[raw/articles/sierra.ai--blog-jpmorganchase-hall-of-innovation--3856e7f1.md]]
+
+**Accelerators** (Nov 2026). Prebuilt, Sierra-maintained workflow packages added to an agent — "the basics" that commoditize across industries: greetings, multilingual interaction, name matching, CSAT collection, plus industry packs (banking: transaction search, dispute status, financial-advice guardrails; healthcare: appointment scheduling, patient authentication, clinical-safety guardrails that detect when a routine call becomes urgent; telecom/media: retention journeys, billing, proactive upsells; insurance: quoting, first-notice-of-loss intake, coverage-advice guardrails). Key design properties: (1) versioned upgrades — Sierra's updates preserve customer customizations tracked separately, with a full change review before applying (contrast with one-time templates); (2) system-agnostic — a workflow connects to the customer's existing system of record rather than requiring a replacement; (3) soon, customers can build and share their own internal Accelerators (e.g. a legal-approved guardrail set) across teams. Pairs with Ghostwriter (which customizes them) and targets "testing in minutes" time-to-value. First Accelerators live in Agent Studio.
+Source: [[raw/articles/sierra.ai--blog-accelerators--3122018d.md]]
 
 ## Significance
 

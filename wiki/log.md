@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-11-06] ingest | blog-ingest: 30 new, 20 saved (13 by script + 7 recovered by agent; run 20261106T100025Z)
+
+- **Recovered unsaved (7)**: dwarkesh.com Clocktower benchmark (direct curl 200); OpenAI GPT-6 Cyber + National Community Compact (Wayback `<article>` extraction, direct 403); OpenAI Australian-universities / Cult.fit Codex / Merge / Flipsnack (RSS description only — 403 + no Wayback snapshot). Checkpoint latest.json + archive updated to 20 saved / 0 unsaved with `agent_recovery` note.
+- **Priority wiki ingest (4 pages)**:
+  - 🆕 `concepts/ai-benchmarks/blood-on-the-clocktower-dwarkesh.md` — Dwarkesh's $20K Blood-on-the-Clocktower social-deception benchmark: GPT-6 Astra +430 Elo over Opus 4.6 (386 games), OpenAI's good-side skepticism edge, programmatic Storyteller, self-iterating RL-environment angle.
+  - ✏️ `entities/dwarkesh-patel.md` — Clocktower post added to Blog Posts list + sources.
+  - ✏️ `entities/openai.md` — Nov 2026 section: GPT-6 Cyber (ExploitGym 48.5%, 99.93%/100% in-scope alignment, 948 Linux privesc exploits, 81 Firefox 0-days, Daybreak Blue/Red) + National Community Compact / Compute Campus Policy Blueprint.
+  - ✏️ `entities/sierra.md` — Nov 2026 section: Anon acquisition ("Plaid for AI agents", browser-use infra, $13M raised), JPMorganChase Hall of Innovation induction (Oct 29), Accelerators product (versioned workflow packages in Agent Studio).
+- **Skip as raw-only**: shkspr.mobi headphone review, Simon Willison Paul Ford quote, idiallo byte-size ×2, dfarq Micron Computers history, Old NewThing Win32 static control, Salon shutdown / Meta Edits (daringfireball relays), seangoedecke database-as-global-variables (off-theme; triage may reconsider), garymarcus market mayhem (link-post stub, 778 B).
+
 ## [2026-11-05] x-accounts-scan | 6 new posts from 4 accounts — Resin, VLM visual semiotics, SEO Skill
 
 ### New pages
