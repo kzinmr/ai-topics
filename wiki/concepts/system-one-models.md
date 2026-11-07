@@ -103,3 +103,4 @@ Eric Zhang ([[entities/eric-zhang|Eric Zhang]], Thinking Machines Lab) shipped *
 - [[concepts/structured-outputs|Structured Outputs]] — the schema-validation substrate this class hardens
 - [[concepts/token-economics|Token Economics]] — why free parallel output rewrites the cost curve
 - [[concepts/coding-agents/model-routing|Model Routing]] — the routing/guardrail use case System One serves natively
+- [[concepts/calibrated-escalation|Calibrated Escalation]] — Hightouch's Jev+Opus hybrid judge (Nov 2026, HN 488p): Jev's confidence calibration (mistakes near 50%) beats Luna's (overconfident 90–100%) and is what makes confidence-band escalation to a frontier model work — 98.8% @ >4x lower cost

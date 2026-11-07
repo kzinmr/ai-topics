@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3378
-> Last updated: 2026-11-06
+> Total pages: 3383
+> Last updated: 2026-11-07
 
-## Entities (962 pages)
+## Entities (963 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -393,6 +393,7 @@
 - [[entities/herman-s-blog]] — Herman Martinus
 - [[entities/hermes-4]] — Hermes 4
 - [[entities/hermes-agent]] — Hermes Agent Architecture
+- [[entities/hightouch]] — Hightouch — composable CDP ($150M @ $2.75B, Goldman Sachs/Bain CV); source of the calibrated-escalation decision-model→frontier benchmark series (Jev+Opus IDR judging, HN 488p, Nov 2026)
 - [[entities/hetzner-ai]] — Hetzner AI — German cloud provider entering the LLM inference market with competitive GPU-backed endpoints and European AI sovereignty positioning
 - [[entities/hex-technologies]] — Hex Technologies; agentic notebooks, conversational analytics, DataBench benchmark (Aug 2026); Notebook Agent prompting guide (Sep 2025); Hex 4.0 rewrite (Oct 2026); Hero self-improving agent observability (Nov 2026)
 - [[entities/hidream-o1-image]] — HiDream-O1-Image
@@ -970,7 +971,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2307 pages)
+## Concepts (2311 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
@@ -1549,6 +1550,7 @@
 - [[concepts/cadence-strategic-guidance-coding-agents]] — Cadence (arXiv:2610.12269) — health-adaptive strategic guidance scheduler for coding agents; scores each trajectory step's deviation and fires LLM guidance only on threshold violation; +25.33% vs always-on on mini-swe-agent, ~60% fewer guidance calls, 11% fewer tokens — guidance as a resource to ration
 - [[concepts/caching-performance-cost-optimization]] — Caching Performance Cost Optimization
 - [[concepts/coding-agent-harness-design-study]] — Coding Agent Harness Design Study (arXiv 2609.20804, Sep 2026) — first component-level ablation of a coding harness: planning, action space, context management across 4 models / 176 settings on SWE-Bench Verified + Terminal-Bench 2.1; every effect is model- and budget-conditional
+- [[concepts/calibrated-escalation]] — Calibrated Escalation — decision-model→frontier hybrid judging (Hightouch Nov 2026): Jev-first + Opus-second on the 30–90% confidence band = 98.8% @ $0.88/1k vs Opus 99.0% @ $3.86; calibration (not accuracy) decides cascade success — overconfident Luna fails the same harness (HN 488p; vendor benchmarks)
 - [[concepts/comprehension-interface]] — Comprehension Interface — Karpathy (Oct 2026): output-format ladder for understanding LLM output (ASD-STE100 → diagrams → HTML → 3b1b-style videos); consumption-side complement to ai-output-format-progression; tied to cognitive load/debt
 - [[concepts/harness-tax]] — Harness Tax — hidden cost premium of a coding agent's harness: Portkey's coined term (Apr 2026) + HarnessTax study (Pan et al., UC Berkeley / Arena.ai, Sep 2026): 21 model–harness pairs (Claude Code/Codex CLI/Pi), similar success at up to 5× cost; minimal Pi hits the Pareto frontier; alternative harness won 9/12 comparisons
 - [[concepts/hybrid-reasoning-agents]] — Hybrid Reasoning Agents (arXiv 2610.18861, Together; HN 429p Oct 18) — agents that think in latent space and act through text; latent-reasoning pitch applied to agentic workloads, benchmarks still unverified
@@ -2459,9 +2461,11 @@
 - [[concepts/mcpacific-mcp-ecosystem-taxonomy]] — MCPacific: 368,754 MCP server listings → 124,267 unique servers, 1.33M tool specs into a 58,915-capability functional taxonomy; 85% non-dev tools, taxonomy improves task completion up to +12 pts Pass@0.75 (arXiv:2610.05319, Oct 2026)
 - [[concepts/mcp-protocol]] — MCP Protocol Testing & Security
 - [[concepts/mcporter]] — MCPorter — TypeScript runtime, CLI, and code-generation toolkit for MCP; auto-discovers servers from Cursor/Claude/Codex/Windsurf/VS Code; 4.7k★ (June 27)
+- [[concepts/mcp-explained]] — MCP Explained (mcp-explained.com, Runlayer) — interactive HN-frontpaged tutorial on MCP: host/server/model roles, "not REST / not just JSON-RPC" framing, capability negotiation, spec time machine (base 2025-11-25), honest spec-vs-harness labeling (HN 338p, Nov 2026)
 - [[concepts/munder-difflin]] — Munder Difflin — Open-source multi-agent harness running an "office of your clones": wraps 12 CLI coding agents (Claude Code/Codex/Grok/...), per-person persistent clones with shared MemPalace memory, E2E-encrypted clone-to-clone messaging, local-first nodes + optional 24/7 sandbox VMs; #1 GitHub Trending (Aug 22, 2026)
 - [[concepts/mu-tools-for-agents]] — Mu — Open-source suite of 18+ developer tools for AI agents, distributed as an MCP server in Go; browser, git, image, video, file system, and social media integrations (Aug 2026)
 - [[concepts/mercury-3-diffusion-llm]] — Mercury 3 (Inception Labs) — most capable diffusion LLM to date; ~1,068 tok/s (4-8x faster), matches GPT-6 Luna / Claude Haiku 5.5, 1M ctx, $0.20/M in · $0.70/M out; proves diffusion scaling laws hold; strong on browser-use/real-time agents
+- [[concepts/memorilla-latent-semantic-memory]] — Memorilla (arXiv:2610.21375, Leskovec/Stanford) — fixed 16 query-dependent latent memory tokens in the LLM input embedding space; beats Mem0/MemoRAG on 5/8 benchmarks; FactKG 84.33% vs 80.43% full-context @108x fewer tokens; TextWorld agent success 18.6%→24.2% (HN 105p, Nov 2026)
 - [[concepts/mechanistic-interpretability]] — Mechanistic Interpretability (redirect → interpretability)
 - [[concepts/megakernel-for-llm-inference]] — Megakernel for LLM Inference (redirect → megakernel-inference)
 - [[concepts/megakernel-inference]] — Megakernel for LLM Inference; Lucebox fused kernel + Aug 2026 megakernel debate (Rubin dependency triggers, Cursor MoK)
@@ -2698,6 +2702,7 @@
 - [[concepts/overture-maps-foundation]] — Overture Maps Foundation
 - [[concepts/pace-provenance-aware-capability-enforcement]] — PACE — Provenance-Aware Capability Enforcement: constrains agent *plans* (not just tool-call tokens) via evidence-flow dependencies between actions; 18-condition DSL + causal graph, 73.3% attack block vs 6.7% baseline (arXiv:2610.01349, Oct 2026)
 - [[concepts/package-management]] — Package Management
+- [[concepts/p-jit-21k]] — P-JiT 21K (Linum) — 2.18B pixel-space Apache-2.0 text-to-image DiT trained for $21,038 (8,415 H100-hr); 32×32 token reduction kills the VAE (4× attention context cut, 11× faster convergence); trunk readouts + PixelREPA→DINOv3-L; FDFO post-training with JEV-Image judges (HN 274p, Nov 2026)
 - [[concepts/palantir-ai-fde]] — AI FDE (Foundry Decision Engine)
 - [[concepts/pallets]] — Pallets
 - [[concepts/parametric-factuality-recall-bottleneck]] — Parametric Factuality: Recall Is the Bottleneck — Google Research knowledge-profiling framework (Aug 2026)

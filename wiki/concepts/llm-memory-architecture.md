@@ -184,4 +184,5 @@ Eventually subsumed by fully-learned, end-to-end memory approaches represented i
 - [[concepts/ai-memory-systems]] — OpenAI vs Anthropic vs Cognition memory design comparison
 - [[concepts/claude/memory]] — Claude's filesystem-based memory approach
 - [[concepts/context-engineering|Context Engineering]] — Managing what the model sees and when
+- [[concepts/memorilla-latent-semantic-memory]] — Memorilla: fixed 16 latent "memory tokens" placed in the input embedding space beat Mem0/MemoRAG and full-context (arXiv:2610.21375, Nov 2026)
 - [[entities/grant-slatton]] — Author

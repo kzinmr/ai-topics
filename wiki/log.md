@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-11-07] active-crawl | 4 new topics: calibrated escalation, Memorilla, P-JiT 21K, MCP Explained + Hightouch entity
+- New concepts (4): [[concepts/calibrated-escalation]] (Hightouch Jev+Opus hybrid IDR judge, 98.8% @ 4.4x cheaper, HN 488p — vendor benchmarks, confidence medium), [[concepts/memorilla-latent-semantic-memory]] (arXiv:2610.21375, Leskovec/Stanford; 16 latent memory tokens beat Mem0/MemoRAG 5/8, FactKG 84.33 vs 80.43 full-context @108x fewer tokens, HN 105p), [[concepts/p-jit-21k]] (Linum 2B Apache-2.0 pixel-space T2I, $21,038 / 8,415 H100-hr, 32×32 token reduction, FDFO+JEV-Image post-training, HN 274p), [[concepts/mcp-explained]] (Runlayer interactive tutorial, spec 2025-11-25, HN 338p)
+- New entity (1): [[entities/hightouch]] (composable CDP, $150M @ $2.75B; decision-model benchmark series)
+- Raw articles (4): hightouch LLM-judges IDR, arXiv Memorilla abstract, linum pjit-21k field notes, mcp-explained.com landing (thin capture — JS lessons not in DOM)
+- Cross-refs added: system-one-models + model-routing → calibrated-escalation; concepts/mcp → mcp-explained; llm-memory-architecture → memorilla
+- HN verified via Algolia URL search (ids 50397429 / 50395919 / 50368208 / 50379249). Dedup: RTX Spark/NPCF story skipped (covered by 11-04 active-crawl in concepts/nvidia-platform-controllers-and-framework); Rivet Launch HN skipped (existing entities/rivet-dev, thin launch post)
+
 ## [2026-11-06] skeleton-enrich-daily | backlog empty — no action
 
 - Whole-tree frontmatter scan: 0 `status: skeleton` entity markers (only log-prose hit in log-2026-05-13.md). 0 stub entities. Recent entity commits (trending-topics, blog-ingest, x-accounts-scan, watchdog) all fully enriched. Snapshot: [[queries/2026-11-06-skeleton-enrich-empty]].

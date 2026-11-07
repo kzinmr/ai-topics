@@ -374,3 +374,4 @@ MCP and REST are complementary layers in the AI stack: the REST API handles the 
 - [[concepts/security-and-governance/agent-governance]] — Runtime guardrails that apply to MCP tool invocations
 - [[concepts/agentic-web]] — Agent-first web architecture, includes MCP Apps as UI standard
 - [[entities/mcp-ui]] — Alternative open-source standard for UI over MCP (by Ido Salomon)
+- [[concepts/mcp-explained]] — Interactive Runlayer tutorial (HN 338p, Nov 2026): host/server/model roles, "not REST / not just JSON-RPC" framing, spec time machine
