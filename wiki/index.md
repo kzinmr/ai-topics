@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3383
+> Total pages: 3384
 > Last updated: 2026-11-07
 
 ## Entities (963 pages)
@@ -971,7 +971,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2312 pages)
+## Concepts (2313 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
@@ -1246,6 +1246,7 @@
 - [[concepts/ai-benchmarks/deepswe-benchmark]] — DeepSWE Benchmark (Datacurve); + DeepSeek V4 Pro 0813 vs Claude Fable 5 head-to-head (Together AI Aug 2026): 90x cost gap, pass@4 88.5 vs 84.1, Pro-first cascade 82.7% at $8.28; + Breunig "end of the free lunch" tiering thesis cross-ref
 - [[concepts/ai-benchmarks/design-arena]] — Design Arena
 - [[concepts/ai-benchmarks/factorio-learning-environment]] — Factorio Learning Environment (FLE)
+- [[concepts/hackerbooks]] — HackerBooks — HN-comment-mined book discovery service (hackerbooks.org); Show HN 2026-11-01, 1404 pts / 234 comments
 - [[concepts/hackertube]] — HackerTube — Karpathy's HN-curated YouTube clone built end-to-end by Opus 5.5 in ~2h; 504M/7.6M token economics, Sonnet-labeled 40K-comment curation (Oct 31, 1449 pts HN)
 - [[concepts/ai-benchmarks/freshstack-benchmark]] — FreshStack Benchmark
 - [[concepts/ai-benchmarks/frontier-swe-benchmark]] — FrontierSWE Benchmark

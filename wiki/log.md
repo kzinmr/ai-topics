@@ -1,5 +1,26 @@
 # Wiki Log
 
+## [2026-11-07] watchdog | auto-fix - index registration + pipeline triage (17:35 UTC)
+
+### Auto-fixed
+- **index.md**: registered 1 genuinely unindexed top-level concept (`concepts/hackerbooks`, 2887 B, created 2026-11-02) at its alphabetical position; header counts recomputed `Concepts 2312 -> 2313`, `Total pages 3383 -> 3384`. `validate_index.py` exit 0.
+
+### Verified already-clean (no action needed)
+- Index corruption: pipe prefixes 0, triple brackets 0, line-number prefixes 0, space-prefixed markers 0, L2 pipe bullets in entities/concepts 0.
+- Index ghosts: 0 top-level wikilinks pointing to missing files. 23 duplicate slugs all have their own `.md` (legitimate redirect-stub entries, per A4b pre-check).
+- 3 of 5 "not indexed" candidates were false positives - already indexed inside the drifted recent-additions block at the top of the Concepts section (`ai-agent-bureaucracy`, `ai-cost-of-js-frameworks`, `triggerdev-env-var-exposure-2026-11`).
+- 4th candidate (`queries/2026-11-05-skeleton-enrich-empty`) intentionally skipped: 29-line "no action" run-snapshot note, not durable knowledge.
+- Weekly-report cross-ref gaps already repaired upstream: `concepts/qwen` -> `[[entities/qwen]]` (line 81), `concepts/agent-harnesses` -> `[[comparisons/agent-harnesses]]` (line 146).
+- swe-bench stray-backslash malformed links: 0 real occurrences - only appeared inside the 2026-11-06 graph report's own quoted text.
+- log.md: H1 header present exactly once at line 1, not buried.
+
+### Pipeline triage (report-only)
+- `blog-triage`, `blog-wiki-ingest`, `newsletter-wiki-ingest` all `last_status: error` - root cause for all three is `RuntimeError: Response truncated due to output length limit`, which cascades as "failed to parse JSON response" into the next stage.
+- `newsletter-triage` reported `ok` but emitted non-parseable JSON for the same truncation reason.
+- `x_accounts stale(26h)` is a false positive: schedule `30 22 */2 * *` (every 2 days), last run 2026-11-05 22:41 UTC with `last_status: ok`.
+
+---
+
 ## [2026-11-07] Trending-topics ingest (12:00 UTC)
 - New concept: [[concepts/ai-rd-acceleration-doubling]] — METR Anthropic R&D acceleration assessment (AECI ~1.9x, 2yrs/1yr, AI automating AI R&D) + Ajeya Cotra compounding/superintelligence-within-a-year take (HN 321p item 50397994, METR blog 2026-11-05). 2 raw files, SCHEMA += metr/ai-forecasting/ai-risk.
 - Report: inbox/rss-scans/trending-topics-2026-11-07.md
