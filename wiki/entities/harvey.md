@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-10-31
+updated: 2026-11-07
 tags:
   - security
   - company
@@ -12,6 +12,7 @@ tags:
   - benchmark
   - harness-engineering
   - knowledge-graph
+  - ai-legal
 aliases:
   - "Harvey Agentic SOC"
   - "Harvey AI"
@@ -56,6 +57,7 @@ sources:
   - raw/articles/2026-10-28_harvey_why-legal-intake-should-create-a-clear-path-to-resolution.md
   - raw/articles/2026-10-30_harvey_legal-agent-bench-us-case-law.md
   - raw/articles/2026-10-28_harvey_legal-engineer-help-legal-teams-apply-expertise-with-ai.md
+  - raw/articles/2026-11-06_harvey_forum-chicago-product-announcements.md
 ---
 
 # Harvey
@@ -1059,3 +1061,36 @@ The governance framing is the sharpest part: **"Adoption without governance crea
 Skills claim that generalises past legal: **"what you need is the ability to write with precision and think in systems. If you can draft a tight contract clause or a clear legal brief, you already have the core skill for writing a strong prompt or designing an agent"** — i.e. prompt/agent design is recast as a species of legal drafting, and decomposition-plus-defining-a-good-result is presented as existing lawyer practice. Entry route is Harvey Academy's free self-paced **Legal Engineering Certification**. This is Harvey's second Legal-Engineering career post (after the litigation-lawyer-to-Legal-Engineer piece) — the pair is evidence Harvey is deliberately *creating* a job family, which also manufactures the admin layer that its platform needs in order to be deployed.
 
 Sources: [[raw/articles/2026-10-28_harvey_why-legal-intake-should-create-a-clear-path-to-resolution]], [[raw/articles/2026-10-28_harvey_legal-engineer-help-legal-teams-apply-expertise-with-ai]]
+
+## Harvey Fact Graph — one evolving fact record for disputes and investigations (Nov 5, 2026)
+
+Harvey introduced the **fact graph**, the fourth named component of [[#Harvey Graph (Oct 2026)|Harvey Graph]], aimed squarely at disputes, litigation and internal-investigations teams ([post](https://www.harvey.ai/blog/fact-graph-for-litigation-disputes-internal-investigations), Nov 5, 2026). It extracts facts from each document, **links each fact back to the exact line of text**, and connects facts to one another and to the people, events and issues they concern — across millions of documents and over the whole lifetime of a matter.
+
+**The problem it targets is the litigation cold-start**: "who knew what and when, whether accounts hold up against the evidence, and where the record has gaps." His canonical example is a defect email warning an executive followed months later by meeting notes recording the same executive approving the launch despite knowing of the defect — two documents that never reference each other, years apart.
+
+Three design properties worth recording:
+- **The record grows with the matter.** New documents are extracted, connected into the existing graph, and **inconsistencies are flagged** — new evidence can fill a gap, challenge an earlier account, or retroactively raise the significance of a detail found months earlier.
+- **Work product is generated off the shared record**, not off a fresh reconstruction: chronologies, witness interview outlines, deposition memos, hearing/trial preparation. Harvey "keeps the context up-to-date and flags where prior work is outdated" rather than requiring manual refresh.
+- **Handoff durability.** Matters "can run for years, outlasting the teams that first worked on them," and new counsel often joins "just weeks before trial." Facts, supporting sources, review decisions and work product stay together with a traceable **audit log**, so an incoming lawyer sees how the team assessed earlier information instead of re-reviewing the corpus.
+
+**Commercial/staffing signal**: **litigators make up a third of Harvey's customer base** — the fact graph is Harvey's first dedicated capability for that segment rather than a general-purpose surface. It is being built with **Slaughter and May** as design partner (Richard Jeens, Disputes Partner and Innovation Committee member); **early access** is open.
+
+**Read**: this is the vertical-agent extension of the structured-context-over-flat-RAG argument Harvey already made with Harvey Graph — the differentiator is not the model but **what the agent can trace, with provenance, before the task starts**. The litigation variant adds a dimension transactional work did not need: *contradiction detection across a timeline*, which is the mechanical core of building a narrative from a document production. Compare [[concepts/context-engineering/context-graph]], [[concepts/knowledge-graph-memory-agents]], [[concepts/agentic-alternative-to-graphrag]] and [[concepts/artifact-provenance-gates]].
+
+Sources:
+- [[raw/articles/2026-11-06_harvey_fact-graph-for-litigation-disputes-internal-investigations.md]]
+- [[raw/articles/2026-11-06_harvey_forum-chicago-product-announcements.md]]
+
+## Harvey FORUM Chicago — Outlook agent, self-routing Intake, fact-graph keynote (Nov 5, 2026)
+
+Product announcements from Harvey's FORUM Chicago event ([post](https://www.harvey.ai/blog/forum-chicago-product-announcements)); the CPO framing (Anique Drumright) is that Harvey is becoming "more **personalized** for how your teams serve the business and **specialized** to what your practice area needs."
+
+**1. Outlook add-in — agents where the work already happens.** Harvey agents now run inside the inbox and calendar: triage and filing (sort incoming mail by matter/deal, file attachments into the right Vault), drafting replies and proposing resolutions to scheduling conflicts in-thread, kicking off first-pass review when a new draft lands (pulling context from connected systems), and **user-built agents** — the example given is a personal daily-briefing agent that triages your inbox overnight so a summary is waiting at 9am. **Nothing is sent, filed or changed without the user seeing it first.** The demo followed an M&A partner through one Tuesday morning (overnight triage done, purchase-agreement draft reviewed, a client's prior LOIs pulled for a negotiation question — all from the inbox); Harvey's stated value proposition is deliberately modest: "the value was an easier morning." Available today via the Outlook add-in.
+
+**2. Intake — a contract request that routes itself** (early access, in-house). The request is picked up **straight from the email the business sends to Legal — no form or portal**; deal background and past contracts are gathered automatically before a lawyer opens it; Harvey asks the requester the clarifying questions *your* team would ask, in the same thread; routing to a Contract Review Agent and the right lawyer follows parameters the team defined; the lawyer receives a first pass where **every redline is traced to your precedents and standards**; the reviewed contract returns to the original thread and, once signed, feeds contract insights for next time. Pairs with Contract Intelligence updates to take a request all the way to a signed agreement on the team's own rules.
+
+**3. Fact graph keynote** — first public product look at the disputes/litigation/investigations capability (recorded in the section immediately above).
+
+**Read**: the through-line is **channel-native entry points plus delegation with an approval gate** — Harvey is competing less on model quality than on occupying the surfaces legal work actually arrives through (Outlook, an email thread, a request queue), while keeping human sign-off on every state change. That is the enterprise-agent pattern in [[concepts/enterprise-agents]] applied to a professional-services workflow, and the "no form, no portal" intake design is the concrete answer to the intake-form two-sided failure documented above.
+
+Source: [[raw/articles/2026-11-06_harvey_forum-chicago-product-announcements.md]]

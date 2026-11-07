@@ -4,7 +4,7 @@
 > Total pages: 3384
 > Last updated: 2026-11-07
 
-## Entities (963 pages)
+## Entities (965 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -56,6 +56,7 @@
 - [[entities/amd]] — AMD — GPU/silicon company; MI455X 2nm datacenter silicon (20PF FP8), Helios rack-scale system, ROCm software ecosystem, CUDA moat challenge, Agentic Kernel Generation strategy (July 2026)
 - [[entities/amd-ryzen-ai-halo]] — AMD Ryzen AI Halo — $4,000 AI dev kit with unified memory architecture for local LLM inference; competitor to NVIDIA and Apple Silicon in local AI hardware (July 2026)
 - [[entities/amp]] — Amp
+- [[entities/alphaxiv]] — alphaXiv — social reading layer over arXiv ("discuss, discover, and read arXiv papers"); named by Karpathy on 2026-11-01 as the successor to his retired arXiv Sanity Preserver ("too much work to maintain… would have been a lot easier today")
 - [[entities/andon-labs]] — Andon Labs
 - [[entities/anekha-sokhal]] — Anekha Sokhal — founder/CEO of Moshi (hellomoshi.ai), recommendation engine for commodity traders; ex-JPMorgan energy derivatives trader (Warwick); "Bloomberg × Claude × Netflix baby"; AI Engineer NYC 2026 (Oct 2026)
 - [[entities/andrej-karpathy]] — Andrej Karpathy — Founding member of OpenAI, former Sr. Director of AI at Tesla, creator of nanogpt/micrograd; pioneer of LLM wiki patterns
@@ -229,7 +230,7 @@
 - [[entities/daytona-io]] — Daytona
 - [[entities/daytona-sandbox]] — Daytona Sandbox (Claude Managed Agents)
 - [[entities/dean-ball]] — Dean W. Ball; enriched with "What Should Be Done" — analysis of EO on Cyber and AI as de facto licensing regime, IVO proposal for frontier model governance, Obernolte-Trahan Great American AI Act endorsement (June 27)
-- [[entities/decagon]] — Decagon; added Duet Autopilot — automated A/B testing, simulation, Watchtower QA, redefining forward deployment (June 24)
+- [[entities/decagon]] — Decagon; added Duet Autopilot — automated A/B testing, simulation, Watchtower QA, redefining forward deployment (June 24) Added Autopilot experiments (A/B testing for AI agents; parallel variants on real traffic; 4 components, no-code builder, guardrails).
 - [[entities/decision-lab]] — Decision Lab
 - [[entities/decision-lens]] — Decision Lens
 - [[entities/deedydas]] — Deedy Das
@@ -315,7 +316,7 @@
 - [[entities/exa]] — Exa
 - [[entities/fabiensanglard-net]] — Fabien Sanglard
 - [[entities/fable]] — Fable (Anthropic coding harness); creative thinking partner use case; "square peg for a round hole" tension in harness design 🆕
-- [[entities/factory]] — San Francisco-based startup building autonomous AI coding agents ('Droids') for enterprise software development. Databricks partnership (Oct 2026): agentic data+software modernization on the Data + AI Platform, Lakebase/Lakeflow/AI-BI execution, Databricks Marketplace burn-up to 10% of commitment. $1.5...
+- [[entities/factory]] — San Francisco-based startup building autonomous AI coding agents ('Droids') for enterprise software development. Databricks partnership (Oct 2026): agentic data+software modernization on the Data + AI Platform, Lakebase/Lakeflow/AI-BI execution, Databricks Marketplace burn-up to 10% of commitment. $1.5... Added HumanLayer HITL product, GPT-5.1-Codex-Max 11.5% SWE-bench Pro uplift, DGX Spark local Droids.
 - [[entities/factory-ai]] — Factory.ai
 - [[entities/faire]] — Faire
 - [[entities/farhan-thawar]] — Farhan Thawar
@@ -389,7 +390,7 @@
 - [[entities/harvey]] — Harvey; enriched with "Training a Legal Agent" Applied Compute methodology — domain-specific agent training, behavioral evaluation, vertical AI agent trend (June 24); Legal Operations Management guide — five core legal ops functions, AI governance responsibility, CLOC maturity model (Aug 1); Legal Discovery & defensible AI protocols — EDRM lifecycle, TAR vs generative review, five-element protocol (Jun 5); Legal Knowledge Management guide — KM as binding constraint on legal AI, four layers (content/people/technology/governance), RAG grounding metrics (Jun 8); AI-Powered Due Diligence for M&A — data room workflows, GSK Stockmann 15-75% savings, PwC 10k+ workflows, 25k+ custom agents (Apr 2026); Legal Tech Overview guide — six core categories, citation grounding baseline (Jun 18); How-to-Choose Legal AI Platform evaluation guide — 10 criteria, 92% adoption, 25h/mo savings (Apr 2026); In-House Legal Operations guide — 89% outside-counsel spend stat, in-house role ladder, 6-18mo build sequence, small-team habits (Jun 22); Contract Analysis Automation guide — task decomposition, 3-factor workflow selection, 5 evaluation criteria, 4-phase adoption, Bayer ~3h/wk case study (May 11); AI for General Counsel guide -- 87% GC gen-AI adoption stat (FTI/Relativity), shadow AI governance, GC as AI governance lead, five-step adoption plan (Jun 23); How to Use AI as a Lawyer guide — workflows, four tool-eval factors, ethics/competence, staged rollout (Jun 8); AI Agents for Legal Work — leverage areas, six governance dimensions, associate craft shift, 700K daily tasks (Jun 8); AI Contract Drafting guide — 80/20 pattern, Word/Outlook/matter integrations, Contract Intelligence outlook (Jun 12); Harvey Graph context layer — knowledge graph + per-Space context graph, LAB +30% rubric pass / -50% task cost, 0%-to-75% firm-knowledge exemplar (Oct 2026)
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM; Salesforce Ventures Generative AI Fund; relational intelligence category (L3)
 - [[entities/halo-tamper-evident-agent-runtime]] — Open-source tamper-evident runtime evidence for AI agents; append-only hash-chained log (Apache-2.0)
-- [[entities/hebbia]] — Hebbia
+- [[entities/hebbia]] — Hebbia Added knowledge graph for financial institutions (entity-resolution, 94% multi-source reconciliation).
 - [[entities/herman-s-blog]] — Herman Martinus
 - [[entities/hermes-4]] — Hermes 4
 - [[entities/hermes-agent]] — Hermes Agent Architecture
@@ -591,7 +592,7 @@
 - [[entities/multiverse-computing]] — Multiverse Computing; Quasar 438B open-weights model (HLE 44.7%, Apache 2.0, Cohere-hosted) billed "Europe's leading AI model" (Sep 2026)
 - [[entities/mistral-voxtral-tts]] — Mistral Voxtral TTS
 - [[entities/mit-ibm-computing-research-lab]] — Joint MIT-IBM research lab (est. April 2026) exploring convergence of AI, algorithms, and quantum computing. Successo...
-- [[entities/mitchell-hashimoto]] — Mitchell Hashimoto
+- [[entities/mitchell-hashimoto]] — Mitchell Hashimoto — Ghostty terminal author; libghostty C ABI, 200+ contributors, Windows GA, "The Next Generation of the Terminal".
 - [[entities/mitchell-hashimoto-ghostty]] — Mitchell Hashimoto — Ghostty Terminal Emulator
 - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
 - [[entities/mixedbread]] — Mixedbread
@@ -891,6 +892,7 @@
 - [[entities/tom-aarsen]] — Tom Aarsen
 - [[entities/tom-renner]] — Tom Renner
 - [[entities/tomasz-tunguz]] — Tomasz Tunguz
+- [[entities/tristan-hume]] — Tristan Hume — thume.ca researcher/blogger; his 2026-11-01 refreshed YouTube tier list (S5/A14/B12/C33/D92) became the curation corpus for Karpathy's TristanTube
 - [[entities/transluce]] — Transluce — AI safety research institute (Alex Mabrey, Nathan Carter); URLQuery-based Agent Activity Report documenting real-world rogue agent behavior
 - [[entities/traversal]] — Traversal
 - [[entities/troy-hunt]] — Troy Hunt; Weekly Update 526 "Building HIBP AI/SI First" — HIBP operating-priority shift toward AI/security-intelligence (Oct 2026, title-level)
@@ -927,7 +929,7 @@
 - [[entities/walden-yan]] — Walden Yan
 - [[entities/wasteland-annotated]] — Wasteland Annotated (emollick) — Ethan Mollick's annotated-translation project rendering the Waste Land as an agent-annotated web artifact
 - [[entities/wandb-weave]] — W&B Weave
-- [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23); Terminal Internals Explainer — PTY/line discipline/escape sequences deep dive (Jan 2023)
+- [[entities/warp-terminal]] — Warp Terminal; enriched with Self-Improvement Loop for Skills (Execute→Evaluate→Revise cycle, YAML skill definitions, human-in-the-loop approval) (June 23); Terminal Internals Explainer — PTY/line discipline/escape sequences deep dive (Jan 2023) Added agent-native shell (stdin to agent, agent edits shell config, agent-authored plugins, $8.65/M cache-read) + AX principles + software-factory thesis.
 - [[entities/world-labs]] — World Labs; Fei-Fei Li's spatial-intelligence startup; Marble 3D world model (persistent Gaussian-splat worlds, editor, API, paid tiers) — only shipped structured-3D world model (Sep 2026)
 - [[entities/weaviate]] — Weaviate; added Engram GA — memory-as-asynchronous-infrastructure for AI agents (June 25)
 - [[entities/webmcp]] — WebMCP
@@ -971,7 +973,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2313 pages)
+## Concepts (2314 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
@@ -3189,6 +3191,7 @@
 - [[concepts/training/trl]] — training/trl
 - [[concepts/training-divergence-reproducibility]] — LLM Training Divergence & Reproducibility — why faithfully reproduced models diverge from original weights; GPT-2 overtraining case study; Chinchilla violations and unresolved IFT gap (July 2026)
 - [[concepts/trajectory-post-training-platform]] — Trajectory — Post-Training Platform
+- [[concepts/tristantube]] — TristanTube — Karpathy's Claude-Code "one-shot in 3 minutes" viewer over Tristan Hume's YouTube tier list (~47K videos + TV mode, Nov 7 2026); sibling of [[concepts/hackertube]], together the "hand a trusted human's curation list to a coding agent" pattern
 - [[concepts/transformer-architecture]] — Transformer Architecture
 - [[concepts/transformers-library]] — transformers-library
 - [[concepts/translategemma]] — TranslateGemma
@@ -3326,7 +3329,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (50 pages)
+## Events (51 pages)
+
+- [[events/hf-harness-adapters-launch-2026]] — HF "harness adapters" (harness-hub, Nov 6 2026) — one LoRA per (base model × harness) for pi/opencode/hermes, GRPO RL on verifiable tasks inside unmodified harnesses, fewer tool calls at equal-or-better accuracy; safeagents blocks reward-hacking tool calls; Repo2RLEnvs built from public Hub agent trajectories; $5 vs $90 adapter-vs-merged checkpoint eval; LFM2.5-24B-A2B / LFM3-1.7B / TwIL-8B. Amplified by Tom Aarsen
 
 - [[events/gemini-api-cli-agent-skill]] — Google's Gemini API CLI (`gemini-api`) + `gemini-api-cli` agent skill (Nov 3, 2026) — stateless Go binary giving shell-capable agents (Claude Code, Codex, Hermes...) image/audio/video/file-analysis + managed-agent access via `npx skills add`; self-describing (`--schema`/`--usage`), `--dry-run`, JSON/TOON output. Announced by Philipp Schmid
 - [[events/linear-coding-sessions-launch]] — Linear Coding Sessions (Nov 3, 2026) — Linear Agent writes code via Claude Code / Codex in cloud sandboxes; triage→plan→build→review in one place, multiplayer sessions, draft PR diffs. Promoted by CEO Karri Saarinen amid Codex Cloud integration breakage
@@ -3381,7 +3386,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (50 pages)
+## Queries (52 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines

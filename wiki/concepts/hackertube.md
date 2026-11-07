@@ -2,7 +2,7 @@
 title: "HackerTube"
 type: concept
 created: 2026-11-01
-updated: 2026-11-01
+updated: 2026-11-07
 tags:
   - ai-agents
   - coding-agents
@@ -42,6 +42,15 @@ The manual work Karpathy retained: creating a Google Cloud YouTube-metadata API 
 - **Flagship vibe-coding exemplar**: a production-deployed, publicly-used web app built end-to-end by an agent, by one of the field's most prominent engineers, at 1449 HN points — the strongest mainstream statement yet of the "agent does everything, human supervises" workflow (see [[concepts/agentic-engineering]]).
 - **Batch-labeling cost pattern**: cheap-model (Sonnet) bulk classification + expensive-model (Opus) orchestration is a recurring agent cost-optimization design; the 90% cache hit rate on the input side is notable.
 - **Community-curation counterpoint to algorithmic feeds**: top HN comments argued YouTube's recommendations are bad by any user-centric metric ("They're interested in getting you to watch ads, they couldn't care less what you want" — globular-toast), and requested the same treatment for social media feeds.
+
+## Successor: TristanTube (Nov 7, 2026)
+
+Six days after HackerTube, Karpathy shipped [[concepts/tristantube|TristanTube]] — the same move applied to a
+single human curator ([[entities/tristan-hume|Tristan Hume]]'s refreshed YouTube tier list, ~47K videos, plus a
+TV mode) instead of HN comment history. He described it as **"one-shotted with Claude Code in 3 minutes"**,
+against HackerTube's ~2 hours. The gap is instructive: HackerTube's cost was dominated by Sonnet labeling ~40K
+recommending comments, whereas a human-written tier list needs no labeling pass at all — i.e. **the
+agent-build time is now proportional to how much curation work remains, not to app size**.
 
 ## Related
 

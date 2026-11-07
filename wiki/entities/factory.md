@@ -2,7 +2,7 @@
 title: "Factory"
 type: entity
 created: 2026-05-08
-updated: 2026-10-20
+updated: 2026-11-07
 tags:
   - company
   - coding-agents
@@ -21,6 +21,7 @@ sources:
   - raw/newsletters/2026-05-22-bens-bites-googles-take-on-openclaw.md
   - raw/articles/2026-08-25_factory_model-routing-belongs-in-the-harness.md
   - raw/articles/2026-10-20_factory_databricks-partnership.md
+  - raw/articles/2026-11-05_factory_humanlayer.md
 related:
   - [[concepts/subagent-patterns]]
   - [[entities/cursor-ai]]
@@ -167,3 +168,18 @@ Factory announced a partnership with [[entities/databricks]] (Oct 19, 2026): cus
 > Read: this is the coding-agent vendor moving up-stack from "write code" to "own a data-platform migration," using a hyperscaler-adjacent data platform as both distribution and governed context source. Compare [[concepts/enterprise-agents]] and Factory's [[#Factory Router: Model Routing in the Harness (Aug 2026)|harness-side model routing]].
 
 Source: raw/articles/2026-10-20_factory_databricks-partnership.md
+
+## Factory × HumanLayer acquisition (Nov 4, 2026)
+
+Factory announced on **November 4, 2026** that **[[entities/humanlayer]] is joining Factory** — Dex Horthy and Kyle Mistele (HumanLayer's founders, previously known for 12-Factor Agents and the Research/Plan/Implement "skill pack") bring their multiplayer coding-agent workspace into Factory's software-factory platform ([announcement](https://factory.com/news/humanlayer)).
+
+**What Factory said**:
+- HumanLayer's team has "been regularly **6-9 months ahead of the zeitgeist** on best practices for working with coding agents and software factories, especially for larger teams with hundreds or thousands of engineers."
+- **HumanLayer will be open sourced**, and existing HumanLayer users are invited to Factory. The current hosted platform stays up through a transition period supporting **data export, migration to Factory, or self-hosting the open-source HumanLayer**.
+- Near-term roadmap ports HumanLayer's most-used features into Factory: **multiplayer tasks/workstreams and in-app collaboration on agent-written plans, product specs, and design docs**.
+
+**Why it matters**: this is the consolidation of the two most visible "software factory" toolchains — Factory's governed, model-independent Droids platform (see [[#The Droids Platform]]) plus HumanLayer's human-in-the-loop review layer over agent sessions, plan artifacts and diffs. HumanLayer's positioning ("bring your own compute, development environment, and agent harness") made it the natural control plane for teams that did not want to adopt a single vendor's harness; folding it into Factory moves that control-plane layer **in-house for the first time** and narrows the neutral-HITL option set for enterprise agent fleets. Compare the independent-control-plane framing in [[concepts/harness-engineering/agent-harness]] and the multi-harness orchestration of [[entities/warp-terminal]].
+
+Sources:
+- [HumanLayer is joining Factory — Factory News](https://factory.com/news/humanlayer) (Nov 4, 2026)
+- raw/articles/2026-11-05_factory_humanlayer.md

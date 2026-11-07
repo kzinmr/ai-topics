@@ -2,6 +2,35 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-07] ingest | x-accounts-scan: HF harness adapters + Karpathy TristanTube/alphaXiv + Willison Nov log
+
+Run: 11 accounts scanned, 7 substantive candidates, 7 new posts (detail: `cron/data/x_accounts_latest_full.json`).
+
+- **New event page** `events/hf-harness-adapters-launch-2026.md` — HF `harness-hub` release (Nov 6): one LoRA
+  adapter per (base model × harness) for `pi`/`opencode`/`hermes`, GRPO RL on verifiable tasks inside
+  *unmodified* harnesses via OpenEnv Harbor, no re-tokenisation; `safeagents` rule-based tool-call proxy
+  blocking reward hacking; `Repo2RLEnvs` (six-step pipeline over public Hub agent trajectories, ATIF screening,
+  Mistral-Large-4 teacher-written hidden tests, 259/270) + `SmolDataEnvs`; full hyperparameter table
+  (LFM2.5-24B-A2B / LFM3-1.7B / TwIL-8B); $5-vs-$90 adapter-vs-merged eval cost datapoint. Flagged as
+  self-reported smoke-test numbers, no independent replication.
+- **New concept page** `concepts/tristantube.md` — Karpathy's Nov 7 Claude-Code "one-shotted in 3 minutes"
+  viewer over Tristan Hume's tier list (~47K videos + TV mode); framed as the second instance of the
+  trusted-human-curation-as-corpus pattern with HackerTube, with a comparison table and the
+  build-time-vs-labeling-work explanation. Skepticism section notes the claim is self-reported/unverified.
+- **New entity pages** `entities/tristan-hume.md` (tier-list author, S/A/B/C/D = 5/14/12/33/92, S-tier =
+  Applied Science / Clickspring / Stuff Made Here) and `entities/alphaxiv.md` (Karpathy naming it successor to
+  his retired arXiv Sanity — recorded as a **maintenance-cost** datapoint, not a capability one).
+- **Updated** `concepts/hackertube.md` (new "Successor: TristanTube" section), `entities/andrej-karpathy.md`
+  (new "November 2026" X-activity subsection: TristanTube / HackerTube / arXiv-Sanity sunset + alphaXiv),
+  `entities/tom-aarsen.md` (Harness Adapters amplification section), `entities/simon-willison.md` (new
+  "X Activity Log (November 2026)": Qwen 3.8 27B weight-interpretation replication, Census "Super Intelligence"
+  wording, Geisel Library reply).
+- **Skipped (logged only)**: Willison's Geisel Library data-center joke reply (non-AI content, bullet only);
+  Willison's weight-space and Census posts already had pages/raw from blog-ingest + dreaming — cross-linked,
+  not re-ingested.
+- Index counts recomputed from live files: Entities 963→965, Concepts 2313→2314, Events 50→51, Queries 50→52
+  (queries delta from sibling cron commits, not this run).
+
 ## [2026-11-07] dreaming group | Pattern E scan — Takes=3 (carried), Refs=9 (5 carried + 4 new), Skips=4 (batch)
 
 - Checkpoint: `total_articles: 0`, `recent_raw_articles: 234` → Pattern E filesystem scan + umbrella archive-index absence probe (3,051 known URLs; 100 recent raw files never archived).

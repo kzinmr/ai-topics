@@ -4,7 +4,7 @@ tags: [person]
 sources:
   - raw/articles/karpathy.github.io--2026-02-12-microgpt--6d759dd0.md
 created: 2026-04-24
-updated: 2026-11-01
+updated: 2026-11-07
 type: entity
 ---
 
@@ -417,6 +417,25 @@ Predicted 2026 would see a flood of low-quality AI-generated content across GitH
 
 ### "Agentic Engineering" (February 2026)
 Reframed AI coding from individual assistance to **managing multiple agents in parallel** — giving them tasks, reviewing outputs, and orchestrating workflows rather than writing code directly.
+
+### November 2026: curation apps built by Claude Code, and the arXiv-Sanity sunset
+
+- **07 Nov — TristanTube, "one-shotted with Claude Code in 3 minutes"**: quote-tweeted Tristan Hume's refreshed
+  YouTube tier list ("Which looked excellent so clearly I had to turn it into TristanTube") and shipped
+  [[concepts/tristantube|TristanTube]] — ~47K videos rendered from Hume's S/A/B/C/D tiers plus a "TV mode for
+  laid back watching". 4,477 likes / 364K impressions. Explicitly framed as a sequel to
+  [[concepts/hackertube|HackerTube]]; the ~2 h → 3 min build-time drop on a comparable task is his cleanest
+  self-reported datapoint on the one-shot capability curve. Source: [tweet](https://x.com/karpathy/status/2119114537442189652).
+- **01 Nov — HackerTube**: built the HN-curated YouTube clone end-to-end with Claude Opus 5.5 in ~2 hours
+  (43M comments over 20 years → 6,454 videos). Full write-up: [[concepts/hackertube]]; raw
+  `raw/articles/2026-10-31_karpathy-hackertube.md`.
+- **01 Nov — arXiv Sanity Preserver confirmed dead; names alphaXiv as successor**: in a reply to
+  @RagavanThurair ("Miss the old arxiv sanity") he disclosed *"I had to bring it down (RIP) because it was just
+  too much work to maintain, **it would have been a lot easier today**. But today there's also
+  [alphaXiv](https://www.alphaxiv.org), which I like & use and is in the same spirit."* 606 likes / 192K
+  impressions. Notable as a **maintenance-cost** claim rather than a capability claim: what collapsed in the
+  agent era is build cost, while long-term upkeep remains the reason research tooling dies. See
+  [[entities/alphaxiv]]. Source: [tweet](https://x.com/karpathy/status/2116979365242429721).
 
 ### Key Observations on AI Agents
 From his detailed writings and posts, Karpathy has identified several critical patterns:

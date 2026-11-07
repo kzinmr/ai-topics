@@ -3,7 +3,7 @@ title: Tom Aarsen
 type: entity
 handle: "@tomaarsen"
 created: 2026-04-10
-updated: 2026-10-23
+updated: 2026-11-07
 tags:
   - person
   - model
@@ -170,6 +170,18 @@ See [[events/kure-korea-retrieval-suite-2026]]. Source: [thread](https://x.com/t
 Also on Oct 23, in a reply to @tulkenss, Aarsen pointed users at the Sentence Transformers
 **SparseEncoder pretrained models** doc page (https://sbert.net/docs/sparse_encoder/pretrained_models.html)
 as the canonical place to find sparse models. Source: [tweet](https://x.com/tomaarsen/status/2113527781145682364).
+
+## Harness Adapters launch amplification (November 6, 2026)
+
+On 2026-11-06 Aarsen posted *"Very glad to see this is now live!"* linking the Hugging Face blog post
+**"Harness adapters: Safe RL for efficient agentic development"** by the `harness-hub` team (Younes Belkada,
+Lysandre Debut, Nathan Habib), quote-tweeting the announcement that training runs are streaming on a public
+live dashboard. The release ships **one LoRA adapter per (base model × agent harness)** — `pi`, `opencode`,
+`hermes` — trained with GRPO/RL on verifiable tasks inside *unmodified* harnesses, targeting
+**fewer tool calls at equal-or-better accuracy** for local agentic development, with `safeagents` blocking
+reward-hacking tool calls. Models: `LiquidAI/LFM2.5-24B-A2B`, `LiquidAI/LFM3-1.7B`, and `webAI-Official/TwIL-8B`
+as a never-agentically-trained experiment. See [[events/hf-harness-adapters-launch-2026]].
+Source: [tweet](https://x.com/tomaarsen/status/2118721388873998444) · [blog](https://huggingface.co/blog/harness-hub/harness-adapters).
 
 ## X Activity Themes
 
