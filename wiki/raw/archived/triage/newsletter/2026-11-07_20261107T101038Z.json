@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-11-07T10:35:29.761325+00:00",
+  "triage_run_id": "20261107T101038Z",
+  "source": "newsletter",
+  "summary_ja": "ニュースレター2件（Irrational Analysis『Avicena Deep-Dive』= Substack、Superintel系『🎨 Murati's Small Model Out-Designs GPT-6 Astra』= beehiiv uid=886）をトリアージ。Avicena側は334段落のフルボディを取得し、uLED光I/O（アナログSerDes・clock-forwarding・Tx 0.9pJ/bit・FECストライピング）というAIデータセンター相互接続の一次技術解説を確認 — 該当エンティティ/概念ページが皆無のため新規conceptページとして take。beehiiv側は全20リンクがCloudflare『Just a moment...』チャレンジ（L1/L2/L3/L4/L7サンプルで確認）で本文到達不能、今日のinbox pre-triage summaryも不在のため、件名からThinking Machines Lab（Murati）の小型モデル報道としてreference保留（mira-murati.md更新候補）とし、takeは認定しない。",
+  "decisions": [
+    {
+      "item_id": "<20261106.191059.64f6b679@mta27>-1",
+      "source": "newsletter",
+      "source_name": "Superintel系 beehiiv (uid=886)",
+      "title": "🎨 Murati's Small Model Out-Designs GPT-6 Astra",
+      "url": "https://link.mail.beehiiv.com/v2/c/09f56b34b6ea15ad2d5bcc998e32a7d854ec81dcc6159963079977ac8d383b7a4b760350ab8f29d95916030bb9f38f5c1c0fac7f672aff4ca5bf3f7364374879c4568b550a0875988641eebe5052de4b89d4ab647e950a3f921b4300b105267b1b356c73679a41ff9bc08bf3839dce6b2b6b8dbf7208558f7b645691b0bd072e241a4afac4ff8e3cf40f31fe4422114e4a2d024e03db6e684dcaad8c9e7d36d8/40893addab547fbe",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-06-murati-s-small-model-out-designs-gpt-6-astra.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ beehiiv v2/c トラッキングリンク20本のうち5本（L1/L2/L3/L4/L7）をcurlで直接検証したが、すべてHTTP 200・title『Just a moment...』のCloudflareチャレンジ（約7KB・本文ゼロ）で到達不能。スキル規則どおり再試行せずスキップ。今日のinbox pre-triage summary（~/wiki/raw/inbox/newsletter-ingest/に20261107なし）も不在のため、本文に基づくtake判定は不可能。件名からはThinking Machines Lab（Mira Murati）の小型モデルがGPT-6/Astraを『out-design』したという報道と推測されるが、entities/mira-murati.md（updated 2026-04-13）にもwiki全体にも2026年11月の該当事実は未記録。本文未取得のまま新規ページは作らず、downstreamのnewsletter-wiki-ingestでmira-murati.mdの更新候補として扱い、後日beehiiv再取得（direct slug `read.getsuperintel.site/p/...` 系）で確認すること。GPT-6/Astraの存在自体も一次ソース未確認のため単独factとしては記録しない。",
+      "candidate_wiki_path": "entities/mira-murati.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-06\n**Subject:** 🎨 Murati's Small Model Out-Designs GPT-6 Astra\n**Collected:** 2026-11-07T10:10:36.665294+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/09f56b34b6ea15ad2d5bcc998e32a7d854ec81dcc6159963079977ac8d383b7a4b760350ab8f29"
+    },
+    {
+      "item_id": "avicena-noise-batch",
+      "source": "newsletter",
+      "source_name": "Irrational Analysis (irrationalanalysis.substack.com)",
+      "title": "Avicena Deep-Dive — Substack UI/トラッキングリンク一括スキップ (Link 1,2,4-11,13-20)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-06-avicena-deep-dive.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substackノイズフィルタ表に基づく一括スキップ: Link 1/2=OAuth redirect（`redirect/2/eyJlIj...`=メールセッショントークン、解決不可）、Link 4=@irrationalanalysis著者プロフィール、Link 5=submitLike、Link 6=comments/post-comment、Link 7=share/triggerShare、Link 8=restack-comment、Link 9=redirect=app-store+read-in-app、Link 11=profile、Link 10/12-20=UUIDトラッキングリンク（メールセッショントークン必須、web_extract失敗既知）。実際のカキュレート内容はLink 3のポスト本文から抽出済み（Link 3のtake判定を参照）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-06\n**Subject:** Avicena Deep-Dive\n**Collected:** 2026-11-07T10:10:35.482515+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pcnJhdGlvbmFsYW5hbHlzaXMuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYW"
+    },
+    {
+      "item_id": "beehiiv-dup-batch",
+      "source": "newsletter",
+      "source_name": "Superintel系 beehiiv (uid=886)",
+      "title": "Murati's Small Model — 同一Cloudflareチャレンジ下トラッキングリンク一括スキップ (Link 2-20)",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-06-murati-s-small-model-out-designs-gpt-6-astra.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 20本のbeehiiv v2/cトラッキングリンクのうち5本をサンプル検証（L1/L2/L3/L4/L7）し、すべて同一のCloudflare『Just a moment...』チャレンジ（本文ゼロ・約7KB）を確認。スキル規則（Cloudflareチャレンジは再試行無効・per-link検証後に全リンクが同一チャレンジならtopicレベル評価）により残りのLink 2-20（Link 1を除く）は解決試行せず一括skip。Link 1にtopicレベルのreference判定を集約した。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-06\n**Subject:** 🎨 Murati's Small Model Out-Designs GPT-6 Astra\n**Collected:** 2026-11-07T10:10:36.665294+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/09f56b34b6ea15ad2d5bcc998e32a7d854ec81dcc6159963079977ac8d383b7a4b760350ab8f29"
+    }
+  ]
+}
