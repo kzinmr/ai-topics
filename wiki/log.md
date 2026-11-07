@@ -1,5 +1,19 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-11-07] dreaming group | Pattern E scan — Takes=3 (carried), Refs=9 (5 carried + 4 new), Skips=4 (batch)
+
+- Checkpoint: `total_articles: 0`, `recent_raw_articles: 234` → Pattern E filesystem scan + umbrella archive-index absence probe (3,051 known URLs; 100 recent raw files never archived).
+- **Duplicate check**: today's trending-topics (METR R&D acceleration doubling, febe1174) + active-crawl (calibrated escalation / Memorilla / P-JiT 21K / MCP Explained / Hightouch, 4589577f) + hybrid-flow diffusion page + HN library-scraping raws + Factory user-groups all confirmed processed → batch skip. 11-06 model/safety cluster (GPT-6 Cyber, Kimi K3/K3.1, Inkling 2 Small, provable inference, Astra covert safety, Clocktower, Hy4, Ripple-65B) verified processed by c9034281 / c02eedf7 / ed5262b2.
+- **Takes (3, all carried — verified page-still-stale by grep today)**:
+  1. Factory × HumanLayer acquisition → `entities/factory.md` (HumanLayer: 0 hits, updated 2026-10-20)
+  2. Simon Willison Nov 3-4 releases (datasette-agent 0.5a0, datasette-apps 0.3a0, llm 0.37.1, Qwen-interprets-weights quote post) → `entities/simon-willison.md` (updated 2026-10-30, Nov 3-4 gap)
+  3. Fireworks Forge conference products → `entities/fireworks-ai.md` (3rd-run carry, section absent)
+- **References (9)**: carried 5 — Warp agent code-review bottleneck (warp-terminal.md @ 08-16), Hebbia financial KG (hebbia.md @ 10-24, "knowledge graph" 0 hits), Harvey Fact Graph (harvey.md, 0 hits), Harvey AI Fluency + FORUM Chicago, Decagon Autopilot experiments (decagon.md @ 08-22). New 4 — Harvey contract-approval workflow (harvey.md, section absent), Mitchell Hashimoto libghostty 1.0 (mitchell-hashimoto.md @ 08-14, Ghostty 0 hits), Modal × Snorkel agent simulations (modal-labs.md, Snorkel 0 hits), Ed Zitron "Fault Lines" premium analysis (ed-zitron.md @ 09-09).
+- **Skips**: 11-07 sibling-covered batch, 11-06 model/safety cluster (carried), marketing/stub batch (ElevenLabs ×2, Together polymorphic-inference, OpenAI responsible-AI-infra PR), non-AI batch (filfre Deus Ex, daringfireball, construction-physics, maurycyz, dfarq ×3, nesbitt ×2, oldnewthing).
+- **Archive**: 13 candidates (9 refs + 4 skips), 8 newly archived URL-keyed + 9 URL-less decision records merged into `2026-11-07_20261107T180043Z.json` (total 3,055 URLs). Triage JSON at `cron/data/dreaming/triage_latest.json` (run 20261107T180043Z).
+
 ## [2026-11-07] health-fix | wiki health auto-fix scan (17:50 UTC)
 
 - `wiki_health.py --json`: 0 orphans, 0 page-name violations, no index corruption (pipe/line-number/triple-bracket/space-prefix all 0)
@@ -150,7 +164,6 @@
 - 2 cross-ref fixes queued: concepts/qwen -> entities/qwen, concepts/agent-harnesses -> comparisons/agent-harnesses.
 - Missing-page creation queue (>=8 refs, nothing on disk): entities/cursor, concepts/claude-opus-4-7, entities/ben-clavie, concepts/enterprise-ai, concepts/ai-governance, concepts/ai-adoption, concepts/agent-harness-comparison (redirect candidate).
 - Index: replaced dangling 2026-10-30 report/annotations entries with today's. Tag violations: report says 1, tag_audit.py = 0 (false positive).
-_Log of all wiki changes. Newest entries at top._
 ## [2026-11-05] watchdog | auto-fix: commit orphaned wiki-ingest output; register 2 new concepts
 
 - Committed untracked output from the 11-05 wiki-ingest crash: 2 new concept pages (`concepts/polymorphic-inference`, `concepts/spacex-worlds-biggest-ai-cloud`) + 6 page updates (together-ai, hex-technologies, open-athena, megakernel-inference, recursive-self-improvement, post-training/rl-environments) + their index.md registrations. These were authored before the "Response truncated due to output length limit" crash but never committed.
