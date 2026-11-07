@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-11-07] health-fix | wiki health auto-fix scan (17:50 UTC)
+
+- `wiki_health.py --json`: 0 orphans, 0 page-name violations, no index corruption (pipe/line-number/triple-bracket/space-prefix all 0)
+- `validate_index.py`: clean (3441 lines)
+- No-frontmatter scan (entities/concepts/comparisons/queries/events): 0
+- Committed 41 untracked raw files (33 articles + 8 newsletters) from today's ingest pipelines
+
+---
+
 ## [2026-11-07] watchdog | auto-fix - index registration + pipeline triage (17:35 UTC)
 
 ### Auto-fixed
