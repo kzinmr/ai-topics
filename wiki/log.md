@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-11-07] Trending-topics ingest (12:00 UTC)
+- New concept: [[concepts/ai-rd-acceleration-doubling]] — METR Anthropic R&D acceleration assessment (AECI ~1.9x, 2yrs/1yr, AI automating AI R&D) + Ajeya Cotra compounding/superintelligence-within-a-year take (HN 321p item 50397994, METR blog 2026-11-05). 2 raw files, SCHEMA += metr/ai-forecasting/ai-risk.
+- Report: inbox/rss-scans/trending-topics-2026-11-07.md
+
+
 ## [2026-11-07] active-crawl | 4 new topics: calibrated escalation, Memorilla, P-JiT 21K, MCP Explained + Hightouch entity
 - New concepts (4): [[concepts/calibrated-escalation]] (Hightouch Jev+Opus hybrid IDR judge, 98.8% @ 4.4x cheaper, HN 488p — vendor benchmarks, confidence medium), [[concepts/memorilla-latent-semantic-memory]] (arXiv:2610.21375, Leskovec/Stanford; 16 latent memory tokens beat Mem0/MemoRAG 5/8, FactKG 84.33 vs 80.43 full-context @108x fewer tokens, HN 105p), [[concepts/p-jit-21k]] (Linum 2B Apache-2.0 pixel-space T2I, $21,038 / 8,415 H100-hr, 32×32 token reduction, FDFO+JEV-Image post-training, HN 274p), [[concepts/mcp-explained]] (Runlayer interactive tutorial, spec 2025-11-25, HN 338p)
 - New entity (1): [[entities/hightouch]] (composable CDP, $150M @ $2.75B; decision-model benchmark series)

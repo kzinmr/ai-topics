@@ -971,7 +971,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2311 pages)
+## Concepts (2312 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
@@ -1118,6 +1118,7 @@
 - [[concepts/ai-addiction-burnout]] — AI Addiction and Burnout Patterns
 - [[concepts/ai-affordability-crisis]] — AI Affordability Crisis — David Rosenthal's analysis of LLM inference cost vs revenue for frontier providers; GPT-5.5-Cyber's zero-margin pricing, law of diminishing returns on scaling, comparison to crypto-mining economics (June 24)
 - [[concepts/ai-discovery-acceleration]] — AI Discovery Acceleration (METR Differential Acceleration) — AI accelerates domains non-uniformly: cyber vulnerabilities >> math > optimization (Aug 14, 2026 METR study)
+- [[concepts/ai-rd-acceleration-doubling]] — METR Anthropic R&D Acceleration Assessment (Oct 2026) — METR: Anthropic capabilities progress ~1.9x (2 yrs in 1 yr) via AI automating AI R&D; RSP "dramatic acceleration" threshold likely crossed; Ajeya Cotra says compounding implies superintelligence within a year (HN 321p, Nov 2026)
 - [[concepts/ai-agent-architecture]] — AI Agent Architecture — production design patterns: lead agent + specialist routing, evaluation methodology, release gating by consequence severity (Maven Clinic case study, Jul 17)
 - [[concepts/ai-agent-compiler-bug-finding]] — AI Agent Compiler Bug Finding
 - [[concepts/ai-agent-engineering]] — AI Agent Engineering
