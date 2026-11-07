@@ -1,0 +1,51 @@
+{
+  "run_id": "20261107T101038Z",
+  "triaged_at": "2026-11-07T10:10:38Z",
+  "total_newsletters": 2,
+  "relevant_count": 0,
+  "borderline_count": 1,
+  "classifications": [
+    {
+      "message_id": "<20261106174557.3.7ead7acb29607cd7@mg-d1.substack.com>",
+      "subject": "Avicena Deep-Dive",
+      "source": "Irrational Analysis (Substack, uid=885)",
+      "date": "2026-11-06",
+      "importance": "low",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-06-avicena-deep-dive.md",
+      "resolved_articles": [
+        "https://irrationalanalysis.substack.com/p/avicena-deep-dive (main post — 'From #1 hater to ultra bull.', Nov 06 2026)",
+        "https://irrationalanalysis.substack.com/p/ofc-2026-irrational-recap (internal backlink, Mar 27)",
+        "https://irrationalanalysis.substack.com/p/cbrs-update-wolfnvts-lawsuit-hbf (internal backlink, Aug 09)",
+        "remaining links: image/CDN/like/comment/share chrome links, no external articles"
+      ],
+      "ai_relevance": "marginal",
+      "reason": "半導体投資ニュースレターによる Avicena（Lightcomm uLED リンク技術）のディーブダイブ。SerDes、uLED、光インターコネクト、FEC、1.6Tケーブル等、AI データセンターの光相互接続インフラには間接的に関連するが、内容は半導体株投資分析であり LLM / AI Agent 技術そのものではない。著者の意見転換（uLED 批判→強気）が主題で、wiki の中核スコープ（モデル、エージェント、開発ツール、推論/訓練インフラ）には該当しない。NJスコア 1/5（Pattern Interrupt のみ: 「#1 hater to ultra bull」の逆転構造化、NDA 開示・バイアス自己申告は方法論として参考になる程度）。",
+      "suggested_actions": [
+        "スキップ推奨 — wiki 収録不要",
+        "もし AI インフラ観点で光相互接続（optical interconnect / SerDes / co-packaged optics）のテーマページを将来作る場合のみ、参考ソースとしてこの raw を引用可"
+      ]
+    },
+    {
+      "message_id": "<20261106.191059.64f6b679@mta27>",
+      "subject": "🎨 Murati's Small Model Out-Designs GPT-6 Astra",
+      "source": "Beehiiv newsletter (uid=886)",
+      "date": "2026-11-06",
+      "importance": "low",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-06-murati-s-small-model-out-designs-gpt-6-astra.md",
+      "resolved_articles": [
+        " sampled link.mail.beehiiv.com/v2/c/ link returned HTTP 403 (Cloudflare challenge) — batch assumed unresolvable per skill pitfall #10; titles unavailable in checkpoint"
+      ],
+      "ai_relevance": "potentially-high-but-unverifiable",
+      "reason": "件名は AI モデルリリース系（Murati の小型モデル vs GPT-6 Astra）でテーマ的には高関連だが、全20リンクが beehiiv の Cloudflare 保護されたトラッキングリンクで、サンプル解決も 403。タイトル本文が checkpoint にも raw にも一切含まれず、内容を検証できない。未検証の件名だけで critical 判定して wiki に誤情報を入れるリスクを回避し low + follow-up 扱い。",
+      "suggested_actions": [
+        "newsletter-wiki-ingest でブラウザベース fetch（browser_navigate）が使えるジョブで再解決を試みる価値あり",
+        "X/ニュース検索で 'Murati small model' / 'GPT-6 Astra' の一次情報を trending-topics 実行時に確認（すでに他パイプラインで収録済みか check）",
+        "一次情報が確認できるまで wiki 更新なし"
+      ]
+    }
+  ],
+  "notes": "両ニュースレターとも今週期の wiki 取り込み対象外。Avicena は半導体投資コンテンツ（スコープ外）、Murati 号は beehiiv Cloudflare 403 で内容検証不能。[SILENT] 相当だが、Murati 号の follow-up 候補を記録するためレポートを発行。",
+  "downstream": {
+    "handoff_to_newsletter_wiki_ingest": "none"
+  }
+}
