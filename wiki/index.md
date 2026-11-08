@@ -4,7 +4,7 @@
 > Total pages: 3388
 > Last updated: 2026-11-07
 
-## Entities (966 pages)
+## Entities (965 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -569,7 +569,6 @@
 - [[entities/meridian-labs]] — Meridian Labs — 501(c)(3) nonprofit behind Inspect AI (UK AISI eval framework) + Petri alignment auditing (donated by Anthropic May 2026)
 - [[entities/meta]] — Meta
 - [[entities/metronome]] — Metronome
-- [[entities/metR]] — METR (Model Evaluation & Threat Research) — independent AI capability/safety lab; 2026-08 differential-acceleration study (cyber >> math > optimization)
 - [[entities/micahflee]] — Micah Lee
 - [[entities/michael-lively]] — Michael Lively
 - [[entities/michael-stapelberg]] — Michael Stapelberg

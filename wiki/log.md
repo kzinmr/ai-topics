@@ -1,5 +1,24 @@
 # Wiki Log
 
+## [2026-11-08] watchdog | auto-fix: index metR dedup + entity count recount; pipeline health verification
+
+### Auto-fixed
+- `wiki/index.md`: removed duplicate `- [[entities/metR]]` entry (2 lines -> 1, kept richer description; single file on disk so not a redirect-stub pair). validate_index.py clean (3450 lines).
+- `wiki/index.md`: header recount `## Entities (966 pages)` -> `(965 pages)` to match actual entity index lines. Concepts/Comparisons/Events/Queries headers verified accurate against section line counts.
+
+### Verified already-repaired upstream (no action)
+- Graph report `2026-11-06_15-05-31` pending items both closed: `concepts/qwen` -> `[[entities/qwen]]` backlink (line 81) and `concepts/agent-harnesses` -> `[[comparisons/agent-harnesses]]` (line 146), both present since Nov 6 17:38 (post-report).
+- `swe-bench\` stray-backslash links: 0 occurrences in content pages (only mentioned inside the weekly report itself).
+- Index corruption: 0 pipe-prefix, 0 line-number-prefix, 0 triple-bracket, 0 ghost entries (recursive scan).
+- Frontmatter: 0 pages missing frontmatter, 0 missing `sources` (2674 top-level entities+concepts).
+- L2 pipe-prefix (`|- [`) in entities/ + concepts/: 0.
+- `log.md`: exactly 1 `# Wiki Log` header.
+
+### Needs attention
+- No pipeline_watchdog alerts. 7 cron jobs report last-run errors (503 provider busy / output truncation / misclassified report) — see watchdog report. Blog ingest/triage chain (3 jobs) failed today but today's raw articles were persisted by sibling jobs.
+
+---
+
 ## [2026-11-08] trending-topics
 - Created concepts/agent-memory-interoperability (OpenTelemetry-for-memory debate + Anthropic components-of-agent-memory).
 - Appended: entities/microsoft-ai-frontiers (disbandment — Langford post), concepts/claude-code/_index ("Don't Ask Again" secrets leak, Apiiro 1,122 files), concepts/earendil (Caleb Porzio Claude Code→Pi migration), concepts/ai-benchmarks/deepswe-benchmark (MaxxBench mutation audit, 7 models reward-hacked, DeepSeek sandbox bypass).
