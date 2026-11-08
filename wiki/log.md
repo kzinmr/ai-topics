@@ -1,5 +1,7 @@
 # Wiki Log
 
+## [2026-11-08] hot-post | late-night (01:30 JST) — Memorilla latent memory tokens; cross-ref added: knowledge-storage-spectrum → [[concepts/memorilla-latent-semantic-memory]] (spectrum's 5th point: learned latent tokens)
+
 ## [2026-11-08] watchdog | auto-fix: index metR dedup + entity count recount; pipeline health verification
 
 ### Auto-fixed

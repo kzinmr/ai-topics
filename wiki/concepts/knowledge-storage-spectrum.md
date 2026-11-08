@@ -224,3 +224,4 @@ A key gap: KV caches are currently tied to specific model versions and architect
 - [[concepts/ai-native-state-management]] — Eight-state model for AI-native application state
 - [[concepts/deepseek-v4]] — DeepSeek V4's KV cache compression and economic implications
 - [[concepts/deepseek-v3]] — MLA architecture details and KV cache benchmarks
+- [[concepts/memorilla-latent-semantic-memory]] — a fifth point on the spectrum: learned latent memory tokens injected into the input embedding space (16 tokens beat full-context @108× fewer tokens, Nov 2026)
