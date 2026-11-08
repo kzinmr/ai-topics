@@ -3418,6 +3418,7 @@
 - [[queries/2026-11-03-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-03): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-11-04-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-04): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-11-06-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-06): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-11-08-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-08): 0 status:skeleton pages; backlog empty since 10-17 streak, no enrichment performed; flags separate ~439-page status:stub concept backlog for triage
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
