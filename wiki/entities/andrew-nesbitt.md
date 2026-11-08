@@ -1,10 +1,10 @@
 ---
 title: "Andrew Nesbitt"
 tags: [person]
-updated: 2026-10-31
-sources: [raw/articles/nesbitt.io--2026-08-04-brew-install-actions-checkout-html--7762f317.md, raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md, raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md, raw/articles/nesbitt.io--2026-10-24-this-week-in-package-management-html--b6c5a952.md, raw/articles/nesbitt.io--2026-10-30-signing-and-attestations-across-package-registrie--fb28e540.md]
+updated: 2026-11-08
+sources: [raw/articles/nesbitt.io--2026-08-04-brew-install-actions-checkout-html--7762f317.md, raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md, raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md, raw/articles/nesbitt.io--2026-10-24-this-week-in-package-management-html--b6c5a952.md, raw/articles/nesbitt.io--2026-10-30-signing-and-attestations-across-package-registrie--fb28e540.md, raw/articles/nesbitt.io--2026-11-07-this-week-in-package-management-html--37800db7.md]
 created: 2026-04-24
-updated: 2026-10-31
+updated: 2026-11-08
 type: entity
 ---
 
@@ -565,6 +565,21 @@ Nesbitt's reference survey of what each package registry actually signs, where t
 For the agent-security read: an agent installing packages is behaving like any other client — it inherits whatever the client verifies by default, which in most ecosystems is nothing, and it is the party most likely to be operating from a compromised workflow. The gap between "attestation exists" and "attestation is checked by default" is the exploitable surface. See [[concepts/ai-supply-chain-security]] and [[concepts/software-supply-chain-security]].
 
 Source: [[raw/articles/nesbitt.io--2026-10-30-signing-and-attestations-across-package-registries--fb28e540.md]]
+
+### "This Week in Package Management: 7 November 2026" (Nov 7, 2026)
+
+Nesbitt's weekly digest. Items with AI-agent / supply-chain relevance:
+
+1. **OpenVox (Puppet fork) three critical vulnerabilities** (Neodyme researcher): OpenVox Server deserialized Ruby objects embedded in **agent run reports** → RCE; the shared Trapperkeeper authz library matched every plain-string `auth.conf` rule as a wildcard, so a certificate for `evil.target.example.com` satisfied rules meant for narrower domains; the OpenVoxDB container image let any certificate reach its API because its allowlist script failed open at startup. All known Puppet implementations affected; fixes in openvox-agent 8.32.0/9.3.0. Open-source Puppet security updates have **ended** — Vox Pupuli recommends migrating to OpenVox.
+2. **PyPI redesigned project pages with a Security tab** — the flagship realization of the Oct 30 attestation matrix: each release's provenance and per-file attestations are now displayed, a release counts as "full provenance" only when *every* file has a Trusted Publisher or SLSA build attestation, and warnings flag incomplete/inconsistent/changed/lost provenance plus a **late-upload marker** for files uploaded >14 days after an older release.
+3. **pip 26.3** blocks unexpected imports during installation (the `sitecustomize.py`/`.pth` startup-hook attack class behind the 2026 LiteLLM and OpenVox-style compromises) and warns about unsafe ones afterwards; rejects HTTP redirects to `file:` URLs; and its security policy now states outright that **installing untrusted wheels has always been unsafe**, since Python's import system can run third-party code during install.
+4. **mise 2026.11.x** adds opt-in **Sigstore provenance verification for `npm:` tools** (checks only the tool's own package; requires the embedded aube package manager) and makes `--locked` require checksums — client-side verification defaults, the exact gap his Oct 30 matrix identified.
+5. **zizmor 1.32.0** adds experimental support for GitHub's new **workflow lockfiles** (collecting only the inputs Actions reads), following the workflow-lockfile preview noted in the Oct 30 post.
+6. **pnpm 12.18.0**: agent skills are now approved one skill at a time and linked under their own names; platform-variant publishing (`pnpr` registries, one archive per target).
+7. **Dependabot** now supports Microsoft's **Agent Package Manager (apm)** ecosystem (`apm.yml` git dependencies, `apm.lock.yaml` regeneration) — a new agent-tooling package manager gaining mainstream registry-tool support.
+8. **Articles**: Konsti (uv) "Friction in the Python Packaging Standards Process" — PEP ceremony vs Rust's RFC concern tracking / final comment period as prior art; Stenberg's "Scrutinize our assessments" follow-up inviting outsiders to challenge curl's public `vuln:LOW/MEDIUM` severity calls; a typosquatting war story where npm's edit-distance-of-two check rejected `estee` as too close to `espree`/`testem` and cascaded fallbacks against `hoek`/`hono`/`uuid`/`zod`; Farid Zakaria's "The intensional model in disguise" mapping Nix (resolved derivations/realisations/store) onto Bazel (actions/action cache/CAS) and why Nix lacks Bazel's early rebuild cutoff without content-addressed derivations.
+
+Source: [[raw/articles/nesbitt.io--2026-11-07-this-week-in-package-management-html--37800db7.md]]
 
 ## References
 

@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-11-02
+updated: 2026-11-08
 type: entity
 sources:
   - raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md
@@ -31,6 +31,7 @@ sources:
   - raw/articles/seangoedecke.com--elegance-and-intelligence-are-anticorrelated--8978dff6.md
   - raw/articles/seangoedecke.com--how-to-get-assigned-interesting-work--a0b6ee47.md
   - raw/articles/seangoedecke.com--alignment-is-impossible--1d1ef1ca.md
+  - raw/articles/seangoedecke.com--llms-are-terrible-at-designing-ai-systems--1bc34f1a.md
 ---
 
 # Sean Goedecke
@@ -569,6 +570,21 @@ On November 1, 2026, Goedecke published "[Reliably aligning LLMs is impossible i
 **What he concedes**: CoT monitoring is "surprisingly helpful for a mechanism that appeared by accident"; sandboxes, humans-in-the-loop, feature-probes are mitigations — but "well understood since the early 2000s" as insufficient against superintelligence. Mech-interp remains useful for *training* less reward-hacking models, just never for preventing rogue agents.
 
 This is Goedecke's first sustained intervention in the AI-safety/alignment debate proper and extends his skeptic portfolio ([[#AI Sycophancy Is a Real Problem]], [[#The o3 GeoGuessr Prompt Illusion]]) from engineering practice to philosophy of mind. Links: [[concepts/ai-alignment]], [[concepts/interpretability]], [[concepts/chain-of-thought-monitoring]]. ^[raw/articles/seangoedecke.com--alignment-is-impossible--1d1ef1ca.md]
+
+### LLMs Are Terrible at Designing AI Systems (Nov 2026)
+
+"LLMs don't know how to design software that uses LLMs." They write normal programs comfortably, but an *AI-shaped* problem reliably gets screwed up. The anchor anecdote: someone vibe-coded a memory tool meant to flag contradictions between memory items; asked for the "state of the art," the agent built a bewilderingly complex **symbolic system** — converting memory items into structured logical atoms and mechanically comparing them with a solver — instead of simply calling an LLM to scan for contradictions, which is now trivial. The approach could never work (no analytic way to decide whether two natural-language sentences express the same proposition — a ~130-year-old unsolved problem), and yet the agent iterated on the dead end for *weeks*. When the user finally asked why it wasn't working, Claude immediately explained the problem was known to be impossible. Goedecke's own version: while building Autodeck, his agents repeatedly categorized cards by regex/keyword search instead of making another LLM call.
+
+**Three explanations for why LLMs won't use LLMs:**
+1. **Most training code is pre-LLM** — but Goedecke rejects this as the whole story: LLMs don't reach for jQuery/Backbone either, so whatever keeps their general knowledge current isn't failing there.
+2. **RLVR is a bad environment for writing code that calls LLMs** — auto-graded RL environments likely lack credentials/API access for calling other LLMs, so the RL process may actively discourage the pattern even if pretraining was comfortable with it. (Flagged as speculation.)
+3. **Agents are just bad at software design** (his favorite) — the doomed symbolic detour is not an aberration but the same failure class as building complex consensus algorithms instead of tolerating stale data, or introducing synchronous checks into event-driven systems. Previously he chalked these up to [[concepts/ai-sycophancy|alignment]]; now he's open to them being ordinary design errors.
+
+**The judgment lesson**: you can't judge an LLM by human standards. Any human capable of implementing a sophisticated symbolic solver would know it wouldn't work — "Only a LLM could be both smart enough and dumb enough to make this mistake." Restates his February 2025 principle (extract value from what LLMs are good at, avoid what they're bad at) with a sharper caveat: good/bad distribution is *seemingly random*, so predicting it in advance is where enormous value lies — failing to, you waste time and tokens on hopeless approaches.
+
+Fits his design-centrism line ([[#System Design: Practical, Not Interview-Focused]], "Software Is Slow Because of Bad Design") and is the *design-side* counterpart to [[concepts/agent-native-tool-fallacy]]: where that page argues agents don't need bespoke tools, this argues agents can't be trusted to *architect* AI systems, because choosing LLM-vs-symbolic subcomponents is exactly the design judgment they lack. Explanation (2) connects to RLVR/contamination debates (cf. [[concepts/reward-hacking-research-agents]]).
+
+Source: [[raw/articles/seangoedecke.com--llms-are-terrible-at-designing-ai-systems--1bc34f1a.md]]
 
 ---
 

@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-11-02
+updated: 2026-11-08
 status: L3
 sources:
   - https://pluralistic.net/
@@ -22,6 +22,7 @@ sources:
   - raw/articles/pluralistic.net--2026-08-04-technology-freedom-cooperative--182f3215.md
   - raw/articles/pluralistic.net--2026-08-10-deep-state-wopr--e31c0b9a.md
   - raw/articles/pluralistic.net--2026-08-14-one-chokable-throat--72f647b4.md
+  - raw/articles/pluralistic.net--2026-11-07-aeiou-but-sometimes-why--a80960a4.md
 tags: [person]
 ---
 
@@ -384,6 +385,19 @@ Key elements:
 
 Continues his Black October / Hackening thread (cf. Gary Marcus coverage) but is distinct in pinning the AI-malware wave on **policy history rather than model capability** — the defensive lever is data-minimization law, not model guardrails, which VOLTA's refusal-failover chain already demonstrates criminals can route around.
 Source: [[raw/articles/pluralistic.net--2026-11-02-agony-verification--478f07e7.md]]
+
+### Tech Labor Organizing — Tan & Redwine's "Against Tech Oligarchy" (Nov 7, 2026)
+
+Doctorow gives a long endorsement review of JS Tan and Clarissa Redwine's **Against Tech Oligarchy** (againsttecholigarchy.com), a book by two veterans of tech unionization drives, and folds its thesis into his own worker-power frame. Key arguments he amplifies:
+
+- **Scarcity-based power, not unions, was tech's golden age**: each engineer added ~$1M to the bottom line and was scarce, buying high compensation and *product control* (refuse a project and no replacement existed). Workers self-conceived as "temporarily embarrassed founders," a perception bosses cultivated with hoodies and all-hands Q&A theater. Doctorow's **"Tron-pilled"** cohort — workers whose own lives were improved by digital networks and wanted to distribute that to everyone — was the raw material for product ethics fights.
+- **Scarcity ends when supply catches up.** Post-scarcity, bosses "showed their true colors": the Kickstarter co-founder coup overriding Trust & Safety sparked one of tech's first union drives and a dirty-tactics union-busting war; post-Trump management retaliation against Google/Microsoft walkout traditions radicalized workers toward traditional unionism (CWA organizing at mission-driven shops like Bandcamp).
+- **Labor peace vs labor war**: the standard union playbook (quiet, secret one-to-one organizing → "bonfire" quorum → contract) assumes bosses also want labor peace. Tech bosses wage illegal labor war and it *pays* because the workforce is transient, fragmented, and doesn't see itself as workers — secret drives rot as won-over workers quit or isolate. Tan/Redwine's prescription: revive noisy public product fights as organizing infrastructure, bringing workers off the sidelines into structured drives.
+- **Strikes don't work the way they used to** — and this is directly relevant to automation debates: digital systems "are designed to operate themselves after they are built," so withdrawn labor keeps running for a long time (Musk's Twitter mass layoffs as proof). Strikes are therefore *galvanizing* tools, not leverage tools. The Mapbox CEO's remote-to-distant-office "constructive dismissal" targeting union supporters is the case study in devilish retaliation.
+
+Relevance to this wiki: Doctorow's labor thread is the **worker-side counterpart to his enshittification and AI-skeptic portfolios** — the same structural analysis (employer power asymmetry, object permanence about pre-AI labor struggles) applied to the question of who controls AI-built systems. The "systems run themselves after being built" observation is also an implicit counter to AI-labor-substitution claims: even fully automated products need maintenance, security, and on-call labor, which is precisely where leverage returns.
+
+Source: [[raw/articles/pluralistic.net--2026-11-07-aeiou-but-sometimes-why--a80960a4.md]]
 
 ## Related Pages
 
