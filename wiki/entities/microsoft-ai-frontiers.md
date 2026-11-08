@@ -2,7 +2,7 @@
 title: Microsoft AI Frontiers
 type: entity
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-11-08
 tags:
   - company
   - lab
@@ -56,6 +56,14 @@ Paper: [arxiv.org/abs/2605.24517](https://arxiv.org/abs/2605.24517). Code: [gith
 ## Philosophy
 
 The lab cultivates an environment where researchers can pursue novel ideas from initial "research itch" to full publication. The ECHO project exemplified this: the first cluster run launched March 29, 2026, and the paper was published by May 2026 — an unusually fast research-to-publication cycle enabled by dedicated GPU resources and infrastructure support.
+
+## Disbandment (Nov 2026)
+
+On 2026-11-06 John Langford announced "The End of AI Frontiers" on the Machine Learning (Theory) blog: the ~50-person MSR sub-organization he organized in 2023 was disbanded after being reorged into Microsoft AI in early September 2026 (HN 467pts, 279 comments — https://news.ycombinator.com/item?id=50406563).
+
+Langford's account: AIF existed because post-ChatGPT research needed organized support (speed + strong baselines) no single MSR researcher could sustain. Notable outputs: **Autogen** orchestration framework, **Fara** computer-use agent, and NYC fundamental-capability work — the **Next Latent** objective (extrapolation), **Dion3** (optimized Muon), and the **Full Bandwidth Transformer** (recursive power). AIF also built a monorepo shared by default with all of MSR, containing the proven edge-scale pretraining codebase from Langford's COLM keynote; at least 4 parallel model-building pipelines existed inside MSR.
+
+Commentators frame this as part of a broader MSR contraction (one HN claim: the T&R division under Kevin Scott quietly dissolved ~a year prior; MSR reorged under Azure Security leadership), and as a cautionary tale about dedicated research labs inside pressure-to-deliver companies. Raw: `raw/articles/2026-11-06_hunch_ai-frontiers-end.md`.
 
 ## See Also
 

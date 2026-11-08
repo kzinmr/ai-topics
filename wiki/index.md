@@ -974,7 +974,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2317 pages)
+## Concepts (2318 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
@@ -1125,6 +1125,7 @@
 - [[concepts/ai-agent-architecture]] — AI Agent Architecture — production design patterns: lead agent + specialist routing, evaluation methodology, release gating by consequence severity (Maven Clinic case study, Jul 17)
 - [[concepts/ai-agent-compiler-bug-finding]] — AI Agent Compiler Bug Finding
 - [[concepts/ai-agent-engineering]] — AI Agent Engineering
+- [[concepts/agent-memory-interoperability]] — Agent Memory Interoperability — OpenTelemetry-for-agent-memory debate (LoreKit) + Anthropic's components-of-agent-memory decomposition (dreaming/replay/salience); Nov 2026
 - [[concepts/ai-agent-memory]] — AI Agent Memory; Reflection Engine behavioral-record extraction (Aug 2026)
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy

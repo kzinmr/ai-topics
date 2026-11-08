@@ -5,7 +5,7 @@ aliases:
   - earendil
   - earendil-inc
 created: 2026-04-25
-updated: 2026-07-31
+updated: 2026-11-08
 tags:
   - company
   - ai-infrastructure
@@ -59,6 +59,10 @@ The article highlights a growing asymmetry: all major labs hide raw chain-of-tho
 ### On Distillation
 
 Earendil challenges the moral asymmetry of closed labs prohibiting external distillation while using it internally: "The broadest version of that principle conveniently allows learning to flow into closed models but not back out of them."
+
+## Claude Code defections (Nov 2026)
+
+Caleb Porzio's "Goodbye Claude, Hello Pi" (HN 367pts, 2026-11-08 — https://news.ycombinator.com/item?id=50410107) is a high-profile migration from Claude Code to Pi as the daily coding harness. Cited grievances: no `AGENTS.md` support until Anthropic's day-after announcement (CLAUDE.md/AGENTS.md dual-format friction), single-session IDE text-selection binding in VSCode, half-broken GUI slash commands, subagent output interleaving, and release churn — 244 Claude Code releases YTD, over 3/4 changing the system prompt or tool descriptions (2,900-token default Bash tool description). Framing: "CC feels like a product without a strong vision"; enterprise feature pace (dynamic workflows, agent teams, ultrareviews) burns tokens without serving individual developers. Raw: `raw/articles/2026-11-08_caleb-software_goodbye-claude-hello-pi.md`.
 
 ## Related Pages
 

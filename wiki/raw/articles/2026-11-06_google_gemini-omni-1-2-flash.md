@@ -1,0 +1,727 @@
+---
+title: "Gemini Omni 1.2 Flash: 15-second video and lower pricing (Google)"
+type: article
+created: 2026-11-08
+updated: 2026-11-08
+source: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/
+published: 2026-11-06
+tags: [gemini, google, video-generation, multimodal]
+sha256: bb62df23e724c251515f5bd04e4f1e2c658493198c896cb3da5793c6fe59472b
+---
+
+Gemini Omni 1.2 Flash: 15-second video and lower pricing 
+
+ Skip to main content
+
+ Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips 
+
+ Innovation & AI
+
+ Products & platforms
+
+ Company news
+
+ Feed 
+
+ Newsletter 
+
+ Back
+
+ Innovation & AI 
+
+ See all in Innovation & AI
+
+ Models & Research
+
+ Google DeepMind
+
+ Google Research
+
+ Google Labs
+
+ Gemini models
+
+ Quantum computing
+
+ See all
+
+ Products
+
+ Developer tools
+
+ Gemini app
+
+ Gemini Notebook
+
+ See all
+
+ Infrastructure & cloud
+
+ Global network
+
+ Google Cloud
+
+ See all
+
+ Technology
+
+ Safety & Security
+
+ Health
+
+ See all
+
+ Learn more: 
+
+ Google DeepMind blog
+
+ Google Research blog
+
+ Google Developers blog
+
+ Google Cloud blog
+
+ Back
+
+ Products & platforms 
+
+ See all in Products & platforms
+
+ Products
+
+ Search
+
+ Maps
+
+ Chrome
+
+ Google Health
+
+ Google Workspace
+
+ Learning & Education
+
+ Shopping
+
+ See all
+
+ Platforms
+
+ Android
+
+ Google Play
+
+ Wear OS
+
+ See all
+
+ Devices
+
+ Pixel
+
+ Google Nest
+
+ Fitbit
+
+ Chromebook
+
+ Googlebook
+
+ See all
+
+ Learn more: 
+
+ Google Ads & Commerce blog
+
+ Waze blog
+
+ Back
+
+ Company news 
+
+ See all in Company news
+
+ Outreach & initiatives
+
+ Creating opportunity
+
+ Safety & security
+
+ Google.org
+
+ Public policy
+
+ Sustainability
+
+ Health
+
+ See all
+
+ Leadership
+
+ Sundar Pichai, CEO
+
+ More authors
+
+ See all
+
+ Inside Google
+
+ Around the globe
+
+ Life at Google
+
+ See all
+
+ Learn more: 
+
+ Google Security blog
+
+ Innovation & AI
+
+ Innovation & AI 
+
+ See all in Innovation & AI
+
+ Models & Research 
+
+ Google DeepMind 
+
+ Google Research 
+
+ Google Labs 
+
+ Gemini models 
+
+ Quantum computing 
+
+ See all 
+
+ Products 
+
+ Developer tools 
+
+ Gemini app 
+
+ Gemini Notebook 
+
+ See all 
+
+ Infrastructure & cloud 
+
+ Global network 
+
+ Google Cloud 
+
+ See all 
+
+ Technology 
+
+ Safety & Security 
+
+ Health 
+
+ See all 
+
+ Learn more:
+
+ Google DeepMind blog 
+
+ Google Research blog 
+
+ Google Developers blog 
+
+ Google Cloud blog 
+
+ Products & platforms
+
+ Products & platforms 
+
+ See all in Products & platforms
+
+ Products 
+
+ Search 
+
+ Maps 
+
+ Chrome 
+
+ Google Health 
+
+ Google Workspace 
+
+ Learning & Education 
+
+ Shopping 
+
+ See all 
+
+ Platforms 
+
+ Android 
+
+ Google Play 
+
+ Wear OS 
+
+ See all 
+
+ Devices 
+
+ Pixel 
+
+ Google Nest 
+
+ Fitbit 
+
+ Chromebook 
+
+ Googlebook 
+
+ See all 
+
+ Learn more:
+
+ Google Ads & Commerce blog 
+
+ Waze blog 
+
+ Company news
+
+ Company news 
+
+ See all in Company news
+
+ Outreach & initiatives 
+
+ Creating opportunity 
+
+ Safety & security 
+
+ Google.org 
+
+ Public policy 
+
+ Sustainability 
+
+ Health 
+
+ See all 
+
+ Leadership 
+
+ Sundar Pichai, CEO 
+
+ More authors 
+
+ See all 
+
+ Inside Google 
+
+ Around the globe 
+
+ Life at Google 
+
+ See all 
+
+ Learn more:
+
+ Google Security blog 
+
+ Feed
+
+ Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips 
+
+ Share 
+
+ x.com 
+
+ Facebook 
+
+ LinkedIn 
+
+ Mail 
+
+ Copy link 
+
+ []
+
+ Preferences 
+
+ Global (English)
+
+ Africa (English)
+
+ Australia (English)
+
+ Brasil (Português)
+
+ Canada (English)
+
+ Canada (Français)
+
+ Česko (Čeština)
+
+ Deutschland (Deutsch)
+
+ España (Español)
+
+ France (Français)
+
+ Greece (Ελληνικά)
+
+ India (English)
+
+ Indonesia (Bahasa Indonesia)
+
+ Ireland (English)
+
+ Italia (Italiano)
+
+ 日本 (日本語)
+
+ 대한민국 (한국어)
+
+ Latinoamérica (Español)
+
+ Malaysia (English)
+
+ الشرق الأوسط وشمال أفريقيا (اللغة العربية)
+
+ MENA (English)
+
+ Nederlands (Nederland)
+
+ New Zealand (English)
+
+ Polska (Polski)
+
+ Portugal (Português)
+
+ România (Română)
+
+ Sverige (Svenska)
+
+ ประเทศไทย (ไทย)
+
+ Türkiye (Türkçe)
+
+ 台灣 (中文)
+
+ Links 
+
+Images 
+
+RSS feed 
+
+ x.com 
+
+ Facebook 
+
+ LinkedIn 
+
+ Mail 
+
+ Copy link 
+
+ Newsletter 
+
+ Breadcrumb 
+
+ Home
+
+ Innovation & AI
+
+ Technology
+
+ Developer tools
+
+ Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips 
+
+ Nov 05, 2026 
+
+ | 
+
+ x.com 
+
+ Facebook 
+
+ LinkedIn 
+
+ Mail 
+
+ Copy link 
+
+ Gemini Omni 1.2 Flash brings 15-second clips, stronger consistency, and faster, more cost-effective generation.
+
+ Anish Nangia 
+
+ Product Manager, Google DeepMind 
+
+ Share
+
+ x.com 
+
+ Facebook 
+
+ LinkedIn 
+
+ Mail 
+
+ Copy link 
+
+ . Inlining them here makes them available in the DOM for the page. -->
+
+ Your browser does not support the audio element. 
+
+ Listen to article
+
+ [[duration]] minutes 
+
+ This content is generated by Google AI. Generative AI is experimental 
+
+ Voice 
+
+ Speed 
+
+ Voice 
+
+ Speed 
+ 0.75X 
+ 1X 
+ 1.5X 
+ 2X 
+
+ Read AI-generated summary
+
+ We’re rolling out Gemini Omni 1.2 Flash, which offers native 15-second video creation, improved reference adherence, and multi-turn conversational editing. This update lowers costs by 30% and provides better consistency for your professional projects. You can start using these capabilities today across the Gemini API, Google Vids, and Gemini for business to produce high-quality video content at scale. 
+
+ Summaries were generated by Google AI. Generative AI is experimental.
+
+ We are launching Gemini Omni 1.2 Flash with support for fifteen-second videos and improved reference adherence. 
+ You can now edit clips through multi-turn conversations, which allows for faster adjustments without starting over. 
+ We reduced the price by 30% to help you produce high-quality video content at a lower cost. 
+ This model is generally available on the Gemini API and Google Cloud for your production needs. 
+
+ Summaries were generated by Google AI. Generative AI is experimental.
+
+ Explore other styles:
+
+ General summary
+
+ Bullet points
+
+ Today, we’re rolling out Gemini Omni 1.2 Flash, and making it generally available across the Gemini API and Gemini for business . Gemini Omni 1.2 Flash introduces native 15-second video creation, multi-turn conversational editing capabilities, and enhanced reference following. We have dropped the price 30% from Gemini Omni 1.1 making it available at $0.07 per second for 720p video. Here’s an overview of what’s new: Fast and cost-effective at scale Beyond the lower price, the workflow keeps costs down: you can draft fast at 360p or 720p, fix a detail with a follow-up edit instead of re-generating the entire clip, and then upscale your best creations to 1080p or 4K. Longer clips up to 15 seconds You can now generate and edit videos natively up to 15 seconds long, up from 10 seconds with Omni 1.1. You can also specify duration in one-second increments from 3 to 15 seconds, giving you room to tell complete stories, create product explainers, or produce full social ad spots in a single generation. Better reference adherence You can guide generation combining character, product, or style images, short motion clips (up to three seconds), and audio cues — and Omni 1.2 Flash holds onto those details from start to finish. Faces, garments, packaging typography, and brand colors stay consistent across camera angles, making it easy to turn existing product photography or character sheets into virtual try-on clips, catalog spins, and branded video ads. 
+
+ Combining one model photo with front-and-back product shots of three outfits, Gemini Omni 1.2 Flash generates a 15-second virtual try-on sequence across 360-degree turns and match cuts while keeping the model’s identity and each garment’s cut, drape, and back details consistent. 
+
+ More consistent results You can maintain stronger character, object, and scene consistency from the first to the last frame, with less visual drift or morphing across motion and camera transitions. Whether you’re interpolating between a first and last keyframe, or extending a clip to build a longer sequence, products, characters, props, and environments stay consistent from shot to shot. 
+
+ Given the same static studio lighting exhibition poster and five-layer animation prompt, Gemini Omni 1.1 Flash does not match the reference image as closely as 1.2 does. Gemini Omni 1.2 Flash builds the poster sequentially layer by layer on the dusty-pink cyclorama rising the hexagonal plinth, assembling the ribbed glass, warm filament, faceted crystal, and coiled-cord letterforms for HALO, GLOW, and LUMEN, and locking every material, shadow, and typographic detail consistently through the final frame. 
+
+ Easier editing in conversation You can refine the same clip turn by turn — such as swapping a product or background, changing the lighting or weather, or switching the aspect ratio — instead of starting over from scratch. Multi-turn conversational editing works across full 15-second clips, making it easy to produce ad variants for different audiences and placements without re-briefing or re-generating. 
+
+ Starting from one generated clip, multi-turn conversational prompts swap the background turn by turn — from a striped pavilion tent to an oak forest, a stable with a white horse, a market fair, and a stone castle — while keeping both characters’ performances, armor reflections, and camera framing intact. 
+
+ More natural speech You can generate scenes with more fluid, natural-sounding dialogue, clearer lip-sync, and distinct multi-speaker conditioning. This will show up whether you’re directing multi-character dialogue in Flow , creating video explainers in Gemini for business , or creating polished, pro videos with avatars, music and narration in Google Vids . 
+
+ Conditioned on one conservatory scene image alongside four character, mouth, and one-second voice references, Gemini Omni 1.2 Flash routes each sampled voice to the right character with expressive lip-sync and natural comedic timing across a 15-second animated scene. 
+
+ More controllable, cinematic look You can direct complex, continuous camera movements like sweeping FPV flythroughs to dramatic zoom-outs and orbits with significantly fewer unwanted jump cuts, steadier scale, and a more polished, cinematic look. 
+
+ Guided by two architectural reference photos, Gemini Omni 1.2 Flash directs one continuous FPV drone flight across the piazza, through the bronze doors, and up through the Pantheon’s coffered dome to the oculus with zero jump cuts. 
+
+ Longer clips with smoother motion and tighter consistency Gemini Omni 1.2 Flash generates clips up to 15 seconds long that hold references together better than before. You can scroll through to see characters, text, and camera moves stay consistent across longer shots, multiple turns and transitions with no cuts. 
+
+ 15 second long clips: Turns one style frame into a 4-shot, 15-second macro science explainer with accurately spelled, motion-tracked callouts. 
+
+ Multi-turn motion transfer: Generates a rippling octopus in Turn 1, then replaces it in Turn 2 with a dancer whose gown mirrors the exact fluid motion. 
+
+ First-to-last frame consistency (1.1 vs. 1.2): Connects an exterior start frame and interior end frame in one continuous camera push in 1.2 Flash. You can see subtle differences like the cats on the roof, the soup ladle turning into chopsticks, and some other minor changes. 
+
+ Unbroken crash zoom-out: Pulls continuously from a tight shoreline close-up to an aerial island vista in one 10-second shot with natural scale and zero cuts. 
+
+ Real-world results, from creatives to global brands 
+
+ Businesses, startups, and creatives are already using Gemini Omni 1.2 Flash in their workflows. And for the first time, Gemini Omni is now generally available, backed by Google Cloud’s enterprise-grade infrastructure and security. Provisioned Throughput is available, and outputs carry an imperceptible SynthID watermark. 
+
+ Get started with Gemini Omni 1.2 Flash While development is ongoing to further improve things like fast sports action, rapid script changes and complex physics, Gemini Omni 1.2 Flash is ideal for businesses, developers, and creators producing videos at scale. You can get started with Gemini Omni 1.2 Flash today as it rolls out across Google’s products and developer platforms: For developers using the Gemini API: Prototype in Google AI Studio , explore interactive starter apps, and check out the developer documentation and pricing . For businesses: Try it in the Google Cloud console , and build enterprise solutions with the API . For everyone using Google apps: Direct scenes and multi-turn edits in Flow , generate 15-second clips at no additional cost in Google Vids with a Google account or Google Workspace subscription, create 15-second videos in the Gemini app (rolling out to Google AI Ultra subscribers), and scale video campaigns in Google Ads . 
+
+ Get the latest news from Google in your inbox
+
+ Sign up for our newsletters with product updates, event information, special offers, and more.
+
+ Done. Just one step more. 
+
+ Check your inbox to confirm your subscription.
+
+ You can also subscribe with a different email address .
+
+ Your information will be used in accordance with Google's privacy policy. You may opt out at any time.
+
+ Posted in: 
+
+ Developer tools
+
+ Gemini models
+
+ AI
+
+ Related stories
+
+ AI
+
+ The latest AI news we announced in October 2026
+
+ By
+
+ Blog Team
+
+ Gemini models
+
+ Gemini 4 Carbon: our next frontier model
+
+ By
+
+ Koray Kavukcuoglu
+
+ Developer tools
+
+ Build and manage Connected Apps in one place
+
+ By
+
+ Chips Mistry
+
+ & 
+ Mai Lowe
+
+ Learning & Education
+
+ Our newest AI Quest: Mapping the human brain
+
+ By
+
+ Ronit Levavi Morad
+
+ Google in Asia
+
+ Southeast Asia’s digital economy to hit $368 billion
+
+ By
+
+ Nitin Gajria
+
+ Safety & Security
+
+ Developing Gemini 4 Argon responsibly and safely
+
+ By
+
+ Anca Dragan
+
+ & 
+ Raluca Ada Popa
+
+ Privacy
+
+ Terms
+
+ Help
+
+ More of Google
+
+ Google Products
+
+ About the Blog
+
+ Global (English)
+
+ Africa (English)
+
+ Australia (English)
+
+ Brasil (Português)
+
+ Canada (English)
+
+ Canada (Français)
+
+ Česko (Čeština)
+
+ Deutschland (Deutsch)
+
+ España (Español)
+
+ France (Français)
+
+ Greece (Ελληνικά)
+
+ India (English)
+
+ Indonesia (Bahasa Indonesia)
+
+ Ireland (English)
+
+ Italia (Italiano)
+
+ 日本 (日本語)
+
+ 대한민국 (한국어)
+
+ Latinoamérica (Español)
+
+ Malaysia (English)
+
+ الشرق الأوسط وشمال أفريقيا (اللغة العربية)
+
+ MENA (English)
+
+ Nederlands (Nederland)
+
+ New Zealand (English)
+
+ Polska (Polski)
+
+ Portugal (Português)
+
+ România (Română)
+
+ Sverige (Svenska)
+
+ ประเทศไทย (ไทย)
+
+ Türkiye (Türkçe)
+
+ 台灣 (中文)
+
+## HN discussion highlights (item 50392118, 364pts)
+
+[pyjarrett] It would be incredibly helpful to me if AI model names followed cars. I'm not scratching my head about a "2025 Corolla." Windows 95 and 2000 had this built in, but then they lost it. I'd prefer it was called Omni 2026.2 instead. It embeds a date and model and would package it as a product for on-premise or local hosting. It'd be easier to sell to the bean counters in the future: "We're running Omni 2026.2, we want to upgrade to Omni 2028."
+
+[NitpickLawyer] Waiting for someone to test it with "~~A pelican~~Will Smith eating pasta while riding a bicycle" or something...
+
+[dude250711] That is sad... I tried to guess and ignore AI videos (created to be deliberately misleading as "realistic") by length, but I guess that time is over now.
+
+[sirmike_] it’s a shame that Google/Gemini decided to restrict and fuck other adventurous yet extremely gracious paying customers; who were excited at the prospect of not being locked in to two obnoxious companies. oh well, I guess we’ll just have to take that enthusiasm and roll it over to all the open weights on providers like fireworks.ai. or others. i’m so happy I got in early and paid for $200 a month for shit ass Opus 4.6 and sonnet 4.6 and being locked into the absolutely limited Gemini 3.8 flash.
+
+[azan_] > who were excited at the prospect of not being locked in to two obnoxious companies. Is being locked in to three obnoxious companies that much better?
+
+[poilcn] Somewhere in the middle of the video it would suddenly scroll one screen back, happens with all videos on the page, eh
+
+[hulkmusic] When playback ends on one of the videos, the page jumps back to that video for some reason. I saw this too when I had multiple videos playing at once and the earlier clip on the page finished while watching another one lower on the page.
+
+[wxce] It's insane how Google has dropped the ball almost completely with AI. I literally don't care about their models anymore because I can't even try them without paying for them? I already pay for the plus plan but whatever their latest model was, is locked for me. Or otherwise it's just not accessible for me. If I try to add balance to my Google payment account, it shows me errors and is asking me to verify my identity through government documents. --- Not to mention the extremely confusing termin
+
+[jorl17] There have been months where we've paid 1500€ for my AI models, but I can't bother with Google's models because I literally don't know how to get them. Every time I look it up it looks incredibly cumbersome and confusing. It's not clear which models I get, if I can get them on my personal accounts or need the work account. It's just too confusing. I am a Google Workspace customer by the way (have multiple accounts, actually!). Google must really not care about me as a customer, and instead only 
+
+[ttul] AI Studio is legitimately the worst UX experience on the internet. For a company with unlimited cash and the ability to hire the best talent, I just don’t get it. Give nearly anyone else a few hours alone with that codebase and Opus-5.5 and it will be looking 1,000x better.
+
+[dataflow] > I literally don't care about their models anymore because I can't even try them without paying for them? Where are you finding ways to try e.g. Opus without paying for it?
+
+[WarmWash] Flash-lite haiku luna Flash sonnet tera Pro Opus Sol Argon Fable Astra These are the (approximately) equivalent model classes between the labs Experimental means not production, so liable to change in the near future if you decide to build on it. Omni is a video editing model, and flash implies it's a lighter weight one than what they have/could have. The other labs don't have competing models here.
+
+[infecto] It truly is. I acutallu signed up for an annual plan because I used the image models for design ideas on my house. Few weeks ago they announced changes, no more pro models. It’s laughable how much they keep screwing up.
+
+[Pxtl] They may have dropped the ball on AI-for-programmers, but the Google slopbot is the one the normies use. As much as their AI summaries used to be the biggest joke in the industry, today they're the one I think normies who aren't "AI people" are using the most day-to-day. I see a lot of people doing it: Search with Google, see the AI summary and the search results, realise they want more detailed info, and put that request for clarification into the AI reply and now they're off to the races on a

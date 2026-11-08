@@ -2,7 +2,7 @@
 title: "Claude Code"
 type: concept
 created: 2026-06-11
-updated: 2026-10-29
+updated: 2026-11-08
 tags:
   - coding-agents
   - claude-code
@@ -44,3 +44,7 @@ See also: [[entities/claude-code]] (entity page), [[concepts/claude|Claude]] (mo
 
 - [[concepts/claude-code/claude-code-leak]] — Known leak issues
 - [[concepts/claude-code/claude-code-agent-summary-polling]] — `agent_summary` background transcript polling — hidden ~30s interval transcript re-summarization for every background agent (status line only, no off switch since 2.1.232)
+
+## Secrets Exposure via "Don't Ask Again" (Nov 2026)
+
+Apiiro reported (HN 434pts — https://news.ycombinator.com/item?id=50407882) that Claude Code's "Don't Ask Again" permission option writes approved commands — including commands containing inline passwords/keys — into project-local `.claude/settings.local.json` / `.claude/settings.json`. Committing the `.claude/` directory then leaks those secrets: 1,122 such files were found in public GitHub repos, and the file spreads with every clone/fork even in private repos until the repo goes public. Remediation per the authors: search your org for `.claude/settings.local.json` and `.claude/settings.json` and audit for embedded credentials. Raw: `raw/articles/2026-11-07_apiiro_claude-code-dont-ask-again-secrets.md`. See [[concepts/claude-code/claude-code-sandboxing]] for the permission-model context.
