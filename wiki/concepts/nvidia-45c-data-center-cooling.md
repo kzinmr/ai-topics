@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA 45°C Data Center Cooling"
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-11-08
 type: concept
 tags:
   - nvidia
@@ -65,6 +65,10 @@ As Motivair President and CEO Richard Whitmore noted: "Once the watts per chip c
 ## Limitations
 
 The geography caveat matters: a data center in a cool climate (e.g., Scottish Highlands) can achieve chiller-less operation nearly year-round, while one in Phoenix, Arizona, faces more challenging conditions. However, even in warmer climates, the 45°C coolant design moves operators significantly closer to the chiller-less ideal.
+
+## Precedent from China (November 2026)
+
+SemiAnalysis's September 2026 site visit to Envision Group's Galaxy campus in Ulanqab, Inner Mongolia documented a design already running at scale in northern China: liquid- and air-cooled servers share **one water loop with no central chiller plant**, retaining much of the load-shifting flexibility US operators keep chillers for. The 45°C water claim "has an operational reference point" in these Chinese deployments years before US adoption. See [[concepts/china-datacenter-buildout]].
 
 ## Related Pages
 

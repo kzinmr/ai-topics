@@ -1,7 +1,7 @@
 ---
 title: "AI Energy"
 created: 2026-08-08
-updated: 2026-09-22
+updated: 2026-11-08
 type: concept
 tags:
   - concept
@@ -144,6 +144,8 @@ The regulatory climate for data center siting hardened sharply in 2026, extendin
 - **The data center fight**: Ezra Klein and Jasmine Sun's reporting on the data center fight (including Midwest field reporting) documents how local opposition has moved from noise to binding policy, forcing developers to negotiate with communities rather than only with utilities (per Superintel+, 2026-08-11)
 
 These restrictions compound the power-delivery bottlenecks below: even where transformers and transmission capacity could be secured, permitting and political approval are now an additional multi-year risk for new AI data center projects.
+
+**November 3, 2026 escalation — direct democracy**: of 41 local data-center ballot measures tracked by Ballotpedia, the anti-data-center side won **40** (all 13 pro-development measures rejected; 72.9% of votes for the limiting side). Isenberg's fact-check finds the national water/power-bill claims unsupported but grid strain, one-region capacity costs, and secrecy real. Full page: [[concepts/data-center-local-backlash]]. The mirror image: China's Inner Mongolia is accelerating GW campuses with no local backlash via the SGLS self-generation model ([[concepts/china-datacenter-buildout]], [[concepts/source-grid-load-storage]]).
 
 ### Grid Infrastructure Bottlenecks
 

@@ -2,7 +2,7 @@
 title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
-updated: 2026-08-24
+updated: 2026-11-08
 tags:
   - company
   - lab
@@ -29,6 +29,7 @@ sources:
   - raw/newsletters/2026-06-18-stop-saying-half-of-2026-us-datacenter-capacity-is-canceled.md
   - raw/newsletters/2026-07-06-nvidia-gpu-debt-backstop-unleashes-the-ai-project-trinity-capital-offtake-and-da.md
   - raw/newsletters/2026-08-07-gemini-is-cooked-but-gcp-is-cooking.md
+  - raw/articles/2026-11-07_semianalysis-we-visited-chinas-stargate-inner-mongolia.md
   - https://semianalysis.com/
 ---
 
@@ -320,6 +321,12 @@ SemiAnalysis revealed that Meta and OpenAI receive approximately **105% equity r
 SemiAnalysis concluded that AMD has achieved **silicon leadership** (2nm, HBM4, CoWoS-L) but faces two major near-term risks: (1) Helios slow rack production due to cableless tray design issues, and (2) persistent GPU cluster shortage for internal dev teams and CI. The software gap — the [[concepts/cuda-moat|CUDA moat]] — remains formidable despite the novel Agentic Kernel Generation approach.
 
 Source: raw/newsletters/2026-07-25-can-amd-break-the-cuda-moat-amd-advancing-ai-2026.md
+
+### We Visited China's Stargate in Inner Mongolia (November 2026)
+
+On November 7, 2026 SemiAnalysis published a first-hand September site-visit report from Inner Mongolia ("the West Texas of China"), headlined by [[entities/envision-group|Envision Group]]'s **Galaxy campus in Ulanqab** — up to 800MW IT, on par with Stargate Abilene's core campus, with the first 120MW delivered in under a year at a fifth of US costs. Key claims: the SGLS (source-grid-load-storage) power model self-supplies >60% of load from Envision's own wind + 4h AESC storage ([[concepts/source-grid-load-storage]]); a live **5MW SST 800V DC pilot** (10kV AC → 800V DC to rack) while ~97% of US DCs still run AC UPS; chiller-less shared water-loop cooling as a northern-China answer to the NVIDIA 45°C debate ([[concepts/nvidia-45c-data-center-cooling]]); Inner Mongolia economics — power $0.055/kWh all-in, rents ~$40/kW/month, capex <$3mm/MW, 25GW announced projects; and the CATL×VNET×Zhongheng vertical-integration counter-model (CATL also a top DeepSeek outside investor). Full page: [[concepts/china-datacenter-buildout]]. Paywalled (Paid tier) — free portion captured.
+
+Source: raw/articles/2026-11-07_semianalysis-we-visited-chinas-stargate-inner-mongolia.md
 
 ## Contact
 - clustermax@semianalysis.com

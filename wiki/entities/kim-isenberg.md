@@ -2,7 +2,7 @@
 title: "Kim 'Chubby' Isenberg"
 type: entity
 created: 2026-05-12
-updated: 2026-08-02
+updated: 2026-11-08
 tags:
   - person
   - blogger
@@ -14,6 +14,7 @@ sources:
   - raw/newsletters/2026-05-10-trustworthy-ai-is-really-about-delegated-agency.md
   - raw/newsletters/2026-08-01-the-duel-that-never-happened.md
   - raw/articles/2026-08-01-the-duel-that-never-happened.md
+  - raw/articles/2026-11-07_getsuperintel-data-center-limits-won-40-of-41-local-votes.md
 ---
 
 # Kim Isenberg
@@ -42,6 +43,10 @@ Key insight: **Risk arises from the interaction between capability and delegated
 ### "The Duel That Never Happened" (August 2026)
 
 DeepDive analysis (19-minute read) examining the AI benchmark controversy that split the industry at the end of July 2026. Per the free preview, the piece investigates **two contested industry numbers**: one that "was never a single measurement at all" (benchmark gaming / misrepresentation) and another that "nobody outside a company meeting has actually seen" (unverified marketing claims). The OG image featured Sarah Friar (CFO of OpenAI), tying the piece to OpenAI-related evaluation narratives. Body content is paywalled under the Superintel+ tier (Cloudflare 403 for automated access), so only the preview thesis is captured here; re-assess when the full text becomes accessible. Relevant to [[concepts/ai-benchmarks]] and [[concepts/evaluation/ai-evaluation]] coverage.
+
+### "Data Center Limits Won 40 of 41 Local Votes" (November 2026)
+
+15-minute DeepDive on the November 3, 2026 US local elections: of 41 Ballotpedia-tracked local data-center measures, the anti-data-center side won **40** (27 of 28 restrictions approved incl. 5 bans; all 13 pro-development measures rejected; 72.9% of 250,000+ votes, median 77%). The lone exception was Harwood, ND, where ~3-in-4 voters rejected extra review for Applied Digital's Oracle-bound campus. Isenberg — explicitly pro-buildout — checks nine opponent claims against evidence: national water/power-bill claims fail, grid strain, one-region capacity costs, and secrecy hold. Framing: "Until now the hard limits on the AI buildout were chips and electricity; **local consent has joined them**." Full page: [[concepts/data-center-local-backlash]]. (Superintel+ paywall — free portion captured; per-claim evidence paywalled.)
 
 ### Previous Coverage
 

@@ -164,6 +164,8 @@ prospectus exists.
 
 ## Related Concepts
 
+- [[concepts/data-center-local-backlash]] — the siting-side risk: 40 of 41 local US ballot measures restricting data centers passed on Nov 3, 2026 (Superintel+); local consent as a new hard limit alongside chips and electricity
+- [[concepts/china-datacenter-buildout]] — the non-market-economy contrast: GW campuses delivered in <12 months at 1/5 US cost with no local backlash
 - [[concepts/ai-bubble]] — The broader AI bubble thesis
 - [[concepts/ai-bubble-economics]] — AI inference profitability and economic models (includes Gary Marcus's Aug 2026 "Data center madness" capex-to-revenue analysis)
 - [[entities/coreweave]] — Primary debt-issuing neocloud

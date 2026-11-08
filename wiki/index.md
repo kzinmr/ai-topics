@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3384
+> Total pages: 3388
 > Last updated: 2026-11-07
 
-## Entities (965 pages)
+## Entities (966 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -292,6 +292,7 @@
 - [[entities/encodec]] — EnCodec
 - [[entities/entire]] — Entire — Agent observability, sessions & distributed Git network for the agent era (CEO: Thomas Dohmke)
 - [[entities/entropicthoughts-com]] — Chris of Entropic Thoughts
+- [[entities/envision-group]] — Envision Group — Chinese renewable systems integrator (100GW+ wind); owns the 800MW "China's Stargate" Galaxy campus in Ulanqab; SGLS self-generation, 5MW SST 800V DC pilot, vertical integration from wind turbines to BESS to substations (Nov 2026)
 - [[entities/epoch-ai]] — Epoch AI
 - [[entities/eric-drexler]] — Eric Drexler
 - [[entities/eric-hartford]] — Eric Hartford
@@ -973,7 +974,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2314 pages)
+## Concepts (2317 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
@@ -1580,6 +1581,7 @@
 - [[concepts/chicago]] — Chicago
 - [[concepts/chief-of-staff-agent-patterns]] — Analyze the budget impact of a proposed action
 - [[concepts/china-agentic-coding-sprint]] — China Agentic Coding Sprint
+- [[concepts/china-datacenter-buildout]] — China Datacenter Buildout — SemiAnalysis Sept 2026 site visit: Envision's 800MW "China's Stargate" Galaxy campus (Ulanqab), 120MW in <1yr at 1/5 US cost, SGLS self-supplied wind power, live 5MW SST 800V DC pilot, chiller-less cooling; $0.055/kWh, 25GW announced in Inner Mongolia (Nov 2026)
 - [[concepts/china-openclaw-agentic-boom]] — China OpenClaw Agentic AI Boom (2026)
 - [[concepts/chip-huyen-chipro]] — Chip Huyen (@chipro)
 - [[concepts/chokepoint-capitalism]] — chokepoint-capitalism
@@ -1804,6 +1806,7 @@
 - [[concepts/dark-factory-software-factory]] — Dark Factory Software Factory; + Uber enterprise-scale case study (Aug 2026: >70% agent-authored PRs, cost equation, -34%/-52% cost curves)
 - [[concepts/coding-agents/lint-rules-as-agent-feedback-loop]] — Lint Rules as the Agent Feedback Loop; Sarah/@sarahfim Composio anti-slop factory (Oct 2026): repo-is-the-factory, slop compounds, lint>skills, 38 custom lint rules, mid-scale 30–50 contributors
 - [[concepts/data-analysis-agents]] — AI Data Analysis Agents
+- [[concepts/data-center-local-backlash]] — Data Center Local Backlash — 40 of 41 local US ballot measures restricting data centers won on Nov 3, 2026 (Ballotpedia; 72.9% of votes); nine opponent claims fact-checked; "local consent has joined chips and electricity" as a hard limit (Superintel+, Nov 2026)
 - [[concepts/data-breach]] — Data Breach
 - [[concepts/data-engineering]] — Data Engineering
 - [[concepts/data-engineering-for-ml]] — Data Engineering for ML
@@ -3056,6 +3059,7 @@
 - [[concepts/smollm]] — SmolLM
 - [[concepts/smollm2]] — SmolLM2
 - [[concepts/source-learning-agent-competence]] — Source Learning (Source-Specific Agent Competence) — SourceLearn: build a persistent source model from repeated source use; self-directed + task-guided learning, reconstructed from the authoritative source (arXiv:2610.02150)
+- [[concepts/source-grid-load-storage]] — Source-Grid-Load-Storage (SGLS) — Chinese project model pairing a datacenter with its own wind/solar, dedicated line and battery storage; Envision's Galaxy campus self-supplies >60% of load (420MW wind vs 240MW load + 4h BESS); converts the grid-queue bottleneck into private generation (Nov 2026)
 - [[concepts/snapshot-testing]] — snapshot-testing
 - [[concepts/snowflake-arctic-rl]] — Snowflake Arctic RL — Open-source RL framework (VeRL+SkyRL); ZoRRo 6x actor-update acceleration; 36h Text2SQL training on 32 H200s; beats Gemini 3.1 Pro (June 30)
 - [[concepts/societal-shadow]] — A concept proposed by QC (Qiaochu Yuan): the ironic phenomenon where RLHF's need to enumerate everything LLMs are for...

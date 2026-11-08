@@ -120,6 +120,10 @@ Contrarian to the dominant narrative that power is the AI bottleneck, Patel argu
 
 This puts Patel at odds with the "power is the bottleneck" consensus of 2024–2025 and aligns with his broader thesis that the bottleneck always shifts to the **most constrained physical layer** in the supply chain.
 
+## On China's Datacenter Buildout (November 2026)
+
+In "We Visited China's Stargate in Inner Mongolia" (Nov 7, 2026, co-authored with Everlyn Tan, Jeremie Eliahou Ontiveros, "Xiaopeng Laoban"), SemiAnalysis reported from a September site visit to Envision Group's Galaxy campus — full page: [[concepts/china-datacenter-buildout]], [[entities/envision-group]]. Findings that extend Patel's physical-layer framework to the datacenter layer: 120MW delivered in under a year at 1/5 US costs, ~25% of Chinese DCs on DC power vs ~97% of US DCs still on AC UPS, a live 5MW SST 800V DC pilot, and chiller-less cooling at scale — while the US bottleneck expands from chips and power to **local consent** ([[concepts/data-center-local-backlash]]).
+
 ## Key Quotes
 
 > *"No sloppy seconds for Dwarkesh."* — Opening line of his Dwarkesh Podcast appearance
