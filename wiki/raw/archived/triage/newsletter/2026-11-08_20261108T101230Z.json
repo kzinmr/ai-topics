@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-11-08T10:35:33.145615+00:00",
+  "triage_run_id": "20261108T101230Z",
+  "source": "newsletter",
+  "summary_ja": "2026-11-07着のニュースレター2通（35リンク）をtriage。両通とも単一記事ニュースレターで、大半はSubstack/beehiivのboilerplate/SNS/プロモリンク。takeは2件: (1) SemiAnalysis『We Visited China's Stargate in Inner Mongolia』— 内モンゴル・UlanqabのEnvision Group 800MW Galaxyキャンパス（Stargate Abileneと同等規模、120MWを1年未満・米国コストの1/5で納品、SGLSで電力60%超を自社風電供給、5MW SST 800V DC実運用、中央チラーなし）。wikiにEnvision/SGLS/Ulanqab/800V DCの記録が一切ないため新規 concepts/china-datacenter-buildout.md + entities/envision-group.md + concepts/source-grid-load-storage.md + 既存4ページ更新を推奨。(2) Superintelligence『Data Center Limits Won 40 of 41 Local Votes』— 11月3日の地方投票41件中40件でDC規制可決、反DC論の9主張を検証。concepts/data-center-local-backlash.md（新規）+ entities/kim-isenberg.md 更新を推奨。両記事ともrawはnewsletter-ingest段階で保存済み（SemiAnalysisはpaywallのためfree範囲のみ）。",
+  "decisions": [
+    {
+      "item_id": "sa-boilerplate-links-1,3-11,16-19",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "Batch: Links 1, 3-11, 16-19 (Substack boilerplate/profile/subscribe/redirect)",
+      "url": "https://newsletter.semianalysis.com/p/we-visited-chinas-stargate-in-inner",
+      "raw_path": "wiki/raw/articles/2026-11-07_semianalysis-we-visited-chinas-stargate-inner-mongolia.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 同一記事（SemiAnalysis『We Visited China's Stargate in Inner Mongolia』、publication_id=6349492, post_id=223260888）のapp-link/like/comment/share/restack/profile/subscribe/boilerplateリンク。inbox pre-triage summary（uid=887）で本文はraw保存済みと確認。take済みの本体（item -2）と同一コンテンツなのでスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "We Visited China’s Stargate in Inner Mongolia Subscribe Sign in We Visited China’s Stargate in Inner Mongolia A wind-powered 800MW campus, 120MW built within a year, a 5MW SST-native 800V DC pilot and a cooling design without central chillers Everlyn Tan , Jeremie Eliahou Ontiveros , Xiaopeng Laoban"
+    },
+    {
+      "item_id": "sa-uuid-redirect-links-12-15",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "Batch: Links 12-15 (substack.com/redirect/ UUID tracking links)",
+      "url": "https://substack.com/redirect/",
+      "raw_path": "wiki/raw/articles/2026-11-07_semianalysis-we-visited-chinas-stargate-inner-mongolia.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ substack.com/redirect/<uuid> 形式はメールセッションの認可が必要なトラッキングリンク（email-session auth必須）。web_extractは失敗する。ニュースレター本文（raw保存済み）が既に全キュレーション内容を網羅しているため価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "We Visited China’s Stargate in Inner Mongolia Subscribe Sign in We Visited China’s Stargate in Inner Mongolia A wind-powered 800MW campus, 120MW built within a year, a 5MW SST-native 800V DC pilot and a cooling design without central chillers Everlyn Tan , Jeremie Eliahou Ontiveros , Xiaopeng Laoban"
+    }
+  ]
+}
