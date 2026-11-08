@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "kind": "newsletter-ingest-triage",
+  "run_id": "20261108T101230Z",
+  "triaged_at": "2026-11-08T10:30:00+00:00",
+  "processed_count": 2,
+  "decision_count": 2,
+  "new_articles_total": 35,
+  "wiki_actionable_total": 2,
+  "skipped_as_boilerplate_total": 33,
+  "scraped_and_saved_total": 2,
+  "decisions": [
+    {
+      "source_label": "uid=887",
+      "subject": "We Visited China's Stargate in Inner Mongolia",
+      "date": "2026-11-07",
+      "publisher": "SemiAnalysis (newsletter.semianalysis.com)",
+      "authors": [
+        "Everlyn Tan",
+        "Jeremie Eliahou Ontiveros",
+        "Xiaopeng Laoban",
+        "Dylan Patel"
+      ],
+      "resolved_url": "https://newsletter.semianalysis.com/p/we-visited-chinas-stargate-in-inner",
+      "importance": "critical",
+      "ai_relevance": "high",
+      "newsjacking_score": 4,
+      "action": "save_raw",
+      "save_paths": [
+        "wiki/raw/articles/2026-11-07_semianalysis-we-visited-chinas-stargate-inner-mongolia.md"
+      ],
+      "why_ja": "2026年9月の第一手現地取材（内モンゴル・Ulanqab、Envision GroupのGalaxy 800MWキャンパス）。Stargate Abilene（約820MW IT）と規模が同等の中国最大級単一キャンパス。120MWを1年で・米国コストの1/5で納品、source-grid-load-storage(SGLS)で電力の60%超を自社風電で供給。5MWのSSTベース800V DCファイルッドが実運用中、中央チラーなしの冷却設計はNvidia Vera Rubin 45度水冷の先行事例。Inner Mongoliaに25GWの発表案件、電力$0.055/kWh、中国DC賃料$40/kW/月・capex $3mm/MW未満、CATL x VNET x Zhongheng連合、CATLのDeepSeek出資まで射程。AI buildoutの電力制約・米中比較というwiki中核テーマと直結。",
+      "wiki_pages_to_update": [
+        "entities/semianalysis.md",
+        "entities/dylan-patel.md",
+        "concepts/subprime-data-center-crisis.md",
+        "concepts/nvidia-45c-data-center-cooling.md"
+      ],
+      "suggested_new_concepts": [
+        "concepts/china-datacenter-buildout.md",
+        "concepts/source-grid-load-storage.md",
+        "concepts/data-center-local-backlash.md"
+      ],
+      "suggested_new_entities": [
+        "entities/envision-group.md"
+      ],
+      "tags": [
+        "data-centers",
+        "ai-infrastructure",
+        "semianalysis",
+        "dylan-patel",
+        "openai",
+        "china",
+        "energy",
+        "ai-buildout",
+        "geopolitics"
+      ],
+      "notes_ja": "ペイウォール記事のためfree部分の全文のみraw保存。paid以降（速度/コスト詳細・800V DCディープダイブ・冷却解剖）は未取得。wiki化時はfree範囲に限定しpaywall一部未取得を明記すること。Link 3-11（profile/app-link/like/comment/share/restack）はboilerplateとしてスキップ。"
+    },
+    {
+      "source_label": "uid=888",
+      "subject": "Data Center Limits Won 40 of 41 Local Votes",
+      "date": "2026-11-07",
+      "publisher": "Superintelligence. (read.getsuperintel.com)",
+      "author": "Kim 'Chubby' Isenberg (@kimmonismus)",
+      "resolved_url": "https://read.getsuperintel.com/p/data-center-limits-won-40-of-41-local-votes",
+      "importance": "high",
+      "ai_relevance": "high",
+      "newsjacking_score": 3,
+      "action": "save_raw",
+      "save_paths": [
+        "wiki/raw/articles/2026-11-07_getsuperintel-data-center-limits-won-40-of-41-local-votes.md"
+      ],
+      "why_ja": "2026年11月3日の地方投票41件中40件がデータセンター規制（禁止/モラトリアム/追加審査）で可決（Ballotpedia/Bloomberg集計、11/06時点）。Harwood ND（Applied DigitalのOracle向けキャンパス）のみ規制側が敗北。反対派の9つの主張（電気料金・水・騒音・雇用・課税特例など）を証拠と検証し、全国的な水道・電気料金主張はデータに耐えず、送電網負荷・一部地域の容量コスト・不透明性は実在と結論。「AI buildoutのハードリミットはチップと電力からローカル・コンセント（地域同意）へ拡大」という論旨はAIインフラ制約の記録として高価値。既存の反DC論調記事（seangoedecke, wheresyoured.at, garymarcus）と補完関係。",
+      "wiki_pages_to_update": [
+        "entities/kim-isenberg.md",
+        "concepts/subprime-data-center-crisis.md"
+      ],
+      "suggested_new_concepts": [
+        "concepts/data-center-local-backlash.md"
+      ],
+      "tags": [
+        "data-centers",
+        "ai-infrastructure",
+        "ai-buildout",
+        "energy",
+        "policy",
+        "public-opinion"
+      ],
+      "notes_ja": "Link 1,3-16はboilerplate/プロモ/SNSリンク（whitelist広告、X/Threads/YouTube/LinkedIn、advertise、preferences、beehiiv powered-by/ToU、status.hclick）としてスキップ。dc_1/5/6/7の4リンクは403で解決不能だがdc_2が単一記事本体で全内容を網羅。"
+    }
+  ],
+  "notes_ja": "2通とも単一記事ニュースレター（リンク大半はSubstack/beehiiv boilerplate/プロモ/SNS）。両記事の本文をHTTP直接取得してraw/articles/へ保存済み。SemiAnalysisはpaywallのためfree範囲のみ。既存entity（semianalysis/dylan-patel/kim-isenberg）があるため新規人物ページは不要。"
+}
