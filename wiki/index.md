@@ -4,7 +4,7 @@
 > Total pages: 3388
 > Last updated: 2026-11-09
 
-## Entities (965 pages)
+## Entities (966 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
