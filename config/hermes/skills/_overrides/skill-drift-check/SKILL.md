@@ -9,6 +9,7 @@ category: devops
 ## Skill Inventory Management
 
 ### `skill_manage(action='patch')` targets SKILL.md by default
+**SKILL.md 100,000-char patch ceiling (validated 2026-11-06)**: a patch whose resulting content exceeds 100,000 chars is rejected ("content is 100,xxx characters"). The `dreaming` skill sits at this ceiling. When adding learnings to a near-ceiling skill: put the detail in a `references/<topic>.md` via `write_file` (no size pressure there) and add only a ≤~120-char pointer via patch; if the patch still fails, shorten new_string and retry — the reference file is the durable record.
 `patch` without `file_path` searches only the skill's main SKILL.md. Much pipeline detail (e.g. blog-ingest pitfalls in `wiki-ingestion-pipelines`) lives in `references/*.md` files instead. If a patch fails with "Could not find a match" but the text clearly exists somewhere in the skill, re-issue the patch with `file_path='references/<file>.md'`. Locate the right file first (grep the skill dir) — for `wiki-ingestion-pipelines`, most pipeline detail is under `references/` (e.g. `blog-ingest-troubleshooting.md`), not SKILL.md.
 
 ### Managed vs Unmanaged Skills
@@ -260,6 +261,17 @@ cd /opt/data/ai-topics && HOME=/opt/data python3 scripts/check_skill_drift.py
   `platforms:` line + `goal-delegation-patterns` in `related_skills`) — that alone is
   NOT drift, do not "fix" it. See the auto-sync recipe above for the cases that DO
   need action.
+  **Resolved 2026-11-09**: arxiv + kanban-worker had genuine regressions (formula blocks
+  missing from override) — auto-synced per the recipe above (commit 1273733f). arxiv:
+  restored the 5-block "Wiki Ingestion Pitfalls" section while KEEPING the intentional
+  `~/ai-topics/wiki/raw/papers/` path and "below"/trailing-pipe localizations.
+  kanban-worker: restored the `${HERMES_KANBAN_BRANCH:-wt/$HERMES_KANBAN_TASK}` worktree
+  branch default → now byte-identical. Remaining `formula_updated` drifters are
+  intentional-only: arxiv (path localization), kanban-orchestrator (80 removed lines =
+  the v2.0.0 specialist-roster fork, a genuine divergence not yet reconciled — left
+  alone, needs human decision), llm-wiki (only_override=19: MOC/hub-naming/JP-sweep
+  sections added), writing-plans + subagent-driven-development (platforms line +
+  goal-delegation-patterns). Do NOT "fix" those intentional ones.
 - **Real review needed**: `formula_has_new_files` means the builtin shipped new
   `references/*.md` files the override lacks — mostly additive knowledge worth
   copying into the override (the override SKILL.md body edits are usually
