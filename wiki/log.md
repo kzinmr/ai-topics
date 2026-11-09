@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-11-09] skeleton-enrich-daily: backlog empty (streak continues since 2026-10-17)
+
+- Whole-tree frontmatter scan: 0 `status: skeleton` markers in wiki/entities/ and wiki/concepts/.
+- Recent pages (agent-model-drift, agent-memory-interoperability, tristantube, tristan-hume, alphaxiv, memorilla, p-jit-21k) all fully enriched.
+- Snapshot: [[queries/2026-11-09-skeleton-enrich-empty]]. No git-history restores required.
+- `status: stub` concept backlog (~439 pages) remains out of scope for this job.
+
 ## [2026-11-09] auto-fix | Wiki health: index header count reconciliation
 
 ### Changes
