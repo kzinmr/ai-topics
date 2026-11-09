@@ -16,6 +16,7 @@ tags:
   - inference
   - quantization
 sources:
+  - raw/articles/2026-11-08_8rank_apple-intelligence-knowledge-graph.md
   - raw/articles/2026-06-08_apple-third-generation-foundation-models.md
   - raw/articles/2026-06-15_apple-foundation-models-claude-sdk.md
   - https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models
@@ -161,6 +162,23 @@ Server-side architecture building on 2025 foundation. Key upgrades stabilize tra
 - **IFP innovation**: Novel architecture that could influence on-device AI beyond Apple
 - **No public benchmarks**: Apple uses human evaluation only — no MMLU, HumanEval, or standard benchmarks published
 - **Technical report**: Coming later summer 2026 with updated evaluations
+
+## Apple Intelligence Personal Knowledge Graph (Nov 2026)
+
+Security-research reverse-engineering by 8rank.ai (Dario Pasquini & Michał Bazyli, HN 744 pts, item 50403097) of the undocumented `knowledgeconstructiond` + `intelligenceplatformd` daemons shipping since macOS 13 (2022). The daemons build a personal knowledge graph in `~/Library/IntelligencePlatform` — 51 plaintext SQLite databases (TCC Full Disk Access–protected), most notably `graph.db`, a triple store with a vocabulary of **181 entity classes and 278 predicates**.
+
+Key findings:
+
+- **Reified edges**: 46 "relationship type" classes let each edge carry its own confidence and be retracted later (one logical edge = two rows sharing a `relationshipId`).
+- **Sources ingested**: Contacts, Photos faces, Calendar, Family Sharing (incl. member ages), Medical ID emergency contact, Siri Suggestions from Mail/Messages, App Intents donations, installed apps, location/Screen Time, and a `ContextualUnderstanding.PhysicalSocial` stream that logs who was physically present.
+- **Kinship inference**: a nine-signal scorecard (partner column, composite score, household group entity, Family Sharing token, iCloud Family flag, top-12-month contact, Photos face cluster, Contacts record, reachable handle) infers family relations nobody typed in (mother/father/daughter at 0.960). Face co-occurrence graph is built from photos alone — no contacts needed.
+- **Metadata is intelligence**: a full-year communication log (who/when/which app/direction, no content) is enough to derive sleep schedules; retracted facts move to an `expired` table and keep confidence + provenance.
+- **People around you are in it too** — family, friends, and anyone who ever messaged the user, none of whom consented.
+- **Tooling**: the authors open-sourced **iKnow**, a loopback-only local dashboard (Python stdlib, no npm/CDN, air-gap-runnable) to inspect your own graph, plus an agent manual for self-hosted models.
+- **macOS 27 note**: after the 27.0.1 upgrade (released 2026-09-14) the graph withdrew and rebuilt most Contacts/Calendar/Siri/Family Sharing/app-catalog rows within a day.
+- **Companion write-up**: "Weaponizing Personalization: From Knowledge Graph to Extortion" explores the privacy-single-point-of-failure threat model (paired with an abliterated LLM).
+
+ HN commenters flagged the article's visible LLM-authored style shift, but the substantive findings were not disputed. Relevance to this page: the graph is the retrieval substrate Apple Intelligence LLMs (incl. AFM on-device models) query from — its ontology and confidence model constrain what the foundation models can ground on.
 
 ## See Also
 

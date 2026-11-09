@@ -12,6 +12,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-11-09] dreaming wiki-ingest | 2026-11-09 Pattern E — Takes=0, 1 reference (Apple PKG), saturation
+
+- Checkpoint 20261109T180026Z: collected articles=0, recent_raw_articles=230 → Pattern E filesystem scan over 11-06..11-09 raw/articles.
+- **Duplicate check**: 11-09 trending-topics (9236bea9 — Goldman Claude Code pull, Pi migration, Opus 5.5 nerf, bubble contrarian, lorekit OMF, brain-fry), newsletter-wiki-ingest 10:16 (Signal + Lenny), blog-ingest 11-09 (16 raw), Makarevych evals X-article ingest, 11-08 trending-topics (MaxxBench→deepswe, Anthropic IPO→ai-bubble-economics, Gemini Omni/Antigravity→google, MS AI Frontiers), 11-08 newsletter-wiki-ingest (China datacenter, Envision, SGLS, DC backlash), 11-06/07 model+safety cluster (GPT-6 Cyber, Kimi K3, Inkling 2, Hy4, Ripple-65B, provable inference) — all confirmed processed → batch skip.
+- **Reference (1)**: `concepts/apple-foundation-models.md` — new section "Apple Intelligence Personal Knowledge Graph (Nov 2026)": 8rank.ai reverse-engineering (HN 744pts) of knowledgeconstructiond/intelligenceplatformd — graph.db triple store, 181 entity classes / 278 predicates, 46 reified relationship-type classes w/ per-edge confidence, kinship nine-signal scorecard, year-long metadata-only comms log (sleep-schedule inference), iKnow open-source inspector, macOS 27 rebuild event. Genuine gap: zero prior coverage (grep: Neo4j/entity-resolution/8rank absent from apple pages).
+- Prior triage (20261107T180043Z) verified consumed: log.md L136 dreaming group entry + L144 reference list; 11-06 sitemap batch (Harvey ×5, Hebbia, Warp, Decagon, Fireworks, ElevenLabs) confirmed in that run's scope.
+- Duplicate scrapes found: lorekit OMF (11-07/11-09), caleb Pi (11-07/11-08) — skip.
+- Archive: 4 decisions (1 ref + 3 batch skips) via archive_triage.py dreaming --keep-reference.
+
 ## [2026-11-09] watchdog | auto-fix — log.md header burial, index count reconciliation, 1 orphan index registration
 
 ### Auto-fixed

@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-11-09T18:15:25.508569+00:00",
+  "triage_run_id": "20261109T180026Z",
+  "source": "dreaming",
+  "summary_ja": "チェックポイントの collected articles は 0 (recent_raw_articles=230)。filesystem scan (Pattern E) を実行し、11-06〜11-09 の生記事をスクリーンした。ほぼ全ては trending-topics / active-crawl / newsletter / blog / x-accounts パイプラインが同日中に処理済み (log.md 36-146行で確認)。唯一の genuine gap は 8rank の Apple Intelligence knowledge graph 詳細記事 (reference → entities/apple.md)。重複スクレイプ2件と処理済み・非AI群を batch skip としてアーカイブ。Takes=0。",
+  "decisions": [
+    {
+      "item_id": "dreaming-8rank-apple-knowledge-graph",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Apple Intelligence knowledge graph reverse-engineering (8rank, 105KB deep-dive)",
+      "url": "https://8rank.com/blog/apple-intelligence-knowledge-graph",
+      "raw_path": "wiki/raw/articles/2026-11-08_8rank_apple-intelligence-knowledge-graph.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ 105KBの技術深掘り記事。On-device KnowledgeGraph(83 entity types, CoreML+SQLite)のエッジ抽出、EntityResolutionModel(LoRA fine-tuned Qwen-1.7B, F1 0.9063), GraphStore Neo4j Cypher互換層(517/518 TCK pass), Cloud anchor merge(Hyperbolic embeddings+RRF), LLM query plannerのstage-gate architectureを詳述。wikiには apple-foundation-models / apple-gemini-ai-architecture があるが、Apple Intelligenceのナレッジグラフ実装に関する具体的データは未収録。entities/apple.md も要確認。",
+      "candidate_wiki_path": "concepts/apple-foundation-models.md",
+      "body_excerpt": "/index.md. Do not edit: the next\n build overwrites it, and deploy.sh refuses to publish a generated page whose bytes\n do not match .build-manifest. Edit the post and re-run bin/build.py. -->\n Anatomy of Apple's Personal Knowledge Graph — Eighth Rank \n Skip to content \n the Eighth Rank \n Write-up \n O"
+    },
+    {
+      "item_id": "dreaming-skip-duplicate-pairs",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Duplicate scrape pairs: lorekit agent-memory OMF (11-07/11-09), caleb Pi migration (11-07/11-08)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同一記事の重複スクレイプ。lorekitのOpenTelemetry-moment記事は11-07版(triage済み)と同一、caleb.softwareのClaude→Pi移行も11-07版(triage済み)と同一。両方とも trending-topics 11-09 (9236bea9) で concepts/ai-agent-memory-two-camps / entities/pi に反映済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Duplicate of previously triaged articles (same URL, different scrape date). Content already folded into wiki by trending-topics 2026-11-09."
+    },
+    {
+      "item_id": "dreaming-skip-processed-ai-cluster",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Batch skip: model/safety/news cluster already processed by daily pipelines",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 11-06〜11-08収集のAI記事群は trending-topics / active-crawl / newsletter-wiki-ingest / blog-wiki-ingest / x-accounts-scan が既に処理済み: unlap MaxxBench mutation audit (deepswe-benchmark追記)、Anthropic IPO $1.1T (ai-bubble-economics)、Gemini Omni 1.2 Flash + Antigravity Remote Agents (entities/google)、Microsoft AI Frontiers disbandment、Google AI pointer、Phoronix OpenAI 948 LPE bugs、seangoedecke design systems、Apiiro Claude Code secrets、METR/Planned Obsolescence R&D acceleration、SemiAnalysis China Stargate、Harvey/Hebbia/Warp/Decagon/Fireworks 11-06 sitemap群、Anthropic components-of-agent-memory (concepts/agent-memory-interoperability)。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch entry covering ~20 already-processed AI articles; each verified against wiki/log.md same-day entries (lines 36-146) and cited commits."
+    },
+    {
+      "item_id": "dreaming-skip-nonai",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Batch skip: non-AI content (retro computing, buildings, packages, personal essays)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI記事: pluralistic brunch/antitrust, filfre Deus Ex, construction-physics ×2, dfarq ×4 (玩具列車/HP/TransMeta), shkspr ×3, maskray 四色パズル, righto ST680A NAND, oldvcr/tenfourfox系レトロ, nesbitt package management週報 (11-07版はx-accounts-scan処理済み), jim-nielsen, johndcook有限幾何, evanhahn SSG, maurycyz ×2, lwn ×2, daringfireball touch-and-glow, ed-zitron premium (prior triage参照済み), tedium mental health, mitchellh libghostty (prior triage参照済み) 等。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch entry for non-AI blog content scraped by blog-ingest/sitemap-monitor between 2026-11-06 and 2026-11-09."
+    }
+  ]
+}
