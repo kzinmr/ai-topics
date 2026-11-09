@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-11-09] auto-fix | Wiki health: index header count reconciliation
+
+### Changes
+- index.md header counts recomputed from index lines: Concepts 2321→2320, Comparisons 39→35, Events 55→51, Total pages 3393→3426 (Entities 966, Queries 54 unchanged)
+- Verified clean (no action needed): pipe corruption 0, line-number prefix 0, triple brackets 0, space-prefix 0, ghost entries 0 (recursive scan), orphans 0, log.md header intact
+- Note: Comparisons/Events headers now count index lines (35/51); filesystem has 35 comparison files + 4 redirect entries, 51 event files. validate_index.py passes.
+
+---
+
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-09] watchdog | auto-fix — log.md header burial, index count reconciliation, 1 orphan index registration
