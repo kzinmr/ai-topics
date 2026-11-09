@@ -2,7 +2,7 @@
 title: "LLM-as-Judge: Evaluation Frameworks, Best Practices & Bias Types"
 description: "LLM-as-Judge is a paradigm for using LLMs to evaluate LLM outputs. Covers 3 bias types (rubric order, score ID, reference answer) and 7 best practices. High-risk evaluations require GPT-4o class models."
 created: 2026-04-20
-updated: 2026-10-07
+updated: 2026-11-09
 type: concept
 status: complete
 depth_tracking:
@@ -17,6 +17,7 @@ sources:
  - raw/articles/2026-06-01_llmdata-notes-on-choosing-rubric-judge.md
  - raw/papers/2026-06-25_2606.27226_binEval-binary-questions-llm-evaluation.md
  - raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations.md
+ - raw/articles/2026-10-03-sermakarevich-evals-how-to-know-whether-an-ai-system-actually-works.md
 related:
  - ai-evals
  - evaluation-flywheel
@@ -218,6 +219,15 @@ DAIR.AI's "Jev-as-a-Judge" tutorial (Saravia, co-written with his coding agent) 
 - Validate the judge against human-labeled trajectories and re-run for verdict stability before trusting it.
 
 The accompanying paper *JEV-as-a-Judge: Accept When Confident, Escalate When Unsure* (Li et al., 2026) reports confident-Jev + escalate-the-rest beating GPT-6 alone by 0.9 points across 1,610 held-out cases at 41% of the cost (paper-reported; independent verification pending). Jev excels when the verdict is directly readable from evidence, and degrades on math/code/logic derivation and style-misleading comparisons. Source: [[raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations]].
+
+## Judge verification in practice: kappa, panels, and the GAUGE audit (Nov 2026)
+
+Makarevych's Oct 2026 evals primer ([[concepts/evaluation/evals-how-to-know-whether-an-ai-system-works]]) adds operational detail on *checking the judge itself*:
+
+- **Raw agreement is misleading when most outputs pass.** His tutorial judge agreed with human labels 60% of the time — but saying "pass" to everything would have agreed 57%. **Cohen's kappa** is the honest statistic: 0.15 in his case; ~0.6 to gate a release, ~0.8 to run unsupervised. Report kappa, or catch-rate/false-fail-rate separately.
+- **GAUGE audit** (Bodhwani et al., 2026, arXiv:2609.12191): simulated-user + judge-scored release gates rank clearly-different agents well (r=0.94 vs verifiable ground truth) but **promote the worse agent 31% of the time on near-equal pairs** — exactly the pairs a real release decides between. A chat-only satisfaction judge was a coin flip at separating working from broken agents (AUC 0.49); giving the judge tool calls, auth, and task resolution halved failure risk (AUC 0.73). *Reliability comes from what evidence the judge is given, not how strong the judge model is.*
+- **Panels**: three cheaper judges beat one large judge (PoLL, Verga et al. 2024), but plain averaging is fragile — one broken judge (parser zeros, sycophancy) drags the mean arbitrarily far; RoPoLL (Acharya et al. 2026) fixes this with the **geometric median** (up to 540× more accurate in the worst case, ~1% cost on clean data). Correlated judge errors cap the benefit at ~3 judges.
+- **"Calibrate then trust"** for cheap judge-based CI gates: audit once against verifiable ground truth, use the gate only inside the region where it agrees with reality, re-audit when model/judge/simulator/domain changes.
 
 ## See Also
 

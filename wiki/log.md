@@ -1,3 +1,11 @@
+## [2026-11-09] ingest | X Article "Evals: how to know whether an AI system actually works" (Sergii Makarevych @sermakarevich, Oct 3 2026; ~6.2K bookmarks / 362K impressions)
+
+- Raw saved: `raw/articles/2026-10-03-sermakarevich-evals-how-to-know-whether-an-ai-system-actually-works.md` (48.6K chars, invisible-unicode stripped, engagement in frontmatter)
+- New concept: [[concepts/evaluation/evals-how-to-know-whether-an-ai-system-works]] — 9-level evals primer; two-numbers thesis (product + grader), error-analysis-first, kappa/GAUGE judge verification, GAUGE audit (arXiv:2609.12191), bootstrap CIs + detection floor, pass^k/cost-per-outcome for agents, verification horizon (Qwen arXiv:2606.26300), rank-2 benchmark structure (arXiv:2606.24020), Husain 3-cadence habit loop, leader's four numbers
+- New entity: [[entities/sergii-makarevych]] — author (first page; bio from X profile)
+- Updated: [[concepts/evaluation/llm-as-judge]] (+Nov 2026 "Judge verification in practice" section: kappa vs raw agreement, GAUGE, PoLL/RoPoLL panels, calibrate-then-trust; sources/updated bumped)
+- Cross-links: why-benchmarking-is-hard See Also (independent GSM8K harness-variance reproduction); index.md entries for both new pages
+
 # Wiki Log
 
 ## [2026-11-08] skeleton-enrich-daily | empty run — 0 status:skeleton pages; backlog empty since 10-17 streak. Whole-tree grep scan (entities+concepts+frontmatter) confirmed clean; only hits are log prose. Snapshot: [[queries/2026-11-08-skeleton-enrich-empty]]. Flagged separate ~439-page `status:stub` concept backlog (oldest 08-15, e.g. windows-nt/mastodon/hack-club) for dedicated triage — not this job's trigger.

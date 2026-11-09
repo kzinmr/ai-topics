@@ -788,6 +788,7 @@
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. Provides 6 specialized tools for code analysis, search, and retrieval from any...
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka — ML researcher, 'Build a Reasoning Model (From Scratch)', LLM architecture analysis
+- [[entities/sergii-makarevych]] — Sergii Makarevych (@sermakarevich) — AI engineer building autonomous AI workers; author of the widely-shared Oct 2026 X Article "Evals: how to know whether an AI system actually works"
 - [[entities/semianalysis]] — SemiAnalysis
 - [[entities/sentra-app]] — Sentra.app
 - [[entities/seo-skill]] — SEO Skill (seoskill.dev) — Ian Nuttall's open-source MCP + CLI for "agent-native teams"; gives AI coding agents real Search Console, GA, Bing data + Google update dates + site crawls
@@ -1951,6 +1952,7 @@
 - [[concepts/evaluation/eval-awareness-browsecomp]] — Eval Awareness (BrowseComp Incident)
 - [[concepts/evaluation/eval-loops]] — Eval Loops — AI Output Quality Control
 - [[concepts/evaluation/evals-for-ai-agents]] — Evals for AI Agents
+- [[concepts/evaluation/evals-how-to-know-whether-an-ai-system-works]] — Evals: How to Know Whether an AI System Actually Works (Makarevych, Oct 2026) — 9-level plain-language primer; two numbers per eval (product + grader), kappa/GAUGE judge verification, bootstrap CIs + detection floors, verification horizon, rank-2 benchmark structure
 - [[concepts/evaluation/evals-vs-monitoring-debate]] — Evals vs Monitoring Debate
 - [[concepts/evaluation/evaluation-flywheel]] — Evaluation Flywheel — observed failures, independent expectations, component/task checks and held-out judge data
 - [[concepts/evaluation/evaluation-harness-validity]] — Evaluation Harness Validity

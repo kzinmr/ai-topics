@@ -54,3 +54,4 @@ This post is the clearest third-party statement of the **scaffold-as-confound** 
 - [[concepts/evaluation/epoch-capabilities-index]] — Epoch's composite metric (cites this post)
 - [[entities/florian-brand]] — co-author
 - [[entities/epoch-ai]] — organization
+- [[concepts/evaluation/evals-how-to-know-whether-an-ai-system-works]] — Makarevych (Oct 2026) independently reproduces the harness-variance point: same open model, GSM8K scored 0.686 vs 0.746 under two prompt formats; "a score is a (model, prompt, harness, version) tuple"
