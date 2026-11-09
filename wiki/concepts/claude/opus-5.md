@@ -2,7 +2,7 @@
 title: "Claude Opus 5"
 type: concept
 created: 2026-07-25
-updated: 2026-07-29
+updated: 2026-11-09
 tags:
   - anthropic
   - model
@@ -87,6 +87,15 @@ The Ben's Bites report noted Every's review, which listed behaviours that might 
 ### Theo's Experience with CLAUDE.md / AGENTS.md
 
 Theo spent *"multiple hours hand writing better CLAUDE.md/AGENTS.md and half a dozen skills. Audited and deleted a similar amount."* His conclusion: *"I'm sad to report it was 100% worth it."* This underscores that the path to better outcomes with Opus 5 and Fable 5 is not more prompting — it is **better, more focused prompting** with careful curation of instructions.
+
+On 2026-11-09 an X post by @shanemelaugh — *"Is Opus 5.5 nerfed? Thinking patterns changed on November 3"* — reached **236 pts / 156 comments** (HN 50422069). Primary source is an X long-form post and was not retrievable; the HN thread is the durable record (raw: `raw/articles/2026-11-09_hn_opus-5-5-nerfed-thinking-patterns-changed.md`).
+
+What is observed vs attributed:
+- **Observed**: multiple users report a discontinuity around 2026-11-03 in Opus 5.5's visible thinking patterns and in day-to-day reliability — more repeated script errors, more "absurd mistakes", needing to raise reasoning effort to compensate. [terminalcommand] "felt like downgrading to the old version of deepseek"; [ghoul2] "rare earlier, now a few every session"; [jdcasale] reports a separate Fable regression from ~85% to ~10% success on long-horizon workflows over two weeks.
+- **Attributed (contested)**: silent quantization or efficiency swaps — [Gareth321] "if they can save 40% RAM and only hurt intelligence by a few percent on benchmarks, they're going to do that"; [taspeotis] hypothesises GPU capacity being borrowed to finish the next model. [fastball] frames the open question as malice (nerf the incumbent so the successor looks better, ahead of IPO and a possible Qwen 4 announcement) versus capacity constraints.
+- **Denied**: [yfontana] and [user43928] point out the alleged nerfs do not register on third-party model-performance tracking sites, and that Anthropic/OpenAI engineers have stated they do not quantize served models; self-reported degradation is also confounded by user state.
+
+Assessment: **unverified**. No artifact (weight hash, served-model attestation, benchmark delta) accompanies the claim, and the disconfirming evidence is absence-of-signal rather than measurement. Related but distinct from harness-side instability: 244 Claude Code releases in 2026, three-quarters of them altering the system prompt or tool descriptions, are a documented cause of behaviour change without any model change — see [[entities/pi]] and the harness-stability discussion in [[concepts/agent-model-drift]].
 
 ## Related Pages
 

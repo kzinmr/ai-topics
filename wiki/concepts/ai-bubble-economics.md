@@ -2,7 +2,7 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-11-04
+updated: 2026-11-09
 tags:
   - economics
   - company
@@ -413,6 +413,23 @@ Anthropic's revised S-1 (filed Oct 30, public details Nov 2, 2026) became the we
 - An S-1 risk factor reportedly warns Anthropic may be *"imminently"* close to RSI (recursive self-improvement) (HN 50351712).
 
 **Policy pushback**: Matt Scherer (co-author of *Brace for Impact*) argues in Tech Policy Press that **the SEC should block the IPO** — unaudited 2026 financials, ~$900B of effectively-debt commitments, slowing growth, and retail/pension investors left "holding the bag" (HN 50344919, 399 pts). Fits the wider November bubble-signal cluster: Nikkei reports big-tech **off-balance-sheet AI debt doubled in 6 months to ~$3.2T** (HN 50358422), Oracle filed to sell $20B in stock/bonds for AI buildout (HN 50342284), and CEPR launched a standing **AI Bubble Monitor** (HN 50352727). CoreWeave-style neocloud equities fell on the flattening-growth read. See [[concepts/ai-bubble]], [[concepts/ai-infrastructure-circular-financing]], [[concepts/subprime-data-center-crisis]].
+
+Matteo Raso (ML researcher and Canadian Liberal Party candidate), *"I'm Not Convinced The AI Bubble Exists"* (2026-11-08, HN 50418975, **344 pts / 577 comments**), is the clearest recent articulation of the anti-bubble consensus denial and is worth holding against the evidence collected above.
+
+His argument:
+- Aggregate AI expense is unprecedented — **at least $3T committed, an estimated $1.9T already spent, ~$5T total** — and the opacity of the debt/SPV vehicles used to hold those commitments is "one of the most salient points in favour of AI being a bubble".
+- But those are **one-off capex, not operating expense**: once data centres are built "AI spending is going to plummet". He cites Anthropic's S-1 figure of **$2.08 of revenue per $1 of compute** as evidence the steady-state economics are already fine.
+- Therefore the bubble claim rests on extrapolating a buildout phase into perpetuity.
+
+Strongest thread objections (recorded because they attack the load-bearing premise):
+- [wmf]: amortize over **5–6 years, not 20**, because most of the cost is GPUs rather than buildings — which multiplies the required revenue by ~4x. [hobofan] puts amortization nearer 10 years at ~50% hardware share of DC cost and a 5-year GPU life.
+- [drpixie]: a trick apparently in play is simply **not unpacking the GPUs**, so they are not yet depreciating assets.
+- [t-writescode]: GPUs without buildings (a current, real situation) earn nothing, which makes *buildings and power* — not GPU count — the binding constraint.
+- [gg82]: generated code still needs machines to test it, which may cap AI growth itself.
+- On systemic risk, the asymmetry versus 2008: [xboxnolifes] notes retail households are not leveraged into AI startups the way they were into housing; [wongarsu] notes the post-dotcom decade produced YouTube, Reddit, Spotify and Google Maps, so a pop need not end progress.
+- On valuation: [amluto]'s bimodal framing (Anthropic credibly worth $7T, or unable to find a market fit that covers current commitments) vs [blltprfmnk]'s "that is just a total gamble, and that is the claim?"
+
+Assessment: the piece is a useful corrective on the "capex ≠ opex" distinction, but it does not engage with the concentration, circular-financing, or take-or-pay evidence in this page; its depreciation assumption is the contested variable, and the thread's own analysis shows a 4x swing in required revenue depending on it. Raw: `raw/articles/2026-11-09_matteoraso_im-not-convinced-the-ai-bubble-exists.md`.
 
 ## Related Concepts
 

@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-11-03
+updated: 2026-11-09
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -864,6 +864,18 @@ Source: [[raw/articles/simonwillison.net--2026-oct-22-donating-agent-skills--4b2
 
 Community reports of Claude blocking **anything touching training of larger models** (X post by @jiahaoshao1; HN 367 pts / 209 comments) and **video-game reverse-engineering/recreation** tasks (Mashable, GameDeveloper, Tom's Hardware; HN 149 + 124 pts) produced the week's largest developer-relations controversies. Self-reported patterns: US/EU users refused on weight-modification and SOTA training topics; one enterprise user reported zero friction building a LoRA training stack, suggesting classifier-triggered rather than topic-wide enforcement; game-recreation and generic RE tasks also blocked. No accompanying public policy-text update; enforcement targets illicit distillation (named in the September 2026 threat report above) but self-reports show false positives on legitimate ML research and security work. Analysis: [[concepts/frontier-model-usage-policy-enforcement-2026-10]]. ^[raw/articles/2026-10-31_hn-discussion_anthropic-blocks-training-large-models.md] ^[raw/articles/2026-10-31_mashable_anthropic-blocks-video-game-reverse-engineering.md] (⚠️ user self-reports + secondary press; `confidence: medium`)
 
+Goldman Sachs updated internal guidance in October 2026 to restrict **Claude Code and Microsoft's GitHub to its ~12,000 engineers**, cutting off traders and bankers who had been using the agents to monitor client flows, model market moves and positions, and produce written/graphic material. Strats (trading + quant research + engineering) retain access. Reported by Bloomberg News and re-published by State of AI; HN 50415628, **793 pts / 421 comments**.
+
+Timeline and context:
+- **July 2026**: CIO Marco Argenti was publicly praising "vibe coding" by non-technical staff — traders and bankers building first versions and handing them to engineers to improve.
+- **October 2026**: the role-based restriction, following an internal review of productivity and risk. Spokesperson Nick Carcaterra: the bank makes AI tools available "to determine the best use cases" across the firm.
+- **April 2026**: Claude removed from the internal AI platform for Hong Kong bankers (contract-terms-based; JPMorgan followed in June). The October change is *role*-based, not location-based. Goldman's in-house multi-model assistant remains available firm-wide; the restriction targets third-party agents that write and execute code autonomously.
+- Goldman's Anthropic relationship is otherwise deep — Anthropic engineers spent six months in the bank building Claude agents for trade accounting and client onboarding (back-office, engineer-run), and Goldman is a **lead underwriter on Anthropic's IPO** (S-1, October 26; Nasdaq "ANT").
+
+HN thread's load-bearing framings: [CharlieDigital] — a trading floor is "a bad place for unreviewed code written by people who can't read it", and the information-barrier problem alone justifies the rule; rebuttal from the same commenter that engineers are also losing the capacity to read agent code, so "agentic engineering needs to be all in". [Ericson2314] — "if your security relies on low-privilege code being fully human-audited, you've already lost"; the right target is custom Bloomberg-terminal add-ons, not autonomous trading software. [neya] — compliance angle: an agent that trains on internal financials is an insider-trading vector. [theptip] — predicts migration from locally-run Claude Code to sandboxed managed agents for exactly this reason.
+
+Raw: `raw/articles/2026-11-09_stateofai_goldman-sachs-pulls-claude-code.md`. Note: the State of AI republication is secondary; the original is Bloomberg (see also the widely-shared claim that Coinbase appointed an AI agent as its CEO's chief of staff, which surfaced in the same week's coverage).
+
 ## Related Pages
 - [[Claude models]] — Model family details
 - [[concepts/ai-economics]] — Tokenmaxxing, AI ROI debate
@@ -881,6 +893,21 @@ Anthropic filed a **revised S-1** ahead of a planned November listing (HN 503374
 - **Internal token spend exceeds employee pay** (Business Insider, HN 50339494, 334 pts): Anthropic values internal Claude use at *retail* prices; commenters stress this is opportunity-cost accounting, not cash outflow — but it implies ~$300k compute/employee at the frontier-labs edge.
 - **IPO-blocking advocacy**: Matt Scherer (co-author of "Brace for Impact: Protecting people and the economy when the AI bubble bursts") argues on TechPolicy.Press that the SEC should block the IPO over circular financing and footnote-level financial engineering (HN 50344919, 366 pts). HN majority opposes blocking ("let the market price it"), with a minority index-fund-distortion counter (mandatory pension/index purchases = transfer from public to insiders).
 - Related pages: [[concepts/ai-bubble-financial-crisis]], [[concepts/ai-infrastructure-circular-financing]], [[concepts/agi-and-the-city-agi-debate-2026]].
+
+### Amended S-1: "imminently" RSI language + Q3 revenue $16.96B (Nov 8, 2026)
+
+[[entities/the-signal|The Signal]] (Alex Banks, "Bug Hunters, Cell Mysteries, and Kids Logged Out", 2026-11-08) reports two additions in Anthropic's **amended** S-1 not present in earlier filings covered above:
+
+- Future models may **"imminently"** cross Anthropic's own threshold for AI-driven progress — i.e. the S-1 itself now uses recursive-self-improvement language as an investor-facing risk/trajectory factor. This is the first time the RSI thesis (see [[concepts/recursive-self-improvement]], and the June 2026 "When AI builds itself" Anthropic Institute piece above) appears as formal securities-disclosure wording rather than a research blog.
+- **Q3 2026 revenue $16.96B, up from $11.56B in Q2** — quarter-over-quarter figures in the filing body. ⚠️ This does **not** reconcile with the ~$17B Q3 / $67.8B-ARR readings in the Nov 2-3 section above (different rounding, period, or metric — quarterly revenue vs annualized run-rate). Kept as a dated, contested datapoint per AGENTS.md rather than replacing the older figures.
+- Banks's market read: IPO valuation talk has fallen from **up to $2T** to **$1.1–1.3T** on midterm-driven market headwinds; he argues the window to list is now, since an Anthropic listing sets the precedent for the whole AI market (cf. the Scherer IPO-blocking advocacy above).
+
+## Claude Product Additions — Personal Finance + biology (Nov 8, 2026)
+
+Reported by [[entities/the-signal|The Signal]] (2026-11-08). Neither appears elsewhere in this wiki:
+
+- **Claude Personal Finance**: connects bank, card, loan and investment accounts so users can ask Claude about their money. Reads **up to 24 months** of transactions; **cannot move money** (read-only); **US-only** at launch. Banks's framing — many people already connect cards/banks to other software without thinking twice, "this is the same thing, just with AI in the name," and the read-only constraint is the design point that makes the trust bargain acceptable.
+- **Claude-assisted structural biology**: Anthropic says Claude helped its biology team determine what it describes as the **first 3D structure of a "vault particle"** from bacterial life — a barrel-shaped structure whose function remains unknown. Preprint live **Nov 5, 2026**.
 
 ## Related
 - [[entities/anthropic]] — The model family

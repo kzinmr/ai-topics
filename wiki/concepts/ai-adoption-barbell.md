@@ -1,7 +1,7 @@
 ---
 title: "AI Adoption Barbell Distribution"
 created: 2026-08-09
-updated: 2026-08-09
+updated: 2026-11-09
 type: concept
 tags:
   - concept
@@ -97,6 +97,13 @@ For the 70%, work must get done without them changing how they work. **Put the A
 ### 4. Change the Reporting Metric
 
 Stop reporting "adoption" to the board. Report what share of work is **manual vs. hybrid vs. fully automated**. This is the only reporting framework that maps to real organizational outcomes. See also [[concepts/ai-benchmarks/ram-relative-adoption-metric]].
+
+Two 2026-11-08 HN front-page discussions put a human-capability cost on the adoption barbell rather than a productivity one:
+
+- **"How I Fight AI Brain Fry"** (sergeykuhne.com, HN 50416363, **269 pts / 179 comments**) — a practitioner describing cognitive fatigue from supervising many parallel agents, whose remedy is deliberate manual coding practice (LeetCode-style). Thread: [hsuduebc2] compares it to physical exercise — "if you don't use your brain and keep challenging yourself, your problem-solving skills will eventually atrophy"; [citbl] (30 years in) "this AI brain fry is very real. I would be very scared to take an interview right now"; [SecretDreams] extends the automation-of-thinking ↔ automation-of-labour analogy. Two objections are worth keeping: [juleiie]/[gonzalohm] argue non-coding mental exercise and real work problems serve the same purpose, and [wallstop] notes the author's solution space is "keep doing tons of parallel stuff, but with different tooling" rather than doing less — the self-reported outcome is "I'm still exhausted".
+- **"Why I will not be using LLMs in my coding"** (polso.info, HN 50412591, **115 pts / 231 comments**; article body returned HTTP 418 to fetch, HN thread preserved as the record) — the abstention pole of the barbell. Notably, several commenters from the competitive-programming/IOI-gold cohort push the *other* way: [XCSme] has not read a line of code in six months while shipping "faster and higher quality than ever", judging only end-user outcomes; [npsomaratna] (IOI gold) — "AI still can't write code at my level of quality, but it can do so at adequate quality now… your choice is to use them or be stomped into the ground by programmers who do"; [glimshe] reports ~90% of the world-class programmers they know are enthusiastic, while weaker programmers tend to be critical.
+
+Read together, the two threads complicate a pure skill-atrophy narrative: the atrophy worry is voiced mainly by senior practitioners who still write code, while high-skill abstainers from writing code report no measurable loss in shipped quality — which suggests the risk is role- and verification-skill-dependent, not uniform. This is the same evidence base as [[concepts/sre-deskilling]] applied to individual practice rather than to an org function.
 
 ## Related Concepts
 

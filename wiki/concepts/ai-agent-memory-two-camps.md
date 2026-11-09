@@ -10,7 +10,7 @@ tags:
   - inference
 sources: []
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-11-09
 type: concept
 ---
 
@@ -158,6 +158,18 @@ Hermes Agent operates closer to Camp 2:
 - Agent reads context → works within context → writes back → context compounds
 
 This validates the file-native, markdown-first approach Hermes uses for knowledge management.
+
+LoreKit engineer Mads Thines, *"Agent memory needs its OpenTelemetry moment"* (2026-11-07, HN 50411467, **184 pts / 108 comments**), names this taxonomy's fragmentation cost directly: a typical machine holds four mutually unintelligible memory formats — `AGENTS.md`/`CLAUDE.md`, Anthropic's memory-tool `/memories` directory, Copilot's repo facts on the GitHub side, and a memory-MCP JSONL knowledge graph. A lesson one agent learns "stays in whatever wrote it". The essay surveys existing proposals and sketches what a shared spec (an OMF-style "open agent memory format") would require.
+
+The HN thread, however, is weighted heavily toward the *skeptic* camp rather than the standardization camp:
+
+- [slopinthebag]: "agent memory is strictly harmful. It remembers the wrong things, and then turns them into an inane focus for each task. I disable it universally on every harness."
+- [SwellJoe]: "Everybody builds one, and then eventually realizes it makes the model stupid and confused. The right solution is pretty much always developer documentation in the repo."
+- [nonethewiser]: memory guarantees "drift and inaccuracy in your context" unless manually curated, and "introduces massive confirmation bias".
+- [troupo] quoted Anthropic's own memory documentation: injected memories consume tokens, an incorrect note persists into every session, and "loading a note also doesn't guarantee that Claude acts on it".
+- Counter-weight on the spec itself: [imgyuri] argues a unified format matters less for agent-read data since agents already traverse arbitrary file formats well; [Fordec] accepts the premise but warns against standardizing before the field understands retention and lifetime, "never mind standardizing on an abstraction prematurely that ends up being like SOAP or SGML".
+
+Implication for the taxonomy: the case for a shared memory *format* is strongest for cross-vendor portability and audit, while the practitioner evidence questions whether persistent automatic memory should be on at all — a demand-side problem the standard does not address. Raw: `raw/articles/2026-11-09_lorekit_agent-memory-needs-its-opentelemetry-moment.md`.
 
 ## Sources
 

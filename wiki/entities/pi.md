@@ -3,7 +3,7 @@ title: Pi (pi-coding-agent)
 type: entity
 aliases: [pi-coding-agent, pi-dev, pi-mono, mario-zechner-pi]
 created: 2026-05-07
-updated: 2026-10-04
+updated: 2026-11-09
 status: L3
 tags:
   - entity
@@ -373,3 +373,14 @@ Pi featured as one of three harnesses in the **HarnessTax** study (Pan et al., U
 - **Contributors**: 210+
 - **Latest Release**: v0.75.5 (2026-05-23)
 - **Repository**: [earendil-works/pi](https://github.com/earendil-works/pi)
+
+Caleb Porter's essay *"Goodbye Claude, Hello Pi"* (2026-09-21) reached the HN front page on 2026-11-08 with **776 points / 474 comments** (HN 50410107) and became the most-cited public case of a long-time Claude Code user migrating to Pi. Its argument maps directly onto Pi's core design claims:
+
+- **AGENTS.md vs CLAUDE.md friction** as the last straw — Claude Code added AGENTS.md support one day after his decision (which he presents, tongue in cheek, as Anthropic "trying to get me to stay").
+- **Harness overhead**: 244 Claude Code releases in 2026, over three-quarters of which changed the system prompt or tool descriptions — enough to materially shift model behaviour. The default Bash tool description alone is ~3,000 tokens, mostly git/PR boilerplate "the models already know".
+- **Feature accumulation without a product "no"**: dynamic workflows, agent teams, ultrareviews characterised as enterprise token-burn rather than user need.
+- He rebuilt his multi-tab VS Code selection-context workflow as a Pi extension **in about 20 minutes**, and praised Pi's stability, minimalism and customizability.
+
+Thread reactions worth recording: [komali2] reported opencode consistently outperforming ohmypi on semi-nightly local-model bench runs (5090-class models); [bdemirkir] noted opencode's system prompt is much smaller than omp's and that "omp is not pi"; [dofm] argued small coding models largely do not need large system prompts at all; [yieldcrv] reported ~150 tok/s with kapitsa as the inference engine and Pi as the harness on an M1 MacBook. Raw: `raw/articles/2026-11-09_caleb-software_goodbye-claude-hello-pi.md`.
+
+See also [[concepts/agent-model-drift]] (silent model-side drift as the other half of the harness-stability argument) and [[concepts/coding-agents/coding-agents]].

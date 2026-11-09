@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Total pages: 3388
-> Last updated: 2026-11-07
+> Last updated: 2026-11-09
 
 ## Entities (965 pages)
 
@@ -869,7 +869,7 @@
 - [[entities/thariq-shihipar]] — Thariq Shihipar
 - [[entities/the-browser-company]] — The Browser Company
 - [[entities/the-harness-blog]] — Working notebook on harness engineering, agentic AI, and AI in Architecture, Engineering, and Construction (AEC). 25 ...
-- [[entities/the-signal]] — The Signal (Alex Banks) — Substack newsletter covering AI writing, content moderation, and platform policy; documented Substack's "Scan for AI text" feature and Claudefishing concept
+- [[entities/the-signal]] — The Signal (Alex Banks) — Substack newsletter covering AI writing, content moderation, and platform policy; documented Substack's "Scan for AI text" feature and Claudefishing concept; Nov 8 issue analysis (Uber's 4 agent trips, Anthropic amended S-1 "imminently" RSI language, Burn-Murdoch growth-without-hiring charts)
 - [[entities/the-old-new-thing]] — Raymond Chen
 - [[entities/the-silicon-underground]] — Dave Farquhar (The Silicon Underground)
 - [[entities/theodoros-galanos]] — AI researcher and practitioner at the intersection of harness engineering, agentic AI, and architecture/engineering/c...
@@ -974,9 +974,10 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2318 pages)
+## Concepts (2320 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
+- [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
 - [[concepts/ai-cost-of-js-frameworks|AI Cost of JS Frameworks]] – per-framework AI coding token-cost benchmark (Nolan Lawson; Astro best, Angular worst)
@@ -1079,7 +1080,7 @@
 - [[concepts/agent-editing-world-model]] — Agent Editing a World Model (AEWM) — an LLM actively edits an explicit symbolic state (block world) from observations, not passive prediction; GPT-5.2 near-perfect edit ops vs Gemini-3-Pro failure; "world model" split into representation vs function (arXiv:2609.28416, Sept 2026)
 - [[concepts/agentic-alternative-to-graphrag]] — Agentic Alternative to GraphRAG
 - [[concepts/agentic-browsing]] — Agentic browsing refers to AI agents that autonomously navigate websites, click buttons, fill forms, and execute mult...
-- [[concepts/agentic-commerce]] — Agentic Commerce; Stripe made OUSD (Open Standard consortium stablecoin) the default settlement asset across products, Sep 30 2026
+- [[concepts/agentic-commerce]] — Agentic Commerce; Stripe made OUSD (Open Standard consortium stablecoin) the default settlement asset across products, Sep 30 2026; Nov 2026 adoption reality check — Uber's Halloween week: ~500 agent food orders, 4 agent rides
 - [[concepts/agentic-engineering]] — Agentic Engineering; enriched with Agent Loop Debate — Boris Cherny/Jensen Huang pro-loop, Ed Zitron cargo cult critique, Armin Ronacher code quality concerns, Drew Breunig prompt debt connection (June 24)
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — Agentic Engineering Cognition Devin Multi Agents Orchestration
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering Cognition Devin Workflow
@@ -1807,7 +1808,7 @@
 - [[concepts/dark-factory-software-factory]] — Dark Factory Software Factory; + Uber enterprise-scale case study (Aug 2026: >70% agent-authored PRs, cost equation, -34%/-52% cost curves)
 - [[concepts/coding-agents/lint-rules-as-agent-feedback-loop]] — Lint Rules as the Agent Feedback Loop; Sarah/@sarahfim Composio anti-slop factory (Oct 2026): repo-is-the-factory, slop compounds, lint>skills, 38 custom lint rules, mid-scale 30–50 contributors
 - [[concepts/data-analysis-agents]] — AI Data Analysis Agents
-- [[concepts/data-center-local-backlash]] — Data Center Local Backlash — 40 of 41 local US ballot measures restricting data centers won on Nov 3, 2026 (Ballotpedia; 72.9% of votes); nine opponent claims fact-checked; "local consent has joined chips and electricity" as a hard limit (Superintel+, Nov 2026)
+- [[concepts/data-center-local-backlash]] — Data Center Local Backlash — 40 of 41 local US ballot measures restricting data centers won on Nov 3, 2026 (Ballotpedia; 72.9% of votes); nine opponent claims fact-checked; "local consent has joined chips and electricity" as a hard limit (Superintel+, Nov 2026); UK "prisons" model contrast (Abbots Langley / 300MW Buckinghamshire overturns) vs OpenAI community compact
 - [[concepts/data-breach]] — Data Breach
 - [[concepts/data-engineering]] — Data Engineering
 - [[concepts/data-engineering-for-ml]] — Data Engineering for ML
