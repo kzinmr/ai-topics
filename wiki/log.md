@@ -2170,3 +2170,9 @@ research-grade pages from genuinely uncovered material:
 ## Log
 - 2026-11-09 10:11 UTC blog-ingest — 33 new scanned, 16 raw articles saved to `raw/articles/` (15 auto-scraped + 1 agent-recovered: `simonwillison.net--2026-nov-9-hn-50421091--c3dd8886.md` "The Web Is More Than Enough"). 4 unsaved (2 NYT paywall via daringfireball, 2 YouTube AI Engineer). Checkpoint at cron/data/blog_ingest/latest.json. Downstream: blog-triage.
 - 2026-11-09 09:30 JST hot-post (morning) — DC local backlash 40/41 vs China Stargate Inner Mongolia. Links: data-center-local-backlash, china-datacenter-buildout, source-grid-load-storage, envision-group, semianalysis, kim-isenberg, nvidia-45c-data-center-cooling, ai-energy, subprime-data-center-crisis.
+
+## [2026-11-09 21:30 JST] hot-post (night) — agent model drift: zero evidence vs 244 releases
+- File: `inbox/trending-reports/hot-post-2026-11-09-2130.md` (Japanese, Discord delivery)
+- Angle: contrarian/reflective — Opus 5.5 nerf claim (HN 50422069) and its disproof are both anecdote-grade; only harness churn is documented (244 CC releases, >75% prompt/tool-description changes).
+- Links: concepts/agent-model-drift, concepts/provable-inference, concepts/agent-trust-boundary-violations, concepts/why-harness-development-boom, concepts/ai-agent-memory-two-camps, concepts/agent-memory-interoperability, concepts/sre-deskilling, entities/pi
+- Gates: NO_SLOP_FOUND, 0 wikilink MISS, NO_TYPO
