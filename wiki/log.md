@@ -2141,4 +2141,5 @@ research-grade pages from genuinely uncovered material:
 ## [2026-11-04] update | entities/addy-osmani bio: role corrected to Member of Technical Staff, Anthropic (Claude Code) — was "Director, Google Cloud AI" (stale). Evidence: addyosmani.com RSS description ("Member of Technical Staff at Anthropic, where he works on Claude Code"), Sep 2026 Substack sponsor pause ("joined a new role full-time"), Oct 2026 X Articles written from inside the Claude Code team. Substack URL added to infobox.
 
 ## Log
+- 2026-11-09 10:11 UTC blog-ingest — 33 new scanned, 16 raw articles saved to `raw/articles/` (15 auto-scraped + 1 agent-recovered: `simonwillison.net--2026-nov-9-hn-50421091--c3dd8886.md` "The Web Is More Than Enough"). 4 unsaved (2 NYT paywall via daringfireball, 2 YouTube AI Engineer). Checkpoint at cron/data/blog_ingest/latest.json. Downstream: blog-triage.
 - 2026-11-09 09:30 JST hot-post (morning) — DC local backlash 40/41 vs China Stargate Inner Mongolia. Links: data-center-local-backlash, china-datacenter-buildout, source-grid-load-storage, envision-group, semianalysis, kim-isenberg, nvidia-45c-data-center-cooling, ai-energy, subprime-data-center-crisis.
