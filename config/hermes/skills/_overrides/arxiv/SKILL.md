@@ -331,3 +331,24 @@ If no "Comments:" / "Published in" / "Accepted to" appears, the paper is arXiv-o
 6. **Commit** — `cd ~/ai-topics && git add wiki/ && git commit -m "wiki: concept page for {topic} ({authors}, {venue} {year})" && git push`
 
 For the full workflow including triage, blocked-paper handling, and name collision resolution, load the `wiki-ingestion-pipelines` umbrella skill and consult its Section D (arXiv Paper Pipeline) and `references/arxiv-paper-pipeline.md`.
+
+### Wiki Ingestion Pitfalls
+
+1. **Tag taxonomy violations block commits**: When creating concept/entity pages for a paper, any tags in frontmatter must exist in `wiki/SCHEMA.md`. The pre-commit hook will block the commit. **Fix**: Before committing, check `grep "your-tag" wiki/SCHEMA.md`. If missing, add the tag to the appropriate category in SCHEMA.md first. See `wiki-entity-enrichment-from-article` skill → `references/precommit-pitfalls.md` for the full tag violation playbook.
+
+2. **API rate limits**: The arXiv API rate-limits at ~1 req/3 sec. If you get "Rate exceeded", fall back to scraping the abstract page directly:
+   ```bash
+   curl -s "https://arxiv.org/abs/2604.14403" | grep 'citation_abstract' | sed 's/.*content="//;s/".*//'
+   ```
+   This extracts the abstract from the HTML meta tags without hitting the API.
+
+3. **PDF extraction fallback**: When `web_extract` isn't available and `pymupdf` isn't installed in the main venv, create a temp venv:
+   ```bash
+   python3 -m venv /tmp/pdfvenv && /tmp/pdfvenv/bin/pip install pymupdf
+   /tmp/pdfvenv/bin/python3 -c "import fitz; doc = fitz.open('/tmp/paper.pdf'); print(doc[0].get_text())"
+   ```
+   See `ocr-and-documents` skill → `references/temp-venv-pdf-extraction.md` for full details.
+
+4. **Raw file location**: arXiv papers go to `wiki/raw/papers/` (NOT `wiki/raw/articles/`). The earlier claim that they go to `raw/articles/` was wrong — `raw/papers/` is the established convention per `wiki-ingestion-pipelines` Section D and existing `wiki/raw/papers/` entries.
+
+5. **Wikilinks to subdirectory pages resolve by index name, not file path**: `[[concepts/llm-trace-judge]]` is a valid link even though the file lives at `concepts/evaluation/llm-trace-judge.md`, because the index entry is keyed by the display name. Before writing a wikilink, verify the target exists in `wiki/index.md` (search for the slug) rather than assuming the file path matches the link target. If unsure, grep `index.md` for the slug; use the link form that index.md uses.
