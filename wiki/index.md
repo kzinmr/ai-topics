@@ -3222,7 +3222,7 @@
 - [[concepts/unharnessed-agents]] — Unharnessed Agents
 - [[concepts/unreal-agent]] — Unreal Agent — Unreal Labs' from-scratch harness; +4.7pt over Codex on Terminal-Bench 2.1 via async tool-calling + context frugality, same GPT-6 Sol model
 - [[concepts/unix-philosophy]] — Unix Philosophy
-- [[concepts/unsloth]] — unsloth
+- [[concepts/unsloth]] — unsloth — Nov 2026: Unsloth Dynamic V3.1 GGUFs for Qwen3.8-Flash-Next (15% higher accuracy, 256K ctx, 32GB+ RAM); new mix-n-match engram precisions (BF16/Q8_0/Q5_1/IQ4_NL) swappable independently of the main GGUF quant
 - [[concepts/unsloth-fast-fine-tuning]] — Unsloth — Fast Fine-Tuning
 - [[concepts/us-china-ai-competition]] — US-China AI Competition; CNBC op-ed "wrong question" (Aug 2026); MOFCOM Announcement No. 48 counter-controls (Oct 2026)
 - [[concepts/china-mofcom-announcement-48-export-controls]] — China MOFCOM Announcement No. 48 — China's first frontier-AI export controls (Oct 16, 2026): weights/checkpoints/architecture ≥10²⁶ FLOPs or ≥2T params or top-10 rank; behavior-defined agent controls; custody-not-service line; interim registration in effect, comment deadline Nov 15

@@ -1,7 +1,7 @@
 ---
 title: "Unresolved Leads — Newsletter Coverage Pending Primary Sources"
 created: 2026-11-01
-updated: 2026-11-03
+updated: 2026-11-09
 type: query
 tags:
   - newsletter
@@ -12,6 +12,7 @@ tags:
 sources:
   - raw/newsletters/2026-10-31-two-ai-labs-say-they-refuted-eth.md
   - raw/newsletters/2026-11-02-who-is-hacking-europe-s-supermarket-freezers.md
+  - raw/newsletters/2026-11-08-treat-it-like-a-disaster-recovery-test-neo4j-s-philip-rathle-on-surviving-the-lo.md
 ---
 
 # Unresolved Leads — Newsletter Coverage Pending Primary Sources
@@ -27,6 +28,25 @@ Entries are ordered newest first. When a lead is resolved, move its content to t
 owning concept/event page and mark the row `resolved` with a date rather than deleting it.
 
 ## Open leads
+
+### 2026-11-08 — "Treat It Like a Disaster Recovery Test: Neo4j's Philip Rathle on Surviving the Loss of Your AI Provider" (beehiiv uid=891)
+
+| Field | Value |
+|---|---|
+| Subject | `Treat it like a disaster recovery test: Neo4j's Philip Rathle on surviving the loss of your AI provider` |
+| Sent | 2026-11-08 (received via newsletter-ingest run `20261109T101600Z`) |
+| Raw | `raw/newsletters/2026-11-08-treat-it-like-a-disaster-recovery-test-neo4j-s-philip-rathle-on-surviving-the-lo.md` (tracking URLs only, no body) |
+| Body access | **Unreachable.** Two sampled `link.mail.beehiiv.com/v2/c/` tracking links both returned HTTP 200 Cloudflare `Just a moment...` challenge pages (zero body). Per the Cloudflare-challenge rule, no retry attempted — retry does not help without an email-session context. |
+| Triage decision | reference → this page (newsletter-triage 2026-11-09) |
+
+**Topic-level assessment.** An interview in which **Philip Rathle** (CTO of graph-database vendor Neo4j) argues that engineering organisations should treat the potential loss of their AI provider — vendor withdrawal, price shock, deprecation, or a single-vendor failure — as a **disaster-recovery discipline**: rehearse the failover before you need it. The theme is the enterprise-adoption counterpart of **model/provider lock-in** as discussed in [[concepts/ai-lab-subscription-vs-api-economics]] and [[concepts/agent-platform-capability-composition]], extended from *switching cost* to **provider continuity**: rehearse the failover before you need it. It also touches [[concepts/ai-supply-chain-security]] and the agent-harness portability question in [[concepts/harness-engineering]] (how much agent code is provider-specific enough that losing the provider is an outage).
+
+Neither `entities/neo4j` nor `entities/philip-rathle` exists yet, and there is no dedicated lock-in concept page — a page covering provider-continuity/DR discipline would be the natural home if the body surfaces. Because the body is unreachable, this stays a **subject-level lead** rather than a take (no quotable claims, no numbers, no framework details can be attributed to Rathle).
+
+**To resolve this lead.**
+1. Look for the issue in the publisher's beehiiv public archive (`<publication>.beehiiv.com/archive`) once Cloudflare stops challenging, or via a cached/syndicated copy of the verbatim subject line.
+2. Check Neo4j's own blog/news and Rathle's X presence for a matching disaster-recovery / AI-provider-dependency talk or post.
+3. If the body surfaces, create or extend a provider-continuity section under `concepts/ai-supply-chain-security` (or a new `concepts/llm-vendor-lock-in` page, registered in SCHEMA.md first) — and create `entities/neo4j` / `entities/philip-rathle` if the content supports them — then mark this row `resolved`.
 
 ### 2026-11-02 — "🧊 Who Is Hacking Europe's Supermarket Freezers?" (Superintelligence, getsuperintel.site, uid≈869)
 

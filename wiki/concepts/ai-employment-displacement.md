@@ -1,10 +1,10 @@
 ---
 title: AI Employment Displacement
 created: 2026-08-28
-updated: 2026-10-19
+updated: 2026-11-09
 type: concept
 tags: [labor-economics, ai-economics, automation, ai-society, policy, economics, ai-industry-economics]
-sources: [raw/articles/bill-gates-turbulent-ai-era-2026.md, raw/articles/john-cook-ai-code-quality.md, raw/articles/claude-load-bearing-vocabulary-louis-abraham.md]
+sources: [raw/articles/bill-gates-turbulent-ai-era-2026.md, raw/articles/john-cook-ai-code-quality.md, raw/articles/claude-load-bearing-vocabulary-louis-abraham.md, raw/articles/2026-11-08_the-signal_bug-hunters-cell-mysteries-kids-logged-out.md]
 confidence: medium
 ---
 
@@ -42,6 +42,19 @@ reactions to this dataset:
 Treat lab-published workforce statistics as **self-reported and motivated** (a lab that minimises
 displacement optics also chooses which cuts to publish) — this is exactly the
 contested-evidence handling this page already applies to vendor benchmark claims.
+
+## Burn-Murdoch (FT): "Growth without hiring" as the dividing line (2026-11-08)
+
+John Burn-Murdoch's FT piece *"Is this the first clear evidence of AI's impact on the labour market?"* (circulated with charts redrawn by [[entities/the-signal|Alex Banks]]) separates firms into two groups by **business model**, not by AI enthusiasm:
+
+| Pattern | Companies | Reading |
+|---------|-----------|---------|
+| Revenue up, headcount flat/down since 2022 | Alphabet, Meta, Microsoft, Spotify | Software-like economics: one more customer needs no extra person, so AI lets revenue grow without hiring |
+| Revenue and staff rise together | Bank of America, Visa, Accenture, Deloitte | More clients still means more people, regardless of AI |
+
+Two caveats Burn-Murdoch himself attaches: the US productivity rise **began in 2020**, before AI was much use, and he attributes most post-2022 job cuts to **rate rises** — AI may merely be *keeping hiring weak* rather than causing the cuts. The young-worker signal is the sharpest part: the Stanford study (Aug 2026) finds 22–25-year-olds in the most AI-exposed jobs about **19% behind** peers in less-exposed work, up from a **13%** gap a year earlier — i.e. the "Canaries in the Coal Mine" finding above is widening, and the US (unlike most countries) shows a dip in AI-exposed jobs *outside* tech as well.
+
+Relevance to the arguments section: this is the cleanest available **sector-differentiated** evidence — it predicts displacement concentrated in flat-headcount software-like firms while services-with-human-delivery sectors keep hiring, which is compatible with both the "narrow escape hatch" thesis and the skeptical "it's the rates, not AI" reading.
 
 ## Policy Responses Now on the Table
 

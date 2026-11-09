@@ -1,7 +1,7 @@
 ---
 title: Agentic Commerce
 created: 2026-05-01
-updated: 2026-10-01
+updated: 2026-11-09
 type: concept
 tags: [concept, ai-agents, platform, protocol, infrastructure]
 sources:
@@ -9,6 +9,7 @@ sources:
   - https://blog.cloudflare.com/agents-stripe-projects/
   - https://open.substack.com/pub/bensbites/p/building-gets-easier
   - raw/articles/2026-09-30_stripe_ousd-default-stablecoin.md
+  - raw/articles/2026-11-08_the-signal_bug-hunters-cell-mysteries-kids-logged-out.md
 ---
 
 # Agentic Commerce
@@ -99,6 +100,12 @@ Agentic commerce represents the next frontier for both AI agents and payments in
 - **For businesses**: A new distribution channel — being discovered by AI agents becomes as important as SEO was for the web
 - **For agent platforms**: Commerce capability turns agents from information tools into economic actors
 - **For Stripe**: Positions as the TCP/IP layer of the agentic economy, analogous to its role in internet payments
+
+## Adoption Reality Check (Nov 2026)
+
+The infrastructure above is ahead of actual consumer-agent transaction volume. Uber's CFO Balaji Krishnamurthy disclosed on the **Nov 4, 2026** earnings call that during Halloween week — one of Uber's biggest weeks, ~**320 million** rides + Uber Eats orders — AI agents placed only **~500 food orders** and, for rides, "a grand total of **four** trips" (his words: "very, very early and very limited traction"). Reported in [[entities/the-signal|The Signal]] ("Bug Hunters, Cell Mysteries, and Kids Logged Out", 2026-11-08).
+
+Alex Banks's explanation is structural rather than a technology-adoption lag: booking a ride takes ~50 seconds and reordering a favourite meal ~90 seconds, so an agent has almost no time to save on tasks people already perform on autopilot — and the "human touch" (pin placement, terminal selection at an airport) is exactly where judgement matters. On this view agents earn their keep on **long-horizon tasks** (coding, research) that take people hours, which is a counterweight to the "agents as economic actors / new distribution channel" thesis above: consumer agentic commerce may be a small category for a long time even while agent *infrastructure* matures.
 
 ## Relationships
 

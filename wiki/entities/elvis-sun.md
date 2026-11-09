@@ -1,7 +1,7 @@
 ---
 title: Elvis Sun
 created: 2026-04-18
-updated: 2026-06-17
+updated: 2026-11-09
 type: entity
 tags:
   - person
@@ -158,6 +158,10 @@ With Claude Code, Codex, and Gemini agents, solo founders can now build products
 - **2026 Mar 21:** "The Game of Attention" — attention flywheel concept
 - **2026 May:** Launched [Newsjack](https://newsjack.sh) — open-source agent skills for PR teams (428 ★)
 - **2026:** Medialyst.ai beta launch
+
+## X Activity Log (Nov 2026)
+
+- **Nov 7, 2026** — [Tweet](https://x.com/elvissun/status/2119112613460394313): "anyone here runs an AI consultancy? I might have some leads to send over -- please dm me a little about you. experience with PR industry or [newsjack.sh] is a plus." Signals Elvis is now funneling PR-industry consulting leads to third parties, leveraging Newsjack ([concepts/newsjack]) as a domain-signal filter for who to route work to. (logged only; no new page)
 
 ## Related
 

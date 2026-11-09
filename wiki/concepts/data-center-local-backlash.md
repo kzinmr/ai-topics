@@ -1,7 +1,7 @@
 ---
 title: "Data Center Local Backlash"
 created: 2026-11-08
-updated: 2026-11-08
+updated: 2026-11-09
 type: concept
 tags:
   - data-center
@@ -50,6 +50,15 @@ Isenberg (self-described pro-buildout: "I want the United States to build more c
 - Whether the industry adopts Isenberg's proposed responses to the three real grievances (paywalled section).
 - How local consent risk prices into SPV debt covenants and site selection ([[concepts/subprime-data-center-crisis]]).
 
+## Cross-country contrast: the "prisons" model (UK)
+
+[[entities/the-signal|Alex Banks]] (The Signal, 2026-11-08) poses the policy question as *"Should data centres be pushed through like prisons, or put to a local vote?"* and notes that the UK has chosen the first option. Because the government classifies **prisons as nationally significant infrastructure**, ministers may overrule local objections to build them — and data centres have been given **the same treatment**: ministers overturned a Hertfordshire council's refusal of a site in **Abbots Langley**, and in **March 2026** removed a **300MW** Buckinghamshire site from the council's planning authority altogether.
+
+The comparison is analytically useful in both directions:
+- It isolates *consent mechanism* as the variable. The US and UK faced comparable local opposition (this page's 40-of-41 result; Gallup's 71%), but the UK answered by centralising the decision, which trades local legitimacy for build speed — and imports the prisons controversy (democratic deficit, siting in less-connected areas) into AI infrastructure.
+- It explains OpenAI's **Nov 5 Community Compact** (see [[entities/openai]]) as the market-side answer to the same problem: if the developer pays the **full cost of power** used by its sites and publishes **water and energy use** per site, the "answer" to a local vote may change — Banks's explicit question is whether local objections collapse once the cost allocation is fixed. That is the local-consent counterpart of Isenberg's "fix the three real grievances" remedy above, and a testable prediction: compact-style commitments should lower ballot-measure incidence or raise approval rates in host counties, relative to sites without them.
+
 ## Sources
 
 - [Data Center Limits Won 40 of 41 Local Votes — Superintelligence.](https://read.getsuperintel.com/p/data-center-limits-won-40-of-41-local-votes) (Kim Isenberg, Nov 7, 2026, 15-min read; Superintel+ paywall — free portion captured; sources cited therein: Ballotpedia accessed 11/06/2026, Bloomberg 11/04/2026, Gallup 05/13/2026, NBC News 11/04/2026)
+- Alex Banks, The Signal: "Bug Hunters, Cell Mysteries, and Kids Logged Out" (2026-11-08) — UK prisons/national-importance framing, Abbots Langley and Buckinghamshire overturns, OpenAI Community Compact read. `raw/articles/2026-11-08_the-signal_bug-hunters-cell-mysteries-kids-logged-out.md`

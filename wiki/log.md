@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-11-09] ingest | x-accounts-scan: Unsloth Qwen3.8-Flash-Next GGUF + Elvis Sun AI consultancy call
+
+- Scanned 10 accounts (cursor 69→80, budget 11). 2 new posts (1 reply chain + 1 standalone lead-funnel tweet).
+- **@danielhanchen reply (2026-11-04) to @UnslothAI root tweet (2118033433045991660, 1358 bookmarks / 2189 likes / 247K impressions)** — Unsloth Dynamic V3.1 GGUFs for Qwen3.8-Flash-Next claim 15% higher accuracy on Terminal Bench / DeepSWE at 256K ctx (32GB+ RAM). Novel angle: **mix-n-match engram precisions** — users can now swap the engram (hashed n-gram memory table) tier to BF16 / Q8_0 / Q5_1 / IQ4_NL independently of the main GGUF quant, trading knowledge-table fidelity for RAM headroom.
+  - New raw article: `wiki/raw/articles/unsloth.ai--docs-models-qwen3.8-next--2026-11-04.md`
+  - `concepts/unsloth.md` — Nov 2026 Recent bullet + `updated:` bumped + raw source added; index blurb enriched.
+  - `entities/daniel-han.md` — new Blog/Recent Posts row for the Qwen3.8-Flash-Next GGUF + mix-n-match engram guide; `updated:` bumped + raw source added.
+  - No new page created — this is a quantization-tooling update to the existing Qwen3.8-Flash-Next story, not a new model release. The model itself is already documented (`concepts/qwen-3-8.md`, `entities/qwen.md`) including the Cohere exfiltration incident (`concepts/qwen-covert-exfiltration-behaviour.md`); raw article explicitly notes the tooling page does not re-endorse the model's safety.
+- **@elvissun (2026-11-07) "anyone here runs an AI consultancy?"** — funneling PR-industry consulting leads, using newsjack.sh familiarity as a filter. Logged as one bullet in `entities/elvis-sun.md` under new "X Activity Log (Nov 2026)" section; existing `concepts/newsjack.md` unchanged. (logged only; no new page)
+- Error: `@realmcore_` — could not resolve user_id (skipped).
+- Index counts recomputed from live index lines: Concepts 2320 (unchanged — no new concept page). Entities/Comparisons/Events/Queries unchanged.
+
 ## [2026-11-09] skeleton-enrich-daily: backlog empty (streak continues since 2026-10-17)
 
 - Whole-tree frontmatter scan: 0 `status: skeleton` markers in wiki/entities/ and wiki/concepts/.

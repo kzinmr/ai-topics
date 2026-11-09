@@ -702,6 +702,19 @@ Midrange model (Anthropic-Sonnet position) emphasizing **visual reasoning + comp
 
 **Acquisition of Pierre Computer Company (announced Nov 4).** HN: https://news.ycombinator.com/item?id=50366863 (262 pts). Details pending; announcement page openai.com/index/openai-to-acquire-pierre/ (403 to plain fetch).
 
+### Brockman's WSJ Tech admission + Cat Wu hire (Nov 4–8, 2026)
+
+Reported with commentary by [[entities/the-signal|Alex Banks]] (The Signal, 2026-11-08):
+
+- **Greg Brockman on WSJ Tech (Nov 4)**, asked when he realised Anthropic had overtaken OpenAI on revenue: *"Q1 was pretty rough. Q2 was pretty rough."* On coding: *"We weren't even in the conversation, right? We had Codex, but no one was talking about it."* He then attributed **70% quarterly growth in annualised revenue in Q3** to a shift in market winds, with **businesses now bringing in the majority of OpenAI's money**, and said OpenAI will be ready to go public next year — *"I think so. Yes."*
+- Banks's methodological contrast with Anthropic's S-1: with Anthropic *"all figures are now in the open for the world to see"*, whereas Brockman quoted **no dollar amounts** on stage and, asked about revenue per dollar of compute, answered by talking about **price cuts** instead — a rare explicit statement that OpenAI's compute-efficiency position is not currently a defensible headline number.
+- **Cat Wu hired (Nov 4)** — she ran product for Claude Code until **Oct 30, 2026** (see [[entities/cat-wu]]). Banks reads it as evidence of OpenAI's poaching power *before* Anthropic's most critical moment (the IPO), while doubting that a single hire closes a product gap "overnight."
+
+### Images 2.6 (GIF generation) + Pierre — minor Nov 2026 product notes
+
+- **Images 2.6** adds **animated GIF** generation from a prompt or a photo, and can follow **reference images** to keep a look consistent across frames. Available in ChatGPT on **every plan**, alongside two new image models for developers. Reported by [[entities/the-signal|The Signal]] (2026-11-08), whose reviewer's practical read is that the delight factor is disproportionately high for the effort ("I spent 3 seconds thinking of this prompt… and the final result turned out to be this beauty") — the same "cheap, immediately shareable output" pattern that drove earlier image-model adoption waves.
+- **Pierre Computer Company** (see acquisition note above) builds **storage for the code that AI agents write and edit** — i.e. the versioning/artifact layer that agent-generated code needs, and an open-source stack that already ran parts of Codex. Price undisclosed. Reads as OpenAI internalising the agent-code plumbing rather than depending on a third party (compare the artifact/versioning layer discussed in [[concepts/model-training-as-code]]).
+
 ## Sources
 - **OpenAI Agents SDK Blog (2026-04-15)** — [openai.com](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - **OpenAI API Sandbox Docs** — [developers.openai.com](https://developers.openai.com/api/docs/guides/agents/sandboxes)

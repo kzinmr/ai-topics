@@ -2,7 +2,7 @@
 title: "Cat Wu"
 type: entity
 created: 2026-04-24
-updated: 2026-08-01
+updated: 2026-11-09
 tags:
   - person
   - anthropic
@@ -11,6 +11,7 @@ aliases: ["Cat Wu (Anthropic)"]
 sources:
   - https://www.lennysnewsletter.com/p/how-anthropic-product-team-moves-faster
   - raw/articles/simonwillison.net--2026-jul-21-cat-and-thariq--15c314db.md
+  - raw/articles/2026-11-08_the-signal_bug-hunters-cell-mysteries-kids-logged-out.md
 ---
 
 # Cat Wu
@@ -67,6 +68,10 @@ Cat Wu's appointment as Head of Product signals Anthropic's commitment to:
 - **Product-led growth** — Not just research excellence but strong product execution
 - **Developer tooling** — Deep investment in Claude Code as a flagship product
 - **Competitive positioning** — Rivaling OpenAI's Codex with Anthropic's own coding agent
+
+## Departure to OpenAI (Nov 2026)
+
+Per [[entities/the-signal|The Signal]] (2026-11-08), Cat Wu **left Anthropic on Oct 30, 2026** and was **hired by OpenAI, announced Nov 4, 2026**. Alex Banks reads the move as a demonstration of how much leverage Sam Altman's team has in poaching top talent *before* a competitor's most critical moment — Anthropic's IPO — while cautioning that "it can't be done overnight with a single hire" to close a product gap. This ends the Head-of-Product-for-Claude-Code tenure documented above; the wiki has no first-party confirmation from either lab (The Signal is the only source on disk).
 
 ## Related Entities
 

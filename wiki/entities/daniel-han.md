@@ -2,7 +2,7 @@
 title: Daniel Han
 type: entity
 created: 2026-04-10
-updated: 2026-10-11
+updated: 2026-11-09
 source: "x-account"
 tags:
   - person
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-07-29_unsloth_kimi-k3-local-inference.md
   - raw/articles/2026-07-31_unsloth_deepseek-v4-flash-0731-gguf.md
   - raw/articles/2026-10-11_unsloth_sandboxing-in-studio.md
+  - raw/articles/unsloth.ai--docs-models-qwen3.8-next--2026-11-04.md
 ---
 
 
@@ -155,6 +156,7 @@ Investment analysis scored Unsloth at **8.10/10** (highest in the OSS index):
 
 | Post | Date | Topic |
 |------|------|-------|
+| **Qwen3.8-Flash-Next GGUFs + mix-n-match engrams** (docs) | Nov 2026 | Updated Unsloth Dynamic V3.1 GGUFs for Qwen3.8-Flash-Next claim 15% higher accuracy on Terminal Bench / DeepSWE at 256K context (32GB+ RAM). New guide section lets users swap the **engram** (hashed n-gram memory table) precision independently of the main quant — BF16 / Q8_0 / Q5_1 / IQ4_NL — "seamlessly", trading knowledge-table fidelity for RAM headroom on a fixed budget. [docs](https://unsloth.ai/docs/models/qwen3.8-next#mix-n-match-engrams), [HF](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF) |
 | **Sandboxing in Unsloth** (docs) | Oct 2026 | OS-level sandboxing for Studio tool calls, auto-enabled by default: MXC on Windows 11 24H2+, Bubblewrap on Linux, Seatbelt on macOS. Two modes — "low" (software string/AST/regex checks, 1-3ms) vs "high" (true OS sandbox, 50-164ms per call). Blocks rm/dd/sudo/curl/ssh/eval etc., strips secret env vars, refuses Studio credential files, caps processes/memory (8GB)/CPU (600s). Built with the Windows MXC team. [docs](https://unsloth.ai/docs/new/studio/sandboxing-in-unsloth) |
 | **Inkling 1-bit GGUF Quants** | Jul 2026 | Collab with Thinking Machines: 86% smaller quantized Inkling model with multimodal support |
 | **Inkling in Unsloth Studio** | Jul 2026 | Tool calling, web search, code execution, vision + audio for Inkling locally |

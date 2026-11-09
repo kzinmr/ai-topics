@@ -2,7 +2,7 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-11-01
+updated: 2026-11-09
 tags: [company, lab, product, platform, infrastructure, gemini, ai-industry-economics, business-model]
 aliases: ["Google DeepMind", "Google Research"]
 sources: [
@@ -18,7 +18,8 @@ sources: [
   raw/articles/simonwillison.net--2026-jun-10-diffusiongemma--8e3b4f1a.md,
   raw/newsletters/2026-06-11-ainews-open-models-model-labs-vs-agent-labs-and-what-s-untrainable-sarah-guo.md,
   raw/newsletters/2026-08-09-google-sells-the-shovels-the-great-hark-handoff-and-bytedance-s-bigger-picture.md,
-  raw/newsletters/2026-08-10-the-model-openai-won-t-release.md
+  raw/newsletters/2026-08-10-the-model-openai-won-t-release.md,
+  raw/articles/2026-11-08_the-signal_bug-hunters-cell-mysteries-kids-logged-out.md
 ]
 ---
 # Google (AI/ML)
@@ -263,6 +264,15 @@ Source: Superintel Google I/O 2026 newsletter (May 2026)
 ### Significance
 
 This positions Google as having re-entered the frontier model race after a period of lagging behind OpenAI and Anthropic. The combination of Gemini 3.5 Flash for performance, Omni for multimodal, Antigravity 2.0 for multi-agent orchestration, and Spark for persistent agents creates a full-stack AI platform that competes with both consumer (ChatGPT) and developer (Codex/Symphony) offerings from competitors.
+
+#### Antigravity Remote Agents — agents on the night shift (Nov 2026)
+Reported by [[entities/the-signal|Alex Banks]] (The Signal, 2026-11-08): Google's coding app **Antigravity** gained **Remote Agents** that run inside Google's cloud and **keep working after the user closes their laptop**. Gated to **AI Pro and Ultra** subscribers, and — the notable default — they **run commands without asking** out of the box. This is the consumer/prosumer-facing deployment of the Antigravity 2.0 agent stack above, and it pairs with the Spark persistent-agent line: Google is shipping unattended agent execution behind a subscription tier rather than behind a confirmation gate, which is an aggressive stance relative to the human-in-the-loop defaults typical of coding-agent harnesses (see [[concepts/ai-agent-engineering]], [[concepts/harness-engineering]]).
+
+#### Gemini Omni 1.2 Flash (Nov 2026)
+Per The Signal (2026-11-08): clip length raised to **up to 15 seconds** (from 10) and developer price cut **30% to $0.07/second at 720p** — the price-per-second trajectory that makes generated video comparable to stock footage at production scale. Extends the Gemini Omni family above.
+
+#### AI off by default for school accounts (Nov 2026)
+Following a WSJ investigation, **Gemini, Gemini Notebook and Search will be off by default for student (school-managed) accounts** until a school opts in, rolling out over the following months. Banks's catch: a school that wants AI off entirely must also give up **Google Search itself**, because AI is now built into Search — and Google's other response (AI Mode / AI Overviews giving step-by-step guided learning instead of answers) still leaves the deeper problem that **the curriculum, not the toggle, has to change** if homework can be one-shot. Related: [[concepts/ai-employment-displacement]] (skills formation when juniors never do the work).
 
 ## Gemini Enterprise Agent Platform
 

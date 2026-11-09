@@ -6,9 +6,11 @@ tags:
   - writing
   - product-management
   - evaluation
-sources: []
+sources:
+  - https://www.lennysnewsletter.com
+  - raw/articles/2026-11-08_lennys-podcast_tulsee-doshi-frontier-models-pm.md
 created: 2026-04-30
-updated: 2026-05-25
+updated: 2026-11-09
 type: entity
 ---
 
@@ -62,6 +64,7 @@ Lenny's Podcast features interviews with world-class product leaders, growth exp
 - **Dylan Field** (Figma CEO) — AI, design, and craft as competitive moats
 - **Julie Zhuo** (Former Facebook VP, Sundial CEO) — Managing people to managing AI
 - **Hamel Husain & Shreya Shankar** — AI evals (see below)
+- **Tulsee Doshi** (Head of Product, Google frontier models) — "Why PMs are suddenly valuable again" (Nov 8, 2026; see below)
 - **Rahul Vohra** (Superhuman CEO) — Product-led growth
 - Various leaders from Linear, Revolut, Intercom, and other top product companies
 
@@ -101,12 +104,31 @@ Lenny's Podcast has become an important platform for discussions about **AI eval
 This episode also addressed the Claude Code "no evals" controversy, the distinction between dogfooding and systematic evaluation, and the importance of evaluating AI products beyond subjective "vibes."
 
 ### Other AI-Focused Coverage
-
 - **Dan Shipper: The AI Paradox (May 2026)** — "More automation, more humans, more work." Dan made 12 predictions about AI & work: Codex/Claude Code as the OS for work, one super-agent per company, SaaS is not dead, CLIs are over, PMs and full-stack designers will thrive, and the claim that "automation is a lie." See [[entities/dan-shipper#12-predictions-lennys-podcast-may-2026|Dan Shipper's 12 predictions]].
 - **Benedict Evans: A Rational Conversation on Where AI Is Actually Going (May 2026)** — Former a16z partner Benedict Evans discusses AI as a "1997 internet moment," strategic perspectives on value accrual in the AI stack, distribution as the ultimate moat as software gets easier to build, the Jevons paradox applied to AI labor, the "task vs job" framing for automation, anti-AI backlash dynamics, and the consulting/services boom around AI adoption. See [[entities/benedict-evans]] and [[concepts/ai-economic-impact]].
 - **Intercom's AI (Fin)** — Lenny's Newsletter covered how Intercom built their AI customer support agent "Fin," exploring practical AI product development lessons
 - **AI Prototyping for PMs** — Guide covering AI prototyping tools and techniques for product managers
 - Various episodes with AI company founders and product leaders discussing AI strategy
+
+### Tulsee Doshi — "Why PMs are suddenly valuable again" (2026-11-08)
+
+Raw: `raw/articles/2026-11-08_lennys-podcast_tulsee-doshi-frontier-models-pm.md` (free portion only — the episode is **Substack Paid** past the takeaways list, so the transcript is not on disk).
+
+⚠️ **Subject-line correction**: the email was sent under *"What it actually takes to build frontier models"*, but the actual post title is **"Why PMs are suddenly valuable again"** — a Lenny's Podcast pattern (subject ≠ title) worth checking before citing.
+
+**Guest**: Tulsee Doshi, **head of product for Google's frontier AI models** — Gemini plus the multimodal family **Nano Banana, Genie, Veo, Lyria** (see [[entities/google]]).
+
+**Advertised topics / frameworks** (from the free preview's discussion list — the free text is a topic index plus author bio and a reference list, not substantive prose):
+- Model development as **not just engineering** but "like Snape's potions class" — i.e. a partly empirical, taste-driven craft
+- Google's **full-stack frontier AI strategy**
+- What PMs actually do **inside a frontier AI lab**
+- Doshi's **60-20-20 framework** — balancing what works now against what's *almost* working
+- **How to write your first eval**, and why **"evals and vibes both matter"**
+- **The rising value of great PMs** — the reversal of the "AI makes PMs obsolete" narrative
+
+**Referenced primary sources** (useful leads): Gemini 4 Argon announcement on blog.google ("our next era of frontier intelligence"), aistudio Nano Banana, DeepMind Lyria/Gemma/Gemini Audio pages, plus prior Lenny episodes with **Emmanuel Ameisen** (Anthropic) and **Logan Kilpatrick** (OpenAI devrel).
+
+**Why it matters here**: this is the second Lenny episode (after Dan Shipper's "PMs and full-stack designers will thrive") to argue that **frontier-lab product judgment becomes scarcer, not redundant**, as models commoditize — a claim about the PM role that runs against the "AI kills product jobs" framing in [[concepts/ai-employment-displacement]]. Treat the framework details as **advertised-but-unverified** until the paid body or a transcript is captured; if a transcript becomes available, promote the 60-20-20 and evals-vs-vibes material to its own section or a `concepts/` page.
 
 ## Key Ideas & Philosophy
 

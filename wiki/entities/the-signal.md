@@ -2,7 +2,7 @@
 title: "The Signal (Alex Banks)"
 type: entity
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-11-09
 tags:
   - ai-commentary
   - content-moderation
@@ -18,6 +18,7 @@ sources:
   - raw/newsletters/2026-07-25-the-good-the-bad-and-the-ugly-of-ai-writing.md
   - raw/newsletters/2026-06-26-you-re-underestimating-ai-on-purpose.md
   - raw/newsletters/2026-07-10-ai-is-quietly-thinking-for-us.md
+  - raw/articles/2026-11-08_the-signal_bug-hunters-cell-mysteries-kids-logged-out.md
 related:
   - entities/alex-banks
   - entities/substack
@@ -83,6 +84,18 @@ Curated lists for practical AI use:
 ### Content Moderation & Platform Policy Analysis
 Critical examinations of AI content detection and platform governance:
 - **"The good, the bad and the ugly of AI writing"** (Jul 2026) — Analysis of Substack's "Scan for AI text" feature, Pangram AI detection tool, the Claudefishing concept, and the Mia Ballard / Hachette false positive case
+
+## Notable Issue Analyses
+
+### "Bug Hunters, Cell Mysteries, and Kids Logged Out" (2026-11-08)
+
+Full body recovered via direct HTTP fetch (`thesignal.substack.com` bypasses the `open.substack.com` Cloudflare block): `raw/articles/2026-11-08_the-signal_bug-hunters-cell-mysteries-kids-logged-out.md`. Representative of Banks's weekly-analysis format — concrete numbers plus his own framing:
+
+- **Agentic commerce reality check**: Uber CFO Balaji Krishnamurthy (Nov 4 earnings call) — Halloween week ~320M rides+Eats orders, of which AI agents placed only **~500 food orders and exactly 4 rides** ("very, very early and very limited traction"). Banks's own analogy: a ride takes ~50s and a meal reorder ~90s, so agents save almost nothing on autopilot habits; they "properly earn their keep" only on **long-horizon tasks** (coding, research) that take humans hours. See [[concepts/agentic-commerce]].
+- **Anthropic's amended S-1**: future models may "imminently" cross Anthropic's own line for AI-driven progress (recursive self-improvement); Q3 revenue **$16.96B** (up from $11.56B in Q2). IPO valuation talk down from ~$2T to **$1.1–1.3T** on midterm-driven market headwinds — Banks: "the time for Anthropic to act is now." See [[entities/anthropic]].
+- **OpenAI / Brockman on WSJ Tech (Nov 4)**: "Q1 was pretty rough. Q2 was pretty rough" on Anthropic overtaking OpenAI in revenue; "We weren't even in the conversation" on coding despite having Codex; Q3 annualized revenue +70% QoQ with businesses now the majority of revenue; OpenAI "ready to go public next year — I think so. Yes." Plus OpenAI's hire of **Cat Wu** (ran Claude Code product until Oct 30) — Banks reads it as poaching leverage ahead of Anthropic's IPO but doubts a single hire closes a product gap. See [[entities/openai]].
+- **Burn-Murdoch (FT) labour-market charts**: revenue up / headcount flat at Alphabet, Meta, Microsoft, Spotify since 2022 vs revenue-and-staff rising together at Bank of America, Visa, Accenture, Deloitte — Banks's dividing line: **if one more customer doesn't need one more person, AI lets you grow without hiring**. Stanford (Aug 2026): 22–25-year-olds in the most AI-exposed jobs ~**19% behind** peers in less-exposed work (13% a year earlier). See [[concepts/ai-employment-displacement]].
+- **Google education default-off**: Banks's catch — a school that wants AI fully off must also give up Google Search itself; his conclusion is that the *curriculum*, not the toggle, has to change. Plus data-centre local-backlash framing ("should data centres be pushed through like prisons, or put to a local vote?"). See [[concepts/data-center-local-backlash]].
 
 ## Growth & Audience
 
