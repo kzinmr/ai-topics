@@ -1,3 +1,28 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-11-09] watchdog | auto-fix — log.md header burial, index count reconciliation, 1 orphan index registration
+
+### Auto-fixed
+- `wiki/log.md`: `# Wiki Log` header was buried at line 11 (trending-topics prepended above it). Repaired via `fix_log_header_burial.py`; 187 entries preserved, 0 pipe corruption.
+- `wiki/index.md`: registered missing orphan `queries/2026-11-05-skeleton-enrich-empty` (29-line snapshot page, file exists, was not indexed).
+- `wiki/index.md`: reconciled stale section counts to actual indexed-entry counts — Concepts 2320→2321, Comparisons 35→39, Events 51→55, Queries 52→54, Total pages 3388→3393. Entities 966 verified correct (958 top-level + 7 `omar-khattab/` subdir + 1 redirect-stub dup entry). All duplicate index entries verified legitimate (files exist — redirect-stub double-indexing, per 2026-08-19 finding). `validate_index.py` passes.
+- `wiki/queries/wiki-graph-analysis-weekly-2026-11-06.md`: fixed malformed wikilink `[[concepts/ai-benchmarks/swe-bench\]]` → `[[concepts/ai-benchmarks/swe-bench]]` (residual of the 10-backslash batch, only surviving instance outside the annotations file's own example text).
+
+### Verified clean (no action)
+- Index corruption: 0 pipe prefixes, 0 line-number prefixes, 0 triple brackets, 0 space-prefix markers, 0 L2 `|- ` corruption, 0 no-frontmatter pages, 0 orphan `###` timestamps.
+- 2026-11-06 graph report actionable items: both cross-ref gaps (`concepts/qwen`→`entities/qwen`, `concepts/agent-harnesses`→`comparisons/agent-harnesses`) already present; backslash typo resolved as above.
+
+### Needs attention (human review)
+- Pipeline chain breaks (upstream pipeline owners): `blog` chain — ingest_ok_but_triage_failed (blog_triage last ran 11-06); `newsletter` chain — triage_ok_but_wiki_ingest_failed (triage ran 11-09 10:41, wiki-ingest not completed). `x_accounts stale(26h)` is a false positive — every-2-days schedule, last run 11-07 22:30 OK.
+- `queries/2026-10-04-uncommitted-wip-snapshot-query` (3,680-line orphan) — archive-vs-hub decision pending.
+- ~439-page `status:stub` concept backlog flagged by 11-08 skeleton-enrich run — triage deferred to dreaming pipeline.
+
+---
+
+
+
 ## [2026-11-09] trending-topics | 6 raw + 1 new concept + 5 appends — agent/model drift, harness migration, memory spec
 
 - Sources (HN front page + keyword pass, 24h points-only sweep): Goldman Sachs restricts Claude Code to engineers (HN 50415628, 793p), "Goodbye Claude, hello Pi" (HN 50410107, 776p), "I'm not convinced the AI bubble exists" (HN 50418975, 344p), "Is Opus 5.5 nerfed?" (HN 50422069, 236p), "Agent memory needs its OpenTelemetry moment" (HN 50411467, 184p), "Why I will not be using LLMs in my coding" (HN 50412591, 115p), "How I Fight AI Brain Fry" (HN 50416363, 269p).
@@ -8,7 +33,7 @@
 - Already covered by sibling jobs today, not duplicated: The Signal / Lenny newsletter items (newsletter-wiki-ingest, 10:16 UTC), Makarevych evals X Article (09:xx), Microsoft AI Frontiers disbandment (`entities/microsoft-ai-frontiers.md`, Nov 8), OpenAI $11B @ $1.25T and Anthropic IPO valuation cuts (`concepts/ai-bubble-economics.md`).
 - Report: `inbox/rss-scans/daily-scan-2026-11-09.md`.
 
-# Wiki Log
+---
 
 ## [2026-11-09] newsletter-wiki-ingest | run 20261109T101600Z — The Signal (Alex Banks, Nov 8) + Lenny's Podcast (Tulsee Doshi)
 
@@ -65,7 +90,6 @@
 - Report: inbox/rss-scans/trending-topics-2026-11-08.md
 
 
-_Log of all wiki changes. Newest entries at top._
 ## [2026-11-08] ingest | newsletter-wiki-ingest (run 20261108T101230Z): 2 takes processed from 2 newsletters (35 links; triage JSON parse failed in cron wrapper — recovered from triage_latest.json + prior triage response). **New pages (4)**: (1) `concepts/china-datacenter-buildout` ★★★★★ — SemiAnalysis Sept 2026 site visit: Envision's Galaxy campus Ulanqab (800MW IT ≈ Stargate Abilene core; 120MW in <1yr at 1/5 US cost; $0.055/kWh, $40/kW/mo rents, <$3mm/MW capex; 25GW announced Inner Mongolia; CATL×VNET×Zhongheng counter-model; CATL a top DeepSeek outside investor). (2) `entities/envision-group` — 100GW+ wind integrator; 3GW DC plans; factory-preconfigured AESC BESS; prefab substation. (3) `concepts/source-grid-load-storage` — SGLS model; Galaxy >60% self-supply via 420MW wind (1.75× oversizing) + 4h BESS + 80km-sited farms; 5MW SST 800V DC pilot live; ~25% Chinese DCs DC-powered vs 97% US AC UPS. (4) `concepts/data-center-local-backlash` ★★★★☆ — Nov 3 2026: 40/41 Ballotpedia local DC measures won by limits-side (27/28 restrictions, 0/13 pro-dev; 72.9% of 250k votes; Harwood ND sole exception, Applied Digital/Oracle); nine claims checked (water/power-bill claims fail nationally; grid strain/capacity cost/secrecy real); "local consent has joined chips and electricity". **Updated (6)**: `entities/semianalysis` (Nov 2026 report section), `entities/dylan-patel` (China DC buildout section), `entities/kim-isenberg` (DC local votes DeepDive), `concepts/ai-energy` (Nov 3 direct-democracy escalation), `concepts/nvidia-45c-data-center-cooling` (chiller-less China precedent), `concepts/subprime-data-center-crisis` (related: backlash + China contrast). Index +4 pages (Entities 966, Concepts 2317, total 3388). Both sources paywalled — free portion only, noted on pages.
 
 ## [2026-11-08] ingest | blog-ingest: 20 new; 11 saved, 9 unsaved (7 AI Engineer YouTube talks, 2 LWN paywalled/misc). **Priority wiki ingest (5 pages)**: (1) `entities/seangoedecke-com` — new Core Ideas section "LLMs Are Terrible at Designing AI Systems" (symbolic-solver-instead-of-LLM-call anecdote, three explanations incl. RLVR-without-API-access hypothesis, design-judgment thesis; design-side counterpart to agent-native-tool-fallacy). (2) `concepts/benchmarking-crisis` — new Case Study: GenDB-V "Next-Level Benchmarking Overfitting" (22-61× claims vs memory-bandwidth floor; per-query precomputation + hard-coded dbgen knowledge; verification veneer over benchmark-lore fast path = reward hacking with formal-verification pass). (3) `entities/cory-doctorow` — new section on Tan & Redwine's "Against Tech Oligarchy" (scarcity-based power, labor peace vs labor war, strikes-as-galvanizing for self-running systems). (4) `entities/andrew-nesbitt` — Nov 7 weekly digest (OpenVox/Puppet RCE trio, PyPI Security tab provenance UI, pip 26.3 install-time import blocking, mise Sigstore verification, zizmor workflow lockfiles, apm Dependabot support). (5) `entities/simon-willison` — datasette #3046 rel=next/Firefox prefetch fix + 24-year-old-issue archaeology. **Skip as raw-only**: LWN Amutable Foundations (image-based OS, no AI-agent angle), construction-physics reading list, shkspr book review, maskray four-color puzzle, dfarq ×2 (toy trains, HP desktop). **Unsaved**: 6 AI Engineer conference talks (YouTube; candidates for transcript pipeline), Daring Fireball YouTube relay, LWN XDC videos + hibernation paywall.

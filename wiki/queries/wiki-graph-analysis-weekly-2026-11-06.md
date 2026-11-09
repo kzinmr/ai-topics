@@ -84,7 +84,7 @@ sources: []
 - [[concepts/bitter-lesson]] — 10 references
 - [[entities/huggingface]] — 10 references
 - [[concepts/claude-opus-4-7]] — 10 references
-- [[concepts/ai-benchmarks/swe-bench\]] — 10 references
+- [[concepts/ai-benchmarks/swe-bench]] — 10 references
 - [[concepts/ai-coding]] — 9 references
 - [[entities/ben-clavie]] — 9 references
 - [[ai-governance]] — 9 references

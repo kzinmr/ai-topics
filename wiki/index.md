@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3388
+> Total pages: 3393
 > Last updated: 2026-11-09
 
 ## Entities (966 pages)
@@ -974,7 +974,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2320 pages)
+## Concepts (2321 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
@@ -3298,7 +3298,7 @@
 - [[concepts/proton-ai-mandate-backlash]] — 404 Media: Proton CEO's 'loser thinking' AI mandate, employee AI-usage telemetry, re-interviews cancelled in 24h (HN 277)
 - [[concepts/sre-deskilling]] — SigNoz applies Bainbridge's 1983 Ironies of Automation to AI incident response; 95%/5% competence-erosion hypothesis (HN 605)
 - [[concepts/openai-oct31-policy-bundle]] — OpenAI's Oct 30-31 governance bundle: misalignment-monitoring disclosure, fair-use position, crawler opt-out, teen safety report — read as coordinated legal positioning
-## Comparisons (35 pages)
+## Comparisons (39 pages)
 
 - [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes vs ChatGPT Dreaming
@@ -3336,7 +3336,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (51 pages)
+## Events (55 pages)
 
 - [[events/hf-harness-adapters-launch-2026]] — HF "harness adapters" (harness-hub, Nov 6 2026) — one LoRA per (base model × harness) for pi/opencode/hermes, GRPO RL on verifiable tasks inside unmodified harnesses, fewer tool calls at equal-or-better accuracy; safeagents blocks reward-hacking tool calls; Repo2RLEnvs built from public Hub agent trajectories; $5 vs $90 adapter-vs-merged checkpoint eval; LFM2.5-24B-A2B / LFM3-1.7B / TwIL-8B. Amplified by Tom Aarsen
 
@@ -3393,7 +3393,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (52 pages)
+## Queries (54 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
@@ -3420,6 +3420,7 @@
 - [[queries/2026-11-01-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-01): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-11-03-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-03): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-11-04-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-04): 0 status:skeleton pages; backlog empty, no enrichment performed
+- [[queries/2026-11-05-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-05): 0 status:skeleton pages; backlog empty continuing 10-17 streak, no enrichment performed
 - [[queries/2026-11-06-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-06): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-11-08-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-08): 0 status:skeleton pages; backlog empty since 10-17 streak, no enrichment performed; flags separate ~439-page status:stub concept backlog for triage
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
