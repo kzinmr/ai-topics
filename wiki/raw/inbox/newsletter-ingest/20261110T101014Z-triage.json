@@ -1,0 +1,82 @@
+{
+  "run_id": "20261110T101014Z",
+  "triaged_at": "2026-11-10T10:15:00+00:00",
+  "status": "complete",
+  "summary": "5 newsletters processed. 3 classified for wiki ingestion (2 high, 1 high), 2 classified low/no-action.",
+  "classifications": [
+    {
+      "message_id": "<20261109133134.3.7335a928acf2a984@mg-d0.substack.com>",
+      "subject": "Import AI 480: Self-sustaining space economies; AI for science progress, and Meta builds perfect hands for a super…",
+      "date": "2026-11-09",
+      "importance": "high",
+      "relevance": "Import AI is a core AI newsletter. Topics: AI for science progress (LLM4Science), Meta robotics hands (embodied AI / robotics), self-sustaining space economies (tangential). AI-for-science and Meta robotics align with wiki scope.",
+      "recommended_wiki_updates": [
+        "Check if 'AI for science' progress warrants a concept page update or new entry",
+        "Meta robotics hands — potential entity page for Meta AI robotics division",
+        "Update any existing Import AI tracking pages"
+      ],
+      "action": "ingest",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-09-import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-b.md"
+    },
+    {
+      "message_id": "<20261109160120.3.a9bc2c352c7ab944@mg-d0.substack.com>",
+      "subject": "🎙️ How I AI: How this founder built a better Duolingo with Codex",
+      "date": "2026-11-09",
+      "importance": "high",
+      "relevance": "Directly relevant: Codex (OpenAI coding agent) used to build a Duolingo-like product. This is a case study of coding agent usage for product development. Fits wiki entities: codex.md, openai-codex.md, coding-agents.",
+      "recommended_wiki_updates": [
+        "Update entities/codex.md or entities/openai-codex.md with real-world usage example",
+        "Consider case study note in concepts/coding-agents if exists",
+        "Lenny's Newsletter 'How I AI' series is a recurring valuable source"
+      ],
+      "action": "ingest",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-09-how-i-ai-how-this-founder-built-a-better-duolingo-with-codex.md"
+    },
+    {
+      "message_id": "<20261109.191845.49dfcbee@mta23>",
+      "subject": "🕵️ Huang's Affair Triggers Nvidia Spy Probe",
+      "date": "2026-11-09",
+      "importance": "low",
+      "relevance": "AI industry gossip / corporate politics. Not relevant to LLM/AI Agent technology wiki scope.",
+      "recommended_wiki_updates": [],
+      "action": "skip",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-09-huang-s-affair-triggers-nvidia-spy-probe.md"
+    },
+    {
+      "message_id": "<20261110003354.3.270144591e4f6918@mg-d1.substack.com>",
+      "subject": "Spotify's Claude Code Token Trick, Tested: The Real Savings",
+      "date": "2026-11-10",
+      "importance": "high",
+      "relevance": "Directly relevant: Claude Code token optimization technique used at Spotify. Practical insight into coding agent cost management and prompt engineering for production use. Fits wiki entities: claude-code.md, concepts/prompt-engineering.",
+      "recommended_wiki_updates": [
+        "Update entities/claude-code.md with Spotify token optimization case study",
+        "Potentially update concepts/prompt-engineering or token-management",
+        "AI by Aakash is a useful recurring source for practical AI tooling"
+      ],
+      "action": "ingest",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-spotify-s-claude-code-token-trick-tested-the-real-savings.md"
+    },
+    {
+      "message_id": "<20261110074152.3.bf6a3caeea083f8e@mg2.substack.com>",
+      "subject": "Locating the source of a mysterious beep with Claude",
+      "date": "2026-11-10",
+      "importance": "high",
+      "relevance": "Simon Willison (tracked entity) writing about using Claude for debugging/troubleshooting. Demonstrates practical agentic Claude usage for hardware/software debugging — relevant to AI agent workflows and tool-use patterns.",
+      "recommended_wiki_updates": [
+        "Update entities/simon-willison.md with new blog post reference",
+        "Potential note on agentic debugging use cases in concepts/ai-agents or claude entity",
+        "Simon Willison blog is a high-value recurring source"
+      ],
+      "action": "ingest",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-locating-the-source-of-a-mysterious-beep-with-claude.md"
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "critical": 0,
+    "high": 4,
+    "low": 1,
+    "ingest": 4,
+    "skip": 1
+  }
+}
