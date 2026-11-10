@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-11-10] skeleton-enrich-daily | no action — backlog empty (streak since 2026-10-17)
+
+- Whole-tree scan: 0 `status: skeleton` markers in `wiki/entities/` and `wiki/concepts/`.
+- Cross-checked recently touched/newly created pages (11-09/10) — all carry real content, no skeleton markers; thin files are redirect/alias stubs (correctly excluded).
+- No git-history restores required.
+- Separate `status: stub` concept backlog (439 pages) remains out of scope.
+- Snapshot: [[queries/2026-11-10-skeleton-enrich-empty]]. Index: Queries 55→56, Total 3430→3431.
+
+
 ## [2026-11-10] watchdog | auto-fix — index orphan registration + corruption verification
 
 ### Fixed

@@ -2,7 +2,7 @@
 title: OpenAI Codex
 type: entity
 created: 2026-05-12
-updated: 2026-08-05
+updated: 2026-11-10
 tags:
   - product
   - coding-agent
@@ -26,6 +26,7 @@ sources:
   - raw/articles/2026-01-14_openai-codex-prompting-guide.md
   - raw/articles/openai.com--academy-codex-for-work-how-data-science-teams-use-codex--afc8cde3.md
   - raw/articles/2026-05-20_jxnlco_getting-the-most-out-of-codex.md
+  - raw/articles/lennysnewsletter.com--2026-nov-9-how-i-ai-how-this-founder-built-a--f51c108a.md
   - https://github.com/openai/codex
   - https://www.businesstoday.in/technology/story/openai-codex-celebrates-3-million-weekly-users-ceo-sam-altman-resets-usage-limits-524717-2026-04-08
   - https://www.wsj.com/cio-journal/openai-is-working-with-consultants-to-sell-codex-f355b1b9
@@ -567,6 +568,22 @@ Nick Baumann (OpenAI) demonstrated an expert workflow on Lenny's "How I AI" podc
 - **ChatGPT Sites as deployment platform**: closer to a real deployment platform than a lightweight demo — includes a SQL database, file storage, environment variables, and email-based access controls
 
 Source: Lenny's Newsletter "How I AI" with Nick Baumann (OpenAI), Aug 2026.
+
+## Non-Technical Founder Building Native Apps (November 2026)
+
+William Imoh (founder of Hackmamba; creator of **Mural**, an AI Norwegian tutor he built after a 1,000-day Duolingo streak still left him unable to hold a conversation) on Lenny's "How I AI" (Nov 9, 2026) — a clean case of Codex decoupling product ambition from the founder's programming background:
+
+- **Language choice followed the product, not the founder's skills.** He had never written Swift; he wanted Mural to feel genuinely native, so Codex implemented **Swift for iOS and Kotlin for Android**. His stated lesson: "When agents write the code, the programming languages you know matter far less."
+- **PM experience converts directly into prompt quality.** He structures requests as **epics and user stories tied to specific user problems**, which gives the agent clearer goals and consistently stronger results.
+- **Taste = design judgment stated plainly.** He asked for a minimal, Apple-quality app that "felt like autumn"; the first pass came back dark-mode, and he redirected it toward warm colors, gradients and a lighter visual style.
+- **Skills libraries mostly evaporated as models improved.** Most of his custom skills became unnecessary; the survivors encode durable domain expertise — **growth strategy, content strategy, and removing AI-style writing**.
+- **Anti-stall pattern**: when an agent stalls, start a fresh session, break the task into steps, and add a reviewer role that inspects the work (he uses a separate Grok Bot to review the coding agent's output). See [[concepts/agentic-engineering/first-run-the-tests]].
+- **Persona-scoped agent teams.** His operating agents are a Lord-of-the-Rings-themed team with explicit job descriptions — Gandalf as chief of staff, Legolas in marketing, Elrond in engineering, Aragorn in sales — which makes delegation boundaries legible.
+- **Context from access, not longer prompts.** Agents are connected to Google Workspace, Linear, Notion, Pipedrive, QuickBooks, calendar and browser tools with broad ("Wide") access by default, while banking and customer data stay protected.
+- **Custom systems of record.** He built **Three Pipes**, an internal HR tool fusing email, calendar and meeting notes to track and rank candidates — building the database the company actually needs instead of adapting the workflow to generic SaaS.
+- **Real-time voice is finally buildable but still expensive.** Mural would not exist without [[concepts/gpt-live|GPT-Live-1]]; a **30-minute session costs roughly $3–5** — expensive as software, still cheaper than an on-demand human tutor.
+
+Source: Lenny's Newsletter "How I AI: How this founder built a better Duolingo with Codex | William Imoh", Nov 9, 2026. Raw: `raw/articles/lennysnewsletter.com--2026-nov-9-how-i-ai-how-this-founder-built-a--f51c108a.md`. Workflow write-ups: chatprd.ai How I AI / "Build a Native Mobile App with AI and Clear Product Direction".
 
 ## Known Issues
 

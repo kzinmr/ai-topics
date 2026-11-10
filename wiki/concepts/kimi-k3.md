@@ -1,7 +1,7 @@
 ---
 title: "Moonshot Kimi K3"
 created: 2026-07-17
-updated: 2026-11-06
+updated: 2026-11-10
 type: concept
 tags:
   - model
@@ -583,6 +583,10 @@ Moonshot released the **Kimi K3.1 Pro model weights** on Hugging Face (https://h
 Community reactions: (1) serveability gripes — realistically needs an 8x B300 node; SSD-streaming estimates ~192 GB RAM for the dense portion at native precision; AMD developer cloud ships a single-MI300x image with system-RAM offload. (2) **License**: the HF LICENSE requires payment from model-as-a-service providers beyond stated revenue thresholds; pure internal use is free. (3) **"Benchmaxxed" suspicion**: Tencent's Hy4 launch (Nov 4) published an internal 579-task financial blind eval scoring K3.1 Pro 2.68 vs Hy4 3.04 — commenters noted K3.1 scores notably lower on Hy's internal benchmarks than Opus 5.5 does, read as evidence of benchmark-tuning; treat both vendors' tables skeptically. (4) DeepSeek V4.1-Flash seen as roughly matching K3.1 at much lower cost.
 
 Source: https://huggingface.co/moonshotai/Kimi-K3.1-Pro ; HN discussion mined 2026-11-06.
+
+### Artificial Analysis positioning (Nov 9, 2026)
+
+Third-party reporting (AI by Aakash) records **Kimi K3.1 Pro as the best open-weights model on the Artificial Analysis Intelligence Index**, scoring **within 3 points of Claude Opus 5.5 at launch and at half the price**. Read against the same week's [[concepts/semianalysis-gdpx|GDPx]] result (best model 12% on real professional tasks), the open-weights frontier is closing the index gap while professional-work performance remains low across the board. Source: https://www.aibyaakash.com/p/spotifys-90-trick
 
 ## Related Pages
 

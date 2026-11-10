@@ -2,7 +2,7 @@
 title: Meta
 type: entity
 created: 2026-04-09
-updated: 2026-10-17
+updated: 2026-11-10
 tags:
   - company
   - model
@@ -216,6 +216,10 @@ This development represents a significant reversal from Meta's historical positi
 - **[[entities/alexandr-wang|Alexandr Wang]]** — Superintelligence Labs head
 - **Andrew Bosworth** — CTO, Reality Labs/AR/VR
 - **Yann LeCun** — Chief AI Scientist, open-source advocate (increasingly sidelined per community reports)
+
+## Tactus haptic data-collection glove (November 2026)
+
+Meta **Reality Labs Research** published **Tactus** (Tactile & Pose Sensing Glove for Natural Dexterity Data Collection) — a textile-integrated glove for capturing manipulation data: 1.5 mm fingertip stackup 3D-knit form factor, capacitive tactile sensors placed at manipulation-relevant regions from empirical contact studies, calibrated fingertip force sensing, and IMU-fused pose tracking that survives hand–object occlusion. Reported by Jack Clark in Import AI 480. Details: [[concepts/meta-tactus-glove]].
 
 ## Related
 

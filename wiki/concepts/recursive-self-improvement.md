@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-11-06
+updated: 2026-11-10
 type: concept
 tags:
   - concept
@@ -438,6 +438,10 @@ Both are Level-1/2 instances (human-designed improvement loops, agent-chosen tac
 ## Industry Evidence: METR Independent Assessment of Anthropic R&D Acceleration (Nov 5, 2026)
 
 METR published an independent assessment (with Anthropic-held redaction rights): as of October 2026, Anthropic is **likely improving model capabilities on well-specified tasks at ~2x the rate** of the March 2024–October 2025 baseline (wide uncertainty; 1.3–3x plausible), with **a majority of the acceleration likely attributable to Anthropic's extensive internal use of AI for R&D**. Notable transparency finding: Anthropic redacted "a majority of the evidence we found most informative"; METR states the public "has to rely on METR's judgment much more than would be ideal." METR also flags the late-2025 acceleration inflection as possibly non-AI-driven, echoing jackschultz's reading that Opus 4.5 broke METR's own measurement instruments. HN: https://news.ycombinator.com/item?id=50383902 (36 pts; "the most damning RSI report... barely a whisper"). Source: https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/
+
+### Second-source corroboration (AI by Aakash, Nov 9, 2026)
+
+Aakash Gupta's weekly round-up independently surfaced the METR assessment with the sharper framing that Claude "is now in the early phase of **recursive self-improvement (RSI)**, and is improving the rate of Claude's development about 2x" — i.e. the second-source description characterizes the finding as an *early RSI phase* rather than merely an R&D-productivity acceleration. That is a stronger claim than METR's own published wording (capability-improvement rate ~2x baseline, majority attribution to internal AI use), so the RSI-phase characterization should be attributed to commentary, not to METR. Same issue also reported **SemiAnalysis GDPx** (best model 12%, see [[concepts/semianalysis-gdpx]]) alongside [[concepts/kimi-k3|Kimi K3.1 Pro]] reaching the top open-weights position on the Artificial Analysis Intelligence Index within 3 points of Opus 5.5 at half the price. Source: https://www.aibyaakash.com/p/spotifys-90-trick
 
 ## Sources
 
