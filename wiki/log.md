@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-11-10] ingest | blog-ingest (cron): 20 new raw articles (Muse Ember, Fable 5.2, Irontown, Ninety, Android lockdown)
+
+- Scanned 18 blogs via blogwatcher RSS; 42 new DB articles, 20 fetched + saved to `wiki/raw/articles/` (per-run fetch cap).
+- Highlights: **simonwillison.net x5** (Muse Ember = Meta's smallest agent model at $0.10/$0.50 per M tokens, Claude Haiku 5.5 / GPT-6 Luna competitor; Prompting Claude Fable 5.2 at 80x Haiku pricing; Yonkers Rises tool; llm-anthropic 0.31; mysterious-beeps Claude debugging), **lucumr.pocoo.org** "AI and Irontown", **nesbitt.io** "Introducing Ninety", **dynomight.net** "Optimal virulence and the Android lockdown", **lcamtuf.substack.com** "Ontology #2: wish you were here", **shkspr.mobi** "Blunt Banhammer Blocks Basic Bots Ballistically", **garymarcus.substack.com** "Jensen is cooked", **troyhunt.com** Weekly Update 529, **johndcook.com** x4 (combinatorial designs / Steiner systems / finite hyperbolic+affine planes), **dfarq** Silicon Graphics anniversary + Radio Shack index, **oldvcr** CRT changeover, WorkOS Airlock sponsor.
+- Checkpoint: `cron/data/blog_ingest/latest.json` (run_id 20261110T100032Z). Commit `a30829a8` (29 files: 20 blog-ingest + 9 sibling raw backlog from earlier pipelines). `unsaved_articles` empty; `blogs_scanned=0` is the known cosmetic stdout-parse bug — DB count (42) matches `total_new`, no re-scan needed.
+
 ## [2026-11-09] ingest | x-accounts-scan: Unsloth Qwen3.8-Flash-Next GGUF + Elvis Sun AI consultancy call
 
 - Scanned 10 accounts (cursor 69→80, budget 11). 2 new posts (1 reply chain + 1 standalone lead-funnel tweet).
