@@ -29,15 +29,7 @@ Uses `scripts/wiki_graph.py` output to detect wiki data quality issues. **Weekly
 
 **Symptom**: Lines like `|- [[entities/foo]]` instead of `- [[entities/foo]]` in `index.md`
 **Root cause**: `read_file` output with `N|` line numbers accidentally pasted into files via `patch` operations
-**Detection**: Use Python for accurate detection — `grep` BRE mode parses `\|` as the alternation operator (OR), not a literal pipe, returning the total line count as a false positive:
-
-```python
-import re
-with open("wiki/index.md") as f: content = f.read()
-print(len(re.findall(r'^\s*\d+\|', content, re.MULTILINE)))
-```
-
-Alternatively, use `grep -Pc '^\s*\d+\|'` (Perl regex where `\|` IS a literal pipe) or `grep -E -c '^\s*[0-9]+\|'` (ERE where `\|` = literal pipe).
+**Detection**: Use Python (`re.findall(r'^\s*\d+\|', content, re.MULTILINE)`) or `grep -Pc '^\s*\d+\|'` — NEVER BRE `grep -c '\|...'` (parses `\|` as alternation → false positive = total line count)..
 **Fix**:
 ```python
 import re
@@ -53,9 +45,7 @@ fixed = re.sub(r'^\|-\s+\[\[(?:entities|concepts|comparisons|queries)/',
 
 ### Index Header Count Decay
 
-**WARNING**: The "Total pages: N" and section counts in `index.md` header become stale quickly at scale (1000+ pages). Discrepancies of 600+ observed.
-**Always verify with filesystem**: use recursive `find` — flat `ls` misses subdirectory files (see `references/watchdog-stale-entries-false-positive.md`). Do NOT trust header numbers.
-**Auto-correct during lint**: Re-compute counts from actual directory listing and update header.
+**WARNING**: Header page counts in `index.md` go stale fast (600+ discrepancies observed). **Auto-correct from index LINES** (`^\|?- [[ns/` per namespace), NOT filesystem files — nested subdir pages are individually indexed, redirect-stub dups legit. Recipe + orphan set-difference: `references/watchdog-session-2026-11-09.md` (typo-fix batches miss the report's own quoted examples). Flat `ls` misses subdirs. 4-way count divergence (digest/header/index/filesystem) — reconcile headers from index-line counts only: `references/digest-vs-index-reconciliation-2026-11-09.md`. ⚠️ SKILL.md ≈100K limit; net-growing patches fail — use references/ or net-shrink edits.
 
 ### Broken Wikilink Subdirectory vs Flat Path Issue
 
@@ -107,7 +97,7 @@ Two distinct sub-patterns:
 **Pattern B: Empty/zero-length wikilinks (`- — description` without `[[slug]]`)**
 - **Pattern**: `## Related` lines with the `[[slug]]` anchor lost. Two byte formats: single-space `- — ` (~9) and DOUBLE-space `-  — ` (~352, dominant).
 - **Detection**: `grep -rn '^-  — \|^- — ' entities/ concepts/ | wc -l` (exclude `_archive/`)
-- **Auto-fix**: `scripts/fix_broken_wikilinks.py` — NOT fuzzy matching (hardcoded KNOWN_MAPPINGS only). Traps (2026-08-05): 73% of proposals → non-existent files (stale map); `replace('- — ')` misses double-space form (phantom fixes); no flags = APPLIES; needs venv python (PyYAML). **Safe path**: `scripts/fix_empty_wikilinks_safe.py` — regex, target verification, OVERRIDES map, bare→`entities/` prefix, dry-run default; verify via git-diff added links. ⚠️ **Actual script locations (verified 2026-08-13)**: BOTH fixer scripts live at `~/ai-topics/config/hermes/skills/_overrides/wiki-graph-health/scripts/` — NOT `~/ai-topics/scripts/`, NOT the home skill dir (its scripts/ is empty). Run with `/opt/data/.hermes/venv/bin/python` (PyYAML). Residual is stable at 279 (0 fixable, 2026-08-13). Details: `references/empty-wikilink-fix-2026-08-05.md`, `references/watchdog-session-2026-08-13.md`.
+- **Auto-fix**: `scripts/fix_broken_wikilinks.py` — NOT fuzzy matching (hardcoded KNOWN_MAPPINGS only). Traps (2026-08-05): 73% of proposals → non-existent files (stale map); `replace('- — ')` misses double-space form (phantom fixes); no flags = APPLIES; needs venv python (PyYAML). **Safe path**: `scripts/fix_empty_wikilinks_safe.py` — regex, target verification, OVERRIDES map, bare→`entities/` prefix, dry-run default; verify via git-diff added links. ⚠️ **Actual script locations (verified 2026-08-13)**: BOTH fixer scripts live at `~/ai-topics/config/hermes/skills/_overrides/wiki-graph-health/scripts/` — NOT `~/ai-topics/scripts/`, NOT the home skill dir. Run with `/opt/data/.hermes/venv/bin/python` (PyYAML). Details: `references/empty-wikilink-fix-2026-08-05.md`, `references/watchdog-session-2026-08-13.md`.
 - **Manual fix**: no reliable mapping → leave, report residual (279 remained; multi-line artifacts).
 
 **Sub-pattern C: Prefix-style wikilinks (false positives — valid Obsidian syntax)**
@@ -211,7 +201,7 @@ See `watchdog-session-2026-09-12.md` (jobs.json failure source; report-only fail
 
 The 0.28s optimization (2026-05-13) traded content-validation breadth for speed. The watchdog MUST run its own independent checks for these gaps using `os.walk()` and frontmatter scanning (see `references/watchdog-healthy-baseline.md` §7 for the full verification checklist). Never trust a `0` count from `wiki_health.py --json` as authoritative for anything beyond index corruption.
 
-- `references/watchdog-healthy-baseline.md` defines the full verification checklist, metric thresholds, auto-fix scope limits, and decision flow for every watchdog run. See `watchdog-session-2026-08-25.md`, `-09-04.md`, `watchdog-session-2026-09-08.md`.
+- `references/watchdog-healthy-baseline.md` defines the full verification checklist, metric thresholds, auto-fix scope limits, and decision flow for every watchdog run. See `watchdog-session-2026-08-25.md`, `-09-04.md`.
 
 ### Unified Wiki-Health Pipeline (Deployed 2026-05-13)
 
@@ -235,15 +225,11 @@ wiki-health-fix (17:50)
 - `wiki-health` (07d1ccf7541a) — paused
 - `wiki-health-plan` (ac70e197fc75) — paused
 
-**Pitfall — script path resolution**: The cron job config for `wiki-health-fix` references the script at `/opt/data/.hermes/scripts/wiki_health_json.py`, but the actual location is `~/ai-topics/scripts/wiki_health_json.py` (resolves to `/opt/data/ai-topics/scripts/wiki_health_json.py`). If the job fails with `Script not found`:
+**Pitfall — script path resolution**: The cron job config for `wiki-health-fix` may reference `wiki_health_json.py` at a path that doesn't exist (historically `/opt/data/.hermes/scripts/`). Canonical location: `~/ai-topics/scripts/wiki_health_json.py`. If the job fails with `Script not found`:
 
 **Tier 1 — Permanent fix** (preferred): Update the cron job definition to use the canonical path: `~/ai-topics/scripts/wiki_health_json.py`. Use `hermes cron edit <job-id>` or `hermes cron config set <job-id> script ~/ai-topics/scripts/wiki_health_json.py`.
 
-**Tier 2 — Temp workaround** (when cron config can't be immediately modified): Copy the script to where the cron expects it:
-```bash
-cp ~/ai-topics/scripts/wiki_health_json.py /opt/data/.hermes/scripts/wiki_health_json.py
-```
-**⚠️ Document the workaround** in log.md with a note that the cron definition still points to the wrong path. The copy will diverge from source if the canonical script is updated. Follow up with Tier 1 fix.
+**Tier 2 — Temp workaround** (when cron config can't be immediately modified): Copy the script to where the cron expects it. **⚠️ Document the workaround** in log.md with a note that the cron definition still points to the wrong path. The copy will diverge from source if the canonical script is updated. Follow up with Tier 1 fix.
 
 **`wiki_health.py` optimization (0.28s vs minutes)**:
 - **Single-pass read**: `load_l2_pages()` now reads each file ONCE and retains both frontmatter AND full content. Previously `section_unprocessed_raw()` re-read all ~1,800 files to build a blob string.
@@ -1093,17 +1079,17 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 5. Commit: `git add wiki/ && git commit -m "wiki: fix auto-fixable wikilinks (N links)"`
 6. Push: `git push`
 
-## Support Files — full-wiki frontmatter YAML scan (wiki_health.py returns {} on YAML failure → blind spot). Patterns + scoping rule: `references/yaml-frontmatter-corruption-2026-08-15.md`
+## Support Files — full-wiki frontmatter YAML scan (wiki_health.py returns {} on YAML failure → blind spot). Patterns + scoping rule: `references/yaml-frontmatter-corruption-2026-08-15.md`. `llm-wiki` name-collision shadowing (benign): `references/llm-wiki-skill-name-collision-2026-11-10.md`
 - `scripts/add_updated_dates.py` — Batch-add `updated` date to pages lacking it. Skips _index.md and raw/articles. `python3 scripts/add_updated_dates.py [--date YYYY-MM-DD]`.
 - `references/cron-mode-pitfalls.md` — Cron-mode `execute_code` blocks, `_index.md` counting in health reports, `str.replace()` anchor swallowing
-- `references/watchdog-healthy-baseline.md` — watchdog baseline: thresholds, verify cmds, auto-fix scope, escalation report format, decision flow. See `watchdog-session-2026-08-25.md`, `-09-04/07.md`.
-- `scripts/fix_broken_wikilinks.py` — Raw empty-wikilink fixer (KNOWN_MAPPINGS only, NOT fuzzy; verify targets, see Pattern B). Safe: `scripts/fix_empty_wikilinks_safe.py`
+- `references/watchdog-healthy-baseline.md` — watchdog baseline: decision flow. See `watchdog-session-2026-08-25.md`, `-09-04/07.md`.
+- `scripts/fix_broken_wikilinks.py` — Raw empty-wikilink fixer (KNOWN_MAPPINGS only, NOT fuzzy; verify targets, see Pattern B). Safe: `fix_empty_wikilinks_safe.py` (same dir, see Pattern B for location)
 - `scripts/tag_normalization.py` — tag normalization (synonym mapping, body-safe)
 - `scripts/tag_normalization_diff_scan.py` — classify dry-run: violations vs preference rewrites (ref 2026-08-10)
 - `scripts/tag_audit.py` — Tag analysis and auditing (canonical: `~/ai-topics/scripts/tag_audit.py`)
-- `scripts/validate_index.py` — Pre-commit validator for baked-in numbers, pipe prefixes, truncation artifacts in wiki/index.md. Run with `python3 scripts/validate_index.py`; exit 0 = clean, 1 = issues found. Called by `.githooks/pre-commit`. See Section H for recovery procedure.
+- `scripts/validate_index.py` — Pre-commit validator for baked-in numbers, pipe prefixes, truncation artifacts in wiki/index.md. Run `python3 scripts/validate_index.py`; exit 0 = clean. Called by `.githooks/pre-commit`. See Section H.
 - `references/wiki-health-script-optimization.md` wiki_health.py perf (0.28s) · `references/json-output-processing.md` · `references/raw-article-coverage-audit.md` · `references/bare-wikilink-batch-fix.md` scan→map→regex · `references/broken-wikilink-repair.md` · `references/index-corruption-recovery.md` · `references/index-corruption-variants.md` · `references/wiki-file-move.md` · `references/wiki-health-remediation.md` · `references/wiki-bulk-link-fix.md` · `references/wiki-wikilink-remediation.md` · `references/wiki-works-source-linking.md` · `references/wiki-entity-disambiguation.md` · `references/wiki-page-splitting.md` · `references/wiki-entity-dedup.md` · `references/watchdog-session-2026-10-22.md` — verified FIXMAP renames, WIP-snapshot `status: archived`, · `references/watchdog-session-2026-10-24.md` — no-frontmatter hot-post pages; run no-FM scan + recount when cleancode-block-stripped link scanner
-- `references/log-prepend-header-burial-and-cron-tool-blocks-2026-11-02.md` — **READ BEFORE ANY log.md PREPEND** (buried `# Wiki Log` = recurring bug) + cron tool-block workarounds + deferred-merge recipe. See `references/duplicate-log-entry-recovery.md`.
+- `references/log-prepend-header-burial-and-cron-tool-blocks-2026-11-02.md` — **READ BEFORE ANY log.md PREPEND** (buried `# Wiki Log` = recurring bug) + cron tool-block workarounds + deferred-merge recipe. See `references/duplicate-log-entry-recovery.md`, `references/log-prepend-and-header-fix-recipe-2026-11-06.md` (verified two-pass dedup+MOVE; assert `startswith('# Wiki Log')`, count==1 alone hides burial). `wiki_health.py --json` needs terminal timeout=300.
 - `references/entity-concept-cross-reference.md` — Entity/concept duplicate resolution: redirect stubs, cross-link comparable pairs (2026-05-08 session)
 - `references/wiki-bare-wikilink-fix.md` — Bare wikilink → namespace-prefixed batch fix with full session data
 - `references/tag-normalization.md` — Tag normalization procedure, analysis scripts, and critical pitfalls
@@ -1114,6 +1100,7 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 - `references/tag-audit-session-2026-08-03.md` — dry-run ≠ audit violations; skip normalization when audit clean- `references/tag-audit-session-2026-08-10.md` — dry-run scope ≫ violations; patch manually, never wholesale-normalize
 - `references/tag-audit-session-2026-08-17.md` — stale-chain fix (mapping VALUE non-SCHEMA); bump `updated:` on tag-only patches
 - `references/watchdog-session-2026-09-28.md` — orphan `??` in git ⇒ upstream skipped commit; `training-data`→`datasets`
+- `references/watchdog-session-2026-11-06.md` — cron bulk literal-replace (write_file→python3), 503 cascade triage
 - `.githooks/pre-commit` — Git hook running `validate_index.py` + tag validator on staged wiki files (`git config core.hooksPath .githooks`). See Section J.
 ---
 

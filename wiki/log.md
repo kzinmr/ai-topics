@@ -1,3 +1,29 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-11-10] watchdog | auto-fix — log.md header burial repair + pipeline triage
+
+### Fixed
+- `wiki/log.md`: `# Wiki Log` header buried at line 8 (trending-topics prepend landed above it). Repaired via `scripts/fix_log_header_burial.py` — header restored to line 1, 194 entries preserved, 0 pipe corruption.
+
+### Verified clean (no action needed)
+- index.md: 0 pipe-prefix / 0 double-pipe / 0 triple-bracket / 0 line-number / 0 space-prefix corruption; validate_index.py exit 0.
+- Index header counts match index-line counts exactly: Entities 967, Concepts 2327, Comparisons 35, Events 51, Queries 54.
+- 0 filesystem pages missing from index (entities+concepts, top-level); 0 ghost entries (recursive scan w/ _index dir-link handling).
+- log.md: 1 `# Wiki Log` header post-fix, 0 orphan `###` timestamp lines.
+- Frontmatter: 0 pages without frontmatter, 0 pages missing `sources:` field.
+- swe-bench stray-backslash links: 0 in content pages (fixed upstream 2026-11-09; only report/annotation examples remain).
+- Weekly graph report pending items all closed: WIP-snapshot query indexed (line 3407), qwen + agent-harnesses cross-links present.
+
+### Pipeline alerts (report-only, no watchdog action)
+- `blog` chain break + `newsletter` chain break (12:00 UTC watchdog): root cause = HTTP 503 "Local LLM server is busy" storm at 10:20-11:11 UTC hitting blog-triage, blog-wiki-ingest, active-crawl; newsletter-wiki-ingest marked error on llm-wiki skill notice despite producing its report. Transient — next scheduled runs (10:00-10:50 UTC) should self-heal.
+- `JOB wiki_health: disabled` — expected (unified into wiki-health-fix 17:50 UTC per 2026-05-13 consolidation).
+- `JOB active_crawl: error` — same 503 storm; next run 11:00 UTC.
+- `llm-wiki` skill not-found notice: known name collision (upstream `~/.hermes/skills/research/llm-wiki` shadowed by `_overrides/llm-wiki`). Override content loads. Documented in `wiki-graph-health/references/llm-wiki-skill-name-collision-2026-11-10.md`.
+
+---
+
 ## [2026-11-10] trending-topics (cron) — Fable/Mythos 5.2 launch, CoreWeave 16% bonds, TPU 8tx/8i Max, dekilling synthesis
 - New: concepts/ai-engineering-dekilling.md (100%-AI-mandate retrospective + brain-fry + Goldman restriction synthesis, HN 129/306/891pts)
 - New: concepts/gpu-pricing-spread.md (datareceipts 4.57x H100 spread, HN 170pts)
@@ -5,7 +31,8 @@
 - Raw: 3 files (anthropic fable-mythos-5-2, strands-decider-amazon, datareceipts-gpu-pricing) + 2 hn-discussion files (gemini-annotators, fireworks-notion-breach)
 - SCHEMA: minted strands-agents (Products), ai-security (Engineering), claude-fable-5-2, claude-mythos-5-2, muse-ember (Models)
 - Report: inbox/rss-scans/trending-topics-2026-11-10.md
-# Wiki Log
+
+---
 
 ## [2026-11-10] ingest | blog-ingest (cron): 20 new raw articles (Muse Ember, Fable 5.2, Irontown, Ninety, Android lockdown)
 
@@ -42,7 +69,6 @@
 
 ---
 
-_Log of all wiki changes. Newest entries at top._
 
 
 ## [2026-11-09] dreaming wiki-ingest | 2026-11-09 Pattern E — Takes=0, 1 reference (Apple PKG), saturation
