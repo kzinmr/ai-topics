@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-11-10T18:17:50.390744+00:00",
+  "triage_run_id": "20261110T180003Z",
+  "source": "dreaming",
+  "summary_ja": "チェックポイントの collected articles は 0 (recent_raw_articles=229)。前日(11-09)triageは消費済みで、唯一のreferenceだった8rank Apple Intelligence知識グラフは concepts/apple-foundation-models.md に反映済み(log.md L95)。archive-index不在プローブで67件の未アーカイブを検出し、06:00 sitemap batchと12:15 trending batchを精査した。genuine gapは2件: Hex公式のagent原価75%削減記述($6.44→$1.64・Hero・cache miss long tail・tool set 40削減)は entities/hex-technologies.md のDataBench/Hex 4.0節に数値チェーンが無く、Fireworks AI推論ベンダー侵害によるNotion顧客会話漏えい(HN 64pts、ZDR既定と顧客側retention設定の論点)は3対象ページとも記載ゼロ。12:00 trending batch(Strands Decider/H100 spread/Gemini annotators)とsitemap marketing・非AI・podcast群はbatch skipとしてアーカイブ。Takes=0, References=2。",
+  "decisions": [
+    {
+      "item_id": "dreaming-hex-cost-per-thread",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Hex: Crashing the cost of data intelligence (75% cost/thread cut, $6.44 to $1.64)",
+      "url": "https://hex.tech/blog/crashing-the-cost-of-data-intelligence/",
+      "raw_path": "wiki/raw/articles/2026-11-10_hex-technologies_crashing-the-cost-of-data-intelligence.md",
+      "recommended_action": "reference",
+      "reason_ja": "**** Hex公式ブログのHarness原価最適化記事件数。token消費100倍成長下でスレッドあたり原価を1月高値$6.44から$1.64へ約75%削減した内訳を具体的に開示: (1) モデル切替 - Opus 4単一依存から夏以降のOpenAI/オープンウェイト競合Releaseで分岐、DataBench実測でKimi 2.7はOpusの半額以下・LunaはOpusに劣るがコスト5-10%で実務適、(2) Context Studioによる顧客側eval suite/model sweep、(3) harness hill-climbing - cache miss long tail対策(ヒット率94%だがmissが高価)、toolのprogressive disclosure、高価toolのsubagent化、tool error由来のdoom spiral削減、共通app構築patternの小skill群への蒸留、(4) 失敗モードをクラスタしてharness改善案化する背景agent Hero、(5) Hex 4.0 code-first rewriteでtool setを約40に削減し3.0 harness比で追加20-40%減を見込む。entities/hex-technologies.mdはDataBenchとHex 4.0 Oct 27節を持つが本記事の原価数値チェーン・Hero・cache miss対策は未収録(grep: crashing/cost per thread/6.44/1.64 一致0)。また本記事は$100m fundraiseを companion announcementとして掲げるが、entityページのHex 4.0節にもfundraise記述なし。併記推奨。",
+      "candidate_wiki_path": "entities/hex-technologies.md",
+      "body_excerpt": "# Crashing the cost of data intelligence\n**Source**: [https://hex.tech/blog/crashing-the-cost-of-data-intelligence/](https://hex.tech/blog/crashing-the-cost-of-data-intelligence/)\nSkip to main content\n📈\nA new era for Hex, and data\nAnnouncing Hex 4.0, and a $100m fundraise building toward the agent-n"
+    },
+    {
+      "item_id": "dreaming-hn-fireworks-notion-breach",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Fireworks AI inference-provider breach leaks Notion AI customer conversations (HN 64pts)",
+      "url": "https://news.ycombinator.com/item?id=50437106",
+      "raw_path": "wiki/raw/articles/2026-11-10_hn_fireworks-notion-security-breach-discussion.md",
+      "recommended_action": "reference",
+      "reason_ja": "**** 初出型のインシデント: SaaS(Notion)が第三者AI推論ベンダー(Fireworks AI)経由で顧客会話が漏えいしたとhelp pageで開示。HNスレッドから抽出できる分析軸が3つある: (1) 推論APIベンダー侵害がSaaS顧客の会話ログに波及する供給チェーン型露出面(new class、既存のagent安全インシデント記述では未カバー)、(2) edotの技術的指摘「Fireworksは既定でZDR(zero data retention)だがNotion側が保持を設定していたはず、でなければ漏れるデータが存在しない」= 露出面はベンダーだけでなく顧客側retention設定にもある、(3) 開示の実務的非対称性 - 影響メンバー2名のworkspaceへの告知がEnterprise plan限定の可視性で、管理者が誰が対象か特定できない(Notionの「classy move」批判)、4) 侵害範囲(顧客/model/log store)は現時点で非公開。wiki側は grep で ai-agent-safety-incidents.md / ai-supply-chain-security.md ともに Fireworks/Notion の記述ゼロ、entities/fireworks-ai.md は Oct 23 updated で本侵害の記載なし。3ページ同时对象(dual/triple-enrichment候補)。",
+      "candidate_wiki_path": "concepts/ai-agent-safety-incidents.md",
+      "body_excerpt": "# Fireworks AI security breach impacts Notion and their customers\nHN item 50437106, 64 pts / 20 comments (2026-11-10). Notion published a help-page disclosure \"Security\nincident involving a third-party AI vendor\" — the vendor being Fireworks AI, an inference provider in\nNotion's AI stack. Early, sma"
+    },
+    {
+      "item_id": "dreaming-skip-strands-decider",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Batch skip: Strands Decider (Amazon ticket labeling), H100 pricing spread, Gemini annotators HN - saved and processed by trending-topics 12:00 UTC",
+      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+      "raw_path": "wiki/raw/articles/2026-11-10_strandsagents_amazon-saves-millions-strands-decider.md",
+      "recommended_action": "skip",
+      "reason_ja": "** ★★☆☆☆ 12:15 UTC保存の3 raw + 2 hn-discussionファイルは同日 trending-topics (12:00 UTC run, log.md L44-50, commit 1d0cffa4) が処理済み。Strands Deciderはraw保存+SCHEMA mint(strands-agents)に留まりconcept page未作成だが、trending-topicsレポート(inbox/rss-scans/trending-topics-2026-11-10.md)で扱っており、同日中にdreamingが再takeするのは同jobの重複処理になる。H100 4.57x pricing spreadはconcepts/gpu-pricing-spread.mdとして新規作成済み、Gemini human annotators HNはcoverage済み。夜間サイクルでの再作成は避ける。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Amazon saves millions by replacing Sonnet 4.6 with Strands Decider\nSource: https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/\nPublished: 2026-11-10 (HN 370pts/126c, item 50436640)\nAmazon's internal ticketing team (Carr and Mehul) replaced Claude Sonnet 4.6 "
+    },
+    {
+      "item_id": "dreaming-skip-sitemap-marketing",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Batch skip: sitemap marketing/webinar posts (Pinecone x2, ElevenLabs x2, Harvey x2, Parallel x2)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "** ★★☆☆☆ 06:00 UTC sitemap-monitor群は製品マーケティング/ウェビナー recap中心でwiki価値が低い。Pinecone self-hosted-vector-searchはAug 20ウェビナー「Vector Search for Agentic AI」の起こしで既存retrieval系conceptページと重複、webinar-recap-data-to-vectors-to-contextはNov 4ウェビナーの一般論(SQL validだがpro spikeを需要に計上する失敗例はillustrative valuesと明記)。ElevenLabs elevenagents-campaign-managerはoutbound campaign製品発表、what-is-an-api-endpointはSEO向け用語解説。Harvey msa-review/review-table-syncは冒頭が「We Raised $550M at a $15.5B Valuation」バナーで埋まる製品機能post。Parallel Web Systems x2(case-study-eve, parallel-for-legal)は本文421/数百bytesで 'Scrape failed: brotli decoder' スタブ、body未取得。各entityページ(hex除外)は本日18:00時点でupdated 2026-11-10を維持しており同日処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch entry for 8 sitemap-scraped company-blog articles (Pinecone x2, ElevenLabs x2, Harvey x2, Parallel Web Systems x2) collected 2026-11-10 06:00 UTC. Product marketing, webinar recaps, and 2 brotli-failed scrape stubs with no article body."
+    },
+    {
+      "item_id": "dreaming-skip-nonai",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Batch skip: non-AI blog content (retro computing, math, personal essays, security weekly, sponsor pages)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* ★☆☆☆☆ 11-10 blog-ingest (10:01 UTC, log.md L54-57) 収集の非AI群。johndcook x4 (有限アフィン/双曲平面・Steiner系・組合せ設計)、dfarq x2 (Radio Shack index・Silicon Graphics創業45周年)、oldvcr (CRTコーナー変換Console Corners)、dynomight Android (最適毒性アナロジーのAndroidロックダウン論)、shkspr Banhammer (bot block冗談)、lucumr Irontown、nesbitt Ninety (HTMLツール)、lcamtuf Ontology#2、maskray系、troyhunt Weekly Update 529、WorkOS Airlock (Daring Fireball出稿のスポンサー広告page)、garymarcus 'Jensen is cooked' (591Bのリンク.stub、bodyなし)。AI/LLM/agent中核への寄与なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch entry for non-AI blog content scraped by blog-ingest between 2026-11-09 and 2026-11-10: retro computing, finite geometry essays, personal/tooling posts, security weekly updates, and sponsor landing pages."
+    },
+    {
+      "item_id": "dreaming-skip-podcast-founder-build",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Skip: Lenny's 'How I AI' - founder built Duolingo alternative with Codex (William Imoh)",
+      "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a",
+      "raw_path": "wiki/raw/articles/lennysnewsletter.com--2026-nov-9-how-i-ai-how-this-founder-built-a--f51c108a.md",
+      "recommended_action": "skip",
+      "reason_ja": "* ★☆☆☆☆ Lenny's Podcast NetworkのHow I AIエピソード起こし。William Imoh(Mural作者・元Duolingo 1000日streak)がCodexとGPT-LiveでSwift/Kotlin未経験のままネイティブiOS/Androidアプリを作り、25人会社をGrok BotsのLord of the Ringsチーム(Gandalf=chief of staff, Legolas=marketing, Aragorn=sales)で運営する紹介。製品紹介+体験談で、新規の検証可能な技術主張やベンチマークはなし。Codex/GPT-Live/Grokは既にwiki側で十分カバー済み(concepts/codex/*, concepts/openai/realtime-*)。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# How I AI: How this founder built a better Duolingo with Codex | William Imoh\nSource: https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a\nYour weekly listens from How I AI, part of the Lenny’s Podcast Network\nLenny Rachitsky Nov 09, 2026 253 3 Share How this founder built a better "
+    }
+  ]
+}
