@@ -2239,3 +2239,8 @@ research-grade pages from genuinely uncovered material:
 - Angle: contrarian/reflective — Opus 5.5 nerf claim (HN 50422069) and its disproof are both anecdote-grade; only harness churn is documented (244 CC releases, >75% prompt/tool-description changes).
 - Links: concepts/agent-model-drift, concepts/provable-inference, concepts/agent-trust-boundary-violations, concepts/why-harness-development-boom, concepts/ai-agent-memory-two-camps, concepts/agent-memory-interoperability, concepts/sre-deskilling, entities/pi
 - Gates: NO_SLOP_FOUND, 0 wikilink MISS, NO_TYPO
+
+## 2026-11-10 09:30 JST -- hot-post (morning)
+- Delivered: Goldman Sachs restricts Claude Code / GitHub to its ~12,000 engineers -- four-numbers analysis (July CIO praise -> October recall, 4 months).
+- Archive: inbox/trending-reports/hot-post-2026-11-10-0930.md
+- Links: concepts/agent-model-drift, ai-adoption-barbell, claude-code/claude-code-sandboxing, managed-agents, sandbox, ai-slop-productivity-paradox, entities/anthropic
