@@ -1,15 +1,16 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3426
+> Total pages: 3430
 > Last updated: 2026-11-09
 
-## Entities (966 pages)
+## Entities (967 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
 - [[entities/0xmovez-ai]] — 0xMovez AI — Pseudonymous AI educator; "Graph Engineering with Claude" 14-step course (July 2026); Substack writer on agent architecture and Claude Code workflows
 - [[entities/aakash-gupta]] — Aakash Gupta — Software engineer and researcher focused on AI safety frameworks and agent architecture
+- [[entities/ai-by-aakash]] — AI by Aakash — Aakash Gupta's weekly Substack (pub 5747120): independent replication of vendor token-cost claims (Spotify Shunt 90% re-tested) + blind-judged 8-task PM model evals with published prompts/answers (Nov 2026)
 - [[entities/ai-engineer-worlds-fair-2026]] — AI Engineer World's Fair 2026 (AIE, SF June 22–25) — flagship practitioner conference; citation hub for the "agent engineering orthodoxy" critiqued by Huntley (eval-work deficit, featureless world) and Goedecke (proxies for expertise)
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box; AI-powered enterprise content management, Box AI, AI trust layer
 - [[entities/abacaj]] — abacaj — Independent AI researcher
@@ -167,7 +168,7 @@
 - [[entities/chris-tate]] — Chris Tate; X activity Aug 2026: fx (tiny open Zig coding-agent harness), Knip (JS/TS dead-code tool), Vercel "Is Agentic" AI-agent readiness score (Aug 21)
 - [[entities/christian-catalini]] — Christian Catalini — Lightspark co-founder, MIT economist; "The Only Moat That Survives AI": measurable things get automated, open-weight ~4mo lag flat, value moves to shipping judgment (Aug 2026)
 - [[entities/claris-filemaker-agentic-coding]] — Claris FileMaker Agentic Coding Strategy
-- [[entities/claude-code]] — Claude Code; Auto Mode default for Pro/Max/Team (Aug 14) + Trajectory Labs eval (13.6% human refusal vs 89% auto-blocked; 0/720 prompt-injection attacks) (Aug 2026)
+- [[entities/claude-code]] — Claude Code; Auto Mode default for Pro/Max/Team (Aug 14) + Trajectory Labs eval (13.6% human refusal vs 89% auto-blocked; 0/720 prompt-injection attacks) (Aug 2026); enterprise token-cost case study Spotify Shunt/Honk → [[concepts/claude-code-token-cost-optimization]] (Nov 2026)
 - [[entities/claude-code--architecture]] — Claude Code — Architecture
 - [[entities/claude-code--capabilities]] — Claude Code — Capabilities & Features
 - [[entities/claude-code--history]] — Claude Code — Development History
@@ -657,7 +658,7 @@
 - [[entities/open-athena]] — Open Athena — nonprofit accelerating academia with frontier AI capabilities; Delphi open scaling suite (300× extrapolation, AdamH); David Hall's "no posttraining data commons" thesis (Nov 2026)
 - [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot; ChatGPT for Teachers expansion to 100+ K–12 orgs/30 states + 16-state National Data Privacy Agreement (Aug 26)
 - [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition
-- [[entities/openai-codex]] — OpenAI Codex; ChatGPT Work architecture deep-dive (Aug 2026) + Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24)
+- [[entities/openai-codex]] — OpenAI Codex; ChatGPT Work architecture deep-dive (Aug 2026) + Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24); non-technical founder case — William Imoh native Swift/Kotlin Mural app built with Codex, epic/user-story prompting, GPT-Live-1 $3-5 per 30-min voice session (How I AI, Nov 9 2026)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo)
 - [[entities/openai-foundation]] — OpenAI Foundation
@@ -818,7 +819,7 @@
 - [[entities/sierra]] — Sierra; "AI-Pilling Our Company" — Pinecone single-agent architecture, 75K+ sessions for 600+ people, 70% PRs through agent, context-as-bottleneck thesis, Claude Code + Codex + MCP Gateway stack (July 2026); Context Engine — customer relationships as moat (Aug 4)
 - [[entities/sigrid-jin]] — Sigrid Jin
 - [[entities/simon-last]] — Simon Last
-- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13); sqlite-utils 4.2.1 crash fix + `uv run --isolated --no-default-groups` dependency-isolation smoke test (Aug 13); Bun 1.4 Bun.WebView JSON API prototype (Aug 20: 192–256MB container for full Chrome, shot-scraper-style API); "Stop Making TUIs" highlight of Thomas Ptacek's argument (Aug 21: coding agents have driven GUI cost toward zero, the old CLI/TUI cheap-default economics no longer hold); llm 0.32.1 + llm-openrouter 0.7 release notes (Aug 21: httpx/openai<3 stopgap, OpenRouter reasoning traces); "More than just code review" (verify agent changes, don't just eyeball) + Linus Torvalds "debug session from hell" quote on an AI that won't give up (Aug 22); "Conceptual integrity and counting lines of code" — pro-lines-of-code productivity argument, cognitive capacity as the new limit, conceptual integrity as the casualty (Aug 23); Qwen3.8-Flash-Next early local testing on DGX Spark with Unsloth quants (Aug 26: 125B/6B-active MoE as early Qwen4 architecture preview); llm-tools-datasette 0.1.1 (httpx2 migration plugin fallout, Oct 18) + llm-echo 0.5 (simulated token-usage mock harness for tool calls/system prompts/reasoning tokens, Oct 18)
+- [[entities/simon-willison]] — Simon Willison; enriched with MCP Renaissance section (stateless MCP re-engagement, mcp-explorer, datasette-mcp, llm-mcp-client tools — July 31); LLM 0.32 final + llm-anthropic 0.26 (reasoning traces, server-side tools, content-addressable logs — Aug 4); datasette 1.0a38 SQLi fix + Technical Blogging interview (Aug 6); Muse Glimmer hands-on (Aug 10: LM Studio 18.16GB quantized, llm-coding-agent Datasette test, vision test); Lenny's Podcast "AI State of the Union" + Mr. Chatterbox Victorian-era public-domain LLM (Apr 2026, added Aug 12); alchemy-utils 0.1a0 SQLAlchemy-backed sqlite-utils port (Aug 12, added Aug 13); sqlite-utils 4.2.1 crash fix + `uv run --isolated --no-default-groups` dependency-isolation smoke test (Aug 13); Bun 1.4 Bun.WebView JSON API prototype (Aug 20: 192–256MB container for full Chrome, shot-scraper-style API); "Stop Making TUIs" highlight of Thomas Ptacek's argument (Aug 21: coding agents have driven GUI cost toward zero, the old CLI/TUI cheap-default economics no longer hold); llm 0.32.1 + llm-openrouter 0.7 release notes (Aug 21: httpx/openai<3 stopgap, OpenRouter reasoning traces); "More than just code review" (verify agent changes, don't just eyeball) + Linus Torvalds "debug session from hell" quote on an AI that won't give up (Aug 22); "Conceptual integrity and counting lines of code" — pro-lines-of-code productivity argument, cognitive capacity as the new limit, conceptual integrity as the casualty (Aug 23); Qwen3.8-Flash-Next early local testing on DGX Spark with Unsloth quants (Aug 26: 125B/6B-active MoE as early Qwen4 architecture preview); llm-tools-datasette 0.1.1 (httpx2 migration plugin fallout, Oct 18) + llm-echo 0.5 (simulated token-usage mock harness for tool calls/system prompts/reasoning tokens, Oct 18); Beep Locator — Claude Code Cloud (iPhone, Opus 5.5 Extra thinking) then Fable 5.2 handoff, WebSocket installModule() hot-swap, ~40cm beep triangulation, giving Claude Code ears (Nov 9 2026)
 - [[entities/simone-salis]] — Simone Salis
 - [[entities/sira]] — SIRA (Superintelligent Retrieval Agent)
 - [[entities/siyan-zhao]] — Siyan Zhao
@@ -974,17 +975,22 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2320 pages)
+## Concepts (2323 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
+- [[concepts/ai-engineering-dekilling]] — AI engineering de-skilling — the erosion of code comprehension and debugging skill from 100% AI-mandate orgs and 'brain fry': r/ClaudeCode one-year retrospective (HN 129pts), Kuhne's manual-coding regimen (HN 306pts), Goldman's engineer-only Claude Code restriction; distinct from cognitive-deskilling (knowledge work) and agent model drift (infra)
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
 - [[concepts/ai-cost-of-js-frameworks|AI Cost of JS Frameworks]] – per-framework AI coding token-cost benchmark (Nolan Lawson; Astro best, Angular worst)
 - [[concepts/chatgpt-html-preview-account-takeover]] — ChatGPT HTML Preview account takeover (Parameter Labs, Oct 2026) — share link → MathLive postMessage/innerHTML injection → YouTube oEmbed CSP bypass → JS as chatgpt.com; private-chat exfil + account actions; P1 fixed Oct 26, $5k bounty (HN 335)
+- [[concepts/claude-code-token-cost-optimization]] — Claude Code token cost optimization — Spotify Shunt plugin (blocks whole-file reads >350 lines, cheaper model reads instead, 82-94% token cut, open-sourced) + Honk Slack agent (1,000 merges/10 days); Aakash replication: wins only on read-heavy workloads, adds 19-36% cost inside Claude Code search harness; bill is 85% cache-write (Nov 2026)
 - [[concepts/frontier-model-usage-policy-enforcement-2026-10]] — Anthropic usage-policy enforcement controversies (Oct 2026) — blocks on 'anything touching training larger models' (HN 367) + video-game reverse-engineering refusals (HN 149); classifier false positives on legitimate ML/security work
 - [[concepts/hackerbooks|HackerBooks]] – HN-comment-driven book recommendation service (HackerTube spin-off, HN 1404pts, 2026-11-01)
+- [[concepts/meta-tactus-glove]] — Meta Tactus (Reality Labs) — textile haptic+pose glove for dexterity data: 1.5mm fingertip stackup 3D-knit, empirically-placed capacitive tactile sensors, calibrated fingertip force, IMU-fused pose tracking through hand-object occlusion (Import AI 480, Nov 2026)
+- [[concepts/physical-superintelligence-aaronson-ambainis]] — Physical Superintelligence (PSI) — internal research system on a non-public Anthropic model proved the Aaronson-Ambainis conjecture (open since 2008); complete proof by day 3, accepted by Lean, result improved twice on related open problems (Import AI 480, Nov 2026)
 - [[concepts/project-suncatcher]] — Project Suncatcher (Google orbital TPU moonshot) — Oct 30, 2026 'Hello World': first AI response from data-center-class TPU in orbit (Gemma 4 haiku, Svalbard downlink); thermal/radiation tests, twin satellites 2027
+- [[concepts/semianalysis-gdpx]] — SemiAnalysis GDPx — real professional tasks across 11 fields (chip design, law, finance); best model Opus 5.5 scored just 12% (Nov 2026)
 - [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
 - [[concepts/triggerdev-env-var-exposure-2026-11|Trigger.dev Env-Var Exposure]] – 2026-11-01 incident exposing customer environment variables, disputed 'Resolved' status
 - [[concepts/volta-infostealer-llm-victim-appraisal]] — VOLTA infostealer LLM victim appraisal (Cisco Talos, Oct 2026) — self-deleting stealer POSTs enriched evidence bundle to OpenRouter as 'forensic intelligence analyst'; WHAT THEY'RE WORTH ranking + 3-model refusal-failover chain (HN 248)
@@ -1618,6 +1624,7 @@
 - [[concepts/claude/model-family]] — Build with Claude — Developer Guide
 - [[concepts/claude/models]] — Claude Models
 - [[concepts/claude/mythos]] — Claude Mythos; enriched with government de-escalation: Mythos 5 released to 100+ US institutions after Commerce Secretary Lutnick letter (June 27, Semafor)
+- [[concepts/claude/mythos]] — Claude Mythos; Mythos 5.2 released Nov 9 2026 with Fable 5.2: CyScenarioBench 76.3, CVE Rediscovery 89.6, gated via Life Sciences & Cyber Verification Programs
 - [[concepts/claude/mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/claude/mythos-preview]] — Claude Mythos Preview
 - [[concepts/claude/opus-4-6]] — Claude Opus 4.6
@@ -2135,6 +2142,7 @@
 - [[concepts/gpt/milestones]] — GPT Model Milestones
 - [[concepts/gpu-bubble-ai-inference]] — GPU Bubble (AI Inference) — idle GPU cycles during autoregressive decode due to CPU-GPU communication overhead; Moondream Photon pipelined decoding achieves up to 35% higher throughput on NVIDIA B200 (June 30)
 - [[concepts/gpu-cloud-rankings]] — GPU Cloud Infrastructure Rankings (ClusterMAX)
+- [[concepts/gpu-pricing-spread]] — GPU Pricing Spread — same H100 SXM 80GB rents $2.69/hr (RunPod Community) to $12.29/hr (Azure ND): 4.57x for one chip; datareceipts normalized methodology, what the spread is not (InfiniBand, SLA, compliance)
 - [[concepts/gpu-cluster-tco-goodput]] — GPU Cluster TCO & Goodput Framework
 - [[concepts/gpu-mode]] — GPU MODE
 - [[concepts/gram-recursive-reasoning]] — GRAM (Generative Recursive Reasoning)

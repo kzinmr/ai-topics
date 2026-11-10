@@ -6,7 +6,7 @@ tags:
   - hardware
   - infrastructure
 created: 2026-06-15
-updated: 2026-10-23
+updated: 2026-11-10
 sources:
   - "https://coreweave.com"
   - "https://investors.coreweave.com"
@@ -101,6 +101,20 @@ CoreWeave's growth is driven by the massive demand for GPU compute from AI labs.
 - **Capital intensity**: Massive CapEx for GPU cluster buildout; debt-financed growth
 - **Hyperscaler competition**: AWS, GCP, Azure are investing heavily in AI-optimized infrastructure
 
+## November 2026: Bond Yield Tops 16% — AI Credit Stress Canary
+
+On 2026-11-06 CNBC reported CoreWeave bond yields topping **16%** as AI credit stress rises
+([article](https://www.cnbc.com/2026-11-06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html),
+HN 173pts [50435660](https://news.ycombinator.com/item?id=50435660)). This sharpens the October 2026 stock
+collapse on this page: the stress has moved from equity to **debt pricing**.
+
+HN context worth preserving: investors noted hyperscaler-adjacent debt is competing away the market —
+Google itself now has bonds yielding ~5.68% and low-risk issuers (Google, Amazon, Microsoft) crowd out
+riskier AI-neocloud debt; one commenter argued post-trillion-dollar-buildout Google is itself less pivotable
+than before. Matt Levine's earlier observation that Microsoft bonds traded *cheaper than Treasuries* was
+cited as precedent for corporate-credit-as-safe-haven. Continues the credit-channel thread in
+[[concepts/ai-native-demand-indicators]] (~$700B projected 2027 AI bond issuance, CoreWeave 15.76% snapshot)
+and [[concepts/ai-bubble-financial-crisis]].
 ## Related
 
 - [[entities/weights-and-biases|Weights & Biases]] — Acquired (2025)

@@ -3,7 +3,7 @@ title: Google TPU — Tensor Processing Units
 type: entity
 aliases: [tpu, google-tpu, tpu-v8, tpu-8t, tpu-8i, tpu-ironwood]
 created: 2026-04-23
-updated: 2026-04-28
+updated: 2026-11-10
 tags: [entity, hardware, google, training, inference]
 sources:
   - https://cloud.google.com/blog/products/compute/tpu-v8-tensor-processing-unit-cloud-next-2026
@@ -102,6 +102,18 @@ TPU 8t/8i are core components of Google's **AI Hypercomputer** architecture — 
 - **Gemini 3.1 Pro/Flash Image, Lyria 3, Gemma 4**: Native TPU support
 - **Workspace Intelligence**: Semantic layer over Google Workspace, powered by Gemini Embedding 2 GA
 
+## Eighth Generation Completes: TPU 8tx and TPU 8i Max (November 9, 2026)
+
+Google completed its eighth-generation TPU family with two new systems, "built for the agentic era"
+([blog](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/),
+HN 250pts [50432831](https://news.ycombinator.com/item?id=50432831)):
+
+- **TPU 8tx — confidential compute**: hardware-level confidential computing keeps data and model weights isolated *in use*; reuses the Boardfly low-latency network from real-time reasoning, **up to 2x lower latency than TPU 8t** at near-zero performance penalty. Purpose: private fine-tuning, distillation, and RL agent training without migrating sensitive data between clusters.
+- **TPU 8i Max — the memory wall**: two low-latency TPU 8i chips on one package — **2x compute, 2x SRAM, 2x HBM bandwidth** vs TPU 8i, and 2x silicon in the same rack footprint (density per ft² and per watt). Aimed at multi-agent workloads over whole codebases or hours of video where memory bandwidth stalls processors.
+
+The four-system matrix: TPU 8t (scale-up training), TPU 8i (low-latency reasoning), TPU 8tx (confidential
+computing), TPU 8i Max (massive context / compute density). Google frames per-stage purpose-built silicon
+for "the agentic lifecycle" and continues opening TPUs to all developers. See [[concepts/confidential-computing]].
 ## Related
 
 - [[entities/nvidia-dgx-spark]] — NVIDIA's competitor in local AI compute

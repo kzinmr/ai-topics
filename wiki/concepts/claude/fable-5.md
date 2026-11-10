@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-08-10
+updated: 2026-11-10
 tags:
   - model
   - claude-fable-5
@@ -550,6 +550,30 @@ Using Fable 5 for simple code completion, basic Q&A, or routine agent tasks is e
 
 *Source: [AI by Aakash](raw/newsletters/2026-07-06-fable-5-is-back-stop-wasting-it-on-tasks-sonnet-can-do.md)*
 
+## Claude Fable 5.2 (November 9, 2026)
+
+Anthropic upgraded the flagship tier on 2026-11-09: **Claude Fable 5.2 and Claude Mythos 5.2**
+(HN 660pts/840c, [discussion](https://news.ycombinator.com/item?id=50429068); a second post hit 978pts).
+Fable and Mythos remain the same underlying model — Fable ships with cyber/biology safeguards for all users;
+Mythos is gated behind the expanded Life Sciences and Cyber Verification Programs.
+
+Headline claims from the announcement (raw saved at
+`raw/articles/2026-11-10_anthropic_claude-fable-5-2-mythos-5-2.md`):
+
+- Pre-release usage: "otherwise-infeasible software migrations", three working electronic devices designed from scratch, **two open problems in black-hole physics solved**, and **Fermat's Last Theorem formalized in 30 hours**.
+- Pricing: **$8 / $40 per M input/output tokens** (down from 5.1), outputs up to 30% faster; optional fast mode (2.5x generation) at $16/$80.
+- Benchmarks (5.2 vs 5.1 vs Opus 5.5): FrontierCode 2.0 **49.1%** (vs 32.4/45.5), FrontierSWE v2 **69.9%** (vs 56.3/62.3), AutomationBench **51.4%** (vs 31.4/42.5), Terminal-Bench-Science 0.1 **74.6%** (Mythos 75.3). Cyber: CyScenarioBench 76.3 (Mythos), CVE Rediscovery 89.6 (Mythos).
+- **Artificial Analysis Intelligence Index 65 — highest recorded** ([HN 351pts](https://news.ycombinator.com/item?id=50431144)).
+- Safety: novel pre-release evaluations targeting **sandbox escapes**; cyber/bio safeguards as robust as 5.1 with fewer unnecessary blocks; **"strongest-ever protections against distillation attacks"** (see [[concepts/industrial-scale-distillation-attacks-accusation]]). System Card published (see [[concepts/claude/system-cards]]).
+- Positioning: Anthropic now recommends Opus 5.5 as the daily driver, with Fable 5.2 as **Advisor** (consulted by smaller models) or **Orchestrator** (delegating down) — a tiered agent topology.
+- Prompting note (Anthropic docs, quoted by Simon Willison 2026-11-10): explicitly telling the model "this codebase is yours" roughly **doubles** its rate of merging duplicated structure instead of repeating it (≈50% vs <10% of small coding tasks).
+
+Community reaction: the confusing version number (5.2 *above* Opus 5.5, after leaks said 5.5) plus
+changed benchmark suites fueled an **Opus-nerfing suspicion** — commentators noted the launch table's Opus 5.5
+numbers no longer match Opus 5.5's original announcement (minimaxir, HN). bhu8 linked it to METR's
+"Model 3" from the Nov 5 Anthropic R&D-acceleration report
+([[concepts/ai-rd-acceleration-doubling]]). Reception was strongly positive on vibe-coding capability:
+"Fable 5.2 one-shotted my nephew's dream game" hit 418pts ([HN 50433659](https://news.ycombinator.com/item?id=50433659)).
 ## Related
 
 - [[entities/anthropic]] — The company behind Fable 5

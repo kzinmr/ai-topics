@@ -1,3 +1,10 @@
+## [2026-11-10] trending-topics (cron) — Fable/Mythos 5.2 launch, CoreWeave 16% bonds, TPU 8tx/8i Max, dekilling synthesis
+- New: concepts/ai-engineering-dekilling.md (100%-AI-mandate retrospective + brain-fry + Goldman restriction synthesis, HN 129/306/891pts)
+- New: concepts/gpu-pricing-spread.md (datareceipts 4.57x H100 spread, HN 170pts)
+- Updated: concepts/claude/fable-5.md (Fable 5.2 section: AA 65, $8/$40, Fermat formalization, benchmark table, nerfing suspicion), concepts/claude/mythos.md (Mythos 5.2), entities/coreweave.md (bond yield 16%), entities/google-tpu.md (TPU 8tx confidential compute + TPU 8i Max)
+- Raw: 3 files (anthropic fable-mythos-5-2, strands-decider-amazon, datareceipts-gpu-pricing) + 2 hn-discussion files (gemini-annotators, fireworks-notion-breach)
+- SCHEMA: minted strands-agents (Products), ai-security (Engineering), claude-fable-5-2, claude-mythos-5-2, muse-ember (Models)
+- Report: inbox/rss-scans/trending-topics-2026-11-10.md
 # Wiki Log
 
 ## [2026-11-10] ingest | blog-ingest (cron): 20 new raw articles (Muse Ember, Fable 5.2, Irontown, Ninety, Android lockdown)

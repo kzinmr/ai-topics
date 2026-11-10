@@ -2,7 +2,7 @@
 title: Claude Mythos
 type: entity
 created: 2026-04-09
-updated: 2026-07-29
+updated: 2026-11-10
 tags:
   - model
   - agent-safety
@@ -47,6 +47,15 @@ Not publicly released. Limited preview access granted to 12 companies under [[en
 
 Anthropic's decision to withhold Mythos reflects their AI safety-first approach. Rather than releasing a potentially dangerous model, they redirected its capabilities toward beneficial use: finding vulnerabilities in critical infrastructure software.
 
+## Mythos 5.2 (November 9, 2026)
+
+Same-day release with Fable 5.2 ([announcement](https://www.anthropic.com/claude-fable-and-mythos-5-2)).
+Mythos 5.2 is the ungated-verification twin of Fable 5.2, accessed via the expanded Life Sciences and Cyber
+Verification Programs. Cyber capability sits a tier above Fable-with-safeguards: CyScenarioBench **76.3** and
+CVE Rediscovery **89.6** (vs 61.7 / 78.3 for Mythos 5.1; Fable 5.2 scores 67.6 / 81.3 *without* safeguards),
+and Terminal-Bench-Science 0.1 peaks at **75.3**. Protein de-novo binder design: 85.1 (Mythos 5.2) vs 79.1 (5.1).
+Anthropic's pre-release safety program introduced novel sandbox-escape evaluations and what it calls
+strongest-ever anti-distillation protections for this model generation.
 ## Related Commentary
 
 > "Mythos is to Opus what Opus is to Sonnet." — Theo (video analysis)
