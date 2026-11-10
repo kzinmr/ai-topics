@@ -1,5 +1,22 @@
 # Wiki Log
 
+## [2026-11-10] watchdog | auto-fix — index orphan registration + corruption verification
+
+### Fixed
+- `wiki/index.md`: registered 1 orphan query page `[[queries/2026-11-09-skeleton-enrich-empty]]` (alphabetical position after 11-08 sibling), Queries header count 54 → 55. Total index lines 3463 → 3464.
+
+### Verified clean (no action needed)
+- Digest `pipe_prefix: 6899` claim is a false positive — its regex counts every markdown table row in the digest itself. Live counts: 0 pipe-prefix, 0 line-number, 0 triple-bracket, 0 space-prefix in index.md; validate_index.py exit 0.
+- Index header counts match index-line counts exactly: Entities 967, Concepts 2327, Comparisons 35, Events 51, Queries 55.
+- Recursive unindexed-page scan (excl. `_index` hubs, nested subdir pages served by hubs): 0 remaining gaps.
+- log.md header intact at line 1, single `# Wiki Log`.
+- 0 skeleton pages; no ghost entries detected.
+
+### Notes
+- Pre-existing uncommitted working-tree changes from concurrent pipelines (kimi-k3, recursive-self-improvement, meta, openai-codex, simon-willison + new untracked pages) left untouched — owned by their respective jobs.
+
+---
+
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-10] watchdog | auto-fix — log.md header burial repair + pipeline triage

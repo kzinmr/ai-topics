@@ -3401,7 +3401,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (54 pages)
+## Queries (55 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
@@ -3431,6 +3431,7 @@
 - [[queries/2026-11-05-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-05): 0 status:skeleton pages; backlog empty continuing 10-17 streak, no enrichment performed
 - [[queries/2026-11-06-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-06): 0 status:skeleton pages; backlog empty, no enrichment performed
 - [[queries/2026-11-08-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-08): 0 status:skeleton pages; backlog empty since 10-17 streak, no enrichment performed; flags separate ~439-page status:stub concept backlog for triage
+- [[queries/2026-11-09-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-09): 0 status:skeleton pages; backlog empty since 10-17 streak, no enrichment performed
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?
