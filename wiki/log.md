@@ -2309,3 +2309,6 @@ research-grade pages from genuinely uncovered material:
 - Delivered: Goldman Sachs restricts Claude Code / GitHub to its ~12,000 engineers -- four-numbers analysis (July CIO praise -> October recall, 4 months).
 - Archive: inbox/trending-reports/hot-post-2026-11-10-0930.md
 - Links: concepts/agent-model-drift, ai-adoption-barbell, claude-code/claude-code-sandboxing, managed-agents, sandbox, ai-slop-productivity-paradox, entities/anthropic
+
+## Hot post 2026-11-11 09:30 JST (morning)
+- Published hot post: PSI Aaronson–Ambainis Lean proof vs SemiAnalysis GDPx 12% (verification-availability contrast). Source: inbox/hot-posts/2026-11-11-0930-morning.md
