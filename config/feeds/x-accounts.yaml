@@ -9,13 +9,16 @@ accounts:
   - dspy
   - reasoning-models
   notes: RLM researcher; demonstrated DSPy.RLM achieving SOTA on LongCoT with Qwen3.5-27B. Active in RLM/DSPy community.
-- handle: '@willccbb'
-  name: Will Brown
+- handle: '@willcarnes'
+  name: Will Carnes
   topics:
   - ai
   - ml-research
-  - rlhf
-  notes: RLHF/alignment researcher, active on ML Twitter
+  notes: >-
+    Replaced dead handle @willccbb (2026-11-11 x-accounts-scan: X API returns
+    "Could not find user with username: [willccbb]" — account deleted/renamed).
+    @willcarnes verified resolvable via /2/users/by/username (id 46984246), AI-adjacent
+    ML-Twitter presence; revisit classification if topics drift.
 - handle: '@natolambert'
   name: Nathan Lambert
   blog: https://www.interconnects.ai
