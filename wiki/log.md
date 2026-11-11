@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-11-11] ingest | blog-ingest (cron): 16 raw articles + 8 sibling backlog
+
+- Run 20261111T100047Z: scan total_new=60 (DB-wide), fetch cap subset 20, saved 16 raw articles to `wiki/raw/articles/`.
+- `blogs_scanned=0` with nonzero total_new = known cosmetic stdout-parse bug (checkpoint at `cron/data/blog_ingest/latest.json`).
+- AI-relevant highlights: llm-gemini 0.36 release (simonwillison.net), Ed Zitron "Jensen's Bizarre Adventure" (NVIDIA/Megaspeed GPU smuggling), Gary Marcus "Just say no to Anthropic's IPO" (also via Daring Fireball), lcamtuf "It came from the token void!", Sean Goedecke "Glue work is still harmful in the age of AI", Claude Code token cost explorer (entropicthoughts.com).
+- Swept 8 untracked sibling-backlog raw files (cohere×2, elevenlabs×2, decagon, factory, hebbia, parallel-web-systems) into same commit, per sibling-backlog policy. Commit 22e9a47c (24 files, +4246).
+- Unsaved (paywalled/non-AI): experimental-history goat sacrifices, Daring Fireball keyboard Kickstarter, Bloomberg Nvidia probe (paywall), YouTube video.
+
 ## [2026-11-10] skeleton-enrich-daily | no action — backlog empty (streak since 2026-10-17)
 
 - Whole-tree scan: 0 `status: skeleton` markers in `wiki/entities/` and `wiki/concepts/`.
