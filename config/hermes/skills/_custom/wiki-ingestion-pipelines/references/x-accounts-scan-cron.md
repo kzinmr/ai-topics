@@ -230,6 +230,35 @@ dedups and attaches link metadata; wiki ingestion is the agent's job.
   `{date}_{handle}_*` copy of the same article. Only hand-authored raw files
   (e.g. transcript/metadata fallbacks) follow the manual convention.
 
+## yt-dlp 429 on subtitles -> try youtube-transcript-api helper FIRST (verified 2026-11-11)
+
+- When yt-dlp `--write-auto-sub` fails with repeated `HTTP Error 429` (3+ attempts, waits
+  included), STOP retrying yt-dlp and use the `youtube-content` skill helper instead:
+  `python3 config/hermes/skills/_overrides/youtube-content/scripts/fetch_transcript.py "<url>" --text-only > /tmp/yt_out.md`
+  (youtube-transcript-api path — worked same-session for hFNbPmzzcEs after 4 yt-dlp 429s).
+  Redirect to a file, never pipe into an interpreter.
+- Save the transcript to `transcripts/<videoId>_<slug>.md` with a frontmatter block
+  (title/video_id/url/channel/speaker/captured/captured_by/resources) — keep the raw
+  `transcripts/<id>.description` yt-dlp output as scratch, delete it after folding into the
+  transcript header.
+- **429 is endpoint-specific, not global**: the yt-dlp *metadata/description* writes succeeded
+  while only the timedtext subtitle download 429'd. So description-first is always available.
+
+## Dead X handle => "could not resolve user_id" => fix in x-accounts.yaml, don't just log
+
+- `errors: [{handle, error: "could not resolve user_id"}]` usually means the account was
+  deleted/renamed. Confirm with ONE direct call:
+  `xurl --auth oauth2 "/2/users/by/username/<handle>" > /tmp/x.json` → if the response contains
+  `"Could not find user with username"`, the handle is dead (NOT an API outage). Note: search/recent
+  returns `result_count: 0` for dead handles on the free tier — useless as a signal; `max_results`
+  must be 10-100.
+- Recovery: (1) if a correct/renamed handle can be identified and verified resolvable, edit
+  `config/feeds/x-accounts.yaml` in place (keep 84 total), record the substitution + date +
+  verification in the `notes:` field, `python3 -c yaml.safe_load` to validate, commit+push;
+  (2) if no successor is verifiable, comment the entry out or leave it and report it as a
+  permanent skip. Do NOT silently drop entries. Confirmed 2026-11-11: `@willccbb` (Will Brown)
+  dead → replaced with verified-resolvable `@willcarnes` (id 46984246).
+
 ## YouTube-link posts when transcripts/subtitles are blocked
 
 - yt-dlp on this box can hit persistent `HTTP Error 429: Too Many Requests` on the
@@ -391,6 +420,21 @@ dedups and attaches link metadata; wiki ingestion is the agent's job.
 - **Bump index section counts with `sed -i '<line>s/old/new/'`** after getting exact line numbers from
   `grep -n "^## " wiki/index.md`. Reconcile stale Queries/Comparisons counts left by sibling jobs in the same
   commit and note in log.md which count deltas are yours.
+- **Verify count BEFORE bumping (2026-11-09 run)**: a sibling `wiki-health-fix` / `auto-fix` cron may have JUST
+  reconciled the header to the live count in the same day, so a naive `+1` re-inflates it. Always count actual
+  index lines first — `grep -c '^- \[\[concepts/' wiki/index.md` (or `entities/`, `comparisons/`, `events/`,
+  `queries/`) — and only change the header if the count and the live number actually differ. If your edits only
+  enriched an existing entry's blurb (no new page added), leave the header alone.
+
+## Tooling-announcement tweets about an already-documented model = enrich, don't new-page (2026-11-09)
+
+- When a scanned tweet announces a *quantization/serving/tooling* update for a model the wiki already documents
+  (e.g. Unsloth Dynamic V3.1 GGUFs for Qwen3.8-Flash-Next — the model itself lives in `concepts/qwen-3-8.md`
+  + `entities/qwen.md` + `concepts/qwen-covert-exfiltration-behaviour.md`), do NOT create a new model page.
+  Write ONE scraper-named raw article + enrich the tool's concept page (`concepts/unsloth.md` Recent bullet)
+  and the author's entity page (`entities/daniel-han.md` Blog/Recent Posts row). When the model has a
+  safety/behavioral caveat on file, add one explicit sentence to the raw article stating the tooling update is
+  not a re-endorsement of the model's safety — keeps the tool story separate from the model's contested record.
 
 ## Re-patching a heading you accidentally consumed
 
