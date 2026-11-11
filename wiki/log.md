@@ -1,3 +1,15 @@
+## [2026-11-11] health-fix | Daily wiki health audit: all clean
+
+### Verification
+- index.md corruption (pipe/line-number/triple-bracket/space-prefix): 0 (validate_index.py pass, 3469 lines)
+- L2 pipe-prefix (`|- [[` in entities/concepts): 0
+- Ghost entries: 21 flagged = all `[[dir/_index]]` hub links (false positives, files exist)
+- Orphans: 3 flagged = duplicate-section index entries at lines 984/985/999 (false positives)
+- Header counts reconcile with index-line counts across all 5 namespaces
+- No changes made; no commit required.
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
