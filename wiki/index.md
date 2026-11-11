@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3431
+> Total pages: 3441
 > Last updated: 2026-11-09
 
 ## Entities (967 pages)
@@ -975,7 +975,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2331 pages)
+## Concepts (2332 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
@@ -1176,6 +1176,7 @@
 - [[concepts/local-first-vs-frontier-api-economics]] — Local-First vs Frontier API Economics — break-even analysis for Apple-Silicon local inference vs frontier API token spend; amortized hardware cost vs per-token pricing
 - [[concepts/local-llm/_index]] — Local LLM Ecosystem — Concepts hub for local-LLM sub-pages (Ollama, llama.cpp ecosystem, …)
 - [[concepts/materialized-agent-memory]] — Materialized Agent Memory — Datalog-backed truth-maintenance for long-horizon agents; incremental invalidation of derived beliefs (pwning.systems, Aug 2026)
+- [[concepts/muse-ember]] — Muse Ember — Meta's smallest/cheapest agent model; AA Intelligence Index 33.9 at $0.116/task, matches Haiku 5.5 best score at ~1/3 cost; AutomationBench-AA 37.8; six reasoning levels poorly calibrated vs price (Nov 2026)
 - [[concepts/mistral-robostral-navigate]] — Mistral Robostral Navigate — single-camera VLA model for autonomous robot navigation
 - [[concepts/agent-wikis]] — Agent Wikis (LLM Wiki pattern) — Karpathy's compile-at-ingest architecture; comprehensive survey of implementations (DeepWiki, AutoWiki, OpenWiki, GBrain); wiki vs memory distinction (Mem0, Jul 2026)
 - [[concepts/model-hardware-standard]] — Model Hardware Standard (MHS) — Anthropic spec for AI agents operating lab/manufacturing hardware; MCP-accessible, open-source planned (Aug 2026)

@@ -2,7 +2,7 @@
 title: Meta
 type: entity
 created: 2026-04-09
-updated: 2026-11-10
+updated: 2026-11-11
 tags:
   - company
   - model
@@ -15,6 +15,8 @@ sources:
   - raw/newsletters/2026-07-09-the-future-of-meta-superintelligence-a-1-year-progress-update.md
   - raw/newsletters/2026-07-19-google-clones-you-meta-powers-anthropic-and-thinking-machines-opens-the-vault.md
   - raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
+  - raw/articles/research.meta.ai--blog-muse-ember--muse-ember.md
+  - raw/articles/simonwillison.net--2026-nov-10-muse-ember--7579b7c0.md
   - "[The Future of Meta Superintelligence: A 1 Year Progress Update (SemiAnalysis, Jul 2026)](https://open.substack.com/pub/semianalysis/p/the-future-of-meta-superintelligence)"
 ---
 
@@ -220,6 +222,20 @@ This development represents a significant reversal from Meta's historical positi
 ## Tactus haptic data-collection glove (November 2026)
 
 Meta **Reality Labs Research** published **Tactus** (Tactile & Pose Sensing Glove for Natural Dexterity Data Collection) — a textile-integrated glove for capturing manipulation data: 1.5 mm fingertip stackup 3D-knit form factor, capacitive tactile sensors placed at manipulation-relevant regions from empirical contact studies, calibrated fingertip force sensing, and IMU-fused pose tracking that survives hand–object occlusion. Reported by Jack Clark in Import AI 480. Details: [[concepts/meta-tactus-glove]].
+
+## Muse Ember — cheapest tier of the Muse family (November 2026)
+
+On 2026-11-09 Superintelligence Labs shipped **Muse Ember**, the family's smallest and cheapest model, aimed at the agent sub-task tier occupied by Claude Haiku 5.5 and GPT-6 Luna rather than at frontier benchmarks. Meta positions it for "the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing."
+
+**Efficiency claim, not capability claim.** Ember is presented as sitting on the Artificial Analysis efficiency Pareto frontier — "no model scores higher for less per task" — at **$0.116/task for an Intelligence Index of 33.9**. It matches Haiku 5.5's best score (36.2, at $0.411/task) for roughly a third of the cost, and beats every GPT-6 Luna setting. Max-reasoning agent results: AutomationBench-AA **37.8** (vs Haiku 13.9, Luna 20.2), Agents' Last Exam **61.6**, Terminal-Bench 4.0 **40.9**.
+
+**Pricing.** $0.10/M input and $0.50/M output — matching both competitors at the base rate — with an unusually cheap **$0.004/M cached-input** rate. Long-context billing differs: Ember's price steps up past 200k prompt tokens (3x input, 3x output), later than Haiku's 100k cliff but steeper once crossed.
+
+**Effort ladder is poorly calibrated (independent test).** Ember exposes six reasoning levels (minimal → max). Simon Willison's SVG probe found quality did **not** track the effort setting — `high` failed to return a complete SVG, and the `max` output was comparable in quality to **Muse Wonder at 40x Ember's price**, an unflattering comparison against Meta's own family. HN 50429024 (330 pts / 140 comments).
+
+Same-day context: Anthropic upgraded the flagship tier to Claude Fable 5.2 / Mythos 5.2 on the same date, at **80x Ember's price** ($8/$40 per M). Meta is competing at the volume layer while Anthropic restructures its own line into a tiered agent topology. See [[concepts/muse-ember]].
+
+**Sources:** [[raw/articles/research.meta.ai--blog-muse-ember--muse-ember]], [[raw/articles/simonwillison.net--2026-nov-10-muse-ember--7579b7c0]]
 
 ## Related
 

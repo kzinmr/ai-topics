@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-10-30
+updated: 2026-11-11
 tags:
   - company
   - voice-ai
@@ -11,6 +11,7 @@ aliases: ["11labs", "Eleven Labs"]
 sources:
   - https://elevenlabs.io
   - raw/articles/2026-08-18_elevenlabs_elevenlabs-mcp-in-claude.md
+  - raw/articles/2026-11-11_elevenlabs_scribe-v3.md
   - raw/articles/2026-08-11_elevenlabs_webinar-recap-how-admiral-handles-insurance-calls-with-ai-agents.md
   - raw/articles/2026-08-11_elevenlabs_deutsche-telekom.md
   - raw/articles/2026-08-11_elevenlabs_finch.md
@@ -535,6 +536,26 @@ Positioned as vendor documentation of the design space rather than new research,
 **Source:** [[raw/articles/2026-10-30_elevenlabs_what-is-turn-taking]]
 
 ---
+
+## Scribe v3 / v3 Live — STT accuracy reset (November 2026)
+
+ElevenLabs launched two new speech-to-text models on 2026-11-10, and the numbers are large enough to move the STT tier rather than merely refresh it. **Scribe v3** (recorded audio) makes **27% fewer word errors than Scribe v2 across 102 languages**; **Scribe v3 Live** (realtime) makes **43% fewer semantic-WER errors than Scribe v2 Realtime** and adds speaker diarization to the streaming path for the first time. Both are one model-ID change from v2 in ElevenAPI; v3 Live ships in ElevenAgents today.
+
+**The three requested capabilities.** Feedback from teams already building on Scribe converged on: diarization that survives 3+ speaker meetings, turn detection that doesn't cut off a caller pausing mid-number, and not having to trade accuracy for latency in realtime.
+
+- **Diarization**: 17% fewer errors than v2 on 3+ speaker recordings; **3.1% diarization error rate** for v3 Live on the English slice of an internal 16-language real-world set, vs 5.9–7.3% for competing realtime models. ElevenLabs notes this score is alignment-normalized (transcription errors excluded), so it is **not** comparable to the batch diarization figures.
+- **Turn detection**: uses conversation context plus audio rather than silence timers — the same turn detector ElevenAgents already used, now exposed in ElevenAPI. See the semantic-VAD entry above.
+- **Terminology control**: keyterm prompting scales to **1,000 terms**; v3 Live adds a **keyterm library** holding thousands of *possible* terms that the model consults only on a likely match. Plain-English formatting rules ("write every date as YYYY-MM-DD") and digit-vs-word number output are now switchable.
+
+**Method caveat worth carrying forward.** Multilingual accuracy is measured on an internal FLEURS variant with each language scored separately and then averaged, so all 102 languages count equally; most published results pool clips into one score, which lowers the numbers. Cross-provider comparisons of these figures are therefore not directly comparable. Gains are largest in hard languages (Swahili −34%, Tamil −29%, Thai −28%) versus easy ones (German −42%, Spanish −35%, English −23%) — where "fewer errors" means different absolute volumes.
+
+**Why a few points matter (ElevenLabs' own framing).** A one-hour meeting at 150 wpm is ~9,000 words: a 4% vs 2% WER gap is 180 wrong words, three per minute of speech. Each point of diarization error is 36 seconds attributed to the wrong person. Errors cluster in names, numbers, acronyms and jargon — exactly the tokens an agent's downstream check depends on.
+
+**Production evidence.** Eneco (energy supplier to 2M+ homes/businesses in the Netherlands) ran Scribe v3 Live on its live ElevenAgents voice agent pre-launch: **Dutch postcodes recognized correctly on first try 40% more often**, house numbers 15% more often. This is the strongest third-party-flavored datapoint in the post, and the first public v3 deployment metric.
+
+ElevenLabs says it will open-source the 16-language real-world meeting/agent-call/voice-note dataset used for diarization scoring — worth tracking, since FLEURS cannot measure diarization (single-speaker clips only).
+
+**Source:** [[raw/articles/2026-11-11_elevenlabs_scribe-v3]]
 
 ## Related
 - [[entities/openai]] — Competitor via GPT-4o voice and TTS capabilities

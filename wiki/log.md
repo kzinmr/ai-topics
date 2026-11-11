@@ -1,3 +1,39 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+## [2026-11-11] dreaming wiki-ingest | upstream 503-equivalent render failure → manual Pattern E triage + 1 new page + 3 enrichments
+
+Upstream `dreaming-group` (18:00 UTC) died with `RuntimeError: Response truncated due to output length limit` before persisting any triage. Its cron output file (5,347 lines) contained **no analysis** — only prompt + injected checkpoint — so Pitfall #12's "read the output tail" fallback was unavailable. Checkpoint: `total_articles: 0`, `recent_raw_articles: 217` → Pattern E filesystem triage run from scratch by this job.
+
+Prior triage (`20261110T180003Z`) confirmed consumed via commit `67b6083d`, so no carry-forward takes.
+
+### Duplicate check against adjacent jobs
+- Blog-triage (10:05, commit `3ae7aef2`) took 3 of the 10:01 batch (Ed Zitron Jensen, entropicthoughts token-cost explorer, Goedecke glue work) → all skipped here.
+- Newsletter-triage (10:35, commit `4d3394fa`) took Superintel Fable 5.2, Hyperdimensional, Lenny, Muse Ember — but Ember landed with **zero wiki page coverage**, so it was re-taken as a page creation rather than skipped.
+- Trending-topics (commit `1a6be531`) covered 4 concepts + 6 raw → not re-touched.
+- Goldman Claude Code pull: verified already covered in `concepts/ai-engineering-dekilling.md` L40 (raw registered, HN 891pts, HN quotes) → skip.
+- LoreKit agent-memory OpenTelemetry essay: already covered in `concepts/ai-agent-memory-two-camps.md` L162 (taxonomy table, HN 184pts) → skip.
+
+### New pages (1)
+- [[concepts/muse-ember]] — Meta Superintelligence Labs' smallest/cheapest agent-tier model (2026-11-09). AA Intelligence Index 33.9 at $0.116/task; AutomationBench-AA 37.8 vs Haiku 5.5's 13.9; Agents' Last Exam 61.6; Terminal-Bench 4.0 40.9. Long-context cliff table (200k vs Luna 272k vs Haiku 100k), $0.004/M cached input. Willison's independent finding: six reasoning levels do not track output quality, `high` returned no complete SVG, `max` comparable to Muse Wonder at 40x price. HN 50429024 (330 pts).
+
+### Enriched pages (3)
+- [[entities/meta]] — Muse Ember section: Pareto-frontier framing, agent-suite scores, cached-input pricing, poorly-calibrated effort ladder, same-day Fable 5.2 80x-price contrast.
+- [[entities/elevenlabs]] — Scribe v3 / v3 Live: 27% WER reduction over v2 across 102 languages, 43% semantic-WER reduction for Live, first realtime diarization (3.1% DER vs 5.9–7.3%), turn detection via conversation context, 1,000-term keyterm prompting + keyterm library, per-language-averaged FLEURS methodology caveat, Eneco production result (Dutch postcodes +40% first-try).
+- [[entities/decagon]] — Personal Agent Gateway: 95% AI-voice detection vs 73% for a general multimodal LLM at ~30x speed, >99% precision; chat detection 99% precision / 85% recall from behavioral signals; observed adversarial drift (one agent changed typing style within weeks); analytical note that the self-identification channel has no cryptographic guarantee.
+- [[entities/hebbia]] — applications replacing the email attachment: 59% of firms built an app in October, weekly builders doubled, app creation 3.1x, apps shared 10x more than decks and now ~half of published artifacts; strategic read as move from retrieval to delivery surface.
+
+### Skips (never-archived set, 60 items archived)
+- Cohere `open-source-model-vault` — German-locale duplicate (`/de/blog/`) of Model Vault, already documented in `entities/cohere.md` L280–297.
+- Pinecone ×2 — Aug 2026 webinar-recap marketing, no new architecture content.
+- Parallel ×3 (incl. scale-plan) — scrape failed (brotli decoder error) / product marketing.
+- Factory `security-factory` — 23-line bodyless shell, no article text.
+- ElevenLabs marketing/SEO guides (`wav-vs-mp3`, `what-is-an-api-endpoint`), Harvey ×2 legal-product posts, non-AI retro/math/history blogs (dfarq, johndcook, oldvcr, righto, shkspr, jim-nielsen), already-covered curator posts (Simon Willison quote posts, Gary Marcus, pluralistic).
+
+### Verification
+Wikilink sweep on the new page: 0 MISS after retargeting 2 ghosts (`concepts/claude/haiku` → plain text; `concepts/model-economics` → `concepts/token-economics`). CJK scan clean on all 5 touched files. Tags pre-validated against SCHEMA — `muse-ember` already in taxonomy, so no SCHEMA mint required.
+
 ## [2026-11-11] health-fix | Daily wiki health audit: all clean
 
 ### Verification
@@ -9,10 +45,6 @@
 - No changes made; no commit required.
 
 ---
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 
 ## [2026-11-11] watchdog | auto-fix: 60 namespace-error wikilinks (37 files)
@@ -137,7 +169,6 @@ _Log of all wiki changes. Newest entries at top._
 ---
 
 
-
 ## [2026-11-09] dreaming wiki-ingest | 2026-11-09 Pattern E — Takes=0, 1 reference (Apple PKG), saturation
 
 - Checkpoint 20261109T180026Z: collected articles=0, recent_raw_articles=230 → Pattern E filesystem scan over 11-06..11-09 raw/articles.
@@ -165,7 +196,6 @@ _Log of all wiki changes. Newest entries at top._
 - ~439-page `status:stub` concept backlog flagged by 11-08 skeleton-enrich run — triage deferred to dreaming pipeline.
 
 ---
-
 
 
 ## [2026-11-09] trending-topics | 6 raw + 1 new concept + 5 appends — agent/model drift, harness migration, memory spec
@@ -458,7 +488,6 @@ Run: 11 accounts scanned, 7 substantive candidates, 7 new posts (detail: `cron/d
 - Whole-tree frontmatter scan: 0 `status: skeleton` pages. Streak continues (10-17 → 11-03).
 - Short/content-mention pages spot-checked (brace-sproul, sgnt-jev-article, fourier-intelligence): all substantive active pages.
 - Snapshot: [[queries/2026-11-04-skeleton-enrich-empty]]
-
 
 
 ## [2026-11-04] dreaming wiki-ingest | Pattern E saturation — Takes=3 (deferred to wiki-ingest), 3 references, 4 batch skips

@@ -1,0 +1,128 @@
+{
+  "archived_at": "2026-11-11T18:35:30.040615+00:00",
+  "triage_run_id": "20261111T180052Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming-group上流が『Response truncated due to output length limit』で応答レンダリング前に落丁し、クロン出力ファイル(5,347行)にはプロンプトと注入チェックポイントのみで解析内容は皆無だった。Pitfall #12のtail復旧が使えないため、本ジョブがPattern Eを自力実行。チェックポイントはtotal_articles=0 / recent_raw_articles=217、前日triage(20261110T180003Z)はcommit 67b6083dで消費済み。archive-index不在プローブで66件の未トリアージを検出し、同日blog/newsletter/trendingの決定と照合したうえで1新規ページ+4エンティティ強化を実施。Muse Emberはnewsletter take済みながらwikiページが皆無だったため再teke。Goldman Claude Code撤回とLoreKit agent-memory論文は既存ページの行レベル収録を確認してskip。",
+  "decisions": [
+    {
+      "item_id": "dr-skip-goldman",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Goldman Sachs Is Pulling Claude Code From Its Bankers and Traders",
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "raw_path": "raw/articles/2026-11-09_stateofai_goldman-sachs-pulls-claude-code.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ concepts/ai-engineering-dekilling.md L40に既に詳細収録(生記事登録済・HN891pt・CharlieDigital/reactordev/Ericson2314の引用・情報バリア論)。上書き不要。",
+      "candidate_wiki_path": "concepts/ai-engineering-dekilling.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dr-skip-lorekit",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Agent memory needs its OpenTelemetry moment",
+      "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+      "raw_path": "raw/articles/2026-11-09_lorekit_agent-memory-needs-its-opentelemetry-moment.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ concepts/ai-agent-memory-two-camps.md L162に既に収録(4つの相互非互換フォーマット、9行のform taxonomy表、HN184pt/108c、Portable Memory/OAMF/COGX提案)。",
+      "candidate_wiki_path": "concepts/ai-agent-memory-two-camps.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dr-skip-cohere-vault-de",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Führende Open-Source-KI-Modelle jetzt in Model Vault verfügbar",
+      "url": "https://cohere.com/de/blog/open-source-model-vault",
+      "raw_path": "raw/articles/2026-11-11_cohere_open-source-model-vault.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ entities/cohere.md L280-297にModel Vault(機密計算・attestation・Azure H100 CC)が既に詳細化。これは/de/ロケールの独語版で、サードパーティOpen Models対応以外の増分なし。",
+      "candidate_wiki_path": "entities/cohere.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dr-skip-pinecone-webinar",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Pinecone self-hosted vector search + webinar recap",
+      "url": "https://www.pinecone.io/blog/self-hosted-vector-search/",
+      "raw_path": "raw/articles/2026-11-10_pinecone_self-hosted-vector-search.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 2026-08-20のwebinar再構成記事2本。groundingの必要性とretrieval stackの一般的説明のみで、entities/pinecone.mdに対する技術的増分なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dr-skip-parallel-marketing",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Parallel Web Systems: scale-plan / parallel-for-legal / case-study-eve",
+      "url": "https://parallel.ai/blog/scale-plan",
+      "raw_path": "raw/articles/2026-11-11_parallel-web-systems_scale-plan.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ scale-planはスクレイプ失敗(brotli decoder error、本文なし)、他2本は製品マーケティング。本文から得られる技術的言及なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dr-skip-factory-shell",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Introducing Security Factory",
+      "url": "https://factory.com/news/security-factory",
+      "raw_path": "raw/articles/2026-11-11_factory_security-factory.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 23行・見出しとBylineのみで本文ゼロのスクレイプ残骸。判定可能な主張が存在しない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dr-skip-11labs-seo",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "ElevenLabs SEO guides: wav-vs-mp3, what-is-an-api-endpoint",
+      "url": "https://elevenlabs.io/blog/wav-vs-mp3",
+      "raw_path": "raw/articles/2026-11-11_elevenlabs_wav-vs-mp3.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 一般向け教育・SEO記事2本(WAV/MP3比較、API endpoint入門)。モデル情報も新アーキテクチャ情報もなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dr-skip-harvey-legal",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Harvey: MSA review, review-table sync",
+      "url": "https://www.harvey.ai/blog/msa-review",
+      "raw_path": "raw/articles/2026-11-10_harvey_msa-review.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 法務プロダクトの機能紹介2本。entities/harvey.mdは既にレビューテーブル系の訓練・製品情報を網羅しており増分なし。",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dr-skip-nonai-batch",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Non-AI blog batch (dfarq, johndcook x5, oldvcr, righto, shkspr, jim-nielsen, coredump, nesbitt, lucumr, dynomight)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ レトロコンピューティング、組合せ数学(BIBD/有限平面/Steiner系)、Android批評、QRメニュー等。AI/LLM/agentとの関連なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "レトロコンピューティング、組合せ数学(BIBD/有限平面/Steiner系)、Android批評、QRメニュー等。AI/LLM/agentとの関連なし。"
+    },
+    {
+      "item_id": "dr-skip-already-covered-curator",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Already-covered curator posts (Simon Willison x6, Gary Marcus x2, pluralistic, wheresyoured, troyhunt, ai-bubble, opus-5.5 thread, H100 pricing)",
+      "url": "",
+      "raw_path": "",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ 著者entityページまたは同日のblog/newsletter/trendingパイプライン(commit 3ae7aef2/4d3394fa/1a6be531/22e9a47c)で既に処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "著者entityページまたは同日のblog/newsletter/trendingパイプライン(commit 3ae7aef2/4d3394fa/1a6be531/22e9a47c)で既に処理済み。"
+    }
+  ]
+}

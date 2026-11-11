@@ -2,7 +2,7 @@
 title: "Decagon"
 type: entity
 created: 2026-05-08
-updated: 2026-08-22
+updated: 2026-11-11
 tags:
   - company
   - ai-agents
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-08-19_decagon_teaching-flow-matching-tts-with-rl.md
   - raw/articles/2026-08-21_decagon_scaling-real-time-tts-inference.md
   - raw/articles/2026-08-20_decagon_decagon-assist.md
+  - raw/articles/2026-11-11_decagon_how-we-taught-our-agents-to-recognize-other-agents.md
 ---
 
 # Decagon
@@ -149,6 +150,30 @@ Decagon launched **Decagon Assist**, a human-facing AI copilot for the customer 
 **Significance**: Decagon Assist extends Decagon's "concierge experience" standard from the AI-agent side of a support conversation to the human side — the company's explicit argument is that the quality bar shouldn't drop the moment a case escalates to a human. It also positions Decagon against the "AI replaces the rep" framing: the human rep becomes an extension of the same AI layer that resolves the automated cases, with a shared knowledge base and shared analytics rather than a parallel tool stack.
 
 Source: [Introducing Decagon Assist — Decagon Blog](https://decagon.ai/blog/decagon-assist) (Sambhav Jain, PM, Aug 19, 2026)
+
+## Personal Agent Gateway — detecting agents on the other end of the line (November 2026)
+
+Decagon published (Thomas Moreno, Senior Agent Product Manager, 2026-11-10) how it detects *inbound* AI agents — the personal agents now calling and messaging support teams to book, cancel, price-match and negotiate on a customer's behalf. The premise inverts the usual security posture: existing tooling "treats every automated caller as a threat, overlooking agents that are often acting for real customers who need service."
+
+**Voice: why off-the-shelf deepfake detectors failed.** Tested commercial detectors performed "little better than chance" on phone-quality audio, and some flagged most *real* callers as fakes. Decagon trained its own model on phone audio, using two independent checks: synthetic-voice detection across conversational signals (rather than a single moment, to limit false positives) and trusted-agent recognition against a curated, continuously reviewed library of known personal agents.
+
+| Metric | Decagon voice detector | General-purpose multimodal LLM |
+|---|---|---|
+| AI voices caught (held-out phone audio) | **95%** | 73% |
+| Verdict latency | ~30x faster | baseline |
+| Precision | >99% | — |
+
+Sensitivity is tunable from flagging 1-in-100 real callers to 1-in-2,500, letting each business price its own false-positive tolerance.
+
+**Chat: behavior betrays agents, text does not.** Agents write naturally enough that text alone is a poor signal; *how they use the chat box* is the tell — text appearing without keystrokes, perfectly regular reply delays, inhuman typing speeds, pointer movements no human hand produces. Combined with a few language cues into a single probability score: **99% precision, 85% recall**. Crossing a threshold triggers a business-chosen response — record, end the chat, or simply ask "Are you an AI assistant acting on someone's behalf?", which "legitimate agents generally answer honestly."
+
+**Detection is an arms race, already observed.** Within weeks of launch Decagon watched one agent change how it typed, degrading a signal its detector relied on. Hence continued retraining on new production signals, and a strategic hedge: partnerships with personal-agent providers, so that "a well-intentioned agent that identifies itself through the personal agent channel never needs to be caught."
+
+**From recognition to service.** The Personal Agent Gateway pairs detection with a dedicated channel where businesses define which workflows agents may use, when to escalate to a human, and how to verify what the customer actually authorized. Decagon's forward claim: "before long, a meaningful share of support conversations will have AI on both sides."
+
+**Analytical note**: this is the mirror image of Decagon's own outbound-agent identity problem, and the clearest vendor articulation so far of agent-to-agent traffic as a first-class CX surface rather than an abuse category. The self-identification channel is the load-bearing piece — its reliability depends on provider cooperation, which no cryptographic guarantee underwrites. See [[concepts/agent-identity-and-reputation]].
+
+**Source:** [[raw/articles/2026-11-11_decagon_how-we-taught-our-agents-to-recognize-other-agents]]
 
 ## Related
 

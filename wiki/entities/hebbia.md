@@ -2,7 +2,7 @@
 title: "Hebbia"
 type: entity
 created: 2026-05-08
-updated: 2026-10-24
+updated: 2026-11-11
 tags:
   - company
   - search
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-07-31_hebbia_introducing-max.md
   - raw/articles/2026-08-05_hebbia_rethinking-control-in-the-age-of-ai-delivery.md
   - raw/articles/2026-10-24_hebbia_databricks-is-available-in-hebbia.md
+  - raw/articles/2026-11-11_hebbia_finance-is-outgrowing-the-email-attachment.md
 ---
 
 # Hebbia
@@ -111,6 +112,20 @@ Hebbia announced a **Databricks partnership** (Paul Boland, Oct 23, 2026): a fir
 The framing is workflow, not connector coverage: most deal teams never touch Databricks directly, so the value is asking the question in the platform where diligence already happens. Stated usage patterns include **credit** (compare a portfolio company's latest KPIs against covenant thresholds in its credit agreement and its public peers in one question) and private-equity diligence on positions and performance. This extends the "every data integration, one view" direction logged in July 2026 and adds a first-party path into the lakehouse where firms' structured proprietary data actually lives.
 
 **Source:** [[raw/articles/2026-10-24_hebbia_databricks-is-available-in-hebbia]]
+
+### Applications Replace the Email Attachment (November 2026)
+
+Hebbia reported (Avi Upreti, 2026-11-10) that its customers have begun building **applications** rather than documents, and the adoption curve is the interesting part: **59% of firms on Hebbia built an app in October**, and since Max launched a couple of months earlier, weekly app builders have **doubled** while app creation is up **3.1x**.
+
+The thesis is that finance work has outgrown the file. Banks spend billions on systems of record while the actual work still happens in Excel, PowerPoint and email — a deck revised half a dozen times before the client sees it, then revised again when the client asks a question. An application stays connected to the firm's data and its existing access controls, so everyone who opens it sees current numbers rather than a snapshot that was stale the moment it was sent.
+
+Supporting usage data: apps are shared internally at **10x the rate of decks and documents**, and now make up roughly **half of all artifacts published to teams**. Customers revise them, download results, and reshape output for their own needs. Worked examples: a private-equity investor's board-prep app that refreshes per portfolio company as new information arrives; a coverage team's live pipeline view consolidating CRM activity, meeting notes and deal folders for a weekly meeting; portfolio monitoring that tracks results and management commentary against the original thesis.
+
+The client-facing edge is where the argument sharpens: financial advice still arrives as a deck or PDF that the client then interrogates over calls and revised attachments. An application lets the client explore through a controlled view and return as the information changes. Upreti's concession is worth noting — attachments persist where a *fixed record* matters; the claim is only about work that keeps moving.
+
+Strategically this is Hebbia moving up the stack from retrieval ("every data integration, one view", July 2026; Databricks, October 2026) into being the **delivery surface** itself. The gating requirement it names is also the honest one: a prototype on a laptop is not an enterprise app — the hard part is running it in a permissioned, access-controlled environment.
+
+**Source:** [[raw/articles/2026-11-11_hebbia_finance-is-outgrowing-the-email-attachment]]
 
 ## Related
 
