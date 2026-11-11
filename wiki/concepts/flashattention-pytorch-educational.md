@@ -70,5 +70,6 @@ sources: []
 ## See Also
 
 - [[entities/_index]]
+- [[concepts/flashattention-pytorch-educational-implementation]] — legacy duplicate entry, now a redirect to this page
 - [[concepts/post-training/pytorch-fsdp]]
 - [[concepts/napkin-math-for-finetuning]] — Memory & compute estimation for fine-tuning (by Jonathan Whitaker)

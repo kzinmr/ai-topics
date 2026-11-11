@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3441
-> Last updated: 2026-11-09
+> Total pages: 3442
+> Last updated: 2026-11-11
 
 ## Entities (967 pages)
 
@@ -1514,7 +1514,7 @@
 - [[concepts/aws-agent-toolkit]] — AWS Agent Toolkit
 - [[concepts/aws-lambda-microvms]] — AWS Lambda MicroVMs — Firecracker-based serverless sandbox primitive for isolated, stateful execution of untrusted/AI-generated code; snapshot-based near-instant launch, 8hr max runtime, 16vCPU/32GB (June 22🆕)
 - [[concepts/axe-framework]] — Axe — Lightweight AI Agent CLI Framework
-- [[concepts/axolotl-fine-tuning-framework]] — Axolotl — Fine-Tuning Framework
+- [[concepts/axolotl-fine-tuning-framework]] — Redirect to [[concepts/post-training/axolotl]] (config-driven fine-tuning framework)
 - [[concepts/axpo]] — AXPO (Agent eXplorative Policy Optimization)
 - [[concepts/ban-artificial-superintelligence-act]] — Ban Artificial Superintelligence Act (Sanders-Casar, 2026) — most restrictive US federal AI bill to date
 - [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
@@ -1525,7 +1525,7 @@
 - [[concepts/bayesian-agent-orchestration]] — Bayesian Agent Orchestration
 - [[concepts/bayesian-reasoning]] — Bayesian Reasoning
 - [[concepts/behavioral-trait-transmission]] — Subliminal Learning in Language Models
-- [[concepts/ben-thompson]] — Ben Thompson
+- [[concepts/ben-thompson]] — Ben Thompson (Stratechery) — Aggregation Theory; distribution commoditized, scarcity shifts to consumer attention; AI assistants as candidate next aggregators
 - [[concepts/benchpress]] — BenchPress — $0 benchmark prediction system; rank-2 SVD matrix completion on 83×49 model-benchmark matrix proves 5 benchmarks can predict 44 others to within ~5 points (June 25)
 - [[concepts/benchmarking-crisis]] — The Benchmarking Crisis — Thomas Neumann (Database Architects): AI codegen turbocharges Goodhart’s-law decay of ClickBench (pgrust hash-only group-bys, predicate caching); fixes = ad-hoc + update stream + systems-older-than-benchmark + hidden/fresh test sets borrowed from Kaggle/LiveBench (Oct 27)
 - [[concepts/beneficial-rl]] — Beneficial RL — Emergent Alignment via Trait-Based Reinforcement Learning
@@ -1596,7 +1596,7 @@
 - [[concepts/china-agentic-coding-sprint]] — China Agentic Coding Sprint
 - [[concepts/china-datacenter-buildout]] — China Datacenter Buildout — SemiAnalysis Sept 2026 site visit: Envision's 800MW "China's Stargate" Galaxy campus (Ulanqab), 120MW in <1yr at 1/5 US cost, SGLS self-supplied wind power, live 5MW SST 800V DC pilot, chiller-less cooling; $0.055/kWh, 25GW announced in Inner Mongolia (Nov 2026)
 - [[concepts/china-openclaw-agentic-boom]] — China OpenClaw Agentic AI Boom (2026)
-- [[concepts/chip-huyen-chipro]] — Chip Huyen (@chipro)
+- [[concepts/chip-huyen-chipro]] — Chip Huyen (@chipro) — concept hub for her ideas: AI Engineering discipline, evals-first LLM apps, RLHF explainers, data-centric ML (bio on [[entities/chip-huyen]])
 - [[concepts/chokepoint-capitalism]] — chokepoint-capitalism
 - [[concepts/claude-certified-architect-domains]] — Claude Certified Architect — 5 Domain Knowledge
 - [[concepts/claude-code/claude-code-artifacts]] — Claude Code Artifacts — shareable functional HTML pages for PR walkthroughs, project dashboards, and prototypes (June 24)
@@ -1755,7 +1755,7 @@
 - [[concepts/computer-architecture]] — computer-architecture
 - [[concepts/computer-science-education]] — Computer Science Education
 - [[concepts/computer-use]] — Computer Use; enriched with Gemini 3.5 Flash Computer Use (June 2026) — native integration, multi-environment support, safety architecture (June 25)
-- [[concepts/computer-using-agent]] — Computer-Using Agent
+- [[concepts/computer-using-agent]] — Computer-Using Agent (CUA) — screenshot→reason→GUI-action paradigm; OpenAI CUA, Anthropic computer use, CUA vs API-first tradeoffs, OSWorld/WebArena
 - [[concepts/computing-history]] — Computing History
 - [[concepts/consciousness]] — Consciousness
 - [[concepts/constitutional-ai]] — Constitutional AI
@@ -2021,7 +2021,7 @@
 - [[concepts/five-tier-skill-precedence]] — Five-Tier Skill Precedence
 - [[concepts/flash-attention-4]] — FlashAttention-4 — CUDA kernel for Transformer attention on Blackwell B200; 1605 TFLOPs/s, 71% utilization, 1.3× faster than cuDNN; FA4 inference optimizations by Modal (June 29)
 - [[concepts/flashattention-pytorch-educational]] — FlashAttention PyTorch Educational Implementation
-- [[concepts/flashattention-pytorch-educational-implementation]] — FlashAttention PyTorch Educational Implementation
+- [[concepts/flashattention-pytorch-educational-implementation]] — Redirect to [[concepts/flashattention-pytorch-educational]]
 - [[concepts/flask]] — Flask
 - [[concepts/flatmap]] — flatMap
 - [[concepts/floodgap-systems]] — Floodgap Systems
@@ -3438,6 +3438,7 @@
 - [[queries/2026-11-08-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-08): 0 status:skeleton pages; backlog empty since 10-17 streak, no enrichment performed; flags separate ~439-page status:stub concept backlog for triage
 - [[queries/2026-11-09-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-09): 0 status:skeleton pages; backlog empty since 10-17 streak, no enrichment performed
 - [[queries/2026-11-10-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-10): 0 status:skeleton pages; backlog empty since 10-17 streak, no enrichment performed; recent-page & redirect-stub cross-checks clean
+- [[queries/2026-11-11-skeleton-enrich-stub-action]] — Skeleton enrichment run snapshot (2026-11-11): 0 skeleton pages (streak); enriched 4 stub backlog pages (ben-thompson, computer-using-agent, chip-huyen-chipro) + 2 duplicate-to-redirect cleanups; 435 stubs remain
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?

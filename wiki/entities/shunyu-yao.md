@@ -190,7 +190,7 @@ Prime Intellect (building on both researchers' work) captures the synthesis:
 - **[[concepts/coala]]** — Cognitive architectures for language agents
 - **[[concepts/ai-benchmarks/swe-bench]]** / **[[concepts/swe-agent]]** — Real-world code evaluation
 - **[[concepts/ai-benchmarks/tau-bench]]** — Tool-Agent-User interaction benchmark
-- **[[concepts/computer-using-agent]]** — Yao's current work at OpenAI
+- **[[concepts/computer-using-agent]]** — Yao's current work at OpenAI (now an enriched concept page: CUA paradigm, benchmarks, CUA vs API-first tradeoffs)
 - **** — Designing environments for agents
 - **** — Yao argues for environment-first RL design
 - **[[concepts/rlm-recursive-language-models]]** — Zhang/Khattab/Kraska's parallel work on environment-first context management

@@ -1,25 +1,21 @@
 ---
-title: "FlashAttention PyTorch Educational Implementation"
+title: "FlashAttention PyTorch Educational Implementation (redirect)"
 type: concept
-aliases:
-  - flashattention-pytorch-educational-implementation
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-11-11
 tags:
   - concept
+  - redirect
+status: redirect
+aliases:
+  - flashattention-pytorch-educational-implementation
 sources: []
-status: stub
-
 ---
 
 # FlashAttention PyTorch Educational Implementation
 
-> **TODO**: Enrich this page.
+> **Redirect**: This entry duplicates the canonical page. See
+> [[concepts/flashattention-pytorch-educational]] — shreyansh26/FlashAttention-PyTorch,
+> an educational PyTorch implementation of the FlashAttention algorithm family (FA1–FA4).
 
-## Overview
-
-Stub page for FlashAttention PyTorch Educational Implementation.
-
-## Related Pages
-
-- [[entities/_index]]
+Related: [[concepts/flash-attention-4]], [[concepts/subquadratic-attention]].

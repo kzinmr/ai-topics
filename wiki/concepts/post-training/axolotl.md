@@ -104,6 +104,7 @@ Reduces disk space by ~40% while maintaining vLLM and llmcompressor compatibilit
 
 ## Related
 
+- [[concepts/axolotl-fine-tuning-framework]] — legacy duplicate entry, now a redirect to this page
 - [[concepts/post-training/trl]] — TRL library (Axolotl uses TRL under the hood)
 - [[concepts/post-training/unsloth]] — Alternative fast fine-tuning framework
 - [[concepts/post-training/pytorch-fsdp]] — FSDP distributed training

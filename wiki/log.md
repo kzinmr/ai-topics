@@ -2,6 +2,33 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-11] skeleton-enrich-daily: stub backlog enrichment (4 concept pages)
+
+> The `status: skeleton` backlog remains **empty** (0 markers in entities/ and concepts/),
+> continuing the streak since 2026-10-17. To make the run productive, 4 high-value `status: stub`
+> concept pages (from the 439-page stub backlog) were enriched this run.
+
+- **Enriched [[concepts/ben-thompson]]** — Stratechery / Aggregation Theory concept page: distribution
+  commoditization, attention scarcity, aggregator economics applied to AI assistants; backlinks to
+  [[entities/daringfireball-net]] and [[concepts/organizational-moat]]. Tags: `ai-industry-economics`,
+  `strategy`.
+- **Enriched [[concepts/computer-using-agent]]** — CUA paradigm page: perceive→decide→act→verify loop,
+  canonical implementations table (OpenAI CUA, Anthropic computer use, Manus, browser-use), CUA vs
+  API-first agent comparison table, OSWorld/WebArena benchmarks. Bidirectional links with
+  [[entities/openai-cua]], [[entities/anthropic-computer-use]], [[concepts/browser-agent/death-of-browser]];
+  backlink added in [[entities/shunyu-yao]].
+- **Enriched [[concepts/chip-huyen-chipro]]** — idea-hub concept page (AI Engineering discipline,
+  evals-first LLM apps, RLHF explainers, data-centric ML) complementing the existing 16 KB
+  [[entities/chip-huyen]] biography. Links to [[concepts/genai-handbook]], [[concepts/evaluation/ai-evals]],
+  [[concepts/dataset-engineering]].
+- **Duplicate cleanup**: [[concepts/axolotl-fine-tuning-framework]] converted to redirect →
+  [[concepts/post-training/axolotl]]; [[concepts/flashattention-pytorch-educational-implementation]]
+  converted to redirect → [[concepts/flashattention-pytorch-educational]]. Both canonical pages got
+  backlinks; index.md descriptions updated for all 5 entries.
+- Remaining `status: stub` backlog after this run: **435** concept stubs (mostly broad CS/tech
+  topics from the 2026-04-25 bulk import; each needs domain judgment — dedicated batch task).
+
+
 ## [2026-11-11] dreaming wiki-ingest | upstream 503-equivalent render failure → manual Pattern E triage + 1 new page + 3 enrichments
 
 Upstream `dreaming-group` (18:00 UTC) died with `RuntimeError: Response truncated due to output length limit` before persisting any triage. Its cron output file (5,347 lines) contained **no analysis** — only prompt + injected checkpoint — so Pitfall #12's "read the output tail" fallback was unavailable. Checkpoint: `total_articles: 0`, `recent_raw_articles: 217` → Pattern E filesystem triage run from scratch by this job.
