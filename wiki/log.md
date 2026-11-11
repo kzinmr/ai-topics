@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-11-11] trending-topics (cron): 4 new concepts + 3 appends + 6 raw
+
+- New pages: `concepts/alphaproof-code.md` (DeepMind formal verification of Signal, HN 647p), `concepts/gemini-connected-apps-human-review-reversal.md` (human-annotator reversal, HN 720p), `concepts/reasoning-as-pathfinding.md` (test-time compute skepticism, HN 147p), `concepts/fireworks-notion-transcript-breach.md` (AI supply-chain breach, HN 162p).
+- Appended sections to: `entities/anthropic.md` (Glasswing 7-month audit + $1.3T roadshow), `concepts/claude/mythos-glasswing.md` (VulnCheck ledger numbers), `concepts/ai-industry-economics.md` (roadshow economics).
+- 6 raw articles saved (deepmind, github gemini_files, vulncheck, evanxmerz, alexwang, WSJ paywall/HN-derived); two-pass sha256.
+- SCHEMA: minted llm-training, data-breach, third-party-risk, data-retention, consumer-ai, llm-products, tech-debt, software-quality.
+- Report: `inbox/rss-scans/trending-topics-2026-11-11.md`.
+
 ## [2026-11-11] ingest | blog-ingest (cron): 16 raw articles + 8 sibling backlog
 
 - Run 20261111T100047Z: scan total_new=60 (DB-wide), fetch cap subset 20, saved 16 raw articles to `wiki/raw/articles/`.
@@ -2320,3 +2328,4 @@ research-grade pages from genuinely uncovered material:
 
 ## Hot post 2026-11-11 09:30 JST (morning)
 - Published hot post: PSI Aaronson–Ambainis Lean proof vs SemiAnalysis GDPx 12% (verification-availability contrast). Source: inbox/hot-posts/2026-11-11-0930-morning.md
+

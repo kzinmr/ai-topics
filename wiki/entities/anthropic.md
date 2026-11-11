@@ -15,7 +15,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-11-09
+updated: 2026-11-11
 sources:
   - "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md"
   - "https://x.com/RLanceMartin/status/2041927992986009773"
@@ -875,6 +875,12 @@ Timeline and context:
 HN thread's load-bearing framings: [CharlieDigital] — a trading floor is "a bad place for unreviewed code written by people who can't read it", and the information-barrier problem alone justifies the rule; rebuttal from the same commenter that engineers are also losing the capacity to read agent code, so "agentic engineering needs to be all in". [Ericson2314] — "if your security relies on low-privilege code being fully human-audited, you've already lost"; the right target is custom Bloomberg-terminal add-ons, not autonomous trading software. [neya] — compliance angle: an agent that trains on internal financials is an insider-trading vector. [theptip] — predicts migration from locally-run Claude Code to sandboxed managed agents for exactly this reason.
 
 Raw: `raw/articles/2026-11-09_stateofai_goldman-sachs-pulls-claude-code.md`. Note: the State of AI republication is secondary; the original is Bloomberg (see also the widely-shared claim that Coinbase appointed an AI agent as its CEO's chief of staff, which surfaced in the same week's coverage).
+
+## Glasswing 7-Month Reality Check & $1.3T IPO Roadshow (Nov 9-10, 2026)
+
+VulnCheck's seven-month audit of Project Glasswing (Patrick Garrity, Nov 9, HN 410pts): **442 CVEs** attributable to Anthropic = ~0.5% of 2026's 93,450 CVEs; only **2 exploited in the wild** (0.45%). Ledger as of Nov 2: **37,966 findings, just 217 fixed** (15 added since September while ~12,000 findings were added); duplicates exploded 2 → 1,670; 419 withdrawn; claimed TPR *rose* 90.8% → 94.2%, which VulnCheck argues reflects a missing triage feedback loop. The Oct 8 **OSS Scanner** pivot ("fully model-generated, without human review or triage") moves the validation bottleneck onto maintainers: of curl's 34 published Anthropic reports, **19 rejected as not-a-vulnerability (55.9% FP), 6 confirmed low severity, 9 pending** — versus the 94.2% ledger claim. Full analysis: [[concepts/claude/mythos-glasswing]] and [[concepts/glasswing-seven-month-ledger]].
+
+**IPO roadshow launched Nov 10, 2026** (anthropic.com/news/roadshow-launch): WSJ reports Anthropic will seek a **$1.3T valuation** (HN 50439616), firming the $1.1–1.3T range Goldman's banker described on Nov 2 (down from "up to $2T" speculation). Gary Marcus's "Just say no to Anthropic's IPO" (Nov 10, syndicated by Daring Fireball) continues the IPO-blocking advocacy thread above. Raw: `raw/articles/2026-11-11_wsj_anthropic-ipo-1.3t-roadshow.md` (WSJ paywall; body reconstructed from HN).
 
 ## Related Pages
 - [[Claude models]] — Model family details

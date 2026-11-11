@@ -1,7 +1,7 @@
 ---
 title: "AI Industry Economics — The June 2026 Financial Reckoning"
 created: 2026-06-21
-updated: 2026-07-08
+updated: 2026-11-11
 type: concept
 tags:
   - economics
@@ -256,6 +256,10 @@ Even if current capability levels were frozen, Ho argues "it would take well ove
 ### Position in the Discourse
 
 Ho's analysis is notable as an **ex-lab employee articulating public bearishness** — acknowledging this is "talking against my own book." The post quotes [[entities/dwarkesh-patel|Dwarkesh Patel]]'s work on compute costs while drawing opposite conclusions, and references his own previous post arguing capabilities growth will be "slower, spikier, and more data-limited than people currently assume."
+
+## Anthropic IPO Roadshow at $1.3T (Nov 10, 2026)
+
+Anthropic launched its IPO roadshow on Nov 10, 2026 (S-1 filed Oct 26, Nasdaq "ANT"), with WSJ reporting a target valuation of **$1.3T** (HN 50439616). The figure anchors the contested range tracked through the fall: $400–500B (early WSJ) → $2T+ (FT investor speculation, Aug) → $1.1–1.3T (Goldman banker, Nov 2, midterm-driven market softness). The HN thread crystallized the open-weights-vs-frontier-economics debate as an IPO-risk factor: open-weight (largely Chinese) models as a "commoditize the complement" strategy funded by chip vendors, states, and hyperscalers; frontier labs read as racing to cash out before model moats compress ([[entities/anthropic]], [[concepts/ai-bubble-economics]]). Raw: `raw/articles/2026-11-11_wsj_anthropic-ipo-1.3t-roadshow.md` (paywall, HN-derived).
 
 ## Related Pages
 

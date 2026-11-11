@@ -2,7 +2,7 @@
 title: "Claude Mythos & Project Glasswing"
 type: concept
 created: 2026-04-10
-updated: 2026-05-19
+updated: 2026-11-11
 tags:
   - anthropic
   - security
@@ -273,6 +273,10 @@ Project Glasswing has ignited a wider debate about how to handle increasingly ca
 **Key tension:** Anthropic states that access is "gated and optimized for blue-team operations" and that "adversarial AI capabilities will inevitably scale." The question is whether restricting access to a trusted circle actually makes the world safer, or merely delays an inevitable capability diffusion.
 
 ---
+
+## Seven-Month Ledger Audit (VulnCheck, Nov 9, 2026)
+
+VulnCheck's Nov 9 update (HN 410pts) is the sharpest independent counterweight to Glasswing's launch narrative: **442 Anthropic-attributable CVEs** (≈0.5% of the year's 93,450; 2 KEV-exploited, 0.45%); ledger at **37,966 findings / 217 fixed** (only +15 fixes since Sept against ~+12,000 findings); **1,670 duplicates** (up from 2) and 419 withdrawn while the claimed true-positive rate *climbed* to 94.2%. The October **OSS Scanner** pivot ships "fully model-generated" reports with no human triage, shifting the bottleneck to maintainers — curl's public validation run so far: 19/34 rejected, 6 low-severity confirmed, 9 pending (55.9% false-positive rate). HN counterpoints: no catastrophic AI-found exploit has materialized ([fny]); Claude could patch what it finds but maintainers won't merge unreviewed AI patches ([ameliaquining]); and Anthropic remains bottlenecked on human validation capacity by its own admission. Raw: `raw/articles/2026-11-11_vulncheck_glasswing-7month-ledger.md`.
 
 ## Related Concepts
 
