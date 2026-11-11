@@ -156,7 +156,7 @@ This phenomenon highlights emergent conversational attractor states when models 
 - [[concepts/open-model-consortium]] — Contrast with Meta's traditional open-source Llama strategy
 - [[concepts/claude/mythos-preview]] — Concurrent frontier model release (Anthropic, closed)
 - [[entities/alexandr-wang]] — MSL leader, Scale AI founder
-- [[entities/mark-zuckerberg]] — Meta CEO, strategic direction
+- [[concepts/mark-zuckerberg]] — Meta CEO, strategic direction
 
 ## Muse Spark 1.2 & Muse Code (August 5, 2026)
 

@@ -211,7 +211,7 @@ In December 2024, Khattab revealed that the original vision for ColBERT went bey
 
 In this framing, ColBERT's document encoder acts as a **hypernetwork** — a network that generates the parameters of another network (the query-conditional scoring function). This is a deeper architectural claim than the standard "late interaction" narrative: each document is parameterized as a learned function, and retrieval indexes should be pruning-capable (selectively evaluating only promising documents) rather than brute-force scanning all candidates.
 
-This connects to Khattab's broader [[entities/omar-khattab/philosophy|Decomposition Philosophy]]: decomposing the monolithic "single vector per document" paradigm into compositional scoring functions that can be selectively evaluated.
+This connects to Khattab's broader [[concepts/omar-khattab/philosophy|Decomposition Philosophy]]: decomposing the monolithic "single vector per document" paradigm into compositional scoring functions that can be selectively evaluated.
 
 Source: [[raw/articles/2024-12-31_omar-khattab_colbert-hypernetwork-retrieval]]
 

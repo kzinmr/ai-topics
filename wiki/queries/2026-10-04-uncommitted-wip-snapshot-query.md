@@ -177,7 +177,7 @@ index fc68621c..be826a0f 100644
  
  ## Related Concepts
  
--- [[concepts/anthropic]] — The practice of directing AI agents rather than writing code- [[concepts/anthropic/managed-agents]] — Hosted agent services and the debate around them
+-- [[entities/anthropic]] — The practice of directing AI agents rather than writing code- [[concepts/anthropic/managed-agents]] — Hosted agent services and the debate around them
 +- [[entities/anthropic]] — The practice of directing AI agents rather than writing code- [[concepts/anthropic/managed-agents]] — Hosted agent services and the debate around them
  - [[concepts/ai-agent-traps]] — Common pitfalls in agent deployment and design
  - [[concepts/compute-scaling-bottlenecks]] — Infrastructure constraints affecting agent capabilities
@@ -885,7 +885,7 @@ index efc0c002..e866cf74 100644
  
  ## Reasoning at Tiny Scale
  
--A 27M-parameter Attractor Model achieves 91.4% on Sudoku-Extreme and 93.1% on Maze-Hard — tasks where frontier models ([[entities/claude|Claude]], [[entities/gpt-o3|o3]], [[entities/deepseek-r1|DeepSeek-R1]]) fail completely, and specialized recursive reasoners collapse at larger scales.
+-A 27M-parameter Attractor Model achieves 91.4% on Sudoku-Extreme and 93.1% on Maze-Hard — tasks where frontier models ([[entities/claude|Claude]], [[entities/gpt-o3|o3]], [[concepts/deepseek-r1|DeepSeek-R1]]) fail completely, and specialized recursive reasoners collapse at larger scales.
 +A 27M-parameter Attractor Model achieves 91.4% on Sudoku-Extreme and 93.1% on Maze-Hard — tasks where frontier models ([[entities/claude|Claude]], [[entities/gpt-o3|o3]], [[concepts/deepseek-r1|DeepSeek-R1]]) fail completely, and specialized recursive reasoners collapse at larger scales.
  
  ## Related
@@ -1083,7 +1083,7 @@ index 387c2fd6..7aeffc9d 100644
  
  OpenAI's cloud-based coding agent platform. Sub-index of all Codex concept pages.
  
--See also: [[entities/openai-codex]] (entity page), [[concepts/openai|OpenAI]] (platform)
+-See also: [[entities/openai-codex]] (entity page), [[entities/openai|OpenAI]] (platform)
 +See also: [[entities/openai-codex]] (entity page), [[entities/openai|OpenAI]] (platform)
  
  ---
@@ -1092,7 +1092,7 @@ diff --git a/wiki/concepts/coding-agents/_index.md b/wiki/concepts/coding-agents
 index c00de821..1fa11b92 100644
 --- a/wiki/concepts/coding-agents/_index.md
 +++ b/wiki/concepts/coding-agents/_index.md
-@@ -65,6 +65,6 @@ Tool-specific pages: [[concepts/claude-code|Claude Code]], [[concepts/codex|Code
+@@ -65,6 +65,6 @@ Tool-specific pages: [[entities/claude-code|Claude Code]], [[entities/codex|Code
  - [[concepts/coding-agents/ramp-inspect]] — Ramp Inspect
  - [[concepts/coding-agents/pi-autoresearch]] — pi-autoresearch
  - [[concepts/coding-agents/mandate-equinox]] — Mandate Equinox
@@ -1117,7 +1117,7 @@ index a69450e6..84f28aff 100644
  
  In this framing, ColBERT's document encoder acts as a **hypernetwork** — a network that generates the parameters of another network (the query-conditional scoring function). This is a deeper architectural claim than the standard "late interaction" narrative: each document is parameterized as a learned function, and retrieval indexes should be pruning-capable (selectively evaluating only promising documents) rather than brute-force scanning all candidates.
  
--This connects to Khattab's broader [[entities/omar-khattab/philosophy|Decomposition Philosophy]]: decomposing the monolithic "single vector per document" paradigm into compositional scoring functions that can be selectively evaluated.
+-This connects to Khattab's broader [[concepts/omar-khattab/philosophy|Decomposition Philosophy]]: decomposing the monolithic "single vector per document" paradigm into compositional scoring functions that can be selectively evaluated.
 +This connects to Khattab's broader [[concepts/openclaw/philosophy|Decomposition Philosophy]]: decomposing the monolithic "single vector per document" paradigm into compositional scoring functions that can be selectively evaluated.
  
  Source: [[raw/articles/2024-12-31_omar-khattab_colbert-hypernetwork-retrieval]]
@@ -1408,7 +1408,7 @@ index 135dff3c..c64026af 100644
  
  ## Comparison with Other Computer Use Agents
  
--| Feature | Grok Computer | [[concepts/claude-computer-use|Claude Computer Use]] | [[concepts/anthropic-computer-use|Anthropic Computer Use]] |
+-| Feature | Grok Computer | [[concepts/claude-computer-use|Claude Computer Use]] | [[entities/anthropic-computer-use|Anthropic Computer Use]] |
 +| Feature | Grok Computer | [[concepts/claude-computer-use|Claude Computer Use]] | [[entities/anthropic-computer-use|Anthropic Computer Use]] |
  |---------|--------------|----------------------|--------------------------|
  | Method | Pixel reading | Screenshot + coordinates | Screenshot + coordinates |
@@ -1467,7 +1467,7 @@ index 0c1d7e00..185dcb7a 100644
  
  ## Related Concepts
  
--- [[concepts/late-interaction|Late Interaction]] — another approach to going beyond single-vector scoring, using multi-token representations
+-- [[entities/late-interaction|Late Interaction]] — another approach to going beyond single-vector scoring, using multi-token representations
 +- [[entities/late-interaction|Late Interaction]] — another approach to going beyond single-vector scoring, using multi-token representations
  - [[concepts/colbert|ColBERT and SPLADE]] — learned sparse retrieval methods that Latent Terms are benchmarked against
  - [[concepts/sparse-autoencoders|Sparse Autoencoders]] — the core extraction mechanism underlying Latent Terms
@@ -1479,7 +1479,7 @@ index b9dbf823..5ced33f1 100644
  
  ## See Also
  
--- [[concepts/llama-3|LLaMA 3]] — Previous generation
+-- [[entities/llama-3|LLaMA 3]] — Previous generation
 +- [[entities/llama-3|LLaMA 3]] — Previous generation
  - [[concepts/deepseek-v4|DeepSeek V4]] — Key competitor
  - [[concepts/open-weight-ai|Open-Weight AI]] — Licensing philosophy
@@ -1624,7 +1624,7 @@ index 6d63bbec..7cb5b186 100644
  - [[concepts/open-model-consortium]] — Contrast with Meta's traditional open-source Llama strategy
  - [[concepts/claude/mythos-preview]] — Concurrent frontier model release (Anthropic, closed)
  - [[entities/alexandr-wang]] — MSL leader, Scale AI founder
--- [[entities/mark-zuckerberg]] — Meta CEO, strategic direction
+-- [[concepts/mark-zuckerberg]] — Meta CEO, strategic direction
 +- [[concepts/mark-zuckerberg]] — Meta CEO, strategic direction
  
  ## Muse Spark 1.2 & Muse Code (August 5, 2026)
@@ -1656,7 +1656,7 @@ index 834d5373..da620b1f 100644
  
  ### 1. Goal-Driven > Idea-Driven (Even More Important in the Agent Era)
  
--In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[entities/claude-code]], and [[concepts/coding-agents/openai-codex]].
+-In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[entities/claude-code]], and [[entities/coding-agents/openai-codex]].
 +In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[entities/claude-code]], and [[entities/openai-codex]].
  
  ### 2. Constraining to General Solutions (Aligns with RLHF's Essence)
@@ -2045,7 +2045,7 @@ index abf2880d..15a7016b 100644
  - [[concepts/qwen]] — Qwen/OpenQwen model family
  - [[concepts/open-source-llms]] — Open-weight and open-source model landscape
  - [[concepts/gpt]] — AI coding agent ecosystem- [[concepts/gpt/index]] — Competing GPT model series (GPT-5.5, etc.)
--- [[concepts/anthropic]] — Anthropic's flagship coding model
+-- [[entities/anthropic]] — Anthropic's flagship coding model
 +- [[entities/anthropic]] — Anthropic's flagship coding model
  ## Sources
  
@@ -2105,7 +2105,7 @@ index 07ff63a9..6a0351fd 100644
  
  - [[concepts/anthropic/managed-agents]] — Managed agent services and their sandboxing approaches
  - [[concepts/coding-agents/ai-coding-reliability]] — Ensuring AI-generated code is correct and safe
--- [[concepts/anthropic]] — The practice of directing AI agents in software development- [[concepts/claude/mythos-glasswing]] — Anthropic's internal agent architecture
+-- [[entities/anthropic]] — The practice of directing AI agents in software development- [[concepts/claude/mythos-glasswing]] — Anthropic's internal agent architecture
 +- [[entities/anthropic]] — The practice of directing AI agents in software development- [[concepts/claude/mythos-glasswing]] — Anthropic's internal agent architecture
  - [[concepts/ai-agent-traps]] — Common pitfalls in agent deployment
  
@@ -2286,7 +2286,7 @@ index f5258e42..4d0d1d4e 100644
  | Model | Parameters | Approach | Key Result |
  |-------|-----------|----------|------------|
  | VibeThinker-3B | 3B dense | Curriculum SFT + GRPO + self-distill | AIME26 94.3/97.1 |
--| [[concepts/mai-thinking-1|MAI-Thinking-1]] | 35B active / 1T total (MoE) | RL hill-climbing from scratch | AIME 2025, SWE-Bench Pro |
+-| [[entities/mai-thinking-1|MAI-Thinking-1]] | 35B active / 1T total (MoE) | RL hill-climbing from scratch | AIME 2025, SWE-Bench Pro |
 +| [[entities/mai-thinking-1|MAI-Thinking-1]] | 35B active / 1T total (MoE) | RL hill-climbing from scratch | AIME 2025, SWE-Bench Pro |
  
  While MAI-Thinking-1 uses a much larger MoE architecture and enterprise-grade data, VibeThinker-3B demonstrates that a purely dense, 3B-parameter architecture — trained with the right pipeline — can reach comparable reasoning quality on key metrics.
@@ -2299,7 +2299,7 @@ index 5bc4d783..ccf38b89 100644
  
  ## Why it matters for the LLM stack
  
--- **Vector DB economics**: recall/latency/memory trade-offs at billion-vector scale are decided by quantizer choice, not index topology alone — see [[entities/vector-databases]].
+-- **Vector DB economics**: recall/latency/memory trade-offs at billion-vector scale are decided by quantizer choice, not index topology alone — see [[concepts/vector-databases]].
 +- **Vector DB economics**: recall/latency/memory trade-offs at billion-vector scale are decided by quantizer choice, not index topology alone — see [[concepts/vector-databases]].
  - **LLM inference crossover**: the same residual-quantization primitives underpin KV-cache and weight quantization, so quantizer results migrate directly between retrieval and serving stacks (cf. [[concepts/inference-optimization]]-adjacent topics like llama.cpp GGUF quant ladders).
  - **Standardization precedent**: VQ-bench follows the pattern of unifying evaluation when a literature fragments (FAISS's TREC tests for ANN, lm-eval-harness for models). Expect its pipeline grammar to become the default vocabulary.
@@ -2353,7 +2353,7 @@ index 0c61353b..e4b6da10 100644
  ## Related
  
  - [[concepts/prompt-engineering]] — Alex Banks's weekly AI newsletter-  — Platform where Banks teaches prompt engineering
--- [[concepts/anthropic]] — AI analytics startup founded by Banks- [[entities/anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills, Claude Cowork, and Claude Dispatch
+-- [[entities/anthropic]] — AI analytics startup founded by Banks- [[entities/anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills, Claude Cowork, and Claude Dispatch
 +- [[entities/anthropic]] — AI analytics startup founded by Banks- [[entities/anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills, Claude Cowork, and Claude Dispatch
  - [[concepts/agentic-engineering]] — Banks's Claude Cowork/Dispatch workflow series exemplifies agentic engineering patterns (async orchestration, phone-to-desktop pairing, walkie-talkie model)
  - [[concepts/resilient-prompt-engineering]] — Banks's core expertise area
@@ -2471,7 +2471,7 @@ index 95476392..fb827a0b 100644
  
  - [[entities/anthropic]] — Anthropic company
  - [[entities/claude-code]] — Claude Code AI coding agent (entity page)
--- [[concepts/anthropic]] — Claude Opus 4.7 model- [[entities/dario-amodei]] — Dario Amodei (Anthropic CEO)
+-- [[entities/anthropic]] — Claude Opus 4.7 model- [[entities/dario-amodei]] — Dario Amodei (Anthropic CEO)
 +- [[entities/anthropic]] — Claude Opus 4.7 model- [[entities/dario-amodei]] — Dario Amodei (Anthropic CEO)
  
  ## Sources
@@ -2873,7 +2873,7 @@ index 719d23a1..541388b0 100644
  - [[concepts/ai-alignment]] — Co-founded superalignment team with Sutskever; resigned citing safety deprioritization
  - [[entities/openai]] — Company Sutskever co-founded and led technically (2015–2024)
  - [[concepts/security-and-governance/ai-safety]] — SSI, Sutskever's current venture- [[concepts/security-and-governance/ai-safety]] — Sutskever's primary research focus at SSI
--- [[concepts/openai]] — Team Sutskever co-founded at OpenAI
+-- [[entities/openai]] — Team Sutskever co-founded at OpenAI
 +- [[entities/openai]] — Team Sutskever co-founded at OpenAI
  ## Sources
  
@@ -2886,7 +2886,7 @@ index 319dae9b..82fe2f24 100644
  - [[entities/pi]] — Pi coding agent philosophy
  - [[entities/manus]] — Former employer (Jul 2025 – Mar 2026, $75M → $100M ARR)
  - [[entities/deepmind]] — Current employer (Mar 2026–present, SF)
--- [[entities/logan-kilpatrick]] — DeepMind colleague / DevRel orbit
+-- [[concepts/logan-kilpatrick]] — DeepMind colleague / DevRel orbit
 +- [[concepts/logan-kilpatrick]] — DeepMind colleague / DevRel orbit
  - [[concepts/self-evolving-agents]] — Related concept
  
@@ -2909,7 +2909,7 @@ index cd74e3dd..6e9fa22a 100644
  
  - [[concepts/agent-resource-subscriptions]] — the generalized design pattern
  - [[entities/armin-ronacher]] — creator and primary architect
--- [[entities/sentry]] — parent company
+-- [[concepts/sentry]] — parent company
 +- [[concepts/sentry]] — parent company
  - [[concepts/coding-agents/agentic-coding]] — broader agentic coding context
  - [[entities/pi]] — Pi coding agent (Earendil), another minimal agent design
@@ -3220,7 +3220,7 @@ index 2f7ada66..d5f058bd 100644
  - [[concepts/multi-agents/multi-agent]] — Multi-agent AI systems
  - [[concepts/mcp]] — Model Context Protocol
  - [[entities/autogen]] — Microsoft AutoGen framework
--- [[entities/semantic-kernel]] — Microsoft Semantic Kernel
+-- [[concepts/semantic-kernel]] — Microsoft Semantic Kernel
 +- [[concepts/semantic-kernel]] — Microsoft Semantic Kernel
  - [[concepts/agent-framework]] — AI agent frameworks landscape
 diff --git a/wiki/entities/microsoft-ai-team.md b/wiki/entities/microsoft-ai-team.md
@@ -3270,7 +3270,7 @@ index a8f79bd7..599a8669 100644
  - [[entities/nvidia]] — parent company and broader model family
  - [[concepts/mixture-of-experts]] — MoE architecture principles
  - [[concepts/local-llm/_index]] — local deployment landscape
--- [[concepts/gpt/gpt-oss]] — OpenAI's open-weight competitor
+-- [[entities/gpt/gpt-oss]] — OpenAI's open-weight competitor
 +- [[entities/gpt-oss]] — OpenAI's open-weight competitor
  - [[entities/gemma-4]] — Google's open model family
  - [[concepts/reasoning-models]] — reasoning capabilities in LLMs
@@ -3388,7 +3388,7 @@ index 6b84d4cd..9c1a2a39 100644
  
  - [[entities/qwen3-6-plus|Qwen 3.6 Plus]] — predecessor model
  - [[concepts/gemini/gemini-3-5-flash|Gemini 3.5 Flash]] — competing agent-first model
--- [[entities/deepseek-v4|DeepSeek V4 Pro]] — competing agent model
+-- [[concepts/deepseek-v4|DeepSeek V4 Pro]] — competing agent model
 +- [[concepts/deepseek-v4|DeepSeek V4 Pro]] — competing agent model
  - [[concepts/agentic-engineering|Agentic Engineering]]
  - [[concepts/coding-agents/coding-agents|Coding Agents]]
@@ -3647,7 +3647,7 @@ index d1a1c1b2..bbdc4a3a 100644
     `concepts/ai-benchmarks`, `entities/bill-gates`, `entities/louis-abraham`) —
     the script maps `foo/index.md` to slug `foo` but never tries `foo/_index.md`,
     and the hub pages are intentionally indexed as `[[entities/_index]]`-style
--   child entries, not as bare `[[concepts/anthropic]]`. → Not real gaps.
+-   child entries, not as bare `[[entities/anthropic]]`. → Not real gaps.
 +   child entries, not as bare `[[entities/anthropic]]`. → Not real gaps.
  2. `concepts/gpt/_archive/*` — archived pages, correctly excluded from index.
  

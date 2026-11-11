@@ -246,7 +246,7 @@ This thesis directly challenges takeaway #3 above (cold start as the accepted me
 - [[concepts/agent-sandbox-patterns]] — isolate-the-tool vs isolate-the-agent
 - [[concepts/anthropic/managed-agents]] — Managed agent services and their sandboxing approaches
 - [[concepts/coding-agents/ai-coding-reliability]] — Ensuring AI-generated code is correct and safe
-- [[concepts/anthropic]] — The practice of directing AI agents in software development- [[concepts/claude/mythos-glasswing]] — Anthropic's internal agent architecture
+- [[entities/anthropic]] — The practice of directing AI agents in software development- [[concepts/claude/mythos-glasswing]] — Anthropic's internal agent architecture
 - [[concepts/ai-agent-traps]] — Common pitfalls in agent deployment
 
 ## Sources

@@ -59,7 +59,7 @@ The open-weight vs open-source debate continues with LLaMA 4's custom license te
 
 ## See Also
 
-- [[concepts/llama-3|LLaMA 3]] — Previous generation
+- [[entities/llama-3|LLaMA 3]] — Previous generation
 - [[concepts/deepseek-v4|DeepSeek V4]] — Key competitor
 - [[concepts/open-weight-ai|Open-Weight AI]] — Licensing philosophy
 - [[entities/meta|Meta AI]] — Developer organization

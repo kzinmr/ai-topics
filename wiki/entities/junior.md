@@ -69,7 +69,7 @@ Ronacher describes this as producing a "much more natural" developer experience.
 
 - [[concepts/agent-resource-subscriptions]] — the generalized design pattern
 - [[entities/armin-ronacher]] — creator and primary architect
-- [[entities/sentry]] — parent company
+- [[concepts/sentry]] — parent company
 - [[concepts/coding-agents/agentic-coding]] — broader agentic coding context
 - [[entities/pi]] — Pi coding agent (Earendil), another minimal agent design
 

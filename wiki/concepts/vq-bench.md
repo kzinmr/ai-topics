@@ -27,7 +27,7 @@ A **pipeline** composes primitives in a chain: compressing walks a vector forwar
 
 ## Why it matters for the LLM stack
 
-- **Vector DB economics**: recall/latency/memory trade-offs at billion-vector scale are decided by quantizer choice, not index topology alone — see [[entities/vector-databases]].
+- **Vector DB economics**: recall/latency/memory trade-offs at billion-vector scale are decided by quantizer choice, not index topology alone — see [[concepts/vector-databases]].
 - **LLM inference crossover**: the same residual-quantization primitives underpin KV-cache and weight quantization, so quantizer results migrate directly between retrieval and serving stacks (cf. [[concepts/inference-optimization]]-adjacent topics like llama.cpp GGUF quant ladders).
 - **Standardization precedent**: VQ-bench follows the pattern of unifying evaluation when a literature fragments (FAISS's TREC tests for ANN, lm-eval-harness for models). Expect its pipeline grammar to become the default vocabulary.
 

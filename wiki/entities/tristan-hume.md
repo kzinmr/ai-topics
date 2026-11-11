@@ -49,7 +49,7 @@ The S tier is hardware/hands-on engineering rather than AI or CS:
 Hume's tier list was itself amplified into a wider AI-discussion circuit: on 2026-11-07
 [[entities/andrej-karpathy|Andrej Karpathy]] quote-tweeted it ("Which looked excellent so clearly I had to
 turn it into TristanTube"), turning the tier list into the curation corpus for
-[[entities/tristantube|TristanTube]] — ~47,000 videos plus a TV mode, built "one-shotted with Claude Code in
+[[concepts/tristantube|TristanTube]] — ~47,000 videos plus a TV mode, built "one-shotted with Claude Code in
 3 minutes". See [[concepts/hackertube]] for the sibling project. *(logged; the tier list itself is not an AI
 technical source, so no raw article was ingested.)*
 

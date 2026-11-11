@@ -405,7 +405,7 @@ Source: [[raw/articles/martinalderson.com--posts-making-agents-fast--5a2940ba.md
 - [[concepts/ai-economics]] — Martin's analysis of AI cost structures and compute constraints
 -  — The "$285 billion markdown files" thesis
 -  — Two kinds of AI users
-- [[concepts/claude-code]] — Open source vulnerability cascades- [[entities/anthropic]] — Claude Code, Cowork, and the knowledge-work-plugin
+- [[entities/claude-code]] — Open source vulnerability cascades- [[entities/anthropic]] — Claude Code, Cowork, and the knowledge-work-plugin
 
 ## Sources
 

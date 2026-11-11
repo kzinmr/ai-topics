@@ -33,7 +33,7 @@ In October 2026 Apple quietly extended its developer site with an **ONNX and MLX
 ## Why it matters
 
 - **Removes a distribution bottleneck for local AI.** The hard part of on-device inference was never "can it run" so much as "find a correctly quantized, correctly-exported build." Apple hosting pre-optimized builds lowers that friction.
-- **Completes the MLX story.** [[entities/mlx|MLX]] provided the compute framework; the ModelScope catalog provides the content, giving Apple a first-party on-device model marketplace analogous to its App Store role.
+- **Completes the MLX story.** [[concepts/mlx|MLX]] provided the compute framework; the ModelScope catalog provides the content, giving Apple a first-party on-device model marketplace analogous to its App Store role.
 - **Signals Apple's stance on the local-vs-cloud split.** Apple is betting that differentiated *on-device* capability (privacy, latency, no metered cost) is where it can win without competing head-on with frontier API labs. This is the platform substrate for the economics argued in [[concepts/local-first-vs-frontier-api-economics]].
 - **Cross-validates the SLM wave.** A first-party on-device model store is infrastructure-level confirmation of the trend in [[concepts/small-language-models]] — on-device models are now mainstream enough to warrant a curated Apple catalog.
 

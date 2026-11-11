@@ -95,7 +95,7 @@ Although this article was written in 2017, its essence directly applies to AI re
 
 ### 1. Goal-Driven > Idea-Driven (Even More Important in the Agent Era)
 
-In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[entities/claude-code]], and [[concepts/coding-agents/openai-codex]].
+In 2026, AI agent development is driven by concrete goals like "make X work." Goal-driven development is mainstream through tools like Cursor, [[entities/claude-code]], and [[entities/coding-agents/openai-codex]].
 
 ### 2. Constraining to General Solutions (Aligns with RLHF's Essence)
 

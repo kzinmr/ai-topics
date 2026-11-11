@@ -77,7 +77,7 @@ Per [[entities/the-signal|The Signal]] (2026-11-08), Cat Wu **left Anthropic on 
 
 - [[entities/anthropic]] — Anthropic company
 - [[entities/claude-code]] — Claude Code AI coding agent (entity page)
-- [[concepts/anthropic]] — Claude Opus 4.7 model- [[entities/dario-amodei]] — Dario Amodei (Anthropic CEO)
+- [[entities/anthropic]] — Claude Opus 4.7 model- [[entities/dario-amodei]] — Dario Amodei (Anthropic CEO)
 
 ## Sources
 

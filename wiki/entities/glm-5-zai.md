@@ -87,7 +87,7 @@ Nate Lambert at Interconnects analyzed GLM-5.2 as a **step change for open agent
 - Z.ai founder told Elon Musk that **"open-weight Fable capabilities will be here sooner than Q1 2027"**
 
 ### First-Hand Experience
-- Lambert tested GLM-5.2 in [[concepts/claude-code|Claude Code]] via Fireworks API
+- Lambert tested GLM-5.2 in [[entities/claude-code|Claude Code]] via Fireworks API
 - **"The open weight model that feels right in coding harnesses as a general agent"** — the first open model to cross this threshold
 - Minor issue: Claude Code harness tried sending images to the model, which bricked the Fireworks API session (requires manual context clear)
 - Recommends always using **Max thinking effort**

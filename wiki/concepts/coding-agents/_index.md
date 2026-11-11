@@ -14,7 +14,7 @@ status: active
 # Coding Agents
 
 Sub-index of coding agent concepts, evaluations, and tool-specific pages.
-Tool-specific pages: [[concepts/claude-code|Claude Code]], [[concepts/codex|Codex]].
+Tool-specific pages: [[entities/claude-code|Claude Code]], [[entities/codex|Codex]].
 
 ---
 

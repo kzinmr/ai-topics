@@ -167,7 +167,7 @@ that adds a first-hand or contrarian angle rather than a summary. Notable in thi
 ## Related
 
 - [[concepts/prompt-engineering]] — Alex Banks's weekly AI newsletter-  — Platform where Banks teaches prompt engineering
-- [[concepts/anthropic]] — AI analytics startup founded by Banks- [[entities/anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills, Claude Cowork, and Claude Dispatch
+- [[entities/anthropic]] — AI analytics startup founded by Banks- [[entities/anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills, Claude Cowork, and Claude Dispatch
 - [[concepts/agentic-engineering]] — Banks's Claude Cowork/Dispatch workflow series exemplifies agentic engineering patterns (async orchestration, phone-to-desktop pairing, walkie-talkie model)
 - [[concepts/resilient-prompt-engineering]] — Banks's core expertise area
 

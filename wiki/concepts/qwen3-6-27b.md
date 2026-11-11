@@ -52,7 +52,7 @@ The Qwen3.6-27B release coincides with a broader industry shift where AI agents 
 - [[concepts/qwen]] — Qwen/OpenQwen model family
 - [[concepts/open-source-llms]] — Open-weight and open-source model landscape
 - [[concepts/gpt]] — AI coding agent ecosystem- [[concepts/gpt/index]] — Competing GPT model series (GPT-5.5, etc.)
-- [[concepts/anthropic]] — Anthropic's flagship coding model
+- [[entities/anthropic]] — Anthropic's flagship coding model
 ## Sources
 
 -  (GetSuperIntel Newsletter, 2026-04-23)

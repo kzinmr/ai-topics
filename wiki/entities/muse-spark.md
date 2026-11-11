@@ -134,5 +134,5 @@ Announced following a year of silence from Meta on model development, and after 
 - [[concepts/local-first-vs-frontier-api-economics]] — Muse Spark Open's desktop inference directly enables the local-first economics case
 - [[entities/muse-glimmer]] — 30B Apache-2.0 agentic model distilled from Muse Spark
 - [[entities/llm-cli]]
-- [[entities/llama-cpp]]
+- [[concepts/llama-cpp]]
 - 2026-04-08-meta-muse-spark-launch

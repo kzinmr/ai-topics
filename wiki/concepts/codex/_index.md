@@ -15,7 +15,7 @@ status: active
 
 OpenAI's cloud-based coding agent platform. Sub-index of all Codex concept pages.
 
-See also: [[entities/openai-codex]] (entity page), [[concepts/openai|OpenAI]] (platform)
+See also: [[entities/openai-codex]] (entity page), [[entities/openai|OpenAI]] (platform)
 
 ---
 

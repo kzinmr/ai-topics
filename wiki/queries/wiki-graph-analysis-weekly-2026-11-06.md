@@ -94,7 +94,7 @@ sources: []
 179 links can be auto-fixed (cross-namespace or bare → namespaced).
 
 - `entities/alloomi-ai`: [[context-engineering]] → [[concepts/context-engineering]]
-- `entities/apple-onnx-mlx-modelscope`: [[entities/mlx]] → [[concepts/mlx]]
+- `entities/apple-onnx-mlx-modelscope`: [[concepts/mlx]] → [[concepts/mlx]]
 - `entities/bill-gates`: [[ai-employment-displacement]] → [[concepts/ai-employment-displacement]]
 - `entities/cohere`: [[tools/wiz]] → [[entities/wiz]]
 - `entities/dqwen3-5`: [[diffusion-language-models]] → [[concepts/diffusion-language-models]]

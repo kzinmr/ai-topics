@@ -61,7 +61,7 @@ Attractor Models solve these by:
 
 ## Reasoning at Tiny Scale
 
-A 27M-parameter Attractor Model achieves 91.4% on Sudoku-Extreme and 93.1% on Maze-Hard — tasks where frontier models ([[entities/claude|Claude]], [[entities/gpt-o3|o3]], [[entities/deepseek-r1|DeepSeek-R1]]) fail completely, and specialized recursive reasoners collapse at larger scales.
+A 27M-parameter Attractor Model achieves 91.4% on Sudoku-Extreme and 93.1% on Maze-Hard — tasks where frontier models ([[entities/claude|Claude]], [[entities/gpt-o3|o3]], [[concepts/deepseek-r1|DeepSeek-R1]]) fail completely, and specialized recursive reasoners collapse at larger scales.
 
 ## Related
 

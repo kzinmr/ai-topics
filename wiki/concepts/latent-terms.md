@@ -86,6 +86,6 @@ Antoine Chaffin echoed this, noting the study's importance lies in "the future d
 
 ## Related Concepts
 
-- [[concepts/late-interaction|Late Interaction]] — another approach to going beyond single-vector scoring, using multi-token representations
+- [[entities/late-interaction|Late Interaction]] — another approach to going beyond single-vector scoring, using multi-token representations
 - [[concepts/colbert|ColBERT and SPLADE]] — learned sparse retrieval methods that Latent Terms are benchmarked against
 - [[concepts/sparse-autoencoders|Sparse Autoencoders]] — the core extraction mechanism underlying Latent Terms

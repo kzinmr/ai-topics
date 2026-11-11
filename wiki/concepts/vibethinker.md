@@ -79,7 +79,7 @@ VibeThinker-3B joins a growing class of small-but-capable reasoning models:
 | Model | Parameters | Approach | Key Result |
 |-------|-----------|----------|------------|
 | VibeThinker-3B | 3B dense | Curriculum SFT + GRPO + self-distill | AIME26 94.3/97.1 |
-| [[concepts/mai-thinking-1|MAI-Thinking-1]] | 35B active / 1T total (MoE) | RL hill-climbing from scratch | AIME 2025, SWE-Bench Pro |
+| [[entities/mai-thinking-1|MAI-Thinking-1]] | 35B active / 1T total (MoE) | RL hill-climbing from scratch | AIME 2025, SWE-Bench Pro |
 
 While MAI-Thinking-1 uses a much larger MoE architecture and enterprise-grade data, VibeThinker-3B demonstrates that a purely dense, 3B-parameter architecture — trained with the right pipeline — can reach comparable reasoning quality on key metrics.
 

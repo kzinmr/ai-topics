@@ -58,7 +58,7 @@ The proxy failure is not one blogger's hunch; independent 2026 evidence converge
 - [[concepts/agent-slop]] — the counterfeit *actions* this proxy failure rewards
 - [[concepts/agents-last-exam]] / [[concepts/benchmark-ceiling]] — measurement-layer evidence
 - [[entities/geoffrey-huntley]] — the insider-polemicist version of the same critique
-- [[concepts/ai-engineer-worlds-fair-2026]] — the conference-citation loop under attack
+- [[entities/ai-engineer-worlds-fair-2026]] — the conference-citation loop under attack
 
 ## Sources
 

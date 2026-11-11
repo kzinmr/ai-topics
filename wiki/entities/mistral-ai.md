@@ -117,7 +117,7 @@ Mistral announced **Leanstral**, a project applying LLMs to formal proof generat
 
 > *Source: [[raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md|AINews — Aug 5 2026]]*
 
-Mistral launched **Shieldstral**, a **3B open-weights safety/moderation model** designed for **on-device moderation/classification**. [[entities/vllm|vLLM]] shipped day-0 serving support and highlighted: **one-forward-pass safety scoring**, multimodal input, **12 languages**, and **32k context**. This aligns with Mistral's "deployable specialization" strategy (see Model Architecture Philosophy below) — small, specialized, open models alongside frontier efforts.
+Mistral launched **Shieldstral**, a **3B open-weights safety/moderation model** designed for **on-device moderation/classification**. [[concepts/vllm|vLLM]] shipped day-0 serving support and highlighted: **one-forward-pass safety scoring**, multimodal input, **12 languages**, and **32k context**. This aligns with Mistral's "deployable specialization" strategy (see Model Architecture Philosophy below) — small, specialized, open models alongside frontier efforts.
 
 ## European Competition: Quasar 438B (Sep 2026)
 

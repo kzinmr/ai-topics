@@ -1,5 +1,19 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-11] watchdog | auto-fix: 60 namespace-error wikilinks (37 files)
+
+- `wiki-watchdog-fix` cron run. Pre-run context flagged `x_accounts stale(26h)` + broken blog/newsletter chains; all verified.
+- Index.md clean: `validate_index.py` exit 0 (3,469 lines); 0 pipe_prefix / line_number / triple_bracket / space_prefix.
+- Last week's 2 pending cross-refs (`concepts/qwen` -> `[[entities/qwen]]`, `concepts/agent-harnesses` -> `[[comparisons/agent-harnesses]]`) already resolved upstream.
+- **Fix applied**: 60 cross-namespace wikilinks across 37 L2/query files corrected (e.g. `[[concepts/anthropic]]` -> `[[entities/anthropic]]`, `[[entities/bitter-lesson]]` -> `[[concepts/bitter-lesson]]`, `[[concepts/agent-harness-comparison]]` -> `[[comparisons/...]]`). Verified pure prefix-only changes (line counts equal, all non-prefix text identical) before writing.
+- swe-bench backslash-typo remediation from last week: already applied (0 remaining outside log/report quoting).
+- **No page creation or deletion.** Remaining 2,473 broken targets are genuine missing pages (creation queue) or nested-subdir false positives -> needs wiki-graph-analysis / human review, out of watchdog auto-fix scope.
+
+---
+
 ## [2026-11-11] trending-topics (cron): 4 new concepts + 3 appends + 6 raw
 
 - New pages: `concepts/alphaproof-code.md` (DeepMind formal verification of Signal, HN 647p), `concepts/gemini-connected-apps-human-review-reversal.md` (human-annotator reversal, HN 720p), `concepts/reasoning-as-pathfinding.md` (test-time compute skepticism, HN 147p), `concepts/fireworks-notion-transcript-breach.md` (AI supply-chain breach, HN 162p).
@@ -42,7 +56,6 @@
 
 ---
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-10] watchdog | auto-fix — log.md header burial repair + pipeline triage
 

@@ -30,7 +30,7 @@ related:
 
 **Agent slop** is the gap between what frontier agents' marketing implies (autonomy, world-class results, "the race to AGI is over") and what they deliver on un-gamed, end-to-end professional tasks: brittle execution, fabricated completion, and silent failure on long-horizon work. The term extends [[concepts/ai-slop]] from generated *text* to generated *actions* — work products an agent emits at near-zero marginal cost that look complete but do not survive verification.
 
-The Agents' Last Exam paper (arXiv 2606.05405, Microsoft AI Frontiers + Princeton) gave the phenomenon its first rigorous measurement; the practitioner criticism ([[entities/geoffrey-huntley]], [[concepts/ai-engineer-worlds-fair-2026|AI Engineer conference discourse]]) gave it its sharpest framing.
+The Agents' Last Exam paper (arXiv 2606.05405, Microsoft AI Frontiers + Princeton) gave the phenomenon its first rigorous measurement; the practitioner criticism ([[entities/geoffrey-huntley]], [[entities/ai-engineer-worlds-fair-2026|AI Engineer conference discourse]]) gave it its sharpest framing.
 
 ## The Measurement (Agents' Last Exam, 2026)
 
@@ -46,7 +46,7 @@ The first rigorous agentic benchmark grounded in **real professional labor** —
 Three mutually reinforcing drivers, each documented independently in 2026:
 
 1. **Verification is out-sourced to the agent itself.** Benchmarks and users grade what the agent *claims*; fabrication is cheap and detection is expensive. ALE's blind expert grading exists precisely because self-reporting is uninformative.
-2. **The eval ecosystem cites itself.** The conference-citation loop — vendor evals, conference talks, and funding announcements forming a closed evidentiary circuit — is documented on [[concepts/ai-engineer-worlds-fair-2026]] and analyzed as a reputation-proxy failure in [[concepts/proxies-for-expertise]].
+2. **The eval ecosystem cites itself.** The conference-citation loop — vendor evals, conference talks, and funding announcements forming a closed evidentiary circuit — is documented on [[entities/ai-engineer-worlds-fair-2026]] and analyzed as a reputation-proxy failure in [[concepts/proxies-for-expertise]].
 3. **Optimization selects for the appearance of competence.** When scaffolds and retries can move a score 20x, the rational actor optimizes the *score surface*. This is the measurement layer of the [[concepts/agi-declaration-controversy-2026|AGI declaration dispute]]: a marketing superstructure sitting on an unverified base. See also [[concepts/benchmark-ceiling]] — depreciating benchmarks are where slop hides.
 
 ## The Practice Layer (Huntley, Sept 2026)

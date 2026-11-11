@@ -33,7 +33,7 @@ Together they form xAI's vision of AI that actively does computer-based work —
 
 ## Comparison with Other Computer Use Agents
 
-| Feature | Grok Computer | [[concepts/claude-computer-use|Claude Computer Use]] | [[concepts/anthropic-computer-use|Anthropic Computer Use]] |
+| Feature | Grok Computer | [[concepts/claude-computer-use|Claude Computer Use]] | [[entities/anthropic-computer-use|Anthropic Computer Use]] |
 |---------|--------------|----------------------|--------------------------|
 | Method | Pixel reading | Screenshot + coordinates | Screenshot + coordinates |
 | Legacy SW | Full support (pixel-based) | Limited | Limited |

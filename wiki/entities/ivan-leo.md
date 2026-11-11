@@ -152,7 +152,7 @@ GitHub ([@ivanleomk](https://github.com/ivanleomk), Singapore-based, 212 public 
 - [[entities/pi]] — Pi coding agent philosophy
 - [[entities/manus]] — Former employer (Jul 2025 – Mar 2026, $75M → $100M ARR)
 - [[entities/deepmind]] — Current employer (Mar 2026–present, SF)
-- [[entities/logan-kilpatrick]] — DeepMind colleague / DevRel orbit
+- [[concepts/logan-kilpatrick]] — DeepMind colleague / DevRel orbit
 - [[concepts/self-evolving-agents]] — Related concept
 
 ## Sources

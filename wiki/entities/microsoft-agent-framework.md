@@ -83,5 +83,5 @@ Microsoft Agent Framework v1.0 represents the convergence of two major Microsoft
 - [[concepts/multi-agents/multi-agent]] — Multi-agent AI systems
 - [[concepts/mcp]] — Model Context Protocol
 - [[entities/autogen]] — Microsoft AutoGen framework
-- [[entities/semantic-kernel]] — Microsoft Semantic Kernel
+- [[concepts/semantic-kernel]] — Microsoft Semantic Kernel
 - [[concepts/agent-framework]] — AI agent frameworks landscape

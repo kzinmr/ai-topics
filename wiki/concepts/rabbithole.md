@@ -50,5 +50,5 @@ Rabbithole takes the concept of an infinite canvas (like Miro or FigJam) and app
 
 - [[entities/shlok-khemani]] — Creator of Rabbithole
 - [[concepts/mcp]] — Model Context Protocol, which Rabbithole uses for agent integration
-- [[concepts/claude-code]] — Claude Code, one of the agents Rabbithole supports
+- [[entities/claude-code]] — Claude Code, one of the agents Rabbithole supports
 - [[concepts/ai-for-learning]] — AI-augmented learning approaches

@@ -438,7 +438,7 @@ This infrastructure makes [[concepts/post-training]] practical for ongoing model
 
 ## Local Inference (Unsloth) — July 2026
 
-[[entities/unsloth|Unsloth]] released Dynamic GGUF quantizations enabling Kimi K3 to run on consumer-accessible hardware. Key quant tiers:
+[[concepts/unsloth|Unsloth]] released Dynamic GGUF quantizations enabling Kimi K3 to run on consumer-accessible hardware. Key quant tiers:
 
 | Quant | Size (GB) | Top-1 Accuracy | Perplexity | Hardware Requirement |
 |-------|-----------|----------------|------------|---------------------|

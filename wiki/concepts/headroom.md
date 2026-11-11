@@ -45,7 +45,7 @@ Headroom is designed to work with a wide range of coding agents through a portab
 - [[entities/codex|Codex]]
 - [[entities/cursor-ai|Cursor]]
 - Aider
-- [[concepts/openclaw|OpenClaw]]
+- [[entities/openclaw|OpenClaw]]
 - Hermes Agent
 - Goose
 - Continue
