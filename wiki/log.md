@@ -2,6 +2,19 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-11] x-accounts-scan: Weitekamp RDM/Operating System One talk (aiDotEngineer)
+
+- Scan run 20261111T223024Z: 84 tracked, 10 scanned (budget rotation, cursor 80→7), 2 new posts, 1 error (`willccbb`: could not resolve user_id).
+- New substantive item: **Raymond Weitekamp (@raw_works)** announced his aiDotEngineer talk
+  "Your Agent Doesn't Need an LLM for Every Decision" (https://www.youtube.com/watch?v=hFNbPmzzcEs) —
+  first public video on **Recursive Decision Models**, plus new **Operating System One** (real-time
+  interfaces) and **oSo** (computer-use decision agent, oSo.computer).
+- Saved metadata-only raw capture `raw/articles/2026-11-11_raw-works_ai-engineer-rdm-os1-talk.md`
+  (yt-dlp caption download hit repeated YouTube 429; transcript pending, retry command noted in file).
+- Updated `entities/raw-works.md` (new talk section + source) and `concepts/recursive-decision-models.md`
+  (public-talk section, sources, updated date).
+- Other new post: @0xsero concert-ticket tweet (Brand New / SF) — off-topic for wiki, not ingested.
+
 ## [2026-11-11] skeleton-enrich-daily: stub backlog enrichment (4 concept pages)
 
 > The `status: skeleton` backlog remains **empty** (0 markers in entities/ and concepts/),

@@ -2,7 +2,7 @@
 title: "Raymond Weitekamp (@raw_works)"
 type: entity
 created: 2026-04-21
-updated: 2026-10-28
+updated: 2026-11-11
 tags:
   - entity
   - person
@@ -27,6 +27,7 @@ sources:
   - raw/articles/2026-02-12_raw-works_ypi-recursive-coding-agent.md
   - raw/articles/2026-06-20_raw-works_machine-studying-library-and-lab.md
   - https://raw.works/
+  - raw/articles/2026-11-11_raw-works_ai-engineer-rdm-os1-talk.md
 ---
 
 # Raymond Weitekamp (@raw_works)
@@ -72,6 +73,31 @@ Published two foundational articles on RLMs:
 - **RLM scaffolding**: Using DSPy.RLM to enable recursive prompting over long contexts
 - **Long-reasoning benchmarks**: LongCoT, Oolong, LongMemEval
 - **Small model + strong scaffold**: Proving scaffold quality > raw model size
+
+## aiDotEngineer Talk: "Your Agent Doesn't Need an LLM for Every Decision" (Nov 11, 2026)
+
+Weitekamp's talk on **"Operating System One"** went live on the aiDotEngineer YouTube channel
+([video](https://www.youtube.com/watch?v=hFNbPmzzcEs), announced via
+[tweet](https://x.com/raw_works/status/2120533459227562414) on 2026-11-11).
+
+Content (per the official description):
+
+- Extends the now-mainstream **RLM harness pattern** from generative LLMs to **decision models**
+  (fast classifiers, a.k.a. **System One models**) — building "far more efficient workflows for
+  coding agents, information retrieval and computer use."
+- Public video presentation of **Recursive Decision Models (RDMs)** — see
+  [[concepts/recursive-decision-models]] (first written up on raw.works, Oct 1, 2026).
+- Introduces **"Operating System One"** — his vision for *real-time interfaces*, the interactive
+  counterpart to System One decision models.
+- Previews **oSo** — a new **computer-use decision agent** (https://oSo.computer).
+
+Canonical resources: https://recursivedecisionmodels.com · https://github.com/rawwerks/rdm ·
+https://openprose.ai
+
+> Transcript pending: the aiDotEngineer captions could not be pulled on 2026-11-11 (YouTube 429
+> rate limit from the scan host). Raw capture is metadata-only at
+> `raw/articles/2026-11-11_raw-works_ai-engineer-rdm-os1-talk.md`; re-run yt-dlp to fill in the
+> transcript into `transcripts/`.
 
 ## Related Entities
 

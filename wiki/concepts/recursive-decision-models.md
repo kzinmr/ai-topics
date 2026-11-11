@@ -1,7 +1,7 @@
 ---
 title: "Recursive Decision Models (RDMs)"
 created: 2026-10-28
-updated: 2026-10-28
+updated: 2026-11-11
 type: concept
 tags:
   - rlm
@@ -17,6 +17,8 @@ related: "[[concepts/rlm-recursive-language-models]], [[concepts/system-one-mode
 sources:
   - raw/articles/2026-10-01_raw-works_recursive-decision-models.md
   - https://raw.works/recursive-decision-models/
+  - raw/articles/2026-11-11_raw-works_ai-engineer-rdm-os1-talk.md
+  - https://www.youtube.com/watch?v=hFNbPmzzcEs
 ---
 
 # Recursive Decision Models (RDMs)
@@ -44,6 +46,22 @@ RDMs became expressible once the DSPy team (per Weitekamp, "my esteemed peers at
 Canonical example: a `Search` signature asking *"Is the answer stated in this text?"* (a `Noul`/boolean output) paired with a `look` tool that recursively halves the text — a decision-model-driven binary search over a handbook, with no generation involved.
 
 Weitekamp prototyped the idea in a repo dubbed **"one-system"**, which began as a "LiteLLM for Jev" gateway before he realized recursion could be supported by composing requests through the gateway itself.
+
+## Public talk: aiDotEngineer, "Your Agent Doesn't Need an LLM for Every Decision" (Nov 11, 2026)
+
+Weitekamp presented RDMs on the aiDotEngineer YouTube channel
+([video](https://www.youtube.com/watch?v=hFNbPmzzcEs)). Per the official description, the talk
+frames RDMs as an efficiency play — *"your agent doesn't need an LLM for every decision"* — applying
+the RLM harness pattern to System One decision models for **coding agents, information retrieval, and
+computer use**. It also introduces two new artifacts not yet written up in full:
+
+- **"Operating System One"** — a vision for **real-time interfaces**, the interactive/UI counterpart
+  to System One decision models (the title the talk was announced under).
+- **oSo** — a previewed **computer-use decision agent** (https://oSo.computer), the natural extension
+  of RDMs from text/classifier decisions to action selection.
+
+Canonical resources: https://recursivedecisionmodels.com · https://github.com/rawwerks/rdm.
+Transcript pending (YouTube 429 at scan time); see `raw/articles/2026-11-11_raw-works_ai-engineer-rdm-os1-talk.md`.
 
 ## Naming debate
 
@@ -73,3 +91,5 @@ Weitekamp deliberately picks "decision models" over Diogo Almeida's preferred "S
 
 - [Recursive Decision Models](https://raw.works/recursive-decision-models/) (raw.works, Oct 1, 2026)
 - Raw: `raw/articles/2026-10-01_raw-works_recursive-decision-models.md`
+- [Your Agent Doesn't Need an LLM for Every Decision — Raymond Weitekamp, OpenProse](https://www.youtube.com/watch?v=hFNbPmzzcEs) (aiDotEngineer, Nov 11, 2026)
+- Raw: `raw/articles/2026-11-11_raw-works_ai-engineer-rdm-os1-talk.md`
