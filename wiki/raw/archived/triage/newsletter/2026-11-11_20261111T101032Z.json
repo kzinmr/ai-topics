@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-11-11T10:37:09.909458+00:00",
+  "triage_run_id": "20261111T101032Z",
+  "source": "newsletter",
+  "summary_ja": "5 ニュースレター（Lenny's Newsletter / Ben's Bites / AI Weekly / Hyperdimensional(Dean Ball) / Superintel(beehiiv)）を triage。Superintel のリード記事 4 本のうち Fable 5.2・Mythos 5.2・TPU 8tx/8i Max は 2026-11-10 の sibling pipeline が既に取り込み済み（concept/event ページに具体ベンチ数値まで存在することを本文で確認）なので reference に格下げ。未カバーは Meta Muse Ember のみで、raw（Simon Willison 経由、価格表・Pareto フロンティア分析あり）が揃うため新規ページとして take。加えて Anthropic IPO roadshow 開始（全 wiki 0 件）、Lenny のテック求人市場レポート（PM+75%等の実データ）、Dean Ball の METR R&D 倍速評価への RSI 反論論説（dean-ball.md は 6/27 止まり、ai-rd-acceleration-doubling.md は Ball 論点未収録）を take。Ben's Bites は Ramp マーケティングエッセイ、AI Weekly は RL 本販売告知で実質 chrome のため reference/skip に回した。",
+  "decisions": [
+    {
+      "item_id": "<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-3,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-8,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-9",
+      "source": "newsletter",
+      "source_name": "AI Weekly / Andriy Burkov (Substack, publication_id=61455)",
+      "title": "The Hundred-Page Deep Reinforcement Learning Book is now available for purchase!",
+      "url": "https://aiweekly.co/p/the-hundred-page-deep-reinforcement",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-the-hundred-page-deep-reinforcement-learning-book-is-now-available-for-purchase.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ paid 書籍の販売告知のみ。custom domain は Page not found を返し、14 リンクは全て Substack chrome＋プロモ redirect で記事本文は存在しない。開発・イベントではなく wiki 変更は不要だが、Hundred-Page 系の教育リソース（前作 Hundred-Page LLM/ML）を AI Weekly 側の実績として記録する価値は残るため reference とする。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-10\n**Subject:** The Hundred-Page Deep Reinforcement Learning Book is now available for purchase!\n**Collected:** 2026-11-11T10:10:29.892684+00:00\n**Articles linked:** 14\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20"
+    },
+    {
+      "item_id": "<20261110153549.3.17990b64d7912c21@mg2.substack.com>-1,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-2,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-7,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-8",
+      "source": "newsletter",
+      "source_name": "Ben's Bites (Substack, publication_id=4379299)",
+      "title": "How I got seduced (Ramp のスポンサー／ブランディング戦略エッセイ)",
+      "url": "https://www.bensbites.com/p/how-i-got-seduced",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-how-i-got-seduced.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ 本文 44 段落を実読。内容は Ramp（決済/経費管理）のマーケティング浸透戦略の個人エッセイで、Super Bowl での Kevin（Brian）ガラス箱 60 万件経費処理 stunt、lookalike 9 人、Brian 髭剃り帽、Colossus magazine の広告分析などが主体。AI 関連の言及は Adobe Firefly の「Adobe Creative Agent」（Creative Cloud ツールを使う前に plan をレビューできる）など主に協賛枠で、モデル/エージェント技術の進展としては新情報なし。wiki の AI 技術スコープ外のため新規ページ不要。entities/bensbites-com.md は存在しない。同 pub の恒常的な issue 記録を維持する場合は entities/lenny.md 系の執筆者ページ側へ日付メモ程度の位置づけ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-10\n**Subject:** How I got seduced\n**Collected:** 2026-11-11T10:10:28.607179+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2"
+    },
+    {
+      "item_id": "<20261110.191135.14b31155@mta16>-4,<20261110.191135.14b31155@mta16>-5,<20261110.191135.14b31155@mta16>-6,<20261110.191135.14b31155@mta16>-7,<20261110.191135.14b31155@mta16>-8,<20261110.191135.14b31155@mta16>-9,<20261110.191135.14b31155@mta16>-10,<20261110.191135.14b31155@mta16>-11,<20261110.191135.14b31155@mta16>-12,<20261110.191135.14b31155@mta16>-13,<20261110.191135.14b31155@mta16>-14,<20261110.191135.14b31155@mta16>-15,<20261110.191135.14b31155@mta16>-16,<20261110.191135.14b31155@mta16>-17,<20261110.191135.14b31155@mta16>-18,<20261110.191135.14b31155@mta16>-19,<20261110.191135.14b31155@mta16>-20",
+      "source": "newsletter",
+      "source_name": "Superintel (read.getsuperintel.com, beehiiv)",
+      "title": "Claude Fable 5.2 / Mythos 5.2 + Google TPU 8tx・8i Max（同 newsletter の残リンク）",
+      "url": "https://read.getsuperintel.com/p/claude-fable-5-2-excels-far-beyond-code",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-claude-fable-5-2-excels-far-beyond-code.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 本日分のリード記事だが、既に 2026-11-10 の sibling pipeline（newsletter-wiki-ingest / blog-ingest）が取り込み済みで重複作成不要。検証結果：concepts/claude/fable-5.md に「## Claude Fable 5.2 (November 9, 2026)」セクション（FrontierCode 2.0 49.1%、FrontierSWE v2 69.9%、AutomationBench 51.4%、CyScenarioBench 76.3 等＋Advisor/Orchestrator tiered topology の位置づけ、updated 2026-11-10）、concepts/claude/mythos.md に「## Mythos 5.2 (November 9, 2026)」（CVE Rediscovery 89.6、Terminal-Bench-Science 0.1 75.3、タンパク質 de-novo binder 85.1、updated 2026-11-10）、entities/google-tpu.md に「## Eighth Generation Completes: TPU 8tx and TPU 8i Max (November 9, 2026)」（8tx=機密コンピューティング、Boardfly ネットワークで 8t比 2x 低遅延／8i Max=2チップ 1パッケージ、2x compute・SRAM・HBM 帯域、4システムマトリクス、updated 2026-11-10）が実在。残 beehiiv リンク 17 本は chrome／同一 4 記事への重複と推定。",
+      "candidate_wiki_path": "concepts/claude/fable-5.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-10\n**Subject:** 🧠 Claude Fable 5.2 Excels Far Beyond Code\n**Collected:** 2026-11-11T10:10:31.967221+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/3a28c577dd4e83482af682284eaf4c18fffed29236a22c3cdc8b58501cc69bd9f66bcfaa44c4268b139"
+    },
+    {
+      "item_id": "<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-1,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-2,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-4,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-5,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-6,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-7,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-10,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-11,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-12,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-13,<20261110160345.3.7d758c2a163b74df@mg2.substack.com>-14",
+      "source": "newsletter",
+      "source_name": "AI Weekly (Substack, publication_id=61455)",
+      "title": "AI Weekly chrome（like/comment/share/restack/read-in-app/@author/subscribe-widget/OAuth・UUID redirect）",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-the-hundred-page-deep-reinforcement-learning-book-is-now-available-for-purchase.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack メール chrome のみ（submitLike / action=post-comment / action=share / restack-comment / email-read-in-app / @author profile / subscribe-widget / redirect/2/eyJ... OAuth / redirect/UUID はメールセッショントークン必須で解決不能）。curated 実記事は Link 1 の投稿本体に包含されるため重複評価不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-10\n**Subject:** The Hundred-Page Deep Reinforcement Learning Book is now available for purchase!\n**Collected:** 2026-11-11T10:10:29.892684+00:00\n**Articles linked:** 14\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20"
+    },
+    {
+      "item_id": "<20261110153549.3.17990b64d7912c21@mg2.substack.com>-3,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-4,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-5,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-6,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-9,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-10,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-11,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-12,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-13,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-14,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-15,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-16,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-17,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-18,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-19,<20261110153549.3.17990b64d7912c21@mg2.substack.com>-20",
+      "source": "newsletter",
+      "source_name": "Ben's Bites (Substack, publication_id=4379299)",
+      "title": "Ben's Bites chrome（like/comment/share/restack/read-in-app/@author/subscribe-widget/OAuth・UUID redirect）",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-how-i-got-seduced.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack メール chrome のみ（submitLike / action=post-comment / action=share / restack-comment / email-read-in-app / @author profile / subscribe-widget / redirect/2/eyJ... OAuth / redirect/UUID はメールセッショントークン必須で解決不能）。curated 実記事は Link 1 の投稿本体に包含されるため重複評価不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-10\n**Subject:** How I got seduced\n**Collected:** 2026-11-11T10:10:28.607179+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtc3Vic2"
+    },
+    {
+      "item_id": "<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-3,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-4,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-5,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-6,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-9,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-10,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-11,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-12,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-13,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-14,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-15,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-16,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-17,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-18,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-19,<20261110172458.3.34503cd23c5a7088@mg2.substack.com>-20",
+      "source": "newsletter",
+      "source_name": "Hyperdimensional / Dean Ball (Substack, publication_id=2244049)",
+      "title": "Hyperdimensional chrome（like/comment/share/restack/read-in-app/@author/subscribe-widget/OAuth・UUID redirect）",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-iron-makes-iron.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack メール chrome のみ（submitLike / action=post-comment / action=share / restack-comment / email-read-in-app / @author profile / subscribe-widget / redirect/2/eyJ... OAuth / redirect/UUID はメールセッショントークン必須で解決不能）。curated 実記事は Link 1 の投稿本体に包含されるため重複評価不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-10\n**Subject:** Iron Makes Iron\n**Collected:** 2026-11-11T10:10:31.020216+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwt"
+    },
+    {
+      "item_id": "<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-3,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-4,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-5,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-6,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-9,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-10,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-11,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-12,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-13,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-14,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-15,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-16,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-17,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-18,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-19,<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>-20",
+      "source": "newsletter",
+      "source_name": "Lenny's Newsletter (Substack, publication_id=10845)",
+      "title": "Lenny's Newsletter chrome（like/comment/share/restack/read-in-app/@author/subscribe-widget/OAuth・UUID redirect）",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-state-of-the-tech-job-market-late-2026.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Substack メール chrome のみ（submitLike / action=post-comment / action=share / restack-comment / email-read-in-app / @author profile / subscribe-widget / redirect/2/eyJ... OAuth / redirect/UUID はメールセッショントークン必須で解決不能）。curated 実記事は Link 1 の投稿本体に包含されるため重複評価不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-10\n**Subject:** State of the tech job market: late 2026\n**Collected:** 2026-11-11T10:10:27.113560+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwm"
+    },
+    {
+      "item_id": "<20261110.191135.14b31155@mta16>-4",
+      "source": "newsletter",
+      "source_name": "Superintel (beehiiv)",
+      "title": "beehiiv トラッキングURL 残りの chrome/重複分",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-claude-fable-5-2-excels-far-beyond-code.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ raw ファイルは本文を持たず beehiiv v2/c/ トラッキングURL 20 本の羅列のみ。inbox pre-triage で解決済みの実体は 4 記事（Fable 5.2 / Mythos 5.2、TPU 8tx・8i Max、Muse Ember、Anthropic roadshow）に集約され、上記 take/reference で全て評価済み。残 URL は subscribe/シェア系・同一記事への重複変種と推定され、個別解決の費用対効果が低いためスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-10\n**Subject:** 🧠 Claude Fable 5.2 Excels Far Beyond Code\n**Collected:** 2026-11-11T10:10:31.967221+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/3a28c577dd4e83482af682284eaf4c18fffed29236a22c3cdc8b58501cc69bd9f66bcfaa44c4268b139"
+    }
+  ]
+}

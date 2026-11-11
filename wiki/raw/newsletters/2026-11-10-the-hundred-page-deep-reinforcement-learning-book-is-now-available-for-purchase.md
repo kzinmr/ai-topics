@@ -1,0 +1,70 @@
+---
+title: "The Hundred-Page Deep Reinforcement Learning Book is now available for purchase!"
+date: 2026-11-10
+processed_at: 2026-11-11T10:10:29.892675+00:00
+source_label: "uid=899"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-11-10
+
+**Subject:** The Hundred-Page Deep Reinforcement Learning Book is now available for purchase!
+**Collected:** 2026-11-11T10:10:29.892684+00:00
+**Articles linked:** 14
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZSZyPTJmbHg2Jm5leHQ9aHR0cHMlM0ElMkYlMkZhaXdlZWtseS5zdWJzdGFjay5jb20lMkZwJTJGdGhlLWh1bmRyZWQtcGFnZS1kZWVwLXJlaW5mb3JjZW1lbnQiLCJwIjoyMjQyNjc5NzEsInMiOjYxNDU1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3OTQzMjY4NzIsImV4cCI6MjEwOTkwMjg3MiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.ihUFZaBEU-LMzJ1sHL-VDhRhSSY78stgXYdemVV_1lw?
+
+## 2. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vcC90aGUtaHVuZHJlZC1wYWdlLWRlZXAtcmVpbmZvcmNlbWVudD91dG1fY2FtcGFpZ249ZW1haWwtaGFsZi1wb3N0JnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1qUXlOamM1TnpFc0ltbGhkQ0k2TVRjNU5ETXlOamczTVN3aVpYaHdJam94TnprMk9URTRPRGN4TENKcGMzTWlPaUp3ZFdJdE5qRTBOVFVpTENKemRXSWlPaUp3YjNOMExYSmxZV04wYVc5dUluMC5vUVNfc1k3bUJLN3BRR2JDTVAxQm44NXVMcThCcXBBeXJSNmw2bnpRS1FZIiwicCI6MjI0MjY3OTcxLCJzIjo2MTQ1NSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzk0MzI2ODcyLCJleHAiOjIxMDk5MDI4NzIsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.Oz0y_t2UmVoGN4sVIvWqfrLtLyv2LSP4XBKnrboDMp4?
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=224267971&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMjQyNjc5NzEsImlhdCI6MTc5NDMyNjg3MSwiZXhwIjoxNzk2OTE4ODcxLCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.oQS_sY7mBK7pQGbCMP1Bn85uLq8BqpAyrR6l6nzQKQY
+
+## 4. Link
+
+- **URL:** https://substack.com/@aiweekly
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=224267971&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMjQyNjc5NzEsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzk0MzI2ODcyLCJleHAiOjE3OTY5MTg4NzIsImlzcyI6InB1Yi02MTQ1NSIsInN1YiI6InJlYWN0aW9uIn0.RF43kceaZyPPtWmG5fTLJ2bYiKENZ3TZVVQIvLJ-2SA&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=224267971&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMjQyNjc5NzEsImlhdCI6MTc5NDMyNjg3MiwiZXhwIjoxNzk2OTE4ODcyLCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.-iiOpPxEeWbkKV28vlRebObpnU5zS8fQXbWYQhwek5E&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=224267971&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMjQyNjc5NzEsImlhdCI6MTc5NDMyNjg3MSwiZXhwIjoxNzk2OTE4ODcxLCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.oQS_sY7mBK7pQGbCMP1Bn85uLq8BqpAyrR6l6nzQKQY
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/aiweekly/p/the-hundred-page-deep-reinforcement?utm_source=substack&utm_medium=email&utm_campaign=email-restack-comment&action=restack-comment&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMjQyNjc5NzEsImlhdCI6MTc5NDMyNjg3MiwiZXhwIjoxNzk2OTE4ODcyLCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.-iiOpPxEeWbkKV28vlRebObpnU5zS8fQXbWYQhwek5E&utm_source=substack&utm_medium=email
+
+## 9. Link
+
+- **URL:** https://open.substack.com/pub/aiweekly/p/the-hundred-page-deep-reinforcement?utm_source=email&redirect=app-store-no-desktop&inbox=true&utm_campaign=email-read-in-app
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/adae5408-322a-4779-8740-9bcc3b7d3e23?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/6fe78c31-0b66-4c05-9437-57b36da6a49a?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9cG9zdCZ1dG1fY2FtcGFpZ249ZW1haWwtY2hlY2tvdXQmbmV4dD1odHRwcyUzQSUyRiUyRmFpd2Vla2x5LnN1YnN0YWNrLmNvbSUyRnAlMkZ0aGUtaHVuZHJlZC1wYWdlLWRlZXAtcmVpbmZvcmNlbWVudCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSnBZWFFpT2pFM09UUXpNalk0TnpFc0ltVjRjQ0k2TVRjNU5qa3hPRGczTVN3aWFYTnpJam9pY0hWaUxUWXhORFUxSWl3aWMzVmlJam9pWTJobFkydHZkWFFpZlEuMGhCOUdrTTd2Vm1ya2EtSlZnNzN2Z2I3YWtSMUFrSkxLTktDb3FrMkRVQSIsInAiOjIyNDI2Nzk3MSwicyI6NjE0NTUsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc5NDMyNjg3MiwiZXhwIjoyMTA5OTAyODcyLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.pRi2989UqfMXvekkTD5JlQKyza4qnWw_8zKBHIMTUfU?&utm_source=substack&utm_medium=email&utm_content=postcta
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vYWN0aW9uL2Rpc2FibGVfZW1haWw_dG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1qUXlOamM1TnpFc0ltbGhkQ0k2TVRjNU5ETXlOamczTVN3aVpYaHdJam94T0RJMU9EWXlPRGN4TENKcGMzTWlPaUp3ZFdJdE5qRTBOVFVpTENKemRXSWlPaUprYVhOaFlteGxYMlZ0WVdsc0luMC5hY3M1Z0dJNXh5MHFWQTBfdzNWMUU3clhuc3JfMUlDeTZRX1JDVm1DcGxFIiwicCI6MjI0MjY3OTcxLCJzIjo2MTQ1NSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzk0MzI2ODcyLCJleHAiOjIxMDk5MDI4NzIsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.IE5dixzOCtE9rKEdqeL9wimWCuygI2dFx7hTSK18Kgo?
+
+## 14. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMjQyNjc5NzEsInMiOjYxNDU1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3OTQzMjY4NzIsImV4cCI6MjEwOTkwMjg3MiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.nB01DNpev4Z6Myn0aAVUQmpcnWaeRuUrJBDzYgFRbz4?
+
