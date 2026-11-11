@@ -1,0 +1,97 @@
+{
+  "run_id": "20261111T101032Z",
+  "triaged_at": "2026-11-11T10:20:00+00:00",
+  "status": "complete",
+  "summary": "5 newsletters processed. 1 critical (Superintel: Claude Fable 5.2 / Mythos 5.2 + TPU 8tx/8i Max + Meta Muse Ember + Anthropic roadshow), 2 low (Ben's Bites AI product roundup, Lenny's tech job market), 2 no-action (AI Weekly promo, Dean Ball geopolitics essay). Lead story already ingested by sibling jobs on 2026-11-10; only Meta Muse Ember appears uncovered.",
+  "classifications": [
+    {
+      "message_id": "<20261110.191135.14b31155@mta16>",
+      "subject": "🧠 Claude Fable 5.2 Excels Far Beyond Code",
+      "source": "Superintel (read.getsuperintel.com, beehiiv)",
+      "date": "2026-11-10",
+      "importance": "critical",
+      "newsjacking_score": 4,
+      "relevance": "Roundup of the day's four major AI announcements, verified by resolving beehiiv click-tracker links: (1) Anthropic 'Introducing Claude Fable 5.2 and Claude Mythos 5.2' (anthropic.com/claude-fable-and-mythos-5-2), (2) Google 'Our newest TPUs: 8tx and 8i Max, built for the agentic era' (blog.google), (3) Meta Research 'Introducing Our Smallest, Most Efficient Model: Muse Ember' (research.meta.ai/blog/muse-ember), (4) Anthropic IPO roadshow launch (anthropic.com/news/roadshow-launch). Core wiki scope: model releases, inference hardware, AI finance/ecosystem.",
+      "resolved_links": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "https://www.anthropic.com/news/roadshow-launch",
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+        "https://research.meta.ai/blog/muse-ember",
+        "https://read.getsuperintel.com/p/claude-fable-5-2-excels-far-beyond-code"
+      ],
+      "existing_coverage": {
+        "claude_fable_5_2": "concepts/claude/fable-5.md (updated 2026-11-10, sibling newsletter-wiki-ingest)",
+        "mythos_5_2": "concepts/claude/mythos.md (updated 2026-11-10, 'Mythos 5.2' section present)",
+        "tpu_8_gen": "entities/google-tpu.md (TPU 8t/8i covered, updated 2026-11-10; '8i Max' and '8tx' variants need verification of coverage)",
+        "meta_muse_ember": "NOT FOUND in wiki (grep across concepts/entities/events returned nothing) -> candidate for new page",
+        "anthropic_ipo_roadshow": "no dedicated page; related context in concepts/ai-bubble-financial-crisis.md"
+      },
+      "recommended_wiki_updates": [
+        "Create/enrich a Meta Muse Ember page (small efficient Meta model) OR add to a Meta AI model-lineup page",
+        "Verify entities/google-tpu.md mentions TPU 8i Max and 8tx variants; append if missing",
+        "Track Anthropic IPO roadshow as an events/ entry or update ai-bubble-financial-crisis context"
+      ],
+      "action": "ingest",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-claude-fable-5-2-excels-far-beyond-code.md"
+    },
+    {
+      "message_id": "<20261110153549.3.17990b64d7912c21@mg2.substack.com>",
+      "subject": "How I got seduced",
+      "source": "Ben's Bites (Substack, publication_id=4379299)",
+      "date": "2026-11-10",
+      "importance": "low",
+      "newsjacking_score": 1,
+      "relevance": "Ben's Bites is a recurring AI-product newsletter; this issue is a personal-essay-flavored AI product/tooling roundup. Links are Substack redirect boilerplate; no standout model/agent topic surfaced from title alone. Low-priority: skim for notable AI product launches during wiki-ingest only if time permits.",
+      "recommended_wiki_updates": [
+        "Optional: update entities/bensbites-com.md (if exists) with issue date; no new page warranted"
+      ],
+      "action": "skip",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-how-i-got-seduced.md"
+    },
+    {
+      "message_id": "<20261110150403.3.322dae00ff31f25a@mg-d0.substack.com>",
+      "subject": "State of the tech job market: late 2026",
+      "source": "Lenny's Newsletter (Substack, publication_id=10845)",
+      "date": "2026-11-10",
+      "importance": "low",
+      "newsjacking_score": 1,
+      "relevance": "Product-management career/market newsletter. Peripheral wiki relevance only insofar as AI affects the tech job market (adjacent to existing ai-bubble / ai-subprime economics pages). Not a core LLM/agent topic; job-market data is perishable.",
+      "recommended_wiki_updates": [
+        "Skip unless the article contains substantive AI-impact-on-hiring data worth a line in concepts/ai-bubble-financial-crisis.md"
+      ],
+      "action": "skip",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-state-of-the-tech-job-market-late-2026.md"
+    },
+    {
+      "message_id": "<20261110160345.3.7d758c2a163b74df@mg2.substack.com>",
+      "subject": "The Hundred-Page Deep Reinforcement Learning Book is now available for purchase!",
+      "source": "AI Weekly (Substack, publication_id=61455)",
+      "date": "2026-11-10",
+      "importance": "low",
+      "newsjacking_score": 0,
+      "relevance": "Promotional announcement for a paid RL book (AI Weekly). Educational resource, not a development. All 14 links are Substack chrome + promo redirects. No wiki action.",
+      "recommended_wiki_updates": [],
+      "action": "no_action",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-the-hundred-page-deep-reinforcement-learning-book-is-now-available-for-purchase.md"
+    },
+    {
+      "message_id": "<20261110172458.3.34503cd23c5a7088@mg2.substack.com>",
+      "subject": "Iron Makes Iron",
+      "source": "Hyperdimensional / Dean Ball (Substack, publication_id=2244049)",
+      "date": "2026-11-10",
+      "importance": "low",
+      "newsjacking_score": 2,
+      "relevance": "Dean Ball essay, likely on AI-and-defense/autonomous weapons or great-power competition ('iron makes iron' arms-race framing). Geopolitics-of-AI is adjacent to wiki scope; existing pages cover AI geopolitics. Essay-level opinion without a concrete release/data event; monitor only.",
+      "recommended_wiki_updates": [
+        "Optional: if wiki-ingest finds strong AI-agent/autonomous-weapons claims, append a dated note to the relevant geopolitics page; no new page"
+      ],
+      "action": "skip",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-10-iron-makes-iron.md"
+    }
+  ],
+  "notes": [
+    "Lead story (Claude Fable 5.2 / Mythos 5.2) was already ingested by the 2026-11-10 sibling newsletter-wiki-ingest run; do not duplicate.",
+    "beehiiv click-tracker links resolved OK except one transient 429; classification based on og:titles of the 5 links actually resolved.",
+    "Meta Muse Ember is the only genuinely uncovered item from the critical newsletter."
+  ]
+}
