@@ -12,7 +12,10 @@ _Log of all wiki changes. Newest entries at top._
 - Saved metadata-only raw capture `raw/articles/2026-11-11_raw-works_ai-engineer-rdm-os1-talk.md`
   (yt-dlp caption download hit repeated YouTube 429; transcript pending, retry command noted in file).
 - Updated `entities/raw-works.md` (new talk section + source) and `concepts/recursive-decision-models.md`
-  (public-talk section, sources, updated date).
+  (public-talk section incl. **the Map** and **the Arbiter** primitives, sources, updated date).
+- Full transcript retrieved via `youtube-content` fetch_transcript.py after yt-dlp captions hit
+  repeated 429s → `transcripts/hFNbPmzzcEs_ai-engineer-raymond-weitekamp-operating-system-one.md`.
+- Housekeeping: untracked `wiki/log.md.bak` (recurring watchdog artifact) and added to .gitignore.
 - Other new post: @0xsero concert-ticket tweet (Brand New / SF) — off-topic for wiki, not ingested.
 
 ## [2026-11-11] skeleton-enrich-daily: stub backlog enrichment (4 concept pages)

@@ -94,10 +94,12 @@ Content (per the official description):
 Canonical resources: https://recursivedecisionmodels.com · https://github.com/rawwerks/rdm ·
 https://openprose.ai
 
-> Transcript pending: the aiDotEngineer captions could not be pulled on 2026-11-11 (YouTube 429
-> rate limit from the scan host). Raw capture is metadata-only at
-> `raw/articles/2026-11-11_raw-works_ai-engineer-rdm-os1-talk.md`; re-run yt-dlp to fill in the
-> transcript into `transcripts/`.
+> Full transcript saved at `transcripts/hFNbPmzzcEs_ai-engineer-raymond-weitekamp-operating-system-one.md`
+> (~7,900 words; the initial yt-dlp caption pull hit YouTube 429, retrieved via
+> `youtube-content` helper instead). Notable beyond the RDM write-up: the talk names two further RDM
+> primitives — **the Map** (shared pointer interface between decision model and LLM) and **the
+> Arbiter** (write-lock gate for speculative parallel decisions) — and demos a pure-RDM Factorio
+> agent plus **Earshot**, a real-time voice precursor to oSo (~45 ms learned latency).
 
 ## Related Entities
 

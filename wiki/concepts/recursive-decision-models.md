@@ -58,10 +58,30 @@ computer use**. It also introduces two new artifacts not yet written up in full:
 - **"Operating System One"** — a vision for **real-time interfaces**, the interactive/UI counterpart
   to System One decision models (the title the talk was announced under).
 - **oSo** — a previewed **computer-use decision agent** (https://oSo.computer), the natural extension
-  of RDMs from text/classifier decisions to action selection.
+  of RDMs from text/classifier decisions to action selection. "Decision first": it can farm jobs to
+  regular coding agents (Claude Code, Codex) but routes routine decisions to the fastest, smallest
+  trusted model, starting with voice input ("radical human-computer interfacing").
 
+Two additional RDM primitives named in the talk:
+
+- **The Map** — the shared interface between a decision model (can only point/judge over given
+  options) and an LLM (unstructured output): named pointers with descriptions bound to underlying
+  functions. The LLM may add/edit map entries (e.g. learning that "movie time" = TV on + lights off);
+  the map can also carry embeddings as extra dimensions.
+- **The Arbiter** — decision models are cheap enough to run many *speculatively in parallel*; like a
+  CPU write-lock, an arbiter gates which speculative decision may mutate shared state. Informed by
+  Alex Zhang's speculative programmatic tool calling.
+
+The talk's organizing question: *"what if reasoning was actually many small decisions?"* — with
+"decisions all the way down" demos (a pure-RDM Factorio agent with no LLM at all, Jev Plays Doom as
+underappreciated prior art) contrasted against generative/decision "yin and yang" (generation
+diverges, decisions converge).
+
+Implementations: original **DSPy module** (cmpnd.ai added System One API support to DSPy) and a
+standalone **Rust package `rdm`**.
 Canonical resources: https://recursivedecisionmodels.com · https://github.com/rawwerks/rdm.
-Transcript pending (YouTube 429 at scan time); see `raw/articles/2026-11-11_raw-works_ai-engineer-rdm-os1-talk.md`.
+Full transcript: `transcripts/hFNbPmzzcEs_ai-engineer-raymond-weitekamp-operating-system-one.md`;
+raw capture: `raw/articles/2026-11-11_raw-works_ai-engineer-rdm-os1-talk.md`.
 
 ## Naming debate
 
