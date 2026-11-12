@@ -2,7 +2,7 @@
 title: "Factory"
 type: entity
 created: 2026-05-08
-updated: 2026-11-07
+updated: 2026-11-12
 tags:
   - company
   - coding-agents
@@ -28,6 +28,7 @@ related:
   - [[entities/cognition]]
   - [[entities/linear]]
   - [[entities/anthropic]]
+  - raw/articles/2026-11-11_factory_security-factory.md
 description: "San Francisco-based startup building autonomous AI coding agents ('Droids') for enterprise software development. $1.5B valuation after $150M Series C (April 2026). Led by CEO Matan Grinberg and CTO Eno Reyes, backed by Khosla Ventures, Sequoia Capital, Blackstone, and McKinsey partnership."
 ---
 
@@ -183,3 +184,17 @@ Factory announced on **November 4, 2026** that **[[entities/humanlayer]] is join
 Sources:
 - [HumanLayer is joining Factory — Factory News](https://factory.com/news/humanlayer) (Nov 4, 2026)
 - raw/articles/2026-11-05_factory_humanlayer.md
+
+## Security Factory — continuous signals → triage → remediation (November 2026)
+
+Factory announced **Security Factory** (November 10, 2026, **Private Preview**): a product that turns security *findings* into tested fixes by connecting investigation, remediation and verification in one workflow. Framing: "Frontier models are becoming exceptionally capable at finding vulnerabilities. The next opportunity lies in fixing them."
+
+**Three-stage pipeline**, built on Factory's existing agent primitives:
+
+1. **Signals** — Connectors consolidate findings from static-analysis, dependency/secret scanners and infrastructure security tools, plus context from threat intelligence, asset inventories, Jira tickets and Slack threads. Combined with **Security Review**, which applies STRIDE, OWASP and supply-chain methodologies to PRs and full-codebase audits.
+2. **Triage** — agents assess reachability, validate exploitability, and trace attack paths that *chain* vulnerabilities and misconfigurations (their example: an internet-facing service plus an overprivileged service account — investigating either in isolation misses the combined exposure). **Workstreams** divide investigations into specialized parallel tasks with durable state and shared context; exploit hypotheses are reproduced in controlled environments on Droid Computers, an OS-level sandbox, or the customer's own cloud via OpenCompute. Output: evidence-backed prioritized backlog — "demonstrated risk, not scanner severity alone."
+3. **Remediation** — triage evidence is carried straight into Factory's coding workflows (Automations, SDK, Droid CLI, desktop app): agents develop fixes, test against the original exploit conditions, check regressions, and open PRs. **Configurable autonomy levels**, from presenting remediation plans for human approval up to auto-creating PRs and deploying fixes within approved policies.
+
+**Strategic read.** This is Factory generalizing its coding-agent harness into security operations — the argument is that security investigations have become *software engineering workloads* (navigating codebases, tracing attacker-controlled inputs, examining dependencies/permissions/deploy configs). It extends the Databricks Lakewatch cybersecurity use case documented above from a partner workload to a named product line, and it sits on the detection→remediation frontier alongside [[concepts/autonomous-security-agents]] and [[concepts/vulnhunter-agentic-code-security]], with the distinguishing bet being the *fix* half (verified patches) rather than finding bugs.
+
+**Source:** [[raw/articles/2026-11-11_factory_security-factory]]

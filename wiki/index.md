@@ -1924,7 +1924,7 @@
 - [[concepts/electronic-frontier-foundation]] — Electronic Frontier Foundation
 - [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for AI Agent Orchestration
 - [[concepts/elixir-beam-agent-orchestration-2026]] — elixir-beam-agent-orchestration-2026
-- [[concepts/elizaos]] — elizaOS
+- [[concepts/elizaos]] — elizaOS — open-source TypeScript "agentic operating system" (ai16z origin → Eliza Research personal-agent pivot, MIT, ~20k stars)
 - [[concepts/emacs]] — Emacs
 - [[concepts/embedded-linux]] — embedded-linux
 - [[concepts/embedding-dimension-scaling-laws]] — Embedding Dimension Scaling Laws
@@ -2448,7 +2448,7 @@
 - [[concepts/local-llm/self-hosting-ai-development]] — Self-Hosting AI for Development
 - [[concepts/local-llm/server-dgx-spark]] — Local LLM Server Setup on DGX Spark
 - [[concepts/local-llm/turbo-fieldfare-gemma-4-2gb]] — turbo-fieldfare — Swift+Metal inference engine running Gemma 4 26B-A4B in ~2GB RAM on Apple Silicon; SSD expert streaming, LFU cache, chunked prefill (July 2026)
-- [[concepts/local-llm/vllm]] — vLLM
+- [[concepts/local-llm/vllm]] — vLLM (redirect → inference/vllm, vllm, serving-llms-vllm)
 - [[concepts/local-qwen-vs-claude-opus]] — Local Qwen vs Claude Opus — Different Tools for Different Jobs
 - [[concepts/lockdown-systems-collective]] — Lockdown Systems Collective
 - [[concepts/logan-kilpatrick]] — logan-kilpatrick
@@ -2700,7 +2700,7 @@
 - [[concepts/openai/symphony]] — OpenAI Symphony
 - [[concepts/openai/tanstack-supply-chain-2026]] — OpenAI TanStack npm Supply Chain Attack Response (May 2026)
 - [[concepts/openai/webrtc-audio-session]] — OpenAI WebRTC Audio Session with Document Context
-- [[concepts/openai/whisper-asr]] — Whisper Asr
+- [[concepts/openai/whisper-asr]] — Whisper ASR (redirect → speech/whisper)
 - [[concepts/openai/workspace-agents]] — OpenAI Workspace Agents
 - [[concepts/openclaw-architecture]] — OpenClaw Architecture
 - [[concepts/openclaw-ecosystem]] — OpenClaw Ecosystem
@@ -2750,7 +2750,7 @@
 - [[concepts/personal-superintelligence]] — Personal Superintelligence — The Evolution and Philosophical Tensions of Personal AI
 - [[concepts/personal-websites]] — personal-websites
 - [[concepts/pgr]] — pgr
-- [[concepts/phidata]] — phidata
+- [[concepts/phidata]] — phidata / Agno — Ashpreet Bedi's Python agent framework, renamed Agno (Apache-2.0, ~43k stars, "self-managing agent platform")
 - [[concepts/phishing]] — Phishing
 - [[concepts/physical-ai]] — Physical AI
 - [[concepts/pierre-carl-langlais]] — Pierre-Carl Langlais
@@ -3076,8 +3076,8 @@
 - [[concepts/small-internet]] — small-internet
 - [[concepts/small-language-models]] — Small Language Models
 - [[concepts/smfs]] — Supermemory Filesystem (SMFS)
-- [[concepts/smollm]] — SmolLM
-- [[concepts/smollm2]] — SmolLM2
+- [[concepts/smollm]] — SmolLM — Hugging Face's fully-open small LM family (135M–3B; SmolLM2 11T-token data-centric study, SmolLM3 hybrid reasoning 128k)
+- [[concepts/smollm2]] — SmolLM2 (redirect → smollm)
 - [[concepts/source-learning-agent-competence]] — Source Learning (Source-Specific Agent Competence) — SourceLearn: build a persistent source model from repeated source use; self-directed + task-guided learning, reconstructed from the authoritative source (arXiv:2610.02150)
 - [[concepts/source-grid-load-storage]] — Source-Grid-Load-Storage (SGLS) — Chinese project model pairing a datacenter with its own wind/solar, dedicated line and battery storage; Envision's Galaxy campus self-supplies >60% of load (420MW wind vs 240MW load + 4h BESS); converts the grid-queue bottleneck into private generation (Nov 2026)
 - [[concepts/snapshot-testing]] — snapshot-testing
@@ -3277,7 +3277,7 @@
 - [[concepts/website-blocking-of-ai-agents]] — Websites Blocking AI Agents — Yelp, Delta, JPMorgan, Amazon blocking Meta Muse / OpenAI Dots / xAI Grok; structural ad-revenue vs agent conflict (Oct 2026)
 - [[concepts/webassembly]] — WebAssembly
 - [[concepts/werkzeug]] — Werkzeug
-- [[concepts/whisper]] — Whisper
+- [[concepts/whisper]] — Whisper (redirect → speech/whisper)
 - [[concepts/why-harness-development-boom]] — Why Agent Harness Development Is Accelerating
 - [[concepts/wheelhouse]] — Wheelhouse — Steve Yegge's bespoke Emacs-based agentic orchestration harness for Wyvern MMO (18 crew + fleet + role agents, Beads backbone)
 - [[concepts/wish-factory]] — Wish Factory — Pattern where end-user wishes (bug reports, feature requests) are auto-implemented by AI agents
@@ -3444,6 +3444,7 @@
 - [[queries/2026-11-09-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-09): 0 status:skeleton pages; backlog empty since 10-17 streak, no enrichment performed
 - [[queries/2026-11-10-skeleton-enrich-empty]] — Skeleton enrichment run snapshot (2026-11-10): 0 status:skeleton pages; backlog empty since 10-17 streak, no enrichment performed; recent-page & redirect-stub cross-checks clean
 - [[queries/2026-11-11-skeleton-enrich-stub-action]] — Skeleton enrichment run snapshot (2026-11-11): 0 skeleton pages (streak); enriched 4 stub backlog pages (ben-thompson, computer-using-agent, chip-huyen-chipro) + 2 duplicate-to-redirect cleanups; 435 stubs remain
+- [[queries/2026-11-12-skeleton-enrich-stub-action]] — Skeleton enrichment run snapshot (2026-11-12): 0 skeleton pages (streak); enriched SmolLM/elizaOS/phidata stubs + consolidated vLLM/Whisper duplicate stubs into redirects; ~427 stubs remain
 - [[queries/agent-capability-set-hyperbo-decomposition]] — Decomposition of the standard agent capability set as described by Hyperbo (agent platform taxonomy)
 - [[queries/codex-enterprise-modernization-cases]] — Codex Enterprise Modernization — named enterprise workflows, anonymous migration, mainframe demonstrations, non-Codex attribution, evidence limits, and proposed pilot gates (2026-10-13)
 - [[queries/data-analysis-open-harness]] — Which open harness is suitable for data analysis?

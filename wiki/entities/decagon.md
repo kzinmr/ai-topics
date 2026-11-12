@@ -2,7 +2,7 @@
 title: "Decagon"
 type: entity
 created: 2026-05-08
-updated: 2026-11-11
+updated: 2026-11-12
 tags:
   - company
   - ai-agents
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-08-21_decagon_scaling-real-time-tts-inference.md
   - raw/articles/2026-08-20_decagon_decagon-assist.md
   - raw/articles/2026-11-11_decagon_how-we-taught-our-agents-to-recognize-other-agents.md
+  - raw/articles/2026-11-12_decagon_introducing-alto.md
 ---
 
 # Decagon
@@ -174,6 +175,25 @@ Sensitivity is tunable from flagging 1-in-100 real callers to 1-in-2,500, lettin
 **Analytical note**: this is the mirror image of Decagon's own outbound-agent identity problem, and the clearest vendor articulation so far of agent-to-agent traffic as a first-class CX surface rather than an abuse category. The self-identification channel is the load-bearing piece — its reliability depends on provider cooperation, which no cryptographic guarantee underwrites. See [[concepts/agent-identity-and-reputation]].
 
 **Source:** [[raw/articles/2026-11-11_decagon_how-we-taught-our-agents-to-recognize-other-agents]]
+
+## Alto — the conversational half of the duplex voice agent (November 2026)
+
+Decagon Labs released **Alto** (Quique Lores, PM; Dante Everart, Speech AI Researcher; Nov 11, 2026), the fast model that powers the *conversational layer* of the Voice 3 duplex architecture announced at Decagon Dialogues. Chord (see above) shapes how agents **sound**; Alto decides **when to speak and what to say** — answer immediately, wait for confirmation, or keep the conversation moving while the reasoning model works.
+
+**The duplex tradeoff made concrete.** A cascade pipeline does transcribe → reason → speak per turn; a duplex agent runs two models in parallel — a small fast conversational model and a larger reasoning model. Duplex makes calls feel human, but creates a decision every turn: answer now (fast, but small models err — e.g. telling a caller a reservation was changed before it was) or defer (safe, but breaks flow). Alto's core skill is *judgment*: it tracks what the caller said and what the rest of the agent is doing, keeps the conversation alive during a lookup (asking for the next needed field rather than saying "Got it, one moment"), and grounds every response in a **shared record of the call**, waiting for confirmation before claiming an action completed.
+
+**Results**: ~**700 ms** average response time with no generic filler; **+5+ percentage points resolution** on live customer calls with no other agent-logic changes — on top of Chord's independent up-to-7-point lift.
+
+**Training recipe** (same pattern as Chord: one job, one model):
+- Start from a **small open-weight base** to preserve latency.
+- **Fine-tune on simulated calls** informed by production traffic.
+- **RL**: at each conversational point the model generates several candidate responses; each is scored first on the **answer-vs-wait decision**, then on whether the wording follows business policy and reflects only confirmed information.
+- **Hard-example mining**: because the model already handled most situations, training data focused on cases where the correct decision was ambiguous, varying policies and tools across *simulated businesses* so it learns transferable judgment rather than one company's script.
+- **Gating**: tested across **90M+ simulated calls**, then ran in **shadow mode** against live production traffic before speaking to any caller.
+
+**Why it matters**: the answer/wait decision is the reliability-critical primitive for agentic voice — an LLM that asserts unconfirmed state is a trust failure, not a latency issue. Alto is the clearest vendor articulation of that decision as a separately trained, RL-scored policy rather than a prompt. Deutsche Telekom's Niedworok provides the customer framing: callers trained to speak in fragments at IVRs start talking naturally because "the voice sounds like it's actually listening." Related: [[entities/elevenlabs]] (speech-layer competitor), [[concepts/speech-audio-asr-tts-voice]], [[concepts/reward-hacking-research-agents]].
+
+**Source:** [[raw/articles/2026-11-12_decagon_introducing-alto]]
 
 ## Related
 

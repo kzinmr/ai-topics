@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-11-11
+updated: 2026-11-12
 tags:
   - company
   - voice-ai
@@ -33,6 +33,7 @@ sources:
   - raw/articles/2026-06-26_elevenlabs_real-time-speech-to-text-under-200ms.md
   - raw/articles/2026-10-30_elevenlabs_internal-ops-agents.md
   - raw/articles/2026-10-30_elevenlabs_what-is-turn-taking.md
+  - raw/articles/2026-11-10_elevenlabs_elevenagents-campaign-manager.md
 ---
 
 # ElevenLabs
@@ -556,6 +557,14 @@ ElevenLabs launched two new speech-to-text models on 2026-11-10, and the numbers
 ElevenLabs says it will open-source the 16-language real-world meeting/agent-call/voice-note dataset used for diarization scoring — worth tracking, since FLEURS cannot measure diarization (single-speaker clips only).
 
 **Source:** [[raw/articles/2026-11-11_elevenlabs_scribe-v3]]
+
+## ElevenAgents Campaign Manager — outcome-driven outbound campaigns (November 2026)
+
+ElevenLabs launched **ElevenAgents Campaign Manager** (Janpreet Khabra & Eli Goodman, Nov 9, 2026): give it a contact list and a target outcome — a qualified lead, a confirmed appointment — and it runs the whole campaign, following up with each contact over time and carrying context between touches. Positioned across sales, retention, patient care, collections, customer service and recruiting, and explicitly "built for the agents you already have", i.e. it orchestrates existing ElevenAgents rather than being a new agent type.
+
+The product is the outbound-campaign analogue of the inbound voice-agent work above: the unit of work moves from a single call to a multi-touch sequence with per-contact state, which is where conversation-as-workflow products (see [[entities/decagon]]) and voice-infrastructure vendors now overlap.
+
+**Source:** [[raw/articles/2026-11-10_elevenlabs_elevenagents-campaign-manager]]
 
 ## Related
 - [[entities/openai]] — Competitor via GPT-4o voice and TTS capabilities

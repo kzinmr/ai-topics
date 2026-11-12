@@ -2,7 +2,7 @@
 title: "Pinecone"
 type: entity
 created: 2026-05-08
-updated: 2026-10-28
+updated: 2026-11-12
 tags:
   - company
   - search
@@ -21,6 +21,7 @@ sources:
   - raw/articles/2026-08-11_pinecone_pinecone-nexus-generally-available.md
   - raw/articles/2026-10-23_pinecone_when-vectors-became-an-implementation-detail.md
   - raw/articles/2026-10-28_pinecone_introducing-pg-pinecone.md
+  - raw/articles/2026-11-10_pinecone_self-hosted-vector-search.md
 ---
 
 # Pinecone
@@ -216,6 +217,29 @@ Pinecone released **pg_pinecone**, an Apache-2.0 Postgres extension that runs th
 **Strategic read.** Pinecone's commercial interest is in its managed engine, so `native` being free and networkless is a developer-ecosystem/mindshare play rather than a hosting play; the benchmark table is vendor-run and unpublished outside its own harness README. The substantive, falsifiable contribution independent of that is the **IVF + RaBitQ + filter-during-search** combination beating HNSW on memory and *filtered* recall — the workload class where graph indexes are weakest. Related: [[concepts/vector-search]], [[concepts/vector-databases]], [[concepts/vq-bench]].
 
 Source: [[raw/articles/2026-10-28_pinecone_introducing-pg-pinecone]]
+
+## "Self-Hosted Vector Search: What You Run Before You Ship" (November 2026)
+
+Pinecone published (Gavin Johnson, Technical PMM; sitemap Nov 10, 2026) an adaptation of his "Vector Search for Agentic AI" webinar — a candid teardown of what self-hosting actually costs a team, and the clearest public statement of Pinecone's position on the managed-vs-self-hosted split.
+
+**The pre-feature checklist** (all infrastructure work that lands *before* any application code exists): provision the database; find or serve an embedding model; tune indexes by hand; debug recall (chunking, embedding quality, ...); scale past one node. Johnson: "This is all work that you have to do before you build an application." On a small team without MLOps, the people doing it are the ones who would otherwise build the feature.
+
+**Why HNSW tuning "doesn't stay done"** — the five ways it returns after launch, framed against pgvector:
+- **Memory** — pgvector builds the HNSW graph in RAM and the graph must fit the provisioned memory; there is no formula for its size before you load the data.
+- **Latency** — data accumulates, the index outgrows memory, query latency degrades sharply.
+- **Filters** — Postgres searches the vector index *then* applies `WHERE`; a selective filter returns fewer rows than requested (pgvector 0.8.0's iterative scans help but are opt-in and capped).
+- **Drift** — IVFFlat partitions are drawn from data present at build time; later vectors land in partitions chosen without them, and recall requires a rebuild.
+- **Contention** — HNSW inserts run approximate searches through the layers, so writes compete with queries; on one Postgres instance, queries, ingest, index rebuilds and autovacuum all contend for the same machine.
+
+Notably, Pinecone states plainly that **HNSW performs very well on benchmarks** and that it avoids graph indexes in serverless only because "in a dynamic setting with constant writes and filtered queries, we found other algorithms work better" — consistent with the IVF+RaBitQ choice in pg_pinecone above.
+
+**What serverless actually removes**: separate read/write compute paths (writes never block reads; a new vector is searchable in seconds, no rebuild), automatic per-slab algorithm selection during background compaction, object-storage-backed data so storage grows without adding compute and data is never resharded, and optional Pinecone Inference for embedding/reranking. Remaining customer obligations are honest: **chunking and embedding-model choice still decide recall**, and on-demand tier rate limits are a real ceiling — Dedicated Read Nodes are capacity you provision with shards/replicas still set by hand.
+
+**The counter-recommendation is the interesting part.** Pinecone tells you when to *stay* on pgvector: small, mostly static corpora whose index fits memory you already pay for. Postgres brings point-in-time recovery, streaming replication, mature backup tooling, access controls, and a hiring pool — and a Pinecone query cannot join against your tables in one statement. The stated discriminator is corpus trajectory: if it keeps growing and changing under filtered queries, the tuning and scaling work comes back.
+
+**Read**: this is vendor marketing, but unusually falsifiable — a named operational checklist, an explicit concession on benchmark performance, and a "don't buy from us" branch. It is a useful counterweight to both the self-hosted-equals-sovereignty framing and the serverless-equals-free framing. Related: [[concepts/vector-search]], [[concepts/vector-databases]], [[concepts/vq-bench]].
+
+**Source:** [[raw/articles/2026-11-10_pinecone_self-hosted-vector-search]]
 
 ## Related
 

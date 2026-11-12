@@ -1,3 +1,18 @@
+## [2026-11-12] skeleton-enrich-daily: 6 stubs enriched/consolidated (SmolLM, elizaOS, phidata, vLLM×3 dupes, whisper×2 dupes)
+
+`status: skeleton` backlog remains empty (streak since 2026-10-17). Continued chipping at the `status: stub` backlog (2026-04-25 bulk import) — this run targeted 7 AI-relevant stubs:
+
+| Page | Action | Result |
+|------|--------|--------|
+| `concepts/smollm.md` | Enriched | Full family page: SmolLM1/2/3 table, 11T/11.2T-token training, GQA+NoPE, APO, hybrid reasoning, 128k YaRN, HF/backlinks |
+| `concepts/smollm2.md` | Redirect | → smollm, key facts retained |
+| `concepts/elizaos.md` | Enriched | ai16z→Eliza Research pivot, MIT/TS ~20k stars, architecture, criticism; sero backlink |
+| `concepts/phidata.md` | Enriched | phidata→Agno rename, agno-agi/agno ~43k stars, framework landscape table; ashpreet-bedi link |
+| `concepts/local-llm/vllm.md` | Redirect | → inference/vllm + vllm + serving-llms-vllm (4-way duplicate consolidation) |
+| `concepts/whisper.md` | Redirect | → speech/whisper |
+| `concepts/openai/whisper-asr.md` | Redirect | → speech/whisper |
+
+Sources verified live: HF model cards (SmolLM3-3B, SmolLM2-1.7B), GitHub API (elizaOS, agno, vllm), elizaresearch.ai. Git-history richness check: no richer historical versions (all created as stubs 2026-04-25). All wikilinks verified to resolve. index.md descriptions updated for all 7 entries; no new entries or count change (no net new pages). Stub count: 434 → 427 (7 converted).
 ## [2026-11-12] wiki-health-fix | auto-fix pass — all clean, index headers reconciled
 
 ### Verification
