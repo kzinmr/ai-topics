@@ -120,7 +120,7 @@ When you see "Just a moment..." as the `<title>` in a resolved beehiiv URL, trea
 A `candidates` array injected from `${HERMES_HOME}/cron/data/blog_ingest/latest.json` or via `context_from` cron chaining. Each candidate has:
 
 > 📖 See `references/blog-triage-coverage-verification.md` for the full cross-reference workflow — entity page verification depth, yield expectations, and source-specific patterns (Simon Willison, Ed Zitron, Krebs, Daring Fireball).
-> 📖 See `references/blog-triage-stale-triage-json.md` for the stale `triage_latest.json` pattern — when log.md shows the pipeline already completed but downstream triage file is from a previous day.
+> 📖 See `references/blog-triage-stale-triage-json.md` for the stale `triage_latest.json` pattern. See `references/blog-triage-2026-11-11-patterns.md` (link-card stub raws; referral-dup raws; zero-hit grep = take signal).
 ```json
 {
   "item_id": "blog-1",
@@ -536,11 +536,10 @@ Save to: `${HERMES_HOME}/cron/data/dreaming/triage_latest.json`
 Downstream consumer: `dreaming-wiki-ingest` (or manual downstream from grouping report)
 
 > 📖 See `references/dreaming-pipeline-recovery.md` for the full recovery procedure when the upstream dreaming-group agent wraps its JSON output in markdown, causing downstream JSON parse failure. The triage checkpoint file survives independently.
->
-**⚠️ Variant: Triage Agent Saves JSON Before Response Render Failure (all pipelines)** — When an upstream triage agent fails with `"failed to parse JSON response from {pipeline}-triage output"` but `triage_latest.json` at `${HERMES_HOME}/cron/data/{pipeline}/triage_latest.json` already contains valid JSON, the agent saved the checkpoint before attempting to render its cron response. **Just read triage_latest.json directly** — no extraction, no re-run. Proceed directly to Post-Recovery Verification. Validated: dreaming (Jun 17), newsletter (Jun 22), blog (Aug 10). See `references/newsletter-triage-checkpoint-recovery-2026-06-22.md` & `references/blog-wiki-ingest-2026-08-10-patterns.md`. ⚠️ Verify the checkpoint is TODAY's run (`checkpoint_run_id` + git log prior-consumption check) — a stale previous-day file is a duplicate, not a recovery source. Never trust the failed output's self-report: Aug 2026 the triage agent claimed "0 candidates" while `latest.json` actually had 5 newsletters (`processed_count: 5`, 38KB vs 14KB empty-day). Checkpoint wins over self-report. See `references/newsletter-triage-2026-08-17-stale-checkpoint-recovery.md`.
-> 📖 See `references/dreaming-verification-pattern.md` for the downstream independent-verification procedure — scanning blogwatcher DB + raw/articles/ + entity pages to confirm the dreaming-group's "99%+ processed" claim after a Takes=0 triage.
 
 ### Post-Recovery Verification (CRITICAL — avoid redundant takes)
+
+> 📖 **Ingest-side checklist before editing anything** — `references/wiki-ingest-downstream-verification-2026-11-09.md`: never trust triage `candidate_wiki_path` (`find` first, record the gap instead of creating the page); when inserting before `## Related`/`## Sources` replace the **bare heading only** (deleting the first list item bit twice in one run); sibling-write warning ⇒ re-read then re-patch, and an empty `git diff --stat` after a delete-restore does NOT mean your addition survived; cron blocks `execute_code` even for pure `subprocess` reads ⇒ use `sed -n '1p' f | cut -c 1-7000` for single-line raw articles; log.md prepend anchors on `## [` not `# `; conflicting second-source numbers ⇒ dated contested subsection, never overwrite; tag validator lives at `.githooks/` not `scripts/`; commit + archive EARLY on 9+ page batches.
 
 After recovering the triage JSON via any of the fallback paths above, the downstream wiki-ingest **must independently verify each `take` recommendation** before acting on it. The triage engine evaluates articles on their own merits and may assign ★★★★★ to content that was already processed by a different pipeline run earlier the same day.
 
@@ -583,13 +582,15 @@ tasks = [
 
 **log.md update**: After enrichment, prepend the new log entry (log.md is newest-first, append-only). In cron mode, write a Python script to `/tmp/` via `write_file` and run via `terminal` — `execute_code` is blocked. Do NOT use `sed -i`; insert after the header line. Parallel subagents may append their own — consolidate into ONE pipeline entry. ⚠️ Header-burial + sibling-warning handling: see `references/newsletter-wiki-ingest-log-rebuild-and-parallel-sibling-2026-08-13.md`. **log.md has NO H1 title line**: the file starts with the newest entry heading, so a prepend script anchoring on a line starting with "# " matches that H2 and silently destroys the previous entry heading. Anchor on the "## [" form instead and verify with head -6 wiki/log.md: see `references/log-md-prepend-no-h1-title.md` (validated 2026-10-25).
 
-**⚠️ CJK in the triage BUILDER script itself (three pre-execution blockers)**: `reason_ja` / `summary_ja` / `body_excerpt` are required fields, and builder scripts fail before running for three separate reasons — (a) embedded ASCII double-quotes inside Japanese string literals give a misleading `SyntaxError: invalid decimal literal`; (b) heredocs with CJK trip the homoglyph scanner; (c) heredocs whose literals merely *mention* a hardline keyword (observed: the word `shutdown` quoted from a reference filename) are hard-blocked regardless of intent. Gate every builder with `ast.parse`, route CJK scripts via `write_file`→`terminal` (never heredoc), never build CJK reasons with nested ternaries — use dict lookups. Fixes: `references/cron-builder-script-cjk-pitfalls.md`.
+**⚠️ CJK in the triage BUILDER script itself (three pre-execution blockers)**: `reason_ja` / `summary_ja` / `body_excerpt` are required fields, and builder scripts fail before running for three separate reasons — (a) embedded ASCII double-quotes inside Japanese string literals give a misleading `SyntaxError: invalid decimal literal`; (b) heredocs with CJK trip the homoglyph scanner; (c) heredocs whose literals merely *mention* a hardline keyword (observed: the word `shutdown` quoted from a reference filename) are hard-blocked regardless of intent. Gate every builder with `ast.parse`, route CJK scripts via `write_file`→`terminal` (never heredoc), never build CJK reasons with nested ternaries — use dict lookups. Fixes: `references/cron-builder-script-cjk-pitfalls.md`; new builder pitfalls (helper-param defaults, empty Substack `<title>`/JSON-LD, gossip-beehiiv batch-skip) in `references/newsletter-triage-2026-11-10-patterns.md`.
 
 **archive_triage.py at ingest time**: Unlike newsletter/blog pipelines where archiving is part of the triage step (section 8), the dreaming-pipeline runs archiving at ingest time because the triage is done by a separate agent. After enrichment, run:
 ```bash
 python3 ~/ai-topics/scripts/archive_triage.py dreaming --keep-reference
 ```
 This succeeds even when the triage JSON was recovered from checkpoint rather than from the pre-run agent's output. Expected output: 40-50 candidates, most newly archived.
+
+> 📖 `references/triage-builder-path-and-quote-pitfalls.md` — `raw()` helper + `RAW + name` path doubling (FileNotFoundError at import time); ASCII double-quote inside CJK `reason_ja` raising `invalid syntax. Perhaps you forgot a comma?`; stale lint after `patch`.
 
 **Common pattern**: The dreaming-collect pipeline and the blog/active-crawl pipelines may overlap on the same source articles.
 
