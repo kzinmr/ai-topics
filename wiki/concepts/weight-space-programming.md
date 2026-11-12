@@ -2,7 +2,7 @@
 title: "Weight-Space Programming (LLM-Native Weight Reading & Editing)"
 type: concept
 created: 2026-11-03
-updated: 2026-11-04
+updated: 2026-11-12
 tags:
   - weight-space-programming
   - interpretability
@@ -90,6 +90,17 @@ The claim spread far faster than its caveats. Two rebuttals each out-ranked the 
 
 The 994-pt rebuttal sitting at #1 on the HN front page *while* the original trended is itself the story: the community's correction velocity matched the hype velocity. Raw: `raw/articles/2026-11-03_honnibal-dev_astra-read-write-misleading.md`.
 
+## Reanalysis: most of Astra's search was a linear program (Nov 12 2026)
+
+Nathan Barry (nathan.rs, Nov 9; HN [487](https://news.ycombinator.com/item?id=50452655) — 288 pts) dissected the MIT CSAIL *Sparks of Weight-Space Programming* artifact and concluded that **"most of its search was solving a linear program by trial and error."** The setup: GPT-6 Astra was asked to fix Qwen3.5-0.8B's thinking loops by editing weights; it changed 0.016% of weights and lifted MATH-500 from 7.9% to 48.1% (IFEval 21% → 62%), spending ~8 hours and 28 forward passes choosing which weights to change.
+
+Structural observation: Astra's edit is rank-1 — ΔW = u v^T — where the loop direction u comes from averaged residual-stream differences (this part took only 15 minutes), and v (which down_proj columns to edit, and by how much) was found by ~8 hours of trial and error. Since the per-token push is v·h_t, linear in v, choosing v is a linear program: min Σ|v_j| s.t. v·h_t ≤ −δ on looping tokens, |v·h_t| ≤ ε on productive tokens (slacked). An off-the-shelf solver (HiGHS) reproduces it in ~20 min/solve; a custom GPU PDHG solver does it in ~1 minute — **with 8× fewer changed weights (16,291 vs 130,188) at statistically equal benchmark scores**, and the LP's 8 columns per layer share only 3 and 1 columns with Astra's 64: "many sparse solutions work; what matters is the total push along u."
+
+Two further deflationary results: (a) with a **heuristic direction** (repetition-detector labels, no LLM), the LP gets ~93% of the fix; (b) the edit's average push barely varies per token, so **a plain activation-steering vector recovers essentially the whole fix at 1× strength** (MATH-500 50.8 vs LP 53.2, Astra 50.0) — "the only difference is delivery": the LP edit is an ordinary checkpoint, the steering vector needs inference-time code.
+
+Thread reception: [dansitu] "The simplicity of this indicates that it should be happening during training via regularization"; [nullc] "we can just 'reinvent' the same techniques used to uncensor models for some time" (refusal-direction suppression); [kragen] "No, it describes a linear optimization algorithm from the 1940s editing a Qwen model with billions of parameters" — pushing back on the "frontier models edit weights directly" headlines; [rsfern] sees no reason a large model could not apply the principle to itself at runtime given weight write access; [jsw97]'s reading is that LP solvers as weight-editing *tools* make an agent like Astra more effective, not redundant. Limitations Barry states himself: one model, the LP still relies on Astra for layer choice, and loops turned out fixable by a constant push, so the LP's per-token constraints were never really exercised.
+
+Interpretive note: this is the strongest available evidence that the headline "Astra programs weights" conflated two separable capabilities — semantic framing (finding u, choosing layers: genuinely model-driven) and numerical search (finding v: a 1940s algorithm with a GPU solver).
 ## Related
 
 - [[concepts/rome-weight-tampering-attacks]] — adversarial rank-one weight editing / GPU memory tampering (defensive counterpart)

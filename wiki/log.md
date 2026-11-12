@@ -2,6 +2,22 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-12] trending-topics: AI Futures 2027 explosion, Nvidia ouster, AWS Emulator, United agent ban, LP weight-space, Humble Bundle
+
+Sources: HN front-page + keyword + points-only Algolia sweeps (2d window), blog_ingest 20261112T100026Z (45 new / 16 saved), newsletter triage 20261112T101034Z (Superintelligence "AI 2027" body recovered from IMAP after beehiiv 403s), active-crawl note 2026-11-12 (gVisor/CNCF, Anthropic IPO compute, Gemini Decision 1 — already committed in 16ddc6da, not duplicated here).
+
+New pages (2):
+- entities/aws-emulator.md — AWS Emulator (Nov 11 launch): 100% agent-written local AWS API emulator, 400+ Smithy models, fidelity tests vs real AWS, merge gate with adversarial security agents, CC0; HN 875p token-spend + MiniStack/Floci gap reactions; test-environment-as-agent-infrastructure thesis.
+- concepts/agentic-representation-gatekeeping.md — user-side agent blocking as a pattern distinct from bot-blocking; United Airlines flight-booking ban (HN 569p) canonical case, four nested explanations, Southwest defection, verifiable-delegation open questions.
+
+Raw (6, sha256 two-pass): aifutures q35 timelines (full body fetched, 112k chars), pietromiotti maya-site, werner aws-emulator essay, cbs united ban, wsj nvidia ouster (HN-reconstructed, paywall noted), humble-bundle vibecoding report.
+
+Updates (7): concepts/weight-space-programming (Barry LP reanalysis: Astra 8h search = an LP; steering-vector parity; 8x fewer weights), concepts/ai-rd-acceleration-doubling (AI Futures Q3.5: SAR 2027, 1.7x AI-attributable, 5 months ahead of AI 2027 schedule, pause demand, redaction-dependence, AI100 counterweight), concepts/agentic-commerce (United ban section), concepts/system-one-models (HN reception of Gemini Decisions API: modality/calibration/price ordering), entities/jensen-huang (board ouster prep: Kress interim / Srouji rumor, 3.4% stake no dual-class, circular-financing spillover; rumor-level caveat), concepts/harness-engineering/agentic-workflows/vibe-coding (Humble Bundle 2FA-bypass case, fail-open permissions quote), concepts/ai-discovery-acceleration (Maya-site 48-agent case study; per-stage grading lesson).
+
+SCHEMA: minted ai-testing (Engineering), agentic-representation (AI Agents), lidar + ai-discovery (Domain Concepts), ai-bubble-economics (Meta). Index: +1 entity, +1 concept, count bumps (Entities 969, Concepts 2334).
+
+Report: inbox/rss-scans/trending-topics-2026-11-12.md. Deliberately not re-created: gvisor, anthropic-ipo-roadshow-2026, gemini-decision-1, system-one three-vendor table (active-crawl, 16ddc6da). Watchlist (thin/leak-stage): Apple local-AI Mac app (9to5Mac leak stage), Modern Web Guidance 1.0 + Atuin Threads (queued follow-ups).
+
 ## [2026-11-11] x-accounts-scan: Weitekamp RDM/Operating System One talk (aiDotEngineer)
 
 - Scan run 20261111T223024Z: 84 tracked, 10 scanned (budget rotation, cursor 80→7), 2 new posts, 1 error (`willccbb`: could not resolve user_id).

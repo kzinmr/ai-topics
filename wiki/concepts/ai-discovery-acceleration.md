@@ -2,7 +2,7 @@
 title: AI Discovery Acceleration (METR Differential Acceleration)
 type: concept
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-11-12
 tags:
   - ai-research
   - evaluation
@@ -45,6 +45,17 @@ METR lists four drivers for the lumpy pattern:
 - **Security**: the exploited-vs-known vulnerability gap means the attack surface is growing faster than defenders are patching — a [[concepts/security-and-governance/ai-safety]] and [[concepts/cybersecurity]] concern.
 - **Evals methodology**: measuring "discovery" velocity requires domain-appropriate baselines (pre-existing problem lists, record-setting benchmarks), not a single universal metric.
 
+## Case study: 48 agents "rediscover" an unmapped Maya site (Nov 2026)
+
+Pietro Miotti, a Google engineer, published *"My AI Agents (Re)discovered a Maya Site in 72 Hours"* (Nov 11; HN 999 pts / 369 c) — currently the most-cited example of agents producing a *discovery-shaped* result in the sciences, and also the most instructive about how such claims degrade.
+
+What happened: after reading about Bingham's accidental finding of Machu Picchu, he brainstormed with Gemini/ChatGPT/Claude/Grok, which all suggested lidar. He pointed **48 agents at ~1,200 km² of public NASA lidar strips over Maya jungle, converted to images, and had them visually screen for pyramids, platforms and plazas** — "no special model or classifier involved: the agents literally looked at the pictures, following a precise guide." They flagged many village-shaped candidates, then cross-checked literature and archives and reported one major unregistered village: a cliff-edge hilltop with a levelled plaza, an 8–12 m oval pyramid, a raised courtyard and a possible reservoir. INAH checked its register and replied that **no archaeological site is registered at that location**. Total elapsed time from idea to official government reply: under 72 hours.
+
+The correction, added the same day: the site **had already been mapped in Estrada-Belli et al. 2025** — the agents missed it in the literature, so they *rediscovered* rather than discovered it; it was only absent from the INAH register. The author's own update leads with this.
+
+Thread value: (a) [traches] separates the defensible core (LIDAR is measured data; human-made structures are visible; the state said "not registered") from the speculative gloss (what kind of site it was); (b) [runarberg] surfaced the prior-discovery link (HN item 50453616); (c) [chirau] and [eks39x] flag the verification asymmetry — a non-archaeologist submitting to a national authority after "only chatting with the agents," and the social difficulty of experts contradicting "a Google engineer and his 48 agents"; (d) [myrmidon] gives the steelman — manually combing thousands of km² of lidar against existing site registers was never realistic for PhD students, "LLMs have turned this into low-hanging fruit"; (e) [piltdownman] warns the academic response may be gatekeeping, citing the Dead Sea Scrolls monopoly.
+
+Methodological lesson for this page: the *screening* step was genuinely agentic and genuinely scarce (48 patient visual reviewers), and the *literature-check* step is exactly where the failure occurred — the same reliability split seen in citation-quality studies. Discovery claims should be graded per-stage, not holistically.
 ## Related Pages
 - [[entities/metR]] — the publishing lab
 - [[concepts/evaluation/ai-evals]] — evaluation methodology

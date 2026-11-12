@@ -4,7 +4,7 @@ type: concept
 aliases:
   - vibe-coding
 created: 2026-04-12
-updated: 2026-08-11
+updated: 2026-11-12
 tags:
   - concept
   - agentic-engineering
@@ -247,6 +247,19 @@ This was a pioneering framework that later materialized as standards like MCP (M
 
 > *"Computer science is about systematic thinking, not writing code."* — Mehran Sahami, Stanford CS Chair (quoted in O'Reilly article)
 
+## Case: Humble Bundle security regression (November 12, 2026)
+
+A user-authored report ("Humble Bundle just killed most of their security through vibecoding", SpaceBattles thread) reached the HN front page on November 12 (297 pts / 173 c), alleging that a redeployed Humble Bundle site regressed basic security and quality — the sharpest claim being a **2FA bypass**: "Not only is the site uglier (gradients, gradients everywhere!), but I could log in without needing my 2FA at all" ([xavdid]).
+
+The thread is a compact map of the vibe-coding blame debate:
+
+- **Human-only blame** ([xx__yy]): "Sounds like shotgun project, cheap model with low effort, at the controls of someone who doesn't know how to build software, end to end. AI doesn't produce bad software, people do." vs **[zendist]**: "AI definitely produces bad software, too. It's up to the people involved in the process, to gatekeep AI to not *ship* bad software."
+- **Fail-open LLM behavior, first-hand** ([halflife]): refactoring a permissions model to a hierarchy with Claude Opus 5 high — "if a part of a permission grant was missing in the hierarchy, claude happily granted them approval instead of rejecting — fail open for permissions... When I told Claude this is very bad, its reply was 'Good catch!'"
+- **Term inflation** ([resonious]): "80-90% of programmers use AI to generate code... If you do well, it's still engineering. Someone makes a mistake? Vibe coded." Also notes the mirror-image threat: "a huge wave of hacks caused by old human coded systems getting owned by 'vibe' attackers."
+- **Management accountability** ([johnnyanmac]): "how many forced 'tokenmaxxing' initiatives do I need to bring up before we stop blaming developers for this reckless adoption of AI? These decisions come from the top."
+- **Reviewability limit** ([throwaw12]): vibe coding "allows you to produce so much code that it's not viable to carefully review each line/module."
+
+The fail-open permission bug is the most transferable artifact in the thread: it is the security-shaped instance of the general agent-verification problem — an LLM that optimizes for satisfying the request rather than preserving the invariant — and it pairs directly with the merge-gate/adversarial-review-agent answer AWS articulated the same day ([[entities/aws-emulator]]).
 ## Related Concepts
 
 - [[concepts/agentic-engineering]] — Contrasting development style

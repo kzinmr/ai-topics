@@ -4,7 +4,7 @@
 > Total pages: 3445
 > Last updated: 2026-11-12
 
-## Entities (968 pages)
+## Entities (969 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -15,6 +15,7 @@
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box; AI-powered enterprise content management, Box AI, AI trust layer
 - [[entities/abacaj]] — abacaj — Independent AI researcher
 - [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
+- [[entities/aws-emulator]] — AWS Emulator (launched Nov 11 2026) — official free local AWS API emulator, **100% agent-written and agent-tested** from 400+ Smithy models / 200+ services (~29,684 commits in ~3 weeks); fidelity tests vs real AWS + merge gate with adversarial security agents; CC0, Rust, agent-skill quick start. Swami/Werner Vogels: engineer's job = specs, tests, merge gates. HN 875p token-spend skepticism; MiniStack/Floci feature gaps
 - [[entities/gemini-decision-1]] — Gemini Decision 1 (Nov 11 2026) — Google's decision-model API joining Jev + GPT-6 Luna; same 3 question types, reuses Jev's "Noul" term; $0.10/MTok in, output free (Jev cheapest $0.042); fully multimodal (text/image/audio/video/PDF); non-saturated yes/no probabilities
 - [[entities/indra-ocr-agent]] — Indra (ByteDance TRAE OCR Agent) — ensemble OCR agent; small specialist models + orchestration beating large generalist VLMs on OCR at a fraction of token cost
 - [[entities/apple-onnx-mlx-modelscope]] — Apple ONNX & MLX ModelScope — on-device model distribution channel for Apple Silicon; ships ONNX + MLX formats via ModelScope; alternative to Hugging Face hub for Apple-local inference
@@ -976,10 +977,11 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2333 pages)
+## Concepts (2334 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
+- [[concepts/agentic-representation-gatekeeping]] — Agentic Representation Gatekeeping — platforms banning *user-side* personal AI agents while tolerating platform-side automation and traditional aggregators; United Airlines' Nov 11 2026 flight-booking ban (HN 569p) as canonical case: stated security grounds vs intermediary control, GDS per-query costs, and defense of dynamic pricing; Southwest's ChatGPT inventory the defection
 - [[concepts/ai-engineering-dekilling]] — AI engineering de-skilling — the erosion of code comprehension and debugging skill from 100% AI-mandate orgs and 'brain fry': r/ClaudeCode one-year retrospective (HN 129pts), Kuhne's manual-coding regimen (HN 306pts), Goldman's engineer-only Claude Code restriction; distinct from cognitive-deskilling (knowledge work) and agent model drift (infra)
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment

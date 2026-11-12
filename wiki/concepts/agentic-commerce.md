@@ -1,7 +1,7 @@
 ---
 title: Agentic Commerce
 created: 2026-05-01
-updated: 2026-11-09
+updated: 2026-11-12
 type: concept
 tags: [concept, ai-agents, platform, protocol, infrastructure]
 sources:
@@ -116,6 +116,13 @@ Alex Banks's explanation is structural rather than a technology-adoption lag: bo
 - [[entities/stripe-link-cli]] — Agent wallet CLI tool
 - [[entities/microsoft-copilot]] — Copilot Checkout powered by Stripe
 
+## Merchant-side resistance: United Airlines bans personal AI agents (Nov 2026)
+
+On November 11, 2026 **United Airlines banned AI agents from booking flights on behalf of travelers**, restricting access "directly within our digital platforms and indirectly via travel agencies and aggregators" to "unauthorized, third-party personal AI agents or assistants" (HN 569 pts / ~585 c). Stated grounds: credential exposure to third-party assistants, unintended purchases / MileagePlus misuse, and federal check-in rules requiring in-person verification. Analyst Henry Harteveldt's read: United does not want "yet another, and potentially even more powerful, intermediary" beyond Google search, metasearch and OTAs — and flight searches cost airlines money (GDS "look to book" penalties ≈ 1¢/search; a few cents per Sabre call).
+
+Two features matter for the agentic-commerce stack: (1) the ban **reaches through intermediaries** — contract enforcement on Kayak/Hopper/Google Flights to police their customers' tools; (2) it is **asymmetric** — platform-side automation and traditional aggregators are untouched, and Southwest in the same window made its inventory viewable to ChatGPT users, so gatekeeping is a coordination problem, not a settled industry posture. Commenters framed it as "an industry AI vs consumer AI arms race" whose real stake is that a user-side agent optimizes price against dynamic pricing engines built to defeat exactly that.
+
+The security argument is answerable in principle by the existing stack: [[concepts/agentic-commerce]]'s Shared Payment Tokens and Link CLI never expose credentials, and verifiable delegation is the subject of [[concepts/agent-identity-and-reputation]] — which predicts the debate will then move to "unauthorized regardless of credentials." See [[concepts/agentic-representation-gatekeeping]] for the concept page.
 ## Sources
 
 - [Stripe: Introducing the Agentic Commerce Suite](https://stripe.com/blog/agentic-commerce-suite)

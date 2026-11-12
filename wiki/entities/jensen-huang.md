@@ -3,7 +3,7 @@ title: "Jensen Huang"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-04-18
+updated: 2026-11-12
 type: entity
 ---
 
@@ -184,6 +184,17 @@ Comprehensive 1:43 interview covering:
 - Forward roadmap (Rubin Ultra, Feynman, Space One)
 - Physical AI and autonomous vehicle partnerships
 
+## Board preparing to oust him (November 11, 2026)
+
+On November 11, 2026 the WSJ reported that **Nvidia's board is preparing to remove CEO Jensen Huang**, with an outside firm retained to identify CEO candidates (HN 1085 pts / 1460 c — among the largest AI-industry threads of the year; the NYT followed the same day with a report of a relationship with an executive who reports to him, HN 371 pts). Same-day blog relay (Semafor, via blog_ingest) names **CFO Colette Kress as interim** and Apple hardware chief **Johny Srouji** among candidate discussions, with a board meeting reported for Wednesday.
+
+Context as reported/discussed: the trigger chain runs from an earlier affair plus an export/"spy relationship" scandal to the second-affair report. [bradleybuda]: "If the affair were not with someone who was a CCP spy then Jensen Huang would still have his job." [pcbro141] cites Sen. Chris Coons calling an investigation of Nvidia's CEO a top Democratic priority (NPR, Nov 9). Structural fact noted by [u1hcw9nx]: Huang holds ~3.4% of Nvidia and has **no dual-class voting rights**, so he cannot block a determined board.
+
+Thread reactions split between workplace-policy normalism ([sparkling]: "even shift leaders at McDonalds need to sign various workplace policies") and institutional-risk alarm ([galkk]: expects "a shit show funnier than when OpenAI tried to put Altman out"; [waffletower] on possible Trump retaliation). [bmitc] raises the comparison question — why Musk, Zuckerberg and Altman "continually get away with it" — and whether "something larger is at play where other billionaires and perhaps politicians are unhappy with Huang."
+
+AI-industry spillover: **Gary Marcus** (same day, via blog_ingest) argues Huang is the personal backstop of the entire circular-financing structure, making the immediate market question whether **Nvidia's committed multi-billion-dollar backstop of Anthropic's IPO** gets executed under an interim CFO regime — directly relevant to [[events/anthropic-ipo-roadshow-2026]], which opened its roadshow the day before.
+
+Status caveat: as of 2026-11-12 12:00 UTC this is *reported preparation*, not a completed removal; treat successor names as rumor-level.
 ## Related
 
 - [[entities/nvidia-dgx-spark]] — Nvidia's consumer/local AI compute device
