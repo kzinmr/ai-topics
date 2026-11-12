@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20261112T101034Z",
+  "triaged_at": "2026-11-12T10:15:00+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "source": "newsletter-ingest",
+  "summary": {
+    "total_newsletters": 2,
+    "total_links": 35,
+    "actionable_newsletters": 1,
+    "skipped_newsletters": 1,
+    "critical": 1,
+    "high": 0,
+    "low": 1,
+    "note": "Both digests contained only obfuscated redirect URLs (beehiiv / Substack) with generic 'Link N' titles and no article text. Downstream wiki-ingest cannot resolve these without a scraping step that unwraps redirects; beehiiv links returned 403 to curl."
+  },
+  "classifications": [
+    {
+      "message_id": "<20261111.190720.a2c7916f@mta16>",
+      "source_label": "uid=902",
+      "date": "2026-11-11",
+      "subject": "🚨 AI 2027 Authors Now Expect 2027 Takeoff",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-11-ai-2027-authors-now-expect-2027-takeoff.md",
+      "publisher": "AI 2027 (beehiiv)",
+      "importance": "critical",
+      "relevance": "direct",
+      "topic_tags": ["ai-timeline", "agi-forecast", "ai-safety", "forecasting", "frontier-labs"],
+      "why": "AI 2027 is a tracked, high-signal source for AGI timeline forecasting (Daniel Kokotajlo et al.). A headline shift to '2027 takeoff' is a material update to existing timeline/forecasting wiki pages and likely warrants an events/ page plus updates to any AGI-timeline and forecasting concept pages.",
+      "suggested_wiki_actions": [
+        "Resolve the 20 beehiiv redirect URLs via the email HTML (raw_path only stored redirect shells) before scraping",
+        "Create/update events/ page for the AI 2027 timeline revision",
+        "Cross-reference forecasting/AGI-timeline concept pages; record prior expectation vs new claim with date + source",
+        "If author commentary (Kokotajlo) present, update relevant entity page"
+      ],
+      "blocked_on": "URL resolution — redirect unwrapping required; links are not directly fetchable",
+      "link_count": 20,
+      "links_resolved": 0
+    },
+    {
+      "message_id": "<20261111194214.3.90ef052c7bfab635@mg-d0.substack.com>",
+      "source_label": "uid=903",
+      "date": "2026-11-11",
+      "subject": "The Dark Edition of my new book is now available on Amazon!",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-11-the-dark-edition-of-my-new-book-is-now-available-on-amazon.md",
+      "publisher": "AI Weekly (Substack, publication_id=61455)",
+      "importance": "low",
+      "relevance": "indirect",
+      "topic_tags": ["newsletter-meta", "book-announcement"],
+      "why": "Self-promotional book-launch announcement from AI Weekly. The digest body is almost entirely Substack chrome (like/comment/share/app-link redirects, tokenized post URLs). No substantive technical content about LLMs or agents is present in the stored raw file.",
+      "suggested_wiki_actions": [
+        "Skip wiki ingestion",
+        "Optionally record the author/book only if AI Weekly's author is already a tracked entity"
+      ],
+      "blocked_on": null,
+      "link_count": 15,
+      "links_resolved": 0
+    }
+  ],
+  "followups": [
+    "newsletter-ingest stores un-unwrapped beehiiv/Substack redirect URLs with placeholder titles ('Link 1'..'Link N'). Recommend process_email.py capture anchor text and unwrap redirect Location headers (with a proper User-Agent / OAuth context where possible) so triage can classify without guessing.",
+    "If AI 2027 digest is pursued, the original email HTML must be re-fetched from the IMAP server (subject '<20261111.190720.a2c7916f@mta16>') — the raw markdown on disk is insufficient."
+  ]
+}
