@@ -2,7 +2,7 @@
 title: "Modal Labs"
 type: entity
 created: 2026-05-08
-updated: 2026-10-29
+updated: 2026-11-12
 tags:
   - company
   - infrastructure
@@ -25,6 +25,7 @@ sources:
   - raw/articles/modal.com--blog-nvidia-vera-sandboxes--1cb9000c.md
   - raw/newsletters/2026-10-22-why-ai-compute-comes-in-rectangles-erik-bernhardsson-modal-ceo.md
   - raw/articles/modal.com--blog-sakana-case-study--eccf1dd8.md
+  - raw/articles/2026-11-12_modal_gvisor-cncf-maintainer.md
 ---
 
 # Modal Labs
@@ -265,3 +266,9 @@ Modal's Forward Deployed Engineering team published a kernel-level writeup of se
 **Routing & capacity** — post-launch, Modal's in-house **KV-aware router** was enabled with no code changes on Sakana's side: requests go to the replica most likely to already hold the prompt prefix, while balancing as replicas scale. Multi-minute TTFT spikes disappeared and per-replica queues fell to near zero at unchanged decode speed. Elastic (non-reserved) GPU capacity let Sakana launch without a months-ahead reservation — the counter-example to the reserved-capacity model in the "Compute comes in rectangles" section above. Quote: Masaya Ohagi (Applied Research Engineer). See [[entities/sakana-ai]], [[concepts/speculative-decoding]], [[concepts/model-quantization]].
 
 Source: raw/articles/modal.com--blog-sakana-case-study--eccf1dd8.md
+
+## gVisor CNCF donation & Modal as maintainer (Nov 11, 2026)
+
+At KubeCon Salt Lake City, Google donated **gVisor** (including name and trademarks) to the **CNCF**, moving to maintainer-led governance. **Modal, Ant Group, and Tines join as maintainers**; OpenAI, Tencent, and NVIDIA continue contributing. gVisor has been Modal's major container runtime from the start: **~40 million gVisor containers/day** across GPU inference, multi-node training, coding agents, and sandboxes. Modal's stated requirements that gVisor meets: a real multi-tenant boundary ("not acceptable to share a host kernel when the code might have been written a minute ago by a model someone prompted"), native GPUs via **nvproxy** ioctl validation, ~25 ms boot / 12 MB overhead, whole-sandbox checkpoint/restore (incl. GPU memory via cuda-checkpoint — the foundation of Modal memory & GPU snapshots), and no hardware-virtualization dependency across all clouds and bare-metal GPU fleets. Authors: Ayush Ranjan, Luis Capelo. See [[concepts/gvisor]].
+
+Source: raw/articles/2026-11-12_modal_gvisor-cncf-maintainer.md

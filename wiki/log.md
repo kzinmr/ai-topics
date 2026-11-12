@@ -2426,3 +2426,11 @@ research-grade pages from genuinely uncovered material:
 ## Hot post 2026-11-11 09:30 JST (morning)
 - Published hot post: PSI Aaronson–Ambainis Lean proof vs SemiAnalysis GDPx 12% (verification-availability contrast). Source: inbox/hot-posts/2026-11-11-0930-morning.md
 
+
+## [2026-11-12] active-crawl — 3 new pages (gVisor/CNCF, Anthropic IPO roadshow, Gemini Decision 1)
+- **Created** `concepts/gvisor.md` — gVisor Sentry application-kernel sandbox; Google donated to CNCF at KubeCon SLC Nov 11 2026 (name + trademarks, maintainer-led governance); Modal + Ant Group + Tines join maintainers, OpenAI/Tencent/NVIDIA continue. Modal scale: 40M containers/day, ~25 ms boot / 12 MB overhead, nvproxy GPU ioctl validation, cuda-checkpoint sandbox snapshots. Raw: `raw/articles/2026-11-12_modal_gvisor-cncf-maintainer.md`
+- **Created** `events/anthropic-ipo-roadshow-2026.md` — roadshow kickoff Nov 10; Tom Brown compute section: train+serve on all 4 chip families (Trainium/TPU/NVIDIA/AMD); Mythos AMD port in 3 days, ~100% kernels by Claude; "total effective compute = physical × compute multipliers" + RSI claim (company-reported, fundraising context). Raw: `raw/articles/2026-11-12_simonw_anthropic-ipo-roadshow-compute.md`
+- **Created** `entities/gemini-decision-1.md` — Google's decision model joining Jev + GPT-6 Luna; same 3 question types, reuses Jev's "Noul"; $0.10/MTok in / output free (Jev $0.042); fully multimodal; non-saturated yes/no probabilities.
+- **Updated** `concepts/system-one-models.md` — new section "Frontier-lab SKUs arrive" with three-vendor pricing/modality table; resolved the "lab SKU" open question.
+- **Research note**: `raw/articles/2026-11-12_trending-topics-research.md` (gap analysis; rejected: lcamtuf token-void comic [image-only, fails thresholds], Nvidia Huang ouster [unconfirmed paywalled breaking news — follow-up candidate], AI Engineer talks [deferred, video]).
+- Index: 3442 → 3445 pages. Checks: all wikilinks resolve to existing files; tags from SCHEMA taxonomy.

@@ -1,11 +1,12 @@
 ---
 title: "System One Models (Fast Structured-Decision LLMs)"
 created: 2026-09-20
-updated: 2026-10-20
+updated: 2026-11-12
 type: concept
 tags: [model, structured-outputs, inference-speed, classifiers, model-routing, token-economics, small-models, decision-centric, probabilistic, real-time, sgnt, jev, ai-industry-economics, evaluation]
 sources:
   - raw/articles/2026-09-17_typesafe_introducing-system-one-models-and-jev.md
+  - https://simonwillison.net/2026/Nov/11/gemini-decisions-api/
   - raw/articles/seangoedecke.com--jev-means-structured-output-is-interesting-again--e24ec7ee.md
   - raw/articles/seangoedecke.com--two-techniques-for-working-with-system-one-models--78f4cc6a.md
   - raw/newsletters/2026-09-19-ainews-here-are-6-clones-of-jev-in-2-days.md
@@ -85,12 +86,25 @@ Cloudflare's motivating observation is an economic one: a large share of "struct
 
 This extends the "interface, not architecture" thesis above: Cloudflare reached the same single-pass, input-only-priced conclusion TypeSafe did, then generalized the interface from *decide-among-options* to *extract/compute/forecast-typed-values*. It also raises a new open question — whether an extraction model's span-grounded outputs can out-compete the parse/validate/retry pipelines teams build on top of general LLMs.
 
+## Frontier-lab SKUs arrive: GPT-6 Luna, then Gemini Decision 1 (2026-11-11)
+
+Goedecke's September prediction — that labs would ship official fast-decision variants once Jev gained traction — came true. OpenAI launched **GPT-6 Luna** first; on **2026-11-11 Google joined with Gemini Decision 1** ([[entities/gemini-decision-1]]), an API almost identical to Jev's: the same three question types (yes/no, choice, rubric-scoring), even reusing Jev's term **"Noul"** for a yes/no question. The three-vendor field as of Nov 11, 2026:
+
+| | Jev (TypeSafe) | GPT-6 Luna (OpenAI) | Gemini Decision 1 (Google) |
+|---|---|---|---|
+| Input $/MTok | **$0.042** | $0.10 | $0.10 |
+| Output | free | free | free |
+| Modalities | text + JSON | text + images | **text, images, audio, video, PDFs** |
+| Yes/no outputs | 1.0 / 0.0 saturated | 1.0 / 0.0 saturated | non-saturated probabilities (e.g. 0.9234) |
+
+Two open questions partially resolve: the class **is** now a lab SKU (two of the three major labs), and input-only/free-output pricing has become the category standard. Google's multimodal coverage (video/audio/PDF decisions) is a capability axis no launch-era System One model had; its non-saturated probabilities may also matter for confidence-banded routing ([[concepts/calibrated-escalation]]), pending independent eval. Source: https://simonwillison.net/2026/Nov/11/gemini-decisions-api/
+
 ## Open questions
 
 - Did the Kev/dQwen3.5 fine-tune lineage generalize System One beyond TypeSafe's training recipe (RLCD-free distillation)?
 - Does RLCD calibration survive outside TypeSafe's own workflow evals (whose reference answers are the average of Astra + Fable, biasing toward OpenAI/Anthropic)?
-- Will "System One" become a lab SKU (Terra/Haiku fast-decision variants), or stay a community retrofit pattern?
-- Can tiered-goal loops push the class past narrow reactive tasks into genuinely agentic control?
+- ~~Will "System One" become a lab SKU~~ → **Yes** (Luna Oct/Nov 2026, Gemini Decision 1 Nov 11 2026); remaining question: can Jev's $0.042 price advantage hold against $0.10 frontier-lab SKUs?
+- Are Gemini Decision 1's non-saturated probabilities genuinely better-calibrated than Jev/Luna's saturated 1.0/0.0, or just softer outputs?
 
 ## Community clones: openjev-sglang (2026-09-21)
 

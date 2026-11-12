@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3442
-> Last updated: 2026-11-11
+> Total pages: 3445
+> Last updated: 2026-11-12
 
-## Entities (967 pages)
+## Entities (968 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -15,6 +15,7 @@
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box; AI-powered enterprise content management, Box AI, AI trust layer
 - [[entities/abacaj]] — abacaj — Independent AI researcher
 - [[entities/abridge]] — Abridge — AI-powered medical conversation summarization platform
+- [[entities/gemini-decision-1]] — Gemini Decision 1 (Nov 11 2026) — Google's decision-model API joining Jev + GPT-6 Luna; same 3 question types, reuses Jev's "Noul" term; $0.10/MTok in, output free (Jev cheapest $0.042); fully multimodal (text/image/audio/video/PDF); non-saturated yes/no probabilities
 - [[entities/indra-ocr-agent]] — Indra (ByteDance TRAE OCR Agent) — ensemble OCR agent; small specialist models + orchestration beating large generalist VLMs on OCR at a fraction of token cost
 - [[entities/apple-onnx-mlx-modelscope]] — Apple ONNX & MLX ModelScope — on-device model distribution channel for Apple Silicon; ships ONNX + MLX formats via ModelScope; alternative to Hugging Face hub for Apple-local inference
 - [[entities/jan-leike]] — Jan Leike — Anthropic co-lead of agentic safety research; former OpenAI superalignment lead; warns AI research automation is 'the big thing coming in the next year'
@@ -975,7 +976,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2332 pages)
+## Concepts (2333 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
@@ -989,6 +990,7 @@
 - [[concepts/fireworks-notion-transcript-breach]] — Notion AI transcript exposure via Fireworks AI breach; AI supply-chain incident-response failures
 - [[concepts/frontier-model-usage-policy-enforcement-2026-10]] — Anthropic usage-policy enforcement controversies (Oct 2026) — blocks on 'anything touching training larger models' (HN 367) + video-game reverse-engineering refusals (HN 149); classifier false positives on legitimate ML/security work
 - [[concepts/gemini-connected-apps-human-review-reversal]] — Google quietly reversed its 2023 no-human-review promise; probabilistic ambient Drive/Gmail ingestion into human annotation
+- [[concepts/gvisor]] — gVisor — Go userspace application kernel (Sentry) sandbox; donated by Google to CNCF at KubeCon Nov 11 2026; Modal/Ant Group/Tines join maintainers; Modal runs 40M containers/day, 25ms boot, nvproxy GPU ioctl validation, cuda-checkpoint snapshots
 - [[concepts/hackerbooks|HackerBooks]] – HN-comment-driven book recommendation service (HackerTube spin-off, HN 1404pts, 2026-11-01)
 - [[concepts/meta-tactus-glove]] — Meta Tactus (Reality Labs) — textile haptic+pose glove for dexterity data: 1.5mm fingertip stackup 3D-knit, empirically-placed capacitive tactile sensors, calibrated fingertip force, IMU-fused pose tracking through hand-object occlusion (Import AI 480, Nov 2026)
 - [[concepts/physical-superintelligence-aaronson-ambainis]] — Physical Superintelligence (PSI) — internal research system on a non-public Anthropic model proved the Aaronson-Ambainis conjecture (open since 2008); complete proof by day 3, accepted by Lean, result improved twice on related open problems (Import AI 480, Nov 2026)
@@ -3148,7 +3150,7 @@
 - [[concepts/synth]] — SYNTH
 - [[concepts/synthetic-data]] — synthetic-data
 - [[concepts/synthetic-research-interns]] — Synthetic Research Interns
-- [[concepts/system-one-models]] — System One Models — models that only *decide* (classify/route/score, single-pass, input-only pricing), never converse; Jev/TypeSafe coined Sep 2026, 6 clones in 2 days incl. ekzhang's openjev-sglang, Jev-as-a-Judge; **Oct 19 2026 Cloudflare Clairic adds the first System One *extraction* sub-class** (typed extracted/computed/forecast values with span+confidence grounding)
+- [[concepts/system-one-models]] — System One Models — models that only *decide* (classify/route/score, single-pass, input-only pricing), never converse; Jev/TypeSafe coined Sep 2026, 6 clones in 2 days incl. ekzhang's openjev-sglang, Jev-as-a-Judge; Oct 19 2026 Cloudflare Clairic adds first System One *extraction* sub-class; **Nov 11 2026 frontier-lab SKUs arrive: GPT-6 Luna + Gemini Decision 1** (three-vendor pricing/modality table)
 - [[concepts/synthid]] — SynthID; Google Earth AI satellite image retraction case (Jul 2026): SynthID fails on smartphone-photo/screenshot re-encoding, 10/day check limit
 - [[concepts/system-prompt-learning]] — System Prompt Learning
 - [[concepts/systems-programming]] — Systems Programming
@@ -3349,8 +3351,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (51 pages)
+## Events (52 pages)
 
+- [[events/anthropic-ipo-roadshow-2026]] — Anthropic IPO roadshow (kickoff Nov 10 2026) — Tom Brown compute disclosures: train+serve on all 4 chip families (Trainium/TPU/NVIDIA/AMD); Mythos ported Claude to AMD in 3 days writing ~100% of kernels; "total effective compute = physical × compute multipliers" framing with RSI claim that Claude will discover multipliers itself (company-reported)
 - [[events/hf-harness-adapters-launch-2026]] — HF "harness adapters" (harness-hub, Nov 6 2026) — one LoRA per (base model × harness) for pi/opencode/hermes, GRPO RL on verifiable tasks inside unmodified harnesses, fewer tool calls at equal-or-better accuracy; safeagents blocks reward-hacking tool calls; Repo2RLEnvs built from public Hub agent trajectories; $5 vs $90 adapter-vs-merged checkpoint eval; LFM2.5-24B-A2B / LFM3-1.7B / TwIL-8B. Amplified by Tom Aarsen
 
 - [[events/gemini-api-cli-agent-skill]] — Google's Gemini API CLI (`gemini-api`) + `gemini-api-cli` agent skill (Nov 3, 2026) — stateless Go binary giving shell-capable agents (Claude Code, Codex, Hermes...) image/audio/video/file-analysis + managed-agent access via `npx skills add`; self-describing (`--schema`/`--usage`), `--dry-run`, JSON/TOON output. Announced by Philipp Schmid
