@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3445
+> Total pages: 3446
 > Last updated: 2026-11-12
 
 ## Entities (969 pages)
@@ -3411,7 +3411,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (56 pages)
+## Queries (57 pages)
 
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines

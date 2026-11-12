@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-12] watchdog | auto-fix verification — pipeline chain breaks diagnosed, no wiki corruption
+
+Daily watchdog (17:35 UTC). Live verification of pre-run context claims:
+
+- **Pipeline chain breaks** (`blog`, `newsletter`: triage_ok_but_wiki_ingest_failed): NOT data issues. blog-wiki-ingest died on `HTTP 503 Local LLM server is busy`; newsletter-wiki-ingest died on `Response truncated due to output length limit`. Both triage stages succeeded (blog take=6/ref=4/skip=10; newsletter take=0/ref=1/skip=17) and wrote `triage_latest.json` + archive + commits (5a6bf492, a95a01d6) — downstream will re-consume tomorrow. Transient infra failures, no manual intervention required.
+- **Downstream checkpoint staleness** (`cron/data/triage/latest.json` = 2026-07-08, `newsletter-triage/latest.json` = 2026-05-11): stale pointers only; the real checkpoints (`blog_ingest/triage_latest.json`, `newsletter/triage_latest.json`) are fresh (2026-11-12). No action.
+- **wiki-health --json**: orphans 0, frontmatter errors 0, skeleton 0; 1 warn (9-word slug `concepts/evals-how-to-know-whether-an-ai-system-works` — cosmetic, left as-is).
+- **index.md**: validate_index.py clean (3476 lines); 0 pipe/line-number/triple-bracket/space-prefix corruption. Header counts reconciled: Queries 56→57 (live `- [[queries/` line count), Total pages 3445→3446.
+- **wiki-graph-analysis**: 146.5h old (next run Fri 15:00 UTC) — within schedule, no action.
+
+No wiki pages created/deleted. 1 file changed (index.md header counts + this log entry).
+
+---
+
 ## [2026-11-12] trending-topics: AI Futures 2027 explosion, Nvidia ouster, AWS Emulator, United agent ban, LP weight-space, Humble Bundle
 
 Sources: HN front-page + keyword + points-only Algolia sweeps (2d window), blog_ingest 20261112T100026Z (45 new / 16 saved), newsletter triage 20261112T101034Z (Superintelligence "AI 2027" body recovered from IMAP after beehiiv 403s), active-crawl note 2026-11-12 (gVisor/CNCF, Anthropic IPO compute, Gemini Decision 1 — already committed in 16ddc6da, not duplicated here).
