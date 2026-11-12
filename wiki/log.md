@@ -1,3 +1,16 @@
+## [2026-11-12] wiki-health-fix | auto-fix pass — all clean, index headers reconciled
+
+### Verification
+- index.md: pipe prefix 0, line-number prefix 0, triple bracket 0, space prefix 0 (validate_index.py pass, 3476 lines)
+- wiki_health.py --json: orphan_count 0, no index corruption
+- Index header reconciliation: Concepts header 2334 -> 2338 (matches index-line count and digest), Total pages 3446 -> 3450
+
+### Status
+- Entities 969 / Concepts 2338 / Comparisons 35 / Events 52 / Queries 57
+- Stale (>30d): 2897 (informational). Unprocessed raw: 7136/11384 (backlog, handled by raw-backlog pipeline)
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
