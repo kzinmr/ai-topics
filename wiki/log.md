@@ -1,3 +1,18 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-13] health-fix | index header count reconciliation (Queries 57→58)
+
+- Live-verified all Phase 1/2 targets clean: index.md 0 pipe_prefix / 0 line_number_prefix / 0 triple_bracket / 0 space_prefix; validate_index.py EXIT=0 (3482 lines).
+- Recursive ghost scan: 0 index entries pointing to missing files. Recursive orphan scan: 0 unindexed top-level pages (digest "orphans ✅" confirmed).
+- Full-wiki frontmatter scan: 0 pages without frontmatter, 0 pages missing `sources:` (3435 L2 pages checked), 0 L2 pipe-prefix bullets.
+- Fixed header drift: `## Queries (57 pages)` → `(58 pages)` (58 actual entries on disk+index, all within Queries section), `Total pages: 3452` → `3453` to match section sum (969+2338+35+53+58).
+- No content edits; no new pages. log.md healthy (1 H1, 214 entries, 0 orphan ### timestamps).
+
+---
+
 ## [2026-11-13] watchdog | auto-fix — pipeline repair (x-accounts-scan daily, newsletter 503 triage)
 
 - Live-verified index.md: 0 pipe/line-number/triple-bracket corruption; validate_index.py clean (3482 lines). wiki-health report was null — no lint issues to fix.
@@ -6,7 +21,7 @@
 - Graph report (2.5h old): stable; 460 orphans track new-page creation 1:1, 0 actionable dups, 0 tag violations, 149 bare->namespaced links routed per report to creation queue. No watchdog action required.
 - No wiki page changes this run.
 
-# Wiki Log
+---
 
 ## [2026-11-13] weekly-graph-analysis — 3,456 pages; 460 orphans, 2,581 broken links, 17 dup groups (0 merges)
 
@@ -89,7 +104,6 @@ Sources verified live: HF model cards (SmolLM3-3B, SmolLM2-1.7B), GitHub API (el
 ---
 
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-12] watchdog | auto-fix verification — pipeline chain breaks diagnosed, no wiki corruption
 
