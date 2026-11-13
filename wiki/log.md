@@ -1,3 +1,18 @@
+
+## [2026-11-13] blog-ingest: 14 articles saved (run 20261113T100036Z)
+
+RSS scan found 33 new articles; 20 fetched, 14 saved to `wiki/raw/articles/` (plus 12 sitemap-monitor articles swept from a prior uncommitted batch). `blogs_scanned=0` is the known cosmetic checkpoint bug; DB-side count matches `total_new`.
+
+Highlights:
+- **Jensen Huang resigns from Nvidia** — `nvidianews.nvidia.com--news-nvidia-announces-ceo-transition--d22abd9c.md`, `garymarcus.substack.com--p-jensen-huang-resigns--4a2c07c7.md`, `techcrunch.com--2026-11-12-jensen-huang-agrees-to-testify-before-congress--d574a06f.md`
+- **geohot: "First Strike" / the singularity is nearer** — `geohot.github.io--blog-jekyll-update-2026-11-13-first-strike-html--ce2a2a73.md`
+- **llm-gemini 0.37 release** (Simon Willison) — `simonwillison.net--2026-nov-12-llm-gemini--4a05ae5e.md`
+- **Modal: Sandbox resourcing — burst, don't reserve** — `modal.com--blog-sandbox-bursting--538a1b6f.md`
+- **Pluralistic: Uber's labor crash** — `pluralistic.net--2026-11-12-starvation-wages--1e1fdc44.md`
+- **So you want to buy AI for your company** (idiallo) — `idiallo.com--byte-size-buying-ai-for-your-company--ff4b5be1.md`
+- Also: SSA-from-bytecode (bernsteinbear), co_await parameters (Old New Thing), 3Com history (dfarq), Berners-Lee memoir review (shkspr), Peacock vertical video (NBCU), TPM live blog.
+
+6 unsaved (paywalled/low-value: Reuters/WSJ Huang affair pieces, construction-physics, Truth Social, YC library). Downstream: blog-triage -> blog-wiki-ingest.
 ## [2026-11-12] skeleton-enrich-daily: 6 stubs enriched/consolidated (SmolLM, elizaOS, phidata, vLLM×3 dupes, whisper×2 dupes)
 
 `status: skeleton` backlog remains empty (streak since 2026-10-17). Continued chipping at the `status: stub` backlog (2026-04-25 bulk import) — this run targeted 7 AI-relevant stubs:
