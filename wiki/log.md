@@ -1,3 +1,11 @@
+## [2026-11-13] watchdog | auto-fix — pipeline repair (x-accounts-scan daily, newsletter 503 triage)
+
+- Live-verified index.md: 0 pipe/line-number/triple-bracket corruption; validate_index.py clean (3482 lines). wiki-health report was null — no lint issues to fix.
+- Pipeline alert 1 (x_accounts stale 26h): REAL — last successful scan 2026-11-11 22:30; 2026-11-13 22:30 run skipped. xurl auth verified OK. Changed cron `x-accounts-scan` (ca7850edc955) schedule `30 22 */2 * *` -> `30 22 * * *` (daily), matching the watchdog's every-2-days staleness detector. Backup: jobs.json.bak-watchdog-2026-11-13.
+- Pipeline alert 2 (newsletter chain broken, ingest_ok_but_triage_failed): ingest OK (run 20261113T101031Z, 5 msgs). newsletter-triage + newsletter-wiki-ingest failed 4 consecutive days (11-10..11-13) with `RuntimeError: HTTP 503: Local LLM server is busy; Hermes should fall back to the external provider` — provider fallback not engaging for these two jobs. NEEDS-HUMAN: verify local LLM health or set explicit external provider/model on the two jobs. No auto-retry (transient infra; next scheduled run will self-heal if provider recovers).
+- Graph report (2.5h old): stable; 460 orphans track new-page creation 1:1, 0 actionable dups, 0 tag violations, 149 bare->namespaced links routed per report to creation queue. No watchdog action required.
+- No wiki page changes this run.
+
 # Wiki Log
 
 ## [2026-11-13] weekly-graph-analysis — 3,456 pages; 460 orphans, 2,581 broken links, 17 dup groups (0 merges)
