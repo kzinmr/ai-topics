@@ -1,0 +1,95 @@
+{
+  "ok": true,
+  "run_id": "20261113T101031Z",
+  "triaged_at": "2026-11-13T10:30:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "input_count": 5,
+  "verdict_summary": {
+    "critical": 2,
+    "high": 0,
+    "low": 3,
+    "skip": 0
+  },
+  "notes": [
+    "All 5 digests are link-only (Substack/beehiiv wrappers); article bodies were NOT captured by newsletter-ingest. The wiki-ingest stage must scrape the canonical post URLs listed below.",
+    "IMPORTANT: wiki/log.md already records a 2026-11-13 ingest covering Jensen Huang's Nvidia CEO transition, with raw articles: nvidianews.nvidia.com--news-nvidia-announces-ceo-transition--d22abd9c.md, garymarcus.substack.com--p-jensen-huang-resigns--4a2c07c7.md, techcrunch.com--2026-11-12-jensen-huang-agrees-to-testify-before-congress--d574a06f.md, plus an update to entities/jensen-huang. The two Jensen-related digests below are CORROBORATION, not new signal — wiki-ingest should dedupe against those raw files and only add genuinely new angles (esp. SemiAnalysis's infrastructure-succession view)."
+  ],
+  "takes": [
+    {
+      "message_id": "<20261112180626.3.188a77e70404cca3@mg-d1.substack.com>",
+      "subject": "Nvidia and the World Without Jensen",
+      "source": "SemiAnalysis (Dylan Patel, Doug Colbaugh, Wayne Ma, Jordan Nanos)",
+      "date": "2026-11-12",
+      "importance": "critical",
+      "canonical_url": "https://newsletter.semianalysis.com/p/nvidia-and-the-world-without-jensen",
+      "fallback_url": "https://open.substack.com/pub/semianalysis/p/nvidia-and-the-world-without-jensen",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-12-nvidia-and-the-world-without-jensen.md",
+      "rationale": "SemiAnalysis flagship analysis of NVIDIA's post-Jensen future — key-person risk, datacenter roadmap continuity, CUDA ecosystem durability, leadership succession. Directly aligned with wiki scope (AI infrastructure / inference-training hardware). This is the differentiated take vs. the plain news coverage: infrastructure-continuity lens, with Wayne Ma (The Information) and Jordan Nanos co-authoring.",
+      "wiki_targets": [
+        {"path": "wiki/entities/nvidia.md", "action": "update"},
+        {"path": "wiki/entities/jensen-huang.md", "action": "update"},
+        {"path": "wiki/entities/semianalysis.md", "action": "update"}
+      ],
+      "suggested_tags": ["ai-infrastructure", "gpu", "nvidia", "semianalysis", "leadership"],
+      "dedupe_hint": "Cross-check against raw/articles/nvidianews.nvidia.com--news-nvidia-announces-ceo-transition--d22abd9c.md (already ingested today). Only update pages with SemiAnalysis-specific analysis (supply-chain/roadmap/succession detail), not the resignation news itself."
+    },
+    {
+      "message_id": "<20261112.190805.a7656377@mta17>",
+      "subject": "🚪 Jensen Huang Resigns from NVIDIA",
+      "source": "beehiiv newsletter (likely Gary Marcus / AI news digest)",
+      "date": "2026-11-12",
+      "importance": "critical",
+      "canonical_url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-12-jensen-huang-resigns-from-nvidia.md",
+      "rationale": "Major AI-industry leadership event: NVIDIA CEO transition. All 20 links are opaque beehiiv redirect wrappers (link.mail.beehiiv.com/v2/c/...) — wiki-ingest must follow redirects to recover real URLs. Critical news value but PARTIALLY ALREADY PROCESSED: log.md shows today's ingest already created 3 raw articles (Nvidia newsroom, Gary Marcus, TechCrunch congressional testimony) and updated entities/jensen-huang (board o...). Treat as corroboration; only add genuinely new sources/angles.",
+      "wiki_targets": [
+        {"path": "wiki/entities/jensen-huang.md", "action": "update-if-new"},
+        {"path": "wiki/entities/nvidia.md", "action": "update-if-new"}
+      ],
+      "suggested_tags": ["nvidia", "leadership", "ai-industry"],
+      "dedupe_hint": "Compare resolved URLs against the 3 raw articles already ingested for this event; skip duplicates."
+    },
+    {
+      "message_id": "<20261112140311.3.02b3b14b3675904b@mg-d0.substack.com>",
+      "subject": "To the man with AI, everything looks like a task",
+      "source": "Ben's Bites (Ben Tossell)",
+      "date": "2026-11-12",
+      "importance": "low",
+      "canonical_url": "https://www.bensbites.com/p/to-the-man-with-ai-everything-looks",
+      "fallback_url": "https://open.substack.com/pub/bensbites/p/to-the-man-with-ai-everything-looks",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-12-to-the-man-with-ai-everything-looks-like-a-task.md",
+      "rationale": "Opinion/essay-style piece on AI-task framing (tool law of-the-manalyst framing applied to agentic AI). Mildly relevant to agent-design discourse; Ben's Bites digests are mostly product/marketing roundup. Low priority — skip unless the essay offers a genuinely novel agentic-design argument.",
+      "wiki_targets": [],
+      "suggested_tags": ["ai-agents"],
+      "fetch_required": false
+    },
+    {
+      "message_id": "<20261112180728.3.c127a749d0d951a3@mg-d0.substack.com>",
+      "subject": "How to Stay Current, Get Hired, and Last in AI",
+      "source": "The Skip (publication_id=92860)",
+      "date": "2026-11-12",
+      "importance": "low",
+      "canonical_url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-12-how-to-stay-current-get-hired-and-last-in-ai.md",
+      "rationale": "Career-advice podcast episode about staying current in AI. Not technical; no durable knowledge for an LLM/agent technology wiki. Link set is almost entirely Substack audio-player chrome.",
+      "wiki_targets": [],
+      "suggested_tags": [],
+      "fetch_required": false
+    },
+    {
+      "message_id": "<20261112202259.3.35db4cc6a5b22e09@mg-d1.substack.com>",
+      "subject": "True Positive Weekly #185",
+      "source": "AI Weekly (aiweekly.co)",
+      "date": "2026-11-12",
+      "importance": "low",
+      "canonical_url": "https://aiweekly.co/p/true-positive-weekly-185",
+      "fallback_url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-185",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-12-true-positive-weekly-185.md",
+      "rationale": "Aggregator roundup (#185). Value is in individual curated links, all of which are opaque Substack redirects here. Historical pattern: aggregator items rarely warrant dedicated pages; unique items are typically picked up by blog-ingest or X pipelines first. Defer — only escalate if wiki-ingest's redirect resolution surfaces a unique high-signal article not covered elsewhere.",
+      "wiki_targets": [],
+      "suggested_tags": [],
+      "fetch_required": false
+    }
+  ],
+  "downstream_instructions": "newsletter-wiki-ingest: prioritize the two Jensen/NVIDIA takes. Resolve beehiiv redirects for uid=907 before fetching. Dedupe against raw/articles/*jensen* and today's log.md entry before updating entities/jensen-huang.md and entities/nvidia.md — use patch (append), never overwrite rich pages. Skip the 3 low-priority digests unless redirect resolution reveals otherwise."
+}
