@@ -3474,8 +3474,8 @@
 - [[queries/test-time-compute-three-axes-2026-09-24]] — Compute-vs-accuracy frontier has 3 axes (sleep-time / test-time / post-peak); benchmarks only measure the middle one
 - [[queries/unresolved-newsletter-leads]] — Unresolved newsletter leads: beehiiv uid=861 "Two AI Labs Say They Refuted ETH" (2026-10-31, all 16 links Cloudflare-403) — second-lab ETH refutation unverifiable from any primary source; held pending arXiv cs.CC / DeepMind blog corroboration
 - [[queries/where-the-missing-software-went]] — Where the missing software went: reconciles code-review-bottleneck (shipping didn't grow) with the modest-success boom (modest successes doubling per year) — growth went long-tail, review capacity is the moat
-- [[queries/wiki-graph-analysis-weekly-2026-11-06]] — Weekly Wiki Graph Analysis (2026-11-06) — 3,404 pages; 484 orphans (457 true ≥20L via deep audit), 2,598 true broken links, 17 dup groups (0 merges needed), 326 oversized, 2,491 stale
-- [[queries/wiki-graph-analysis-weekly-2026-11-06-annotations]] — Adjudicated verdicts: all 17 dup groups = already-redirected/false-positive/legit-split, 2 cross-ref fixes, 7-item missing-page creation queue, tag violations = 0 (report false positive)
+- [[queries/wiki-graph-analysis-weekly-2026-11-13]] — Weekly Wiki Graph Analysis (2026-11-13) — 3,456 pages; 460 true orphans (≥20L via deep audit), 2,581 true broken links, 17 dup groups (0 merges needed), 330 oversized, 2,558 stale
+- [[queries/wiki-graph-analysis-weekly-2026-11-13-annotations]] — Adjudicated verdicts: all 17 dup groups = already-redirected/false-positive/legit-split, index gap = 1 real, 4-item missing-page queue + 5 borderline hubs, tag violations = 0 (report false positive)
 
 ## RSS Scans
 

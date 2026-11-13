@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-11-13] weekly-graph-analysis — 3,456 pages; 460 orphans, 2,581 broken links, 17 dup groups (0 merges)
+
+- Generated `queries/wiki-graph-analysis-weekly-2026-11-13` via scripts/_weekly_graph_report.py + deep_link_audit.py ground truth.
+- Adjudicated all 17 dup groups: 10 already-redirected, 4 legit namespace splits, 2 false positives (_index pair, deliberate-coder/deliberatecoder different people), 1 already-handled. 0 merges needed.
+- Index reconciliation: real gap = today's report only; replaced dangling 2026-11-06 report+annotations entries (generator rotation bug #3). `_archive` index entry flagged as low-priority cleanup.
+- tag_audit.py: 0 violations (report's "1 tag violation" = false positive, routed to tag-audit-weekly).
+- Missing-page queue: claude-opus-4-7, entities/cursor, entities/huggingface, entities/ben-clavie + 5 borderline hub-vs-alias targets. 47 empty [[]] links = mechanical fix.
+- No destructive actions taken. Report + annotations + index + log committed.
+
 ## [2026-11-13] trending-topics — checkpoint forensics, Edge0-145B, x402, Nvidia petition, Anthropic IPO front page
 
 - New concepts: `checkpoint-forensics` (weight-level Blackwell fingerprinting, HN 307p), `edge0` (145B laptop inference claim, HN 273p), `x402` (HTTP 402 agentic payments via Brave, HN 129p)
