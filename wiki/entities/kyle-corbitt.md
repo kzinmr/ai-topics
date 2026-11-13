@@ -5,7 +5,7 @@ aliases:
   - Kyle Corbett
   - corbtt
 created: 2026-06-10
-updated: 2026-11-01
+updated: 2026-11-13
 tags:
   - person
   - reinforcement-learning
@@ -67,6 +67,16 @@ announcement of research on how AI agents shape experts' judgment calls** — a 
 Anthropic is measuring empirically.
 
 Raw: [[raw/articles/corbt.com--the-machine-starts--2026-10-27]]
+
+### Nov 2026: Pitching "The Machine Starts" to Patrick Collison
+
+On **2026-11-08** Corbitt replied to @patrickc on X: he believes the story "captures a
+positive, recognizable and realistic vision of what the near-post-ASI world might look
+like" and asked for Collison's take. This positions the story explicitly as a
+*post-ASI optimism* artifact (vs. the doom/acceleration camps), following his Oct 27
+amplification quoting Alex Tamkin's expert-judgment research.
+
+Raw: [[raw/articles/corbt.com--the-machine-starts--19c6639b]]
 
 ## Related
 

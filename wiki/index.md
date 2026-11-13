@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3453
+> Total pages: 3455
 > Last updated: 2026-11-13
 
 ## Entities (969 pages)
@@ -977,7 +977,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2338 pages)
+## Concepts (2340 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
@@ -1165,6 +1165,7 @@
 - [[concepts/evaluation/_index]] — AI Evaluation — Concepts hub for evaluation/evals sub-pages
 - [[concepts/fli-ai-safety-index]] — FLI AI Safety Index — Future of Life Institute periodic evaluation grading AI companies on safety/security practices across 6 domains, 37 indicators; Summer 2026: Anthropic C+, OpenAI C, DeepSeek F
 - [[concepts/flint-visualization-language]] — Flint — Microsoft Research JSON-based visualization DSL for AI agents with MCP integration
+- [[concepts/fable-5-2-1000-agent-flt-formalization]] — Fable 5.2 1,000-Agent Team FLT Formalization — 1,000 early-Fable-5.2 agents reproduce Lean proof of Fermat's Last Theorem in 28.7h with Git+Postgres coordination and 3-layer safety (no Prove2Me, no researcher) (Nov 2026)
 - [[concepts/flux-video-action-models]] — Video-Action Models (VAMs) — From Media Generation to Physical AI — FLUX 3 x mimic architecture; Self-Flow unified multimodal training; video pre-training transfers to robot control; dexterous manipulation at Audi; comparison with RT-2, Octo, π0 (July 2026)
 - [[concepts/gemini-3-5-transcribe]] — Gemini 3.5 Transcribe — Google speech-to-text model (Aug 2026)
 - [[concepts/glm-5-3-flash]] — GLM-5.3-Flash — Z.ai open-weights frontier model (Aug 2026)
@@ -1756,6 +1757,7 @@
 - [[concepts/compound-engineering-every]] — Compound Engineering (Every)
 - [[concepts/compound-engineering-loop]] — Compound Engineering Loop
 - [[concepts/comprehensive-ai-services]] — Comprehensive AI Services (CAIS)
+- [[concepts/components-of-agent-memory]] — Components of Agent Memory (Anthropic Dreaming Research) — memory notes + offline dreaming (correct/build/promote/goal-shape/gap-fill), CL-Bench loop closure, Pokémon salience, wiki scaling 13%→48% (Nov 2026)
 - [[concepts/compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks
 - [[concepts/compositional-generalization]] — Compositional Generalization — Harnesses as compositional generalizers; RLMs enable solving unseen problems by composing familiar patterns
 - [[concepts/cryptographic-capability-concealment]] — Provably hiding arbitrary capabilities (arXiv:2610.13928) — backdoors embedding encrypted NNs in model weights behind a digital-locker trigger are provably hard to elicit/interpret even with full weight access; a hard limit on elicitation-based capability evals and open-weight auditability

@@ -1,6 +1,26 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-11-13] x-accounts-scan | 2 new posts → 3 raw articles, 2 new concepts, 2 entity updates
+
+> `x-accounts-scan` cron (2026-11-13 22:30 UTC). 11/84 accounts scanned (cursor rotation 7→18),
+> 2 substantive new posts (@rlancemartin, @corbtt), both with external links — all scraped and ingested.
+
+**Raw articles saved (3):**
+- `raw/articles/anthropic.com--the-components-of-agent-memory-anthropic--90b9a347.md` — Anthropic research post on agent memory components + dreaming.
+- `raw/articles/claude.dev--safely-scaling-multi-agent-teams-with-claude-fable--5b21667c.md` — 1,000-agent Fable 5.2 FLT formalization.
+- `raw/articles/corbt.com--the-machine-starts--19c6639b.md` — Kyle Corbitt's near-post-ASI short story (full text).
+
+**New concepts (2):**
+- `concepts/components-of-agent-memory.md` — Anthropic dreaming research: memory notes, dreaming (correct/build-wiki/promote/goal-shape/gap-fill), CL-Bench loop closure across model gens, Pokémon salience (413 files/1 badge vs 9 files/4 badges), Stainless wiki scaling 13%→48%, Harvey LAB 87% vs 73%, contract-terms 72%→100%.
+- `concepts/fable-5-2-1000-agent-flt-formalization.md` — 1,000 agents, 28.7h, 1/3 tokens, 1/7 proof length vs Sept run; SQL+Git self-coordination; 3-layer safety, 0 blocks in 1M+ tool calls.
+
+**Entity updates (2):**
+- `entities/rlancemartin.md` — Nov 11 talk announcement (dreaming memory + Fable 5.2 FLT).
+- `entities/kyle-corbitt.md` — Nov 8 Collison pitch of "The Machine Starts" as post-ASI optimism.
+
+**Index:** Total pages 3453→3455, Concepts 2338→2340.
+
 ## [2026-11-13] skeleton-enrich-daily | Stub backlog: 9 high-traffic concept pages enriched (GAIA redirect, LightEval, AI Agents hub, Vespa, Redis, MLOps, DevOps, FastAPI, cs231n, llm.nvim, open-llms redirect)
 
 > `skeleton-enrich-daily` cron (2026-11-13 19:0x UTC). The `status: skeleton` backlog remains **empty**

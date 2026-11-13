@@ -1,7 +1,7 @@
 ---
 title: "Lance Martin (@rlancemartin)"
 created: 2026-05-23
-updated: 2026-10-13
+updated: 2026-11-13
 type: entity
 tags:
   - person
@@ -126,6 +126,18 @@ Martin announced and detailed the four sandbox partnerships:
 ### Building Effective Agent Automations (Oct 2026)
 
 With CJ Avilla, Martin published **"Building effective agent automations"** on the claude.dev blog (2026-10-08): a reference implementation of scheduled background agents on Claude Managed Agents (beta) that read sources (Slack, GitHub) on a cron schedule and post a "daily brief" to Slack, plus a Claude Code onboarding command (`/claude-api managed-agents-onboard`). The article's value is its six failure-mode rules for deployed automations: (1) read from per-source bookmarks, not fixed time windows; (2) report a failed source read as unreadable, never as a quiet day; (3) re-check every item's live status right before posting ("assert it or drop it"); (4) count a post as sent only on destination confirmation, then update ledger/bookmarks; (5) re-read preferences every run from a memory store the agent can't edit (two-store split: read-only `preferences` vs read-write `state`); (6) read-only credentials wherever possible plus a spend cap that *pauses* (rather than fails) a runaway run. See [[raw/articles/claude.dev--building-effective-agent-automations--2026-10-08]] and [[concepts/managed-agents]].
+
+### Anthropic "Dreaming" & Fable 5.2 FLT talks (Nov 2026)
+
+On **2026-11-11** Martin announced he would present two Anthropic developments: (1) how
+**dreaming** corrects, updates, and creates agent memory representations, walking through
+examples from [[concepts/components-of-agent-memory]] (the Anthropic research post on the
+components of agent memory); and (2) how **Fable 5.2's 1,000-agent team formalized
+Fermat's Last Theorem** ([[concepts/fable-5-2-1000-agent-flt-formalization]]). Consistent
+with his ongoing agent-memory/context-engineering DevRel thread.
+
+Raw: [[raw/articles/anthropic.com--the-components-of-agent-memory-anthropic--90b9a347]],
+[[raw/articles/claude.dev--safely-scaling-multi-agent-teams-with-claude-fable--5b21667c]]
 
 ## X Activity Themes
 
