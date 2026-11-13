@@ -1,7 +1,7 @@
 ---
 title: Agentic Commerce
 created: 2026-05-01
-updated: 2026-11-12
+updated: 2026-11-13
 type: concept
 tags: [concept, ai-agents, platform, protocol, infrastructure]
 sources:
@@ -123,6 +123,18 @@ On November 11, 2026 **United Airlines banned AI agents from booking flights on 
 Two features matter for the agentic-commerce stack: (1) the ban **reaches through intermediaries** — contract enforcement on Kayak/Hopper/Google Flights to police their customers' tools; (2) it is **asymmetric** — platform-side automation and traditional aggregators are untouched, and Southwest in the same window made its inventory viewable to ChatGPT users, so gatekeeping is a coordination problem, not a settled industry posture. Commenters framed it as "an industry AI vs consumer AI arms race" whose real stake is that a user-side agent optimizes price against dynamic pricing engines built to defeat exactly that.
 
 The security argument is answerable in principle by the existing stack: [[concepts/agentic-commerce]]'s Shared Payment Tokens and Link CLI never expose credentials, and verifiable delegation is the subject of [[concepts/agent-identity-and-reputation]] — which predicts the debate will then move to "unauthorized regardless of credentials." See [[concepts/agentic-representation-gatekeeping]] for the concept page.
+## Brave Search API adopts x402 (Nov 2026)
+
+On Nov 12, 2026 Brave made the Search API payable via the open **x402** protocol: an unpaid request
+gets `402 Payment Required` with the price, the agent signs a USDC payment over Base and retries.
+Brave runs its own facilitator; no account, no plan selection, no API key. Purchasable products are
+general web search and "LLM Context" (agentic grounding). HN 129pts.
+
+This is the settlement-layer counterpart to the merchant-side blocking documented above: Brave
+monetizes agent traffic that United Airlines and others are trying to exclude. Thread objections
+cluster on stablecoin counterparty risk (no consumer recourse, a documented history of providers
+freezing funds) rather than on the protocol shape. See [[concepts/x402]].
+
 ## Sources
 
 - [Stripe: Introducing the Agentic Commerce Suite](https://stripe.com/blog/agentic-commerce-suite)

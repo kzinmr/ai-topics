@@ -1,3 +1,13 @@
+# Wiki Log
+
+## [2026-11-13] trending-topics — checkpoint forensics, Edge0-145B, x402, Nvidia petition, Anthropic IPO front page
+
+- New concepts: `checkpoint-forensics` (weight-level Blackwell fingerprinting, HN 307p), `edge0` (145B laptop inference claim, HN 273p), `x402` (HTTP 402 agentic payments via Brave, HN 129p)
+- Updated: `events/nvidia-ceo-transition-2026` (employee petition, HN 637p), `events/anthropic-ipo-roadshow-2026` (IPO front page 953p), `concepts/agentic-commerce` (Brave x402 settlement layer), `concepts/us-china-ai-competition` (Blackwell fingerprint section), `concepts/ai-bubble-economics` (Economist crash editorial)
+- Raw: 7 files (unemploymentlabs, edge0, brave, synthanatomy, smolmaxxing, wired-Nvidia-petition HN-reconstructed, anthropic-ipo HN thread)
+- SCHEMA: minted agentic-payments, x402, api-monetization (AI Agents); export-controls, checkpoint-forensics, stablecoin, on-device-inference (Meta)
+- Report: `inbox/rss-scans/trending-topics-2026-11-13.md`
+
 
 ## [2026-11-13] blog-wiki-ingest | run 20261113T100036Z — 5 takes / 3 references / 7 skips
 
@@ -61,7 +71,6 @@ Sources verified live: HF model cards (SmolLM3-3B, SmolLM2-1.7B), GitHub API (el
 
 ---
 
-# Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
 

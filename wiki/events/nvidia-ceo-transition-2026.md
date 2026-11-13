@@ -55,6 +55,28 @@ Per TechCrunch (via Daring Fireball), **"Ex-Nvidia CEO" Huang agreed on Wednesda
 - Whether NVIDIA's Anthropic IPO backstop and its $100B–$250B upstream purchase commitments survive unchanged under interim leadership.
 - Whether the recorded closed-door congressional transcript is released, and what it reveals about export-control lobbying.
 
+## Employee petition to restore Huang (Nov 13)
+
+Wired reported on Nov 13 that Nvidia employees organized a petition calling for Jensen Huang's
+return (HN 637pts/247c). The thread's framing is mostly incentive analysis rather than moral
+judgment:
+
+- **Compensation is the visible stake.** jmathai notes employees "took a pretty big pay cut this
+  week"; dghlsakjg estimates a ~30% RSU hit for people whose retirement sat in NVDA. hn_submit:
+  "Most don't care about his extramarital affairs" — the fear is job security without him at the
+  helm. thewhitetulip waits for Microsoft to "enter the drama like they did with OpenAI".
+- **Accountability-sink objection.** Qem finds it odd that Huang took heavy flak for relationships
+  with adult women while "those involved with Epstein remain mostly undisturbed", and asks whether
+  an AI-bubble burst would get blamed on the affairs "instead of the rampant misallocation of
+  resources". Duanemclemore names the mechanism: "a convenient accountability sink to free them
+  from having to examine the structural causes."
+- **The power-dynamic split.** doug_durham: both women were involved in his business, one was an
+  employee, so consent can never be stated confidently given the power asymmetry. skeledrew
+  counters that nothing indicates coercion and the affairs surfaced "without an ounce of blame".
+  allears separates morality from competence: even if consensual, it was "piss-poor judgment" that
+  damaged the company's reputation and cost shareholders money.
+- Reuters (HN 301pts) reported on Nov 12 that Huang had a relationship with a *second* employee.
+
 ## Related
 
 - [[entities/jensen-huang]] — person page (status updated from "rumor-level ouster" to confirmed resignation)

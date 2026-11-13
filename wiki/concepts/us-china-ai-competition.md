@@ -1,7 +1,7 @@
 ---
 title: "US-China AI Competition"
 created: 2026-05-17
-updated: 2026-11-02
+updated: 2026-11-13
 type: concept
 tags: [geopolitics, china, policy, anthropic, governance, ai-governance, prediction]
 sources:
@@ -153,6 +153,23 @@ Complementary data point from the same newsletter: a **Bloomberg geographic pric
 
 On 2026-10-16 China issued its **first frontier-AI export controls** — a symmetric escalation. Model weights/checkpoints/architecture are restricted above 10²⁶ FLOPs / 2T params / top-10 global rank; agent architectures are controlled as a distinct regulatory object; AI-enabled offensive-cyber capability is restricted or prohibited outright. An interim pre-export registration applies immediately (comment deadline 2026-11-15). Unlike U.S. controls (compute + service access, cf. the June 2026 Fable 5 suspension directive), China's regime controls **weight custody and local deployment** while leaving API/SaaS access free — directly implicating self-hosted Chinese models abroad and future Chinese open-weight release cadence. Details: [[concepts/china-mofcom-announcement-48-export-controls]], [[events/2026-10-16-china-mofcom-48-ai-export-controls]].
 
+
+## Weight-level evidence of Blackwell access (Nov 2026)
+
+Unemployment Labs' "checkpoint forensics" (Nov 12, 2026, HN 307pts) reads the training GPU class out
+of released weights via SM-count-dependent initialization artifacts, and reports that six models from
+DeepSeek, Moonshot, MiniMax and Ant Group carry NVIDIA Blackwell fingerprints (B200/B300 = 148 SMs,
+GB200/GB300 = 152 SMs) — hardware that requires a US export licence for China, none reported granted.
+Transition dates are sharp (DeepSeek flips at V4/Apr 2026, Moonshot at K3/Jul 2026, MiniMax at M3/Jun
+2026, Ant between Ling 3.0 and 3.1), while Qwen, GLM, Tencent, Xiaomi and StepFun still read as
+Hopper-trained and Meituan's LongCat-2.0 shows no NVIDIA fingerprint at all.
+
+The authors state the limit plainly: it evidences *access to advanced compute*, not where the chips sat
+or whether controls were violated — offshore datacentres serving Chinese customers are legal. The HN
+thread splits along the familiar export-control axis (grey-market futility vs price-effect coercion)
+plus a toleration hypothesis about Washington. Method robustness is unresolved — liuliu questions
+whether the signal is a genuine hardware property or a PyTorch PRNG implementation artifact. Full
+treatment: [[concepts/checkpoint-forensics]].
 
 ## Related Concepts
 

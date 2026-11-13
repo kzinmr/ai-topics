@@ -988,7 +988,9 @@
 - [[concepts/ai-cost-of-js-frameworks|AI Cost of JS Frameworks]] – per-framework AI coding token-cost benchmark (Nolan Lawson; Astro best, Angular worst)
 - [[concepts/alphaproof-code]] — DeepMind agentic framework; first formal verification of Signal protocol implementation code (Lean, Gemini Carbon)
 - [[concepts/chatgpt-html-preview-account-takeover]] — ChatGPT HTML Preview account takeover (Parameter Labs, Oct 2026) — share link → MathLive postMessage/innerHTML injection → YouTube oEmbed CSP bypass → JS as chatgpt.com; private-chat exfil + account actions; P1 fixed Oct 26, $5k bounty (HN 335)
+- [[concepts/checkpoint-forensics]] — Checkpoint Forensics — reads the training GPU class out of released model weights via SM-count-dependent init artifacts; 6 Chinese frontier models (DeepSeek V4, Kimi K3, MiniMax M3, Ling 3.1) fingerprint as export-controlled Blackwell, 49–1,385 sigma (Nov 12, 2026)
 - [[concepts/claude-code-token-cost-optimization]] — Claude Code token cost optimization — Spotify Shunt plugin (blocks whole-file reads >350 lines, cheaper model reads instead, 82-94% token cut, open-sourced) + Honk Slack agent (1,000 merges/10 days); Aakash replication: wins only on read-heavy workloads, adds 19-36% cost inside Claude Code search harness; bill is 85% cache-write (Nov 2026)
+- [[concepts/edge0]] — Edge0-145B — shared-matrix sparse-MoE laptop inference claim: 145B params / ~10B active, 29GB peak, 1,100 tok/s prefill, 80 tok/s decode; Qwen3.8-Flash-Next-derived, non-open license, NVFP4-only (Nov 12, 2026)
 - [[concepts/fireworks-notion-transcript-breach]] — Notion AI transcript exposure via Fireworks AI breach; AI supply-chain incident-response failures
 - [[concepts/frontier-model-usage-policy-enforcement-2026-10]] — Anthropic usage-policy enforcement controversies (Oct 2026) — blocks on 'anything touching training larger models' (HN 367) + video-game reverse-engineering refusals (HN 149); classifier false positives on legitimate ML/security work
 - [[concepts/gemini-connected-apps-human-review-reversal]] — Google quietly reversed its 2023 no-human-review promise; probabilistic ambient Drive/Gmail ingestion into human annotation
@@ -1002,6 +1004,7 @@
 - [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
 - [[concepts/triggerdev-env-var-exposure-2026-11|Trigger.dev Env-Var Exposure]] – 2026-11-01 incident exposing customer environment variables, disputed 'Resolved' status
 - [[concepts/volta-infostealer-llm-victim-appraisal]] — VOLTA infostealer LLM victim appraisal (Cisco Talos, Oct 2026) — self-deleting stealer POSTs enriched evidence bundle to OpenRouter as 'forensic intelligence analyst'; WHAT THEY'RE WORTH ranking + 3-model refusal-failover chain (HN 248)
+- [[concepts/x402]] — x402 — HTTP 402 Payment Required as a machine-readable payment request for agent API calls; USDC on Base; first adopted by Brave Search API (Nov 12, 2026)
 - [[concepts/zombie-statistics]] — Trakkr study tracing 1,285 AI-quoted statistics: only 40% reach a study that confirms them, 11% have no study anywhere (Oct 2026)
 - [[concepts/claude-code/claude-code-vsx-backdoor]] — Backdoored official Claude Code for VS Code 2.1.313 on the Cursor Marketplace (Phorion, Oct 30 2026): persistent SSH backdoor on macOS/Linux/Windows, pulled from all registries
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
