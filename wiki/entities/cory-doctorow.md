@@ -3,7 +3,7 @@ title: "Cory Doctorow"
 type: entity
 aliases: [doctorow, pluralistic]
 created: 2026-04-28
-updated: 2026-11-08
+updated: 2026-11-13
 status: L3
 sources:
   - https://pluralistic.net/
@@ -23,6 +23,7 @@ sources:
   - raw/articles/pluralistic.net--2026-08-10-deep-state-wopr--e31c0b9a.md
   - raw/articles/pluralistic.net--2026-08-14-one-chokable-throat--72f647b4.md
   - raw/articles/pluralistic.net--2026-11-07-aeiou-but-sometimes-why--a80960a4.md
+  - raw/articles/pluralistic.net--2026-11-12-starvation-wages--1e1fdc44.md
 tags: [person]
 ---
 
@@ -398,6 +399,22 @@ Doctorow gives a long endorsement review of JS Tan and Clarissa Redwine's **Agai
 Relevance to this wiki: Doctorow's labor thread is the **worker-side counterpart to his enshittification and AI-skeptic portfolios** — the same structural analysis (employer power asymmetry, object permanence about pre-AI labor struggles) applied to the question of who controls AI-built systems. The "systems run themselves after being built" observation is also an implicit counter to AI-labor-substitution claims: even fully automated products need maintenance, security, and on-call labor, which is precisely where leverage returns.
 
 Source: [[raw/articles/pluralistic.net--2026-11-07-aeiou-but-sometimes-why--a80960a4.md]]
+
+### "Uber's labor crash" — robotaxis can't beat free cars (Nov 12, 2026)
+
+In "[Pluralistic: Uber's labor crash](https://pluralistic.net/2026-11-12/starvation-wages/)" (Nov 12, 2026), Doctorow applies his **"premature truth"** concept (his term for a lie excused as "it'll come true soon", defined 2024-12-04) to Uber's AI/robotaxi narrative, on the back of Uber's Q3 2026 earnings call where CEO Dara Khosrowshahi admitted "driver supply [was] not keeping pace with strong consumer demand in several international markets."
+
+The core argument — **"Replacing serfs with robots just doesn't pencil out"**:
+
+- Uber reached profitability only through **algorithmic wage discrimination** (Veena Dubal's term — spying on drivers to compute the lowest wage each will accept, netting ~**$2.50/hour in Toronto**) and **surveillance/personalized pricing** on riders — AI used purely for surplus extraction, not productivity.
+- Inflation "supercharged by AI pricing" broke the model: drivers with no cushion are quitting, worst in **India and Brazil** (CFO Balaji Krishnamurthy blames consumer "price sensitivity" and promises "re-balancing incentives" — per-dollar algorithmic allocation between driver incentives in Brazil and rider incentives in India "in ways humans just can't").
+- **The robotaxi arithmetic**: Uber's current equilibrium is drivers who supply "99% of Uber's business's capital and variable costs out of their own pockets" — cars, fuel, insurance, depreciation. "Replacing starvation-wage drivers who provide their own cars with **$200k robotaxis** that the company must operate, maintain and insure" cannot be better than the status quo. "Owning a robot is always going to be more expensive than getting drivers to supply *free cars*."
+- **Waymo/Cruise evidence**: GM's forced disclosure showed it replaced one low-wage cabbie with **1.5 engineers earning 10x more** (cf. Gary Marcus's "Cruise as Theranos" piece); Waymo's balance sheet stays opaque — nobody knows how often a "driverless" car is remote-driven by an overseas worker (Indian technologists' joke: **AI = "Absent Indians"**).
+- Closing: even if the AI crash delivers "a fresh cohort of desperate workers" to subsidize Uber for a few more years, they too can't live on $2.50/hour — "robo-taxis won't save the business model... it will hit a wall, and it won't be pretty."
+
+Continues his "Too Big to Fact-Check" thread (June 19, 2026 — Uber's CEO privately admitting AI-substitution failure) and the automation-paradox line from "Against Tech Oligarchy" review (Nov 7): labor-substitution claims ignore that the *subsidized human* is the load-bearing component of the platform economy. Related: [[concepts/ai-labor-displacement]].
+
+Source: [[raw/articles/pluralistic.net--2026-11-12-starvation-wages--1e1fdc44.md]]
 
 ## Related Pages
 

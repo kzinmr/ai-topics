@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-10-25
+updated: 2026-11-13
 tags:
   - lab
   - benchmark
@@ -23,6 +23,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-could-generative-ai-could-turn-out--0880f6f7.md
   - raw/articles/garymarcus.substack.com--p-this-one-weird-trick-might-cost-your--a9a098c7.md
   - raw/articles/garymarcus.substack.com--p-breaking-bad-news-for-three-of-the--1abe3375.md
+  - raw/articles/garymarcus.substack.com--p-jensen-huang-resigns--4a2c07c7.md
   - raw/articles/garymarcus.substack.com--p-breaking-news-us-banks-are-taking--12840c29.md
   - raw/articles/garymarcus.substack.com--p-all-the-kings-horses-and-all-the--9d571052.md
   - raw/articles/garymarcus.substack.com--p-breaking-when-dreams-for-ai-sanity--a268c138.md
@@ -518,6 +519,17 @@ The new anchor is the October cyberattack wave — the deluge some have called *
 On the positive side, he cites **Torsten Slok** (Apollo Global Management chief economist, historically pro-technology) making "a brutal case that many of the positive effects we were led to expect simply aren't materializing." Closing position: conceding friends benefit from GenAI mainly for coding, "at this point it's not hard to make the argument that it has on the whole been a net detriment to society. And there is still the chance it will pull down the entire economy." ^[raw/articles/garymarcus.substack.com--p-will-generative-ai-do-more-harm-than--058bd242.md]
 
 Extends his Oct 22 "U.S. banks are taking hits from AI agents" post (same attack wave) and the [[concepts/ai-bubble-economics]] demand-side critique — Slok's missing-returns case is the macro version of his capex-vs-revenue argument.
+
+### "Jensen Huang resigns." (Nov 13, 2026)
+
+Same-day commentary on the NVIDIA CEO transition ([[events/nvidia-ceo-transition-2026]]), written hours after the board acted. Marcus's position is dual: Huang "was one of the greatest CEOs in history" (he recalls a 2014 meeting where Huang had already bet NVIDIA fully on AI), "but nonetheless, he had to go."
+
+- **Indictment**: "He enabled and even lobbied for Chinese AI, subverted US policy, and carelessly left himself vulnerable to both blackmail and espionage. His blindness to conflict of interest (or the appearance thereof) cost many people dearly." Leaving NVIDIA open to "endless litigation and investigation" is, Marcus suggests, why the board pushed him out despite his talents.
+- **Market numbers**: stock down **8% premarket, 13% at the opening bell** — Marcus had previewed the outcome in the previous day's post ("all hell may break loose").
+- **The central AI-industry question he elevates**: whether an NVIDIA with an acting CEO (the CFO) "still goes through with the billions they promised Anthropic in the IPO" — "That is now front and center" ([[events/anthropic-ipo-roadshow-2026]]). His standing thesis applies: "Jensen is the ringmaster of all the insane circular financing. And all that might collapse" ([[concepts/ai-infrastructure-circular-financing]], [[concepts/ai-bubble-economics]]).
+- **Geopolitical read**: "China is perhaps the biggest immediate winner here"; congressional investigations continue; "Lutnick and Trump may be caught in the crossfire. The main thing to expect is chaos."
+
+Source: [[raw/articles/garymarcus.substack.com--p-jensen-huang-resigns--4a2c07c7.md]]
 
 ## References
 

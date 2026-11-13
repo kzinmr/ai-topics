@@ -1,4 +1,24 @@
 
+## [2026-11-13] blog-wiki-ingest | run 20261113T100036Z — 5 takes / 3 references / 7 skips
+
+Processed blog triage 20261113T100036Z.
+
+**New pages (2):**
+- `events/nvidia-ceo-transition-2026.md` — NVIDIA official press release (primary source): Jensen Huang resigns as President/CEO/Board member effective immediately; CFO Colette Kress Interim CEO; Harvey C. Jones first-ever Chair; absorbs TechCrunch congressional-testimony follow-up (Mast/Moolenaar/Crawford, closed-door, recorded, by Thanksgiving) and Gary Marcus reaction (stock -8%->-13%, Anthropic IPO backstop question).
+- `concepts/gemini/gemini-4-hydrogen.md` — from Simon Willison llm-gemini 0.37: full Gemini 4 pricing table (Carbon/Argon identical $2/$10 -> $4/$20 Dec 1; Hydrogen $1.50/$0.075/$7.50), free-tier + Google Search positioning, 15x Haiku 5.5 / GPT-6 Luna gap, pelican quality grid.
+
+**Enriched (6):**
+- `concepts/modal-sandboxes.md` — new "Burst, don't reserve" section: >50% of sandbox life under 6% peak CPU; Terminal-Bench 2.1 replay (2m46s, 47MiB); request/burst/limit model; 58% savings calc (8.4c vs 20.0c/Sandbox-hr); OOM SLO <0.0001%/min under 8GiB.
+- `entities/jensen-huang.md` — "Resignation confirmed" section; Role field updated to ex-CEO.
+- `entities/nvidia.md` — "CEO Transition (November 2026)" section.
+- `entities/george-hotz.md` — "First Strike" subsection (China 10x electricity, chips-for-solar strategy, ASI decapitating first strike, NVIDIA nationalization/WWIII) + timeline row.
+- `entities/gary-marcus.md` — "Jensen Huang resigns." subsection (Nov 13).
+- `entities/cory-doctorow.md` — "Uber's labor crash" subsection (premature truth, robotaxi arithmetic, $2.50/hr Toronto, 1.5 engineers/cabbie).
+- `entities/ibrahim-diallo.md` — "So you want to buy AI for your company" byte-size entry.
+- `entities/simon-willison.md` — llm-gemini 0.37 / Gemini 4 Hydrogen release note.
+
+index.md: +2 entries (3452 total, Events 53). Skips/references archived (10 items) via prior triage archive 2026-11-13_20261113T100036Z.json.
+
 ## [2026-11-13] blog-ingest: 14 articles saved (run 20261113T100036Z)
 
 RSS scan found 33 new articles; 20 fetched, 14 saved to `wiki/raw/articles/` (plus 12 sitemap-monitor articles swept from a prior uncommitted batch). `blogs_scanned=0` is the known cosmetic checkpoint bug; DB-side count matches `total_new`.

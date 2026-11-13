@@ -3,7 +3,7 @@ title: "Jensen Huang"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-11-12
+updated: 2026-11-13
 type: entity
 ---
 
@@ -11,7 +11,7 @@ type: entity
 
 | | |
 |---|---|
-| **Role** | Co-founder, CEO, and President of Nvidia Corporation |
+| **Role** | Co-founder and President of Nvidia Corporation (resigned as CEO and Board member November 12, 2026) |
 | **Born** | 1963, Tainan, Taiwan |
 | **Education** | Oregon State University (BSEE), Stanford University (MSEE) |
 | **X/Twitter** | [@JensenHuangNVIDIA](https://x.com/JensenHuangNVIDIA) |
@@ -195,6 +195,17 @@ Thread reactions split between workplace-policy normalism ([sparkling]: "even sh
 AI-industry spillover: **Gary Marcus** (same day, via blog_ingest) argues Huang is the personal backstop of the entire circular-financing structure, making the immediate market question whether **Nvidia's committed multi-billion-dollar backstop of Anthropic's IPO** gets executed under an interim CFO regime — directly relevant to [[events/anthropic-ipo-roadshow-2026]], which opened its roadshow the day before.
 
 Status caveat: as of 2026-11-12 12:00 UTC this is *reported preparation*, not a completed removal; treat successor names as rumor-level.
+
+## Resignation confirmed (November 12-13, 2026)
+
+The rumor resolved within 24 hours. NVIDIA's official press release announced that **Jensen Huang resigned as President, CEO, and Board member, effective immediately**, ending 33 years as CEO. **CFO Colette Kress** (EVP & CFO since 2013; ex-Cisco/Microsoft finance) becomes **Interim CEO while retaining the CFO role**; **Harvey C. Jones** (former Synopsys CEO/Executive Chairman) was appointed NVIDIA's **first-ever Chair of the Board**; a permanent CEO search (internal and external candidates) is underway. Q3 FY2027 earnings (Nov 17) proceed as scheduled.
+
+Congressional follow-up (Nov 12): **"Ex-Nvidia CEO" Huang agreed to testify before Congress by Thanksgiving** — behind closed doors but recorded on video and transcribed — after subpoena threats following a November 4 joint letter from **Brian Mast** (Foreign Affairs), **John Moolenaar** (Select Committee on the CCP), and **Rick Crawford** (Intelligence). Mast on export-control disagreements: "Nvidia is a very important company to the United States of America... he has some very serious questions to answer."
+
+Market reaction: **stock −8% premarket → −13% at the open**. Gary Marcus (same day) frames the central AI-industry question as whether an interim-CEO NVIDIA still executes its **multi-billion-dollar Anthropic IPO backstop** ([[events/anthropic-ipo-roadshow-2026]]) and warns the circular-financing structure Huang personally underwrote "might collapse" ([[concepts/ai-infrastructure-circular-financing]]).
+
+Full timeline and analysis: [[events/nvidia-ceo-transition-2026]].
+
 ## Related
 
 - [[entities/nvidia-dgx-spark]] — Nvidia's consumer/local AI compute device

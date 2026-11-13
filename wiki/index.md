@@ -1,8 +1,8 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3450
-> Last updated: 2026-11-12
+> Total pages: 3452
+> Last updated: 2026-11-13
 
 ## Entities (969 pages)
 
@@ -2064,12 +2064,13 @@
 - [[concepts/gemini/gemini-3-8-flash]] — Gemini 3.8 Flash
 - [[concepts/gemini/gemini-3-8-tts]] — Gemini 3.8 TTS
 - [[concepts/gemini/gemini-4-carbon]] — Gemini 4 Carbon — Google DeepMind frontier cybersecurity/code model for long-horizon agentic tasks (Oct 2026)
+- [[concepts/gemini/gemini-4-hydrogen]] — Gemini 4 Hydrogen — cheapest Gemini 4 member (Nov 12, 2026): $1.50/$0.075/$7.50 per MTok, free-tier + Google Search driver; Carbon/Argon identical pricing doubling Dec 1; 15x Claude Haiku 5.5 / GPT-6 Luna
 - [[concepts/gemini/gemini-cli]] — Gemini CLI
 - [[concepts/gemini/gemini-enterprise-agent-platform]] — Gemini Enterprise Agent Platform; updated Interactions API status to Generally Available (June 24)
 - [[concepts/gemini/gemini-managed-agents]] — Gemini Managed Agents
 - [[concepts/gemini/gemini-robotics-2]] — Gemini Robotics 2 — whole-body humanoid control family (3 models); Apptronik Apollo 2 demo, 32–92% multi-finger success, <200-example adaptation, ER 2 long-horizon planning (Aug 2026)
 - [[concepts/gemini/gemini-spark]] — Gemini Spark
-- [[concepts/gemini/index]] — Google Gemini; Gemini 3.7 Flash release confirmed via llm-gemini 0.33 (Aug 13) — minimal thinking effort removed, server-side CodeExecution, gemini-embedding-2/001
+- [[concepts/gemini/index]] — Google Gemini; Gemini 3.7 Flash release confirmed via llm-gemini 0.33 (Aug 13) — minimal thinking effort removed, server-side CodeExecution, gemini-embedding-2/001; Gemini 4 Hydrogen (Nov 12) — cheapest Gemini 4 member, free-tier + Google Search model, $1.50/$0.075/$7.50 per MTok
 - [[concepts/gemma-family]] — Gemma Model Family
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/generative-ai]] — generative-ai
@@ -2548,7 +2549,7 @@
 - [[concepts/mlops]] — MLOps
 - [[concepts/mlx]] — MLX — Apple's unified-memory array framework for ML on Apple Silicon; Oct 2026: RDMA over Thunderbolt enables 4x Mac Studio M5 Ultra cluster running Muse Spark Open 816B at 36 tok/s
 - [[concepts/mlx-llm]] — MLX for LLM Inference
-- [[concepts/modal-sandboxes]] — Modal Sandboxes; enriched with 5-stage sandbox lifecycle and Readiness Probes GA (June 23); host CPU choice section — NVIDIA Vera Arm CPUs, 2x sandbox throughput under load, spiky/unknown workload shapes and packing-density trade-offs (Oct 2026)
+- [[concepts/modal-sandboxes]] — Modal Sandboxes; 5-stage lifecycle + Readiness Probes GA; burst-don't-reserve active-resource pricing (Nov 2026): request/burst/limit, 58% savings vs reservation, OOM SLO (June 23); host CPU choice section — NVIDIA Vera Arm CPUs, 2x sandbox throughput under load, spiky/unknown workload shapes and packing-density trade-offs (Oct 2026)
 - [[concepts/modal-vm-sandboxes]] — Modal — VM Sandboxes and Infrastructure Updates
 - [[concepts/model-context-protocol-mcp]] — Model Context Protocol (MCP) — Open protocol for connecting LLMs to external tools, data sources, and services
 - [[concepts/model-distillation]] — Model Distillation
@@ -3353,8 +3354,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (52 pages)
+## Events (53 pages)
 
+- [[events/nvidia-ceo-transition-2026]] — NVIDIA CEO Transition (Nov 12 2026) — Jensen Huang resigns as President/CEO/Board member effective immediately; CFO Colette Kress Interim CEO; Harvey C. Jones (ex-Synopsys) first-ever Board Chair; stock −8%→−13%; Huang agreed to closed-door congressional testimony by Thanksgiving (Mast/Moolenaar/Crawford); Anthropic IPO backstop in question
 - [[events/anthropic-ipo-roadshow-2026]] — Anthropic IPO roadshow (kickoff Nov 10 2026) — Tom Brown compute disclosures: train+serve on all 4 chip families (Trainium/TPU/NVIDIA/AMD); Mythos ported Claude to AMD in 3 days writing ~100% of kernels; "total effective compute = physical × compute multipliers" framing with RSI claim that Claude will discover multipliers itself (company-reported)
 - [[events/hf-harness-adapters-launch-2026]] — HF "harness adapters" (harness-hub, Nov 6 2026) — one LoRA per (base model × harness) for pi/opencode/hermes, GRPO RL on verifiable tasks inside unmodified harnesses, fewer tool calls at equal-or-better accuracy; safeagents blocks reward-hacking tool calls; Repo2RLEnvs built from public Hub agent trajectories; $5 vs $90 adapter-vs-merged checkpoint eval; LFM2.5-24B-A2B / LFM3-1.7B / TwIL-8B. Amplified by Tom Aarsen
 

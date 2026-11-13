@@ -3,12 +3,13 @@ title: Ibrahim Diallo
 type: entity
 aliases: [dialloibu, idiallo, idiallo-com]
 created: 2026-04-10
-updated: 2026-07-31
+updated: 2026-11-13
 tags: [entity, person, blogger, hn-popular, developer-tooling, developer-experience]
 sources:
   - https://idiallo.com/
   - https://x.com/dialloibu
   - raw/articles/idiallo.com--blog-how-many-tokens-did-you-burn-today--4c0adac9.md
+  - raw/articles/idiallo.com--byte-size-buying-ai-for-your-company--ff4b5be1.md
 ---
 
 # Ibrahim Diallo
@@ -145,6 +146,7 @@ Beyond writing, Diallo is a working lead software engineer:
 - idiallo.com--blog-your-friends-are-hiding-their-ideas--75fd62a2
 - idiallo.com--byte-size-the-satisfaction-of-a-chatgpt-plan--643431ed
 - idiallo.com--byte-size-we-are-aws-salesmen--d73ea189
+- idiallo.com--byte-size-buying-ai-for-your-company--ff4b5be1
 # Ibrahim Diallo
 
 **Ibrahim Diallo** is a software engineer and blogger at **idiallo.com**. He writes about software engineering, management metrics, developer productivity, and the impact of AI on software development culture.
@@ -177,6 +179,14 @@ In "[BI Slop](https://idiallo.com/blog/business-intelligence-slop)" (July 2026),
 **The argument**: The same rigor applied to code review — "we scrutinize code and refuse to merge PRs that are entirely AI-generated" — must extend to business decisions. "We merge large PRs because we don't have time to read them, then suffer the consequences later in unexpected ways. With business intelligence, we don't read the output because of its sheer volume, and we approve it because it looks good on the surface."
 
 Source: raw/articles/idiallo.com--blog-business-intelligence-slop--f2e65938.md
+
+### "So you want to buy AI for your company" (November 2026)
+
+A satirical byte-size piece (Nov 2026) in the vein of "We Are Not Going to Agree on AI": a deadpan salesperson walks a corporate buyer through the 2026 model wilderness — Gemini 4 Hydrogen vs Claude Sonnet 5.5 vs "Opus 5.2 ... similar to Fable 5.2, but better for day-to-day work ... not quite as powerful as Mythos 5.2"; DeepSeek R1-to-V4 onboarding; "the crowd favorite is GLM these days... 5.3 Flash. Its Mixture-of-Experts architecture is state of the art" (87.3 on the fictional "Benchmark Performance Index"); the punchline economics being **GPT-6.0 Terra 98.2 vs Sol 99.1 on the "Enterprise Productivity Benchmark" — "That extra 0.9 will cost you $14,000 a month"** (Sol "ate through my budget in three days"); Kimi K scoring "91.6 on SWE"; and the programmer's escape hatch: just use Claude Code or Cursor, remove Grok from auto-selection ("If you don't know why, then you don't need to know why"), with the narrator himself stacking Jules+Antigravity, Continue+local R1 Flash on Ollama, Qwen3.5-397B-A17B for machine setup, and Qwen-VL "particularly good at detecting forklifts" on camera feeds. Closes on the layperson reality: "they just use the free ChatGPT tier and call it a day... Or Argon."
+
+The humor works because the numbers are unverifiable-by-design — a parody of benchmark-table-driven enterprise model selection. Record as byte-size entry; benchmark figures are satire, not data.
+
+Source: raw/articles/idiallo.com--byte-size-buying-ai-for-your-company--ff4b5be1.md
 
 ## Related
 

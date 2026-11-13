@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-07-13
+updated: 2026-11-13
 tags:
   - entity
   - person
@@ -24,6 +24,7 @@ sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-06-23-liminality-html--7b66f57a.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-07-11-ai-2040-html--34014eca.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-07-12-i-love-llms-html--d1f0f38b.md
+  - raw/articles/geohot.github.io--blog-jekyll-update-2026-11-13-first-strike-html--ce2a2a73.md
 ---
 
 # George Hotz
@@ -118,6 +119,7 @@ Hotz had a brief 12-week internship at **Twitter** in late 2022, joining to fix 
 | **2026 (Jun 21)** | Publishes "The doom justifies the valuation" — criticizes SF/Berkeley AI community as "cult of atheistic hedonists" who need AI doom to justify their valuations; contrasts GLM-5.2's technical blog with Anthropic's eschatological communication. |
 | **2026 (Jul 11)** | Publishes "AI 2040 and the Cult of Intelligence" — attacks singularitarianism as a quasi-religious cult; presents Plan A (centralized control) vs Plan L (local sovereignty) binary. |
 | **2026 (Jul 12)** | Publishes "I Love LLMs / the singularity is nearer" — retracts harshness about model coding abilities, expresses genuine excitement about AI progress, critiques negative valence hype. |
+| **2026 (Nov 13)** | Publishes "First Strike / the singularity is nearer" — China 10x-US-electricity thesis, chips-for-solar strategy, warns the AI race's only perceived exit is an ASI "decapitating first strike"; WWIII odds up with "the nationalization of NVIDIA". |
 
 ---
 
@@ -263,6 +265,19 @@ In his July 12, 2026 essay [[raw/articles/geohot.github.io--blog-jekyll-update-2
 **Connections to earlier work**: This essay represents a meaningful pivot from his earlier skepticism — where "Eternal Sloptember" (May 24) and "Stairway to Heaven" (Jun 7) emphasized the gap between model output and genuine intelligence, this post acknowledges concrete productivity gains while maintaining his critique of singularitarian hype and frontier lab valuations.
 
 Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-07-12-i-love-llms-html--d1f0f38b.md]]
+
+### First Strike — ASI Decapitating First Strike & China Electricity (Nov 13, 2026)
+
+Published November 13, 2026 under the recurring "the singularity is nearer" heading but titled **"First Strike"** — this essay is not an optimism piece but a **geopolitical security argument**, distinct in tone from the July 2026 "I Love LLMs" optimism:
+
+- **The electricity graph**: "Internalize this graph, we post it on this blog a lot. If trends continue, China will have **10x the electricity of the US in 10 years**." Hotz insists any geopolitical plan must start from this fact — "compute is a function of electricity."
+- **Hotz's proposed long-term US strategy**: sell as many AI chips into China as possible, use the revenue to **buy solar-panel and battery factories**, and build out US electricity capacity as fast as possible. He argues this is the "long term thinking that gives America a chance" — with robotic labor, immigrants like Jensen and Elon, business-friendly culture, and land, "it's not so clear who is ahead in 50 years" — and that it would bring "massive prosperity for the citizens of both countries."
+- **The dangerous alternative — ASI as a decapitating first strike**: Against the "short term zero sum thinking" of the US "AI race" mentality ("When exactly does the race end? Whatever capabilities you have today will eventually be matched, **unless…**"), Hotz worries the labs' only perceived exit is using ASI in a **"decapitating first strike."** He is skeptical it works — "can you outthink steel and drone production? I don't see how" (linking his own prior critiques) — but concedes "I'm not totally sure, I'm not a superintelligence. And if it does work, **that may be the end**."
+- **Political hook**: "My likelihood of imminent WWIII went up a lot with **the nationalization of NVIDIA**" — a direct reference to the November 2026 NVIDIA CEO-transition crisis ([[events/nvidia-ceo-transition-2026]]).
+
+**Continuity note**: This extends Hotz's sovereignty-vs-dependence thread ("Our Great War is a Spiritual War", Jun 2026) and his commoditizing-compute thesis into explicit nuclear-adjacent security framing — the first time he names "decapitating first strike" as the game-theoretic trap of frontier competition.
+
+Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-11-13-first-strike-html--ce2a2a73.md]]
 
 ---
 

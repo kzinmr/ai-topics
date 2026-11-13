@@ -1,7 +1,7 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-11-04
+updated: 2026-11-13
 type: entity
 tags: [company, platform]
 sources:
@@ -14,6 +14,7 @@ sources:
   - raw/newsletters/2026-07-28-opus-5-fable-5.md
   - raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md
   - raw/articles/2026-08-17_jensenhuang_securing-infrastructure-intelligence.md
+  - raw/articles/nvidianews.nvidia.com--news-nvidia-announces-ceo-transition--d22abd9c.md
 ---
 
 # NVIDIA Corporation
@@ -179,6 +180,12 @@ NVIDIA and **Microsoft** announced **RTX Spark**, a Windows PC AI agent platform
 - Enables AI agents to run **locally on Windows PCs** with NVIDIA RTX acceleration
 - Essentially a **Windows-based local agent runtime** for AI agents
 - Brings local AI agent capabilities to the Windows ecosystem, leveraging RTX GPUs for inference
+
+## CEO Transition (November 2026)
+
+On **November 12, 2026**, the Board announced that **Jensen Huang resigned as President, CEO, and Board member, effective immediately**, ending 33 years at the helm. **CFO Colette Kress** was named **Interim CEO** (retaining her EVP/CFO role) while the Board searches for a permanent successor; **Harvey C. Jones** (ex-Synopsys CEO) became NVIDIA's **first-ever Chair of the Board**. Stock fell **−8% premarket → −13% at the open**. The day before, Huang had agreed to behind-closed-doors congressional testimony (Mast/Moolenaar/Crawford) by Thanksgiving after subpoena threats. Full coverage: [[events/nvidia-ceo-transition-2026]]; person page: [[entities/jensen-huang]].
+
+Key open question for the AI industry: whether interim leadership still executes NVIDIA's committed **multi-billion-dollar backstop of Anthropic's IPO** ([[events/anthropic-ipo-roadshow-2026]]) and the circular-financing structures Huang personally underwrote ([[concepts/ai-infrastructure-circular-financing]]) — Gary Marcus calls him "the ringmaster of all the insane circular financing" and says "all that might collapse."
 
 ## Related
 
