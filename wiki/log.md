@@ -2,6 +2,23 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-13] dreaming wiki-ingest | Pattern E saturation + 3 reference enrichments
+
+- Upstream dreaming-group (18:19, commit `6895a275`) committed triage JSON + archive ONLY — `git show --stat` touched no entity/concept pages and no log.md. Takes=0 / Refs=3 / Skips=27. Downstream executed the 3 references.
+- Checkpoint: `payload.articles: 0`, `recent_raw_articles: 222`, `existing_wiki_pages: 3382`. Upstream identified 52 never-archived raw files via archive-index diff; all today's headline topics (NVIDIA CEO transition, Anthropic IPO, checkpoint forensics, x402, Edge0-145B) verified covered by same-day pipelines (`c6436410` blog-wiki-ingest, `cf8be8c3` trending-topics, `89a6d22f` hot-post, 11-11 dreaming).
+
+### Reference verification gate (all 3 = genuine gaps)
+
+| Candidate | Status | Details |
+|-----------|--------|---------|
+| Hex "working with robots to rewrite Hex" | ❌ Genuine gap | `entities/hex-technologies.md` had the Oct 27 Hex 4.0 *architecture* post (L147-165) and the Hero observability post (L167-184), but zero coverage of the practitioner review playbook (250K LoC / 4 months, signature-freeze rule, DAMP, exit-criteria wrapper-string trick, YOLO black boxes). New section added. |
+| Pinecone integrated embedding + Gemini Embedding 2 | ❌ Genuine gap | `entities/pinecone.md` L179-190 covered the October integrated-embedding launch with Pinecone-hosted models only; no third-party model, no Vertex AI serving, no billing/at-list-price detail, no 20M-token Builder promo. Appended to that section. |
+| Cohere first CISO Jaya Baloo | ❌ Genuine gap | `entities/cohere.md` (376 lines) had North × Wiz security agent and Model Vault confidential computing, but no security *leadership* hire, no AISLE/Rapid7/Avast/KPN background, no 500+ vulns / 100+ codebases figure. New section added after the C$4B Canada block. |
+
+- Archive: `archive_triage.py dreaming --keep-reference` → `All items already archived (dedup), archived: 0` (upstream already persisted all 30 decision URLs).
+- Wikilink targets verified present: `concepts/agentic-engineering`, `concepts/coding-agents/agentic-coding`, `concepts/harness-engineering/agent-native-architecture`, `concepts/agent-native-tool-fallacy`, `concepts/sovereign-ai`, `concepts/security-and-governance/ai-safety`.
+- Cohere source post was scraped in German (cohere.com/de); English page body not fetched, content verified against the full German body.
+- No index.md changes (3 existing pages updated, no new pages).
 
 ## [2026-11-13] health-fix | index header count reconciliation (Queries 57→58)
 

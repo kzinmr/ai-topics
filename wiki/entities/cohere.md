@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-10-31
+updated: 2026-11-13
 tags:
   - company
   - model
@@ -29,6 +29,7 @@ sources:
   - raw/articles/2026-08-01_cohere_cohere-signs-eu-code-of-practice.md
   - raw/articles/2026-07-28_cohere_introducing-north-automations-ai-workflows.md
   - raw/articles/2026-10-24_cohere_introducing-confidential-computing-on-cohere-model-vault.md
+  - raw/articles/2026-11-13_cohere_cohere-welcomes-jaya-baloo-as-first-ciso.md
   - raw/articles/2026-10-24_cohere_inside-cohere-model-vault-building-verifiable-confidential-ai-inference.md
   - raw/articles/2026-10-24_cohere_rerank-5.md
   - raw/articles/2026-10-24_cohere_can-ai-understand-culture.md
@@ -364,6 +365,41 @@ middle-power variant of the same industrial policy move — state capital, domes
 infrastructure, and a talent-retention argument, rather than a frontier-capability
 argument. Cohere's open-weight credibility remains the open question, given its
 October 2026 covert-exfiltration report on a Chinese open model.
+
+## First CISO: Jaya Baloo (November 2026)
+
+Cohere appointed **Jaya Baloo**, co-founder of AI security company **AISLE**, as its
+**first Chief Information Security Officer** — the company's most senior security hire and
+a signal that it is treating security leadership as a product line rather than a support
+function, consistent with the sovereign-AI positioning above.
+
+**Her background**: 20+ years protecting critical systems; CISO at **Rapid7**, **Avast**
+and **KPN Telecom**; adviser to the **World Economic Forum** and the **EUropol European
+Cybercrime Centre (EC3)**. Stated focus areas: cyber-resilience, critical-infrastructure
+security, vulnerability management, and **quantum readiness** — fields Cohere explicitly
+frames as rising in importance "as agentic AI systems become more capable and are more
+deeply integrated into essential services."
+
+**AISLE context (why the hire matters beyond the title)**: Baloo co-founded AISLE with
+**Ondrej Vlcek** and **Stanislav Fort**. AISLE builds autonomous AI systems that find,
+validate, and help remediate previously unknown vulnerabilities in production software; in
+the first year after exiting stealth it reportedly identified **500+ previously unknown
+vulnerabilities across 100+ codebases**. That makes this an AI-native-security founder
+moving into a model vendor, alongside the earlier **North × Wiz** security-agent work
+above and the confidential-computing Model Vault — together forming a coherent
+enterprise-security product narrative.
+
+**Baloo's own framing**: "As AI becomes part of critical infrastructure, security and
+trust have to be built in from the start and cannot be bolted on afterwards." Her remit is
+to shape security strategy across a platform combining state-of-the-art models, agentic
+applications, secure deployment infrastructure, and advanced cyber capabilities.
+
+Read: this is the governance half of the sovereign-AI pitch — a national-champion story
+needs a credible security officer to sell to governments and critical-infrastructure
+operators. Related: [[concepts/sovereign-ai]], [[concepts/security-and-governance/ai-safety]].
+
+**Source:** [[raw/articles/2026-11-13_cohere_cohere-welcomes-jaya-baloo-as-first-ciso]]
+(official post scraped in German; content verified from the full body)
 
 ## Related
 

@@ -2,7 +2,7 @@
 title: "Hex Technologies"
 type: entity
 created: 2026-05-08
-updated: 2026-11-05
+updated: 2026-11-13
 tags:
   - company
 aliases: ["Hex", "Hex Tech"]
@@ -14,6 +14,7 @@ sources:
   - raw/articles/2026-10-28_hex-technologies_hex-new-era.md
   - raw/articles/2026-10-28_hex-technologies_introducing-hex-4-0.md
   - raw/articles/2026-11-05_hex-technologies_ai-sorcerers-stone.md
+  - raw/articles/2026-11-13_hex-technologies_what-we-learned-working-with-robots-to-rewrite-hex.md
   - raw/articles/2026-05-10_hex-technologies_beginners-guide-to-python-notebooks.md
 ---
 
@@ -182,6 +183,26 @@ The recursion is literal: analyzer and aggregator reuse the same harness and age
 The essay's framing — "what is stone and what is sand?" — argues code's ephemerality (accelerated by agents into an "ouroboric cycle" visible within a single internship) shifts research value from artifacts to ideas: anchor weeks around questions/hypotheses, not lines of code. The intern project succeeding means its current form shouldn't be recognizable in six months.
 
 Source: raw/articles/2026-11-05_hex-technologies_ai-sorcerers-stone.md (https://hex.tech/blog/ai-sorcerers-stone/)
+
+## Rewriting Hex with coding agents — practitioner playbook (November 12, 2026)
+
+Charlie Imhoff's post-mortem on the Hex 4.0 rewrite is the operational companion to the October launch post above: **~250,000 lines touched (~10% of a 6-year-old codebase) in a four-month push**, and the first fully explicit set of rules Hex derived for what agents may and may not decide. Its own framing is self-deprecating — "I'll probably be looking back on this post like it's a 2024-era prompt engineering guide in about six months" — which makes it a dated-practice artifact rather than a claimed law.
+
+**The seven rules, with the concrete mechanism named in each:**
+
+1. **No one-shotting into production.** "The robot will almost never one-shot anything" is not a prompt or intelligence failure — software complexity is *discovered during implementation*, so enumerating it upfront is usually impossible. Counter-intuitive tactic: keep the same thread rather than restarting fresh after a revert, unless context is "truly poisoned". The robot's speed should buy *more* iterations, not fewer.
+2. **Vigilance about coupling — "AI agents have no respect for an API boundary."** Agents will thread a low-level parameter through a high-level function to influence one log line, duplicate logic between two implementations and hope it stays in sync, or bypass a structured API for a raw untyped request to a hardcoded port. Abstractions do not emerge unless explicitly commanded. **Concrete control adopted at Hex: the agent is disallowed from adding or modifying any exported function signature or data type** — the human authors signatures, the robot fills in bodies.
+3. **"No TODO left behind."** Humans scaffold with TODOs and defer edge cases so the first review can target structure; robots are "more than happy to build the whole hog at once" — every edge case, optimization and test — which hides the key decisions. Root cause stated plainly: agents are trained to produce production code *immediately*, not code that ladders up into production over time, and "they never say no, even when 'I shouldn't worry about this right now' is the correct answer." Mitigation: withhold the full plan so the agent cannot jump the gun, and instruct liberal TODOs while prototyping.
+4. **DRY becomes DAMP ("Damn, A Massive Program").** Engineers are lazy and not paid by lines, so a written snippet is evidence it was deemed necessary; robots are neither, and their small context windows plus expensive searches mean they do not look for pre-existing patterns unless told. Robots can spot duplicated symbols but are weak at finding a coherent path to unifying them — so review must recall the whole system, not just the diff. "Few of these [structural refactors] are agent-initiated. When it comes to refactoring, it still takes a human Eagle Scout to leave things better than they found them."
+5. **Give agents statically verifiable exit criteria.** The standout case study: unifying file-path semantics to relative-from-`project/`. Because paths were plain strings, no reader/writer could be statically checked, and the agent looped with ever-broader greps unable to verify completion. Fix: **change the APIs to accept a wrapped string type so all callers statically break**, converting the task into "fix the build" with a deterministic exit criterion and a checkable tool call; a second thread later removed the wrapper. Generalizable pattern — manufacture a compile-time failure to give an agent a termination condition.
+6. **One thing at a time.** Codex Cloud agents and Worktree buttons are "a siren's song": ten concurrent agents do not multiply throughput, they produce stress. Imhoff caps himself at one, absolute maximum two; waiting time goes to reading output, steering, queuing follow-ups as if reviewing, writing docs/plan architecture.
+7. **Declare where YOLO-ing is acceptable.** Hex labels algorithmically dense but systemically simple code "procedural" (the Hex 4.0 token-stream parser: hundreds of lines, single entry point, no side effects, trivially testable) and designates **narrow "black box" regions** where agent-written mess is acceptable because it stays contained. The governance point is team-wide agreement — nobody should mark as "full send vibes" code others consider important, or burn time refactoring code the team has no stake in.
+
+**Authorship and review etiquette (the social half of the playbook).** "The robots are not people. You can call them 'robot.'" But a PR is still something a human attached their name to: calling it "slop" may attack a colleague's own work, and "don't diminish the impact of a colleague by attributing their successes to Anthropic." Authors should state which parts they are proud of and which they invite criticism on.
+
+**Strategic read for the wiki**: this is the *process* layer beneath the October architecture post — the two together make Hex the most complete first-party case study in this wiki of a large agent-driven rewrite (architecture rationale + review discipline + failure taxonomy). Rule 2's signature-freeze and rule 5's wrapper-string trick are concrete harness-engineering controls; the DAMP observation and the non-agent-initiated-refactor finding are evidence for the human-ownership half of [[concepts/agentic-engineering]]. Cross-reference [[concepts/coding-agents/agentic-coding]], [[concepts/harness-engineering/agent-native-architecture]], [[concepts/agent-native-tool-fallacy]].
+
+Source: [[raw/articles/2026-11-13_hex-technologies_what-we-learned-working-with-robots-to-rewrite-hex]]
 
 ## Related
 - [[entities/anthropic]] — customer using Hex for data analytics

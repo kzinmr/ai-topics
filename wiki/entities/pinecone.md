@@ -22,6 +22,7 @@ sources:
   - raw/articles/2026-10-23_pinecone_when-vectors-became-an-implementation-detail.md
   - raw/articles/2026-10-28_pinecone_introducing-pg-pinecone.md
   - raw/articles/2026-11-10_pinecone_self-hosted-vector-search.md
+  - raw/articles/2026-11-13_pinecone_integrated-embedding-google.md
 ---
 
 # Pinecone
@@ -187,6 +188,8 @@ The Records API turned out to be **premature**: it wrapped the Vectors API, so t
 **Now shipping:** a single string field can carry `full_text_search` (stemming, stop words) *and* `embed: {model: ...}` simultaneously. Writes take plain text — Pinecone embeds with the field's model, stores the vector beside the text, and builds the text index in one write; **if embedding fails nothing in the request is written**. Queries also go in as text and are embedded with the same model.
 
 **Latency win**: self-embedding costs two round trips per search (embedding API, then Pinecone); integrated embedding collapses it to one. Pinecone measured **~3.5× faster at the median** versus calling its standalone embedding API then searching with the vector — most of the gap is simply the avoided network hop. Roadmap: hybrid search, integrated reranking, multiple vector fields per document.
+
+**Third-party model on the menu: Google Gemini Embedding 2 (November 12, 2026).** Integrated embedding on the Documents API added **Gemini Embedding 2** as its first non-Pinecone-hosted option, alongside the Pinecone-hosted models it launched with. Set `model: "gemini-embedding-2"` in the `embed` setting of a text field at index-creation time (1,536 dimensions in the documented example, with full-text search on the same field) and send plain text; Pinecone embeds every write and every query with that model. Operational consequences the post emphasizes: **no Google Cloud account or API key to manage**, no separate Google bill — tokens appear on the Pinecone invoice **at Google's list price** — and Pinecone serves the model from **Google Vertex AI** with its own retry logic, so teams skip building retries. Requires a Builder plan or above; promotional limit through **December 31, 2026: Builder gets 2× included tokens, i.e. 20M/month**. The significance is less the model than the pattern: Pinecone becomes the billing and reliability front-end for a competitor's inference, which removes the usual "we already have a Google Cloud contract" objection to abandoning BYO-vectors. Same "take preparation work off the user" thesis as above, now extended to *third-party* embeddings. Source: [[raw/articles/2026-11-13_pinecone_integrated-embedding-google]]
 
 Source: [[raw/articles/2026-10-23_pinecone_when-vectors-became-an-implementation-detail]]
 
