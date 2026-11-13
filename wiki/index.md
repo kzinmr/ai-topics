@@ -1290,7 +1290,7 @@
 - [[concepts/ai-benchmarks/legal-agent-benchmark]] — Legal Agent Benchmark (LAB)
 - [[concepts/ai-benchmarks/letta-leaderboard]] — Letta Leaderboard
 - [[concepts/ai-benchmarks/lifescibench]] — LifeSciBench
-- [[concepts/ai-benchmarks/lighteval]] — LightEval
+- [[concepts/ai-benchmarks/lighteval]] — Hugging Face all-in-one LLM eval harness (1000+ tasks, Transformers/vLLM/TGI backends), backend of the Open LLM Leaderboard
 - [[concepts/ai-benchmarks/livebench]] — LiveBench
 - [[concepts/ai-benchmarks/livecodebench]] — LiveCodeBench
 - [[concepts/ai-benchmarks/lora-speedrun]] — LoRA Speedrun — Public wall-clock leaderboard for LoRA fine-tuning techniques (Saivineeth147, July 2026)
@@ -1807,7 +1807,7 @@
 - [[concepts/crewai]] — CrewAI
 - [[concepts/crypto-ancienne]] — Crypto Ancienne
 - [[concepts/cryptography-patterns]] — Cryptography Patterns — Bitwarden Encryption Architecture
-- [[concepts/cs231n]] — cs231n
+- [[concepts/cs231n]] — Stanford CS231n deep-vision course; Karpathy-era from-scratch assignments and the open curriculum that shaped modern AI teaching
 - [[concepts/cuda-moat]] — CUDA Moat — NVIDIA's CUDA software ecosystem as barrier to GPU competition; AMD's Agentic Kernel Generation strategy, SemiAnalysis AMD thesis (July 2026)
 - [[concepts/currentai]] — CurrentAI — Open Source AI Gap Map: 421 products (266 software, 85 models, 50 datasets, 20 hardware) across 14 categories from 228 orgs; MIT license YAML on GitHub (July 5)
 - [[concepts/cursor-automations]] — Cursor Automations
@@ -1876,7 +1876,7 @@
 - [[concepts/designing-ml-systems]] — Designing ML Systems
 - [[concepts/developer-security]] — Developer Security
 - [[concepts/developer-tools]] — developer-tools
-- [[concepts/devops]] — DevOps
+- [[concepts/devops]] — CI/CD, IaC, and observability discipline; ancestor of MLOps and agent-ops practice
 - [[concepts/dflash]] — DFlash
 - [[concepts/dflash-ggml]] — DFlash on ggml
 - [[concepts/dflash-on-ggml]] — DFlash on ggml
@@ -2014,7 +2014,7 @@
 - [[concepts/experiential-memory]] — Experiential Memory
 - [[concepts/facilitation]] — facilitation
 - [[concepts/fast-plaid]] — FastPLAID
-- [[concepts/fastapi]] — FastAPI
+- [[concepts/fastapi]] — Async Python API framework (Starlette+Pydantic); default surface for model-serving, RAG, and agent-tool endpoints
 - [[concepts/federated-tiny-training-engine]] — Federated Tiny Training Engine (FTTE)
 - [[concepts/federation-of-experts]] — Federation of Experts (FoE)
 - [[concepts/feed-reader-behavior]] — feed-reader-behavior
@@ -2054,7 +2054,7 @@
 - [[concepts/future-of-the-firm-org-chart]] — The Future of the Firm (OpenAI "next economy" essay) — three org-chart scenarios for the AI-native firm; labor-economics + prediction analysis of OpenAI's Oct 2026 essay
 - [[concepts/fused-kernels]] — Fused Kernels (Eliminating Intermediate Memory)
 - [[concepts/fuzzing]] — Fuzzing
-- [[concepts/gaia]] — gaia
+- [[concepts/gaia]] — Redirect: GAIA benchmark (Meta × HF × AutoGPT, ICLR 2024); canonical page at concepts/ai-benchmarks/gaia-benchmark
 - [[concepts/game-engine-architecture]] — game-engine-architecture
 - [[concepts/gapa]] — Redirect page. GAPA was created as a stub but refers to GEPA (Genetic-Pareto Prompt Evolution). See [[concepts/gepa]]...
 - [[concepts/gdpr]] — GDPR
@@ -2427,7 +2427,7 @@
 - [[concepts/llm-training-coherence-evolution]] — LLM Training Coherence Evolution
 - [[concepts/llm-training-fundamentals]] — llm-training-fundamentals
 - [[concepts/llm-understanding]] — LLM Understanding Debate
-- [[concepts/llm.nvim]] — llm.nvim
+- [[concepts/llm.nvim]] — Hugging Face Neovim LLM plugin (chat, completions, prompt templates, local-first); distinguished from the other llm.nvim plugins
 - [[concepts/llms-eroding-software-careers]] — LLMs Eroding Software Engineering Careers
 - [[concepts/llvm]] — LLVM — Compiler infrastructure: LLVM IR, MLIR, Flang/Fortran compiler
 - [[concepts/llm-confidence-calibration]] — LLM Confidence and Calibration — Why raw LLM confidence scores are unreliable and alternative approaches (confidence probes, multi-sample consistency, model routing)
@@ -2549,7 +2549,7 @@
 - [[concepts/ml-intern]] — HuggingFace ml-intern — Autonomous ML Engineer Agent
 - [[concepts/ml-research-practice]] — ML Research Practice
 - [[concepts/ml-systems]] — ML Systems
-- [[concepts/mlops]] — MLOps
+- [[concepts/mlops]] — ML lifecycle engineering (pipelines, tracking, serving, eval-gated deploys); classic vs. LLM-era practice table
 - [[concepts/mlx]] — MLX — Apple's unified-memory array framework for ML on Apple Silicon; Oct 2026: RDMA over Thunderbolt enables 4x Mac Studio M5 Ultra cluster running Muse Spark Open 816B at 36 tok/s
 - [[concepts/mlx-llm]] — MLX for LLM Inference
 - [[concepts/modal-sandboxes]] — Modal Sandboxes; 5-stage lifecycle + Readiness Probes GA; burst-don't-reserve active-resource pricing (Nov 2026): request/burst/limit, 58% savings vs reservation, OOM SLO (June 23); host CPU choice section — NVIDIA Vera Arm CPUs, 2x sandbox throughput under load, spiky/unknown workload shapes and packing-density trade-offs (Oct 2026)
@@ -2660,7 +2660,7 @@
 - [[concepts/opd-failure-modes]] — OPD Failure Modes
 - [[concepts/open-claw-ecosystem]] — Open Claw Ecosystem
 - [[concepts/open-data]] — Open Data
-- [[concepts/open-llms]] — open-llms
+- [[concepts/open-llms]] — Redirect: Eugene Yan's open-llms repo (commercially-usable model table); canonical topic page at concepts/open-source-llms
 - [[concepts/open-model-consortium]] — Open Model Consortium
 - [[concepts/open-science]] — Open Science
 - [[concepts/open-source]] — Open Source
@@ -2910,7 +2910,7 @@
 - [[concepts/recursive-language-models]] — Recursive Language Models → Redirect
 - [[concepts/recursive-self-improvement]] — Recursive Self-Improvement (RSI) — AI improving its own machinery via harness engineering: self-improving harnesses, evolutionary search, auto-research workflows (Weng, Jul 2026); Nov 2026 production adjacencies (Together Compiler TKCC, Hex Hero)
 - [[concepts/red-green-tdd]] — Moved to concepts/harness-engineering/agentic-workflows/red-green-tdd.md
-- [[concepts/redis]] — Redis
+- [[concepts/redis]] — In-memory data-structure server; agent streaming bus, queue, and lightweight vector store; RSAL-to-AGPLv3 license history
 - [[concepts/reduce-offload-isolate]] — Reduce Offload Isolate
 - [[concepts/redux]] — Redux
 - [[concepts/reflexion]] — Reflexion — verbal self-reflection + episodic memory across attempts (Shinn et al. 2023); test-feedback retry pattern
@@ -3254,7 +3254,7 @@
 - [[concepts/vector-databases]] — Vector Databases — Overview of specialized database systems for high-dimensional vector embeddings, covering Pinecone, Chroma, Qdrant, Weaviate, Milvus, pgvector, LanceDB, and key concepts (ANN, HNSW, hybrid search)
 - [[concepts/vector-search]] — Vector Search
 - [[concepts/vq-bench]] — VQ-bench — Pinecone's open-source benchmark decomposing vector quantizers into Conditioner/Rounder/Splitter primitives; first systematic head-to-head of ANN quantization methods (2026)
-- [[concepts/vespa]] — Vespa
+- [[concepts/vespa]] — Apache-2.0 AI search platform combining BM25, HNSW vectors, and in-engine tensor ranking; hybrid-retrieval infrastructure
 - [[concepts/vibe-ceo]] — Vibe CEO
 - [[concepts/vibe-building-workflow]] — Vibe Building Workflow
 - [[concepts/vibe-coding]] — Moved to concepts/harness-engineering/agentic-workflows/vibe-coding.md

@@ -1,6 +1,29 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-11-13] skeleton-enrich-daily | Stub backlog: 9 high-traffic concept pages enriched (GAIA redirect, LightEval, AI Agents hub, Vespa, Redis, MLOps, DevOps, FastAPI, cs231n, llm.nvim, open-llms redirect)
+
+> `skeleton-enrich-daily` cron (2026-11-13 19:0x UTC). The `status: skeleton` backlog remains **empty**
+> (streak since 2026-10-17; frontmatter scans return 0 live markers). Continued productive work on the
+> highest-inbound-link `status: stub` subset per the 2026-11-12 run plan.
+
+**Enriched (stub → full page, 9 files):**
+
+- `concepts/ai-benchmarks/lighteval.md` — HF all-in-one eval harness: multi-backend (Transformers/vLLM/TGI/Ollama), 1000+ tasks, chat-template aware, LLM-as-judge; harness comparison table vs lm-eval-harness/OpenAI Evals/Inspect. GitHub-verified: 2,586★ MIT, active.
+- `concepts/ai-agents.md` — converted to **taxonomy hub page** (70+ inbound links): Agent=Model+Harness anatomy diagram, sub-topic triage table (harness/scaffolding, long-horizon, coding agents, protocols, safety, economics, evals, production), terminology disputes.
+- `concepts/vespa.md` — Apache-2.0 AI search platform (7,180★): hybrid BM25+HNSW+tensor ranking, YQL, multi-phase ranking, real-time corpus; positioning table vs Elasticsearch/vector DBs; wiki cross-refs (Turnbull, Bergum, agrawal, hornet).
+- `concepts/redis.md` — antirez's in-memory server (77,490★): agent-streaming role (delta updates), queue/coordination, RediSearch vectors; full RSALv2/SSPL → AGPLv3 (Redis 8) licensing arc; antirez return 2025.
+- `concepts/mlops.md` — classic-vs-LLM-era pipeline comparison table, tooling landscape, MLOps-vs-agent-ops distinction, Chip Huyen framing.
+- `concepts/devops.md` — core loop, practice→AI-era echo table (CI/CD→eval-gated deploys, SRE error budgets→token budgets), AI-assisted DevOps + DevOps-for-agents threads.
+- `concepts/fastapi.md` — why it dominates AI serving code (Pydantic-native, async/SSE streaming), LLM-stack role table, links to pydantic-ai/structured-outputs.
+- `concepts/cs231n.md` — Stanford deep-vision course; Karpathy TA/taught era, NumPy-from-scratch assignments → micrograd/nanoGPT pedagogy lineage, classic syllabus table.
+- `concepts/llm.nvim.md` — disambiguated: huggingface/llm.nvim (1,196★, Yacine Mahdid) vs Kurama622 (483★) vs melbaldove vs dingllm.nvim (851★); features, config sketch, family comparison table.
+
+**Redirects (2 files):** `concepts/gaia.md` → `concepts/ai-benchmarks/gaia-benchmark` (with GAIA key-facts block: 466 questions, 92% human vs ~15% GPT-4, ICLR 2024, arXiv:2311.12983); `concepts/open-llms.md` → `concepts/open-source-llms` (identity clarified as Eugene Yan's repo).
+
+**Verification:** git-history richness check (all stubs last touched 2026-08-15 at 25 lines — no richer versions); GitHub API star/license/pushed_at live-checked (lighteval, vespa, redis, llm.nvim family); all new wikilinks verified to resolve (fixed dagster/reasoning-model/context-engineering/agent-scaffolding dead targets pre-commit); tags all pre-registered in SCHEMA.md (redirect, taxonomy, stanford, ml-education, deep-learning, vector-search, information-retrieval, database, ci-cd, api, python, etc.). index.md: 10 descriptions updated, 0 net new pages, validate_index.py clean.
+
+**Remaining backlog:** ~418 `status: stub` pages. Next-run candidates: compiler-explorer, elasticsearch, threat-modeling, right-to-repair, saas-dependency, hermes-models, trey-grainger, vision-models, generative-ai, ai-education, ai-alliance, embodied-ai, open-source (family).
 
 ## [2026-11-13] dreaming wiki-ingest | Pattern E saturation + 3 reference enrichments
 
