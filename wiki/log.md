@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-15] skeleton-enrich | Stub backlog: 9 AI umbrella concept pages enriched
+
+- `status: skeleton` backlog still empty (streak since 2026-10-17); acted on highest-inbound `status: stub` subset per 2026-11-13 plan.
+- Enriched: concepts/tinygrad (geohot framework, 33.9k★ MIT verified), concepts/trey-grainger (Searchkernel founder, AI-Powered Search co-author; treygrainger.com + GitHub bio verified), concepts/ai-alliance (thealliance.ai scraped — 2-nonprofit structure, Common Corpus/SYNTH/Tapestry; disambiguated vs Open Secure AI Alliance), concepts/robotics, concepts/embodied-ai, concepts/ai-coding-tools, concepts/generative-ai, concepts/vision-models, concepts/ai-education.
+- All wikilinks machine-verified; tags all pre-registered; index.md 9 descriptions + 1 query entry; 0 net new pages (3458). Run report: [[queries/2026-11-15-skeleton-enrich-stub-action]].
+
+
+
 ## [2026-11-14] health-fix | Wiki health auto-fix run — clean
 
 - index.md: 0 pipe_prefix / 0 line_number / 0 triple_bracket / 0 space_prefix — validate_index.py pass (3487 lines)

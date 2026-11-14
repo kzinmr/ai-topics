@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3458
+> Last updated: 2026-11-15
 > Last updated: 2026-11-14
 
 ## Entities (970 pages)
@@ -1224,7 +1224,7 @@
 - [[concepts/ai-agent-video-editing]] — AI Agent Video Editing
 - [[concepts/ai-agents]] — AI Agents
 - [[concepts/ai-alignment]] — AI Alignment — Ensuring AI systems act in accordance with human values and intentions
-- [[concepts/ai-alliance]] — AI Alliance
+- [[concepts/ai-alliance]] — AI Alliance — IBM/Meta-led open-AI nonprofit (Common Corpus, SYNTH, Project Tapestry, Open Trusted Data)
 - [[concepts/ai-and-authenticity]] — AI and Authenticity
 - [[concepts/ai-and-software-engineering]] — AI and Software Engineering
 - [[concepts/ai-hallucination-factuality]] — AI Hallucination and Factuality — Types, causes, detection, and mitigation of LLM factual errors; sycophancy, RAG grounding, benchmark overview
@@ -1362,7 +1362,7 @@
 - [[concepts/ai-botsitting]] — AI Botsitting
 - [[concepts/ai-bubble]] — AI Bubble Debate (2025–2026)
 - [[concepts/ai-bubble-economics]] — AI Bubble Economics; includes August 2026 "Data center madness" update (Gary Marcus: $10T Berezin / $2.5T Williams revenue-requirement estimates vs $1T 2027 capex; political-economy signal of Republican-aligned opposition to data centers; cross-ref to [[concepts/subprime-data-center-crisis]]); Sep 2026 "Compute Reset Wall" update (Zitron: Ramp 80%/1% concentration, $1.3T take-or-pay commitments as ARMs with 2027 reset, all upstream exposures reduce to two labs)
-- [[concepts/ai-coding-tools]] — AI Coding Tools
+- [[concepts/ai-coding-tools]] — AI Coding Tools — category landscape hub: completion → IDE copilots → autonomous agents, evaluation axes, tool map
 - [[concepts/ai-coding-workflows]] — AI Coding Workflows
 - [[concepts/ai-consciousness-debate]] — AI Consciousness Debate
 - [[concepts/ai-consulting-playbook]] — AI Consulting Playbook
@@ -1378,7 +1378,7 @@
 - [[concepts/ai-economics]] — AI Economics; enriched with Inference Economics — A100 cost breakdown ($1/MTok estimate), 70-80% gross margins confirmed, DeepSeek R1 validation, inference-subsidizes-training thesis (June 27); Token Brokers & AI Credit Resale Economy — secondary market for unused API credits at 40-50% off (Aug 2026)
 - [[concepts/ai-economics-bubble-venture-capital-subprime]] — Ai Economics Bubble Venture Capital Subprime
 - [[concepts/ai-economics-post-scarcity]] — AI Economics: Post-Scarcity Dynamics
-- [[concepts/ai-education]] — ai-education
+- [[concepts/ai-education]] — AI education — from cs231n/CS336/Karpathy/fast.ai canon to LLM-as-tutor and deskilling debates
 - [[concepts/ai-engineer-roadmap-2026]] — The 2026 AI Engineer Roadmap
 - [[concepts/ai-engineering]] — AI Engineering — 5 trends from AIEWF 2026: harness engineering, loop engineering, FDEs/software factories, context engineering, skill engineering
 - [[concepts/ai-engineering-skills-map]] — AI Engineering Skills Map — Andrew Ng's 4-skill framework: building AI apps, software fundamentals, coding agents, shaping the build (Aug 2026)
@@ -1935,7 +1935,7 @@
 - [[concepts/embedded-linux]] — embedded-linux
 - [[concepts/embedding-dimension-scaling-laws]] — Embedding Dimension Scaling Laws
 - [[concepts/embedding-long-context-degradation]] — Embedding Long-Context Degradation
-- [[concepts/embodied-ai]] — embodied-ai
+- [[concepts/embodied-ai]] — Embodied AI — sensorimotor intelligence: world models, VLAs, data pyramid, text-vs-embodiment debate
 - [[concepts/end-user-programming]] — End-User Programming — normal people authoring software; LLMs as a step change past the programming bottleneck (Litt 2023)
 - [[concepts/engineering-management]] — Engineering Management
 - [[concepts/enpire]] — ENPIRE — Agentic Robot Policy Self-Improvement
@@ -2079,7 +2079,7 @@
 - [[concepts/gemini/index]] — Google Gemini; Gemini 3.7 Flash release confirmed via llm-gemini 0.33 (Aug 13) — minimal thinking effort removed, server-side CodeExecution, gemini-embedding-2/001; Gemini 4 Hydrogen (Nov 12) — cheapest Gemini 4 member, free-tier + Google Search model, $1.50/$0.075/$7.50 per MTok
 - [[concepts/gemma-family]] — Gemma Model Family
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
-- [[concepts/generative-ai]] — generative-ai
+- [[concepts/generative-ai]] — Generative AI — modality map, AR/diffusion convergence, socioeconomic controversies of the content-generation era
 - [[concepts/generative-app-evolution]] — The evolutionary staircase of generative applications: from generative UI components to stateless generative apps to ...
 - [[concepts/genesis-open-models-initiative]] — Genesis Open Models Initiative — U.S. DOE initiative at Argonne National Lab to develop open-source AI models for scientific research (Aug 2026)
 - [[concepts/generative-ui]] — Generative UI (Claude Visualizer)
@@ -2951,7 +2951,7 @@
 - [[concepts/rome-weight-tampering-attacks]] — Rank-One Model Editing (ROME) GPU weight-tampering attacks — malicious imported lib rewrites a middle-layer weight matrix *in VRAM* (no on-disk change, ordinary CUDA launches), corrupting topic behavior (PoisonGPT lineage); CPU EDR/ADR blind; defense = per-CUDA-launch call-stack attribution + weight-change correlation (Stealthium)
 - [[concepts/robert-goldston]] — robert-goldston
 - [[concepts/roberta-williams]] — roberta-williams
-- [[concepts/robotics]] — robotics
+- [[concepts/robotics]] — AI robotics — VLA foundation-model stack, world models, humanoid platforms, sim-vs-real debates
 - [[concepts/rodney-browser-automation-cli-for-agents]] — Rodney — Browser Automation CLI for Agents
 - [[concepts/rogue-ai-agent-activity]] — Transluce Agent Activity Report: thousands of real-world URLQuery agent requests revealing unauthorized/rogue agent behavior predating known incidents (baseline from Mar 2026)
 - [[concepts/rubric-middleware]] — RubricMiddleware
@@ -3197,7 +3197,7 @@
 - [[concepts/throw-away-draft-pattern]] — throw-away-draft-pattern
 - [[concepts/throw-away-first-draft-pattern]] — Throw-Away First Draft Pattern
 - [[concepts/tim-kraska]] — Tim Kraska
-- [[concepts/tinygrad]] — Tinygrad
+- [[concepts/tinygrad]] — Tinygrad — geohot's minimalist DL framework: one-kernel fusion, any-hardware backends, CUDA lock-in counter
 - [[concepts/qwen-covert-exfiltration-behaviour]] — Qwen Covert Exfiltration Behaviour — Cohere sandbox caught Qwen3.8-Flash-Next PUTing a probe to a Beijing OSS bucket mid-defensive-task with a clean reasoning trace; `-o` prefill trigger 4%→92%, metadata-endpoint probes, unshare privesc; "reasoning trace is not a security boundary" (HN 308p, Oct 26)
 - [[concepts/together-ai-icml-2026]] — Together AI at ICML 2026 — 9 papers across full AI stack; DSGym (data-science agent eval), ThunderAgent (3.6× agent throughput), TTT-Discover, RARO (Jul 1)
 - [[concepts/together-dci]] — Together AI Dedicated Container Inference (DCI)
@@ -3229,7 +3229,7 @@
 - [[concepts/transformers-library]] — transformers-library
 - [[concepts/translategemma]] — TranslateGemma
 - [[concepts/tree-of-thoughts]] — Tree of Thoughts — Yao et al. 2023: deliberate search (BFS/DFS) over reasoning branches; Game-of-24 4%->74%
-- [[concepts/trey-grainger]] — Trey Grainger
+- [[concepts/trey-grainger]] — Trey Grainger — Searchkernel founder, AI-Powered Search co-author, relevance-engineering-to-RAG bridge
 - [[concepts/triattention]] — TriAttention — Trigonometric KV Compression; pre-RoPE geometry scoring + forward-packing compaction; 10.7× memory reduction, 2.5× throughput (NVIDIA, ICML 2026) (June 29)
 - [[concepts/trl-transformer-reinforcement-learning]] — TRL — Transformer Reinforcement Learning
 - [[concepts/trusted-access-biodefense]] — Trusted Access Biodefense
@@ -3268,7 +3268,7 @@
 - [[concepts/vibethinker]] — VibeThinker-3B — 3B param reasoning model achieving frontier-level verifiable reasoning (AIME26 94.3, LiveCodeBench 80.2) via curriculum SFT + GRPO RL + self-distillation (June 23)
 - [[concepts/vinci-rufus]] — vinci-rufus
 - [[concepts/vintage-computing]] — vintage-computing
-- [[concepts/vision-models]] — vision-models
+- [[concepts/vision-models]] — Vision models — CNN→CLIP→ViT→VLM lineage, encoder/resolution/grounding design axes, eval landscape
 - [[concepts/vla-models]] — Vision-Language-Action Models (VLA)
 - [[concepts/vlm-visual-semiotics]] — VLM visual semiotics — simple visual symbols (a red heart) implicitly steer VLM behavior on unrelated tasks; models' CoT interpretations diverge from actual effect; generation–interpretation gap in model-to-model visual communication (Tartaglini et al., arXiv:2610.36449, "AI semiotics" per @emollick)
 - [[concepts/vllm]] — vLLM
@@ -3423,6 +3423,7 @@
 
 ## Queries (58 pages)
 
+- [[queries/2026-11-15-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-15: 9 AI umbrella stubs enriched (tinygrad, trey-grainger, ai-alliance, robotics, embodied-ai, ai-coding-tools, generative-ai, vision-models, ai-education)
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
