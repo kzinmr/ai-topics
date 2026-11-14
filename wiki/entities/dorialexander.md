@@ -2,14 +2,15 @@
 title: "Pierre-Carl Langlais"
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-11-14
 source: pleias.fr
 tags:
   - person
   - open-source
   - model
   - education
-sources: []
+sources:
+  - raw/articles/2026-11-14_muninn.austegard_editing-monad-weights-to-stop-loops.md
 ---
 
 
@@ -120,6 +121,8 @@ A **321 million parameter** generalist small reasoning model trained on SYNTH. U
 
 ### Monad
 A **56.7 million parameter** reasoning model — claimed as the smallest viable generalist language model. Despite being less than half the size of GPT-2, achieves **~30% accuracy on MMLU** (significantly above chance). Trained in **under 6 hours** on 16 H100s. Uses a custom tokenizer trained on the English segment of SYNTH — likely one of the smallest tokenizers ever built. Named after Leibniz's concept of the monad, the smallest unit of intelligence. Strictly monolingual in English.
+
+**Known issue & training-free fix (Nov 2026):** under greedy decoding Monad loops on 34.2% of answers (76% on IFEval). Oskar Austegard's agent Muninn cut loops to 5.8% and lifted IFEval 5.3%→13.3% by deleting a single direction from the attention output projections of layers 27–34, being careful to preserve Monad's attention sink — see [[concepts/activation-steering]] ("Training-Free Weight Editing…"). Langlais amplified the writeup on X (Nov 3): "By Austegard on the blue site… Currently too deep in synth data mines to give it a try."
 
 ### OCRonos-Vintage
 A **124M parameter** model for OCR correction in cultural heritage documents. Trained end-to-end from 18 billion tokens using llm.c. Part of Pleias's "specialized pre-training" approach — building small models for specific domains rather than one-size-fits-all generalist models.

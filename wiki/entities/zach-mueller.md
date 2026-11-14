@@ -187,4 +187,16 @@ Mueller was a guest on the **LLM Fine Tuning** course (Maven, taught by Dan Beck
 
 **Full transcript:** [[transcripts/2024-01-12_maven_fsdp-deepspeed-accelerate-office-hours|Office Hours: FSDP, DeepSpeed and Accelerate]]
 
+## Recent X Activity
+
+### Nov 12, 2026 — reaction to the NVIDIA CEO transition
+
+Mueller tweeted an emotional response to Jensen Huang's resignation ("There are many emotions going
+through me right now. But anger and upset are certainly a few.") alongside NVIDIA's official press
+release. The event page — [[events/nvidia-ceo-transition-2026]] — covers the announcement (Huang
+resigned as President/CEO/Board member effective Nov 12; CFO **Colette Kress** appointed interim
+CEO; Harvey C. Jones first-ever Chair) and its aftermath, including the employee petition to bring
+Huang back (Wired, Nov 13) and WSJ-reported internal friction over circular financing, which Kress
+reportedly pushed to reduce.
+
 

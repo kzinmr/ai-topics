@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-14] x-accounts-scan | 5 new posts / 11 accounts scanned
+
+- Scanned 11 of 84 tracked accounts (request budget 12); 5 new substantive posts, 0 errors.
+- Saved raw: `raw/articles/2026-11-14_frontier.replit_sandbox-engine-microvms-part-1.md`, `raw/articles/2026-11-14_muninn.austegard_editing-monad-weights-to-stop-loops.md`, `raw/articles/2026-11-14_github_theoryventures-subtext-skills.md`.
+- Updated: entities/daniel-van-strien (saturate + ocr-bench batch/leaderboard tools), entities/bryan-bischof (TheoryVentures/subtext-skills), entities/ankur-goyal (Replit microVM sandbox share), entities/zach-mueller + events/nvidia-ceo-transition-2026 (Jensen resignation reaction), entities/dorialexander (Monad weight-edit amplification).
+- Updated: concepts/agent-sandbox-patterns (Replit microVM production case study), concepts/activation-steering (training-free weight editing to stop loops, Muninn/Monad).
+
+---
+
 ## [2026-11-15] skeleton-enrich | Stub backlog: 9 AI umbrella concept pages enriched
 
 - `status: skeleton` backlog still empty (streak since 2026-10-17); acted on highest-inbound `status: stub` subset per 2026-11-13 plan.

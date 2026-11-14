@@ -4,10 +4,11 @@ tags:
   - person
   - evaluation
 created: 2026-04-24
-updated: 2026-11-01
+updated: 2026-11-14
 type: entity
 sources:
   - raw/articles/2025-09-05_ben-hylak_thoughts-on-evals.md
+  - raw/articles/2026-11-14_frontier.replit_sandbox-engine-microvms-part-1.md
 ---
 
 
@@ -142,6 +143,19 @@ A concrete articulation of the "agent-instrumented eval loop" position in the
 [[concepts/evaluation/evals-vs-monitoring-debate]] — Patterns (monitoring) feeds synthetic evals,
 and coding agents do the repro/fix work with human spot-checks. He also promoted Patterns tersely
 as "just turn it on" (Oct 29). Related: [[entities/braintrust]], [[concepts/active-observability]].
+
+## Recent X Activity
+
+### Nov 8, 2026 — Replit's microVM sandbox engine
+
+Goyal called Replit's engineering deep-dive ["Inside Replit's New Sandbox Engine, Part 1: The Path to
+MicroVMs"](https://frontier.replit.com/sandbox-engine-microvms-part-1/) (Nov 4) a "great read from the
+@Replit team". The post describes rebuilding their decade-old container sandbox engine around KVM
+microVMs (Cloud Hypervisor + minimal runc containers in-guest) for stronger isolation, bottomless
+storage and fast startup across hundreds of millions of projects, explicitly motivated by agent-safety
+incidents (OpenAI×Hugging Face, Anthropic evals) and NIST's agent standards work. Fits his
+agent-observability / eval-loop positions above. See [[concepts/agent-sandbox-patterns]] (case study
+section) and `raw/articles/2026-11-14_frontier.replit_sandbox-engine-microvms-part-1.md`.
 
 ## Projects
 

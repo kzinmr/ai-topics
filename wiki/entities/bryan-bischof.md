@@ -3,7 +3,7 @@ title: Bryan Bischof
 type: entity
 handle: "@BEBischof"
 created: 2026-04-10
-updated: 2026-05-29
+updated: 2026-11-14
 tags:
   - person
   - x-account
@@ -15,6 +15,7 @@ tags:
   - youtube
 sources:
   - transcripts/2026-05-15_vanishing-gradients_show-us-your-agent-skills-ep2.md
+  - raw/articles/2026-11-14_github_theoryventures-subtext-skills.md
 ---
 
 
@@ -188,6 +189,7 @@ A talk presenting his framework for systematic AI agent evaluation. The talk cov
 - **Evaluating The Evaluators** (Theory Ventures) — Meta-analysis of evaluation methodologies for AI agents. Argues that the evaluation framework itself needs to be evaluated for bias, coverage, and reliability.
 - **The Gordian Knot of Inventory Management** (Theory Ventures) — Case study of AI applied to supply chain and inventory problems. Demonstrates the gap between AI promise and production reality in complex, real-world domains.
 - **Sell Coffee and Jeans, Not Picks and Shovels** (Theory Ventures) — Investment thesis arguing that the best AI opportunities are in applied verticals, not infrastructure tools.
+- **subtext-skills** (Nov 2026, [TheoryVentures/subtext-skills](https://github.com/TheoryVentures/subtext-skills)) — Previewed by Bischof on X: agent skills for **subtext documents**, prose structured sentence-by-sentence where each sentence carries author-supplied clarifications (undefined acronyms, ambiguous references, vague dates, missing context) in a self-describing columnar JSON (`contextdoc/columnar-v1`). Two skills: `subtext-annotate` (converts raw text, then *interviews you* with batched clarifying questions and attaches answers to the sentences they clarify) and `subtext-read` (renders a `.subtext.json` with clarifications woven in at the point of confusion, plus a list of open questions). Ships as Agent Skills (SKILL.md + YAML frontmatter) for Claude Desktop/Code, Cursor, and any compatible client; MIT-licensed. Raw: `raw/articles/2026-11-14_github_theoryventures-subtext-skills.md`.
 
 ## Related Concepts
 

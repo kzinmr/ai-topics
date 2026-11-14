@@ -218,7 +218,7 @@
 - [[entities/daniel-kim-cerebras]] — Daniel Kim (@learnwdaniel) — Head of Growth at Cerebras; co-author of Cerebras Knowledge Base
 - [[entities/daniel-miessler]] — Daniel Miessler
 - [[entities/daniel-tunkelang]] — Daniel Tunkelang
-- [[entities/daniel-van-strien]] — Daniel van Strien; ML Librarian at HF — weak-label GLAM pipelines, UV scripts for agents; Oct 2026: new HF "Train Models on Jobs" docs page (Transformers/TRL/Unsloth/Axolotl/Diffusers, ~$0.10 A10G smoke runs, agent-operable via hf CLI skill)
+- [[entities/daniel-van-strien]] — Daniel van Strien; ML Librarian at HF — weak-label GLAM pipelines, UV scripts for agents; Nov 2026: saturate (congestion-aware batch inference) + ocr-bench (per-collection OCR leaderboards via VLM-as-judge); Oct 2026: HF "Train Models on Jobs" docs, curation decision model
 - [[entities/danlark-org]] — Daniel Kutenin (danlark) — Search infrastructure engineer (ex-Yandex, Google); C++ performance, algorithms, and large-scale systems blog; Telegram Data Clustering Contest 3rd place write-up (fastText/CLD2/HNSW news aggregator)
 - [[entities/daringfireball-net]] — Daring Fireball (John Gruber); Anthropic Text Watermarking Criticism (Aug 2026: "a perversion of writing", semantic word choice degradation, EU regulation overreach, Declaude circumvention)
 - [[entities/dario-amodei]] — Dario Amodei — Co-founder and CEO of Anthropic; Machines of Loving Grace, The Adolescence of Technology, Policy on the AI Exponential (June 24)

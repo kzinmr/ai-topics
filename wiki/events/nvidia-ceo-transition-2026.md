@@ -77,6 +77,10 @@ judgment:
   damaged the company's reputation and cost shareholders money.
 - Reuters (HN 301pts) reported on Nov 12 that Huang had a relationship with a *second* employee.
 
+## Community reaction
+
+- **Zach Mueller** (@TheZachMueller, Hugging Face / "Scratch to Scale") posted an emotional reaction on Nov 12: *"There are many emotions going through me right now. But anger and upset are certainly a few."* — linking the official press release (x-accounts scan, Nov 14). See [[entities/zach-mueller]].
+
 ## Related
 
 - [[entities/jensen-huang]] — person page (status updated from "rumor-level ouster" to confirmed resignation)

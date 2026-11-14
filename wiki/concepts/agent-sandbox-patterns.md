@@ -1,16 +1,16 @@
 ---
 title: "Agent Sandbox Patterns (Isolate-the-Tool vs Isolate-the-Agent)"
 created: 2026-08-29
-updated: 2026-10-25
+updated: 2026-11-14
 type: concept
 tags: [concept, ai-agents, agent-safety, sandbox, isolation, security, infrastructure]
 sources:
   - raw/articles/2026-08-29_browser-use_two-ways-to-sandbox-agents.md
   - raw/articles/2026-10-16_mlejva_sandboxes-are-dead.md
   - raw/articles/martinalderson.com--posts-interesting-systemd-features--ef189b6f.md
+  - raw/articles/2026-11-14_frontier.replit_sandbox-engine-microvms-part-1.md
 confidence: high
 ---
-
 # Agent Sandbox Patterns
 
 A taxonomy for isolating an AI agent that can **execute arbitrary code**, drawn from Browser Use's production writeup of running millions of web agents. The framing question: once an agent can run code, it can reach anything on the machine — env vars, API keys, DB credentials, internal services. How do you cut that off?^[raw/articles/2026-08-29_browser-use_two-ways-to-sandbox-agents.md]
@@ -81,6 +81,31 @@ The primitives that matter for agents (Linux only; `launchd` covers cron-style s
 | `.path` units (`DirectoryNotEmpty=%h/agent-inbox`) | Event-driven agent triggering without a cron daemon: drop a file in a folder (expenses, invoices) and a scoped service categorises it, with `RuntimeMaxSec` + `MemoryMax` baked into the paired unit. |
 
 **The caveat Alderson flags is the important one for safety**: systemd also ships sandboxing directives (`ProtectHome`, `ReadWritePaths`, and friends) that "you'd think would be perfect for agents. But there are so many footguns with it that's too long to explain in this article." That is exactly the Pattern-1 failure mode — cgroup **limits** are hard guarantees from the kernel, while systemd's **filesystem/network sandboxing** directives are opt-in, default-open, and easy to under-specify, so treating "it's in a systemd unit" as equivalent to "it's isolated" is a mistake. Limits contain a misbehaving agent's *resource* damage; they do nothing about credential access or egress, which is why the control-plane model above still wins wherever secrets are in reach.
+
+## Production case study: Replit's microVM sandbox rewrite (Nov 2026)
+
+Replit — running sandboxes for ~a decade across hundreds of millions of projects — published
+"Inside Replit's New Sandbox Engine, Part 1: The Path to MicroVMs" (Nov 4, 2026; shared on X by
+Braintrust's Ankur Goyal, Nov 8). It is the fullest production account of the
+**container-inside-microVM** hybrid: hardware-assisted virtualization (KVM via **Cloud Hypervisor**,
+chosen over Firecracker for virtiofs, device hotplug, memory snapshots and nested virtualization)
+separates *sandboxes from each other*, while minimal runc containers still separate processes
+*inside* each guest. Notable design points:
+
+- A minimal init in each microVM manages containers; host↔guest over **gRPC on vsock** (no IP network).
+- Guest kernel starts from `tinyconfig` — minimizing the kernel attack surface, motivated by a wave
+  of LPE CVEs (Dirty Frag, DirtyClone, Bad Epoll, GhostLock…) whose discovery rate AI has *increased*.
+- The VMM runs unprivileged with no Linux capabilities; per-role seccomp/namespace/capability config
+  so a user process never inherits a monitoring agent's privileges — and Docker works *inside* the
+  guest, never reaching the host.
+- Motivations cite the industry convergence this page tracks: OpenAI's Hugging Face incident,
+  Anthropic's evaluation incidents, NIST's agent standards initiative, DeepSeek's DSec, Kubernetes
+  Agent Sandbox, Google AX — plus $59.3M in agent-sandbox startup funding (Daytona, E2B, Runloop,
+  Blaxel). Same substrate powers Replit's "self-driving company" agent fleet (incident investigation,
+  code review, support triage) since late January 2026. Part 2 covers orchestrating tens of thousands
+  of microVMs on Kubernetes.
+
+Raw: `raw/articles/2026-11-14_frontier.replit_sandbox-engine-microvms-part-1.md`
 
 ## Related
 - [[entities/e2b]] — "Sandboxes are dead" / agent-driven private cloud thesis

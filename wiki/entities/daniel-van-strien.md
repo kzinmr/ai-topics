@@ -3,7 +3,7 @@ title: Daniel van Strien
 type: entity
 handle: "@vanstriendaniel"
 created: 2026-04-10
-updated: 2026-11-01
+updated: 2026-11-14
 tags:
   - person
   - model
@@ -25,6 +25,8 @@ sources:
   - raw/articles/github.com--davanstrien-curation-decision-recipe--2026-10-29.md
   - https://github.com/davanstrien/curation-decision-recipe
   - https://huggingface.co/spaces/davanstrien/prelinger-moments-space
+  - https://github.com/davanstrien/saturate
+  - https://github.com/davanstrien/ocr-bench
 ---
 
 ## Related Entities
@@ -196,6 +198,28 @@ Applied the decision-model pattern to video: [Prelinger moments](https://hugging
 searches 1,864 public-domain Prelinger films by VLM caption, then answers a yes/no question —
 **Liquid AI's d1-2B** decision model checks 3 frames per result clip and jumps to one it labels yes
 (e.g. "anyone wearing a mask?"). Related: [[entities/liquid-ai-lfm3]].
+
+## Recent X Activity
+
+### Nov 13, 2026 — saturate + ocr-bench: batch inference & per-collection OCR leaderboards
+
+Announced two new open-source tools for evaluating models on *your own* data rather than public
+leaderboards:
+
+- **[saturate](https://github.com/davanstrien/saturate)** — batch inference for datasets: rows in,
+  any OpenAI-compatible endpoint out, resumable parquet output. Its distinguishing feature is
+  *congestion-aware concurrency* — it auto-tunes parallelism against the endpoint, "no tuning".
+  Daniel ran everything with [[concepts/vllm]] via his batch tool.
+- **[ocr-bench](https://github.com/davanstrien/ocr-bench)** — per-collection OCR leaderboards using
+  **VLM-as-judge**: instead of one global OCR ranking, each user's document collection gets its own
+  leaderboard scored by a vision-language model.
+- Also pointed at **[HF "Run on Jobs"](https://huggingface.co/spaces/uv-scripts/run-on-jobs)** for
+  running the cheapest candidate model on your own pages — e.g.
+  `lightonai/LightOnOCR-3-0.8B` — completing the "screen the cheap models on your own corpus first"
+  workflow: saturate for batch runs, ocr-bench to compare models on your collection.
+
+Fits his "Community-Driven Evaluation" and "cost-efficient ML on HF Jobs" themes: local,
+collection-specific evaluation over benchmark-leaderboard chasing.
 
 ## Related Concepts
 

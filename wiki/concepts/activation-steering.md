@@ -6,7 +6,7 @@ aliases:
   - activation engineering
   - representation engineering
 created: 2026-05-08
-updated: 2026-05-27
+updated: 2026-11-14
 tags:
   - interpretability
   - model
@@ -109,6 +109,32 @@ As a specific application of Activation Steering, **Abliteration** (mlabonne, 20
 Activation Steering suggests the next evolution of LLM APIs. Until 2024, prompting + RAG were developers' primary control mechanisms. As steering matures, developers may gain **direct control interfaces into model internals**.
 
 Shihipar predicts: "Next-generation model APIs will be more powerful but also more complex. Prompting and RAG alone won't be enough to get the output you want."
+
+## Training-Free Weight Editing to Stop Degenerate Repetition Loops (Monad 56M, Nov 2026)
+
+Oskar Austegard's Claude-based agent **Muninn** removed most repetition loops from **Pleias' Monad**
+(56.7M-param reasoning model, 64 layers × 256 wide) with a *single training-free weight edit*:
+deleting one direction from the attention output projections of layers 27–34 (524,288 of 56.7M
+weights). Greedy-decoding loops fell **34.2% → 5.8%** on a 500-prompt test set; IFEval rose
+**5.3% → 13.3%** (McNemar p=0.017); MMLU/GSM8K changes within noise; decoding speed unchanged.
+
+Mechanistic core: the loop direction (found from residual-stream activation statistics, AUC 0.99 at
+layer 33) lies almost along Monad's **attention sink** axis (sink norm 15,285 vs ~228 for a typical
+token; cosine −0.77 with the loop direction). The naive edit — delete the direction from every
+layer's output — destroyed the sink and *raised* loops to 98%; deleting from the five MLP neurons
+that build the sink gave 75.5%. The working edit first projects the sink component out of the loop
+direction, rescales to unit length u, and edits W → W − u(uᵀW) in bf16 for each of the eight
+attention blocks in layers 27–34. A random-direction control raised loops 30.2% → 51%, confirming
+the specificity of the edit.
+
+Positioning: a direct descendant of the refusal-direction ablation line (Arditi et al.) and of MIT
+CSAIL's Takehi/Teoh/Zhang/Khattab work where **an LLM read a network's weights and wrote changes
+into them directly** (their result removed loops from Qwen3.5-0.8B by deleting a single direction
+from two layers). Limits match the MIT finding: removing loops lets a model finish answers it could
+already compute (GSM8K barely moved — Monad's arithmetic is weak either way; sampling untested).
+Code: `oaustegard/experiments/monad-weight-edit`. Raw:
+`raw/articles/2026-11-14_muninn.austegard_editing-monad-weights-to-stop-loops.md`
+(shared on X by Pleias co-founder Pierre-Carl Langlais / @Dorialexander, Nov 3).
 
 ## Related Concepts
 
