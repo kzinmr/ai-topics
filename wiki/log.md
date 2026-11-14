@@ -1,6 +1,16 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+
+## [2026-11-14] health-fix | Wiki health auto-fix run — clean
+
+- index.md: 0 pipe_prefix / 0 line_number / 0 triple_bracket / 0 space_prefix — validate_index.py pass (3487 lines)
+- Ghost entries: 0 (recursive scan, 3463 indexed links) · Orphans not in index: 0
+- No-frontmatter scan (top-level entities/concepts/comparisons/queries/events): 0 · L2 pipe-prefix: 0
+- Committed pending working-tree changes: concepts/unsloth.md (Qwen3.8-27B UD3.1 update), SCHEMA.md (+perplexity tag)
+
+---
+
 ## [2026-11-14] watchdog | auto-fix | index dedup + register 4 orphaned pages from truncated wiki-ingest runs
 
 > `wiki-watchdog-fix` cron (2026-11-14 17:35 UTC). Index structurally clean (validate_index.py exit 0, 0 corruption patterns). Two auto-fixes applied:
