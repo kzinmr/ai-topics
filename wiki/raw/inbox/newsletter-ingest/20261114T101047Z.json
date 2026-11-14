@@ -1,0 +1,117 @@
+{
+  "ok": true,
+  "run_id": "20261114T101047Z",
+  "triaged_at": "2026-11-14T10:25:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "input_count": 2,
+  "verdict_summary": {
+    "critical": 1,
+    "high": 1,
+    "low": 0,
+    "skip": 0
+  },
+  "notes": [
+    "Both digests are link-only (Substack/beehiiv wrappers); article bodies were NOT captured by newsletter-ingest. Link resolution was performed by this triage run (Chrome-UA urllib redirect-follow) and canonical URLs + og metadata are recorded below for wiki-ingest.",
+    "Jensen Huang fallout is an ONGOING saga already heavily covered in the wiki: raw/articles/ contains 2026-11-12_wsj_nvidia-board-ousts-jensen-huang.md, 2026-11-13_wired_nvidia-employees-petition-huang-return.md, nvidianews--news-nvidia-announces-ceo-transition--d22abd9c.md, garymarcus jensen-resigns/is-cooked raws, techcrunch testify-before-congress, semafor board-ousting. wiki/entities/jensen-huang.md and nvidia.md exist. wiki-ingest must UPDATE these pages with only the NEW angles from today's digest (the personal-misconduct apology + CNN investigation-fallout reporting + Alex Banks's contrarian reassessment), not re-report the resignation news.",
+    "NEW primary source surfaced by link resolution: NVIDIA Newsroom 'A Message to Our Company' (https://nvidianews.nvidia.com/news/a-message-to-our-company) — Jensen Huang's public apology admitting infidelity; per og:description this is the stated trigger for the board action. High-value primary document worth scraping to raw/articles/ as-is.",
+    "Gemini 4 Hydrogen is a GENUINELY NEW model release: official Google blog announcement found (https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/). Follows Gemini 4 Argon (events/2026-10-01-gemini-4-argon-release.md) and Gemini 4 Carbon (raw/articles/2026-10-28_gemini-4-carbon.md). No Hydrogen coverage exists anywhere in the wiki yet.",
+    "Beehiiv click-tracker links are individually variable: sample of 5 -> 3 resolved (main post at read.getsuperintel.com, x.com/kimmonismus promo, blog.google announcement), 1 Cloudflare 403, 1 stayed on tracker. Remaining 15 untested links are footer chrome per the newsletter structure; the two resolved content URLs above are sufficient for ingestion.",
+    "The Signal is Alex Banks's publication (existing raw: 2026-04-17_alex-banks-thesignal-hallucination-sycophancy.md; entity page the-signal.md exists — no separate alex-banks entity found; wiki-ingest may consider one if not present)."
+  ],
+  "takes": [
+    {
+      "message_id": "<20261113.190936.cc26ba1d@mta18>",
+      "subject": "⚡ Google Hands Everyone Gemini 4 Hydrogen",
+      "source": "Superintelligence. (read.getsuperintel.com, Kimmonismus / Kim, editor-in-chief)",
+      "date": "2026-11-13",
+      "importance": "critical",
+      "canonical_url": "https://read.getsuperintel.com/p/google-hands-everyone-gemini-4-hydrogen",
+      "primary_source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-13-google-hands-everyone-gemini-4-hydrogen.md",
+      "og_description": "Google's fast new model scores level with its six-week-old Gemini 4 Argon on Artificial Analysis's index for about a fifth of the cost per task, and it is rolling out in the Gemini app and Search. I had early access and built 3D worlds with it.",
+      "rationale": "Major frontier-model release directly in wiki scope (model releases, agentic workflows, inference cost economics). Gemini 4 Hydrogen is positioned as Google's 'daily driver for agentic workflows' at ~1/5 the per-task cost of Gemini 4 Argon with equal Artificial Analysis index scores — a cost-capability frontier shift worth its own events/ or concepts/ page. The newsletter adds first-party early-access testing (3D world building). Aligned with newsjacking 'Trend Surfing' + 'In-Group Signal' (Artificial Analysis index literacy). NJ score 4/5.",
+      "wiki_targets": [
+        {
+          "path": "wiki/events/2026-11-13-gemini-4-hydrogen-release.md",
+          "action": "create",
+          "note": "sibling of events/2026-10-01-gemini-4-argon-release.md; scrape blog.google announcement + superintel early-access section"
+        },
+        {
+          "path": "wiki/concepts/gemini/",
+          "action": "check-or-update",
+          "note": "Gemini model-family hub if present; else update gemini-4-adjacent concept pages"
+        },
+        {
+          "path": "wiki/entities/superintelligence.md",
+          "action": "create-or-update",
+          "note": "check find wiki/entities -iname '*superintel*' first; newsletter entity for read.getsuperintel.com"
+        }
+      ],
+      "suggested_tags": [
+        "google",
+        "gemini",
+        "model-release",
+        "ai-infrastructure",
+        "agentic-workflows",
+        "inference-cost"
+      ],
+      "dedupe_hint": "No Hydrogen files exist (verified via ls of raw/articles, entities, concepts, events). Only Gemini 4 Argon (events/) and Carbon (raw) exist. Scrape blog.google (urllib-fetchable, HTTP 200 confirmed) as the authoritative primary; superintel piece as secondary/early-access perspective. Pre-validate tags against SCHEMA.md before page creation."
+    },
+    {
+      "message_id": "<20261113132543.3.a43f3e6a3137ec17@mg-d1.substack.com>",
+      "subject": "I was wrong about Jensen Huang",
+      "source": "The Signal (Alex Banks, thesignal.substack.com)",
+      "date": "2026-11-13",
+      "importance": "high",
+      "canonical_url": "https://thesignal.substack.com/p/i-was-wrong-about-jensen-huang",
+      "og_description": "What Nvidia lost when Jensen left.",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-13-i-was-wrong-about-jensen-huang.md",
+      "resolved_linked_sources": [
+        {
+          "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+          "title": "A Message to Our Company",
+          "note": "Jensen Huang public apology: admits infidelity, apologizes to family — the stated trigger for board action. PRIMARY SOURCE, scrape to raw/articles/."
+        },
+        {
+          "url": "https://edition.cnn.com/2026-11-11/business/live-news/nvidia-jensen-huang-investigation-fallout",
+          "title": "CNN live: Nvidia Jensen Huang investigation fallout"
+        },
+        {
+          "url": "https://edition.cnn.com/2026-11-12/politics/alice-huang-us-intel-jensen-huang-nvidia",
+          "title": "CNN: Alice Huang / US Intel / Jensen Huang / Nvidia"
+        }
+      ],
+      "rationale": "Contrarian reassessment ('I was wrong') of the Jensen Huang ouster — pattern-interrupt + polarizing-promise framing on an ongoing saga the wiki is actively tracking. The digest's value is the NEW material it links: the personal-misconduct apology (new primary source explaining the board's stated cause) and CNN's investigation-fallout reporting (Alice Huang / US intelligence angle). The essay itself is opinion corroboration for entities/jensen-huang.md and nvidia.md rather than standalone signal. NJ score 3/5. Downgraded from critical because the resignation itself is fully ingested; only the apology + investigation angles are new.",
+      "wiki_targets": [
+        {
+          "path": "wiki/entities/jensen-huang.md",
+          "action": "update",
+          "note": "append 2026-11-13 section: apology letter, CNN investigation fallout, Alex Banks reassessment; keep prior interpretations as contested where they conflict"
+        },
+        {
+          "path": "wiki/entities/nvidia.md",
+          "action": "update",
+          "note": "board-ousting timeline continuation only if not already current"
+        },
+        {
+          "path": "wiki/entities/the-signal.md",
+          "action": "update",
+          "note": "add this post to the publication's notable-posts list"
+        },
+        {
+          "path": "wiki/entities/alex-banks.md",
+          "action": "check",
+          "note": "verify existence before creating; prior raw 2026-04-17_alex-banks-thesignal-* exists"
+        }
+      ],
+      "suggested_tags": [
+        "nvidia",
+        "jensen-huang",
+        "leadership",
+        "the-signal",
+        "ai-industry"
+      ],
+      "dedupe_hint": "MUST dedupe against the 2026-11-12/13 raw files listed in notes[1] — do NOT re-create resignation coverage. Priority scrape: nvidianews apology (primary, HTTP 200 confirmed). CNN live-news pages may be JS-heavy; if thin, classify from og metadata + thread. Substack essay body: fetch thesignal.substack.com/p/ URL, marker-slice between opening phrase and 'People also comment'."
+    }
+  ]
+}
