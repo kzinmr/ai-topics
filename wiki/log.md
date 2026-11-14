@@ -1,6 +1,19 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-11-14] watchdog | auto-fix | index dedup + register 4 orphaned pages from truncated wiki-ingest runs
+
+> `wiki-watchdog-fix` cron (2026-11-14 17:35 UTC). Index structurally clean (validate_index.py exit 0, 0 corruption patterns). Two auto-fixes applied:
+
+**Fixes:**
+- Merged adjacent duplicate index entry `[[concepts/claude/mythos]]` (two standalone lines with complementary Mythos 5 / Mythos 5.2 descriptions -> one combined line).
+- Registered 4 untracked, frontmatter-complete pages created by today's truncated blog/newsletter wiki-ingest runs (both died on "Response truncated due to output length limit" after writing pages but before indexing): `concepts/perplexity-decider`, `concepts/strands-decider`, `concepts/jepa-planning-methods`, `entities/smolmaxxing` (+ their raw articles). Removed one-off non-SCHEMA tag `project` from smolmaxxing (canonical `open-source` already present).
+- Header counts: Entities 969->970, Concepts 2340->2342, Total 3455->3458.
+
+**Pipeline state (NEEDS-HUMAN, unchanged class since 11-11):** blog-triage + newsletter-triage failed today with HTTP 503 (local LLM busy, no fallback); blog-wiki-ingest + newsletter-wiki-ingest failed with output-length truncation (pages written; the 4 orphans above recovered). Ingest stages ok; no data loss (checkpoints unconsumed). 278 residual empty-wikilink artifacts = known multi-line cleanup, human review.
+
+---
+
 ## [2026-11-13] x-accounts-scan | 2 new posts → 3 raw articles, 2 new concepts, 2 entity updates
 
 > `x-accounts-scan` cron (2026-11-13 22:30 UTC). 11/84 accounts scanned (cursor rotation 7→18),

@@ -1,10 +1,10 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Total pages: 3455
-> Last updated: 2026-11-13
+> Total pages: 3458
+> Last updated: 2026-11-14
 
-## Entities (969 pages)
+## Entities (970 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -830,6 +830,7 @@
 - [[entities/skypilot]] — SkyPilot
 - [[entities/slalom]] — Slalom
 - [[entities/snyk]] — Snyk
+- [[entities/smolmaxxing]] — smolmaxxing — hyperionaidev's on-device/small-model maximization project (GitHub); edge AI, quantization, memory-efficiency
 - [[entities/softwaredoug]] — Doug Turnbull (softwaredoug)
 - [[entities/soham-ray]] — Soham Ray — Researcher at Sierra; tau-bench suite, ICML 2026 oral
 - [[entities/solo-founder-stack]] — Solo Founder Stack
@@ -977,7 +978,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2340 pages)
+## Concepts (2342 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
@@ -1177,6 +1178,7 @@
 - [[concepts/harness-engineering/system-architecture/_index]] — System Architecture — System design under harness engineering (sub-pages hub)
 - [[concepts/inference-provisioned-throughput]] — Provisioned Throughput — reserved inference capacity for open-weight models with token pricing and 99% SLA (Together AI, July 2026)
 - [[concepts/jepa-world-models]] — JEPA World Models — Joint Embedding Predictive Architecture for world models (LeCun, LeMario)
+- [[concepts/jepa-planning-methods]] — JEPA Planning Methods — Alchaer 600-experiment study comparing planning strategies over JEPA world models (Nov 2026)
 - [[concepts/juggler]] — Juggler — Open-source GUI coding agent by JUCE creator Julian Storer
 - [[concepts/lingbot-world-infinity]] — LingBot-World-Infinity — Open-source world model with 60-minute coherent rollouts from Tsinghua THU-KING-NIC-Lab
 - [[concepts/llm-idea-convergence]] — LLM Idea Convergence — parallel/independent invention of the same LLM tooling ideas across the ecosystem
@@ -1636,8 +1638,7 @@
 - [[concepts/claude/memory-tool]] — Cognition's Memory Tool — Copying Claude's Approach
 - [[concepts/claude/model-family]] — Build with Claude — Developer Guide
 - [[concepts/claude/models]] — Claude Models
-- [[concepts/claude/mythos]] — Claude Mythos; enriched with government de-escalation: Mythos 5 released to 100+ US institutions after Commerce Secretary Lutnick letter (June 27, Semafor)
-- [[concepts/claude/mythos]] — Claude Mythos; Mythos 5.2 released Nov 9 2026 with Fable 5.2: CyScenarioBench 76.3, CVE Rediscovery 89.6, gated via Life Sciences & Cyber Verification Programs
+- [[concepts/claude/mythos]] — Claude Mythos; Mythos 5 released to 100+ US institutions after Lutnick letter (June 27); Mythos 5.2 released Nov 9 2026 with Fable 5.2: CyScenarioBench 76.3, CVE Rediscovery 89.6, gated via Life Sciences & Cyber Verification Programs
 - [[concepts/claude/mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/claude/mythos-preview]] — Claude Mythos Preview
 - [[concepts/claude/opus-4-6]] — Claude Opus 4.6
@@ -2769,6 +2770,7 @@
 - [[concepts/political-bias-ai-criticism]] — Political Bias Analysis of AI Criticism
 - [[concepts/polymarket-trading-agents]] — AI agents used for automated trading on Polymarket prediction markets — weather, crypto, sports. Self-learning bots t...
 - [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning
+- [[concepts/perplexity-decider]] — Perplexity Decider v1.3 — open-weight decision model (System One category): calibrated yes/no, multiple-choice, ordered-score answers in one forward pass; Apache, HF/OpenRouter/Decisions API (Nov 12 2026)
 - [[concepts/polymorphic-inference]] — Polymorphic Inference & Together Compiler (TKCC) — Together AI's agentic continual-compilation loop for inference engines; adaptive serving era, InferenceX SOTA claims (vendor-reported), megakernel retirement, "RSI moment for OSS models" (Nov 2026)
 - [[concepts/posse-pattern]] — posse-pattern
 - [[concepts/post-training-distributional-view]] — Post-Training Distributional View
@@ -3133,6 +3135,7 @@
 - [[concepts/state-sponsored-chatbot-influence]] — State-Sponsored AI Chatbot Influence — fake think-tank "data reports" engineered to steer LLM chatbot answers (Hanover Institute / Piro case, Aug 2026)
 - [[concepts/statewise-persistent-operational-state-repair]] — StateWise: diagnose & repair corrupted persistent operational state before an agent acts (counterfactual replanning + typed evidence grounding); 93.3% vs 38.7% correctness under corrupted state, no unsafe actions (arXiv:2610.05241, Oct 2026)
 - [[concepts/statistical-process-control]] — Statistical Process Control
+- [[concepts/strands-decider]] — Strands Decider — decision-model variant in the System One category, compared with Perplexity Decider and Gemini Decision 1 (Nov 2026)
 - [[concepts/steven-pinker]] — Steven Pinker
 - [[concepts/structured-outputs]] — Structured Outputs — Reliable LLM Output via Schema Validation
 - [[concepts/stripe-knowledge-ai-platform]] — Stripe Knowledge AI (Kai): production enterprise knowledge assistant; hybrid retrieval over Slack/Drive/Confluence/Jira/GitHub + source-freshness layer + eval-driven tuning
