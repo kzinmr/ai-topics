@@ -1,13 +1,14 @@
 ---
 title: WebMCP (Web Model Context Protocol)
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-11-15
 type: concept
 tags: [mcp, protocol, ai-agents, web-development, browser]
 sources:
   - raw/articles/2026-08-04_webmcp-teaching-websites-to-talk-to-ai-agents
   - https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/
   - https://news.ycombinator.com/item?id=49450417
+  - https://ui-sdk.dev/docs/agents/connect-an-agent/webmcp
 related:
   - [[entities/webmcp]]
   - [[concepts/mcp]]
@@ -60,6 +61,12 @@ WebMCP extends MCP (Model Context Protocol) to the web context. While MCP provid
 - **Chrome**: Origin trial (available now)
 - **Edge**: In development
 - **Firefox**: Not yet announced
+
+## Framework adoption: Vercel UI SDK (Nov 2026)
+
+The first shadcn-ecosystem implementation surface landed via the **Vercel UI SDK**, whose agent-integration guide ships a dedicated **WebMCP** page — *"Let the agent built into a browser read and use your components"* (`ui-sdk.dev/docs/agents/connect-an-agent/webmcp`). This is a meaningful maturity signal: WebMCP support is no longer only a Chrome origin-trial API, but something a component library can wire up for you, so a site's **typed React component catalog doubles as its agent tool surface**.
+
+Notably this is the same substrate the UI SDK used for **SPEC-01/HARDWARE** (61 hardware-themed components with haptics/sound, installable from a shadcn registry, released by Vercel's @shuding on Nov 14 2026) — the registry/SDK layer is becoming both the human-facing design system and the agent-facing tool surface. Amplified on X by Vercel's **@ctatedev** (Nov 13, "Interesting") — see [[entities/chris-tate]]. Related direction: [[concepts/agentic-web]], [[concepts/generative-ui]].
 
 ## See Also
 

@@ -2,6 +2,30 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-15] ingest | x-accounts-scan: 3 new posts (11/84 accounts, budget-limited) — Gemini 4 Hydrogen DevRel + WebMCP/UI-SDK
+
+> `x-accounts-scan` (22:30 UTC). Cursor 29→40; 11 accounts scanned under a 12-request budget (73 deferred to next run), 0 API errors, 3 substantive candidates, 3 new posts, processed cache 234. Detail: `.hermes/cron/data/x_accounts_latest_full.json`.
+
+**Triage** (context fetched via xurl direct-ID lookup; both `replied_to`/`quoted` parents retrieved — the scan snippets were follow-up replies with no standalone payload):
+
+| Post | Handle | Decision |
+|---|---|---|
+| Gemini 4 Hydrogen AI Studio + migration-guide links | @_philschmid | **take** — parent tweet is a full DevRel endorsement with hard numbers |
+| "Interesting" + ui-sdk.dev WebMCP docs | @ctatedev | **take** — first shadcn/UI-SDK implementation of WebMCP |
+| SPEC-01/HARDWARE (Vercel UI SDK hardware theme) | @ctatedev | **take** — same UI-SDK substrate as above, folds into the same story |
+
+**No new pages** — all three fold into existing coverage (duplicate check: `concepts/gemini/gemini-4-hydrogen.md`, `concepts/webmcp-protocol.md`, `entities/webmcp.md`, `raw/articles/blog.google--introducing-gemini-4-hydrogen.md` all pre-existed).
+
+**Updated (4):**
+- `entities/philipp-schmid.md` — new `## X Activity Log (Nov 2026)` section with the Nov 12 Hydrogen endorsement: daily-driver / subagent-paired-with-Carbon framing, **beats Argon on Artificial Analysis**, **57% Terminal-Bench 4.0**, **4 thinking levels (low/medium/high/xhigh)**, $1.50/$7.50 + free tier, rollout to Antigravity / Gemini App / Google Search for Pro+Ultra.
+- `concepts/gemini/gemini-4-hydrogen.md` — new **`## Google DevRel framing (contested: quality)`** section per AGENTS.md "do not erase contradictions": Schmid's "outperforms Argon on AA" retained alongside Willison's "quite stark quality drop" as a **contested quality axis** (preference arena vs pelican-SVG grid), plus the Terminal-Bench/thinking-level/subagent-role facts Willison's write-up lacked. Also collapsed an accidentally duplicated `## Quality` block.
+- `entities/chris-tate.md` — new `## X Activity Log (Nov 2026)` with both Nov 13–14 posts (WebMCP docs page, SPEC-01/HARDWARE by @shuding: 61 components, haptics + sound, shadcn registry).
+- `concepts/webmcp-protocol.md` — new **`## Framework adoption: Vercel UI SDK (Nov 2026)`** section: WebMCP moving from Chrome-origin-trial-only to component-library-wired, so a site's typed React catalog becomes its agent tool surface; cross-linked to SPEC-01 and `entities/chris-tate`.
+
+**Skips**: none — no off-topic or thin link-dumps in this batch. 73 accounts skipped purely on request budget (no dead handles, no `could not resolve user_id` errors).
+
+**Checks**: all 22 wikilink targets in the touched entity pages `[ -f ]`-verified; tags unchanged (no new tags → no SCHEMA edit); index blurs for both entities refreshed, no page added so section counts untouched.
+
 ## [2026-11-15] dreaming wiki-ingest | Pattern E saturation + 2 takes (Poppy v1.0, Dwarkesh RSI essay)
 
 > `dreaming-wiki-ingest` (18:20 UTC). Upstream `dreaming-group` (c4a9e8d2f671, 18:19) died with `RuntimeError: Response truncated due to output length limit` — the 5,341-line output file contained **only the injected checkpoint, no cluster analysis** (unlike the Aug 6 variant), and `triage_latest.json` was stale (run 20261113T180045Z, consumed by the Nov 13 cycle). No 18:10 dreaming commit exists. Checkpoint `20261115T180026Z`: `total_articles: 0`, `recent_raw_articles: 251` → **Pattern E** filesystem scan, decisive signal = `check_archive_index_absence.py` (59 never-archived of 118 recent).

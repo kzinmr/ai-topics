@@ -2,7 +2,7 @@
 title: Chris Tate
 type: entity
 created: 2026-04-10
-updated: 2026-11-01
+updated: 2026-11-15
 source: "x-account"
 related: [entities/simonw, entities/antirez-com, entities/geoffreylitt-com, entities/mitsuhiko]
 tags:
@@ -139,6 +139,11 @@ He occasionally shares **technical threads** explaining the reasoning behind his
 - **Oct 17 — [tsc-ts](https://github.com/vercel-labs/tsc-ts):** Announced **tsc-ts**, an experimental **TypeScript port of the TypeScript 7.0.2 compiler (tsgo / TypeScript-Go), compiled to native code with scriptc** (`npm i tsc-ts`). Headline benchmarks vs tsgo: **VS Code 4.2×, Sentry 4.2×, TypeORM 3×, tRPC 2.8× faster type-checking**. Every compiler stage (scanner, parser/AST, binder, module resolution, tsconfig/programs, CLI options, diagnostics catalog incl. 13 translations, JS emit across 39 option sets, declaration emit) is verified against tsgo on TypeScript's own test corpus (~12,500 files / ~17,000 units) with all compared units matching. See [[concepts/scriptc-typescript-native-compiler]].
 
 - **Oct 31 — [agent-desktop](https://github.com/vercel-labs/agent-desktop):** Amplified the launch of **agent-desktop**, a Rust-based **[[concepts/computer-use]]** tool from **Vercel Labs** — "agent-browser, for your whole computer" — built by **@mdlahfir**, who "just joined the Vercel Labs team." Tate: *"Star it, fork it, tell your agents about it."* It gives any coding agent reliable desktop computer use (macOS/Windows/Linux) by reading the OS **accessibility tree** rather than guessing from pixels, with stable refs and retry-safe actions, running headless in the background while agents work in parallel each with their own cursor. See [[events/vercel-agent-desktop-launch-2026]].
+
+## X Activity Log (Nov 2026)
+
+- **Nov 13 — [WebMCP via Vercel UI SDK](https://ui-sdk.dev/docs/agents/connect-an-agent/webmcp):** Tate flagged (with a bare "Interesting") the **WebMCP** docs page in the **Vercel UI SDK** agent-integration guide: *"Let the agent built into a browser read and use your components."* It is the concrete shadcn/UI-SDK implementation surface for the [[concepts/webmcp-protocol|WebMCP]] direction — instead of an external agent scraping the DOM, the **browser's built-in agent** discovers and invokes the site's own typed React components directly. Fits Tate's [[#Key Projects|json-render]] / Generative-UI line of work: the component catalog is the agent's tool surface. See [[concepts/agentic-web]].
+- **Nov 14 — [SPEC-01/HARDWARE theme for Vercel UI SDK](https://spec-01.vercel.app/):** Amplified **SPEC-01/HARDWARE**, a themed component set built with the **Vercel UI SDK** and released by **@shuding** (Guo Yun, Vercel design engineer): **61 hardware-flavored components — keys, knobs, dials, LCDs and switches — with haptics and sound**, installable from a **shadcn registry**. Tate's reaction: *"Going here, turning sound on and pressing buttons is so satisfying 😌."* Worth noting as the aesthetic/UX end of the same UI-SDK component-registry story that [[#X Activity Log (Nov 2026)|WebMCP]] sits on the agent end of.
 
 ## Notable Quotes & Statements
 

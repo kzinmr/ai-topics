@@ -3,7 +3,7 @@ title: Philipp Schmid
 type: entity
 handle: "@_philschmid"
 created: 2026-04-10
-updated: 2026-11-03
+updated: 2026-11-15
 tags:
   - person
   - model
@@ -197,3 +197,7 @@ Schmid's X activity (@_philschmid) typically covers:
 6. **Developer education** — Tutorials, guides, and workshop materials for the broader AI development community
 7. **Industry commentary** — Thoughts on the shift from model-centric to infrastructure-centric AI development, the economics of AI deployment
 8. **Gemini API CLI + agent skill** (Nov 3, 2026): announced the `gemini-api-cli` skill for the experimental Gemini API CLI — "It gives your agent a CLI to call Gemini models (images, TTS, video, files) without writing one-off scripts" (`npx skills add google-gemini/gemini-skills --skill gemini-api-cli`). See [[events/gemini-api-cli-agent-skill]].
+
+## X Activity Log (Nov 2026)
+
+- **Nov 12 — Gemini 4 Hydrogen hands-on endorsement**: Schmid posted a long-form endorsement of the day's [[concepts/gemini/gemini-4-hydrogen|Gemini 4 Hydrogen]] launch — "Today, we're shipping Gemini 4 Hydrogen in @GoogleAIStudio, the Gemini API! It became my daily driver for day-to-day fast execution, research loops and is a great subagent, paired with Carbon. Hydrogen is great at the fast code-to-test loops." He cited **outperforming Argon on Artificial Analysis**, **57% on Terminal-Bench 4.0**, **four thinking levels (low / medium / high / xhigh)**, and **$1.50/$7.50 pricing with a free tier in Google AI Studio and the Gemini API**, plus rollout to paid Google AI Pro/Ultra subscribers in Antigravity, the Gemini App and Google Search. His follow-up reply pointed at the AI Studio playground (`?model=gemini-4-hydrogen`) and the official "What's new & migration guide" docs. Note the framing tension worth keeping: Schmid positions Hydrogen as a **subagent / fast code-to-test executor alongside Carbon**, while Willison's pelican-grid testing reports a **stark quality drop** vs Carbon/Argon — Schmid's pitch is throughput-per-dollar, not frontier quality. See `raw/articles/blog.google--introducing-gemini-4-hydrogen.md`.

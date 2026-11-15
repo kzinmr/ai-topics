@@ -2,7 +2,7 @@
 title: "Gemini 4 Hydrogen"
 type: concept
 created: 2026-11-13
-updated: 2026-11-13
+updated: 2026-11-15
 tags:
   - model
   - gemini
@@ -30,6 +30,22 @@ related:
 
 Google describes Hydrogen as a **fast, disciplined execution model** for everyday work — writing code, running tests, verifying changes — either standing alone or pairing with the frontier siblings [[concepts/gemini/gemini-4-carbon|Carbon]] and [[events/2026-10-01-gemini-4-argon-release|Argon]] as "the high-efficiency execution engine in multi-model workflows." Most notably, **Hydrogen is the new Gemini free-tier model and the model that powers AI features in Google Search**.
 
+## Quality
+
+Willison's standard pelican-SVG generation test, run across **all three Gemini 4 family members at all three supported effort levels** (full comparison grid), shows a **"quite stark" quality drop for Hydrogen** relative to Carbon/Argon — remarkable given how close the three models currently are in price.
+
+## Google DevRel framing (contested: quality)
+
+Philipp Schmid (Google DeepMind AI DevRel, @_philschmid) published a hands-on endorsement the same day, supplying numbers absent from Willison's write-up and a **different quality frame** — retained here rather than harmonized:
+
+- **Outperforms Argon on Artificial Analysis** (Schmid's claim; contradicts Willison's stark-drop reading of the same family — the two are measuring different tasks: preference arena vs Willison's SVG generation grid).
+- **57% on Terminal-Bench 4.0** — Hydrogen's headline agentic-terminal score.
+- **Four thinking levels: low / medium / high / xhigh** (Willison's grid covered three effort levels).
+- **Intended role**: "a great **subagent**, paired with Carbon", strong at **"fast code-to-test loops"** and "day-to-day fast execution / research loops" — i.e. a high-volume worker under a frontier orchestrator, not a frontier replacement.
+- **Distribution**: free tier in Google AI Studio and the Gemini API; paid rollout to **Google AI Pro and Ultra** subscribers in **Antigravity, the Gemini App, and Google Search**.
+
+The disagreement is about *which axis matters*, not about the price table. Treat "beats Argon on AA" as a vendor-DevRel claim on a preference metric and Willison's "stark drop" as a task-specific generative-geometry result.
+
 ## Pricing (the confusing part)
 
 | Model | Dates | Input ($/M) | Cached input | Output ($/M) |
@@ -46,10 +62,6 @@ Observations from Willison's analysis:
 - **Hydrogen is only a 25% discount today** — the "cheap model" label only makes sense after Dec 1, when it becomes a **75% discount** vs the doubled sibling prices.
 - **Hydrogen is still expensive for the budget tier**: Claude Haiku 5.5 and GPT-6 Luna are both $0.10/$0.50 per M — **Hydrogen is 15x that** on input. This places Google's "cheap" tier far above the Anthropic/OpenAPI budget floor (cf. [[entities/gemini-decision-1]] at $0.10/MTok).
 
-## Quality
-
-Willison's standard pelican-SVG generation test, run across **all three Gemini 4 family members at all three supported effort levels** (full comparison grid), shows a **"quite stark" quality drop for Hydrogen** relative to Carbon/Argon — remarkable given how close the three models currently are in price.
-
 ## Related
 
 - [[concepts/gemini/index]] — family overview
@@ -61,3 +73,4 @@ Willison's standard pelican-SVG generation test, run across **all three Gemini 4
 
 - Simon Willison, "Release: llm-gemini 0.37" (Nov 12, 2026) — https://simonwillison.net/2026/Nov/12/llm-gemini/ (raw: `raw/articles/simonwillison.net--2026-nov-12-llm-gemini--4a05ae5e.md`)
 - Google's Gemini 4 launch materials (as quoted in the above)
+- Philipp Schmid (@_philschmid), Nov 12 2026 launch endorsement thread — https://x.com/_philschmid/status/2120940382477517000 (AI Studio playground + "What's new & migration guide" docs: https://aistudio.google.com/docs/whats-new-gemini-4-hydrogen) (raw: `raw/articles/blog.google--introducing-gemini-4-hydrogen.md`)

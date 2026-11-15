@@ -167,7 +167,7 @@
 - [[entities/chris-fonnesbeck]] — Chris Fonnesbeck
 - [[entities/chris-hayduk]] — Chris Hayduk
 - [[entities/chris-olah]] — Chris Olah
-- [[entities/chris-tate]] — Chris Tate; X activity Aug 2026: fx (tiny open Zig coding-agent harness), Knip (JS/TS dead-code tool), Vercel "Is Agentic" AI-agent readiness score (Aug 21)
+- [[entities/chris-tate]] — Chris Tate; Vercel engineer (json-render, agent-browser); X activity through Nov 2026: fx (tiny open Zig coding-agent harness), Knip, Vercel "Is Agentic" readiness score, scriptc/tsc-ts, agent-desktop, WebMCP via Vercel UI SDK, SPEC-01/HARDWARE
 - [[entities/christian-catalini]] — Christian Catalini — Lightspark co-founder, MIT economist; "The Only Moat That Survives AI": measurable things get automated, open-weight ~4mo lag flat, value moves to shipping judgment (Aug 2026)
 - [[entities/claris-filemaker-agentic-coding]] — Claris FileMaker Agentic Coding Strategy
 - [[entities/claude-code]] — Claude Code; Auto Mode default for Pro/Max/Team (Aug 14) + Trajectory Labs eval (13.6% human refusal vs 89% auto-blocked; 0/720 prompt-injection attacks) (Aug 2026); enterprise token-cost case study Spotify Shunt/Honk → [[concepts/claude-code-token-cost-optimization]] (Nov 2026)
@@ -693,7 +693,7 @@
 - [[entities/phil-schmid]] — Philipp (Phil) Schmid
 - [[entities/phil-trammell]] — Phil Trammell — Head of Economics at Epoch AI; AGI economics, labor-capital complementarity, scenario modeling (June 24)
 - [[entities/philiplaine-com]] — Philip Laine
-- [[entities/philipp-schmid]] — Philipp Schmid; enriched with Gemini Android Computer Use guide — screenshot→model→function_call→ADB loop, 10 mobile actions, ADBBridge class, setup via shell script (June 25)
+- [[entities/philipp-schmid]] — Philipp Schmid; Google DeepMind AI DevRel — Gemini Android Computer Use guide (screenshot→model→function_call→ADB loop, ADBBridge), gemini-api-cli agent skill, Nov 12 Gemini 4 Hydrogen hands-on endorsement (Terminal-Bench 4.0 57%, 4 thinking levels, $1.50/$7.50)
 - [[entities/pi]] — Pi (pi-coding-agent); Zach Mueller's "Model Memo" deep research pipeline migration from Claude Code to Pi with GLM-5.2 + Kimi K2.7 Code (July 13)
 - [[entities/pi-serini]] — PI-SERINI
 - [[entities/piero-kauffmann]] — Piero Kauffmann
