@@ -1,0 +1,62 @@
+{
+  "run_id": "20261115T101035Z",
+  "triaged_at": "2026-11-15T10:12:00+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 2,
+  "classified": [
+    {
+      "message_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>",
+      "subject": "Open-source AI without Jensen",
+      "date": "2026-11-14",
+      "source": "Robotic (Nato Lambert, publication_id=48206)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "relevance": true,
+      "importance": "high",
+      "topics": ["open-source-ai", "nvidia-dependency", "ai-ecosystem"],
+      "wiki_targets": [
+        "events/nvidia-ceo-transition-2026.md",
+        "entities/nvidia.md",
+        "entities/open-source-ai.md (if exists)",
+        "concepts/open-source-llm-movement.md"
+      ],
+      "scrape_urls": [
+        "https://open.substack.com/pub/robotic/p/open-source-ai-without-jensen"
+      ],
+      "notes": "Core AI-relevant essay from Robotic newsletter. Only one canonical article URL identifiable; the rest of the 20 links are Substack app/like/comment/share redirect wrappers. nato-lambert entity likely exists — check before creating.",
+      "blocked": false
+    },
+    {
+      "message_id": "<20261114.190854.f031f60f@mta16>",
+      "subject": "Jensen Huang Is Out. Nvidia's Export Questions Remain.",
+      "date": "2026-11-14",
+      "source": "beehiiv newsletter (unidentified — all links are opaque link.mail.beehiiv.com redirects)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-jensen-huang-is-out-nvidia-s-export-questions-remain.md",
+      "relevance": true,
+      "importance": "critical",
+      "topics": ["jensen-huang-resignation", "nvidia", "chip-export-controls", "ai-policy", "ai-governance"],
+      "wiki_targets": [
+        "events/nvidia-ceo-transition-2026.md",
+        "entities/jensen-huang.md",
+        "entities/nvidia.md",
+        "concepts/chip-export-controls.md"
+      ],
+      "scrape_urls": [],
+      "notes": "Direct continuation of the ongoing critical event (Jensen Huang ouster, first reported 2026-11-12, already ingested via WSJ/TechCrunch/Wired/Gary Marcus raws + entities/jensen-huang.md + events/nvidia-ceo-transition-2026.md). Export-controls angle adds policy dimension. HOWEVER: all 20 links are beehiiv v2 redirect wrappers that cannot be resolved without redirect-following — process_email.py truncated/mangled them. Cannot hand concrete scrape URLs to newsletter-wiki-ingest.",
+      "blocked": true,
+      "blocked_reason": "beehiiv redirect URLs unresolvable from checkpoint; downstream ingest should either follow redirects at scrape time or skip and rely on existing raw articles covering the same event."
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "critical": 1,
+    "high": 1,
+    "low": 0,
+    "irrelevant": 0,
+    "blocked": 1
+  },
+  "recommendations": [
+    "newsletter-wiki-ingest: scrape Robotic post https://open.substack.com/pub/robotic/p/open-source-ai-without-jensen and update events/nvidia-ceo-transition-2026.md + an open-source-AI concept/entity page.",
+    "Jensen Huang export-questions newsletter: do NOT fabricate article content from opaque redirects. Event coverage already exists from 2026-11-12/13/14 raws; verify whether any beehiiv link resolves (curl -L) before ingesting, otherwise mark digest as triaged-skip.",
+    "Pipeline defect: process_email.py emitted truncated ('...') Substack tokens and raw beehiiv redirect URLs. Titles are all 'Link N'. Recommend improving link extraction in ~/.hermes/scripts/process_email.py (resolve redirects server-side, dedupe app-link/share/comment wrappers)."
+  ]
+}
