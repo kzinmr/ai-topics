@@ -1,0 +1,20 @@
+{
+  "archived_at": "2026-11-15T10:24:20.998066+00:00",
+  "triage_run_id": "20261113T100036Z",
+  "source": "blog",
+  "summary_ja": "14件のblog candidates + 6件のunsaved_articlesを判定。最大のニュースはNVIDIA公式リリースによるJensen Huang CEO辞任・Colette Kress暫定CEO就任（一次資料、イベントページ新規作成が妥当）。Gemini 4 Hydrogen（Simon Willisonのllm-gemini 0.37リリース記事）はconcepts/gemini/に欠落しており具体価格データを含むためtake。Modalの「burst, don't reserve」はエージェントサンドボックス課金設計の一次資料でmodal-sandboxes.md実質化。Gary Marcusの辞任論評とGeorge Hotzの「First Strike」（ASI先制攻撃論）は既存エンティティの明確なギャップ。Pluralistic Uber労働クラッシュ、idialloのAI選定皮肉、daringfireball経由の議会証言はreference。残7件＋unsaved 6件は非AIまたは本文抽出不可のためskip。",
+  "decisions": [
+    {
+      "item_id": "blog-unsaved-batch",
+      "source": "blog",
+      "source_name": "unsaved_articles",
+      "title": "unsaved_articles 6件（Reuters/WSJ Huang affair、Truth Social、YC library、construction-physics、Gary Marcus/Eli Lilly）",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ unsaved_articlesは本文抽出不可のためtake不可（BODY-READING MANDATE）。Reuters/WSJのHuang不倫続報とTruth Socialの後継者コメントはpaywalled/非抽出で、take（blog-12）が作成するNVIDIA CEO transitionイベントページの続報ラインから言及済みで足りにくい。construction-physics（建設物理ブログ）とGary MarcusのEli Lilly/Amodei医療主張批判は今回本文未取得のため保留（後日再評価候補）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles — 抽出不可）"
+    }
+  ]
+}
