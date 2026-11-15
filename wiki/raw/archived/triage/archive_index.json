@@ -1071,6 +1071,7 @@
     "https://link.mail.beehiiv.com/v1/c/zoNWi2fPAw%2B3jk%2F5jmKFZ34gSyeWWYpzBcd5TYYiLX6vX%2Fczwio133G8haXV%0AmNrJ1R%2Fp%2FyYOB%2Bfigtyif79CF9shSC8tk3rQrFXKOQ0L%2BCwdyUyLVSV%2BG7rQ%0AEQRmpUyhEEMJmzuL3MSsvdAicnudXmn1fPZewdD7NuT36awtVr33nbQbi17x%0A9a8woMrwjWKWoQmUOWhGB3G2o%2BXgKBWbKg%3D%3D%0A/e059055f47a3bef4",
     "https://link.mail.beehiiv.com/v2/c/",
     "https://link.mail.beehiiv.com/v2/c/...",
+    "https://link.mail.beehiiv.com/v2/c/... (20 tracking URLs)",
     "https://link.mail.beehiiv.com/v2/c/... (expired/Cloudflare challenge)",
     "https://link.mail.beehiiv.com/v2/c/... (link 10)",
     "https://link.mail.beehiiv.com/v2/c/... (link 11)",
@@ -2442,6 +2443,7 @@
     "https://substack.com/redirect/ef0fd5d1-db2c-41db-b4d7-9a98032d5206?j=eyJ1Ij...tf6E",
     "https://substack.com/redirect/f031179a-1089-4e41-9f5e-2048a411c309?j=eyJ1Ij...tf6E",
     "https://substack.com/redirect/fdd685f2-331e-4661-a348-60ecc2d13a83?j=eyJ1Ij...tf6E",
+    "https://substack.com/redirect/{uuid}",
     "https://superlinked.com/blog/serve-5-models-one-gpu",
     "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
     "https://susam.net/do-not-roll-your-own.html",
@@ -2796,6 +2798,7 @@
     "https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21",
     "https://www.interconnects.ai/p/lessons-from-the-hacks",
     "https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs",
+    "https://www.interconnects.ai/p/open-source-ai-without-jensen",
     "https://www.interconnects.ai/p/state-of-the-blog-mid-2026",
     "https://www.jeffgeerling.com/blog/2026/apply-lut-color-grade-with-ffmpeg/",
     "https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/",
@@ -3223,7 +3226,16 @@
     "https://youtu.be/5wks1W-auKY",
     "https://youtu.be/Dqp_b8GHLXU?t=1074",
     "https://youtu.be/zBROTIiHusc",
-    "substack app-link / redirect / profile links"
+    "substack app-link / redirect / profile links",
+    "substack.com/ui-wrapper (Link 1)",
+    "substack.com/ui-wrapper (Link 10)",
+    "substack.com/ui-wrapper (Link 2)",
+    "substack.com/ui-wrapper (Link 4)",
+    "substack.com/ui-wrapper (Link 5)",
+    "substack.com/ui-wrapper (Link 6)",
+    "substack.com/ui-wrapper (Link 7)",
+    "substack.com/ui-wrapper (Link 8)",
+    "substack.com/ui-wrapper (Link 9)"
   ],
-  "updated": "2026-11-15T10:27:38.502973+00:00"
+  "updated": "2026-11-15T10:38:53.989587+00:00"
 }

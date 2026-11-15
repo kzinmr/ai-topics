@@ -1,0 +1,152 @@
+{
+  "archived_at": "2026-11-15T10:38:53.988833+00:00",
+  "triage_run_id": "20261115T101035Z",
+  "source": "newsletter",
+  "summary_ja": "2通（uid=911 Robotic/Interconnects, uid=912 beehiiv）をトリアージ。Robotic の「Open-source AI without Jensen」（Nathan Lambert, pub 48206 / post 224815412）は interconnects.ai から本文19段落を全文抽出でき、Jensen Huang 辞任が 米国 open-model エコシステムの後援者を失ったという未収録の分析を含み take 3件（NVIDIA CEO 移行イベントページの open-model 節追加、Dylan Patel 引用、Nemotron/Inkling 2 Small/Kimi K3.1 Pro 勢力図）＋ reference 4件。beehiiv 側「Jensen Huang Is Out. Nvidia's Export Questions Remain.」は全20リンクが送信15時間後に HTTP 403 （トークン失効）で本文取得不能、トピックは既存の events/nvidia-ceo-transition-2026.md と concepts/china-mofcom-announcement-48-export-controls.md が詳細カバー済みのため skip。同一トピック（Jensen 辞任）は 11-13 blog-ingest / 11-12 trending-topics / 11-14 x-accounts-scan で処理済みだが、Lambert の open-model 視点だけが明確なギャップだった。",
+  "decisions": [
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-13",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Mira の $40B ラウンドと hyperscaler 同盟論",
+      "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ open-weight 陣営の資金・政治基盤に関する具体言及: 「the next round at a $40B valuation is a done deal, but that won't be enough to keep pace with the closed frontier」「most likely allies ... Zuckerberg, Andy Jassy, or Satya」。entities/mira-ai.md が実体ページとして存在するため新規ページは不要。Jensen 辞任直後の open-weight 勢力再編という 文脈情報なので、既存ページへ1-2行の加筆にとどめる（本判定のみでの page creation は閾値未達）。（実体ページは entities/mira-murati.md ＝ 既存、Mira Murati の venture 記述あり）",
+      "candidate_wiki_path": "entities/mira-murati.md",
+      "body_excerpt": "# Open-source AI without Jensen\n**Subject:** Open-source AI without Jensen\n**Publication:** Interconnects / Robotic — Nathan Lambert (@natolambert)\n**Date:** 2026-11-14\n**Audio:** 7:28 voiceover"
+    },
+    {
+      "item_id": "<20261114.190854.f031f60f@mta16>-1..20",
+      "source": "newsletter",
+      "source_name": "beehiiv newsletter uid=912 (unidentified)",
+      "title": "Jensen Huang Is Out. Nvidia's Export Questions Remain.（全20リンク）",
+      "url": "https://link.mail.beehiiv.com/v2/c/... (20 tracking URLs)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-jensen-huang-is-out-nvidia-s-export-questions-remain.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★ 全20リンクが link.mail.beehiiv.com/v2/c/... の難読化トラッキング URL で、実体 URL を特定できない。送信 2026-11-14 19:08 UTC から約15時間経過。curl -L 実測で HTTP 403（beehiiv トラッキングトークン失効パターン、6/7・6/14 と同型）。inbox pre-triage も importance=critical / blocked=true / scrape_urls=[] と判定しており、本文はどの経路でも取得不能。件名から推測されるトピック（Jensen Huang 辞任 + NVIDIA 輸出管理問題）は events/nvidia-ceo-transition-2026.md が NVIDIA 公式 press release・議会招致（Mast/Moolenaar/Crawford）・Gary Marcus 市場反応・従業員請願（Wired）まで詳細 カバー済みで、輸出管理の政策角度も concepts/china-mofcom-announcement-48-export-controls.md（2026-11-15 更新、中国初の frontier-AI 輸出規制）と entities/jensen-huang.md が担保。不透明リダイレクトから本文を捏造しない方針に 従い skip。後日同じ publication が inbox summary 付きで再送された場合に再評価する。",
+      "candidate_wiki_path": "events/nvidia-ceo-transition-2026.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Jensen Huang Is Out. Nvidia's Export Questions Remain.\n**Collected:** 2026-11-15T10:10:34.650994+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/9cdb3371e624b8c638e8614b30ebbb9d452bbe803619cf3a215115294698e2f5c900ad"
+    },
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Link 1 (Substack UI chrome)",
+      "url": "substack.com/ui-wrapper (Link 1)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Substack 標準 UI リンクで Wiki 価値なし。Substack redirect/2 OAuth トークンリンク（メールセッション認証必須・解決不能）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Open-source AI without Jensen\n**Collected:** 2026-11-15T10:10:33.580438+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    },
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-10",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Link 10 (Substack UI chrome)",
+      "url": "substack.com/ui-wrapper (Link 10)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Substack 標準 UI リンクで Wiki 価値なし。play_audio=true / #play ポッドキャスト音声 UI（7:28 voiceover）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Open-source AI without Jensen\n**Collected:** 2026-11-15T10:10:33.580438+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    },
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-17..20",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Link 17-20 (Substack UUID redirect 4件)",
+      "url": "https://substack.com/redirect/{uuid}",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ substack.com/redirect/<uuid>?j=eyJ1... 形式の UUID トラッキングリンク（メールセッション認証必須）。web_extract は 必ず失敗するため即時スキップ。ポスト本文（Link 3 で全文取得済み）が既に全キュレーション内容を内包している。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Open-source AI without Jensen\n**Collected:** 2026-11-15T10:10:33.580438+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    },
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Link 2 (Substack UI chrome)",
+      "url": "substack.com/ui-wrapper (Link 2)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Substack 標準 UI リンクで Wiki 価値なし。Substack redirect/2 OAuth トークンリンク（メールセッション認証必須・解決不能）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Open-source AI without Jensen\n**Collected:** 2026-11-15T10:10:33.580438+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    },
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-4",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Link 4 (Substack UI chrome)",
+      "url": "substack.com/ui-wrapper (Link 4)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Substack 標準 UI リンクで Wiki 価値なし。substack.com/@natolambert 著者プロフィールリンク（低価値）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Open-source AI without Jensen\n**Collected:** 2026-11-15T10:10:33.580438+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    },
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-5",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Link 5 (Substack UI chrome)",
+      "url": "substack.com/ui-wrapper (Link 5)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Substack 標準 UI リンクで Wiki 価値なし。submitLike=true いいねボタン UI",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Open-source AI without Jensen\n**Collected:** 2026-11-15T10:10:33.580438+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    },
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-6",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Link 6 (Substack UI chrome)",
+      "url": "substack.com/ui-wrapper (Link 6)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Substack 標準 UI リンクで Wiki 価値なし。action=post-comment / comments=true コメント欄 UI",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Open-source AI without Jensen\n**Collected:** 2026-11-15T10:10:33.580438+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    },
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-7",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Link 7 (Substack UI chrome)",
+      "url": "substack.com/ui-wrapper (Link 7)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Substack 標準 UI リンクで Wiki 価値なし。action=share / triggerShare=true シェアボタン UI",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Open-source AI without Jensen\n**Collected:** 2026-11-15T10:10:33.580438+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    },
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-8",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Link 8 (Substack UI chrome)",
+      "url": "substack.com/ui-wrapper (Link 8)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Substack 標準 UI リンクで Wiki 価値なし。restack-comment UI（本文は Link 3 と同一記事を指す）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Open-source AI without Jensen\n**Collected:** 2026-11-15T10:10:33.580438+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    },
+    {
+      "item_id": "<20261114122315.3.f8c34b49c48b1b16@mg-d1.substack.com>-9",
+      "source": "newsletter",
+      "source_name": "Robotic / Interconnects (Nathan Lambert, pub_id=48206)",
+      "title": "Link 9 (Substack UI chrome)",
+      "url": "substack.com/ui-wrapper (Link 9)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-14-open-source-ai-without-jensen.md",
+      "recommended_action": "skip",
+      "reason_ja": "★ Substack 標準 UI リンクで Wiki 価値なし。redirect=app-store-no-desktop / utm_campaign=email-read-in-app（アプリ誘導）",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-14\n**Subject:** Open-source AI without Jensen\n**Collected:** 2026-11-15T10:10:33.580438+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    }
+  ]
+}
