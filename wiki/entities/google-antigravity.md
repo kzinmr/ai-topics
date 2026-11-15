@@ -1,7 +1,7 @@
 ---
 title: Google Antigravity
 created: 2026-05-23
-updated: 2026-10-19
+updated: 2026-11-15
 type: entity
 tags:
   - entity
@@ -211,6 +211,18 @@ Philipp Schmid surfaced the Antigravity **"Choose a model"** documentation (http
 **Additional (non-customizable) stack models.** Antigravity also wires in fixed models for sub-tasks — e.g. **Nano Banana 2** powers the generative image tool (UI mockups, images to populate pages/apps, system and architecture diagrams). These are not user-selectable.
 
 Notable signals: (a) Antigravity is explicitly a **multi-provider frontier harness** — Anthropic Claude and an open-weight GPT-OSS 120B sit alongside DeepMind Gemini; (b) the Claude 4.6 tier and GPT-OSS 120B are marked for **removal on November 2, 2026**, showing rapid third-party model churn on the platform; (c) Google's premium models are gated behind paid Pro (non-trial) and Ultra tiers, while free users keep older Claude models and GPT-OSS.
+
+## November 2026 — /teamwork GA results (Google Research)
+
+On **November 13, 2026** Google Research (Vahab Mirrokni) published results from Antigravity's **`/teamwork`** multi-agent system, now exposed externally alongside `/boost` (HN 204 pts). Teams at Google and partner institutions used Gemini 4 Argon / Carbon / Hydrogen with `/teamwork` to attack problems open for years across information theory, formal verification, molecular structure discovery and kernel optimization, plus production infrastructure gains.
+
+Two design choices address known long-horizon-agent failure modes:
+1. **Dedicated falsifiers** — parallel candidate exploration is verified against unmodified ground truth (Lean 4 proof checker, real test suites, execution simulators, web search, hardware counters) rather than model self-assessment.
+2. **Context partitioned by construction** — each specialized agent receives only the exact files and tools its step needs; coordinators hand off to fresh successors while critics/auditors challenge, preventing attention dispersion over multi-day tasks.
+
+This is the same "verification + context partition" pattern argued for in [[concepts/formal-verification-llm-agents]] and adjacent to METR-style long-horizon task framing.
+
+Raw: `raw/articles/2026-11-15_google-antigravity-teamwork.md`
 
 ## Related
 

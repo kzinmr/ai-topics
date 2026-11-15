@@ -374,18 +374,22 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 - Personal reflections on AI's trajectory
 - Policy commentary on open vs. closed AI
 
+## "Open-source AI without Jensen" (Nov 14, 2026) — HN reception
+
+The Interconnects analysis [[events/nvidia-ceo-transition-2026|post-Jensen open-model ecosystem]] reached the HN front page on November 14 (item 50496590, 26 pts), where the discussion largely accepted Lambert's framing that **Jensen Huang functioned as a political shield for the open-weight ecosystem** ("It's not money, it's talent" — Dylan Patel, ChinaTalk emergency podcast) and asked what happens once that shield is removed under a Kress interim leadership with no political capital of its own.
+
 ## Related
 
 - [[concepts/allen-institute-ai]] — Current employer, OLMo project
 -  — Previous employer, Zephyr and TRL work
 - [[concepts/post-training/rlhf]] — Core research area, book author
 - [[concepts/post-training/rlhf-dpo-preference]] — Direct Preference Optimization, Zephyr
-- [[concepts/post-training]] — His primary research focus
+- [[concepts/post-training/_index]] — His primary research focus
 - [[entities/teknium]] — Fellow post-training researcher, Nous Research co-founder
 -  — Co-created reward model evaluation benchmark-  — Advocate for fully open AI development- [[concepts/model-distillation]] — Fundamental ML technique; Lambert's "Distillation Panic" defends it from criminalization
 - [[concepts/ai-api-abuse]] — Term Lambert coined to replace the misleading "distillation attacks" framing
 - [[events/distillation-attacks-2026]] — Anthropic's accusations that prompted Lambert's response
-- [[concepts/post-training]] — His newsletter and podcast-  — Open post-training model family he leads
+- [[concepts/post-training/_index]] — His newsletter and podcast-  — Open post-training model family he leads
 ## Key Links
 
 - **Website**: [natolambert.com](https://www.natolambert.com/)

@@ -1,7 +1,7 @@
 ---
 title: "AI Infrastructure Circular Financing"
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-11-15
 type: concept
 tags:
   - hardware
@@ -116,6 +116,19 @@ A July 2026 Hacker News discussion of the IO Fund article (365 points, 167 comme
 The debate connects to larger questions in [[concepts/ai-industry-economics|AI industry economics]]: Is AI infrastructure spending a speculative bubble, or is it rational investment in foundational technology? The circular financing model intensifies this question because it removes the market signal that would normally constrain overinvestment — if the supplier funds the buyer, price signals lose their disciplining function.
 
 Optimists note that unlike the dot-com era, AI infrastructure has demonstrated revenue-generating capability. Major AI labs (OpenAI, Anthropic, Google DeepMind) and enterprises are paying real money for GPU compute. The question is whether current spending levels are sustainable, and what happens if the revenue growth curve flattens before the debt comes due.
+
+## November 2026: WSJ Kress profile — "engineered scarcity" evidence
+
+On **November 14, 2026**, following Jensen Huang's resignation, a *Wall Street Journal* profile of interim CEO **Colette Kress** (reported via TechSpot/TechPowerUp, HN 425 and 1075 pts) added the strongest public evidence yet that Nvidia's circular financing was deliberate demand engineering rather than passive vendor financing:
+
+- Nvidia **pushed for more financing deals in mid-to-late 2026 specifically to absorb an oversupply of TSMC wafers** and keep GPU prices high — i.e. it manufactured demand against its own "avalanche" of ordered semiconductors.
+- Kress privately questioned the scale of the deals (valuation of guarantees, ROI, which deals to pursue) and tried to rein in **Nico Caprez** — Huang's son-in-law — who had been offering upstart cloud providers and data-center developers financing to convert them into long-term customers. Huang allegedly called Kress "a deer in headlights" when she pushed back.
+- Nvidia subsequently slowed, downsized or paused several deals, including an **OpenAI deal that originally included a $250B backstop** for the world's largest data center.
+- Huang's motivation per the report: worry over Nvidia's stock-market valuation after its monthly stock multiple fell behind other big-tech names.
+
+**HN reception**: a large contingent argued this is ordinary, legal *vendor financing* (Cisco did the same in 1998-2000 before crashing); the counter-position is that unlike a repayable loan, Nvidia took **equity**, so recorded cash flow is partly its own cash returning — plus unverified reports of sold chips sitting unused in warehouses (possible channel-stuffing) and take-it-now-or-lose-next-gen pressure. Both threads explicitly invoke Enron comparisons (which Huang and Kress had defended against) and the 2001 Cisco parallel.
+
+Raw: `raw/articles/2026-11-15_wsj-nvidia-circular-financing-kress.md`
 
 ## Related Concepts
 

@@ -978,7 +978,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2347 pages)
+## Concepts (2350 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
@@ -989,6 +989,7 @@
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
 - [[concepts/ai-cost-of-js-frameworks|AI Cost of JS Frameworks]] – per-framework AI coding token-cost benchmark (Nolan Lawson; Astro best, Angular worst)
 - [[concepts/alphaproof-code]] — DeepMind agentic framework; first formal verification of Signal protocol implementation code (Lean, Gemini Carbon)
+- [[concepts/ambient-surveillance-privacy-redefinition]] — Ambient surveillance and the redefinition of privacy — EFF (Thorin Klosowski, Nov 2026): smart glasses, Watch Audio Intelligence and Bee pendants shift one wearer's privacy choice onto bystanders, the second industry-led redefinition of privacy after "personal choice" (HN 558)
 - [[concepts/anthropic/claude-code-projects]] — Claude Code Projects redesigned (Sep 17 2026, Nov 2026 beta): goal-briefed coordinator over parallel Claude Code cloud threads with shared project memory and merge-conflict collision handling
 - [[concepts/chatgpt-html-preview-account-takeover]] — ChatGPT HTML Preview account takeover (Parameter Labs, Oct 2026) — share link → MathLive postMessage/innerHTML injection → YouTube oEmbed CSP bypass → JS as chatgpt.com; private-chat exfil + account actions; P1 fixed Oct 26, $5k bounty (HN 335)
 - [[concepts/checkpoint-forensics]] — Checkpoint Forensics — reads the training GPU class out of released model weights via SM-count-dependent init artifacts; 6 Chinese frontier models (DeepSeek V4, Kimi K3, MiniMax M3, Ling 3.1) fingerprint as export-controlled Blackwell, 49–1,385 sigma (Nov 12, 2026)
@@ -1000,8 +1001,10 @@
 - [[concepts/fireworks-notion-transcript-breach]] — Notion AI transcript exposure via Fireworks AI breach; AI supply-chain incident-response failures
 - [[concepts/frontier-model-usage-policy-enforcement-2026-10]] — Anthropic usage-policy enforcement controversies (Oct 2026) — blocks on 'anything touching training larger models' (HN 367) + video-game reverse-engineering refusals (HN 149); classifier false positives on legitimate ML/security work
 - [[concepts/gemini-connected-apps-human-review-reversal]] — Google quietly reversed its 2023 no-human-review promise; probabilistic ambient Drive/Gmail ingestion into human annotation
+- [[concepts/google-search-ai-free-schools-cutoff]] — Google Search cutoff for AI-free schools — NPR (Nov 2026): Google reportedly disables Search on school devices in districts that opt out of AI features, claiming Search and AI Overview cannot be separated (HN 194)
 - [[concepts/gvisor]] — gVisor — Go userspace application kernel (Sentry) sandbox; donated by Google to CNCF at KubeCon Nov 11 2026; Modal/Ant Group/Tines join maintainers; Modal runs 40M containers/day, 25ms boot, nvproxy GPU ioctl validation, cuda-checkpoint snapshots
 - [[concepts/hackerbooks|HackerBooks]] – HN-comment-driven book recommendation service (HackerTube spin-off, HN 1404pts, 2026-11-01)
+- [[concepts/lovable-vibe-coding-data-exposure]] — Lovable vibe-coding data exposure — Crissy Field/Handelsblatt audit of 159,041 Lovable projects: 24,664 Supabase-backed sites leak DB rows without login; passport details and 200K+ private messages exposed (Nov 2026, HN 851)
 - [[concepts/meta-tactus-glove]] — Meta Tactus (Reality Labs) — textile haptic+pose glove for dexterity data: 1.5mm fingertip stackup 3D-knit, empirically-placed capacitive tactile sensors, calibrated fingertip force, IMU-fused pose tracking through hand-object occlusion (Import AI 480, Nov 2026)
 - [[concepts/physical-superintelligence-aaronson-ambainis]] — Physical Superintelligence (PSI) — internal research system on a non-public Anthropic model proved the Aaronson-Ambainis conjecture (open since 2008); complete proof by day 3, accepted by Lean, result improved twice on related open problems (Import AI 480, Nov 2026)
 - [[concepts/project-suncatcher]] — Project Suncatcher (Google orbital TPU moonshot) — Oct 30, 2026 'Hello World': first AI response from data-center-class TPU in orbit (Gemma 4 haiku, Svalbard downlink); thermal/radiation tests, twin satellites 2027

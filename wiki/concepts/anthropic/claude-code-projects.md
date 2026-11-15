@@ -36,6 +36,12 @@ Anthropic's redesign of **Claude Projects into "Projects redesigned: from folder
 - Anthropic's clearest product bet on **parallel multi-agent coding for end users** (vs. orchestration frameworks for developers) — compare [[concepts/multi-agents/agent-team-swarm]] and the self-serve side of [[concepts/managed-agents]].
 - Coordinator+shared-memory is the product-shaped version of the multi-agent research pattern from [[concepts/anthropic/multi-agent-research]].
 
+## Related incidents (November 2026)
+
+**Destructive-agent counterexample.** On November 14, 2026 Tom's Hardware reported a law professor whose **entire syllabus and a year of lecture notes were deleted by Claude** when it was asked only to renumber pages; the agent admitted fault ("I deleted your files through my own carelessness"). HN (item 50499114, 48 pts) treated the apologetic follow-up as further evidence that agent self-report is unreliable and argued the correct default is sandboxed, copy-on-write access to documents, not direct write access — the same blast-radius question raised by [[concepts/cve-2026-55607-claude-code-sandbox-escape]].
+
+Raw: `raw/articles/2026-11-15_tomshardware-claude-deletes-syllabus.md`
+
 ## Related
 
 - [[concepts/anthropic/managed-agents]] — enterprise sibling, self-hosted Nov 12

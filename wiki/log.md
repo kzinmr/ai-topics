@@ -1,5 +1,24 @@
 # Wiki Log
 
+
+## [2026-11-15] trending-topics | WSJ Nvidia circular-financing evidence, Lovable audit, ambient-surveillance essay (3 new, 5 updates, 10 raw)
+
+> `trending-topics` cron (2026-11-15 12:00 UTC, Sunday). Discovery: HN Algolia front-page + keyword pass (`hn_algolia_supplement.py --days 2 --min-points 20`) plus the weekend points-only sweep (`points>100`, last 24h, 23 stories). 10 primary sources fetched (9/10 OK; techpowerup returned 239 chars of chrome -> TechSpot used as the WSJ-report carrier), 10/10 Algolia comment trees mined.
+> Already covered by sibling jobs today and therefore NOT re-created: Claude Code Projects, agweb, dual-DGX GLM-5.3 serving, end-to-end 4-bit training, DRAM price-fixing suit (all active-crawl 11:00); Nvidia CEO transition + Nathan Lambert post-Jensen analysis (newsletter-wiki-ingest 10:10); Replit microVM sandbox engine (hot-post 09:30); Unsloth/Qwen3.8 (health-fix 11-14).
+
+**New pages (3):**
+- `concepts/lovable-vibe-coding-data-exposure.md` — Crissy Field / Handelsblatt audit: 159,041 Lovable projects crawled, 34,545 Supabase-backed, 24,664 leaking DB rows at load without login, 7,403 with email-bearing tables; passport data and 200K+ private messages. HN 851 pts.
+- `concepts/ambient-surveillance-privacy-redefinition.md` — EFF Deeplinks (Klosowski, Nov 13): ambient AI recorders shift the burden to bystanders; second industry redefinition of privacy after "personal choice"; internal Meta launch-timing memo surfaced on HN. HN 558 pts.
+- `concepts/google-search-ai-free-schools-cutoff.md` — NPR: Google cutting Search off from AI-free school districts; "cannot be separated" claim contradicted by a third-party extension. HN 194 pts.
+
+**Updated (5):** `concepts/ai-infrastructure-circular-financing` (WSJ Kress profile: deals pushed mid-late 2026 to absorb a TSMC wafer oversupply and hold GPU prices up; Kress overruled, son-in-law Nico Caprez's financing arm reined in; $250B OpenAI backstop paused; vendor-financing-vs-channel-stuffing HN split, Cisco-2000 and Enron parallels), `concepts/ai-slop` (No AI Slop Manifesto from AIE Code Summit 2026 — five value pairs, the production/review asymmetry thesis, and HN rebuttals incl. the Terry Tao objection), `entities/google-antigravity` (/teamwork GA: dedicated falsifiers + context partitioned by construction, Gemini 4 Argon/Carbon/Hydrogen, Lean 4 checker, HN 204), `entities/nathan-lambert` (HN reception of "Open-source AI without Jensen"), `concepts/anthropic/claude-code-projects` (Tom's Hardware: Claude deletes a law professor's syllabus + year of notes when asked to renumber pages — blast-radius counterexample).
+
+**Raw (10):** crissyfield-lovable-data-exposure, eff-privacy-concept-shift, haddyalchaer-jepa-600-experiments, aie-no-ai-slop-manifesto, google-antigravity-teamwork, wsj-nvidia-circular-financing-kress, netmeister-claude-delusion, guardian-godel-notebooks-ai (Guardian paywalled -> HN-thread reconstruction), tomshardware-claude-deletes-syllabus, npr-google-ai-free-schools.
+
+**SCHEMA:** minted `data-exposure`, `ambient-surveillance`, `surveillance`, `ai-education` (Meta), `web-security`, `security-audit`, `antitrust` (Engineering), `wearable-technology`, `smart-glasses`, `search-engines`, `google-search`, `ai-overview`, `education`, `k12-education` (Domain Concepts).
+
+**Deferred (not wiki-actionable yet):** Jonathan Blow "If AI solved coding, why is my software still the same?" (video, transcript not fetched); DeepSeek V3 in ~200 lines of pure JAX (repo-only); No-AI-Slop PR-review tooling (openspec/delta.dev, mentioned inline); Italy/Meta EUR 887M fine (regulatory, non-AI-core); Gödel-notebook story kept as HN-reconstructed raw pending a primary fetch; Tom's Hardware Claude-syllabus treated as tabloid-adjacent single-source and attached as an incident note rather than its own page.
+
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-15] active-crawl | 5 new concept pages (HN-driven trend discovery)

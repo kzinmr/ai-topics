@@ -2,7 +2,7 @@
 title: AI Slop
 type: concept
 created: 2026-05-25
-updated: 2026-10-25
+updated: 2026-11-15
 tags:
   - ai-slop
   - coding-agents
@@ -106,6 +106,18 @@ The emerging consensus is that AI slop is fundamentally a **systems problem**, n
 - **Hermes-native implementation**: The article provides a concrete 6-move build using Hermes Agent's primitives (skills, memory, cron, approval buttons) — no external tooling required.
 
 This perspective reframes the slop discussion from "can it be fixed?" to "here is the layer that was never built." See [[concepts/evaluation/eval-loops]] for the full framework.
+
+## No AI Slop Manifesto (AIE Code Summit, November 2026)
+
+In November 2026 the speakers and attendees of **AIE Code Summit 2026** published the **No AI Slop Manifesto** (slopmanifesto.com; HN 220 pts), explicitly modelled on the 2001 Agile Manifesto. It states five value pairs:
+
+> Outcomes over output · Understanding over speed · Our own thinking over a model's first draft · Better work over easier work · Improving the system over patching the output
+
+Its most quoted line is the **asymmetry thesis**: *"Slop is when we put less effort into producing something than we ask the consumer to spend understanding it"* — the cost of producing a thousand-line PR or ten-page doc approaches zero while the cost of reviewing it remains constant, so slop compounds through knowledge bases that the next agent then reads and copies.
+
+**HN pushback**: (a) the manifesto itself reads like slop / engagement bait and never defines slop up front; (b) by its definition Terry Tao's job of understanding AI-generated proofs would be "slop"; (c) reviewers reported working solutions — require the prompt/spec docs with the PR (openspec.dev, Zed's delta.dev conversation-layer version control), and ban large PRs outright.
+
+Raw: `raw/articles/2026-11-15_aie-no-ai-slop-manifesto.md`
 
 ## Related
 
