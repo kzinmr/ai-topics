@@ -1,9 +1,9 @@
 ---
 title: "Fernando Borretti"
 tags: [person]
-sources: []
+sources: [raw/articles/borretti.me--article-taking-ai-seriously--4126dcb1.md]
 created: 2026-04-24
-updated: 2026-10-21
+updated: 2026-11-15
 type: entity
 ---
 
@@ -57,6 +57,7 @@ His blog is built with **Emacs, Jekyll, and Sass** on GitHub Pages — a classic
 | 2026 | Publishes "Letting Claude Play Text Adventures" — LLM agent architecture experimentation |
 | 2026 | Publishes "Some Data Should Be Code" — critique of DSL-in-data-format anti-pattern |
 | 2026 | Publishes "There Is No New Aesthetics" — cultural/philosophical essay |
+| 2026 | Publishes "Taking AI Seriously" — essay on the AGI-pilled concept and the Tlön metaphor |
 
 ## Core Ideas
 
@@ -247,6 +248,61 @@ counterpart to his earlier "Permanent Underclass" essay and extends his
 
 Raw: [[raw/articles/borretti.me--article-no-man-is-an-island--ad59bc12.md]]
 
+## "Taking AI Seriously" (Nov 2026)
+
+In November 2026 Borretti published
+**["Taking AI Seriously"](https://borretti.me/article/taking-ai-seriously)**, an
+essay about what it actually means to take AI progress seriously. Core
+arguments, as stated in the essay:
+
+- **The timeline of programmer advice**: he catalogs the recurring genre of
+  blog posts advising how to integrate AI into software engineering, each
+  written with the implicit assumption that the technology will stay where it
+  is at the time of writing — from "tab completion is useful, but you need a
+  human for repository-wide context," through "coding agents produce slop,
+  review aggressively," to "code was never the hard part" (which he marks as
+  "You are here"), and onward to the extrapolated endpoint: "It is professional
+  malpractice to write code by hand" and "every morning Claude Requiem
+  one-shots the spec into x86 assembly." He likens the progression to "the
+  propaganda of a state that is losing a war: the tales of heroic victory get
+  closer and closer to the capital each time."
+- **The failure mode is not taking AI seriously**: by analogy, when a CEO like
+  Mark Zuckerberg says superintelligence is near and good for jobs, the
+  commentariat correctly replies that he isn't "ASI-pilled" and doesn't really
+  believe it — because "the intelligence explosion is next Tuesday, and the
+  world will stay the same" is hard to believe.
+- **On "AGI-pilled"**: he rejects the Twitter term because it conflates two
+  claims — "timelines to AGI are short" and "consequences of AGI will be
+  transformative." The latter is easy to believe; the former has "an
+  unsatisfying evidentiary basis: people draw lines on plots, extrapolate, and
+  go on podcasts to talk about it." Criticizing someone for not being
+  AGI-pilled (in the short-timelines sense) is "just complaining that they
+  don't automatically accept the straight lines on graphs memeplex."
+- **His preferred definition**: *"Taking AI seriously means: consider it
+  possible that AI progress will continue at the pace of the past few years.
+  It's a conjecture, subject to refutation."* Not taking AI seriously means
+  confidently asserting that progress will halt or that AI's impact will be
+  tiny — and if the evidence for continued progress is weak, "the evidence that
+  progress will slow or halt is even weaker." AI's impact is already massive:
+  software, mathematics, and cybersecurity are the obvious cases, and AI writing
+  and AI images are everywhere.
+- **The Tlön metaphor**: he invokes Borges's *Tlön, Uqbar, Orbis Tertius*, in
+  which a conspiracy writes an encyclopedia of a fictional world and, through
+  Berkeleyan idealism, that world begins to invade ours — objects from Tlön
+  appear, Earth languages are displaced by Tlönian ones, and the narrator
+  concludes "the world will be Tlön." A modern version would have people
+  arguing about being "Tlön-pilled" and economists debating whether the *hrönir*
+  excavation industry will be 1.5% or 2% of GDP by 2030 while their children
+  begin speaking the nounless language of Tlön. So, by analogy, "taking Tlön
+  seriously" means: "consider it possible that the world will be Tlön."
+
+The essay is a conceptual companion to his AI essays ("No Man Is an Island,"
+"No One Escapes the Permanent Underclass") — where those examine AI's cultural
+and political consequences, this one targets the epistemic posture with which
+people (especially programmers) discuss AI progress itself.
+
+Raw: [[raw/articles/borretti.me--article-taking-ai-seriously--4126dcb1.md]]
+
 ## Related
 
 - [[concepts/austral]] — Systems programming language with linear types and capabilities
@@ -287,5 +343,6 @@ Raw: [[raw/articles/borretti.me--article-no-man-is-an-island--ad59bc12.md]]
 - "Unbundling Tools for Thought"
 - "Language Pragmatics Engineering"
 - "There Is No New Aesthetics"
+- "Taking AI Seriously"
 - raw/newsletters/2026-06-29-import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-ess.md
 - Func Prog Podcast #6, Glasp Talk #12, The Stewart Mackenzie Indaba #31

@@ -1,5 +1,23 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-15] watchdog | blog-wiki-ingest recovery (503 failure) — 5 pages enriched
+
+blog-wiki-ingest (9a7d1e3c4b20) failed at 10:41 UTC with `HTTP 503: Local LLM server is busy; Hermes should fall back to the external provider` (same 503 class that killed 2 subagents during this recovery — 2 of 3 succeeded, remaining 3 done inline). Recovered all 5 triage `take` items from checkpoint 20261115T100023Z:
+
+- `concepts/data-center-local-backlash.md` (64→77L) — added "Of Course People Hate Data Centres" section (Cleanview 1,835 DCs +60% YoY, CBS exit polls 76% oppose R62/I78/D87, Pew 54% vs 39% environment, NDA/Flock analogy) from hugotunius.se 11/14 raw.
+- `concepts/datasette-llm.md` (48→56L) — added Release history: v0.1a11 (2026-11-14) OpenAI-compatible endpoints (LM Studio/Ollama/llama.cpp v1.0.0 local stacks).
+- `entities/fernando-borretti.md` (291→348L) — added "Taking AI Seriously" essay section (AGI-pilled critique, Tlön/hrönir metaphor).
+- `entities/andrew-nesbitt.md` (608→626L) — added This Week in Package Management 2026-11-14 edition entry (Packagist Alpha-Omega, Cargo min-publish-age, SynthChain).
+- `entities/microsoft.md` (108→117L) — added Two-Day Service Outage section (network capacity upgrade root cause, not cyber/AI).
+
+Frontmatter `updated:` + `sources:` set on all 5. No new pages, no deletions.
+
+Pipeline status: trending_topics 23.7h-stale alert = false positive (ran 12:20 UTC ok, after watchdog snapshot 12:00). wiki_health job disabled by design (unified into wiki-health-fix). Index/graph clean (validate_index pass, 0 corruption).
+
+---
 
 ## [2026-11-15] trending-topics | WSJ Nvidia circular-financing evidence, Lovable audit, ambient-surveillance essay (3 new, 5 updates, 10 raw)
 
@@ -19,7 +37,6 @@
 
 **Deferred (not wiki-actionable yet):** Jonathan Blow "If AI solved coding, why is my software still the same?" (video, transcript not fetched); DeepSeek V3 in ~200 lines of pure JAX (repo-only); No-AI-Slop PR-review tooling (openspec/delta.dev, mentioned inline); Italy/Meta EUR 887M fine (regulatory, non-AI-core); Gödel-notebook story kept as HN-reconstructed raw pending a primary fetch; Tom's Hardware Claude-syllabus treated as tabloid-adjacent single-source and attached as an incident note rather than its own page.
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-15] active-crawl | 5 new concept pages (HN-driven trend discovery)
 

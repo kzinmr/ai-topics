@@ -2,7 +2,7 @@
 title: "Microsoft"
 type: entity
 created: 2026-04-29
-updated: 2026-08-01
+updated: 2026-11-15
 tags:
   - company
   - infrastructure
@@ -13,6 +13,7 @@ sources:
   - raw/articles/2026-06-03_microsoft-mai-thinking-1-tech-report.md
   - raw/newsletters/2026-07-05-anthropic-s-fable-freedom-microsoft-s-inside-job-and-figure-s-factory-foothold.md
   - raw/newsletters/2026-07-31-deepseek-answered-openai-s-price-cut-overnight.md
+  - raw/articles/x.com--microsoft-status-2121282013600907325--779f8993.md
 ---
 
 # Microsoft
@@ -86,6 +87,14 @@ Microsoft announced the **Microsoft Frontier Company**, a new operating unit com
 ## AI Safety & Government Contracts (Apr 2026)
 
 Microsoft continues to participate in the broader AI governance conversation. Meanwhile, competitor Google signed a classified Pentagon AI deal despite internal protests from 600+ employees (reversing Google's 2018 Project Maven exit). Anthropic remains a holdout on classified military contracts, leading the Pentagon to designate them a "supply chain risk."
+
+## Two-Day Service Outage & Official Apology (Nov 2026)
+
+Microsoft issued a public apology on X for a **two-day outage** that disrupted customers and partners across its services:
+
+- **Root cause**: a technical issue introduced during an **earlier network capacity upgrade** that surfaced following a recent network change. Microsoft explicitly stated the incident was **not related to cyber activity or AI/agents**.
+- **Restoration**: services were restored gradually "given the scale of demand," validating stability at each stage — slower, but aimed at a stable recovery. By the apology, Microsoft reported broad recovery and stability across services.
+- **Follow-up**: a full post-incident report was promised once the internal review completes.
 
 ## Related Entities
 - [[entities/openai]] — Strategic partner, now multi-cloud
