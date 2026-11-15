@@ -2712,3 +2712,6 @@ research-grade pages from genuinely uncovered material:
 - **Updated** `concepts/system-one-models.md` — new section "Frontier-lab SKUs arrive" with three-vendor pricing/modality table; resolved the "lab SKU" open question.
 - **Research note**: `raw/articles/2026-11-12_trending-topics-research.md` (gap analysis; rejected: lcamtuf token-void comic [image-only, fails thresholds], Nvidia Huang ouster [unconfirmed paywalled breaking news — follow-up candidate], AI Engineer talks [deferred, video]).
 - Index: 3442 → 3445 pages. Checks: all wikilinks resolve to existing files; tags from SCHEMA taxonomy.
+
+## 2026-11-15 21:30 JST — hot-post (night)
+- Delivered: Nvidia circular-financing WSJ Kress evidence + DRAM price-fixing lawsuit (contrarian night angle). Archived to inbox/trending-reports/hot-post-2026-11-15-2130.md. Checks: NO_SLOP_FOUND, zero wikilink MISSes, NO_TYPO.
