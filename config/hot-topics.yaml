@@ -132,9 +132,9 @@ topics:
   - concepts/ai-memory-systems
   - concepts/memory-systems-design-patterns
   - concepts/claude-memory
-  notes: '前提: episodic vs semantic memory, vector DB architectures等'
+  notes: '前提: episodic vs semantic memory, vector DB architectures等。2026-11-15: Claude Code Projects shared project memory (coordinator+threads)'
   added: 2026-04-14
-  last_crawled: '2026-06-14'
+  last_crawled: '2026-11-15'
 - slug: death-of-browser
   title: Death of Browser
   crawl_policy: deepdive
@@ -144,9 +144,9 @@ topics:
   - browser automation AI agents WebMCP
   wiki_pages:
   - concepts/death-of-browser
-  notes: WebMCP, agentic browsing の最新動向
+  notes: 'WebMCP, agentic browsing の最新動向。2026-11-15: agweb (WebKit agent browser, HN 100pts) added'
   added: 2026-04-14
-  last_crawled: '2026-10-19'
+  last_crawled: '2026-11-15'
 - slug: sandbox
   title: Agent Sandboxing
   crawl_policy: laterals
