@@ -2,6 +2,21 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-15] active-crawl | 5 new concept pages (HN-driven trend discovery)
+
+> `active-crawl` cron (2026-11-15 11:00 UTC). Discovery: HN Algolia `search_by_date` (8 queries AI/LLM/agent/model/OpenAI/Anthropic/inference/training, 4-day window, points>=15, single terminal call) — 25 stories after dedup. Gap analysis run directly by parent (find/grep one-liners). Killed same-day dupes (Unsloth Qwen3.8 v3.1 — already updated by health-fix 11-14; Perplexity Decider v1.3 — indexed 11-14 by watchdog recovery) and off-scope items (Yogurt meeting-notes app, terminactory game, Kiri runtime, NES games list, WSJ router outage). Anthropic IPO (1002 pts) covered by `events/anthropic-ipo-roadshow-2026`; safety-alarm + cancer-cure stories are paywalled single-source — deferred.
+
+**New pages (5):**
+- `concepts/end-to-end-4bit-training.md` — Thinking Machines end-to-end NVFP4 training of Inkling 2 Small (Nov 13): NVFP4 forwards + MXFP8 stochastic-rounding backwards, block-scaled transpose problem, +8% pretraining / +20% RL speedups. Raw: `raw/articles/2026-11-13_thinkingmachines_end-to-end-4-bit-training.md` (24KB full text).
+- `concepts/dual-dgx-station-serving.md` — NVIDIA recipe: GLM-5.3 NVFP4 (753B-A40B, 464 GB) across two GB300 DGX Stations, ConnectX-8 RDMA, vLLM TP=2; 607.8 tok/s peak @ concurrency 16. Raw: `raw/articles/2026-11-13_nvidia-glm-5.3-dgx-vllm.md` (27KB).
+- `concepts/dram-price-fixing-lawsuit-2026.md` — Judge Wise (N.D. Cal.) Nov 14 denies MTD: Samsung/SK Hynix/Micron alleged conventional-DRAM supply conspiracy + HBM pivot; DRAM II distinguished; answers due Dec 7. Raw: `raw/articles/2026-11-15_dram-price-fixing-lawsuit.md` + `raw/articles/2026-11-15_hn-discussion_dram-price-fixing.md`.
+- `concepts/agweb-browser-for-agents.md` — agweb: WebKit macOS browser for coding agents (HN Show HN 100 pts) — never-steals-focus, per-agent workspaces, shared login profiles, secret-safe fill. Raw: `raw/articles/2026-11-14_agweb-browser-for-agents.md` (GitHub README).
+- `concepts/anthropic/claude-code-projects.md` — Projects redesigned: coordinator over parallel Claude Code cloud threads, shared project memory (pub Sep 17, Nov 2026 Pro/Max beta; HN 98 pts). Raw: `raw/articles/2026-09-17_anthropic-projects-redesigned.md` (publication date corrected from fetch date).
+
+**Counts:** Concepts 2342->2347 (verified: `grep -cE '^- \[\[concepts/' index.md` == header). Entities/comparisons/events unchanged. All wikilinks machine-verified; tags pre-validated against SCHEMA (1134 tags, validator exit 0).
+
+**Topics considered but deferred:** Huawei MACaQ quantizer (134 pts, repo-only content, overlaps `concepts/model-quantization`); OpenAI robotics-team disbandment (Fortune paywall, no primary source); Amodei cancer claim + Anthropic pre-IPO safety alarm (paywalled single-source commentary); checkpoint-forensics Blackwell-signature tweet (already indexed 11-12).
+
 ## [2026-11-15] newsletter-wiki-ingest | Post-Jensen open-model ecosystem analysis (3 takes / 4 refs)
 
 - Source: Nathan Lambert, "Open-source AI without Jensen" (Interconnects/Robotic, pub 48206, Nov 14 2026). Full body (19 paragraphs) recovered via curl + `<article>` extraction from interconnects.ai; raw: `raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md`. Triage: `20261115T101035Z`.

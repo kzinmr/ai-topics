@@ -13,6 +13,7 @@ Platform, SDK, and business pages for [[entities/anthropic|Anthropic]]. Model-ce
 
 ## Agent Platform
 - [[concepts/anthropic/managed-agents]] — Anthropic Managed Agents
+- [[concepts/anthropic/claude-code-projects]] — Claude Code Projects (parallel worker redesign, Nov 2026 beta)
 - [[concepts/anthropic/agent-sdk-sre-patterns]] — Agent SDK SRE patterns
 - [[concepts/anthropic/orbit]] — Orbit agent framework
 - [[concepts/anthropic/multi-agent-research]] — Multi-Agent Research System

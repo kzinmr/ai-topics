@@ -978,20 +978,25 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2342 pages)
+## Concepts (2347 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
 - [[concepts/agentic-representation-gatekeeping]] — Agentic Representation Gatekeeping — platforms banning *user-side* personal AI agents while tolerating platform-side automation and traditional aggregators; United Airlines' Nov 11 2026 flight-booking ban (HN 569p) as canonical case: stated security grounds vs intermediary control, GDS per-query costs, and defense of dynamic pricing; Southwest's ChatGPT inventory the defection
+- [[concepts/agweb-browser-for-agents]] — Agweb: WebKit-based macOS browser for coding agents (never-steals-focus window, per-agent workspaces, shared login profiles, secret-safe fill, HN 100pts Nov 14 2026)
 - [[concepts/ai-engineering-dekilling]] — AI engineering de-skilling — the erosion of code comprehension and debugging skill from 100% AI-mandate orgs and 'brain fry': r/ClaudeCode one-year retrospective (HN 129pts), Kuhne's manual-coding regimen (HN 306pts), Goldman's engineer-only Claude Code restriction; distinct from cognitive-deskilling (knowledge work) and agent model drift (infra)
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
 - [[concepts/ai-cost-of-js-frameworks|AI Cost of JS Frameworks]] – per-framework AI coding token-cost benchmark (Nolan Lawson; Astro best, Angular worst)
 - [[concepts/alphaproof-code]] — DeepMind agentic framework; first formal verification of Signal protocol implementation code (Lean, Gemini Carbon)
+- [[concepts/anthropic/claude-code-projects]] — Claude Code Projects redesigned (Sep 17 2026, Nov 2026 beta): goal-briefed coordinator over parallel Claude Code cloud threads with shared project memory and merge-conflict collision handling
 - [[concepts/chatgpt-html-preview-account-takeover]] — ChatGPT HTML Preview account takeover (Parameter Labs, Oct 2026) — share link → MathLive postMessage/innerHTML injection → YouTube oEmbed CSP bypass → JS as chatgpt.com; private-chat exfil + account actions; P1 fixed Oct 26, $5k bounty (HN 335)
 - [[concepts/checkpoint-forensics]] — Checkpoint Forensics — reads the training GPU class out of released model weights via SM-count-dependent init artifacts; 6 Chinese frontier models (DeepSeek V4, Kimi K3, MiniMax M3, Ling 3.1) fingerprint as export-controlled Blackwell, 49–1,385 sigma (Nov 12, 2026)
 - [[concepts/claude-code-token-cost-optimization]] — Claude Code token cost optimization — Spotify Shunt plugin (blocks whole-file reads >350 lines, cheaper model reads instead, 82-94% token cut, open-sourced) + Honk Slack agent (1,000 merges/10 days); Aakash replication: wins only on read-heavy workloads, adds 19-36% cost inside Claude Code search harness; bill is 85% cache-write (Nov 2026)
+- [[concepts/dram-price-fixing-lawsuit-2026]] — DRAM Price-Fixing Lawsuit (2026): Judge Wise (N.D. Cal.) Nov 14 2026 denies MTD — Samsung/SK Hynix/Micron alleged conspiracy to starve conventional DRAM while pivoting capacity to HBM (+697%/18mo); distinguishes DRAM II
+- [[concepts/dual-dgx-station-serving]] — Dual DGX Station Serving: GLM-5.3 NVFP4 (753B-A40B, 464GB) across two GB300 DGX Stations over ConnectX-8 RDMA with vLLM TP=2; 607.8 tok/s peak (NVIDIA, Nov 2026)
 - [[concepts/edge0]] — Edge0-145B — shared-matrix sparse-MoE laptop inference claim: 145B params / ~10B active, 29GB peak, 1,100 tok/s prefill, 80 tok/s decode; Qwen3.8-Flash-Next-derived, non-open license, NVFP4-only (Nov 12, 2026)
+- [[concepts/end-to-end-4bit-training]] — End-to-End 4-Bit Training (Thinking Machines, Nov 13 2026): NVFP4 forwards + MXFP8 stochastic-rounding backwards train Inkling 2 Small start-to-finish; +8% pretraining / +20% RL speedups
 - [[concepts/fireworks-notion-transcript-breach]] — Notion AI transcript exposure via Fireworks AI breach; AI supply-chain incident-response failures
 - [[concepts/frontier-model-usage-policy-enforcement-2026-10]] — Anthropic usage-policy enforcement controversies (Oct 2026) — blocks on 'anything touching training larger models' (HN 367) + video-game reverse-engineering refusals (HN 149); classifier false positives on legitimate ML/security work
 - [[concepts/gemini-connected-apps-human-review-reversal]] — Google quietly reversed its 2023 no-human-review promise; probabilistic ambient Drive/Gmail ingestion into human annotation
