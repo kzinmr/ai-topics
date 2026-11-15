@@ -1,10 +1,11 @@
 ---
 title: "DeepInfer (DeepSeek Inference Engine)"
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-11-15
 type: concept
 tags: [inference, inference-engine, vllm, sglang, disaggregation, kv-cache, speculative-decoding, mixture-of-experts, structured-outputs, open-source, deepseek, model-optimization]
 sources:
+  - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
   - raw/articles/2026-10-20_deepseek-deepinfer-open-source-inference-engine.md
 related:
   - concepts/vllm
@@ -49,6 +50,14 @@ This mirrors DeepSeek's incremental open-sourcing pattern (FlashMLA, DeepGEMM, D
 ## Significance
 
 DeepInfer signals DeepSeek entering the "open inference engine" race directly against vLLM and SGLang — the very projects it was forked from — but with DeepSeek's own MoE-aware kernels and Ascend NPU support. The Ascend 950 support is strategically notable: it's a first-party inference path for Huawei hardware, relevant to China's domestic accelerator push and to US export-control dynamics.
+
+## Economic Reading: Open Weights Are Not Yet a Commodity (November 2026)
+
+Nathan Lambert cites DeepInfer as the empirical refutation of the "open models = commoditized intelligence" thesis ([[events/nvidia-ceo-transition-2026]], Nov 14, 2026):
+
+> "The true long-term benefit of open models, as truly commoditized intelligence, is **very far from realization with compute in such short supply**. In the near term, where **inference startups are also struggling to get enough chips** (because Anthropic and OpenAI are buying so much capacity), there's **little margin competition on open-weight models**. **If open-source models are also served at giant inference margins, as we learned with DeepSeek's DeepInfer release, they're far from a commodity.** In this paradigm, the closed labs with better economies of scale and integration from model to datacenter and chips will win."
+
+The argument inverts the usual reading of an open-sourced inference stack: releasing the serving layer publicly does not compress the *price* of serving, because the constraint has moved up-stack to chip allocation. Reported corroboration (paywalled, not archived here): The Information, "AI Inference Startups Quietly Buying Chips" — https://www.theinformation.com/articles/ai-inference-startups-quietly-buying-chips. Lambert's broader version of this claim is in his own open-model-economy piece ("How well can we measure the open model economy"), which notes the most valuable parts of that economy run on private infrastructure. See also [[concepts/open-source-ai-must-win]] and [[concepts/price-performance-frontier]].
 
 ## Related
 

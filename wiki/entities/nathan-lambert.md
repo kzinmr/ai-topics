@@ -2,12 +2,13 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-10-31
+updated: 2026-11-15
 type: entity
 aliases:
   - natolambert
   - nathan-lambert
 sources:
+  - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
   - raw/newsletters/2026-10-30-was-i-wrong-about-open-models-cyber-risks.md
   - raw/newsletters/2026-10-25-interconnects-podcast-kimi-k3-1-pro-new-cyber-reality-muse-musings.md
   - https://www.interconnects.ai/p/the-distillation-panic
@@ -328,6 +329,19 @@ Source: [I wrote an AI textbook — how long until AI can do it better?](https:/
 - **Staged release as safety experiment**: Z.ai's coding-plan → API → HF-weights staging plus request classifier and CoT monitoring lets it observe misuse before broad weight release; open-weights diffusion is a one-way door once guardrails become removable.
 
 Source: [GLM-5.3: How Chinese labs keep stride with the frontier](https://www.interconnects.ai/p/glm-53-how-chinese-labs-keep-stride) (Aug 14, 2026, Robotic/Interconnects).
+
+### November 2026: "Open-source AI without Jensen"
+
+**"Open-source AI without Jensen"** (Nov 14, 2026, Interconnects/Robotic): written two days after [[events/nvidia-ceo-transition-2026]], this is Lambert's most explicit statement that the open-model movement was **politically dependent on one operator** — and that removing him is a capability regression, not just a market event. Core claims:
+
+- **"A major setback for the US development of an open model ecosystem."** Open models were a founder-style bet; Jensen was "flooding the zone with funding in a way that will very likely dry up." Nvidia's *structural* incentive (open models prevent concentration among customers who would build their own chips) survives; the *patron* does not.
+- **The shield function.** "Jensen was more than a cheerleader. He would stop a lot of shit from going wrong once early winds were stirring. He was willing to use his power on open models." Two years of cover bought the ecosystem time it needed in its most fragile years; "times were messy before he stepped up clearly in 2025."
+- **Both sides of the ledger.** Optimism: the open economy "correctly latched onto 'ownership of intelligence' and enterprise post-training as a crucial lane" (cf. his Fireworks Forge talk on the sensitivity of these early years). Pessimism: "truly commoditized intelligence is very far from realization with compute in such short supply" — inference startups cannot get chips because Anthropic and OpenAI absorb capacity, so there is **no margin competition on open weights**, and DeepSeek's DeepInfer proved open models can be served at "giant inference margins" ([[concepts/deepinfer]]).
+- **Regulatory exposure without a defender.** His "biggest near-term worry is sloppy regulation at the state level, followed by national regulation", citing a swell of Democratic funding toward AI-regulating candidates (~$50M, Axios Oct 14 2026) and the standing risk that "we've been **one, strong Chinese open-weight model away from a crisis** since this summer" — a major Chinese open-weight-driven hack is "a matter of when, not if". "We need someone to encourage caution and an ecosystem perspective when the 'open-weight hawks' come hunting."
+- **Timing beats information.** The Jensen affair became fatal because of *when* it was published (right after the midterm political swing), not because the information was new — structurally identical to the summer's Jacob Coxon episode, whose known safety-culture facts became national only once datacenter/Overton-window timing aligned. Lambert predicts the same mechanism is available to open-model *safety* narratives (but not to his open-science work, "because it will never happen").
+- **The only lasting solution, and who is left.** Incubate "a truly frontier open model player in the US" — hence his agreement with [[entities/dylan-patel]] that talent, not capital, is the constraint ([[entities/moonshot-ai]] is skill-wise at US-lab parity, short only on compute and deployment). Nemotron has the ambition and people but "hasn't delivered to the point of being called 'mission accomplished'" ([[entities/nvidia-nemotron-3-ultra]]); [[entities/thinking-machines-lab]]'s Inkling 2 Small is the best Western open weight in a while but "far behind Kimi K3.1 Pro"; Mira Murati's "$40B valuation is a done deal" yet insufficient against the closed frontier. The remaining candidate allies are the hyperscalers — "Zuckerberg, Andy Jassy, or Satya". Closing line: "**Shoes have been emptied that will never fully be refilled.**"
+
+Raw: `raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md` (19 paragraphs, full body). Source: [Open-source AI without Jensen](https://www.interconnects.ai/p/open-source-ai-without-jensen).
 
 ## Core Ideas
 

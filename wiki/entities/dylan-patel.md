@@ -1,9 +1,10 @@
 ---
 title: "Dylan Patel"
 tags: [person]
-sources: []
+sources:
+  - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-11-15
 type: entity
 ---
 
@@ -123,6 +124,14 @@ This puts Patel at odds with the "power is the bottleneck" consensus of 2024–2
 ## On China's Datacenter Buildout (November 2026)
 
 In "We Visited China's Stargate in Inner Mongolia" (Nov 7, 2026, co-authored with Everlyn Tan, Jeremie Eliahou Ontiveros, "Xiaopeng Laoban"), SemiAnalysis reported from a September site visit to Envision Group's Galaxy campus — full page: [[concepts/china-datacenter-buildout]], [[entities/envision-group]]. Findings that extend Patel's physical-layer framework to the datacenter layer: 120MW delivered in under a year at 1/5 US costs, ~25% of Chinese DCs on DC power vs ~97% of US DCs still on AC UPS, a live 5MW SST 800V DC pilot, and chiller-less cooling at scale — while the US bottleneck expands from chips and power to **local consent** ([[concepts/data-center-local-backlash]]).
+
+## On US Open Models After Jensen Huang (November 2026)
+
+From the ChinaTalk + SemiAnalysis **emergency podcast** recorded after Jensen Huang's resignation (quoted verbatim by Nathan Lambert in "Open-source AI without Jensen", Nov 14, 2026 — see [[events/nvidia-ceo-transition-2026]]). Asked by Jordan Schneider why no one simply "spent a few billion dollars and made something better than Kimi or DeepSeek and open sourced it", Patel's answer reframes the open-model problem from capital to **talent allocation**:
+
+> **Dylan Patel:** "Not that easy. **It's not money, it's talent, man.** All of the most talented people primarily work at Anthropic, OpenAI, DeepMind, and Meta TBD, right? And then those who don't are split across a hundred different startups. I mean, yes, Thinking Machines has a cracked team, but is Thinking Machines as good as Moonshot? No. **Moonshot skill-wise is probably just as good as the US labs. They just have a big deficit in compute and deployment.** So I think if we don't have a scale advantage, then you don't win. Yes, these smaller labs have spent a lot of money on models. But **DeepMind, Grok, Meta have regularly fallen behind the frontier of Chinese labs, and they're spending more.** So it's not just, 'oh, spend a few billion dollars and you can make a model that's better.'"
+
+The claim extends Patel's bottleneck framework ([[concepts/compute-scaling-bottlenecks]]) to the *human* layer of the open-weight race, and is the load-bearing argument for Lambert's "best people sit at the front of movements" thesis ([[entities/nathan-lambert]]). Note the partial tension with his own power-side argument above ("Scaling Power in the US Will Not Be a Problem"): if power and chips are solvable, the residual constraint on US open models is people and deployment, not hardware.
 
 ## Key Quotes
 

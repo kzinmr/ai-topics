@@ -10,9 +10,11 @@ tags:
   - china
   - open-source
 created: 2026-04-30
-updated: 2026-10-25
+updated: 2026-11-15
 type: entity
 sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md", "[[raw/articles/2026-06-03_solo-ai-agency-kimi-2-6]]", "[[raw/articles/2026-06-13_fireworks-ai_kimi-k2p7-code]]", "raw/articles/simonwillison.net--2026-jul-16-kimi-k3--ac21263e.md", "raw/articles/2026-05-10_fireworks-ai_kimi-qkclip.md", "raw/articles/simonwillison.net--2026-oct-23-kimi-k31-pro--a41c8d02.md"]
+sources:
+  - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
 ---
 
 # Moonshot AI / Kimi
@@ -293,6 +295,12 @@ pelican-riding-a-bicycle SVG benchmark. Compared against fresh Kimi K3 runs on t
 
 - [Kimi API](https://platform.moonshot.ai) — API access (model id `kimi-k3.1-pro`)
 - [kimi.com](https://kimi.com) — web interface
+
+### Post-Jensen Benchmark of Record (November 2026)
+
+Two months after release, K3.1 Pro became the **yardstick** in the US open-model debate rather than a headline score. In "Open-source AI without Jensen" (Nov 14, 2026, [[events/nvidia-ceo-transition-2026]]), Nathan Lambert calls Thinking Machines' Inkling 2 Small "the best Western open-weight model in a while" and immediately qualifies it: "**Still, it's far behind Kimi K3.1 Pro** and expectations are high for Zhipu's next GLM update."
+
+Dylan Patel's ChinaTalk/SemiAnalysis emergency-podcast remark, quoted approvingly in the same piece, is the sharper version of the same judgment — **Moonshot is "skill-wise probably just as good as the US labs. They just have a big deficit in compute and deployment"** — while DeepMind, Grok and Meta "have regularly fallen behind the frontier of Chinese labs, and they're spending more." The claim matters as an institutional concession from a US-aligned research shop: the deficit is reframed from capability to **compute access and deployment surface**, and money alone ("a few billion dollars") cannot close it because the talent sits elsewhere. Full quote: [[entities/dylan-patel]]; Western-side counter-evaluation: [[entities/thinking-machines-lab]].
 
 ## Production Economics — Solo Agency Case Study (June 2026)
 

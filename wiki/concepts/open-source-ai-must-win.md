@@ -1,7 +1,7 @@
 ---
 title: "Open-Source AI Must Win"
 created: 2026-06-13
-updated: 2026-06-27
+updated: 2026-11-15
 type: concept
 tags:
   - open-source
@@ -12,6 +12,8 @@ tags:
   - controversy
   - agent-safety
 sources: [raw/articles/2026-06-13_opensourceaimustwin-manifesto.md, raw/articles/anildash.com--2026-06-23-fight-ai-platform-war--1a272a96.md]
+sources:
+  - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
 ---
 
 # Open-Source AI Must Win
@@ -126,6 +128,15 @@ Dash proposes four proven tactics:
 Dash's key insight: "none of this is inevitable" — but fighting inevitability requires an exciting, human, powerful alternative, not just saying no. He draws on Joel Spolsky's Strategy Letter V (commoditize your complements), How Microsoft Lost the API War, and Fire and Motion.
 
 Where the manifesto declares *what* must happen, Dash provides the tactical *how*. The four tactics — disintermediation, model switching, commoditization of open weights, and channeling consumer anger — offer concrete steps for the community to build the exciting, human, powerful alternative Dash argues is necessary to win the platform war against Big AI.
+
+### Post-Jensen Reassessment (November 2026)
+
+The June 2026 manifesto argued open-source AI *must* win; Nathan Lambert's "Open-source AI without Jensen" (Nov 14, 2026 — [[events/nvidia-ceo-transition-2026]]) documents how much of the movement's survival depended on a single non-AI-lab patron, and is a useful reality-check against the optimism above:
+
+- **What still holds:** Lambert endorses the manifesto's core lane choice — "the open model economy has correctly latched onto **'ownership of intelligence'** and enterprise post-training as a crucial lane." The unresolved question for him is the size of the downstream market, not the strategy.
+- **What is now exposed:** Jensen Huang "was more than a cheerleader. He would stop a lot of shit from going wrong once early winds were stirring," and had been "flooding the zone with funding in a way that will very likely dry up." Lambert's verdict: "**We're regressing in the operational capability of our movement, when the stakes and attacks are destined to rise.**"
+- **Against Dash's tactic #3.** "Commoditize with open weights" assumes serving prices fall. Lambert's DeepInfer argument says otherwise while compute is rationed — see [[concepts/deepinfer]] for the "giant inference margins" case.
+- **What he proposes instead:** incubate "a truly frontier open model player in the US", recognizing (via [[entities/dylan-patel]]) that the constraint is **talent allocation, not capital**; recruit the hyperscalers (Zuckerberg, Andy Jassy, Satya) as the coalition Jensen provided; and prepare for the "open-weight hawks" before a Chinese open-weight hack forces the issue ([[concepts/ai-regulation-2026]]). Closing line: "Shoes have been emptied that will never fully be refilled."
 
 ## Related Pages
 

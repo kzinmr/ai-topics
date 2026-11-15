@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA CEO Transition (November 2026)"
 created: 2026-11-13
-updated: 2026-11-13
+updated: 2026-11-15
 type: event
 tags:
   - nvidia
@@ -16,6 +16,7 @@ sources:
   - raw/articles/nvidianews.nvidia.com--news-nvidia-announces-ceo-transition--d22abd9c.md
   - raw/articles/techcrunch.com--2026-11-12-jensen-huang-agrees-to-testify-before-congress--d574a06f.md
   - raw/articles/garymarcus.substack.com--p-jensen-huang-resigns--4a2c07c7.md
+  - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
 ---
 
 # NVIDIA CEO Transition (November 2026)
@@ -81,6 +82,20 @@ judgment:
 
 - **Zach Mueller** (@TheZachMueller, Hugging Face / "Scratch to Scale") posted an emotional reaction on Nov 12: *"There are many emotions going through me right now. But anger and upset are certainly a few."* — linking the official press release (x-accounts scan, Nov 14). See [[entities/zach-mueller]].
 
+## Open-model ecosystem impact (Nathan Lambert, Nov 14)
+
+Nathan Lambert (Interconnects/Robotic, "Open-source AI without Jensen", Nov 14, 2026) argues the resignation is **"a major setback for the US development of an open model ecosystem"** — the only substantive open-model analysis of the transition in the wiki. Unlike the market and political framing above, his case is ecosystem-capability:
+
+- **Funding dries up.** Open models were "one of Jensen's more ambitious, founder-style bets. He has been **flooding the zone with funding** in a way that will very likely dry up." Nvidia's stated interest in open models (avoiding customer concentration in buyers who build their own chips) survives, but "supporting the open ecosystem is a tricky puzzle more than an engineering problem."
+- **Jensen as shield, not cheerleader.** "He would stop a lot of shit from going wrong once early winds were stirring. He was willing to use his power on open models." Lambert's near-term fear is **state-level sloppy regulation → national regulation**, backed by a swell of Democratic funding toward AI-regulating candidates (~$50M, Axios Oct 14 2026) whose "open models are unsafe" priors are uneducated on the benefits. "We've been **one, strong Chinese open-weight model away from a crisis** since this summer" — no major hack from a popular Chinese open-weight model yet, "but it is a matter of when, not if."
+- **Talent, not money, is the binding constraint** (Lambert endorses Dylan Patel verbatim from the ChinaTalk + SemiAnalysis emergency podcast): "It's not money, it's talent, man." The best people sit at Anthropic/OpenAI/DeepMind/Meta; the rest scatter across a hundred startups. **Moonshot is "skill-wise probably just as good as the US labs"** — its deficit is compute and deployment, not skill. DeepMind, Grok and Meta "have regularly fallen behind the frontier of Chinese labs, and they're spending more." Full quote: [[entities/dylan-patel]].
+- **Open-weight league table (Nov 2026).** **Nemotron** had "the right level of ambition and strong people, but it hasn't delivered to the point of being called 'mission accomplished'" ([[entities/nvidia-nemotron-3-ultra]]). **Thinking Machines' Inkling 2 Small** is "the best Western open-weight model in a while" but "**far behind Kimi K3.1 Pro**", with high expectations for Zhipu's next GLM ([[entities/thinking-machines-lab]], [[concepts/inkling-2-small]]).
+- **Commoditized intelligence is far off.** With compute scarce and Anthropic/OpenAI absorbing capacity, inference startups can't even get chips, so **there is little margin competition on open weights** — and DeepSeek's DeepInfer showed open models can be served at "giant inference margins" ([[concepts/deepinfer]]). The labs with model→datacenter→chip vertical integration win.
+- **Who fills the vacuum.** Mira Murati's next round at a **$40B valuation is "a done deal"**, but "that won't be enough to keep pace with the closed frontier for long"; the likely remaining allies are **hyperscalers — Zuckerberg, Andy Jassy, or Satya**. "We're regressing in the operational capability of our movement, when the stakes and attacks are destined to rise."
+- **Media runs on timing, not information.** "All of these Jensen affairs were known, but getting them out at the right time, right after the midterm political swing, took down the king" — isomorphic to the summer's Jacob Coxon episode, whose safety-culture revelations became national only through datacenter/Overton-window timing. Lambert expects the same path is available to open-model safety narratives.
+
+Counter-context: the open-model optimism case (ownership of intelligence, enterprise post-training as the right lane) is preserved in [[concepts/open-source-ai-must-win]] and [[concepts/state-of-open-source-ai-2026]]; Lambert's claim is about the **political patron** being removed, not about the technical thesis failing.
+
 ## Related
 
 - [[entities/jensen-huang]] — person page (status updated from "rumor-level ouster" to confirmed resignation)
@@ -89,9 +104,12 @@ judgment:
 - [[events/anthropic-ipo-roadshow-2026]] — NVIDIA's committed backstop now in question
 - [[concepts/ai-infrastructure-circular-financing]], [[concepts/ai-bubble-economics]]
 - [[concepts/us-china-ai-competition]] — export-control lobbying at the center of the scandal
+- [[entities/nathan-lambert]] — open-model ecosystem analysis of the transition (Nov 14)
+- [[concepts/open-source-ai-must-win]], [[concepts/state-of-open-source-ai-2026]] — the open-model position being orphaned
 
 ## Sources
 
 - NVIDIA Newsroom, "NVIDIA Announces CEO Transition" — https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition (raw: `raw/articles/nvidianews.nvidia.com--news-nvidia-announces-ceo-transition--d22abd9c.md`)
 - TechCrunch, "Jensen Huang agrees to testify before Congress" (Nov 12, 2026) — via Daring Fireball (raw: `raw/articles/techcrunch.com--2026-11-12-jensen-huang-agrees-to-testify-before-congress--d574a06f.md`)
 - Gary Marcus, "Jensen Huang resigns." (Nov 13, 2026) — https://garymarcus.substack.com/p/jensen-huang-resigns (raw: `raw/articles/garymarcus.substack.com--p-jensen-huang-resigns--4a2c07c7.md`)
+- Nathan Lambert, "Open-source AI without Jensen" (Nov 14, 2026) — https://www.interconnects.ai/p/open-source-ai-without-jensen (raw: `raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md`)

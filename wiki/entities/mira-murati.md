@@ -2,13 +2,14 @@
 title: Mira Murati
 type: entity
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-11-15
 tags:
   - person
   - openai
   - lab
   - agent-safety
-sources: []
+sources:
+  - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
 ---
 
 
@@ -66,6 +67,14 @@ Murati believes AGI is achievable but likely "decades" away. She rejects hype-dr
 
 ### Collaborative AI
 Her new venture, Thinking Machines Lab, focuses on tools that incorporate human feedback and guidance, contrasting with the trend toward fully autonomous agents. She emphasizes accessibility for diverse industries beyond just coding.
+
+### Funding the Open-Weight Bet After Jensen (November 2026)
+
+Nathan Lambert's post-resignation survey of the open-model ecosystem ([[events/nvidia-ceo-transition-2026]], Nov 14, 2026) treats Murati's capital position as a load-bearing but insufficient asset:
+
+> "Who is Mira going to call when they need to close their next funding round? Supposedly **the next round at a $40B valuation is a done deal**, but that won't be enough to keep pace with the closed frontier for long. The fundamental problem is that **the open-weight ecosystem needs someone who will pick up the phone to abate a crisis.** ... The most likely allies we could turn to are from the **hyperscalers, the likes of Zuckerberg, Andy Jassy, or Satya**."
+
+Lambert's argument is that a $40B valuation solves the money problem that Dylan Patel says was never the binding constraint ([[entities/dylan-patel]] — "It's not money, it's talent"), leaving Murati's venture exposed on two axes at once: no political patron (Jensen carried that mantle "for about two years") and no hyperscaler backer. Inkling 2 Small earned his praise as "the best Western open-weight model in a while" but "far behind Kimi K3.1 Pro" ([[entities/thinking-machines-lab]]).
 
 ## Key Quotes
 

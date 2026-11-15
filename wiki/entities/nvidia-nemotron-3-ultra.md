@@ -2,7 +2,7 @@
 title: "NVIDIA Nemotron 3 Ultra"
 type: entity
 created: 2026-06-05
-updated: 2026-08-15
+updated: 2026-11-15
 tags:
   - model
   - open-source
@@ -11,6 +11,7 @@ tags:
   - inference
 aliases: [Nemotron 3 Ultra, Nemotron-3-Ultra]
 sources:
+  - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
   - raw/newsletters/2026-06-05-ainews-not-much-happened-today.md
   - raw/newsletters/2026-08-12-ainews-how-to-steal-a-reasoning-trace.md
   - raw/articles/2026-08-14_nvidia_nemotron-teacher-competition-coding.md
@@ -52,6 +53,14 @@ Released August 2026, **Nemotron 3.5 Lightning** is a 30B parameter [[concepts/m
 In August 2026 NVIDIA released **NVIDIA-Nemotron-Labs-Teacher-Competition-Coding**, a coding-specialized teacher model that supplies training signal to Nemotron 3 Ultra's [[concepts/multi-teacher-on-policy-distillation|Multi-Teacher On-Policy Distillation (MOPD)]] stage. It is produced by taking the post-trained Nemotron 3 Ultra student and adding a coding-focused SFT + RL round (execution-verified solutions, compiler/test-verified RL). It is released as a standalone checkpoint (550B total / 55B active, OpenMDW-1.1 license) because it is a strong competitive-coding model in its own right — and, more importantly, as one of **10+ domain-specialized teachers** whose public release makes Nemotron 3 Ultra's MOPD recipe inspectable for researchers.
 
 Source: [[raw/articles/2026-08-14_nvidia_nemotron-teacher-competition-coding]]
+
+## Ecosystem Verdict: "Not mission accomplished" (November 2026)
+
+Benchmark coverage above measures the model; Nathan Lambert's post-Jensen assessment ([[events/nvidia-ceo-transition-2026]], Nov 14, 2026) measures the *program* — and finds it short despite its inputs:
+
+> "The best people for attracting talent are the ones at the front of movements. Jensen helped catalyze this, and on many metrics was still losing. **Nemotron has had the right level of ambition and strong people, but it hasn't delivered to the point of being called 'mission accomplished.'** The competition here in building leading-edge models is more fierce than most give credit to. Having an organization with billions of dollars, solid people, and good vibes may not get you there. **You normally need something special.**"
+
+This is a dated, contested counterweight to the "strongest US open-weights model" framing above: Lambert grants NVIDIA the funding, the ambition and the people, and argues precisely that those three are insufficient without a movement-leading champion — and that the champion (Jensen, who was "flooding the zone with funding") is now gone. See [[entities/nathan-lambert]] and [[concepts/open-source-ai-must-win]].
 
 ## Related
 

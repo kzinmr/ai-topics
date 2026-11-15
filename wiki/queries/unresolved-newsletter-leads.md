@@ -124,6 +124,32 @@ unavailable, so even the *topic* of the newsletter is not confirmed.
    "Second independent claim" section (per AGENTS.md: keep the older interpretation with
    date and source rather than replacing it), and mark this row `resolved`.
 
+## Lead: AI media narrative runs on timing, not information (Nov 14, 2026)
+
+**Status:** open — no concept page exists yet; content currently durable in
+[[events/nvidia-ceo-transition-2026]] (Open-model ecosystem impact section) and
+[[entities/nathan-lambert]] (November 2026).
+
+Nathan Lambert ("Open-source AI without Jensen", Interconnects, Nov 14, 2026) advanced a
+general media-ecosystem claim that is broader than the Jensen story and has **no dedicated wiki
+home**: `concepts/ai-media-narrative.md` was checked and has zero mentions of the Coxon episode or
+of the timing-over-information mechanism.
+
+> "the extent to which the media ecosystem is revolving around **timing** today, rather than exact
+> availability of information, is incredible. All of these Jensen affairs were known, but getting
+> them out at the right time, right after the midterm political swing, took down the king."
+
+He maps it onto the summer's Jacob Coxon episode ("all of that safety culture around top labs was
+well known, but the right timing around datacenters and the Overton window made it a national
+issue") and predicts the same mechanism is available to open-model safety narratives, because
+"harm, risk, or safety-related narratives ... drive the modern media algorithms."
+
+**To resolve when a second independent source appears** (the claim is currently single-source
+editorial): look for a journalist/media-studies treatment of either the Jensen leak timing or the
+Coxon cycle. If found, create `concepts/ai-media-narrative.md` per
+`wiki-concept-from-research` with the two dated cases as anchor examples, then mark this lead
+`resolved`. Raw: `raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md`.
+
 ## See Also
 
 - [[concepts/openai-eth-refutation-verification-crisis]] — the page this lead targets

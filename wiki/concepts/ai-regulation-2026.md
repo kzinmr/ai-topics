@@ -2,7 +2,7 @@
 title: "AI Regulation (2026)"
 type: concept
 created: 2026-04-30
-updated: 2026-10-19
+updated: 2026-11-15
 tags:
   - concept
   - regulation
@@ -12,6 +12,7 @@ tags:
   - governance
 status: complete
 sources:
+  - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
   - url: "https://www.wsgr.com/en/insights/2026-year-in-preview-ai-regulatory-developments-for-companies-to-watch-out-for.html"
     title: "2026 Year in Preview: AI Regulatory Developments (Wilson Sonsini)"
   - url: "https://www.multistate.ai/artificial-intelligence-ai-legislation"
@@ -251,6 +252,18 @@ Source: [[raw/articles/2026-07-14_demishassabis_frontier-ai-framework]]
 - How will enforcement capacity scale with the rapid pace of legislation?
 - Will alignment between CA TFAIA and NY RAISE Act templates create de facto national standards?
 - How will AI regulation interact with emerging agentic AI capabilities (autonomous agents making decisions)?
+
+### Open-Weight Regulation Risk After Jensen Huang (November 2026)
+
+Nathan Lambert (Interconnects, Nov 14, 2026 — see [[events/nvidia-ceo-transition-2026]]) identifies a specific transmission path from the state-level surge above to federal open-weight restriction, and argues the ecosystem just lost the one actor able to interrupt it:
+
+- **Money behind the hawks.** "There's a major swell in Democratic government funding towards candidates that want to regulate the AI industry, fostering 'safety'" — reported at ~**$50M** toward AI-regulation candidates (Axios, Oct 14, 2026). Lambert's complaint is competence, not motive: many of these actors "feel a need to do something and have general opinions that **open models are unsafe**, while not being educated on the complexities of their benefits."
+- **Escalation sequence.** "My biggest near-term worry is **sloppy regulation at the state level, followed by national regulation.**" The state-level surge documented above is therefore not the endpoint but the incubator for a federal open-weight regime.
+- **The trigger condition.** "We've been **one, strong Chinese open-weight model away from a crisis** since this summer... We have not seen a major hack driven by a popular Chinese open-weight model, but it is a **matter of when, not if**" — especially entering "a new, turbulent equilibrium of cybersecurity."
+- **Asymmetric irreversibility.** "Knocking over the open-source AI domino today is easy — if done, unwinding the downstream concentration of power, reduction in safety research, and stifling of long-term innovation is far harder." He attributes the appearance of a clean innovation-vs-risk tradeoff to the fact that the open model economy is nearly unmeasurable, its most valuable parts running on private infrastructure.
+- **The missing veto player.** "We need someone to encourage caution and an ecosystem perspective when the **'open-weight hawks'** come hunting." Jensen Huang performed that role for roughly two years ("He was willing to use his power on open models"); under an interim CEO whose stated priority is to "stabilize the ship," no equivalent is in place.
+
+Related pressure point: China's own MOFCOM/MOST Announcement No. 48 export controls on frontier weights ([[concepts/china-mofcom-announcement-48-export-controls]]) — a Chinese open-weight crisis and a Chinese export-control regime would be reinforcing, not independent, events.
 
 ## Related Pages
 - [[concepts/security-and-governance/agent-governance]] — Enterprise AI agent governance frameworks

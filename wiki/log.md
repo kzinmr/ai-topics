@@ -2,6 +2,17 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-15] newsletter-wiki-ingest | Post-Jensen open-model ecosystem analysis (3 takes / 4 refs)
+
+- Source: Nathan Lambert, "Open-source AI without Jensen" (Interconnects/Robotic, pub 48206, Nov 14 2026). Full body (19 paragraphs) recovered via curl + `<article>` extraction from interconnects.ai; raw: `raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md`. Triage: `20261115T101035Z`.
+- The companion beehiiv digest ("Jensen Huang Is Out. Nvidia's Export Questions Remain.") had all 20 tracking links at HTTP 403 (token expiry, ~15h after send); topic already covered by `events/nvidia-ceo-transition-2026.md` and `concepts/china-mofcom-announcement-48-export-controls.md` -> skipped, archived.
+- Updated: events/nvidia-ceo-transition-2026 (new "Open-model ecosystem impact" section: funding dries up, Jensen-as-shield, talent-not-money, open-weight league table, commoditization gap, hyperscaler allies, media-timing thesis + counter-context).
+- Updated: entities/nathan-lambert (new November 2026 section — closes the Aug 14 gap), entities/dylan-patel (verbatim ChinaTalk emergency-podcast quote "It's not money, it's talent"), entities/thinking-machines-lab (Inkling 2 Small "best Western open-weight... far behind Kimi K3.1 Pro"), entities/nvidia-nemotron-3-ultra (dated contested "not mission accomplished" verdict), entities/kimi (K3.1 Pro as the Nov-2026 yardstick), entities/mira-murati ($40B round / hyperscaler-ally argument), concepts/ai-regulation-2026 (open-weight hawk escalation path, Axios $50M, "one Chinese open-weight model away from a crisis"), concepts/deepinfer (open weights not a commodity — giant inference margins), concepts/open-source-ai-must-win (Post-Jensen reassessment vs June manifesto).
+- Queries: queries/unresolved-newsletter-leads.md gained an open lead for the timing-over-information media thesis (no `concepts/ai-media-narrative.md` exists; single-source editorial, held pending a second independent source).
+- 0 net new pages; 11 pages updated. Archive: skip+reference items already deduplicated (triage step archived them).
+
+---
+
 ## [2026-11-14] x-accounts-scan | 5 new posts / 11 accounts scanned
 
 - Scanned 11 of 84 tracked accounts (request budget 12); 5 new substantive posts, 0 errors.

@@ -2,7 +2,7 @@
 title: "Thinking Machines Lab"
 type: entity
 created: 2026-07-11
-updated: 2026-11-06
+updated: 2026-11-15
 tags:
   - company
   - lab
@@ -14,6 +14,7 @@ tags:
   - sovereign-ai
   - human-in-the-loop
 sources:
+  - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
   - raw/articles/thinkingmachines.ai--blog-the-future-worth-building-is-human--7fe53b6e.md
   - raw/articles/2026-07-31_thinking-machines-lab_safe-path-to-open-weights.md
 ---
@@ -144,7 +145,10 @@ See also: [[concepts/open-weight-ai-regulation]], [[concepts/security-and-govern
 
 Second-generation release: **Inkling 2 Small**, 594B-A17B MoE, image inputs, variable effort, AA Intelligence Index 31 (large jump from first-gen 41-index context — different index version, see page). Shipped closed-first on Tinker with Apache 2.0 weights promised after external red-teaming ("safe path to open weights"); agentic RL graders; Fledge-Alpha OpenCode trials; $426/4.5h autonomous Qwen3.5-4B post-training demo. Details: [[concepts/inkling-2-small]]. HN: https://news.ycombinator.com/item?id=50386338 (216 pts).
 
+- Inkling 2 Small's "best Western open-weight model in a while" / "far behind Kimi K3.1 Pro" judgment is Nathan Lambert's (Nov 14, 2026, Interconnects) — see [[events/nvidia-ceo-transition-2026]] for the full post-Jensen open-model argument, and [[entities/dylan-patel]] for the corroborating "cracked team, but not as good as Moonshot" claim.
+
 ## Related
+
 - [[entities/anthropic]]
 - [[entities/openai]]
 - [[concepts/security-and-governance/ai-safety]]
