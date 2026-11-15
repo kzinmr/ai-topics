@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-11-10
+updated: 2026-11-15
 type: concept
 tags:
   - concept
@@ -418,6 +418,37 @@ Two industry systems extend the RSI taxonomy beyond agent scaffolding into **pro
 
 Both are Level-1/2 instances (human-designed improvement loops, agent-chosen tactics) with the same caution as Self-Harness: editable surfaces need permission controls outside the improvement loop.
 
+## Dwarkesh Patel: "The avalanche that hit math is coming for AI development" (Nov 14, 2026)
+
+Six weeks after the August Greenblatt debate, Patel published a standalone essay (45 KB) that moves his own forecast substantially earlier and introduces a two-branch taxonomy for takeoff. `confidence: medium` — the essay is a forecast, and Patel labels it as one; his evidence base is cited, his extrapolation is not.
+
+**The headline claim.** Patel now puts himself "only a couple of years away, and possibly only a couple months away, from AIs that are as good as the best humans at AI research," with field-general expert-level AI by 2030 and "plausibly as early as next year." His stated **median year for automated researchers matching the best human AI researchers is 2028**, with a **25% probability it slips past 2032** and a non-trivial 2027 case. Against Greenblatt's August median of 2031, this is a three-year pull-in from the same author.
+
+**The evidence he cites** — all pre-existing, reassembled under a new thesis:
+- METR's three-month embedding inside Anthropic: overall rate of progress on well-scoped tasks **2x** a year ago, with "a majority of this acceleration today is likely attributable to Anthropic's extensive use of AI to do R&D."
+- OpenAI's September post: the **heaviest 10% of its researchers** went from ~**$1,000/day** of internal coding agents at the start of summer to over **$7,000/day** by end of August.
+- Anthropic's own September uplift post: as of August, Claude "leads" more than **26%** of Anthropic's AI R&D work.
+
+**The math analogy — and why AI research is easier than math.** An AI has already solved a Millennium Prize problem without the ability to ask powerful questions or find new fields. But the two domains invert each other's priorities. In mathematics, grinding through conjectures is valuable only as a means; the prize is the *question*, and much of the discipline's value is theory for its own sake. In machine learning, labs care only about whether a recipe empirically makes training cheaper or models smarter, and 15 years of deep learning required almost no new theory. So the capability AIs demonstrated in math — persistently and intelligently matching dozens of combinations of ideas — maps onto ML research *without* the aesthetic filter that constrains it in mathematics. Patel's concrete version: the transformer, arguably the biggest breakthrough since AlexNet in 2012, "is the kind of thing that Claude 7 could invent if Chris Olah asked it to try hard to get this attention thing to work better."
+
+**The three-way speedup, and the compute split.** Once automated researchers match the best humans, progress compounds along three axes at once: each is **faster** (around-the-clock work, roughly **50x** more calendar work per week), each is **smarter** (Patel estimates **~80% of a frontier lab's algorithmic progress is driven by its top 50 researchers** — which is why Zuckerberg paid hundreds of millions for talent), and there are **more** of them. The honest limiter: they remain compute-bottlenecked, so the 50x does not translate directly. Patel's counter is a concrete scale anchor — the final model in the 2017 transformer paper took **3.5 days on 8 P100s, about $50 of rental compute today**, roughly a ten-thousandth of GPT-3's compute. If frontier labs keep quadrupling compute annually, then by end-2027 a lab could give **thousands of agents each a GPT-3-sized training run per day**. He also argues today's labs systematically under-use compute because researcher time is the scarce factor (top researchers cost hundreds of millions a year), so current compute allocation tells us little about achievable efficiency when the bottleneck flips — automated researchers can read every RL rollout transcript and rebuild a broken environment mid-run, run huge volumes of small ablations, and pool compute into carefully designed mega-experiments, the way scaling laws and muP already let teams predict large-run behavior from 10,000x-smaller runs.
+
+**The two-branch taxonomy** (the essay's main conceptual contribution):
+| Branch | Condition | Trajectory |
+|---|---|---|
+| **Software-only singularity** | RSI makes researchers smarter *faster* than ideas get harder to find | With no added compute, the swarm self-improves to a superintelligence scraping the physical limits of current chips **within months** |
+| **Spark** | Ideas harden faster than RSI compounds | **3–6 years of AI progress compressed into a single year**, then it simmers until more chips, datacenters, and robots exist |
+
+Patel's own median sits in the spark branch, which is why his milestone is 2028 rather than tomorrow — he takes the "easy ideas get eaten by the swarm" counter-trend seriously while modeling a GPT-3.5-to-GPT-6-sized jump in 2028.
+
+**Hard-to-verify domains: the RL-environment argument.** The strongest objection to Patel's thesis is that you cannot roll out "win a court case," "run a profitable trading desk," "win an election," or "cofound a company" inside a datacenter. His answer is not that answers get baked into weights, but that **scaling RL training supplies transferable general skills** — seeking relevant information, planning, pushing through obstacles, tracking what was learned, collaborating. During an intelligence explosion, automated engineers would build **tens of thousands of times more** RL environments than exist today, longer-running and more realistic, including agents dropped into simulated digital economies of millions of other agents and evolved over centuries of simulated corporate competition. Two transfer arguments support it: even at a ten-thousandth of that scale, Claude Code and Codex already orient themselves in unseen repositories; and human cognition is itself the existence proof — evolution optimized for hunting, predator avoidance, and tribal standing, yet produced a general-purpose learner able to write Pulitzer biographies and design semiconductors. He adds the Rockefeller/Napoleon case as a second existence proof: both achieved world-class results within roughly two years of entering their field, implying **experience-acquisition efficiency, not decades of exposure,** is the relevant variable — and there is no reason to think humans are the ceiling on it.
+
+**Sample efficiency as AI's Millennium Prize problem.** The appendix reframes the deepest open problem in ML — how to learn quickly from real-world data, spanning pretraining-loss sample efficiency, RL environment efficiency, and in-context learning within a single session — as verifiable, and therefore destined for the same treatment mathematics just received. Verifiability pays twice: it enables RL against proxy objectives (e.g. minimize compute to train a GPT-2-sized model to fixed loss), and it lets agents work **in parallel** because each can locally check whether it beat a leaderboard before merging.
+
+**Assessment.** What is new relative to prior wiki coverage is not the underlying data — METR's 2x, OpenAI's $1,000→$7,000/day, and Anthropic's 26% all already appear in [[concepts/ai-progress-dynamics]] and related pages — but the *forecast structure*: a named author, a stated median year, a stated tail probability, a 3x pull-in against his own August position, and a clean two-branch taxonomy that makes the disagreement falsifiable. Treat the takeoff-pace claims as contested; read the compute-split and sample-efficiency appendix as the durable technical content. Sequel on what these minds look like promised at time of writing.
+
+Raw: `raw/articles/dwarkesh.com--p-rsi--c6057bc7.md` (45 KB, full text). Source: https://www.dwarkesh.com/p/rsi
+
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — The broader harness engineering discipline; RSI is the frontier where harnesses improve themselves
@@ -431,6 +462,7 @@ Both are Level-1/2 instances (human-designed improvement loops, agent-chosen tac
 - [[concepts/evaluation/sociohack-reward-hacking]] — Institutional reward hacking dynamics relevant to RSI governance
 - [[entities/anthropic]] — Most comprehensive public RSI disclosure; "When AI builds itself" (June 2026)
 - [[entities/lilian-weng]] — Author of the comprehensive RSI-through-harness survey
+- [[entities/dwarkesh-patel]] — Author of the Nov 14 2026 "avalanche" essay; median 2028 for human-matching automated AI researchers
 - [[entities/ryan-greenblatt]] — Chief Scientist at Redwood Research; debated RSI plausibility with Dwarkesh Patel (Aug 2026, median 2031 for automating AI R&D)
 - [[concepts/agi-declaration-controversy-2026]] — The Sept 2026 AGI wave reframed RSI as a visible industry
 - [[entities/jan-leike]] — Anthropic agentic-safety lead; 'AI research automation is the big thing coming'

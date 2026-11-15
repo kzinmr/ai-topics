@@ -370,6 +370,7 @@
     "https://developer.apple.com/news/?id=gdk2umrf",
     "https://developer.apple.com/news/?id=sus6t6ab",
     "https://developer.apple.com/private-cloud-compute/",
+    "https://developers.openai.com/api/docs/guides/latency-optimization",
     "https://developers.openai.com/api/docs/guides/prompt-guidance-gpt-5p6",
     "https://developers.openai.com/cookbook/examples/partners/macro_evals_for_agentic_systems/macro_evals_for_agentic_systems",
     "https://devin.ai/blog/windsurf-is-now-devin-desktop",
@@ -1248,6 +1249,7 @@
     "https://modal.com/blog/nvidia-vera-sandboxes",
     "https://modal.com/blog/sakana-case-study",
     "https://modal.com/blog/sandbox-bursting",
+    "https://modal.com/blog/scaling-intelligence",
     "https://modal.com/blog/spec-is-all-u-need",
     "https://modal.com/blog/unpacking-sandbox-startup-latency",
     "https://morphing.cloud/hypercard/",
@@ -3237,5 +3239,5 @@
     "substack.com/ui-wrapper (Link 8)",
     "substack.com/ui-wrapper (Link 9)"
   ],
-  "updated": "2026-11-15T10:38:53.989587+00:00"
+  "updated": "2026-11-15T18:32:53.687301+00:00"
 }

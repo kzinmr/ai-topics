@@ -978,7 +978,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2350 pages)
+## Concepts (2351 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
@@ -2843,6 +2843,7 @@
 - [[concepts/privacy-engineering]] — Privacy Engineering
 - [[concepts/privacy-ethics]] — Privacy Ethics
 - [[concepts/privacy-preserving-computing]] — Privacy-Preserving Computing — FHE, TEE, PIR, differential privacy as a family of private-computing primitives for AI (Aug 2026)
+- [[concepts/personal-agent-protocol-poppy]] — Personal Agent Protocol (Poppy) — Sierra's open standard for personal-agent-to-company identification and OAuth-scoped permissions atop MCP/OpenAPI/UCP; v1.0 Nov 14 2026 with Shopify all-merchant rollout, Meta Muse auto-discovery, 100+ partners (Mercury, Synchrony, Turkish Airlines live)
 - [[concepts/probabilistic-engineering]] — Probabilistic Engineering
 - [[concepts/probabilistic-era-software]] — Probabilistic Era — Building AI Products After the Ontological Shift
 - [[concepts/probe-and-prefill]] — Probe&Prefill
@@ -2920,7 +2921,7 @@
 - [[concepts/recommendation-systems]] — recommendation-systems
 - [[concepts/recurse-center]] — Recurse Center
 - [[concepts/recursive-language-models]] — Recursive Language Models → Redirect
-- [[concepts/recursive-self-improvement]] — Recursive Self-Improvement (RSI) — AI improving its own machinery via harness engineering: self-improving harnesses, evolutionary search, auto-research workflows (Weng, Jul 2026); Nov 2026 production adjacencies (Together Compiler TKCC, Hex Hero)
+- [[concepts/recursive-self-improvement]] — Recursive Self-Improvement (RSI) — AI improving its own machinery via harness engineering: self-improving harnesses, evolutionary search, auto-research workflows (Weng, Jul 2026); Nov 2026 production adjacencies (Together Compiler TKCC, Hex Hero); Dwarkesh Patel Nov 14 2026 essay — median 2028 for human-matching automated researchers, software-only-singularity vs spark split
 - [[concepts/red-green-tdd]] — Moved to concepts/harness-engineering/agentic-workflows/red-green-tdd.md
 - [[concepts/redis]] — In-memory data-structure server; agent streaming bus, queue, and lightweight vector store; RSAL-to-AGPLv3 license history
 - [[concepts/reduce-offload-isolate]] — Reduce Offload Isolate

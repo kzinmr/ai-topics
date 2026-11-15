@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-11-06
+updated: 2026-11-15
 type: entity
 tags:
   - company
@@ -299,6 +299,11 @@ Source: [[raw/articles/sierra.ai--blog-jpmorganchase-hall-of-innovation--3856e7f
 
 **Accelerators** (Nov 2026). Prebuilt, Sierra-maintained workflow packages added to an agent — "the basics" that commoditize across industries: greetings, multilingual interaction, name matching, CSAT collection, plus industry packs (banking: transaction search, dispute status, financial-advice guardrails; healthcare: appointment scheduling, patient authentication, clinical-safety guardrails that detect when a routine call becomes urgent; telecom/media: retention journeys, billing, proactive upsells; insurance: quoting, first-notice-of-loss intake, coverage-advice guardrails). Key design properties: (1) versioned upgrades — Sierra's updates preserve customer customizations tracked separately, with a full change review before applying (contrast with one-time templates); (2) system-agnostic — a workflow connects to the customer's existing system of record rather than requiring a replacement; (3) soon, customers can build and share their own internal Accelerators (e.g. a legal-approved guardrail set) across teams. Pairs with Ghostwriter (which customizes them) and targets "testing in minutes" time-to-value. First Accelerators live in Agent Studio.
 Source: [[raw/articles/sierra.ai--blog-accelerators--3122018d.md]]
+
+### Poppy v1.0 (November 14, 2026)
+
+Sierra released **v1.0 of the Personal Agent Protocol (Poppy)**, its open standard for how a consumer's personal agent identifies itself to a company and discovers what it is allowed to do — built from MCP, OpenAPI, UCP and OAuth rather than a new wire format, with staged adoption. Three adoption facts at v1.0: **Shopify enabled Poppy for every merchant** (175+ countries; stores already support UCP by default so they auto-publish a Poppy file with no merchant work), **Meta's Muse now looks for Poppy first on every site it visits**, and **60 new design partners** brought the total past 100 (including Delta Air Lines, Intuit, Salesforce, SoFi, Twilio, Wayfair, Zoom). First live deployments: **Mercury** (balance/transaction/categorization/budget tasks; payments and transfers must clear the account's existing approval policy), **Synchrony** (financing-aware agent-led shopping across a 500,000+ merchant network), **Turkish Airlines** (fares, flight status, booking lookup by reference+surname, Miles&Smiles business-class upgrade finding with customer approval before payment). Shopify co-authored Poppy's **commerce extension**, which draws the seam with UCP — UCP handles cart and checkout, Poppy handles arrival, identification and permission — and connects to **UCP Ask** so a shopper's agent can talk to the store's agent. Full treatment: [[concepts/personal-agent-protocol-poppy]].
+Source: [[raw/articles/sierra.ai--blog-releasing-poppy--1f27a1fb.md]]
 
 ## Significance
 

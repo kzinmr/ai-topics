@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-11-15T18:32:53.686605+00:00",
+  "triage_run_id": "20261115T180026Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming-groupが応答レンダリング長上限で失敗しクラスタ解析が未生成だったため、checkpoint（total_articles 0 / recent_raw_articles 251）からPattern Eファイルシステムスキャンを実行。archive_index.json不在チェックで59件の未トリアージrawを抽出し、本文を全文読んだうえで判定。take 2件（Sierra Personal Agent Protocol v1.0→新ページ、Dwarkesh Patel「avalanche」随筆→recursive-self-improvement更新）、reference 4件、残りは既存カバー済み・非AI・プロダクトマーケティングとしてスキップ。",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-modal-scaling-intelligence",
+      "source": "dreaming",
+      "source_name": "Modal Blog",
+      "title": "Scaling Intelligence: A landmark commission and exhibition",
+      "url": "https://modal.com/blog/scaling-intelligence",
+      "raw_path": "raw/articles/modal.com--blog-scaling-intelligence--47399f05.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Modal × Gray Area（SF非営利）による11点のAIアーティスト commissioned 展覧会の紹介。作家名と作品概念的説明のみで、モデル・推論・エージェント技術に関する具体的主張なし。AIと芸術の接点としては記録価値があるが、現行wikiの閾値（relevance 0.30 / conceptual_richness 0.05）未満。entities/modalも未作成のため新規化は見送り。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-openai-latency",
+      "source": "dreaming",
+      "source_name": "OpenAI Developer Docs",
+      "title": "Latency optimization (API guide)",
+      "url": "https://developers.openai.com/api/docs/guides/latency-optimization",
+      "raw_path": "raw/articles/developers.openai.com--api-docs-guides-latency-optimization--8b4236c2.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 公式APIガイドで新事実はなし（推論遅延の一般的アプローチ）。推論レイテンシは既存ページ群がカバー。ドキュメントのraw保存のみでwiki変更不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-sitemap-batch",
+      "source": "dreaming",
+      "source_name": "sitemap-monitor (Hex / ElevenLabs / Harvey)",
+      "title": "Sitemap batch 2026-11-13/14 (Hex x5, ElevenLabs x3, Harvey x4 + 3 author pages)",
+      "url": "",
+      "raw_path": "raw/articles/2026-11-14_hex-technologies_ai-native-analytics.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ バッチスキップ。Hex 5件はデータアナリティクス製品マーケティング（評価フレーム紹介・ベンダーロックイン・ユースケース）、ElevenLabs 3件はTTS比較・Forward Deployed Creatives紹介・インパクト記事、Harvey 4件は製品機能／The Brief／Outlookエージェント紹介、加えて /blog/author/ のプロファイルページ3件は本文ゼロ。先頭60行＋本文 grep で benchmark/eval/model 系の具体的主張なしを確認。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-already-covered",
+      "source": "dreaming",
+      "source_name": "various (x-accounts-scan / active-crawl / trending-topics / watchdog)",
+      "title": "Already-processed never-archived items (subtext-skills, jepa, perplexity decider, unsloth, smolmaxxing, monad weights, replit microVM, borretti, hugotunius, nesbitt)",
+      "url": "",
+      "raw_path": "raw/articles/2026-11-14_github_theoryventures-subtext-skills.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ 既存カバー済み。subtext-skillsは entities/bryan-bischof.md L192 に全文相当の実装説明（columnar-v1、subtext-annotate/subtext-read、MIT）が存在。jepa→concepts/jepa-planning-methods（Nov 14 watchdog登録）、perplexity decider→concepts/perplexity-decider、unsloth→concepts/unsloth、smolmaxxing→entities/smolmaxxing、Monad重み編集→concepts/activation-steering、Replit microVM→concepts/agent-sandbox-patterns、borretti/hugotunius/nesbittは本日 watchdog 503復旧でエンティティ更新済み。archive_index不在はパイプラインのアーカイブ漏れであり内容欠落ではない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-nonai-batch",
+      "source": "dreaming",
+      "source_name": "various personal blogs",
+      "title": "Non-AI / opinion batch (johndcook x4, dfarq x3, filfre, shkspr, bernsteinbear, garymarcus x2, wheresyoured, sharptext, pluralistic, matduggan, coredump, x.com stubs x2)",
+      "url": "",
+      "raw_path": "raw/articles/johndcook.com--blog-2026-11-14-bash-rabbit-hole--a6efee80.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AIまたは新規主張なし。johndcook 4件は数学史・bash雑学、dfarq/filfre/shksprはレトロコンピューティングとハードレビュー、bernsteinbearはSSA/バイトコード一般解説。Marcus 2件とEd Zitron系は各自エンティティページが随時累積済みで新規データ点なし。x.com 2件は本文なしのツイートリンクスタブ。dreaming昇閾値（0.65）未満。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

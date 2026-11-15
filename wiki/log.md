@@ -2,6 +2,30 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-15] dreaming wiki-ingest | Pattern E saturation + 2 takes (Poppy v1.0, Dwarkesh RSI essay)
+
+> `dreaming-wiki-ingest` (18:20 UTC). Upstream `dreaming-group` (c4a9e8d2f671, 18:19) died with `RuntimeError: Response truncated due to output length limit` — the 5,341-line output file contained **only the injected checkpoint, no cluster analysis** (unlike the Aug 6 variant), and `triage_latest.json` was stale (run 20261113T180045Z, consumed by the Nov 13 cycle). No 18:10 dreaming commit exists. Checkpoint `20261115T180026Z`: `total_articles: 0`, `recent_raw_articles: 251` → **Pattern E** filesystem scan, decisive signal = `check_archive_index_absence.py` (59 never-archived of 118 recent).
+
+**Duplicate check first**: today's log.md already records blog-ingest 17 raw, blog-triage 5 takes/3 refs, newsletter 3 takes/4 refs, active-crawl 5 new concepts, trending-topics 3 new/5 updates, watchdog 503-recovery 5 enrichments, skeleton-enrich 9 stubs. All those candidates were excluded from re-triage.
+
+**Verification of never-archived candidates** (read bodies, then grep the target page's real content — not just `sources:`):
+
+| Candidate | Status | Detail |
+|---|---|---|
+| Dwarkesh "The avalanche that hit math is coming for AI development" (`dwarkesh.com--p-rsi`) | ❌ genuine gap → **take** (page update) | 45 KB essay. `concepts/recursive-self-improvement.md` had the Aug Greenblatt debate (median 2031) + METR 2x + Nov production adjacencies, but **zero** of the Nov-14 specifics: median 2028, 25% tail past 2032, 50x/80%-of-progress/transformer-invention arguments, software-only-singularity vs spark split, RL-environment transfer thesis |
+| Sierra "Releasing Personal Agent Protocol 1.0" (`sierra.ai--blog-releasing-poppy`) | ❌ genuine gap → **take** (new page) | `entities/sierra.md` had one Poppy sentence (50+ partners, Oct announcement). Absent: v1.0, Shopify all-merchant auto-publish, Meta Muse first-check, 100+ partners, UCP seam + commerce extension + UCP Ask, Mercury/Synchrony/Turkish Airlines deployments. Zero hits for "Personal Agent Protocol" in `wiki/index.md`; sibling PACT raw (Oct 7) never had a page either |
+| `modal.com--blog-scaling-intelligence` | ✅ skip | Modal × Gray Area art exhibition (11 commissioned artworks) — PR, no AI/LLM technical content |
+| `developers.openai.com--api-docs-guides-latency-optimization` | ✅ skip | Official docs guide, no novel claims; inference latency already covered |
+| `2026-11-14_hex-technologies_*` ×5, `elevenlabs_*` ×3, `harvey_*` ×4 (+3 author pages) | ✅ batch skip | Sitemap product-marketing chrome; `harvey_*-author` files are profile pages with no article body |
+| `2026-11-14_github_theoryventures-subtext-skills` | ✅ already covered | x-accounts-scan wrote the full description into `entities/bryan-bischof.md` line 192; raw is GitHub nav chrome |
+| `2026-11-13_haddyalchaer_jepa`, `perplexity_decider-v1.3`, `unsloth_qwen3.8`, `smolmaxxing`, `2026-11-14_muninn_*`, `2026-11-14_frontier.replit_*` | ✅ already covered | watchdog 503-recovery + trending-topics + x-accounts-scan + watchdog Nov 14 orphan registration |
+| `garymarcus.substack` ×2, `wheresyoured.at--hg-megaspeed`, `sharptext.net--jensen-huang-was-always-going-to-lose`, `pluralistic--outlookpocalypse`, `matduggan--free-as-in-money`, `blog.coredump.cx--spreadsheets`, `borretti--taking-ai-seriously`, `hugotunius--data-centres` | ✅ skip / already covered | Opinion commentary; borretti + hugotunius enriched by watchdog today; Marcus/Ed Zitron take-accumulation covered by their entity pages; no new specific claims meeting the 0.65 threshold |
+| `johndcook.com` ×4, `dfarq.homeip.net` ×3, `filfre.net`, `shkspr.mobi`, `bernsteinbear--ssa-bytecode`, `nesbitt--package-management` | ✅ skip | Non-AI (math history, retro computing, hardware reviews); nesbitt edition added by watchdog today |
+| `x.com--microsoft`, `x.com--davidsacks` | ✅ skip | Link-stub tweet raws, no body |
+
+**Changes**: 1 new page (`concepts/personal-agent-protocol-poppy.md`), 2 updates (`concepts/recursive-self-improvement.md` + new Nov-14 essay section, Related link, source; `entities/sierra.md` + Poppy v1.0 subsection, source), `index.md` +1 entry (Concepts 2350) and RSI description extended. All wikilink targets `[ -f ]`-verified; every tag whole-word-checked against SCHEMA (agent-protocol, interoperability, agent-identity, personal-ai, agent-communication, agentic-commerce, sierra, mcp, api-monetization — all present).
+
+**Archive**: `archive_triage.py dreaming --keep-reference` over the full 59-item never-archived set (skip + reference decisions) — permanent "why dismissed" record.
 
 ## [2026-11-15] watchdog | blog-wiki-ingest recovery (503 failure) — 5 pages enriched
 
