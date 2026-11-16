@@ -2,7 +2,7 @@
 title: "Components of Agent Memory (Anthropic Dreaming Research)"
 type: concept
 created: 2026-11-13
-updated: 2026-11-13
+updated: 2026-11-16
 tags:
   - ai-agents
   - memory-systems
@@ -93,3 +93,8 @@ offline during sleep. Agents capture work in logs/transcripts; dreaming replays 
 - [[concepts/agent-wikis]] / [[concepts/wiki-memory]] — the wiki representation component
 - [[concepts/claude/memory]] — file-based memory architecture
 - [[concepts/continual-learning]] — harness/context-layer learning
+
+## Reception
+
+- **2026-11-07** — [[entities/hugo-bowne-anderson]] amplified the post on X: "really cool post by @RLanceMartin about the components of agent memory. also opening with kierkegaard on human understanding is a boss level move" — singling out the Kierkegaard epigraph on human understanding. Same day he paired the post with Block/Jack Dorsey's "From Hierarchy to Intelligence" ([[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]]), framing organizational memory and organizations-as-intelligence as the organizational-scale counterpart to agent memory.
+- **2026-11-11** — Author [[entities/rlancemartin]] announced he would present the post alongside the Fable 5.2 1,000-agent FLT formalization.

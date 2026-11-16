@@ -2850,3 +2850,10 @@ research-grade pages from genuinely uncovered material:
 
 ## 2026-11-15 21:30 JST — hot-post (night)
 - Delivered: Nvidia circular-financing WSJ Kress evidence + DRAM price-fixing lawsuit (contrarian night angle). Archived to inbox/trending-reports/hot-post-2026-11-15-2130.md. Checks: NO_SLOP_FOUND, zero wikilink MISSes, NO_TYPO.
+
+## 2026-11-16 22:30 UTC — x-accounts-scan
+
+- Scanned 10 accounts (cursor 40→51, budget 12) → 9 new posts, 1 error (@koylanai user_id unresolved).
+- AI-relevant: Hugo Bowne-Anderson ×2 (Anthropic components-of-agent-memory + Block From Hierarchy to Intelligence) → X Activity Log + Reception section in [[concepts/components-of-agent-memory]]. Armin Ronacher → "AI and Irontown" (Princess Mononoke analogy for AI trade-offs; raw already saved 2026-11-10) added to Recent Themes.
+- Skipped: Hynek release tweets ×4 (stamina 26.2.0 / bgt 26.3.0 / argon2-cffi-bindings 26.2.0 / sponsors — Python packaging, no AI relevance), Will McGugan ×2 (otter video, Bluesky reply).
+- Files touched: entities/hugo-bowne-anderson.md, entities/armin-ronacher.md, concepts/components-of-agent-memory.md, log.md. Index: no new pages.

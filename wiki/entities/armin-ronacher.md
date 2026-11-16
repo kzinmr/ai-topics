@@ -6,9 +6,9 @@ tags:
   - developer-tooling
   - web-framework
 created: 2026-04-24
-updated: 2026-10-30
+updated: 2026-11-16
 type: entity
-sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md, raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md, raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md, raw/articles/lucumr.pocoo.org--2026-9-7-astra-why--f41d7a13.md]
+sources: [raw/articles/2026-06-10_pocoo_gaslighting-openness.md, raw/articles/lucumr.pocoo.org--2026-6-13-americans-only--3fd240e6.md, raw/articles/lucumr.pocoo.org--2026-6-23-the-coming-loop--5fc36909.md, raw/articles/lucumr.pocoo.org--2026-7-4-better-models-worse-tools--5d8627e5.md, raw/articles/lucumr.pocoo.org--2026-7-13-the-tower-keeps-rising--5c6ef777.md, raw/articles/2026-07-16_armin-ronacher_reactive-agents-are-proactive.md, raw/articles/lucumr.pocoo.org--2026-8-24-anger-anxiety-agency--be7ca2d9.md, raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md, raw/articles/lucumr.pocoo.org--2026-9-7-astra-why--f41d7a13.md, raw/articles/lucumr.pocoo.org--2026-11-9-irontown--c49a7987.md]
 ---
 
 
@@ -292,6 +292,10 @@ Source: [[raw/articles/lucumr.pocoo.org--2026-9-5-latent-powers--6e8dcc87.md]] (
   - **Why it matters:** the empirical counterpart to [[concepts/formal-verification-llm-agents]] — without a mechanically checkable correctness signal, an agent rewarded for "keep going / succeed at horizon" produces volume, not value. Direct extension of his "The Coming Loop" thesis that loops excel at *mechanically verifiable* tasks (porting, perf, scanning), not lasting code. See also [[entities/openai-astra]], [[concepts/ai-slop]].
 
 Source: [[raw/articles/2026-09-11_ronacher_astra-involution-note]] (lucumr.pocoo.org, Sep 7 2026)
+
+**AI and Irontown — reconciling incompatible needs (November 2026):** In "AI and Irontown" (Nov 9, 2026), Ronacher uses *Princess Mononoke*'s Irontown — Lady Eboshi's settlement that gives lepers and former sex workers work, protection and dignity, while its mine and gun factory destroy the surrounding forest — as his framing for AI's "largely incompatible needs." AI is the iron: empowering and consequential beyond its users; there are people "who were never let in before and who can now build things that were out of reach," but the negative externalities are borne by others, including other humans ("Irontown produces guns"). He identifies with Ashitaka — condemned by an encounter with a demon-god, refusing to take sides, wanting only "to understand and find the truth" — and notes the unseen power-hungry emperor (who wants the forest spirit's head for immortality, a cause Eboshi supports not out of conviction but expedience) as the third, usually invisible party in these trade-offs. Continues his "Anger, Anxiety and Agency" emotional-register thread and his refusal of villain narratives, now via Miyazaki rather than Bruegel. Blog-side note (Nov 16): he redesigned the blog header/footer and is "quite pleased with it."
+
+Source: [[raw/articles/lucumr.pocoo.org--2026-11-9-irontown--c49a7987.md]] (lucumr.pocoo.org, Nov 9 2026; [tweet](https://x.com/mitsuhiko/status/2122450939428696232))
 
 ## Qwen3-TTS: voice embeddings as a manipulable medium (Oct 2026)
 
