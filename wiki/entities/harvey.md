@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-11-07
+updated: 2026-11-16
 tags:
   - security
   - company
@@ -58,6 +58,7 @@ sources:
   - raw/articles/2026-10-30_harvey_legal-agent-bench-us-case-law.md
   - raw/articles/2026-10-28_harvey_legal-engineer-help-legal-teams-apply-expertise-with-ai.md
   - raw/articles/2026-11-06_harvey_forum-chicago-product-announcements.md
+  - raw/articles/2026-11-14_harvey_building-ethical-wall-enforcement-into-harvey.md
 ---
 
 # Harvey
@@ -1094,3 +1095,22 @@ Product announcements from Harvey's FORUM Chicago event ([post](https://www.harv
 **Read**: the through-line is **channel-native entry points plus delegation with an approval gate** — Harvey is competing less on model quality than on occupying the surfaces legal work actually arrives through (Outlook, an email thread, a request queue), while keeping human sign-off on every state change. That is the enterprise-agent pattern in [[concepts/enterprise-agents]] applied to a professional-services workflow, and the "no form, no portal" intake design is the concrete answer to the intake-form two-sided failure documented above.
 
 Source: [[raw/articles/2026-11-06_harvey_forum-chicago-product-announcements.md]]
+
+
+## Ethical wall enforcement architecture (Nov 13, 2026)
+
+Harvey published an engineering deep-dive on how it enforces law-firm **ethical walls** (information barriers) across every product surface, not just the DMS. Wall semantics: an *inclusionary* wall allows only listed people; an *exclusionary* wall blocks listed people and allows everyone else. The core problem the post addresses: firms keep matter records and wall policies in their own systems, and the DMS enforces walls on stored documents — but Harvey *creates* conversations, tables and drafts from those documents, so the platform must carry the same enforcement onto derived work.
+
+**Import architecture.** Matter identity is separated from access policy; provider adapters translate each wall provider's data into one common model, and each firm's data stays in its own private workspace. Two separate sync jobs: **Client Matter sync** (finds/links/creates matters, can set up walls) and **Wall sync** (refreshes policy for already-linked matters). Kept separate because walls change at any moment (e.g. a lateral hire arriving with a conflict) while matters open at a steady pace; a failure in one job never blocks the other; firms can adopt them independently. Both run on **Temporal** durable workflows — bounded batches, controlled concurrency, targeted retries, a sync report per run — with webhook delivery where available and scheduled sync as backstop.
+
+**Fail-closed sync.** People on a wall are matched to Harvey users by email. If a policy fetch fails, Harvey keeps the last stored policy; if an exclusionary-wall member lookup fails, the whole update is skipped (a failed lookup never removes someone from a block list); if an inclusionary-wall member can't be matched, they stay off the list (fail-out). Wall-admin audit events (create/change/remove) are exportable via UI and API.
+
+**Search vs. enforcement separation.** The Client Matter picker is backed by a dedicated **turbopuffer** search index (one record per workspace per matter; matter code + client + name + description + Space name) — largest workspace ~1.7M matters. The index contains searchable text, *not* wall data: matters are found via the index, then loaded from the database and checked against the stored policy before results return, so a stale index can never determine access. Non-cleared walled matters don't appear in the picker at all, even as locked entries.
+
+**One policy engine, per-surface checks.** Access = resource permission + clearance for *every* linked Client Matter. Files carry their own matter link, so a precedent from Matter B keeps B's wall even inside a Matter A Vault project (per-project modes: *filtered view* shows only cleared files; *restricted view* requires clearance for all represented matters). A conversation inherits matters from every source — including every file in a Vault project used as a source, not just cited ones — and the matter link **outlives attachment removal** because earlier answers may already contain the content. Sharing checks clearance at share time *and* at each open; an uncleared link-open responds as if the work doesn't exist (no existence confirmation). Scheduled agents run as their owner with wall checks per file read; matter-bound memories are wall-checked before use. Retrieval pre-filters by matter before ranking, then re-checks each returned file against the *current* stored policy before content reaches the model (the index is only eventually consistent). Admin roles never bypass walls.
+
+**Storage dedup.** Many walls share identical member sets (a client team on many matters), so each distinct membership set is stored once per workspace, addressed by a fingerprint hash of the normalized member list (verified by full member comparison before reuse). Shared sets are never mutated in place — a changed wall points to a new set, keeping every other wall's policy independent. Encryption AES-256 at rest / TLS 1.2+ in transit; no customer-data training; integration credentials stay inside Harvey's security boundary.
+
+**Read**: the design generalizes beyond legal tech — it is a worked example of policy-in-data-plane enforcement for enterprise agents: derived artifacts (conversations, memories, agent runs) inherit source-document ACLs transitively, the search index is advisory while the stored policy is authoritative, and every sync failure path is fail-closed. Connects to [[concepts/enterprise-agents]], [[concepts/context-engineering/context-graph]] (the graph side of the same "respect existing permissions" requirement), and [[concepts/lifelong-agent-memory]].
+
+Source: [[raw/articles/2026-11-14_harvey_building-ethical-wall-enforcement-into-harvey.md]]

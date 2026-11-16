@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-11-16T18:28:57.088313+00:00",
+  "triage_run_id": "20261116T180001Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming-group が応答レンダリングで失敗（output file 5387行）したため、output file の Response セクションから4件のreference候補を復元し、Deep Sleep検証ゲートで独立確認。take 0件（飽和日：trending-topics/active-crawlが同日のAI記事を消費済み）。reference 2件実行（harvey ethical wall enforcement architecture=実ギャップ／pinecone MCP=内容2025-08-28の遅延取り込みのため簡潔ノート）。skip 2件（Gödel paywall stub=rawに全事実収録済み、Hex robots=既存L187-209のfalse positive）+ 飽和クラスタ9件をバッチスキップ。",
+  "decisions": [
+    {
+      "item_id": "dr-1116-harvey-wall",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Building Ethical Wall Enforcement Into Harvey",
+      "url": "https://www.harvey.ai/blog/building-ethical-wall-enforcement-into-harvey",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-14_harvey_building-ethical-wall-enforcement-into-harvey.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★★☆ entities/harvey.md は ethical walls の1行言及のみで、実装アーキテクチャ（Client Matter sync / Wall sync の二重ジョブ、Temporal、turbopuffer ピッカー、フェイルクローズ同期、membership set 指紋化）は完全未収録。下流で entities/harvey.md に新セクションとして追加済み。",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": "# Building Ethical Wall Enforcement Into Harvey\n**Source**: [https://www.harvey.ai/blog/building-ethical-wall-enforcement-into-harvey](https://www.harvey.ai/blog/building-ethical-wall-enforcement-into-harvey)\n:Harvey:\nProducts\nSolutions\nCustomers\nSecurity\nResources\nCompany\nPlatform\nOverview\n→\nOne pl"
+    },
+    {
+      "item_id": "dr-1116-pinecone-mcp",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Pinecone MCP Server: Let the Agent Check, Let a Script Load",
+      "url": "https://www.pinecone.io/blog/pinecone-mcp-server-let-the-agent-check/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-16_pinecone_pinecone-mcp-server-let-the-agent-check.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ 本文内容は2025-08-28のウェブイントラ記事で、sitemap遅延取り込み（11-16スクレイプ、lastmodのみ11-15）。entities/pinecone.md にMCP未収録だったため、内容日付を明示した簡潔なノートを追加。check-with-MCP / load-with-script パターンの具体例として concepts/mcp と接続。",
+      "candidate_wiki_path": "entities/pinecone.md",
+      "body_excerpt": "# Pinecone MCP Server: Let the Agent Check, Let a Script Load\n**Source**: [https://www.pinecone.io/blog/pinecone-mcp-server-let-the-agent-check/](https://www.pinecone.io/blog/pinecone-mcp-server-let-the-agent-check/)\n←\nBlog\nPinecone MCP Server: Let the Agent Check, Let a Script Load\nTeam Pinecone\nAu"
+    },
+    {
+      "item_id": "dr-1116-godel",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "AI unlocks Godel's notebooks said to contain hundreds of proved theorems",
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-15_guardian-godel-notebooks-ai.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Guardian記事はpaywallで本文未取得、rawはHNスレッド再構成のスタブ。スレッド事実（von Plato、ERC 250万ユーロ、Gabelsberger速記、未公開定理数百、CH独立性、HN 50486748/430pts）はすべてrawに逐語収録済みで、wikiに加える新主張なし。既存 concepts/ai-mathematics-theorem-proving.md はAstra結果スコープのため別トピック。二次ソース待ちでスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "[letmevoteplease] In the first paragraph, we have an evidence-free insinuation that the foremost expert on this subject is some kind of shill running a campaign for Anthropic. What does this campaign involve? Is he just making it all up? Let me hear your theory of what is happening here and how it i"
+    },
+    {
+      "item_id": "dr-1116-cluster-nvidia",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "NVIDIA Huang exit saga cluster",
+      "url": "https://www.wsj.com/tech/nvidia",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ events/nvidia-ceo-transition-2026 で飽和（trending-topics 11-16更新済み）。upstream grouping ステージのクラスタ判定を独立検証（log.md 同日エントリ + wiki find で収録確認）のうえ踏襲。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch entry — cluster-level decision)"
+    },
+    {
+      "item_id": "dr-1116-cluster-models",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Model releases cluster (Qwen4-Max/Gemini4-Hydrogen/Edge0-145B/Unsloth Qwen3.8)",
+      "url": "https://qwen.ai",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ trending-topics 11-16 + active-crawl で収録済み。upstream grouping ステージのクラスタ判定を独立検証（log.md 同日エントリ + wiki find で収録確認）のうえ踏襲。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch entry — cluster-level decision)"
+    },
+    {
+      "item_id": "dr-1116-cluster-inference",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Inference/training research cluster (4-bit training/GLM-5.3 DGX/DeepSeek-V3-JAX/Raschka positional)",
+      "url": "https://news.ycombinator.com",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Nov 13-16 パイプラインで収録済み。upstream grouping ステージのクラスタ判定を独立検証（log.md 同日エントリ + wiki find で収録確認）のうえ踏襲。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch entry — cluster-level decision)"
+    },
+    {
+      "item_id": "dr-1116-edu-bookmarks",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Education bookmarks (Fleuret Little Book / AI Futures timelines)",
+      "url": "https://stanford.edu",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 既存 concepts/ai-education に対して差分わずか。upstream grouping ステージのクラスタ判定を独立検証（log.md 同日エントリ + wiki find で収録確認）のうえ踏襲。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch entry — cluster-level decision)"
+    },
+    {
+      "item_id": "dr-1116-non-ai",
+      "source": "dreaming",
+      "source_name": "dreaming-pattern-e",
+      "title": "Non-AI batch (dfarq / shkspr / johndcook / vintage computing 等)",
+      "url": "https://daringfireball.net",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ AI/LLM/agent 関連性ゼロの一括スキップ。upstream grouping ステージのクラスタ判定を独立検証（log.md 同日エントリ + wiki find で収録確認）のうえ踏襲。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "(batch entry — cluster-level decision)"
+    }
+  ]
+}

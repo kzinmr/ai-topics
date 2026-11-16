@@ -3,6 +3,31 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-11-16] dreaming wiki-ingest | upstream render-fail recovered; 2 references enriched, 2 verified-skips
+
+> `dreaming-wiki-ingest` (18:20 UTC). Upstream `dreaming-group` (job c4a9e8d2f671) completed Pattern-E analysis of ~45 Nov 13–16 raws but failed the JSON response render (`output_path` 2026-11-16_18-17-01.md, 5,387 lines). `triage_latest.json` was stale (11-15, consumed per log.md), so the 4 downstream reference candidates were recovered from the output file's Response section and independently verified per the Deep Sleep gate. Checkpoint: total_articles 0 / recent_raw_articles 253 (saturation day — trending-topics + active-crawl + hot-post already consumed the day's AI stories).
+
+### Reference verification gate (4 candidates)
+
+| Candidate | Status | Details |
+|---|---|---|
+| Harvey "Building Ethical Wall Enforcement" (Nov 13) | ❌ Genuine gap → enriched | entities/harvey.md had only 1-line ethical-wall *mentions* (L285/345/605/692); zero coverage of the enforcement architecture (dual sync jobs, Temporal, turbopuffer picker index, fail-closed sync, membership-set fingerprinting) |
+| Pinecone MCP "Let the Agent Check, Let a Script Load" | ⚠️ Marginal → brief note | entities/pinecone.md had 0 MCP mentions; added compact note **flagging content date Aug 28 2025** (sitemap late-ingestion, not a Nov 2026 development) |
+| Gödel notebooks (Guardian via HN) | ❌ Skip | Raw is a paywalled stub; all thread facts (von Plato, €2.5m ERC, Gabelsberger shorthand, hundreds of unpublished theorems, CH-independence, HN 50486748/430p) already verbatim in raw; existing concepts/ai-mathematics-theorem-proving.md is Astra-results-scoped — no second source to add |
+| Hex "robots to rewrite Hex" (Nov 12) | ✅ Already covered | entities/hex-technologies.md L187–209 has the full seven-rule playbook incl. signature-freeze and wrapper-string tricks; upstream's candidate was a false positive |
+
+### Updated pages
+- `entities/harvey.md` — new section "Ethical wall enforcement architecture (Nov 13, 2026)": inclusionary/exclusionary wall semantics, provider-adapter import model, Client-Matter-sync vs Wall-sync split on Temporal, fail-closed email-matching rules, turbopuffer matter picker (~1.7M matters, index advisory / stored policy authoritative), per-surface policy engine (file matter links outlive attachment removal; conversation inherits every Vault-project file's matter; share-time + open-time checks; no-existence-confirmation response), fingerprint-deduped immutable membership sets, AES-256/TLS posture, audit events. Wikilinks: enterprise-agents, context-graph, lifelong-agent-memory.
+- `entities/pinecone.md` — "Pinecone Developer MCP Server — check-with-MCP, load-with-script" note: nine tools / seven read-only, agent-checks-human-runs loop, docs-reference anti-hallucination tool, legacy-integrated-index caveat; cross-ref [[concepts/mcp]].
+
+### Duplicate check
+No overlap with trending-topics (Qwen4-Max/open-source-code/Huang/DRAM) or active-crawl (positional-embeddings/agent-hardware/OpenAI-robotics) — those are disjoint topics; all 9 upstream clusters confirmed saturated.
+
+### Archive
+9 skip/reference decisions archived via `scripts/archive_triage.py dreaming --keep-reference` (see dated JSON under wiki/raw/archived/triage/dreaming/).
+
+
+
 
 ## [2026-11-16] watchdog-fix | Index hub registration + ghost cleanup
 

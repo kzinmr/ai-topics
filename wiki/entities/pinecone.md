@@ -2,7 +2,7 @@
 title: "Pinecone"
 type: entity
 created: 2026-05-08
-updated: 2026-11-12
+updated: 2026-11-16
 tags:
   - company
   - search
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-10-28_pinecone_introducing-pg-pinecone.md
   - raw/articles/2026-11-10_pinecone_self-hosted-vector-search.md
   - raw/articles/2026-11-13_pinecone_integrated-embedding-google.md
+  - raw/articles/2026-11-16_pinecone_pinecone-mcp-server-let-the-agent-check.md
 ---
 
 # Pinecone
@@ -243,6 +244,20 @@ Notably, Pinecone states plainly that **HNSW performs very well on benchmarks** 
 **Read**: this is vendor marketing, but unusually falsifiable — a named operational checklist, an explicit concession on benchmark performance, and a "don't buy from us" branch. It is a useful counterweight to both the self-hosted-equals-sovereignty framing and the serverless-equals-free framing. Related: [[concepts/vector-search]], [[concepts/vector-databases]], [[concepts/vq-bench]].
 
 **Source:** [[raw/articles/2026-11-10_pinecone_self-hosted-vector-search]]
+
+
+### Pinecone Developer MCP Server — check-with-MCP, load-with-script (Nov 15, 2026 page update)
+
+Sitemap-scraped Nov 16, but the article is **content-dated Aug 28, 2025** (a writeup of Arjun Patel's webinar "Zero to Semantic Search with Pinecone's MCP Server, Cursor and Claude Code") — late ingestion, not a new development. Its thesis is a clean division of labour for agent tooling: *the MCP server is most useful as the agent's view of index state, and least useful as the thing that loads your data.*
+
+- Without the MCP, a coding agent in Cursor/Claude Code sees only repo code: it cannot verify an index exists, what's in it, record counts, or whether the last upsert succeeded. "Did that work?" becomes a tool call only once the MCP is connected.
+- The Pinecone Developer MCP exposes **nine tools, seven of which mutate nothing** — they are the agent's eyes before acting and after. The recommended loop: agent writes the loader script, a human runs it, the agent *checks* the result via MCP tool calls (e.g. count comparison) — no script execution inside the agent loop.
+- Docs-reference tool doubles as hallucination control for outdated Pinecone SDK code: point the agent at docs before it writes, then check what it wrote.
+- Caveat the post itself flags: create/upsert/search tools operate on **legacy integrated indexes**; new Pinecone indexes are dedicated (REST API creates only those), so the demo runs on the legacy path.
+
+**Read**: an instance of the check-vs-load separation pattern for MCP servers — read-only verification tools belong in the agent loop, bulk mutation belongs behind a human-run script. Related: [[concepts/mcp]].
+
+Source: [[raw/articles/2026-11-16_pinecone_pinecone-mcp-server-let-the-agent-check.md]]
 
 ## Related
 
