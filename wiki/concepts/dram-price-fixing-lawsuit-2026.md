@@ -1,7 +1,7 @@
 ---
 title: "DRAM Price-Fixing Lawsuit (2026)"
 created: 2026-11-15
-updated: 2026-11-15
+updated: 2026-11-16
 type: concept
 tags: [hardware, ai-industry, law, nvidia, memory-standards]
 sources:
@@ -39,6 +39,14 @@ Not credited: "supply discipline" investor statements, industry-conference meeti
 - The HBM pivot is the demand-side story: AI accelerator builders (NVIDIA, AMD) reserve the wafer capacity, and consumer/commodity DRAM scarcity follows — this suit legalizes a conspiracy narrative for what the industry frames as rational HBM arbitrage.
 - Connects to the Nov 2026 memory-price political controversy (Sam Altman's DRAM-to-datacenters remark, [[entities/ed-zitron]]'s systemic-risk framing) and [[concepts/ai-industry-economics]] cost structures.
 - If the case proceeds past class certification, memory-capacity allocation decisions by the 91% oligopoly become discovery targets — a governance question for [[concepts/ai-regulation-2026]] adjacent antitrust doctrine.
+
+## November 16 update: motion to dismiss denied
+
+The conspiracy suit survived dismissal (litnews.ai, Nov 15; HN 514 pts / 226c,
+https://news.ycombinator.com/item?id=50502988), clearing the path to discovery against Samsung, SK Hynix
+and Micron. The ruling lands mid-shortage, which commenters read as raising the cost of waiting for
+capacity relief that AI demand has consumed — and as a second antitrust front alongside the NVIDIA
+export-control/smuggling scrutiny ([[events/nvidia-ceo-transition-2026]]).
 
 ## Related
 

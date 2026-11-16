@@ -6,7 +6,7 @@ tags:
   - open-source
   - optimization
 created: 2026-04-14
-updated: 2026-04-27
+updated: 2026-11-16
 type: concept
 sources:
   - raw/articles/crawl-2026-04-27-vllm-features.md
@@ -108,6 +108,16 @@ llm = LLM(
 - [[concepts/inference/sglang]] — SGLang serving framework
 - [[concepts/speculative-decoding]] — Inference acceleration technique
 - [[concepts/local-llm/model-quantization]] — Quantization formats and techniques
+
+## NVIDIA DGX cross-node benchmark: GLM-5.3 at 607.8 tok/s (November 2026)
+
+NVIDIA's developer blog benchmarked **GLM-5.3 served across two DGX stations with vLLM**, reporting
+aggregate throughput **peaking at 607.8 tok/s** on SPEED-Bench Coding with prefix caching
+([HN 147 pts](https://news.ycombinator.com/item?id=50497155); raw:
+`raw/articles/2026-11-16_nvidia_glm53-vllm-dgx.md`). Commenters noted the vendor incentive in the
+model choice — DeepSeek-V4.1-Flash's smaller per-user memory footprint "would sell fewer GPUs" ([gpugreg]) —
+and reported GLM's edge in offensive-security workloads vs DeepSeek's better concurrency economics.
+See [[concepts/glm-5-3]], [[concepts/deepseek-v4-serving]].
 
 ## Sources
 

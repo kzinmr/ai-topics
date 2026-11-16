@@ -978,7 +978,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2351 pages)
+## Concepts (2355 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
@@ -986,6 +986,7 @@
 - [[concepts/agweb-browser-for-agents]] — Agweb: WebKit-based macOS browser for coding agents (never-steals-focus window, per-agent workspaces, shared login profiles, secret-safe fill, HN 100pts Nov 14 2026)
 - [[concepts/ai-engineering-dekilling]] — AI engineering de-skilling — the erosion of code comprehension and debugging skill from 100% AI-mandate orgs and 'brain fry': r/ClaudeCode one-year retrospective (HN 129pts), Kuhne's manual-coding regimen (HN 306pts), Goldman's engineer-only Claude Code restriction; distinct from cognitive-deskilling (knowledge work) and agent model drift (infra)
 - [[concepts/agent-selected-hardware]] — Agent-Selected Hardware (Geoff Stearns, HN 75): when agents install device firmware, hackability/open firmware become competitive product features; M-Vave FM-1 GPLv3 case; recoverable installs as agent-safety infra
+- [[concepts/ai-generated-code-open-source]] — AI-generated code should be open source — Jankiewicz's license-laundering + uncopyrightability argument (Monkey Selfie / CC0), 1174p HN thread and its 'licenses need copyright' / 'OSS = human-validated code' rebuttals (Nov 2026)
 - [[concepts/positional-embeddings]] — Positional Embeddings in Modern LLMs (Raschka survey, Nov 15 2026, HN 228): RoPE still dominant but share falling in 2026; partial-RoPE now majority of RoPE models; NoPE hybrids and Inkling T5-style learned relative bias emerging; absolute position tables uneconomic beyond ~1k context
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
@@ -1010,6 +1011,7 @@
 - [[concepts/meta-tactus-glove]] — Meta Tactus (Reality Labs) — textile haptic+pose glove for dexterity data: 1.5mm fingertip stackup 3D-knit, empirically-placed capacitive tactile sensors, calibrated fingertip force, IMU-fused pose tracking through hand-object occlusion (Import AI 480, Nov 2026)
 - [[concepts/physical-superintelligence-aaronson-ambainis]] — Physical Superintelligence (PSI) — internal research system on a non-public Anthropic model proved the Aaronson-Ambainis conjecture (open since 2008); complete proof by day 3, accepted by Lean, result improved twice on related open problems (Import AI 480, Nov 2026)
 - [[concepts/project-suncatcher]] — Project Suncatcher (Google orbital TPU moonshot) — Oct 30, 2026 'Hello World': first AI response from data-center-class TPU in orbit (Gemma 4 haiku, Svalbard downlink); thermal/radiation tests, twin satellites 2027
+- [[concepts/qwen-4-max]] — Qwen 4 Max — Alibaba frontier release Nov 16, 2026 (HN 594p); successor to Qwen3.8-Max, Flash/27B awaited; community flags serving speed (~30 tok/s) and 24-100GB VRAM dead zone (vendor blog JS-rendered, HN-derived)
 - [[concepts/reasoning-as-pathfinding]] — Wang essay: test-time thinking as search amortized during RL training; challenges RSI-by-more-thinking assumptions
 - [[concepts/semianalysis-gdpx]] — SemiAnalysis GDPx — real professional tasks across 11 fields (chip design, law, finance); best model Opus 5.5 scored just 12% (Nov 2026)
 - [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs

@@ -1,7 +1,7 @@
 ---
 title: Qwen
 created: 2026-07-15
-updated: 2026-10-27
+updated: 2026-11-16
 type: entity
 tags:
   - qwen
@@ -116,6 +116,16 @@ Qwen competes at every tier of the Chinese and global model landscape:
 | Local dense | Qwen3.6/3.8-27B | Llama, Gemma |
 
 Qwen's strategy mirrors [[concepts/open-source-ai|open-source AI]] advocacy: use Apache 2.0 releases to seed ecosystem lock-in, then monetize via Alibaba Cloud API. The 2026 shift toward revenue-threshold licensing for frontier models marks a partial retreat from that pattern.
+
+## Qwen4-Max release (November 16, 2026)
+
+Alibaba released **Qwen4-Max** — the flagship successor to Qwen3.8-Max, ahead of the Flash/27B variants
+everyone is waiting for. HN front page same day (594 pts / 250c, https://news.ycombinator.com/item?id=50513215).
+The vendor blog is JS-rendered, so launch specifics are community-reported: the local-LLM tier praised the
+Flash-Next architecture preview ("completes random deepswe challenges locally at Q2-Q3 quantization") while
+flagging **serving speed** (≈30 tok/s vs ~80 for Opus in one agent-battle harness) and an odd
+image-input gap in the 2.4T OpenRouter listing as the blockers to adoption; several asked for a competitive
+30-70B model to fill the "dead zone between 24GB and <100GB of VRAM". Full page: [[concepts/qwen-4-max]].
 
 ## Related
 

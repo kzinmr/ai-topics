@@ -1,7 +1,7 @@
 ---
 title: AI Employment Displacement
 created: 2026-08-28
-updated: 2026-11-09
+updated: 2026-11-16
 type: concept
 tags: [labor-economics, ai-economics, automation, ai-society, policy, economics, ai-industry-economics]
 sources: [raw/articles/bill-gates-turbulent-ai-era-2026.md, raw/articles/john-cook-ai-code-quality.md, raw/articles/claude-load-bearing-vocabulary-louis-abraham.md, raw/articles/2026-11-08_the-signal_bug-hunters-cell-mysteries-kids-logged-out.md]
@@ -71,6 +71,17 @@ Displacement narratives coexist with counter-data: [[llm-expertise-amplification
 - Does young-worker decline spread to senior cohorts as reliability crosses the "nearly error-free" threshold?
 - Is token taxation technically implementable, or does it just tax compute geography?
 - What fraction of displaced workers re-absorb, and at what wage?
+
+## HN "Who is Hiring" volumes near 12-year lows (November 2026)
+
+hntrends.com tallies November 2026 "Who is Hiring?" postings stuck near **12-year lows** while a claim
+circulates that AI now touches "half of all jobs" ([HN 87 pts](https://news.ycombinator.com/item?id=50512950)).
+Thread split between acceptance ("AI will reduce the need for software developers... those that keep their
+jobs will likely see pay reduction", [rubicon33]) and counter-data ("still more software developers actually
+employed than a decade ago; the market isn't that bad except for recent graduates", [fbrncci]). A recurring
+middle position frames it as **deskilling → pay compression** rather than headcount collapse ([janalsncm],
+[georgemcbay]: a dozen specialists become 3-4 generalists running agents). New-grad pain is reported as the
+acute pocket, especially systems roles. See also [[concepts/sre-deskilling]], [[concepts/ai-labor-displacement]].
 
 ## Related
 

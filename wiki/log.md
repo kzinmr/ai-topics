@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-11-16] trending-topics — Qwen4-Max, AI-code-open-source, Huang comeback/smuggling, DRAM ruling
+- New: concepts/qwen-4-max (HN 594p; qwen.ai JS-rendered -> HN-derived, confidence noted), concepts/ai-generated-code-open-source (HN 1174p/621c)
+- Updated: events/nvidia-ceo-transition-2026 (smuggling probe 1.5GW claim + comeback speculation + WSJ open-checkbook), entities/jensen-huang (comeback section), entities/qwen (Qwen4-Max), concepts/dram-price-fixing-lawsuit-2026 (MD denied, 514p), concepts/inference/vllm (GLM-5.3 607.8 tok/s DGX pair), concepts/deepseek-v3 (190-line JAX reimpl), concepts/ai-employment-displacement (Who-is-Hiring 12y lows), concepts/ai-education (Alpha School 42%), concepts/open-source-ai (output-side + Lambert)
+- Raw: 5 new (qwen hn-discussion, jankiewicz, tomshardware smuggling, deepseek-v3-jax, nvidia glm53-vllm)
+- SCHEMA minted: qwen-4-max (Models), gpu-smuggling, ai-generated-code (Domain Concepts)
+
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-16] active-crawl | 3 pages + 3 raws (positional embeddings, agent-selected hardware, OpenAI robotics disbandment)

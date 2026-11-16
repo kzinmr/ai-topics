@@ -3,7 +3,7 @@ title: "Jensen Huang"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-11-13
+updated: 2026-11-16
 type: entity
 ---
 
@@ -205,6 +205,19 @@ Congressional follow-up (Nov 12): **"Ex-Nvidia CEO" Huang agreed to testify befo
 Market reaction: **stock −8% premarket → −13% at the open**. Gary Marcus (same day) frames the central AI-industry question as whether an interim-CEO NVIDIA still executes its **multi-billion-dollar Anthropic IPO backstop** ([[events/anthropic-ipo-roadshow-2026]]) and warns the circular-financing structure Huang personally underwrote "might collapse" ([[concepts/ai-infrastructure-circular-financing]]).
 
 Full timeline and analysis: [[events/nvidia-ceo-transition-2026]].
+
+## Comeback speculation and smuggling probe (November 15-16)
+
+Reuters/FT (Nov 15): Huang is **discussing a comeback as NVIDIA CEO with allies**
+([HN 169 pts](https://news.ycombinator.com/item?id=50511982)); a parallel Tom's Hardware/analyst line
+([HN 61 pts](https://news.ycombinator.com/item?id=50498051)) argues the real driver of the departure was a
+**GPU-smuggling probe** — ~1.5M banned GPUs (~1.5 GW) tracked to China — not the affairs reporting. HN
+commenters contested both frames: [kurthr] "Everyone in a position to do something about this has known for
+more than a year"; [futxtuxutxutxut] cites the Treasury Secretary's same-day demand that the board select an
+external hire, making a return "extremely unlikely"; [waximabbax] notes Nvidia is a public company whose
+board cannot simply reverse course, and cites Bessent's 10-day export-control questionnaire. Community
+astroturfing suspicion recurred ([marginalia_nu], [cyanydeez] proposing a sentiment-analysis test). See
+[[events/nvidia-ceo-transition-2026]].
 
 ## Related
 

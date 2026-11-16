@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA CEO Transition (November 2026)"
 created: 2026-11-13
-updated: 2026-11-15
+updated: 2026-11-16
 type: event
 tags:
   - nvidia
@@ -95,6 +95,23 @@ Nathan Lambert (Interconnects/Robotic, "Open-source AI without Jensen", Nov 14, 
 - **Media runs on timing, not information.** "All of these Jensen affairs were known, but getting them out at the right time, right after the midterm political swing, took down the king" — isomorphic to the summer's Jacob Coxon episode, whose safety-culture revelations became national only through datacenter/Overton-window timing. Lambert expects the same path is available to open-model safety narratives.
 
 Counter-context: the open-model optimism case (ownership of intelligence, enterprise post-training as the right lane) is preserved in [[concepts/open-source-ai-must-win]] and [[concepts/state-of-open-source-ai-2026]]; Lambert's claim is about the **political patron** being removed, not about the technical thesis failing.
+
+## GPU-smuggling investigation as the alleged real cause (November 16)
+
+Tom's Hardware (Nov 14) reported analysts' claim that the underlying cause of the resignation was not the
+affairs reporting but a **GPU-smuggling investigation**: more than **1.5 gigawatts of banned chips (~1.5M
+AI GPUs)** tracked flowing to China despite export controls
+([HN 61 pts](https://news.ycombinator.com/item?id=50498051); raw:
+`raw/articles/2026-11-16_tomshardware_gpu-smuggling-huang.md`). The same day Reuters/FT reported allies
+discussing a **Huang comeback as CEO** (169 pts, https://news.ycombinator.com/item?id=50511982) — contested
+by commenters citing Treasury Secretary Bessent's public demand that the board pick an **external** CEO
+given export-control scrutiny, and [waximabbax]'s point that a public company board cannot simply reverse
+its decision on Silicon Valley pressure. HN sentiment split between "board/regulators know something we
+don't" and "no evidence of wrongdoing has been shown — the Malaysia/Singapore channel claims are from
+Nvidia's own public press releases" ([anon291]). The **DRAM price-fixing suit survived a motion to
+dismiss** on Nov 15 (514 pts) — see [[concepts/dram-price-fixing-lawsuit-2026]] — adding a second
+antitrust front to the memory/HBM supply chain underpinning NVIDIA's roadmap. WSJ follow-up (Nov 16):
+"Nvidia's Days as an Open Checkbook for the AI Economy Are Numbered" (https://news.ycombinator.com/item?id=50513876).
 
 ## Related
 

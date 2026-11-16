@@ -1,7 +1,7 @@
 ---
 title: Open-Source AI Strategy
 created: 2026-04-26
-updated: 2026-06-29
+updated: 2026-11-16
 type: concept
 tags:
   - open-source
@@ -116,6 +116,20 @@ The Software Freedom Conservancy published its first LLM usage guidelines for FL
 ### Norway's AI Ban in Elementary Schools
 
 Norway imposed a near-ban on AI use in elementary schools ([Reuters, 2026-06-19](https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/); [HN 691pts/482 comments](https://news.ycombinator.com/item?id=48600093)). The HN discussion highlighted tensions: Norway simultaneously operates Sikt AI for schools (teacher monitoring of AI use) while banning student AI use. Commenters drew parallels to 1990s school bans on internet search engines, and questioned whether the distinction should be between AI-as-shortcut (undermines learning) vs. AI-as-tutor (accelerates learning). The ban reflects a precautionary approach in the absence of scalable constructive AI pedagogy frameworks.
+
+## The output side: should AI-generated code be open source?
+
+The open-source debate flipped from models to outputs on Nov 15: Jakub Jankiewicz's "All AI-generated code
+should be Open Source" hit **1174 pts / 621 comments** on HN — scraped OSS training corpora make closed
+output "license laundering", and uncopyrightable pure-AI code (Monkey Selfie / US Copyright Office line)
+should be CC0'd or OSI-licensed anyway ([https://news.ycombinator.com/item?id=50507303]). The thread's
+strongest rebuttals — licenses are void without copyright, and "open source is human-validated code" — are
+developed at [[concepts/ai-generated-code-open-source]]. Nathan Lambert's "Open-source AI without Jensen"
+(Nov 14, Interconnects) separately removed the ecosystem's chief patron: with Jensen Huang's funding "flooding
+the zone" now likely to dry up, open models lose their political sponsor even as NVIDIA's corporate incentive
+(diversifying away from a few self-chipping customers) survives
+(raw: `raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md`; see
+[[events/nvidia-ceo-transition-2026]], [[concepts/open-source-ai-must-win]]).
 
 ## Related Pages
 

@@ -4,7 +4,7 @@ type: concept
 aliases:
   - ai-education
 created: 2026-04-25
-updated: 2026-11-15
+updated: 2026-11-16
 tags:
   - concept
   - education
@@ -55,6 +55,18 @@ A consistent pattern: **each generation's pedagogy is "build the thing from scra
 - [[concepts/cs231n]] / [[concepts/computer-science-education]] — institutional lineage
 - [[concepts/llm-assisted-learning]] — the AI-as-tutor thread
 - [[concepts/harness-engineering]] — the new practical skill layer being taught
+
+## Alpha School: $75k tuition, 42% hitting the 2x-learning target
+
+Fortune (Nov 14): at the **$75k/year Alpha School**, only **42% of students met the network's goal of
+learning twice as fast in both math and reading** (internal data first reported by NYT) — while Alpha pushes
+into public-school districts ([HN 66 pts](https://news.ycombinator.com/item?id=50509953)). Thread caveats:
+reading is the stronger arm (~80% at 2x) while math is the failure mode ([benmanns]); "twice as fast" is
+measured against curriculum pacing inside a school day, not study hours ([misnome]); and the $75k price is
+historically "live-in tutor" money, so the question is whether AI tutoring beats a human tutor at that price
+([uptrails]) — countered by [preommr]: AI's diagnostic ability to zero in on a specific misconception is the
+part books and tutors never delivered. See [[concepts/npr-google-ai-free-schools]] for the free-AI-in-schools
+counter-movement.
 
 ## Sources
 

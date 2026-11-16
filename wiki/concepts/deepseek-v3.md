@@ -1,7 +1,7 @@
 ---
 title: DeepSeek-V3
 created: 2026-05-08
-updated: 2026-05-26
+updated: 2026-11-16
 type: concept
 tags:
   - model
@@ -173,6 +173,14 @@ The paper makes four specific recommendations for future AI hardware design:
 2. **High-precision FP8 accumulation**: Improve FP8 GEMM accumulation precision within Tensor Cores (eliminating need for CUDA Core promotion)
 3. **Native support for fine-grained quantization**: Tensor Cores directly handle scaling factors
 4. **Online quantization**: Fuse FP8 casting with memory access (TMA) to reduce HBM read/write
+
+## Minimal reimplementations
+
+"DeepSeek V3 (MLA, DeepSeekMoE, aux-loss-free balancing, MTP) in 190 lines of pure JAX, trained on a
+MacBook Air" — Show HN by Vaibhaav Tiwari, Nov 15, 2026 (273 pts,
+https://news.ycombinator.com/item?id=50497589; raw: `raw/articles/2026-11-16_github_deepseek-v3-jax.md`).
+Joining the from-scratch teaching-repo lineage ([[concepts/flashattention-pytorch-educational]],
+[[concepts/ai-benchmarks/nanogpt-speedrun]]): the four signature V3 mechanisms rendered in one ~190-line JAX file.
 
 ## Related Pages
 
