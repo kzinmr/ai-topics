@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-16] active-crawl | 3 pages + 3 raws (positional embeddings, agent-selected hardware, OpenAI robotics disbandment)
+
+> `active-crawl` cron (2026-11-16 11:00 UTC). Discovery: HN Algolia `search_by_date` (8 queries, 4-day window, points>=15, single terminal script) — 21 stories after dedup. Parent-side find/grep gap analysis (no subagents). Killed same-day/recent dupes: Qwen4-Max (488p, breaking today — entity page update left to blog/x pipelines after sources mature), Anthropic IPO (covered by events/anthropic-ipo-roadshow-2026), Perplexity Decider v1.3 (indexed 11-14), end-to-end 4-bit training (created 11-15), checkpoint-forensics/Blackwell (covered Nov 12), MIT "how to make almost anything" + NES games + Clice (off-scope), Amodei cancer-cure (paywalled single-source opinion).
+
+### Created
+- `concepts/positional-embeddings.md` — RoPE-dominance-slight-decline survey via Raschka Nov 15 essay (HN 228p): partial RoPE now majority, NoPE hybrids growing, Inkling T5-style learned relative bias; absolute-table economics (>22% of weights at 100k ctx). Raw: `raw/articles/2026-11-15_raschka_understanding-positional-embeddings.md`. confidence: high.
+- `concepts/agent-selected-hardware.md` — Stearns thesis: agents as firmware installers make hackability/open firmware a purchase criterion; FM-1 GPLv3 case; recoverable installs as agent-safety infra (HN 75p). Raw: `raw/articles/2026-11-15_geoffstearns_agent-will-pick-hackable-one.md`. confidence: medium (single essay).
+- `events/openai-robotics-team-disbanded-2026.md` — 2nd OpenAI robotics disbandment (Fortune Nov 13, HN 179p); Fortune paywalled → HN-thread reconstruction raw `raw/articles/2026-11-13_hn-discussion_openai-robotics-disband.md`. confidence: medium pending second source.
+
+### Notes
+- Index: 2 Concepts + 1 Events entries inserted (content-anchored, neighborhoods verified).
+- Tag validator exit 0; no SCHEMA changes needed (rope/robotics/agent-security all canonical).
+- Topics deferred: Qwen4-Max (breaking, watch next crawl).
+
 ## [2026-11-15] ingest | x-accounts-scan: 3 new posts (11/84 accounts, budget-limited) — Gemini 4 Hydrogen DevRel + WebMCP/UI-SDK
 
 > `x-accounts-scan` (22:30 UTC). Cursor 29→40; 11 accounts scanned under a 12-request budget (73 deferred to next run), 0 API errors, 3 substantive candidates, 3 new posts, processed cache 234. Detail: `.hermes/cron/data/x_accounts_latest_full.json`.
