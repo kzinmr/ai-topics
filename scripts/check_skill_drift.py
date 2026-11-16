@@ -59,7 +59,12 @@ def find_formula_skill(skill_name):
     matches = []
     for f in HERMES_SKILLS.rglob("SKILL.md"):
         parts = f.relative_to(HERMES_SKILLS).parts
-        if parts[0] in EXCLUDED_DIRS:
+        # Archive/backup dirs can appear at ANY depth (e.g.
+        # ``.archive/software-development/writing-plans`` is 2 parts deep), so
+        # check every path component, not just parts[0]. Without this the
+        # archived copy is also collected and, being deeper, is only picked when
+        # it happens to be the sole match -> spurious ``formula_updated`` drift.
+        if EXCLUDED_DIRS.intersection(parts):
             continue
         if f.parent.name == skill_name:
             matches.append(f.parent)
