@@ -232,6 +232,19 @@ skill's `modified` list shrank or the intentional diff is all that remains.
 (e.g. wiki-ingestion-pipelines, trending-topics-reporting, x-article-retrieval). Never
 `git add config/hermes/skills/` wholesale — stage exactly the override dirs you edited.
 
+### Resolved 2026-11-16: `.archive` exclusion was dead code (commit dfefa9de)
+`find_formula_skill()` guarded with `if parts[0] in EXCLUDED_DIRS`, but archived skills live
+at `.archive/software-development/<name>/SKILL.md` — `parts[0]` is `.archive` only for *flat*
+archives, so category-nested archives were never excluded. When the live copy was also in
+`.archive`, the resolver returned the archived copy as the formula and reported phantom
+`formula_updated` drift with huge removed-line counts (observed: writing-plans missing a
+46-line "Plan Mode (from plan)" block, subagent-driven-development missing a 248-line "Goal
+Patterns" block — both actually live in `~/.hermes/skills/software-development/`, not the
+archive). Fixed to `if EXCLUDED_DIRS.intersection(parts)`. Symptom to watch for: a
+`formula_updated` skill whose `formula_path` contains `.archive` → the resolver is broken, not
+the override. Always `diff -u` against the real live formula before "fixing" an override.
+Remember to `cp` the fixed script to `~/.hermes/scripts/` (cron runs that copy).
+
 ### HOME gotcha (2026-10-12)
 `check_skill_drift.py` resolves both `HERMES_SKILLS` and `OVERRIDES_DIR` from
 `Path.home()`. In cron runs `HOME=/opt/data/home`, which routes formula-skill
