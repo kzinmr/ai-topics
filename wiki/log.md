@@ -3,6 +3,17 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+
+## [2026-11-16] watchdog-fix | Index hub registration + ghost cleanup
+
+### Changes
+- Registered 8 directory-hub wikilinks in index.md Concepts section (alphabetical): `concepts/ai-benchmarks`, `concepts/anthropic`, `concepts/browser-agent`, `concepts/claude`, `concepts/gemini`, `concepts/gpt`, `concepts/openai`, `concepts/training` (each dir has an `index.md`; links from L2 pages were dangling).
+- Fixed ghost entry `[[entities/met]]` → `[[entities/met|entities/metR]]` (file is metR.md; slug alias resolved via display-text syntax).
+- Concepts header count 2356 → 2364. validate_index.py clean (3511 lines).
+- Phase 1 checks all clean: 0 pipe_prefix / line_number_prefix / triple_bracket / space_prefix.
+
+---
+
 ## [2026-11-16] watchdog | auto-fix — index registration + tag taxonomy
 
 - **Pipeline watchdog**: clean, 0 alerts (report age 5.6h, within schedule)

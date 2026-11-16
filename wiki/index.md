@@ -567,7 +567,7 @@
 - [[entities/mem0]] — Mem0 — open-source agent memory layer; its engineering team framed the cache-stable vs live-search memory tradeoff (see concepts/cache-stable-vs-live-search-memory)
 - [[entities/mercor]] — Mercor
 - [[entities/merge]] — Merge
-- [[entities/metR]] — METR (Model Evaluation & Threat Research) — independent lab measuring AI capability pacing and LLM contribution to discoveries; key source for AI evals timelines
+- [[entities/met|entities/metR]] — METR (Model Evaluation & Threat Research) — independent lab measuring AI capability pacing and LLM contribution to discoveries; key source for AI evals timelines
 - [[entities/merge-dev]] — Merge.dev (Merge Agent Handler)
 - [[entities/meridian-labs]] — Meridian Labs — 501(c)(3) nonprofit behind Inspect AI (UK AISI eval framework) + Petri alignment auditing (donated by Anthropic May 2026)
 - [[entities/meta]] — Meta
@@ -978,15 +978,22 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2356 pages)
+## Concepts (2364 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
 - [[concepts/agentic-representation-gatekeeping]] — Agentic Representation Gatekeeping — platforms banning *user-side* personal AI agents while tolerating platform-side automation and traditional aggregators; United Airlines' Nov 11 2026 flight-booking ban (HN 569p) as canonical case: stated security grounds vs intermediary control, GDS per-query costs, and defense of dynamic pricing; Southwest's ChatGPT inventory the defection
 - [[concepts/agweb-browser-for-agents]] — Agweb: WebKit-based macOS browser for coding agents (never-steals-focus window, per-agent workspaces, shared login profiles, secret-safe fill, HN 100pts Nov 14 2026)
+- [[concepts/ai-benchmarks]] — AI Benchmarks — hub index for individual benchmark pages (122 pages under concepts/ai-benchmarks/)
 - [[concepts/ai-engineering-dekilling]] — AI engineering de-skilling — the erosion of code comprehension and debugging skill from 100% AI-mandate orgs and 'brain fry': r/ClaudeCode one-year retrospective (HN 129pts), Kuhne's manual-coding regimen (HN 306pts), Goldman's engineer-only Claude Code restriction; distinct from cognitive-deskilling (knowledge work) and agent model drift (infra)
 - [[concepts/agent-selected-hardware]] — Agent-Selected Hardware (Geoff Stearns, HN 75): when agents install device firmware, hackability/open firmware become competitive product features; M-Vave FM-1 GPLv3 case; recoverable installs as agent-safety infra
 - [[concepts/ai-generated-code-open-source]] — AI-generated code should be open source — Jankiewicz's license-laundering + uncopyrightability argument (Monkey Selfie / CC0), 1174p HN thread and its 'licenses need copyright' / 'OSS = human-validated code' rebuttals (Nov 2026)
+- [[concepts/openai]] — OpenAI Platform & APIs — hub for OpenAI platform/API pages
+- [[concepts/gpt]] — GPT Models — hub index for GPT model-family pages (43 pages under concepts/gpt/)
+- [[concepts/gemini]] — Google Gemini — hub index for Gemini model-family pages (14 pages under concepts/gemini/)
+- [[concepts/claude]] — Claude Models — hub index for Claude model-family pages (27 pages under concepts/claude/)
+- [[concepts/browser-agent]] — Browser Agent — hub for agentic browsing pages (Death of Browser, Deep Research)
+- [[concepts/anthropic]] — Anthropic Platform & Business — hub for platform/SDK/business pages of Anthropic
 - [[concepts/positional-embeddings]] — Positional Embeddings in Modern LLMs (Raschka survey, Nov 15 2026, HN 228): RoPE still dominant but share falling in 2026; partial-RoPE now majority of RoPE models; NoPE hybrids and Inkling T5-style learned relative bias emerging; absolute position tables uneconomic beyond ~1k context
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
@@ -1015,6 +1022,7 @@
 - [[concepts/reasoning-as-pathfinding]] — Wang essay: test-time thinking as search amortized during RL training; challenges RSI-by-more-thinking assumptions
 - [[concepts/semianalysis-gdpx]] — SemiAnalysis GDPx — real professional tasks across 11 fields (chip design, law, finance); best model Opus 5.5 scored just 12% (Nov 2026)
 - [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
+- [[concepts/training]] — Training — hub for training-methodology pages (TRL under concepts/training/)
 - [[concepts/triggerdev-env-var-exposure-2026-11|Trigger.dev Env-Var Exposure]] – 2026-11-01 incident exposing customer environment variables, disputed 'Resolved' status
 - [[concepts/volta-infostealer-llm-victim-appraisal]] — VOLTA infostealer LLM victim appraisal (Cisco Talos, Oct 2026) — self-deleting stealer POSTs enriched evidence bundle to OpenRouter as 'forensic intelligence analyst'; WHAT THEY'RE WORTH ranking + 3-model refusal-failover chain (HN 248)
 - [[concepts/x402]] — x402 — HTTP 402 Payment Required as a machine-readable payment request for agent API calls; USDC on Base; first adopted by Brave Search API (Nov 12, 2026)
