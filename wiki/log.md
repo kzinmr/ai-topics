@@ -1,12 +1,26 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-16] watchdog | auto-fix — index registration + tag taxonomy
+
+- **Pipeline watchdog**: clean, 0 alerts (report age 5.6h, within schedule)
+- **Index structural health**: clean — 0 pipe prefixes, 0 triple/quad brackets, 0 line-number prefixes, 0 space-prefix corruption, no truncation markers. `validate_index.py` exit 0.
+- **Fixed (1)**: registered orphan `concepts/pcast-ai-advisory-council` (111L, created today by policy-crawl pipeline, untracked + absent from index.md) at the Concepts section boundary; Concepts header count corrected 2355 -> 2356 (recomputed from actual section lines, verified exact).
+- **Fixed (1)**: removed non-SCHEMA tag `ai-policy` from `concepts/pcast-ai-advisory-council` frontmatter — redundant with existing `policy` + `ai-governance`. `tag_audit.py` now reports 0 non-taxonomy tags (was 1), 0 composite tags.
+- **No action — already clean**: L2 pipe-prefix scan (entities/+concepts/) = 0; empty wikilinks = 0; no-frontmatter pages = 0; orphan `### ` timestamp lines in log.md = 0; single `# Wiki Log` header at line 1; pre-commit hook path = `.githooks`.
+- **Needs human review (1)**: 278 empty Related items (`-  — description` with lost wikilink anchor) across entity/concept pages — inherited residual from 2026-08-05 run; no reliable target mapping, 278 files exceeds auto-fix threshold. Deferred to `wiki-graph-analysis`.
+- **Left untouched**: 8 modified entity pages + ~25 untracked raw articles/newsletters in working tree belong to sibling ingestion pipelines (blog/newsletter/x-accounts/dreaming) — deliberately not committed by watchdog.
+
+---
+
 ## [2026-11-16] trending-topics — Qwen4-Max, AI-code-open-source, Huang comeback/smuggling, DRAM ruling
 - New: concepts/qwen-4-max (HN 594p; qwen.ai JS-rendered -> HN-derived, confidence noted), concepts/ai-generated-code-open-source (HN 1174p/621c)
 - Updated: events/nvidia-ceo-transition-2026 (smuggling probe 1.5GW claim + comeback speculation + WSJ open-checkbook), entities/jensen-huang (comeback section), entities/qwen (Qwen4-Max), concepts/dram-price-fixing-lawsuit-2026 (MD denied, 514p), concepts/inference/vllm (GLM-5.3 607.8 tok/s DGX pair), concepts/deepseek-v3 (190-line JAX reimpl), concepts/ai-employment-displacement (Who-is-Hiring 12y lows), concepts/ai-education (Alpha School 42%), concepts/open-source-ai (output-side + Lambert)
 - Raw: 5 new (qwen hn-discussion, jankiewicz, tomshardware smuggling, deepseek-v3-jax, nvidia glm53-vllm)
 - SCHEMA minted: qwen-4-max (Models), gpu-smuggling, ai-generated-code (Domain Concepts)
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-16] active-crawl | 3 pages + 3 raws (positional embeddings, agent-selected hardware, OpenAI robotics disbandment)
 

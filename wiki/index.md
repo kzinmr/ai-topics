@@ -978,7 +978,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2355 pages)
+## Concepts (2356 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
@@ -3337,6 +3337,7 @@
 - [[concepts/proton-ai-mandate-backlash]] — 404 Media: Proton CEO's 'loser thinking' AI mandate, employee AI-usage telemetry, re-interviews cancelled in 24h (HN 277)
 - [[concepts/sre-deskilling]] — SigNoz applies Bainbridge's 1983 Ironies of Automation to AI incident response; 95%/5% competence-erosion hypothesis (HN 605)
 - [[concepts/openai-oct31-policy-bundle]] — OpenAI's Oct 30-31 governance bundle: misalignment-monitoring disclosure, fair-use position, crawler opt-out, teen safety report — read as coordinated legal positioning
+- [[concepts/pcast-ai-advisory-council]] — PCAST (President's Council of Advisors on Science and Technology) reconstituted under OSTP; AI-policy advisory role, US–China AI race framing, Andreessen/Nvidia ties
 ## Comparisons (35 pages)
 
 - [[comparisons/agent-harnesses]] — AI Agent Harness Comparison — 9 Major Harnesses
